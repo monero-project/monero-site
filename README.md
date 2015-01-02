@@ -4,8 +4,8 @@ Copyright (c) 2014, The Monero Project
 
 ## Development Resources
 
-Web: [monero.cc](http://getmonero.org)
-Mail: [dev@monero.cc](mailto:dev@getmonero.org)
+Web: [monero.cc](http://getmonero.org)  
+Mail: [dev@monero.cc](mailto:dev@getmonero.org)  
 IRC: [#monero-dev on Freenode](irc://chat.freenode.net/#monero-dev)
 
 ## About this Project
@@ -14,7 +14,7 @@ This is the Monero website. Instead of using MediaWiki or similar, we are using 
 
 If you would like to suggest changes you can do so by forking the repository, making changes directly on your fork, and then submitting them as pull requests. If you need help doing so feel free to ask for assistance in #monero-dev on Freenode.
 
-Deploying this website requires Jekyll (2.5+) and the 'jekyll/multiple/languages/plugin' plugin (installed by, for example, gem install jekyll-multiple-languages-plugin).
+Deploying this website requires Jekyll (2.5+) and the 'jekyll/multiple/languages/plugin' plugin (installed by, for example, `gem install jekyll-multiple-languages-plugin`).
 
 ## License
 
