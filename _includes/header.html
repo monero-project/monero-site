@@ -1,0 +1,68 @@
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/{{ site.lang }}"><img class="logo" src="//static.monero.cc/images/logo.svg"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="yellow" href="https://forum.monero.cc">{% t global.forum %}</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle purple" data-toggle="dropdown">{% t global.blog %} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/{{ site.lang }}/blog">{% t global.allblog %}</a></li>
+                <li><a href="/{{ site.lang }}/blog/missives">{% t global.missives %}</a></li>
+                <li><a href="/{{ site.lang }}/blog/devdiaries">{% t global.devdiaries %}</a></li>
+                <li><a href="/{{ site.lang }}/blog/uncategorised">{% t global.uncategorised %}</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle red" data-toggle="dropdown">{% t global.getting_started %} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/{{ site.lang }}/getting-started/choose">{% t global.choose %}</a></li>
+                <li><a href="/{{ site.lang }}/getting-started/running">{% t global.running %}</a></li>
+                <li class="divider"></li>
+                <li><a href="/{{ site.lang }}/getting-started/simplewallet">{% t global.simplewallet %}</a></li>
+                <li class="divider"></li>
+                <li><a href="/{{ site.lang }}/getting-started/accepting">{% t global.accepting %}</a></li>
+				<li><a href="/{{ site.lang }}/getting-started/merchants">{% t global.merchants %}</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle orange" data-toggle="dropdown">{% t global.knowledge_base %} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/{{ site.lang }}/knowledge-base/about">{% t global.about %}</a></li>
+                <li><a href="/{{ site.lang }}/knowledge-base/people">{% t global.people %}</a></li>
+                <li><a href="/{{ site.lang }}/knowledge-base/moneropedia">{% t global.wiki %}</a></li>
+                <li class="divider"></li>
+                <li><a href="/{{ site.lang }}/knowledge-base/compiling">{% t global.compiling %}</a></li>
+                <li class="divider"></li>
+                <li><a href="/{{ site.lang }}/knowledge-base/openalias">{% t global.openalias %}</a></li>
+                <li><a href="/{{ site.lang }}/knowledge-base/projects">{% t global.projects %}</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle softyellow" data-toggle="dropdown">{% t global.community %} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://forum.monero.cc">{% t global.forum %}</a></li>
+                <li><a href="https://www.reddit.com/r/monero/">{% t global.reddit %}</a></li>
+                <li><a href="https://bitcointalk.org/index.php?topic=583449.0">{% t global.bitcointalk %}</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">IRC on Freenode</li>
+                <li><a href="irc://chat.freenode.net/#monero">#monero (General)</a></li>
+                <li><a href="irc://chat.freenode.net/#monero-dev">#monero-dev (Development)</a></li>
+                <li><a href="irc://chat.freenode.net/#monero-otc">#monero-otc (OTC Trading)</a></li>
+                <li><a href="irc://chat.freenode.net/#monero-markets">#monero-markets (Markets)</a></li>
+                <li><a href="irc://chat.freenode.net/#monero-pools">#monero-pools (Mining)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,75 @@
+global:
+  monero: Monero
+  forum: Forum
+  blog: Blog
+  getting_started: Getting Started
+  knowledge_base: Knowledge Base
+  community: Community
+  bitcointalk: Bitcointalk Thread
+  reddit: Reddit
+  copyright: Copyright
+  monero_project: The Monero Project
+  allblog: All Blog Posts
+  devdiaries: Dev Diaries
+  missives: Monero Missives
+  uncategorised: Uncategorized
+  choose: How to Choose a Monero Client
+  running: How to Run a Monero Node
+  simplewallet: How to Use SimpleWallet
+  accepting: How to Accept Monero Payments
+  merchants: Monero Merchant Directory
+  about: About Monero
+  people: The People Behind Monero
+  wiki: Moneropedia
+  compiling: Compiling Monero
+  openalias: The OpenAlias Project
+  alternative: Alternative Clients
+  projects: External Projects
+index:
+  page_title: "Monero - private, secure, untraceable"
+  what_is: What is
+  what_is_orange_block: "Monero is a private, secure, untraceable currency that is open-source and freely available to all."
+  what_is_text_block_1: "You are your own bank, you control and are responsible for your funds, and nobody can trace your transfers."
+  what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below, and if you'd like to try Monero for yourself the"
+  what_is_text_block_3: "Getting Started"
+  what_is_text_block_4: "section is an excellent launching point."
+  news: News
+  the_latest: The Latest
+  date_1: July 6th
+  date_2: July 27th
+  news_1: "Monero Missive #5"
+  news_2: "Monero Missive #4"
+  news_text_1: "includes an update on new features (rpcwallet and properly daemonizing the daemon) that are ready for testing."
+  news_text_2: "includes fluffypony at the Bitcoin Supernode conference, as well as major changes to keep the Monero daemon and wallet a lot more stable and reliable."
+  private: Private
+  secure: Secure
+  untraceable: Untraceable
+  private_text: "Monero uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default."
+  untraceable_text: "By taking advantage of ring signatures, a special property of certain types of cryptography, Monero is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer."
+  secure_text: "Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 24 word mnemonic that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen."
+  why_use: Why use
+  why_1: "It's private by default, optionally transparent (just like cash!) - the details of individual transactions, or even of an entire wallet, can be revealed publicly or privately"
+  why_2: "It has a a strong core team actively developing Monero, along with an amazing group of of mathematicians, cryptographers, developers, and marketing specialists actively working on it"
+  why_3: "A great deal of focus has been placed on improving the usability of Monero, with the aim of providing a cryptocurrency that is more readily accessible to end users"
+  why_4: "It was launched fairly and evenly, with no single entity unfairly controlling any significant amount of Monero or providing any sort of unfair advantage (such as an 'instamine' or 'premine')"
+  behind: Who is behind
+  davidlatapie_bio: "David Latapie is a French publisher, transhumanist and crypto enthusiast who worked on various cryptocurrencies, and focuses on the societal changes brought by cryptos and the blockchain technology."
+  fluffypony_bio: "Based out of South Africa, Riccardo brings a strong business acumen and a deep understanding of cryptocurrencies to the table. He has been involved with cryptocurrency related projects since 2012."
+  tacotime_bio: "It's taco time!"
+  smooth_bio: "A software developer, entrepreneur and investor who has been involved several cryptocurrency projects since 2011, including development of the first multicurrency exchange (initially supporting Bitcoin and Namecoin). As one of the most trusted members of the community, smooth recognized the potential for Monero to revolutionize cryptocurrencies by incorporating strong integrated financial privacy with a constant focus on community participation and developer integrity."
+  othe_bio: "othe bio"
+  eizh_bio: "eizh bio"
+  noodledoodle_bio: "NoodleDoodle bio"
+  how_do_i: How do I
+  get_started: get started
+  get_started_1: "The fastest way to start using Monero is by using a web wallet such as"
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "Alternatively, if you would like to run a full Monero node you can download the client and a kick-starter blockchain (to bring your local client up to speed) using the download link on the right."
+  where_can_i: Where can I
+  download: download
+  different_os: "Need it for a different operating system?"
+  all_downloads: View all downloads here
+  c_download: Downloads
+  monero_for: Monero for
+  latest_blockchain: Latest Blockchain

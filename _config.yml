@@ -1,0 +1,9 @@
+email: dev@monero.cc
+description: Private. Secure. Untraceable.
+keywords: "monero, xmr, bitmonero, cryptocurrency"
+baseurl: ""
+url: "http://monero.cc"
+
+markdown: kramdown
+
+languages: ["en", "de"]
