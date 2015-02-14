@@ -1,20 +1,27 @@
+files:
+  index: index.html
+  vocab: vocab.html
+  simplewallet: use-simplewallet.html
 global:
+  date: '%Y/%m/%d'
   monero: Monero
+  getting_started: Getting Started
+  copyright: Copyright
+  monero_project: The Monero Project
+menu:
   forum: Forum
   blog: Blog
-  getting_started: Getting Started
   knowledge_base: Knowledge Base
   community: Community
   bitcointalk: Bitcointalk Thread
   reddit: Reddit
-  copyright: Copyright
-  monero_project: The Monero Project
   allblog: All Blog Posts
   devdiaries: Dev Diaries
   missives: Monero Missives
   uncategorised: Uncategorized
   choose: How to Choose a Monero Client
   running: How to Run a Monero Node
+  downloads: All Monero Downloads
   simplewallet: How to Use SimpleWallet
   accepting: How to Accept Monero Payments
   merchants: Monero Merchant Directory
@@ -25,10 +32,16 @@ global:
   openalias: The OpenAlias Project
   alternative: Alternative Clients
   projects: External Projects
+  irc: IRC on Freenode
+  irc-general: "#monero (General)"
+  irc-development: "#monero-dev (Development)"
+  irc-trading: "#monero-otc (OTC Trading)"
+  irc-markets: "#monero-markets (Markets)"
+  irc-mining: "#monero-pools (Mining)"
 index:
-  page_title: "Monero - private, secure, untraceable"
+  page_title: "Monero - secure, private, untraceable"
   what_is: What is
-  what_is_orange_block: "Monero is a private, secure, untraceable currency that is open-source and freely available to all."
+  what_is_orange_block: "Monero is a secure, private, untraceable currency that is open-source and freely available to all."
   what_is_text_block_1: "You are your own bank, you control and are responsible for your funds, and nobody can trace your transfers."
   what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below, and if you'd like to try Monero for yourself the"
   what_is_text_block_3: "Getting Started"
@@ -60,9 +73,9 @@ index:
   othe_bio: "othe bio"
   eizh_bio: "eizh bio"
   noodledoodle_bio: "NoodleDoodle bio"
-  how_do_i: How do I
+  how_do_i: "How do I "
   get_started: get started
-  get_started_1: "The fastest way to start using Monero is by using a web wallet such as"
+  get_started_1: "The fastest way to start using Monero is by using a web wallet such as "
   mymonero: "MyMonero"
   get_started_2: "."
   get_started_3: "Alternatively, if you would like to run a full Monero node you can download the client and a kick-starter blockchain (to bring your local client up to speed) using the download link on the right."

@@ -1,5 +1,6 @@
 ---
 layout:			default
+translated_name: files.simplewallet
 ---
 
 #How to Use simplewallet

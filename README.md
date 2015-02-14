@@ -1,6 +1,6 @@
 # Monero
 
-Copyright (c) 2014, The Monero Project
+Copyright (c) 2014-2015, The Monero Project
 
 ## Development Resources
 
@@ -14,11 +14,11 @@ This is the Monero website. Instead of using MediaWiki or similar, we are using 
 
 If you would like to suggest changes you can do so by forking the repository, making changes directly on your fork, and then submitting them as pull requests. If you need help doing so feel free to ask for assistance in #monero-dev on Freenode.
 
-Deploying this website requires Jekyll (2.5+) and the 'jekyll/multiple/languages/plugin' plugin (installed by, for example, `gem install jekyll-multiple-languages-plugin`).
+Deploying this website requires Jekyll (2.5+). Multiple language support will be added soon.
 
 ## License
 
-Copyright (c) 2014, The Monero Project
+Copyright (c) 2014-2015, The Monero Project
 
 All rights reserved.
 

@@ -61,7 +61,7 @@ $os_array = detect_os($_SERVER['HTTP_USER_AGENT']);
               {% t index.monero_for %} <?php echo $os_array['name']; ?> 
               <span>
                 <a href="/downloads/monero.<?php echo $os_array['code']; ?>.<?php echo $os_array['bits']; ?>.latest.<?php echo $os_array['ext']; ?>" class="btn btn-grey pull-right">
-                  <img src="//static.monero.cc/images/icon_btn_download.png" class="inline icon_download"> {% t index.c_download %}
+                  <i class="fa fa-plus-circle icon_download" style="color: white; font-size: 20px;"></i> {% t index.c_download %}
                 </a>
               </span>
             </p>
@@ -70,7 +70,7 @@ $os_array = detect_os($_SERVER['HTTP_USER_AGENT']);
               {% t index.latest_blockchain %}
               <span>
                 <a href="/downloads/blockchain/<?php echo $os_array['code']; ?>/blockchain.bin" class="btn btn-grey pull-right">
-                 <img src="//static.monero.cc/images/icon_btn_download.png" class="inline icon_download"> {% t index.c_download %}
+                  <i class="fa fa-plus-circle icon_download" style="color: white; font-size: 20px;"></i> {% t index.c_download %}
                 </a>
               </span>
             </p>
