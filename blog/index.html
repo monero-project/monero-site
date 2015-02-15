@@ -3,19 +3,22 @@ layout: default
 title: All Blog Posts
 ---
 
-<!-- This loops through the paginated posts -->
+<h2>{% t blog.title_1 %} <span class="purple-kicks">{% t blog.title_2 %}</span> {% t blog.title_3 %}</h2>
+
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <blockquote>
     {{ post.summary }}
-  </div>
+    <small>{% t blog.tagged %}:
+    {% for tag in post.tags %}
+    [{{ tag }}]
+    {% endfor %}
+    </small>
+  </blockquote>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<div class="text-center">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}

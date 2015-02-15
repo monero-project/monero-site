@@ -1,7 +1,3 @@
-files:
-  index: index.html
-  vocab: vocab.html
-  simplewallet: use-simplewallet.html
 global:
   date: '%Y/%m/%d'
   monero: Monero
@@ -22,13 +18,13 @@ menu:
   choose: How to Choose a Monero Client
   running: How to Run a Monero Node
   downloads: All Monero Downloads
-  simplewallet: How to Use SimpleWallet
   accepting: How to Accept Monero Payments
   merchants: Monero Merchant Directory
   about: About Monero
   people: The People Behind Monero
   wiki: Moneropedia
-  compiling: Compiling Monero
+  userguides: User Guides
+  developerguides: Developer Guides
   openalias: The OpenAlias Project
   alternative: Alternative Clients
   projects: External Projects
@@ -86,3 +82,8 @@ index:
   c_download: Downloads
   monero_for: Monero for
   latest_blockchain: Latest Blockchain
+blog:
+  title_1: All
+  title_2: Blog
+  title_3: Posts
+  tagged: Tagged under

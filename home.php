@@ -1,5 +1,6 @@
 ---
 layout: root
+Title: Home
 ---
 
 <!-- Top Boxes -->
@@ -18,14 +19,12 @@ layout: root
             <!-- Icon is based on work by Icomoon (http://www.icomoon.io) and is licensed under Creative Commons BY 3.0 -->
             <img src="//static.monero.cc/images/icon_news.svg" class="inline-icon" style="height: 60px;"><h2>{% t index.the_latest %} <span class="announcements">{% t index.news %}</span></h2>
             <ul>
+            {% for post in site.posts limit:3 %}
               <li>
-                  <a href="https://bitcointalk.org/index.php?topic=583449.msg7708137#msg7708137">[{% t index.date_1 %} - <span class="news-title">{% t index.news_1 %}</span>]</a><br>
-                  {% t index.news_text_1 %}
+                  <a href="post.url">[{{ post.date | date: "%B %d" }} - <span class="news-title">{{ post.title }}</span>]</a><br>
+                  {{ post.summary }}
               </li>
-              <li>
-                  <a href="https://bitcointalk.org/index.php?topic=583449.msg7542304#msg7542304">[{% t index.date_2 %} - <span class="news-title">{% t index.news_2 %}</span>]</a><br>
-                  {% t index.news_text_2 %}
-              </li>
+            {% endfor %}
             </ul>
         </div>
       </div>
