@@ -1,6 +1,5 @@
 ---
 layout:			default
-translated_name: files.vocab
 ---
 
 #Vocab

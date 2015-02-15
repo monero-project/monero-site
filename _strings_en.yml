@@ -87,3 +87,5 @@ blog:
   title_2: Blog
   title_3: Posts
   tagged: Tagged under
+tags:
+  all: Articles by Tag

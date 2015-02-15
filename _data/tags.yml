@@ -1,0 +1,39 @@
+- slug: monero missives
+  name: Monero Missives
+
+- slug: conferences
+  name: Conferences
+
+- slug: exchanges
+  name: Exchanges
+
+- slug: gui
+  name: Monero Core GUI
+
+- slug: usability
+  name: Usability
+
+- slug: dev diaries
+  name: Dev Diaries
+
+- slug: mining
+  name: Mining
+
+- slug: i2p
+  name: i2p
+
+- slug: rpc
+  name: RPC API
+
+- slug: docs
+  name: Documentation
+
+- slug: branding
+  name: Branding and Graphics
+
+- slug: compliance
+  name: Standards Compliance
+
+- slug: crypto
+  name: Cryptography
+
