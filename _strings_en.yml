@@ -18,14 +18,15 @@ menu:
   choose: How to Choose a Monero Client
   running: How to Run a Monero Node
   downloads: All Monero Downloads
-  accepting: How to Accept Monero Payments
   merchants: Monero Merchant Directory
+  accepting: Accepting Monero Payments
   about: About Monero
   people: The People Behind Monero
   wiki: Moneropedia
   userguides: User Guides
   developerguides: Developer Guides
   openalias: The OpenAlias Project
+  lab: Monero Research Lab
   alternative: Alternative Clients
   projects: External Projects
   irc: IRC on Freenode
@@ -89,3 +90,4 @@ blog:
   tagged: Tagged under
 tags:
   all: Articles by Tag
+  notags: There are no posts for this tag.

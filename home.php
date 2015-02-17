@@ -21,7 +21,7 @@ Title: Home
             <ul>
             {% for post in site.posts limit:3 %}
               <li>
-                  <a href="post.url">[{{ post.date | date: "%B %d" }} - <span class="news-title">{{ post.title }}</span>]</a><br>
+                  <a href="{{ post.url }}">[{{ post.date | date: "%B %d" }} - <span class="news-title">{{ post.title }}</span>]</a><br>
                   {{ post.summary }}
               </li>
             {% endfor %}

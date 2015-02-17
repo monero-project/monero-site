@@ -6,13 +6,17 @@
 
   <body>
 
-    {% include header.html %}
+    <div id="wrap">
 
-    <div class="container main-content">
-        {{ content }}
+        {% include header.html %}
+
+        <div class="container main-content">
+            {{ content }}
+        </div>
+
+        {% include footer.html %}
+
     </div>
-
-    {% include footer.html %}
 
   </body>
 

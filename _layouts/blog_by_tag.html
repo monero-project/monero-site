@@ -10,7 +10,11 @@ layout: default
 	{% endif %}
 {% endfor %}
 
-<h1>{% t tags.all %}: <span class="kicks">{{ tag.name }}</span></h1>
+<div class="page-title">
+  <!-- Icon is based on work by Sergiu Bagrin (http://pixelkit.com) and is licensed under Creative Commons BY 3.0 -->
+  <img src="//static.monero.cc/images/icon_tags.svg" class="title-icon"><h2 class="inline">{% t tags.all %}: <span class="kicks">{{ tag.name }}</span></h2>
+</div>
+
 <div>
     {% if site.tags[tag.slug] %}
         {% for post in site.tags[tag.slug] %}
@@ -20,7 +24,7 @@ layout: default
 		  </blockquote>
         {% endfor %}
     {% else %}
-        <h3>There are no posts for this tag.</h3>
+        <h3>{% t tags.notags %}</h3>
     {% endif %}
 </div>
 
