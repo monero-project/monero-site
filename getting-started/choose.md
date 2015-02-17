@@ -1,9 +1,9 @@
 ---
 layout: static_page
 title: "How to Choose a Monero Client"
-title-pre-kick: "How to Choose a "
-title-kick: "Monero Client"
-title-post-kick: ""
+title-pre-kick: "How to "
+title-kick: "Choose "
+title-post-kick: "a Monero Client"
 kick-class: "green-kicks"
 icon: "icon_client"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
