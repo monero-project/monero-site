@@ -21,13 +21,14 @@ layout: default
 
 <article>
         <header>
-            <h2>{{ page.title }}</h2>
-            <span><i class="icon-clock"></i><time datetime="{{ page.date | global.date }}">{{ page.date | global.date }}</time></span><br/>
-            <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/>
-            <span class="author"><i class="icon-user"></i> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
+            <div class="page-title">
+              <!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->
+              <img src="//static.monero.cc/images/icon_blog_post.svg" class="title-icon"><h2 class="inline">{{ page.title }}</h2>
+            </div>
+            <span class="author">{% t blog.author %}: {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
         </header>
 
-        <div class="entry">{{ content }}</div>
+        <p>{{ content }}</p>
 
         <footer><p id="post-meta">{{ tags_content }}</p></footer>
 

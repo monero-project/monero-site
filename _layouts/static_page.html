@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="container main-content">
+        <div class="page-title">
+          {{ page.attribution }}
+          <img src="//static.monero.cc/images/{{ page.icon }}.svg" class="title-icon"><h2 class="inline">{{ page.title-pre-kick }} <span class="{{ page.kick-class }}">{{ page.title-kick }}</span> {{ page.title-post-kick }}</h2>
+        </div>
+
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

@@ -88,6 +88,7 @@ blog:
   title_2: Blog
   title_3: Posts
   tagged: Tagged under
+  author: Posted by
 tags:
   all: Articles by Tag
   notags: There are no posts for this tag.
