@@ -41,7 +41,11 @@ module Jekyll
     def generate_config(site)
 
       # Configs
-      tile_color = site.config["ie_tile_color"] || "#000000"
+      if site.config["ie_tile_color"]
+        tile_color = "\##{site.config["ie_tile_color"]}"
+      else
+        tile_color = "#000000"
+      end
       frequency = site.config["ie_frequency"] || 1440
       tile_small = site.config["ie_tile_small"]
       tile_medium = site.config["ie_tile_medium"]
