@@ -23,6 +23,12 @@
 module Jekyll
   class Xml < Page; end
 
+  class TileFile < StaticFile
+    def write(dest)
+      true
+    end
+  end
+
   class TileTemplater < Generator
     priority :low
     safe true
@@ -79,12 +85,13 @@ module Jekyll
 
         # Create file and add to site
         name = "ieconfig.xml"
-        dest = File.join(site.source, "/ietemplates/")
+        dest = File.join(site.dest, "/ietemplates/")
 
         validate_dir(dest)
 
         File.open("#{dest}#{name}", "w") { |f| f.write(xml.target!) }
-        site.pages << Jekyll::Xml.new(site, site.source, "/ietemplates/", name)
+        
+        site.static_files << Jekyll::TileFile.new(site, site.dest, "/ietemplates/", name)
 
     end
 
@@ -118,12 +125,12 @@ module Jekyll
 
         # Create file and add to site
         name = "poll#{index+1}.xml"
-        dest = File.join(site.source, "/ietemplates/")
+        dest = File.join(site.dest, "/ietemplates/")
 
         validate_dir(dest)
 
         File.open("#{dest}#{name}", "w") { |f| f.write(xml.target!) }
-        site.pages << Jekyll::Xml.new(site, site.source, "/ietemplates/", name)
+        site.static_files << Jekyll::TileFile.new(site, site.dest, "/ietemplates/", name)
 
       end
     end
