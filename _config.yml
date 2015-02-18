@@ -13,4 +13,8 @@ paginate: 10
 paginate_path: blog/page:num/
 
 # Windows live tiles config
-ie_tile_color: 505050
+ie_tile_color: eeeeee
+ie_tile_small: https://static.monero.cc/images/live-tiles/small.png
+ie_tile_medium: https://static.monero.cc/images/live-tiles/medium.png
+ie_tile_wide: https://static.monero.cc/images/live-tiles/wide.png
+ie_tile_large: https://static.monero.cc/images/live-tiles/large.png
