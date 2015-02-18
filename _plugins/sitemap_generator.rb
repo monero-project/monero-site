@@ -198,7 +198,9 @@ module Jekyll
     def fill_location(site, page_or_post)
       loc = REXML::Element.new "loc"
       url = site.config['url'] + site.config['baseurl']
-      loc.text = page_or_post.location_on_server(url)
+
+      # the Monero site is served "extensionless", so lose the extensions
+      loc.text = page_or_post.location_on_server(url).gsub('.html', '').gsub('.php', '')
 
       loc
     end
