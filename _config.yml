@@ -18,3 +18,14 @@ ie_tile_small: https://static.monero.cc/images/live-tiles/small.png
 ie_tile_medium: https://static.monero.cc/images/live-tiles/medium.png
 ie_tile_wide: https://static.monero.cc/images/live-tiles/wide.png
 ie_tile_large: https://static.monero.cc/images/live-tiles/large.png
+
+# Sitemap
+sitemap:
+    exclude:
+        - "/ietemplates/ieconfig.xml"
+        - "/ietemplates/poll1.xml"
+        - "/ietemplates/poll2.xml"
+        - "/ietemplates/poll3.xml"
+        - "/ietemplates/poll4.xml"
+        - "/ietemplates/poll5.xml"
+        - "/feed.xml"
