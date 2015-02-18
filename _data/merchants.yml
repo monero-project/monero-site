@@ -1,0 +1,24 @@
+- category: Exchanges
+  merchants:
+    - name: Poloniex
+      url: https://poloniex.com/exchange/btc_xmr
+    - name: Bittrex
+      url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
+    - name: Melotic
+      url: https://www.melotic.com/markets/xmr-btc
+    - name: CoinSwap
+      url: https://coin-swap.net/market/XMR/BTC
+- category: Services
+  merchants:
+    - name: MyMonero Web-based Wallet
+      url: https://mymonero.com
+    - name: XMR.to Monero to Bitcoin Payment Service
+      url: https://xmr.to
+    - name: CryptoEscrow Escrow Service
+      url: http://www.cryptoescrow.eu
+    - name: MoneroClub OTC Monero Trading
+      url: https://www.moneroclub.com/offers/
+- category: Gambling
+  merchants:
+    - name: Crypto Coins Dice
+      url: https://www.cryptocoins-dice.com
