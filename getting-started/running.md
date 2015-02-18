@@ -34,18 +34,18 @@ Once you have the files downloaded and unpacked you don't need to do anything be
 When starting Monero for the first time you will see something similar to this screen:
 
 {:.cli-code}
-2015-Feb-18 00:09:45.699104 Core initialized OK  
-2015-Feb-18 00:09:45.700143 Starting core RPC server\.\.\.  
-2015-Feb-18 00:09:45.700229 Run net_service loop( 2 threads)\.\.\.  
-2015-Feb-18 00:09:45.700472 [SRV_MAIN]Core RPC server started ok  
-2015-Feb-18 00:09:45.700543 [SRV_MAIN]Starting P2P net loop\.\.\.  
-2015-Feb-18 00:09:45.701066 [SRV_MAIN]Run net_service loop( 10 threads)\.\.\.  
-2015-Feb-18 00:09:46.702787 [P2P1]  
-<span style="color: yellow;">2015-Feb-18 00:09:54.923018 [P2P6][5.9.25.103:28080 OUT]Sync data returned unknown top block: 228593 -> 228609 [16 blocks (0 days) behind]<br>
-SYNCHRONIZATION started<br>
-2015-Feb-18 00:09:57.803744 [P2P1][197.242.158.240:28080 OUT]Sync data returned unknown top block: 228593 -> 228609 [16 blocks (0 days) behind]<br>
-SYNCHRONIZATION started</span><br>
-<span style="color: lime;">2015-Feb-18 00:10:01.719800 [P2P4][197.242.158.240:28080 OUT] SYNCHRONIZED OK</span><br>
+2015-Feb-18 00:09:45.699104 Core initialized OK
+2015-Feb-18 00:09:45.700143 Starting core RPC server\.\.\.
+2015-Feb-18 00:09:45.700229 Run net_service loop( 2 threads)\.\.\.
+2015-Feb-18 00:09:45.700472 [SRV_MAIN]Core RPC server started ok
+2015-Feb-18 00:09:45.700543 [SRV_MAIN]Starting P2P net loop\.\.\.
+2015-Feb-18 00:09:45.701066 [SRV_MAIN]Run net_service loop( 10 threads)\.\.\.
+2015-Feb-18 00:09:46.702787 [P2P1]
+<span style="color: yellow;">2015-Feb-18 00:09:54.923018 [P2P6][5.9.25.103:28080 OUT]Sync data returned unknown top block: 228593 -> 228609 [16 blocks (0 days) behind]
+SYNCHRONIZATION started
+2015-Feb-18 00:09:57.803744 [P2P1][197.242.158.240:28080 OUT]Sync data returned unknown top block: 228593 -> 228609 [16 blocks (0 days) behind]
+SYNCHRONIZATION started</span>
+<span style="color: lime;">2015-Feb-18 00:10:01.719800 [P2P4][197.242.158.240:28080 OUT] SYNCHRONIZED OK</span>
 
 The yellow text indicates it is receiving blocks as it synchronises up with the rest of the Monero network. The green "synchronized ok" text will appear once it has correctly synched up. Once you see this there's nothing further you need to do, you are now running a Monero node!
 
