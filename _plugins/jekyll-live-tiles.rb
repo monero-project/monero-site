@@ -106,7 +106,7 @@ module Jekyll
             end
             v.binding("template"=>"TileSquare310x310TextList02", "branding"=>"logo", "fallback"=>"TileWideText09") do |b|
               b.tag!("text", post.title, "id"=>"1")
-              b.tag!("text", shorten(strip(post.content)),"id"=>"2")
+              b.tag!("text", shorten(post.data["summary"]),"id"=>"2")
               b.tag!("text", "#{post.date.month}-#{post.date.day}-#{post.date.year}", "id"=>"3")
             end
           end
