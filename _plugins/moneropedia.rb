@@ -58,9 +58,6 @@ module Jekyll
           end
         end
         
-        # add H3 id tags
-        content.gsub(/(\n### .*\n)/, '\1' + ' {#' + '\1'.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') + '}')
-
         base_converter(content)
       end
     end
