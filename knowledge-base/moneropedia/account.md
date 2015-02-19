@@ -11,7 +11,7 @@ Those familiar with Monero's predecessors will be more familiar with the term *w
 
 Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlocktime set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time.
 
-A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you practice good security (see below).
+A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security).
 
 ### Multiple Accounts
 
@@ -46,8 +46,8 @@ To start synchronizing with the daemon use "refresh" command.
 Use "help" command to see the list of available commands.
 Always use "exit" command when closing simplewallet to save
 current session's state. Otherwise, you will possibly need to synchronize 
-your wallet again. Your wallet key is NOT under risk anyway.<br><br>
-<span style="color: lime;">PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.</span><br><br>
+your wallet again. Your wallet key is NOT under risk anyway.<br>
+<span style="color: lime;">PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.</span><br>
 aunt knuckle italics moisture hawk thorn iris abort
 chlorine smog uphill glass aptitude nowhere sewage plywood
 dual relic fierce divers anvil nodes bubble cabin abort

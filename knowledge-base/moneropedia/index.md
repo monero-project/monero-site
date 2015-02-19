@@ -10,5 +10,3 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ---
 
 ### Work in Progress
-
-This is a test of the <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Default tooltip">Tooltip</a> thingy.
