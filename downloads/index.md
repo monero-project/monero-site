@@ -11,7 +11,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### Monero Core
 
-Monero Core consists of several applications, including bitmonerod (the daemon that maintains the connection to the network) and simplewallet (a Monero account manager application), as well as several other helper applications.
+Monero Core consists of several applications, including bitmonerod (the daemon that maintains the connection to the network) and simplewallet (a Monero @account manager application), as well as several other helper applications.
 
 If you are using Monero Core for the first time you may want to download a @blockchain bootstrap to get you started. A link to download the @blockchain bootstrap is included in the listings below.
 

@@ -4,6 +4,7 @@ global:
   getting_started: Getting Started
   copyright: Copyright
   monero_project: The Monero Project
+  wiki: Moneropedia
   terms: Terms
   privacy: Privacy
   copyright: Copyright
@@ -26,7 +27,6 @@ menu:
   accepting: Accepting Monero Payments
   about: About Monero
   people: The People Behind Monero
-  wiki: Moneropedia
   userguides: User Guides
   developerguides: Developer Guides
   openalias: The OpenAlias Project

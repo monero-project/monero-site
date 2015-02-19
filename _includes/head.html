@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-{% if page.title %}
+{% if page.entry %}
+{{ page.entry }} | {% t global.wiki %} | {% t index.page_title %}
+{% elsif page.title %}
 {{ page.title }} | {% t index.page_title %}
 {% else %}
 {% t index.page_title %}

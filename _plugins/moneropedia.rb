@@ -51,12 +51,15 @@ module Jekyll
           end
         end
 
-
+        # replace instances of @term with tooltips of the summary
         @@moneropedia.each do |entry|
           entry[:terms].each do |term|
-            content = content.gsub(/(@#{term})\b/i, '<a href="/knowledge-base/moneropedia/' + term + '" data-toggle="tooltip" data-placement="top" data-original-title="' + entry[:summary] + '">' + term + '</a>')
+            content = content.gsub(/(\@#{term})\b/i, '<a href="/knowledge-base/moneropedia/' + term + '" data-toggle="tooltip" data-placement="top" data-original-title="' + entry[:summary] + '">' + term + '</a>')
           end
         end
+        
+        # add H3 id tags
+        content.gsub(/(\n### .*\n)/, '\1' + ' {#' + '\1'.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') + '}')
 
         base_converter(content)
       end
