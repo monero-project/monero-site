@@ -13,7 +13,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 Monero Core consists of several applications, including bitmonerod (the daemon that maintains the connection to the network) and simplewallet (a Monero account manager application), as well as several other helper applications.
 
-If you are using Monero Core for the first time you may want to download a blockchain bootstrap to get you started. A link to download the blockchain bootstrap is included in the listings below.
+If you are using Monero Core for the first time you may want to download a @blockchain bootstrap to get you started. A link to download the @blockchain bootstrap is included in the listings below.
 
 <div class="row">
 
@@ -75,6 +75,6 @@ If you are using Monero Core for the first time you may want to download a block
 
 ### Other Downloads
 
-- For blockchain bootstraps please use the link for your current platform from the list above.
+- For @blockchain bootstraps please use the link for your current platform from the list above.
 - For Monero Research Lab publications please visit the [Monero Research Lab section](/research-lab) of this site.
 - High resolution and vector copies of the Monero logo [can be downloaded at this link](/downloads/resources/branding.zip).
