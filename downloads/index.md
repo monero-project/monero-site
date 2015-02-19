@@ -25,7 +25,7 @@ If you are using Monero Core for the first time you may want to download a @bloc
 
 <h4>
  <a href="{{ data_downloads.url }}">
-  <img src="//static.monero.cc/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
 </h4>
 
@@ -41,7 +41,7 @@ If you are using Monero Core for the first time you may want to download a @bloc
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
 <h4>
-  <img src="//static.monero.cc/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
 </h4>
 
 <br><br>
@@ -56,7 +56,7 @@ If you are using Monero Core for the first time you may want to download a @bloc
 
 <h4>
  <a href="{{ data_downloads.url }}">
-  <img src="//static.monero.cc/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
 </h4>
 

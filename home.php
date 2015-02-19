@@ -7,7 +7,7 @@ Title: Home
       <div class="row info-boxes">
         <div class="col-md-5 monero-info">
             <!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->
-            <img src="//static.monero.cc/images/icon_monero.svg" class="inline-icon" style="height: 60px;"><h2>{% t index.what_is %} <span class="kicks">{% t global.monero %}</span> ?</h2>
+            <img src="//static.getmonero.org/images/icon_monero.svg" class="inline-icon" style="height: 60px;"><h2>{% t index.what_is %} <span class="kicks">{% t global.monero %}</span> ?</h2>
             <p class="kicks text-important">{% t index.what_is_orange_block %}</p>
             <p>{% t index.what_is_text_block_1 %}</p>
             <p>{% t index.what_is_text_block_2 %} <a href="/{{ site.lang }}/getting-started/">{% t global.getting_started %}</a> {% t index.what_is_text_block_4 %}<br/>
@@ -17,7 +17,7 @@ Title: Home
         </div>
         <div class="col-md-6 monero-news">
             <!-- Icon is based on work by Icomoon (http://www.icomoon.io) and is licensed under Creative Commons BY 3.0 -->
-            <img src="//static.monero.cc/images/icon_news.svg" class="inline-icon" style="height: 60px;"><h2>{% t index.the_latest %} <span class="announcements">{% t index.news %}</span></h2>
+            <img src="//static.getmonero.org/images/icon_news.svg" class="inline-icon" style="height: 60px;"><h2>{% t index.the_latest %} <span class="announcements">{% t index.news %}</span></h2>
             <ul>
             {% for post in site.posts limit:3 %}
               <li>
@@ -34,17 +34,17 @@ Title: Home
       <div class="row box-green">
         <div class="col-md-4 right-border inside">
             <!-- Icon is by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->
-            <img src="//static.monero.cc/images/icon_secure.svg" class="green-icon" style="height: 40px;"><h2>{% t index.secure %}</h2>
+            <img src="//static.getmonero.org/images/icon_secure.svg" class="green-icon" style="height: 40px;"><h2>{% t index.secure %}</h2>
             <p>{% t index.secure_text %}</p>
         </div>
         <div class="col-md-4 inside">
             <!-- Icon is by Bogdan Rosu (http://www.bogdanrosu.com) and is licensed under Creative Commons BY 3.0 -->
-            <img src="//static.monero.cc/images/icon_private.svg" class="green-icon" style="height: 40px;"><h2>{% t index.private %}</h2>
+            <img src="//static.getmonero.org/images/icon_private.svg" class="green-icon" style="height: 40px;"><h2>{% t index.private %}</h2>
             <p>{% t index.private_text %}</p>
         </div>
         <div class="col-md-4 left-border inside">
             <!-- Icon is by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->
-            <img src="//static.monero.cc/images/icon_untraceable.svg" class="green-icon" style="height: 40px;"><h2>{% t index.untraceable %}</h2>
+            <img src="//static.getmonero.org/images/icon_untraceable.svg" class="green-icon" style="height: 40px;"><h2>{% t index.untraceable %}</h2>
             <p>{% t index.untraceable_text %}</p>
         </div>
       </div>
@@ -54,7 +54,7 @@ Title: Home
       <div class="row bottom-boxes">
         <div class="col-md-6">
           <!-- Icon is by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->
-          <img src="//static.monero.cc/images/icon_start.svg" class="icon" style="height: 60px;">
+          <img src="//static.getmonero.org/images/icon_start.svg" class="icon" style="height: 60px;">
           <h2 class="inline">
             {% t index.how_do_i %}<br><span class="softyellow-kicks">{% t index.get_started %}</span> ?
           </h2>
@@ -64,7 +64,7 @@ Title: Home
         <div class="col-md-6">
           <div class="left-pad">
           <!-- Icon is by Yannick (http://yanlu.de) and is licensed under Creative Commons BY 3.0 -->
-            <img src="//static.monero.cc/images/icon_download.svg" class="icon" style="height: 60px;"><h2 class="no-margin hide-breaks inline">{% t index.where_can_i %} <span class="purple-kicks">{% t index.download %}</span> {% t global.monero %} ?</h2>
+            <img src="//static.getmonero.org/images/icon_download.svg" class="icon" style="height: 60px;"><h2 class="no-margin hide-breaks inline">{% t index.where_can_i %} <span class="purple-kicks">{% t index.download %}</span> {% t global.monero %} ?</h2>
           </div>
 
           <div class="left-pad download-links-container">

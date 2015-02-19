@@ -16,7 +16,7 @@ The clients below are ideal if you are using Monero for the first time. They are
 ---
 
 {:.text-center}
-[<img style="width: 360px; padding-bottom: 10px;" src="//static.monero.cc/images/clients/mymonero.svg" />  
+[<img style="width: 360px; padding-bottom: 10px;" src="//static.getmonero.org/images/clients/mymonero.svg" />  
 MyMonero is an easy-to-use Monero client that you can use on most desktop and mobile devices without installing anything.  
 It can be used with some measure of safety, as MyMonero are unable to spend your funds on your behalf.  
 It is owned and operated by Riccardo Spagni, one of the Monero Core Team members.](https://mymonero.com)
@@ -30,7 +30,7 @@ If you are able to spare the bandwidth and disk space required to run a full nod
 ---
 
 {:.text-center}
-<img style="width: 360px;" src="//static.monero.cc/images/logo.svg" />  
+<img style="width: 360px;" src="//static.getmonero.org/images/logo.svg" />  
 You can read our guide on [running a Monero node](/getting-started/running), and the Monero core software can be downloaded from the [downloads page](/downloads).
 
 ---

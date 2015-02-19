@@ -4,8 +4,8 @@ Copyright (c) 2014-2015, The Monero Project
 
 ## Development Resources
 
-Web: [monero.cc](http://getmonero.org)  
-Mail: [dev@monero.cc](mailto:dev@getmonero.org)  
+Web: [getmonero.org](http://getmonero.org)  
+Mail: [dev@getmonero.org](mailto:dev@getmonero.org)  
 IRC: [#monero-dev on Freenode](irc://chat.freenode.net/#monero-dev)
 
 ## About this Project

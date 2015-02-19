@@ -23,12 +23,12 @@ if (isset($_COOKIE["MONERO_LANG"]))
 
     <title>Monero - private, secure, untraceable</title>
 
-    <link href="//static.monero.cc/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//static.monero.cc/css/main.css" rel="stylesheet">
+    <link href="//static.getmonero.org/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//static.getmonero.org/css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-      <script src="//static.monero.cc/js/html5shiv.js"></script>
-      <script src="//static.monero.cc/js/respond.min.js"></script>
+      <script src="//static.getmonero.org/js/html5shiv.js"></script>
+      <script src="//static.getmonero.org/js/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -37,7 +37,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/"><img class="logo" src="//static.monero.cc/images/logo.svg"></a>
+          <a class="navbar-brand" href="/"><img class="logo" src="//static.getmonero.org/images/logo.svg"></a>
         </div>
       </div>
     </div>
@@ -46,12 +46,12 @@ if (isset($_COOKIE["MONERO_LANG"]))
       <div class="row">
         <div class="col-md-4 col-md-offset-2">
           <ul class="nav nav-pills nav-stacked flag-select">
-            <li><a href="/home"><h3><img class="flag" src="//static.monero.cc/images/flags/english_combined.png"> English</h3></a></li>
+            <li><a href="/home"><h3><img class="flag" src="//static.getmonero.org/images/flags/english_combined.png"> English</h3></a></li>
           </ul>
         </div>
         <div class="col-md-4">
           <ul class="nav nav-pills nav-stacked flag-select">
-            <li><h3><img class="flag" src="//static.monero.cc/images/flags/allflags.png"> More coming...</h3></li>
+            <li><h3><img class="flag" src="//static.getmonero.org/images/flags/allflags.png"> More coming...</h3></li>
           </ul>
         </div>
       </div>
@@ -67,7 +67,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
 
 
     <!-- JS -->
-    <script src="//static.monero.cc/js/jquery.min.js"></script>
-    <script src="//static.monero.cc/js/bootstrap.min.js"></script>
+    <script src="//static.getmonero.org/js/jquery.min.js"></script>
+    <script src="//static.getmonero.org/js/bootstrap.min.js"></script>
   </body>
 </html>

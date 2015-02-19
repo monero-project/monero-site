@@ -19,10 +19,10 @@ paginate_path: blog/page:num/
 
 # Windows live tiles config
 ie_tile_color: eeeeee
-ie_tile_small: https://static.monero.cc/images/live-tiles/small.png
-ie_tile_medium: https://static.monero.cc/images/live-tiles/medium.png
-ie_tile_wide: https://static.monero.cc/images/live-tiles/wide.png
-ie_tile_large: https://static.monero.cc/images/live-tiles/large.png
+ie_tile_small: https://static.getmonero.org/images/live-tiles/small.png
+ie_tile_medium: https://static.getmonero.org/images/live-tiles/medium.png
+ie_tile_wide: https://static.getmonero.org/images/live-tiles/wide.png
+ie_tile_large: https://static.getmonero.org/images/live-tiles/large.png
 
 # Sitemap
 sitemap:

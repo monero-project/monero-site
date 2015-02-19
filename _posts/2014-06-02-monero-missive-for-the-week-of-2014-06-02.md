@@ -14,8 +14,8 @@ Also an important note on updates: Our policy is to only provide announcements o
 
 **Major Updates**
 
-1. The big one...we have a logo! If you use Monero in any of your projects, [you can grab a branding pack here](http://monero.cc/downloads/resources/branding.zip). You can also see it in all its glory right here:  
-![logo](http://monero.cc/downloads/resources/logo-200.jpg){: .center-image }
+1. The big one...we have a logo! If you use Monero in any of your projects, [you can grab a branding pack here](http://getmonero.org/downloads/resources/branding.zip). You can also see it in all its glory right here:  
+![logo](http://getmonero.org/downloads/resources/logo-200.jpg){: .center-image }
 
 2. With our logo completed, we are going to be moving forward on a major overhaul and redesign of our website. We are also in the process of architecting and designing a better repository of information - which includes a forum-style that allows for both discussion, as well an open-source, crowd-funded development incubator. We will be keeping you updated on our progress in the coming weeks. In the meantime, the best place for threaded discussions are the [/r/monero subreddit](http://www.reddit.com/r/monero), and for live discussions join us on Freenode: #monero for general chat, #monero-dev for development efforts, and #monero-otc for price talk and over-the-counter trades.
 
