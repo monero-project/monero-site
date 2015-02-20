@@ -76,8 +76,8 @@ index:
   where_can_i: Where can I
   download: download
   different_os: "Need it for a different operating system?"
-  all_downloads: View all downloads here
-  c_download: Downloads
+  all_downloads: View all available downloads here
+  c_download: Download
   monero_for: Monero for
   latest_blockchain: Latest Blockchain
 blog:
