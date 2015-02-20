@@ -8,6 +8,18 @@
       url: https://www.melotic.com/markets/xmr-btc
     - name: CoinSwap
       url: https://coin-swap.net/market/XMR/BTC
+- category: Gambling
+  merchants:
+    - name: Crypto Coins Dice
+      url: https://www.cryptocoins-dice.com
+- category: Block Explorers
+  merchants:
+    - name: MoneroBlocks
+      url: http://moneroblocks.eu
+- category: Tools
+  merchants:
+    - name: MoneroPric.es Price Converter
+      url: https://moneropric.es
 - category: Services
   merchants:
     - name: MyMonero Web-based Wallet
@@ -18,7 +30,3 @@
       url: http://www.cryptoescrow.eu
     - name: MoneroClub OTC Monero Trading
       url: https://www.moneroclub.com/offers/
-- category: Gambling
-  merchants:
-    - name: Crypto Coins Dice
-      url: https://www.cryptocoins-dice.com
