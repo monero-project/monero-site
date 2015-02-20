@@ -1,8 +1,8 @@
 ---
 layout: static_page
-title: "Monero Merchant Directory"
+title: "Monero Merchants and Services Directory"
 title-pre-kick: "Monero "
-title-kick: "Merchant "
+title-kick: "Merchants and Services "
 title-post-kick: "Directory"
 kick-class: "purple-kicks"
 icon: "icon_merchants"

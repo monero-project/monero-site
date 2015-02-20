@@ -46,7 +46,7 @@ module Jekyll
             entry = SafeYAML.load_file(entry_file)
 
             if !entry.empty?
-              @@moneropedia.push({ :terms => entry['terms'], :summary => entry['summary'] })
+              @@moneropedia.push({ :terms => entry['terms'], :summary => entry['summary'], :file => File.basename(entry_file, ".*") })
             end
           end
         end
@@ -54,7 +54,7 @@ module Jekyll
         # replace instances of @term with tooltips of the summary
         @@moneropedia.each do |entry|
           entry[:terms].each do |term|
-            content = content.gsub(/(\@#{term})\b/i, '<a href="/knowledge-base/moneropedia/' + term + '" data-toggle="tooltip" data-placement="top" data-original-title="' + entry[:summary] + '">' + term + '</a>')
+            content = content.gsub(/(\@#{term})\b/i, '<a href="/knowledge-base/moneropedia/' + entry[:file] + '" data-toggle="tooltip" data-placement="top" data-original-title="' + entry[:summary] + '">' + term + '</a>')
           end
         end
         
