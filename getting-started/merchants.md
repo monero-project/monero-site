@@ -9,7 +9,7 @@ icon: "icon_merchants"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-If there are any merchants that no longer provide Monero services, or a merchant that wishes to be added, please [open an issue on this website's Github repository](https://github.com/monero-project/monero-site/issues) to alert us.
+---
 
 <div class="row">
 
@@ -34,3 +34,5 @@ If there are any merchants that no longer provide Monero services, or a merchant
 {% endfor %}
 
 </div>
+
+If there are any merchants that no longer provide Monero services, or a merchant that wishes to be added, please [open an issue on this website's Github repository](https://github.com/monero-project/monero-site/issues) to alert us.
