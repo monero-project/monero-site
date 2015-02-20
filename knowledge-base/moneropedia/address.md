@@ -11,4 +11,5 @@ When you send Monero to someone you only need one piece of information, and that
 
 Because those addresses are long and complex you will often encounter an @openalias address instead. For example, Monero donations can be sent to <span style="word-break: break-all; word-wrap: break-word;">donate@getmonero.org</span> or <span style="word-break: break-all; word-wrap: break-word;">donate.getmonero.org</span>
 
-If you would like to get an @openalias address of your own then it is 
+If you would like to get an @openalias address of your own then there is some information on the [OpenAlias page](/knowledge-base/openalias).
+
