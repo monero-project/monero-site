@@ -31,6 +31,7 @@ module Jekyll
     class Markdown < Converter
       alias base_converter convert
       @@moneropedia = Array.new
+      @@moneropedia_ordered = Hash.new
 
       def convert(content)
         # build up index of Moneropedia summaries
@@ -47,8 +48,25 @@ module Jekyll
 
             if !entry.empty?
               @@moneropedia.push({ :terms => entry['terms'], :summary => entry['summary'], :file => File.basename(entry_file, ".*") })
+              @@moneropedia_ordered = @@moneropedia_ordered.merge({ entry['entry'] => File.basename(entry_file, ".*") })
             end
           end
+        end
+
+        # Jekyll.logger.warn YAML::dump(@@moneropedia_ordered)
+        if content.include? '@moneropedia'
+          # Moneropedia index, replace with a list of entries
+          cur_letter = 'A'
+          replace = "<div class='col-lg-4'>\n<h4 class='text-center'>A</h4>\n"
+          @@moneropedia_ordered.sort.map do |entry, link|
+            if cur_letter != entry[0]
+              replace += "</div>\n<div class='col-lg-4'>\n<h4 class='text-center'>" + entry[0] + "</h4>\n"
+              cur_letter = entry[0]
+            end
+            replace += "<a href='/knowledge-base/moneropedia/" + link + "'>" + entry + "</a><br>\n"
+          end
+          replace += "</div>"
+          content = content.gsub(/(\@moneropedia)/i, replace)          
         end
 
         # replace instances of @term with tooltips of the summary
