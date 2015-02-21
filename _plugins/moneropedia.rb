@@ -54,7 +54,7 @@ module Jekyll
         # replace instances of @term with tooltips of the summary
         @@moneropedia.each do |entry|
           entry[:terms].each do |term|
-            content = content.gsub(/(\@#{term})\b/i, '<a href="/knowledge-base/moneropedia/' + entry[:file] + '" data-toggle="tooltip" data-placement="top" data-original-title="' + entry[:summary] + '">' + term + '</a>')
+            content = content.gsub(/(\@#{term})\b/i, '<a class="moneropedia" href="/knowledge-base/moneropedia/' + entry[:file] + '" data-toggle="tooltip" data-placement="top" data-original-title="' + entry[:summary] + '">' + term.gsub('-',' ') + '</a>')
           end
         end
         

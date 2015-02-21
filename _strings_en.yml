@@ -42,7 +42,8 @@ menu:
   irc-mining: "#monero-pools (Mining)"
 index:
   page_title: "Monero - secure, private, untraceable"
-  what_is: What is
+  what_is_1: What is
+  what_is_2: " ?"
   what_is_orange_block: "Monero is a secure, private, untraceable currency that is open-source and freely available to all."
   what_is_text_block_1: "You are your own bank, you control and are responsible for your funds, and nobody can trace your transfers."
   what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below, and if you'd like to try Monero for yourself the"
@@ -50,36 +51,27 @@ index:
   what_is_text_block_4: "section is an excellent launching point."
   news: News
   the_latest: The Latest
-  date_1: July 6th
-  date_2: July 27th
-  news_1: "Monero Missive #5"
-  news_2: "Monero Missive #4"
-  news_text_1: "includes an update on new features (rpcwallet and properly daemonizing the daemon) that are ready for testing."
-  news_text_2: "includes fluffypony at the Bitcoin Supernode conference, as well as major changes to keep the Monero daemon and wallet a lot more stable and reliable."
   private: Private
   secure: Secure
   untraceable: Untraceable
-  private_text: "Monero uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default."
-  untraceable_text: "By taking advantage of ring signatures, a special property of certain types of cryptography, Monero is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer."
-  secure_text: "Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 24 word mnemonic that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen."
-  why_use: Why use
-  why_1: "It's private by default, optionally transparent (just like cash!) - the details of individual transactions, or even of an entire wallet, can be revealed publicly or privately"
-  why_2: "It has a a strong core team actively developing Monero, along with an amazing group of of mathematicians, cryptographers, developers, and marketing specialists actively working on it"
-  why_3: "A great deal of focus has been placed on improving the usability of Monero, with the aim of providing a cryptocurrency that is more readily accessible to end users"
-  why_4: "It was launched fairly and evenly, with no single entity unfairly controlling any significant amount of Monero or providing any sort of unfair advantage (such as an 'instamine' or 'premine')"
-  how_do_i: "How do I "
+  private_text: "Monero uses a cryptographically sound system to allow you to send and receive funds without your @transactions being easily revealed on the @blockchain (the distributed ledger of transactions). This ensures that your purchases, receipts, and all transfers remain absolutely private by default."
+  untraceable_text: "By taking advantage of @ring-signatures, a special property of certain types of cryptography, Monero is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer."
+  secure_text: "Using the power of a distributed peer-to-peer @consensus network, every transaction on the network is cryptographically secured. Individual @accounts have a 25 word @mnemonic-seed that is only displayed once, and can be written down to backup the @account. Account files are encrypted with a passphrase to ensure they are useless if stolen."
+  how_do_i_1: "How do I "
+  how_do_i_2: " ?"
   get_started: get started
-  get_started_1: "The fastest way to start using Monero is by using a web wallet such as "
+  get_started_1: "The fastest way to start using Monero is by using a web @account manager such as "
   mymonero: "MyMonero"
   get_started_2: "."
-  get_started_3: "Alternatively, if you would like to run a full Monero node you can download the client and a kick-starter blockchain (to bring your local client up to speed) using the download link on the right."
+  get_started_3: "Alternatively, if you would like to run a [full Monero node](/getting-started/running) you can download the client and a kick-starter @blockchain (to bring your local client up to speed) using the download link on the right."
   where_can_i: Where can I
-  download: download
+  download_1: download
+  download_2: " ?"
   different_os: "Need it for a different operating system?"
   all_downloads: View all available downloads here
   c_download: Download
   monero_for: Monero for
-  latest_blockchain: Latest Blockchain
+  latest_blockchain: Latest @Blockchain
 blog:
   title_1: All
   title_2: Blog
