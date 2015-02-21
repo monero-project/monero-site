@@ -51,7 +51,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
         </div>
         <div class="col-md-4">
           <ul class="nav nav-pills nav-stacked flag-select">
-            <li><h3><img class="flag" src="//static.getmonero.org/images/flags/allflags.png"> More coming...</h3></li>
+            <li><h3 style="line-height: 50px; padding: 10px 20px;"><img class="flag" src="//static.getmonero.org/images/flags/allflags.png"> More to come...</h3></li>
           </ul>
         </div>
       </div>

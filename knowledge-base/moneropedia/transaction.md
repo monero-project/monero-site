@@ -7,3 +7,4 @@ summary: "a cryptographically signed container that details the transfer of Mone
 
 ### The Basics
 
+{{ page.summary | capitalize }}.

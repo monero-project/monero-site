@@ -7,3 +7,4 @@ summary: "a special transaction where the recipient can only spend the funds aft
 
 ### The Basics
 
+{{ page.summary | capitalize }}.

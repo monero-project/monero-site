@@ -7,3 +7,4 @@ summary: "a distributed ledger of all transactions both past and present, withou
 
 ### The Basics
 
+{{ page.summary | capitalize }}.

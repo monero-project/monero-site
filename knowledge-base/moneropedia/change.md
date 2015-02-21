@@ -7,3 +7,4 @@ summary: "Monero sent as part of a transaction, but unique in that returns to yo
 
 ### The Basics
 
+{{ page.summary | capitalize }}.

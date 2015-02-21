@@ -7,3 +7,4 @@ summary: ""
 
 ### The Basics
 
+{{ page.summary | capitalize }}.
