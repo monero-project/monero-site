@@ -35,7 +35,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
   <body class="body-language">
     <!-- Static navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container" style="padding-bottom: 0px;">
         <div class="navbar-header">
           <a class="navbar-brand" href="/"><img class="logo" src="//static.getmonero.org/images/logo.svg"></a>
         </div>
