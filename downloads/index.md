@@ -55,7 +55,7 @@ If you are using Monero Core for the first time you may want to download a @bloc
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
 <h4>
- <a href="{{ data_downloads.url }}">
+ <a href="//downloads.getmonero.org/{{ data_downloads.url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
 </h4>
@@ -63,7 +63,7 @@ If you are using Monero Core for the first time you may want to download a @bloc
 <strong>Current Version:</strong> {{ data_downloads.version }}<br>
 <strong>SHA Hash:</strong> {{ data_downloads.hash }}<br>
 <br>
-<strong>Optional:</strong> <a href="/downloads/blockchain/{{ data_downloads.blockchain }}/blockchain.bin">Download the Blockchain Bootstrap</a>
+<strong>Optional:</strong> <a href="//downloads.getmonero.org/blockchain/{{ data_downloads.blockchain }}/blockchain.bin">Download the Blockchain Bootstrap</a>
 <hr>
 
 </div>

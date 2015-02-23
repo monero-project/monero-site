@@ -1,41 +1,41 @@
 - platform: Windows, 64-bit
   icon: windows.svg
-  url: /downloads/win64
+  url: win64
   hash: facbeb2e408cf8b9a46534363eba161dbb047654
   version: 0.8.8.6
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: windows.svg
-  url: /downloads/win32
+  url: win32
   hash: none
   version: 0.8.8.6
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   icon: apple.svg
-  url: /downloads/mac64
+  url: mac64
   hash: 7069de92083fb7831b063cc152e8f35508ff61bf
   version: 0.8.8.6
   blockchain: mac
 
 - platform: Linux, 64-bit
   icon: linux.svg
-  url: /downloads/linux64
+  url: linux64
   hash: 16f3f55bcfbfae6135cbeda6574f651890a8be64
   version: 0.8.8.6
   blockchain: linux
 
 - platform: FreeBSD, 64-bit
   icon: freebsd.svg
-  url: /downloads/freebsd64
+  url: freebsd64
   hash: 9fd0005b697e146a26a0bf9e3cd0c89b978f7fbd
   version: 0.8.8.6
   blockchain: freebsd
 
 - platform: Raspberry Pi / ARM
   icon: arm.svg
-  url: /downloads/arm
+  url: arm
   hash: none
   version: 0.8.8.6
   blockchain: arm
