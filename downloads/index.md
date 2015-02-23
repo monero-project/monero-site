@@ -15,7 +15,7 @@ Monero Core consists of several applications, including bitmonerod (the daemon u
 
 If you are using Monero Core for the first time you may want to download a @blockchain bootstrap to get you started. A link to download the @blockchain bootstrap is included in the listings below.
 
-Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes](https://getmonero.org/downloads/hashes) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
+Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
 
 <div class="row">
 
