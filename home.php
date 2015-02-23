@@ -10,7 +10,7 @@ Title: Home
             <img src="//static.getmonero.org/images/icon_monero.svg" class="inline-icon" style="height: 60px;"><h2>{% t index.what_is_1 %} <span class="kicks">{% t global.monero %}</span> {% t index.what_is_2 %}</h2>
             <p class="kicks text-important">{% t index.what_is_orange_block %}</p>
             <p>{% t index.what_is_text_block_1 %}</p>
-            <p>{% t index.what_is_text_block_2 %} <a href="/{{ site.lang }}/getting-started/">{% t global.getting_started %}</a> {% t index.what_is_text_block_4 %}<br/>
+            <p>{% t index.what_is_text_block_2 %} <a href="/getting-started">{% t global.getting_started %}</a> {% t index.what_is_text_block_4 %}<br/>
             </p>  
         </div>
         <div class="col-md-1 info-spacer">
