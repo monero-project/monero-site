@@ -56,7 +56,7 @@ index:
   untraceable: Untraceable
   private_text: "Monero uses a cryptographically sound system to allow you to send and receive funds without your @transactions being easily revealed on the @blockchain (the distributed ledger of transactions). This ensures that your purchases, receipts, and all transfers remain absolutely private by default."
   untraceable_text: "By taking advantage of @ring-signatures, a special property of certain types of cryptography, Monero is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer."
-  secure_text: "Using the power of a distributed peer-to-peer @consensus network, every transaction on the network is cryptographically secured. Individual @accounts have a 25 word @mnemonic-seed that is only displayed once, and can be written down to backup the @account. Account files are encrypted with a passphrase to ensure they are useless if stolen."
+  secure_text: "Using the power of a distributed peer-to-peer @consensus network every transaction is cryptographically secured. Individual @accounts have a 25 word @mnemonic-seed displayed when created, and can be written down to backup the @account. Account files are encrypted with a passphrase to ensure they are useless if stolen."
   how_do_i_1: "How do I "
   how_do_i_2: " ?"
   get_started: get started

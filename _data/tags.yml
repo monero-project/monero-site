@@ -37,3 +37,11 @@
 - slug: crypto
   name: Cryptography
 
+- slug: platforms
+  name: Platform Support
+
+- slug: core
+  name: Monero Core
+
+- slug: accounts
+  name: Accounts (Wallets)

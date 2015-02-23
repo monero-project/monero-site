@@ -71,7 +71,7 @@ Title: Home
             {% include download.php %}
           </div>
           <div class="col-lg-12 left-pad other-links">
-              {% t index.different_os %}<br><a href="/{{ site.lang }}/downloads">{% t index.all_downloads %}</a>
+              {% t index.different_os %}<br><a href="/downloads">{% t index.all_downloads %}</a>
           </div>
         </div>
       </div>

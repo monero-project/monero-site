@@ -11,11 +11,11 @@ attribution: "<!-- Icon is based on work by Icons8 (http://www.icons8.com) and i
 
 ### The Basics
 
-Monero works a little differently to what you may have become accustomed to from other cryptocurrencies. In the case of a digital currency like Bitcoin and its many derivatives merchant payment systems will usually create a new recipient address for each payment or user.
+Monero works a little differently to what you may have become accustomed to from other @cryptocurrencies. In the case of a digital currency like Bitcoin and its many derivatives merchant payment systems will usually create a new recipient @address for each payment or user.
 
-However, because Monero has stealth addresses there is no need to have separate recipient addresses for each payment or user, and a single wallet address can be published. Instead, when receiving payments a merchant will provide the person paying with a "payment ID".
+However, because Monero has @stealth-addresses there is no need to have separate recipient addresses for each payment or user, and a single @account address can be published. Instead, when receiving payments a merchant will provide the person paying with a "payment ID".
 
-A payment ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is: <span class="long-term">666c75666679706f6e7920697320746865206265737420706f6e792065766572</span>
+A @payment-ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is: <span class="long-term">666c75666679706f6e7920697320746865206265737420706f6e792065766572</span>
 
 ### Checking for a Payment in simplewallet
 
