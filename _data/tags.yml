@@ -45,3 +45,12 @@
 
 - slug: accounts
   name: Accounts (Wallets)
+
+- slug: external
+  name: External Projects
+
+- slug: mymonero
+  name: MyMonero.com
+
+- slug: forkguard
+  name: ForkGuard.com
