@@ -18,3 +18,13 @@ The majority of the content on this website, including our Monero Missive podcas
 Where an icon is used we have attempted to find an icon in public domain or covered by a Creative Commons license. Attribution for the icon is given in HTML comments in the page source where appropriate and possible.
 
 Certain logos, such as those for the operating systems and platforms we support as well as those of our sponsors, are copyrighted by their owners. The Monero Project does not own these copyrights, and use these logos either with permission or in an unambiguous and unharmful way.
+
+### List of Icon Authors
+
+This is a list of original authors of some of the icons used on this website:
+
+- Freepik (<http://www.freepik.com>)
+- Icomoon (<http://www.icomoon.io>)
+- Bogdan Rosu (<http://www.bogdanrosu.com>)
+- Yannick (<http://yanlu.de>)
+- Icons8 (<http://www.icons8.com>)

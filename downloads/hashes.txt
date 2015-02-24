@@ -7,19 +7,19 @@ Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
 monero.freebsd.x64.v0-8-8-6.tar.bz: 9fd0005b697e146a26a0bf9e3cd0c89b978f7fbd
-monero.linux.x64.v0-8-8-6b.tar.bz2: 16f3f55bcfbfae6135cbeda6574f651890a8be64
+monero.linux.x64.v0-8-8-6b.tar.bz2: 29bc436c51cc2c9d571a0bfbf12fddab2e75a10b
 monero.mac.x64.v0-8-8-6.tar.bz2: 7069de92083fb7831b063cc152e8f35508ff61bf
 monero.win.x64.v0-8-8-6.zip: facbeb2e408cf8b9a46534363eba161dbb047654
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v2
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJU63MyAAoJEFVDLfMczU/N6ksIAIuJkAfnl+xP+1AMvAqQR2jq
-xIBbQ5ZPnH3PvQevKNqJkRE+To3Qbf6xYv8iPZFBKz68Fc06+lOXXSMQnqA4mDTj
-Lh2M4YJJnOxkjf8gnWEW1jI666Y+oiA97luYT04ytNIXCoUGZFQmP+MGAo6Q/s3K
-JsT6d/u/LxavWaGReG61EvLx+ey8WcInIabGMcZsnTZn2GBQFfXiz6MKfcnhM7nY
-xk+oe+oqL2Tohpi7/zRkFfy6nKk6wcv98sfoAen0c+VprBZwotypvccL6kTjF57F
-51bXAK1RnbzencfFpaGBhShyVnzPXWgZro+nLEWMemhlua4xNg9fjYddDzqp7Cc=
-=VF+L
+iQEcBAEBAgAGBQJU7PO1AAoJEFVDLfMczU/NBrwIAJYXTtXjylJ5l18ymb9fYYG1
+m1LuZq8i7ZdhAO1L1pkHQAILocumQf9ayuJiOV1R4gfPr9u1d3FKeTEdTSBYq0cF
+s7bxXxAZ6aCe6nUlesN9zOZWNyyXy40bu1lhXWSoQ2RRnjXtDPx9BrTnLOarRiyw
+P1WhrTwWTzKaF8wj5e996P2RW3yeKPmngk5qCzgZsXhl12uxfJsMYbbPTdFS2jmN
+7kjvdI3S2lI5vlF50gnEbY6WMPqi+78C1NeJhzDterIXEioXfJL7cDxN6ogdf56U
+AsMbjxU3BDd+6ArzH2zmQB9Ndqz0LbspIe6BLdRaFFU9Vx//7qLMF7wazX95khE=
+=OTPC
 -----END PGP SIGNATURE-----

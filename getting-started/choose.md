@@ -15,11 +15,13 @@ The clients below are ideal if you are using Monero for the first time. They are
 
 ---
 
+{:.text-center .client-list}
+[![](//static.getmonero.org/images/clients/mymonero.svg)](https://mymonero.com)
+
 {:.text-center}
-[<img style="width: 360px; padding-bottom: 10px;" src="//static.getmonero.org/images/clients/mymonero.svg" />  
-MyMonero is an easy-to-use Monero client that you can use on most desktop and mobile devices without installing anything.  
+[MyMonero.com](https://mymonero.com) is easy-to-use and works in your browser without you needing to install anything.  
 It can be used with some measure of safety, as MyMonero are unable to spend your funds on your behalf.  
-It is owned and operated by Riccardo Spagni, one of the Monero Core Team members.](https://mymonero.com)
+It is owned and operated by Riccardo Spagni, one of the Monero Core Team members.
 
 ---
 
@@ -29,21 +31,47 @@ If you are able to spare the bandwidth and disk space required to run a full nod
 
 ---
 
-{:.text-center}
-<img style="width: 360px;" src="//static.getmonero.org/images/logo.svg" />  
+{:.text-center .client-list}
+[![](//static.getmonero.org/images/logo.svg)](/downloads)  
 You can read our guide on [running a Monero node](/getting-started/running), and the Monero core software can be downloaded from the [downloads page](/downloads).
 
 ---
 
-### Unofficial Clients
+### Third-Party Clients
 
-There are also a handful of unofficial clients that interact with the official Monero core daemon, and are able to provide their own additional functionality.
+There are also several third-party clients that interact with the official Monero core daemon, and are able to provide their own additional functionality.
 
 ---
 
-{:.text-center}
-[Monero Client .NET  
-A GUI for Monero written in .NET and available for Windows, Mac, and Linux.  
-Written and maintained by Jojatekok.](https://bitcointalk.org/index.php?topic=683365.00)
+{:.text-center .client-list}
+[![](//static.getmonero.org/images/clients/lightwallet.svg)](https://forum.monero.cc/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)  
+lightWallet is a simple and slim client written in Python, and should run on most operating systems. It is written and maintained by jwinterm.
+
+{:.text-center .client-list}
+**Current Version:** 0.0.2-alpha  
+
+{:.text-center .client-platforms}
+- [![](//static.getmonero.org/images/platforms/windows.svg)  
+  Windows](https://github.com/jwinterm/lightWallet/releases/download/v0.0.2-alpha/lightWallet.exe)
+- [![](//static.getmonero.org/images/platforms/github.svg)  
+  Source Code](https://github.com/jwinterm/lightWallet)
+- [![](//static.getmonero.org/images/platforms/forum.svg)  
+  Forum Thread](https://forum.monero.cc/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)
+
+---
+
+{:.text-center .client-list}
+MoneroGui.Net is a GUI for Monero written in .NET and available for Windows, and soon for Mac and Linux. It is written and maintained by Jojatekok.
+
+{:.text-center .client-list}
+**Current Version:** 0.41.1  
+
+{:.text-center .client-platforms}
+- [![](//static.getmonero.org/images/platforms/windows.svg)  
+  Windows](https://github.com/Jojatekok/MoneroGui.Net/releases/download/v0.41.1/MoneroGui.Net-v0.41.1-x64.zip)
+- [![](//static.getmonero.org/images/platforms/github.svg)  
+  Source Code](https://github.com/Jojatekok/MoneroGui.Net)
+- [![](//static.getmonero.org/images/platforms/forum.svg)  
+  Forum Thread](https://bitcointalk.org/index.php?topic=683365.00)
 
 ---

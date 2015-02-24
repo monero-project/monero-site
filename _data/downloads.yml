@@ -22,7 +22,7 @@
 - platform: Linux, 64-bit
   icon: linux.svg
   url: linux64
-  hash: 16f3f55bcfbfae6135cbeda6574f651890a8be64
+  hash: 29bc436c51cc2c9d571a0bfbf12fddab2e75a10b
   version: 0.8.8.6
   blockchain: linux
 
