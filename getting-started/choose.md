@@ -61,7 +61,8 @@ lightWallet is a simple and slim client written in Python, and should run on mos
 ---
 
 {:.text-center .client-list}
-MoneroGui.Net is a GUI for Monero written in .NET and available for Windows, and soon for Mac and Linux. It is written and maintained by Jojatekok.
+![](//static.getmonero.org/images/clients/monerox.svg)]  
+MoneroX is a GUI for Monero written in .NET and available for Windows, and soon for Mac and Linux. It is written and maintained by Jojatekok.
 
 {:.text-center .client-list}
 **Current Version:** 0.41.1  

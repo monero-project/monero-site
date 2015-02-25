@@ -31,3 +31,27 @@ Current sponsors include several mining pools that contribute a portion of their
 {:.text-center}
 [![MyMonero](http://i.imgur.com/xdp7mNG.png)](https://mymonero.com) [![Dome9](http://i.imgur.com/THVVafx.png)](http://dome9.com) [![JetBrains](http://i.imgur.com/2ZkVA29.png)](http://www.jetbrains.com/)
 
+### The Monero Community Hall of Fame
+
+All donators to Monero development are also eligible to be listed in the [Community Hall of Fame](/getting-started/donate/hall-of-fame). Members of the most prestigious level of donators, 8th Dan, are also listed below. The full [Hall of Fame can be viewed at this link](/getting-started/donate/hall-of-fame).
+
+<div class="text-center" markdown="1">
+
+---
+
+{% for donator in site.data.donators %}
+{% if donator.level == 8 %}
+
+### {{ donator.name }}, with a donation of {{ donator.amount }} XMR [<a data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="{% for achievement in donator.history %}{{ achievement }}<br>{% endfor %}">history</a>]
+
+{% if donator.quote %}
+> {{ donator.quote }}
+> <small>{{ donator.quote-author }}</small>
+{% endif %}
+
+{% endif %}
+{% endfor %}
+
+---
+
+</div>
