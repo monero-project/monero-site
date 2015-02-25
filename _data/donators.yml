@@ -19,6 +19,11 @@
   quote-author: Section 10
   history: [7th Dan on 2014-08-13, 6th Dan on 2014-04-29]
 
+- level: 7
+  name: Lloydimiller4
+  amount: 2500
+  history: [7th Dan on 2015-02-25, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
+
 - level: 6
   name: HardwarePal
   amount: 1000
@@ -40,11 +45,6 @@
   name: Medusa13
   amount: 1000.6
   history: [6th Dan on 2015-01-27, 4th Dan on 2014-11-08, 3rd Dan on 2014-08-26]
-
-- level: 6
-  name: Lloydimiller4
-  amount: 1000
-  history: [6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
 
 - level: 6
   name: antw081
@@ -80,6 +80,11 @@
   name: dnaleor
   amount: 500.1337
   history: [5th Dan on 2015-02-23, 4th Dan on 2014-12-17, 3rd Dan on 2014-07-17, 1st Dan on 2014-05-03]
+
+- level: 5
+  name: ajiekceu4
+  amount: 666
+  history: [5th Dan on 2015-2-25]
 
 - level: 4
   name: kbm
