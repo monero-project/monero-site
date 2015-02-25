@@ -6,8 +6,6 @@
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Melotic
       url: https://www.melotic.com/markets/xmr-btc
-    - name: CoinSwap
-      url: https://coin-swap.net/market/XMR/BTC
 - category: Gambling
   merchants:
     - name: Crypto Coins Dice
