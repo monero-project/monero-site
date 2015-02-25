@@ -24,7 +24,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
     <title>Monero - private, secure, untraceable</title>
 
     <link href="//static.getmonero.org/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//static.getmonero.org/css/main.css" rel="stylesheet">
+    <link href="//static.getmonero.org/css/main.css?1" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="//static.getmonero.org/js/html5shiv.js"></script>
