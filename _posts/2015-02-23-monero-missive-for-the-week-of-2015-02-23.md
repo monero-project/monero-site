@@ -173,7 +173,7 @@ Same with the research goals, there are some fundamentals and need to be put int
 
 #### Gingeropolous
 
-You mean there's more things that could happen before the GUI comes out?
+You mean there's more things that have to happen before the GUI comes out?
 
 #### Riccardo
 
