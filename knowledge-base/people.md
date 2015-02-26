@@ -25,7 +25,7 @@ Five members of the Core Team prefer to stay pseudonymous for the moment, but tw
 
 ### Development Contributors
 
-There have been many individuals that have contributed to Monero code, a complete list of which can be found on our [Github Contributors page](https://github.com/monero-project/bitmonero/graphs/contributors).
+There have been many individuals that have contributed to Monero code; a complete list of which can be found on our [Github Contributors page](https://github.com/monero-project/bitmonero/graphs/contributors).
 
 Some that have made outstanding contributions include: [Thomas Winget](https://github.com/tewinget), [mikezackles](https://github.com/mikezackles), [oranjuice](https://github.com/oranjuice), [warptangent](https://github.com/warptangent), [rfree](https://github.com/rfree2monero), [moneromooo](http://github.com/moneromooo-monero/bitmonero/branches), [jakoblind](https://github.com/jakoblind), and [tomerkon](https://github.com/tomerkon).
 
