@@ -27,13 +27,13 @@ Dev Diaries and External Projects will resume being covered from next week. Unti
 
 #### Riccardo "fluffypony" Spagni
 
-Hello and good morning or evening to you wherever you are I am Riccardo, fluffypony, and with me today I have Gingeropolous, say hi.
+Hello and good morning or evening to you wherever you are I am Riccardo, fluffypony, and with me today I have Gingeropolous...say hi!
 
 #### Gingeropolous
 
 Hello everyone!
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 And this is the start of a new type of Monero Missive, because we realized as a core team that preparing a full Monero Missive with all its bits and pieces was taking up a lot of time and soaking up a lot of effort that would have been spent elsewhere. And more importantly we also realized that a lot of people just weren't getting through the content of the Missives that we were putting out, hence this new format.
 
@@ -43,7 +43,7 @@ So, Gingeropolous you are reasonably well known already, why don't you tell us a
 
 Oh sure, I watch the Monero community on the forums and as there was no Missives coming out people were like "hey, why aren't there any Missives," and I was like all right I will go ahead and make a version of them to sort of sum up what I saw happen in the community. So that's where that whole digest came from and I guess that digest caught the eye of the actual core developers, and they contacted me like "hey, do you want to do this podcast?" And I guess my sort of role or function is to bridge the gap between those that actually know what [Jason](https://en.wikipedia.org/wiki/JSON) is doing and those that either don't know what Jason is doing, cause Jason is very popular.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Yeah and you've never even met him!
 
@@ -51,7 +51,7 @@ Yeah and you've never even met him!
 
 No I haven't, you know he always calls a lot. His buddy RPC, and API, API is a good guy.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 So you're the community liaison let's call it that. So today were going to forego the normal bits that we do at the end of the Missive, we're going to skip the Dev Diary and skip External Projects, because there are 3 major things we need to talk about. Now for our listeners who are not English-speaking and may struggle to understand this, we are asking the community in their own time when they get a chance to transcribe some of the podcast content into written form so that it can be understood better and eventually translated. But obviously that's not high priority, and at your earliest convenience if you have some time and feel like transcribing it the first one out the gate is always a winner. 
 
@@ -61,7 +61,7 @@ So what we'd like to concentrate on are 3 things and the first thing were going 
 
 Fantastic
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 There are a couple of things that we've done in this website I'd like to just point out. The first thing is where we use terms that are confusing or technical, or perhaps what's the word I'm looking for terms that are unfamiliar to new users...
 
@@ -69,7 +69,7 @@ There are a couple of things that we've done in this website I'd like to just po
 
 Like jargon.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Ja jargon, something like @blockchain or @transaction. Transaction has a familiarity to us because we use cryptocurrency, but a transaction like a credit card transaction is very different to a transaction in digital or cryptocurrency terms. So you can't, we can't make assumptions about what people know. So part of this is we've created something called a Moneropedia, which obviously is like Wikipedia but for Monero. There are still a lot of room to grow in terms of content, there's a lot of continent needs to be added, but you'll notice that certain things like even on the front page, those 3 green blocks that explain the secure, private, and untraceable nature of Monero, you'll notice that there are some words that have got slightly darker text, and when you hover over them or if you're on a mobile device when you tap on them it actually gives you little summary of that term. So hover over "@consensus" or "@accounts" or "@mnemonic-seed" or "@blockchain" or "@transactions", it explains the term to you. So we are trying to create something that is accessible and that people don't get overwhelmed with tons of information.
 
@@ -79,7 +79,7 @@ We've created a lot of content especially in the getting started section that's 
 
 So there's a way for the community to contribute to this, that's awesome.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Exactly, so along with that there's also we haven't forgotten about internationalization, you notice that when we hit the website for the first time you have to choose a language and at the moment the only language is English. And the reason that we haven't bolted another language just yet is we want to first flesh out the English content, and everything is pretty much ready for us to start adding other languages, but we just want to get English sorted of first and then we will do a call for translations, and will have strings up on Transifex so that people can translate.
 
@@ -93,7 +93,7 @@ Let's go on to [MRL 4](https://lab.getmonero.org/pubs/MRL-0004.pdf)!
 
 We're done with the website?
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 We're done with the website. So the Monero Research Lab may have seemed quiet for the past few months and that's because [MRL 4](https://lab.getmonero.org/pubs/MRL-0004.pdf) has been quite a hefty thing to put together. Basically it has been an exercise in trying to pick magic numbers which normally ends badly. But as everyone is aware, or should be aware, our very first Monero Research Lab bulletin revealed a weakness in the CryptoNote protocol.
 
@@ -103,7 +103,7 @@ Obviously Monero is very grateful for the effort that CryptoNote put into the in
 
 Well I did read it a week ago, from what I recall the main sort of meat of [MRL 4](https://lab.getmonero.org/pubs/MRL-0004.pdf) was the whole concept of how anonymous is the actual CryptoNote protocol, and the main thing I think was the take-home was it has to do with the amount of mixins that you put in your transfers. I'm sort of rambling here.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 You are spot on...there are two different aspects to privacy in Monero and that is the unlinkability and the untraceability of transactions. Now when we say unlinkability we are talking about the dual-key stealth addressing that addresses that component; but untraceability is another thing entirely. So, the untraceability is dealt with by ring signatures. As [MRL 1](https://lab.getmonero.org/pubs/MRL-0001.pdf) pointed out there is a potential compromise, and a cascading compromise, to the ununtraceable nature of CryptoNote transactions.
 
@@ -119,7 +119,7 @@ So [MRL 4](https://lab.getmonero.org/pubs/MRL-0004.pdf) is something that people
 
 And by minimum mixin you mean something that is hardcoded into the actual protocol, or is this in the wallet, or payment...?
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 This will be a hardfork, and it will mean that anyone trying to send anything with a mixin of 0 or 1, their transaction is going to be rejected by the network.
 
@@ -127,7 +127,7 @@ This will be a hardfork, and it will mean that anyone trying to send anything wi
 
 Okay I got you.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 And obviously any miner that mines a block with mixin 0 transactions, their block is going to be rejected by the network. The one key, or little thing at the end, which is how to deal with dust, is the way it is proposed in [MRL 4](https://lab.getmonero.org/pubs/MRL-0004.pdf), and this is the way were going to be implementing, it is to allow mixin 0 transactions only under a special set of circumstances. So the protocol will allow mixin 0 @transactions if it uses an input that has nothing else it can mix with, so a dust input essentially, and in its' output it does not create new outputs that cannot be mixed with. So the idea is the wallet  software already picks dust up as it creates transactions, and what we might do is try and prioritize that a little bit to try and flush dust out faster. But over time, and I don't think it's going to take too long, but over a period of time there will be a smattering of a mixin 0 transactions that will be taking dust out of the system but not creating new dust, so eventually they'll be no more dust.
 
@@ -135,7 +135,7 @@ And obviously any miner that mines a block with mixin 0 transactions, their bloc
 
 Just so any completely new people to cryptocurrency are wondering, dust is like when you have like 0.0013...a bunch of random numbers out of Monero that you are trying to send, and so it has to break apart your transaction into pieces and that little 0.00-whatever is very unique and it can't mix with anything so that's why the dust is the problem. Did I get that right?
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 That's correct.
 
@@ -145,7 +145,7 @@ So there are a couple other text that are detailed in the paper, things like ass
 
 And so is there going to be like a recommendation from your wallet software, or just sort of hardcoded in there like "oh you haven't done anything in 2 months...I'm going to send half of your wallet to yourself?"
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Well one of the reasons that we can't do that is because we can't force people to spend the money in fees, that's the first thing. So we can't have a protocol that's living on the @blockchain or living on @nodes that spends money or spends funds without the user's involvement because they control the fees. Now the nature of things is that not everyone keeps their wallet open all the time even if they are running a @full-node and that node is connected to the network. So it's not really suitable to doing stuff in an automated fashion. It is just something where thre would have to be some cognizance on the user side where they will see the warning and they will go "oh dear, I've got to send out to myself," and on the GUI side maybe we'll add a big fat button that they can just click on and off it goes. And a lot of it is to reduce things like association by usage problems and so on.
 
@@ -161,7 +161,7 @@ So that's something that's not quite as critical as the minimum mixin thing; the
 
 Gotcha.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 So that's basically...the long and short of it is that minimum mixin is going to be implemented on a wallet level quite quickly, and the hard fork will be planned and will happen later.
 
@@ -175,7 +175,7 @@ Same with the research goals, there are some fundamentals and need to be put int
 
 You mean there's more things that could happen before the GUI comes out?
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Yip...there's a lot of stuff that's "almost there", but there are some essential components and...there's a lot of stuff, I'll give you just one example: refactoring everything out into library form so that we have common libraries for Monero @accounts and @wallets, we have a library for the daemon...the connection to the network, we have a library for @consensus, so verifying and checking validity of @transactions and @blocks and @signatures and @ring-signatures, and we also have a library for RPC interfaces.
 
@@ -185,7 +185,7 @@ Having that, and having those library functions and library APIs documented and 
 
 Well I don't know...when you say refactoring things into libraries I'm sort of...I'm putting together like right now...the Monero code exists as this big old chunk of stuff and re-factoring into libraries means you've got to break it up so you can call things and say "hey...let's do this stuff together!" I don't know.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Kind of...I mean, I think that over the next while we will take some time in future Missives, especially when it's been a quieter week, when we can do some of the stuff and talk about why it's necessary, what it does, and why we did it at all. It's not a matter of us being perfectionists, as has being mentioned, or us wanting Monero to be enterprise grade. It's true, we are working very slowly on making Monero incredibly robust and incredibly extensible, but a lot of the stuff it's kind of like...if we don't do it now it's never going to be done or it will be done...maybe...in like 10 years.
 
@@ -195,6 +195,6 @@ So...that's our first Missive podcast: [new website](https://getmonero.org); [MR
 
 For those tuning in I think that, at the end of that, the sense was that fluffypony and I will have a lot more to talk about, so stay tuned...tune your dial back to wherever this is going to end up...because I have a lot to learn about all these inter-workings, and if you are interested in hearing me question fluffypony incessantly about random things then you can tune in and hear about it.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Thanks very much for the chat...and back to Fred with the weather!
