@@ -23,8 +23,6 @@ A brief summary of the points discussed follows, and a full transcription of the
 
 Dev Diaries and External Projects will resume being covered from next week. Until then!
 
-<div class="text-center" markdown="1">
-
 # Podcast Transcription
 
 #### Riccardo "fluffypony" Spagni
@@ -200,5 +198,3 @@ For those tuning in I think that, at the end of that, the sense was that fluffyp
 #### Riccardo "fluffypony" Spagni
 
 Thanks very much for the chat...and back to Fred with the weather!
-
-</div>
