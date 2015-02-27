@@ -6,6 +6,9 @@ global:
   monero_project: The Monero Project
   wiki: Moneropedia
   tags: Articles By Tag
+  wikimeta: on Moneropedia, the open encyclopedia of Monero knowledge
+  tagsmeta: All Monero blog articles that are tagged
+  titlemeta: on the home of Monero, a digital currency that is secure, private, and untraceable
   terms: Terms
   privacy: Privacy
   copyright: Copyright
