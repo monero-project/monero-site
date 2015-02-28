@@ -4,7 +4,7 @@ title: External Projects for the Week of 2014-12-15
 summary: MyMonero side-swiped in a DDoS attack on their data center, i2pd added su3 router update support
 tags: [external, mymonero, i2p, forkguard]
 author: Riccardo Spagni (fluffypony)
-forum: https://forum.monero.cc/1/news-and-announcements/115/monday-monero-missives-21-december-15th-2014
+forum: https://forum.getmonero.org/1/news-and-announcements/115/monday-monero-missives-21-december-15th-2014
 ---
 
 *December 15th, 2014*

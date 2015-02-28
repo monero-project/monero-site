@@ -4,7 +4,7 @@ title: Monero Missive for the Week of 2015-02-23
 summary: New website, moved from to monero.cc to getmonero.org, MRL-0004 released, Monero design and development goals published
 tags: [monero missives, research, usability]
 author: Riccardo Spagni (fluffypony)
-forum: https://forum.monero.cc/1/news-and-announcements/161/monday-monero-missives-23-february-23rd-2015
+forum: https://forum.getmonero.org/1/news-and-announcements/161/monday-monero-missives-23-february-23rd-2015
 ---
 
 We are moving to a new Missive format, it is now in the form of a podcast!
@@ -17,7 +17,7 @@ A brief summary of the points discussed follows, and a full transcription of the
 
 1. The release of the new website, and the move to [the getmonero.org domain](https://getmonero.org/)
 
-2. The publication of [MRL-0004, Improving Obfuscation in the CryptoNote Protocol](https://lab.monero.cc/pubs/MRL-0004.pdf)
+2. The publication of [MRL-0004, Improving Obfuscation in the CryptoNote Protocol](https://lab.getmonero.org/pubs/MRL-0004.pdf)
 
 3. Monero's [design and development goals](http://getmonero.org/design-goals/)
 

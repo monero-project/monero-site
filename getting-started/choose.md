@@ -44,7 +44,7 @@ There are also several third-party clients that interact with the official Moner
 ---
 
 {:.text-center .client-list}
-[![](//static.getmonero.org/images/clients/lightwallet.svg)](https://forum.monero.cc/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)  
+[![](//static.getmonero.org/images/clients/lightwallet.svg)](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)  
 lightWallet is a simple and slim client written in Python, and should run on most operating systems. It is written and maintained by jwinterm.
 
 {:.text-center .client-list}
@@ -56,7 +56,7 @@ lightWallet is a simple and slim client written in Python, and should run on mos
 - [![](//static.getmonero.org/images/platforms/github.svg)  
   Source Code](https://github.com/jwinterm/lightWallet)
 - [![](//static.getmonero.org/images/platforms/forum.svg)  
-  Forum Thread](https://forum.monero.cc/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)
+  Forum Thread](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)
 
 ---
 

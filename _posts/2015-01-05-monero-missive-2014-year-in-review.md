@@ -4,7 +4,7 @@ title: Monero Missive Special Edition - 2014 Year in Review
 summary: A review of everything Monero accomplished from its inception through to the end of 2014
 tags: [monero missives, year in review, core, funding, accounts, usability, platforms, gui, exchanges, i2p]
 author: Riccardo Spagni (fluffypony)
-forum: https://forum.monero.cc/1/news-and-announcements/134/monday-monero-missives-22-year-in-review-january-5th-2015
+forum: https://forum.getmonero.org/1/news-and-announcements/134/monday-monero-missives-22-year-in-review-january-5th-2015
 ---
 
 *January 5th, 2015*
@@ -230,7 +230,7 @@ We have a lot in the pipeline for 2015. A few things that we'd like to highlight
 
 And, undoubtedly, much more both for Monero core and related external projects.
 
-Of course, none of this would be possible without donations from our users, and we are most appreciative and grateful to those that have donated thus far. We hope that over the next year you will continue to help and assist us - and don't forget our donation addresses are powered by OpenAlias, both XMR and BTC donation addresses are on donate.monero.cc
+Of course, none of this would be possible without donations from our users, and we are most appreciative and grateful to those that have donated thus far. We hope that over the next year you will continue to help and assist us - and don't forget our donation addresses are powered by OpenAlias, both XMR and BTC donation addresses are on donate.getmonero.org
 
 Thank you for a great 2014, and here's to a great 2015!
 
