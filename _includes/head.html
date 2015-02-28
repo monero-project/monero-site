@@ -8,10 +8,11 @@
 	<meta name="keywords" content="{{ site.keywords }}">
 
     <meta property="og:title" content="{% if page.entry %}{% t global.wiki %}: {{ page.entry }}{% elsif tag %}{% t global.tags %}: {{ tag.name }}{% elsif page.title %}{% t global.monero %}: {{ page.title }}{% else %}{% t index.page_title %}{% endif %}"/>
-    <meta property="og:type" content="website">
     <meta property="og:description" content="{% if page.entry %}{{ page.entry }}: {{ page.summary }} [{% t global.wikimeta %}]{% elsif tag %}{% t global.tagsmeta %}: {{ tag.name }}{% elsif page.meta %}{{ page.meta }}{% elsif page.title %}{{ page.title }} [{% t global.titlemeta %}]{% else %}{{ site.description }}{% endif %}">
     <meta property="og:image" content="{% if page.icon %}http://static.getmonero.org/images/opengraph/{{ page.icon }}.png{% else %}http://static.getmonero.org/images/opengraph/logo.png{% endif %}">
     <meta property="og:site_name" content="{% t global.sitename %}">
+    <meta property="og:url" content="https://getmonero.org{{ page.url }}">
+    <meta property="og:type" content="website">
 
     <link href="//static.getmonero.org/css/bootstrap.min.css" rel="stylesheet">
     <link href="//static.getmonero.org/css/main.css?1" rel="stylesheet">
