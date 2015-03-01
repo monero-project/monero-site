@@ -11,7 +11,7 @@ attribution: ""
 
 ### The Monero Project
 
-The majority of the content on this website, including our Monero Missive podcast, is copyright The Monero Project. It is made available under the CC BY 3.0 license (the [Creative Commons Attribution 3.0 Unported license](http://creativecommons.org/licenses/by/3.0/)). This means that you can copy and redistribute the material in any medium or format, and remix, transform, and build upon the material for any purpose, even commercially. However, when doing so you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests The Monero Project endorses you or your use.
+The majority of the content on this website, including the Monero logo and our Monero Missive podcast, is copyright The Monero Project. It is made available under the CC BY 3.0 license (the [Creative Commons Attribution 3.0 Unported license](http://creativecommons.org/licenses/by/3.0/)). This means that you can copy and redistribute the material in any medium or format, and remix, transform, and build upon the material for any purpose, even commercially. However, when doing so you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests The Monero Project endorses you or your use.
 
 ### Icons and Other Attributed Items
 
