@@ -86,6 +86,11 @@
   amount: 666
   history: [5th Dan on 2015-2-25]
 
+- level: 5
+  name: saddambitcoin
+  amount: 500
+  history: [5th Dan on 2015-02-28, 4th Dan on 2014-08-18]
+
 - level: 4
   name: kbm
   amount: 200
@@ -100,11 +105,6 @@
   name: fluffypony
   amount: 245
   history: [4th Dan on 2014-08-01]
-
-- level: 4
-  name: saddambitcoin
-  amount: 250
-  history: [4th Dan on 2014-08-18]
 
 - level: 4
   name: exciter0
@@ -301,6 +301,11 @@
   amount: 40.015
   history: [1st Dan on 2015-02-09]
 
+- level: 1
+  name: kazuki49
+  amount: 20
+  history: [1st Dan on 2015-02-28, 1st Kyu on 2015-02-07]
+
 - level: -1
   name: nakaone
   amount: 10
@@ -310,11 +315,6 @@
   name: carpetbagger
   amount: 10
   history: [1st Kyu on 2014-09-21]
-
-- level: -1
-  name: kazuki49
-  amount: 10
-  history: [1st Kyu on 2015-02-07]
 
 - level: -2
   name: celestio
