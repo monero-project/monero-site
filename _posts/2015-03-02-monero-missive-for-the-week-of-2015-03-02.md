@@ -95,5 +95,47 @@ That's exactly it. It's one thing to have the ability to run a full @node on a c
 
 Oh nice!
 
-### Incomplete, Work in Progress
+#### Riccardo
 
+This is the sort of thinking, as a longer-term prospect, which necessitates having multiple database implementation options, because that's really one of the sticking points, or one of the pain points. So LMDB...great, vl-32 branch...awesome, the vl-32 branch will probably, and we haven't tested this yet, will probably play quite nicely with Raspberry Pi. But even beyond that we're going to, at a slightly later stage, once we've got a little time in a couple of months, we're going to be adding BerkleyDB support.
+
+Now BerkleyDB is a slightly more pedestrian embedded database. It uses a different approach than the one that LMDB uses, and it means that it's not quite as performant as LMDB, but it's also a lot more forgiving when it comes to what architecture it can run on. And it also doesn't need as much MMAP space, for example...well it doesn't need MMAP space at all, really.
+
+#### Gingeropolous
+
+Whatever MMAP space is!
+
+#### Riccardo
+
+It's one of JSON's friends
+
+#### Gingeropolous
+
+Oh...that's where he lives...MMAP...it's what he uses to get places!
+
+#### Riccardo
+
+You know, we use Google Maps, he uses MMAP!
+
+Ok, so that really should give all our listeners an indication as to what the current state of the database is, the painpoints we've faced and have had to overcome, and what we're going to be doing in future...not only to make Monero run on multiple platforms, but to make it run smoothly and efficiently on the smallest of devices.
+
+So that's the database, I think that's the bulk of what we wanted to chat about about the database, unless there's anything else you'd like to add.
+
+#### Gingeropolous
+
+I think next on the list for the Dev Diaries is...
+
+#### Riccardo
+
+Is JSON...well, JSON's friend...RPC.
+
+#### Gingeropolous
+
+Going into acronym land!
+
+#### Riccardo
+
+Yeah we are a little bit!
+
+
+### Incomplete, Work in Progress
