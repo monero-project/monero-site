@@ -25,7 +25,7 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
 
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
-<h4>
+<h4 id="{{ data_downloads.platform | slugify }}">
  <a href="{{ data_downloads.url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
@@ -42,7 +42,7 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
 
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
-<h4>
+<h4 id="{{ data_downloads.platform | slugify }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
 </h4>
 
@@ -56,7 +56,7 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
 
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
-<h4>
+<h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/{{ data_downloads.url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
