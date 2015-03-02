@@ -63,3 +63,9 @@
   
 - slug: research
   name: Monero Research Lab
+
+- slug: blockchaindb
+  name: BlockchainDB
+
+- slug: 0mq
+  name: ZeroMQ
