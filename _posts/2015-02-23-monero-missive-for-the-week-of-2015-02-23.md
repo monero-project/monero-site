@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monero Missive for the Week of 2015-02-23
-summary: New website, moved from to monero.cc to getmonero.org, MRL-0004 released, Monero design and development goals published
+summary: New website, moved from monero.cc to getmonero.org, MRL-0004 released, Monero design and development goals published
 tags: [monero missives, research, usability]
 author: Riccardo Spagni (fluffypony)
 forum: https://forum.getmonero.org/1/news-and-announcements/161/monday-monero-missives-23-february-23rd-2015
