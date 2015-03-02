@@ -4,6 +4,7 @@ title: Dev Diaries for the Week of 2015-03-02
 summary: BlockchainDB progress update, performance considerations, and rationale; RPC->0MQ communication change progress update
 tags: [dev diaries, core, blockchaindb, rpc, 0mq]
 author: Riccardo Spagni (fluffypony)
+forum: https://forum.getmonero.org/1/news-announcements-and-editorials/195/monday-monero-missives-24-march-2nd-2015
 ---
 
 <div class="text-center"><iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3399146/height/360/width/640/theme/standard-mini/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" height="600" width="600" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
