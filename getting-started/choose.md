@@ -42,6 +42,7 @@ You can read our guide on [running a Monero node](/getting-started/running), and
 There are also several third-party clients that interact with the official Monero core daemon, and are able to provide their own additional functionality.
 
 ---
+#### lightWallet
 
 {:.text-center .client-list}
 [![](//static.getmonero.org/images/clients/lightwallet.svg)](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)  
@@ -59,6 +60,7 @@ lightWallet is a simple and slim client written in Python, and should run on mos
   Forum Thread](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)
 
 ---
+#### MoneroX
 
 {:.text-center .client-list}
 ![](//static.getmonero.org/images/clients/monerox.svg)]  
