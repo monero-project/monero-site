@@ -47,7 +47,7 @@ I can confirm that. I've been running the database version for a while now - I a
 
 #### Riccardo "fluffypony" Spagni
 
-No exactly, and it does compile on the various platforms that we support. So there's no platform with platform support, there's no holdup with anything, the main issue we've had over the past month or so has got to do with two things.
+No exactly, and it does compile on the various platforms that we support. So there's no problem with platform support, there's no holdup with anything, the main issue we've had over the past month or so has got to do with two things.
 
 Firstly, with sync speed, so in other words...if you're catching up, maybe your @node has been down for a couple of days, or you're catching up from scratch, from the Genesis block. And the second issue that we've had to deal with is conversion. So you've got the current, in-memory @blockchain saved on disk, and you upgrade to the database version and you want to convert what you've got on disk - you don't need to sync up from scratch when you're pretty much caught up with the network.
 
@@ -74,5 +74,25 @@ We felt that there was limited value in doing the swapping that the operating sy
 Obviously we had to balance that with the fact that the @blockchain was growing, and it was growing to a point where it was excessively big for many, and so we knew that there was this limited time that we had where we either had to get the database done, or we would have to fall back to some other solution. And we're still within that timeframe, and the database, as you know and as we've discussed, is pretty much done.
 
 So using that other fake-swap system wouldn't have had value, and wouldn't have solved the problem, and at worst it would've made us lazy to finish the database because there would've been no pressure.
+
+#### Gingeropolous
+
+One of the things that I saw mentioned on IRC is that LMDB works best - or only? I dunno - on a 64-bit system. So how will we address users that have 32-bit systems if the database is now using LMDB?
+
+#### Riccardo "fluffypony" Spagni
+
+Ok, so there's two things that we're doing. The first is that LMDB has a branch that is 32-bit specific, called vl-32, and we will have that in the codebase. Outside of that, later on we do need a greater solution to something like ARM. If we want to run, and we are working on getting Monero running efficiently on a Raspberry Pi for example, it's not going to play well with the 64-bit version of LMDB because LMDB requires such a large MMAP space.
+
+#### Gingeropolous
+
+For those that aren't familiar, what fluffypony is talking about with ARM is a microarchitecture, a computer architecture, that is mainly used on mobile phones. So your Android device has ARM processors, whereas your computer has x86...or whatever it's called. So the goal here is to make sure that the database also works potentially on smaller, mobile, more efficient devices.
+
+#### Riccardo "fluffypony" Spagni
+
+That's exactly it. It's one thing to have the ability to run a full @node on a computer...what about something smaller...something like a Raspberry Pi? What about the ability to have, almost like an appliance-level device, where you plug it into your network and that's it...that's your Monero @node. It syncs up to the network, if you need to access the @blockchain, or send @transactions, or receive @transactions, you don't need to then run another instance of the daemon because you've already got it running on that little appliance.
+
+#### Gingeropolous
+
+Oh nice!
 
 ### Incomplete, Work in Progress
