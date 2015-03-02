@@ -25,7 +25,7 @@ External Projects has moved to be covered next week. Until then!
 
 # Podcast Transcription
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Hello! And welcome to our second Monero Missives podcast. I'm Riccardo, fluffypony.
 
@@ -33,7 +33,7 @@ Hello! And welcome to our second Monero Missives podcast. I'm Riccardo, fluffypo
 
 And I'm Gingeropolous!
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Over the past week we've had some feedback on the Missive Podcast, we've had some feedback on the website. We're not going to talk much about the website - or at all. Instead, what we wanted to do, is get back to Dev Diaries, because obviously with the raw amount of content in last week's Missive we weren't able to talk about Dev Diaries at all.
 
@@ -45,7 +45,7 @@ Just to clarify: the vast majority of the work on BlockchainDB has been complete
 
 I can confirm that. I've been running the database version for a while now - I actually have a 2gb Linux box, it's just this crappy little old computer that I've managed to run the database build on for a while now. So it definitely works with low memory.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 No exactly, and it does compile on the various platforms that we support. So there's no problem with platform support, there's no holdup with anything, the main issue we've had over the past month or so has got to do with two things.
 
@@ -61,7 +61,7 @@ But at the moment it's really coming along nicely, and I reckon we are no more t
 
 So regarding the database, I've been watching the forums, and it's been mentioned that other CryptoNote coins have utilised other methods to get around the whole @blockchain being in memory. Is there a reason that we didn't choose to just clone those methods, or "why use LMDB?" I guess is the main question...why sink all this time into making something new vs taking something that works.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 That's a good question. So one of the things that we...one of the challenges that we faced is, when we really started going down the BlockchainDB route, there was some code added to the CryptoNote reference code, I believe Bytecoin added it initially. It was a version of the swapping between disk and memory that your operating system already does.
 
@@ -79,7 +79,7 @@ So using that other fake-swap system wouldn't have had value, and wouldn't have 
 
 One of the things that I saw mentioned on IRC is that LMDB works best - or only? I dunno - on a 64-bit system. So how will we address users that have 32-bit systems if the database is now using LMDB?
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 Ok, so there's two things that we're doing. The first is that LMDB has a branch that is 32-bit specific, called vl-32, and we will have that in the codebase. Outside of that, later on we do need a greater solution to something like ARM. If we want to run, and we are working on getting Monero running efficiently on a Raspberry Pi for example, it's not going to play well with the 64-bit version of LMDB because LMDB requires such a large MMAP space.
 
@@ -87,7 +87,7 @@ Ok, so there's two things that we're doing. The first is that LMDB has a branch 
 
 For those that aren't familiar, what fluffypony is talking about with ARM is a microarchitecture, a computer architecture, that is mainly used on mobile phones. So your Android device has ARM processors, whereas your computer has x86...or whatever it's called. So the goal here is to make sure that the database also works potentially on smaller, mobile, more efficient devices.
 
-#### Riccardo "fluffypony" Spagni
+#### Riccardo
 
 That's exactly it. It's one thing to have the ability to run a full @node on a computer...what about something smaller...something like a Raspberry Pi? What about the ability to have, almost like an appliance-level device, where you plug it into your network and that's it...that's your Monero @node. It syncs up to the network, if you need to access the @blockchain, or send @transactions, or receive @transactions, you don't need to then run another instance of the daemon because you've already got it running on that little appliance.
 
@@ -96,3 +96,4 @@ That's exactly it. It's one thing to have the ability to run a full @node on a c
 Oh nice!
 
 ### Incomplete, Work in Progress
+
