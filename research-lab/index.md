@@ -10,3 +10,4 @@ attribution: ""
 ---
 
 ### Work in Progress
+Meanwhile, you can read the production of the Research Lab: [https://lab.getmonero.org/](https://lab.getmonero.org/)
