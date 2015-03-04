@@ -21,7 +21,16 @@ if (isset($_COOKIE["MONERO_LANG"]))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Monero - private, secure, untraceable</title>
+    <title>Monero - secure, private, and untraceable</title>
+	<meta name="description" content="Monero is a digital currency that is secure, private, and untraceable.">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero - secure, private, untraceable"/>
+    <meta property="og:description" content="Monero is a digital currency that is secure, private, and untraceable.">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/language.php">
+    <meta property="og:type" content="website">
 
     <link href="//static.getmonero.org/css/bootstrap.min.css" rel="stylesheet">
     <link href="//static.getmonero.org/css/main.css?1" rel="stylesheet">
