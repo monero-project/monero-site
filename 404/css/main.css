@@ -4,7 +4,7 @@
 
 html, body{
 	height:100%;
-	background:#186aa9 url(../images/sky-background.png) top repeat-x;	
+	background:#186aa9 url(/404/images/sky-background.png) top repeat-x;	
 	overflow:hidden;
 	padding:0;
 	margin:0;
@@ -32,7 +32,7 @@ img, a img{
 	margin:0px auto;
 	position:relative;
 	height:100%;
-	background:url(../images/sky-shine.jpg) top left no-repeat;
+	background:url(/404/images/sky-shine.jpg) top left no-repeat;
 }
 
 div.top-left{
@@ -84,7 +84,7 @@ div.dog{
 	width:80px;
 	height:80px;
 	z-index:999;
-	background:url(../images/dog1.png) 0px 0px no-repeat;
+	background:url(/404/images/dog1.png) 0px 0px no-repeat;
 }
 
 div.dog-bubble{
@@ -93,7 +93,7 @@ div.dog-bubble{
 	font-style:italic;
 	height:179px;
 	width:246px;
-	background:url(../images/bubble.png) top center no-repeat;
+	background:url(/404/images/bubble.png) top center no-repeat;
 	padding:20px 0px;
 	position:absolute;
 	bottom:0px;
@@ -299,7 +299,7 @@ div.bubble-options{
 			font-style:italic;
 			height:107px;
 			width:147px;
-			background:url(../images/bubble.png) top center no-repeat;
+			background:url(/404/images/bubble.png) top center no-repeat;
 			background-size: contain;
 			padding:10px 0px;
 			position:absolute;

@@ -3,14 +3,14 @@ layout: error
 title: "Error 404, Page Not Found"
 ---
 
-<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/404/css/main.css" type="text/css" media="screen, projection" />
 <!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="css/ie7.css" />
+	<link rel="stylesheet" type="text/css" href="/404/css/ie7.css" />
 <![endif]-->
 
 <div id="wrapper">
 	<div class="graphic">
-		<img src="images/404.png" alt="404" />
+		<img src="/404/images/404.png" alt="404" />
 	</div>
 
 	<div class="top-left">
@@ -33,7 +33,7 @@ title: "Error 404, Page Not Found"
 			</div>
 		</div>
 
-		<img src="images/planet.png" alt="planet" />
+		<img src="/404/images/planet.png" alt="planet" />
 	</div>
 
 </div>
