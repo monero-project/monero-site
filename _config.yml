@@ -34,3 +34,4 @@ sitemap:
         - "/ietemplates/poll4.xml"
         - "/ietemplates/poll5.xml"
         - "/feed.xml"
+        - "/404/index.md"

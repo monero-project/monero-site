@@ -1,0 +1,25 @@
+@charset "utf-8";
+div.not-found-text{
+	top:65px;	
+}
+
+div.planet{
+	z-index:-1;	
+}
+
+div.dog{
+	z-index:1000;	
+}
+
+div.dog-bubble{
+	filter: alpha(opacity=0); /* IE6+ */
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	padding-top:35px;	
+}
+
+#dog-changer ul li a{
+	filter: alpha(opacity=30); /* IE6+ */
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
