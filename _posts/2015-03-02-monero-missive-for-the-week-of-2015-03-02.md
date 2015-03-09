@@ -2,7 +2,7 @@
 layout: post
 title: Dev Diaries for the Week of 2015-03-02
 summary: BlockchainDB progress update, performance considerations, and rationale; RPC->0MQ communication change progress update
-tags: [dev diaries, core, blockchaindb, rpc, 0mq]
+tags: [monero missives, dev diaries, core, blockchaindb, rpc, 0mq]
 author: Riccardo Spagni (fluffypony)
 forum: https://forum.getmonero.org/1/news-announcements-and-editorials/195/monday-monero-missives-24-march-2nd-2015
 ---
