@@ -25,7 +25,7 @@ External Projects has moved to be covered next week. Until then!
 
 # Podcast Transcription
 
-#### Riccardo
+#### Riccardo "fluffypony" Spagni
 
 Hello! And welcome to our second Monero Missives podcast. I'm Riccardo, fluffypony.
 
