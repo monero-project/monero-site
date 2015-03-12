@@ -18,6 +18,8 @@
   merchants:
     - name: MoneroPric.es Price Converter
       url: https://moneropric.es
+    - name: ForkGuard Network Monitoring
+      url: http://forkguard.com
 - category: Services
   merchants:
     - name: MyMonero Web-based Wallet
