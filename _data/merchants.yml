@@ -30,3 +30,7 @@
       url: http://www.cryptoescrow.eu
     - name: MoneroClub OTC Monero Trading
       url: https://www.moneroclub.com/offers/
+- category: Goods
+  merchants:
+    - name: Physical bitcoins and moneroj
+      url: https://cryptonit.net
