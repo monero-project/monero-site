@@ -6,10 +6,6 @@
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Melotic
       url: https://www.melotic.com/markets/xmr-btc
-- category: Gambling
-  merchants:
-    - name: Crypto Coins Dice
-      url: https://www.cryptocoins-dice.com
 - category: Block Explorers
   merchants:
     - name: MoneroBlocks
@@ -32,5 +28,5 @@
       url: https://www.moneroclub.com/offers/
 - category: Goods
   merchants:
-    - name: Physical Monero and Bitcoin coins
+    - name: Cryptonit Physical Monero & Bitcoin coins
       url: https://cryptonit.net
