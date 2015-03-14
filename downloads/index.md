@@ -79,4 +79,4 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
 
 - For @blockchain bootstraps please use the link for your current platform from the list above.
 - For Monero Research Lab publications please visit the [Monero Research Lab section](/research-lab) of this site.
-- High resolution and vector copies of the Monero logo [can be downloaded at this link](/downloads/resources/branding.zip).
+- High resolution and vector copies of the Monero logo [can be downloaded at this link](https://downloads.getmonero.org/resources/branding.zip).
