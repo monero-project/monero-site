@@ -17,7 +17,7 @@ In this week's podcast we update the progress on the DB, discuss Tippero, talk a
 
 1. Initial DB merge is about a week away.
 
-2. Tippero has been officially made publicly available, and allows for tipping on IRC, Reddit, and Twitter! For IRC, send a message to Tippero with ```!help``` or ```!commands```. For Reddit, message [/u/tippero](https://reddit.com/user/tippero) with ```!deposit``` for your address, and tip with ```+amount /u/tippero optional message``` in a reply. For Twitter, you can tip with ```+amount @recipient_person @tipperome optional message```. Until Tippero let's you link your accounts across networks you can manually move funds, for eg. on IRC: ```/msg tippero !tip twitter:fluffyponyza 10``` or ```/msg tippero !tip reddit:fluffyponyza 10```.
+2. Tippero has been officially made publicly available, and allows for tipping on IRC, Reddit, and Twitter! For IRC, send a message to Tippero with ```!help``` or ```!commands```. For Reddit, message [/u/tippero](https://reddit.com/user/tippero) with ```!deposit``` for your address, and tip with ```+amount /u/tippero optional message``` in a reply. For Twitter, you can tip with ```+amount @recipient_person @tipperome optional message```. Until Tippero lets you link your accounts across networks you can manually move funds, for eg. on IRC: ```/msg tippero !tip twitter:fluffyponyza 10``` or ```/msg tippero !tip reddit:fluffyponyza 10```.
 
 3. Not everything needs to be in a blockchain, and not everything can be decentralised with our current level of technological advancement. The Monero core team won't crowbar decentralisation into everything unecessarily, especially when it has potentially disastrous results.
 
