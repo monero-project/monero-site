@@ -171,6 +171,11 @@
   amount: 104
   history: [3rd Dan on 2015-02-05]
 
+- level: 3
+  name: iourzzz
+  amount: 186
+  history: [3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
+  
 - level: 2
   name: superresistant
   amount: 50
@@ -190,11 +195,6 @@
   name: paratox
   amount: 50
   history: [2nd Dan on 2014-08-09]
-
-- level: 2
-  name: iourzzz
-  amount: 50
-  history: [2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
 
 - level: 2
   name: nioc
