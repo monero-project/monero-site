@@ -4,6 +4,7 @@ title: Monero Missive for the Week of 2015-03-16
 summary: Initial DB merge is about a week away, Tippero available on IRC / Twitter / Reddit, English mnemonic bug
 tags: [monero missives, accounts, blockchaindb, external]
 author: Riccardo Spagni (fluffypony)
+forum: https://forum.getmonero.org/1/news-announcements-and-editorials/225/monday-monero-missives-26-march-16th-2015
 ---
 
 <div class="text-center"><iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3430948/height/360/width/640/theme/standard-mini/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" height="600" width="600" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
