@@ -28,9 +28,8 @@ Sponsorships are also greatly appreciated, including those companies that give u
 
 Current sponsors include several mining pools that contribute a portion of their fees to development. You can find a list of these pools in [the first post on the Monero thread on Bitcointalk](https://bitcointalk.org/index.php?topic=583449.0). Over and above that, our sponsors include:
 
-{:.text-center}
-[![MyMonero](//static.getmonero.org/images/sponsors/mymonero.png)](https://mymonero.com) [![Dome9](//static.getmonero.org/images/sponsors/dome9.png)](http://dome9.com) [![JetBrains](//static.getmonero.org/images/sponsors/jetbrains.png)](http://www.jetbrains.com/)  
-[![Araxis](//static.getmonero.org/images/sponsors/araxis.png)](http://araxis.com) [![Kitware](//static.getmonero.org/images/sponsors/kitware.png)](http://kitware.com)
+{:.text-center style="letter-spacing: 30px;"}
+[![MyMonero](//static.getmonero.org/images/sponsors/mymonero.png)](https://mymonero.com) [![Kitware](//static.getmonero.org/images/sponsors/kitware.png)](http://kitware.com) [![Dome9](//static.getmonero.org/images/sponsors/dome9.png)](http://dome9.com) [![Araxis](//static.getmonero.org/images/sponsors/araxis.png)](http://araxis.com) [![JetBrains](//static.getmonero.org/images/sponsors/jetbrains.png)](http://www.jetbrains.com/)
 
 ### The Monero Community Hall of Fame
 
