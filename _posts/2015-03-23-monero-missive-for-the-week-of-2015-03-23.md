@@ -4,7 +4,7 @@ title: Dev Diaries for the Week of 2015-03-23
 summary: Detail on the structure of the new blockchain conversion and import utilities
 tags: [monero missives, dev diaries, blockchaindb, core]
 author: Riccardo Spagni (fluffypony)
-forum: https://forum.getmonero.org/1/news-announcements-and-editorials/245/monday-monero-missives-26-march-23rd-2015
+forum: https://forum.getmonero.org/1/news-announcements-and-editorials/245/monday-monero-missives-27-march-23rd-2015
 ---
 
 <div class="text-center"><iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3450222/height/360/width/640/theme/standard-mini/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" height="600" width="600" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
