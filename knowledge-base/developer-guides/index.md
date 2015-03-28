@@ -10,3 +10,10 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ---
 
 ### Work in Progress
+
+###Field definitions
+
+[Wallet RPC field definitions](https://github.com/monero-project/bitmonero/blob/master/src/wallet/wallet_rpc_server_commands_defs.h#L43)
+
+[Core RPC field definitions](https://github.com/monero-project/bitmonero/blob/master/src/rpc/core_rpc_server_commands_defs.h#L44)
+
