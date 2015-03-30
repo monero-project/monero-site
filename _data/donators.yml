@@ -48,7 +48,7 @@
 
 - level: 6
   name: antw081
-  amount: 1000
+  amount: 1500
   history: [6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
 
 - level: 5
@@ -91,6 +91,11 @@
   amount: 500
   history: [5th Dan on 2015-02-28, 4th Dan on 2014-08-18]
 
+- level: 5
+  name: Quicken
+  amount: 500
+  history: [5th Dan on 2015-03-27]
+
 - level: 4
   name: kbm
   amount: 200
@@ -129,7 +134,12 @@
 - level: 4
   name: RaskaRuby
   amount: 200
-  history: [3rd Dan on 2014-10-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-27]
+  history: [4th Dan 2015-01-01, 3rd Dan on 2014-10-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-27]
+
+- level: 4
+   name: djjacket
+   amount:200
+   history: [4th Dan on 2015-03-27]
 
 - level: 3
   name: Quanttek
