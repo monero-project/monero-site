@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extern Projects for the Week of 2015-03-30
+title: External Projects for the Week of 2015-03-30
 summary: An interview with Jojatekok, creator of the MoneroX GUI
 tags: [monero missives, external, gui, usability]
 author: Riccardo Spagni (fluffypony)
