@@ -4,6 +4,7 @@ title: Extern Projects for the Week of 2015-03-30
 summary: An interview with Jojatekok, creator of the MoneroX GUI
 tags: [monero missives, external, gui, usability]
 author: Riccardo Spagni (fluffypony)
+forum: https://forum.getmonero.org/1/news-announcements-and-editorials/252/monday-monero-missives-28-march-30th-2015
 ---
 
 <div class="text-center"><iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3467135/height/360/width/640/theme/standard-mini/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" height="600" width="600" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
