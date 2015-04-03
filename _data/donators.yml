@@ -221,6 +221,11 @@
   amount: 50.1
   history: [2nd Dan on 2015-02-23]
 
+- level: 2
+  name: palexander
+  amount: 50
+  history: [2nd Dan on 2015-04-03]
+  
 - level: 1
   name: David Latapie
   amount: 20
