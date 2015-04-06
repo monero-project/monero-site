@@ -16,12 +16,16 @@
       url: https://moneropric.es
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
+    - name: MoneroBase Price Charts and Tools
+      url: http://monerobase.com
 - category: Services
   merchants:
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
     - name: XMR.to Monero to Bitcoin Payment Service
       url: https://xmr.to
+    - name: Pradeep Atluri, Psychiatrist, New York
+      url: http://dr.mindsci.com/
     - name: CryptoEscrow Escrow Service
       url: http://www.cryptoescrow.eu
     - name: MoneroClub OTC Monero Trading
