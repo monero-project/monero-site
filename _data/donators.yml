@@ -48,7 +48,7 @@
 
 - level: 6
   name: antw081
-  amount: 1500
+  amount: 1600
   history: [6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
 
 - level: 5
@@ -141,6 +141,11 @@
    amount:200
    history: [4th Dan on 2015-03-27]
 
+- level: 4
+  name: iourzzz
+  amount: 311
+  history: [4th Dan on 2015-04-08, 3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
+
 - level: 3
   name: Quanttek
   amount: 100
@@ -180,11 +185,11 @@
   name: explorer
   amount: 104
   history: [3rd Dan on 2015-02-05]
-
+  
 - level: 3
-  name: iourzzz
-  amount: 186
-  history: [3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
+  name: nioc
+  amount: 100
+  history: [3rd Dan on 2015-04-18, 2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
   
 - level: 2
   name: superresistant
@@ -206,14 +211,10 @@
   amount: 50
   history: [2nd Dan on 2014-08-09]
 
-- level: 2
-  name: nioc
-  amount: 50
-  history: [2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
 
 - level: 2
   name: Arux
-  amount: 50.1
+  amount: 70.1
   history: [2nd Dan on 2015-01-31, 1st Dan on 2014-07-29]
 
 - level: 2
