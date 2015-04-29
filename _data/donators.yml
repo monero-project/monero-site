@@ -128,7 +128,7 @@
 
 - level: 4
   name: GreekBitcoin
-  amount: 233
+  amount: 300
   history: [4th Dan on 2015-01-26, 3rd Dan on 2014-05-11]
 
 - level: 4
@@ -211,7 +211,6 @@
   amount: 50
   history: [2nd Dan on 2014-08-09]
 
-
 - level: 2
   name: Arux
   amount: 70.1
@@ -226,6 +225,11 @@
   name: palexander
   amount: 50
   history: [2nd Dan on 2015-04-03]
+ 
+- level: 2
+  name: GingerAle
+  amount: 50
+  history: [2nd Dan on 2015-04-22]
   
 - level: 1
   name: David Latapie
