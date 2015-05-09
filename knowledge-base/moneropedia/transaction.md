@@ -14,7 +14,7 @@ A transaction's parameters are one or more recipient addresses with the correspo
 A transaction is uniquely identified by a Transaction ID, which is usually represented as a 32-byte string (64 hexadecimal characters).
 
 ### In-depth Information
-Every transaction involves two keys: a public spend key, and a public view key. The destination for an output in a transaction is actually a one-time public key computed from these two keys.
+Every transaction involves two keys: a public @spend-key, and a public @view-key. The destination for an output in a transaction is actually a one-time public key computed from these two keys.
 
 When the wallet is scanning for incoming transactions, every transaction is actually scanned to see if it is for "you". This only requires your private view key and your public spend key, and this check is immutable and cannot be faked. You cannot receive transactions and identify them without the corresponding private view key.
 
