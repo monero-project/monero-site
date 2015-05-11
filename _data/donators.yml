@@ -146,6 +146,11 @@
   amount: 311
   history: [4th Dan on 2015-04-08, 3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
 
+- level: 4
+  name: bassica
+  amount: 200
+  history: [4th Dan on 2015-05-11, 3rd Dan on 2014-11-25, 2nd Dan on 2014-09-10]
+  
 - level: 3
   name: Quanttek
   amount: 100
@@ -165,11 +170,6 @@
   name: AKWAnalytics
   amount: 111
   history: [3rd Dan on 2014-09-20]
-
-- level: 3
-  name: bassica
-  amount: 100
-  history: [3rd Dan on 2014-11-25, 2nd Dan on 2014-09-10]
 
 - level: 3
   name: Monero House ([CryptoKingdom](https://bitcointalk.org/index.php?topic=819073.msg9156194#msg9156194))
@@ -230,7 +230,12 @@
   name: GingerAle
   amount: 50
   history: [2nd Dan on 2015-04-22]
-  
+
+- level: 2
+  name: ibuyltc
+  amount: 50
+  history: [2nd Dan on 2015-05-11, 1st Dan on 2014-08-20]
+    
 - level: 1
   name: David Latapie
   amount: 20
@@ -285,11 +290,6 @@
   name: equipoise
   amount: 20
   history: [1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
-
-- level: 1
-  name: ibuyltc
-  amount: 20
-  history: [1st Dan on 2014-08-20]
 
 - level: 1
   name: whap
