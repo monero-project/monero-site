@@ -196,6 +196,11 @@
   amount: 100
   history: [3rd Dan on 2015-04-18, 2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
   
+- level: 3
+  name: palexander
+  amount: 100
+  history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
+  
 - level: 2
   name: superresistant
   amount: 50
@@ -227,11 +232,6 @@
   history: [2nd Dan on 2015-02-23]
 
 - level: 2
-  name: palexander
-  amount: 50
-  history: [2nd Dan on 2015-04-03]
- 
-- level: 2
   name: GingerAle
   amount: 50
   history: [2nd Dan on 2015-04-22]
@@ -240,11 +240,6 @@
   name: ibuyltc
   amount: 50
   history: [2nd Dan on 2015-05-11, 1st Dan on 2014-08-20]
-
-- level: 2
-  name: QuantumQrack
-  amount: 50
-  history: [2nd Dan on 2015-05-11]
       
 - level: 1
   name: David Latapie
