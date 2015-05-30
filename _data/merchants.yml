@@ -6,6 +6,8 @@
       url: https://poloniex.com/exchange/btc_xmr
 - category: Block Explorers
   merchants:
+    - name: ChainRadar
+      url: http://chainradar.com/xmr/blocks
     - name: MoneroBlocks
       url: http://moneroblocks.eu
 - category: Tools
