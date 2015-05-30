@@ -2,6 +2,8 @@
   merchants:
     - name: Bittrex
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
+    - name: Bter
+      url: https://bter.com/
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (instant)
