@@ -24,6 +24,8 @@
   merchants:
     - name: CryptoEscrow Escrow Service
       url: http://www.cryptoescrow.eu
+    - name: CryptoName OpenAlias Registry
+      url: https://cryptoname.co/
     - name: MoneroClub OTC Monero Trading
       url: https://www.moneroclub.com/offers/
     - name: MyMonero Web-based Wallet
