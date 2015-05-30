@@ -6,6 +6,8 @@
       url: https://bter.com/
     - name: HitBTC
       url: https://hitbtc.com/
+    - name: MoneroClub (OTC)
+      url: https://www.moneroclub.com/offers/
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (instant)
@@ -32,8 +34,6 @@
       url: http://www.cryptoescrow.eu
     - name: CryptoName OpenAlias Registry
       url: https://cryptoname.co/
-    - name: MoneroClub OTC Monero Trading
-      url: https://www.moneroclub.com/offers/
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
     - name: Pradeep Atluri, Psychiatrist, New York
