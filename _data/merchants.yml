@@ -1,33 +1,33 @@
 - category: Exchanges
   merchants:
-    - name: Poloniex
-      url: https://poloniex.com/exchange/btc_xmr
     - name: Bittrex
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
+    - name: Poloniex
+      url: https://poloniex.com/exchange/btc_xmr
 - category: Block Explorers
   merchants:
     - name: MoneroBlocks
       url: http://moneroblocks.eu
 - category: Tools
   merchants:
-    - name: MoneroPric.es Price Converter
-      url: https://moneropric.es
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
     - name: MoneroBase Price Charts and Tools
       url: http://monerobase.com
+    - name: MoneroPric.es Price Converter
+      url: https://moneropric.es
 - category: Services
   merchants:
-    - name: MyMonero Web-based Wallet
-      url: https://mymonero.com
-    - name: XMR.to Monero to Bitcoin Payment Service
-      url: https://xmr.to
-    - name: Pradeep Atluri, Psychiatrist, New York
-      url: http://dr.mindsci.com/
     - name: CryptoEscrow Escrow Service
       url: http://www.cryptoescrow.eu
     - name: MoneroClub OTC Monero Trading
       url: https://www.moneroclub.com/offers/
+    - name: MyMonero Web-based Wallet
+      url: https://mymonero.com
+    - name: Pradeep Atluri, Psychiatrist, New York
+      url: http://dr.mindsci.com/
+    - name: XMR.to Monero to Bitcoin Payment Service
+      url: https://xmr.to
 - category: Goods
   merchants:
     - name: Cryptonic Physical Monero & Bitcoin coins
