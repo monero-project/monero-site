@@ -35,4 +35,4 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 </div>
 
-If there are any merchants that no longer provide Monero services, or a merchant that wishes to be added, please [open an issue on this website's Github repository](https://github.com/monero-project/monero-site/issues) to alert us.
+All of the merchants are organised alphabetically. If there are any merchants that no longer provide Monero services, or a merchant that wishes to be added, please [open an issue on this website's Github repository](https://github.com/monero-project/monero-site/issues) to alert us.
