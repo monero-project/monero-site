@@ -20,6 +20,8 @@
       url: http://monerobase.com
     - name: MoneroPric.es Price Converter
       url: https://moneropric.es
+    - name: MoneroPrice.com Price Converter
+      url: http://moneroprice.com/
 - category: Services
   merchants:
     - name: CryptoEscrow Escrow Service
