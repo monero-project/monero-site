@@ -40,3 +40,7 @@
   merchants:
     - name: Cryptonic Physical Monero & Bitcoin coins
       url: https://cryptonic.net
+- category: Entertainment
+  merchants:
+    - name: Crypto Kingdom (MMO)
+      url: http://cryptokingdom.wikia.com/wiki/Crypto_Kingdom_Wiki
