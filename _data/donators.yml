@@ -138,7 +138,7 @@
 
 - level: 4
   name: RaskaRuby
-  amount: 200
+  amount: 250
   history: [4th Dan 2015-01-01, 3rd Dan on 2014-10-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-27]
 
 - level: 4
@@ -200,6 +200,11 @@
   name: palexander
   amount: 100
   history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
+  
+- level: 3
+  name: canth
+  amount: 100
+  history: [3rd Dan on 2015-05-17]  
   
 - level: 2
   name: superresistant
