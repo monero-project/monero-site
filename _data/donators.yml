@@ -29,7 +29,12 @@
   amount: 2500
   history: [7th Dan on 2015-02-25, 6th Dan on 2014-12-30, 5th Dan on 2014-09-18]
 
-- level: 6
+- level: 7
+  name: antw081
+  amount: 3100
+  history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
+  
+  - level: 6
   name: HardwarePal
   amount: 1000
   quote: The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
@@ -46,11 +51,6 @@
   amount: 1280.6
   history: [6th Dan on 2015-01-27, 4th Dan on 2014-11-08, 3rd Dan on 2014-08-26]
 
-- level: 6
-  name: antw081
-  amount: 1600
-  history: [6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
-  
 - level: 6
   name: ajiekceu4
   amount: 1000
@@ -83,7 +83,7 @@
 
 - level: 5
   name: dnaleor
-  amount: 500.1337
+  amount: 550.1337
   history: [5th Dan on 2015-02-23, 4th Dan on 2014-12-17, 3rd Dan on 2014-07-17, 1st Dan on 2014-05-03]
 
 - level: 5
