@@ -71,7 +71,7 @@ simplewallet
 		 tx_hash: array of:
 			 string
 
-	sweet_dust
+	sweep_dust
 		send all dust outputs back to the wallet's, to make them easier to spend (and mix)
 		outputs:
 			tx_hash_list: list of:
