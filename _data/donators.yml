@@ -14,7 +14,7 @@
 
 - level: 7
   name: Lloydimiller4
-  amount: 5755
+  amount: 6656
   history: [7th Dan on 2015-02-25 and 2015-03-12, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
 
 - level: 7
@@ -34,7 +34,7 @@
   amount: 3100
   history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
   
-  - level: 6
+- level: 6
   name: HardwarePal
   amount: 1000
   quote: The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
