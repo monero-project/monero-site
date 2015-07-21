@@ -67,6 +67,8 @@ simplewallet
 			unlock_time: unsigned int
 				number of blocks before the monero can be spent (0 to not add a lock)
 			payment_id: string
+			new_algorithm: boolean
+				true to use the new transaction construction algorithm, defaults to false
 		outputs:
 		 tx_hash: array of:
 			 string
