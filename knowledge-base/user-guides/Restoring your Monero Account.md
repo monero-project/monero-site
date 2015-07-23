@@ -1,6 +1,6 @@
 ---
 layout: static_page
-title: "Restoring Account"
+title: "Restoring Accounts"
 title-pre-kick: "Restoring your "
 title-kick: "Monero "
 title-post-kick: "Account"
