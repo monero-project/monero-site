@@ -11,6 +11,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 Operating System:  Windows (using simplewallet.exe)
 
+
 Retrieve your 25 word mnemonic seed.
 
 At a command prompt type:  simplewallet.exe --restore-deterministic-wallet.
