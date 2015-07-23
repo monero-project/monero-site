@@ -22,6 +22,8 @@ Hit enter again and you will be prompted for a password.  Give your wallet a new
 Hit enter gain and you will be prompted for your 25 word electrum style mnemonic seed.  (maybe remove the word electrum, as it may cause confusion).
 
 [instructions for Linux]
+
 [instructions for Mac]
-[instructions for MyMonero.com]
-[instructions for monerowallet.com]
+
+[instructions for monerowallet.com 13 word mnemonic]
+
