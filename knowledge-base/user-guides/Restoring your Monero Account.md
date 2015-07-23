@@ -9,7 +9,7 @@ icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-Operating System:  Windows (using simplewallet.exe)
+### Operating System:  Windows (using simplewallet.exe)
 
 Retrieve your 25 word mnemonic seed.
 
@@ -21,9 +21,9 @@ Hit enter again and you will be prompted for a password.  Give your wallet a new
 
 Hit enter gain and you will be prompted for your 25 word electrum style mnemonic seed.  (maybe remove the word electrum, as it may cause confusion).
 
-[instructions for Linux]
+### [instructions for Linux]
 
-[instructions for Mac]
+### [instructions for Mac]
 
-[instructions for monerowallet.com 13 word mnemonic]
+### [instructions for monerowallet.com 13 word mnemonic]
 
