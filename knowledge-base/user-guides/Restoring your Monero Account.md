@@ -17,11 +17,11 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - At the command prompt type:  simplewallet --restore-deterministic-wallet
 
-- Once you hit enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do 
+- Once you Press enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do 
 
-- Hit enter again and you will be prompted for a password.  Give your wallet a new and long password
+- Press enter again and you will be prompted for a password.  Give your wallet a new and long password
 
-- Hit enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier 
+- Press enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier 
 
 
 
