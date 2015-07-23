@@ -13,7 +13,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Retrieve your 25 word @mnemonic-seed that you saved from creating your old Monero @account.
 
-- At a command prompt type:  simplewallet.exe --restore-deterministic-wallet.
+- At a command prompt type:  simplewallet.exe --restore-deterministic-wallet
 
 - Once you hit enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do. 
 
