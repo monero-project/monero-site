@@ -23,3 +23,5 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 - Press enter again and you will be prompted for a password.  Give your wallet a new and long password
 
 - Press enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier 
+
+After you have entered the 25 word mnemonic seed, simplewallet will generate the same public address and view key as your old wallet.  You will then need to type in the command "refresh" to scan the blockchain and get your account balance. (Please be patient as the refresh may take a while.)
