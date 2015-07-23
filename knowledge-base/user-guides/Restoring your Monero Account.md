@@ -11,7 +11,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### Operating System:  Windows, Linux, Mac (using simplewallet)
 
-- Retrieve your 25 word @mnemonic-seed that you saved from creating your old Monero account.
+- Retrieve your 25 word @mnemonic-seed that you saved from creating your old Monero @account.
 
 - At a command prompt type:  simplewallet.exe --restore-deterministic-wallet.
 
