@@ -22,5 +22,5 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 - Hit enter again and you will be prompted for the 25 word electrum style mnemonic seed.  (maybe remove the word electrum from simplewallet.exe, as it may cause confusion).
 
 
-### Website: www.monerowallet.com using a 13 word mnemonic
+
 
