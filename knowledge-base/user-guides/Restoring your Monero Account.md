@@ -1,9 +1,9 @@
 ---
 layout: static_page
-title: "The People Behind Monero"
-title-pre-kick: "The "
-title-kick: "People Behind "
-title-post-kick: "Monero"
+title: "Restoring your Monero Account"
+title-pre-kick: "Restoring "
+title-kick: "your Monero "
+title-post-kick: "Account"
 kick-class: "kicks"
 icon: "icon_people"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
