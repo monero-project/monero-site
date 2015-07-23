@@ -1,8 +1,8 @@
 ---
 layout: static_page
-title: "User Guides"
-title-pre-kick: "User "
-title-kick: "Guides"
+title: "Restoring Account"
+title-pre-kick: "Restoring your "
+title-kick: "Account"
 title-post-kick: ""
 kick-class: "purple-kicks"
 icon: "icon_userguides"
