@@ -21,9 +21,9 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Hit enter gain and you will be prompted for your 25 word electrum style mnemonic seed.  (maybe remove the word electrum, as it may cause confusion).
 
-### Operating System: Linux
+### Operating System: Linux (using simplewallet.exe)
 
-### Operating System: Mac
+### Operating System: Mac (using simplewallet.exe)
 
 ### Website: www.monerowallet.com using a 13 word mnemonic
 
