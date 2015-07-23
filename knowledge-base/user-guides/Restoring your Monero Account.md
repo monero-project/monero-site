@@ -12,7 +12,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ## Operating Systems:  Windows, Linux, Mac 
 ### Account Software:  Simplewallet
 
-- Retrieve your 25 word @mnemonic-seed that you saved from creating your old Monero @account
+- Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @account
  
 - Open a command prompt and navigate to the drive and directory that contains simplewallet
 
