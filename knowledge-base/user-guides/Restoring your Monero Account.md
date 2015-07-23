@@ -19,7 +19,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Hit enter again and you will be prompted for a password.  Give your wallet a new and long password.
 
-- Hit enter again and you will be prompted for the 25 word electrum style mnemonic seed.  (maybe remove the word electrum from simplewallet.exe, as it may cause confusion).
+- Hit enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier. 
 
 
 
