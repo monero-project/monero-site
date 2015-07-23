@@ -15,7 +15,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
  
 - Open a command prompt and navigate to the drive and directory that contains simplewallet
 
-- At the command prompt type:  simplewallet.exe --restore-deterministic-wallet
+- At the command prompt type:  simplewallet --restore-deterministic-wallet
 
 - Once you hit enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do 
 
