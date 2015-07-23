@@ -9,7 +9,7 @@ icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-### Operating System:  Windows (using simplewallet.exe)
+### Operating System:  Windows (using simplewallet)
 
 - Retrieve your 25 word @mnemonic-seed.
 
@@ -21,9 +21,9 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Hit enter again and you will be prompted for your 25 word electrum style mnemonic seed.  (maybe remove the word electrum from simplewallet.exe, as it may cause confusion).
 
-### Operating System: Linux (using simplewallet.exe)
+### Operating System: Linux (using simplewallet)
 
-### Operating System: Mac (using simplewallet.exe)
+### Operating System: Mac (using simplewallet)
 
 ### Website: www.monerowallet.com using a 13 word mnemonic
 
