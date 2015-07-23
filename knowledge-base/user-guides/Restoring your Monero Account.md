@@ -5,7 +5,7 @@ title-pre-kick: "Restoring "
 title-kick: "your Monero "
 title-post-kick: "Account"
 kick-class: "kicks"
-icon: "icon_people"
+icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
