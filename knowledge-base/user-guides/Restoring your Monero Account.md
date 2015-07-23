@@ -2,8 +2,8 @@
 layout: static_page
 title: "Restoring Account"
 title-pre-kick: "Restoring your "
-title-kick: "Account"
-title-post-kick: ""
+title-kick: "Monero "
+title-post-kick: "Account"
 kick-class: "purple-kicks"
 icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
