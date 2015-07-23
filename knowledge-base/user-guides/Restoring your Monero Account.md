@@ -11,7 +11,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### Operating System:  Windows, Linux, Mac (using simplewallet)
 
-- Retrieve your 25 word @mnemonic-seed.
+- Retrieve your 25 word @mnemonic-seed that you saved from creating your old Monero account.
 
 - At a command prompt type:  simplewallet.exe --restore-deterministic-wallet.
 
@@ -19,7 +19,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Hit enter again and you will be prompted for a password.  Give your wallet a new and long password.
 
-- Hit enter again and you will be prompted for your 25 word electrum style mnemonic seed.  (maybe remove the word electrum from simplewallet.exe, as it may cause confusion).
+- Hit enter again and you will be prompted for the 25 word electrum style mnemonic seed.  (maybe remove the word electrum from simplewallet.exe, as it may cause confusion).
 
 
 ### Website: www.monerowallet.com using a 13 word mnemonic
