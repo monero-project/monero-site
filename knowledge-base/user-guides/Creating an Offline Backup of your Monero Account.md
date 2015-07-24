@@ -21,7 +21,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
  
 - Create a Linux or Windows bootable disk, and make sure you have the Monero binaries on the same disk or on a second disk (for Linux make sure you have also downloaded copies of the dependencies you will need, libboost1.55 and miniupnpc for instance)
  
-- Disconnect the network and/or Internet cables from your machine, physically remove the wifi card or switch the wifi/bluetooth off on a laptop if possible
+- Disconnect the network and/or Internet cables from your computer, physically remove the wifi card or switch the wifi/bluetooth off on a laptop if possible
  
 - Boot into your bootable OS, install the dependencies if necessary
  
