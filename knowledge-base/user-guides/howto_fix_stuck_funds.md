@@ -25,13 +25,13 @@ into the command prompt. Write down your 25 word seed, if you haven't already. T
 
 2. Backup all of your wallet related files. These include:
 
-> yourwalletname.bin
-yourwalletname.bin.keys
-yourwalletname.bin.address.txt
+> yourwalletname.bin  
+> yourwalletname.bin.keys  
+> yourwalletname.bin.address.txt  
 
 This can be done by copying the files to a new folder. 
 
-Sometimes, when creating your wallet, you might have named it something without the .bin part. In that case, the wallet file will be called "yourwalletname"
+Sometimes, when creating your wallet, you might have named it something without the .bin part. In that case, the wallet file will be called yourwalletname without the .bin at the end.
 
 3. Delete yourwallet.bin
 
