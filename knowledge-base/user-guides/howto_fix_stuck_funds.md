@@ -9,7 +9,6 @@ icon: "icon_about"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-
 Sometimes, your funds will become stuck - you will have some locked funds that never become unlocked. This is how you fix it.
 
 1. Load your wallet in simplewallet. 
