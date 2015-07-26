@@ -25,9 +25,9 @@ into the command prompt. Write down your 25 word seed, if you haven't already. T
 
 2. Backup all of your wallet related files. These include:
 
-'''yourwalletname.bin'''
-'''yourwalletname.bin.keys'''
-'''yourwalletname.bin.address.txt'''
+> yourwalletname.bin
+yourwalletname.bin.keys
+yourwalletname.bin.address.txt
 
 This can be done by copying the files to a new folder. 
 
