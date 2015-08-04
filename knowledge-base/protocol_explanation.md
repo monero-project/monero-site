@@ -12,20 +12,20 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 (insert that protocol image here)
 
 Bob wants to spend XMR he received in his account and send it to Carol.  
-How does is the transaction made?  
+How is the transaction made?  
 
 A: Bob gets access to his "real input" that was send to his "stealth address"  
-1. Bob needs the public key from the transaction that contains the output he received and wants to send - Bob needs to ECDH this key with his private view key  
-2. Bob also selects the exact number of the output from the transaction that contains the output he wants to send. The other output(s) in this transaction is/are change (Bob doesn't have the private key for those other outputs) Note: typically, due to auto-denomination, Bob will have more than one output per transaction that belongs to him.  
+1. Bob needs the public key from the transaction that contains the output he received and wants to send - Bob needs to @ECDH this key with his private view key  
+2. Bob also selects the exact number of the output from the transaction that contains the output he wants to send. The other output(s) in this transaction is/are change (Bob doesn't have the private key for those other outputs) Note: typically, due to @auto-denomination, Bob will have more than one output per transaction that belongs to him.  
 3. Bob needs the "master" private key of his account - private spend key, to be precise  
 4. 1,2 and 3 are used to calculate the private key for the specific output he wants to send. (the public key for the transaction can be calculated from this private key - This is correct, but the public key is also stored on the blockchain.)  
 
-B: to protects Carol's identity, Bob will do the folowing to generate a "one time" public key for this transaction, making it impossible for others to link all transactions send to Carol to the same "stealth address"  
+B: To protects Carol's identity, Bob will do the folowing to generate a "one time" public key for this transaction, making it impossible for others to link all transactions send to Carol to the same "stealth address"  
 5. Bob generates a random number scalar, this one isn't clear from the graphic at all  
 6. this random number is hashed into the transaction public key the transaction private key, and is scalar mult'd into the transaction public key  
 7. he selects the number associated with the outputs (due to auto-denom) that Carol will receive, the other output(s) is/are change that goes back to Bob.  
 8. he needs the "master" public key from Carol to be able to send it to her stealth address - Carol's public view key  
-9. 6,7 and 8 are used to calulate the public key for the specific outputs he wants to send  
+9. 6,7 and 8 are used to calculate the public key for the specific outputs he wants to send  
 
 C: to "mix" the inputs, Bob creates a ring signature  
 10.  He selects the actual public key (+ that output's private key) from the output he wants to send, but he also adds other public keys into the mix.  
