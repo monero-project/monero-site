@@ -17,6 +17,9 @@ Ongoing development of the Monero Project is solely supported by donations and s
 
 If you would like to make a donation you can do so by using any of the methods below:
 
+{:.text-center style="letter-spacing: 30px;"}
+![Monero QR Code](//static.getmonero.org/images/donate-monero.png) ![Bitcoin QR Code](//static.getmonero.org/images/donate-bitcoin.png)
+
 - Donating in Monero: you can send XMR donations to [donate.getmonero.org](monero:46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em?recipient_name=Monero%20Development&tx_description=Donation%20to%20Monero%20Core%20Team), or directly to our Monero donation address -  
   <span class="long-term">[46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em](monero:46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em?recipient_name=Monero%20Development&tx_description=Donation%20to%20Monero%20Core%20Team)</span>  
 - Donating in Bitcoin: you can also send BTC donations to [donate.getmonero.org](bitcoin:1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb?label=Monero%20Development&message=Donation%20to%20Monero%20Core%20Team), or directly to our Bitcoin address: [1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb](bitcoin:1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb?label=Monero%20Development&message=Donation%20to%20Monero%20Core%20Team)  
@@ -29,7 +32,7 @@ Sponsorships are also greatly appreciated, including those companies that give u
 Current sponsors include several mining pools that contribute a portion of their fees to development. You can find a list of these pools in [the first post on the Monero thread on Bitcointalk](https://bitcointalk.org/index.php?topic=583449.0). Over and above that, our sponsors include:
 
 {:.text-center style="letter-spacing: 30px;"}
-[![MyMonero](//static.getmonero.org/images/sponsors/mymonero.png)](https://mymonero.com) [![Kitware](//static.getmonero.org/images/sponsors/kitware.png)](http://kitware.com) [![Dome9](//static.getmonero.org/images/sponsors/dome9.png)](http://dome9.com) [![Araxis](//static.getmonero.org/images/sponsors/araxis.png)](http://araxis.com) [![JetBrains](//static.getmonero.org/images/sponsors/jetbrains.png)](http://www.jetbrains.com/)
+[![MyMonero](//static.getmonero.org/images/sponsors/mymonero.png)](https://mymonero.com) [![Kitware](//static.getmonero.org/images/sponsors/kitware.png?1)](http://kitware.com) [![Dome9](//static.getmonero.org/images/sponsors/dome9.png)](http://dome9.com) [![Araxis](//static.getmonero.org/images/sponsors/araxis.png)](http://araxis.com) [![JetBrains](//static.getmonero.org/images/sponsors/jetbrains.png)](http://www.jetbrains.com/) [![Navicat](//static.getmonero.org/images/sponsors/navicat.png)](http://www.navicat.com/)
 
 ### The Monero Community Hall of Fame
 

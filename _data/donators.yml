@@ -13,6 +13,11 @@
   history: [8th Dan on 2015-02-23, 7th Dan on 2014-09-04, 6th Dan on 2014-08-23, 5th Dan on 2014-08-01, 4th Dan on 2014-07-16]
 
 - level: 7
+  name: Lloydimiller4
+  amount: 5755
+  history: [7th Dan on 2015-02-25 and 2015-03-12, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
+
+- level: 7
   name: smooth
   amount: 2500
   quote: No State shall...coin Money; emit Bills of Credit; make any Thing but gold and silver Coin a Tender in Payment of Debts...
@@ -20,15 +25,15 @@
   history: [7th Dan on 2014-08-13, 6th Dan on 2014-04-29]
 
 - level: 7
-  name: Lloydimiller4
-  amount: 2897
-  history: [7th Dan on 2015-02-25 and 2015-03-12, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
-
-- level: 7
   name: pa
   amount: 2500
   history: [7th Dan on 2015-02-25, 6th Dan on 2014-12-30, 5th Dan on 2014-09-18]
 
+- level: 7
+  name: antw081
+  amount: 3100
+  history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
+  
 - level: 6
   name: HardwarePal
   amount: 1000
@@ -43,13 +48,13 @@
 
 - level: 6
   name: Medusa13
-  amount: 1000.6
+  amount: 1280.6
   history: [6th Dan on 2015-01-27, 4th Dan on 2014-11-08, 3rd Dan on 2014-08-26]
 
 - level: 6
-  name: antw081
-  amount: 1000
-  history: [6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
+  name: ajiekceu4
+  amount: 4666
+  history: [6th Dan on 2015-05-11]
 
 - level: 5
   name: eizh
@@ -78,7 +83,7 @@
 
 - level: 5
   name: dnaleor
-  amount: 500.1337
+  amount: 550.1337
   history: [5th Dan on 2015-02-23, 4th Dan on 2014-12-17, 3rd Dan on 2014-07-17, 1st Dan on 2014-05-03]
 
 - level: 5
@@ -91,11 +96,21 @@
   amount: 500
   history: [5th Dan on 2015-02-28, 4th Dan on 2014-08-18]
 
-- level: 4
-  name: kbm
-  amount: 200
-  history: [4th Dan on 2014-05-06]
+- level: 5
+  name: Quicken
+  amount: 500
+  history: [5th Dan on 2015-03-27]
 
+- level: 5
+  name: G2M (aka "kbm")
+  amount: 500
+  history: [5th Dan on 2015-06-03, 4th Dan on 2014-05-06]
+
+- level: 5
+  name: bassica
+  amount: 700
+  history: [5th Dan on 2015-07-17, 4th Dan on 2015-05-11, 3rd Dan on 2014-11-25, 2nd Dan on 2014-09-10]
+  
 - level: 4
   name: bobabouey2
   amount: 250
@@ -123,13 +138,23 @@
 
 - level: 4
   name: GreekBitcoin
-  amount: 233
+  amount: 300
   history: [4th Dan on 2015-01-26, 3rd Dan on 2014-05-11]
 
 - level: 4
   name: RaskaRuby
+  amount: 250
+  history: [4th Dan 2015-01-01, 3rd Dan on 2014-10-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-27]
+
+- level: 4
+  name: djjacket
   amount: 200
-  history: [3rd Dan on 2014-10-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-27]
+  history: [4th Dan on 2015-03-27]
+
+- level: 4
+  name: iourzzz
+  amount: 311
+  history: [4th Dan on 2015-04-08, 3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
 
 - level: 3
   name: Quanttek
@@ -152,11 +177,6 @@
   history: [3rd Dan on 2014-09-20]
 
 - level: 3
-  name: bassica
-  amount: 100
-  history: [3rd Dan on 2014-11-25, 2nd Dan on 2014-09-10]
-
-- level: 3
   name: Monero House ([CryptoKingdom](https://bitcointalk.org/index.php?topic=819073.msg9156194#msg9156194))
   amount: 150
   history: [3rd Dan on 2014-11-06]
@@ -170,11 +190,21 @@
   name: explorer
   amount: 104
   history: [3rd Dan on 2015-02-05]
-
+  
 - level: 3
-  name: iourzzz
-  amount: 186
-  history: [3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
+  name: nioc
+  amount: 100
+  history: [3rd Dan on 2015-04-18, 2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
+  
+- level: 3
+  name: palexander
+  amount: 150
+  history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
+  
+- level: 3
+  name: canth
+  amount: 100
+  history: [3rd Dan on 2015-05-17]  
   
 - level: 2
   name: superresistant
@@ -197,13 +227,8 @@
   history: [2nd Dan on 2014-08-09]
 
 - level: 2
-  name: nioc
-  amount: 50
-  history: [2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
-
-- level: 2
   name: Arux
-  amount: 50.1
+  amount: 70.1
   history: [2nd Dan on 2015-01-31, 1st Dan on 2014-07-29]
 
 - level: 2
@@ -211,6 +236,16 @@
   amount: 50.1
   history: [2nd Dan on 2015-02-23]
 
+- level: 2
+  name: GingerAle
+  amount: 50
+  history: [2nd Dan on 2015-04-22]
+
+- level: 2
+  name: ibuyltc
+  amount: 50
+  history: [2nd Dan on 2015-05-11, 1st Dan on 2014-08-20]
+      
 - level: 1
   name: David Latapie
   amount: 20
@@ -265,11 +300,6 @@
   name: equipoise
   amount: 20
   history: [1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
-
-- level: 1
-  name: ibuyltc
-  amount: 20
-  history: [1st Dan on 2014-08-20]
 
 - level: 1
   name: whap

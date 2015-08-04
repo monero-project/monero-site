@@ -1,32 +1,56 @@
 - category: Exchanges
   merchants:
-    - name: Poloniex
-      url: https://poloniex.com/exchange/btc_xmr
+    - name: "#monero-otc (OTC)"
+      url: https://webchat.freenode.net?channels=%23monero-otc
     - name: Bittrex
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
-    - name: Melotic
-      url: https://www.melotic.com/markets/xmr-btc
+    - name: Bter
+      url: https://bter.com/
+    - name: HitBTC
+      url: https://hitbtc.com/
+    - name: MoneroClub (OTC)
+      url: https://www.moneroclub.com/offers/
+    - name: Poloniex
+      url: https://poloniex.com/exchange/btc_xmr
+    - name: ShapeShift (instant)
+      url: https://shapeshift.io/
 - category: Block Explorers
   merchants:
+    - name: ChainRadar
+      url: http://chainradar.com/xmr/blocks
     - name: MoneroBlocks
       url: http://moneroblocks.eu
 - category: Tools
   merchants:
-    - name: MoneroPric.es Price Converter
-      url: https://moneropric.es
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
+    - name: MoneroBase Price Charts and Tools
+      url: http://monerobase.com
+    - name: MoneroPric.es Price Converter
+      url: https://moneropric.es
+    - name: MoneroPrice.com Price Converter
+      url: http://moneroprice.com/
 - category: Services
   merchants:
-    - name: MyMonero Web-based Wallet
-      url: https://mymonero.com
-    - name: XMR.to Monero to Bitcoin Payment Service
-      url: https://xmr.to
     - name: CryptoEscrow Escrow Service
       url: http://www.cryptoescrow.eu
-    - name: MoneroClub OTC Monero Trading
-      url: https://www.moneroclub.com/offers/
+    - name: CryptoName OpenAlias Registry
+      url: https://cryptoname.co/
+    - name: MyMonero Web-based Wallet
+      url: https://mymonero.com
+    - name: Pradeep Atluri, Psychiatrist, New York
+      url: http://dr.mindsci.com/
+    - name: XMR.link OpenAlias Registry
+      url: https://www.xmr.link/
+    - name: XMR.to Monero to Bitcoin Payment Service
+      url: https://xmr.to
 - category: Goods
   merchants:
     - name: Cryptonic Physical Monero & Bitcoin coins
       url: https://cryptonic.net
+- category: Entertainment
+  merchants:
+    - name: Crypto Kingdom (MMO)
+      url: http://cryptokingdom.wikia.com/wiki/Crypto_Kingdom_Wiki
+    - name: SafeDice (gambling)
+      url: https://safedice.com/

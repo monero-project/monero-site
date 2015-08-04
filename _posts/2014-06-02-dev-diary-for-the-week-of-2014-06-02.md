@@ -6,6 +6,8 @@ tags: [dev diaries, mining, i2p, rpc, crypto]
 author: Riccardo Spagni (fluffypony)
 ---
 
+*June 2nd, 2014*
+
 **RPC:** Neozaru and others have submitted pull requests to add RPC methods that were missing.
 
 **I2P:** libssu has been decoupled, and outstanding changes to master have been merged.
