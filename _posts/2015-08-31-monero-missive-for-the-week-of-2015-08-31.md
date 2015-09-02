@@ -4,6 +4,7 @@ title: Monero Missives for the Week of 2015-08-31
 summary: Contributing to, and building, the Monero website
 tags: [monero missives, usability]
 author: Riccardo Spagni (fluffypony)
+forum: https://forum.getmonero.org/1/news-announcements-and-editorials/2368/monday-monero-missives-31-august-31st-2015
 ---
 
 <div class="text-center"><iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3775209/height/360/width/640/theme/standard-mini/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" height="600" width="600" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
