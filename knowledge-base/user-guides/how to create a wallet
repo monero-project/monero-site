@@ -2,9 +2,9 @@
 
 How to create a wallet on Ubuntu :
 
-Step 1 : Download the official binairies or compile the last source available on github
+Step 1 : Download the official binaries or compile the last source available on github
 
-Step 2 : Extract the files with the archive manager. Note the path where the the files (bitmonerod and simplewallet are).
+Step 2 : Extract the files with the archive manager (same as winzip on windows). Note the path where the files are (bitmonerod and simplewallet).
 
 Step 3 (only needed once): Open a terminal (ctrl+alt+t) and install the required dependencies by typing : "sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev"
 
