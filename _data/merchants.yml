@@ -30,6 +30,8 @@
       url: https://moneropric.es
     - name: MoneroPrice.com Price Converter
       url: http://moneroprice.com/
+    - name: Offline Monero address generator
+      url: http://moneroaddress.org/
 - category: Services
   merchants:
     - name: CryptoEscrow Escrow Service
