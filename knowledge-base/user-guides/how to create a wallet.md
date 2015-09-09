@@ -11,8 +11,6 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### Operating Systems:  Ubuntu
 
-#### Resource for Monero Binaries:  [Monero Binaries](https://getmonero.org/downloads/)
-
 - Download the [official binaries](https://getmonero.org/downloads/) or compile the last source available on [github](https://github.com/monero-project/bitmonero)
 
 - Extract the files with the archive manager (same as winzip on Windows). Note the path where the files are (bitmonerod and simplewallet)
