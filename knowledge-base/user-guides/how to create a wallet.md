@@ -17,11 +17,11 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Extract the files with the archive manager (same as winzip on Windows). Note the path where the files are (bitmonerod and simplewallet)
 
-- Open a terminal (ctrl+alt+t) and install the required dependencies by typing : " *sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev* " . You only need to do this step once. 
+- You only need to do this step once : open a terminal (ctrl+alt+t) and install the required dependencies by typing : *sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev* 
 
 - This step is optional : download the [blockchain](https://getmonero.org/downloads/) and save it in "/home/yourUserName/.bitmonero/"
 
-- Open a terminal and load the path where your binaries are extracted (cf. step 2) by typing : " *cd yourPathFromStep2* "
+- Open a terminal and load the path where your binaries are extracted (cf. step 2) by typing : *cd yourPathFromStep2*
 
 - Load bitmonerod by typing in your terminal : " *./bitmonerod* ". Wait for the synchronisation with the network (bitmonerod is updating the blockchain you have downloaded in step 4 or is downloading it from scratch). This can take a lot of time the first time, so be patient
 
