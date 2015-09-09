@@ -17,18 +17,18 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Extract the files with the archive manager (same as winzip on Windows). Note the path where the files are (bitmonerod and simplewallet)
 
-- Open a terminal (ctrl+alt+t) and install the required dependencies by typing : 
-> sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev". 
+- Open a terminal (ctrl+alt+t) and install the required dependencies by typing the following command. You only need to do this step once. 
+> sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev 
 
-You only need to do this step once
+- This step is optional : download the [blockchain](https://getmonero.org/downloads/) and save it in */home/yourUserName/.bitmonero/*
 
-- This step is optional : download the [blockchain](https://getmonero.org/downloads/) and save it in "/home/yourUserName/.bitmonero/"
-
-- Open a terminal and load the path where your binaries are extracted (cf. step 2) by typing : "cd yourPathFromStep2"
+- Open a terminal and load the path where your binaries are extracted (cf. step 2) by typing : 
+>cd yourPathFromStep2
 
 - Load bitmonerod by typing in your terminal : "./bitmonerod". Wait for the synchronisation with the network (bitmonerod is updating the blockchain you have downloaded in step 4 or is downloading it from scratch). This can take a lot of time the first time, so be patient
 
-- Once bitmonerod is synchronised with the network, open a new terminal, change the directory (cf. step 5), and launch simplewallet by typing : "./simplewallet"
+- Once bitmonerod is synchronised with the network, open a new terminal, change the directory (cf. step 5), and launch simplewallet by typing : 
+>./simplewallet
 
 - Enter the name you want for your portfolio and follow the instructions from the terminal
 
