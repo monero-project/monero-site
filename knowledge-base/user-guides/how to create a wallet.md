@@ -13,7 +13,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - Download the [official binaries](https://getmonero.org/downloads/) or compile the last source available on [github](https://github.com/monero-project/bitmonero)
 
-- Extract the files with the archive manager (same as winzip on Windows). Note the path where the files "bitmonerod" and "simplewallet" are.
+- Extract the files with the archive manager (same as winzip on Windows). Note the path where the files "bitmonerod" and "simplewallet" are
 
 - You only need to do this step once : open a terminal (ctrl+alt+t) and install the required dependencies by typing : "*sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev*"
 
