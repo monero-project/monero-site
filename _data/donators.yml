@@ -34,6 +34,11 @@
   amount: 3100
   history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
   
+  - level: 7
+  name: ajiekceu4
+  amount: 5666
+  history: [6th Dan on 2015-05-11, 7th Dan on 2015-08-31]
+  
   - level: 6
   name: HardwarePal
   amount: 1000
@@ -50,11 +55,6 @@
   name: Medusa13
   amount: 1280.6
   history: [6th Dan on 2015-01-27, 4th Dan on 2014-11-08, 3rd Dan on 2014-08-26]
-
-- level: 6
-  name: ajiekceu4
-  amount: 4666
-  history: [6th Dan on 2015-05-11]
 
 - level: 5
   name: eizh
@@ -83,7 +83,7 @@
 
 - level: 5
   name: dnaleor
-  amount: 550.1337
+  amount: 650.1337
   history: [5th Dan on 2015-02-23, 4th Dan on 2014-12-17, 3rd Dan on 2014-07-17, 1st Dan on 2014-05-03]
 
 - level: 5
@@ -108,7 +108,7 @@
 
 - level: 5
   name: bassica
-  amount: 700
+  amount: 849.9
   history: [5th Dan on 2015-07-17, 4th Dan on 2015-05-11, 3rd Dan on 2014-11-25, 2nd Dan on 2014-09-10]
   
 - level: 4
@@ -123,7 +123,7 @@
 
 - level: 4
   name: exciter0
-  amount: 200
+  amount: 300
   history: [4th Dan on 2014-10-14, 3rd Dan on 2014-08-20]
 
 - level: 4
@@ -183,7 +183,7 @@
 
 - level: 3
   name: Shrikez
-  amount: 100
+  amount: 150
   history: [3rd Dan on 2015-01-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-11]
 
 - level: 3
