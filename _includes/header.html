@@ -1,71 +1,70 @@
-    <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="navbar-wrapper">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/"><img class="logo" src="//static.getmonero.org/images/logo.svg"></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="yellow" href="https://forum.getmonero.org">{% t menu.forum %}</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle purple" data-toggle="dropdown">{% t menu.blog %} <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="/blog">{% t menu.allblog %}</a></li>
-                <li><a href="/blog/tags/monero%20missives">{% t menu.missives %}</a></li>
-                <li><a href="/blog/tags/dev%20diaries">{% t menu.devdiaries %}</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle red" data-toggle="dropdown">{% t global.getting_started %} <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="/getting-started/choose">{% t menu.choose %}</a></li>
-                <li><a href="/getting-started/running">{% t menu.running %}</a></li>
-                <li><a href="/getting-started/donate">{% t menu.donations %}</a></li>
-                <li class="divider"></li>
-                <li><a href="/downloads">{% t menu.downloads %}</a></li>
-                <li class="divider"></li>
-                <li><a href="/getting-started/accepting">{% t menu.accepting %}</a></li>
-				<li><a href="/getting-started/merchants">{% t menu.merchants %}</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle orange" data-toggle="dropdown">{% t menu.knowledge_base %} <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="/knowledge-base/about">{% t menu.about %}</a></li>
-                <li><a href="/knowledge-base/people">{% t menu.people %}</a></li>
-                <li><a href="/knowledge-base/moneropedia">{% t global.wiki %}</a></li>
-                <li class="divider"></li>
-                <li><a href="/knowledge-base/user-guides">{% t menu.userguides %}</a></li>
-                <li><a href="/knowledge-base/developer-guides">{% t menu.developerguides %}</a></li>
-                <li class="divider"></li>
-                <li><a href="/design-goals">{% t menu.goals %}</a></li>
-                <li><a href="/research-lab">{% t menu.lab %}</a></li>
-                <li><a href="/knowledge-base/openalias">{% t menu.openalias %}</a></li>
-                <li><a href="/knowledge-base/projects">{% t menu.projects %}</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle softyellow last" data-toggle="dropdown">{% t menu.community %} <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="https://forum.getmonero.org">{% t menu.forum %}</a></li>
-                <li><a href="https://www.reddit.com/r/monero/">{% t menu.reddit %}</a></li>
-                <li><a href="https://bitcointalk.org/index.php?topic=583449.0">{% t menu.bitcointalk %}</a></li>
-                <li class="divider"></li>
-				<li class="dropdown-header">{% t menu.irc %}</li>
-                <li><a href="irc://chat.freenode.net/#monero">{% t menu.irc-general %}</a></li>
-                <li><a href="irc://chat.freenode.net/#monero-dev">{% t menu.irc-development %}</a></li>
-                <li><a href="irc://chat.freenode.net/#monero-otc">{% t menu.irc-trading %}</a></li>
-                <li><a href="irc://chat.freenode.net/#monero-markets">{% t menu.irc-markets %}</a></li>
-                <li><a href="irc://chat.freenode.net/#monero-pools">{% t menu.irc-mining %}</a></li>
-              </ul>
-            </li>
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="navbar-wrapper">
+    <div class="navbar-header">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </label>
+      <a class="navbar-brand" href="//getmonero.org/"><img class="logo" src="//static.getmonero.org/images/logo.svg"></a>
+      <ul class="nav navbar-nav navbar-right navbar-collapse">
+        <li><a class="yellow" href="https://forum.getmonero.org">{% t menu.forum %}</a></li>
+        <li class="dropdown">
+          <input type="checkbox" class="dropdown-input" id="drop-1"/><label for="drop-1" class="purple">{% t menu.blog %} <span class="caret"></span></label>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="//getmonero.org/blog">{% t menu.allblog %}</a></li>
+            <li><a href="//getmonero.org/blog/tags/monero%20missives">{% t menu.missives %}</a></li>
+            <li><a href="//getmonero.org/blog/tags/dev%20diaries">{% t menu.devdiaries %}</a></li>
           </ul>
-        </div>
-      </div>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="drop-2"/><label for="drop-2" class="red">{% t global.getting_started %} <span class="caret"></span></label>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="//getmonero.org/getting-started/choose">{% t menu.choose %}</a></li>
+            <li><a href="//getmonero.org/getting-started/running">{% t menu.running %}</a></li>
+            <li><a href="//getmonero.org/getting-started/donate">{% t menu.donations %}</a></li>
+            <li class="divider"></li>
+            <li><a href="//getmonero.org/downloads">{% t menu.downloads %}</a></li>
+            <li class="divider"></li>
+            <li><a href="//getmonero.org/getting-started/accepting">{% t menu.accepting %}</a></li>
+            <li><a href="//getmonero.org/getting-started/merchants">{% t menu.merchants %}</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="drop-3"/><label for="drop-3" class="orange">{% t menu.knowledge_base %} <span class="caret"></span></label>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="//getmonero.org/knowledge-base/about">{% t menu.about %}</a></li>
+            <li><a href="//getmonero.org/knowledge-base/people">{% t menu.people %}</a></li>
+            <li><a href="//getmonero.org/knowledge-base/moneropedia">{% t global.wiki %}</a></li>
+            <li class="divider"></li>
+            <li><a href="//getmonero.org/knowledge-base/user-guides">{% t menu.userguides %}</a></li>
+            <li><a href="//getmonero.org/knowledge-base/developer-guides">{% t menu.developerguides %}</a></li>
+            <li class="divider"></li>
+            <li><a href="//getmonero.org/design-goals">{% t menu.goals %}</a></li>
+            <li><a href="//getmonero.org/research-lab">{% t menu.lab %}</a></li>
+            <li><a href="//getmonero.org/knowledge-base/openalias">{% t menu.openalias %}</a></li>
+            <li><a href="//getmonero.org/knowledge-base/projects">{% t menu.projects %}</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="drop-4"/><label for="drop-4" class="softyellow last">{% t menu.community %} <span class="caret"></span></label>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://forum.getmonero.org">{% t menu.forum %}</a></li>
+            <li><a href="https://www.reddit.com/r/monero/">{% t menu.reddit %}</a></li>
+            <li><a href="https://bitcointalk.org/index.php?topic=583449.0">{% t menu.bitcointalk %}</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">{% t menu.irc %}</li>
+            <li><a href="irc://chat.freenode.net/#monero">{% t menu.irc-general %}</a></li>
+            <li><a href="irc://chat.freenode.net/#monero-dev">{% t menu.irc-development %}</a></li>
+            <li><a href="irc://chat.freenode.net/#monero-otc">{% t menu.irc-trading %}</a></li>
+            <li><a href="irc://chat.freenode.net/#monero-markets">{% t menu.irc-markets %}</a></li>
+            <li><a href="irc://chat.freenode.net/#monero-pools">{% t menu.irc-mining %}</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
