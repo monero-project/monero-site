@@ -9,7 +9,7 @@ summary: "a cryptographically signed container that details the transfer of Mone
 
 {{ page.summary | capitalize }}.
 
-A transaction's parameters are one or more recipient addresses with the corresponding amounts of funds to send to them, and a `mixin_count` parameter that specifies the amount of outputs the transaction will have mixed in. Higher amounts of `mixin_count` offer more anonymity, but that comes with a cost, since the transaction gets larger and therefore the transaction fees get higher as well.
+A transaction's parameters are one or more recipient addresses with the corresponding amounts of funds to send to them, and a `mixin_count` parameter that specifies the amount of outputs the transaction will have mixed in. Higher amounts of `mixin_count` offer more anonymity, but that comes with a cost, since the transaction gets larger and therefore the transaction fees get higher as well. The fact that this mixing can be done offline is a huge benefit for privacy. 
 
 A transaction is uniquely identified by a Transaction ID, which is usually represented as a 32-byte string (64 hexadecimal characters).
 
