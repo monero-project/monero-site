@@ -10,7 +10,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ---
 
 ### Crypto-Kingdom
-An online roll playing game with ingame trading system based on cryptocurrency culture. Has monero as native currency. 
+An online role playing game with ingame trading system based on cryptocurrency culture. Has monero as native currency. 
 Visit http://cryptokingdom.me for more info
 
 ### Monerodice
@@ -19,7 +19,8 @@ Visit http://www.monerodice.net for more info
 
 ### XMR.TO
 A website designed to pay any BTC address using monero. 
-Visit http://www.xmr.to for more infi
+Visit http://www.xmr.to for more info
+
 
 
 
