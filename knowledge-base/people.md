@@ -39,4 +39,4 @@ The Core Team forms an integral part of the Monero Research Lab, but the researc
 
 ### Other Contributors
 
-There have been massive contributions to Monero from its inception from so many people, including: zone117x, LucaseJones, wolf`, Professor David Andersen, Atrides, wallet42, Neozaru, Gingeropoulos, cAPSLOCK, and many, many others.
+There have been massive contributions to Monero from its inception from so many people, including: zone117x, LucasJones, wolf`, Professor David Andersen, wallet42, Neozaru, Gingeropolous, cAPSLOCK, and many, many others.

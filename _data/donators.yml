@@ -1,4 +1,9 @@
 - level: 8
+  name: Lloydimiller4
+  amount: 7800
+  history: [8th Dan on 2015-09-28, 7th Dan on 2015-02-25, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
+
+- level: 8
   name: ArticMine
   amount: 7206.80
   quote: Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.
@@ -11,11 +16,6 @@
   quote: We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government---it is their right, it is their duty, to throw off such Government.
   quote-author: Declaration of Independence
   history: [8th Dan on 2015-02-23, 7th Dan on 2014-09-04, 6th Dan on 2014-08-23, 5th Dan on 2014-08-01, 4th Dan on 2014-07-16]
-
-- level: 7
-  name: Lloydimiller4
-  amount: 6901
-  history: [7th Dan on 2015-02-25, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
 
 - level: 7
   name: ajiekceu4

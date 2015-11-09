@@ -21,6 +21,11 @@ If you are using Monero Core for the first time you may want to download a @bloc
 
 Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
 
+20151008:
+Beta release of Windows 64 binaries are available for testing. It is recommended to delete your old %AppData%/bitmonero folder. You can convert your old blockchain file, but it is easier (and faster) to sync from the network. 
+<a href="//downloads.getmonero.org/monero.win.x64.v0-9-beta.zip">
+SHA: 2BD27D3EF3102A2A6B2E1081B1AD8915DB266B3F
+
 <div class="row">
 
 {% for data_downloads in site.data.downloads %}

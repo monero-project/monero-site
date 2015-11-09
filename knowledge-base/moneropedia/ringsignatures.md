@@ -6,5 +6,8 @@ summary: "a group of cryptographic signatures with at least one real participant
 ---
 
 ### The Basics
+Ring signatures make sure individual transaction outputs on the blockchain can’t be traced. A ring signature is a group of cryptographic signatures with at least one real participant, but there is no way to tell which in the group is the real one as they all appear valid, while the key image prevents double spends. When sending a transaction, you select some random transaction outputs on the blockchain and mix those with your own “real coins”. Mixing of coins is enforced across the network, making all coins “equal”. Because every transaction output has plausible deniability on their state (spent or unspent), there are no fungibility issues with monero
+
+To read how Monero gives you a privacy by default (unlinkability), see @stealth-addresses.
 
 {{ page.summary | capitalize }}.

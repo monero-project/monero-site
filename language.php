@@ -32,13 +32,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
     <meta property="og:url" content="https://getmonero.org/language.php">
     <meta property="og:type" content="website">
 
-    <link href="//static.getmonero.org/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//static.getmonero.org/css/main.css?1" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-      <script src="//static.getmonero.org/js/html5shiv.js"></script>
-      <script src="//static.getmonero.org/js/respond.min.js"></script>
-    <![endif]-->
+    <link href="//static.getmonero.org/style.css?1" rel="stylesheet">
   </head>
 
   <body class="body-language">
@@ -76,8 +70,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
 
 
     <!-- JS -->
-    <script src="//static.getmonero.org/js/jquery.min.js"></script>
-    <script src="//static.getmonero.org/js/bootstrap.min.js"></script>
+    <script src="//static.getmonero.org/scripts.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
