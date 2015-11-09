@@ -6,13 +6,11 @@
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Bter
       url: https://bter.com/
-    - name: HitBTC
-      url: https://hitbtc.com/
-    - name: MoneroClub (OTC)
-      url: https://www.moneroclub.com/offers/
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
-    - name: ShapeShift (instant)
+    - name: Cryptsy
+      url: https://www.cryptsy.com/markets/view/XMR_BTC
+    - name: ShapeShift (Instant)
       url: https://shapeshift.io/
 - category: Block Explorers
   merchants:
@@ -20,6 +18,18 @@
       url: http://chainradar.com/xmr/blocks
     - name: MoneroBlocks
       url: http://moneroblocks.eu
+- category: Libraries and Helpers
+  merchants:
+    - name: python-monero (Python)
+      url: https://github.com/tippero/python-monero
+    - name: moneronjs (NodeJS)
+      url: https://github.com/netmonk/moneronjs
+    - name: MoneroApi.Net (.NET)
+      url: https://github.com/Jojatekok/MoneroApi.Net
+    - name: xmr-integration (PHP)
+      url: https://github.com/TheKoziTwo/xmr-integration
+    - name: PHP-Monero (PHP)
+      url: https://github.com/MalMen/PHP-Monero
 - category: Tools
   merchants:
     - name: ForkGuard Network Monitoring
@@ -30,12 +40,12 @@
       url: https://moneropric.es
     - name: MoneroPrice.com Price Converter
       url: http://moneroprice.com/
+    - name: Offline Monero address generator
+      url: http://moneroaddress.org/
 - category: Services
   merchants:
     - name: CryptoEscrow Escrow Service
       url: http://www.cryptoescrow.eu
-    - name: CryptoName OpenAlias Registry
-      url: https://cryptoname.co/
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
     - name: Pradeep Atluri, Psychiatrist, New York
@@ -50,7 +60,9 @@
       url: https://cryptonic.net
 - category: Entertainment
   merchants:
-    - name: Crypto Kingdom (MMO)
-      url: http://cryptokingdom.wikia.com/wiki/Crypto_Kingdom_Wiki
-    - name: SafeDice (gambling)
-      url: https://safedice.com/
+    - name: Crypto Kingdom
+      url: http://cryptokingdom.me
+    - name: MoneroDice
+      url: https://monerodice.net
+    - name: SafeDice
+      url: https://safedice.com
