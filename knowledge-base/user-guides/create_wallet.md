@@ -21,7 +21,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/3.png)
 ![image4](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/4.png)
 
-- You only need to do this step once : open a terminal (ctrl+alt+t) and install the required dependencies by typing : "*sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev*"
+- You only need to do this step once : open a terminal (ctrl+alt+t) and install the required dependencies by typing : "*sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev*". When asked, press the Y key and then Enter to continue
 
 ![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/5.png)
 ![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/6.png)
@@ -49,8 +49,17 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ![image14](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/14.png)
 ![image15](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/15.png)
 ![image16](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/16.png)
+
+*This is your private key. Write it down and keep it in a safe place!*
+
 ![image17](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/17.png)
+
+*This is your view key. You need it to create a view only wallet (cf. associated user guide)*
+
 ![image18](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/18.png)
+
+*This is the address of your wallet*
+
 ![image19](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/19.png)
 ![image20](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/20.png)
 ![image21](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/21.png)
