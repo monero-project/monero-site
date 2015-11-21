@@ -1,14 +1,14 @@
+- level: 10
+  name: ArticMine
+  amount: 20024.6
+  quote: Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.
+  quote-author: Article 19, The Universal Declaration of Human Rights
+  history: [10th Dan on 2015-11-11, 9th Dan on 2015-11-11, 8th Dan on 2015-01-14, 7th Dan on 2014-12-02, 6th Dan on 2014-08-24, 5th Dan on 2014-08-01, 4th Dan on 2014-07-21]
+
 - level: 8
   name: Lloydimiller4
   amount: 7800
   history: [8th Dan on 2015-09-28, 7th Dan on 2015-02-25, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
-
-- level: 8
-  name: ArticMine
-  amount: 7206.80
-  quote: Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.
-  quote-author: Article 19, The Universal Declaration of Human Rights
-  history: [8th Dan on 2015-01-14, 7th Dan on 2014-12-02, 6th Dan on 2014-08-24, 5th Dan on 2014-08-01, 4th Dan on 2014-07-21]
 
 - level: 8
   name: rpietila
@@ -19,8 +19,8 @@
 
 - level: 7
   name: ajiekceu4
-  amount: 5666
-  history: [7th Dan on 2015-08-31, 6th Dan on 2015-05-11]
+  amount: 7666
+  history: [8th Dan on 2015-11-4, 7th Dan on 2015-08-31, 6th Dan on 2015-05-11]
   
 - level: 7
   name: antw081
@@ -143,7 +143,7 @@
 
 - level: 4
   name: RaskaRuby
-  amount: 250
+  amount: 450
   history: [4th Dan 2015-01-01, 3rd Dan on 2014-10-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-27]
 
 - level: 4
@@ -156,6 +156,21 @@
   amount: 311
   history: [4th Dan on 2015-04-08, 3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
 
+- level: 4
+  name: nioc
+  amount: 215
+  history: [4th Dan on 2015-11-11, 3rd Dan on 2015-04-18, 2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
+
+- level: 4
+  name: canth
+  amount: 300
+  history: [4rth Dan on 2105-11-12, 3rd Dan on 2015-05-17]  
+    
+- level: 4
+  name: iCEBREAKER
+  amount: 264.8
+  history: [3rd Dan on 2015-11-21]
+  
 - level: 3
   name: Quanttek
   amount: 100
@@ -192,19 +207,9 @@
   history: [3rd Dan on 2015-02-05]
   
 - level: 3
-  name: nioc
-  amount: 100
-  history: [3rd Dan on 2015-04-18, 2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
-  
-- level: 3
   name: palexander
   amount: 150
   history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
-  
-- level: 3
-  name: canth
-  amount: 100
-  history: [3rd Dan on 2015-05-17]  
   
 - level: 2
   name: superresistant
