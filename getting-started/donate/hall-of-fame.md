@@ -22,7 +22,7 @@ Originally started by Risto Pietila, and maintained for many months by cAPSLOCK,
 # 8th Dan Monero Potentates with Five Crates of Diamonds<br><small>Donators of 5 000 XMR and above</small><br><i class="fa fa-diamond"></i> <i class="fa fa-diamond"></i> <i class="fa fa-diamond"></i> <i class="fa fa-diamond"></i> <i class="fa fa-diamond"></i>
 
 {% for donator in site.data.donators %}
-{% if donator.level == 8 %}
+{% if donator.level >= 8 %}
 
 ### {{ donator.name }}, with a donation of {{ donator.amount }} XMR [<a data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="{% for achievement in donator.history %}{{ achievement }}<br>{% endfor %}">history</a>]
 

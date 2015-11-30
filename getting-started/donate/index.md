@@ -43,7 +43,7 @@ All donators to Monero development are also eligible to be listed in the [Commun
 ---
 
 {% for donator in site.data.donators %}
-{% if donator.level == 8 %}
+{% if donator.level >= 8 %}
 
 ### {{ donator.name }}, with a donation of {{ donator.amount }} XMR [<a data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="{% for achievement in donator.history %}{{ achievement }}<br>{% endfor %}">history</a>]
 
