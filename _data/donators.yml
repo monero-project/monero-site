@@ -168,7 +168,7 @@
     
 - level: 4
   name: iCEBREAKER
-  amount: 264.8
+  amount: 256
   history: [3rd Dan on 2015-11-21]
   
 - level: 3
@@ -386,3 +386,8 @@
   amount: 2
   history: [3rd Kyu on 2014-08-11]
 
+- level: -4
+  name: Evan Duffield (care of iCEBREAKER)
+  amount: 1
+  history: [4th Kyu on 2014-11-20]
+  
