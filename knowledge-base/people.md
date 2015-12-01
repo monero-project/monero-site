@@ -27,15 +27,16 @@ Five members of the Core Team prefer to stay pseudonymous for the moment, but tw
 
 There have been many individuals that have contributed to Monero code; a complete list of which can be found on our [Github Contributors page](https://github.com/monero-project/bitmonero/graphs/contributors).
 
-Some that have made outstanding contributions include: [Thomas Winget](https://github.com/tewinget), [mikezackles](https://github.com/mikezackles), [oranjuice](https://github.com/oranjuice), [warptangent](https://github.com/warptangent), [rfree](https://github.com/rfree2monero), [moneromooo](http://github.com/moneromooo-monero/bitmonero/branches), [jakoblind](https://github.com/jakoblind), and [tomerkon](https://github.com/tomerkon).
+Some that have made outstanding contributions include: [moneromooo](http://github.com/moneromooo-monero/bitmonero/branches), [Thomas Winget](https://github.com/tewinget), [mikezackles](https://github.com/mikezackles), [oranjuice](https://github.com/oranjuice), [warptangent](https://github.com/warptangent), [rfree](https://github.com/rfree2monero), [jakoblind](https://github.com/jakoblind), and [tomerkon](https://github.com/tomerkon).
 
 ### The Monero Research Lab
 
 The Core Team forms an integral part of the Monero Research Lab, but the researchers, scientists, and academics that are primarily focused on Monero research are listed below. They have chosen to remain pseudonymous for the moment. They are:
 
 - **Surae Noether:** Lead researcher for the Monero Research Lab, Surae holds a PhD in Mathematical Sciences and brings a rich understanding of cryptography and homological algebra to the mix.
-- **Sarang Noether:** Having completed his Masters in Mathematical Sciences, Sarang is currently completing his doctoral degree in Physics, while devoting time on the side to the advancement of Monero research.
 - **Shen Noether:** A graduate student focused on algebraic geometry, it is Shen's command and knowledge of cryptography that lends itself so well to his involvement in the Monero Research Lab.
+- **Simba Noether:** A Masters candidate pursuing research in cryptography and cryptocurrencies. Simba's previous work includes theoretical research in lattice cryptography and decentralized authentication.
+- **Sarang Noether:** Having completed his Masters in Mathematical Sciences, Sarang is currently completing his doctoral degree in Physics, while devoting time on the side to the advancement of Monero research.
 
 ### Other Contributors
 
