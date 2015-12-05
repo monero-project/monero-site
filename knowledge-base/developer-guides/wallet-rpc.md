@@ -154,3 +154,6 @@ simplewallet
 			payment: string
 				hex encoded
 
+	stop_wallet
+		stops the wallet, storing the current state
+
