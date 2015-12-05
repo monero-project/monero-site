@@ -9,7 +9,8 @@ icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-## Operating Systems:  Windows, Linux, Mac 
+## Operating Systems:  Windows, Linux, Mac
+
 ### Account Software:  Simplewallet
 
 - Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @account
