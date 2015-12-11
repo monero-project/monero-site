@@ -82,7 +82,7 @@ simplewallet
 	store
 		save the blockchain
 
-	get_payemnts
+	get_payments
 		get a list of incoming payments using a given payment id
 		inputs:
 			payment_id: string
@@ -97,7 +97,7 @@ simplewallet
 	get_bulk_payments
 		get a list of incoming payments using a given payment id, or a list of payments ids, from a given height
 		inputs:
-			payment_id: list of:
+			payment_ids: array of:
 				string
 			min_block_height: unsigned int
 				the block height at which to start looking for payments
