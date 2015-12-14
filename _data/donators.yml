@@ -1,9 +1,14 @@
-- level: 8
+- level: 10
   name: ArticMine
-  amount: 7206.80
+  amount: 20024.6
   quote: Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.
   quote-author: Article 19, The Universal Declaration of Human Rights
-  history: [8th Dan on 2015-01-14, 7th Dan on 2014-12-02, 6th Dan on 2014-08-24, 5th Dan on 2014-08-01, 4th Dan on 2014-07-21]
+  history: [10th Dan on 2015-11-11, 9th Dan on 2015-11-11, 8th Dan on 2015-01-14, 7th Dan on 2014-12-02, 6th Dan on 2014-08-24, 5th Dan on 2014-08-01, 4th Dan on 2014-07-21]
+
+- level: 8
+  name: Lloydimiller4
+  amount: 7800
+  history: [8th Dan on 2015-09-28, 7th Dan on 2015-02-25, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
 
 - level: 8
   name: rpietila
@@ -12,6 +17,16 @@
   quote-author: Declaration of Independence
   history: [8th Dan on 2015-02-23, 7th Dan on 2014-09-04, 6th Dan on 2014-08-23, 5th Dan on 2014-08-01, 4th Dan on 2014-07-16]
 
+- level: 8
+  name: ajiekceu4
+  amount: 8666
+  history: [8th Dan on 2015-11-4, 7th Dan on 2015-08-31, 6th Dan on 2015-05-11]
+  
+- level: 7
+  name: antw081
+  amount: 3100
+  history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
+  
 - level: 7
   name: smooth
   amount: 2500
@@ -20,26 +35,11 @@
   history: [7th Dan on 2014-08-13, 6th Dan on 2014-04-29]
 
 - level: 7
-  name: Lloydimiller4
-  amount: 2897
-  history: [7th Dan on 2015-02-25 and 2015-03-12, 6th Dan on 2015-02-16, 5th Dan on 2014-09-20, 4th Dan on 2014-08-26]
-
-- level: 7
   name: pa
   amount: 2500
   history: [7th Dan on 2015-02-25, 6th Dan on 2014-12-30, 5th Dan on 2014-09-18]
 
-- level: 7
-  name: antw081
-  amount: 3100
-  history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
-  
-  - level: 7
-  name: ajiekceu4
-  amount: 5666
-  history: [6th Dan on 2015-05-11, 7th Dan on 2015-08-31]
-  
-  - level: 6
+- level: 6
   name: HardwarePal
   amount: 1000
   quote: The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
@@ -56,6 +56,11 @@
   amount: 1280.6
   history: [6th Dan on 2015-01-27, 4th Dan on 2014-11-08, 3rd Dan on 2014-08-26]
 
+- level: 5
+  name: bassica
+  amount: 849.9
+  history: [5th Dan on 2015-07-17, 4th Dan on 2015-05-11, 3rd Dan on 2014-11-25, 2nd Dan on 2014-09-10]
+  
 - level: 5
   name: eizh
   amount: 500
@@ -106,11 +111,6 @@
   amount: 500
   history: [5th Dan on 2015-06-03, 4th Dan on 2014-05-06]
 
-- level: 5
-  name: bassica
-  amount: 849.9
-  history: [5th Dan on 2015-07-17, 4th Dan on 2015-05-11, 3rd Dan on 2014-11-25, 2nd Dan on 2014-09-10]
-  
 - level: 4
   name: bobabouey2
   amount: 250
@@ -143,19 +143,34 @@
 
 - level: 4
   name: RaskaRuby
-  amount: 250
+  amount: 450
   history: [4th Dan 2015-01-01, 3rd Dan on 2014-10-27, 2nd Dan on 2014-09-18, 1st Dan on 2014-07-27]
 
 - level: 4
-   name: djjacket
-   amount:200
-   history: [4th Dan on 2015-03-27]
+  name: djjacket
+  amount: 200
+  history: [4th Dan on 2015-03-27]
 
 - level: 4
   name: iourzzz
   amount: 311
   history: [4th Dan on 2015-04-08, 3rd Dan on 2015-03-15, 2nd Dan on 2014-09-14, 1st Dan on 2014-08-01]
 
+- level: 4
+  name: nioc
+  amount: 215
+  history: [4th Dan on 2015-11-11, 3rd Dan on 2015-04-18, 2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
+
+- level: 4
+  name: canth
+  amount: 300
+  history: [4rth Dan on 2105-11-12, 3rd Dan on 2015-05-17]  
+    
+- level: 4
+  name: iCEBREAKER
+  amount: 256
+  history: [3rd Dan on 2015-11-21]
+  
 - level: 3
   name: Quanttek
   amount: 100
@@ -192,19 +207,9 @@
   history: [3rd Dan on 2015-02-05]
   
 - level: 3
-  name: nioc
-  amount: 100
-  history: [3rd Dan on 2015-04-18, 2nd Dan on 2015-01-27, 1st Dan on 2014-09-17]
-  
-- level: 3
   name: palexander
   amount: 150
   history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
-  
-- level: 3
-  name: canth
-  amount: 100
-  history: [3rd Dan on 2015-05-17]  
   
 - level: 2
   name: superresistant
@@ -245,7 +250,12 @@
   name: ibuyltc
   amount: 50
   history: [2nd Dan on 2015-05-11, 1st Dan on 2014-08-20]
-      
+
+- level: 2
+  name: equipoise
+  amount: 53
+  history: [2nd Dan on 2015-12-11, 1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
+  
 - level: 1
   name: David Latapie
   amount: 20
@@ -295,11 +305,6 @@
   name: Roy Badami
   amount: 20
   history: [1st Dan on 2014-07-18]
-
-- level: 1
-  name: equipoise
-  amount: 20
-  history: [1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
 
 - level: 1
   name: whap
@@ -380,4 +385,10 @@
   name: yAmAdA
   amount: 2
   history: [3rd Kyu on 2014-08-11]
+
+- level: -4
+  name: Evan Duffield (care of iCEBREAKER)
+  amount: 1
+  history: [4th Kyu on 2014-11-20]
+  
 
