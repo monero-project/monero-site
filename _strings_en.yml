@@ -69,6 +69,7 @@ index:
   mymonero: "MyMonero"
   get_started_2: "."
   get_started_3: "Alternatively, if you would like to run a [full Monero node](/getting-started/running) you can download the client and a kick-starter @blockchain (to bring your local client up to speed) using the download link on the right."
+  get_started_4: "You can also use the [Android wallet](https://play.google.com/store/apps/details?id=com.ionicframework.monerowallet116498). After signing up with the app, your account is also available at (MoneroWallet.com)[https://monerowallet.com]."
   where_can_i: Where can I
   download_1: download
   download_2: " ?"
