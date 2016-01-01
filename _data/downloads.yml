@@ -1,29 +1,33 @@
 - platform: Windows, 64-bit
   icon: windows.svg
   url: win64
-  hash: facbeb2e408cf8b9a46534363eba161dbb047654
-  version: 0.8.8.6
+  hash: 5acf4eb02d5c24ddb3f917e22f6c24c962e988aa
+  version: 0.9.0.0
+  tag: Hydrogen Helix
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: windows.svg
   url: win32
   hash: none
-  version: 0.8.8.6
+  version: 0.9.0.0
+  tag: Hydrogen Helix
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   icon: apple.svg
   url: mac64
-  hash: 7069de92083fb7831b063cc152e8f35508ff61bf
-  version: 0.8.8.6
+  hash: b3c311a0ceb9547d91cf01c2a511d792a39c2095
+  version: 0.9.0.0
+  tag: Hydrogen Helix
   blockchain: mac
 
 - platform: Linux, 64-bit
   icon: linux.svg
   url: linux64
-  hash: 29bc436c51cc2c9d571a0bfbf12fddab2e75a10b
-  version: 0.8.8.6
+  hash: 183ac12608c64d87eb62db665ff04fc2ca7fcdb0
+  version: 0.9.0.0
+  tag: Hydrogen Helix
   blockchain: linux
 
 - platform: FreeBSD, 64-bit
@@ -31,13 +35,15 @@
   url: freebsd64
   hash: 9fd0005b697e146a26a0bf9e3cd0c89b978f7fbd
   version: 0.8.8.6
+  tag: Release
   blockchain: freebsd
 
 - platform: Raspberry Pi / ARM
   icon: arm.svg
   url: arm
   hash: none
-  version: 0.8.8.6
+  version: 0.9.0.0
+  tag: Hydrogen Helix
   blockchain: arm
 
 - platform: Source Code

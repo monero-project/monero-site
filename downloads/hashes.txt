@@ -6,20 +6,20 @@ This GPG-signed message exists to confirm the SHA sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-monero.freebsd.x64.v0-8-8-6.tar.bz: 9fd0005b697e146a26a0bf9e3cd0c89b978f7fbd
-monero.linux.x64.v0-8-8-6b.tar.bz2: 29bc436c51cc2c9d571a0bfbf12fddab2e75a10b
-monero.mac.x64.v0-8-8-6.tar.bz2: 7069de92083fb7831b063cc152e8f35508ff61bf
-monero.win.x64.v0-8-8-6.zip: facbeb2e408cf8b9a46534363eba161dbb047654
+monero.win.x64.v0-9-0-0.zip: 5acf4eb02d5c24ddb3f917e22f6c24c962e988aa
+monero.mac.x64.v0-9-0-0.tar.bz2: b3c311a0ceb9547d91cf01c2a511d792a39c2095
+monero.linux.x64.v0-9-0-0b.tar.bz2: 183ac12608c64d87eb62db665ff04fc2ca7fcdb0
+monero.freebsd.x64.v0-8-6-6.tar.bz: 9fd0005b697e146a26a0bf9e3cd0c89b978f7fbd
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJU7PO1AAoJEFVDLfMczU/NBrwIAJYXTtXjylJ5l18ymb9fYYG1
-m1LuZq8i7ZdhAO1L1pkHQAILocumQf9ayuJiOV1R4gfPr9u1d3FKeTEdTSBYq0cF
-s7bxXxAZ6aCe6nUlesN9zOZWNyyXy40bu1lhXWSoQ2RRnjXtDPx9BrTnLOarRiyw
-P1WhrTwWTzKaF8wj5e996P2RW3yeKPmngk5qCzgZsXhl12uxfJsMYbbPTdFS2jmN
-7kjvdI3S2lI5vlF50gnEbY6WMPqi+78C1NeJhzDterIXEioXfJL7cDxN6ogdf56U
-AsMbjxU3BDd+6ArzH2zmQB9Ndqz0LbspIe6BLdRaFFU9Vx//7qLMF7wazX95khE=
-=OTPC
+iQEcBAEBAgAGBQJWhr6gAAoJEFVDLfMczU/N9KcH/RwrJleYYcLUZxqmSH6xiPDN
+IQYIum6Uz95xOvoconOMXjV8QDSkcW1stTXEDI58Q+kuu68xp2aURIw/wXrH3TkC
+cOa83AwVWJdJka4V0TLrWDoAerBdg5cFgLYreH/HzwLrRFHPOagfvQjzbLkTSW1w
+ak8Kof3GtJlzEcH/jcwBpa+MAFq73JAegTVDsO6Wod7qm+uHZXiVAk+8xmzpxaWn
+Kh3fOD0NnXXvCdMHsE4wBDFOWjnK26I/qsPUWzv2xM7t87B+pb8GS5mjr3hYleuI
+oWWvHEV0lq9eL9caCERZrI7obtEpeANgButj3KFJHGyZqWxl/ZD4YHOcQrKR3Tg=
+=Eltb
 -----END PGP SIGNATURE-----

@@ -13,18 +13,9 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 Monero Core consists of several applications, including bitmonerod (the daemon used if running a @full-node, as it maintains the connection to the Monero network) and simplewallet (a Monero @account manager application), as well as several other helper applications.
 
-If you are using Monero Core for the first time you may want to download a @blockchain bootstrap to get you started. A link to download the @blockchain bootstrap is included in the listings below.
-
-- Place Windows 64-bit blockchain in %AppData%/bitmonero
-- Place OS X 64-bit blockchain in ~/.bitmonero
-- Place Linux 64-bit blockchain in ~/.bitmonero
+If you are using Monero Core for the first time you can simply download an appropriate release, and run bitmonerod to get synced up to the network.
 
 Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
-
-20151008:
-Beta release of Windows 64 binaries are available for testing. It is recommended to delete your old %AppData%/bitmonero folder. You can convert your old blockchain file, but it is easier (and faster) to sync from the network. 
-<a href="//downloads.getmonero.org/monero.win.x64.v0-9-beta.zip">
-SHA: 2BD27D3EF3102A2A6B2E1081B1AD8915DB266B3F
 
 <div class="row">
 
@@ -40,9 +31,7 @@ SHA: 2BD27D3EF3102A2A6B2E1081B1AD8915DB266B3F
  </a>
 </h4>
 
-<strong>Current Version:</strong> {{ data_downloads.version }}<br>
-<br>
-<strong>Optional:</strong> Download a Blockchain Bootstrap from this page<br><br>
+<strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
 <hr>
 
 </div>
@@ -55,8 +44,8 @@ SHA: 2BD27D3EF3102A2A6B2E1081B1AD8915DB266B3F
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
 </h4>
 
-<br><br>
-<strong>Coming Soon</strong><br><br>
+<br>
+<strong>Coming Soon</strong><br>
 <hr>
 
 </div>
@@ -71,10 +60,8 @@ SHA: 2BD27D3EF3102A2A6B2E1081B1AD8915DB266B3F
  </a>
 </h4>
 
-<strong>Current Version:</strong> {{ data_downloads.version }}<br>
+<strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
 <strong>SHA Hash:</strong> {{ data_downloads.hash }}<br>
-<br>
-<strong>Optional:</strong> <a href="//downloads.getmonero.org/blockchain/{{ data_downloads.blockchain }}/blockchain.bin">Download the Blockchain Bootstrap</a>
 <hr>
 
 </div>
@@ -86,6 +73,6 @@ SHA: 2BD27D3EF3102A2A6B2E1081B1AD8915DB266B3F
 
 ### Other Downloads
 
-- For @blockchain bootstraps please use the link for your current platform from the list above.
+- If you'd prefer to use a blockchain bootstrap, instead of syncing up from scratch, you can [use this link for the most current bootstrap](https:////downloads.getmonero.org/blockchain.raw).
 - For Monero Research Lab publications please visit the [Monero Research Lab section](/research-lab) of this site.
 - High resolution and vector copies of the Monero logo [can be downloaded at this link](https://downloads.getmonero.org/resources/branding.zip).
