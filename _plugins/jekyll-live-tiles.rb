@@ -4,6 +4,7 @@
 #        attributes in the _config.yml file
 #
 # Uses the following attributes in _config.yml:
+#   ie_category:   - (optional) poll only a specific category of posts
 #   ie_frequency:  - (optional) the frequency of site polling. Options are {30,60,360,720,1440}. Default is 1440 (1 day) 
 #   ie_tile_color: - (optional) the color of the windows 8 pinned background tile
 #   ie_tile_small: - location of small tile image (For more information of tile sizes visit http://msdn.microsoft.com/en-us/library/dn455106(v=vs.85).aspx)
@@ -21,44 +22,116 @@
 
 
 module Jekyll
-  class Xml < Page; end
-
-  class TileFile < StaticFile
-    def write(dest)
-      true
-    end
-  end
 
   class TileTemplater < Generator
     priority :low
     safe true
 
-    require 'builder'
-
-
     # Entry method
     def generate(site)
-      generate_config(site)
-      generate_templates(site)
+      # create tile config file
+      site.static_files << TileConfig.new(site, site.source, "/ietemplates/", "ieconfig.xml")
+
+      # create tile poll files
+      # create at most 4
+      category = site.config["ie_category"]
+      posts = !category ? site.posts : site.categories.has_key?(category) ? site.categories[category] : site.posts
+      
+      count = [posts.docs.length, 4].min
+
+      posts.docs.reverse[0..count].each_with_index do |post, index|
+        site.static_files << TilePoll.new(site, site.source, "/ietemplates/", "poll#{index+1}.xml", post)
+      end
+    end
+
+  end
+
+
+
+  # polling xml
+  class TilePoll < StaticFile
+    def initialize(site, base, dir, name, post)
+      super(site, base, dir, name, nil)
+
+      @post = post
+    end
+
+    def write(dest)
+      # post.render(site.layouts, site.site_payload)
+
+      # Create directory if doesn't exist
+      poll_dir = File.join(dest, @dir)
+      FileUtils.mkdir_p(poll_dir)
+
+
+      # Build xml tile templates
+      xml = Builder::XmlMarkup.new( :indent => 2)
+      xml.instruct! :xml, :encoding => "utf-8"
+
+      xml.tile do |tile|
+        tile.visual("lang"=>"en-US", "version"=>"2") do |v|
+          v.binding("template"=>"TileSquare150x150Text04", "branding"=>"logo", "fallback"=>"TileSquareImage") do |b|
+            b.tag!("text", @post['title'], "id"=>"1")
+          end
+          v.binding("template"=>"TileWide310x150Text03", "branding"=>"logo", "fallback"=>"TileWideImage") do |b|
+            b.tag!("text", @post['title'], "id"=>"1")
+          end
+          v.binding("template"=>"TileSquare310x310TextList02", "branding"=>"logo", "fallback"=>"TileWideText09") do |b|
+            b.tag!("text", @post['title'], "id"=>"1")
+            b.tag!("text", shorten(strip(@post.content)),"id"=>"2")
+            b.tag!("text", "#{@post.date.month}-#{@post.date.day}-#{@post.date.year}", "id"=>"3")
+          end
+        end
+      end
+
+      poll_path = File.join(poll_dir, @name)
+      File.open(poll_path, "w") { |f| f.write(xml.target!) }
     end
 
 
-    # Generates ieconfig.xml
-    def generate_config(site)
+    private
 
-      # Configs
-      if site.config["ie_tile_color"]
-        tile_color = "\##{site.config["ie_tile_color"]}"
-      else
-        tile_color = "#000000"
+    # Shortens string and adds trailing ellipsis
+    def shorten(str, count = 30)
+      if str.length >= count
+        return str[0, count] << "..."
       end
-      frequency = site.config["ie_frequency"] || 1440
-      tile_small = site.config["ie_tile_small"]
-      tile_medium = site.config["ie_tile_medium"]
-      tile_wide = site.config["ie_tile_wide"]
-      tile_large = site.config["ie_tile_large"]
+      return str
+    end
 
-      # Build xml config
+    # Strips html tags (not the best)
+    def strip(string)
+      string.gsub(/<[^>]*>/, "")
+    end
+
+  end
+
+
+  # sets ie 11 configs
+  class TileConfig < StaticFile; 
+    def initialize(site, base, dir, name)
+      super(site, base, dir, name)
+    end
+
+    def write(dest)
+      require 'builder'
+
+      # configs
+      tile_color = @site.config["ie_tile_color"] || "#000000"
+      tile_small = @site.config["ie_tile_small"]
+      tile_medium = @site.config["ie_tile_medium"]
+      tile_wide = @site.config["ie_tile_wide"]
+      tile_large = @site.config["ie_tile_large"]
+
+      frequency = @site.config["ie_frequency"] || 1440
+      raise "frequency must be either 30, 60, 360, 720, 1440" unless [30,60,360,720,1440].include?(frequency)
+
+      # create dir for tile config
+      config_dir = File.join(dest, @dir)
+      FileUtils.mkdir_p(config_dir)
+
+
+      # build xml config
       xml = Builder::XmlMarkup.new( :indent=>2)
       xml.instruct! :xml, :encoding=>"utf-8"
 
@@ -83,94 +156,9 @@ module Jekyll
         end
       end
 
-        # Create file and add to site
-        name = "ieconfig.xml"
-        dest = File.join(site.dest, "/ietemplates/")
-
-        validate_dir(dest)
-
-        File.open("#{dest}#{name}", "w") { |f| f.write(xml.target!) }
-        
-        site.static_files << Jekyll::TileFile.new(site, site.dest, "/ietemplates/", name)
-
+      # write file
+      config_path = File.join(config_dir, @name)
+      File.open(config_path, "w") { |f| f.write(xml.target!) }
     end
-
-
-    # Generates tile templates
-    def generate_templates(site)
-      count = [site.posts.count, 4].min
-
-      site.posts.reverse[0..count].each_with_index do |post, index|
-        post.render(site.layouts, site.site_payload)
-
-        # Build xml tile templates
-        xml = Builder::XmlMarkup.new( :indent => 2)
-        xml.instruct! :xml, :encoding => "utf-8"
-
-        xml.tile do |tile|
-          tile.visual("lang"=>"en-US", "version"=>"2") do |v|
-            v.binding("template"=>"TileSquare150x150Text04", "branding"=>"logo", "fallback"=>"TileSquareImage") do |b|
-              b.tag!("text", post.title, "id"=>"1")
-            end
-            v.binding("template"=>"TileWide310x150Text03", "branding"=>"logo", "fallback"=>"TileWideImage") do |b|
-              b.tag!("text", post.title, "id"=>"1")
-            end
-            v.binding("template"=>"TileSquare310x310TextList02", "branding"=>"logo", "fallback"=>"TileWideText09") do |b|
-              b.tag!("text", post.title, "id"=>"1")
-              b.tag!("text", shorten(post.data["summary"]),"id"=>"2")
-              b.tag!("text", "#{post.date.month}-#{post.date.day}-#{post.date.year}", "id"=>"3")
-            end
-          end
-        end
-
-        # Create file and add to site
-        name = "poll#{index+1}.xml"
-        dest = File.join(site.dest, "/ietemplates/")
-
-        validate_dir(dest)
-
-        File.open("#{dest}#{name}", "w") { |f| f.write(xml.target!) }
-        site.static_files << Jekyll::TileFile.new(site, site.dest, "/ietemplates/", name)
-
-      end
-    end
-
-
-
-    private
-
-    # Validates path to make sure there is a leading and trailing slash
-    def validate_path(path)
-      path[0] == "/" ? path : "/#{path}"
-      path[path.length-1] == "/" ? path : "#{path}/"
-      return path
-    end
-
-
-    # Validates directory exists, else creates directory
-    def validate_dir(dir)
-      FileUtils.mkdir_p(dir)
-    end
-
-
-    # Shortens string and adds trailing ellipsis
-    def shorten(string, count = 30)
-      if string.length >= count
-        shortened = string[0, count]
-        splitted = shortened.split(/\s/)
-        words = splitted.length
-        splitted[0, words-1].join(" ") + '...'
-      else
-        string
-      end
-    end
-
-
-    # Strips html tags (not the best)
-    def strip(string)
-      string.gsub!(/<("[^"]*"|'[^']*'|[^'">])*>/, "")
-    end
-
-
-  end
+   end
 end

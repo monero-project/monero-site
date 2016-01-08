@@ -13,7 +13,7 @@ kramdown:
     smart_quotes: ["apos", "apos", "quot", "quot"]
 
 exclude: ["README.md"]
-
+gems: [jekyll-paginate]
 paginate: 10
 paginate_path: blog/page:num/
 
