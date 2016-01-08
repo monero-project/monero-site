@@ -27,7 +27,7 @@ Pages and formats should be based off existing pages to maintain a consistent lo
 
 ## Deployment
 
-Deploying this website requires Jekyll (2.5+) and the following ruby gems: builder, rubysl-rexml
+Deploying this website requires Jekyll (3.0+) and the following ruby gems: builder, rubysl-rexml, jekyll-paginate
 
 Multiple language support will be added soon.
 
