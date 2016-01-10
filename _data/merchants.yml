@@ -20,6 +20,8 @@
       url: http://moneroblocks.info
 - category: Libraries and Helpers
   merchants:
+    - name: monero-nodejs (Node.js)
+      url: https://github.com/PsychicCat/monero-nodejs
     - name: python-monero (Python)
       url: https://github.com/tippero/python-monero
     - name: moneronjs (NodeJS)
@@ -41,7 +43,7 @@
     - name: MoneroPrice.com Price Converter
       url: http://moneroprice.com/
     - name: Offline Monero address generator
-      url: http://moneroaddress.org/
+      url: https://moneroaddress.org/
 - category: Services
   merchants:
     - name: CryptoEscrow Escrow Service
