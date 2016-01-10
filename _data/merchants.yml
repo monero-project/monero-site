@@ -17,7 +17,7 @@
     - name: ChainRadar
       url: http://chainradar.com/xmr/blocks
     - name: MoneroBlocks
-      url: http://moneroblocks.eu
+      url: http://moneroblocks.info
 - category: Libraries and Helpers
   merchants:
     - name: python-monero (Python)
