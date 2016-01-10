@@ -48,6 +48,6 @@ Launch the daemon as a background process:
     
 Monitor the output of `bitmonerod` if running as daemon:
 
-    tail -f .bitmonero/bitmonero.log
+    tail -f ~/.bitmonero/bitmonero.log
 
     
