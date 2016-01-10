@@ -36,6 +36,11 @@ simplewallet
 		return the wallet's address
 		outputs:
 			address: string
+			
+    getheight
+        returns the current block height
+        outputs:
+            height: string
 
 	transfer
 		send monero to a number of recipients
