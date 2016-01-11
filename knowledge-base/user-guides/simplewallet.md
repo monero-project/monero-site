@@ -10,28 +10,29 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ---
 # simplewallet
 
-simplewallet is the wallet software that ships with the monero tree. It is a console program,
-and manages an account (while a bitcoin wallet manages both an account and the blockchain,
-Monero separates these: bitmonerod handles the blockchain, and simplewallet handles the account).
+`simplewallet` is the wallet software that ships with the Monero tree. It is a console program,
+and manages an account. While a bitcoin wallet manages both an account and the blockchain,
+Monero separates these: `bitmonerod` handles the blockchain, and `simplewallet` handles the account.
 
-This guide assumes you already have created an account, according to the other guides, and
-will show how to perform various operations from the simplewallet UI.
+This guide will show how to perform various operations from the `simplewallet` UI. The guide assumes you are using the most recent version of the Monero Core software *(currently 0.9.0.0 Hydrogen Helix)*, and have already created an account according to the other guides.
 
 
 ## Checking your balance
 
-Since the blockchain handling and the wallet are separate programs, many uses of simplewallet
+Since the blockchain handling and the wallet are separate programs, many uses of `simplewallet`
 need to work with the daemon. This includes looking for incoming transactions to your address.
-Once you are running both simplewallet and bitmonerod, refresh the wallet's idea of the blockchain:
+Once you are running both `simplewallet` and `bitmonerod`, enter `balance`.
 
-  refresh
+Example:
 
 This will pull blocks from the daemon the wallet did not yet see, and update your balance
 to match. This process will normally be done in the background every minute or so. To see the
 balance without refreshing:
 
-  balance
-
+    balance
+    Balance: 64.526198850000, unlocked balance: 44.526198850000, including unlocked dust: 0.006198850000
+    
+In this example, `Balance` is your total balance. The `unlocked balance` is the amount currently available to spend. Newly received transactions require 10 confirmations on the blockchain before being unlocked. `unlocked dust` refers to very small amounts of unspent outputs that may have accumulated in your account.
 
 ## Sending monero
 
@@ -40,28 +41,34 @@ possibly a payment ID, if the receiving party requires one. In that latter case,
 may instead give you an integrated address, which is both of these packed into a single address
 (integrated address do not start with 4, but A).
 
-This is the command to use when you are sending to a standard address:
+### Sending to a standard address:
 
-  transfer 3 ADDRESS AMOUNT PAYMENTID
+    transfer ADDRESS AMOUNT PAYMENTID
 
 Replace ADDRESS with the address you want to send to, AMOUNT with how many monero you want to send.
 and PAYMENTID with the payment ID you were given. If the receiving party doesn't need one, just
+=======
+Replace `ADDRESS` with the address you want to send to, `AMOUNT` with how many monero you want to send,
+and `PAYMENTID` with the payment ID you were given. Payment ID's are optional. If the receiving party doesn't need one, just
 omit it.
 
-If you have an integrated address to send to:
+### Sending to an integrated address:
 
-  transfer 3 ADDRESS AMOUNT
+    transfer ADDRESS AMOUNT
 
 The payment ID is implicit in the integrated address in that case.
 
-The 3 above is the mixin. It's a good idea to leave it to 3, but you can increase the number if
-you want to mix with more outputs. The higher the mixin, the larger the transaction, and the
-higher fees needed.
+### Specify the mixin for a transaction:
+
+    transfer MIXIN ADDRESS AMOUNT
+
+Replace `MIXIN` with the mixin amount you wish to use. **If not specified, the default mixin is 4.** It's a good idea to use the default, but you can increase the number if you want to mix with more outputs. The higher the mixin, the larger the transaction, and higher fees are needed.
 
 
 ## Receiving monero
 
 If you have your own Monero address, you just need to give your standard address to someone.
+
 You can find out your address with:
 
   address
@@ -71,12 +78,12 @@ want to know, for instance to credit a particular customer, you'll have to tell 
 a payment ID, which is an arbitrary optional tag which gets attached to a transaction. To make life
 easier, you can generate an address that already includes a random payment ID:
 
-  integrated_address
+    integrated_address
 
 This will generate a random payment ID, and give you the address that includes your own account
 and that payment ID. If you want to select a particular payment ID, you can do that too:
 
-  integrated_address 12346780abcdef00
+    integrated_address 12346780abcdef00
 
 Payments made to an integrated address generated from your account will go to your account,
 with that payment id attached, so you can tell payments apart.
@@ -89,11 +96,14 @@ to prove to a third party you did send the funds - or even to the merchant, if i
 mistake. Monero is private, so you can't just point to your transaction in the blockchain,
 as you can't tell who sent it, and who received it. However, by supplying the per-transaction
 private key to a party, that party can tell whether that transaction sent monero to that
-particular address.
+particular address. Note that storing these per-transaction keys is disabled by default, and
+you will have to enable it before sending, if you think you may need it:
+
+    set store-tx-keys 1
 
 You can retrieve the tx key from an earlier transaction:
 
-  get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
+    get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
 
 Pass in the transaction ID you want the key for. Remember that a payment might have been
 split in more than one transaction, so you may need several keys. You can then send that key,
@@ -104,9 +114,9 @@ own address, will be able to see how much change was returned to you as well.
 If you are the third party (that is, someone wants to prove to you that they sent monero
 to an address), then you can check this way:
 
-  check_tx_key TXID TXKEY ADDRESS
+    check_tx_key TXID TXKEY ADDRESS
 
-Replace TXID, TXKEY and ADDRESS with the transaction ID, per-transaction key, and destination
+Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination
 address which were supplied to you, respectively. simplewallet will check that transaction
 and let you know how much monero this transaction paid to the given address.
 
@@ -122,7 +132,7 @@ If you want to get a last chance confirmation when sending a payment:
 
 If you received a payment using a particular payment ID, you can look it up:
 
-  payments PAYMENTID
+    payments PAYMENTID
 
 You can give more than one payment ID too.
 
