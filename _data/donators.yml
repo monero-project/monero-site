@@ -17,6 +17,16 @@
   quote-author: Declaration of Independence
   history: [8th Dan on 2015-02-23, 7th Dan on 2014-09-04, 6th Dan on 2014-08-23, 5th Dan on 2014-08-01, 4th Dan on 2014-07-16]
 
+- level: 8
+  name: ajiekceu4
+  amount: 8666
+  history: [8th Dan on 2015-11-4, 7th Dan on 2015-08-31, 6th Dan on 2015-05-11]
+  
+- level: 7
+  name: antw081
+  amount: 3100
+  history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
+  
 - level: 7
   name: ajiekceu4
   amount: 7666
@@ -250,7 +260,12 @@
   name: ibuyltc
   amount: 50
   history: [2nd Dan on 2015-05-11, 1st Dan on 2014-08-20]
-      
+
+- level: 2
+  name: equipoise
+  amount: 53
+  history: [2nd Dan on 2015-12-11, 1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
+  
 - level: 1
   name: David Latapie
   amount: 20
@@ -300,11 +315,6 @@
   name: Roy Badami
   amount: 20
   history: [1st Dan on 2014-07-18]
-
-- level: 1
-  name: equipoise
-  amount: 20
-  history: [1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
 
 - level: 1
   name: whap
@@ -390,4 +400,3 @@
   name: Evan Duffield (care of iCEBREAKER)
   amount: 1
   history: [4th Kyu on 2014-11-20]
-  
