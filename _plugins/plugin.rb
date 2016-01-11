@@ -39,7 +39,7 @@ module Jekyll
       
       # If we have an @, pass the string through the markdown converter, so that we hit the Moneropedia plugin
       if translation.include? '@'
-        converter = site.getConverterImpl(::Jekyll::Converters::Markdown)
+        converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
         translation = converter.convert(translation)[3..-6]
       end
 
