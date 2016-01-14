@@ -1,0 +1,124 @@
+global:
+  date: '%Y/%m/%d'
+  monero: Monero
+  getting_started: Getting Started
+  copyright: Copyright
+  monero_project: The Monero Project
+  sitename: getmonero.org, The Monero Project
+  wiki: Moneropedia
+  tags: Articles By Tag
+  wikimeta: on Moneropedia, the open encyclopedia of Monero knowledge
+  tagsmeta: All Monero blog articles that are tagged
+  titlemeta: on the home of Monero, a digital currency that is secure, private, and untraceable
+  terms: Terms
+  privacy: Privacy
+  copyright: Copyright
+menu:
+  forum: Forum
+  blog: Blog
+  knowledge_base: Knowledge Base
+  community: Community
+  bitcointalk: Bitcointalk Thread
+  reddit: Reddit
+  allblog: All Blog Posts
+  devdiaries: Dev Diaries
+  missives: Monero Missives
+  uncategorised: Uncategorized
+  choose: How to Choose a Monero Client
+  running: How to Run a Monero Node
+  donations: Donating and Sponsorships
+  downloads: All Monero Downloads
+  merchants: Merchants and Services Directory
+  accepting: Accepting Monero Payments
+  about: About Monero
+  people: The People Behind Monero
+  userguides: User Guides
+  developerguides: Developer Guides
+  goals: Design & Development Goals
+  openalias: The OpenAlias Project
+  lab: Monero Research Lab
+  alternative: Alternative Clients
+  projects: External Projects
+  irc: IRC on Freenode
+  irc-general: "#monero (General)"
+  irc-development: "#monero-dev (Development)"
+  irc-trading: "#monero-otc (OTC Trading)"
+  irc-markets: "#monero-markets (Markets)"
+  irc-mining: "#monero-pools (Mining)"
+index:
+  page_title: "Monero - secure, private, untraceable"
+  what_is_1: What is
+  what_is_2: " ?"
+  what_is_orange_block: "Monero is a secure, private, untraceable currency. It is open-source and freely available to all."
+  what_is_text_block_1: "With Monero, you are your own bank. Only you control and are responsible for your funds, and your accounts and transactions are kept private from prying eyes."
+  what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below. If you'd like to try Monero for yourself the"
+  what_is_text_block_3: "Getting Started"
+  what_is_text_block_4: "section is an excellent launching point."
+  news: News
+  the_latest: The Latest
+  private: Private
+  secure: Secure
+  untraceable: Untraceable
+  private_text: "Monero uses a cryptographically sound system that allows you to send and receive funds without your @transactions being publically visible on the @blockchain (the distributed ledger of transactions). This ensures that your purchases, receipts, and other transfers remain private by default."
+  untraceable_text: "By taking advantage of @ring-signatures, a special property of certain types of cryptography, Monero enables untraceable transactions. This means it's ambiguous which funds have been spent, and thus extremely unlikely that a transaction could be linked to particular user."
+  secure_text: "Using the power of a distributed peer-to-peer @consensus network, every transaction is cryptographically secured. Individual @accounts have a 25 word @mnemonic-seed displayed when created, which can be written down to back up the @account. Account files are encrypted with a passphrase to ensure they are worthless if stolen."
+  how_do_i_1: "How do I "
+  how_do_i_2: " ?"
+  get_started: get started
+  get_started_1: "The fastest way to start using Monero is with a web @account manager such as "
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "Alternatively, if you would like to run a [full Monero node](/getting-started/running) you can download the client and a kick-starter @blockchain (to bring your local client up to speed) using the download link on the right."
+  where_can_i: Where can I
+  download_1: download
+  download_2: " ?"
+  different_os: "Need it for a different operating system?"
+  all_downloads: View all available downloads here
+  c_download: Download
+  monero_for: Monero for
+  latest_blockchain: Latest @Blockchain
+blog:
+  title_1: All
+  title_2: Blog
+  title_3: Posts
+  tagged: Tagged under
+  author: Posted by
+  forum: Click here to join the discussion for this entry on the Monero Forum
+tags:
+  all: Articles by Tag
+  notags: There are no posts for this tag.
+gs:
+  how_to: How to
+  choose:
+    mobile_web_lightweight: "Mobile, Web, and Lightweight Clients"
+    mobile_web_lightweight_text_1: "The clients below are ideal if you are using Monero for the first time. They are also useful if you are on a device that cannot run a "
+    mobile_web_lightweight_text_2: "full Monero node."
+    my_monero_text_1: "MyMonero.com"
+    my_monero_text_2: " is easy-to-use and works in your browser without you needing to install anything. It can be used with some measure of safety, as MyMonero are unable to spend your funds on your behalf. It is owned and operated by Riccardo Spagni, one of the Monero Core Team members."
+    full_client: "Full Monero Client"
+    full_client_text: "If you are able to spare the bandwidth and disk space required to run a full node, doing so helps keep the network stable and robust, and also affords you the maximum privacy Monero has to offer."
+    monero_node_text_1: "You can read our guide on "
+    monero_node_text_2: "running a Monero node"
+    monero_node_text_3: ", and the Monero core software can be downloaded from the "
+    monero_node_text_4: "downloads page"
+    third_party_clients: "Third-Party Clients"
+    third_party_text: "There are also several third-party clients that interact with the official Monero core daemon, and are able to provide their own additional functionality."
+    monerox: "MoneroX is a GUI for Monero written in .NET and available for Windows, Mac, and Linux. It is written and maintained by Jojatekok."
+    lightwallet: "lightWallet is a simple and slim client written in Python, and should run on most operating systems. It is written and maintained by jwinterm."
+  running:
+    run_a: "RUN A"
+    monero_node: "MONERO NODE"
+    why_run: "Why Run a Full Node?"
+    why_run_text_1: "Because of the decentralized and peer-to-peer nature of the Monero network it becomes more robust and resilient as it becomes larger. We encourage all users to run a full node, if they are able to."
+    why_run_text_2: "Running a Monero node does not require a huge amount of processing power, but it does require a few gigabytes worth of disk space to store the blockchain, and there will be some impact on your bandwidth especially from connected nodes that are catching up on the blockchain."
+    why_run_text_3: "The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend [InterServer.net](https://interserver.net/dock/vps-231552.html) using the 'MONERO' coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or our [affiliate link](https://interserver.net/dock/vps-231552.html) will also assist in the ongoing funding of Monero development."
+    why_run_text_4: "Monero will run on most hardware, including ARM and 32-bit systems. In order to prepare to run the node download the Monero binaries from the [from the downloads page](/downloads)."
+    running_node: "Running the Node"
+    running_node_text_1: "Once you have the files downloaded and unpacked you don't need to do anything beyond running the Monero daemon."
+    running_node_text_2: "- On Windows: locate bitmonerod.exe in Windows Explorer and double-click on it. If it opens and then closes, or crashes after starting, then you may want to start it from within Command Prompt in order to see what errors arise."
+    running_node_text_3: "- On OS X: locate bitmonerod in Finder and double-click on it. As with Windows, if it opens and then closes, or crashes after starting, then you can start it from within Terminal."
+    running_node_text_4: "- On Linux: dependent on whether you are running it on a desktop or server operating system, you will want to start bitmonerod either in a screen session or in a console window of its own."
+    correctly: "Ensuring Your Node is Running Correctly"
+    correctly_text_1: "When starting Monero for the first time you will see something similar to this screen:"
+    correctly_text_2: "The yellow text indicates it is receiving blocks as it synchronises up with the rest of the Monero network. The green 'synchronized ok' text will appear once it has correctly synched up. Once you see this there's nothing further you need to do, you are now running a Monero node!"
+    correctly_text_3: "To exit the node at any time you can type 'exit' into the daemon window and press enter, and it will shut itself down."

@@ -1,0 +1,124 @@
+global:
+  date: '%Y/%m/%d'
+  monero: 门罗币
+  getting_started: 启用
+  copyright: Copyright
+  monero_project: The Monero Project
+  sitename: getmonero.org, The Monero Project
+  wiki: Moneropedia
+  tags: Articles By Tag
+  wikimeta: on Moneropedia, the open encyclopedia of Monero knowledge
+  tagsmeta: All Monero blog articles that are tagged
+  titlemeta: on the home of Monero, a digital currency that is secure, private, and untraceable
+  terms: 条款
+  privacy: 隐私
+  copyright: 版权
+menu:
+  forum: 论坛
+  blog: 博客
+  knowledge_base: 知识库
+  community: 社区
+  bitcointalk: Bitcointalk Thread
+  reddit: Reddit
+  allblog: All Blog Posts
+  devdiaries: Dev Diaries
+  missives: Monero Missives
+  uncategorised: Uncategorized
+  choose: How to Choose a Monero Client
+  running: How to Run a Monero Node
+  donations: Donating and Sponsorships
+  downloads: All Monero Downloads
+  merchants: Merchants and Services Directory
+  accepting: Accepting Monero Payments
+  about: About Monero
+  people: The People Behind Monero
+  userguides: User Guides
+  developerguides: Developer Guides
+  goals: Design & Development Goals
+  openalias: The OpenAlias Project
+  lab: Monero Research Lab
+  alternative: Alternative Clients
+  projects: External Projects
+  irc: IRC on Freenode
+  irc-general: "#monero (General)"
+  irc-development: "#monero-dev (Development)"
+  irc-trading: "#monero-otc (OTC Trading)"
+  irc-markets: "#monero-markets (Markets)"
+  irc-mining: "#monero-pools (Mining)"
+index:
+  page_title: "Monero - secure, private, untraceable"
+  what_is_1: "什么是门罗币"
+  what_is_2: " ?"
+  what_is_orange_block: "门罗币是一种安全性,隐私性极高的货币,同时具有开放性,适用人群广泛等特点。"
+  what_is_text_block_1: "使用门罗币时,您可以控制您的银行,操控并负责管理您的资金,其他人无法追踪您的任何货币 转移行为。"
+  what_is_text_block_2: "想了解更多吗?请参考下文中门罗币的主要特点,如您有兴趣尝试门罗币,只需点击网页上方的"
+  what_is_text_block_3: "启用标签,"
+  what_is_text_block_4: "便可享受门罗币的卓越性。"
+  news: 消息
+  the_latest: 最新
+  private: 隐私性
+  secure: 安全性
+  untraceable: 无迹可寻
+  private_text: "门罗币采用加密安全系统,因此,无论是转入还是转出资金,数据区块(分布交易总账)都 很难查出您的交易信息。这保障您的购买,接收,转账行为长期并自动处于隐秘状态。"
+  untraceable_text: "群签名是一种加密系统的特性。利用此特性,门罗币便可以保障交易不禁无迹可寻,而且用户也可选择模糊交易与计算机或用户间的联系。"
+  secure_text: "每笔交易都因受到点对点共识网络的保障而具有高度安全性。个人账户在创建时会显示 25个记忆种子,并可被记录下来以作备份。账户文件可加密,因此,盗取这些文件也是无用功。"
+  how_do_i_1: "我又如何"
+  how_do_i_2: " ?"
+  get_started: 开始呢
+  get_started_1: "最快的启用方式便是网络账户经理,如, "
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "或者,如果您希望运行完整门罗币网络节点,请点击右侧下载链接,下载用户端及反冲启动 数据区块(加速下载本地用户端)"
+  where_can_i: 在哪里
+  download_1: 下载
+  download_2: " ?"
+  different_os: "您使用的是其他操作系统吗?"
+  all_downloads: 查看所有可用版本
+  c_download: 下载
+  monero_for: 用户
+  latest_blockchain: 最新数据区块
+blog:
+  title_1: All
+  title_2: Blog
+  title_3: Posts
+  tagged: Tagged under
+  author: Posted by
+  forum: Click here to join the discussion for this entry on the Monero Forum
+tags:
+  all: Articles by Tag
+  notags: There are no posts for this tag.
+gs:
+  how_to: 如何
+  choose:
+    mobile_web_lightweight: "手机版,网页版,和轻巧版客户端"
+    mobile_web_lightweight_text_1: "如您是门罗币(Monero)的初次使用者,以下便介绍的客户端便是理想之选,同时适用于设备"
+    mobile_web_lightweight_text_2: "性能有限,不能运行完整网络节点的用户"
+    my_monero_text_1: "MyMonero.com"
+    my_monero_text_2: "  使用方法简单,可直接在浏览器总打开,无需下载安装。 此网页无法代替您支配您的门罗币资金,因此安全度高。网站由门罗币核心团队成员之一 Riccardo Spagni 负责操作运营。"
+    full_client: "完整门罗币客户端"
+    full_client_text: "如您可以扩展带宽及硬盘空间,并运行完整网络节点,您便可享受强大而稳定的网络,以及门罗"
+    monero_node_text_1: "请参考"
+    monero_node_text_2: "门罗币网络节点运行"
+    monero_node_text_3: "指南,也可以从"
+    monero_node_text_4: "下载页面"
+    third_party_clients: "第三方客户端"
+    third_party_text: "其他与门罗币官方后台合作的第三方客户端会提供其他附加功能。"
+    monerox: "MoneroX 是.NET 版本的门罗币用户界面,此界面适用于 Windows,Mac 及 Linux.MoneroX 由"
+    lightwallet: "LightWallet 是一款轻便简单 Python 版的用户端。此用户端适用于多数操作系统。由 jwinterm"
+  running:
+    run_a: "运行"
+    monero_node: "门罗币网络节点(Monero Node)"
+    why_run: "为什么要运转完整网络节点?"
+    why_run_text_1: "门罗币网络系统的分散性和对应性决定了它规模越大,功能越强大,灵活性也越高。我们鼓励所 有有条件的用户使用完整网络节点。"
+    why_run_text_2: "运行门罗币网络节点并不需要强大的处理器,但您确实需要用几个 GB 的硬板空间来安置数据区 块链,并且会对您的带宽有一定影响,特别是与数据区块链连接的网络节点。"
+    why_run_text_3: "运行门罗币网络节点,而不影响您家庭带宽最简单的方法,是购买 VPS(虚拟专用服务器)。我们强烈推荐 InterServer.net。使用“门罗币”优惠券代码可享受原价 $6/月基础上的折扣。使 用此优惠券代码或友情链接也意味着您为门罗币的发展给予一臂之力。"
+    why_run_text_4: "门罗币可在多数硬件条件下运行,包括 ARM 及 32 位系统。运行网络节点之前,请在下载页面 下载门罗币二进制文件。"
+    running_node: "运行网络节点"
+    running_node_text_1: "旦文件下载及解压完成,您只需开始运行门罗币后台,无需任何其他操作。"
+    running_node_text_2: "- Windows 用户:在 Windows 资源管理器中找到 bitmonerod.exe 并双击。如程序开启 后自动关闭或崩溃,您可以在命令提示符内启动,看是否依然出现同样问题。"
+    running_node_text_3: "- OS X 用户:在 Finder 中找到 bitmonerod 并双击。与 Windows 相同,如程序开启后 自动关闭或崩溃,您可以尝试在 Terminal 中启动。"
+    running_node_text_4: "- Linux用户:如您在桌面或服务器操作系统上运行它,与此对应您可在Screen作业中或 其本身的控制台窗口启动 bitmonerod"
+    correctly: "确保您的节点运行正确"
+    correctly_text_1: "首次启动门罗网络节点时,你屏幕会显示如下图:"
+    correctly_text_2: "黄色文字表示在同步更新门罗网络的剩余部分同时,它也在接收的数据区块。一旦同步成功完成, 屏幕会显示绿色的'synchronized OK'字样。至此,您的门罗网络节点顺利开始运行!"
+    correctly_text_3: "若要退出节点,您可在任何时候在后台键入'exit',然后按回车键,程序便会自行关闭。"
