@@ -9,13 +9,13 @@ icon: "icon_all_downloads"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-### Monero Core
+### {% t downloads.core %}
 
-Monero Core consists of several applications, including bitmonerod (the daemon used if running a @full-node, as it maintains the connection to the Monero network) and simplewallet (a Monero @account manager application), as well as several other helper applications.
+{% t downloads.core_text_1 %}
 
-If you are using Monero Core for the first time you can simply download an appropriate release, and run bitmonerod to get synced up to the network.
+{% t downloads.core_text_2 %}
 
-Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
+{% t downloads.core_text_3 %}
 
 <div class="row">
 
@@ -31,7 +31,7 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
  </a>
 </h4>
 
-<strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
+<strong>{% t downloads.current_version %}</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
 <hr>
 
 </div>
@@ -45,7 +45,7 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
 </h4>
 
 <br>
-<strong>Coming Soon</strong><br>
+<strong>{% t downloads.coming_soon %}</strong><br>
 <hr>
 
 </div>
@@ -60,7 +60,7 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
  </a>
 </h4>
 
-<strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
+<strong>{% t downloads.current_version %}:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
 <strong>SHA Hash:</strong> {{ data_downloads.hash }}<br>
 <hr>
 
@@ -71,8 +71,8 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
 {% endfor %}
 </div>
 
-### Other Downloads
+### {% t downloads.other_downloads %}
 
-- If you'd prefer to use a blockchain bootstrap, instead of syncing up from scratch, you can [use this link for the most current bootstrap](https:////downloads.getmonero.org/blockchain.raw).
-- For Monero Research Lab publications please visit the [Monero Research Lab section](/research-lab) of this site.
-- High resolution and vector copies of the Monero logo [can be downloaded at this link](https://downloads.getmonero.org/resources/branding.zip).
+{% t downloads.other_text_1 %}
+{% t downloads.other_text_2 %}
+{% t downloads.other_text_3 %}
