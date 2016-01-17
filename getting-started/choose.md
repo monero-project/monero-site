@@ -4,6 +4,10 @@ title: "How to Choose a Monero Client"
 title-pre-kick: "How to "
 title-kick: "Choose "
 title-post-kick: "a Monero Client"
+cn-title: "如何选择门罗币(Monero)客户端"
+cn-title-pre-kick: "如何"
+cn-title-kick: "选择"
+cn-title-post-kick: "门罗币(Monero)客户端"
 kick-class: "green-kicks"
 icon: "icon_client"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
@@ -11,7 +15,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### {% t gs.choose.mobile_web_lightweight %}
 
-{% t gs.choose.mobile_web_lightweight_text_1 %} [{% t gs.choose.mobile_web_lightweight_text_2 %}](/getting-started/running).
+{% t gs.choose.mobile_web_lightweight_text %}
 
 ---
 
@@ -31,7 +35,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 {:.text-center .client-list #monerocore}
 [![](//static.getmonero.org/images/logo.svg)](/downloads)  
-{% t gs.choose.monero_node_text_1 %} [{% t gs.choose.monero_node_text_1 %}](/getting-started/running), {% t gs.choose.monero_node_text_3 %} [{% t gs.choose.monero_node_text_4 %}](/downloads).
+{% t gs.choose.monero_node_text_1 %} [{% t gs.choose.monero_node_text_1 %}]({{ site.baseurl }}/getting-started/running), {% t gs.choose.monero_node_text_3 %} [{% t gs.choose.monero_node_text_4 %}]({{ site.baseurl }}/downloads).
 
 ---
 
