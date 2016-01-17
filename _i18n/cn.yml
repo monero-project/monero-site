@@ -68,7 +68,7 @@ index:
   get_started_1: "最快的启用方式便是网络账户经理,如, "
   mymonero: "MyMonero"
   get_started_2: "."
-  get_started_3: "或者,如果您希望运行完整门罗币网络节点,请点击右侧下载链接,下载用户端及反冲启动 数据区块(加速下载本地用户端)"
+  get_started_3: "或者,如果您希望运行 [完整门罗币网络节点](/cn/getting-started/running),请点击右侧下载链接,下载用户端及反冲启动 数据区块(加速下载本地用户端)"
   where_can_i: 在哪里
   download_1: 下载
   download_2: " ?"

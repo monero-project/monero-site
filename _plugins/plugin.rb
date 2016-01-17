@@ -249,6 +249,11 @@ module Jekyll
         puts "Missing i18n key: #{lang}:#{key}"
         puts "Using translation '%s' from default language: %s" %[translation, context.registers[:site].config['default_lang']]
       end
+      site = context.registers[:site]
+      if translation.include? '@'
+        converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
+        translation = converter.convert(translation)[3..-6]
+      end
       translation
     end
   end

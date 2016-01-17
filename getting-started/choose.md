@@ -35,7 +35,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 {:.text-center .client-list #monerocore}
 [![](//static.getmonero.org/images/logo.svg)](/downloads)  
-{% t gs.choose.monero_node_text_1 %} [{% t gs.choose.monero_node_text_1 %}]({{ site.baseurl }}/getting-started/running), {% t gs.choose.monero_node_text_3 %} [{% t gs.choose.monero_node_text_4 %}]({{ site.baseurl }}/downloads).
+{% t gs.choose.monero_node_text_1 %} [{% t gs.choose.monero_node_text_2 %}]({{ site.baseurl }}/getting-started/running) {% t gs.choose.monero_node_text_3 %} [{% t gs.choose.monero_node_text_4 %}]({{ site.baseurl }}/downloads).
 
 ---
 
