@@ -11,15 +11,15 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### Crypto-Kingdom
 An online role playing game with ingame trading system based on cryptocurrency culture. Has monero as native currency. 
-Visit [http://cryptokingdom.me](http://cryptokingdom.me) for more info.
+Visit http://cryptokingdom.me for more info
 
 ### Monerodice
 A Monero gambling site.  
-Visit [http://www.monerodice.net](http://www.monerodice.net) for more info.
+Visit http://www.monerodice.net for more info
 
 ### XMR.TO
 A website designed to pay any BTC address using monero. 
-Visit [http://www.xmr.to](http://www.xmr.to) for more info.
+Visit http://www.xmr.to for more info
 
 
 
