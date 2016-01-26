@@ -22,4 +22,4 @@ These tools can be used to gain information about the Monero network or your tra
 
 ###[Monero offline wallet generator](http://moneroaddress.org/)
 
-###[Monero network mixin statistics](http://moneroblocks.eu/stats)
+###[Monero network mixin statistics](http://moneroblocks.info/stats)
