@@ -47,14 +47,9 @@ if (isset($_COOKIE["MONERO_LANG"]))
 
     <div class="container main-content">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-md-offset-2">
           <ul class="nav nav-pills nav-stacked flag-select">
             <li><a href="/home"><h3><img class="flag" src="//static.getmonero.org/images/flags/english_combined.png"> English</h3></a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="nav nav-pills nav-stacked flag-select">
-            <li><a href="/cn/"><h3><img class="flag" src="//static.getmonero.org/images/flags/china.png"> 简体中文</h3></a></li>
           </ul>
         </div>
         <div class="col-md-4">
