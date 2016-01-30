@@ -4,18 +4,14 @@ title: "How to Choose a Monero Client"
 title-pre-kick: "How to "
 title-kick: "Choose "
 title-post-kick: "a Monero Client"
-cn-title: "如何选择门罗币(Monero)客户端"
-cn-title-pre-kick: "如何"
-cn-title-kick: "选择"
-cn-title-post-kick: "门罗币(Monero)客户端"
 kick-class: "green-kicks"
 icon: "icon_client"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-### {% t gs.choose.mobile_web_lightweight %}
+### Mobile, Web, and Lightweight Clients
 
-{% t gs.choose.mobile_web_lightweight_text %}
+The clients below are ideal if you are using Monero for the first time. They are also useful if you are on a device that cannot run a [full Monero node](/getting-started/running).
 
 ---
 
@@ -23,31 +19,33 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 [![](//static.getmonero.org/images/clients/mymonero.svg)](https://mymonero.com)
 
 {:.text-center}
-[{% t gs.choose.my_monero_text_1 %}](https://mymonero.com) {% t gs.choose.my_monero_text_2 %}
+[MyMonero.com](https://mymonero.com) is easy-to-use and works in your browser without you needing to install anything.  
+It can be used with some measure of safety, as MyMonero are unable to spend your funds on your behalf.  
+It is owned and operated by Riccardo Spagni, one of the Monero Core Team members.
 
 ---
 
-### {% t gs.choose.full_client %}
+### Full Monero Client
 
-{% t gs.choose.full_client_text %}
+If you are able to spare the bandwidth and disk space required to run a full node, doing so helps keep the network stable and robust, and also affords you the maximum privacy Monero has to offer.
 
 ---
 
 {:.text-center .client-list #monerocore}
 [![](//static.getmonero.org/images/logo.svg)](/downloads)  
-{% t gs.choose.monero_node_text_1 %} [{% t gs.choose.monero_node_text_2 %}]({{ site.baseurl }}/getting-started/running) {% t gs.choose.monero_node_text_3 %} [{% t gs.choose.monero_node_text_4 %}]({{ site.baseurl }}/downloads).
+You can read our guide on [running a Monero node](/getting-started/running), and the Monero core software can be downloaded from the [downloads page](/downloads).
 
 ---
 
-### {% t gs.choose.third_party_clients %}
+### Third-Party Clients
 
-{% t gs.choose.third_party_text %}
+There are also several third-party clients that interact with the official Monero core daemon, and are able to provide their own additional functionality.
 
 ---
 
 {:.text-center .client-list #monerox}
 ![](//static.getmonero.org/images/clients/monerox.svg)  
-{% t gs.choose.monerox %}
+MoneroX is a GUI for Monero written in .NET and available for Windows, Mac, and Linux. It is written and maintained by Jojatekok.
 
 {:.text-center .client-list}
 **Current Version:** 1.0.0  
@@ -66,7 +64,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 {:.text-center .client-list #lightwallet}
 [![](//static.getmonero.org/images/clients/lightwallet.svg)](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)  
-{% t gs.choose.lightwallet %}
+lightWallet is a simple and slim client written in Python, and should run on most operating systems. It is written and maintained by jwinterm.
 
 {:.text-center .client-list}
 **Current Version:** 0.0.2-alpha  
