@@ -1,0 +1,230 @@
+global:
+  date: '%Y/%m/%d'
+  monero: Monero
+  getting_started: Getting Started
+  copyright: Copyright
+  monero_project: The Monero Project
+  sitename: getmonero.org, The Monero Project
+  wiki: Moneropedia
+  tags: Articles By Tag
+  wikimeta: on Moneropedia, the open encyclopedia of Monero knowledge
+  tagsmeta: All Monero blog articles that are tagged
+  titlemeta: on the home of Monero, a digital currency that is secure, private, and untraceable
+  terms: Terms
+  privacy: Privacy
+  copyright: Copyright
+menu:
+  forum: Forum
+  blog: Blog
+  knowledge_base: Knowledge Base
+  community: Community
+  bitcointalk: Bitcointalk Thread
+  reddit: Reddit
+  allblog: All Blog Posts
+  devdiaries: Dev Diaries
+  missives: Monero Missives
+  uncategorised: Uncategorized
+  choose: How to Choose a Monero Client
+  running: How to Run a Monero Node
+  donations: Donating and Sponsorships
+  downloads: All Monero Downloads
+  merchants: Merchants and Services Directory
+  accepting: Accepting Monero Payments
+  about: About Monero
+  people: The People Behind Monero
+  userguides: User Guides
+  developerguides: Developer Guides
+  goals: Design & Development Goals
+  openalias: The OpenAlias Project
+  lab: Monero Research Lab
+  alternative: Alternative Clients
+  projects: External Projects
+  irc: IRC on Freenode
+  irc-general: "#monero (General)"
+  irc-development: "#monero-dev (Development)"
+  irc-trading: "#monero-otc (OTC Trading)"
+  irc-markets: "#monero-markets (Markets)"
+  irc-mining: "#monero-pools (Mining)"
+index:
+  page_title: "Monero - secure, private, untraceable"
+  what_is_1: What is
+  what_is_2: " ?"
+  what_is_orange_block: "Monero is a secure, private, untraceable currency. It is open-source and freely available to all."
+  what_is_text_block_1: "With Monero, you are your own bank. Only you control and are responsible for your funds, and your accounts and transactions are kept private from prying eyes."
+  what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below. If you'd like to try Monero for yourself the"
+  what_is_text_block_3: "Getting Started"
+  what_is_text_block_4: "section is an excellent launching point."
+  news: News
+  the_latest: The Latest
+  private: Private
+  secure: Secure
+  untraceable: Untraceable
+  private_text: "Monero uses a cryptographically sound system that allows you to send and receive funds without your @transactions being publically visible on the @blockchain (the distributed ledger of transactions). This ensures that your purchases, receipts, and other transfers remain private by default."
+  untraceable_text: "By taking advantage of @ring-signatures, a special property of certain types of cryptography, Monero enables untraceable transactions. This means it's ambiguous which funds have been spent, and thus extremely unlikely that a transaction could be linked to particular user."
+  secure_text: "Using the power of a distributed peer-to-peer @consensus network, every transaction is cryptographically secured. Individual @accounts have a 25 word @mnemonic-seed displayed when created, which can be written down to back up the @account. Account files are encrypted with a passphrase to ensure they are worthless if stolen."
+  how_do_i_1: "How do I "
+  how_do_i_2: " ?"
+  get_started: get started
+  get_started_1: "The fastest way to start using Monero is with a web @account manager such as "
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "Alternatively, if you would like to run a [full Monero node](/getting-started/running) you can download the client and a kick-starter @blockchain (to bring your local client up to speed) using the download link on the right."
+  where_can_i: Where can I
+  download_1: download
+  download_2: " ?"
+  different_os: "Need it for a different operating system?"
+  all_downloads: View all available downloads here
+  c_download: Download
+  monero_for: Monero for
+  latest_blockchain: Latest @Blockchain
+blog:
+  title_1: All
+  title_2: Blog
+  title_3: Posts
+  tagged: Tagged under
+  author: Posted by
+  forum: Click here to join the discussion for this entry on the Monero Forum
+tags:
+  all: Articles by Tag
+  notags: There are no posts for this tag.
+gs:
+  how_to: How to
+  choose:
+    mobile_web_lightweight: "Mobile, Web, and Lightweight Clients"
+    mobile_web_lightweight_text: "The clients below are ideal if you are using Monero for the first time. They are also useful if you are on a device that cannot run a [full Monero node](/getting-started/running)."
+    my_monero_text_1: "MyMonero.com"
+    my_monero_text_2: " is easy-to-use and works in your browser without you needing to install anything. It can be used with some measure of safety, as MyMonero are unable to spend your funds on your behalf. It is owned and operated by Riccardo Spagni, one of the Monero Core Team members."
+    full_client: "Full Monero Client"
+    full_client_text: "If you are able to spare the bandwidth and disk space required to run a full node, doing so helps keep the network stable and robust, and also affords you the maximum privacy Monero has to offer."
+    monero_node_text_1: "You can read our guide on "
+    monero_node_text_2: "running a Monero node"
+    monero_node_text_3: ", and the Monero core software can be downloaded from the "
+    monero_node_text_4: "downloads page"
+    third_party_clients: "Third-Party Clients"
+    third_party_text: "There are also several third-party clients that interact with the official Monero core daemon, and are able to provide their own additional functionality."
+    monerox: "MoneroX is a GUI for Monero written in .NET and available for Windows, Mac, and Linux. It is written and maintained by Jojatekok."
+    lightwallet: "lightWallet is a simple and slim client written in Python, and should run on most operating systems. It is written and maintained by jwinterm."
+  running:
+    run_a: "RUN A"
+    monero_node: "MONERO NODE"
+    why_run: "Why Run a Full Node?"
+    why_run_text_1: "Because of the decentralized and peer-to-peer nature of the Monero network it becomes more robust and resilient as it becomes larger. We encourage all users to run a full node, if they are able to."
+    why_run_text_2: "Running a Monero node does not require a huge amount of processing power, but it does require a few gigabytes worth of disk space to store the blockchain, and there will be some impact on your bandwidth especially from connected nodes that are catching up on the blockchain."
+    why_run_text_3: "The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend [InterServer.net](https://interserver.net/dock/vps-231552.html) using the 'MONERO' coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or our [affiliate link](https://interserver.net/dock/vps-231552.html) will also assist in the ongoing funding of Monero development."
+    why_run_text_4: "Monero will run on most hardware, including ARM and 32-bit systems. In order to prepare to run the node download the Monero binaries from the [from the downloads page](/downloads)."
+    running_node: "Running the Node"
+    running_node_text_1: "Once you have the files downloaded and unpacked you don't need to do anything beyond running the Monero daemon."
+    running_node_text_2: "- On Windows: locate bitmonerod.exe in Windows Explorer and double-click on it. If it opens and then closes, or crashes after starting, then you may want to start it from within Command Prompt in order to see what errors arise."
+    running_node_text_3: "- On OS X: locate bitmonerod in Finder and double-click on it. As with Windows, if it opens and then closes, or crashes after starting, then you can start it from within Terminal."
+    running_node_text_4: "- On Linux: dependent on whether you are running it on a desktop or server operating system, you will want to start bitmonerod either in a screen session or in a console window of its own."
+    correctly: "Ensuring Your Node is Running Correctly"
+    correctly_text_1: "When starting Monero for the first time you will see something similar to this screen:"
+    correctly_text_2: "The yellow text indicates it is receiving blocks as it synchronises up with the rest of the Monero network. The green 'synchronized ok' text will appear once it has correctly synched up. Once you see this there's nothing further you need to do, you are now running a Monero node!"
+    correctly_text_3: "To exit the node at any time you can type 'exit' into the daemon window and press enter, and it will shut itself down."
+  donate:
+    donate_title: "DONATING AND SPONSORSHIPS"
+    how_funded: "How this Project is Funded"
+    how_funded_text: "Ongoing development of the Monero Project is solely supported by donations and sponsors. At this time the project is vastly underfunded, and thus donations are greatly appreciated."
+    donate_sponsor: "Donating and Sponsoring"
+    donate_sponsor_text_1: "If you would like to make a donation you can do so by using any of the methods below:"
+    donate_sponsor_text_2: "- Donating in Monero: you can send XMR donations to [donate.getmonero.org](monero:46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em?recipient_name=Monero%20Development&tx_description=Donation%20to%20Monero%20Core%20Team), or directly to our Monero donation address - [46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em](monero:46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em?recipient_name=Monero%20Development&tx_description=Donation%20to%20Monero%20Core%20Team)"
+    donate_sponsor_text_3: "- Donating in Bitcoin: you can also send BTC donations to [donate.getmonero.org](bitcoin:1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb?label=Monero%20Development&message=Donation%20to%20Monero%20Core%20Team), or directly to our Bitcoin address: [1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb](bitcoin:1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb?label=Monero%20Development&message=Donation%20to%20Monero%20Core%20Team)"
+    donate_sponsor_text_4: "- To donate via credit card, wire transfer, or PayPal, please email the core team at [dev@getmonero.org](mailto:dev@getmonero.org)"
+    donate_sponsor_text_5: "Sponsorships are also greatly appreciated, including those companies that give us free or reduced-cost access to development hardware, hosting and other services, and software licenses. If you would like to sponsor Monero development in some form, please email the core team at [dev@getmonero.org](mailto:dev@getmonero.org)"
+    current_sponsors: "Current Sponsors"
+    current_sponsors_text: "Current sponsors include several mining pools that contribute a portion of their fees to development. You can find a list of these pools in [the first post on the Monero thread on Bitcointalk](https://bitcointalk.org/index.php?topic=583449.0). Over and above that, our sponsors include:"
+    hall_of_fame: "The Monero Community Hall of Fame"
+    hall_of_fame_text: "All donators to Monero development are also eligible to be listed in the [Community Hall of Fame]({{ site.baseurl }}getting-started/donate/hall-of-fame). Members of the most prestigious level of donators, 8th Dan, are also listed below. The full [Hall of Fame can be viewed at this link.](/getting-started/donate/hall-of-fame)"
+  accepting:
+    basics: "The Basics"
+    basics_text_1: "Monero works a little differently to what you may have become accustomed to from other cryptocurrencies. In the case of a digital currency like Bitcoin and its many derivatives merchant payment systems will usually create a new recipient address for each payment or user."
+    basics_text_2: "However, because Monero has stealth addresses there is no need to have separate recipient addresses for each payment or user, and a single account address can be published. Instead, when receiving payments a merchant will provide the person paying with a 'payment ID'."
+    basics_text_3: "A payment ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is: 666c75666679706f6e7920697320746865206265737420706f6e792065766572"
+    checking_sw: "Checking for a Payment in simplewallet"
+    checking_sw_text_1: "If you want to check for a payment using simplewallet you can use the 'payments' command followed by the payment ID or payment IDs you want to check. For example:"
+    checking_sw_text_2: "If you need to check for payments programmatically, then details follow the next section."
+    receiving: "Receiving a Payment Step-by-Step"
+    receiving_text_1: "Generate a random 64 character hexadecimal string for the payment"
+    receiving_text_2: "Communicate the payment ID and Monero address to the individual who is making payment"
+    receiving_text_3: "Check for the payment using the 'payments' command in simplewallet"
+    checking_prog: "Checking for a Payment Programatically"
+    checking_prog_text_1: "In order to check for a payment programatically you can use the get_payments or get_bulk_payments JSON RPC API calls."
+    checking_prog_text_2: "get_payments: this requires a payment_id parameter with a single payment ID."
+    checking_prog_text_3: "get_bulk_payments: this is the preferred method, and requires two parameters, payment_ids - a JSON array of payment IDs - and an optional min_block_height - the block height to scan from."
+    checking_prog_text_4: "An example of returned data is as follows:"
+    checking_prog_text_5: "It is important to note that the amounts returned are in base Monero units and not in the display units normally used in end-user applications. Also, since a transaction will typically have multiple outputs that add up to the total required for the payment, the amounts should be grouped by the tx_hash or the payment_id and added together. Additionally, as multiple outputs can have the same amount, it is imperative not to try and filter out the returned data from a single get_bulk_payments call."
+    checking_prog_text_6: "Before scanning for payments it is useful to check against the daemon RPC API (the get_info RPC call) to see if additional blocks have been received. Typically you would want to then scan only from that received block on by specifying it as the min_block_height to get_bulk_payments."
+    scanning: "Programatically Scanning for Payments"
+    scanning_text_1: "Get the current block height from the daemon, only proceed if it has increased since our last scan"
+    scanning_text_2: "Call the get_bulk_payments RPC API call with our last scanned height and the list of all payment IDs in our system"
+    scanning_text_3: "Store the current block height as our last scanned height"
+    scanning_text_4: "Remove duplicates based on transaction hashes we have already received and processed"
+  merchants:
+    directory: "DIRECTORY"
+    exchanges: "Exchanges"
+    block_explorers: "Block Explorers"
+    libraries: "Libraries and Helpers"
+    tools: "Tools"
+    services: "Services"
+    goods: "Goods"
+    entertainment: "Entertainment"
+    merchants_text: "All of the merchants are organised alphabetically. If there are any merchants that no longer provide Monero services, or a merchant that wishes to be added, please open an issue on this website's [Github repository](https://github.com/monero-project/monero-site/issues) to alert us."
+kb:
+  about:
+    about_title: "ABOUT MONERO"
+    about_text_1: "To most people, financial privacy is very important. Yet in recent years, we have seen a staggering amount of big corporations, banks and governments having their records compromised, at every time leaking information about their users, their practices, their balance sheets. The unfortunate but undeniable conclusion is that there is no safe place to conduct private transactions."
+    about_text_2: "There was no safe place to conduct private transactions. Monero provides a place where your financial activities are private. Monero is one of the leading cryptocurrencies in the post-Bitcoin world, and it is built on principles of privacy, decentralization, and scalability. From an economic point of view, a currency needs to be fungible. Fungibility is a property of money that makes all units 'equal'. Without fungibility, money flows can be tracked and tainted, making it very difficult to use the digital tokens as money."
+    about_text_3: "Monero is a secure, private, untraceable currency. It is open-source and freely available to all. It’s fairly launched on april 18th 2014, without premine or instamine. The Monero technology already spiked the interest of several established people in the bitcoin development world and cryptography community. The development is completely based on donations, community driven and with a strong focus on decentralization and scalability. With Monero, you are your own bank. Only you control and are responsible for your funds, and your accounts and transactions are kept private from prying eyes."
+    about_text_4: "Read on to find out how Monero is helping to solve real problems and limitations of existing cryptocurrencies, and building a more private blockchain."
+    privacy_title: "PRIVACY"
+    privacy_text_1: "Monero seeks to provide absolute transactional privacy in an effort to create true electronic cash. With Bitcoin, as well as with the vast majority of cryptocurrencies that have been established since, any and all transactions are entirely traceable. Any casual observer can read through the Bitcoin blockchain, and for any transaction, this observer can find out the exact amount that was transacted, as well as the precise transaction origin (sender address) and destination (recipient address)."
+    privacy_text_2: "With Monero, for any private transaction, the same observer has no means to uncover the origin, destination, or amount transacted. As such, transactions on the Monero blockchain, are private and fundamentally untraceable. But Monero is more than a currency. Driving the official slogan: 'secure, private, untraceable', there are a multitude of applications where the parties involved wish to remain private. The Monero blockchain can keep confidential contracts confidential. While the forthcoming, blockchain-powered internet of things will certainly place the cloud all around us, it is then increasingly important that open access tools exist to provide a secure boundary for private settlements."
+    privacy_text_3: "An often overlooked, but nonetheless important layer of privacy in a connected world, is that of the networking infrastructure. We have teamed up with Privacy Solutions, and development is well underway to incorporate an i2p router in Monero. In a world where ill intentioned governments and ISPs can void an individual’s basic privacy rights on a whim, it then becomes necessary to establish a private communication platform."
+    privacy_text_4: "The underlying technologies and cryptography upon which Monero is built, has been (and continues to be) the subject of extensive analysis and review by numerous individuals and research groups. It has garnered favorable attention by some of the most prominent figures of the Bitcoin & cryptography world, such as Andrew Poelstra (andytoshi), Gregory Maxwell & Nicolas Courtois."
+    privacy_text_5: "With Monero, transactions are private by default. However, each user has the ability to select different levels of privacy, optionally disclosing their transaction information, or even provide audit access (view only) to his full Monero account."
+    decentralization_title: "DECENTRALIZATION"
+    decentralization_text_1: "While most cryptocurrencies align to theoretical principles of decentralization, the reality is, that most fall short of such a claim. More often than not, it is not just one branch of a cryptocurrency system that is centralized in one form or another, is that that many branches are so."
+    decentralization_text_2: "With Proof of Stake currencies, irregular emission and distribution models cause most of the staking power to end up in the hand of a privileged few. Participants of lesser weight are reduced to second class citizens, with little chance of ever obtaining similar returns."
+    decentralization_text_3: "With Proof of Work currencies, of which Bitcoin remains the most significant reference, the mining process is largely concentrated in a handful of pools. This centralization of mining power, combined with a transparent blockchain, has already lead to various occurrences of transaction censorship."
+    decentralization_text_4: "Other currencies opt for a closed development model, thus centralizing the invention process itself. These closed platforms commonly fail to meet any form of public audit or expert review. More importantly, these are platforms that will anytime swing left and right, in order to satisfy the interests of the restricted group that holds control of development."
+    decentralization_text_5: "Monero contrasts with these examples in various and meaningful ways. Monero is powered strictly by Proof of Work, but specifically, it employs a mining algorithm that has the potential to be efficiently tasked to billions of existing devices (any modern x86 CPU). This very characteristic, and more so once it is coupled with @Smart Mining, has the potential to ensure that for long years to come, the process of mining new Monero coins is within reach of the common individual, and not an exclusive opportunity to the owners of large mining operations."
+    decentralization_text_6: "Further, as transactions are private by default on the Monero blockchain, transaction censorship is inherently void. The Monero development landscape on the other hand, is very much the opposite of a closed or restricted access model. The core branch currently enjoys more than 30 contributors, pushing 1000+ commits over the past year. The project is happy to take on new contributors and any future plans, long term direction and priorities are openly discussed with the community. Indeed, the policy that governs contribution to the Monero codebase is exhaustingly inclusive - all contributions are accepted into the development branch, where new code can be scrutinized and tested by the entire community."
+    decentralization_text_7: "Most contributors in the Monero development landscape are quite passionate for an open source philosophy, and in this rich creative environment, new projects have sparked to life. OpenAlias is one notable example, which has seen adoption by (amongst others) a major Bitcoin related software product."
+    scalability_title: "SCALABILITITY"
+    scalability_text_1: "One of the problems with cryptocurrencies is scaleability. Most cryptocurrencies are derived from the Bitcoin codebase and thus have a 'block size limit'. This limit has become a big issue in the bitcoin community and lead to fierce discussions. Monero doesn't suffer from this block size debate, because it has a dynamic block size limit. This limit is automatically recalculated regularly based on a look-back window. A penalty system prevents out of control growth of the block size. Another issue with most cryptocurrencies is the development of a fee market. This issue is somewhat linked to the block size debate: the narrative is that when you limit the block size, a fee market will eventually develop. But this claim is highly debatable. When the transaction fees are supposed to be the main incentive for miners to secure the blockchain, it is possible the current consensus model will not be sustainable. At the moment, miners still act as they are expected: they mine on the longest chain. When they don't do that, they risk loosing the block reward. But when that block reward becomes small compared to the mining fees, it's possible miners will have an incentive to not mine on the longest chain and start a fork trying to 'steal' high transaction fees which were included in the latest blocks. Therefore, monero implements a 'permanent block reward'. The block reward will never drop below 0.3 XMR, making monero a disinflationary currency: the inflation will be roughly 1% in 2022 and go down forever, but the nominal inflation will stay at 0.3 XMR per minute. This means that there will always be an incentive for miners to mine monero and thus keeping the blockchain secure, with or without a fee market."
+    fungibility_title: "FUNGIBILITY"
+    fungibility_text_1: "Fungibility is an important property of any functioning currency. You can try to hide your bitcoins as much as you want, if you tried to mix your non-fungible coins using a mixer, coinjoin or another type of 'anonymity enhancing feature', these transactions can still be flagged as 'possible suspicious activity on the blockchain', even if you are anonymous. Using non-fungible tokens as currency can eventually lead to blacklisting/whitelisting either by governments or through self-censorship. Some examples of these measures could be payment procssors or exchanges refusing your tainted coins as a payment or deposit or miners refusing to include your suspicious transaction. Monero will enforce a minimum mixing across the network, so all outputs are mixed by default. This is possble due to the nature of the mixing: monero mixing is 'passive' and can even be done offline! Transaction outputs have 'plausible deniability' about their state: you can't tell if they are spent or unspent in a certain transaction or not. This leads to an opaque (non-transparent) blockchain making all coins 'equal'. Fungibility is built into Monero at protocol level, making it real 'digital cash'."
+  people:
+    core_title: "The Monero Core Team"
+    core_text_1: "Monero is not governed by any foundation or central body, but ongoing development, maintenance, and research is primarily directed and often funded by a core team of seven individuals."
+    core_text_2: "Five members of the Core Team prefer to stay pseudonymous for the moment, but two of them are more public and have revealed their real identities. For ease of reference those two members (Riccardo and David) are at the top of the list below, but beyond that the list is presented in no particular order:"
+    core_person_1: "**Riccardo 'fluffypony' Spagni** (ric@getmonero.org): Based out of South Africa, Riccardo brings a strong business acumen and a deep understanding of cryptocurrency, software development, and cryptography to the table. He has been involved with cryptocurrency-related projects since 2012."
+    core_person_2: "**David Latapie** (david@getmonero.org): David Latapie is a French publisher, transhumanist, and crypto enthusiast who has worked on various cryptocurrencies. He focuses on the societal changes brought about by cryptos and the blockchain technology."
+    core_person_3: "**smooth** (smooth@getmonero.org): A software developer, entrepreneur, and investor, smooth has been involved in several cryptocurrency projects since 2011, including development of the first multicurrency exchange (initially supporting Bitcoin and Namecoin). By virtue of his long-standing involvement in the cryptocurrency community, he is well known and trusted by many."
+    core_person_4: "**othe** (othe@getmonero.org): Based in Germany, othe has been interested in cryptocurrency since early 2011. Currently he works as an independent consultant for various cryptocurrency-related businesses. He is known for his previous work as a core Vertcoin developer."
+    core_person_5: "**tacotime** (tacotime@getmonero.org): A bioinformatics enthusiast and software developer from Toronto, tacotime has been involved in cryptocurrency since 2011. He is well known for his work on MC2, a hybrid PoS/PoW cryptocurrency, and his contributions to various Conformal projects such as btcd."
+    core_person_6: "**NoodleDoodle** (noodledoodle@getmonero.org): A former Silicon Valley engineer, NoodleDoodle is a seasoned hardware and software developer. He started his involvement with cryptocurrencies in 2012 and currently spends his time working on 'cool aerospace stuff' for a university."
+    core_person_7: "**eizh** (eizh@getmonero.org): An American researcher and academic who focuses on physics and scientific computing by day, eizh holds an academic interest in cryptocurrencies, especially serious alternatives to Bitcoin."
+    contributors_title: "Development Contributors"
+    contributors_text_1: "There have been many individuals that have contributed to Monero code; a complete list of which can be found on our [Github Contributors page](https://github.com/monero-project/bitmonero/graphs/contributors)."
+    contributors_text_2: "Some that have made outstanding contributions include: [moneromooo](http://github.com/moneromooo-monero/bitmonero/branches), [Thomas Winget](https://github.com/tewinget), [mikezackles](https://github.com/mikezackles), [oranjuice](https://github.com/oranjuice), [warptangent](https://github.com/warptangent), [rfree](https://github.com/rfree2monero), [jakoblind](https://github.com/jakoblind), and [tomerkon](https://github.com/tomerkon)."
+    research_lab_title: "The Monero Research Lab"
+    research_lab_text: "The Core Team forms an integral part of the Monero Research Lab, but the researchers, scientists, and academics that are primarily focused on Monero research are listed below. They have chosen to remain pseudonymous for the moment. They are:"
+    researcher_1: "**Surae Noether**: Lead researcher for the Monero Research Lab, Surae holds a PhD in Mathematical Sciences and brings a rich understanding of cryptography and homological algebra to the mix."
+    researcher_2: "**Shen Noether**: A graduate student focused on algebraic geometry, it is Shen's command and knowledge of cryptography that lends itself so well to his involvement in the Monero Research Lab."
+    researcher_3: "**Simba Noether**: A Masters candidate pursuing research in cryptography and cryptocurrencies. Simba's previous work includes theoretical research in lattice cryptography and decentralized authentication."
+    researcher_4: "**Sarang Noether**: Having completed his Masters in Mathematical Sciences, Sarang is currently completing his doctoral degree in Physics, while devoting time on the side to the advancement of Monero research."
+    other_title: "Other Contributors"
+    other_text: "There have been massive contributions to Monero from its inception from so many people, including: zone117x, LucasJones, wolf`, Professor David Andersen, wallet42, Neozaru, Gingeropolous, cAPSLOCK, and many, many others."
+downloads:
+  core: "Monero Core"
+  core_text_1: "Monero Core consists of several applications, including bitmonerod (the daemon used if running a full node, as it maintains the connection to the Monero network) and simplewallet (a Monero account manager application), as well as several other helper applications."
+  core_text_2: "If you are using Monero Core for the first time you can simply download an appropriate release, and run bitmonerod to get synced up to the network."
+  core_text_3: "Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys)."
+  bit: "bit"
+  current_version: "Current Version"
+  coming_soon: "Coming Soon"
+  other_downloads: "Other Downloads"
+  other_text_1: "- If you'd prefer to use a blockchain bootstrap, instead of syncing up from scratch, you can [use this link for the most current bootstrap.](https://downloads.getmonero.org/blockchain.raw)"
+  other_text_2: "- For Monero Research Lab publications please visit the [Monero Research Lab](/research-lab) section of this site."
+  other_text_3: "- High resolution and vector copies of the Monero logo [can be downloaded at this link.](https://downloads.getmonero.org/resources/branding.zip)"

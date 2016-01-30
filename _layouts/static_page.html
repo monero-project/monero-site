@@ -8,10 +8,17 @@
     {% include header.html %}
 
     <div class="container main-content">
+      {% if site.lang == "cn" %}
+        <div class="page-title">
+          {{ page.cn-attribution }}
+          <img src="//static.getmonero.org/images/{{ page.icon }}.svg" class="title-icon"><h2 class="inline">{{ page.cn-title-pre-kick }} <span class="{{ page.kick-class }}">{{ page.cn-title-kick }}</span> {{ page.cn-title-post-kick }}</h2>
+        </div>
+      {% else %}
         <div class="page-title">
           {{ page.attribution }}
           <img src="//static.getmonero.org/images/{{ page.icon }}.svg" class="title-icon"><h2 class="inline">{{ page.title-pre-kick }} <span class="{{ page.kick-class }}">{{ page.title-kick }}</span> {{ page.title-post-kick }}</h2>
         </div>
+      {% endif %}
 
         {{ content }}
     </div>
