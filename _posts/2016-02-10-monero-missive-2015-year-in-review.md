@@ -4,7 +4,7 @@ title: Monero Missive Special Edition - 2015 Year in Review
 summary: A review of everything Monero accomplished in 2015
 tags: [monero missives, year in review, core, funding, accounts, usability, platforms, gui, exchanges, i2p, 0mq, kovri, blockchaindb]
 author: Riccardo Spagni (fluffypony)
-forum: 
+forum: https://forum.getmonero.org/1/news-announcements-and-editorials/2481/monero-missive-special-edition-2015-year-in-review
 ---
 
 *February 10th, 2015*
