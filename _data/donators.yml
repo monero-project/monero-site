@@ -220,17 +220,17 @@
   name: explorer
   amount: 104
   history: [3rd Dan on 2015-02-05]
-  
+
 - level: 3
   name: Karl Hungus
   amount: 180
   history: [3rd Dan on 2016-01-01]
-  
-  - level: 3
+
+- level: 3
   name: palexander
   amount: 150
   history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
-  
+
 - level: 2
   name: superresistant
   amount: 50
