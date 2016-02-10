@@ -90,7 +90,7 @@ The FFS exists in a centralised manner today, but in the future we hope to host 
 
 For general housekeeping purposes we have decided to roll-over the donation addresses every so often, perhaps every year or two. Please take note of the new address details below. We have updated the donate.getmonero.org OpenAlias and other references, but pool operators and anyone else that auto-donates will need to update their systems accordingly. We will maintain the old addresses for some time, but will likely only check them sporadically and move any funds to the new addresses.
 
-Monero Donations: [44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A](monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?recipient_name=Monero%20Development&tx_description=Donation%20to%20Monero%20Core%20Team) (view key: f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501)
+Monero Donations: [44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A](monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?recipient_name=Monero%20Development&tx_description=Donation%20to%20Monero%20Core%20Team) (view key: f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501)  
 Bitcoin Donations: [1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H](bitcoin:1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H?label=Monero%20Development&message=Donation%20to%20Monero%20Core%20Team)
 
 **Design and Development Goals**
@@ -127,6 +127,7 @@ Over the year there were 904 commits made to the main Monero repository, plus qu
 | Modified Lines | 10 221 | 5 342 | 15 563 |
 | New Lines | 12 706 | 263 288 | 275 994 |
 | Removed Lines | 32 | 514 | 546 |
+
 
 **Academic Research**
 
