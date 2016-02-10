@@ -5,6 +5,16 @@
   quote-author: Article 19, The Universal Declaration of Human Rights
   history: [10th Dan on 2015-11-11, 9th Dan on 2015-11-11, 8th Dan on 2015-01-14, 7th Dan on 2014-12-02, 6th Dan on 2014-08-24, 5th Dan on 2014-08-01, 4th Dan on 2014-07-21]
 
+- level: 9
+  name: pa
+  amount: 12500
+  history: [8th Dan on 2016-01-01, 9th Dan on 2016-01-01, 7th Dan on 2015-02-25, 6th Dan on 2014-12-30, 5th Dan on 2014-09-18]
+
+- level: 9
+  name: ajiekceu4
+  amount: 10666
+  history: [9th Dan on 2016-02-03, 8th Dan on 2015-11-4, 7th Dan on 2015-08-31, 6th Dan on 2015-05-11]
+  
 - level: 8
   name: Lloydimiller4
   amount: 7800
@@ -12,15 +22,15 @@
 
 - level: 8
   name: rpietila
-  amount: 7200
+  amount: 8100
   quote: We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government---it is their right, it is their duty, to throw off such Government.
   quote-author: Declaration of Independence
   history: [8th Dan on 2015-02-23, 7th Dan on 2014-09-04, 6th Dan on 2014-08-23, 5th Dan on 2014-08-01, 4th Dan on 2014-07-16]
 
-- level: 8
-  name: ajiekceu4
-  amount: 8666
-  history: [8th Dan on 2015-11-4, 7th Dan on 2015-08-31, 6th Dan on 2015-05-11]
+- level: 7
+  name: antw081
+  amount: 3100
+  history: [7th Dan on 2015-07-16, 6th Dan on 2015-02-23, 5th Dan on 2015-02-10, 4th Dan on 2014-11-25, 3rd Dan on 2014-09-05]
   
 - level: 7
   name: antw081
@@ -44,11 +54,6 @@
   quote-author: Section 10
   history: [7th Dan on 2014-08-13, 6th Dan on 2014-04-29]
 
-- level: 7
-  name: pa
-  amount: 2500
-  history: [7th Dan on 2015-02-25, 6th Dan on 2014-12-30, 5th Dan on 2014-09-18]
-
 - level: 6
   name: HardwarePal
   amount: 1000
@@ -63,7 +68,7 @@
 
 - level: 6
   name: Medusa13
-  amount: 1280.6
+  amount: 1980.6
   history: [6th Dan on 2015-01-27, 4th Dan on 2014-11-08, 3rd Dan on 2014-08-26]
 
 - level: 5
@@ -96,10 +101,10 @@
   amount: 500
   history: [5th Dan on 2015-02-04, 4th Dan on 2014-08-18, 3rd Dan on 2014-07-17]
 
-- level: 5
+- level: 6
   name: dnaleor
-  amount: 650.1337
-  history: [5th Dan on 2015-02-23, 4th Dan on 2014-12-17, 3rd Dan on 2014-07-17, 1st Dan on 2014-05-03]
+  amount: 1201.1337
+  history: [6th Dan 0n 2016-02-03, 5th Dan on 2015-02-23, 4th Dan on 2014-12-17, 3rd Dan on 2014-07-17, 1st Dan on 2014-05-03]
 
 - level: 5
   name: ajiekceu4
@@ -108,8 +113,8 @@
 
 - level: 5
   name: saddambitcoin
-  amount: 500
-  history: [5th Dan on 2015-02-28, 4th Dan on 2014-08-18]
+  amount: 1400
+  history: [6th Dan on 2016-02-06, 5th Dan on 2015-02-28, 4th Dan on 2014-08-18]
 
 - level: 5
   name: Quicken
@@ -217,6 +222,11 @@
   history: [3rd Dan on 2015-02-05]
   
 - level: 3
+  name: Karl Hungus
+  amount: 180
+  history: [3rd Dan on 2016-01-01]
+  
+  - level: 3
   name: palexander
   amount: 150
   history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
