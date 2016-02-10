@@ -17,6 +17,7 @@ As you may know (or may not know:) we had an extremely busy January, which has l
 
 The past year has been an interesting one for Monero. There was something of a reckoning as speculators realised that Monero was never going to be a pump-and-dump, rushing out a flashy GUI and ill-conceived features with no regard to the security of the network or the safety of our users. Those that stuck it out have seen steady, constant progress and steady, constant community growth.
 
+{:.text-center}
 ![Project Stats 2015 Overview](/blog/assets/2015-year-in-review/stats.jpg)
 
 **Governance**
@@ -37,6 +38,7 @@ When considering a governance model for Monero our main aim has been to find a b
 - Members of the Core Team will be given an opportunity to state their views, vote (using the voting system detailed below), and discuss the matter at length, within the time limit of the meeting.
 - To conclude the meeting, the members of the Core Team will tally the votes that have been cast on the matter during the discussion and forward the decision to the community.
 
+{:.text-center}
 ![Governance Process Overview](/blog/assets/2015-year-in-review/governance-process.jpg)
 
 The Core Team, as well as individual contributors, can participate in all related discussions, but their opinions are not absolute or perfect. Community members are encouraged to test and push arguments, regardless of who is making them, until they are satisfied that the idea or change is workable or worth the risks.
