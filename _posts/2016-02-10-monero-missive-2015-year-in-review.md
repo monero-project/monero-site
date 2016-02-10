@@ -7,7 +7,7 @@ author: Riccardo Spagni (fluffypony)
 forum: https://forum.getmonero.org/1/news-announcements-and-editorials/2481/monero-missive-special-edition-2015-year-in-review
 ---
 
-*February 10th, 2015*
+*February 10th, 2016*
 
 Hello, and welcome to a special edition of the Monero Missives: the 2015 Year in Review!
 
