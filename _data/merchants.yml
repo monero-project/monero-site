@@ -8,8 +8,6 @@
       url: https://bter.com/
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
-    - name: Cryptsy
-      url: https://www.cryptsy.com/markets/view/XMR_BTC
     - name: ShapeShift (Instant)
       url: https://shapeshift.io/
 - category: Block Explorers
