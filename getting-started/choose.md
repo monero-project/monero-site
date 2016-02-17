@@ -67,13 +67,13 @@ MoneroX is a GUI for Monero written in .NET and available for Windows, Mac, and 
 lightWallet is a simple and slim client written in Python, and should run on most operating systems. It is written and maintained by jwinterm.
 
 {:.text-center .client-list}
-**Current Version:** 0.0.2-alpha  
+**Current Version:** 0.2 
 
 {:.text-center .client-platforms}
 - [![](//static.getmonero.org/images/platforms/windows.svg)  
-  Windows](https://github.com/jwinterm/lightWallet/releases/download/v0.0.2-alpha/lightWallet.exe)
+  Windows](https://github.com/jwinterm/LightWallet2/releases/download/v0.2/LightWallet.exe)
 - [![](//static.getmonero.org/images/platforms/github.svg)  
-  Source Code](https://github.com/jwinterm/lightWallet)
+  Source Code](https://github.com/jwinterm/LightWallet2)
 - [![](//static.getmonero.org/images/platforms/forum.svg)  
   Forum Thread](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)
 
