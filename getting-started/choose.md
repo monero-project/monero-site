@@ -53,6 +53,8 @@ lightWallet is a simple and slim client written in Java, and should run on most 
 {:.text-center .client-platforms}
 - [![](//static.getmonero.org/images/platforms/windows.svg)  
   Windows](https://github.com/jwinterm/LightWallet2/releases/download/v0.2/LightWallet.exe)
+- [![](//static.getmonero.org/images/platforms/java.svg)  
+  Java (All Platforms)](https://github.com/jwinterm/LightWallet2/releases/download/v0.2/LightWallet.jar)
 - [![](//static.getmonero.org/images/platforms/github.svg)  
   Source Code](https://github.com/jwinterm/LightWallet2)
 - [![](//static.getmonero.org/images/platforms/forum.svg)  
