@@ -58,7 +58,7 @@ Title: Home
           <h2 class="inline">
             {% t index.how_do_i_1 %}<br><span class="softyellow-kicks">{% t index.get_started %}</span> {% t index.how_do_i_2 %}
           </h2>
-          <p style="margin-top: 40px;">{% t index.get_started_1 %}<a href="https://mymonero.com">{% t index.mymonero %}</a>{% t index.get_started_2 %}</p>
+          <p style="margin-top: 40px;">{% t index.get_started_1 %} <a href="https://mymonero.com">{% t index.mymonero %}</a>{% t index.get_started_2 %}</p>
           <p>{% t index.get_started_3 %}</p>
         </div>
         <div class="col-md-6">
