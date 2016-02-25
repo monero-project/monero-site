@@ -44,6 +44,8 @@
       url: http://moneroprice.com/
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
+    - name: Monero Monitor for Chrome
+      url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
 - category: Services
   merchants:
     - name: CryptoEscrow Escrow Service
