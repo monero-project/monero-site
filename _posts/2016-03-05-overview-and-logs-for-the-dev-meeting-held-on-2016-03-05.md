@@ -45,7 +45,7 @@ author: gingeropolous
 **\<fluffypony>** we have to implement some sort of migration system   
 **\<fluffypony>** we can't expect people in production to keep dropping and re-syncing   
 **\<fluffypony>** so that would stall it being merged  
-**\<hyc>** hi, sorry I'm late. our experience with blockchain_import indicates migration will be slow  
+**\<hyc>** hi, sorry I'm late. our experience with blockchain\_import indicates migration will be slow  
 **\<warptangent>** also, migration won't take place until after things settle with the db changes and testing.  
 **\<warptangent>** development is ongoing here https://github.com/warptangent/bitmonero/branches in the exp/performance branch  
 **\<fluffypony>** hyc: well at the very least we need to detect that the current DB isn't what we expect, and that it must be converted or redownloaded  
@@ -115,7 +115,7 @@ author: gingeropolous
 **fluffypony** ponders   
 **\<fluffypony>** oh yes  
 **\<luigi1114>** I would prefer new wallets don't auto-refresh, but I understand why it was added  
-**\<fluffypony>** net_skeleton become Fossa which became Mongoose  
+**\<fluffypony>** net\_skeleton become Fossa which became Mongoose  
 **\<moneromooo>** which needs to become gone ?  
 **\<fluffypony>** yes  
 **\<fluffypony>** the only licenses they have available are GPL and a commercial license   
