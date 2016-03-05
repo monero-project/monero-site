@@ -22,6 +22,8 @@
       url: https://github.com/PsychicCat/monero-nodejs
     - name: python-monero (Python)
       url: https://github.com/tippero/python-monero
+    - name: pymonero (Python)
+      url: https://github.com/Monero-Monitor/pymonero
     - name: moneronjs (NodeJS)
       url: https://github.com/netmonk/moneronjs
     - name: MoneroApi.Net (.NET)
@@ -42,6 +44,8 @@
       url: http://moneroprice.com/
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
+    - name: Monero Monitor for Chrome
+      url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
 - category: Services
   merchants:
     - name: CryptoEscrow Escrow Service
