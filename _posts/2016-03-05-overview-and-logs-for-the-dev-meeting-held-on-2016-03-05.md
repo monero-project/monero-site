@@ -45,11 +45,11 @@ author: gingeropolous
 **\<fluffypony>** we have to implement some sort of migration system   
 **\<fluffypony>** we can't expect people in production to keep dropping and re-syncing   
 **\<fluffypony>** so that would stall it being merged  
-**\<hyc>** hi, sorry I'm late. our experience with blockchain\_import indicates migration will be slow  
+**\<hyc>** hi, sorry I'm late. our experience with blockchain_import indicates migration will be slow  
 **\<warptangent>** also, migration won't take place until after things settle with the db changes and testing.  
 **\<warptangent>** development is ongoing here https://github.com/warptangent/bitmonero/branches in the exp/performance branch  
 **\<fluffypony>** hyc: well at the very least we need to detect that the current DB isn't what we expect, and that it must be converted or redownloaded  
-**\<fluffypony>** *resynced  
+**\<fluffypony>** \*resynced  
 **\<hyc>** right. well fortunately the DBs have version stamps so that's straightforward  
 **\<fluffypony>** yeah  
 **\<fluffypony>** ok let's move on to trezor  
@@ -115,7 +115,7 @@ author: gingeropolous
 **fluffypony** ponders   
 **\<fluffypony>** oh yes  
 **\<luigi1114>** I would prefer new wallets don't auto-refresh, but I understand why it was added  
-**\<fluffypony>** net\_skeleton become Fossa which became Mongoose  
+**\<fluffypony>** net_skeleton become Fossa which became Mongoose  
 **\<moneromooo>** which needs to become gone ?  
 **\<fluffypony>** yes  
 **\<fluffypony>** the only licenses they have available are GPL and a commercial license   
@@ -175,7 +175,7 @@ author: gingeropolous
 **\<warptangent>** i think that's hyc's concern  
 **\<dEBRUYNE>** Then we should name them similiar  
 **\<dEBRUYNE>** shouldn´t  
-**\<dEBRUYNE>** *  
+**\<dEBRUYNE>** \*  
 **\<hyc>** yes. I didn't follow ringct closely, but the fact that floating point is even an option means the two are quite different  
 **\<warptangent>** it's likely the latter is the one most users will even be aware of.  
 **\<warptangent>** but it's something to consider.  
