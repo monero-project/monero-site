@@ -24,7 +24,7 @@ All simplewallet methods use the same JSON RPC interface. For example:
         -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'"$PARAMS"'}' \
         -H 'Content-Type: application/json'
 
-Note: In the following guide, "atomic units" refer to the smallest fraction of 1 Monero according to the bitmonerod and simplewallet implementation. **1 XMR = 1e12 atomic units.**
+Note: "atomic units" refer to the smallest fraction of 1 XMR according to the bitmonerod implementation. **1 XMR = 1e12 atomic units.**
 
 ### Index of JSON RPC Methods:
 
