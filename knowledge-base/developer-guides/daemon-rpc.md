@@ -9,18 +9,13 @@ icon: "icon_client"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-# General Remarks
+## Introduction
 
-This is a list of the bitmonerod daemon RPC calls, their inputs and outputs, and examples of each. Many RPC calls use the Daemon's JSON RPC interface, while others use their own interfaces.
+This is a list of the bitmonerod daemon RPC calls, their inputs and outputs, and examples of each.
 
-On this page, you will find examples of these RPC calls.
+Many RPC calls use the daemon's JSON RPC interface while others use their own interfaces, as demonstrated below.
 
-
----
-
-# Index
-
-## JSON RPC Methods:
+### [JSON RPC Methods](#json-rpc-methods):
 
 * [getblockcount](#getblockcount)
 * [on_getblockhash](#on_getblockhash)
@@ -36,7 +31,7 @@ On this page, you will find examples of these RPC calls.
 * [setbans](#setbans)
 * [getbans](#getbans)
 
-## Other RPC Methods:
+### [Other RPC Methods](#other-daemon-rpc-calls):
 
 * [/getheight](#getheight)
 * [/gettransactions](#gettransactions)
@@ -48,7 +43,7 @@ On this page, you will find examples of these RPC calls.
 
 ---
 
-# JSON RPC Methods
+## JSON RPC Methods
 
 The majority of bitmonerod RPC calls use the daemon's `json_rpc` interface to request various bits of information. These methods all follow a similar structure, for example:
 
@@ -580,7 +575,7 @@ Example:
 
 ---
 
-# Other Daemon RPC Calls
+## Other Daemon RPC Calls
 
 Not all daemon RPC calls use the JSON_RPC interface. This section gives examples of these calls.
 
