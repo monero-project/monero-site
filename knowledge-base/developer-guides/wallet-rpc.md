@@ -1,7 +1,7 @@
 ---
 layout: static_page
 title: "Wallet RPC documentation"
-title-pre-kick: "How to "
+title-pre-kick: "Developer Guide: "
 title-kick: "Wallet RPC documentation "
 title-post-kick: ""
 kick-class: "green-kicks"
