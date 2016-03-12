@@ -1,23 +1,26 @@
 ---
 layout: static_page
-title: "Wallet RPC documentation"
-title-pre-kick: "How to "
-title-kick: "Wallet RPC documentation "
+title: "Daemon RPC documentation"
+title-pre-kick: "Developer Guide: "
+title-kick: "Daemon RPC documentation "
 title-post-kick: ""
 kick-class: "green-kicks"
 icon: "icon_client"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-## General Remarks
+# General Remarks
 
 This is a list of the bitmonerod daemon RPC calls, their inputs and outputs, and examples of each. Many RPC calls use the Daemon's JSON RPC interface, while others use their own interfaces.
 
 On this page, you will find examples of these RPC calls.
 
-## Index
 
-JSON RPC Methods:
+---
+
+# Index
+
+## JSON RPC Methods:
 
 * [getblockcount](#getblockcount)
 * [on_getblockhash](#on_getblockhash)
@@ -33,17 +36,19 @@ JSON RPC Methods:
 * [setbans](#setbans)
 * [getbans](#getbans)
 
-Other RPC Methods:
+## Other RPC Methods:
 
-* [getheight](#getheight)
-* [gettransactions](#gettransactions)
-* [is_key_image_spent](#is_key_image_spent)
-* [sendrawtransaction](#sendrawtransaction)
-* [get_transaction_pool](#get_transaction_pool)
-* [stop_daemon](#stop_daemon)
+* [/getheight](#getheight)
+* [/gettransactions](#gettransactions)
+* [/is_key_image_spent](#is_key_image_spent)
+* [/sendrawtransaction](#sendrawtransaction)
+* [/get_transaction_pool](#get_transaction_pool)
+* [/stop_daemon](#stop_daemon)
 
 
-## JSON RPC Methods
+---
+
+# JSON RPC Methods
 
 The majority of bitmonerod RPC calls use the daemon's `json_rpc` interface to request various bits of information. These methods all follow a similar structure, for example:
 
@@ -66,8 +71,8 @@ Inputs: *None*.
 
 Outputs:
 
-* *count* - Number of blocks in longest chain seen by the node.
-* *status* - General RPC error code. "OK" means everything looks good.
+* *count* - unsigned int; Number of blocks in longest chain seen by the node.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 Example:
 
@@ -110,17 +115,17 @@ Example:
 
 Inputs:
 
-* *wallet_address* - Address of wallet to receive coinbase transactions if block is successfully mined.
-* *reserve_size* - Reserve size.
+* *wallet_address* - string; Address of wallet to receive coinbase transactions if block is successfully mined.
+* *reserve_size* - unsigned int; Reserve size.
 
 Outputs:
 
-* *blocktemplate_blob* - Blob on which to try to mine a new block.
-* *difficulty* - Difficulty of next block.
-* *height* - Height on which to mine.
-* *prev_hash* - Hash of the most recent block on which to mine the next block.
-* *reserved_offset* - Reserved offset.
-* *status* - General RPC error code. "OK" means everything looks good.
+* *blocktemplate_blob* - string; Blob on which to try to mine a new block.
+* *difficulty* - unsigned int; Difficulty of next block.
+* *height* - unsigned int; Height on which to mine.
+* *prev_hash* - string; Hash of the most recent block on which to mine the next block.
+* *reserved_offset* - unsigned int; Reserved offset.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 Example:
 
@@ -145,11 +150,11 @@ Submit a mined block to the network.
 
 Inputs:
 
-* Block blob data
+* Block blob data - string
 
 Outputs:
 
-* *status* - Block submit status.
+* *status* - string; Block submit status.
 
 
 ### getlastblockheader
@@ -161,18 +166,18 @@ Inputs: *None*.
 Outputs:
 
 * *block_header* - A structure containing block header information.
-  * *depth* -  The number of blocks succeeding this block on the blockchain. A larger number means an older block.
-  * *difficulty* - The strength of the Monero network based on mining power.
-  * *hash* - The hash of this block.
-  * *height* - The number of blocks preceding this block on the blockchain.
-  * *major_version* - The major version of the monero protocol at this block height.
-  * *minor_version* - The minor version of the monero protocol at this block height.
-  * *nonce* - a cryptographic random one-time number used in mining a Monero block.
-  * *orphan_status* - Usually `false`. If `true`, this block is not part of the longest chain.
-  * *prev_hash* - The hash of the block immediately preceding this block in the chain.
-  * *reward* - The amount of new atomic units generated in this block and rewarded to the miner. Note: 1 XMR = 1e12 atomic units.
-  * *timestamp* - The time the block was recorded into the blockchain.
-* *status* - General RPC error code. "OK" means everything looks good.
+  * *depth* -  unsigned int; The number of blocks succeeding this block on the blockchain. A larger number means an older block.
+  * *difficulty* - unsigned int; The strength of the Monero network based on mining power.
+  * *hash* - string; The hash of this block.
+  * *height* - unsigned int; The number of blocks preceding this block on the blockchain.
+  * *major_version* - unsigned int; The major version of the monero protocol at this block height.
+  * *minor_version* - unsigned int; The minor version of the monero protocol at this block height.
+  * *nonce* - unsigned int; a cryptographic random one-time number used in mining a Monero block.
+  * *orphan_status* - boolean; Usually `false`. If `true`, this block is not part of the longest chain.
+  * *prev_hash* - string; The hash of the block immediately preceding this block in the chain.
+  * *reward* - unsigned int; The amount of new atomic units generated in this block and rewarded to the miner. Note: 1 XMR = 1e12 atomic units.
+  * *timestamp* - unsigned int; The time the block was recorded into the blockchain.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 In this example, the most recent block (990793 at the time) is returned:
 
@@ -206,7 +211,7 @@ Block header information can be retrieved using either a block's hash or height.
 
 Inputs:
 
-* *hash* - The block's sha256 hash.
+* *hash* - string; The block's sha256 hash.
 
 Outputs:
 
@@ -244,7 +249,7 @@ Similar to `getblockheaderbyhash` above, this method includes a block's height a
 
 Inputs:
 
-* *height* - The block's height.
+* *height* - unsigned int; The block's height.
 
 Outputs:
 
@@ -282,14 +287,14 @@ Full block information can be retrieved by either block height or hash, like wit
 
 Inputs (pick one of the following):
 
-* *height* - The block's height.
-* *hash* - The block's hash.
+* *height* - unsigned int; The block's height.
+* *hash* - string; The block's hash.
 
 Outputs:
 
-* *blob* - 
+* *blob* - string; Hexadecimal blob of block information.
 * *block_header* - A structure containing block header information. See [getlastblockheader](#getlastblockheader).
-* *json* - JSON formatted block details:
+* *json* - json string; JSON formatted block details:
   * *major_version* - Same as in block header.
   * *minor_version* - Same as in block header.
   * *timestamp* - Same as in block header.
@@ -308,7 +313,7 @@ Outputs:
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
     * *signatures* - Contain signatures of tx signers. Coinbased txs do not have signatures.
   * *tx_hashes* - List of hashes of non-coinbase transactions in the block. If there are no other transactions, this will be an empty list.
-* *status* - General RPC error code. "OK" means everything looks good.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 **Look up by height:**
 
@@ -379,22 +384,22 @@ Inputs: *None*.
 Outputs:
 
 * *connections* - List of all connections and their info:
-  * *avg_download* - Average bytes of data downloaded by node.
-  * *avg_upload* - Average bytes of data uploaded by node.
-  * *current_download* - Current bytes downloaded by node.
-  * *current_upload* - Current bytes uploaded by node.
-  * *incoming* - Boolean, is the node getting information from your node?
-  * *ip* - The node's IP address
-  * *live_time* - 
-  * *local_ip* - Boolean
-  * *localhost* - Boolean
-  * *peer_id* - The node's ID on the network.
-  * *port* - The port that the node is using to connect to the network.
-  * *recv_count* - 
-  * *recv_idle_time* - 
-  * *send_count* - 
-  * *send_idle_time* - 
-  * *state* - 
+  * *avg_download* - unsigned int; Average bytes of data downloaded by node.
+  * *avg_upload* - unsigned int; Average bytes of data uploaded by node.
+  * *current_download* - unsigned int; Current bytes downloaded by node.
+  * *current_upload* - unsigned int; Current bytes uploaded by node.
+  * *incoming* - boolean; Is the node getting information from your node?
+  * *ip* - string; The node's IP address.
+  * *live_time* - unsigned int
+  * *local_ip* - boolean
+  * *localhost* - boolean
+  * *peer_id* - string; The node's ID on the network.
+  * *port* - stringl The port that the node is using to connect to the network.
+  * *recv_count* - unsigned int
+  * *recv_idle_time* - unsigned int
+  * *send_count* - unsigned int
+  * *send_idle_time* - unsigned int
+  * *state* - string
 
 Following is an example of `get_connections` and it's return:
 
@@ -437,20 +442,20 @@ Inputs: *None*.
 
 Outputs:
 
-* *alt_blocks_count* - Number of alternative blocks to main chain.
-* *difficulty* - Network difficulty (analogous to the strength of the network)
-* *grey_peerlist_size* - 
-* *height* - Current length of longest chain known to daemon.
-* *incoming_connections_count* - Number of peers connected to and pulling from your node.
-* *outgoing_connections_count* - Number of peers that you are connected to and getting information from.
-* *status* - General RPC error code. "OK" means everything looks good.
-* *target* - Current target for next proof of work.
-* *target_height* - The height of the next block in the chain.
-* *testnet* - A Boolean operator stating if the node is on the testnet (true) or mainnet (false).
-* *top_block_hash* - Hash of the highest block in the chain.
-* *tx_count* - Total number of non-coinbase transaction in the chain.
-* *tx_pool_siz* - Number of transactions that have been broadcast but not included in a block.
-* *white_peerlist_size* - 
+* *alt_blocks_count* - unsigned int; Number of alternative blocks to main chain.
+* *difficulty* - unsigned int; Network difficulty (analogous to the strength of the network)
+* *grey_peerlist_size* - unsigned int; Grey Peerlist Size
+* *height* - unsigned int; Current length of longest chain known to daemon.
+* *incoming_connections_count* - unsigned int; Number of peers connected to and pulling from your node.
+* *outgoing_connections_count* - unsigned int; Number of peers that you are connected to and getting information from.
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *target* - unsigned int; Current target for next proof of work.
+* *target_height* - unsigned int; The height of the next block in the chain.
+* *testnet* - boolean; States if the node is on the testnet (true) or mainnet (false).
+* *top_block_hash* - string; Hash of the highest block in the chain.
+* *tx_count* - unsigned int; Total number of non-coinbase transaction in the chain.
+* *tx_pool_siz* - unsigned int; Number of transactions that have been broadcast but not included in a block.
+* *white_peerlist_size* - unsigned int; White Peerlist Size
 
 Following is an example `get_info` call and its return:
 
@@ -486,15 +491,15 @@ Inputs: *None*.
 
 Outputs:
 
-* *earliest_height* - Block height at which hard fork would be enabled if voted in.
-* *enabled* - Tells if hard fork is enforced.
-* *state* - Current hard fork state: 0 (There is likely a hard fork), 1 (An update is needed to fork properly), or 2 (Everything looks good).
-* *status* - General RPC error code. "OK" means everything looks good.
-* *threshold* - Minimum percent of votes to trigger hard fork. Default is 80.
-* *version* - The major block version for the fork.
-* *votes* - Number of votes towards hard fork.
-* *voting* - Hard fork voting status.
-* *window* - Number of blocks over which current votes are cast. Default is 10080 blocks.
+* *earliest_height* - unsigned int; Block height at which hard fork would be enabled if voted in.
+* *enabled* - boolean; Tells if hard fork is enforced.
+* *state* - unsigned int; Current hard fork state: 0 (There is likely a hard fork), 1 (An update is needed to fork properly), or 2 (Everything looks good).
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *threshold* - unsigned int; Minimum percent of votes to trigger hard fork. Default is 80.
+* *version* - unsigned int; The major block version for the fork.
+* *votes* - unsigned int; Number of votes towards hard fork.
+* *voting* - unsigned int; Hard fork voting status.
+* *window* - unsigned int; Number of blocks over which current votes are cast. Default is 10080 blocks.
 
 Example:
 
@@ -524,13 +529,13 @@ Ban another node by IP.
 Inputs:
 
 * *bans* - A list of nodes to ban:
-  * *ip* - IP address to ban, in Int format.
-  * *ban* - Set `true` to ban.
-  * *seconds* - Number of seconds to ban node.
+  * *ip* - unsigned int; IP address to ban, in Int format.
+  * *ban* - boolean; Set `true` to ban.
+  * *seconds* - unsigned int; Number of seconds to ban node.
   
 Outputs:
 
-* *status* - General RPC error code. "OK" means everything looks good.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 Example:
 
@@ -552,9 +557,9 @@ Inputs: *None*.
 Outputs:
 
 * *bans* - List of banned nodes:
-  * *ip* - Banned IP address, in Int format.
-  * *seconds* - Local Unix time that IP is banned until.
-* *status* - General RPC error code. "OK" means everything looks good.
+  * *ip* - unsigned int; Banned IP address, in Int format.
+  * *seconds* - unsigned int; Local Unix time that IP is banned until.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 Example:
 
@@ -573,7 +578,9 @@ Example:
 }
 
 
-## Other Daemon RPC Calls
+---
+
+# Other Daemon RPC Calls
 
 Not all daemon RPC calls use the JSON_RPC interface. This section gives examples of these calls.
 
@@ -591,7 +598,7 @@ The data structure for these calls is different than the JSON RPC calls. Whereas
 Note: It is recommended to use JSON RPC where such alternatives exist, rather than the following methods. For example, the recommended way to get a node's height is via the JSON RPC methods [get_info](#get_info) or [getlastblockheader](#getlastblockheader), rather than [getheight](#getheight) below.
 
 
-### getheight
+### /getheight
 
 Get the node's current height.
 
@@ -599,7 +606,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *height* - Current length of longest chain known to daemon. 
+* *height* - unsigned int; Current length of longest chain known to daemon. 
 
 {:.cli-code}
 <span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/getheight -H 'Content-Type: application/json'
@@ -609,20 +616,20 @@ Outputs:
 }
 
 
-### gettransactions
+### /gettransactions
 
 Look up one or more transactions by hash.
 
 Inputs:
 
-* *txs_hashes* - List of transaction hashes to look up.
-* *decode_as_json* - Optional. If set `true`, the returned transaction information will be decoded rather than binary.
+* *txs_hashes* - string list; List of transaction hashes to look up.
+* *decode_as_json* - boolean; Optional. If set `true`, the returned transaction information will be decoded rather than binary.
 
 Outputs:
 
 * *status* - General RPC error code. "OK" means everything looks good.
-* *txs_as_hex* - Full transaction information as a hex string.
-* *txs_as_json* - (Optional - returned if set in inputs.) List of transaction info:
+* *txs_as_hex* - string; Full transaction information as a hex string.
+* *txs_as_json* - json string; (Optional - returned if set in inputs.) List of transaction info:
   * *version* - Transaction version
   * *unlock_time* - If not 0, this tells when a transaction output is spendable.
   * *vin* - List of inputs into transaction:
@@ -656,18 +663,18 @@ Example 2: Decode returned transaction information in JSON format. Note: the "vo
 }
 
 
-### is_key_image_spent
+### /is_key_image_spent
 
 Check if outputs have been spent using the key image associated with the output.
 
 Inputs:
 
-* *key_images* - List of key image hex strings to check.
+* *key_images* - string list; List of key image hex strings to check.
 
 Outputs:
 
-* *spent_status* - List of statuses for each image checked. Statuses are follows: 0 = unspent, 1 = spent in blockchain, 2 = spent in transaction pool
-* *status* - General RPC error code. "OK" means everything looks good.
+* *spent_status* - unsigned int list; List of statuses for each image checked. Statuses are follows: 0 = unspent, 1 = spent in blockchain, 2 = spent in transaction pool
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 Example:
 
@@ -678,17 +685,18 @@ Example:
   "status": "OK"
 }
 
-### sendrawtransaction
+
+### /sendrawtransaction
 
 Broadcast a raw transaction to the network.
 
 Inputs:
 
-* *tx_as_hex* - Full transaction information as hexidecimal string.
+* *tx_as_hex* - string; Full transaction information as hexidecimal string.
 
 Outputs:
 
-* *status* - General RPC error code. "OK" means everything looks good.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 Example (No return information included here.):
 
@@ -696,7 +704,7 @@ Example (No return information included here.):
 <span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
 
 
-### get_transaction_pool
+### /get_transaction_pool
 
 Show information about valid transactions seen by the node but not yet mined into a block, as well as spent key image information in the node's memory.
 
@@ -705,20 +713,20 @@ Inputs: *None*.
 Outputs:
 
 * *spent_key_images* - List of spent output key images:
-  * *id_hash* - Key image ID hash.
-  * *txs_hashes* - Key image transaction hashes.
-* *status* - General RPC error code. "OK" means everything looks good.
+  * *id_hash* - string; Key image ID hash.
+  * *txs_hashes* - string list; Key image transaction hashes.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 * *transactions* - List of transactions in the mempool that have not been included in a block:
-  * *blob_size* - The size of the full transaction blob.
-  * *fee* - The amount of the mining fee included in the transaction, in atomic units.
-  * *id_hash* - The transaction ID hash.
-  * *kept_by_block* - Boolean, we do not accept transactions that timed out before, unless set `true`.
-  * *last_failed_height* - If the transaction has previously timed out, this tells at what height that occured.
-  * *last_failed_id_hash* - Like the previous, this tells the previous transaction ID hash.
-  * *max_used_block_height* - Tells the height of the most recent block with an output used in this transaction.
-  * *max_used_block_hash* - Tells the hash of the most recent block with an output used in this transaction.
-  * *receive_time* - The Unix time that the transaction was first seen on the network by the node.
-  * *tx_json* - JSON structure of all information in the transaction:
+  * *blob_size* - unsigned int; The size of the full transaction blob.
+  * *fee* - unsigned int; The amount of the mining fee included in the transaction, in atomic units.
+  * *id_hash* - string; The transaction ID hash.
+  * *kept_by_block* - boolean; We do not accept transactions that timed out before, unless set `true`.
+  * *last_failed_height* - unsigned int; If the transaction has previously timed out, this tells at what height that occured.
+  * *last_failed_id_hash* - string; Like the previous, this tells the previous transaction ID hash.
+  * *max_used_block_height* - unsigned int; Tells the height of the most recent block with an output used in this transaction.
+  * *max_used_block_hash* - string; Tells the hash of the most recent block with an output used in this transaction.
+  * *receive_time* - unsigned int; The Unix time that the transaction was first seen on the network by the node.
+  * *tx_json* - json string; JSON structure of all information in the transaction:
     * *version* - Transaction version
     * *unlock_time* - If not 0, this tells when a transaction output is spendable.
     * *vin* - List of inputs into transaction:
@@ -763,7 +771,7 @@ Example (Note: Some lists in the returned information have been truncated for di
 }
 
 
-### stop_daemon
+### /stop_daemon
 
 Send a command to the daemon to safely disconnect and shut down.
 
@@ -771,7 +779,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *status* - General RPC error code. "OK" means everything looks good.
+* *status* - string; General RPC error code. "OK" means everything looks good.
 
 Example:
 
