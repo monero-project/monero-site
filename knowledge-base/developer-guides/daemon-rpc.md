@@ -35,7 +35,12 @@ JSON RPC Methods:
 
 Other RPC Methods:
 
-* [](#)
+* [getheight](#getheight)
+* [gettransactions](#gettransactions)
+* [is_key_image_spent](#is_key_image_spent)
+* [sendrawtransaction](#sendrawtransaction)
+* [get_transaction_pool](#get_transaction_pool)
+* [stop_daemon](#stop_daemon)
 
 
 ## JSON RPC Methods
@@ -572,5 +577,207 @@ Example:
 
 Not all daemon RPC calls use the JSON_RPC interface. This section gives examples of these calls.
 
-###
+The data structure for these calls is different than the JSON RPC calls. Whereas the JSON RPC methods were called using the `/json_rpc` extension and specifying a method, these methods are called at their own extensions. For example:
+
+    IP=127.0.0.1
+    PORT=18081
+    METHOD='gettransactions'
+	PARAMS='{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"]}'
+	curl \
+		-X POST http://$IP:$PORT/$METHOD \
+		-d $PARAMS \
+		-H 'Content-Type: application/json'
+
+Note: It is recommended to use JSON RPC where such alternatives exist, rather than the following methods. For example, the recommended way to get a node's height is via the JSON RPC methods [get_info](#get_info) or [getlastblockheader](#getlastblockheader), rather than [getheight](#getheight) below.
+
+
+### getheight
+
+Get the node's current height.
+
+Inputs: *None*.
+
+Outputs:
+
+* *height* - Current length of longest chain known to daemon. 
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/getheight -H 'Content-Type: application/json'
+{
+  "height": 993488,
+  "status": "OK"
+}
+
+
+### gettransactions
+
+Look up one or more transactions by hash.
+
+Inputs:
+
+* *txs_hashes* - List of transaction hashes to look up.
+* *decode_as_json* - Optional. If set `true`, the returned transaction information will be decoded rather than binary.
+
+Outputs:
+
+* *status* - General RPC error code. "OK" means everything looks good.
+* *txs_as_hex* - Full transaction information as a hex string.
+* *txs_as_json* - (Optional - returned if set in inputs.) List of transaction info:
+  * *version* - Transaction version
+  * *unlock_time* - If not 0, this tells when a transaction output is spendable.
+  * *vin* - List of inputs into transaction:
+    * *key* - The public key of the previous output spent in this transaction.
+      * *amount* - The amount of the input, in atomic units.
+      * *key_offsets* - A list of integer offets to the input.
+      * *k_image* - The key image for the given input
+  * *vout* - List of outputs from transaction:
+    * *amount* - Amount of transaction output, in atomic units.
+    * *target* - Output destination information:
+      * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
+  * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
+  * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+Example 1: Return transaction information in binary format.
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"]}' -H 'Content-Type: application/json'
+{
+  "status": "OK",
+  "txs_as_hex": ["..."]
+}
+
+Example 2: Decode returned transaction information in JSON format. Note: the "vout" list has been truncated in the displayed return for space considerations.
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"],"decode_as_json":true}' -H 'Content-Type: application/json'
+{
+  "status": "OK",
+  "txs_as_hex": ["..."],
+  "txs_as_json": ["{\n  \"version\": 1, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 70000000, \n        \"key_offsets\": [ 35952\n        ], \n        \"k_image\": \"d16908468dff9438a9814fe96bdaa575f06fe8da85772b72e54926428712293d\"\n      }\n    }, {\n      \"key\": {\n        \"amount\": 400000000000000, \n        \"key_offsets\": [ 6830\n        ], \n        \"k_image\": \"c7a7024b763df1181ae6fe821b70669735e38a68162ac02362e33acbe829b605\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 50000, \n      \"target\": {\n        \"key\": \"f6be43f7be4f06adcb1d06f4a07c637c7359e009cf3e57bb32b8c9ea636509c3\"\n      }\n    }, {\n      \"amount\": 200000, \n      \"target\": {\n        \"key\": \"b0a7a8e32f2b5302552bcd8d85112c62838b1f56cccd844eb9b63e0a732d0353\"\n      }\n    },  ...  \n  ], \n  \"extra\": [ 1, 225, 240, 98, 34, 169, 73, 47, 237, 117, 192, 30, 192, 60, 155, 47, 4, 115, 20, 21, 11, 13, 252, 219, 129, 13, 174, 37, 36, 78, 191, 141, 109\n  ], \n  \"signatures\": [ \"e6a3be8003d481d2855c8127f56871de3d28a4fb52385b999eb986c831c5cc08361c126b0db24a21b6c4299b438ee2be201d44d57a371230b9cd04395ab8c400\", \"8309851abaf2cf2a7091e0cdb9c83704fa7d68838a7a8ef8c178bb55a1e93a038dd18bb4a7549dc056b7a70e037cabd80911a03f427e36f712756d4c00f38f0b\"]\n}"]
+}
+
+
+### is_key_image_spent
+
+Check if outputs have been spent using the key image associated with the output.
+
+Inputs:
+
+* *key_images* - List of key image hex strings to check.
+
+Outputs:
+
+* *spent_status* - List of statuses for each image checked. Statuses are follows: 0 = unspent, 1 = spent in blockchain, 2 = spent in transaction pool
+* *status* - General RPC error code. "OK" means everything looks good.
+
+Example:
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/is_key_image_spent -d '{"key_images":["8d1bd8181bf7d857bdb281e0153d84cd55a3fcaa57c3e570f4a49f935850b5e3","7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4"]}' -H 'Content-Type: application/json'
+{
+  "spent_status": [1,2],
+  "status": "OK"
+}
+
+### sendrawtransaction
+
+Broadcast a raw transaction to the network.
+
+Inputs:
+
+* *tx_as_hex* - Full transaction information as hexidecimal string.
+
+Outputs:
+
+* *status* - General RPC error code. "OK" means everything looks good.
+
+Example (No return information included here.):
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
+
+
+### get_transaction_pool
+
+Show information about valid transactions seen by the node but not yet mined into a block, as well as spent key image information in the node's memory.
+
+Inputs: *None*.
+
+Outputs:
+
+* *spent_key_images* - List of spent output key images:
+  * *id_hash* - Key image ID hash.
+  * *txs_hashes* - Key image transaction hashes.
+* *status* - General RPC error code. "OK" means everything looks good.
+* *transactions* - List of transactions in the mempool that have not been included in a block:
+  * *blob_size* - The size of the full transaction blob.
+  * *fee* - The amount of the mining fee included in the transaction, in atomic units.
+  * *id_hash* - The transaction ID hash.
+  * *kept_by_block* - Boolean, we do not accept transactions that timed out before, unless set `true`.
+  * *last_failed_height* - If the transaction has previously timed out, this tells at what height that occured.
+  * *last_failed_id_hash* - Like the previous, this tells the previous transaction ID hash.
+  * *max_used_block_height* - Tells the height of the most recent block with an output used in this transaction.
+  * *max_used_block_hash* - Tells the hash of the most recent block with an output used in this transaction.
+  * *receive_time* - The Unix time that the transaction was first seen on the network by the node.
+  * *tx_json* - JSON structure of all information in the transaction:
+    * *version* - Transaction version
+    * *unlock_time* - If not 0, this tells when a transaction output is spendable.
+    * *vin* - List of inputs into transaction:
+      * *key* - The public key of the previous output spent in this transaction.
+        * *amount* - The amount of the input, in atomic units.
+        * *key_offsets* - A list of integer offets to the input.
+        * *k_image* - The key image for the given input
+    * *vout* - List of outputs from transaction:
+      * *amount* - Amount of transaction output, in atomic units.
+      * *target* - Output destination information:
+        * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
+    * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
+    * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+
+Example (Note: Some lists in the returned information have been truncated for display reasons):
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/get_transaction_pool -H 'Content-Type: application/json'
+{
+  "spent_key_images": [{
+    "id_hash": "1edb9ecc39602040282d326070ad22cb473c952c0d6280c9c4c3b853fb34f3bc",
+    "txs_hashes": ["409911b2be02e3f0e930b326c67ab9e74675885ce23d71bb3bd28b62bc3e7803"]
+  },{
+    "id_hash": "4adb4bb63b3397027340ca4e6c45f4ce2147dfb3a4e0fafdec18834ae594a05e",
+    "txs_hashes": ["946f1f4c52e3426a41959c93b60078f314813bc4bdebcf69b8ee11d593b2bd14"]
+  },
+  ...],
+  "status": "OK",
+  "transactions": [{
+    "blob_size": 25761,
+    "fee": 290000000000,
+    "id_hash": "11d4cff23e610fac6a2b89187ad61d429a5e226652693dcac5d83d506eb92b96",
+    "kept_by_block": false,
+    "last_failed_height": 0,
+    "last_failed_id_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "max_used_block_height": 954508,
+    "max_used_block_id_hash": "03f96b374778bc059e47b96e2beec2e6d4d9e0ad39afeabdbcd77e1bd5a62f81",
+    "receive_time": 1457676127,
+    "tx_json": "{\n  \"version\": 1, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 70000000000, \n        \"key_offsets\": [ 63408, 18978, 78357, 16560\n        ], \n        \"k_image\": \"7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4\"\n      }\n    },  ...  ], \n  \"vout\": [ {\n      \"amount\": 80000000000, \n      \"target\": {\n        \"key\": \"094e6a1b187385533665f89db741149f42d95fdc50bdd2a2384bcd1dc5209c55\"\n      }\n    },  ...  ], \n  \"extra\": [ 2, 33, 0, 15, 56, 190, 21, 169, 77, 13, 182, 209, 51, 35, 54, 96, 89, 237, 96, 23, 24, 107, 240, 79, 40, 86, 64, 68, 45, 166, 119, 192, 17, 225, 23, 1, 31, 159, 145, 15, 173, 255, 165, 192, 55, 84, 127, 154, 163, 25, 85, 204, 212, 127, 147, 133, 118, 218, 166, 52, 78, 188, 131, 235, 9, 159, 105, 158\n  ], \n  \"signatures\": [ \"966e5a67fbdbf72d7dc0364b705121a58e0ced7e2ab45747b6b154c05a1afe04fac4aac7f64faa2dc6dd4d51b8277f11e2f2ec7729fac225088befe3b8399c0b71a4cb55b9d0e20f93d305c78cebceff1bcfcfaf225428dfcfaaec630c88720ab65bf5d3399dd1ac82ea0ecf308b3f80d9780af7742fb157692cd60515a7e2086878f082117fa80fff3d257de7d3a2e9cc8b3472ef4a5e545d90e1159523a60f38d16cece783579627124776813334bdb2a2df4171ef1fa12bf415da338ce5085c01e7a715638ef5505aebec06a0625aaa72d13839838f7d4f981673c8f05f08408e8b372f900af7227c49cfb1e1febab6c07dd42b7c26f921cf010832841205\",  ...  ]\n}"
+  },
+  ...]
+}
+
+
+### stop_daemon
+
+Send a command to the daemon to safely disconnect and shut down.
+
+Inputs: *None*.
+
+Outputs:
+
+* *status* - General RPC error code. "OK" means everything looks good.
+
+Example:
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/stop_daemon -H 'Content-Type: application/json'
+{
+  "status": "OK"
+}
 
