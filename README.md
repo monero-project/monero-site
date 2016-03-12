@@ -31,6 +31,14 @@ Deploying this website requires Jekyll (3.0+) and the following ruby gems: build
 
 Multiple language support will be added soon.
 
+To test changes locally before pushing to git, make sure you have ruby installed on your system, then:
+
+1. Make sure you have the necessary ruby gems: `gem install builder rubysl-rexml jekyll-paginate jekyll`
+2. Navigate to the your local `monero-site` repository.
+3. Serve the website: `jekyll serve`
+4. Open a browser and go to [http://127.0.0.1:4000](http://127.0.0.1:4000).
+5. A basic page list will appear. Click on the part of the site you are working on (ex: `design_goals`) and see your work!
+
 ## License
 
 Copyright (c) 2014-2016, The Monero Project
