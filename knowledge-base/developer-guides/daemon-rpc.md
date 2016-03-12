@@ -18,16 +18,16 @@ Many RPC calls use the daemon's JSON RPC interface while others use their own in
 ### [JSON RPC Methods](#json-rpc-methods):
 
 * [getblockcount](#getblockcount)
-* [on_getblockhash](#on_getblockhash)
+* [on_getblockhash](#ongetblockhash)
 * [getblocktemplate](#getblocktemplate)
 * [submitblock](#submitblock)
 * [getlastblockheader](#getlastblockheader)
 * [getblockheaderbyhash](#getblockheaderbyhash)
 * [getblockheaderbyheight](#getblockheaderbyheight)
 * [getblock](#getblock)
-* [get_connections](#get_connections)
-* [get_info](#get_info)
-* [hard_fork_info](#hard_fork_info)
+* [get_connections](#getconnections)
+* [get_info](#getinfo)
+* [hard_fork_info](#hardforkinfo)
 * [setbans](#setbans)
 * [getbans](#getbans)
 
@@ -35,10 +35,10 @@ Many RPC calls use the daemon's JSON RPC interface while others use their own in
 
 * [/getheight](#getheight)
 * [/gettransactions](#gettransactions)
-* [/is_key_image_spent](#is_key_image_spent)
+* [/is_key_image_spent](#iskeyimagespent)
 * [/sendrawtransaction](#sendrawtransaction)
-* [/get_transaction_pool](#get_transaction_pool)
-* [/stop_daemon](#stop_daemon)
+* [/get_transaction_pool](#gettransactionpool)
+* [/stop_daemon](#stopdaemon)
 
 
 ---
@@ -305,7 +305,7 @@ Outputs:
       * *amount* - The amount of the output, in atomic units.
       * *target* - 
         * *key* - 
-    * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
+    * *extra* - Usually called the "transaction ID" but can be used to include any random 32 byte/64 character hex string.
     * *signatures* - Contain signatures of tx signers. Coinbased txs do not have signatures.
   * *tx_hashes* - List of hashes of non-coinbase transactions in the block. If there are no other transactions, this will be an empty list.
 * *status* - string; General RPC error code. "OK" means everything looks good.
@@ -590,7 +590,7 @@ The data structure for these calls is different than the JSON RPC calls. Whereas
 		-d $PARAMS \
 		-H 'Content-Type: application/json'
 
-Note: It is recommended to use JSON RPC where such alternatives exist, rather than the following methods. For example, the recommended way to get a node's height is via the JSON RPC methods [get_info](#get_info) or [getlastblockheader](#getlastblockheader), rather than [getheight](#getheight) below.
+Note: It is recommended to use JSON RPC where such alternatives exist, rather than the following methods. For example, the recommended way to get a node's height is via the JSON RPC methods [get_info](#getinfo) or [getlastblockheader](#getlastblockheader), rather than [getheight](#getheight) below.
 
 
 ### /getheight
