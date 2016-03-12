@@ -15,6 +15,8 @@ This is a list of the bitmonerod daemon RPC calls, their inputs and outputs, and
 
 Many RPC calls use the daemon's JSON RPC interface while others use their own interfaces, as demonstrated below.
 
+Note: In the following guide, "atomic units" refer to the smallest fraction of 1 Monero according to the bitmonerod and simplewallet implementation. **1 XMR = 1e12 atomic units.**
+
 ### [JSON RPC Methods](#json-rpc-methods):
 
 * [getblockcount](#getblockcount)
