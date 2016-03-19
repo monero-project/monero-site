@@ -32,6 +32,8 @@
       url: https://github.com/TheKoziTwo/xmr-integration
     - name: PHP-Monero (PHP)
       url: https://github.com/MalMen/PHP-Monero
+    - name: Monero-PHP (PHP)
+      url: https://github.com/PsychicCat/monero-php
 - category: Tools
   merchants:
     - name: ForkGuard Network Monitoring
