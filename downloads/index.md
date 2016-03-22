@@ -15,7 +15,7 @@ Monero Core consists of several applications, including bitmonerod (the daemon u
 
 If you are using Monero Core for the first time you can simply download an appropriate release, and run bitmonerod to get synced up to the network.
 
-Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
+Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
 
 <div class="row">
 
