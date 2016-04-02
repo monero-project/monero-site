@@ -38,8 +38,7 @@ In this example, `Balance` is your total balance. The `unlocked balance` is the 
 
 You will need the standard address you want to send to (a long string starting with '4'), and
 possibly a payment ID, if the receiving party requires one. In that latter case, that party
-may instead give you an integrated address, which is both of these packed into a single address
-(integrated address do not start with 4, but A).
+may instead give you an integrated address, which is both of these packed into a single address.
 
 ### Sending to a standard address:
 
