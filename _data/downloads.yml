@@ -1,7 +1,7 @@
 - platform: Windows, 64-bit
   icon: windows.svg
   url: win64
-  hash: a6f171c942a2b75432573c3cea6ca3becb10769a08eaaea5cca080c92b8ee297
+  hash: 9d939613c0eba872a3dacd7fda572f4c7d2279207ce1ec0b15b46da4e1ccd5b9
   version: 0.9.4.0
   tag: Hydrogen Helix
   blockchain: win

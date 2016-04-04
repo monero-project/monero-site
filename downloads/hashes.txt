@@ -6,21 +6,21 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
+9d939613c0eba872a3dacd7fda572f4c7d2279207ce1ec0b15b46da4e1ccd5b9  monero.win.x64.v0-9-4-0.zip
+c9e4abc19c767ab570c2d0a9d504ba75d73eea26e7cf719a1260fdbb9469c250  monero.win.x86.v0-9-4-0.zip
+ded52162d34d5a726b53ffd14ebbf02388d9b396f3f4e278a4755e5286b1aeab  monero.mac.x64.v0-9-4-0.tar.bz2
 0b3610c9b301ea14174ce700923a604909fa7cbd9335849112c9d6cfb07a1a43  monero.linux.x64.v0-9-4-0.tar.bz2
 c070125bb885c5b887d3adce866e9bb941ed790485ef34444e62e0881fe8852a  monero.linux.x86.v0-9-4-0.tar.bz2
-ded52162d34d5a726b53ffd14ebbf02388d9b396f3f4e278a4755e5286b1aeab  monero.mac.x64.v0-9-4-0.tar.bz2
-a6f171c942a2b75432573c3cea6ca3becb10769a08eaaea5cca080c92b8ee297  monero.win.x64.v0-9-4-0.zip
-c9e4abc19c767ab570c2d0a9d504ba75d73eea26e7cf719a1260fdbb9469c250  monero.win.x86.v0-9-4-0.zip
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBCAAGBQJW/0v1AAoJEFVDLfMczU/NOtMH/RXhzTuucTf0Mu+vM0O8xpTP
-JfS5KpinwtIvrqUGUa/QchBZoTXZCo/ZaYqVonqcJg7+b4lDfgzbVS69YwOcH6lb
-XRZ1NCjMQCik7OiH6pTdl98KoVFd+qDc5b7QpHU5M5HJ5Ogc3+sZtUiZETJdcYau
-RK4AAcS/s6EJcAFvS5LxH2vLEQfaMA6rDh9Rh2viXgS1uXAmiKmLO2qJD/ekLvwq
-5Yq+RSMPZ5XwElmQ0JYmwHbFzxaXj+ow/CDRKXZYefPrQ+b4aLTVwmWAU9v2R6w5
-9ACO0gTN90KltHI89MOXWHXoCBThPo+pDElWmgSpDTcZmuAGBOxwcEoMw0DfqI0=
-=p21w
+iQEcBAEBCAAGBQJXAqWrAAoJEFVDLfMczU/NVQQH/jbdEH8y2+M8f3ZTPVqU5rla
+I7u0O4e9gVdZX+nfjjVx9ElUgzvrSbt1LN+LNX9/uY2T9udHrF3NmxamK9oqoE2x
+6ZzS6qagXVL/REZfUZP8xduyKL3mXqrUs+WK3c9KdWWgViiJGcjqztayuVmd4ItH
+wRYMIS7mi1c06j+BiFk9b4TfNhlDRjyVSnjt7iebvFxeGVWl02T/08RoW0oxmWy/
+DfZBsQYmnDF+nQjrtW9IAJfpzLuXG7APV/rtKfTIqRNwl1bogvvdg/BRPR0QIC5J
+vSH1cqP0DUjh4/CNmRlX6KdNe5c5Q6t+KcihK13jJfck4o18g1Ap5qxXAQ8tmCE=
+=faLM
 -----END PGP SIGNATURE-----
