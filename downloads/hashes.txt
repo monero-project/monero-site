@@ -1,27 +1,26 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
+Hash: SHA256
 
 This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-246115b0da133e0203dc78d26bbc82e9b76a178939bff8d4541bf04a02a19854  monero.win.x64.v0-9-3-0.zip
-4663222a810ad854da1fc9d665e51252e61ddb1a8f69de3a31ad195386d445a2  monero.win.x86.v0-9-3-0.zip
-f471a420485413d5fcb1b19065a3b4e9a68c49596ddd6291787ad34121bad32c  monero.mac.x64.v0-9-3-0.tar.bz2
-9e6747b69642389e98ca5f70cec7276f7af7156e5dce95409a8da7cccff5876e  monero.linux.x64.v0-9-3-0.tar.bz2
-90c51c4a68f78ac2262a7b5a676f02d43ba7b9b6800b8b150d89980604c969f2  monero.linux.x86.v0-9-3-0.tar.bz2
-c312ba0810bf04ab2e28b61a50de2a83c1c614fd789bab4cacacb716134a7239  monero.linux.arm7.v0-9-3-0.tar.bz2
+9d939613c0eba872a3dacd7fda572f4c7d2279207ce1ec0b15b46da4e1ccd5b9  monero.win.x64.v0-9-4-0.zip
+c9e4abc19c767ab570c2d0a9d504ba75d73eea26e7cf719a1260fdbb9469c250  monero.win.x86.v0-9-4-0.zip
+ded52162d34d5a726b53ffd14ebbf02388d9b396f3f4e278a4755e5286b1aeab  monero.mac.x64.v0-9-4-0.tar.bz2
+0b3610c9b301ea14174ce700923a604909fa7cbd9335849112c9d6cfb07a1a43  monero.linux.x64.v0-9-4-0.tar.bz2
+c070125bb885c5b887d3adce866e9bb941ed790485ef34444e62e0881fe8852a  monero.linux.x86.v0-9-4-0.tar.bz2
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJW8UP6AAoJEFVDLfMczU/NYYIH/i46PXwNyt2ghnpslGXGrMhv
-72ozR4OjdkNzl/z1PwcE2lAY8Z8od/OiZRB6zJl77555J+MxrP8rNa1i4fLRMAQn
-5hIss+dhy6dRf+Tfgd6sZo6iXE5zmvgeOHgIfdtU6TRUC0ak0TRuFeQsTd8sXUCW
-u6bIhRS2Bgo3C/Nj/o4k8zPUBjElc4XQyFFMqaM3PUuG8Ok/j0Nzyd+P0Av+jdfe
-4SItOYH13V80ZnqEcp7QKeFKNYQVs7aGKzEMs/QNZvoscuiUA1RStkvwJ9pGfno/
-F0cWnZSzGhYErIRldeQcTwJKIGtk1GcVnZLK1jkjlZeXq7MLtyKDblfctBfUmn8=
-=MkuA
+iQEcBAEBCAAGBQJXAqWrAAoJEFVDLfMczU/NVQQH/jbdEH8y2+M8f3ZTPVqU5rla
+I7u0O4e9gVdZX+nfjjVx9ElUgzvrSbt1LN+LNX9/uY2T9udHrF3NmxamK9oqoE2x
+6ZzS6qagXVL/REZfUZP8xduyKL3mXqrUs+WK3c9KdWWgViiJGcjqztayuVmd4ItH
+wRYMIS7mi1c06j+BiFk9b4TfNhlDRjyVSnjt7iebvFxeGVWl02T/08RoW0oxmWy/
+DfZBsQYmnDF+nQjrtW9IAJfpzLuXG7APV/rtKfTIqRNwl1bogvvdg/BRPR0QIC5J
+vSH1cqP0DUjh4/CNmRlX6KdNe5c5Q6t+KcihK13jJfck4o18g1Ap5qxXAQ8tmCE=
+=faLM
 -----END PGP SIGNATURE-----
