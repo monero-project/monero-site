@@ -638,7 +638,7 @@ Outputs:
     * *amount* - Amount of transaction output, in atomic units.
     * *target* - Output destination information:
       * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
-  * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
+  * *extra* - Usually called the "payment ID" but can be used to include any random 32 bytes.
   * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
 Example 1: Return transaction information in binary format.
 
