@@ -275,10 +275,3 @@ An overview can be read here: https://hellomonero.com/article/monero-bi-weekly-d
 **\<fluffypony>** kk  
 **\<fluffypony>** ok so I think let's move on to Kovri - anonimal, the floor is yours  
 **\<dEBRUYNE>** \<moneromooo> Rewrite, not contunue, AFAIK. <= Correct. Rewrite is in a sense also continue right? :P  
-**\<smooth>** hi guys, sorry i missed the meeting. Very interesting conversation. One thing stuck out at me:
-**\<smooth>** 16:34 < yrashk> moneromooo: I guess it is highly dependent on the nature of the project — how many bad actors are actually interested to  disrupt the project
-**\<smooth>** I'd say that cryptocurrency is a pretty extreme case here in the negative. It is highly competitive and potentially contentious
-**\<smooth>** both short and long term there are probably more people who want to disrupt and undermine than some other type of software
-**\<smooth>** like a database engine, messaging system, etc.
-**\<smooth>** which does not necessarily reach any conclusion but an obvious factor to consider
-**\<fluffypony>** smooth: agreed - which, at least from my perspective, means that giving those actors any opportunity to waste our individual and collective time is a bad thing
