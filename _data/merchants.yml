@@ -2,6 +2,8 @@
   merchants:
     - name: "#monero-otc (OTC)"
       url: https://webchat.freenode.net?channels=%23monero-otc
+    - name: Bitsquare (decentralized)
+      url: https://bitsquare.io/
     - name: Bittrex
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Bter
