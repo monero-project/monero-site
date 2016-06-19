@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Monero Missives for the Week of 2016-06-20
-summary: Discussion of the rationale behind rolling hardforks and C4
+summary: discussion of the rationale behind rolling hardforks and C4
 tags: [monero missives, external]
 author: Riccardo Spagni (fluffypony)
-forum: 
 ---
 
 <div class="text-center"><iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/4447222/height/360/width/640/theme/legacy/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/backward/no-cache/true/" height="360" width="640" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div>
