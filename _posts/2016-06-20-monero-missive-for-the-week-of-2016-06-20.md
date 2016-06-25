@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monero Missives for the Week of 2016-06-20
-summary: discussion of the rationale behind rolling hardforks and C4
+summary: A discussion of the rationale behind rolling hardforks and the C4 code contract
 tags: [monero missives, external]
 author: Riccardo Spagni (fluffypony)
 ---
