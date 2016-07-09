@@ -52,6 +52,8 @@
       url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
 - category: Services
   merchants:
+    - name: California Fintech Network
+      url: https://www.californiafintech.org/plans/
     - name: CryptoEscrow Escrow Service
       url: http://www.cryptoescrow.eu
     - name: Cryptostorm VPN
