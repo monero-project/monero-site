@@ -39,6 +39,10 @@ menu:
   lab: Monero Research Lab
   alternative: Alternative Clients
   projects: External Projects
+  stackexchange: StackExchange Q&A
+  slack: Slack Chat
+  rocketchat: Rocket Chat
+  telegram: Telegram Chat
   irc: IRC on Freenode
   irc-general: "#monero (General)"
   irc-development: "#monero-dev (Development)"
