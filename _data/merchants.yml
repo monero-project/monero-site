@@ -8,6 +8,8 @@
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Bter
       url: https://bter.com/
++   - name: CoinCut (purchase XMR by GBP bank transfer)
++     url: http://coincut.com/users/buy_altcoins?buying_altcoin=Monero  
     - name: Cryptopia
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
     - name: Poloniex
