@@ -14,6 +14,8 @@
       url: https://www.coincut.com
     - name: Cryptopia
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
++   - name: Livecoin (BTC and USD trading pairs)
++     url: https://www.livecoin.net
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (Instant)
