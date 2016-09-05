@@ -14,7 +14,7 @@
       url: https://www.coincut.com
     - name: Cryptopia
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
-+   - name: LiteBit (SEPA, GiroPay, SOFORT)
++   - name: LiteBit (Bankwire/GiroPay/iDeal/SOFORT)
 +     url: https://www.litebit.eu/en/buy/monero
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
