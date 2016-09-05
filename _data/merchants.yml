@@ -48,6 +48,8 @@
       url: https://github.com/PsychicCat/monero-php
 - category: Tools
   merchants:
++   - name: nestorgames
++     url: http://www.nestorgames.com
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
     - name: MoneroBase Price Charts and Tools
