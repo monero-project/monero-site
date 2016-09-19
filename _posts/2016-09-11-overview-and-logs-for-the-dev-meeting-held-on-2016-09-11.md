@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview and Logs for the Dev Meeting Held on 2016-09-11
-summary: brief update on 0MQ, Ring CT, and the official GUI, and hardfork schedule, and introduction of pigeons (sysops/devops)
+summary: brief update on 0MQ, RingCT, the hardfork schedule, and a new contributor, pigeons (sysops/devops)
 tags: [dev diaries, core, crypto, 0mq]
 author: dEBRUYNE / fluffypony
 ---
