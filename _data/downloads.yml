@@ -1,49 +1,49 @@
 - platform: Windows, 64-bit
   icon: windows.svg
   url: win64
-  hash: 9d939613c0eba872a3dacd7fda572f4c7d2279207ce1ec0b15b46da4e1ccd5b9
-  version: 0.9.4.0
-  tag: Hydrogen Helix
+  hash: 33453727a8a49e07605dfee4b16aeb78816238a0e5c07dbaf19840f56f8d2cd4
+  version: 0.10.0.0
+  tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: windows.svg
   url: win32
-  hash: c9e4abc19c767ab570c2d0a9d504ba75d73eea26e7cf719a1260fdbb9469c250
-  version: 0.9.4.0
-  tag: Hydrogen Helix
+  hash: b0b7898050e6de2bc2aa443fa783cf275683513c0d3714e66fe00e2c75378af6
+  version: 0.10.0.0
+  tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   icon: apple.svg
   url: mac64
-  hash: ded52162d34d5a726b53ffd14ebbf02388d9b396f3f4e278a4755e5286b1aeab
-  version: 0.9.4.0
-  tag: Hydrogen Helix
+  hash: 204babf52d76e513d1f16527be4b3fb30d3ffbdd7528bf3997e4c1b5b301c9a8
+  version: 0.10.0.0
+  tag: Wolfram Warptangent
   blockchain: mac
 
 - platform: Linux, 64-bit
   icon: linux.svg
   url: linux64
-  hash: 0b3610c9b301ea14174ce700923a604909fa7cbd9335849112c9d6cfb07a1a43
-  version: 0.9.4.0
-  tag: Hydrogen Helix
+  hash: 6fe4cdb98d6ea7d2eded79841f70cb64edb840fcb2c84b904a1114424cffc5b1
+  version: 0.10.0.0
+  tag: Wolfram Warptangent
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: linux.svg
   url: linux32
-  hash: c070125bb885c5b887d3adce866e9bb941ed790485ef34444e62e0881fe8852a
-  version: 0.9.4.0
-  tag: Hydrogen Helix
+  hash: 89c9d2904c0de308eb31695af70084008c5880a2c0628de2fee8e47dd23967ea
+  version: 0.10.0.0
+  tag: Wolfram Warptangent
   blockchain: linux
 
 - platform: ARMv7
   icon: arm.svg
   url: arm
-  hash: c312ba0810bf04ab2e28b61a50de2a83c1c614fd789bab4cacacb716134a7239
-  version: 0.9.3.0
-  tag: Hydrogen Helix
+  hash: cced4cad630e6b5e7131b9d079c3d176dfea79915b9080bdba199508c69e377b
+  version: 0.10.0.0
+  tag: Wolfram Warptangent
   blockchain: arm
 
 - platform: Source Code
