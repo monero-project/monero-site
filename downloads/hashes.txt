@@ -6,21 +6,22 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-9d939613c0eba872a3dacd7fda572f4c7d2279207ce1ec0b15b46da4e1ccd5b9  monero.win.x64.v0-9-4-0.zip
-c9e4abc19c767ab570c2d0a9d504ba75d73eea26e7cf719a1260fdbb9469c250  monero.win.x86.v0-9-4-0.zip
-ded52162d34d5a726b53ffd14ebbf02388d9b396f3f4e278a4755e5286b1aeab  monero.mac.x64.v0-9-4-0.tar.bz2
-0b3610c9b301ea14174ce700923a604909fa7cbd9335849112c9d6cfb07a1a43  monero.linux.x64.v0-9-4-0.tar.bz2
-c070125bb885c5b887d3adce866e9bb941ed790485ef34444e62e0881fe8852a  monero.linux.x86.v0-9-4-0.tar.bz2
+33453727a8a49e07605dfee4b16aeb78816238a0e5c07dbaf19840f56f8d2cd4  monero.win.x64.v0-10-0-0.zip
+b0b7898050e6de2bc2aa443fa783cf275683513c0d3714e66fe00e2c75378af6  monero.win.x86.v0-10-0-0.zip
+204babf52d76e513d1f16527be4b3fb30d3ffbdd7528bf3997e4c1b5b301c9a8  monero.mac.x64.v0-10-0-0.tar.bz2
+6fe4cdb98d6ea7d2eded79841f70cb64edb840fcb2c84b904a1114424cffc5b1  monero.linux.x64.v0-10-0-0.tar.bz2
+89c9d2904c0de308eb31695af70084008c5880a2c0628de2fee8e47dd23967ea  monero.linux.x86.v0-10-0-0.tar.bz2
+cced4cad630e6b5e7131b9d079c3d176dfea79915b9080bdba199508c69e377b  monero.linux.arm7.v0-10-0-0.tar.bz2
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
+Version: GnuPG v2
 
-iQEcBAEBCAAGBQJXAqWrAAoJEFVDLfMczU/NVQQH/jbdEH8y2+M8f3ZTPVqU5rla
-I7u0O4e9gVdZX+nfjjVx9ElUgzvrSbt1LN+LNX9/uY2T9udHrF3NmxamK9oqoE2x
-6ZzS6qagXVL/REZfUZP8xduyKL3mXqrUs+WK3c9KdWWgViiJGcjqztayuVmd4ItH
-wRYMIS7mi1c06j+BiFk9b4TfNhlDRjyVSnjt7iebvFxeGVWl02T/08RoW0oxmWy/
-DfZBsQYmnDF+nQjrtW9IAJfpzLuXG7APV/rtKfTIqRNwl1bogvvdg/BRPR0QIC5J
-vSH1cqP0DUjh4/CNmRlX6KdNe5c5Q6t+KcihK13jJfck4o18g1Ap5qxXAQ8tmCE=
-=faLM
+iQEcBAEBCAAGBQJX4EenAAoJEFVDLfMczU/NF6QH/jBmOjbemOC78TGYRCSTT994
+C4sPfFWDkeK6KRlsIZEzdfbMy328k1/yJvmRimTdZd/sRVEJzWgw7sKCqNG5qyYB
+1twao0ArHSO/PL5yC2+vWWBIx1ISA+jiUuJOLuKxHHfIB3anALicNBRY04H8JaN7
+H4XrG4GQonsaem3sATSASQJNoph1acclrYX7dRAl01AVBqk+ap0CnZjlklXg5Fo9
+VCjEmSe+mIsHBrF93N3IJ6BES+T46cOXvhUsXsaQO7EleB3/AWODw3lL2HIZqQwf
+USsAm/6RghaKtnOntDVXYo21Qj6dutUkGJnyq/Y1fs0m7K2gSHKMv79rXZcHqd4=
+=T9RY
 -----END PGP SIGNATURE-----
