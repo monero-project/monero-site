@@ -32,6 +32,12 @@
       url: https://explorer.xmr.my/
     - name: Onion Monero Blockchain Explorer
       url: http://107.172.25.35:8081/
+- category: Payment Gateways
+  merchants:  
+    - name: Monero Merchants
+      url: https://monero-merchants.com
+    - name: Paybee (Private Beta)
+      url: https://payb.ee/
 - category: Libraries and Helpers
   merchants:
     - name: monero-nodejs (Node.js)
