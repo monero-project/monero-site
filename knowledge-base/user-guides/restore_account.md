@@ -17,9 +17,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
  
 - Open a command prompt and navigate to the drive and directory that contains simplewallet
 
-- At the command prompt type:  
-
-`C:\>simplewallet --restore-deterministic-wallet`
+- At the command prompt type:  `monero-wallet-cli --restore-deterministic-wallet`
 
 - Once you press enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do 
 
