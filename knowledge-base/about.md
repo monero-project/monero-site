@@ -8,6 +8,9 @@ kick-class: "kicks"
 icon: "icon_about"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZi9xx6aiuY" frameborder="0" allowfullscreen></iframe>
+
 ## About Monero
 
 To most people, financial privacy is very important. Yet in recent years, we have seen a staggering amount of big corporations, banks and governments having their records compromised, at every time leaking information about their users, their practices, their balance sheets. The unfortunate but undeniable conclusion is that there is no safe place to conduct private transactions.  
