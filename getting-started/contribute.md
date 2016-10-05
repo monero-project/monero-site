@@ -23,10 +23,10 @@ Know how to compile some code? Then it helps for others if you test out builds o
 If you have an IT or CS background and can code, go to [#monero-dev](irc://chat.freenode.net/#monero-dev) on freenode and ask around to see if anything needs doing. You can also simply go to the [Monero Project on GitHub](https://github.com/monero-project) and see what issues need help.
 
 ### Run a node 
-Secure the network and help keep Monero decentralized, it's simple to do, and only requires some bandwidth. Learn [how to set up a monero node here.](/getting-started/running) You can also run a node onf a VPS, [guide on how to do that is here.](/knowledge-base/user-guides/vps_run_node)
+Secure the network and help keep Monero decentralized, it's simple to do, and only requires some bandwidth. Learn [how to set up a monero node here.](/getting-started/running) You can also run a node on a VPS, [guide on how to do that is here.](/knowledge-base/user-guides/vps_run_node)
 
 ### Mine 
-It is still possible to mine, even on a cpu. If you have some spare hardware, you are actively adding to it's decentralisation.
+It is still possible to mine, even on a cpu. If you have some spare hardware, you are actively adding to it's decentralisation. Find more information on mining Monero in [this thread on Bitcointalk.](https://bitcointalk.org/index.php?topic=653467)
 
 ### Spread the word
 The size of the Monero community is very very small in the grand scheme of things. Even beyond that, bitcoin itself is still a very niche thing in the wider world. Talk to the friends you know who might be interested in this kind of thing and get more people involved.
