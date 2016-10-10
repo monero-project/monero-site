@@ -17,4 +17,4 @@ As part of the ongoing development of the Monero cryptocurrency project, we aske
 
 At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralised and decentralised domain systems.
 
-For more info, visit http://www.openalias.org
+For more info, visit [www.openalias.org](https://www.openalias.org).
