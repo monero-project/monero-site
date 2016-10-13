@@ -3,7 +3,7 @@ layout: moneropedia
 entry: "Address Book"
 tags: ["kovri"]
 terms: ["address-book"]
-summary: "List of pairings: locally unique hostnames to Base64 I2P destinations"
+summary: "Allows you to visit I2P websites/services that have the .i2p domain"
 ---
 
 ### The Basics
