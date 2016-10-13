@@ -18,7 +18,8 @@ TODO(anonimal): finish
 
 @eepsite (@hidden-service, @garlic-site, @garlic-service)
 
-- Kovri Clearnet
+@clearnet
+
 - Kovri Cryptography (encryption, signatures, etc.)
 - Kovri Network Database (RI, lease-sets, floodfill, etc.)
 - Kovri Reseed
