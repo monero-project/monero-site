@@ -14,9 +14,10 @@ TODO(anonimal): finish
 
 TODO(anonimal): finish
 
-@Kovri @address-book
+@address-book
 
-- Kovri Eepsite (hidden-service, garlic-site, garlic-service)
+@eepsite (@hidden-service, @garlic-site, @garlic-service)
+
 - Kovri Clearnet
 - Kovri Cryptography (encryption, signatures, etc.)
 - Kovri Network Database (RI, lease-sets, floodfill, etc.)
