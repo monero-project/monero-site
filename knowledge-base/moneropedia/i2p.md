@@ -23,3 +23,7 @@ From @Java-I2P's [website](https://geti2p.net/):
 >No network can be "perfectly anonymous". The continued goal of I2P is to make attacks more and more difficult to mount. Its anonymity will get stronger as the size of the network increases and with ongoing academic review.
 
 Details and specifications are available [here](https://geti2p.net/docs/).
+
+### Notes
+
+For Monero's implementation of I2P, see @Kovri.
