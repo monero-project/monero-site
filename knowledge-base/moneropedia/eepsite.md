@@ -10,7 +10,7 @@ summary: "A website or service hosted within the I2P network"
 
 Is it [**EEP!** *(in response to the site's content)*](https://en.wikipedia.org/wiki/Onomatopoeia), or **end-to-end protocol**, or something else entirely different?
 
-While the original definition of eepsite has been lost with time, its use-case remains: a website or service that is hosted within (and only accessible by) the @I2P network.
+While the original definition of eepsite has been lost with time, its use-case remains: an eepsite is a website or service that is hosted within (and only accessible by) the @I2P network.
 
 ### In-depth Information
 
@@ -27,4 +27,4 @@ Alternate names include:
 
 ### Notes
 
-To learn how to setup an Eeepsite (Hidden Service, Garlic Site, Garlic Service) visit the @Kovri [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+To learn how to setup an Eepsite (Hidden Service, Garlic Site, Garlic Service) visit the @Kovri [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).

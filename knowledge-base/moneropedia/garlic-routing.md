@@ -8,15 +8,15 @@ summary: "Routing technology as implemented in Kovri/I2P"
 
 ### The Basics
 
-The term *Garlic Routing* has a diverse history with various interpretations.
+The term *Garlic Routing* has a diverse history of varying interpretations.
 
-As it currently stands, Monero defines *Garlic Routing* as the way @Kovri and @I2P create a message-based anonymous overlay network of internet peers.
+As it currently stands, Monero defines *Garlic Routing* as the method in which @Kovri and @I2P create a message-based anonymous overlay network of internet peers.
 
 ### History
 
-I written form, the term *Garlic Routing* can be seen as early as June of 2000 in Roger Dingledine's [Free Haven Master's thesis](http://www.freehaven.net/papers.html) (Section 8.1.1) as derived from [Onion Routing](http://www.onion-router.net/).
+In written form, the term *Garlic Routing* can be seen as early as June of 2000 in Roger Dingledine's [Free Haven Master's thesis](http://www.freehaven.net/papers.html) (Section 8.1.1) as derived from the term [Onion Routing](http://www.onion-router.net/).
 
-As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered insight into the creation of the term:
+As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered insight into the creation of the term *Garlic Routing*:
 
 Nick Mathewson:
 >[I think that there was some attempt to come up with a plant whose structure resembled the 'leaky-pipe' topology of tor, but I don't believe we ever settled on one.]
@@ -37,5 +37,5 @@ Note: as seen in [Tor](https://torproject.org/), *Onion Routing* also uses layer
 
 ### Notes
 
-- Permission received from Nick Mathewson and Roger Dingledine for historical quotes
-- For more technical details, read [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing).
+- Permission to use the aforementioned quotes granted by Nick Mathewson and Roger Dingledine
+- For more technical details, read [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing)
