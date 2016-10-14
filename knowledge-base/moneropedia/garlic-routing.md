@@ -14,7 +14,7 @@ As it currently stands, Monero defines *Garlic Routing* as the method in which @
 
 ### History
 
-In written form, the term *Garlic Routing* can be seen as early as June of 2000 in Roger Dingledine's [Free Haven Master's thesis](http://www.freehaven.net/papers.html) (Section 8.1.1) as derived from the term [Onion Routing](http://www.onion-router.net/).
+In written form, the term *Garlic Routing* can be seen as early as June of 2000 in Roger Dingledine's [Free Haven Master's thesis](http://www.freehaven.net/papers.html) (Section 8.1.1) as derived from the term [Onion Routing](https://en.wikipedia.org/wiki/Onion_routing).
 
 As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered insight into the creation of the term *Garlic Routing*:
 
