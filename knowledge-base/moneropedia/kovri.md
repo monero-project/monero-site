@@ -20,10 +20,9 @@ TODO(anonimal): finish
 
 @clearnet
 
-@reseed @network-database @router-info
+@reseed @network-database @router-info @floodfill @lease-set
 
 - Kovri Cryptography (encryption, signatures, etc.)
-- Kovri Network Database (lease-sets, floodfill, etc.)
 - Kovri Transports (SSU/NTCP)
 - Kovri Tunnels (garlic routing, I2NP, etc.)
 - Kovri I2PControl (links to API, clients + qtoopie)
