@@ -18,10 +18,10 @@ In written form, the term *Garlic Routing* can be seen as early as June of 2000 
 
 As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered insight into the creation of the term *Garlic Routing*:
 
-Nick Mathewson:
+[Nick Mathewson](https://en.wikipedia.org/wiki/The_Tor_Project,_Inc):
 >[I think that there was some attempt to come up with a plant whose structure resembled the 'leaky-pipe' topology of tor, but I don't believe we ever settled on one.]
 
-Roger Dingledine:
+[Roger Dingledine](https://en.wikipedia.org/wiki/Roger_Dingledine):
 >during the free haven brainstorming, there was a moment where we described a routing mechanism, and somebody said "garlic routing!", and everybody laughed.
 so we for sure thought we had invented the name, at the time.
 
