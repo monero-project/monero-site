@@ -39,3 +39,4 @@ Note: as seen in [Tor](https://torproject.org/), *Onion Routing* also uses layer
 
 - Permission to use the aforementioned quotes granted by Nick Mathewson and Roger Dingledine
 - For more technical details, read [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing)
+- Another way to envision layered encryption (in terms of Onion/Garlic Routing) is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll)
