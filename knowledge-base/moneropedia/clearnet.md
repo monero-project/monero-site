@@ -3,7 +3,7 @@ layout: moneropedia
 entry: "Clearnet"
 tags: ["kovri"]
 terms: ["clearnet"]
-summary: "The internet in which anonymous overlay networks are built over"
+summary: "The internet in which anonymous overlay networks are built upon"
 ---
 
 ### The Basics
@@ -30,4 +30,4 @@ Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-htt
 
 - @Kovri/@I2P does not use exit nodes when connecting to an @eepsite
 - Your traffic ever need to leave the @I2P network.
-- You do not need HTTPS to use @Kovri/@I2P (with the exception of @reseed) **TODO(anonimal): finish**
+- You do not need HTTPS to use @Kovri/@I2P (with the exception of @reseed)
