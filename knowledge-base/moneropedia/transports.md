@@ -1,8 +1,8 @@
 ---
 layout: moneropedia
-entry: "Tunnel"
+entry: "Transports"
 tags: ["kovri"]
-terms: ["tunnel", "tunnels"]
+terms: ["transports", "transport"]
 summary: "TODO(anonimal): finish"
 ---
 

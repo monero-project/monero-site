@@ -1,8 +1,8 @@
 ---
 layout: moneropedia
-entry: "Tunnel"
+entry: "NTCP"
 tags: ["kovri"]
-terms: ["tunnel", "tunnels"]
+terms: ["NTCP"]
 summary: "TODO(anonimal): finish"
 ---
 

@@ -56,15 +56,20 @@ TODO(anonimal): finish
 
 @network-database
 
+@NTCP
+
 @reseed
 
 @router-info
 
+@SSU
+
 @subscription
+
+@transports
 
 @tunnel
 
 - Kovri Cryptography (encryption, signatures, etc.)
-- Kovri Transports (SSU/NTCP)
 - Kovri I2PControl (links to API, clients + qtoopie)
 - ...more/what else?
