@@ -10,7 +10,7 @@ summary: "Routing technology as implemented in Kovri/I2P"
 
 The term *Garlic Routing* has a diverse history of varying interpretations.
 
-As it currently stands, Monero defines *Garlic Routing* as the method in which @Kovri and @I2P create a message-based anonymous overlay network of internet peers.
+As it currently stands, Monero defines *Garlic Routing* as the method in which @Kovri and @I2P create a @message-based anonymous overlay network of internet peers.
 
 ### History
 
@@ -25,18 +25,19 @@ As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered 
 >during the free haven brainstorming, there was a moment where we described a routing mechanism, and somebody said "garlic routing!", and everybody laughed.
 so we for sure thought we had invented the name, at the time.
 
+Note: permission to use the aforementioned quotes were granted by Nick Mathewson and Roger Dingledine
+
 ### In-depth Information
 
 In technical terms, for @Kovri and @I2P, *Garlic Routing* translates to any/all of the following:
 
-1. Layered Encryption
-2. Bundling multiple messages together (garlic cloves)
-3. ElGamal/AES Encryption
+- Layered Encryption (like Onion Routing)
+- Bundling multiple @messages together (garlic cloves)
+- ElGamal/AES Encryption
 
-Note: as seen in [Tor](https://torproject.org/), *Onion Routing* also uses layered encryption but does not use ElGamal and is not message-based.
+Note: though [Tor](https://torproject.org/) uses layered encryption, Tor does not use ElGamal and is not message-based.
 
 ### Notes
 
-- Permission to use the aforementioned quotes granted by Nick Mathewson and Roger Dingledine
-- For more technical details, read [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing)
-- Another way to envision layered encryption (in terms of Onion/Garlic Routing) is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll)
+- In terms of Onion/Garlic Routing, another way to envision layered encryption is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll)
+- For more technical details on Garlic Routing, read the @Java-I2P entry on [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing)

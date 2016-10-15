@@ -16,14 +16,55 @@ TODO(anonimal): finish
 
 @address-book
 
-@eepsite (@hidden-service, @garlic-site, @garlic-service)
+@base32-address
+
+@base64-address
+
+@canonically-unique-host
 
 @clearnet
 
-@reseed @network-database @router-info @floodfill @lease-set
+@data-directory
+
+@destination
+
+@eepsite (@hidden-service, @garlic-site, @garlic-service)
+
+@floodfill
+
+@garlic-routing
+
+@i2np
+
+@i2p
+
+@in-net
+
+@java-i2p
+
+@jump-service
+
+@kovri
+
+@lease
+
+@leaseset
+
+@locally-unique-host
+
+@message @messages
+
+@network-database
+
+@reseed
+
+@router-info
+
+@subscription
+
+@tunnel
 
 - Kovri Cryptography (encryption, signatures, etc.)
 - Kovri Transports (SSU/NTCP)
-- Kovri Tunnels (garlic routing, I2NP, etc.)
 - Kovri I2PControl (links to API, clients + qtoopie)
 - ...more/what else?
