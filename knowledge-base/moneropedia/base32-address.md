@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Base32 address"
 tags: ["kovri"]
-terms: ["base32-address"]
+terms: ["base32-address", "base32-addresses"]
 summary: "Base32 encoded hash of a Base64 address"
 ---
 

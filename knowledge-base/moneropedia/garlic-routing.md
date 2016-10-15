@@ -3,7 +3,7 @@ layout: moneropedia
 entry: "Garlic Routing"
 tags: ["kovri"]
 terms: ["garlic-routing"]
-summary: "Routing technology as implemented in Kovri/I2P"
+summary: "Routing technology as implemented in Kovri"
 ---
 
 ### The Basics

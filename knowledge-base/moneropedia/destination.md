@@ -14,6 +14,6 @@ TODO(anonimal): finish
 
 ### In-depth Information
 
-An @I2P destination can be encoded into a @base32-address or @base64-address. Most users will only care about @base32-address or a `.i2p` hostname while, internally, @Kovri/@I2P will use the @base64-address.
+An @I2P destination can be encoded into a @base32-address or @base64-address. Most users will only care about @base32-address or a `.i2p` hostname while, internally, @Kovri uses @base64-addresses.
 
 TODO(anonimal): finish
