@@ -21,7 +21,7 @@ and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (whi
 Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:
 
 - @Kovri
-- @I2P
+- @Java-I2P
 - [Tor](https://torproject.org/)
 
 These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous.
