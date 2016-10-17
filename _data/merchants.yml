@@ -22,6 +22,8 @@
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (Instant)
       url: https://shapeshift.io/
+    - name: Tux Exchange
+      url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
 - category: Block Explorers
   merchants:
     - name: ChainRadar
