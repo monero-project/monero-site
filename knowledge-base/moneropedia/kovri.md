@@ -36,6 +36,8 @@ TODO(anonimal): finish
 
 @garlic-routing
 
+@I2PControl
+
 @i2np
 
 @i2p
@@ -71,6 +73,3 @@ TODO(anonimal): finish
 @transports
 
 @tunnel
-
-- Kovri I2PControl (links to API, clients + qtoopie)
-- ...more/what else?

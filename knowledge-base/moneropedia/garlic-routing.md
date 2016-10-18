@@ -10,11 +10,11 @@ summary: "Routing technology as implemented in Kovri"
 
 The term *Garlic Routing* has a diverse history of varying interpretations.
 
-As it currently stands, Monero defines *Garlic Routing* as the method in which @Kovri and @I2P create a @message-based anonymous overlay network of internet peers.
+As it currently stands, Monero defines *Garlic Routing* as the method in which @Kovri and @I2P create a @message-based anonymous overlay network of internet peers. The @layered-encryption of Garlic Routing is similar to the @layered-encryption of [Onion Routing](https://en.wikipedia.org/wiki/Onion_routing).
 
 ### History
 
-In written form, the term *Garlic Routing* can be seen as early as June of 2000 in Roger Dingledine's [Free Haven Master's thesis](http://www.freehaven.net/papers.html) (Section 8.1.1) as derived from the term [Onion Routing](https://en.wikipedia.org/wiki/Onion_routing).
+In written form, the term *Garlic Routing* can be seen as early as June of 2000 in Roger Dingledine's [Free Haven Master's thesis](http://www.freehaven.net/papers.html) (Section 8.1.1) as derived from the term Onion Routing.
 
 As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered insight into the creation of the term *Garlic Routing*:
 
