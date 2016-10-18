@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "In-net"
 tags: ["kovri"]
-terms: ["in-net"]
+terms: ["In-net"]
 summary: "Within the I2P network"
 ---
 

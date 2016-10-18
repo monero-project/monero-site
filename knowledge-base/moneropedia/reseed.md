@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Reseed"
 tags: ["kovri"]
-terms: ["reseed"]
+terms: ["Reseed"]
 summary: "The method of which Kovri uses to bootstrap into the I2P network"
 ---
 

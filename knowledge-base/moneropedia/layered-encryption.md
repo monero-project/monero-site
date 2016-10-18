@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Layered Encryption"
 tags: ["kovri"]
-terms: ["layered-encryption"]
+terms: ["Layered-Encryption"]
 summary: "TODO(anonimal): finish"
 ---
 

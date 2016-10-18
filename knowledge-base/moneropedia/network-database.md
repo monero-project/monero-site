@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Network Database"
 tags: ["kovri"]
-terms: ["network-database"]
+terms: ["Network-Database"]
 summary: "TODO(anonimal): finish"
 ---
 

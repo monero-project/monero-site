@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Clearnet"
 tags: ["kovri"]
-terms: ["clearnet"]
+terms: ["Clearnet"]
 summary: "The internet in which anonymous overlay networks are built upon"
 ---
 

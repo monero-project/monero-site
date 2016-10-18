@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Data Directory"
 tags: ["kovri"]
-terms: ["data-directory"]
+terms: ["Data-Directory"]
 summary: "Where essential kovri data for runtime is stored"
 ---
 

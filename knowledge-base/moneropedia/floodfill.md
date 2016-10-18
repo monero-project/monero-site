@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Floodfill"
 tags: ["kovri"]
-terms: ["floodfill"]
+terms: ["Floodfill"]
 summary: "An I2P router which maintains a distributed network-database"
 ---
 

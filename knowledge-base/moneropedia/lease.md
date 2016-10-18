@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Lease"
 tags: ["kovri"]
-terms: ["lease", "leases"]
+terms: ["Lease", "Leases"]
 summary: "Authorizes an I2P tunnel to receive messages targeting a destination"
 ---
 

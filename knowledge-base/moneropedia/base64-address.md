@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Base64 address"
 tags: ["kovri"]
-terms: ["base64-address", "base64-addresses"]
+terms: ["Base64-address", "Base64-addresses"]
 summary: "Base64 encoded I2P destination"
 ---
 

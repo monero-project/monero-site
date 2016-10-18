@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Tunnel"
 tags: ["kovri"]
-terms: ["tunnel", "tunnels"]
+terms: ["Tunnel", "Tunnels"]
 summary: "TODO(anonimal): finish"
 ---
 

@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "I2PControl"
 tags: ["kovri"]
-terms: ["i2pcontrol", "I2PControl"]
+terms: ["I2PControl"]
 summary: "TODO(anonimal): finish"
 ---
 

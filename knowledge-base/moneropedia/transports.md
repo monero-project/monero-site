@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Transports"
 tags: ["kovri"]
-terms: ["transports", "transport"]
+terms: ["Transports", "Transport"]
 summary: "The two encrypted transport layers for Kovri"
 ---
 

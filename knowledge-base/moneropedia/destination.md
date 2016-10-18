@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Destination"
 tags: ["kovri"]
-terms: ["destination"]
+terms: ["Destination"]
 summary: "A in-net address that serves as a final endpoint"
 ---
 

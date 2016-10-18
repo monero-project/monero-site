@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Eepsite"
 tags: ["kovri"]
-terms: ["eepsite", "hidden-service", "garlic-site", "garlic-service"]
+terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service"]
 summary: "A website or service hosted within the I2P network"
 ---
 

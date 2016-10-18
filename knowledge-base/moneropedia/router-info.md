@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Router-Info"
 tags: ["kovri"]
-terms: ["router-info"]
+terms: ["Router-Info"]
 summary: "A data structure or file which contains an I2P peer's needed network information"
 ---
 

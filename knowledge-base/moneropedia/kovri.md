@@ -8,68 +8,54 @@ summary: "Monero's C++ router implementation of the I2P network"
 
 ### The Basics
 
-TODO(anonimal): finish
+[Kovri](https://github.com/monero-project/kovri/) is a C++ implementation of the @I2P network. @Kovri is currently in heavy, active development and not yet integrated with Monero. When Kovri is integrated into your Monero @node, your transactions will be more secure than ever before.
 
 ### In-depth information
 
-TODO(anonimal): finish
+Kovri will protect you and Monero from:
 
-@address-book
+- @Node partitioning attacks
+- Associations between a particular txid and your IP address
+- Mining and/or running a node in highly adversarial environments
+- Metadata leakage (e.g., @OpenAlias lookups)
 
-@base32-address
+...and much more.
 
-@base64-address
+Read [anonimal's FFS proposal](https://forum.getmonero.org/9/work-in-progress/86967/anonimal-s-kovri-full-time-development-funding-thread) for more details and for reasoning behind the project. Also read the FAQ and User Guide in the [Kovri repository](https://github.com/monero-project/kovri/).
 
-@canonically-unique-host
+### @Kovri / @I2P Terminology
 
-@clearnet
+#### Client + API
 
-@data-directory
+- @Address-Book
+- @Base32-address
+- @Base64-address
+- @Canonically-unique-host
+- @Eepsite (@Hidden-Service, @Garlic-Site, @Garlic-Service)
+- @I2PControl
+- @Jump-Service
+- @Locally-unique-host
+- @Reseed
+- @Subscription
 
-@destination
+#### Core + Router
 
-@eepsite (@hidden-service, @garlic-site, @garlic-service)
-
-@encryption
-
-@floodfill
-
-@garlic-routing
-
-@I2PControl
-
-@i2np
-
-@i2p
-
-@in-net
-
-@java-i2p
-
-@jump-service
-
-@kovri
-
-@lease
-
-@leaseset
-
-@locally-unique-host
-
-@message @messages
-
-@network-database
-
-@NTCP
-
-@reseed
-
-@router-info
-
-@SSU
-
-@subscription
-
-@transports
-
-@tunnel
+- @Clearnet
+- @Data-Directory
+- @Destination
+- @Encryption
+- @Floodfill
+- @Garlic-routing
+- @I2NP
+- @In-net
+- @Java-I2P
+- @Layered-Encryption
+- @Lease
+- @LeaseSet
+- @Message @Messages
+- @NTCP
+- @Network-Database
+- @Router-Info
+- @SSU
+- @Transports
+- @Tunnel

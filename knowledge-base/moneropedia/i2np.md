@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "I2NP"
 tags: ["kovri"]
-terms: ["I2NP", "message", "messages"]
+terms: ["I2NP", "Message", "Messages"]
 summary: "TODO(anonimal): finish"
 ---
 

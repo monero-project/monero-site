@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Garlic Routing"
 tags: ["kovri"]
-terms: ["garlic-routing"]
+terms: ["Garlic-Routing"]
 summary: "Routing technology as implemented in Kovri"
 ---
 
@@ -31,9 +31,9 @@ Note: permission to use the aforementioned quotes were granted by Nick Mathewson
 
 In technical terms, for @Kovri and @I2P, *Garlic Routing* translates to any/all of the following:
 
-- Layered Encryption (like Onion Routing)
+- @Layered-Encryption (like Onion Routing)
 - Bundling multiple @messages together (garlic cloves)
-- ElGamal/AES Encryption
+- ElGamal/AES @encryption
 
 Note: though [Tor](https://torproject.org/) uses layered @encryption, Tor does not use ElGamal and is not message-based.
 
