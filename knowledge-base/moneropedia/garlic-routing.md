@@ -35,9 +35,9 @@ In technical terms, for @Kovri and @I2P, *Garlic Routing* translates to any/all 
 - Bundling multiple @messages together (garlic cloves)
 - ElGamal/AES Encryption
 
-Note: though [Tor](https://torproject.org/) uses layered encryption, Tor does not use ElGamal and is not message-based.
+Note: though [Tor](https://torproject.org/) uses layered @encryption, Tor does not use ElGamal and is not message-based.
 
 ### Notes
 
-- In terms of Onion/Garlic Routing, another way to envision layered encryption is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll)
+- In terms of Onion/Garlic Routing, another way to envision layered @encryption is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll)
 - For more technical details on Garlic Routing, read the @Java-I2P entry on [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing)

@@ -30,6 +30,8 @@ TODO(anonimal): finish
 
 @eepsite (@hidden-service, @garlic-site, @garlic-service)
 
+@encryption
+
 @floodfill
 
 @garlic-routing
@@ -70,6 +72,5 @@ TODO(anonimal): finish
 
 @tunnel
 
-- Kovri Cryptography (encryption, signatures, etc.)
 - Kovri I2PControl (links to API, clients + qtoopie)
 - ...more/what else?
