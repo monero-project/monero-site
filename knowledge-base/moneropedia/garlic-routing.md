@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Garlic Routing"
 tags: ["kovri"]
-terms: ["Garlic-Routing"]
+terms: ["Garlic-Routing", "Garlic-Encryption"]
 summary: "Routing technology as implemented in Kovri"
 ---
 
