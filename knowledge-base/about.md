@@ -10,6 +10,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TZi9xx6aiuY" frameborder="0" allowfullscreen></iframe>
+<!-- Source code for this video can be found at https://github.com/savandra/Monero_Promo_Video/blob/master/README.md -->
 
 ## About Monero
 
