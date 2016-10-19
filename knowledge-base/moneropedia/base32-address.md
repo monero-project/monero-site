@@ -22,8 +22,6 @@ where
 
 Ultimately, a Base32 address is a 52 character [Base32 encoded representation](https://en.wikipedia.org/wiki/Base32) of the full SHA-256 hash of an @I2P @base64-address.
 
-TODO(anonimal): finish (256 bits, etc.)
-
 ### Notes
 
 **Note: `.b32` is not a sub-domain of `.i2p`**
