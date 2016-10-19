@@ -8,7 +8,7 @@ summary: "Uni-directional virtual paths that pass messages through a defined seq
 
 ### The Basics
 
-When you communicate over @I2P (visit an @eepsite / use a @garlic-service), you'll first need to connect to a peer by using @transports and then build virtual *tunnels*. These virtual tunnels are temporary, uni-directional paths that pass information through a defined sequence of @I2P routers to your @destination. Tunnels are built, and then used, with layered @garlic-encryption and are a general-purpose mechanism to transport all @I2NP messages.
+When you communicate over @I2P (visit an @eepsite / use a @garlic-service), you'll first need to connect to a peer by using @transports and then build virtual *tunnels*. These virtual tunnels are temporary, uni-directional paths that pass information through a defined sequence of @I2P routers to your @destination. Tunnels are built, and then used, with layered @garlic-encryption and are a general-purpose mechanism to transport all @I2NP @messages.
 
 Each peer builds, at a minimum, *two* uni-directional tunnels: one for **outbound traffic**, and one for **inbound traffic**. These tunnels are classified as either **inbound tunnels** (where @messages come toward the creator of the tunnel) or **outbound tunnels** (where the tunnel creator sends @messages away from the creator of the tunnel). Thus, *four* tunnels are required for a single round-trip @message and reply to your @destination (two for your, two for your destination).
 
