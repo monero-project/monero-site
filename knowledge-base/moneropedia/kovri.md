@@ -45,7 +45,8 @@ Read [anonimal's FFS proposal](https://forum.getmonero.org/9/work-in-progress/86
 - @Destination
 - @Encryption
 - @Floodfill
-- @Garlic-routing
+- @Garlic-Encryption
+- @Garlic-Routing
 - @I2NP
 - @In-net
 - @Java-I2P

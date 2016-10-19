@@ -1,8 +1,8 @@
 ---
 layout: moneropedia
-entry: "Layered Encryption"
+entry: "Garlic-Encryption"
 tags: ["kovri"]
-terms: ["Layered-Encryption"]
+terms: ["Garlic-Encryption", "Layered-Encryption"]
 summary: "TODO(anonimal): finish"
 ---
 
