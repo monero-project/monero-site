@@ -25,7 +25,7 @@ As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered 
 >during the free haven brainstorming, there was a moment where we described a routing mechanism, and somebody said "garlic routing!", and everybody laughed.
 so we for sure thought we had invented the name, at the time.
 
-Note: permission to use the aforementioned quotes were granted by Nick Mathewson and Roger Dingledine
+*Note: permission to use the aforementioned quotes were granted by Nick Mathewson and Roger Dingledine*
 
 ### In-depth Information
 
@@ -35,7 +35,9 @@ In technical terms, for @Kovri and @I2P, *@garlic-routing* translates to any/all
 - Bundling multiple @messages together (garlic cloves)
 - ElGamal/AES @encryption
 
-Note: though [Tor](https://torproject.org/) uses @layered-encryption, Tor does not use ElGamal and is not message-based.
+*Note: though [Tor](https://torproject.org/) uses @layered-encryption, Tor does not use ElGamal and is not message-based.*
+
+**Read more in @garlic-encryption.**
 
 ### Notes
 

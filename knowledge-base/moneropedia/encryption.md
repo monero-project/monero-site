@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Encryption"
 tags: ["kovri"]
-terms: ["encryption", "encrypted", "encrypting"]
+terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting"]
 summary: "The process of encoding messages or information in a way that only authorized parties can decode and read"
 ---
 
