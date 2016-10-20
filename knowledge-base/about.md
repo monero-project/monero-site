@@ -38,7 +38,7 @@ The underlying technologies and cryptography upon which Monero is built, has bee
 With Monero, transactions are private by default. However, each user has the ability to select different levels of privacy, optionally disclosing their transaction information, or even provide audit access (view only) to his full Monero account.  
 
 ## DECENTRALIZATION
-While most cryptocurrencies align to theoretical principles of decentralization, the reality is that most fall short of such a claim. More often than not, it is not just one branch of a cryptocurrency system that is centralized in one form or another, is that that many branches are so.
+While most cryptocurrencies align to theoretical principles of decentralization, the reality is that most fall short of such a claim. More often than not, it is not just one branch of a cryptocurrency system that is centralized in one form or another, it is that many branches are so.
 
 With Proof of Stake currencies, irregular emission and distribution models cause most of the staking power to end up in the hand of a privileged few. Participants of lesser weight are reduced to second class citizens, with little chance of ever obtaining similar returns.
 
