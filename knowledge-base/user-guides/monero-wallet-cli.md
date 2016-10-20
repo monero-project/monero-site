@@ -14,7 +14,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 and manages an account. While a bitcoin wallet manages both an account and the blockchain,
 Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
 
-This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of the Monero Core software *(currently 0.9.0.0 Hydrogen Helix)*, and have already created an account according to the other guides.
+This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of Monero and have already created an account according to the other guides.
 
 
 ## Checking your balance
