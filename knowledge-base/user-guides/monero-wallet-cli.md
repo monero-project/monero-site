@@ -8,20 +8,20 @@ kick-class: "purple-kicks"
 icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
-# simplewallet
+# monero-wallet-cli
 
-`simplewallet` is the wallet software that ships with the Monero tree. It is a console program,
+`monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,
 and manages an account. While a bitcoin wallet manages both an account and the blockchain,
-Monero separates these: `bitmonerod` handles the blockchain, and `simplewallet` handles the account.
+Monero separates these: `bitmonerod` handles the blockchain, and `monero-wallet-cli` handles the account.
 
-This guide will show how to perform various operations from the `simplewallet` UI. The guide assumes you are using the most recent version of the Monero Core software *(currently 0.9.0.0 Hydrogen Helix)*, and have already created an account according to the other guides.
+This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of the Monero Core software *(currently 0.9.0.0 Hydrogen Helix)*, and have already created an account according to the other guides.
 
 
 ## Checking your balance
 
-Since the blockchain handling and the wallet are separate programs, many uses of `simplewallet`
+Since the blockchain handling and the wallet are separate programs, many uses of `monero-wallet-cli`
 need to work with the daemon. This includes looking for incoming transactions to your address.
-Once you are running both `simplewallet` and `bitmonerod`, enter `balance`.
+Once you are running both `monero-wallet-cli` and `bitmonerod`, enter `balance`.
 
 Example:
 
@@ -116,7 +116,7 @@ to an address), then you can check this way:
     check_tx_key TXID TXKEY ADDRESS
 
 Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination
-address which were supplied to you, respectively. simplewallet will check that transaction
+address which were supplied to you, respectively. monero-wallet-cli will check that transaction
 and let you know how much monero this transaction paid to the given address.
 
 
