@@ -29,5 +29,5 @@ These technologies protect you from clearnet by building an anonymous network **
 Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to @Kovri and @I2P in terms of anonymity with the exception that:
 
 - @Kovri does not use exit nodes when connecting to an @eepsite
-- Your traffic ever need to leave the @I2P network.
+- Your traffic never need to leave the @I2P network
 - You do not need HTTPS to use @Kovri (with the exception of @reseed)

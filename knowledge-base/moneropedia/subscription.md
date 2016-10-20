@@ -40,7 +40,7 @@ A *private* subscription:
 
 ### Updating a private subscription
 
-You can use a @jump-service to manually update your private subscription. The updated subscription will be then fed into the @address-book for you to use.
+You can use a @jump-service to manually update your private subscription. The updated subscription will then be fed into the @address-book for you to use.
 
 ### Notes
-To learn how subscribe to multiple subscriptions, see the [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+To learn how to subscribe to multiple subscriptions, see the [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).

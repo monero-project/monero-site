@@ -8,7 +8,7 @@ summary: "A data structure or file which contains an I2P peer's needed network i
 
 ### The Basics
 
-@Router-Info is a data structure (periodically written to a [binary file](https://en.wikipedia.org/wiki/Binary_file)) which contains all needed information to locate, identity, and communicate with an @I2P peer. @Router-Info includes IP address, router identity, other misc. technical details; is needed for @network-database and is published to @floodfill routers.
+@Router-Info is a data structure (periodically written to a [binary file](https://en.wikipedia.org/wiki/Binary_file)) which contains all needed information to locate, identify, and communicate with an @I2P peer. @Router-Info includes IP address, router identity, other misc. technical details; is needed for @network-database and is published to @floodfill routers.
 
 ### In-depth information
 
