@@ -12,7 +12,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 `monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,
 and manages an account. While a bitcoin wallet manages both an account and the blockchain,
-Monero separates these: `bitmonerod` handles the blockchain, and `monero-wallet-cli` handles the account.
+Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
 
 This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of the Monero Core software *(currently 0.9.0.0 Hydrogen Helix)*, and have already created an account according to the other guides.
 
@@ -21,7 +21,7 @@ This guide will show how to perform various operations from the `monero-wallet-c
 
 Since the blockchain handling and the wallet are separate programs, many uses of `monero-wallet-cli`
 need to work with the daemon. This includes looking for incoming transactions to your address.
-Once you are running both `monero-wallet-cli` and `bitmonerod`, enter `balance`.
+Once you are running both `monero-wallet-cli` and `monerod`, enter `balance`.
 
 Example:
 

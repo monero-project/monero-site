@@ -17,7 +17,7 @@ Note : In order to create a viewonly wallet you need first to compile the last s
 
 - Launch a new instance of monero-wallet-cli by typing "`./monero-wallet-cli --generate-from-view-key yourAddress:yourViewKey:nameOfTheViewOnlyWallet`" where *yourViewKey* is the view key you got from step 1 and *yourAddress* the associated address. The last part of the command is the name you want to give to you view only portfolio.
 
-- Follow the instructions from the terminal. To see the balance of your portfolio type "*refresh*" (bitmonerod need to be synchronised with the network first). 
+- Follow the instructions from the terminal. To see the balance of your portfolio type "*refresh*" (monerod need to be synchronised with the network first). 
 
 - You now have a view only wallet.
 

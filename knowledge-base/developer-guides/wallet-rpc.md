@@ -24,7 +24,7 @@ All monero-wallet-cli methods use the same JSON RPC interface. For example:
         -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'"$PARAMS"'}' \
         -H 'Content-Type: application/json'
 
-Note: "atomic units" refer to the smallest fraction of 1 XMR according to the bitmonerod implementation. **1 XMR = 1e12 atomic units.**
+Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
 
 ### Index of JSON RPC Methods:
 
