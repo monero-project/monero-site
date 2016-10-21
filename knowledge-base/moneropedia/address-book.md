@@ -10,7 +10,7 @@ summary: "Allows you to visit I2P websites/services that have the .i2p domain"
 
 In order to browse @I2P sites or services with @Kovri, you'll need an address book. An address book will allow you to translate @I2P websites/services that use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain) into an address that @I2P network will understand.
 
-Without an address book, you would be stuck using a @base32-address every time visited an @I2P website/service - and that's not fun!
+Without an address book, you would be stuck using a @base32-address every time you visit an @I2P website/service - and that's not fun!
 
 ### In-depth information
 
