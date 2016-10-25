@@ -16,15 +16,15 @@ Without an address book, you would be stuck using a @base32-address every time y
 
 Since [DNS](https://en.wikipedia.org/wiki/DNS) does not exist on the @I2P network, @Kovri also does **not** use DNS or any sort of @canonically-unique-host resolution. Instead, Kovri pairs a @locally-unique-host to a @base64-address @destination in a @subscription. Once your address book is filled with a @subscription, you can resolve your favorite `.i2p` domain site into a usable @I2P destination.
 
-### Creating an address Book
+### Creating an Address Book
 
 By default, your installation will come with a default public @subscription called `hosts.txt` in your @data-directory. When @Kovri starts, it loads this subscription and fetches any other subscriptions you've specified. Once loaded, your address book will be appropriately filled. For details on how to manage subscriptions, see @subscription.
 
-### Updating the address book
+### Updating the Address Book
 
 Currently, there are several ways to update your address book:
 
-1. Use a @jump-service to insert into address book
+1. Use a @jump-service to insert I2P addresses into you address book
 2. Use a @jump-service to copy/paste an address into your private @subscription
 3. Manually add or subtract from a private @subscription
 
