@@ -24,7 +24,7 @@ By default, your installation will come with a default public @subscription call
 
 Currently, there are several ways to update your address book:
 
-1. Use a @jump-service to insert I2P addresses into you address book
+1. Use a @jump-service to insert I2P addresses into your address book
 2. Use a @jump-service to copy/paste an address into your private @subscription
 3. Manually add or subtract from a private @subscription
 
