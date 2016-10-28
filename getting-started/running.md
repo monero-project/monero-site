@@ -21,7 +21,7 @@ Monero will run on most hardware, including ARM and 32-bit systems. In order to 
 
 ### Running the Node
 
-Once you have the files downloaded and unpacked you don't need to do anything beyond running the Monero daemon.
+Once you have the files downloaded and unpacked you don't need to do anything beyond running the Monero daemon (monerod).
 
 - On Windows: locate monerod.exe in Windows Explorer and double-click on it. If it opens and then closes, or crashes after starting, then you may want to start it from within Command Prompt in order to see what errors arise.
 
