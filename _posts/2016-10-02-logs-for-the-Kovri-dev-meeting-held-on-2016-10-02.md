@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Kovri Dev Meeting Held on 2016-10-02
 summary: Brief review of what has been completed since last meeting, Salti (a Firefox extension similiar to the Tor Browser Bundle), Kovri Logo, code & open tickets discussion, Kovri API discussion, Kovri and Monero integration
-tags: [dev diaries, i2p, crypto]**
+tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
