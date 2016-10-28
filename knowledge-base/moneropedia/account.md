@@ -44,7 +44,7 @@ view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903
 Your wallet has been generated.
 To start synchronizing with the daemon use "refresh" command.
 Use "help" command to see the list of available commands.
-Always use "exit" command when closing simplewallet to save
+Always use "exit" command when closing monero-wallet-cli to save
 current session's state. Otherwise, you will possibly need to synchronize 
 your wallet again. Your wallet key is NOT under risk anyway.<br>
 <span style="color: lime;">PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.</span><br>

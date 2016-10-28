@@ -8,20 +8,20 @@ kick-class: "purple-kicks"
 icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
-# simplewallet
+# monero-wallet-cli
 
-`simplewallet` is the wallet software that ships with the Monero tree. It is a console program,
+`monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,
 and manages an account. While a bitcoin wallet manages both an account and the blockchain,
-Monero separates these: `bitmonerod` handles the blockchain, and `simplewallet` handles the account.
+Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
 
-This guide will show how to perform various operations from the `simplewallet` UI. The guide assumes you are using the most recent version of the Monero Core software *(currently 0.9.0.0 Hydrogen Helix)*, and have already created an account according to the other guides.
+This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of Monero and have already created an account according to the other guides.
 
 
 ## Checking your balance
 
-Since the blockchain handling and the wallet are separate programs, many uses of `simplewallet`
+Since the blockchain handling and the wallet are separate programs, many uses of `monero-wallet-cli`
 need to work with the daemon. This includes looking for incoming transactions to your address.
-Once you are running both `simplewallet` and `bitmonerod`, enter `balance`.
+Once you are running both `monero-wallet-cli` and `monerod`, enter `balance`.
 
 Example:
 
@@ -44,9 +44,6 @@ may instead give you an integrated address, which is both of these packed into a
 
     transfer ADDRESS AMOUNT PAYMENTID
 
-Replace ADDRESS with the address you want to send to, AMOUNT with how many monero you want to send.
-and PAYMENTID with the payment ID you were given. If the receiving party doesn't need one, just
-=======
 Replace `ADDRESS` with the address you want to send to, `AMOUNT` with how many monero you want to send,
 and `PAYMENTID` with the payment ID you were given. Payment ID's are optional. If the receiving party doesn't need one, just
 omit it.
@@ -70,7 +67,7 @@ If you have your own Monero address, you just need to give your standard address
 
 You can find out your address with:
 
-  address
+    address
 
 Since Monero is anonymous, you won't see the origin address the funds you receive came from. If you
 want to know, for instance to credit a particular customer, you'll have to tell the sender to use
@@ -116,7 +113,7 @@ to an address), then you can check this way:
     check_tx_key TXID TXKEY ADDRESS
 
 Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination
-address which were supplied to you, respectively. simplewallet will check that transaction
+address which were supplied to you, respectively. monero-wallet-cli will check that transaction
 and let you know how much monero this transaction paid to the given address.
 
 
@@ -124,7 +121,7 @@ and let you know how much monero this transaction paid to the given address.
 
 If you want to get a last chance confirmation when sending a payment:
 
-  set always-confirm-transfers 1
+    set always-confirm-transfers 1
 
 
 ## How to find a payment to you
@@ -137,22 +134,22 @@ You can give more than one payment ID too.
 
 More generally, you can review incoming and outgoing payments:
 
-  show_transfers
+    show_transfers
 
 You can give an optional height to list only recent transactions, and request
 only incoming or outgoing transactions. For example,
 
-  show_transfers in 650000
+    show_transfers in 650000
 
 will only incoming transfers after block 650000. You can also give a height
 range.
 
 If you want to mine, you can do so from the wallet:
 
-  start_mining 2
+    start_mining 2
 
 This will start mining on the daemon usin two threads. Note that this is solo mining,
 and may take a while before you find a block. To stop mining:
 
-  stop_mining
+    stop_mining
 

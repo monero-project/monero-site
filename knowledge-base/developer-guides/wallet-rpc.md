@@ -11,9 +11,9 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ## Introduction
 
-This is a list of the simplewallet RPC calls, their inputs and outputs, and examples of each.
+This is a list of the monero-wallet-cli RPC calls, their inputs and outputs, and examples of each.
 
-All simplewallet methods use the same JSON RPC interface. For example:
+All monero-wallet-cli methods use the same JSON RPC interface. For example:
 
     IP=127.0.0.1
     PORT=18082
@@ -24,7 +24,7 @@ All simplewallet methods use the same JSON RPC interface. For example:
         -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'"$PARAMS"'}' \
         -H 'Content-Type: application/json'
 
-Note: "atomic units" refer to the smallest fraction of 1 XMR according to the bitmonerod implementation. **1 XMR = 1e12 atomic units.**
+Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
 
 ### Index of JSON RPC Methods:
 
@@ -55,7 +55,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *balance* - unsigned int; The total balance of the current simplewallet in session.
+* *balance* - unsigned int; The total balance of the current monero-wallet-cli in session.
 * *unlocked_balance* - unsigned int; Unlocked funds are those funds that are sufficiently deep enough in the Monero blockchain to be considered safe to spend.
 
 Example:
@@ -80,7 +80,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *address* - string; The 95-character hex address string of the simplewallet in session.
+* *address* - string; The 95-character hex address string of the monero-wallet-cli in session.
 
 Example:
 
@@ -103,7 +103,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *height* - string; The current simplewallet's blockchain height. If the wallet has been offline for a long time, it may need to catch up with the daemon.
+* *height* - string; The current monero-wallet-cli's blockchain height. If the wallet has been offline for a long time, it may need to catch up with the daemon.
 
 Example:
 

@@ -11,11 +11,11 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ## Introduction
 
-This is a list of the bitmonerod daemon RPC calls, their inputs and outputs, and examples of each.
+This is a list of the monerod daemon RPC calls, their inputs and outputs, and examples of each.
 
 Many RPC calls use the daemon's JSON RPC interface while others use their own interfaces, as demonstrated below.
 
-Note: "atomic units" refer to the smallest fraction of 1 XMR according to the bitmonerod implementation. **1 XMR = 1e12 atomic units.**
+Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
 
 ### [JSON RPC Methods](#json-rpc-methods):
 
@@ -47,7 +47,7 @@ Note: "atomic units" refer to the smallest fraction of 1 XMR according to the bi
 
 ## JSON RPC Methods
 
-The majority of bitmonerod RPC calls use the daemon's `json_rpc` interface to request various bits of information. These methods all follow a similar structure, for example:
+The majority of monerod RPC calls use the daemon's `json_rpc` interface to request various bits of information. These methods all follow a similar structure, for example:
 
     IP=127.0.0.1
     PORT=18081
