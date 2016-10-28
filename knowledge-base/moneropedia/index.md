@@ -18,5 +18,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 </div>
 
 ---
+[[Add New Entry]](https://github.com/monero-project/monero-site/new/master/knowledge-base/moneropedia)
+---
 
 If there is an entry you'd like to modify or be added, please [open an issue on this website's Github repository](https://github.com/monero-project/monero-site/issues) or submit changes via pull request.
