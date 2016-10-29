@@ -21,6 +21,10 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 <div class="text-center" style="padding-bottom: 15px;"><a style="color: #505050;" href="/getting-started/contribute"><img src="//static.getmonero.org/images/icon_people.svg" class="title-icon"><h2 class="inline">Contributing to <span class="yellow-kicks">Monero</span></h2></a></div>
 
+---
+
+<div class="text-center" style="padding-bottom: 15px;"><a style="color: #505050;" href="/knowledge-base/user-guides"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline">How do I...</h2></a></div>
+
 
 <div class="text-center" style="padding-bottom: 15px;"><a style="color: #505050;" href="/getting-started/donate"><img src="//static.getmonero.org/images/icon_donations.svg" class="title-icon"><h2 class="inline">Donating and <span class="kicks">Sponsorships</span></h2></a></div>
 
