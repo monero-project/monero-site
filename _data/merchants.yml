@@ -18,6 +18,8 @@
       url: https://www.livecoin.net
     - name: LiteBit (Bankwire/GiroPay/iDeal/SOFORT)
       url: https://www.litebit.eu/en/buy/monero
+    - name: MoneroDirect (Euro only)
+      url: https://monerodirect.com
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (Instant)
