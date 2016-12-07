@@ -28,12 +28,12 @@ Example if using `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACC
 
 ### Make a directory and extract the files.
 
-    mkdir bitmonero
-    tar -xjvf linux64 -C bitmonero
+    mkdir monero
+    tar -xjvf linux64 -C monero
 
 ### Launch the daemon
 
-    cd bitmonero
+    cd monero
     ./monerod
 
 ### Options:
