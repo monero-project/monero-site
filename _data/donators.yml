@@ -283,6 +283,11 @@
   history: [2nd Dan on 2015-12-11, 1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
   
 - level: 1
+  name: anonimal
+  amount: 45.6
+  history: [1st Dan on 2016-12-06]
+
+- level: 1
   name: David Latapie
   amount: 20
   history: [1st Dan on 2014-04-29]
