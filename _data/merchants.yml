@@ -34,8 +34,8 @@
       url: http://moneroblocks.info
     - name: MoneroExplorer
       url: https://explorer.xmr.my/
-    - name: Onion Monero Blockchain Explorer
-      url: http://107.172.25.35:8081/
+    - name: Moneroworld Blockchain Explorer
+      url: http://explore.moneroworld.com/
 - category: Payment Gateways
   merchants:  
     - name: Monero Merchants
