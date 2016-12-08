@@ -26,6 +26,10 @@
       url: https://shapeshift.io/
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
+    - name: Bitfinex (XMRUSD, XMRBTC)
+      url: https://www.bitfinex.com/
+    - name: Alfacashier
+      url: https://www.alfacashier.com/
 - category: Block Explorers
   merchants:
     - name: ChainRadar
