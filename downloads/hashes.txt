@@ -6,12 +6,12 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-33453727a8a49e07605dfee4b16aeb78816238a0e5c07dbaf19840f56f8d2cd4  monero.win.x64.v0-10-0-0.zip
-b0b7898050e6de2bc2aa443fa783cf275683513c0d3714e66fe00e2c75378af6  monero.win.x86.v0-10-0-0.zip
-204babf52d76e513d1f16527be4b3fb30d3ffbdd7528bf3997e4c1b5b301c9a8  monero.mac.x64.v0-10-0-0.tar.bz2
-6fe4cdb98d6ea7d2eded79841f70cb64edb840fcb2c84b904a1114424cffc5b1  monero.linux.x64.v0-10-0-0.tar.bz2
-89c9d2904c0de308eb31695af70084008c5880a2c0628de2fee8e47dd23967ea  monero.linux.x86.v0-10-0-0.tar.bz2
-cced4cad630e6b5e7131b9d079c3d176dfea79915b9080bdba199508c69e377b  monero.linux.arm7.v0-10-0-0.tar.bz2
+727a53dd154b61fd653f81da27788077fdf519301c81d3c1eb033c1ff2bf97c6  monero.win.x64.v0-10-1-0.zip
+ce77137b33bcaeb59273cb73b86e426e35e6209fb52a7e74fd9432a5a3018041  monero.win.x86.v0-10-1-0.zip
+447cebae257864b3706a8622f495bfd9fae780a6b277e1e31ac83bef7bc855c6  monero.mac.x64.v0-10-1-0.tar.bz2
+bf09eea27c957e7e2bdd62dac250888b301d4d25abe18d4a5b930fa7477708c7  monero.linux.x64.v0-10-1-0.tar.bz2
+9a18d274970df85d6bc926dc99407959c680c36f19017996be9c758f6c02cf06  monero.linux.x86.v0-10-1-0.tar.bz2
+3858d4786b65a37e981b142e9c0f256ac66662314794d05f595c4c30cb5b6ddb  monero.freebsd.x64.v0-10-1-0.tar.bz2
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
