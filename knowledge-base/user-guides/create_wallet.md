@@ -26,8 +26,6 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 ![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/5.png)
 ![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/6.png)
 
-- This step is optional : download the [blockchain](https://getmonero.org/downloads/) and save it in "/home/yourUserName/.bitmonero/"
-
 - Open a terminal and load the path where your binaries are extracted (cf. step 2) by typing : "*cd yourPathFromStep2*"
 
 ![image7](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/7.png)
