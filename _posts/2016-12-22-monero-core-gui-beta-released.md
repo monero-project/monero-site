@@ -58,6 +58,7 @@ This release was the direct result of 32 people who worked, largely unpaid and a
 - dEBRUYNE
 - xmr-eric
 - Christoph Mayerhofer
+- Howard "hyc" Chu
 - githubrsys
 - moneromooo
 - krzysztoff7
