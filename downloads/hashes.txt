@@ -14,15 +14,20 @@ bf09eea27c957e7e2bdd62dac250888b301d4d25abe18d4a5b930fa7477708c7  monero.linux.x
 57221605997a3cd815f2a9689486abbdb124263fff047ca61068900eb7cb1839  monero.linux.arm7.v0-10-1-0.tar.bz2
 3858d4786b65a37e981b142e9c0f256ac66662314794d05f595c4c30cb5b6ddb  monero.freebsd.x64.v0-10-1-0.tar.bz2
 
+cb8bdf36fb56739a0fa746bec8dd51fb3479d51a3b8f0ce41a771f1d5a924bdb  monero.gui.win.x64.beta.zip
+907bfb4832c74de6cec7df730dfce5d9ccc1e6de09b6a4546cb9eee1f8242968  monero.gui.mac.x64.beta.tar.bz2
+cecbe4b23f777442de861bc0981af0857dab043ed63be98f768cdd00825a8d09  monero.gui.linux.x64.beta.tar.bz2
+daabd11b271685cedf5d6321cbde5e6b7c2691630a4355a973fc0cb99b1d2dc9  monero.gui.linux.x86.beta.tar.bz2
+
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJYUaxIAAoJEFVDLfMczU/NZrIH/1YlK03Wfy6eDDlLpEj6jm63
-G5i2twMnRZmA3vzsQBWWyuPRveLvhGI2gCNDly5uix8lxPLi/xxi/D5Vu/aNI7hP
-3sciMK13xWVybGZtGQOJJJI+IG3631A3RSy+qgD09PSY8PurICUVj/667rr0Uq58
-6W2xweAkNDqrVVF2FsukTDzm3Wvsz9YaHOSRWeDC+4lLTQYNGBKDGZN+CiU0HYuA
-aaIJfI2fC7NfWclUwtXSz9N0P4tXQiEQUKyUdcpustdv5Iw7I8tQU2DNSDebxrQU
-l+x5Lh3U5ISmC8/7/p56Emr+2EEmGNKkr/QLP0RaETFhX8uDg1rvf0sT8rnGuPs=
-=6/2/
+iQEcBAEBCAAGBQJYW/HGAAoJEFVDLfMczU/NmDMH/RXq15dj0FF0HEvbVrwVIkW3
+z5RFkbEiYdOJAj1SjrWlx5v055QBCjI6PLQM/VICC79NPvOhvinoDpM5YAMU1PTB
+jC8Oi68VYxG4B8RERzxGwkNkvVu9nlBAEqEChw/YSi0NvCUuFkY05mrtPQbM+RcB
+ShtUjNBW+7f5BOEXfjreR5vm6vXT9fGQBzHLgCcv93qLUytZnx0GDPCDBDq87wxa
+PhjMIrBygf55tmstiolZdkO2Xn2Nd50tzi0YElxGH26CXRkuc/L3zIz871mHff3q
+qj2KnCuIsnQWB7sJ2uxP/bDVncdoKslnc6RDz4azaZSjSEKsballubXG0gOghPA=
+=H+gA
 -----END PGP SIGNATURE-----
