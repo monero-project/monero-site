@@ -11,9 +11,9 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ## Introduction
 
-This is a list of the monero-wallet-cli RPC calls, their inputs and outputs, and examples of each.
+This is a list of the monero-wallet-rpc calls, their inputs and outputs, and examples of each. The program monero-wallet-rpc replaced the rpc interface that was in simplewallet and then monero-wallet-cli.
 
-All monero-wallet-cli methods use the same JSON RPC interface. For example:
+All monero-wallet-rpc methods use the same JSON RPC interface. For example:
 
     IP=127.0.0.1
     PORT=18082
@@ -55,7 +55,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *balance* - unsigned int; The total balance of the current monero-wallet-cli in session.
+* *balance* - unsigned int; The total balance of the current monero-wallet-rpc in session.
 * *unlocked_balance* - unsigned int; Unlocked funds are those funds that are sufficiently deep enough in the Monero blockchain to be considered safe to spend.
 
 Example:
@@ -80,7 +80,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *address* - string; The 95-character hex address string of the monero-wallet-cli in session.
+* *address* - string; The 95-character hex address string of the monero-wallet-rpc in session.
 
 Example:
 
@@ -103,7 +103,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *height* - string; The current monero-wallet-cli's blockchain height. If the wallet has been offline for a long time, it may need to catch up with the daemon.
+* *height* - string; The current monero-wallet-rpc's blockchain height. If the wallet has been offline for a long time, it may need to catch up with the daemon.
 
 Example:
 
@@ -497,3 +497,67 @@ Example:
   }
 }
 
+
+### make_uri
+
+Create a payment URI using the official URI spec.
+
+Inputs:
+
+* *address* - wallet address string
+* *amount* (optional) - the integer amount to receive, in **atomic** units
+* *payment_id* (optional) - 16 or 64 character hexadecimal payment id string
+* *recipient_name* (optional) - string name of the payment recipient
+* *tx_description* (optional) - string describing the reason for the tx
+
+Outputs:
+
+* *uri* - a string containing all the payment input information as a properly formatted payment URI
+
+Example:
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span>curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_uri","params":{"address":"46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS","amount":10,"payment_id":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef","tx_description":"Testing out the make_uri function.","recipient_name":"Monero Project donation address"}}'  -H 'Content-Type: application/json'
+{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "result": {
+    "uri": "monero:46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."
+  }
+}
+
+
+## parse_uri
+
+Parse a payment URI to get payment information.
+
+Inputs:
+
+* *uri* - a string containing all the payment input information as a properly formatted payment URI
+
+Outputs:
+
+* *uri* - JSON object containing parment information:
+  * *address* - wallet address string
+  * *amount* - the decimal amount to receive, in **coin** units (0 if not provided)
+  * *payment_id* - 16 or 64 character hexadecimal payment id string (empty if not provided)
+  * *recipient_name* - string name of the payment recipient (empty if not provided)
+  * *tx_description* - string describing the reason for the tx (empty if not provided)
+
+Example:
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span>curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"parse_uri","params":{"uri":"monero:46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."}}' -H 'Content-Type: application/json'
+{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "result": {
+    "uri": {
+      "address": "46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS",
+      "amount": 10,
+      "payment_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "recipient_name": "Monero Project donation address",
+      "tx_description": "Testing out the make_uri function."
+    }
+  }
+}
