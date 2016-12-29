@@ -517,12 +517,12 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span>curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_uri","params":{"address":"46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS","amount":10,"payment_id":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef","tx_description":"Testing out the make_uri function.","recipient_name":"Monero Project donation address"}}'  -H 'Content-Type: application/json'
+<span style="color: cyan;">[ monero->~ ]$</span>curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_uri","params":{"address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","amount":10,"payment_id":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef","tx_description":"Testing out the make_uri function.","recipient_name":"Monero Project donation address"}}'  -H 'Content-Type: application/json'
 {
   "id": 0,
   "jsonrpc": "2.0",
   "result": {
-    "uri": "monero:46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."
+    "uri": "monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."
   }
 }
 
@@ -547,13 +547,13 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span>curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"parse_uri","params":{"uri":"monero:46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."}}' -H 'Content-Type: application/json'
+<span style="color: cyan;">[ monero->~ ]$</span>curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"parse_uri","params":{"uri":"monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."}}' -H 'Content-Type: application/json'
 {
   "id": 0,
   "jsonrpc": "2.0",
   "result": {
     "uri": {
-      "address": "46ymor5FZyNPS1FetxidU1HcnY1zQxvcq8hZWRvHE21oGGF1xiRgPBWUGkV9jZgj156TKuTbWnwihfHwfvQ5yevPUMxaYKS",
+      "address": "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A",
       "amount": 10,
       "payment_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
       "recipient_name": "Monero Project donation address",
