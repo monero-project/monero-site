@@ -19,7 +19,7 @@ Since the 0.9 Hydrogen Helix version, the Payment IDs can be encrypted and embed
 It is recommented to use the official wallet's `integrated_address` command to automatically generate Integrated Addresses that contain Compact Payment ID's. If you want to use the command line, you can generate Payment ID's as follows:
 
 Creating a compact Payment ID for an Integrated Address:
-```# openssl rand 8 -hex```
+```# openssl rand -hex 8```
 
 Creating an old-style Payment ID:
-```# openssl rand 32 -hex```
+```# openssl rand -hex 32```
