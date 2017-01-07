@@ -39,25 +39,6 @@ You can read our guide on [running a Monero node](/getting-started/running), and
 
 ### Third-Party Clients
 
-There are also several third-party clients that interact with the official Monero core daemon, and are able to provide their own additional functionality.
-
----
-
-{:.text-center .client-list #lightwallet}
-[![](//static.getmonero.org/images/clients/lightwallet.svg)](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)  
-lightWallet is a simple and slim client written in Java, and should run on most operating systems. It is written and maintained by jwinterm.
-
-{:.text-center .client-list}
-**Current Version:** 0.2 
-
-{:.text-center .client-platforms}
-- [![](//static.getmonero.org/images/platforms/windows.svg)  
-  Windows](https://github.com/jwinterm/LightWallet2/releases/download/v0.2/LightWallet.exe)
-- [![](//static.getmonero.org/images/platforms/java.svg)  
-  Java (All Platforms)](https://github.com/jwinterm/LightWallet2/releases/download/v0.2/LightWallet.jar)
-- [![](//static.getmonero.org/images/platforms/github.svg)  
-  Source Code](https://github.com/jwinterm/LightWallet2)
-- [![](//static.getmonero.org/images/platforms/forum.svg)  
-  Forum Thread](https://forum.getmonero.org/20/general-discussion/166/lightwallet-a-lightweight-monero-gui-account-manager)
+There are currently no maintained third-party clients.
 
 ---
