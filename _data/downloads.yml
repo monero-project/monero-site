@@ -1,50 +1,58 @@
 - platform: Windows, 64-bit
   icon: windows.svg
   url: win64
-  hash: 303840d7fb997b2f1efc280fd19ba84003ecff85
-  version: 0.9.1.0
-  tag: Hydrogen Helix
+  hash: 727a53dd154b61fd653f81da27788077fdf519301c81d3c1eb033c1ff2bf97c6
+  version: 0.10.1.0
+  tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: windows.svg
   url: win32
-  hash: none
-  version: 0.9.1.0
-  tag: Hydrogen Helix
+  hash: ce77137b33bcaeb59273cb73b86e426e35e6209fb52a7e74fd9432a5a3018041
+  version: 0.10.1.0
+  tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   icon: apple.svg
   url: mac64
-  hash: d6c776878fd3d47f149fc9be4e76cf2d03d5a725
-  version: 0.9.1.0
-  tag: Hydrogen Helix
+  hash: 447cebae257864b3706a8622f495bfd9fae780a6b277e1e31ac83bef7bc855c6
+  version: 0.10.1.0
+  tag: Wolfram Warptangent
   blockchain: mac
 
 - platform: Linux, 64-bit
   icon: linux.svg
   url: linux64
-  hash: 4149de91c10b56ff091070acca80d233fbd5a797
-  version: 0.9.1.0
-  tag: Hydrogen Helix
+  hash: bf09eea27c957e7e2bdd62dac250888b301d4d25abe18d4a5b930fa7477708c7
+  version: 0.10.1.0
+  tag: Wolfram Warptangent
   blockchain: linux
+
+- platform: Linux, 32-bit
+  icon: linux.svg
+  url: linux32
+  hash: 9a18d274970df85d6bc926dc99407959c680c36f19017996be9c758f6c02cf06
+  version: 0.10.1.0
+  tag: Wolfram Warptangent
+  blockchain: linux
+
+- platform: ARMv7
+  icon: arm.svg
+  url: arm
+  hash: 57221605997a3cd815f2a9689486abbdb124263fff047ca61068900eb7cb1839
+  version: 0.10.1.0
+  tag: Wolfram Warptangent
+  blockchain: arm
 
 - platform: FreeBSD, 64-bit
   icon: freebsd.svg
   url: freebsd64
-  hash: 9fd0005b697e146a26a0bf9e3cd0c89b978f7fbd
-  version: 0.8.8.6
-  tag: Release
+  hash: 3858d4786b65a37e981b142e9c0f256ac66662314794d05f595c4c30cb5b6ddb
+  version: 0.10.1.0
+  tag: Wolfram Warptangent
   blockchain: freebsd
-
-- platform: Raspberry Pi / ARM
-  icon: arm.svg
-  url: arm
-  hash: none
-  version: 0.9.1.0
-  tag: Hydrogen Helix
-  blockchain: arm
 
 - platform: Source Code
   icon: github.svg

@@ -22,7 +22,7 @@
 - slug: i2p
   name: i2p
 
-- slug: i2p
+- slug: i8n
   name: Internationalisation
 
 - slug: rpc
@@ -72,3 +72,6 @@
 
 - slug: 0mq
   name: ZeroMQ
+
+- slug: releases
+  name: Monero Software Releases

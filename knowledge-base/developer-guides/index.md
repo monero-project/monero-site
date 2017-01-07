@@ -11,4 +11,5 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### Work in Progress
 
-<div class="text-center" style="padding-bottom: 15px;"><a style="color: #505050;" href="wallet-rpc"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline">How to <span class="green-kicks">Wallet RPC documentation</span></h2></a></div>
+<div class="text-center" style="padding-bottom: 15px;"><a style="color: #505050;" href="daemon-rpc"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline"><span class="green-kicks">Daemon RPC documentation</span></h2></a></div>
+<div class="text-center" style="padding-bottom: 15px;"><a style="color: #505050;" href="wallet-rpc"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline"><span class="green-kicks">Wallet RPC documentation</span></h2></a></div>

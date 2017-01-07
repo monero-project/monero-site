@@ -12,7 +12,7 @@
 
 - level: 9
   name: ajiekceu4
-  amount: 10666
+  amount: 11666
   history: [9th Dan on 2016-02-03, 8th Dan on 2015-11-4, 7th Dan on 2015-08-31, 6th Dan on 2015-05-11]
   
 - level: 8
@@ -105,6 +105,7 @@
   name: dnaleor
   amount: 1201.1337
   history: [6th Dan 0n 2016-02-03, 5th Dan on 2015-02-23, 4th Dan on 2014-12-17, 3rd Dan on 2014-07-17, 1st Dan on 2014-05-03]
+  quote: Crypto may offer 'key blinding'. I did some research and it was obscure, but there may be something there. 'Group signatures' may be related. ñ Satoshi Nakamoto, 2010
 
 - level: 5
   name: ajiekceu4
@@ -232,6 +233,11 @@
   history: [3rd Dan on 2015-05-13, 2nd Dan on 2015-04-03]
 
 - level: 2
+  name: Warptangent Memorial Fund 
+  amount: 64
+  history: [2nd Dan on 2016-07-19]
+
+- level: 2
   name: superresistant
   amount: 50
   history: [2nd Dan on 2014-07-17]
@@ -276,6 +282,11 @@
   amount: 53
   history: [2nd Dan on 2015-12-11, 1st Dan on 2015-01-24, 1st Kyu on 2014-07-24]
   
+- level: 1
+  name: anonimal
+  amount: 45.6
+  history: [1st Dan on 2016-12-06]
+
 - level: 1
   name: David Latapie
   amount: 20
@@ -410,3 +421,8 @@
   name: Evan Duffield (care of iCEBREAKER)
   amount: 1
   history: [4th Kyu on 2014-11-20]
+  
+- level: -4
+  name: TheDashGuy (care of iCEBREAKER)
+  amount: 1
+  history: [4th Kyu on 2016-08-19]

@@ -21,13 +21,13 @@ Monero will run on most hardware, including ARM and 32-bit systems. In order to 
 
 ### Running the Node
 
-Once you have the files downloaded and unpacked you don't need to do anything beyond running the Monero daemon.
+Once you have the files downloaded and unpacked you don't need to do anything beyond running the Monero daemon (monerod).
 
-- On Windows: locate bitmonerod.exe in Windows Explorer and double-click on it. If it opens and then closes, or crashes after starting, then you may want to start it from within Command Prompt in order to see what errors arise.
+- On Windows: locate monerod.exe in Windows Explorer and double-click on it. If it opens and then closes, or crashes after starting, then you may want to start it from within Command Prompt in order to see what errors arise.
 
-- On OS X: locate bitmonerod in Finder and double-click on it. As with Windows, if it opens and then closes, or crashes after starting, then you can start it from within Terminal.
+- On OS X: locate monerod in Finder and double-click on it. As with Windows, if it opens and then closes, or crashes after starting, then you can start it from within Terminal.
 
-- On Linux: dependent on whether you are running it on a desktop or server operating system, you will want to start bitmonerod either in a screen session or in a console window of its own.
+- On Linux: dependent on whether you are running it on a desktop or server operating system, you will want to start monerod either in a screen session or in a console window of its own.
 
 ### Ensuring Your Node is Running Correctly
 

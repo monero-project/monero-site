@@ -11,11 +11,11 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### Monero Core
 
-Monero Core consists of several applications, including bitmonerod (the daemon used if running a @full-node, as it maintains the connection to the Monero network) and simplewallet (a Monero @account manager application), as well as several other helper applications.
+Monero Core consists of several applications, including monerod (the daemon used if running a @full-node, as it maintains the connection to the Monero network) and monero-wallet-cli (a Monero @account manager application), as well as several other helper applications.
 
-If you are using Monero Core for the first time you can simply download an appropriate release, and run bitmonerod to get synced up to the network.
+If you are using Monero Core for the first time you can simply download an appropriate release, and run monerod to get synced up to the network.
 
-Note: the SHA hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
+Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
 
 <div class="row">
 
@@ -73,6 +73,6 @@ Note: the SHA hashes are listed by the downloads for convenience, but a GPG-sign
 
 ### Other Downloads
 
-- If you'd prefer to use a blockchain bootstrap, instead of syncing up from scratch, you can [use this link for the most current bootstrap](https:////downloads.getmonero.org/blockchain.raw).
+- If you'd prefer to use a blockchain bootstrap, instead of syncing up from scratch, you can [use this link for the most current bootstrap](https:////downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however.
 - For Monero Research Lab publications please visit the [Monero Research Lab section](/research-lab) of this site.
 - High resolution and vector copies of the Monero logo [can be downloaded at this link](https://downloads.getmonero.org/resources/branding.zip).

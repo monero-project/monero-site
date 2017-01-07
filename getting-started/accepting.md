@@ -17,9 +17,9 @@ However, because Monero has @stealth-addresses there is no need to have separate
 
 A @payment-ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is: <span class="long-term">666c75666679706f6e7920697320746865206265737420706f6e792065766572</span>
 
-### Checking for a Payment in simplewallet
+### Checking for a Payment in monero-wallet-cli
 
-If you want to check for a payment using simplewallet you can use the "payments" command followed by the payment ID or payment IDs you want to check. For example:
+If you want to check for a payment using monero-wallet-cli you can use the "payments" command followed by the payment ID or payment IDs you want to check. For example:
 
 {:.cli-code}
 <span style="color: yellow;">[wallet 49VNLa]:</span> payments 666c75666679706f6e7920697320746865206265737420706f6e792065766572
@@ -33,7 +33,7 @@ If you need to check for payments programmatically, then details follow the next
 
 <i class="fa fa-level-up fa-rotate-90 fa-lg instruction-list"></i> Generate a random 64 character hexadecimal string for the payment  
 <i class="fa fa-level-up fa-rotate-90 fa-lg instruction-list"></i> Communicate the payment ID and Monero address to the individual who is making payment  
-<i class="fa fa-level-up fa-rotate-90 fa-lg instruction-list"></i> Check for the payment using the "payments" command in simplewallet
+<i class="fa fa-level-up fa-rotate-90 fa-lg instruction-list"></i> Check for the payment using the "payments" command in monero-wallet-cli
 
 ### Checking for a Payment Programatically
 

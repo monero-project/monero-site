@@ -8,6 +8,10 @@ kick-class: "kicks"
 icon: "icon_about"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZi9xx6aiuY" frameborder="0" allowfullscreen></iframe>
+<!-- Source code for this video can be found at https://github.com/savandra/Monero_Promo_Video/blob/master/README.md -->
+
 ## About Monero
 
 To most people, financial privacy is very important. Yet in recent years, we have seen a staggering amount of big corporations, banks and governments having their records compromised, at every time leaking information about their users, their practices, their balance sheets. The unfortunate but undeniable conclusion is that there is no safe place to conduct private transactions.  
@@ -35,7 +39,7 @@ The underlying technologies and cryptography upon which Monero is built, has bee
 With Monero, transactions are private by default. However, each user has the ability to select different levels of privacy, optionally disclosing their transaction information, or even provide audit access (view only) to his full Monero account.  
 
 ## DECENTRALIZATION
-While most cryptocurrencies align to theoretical principles of decentralization, the reality is that most fall short of such a claim. More often than not, it is not just one branch of a cryptocurrency system that is centralized in one form or another, is that that many branches are so.
+While most cryptocurrencies align to theoretical principles of decentralization, the reality is that most fall short of such a claim. More often than not, it is not just one branch of a cryptocurrency system that is centralized in one form or another, it is that many branches are so.
 
 With Proof of Stake currencies, irregular emission and distribution models cause most of the staking power to end up in the hand of a privileged few. Participants of lesser weight are reduced to second class citizens, with little chance of ever obtaining similar returns.
 

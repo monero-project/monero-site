@@ -13,6 +13,7 @@ global:
   terms: Terms
   privacy: Privacy
   copyright: Copyright
+  edit: Edit This Page
 menu:
   forum: Forum
   blog: Blog
@@ -27,6 +28,7 @@ menu:
   choose: How to Choose a Monero Client
   running: How to Run a Monero Node
   donations: Donating and Sponsorships
+  contribute: Contributing to Monero
   downloads: All Monero Downloads
   merchants: Merchants and Services Directory
   accepting: Accepting Monero Payments
@@ -39,6 +41,10 @@ menu:
   lab: Monero Research Lab
   alternative: Alternative Clients
   projects: External Projects
+  stackexchange: StackExchange Q&A
+  slack: Slack Chat
+  rocketchat: Rocket Chat
+  telegram: Telegram Chat
   irc: IRC on Freenode
   irc-general: "#monero (General)"
   irc-development: "#monero-dev (Development)"
