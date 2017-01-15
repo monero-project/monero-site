@@ -41,7 +41,7 @@ author: dEBRUYNE / fluffypony
 **\<fluffypony>** olark  
 **\<meeting-bot> [olark]** lots of refactoring ;)  
 **\<fluffypony>** maybe you can give us a brief background on you  
-**\<meeting-bot> [i2p-relay] {-_Slack} \<nanoakron>** How’s the documentation looking to make that learning curve more shallow for future developers?  
+**\<meeting-bot> [i2p-relay] {-Slack} \<nanoakron>** How’s the documentation looking to make that learning curve more shallow for future developers?  
 **\<meeting-bot> [anonimal]** (e.g., favourite book, long walks on the beach, etc.)  
 **\<meeting-bot> [anonimal]** nanoakron: moneropedia. We can talk more about that at the end of the meeting too.  
 **\<meeting-bot> [olark]** Have been programming for the last 3-4 years on and off. Just getting back into C++ have followed Monero and Kovri for the last year or so and figured I should stop procrastinating and help move things forward.  
