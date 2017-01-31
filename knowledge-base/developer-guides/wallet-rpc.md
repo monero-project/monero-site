@@ -134,19 +134,21 @@ Inputs:
 * *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
 Outputs:
 
-* *tx_hash* - array of: string
-* *tx_key* - 
+* *fee* - Integer value of the fee charged for the txn.
+* *tx_hash* - String for the publically searchable transaction hash
+* *tx_key* - String for the transaction key if get_tx_key is true, otherwise, blank string.
 
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer","params":{"destinations":[{"amount":10000000000000,"address":"427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"},{"amount":200000000000,"address":"49VtwYXDbbh7hq57wwkLH36x4D6XV6Tr2P93ANnBi9qFGyYZbx8SXWPUHC9V1o7N41b4c3WJ1kubkffRfPTPfMuB8QUqFD5"}],"fee":150000000000,"mixin":3,"unlock_time":0,"payment_id":"001f181e2a2e076e8451e9dd7b5fe8fbd2b204cd6a20cb3e21b9a2a42b0ce03c","get_tx_key":true}}' -H 'Content-Type: application/json'
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBLwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"}],"mixin":4,"get_tx_key": true}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "tx_hash": "&lt;29d933789db5483fa63694ed2560d3829dbf0b945fdea3c42fbfa4d381e7ac22&gt;",
-    "tx_key": "&lt;c228dff7aa455d770f8cf71b9d319d2055a125cfbac1ca9485aeb1a107604d0d&gt;"
+    "fee": 48958481211,
+    "tx_hash": "985180f468637bc6d2f72ee054e1e34b8d5097988bb29a2e0cb763e4464db23c",
+    "tx_key": "8d62e5637f1fcc9a8904057d6bed6c697618507b193e956f77c31ce662b2ee07"
   }
 }
 
@@ -164,22 +166,24 @@ Inputs:
 * *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
-* *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
+* *get_tx_key* - boolean; (Optional) Return the transaction key after sending. -- Ignored
 * *new_algorithm* - boolean; True to use the new transaction construction algorithm, defaults to false.
 
 Outputs:
 
+* *fee_list* - array of: integer
 * *tx_hash_list* - array of: string
 
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":2000000000000,"address":"427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"},{"amount":3000000000000,"address":"49VtwYXDbbh7hq57wwkLH36x4D6XV6Tr2P93ANnBi9qFGyYZbx8SXWPUHC9V1o7N41b4c3WJ1kubkffRfPTPfMuB8QUqFD5"}],"mixin":3,"unlock_time":0,"payment_id":"a29602cc261fecbc93c22a152a942cc791ca6112cffe201c3e809945c9da672f","get_tx_key":true,"new_algorithm":true}}' -H 'Content-Type: application/json'
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"},{"amount":200000000,"address":"9vC5Q25cR1d3WzKX6dpTaLJaqZyDrtTnfadTmVuB1Wue2tyFGxUhiE4RGa74pEDJv7gSySzcd1Ao6G1nzSaqp78vLfP6MPj"},{"amount":200000000,"address":"A2MSrn49ziBPJBh8ZNEhhbfyLMou6mao4C1F5TLGUatmUnCxZArDYkcbAnVkVEopWVeak2rKDrmc8JpoS7n5dvfN9YDPBTG"},{"amount":200000000,"address":"9tEDyVQ8zgRQbDYiykTdpw5kZ6qWQWcKfExEj9eQshjpGb3sdr3UyWE2AHWzUGzJjaH9HN1DdGBdyQQ4AqGMc7rr5xYwZWW"}],"mixin":4,"get_tx_key": true, "new_algorithm": true}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "tx_hash_list": ["&lt;fb39c42cb5ff231ee9e8b381bb8734fd655b6ca28a23cbd82aa9422aa870e91b&gt;"]
+    "fee_list": [97916962422],
+    "tx_hash_list": ["c5c389846e701c27aaf1f7ab8b9dc457b471fcea5bc9710e8020d51275afbc54"]
   }
 }
 
