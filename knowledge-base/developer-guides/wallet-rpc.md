@@ -24,6 +24,18 @@ All monero-wallet-rpc methods use the same JSON RPC interface. For example:
         -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'"$PARAMS"'}' \
         -H 'Content-Type: application/json'
 
+If the monero-wallet-rpc was executed with the `--rpc-login` argument as `username:password`, then follow this example:
+
+    IP=127.0.0.1
+    PORT=18082
+    METHOD="make_integrated_address"
+    PARAMS="{\"payment_id\":\"1234567890123456789012345678900012345678901234567890123456789000\"}"
+    curl \
+        -u username:password --digest \
+        -X POST http://$IP:$PORT/json_rpc \
+        -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'"$PARAMS"'}' \
+        -H 'Content-Type: application/json'
+
 Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
 
 ### Index of JSON RPC Methods:
