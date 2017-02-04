@@ -9,22 +9,10 @@ icon: "icon_client"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-### Mobile, Web, and Lightweight Clients
-
-The clients below are ideal if you are using Monero for the first time. They are also useful if you are on a device that cannot run a [full Monero node](/getting-started/running).
-
----
-
-{:.text-center .client-list #mymonero}
-[![](//static.getmonero.org/images/clients/mymonero.svg)](https://mymonero.com)
-
-{:.text-center}
-[MyMonero.com](https://mymonero.com) is easy-to-use and works in your browser without you needing to install anything.  
-It can be used with some measure of safety, as MyMonero are unable to spend your funds on your behalf.  
-It is owned and operated by Riccardo Spagni, one of the Monero Core Team members.
+### Monero GUI (Beta)
+The first beta of the Monero Core GUI has been released. [Download page](https://getmonero.org/2016/12/22/monero-core-gui-beta-released.html).
 
 ---
-
 ### Full Monero Client
 
 If you are able to spare the bandwidth and disk space required to run a full node, doing so helps keep the network stable and robust, and also affords you the maximum privacy Monero has to offer.
