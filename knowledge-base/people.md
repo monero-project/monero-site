@@ -34,8 +34,8 @@ Some that have made outstanding contributions include: [moneromooo](http://githu
 The Core Team forms an integral part of the Monero Research Lab, but the researchers, scientists, and academics that are primarily focused on Monero research are listed below. They have chosen to remain pseudonymous for the moment. They are:
 
 - **Surae Noether:** Lead researcher for the Monero Research Lab, Surae holds a PhD in Mathematical Sciences and brings a rich understanding of cryptography and homological algebra to the mix.
-- **Shen Noether:** A graduate student focused on algebraic geometry, it is Shen's command and knowledge of cryptography that lends itself so well to his involvement in the Monero Research Lab.
 - **Sarang Noether:** Having completed his Masters in Mathematical Sciences, Sarang is currently completing his doctoral degree in Physics, while devoting time on the side to the advancement of Monero research.
+- **Shen Noether (previously)** A graduate student focused on algebraic geometry.
 
 ### Other Contributors
 
