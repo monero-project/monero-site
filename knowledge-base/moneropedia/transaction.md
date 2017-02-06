@@ -9,13 +9,13 @@ summary: "a cryptographically signed container that details the transfer of Mone
 
 {{ page.summary | capitalize }}.
 
-A transaction's parameters are one or more recipient addresses with the corresponding amounts of funds to send to them, and a `mixin_count` parameter that specifies the amount of outputs the transaction will have mixed in. Higher amounts of `mixin_count` offer more anonymity, but that comes with a cost, since the transaction gets larger and therefore the transaction fees get higher as well. The fact that this mixing can be done offline is a huge benefit for privacy. 
+The parameters of a transaction contain one or more recipient addresses with corresponding amounts of funds and a `mixin_count` parameter that specifies the number of foreign outputs bound to the transaction. The more outputs that are used, a higher degree of obfuscation is possible, but that comes with a cost. Since a transaction gets larger with more outputs, the transaction fee would be higher. It is possible to form a transaction offline, which is a huge benefit for privacy. 
 
-A transaction is uniquely identified by a Transaction ID, which is usually represented as a 32-byte string (64 hexadecimal characters).
+A transaction can be uniquely identified with the use of an optional Transaction ID, which is usually represented by a 32-byte string (64 hexadecimal characters).
 
 ### In-depth Information
 Every transaction involves two keys: a public @spend-key, and a public @view-key. The destination for an output in a transaction is actually a one-time public key computed from these two keys.
 
-When the wallet is scanning for incoming transactions, every transaction is actually scanned to see if it is for "you". This only requires your private view key and your public spend key, and this check is immutable and cannot be faked. You cannot receive transactions and identify them without the corresponding private view key.
+When a wallet is scanning for incoming transactions, every transaction is scanned to see if it is for "you". This only requires your private view key and your public spend key, and this check is immutable and cannot be faked. You cannot receive transactions and identify them without a corresponding private view key.
 
 In order to spend the funds you have to compute a one-time private spend key for that output.

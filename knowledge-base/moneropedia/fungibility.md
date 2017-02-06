@@ -1,7 +1,7 @@
 ---
 layout: moneropedia
 entry: "Fungibility"
-terms: ["fungibility-fungible"]
+terms: ["fungibility"]
 summary: "property of a currency whereby two units can be substituted in place of one another"
 ---
 
