@@ -73,6 +73,6 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 
 ### Other Downloads
 
-- If you'd prefer to use a blockchain bootstrap, instead of syncing up from scratch, you can [use this link for the most current bootstrap](https:////downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however.
+- If you'd prefer to use a blockchain bootstrap, instead of syncing up from scratch, you can [use this link for the most current bootstrap](https:////downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
 - For Monero Research Lab publications please visit the [Monero Research Lab section](/research-lab) of this site.
 - High resolution and vector copies of the Monero logo [can be downloaded at this link](https://downloads.getmonero.org/resources/branding.zip).
