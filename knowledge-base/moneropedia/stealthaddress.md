@@ -11,4 +11,4 @@ Stealth addresses are an important part of Monero's inherent privacy. They allow
 
 When you create a Monero wallet, you’ll get a private viewkey and a private spendkey. The spendkey is needed for making payments, the viewkey is used to “claim” incoming transactions. Both the public spendkey and viewkey are used to build your monero address. You can have a “watch only” wallet that only uses the viewkey. This feature can be used for accounting or auditing purposes. You can decide who can see your balance by handing out your viewkey. Monero is private by default and optionally transparent!
 
-To read how Monero prevents tracking coin history (untraceability), see @ring-signatures.
+To read how Monero prevents tracking history (untraceability), see @ring-signatures.
