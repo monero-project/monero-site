@@ -6,13 +6,15 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-727a53dd154b61fd653f81da27788077fdf519301c81d3c1eb033c1ff2bf97c6  monero.win.x64.v0-10-1-0.zip
-ce77137b33bcaeb59273cb73b86e426e35e6209fb52a7e74fd9432a5a3018041  monero.win.x86.v0-10-1-0.zip
-447cebae257864b3706a8622f495bfd9fae780a6b277e1e31ac83bef7bc855c6  monero.mac.x64.v0-10-1-0.tar.bz2
-bf09eea27c957e7e2bdd62dac250888b301d4d25abe18d4a5b930fa7477708c7  monero.linux.x64.v0-10-1-0.tar.bz2
-9a18d274970df85d6bc926dc99407959c680c36f19017996be9c758f6c02cf06  monero.linux.x86.v0-10-1-0.tar.bz2
-57221605997a3cd815f2a9689486abbdb124263fff047ca61068900eb7cb1839  monero.linux.arm7.v0-10-1-0.tar.bz2
-3858d4786b65a37e981b142e9c0f256ac66662314794d05f595c4c30cb5b6ddb  monero.freebsd.x64.v0-10-1-0.tar.bz2
+e852642c42bc9ed6a248fea0e0bb8e9e2563cdf9a4dfdd40b96226a3cadd874e  monero-win-x64-v0.10.2.0.zip
+8ac825d89f58a07be65f4f96ddd1e22ef4fb9156d28d12381ade6e3a070b18cb  monero-win-x86-v0.10.2.0.zip
+685a0262b9add448a516baac3dc81d2dda559fdba000afcf6480e9b2dddf107b  monero-mac-x64-v0.10.2.0.tar.bz2
+bf27eb173a775b62716b5fd1d1921f81c8d3b91187b190a22f2a6d82811915fd  monero-linux-x64-v0.10.2.0.tar.bz2
+5ce1475090dfc7897824de62b44771af6de395631540dee6361f0c32a82885ac  monero-linux-x86-v0.10.2.0.tar.bz2
+173c4f481587799b0ca8947826778eae75611ef4d6bce765df5915ffa12f91b8  monero-linux-armv7-v0.10.2.0.tar.bz2
+26ad255a94d76acdce4e649d19d709181918a47df10ea9d00f9c14acf7b0129f  monero-linux-armv8-v0.10.2.0.tar.bz2
+fec177e65a07f845cbcf64b7e39de8decee9cb04bf3f603dd38cec3a363f4d90  monero-freebsd-x64-v0.10.2.0.tar.bz2
+2026a36e21755f6fb3e5b644fd7e476659bf9f459030c43338994bf12ef9f79f  monero-dragonflybsd-x64-v0.10.2.0.tar.bz2
 
 cb8bdf36fb56739a0fa746bec8dd51fb3479d51a3b8f0ce41a771f1d5a924bdb  monero.gui.win.x64.beta.zip
 907bfb4832c74de6cec7df730dfce5d9ccc1e6de09b6a4546cb9eee1f8242968  monero.gui.mac.x64.beta.tar.bz2
@@ -23,11 +25,11 @@ Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJYW/HGAAoJEFVDLfMczU/NmDMH/RXq15dj0FF0HEvbVrwVIkW3
-z5RFkbEiYdOJAj1SjrWlx5v055QBCjI6PLQM/VICC79NPvOhvinoDpM5YAMU1PTB
-jC8Oi68VYxG4B8RERzxGwkNkvVu9nlBAEqEChw/YSi0NvCUuFkY05mrtPQbM+RcB
-ShtUjNBW+7f5BOEXfjreR5vm6vXT9fGQBzHLgCcv93qLUytZnx0GDPCDBDq87wxa
-PhjMIrBygf55tmstiolZdkO2Xn2Nd50tzi0YElxGH26CXRkuc/L3zIz871mHff3q
-qj2KnCuIsnQWB7sJ2uxP/bDVncdoKslnc6RDz4azaZSjSEKsballubXG0gOghPA=
-=H+gA
+iQEcBAEBCAAGBQJYrzkhAAoJEFVDLfMczU/Nk/4H/0XBYRJGHlFkdKfv9wELvnUo
+YcqBUzkZgYulAuOYNOwNKo2b0XTAFS8/rgzVqVLv5DQz5kG6xh7rwJIphM1epMnM
+LvOTprg+YrpSIBIm1k4U7dcL1wyw9MLj+q6SYrseKxcKzRDsuBgxon9qHIy/qWYN
+6EcBxP/pNQc9Vhy1YW7PSI5nnhKY1W3KxMv75X7hcgYXdA7XwYr2FTLmyy7rZgKT
+7DdqZNeQK28a/+l5RX4NakPIyOV4UrwJDrvdDQrGUPQVdxBv1Rb1JWb9wyoZOZKT
+e79p48gRIF9G31mjjyaQJDstaZGPlwx8qL4Lz1tOit288fyfuxYS4UsyLhA1tcs=
+=ORQ1
 -----END PGP SIGNATURE-----
