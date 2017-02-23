@@ -26,7 +26,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
 <h4 id="{{ data_downloads.platform | slugify }}">
- <a href="{{ data_downloads.url }}">
+ <a href="{{ data_downloads.cli_url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
 </h4>
@@ -55,7 +55,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
 <h4 id="{{ data_downloads.platform | slugify }}">
- <a href="//downloads.getmonero.org/{{ data_downloads.url }}">
+ <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
 </h4>

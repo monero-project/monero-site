@@ -1,61 +1,69 @@
 - platform: Windows, 64-bit
   icon: windows.svg
-  url: win64
-  hash: 727a53dd154b61fd653f81da27788077fdf519301c81d3c1eb033c1ff2bf97c6
-  version: 0.10.1.0
+  cli_url: win64
+  hash: e852642c42bc9ed6a248fea0e0bb8e9e2563cdf9a4dfdd40b96226a3cadd874e
+  version: 0.10.2.0
   tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: windows.svg
-  url: win32
-  hash: ce77137b33bcaeb59273cb73b86e426e35e6209fb52a7e74fd9432a5a3018041
-  version: 0.10.1.0
+  cli_url: win32
+  hash: 8ac825d89f58a07be65f4f96ddd1e22ef4fb9156d28d12381ade6e3a070b18cb
+  version: 0.10.2.0
   tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   icon: apple.svg
-  url: mac64
-  hash: 447cebae257864b3706a8622f495bfd9fae780a6b277e1e31ac83bef7bc855c6
-  version: 0.10.1.0
+  cli_url: mac64
+  hash: 685a0262b9add448a516baac3dc81d2dda559fdba000afcf6480e9b2dddf107b
+  version: 0.10.2.0
   tag: Wolfram Warptangent
   blockchain: mac
 
 - platform: Linux, 64-bit
   icon: linux.svg
-  url: linux64
-  hash: bf09eea27c957e7e2bdd62dac250888b301d4d25abe18d4a5b930fa7477708c7
-  version: 0.10.1.0
+  cli_url: linux64
+  hash: bf27eb173a775b62716b5fd1d1921f81c8d3b91187b190a22f2a6d82811915fd
+  version: 0.10.2.0
   tag: Wolfram Warptangent
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: linux.svg
-  url: linux32
-  hash: 9a18d274970df85d6bc926dc99407959c680c36f19017996be9c758f6c02cf06
-  version: 0.10.1.0
+  cli_url: linux32
+  hash: 5ce1475090dfc7897824de62b44771af6de395631540dee6361f0c32a82885ac
+  version: 0.10.2.0
   tag: Wolfram Warptangent
   blockchain: linux
 
 - platform: ARMv7
   icon: arm.svg
-  url: arm
-  hash: 57221605997a3cd815f2a9689486abbdb124263fff047ca61068900eb7cb1839
-  version: 0.10.1.0
+  cli_url: arm7
+  hash: 173c4f481587799b0ca8947826778eae75611ef4d6bce765df5915ffa12f91b8
+  version: 0.10.2.0
+  tag: Wolfram Warptangent
+  blockchain: arm
+
+- platform: ARMv8
+  icon: arm.svg
+  cli_url: arm8
+  hash: 26ad255a94d76acdce4e649d19d709181918a47df10ea9d00f9c14acf7b0129f
+  version: 0.10.2.0
   tag: Wolfram Warptangent
   blockchain: arm
 
 - platform: FreeBSD, 64-bit
   icon: freebsd.svg
-  url: freebsd64
-  hash: 3858d4786b65a37e981b142e9c0f256ac66662314794d05f595c4c30cb5b6ddb
-  version: 0.10.1.0
+  cli_url: freebsd64
+  hash: fec177e65a07f845cbcf64b7e39de8decee9cb04bf3f603dd38cec3a363f4d90
+  version: 0.10.2.0
   tag: Wolfram Warptangent
   blockchain: freebsd
 
 - platform: Source Code
   icon: github.svg
-  url: https://github.com/monero-project/bitmonero
+  cli_url: https://github.com/monero-project/bitmonero
   hash: source
   version: Bleeding edge (possibly unstable)
