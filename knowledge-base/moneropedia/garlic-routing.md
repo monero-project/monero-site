@@ -41,5 +41,5 @@ In technical terms, for @Kovri and @I2P, *@garlic-routing* translates to any/all
 
 ### Notes
 
-- In terms of Onion/Garlic Routing, another way to envision layered @encryption is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll)
+- In terms of Onion/Garlic Routing, another way to envision layered @encryption is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll) - with each outer/inner doll having a lock and public key to the next/previous doll
 - For more technical details on Garlic Routing, read the @Java-I2P entry on [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing)
