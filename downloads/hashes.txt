@@ -6,15 +6,15 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-e852642c42bc9ed6a248fea0e0bb8e9e2563cdf9a4dfdd40b96226a3cadd874e  monero-win-x64-v0.10.2.0.zip
-8ac825d89f58a07be65f4f96ddd1e22ef4fb9156d28d12381ade6e3a070b18cb  monero-win-x86-v0.10.2.0.zip
-685a0262b9add448a516baac3dc81d2dda559fdba000afcf6480e9b2dddf107b  monero-mac-x64-v0.10.2.0.tar.bz2
-bf27eb173a775b62716b5fd1d1921f81c8d3b91187b190a22f2a6d82811915fd  monero-linux-x64-v0.10.2.0.tar.bz2
-5ce1475090dfc7897824de62b44771af6de395631540dee6361f0c32a82885ac  monero-linux-x86-v0.10.2.0.tar.bz2
-173c4f481587799b0ca8947826778eae75611ef4d6bce765df5915ffa12f91b8  monero-linux-armv7-v0.10.2.0.tar.bz2
-26ad255a94d76acdce4e649d19d709181918a47df10ea9d00f9c14acf7b0129f  monero-linux-armv8-v0.10.2.0.tar.bz2
-fec177e65a07f845cbcf64b7e39de8decee9cb04bf3f603dd38cec3a363f4d90  monero-freebsd-x64-v0.10.2.0.tar.bz2
-2026a36e21755f6fb3e5b644fd7e476659bf9f459030c43338994bf12ef9f79f  monero-dragonflybsd-x64-v0.10.2.0.tar.bz2
+7089ea94fdb59e2c171fb5548e5d3b560057d78a29125b8fbe8c09739e95dc2f  monero-win-x64-v0.10.2.1.zip
+2d31be49a7003e66923cad41f59646d7241bfd4ec9c607dfd34e08b235b82e33  monero-win-x86-v0.10.2.1.zip
+a13299bcf11cdcaeafa0c19ef410cb27020def501345ab03a939ddcfb8a20de7  monero-mac-x64-v0.10.2.1.tar.bz2
+9edba6ca91c35c6c2eb6816f9342931c88648de5beb471943ea63d0b16c9a2e4  monero-linux-x64-v0.10.2.1.tar.bz2
+4901d2633a7bdd20504ff1b7c719ac5e9eb43a1f497103766f8333d7c18f30b5  monero-linux-x86-v0.10.2.1.tar.bz2
+ad6bccc0b738e5becc0191fea2c55529835df042919ef8df60033f8e84c28a9d  monero-linux-armv7-v0.10.2.1.tar.bz2
+c0ab2be3e81e7b3928f98d84c60ac2a7f42dfd581357873a42bfcbc867a4e39a  monero-linux-armv8-v0.10.2.1.tar.bz2
+b0f0baf0947a77523a3a8c8686f645ada792fd44c6211f0c34322cfd22aab0cb  monero-freebsd-x64-v0.10.2.1.tar.bz2
+7db1f37f6c59f05bf6dec65a32d6c82339fd9386805b9f04082c37c85ef1002e  monero-dragonflybsd-x64-v0.10.2.1.tar.bz2
 
 cb8bdf36fb56739a0fa746bec8dd51fb3479d51a3b8f0ce41a771f1d5a924bdb  monero.gui.win.x64.beta.zip
 907bfb4832c74de6cec7df730dfce5d9ccc1e6de09b6a4546cb9eee1f8242968  monero.gui.mac.x64.beta.tar.bz2
@@ -25,11 +25,11 @@ Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJYrzkhAAoJEFVDLfMczU/Nk/4H/0XBYRJGHlFkdKfv9wELvnUo
-YcqBUzkZgYulAuOYNOwNKo2b0XTAFS8/rgzVqVLv5DQz5kG6xh7rwJIphM1epMnM
-LvOTprg+YrpSIBIm1k4U7dcL1wyw9MLj+q6SYrseKxcKzRDsuBgxon9qHIy/qWYN
-6EcBxP/pNQc9Vhy1YW7PSI5nnhKY1W3KxMv75X7hcgYXdA7XwYr2FTLmyy7rZgKT
-7DdqZNeQK28a/+l5RX4NakPIyOV4UrwJDrvdDQrGUPQVdxBv1Rb1JWb9wyoZOZKT
-e79p48gRIF9G31mjjyaQJDstaZGPlwx8qL4Lz1tOit288fyfuxYS4UsyLhA1tcs=
-=ORQ1
+iQEcBAEBCAAGBQJYsMf9AAoJEFVDLfMczU/NiNAIAKdtpiJnUa3I/DxlAWpQ3tAq
+yxKA15lfB41CCu60TyKRSPyO+3iEmEwYwmLtMQoX+2rKoTgQ8sj2e+7E6vipZLEp
+hc/NNeYK1ce08ZUSsB0a2oD3qbcCwnzHLCV2hdndgI0tTyZFp3V56TE/7fFAcSyp
+RqqZgQPt0sMlDytI+GbggSi3yYlkleEa/suA2sOClFesjICpZkaSpSHeYiH1bx6q
+pAqEiez1goabAYqgvu19UD14Q0cKH5lCjAVEQOuxlDM4y8k8w2NsxtesfjFau8Ar
+r44LPGRTEtvbQKYxs78QVNeHMgRSNyd/uWtNMx631iEUYMOFJjl4yEYCpbISFzE=
+=Ul+7
 -----END PGP SIGNATURE-----
