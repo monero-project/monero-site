@@ -40,7 +40,7 @@
 
 - platform: ARMv7
   icon: arm.svg
-  cli_url: arm7
+  cli_url: linuxarm7
   hash: ad6bccc0b738e5becc0191fea2c55529835df042919ef8df60033f8e84c28a9d
   version: 0.10.2.1
   tag: Wolfram Warptangent
@@ -48,7 +48,7 @@
 
 - platform: ARMv8
   icon: arm.svg
-  cli_url: arm8
+  cli_url: linuxarm8
   hash: c0ab2be3e81e7b3928f98d84c60ac2a7f42dfd581357873a42bfcbc867a4e39a
   version: 0.10.2.1
   tag: Wolfram Warptangent
