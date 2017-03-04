@@ -30,6 +30,10 @@
       url: https://www.bitfinex.com/
     - name: Alfacashier
       url: https://www.alfacashier.com/
+    - name: Kraken (XMRUSD, XMREUR, XMRBTC)
+      url: https://www.kraken.com/
+    - name: BIT.AC
+      url: https://bit.ac/
 - category: Block Explorers
   merchants:
     - name: ChainRadar
