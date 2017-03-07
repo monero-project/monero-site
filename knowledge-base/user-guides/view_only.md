@@ -1,23 +1,23 @@
 ---
 layout: static_page
-title: "Creating a view only wallet"
+title: "View Only Wallets"
 title-pre-kick: "Creating a view only wallet "
-title-kick: "on Ubuntu "
+title-kick: ""
 title-post-kick: ""
-kick-class: "purple-kicks"
+kick-class: ""
 icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-### Operating Systems:  Ubuntu
+A view-only wallet can only see which incoming transactions belong to you. It can not spend any of your Monero, in fact it can't even see outgoing transactions from this wallet. This makes view-only wallets particularly interesting for
 
-Note : In order to create a viewonly wallet you need first to compile the last source available on [Github](https://github.com/monero-project/bitmonero) as this functionality is not yet included in the official binaries (Sept. 2015).
+* Developers writing libraries to validate payments
+* End users validating incoming transactions to cold wallets
 
-- To create a view only wallet you will need to first create a "normal" wallet and get the associated viewkey and address. You can get them once logged in monero-wallet-cli by typing "*viewkey*" and "*address*". Note each of them carefully and exit monero-wallet-cli.
+### Creating A View-Only Wallet
 
-- Launch a new instance of monero-wallet-cli by typing "`./monero-wallet-cli --generate-from-view-key yourAddress:yourViewKey:nameOfTheViewOnlyWallet`" where *yourViewKey* is the view key you got from step 1 and *yourAddress* the associated address. The last part of the command is the name you want to give to you view only portfolio.
+You can create a view-only wallet from any existing wallet.
 
-- Follow the instructions from the terminal. To see the balance of your portfolio type "*refresh*" (monerod need to be synchronised with the network first). 
+Open an existing wallet or create a new one using `monero-wallet-cli`. In the wallet, type `address` and `viewkey` to display the wallet's address and secret viewkey. Type `exit` to close the wallet.
 
-- You now have a view only wallet.
-
+Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and secret view key. Next, enter and confirm a password for your new wallet and you're done.
