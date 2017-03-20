@@ -49,6 +49,7 @@ Note: "atomic units" refer to the smallest fraction of 1 XMR according to the mo
 * [store](#store)
 * [get_payments](#getpayments)
 * [get_bulk_payments](#getbulkpayments)
+* [get_transfers](#gettransfers)
 * [incoming_transfers](#incomingtransfers)
 * [query_key](#querykey)
 * [make_integrated_address](#makeintegratedaddress)
@@ -315,6 +316,60 @@ Example:
   }
 }
 
+### get_transfers
+
+Returns a list of transfers.
+
+Inputs:
+
+* *in* - boolean;
+* *out* - boolean;
+* *pending* - boolean;
+* *failed* - boolean;
+* *pool* - boolean;
+* *filter_by_height* - boolean;
+* *min_height* - unsigned int;
+* *max_height* - unsigned int;
+
+Outputs:
+
+* *in* array of transfers:
+  * *txid* - string;
+  * *payment_id* - string;
+  * *height* - unsigned int;
+  * *timestamp* - unsigned int;
+  * *amount* - unsigned int;
+  * *fee* - unsigned int;
+  * *note* - string;
+  * *destinations* - std::list<transfer_destination>;
+  * *type* - string;
+* *out* array of transfers
+* *pending* array of transfers
+* *failed* array of transfers
+* *pool* array of transfers
+
+
+Example:
+
+{:.cli-code}
+<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_transfers","params":{"pool":true}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "pool": [{
+      "amount": 500000000000,
+      "fee": 0,
+      "height": 0,
+      "note": "",
+      "payment_id": "758d9b225fda7b7f",
+      "timestamp": 1488312467,
+      "txid": "da7301d5423efa09fabacb720002e978d114ff2db6a1546f8b820644a1b96208",
+      "type": "pool"
+    }]
+  }
+}
+
 
 ### incoming_transfers
 
@@ -323,7 +378,7 @@ Return a list of incoming transfers to the wallet.
 Inputs:
 
 * *transfer_type* - string; "all": all the transfers, "available": only transfers which are not yet spent, OR "unavailable": only transfers which are already spent.
-				
+
 Outputs:
 
 * *transfers* - list of:
