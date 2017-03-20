@@ -95,7 +95,7 @@ private key to a party, that party can tell whether that transaction sent monero
 particular address. Note that storing these per-transaction keys is disabled by default, and
 you will have to enable it before sending, if you think you may need it:
 
-    set store-tx-keys 1
+    set store-tx-info 1
 
 You can retrieve the tx key from an earlier transaction:
 
