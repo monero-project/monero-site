@@ -1,64 +1,64 @@
 - platform: Windows, 64-bit
   icon: windows.svg
   cli_url: win64
-  hash: 7089ea94fdb59e2c171fb5548e5d3b560057d78a29125b8fbe8c09739e95dc2f
-  version: 0.10.2.1
+  hash: 37a57d1be81b6119ac06d3f637b4c56fc625f3e790f3491c1bdca4d62902bf13
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: windows.svg
   cli_url: win32
-  hash: 2d31be49a7003e66923cad41f59646d7241bfd4ec9c607dfd34e08b235b82e33
-  version: 0.10.2.1
+  hash: 7f95bdcf4df232f37c450523831f36ccb9fdb2e50c1b5b0a5285d50549d273be
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   icon: apple.svg
   cli_url: mac64
-  hash: a13299bcf11cdcaeafa0c19ef410cb27020def501345ab03a939ddcfb8a20de7
-  version: 0.10.2.1
+  hash: 8e6170f274e69010bbe662d8828c8e4b0b4acdb0a1a3699b5b97af8c3a516a94
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: mac
 
 - platform: Linux, 64-bit
   icon: linux.svg
   cli_url: linux64
-  hash: 9edba6ca91c35c6c2eb6816f9342931c88648de5beb471943ea63d0b16c9a2e4
-  version: 0.10.2.1
+  hash: f164112bea75dfd3eaaa905d21129820a996bbe6e5d65cb194609c672a71c3fe
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: linux.svg
   cli_url: linux32
-  hash: 4901d2633a7bdd20504ff1b7c719ac5e9eb43a1f497103766f8333d7c18f30b5
-  version: 0.10.2.1
+  hash: b8bd258b828d8ea45a7c2595187c13b5e624f45ae929cb64ac89e3a030302316
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: linux
 
 - platform: ARMv7
   icon: arm.svg
   cli_url: linuxarm7
-  hash: ad6bccc0b738e5becc0191fea2c55529835df042919ef8df60033f8e84c28a9d
-  version: 0.10.2.1
+  hash: 03b2f3f30c7d047142cbfcd614762f3d165d64464e3e5b1a5b0c42aba9570d6a
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: arm
 
 - platform: ARMv8
   icon: arm.svg
   cli_url: linuxarm8
-  hash: c0ab2be3e81e7b3928f98d84c60ac2a7f42dfd581357873a42bfcbc867a4e39a
-  version: 0.10.2.1
+  hash: 6b29c56ca8d71f23f13b68d48e39e35b1d7c7c212cf00f3d58b0d2d9b6435c4c
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: arm
 
 - platform: FreeBSD, 64-bit
   icon: freebsd.svg
   cli_url: freebsd64
-  hash: b0f0baf0947a77523a3a8c8686f645ada792fd44c6211f0c34322cfd22aab0cb
-  version: 0.10.2.1
+  hash: 834b56efccc5ab0985c7f870449704ba390c79104ecfc0b63935dfb4f70c6cf9
+  version: 0.10.3.0
   tag: Wolfram Warptangent
   blockchain: freebsd
 
