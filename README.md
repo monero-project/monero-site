@@ -1,6 +1,6 @@
 # Monero
 
-Copyright (c) 2014-2016, The Monero Project
+Copyright (c) 2014-2017, The Monero Project
 
 ## Development Resources
 
@@ -41,7 +41,7 @@ To test changes locally before pushing to git, make sure you have ruby installed
 
 ## License
 
-Copyright (c) 2014-2016, The Monero Project
+Copyright (c) 2014-2017, The Monero Project
 
 All rights reserved.
 
