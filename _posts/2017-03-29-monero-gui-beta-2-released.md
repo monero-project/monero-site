@@ -90,6 +90,6 @@ If you would like to verify that you have downloaded the correct file, please us
 - monero-gui-linux-x64-v0.10.3.1.tar.bz2, 4915473265d58720fd8f019e536c2b7fb02648ab51a8087e84aa1e2434788452
 - monero-gui-linux-x86-v0.10.3.1.tar.bz2, 092b49080c3380666845f7f39823b09f4960ea1e250b84b150856ef33ca30690
 - monero-gui-mac-x64-v0.10.3.1.tar.bz2, c80ca68037158216a080e59e90b0a70761cff2f317d3c9cd0eeb661e8e2a1f99
-- monero-gui-win-x64-v0.10.3.1.zip, 5084b662d52179faa5dcc629a670be724a29ea1e8938e74b39f4acac20e5d235
+- monero-gui-win-x64-v0.10.3.1.zip, 0eddd423f5f0df236303d8b9225842142b331093eb69e6183f3f694238c371a7
 
 A GPG-signed list of the hashes is at https://getmonero.org/downloads/hashes.txt and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys)
