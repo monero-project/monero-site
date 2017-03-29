@@ -16,20 +16,20 @@ abc99f3928f4083bd1a380a869253e07bee9950e0aeb6388e9493bc0f0ec3f53  monero-linux-x
 4c66a76752e18ae70b5fb1c728f0d2780eb129a6c8c7d0dee7ba02e05d91efae  monero-freebsd-x64-v0.10.3.1.tar.bz2
 c25c0f603ca5c96cb5963aaa2905edff390b7a97f654106911ffad8639deee7c  monero-dragonflybsd-x64-v0.10.3.1.tar.bz2
 
-cb8bdf36fb56739a0fa746bec8dd51fb3479d51a3b8f0ce41a771f1d5a924bdb  monero.gui.win.x64.beta.zip
-907bfb4832c74de6cec7df730dfce5d9ccc1e6de09b6a4546cb9eee1f8242968  monero.gui.mac.x64.beta.tar.bz2
-cecbe4b23f777442de861bc0981af0857dab043ed63be98f768cdd00825a8d09  monero.gui.linux.x64.beta.tar.bz2
-daabd11b271685cedf5d6321cbde5e6b7c2691630a4355a973fc0cb99b1d2dc9  monero.gui.linux.x86.beta.tar.bz2
+5084b662d52179faa5dcc629a670be724a29ea1e8938e74b39f4acac20e5d235  monero-gui-win-x64-v0.10.3.1.zip
+c80ca68037158216a080e59e90b0a70761cff2f317d3c9cd0eeb661e8e2a1f99  monero-gui-mac-x64-v0.10.3.1.tar.bz2
+4915473265d58720fd8f019e536c2b7fb02648ab51a8087e84aa1e2434788452  monero-gui-linux-x64-v0.10.3.1.tar.bz2
+092b49080c3380666845f7f39823b09f4960ea1e250b84b150856ef33ca30690  monero-gui-linux-x86-v0.10.3.1.tar.bz2
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iQEcBAEBCAAGBQJY2MctAAoJEFVDLfMczU/NIqEIAK5aCrk+qhtfE1mbR2KMPsdz
-aXBJkKwd8efLxdifMqOe7a98IsmqFgL7JQVxyXvN7LSAvAqialnUqaEe0jXXLzAw
-CIocrhy22QVT3zygw7j3xD0rK09s+wPOKN4Ph11fpRG1TB2ww1q22T539rzc/6OP
-PiK/ZvRadBya6tEPQyzoZTcBFjKFPcphO/Usv55GXiLaDVSF1EyYd9Ee67UqAIne
-7IgDiuAsfg3+IeRxXknHBDDALP162dtF1TRXfrXgyPOzUH/GMdthHmQm/NzngqXJ
-FSrB6AMNzT0XlPlhff1jALZ+o6g+plbSWKNNEkL8G1wh9n6yoSUzcXsLSytswic=
-=PjFE
+iQEcBAEBCAAGBQJY2/UtAAoJEFVDLfMczU/NvBoH/3u9Uih5Uim8Bet6zdVk4+v1
+IDMrywXAu2C1bFiI0o0pQPxpWwacyhv1wlgmmu5AsU5yiyNrLFIL6cC1V6tbT0O/
+66tr3/AqI9ol4Gw1Mad0H6hj3lbFXBETKNT5myjhZEMJRgAtTt4mCN1/iPF1gneQ
+45q7tync83mkw4LCHk/1mFkhw3yGT3I6iB+cp+GoRq0Wp5gHBe3zyCczIrZPzjaI
+FdwNIE8SFUYFh8M927cR2/9876C529lT0GOTtZ70jfnVK6imhGppY7cLAYzCHyhj
+MZUmBaXIbHgVz5XiFC2pjqPYRUrczsnkX+Bva2Xqn1I7T6LMcsj+3Nj/YPRr4r8=
+=a95F
 -----END PGP SIGNATURE-----
