@@ -46,6 +46,8 @@ The Monero community would like to list several concerns with this research pape
 
 4.  Andrew Miller was named in the paper as a consultant to the Zerocoin Electric Coin Company and a board member of the Zcash Foundation. Zcash is a cryptocurrency with a focus on privacy that uses different technology than Monero. However, [he downplayed his involvement in an interview](https://cointelegraph.com/news/monero-transactions-history-can-be-revealed-and-exposed-research) he later participated in about this paper. We feel author involvement in cryptocurrencies with similar interests should be fully disclosed, though he did refer people to the first page of the report. Nevertheless, we feel this is extremely poor form.
 
+5. The deducibility claims are clearly misleading. The report shows a proportion of transactions where at least one input is deducible. However, for all transactions since March 2016, all transations include at least 2 other inputs. Thus, if one of these inputs is deducible, it is still not traceable. Sure, the feature is not working as well as intended. In an example transaction with a mixin of 9 where 5 of the inputs are deducible, the transaction is still sourced from 1 of 5 plausible options, instead of 1 in 10. Nevertheless, the claims this paper makes, such that including all transactions that have at least one deducible transaction as traceable, are completely wrong. We suggest that the paper also considers making figure 1 much clearer to say that it shows the proportion of transactions where one or more inpiuts are deducible, as well as providing a new table that shows the transactions where all of the inputs are deducible. Only in a case where all the inputs are deducible should the transaction be considered "traceable".
+
 ## OTHER INFORMATION
 
 1.  The timing of the publication. This paper was released approximately an hour before the hardfork. While it is impossible to know the reason for the specific timing without an admission, we speculate that this was timed to draw as much attention to the paper as possible. More people would have been tuning in to see how the hardfork was proceeding than typical community participation traffic. Andrew Miller has responded to this criticism in a Reddit PM to the author, saying "the timing of our release with the imminent hard fork was totally unintentional and a coincidence. No one on the team noticed there was a hardfork planned, and we'd definitely have delayed till afterward if we had."
@@ -66,8 +68,7 @@ We appreciate the effort that went into this research paper, but we suggest the 
 
 2.  A consideration among 0-mixin transactions for pool payouts.
 
-3.  A clearer explanation of claims made in the paper, with separations for the history of all transactions and those used since March 2016. It is disappointing to treat 
-the blockchain data as static when the technology has evolved significantly since Monero's launch.
+3.  A clearer explanation of claims made in the paper, with separations for the history of all transactions and those used since March 2016. It is disappointing to treat the blockchain data as static when the technology has evolved significantly since Monero's launch.
 
 4.  Future drafts to be shared with the Monero Core Team before release. Their contact information is [dev@getmonero.org](mailto:dev@getmonero.org).
 
@@ -75,9 +76,11 @@ the blockchain data as static when the technology has evolved significantly sinc
 
 6.  Consider cooperating with Riccardo Spagni to permanently include the research portion of this paper in our Monero Research Lab documents.
 
+7. Make clear that when certain (but not all) inputs can be deduced, that this does not make the transaction traceable. For instance, if 5 of 10 inputs for a mixin 9 transaction can be deduced, this is still not a traceable transaction.
+
 ## APPENDIX
 
-**Figure 5 from the report showing the fraction of deductible outputs. Notice the large drops following block height 1,000,000, when 0-mixin transactions were prohibited**
+**Figure 5 from the report showing the fraction of deductible outputs. Notice the large drops following block height 1,000,000, when 0-mixin transactions were prohibited. Furthermore, these outputs likely do not include all those used in a singe transaction. For instance, for a mixin 9 transaction, 5 may be deduced. This means that the transaction would be reported here as deducible, even though it is not traceable.**
 
 <img src="/blog/assets/linkability-response/figure5.jpg" style="width: 600px;"/>
 
