@@ -48,6 +48,8 @@
       url: http://explore.moneroworld.com/
 - category: Payment Gateways
   merchants:  
+    - name: Living Room of Satoshi
+      url: https://www.livingroomofsatoshi.com/?sc=xmr  
     - name: Monero Merchants
       url: https://monero-merchants.com
     - name: Paybee (Private Beta)
