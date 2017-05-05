@@ -44,8 +44,10 @@
       url: http://moneroblocks.info
     - name: MoneroExplorer
       url: https://explorer.xmr.my/
-    - name: Moneroworld Blockchain Explorer
-      url: http://explore.moneroworld.com/
+    - name: MoneroHash Explorer
+      url: https://monerohash.com/explorer/
+    - name: xmrchain.net
+      url: https://xmrchain.net/
 - category: Payment Gateways
   merchants:  
     - name: Living Room of Satoshi
