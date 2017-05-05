@@ -62,8 +62,8 @@
       url: https://github.com/PsychicCat/monero-nodejs
     - name: python-monero (Python)
       url: https://github.com/tippero/python-monero
-    - name: pymonero (Python)
-      url: https://github.com/Monero-Monitor/pymonero
+    - name: MoneroPy (Python)
+      url: https://github.com/bigreddmachine/MoneroPy
     - name: moneronjs (NodeJS)
       url: https://github.com/netmonk/moneronjs
     - name: MoneroApi.Net (.NET)
