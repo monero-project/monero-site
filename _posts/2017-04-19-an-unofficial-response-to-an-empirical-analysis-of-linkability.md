@@ -78,25 +78,25 @@ We appreciate the effort that went into this research paper, but we suggest the 
 
 **Figure 5 from the report showing the fraction of deductible outputs. Notice the large drops following block height 1,000,000, when 0-mixin transactions were prohibited. Furthermore, these outputs likely do not include all those used in a singe transaction. For instance, for a mixin 9 transaction, 5 may be deduced. This means that the transaction would be reported here as deducible, even though it is not traceable.**
 
-<img src="/blog/assets/linkability-response/figure5.jpg" style="width: 600px;"/>
+![Figure 5](/blog/assets/linkability-response/figure5.jpg)
 
 **Table 2 from the report showing the proportion of transactions with a positive mixin that can be deduced. We want to make clear that the findings of this chart and analysis method have absoutely zero relevance to RingCT transactions.**
 
-<img src="/blog/assets/linkability-response/table2.jpg" style="width: 800px;"/>
+![Table 2](blog/assets/linkability-response/table2.jpg)
 
 **Table 3 from the report showing the proportion of deducible transactions where the real input is also the most recently used one in the transaction.**
 
-<img src="/blog/assets/linkability-response/table3.jpg" style="width: 800px;"/>
+![Table 3](/blog/assets/linkability-response/table3.jpg)
 
 **Examples of statements we find misleading**
 
 This is a tweet from a contributor to the paper.
 
-<img src="/blog/assets/linkability-response/tweet.jpg" style="width: 600px;"/>
+![Tweet](/blog/assets/linkability-response/tweet.jpg)
 
 This image is from the [CoinTelegraph interview](https://cointelegraph.com/news/monero-transactions-history-can-be-revealed-and-exposed-research). Based on the wording, you may think an attacker could determine with certainty which input is yours. However, in reality, the attacker can guess and be correct less than half of the time. Furthermore, even if the attacker guesses correctly, there is no way of proving this with certainty with data from the blockchain alone.
 
-<img src="/blog/assets/linkability-response/cointelegraph.jpg" style="width: 600px;"/>
+![CoinTelegraph](/blog/assets/linkability-response/cointelegraph.jpg)
 
 Andrew Miller asked us to include other statements from the researchers or ZCash Foundation members that we feel is misleading. This paper is not supposed to be a comprehensive list of such statements. It is only really useful in providing a few examples.
 
