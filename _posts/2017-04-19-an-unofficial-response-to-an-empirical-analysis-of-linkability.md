@@ -20,7 +20,7 @@ The Monero contributors appreciate the effort that has gone into this mentioned 
 
 2.  The prohibition of 0-mixin transactions has allowed the network to recover relatively quickly by making it harder to know which input is used. This paper helps quantify this recovery, from about 95% traceable to 20% traceable (see appendix).
 
-3.  The proportion of transactions that have their inputs deductible has fallen substantially from 1 January 2016 to 1 Feb 2017 with 2 and 4 mixin transactions. Respectively, these fell from 82% and 72% to 41% and 23% (see appendix). Furthermore, this proportion is down to 0% with RingCT transactions, which are now [over 99% of all new transactions on the network](http://moneroblocks.info/stats).
+3.  The proportion of transactions that have their inputs deducible has fallen substantially from 1 January 2016 to 1 Feb 2017 with 2 and 4 mixin transactions. Respectively, these fell from 82% and 72% to 41% and 23% (see appendix). Furthermore, this proportion is down to 0% with RingCT transactions, which are now [over 99% of all new transactions on the network](http://moneroblocks.info/stats).
 
 4.  The phenomenon where the most recent input is the real one is a concern when using Monero. There is no way to prove that this input is indeed the correct one, and with recent transactions, the assertion is nearly impossible to prove and is accurate less than half of the time. As the report states, there is about a 40% chance that the most recent input in a default transaction is the real one. Ideally, this number should be closer to 20% (1 in 5). Note that this does not mean that there is a 40% chance that this transaction is traceable (see appendix). Increasing the transaction ringsize has only a marginal improvement.
 
@@ -76,7 +76,7 @@ We appreciate the effort that went into this research paper, but we suggest the 
 
 # Appendix
 
-**Figure 5 from the report showing the fraction of deductible outputs. Notice the large drops following block height 1,000,000, when 0-mixin transactions were prohibited. Furthermore, these outputs likely do not include all those used in a singe transaction. For instance, for a mixin 9 transaction, 5 may be deduced. This means that the transaction would be reported here as deducible, even though it is not traceable.**
+**Figure 5 from the report showing the fraction of deducible outputs. Notice the large drops following block height 1,000,000, when 0-mixin transactions were prohibited. Furthermore, these outputs likely do not include all those used in a singe transaction. For instance, for a mixin 9 transaction, 5 may be deduced. This means that the transaction would be reported here as deducible, even though it is not traceable.**
 
 <img src="/blog/assets/linkability-response/figure5.jpg" style="width: 600px;"/>
 
