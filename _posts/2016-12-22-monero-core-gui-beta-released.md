@@ -22,7 +22,7 @@ Download links are at the bottom of this post, and please take note of the known
 
 ## FAQ
 
-- *Can I use a remote node?* This is certainly possible. In the wizard, change the daemon address from `localhost:18081` to the address of the remote node. For instance, if you want to use the remote node of moneroworld.com, change `localhost:18081` to `node.moneroworld.com:18081` or `2nodez.moneroworld.com:18081`. Alternatively, you can specify a daemon address on the `Settings` page.
+- *Can I use a remote node?* This is certainly possible. In the wizard, change the daemon address from `localhost:18081` to the address of the remote node. For instance, if you want to use the remote node of moneroworld.com, change `localhost:18081` to `node.moneroworld.com:18081`. For more open node options, please check out the [MoneroWorld open node directory.](https://moneroworld.com/#nodes) Alternatively, you can specify a daemon address on the `Settings` page.
  
 - *What do I do if the GUI is showing `Wrong Version` at the bottom left?* If you see this message the daemon you are using is incompatible with the GUI. The daemon supplied in the binaries is compatible with the GUI. Thus, if you are seeing this message you are likely using a remote node, which is running a daemon that is incompatible with the GUI. Note that you will be able to receive funds. However, you *won't* be able to send funds.
  
