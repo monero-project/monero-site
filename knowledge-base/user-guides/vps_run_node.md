@@ -14,7 +14,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 This guide assumes you have already set up your VPS account and are using SSH to tunnel into the server console.
 
-## Linux, 64-bit (Ubuntu 14.04)
+## Linux, 64-bit (Ubuntu 16.04 LTS)
 
 ### Make sure that port 18080 is open
 `monerod` uses this port to communicate with other nodes on the Monero network.
@@ -49,5 +49,9 @@ Launch the daemon as a background process:
 Monitor the output of `monerod` if running as daemon:
 
     tail -f ~/.bitmonero/bitmonero.log
+    
+Keep the VPS secure with autoupdate:
+
+https://help.ubuntu.com/community/AutomaticSecurityUpdates
 
 
