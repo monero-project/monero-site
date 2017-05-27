@@ -44,10 +44,14 @@
       url: http://moneroblocks.info
     - name: MoneroExplorer
       url: https://explorer.xmr.my/
-    - name: Moneroworld Blockchain Explorer
-      url: http://explore.moneroworld.com/
+    - name: MoneroHash Explorer
+      url: https://monerohash.com/explorer/
+    - name: xmrchain.net
+      url: https://xmrchain.net/
 - category: Payment Gateways
   merchants:  
+    - name: Living Room of Satoshi
+      url: https://www.livingroomofsatoshi.com/?sc=xmr  
     - name: Monero Merchants
       url: https://monero-merchants.com
     - name: Paybee (Private Beta)
@@ -58,8 +62,8 @@
       url: https://github.com/PsychicCat/monero-nodejs
     - name: python-monero (Python)
       url: https://github.com/tippero/python-monero
-    - name: pymonero (Python)
-      url: https://github.com/Monero-Monitor/pymonero
+    - name: MoneroPy (Python)
+      url: https://github.com/bigreddmachine/MoneroPy
     - name: moneronjs (NodeJS)
       url: https://github.com/netmonk/moneronjs
     - name: MoneroApi.Net (.NET)
@@ -88,6 +92,8 @@
       url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
 - category: Services
   merchants:
+    - name: Azur Samui - Luxury Apartment and Villa Development, Koh, Samui, Thailand
+      url: http://www.azursamui.com
     - name: California Fintech Network
       url: https://www.californiafintech.org/plans/
     - name: Infield Loan Services - Atlanta, Construction Consulting, Contract review, Feasibility, Funds Escrow
@@ -104,6 +110,8 @@
       url: https://mymonero.com
     - name: Pradeep Atluri, Psychiatrist, New York
       url: http://dr.mindsci.com/
+    - name: Simple, no non-sense hosting
+      url: https://rootbox.host/
     - name: Web Developer - Stefanos
       url: http://www.stefanosioannou.com/web-development-monero-accepted
     - name: XMR.to Monero to Bitcoin Payment Service
