@@ -69,7 +69,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 
 <h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">
-  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (Beta 2)
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (GUI Beta 2)
  </a>
 </h4>
 
@@ -90,7 +90,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 
 <h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">
-  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (Beta 2)
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (GUI Beta 2)
  </a>
 </h4>
 
