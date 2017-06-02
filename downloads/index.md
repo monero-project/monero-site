@@ -29,7 +29,11 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
  <a href="{{ data_downloads.cli_url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
- <br><img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
+</h4>
+
+<h4>
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
 </h4>
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
@@ -46,7 +50,10 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
  <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (Command-line Tools Only)
  </a>
- <br><img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
+</h4>
+
+<h4>
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
 </h4>
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
@@ -64,7 +71,10 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
  <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (Beta 2)
  </a>
- <br><img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
+</h4>
+
+<h4>
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
 </h4>
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
@@ -84,7 +94,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
  </a>
 </h4>
 
-<h4 id="{{ data_downloads.platform | slugify }}">
+<h4>
  <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (Command-Line Tools Only)
  </a>
