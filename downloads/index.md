@@ -37,7 +37,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 </h4>
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
-<br>
+<br><br>
 <hr>
 
 </div>
@@ -58,7 +58,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
 <strong>SHA256 Hash:</strong> {{ data_downloads.cli_hash }}<br>
-<br>
+<br><br>
 <hr>
 
 </div>
@@ -79,7 +79,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
 <strong>SHA256 Hash:</strong> {{ data_downloads.gui_hash }}<br>
-<br>
+<br><br>
 <hr>
 
 </div>
