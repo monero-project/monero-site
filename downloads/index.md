@@ -21,7 +21,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 
 {% for data_downloads in site.data.downloads %}
 
-{% if data_downloads.hash == "source" %}
+{% if data_downloads.cli_hash == "source" %}
 
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
@@ -29,39 +29,82 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
  <a href="{{ data_downloads.cli_url }}">
   <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
  </a>
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
+</h4>
+
+<h4>
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
 </h4>
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
+<br><br>
 <hr>
 
 </div>
 
-{% elsif data_downloads.hash == "none" %}
-
-<div class="col-lg-6" style="padding-bottom: 5px;">
-
-<h4 id="{{ data_downloads.platform | slugify }}">
-  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
-</h4>
-
-<br>
-<strong>Coming Soon</strong><br>
-<hr>
-
-</div>
-
-{% else %}
+{% elsif data_downloads.gui_hash == nil and data_downloads.cli_hash != nil %}
 
 <div class="col-lg-6" style="padding-bottom: 5px;">
 
 <h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">
-  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }}
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (Command-line Tools Only)
+ </a>
+</h4>
+
+<h4>
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
+</h4>
+
+<strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
+<strong>SHA256 Hash:</strong> {{ data_downloads.cli_hash }}<br>
+<br><br>
+<hr>
+
+</div>
+
+{% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash == nil %}
+
+<div class="col-lg-6" style="padding-bottom: 5px;">
+
+<h4 id="{{ data_downloads.platform | slugify }}">
+ <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (GUI Beta 2)
+ </a>
+</h4>
+
+<h4>
+ <img src="//static.getmonero.org/images/blank.png" style="height: 30px;">
+</h4>
+
+<strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
+<strong>SHA256 Hash:</strong> {{ data_downloads.gui_hash }}<br>
+<br><br>
+<hr>
+
+</div>
+
+{% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash != nil %}
+
+<div class="col-lg-6" style="padding-bottom: 5px;">
+
+<h4 id="{{ data_downloads.platform | slugify }}">
+ <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (GUI Beta 2)
+ </a>
+</h4>
+
+<h4>
+ <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">
+  <img src="//static.getmonero.org/images/platforms/{{ data_downloads.icon }}" style="height: 30px;"> {{ data_downloads.platform }} (Command-Line Tools Only)
  </a>
 </h4>
 
 <strong>Current Version:</strong> {{ data_downloads.version }} <em>{{ data_downloads.tag }}</em><br>
-<strong>SHA256 Hash:</strong> {{ data_downloads.hash }}<br>
+<strong>SHA256 Hash (GUI):</strong> {{ data_downloads.gui_hash }}<br>
+<strong>SHA256 Hash (CLI):</strong> {{ data_downloads.cli_hash }}<br>
+
+
 <hr>
 
 </div>
