@@ -9,29 +9,28 @@ icon: "icon_node"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-### Why Run a Full Node?
+### ¿Para que usar un Full Node?
+Debido a la naturaleza descentralizada y P2P (peer-to-peer) de la red monero, ésta se vuelve más robusta y resistente cuanto más crece. Es por ello que animamos a todos los usuarios a usar un full node siempre que puedan.
 
-Because of the decentralized and peer-to-peer nature of the Monero network it becomes more robust and resilient as it becomes larger. We encourage all users to run a full node, if they are able to.
+Llevar un node de Monero no precisa de mucha potencia de procesamiento, pero si requiere unos pocos gigabytes de espacio en el disco duro para almacenar los blockchain, habrá también un impacto de tu ancho de banda, especialmente por parte de los nodos que tengas conectados y acogidos al blockchain.
 
-Running a Monero node does not require a huge amount of processing power, but it does require a few gigabytes worth of disk space to store the blockchain, and there will be some impact on your bandwidth especially from connected nodes that are catching up on the blockchain.
+La forma más facil de tener un nodo de Monero, sin afectar el ancho de banda de tu hogar, es comprar un VPS (Servidor Virtual Privado). Recomendamos [InterServer.net](https://interserver.net/dock/vps-231552.html) usando el cupón de descuento 'MONERO' para obtener un descuento sobre el ya de por si barato VPS de 6$/mes. Usar el cupón de descuento, o nuestro link de afiliado (https://interserver.net/dock/vps-231552.html) ayudará a la financiación del desarrollo de Monero.
 
-The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend [InterServer.net](https://interserver.net/dock/vps-231552.html) using the 'MONERO' coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or [our affiliate link](https://interserver.net/dock/vps-231552.html) will also assist in the ongoing funding of Monero development.
+Monero funcionará en la gran mayoria de hardware, incluyendo ARM y sistemas 32-bits. Para preparar la ejecución/funcionamiento del nodo, descargue los binaries de Monero [from the downloads page](/downloads).
 
-Monero will run on most hardware, including ARM and 32-bit systems. In order to prepare to run the node download the Monero binaries [from the downloads page](/downloads).
+### Ejecutando el nodo.
 
-### Running the Node
+Una vez tengas los archivos descargados y descomprimidos, no tienes que hacer más que ejecutar el daemon de Monero (monerod).
 
-Once you have the files downloaded and unpacked you don't need to do anything beyond running the Monero daemon (monerod).
+- En Windows: localizar monerod.exe en Windows Explorer y hacer doble click en él. Si se abre e inmediatamente cierra, o falla tras la ejecución, entonces tal vez quieras ejecutarlo desde la linea de comandos (CMD) para localizar el error.
 
-- On Windows: locate monerod.exe in Windows Explorer and double-click on it. If it opens and then closes, or crashes after starting, then you may want to start it from within Command Prompt in order to see what errors arise.
+- En OS X: localiza monerod en Finder y haz doble click en él. Tal y como en Windows, si se abre y cierra, o falla tras la ejecución, entonces puedes ejecutarlo desde el terminal.
 
-- On OS X: locate monerod in Finder and double-click on it. As with Windows, if it opens and then closes, or crashes after starting, then you can start it from within Terminal.
+- En Linux: dependiendo de si estas corriendo una version Linux de escritorio o servidor, querrás iniciar monerod en una sesión de ventana o en su propia consola.
 
-- On Linux: dependent on whether you are running it on a desktop or server operating system, you will want to start monerod either in a screen session or in a console window of its own.
+### Asegurandonos de que nuestro nodo funciona correctamente
 
-### Ensuring Your Node is Running Correctly
-
-When starting Monero for the first time you will see something similar to this screen:
+Cuando ejecutes monerod por primera vez, verás una pantalla parecida a la siguiente:
 
 {:.cli-code}
 2015-Feb-18 00:09:45.699104 Core initialized OK
@@ -47,6 +46,6 @@ SYNCHRONIZATION started
 SYNCHRONIZATION started</span>
 <span style="color: lime;">2015-Feb-18 00:10:01.719800 [P2P4][197.242.158.240:28080 OUT] SYNCHRONIZED OK</span>
 
-The yellow text indicates it is receiving blocks as it synchronises up with the rest of the Monero network. The green "synchronized ok" text will appear once it has correctly synched up. Once you see this there's nothing further you need to do, you are now running a Monero node!
+El texto amarillo indica que está recibiendo bloques mientras se sincroniza con el resto de la red de Monero. El texto verde "synchronized ok" aparecerá una vez que se haya sincronizado correctamente. Una vez lo veas, no hay nada mas que hacer, podemos decir que ya estas corriendo un nodo de Monero!
 
-To exit the node at any time you can type "exit" into the daemon window and press enter, and it will shut itself down.
+Para salir del nodo cuando quieras, puedes teclear "exit" en la ventana del daemon y pulsar enter, y se pagara él solito.
