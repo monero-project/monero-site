@@ -1,17 +1,17 @@
 ---
 layout: static_page
-title: "Easiest way to securely buy and store Monero"
-title-pre-kick: "Easiest way"
-title-kick: "to securely buy and store Monero"
+title: "Securely purchasing and storing Monero"
+title-pre-kick: "Securely purchasing"
+title-kick: "and storing Monero"
 title-post-kick: ""
 kick-class: "purple-kicks"
 icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-## How to obtain Monero and securely store it.
+## How to purchase Monero and securely store it.
 
-This is a guide to obtain and securely store Monero as of June 2017. 
+This is a guide to purchase and securely store Monero as of June 2017. 
 
 ####Step 1: Buy Bitcoin
 
