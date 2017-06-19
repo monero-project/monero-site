@@ -11,65 +11,70 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ## How to obtain monero
 
-This is a guide to obtain your own Monero as of 20150919. This is perhaps the easiest way to purchase and hold Monero.
+This is a guide to obtain your own Monero as of June 2017. 
 
-####Step 1: Buy bitcoin
+####Step 1: Buy Bitcoin
 
-There are many ways to buy bitcoin. Perhaps the easiest way is through circle.com. Once you have purchased some bitcoin, you are ready to buy some Monero! Buying bitcoin is straightforward. Please goto circle.com and just follow the instructions there.
+There are many ways to buy Bitcoin. The most reliable companies at this time are Xapo <http://www.xapo.com/> and Coinbase <http://www.coinbase.com/>. The process will involve uploading your personal identification (State ID, Passport, etc.) and will take anywhere from 2 to 10 days (or longer).  Check their reputations on Reddit before comitting to a large purchase.  Xapo uses Wire Transfers and Coinbase uses Bank Transfers (ACH in the USA).  Coinbase also allows instant buys via a debit card but adds a large fee for this option. Once you have purchased some Bitcoin, you are ready to convert it to Monero!
 
-####Step 2: Set up a mymonero.com account
+####Step 2: Download and create a Paper Wallet
 
-MyMonero.com is an online wallet for Monero, maintained by Monero Core Developer Ricardo Spagni (fluffpony). It is the easiest wallet to use. Simply go to MyMonero.com and click on the "Create an Account" button. 
+Download the paper wallet generator at: https://moneroaddress.org and copy it to a USB stick (Direct link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip). 
 
-![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
+Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped computer that hasn't been used before, or has had a clean installation of the OS. 
 
-After clicking the button, you will see your private key. This key is what gives you access to your funds. Never share this key with anyone!
+Your paper wallet will have four important items:
 
-### WRITE DOWN THIS KEY IMMEDIATELY!
+Public Address
+The public address is used to receive funds to the wallet.  You give this to anyone who will be sending funds to your wallet.
 
-![image2](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/02.png)
+Mnemonic Seed
+The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date.
 
-Type in your private key in the box below, and click the button.
+Private Spend Key
+The private spend key is used to send funds from the wallet.
 
-On the next page, you will see your address.
+Private View Key
+The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
 
-![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/03.png)
+At this point you have many options.  You can print the wallet on paper, save it as a PDF or text on a USB stick, burn it to CD/DVD, etc.  Most likely you will want at least two or three copies, stored securely in different locations.  If storing digitally, encrypt everything with a strong password.  If storing on paper, do not show the wallet to anyone else who can memorize your 25 word key, or take a picture of the wallet without your permission.  Sending someone a picture of the wallet is the same as giving away all of your funds.
 
-Copy your address to the clipboard by highlighting the whole thing and hitting ctrl+c (or edit menu, copy), or clicking the little icon next to your address. Save your address somewhere. This is how others will send Monero to you, and what you will use to deposit Monero into your account!
+Whichever method you chose, be sure there's no copy of the wallet left over on the device you used to create the wallet.  You may need to securely delete the wallet if you saved it to a disk, or make sure your printer does not save a copy in memory.
+
+*If you lose access to your paper wallet the Monero will not be available to you or anyone else, ever.  You wont be able to recover them.
+
 
 #### Step 3: Buy monero and transfer the monero to your new address
 
-Go to www.shapeshift.io . On the righthand side, of the screen, click icon under "Receive" to select Monero.
+Go to www.shapeshift.io. On the righthand side, of the screen, click the icon under "Receive" and select Monero.  
+You will be depositing Bitcoin and Receiving Monero.
 
-![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/05.png)
-![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/06.png)
+Press Continue.
 
-Paste your address into the field under the Monero logo. Select the "agree to terms" button, then hit "Start"
+Paste the Monero Public address from your paper wallet where it says "Your Monero Address". 
 
-![image7](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/07.png)
+Enter a Bitcoin address that you control where a refund can be sent in case there's a problem with the transaction.  It's very important that you enter a public bitcoin address you control (or can receive funds at).  At Xapo and Coinbase this is called a Receive Address and it may change periodically.
+
+Leave Payment ID blank if you are sending to your own Monero wallet or Monero paper wallet.
+
+Agree to the Terms and hit the slider to make this a "Reusable Address".  
+
+Press "Start Transaction".
 
 In the new screen that pops up, copy the Deposit Address into your clipboard (select and hit ctrl+c or edit-copy)
 
-![image8](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/08.png)
+Go to your Xapo or Circle account, and find a Transfer or Send button. Paste the Bitcoin address into the Destination field and enter the amount of bitcoin you would like to have converted to Monero and sent to your Monero wallet.  It must be within the Deposit Min and Deposit Max range specified at Shapeshift.io.
 
-Go back to your circle.com page, hit the "transfer" button, and paste the bitcoin address into the field
-Enter the amount of bitcoin you would like to spend.
+Once the send has been initiated by Xapo/Coinbase there will be a delay while the transaction enters the Bitcoin blockchain and awaits confirmation.  This may be minutes or hours.  You can check if the payment has been sent by looking up the Shapeshift.io Deposit address at blockchain.info.  Your transaction to Shapeshift.io will show up there.
 
-![image4](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/04.png)
-![image9](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/09.png)
+When your transaction has been confirmed, Shapeshift.io will then actually exchange BTC for XMR at one of the exchanges and when it is complete, send the Monero to the address of your Cold Storage Paper Wallet!
 
-You will get a text message verification code. Enter code and hit send.
+Because the Monero blockchain is private and untraceable, you won't be able to just lookup your Monero address and confirm that the funds have arrived like you might with Bitcoin.  This is good for privacy, but bad for convenience.
 
-![image10](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/10.png)
+To verify the funds have arrived at your wallet, you will need to setup a View Only wallet.  This is where that view-key comes in.  To create a view-only wallet see the entry: @view-only
 
-You will see the shapeshift change to "awaiting exchange"
+To verify the funds are still in your wallet and have not been spent, you will need an offline copy of the Monero blockchain and your mnemonic key.
 
-![image11](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/11.png)
 
-Then it will change to COMPLETE!
 
-![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/12.png)
 
-After a while you will see it in your Monero account
-
-![image13](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/13.png)
