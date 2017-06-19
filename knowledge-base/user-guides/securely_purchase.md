@@ -13,11 +13,11 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 This is a guide to purchase and securely store Monero as of June 2017. 
 
-####Step 1: Buy Bitcoin
+#### Step 1: Buy Bitcoin
 
 There are many ways to buy Bitcoin. Two semi-reliable companies at this time are Xapo <http://www.xapo.com/> and Coinbase <http://www.coinbase.com/>. The process will involve uploading your personal identification (State ID, Passport, etc.) and will take anywhere from 2 to 10 days (or longer).  Verify their reputation on Reddit before making a large purchase.  Xapo uses Wire Transfer and Coinbase uses Bank Transfer (ACH in the USA).  Xapo should be faster than Coinbase.  Coinbase also small instant buys via a debit card but adds a large fee for this option. Once you have purchased Bitcoin, you are ready to convert it to Monero!
 
-####Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+#### Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
 
 Download the paper wallet generator at: https://moneroaddress.org and copy it to a USB stick (Direct link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip). 
 
