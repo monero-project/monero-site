@@ -11,7 +11,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ### User Guides - always a work in progress!
 
-<div class="text-left" style="padding-bottom: 15px;"><a style="color: #505050;" href="securely_store"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline"><span class="green-kicks">How to Purchase and Securely store Monero</span></h2></a></div>
+<div class="text-left" style="padding-bottom: 15px;"><a style="color: #505050;" href="securely_store"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline"><span class="green-kicks">How to purchase and securely store Monero</span></h2></a></div>
 <div class="text-left" style="padding-bottom: 15px;"><a style="color: #505050;" href="howto_fix_stuck_funds"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline"><span class="green-kicks">How to fix locked up funds</span></h2></a></div>
 <div class="text-left" style="padding-bottom: 15px;"><a style="color: #505050;" href="Offline_Backup"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline"><span class="green-kicks">How to make an offline backup</span></h2></a></div>
 <div class="text-left" style="padding-bottom: 15px;"><a style="color: #505050;" href="restore_account"><img src="//static.getmonero.org/images/icon_client.svg" class="title-icon"><h2 class="inline"><span class="green-kicks">How to restore your account</span></h2></a></div>
