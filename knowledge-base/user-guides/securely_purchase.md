@@ -15,7 +15,7 @@ This is a guide to purchase and securely store Monero as of June 2017.
 
 #### Step 1: Buy Bitcoin
 
-There are many ways to buy Bitcoin. Two semi-reliable companies at this time are Xapo <http://www.xapo.com/> and Coinbase <http://www.coinbase.com/>. The process will involve uploading your personal identification (State ID, Passport, etc.) and will take anywhere from 2 to 10 days (or longer).  Verify their reputation on Reddit before making a large purchase.  Xapo uses Wire Transfer and Coinbase uses Bank Transfer (ACH in the USA).  Xapo should be faster than Coinbase.  Coinbase also small instant buys via a debit card but adds a large fee for this option. Once you have purchased Bitcoin, you are ready to convert it to Monero!
+There are many ways to buy Bitcoin. Two semi-reliable companies at this time are Xapo <http://www.xapo.com/> and Coinbase <http://www.coinbase.com/>. The process will involve uploading your personal identification (State ID, Passport, etc.) and will take anywhere from 2 to 10 days (or longer).  Verify their reputation on Reddit before making a large purchase.  Xapo uses Wire Transfer and Coinbase uses Bank Transfer (ACH in the USA).  Xapo should be faster than Coinbase.  Coinbase also allows small "instant" buys via a debit card but adds a large fee for this option. Once you have purchased Bitcoin, you are ready to convert it to Monero!
 
 #### Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
 
@@ -74,11 +74,13 @@ When your Bitcoin transaction has been confirmed, Shapeshift.io will then begin 
 
 When the Shapehift.io webpage says your transaction has been completed, you should now have Monero in your Paper Wallet!
 
+
+#### Notes and How to Verify Funds
 Because the Monero blockchain is private and untraceable, you won't be able to lookup your Monero Public Address and confirm that the funds have arrived like you might with Bitcoin.  This is good for privacy, but bad for convenience.
 
 To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet.  This is where that view-key comes in.  To create a view-only wallet see the entry: @view-only
 
-To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet, or connect it to the internet and it becomes a Hot Wallet used to send Monero.
+To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet or connect it to the internet and it becomes a Hot Wallet.
 
 
 
