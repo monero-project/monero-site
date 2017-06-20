@@ -43,6 +43,12 @@ Whichever method you chose, be sure there's no copy of the Monero wallet left ov
 
 *If you lose access to your Monero paper wallet the Monero will not be available to you or anyone else, ever.  You wont be able to recover them!
 
+#### Side Note
+Option to encrypt an XMR mnemonic seed:
+https://xmr.llcoins.net/
+Download the html page and place it on your airgapped computer. Check the part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a decent password. Thanks manicminer5.
+
+
 
 #### Step 3: Convert your Bitcoin to Monero and have it sent to your Monero Paper Wallet
 
