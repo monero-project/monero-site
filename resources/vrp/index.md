@@ -1,3 +1,10 @@
+---
+layout: static_page
+title: "Vulnerability Response Process"
+icon: "icon_people"
+attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
+---
+
 # Monero Site Vulnerability Response Process
 
 ## Preamble
