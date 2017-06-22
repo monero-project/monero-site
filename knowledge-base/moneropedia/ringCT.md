@@ -15,7 +15,6 @@ RingCT introduces an improved version of @ring-signatures called A Multi-layered
 For more information, please read the creator Shen Noether's paper [here](https://eprint.iacr.org/2015/1098) and 
 
 
-
 {{ page.summary | capitalize }}.
 
 
