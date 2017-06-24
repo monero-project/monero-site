@@ -119,9 +119,13 @@
     - name: algoStrategic - Internet Marketing and Web Development
       url: https://algostrategic.com
     - name: Emmanuel Galang, Canada Immigration and Refugee Lawyer
-      url: www.galanglaw.com
+      url: https://galanglaw.com/
     - name: Web Developer - Python with Django web framework
       url: http://www.voteforrodneylewis.com
+    - name: FlokiNET
+      url: https://flokinet.is
+    - name: Nerdzy Lawn Care
+      url: http://http://www.nerdzy.net
 - category: Goods
   merchants:
     - name: CryptoMercado - coffee and snacks
@@ -137,7 +141,11 @@
     - name: Handcrafted goods
       url: https://mychain.store/
     - name: Cellphone and laptop repair online store in Sweden
-      url: www.LagaiPhone.se
+      url: http://www.LagaiPhone.se
+    - name: InvestmentArt
+      url: http://investmentart.org/
+    - name: Directvoltage
+      url: http://directvoltage.com
 - category: Entertainment
   merchants:
     - name: Crypto Kingdom
