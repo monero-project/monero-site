@@ -1,0 +1,48 @@
+---
+layout: base
+---
+
+<div class="site-wrap">
+<div class="container ffs-breadcrumbs">
+
+<p><a href="/forum-funding-system/">Forum Funding System</a> > <a href="/forum-funding-system/funding-required/">Funding Required</a> > {{page.title}}</p>
+
+</div>
+       <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt">
+                    <div class="row center-xs">
+                        <div class="col">
+                            <h2>How to Contribute</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>In order to contribute to the cause of <strong>{{page.title}}</strong> all you have to do is the following:</p>
+                            <p>Have a valid Monero address. If you don't have one, you can read on getting started!</p>
+                            <p>Send the amount of XMR that you wish to contribute to the address: <strong>{{page.address}}</strong></p>
+                            <p>Make sure that you enter a payment ID of <strong>{{page.paymentid}}</strong> in order for us to be able to assign your contribution to this specific project!</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
+   
+    <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt">
+                    <div class="row center-xs">
+                        <div class="col">
+                            <h2>{{page.title}}</h2>
+                            <p>by {{page.author}}</p>
+                        </div>
+                    </div>
+                    <div>
+                        {{content}}
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
+    </div>
+    
+    <!-- JAVASCRIPT FOR DISQUS -->

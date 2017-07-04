@@ -1,0 +1,64 @@
+- area: Core
+  member:
+    - name: othe
+      url: 
+      email: othe@getmonero.org
+      description:
+    - name: smooth
+      url: https://github.com/iamsmooth
+      email: smooth@getmonero.org
+      description:
+    - name: Riccardo "fluffypony" Spagni
+      url: https://github.com/fluffypony
+      email: ric@getmonero.org
+      description:
+    - name: tacotime
+      url:  
+      email: tacotime@getmonero.org
+      description:
+    - name: Francisco "ArticMine" Cabañas
+      url: https://github.com/ArticMine
+      email: articmine@getmonero.org
+      description:
+    - name: luigi1111
+      url: https://github.com/luigi1111
+      email: luigi1111@getmonero.org
+      description:
+    - name: NoodleDoodle
+      url: https://github.com/NoodleDoodleNoodleDoodleNoodleDoodleNoo
+      email: noodledoodle@getmonero.org
+      description:
+- area: Developers
+  member:
+    - name: moneromooo
+      url: https://github.com/moneromooo-monero
+    - name: hyc
+      url: https://github.com/hyc
+    - name: Thomas Winget
+      url: https://github.com/tewinget
+    - name: Jaqueeee
+      url: https://github.com/Jaqueeee
+    - name: mikezackles
+      url: https://github.com/mikezackles
+    - name: Paul Shapiro
+      url: https://github.com/paulshapiro
+- area: Community
+  member:  
+    - name: dEBRUYNE
+      url:
+    - name: SamsungGalaxyPlayer
+      url:
+    - name: gingeropolous
+      url:
+- area: Special Thanks
+  member:
+    - name: warptangent
+      url: https://github.com/warptangent
+    - name: Shen Noether
+      url:
+- area: Monero Research Lab
+  member:
+    - name: Brandon Goodell (Surae Noether)
+      url:
+    - name: Sarang Noether
+      url:

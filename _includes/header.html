@@ -1,76 +1,162 @@
-<!-- Static navbar -->
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="navbar-wrapper">
-    <div class="navbar-header">
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </label>
-      <a class="navbar-brand" href="/"><img class="logo" src="//static.getmonero.org/images/logo.svg"></a>
-      <ul class="nav navbar-nav navbar-right navbar-collapse">
-        <li><a class="yellow" href="https://forum.getmonero.org">{% t menu.forum %}</a></li>
-        <li class="dropdown">
-          <input type="checkbox" class="dropdown-input" id="drop-1"/><label for="drop-1" class="purple">{% t menu.blog %} <span class="caret"></span></label>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/blog">{% t menu.allblog %}</a></li>
-            <li><a href="/blog/tags/monero%20missives">{% t menu.missives %}</a></li>
-            <li><a href="/blog/tags/dev%20diaries">{% t menu.devdiaries %}</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <input type="checkbox" id="drop-2"/><label for="drop-2" class="red">{% t global.getting_started %} <span class="caret"></span></label>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/getting-started/choose">{% t menu.choose %}</a></li>
-            <li><a href="/getting-started/running">{% t menu.running %}</a></li>
-            <li><a href="/getting-started/contribute">{% t menu.contribute %}</a></li>
-            <li><a href="/getting-started/donate">{% t menu.donations %}</a></li>
-            <li class="divider"></li>
-            <li><a href="/downloads">{% t menu.downloads %}</a></li>
-            <li><a href="https://github.com/monero-project">{% t menu.github %}</a></li>
-            <li class="divider"></li>
-            <li><a href="/getting-started/accepting">{% t menu.accepting %}</a></li>
-            <li><a href="/getting-started/merchants">{% t menu.merchants %}</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <input type="checkbox" id="drop-3"/><label for="drop-3" class="orange">{% t menu.knowledge_base %} <span class="caret"></span></label>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/knowledge-base/about">{% t menu.about %}</a></li>
-            <li><a href="/knowledge-base/people">{% t menu.people %}</a></li>
-            <li><a href="/knowledge-base/moneropedia">{% t global.wiki %}</a></li>
-            <li class="divider"></li>
-            <li><a href="/knowledge-base/user-guides">{% t menu.userguides %}</a></li>
-            <li><a href="/knowledge-base/developer-guides">{% t menu.developerguides %}</a></li>
-            <li class="divider"></li>
-            <li><a href="/design-goals">{% t menu.goals %}</a></li>
-            <li><a href="/research-lab">{% t menu.lab %}</a></li>
-            <li><a href="/knowledge-base/openalias">{% t menu.openalias %}</a></li>
-            <li><a href="/knowledge-base/projects">{% t menu.projects %}</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <input type="checkbox" id="drop-4"/><label for="drop-4" class="softyellow last">{% t menu.community %} <span class="caret"></span></label>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://forum.getmonero.org">{% t menu.forum %}</a></li>
-            <li><a href="https://www.reddit.com/r/monero/">{% t menu.reddit %}</a></li>
-            <li><a href="https://monero.stackexchange.com">{% t menu.stackexchange %}</a></li>
-            <li><a href="https://bitcointalk.org/index.php?topic=583449.0">{% t menu.bitcointalk %}</a></li>
-            <li class="divider"></li>
-            <li><a href="https://monero.slack.com/">{% t menu.slack %}</a></li>
-            <li><a href="https://telegram.me/bitmonero">{% t menu.telegram %}</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">{% t menu.irc %}</li>
-            <li><a href="irc://chat.freenode.net/#monero">{% t menu.irc-general %}</a></li>
-            <li><a href="irc://chat.freenode.net/#monero-dev">{% t menu.irc-development %}</a></li>
-            <li><a href="irc://chat.freenode.net/#monero-otc">{% t menu.irc-trading %}</a></li>
-            <li><a href="irc://chat.freenode.net/#monero-markets">{% t menu.irc-markets %}</a></li>
-            <li><a href="irc://chat.freenode.net/#monero-pools">{% t menu.irc-mining %}</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                            <label for="drop1">Get Started<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                <a href="/get-started/what-is-monero/">What Is Monero?</a>
+                                <a href="/get-started/using/">Using</a>
+                                <a href="/get-started/accepting/">Accepting</a>
+                                <a href="/get-started/contributing/">Contributing</a>
+                                <a href="/get-started/mining/">Mining</a>
+                                <a href="/get-started/faq">FAQ</a>
+                            </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item">
+                            <a href="/downloads/">Downloads</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                        <label for="drop2">Recent News<div class="arrow-down"></div></label>
+                        <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                         <div class="dropdown-content">
+                            <a href="/blog/">All Posts</a>
+                            <a href="/blog/tags/monero%20missives.html">Missives</a>
+                            <a href="/blog/tags/dev%20diaries.html">Meeting Logs</a>
+                            <a href="/blog/tags/releases.html">Releases</a>
+                          </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                         <div class="col-xs-12 dropdown text-center nav-item">
+                            <label for="drop4">Community<div class="arrow-down"></div></label>
+                        <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                         <div class="dropdown-content">
+                            <a href="/community/team/">Team</a>
+                            <a href="/community/hangouts/">Hangouts</a>
+                            <a href="/community/events/">Events</a>
+                            <a href="/community/sponsorships/">Sponsorships</a>
+                            <a href="/community/merchants/">Merchants</a>
+                          </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                        <label for="drop3">Resources<div class="arrow-down"></div></label>
+                        <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                         <div class="dropdown-content">
+                            <a href="/resources/about/">About</a>
+                            <a href="/resources/roadmap/">Roadmap</a>
+                            <a href="/resources/research-lab/">Monero Research Lab</a>
+                            <a href="/resources/moneropedia/">Moneropedia</a>
+                            <a href="/resources/user-guides/">User Guides</a>
+                            <a href="/resources/developer-guides/">Developer Guides</a>
+                          </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/forum-funding-system/">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="/"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs">
+                         <div class="col-md-12">
+                          <a href="/forum-funding-system/" class="mob top-link col-md-4">Forum Funding System</a>
+                          <a href="/the-monero-project/" class="mob top-link col-md-3">The Monero Project</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                    <div class="col dropdown nav-item">
+                            <label for="drop1">Get Started<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                <a href="/get-started/what-is-monero/">What Is Monero?</a>
+                                <a href="/get-started/using/">Using</a>
+                                <a href="/get-started/accepting/">Accepting</a>
+                                <a href="/get-started/contributing/">Contributing</a>
+                                <a href="/get-started/mining/">Mining</a>
+                                <a href="/get-started/faq">FAQ</a>
+                            </div>
+                    </div>
+                     <div class="col nav-item">
+                        <a href="/downloads/">Downloads</a> 
+                    </div>
+                    <div class="col dropdown nav-item">
+                        <label for="drop2">Recent News<div class="arrow-down"></div></label>
+                        <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                         <div class="dropdown-content">
+                            <a href="/blog/">All Posts</a>
+                            <a href="/blog/tags/monero%20missives.html">Missives</a>
+                            <a href="/blog/tags/dev%20diaries.html">Meeting Logs</a>
+                            <a href="/blog/tags/releases.html">Releases</a>
+                          </div>
+                    </div>
+                    <div class="col dropdown nav-item">
+                        <label for="drop4">Community<div class="arrow-down"></div></label>
+                        <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                         <div class="dropdown-content">
+                            <a href="/community/team/">Team</a>
+                            <a href="/community/hangouts/">Hangouts</a>
+                            <a href="/community/events/">Events</a>
+                            <a href="/community/sponsorships/">Sponsorships</a>
+                            <a href="/community/merchants/">Merchants</a>
+                          </div>
+                    </div>
+                     <div class="col dropdown nav-item">
+                        <label for="drop3">Resources<div class="arrow-down"></div></label>
+                        <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                         <div class="dropdown-content">
+                            <a href="/resources/about/">About</a>
+                            <a href="/resources/roadmap/">Roadmap</a>
+                            <a href="/resources/research-lab/">Research Lab</a>
+                            <a href="/resources/moneropedia/">Moneropedia</a>
+                            <a href="/resources/user-guides/">User Guides</a>
+                            <a href="/resources/developer-guides/">Developer Guides</a>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs">
+                <div class="col-xs-6">
+                    <a href="/"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+            </div>     
+        </div>    

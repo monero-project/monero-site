@@ -8,7 +8,7 @@ author: Riccardo Spagni (fluffypony)
 
 *March 29th, 2017*
 
-## Overview
+### Overview
 
 The second beta of the Monero GUI has been released. Due to our focus on completing the features required for the initial release we have not, as yet, completed support for 32-bit Windows, FreeBSD, DragonflyBSD, ARMv7 Linux, and ARMv8 Linux devices. Whilst these are being worked on, it may not be feasible to support some environments (like 32-bit Windows) due to performance degradation.
 
@@ -16,13 +16,13 @@ Download links are at the bottom of this post, and please take note of the known
 
 To upgrade, just replace your existing GUI with this newer release. Beta 1 wallets will continue to work in beta 2, without any changes required from your side.
 
-## Known Issues
+### Known Issues
 
 - If the GUI doesn't start on Windows, or starts with a blank screen, then try launch it using the ```start-low-graphics-mode.bat``` batch file.
 - The unsigned transaction format, used by cold wallets, may cause issues when moving between platforms (eg. from Linux to Windows) for signing.
 - Cold transaction signing does not work with split transactions (sends that are split over multiple transactions).
 
-## Contributors for this Release
+### Contributors for this Release
 
 This release was the direct result of 50 people who worked, largely unpaid and altruistically, to put out 1202 commits containing 345 646 new lines of code. We'd like to thank them very much for their time and effort. In no particular order they are:
 
@@ -77,13 +77,13 @@ This release was the direct result of 50 people who worked, largely unpaid and a
 - Roy Jacobs
 - pigeons
 
-## Official Download Links
+### Official Download Links
 - [Windows, 64-bit](https://downloads.getmonero.org/gui/monero-gui-win-x64-v0.10.3.1.zip)
 - [macOS, 64-bit](https://downloads.getmonero.org/gui/monero-gui-mac-x64-v0.10.3.1.tar.bz2)
 - [Linux, 64-bit](https://downloads.getmonero.org/gui/monero-gui-linux-x64-v0.10.3.1.tar.bz2)
 - [Linux, 32-bit](https://downloads.getmonero.org/gui/monero-gui-linux-x86-v0.10.3.1.tar.bz2)
 
-## Download Hashes
+### Download Hashes
 
 If you would like to verify that you have downloaded the correct file, please use the following SHA256 hashes:
 

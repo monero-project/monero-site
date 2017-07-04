@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *May 7th, 2017*  
 
-# Overview  
+### Overview  
 
 An overview [can be found on MoneroBase](https://monerobase.com/wiki/DevMeeting_2017-05-07).  
 
-# Logs  
+### Logs  
 
 **\<fluffypony>** 1. Greetings  
 **\<fluffypony>** 2. Brief review of what's been completed since the previous meeting  

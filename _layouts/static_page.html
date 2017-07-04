@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="container main-content">
-        <div class="page-title">
-          {{ page.attribution }}
-          <img src="//static.getmonero.org/images/{{ page.icon }}.svg" class="title-icon"><h2 class="inline">{{ page.title-pre-kick }} <span class="{{ page.kick-class }}">{{ page.title-kick }}</span> {{ page.title-post-kick }}</h2>
-        </div>
-
-        {{ content }}
+---
+layout: base
+---
+<h1 class="text-center">{{page.title}}</h1>
+    <div class="site-wrap">
+    <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt">
+                    <div>
+                        {{content}}
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
     </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>

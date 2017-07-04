@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *July 31th, 2016*
 
-# Overview 
+### Overview 
 
 -
 
-# Logs
+### Logs
 
 **\<fluffypony>** time for meeting to start   
 **\<i2p-relay> {-anonimal}** Are we not having a meeting?  

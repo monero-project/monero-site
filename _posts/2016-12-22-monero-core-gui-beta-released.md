@@ -8,19 +8,19 @@ author: Riccardo Spagni (fluffypony)
 
 *December 22nd, 2016*
 
-## Overview
+### Overview
 
 The first beta of the Monero Core GUI has been released. Note that, at this time, we have not completed support for 32-bit Windows, FreeBSD, and ARMv7 Linux devices. They are all being worked on, and we hope to complete support for them by the time of the first release.
 
 Download links are at the bottom of this post, and please take note of the known issues and caveats listed below.
 
-## Known Issues
+### Known Issues
 
 - Due to several important updates, 0.10.1 wallet binaries will not work with with wallets created by the GUI. Please use the binaries included in the package instead. Note: you can definitely use the 0.10.1 daemon:)
 - If you have been testing earlier builds you may have to delete your configs. There is [a guide describing how to do this on this StackExchange post](http://monero.stackexchange.com/questions/2866/where-are-the-monero-core-configuration-parameters-stored/2870#2870).
 - Older computers may have an issue with the QT renderer, and will either crash or display a white / black window. You can change the rendering mode [as described on this StackExchange post](http://monero.stackexchange.com/questions/2928/how-to-change-the-monero-core-rendering-mode-for-older-computers/2929#2929).
 
-## FAQ
+### FAQ
 
 - *Can I use a remote node?* This is certainly possible. In the wizard, change the daemon address from `localhost:18081` to the address of the remote node. For instance, if you want to use the remote node of moneroworld.com, change `localhost:18081` to `node.moneroworld.com:18081`. For more open node options, please check out the [MoneroWorld open node directory.](https://moneroworld.com/#nodes) Alternatively, you can specify a daemon address on the `Settings` page.
  
@@ -34,7 +34,7 @@ Download links are at the bottom of this post, and please take note of the known
  
 - *Can I open a wallet I created with the CLI?* Yes, this is possible with the wallet picker in the wizard. Use the "I want to open a wallet from file" option and select your .keys file to open the wallet created with the CLI. Alternatively, if you already have a wallet opened and want to switch to your CLI wallet, go to the `Settings` page and choose `Close wallet`. This will bring you back to the wizard, where you can choose your CLI wallet. Note that your cache may be incompatible and you may incur an error. If this happens, see the FAQ questions above.
 
-## Contributors for this Release
+### Contributors for this Release
 
 This release was the direct result of 32 people who worked, largely unpaid and altruistically, to put out 736 commits containing 321 056 new lines of code. We'd like to thank them very much for their time and effort. In no particular order they are:
 
@@ -72,14 +72,14 @@ This release was the direct result of 32 people who worked, largely unpaid and a
 - Clement
 - Christoph Schnerch
 
-## Official Download Links
+### Official Download Links
 
 - [Windows, 64-bit](https://downloads.getmonero.org/gui/monero.gui.win.x64.beta.zip)
 - [macOS, 64-bit](https://downloads.getmonero.org/gui/monero.gui.mac.x64.beta.tar.bz2)
 - [Linux, 64-bit](https://downloads.getmonero.org/gui/monero.gui.linux.x64.beta.tar.bz2)
 - [Linux, 32-bit](https://downloads.getmonero.org/gui/monero.gui.linux.x86.beta.tar.bz2)
 
-## Download Hashes
+### Download Hashes
 
 If you would like to verify that you have downloaded the correct file, please use the following SHA256 hashes:
 

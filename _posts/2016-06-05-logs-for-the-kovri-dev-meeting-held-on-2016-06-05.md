@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *June 5th, 2016*
 
-# Logs
+### Logs
 
 **\<fluffypony>** ok so I think let's move on to Kovri - anonimal, the floor is yours  
 **\<meeting-bot> [anonimal]** Thanks fluffypony, I need about 30-60 seconds.  

@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *February 19th, 2017*  
 
-# Logs  
+### Logs  
 
 **\<fluffypony>** 1. Greetings  
 **\<fluffypony>** 2. Brief review of what's been completed since the previous meeting  

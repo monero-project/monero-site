@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *March 26th, 2017*  
 
-# Overview  
+### Overview  
 
 An overview [can be found on MoneroBase](https://monerobase.com/wiki/DevMeeting_2017-03-26).  
 
-# Logs  
+### Logs  
 
 **\<fluffypony>** 2. Brief review of what's been completed since the previous meeting  
 **\<fluffypony>** ok so since the last meeting I guess the main thing is we tagged and released 0.10.3  

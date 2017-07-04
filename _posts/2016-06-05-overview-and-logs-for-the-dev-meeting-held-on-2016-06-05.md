@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony / Aerbax
 
 *June 5th, 2016*
 
-# Overview
+### Overview
 
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monero-bi-weekly-dev-meeting-note-highlights-2016-06-05)
 
-# Logs
+### Logs
 
 **\<fluffypony>** everyone ready to start? smooth / tewinget / dEBRUYNE / ArticMine / luigi1111w / luigi1112 / luigi1114 / NoodleDoodle / gingeropolous etc.  
 **\<ArticMine>** yes  

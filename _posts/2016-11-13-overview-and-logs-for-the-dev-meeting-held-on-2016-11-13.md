@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *November 13th, 2016*    
 
-# Overview  
+### Overview  
 
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monero-dev-meeting-note-highlights-2016-11-13).  
 
-# Logs  
+### Logs  
 
 **\<@ArticMine>** Hi  
 **\<+moneromooo>** Oh hi  

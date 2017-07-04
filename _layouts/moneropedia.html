@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="container main-content">
-        <div class="page-title">
-          <img src="//static.getmonero.org/images/icon_wiki.svg" class="title-icon"><h2 class="inline">{{ page.entry }} - <span class="softyellow-kicks">{% t global.wiki %}</span></h2>
-        </div>
-
-        {{ content }}
+---
+layout: base
+---
+<h1 class="text-center">{{page.title}}</h1>
+    <div class="site-wrap">
+    <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt">
+                   <h2>{{page.entry}}</h2>
+                    <div>
+                        {{content}}
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
     </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>

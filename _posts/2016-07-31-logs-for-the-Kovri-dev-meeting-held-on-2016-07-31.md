@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *July 31th, 2016*
 
-# Logs
+### Logs
 
 **\<anonimal>** ping fluffypony we missed you in #monero-dev  
 **\<anonimal>** I'll proceed with the meeting as planned but the bulk of the agenda is picking on your assigned issues.  

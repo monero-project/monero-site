@@ -38,7 +38,7 @@ module Jekyll
         if @@moneropedia.empty?
           
           # grab all .md files in the Moneropedia folder, ignore index.md
-          moneropedia_path = File.join(@config["source"], "/knowledge-base/moneropedia/*.md")
+          moneropedia_path = File.join(@config["source"], "/resources/moneropedia/*.md")
           files = Dir.glob(moneropedia_path).reject{|f| f =~ Regexp.new('index.md', Regexp::EXTENDED | Regexp::IGNORECASE) }
 
           # step through all the files
@@ -57,13 +57,13 @@ module Jekyll
         if content.include? '@moneropedia'
           # Moneropedia index, replace with a list of entries
           cur_letter = 'A'
-          replace = "<div class='col-lg-4'>\n<h4 class='text-center'>A</h4>\n"
+          replace = "<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>A</h4>\n"
           @@moneropedia_ordered.sort.map do |entry, link|
             if cur_letter != entry[0]
-              replace += "</div>\n<div class='col-lg-4'>\n<h4 class='text-center'>" + entry[0] + "</h4>\n"
+              replace += "</div>\n<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>" + entry[0] + "</h4>\n"
               cur_letter = entry[0]
             end
-            replace += "<a href='/knowledge-base/moneropedia/" + link + "'>" + entry + "</a><br>\n"
+            replace += "<a href='/resources/moneropedia/" + link + ".html'>" + entry + "</a><br>\n"
           end
           replace += "</div>"
           content = content.gsub(/(\@moneropedia)/i, replace)          
@@ -72,7 +72,7 @@ module Jekyll
         # replace instances of @term with tooltips of the summary
         @@moneropedia.each do |entry|
           entry[:terms].each do |term|
-            content = content.gsub(/(\@#{term})\b/i, '<a class="moneropedia" href="/knowledge-base/moneropedia/' + entry[:file] + '" data-toggle="tooltip" data-placement="top" data-original-title="' + entry[:summary] + '">' + term.gsub('-',' ') + '</a>')
+            content = content.gsub(/(\@#{term})\b/i, '<a data-tooltip="' + entry[:summary] + '" href="/resources/moneropedia/' + entry[:file] + '.html" >' + term.gsub('-',' ') + '</a>')
           end
         end
         

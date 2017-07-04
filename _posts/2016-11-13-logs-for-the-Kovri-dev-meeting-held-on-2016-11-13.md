@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *November 13th, 2016*  
 
-# Logs  
+### Logs  
 
 **\<i2p-relay> {-anonimal}** Proposed meeting items:  
 **\<i2p-relay> {-anonimal}** 1. Greetings  

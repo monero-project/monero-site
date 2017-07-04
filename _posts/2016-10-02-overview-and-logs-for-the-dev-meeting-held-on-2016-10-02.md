@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *October 2nd, 2016*
 
-# Overview
+### Overview
 
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monero-and-kovri-dev-meeting-note-highlights-2016-10-02)
 
-# Logs
+### Logs
 
 **\<fluffypony>** Hi all  
 **\<fluffypony>** starting meeting bot  

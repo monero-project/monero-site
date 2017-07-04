@@ -8,7 +8,7 @@ author: Monero Core Team
 
 *April 1st, 2017*
 
-## For Immediate Release
+### For Immediate Release
 
 The Monero Core Team is very proud to announce that we have broken ground on the construction of the Monero Celebrity Center in Los Angeles, USA!
 

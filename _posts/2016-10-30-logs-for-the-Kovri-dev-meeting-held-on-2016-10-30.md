@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *October 30th, 2016*  
 
-# Logs  
+### Logs  
 
 **\<fluffypony>** alright anonimal, the floor is yours  
 **\<meeting-bot> [anonimal]** Proposed meeting items:  

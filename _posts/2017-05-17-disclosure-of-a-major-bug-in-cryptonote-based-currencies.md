@@ -6,7 +6,7 @@ tags:  [core, crypto, research]
 author: luigi1111 and Riccardo "fluffypony" Spagni
 ---
 
-# Overview
+### Overview
 
 In Monero we've discovered and patched a critical bug that affects all CryptoNote-based cryptocurrencies, and allows for the creation of an unlimited number of coins in a way that is undetectable to an observer unless they know about the fatal flaw and can search for it.
 
@@ -18,7 +18,7 @@ Once we were certain that the network had updated, we notified all active and af
 
 ***We strongly caution against anyone using, trading, exchanging, or running services involving the following currencies affected by this issue: Bytecoin, DashCoin, DigitalNote***
 
-# Timeline
+### Timeline
 
 2017-02-19: A member of the Monero Research Lab discovers the exploit, triggered by a detailed discussion of the [XEdDSA signature schemes](https://whispersystems.org/docs/specifications/xeddsa/) on the [Curves mailing list](https://moderncrypto.org/mail-archive/curves/2017/000846.html)  
 2017-02-20: The Monero blockchain is scanned to see if this had ever been exploited; thankfully it had not and the blockchain is intact.  
@@ -30,11 +30,11 @@ Once we were certain that the network had updated, we notified all active and af
 2017-04-17: All CryptoNote coins are contacted, and told that they have until mid-May to patch their coins, before there will be a public disclosure of the issue.  
 2017-04-17: As noted by [Riccardo "fluffypony" Spagni on Twitter](https://twitter.com/fluffyponyza/status/854029169667309569), the hash of the message sent to the various CryptoNote currencies is committed to the Monero blockchain.
 
-# Problem
+### Problem
 
 The so-called "key image" as used in CryptoNote coins utilising elliptic curve ed25519 can be modified in a special way, allowing double-spends. This effectively allows someone to create an infinite amount of coins in a way that is impossible to detect without knowing about the exploit and explicitly writing code to check for it.
 
-# Mitigation
+### Mitigation
 
 Several options exist for mitigation. The simplest, least invasive is noted below.
 

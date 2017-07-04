@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *August 14th, 2016*
 
-# Overview 
+### Overview 
 
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monero-bi-weekly-dev-meeting-note-highlights-2016-08-14)
 
-# Logs
+### Logs
 
 **\<wallet42>** moneromoo: rewview guidelines?  
 **\<moneromooo>** wallet42: well, whatever you feel comfortable with. Do you have anything in mind ?  

@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *June 19th, 2016*
 
-# Logs
+### Logs
 
 **\<fluffypony>** ok I guess we move on to Kovri - anonimal, the floor is yours  
 **\<meeting-bot> [anominal]** From agenda https://github.com/monero-project/kovri/issues/192  

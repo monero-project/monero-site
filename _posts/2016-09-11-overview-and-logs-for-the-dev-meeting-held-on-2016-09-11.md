@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *September 11th, 2016*
 
-# Logs
+### Logs
 
 **\<fluffypony>** Hi all  
 **\<fluffypony>** I'm on my phone  

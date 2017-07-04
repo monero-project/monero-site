@@ -6,7 +6,7 @@ tags: [core, rpc]
 author: Riccardo Spagni (fluffypony)
 ---
 
-## Statement
+### Statement
 
 There seem to be some misconceptions and even outrightly false statements being made around the unauthenticated RPC "bug" that was ["discovered" by MWR Labs](https://labs.mwrinfosecurity.com/advisories/csrf-vulnerability-allows-for-remote-compromise-of-monero-wallets/), and we'd like to make certain facts of the matter clear.
 

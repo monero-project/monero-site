@@ -1,5 +1,6 @@
 - platform: Windows, 64-bit
-  icon: windows.svg
+  id: windows
+  icon: icon-windows
   cli_url: win64
   cli_hash: 2fbda6f6b1051053703e40cf77b6c6e11334509ad03a3c22d89b6bcb05615910
   gui_url: win64
@@ -9,7 +10,7 @@
   blockchain: win
 
 - platform: Windows, 32-bit
-  icon: windows.svg
+  icon: icon-windows
   cli_url: win32
   cli_hash: da628a45adfcb8be44df06ac904711d644d608c4eb6479a5d256062a5f6d74de
   version: 0.10.3.1
@@ -17,7 +18,8 @@
   blockchain: win
 
 - platform: Mac OS X, 64-bit
-  icon: apple.svg
+  id: mac
+  icon: icon-apple
   cli_url: mac64
   cli_hash: fd17d55a8c9e901ff4064c39d9e14786cdd077aff9b3bb556e60d3a5e322050c
   gui_url: mac64
@@ -27,7 +29,8 @@
   blockchain: mac
 
 - platform: Linux, 64-bit
-  icon: linux.svg
+  id: linux
+  icon: icon-linux
   cli_url: linux64
   cli_hash: 8db80f8cc4f80d4106db807432828df730a59eac78972ea81652aa6b9bac04ad
   gui_url: linux64
@@ -37,7 +40,7 @@
   blockchain: linux
 
 - platform: Linux, 32-bit
-  icon: linux.svg
+  icon: icon-linux
   cli_url: linux32
   cli_hash: abc99f3928f4083bd1a380a869253e07bee9950e0aeb6388e9493bc0f0ec3f53
   gui_url: linux32
@@ -47,7 +50,8 @@
   blockchain: linux
 
 - platform: ARMv7
-  icon: arm.svg
+  id: arm
+  icon: icon-arm
   cli_url: linuxarm7
   cli_hash: 8473fa20e0db4a3d3e46120cdf92c55be6a159478c511e21f7b77aa05d6c1910
   version: 0.10.3.1
@@ -55,7 +59,7 @@
   blockchain: arm
 
 - platform: ARMv8
-  icon: arm.svg
+  icon: icon-arm
   cli_url: linuxarm8
   cli_hash: 451f65e4846b92d54859e22a5d92124557b397b4208d8752d5289d0262573c3c
   version: 0.10.3.1
@@ -63,15 +67,23 @@
   blockchain: arm
 
 - platform: FreeBSD, 64-bit
-  icon: freebsd.svg
+  id: bsd
+  icon: icon-freebsd
   cli_url: freebsd64
   cli_hash: 4c66a76752e18ae70b5fb1c728f0d2780eb129a6c8c7d0dee7ba02e05d91efae
   version: 0.10.3.1
   tag: Wolfram Warptangent
   blockchain: freebsd
 
-- platform: Source Code
-  icon: github.svg
+- platform: Source Code & Blockchain
+  id: source
+  icon: icon-github
   cli_url: https://github.com/monero-project/bitmonero
   cli_hash: source
   version: Bleeding edge (possibly unstable)
+  
+- platform: Mobile & Light Wallets
+  id: mobilelight
+  
+- platform: Hardware Wallets
+  id: hardware

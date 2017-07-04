@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *October 30th, 2016*  
 
-# Overview
+### Overview
 
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monerokovri-dev-meeting-note-highlights-2016-10-30).  
 
-# Logs
+### Logs
 
 **\<Jaquee>** it takes quite long time to open/close wallets with this mempool size. Could the mempool be saved in wallet cache?  
 **\<Jaquee>** or is that a bad idea?  

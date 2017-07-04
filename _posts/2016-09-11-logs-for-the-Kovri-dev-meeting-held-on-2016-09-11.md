@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *September 11th, 2016*
 
-# Logs
+### Logs
 
 **\<fluffypony>** anonimal: all yours :)  
 **\<meeting-bot> [anonimal]** 1. Community input for kovri logo https://99designs.com/logo-design/contests/create-beautiful-logo-kovri-privacy-enhancing-open-source-652257/entries  

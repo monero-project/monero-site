@@ -8,11 +8,11 @@ author: dEBRUYNE / fluffypony
 
 *October 16th, 2016*  
 
-# Overview  
+### Overview  
   
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monero-dev-meeting-note-highlights-2016-10-16).  
 
-# Logs  
+### Logs  
 
 **\<moneromooo>** So, fluffypony asked if I could talk. I have no relay bot, so #kovri-dev will have to be here to listen.  
 **\<moneromooo>** He suggested I talk about guidelines for submitting patches. So we'll see if everyone mostly agrees.  

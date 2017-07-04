@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *October 16th, 2016*  
 
-# Logs
+### Logs
 
 **\<i2p-relay> {-anonimal}** 17:00!  
 **\<moneromooo>** Go go go!  

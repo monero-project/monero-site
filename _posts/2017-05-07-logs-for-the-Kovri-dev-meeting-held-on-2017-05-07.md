@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *May 7th, 2017*  
 
-# Logs  
+### Logs  
 
 **\<anonimal>** 1. Greetings  
 **\<anonimal>** 2. Brief review of what's been completed since the previous meeting  

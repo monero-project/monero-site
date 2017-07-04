@@ -6,13 +6,13 @@ tags:  [core, crypto, research]
 author: Justin Ehrenhofer (SamsungGalaxyPlayer) and the Monero community
 ---
 
-# Preface
+### Preface
 
 This release attempts to contain the opinions of the Monero community. It is possible that not every viewpoint is expressed, but this paper includes the best response to the author's ability that encapsulates all these opinions. The author opens all discussion to how certain viewpoints are represented, and the purpose of this response is solely for easier documentation by interested parties. He has done the best to include sources wherever possible, and to be as accurate as possible. For any concerns with this publication, please express them to the [author's Reddit account](https://www.reddit.com/u/SamsungGalaxyPlayer) or on [the Monero subreddit](https://www.reddit.com/r/Monero/). This version has been updated for clarity, though the core content has remained unchanged.
 
 The Monero contributors and community at large always appreciate any research done on Monero's technology. They heavily encourage constructive criticism of all cryptocurrencies.
 
-# Notable Findings
+### Notable Findings
 
 The Monero contributors appreciate the effort that has gone into this mentioned publication and research methods. It helps quantify several realizations that had already been known to the Monero community at large for a long time (ref: [MRL-0001](https://lab.getmonero.org/pubs/MRL-0001.pdf) and [MRL-0004](https://lab.getmonero.org/pubs/MRL-0004.pdf)), including the following:
 
@@ -24,7 +24,7 @@ The Monero contributors appreciate the effort that has gone into this mentioned 
 
 4.  The phenomenon where the most recent input is the real one is a concern when using Monero. There is no way to prove that this input is indeed the correct one, and with recent transactions, the assertion is nearly impossible to prove and is accurate less than half of the time. As the report states, there is about a 40% chance that the most recent input in a default transaction is the real one. Ideally, this number should be closer to 20% (1 in 5). Note that this does not mean that there is a 40% chance that this transaction is traceable (see appendix). Increasing the transaction ringsize has only a marginal improvement.
 
-# Recommendations and Responses
+### Recommendations and Responses
 
 The following are the recommendations listed in the paper and responses to them:
 
@@ -34,7 +34,7 @@ The following are the recommendations listed in the paper and responses to them:
 
 3.  Monero users should be warned that their prior transactions are likely vulnerable to linking analysis. We mostly disagree with this recommendation. The vulnerabilities of 0-mixin transactions were well-documented and continuously shared with the Monero community while they were still allowed. The first research paper shared in the Monero community ([MRL-0001](https://lab.getmonero.org/pubs/MRL-0001.pdf)) was published in September 2014. Furthermore, most of Monero's community growth occurred after these 0-mixin transactions were prohibited across the network.
 
-# Concerns
+### Concerns
 
 The Monero community would like to list several concerns with this research paper. They are documented below:
 
@@ -46,7 +46,7 @@ The Monero community would like to list several concerns with this research pape
 
 4.  Andrew Miller was named in the paper as a consultant to the Zerocoin Electric Coin Company and a board member of the ZCash Foundation. ZCash is a cryptocurrency with a focus on privacy that uses different technology than Monero. However, [he downplayed his involvement in an interview](https://cointelegraph.com/news/monero-transactions-history-can-be-revealed-and-exposed-research) about this paper. We feel author involvement in cryptocurrencies with similar interests should be fully disclosed, though he did refer people to the first page of the report. Nevertheless, we feel that Miller's disclosure of his contribution to a competing project was unsatisfactory, given the severity of the allegations in the paper.
 
-# Other Information
+### Other Information
 
 1.  The timing of the publication. This paper was released approximately an hour before the hardfork. While it is impossible to know the reason for the specific timing without an admission, we speculate that this was timed to draw as much attention to the paper as possible. More people would have been tuning in to see how the hardfork was proceeding than typical community participation traffic. Andrew Miller has responded to this criticism in a Reddit comment, saying "the timing of our release with the imminent hard fork was totally unintentional and a coincidence. No one on the team noticed there was a hardfork planned, and we'd definitely have delayed till afterward if we had."
 
@@ -58,7 +58,7 @@ The Monero community would like to list several concerns with this research pape
 
 5.  This paper has not yet been published, is not finalized, and is not yet peer reviewed. Thus, there will most certainly be changes to this research paper before publication. We suggest that all claims and research be taken as preliminary and not concrete, since not enough people have evaluated their methods of research yet.
 
-# Conclusion   
+### Conclusion   
 
 We appreciate the effort that went into this research paper, but we suggest the following changes for later improvements:
 
@@ -74,7 +74,7 @@ We appreciate the effort that went into this research paper, but we suggest the 
 
 6.  Consider cooperating with Riccardo Spagni to permanently include the research portion of this paper in our Monero Research Lab documents.
 
-# Appendix
+### Appendix
 
 **Figure 5 from the report showing the fraction of deducible inputs. Notice the large drops following block height 1,000,000, when 0-mixin transactions were prohibited. Furthermore, these inputs likely do not include all those used in a single transaction. For instance, for a mixin 9 transaction, 5 may be deduced. This means that the inputs would be reported here as deducible, even if the transaction is not traceable.**
 

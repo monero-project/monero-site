@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *August 28th, 2016*
 
-# Logs
+### Logs
 
 **\<fluffypony>** anonimal: all yours  
 **\<tewinget>** in the meantime, for those not interested (or relevant to) the kovri meeting, anyone wanna help me test the zmq wallet<->daemon interactions?  

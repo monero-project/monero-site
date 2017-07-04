@@ -8,7 +8,7 @@ author: dEBRUYNE / fluffypony
 
 *July 3th, 2016*
 
-# Logs
+### Logs
 
 **\<fluffypony>** ok I guess we move on to Kovri - anonimal, the floor is yours  
 **\* fluffypony:** ding dings  
