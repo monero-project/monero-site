@@ -1,0 +1,77 @@
+- slug: monero missives
+  name: Monero Missives
+
+- slug: conferences
+  name: Conferences
+
+- slug: exchanges
+  name: Exchanges
+
+- slug: gui
+  name: Monero Core GUI
+
+- slug: usability
+  name: Usability
+
+- slug: dev diaries
+  name: Dev Diaries
+
+- slug: mining
+  name: Mining
+
+- slug: i2p
+  name: i2p
+
+- slug: i8n
+  name: Internationalisation
+
+- slug: rpc
+  name: RPC API
+
+- slug: docs
+  name: Documentation
+
+- slug: branding
+  name: Branding and Graphics
+
+- slug: compliance
+  name: Standards Compliance
+
+- slug: crypto
+  name: Cryptography
+
+- slug: platforms
+  name: Platform Support
+
+- slug: core
+  name: Monero Core
+
+- slug: accounts
+  name: Accounts (Wallets)
+
+- slug: external
+  name: External Projects
+
+- slug: mymonero
+  name: MyMonero.com
+
+- slug: forkguard
+  name: ForkGuard.com
+
+- slug: year in review
+  name: Year in Review
+
+- slug: funding
+  name: Funding and Donations
+  
+- slug: research
+  name: Monero Research Lab
+
+- slug: blockchaindb
+  name: BlockchainDB
+
+- slug: 0mq
+  name: ZeroMQ
+
+- slug: releases
+  name: Monero Software Releases

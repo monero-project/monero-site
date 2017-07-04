@@ -1,0 +1,29 @@
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.entry %}{{ page.entry }} | {% t global.wiki %} | {% t index.page_title %}{% elsif tag %}{% t global.tags %}: {{ tag.name }} | {% t index.page_title %}{% elsif page.title %}{{ page.title }} | {% t index.page_title %}{% else %}{% t index.page_title %}{% endif %}</title>
+	<meta name="description" content="{% if page.entry %}{{ page.entry }}: {{ page.summary }} [{% t global.wikimeta %}]{% elsif tag %}{% t global.tagsmeta %}: {{ tag.name }}{% elsif page.meta %}{{ page.meta }}{% elsif page.title %}{{ page.title }} [{% t global.titlemeta %}]{% else %}{{ site.description }}{% endif %}">
+	<meta name="keywords" content="{{ site.keywords }}">
+
+    <meta property="og:title" content="{% if page.entry %}{% t global.wiki %}: {{ page.entry }}{% elsif tag %}{% t global.tags %}: {{ tag.name }}{% elsif page.title %}{% t global.monero %}: {{ page.title }}{% else %}{% t index.page_title %}{% endif %}"/>
+    <meta property="og:description" content="{% if page.entry %}{{ page.entry }}: {{ page.summary }} [{% t global.wikimeta %}]{% elsif tag %}{% t global.tagsmeta %}: {{ tag.name }}{% elsif page.meta %}{{ page.meta }}{% elsif page.title %}{{ page.title }} [{% t global.titlemeta %}]{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="{% if page.icon %}http://static.getmonero.org/images/opengraph/{{ page.icon }}.png{% else %}http://static.getmonero.org/images/opengraph/logo.png{% endif %}">
+    <meta property="og:site_name" content="{% t global.sitename %}">
+    <meta property="og:url" content="https://getmonero.org{{ page.url }}">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
