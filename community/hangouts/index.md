@@ -110,7 +110,7 @@ The Monero community is diverse and varied. We come from all over, but we defini
                                 <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">Hiding TCP traffic for Monero miners?</a>
                             </div>  
                             <div class="row center-xs">
-                                <p><a href="http://monero.stackexchange.org" class="btn-link btn-auto">Visit Stack Exchange</a></p>
+                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Visit Stack Exchange</a></p>
                             </div>
                         </div>
                </div>
