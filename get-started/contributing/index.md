@@ -60,7 +60,7 @@ Monero is an open source, community driven project. We strive to be a welcoming 
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>Monero utilizes a <a href="forum.getmonero.org">Forum Funding System</a> (FFS) which encourages people of all backgrounds to be a part of Monero and maybe even get paid for it. Anyone can suggest an idea, ask for funding, and immediately start making the idea happen. As progress is made payments are released and Monero flourishes. You can donate directly to individual projects that you support. Take a look and don't be afraid to jump right in with an idea or a donation.</p>
+                                <p>Monero utilizes a <a href="https://forum.getmonero.org">Forum Funding System</a> (FFS) which encourages people of all backgrounds to be a part of Monero and maybe even get paid for it. Anyone can suggest an idea, ask for funding, and immediately start making the idea happen. As progress is made payments are released and Monero flourishes. You can donate directly to individual projects that you support. Take a look and don't be afraid to jump right in with an idea or a donation.</p>
                             </div>
                            
                         </div>
