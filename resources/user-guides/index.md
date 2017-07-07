@@ -62,12 +62,21 @@ title: "User Guides"
             <div class="info-block">
                 <div class="row center-xs">
                     <div class="col">
-                        <h2>Mining</h2>
+                        <h2>Website</h2>
                     </div>
                 </div>
-<div class="row start-xs text-center" markdown="1">
+<div class="row start-xs" markdown="1">
 
-User Guides for Mining coming soon.
+[General Web Edit Instructions (READ FIRST!)](website-general.html)
+[How to make a blog post](website-blog.html)
+[How to make a User Guide](website-user-guide.html)
+[How to make a Moneropedia entry](website-moneropedia.html)
+[How to make a FFS proposal](website-ffs.html)
+[How to update the Team page](website-team.html)
+[How to add update Events page](website-events.html)
+[How to update the Roadmap](website-roadmap.html)
+[How to add a new Merchant](website-merchants.html)
+[How to add a new question to the FAQ](website-faq.html)
 
 </div>
             </div>

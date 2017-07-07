@@ -25,23 +25,6 @@
       url: /forum-funding-system/proposals/getmonero-redesign.html
       summary: Redesign the official getmonero.org website to make it more accessible and aesthetically pleasing.
       author: rehrar
-      milestones:
-        - name: Milestone 1 - Front page & restructure
-          funds: 10% (~XMR 10.70)
-          done: April 28, 2017
-          status: completed
-        - name: Milestone 2 - Design
-          funds: 40% (~XMR 42.80)
-          done: July 1, 2017
-          status: completed
-        - name: Milestone 3 - Development
-          funds: 30% (~XMR 32.10)
-          done: July 1, 2017
-          status: completed
-        - name: Milestone 4 - Finishing touches
-          funds: 20% (~XMR 21.40)
-          done:
-          status: upcoming
     
 - stage: Completed Proposals
   proposals:
@@ -49,20 +32,3 @@
       url: /forum-funding-system/proposals/whatismonero-produced.html
       summary: Make an introduction video to Monero.
       author: savandra
-      milestones:
-        - name: Milestone 1 - Front page & restructure
-          funds: 10% (~XMR 10.70)
-          done: April 28, 2017
-          status: completed
-        - name: Milestone 2 - Design
-          funds: 40% (~XMR 42.80)
-          done: July 1, 2017
-          status: completed
-        - name: Milestone 3 - Development
-          funds: 30% (~XMR 32.10)
-          done: July 1, 2017
-          status: completed
-        - name: Milestone 4 - Finishing touches
-          funds: 20% (~XMR 21.40)
-          done:
-          status: upcoming
