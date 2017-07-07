@@ -36,6 +36,10 @@
       url: https://bit.ac/
     - name: Premium investment and exchange services
       url: https://www.kaiserex.com/
+    - name: Magnetic Exchange
+      url: https://magneticexchange.com
+    - name: ArbitrCoin
+      url: https://arbitrcoin.com      
 - category: Block Explorers
   merchants:
     - name: ChainRadar
@@ -146,10 +150,12 @@
       url: http://investmentart.org/
     - name: Directvoltage
       url: http://directvoltage.com
+    - name: Synntech Gaming
+      url: https://synntechgaming.com
+    - name: Elise Hawkins Nutritional Therapy  
+      url: www.elisehawkinsnutritionaltherapy.com
 - category: Entertainment
   merchants:
-    - name: Crypto Kingdom
-      url: http://cryptokingdom.me
     - name: MoneroDice
       url: https://monerodice.net
     - name: SafeDice
