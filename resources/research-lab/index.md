@@ -15,8 +15,8 @@ title: "Monero Research Lab"
                             <div class="col"><h2>Monero Research Lab Papers</h2></div>
                         </div>
                         <div class="tab">
-                              <input id="tab-one" type="checkbox" name="tabs" class="accordian" checked="checked">
-                              <label for="tab-one" class="accordian">MRL-0001: A Note on Chain Reactions in Traceability in CryptoNote 2.0</label>
+                              <input id="tab-one" type="checkbox" name="tabs" class="accordion" checked="checked">
+                              <label for="tab-one" class="accordion">MRL-0001: A Note on Chain Reactions in Traceability in CryptoNote 2.0</label>
                               <div class="tab-content">
                                 <p><strong>Abstract:</strong> This research bulletin describes a plausible attack on a ring-signature based
                                     anonymity system. We use as motivation the cryptocurrency protocol CryptoNote
@@ -38,8 +38,8 @@ title: "Monero Research Lab"
                               </div>
                             </div>
                             <div class="tab">
-                              <input id="tab-two" type="checkbox" name="tabs" class="accordian">
-                              <label for="tab-two" class="accordian">MRL-0002: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing the CryptoNote Protocol</label>
+                              <input id="tab-two" type="checkbox" name="tabs" class="accordion">
+                              <label for="tab-two" class="accordion">MRL-0002: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing the CryptoNote Protocol</label>
                               <div class="tab-content">
                                 <p><strong>Abstract:</strong> On 4 September 2014, an unusual and novel attack was executed against the
                                     Monero cryptocurrency network. This attack partitioned the network into two
@@ -58,8 +58,8 @@ title: "Monero Research Lab"
                               </div>
                             </div>
                             <div class="tab">
-                              <input id="tab-three" type="checkbox" name="tabs" class="accordian">
-                              <label for="tab-three" class="accordian">MRL-0003: Monero is Not That Mysterious</label>
+                              <input id="tab-three" type="checkbox" name="tabs" class="accordion">
+                              <label for="tab-three" class="accordion">MRL-0003: Monero is Not That Mysterious</label>
                               <div class="tab-content">
                                 <p><strong>Introduction:</strong> Recently, there have been some vague fears about the CryptoNote source code and
                                     protocol floating around the internet based on the fact that it is a more complicated
@@ -74,8 +74,8 @@ title: "Monero Research Lab"
                               </div>
                             </div>
                             <div class="tab">
-                              <input id="tab-four" type="checkbox" name="tabs" class="accordian">
-                              <label for="tab-four" class="accordian">MRL-0004: Improving Obfuscation in the CryptoNote Protocol</label>
+                              <input id="tab-four" type="checkbox" name="tabs" class="accordion">
+                              <label for="tab-four" class="accordion">MRL-0004: Improving Obfuscation in the CryptoNote Protocol</label>
                               <div class="tab-content">
                                 <p><strong>Abstract:</strong> We identify several blockchain analysis attacks available to degrade the
 untraceability of the CryptoNote 2.0 protocol. We analyze possible solutions,
@@ -106,8 +106,8 @@ results of internal investigation.<br>
                               </div>
                             </div>
                             <div class="tab">
-                              <input id="tab-five" type="checkbox" name="tabs" class="accordian">
-                              <label for="tab-five" class="accordian">MRL-0005: Ring Signature Confidential Transactions</label>
+                              <input id="tab-five" type="checkbox" name="tabs" class="accordion">
+                              <label for="tab-five" class="accordion">MRL-0005: Ring Signature Confidential Transactions</label>
                               <div class="tab-content">
                                 <p><strong>Abstract:</strong> This article introduces a method of hiding transaction amounts in the strongly
 decentralized anonymous cryptocurrency Monero. Similar to Bitcoin, Monero is a

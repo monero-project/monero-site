@@ -976,6 +976,10 @@ a:hover, a:focus, a:active {
     outline: 0;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 a, button, input, select, textarea, label, label:checked, label:focus {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
@@ -986,6 +990,23 @@ h1, h2, h3, h4, h5, h6, p {margin: 0; padding: 0;}
 img, video {max-width: 100%;}
 
 video {width: 100%;}
+
+::-webkit-input-placeholder {
+  color: #AAA;
+}
+::-moz-placeholder {
+  color: #AAA;
+}
+:-moz-placeholder {
+  color: #AAA;
+}
+:-ms-input-placeholder {
+  color: #AAA;
+}
+::-ms-input-placeholder {
+  color: #AAA;
+}
+
 
 .container, .container-fluid {
     margin-left: auto;
@@ -1019,6 +1040,10 @@ video {width: 100%;}
     -moz-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     box-shadow: 0 2px 4px rgba(50,50,93,.1);
+}
+
+.bold {
+    font-weight: 600;
 }
 
 code {
@@ -2783,7 +2808,7 @@ footer {
     border-radius: 50%;
 }
 
-.roadmap .tabPanel-content span {
+.roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming {
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
@@ -3015,7 +3040,7 @@ footer {
     padding-top: 0;
 }
     
-.roadmap .tabPanel-content span, .pre-roadmap li {
+.roadmap .tabPanel-content span, .pre-roadmap li, .roadmap .ms-completed, .roadmap .ms-upcoming {
     width: 1rem;
     height: 1rem;
 }
@@ -3572,7 +3597,7 @@ footer {
     color: #2f6f9f;
     padding: 0.7rem;
     border-radius: 0.2rem;
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .ffs-status p {
@@ -3582,14 +3607,103 @@ footer {
     font-size: 0.85rem;
 }
 
-.ffs-status.complete {
+.complete .ffs-status {
     background-color: #d7e8d8;
 }
 
-.ffs-status.inprogress {
+.inprogress .ffs-status {
     background-color: #fef2d5;
 }
 
+.progress-numbers p {
+    display: inline-block;
+    padding-top: 1.2rem;
+}
+
+.progress-bar {
+    height: 1rem;
+    position: relative;
+    background: #edebed;
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.07);
+    margin: 1rem 0 1.5rem 0;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: rgb(229,115,37);
+    background-image: linear-gradient(
+        center bottom,
+        rgb(229,115,37) 37%,
+        rgb(231,129,58) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,.07);
+    position: relative;
+    overflow: hidden;
+}
+
+.inprogress .progress-bar span, .complete .progress-bar span {
+    background-color: rgb(97,168,99);
+    background-image: linear-gradient(
+        center bottom,
+        rgb(97,168,99) 37%,
+        rgb(128,185,130) 69%
+    );
+}
+
+.fr-contribute .tab, .fr-contribute .tab:last-of-type, .milestones .tab, .milestones .tab:last-of-type {
+    border: none;
+}
+
+.fr-contribute .tab-content p, .milestones .tab-content p {
+    margin: 0;
+    text-align: left;
+}
+
+.fr-contribute label.accordion, .milestones label.accordion {
+    display: inline-block;
+    padding: 0 2rem 0 1rem;
+    border: 1px solid #ff7519;
+    margin: 0;
+    line-height: 2.7rem;
+    height: 2.7rem;
+    -webkit-transition: background .15s ease;
+    -moz-transition: background .15s ease;
+    -o-transition: background .15s ease;
+    transition: background .15s ease;
+    color: #ff7519;
+    text-transform: uppercase;
+}
+
+.fr-contribute label.accordion:hover, .fr-contribute label.accordion:focus, .fr-contribute  input.accordion[type=checkbox]:checked + label, .milestones label.accordion:hover, .milestones label.accordion:focus, .milestones input.accordion[type=checkbox]:checked + label {
+    background-color: #ff7519;
+    color: #ffffff;
+}
+
+.fr-contribute label.accordion::after, .milestones label.accordion:after {
+    right: 1rem;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #ff7519;
+}
+
+.fr-contribute label.accordion:hover:after, .fr-contribute label.accordion:focus:after, .fr-contribute  input.accordion[type=checkbox]:checked + label:after, .milestones label.accordion:hover:after, .milestones label.accordion:focus:after, .milestones input.accordion[type=checkbox]:checked + label:after {
+    border-top: 4px solid #ffffff;
+}
+
+.fr-contribute label.accordion:focus:after, .fr-contribute  input.accordion[type=checkbox]:checked + label:after, .milestones label.accordion:focus:after, .milestones input.accordion[type=checkbox]:checked + label:after {
+    transform: rotateX(180deg);
+}
+
+.ms-completed, .ms-upcoming {
+    margin-top: 1rem !important;
+}
+
+.milestones .row.roadmap {
+    margin-top: 1.5rem;
+}
 
 @media only screen and (max-width: 75rem) {
     
@@ -3679,6 +3793,10 @@ footer {
     display: none;
 }
     
+.ms-completed, .ms-upcoming {
+    margin-top: 1.2rem !important;
+}
+    
 }
 
 @media only screen and (max-width: 41rem) {
@@ -3697,9 +3815,21 @@ footer {
 
 @media only screen and (max-width: 30rem) {
 
-    .ffs .mobile a.ffs-btn {
-        font-size: 1.25rem;
-    }    
+.ffs .mobile a.ffs-btn {
+    font-size: 1.25rem;
+}  
+    
+.milestones .roadmap .col-xs-1 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+} 
+    
+.milestones .roadmap .col-xs-11 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+}
 }
 
 @media only screen and (max-width: 25rem) {
@@ -3719,7 +3849,272 @@ footer {
     }    
 }
 
-/*************************ACCORDIAN********************************/
+/*COMMENTS*/
+
+#isso-thread * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#isso-thread a {
+    text-decoration: none;
+}
+
+#isso-thread {
+    padding: 0;
+    margin: 0;
+}
+#isso-thread > h4 {
+    color: #4c4c4c;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+#isso-thread .textarea {
+    min-height: 3.625rem;
+    outline: 0;
+}
+
+.isso-comment {
+    max-width: 68rem;
+    padding-top: 0.95rem;
+    margin: 0.95rem auto;
+}
+.isso-comment:not(:first-of-type),
+.isso-follow-up .isso-comment {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.isso-comment > div.avatar,
+.isso-postbox > .avatar {
+    display: block;
+    float: left;
+    width: 4rem;
+    margin: 3px 0 0 0;
+}
+.isso-postbox > .avatar {
+    float: left;
+    margin: 0.3125rem 0.625rem 0 0.3125rem;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+}
+.isso-comment > div.avatar > svg,
+.isso-postbox > .avatar > svg {
+    max-width: 3rem;
+    max-height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.isso-comment > div.text-wrapper {
+    display: block;
+}
+.isso-comment .isso-follow-up {
+    padding-left: calc(7% + 20px);
+}
+.isso-comment > div.text-wrapper > .isso-comment-header, .isso-comment > div.text-wrapper > .isso-comment-footer {
+    font-size: 0.95rem;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header {
+    font-size: 0.85rem;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .spacer {
+    padding: 0 6px;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .spacer,
+.isso-comment > div.text-wrapper > .isso-comment-header a.permalink,
+.isso-comment > div.text-wrapper > .isso-comment-header .note,
+.isso-comment > div.text-wrapper > .isso-comment-header a.parent {
+    color: gray !important;
+    font-weight: normal;
+    text-shadow: none !important;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .spacer:hover,
+.isso-comment > div.text-wrapper > .isso-comment-header a.permalink:hover,
+.isso-comment > div.text-wrapper > .isso-comment-header .note:hover,
+.isso-comment > div.text-wrapper > .isso-comment-header a.parent:hover {
+    color: #ff7519 !important;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .note {
+    float: right;
+}
+.isso-comment > div.text-wrapper > .isso-comment-header .author {
+    font-weight: bold;
+    color: #4c4c4c;
+}
+.isso-comment > div.text-wrapper > .textarea-wrapper .textarea {
+    margin-top: 0.2rem;
+}
+.isso-comment > div.text-wrapper > div.text p {
+    padding-top: 0.5rem;
+}
+.isso-comment > div.text-wrapper > div.text p:last-child {
+    margin-bottom: 0.2rem;
+}
+.isso-comment > div.text-wrapper > div.text h1,
+.isso-comment > div.text-wrapper > div.text h2,
+.isso-comment > div.text-wrapper > div.text h3,
+.isso-comment > div.text-wrapper > div.text h4,
+.isso-comment > div.text-wrapper > div.text h5,
+.isso-comment > div.text-wrapper > div.text h6 {
+    font-size: 130%;
+    font-weight: bold;
+}
+.isso-comment > div.text-wrapper > div.textarea-wrapper .textarea {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 0 2px #888;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer {
+    font-size: 0.80em;
+    color: gray !important;
+    clear: left;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer a:hover {
+    color: #ff7519 !important;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer > a {
+    position: relative;
+    top: .2rem;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer > a + a {
+    padding-left: 1.1rem;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer .votes {
+    color: #4c4c4c;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer .upvote svg,
+.isso-comment > div.text-wrapper > .isso-comment-footer .downvote svg {
+    position: relative;
+    top: .2rem;
+}
+.isso-comment .isso-postbox {
+    margin-top: 0.8rem;
+}
+.isso-comment.isso-no-votes span.votes {
+    display: none;
+}
+
+.isso-postbox {
+    max-width: 68rem;
+    margin: 0 auto 2rem;
+}
+.isso-postbox > .form-wrapper {
+    display: block;
+    padding: 0;
+}
+.isso-postbox > .form-wrapper > .auth-section,
+.isso-postbox > .form-wrapper > .auth-section .post-action {
+    display: block;
+}
+.isso-postbox > .form-wrapper .textarea {
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.isso-postbox > .form-wrapper .textarea.placeholder {
+    color: #AAA;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.83rem;
+}
+
+#isso-thread .textarea:focus,
+#isso-thread .input-wrapper input:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+    color: #4c4c4c;
+}
+.isso-postbox > .form-wrapper > .auth-section .input-wrapper {
+    display: inline-block;
+    position: relative;
+    max-width: 25%;
+    margin: 0;
+}
+.isso-postbox > .form-wrapper > .auth-section .input-wrapper input {
+    padding: 0.3rem 0.625rem;
+    max-width: 100%;
+    background-color: #fff;
+    line-height: 1.4em;
+    margin: 0 1rem 0 0;
+    padding: 0.4rem 0.8rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.isso-postbox > .form-wrapper > .auth-section .post-action {
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+.isso-postbox > .form-wrapper > .auth-section .post-action > input {
+    cursor: pointer;
+    outline: 0;
+    background-color: #ff7519;
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+    -moz-transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+    -o-transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+    transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+    height: 2rem;
+    line-height: 2rem;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
+    font-size: 0.9rem;
+}
+
+.isso-postbox > .form-wrapper > .auth-section .post-action > input:hover {
+    -webkit-transform: translate(0, -1px);
+    -moz-transform: translate(0, -1px);
+    -ms-transform: translate(0, -1px);
+    -o-transform: translate(0, -1px);
+    transform: translate(0, -1px);
+    -moz-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+.isso-postbox > .form-wrapper > .auth-section .post-action > input:active {
+    transform: translate(0, 1px);
+    -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    border: 1px solid #ff7519;
+}
+
+@media screen and (max-width:600px) {
+
+    .isso-postbox > .form-wrapper > .auth-section .input-wrapper {
+        display: block;
+        max-width: 100%;
+        margin: 0 0 .3em;
+    }
+    .isso-postbox > .form-wrapper > .auth-section .input-wrapper input {
+        width: 100%;
+    }
+    .isso-postbox > .form-wrapper > .auth-section .post-action {
+        display: block;
+        float: none;
+        text-align: right;
+    }
+}
+
+/*************************accordion********************************/
 
 .tab {
   position: relative;
@@ -3732,12 +4127,12 @@ footer {
 .tab:last-of-type {
     border-bottom: 1px solid #d7d7d7;
 }
-input.accordian {
+input.accordion {
   position: absolute;
   display: none;
   z-index: -1;
 }
-label.accordian {
+label.accordion {
   position: relative;
   display: block;
   padding: 1rem 2rem 1rem 0;
@@ -3760,12 +4155,12 @@ label.accordian {
   margin: 0 1rem 1rem 1rem;
 }
 
-input.accordian:checked ~ .tab-content {
+input.accordion:checked ~ .tab-content {
   max-height: 100rem;
   overflow: visible;
 }
 
-label.accordian::after {
+label.accordion::after {
   margin-right: 0;
   content: "";
   position: absolute;
@@ -3783,10 +4178,10 @@ label.accordian::after {
   transition: border-bottom .1s, border-top .1s .1s;
 }
 
-input.accordian[type=checkbox]:checked + label::after {
+input.accordion[type=checkbox]:checked + label::after {
   transform: rotateX(180deg);
 }
-input.accordian[type=radio]:checked + label::after {
+input.accordion[type=radio]:checked + label::after {
   transform: rotateX(180deg);
 }
 
