@@ -113,3 +113,28 @@ From the GUI and CLI, there is an option to start mining. This is a great way to
         </section>
     
 </div>
+
+                        </div>
+               </div>
+               <!-- end full block-->
+               
+                <!-- full block-->
+               <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="info-block text-adapt">
+                            <div class="row center-xs">
+                                <div class="col">
+                                    <h2>Research</h2>
+                                </div>
+                            </div>
+                            <div class="row start-xs">
+                                <p>Researchers are encouraged to publish their research projects in the <a href="https://getmonero.org/resources/research-lab/">Monero Research Lab</a></p>. The Monero Research Lab does not have any credential requirements.
+                            </div>
+                        </div>
+                </div>
+                <!-- end right one-third block-->
+                
+                
+           </div>
+        </section>
+    
+</div>
