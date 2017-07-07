@@ -36,6 +36,10 @@
       url: https://bit.ac/
     - name: Premium investment and exchange services
       url: https://www.kaiserex.com/
+    - name: Magnetic Exchange
+      url: https://magneticexchange.com
+    - name: ArbitrCoin
+      url: https://arbitrcoin.com      
 - category: Block Explorers
   merchants:
     - name: ChainRadar
@@ -98,6 +102,8 @@
       url: https://www.californiafintech.org/plans/
     - name: Infield Loan Services - Atlanta, Construction Consulting, Contract review, Feasibility, Funds Escrow
       url: mailto:info@loandraw.com
+    - name: cloakVPN.com
+      url: https://cloakVPN.com
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
     - name: Esperanto lessons from Kaja
@@ -125,7 +131,7 @@
     - name: FlokiNET
       url: https://flokinet.is
     - name: Nerdzy Lawn Care
-      url: http://http://www.nerdzy.net
+      url: http://www.nerdzy.net
 - category: Goods
   merchants:
     - name: CryptoMercado - coffee and snacks
@@ -146,10 +152,12 @@
       url: http://investmentart.org/
     - name: Directvoltage
       url: http://directvoltage.com
+    - name: Synntech Gaming
+      url: https://synntechgaming.com
+    - name: Elise Hawkins Nutritional Therapy  
+      url: www.elisehawkinsnutritionaltherapy.com
 - category: Entertainment
   merchants:
-    - name: Crypto Kingdom
-      url: http://cryptokingdom.me
     - name: MoneroDice
       url: https://monerodice.net
     - name: SafeDice

@@ -30,7 +30,7 @@ title: "What Is Monero?"
                                 <h3>Monero transactions are confidential and untraceable.</h3>
                                 <p>The source of funds in every Monero transaction is untraceable, and the transaction amounts are confidential. Always-on privacy means that every Monero user's activity enhances the privacy of all other users.</p>
                                 <p>Because funds on the Monero blockchain are untraceable, they cannot become tainted by association with their previous owners. This means you can accept Monero without risk of the funds you've received being blocked or censored at currency exchanges or merchants.</p>
-                                <p>Monero's <a href="#">Kovri project</a> (coming soon) encrypts and routes transactions through the I2P Invisible Internet Project nodes to hide your IP address and protect you from network monitoring.</p>
+                                <p>Monero's <a href="https://getkovri.org/">Kovri project</a> (coming soon) encrypts and routes transactions through the I2P Invisible Internet Project nodes to hide your IP address and protect you from network monitoring.</p>
                             </div>
 
                         </div>
