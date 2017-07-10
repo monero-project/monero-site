@@ -1,6 +1,6 @@
 ---
 layout: static_page
-title: How to mine on a pool
+title: How to mine on a pool with xmr-stak-cpu
 ---
 # Selecting a pool
 
