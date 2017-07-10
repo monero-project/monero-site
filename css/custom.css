@@ -29,7 +29,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 400;
   font-style: normal;
   src: url('../fonts/Open-Sans-regular.eot');
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 800;
   font-style: normal;
   src: url('../fonts/Open-Sans-800.eot');
