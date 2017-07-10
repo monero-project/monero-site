@@ -55,8 +55,8 @@ index:
   page_title: "Monero - secure, private, untraceable"
   what_is_1: What is
   what_is_2: " ?"
-  what_is_orange_block: "Monero is a secure, private, untraceable currency. It is open-source and freely available to all."
-  what_is_text_block_1: "With Monero, you are your own bank. Only you control and are responsible for your funds, and your accounts and transactions are kept private from prying eyes."
+  what_is_orange_block: "Monero is a secure, private, untraceable currency that is open-source and freely available for anyone to use."
+  what_is_text_block_1: "With Monero, you are your own bank; You have complete control over your funds. With Monero, your accounts and transactions are kept private."
   what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below. If you'd like to try Monero for yourself the"
   what_is_text_block_3: "Getting Started"
   what_is_text_block_4: "section is an excellent launching point."
@@ -65,9 +65,9 @@ index:
   private: Private
   secure: Secure
   untraceable: Untraceable
-  private_text: "Monero uses a cryptographically sound system that allows you to send and receive funds without your @transactions being publicly visible on the @blockchain (the distributed ledger of transactions). This ensures that your purchases, receipts, and other transfers remain private by default."
-  untraceable_text: "By taking advantage of @ring-signatures, a special property of certain types of cryptography, Monero enables untraceable transactions. This means it's ambiguous which funds have been spent, and thus extremely unlikely that a transaction could be linked to particular user."
-  secure_text: "Using the power of a distributed peer-to-peer @consensus network, every transaction is cryptographically secured. Individual @accounts have a 25 word @mnemonic-seed displayed when created, which can be written down to back up the @account. Account files are encrypted with a passphrase to ensure they are worthless if stolen."
+  private_text: "Monero uses hidden amounts, origins and destinations of @transactions. This means that nobody knows how much you're sending in a transaction except you. This ensures that your purchases and other transfers remain private by default."
+  untraceable_text: "By taking advantage of @ring-signatures, Monero allows you to send and receive funds privately. Even though your transactions are publicly verifiable on the @blockchain, transactions use digital signatures that specify a group of signers such that the person verifying can’t tell which person actually produced the signature. Because it's ambiguous which funds have been spent, your transcation remains private and untraceable to you."
+  secure_text: "Monero uses a distributed peer-to-peer @consensus network and every transaction is cryptographically signed. Your coins are safely stored on the @blockchain and can be restored at any time with the use of a 25 word @mnemonic-seed on any computer with the Monero software. Wallet files are encrypted on disk and locked with a passphrase, rendering them useless if stolen."
   how_do_i_1: "How do I "
   how_do_i_2: " ?"
   get_started: get started
