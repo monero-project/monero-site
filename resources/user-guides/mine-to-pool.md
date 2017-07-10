@@ -14,7 +14,10 @@ decentralised.
 Just like pools, there are a lot of miners to choose from. The one that you
 should pick depends on the hardware you want to mine on. This guide will only
 use a CPU miner, and will be using
-[xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu).
+[xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). Alternatives include
+[wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) and
+[sgminer-gm](https://github.com/genesismining/sgminer-gm). However, their
+configuration is slightly different and will not be covered in this guide.
 
 ## For Windows Systems
 
