@@ -34,7 +34,7 @@ title: "User Guides"
 [Getting started with the CLI wallet](monero-wallet-cli.html)
 [How to make a view-only wallet](view_only.html)
 [How to prove payment](prove-payment.html)
-[Importing the Monero Blockchain from an outside source] (Importing_Blockchain.html)
+[Importing the Monero Blockchain from an outside source](Importing_Blockchain.html)
 
 </div>
             </div>
