@@ -17,10 +17,16 @@ At the end of this guide you will be able to sleep a little easier knowing that 
 
 ### Why Docker
 
-Docker is being used as it is the most well known and has the biggest chance to be already installed.
+[Docker](https://www.docker.com/) is being used as it is the most well known and has the biggest chance to be already installed.
 
 The container I an using is [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/) as per the name it is built on the [Alpine Linux](https://www.alpinelinux.org/) image.
 
+If you are interested in getting started with Docker, here are some really good starting references.
+* Arch Linux Wiki [Docker Page](https://wiki.archlinux.org/index.php/Docker)
+* Container Solutions [Security Cheat Sheet](http://container-solutions.com/content/uploads/2015/06/15.06.15_DockerCheatSheet_A2.pdf)
+* Digital Oceans [Dockerfile Howto](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images).
+
+For distribution specific installation please refer to the [Docker Docs](https://docs.docker.com/engine/installation/) website.
 
 ### Why XMRig
 
