@@ -78,6 +78,8 @@
       url: https://github.com/MalMen/PHP-Monero
     - name: Monero-PHP (PHP)
       url: https://github.com/PsychicCat/monero-php
+    - name: Monero Payments Library PHP
+      url: https://github.com/monero-integrations/monerophp
 - category: Tools
   merchants:
     - name: nestorgames
