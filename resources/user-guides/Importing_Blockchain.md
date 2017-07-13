@@ -7,11 +7,11 @@ title: Importing the Monero Blockchain from an outside source
 
 ### Step 1
 
-Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw ; you can skip this step if you are importing the Blockchain from another source.
+Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the Blockchain from another source.
 
 ### Step 2
 
-Find the path of your Monero wallet (the folder where you extracted your wallet). for example mine is.
+Find the path of your Monero wallet (the folder where you extracted your wallet). For example mine is:
 
 `D:\monero-gui-0.10.3.1`
 
@@ -19,7 +19,7 @@ Your path may be different depending on where you decided to download your walle
 
 ### Step 3
 
-Find the path of your downloaded Blockchain for example mine was. 
+Find the path of your downloaded Blockchain for example mine was: 
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
@@ -31,11 +31,11 @@ Open a Command Prompt window. You can do this by pressing the Windows key + R, a
 
 ### Step 5
 
-Now you need to navigate using the CMD window to the path of your Monero wallet. You can do this by typing. 
+Now you need to navigate using the CMD window to the path of your Monero wallet. You can do this by typing:
 
 `cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE` 
 
-It should look something like.
+It should look something like:
 
 `cd D:\monero-gui-0.10.3.1`
 
@@ -43,7 +43,7 @@ If your Monero wallet is on another drive you can use `DriveLetter:` for example
 
 ### Step 6
 
-Now type in your command prompt window :
+Now type in your command prompt window:
 
 `monero-blockchain-import --verify 1 --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
