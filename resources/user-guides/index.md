@@ -34,6 +34,7 @@ title: "User Guides"
 [Getting started with the CLI wallet](monero-wallet-cli.html)
 [How to make a view-only wallet](view_only.html)
 [How to prove payment](prove-payment.html)
+[Restoring wallet from keys](restore_from_keys.html)
 
 </div>
             </div>
