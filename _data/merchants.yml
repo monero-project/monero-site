@@ -40,6 +40,8 @@
       url: https://magneticexchange.com
     - name: ArbitrCoin
       url: https://arbitrcoin.com      
+    - name: Anycoindirect
+      url: https://anycoindirect.eu/
 - category: Block Explorers
   merchants:
     - name: ChainRadar
@@ -138,6 +140,10 @@
       url: http://www.nerdzy.net
     - name: Njalla - privacy-aware domain registration
       url: https://njal.la/
+    - name: Elise Hawkins Nutritional Therapy  
+      url: http://www.elisehawkinsnutritionaltherapy.com
+    - name: Koddos - hosting and DDoS protection services
+      url: http://koddos.net
 - category: Goods
   merchants:
     - name: CryptoMercado - coffee and snacks
@@ -164,6 +170,14 @@
       url: www.elisehawkinsnutritionaltherapy.com
     - name: SilverRound.com - Gold and Silver Dealer
       url: https://silverround.com/
+    - name: Bitgild - Gold and Silver
+      url: http://www.bitgild.com
+    - name: Ivan Multimedia Productions
+      url: http://ivanmultimediaproductions.webs.com
+    - name: Celestion Shop
+      url: https://www.celestionshop.com/
+    - name: Molecule Store
+      url: https://moleculestore.com
 - category: Entertainment
   merchants:
     - name: MoneroDice
