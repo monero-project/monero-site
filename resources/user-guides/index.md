@@ -69,6 +69,8 @@ title: "User Guides"
 
 User Guides for Mining coming soon.
 
+[Mining with Docker and XMRig](mining_with_xmrig_and_docker.html)
+
 </div>
             </div>
         </div>
