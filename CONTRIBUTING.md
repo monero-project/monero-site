@@ -1,3 +1,12 @@
+# General Guidelines
+
+- Commits should be [atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) and diffs should be easy to read. Please try to not mix formatting fixes with non-formatting commits
+- The body of the pull request should:
+  * contain an accurate description of what the patch does
+  * provide justification/reasoning for the patch (when appropriate)
+  * include references to any discussions such as other tickets or chats on IRC
+- If a particular commit references another issue, please add a reference. For example "See #123", or "Fixes #123". This will help us resolve tickets when we merge into `master`
+
 # [Code of Conduct (22/C4.1)](http://rfc.zeromq.org/spec:22)
 
 ## License
