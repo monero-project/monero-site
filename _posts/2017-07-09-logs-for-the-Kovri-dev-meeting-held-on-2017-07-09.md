@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logs for the Kovri Dev Meeting Held on 2017-07-10
+title: Logs for the Kovri Dev Meeting Held on 2017-07-09
 summary: Brief review of what has been completed since last meeting, discussion of meta issues, and code & open tickets discussion
 tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony

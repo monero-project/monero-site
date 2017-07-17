@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview and Logs for the Dev Meeting Held on 2017-07-10
+title: Overview and Logs for the Dev Meeting Held on 2017-07-09
 summary: Discussion of open PRs and issues, 0MQ, reimagining the FFS, 0MQ, and miscellaneous
 tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*July 10th, 2017*  
+*July 9th, 2017*  
 
 # Overview  
 
