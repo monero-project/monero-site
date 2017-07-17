@@ -47,7 +47,7 @@
     - name: MoneroBlocks
       url: http://moneroblocks.info
     - name: MoneroExplorer
-      url: https://explorer.xmr.my/
+      url: https://moneroexplorer.com
     - name: MoneroHash Explorer
       url: https://monerohash.com/explorer/
     - name: xmrchain.net
