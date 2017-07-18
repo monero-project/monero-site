@@ -67,7 +67,7 @@ title: "User Guides"
                 </div>
 <div class="row start-xs text-center" markdown="1">
 
-User Guides for Mining coming soon.
+[How to solo mine with the GUI](solo_mine_GUI.html)
 
 </div>
             </div>
