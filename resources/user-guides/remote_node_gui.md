@@ -12,4 +12,4 @@ After you enter your password for your wallet, you will see a pop up that will g
 sent to the "Settings" page in the GUI. At this point you should see two text boxes to the right of a label that says "Daemon address". In the first box (the on to the left) you need to enter the address of the node that you want to
 connect to. This address might look like `node.monero.org` or it could look like any old ip address. The smaller box to the right is where you enter the node's port. The default port is `18081` but if you are using a random node the port that is used will vary.
 ### Your screen should look a bit like this
-<img src="http://getmonero.org/resources/user-guides/png/remote-node-screenshot.png">
+<img src="/resources/user-guides/png/remote-node-screenshot.png" style="width: 600px;">
