@@ -85,6 +85,12 @@ The Monero community is diverse and varied. We come from all over, but we defini
                                     <p>This is the place for mining questions and discussion.</p>
                                 </div>
                             </div>
+                            <div class="row irc">
+                                <div class="col-md-4">
+                                    <a href="irc://chat.freenode.net/#monero-research-lab">#monero-research-lab</a>
+                                    <p>Research into financial privacy with cryptocurrency.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
