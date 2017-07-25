@@ -13,4 +13,4 @@ sent to the "Settings" page in the GUI. At this point you should see two text bo
 connect to. This address might look like `node.monero.org` or it could look like any old ip address. The smaller box to the right is where you enter the node's port. The default port is `18081` but if you are using a random node the port that is used will vary.
 
 ### Your screen should look a bit like this
-<img src="/resources/user-guides/png/remote_node/remote-node-screenshot.png" style="width: 600px;">
+<img src="/resources/user-guides/png/remote_node/remote-node-screenshot.png" width="600">
