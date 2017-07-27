@@ -1471,37 +1471,37 @@ a.btn-link:hover, a.btn-link.active, a.btn-link:focus {
 
 a.btn-link:hover span.icon-windows, a.btn-link:focus span.icon-windows, a.btn-link.active span.icon-windows {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -3rem 0;
+    background-position: -48px 0;
 }
 
 .btn-link span.icon-linux, span.icon-linux {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: 0 -3rem;
+    background-position: 0 -48px;
 }
 
 a.btn-link:hover span.icon-linux, a.btn-link:focus span.icon-linux, a.btn-link.active span.icon-linux {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -3rem -3rem;
+    background-position: -48px -48px;
 }
 
 .btn-link span.icon-apple {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: 0 -6rem;
+    background-position: 0 -96px;
 }
 
 a.btn-link:hover span.icon-apple, a.btn-link:focus span.icon-apple, a.btn-link.active span.icon-apple {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -3rem -6rem;
+    background-position: -48px -96px;
 }
 
 .btn-link span.icon-blockchain {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: 0 -9rem;
+    background-position: 0 -144px;
 }
 
 a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.btn-link.active span.icon-blockchain {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -3rem -9rem;
+    background-position: -48px -144px;
 }
 
 .btn-fixed {
@@ -2544,32 +2544,32 @@ footer {
 
 .download-platforms h2 span.icon-windows {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -6rem 0;
+    background-position: -96px 0;
 }
 
 .download-platforms h2 span.icon-apple {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -6rem -6rem;
+    background-position: -96px -96px;
 }
 
 .download-platforms h2 span.icon-linux{
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -6rem -3rem;
+    background-position: -96px -48px;
 }
 
 .download-platforms h2 span.icon-arm {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: 0 -11rem;
+    background-position: 0 -176px;
 }
 
 .download-platforms h2 span.icon-freebsd {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: 0 -13rem;
+    background-position: 0 -208px;
 }
 
 .download-platforms h2 span.icon-github {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: 0 -15rem;
+    background-position: 0 -240px;
 }
 
 .downloads a.arrow-up {
@@ -3187,42 +3187,42 @@ footer {
 
 .hangouts .social-icon.twitter {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -8rem -3rem;
+    background-position: -128px -48px;
 }
 
 .hangouts .social-icon.twitter:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -11rem -3rem;
+    background-position: -176px -48px;
 }
 
 .hangouts .social-icon.reddit {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -8rem -6rem;
+    background-position: -128px -76px;
 }
 
 .hangouts .social-icon.reddit:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -11rem -6rem;
+    background-position: -176px -76px;
 }
 
 .hangouts .social-icon.facebook {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -8rem 0;
+    background-position: -128px 0;
 }
 
 .hangouts .social-icon.facebook:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -11rem 0;
+    background-position: -176px 0;
 }
 
 .hangouts .social-icon.github {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -8rem -9rem;
+    background-position: -128px -144px;
 }
 
 .hangouts .social-icon.github:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -11rem -9rem;
+    background-position: -176px -144px;
 }
 
 .hangouts .irc .col-md-4 {
