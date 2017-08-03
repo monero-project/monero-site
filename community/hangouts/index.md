@@ -7,7 +7,7 @@ The Monero community is diverse and varied. We come from all over, but we defini
 </div>
 
 <div class="hangouts">
-       
+
     <section class="container">   
         <ul class="row center-xs">
             <li>
@@ -24,7 +24,7 @@ The Monero community is diverse and varied. We come from all over, but we defini
             </li>
         </ul>
     </section>
-   
+
     <section class="container">
           <div class="row">
                 <!-- left two-thirds block-->
@@ -33,18 +33,16 @@ The Monero community is diverse and varied. We come from all over, but we defini
                         <div class="info-block">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>Chat Relays</h2>
+                                    <h2>Slack</h2>
                                 </div>
                             </div>
                             <div class="row center-xs">
-                                <p>Not everyone likes to get on the IRC, and for those people we have other programs that act as relays to these channels. They've also got a few channels of their own.</p>
+                                <p>Not everyone likes to get on the IRC, and for those people we have Slack with relays to IRC channels.
+                                It has also got a few channels of its own.</p>
                             </div>
                             <div class="row relays around-xs">
-                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="col-md-8 col-sm-8 col-xs-8">
                                     <p><a href="https://monero.slack.com/" class="btn-link btn-fixed">Slack</a></p>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <p><a href="https://telegram.me/bitmonero" class="btn-link btn-fixed">Telegram</a></p>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +87,7 @@ The Monero community is diverse and varied. We come from all over, but we defini
                     </div>
                 </div>
                 <!-- end left two-thirds block-->
-                
+
                 <!-- right one-third block-->
                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="info-block">
@@ -114,5 +112,5 @@ The Monero community is diverse and varied. We come from all over, but we defini
                <!-- end right one-third block-->
            </div>
         </section>
-    
+
 </div>
