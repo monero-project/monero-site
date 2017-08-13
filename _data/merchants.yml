@@ -55,7 +55,9 @@
 - category: Payment Gateways
   merchants:  
     - name: Living Room of Satoshi
-      url: https://www.livingroomofsatoshi.com/?sc=xmr  
+      url: https://www.livingroomofsatoshi.com/?sc=xmr
+    - name: WordPress Monero-Integrations (Plugin)
+      url: https://github.com/monero-integrations/monerowp/releases
     - name: Monero Merchants
       url: https://monero-merchants.com
     - name: Paybee (Private Beta)
