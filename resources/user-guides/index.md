@@ -34,6 +34,7 @@ title: "User Guides"
 [Getting started with the CLI wallet](monero-wallet-cli.html)
 [How to make a view-only wallet](view_only.html)
 [How to prove payment](prove-payment.html)
+[How to connect to a remote node within GUI wallet](remote_node_gui.html)
 
 </div>
             </div>
