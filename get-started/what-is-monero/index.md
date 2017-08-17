@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "What Is Monero?"
+title: "What Is Monero (XMR)?"
 ---
 
 <div class="site-wrap">
@@ -15,8 +15,8 @@ title: "What Is Monero?"
                         <div class="row middle-xs info-block-row private">
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12  why-text">
                                 <h3>Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.</h3>
-                                <p>Almost all cryptocurrencies (including Bitcoin and Ethereum) are transparent. They reveal your entire transaction history to the world.</p>
-                                <p>Monero uses unbreakable cryptography to ensure that no one can see how much money you have or where you spend it, even if they know your wallet address.</p>
+                                <p>Most existing cryptocurrencies, including Bitcoin and Ethereum, have transparent blockchains, meaning that transactions are openly verifiable and traceable by anyone in the world. Furthermore, sending and receiving addresses for these transactions may potentially be linkable to a person's real-world identity. </p>
+                                <p>Monero has an obfuscated blockchain. It uses unbreakable cryptography to shield sending and receiving addresses, as well as transacted amounts.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                                 <img src="/img/crypto-lock.png" alt="Encrypted lock" class="main-icon">
@@ -28,9 +28,9 @@ title: "What Is Monero?"
                             </div>
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
                                 <h3>Monero transactions are confidential and untraceable.</h3>
-                                <p>The source of funds in every Monero transaction is untraceable, and the transaction amounts are confidential. Always-on privacy means that every Monero user's activity enhances the privacy of all other users.</p>
-                                <p>Because funds on the Monero blockchain are untraceable, they cannot become tainted by association with their previous owners. This means you can accept Monero without risk of the funds you've received being blocked or censored at currency exchanges or merchants.</p>
-                                <p>Monero's <a href="https://getkovri.org/">Kovri project</a> (coming soon) encrypts and routes transactions through the I2P Invisible Internet Project nodes to hide your IP address and protect you from network monitoring.</p>
+                                <p>Every Monero transaction, by default, obfuscates sending and receiving addresses as well as transacted amounts. This always-on privacy means that every Monero user's activity enhances the privacy of all other users, unlike selectively transparent cryptocurrencies (e.g. Z-Cash).</p>
+                                <p>Monero is fungible. By virtue of obfuscation, Monero cannot become tainted through participation in previous transactions. This means Monero will always be accepted without the risk of censorship.</p>
+                                <p>The Kovri Project <a href="https://getkovri.org/"> (in development) will encrypt and route transactions via I2P Invisible Internet Project nodes. This will obfuscate a transactor's IP address and provide additional protection against network monitoring.<
                             </div>
 
                         </div>
