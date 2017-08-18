@@ -34,7 +34,7 @@
       url: https://www.kraken.com/
     - name: BIT.AC
       url: https://bit.ac/
-    - name: Premium investment and exchange services
+    - name: Kaiserex
       url: https://www.kaiserex.com/
     - name: Magnetic Exchange
       url: https://magneticexchange.com
@@ -47,7 +47,7 @@
     - name: MoneroBlocks
       url: http://moneroblocks.info
     - name: MoneroExplorer
-      url: https://explorer.xmr.my/
+      url: https://moneroexplorer.com/
     - name: MoneroHash Explorer
       url: https://monerohash.com/explorer/
     - name: xmrchain.net
@@ -60,6 +60,8 @@
       url: https://monero-merchants.com
     - name: Paybee (Private Beta)
       url: https://payb.ee/
+    - name: Monero WooCommerce Extension (PHP)
+      url: https://github.com/monero-integrations/monerowp
 - category: Libraries and Helpers
   merchants:
     - name: monero-nodejs (Node.js)
@@ -78,6 +80,8 @@
       url: https://github.com/MalMen/PHP-Monero
     - name: Monero-PHP (PHP)
       url: https://github.com/PsychicCat/monero-php
+    - name: Monero Payments Library (PHP)
+      url: https://github.com/monero-integrations/monerophp
 - category: Tools
   merchants:
     - name: nestorgames
@@ -132,6 +136,8 @@
       url: https://flokinet.is
     - name: Nerdzy Lawn Care
       url: http://www.nerdzy.net
+    - name: Njalla - privacy-aware domain registration
+      url: https://njal.la/
 - category: Goods
   merchants:
     - name: CryptoMercado - coffee and snacks
@@ -156,6 +162,8 @@
       url: https://synntechgaming.com
     - name: Elise Hawkins Nutritional Therapy  
       url: www.elisehawkinsnutritionaltherapy.com
+    - name: SilverRound.com - Gold and Silver Dealer
+      url: https://silverround.com/
 - category: Entertainment
   merchants:
     - name: MoneroDice
