@@ -120,7 +120,7 @@ Kovri is an I2P router written in C++. I2P is a hidden network like Tor with sev
     
 <div class="tab-content" markdown="1">
 
-Fungibility is a simple property of money such that there are no differences between two amounts of the same value. If two people exchanged a 10 and two 5’s, then no one would lose out. However, let’s suppose that everyone knows the 10 was previously used in a ransomware attack. Is the other person still going to make the trade? Probably not, even if the person with the 10 is not the one who wrote the ransomware. This is a problem, wince the receiver of money needs to constantly check the money they are receiving to not end up with tainted coins. Monero is fungible, which means people do not need to go through this effort.
+Fungibility is a simple property of money such that there are no differences between two amounts of the same value. If two people exchanged a 10 and two 5’s, then no one would lose out. However, let’s suppose that everyone knows the 10 was previously used in a ransomware attack. Is the other person still going to make the trade? Probably not, even if the person with the 10 has no connection with the ransomware. This is a problem, since the receiver of money needs to constantly check the money they are receiving to not end up with tainted coins. Monero is fungible, which means people do not need to go through this effort.
 </div>
 
 </div>
