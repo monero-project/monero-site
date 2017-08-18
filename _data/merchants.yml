@@ -34,7 +34,7 @@
       url: https://www.kraken.com/
     - name: BIT.AC
       url: https://bit.ac/
-    - name: Premium investment and exchange services
+    - name: Kaiserex
       url: https://www.kaiserex.com/
     - name: Magnetic Exchange
       url: https://magneticexchange.com
@@ -47,7 +47,7 @@
     - name: MoneroBlocks
       url: http://moneroblocks.info
     - name: MoneroExplorer
-      url: https://explorer.xmr.my/
+      url: https://moneroexplorer.com/
     - name: MoneroHash Explorer
       url: https://monerohash.com/explorer/
     - name: xmrchain.net
