@@ -67,7 +67,7 @@ title: "User Guides"
                 </div>
 <div class="row start-xs text-center" markdown="1">
 
-User Guides for Mining coming soon.
+[How to mine on a pool with xmr-stak-cpu](mine-to-pool.html)
 
 </div>
             </div>
