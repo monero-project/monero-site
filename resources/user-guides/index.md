@@ -69,6 +69,8 @@ title: "User Guides"
 
 [How to mine on a pool with xmr-stak-cpu](mine-to-pool.html)
 
+[Mining with Docker and XMRig](mining_with_xmrig_and_docker.html)
+
 </div>
             </div>
         </div>
