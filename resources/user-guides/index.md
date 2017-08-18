@@ -16,6 +16,7 @@ title: "User Guides"
 
 [Monero Tools](monero_tools.html)
 [How to make an offline backup](Offline_Backup.html)
+[Importing the Monero Blockchain from an outside source](Importing_Blockchain.html)
 [How to run a node on VPS](vps_run_node.html)
 [Securely purchasing and storing Monero](securely_purchase.html)
 
@@ -34,7 +35,7 @@ title: "User Guides"
 [Getting started with the CLI wallet](monero-wallet-cli.html)
 [How to make a view-only wallet](view_only.html)
 [How to prove payment](prove-payment.html)
-[Importing the Monero Blockchain from an outside source](Importing_Blockchain.html)
+[Restoring wallet from keys](restore_from_keys.html)
 
 </div>
             </div>
@@ -68,7 +69,9 @@ title: "User Guides"
                 </div>
 <div class="row start-xs text-center" markdown="1">
 
-User Guides for Mining coming soon.
+[How to mine on a pool with xmr-stak-cpu](mine-to-pool.html)
+
+[Mining with Docker and XMRig](mining_with_xmrig_and_docker.html)
 
 </div>
             </div>
