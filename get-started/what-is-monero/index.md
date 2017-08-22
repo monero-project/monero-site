@@ -14,7 +14,7 @@ title: "What Is Monero?"
                         </div>
                         <div class="row middle-xs info-block-row private">
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12  why-text">
-                                <h3>Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.</h3>
+                                <h3>Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions</h3>
                                 <p>Almost all cryptocurrencies (including Bitcoin and Ethereum) are transparent. They reveal your entire transaction history to the world.</p>
                                 <p>Monero uses unbreakable cryptography to ensure that no one can see how much money you have or where you spend it, even if they know your wallet address.</p>
                             </div>
@@ -27,7 +27,7 @@ title: "What Is Monero?"
                                 <img src="/img/monero-classified.png" alt="Classified document" class="main-icon">
                             </div>
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                                <h3>Monero transactions are confidential and untraceable.</h3>
+                                <h3>Monero transactions are confidential and untraceable</h3>
                                 <p>The source of funds in every Monero transaction is untraceable, and the transaction amounts are confidential. Always-on privacy means that every Monero user's activity enhances the privacy of all other users.</p>
                                 <p>Because funds on the Monero blockchain are untraceable, they cannot become tainted by association with their previous owners. This means you can accept Monero without risk of the funds you've received being blocked or censored at currency exchanges or merchants.</p>
                                 <p>Monero's <a href="https://getkovri.org/">Kovri project</a> (coming soon) encrypts and routes transactions through the I2P Invisible Internet Project nodes to hide your IP address and protect you from network monitoring.</p>
@@ -36,7 +36,7 @@ title: "What Is Monero?"
                         </div>
                         <div class="row middle-xs info-block-row">
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                                <h3>Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.</h3>
+                                <h3>Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent</h3>
                                 <p>Over <a href="https://www.openhub.net/p/monero" target="_blank">240 developers</a> have contributed to the Monero project, including 30 core developers. Forums and chat channels are welcoming and active.</p>
                                 <p>Monero's Research Lab, Core Development Team and Community Developers are constantly pushing the frontier of what is possible with cryptocurrency privacy and security.</p>
                                 <p>Monero is not a corporation. It is developed by cryptography and distributed systems experts from all over the world that donate their time or are funded by community donations. This means that Monero can't be shut down by any one country and is not constrained by any particular legal jurisdiction.</p>
@@ -50,7 +50,7 @@ title: "What Is Monero?"
                                 <img src="/img/monero-electronic-cash.png" alt="Electronic cash" class="main-icon">
                             </div>
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                                <h3>Monero is electronic cash that allows fast, inexpensive payments to and from anywhere in the world.</h3>
+                                <h3>Monero is electronic cash that allows fast, inexpensive payments to and from anywhere in the world</h3>
                                 <p>There are no multi-day holding periods and no risk of fraudulent chargebacks. It is safe from ‘capital controls’ - these are measures that restrict the flow of traditional currencies, sometimes to an extreme degree, in countries experiencing economic instability.</p>
                             </div>
                         </div>
