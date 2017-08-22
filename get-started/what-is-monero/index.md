@@ -16,7 +16,7 @@ title: "What Is Monero?"
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12  why-text">
                                 <h3>Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions</h3>
                                 <p>Almost all cryptocurrencies (including Bitcoin and Ethereum) are transparent. They reveal your entire transaction history to the world.</p>
-                                <p>Monero uses unbreakable cryptography to ensure that no one can see how much money you have or where you spend it, even if they know your wallet address.</p>
+                                <p>Monero uses strong cryptography to ensure that no one can see how much money you have or where you spend it, even if they know your wallet address.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                                 <img src="/img/crypto-lock.png" alt="Encrypted lock" class="main-icon">
