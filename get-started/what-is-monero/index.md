@@ -16,7 +16,7 @@ title: "What Is Monero (XMR)?"
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12  why-text">
                                 <h3>Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.</h3>
                                 <p>Most existing cryptocurrencies, including Bitcoin and Ethereum, have transparent blockchains, meaning that transactions are openly verifiable and traceable by anyone in the world. Furthermore, sending and receiving addresses for these transactions may potentially be linkable to a person's real-world identity. </p>
-                                <p>Monero has an obfuscated blockchain. It uses unbreakable cryptography to shield sending and receiving addresses, as well as transacted amounts.</p>
+                                <p>Monero uses unbreakable cryptography to shield sending and receiving addresses, as well as transacted amounts.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                                 <img src="/img/crypto-lock.png" alt="Encrypted lock" class="main-icon">
@@ -30,7 +30,7 @@ title: "What Is Monero (XMR)?"
                                 <h3>Monero transactions are confidential and untraceable.</h3>
                                 <p>Every Monero transaction, by default, obfuscates sending and receiving addresses as well as transacted amounts. This always-on privacy means that every Monero user's activity enhances the privacy of all other users, unlike selectively transparent cryptocurrencies (e.g. Z-Cash).</p>
                                 <p>Monero is fungible. By virtue of obfuscation, Monero cannot become tainted through participation in previous transactions. This means Monero will always be accepted without the risk of censorship.</p>
-                                <p>The Kovri Project <a href="https://getkovri.org/"> (in development) will encrypt and route transactions via I2P Invisible Internet Project nodes. This will obfuscate a transactor's IP address and provide additional protection against network monitoring.<
+                                <p>The Kovri Project <a href="https://getkovri.org/"> ,currently in development, will route and encrypt transactions via I2P Invisible Internet Project nodes. This will obfuscate a transactor's IP address and provide further protection against network monitoring.<
                             </div>
 
                         </div>
