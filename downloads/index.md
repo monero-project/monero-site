@@ -7,7 +7,7 @@ title: "Downloads"
 
 <div class="container description" markdown="1">
 
-If you need help choosing the correct application, please click [here](#) for a quick user-guide, then select the appropriate release for your operating system below.
+If you need help choosing the correct application, please click [here](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) for a quick answer, then select the appropriate release for your operating system below.
 Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
 
 </div>
