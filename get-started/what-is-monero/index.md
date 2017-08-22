@@ -16,7 +16,7 @@ title: "What Is Monero (XMR)?"
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12  why-text">
                                 <h3>Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.</h3>
                                 <p>Most existing cryptocurrencies, including Bitcoin and Ethereum, have transparent blockchains, meaning that transactions are openly verifiable and traceable by anyone in the world. Furthermore, sending and receiving addresses for these transactions may potentially be linkable to a person's real-world identity. </p>
-                                <p>Monero uses unbreakable cryptography to shield sending and receiving addresses, as well as transacted amounts.</p>
+                                <p>Monero uses cryptography to shield sending and receiving addresses, as well as transacted amounts.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                                 <img src="/img/crypto-lock.png" alt="Encrypted lock" class="main-icon">
