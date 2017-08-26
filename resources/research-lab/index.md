@@ -50,7 +50,7 @@ title: "Monero Research Lab"
                                     allowing for this attack, describes the solution initially put forth by Rafal Freeman
                                     from Tigusoft.pl and subsequently by the CryptoNote team, describes the current
                                     fix in the Monero code base, and elaborates upon exactly what the offending
-                                    blcok did to the network. This research bulletin has not undergone peer review,
+                                    block did to the network. This research bulletin has not undergone peer review,
                                     and reflects only the results of internal investigation.<br>
                                     <br>
                                     <a target="_blank" href="https://lab.getmonero.org/pubs/MRL-0002.pdf">Read Paper</a></p>
@@ -79,7 +79,7 @@ title: "Monero Research Lab"
                               <div class="tab-content">
                                 <p><strong>Abstract:</strong> We identify several blockchain analysis attacks available to degrade the
 untraceability of the CryptoNote 2.0 protocol. We analyze possible solutions,
-discuss the relative merits and drawbakcs to those solutions, and recommend
+discuss the relative merits and drawbacks to those solutions, and recommend
 improvements to the Monero protocol that will hopefully provide long-term
 resistance of the cryptocurrency against blockchain analysis. Our recommended
 improvements to Monero include a protocol-level network-wide minimum mix-in

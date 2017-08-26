@@ -16,7 +16,7 @@ The Payment ID is usually used to identify transactions to merchants and exchang
 Since the 0.9 Hydrogen Helix version, the Payment IDs can be encrypted and embedded in a payment address. The payment ID's of this type should be 64-bits and are encrypted with a random one-time key known only to the sender and receiver.
 
 ### Creating a Payment ID
-It is recommented to use the official wallet's `integrated_address` command to automatically generate Integrated Addresses that contain Compact Payment ID's. If you want to use the command line, you can generate Payment ID's as follows:
+It is recommended to use the official wallet's `integrated_address` command to automatically generate Integrated Addresses that contain Compact Payment ID's. If you want to use the command line, you can generate Payment ID's as follows:
 
 Creating a compact Payment ID for an Integrated Address:
 ```# openssl rand -hex 8```

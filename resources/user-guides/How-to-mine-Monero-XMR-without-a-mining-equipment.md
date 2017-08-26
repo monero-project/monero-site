@@ -34,7 +34,7 @@ You can find a list of Monero pools [here](https://bitcointalk.org/index.php?top
 
 Note that you will probably have to register an account at
 selected pool as well. The pool will provide you with all the information you need.
-You can save your favourite pools at [this page](https://www.nicehash.com/?p=managepools).
+You can save your favorite pools at [this page](https://www.nicehash.com/?p=managepools).
 
 ### **Step 4:** Create new order and start mining
 

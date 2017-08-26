@@ -56,7 +56,7 @@ The Monero Project takes many precautions to ensure the files available for down
 
 ### Sponsors and Advertisers are Not Endorsed
 
-Though we seek to partner with quality companies, we are not responsible for the claims or representations made by sponsors and advertisers. The Monero Project does not review, endorse or recommend the products or services of any company mentioned on our site. We will not be liable in any way for damages of any kind resulting out of the misuse of any personal information or data submitted by you to an sponsor or advertiser.
+Though we seek to partner with quality companies, we are not responsible for the claims or representations made by sponsors and advertisers. The Monero Project does not review, endorse or recommend the products or services of any company mentioned on our site. We will not be liable in any way for damages of any kind resulting out of the misuse of any personal information or data submitted by you to a sponsor or advertiser.
 
 ### Offsite Links
 
@@ -164,7 +164,7 @@ The Monero Project uses Google Analytics to collect usage and visitor data for t
 
 The Google Analytics data is used to provide statistics on the website and help us to improve the content and the information flow.
 
-Server logs are used to analyse errors and diagnose requests to dead links. A portion of the server logs are used to gather statistics on Monero downloads in order to help us better understand our user's needs.
+Server logs are used to analyze errors and diagnose requests to dead links. A portion of the server logs are used to gather statistics on Monero downloads in order to help us better understand our user's needs.
 </div>
 </div>
             </div>

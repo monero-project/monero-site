@@ -37,7 +37,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>One of the common ways to mine Monero is to join a pool, although <a href="">mining solo is possible and encouraged.</a> A Monero community member has put together a <a href="http://moneropools.com/">list of trusted Monero pools</a> for you to consider. Remember, join a smaller pool to spread the hashes around!</p>
+                       <p>One of the common ways to mine Monero is to join a pool, although <a href="">mining solo is possible and encouraged.</a> A Monero community member has put together a <a href="http://moneropools.com/">list of trusted Monero pools</a> for you to consider. Remember; join a smaller pool to spread the hashes around!</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Some people choose to invest in specalized mining hardware in order to increase their mining hashrate. A Monero community member has decided to put together a <a href="http://monerobenchmarks.info/">site for the benchmarks of different GPUs</a>. Results may vary. Feel free to contribute</p>
+                       <p>Some people choose to invest in specialized mining hardware in order to increase their mining hashrate. A Monero community member has decided to put together a <a href="http://monerobenchmarks.info/">site for the benchmarks of different GPUs</a>. Results may vary. Feel free to contribute</p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Depending on your hardware, there are various mining programs available for use. You might consider trying different ones and seeing how it affects you hasrate. Please note, that some miners also have developer fees.</p>
+                       <p>Depending on your hardware, there are various mining programs available for use. You might consider trying different ones and seeing how it affects you hashrate. Please note, that some miners also have developer fees.</p>
                     </div>
                     <div class="row miners">
                         <div class="col-md-4 col-xs-12 center-xs">

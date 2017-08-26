@@ -25,7 +25,7 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
  
 - Boot into your bootable OS, install the dependencies if necessary
  
-- Copy the Monero binaries to to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)
+- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)
  
 - Don't run the Monero daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account
  

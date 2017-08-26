@@ -34,7 +34,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Before reading further, it is important to know that there is a large, supportive community that can assist if your run into trouble. If you have questions about anything, no matter how large or small, don't hesitate to ask. We chill in a lot of places, so see our <a href="/community/hangouts/">Hangouts page</a> to track us down. Remember, there are no stupid questions, and we are all learning together.</p>
+                        <p>Before reading further, it is important to know that there is a large, supportive community that can assist if you run into trouble. If you have questions about anything, no matter how large or small, don't hesitate to ask. We chill in a lot of places, so see our <a href="/community/hangouts/">Hangouts page</a> to track us down. Remember, there are no stupid questions, and we are all learning together.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>5. Transfering Monero</h2>
+                            <h2>5. Transferring Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">

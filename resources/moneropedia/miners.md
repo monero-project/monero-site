@@ -13,7 +13,7 @@ Monero is powered strictly by Proof of Work. It employs a mining algorithm that 
 
 The smart mining feature allows transparent CPU mining on the user's computer, far from the de facto centralization of mining farms and pool mining, pursuing Satoshi Nakamoto's original vision of a true P2P currency. 
 
-As of June 2017, botnets made of hacked computers account for a not-insignificant portion of the miners on the Monero network.  This is due to the profitibility of mining on CPUs via the @CryptoNight algorithm.
+As of June 2017, botnets made of hacked computers account for a not-insignificant portion of the miners on the Monero network.  This is due to the profitability of mining on CPUs via the @CryptoNight algorithm.
 
 
 

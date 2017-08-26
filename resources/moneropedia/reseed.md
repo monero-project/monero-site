@@ -8,7 +8,7 @@ summary: "The method of which Kovri uses to bootstrap into the I2P network"
 
 ### The Basics
 
-When you start @Kovri for the first time (or if its been offline for a long time), @Kovri will need a list of peers to connect to so it can [bootstrap](https://en.wikipedia.org/wiki/Bootstrap) into the @I2P network. @Kovri gets these peers from a special file stored on a reseed server. On this file are all the various pieces of information @Kovri needs in order to connect with @I2P peers.
+When you start @Kovri for the first time (or if it's been offline for a long time), @Kovri will need a list of peers to connect to so it can [bootstrap](https://en.wikipedia.org/wiki/Bootstrap) into the @I2P network. @Kovri gets these peers from a special file stored on a reseed server. On this file are all the various pieces of information @Kovri needs in order to connect with @I2P peers.
 
 ### In-depth information
 

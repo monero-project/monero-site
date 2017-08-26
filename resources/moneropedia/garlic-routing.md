@@ -25,7 +25,7 @@ As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered 
 >during the free haven brainstorming, there was a moment where we described a routing mechanism, and somebody said "garlic routing!", and everybody laughed.
 so we for sure thought we had invented the name, at the time.
 
-*Note: permission to use the aforementioned quotes were granted by Nick Mathewson and Roger Dingledine*
+*Note: permission to use the aforementioned quotes was granted by Nick Mathewson and Roger Dingledine*
 
 ### In-depth Information
 
