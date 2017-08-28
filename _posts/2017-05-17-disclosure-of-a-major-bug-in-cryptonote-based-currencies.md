@@ -52,7 +52,7 @@ For each transaction key image, check ((key image * curve order) == (identity el
 
 As committed via the payment ID in Monero transaction ID dff7a79e44f9392e19fe5205c389d3e799f89c62d90d624219618d754b806e04, the text below has a sha3-256 (ie. keccak-256) hash of 21f0216fbbdc3dc590903b579282878705ed2adab7d8213328d962c76e806d84:
 
-```
+~~~
 Problem:
 The so-called "key image" as used in Cryptonote coins utilizing elliptic curve ed25519 can be modified in a special way, allowing double-spends. I leave out exact details in this draft to give some time for mitigation.
 
@@ -69,13 +69,13 @@ Identity element = "010000000000000000000000000000000000000000000000000000000000
 Curve order (little endian) = "edd3f55c1a631258d69cf7a2def9de1400000000000000000000000000000010"
 
 For each transaction key image, check ((key image * curve order) == (identity element)); reject transaction if false.
-```
+~~~
 
 ### Appendix: Commitment Text \#2
 
 As noted in the previous commitment, the text below has a sha3-256 (ie. keccak-256) hash of 4402e902f1ac8cec96a17453dcae307d21a7995a94b76e9c3eb7ca7baeffb8c8:
 
-```
+~~~
 Dirty Details:
 Adding one of the (non-idenitity) "torsion", or small subgroup, points to a key image allows up to 7 double spends to be performed per output (8 total spends). The reason this is possible is that multiplying any of these small subgroup
 points by 8 returns the identity element (a kind of zero point). This means that multiplying the sum of a "normal" point and a torsion point by 8 (or a multiple of 8) will return the same point as multiplying the normal point by 8;
@@ -103,4 +103,4 @@ point contained in subgroup 1 and l (basepoint subgroup) is the identity element
 by 0). Mutliplying any point by 2, 4, or 8 will move it to the corresponding most exclusive subgroup (e.g., a point in 8*l subgroup multiplied by 4 would move to the 2*l subgroup, a point in the 8 subgroup multiplied by 2 would move the 4
 subgroup, and so on). Adding a small subgroup (non idenitity) point to a key image in the basepoint subgroup "knocks" it out of that subgroup and into one of the larger ones. Since the order of that subgroup is not l but some multiple,
 multiplying as in the proposed mitigation above does not return the identity element.
-```
+~~~
