@@ -124,3 +124,18 @@ Fungibility is a simple property of money such that there are no differences bet
 </div>
 
 </div>
+
+<div class="tab">
+    <input id="tab-eleven" type="checkbox" name="tabs" class="accordian">
+    <label for="tab-eleven" class="accordian">If Monero is so private how do we know they're not being created out of thin air?</label>
+    
+<div class="tab-content" markdown="1">
+
+The value of the inputs that you are spending and the value of the outputs you are sending are encrypted and opaque to everyone except the recipient of each of those outputs.
+
+The clever part is that they're encrypted using Pedersen commitments. What this means is that no observers can tell the amounts of the inputs and outputs, but they can do math on the Pedersen commitments to determine that no Monero was created out of thin air.
+
+As long as the encrypted output amounts you create (which include an output for the recipient and a change output back to yourself) plus the transaction fee (which is unencrypted) is equal to the sum of the inputs that are being spent, then you have a legitimate transaction that is not creating Monero out of thin air. Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable.
+</div>
+
+</div>
