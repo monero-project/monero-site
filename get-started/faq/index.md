@@ -130,13 +130,11 @@ Fungibility is a simple property of money such that there are no differences bet
     <label for="tab-eleven" class="accordian">If Monero is so private how do we know they're not being created out of thin air?</label>
     
 <div class="tab-content" markdown="1">
-In Monero, every transaction generates a key image. Key images that are used more than once are rejected by the the miners as double-spends and cannot be added to a valid block. When a new transaction is received, miners verify that the key image does not already exist for a previous transaction to ensure it's not a double-spend.
+In Monero, every transaction generates a key image. Key images that are used more than once are rejected by the miners as double-spends and cannot be added to a valid block. When a new transaction is received, miners verify that the key image does not already exist for a previous transaction to ensure it's not a double-spend.
 
-We can also know that transaction amounts are valid even though the value of the inputs that you are spending and the value of the outputs you are sending are encrypted and hidden to everyone except the recipient of each of those outputs.
+We can also know that transaction amounts are valid even though the value of the inputs that you are spending and the value of the outputs you are sending are encrypted (these are hidden to everyone except the recipient). Because the amounts are encrypted using Pedersen commitments what this means is that no observers can tell the amounts of the inputs and outputs, but they can do math on the Pedersen commitments to determine that no Monero was created out of thin air.
 
-The amounts are encrypted using Pedersen commitments. What this means is that no observers can tell the amounts of the inputs and outputs, but they can do math on the Pedersen commitments to determine that no Monero was created out of thin air.
-
-As long as the encrypted output amounts you create which include an output for the recipient and a change output back to yourself plus the unencrypted transaction fee is equal to the sum of the inputs that are being spent, then you have a legitimate transaction and know no Monero is being created out of thin air. Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable.
+As long as the encrypted output amounts you create is equal to the sum of the inputs that are being spent (which include an output for the recipient and a change output back to yourself and the unencrypted transaction fee), then you have a legitimate transaction and know no Monero is being created out of thin air. Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable.
 </div>
 
 </div>
