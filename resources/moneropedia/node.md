@@ -15,7 +15,7 @@ Nodes participate in the Monero network and secure @transactions by enforcing th
 
 Mining is the process by which nodes create a block from the previously accepted block, transactions that are waiting to be processed in the @tx-pool, and the @coinbase. When a node believes it has crafted a valid block it will transmit the completed block to other nodes on the network and those nodes signal agreement by working on the next block in the chain. 
 
-The rules that nodes follow are built into the Monero software; When all nodes agree about the rules to follow this is called @consensus). Consensus is necessary for a cryptocurrency because it is how the blockchain is built; If nodes don't agree about which blocks are valid, then people who have not updated their Monero software (their node) will no longer be able to participate in the Monero network.
+The rules that nodes follow are built into the Monero software; When all nodes agree about the rules to follow this is called @consensus). Consensus is necessary for a cryptocurrency because it is how the blockchain is built; If nodes don't agree about which blocks are valid, for example people who have not updated their Monero software, those nodes that don't agree will no longer be able to participate in the Monero network.
 
 The Monero Core Team plans for a @hardforks every 6 months, to occur in September and March of each year. At that time, if you are running a node it must be updated to the most recent version of the Monero software or it will no longer be able to participate in the network. 
 
