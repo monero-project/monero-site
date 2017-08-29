@@ -9,7 +9,7 @@ summary: "a device on the Internet running the Monero software, with a full copy
 
 {{ page.summary | capitalize }}.
 
-### In-depth Information
+### More Information
 
 Nodes participate in the Monero network and secure @transactions by enforcing the rules of the network. Nodes download the entire @blockchain to know what transactions have taken place. Nodes assist the network by relaying transactions to other nodes on the network. Nodes may also choose contribute to the Monero network by participating in crafting @blocks (this is called @mining). 
 
