@@ -741,14 +741,14 @@ Example:
 
 ### set_tx_notes
 
-Set an arbitrary string notes for transactions.
+Set arbitrary string notes for transactions.
 
 Inputs:
-    * *txids* - - array of string; transaction ids
-    * *notes* - - array of string; notes for the transactions
+
+* *txids* - array of string; transaction ids
+* *notes* - array of string; notes for the transactions
 
 Outputs: *None*.
-
 
 Example:
 
@@ -763,16 +763,15 @@ Example:
 
 ### get_tx_notes
 
-Get a string note for a transaction.
-
+Get string notes for transactions.
 
 Inputs:
 
-* *txids* - array of: string; transaction ids
+* *txids* - array of string; transaction ids
 
 Outputs:
 
-* *notes* - array of: string; notes for the transactions
+* *notes* - array of string; notes for the transactions
 
 Example:
 
@@ -812,7 +811,7 @@ Example:
 
 ### verify
 
-Verify a signature on the contents of a string.
+Verify a signature on a string.
 
 Inputs:
 
