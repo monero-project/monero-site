@@ -58,8 +58,8 @@
       url: https://www.livingroomofsatoshi.com/?sc=xmr  
     - name: Monero Merchants
       url: https://monero-merchants.com
-    - name: Paybee (Private Beta)
-      url: https://payb.ee/
+    - name: GloBee
+      url: https://globee.com/
     - name: Monero WooCommerce Extension (PHP)
       url: https://github.com/monero-integrations/monerowp
 - category: Libraries and Helpers
