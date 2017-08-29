@@ -256,20 +256,29 @@ Inputs:
 * *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
-* *get_tx_keys* - boolean; (Optional) Return the transaction key after sending.
+* *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
 * *below_amount* - unsigned int; (Optional)
 * *do_not_relay* - boolean; (Optional)
-* *get_tx_hex* - boolean; (Optional)
+* *get_tx_hex* - boolean; (Optional) return the transactions as hex encoded string.
 
 Outputs:
 
 * *tx_hash_list* - array of string;
 * *tx_key_list* - array of string;
+* *tx_blob_list* - array of string; 
 
 Example:
 
 {:.cli-code}
 <span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_all","params":{"address":"9sS8eRU2b5ZbN2FPSrpkiab1bjbHE5XtL6Ti6We3Fhw5aQPudRfVVypjgzKDNkxtvTQSPs122NKggb2mqcqkKSeMNVu59S","mixin":2,"unlock_time":0,"get_tx_keys":true}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "tx_hash_list": ["53a3648797d5524dd037d4105e067fa61468faecab41927fc43adbb26c202d22"],
+    "tx_key_list": ["e83b3b78235e36cd7e4d9695efd81a3b3e64c7d1f1ebd61892f0a7add6a50301"]
+  }
+}
 
 ### store
 
