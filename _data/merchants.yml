@@ -8,8 +8,8 @@
       url: https://www.alfacashier.com/
     - name: Bitfinex (XMRUSD, XMRBTC)
       url: https://www.bitfinex.com/
-    - name: Bitsquare (decentralized)
-      url: https://bitsquare.io/
+    - name: Bisq; decentralized exchange (previously Bitsquare)
+      url: https://bisq.io/
     - name: BitMEX
       url: https://www.bitmex.com/app/trade/XMR7D
     - name: Bittrex
@@ -141,7 +141,7 @@
     - name: Web Developer - Stefanos
       url: http://www.stefanosioannou.com/web-development-monero-accepted
     - name: XMR.to Monero to Bitcoin Payment Service
-      url: xmr.to
+      url: https://xmr.to/
 - category: Goods
   merchants:
     - name: Cellphone and laptop repair online store in Sweden
