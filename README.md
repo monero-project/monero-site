@@ -40,21 +40,16 @@ If for any reason you have questions or need to contact us, you can find us on t
 
 ## 2.0 What you'll need
 
-* Jekyll: Getmonero.org is made using a simple, static website generator called [Jekyll](https://jekyllrb.com/). You will need it installed on your system to test any changes that you made. If you're using a Linux-based system you can just follow the instructions on the website to get up and going. If you're using Windows, you will want to check out [this site](http://jekyll-windows.juthilo.com/) for instructions on how to get Jekyll working on your system.
+* Jekyll: Getmonero.org is made using a simple, static website generator called [Jekyll](https://jekyllrb.com/). You will need it installed on your system to test any changes that you made. If you're using Windows, you will want to check out [this site](http://jekyll-windows.juthilo.com/) for instructions on how to get Jekyll working on your system. If you're using a Linux-based system you can just follow the instructions on the website to get up and going:
+  * Install Ruby
+  * Install Bundler: `gem install bundler`
+  * Install Jekyll with all dependencies (run from the project directory): `bundle`
 
 * GitHub: Pretty much everything in Monero is hosted on [GitHub](https://github.com) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register for GitHub and fork the [Monero Website repository](https://github.com/monero-project/monero-site).
 
 * Markdown experience: To write pages, you're going to need to know how to use Markdown. It's basically a in-between language that enables people who don't know HTML to just write, and it will be compiled into HTML for you. You can find a great Markdown cheat sheet with examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). IF you need more help, Google and YouTube are great resources.
 
 *Note: If you're confused, feel free to click other files in the same directory (folder) that you are in for the step that you are on to see some working examples. Compare them to the instructions and you should understand better.*
-
-* Jekyll Gems: The current iteration of the getmonero.org website uses the following plugins:
-  * [jekyll-paginate](https://jekyllrb.com/docs/pagination/)
-  * builder
-  * rubysl-rexml
-  * In the event that more gems are added, this documentation will be updated to reflect the changes needed to build the site.
-
-*Note:* To install them all at once, use the command: `gem install builder rubysl-rexml jekyll-paginate`
 
 Once you have the above list of things, it's typically a good idea to build the website from your local computer to make sure it works before you make any changes. To do this, complete the following steps:
 
