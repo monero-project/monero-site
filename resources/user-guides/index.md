@@ -35,6 +35,7 @@ title: "User Guides"
 [How to make a view-only wallet](view_only.html)
 [How to prove payment](prove-payment.html)
 [Restoring wallet from keys](restore_from_keys.html)
+[How to connect to a remote node within GUI wallet](remote_node_gui.html)
 
 </div>
             </div>
