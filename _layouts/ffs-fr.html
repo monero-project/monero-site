@@ -9,8 +9,44 @@ layout: base
 
 </div>
        <!-- FULL WIDTH BLOCK -->
-        <section class="container full">
+        <section class="container full fr-contribute">
                 <div class="info-block text-adapt">
+                   <div class="row center">
+                       <div class="col-xs-12">
+                           <h2>Funding Progress</h2>
+                       </div>
+                   </div>
+                   <div class="row center-xs">
+                       <div class="col-xs-12 progress-numbers">
+                           <p class="progress-number-funded">10 XMR </p><span> /</span>
+                           <p class="progress-number-goal">100 XMR</p>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-12">
+                           <div class="progress-bar">
+                               <span style="width: 75%"></span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row center-xs">
+                       <div class="tab col-xs-12">
+                            <input id="tab-one" type="checkbox" name="tabs" class="accordion">
+                            <label for="tab-one" class="accordion">Contribute</label>
+                            <div class="tab-content">
+                                <div class="row start-xs">
+                                    <div class="col-xs-12">
+                                        <p>In order to contribute to the cause of <strong>{{page.title}}</strong> all you have to do is the following:</p>
+                                        <p>Have a valid Monero address. If you don't have one, you can read on getting started!</p>
+                                        <p>Send the amount of XMR that you wish to contribute to the address: <strong>{{page.address}}</strong></p>
+                                        <p>Make sure that you enter a payment ID of <strong>{{page.paymentid}}</strong> in order for us to be able to assign your contribution to this specific project!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                   </div>
+                </div>
+                <!--div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
                             <h2>How to Contribute</h2>
@@ -24,7 +60,7 @@ layout: base
                             <p>Make sure that you enter a payment ID of <strong>{{page.paymentid}}</strong> in order for us to be able to assign your contribution to this specific project!</p>
                         </div>
                     </div>
-                </div>
+                </div-->
         </section>
     <!-- END FULL WIDTH BLOCK -->
    
@@ -43,6 +79,18 @@ layout: base
                 </div>
         </section>
     <!-- END FULL WIDTH BLOCK -->
+    <section class="container full comments">
+        <div class="info-block">
+          <div class="row center">
+             <div class="col-xs-12">
+               <h2>Comments</h2>
+             </div>
+          </div>
+           <div class="row">
+               <div class="col-xs-12">
+                   <!-- SPACE RESERVED FOR COMMENT SYSTEM -->
+               </div>
+           </div>
+        </div>
+    </section>
     </div>
-    
-    <!-- JAVASCRIPT FOR DISQUS -->

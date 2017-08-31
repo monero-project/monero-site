@@ -87,6 +87,11 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <p>The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href="/community/hangouts/">Hangouts</a> page to see where we are.</p>
 </div>
 </div>
+<div class="row center-xs">
+  <div class="col-xs-12">
+    <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
+  </div>
+</div>
 
 
 {% elsif data_downloads.gui_hash == nil and data_downloads.cli_hash != nil %}

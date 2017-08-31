@@ -4,6 +4,23 @@ title: Getmonero.org Redesign
 address: 4445
 paymentid: 3xj3
 author: rehrar
+milestones:
+  - name: Milestone 1 - Front page & restructure
+    funds: 10% (~XMR 10.70)
+    done: April 28, 2017
+    status: completed
+  - name: Milestone 2 - Design
+    funds: 40% (~XMR 42.80)
+    done: July 1, 2017
+    status: completed
+  - name: Milestone 3 - Development
+    funds: 30% (~XMR 32.10)
+    done: July 1, 2017
+    status: completed
+  - name: Milestone 4 - Finishing touches
+    funds: 20% (~XMR 21.40)
+    done:
+    status: upcoming
 ---
 
 At the request of myself , I am editing my proposal that fluffypony recommended I edit that was edited from the initial idea. So, without further ado:

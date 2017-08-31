@@ -4,8 +4,8 @@ title: FAQ
 ---
 
 <div class="tab">
-    <input id="tab-one" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-one" class="accordian">How does Monero have value?</label>
+    <input id="tab-one" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-one" class="accordion">How does Monero have value?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -16,8 +16,8 @@ Monero has value because people are willing to buy it. If no one is willing to b
 </div>
 
 <div class="tab">
-    <input id="tab-two" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-two" class="accordian">How can I get Monero?</label>
+    <input id="tab-two" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-two" class="accordion">How can I get Monero?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -27,8 +27,8 @@ You can buy Monero from an exchange or from an individual. Alternatively, you ca
 </div>
 
 <div class="tab">
-    <input id="tab-three" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-three" class="accordian">What is a mnemonic seed?</label>
+    <input id="tab-three" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-three" class="accordion">What is a mnemonic seed?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -38,8 +38,8 @@ A mnemonic seed is a set of 25 words that can be used to restore your account an
 </div>
 
 <div class="tab">
-    <input id="tab-four" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-four" class="accordian">How is Monero’s privacy different from other coins?</label>
+    <input id="tab-four" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-four" class="accordion">How is Monero’s privacy different from other coins?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -49,8 +49,8 @@ Monero uses three different privacy technologies: ring signatures, ring confiden
 </div>
 
 <div class="tab">
-    <input id="tab-five" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-five" class="accordian">Why is my wallet taking so long to sync?</label>
+    <input id="tab-five" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-five" class="accordion">Why is my wallet taking so long to sync?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -60,8 +60,8 @@ If you are running a full node locally, you need to copy the entire blockchain t
 </div>
 
 <div class="tab">
-    <input id="tab-six" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-six" class="accordian">What is the different between a lightweight and a normal wallet?</label>
+    <input id="tab-six" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-six" class="accordion">What is the different between a lightweight and a normal wallet?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -71,8 +71,8 @@ For a lightweight wallet, you give your view key to a node, who scans the blockc
 </div>
 
 <div class="tab">
-    <input id="tab-seven" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-seven" class="accordian">How is Monero different from Bitcoin?</label>
+    <input id="tab-seven" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-seven" class="accordion">How is Monero different from Bitcoin?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -82,8 +82,8 @@ Monero is not based on Bitcoin. It is based on the CryptoNote protocol. Bitcoin 
 </div>
 
 <div class="tab">
-    <input id="tab-eight" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-eight" class="accordian">Does Monero have a block size limit?</label>
+    <input id="tab-eight" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-eight" class="accordion">Does Monero have a block size limit?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -93,8 +93,8 @@ No, Monero does not have a hard block size limit. Instead, the block size can in
 </div>
 
 <div class="tab">
-    <input id="tab-nine" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-nine" class="accordian">What is a blockchain?</label>
+    <input id="tab-nine" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-nine" class="accordion">What is a blockchain?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -104,8 +104,8 @@ A blockchain is a system that stores a copy of all transaction history on the Mo
 </div>
 
 <div class="tab">
-    <input id="tab-ten" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-ten" class="accordian">What is Kovri?</label>
+    <input id="tab-ten" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-ten" class="accordion">What is Kovri?</label>
     
 <div class="tab-content" markdown="1">
 
@@ -115,8 +115,8 @@ Kovri is an I2P router written in C++. I2P is a hidden network like Tor with sev
 </div>
 
 <div class="tab">
-    <input id="tab-eleven" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-eleven" class="accordian">What is fungibility, and why is it important?</label>
+    <input id="tab-eleven" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-eleven" class="accordion">What is fungibility, and why is it important?</label>
     
 <div class="tab-content" markdown="1">
 

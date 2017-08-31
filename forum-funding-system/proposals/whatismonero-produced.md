@@ -1,6 +1,6 @@
 ---
 layout: ffs-cp
-title: What is Monero? is produced and open-sourced.
+title: What is Monero? is produced and open-sourced
 author: savandra
 ---
 
