@@ -16,6 +16,7 @@ title: "User Guides"
 
 [Monero Tools](monero_tools.html)
 [How to make an offline backup](Offline_Backup.html)
+[Importing the Monero blockchain](importing_blockchain.html)
 [How to run a node on VPS](vps_run_node.html)
 [Securely purchasing and storing Monero](securely_purchase.html)
 
@@ -34,6 +35,8 @@ title: "User Guides"
 [Getting started with the CLI wallet](monero-wallet-cli.html)
 [How to make a view-only wallet](view_only.html)
 [How to prove payment](prove-payment.html)
+[Restoring wallet from keys](restore_from_keys.html)
+[How to connect to a remote node within GUI wallet](remote_node_gui.html)
 
 </div>
             </div>
@@ -62,6 +65,31 @@ title: "User Guides"
             <div class="info-block">
                 <div class="row center-xs">
                     <div class="col">
+                        <h2>Mining</h2>
+                    </div>
+                </div>
+<div class="row start-xs" markdown="1">
+
+[How to solo mine with the GUI](solo_mine_GUI.html)
+
+[How to mine on a pool with xmr-stak-cpu](mine-to-pool.html)
+
+[Mining with Docker and XMRig](mining_with_xmrig_and_docker.html)
+
+</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</section>
+<section class="container">
+    <div class="row">
+        <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="info-block">
+                <div class="row center-xs">
+                    <div class="col">
                         <h2>Website</h2>
                     </div>
                 </div>
@@ -81,6 +109,21 @@ title: "User Guides"
 </div>
             </div>
         </div>
+        <div class="right half col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="info-block">
+                <div class="row center-xs">
+                    <div class="col">
+                        <h2>Miscellaneous</h2>
+                    </div>
+                </div>
+<div class="row start-xs" markdown="1">
+Coming Soon
+</div>
+            </div>
+        </div>
     </div>
+    
+    
+    
 </section>
 </div>

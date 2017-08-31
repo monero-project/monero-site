@@ -34,12 +34,14 @@
       url: https://www.kraken.com/
     - name: BIT.AC
       url: https://bit.ac/
-    - name: Premium investment and exchange services
+    - name: Kaiserex
       url: https://www.kaiserex.com/
     - name: Magnetic Exchange
       url: https://magneticexchange.com
     - name: ArbitrCoin
       url: https://arbitrcoin.com      
+    - name: Anycoindirect
+      url: https://anycoindirect.eu/
 - category: Block Explorers
   merchants:
     - name: ChainRadar
@@ -47,7 +49,7 @@
     - name: MoneroBlocks
       url: http://moneroblocks.info
     - name: MoneroExplorer
-      url: https://explorer.xmr.my/
+      url: https://moneroexplorer.com/
     - name: MoneroHash Explorer
       url: https://monerohash.com/explorer/
     - name: xmrchain.net
@@ -60,6 +62,8 @@
       url: https://monero-merchants.com
     - name: Paybee (Private Beta)
       url: https://payb.ee/
+    - name: Monero WooCommerce Extension (PHP)
+      url: https://github.com/monero-integrations/monerowp
 - category: Libraries and Helpers
   merchants:
     - name: monero-nodejs (Node.js)
@@ -78,6 +82,8 @@
       url: https://github.com/MalMen/PHP-Monero
     - name: Monero-PHP (PHP)
       url: https://github.com/PsychicCat/monero-php
+    - name: Monero Payments Library (PHP)
+      url: https://github.com/monero-integrations/monerophp
 - category: Tools
   merchants:
     - name: nestorgames
@@ -114,16 +120,12 @@
       url: http://www.guitartheoryrevolution.info/blog/guitar-theory-revolution-store/
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
-    - name: Pradeep Atluri, Psychiatrist, New York
-      url: http://dr.mindsci.com/
     - name: Simple, no non-sense hosting
       url: https://rootbox.host/
     - name: Web Developer - Stefanos
       url: http://www.stefanosioannou.com/web-development-monero-accepted
     - name: XMR.to Monero to Bitcoin Payment Service
       url: https://xmr.to
-    - name: algoStrategic - Internet Marketing and Web Development
-      url: https://algostrategic.com
     - name: Emmanuel Galang, Canada Immigration and Refugee Lawyer
       url: https://galanglaw.com/
     - name: Web Developer - Python with Django web framework
@@ -131,7 +133,13 @@
     - name: FlokiNET
       url: https://flokinet.is
     - name: Nerdzy Lawn Care
-      url: http://www.nerdzy.net
+      url: http://www.nerdzy.net/index.php/lawn-care/
+    - name: Njalla - privacy-aware domain registration
+      url: https://njal.la/
+    - name: Elise Hawkins Nutritional Therapy  
+      url: http://www.elisehawkinsnutritionaltherapy.com
+    - name: Koddos - hosting and DDoS protection services
+      url: http://koddos.net
 - category: Goods
   merchants:
     - name: CryptoMercado - coffee and snacks
@@ -156,6 +164,16 @@
       url: https://synntechgaming.com
     - name: Elise Hawkins Nutritional Therapy  
       url: www.elisehawkinsnutritionaltherapy.com
+    - name: SilverRound.com - Gold and Silver Dealer
+      url: https://silverround.com/
+    - name: Bitgild - Gold and Silver
+      url: http://www.bitgild.com
+    - name: Ivan Multimedia Productions
+      url: http://ivanmultimediaproductions.webs.com
+    - name: Celestion Shop
+      url: https://www.celestionshop.com/
+    - name: Molecule Store
+      url: https://moleculestore.com
 - category: Entertainment
   merchants:
     - name: MoneroDice
