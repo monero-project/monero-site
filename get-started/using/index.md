@@ -17,7 +17,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero is a secure, private, untraceable and fungible cryptocurrency. The developers and community are committed to protecting these values. Learn more about how Monero works by reading the <a href="/get-started/what-is-monero/">What is Monero page</a>. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
+                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more about by reading the <a href="/get-started/what-is-monero/">What is Monero page</a>. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be used to purchase many goods and services. For a list of some groups that accept Monero directly, see our <a href="/community/merchants/">Merchants page.</a></p>
+                        <p>Monero may be used to purchase many goods and services. For a listing, see our <a href="/community/merchants/">Merchants page.</a></p>
                     </div>
                 </div>
             </div>
