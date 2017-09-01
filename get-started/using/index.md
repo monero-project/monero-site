@@ -17,7 +17,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more about by reading the <a href="/get-started/what-is-monero/">What is Monero page</a>. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
+                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the <a href="/get-started/what-is-monero/">What is Monero page</a>. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>There is a large, supportive community that will assist if you experience any difficulty. See our <a href="/community/hangouts/">Hangouts page</a> for more information.</p>
+                        <p>There is a large and supportive community that will assist if you experience any difficulty. See our <a href="/community/hangouts/">Hangouts page</a> for more information.</p>
                     </div>
                 </div>
             </div>
