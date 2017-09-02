@@ -4,8 +4,12 @@
   description: This channel is for the Monero community to congretate and discuss ideas.
 - channel: monero-dev
   description: The many contributors and developers come here to discuss dev-y things.
+- channel: monero-ffs
+  description: Regarding the Monero forum funding system.
 - channel: monero-markets
   description: We use this channel to talk about the price of Monero and other coins.
+- channel: monero-offtopic
+  description: Chatting with other Monero users about things not related to Monero.
 - channel: monero-otc
   description: Over the counter Monero. Come here to purchase XMR from your fellow Moneron.
 - channel: monero-pools
