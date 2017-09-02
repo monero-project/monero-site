@@ -42,6 +42,8 @@
       url: https://arbitrcoin.com      
     - name: Anycoindirect
       url: https://anycoindirect.eu/
+    - name: Liberalcoins
+      url: https://liberalcoins.com/
 - category: Block Explorers
   merchants:
     - name: ChainRadar
