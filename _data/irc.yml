@@ -1,0 +1,14 @@
+- channel: monero
+  description: This channel is used to discuss all things Monero related.
+- channel: monero-community
+  description: This channel is for the Monero community to congretate and discuss ideas.
+- channel: monero-dev
+  description: The many contributors and developers come here to discuss dev-y things.
+- channel: monero-markets
+  description: We use this channel to talk about the price of Monero and other coins.
+- channel: monero-otc
+  description: Over the counter Monero. Come here to purchase XMR from your fellow Moneron.
+- channel: monero-pools
+  description: This is the place for mining questions and discussion.
+- channel: monero-research-lab
+  description: Research into financial privacy with cryptocurrency.
