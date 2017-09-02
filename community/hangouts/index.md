@@ -7,7 +7,6 @@ The Monero community is diverse and varied. We come from all over, but we defini
 </div>
 
 <div class="hangouts">
-
     <section class="container">   
         <ul class="row center-xs">
             <li>
@@ -56,38 +55,12 @@ The Monero community is diverse and varied. We come from all over, but we defini
                                 <p>The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.</p>
                             </div>
                             <div class="row irc">
-                                <div class="col-md-4">
-                                    <a href="irc://chat.freenode.net/#monero">#monero</a>
-                                    <p>This channel is used to discuss all things Monero related.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="irc://chat.freenode.net/#monero-community">#monero-community</a>
-                                    <p>This channel is for the Monero community to congretate and discuss ideas.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="irc://chat.freenode.net/#monero-dev">#monero-dev</a>
-                                    <p>The many contributors and developers come here to discuss dev-y things.</p>
-                                </div>
-                            </div>
-                            <div class="row irc">
-                                <div class="col-md-4">
-                                    <a href="irc://chat.freenode.net/#monero-markets">#monero-markets</a>
-                                    <p>We use this channel to talk about the price of Monero and other coins.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="irc://chat.freenode.net/#monero-otc">#monero-otc</a>
-                                    <p>Over the counter Monero. Come here to purchase XMR from your fellow Moneron.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="irc://chat.freenode.net/#monero-pools">#monero-pools</a>
-                                    <p>This is the place for mining questions and discussion.</p>
-                                </div>
-                            </div>
-                            <div class="row irc">
-                                <div class="col-md-4">
-                                    <a href="irc://chat.freenode.net/#monero-research-lab">#monero-research-lab</a>
-                                    <p>Research into financial privacy with cryptocurrency.</p>
-                                </div>
+                                {% for channel in site.data.irc %}
+                                    <div class="col-md-4">
+                                        <a href="irc://chat.freenode.net/#{{ channel.channel }}">#{{ channel.channel }}</a>
+                                        <p>{{ channel.description }}</p>
+                                    </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
