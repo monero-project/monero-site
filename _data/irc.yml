@@ -16,3 +16,7 @@
   description: This is the place for mining questions and discussion.
 - channel: monero-research-lab
   description: Research into financial privacy with cryptocurrency.
+- channel: monero-translations
+  description: Localizing Monero into other languages
+- channel: monero-website
+  description: For the development of the Monero website
