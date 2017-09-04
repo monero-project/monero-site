@@ -94,15 +94,15 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbalance"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "balance": 140000000000,
-    "unlocked_balance": 50000000000
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbalance"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "balance": 140000000000,
+        "unlocked_balance": 50000000000
+      }
+    }
 
 
 ### getaddress
@@ -118,14 +118,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getaddress"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getaddress"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"
+      }
+    }
 
 
 ### getheight
@@ -141,14 +141,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getheight"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "height": 994310
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getheight"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "height": 994310
+      }
+    }
 
 
 ### transfer
@@ -165,26 +165,32 @@ Inputs:
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
+* *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
+* *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
+* *get_tx_hex* - boolean; Return the transaction as hex string after sending
+
 
 Outputs:
 
 * *fee* - Integer value of the fee charged for the txn.
 * *tx_hash* - String for the publically searchable transaction hash
 * *tx_key* - String for the transaction key if get_tx_key is true, otherwise, blank string.
+* *tx_blob* - Transaction as hex string if get_tx_hex is true
+
 
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBLwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"}],"mixin":4,"get_tx_key": true}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "fee": 48958481211,
-    "tx_hash": "985180f468637bc6d2f72ee054e1e34b8d5097988bb29a2e0cb763e4464db23c",
-    "tx_key": "8d62e5637f1fcc9a8904057d6bed6c697618507b193e956f77c31ce662b2ee07"
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBLwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"}],"mixin":4,"get_tx_key": true}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "fee": 48958481211,
+        "tx_hash": "985180f468637bc6d2f72ee054e1e34b8d5097988bb29a2e0cb763e4464db23c",
+        "tx_key": "8d62e5637f1fcc9a8904057d6bed6c697618507b193e956f77c31ce662b2ee07"
+      }
+    }
 
 
 ### transfer_split
@@ -200,26 +206,32 @@ Inputs:
 * *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
-* *get_tx_key* - boolean; (Optional) Return the transaction key after sending. -- Ignored
+* *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending. -- Ignored
+* *priority* - unsigned int; Set a priority for the transactions. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
+* *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
+* *get_tx_hex* - boolean; Return the transactions as hex string after sending
 * *new_algorithm* - boolean; True to use the new transaction construction algorithm, defaults to false.
 
 Outputs:
 
-* *fee_list* - array of: integer
-* *tx_hash_list* - array of: string
+* *fee_list* - array of: integer. The amount of fees paid for every transaction.
+* *tx_hash_list* - array of: string. The tx hashes of every transaction.
+* *tx_blob_list* - array of: string. The tx as hex string for every transaction.
+* *amount_list* - array of: integer. The amount transferred for every transaction..
+* *tx_key_list* - array of: string. The transaction keys for every transaction.
 
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"},{"amount":200000000,"address":"9vC5Q25cR1d3WzKX6dpTaLJaqZyDrtTnfadTmVuB1Wue2tyFGxUhiE4RGa74pEDJv7gSySzcd1Ao6G1nzSaqp78vLfP6MPj"},{"amount":200000000,"address":"A2MSrn49ziBPJBh8ZNEhhbfyLMou6mao4C1F5TLGUatmUnCxZArDYkcbAnVkVEopWVeak2rKDrmc8JpoS7n5dvfN9YDPBTG"},{"amount":200000000,"address":"9tEDyVQ8zgRQbDYiykTdpw5kZ6qWQWcKfExEj9eQshjpGb3sdr3UyWE2AHWzUGzJjaH9HN1DdGBdyQQ4AqGMc7rr5xYwZWW"}],"mixin":4,"get_tx_key": true, "new_algorithm": true}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "fee_list": [97916962422],
-    "tx_hash_list": ["c5c389846e701c27aaf1f7ab8b9dc457b471fcea5bc9710e8020d51275afbc54"]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"},{"amount":200000000,"address":"9vC5Q25cR1d3WzKX6dpTaLJaqZyDrtTnfadTmVuB1Wue2tyFGxUhiE4RGa74pEDJv7gSySzcd1Ao6G1nzSaqp78vLfP6MPj"},{"amount":200000000,"address":"A2MSrn49ziBPJBh8ZNEhhbfyLMou6mao4C1F5TLGUatmUnCxZArDYkcbAnVkVEopWVeak2rKDrmc8JpoS7n5dvfN9YDPBTG"},{"amount":200000000,"address":"9tEDyVQ8zgRQbDYiykTdpw5kZ6qWQWcKfExEj9eQshjpGb3sdr3UyWE2AHWzUGzJjaH9HN1DdGBdyQQ4AqGMc7rr5xYwZWW"}],"mixin":4,"get_tx_key": true, "new_algorithm": true}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "fee_list": [97916962422],
+        "tx_hash_list": ["c5c389846e701c27aaf1f7ab8b9dc457b471fcea5bc9710e8020d51275afbc54"]
+      }
+    }
 
 
 ### sweep_dust
@@ -235,15 +247,15 @@ Outputs:
 Example (In this example, `sweep_dust` returns an error due to insufficient funds to sweep):
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_dust"}' -H 'Content-Type: application/json'
-{
-  "error": {
-    "code": -4,
-    "message": "not enough money"
-  },
-  "id": "0",
-  "jsonrpc": "2.0"
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_dust"}' -H 'Content-Type: application/json'
+    {
+      "error": {
+        "code": -4,
+        "message": "not enough money"
+      },
+      "id": "0",
+      "jsonrpc": "2.0"
+    }
 
 ### sweep_all
 
@@ -270,15 +282,15 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_all","params":{"address":"9sS8eRU2b5ZbN2FPSrpkiab1bjbHE5XtL6Ti6We3Fhw5aQPudRfVVypjgzKDNkxtvTQSPs122NKggb2mqcqkKSeMNVu59S","mixin":2,"unlock_time":0,"get_tx_keys":true}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "tx_hash_list": ["53a3648797d5524dd037d4105e067fa61468faecab41927fc43adbb26c202d22"],
-    "tx_key_list": ["e83b3b78235e36cd7e4d9695efd81a3b3e64c7d1f1ebd61892f0a7add6a50301"]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_all","params":{"address":"9sS8eRU2b5ZbN2FPSrpkiab1bjbHE5XtL6Ti6We3Fhw5aQPudRfVVypjgzKDNkxtvTQSPs122NKggb2mqcqkKSeMNVu59S","mixin":2,"unlock_time":0,"get_tx_keys":true}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "tx_hash_list": ["53a3648797d5524dd037d4105e067fa61468faecab41927fc43adbb26c202d22"],
+        "tx_key_list": ["e83b3b78235e36cd7e4d9695efd81a3b3e64c7d1f1ebd61892f0a7add6a50301"]
+      }
+    }
 
 ### store
 
@@ -291,13 +303,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"store"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"store"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 
 ### get_payments
@@ -320,20 +332,20 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_payments","params":{"payment_id":"4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "payments": [{
-      "amount": 10350000000000,
-      "block_height": 994327,
-      "payment_id": "4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030",
-      "tx_hash": "c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1",
-      "unlock_time": 0
-    }]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_payments","params":{"payment_id":"4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "payments": [{
+          "amount": 10350000000000,
+          "block_height": 994327,
+          "payment_id": "4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030",
+          "tx_hash": "c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1",
+          "unlock_time": 0
+        }]
+      }
+    }
 
 
 ### get_bulk_payments
@@ -357,20 +369,20 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_bulk_payments","params":{"payment_ids":["4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030"],"min_block_height":990000}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "payments": [{
-      "amount": 10350000000000,
-      "block_height": 994327,
-      "payment_id": "4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030",
-      "tx_hash": "c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1",
-      "unlock_time": 0
-    }]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_bulk_payments","params":{"payment_ids":["4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030"],"min_block_height":990000}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "payments": [{
+          "amount": 10350000000000,
+          "block_height": 994327,
+          "payment_id": "4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030",
+          "tx_hash": "c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1",
+          "unlock_time": 0
+        }]
+      }
+    }
 
 ### get_transfers
 
@@ -408,23 +420,23 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_transfers","params":{"pool":true}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "pool": [{
-      "amount": 500000000000,
-      "fee": 0,
-      "height": 0,
-      "note": "",
-      "payment_id": "758d9b225fda7b7f",
-      "timestamp": 1488312467,
-      "txid": "da7301d5423efa09fabacb720002e978d114ff2db6a1546f8b820644a1b96208",
-      "type": "pool"
-    }]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_transfers","params":{"pool":true}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "pool": [{
+          "amount": 500000000000,
+          "fee": 0,
+          "height": 0,
+          "note": "",
+          "payment_id": "758d9b225fda7b7f",
+          "timestamp": 1488312467,
+          "txid": "da7301d5423efa09fabacb720002e978d114ff2db6a1546f8b820644a1b96208",
+          "type": "pool"
+        }]
+      }
+    }
 
 ### get_transfer_by_txid
 
@@ -449,23 +461,23 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_transfer_by_txid","params":{"txid":"f2d33ba969a09941c6671e6dfe7e9456e5f686eca72c1a94a3e63ac6d7f27baf"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "transfer": {
-      "amount": 10000000000000,
-      "fee": 0,
-      "height": 1316388,
-      "note": "",
-      "payment_id": "0000000000000000",
-      "timestamp": 1495539310,
-      "txid": "f2d33ba969a09941c6671e6dfe7e9456e5f686eca72c1a94a3e63ac6d7f27baf",
-      "type": "in"
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_transfer_by_txid","params":{"txid":"f2d33ba969a09941c6671e6dfe7e9456e5f686eca72c1a94a3e63ac6d7f27baf"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "transfer": {
+          "amount": 10000000000000,
+          "fee": 0,
+          "height": 1316388,
+          "note": "",
+          "payment_id": "0000000000000000",
+          "timestamp": 1495539310,
+          "txid": "f2d33ba969a09941c6671e6dfe7e9456e5f686eca72c1a94a3e63ac6d7f27baf",
+          "type": "in"
+        }
+      }
     }
-  }
-}
 
 ### incoming_transfers
 
@@ -487,73 +499,73 @@ Outputs:
 Example (Return "all" transaction types):
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"all"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "transfers": [{
-      "amount": 10000000000000,
-      "global_index": 711506,
-      "spent": false,
-      "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
-    },{
-      "amount": 300000000000,
-      "global_index": 794232,
-      "spent": false,
-      "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
-    },{
-      "amount": 50000000000,
-      "global_index": 213659,
-      "spent": false,
-      "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
-    }]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"all"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "transfers": [{
+          "amount": 10000000000000,
+          "global_index": 711506,
+          "spent": false,
+          "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
+          "tx_size": 5870
+        },{
+          "amount": 300000000000,
+          "global_index": 794232,
+          "spent": false,
+          "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
+          "tx_size": 5870
+        },{
+          "amount": 50000000000,
+          "global_index": 213659,
+          "spent": false,
+          "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
+          "tx_size": 5870
+        }]
+      }
+    }
 
 Example (Return "available" transactions):
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"available"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "transfers": [{
-      "amount": 10000000000000,
-      "global_index": 711506,
-      "spent": false,
-      "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
-    },{
-      "amount": 300000000000,
-      "global_index": 794232,
-      "spent": false,
-      "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
-    },{
-      "amount": 50000000000,
-      "global_index": 213659,
-      "spent": false,
-      "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
-    }]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"available"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "transfers": [{
+          "amount": 10000000000000,
+          "global_index": 711506,
+          "spent": false,
+          "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
+          "tx_size": 5870
+        },{
+          "amount": 300000000000,
+          "global_index": 794232,
+          "spent": false,
+          "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
+          "tx_size": 5870
+        },{
+          "amount": 50000000000,
+          "global_index": 213659,
+          "spent": false,
+          "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
+          "tx_size": 5870
+        }]
+      }
+    }
 
 Example (Return "unavailable" transaction. Note that this particular example returns 0 unavailable transactions):
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"unavailable"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"unavailable"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 
 ### query_key
@@ -571,26 +583,26 @@ Outputs:
 Example (Query view key):
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"view_key"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "key": "7e341d..."
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"view_key"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "key": "7e341d..."
+      }
+    }
 
 Example (Query mnemonic key):
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"mnemonic"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "key": "adapt adapt nostril ..."
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"mnemonic"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "key": "adapt adapt nostril ..."
+      }
+    }
 
 
 ### make_integrated_address
@@ -608,14 +620,14 @@ Outputs:
 Example (Payment ID is empty, use a random ID):
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"payment_id":""}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "integrated_address": "4BpEv3WrufwXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQQ8H2RRJveAtUeiFs6J"
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"payment_id":""}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "integrated_address": "4BpEv3WrufwXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQQ8H2RRJveAtUeiFs6J"
+      }
+    }
 
 
 ### split_integrated_address
@@ -634,15 +646,15 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"split_integrated_address","params":{"integrated_address": "4BpEv3WrufwXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQQ8H2RRJveAtUeiFs6J"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "payment_id": "&lt;420fa29b2d9a49f5&gt;",
-    "standard_address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"split_integrated_address","params":{"integrated_address": "4BpEv3WrufwXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQQ8H2RRJveAtUeiFs6J"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "payment_id": "&lt;420fa29b2d9a49f5&gt;",
+        "standard_address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"
+      }
+    }
 
 
 ### stop_wallet
@@ -656,13 +668,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"stop_wallet"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"stop_wallet"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 
 ### make_uri
@@ -684,14 +696,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_uri","params":{"address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","amount":10,"payment_id":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef","tx_description":"Testing out the make_uri function.","recipient_name":"Monero Project donation address"}}'  -H 'Content-Type: application/json'
-{
-  "id": 0,
-  "jsonrpc": "2.0",
-  "result": {
-    "uri": "monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_uri","params":{"address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","amount":10,"payment_id":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef","tx_description":"Testing out the make_uri function.","recipient_name":"Monero Project donation address"}}'  -H 'Content-Type: application/json'
+    {
+      "id": 0,
+      "jsonrpc": "2.0",
+      "result": {
+        "uri": "monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."
+      }
+    }
 
 
 ### parse_uri
@@ -714,20 +726,20 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"parse_uri","params":{"uri":"monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."}}' -H 'Content-Type: application/json'
-{
-  "id": 0,
-  "jsonrpc": "2.0",
-  "result": {
-    "uri": {
-      "address": "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A",
-      "amount": 10,
-      "payment_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-      "recipient_name": "Monero Project donation address",
-      "tx_description": "Testing out the make_uri function."
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"parse_uri","params":{"uri":"monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."}}' -H 'Content-Type: application/json'
+    {
+      "id": 0,
+      "jsonrpc": "2.0",
+      "result": {
+        "uri": {
+          "address": "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A",
+          "amount": 10,
+          "payment_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+          "recipient_name": "Monero Project donation address",
+          "tx_description": "Testing out the make_uri function."
+        }
+      }
     }
-  }
-}
 
 ### rescan_blockchain
 
@@ -740,13 +752,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"rescan_blockchain" -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"rescan_blockchain" -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 ### set_tx_notes
 
@@ -762,13 +774,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_tx_notes","params":{"txids":["6a1a100c079c236e2cbf36f7760e8ef1a9e8357c434aa790a8c78de653ec4cf2"],"notes":["This is an example"]}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_tx_notes","params":{"txids":["6a1a100c079c236e2cbf36f7760e8ef1a9e8357c434aa790a8c78de653ec4cf2"],"notes":["This is an example"]}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 ### get_tx_notes
 
@@ -785,14 +797,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_tx_notes","params":{"txids":["6a1a100c079c236e2cbf36f7760e8ef1a9e8357c434aa790a8c78de653ec4cf2"]}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "notes": ["This is an example"]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_tx_notes","params":{"txids":["6a1a100c079c236e2cbf36f7760e8ef1a9e8357c434aa790a8c78de653ec4cf2"]}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "notes": ["This is an example"]
+      }
+    }
 
 ### sign
 
@@ -809,14 +821,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign","params":{"data":"This is sample data to be signed"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "signature": "SigV1Xp61ZkGguxSCHpkYEVw9eaWfRfSoAf36PCsSCApx4DUrKWHEqM9CdNwjeuhJii6LHDVDFxvTPijFsj3L8NDQp1TV"
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign","params":{"data":"This is sample data to be signed"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "signature": "SigV1Xp61ZkGguxSCHpkYEVw9eaWfRfSoAf36PCsSCApx4DUrKWHEqM9CdNwjeuhJii6LHDVDFxvTPijFsj3L8NDQp1TV"
+      }
+    }
 
 ### verify
 
@@ -835,14 +847,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"verify","params":{"data":"This is sample data to be signed","address":"9sS8eRU2b5ZbN2FPSrpkiab1bjbHE5XtL6Ti6We3Fhw5aQPudRfVVypjgzKDNkxtvTQZSPs122NKggb2mqcqkKSeMNVu59S","signature":"SigV1Xp61ZkGguxSCHpkYEVw9eaWfRfSoAf36PCsSCApx4DUrKWHEqM9CdNwjeuhJii6LHDVDFxvTPijFsj3L8NDQp1TV"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "good": true
-  }
-}
+    [ monero->~ ]$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"verify","params":{"data":"This is sample data to be signed","address":"9sS8eRU2b5ZbN2FPSrpkiab1bjbHE5XtL6Ti6We3Fhw5aQPudRfVVypjgzKDNkxtvTQZSPs122NKggb2mqcqkKSeMNVu59S","signature":"SigV1Xp61ZkGguxSCHpkYEVw9eaWfRfSoAf36PCsSCApx4DUrKWHEqM9CdNwjeuhJii6LHDVDFxvTPijFsj3L8NDQp1TV"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "good": true
+      }
+    }
 
 ### export_key_images
 
@@ -859,17 +871,17 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"export_key_images"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "signed_key_images": [{
-      "key_image": "62b83df78baad99e23b5ad3f667bc6f8d388a13d9e84c7bb6c223a556dfd34af",
-      "signature": "b87b7e989aa85aa3a2a7cd8adcb3a848d3512ff718b168e15217ff3e5da29c0183c0328b97cc052fcb5ee3548aa5e41e530ba9d854199ea19d7ddaf6a54a4c0a"
-    }]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"export_key_images"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "signed_key_images": [{
+          "key_image": "62b83df78baad99e23b5ad3f667bc6f8d388a13d9e84c7bb6c223a556dfd34af",
+          "signature": "b87b7e989aa85aa3a2a7cd8adcb3a848d3512ff718b168e15217ff3e5da29c0183c0328b97cc052fcb5ee3548aa5e41e530ba9d854199ea19d7ddaf6a54a4c0a"
+        }]
+      }
+    }
 
 ### import_key_images
 
@@ -890,16 +902,16 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"import_key_images", "params":{"signed_key_images":[{"key_image":"63b83df78cafd99e23b5ad3f667bc6f8d38813d9e84c7bb6c223a556dfd34af","signature":"b87b7e989aa86aa2a7a7cd8adcb3a848d3512ff718b168e15217ff3e5da29c0183c0328b97cc052fcb5ee3548aa5e41e530ba9d854199ea19d7ddaf6a54a4c0a"},{"key_image":"44ec12fbc56c533a30b09de8ae26febd515528c4957dfe875430377a7e212b4e","signature":"91105f15be0b25bc2a94bd78a7e261608974d6d888080b9f1815655b98af190340325ea1a0840a5951dacf913d4de1b2bd33ea59c1cb7bce1b6648afa7133d03"}]}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "height": 986050,
-    "spent": 10000100000000,
-    "unspent": 4979852760000
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"import_key_images", "params":{"signed_key_images":[{"key_image":"63b83df78cafd99e23b5ad3f667bc6f8d38813d9e84c7bb6c223a556dfd34af","signature":"b87b7e989aa86aa2a7a7cd8adcb3a848d3512ff718b168e15217ff3e5da29c0183c0328b97cc052fcb5ee3548aa5e41e530ba9d854199ea19d7ddaf6a54a4c0a"},{"key_image":"44ec12fbc56c533a30b09de8ae26febd515528c4957dfe875430377a7e212b4e","signature":"91105f15be0b25bc2a94bd78a7e261608974d6d888080b9f1815655b98af190340325ea1a0840a5951dacf913d4de1b2bd33ea59c1cb7bce1b6648afa7133d03"}]}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "height": 986050,
+        "spent": 10000100000000,
+        "unspent": 4979852760000
+      }
+    }
 
 ### get_address_book
 
@@ -920,24 +932,24 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_address_book","params":{"entries":[1,2]}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "entries": [{
-      "address": "A135xq3GVMdU5qtAm4hN7zjPgz8bRaiSUQmtuDdjZ6CgXayvQruJy3WPe95qj873JhK4YdTQjoR39Leg6esznQk8PckhjRN",
-      "description": "",
-      "index": 1,
-      "payment_id": "0000000000000000000000000000000000000000000000000000000000000000"
-    },{
-      "address": "A135xq3GVMdU5qtAm4hN7zjPgz8bRaiSUQmtuDdjZ6CgXayvQruJy3WPe95qj873JhK4YdTQjoR39Leg6esznQk8PckhjRN",
-      "description": "",
-      "index": 2,
-      "payment_id": "0000000000000000000000000000000000000000000000000000000000000000"
-    }]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_address_book","params":{"entries":[1,2]}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "entries": [{
+          "address": "A135xq3GVMdU5qtAm4hN7zjPgz8bRaiSUQmtuDdjZ6CgXayvQruJy3WPe95qj873JhK4YdTQjoR39Leg6esznQk8PckhjRN",
+          "description": "",
+          "index": 1,
+          "payment_id": "0000000000000000000000000000000000000000000000000000000000000000"
+        },{
+          "address": "A135xq3GVMdU5qtAm4hN7zjPgz8bRaiSUQmtuDdjZ6CgXayvQruJy3WPe95qj873JhK4YdTQjoR39Leg6esznQk8PckhjRN",
+          "description": "",
+          "index": 2,
+          "payment_id": "0000000000000000000000000000000000000000000000000000000000000000"
+        }]
+      }
+    }
 
 ### add_address_book
 
@@ -956,14 +968,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"add_address_book","params":{"address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","description":"Donation address for the Monero project"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "index": 2
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"add_address_book","params":{"address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","description":"Donation address for the Monero project"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "index": 2
+      }
+    }
 
 ### delete_address_book
 
@@ -978,13 +990,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"delete_address_book","params":{"index":0}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"delete_address_book","params":{"index":0}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 ### rescan_spent
 
@@ -997,13 +1009,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"rescan_spent"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"rescan_spent"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 ### start_mining
 
@@ -1020,13 +1032,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"start_mining","params":{"threads_count":1,"do_background_mining":true,"ignore_battery":true}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"start_mining","params":{"threads_count":1,"do_background_mining":true,"ignore_battery":true}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 ### stop_mining
 
 Stop mining in the Monero daemon.
@@ -1038,13 +1050,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"stop_mining"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"stop_mining"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 ### get_languages
 
@@ -1059,14 +1071,14 @@ Outputs:
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_languages"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "languages": ["Deutsch","English","Español","Français","Italiano","Nederlands","Português","русский язык","日本語","简体中文 (中国)","Esperanto"]
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_languages"}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+        "languages": ["Deutsch","English","Español","Français","Italiano","Nederlands","Português","русский язык","日本語","简体中文 (中国)","Esperanto"]
+      }
+    }
 
 ### create_wallet
 
@@ -1083,13 +1095,13 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_wallet","params":{"filename":"mytestwallet","password":"mytestpassword","language":"English"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_wallet","params":{"filename":"mytestwallet","password":"mytestpassword","language":"English"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
 
 ### open_wallet
 
@@ -1105,10 +1117,10 @@ Outputs: *None*.
 Example:
 
 {:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"open_wallet","params":{"filename":"mytestwallet","password":"mytestpassword"}}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-  }
-}
+    [ monero->~ ]$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"open_wallet","params":{"filename":"mytestwallet","password":"mytestpassword"}}' -H 'Content-Type: application/json'
+    {
+      "id": "0",
+      "jsonrpc": "2.0",
+      "result": {
+      }
+    }
