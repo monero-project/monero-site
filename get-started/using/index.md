@@ -34,7 +34,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>There is a large and supportive community that will assist if you experience any difficulty. See our <a href="/community/hangouts/">Hangouts page</a> for more information.</p>
+                        <p>There is a large and supportive community that will assist if you experience any difficulty. See the <a href="/community/hangouts/">Hangouts</a> page for more information.</p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>A Monero wallet is required to secure your own funds. See the <a href="/downloads/">downloads page</a> for a listing of available wallets.</p>
+                        <p>A Monero wallet is required to secure your own funds. See the <a href="/downloads/">Downloads</a> page for a listing of available wallets.</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be used to purchase many goods and services. For a listing, see our <a href="/community/merchants/">Merchants page.</a></p>
+                        <p>Monero may be used to purchase many goods and services. For a listing, see our <a href="/community/merchants/">Merchants</a> page. </p>
                     </div>
                 </div>
             </div>
