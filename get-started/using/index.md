@@ -63,7 +63,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>One may purchase Monero on an <a href="/community/merchants/">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="https://getmonero.org/get-started/mining/">mining</a>, the process whereby transactions are immutably recorded on the blockchain.</p>
+                        <p>Monero may be purchased on an <a href="/community/merchants/">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="https://getmonero.org/get-started/mining/">mining</a>, the computationally-complex process whereby transactions are immutably recorded on the blockchain.</p>
                     </div>
                 </div>
             </div>
