@@ -3,7 +3,7 @@ layout: custom
 title: Using Monero
 ---
 <div class="text-center container description">
-    <p></p>
+    <p>Transacting with Monero can be made easy. This page is designed to guide users in that process.</p>
 </div>
 <div class="using">
     <section class="container">
@@ -13,7 +13,7 @@ title: Using Monero
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Learn</h2>
+                            <h2>1. Learn</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
@@ -30,7 +30,7 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Request Support</h2>
+                            <h2>2. Request Support</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
@@ -42,7 +42,7 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Obtain a Wallet</h2>
+                            <h2>3. Generate a Wallet</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
@@ -59,11 +59,11 @@ title: Using Monero
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Obtain Monero</h2>
+                            <h2>4. Acquire Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>One may purchase Monero on an <a href="/community/merchants/">exchange</a> with fiat or other cryptocurrencies. 
+                        <p>One may purchase Monero on an <a href="/community/merchants/">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="https://getmonero.org/get-started/mining/">mining</a>, the process whereby transactions are immutably recorded on the blockchain.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Send and Receive Monero</h2>
+                            <h2>5. Send and Receive Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
@@ -88,7 +88,7 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Transact with Monero</h2>
+                            <h2>6. Transact with Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
