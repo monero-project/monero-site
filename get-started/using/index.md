@@ -80,7 +80,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Learn how to send and receive Monero by <a href="/get-started/accepting/">viewing our guide</a>.</p>
+                        <p>Learn how to send and receive Monero by viewing the <a href="/get-started/accepting/">guide</a>.</p>
                     </div>
                 </div>
             </div>
