@@ -92,7 +92,7 @@ title: Using Monero
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be used to purchase many goods and services. For a listing, see our <a href="/community/merchants/">Merchants</a> page. </p>
+                        <p>Monero may be used to purchase many goods and services. For a listing, see the <a href="/community/merchants/">Merchants</a> page. </p>
                     </div>
                 </div>
             </div>
