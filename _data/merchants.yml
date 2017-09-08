@@ -175,4 +175,6 @@
     - name: MoneroDice
       url: https://monerodice.net
     - name: SafeDice
-      url: https://safedice.com
+      url: https://safedice.comet
+    - name: XMRLotto.com
+      url: https://xmrlotto.com
