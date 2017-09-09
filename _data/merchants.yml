@@ -18,8 +18,6 @@
       url: https://www.livecoin.net
     - name: LiteBit (Bankwire/GiroPay/iDeal/SOFORT)
       url: https://www.litebit.eu/en/buy/monero
-    - name: MoneroDirect (Euro only)
-      url: https://monerodirect.com
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (Instant)
@@ -32,8 +30,6 @@
       url: https://www.alfacashier.com/
     - name: Kraken (XMRUSD, XMREUR, XMRBTC)
       url: https://www.kraken.com/
-    - name: BIT.AC
-      url: https://bit.ac/
     - name: Kaiserex
       url: https://www.kaiserex.com/
     - name: Magnetic Exchange
