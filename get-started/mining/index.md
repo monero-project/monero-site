@@ -66,9 +66,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-
                        <p>Depending on your hardware, there are various mining programs available for use. You might consider trying different ones and seeing how it affects you hashrate. Please note, that some miners also have developer fees.</p>
-
                     </div>
                     <div class="row miners">
                         <div class="col-md-4 col-xs-12 center-xs">
