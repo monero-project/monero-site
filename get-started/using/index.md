@@ -3,7 +3,7 @@ layout: custom
 title: Using Monero
 ---
 <div class="text-center container description">
-    <p>Using Monero is easy, and there are a variety of tools and guides available to help newcomers. This page will guide you through the basics.</p>
+    <p>Transacting with Monero can be made easy. This page is designed to guide users in that process.</p>
 </div>
 <div class="using">
     <section class="container">
@@ -13,11 +13,11 @@ title: Using Monero
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>1. Start Here</h2>
+                            <h2>1. Learn</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero is a cryptocurrency that allows anonymous transactions around the world. Monero stands on pillars of security, privacy, and decentralization, and the community and developers are committed to protecting these values. We suggest learning more about how Monero works and reading the <a href="/get-started/what-is-monero/">What is Monero page</a>. The <a href="https://github.com/monero-project">source code for Monero</a> and all our official clients are available for public view and discussion on Github.</p>
+                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the <a href="/get-started/what-is-monero/">What is Monero</a> page. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
                     </div>
                 </div>
             </div>
@@ -30,11 +30,11 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>2. Support</h2>
+                            <h2>2. Request Support</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Before reading further, it is important to know that there is a large, supportive community that can assist if you run into trouble. If you have questions about anything, no matter how large or small, don't hesitate to ask. We chill in a lot of places, so see our <a href="/community/hangouts/">Hangouts page</a> to track us down. Remember, there are no stupid questions, and we are all learning together.</p>
+                        <p>There is a large and supportive community that will assist if you experience any difficulty. See the <a href="/community/hangouts/">Hangouts</a> page for more information.</p>
                     </div>
                 </div>
             </div>
@@ -42,11 +42,11 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>3. Getting a Wallet</h2>
+                            <h2>3. Generate a Wallet</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>You need somewhere to store physical cash such as your bank, your wallet, or under your mattress. Although Monero is an entirely digital asset (you cannot touch them!), you still need a place to store them. This is done in a digital wallet. You oversee securing your own funds, and there is no way to restore them if you make a mistake. Thus, take great care in selecting the right wallet for you. Some are safer and others are more convenient than others. See our <a href="/downloads/">downloads page</a> for the wallets that The Monero Project has put out.</p>
+                        <p>A Monero wallet is required to secure your own funds. See the <a href="/downloads/">Downloads</a> page for a listing of available wallets.</p>
                     </div>
                 </div>
             </div>
@@ -59,11 +59,11 @@ title: Using Monero
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>4. Getting Monero</h2>
+                            <h2>4. Acquire Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Empty wallets are no fun! Let’s get some Monero in there! You can receive Monero from someone else, or purchase some on <a href="/community/merchants/">an exchange</a>. We do not endorse specific services, but you can view the exchanges that support Monero on the Merchants page. Depending on the exchange, you can buy Monero from several currencies including USD, EUR, and Bitcoin. For price speculation and talk, join the active trading discussion at <a href="irc://chat.freenode.net/#monero-markets">#monero-markets.</a></p>
+                        <p>Monero may be purchased on an <a href="/community/merchants/">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="https://getmonero.org/get-started/mining/">mining</a>, the computationally-complex process whereby transactions are immutably recorded on the blockchain.</p>
                     </div>
                 </div>
             </div>
@@ -76,11 +76,11 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>5. Transferring Monero</h2>
+                            <h2>5. Send and Receive Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>It is typically a poor idea to leave a large amount of money on an exchange. If you manage your wallet properly, it is a much safer place to store your Monero. Learn how to send and receive Monero by <a href="/get-started/accepting/">viewing our guide</a>, and learn about your risk exposure.</p>
+                        <p>Learn how to send and receive Monero by viewing the <a href="/get-started/accepting/">guide</a>.</p>
                     </div>
                 </div>
             </div>
@@ -88,11 +88,11 @@ title: Using Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>6. Now What?</h2>
+                            <h2>6. Transact with Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>You now have Monero and know how to use it! Monero, like cash, can be used for many goods and services. For a list of some groups that accept Monero directly, see our <a href="/community/merchants/">Merchants page.</a> Other services make it easy to pay Bitcoin addresses with the privacy of Monero.</p>
+                        <p>Monero may be used to purchase many goods and services. For a listing, see the <a href="/community/merchants/">Merchants</a> page. </p>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ title: "Downloads"
 
 <div class="container description" markdown="1">
 
-If you need help choosing the correct application, please click [here](#) for a quick user-guide, then select the appropriate release for your operating system below.
+If you need help choosing the correct application, please click [here](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) for a quick answer, then select the appropriate release for your operating system below.
 Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
 
 </div>
@@ -86,6 +86,11 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 <p>The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href="/community/hangouts/">Hangouts</a> page to see where we are.</p>
 </div>
+</div>
+<div class="row center-xs">
+  <div class="col-xs-12">
+    <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
+  </div>
 </div>
 
 

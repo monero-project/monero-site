@@ -37,6 +37,7 @@ menu:
   people: The People Behind Monero
   userguides: User Guides
   developerguides: Developer Guides
+  vrp: Vulnerability Response Process
   goals: Design & Development Goals
   openalias: The OpenAlias Project
   lab: Monero Research Lab
@@ -89,6 +90,7 @@ blog:
   title_3: Posts
   tagged: Tagged under
   author: Posted by
+  date: Posted at
   forum: Click here to join the discussion for this entry on the Monero Forum
 tags:
   all: Articles by Tag

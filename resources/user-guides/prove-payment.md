@@ -55,6 +55,8 @@ The information supplied by Alice plugs neatly instead of the placeholders. mone
 key to decode the transaction, and display how much this particular transaction sent to this address. Obviously,
 Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
 
+Alternatively, the transaction key can be obtained in the GUI in the History tab. Click on details for each individual transaction to get the key.
+
 Note: if several transactions were made, this needs repeating for each such transaction.
 
 

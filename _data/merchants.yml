@@ -2,10 +2,14 @@
   merchants:
     - name: "#monero-otc (OTC)"
       url: https://webchat.freenode.net?channels=%23monero-otc
-    - name: Bitsquare (decentralized)
-      url: https://bitsquare.io/
+    - name: Alfacashier
+      url: https://www.alfacashier.com/
+    - name: Bitfinex (XMRUSD, XMRBTC)
+      url: https://www.bitfinex.com/
+    - name: Bisq; decentralized exchange (previously Bitsquare)
+      url: https://bisq.io/
     - name: BitMEX
-      url: https://www.bitmex.com/app/trade/XMR7D 
+      url: https://www.bitmex.com/app/trade/XMR7D
     - name: Bittrex
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Bter
@@ -14,10 +18,18 @@
       url: https://www.coincut.com
     - name: Cryptopia
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
+    - name: Kaiserex
+      url: https://www.kaiserex.com/
+    - name: Kraken (XMRUSD, XMREUR, XMRBTC)
+      url: https://www.kraken.com/
+    - name: Liberalcoins
+      url: https://liberalcoins.com/
     - name: Livecoin (BTC and USD trading pairs)
       url: https://www.livecoin.net
     - name: LiteBit (Bankwire/GiroPay/iDeal/SOFORT)
       url: https://www.litebit.eu/en/buy/monero
+    - name: Magnetic Exchange
+      url: https://magneticexchange.com
     - name: MoneroDirect (Euro only)
       url: https://monerodirect.com
     - name: Poloniex
@@ -26,20 +38,6 @@
       url: https://shapeshift.io/
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
-    - name: Bitfinex (XMRUSD, XMRBTC)
-      url: https://www.bitfinex.com/
-    - name: Alfacashier
-      url: https://www.alfacashier.com/
-    - name: Kraken (XMRUSD, XMREUR, XMRBTC)
-      url: https://www.kraken.com/
-    - name: BIT.AC
-      url: https://bit.ac/
-    - name: Kaiserex
-      url: https://www.kaiserex.com/
-    - name: Magnetic Exchange
-      url: https://magneticexchange.com
-    - name: ArbitrCoin
-      url: https://arbitrcoin.com      
 - category: Block Explorers
   merchants:
     - name: ChainRadar
@@ -53,122 +51,132 @@
     - name: xmrchain.net
       url: https://xmrchain.net/
 - category: Payment Gateways
-  merchants:  
+  merchants:
+    - name: GloBee
+      url: https://globee.com/
     - name: Living Room of Satoshi
-      url: https://www.livingroomofsatoshi.com/?sc=xmr  
+      url: https://www.livingroomofsatoshi.com/?sc=xmr
     - name: Monero Merchants
       url: https://monero-merchants.com
-    - name: Paybee (Private Beta)
-      url: https://payb.ee/
     - name: Monero WooCommerce Extension (PHP)
       url: https://github.com/monero-integrations/monerowp
 - category: Libraries and Helpers
   merchants:
+    - name: Monero Integrations (eCommerce plugins)
+      url: http://monerointegrations.com/
     - name: monero-nodejs (Node.js)
       url: https://github.com/PsychicCat/monero-nodejs
-    - name: python-monero (Python)
-      url: https://github.com/tippero/python-monero
-    - name: MoneroPy (Python)
-      url: https://github.com/bigreddmachine/MoneroPy
-    - name: moneronjs (NodeJS)
-      url: https://github.com/netmonk/moneronjs
     - name: MoneroApi.Net (.NET)
       url: https://github.com/Jojatekok/MoneroApi.Net
-    - name: xmr-integration (PHP)
-      url: https://github.com/TheKoziTwo/xmr-integration
-    - name: PHP-Monero (PHP)
-      url: https://github.com/MalMen/PHP-Monero
-    - name: Monero-PHP (PHP)
-      url: https://github.com/PsychicCat/monero-php
+    - name: moneronjs (NodeJS)
+      url: https://github.com/netmonk/moneronjs
     - name: Monero Payments Library (PHP)
       url: https://github.com/monero-integrations/monerophp
+    - name: Monero-PHP (PHP)
+      url: https://github.com/PsychicCat/monero-php
+    - name: MoneroPy (Python)
+      url: https://github.com/bigreddmachine/MoneroPy
+    - name: PHP-Monero (PHP)
+      url: https://github.com/MalMen/PHP-Monero
+    - name: python-monero (Python)
+      url: https://github.com/tippero/python-monero
+    - name: xmr-integration (PHP)
+      url: https://github.com/TheKoziTwo/xmr-integration
 - category: Tools
   merchants:
-    - name: nestorgames
-      url: http://www.nestorgames.com
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
     - name: MoneroBase Price Charts and Tools
       url: http://monerobase.com
+    - name: Monero Monitor for Chrome
+      url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
     - name: MoneroPric.es Price Converter
       url: https://moneropric.es
     - name: MoneroPrice.com Price Converter
       url: http://moneroprice.com/
+    - name: nestorgames
+      url: http://www.nestorgames.com
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
-    - name: Monero Monitor for Chrome
-      url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
 - category: Services
   merchants:
+    - name: algoStrategic - Internet Marketing and Web Development
+      url: https://algostrategic.com
     - name: Azur Samui - Luxury Apartment and Villa Development, Koh, Samui, Thailand
       url: http://www.azursamui.com
     - name: California Fintech Network
       url: https://www.californiafintech.org/plans/
-    - name: Infield Loan Services - Atlanta, Construction Consulting, Contract review, Feasibility, Funds Escrow
-      url: mailto:info@loandraw.com
+      name: Computer Lab - React, Django, Security Consultancy in NYC
+      url: https://computerlab.io
     - name: cloakVPN.com
       url: https://cloakVPN.com
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
+    - name: Elise Hawkins Nutritional Therapy
+      url: www.elisehawkinsnutritionaltherapy.com
+    - name: Emmanuel Galang, Canada Immigration and Refugee Lawyer
+      url: https://galanglaw.com/
     - name: Esperanto lessons from Kaja
       url: mailto:kiah.morante@gmail.com
     - name: Farmer ALP, LLC, Arizona
       url: mailto:farmeralp@gmail.com
+    - name: Flokinet.is
+      url: https://flokinet.is
     - name: Guitar Music Theory course w/ 30% XMR discount
       url: http://www.guitartheoryrevolution.info/blog/guitar-theory-revolution-store/
+    - name: Infield Loan Services - Atlanta, Construction Consulting, Contract review, Feasibility, Funds Escrow
+      url: mailto:info@loandraw.com
+    - name: MSvB Hardware Design (using a secure element)
+      url: mailto:monerodev+sitesvcs@encambio.com?subject=Monero%20Services%20Hardware%20Design%20Request
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
+    - name: Nerdzy Lawn Care
+      url: http://www.nerdzy.net
+    - name: NiceVPS - VPS and web hosting
+      url: https://nicevps.net/
+    - name: Njalla - privacy-aware domain registration
+      url: https://njal.la/
     - name: Pradeep Atluri, Psychiatrist, New York
       url: http://dr.mindsci.com/
-    - name: Simple, no non-sense hosting
+    - name: Rootbox; Simple, no non-sense hosting
       url: https://rootbox.host/
+    - name: Web Developer - Python with Django web framework
+      url: http://www.voteforrodneylewis.com
     - name: Web Developer - Stefanos
       url: http://www.stefanosioannou.com/web-development-monero-accepted
     - name: XMR.to Monero to Bitcoin Payment Service
-      url: https://xmr.to
-    - name: algoStrategic - Internet Marketing and Web Development
-      url: https://algostrategic.com
-    - name: Emmanuel Galang, Canada Immigration and Refugee Lawyer
-      url: https://galanglaw.com/
-    - name: Web Developer - Python with Django web framework
-      url: http://www.voteforrodneylewis.com
-    - name: FlokiNET
-      url: https://flokinet.is
-    - name: Nerdzy Lawn Care
-      url: http://www.nerdzy.net
-    - name: Njalla - privacy-aware domain registration
-      url: https://njal.la/
+      url: https://xmr.to/
 - category: Goods
   merchants:
+    - name: Cellphone and laptop repair online store in Sweden
+      url: http://www.LagaiPhone.se
     - name: CryptoMercado - coffee and snacks
       url: https://www.cryptomercado.com/
     - name: Cryptonic Physical Monero & Bitcoin coins
       url: https://cryptonic.net
-    - name: Fine Art from Jeanine King ~ Artwork of Home/Archtecture, Pets, Potraits, Caricatures ~ International Shipping
-      url: http://art2unlimited.webs.com/
     - name: Digital gift cards
       url: https://giftoff.com/
-    - name: Mushroom cultures, mushroom growing supplies, seeds
-      url: https://www.vesp.co/Fungible
-    - name: Handcrafted goods
-      url: https://mychain.store/
-    - name: Cellphone and laptop repair online store in Sweden
-      url: http://www.LagaiPhone.se
-    - name: InvestmentArt
-      url: http://investmentart.org/
     - name: Directvoltage
       url: http://directvoltage.com
-    - name: Synntech Gaming
-      url: https://synntechgaming.com
-    - name: Elise Hawkins Nutritional Therapy  
-      url: www.elisehawkinsnutritionaltherapy.com
+    - name: Fine Art from Jeanine King ~ Artwork of Home/Archtecture, Pets, Potraits, Caricatures ~ International Shipping
+      url: http://art2unlimited.webs.com/
+    - name: Handcrafted goods
+      url: https://mychain.store/
+    - name: InvestmentArt
+      url: http://investmentart.org/
+    - name: Mushroom cultures, mushroom growing supplies, seeds
+      url: https://www.vesp.co/Fungible
     - name: SilverRound.com - Gold and Silver Dealer
       url: https://silverround.com/
+    - name: Synntech Gaming
+      url: https://synntechgaming.com
 - category: Entertainment
   merchants:
+    - name: Crypto Games
+      url: https://www.crypto-games.net/
     - name: MoneroDice
       url: https://monerodice.net
     - name: SafeDice
       url: https://safedice.com
-    - name: Crypto Games
-      url: https://www.crypto-games.net/
+    - name: XMRLotto.com
+      url: https://xmrlotto.com

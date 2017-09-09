@@ -976,6 +976,10 @@ a:hover, a:focus, a:active {
     outline: 0;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 a, button, input, select, textarea, label, label:checked, label:focus {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
@@ -986,6 +990,23 @@ h1, h2, h3, h4, h5, h6, p {margin: 0; padding: 0;}
 img, video {max-width: 100%;}
 
 video {width: 100%;}
+
+::-webkit-input-placeholder {
+  color: #AAA;
+}
+::-moz-placeholder {
+  color: #AAA;
+}
+:-moz-placeholder {
+  color: #AAA;
+}
+:-ms-input-placeholder {
+  color: #AAA;
+}
+::-ms-input-placeholder {
+  color: #AAA;
+}
+
 
 .container, .container-fluid {
     margin-left: auto;
@@ -1019,6 +1040,10 @@ video {width: 100%;}
     -moz-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     box-shadow: 0 2px 4px rgba(50,50,93,.1);
+}
+
+.bold {
+    font-weight: 600;
 }
 
 code {
@@ -2517,6 +2542,10 @@ footer {
     text-decoration: none; 
 }
 
+.downloads a img {
+    padding-top: 1rem;
+}
+
 
 .downloads .full>.info-block {
     padding: 4rem 5rem;
@@ -2565,6 +2594,11 @@ footer {
 .download-platforms h2 span.icon-freebsd {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -208px;
+}
+
+.download-platforms h2 span.icon-dragonflybsd {
+    background-image: url(../img/monero-spritesheet.png);
+    background-position: 0 -13rem;
 }
 
 .download-platforms h2 span.icon-github {
@@ -2783,7 +2817,7 @@ footer {
     border-radius: 50%;
 }
 
-.roadmap .tabPanel-content span {
+.roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming {
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
@@ -3015,7 +3049,7 @@ footer {
     padding-top: 0;
 }
     
-.roadmap .tabPanel-content span, .pre-roadmap li {
+.roadmap .tabPanel-content span, .pre-roadmap li, .roadmap .ms-completed, .roadmap .ms-upcoming {
     width: 1rem;
     height: 1rem;
 }
@@ -3226,11 +3260,7 @@ footer {
 }
 
 .hangouts .irc .col-md-4 {
-    padding: 0 0.5rem;
-}
-
-.hangouts .irc a {
-    margin-bottom: 1rem;
+    padding: 1rem 0.5rem;
 }
 
 .hangouts .sequestions a {
@@ -3572,7 +3602,7 @@ footer {
     color: #2f6f9f;
     padding: 0.7rem;
     border-radius: 0.2rem;
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .ffs-status p {
@@ -3582,14 +3612,103 @@ footer {
     font-size: 0.85rem;
 }
 
-.ffs-status.complete {
+.complete .ffs-status {
     background-color: #d7e8d8;
 }
 
-.ffs-status.inprogress {
+.inprogress .ffs-status {
     background-color: #fef2d5;
 }
 
+.progress-numbers p {
+    display: inline-block;
+    padding-top: 1.2rem;
+}
+
+.progress-bar {
+    height: 1rem;
+    position: relative;
+    background: #edebed;
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.07);
+    margin: 1rem 0 1.5rem 0;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: rgb(229,115,37);
+    background-image: linear-gradient(
+        center bottom,
+        rgb(229,115,37) 37%,
+        rgb(231,129,58) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,.07);
+    position: relative;
+    overflow: hidden;
+}
+
+.inprogress .progress-bar span, .complete .progress-bar span {
+    background-color: rgb(97,168,99);
+    background-image: linear-gradient(
+        center bottom,
+        rgb(97,168,99) 37%,
+        rgb(128,185,130) 69%
+    );
+}
+
+.fr-contribute .tab, .fr-contribute .tab:last-of-type, .milestones .tab, .milestones .tab:last-of-type {
+    border: none;
+}
+
+.fr-contribute .tab-content p, .milestones .tab-content p {
+    margin: 0;
+    text-align: left;
+}
+
+.fr-contribute label.accordion, .milestones label.accordion {
+    display: inline-block;
+    padding: 0 2rem 0 1rem;
+    border: 1px solid #ff7519;
+    margin: 0;
+    line-height: 2.7rem;
+    height: 2.7rem;
+    -webkit-transition: background .15s ease;
+    -moz-transition: background .15s ease;
+    -o-transition: background .15s ease;
+    transition: background .15s ease;
+    color: #ff7519;
+    text-transform: uppercase;
+}
+
+.fr-contribute label.accordion:hover, .fr-contribute label.accordion:focus, .fr-contribute  input.accordion[type=checkbox]:checked + label, .milestones label.accordion:hover, .milestones label.accordion:focus, .milestones input.accordion[type=checkbox]:checked + label {
+    background-color: #ff7519;
+    color: #ffffff;
+}
+
+.fr-contribute label.accordion::after, .milestones label.accordion:after {
+    right: 1rem;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #ff7519;
+}
+
+.fr-contribute label.accordion:hover:after, .fr-contribute label.accordion:focus:after, .fr-contribute  input.accordion[type=checkbox]:checked + label:after, .milestones label.accordion:hover:after, .milestones label.accordion:focus:after, .milestones input.accordion[type=checkbox]:checked + label:after {
+    border-top: 4px solid #ffffff;
+}
+
+.fr-contribute label.accordion:focus:after, .fr-contribute  input.accordion[type=checkbox]:checked + label:after, .milestones label.accordion:focus:after, .milestones input.accordion[type=checkbox]:checked + label:after {
+    transform: rotateX(180deg);
+}
+
+.ms-completed, .ms-upcoming {
+    margin-top: 1rem !important;
+}
+
+.milestones .row.roadmap {
+    margin-top: 1.5rem;
+}
 
 @media only screen and (max-width: 75rem) {
     
@@ -3679,6 +3798,10 @@ footer {
     display: none;
 }
     
+.ms-completed, .ms-upcoming {
+    margin-top: 1.2rem !important;
+}
+    
 }
 
 @media only screen and (max-width: 41rem) {
@@ -3697,9 +3820,21 @@ footer {
 
 @media only screen and (max-width: 30rem) {
 
-    .ffs .mobile a.ffs-btn {
-        font-size: 1.25rem;
-    }    
+.ffs .mobile a.ffs-btn {
+    font-size: 1.25rem;
+}  
+    
+.milestones .roadmap .col-xs-1 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+} 
+    
+.milestones .roadmap .col-xs-11 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+}
 }
 
 @media only screen and (max-width: 25rem) {
@@ -3719,7 +3854,7 @@ footer {
     }    
 }
 
-/*************************ACCORDIAN********************************/
+/*************************accordion********************************/
 
 .tab {
   position: relative;
@@ -3732,12 +3867,12 @@ footer {
 .tab:last-of-type {
     border-bottom: 1px solid #d7d7d7;
 }
-input.accordian {
+input.accordion {
   position: absolute;
   display: none;
   z-index: -1;
 }
-label.accordian {
+label.accordion {
   position: relative;
   display: block;
   padding: 1rem 2rem 1rem 0;
@@ -3760,12 +3895,12 @@ label.accordian {
   margin: 0 1rem 1rem 1rem;
 }
 
-input.accordian:checked ~ .tab-content {
+input.accordion:checked ~ .tab-content {
   max-height: 100rem;
   overflow: visible;
 }
 
-label.accordian::after {
+label.accordion::after {
   margin-right: 0;
   content: "";
   position: absolute;
@@ -3783,10 +3918,10 @@ label.accordian::after {
   transition: border-bottom .1s, border-top .1s .1s;
 }
 
-input.accordian[type=checkbox]:checked + label::after {
+input.accordion[type=checkbox]:checked + label::after {
   transform: rotateX(180deg);
 }
-input.accordian[type=radio]:checked + label::after {
+input.accordion[type=radio]:checked + label::after {
   transform: rotateX(180deg);
 }
 

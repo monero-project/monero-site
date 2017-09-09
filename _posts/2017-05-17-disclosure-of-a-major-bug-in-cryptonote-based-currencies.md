@@ -47,3 +47,60 @@ Identity element = "010000000000000000000000000000000000000000000000000000000000
 Curve order (little endian) = "edd3f55c1a631258d69cf7a2def9de1400000000000000000000000000000010"
 
 For each transaction key image, check ((key image * curve order) == (identity element)); reject transaction if false.
+
+### Appendix: Commitment Text \#1
+
+As committed via the payment ID in Monero transaction ID dff7a79e44f9392e19fe5205c389d3e799f89c62d90d624219618d754b806e04, the text below has a sha3-256 (ie. keccak-256) hash of 21f0216fbbdc3dc590903b579282878705ed2adab7d8213328d962c76e806d84:
+
+~~~
+Problem:
+The so-called "key image" as used in Cryptonote coins utilizing elliptic curve ed25519 can be modified in a special way, allowing double-spends. I leave out exact details in this draft to give some time for mitigation.
+
+Hash (keccak-256) of details, to be released later: <4402e902f1ac8cec96a17453dcae307d21a7995a94b76e9c3eb7ca7baeffb8c8> 
+
+
+Mitigation:
+Several options exist for mitigation; I include the simplest, least invasive here.
+
+To mitigate, check key images for correctness by multiplying by the curve order l. Check that the result is the identity element.
+
+I include hexadecimal values of each:
+Identity element = "0100000000000000000000000000000000000000000000000000000000000000"
+Curve order (little endian) = "edd3f55c1a631258d69cf7a2def9de1400000000000000000000000000000010"
+
+For each transaction key image, check ((key image * curve order) == (identity element)); reject transaction if false.
+~~~
+
+### Appendix: Commitment Text \#2
+
+As noted in the previous commitment, the text below has a sha3-256 (ie. keccak-256) hash of 4402e902f1ac8cec96a17453dcae307d21a7995a94b76e9c3eb7ca7baeffb8c8:
+
+~~~
+Dirty Details:
+Adding one of the (non-idenitity) "torsion", or small subgroup, points to a key image allows up to 7 double spends to be performed per output (8 total spends). The reason this is possible is that multiplying any of these small subgroup
+points by 8 returns the identity element (a kind of zero point). This means that multiplying the sum of a "normal" point and a torsion point by 8 (or a multiple of 8) will return the same point as multiplying the normal point by 8;
+the small subgroup point is "factored out". This allows a signature to verify on an alternate key image *so long as* the relevant scalars are multiples of 8. Cryptonote does not use scalars that are automatically multiples of 8 (whereas
+vanilla EdDSA does), but this is only a slight hurdle. An attacker need only choose the relevant scalars to be a multiple of 8 (in certain cases he cannot choose, and must instead create trial scalars until getting the desired result).
+
+Alternate mitigations:
+1. Multiply each key image by 8, then the result by 8^-1 (mod l), to get the proper key image in the correct subgroup. Reject double spends, or if the result is not the same as the input. Unwieldy.
+2. Mutliply each key image by 8 before storing in the key image list/checking for double spends. Quite invasive, as it requires redoing the existing key image list.
+
+
+Extra details:
+Monero's (and all CryptoNote coins') elliptic curve, ed25519, has a basepoint group cofactor of 8. There are 8 subgroups in ed25519, of the following sizes:
+1 ----|
+2     | --- small subgroups
+4     |
+8 ----|
+l (basepoint subgroup) ---|
+2*l                       | --- large subgroups
+4*l                       |
+8*l (all curve points) ---|
+
+Each small subgroup point is contained in the next larger small subgroup, and also in the corresponding large subgroup (superimpose small/large). Each large subgroup is contained in the next larger one as well. The only small subgroup
+point contained in subgroup 1 and l (basepoint subgroup) is the identity element, which works as a kind of zero (no effect on point addition). Mutliplying any point by its subgroup order will return the idenitity element (same as multiplying
+by 0). Mutliplying any point by 2, 4, or 8 will move it to the corresponding most exclusive subgroup (e.g., a point in 8*l subgroup multiplied by 4 would move to the 2*l subgroup, a point in the 8 subgroup multiplied by 2 would move the 4
+subgroup, and so on). Adding a small subgroup (non idenitity) point to a key image in the basepoint subgroup "knocks" it out of that subgroup and into one of the larger ones. Since the order of that subgroup is not l but some multiple,
+multiplying as in the proposed mitigation above does not return the identity element.
+~~~
