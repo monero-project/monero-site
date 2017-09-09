@@ -3226,11 +3226,7 @@ footer {
 }
 
 .hangouts .irc .col-md-4 {
-    padding: 0 0.5rem;
-}
-
-.hangouts .irc a {
-    margin-bottom: 1rem;
+    padding: 1rem 0.5rem;
 }
 
 .hangouts .sequestions a {
