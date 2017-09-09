@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Airgap"
 terms: ["airgap"]
-summary: "An airgap is a security measure to physically seperate a computer or device from all other networks, such as the Internet."
+summary: "An airgap is a security measure to physically separate a computer or device from all other networks, such as the Internet."
 ---
 
 ### The Basics

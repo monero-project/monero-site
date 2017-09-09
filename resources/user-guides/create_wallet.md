@@ -30,14 +30,14 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 ![image7](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/7.png)
 
-- Load monerod by typing in your terminal : "*./monerod*". Wait for the synchronisation with the network (monerod is updating the blockchain you have downloaded in step 4 or is downloading it from scratch). This can take a lot of time the first time, so be patient
+- Load monerod by typing in your terminal : "*./monerod*". Wait for the synchronization with the network (monerod is updating the blockchain you have downloaded in step 4 or is downloading it from scratch). This can take a lot of time the first time, so be patient
 
 ![image8](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/8.png)
 ![image9](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/9.png)
 ![image10](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/10.png)
 ![image11](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/11.png)
 
-- Once monerod is synchronised with the network, open a new terminal, change the directory (cf. step 5), and launch monero-wallet-cli by typing "*./monero-wallet-cli*"
+- Once monerod is synchronized with the network, open a new terminal, change the directory (cf. step 5), and launch monero-wallet-cli by typing "*./monero-wallet-cli*"
 
 ![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/12.png)
 
@@ -66,6 +66,6 @@ attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and
 
 - To exit monerod or monero-wallet-cli just type "*exit*" in the associated terminal
 
-Now to access the portfolio you have just created you will have to launch monerod, wait for it to be synchronised with the network, launch monero-wallet-cli, and type the name of your portfolio and your password.
+Now to access the portfolio you have just created you will have to launch monerod, wait for it to be synchronized with the network, launch monero-wallet-cli, and type the name of your portfolio and your password.
 
 

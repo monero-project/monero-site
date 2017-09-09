@@ -15,7 +15,7 @@ title: "Error 404, Page Not Found"
 
 	<div class="top-left">
 			<div class="not-found-text">
-				<h1 class="not-found-text">Oh no, we couldn't find anything for that link!</h1>
+				<h1 class="not-found-text">Oh no! We couldn't find anything for that link!</h1>
 			</div>
 	</div>
 

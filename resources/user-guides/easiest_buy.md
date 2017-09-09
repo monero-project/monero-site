@@ -9,13 +9,13 @@ icon: "icon_userguides"
 attribution: "<!-- Icon is based on work by Freepik (http://www.freepik.com) and is licensed under Creative Commons BY 3.0 -->"
 ---
 
-## How to obtain monero
+## How to obtain Monero
 
 This is a guide to obtain your own Monero as of 20150919. This is perhaps the easiest way to purchase and hold Monero.
 
-####Step 1: Buy bitcoin
+####Step 1: Buy Bitcoin
 
-There are many ways to buy bitcoin. Perhaps the easiest way is through circle.com. Once you have purchased some bitcoin, you are ready to buy some Monero! Buying bitcoin is straightforward. Please goto circle.com and just follow the instructions there.
+There are many ways to buy Bitcoin. Perhaps the easiest way is through circle.com. Once you have purchased some Bitcoin, you are ready to buy some Monero! Buying Bitcoin is straightforward. Please goto circle.com and just follow the instructions there.
 
 ####Step 2: Set up a mymonero.com account
 
@@ -37,7 +37,7 @@ On the next page, you will see your address.
 
 Copy your address to the clipboard by highlighting the whole thing and hitting ctrl+c (or edit menu, copy), or clicking the little icon next to your address. Save your address somewhere. This is how others will send Monero to you, and what you will use to deposit Monero into your account!
 
-#### Step 3: Buy monero and transfer the monero to your new address
+#### Step 3: Buy Monero and transfer the Monero to your new address
 
 Go to www.shapeshift.io . On the righthand side, of the screen, click icon under "Receive" to select Monero.
 
@@ -52,8 +52,8 @@ In the new screen that pops up, copy the Deposit Address into your clipboard (se
 
 ![image8](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/08.png)
 
-Go back to your circle.com page, hit the "transfer" button, and paste the bitcoin address into the field
-Enter the amount of bitcoin you would like to spend.
+Go back to your circle.com page, hit the "transfer" button, and paste the Bitcoin address into the field
+Enter the amount of Bitcoin you would like to spend.
 
 ![image4](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/04.png)
 ![image9](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/09.png)

@@ -21,7 +21,7 @@ To prove to Charlie that she made a payment to Bob, Alice must supply Charlie th
 
 - the transaction ID, as is done in Bitcoin
 - Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other Cryptonote currencies
+- the transaction's key, which is new with Monero and other CryptoNote currencies
 
 When Alice made the transaction, a one time key was automatically generated just for this transaction. Alice can
 query it thus in monero-wallet-cli (new name for the old simplewallet):

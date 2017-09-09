@@ -23,7 +23,7 @@
   name: i2p
 
 - slug: i8n
-  name: Internationalisation
+  name: Internationalization
 
 - slug: rpc
   name: RPC API

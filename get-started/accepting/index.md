@@ -42,9 +42,9 @@ If you need to check for payments programmatically, then details follow the next
 * Communicate the payment ID and Monero address to the individual who is making payment  
 * Check for the payment using the "payments" command in monero-wallet-cli
 
-### Checking for a Payment Programatically
+### Checking for a Payment Programmatically
 
-In order to check for a payment programatically you can use the get_payments or get_bulk_payments JSON RPC API calls.
+In order to check for a payment programmatically you can use the get_payments or get_bulk_payments JSON RPC API calls.
 
 *get_payments*: this requires a payment_id parameter with a single payment ID.
 
