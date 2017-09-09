@@ -2,77 +2,77 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: 2fbda6f6b1051053703e40cf77b6c6e11334509ad03a3c22d89b6bcb05615910
+  cli_hash: 62c3d35c6d1ac7c73d5a0266e63af4faab8680776e3e149f5ae562d200c22189
   gui_url: win64
   gui_hash: 0eddd423f5f0df236303d8b9225842142b331093eb69e6183f3f694238c371a7
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: da628a45adfcb8be44df06ac904711d644d608c4eb6479a5d256062a5f6d74de
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  cli_hash: 0087b1092090ab270ad9a40ac579c017b9fd85043eca325e433ae598ec65349b
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: fd17d55a8c9e901ff4064c39d9e14786cdd077aff9b3bb556e60d3a5e322050c
+  cli_hash: 8340ace926b23171a369bdbeba5d4e1abba7db33b603ecacc3aa1df4451b957b
   gui_url: mac64
   gui_hash: c80ca68037158216a080e59e90b0a70761cff2f317d3c9cd0eeb661e8e2a1f99
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: mac
 
 - platform: Linux, 64-bit
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: 8db80f8cc4f80d4106db807432828df730a59eac78972ea81652aa6b9bac04ad
+  cli_hash: 42a9df43175a7fe0efcd1aed58e92722f693b44529730e328c73887fb80e7bab
   gui_url: linux64
   gui_hash: 4915473265d58720fd8f019e536c2b7fb02648ab51a8087e84aa1e2434788452
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: abc99f3928f4083bd1a380a869253e07bee9950e0aeb6388e9493bc0f0ec3f53
+  cli_hash: 452ce74dcb8c6af3be0ac0b1f3f90c31020cdf408ccf443507e96860a7aa8171
   gui_url: linux32
   gui_hash: 092b49080c3380666845f7f39823b09f4960ea1e250b84b150856ef33ca30690
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: linux
 
 - platform: ARMv7
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: 8473fa20e0db4a3d3e46120cdf92c55be6a159478c511e21f7b77aa05d6c1910
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  cli_hash: f88e53250b558705ee866cd439a3366666d977e5377ba197aff66f53bd421793
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: arm
 
 - platform: ARMv8
   icon: icon-arm
   cli_url: linuxarm8
   cli_hash: 451f65e4846b92d54859e22a5d92124557b397b4208d8752d5289d0262573c3c
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: arm
 
 - platform: FreeBSD, 64-bit
   id: bsd
   icon: icon-freebsd
   cli_url: freebsd64
-  cli_hash: 4c66a76752e18ae70b5fb1c728f0d2780eb129a6c8c7d0dee7ba02e05d91efae
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  cli_hash: c6373cd82a88ec8c56cedab2e0f65715ea908c9f3517d127db4bc0ecc7532428
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: freebsd
 
 - platform: DragonflyBSD, 64-bit
@@ -80,8 +80,8 @@
   icon: icon-dragonflybsd
   cli_url: dragonflybsd64
   cli_hash: c25c0f603ca5c96cb5963aaa2905edff390b7a97f654106911ffad8639deee7c
-  version: 0.10.3.1
-  tag: Wolfram Warptangent
+  version: 0.11.0.0
+  tag: Helium Hydra
   blockchain: freebsd
 
 - platform: Source Code & Blockchain
