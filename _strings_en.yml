@@ -90,6 +90,7 @@ blog:
   title_3: Posts
   tagged: Tagged under
   author: Posted by
+  date: Posted at
   forum: Click here to join the discussion for this entry on the Monero Forum
 tags:
   all: Articles by Tag

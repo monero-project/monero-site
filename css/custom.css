@@ -2567,6 +2567,11 @@ footer {
     background-position: 0 -208px;
 }
 
+.download-platforms h2 span.icon-dragonflybsd {
+    background-image: url(../img/monero-spritesheet.png);
+    background-position: 0 -13rem;
+}
+
 .download-platforms h2 span.icon-github {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -240px;
@@ -3226,11 +3231,7 @@ footer {
 }
 
 .hangouts .irc .col-md-4 {
-    padding: 0 0.5rem;
-}
-
-.hangouts .irc a {
-    margin-bottom: 1rem;
+    padding: 1rem 0.5rem;
 }
 
 .hangouts .sequestions a {
