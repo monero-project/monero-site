@@ -153,7 +153,7 @@ This is the original cryptonote paper written by the cryptonote team. Reading it
 
 [Annotated Whitepaper](https://downloads.getmonero.org/whitepaper_annotated.pdf)
 
-The Monero Research Lab released an anotated version of the cryptonote whitepaper. This is sort of like an informal review of the claims that are made line-by-line of the whitepaper. It also explains some of the harder concepts in relatively easy to understand terms.
+The Monero Research Lab released an annotated version of the cryptonote whitepaper. This is sort of like an informal review of the claims that are made line-by-line of the whitepaper. It also explains some of the harder concepts in relatively easy to understand terms.
 
 [Surae Noether's Whitepaper Review](https://downloads.getmonero.org/whitepaper_review.pdf)
 
