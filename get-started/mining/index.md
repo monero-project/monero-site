@@ -4,7 +4,7 @@ title: Mining Monero
 ---
 <div class="mining">
 <div class="center-xs container description">
-<p>Monero is a cryptocurrency that relies on Proof-of-Work mining to secure the network. If you'd like to know why mining is necessary and other beginner's questions, see <a href="">this User Guide</a> for more information. Below you'll find some information and resources on how to get started mining Monero.</p>
+<p>Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.</p>
 
 <p><strong>The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.</strong></p>
 </div>
@@ -20,7 +20,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-                    <p>One of the great benefits of mining Monero is the large community around it. There's plenty of places that you can go to, and checking out our <a href="/community/hangouts/">Hangouts</a> page may give you a couple ideas, but there are some specialized communities on reddit (<a href="https://www.reddit.com/r/MoneroMining/" target="_blank">/r/moneromining</a>) and IRC (<a href="irc://chat.freenode.net/#monero-pools" target="_blank">#monero-pools</a>) that you can check out.</p>
+                    <p>See <a href="/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>One of the common ways to mine Monero is to join a pool, although <a href="">mining solo is possible and encouraged.</a> A Monero community member has put together a <a href="http://moneropools.com/">list of trusted Monero pools</a> for you to consider. Remember; join a smaller pool to spread the hashes around!</p>
+                       <p>A listing of trusted Monero pools is found <a href="http://moneropools.com/"> here</a>.</p>
                     </div>
                 </div>
             </div>
@@ -45,11 +45,11 @@ title: Mining Monero
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Hardware</h2>
+                            <h2>Hardware Benchmarking</h2>
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Some people choose to invest in specialized mining hardware in order to increase their mining hashrate. A Monero community member has decided to put together a <a href="http://monerobenchmarks.info/">site for the benchmarks of different GPUs</a>. Results may vary. Feel free to contribute</p>
+                       <p>See <a href="http://monerobenchmarks.info/">here</a> for a listing of GPUs/CPUs and their respective hashrates.</p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Depending on your hardware, there are various mining programs available for use. You might consider trying different ones and seeing how it affects you hashrate. Please note, that some miners also have developer fees.</p>
+                       <p>Note that some miners may have developer fees.</p>
                     </div>
                     <div class="row miners">
                         <div class="col-md-4 col-xs-12 center-xs">
