@@ -7,11 +7,12 @@ Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
 62c3d35c6d1ac7c73d5a0266e63af4faab8680776e3e149f5ae562d200c22189  monero-win-x64-v0.11.0.0.zip
-0087b1092090ab270ad9a40ac579c017b9fd85043eca325e433ae598ec65349b  monero-win-x86-v0.11.0.0.zip
+2fa141a4abd688b32b8832e1075ead4c0a8c1e3d46d3139340eb187c1753c99d  monero-win-x86-v0.11.0.0.zip
 8340ace926b23171a369bdbeba5d4e1abba7db33b603ecacc3aa1df4451b957b  monero-mac-x64-v0.11.0.0.tar.bz2
 42a9df43175a7fe0efcd1aed58e92722f693b44529730e328c73887fb80e7bab  monero-linux-x64-v0.11.0.0.tar.bz2
-452ce74dcb8c6af3be0ac0b1f3f90c31020cdf408ccf443507e96860a7aa8171  monero-linux-x86-v0.11.0.0.tar.bz2
-f88e53250b558705ee866cd439a3366666d977e5377ba197aff66f53bd421793  monero-linux-armv7-v0.11.0.0.tar.bz2
+ade1692369cf2275871d8b09ef14c2e928cee11feabfa7df1765e10589a8e307  monero-linux-x86-v0.11.0.0.tar.bz2
+b5e0b9730477f491ad1333ae32137639325edbdb6e02e2e84368f98593671d84  monero-linux-armv7-v0.11.0.0.tar.bz2
+aa32d21527fcb8306eaaf35decc2f2c7d3ee10766d301bbc63b2d693536b28f0  monero-linux-armv8-v0.11.0.0.tar.bz2
 c6373cd82a88ec8c56cedab2e0f65715ea908c9f3517d127db4bc0ecc7532428  monero-freebsd-x64-v0.11.0.0.tar.bz2
 
 0eddd423f5f0df236303d8b9225842142b331093eb69e6183f3f694238c371a7  monero-gui-win-x64-v0.10.3.1.zip
@@ -22,12 +23,12 @@ c80ca68037158216a080e59e90b0a70761cff2f317d3c9cd0eeb661e8e2a1f99  monero-gui-mac
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlmxorUACgkQVUMt8xzN
-T83/GAf+Kou9Kt1ikIHeJRMNYy01MqvY/AkGtFKSVduLuDte0e+mAbN0qm+ugmZj
-m0FiXl9VHWgJhKJgkI2/nCqu7EYDNBuWLO0k2xqrJL+xLg7sTUhS1lDLF++74qoP
-KQMQ+XBoa+KuBmEC5zUjtQvqdsj8g6RXjcwhSRiFg2X/I3t0eqjjHO980QqzjfVz
-rPE/ClCd4I0BGP6lv11tzzMT+Yx9GoSxNSX2XWG6BvjGgwmhtx4W3p/DZjTDPd+u
-z1n1t5MaOx3mUaVcKUk4h+MucRZMZV3tkrZ60tF+34f8VE+dCeSK3yfKrgW2NCZO
-cHVnsScRnFybjxKL8hlmnc3Sl2Piig==
-=nuf1
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlm1EUkACgkQVUMt8xzN
+T83B9wf/bwUdCZmoDHG5nkP5HrUI7MDUXca2IhqUQSHwL/2KNV7rxTsYqdkbNiBU
+6sJ0QOofzuGlLbYkuPhqQ3aLiQvmQj4CsmCty7y3r1rUnJY2Tb5tQh7sCj/U7/Wg
+trhAQZ3f2gny2qz6rPhOlD01nZfh97xajXfP5fatl4X5+dU0RY3cOnR8yxlzIcTE
+dEAXuZ9sdSBOEStkJOtH5Ffg1v0faT1mNl0JFn0rL7KGOTZdcSRunGapbxZ5BON1
+aDUbzFwpQYBXt98Z6RqKadNoykvQK4v6KTZ/nsd/7QHgNc0zsLJQDOwMYPVunCx2
+WpkRFTk6b+1BK/oI7DsJXe0qJg0vNg==
+=JFyO
 -----END PGP SIGNATURE-----

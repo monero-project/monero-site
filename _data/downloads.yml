@@ -12,7 +12,7 @@
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: 0087b1092090ab270ad9a40ac579c017b9fd85043eca325e433ae598ec65349b
+  cli_hash: 2fa141a4abd688b32b8832e1075ead4c0a8c1e3d46d3139340eb187c1753c99d
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: win
@@ -42,7 +42,7 @@
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: 452ce74dcb8c6af3be0ac0b1f3f90c31020cdf408ccf443507e96860a7aa8171
+  cli_hash: ade1692369cf2275871d8b09ef14c2e928cee11feabfa7df1765e10589a8e307
   gui_url: linux32
   gui_hash: 092b49080c3380666845f7f39823b09f4960ea1e250b84b150856ef33ca30690
   version: 0.11.0.0
@@ -53,7 +53,7 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: f88e53250b558705ee866cd439a3366666d977e5377ba197aff66f53bd421793
+  cli_hash: b5e0b9730477f491ad1333ae32137639325edbdb6e02e2e84368f98593671d84
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: arm
