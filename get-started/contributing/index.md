@@ -18,14 +18,14 @@ Monero is an open-source, community-driven project. Described below are several 
                             </div>
 <div class="row start-xs" markdown="1">
 
-### Code
-Monero is primarily written in C++. As it is a decentralized project, no permission is required to generate new code or modify existing code. Pull requests are merged based on community consensus. See the <a href="https://github.com/monero-project"> repositories</a> and outstanding <a href="https://github.com/monero-project/monero/issues">issues.</a>
+### Develop
+Monero is primarily written in C++. As it is a decentralized project, anyone is welcome to add or make changes to existing code. Pull requests are merged based on community consensus. See the <a href="https://github.com/monero-project"> repositories</a> and outstanding <a href="https://github.com/monero-project/monero/issues">issues</a>.
 
 ### Run a Full Node
-Run monerod with port 18080 open. Running a full node allows for maximum privacy when transacting with Monero and improved distribution of the blockchain to new users. 
+Run monerod with port 18080 open. Running a full node ensures maximum privacy when transacting with Monero. It also improves distribution of the blockchain to new users. 
 
 ### Mine
-Mining ensures decentralization and security of the network. In the Monero graphical user interface and command-line interface, background mining may be activated. Additional resources for mining may be viewed [here](https://reddit.com/r/MoneroMining).
+Mining ensures the Monero network remains decentralized and secure. In the Monero graphical user interface and command-line interface, background mining may be activated. Additional resources for mining may be viewed [here](https://reddit.com/r/MoneroMining).
 
 </div>
                         </div>
@@ -68,19 +68,19 @@ Mining ensures decentralization and security of the network. In the Monero graph
                             <div class="row start-xs">
                                <div class="col-xs-12">
                                 <h3>Donating Monero</h3>
-                                <p>XMR donations may be sent to donate.getmonero.org or 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
+                                <p>Donations may be sent to donate.getmonero.org or 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
                                </div>
                             </div>
                             <div class="row start-xs">
                                <div class="col-xs-12">
                                 <h3>Donating Bitcoin</h3>
-                                <p>BTC donations may be sent to donate.getmonero.org or 1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</p>
+                                <p>Donations may be sent to donate.getmonero.org or 1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</p>
                                 </div>
                             </div>
                             <div class="row start-xs">
                                <div class="col-xs-12">
                                     <h3>Other</h3>
-                                    <p>E-mail the core team at <a href="mailto:dev@getmonero.org">dev@getmonero.org</a> for alternative means of donating.</p>
+                                    <p>E-mail <a href="mailto:dev@getmonero.org">dev@getmonero.org</a> for alternative means of donating.</p>
                                </div>
                             </div>
                         </div>
