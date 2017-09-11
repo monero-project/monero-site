@@ -105,7 +105,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <div class="row">
 
 <h4 id="{{ data_downloads.platform | slugify }}">
- <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }} (GUI Beta 2)</a>
+ <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
  </h4></div>
 <div class="row">
 <p><strong>SHA256 Hash:</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
@@ -115,7 +115,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <div class="col-md-6 col-sm-12" >
 
 <h4 id="{{ data_downloads.platform | slugify }}">
- <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }} (GUI Beta 2)</a>
+ <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
 </h4>
 <p><strong>SHA256 Hash (GUI):</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
 
