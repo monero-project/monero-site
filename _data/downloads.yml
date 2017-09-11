@@ -2,9 +2,9 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: 62c3d35c6d1ac7c73d5a0266e63af4faab8680776e3e149f5ae562d200c22189
+  cli_hash: afafa1067ed0b000685084dff1e7ab044425fc323ae8761558b02c9a36a9011c
   gui_url: win64
-  gui_hash: 0eddd423f5f0df236303d8b9225842142b331093eb69e6183f3f694238c371a7
+  gui_hash: e4f3c7203b383845945a25e4f00e49ce80982b8fe34131bb39d42f04f0b671f4
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: win
@@ -12,7 +12,7 @@
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: 2fa141a4abd688b32b8832e1075ead4c0a8c1e3d46d3139340eb187c1753c99d
+  cli_hash: 5f0286b50e3dd19272329ab5150de2d652d1f460d3842836c21dab8c7010344b
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: win
@@ -21,9 +21,9 @@
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: 8340ace926b23171a369bdbeba5d4e1abba7db33b603ecacc3aa1df4451b957b
+  cli_hash: 12617e006237e271e27ecbc34047c3804b68c48e87e5ffe524abcac466579b05
   gui_url: mac64
-  gui_hash: c80ca68037158216a080e59e90b0a70761cff2f317d3c9cd0eeb661e8e2a1f99
+  gui_hash: f6e14fb4956d95dd8f49056259188cf43d37eb9dbd1e3a5a38b5d14ee8291be5
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: mac
@@ -32,9 +32,9 @@
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: 42a9df43175a7fe0efcd1aed58e92722f693b44529730e328c73887fb80e7bab
+  cli_hash: fa7742c822f3c966aa842bf20a9920803d690d9db02033d9b397cefc7cc07ff4
   gui_url: linux64
-  gui_hash: 4915473265d58720fd8f019e536c2b7fb02648ab51a8087e84aa1e2434788452
+  gui_hash: 3446f1b6487decdfe8e57a863fbfe3f2bedf043e421812674067c40928340eaa
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: linux
@@ -42,9 +42,9 @@
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: ade1692369cf2275871d8b09ef14c2e928cee11feabfa7df1765e10589a8e307
+  cli_hash: d1e503e0e5c327a7c3ba8a55a2c227f04acdca47b8396c2cd35c583919056dec
   gui_url: linux32
-  gui_hash: 092b49080c3380666845f7f39823b09f4960ea1e250b84b150856ef33ca30690
+  gui_hash: 9eea3fcd87357f9ef8b7a59a23ead208d7d3d9adfcba02ed73079f8fb1e5ad83
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: linux
@@ -53,7 +53,7 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: b5e0b9730477f491ad1333ae32137639325edbdb6e02e2e84368f98593671d84
+  cli_hash: 491e42a29f09b927c9b1311c4682ced7bc7cbb51e2a6469b74ae42ef647d59ab
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: arm
@@ -61,7 +61,7 @@
 - platform: ARMv8
   icon: icon-arm
   cli_url: linuxarm8
-  cli_hash: 451f65e4846b92d54859e22a5d92124557b397b4208d8752d5289d0262573c3c
+  cli_hash: 61b4b2aa79a0653f0809c29c5846517e40033dba78779155a26a4a4cf7e0c4d8
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: arm
@@ -70,7 +70,7 @@
   id: bsd
   icon: icon-freebsd
   cli_url: freebsd64
-  cli_hash: c6373cd82a88ec8c56cedab2e0f65715ea908c9f3517d127db4bc0ecc7532428
+  cli_hash: 9cabc1f22674d787009a339796994ac67d1f2c00c13e5d1fbb6f63f7df9d57b0
   version: 0.11.0.0
   tag: Helium Hydra
   blockchain: freebsd
