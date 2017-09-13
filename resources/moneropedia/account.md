@@ -31,28 +31,43 @@ The private keys for both of these must be protected by you in order to retain y
 
 When you manage your own Monero Account with the private @spend-key, you are solely responsible for the security of your funds. Thankfully, Monero makes it very easy to backup your account. When creating a Monero account for the first time you will be given a unique @mnemonic-seed for your account that consists of 13 or 25 words in the language of your choosing. **This seed is the only thing you need to backup for your account**, and so it is imperative that it is written down and stored securely.  Never store this seed in a form or location that would allow someone else to see it!
 
-{:.cli-code}
+```
 List of available languages for your wallet's seed:
-0 : English
-1 : Spanish
-2 : Portuguese
-3 : Japanese
-Enter the number corresponding to the language of your choice: 0
+0 : Deutsch
+1 : English
+2 : Español
+3 : Français
+4 : Italiano
+5 : Nederlands
+6 : Português
+7 : русский язык
+8 : 日本語
+9 : 简体中文 (中国)
+10 : Esperanto
+Enter the number corresponding to the language of your choice: 1
 Generated new wallet: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmhZEWD6XoFDGz55bgzisT9Dnv61sbsA6Sa47TYu
 view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+**********************************************************************
 Your wallet has been generated.
-To start synchronizing with the daemon use "refresh" command.
+To start synchronizing with the daemon, use "refresh" command.
 Use "help" command to see the list of available commands.
-Always use "exit" command when closing monero-wallet-cli to save
-current session's state. Otherwise, you will possibly need to synchronize 
-your wallet again. Your wallet key is NOT under risk anyway.<br>
-<span style="color: lime;">PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.</span><br>
+Always use "exit" command when closing monero-wallet-cli to save your
+current session's state. Otherwise, you might need to synchronize 
+your wallet again (your wallet keys are NOT at risk in any case).
+
+PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.
+
 aunt knuckle italics moisture hawk thorn iris abort
 chlorine smog uphill glass aptitude nowhere sewage plywood
 dual relic fierce divers anvil nodes bubble cabin abort
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-<span style="color: yellow;">[wallet 4B15Zj]: </span> <span style="color: gray;">█</span><br>
+**********************************************************************
+Starting refresh...
+Refresh done, blocks received: 21939                            
+Balance: 0.000000000000, unlocked balance: 0.000000000000
+Background refresh thread started
+[wallet 4B15Zj]: █
+
+```
 
 As the example above indicates, it is incredibly important to store these words in safe locations. If you are concerned about the risk of critical loss at your home, for instance, you may want to store a second copy of your seed with your attorney or in a safety deposit box. It is also recommended that it is stored in a way that does not make it obvious that it is your seed, so writing it into a letter or as part of other notes is advisable.
 
