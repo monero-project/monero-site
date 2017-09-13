@@ -15,7 +15,7 @@ The following businesses have supported the Monero Project in its goal to bring 
                     <div class="row center-xs">
                         <div class="col">
                             <h2>My Monero</h2>
-                            <a href="https://mymonero.com/#/" target="_blank"><img src="/img/mymonero.png"></a>
+                            <a href="https://mymonero.com/#/" target="_blank" rel="noreferrer, noopener"><img src="/img/mymonero.png"></a>
                         </div>
                     </div>
                 </div>
