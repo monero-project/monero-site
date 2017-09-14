@@ -18,7 +18,7 @@ https://getmonero.org/downloads/
 
 -------------  
 
-Approximately the 15th of September there will be a scheduled protocol upgrade on the Monero network. Most pools have upgraded or are in the process of upgrading, but some have not upgraded yet. If they don't upgrade before the scheduled protocol upgrade they will get booted off the network. As a result you will miss out on revenue if you are mining on these pools. Thus, if you are mining on one of the pools that hasn't upgraded yet or hasn't scheduled an upgrade, please contact your pool owner as soon as possible and urge them to upgrade. Alternatively, you can switch to a pool that is on the right version.  
+Approximately on the 15th of September there will be a scheduled protocol upgrade on the Monero network. While some pools have already upgraded, some pools are not updated yet or are in the process of upgrading. If they don't upgrade before the scheduled protocol upgrade, they will get booted off the network. As a result, you will miss out on revenue if you are mining on these pools. Thus, if you are mining on one of the pools that hasn't upgraded yet or hasn't scheduled an upgrade, please contact your pool owner as soon as possible and urge them to upgrade. Alternatively, you can switch to a pool that is on the correct version.  
 
 A list of pools and services and their respective statuses can be found [here](https://www.reddit.com/r/Monero/comments/6yuv2s/psa_users_solominers_exchangesmerchantsservices/).  
 
@@ -30,7 +30,7 @@ Bear in mind that running CLI v0.11.0.0 or GUI v0.11.0.0 is mandatory. Any other
 
 The scheduled protocol upgrade was introduced to enforce RingCT transactions and to bump the minimum ring size to 5 (mixin 4). Note that, after this scheduled protocol upgrade, you are still able to transform non RingCT outputs to RingCT outputs in a "one-time" transaction. Thus, you **don't** need to sweep a paper wallet if it contains non RingCT outputs.   
 
-Due to variance the scheduled protocol upgrade will take place on or around the 15th of September. There is, however, no specific date as the hard fork will be triggered by a specific blockheight. The specific blockheight for the hardfork can be found [here](https://github.com/monero-project/monero/blob/master/src/cryptonote_core/blockchain.cpp#L105). That is:  
+Due to variance, the scheduled protocol upgrade will take place on or around the 15th of September. There is, however, no specific date as the hard fork will be triggered by a specific blockheight. The specific blockheight for the hardfork can be found [here](https://github.com/monero-project/monero/blob/master/src/cryptonote_core/blockchain.cpp#L105). That is:  
 
 > // version 6 starts from block 1400000, which is on or around the 16th of September, 2017. Fork time finalised on 2017-08-18.  
 
