@@ -11,7 +11,8 @@ Merchants of all kinds have come to value the financial privacy that Monero brin
        <div class="info-block">
         <h2>{{toplevel.category}}</h2>
         <div class="row">
-           {% for merchants in toplevel.merchants %}
+            {% assign sortedMerchants = toplevel.merchants | sort: 'name' %}
+            {% for merchants in sortedMerchants %}
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="{{merchants.url}}">{{merchants.name}}</a>
             </div>
