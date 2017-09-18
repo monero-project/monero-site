@@ -3,11 +3,11 @@ layout: static_page
 title: Wallet/Daemon Isolation with Qubes + Whonix
 ---
 
-With [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) we can have a Monero wallet that is without networking and running on a virtualy isolated system from the Monero daemon which has all of its traffic forced over [Tor](https://torproject.org).
+With [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) you can have a Monero wallet that is without networking and running on a virtually isolated system from the Monero daemon which has all of its traffic forced over [Tor](https://torproject.org).
 
-Qubes gives us the flexibility to easily create separate VMs for different purposes. We first create a Whonix gateway which routes all traffic over Tor. Next a Whonix workstation for the wallet with no networking. Lastly, another Whonix workstation for the daemon which will use our Whonix gateway as it's NetVM. For communication between the wallet and daemon we will make use of Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
+Qubes gives you the flexibility to easily create separate VMs for different purposes. First you will create a Whonix gateway which will route all traffic over Tor. Next a Whonix workstation for the wallet with no networking. Lastly, another Whonix workstation for the daemon which will use your Whonix gateway as it's NetVM. For communication between the wallet and daemon you can make use of Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
 
-This is a safer approach than other guides I've seen which route the wallets rpc over a Tor hidden service, or that use physical isolation but still have networking to connect to the daemon. In this way we don't need any network connection on the wallet at all, we preserve resources of the Tor network, and there is less latency.
+This is safer than other approaches which route the wallets rpc over a Tor hidden service, or that use physical isolation but still have networking to connect to the daemon. In this way you don't need any network connection on the wallet at all, you preserve resources of the Tor network, and there is less latency.
 
 This is slightly less safe than having a non-networked hardware wallet.
 
