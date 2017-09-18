@@ -6,8 +6,6 @@ tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*August 6th, 2017*  
-
 # Logs  
 
 **\<anonimal>** Alright, meeting time.  

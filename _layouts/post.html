@@ -28,9 +28,8 @@ layout: base
                     <div class="info-block">
                         <div class="row">
                         <div class="col"><h2>{{ page.title }}</h2>
-                          <p class="author">{% t blog.author %}: {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</p>
-                          <p id="post-meta">{% t blog.date %} : {{ page.date }}</p>
-                        </div>
+                        <p class="author">{% t blog.author %}: {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</p></div>
+                        <p>{{ page.date | date: '%B %d, %Y' }}</p>
                     </div>
                     <div>
                         {{content}}

@@ -6,8 +6,6 @@ tags: [community, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*July 16th, 2017*  
-
 # Logs  
 
 **\<rehrar>** Heyo everyone! It's 18:30 UTC, so it's time to start. I'd like to extend a huge welcome to our third Monero community meeting!  
