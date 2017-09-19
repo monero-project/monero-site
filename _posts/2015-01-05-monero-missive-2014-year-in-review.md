@@ -7,8 +7,6 @@ author: Riccardo Spagni (fluffypony)
 forum: https://forum.getmonero.org/1/news-and-announcements/134/monday-monero-missives-22-year-in-review-january-5th-2015
 ---
 
-*January 5th, 2015*
-
 Hello, and welcome to our twenty-second Monero Monday Missive!
 
 This is our first Missive for 2015, after a 2 week break over the end of December. We'd like to earnestly thank everyone for their support over the course of this year, and for joining us on the start of our Monero journey. We'd also like to take this opportunity to look back on the past 8 months, and see where we got to.

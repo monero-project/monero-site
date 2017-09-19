@@ -6,8 +6,6 @@ tags: [releases]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*December 22nd, 2016*
-
 ### Overview
 
 The first beta of the Monero Core GUI has been released. Note that, at this time, we have not completed support for 32-bit Windows, FreeBSD, and ARMv7 Linux devices. They are all being worked on, and we hope to complete support for them by the time of the first release.

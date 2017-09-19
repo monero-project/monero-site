@@ -6,8 +6,6 @@ tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---  
 
-*October 30th, 2016*  
-
 ### Logs  
 
 **\<fluffypony>** alright anonimal, the floor is yours  

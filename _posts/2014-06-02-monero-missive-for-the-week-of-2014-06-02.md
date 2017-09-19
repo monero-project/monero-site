@@ -6,8 +6,6 @@ tags: [monero missives, branding, mining, compliance]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*June 2nd, 2014*
-
 This is the start of a slightly more formal way of keeping everyone updated as to what we're doing in Monero. On an ongoing weekly basis we'll post an update on what has happened over the past week, as well as a dev diary highlighting work done on major efforts. If you'd like to get involved with Monero don't ask for permission - just get stuck in:) Fork the repo, make changes, submit a pull-request, and let's discuss it.
 
 Also an important note on updates: Our policy is to only provide announcements on projects which are either complete or near completion. We'd like to focus on providing you with the most accurate and reliable news, without generating any type of investor hype or speculation. As Monero is still a project in its infancy, and there is a great deal of work still to be done, we want to make sure you are getting an honest overview of our ongoing progress.

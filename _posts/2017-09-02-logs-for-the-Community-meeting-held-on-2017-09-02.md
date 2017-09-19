@@ -5,9 +5,7 @@ summary: Community highlights, Forum Funding System updates and discussion of ne
 tags: [community, crypto]  
 author: dEBRUYNE / fluffypony  
 ---  
-  
-*September 2nd, 2017*    
-  
+    
 # Logs    
   
 **\<sgp>** 0. Introduction  

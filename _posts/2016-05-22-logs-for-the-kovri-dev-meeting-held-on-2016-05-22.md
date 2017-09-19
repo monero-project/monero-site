@@ -5,9 +5,7 @@ summary: GNU Social status, Kovri website, i2p StackExchange, Coverity for Kovri
 tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---
- 
-*May 22nd, 2016*
- 
+  
 # Logs
 
 **\<fluffypony>** ok starting the meeting relay for the Kovri meeting  

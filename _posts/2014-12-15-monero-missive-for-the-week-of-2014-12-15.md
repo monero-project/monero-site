@@ -7,8 +7,6 @@ author: Riccardo Spagni (fluffypony)
 forum: 
 ---
 
-*December 15th, 2014*
-
 Hello, and welcome to our twenty-first Monero Monday Missive!
 
 **Major Updates**

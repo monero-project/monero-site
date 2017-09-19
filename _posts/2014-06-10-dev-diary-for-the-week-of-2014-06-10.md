@@ -6,7 +6,6 @@ tags: [dev diaries, mining, i2p, rpc, docs]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*June 10th, 2014*
 
 **RPC:** incoming_transfers is now available as a simplewallet RPC API call, and payment_id has been added as an optional argument to the transfer RPC API call. Neozaru also committed a large amount of additional functionality to the RPC API, including progress estimation to getinfo.
 

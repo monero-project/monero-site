@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*May 8th, 2016*
-
 # Logs
 
 **\<fluffypony>** hyc, moneromooo, smooth, luigi1111w, luigi1112, luigi1114, ArticMine, NoodleDoodle, tewinget: meeting starting  

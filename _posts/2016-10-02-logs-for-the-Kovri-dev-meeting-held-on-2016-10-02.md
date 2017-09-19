@@ -6,8 +6,6 @@ tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*October 2nd, 2016*
-
 ### Overview
 
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monero-and-kovri-dev-meeting-note-highlights-2016-10-02)
