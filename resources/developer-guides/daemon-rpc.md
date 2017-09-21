@@ -49,18 +49,20 @@ Note: "atomic units" refer to the smallest fraction of 1 XMR according to the mo
 
 The majority of monerod RPC calls use the daemon's `json_rpc` interface to request various bits of information. These methods all follow a similar structure, for example:
 
-    IP=127.0.0.1
-    PORT=18081
-    METHOD='getblockheaderbyheight'
-	PARAMS='{"height":912345}'
-	curl \
-		-X POST http://$IP:$PORT/json_rpc \
-		-d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'$PARAMS'}' \
-		-H 'Content-Type: application/json'
+```
+IP=127.0.0.1
+PORT=18081
+METHOD='getblockheaderbyheight'
+PARAMS='{"height":912345}'
+curl \
+    -X POST http://$IP:$PORT/json_rpc \
+    -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'$PARAMS'}' \
+    -H 'Content-Type: application/json'
+```
 
 Some methods include parameters, while others do not. Examples of each JSON RPC method follow.
 
-### getblockcount
+### **getblockcount**
 
 Look up how many blocks are in the longest chain known to the node.
 
@@ -73,19 +75,21 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockcount"}' -H 'Content-Type: application/json'
-{
-  "id": "0",
-  "jsonrpc": "2.0",
-  "result": {
-    "count": 993163,
-    "status": "OK"
-  }
-}
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockcount"}' -H 'Content-Type: application/json'  
+
+{  
+  "id": "0",  
+  "jsonrpc": "2.0",  
+  "result": {  
+    "count": 993163,  
+    "status": "OK"  
+  }  
+}  
+```
 
 
-### on_getblockhash
+### **on_getblockhash**
 
 Look up a block's hash by its height.
 
@@ -99,16 +103,18 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"on_getblockhash","params":[912345]}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"on_getblockhash","params":[912345]}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": "e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6"
 }
+```
 
 
-### getblocktemplate
+### **getblocktemplate**
 
 Inputs:
 
@@ -126,8 +132,9 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblocktemplate","params":{"wallet_address":"44GBHzv6ZyQdJkjqZje6KLZ3xSyN1hBSFAnLP6EAqJtCRVzMzZmeXTC2AHKDS9aEDTRKmo6a6o9r9j86pYfhCWDkKjbtcns","reserve_size":60}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblocktemplate","params":{"wallet_address":"44GBHzv6ZyQdJkjqZje6KLZ3xSyN1hBSFAnLP6EAqJtCRVzMzZmeXTC2AHKDS9aEDTRKmo6a6o9r9j86pYfhCWDkKjbtcns","reserve_size":60}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -140,8 +147,10 @@ Example:
     "status": "OK"
   }
 }
+```
 
-### submitblock
+
+### **submitblock**
 
 Submit a mined block to the network.
 
@@ -154,7 +163,7 @@ Outputs:
 * *status* - string; Block submit status.
 
 
-### getlastblockheader
+### **getlastblockheader**
 
 Block header information for the most recent block is easily retrieved with this method. No inputs are needed.
 
@@ -178,8 +187,9 @@ Outputs:
 
 In this example, the most recent block (990793 at the time) is returned:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getlastblockheader"}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getlastblockheader"}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -200,9 +210,10 @@ In this example, the most recent block (990793 at the time) is returned:
     "status": "OK"
   }
 }
+```
 
 
-### getblockheaderbyhash
+### **getblockheaderbyhash**
 
 Block header information can be retrieved using either a block's hash or height. This method includes a block's hash as an input parameter to retrieve basic information about the block.
 
@@ -216,8 +227,9 @@ Outputs:
 
 In this example, block 912345 is looked up by its hash:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyhash","params":{"hash":"e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6"}}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyhash","params":{"hash":"e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6"}}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -238,9 +250,10 @@ In this example, block 912345 is looked up by its hash:
     "status": "OK"
   }
 }
+```
 
 
-### getblockheaderbyheight
+### **getblockheaderbyheight**
 
 Similar to `getblockheaderbyhash` above, this method includes a block's height as an input parameter to retrieve basic information about the block.
 
@@ -254,8 +267,9 @@ Outputs:
 
 In this example, block 912345 is looked up by its height (notice that the returned information is the save as in the previous example):
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyheight","params":{"height":912345}}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyheight","params":{"height":912345}}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -276,9 +290,10 @@ In this example, block 912345 is looked up by its height (notice that the return
     "status": "OK"
   }
 }
+```
 
 
-### getblock
+### **getblock**
 
 Full block information can be retrieved by either block height or hash, like with the above block header calls. For full block information, both lookups use the same method, but with different input parameters.
 
@@ -316,8 +331,9 @@ Outputs:
 
 In the following example, block 912345 is looked up by its height. Note that block 912345 does not have any non-coinbase transactions. (See the next example for a block with extra transactions):
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblock","params":{"height":912345}}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblock","params":{"height":912345}}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -340,13 +356,15 @@ In the following example, block 912345 is looked up by its height. Note that blo
     "status": "OK"
   }
 }
+```
 
 **Look up by hash:**
 
 In the following example, block 993056 is looked up by its hash. Note that block 993056 has 3 non-coinbase transactions:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblock","params":{"hash":"510ee3c4e14330a7b96e883c323a60ebd1b5556ac1262d0bc03c24a3b785516f"}}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblock","params":{"hash":"510ee3c4e14330a7b96e883c323a60ebd1b5556ac1262d0bc03c24a3b785516f"}}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -370,9 +388,10 @@ In the following example, block 993056 is looked up by its hash. Note that block
     "tx_hashes": ["79c6b9f00db027bde151705aafe85c495883aae2597d5cb8e1adb2e0f3ae1d07","d715db73331abc3ec588ef07c7bb195786a4724b08dff431b51ffa32a4ce899b","b197066426c0ed89f0b431fe171f7fd62bc95dd29943daa7cf3585cf1fdfc99d"]
   }
 }
+```
 
 
-### get_connections
+### **get_connections**
 
 Retrieve information about incoming and outgoing connections to your node.
 
@@ -400,8 +419,9 @@ Outputs:
 
 Following is an example of `get_connections` and it's return:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_connections"}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_connections"}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -429,9 +449,10 @@ Following is an example of `get_connections` and it's return:
     "status": "OK"
   }
 }
+```
 
 
-### get_info
+### **get_info**
 
 Retrieve general information about the state of your node and the network.
 
@@ -456,8 +477,9 @@ Outputs:
 
 Following is an example `get_info` call and its return:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_info"}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_info"}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -478,9 +500,10 @@ Following is an example `get_info` call and its return:
     "white_peerlist_size": 529
   }
 }
+```
 
 
-### hard_fork_info
+### **hard_fork_info**
 
 Look up information regarding hard fork voting and readiness.
 
@@ -500,8 +523,9 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"hard_fork_info"}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"hard_fork_info"}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -517,9 +541,10 @@ Example:
     "window": 10080
   }
 }
+```
 
 
-### setbans
+### **setbans**
 
 Ban another node by IP.
 
@@ -536,8 +561,9 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"setbans","params":{"bans":[{"ip":838969536,"ban":true,"seconds":30}]}}' -H  'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"setbans","params":{"bans":[{"ip":838969536,"ban":true,"seconds":30}]}}' -H  'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -545,9 +571,10 @@ Example:
     "status": "OK"
   }
 }
+```
 
 
-### getbans
+### **getbans**
 
 Inputs: *None*.
 
@@ -560,8 +587,9 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbans"}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbans"}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -573,6 +601,7 @@ Example:
     "status": "OK"
   }
 }
+```
 
 
 ---
@@ -595,7 +624,7 @@ The data structure for these calls is different than the JSON RPC calls. Whereas
 Note: It is recommended to use JSON RPC where such alternatives exist, rather than the following methods. For example, the recommended way to get a node's height is via the JSON RPC methods [get_info](#getinfo) or [getlastblockheader](#getlastblockheader), rather than [getheight](#getheight) below.
 
 
-### /getheight
+### **/getheight**
 
 Get the node's current height.
 
@@ -605,15 +634,17 @@ Outputs:
 
 * *height* - unsigned int; Current length of longest chain known to daemon. 
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/getheight -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/getheight -H 'Content-Type: application/json'
+
 {
   "height": 993488,
   "status": "OK"
 }
+```
 
 
-### /gettransactions
+### **/gettransactions**
 
 Look up one or more transactions by hash.
 
@@ -642,25 +673,30 @@ Outputs:
   * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
 Example 1: Return transaction information in binary format.
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"]}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"]}' -H 'Content-Type: application/json'
+
 {
   "status": "OK",
   "txs_as_hex": ["..."]
 }
+```
+
 
 Example 2: Decode returned transaction information in JSON format. Note: the "vout" list has been truncated in the displayed return for space considerations.
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"],"decode_as_json":true}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"],"decode_as_json":true}' -H 'Content-Type: application/json'
+
 {
   "status": "OK",
   "txs_as_hex": ["..."],
   "txs_as_json": ["{\n  \"version\": 1, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 70000000, \n        \"key_offsets\": [ 35952\n        ], \n        \"k_image\": \"d16908468dff9438a9814fe96bdaa575f06fe8da85772b72e54926428712293d\"\n      }\n    }, {\n      \"key\": {\n        \"amount\": 400000000000000, \n        \"key_offsets\": [ 6830\n        ], \n        \"k_image\": \"c7a7024b763df1181ae6fe821b70669735e38a68162ac02362e33acbe829b605\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 50000, \n      \"target\": {\n        \"key\": \"f6be43f7be4f06adcb1d06f4a07c637c7359e009cf3e57bb32b8c9ea636509c3\"\n      }\n    }, {\n      \"amount\": 200000, \n      \"target\": {\n        \"key\": \"b0a7a8e32f2b5302552bcd8d85112c62838b1f56cccd844eb9b63e0a732d0353\"\n      }\n    },  ...  \n  ], \n  \"extra\": [ 1, 225, 240, 98, 34, 169, 73, 47, 237, 117, 192, 30, 192, 60, 155, 47, 4, 115, 20, 21, 11, 13, 252, 219, 129, 13, 174, 37, 36, 78, 191, 141, 109\n  ], \n  \"signatures\": [ \"e6a3be8003d481d2855c8127f56871de3d28a4fb52385b999eb986c831c5cc08361c126b0db24a21b6c4299b438ee2be201d44d57a371230b9cd04395ab8c400\", \"8309851abaf2cf2a7091e0cdb9c83704fa7d68838a7a8ef8c178bb55a1e93a038dd18bb4a7549dc056b7a70e037cabd80911a03f427e36f712756d4c00f38f0b\"]\n}"]
 }
+```
 
 
-### /is_key_image_spent
+### **/is_key_image_spent**
 
 Check if outputs have been spent using the key image associated with the output.
 
@@ -675,15 +711,17 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/is_key_image_spent -d '{"key_images":["8d1bd8181bf7d857bdb281e0153d84cd55a3fcaa57c3e570f4a49f935850b5e3","7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4"]}' -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/is_key_image_spent -d '{"key_images":["8d1bd8181bf7d857bdb281e0153d84cd55a3fcaa57c3e570f4a49f935850b5e3","7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4"]}' -H 'Content-Type: application/json'
+
 {
   "spent_status": [1,2],
   "status": "OK"
 }
+```
 
 
-### /sendrawtransaction
+### **/sendrawtransaction**
 
 Broadcast a raw transaction to the network.
 
@@ -697,11 +735,13 @@ Outputs:
 
 Example (No return information included here.):
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
+
+```
+$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
+```
 
 
-### /get_transaction_pool
+### **/get_transaction_pool**
 
 Show information about valid transactions seen by the node but not yet mined into a block, as well as spent key image information in the node's memory.
 
@@ -740,8 +780,9 @@ Outputs:
 
 Example (Note: Some lists in the returned information have been truncated for display reasons):
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/get_transaction_pool -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/get_transaction_pool -H 'Content-Type: application/json'
+
 {
   "spent_key_images": [{
     "id_hash": "1edb9ecc39602040282d326070ad22cb473c952c0d6280c9c4c3b853fb34f3bc",
@@ -766,9 +807,10 @@ Example (Note: Some lists in the returned information have been truncated for di
   },
   ...]
 }
+```
 
 
-### /stop_daemon
+### **/stop_daemon**
 
 Send a command to the daemon to safely disconnect and shut down.
 
@@ -780,9 +822,11 @@ Outputs:
 
 Example:
 
-{:.cli-code}
-<span style="color: cyan;">[ monero->~ ]$</span> curl -X POST http://127.0.0.1:18081/stop_daemon -H 'Content-Type: application/json'
+```
+$ curl -X POST http://127.0.0.1:18081/stop_daemon -H 'Content-Type: application/json'
+
 {
   "status": "OK"
 }
+```
 
