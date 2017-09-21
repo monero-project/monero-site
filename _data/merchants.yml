@@ -1,4 +1,5 @@
 - category: Exchanges
+  id: exchanges
   merchants:
     - name: "#monero-otc (OTC)"
       url: https://webchat.freenode.net?channels=%23monero-otc
@@ -45,6 +46,7 @@
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
 - category: Block Explorers
+  id: block-explorers
   merchants:
     - name: ChainRadar
       url: http://chainradar.com/xmr/blocks
@@ -57,6 +59,7 @@
     - name: xmrchain.net
       url: https://xmrchain.net/
 - category: Payment Gateways
+  id: payment-gateways
   merchants:
     - name: GloBee
       url: https://globee.com/
@@ -67,6 +70,7 @@
     - name: Monero WooCommerce Extension (PHP)
       url: https://github.com/monero-integrations/monerowp
 - category: Libraries and Helpers
+  id: libraries
   merchants:
     - name: Monero Integrations (eCommerce plugins)
       url: http://monerointegrations.com/
@@ -91,6 +95,7 @@
     - name: Monero Utilities (golang)
       url: https://github.com/paxos-bankchain/moneroutil
 - category: Tools
+  id: tools
   merchants:
     - name: Atesti Data Timestamping
       url: http://atesti.mooo.com:8081
@@ -109,6 +114,7 @@
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
 - category: Services
+  id: services
   merchants:
     - name: AirVPN
       url: https://airvpn.org/
@@ -163,6 +169,7 @@
     - name: XMR.to Monero to Bitcoin Payment Service
       url: https://xmr.to/
 - category: Goods
+  id: goods
   merchants:
     - name: All For Crypto
       url: https://allforcrypto.com
@@ -191,6 +198,7 @@
     - name: Xusah Boutique
       url: https://xusah.boutique/
 - category: Entertainment
+  id: entertainment
   merchants:
     - name: Crypto Games
       url: https://www.crypto-games.net/

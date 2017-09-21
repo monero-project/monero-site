@@ -21,7 +21,10 @@ Monero works a little differently to what you may have become accustomed to from
 
 However, because Monero has @stealth-addresses there is no need to have separate recipient addresses for each payment or user, and a single @account address can be published. Instead, when receiving payments a merchant will provide the person paying with a "payment ID".
 
-A @payment-ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is: `666c75666679706f6e7920697320746865206265737420706f6e792065766572`
+A @payment-ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is: 
+```
+666c75666679706f6e7920697320746865206265737420706f6e792065766572
+```
 
 ### Checking for a Payment in monero-wallet-cli
 

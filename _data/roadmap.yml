@@ -76,6 +76,9 @@
       date: 2017-09-15
       status: completed
     - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: Fluffy blocks
       date:
       status: ongoing
     - name: GUI port to android

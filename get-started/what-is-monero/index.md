@@ -6,7 +6,6 @@ title: "What Is Monero (XMR)?"
 <div class="site-wrap">
     <section class="container">
             <div class="row">
-               
                 <section class="container about-monero full col-xs-12">
                     <div class="info-block">
                         <div class="row center-xs">

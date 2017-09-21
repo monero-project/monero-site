@@ -3223,12 +3223,12 @@ footer {
 
 .hangouts .social-icon.reddit {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -128px -76px;
+    background-position: -128px -96px;
 }
 
 .hangouts .social-icon.reddit:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -76px;
+    background-position: -176px -96px;
 }
 
 .hangouts .social-icon.facebook {
