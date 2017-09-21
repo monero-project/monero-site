@@ -20,16 +20,16 @@ Note: "atomic units" refer to the smallest fraction of 1 XMR according to the mo
 ### [JSON RPC Methods](#json-rpc-methods):
 
 * [getblockcount](#getblockcount)
-* [on_getblockhash](#ongetblockhash)
+* [on_getblockhash](#on_getblockhash)
 * [getblocktemplate](#getblocktemplate)
 * [submitblock](#submitblock)
 * [getlastblockheader](#getlastblockheader)
 * [getblockheaderbyhash](#getblockheaderbyhash)
 * [getblockheaderbyheight](#getblockheaderbyheight)
 * [getblock](#getblock)
-* [get_connections](#getconnections)
-* [get_info](#getinfo)
-* [hard_fork_info](#hardforkinfo)
+* [get_connections](#get_connections)
+* [get_info](#get_info)
+* [hard_fork_info](#hard_fork_info)
 * [setbans](#setbans)
 * [getbans](#getbans)
 
