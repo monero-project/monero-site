@@ -24,9 +24,19 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <p>{{member.email}}</p>
                                                 </div>
-                                                {% if member.url %}
+                                                {% if member.github %}
                                                 <div class="row center-xs">
-                                                    <a href="{{member.url}}">GitHub</a>
+                                                    <a href="{{member.github}}">GitHub</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.twitter %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.twitter}}">Twitter</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.reddit %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.reddit}}">Reddit</a>
                                                 </div>
                                                 {%endif%}
                                             </div>
@@ -58,9 +68,19 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.url %}
+                                                {% if member.github %}
                                                 <div class="row center-xs">
-                                                    <a href="{{member.url}}">GitHub</a>
+                                                    <a href="{{member.github}}">GitHub</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.twitter %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.twitter}}">Twitter</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.reddit %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.reddit}}">Reddit</a>
                                                 </div>
                                                 {%endif%}
                                             </div>
@@ -83,9 +103,19 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.url %}
+                                                {% if member.github %}
                                                 <div class="row center-xs">
-                                                    <a href="{{member.url}}">GitHub</a>
+                                                    <a href="{{member.github}}">GitHub</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.twitter %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.twitter}}">Twitter</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.reddit %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.reddit}}">Reddit</a>
                                                 </div>
                                                 {%endif%}
                                             </div>
@@ -108,9 +138,19 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.url %}
+                                                {% if member.github %}
                                                 <div class="row center-xs">
-                                                    <a href="{{member.url}}">GitHub</a>
+                                                    <a href="{{member.github}}">GitHub</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.twitter %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.twitter}}">Twitter</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.reddit %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.reddit}}">Reddit</a>
                                                 </div>
                                                 {%endif%}
                                             </div>
@@ -133,9 +173,19 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.url %}
+                                                {% if member.github %}
                                                 <div class="row center-xs">
-                                                    <a href="{{member.url}}">GitHub</a>
+                                                    <a href="{{member.github}}">GitHub</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.twitter %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.twitter}}">Twitter</a>
+                                                </div>
+                                                {%endif%}
+                                                {% if member.reddit %}
+                                                <div class="row center-xs">
+                                                    <a href="{{member.reddit}}">Reddit</a>
                                                 </div>
                                                 {%endif%}
                                             </div>
