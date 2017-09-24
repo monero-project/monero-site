@@ -1,64 +1,161 @@
 - area: Core
   member:
+    - name: Riccardo "fluffypony" Spagni
+      github: https://github.com/fluffypony
+      twitter: https://twitter.com/fluffypony
+      reddit: https://reddit.com/user/fluffyponyza
+      email: ric@getmonero.org
+      description:
+    - name: Francisco "ArticMine" Cabañas
+      github: https://github.com/ArticMine
+      reddit: https://www.reddit.com/user/ArticMine
+      email: articmine@getmonero.org
+      description:
     - name: othe
-      url: 
+      github: 
+      reddit: https://www.reddit.com/user/othexmr
       email: othe@getmonero.org
       description:
     - name: smooth
-      url: https://github.com/iamsmooth
+      github: https://github.com/iamsmooth
+      reddit: https://www.reddit.com/user/smooth_xmr
       email: smooth@getmonero.org
       description:
-    - name: Riccardo "fluffypony" Spagni
-      url: https://github.com/fluffypony
-      email: ric@getmonero.org
-      description:
     - name: tacotime
-      url:  
+      github:  
+      reddit: https://www.reddit.com/user/therealtacotime
       email: tacotime@getmonero.org
       description:
-    - name: Francisco "ArticMine" Cabañas
-      url: https://github.com/ArticMine
-      email: articmine@getmonero.org
-      description:
     - name: luigi1111
-      url: https://github.com/luigi1111
+      github: https://github.com/luigi1111
+      reddit: https://www.reddit.com/user/cloud10again
       email: luigi1111@getmonero.org
       description:
     - name: NoodleDoodle
-      url: https://github.com/NoodleDoodleNoodleDoodleNoodleDoodleNoo
+      github: https://github.com/NoodleDoodleNoodleDoodleNoodleDoodleNoo
+      reddit: https://www.reddit.com/user/NoodleDoodle_xmr
       email: noodledoodle@getmonero.org
       description:
 - area: Developers
   member:
     - name: moneromooo
-      url: https://github.com/moneromooo-monero
-    - name: hyc
-      url: https://github.com/hyc
-    - name: Thomas Winget
-      url: https://github.com/tewinget
+      github: https://github.com/moneromooo-monero
+    - name: anonimal
+      github: https://github.com/anonimal
     - name: Jaqueeee
-      url: https://github.com/Jaqueeee
-    - name: mikezackles
-      url: https://github.com/mikezackles
-    - name: Paul Shapiro
-      url: https://github.com/paulshapiro
+      github: https://github.com/Jaqueeee
+    - name: Howard Chu (Symas Corp.)
+      github: https://github.com/hyc
+    - name: Lee Clagett (Globee.com)
+      github: https://github.com/vtnerd
+    - name: Dan Miller (Globee.com)
+      github: https://github.com/danrmiller
+    - name: Thomas Winget
+      github: https://github.com/tewinget
+    - name: Zachary Michaels
+      github: https://github.com/mikezackles
+    - name: Ilya Kitaev
+      github: https://github.com/mbg033
+    - name: radfish
+      github: https://github.com/radfish
+    - name: Jonathan Cross
+      github: https://github.com/jonathancross
+    - name: Nano Akron
+      github: https://github.com/NanoAkron
+    - name: Ben Boeckel (Kitware, Inc.)
+      github: https://github.com/mathstuf
+    - name: oranjuice
+      github: https://github.com/oranjuice
+    - name: kenshi84
+      github: https://github.com/kenshi84
+    - name: Miguel Herranz
+      github: https://github.com/IPGlider
+    - name: Julien Klepatch
+      github: https://github.com/jklepatch
+    - name: rfree
+      github: https://github.com/rfree2monero
+    - name: Jacob Torrey
+      github: https://github.com/ranok
+    - name: Neozaru
+      github: https://github.com/Neozaru
+    - name: codehalo
+      github: https://github.com/codehalo
+    - name: MoroccanMalinois
+      github: https://github.com/MoroccanMalinois
+    - name: Jethro Grassie
+      github: https://github.com/jtgrassie
+    - name: Erik de Castro Lopo
+      github: https://github.com/erikd
+    - name: Jakob Lind
+      github: https://github.com/jakoblind
+    - name: Chris Vickio
+      github: https://github.com/vickio
+    - name: Oyvind Kvanes
+      github: https://github.com/oyvkva
+    - name: glv2
+      github: https://github.com/glv2
+    - name: Professor Dave Andersen
+      github: https://github.com/dave-andersen
+    - name: vdo
+      github: https://github.com/vdo
+    - name: hkopp
+      github: https://github.com/hkopp
+    - name: Peter Steidel
+      github: https://github.com/Jebes
+    - name: mWo12
+      github: https://github.com/moneroexamples
+    - name: binaryFate
+      github: https://github.com/binaryFate
+    - name: Mike C
+      github: https://github.com/bigreddmachine
+    - name: iDunk5400
+      github: https://github.com/iDunk5400
+    - name: Matthew Campassi
+      github: https://github.com/campassi
+    - name: nvmd
+      github: https://github.com/nvmd
+    - name: MaxXor
+      github: https://github.com/MaxXor
+    - name: René Brunner
+      github: https://github.com/rbrunner7
+    - name: Jolly Mort
+      github: https://github.com/JollyMort
+    - name: erciccione
+      github: https://github.com/erciccione
+    - name: xmr-eric
+      github: https://github.com/xmr-eric
+    - name: Alexis Enston
+      github: https://github.com/xnbya
+    - name: AJ
+      github: https://github.com/guzzijones
+    - name: Casey Marshall
+      github: https://github.com/cmars
+    - name: jw
+      github: https://github.com/jwinterm
+    - name: me0wmix
+      github: https://github.com/me0wmix
+    - name: taushet
+      github: https://github.com/taushet
 - area: Community
   member:  
     - name: dEBRUYNE
-      url:
+      github:
     - name: Justin Ehrenhofer
-      url:
+      github:
+      reddit: https://www.reddit.com/user/SamsungGalaxyPlayer
     - name: gingeropolous
-      url:
+      github:
 - area: Special Thanks
   member:
     - name: warptangent
-      url: https://github.com/warptangent
+      github: https://github.com/warptangent
     - name: Shen Noether
-      url:
+      github:
 - area: Monero Research Lab
   member:
     - name: Brandon Goodell (Surae Noether)
-      url:
+      github:
     - name: Sarang Noether
-      url:
+      github:
+    - name: Stoffu Noether
+      github: https://github.com/stoffu
