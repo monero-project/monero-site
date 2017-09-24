@@ -54,7 +54,7 @@ title: Monero Team
                                    <div class="info-block text-adapt">
                                         <div class="row">
                                             <div class="col-xs-12 text-adapt">
-                                                <p>The Monero Project has had well over 200 contributors over the life of the project. For a complete list, please see the <a href="https://github.com/monero-project/monero/graphs/contributors">GitHub contributors page.</a> Below you'll find some individuals that have gone above and beyond for Monero.</p>
+                                                <p>The Monero Project has had well over 200 contributors over the life of the project. For a complete list, please see the <a href="https://www.openhub.net/p/monero/contributors">OpenHub contributors page</a>. Below you'll find some individuals that have gone above and beyond for Monero.</p>
                                             </div>
                                         </div>
                                     </div>
