@@ -75,3 +75,6 @@
 
 - slug: releases
   name: Monero Software Releases
+
+- slug: protocol upgrade
+  name: Protocol Upgrade
