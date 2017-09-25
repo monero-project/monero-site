@@ -20,7 +20,7 @@ title: Mining Monero
                         </div>
                     </div>
                     <div class="row center-xs">
-                    <p>See <a href="/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank">#monero-pools</a>.</p>
+                    <p>See <a href="/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer, noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer, noopener">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>
@@ -71,20 +71,20 @@ title: Mining Monero
                     <div class="row miners">
                         <div class="col-md-4 col-xs-12 center-xs">
                             <h3>AMD Miners</h3>
-                            <p><a href="https://github.com/fireice-uk/xmr-stak-amd" target="_blank">XMR Stak AMD</a></p>
-                            <p><a href="https://github.com/OhGodAPet/wolf-xmr-miner" target="_blank">Wolf's AMD Miner</a></p>
+                            <p><a href="https://github.com/fireice-uk/xmr-stak-amd" target="_blank" rel="noreferrer, noopener">XMR Stak AMD</a></p>
+                            <p><a href="https://github.com/OhGodAPet/wolf-xmr-miner" target="_blank" rel="noreferrer, noopener">Wolf's AMD Miner</a></p>
                         </div>
                         <div class="col-md-4 col-xs-12 center-xs">
                             <h3>CPU Miners</h3>
-                            <p><a href="https://github.com/jwinterm/monerospelunker/releases" target="_blank">Monero Spelunker (Windows)</a></p>
-                            <p><a href="https://github.com/fireice-uk/xmr-stak-cpu" target="_blank">XMR Stak CPU</a></p>
-                            <p><a href="https://github.com/OhGodAPet/cpuminer-multi" target="_blank">Wolf's CPU Miner</a></p>
+                            <p><a href="https://github.com/jwinterm/monerospelunker/releases" target="_blank" rel="noreferrer, noopener">Monero Spelunker (Windows)</a></p>
+                            <p><a href="https://github.com/fireice-uk/xmr-stak-cpu" target="_blank" rel="noreferrer, noopener">XMR Stak CPU</a></p>
+                            <p><a href="https://github.com/OhGodAPet/cpuminer-multi" target="_blank" rel="noreferrer, noopener">Wolf's CPU Miner</a></p>
                         </div>
                         <div class="col-md-4 col-xs-12 center-xs">
                             <h3>NVidia Miners</h3>
-                            <p><a href="https://github.com/fireice-uk/xmr-stak-nvidia" target="_blank">XMR Stak NVidia</a></p>
-                            <p><a href="https://github.com/tsiv/ccminer-cryptonight" target="_blank">CC Miner</a></p>
-                            <p><a href="https://github.com/xmrMiner/xmrMiner-Win64" target="_blank">XMR Miner (Windows)</a></p>
+                            <p><a href="https://github.com/fireice-uk/xmr-stak-nvidia" target="_blank" rel="noreferrer, noopener">XMR Stak NVidia</a></p>
+                            <p><a href="https://github.com/tsiv/ccminer-cryptonight" target="_blank" rel="noreferrer, noopener">CC Miner</a></p>
+                            <p><a href="https://github.com/xmrMiner/xmrMiner-Win64" target="_blank" rel="noreferrer, noopener">XMR Miner (Windows)</a></p>
                         </div>
                     </div>
                 </div>

@@ -33,7 +33,7 @@ title: "Monero Research Lab"
                                     reflects only the results of internal investigation.
                                     <br>
                                     <br>
-                                    <a target="_blank" href="https://lab.getmonero.org/pubs/MRL-0001.pdf">Read Paper</a>
+                                    <a target="_blank" rel="noreferrer, noopener" href="https://lab.getmonero.org/pubs/MRL-0001.pdf">Read Paper</a>
                                </p>
                               </div>
                             </div>
@@ -53,7 +53,7 @@ title: "Monero Research Lab"
                                     block did to the network. This research bulletin has not undergone peer review,
                                     and reflects only the results of internal investigation.<br>
                                     <br>
-                                    <a target="_blank" href="https://lab.getmonero.org/pubs/MRL-0002.pdf">Read Paper</a></p>
+                                    <a target="_blank" rel="noreferrer, noopener" href="https://lab.getmonero.org/pubs/MRL-0002.pdf">Read Paper</a></p>
                                     
                               </div>
                             </div>
@@ -70,7 +70,7 @@ title: "Monero Research Lab"
                                     which CryptoNote is based. After this, I will compare the mathematics of the ring
                                     signature to what is actually in the CryptoNote codebase.<br>
                                     <br>
-                                    <a target="_blank" href="https://lab.getmonero.org/pubs/MRL-0003.pdf">Read Paper</a></p>
+                                    <a target="_blank" rel="noreferrer, noopener" href="https://lab.getmonero.org/pubs/MRL-0003.pdf">Read Paper</a></p>
                               </div>
                             </div>
                             <div class="tab">
@@ -102,7 +102,7 @@ ramifications following these improvements are also discussed in some detail.
 This research bulletin has not undergone peer review, and reflects only the
 results of internal investigation.<br>
                                     <br>
-                                    <a target="_blank" href="https://lab.getmonero.org/pubs/MRL-0004.pdf">Read Paper</a></p>
+                                    <a target="_blank" rel="noreferrer, noopener" href="https://lab.getmonero.org/pubs/MRL-0004.pdf">Read Paper</a></p>
                               </div>
                             </div>
                             <div class="tab">
@@ -129,7 +129,7 @@ available at
 http://eprint.iacr.org/2015/1098
 .<br>
                                     <br>
-                                    <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank">Read Paper</a></p>
+                                    <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank" rel="noreferrer, noopener">Read Paper</a></p>
                               </div>
                             </div>
                           </div>

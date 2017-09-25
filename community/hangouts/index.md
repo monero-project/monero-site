@@ -10,16 +10,16 @@ The Monero community is diverse and varied. We come from all over, but we defini
     <section class="container">   
         <ul class="row center-xs">
             <li>
-                <a href="https://twitter.com/monerocurrency" target="_blank"><div class="social-icon twitter"></div></a>
+                <a href="https://twitter.com/monerocurrency" target="_blank" rel="noreferrer, noopener"><div class="social-icon twitter"></div></a>
             </li>
             <li>
-                <a href="https://reddit.com/r/monero" target="_blank"><div class="social-icon reddit"></div></a>
+                <a href="https://reddit.com/r/monero" target="_blank" rel="noreferrer, noopener"><div class="social-icon reddit"></div></a>
             </li>
             <li>
-                <a href="https://www.facebook.com/monerocurrency/" target="_blank"><div class="social-icon facebook"></div></a>
+                <a href="https://www.facebook.com/monerocurrency/" target="_blank" rel="noreferrer, noopener"><div class="social-icon facebook"></div></a>
             </li>
             <li>
-                <a href="https://github.com/monero-project" target="_blank"><div class="social-icon github"></div></a>
+                <a href="https://github.com/monero-project" target="_blank" rel="noreferrer, noopener"><div class="social-icon github"></div></a>
             </li>
         </ul>
     </section>
