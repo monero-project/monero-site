@@ -69,7 +69,7 @@
     - name: 0MQ/ZeroMQ
       date:
       status: ongoing
-    - GUI port to android
+    - name: GUI port to android
       date:
       status: ongoing
     - name: Kovri alpha release
