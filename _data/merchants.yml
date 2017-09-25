@@ -28,6 +28,8 @@
       url: https://www.livecoin.net
     - name: LiteBit (Bankwire/GiroPay/iDeal/SOFORT)
       url: https://www.litebit.eu/en/buy/monero
+    - name: LocalMonero (P2P exchange)
+      url: https://localmonero.co/
     - name: Magnetic Exchange
       url: https://magneticexchange.com
     - name: MoneroDirect (Euro only)
