@@ -2777,7 +2777,7 @@ footer {
 /***************************MERCHANTS STYLING***********************************/
 
 .merchants a {
-    color: #4c4c4c;
+    color: #ff7519;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
     display: inline-block;
@@ -2786,14 +2786,6 @@ footer {
 
 .merchants a:hover, .merchants a.active, .merchants a:focus {
     color: #ff7519;
-}
-
-@media only screen and (max-width: 48rem) {
-  
-.merchants a {
-    color: #ff7519;
-}
-    
 }
 
 
