@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Press Kit"
+title: "Monero Press Kit"
 ---
 
 <div class="site-wrap">

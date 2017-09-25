@@ -80,7 +80,7 @@ Mining ensures the Monero network remains decentralized and secure. In the Moner
                             <div class="row start-xs">
                                <div class="col-xs-12">
                                     <h3>Other</h3>
-                                    <p>E-mail <a href="mailto:dev@getmonero.org">dev@getmonero.org</a> for alternative means of donating.</p>
+                                    <p>E-mail <a href="mailto:dev@getmonero.org">dev@getmonero.org</a> for alternative means of donating or if you would like to become a sponsor for the Monero Project.</p>
                                </div>
                             </div>
                         </div>

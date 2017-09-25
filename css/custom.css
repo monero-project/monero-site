@@ -3243,12 +3243,12 @@ footer {
 
 .hangouts .social-icon.github {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -128px -144px;
+    background-position: -127px -144px;
 }
 
 .hangouts .social-icon.github:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -144px;
+    background-position: -175px -144px;
 }
 
 .hangouts .irc .col-md-4 {
