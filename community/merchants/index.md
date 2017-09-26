@@ -26,5 +26,5 @@ Merchants of all kinds have come to value the financial privacy that Monero brin
 </div>
 
 <div markdown="1" class="text-center container description">
-*Please note: these links are being provided as a convenience and for informational purposes only; they do not constitue an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ("buyer beware"), you are responsible for doing your own research. Always use judgement when making online purchases.*
+*Please note: these links are being provided as a convenience and for informational purposes only; they do not constitue an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ("buyer beware"); you are responsible for doing your own research. Always use judgement when making online purchases.*
 </div>
