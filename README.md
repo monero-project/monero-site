@@ -32,9 +32,9 @@ Copyright (c) 2014-2017, The Monero Project
 
 ## 1.0 Introduction
 
-Greetings everyone, this is rehrar. I'm here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Please note that translations are not available yet, but when they are added, this document will be updated with instructions on how to translate the content of [getmonero.org](https://getmonero.org/). In the meantime, any help translating this document into another language is greatly appreciated.
+This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Please note that translations are not available yet, but when they are added, this document will be updated with instructions on how to translate the content of [getmonero.org website](https://getmonero.org/). In the meantime, any help translating this document into another language is greatly appreciated.
 
-Feel free to skip down to a relevant section if you already know what you need. So to go to the (ADD SECTION HERE) use your find function and type (THING TO TYPE HERE). 
+Feel free to skip down to a relevant section if you already know what you need. So to go to the 'How to make a User Guide' section use your find function and type '5.0'. 
 
 If for any reason you have questions or need to contact us, you can find us on the IRC channel #monero. We'll do whatever we can to help you.
 
@@ -68,11 +68,15 @@ This website is completely open-source however and anything and everything is av
 
 Every section from here on out will talk about how to make a specific type of web page. It will start with a bullet point list of what to do for the advanced among you that just want a quick overview. For those who are still learning this list is followed by a detailed explanation, starting with example front matter. Any variable in the front matter written in all caps you are expected to change (make sure your changes are not all caps though). It will then lead you through the rest of the process until it's time to type your content.
 
-All external links must have http:// or https:// in front of them or they will not redirect properly.
+A few random points of note:
+
+- All external links must have http:// or https:// in front of them or they will not redirect properly.
+- If you want to add a new page to the navigation, you should note that there are two menus in `header.html`. One for mobile and one for desktop. Your page must be added in the appropriate place in BOTH navigations.
+- It is strongly strongly STRONGLY encouraged that you if you make a change, you - at the minimum - test it on your local machine before submitting a PR. Sometimes unexpected things may happen due to a change. If you change a page, check the whole page on multiple screen sizes and browsers to make sure there wasn't any collateral damage.
 
 ### 3.1 Housekeeping
 #### GitHub Issues
-We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributer and the issue is not closed we ask that you close it in a timely manner. A contributer (rerhar, SamsungGalaxyPlayer, or other community members, etc) may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
+We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributer and the issue is not closed we ask that you close it in a timely manner. A contributer (rehrar, SamsungGalaxyPlayer, or other community members, etc) may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
 #### Pull Requests
 Contributers should use [issue keywords](https://help.github.com/articles/closing-issues-using-keywords/) to make it easier for maintainers to close issues when they merge. Include close, closes, closed, fix, fixes, fixed, resolve, resolves, resolved, etc in the commit message or pull request description, so that the correct issue can be closed if your PR is merged. (Example: 'fixes #1234' could close Issue 1234 when merged.)

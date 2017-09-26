@@ -7,7 +7,6 @@ Monero is an open-source, community-driven project. Described below are several 
 </div>
 
 <div class="contribute">
-   
     <section class="container">
           <div class="row">         
                <!-- full block-->
@@ -42,7 +41,6 @@ Mining ensures the Monero network remains decentralized and secure. In the Moner
                             <div class="row start-xs">
                                 <p>Monero utilizes a <a href="https://forum.getmonero.org">forum funding system</a> whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.</p>
                             </div>
-                           
                         </div>
                 </div>
                 <!-- full block-->

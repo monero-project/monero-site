@@ -61,7 +61,7 @@ The Monero community is diverse and varied. We come from all over, but we defini
                             </div>
                             <div class="row irc">
                                 {% for channel in site.data.irc %}
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 col-xs-12">
                                         <a href="irc://chat.freenode.net/#{{ channel.channel }}">#{{ channel.channel }}</a>
                                         <p>{{ channel.description }}</p>
                                     </div>

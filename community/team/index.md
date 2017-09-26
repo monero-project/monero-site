@@ -24,21 +24,17 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <p>{{member.email}}</p>
                                                 </div>
-                                                {% if member.github %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.github}}">GitHub</a>
+                                                <div class="row center-xs icons">
+                                                    {% if member.github %}
+                                                    <a href="{{member.github}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon github"></div></a>
+                                                    {%endif%}
+                                                    {% if member.twitter %}
+                                                    <a href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon twitter"></div></a>
+                                                    {%endif%}
+                                                    {% if member.reddit %}
+                                                    <a href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon reddit"></div></a>
+                                                    {%endif%}
                                                 </div>
-                                                {%endif%}
-                                                {% if member.twitter %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.twitter}}">Twitter</a>
-                                                </div>
-                                                {%endif%}
-                                                {% if member.reddit %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.reddit}}">Reddit</a>
-                                                </div>
-                                                {%endif%}
                                             </div>
                                         </div>
                                     {%endfor%}
@@ -68,21 +64,17 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.github %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.github}}">GitHub</a>
+                                                <div class="row center-xs icons">
+                                                    {% if member.github %}
+                                                    <a href="{{member.github}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon github"></div></a>
+                                                    {%endif%}
+                                                    {% if member.twitter %}
+                                                    <a href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon twitter"></div></a>
+                                                    {%endif%}
+                                                    {% if member.reddit %}
+                                                    <a href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon reddit"></div></a>
+                                                    {%endif%}
                                                 </div>
-                                                {%endif%}
-                                                {% if member.twitter %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.twitter}}">Twitter</a>
-                                                </div>
-                                                {%endif%}
-                                                {% if member.reddit %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.reddit}}">Reddit</a>
-                                                </div>
-                                                {%endif%}
                                             </div>
                                         </div>
                                     {%endfor%}
@@ -103,21 +95,17 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.github %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.github}}">GitHub</a>
+                                                <div class="row center-xs icons">
+                                                    {% if member.github %}
+                                                    <a href="{{member.github}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon github"></div></a>
+                                                    {%endif%}
+                                                    {% if member.twitter %}
+                                                    <a href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon twitter"></div></a>
+                                                    {%endif%}
+                                                    {% if member.reddit %}
+                                                    <a href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon reddit"></div></a>
+                                                    {%endif%}
                                                 </div>
-                                                {%endif%}
-                                                {% if member.twitter %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.twitter}}">Twitter</a>
-                                                </div>
-                                                {%endif%}
-                                                {% if member.reddit %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.reddit}}">Reddit</a>
-                                                </div>
-                                                {%endif%}
                                             </div>
                                         </div>
                                     {%endfor%}
@@ -138,21 +126,17 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.github %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.github}}">GitHub</a>
+                                                <div class="row center-xs icons">
+                                                    {% if member.github %}
+                                                    <a href="{{member.github}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon github"></div></a>
+                                                    {%endif%}
+                                                    {% if member.twitter %}
+                                                    <a href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon twitter"></div></a>
+                                                    {%endif%}
+                                                    {% if member.reddit %}
+                                                    <a href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon reddit"></div></a>
+                                                    {%endif%}
                                                 </div>
-                                                {%endif%}
-                                                {% if member.twitter %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.twitter}}">Twitter</a>
-                                                </div>
-                                                {%endif%}
-                                                {% if member.reddit %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.reddit}}">Reddit</a>
-                                                </div>
-                                                {%endif%}
                                             </div>
                                         </div>
                                     {%endfor%}
@@ -173,21 +157,17 @@ title: Monero Team
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
-                                                {% if member.github %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.github}}">GitHub</a>
+                                                <div class="row center-xs icons">
+                                                    {% if member.github %}
+                                                    <a href="{{member.github}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon github"></div></a>
+                                                    {%endif%}
+                                                    {% if member.twitter %}
+                                                    <a href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon twitter"></div></a>
+                                                    {%endif%}
+                                                    {% if member.reddit %}
+                                                    <a href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener"><div class="col social-icon reddit"></div></a>
+                                                    {%endif%}
                                                 </div>
-                                                {%endif%}
-                                                {% if member.twitter %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.twitter}}">Twitter</a>
-                                                </div>
-                                                {%endif%}
-                                                {% if member.reddit %}
-                                                <div class="row center-xs">
-                                                    <a href="{{member.reddit}}">Reddit</a>
-                                                </div>
-                                                {%endif%}
                                             </div>
                                         </div>
                                     {%endfor%}
