@@ -100,6 +100,8 @@
       url: http://www.nestorgames.com
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
+    - name: Atesti Data Timestamping
+      url: http://atesti.mooo.com:8081
 - category: Services
   merchants:
     - name: algoStrategic - Internet Marketing and Web Development
