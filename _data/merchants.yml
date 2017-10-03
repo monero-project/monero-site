@@ -86,6 +86,8 @@
       url: https://github.com/TheKoziTwo/xmr-integration
 - category: Tools
   merchants:
+    - name: Atesti Data Timestamping
+      url: http://atesti.mooo.com:8081
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
     - name: MoneroBase Price Charts and Tools
@@ -100,8 +102,6 @@
       url: http://www.nestorgames.com
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
-    - name: Atesti Data Timestamping
-      url: http://atesti.mooo.com:8081
 - category: Services
   merchants:
     - name: algoStrategic - Internet Marketing and Web Development
