@@ -37,10 +37,10 @@ Note: "atomic units" refer to the smallest fraction of 1 XMR according to the mo
 
 * [/getheight](#getheight)
 * [/gettransactions](#gettransactions)
-* [/is_key_image_spent](#iskeyimagespent)
+* [/is_key_image_spent](#is_key_image_spent)
 * [/sendrawtransaction](#sendrawtransaction)
-* [/get_transaction_pool](#gettransactionpool)
-* [/stop_daemon](#stopdaemon)
+* [/get_transaction_pool](#get_transaction_pool)
+* [/stop_daemon](#stop_daemon)
 
 
 ---
