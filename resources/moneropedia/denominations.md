@@ -7,7 +7,7 @@ summary: "A denomination is a proper description of a currency amount. It is oft
 
 ### The Basics
 
-A denomination is a proper description of a currency amount. It is oftentimes a sub-unit of the currency (for example, traditionally a cent is 1/100th of a a unit of currency). Monero denomination names add SI prefixes after dropping the initial "mo" for ease of use. The smallest unit of Monero is 1 piconero (0.000000000001 XMR).
+A denomination is a proper description of a currency amount, oftentimes a sub-unit of the currency (for example, traditionally a cent is 1/100th of a a unit of currency). Monero denomination names add SI prefixes after dropping the initial "mo" for ease of use. The smallest unit of Monero is 1 piconero (0.000000000001 XMR).
 
 ### Denominations of Monero
 
@@ -31,6 +31,6 @@ A denomination is a proper description of a currency amount. It is oftentimes a 
 
 ### In-depth Information
 
-Support for input using SI prefixes was [added to the Monero codebase](https://github.com/monero-project/monero/pull/1826) on March 3, 2017 by [Moneromoo](https://github.com/moneromooo-monero). The smallest unit of monero (10^-12 XMR) was originally called a tacoshi in honor of user [Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270), an early Monero contributor and was later renamed for ease of use and consistancy.
+Support for input using SI prefixes was [added to the Monero codebase](https://github.com/monero-project/monero/pull/1826) on March 3, 2017 by [Moneromooo](https://github.com/moneromooo-monero). The smallest unit of monero (10^-12 XMR) was originally called a tacoshi in honor of user [Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270), an early Monero contributor and was later renamed for ease of use and consistancy.
 
 {{ page.summary | capitalize }}.
