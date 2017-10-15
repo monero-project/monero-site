@@ -110,6 +110,8 @@
       url: https://moneroaddress.org/
 - category: Services
   merchants:
+    - name: AirVPN
+      url: https://airvpn.org/
     - name: algoStrategic - Internet Marketing and Web Development
       url: https://algostrategic.com
     - name: Azur Samui - Luxury Apartment and Villa Development, Koh, Samui, Thailand
