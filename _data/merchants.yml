@@ -84,6 +84,8 @@
       url: https://github.com/tippero/python-monero
     - name: xmr-integration (PHP)
       url: https://github.com/TheKoziTwo/xmr-integration
+    - Monero Utilities (golang)
+      url: https://github.com/paxos-bankchain/moneroutil
 - category: Tools
   merchants:
     - name: ForkGuard Network Monitoring
