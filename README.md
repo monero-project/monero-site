@@ -32,7 +32,7 @@ Copyright (c) 2014-2017, The Monero Project
 
 ## 1.0 Introduction
 
-Greetings everyone, this is rehrar. I'm here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new getmonero.org website. It'll definitely be a bit of a ride, so strap yourself in. Please note that translations are not available yet, but when they are added, this document will be updated with instructions on how to translate the content of getmonero.org. In the meantime, any help translating this document into another language is greatly appreciated.
+Greetings everyone, this is rehrar. I'm here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Please note that translations are not available yet, but when they are added, this document will be updated with instructions on how to translate the content of [getmonero.org](https://getmonero.org/). In the meantime, any help translating this document into another language is greatly appreciated.
 
 Feel free to skip down to a relevant section if you already know what you need. So to go to the (ADD SECTION HERE) use your find function and type (THING TO TYPE HERE). 
 
@@ -40,7 +40,7 @@ If for any reason you have questions or need to contact us, you can find us on t
 
 ## 2.0 What you'll need
 
-* Jekyll: Getmonero.org is made using a simple, static website generator called [Jekyll](https://jekyllrb.com/). You will need it installed on your system to test any changes that you made. If you're using Windows, you will want to check out [this site](http://jekyll-windows.juthilo.com/) for instructions on how to get Jekyll working on your system. If you're using a Linux-based system you can just follow the instructions on the website to get up and going:
+* Jekyll: [getmonero.org](https://getmonero.org/) is made using a simple, static website generator called [Jekyll](https://jekyllrb.com/). You will need it installed on your system to test any changes that you made. If you're using Windows, you will want to check out [this site](http://jekyll-windows.juthilo.com/) for instructions on how to get Jekyll working on your system. If you're using a Linux-based system you can just follow the instructions on the website to get up and going:
   * Install Ruby
   * Install Bundler: `gem install bundler`
   * Install Jekyll with all dependencies (run from the project directory): `bundle`
