@@ -160,6 +160,8 @@
       url: https://xmr.to/
 - category: Goods
   merchants:
+    - name: All For Crypto
+      url: https://allforcrypto.com
     - name: Cellphone and laptop repair online store in Sweden
       url: http://www.LagaiPhone.se
     - name: CryptoMercado - coffee and snacks
@@ -182,8 +184,8 @@
       url: https://silverround.com/
     - name: Synntech Gaming
       url: https://synntechgaming.com
-    - name: All For Crypto
-      url: https://allforcrypto.com
+    - name: Xusah Boutique
+      url: https://xusah.boutique/
 - category: Entertainment
   merchants:
     - name: Crypto Games
