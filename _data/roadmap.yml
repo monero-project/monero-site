@@ -20,33 +20,36 @@
       status: completed
 - year: 2015
   accomplishments:
-    - name: Monero Research Lab Paper 4 published.
+    - name: Monero Research Lab Paper 4 published
       date: 2015-01-26
       status: completed
 - year: 2016
   accomplishments:
-    - name: 0.9.0 Hydrogen Helix published
+    - name: 0.9.0 Hydrogen Helix released
       date: 2016-01-01
       status: completed
     - name: Monero Research Lab Paper 5 published
-      date: 2016-02
+      date: 2016-02-10
       status: completed
-    - name: Hardfork to impose minimum ringsize 3 on all transactions
-      date: 2016-03
+    - name: Hardfork to require minimum ringsize of 3 on all transactions
+      date: 2016-03-22
       status: completed
     - name: 0.10.0 Wolfram Warptangent released
       date: 2016-09-18
       status: completed
+    - name: Hardfork to split coinbase into denominations
+      date: 2016-09-21
+      status: completed
     - name: 0.10.1 Wolfram Warptangent released
-      date: 2017-12-14
+      date: 2016-12-14
       status: completed
     - name: Official GUI Beta 1 released
       date: 2016-12-22
       status: completed
 - year: 2017
   accomplishments:
-    - name: RingCT enabled; sees quick acceptance
-      date: 2017-01
+    - name: Hardfork to enable RingCT transactions
+      date: 2017-01-05
       status: completed
     - name: 0.10.2 released; critical vulnerability patched
       date: 2017-02-22
@@ -54,16 +57,22 @@
     - name: 0.10.3.1 Wolfram Warptangent released
       date: 2017-03-27
       status: completed
-    - name: Hardfork for dynamic block and dynamic fee improvements
+    - name: Hardfork to adjust minimum blocksize and dynamic fee algorithm
       date: 2017-04-15
       status: completed
-    - name: Website redesign
+    - name: Website redesigned
       date: 2017-07-04
       status: completed
-    - name: 0.11.0.0 Helium Hydra release
+    - name: 0.11.0.0 Helium Hydra released
       date: 2017-09-07
       status: completed
-    - name: Hardfork for increased ringsize and mandatory RingCT
+    - name: Fluffy blocks
+      date: 2017-09-07
+      status: completed
+    - name: GUI out of beta
+      date: 2017-09-10
+      status: completed
+    - name: Hardfork to increase minimum ringsize to 5 and require RingCT transactions
       date: 2017-09-15
       status: completed
     - name: 0MQ/ZeroMQ
@@ -72,18 +81,18 @@
     - name: GUI port to android
       date:
       status: ongoing
-    - name: Kovri alpha release
-      date:
-      status: ongoing
     - name: Forum Funding System redesign
       date:
       status: ongoing
-    - name: Subaddresses for easier opsec management
+    - name: Subaddresses
       date:
       status: ongoing
     - name: Multi-signatures (multisig)
       date:
       status: ongoing
+    - name: Kovri alpha release
+      date:
+      status: upcoming
 - year: 2018
   accomplishments:
     - name: Additional MRL research papers
