@@ -88,6 +88,8 @@
       url: https://github.com/paxos-bankchain/moneroutil
 - category: Tools
   merchants:
+    - name: Atesti Data Timestamping
+      url: http://atesti.mooo.com:8081
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
     - name: MoneroBase Price Charts and Tools
