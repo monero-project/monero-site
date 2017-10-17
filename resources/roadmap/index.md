@@ -42,8 +42,8 @@ title: Roadmap
                               {%endif%}
                               {%endfor%}
                         </div>
-                        <label for="tab-2" tab index="0"></label>
-                        <input id="tab-2" type="radio" name="tabs" aria-h idden="true">
+                        <label for="tab-2" tabindex="0"></label>
+                        <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                             <h2>2015</h2>
                             <div class="tabPanel-content">
                                {% for toplevel in site.data.roadmap %}
@@ -87,7 +87,7 @@ title: Roadmap
                               {%endfor%}
                             </div>
                             <label for="tab-4" tabindex="0"></label>
-                            <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked="true">
+                            <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
                             <h2>2017</h2>
                             <div class="tabPanel-content">
                                {% for toplevel in site.data.roadmap %}
