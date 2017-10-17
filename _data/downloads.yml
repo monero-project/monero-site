@@ -76,7 +76,6 @@
   blockchain: freebsd
 
 - platform: DragonflyBSD, 64-bit
-  id: bsd
   icon: icon-dragonflybsd
   cli_url: dragonflybsd64
   cli_hash: c25c0f603ca5c96cb5963aaa2905edff390b7a97f654106911ffad8639deee7c
