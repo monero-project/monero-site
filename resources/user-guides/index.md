@@ -71,9 +71,7 @@ title: "User Guides"
 <div class="row start-xs" markdown="1">
 
 [How to solo mine with the GUI](solo_mine_GUI.html)
-
 [How to mine on a pool with xmr-stak-cpu](mine-to-pool.html)
-
 [Mining with Docker and XMRig](mining_with_xmrig_and_docker.html)
 
 </div>

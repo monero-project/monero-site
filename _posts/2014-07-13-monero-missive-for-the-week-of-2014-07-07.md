@@ -6,8 +6,6 @@ tags: [monero missives, research, usability, external, funding, i8n]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*July 13th, 2014*
-
 Hello, and welcome to our sixth Monero Missive!
 
 **Major Updates**

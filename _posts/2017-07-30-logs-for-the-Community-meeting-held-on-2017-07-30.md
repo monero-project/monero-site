@@ -6,8 +6,6 @@ tags: [community, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*July 30th, 2017*  
-
 # Logs  
 
 **\<rehrar>** Alright people, here am I.  

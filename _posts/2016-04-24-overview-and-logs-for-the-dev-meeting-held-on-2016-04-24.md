@@ -5,9 +5,7 @@ summary: A review and discussion of open PRs, moving forward with Ring CT
 tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
- 
-*April 24th, 2016*
- 
+  
 # Logs
  
 **\<hyc>** hey what's on our agenda for today anyway  

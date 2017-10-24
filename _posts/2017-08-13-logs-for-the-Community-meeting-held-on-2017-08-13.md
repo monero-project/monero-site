@@ -6,8 +6,6 @@ tags: [community, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*August 13th, 2017*  
-
 # Logs  
 
 **\<sgp>** Meeting is starting  

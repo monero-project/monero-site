@@ -6,8 +6,6 @@ tags: [monero missives, exchanges, research, usability, gui]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*June 18th, 2014*
-
 Hello, and welcome to our third Monero Missive.
 
 **Major Updates**

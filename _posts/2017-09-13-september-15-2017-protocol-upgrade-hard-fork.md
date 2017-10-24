@@ -6,8 +6,6 @@ tags: [protocol upgrade, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*September 13th, 2017*  
-
 **First and foremost, the new binaries can be found here:**  
 
 https://getmonero.org/downloads/  

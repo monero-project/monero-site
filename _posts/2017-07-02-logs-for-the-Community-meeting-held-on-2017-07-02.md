@@ -6,8 +6,6 @@ tags: [community, crypto]
 author: dEBRUYNE / fluffypony
 ---  
   
-*July 2nd, 2017*  
-
 # Logs  
 
 **\<rehrar>** Alright, does everyone have their shrimp tacos?  

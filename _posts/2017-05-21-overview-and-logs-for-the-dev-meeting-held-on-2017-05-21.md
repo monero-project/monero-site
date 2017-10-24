@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*May 21th, 2017*  
-
 # Overview  
 
 An overview [can be found on MoneroBase](https://monerobase.com/wiki/DevMeeting_2017-05-21).  

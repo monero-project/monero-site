@@ -6,8 +6,6 @@ tags: [releases]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*March 29th, 2017*
-
 ### Overview
 
 The second beta of the Monero GUI has been released. Due to our focus on completing the features required for the initial release we have not, as yet, completed support for 32-bit Windows, FreeBSD, DragonflyBSD, ARMv7 Linux, and ARMv8 Linux devices. Whilst these are being worked on, it may not be feasible to support some environments (like 32-bit Windows) due to performance degradation.

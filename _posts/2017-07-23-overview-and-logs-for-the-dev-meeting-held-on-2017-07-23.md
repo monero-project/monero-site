@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*July 23th, 2017*  
-
 # Overview  
 
 There is no overview for this week.  

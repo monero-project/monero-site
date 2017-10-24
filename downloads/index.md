@@ -78,7 +78,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 {% elsif data_downloads.id == "hardware" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>There are currently no hardware wallets available at this time. Please check back for updates.</p>
+<p>The Monero community has just funded a <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Dedicated Hardware Wallet</a> which is now in progress. As well, Ledger is working on <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">integrating Monero into their hardware wallets</a>.</p>
 </div></div>
 
 {% elsif data_downloads.id == "mobilelight" %}

@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*May 22nd, 2016*
-
 # Logs
 
 **\<fluffypony>** ok  

@@ -5,9 +5,7 @@ summary: Open PRs, GUI commits, app/add-on infrastructure, versioning
 tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
 ---
- 
-*March 19th, 2016*
- 
+  
 # Logs
 
 **\<dEBRUYNE>** dev meeting in 5 min, FYI  
