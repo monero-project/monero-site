@@ -90,7 +90,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <div class="row center-xs">
   <div class="col-xs-12">
     <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
-    <a href="https://walletmonero.com" style="margin-left: 100px;height: 116px;"><img src="/img/walletmonero.svg" alt="WalletMonero Logo"></a>
+    <a href="https://walletmonero.com" style="margin-left: 100px;height: 116px;"><img src="/img/walletmonero.png" alt="WalletMonero Logo"></a>
   </div>
 </div>
 
