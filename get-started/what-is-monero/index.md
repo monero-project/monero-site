@@ -36,7 +36,7 @@ title: "What Is Monero (XMR)?"
                         <div class="row middle-xs info-block-row">
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
                                 <h3>Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.</h3>
-                                <p>Over <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer, noopener">240 developers</a> have contributed to the Monero project, including 30 core developers. Forums and chat channels are welcoming and active.</p>
+                                <p>Over <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer noopener">240 developers</a> have contributed to the Monero project, including 30 core developers. Forums and chat channels are welcoming and active.</p>
                                 <p>Monero's Research Lab, Core Development Team and Community Developers are constantly pushing the frontier of what is possible with cryptocurrency privacy and security.</p>
                                 <p>Monero is not a corporation. It is developed by cryptography and distributed systems experts from all over the world that donate their time or are funded by community donations. This means that Monero can't be shut down by any one country and is not constrained by any particular legal jurisdiction.</p>
                             </div>
