@@ -7,8 +7,6 @@ author: Riccardo Spagni (fluffypony)
 forum: https://forum.getmonero.org/1/news-and-announcements/115/monday-monero-missives-21-december-15th-2014
 ---
 
-*December 15th, 2014*
-
 **Account:** still more fixes to the restore paths and multi-lang mnemonics, known issues with UTF-8 on Windows remain
 
 **Core:** libunbound lookups moved to a thread in order to trap for failing / slow DNS lookups

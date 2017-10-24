@@ -6,8 +6,6 @@ tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*July 31th, 2016*
-
 ### Logs
 
 **\<anonimal>** ping fluffypony we missed you in #monero-dev  

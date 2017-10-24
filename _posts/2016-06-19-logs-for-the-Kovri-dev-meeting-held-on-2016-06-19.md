@@ -6,8 +6,6 @@ tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
-*June 19th, 2016*
-
 ### Logs
 
 **\<fluffypony>** ok I guess we move on to Kovri - anonimal, the floor is yours  

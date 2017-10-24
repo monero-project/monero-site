@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto,]
 author: dEBRUYNE / fluffypony
 ---
 
-*February 5th, 2017*  
-
 ### Overview  
 
 An overview [can be found on Hello Monero](https://hellomonero.com/article/monero-dev-meeting-note-highlights-and-transcript-2017-02-05).    

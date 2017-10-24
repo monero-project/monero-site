@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto]
 author: gingeropolous
 ---
 
-*February 14th, 2016*
-
 # Summary
 
 ## Review

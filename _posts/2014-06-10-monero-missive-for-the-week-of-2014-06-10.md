@@ -6,8 +6,6 @@ tags: [monero missives, conferences, exchanges, gui, usability]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*June 10th, 2014*
-
 Hello XMR users! Welcome to our second Monero Missives.
 
 **Major Updates**

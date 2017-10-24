@@ -32,16 +32,21 @@ The Monero community is diverse and varied. We come from all over, but we defini
                         <div class="info-block">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>Slack</h2>
+                                    <h2>Workgroup Resources</h2>
                                 </div>
                             </div>
                             <div class="row center-xs">
-                                <p>Not everyone likes to get on the IRC, and for those people we have Slack with relays to IRC channels.
-                                It has also got a few channels of its own.</p>
+                                <p>In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects. Mattermost even has relays into the most popular Monero-related IRC channels.</p>
                             </div>
                             <div class="row relays around-xs">
-                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
                                     <p><a href="https://monero.slack.com/" class="btn-link btn-fixed">Slack</a></p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <p><a href="https://mattermost.getmonero.org/" class="btn-link btn-fixed">Mattermost</a></p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <p><a href="https://taiga.getmonero.org/" class="btn-link btn-fixed">Taiga</a></p>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +61,7 @@ The Monero community is diverse and varied. We come from all over, but we defini
                             </div>
                             <div class="row irc">
                                 {% for channel in site.data.irc %}
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 col-xs-12">
                                         <a href="irc://chat.freenode.net/#{{ channel.channel }}">#{{ channel.channel }}</a>
                                         <p>{{ channel.description }}</p>
                                     </div>

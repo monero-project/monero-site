@@ -6,8 +6,6 @@ tags: [monero missives, research, usability, accounts, gui, conferences]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*July 6th, 2014*
-
 Hello, and welcome to our fifth Monero Missive!
 
 **Major Updates**

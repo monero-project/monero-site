@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto, 0mq]
 author: dEBRUYNE / fluffypony
 ---
 
-*February 19th, 2017*  
-
 ### Logs  
 
 **\<fluffypony>** 1. Greetings  

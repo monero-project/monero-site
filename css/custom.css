@@ -989,7 +989,7 @@ h1, h2, h3, h4, h5, h6, p {margin: 0; padding: 0;}
 
 img, video {max-width: 100%;}
 
-video {width: 100%;}
+img, video {width: 100%;}
 
 ::-webkit-input-placeholder {
   color: #AAA;
@@ -2598,7 +2598,7 @@ footer {
 
 .download-platforms h2 span.icon-dragonflybsd {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: 0 -13rem;
+    background-position: 0 -287px;
 }
 
 .download-platforms h2 span.icon-github {
@@ -2777,7 +2777,7 @@ footer {
 /***************************MERCHANTS STYLING***********************************/
 
 .merchants a {
-    color: #ff7519;
+    color: #4c4c4c;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
     display: inline-block;
@@ -3101,6 +3101,10 @@ footer {
     padding-left: 0;
 }
 
+.team .icons {
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 48rem) {
 
         
@@ -3201,7 +3205,7 @@ footer {
 
 }
 
-.hangouts .social-icon {
+.hangouts .social-icon, .team .social-icon {
     -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -3211,44 +3215,44 @@ footer {
     border-radius: 50%;
 }
 
-.hangouts .social-icon.twitter {
+.social-icon.twitter {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -128px -48px;
 }
 
-.hangouts .social-icon.twitter:hover {
+.social-icon.twitter:hover {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -176px -48px;
 }
 
-.hangouts .social-icon.reddit {
+.social-icon.reddit {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -128px -76px;
+    background-position: -128px -96px;
 }
 
-.hangouts .social-icon.reddit:hover {
+.social-icon.reddit:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -76px;
+    background-position: -176px -96px;
 }
 
-.hangouts .social-icon.facebook {
+.social-icon.facebook {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -128px 0;
 }
 
-.hangouts .social-icon.facebook:hover {
+.social-icon.facebook:hover {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -176px 0;
 }
 
-.hangouts .social-icon.github {
+.social-icon.github {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -128px -144px;
+    background-position: -127px -144px;
 }
 
-.hangouts .social-icon.github:hover {
+.social-icon.github:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -144px;
+    background-position: -175px -144px;
 }
 
 .hangouts .irc .col-md-4 {
@@ -3278,7 +3282,16 @@ footer {
      
 .hangouts .irc .col-md-4 {
     padding: 0;
-}    
+    margin-bottom: 1rem;
+}
+    
+.hangouts .irc .col-md-4:first-child {
+    margin-top: 1rem;
+}
+    
+.irc p {
+    padding-top: 0px;
+}
     
 }
 
@@ -3332,6 +3345,27 @@ footer {
     height: auto;
 }
     
+}
+
+/**************************PRESS KIT*************************/
+
+.symbol-logo {
+    height: 159px;
+    width: 159px;
+}
+
+.symbol-logo, .monero-symbol-logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.press a {
+    display: block;
+    margin-top: 1rem;
+}
+
+.press a.adi {
+    margin-top: 1.5rem;
 }
 
 

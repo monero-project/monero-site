@@ -6,8 +6,6 @@ tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---    
 
-*November 27th, 2016*  
-
 ### Logs  
 
 **\<i2p-relay> {-fluffypony}** ok anonimal  

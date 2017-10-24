@@ -4,8 +4,6 @@
   description: This channel is for the Monero community to congretate and discuss ideas.
 - channel: monero-dev
   description: The many contributors and developers come here to discuss dev-y things.
-- channel: monero-ffs
-  description: Regarding the Monero forum funding system.
 - channel: monero-markets
   description: We use this channel to talk about the price of Monero and other coins.
 - channel: monero-offtopic
@@ -18,5 +16,3 @@
   description: Research into financial privacy with cryptocurrency.
 - channel: monero-translations
   description: Localizing Monero into other languages
-- channel: monero-website
-  description: For the development of the Monero website

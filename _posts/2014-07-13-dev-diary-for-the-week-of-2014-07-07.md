@@ -6,8 +6,6 @@ tags: [dev diaries, core, accounts, i2p, i8n, blockchaindb]
 author: Riccardo Spagni (fluffypony)
 ---
 
-*July 13th, 2014*
-
 **Core**: major work has begun on moving to an embedded database. The ongoing progress on this can be followed here: https://github.com/tewinget/bitmonero/tree/blockchain
 
 **Core / Wallet**: both the new daemonized daemon and rpcwallet are nearing a stage where they can be merged into master. The final step is to finalise the daemonizing code in rpcwallet, in such a way that it acts the same as the daemon, and we can move from there.

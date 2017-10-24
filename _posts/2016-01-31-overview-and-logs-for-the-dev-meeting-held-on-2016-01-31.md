@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto]
 author: gingeropolous
 ---
 
-*January 31st, 2016*
-
 # Summary
 
 ## Use of dev branch

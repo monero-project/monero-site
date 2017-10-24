@@ -5,9 +5,7 @@ summary: Mac / BSD support moving forward
 tags: [dev diaries, i2p, crypto]
 author: dEBRUYNE / fluffypony
 ---
- 
-*May 8th, 2016*
- 
+  
 # Logs
 
 **\<anonimal>** Hi fluffypony  

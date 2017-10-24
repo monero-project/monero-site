@@ -5,9 +5,7 @@ summary: Brief review of what has been completed since last meeting, discussion 
 tags: [dev diaries, i2p, crypto]  
 author: dEBRUYNE / fluffypony  
 ---  
-  
-*July 23th, 2017*  
-  
+    
 # Logs  
   
 **\<anonimal>** 1. Greetings  
