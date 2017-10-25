@@ -12,7 +12,7 @@ title: Forum Funding System
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="tabPanel-widget">
                         <label for="tab-1" tabindex="0"></label>
-                            <input id="tab-1" type="radio" name="tabs" aria-hidden="true" checked="true">
+                            <input id="tab-1" type="radio" name="tabs" aria-hidden="true" checked>
                                 <h2>Ideas</h2>
                                 <div class="tabPanel-content">           
                                     {% for toplevel in site.data.ffs %}
@@ -28,8 +28,8 @@ title: Forum Funding System
                                         <p><a href="/forum-funding-system/ideas/" class="btn-link btn-fixed">See all Ideas</a></p>
                                         </div>
                                 </div>
-                                <label for="tab-2" tab index="0"></label>
-                                <input id="tab-2" type="radio" name="tabs" aria-h idden="true">
+                                <label for="tab-2" tabindex="0"></label>
+                                <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                                     <h2>Open Tasks</h2>
                                     <div class="tabPanel-content">
                                        {% for toplevel in site.data.ffs %}
