@@ -16,7 +16,7 @@ You need to have 3 pieces of data from your wallet, or your .keys file which hol
 
 Then run the wallet command:
 
-`./monero-wallet-cli New_Wallet_Name.abc`
+`./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`
 
 Next, you'll be asked for the Address, the spendkey, the viewkey, and finally the new password for the re-generated wallet.
 
