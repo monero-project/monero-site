@@ -87,7 +87,7 @@
 - platform: Source Code & Blockchain
   id: source
   icon: icon-github
-  cli_url: https://github.com/monero-project/bitmonero
+  cli_url: https://github.com/monero-project/monero
   cli_hash: source
   version: Bleeding edge (possibly unstable)
   
