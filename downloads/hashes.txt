@@ -11,8 +11,8 @@ source code repository (/utils/gpg_keys).
 75b12623760574688572adfb10504d872d60ca7c4ac7571011d62429d6288e50 monero-mac-x64-v0.11.1.0.tar.bz2
 6581506f8a030d8d50b38744ba7144f2765c9028d18d990beb316e13655ab248 monero-linux-x64-v0.11.1.0.tar.bz2
 ef212bda6b9a30af2a3e7e94cb2af4dd6e01eb0f54a4d1c0eb25abe75316e2ae monero-linux-x86-v0.11.1.0.tar.bz2
-491e42a29f09b927c9b1311c4682ced7bc7cbb51e2a6469b74ae42ef647d59ab monero-linux-armv7-v0.11.0.0.tar.bz2
-61b4b2aa79a0653f0809c29c5846517e40033dba78779155a26a4a4cf7e0c4d8 monero-linux-armv8-v0.11.0.0.tar.bz2
+72d48a83189e3f99e7bd3d0ceab34e7466d99ec4ca85bb8e7b81ed338c692a46 monero-linux-armv7-v0.11.1.0.tar.bz2
+f1f0850e37eb65595d8e92eb2b84f5119165f418ab54a72dfa8a149e0efa810b monero-linux-armv8-v0.11.1.0.tar.bz2
 bd2090f643d212a4031edbf44a8f1425cf335b6b63c6527a7e82f5bc6a83db67 monero-freebsd-x64-v0.11.1.0.tar.bz2
 30e2d50db8e1738a72d3a06ec106c1a3f157de057efad344bd12151b6bbd3019 monero-dragonflybsd-x64-v0.11.1.0.tar.bz2
 
@@ -24,12 +24,12 @@ bd2090f643d212a4031edbf44a8f1425cf335b6b63c6527a7e82f5bc6a83db67 monero-freebsd-
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlnvom4ACgkQVUMt8xzN
-T806HQf+K5k6cC4oA8Zi0mWsmWf4JlcK+0Xi3mLZJWyVUmWg8FLGDCHIAuvucF90
-CWrU5jEznsCtCy/cHZV6wzl5XxDuuOoJZtznzYcXrZDqt1ridulr3Dl7gVbjKN0a
-E7RFFJReA9hQ2Hx5aDfEeegr7XSxHnZLk0gH7kNLScBi8Q3Bhm8rq2gd8cRuqKEa
-M5CPo86vY9AYmc2RcrlQGxvXqsaRo7Oq2eWxoadXtwqiafQZuONT7IHzY968YEx0
-sydXnVpbD3S28HvJPKXh8tOty6s4gY0uN5IVUFphvnCjJyUqbPDeyI1b8HOK2n6z
-+0127xx6khV7o+SiJOxCH7s8Hu343A==
-=G2ZV
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlnwoTsACgkQVUMt8xzN
+T81Ehwf+M3w8yX15p8ywIHEC9ZZm+VJ4ENjA4gora7MhIF7XxEoGEssY099TJyPv
+YJ6Nnd/VzaFqSH/rQ7rpVMJQV/NVPOa/B34tGPAYCheH0WzvcJSc4icgE1u2rM9N
+2E4NJvPXXMk2rItTQuo75urpL0kP/ZXEo2B5GfoJQfZZ4/AEDXBKtyuVcoD27dhb
+vDd8H0+4Esn101nRKMMxbEKXzFp8Z4/zUI1UQzCexZDOaZjGsbqyWQQBQJaWJWyM
+RKP3YNGKAl73lymp9145IkWxIlcIZcIF+UzlNIy+L+3WWGYecIFD//gI4bnqlumE
+BiNzdleNbfv8g/jzX0CiaPkACwOCBQ==
+=2mMH
 -----END PGP SIGNATURE-----

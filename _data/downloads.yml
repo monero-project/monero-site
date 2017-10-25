@@ -53,16 +53,16 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: 491e42a29f09b927c9b1311c4682ced7bc7cbb51e2a6469b74ae42ef647d59ab
-  version: 0.11.0.0
+  cli_hash: 72d48a83189e3f99e7bd3d0ceab34e7466d99ec4ca85bb8e7b81ed338c692a46
+  version: 0.11.1.0
   tag: Helium Hydra
   blockchain: arm
 
 - platform: ARMv8
   icon: icon-arm
   cli_url: linuxarm8
-  cli_hash: 61b4b2aa79a0653f0809c29c5846517e40033dba78779155a26a4a4cf7e0c4d8
-  version: 0.11.0.0
+  cli_hash: f1f0850e37eb65595d8e92eb2b84f5119165f418ab54a72dfa8a149e0efa810b
+  version: 0.11.1.0
   tag: Helium Hydra
   blockchain: arm
 
