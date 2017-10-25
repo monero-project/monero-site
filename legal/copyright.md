@@ -1,6 +1,12 @@
 ---
-layout: custom
-title: Legal
+layout: static_page
+title: "Copyright"
+title-pre-kick: "Copyright "
+title-kick: "Copyright"
+title-post-kick: ""
+kick-class: "green-kicks"
+icon: "icon_copyright"
+attribution: ""
 ---
 
 ### The Monero Project
