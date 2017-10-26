@@ -989,8 +989,6 @@ h1, h2, h3, h4, h5, h6, p {margin: 0; padding: 0;}
 
 img, video {max-width: 100%;}
 
-img, video {width: 100%;}
-
 ::-webkit-input-placeholder {
   color: #AAA;
 }
@@ -2376,8 +2374,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 435px;
-    height: 27.1875rem;
     background-color: #4c4c4c;
     color: #efefef;
     z-index: 1;

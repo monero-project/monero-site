@@ -9,7 +9,7 @@ title: Monero Team
         <div class="col-xs-12">
                         <div class="tabPanel-widget">
                            <label for="tab-1" tabindex="0"></label>
-                            <input id="tab-1" type="radio" name="tabs" aria-hidden="true" checked="true">
+                            <input id="tab-1" type="radio" name="tabs" aria-hidden="true" checked>
                             <h2>Core</h2>
                             <div class="tabPanel-content">
                               <div class="row">
@@ -42,7 +42,7 @@ title: Monero Team
                                 {%endfor%}
                               </div>
                             </div>
-                            <label for="tab-2" tab index="0"></label>
+                            <label for="tab-2" tabindex="0"></label>
                             <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                             <h2>Developers</h2>
                             <div class="tabPanel-content">

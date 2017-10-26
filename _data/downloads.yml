@@ -76,7 +76,6 @@
   blockchain: freebsd
 
 - platform: DragonflyBSD, 64-bit
-  id: bsd
   icon: icon-dragonflybsd
   cli_url: dragonflybsd64
   cli_hash: 30e2d50db8e1738a72d3a06ec106c1a3f157de057efad344bd12151b6bbd3019
@@ -87,7 +86,7 @@
 - platform: Source Code & Blockchain
   id: source
   icon: icon-github
-  cli_url: https://github.com/monero-project/bitmonero
+  cli_url: https://github.com/monero-project/monero
   cli_hash: source
   version: Bleeding edge (possibly unstable)
   
