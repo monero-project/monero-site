@@ -23,7 +23,7 @@
   cli_url: mac64
   cli_hash: 75b12623760574688572adfb10504d872d60ca7c4ac7571011d62429d6288e50
   gui_url: mac64
-  gui_hash: c95c0795f4aa78b7ce3922721ca5923df5eb6ca62ae6fae638319e6c29375133
+  gui_hash: 4f63ac3e9c5f87f8d8318ff89cdbfa954716e8addbdc8fcd0352fe678b84f8e2
   version: 0.11.1.0
   tag: Helium Hydra
   blockchain: mac
