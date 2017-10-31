@@ -2,6 +2,8 @@
 layout: ffs-cp
 title: What is Monero? is produced and open-sourced
 author: savandra
+amount: 72
+date: October 12, 2016
 ---
 
 Hello everyone!
