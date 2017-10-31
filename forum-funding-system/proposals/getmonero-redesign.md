@@ -1,9 +1,9 @@
 ---
-layout: ffs-wip
+layout: ffs-cp
 title: Getmonero.org Redesign
-address: 4445
-paymentid: 3xj3
 author: rehrar
+date: February 24, 2017
+amount: 100
 milestones:
   - name: Milestone 1 - Front page & restructure
     funds: 10% (~XMR 10.70)

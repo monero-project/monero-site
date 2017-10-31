@@ -17,8 +17,8 @@ layout: base
                    </div>
                    <div class="row center-xs">
                        <div class="col-xs-12 progress-numbers">
-                           <p class="progress-number-funded">100 XMR </p><span> /</span>
-                           <p class="progress-number-goal">100 XMR</p>
+                           <p class="progress-number-funded">{{page.amount}} XMR</p><span> /</span>
+                           <p class="progress-number-goal">{{page.amount}} XMR</p>
                        </div>
                    </div>
                    <div class="row">
@@ -60,7 +60,8 @@ layout: base
                    <div class="row center-xs">
                         <div class="col">
                             <h2>{{page.title}}</h2>
-                            <p>by {{page.author}}</p>
+                            <p>by <strong>{{page.author}}</strong></p>
+                            <p><em>{{page.date}}</em></p>
                         </div>
                     </div>
                     <div>
