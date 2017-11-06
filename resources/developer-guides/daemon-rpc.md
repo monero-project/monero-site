@@ -731,7 +731,18 @@ Inputs:
 
 Outputs:
 
-* *status* - string; General RPC error code. "OK" means everything looks good.
+* *status* - string; General RPC error code. "OK" means everything looks good. Any other value means that something went wrong.
+* *double_spend* - boolean;  Transaction is a double spend (`true`) or not (`false`).
+* *fee_too_low* - boolean; Fee is too low (`true`) or OK (`false`).
+* *invalid_input* - boolean; Input is invalid (`true`) or valid (`false`).
+* *invalid_output* - boolean; Output is invalid (`true`) or valid (`false`).
+* *low_mixin* - boolean; Mixin count is too low (`true`) or OK (`false`).
+* *not_rct* - boolean; Transaction is not a ring transaction (`true`) or a ring transaction (`false`).
+* *not_relayed* - boolean; Transaction was not relayed (`true`) or relayed (`false`).
+* *overspend* - boolean; Transaction uses more money than available (`true`) or not (`false`). 
+* *reason* - string; Additional information. Currently empty or "Not relayed" if transaction was accepted but not relayed.
+* *too_big* - boolean; Transaction size is too big (`true`) or OK (`false`).
+
 
 Example (No return information included here.):
 
