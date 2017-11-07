@@ -17,4 +17,4 @@ At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified doma
 
 {{ page.summary | capitalize }}.
 
-More information can be found on the [OpenAlias page](/knowledge-base/openalias) or on the [OpenAlias website](https://openalias.org)
+More information can be found on the [OpenAlias page](/resources/openalias) or on the [OpenAlias website](https://openalias.org)
