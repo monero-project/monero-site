@@ -55,7 +55,7 @@ If you downloaded the Blockchain from a trusted, reputable source you may set `v
 
 ### Step 7
 
-After the the Blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted. 
+After the Blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted. 
 
 
 Author: Kee Jefferys

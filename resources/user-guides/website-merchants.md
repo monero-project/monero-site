@@ -16,7 +16,7 @@ Find the category that best describes your business/service and copy the code be
 and paste it in the correct category under the `merchants:` section.
 
 Fill in the data as follows:
-* `name:` The name of the the business/service.
+* `name:` The name of the business/service.
 * `url:` The external url of the business/service. This link must have http:// (or https://) at the beginning if it is an external link.
 
 **Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
