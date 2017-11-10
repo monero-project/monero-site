@@ -8,7 +8,7 @@ summary: "Routing technology as implemented in Kovri"
 
 ### The Basics
 
-The term *@garlic-routing* has a diverse history of varying interpretations. As it currently stands, Monero defines *@garlic-routing* as the method in which @Kovri and @I2P create a @message-based anonymous overlay network of internet peers.
+The term *@garlic-routing* has a diverse history of varying interpretations. As it currently stands, Monero defines *@garlic-routing* as the method in which @Kovri and @I2P create a @message-based anonymous overlay network of Internet peers.
 
 The @Garlic-Encryption of @Garlic-Routing is similar to the @Layered-Encryption of [Onion Routing](https://en.wikipedia.org/wiki/Onion_routing) and effectively conceals the IP address of the sender and secures information sent from the sender to its @destination (and vice-versa).
 

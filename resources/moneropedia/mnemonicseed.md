@@ -15,6 +15,6 @@ In the official wallet, the mnemonic seed comprises 25 words with the last word 
 
 By storing the 25 word mnemonic key in a secure location, you have a backup of your private keys and hence all of your Moneroj.  Sharing this 25 word key is the equivalent of allowing another person complete access to your funds.  
 
-It's not a good idea to store more than you want to lose in a "hot wallet" aka a wallet which is currently or has ever been connected to the internet or loaded onto any device that has or may in the future be connected to the internet or any untrusted source!
+It's not a good idea to store more than you want to lose in a "hot wallet" aka a wallet which is currently or has ever been connected to the Internet or loaded onto any device that has or may in the future be connected to the Internet or any untrusted source!
 
 By creating a cold, or @paper-wallet you can safely store Moneroj.  
