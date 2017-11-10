@@ -15,4 +15,6 @@
 - channel: monero-research-lab
   description: Research into financial privacy with cryptocurrency.
 - channel: monero-translations
-  description: Localizing Monero into other languages
+  description: Localizing Monero into other languages.
+- channel: monero-hardware
+  description: Building hardware wallets to keep your Monero safe.
