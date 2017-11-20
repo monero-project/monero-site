@@ -15,6 +15,8 @@
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Bter
       url: https://bter.com/
+    - name: ChangeNOW
+      url: https://changenow.io?utm_source=monero&utm_medium=link&utm_term=merchants&utm_campaign=monero
     - name: CoinCut (OTC)
       url: https://www.coincut.com
     - name: Cryptopia
