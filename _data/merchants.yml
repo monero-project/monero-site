@@ -45,6 +45,8 @@
       url: https://shapeshift.io/
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
+    - name: Trovemat.com (ATM)
+      url: https://trovemat.com/
 - category: Block Explorers
   id: block-explorers
   merchants:
@@ -203,6 +205,8 @@
       url: https://synntechgaming.com
     - name: Xusah Boutique
       url: https://xusah.boutique/
+    - name: Judit Mátyus - Jewelry
+      url: https://www.juditmatyus.com/
 - category: Entertainment
   id: entertainment
   merchants:
