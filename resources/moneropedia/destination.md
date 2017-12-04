@@ -12,7 +12,7 @@ A @destination is the @I2P @in-net address of the final endpoint you are trying 
 
 ### In-depth Information
 
-An @I2P destination can be encoded into a @base32-address or @base64-address. Most users will only care about @base32-address or a `.i2p` hostname while, internally, @Kovri / @I2P @address-book uses @base64-addresses. Ultimately, all @destinations in @I2P are 516-byte (or longer) keys:
+An @I2P destination can be encoded into a @base32-address or @base64-address. Most users will only care about @base32-addresses or a `.i2p` hostname while, internally, @Kovri / @I2P @address-book uses @base64-addresses. Ultimately, all @destinations in @I2P are 516-byte (or longer) keys:
 
 `256-byte public key + 128-byte signing key + a null certificate = 516 bytes in Base64 representation`
 
