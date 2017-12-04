@@ -118,6 +118,8 @@
 - category: Services
   id: services
   merchants:
+    - name: 99Stack Hosting
+      url: https://www.99stack.com
     - name: AirVPN
       url: https://airvpn.org/
     - name: algoStrategic - Internet Marketing and Web Development
