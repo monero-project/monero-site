@@ -15,6 +15,8 @@
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Bter
       url: https://bter.com/
+    - name: ChangeNOW
+      url: https://changenow.io?utm_source=monero&utm_medium=link&utm_term=merchants&utm_campaign=monero
     - name: CoinCut (OTC)
       url: https://www.coincut.com
     - name: Cryptopia
@@ -142,10 +144,14 @@
       url: https://flokinet.is
     - name: Fork Networking, Inc. - Colocation, Dedicated Servers, VPS
       url: http://www.forked.net/
+    - name: Go Forward Software
+      url: https://www.goforwardsoftware.com
     - name: Guitar Music Theory course w/ 30% XMR discount
       url: http://www.guitartheoryrevolution.info/blog/guitar-theory-revolution-store/
     - name: Infield Loan Services - Atlanta, Construction Consulting, Contract review, Feasibility, Funds Escrow
       url: mailto:info@loandraw.com
+    - name: K9 Satisfaction - Premium dog training
+      url: http://www.k9satisfaction.com/
     - name: KoDDoS.net - DDoS Protection
       url: https://koddos.net
     - name: Marcos Aguayo - Programmer and Web Developer
@@ -168,6 +174,8 @@
       url: https://www.thebigcoin.io
     - name: Tuxcon Hosting - Mail and Web Hosting
       url: https://tuxcon.com
+    - name: WalletMonero - Online Wallet
+      url: https://walletmonero.com?utm_source=getmonero_org&utm_medium=list&utm_content=monero_list&utm_campaign=getmonero_org
     - name: Web Developer - Python with Django web framework
       url: http://www.voteforrodneylewis.com
     - name: Web Developer - Stefanos
@@ -191,6 +199,8 @@
       url: http://directvoltage.com
     - name: Fine Art from Jeanine King ~ Artwork of Home/Archtecture, Pets, Potraits, Caricatures ~ International Shipping
       url: http://art2unlimited.webs.com/
+    - name: Game of Cryptos
+      url: https://gameofcryptos.com/
     - name: Handcrafted goods
       url: https://mychain.store/
     - name: InvestmentArt
