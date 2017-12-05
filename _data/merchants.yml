@@ -195,6 +195,8 @@
   merchants:
     - name: All For Crypto
       url: https://allforcrypto.com
+    - name: Cannabis Cup
+      url: https://shop.cannabiscup.com/
     - name: Cellphone and laptop repair online store in Sweden
       url: http://www.LagaiPhone.se
     - name: Crypto Armory - ammunition for cryptocurrency at a competitive rate
@@ -219,6 +221,10 @@
       url: http://investmentart.org/
     - name: Mushroom cultures, mushroom growing supplies, seeds
       url: https://www.vesp.co/Fungible
+    - name: Plazmatic
+      url: http://www.plazmatic.com
+    - name: Project Coral Reef Store
+      url: https://shop.projectcoralreef.com
     - name: SecPoint IT Security Products
       url: https://shop.secpoint.com/shop/frontpage.html
     - name: SilverRound.com - Gold and Silver Dealer
@@ -240,3 +246,96 @@
       url: https://safedice.com
     - name: XMRLotto.com
       url: https://xmrlotto.com
+- category: Artist Stores
+  id: stores
+  merchants:
+    - name: A Perfect Circle
+      url: https://store.aperfectcircle.com
+    - name: Alice Cooper
+      url: https://shop.alicecooper.com
+    - name: Anthrax
+      url: https://shop.anthrax.com
+    - name: Awolnation
+      url: https://store.awolnationmusic.com
+    - name: Backstreet Boys
+      url: https://store.backstreetboys.com
+    - name: Butch Walker
+      url: https://store.butchwalker.com
+    - name: BUSH
+      url: https://official-bush-store.myshopify.com
+    - name: Crosses
+      url: https://shop.crossesmusic.com
+    - name: Dixie Chicks
+      url: https://shop.dixiechicks.com
+    - name: Dolly Parton
+      url: https://shop.dollyparton.com
+    - name: Fall Out Boy
+      url: https://store.falloutboy.com
+    - name: Fare Thee Well (Grateful Dead)
+      url: https://www.faretheewellmerch.com
+    - name: Five Finger Death Punch
+      url: https://fivefingerdeathpunch.com/collections/everything
+    - name: G Eazy
+      url: https://g-eazystore.com
+    - name: Ghost
+      url: https://shop.ghost-official.com
+    - name: Godsmack
+      url: http://shop.godsmack.com
+    - name: HIM
+      url: https://shop.heartagram.com
+    - name: Jason Aldean
+      url: https://store.jasonaldean.com
+    - name: Judas Priest
+      url: https://www.shopjudaspriest.com
+    - name: Kaskade
+      url: https://shopkaskade.com
+    - name: L2M
+      url: https://store.l2mofficial.com
+    - name: Lamb of God
+      url: https://shop.lamb-of-god.com
+    - name: Lana Del Rey
+      url: https://store.lanadelrey.com
+    - name: Lumineers
+      url: https://store.thelumineers.com
+    - name: Mariah Carey
+      url: https://mariahpride.com
+    - name: Marilyn Manson
+      url: https://store.marilynmanson.com
+    - name: Mastodon
+      url: https://shop.mastodonrocks.com
+    - name: Ministry
+      url: https://store.ministryband.com
+    - name: Morrissey
+      url: https://us.mporium.org
+    - name: Motley Crue
+      url: https://store.motley.com
+    - name: Motorhead
+      url: https://shop.imotorhead.com
+    - name: Panic! at the Disco
+      url: https://store.panicatthedisco.com
+    - name: Purism
+      url: https://puri.sm
+    - name: Rival Sons
+      url: https://rivalsons.myshopify.com
+    - name: Rob Zombie
+      url: https://shop.robzombie.com
+    - name: Roger Waters
+      url: https://store.roger-waters.com
+    - name: Scorpions
+      url: https://store.the-scorpions.com
+    - name: SIA
+      url: https://shop.siamusic.net
+    - name: Sixx:A.M.
+      url: https://store.sixxammusic.com
+    - name: Slayer
+      url: https://store.slayer.net
+    - name: The B-52s
+      url: https://theb52s.manheadmerch.com
+    - name: Thomas Rhett
+      url: https://thomasrhettstore.com
+    - name: Toby Keith
+      url: https://toby-keith-store.myshopify.com
+    - name: Train
+      url: https://store.savemesanfrancisco.com
+    - name: Weezer
+      url: https://weezerwebstore.com
