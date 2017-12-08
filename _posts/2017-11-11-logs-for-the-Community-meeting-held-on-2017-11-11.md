@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-11-11
 summary: Community highlights, Forum Funding System updates, RFC-HWALLET-1, Monero December, upcoming meetups, growing involvement, and miscellaneous
-tags: [community, crypto]
+tags: [community]
 author: dEBRUYNE / fluffypony
 ---
 
