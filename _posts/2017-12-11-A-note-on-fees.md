@@ -11,6 +11,7 @@ Let's start by comparing Monero's per kB fees to the per kB fees of other (hybri
 
 - **Bitcoin:** ~$26.90  
 - **Ethereum:** ~$2.91  
+- **Bitcoin Cash:** ~$0.07
 - **Litecoin:** ~$0.10  
 - **Dash:** ~$0.07  
 - **Monero:** ~$0.24  
@@ -51,7 +52,7 @@ Now, a default transaction in Monero, i.e., one that has two inputs and two outp
 
 Assuming a current `BaseReward` of 5.7 XMR:  
 
-`Penalty` = (5.7 * ((313.2/300)-1)², which yields ~0.011 XMR.  
+`Penalty` = 5.7 * ((313.2/300)-1)², which yields ~0.011 XMR.  
 
 Note that the `BaseReward` was significantly higher 6-12 months ago, which translates to a higher penalty.  
 
@@ -59,17 +60,17 @@ Now, miners need incentive to expand the block size. Therefore, the fee from inc
 
 As you can see from aforementioned penalty function, the penalty will go down when the base reward decreases. Furthermore, as can be easily spotted by graphing the function, the penalty function is more "lenient" in the beginning of the function. This means that any decrease in transaction size translates to a bigger than equal decrease in fees. Put differently, for example, an 80% reduction in transaction size could lead to an 90% reduction in fees. Let's play around with the formula to get some more concrete numbers. Assuming single-output bulletproofs, the transaction size of a typical transaction would be ~2.5 kB. Now, let's also assume that we want to incentivize miners to expand the block size with two transactions without losing revenue. That is, they will be able to include two additional transactions (above the minimum block size limit) without the penalty outweighing the fees. Plugging in the numbers, we get:  
 
-`Penalty` = (5.7 * ((305/300)-1)², which yields ~0.0016 XMR or ~0.0008 XMR per typical transaction.  
+`Penalty` = 5.7 * ((305/300)-1)², which yields ~0.0016 XMR or ~0.0008 XMR per typical transaction.  
 
 Reducing the transaction size with approximately 80%, but keeping the same minimum block size limit might be a bit blunt. Therefore, it could be that the minimum block size limit would be lowered to 100, 150, 200, or 250 kB. Let's plug in the numbers again:  
 
-`Penalty` = (5.7 * ((255/250)-1)², which yields ~0.0023 XMR or ~0.00115 XMR per typical transaction.  
+`Penalty` = 5.7 * ((255/250)-1)², which yields ~0.0023 XMR or ~0.00115 XMR per typical transaction.  
 
-`Penalty` = (5.7 * ((205/200)-1)², which yields ~0.0036 XMR or ~0.0018 XMR per typical transaction.  
+`Penalty` = 5.7 * ((205/200)-1)², which yields ~0.0036 XMR or ~0.0018 XMR per typical transaction.  
 
-`Penalty` = (5.7 * ((155/150)-1)², which yields ~0.0063 XMR or ~0.00315 XMR per typical transaction.  
+`Penalty` = 5.7 * ((155/150)-1)², which yields ~0.0063 XMR or ~0.00315 XMR per typical transaction.  
 
-`Penalty` = (5.7 * ((105/100)-1)², which yields ~0.014 XMR or ~0.007 XMR per typical transaction.  
+`Penalty` = 5.7 * ((105/100)-1)², which yields ~0.014 XMR or ~0.007 XMR per typical transaction.  
 
 You can graph all the outcomes by setting M<sub>N</sub> to `x` and `BlockSize` to `x+5`.  
 
@@ -79,7 +80,7 @@ One might ask oneself, how does the dynamic fee algorithm come into play? First,
 
 Let's examine the dynamic fee algorithm:  
 
-**Fee = (R/R<sub>0</sub>) * (M<sub>0</sub>/M) * F<sub>0</sub>**  
+**Fee per kB = (R/R<sub>0</sub>) * (M<sub>0</sub>/M) * F<sub>0</sub> * (60/300) * 4**  
 
 Where:  
 
@@ -88,10 +89,14 @@ Where:
 - M is the block size limit  
 - M<sub>0</sub> is the minimum block size limit (300 kB)  
 - F<sub>0</sub> is 0.002 XMR  
+- 60/300 is the adjustment factor to account for the increase of the minimum block size limit (60 kB -> 300 kB)  
+- 4 is the adjustment factor to account for the default fee multiplier. That is, the lowest fee level uses a multiplier of 1, whereas the default fee level uses a multiplier of 4  
 
 As a practical example, a few moons ago the median block size increased to approximately 400 kB and thhe default fee went down to ~0.0095. As we can see from the formula, this approximately matches the theoretical fee. That is:  
 
-`Fee` = (6.5/10) * (300/400) * 0.002 = 0.00975  
+`Fee per kB` = (6.5/10) * (300/400) * 0.002 * (60/300) * 4 = ~0.0008  
+
+Subsequently, multiply with the size of a typical transaction (~13 kB), which yields ~0.01 XMR.  
 
 Basically the inverse of the percentage increase of the median block size (against a base of the minimum block size) translates to the percentage reduction in fees. More specifically, a 600 kB median block size, which is a 100% (or factor 2) increase translates to a 50% (1/2) reduction in fees.  
 
