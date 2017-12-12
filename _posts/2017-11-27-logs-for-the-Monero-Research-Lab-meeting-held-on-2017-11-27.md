@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Monero Research Lab Meeting Held on 2017-11-27
 summary: SPECTRE, multisig, Bulletproofs (range proofs), ZKStarks, ASIC resistance, and miscellaneous
-tags: [community, crypto]
+tags: [community, crypto, research]
 author: dEBRUYNE / fluffypony
 ---
 
@@ -120,7 +120,7 @@ author: dEBRUYNE / fluffypony
 **\<suraeNoether>** i'm in a non-monogamous relationship with cryptonight  
 **\<suraeNoether>** ok, well  
 **\<suraeNoether>** anything else to discuss?  
-**\<dEBRUYNE>** <suraeNoether> i wouldn't mind putting up a portion of my funding for this period toward a Proof of Work contest for Monero's replacement proof of work scheme \<= I think othe already has some back up plans  
+**\<dEBRUYNE>** suraeNoether: i wouldn't mind putting up a portion of my funding for this period toward a Proof of Work contest for Monero's replacement proof of work scheme \<= I think othe already has some back up plans  
 **\<silur>** apparently V wants ringCT in EVM2  
 **\<dEBRUYNE>** You might want to talk to him about it  
 **\<suraeNoether>** othe are you around?  

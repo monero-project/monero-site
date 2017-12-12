@@ -39,6 +39,8 @@
       url: https://localmonero.co/
     - name: Magnetic Exchange
       url: https://magneticexchange.com
+    - name: MegaChange.is
+      url: https://megachange.is
     - name: MoneroDirect (Euro only)
       url: https://monerodirect.com
     - name: Poloniex
@@ -47,6 +49,8 @@
       url: https://shapeshift.io/
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
+    - name: Trovemat.com (ATM)
+      url: https://trovemat.com/
 - category: Block Explorers
   id: block-explorers
   merchants:
@@ -152,6 +156,8 @@
       url: http://www.guitartheoryrevolution.info/blog/guitar-theory-revolution-store/
     - name: Infield Loan Services - Atlanta, Construction Consulting, Contract review, Feasibility, Funds Escrow
       url: mailto:info@loandraw.com
+    - name: Ink Rebels
+      url: https://ink-rebels.com
     - name: K9 Satisfaction - Premium dog training
       url: http://www.k9satisfaction.com/
     - name: KoDDoS.net - DDoS Protection
@@ -191,6 +197,8 @@
       url: https://allforcrypto.com
     - name: Cellphone and laptop repair online store in Sweden
       url: http://www.LagaiPhone.se
+    - name: Crypto Armory - ammunition for cryptocurrency at a competitive rate
+      url: https://www.crypto-armory.com
     - name: CryptoMercado - coffee and snacks
       url: https://www.cryptomercado.com/
     - name: Cryptonic Physical Monero & Bitcoin coins
@@ -203,6 +211,8 @@
       url: http://art2unlimited.webs.com/
     - name: Game of Cryptos
       url: https://gameofcryptos.com/
+    - name: Hammock Universe
+      url: https://www.hammockuniverseusa.com/
     - name: Handcrafted goods
       url: https://mychain.store/
     - name: InvestmentArt
@@ -219,6 +229,8 @@
       url: https://synntechgaming.com
     - name: Xusah Boutique
       url: https://xusah.boutique/
+    - name: Judit Mátyus - Jewelry
+      url: https://www.juditmatyus.com/
 - category: Entertainment
   id: entertainment
   merchants:
