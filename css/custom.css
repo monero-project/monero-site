@@ -1580,19 +1580,19 @@ img.monero-logo {
     transition: all ease-out .1s;
 }
 
-/*.topnav .topnav-list .language-change {
+.topnav .topnav-list .language-change {
     position: relative;
     display: block;
 }
 
-.topnav .topnav-list .language-change,*/ .topnav .topnav-list .top-link {
+.topnav .topnav-list .language-change, .topnav .topnav-list .top-link {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-right: 4.5rem;
     font-size: 0.9rem;
 } 
 
-/*.topnav .topnav-list .language-change:hover {
+.topnav .topnav-list .language-change:hover {
     background-color: #fcfcfc;
 }
 
@@ -1640,7 +1640,7 @@ img.monero-logo {
 
 .topnav .topnav-list .language-change .dropdown-content a.active {
     color: #ff7519;
-}*/
+}
 
 
 .topnav .topnav-list a:hover, .topnav .topnav-list a:focus, .topnav .topnav-list a:active {
@@ -2097,16 +2097,66 @@ label[for="mobile-burger"] {
     background-color: #fcfcfc;
 }
         
-/*#langdrop:checked ~ .dropdown-content {
-    position: absolute;
-    top: 100%;
-    width: 100vw;
-    height: 100vh;
+#moblangdrop:checked ~ .dropdown-content {
     display: block;
+    position: inherit;
     opacity: 1;
     visibility: visible;
     box-shadow: none;
-}*/    
+    top: 6%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: inherit;
+    margin-top: 0.6rem;
+    background-color: #fcfcfc;
+}
+label[for="moblangdrop"] {
+    display: block;
+    padding: 1.5rem 1rem;
+}
+    
+    #moblangdrop:checked ~ label {
+        background-color: #fcfcfc;
+    }
+    
+    .burger-check:checked + label {
+    position: fixed;
+}
+    
+.nav-item > label {
+    display: flex;
+}
+    
+.white-nav .mob-language-change {
+    position: fixed;
+    right: 0;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+}
+    
+.white-nav .mob-language-change label {
+    color: #393939;
+}
+    
+    
+a.mob-lang-change {
+        padding: 1.5rem 1.5rem;
+        color: #393939;
+        border-bottom: 1px solid #e8ebef;
+    }
+    
+    a.mob-lang-change:hover, a.mob-lang-change.active, a.mob-lang-change:focus {
+        color: #ff7519;
+        text-decoration: none;
+    }
+    
+.white-nav .mob-language-change label .arrow-down {
+    display: inline-block;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    border-top: 3px solid #393939;
+}   
     
 }
 

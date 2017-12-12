@@ -1,5 +1,5 @@
 <div class="text-center container description">
-    <p>Transacting with Monero can be made easy. This page is designed to guide users in that process.</p>
+    <p>Es fácil hacer transacciones con Monero. Esta página sirve para mostrar cómo realizarlo.</p>
 </div>
 <div class="using">
     <section class="container">
@@ -9,11 +9,11 @@
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>1. Learn</h2>
+                            <h2>1. Aprender</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the <a href="/get-started/what-is-monero/">What is Monero</a> page. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
+                        <p>Monero es la criptomoneda segura, privada y no rastreable. Los desarrolladores y la comunidad están dedicados a proteger estos valores. Aprenda más sobre Monero en la página <a href="{{site.baseurl}}/get-started/what-is-monero/">¿Qué es Monero?</a>. El <a href="https://github.com/monero-project">código original</a> también está disponible para revisión y discusión.</p>
                     </div>
                 </div>
             </div>
@@ -26,11 +26,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>2. Request Support</h2>
+                            <h2>2. Pedir ayuda</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>There is a large and supportive community that will assist if you experience any difficulty. See the <a href="/community/hangouts/">Hangouts</a> page for more information.</p>
+                        <p>La comunidad grande y alentador le asistirá si tiene una dificultad o pregunta.Véase la página de <a href="{{site.baseurl}}/community/hangouts/">Canales de comunicación</a> para más información.</p>
                     </div>
                 </div>
             </div>
@@ -38,11 +38,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>3. Generate a Wallet</h2>
+                            <h2>3. Crear una billetera</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>A Monero wallet is required to secure your own funds. See the <a href="/downloads/">Downloads</a> page for a listing of available wallets.</p>
+                        <p>Se requiere crear una billetera para mantener sus fondos seguros. Vaya a la página de <a href="{{site.baseurl}}/downloads/">Descargas</a> para ver las billeteras electrónicas disponibles.</p>
                     </div>
                 </div>
             </div>
@@ -55,11 +55,11 @@
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>4. Acquire Monero</h2>
+                            <h2>4. Adquerir Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be purchased on an <a href="/community/merchants#exchanges">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="https://getmonero.org/get-started/mining/">mining</a>, the computationally-complex process whereby transactions are immutably recorded on the blockchain.</p>
+                        <p>Se compra Monero en una <a href="{{site.baseurl}}/community/merchants#exchanges">plataforma de intercambio</a> with fiat or other cryptocurrencies. con monedas fiduciarias o otras criptomonedas. Un modo alternativo de adquirir Monero es <a href="{{site.baseurl}}/get-started/mining/">minar</a>, lo cual es el proceso computacional complejo de recordar las transacciones en la cadena de bloque inmutablemente..</p>
                     </div>
                 </div>
             </div>
@@ -72,11 +72,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>5. Send and Receive Monero</h2>
+                            <h2>5. Enviar y recibir Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Learn how to send and receive Monero by viewing the <a href="/get-started/accepting/">guide</a>.</p>
+                        <p>Aprenda cómo enviar y recibir Monero con <a href="{{site.baseurl}}/get-started/accepting/">esta guía</a>.</p>
                     </div>
                 </div>
             </div>
@@ -84,11 +84,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>6. Transact with Monero</h2>
+                            <h2>6. Usar Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be used to purchase many goods and services. For a listing, see the <a href="/community/merchants/">Merchants</a> page. </p>
+                        <p>Se puede usar Monero para pagar por varios bienes y servicios. Véase la lista de <a href="{{site.baseurl}}/community/merchants/">comerciantes que aceptan Monero.</a></p>
                     </div>
                 </div>
             </div>

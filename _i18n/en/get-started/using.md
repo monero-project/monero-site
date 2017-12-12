@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the <a href="/get-started/what-is-monero/">What is Monero</a> page. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
+                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the <a href="{{site.baseurl}}/get-started/what-is-monero/">What is Monero</a> page. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>There is a large and supportive community that will assist if you experience any difficulty. See the <a href="/community/hangouts/">Hangouts</a> page for more information.</p>
+                        <p>There is a large and supportive community that will assist if you experience any difficulty. See the <a href="{{site.baseurl}}/community/hangouts/">Hangouts</a> page for more information.</p>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>A Monero wallet is required to secure your own funds. See the <a href="/downloads/">Downloads</a> page for a listing of available wallets.</p>
+                        <p>A Monero wallet is required to secure your own funds. See the <a href="{{site.baseurl}}/downloads/">Downloads</a> page for a listing of available wallets.</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be purchased on an <a href="/community/merchants#exchanges">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="https://getmonero.org/get-started/mining/">mining</a>, the computationally-complex process whereby transactions are immutably recorded on the blockchain.</p>
+                        <p>Monero may be purchased on an <a href="{{site.baseurl}}/community/merchants#exchanges">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="{{site.baseurl}}/get-started/mining/">mining</a>, the computationally-complex process whereby transactions are immutably recorded on the blockchain.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Learn how to send and receive Monero by viewing the <a href="/get-started/accepting/">guide</a>.</p>
+                        <p>Learn how to send and receive Monero by viewing the <a href="{{site.baseurl}}/get-started/accepting/">guide</a>.</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be used to purchase many goods and services. For a listing, see the <a href="/community/merchants/">Merchants</a> page. </p>
+                        <p>Monero may be used to purchase many goods and services. For a listing, see the <a href="{{site.baseurl}}/community/merchants/">Merchants</a> page. </p>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,7 @@
+langs:
+  en: English
+  es: Español
+
 global:
   date: '%Y/%m/%d'
   monero: Monero
