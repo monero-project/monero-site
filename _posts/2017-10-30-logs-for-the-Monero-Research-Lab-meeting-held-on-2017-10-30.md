@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Monero Research Lab Meeting Held on 2017-10-30
 summary: Multisig, hash-based accumulators, blockchain protocols, quantum-hard shuffle PRNG, educational outreach, and miscellaneous
-tags: [community, crypto]
+tags: [community, crypto, research]
 author: dEBRUYNE / fluffypony
 ---
 
