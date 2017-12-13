@@ -234,6 +234,8 @@
   merchants:
     - name: Crypto Games
       url: https://www.crypto-games.net/
+    - name: CryptoLotto
+      url: https://cryptolotto.info
     - name: MoneroDice
       url: https://monerodice.net
     - name: SafeDice
