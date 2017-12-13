@@ -89,7 +89,7 @@ Where:
 - M<sub>0</sub> is the minimum block size limit (300 kB)  
 - F<sub>0</sub> is 0.002 XMR  
 
-As a practical example, a few moons ago the median block size increased to approximately 400 kB and thhe default fee went down to ~0.0095. As we can see from the formula, this approximately matches the theoretical fee. That is:  
+As a practical example, a few moons ago the median block size increased to approximately 400 kB and the default fee went down to ~0.0095. As we can see from the formula, this approximately matches the theoretical fee. That is:  
 
 `Fee` = (6.5/10) * (300/400) * 0.002 = 0.00975  
 
