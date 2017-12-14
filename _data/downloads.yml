@@ -89,6 +89,8 @@
   cli_url: https://github.com/monero-project/monero
   cli_hash: source
   version: Bleeding edge (possibly unstable)
+  torrent_url: magnet:?xt=urn:btih:02e8b7300b491b9789ebe68862a5bc038cc45b31&dn=blockchain.raw&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce
+  torrent_hash: aee9d9ee50df361302ece7b40b001db15f9bb480cbe17e5f2f72b54f0a2452dc
   
 - platform: Mobile & Light Wallets
   id: mobilelight

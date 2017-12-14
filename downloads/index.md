@@ -72,8 +72,9 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 </h4>
 </div>
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
-If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can [use this link for the most current bootstrap](https://downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
+If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can use this [link](https://downloads.getmonero.org/blockchain.raw) or [torrent]({{ data_downloads.torrent_url }}) for the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
 </div>
+<p><strong>SHA256 Hash (Torrent):</strong></p> <p class="hash"> {{ data_downloads.torrent_hash }}</p>
 </div>
 {% elsif data_downloads.id == "hardware" %}
 <div class="row">
