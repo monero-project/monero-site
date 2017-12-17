@@ -68,24 +68,11 @@ title: Mining Monero
                     <div class="row center-xs">
                        <p>Note that some miners may have developer fees.</p>
                     </div>
-                    <div class="row miners">
-                        <div class="col-md-4 col-xs-12 center-xs">
-                            <h3>AMD Miners</h3>
-                            <p><a href="https://github.com/fireice-uk/xmr-stak-amd" target="_blank" rel="noreferrer noopener">XMR Stak AMD</a></p>
-                            <p><a href="https://github.com/OhGodAPet/wolf-xmr-miner" target="_blank" rel="noreferrer noopener">Wolf's AMD Miner</a></p>
-                        </div>
-                        <div class="col-md-4 col-xs-12 center-xs">
-                            <h3>CPU Miners</h3>
-                            <p><a href="https://github.com/jwinterm/monerospelunker/releases" target="_blank" rel="noreferrer noopener">Monero Spelunker (Windows)</a></p>
-                            <p><a href="https://github.com/fireice-uk/xmr-stak-cpu" target="_blank" rel="noreferrer noopener">XMR Stak CPU</a></p>
-                            <p><a href="https://github.com/OhGodAPet/cpuminer-multi" target="_blank" rel="noreferrer noopener">Wolf's CPU Miner</a></p>
-                        </div>
-                        <div class="col-md-4 col-xs-12 center-xs">
-                            <h3>NVidia Miners</h3>
-                            <p><a href="https://github.com/fireice-uk/xmr-stak-nvidia" target="_blank" rel="noreferrer noopener">XMR Stak NVidia</a></p>
-                            <p><a href="https://github.com/tsiv/ccminer-cryptonight" target="_blank" rel="noreferrer noopener">CC Miner</a></p>
-                            <p><a href="https://github.com/xmrMiner/xmrMiner-Win64" target="_blank" rel="noreferrer noopener">XMR Miner (Windows)</a></p>
-                        </div>
+                    <div class="row center-xs">
+                        <p><a href="https://github.com/fireice-uk/xmr-stak" target="_blank" rel="noreferrer noopener">XMR Stak</a></p>
+                        <p><a href="https://github.com/xmrig/xmrig" target="_blank" rel="noreferrer noopener">XMRig</a></p>
+                        <p><a href="https://github.com/xmrig/xmrig-amd" target="_blank" rel="noreferrer noopener">XMRig AMD</a></p>
+                        <p><a href="https://github.com/xmrig/xmrig-nvidia" target="_blank" rel="noreferrer noopener">XMRig NVIDIA</a></p>
                     </div>
                 </div>
             </div>
