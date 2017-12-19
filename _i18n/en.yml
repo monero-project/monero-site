@@ -18,44 +18,38 @@ global:
   privacy: Privacy
   copyright: Copyright
   edit: Edit This Page
-menu:
-  forum: Forum
-  blog: Blog
-  knowledge_base: Knowledge Base
-  community: Community
-  bitcointalk: Bitcointalk Thread
-  reddit: Reddit
-  allblog: All Blog Posts
-  devdiaries: Dev Diaries
-  missives: Monero Missives
-  uncategorised: Uncategorized
-  choose: How to Choose a Monero Client
-  running: How to Run a Monero Node
-  donations: Donating and Sponsorships
-  contribute: Contributing to Monero
-  downloads: All Monero Downloads
-  github: GitHub
-  merchants: Merchants and Services Directory
-  accepting: Accepting Monero Payments
+titles:
+  index: Home
+  whatismonero: What is Monero (XMR)?
+  using: Using Monero
+  accepting: Accepting Monero
+  contributing: Improing Monero
+  mining: Mining Monero
+  faq: FAQ
+  downloads: Downloads
+  allposts: All Blog Posts
+  team: Monero Team
+  hangouts: Hangouts
+  events: Events
+  sponsorships: Sponsorships
+  merchants: Merchants & Services
   about: About Monero
-  people: The People Behind Monero
+  roadmap: Roadmap
+  researchlab: Monero Research Lab
+  moneropedia: Moneropedia
   userguides: User Guides
   developerguides: Developer Guides
-  vrp: Vulnerability Response Process
-  goals: Design & Development Goals
-  openalias: The OpenAlias Project
-  lab: Monero Research Lab
-  alternative: Alternative Clients
-  projects: External Projects
-  stackexchange: StackExchange Q&A
-  slack: Slack Chat
-  telegram: Telegram Chat
-  irc: IRC on Freenode
-  irc-general: "#monero (General)"
-  irc-development: "#monero-dev (Development)"
-  irc-trading: "#monero-otc (OTC Trading)"
-  irc-markets: "#monero-markets (Markets)"
-  irc-mining: "#monero-pools (Mining)"
+  technicalspecs: Technical Specs
+  themoneroproject: The Monero Project
+  presskit: Monero Press Kit
+  legal: Legal
+  ffs: Forum Funding System
+  ffs-cp: Completed Proposals
+  ffs-fr: Funding Required
+  ffs-ideas: Ideas
+  ffs-ot: Open Tasks
+  ffs-wip: Work in Progress
+  blogbytag: Blog by Tag
 index:
   page_title: "Monero - secure, private, untraceable"
   what_is_1: What is

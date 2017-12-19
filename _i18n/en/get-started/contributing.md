@@ -49,7 +49,7 @@ Mining ensures the Monero network remains decentralized and secure. In the Moner
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>Ongoing development is supported by donations and <a href="/community/sponsorships/">sponsorships</a>.</p>
+                                <p>Ongoing development is supported by donations and <a href="{{site.baseurl}}/community/sponsorships/">sponsorships</a>.</p>
                             </div>
                             <div class="row center-xs">
                                 <div class="col-lg-6">

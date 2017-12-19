@@ -16,7 +16,7 @@
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Private Digital Currency</h2>
                             <p id="main-text">Monero is a secure, private, and untraceable cryptocurrency. It is open-source and accessible to all. With Monero, you are your own bank. Only you control and are responsible for your funds. Your accounts and transactions are kept private from prying eyes.</p>
-                            <p><a href="/get-started/using/" class="btn-link btn-auto btn-primary">Get Started</a></p>
+                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Get Started</a></p>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Monero is fungible</h3>
-                            <p> Monero is <a href="/resources/moneropedia/fungibility.html">fungible</a> because it is private by default. Units of Monero cannot be blacklisted by vendors or exchanges due to their association in previous transactions.</p>
+                            <p> Monero is <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fungible</a> because it is private by default. Units of Monero cannot be blacklisted by vendors or exchanges due to their association in previous transactions.</p>
                         </div>
                     </div>
                 </div>
@@ -86,22 +86,22 @@
                         </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Monero for Windows</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Monero for Windows</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Monero for Mac</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Monero for Mac</a></p>
                                 </div>
                             </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero for Linux</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero for Linux</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Latest Blockchain</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Latest Blockchain</a></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12"><p class="main-downloads">Need it for a different operating system? <a href="/downloads/">View all available downloads here.</a></p>
+                                <div class="col-xs-12"><p class="main-downloads">Need it for a different operating system? <a href="{{site.baseurl}}/downloads/">View all available downloads here.</a></p>
                             </div>
                             </div>
                 </div>
@@ -118,7 +118,7 @@
                               {% for post in site.posts limit:2 %}
                               <div class="row start-xs">
                                                     <div class="col">
-                                                        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+                                                        <p><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></p>
                                                     </div>
                                                 </div>
                               {% endfor %}
@@ -126,7 +126,7 @@
  
                             <div class="row end-xs">
                                 <div class="col">
-                                    <p><a href="/blog/">More news</a></p>
+                                    <p><a href="{{site.baseurl}}/blog/">More news</a></p>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                             <div class="col">
                                 <h2>Moneropedia</h2>
                                 <p class="main-resources">Would you like to look up the meanings of the terms and concepts used in Monero? Here you will find an alphabetical guide to terms and their meanings from both the Monero and Kovri projects.</p>
-                                <p><a href="/resources/moneropedia/" class="btn-link btn-auto">Read Moneropedia</a></p>
+                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Read Moneropedia</a></p>
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
                             <div class="col">
                                 <h2>User Guides</h2>
                                 <p class="main-resources">Step-by-step guides to all things Monero are separated by category and cover everything from creating a wallet to supporting the network, and even how to edit this website.</p>
-                                <p><a href="/resources/user-guides/" class="btn-link btn-auto">Read user guides</a></p>
+                                <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Read user guides</a></p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                             <div class="col">
                                 <h2>FAQ</h2>
                                 <p class="main-resources">We've heard a lot of questions over the years and have compiled, for your convenience, a thorough and varied FAQ. Don't worry, if your questions are not on here, you can always ask the community.</p>
-                                <p><a href="/get-started/faq/" class="btn-link btn-auto">Read answers</a></p>
+                                <p><a href="{{site.baseurl}}/get-started/faq/" class="btn-link btn-auto">Read answers</a></p>
                             </div>
                         </div>         
                     </div>

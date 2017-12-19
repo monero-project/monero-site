@@ -4,9 +4,7 @@
            
         <div class="slide-in-nav">
              <div class="container slide-in">
-                {% case site.lang %}
-                   {% when 'en' %}
-                    {% for item in site.data.navigation.en %} 
+                    {% for item in site.data.lang[site.lang].navigation %} 
                  <div class="row">
                      <div class="col-xs-12 dropdown text-center nav-item">
                            {% if item.subfolderitems %}
@@ -24,29 +22,6 @@
                      </div>
                  </div>
                  {% endfor %}
-                 
-                 {% when 'es' %}
-                    {% for item in site.data.navigation.es %} 
-                 <div class="row">
-                     <div class="col-xs-12 dropdown text-center nav-item">
-                           {% if item.subfolderitems %}
-                            {%assign counter=counter | plus: 1%}
-                            <label for="drop{{counter}}">{{item.title}}<div class="arrow-down"></div></label>
-                            <input class="burger-checkdropdown" id="drop{{counter}}" type="checkbox">
-                            <div class="dropdown-content">
-                                {% for entry in item.subfolderitems %}
-                              <a href="{{site.baseurl}}/{{ entry.url }}">{{ entry.page }}</a>
-                                  {% endfor %}
-                            </div>
-                            {% else %}
-                               <a href="{{site.baseurl}}/{{item.url}}">{{item.title}}</a>
-                            {% endif %}
-                     </div>
-                 </div>
-                 {% endfor %}
-                 
-                 {% endcase %}
-                 
                  <div class="row">
                      <div class="col-xs-12">
                          <div class="text-center nav-item mob">
@@ -89,11 +64,34 @@
                     {% endif %}"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
-                      <div class="row end-xs">
+                      <div class="row end-xs middle-xs">
                          <div class="col-md-12">
-                          <a href="https://forum.getmonero.org" class="mob top-link col-md-4">Forum Funding System</a>
-                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="mob top-link col-md-4">Vulnerability Response</a>
-                          <a href="{{site.baseurl}}/the-monero-project/" class="mob top-link col-md-3">The Monero Project</a>
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="{{site.baseurl}}/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">{% for lang in site.languages %}
+                            
+                                {% if lang == site.lang %}
+                            
+                                    {% t langs.{{ lang }} %}
+                            
+                                {%endif%}
+                            
+                            {%endfor%}<div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    {% for lang in site.languages %}
+                                {% unless site.lang == lang %}
+                                  {% if lang == site.default_lang %}
+                                    <a href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                  {% else %}
+                                    <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                  {% endif %}
+                                {% endunless %}
+                              {% endfor %}
+                            </div>
+                          </div>
                           </div>
                       </div>
                   </div>
@@ -102,10 +100,7 @@
             <div class="botnav white-nav">
                 <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
                 <div class="row between-xs nav-items">
-                   
-                   {% case site.lang %}
-                     {% when 'en' %}
-                     {% for item in site.data.navigation.en %}
+                     {% for item in site.data.lang[site.lang].navigation %}
                     <div class="col dropdown nav-item">
                         {% if item.subfolderitems %}
                             <label for="desktopdrop1">{{item.title}}<div class="arrow-down"></div></label>
@@ -120,30 +115,12 @@
                             {% endif %}
                     </div>
                     {% endfor %}
-                    {% when 'es' %}
-                     {% for item in site.data.navigation.es %}
-                    <div class="col dropdown nav-item">
-                        {% if item.subfolderitems %}
-                            <label for="desktopdrop1">{{item.title}}<div class="arrow-down"></div></label>
-                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
-                            <div class="dropdown-content">
-                                {% for entry in item.subfolderitems %}
-                                  <a href="{{site.baseurl}}/{{ entry.url }}">{{ entry.page }}</a>
-                                {% endfor %}
-                            </div>
-                            {% else %}
-                           <a href="{{site.baseurl}}/{{item.url}}">{{item.title}}</a>
-                            {% endif %}
-                    </div>
-                    {% endfor %}
-                    {%endcase%}
-
                   </div>
             </div>
         </nav>
         </div>
         <div class="mob bot-nav white-nav">
-            <div class="row center-xs">
+            <div class="row center-xs middle-xs">
                 <div class="col-xs-6">
                     <a href="{% if site.lang == 'en' %}
                     
@@ -157,16 +134,17 @@
                 </div>
                 <div class="dropdown col-xs-6 text-center mob-language-change">
                 <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
-                 <label for="moblangdrop">{% for lang in site.languages %}
-                            
-                                {% if lang == site.lang %}
-                            
-                                    {% t langs.{{ lang }} %}
-                            
-                                {%endif%}
-                            
-                            {%endfor%}<div class="arrow-down"></div></label>
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
                                <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              {% for lang in site.languages %}
+                                {% if site.lang == lang %}
+                                 {% t langs.{{ lang }} %}
+                                {% endif %}
+                              {% endfor %}
+                                   
+                               </p>
                                {% for lang in site.languages %}
                                 {% unless site.lang == lang %}
                                   {% if lang == site.default_lang %}
