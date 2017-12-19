@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: "Monero Press Kit"
+title: titles.presskit
 permalink: /press-kit/index.html
 ---
 {% tf press-kit.md %}

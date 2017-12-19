@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Roadmap
+title: titles.roadmap
 permalink: /resources/roadmap/index.html
 ---
 {% tf resources/roadmap.md %}

@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: "Developer Guides"
+title: titles.developerguides
 permalink: /resources/developer-guides/index.html
 ---
 {% tf resources/developer-guides.md %}

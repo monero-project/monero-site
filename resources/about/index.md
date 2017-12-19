@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: "About Monero"
+title: titles.about
 permalink: /resources/about/index.html
 ---
 
