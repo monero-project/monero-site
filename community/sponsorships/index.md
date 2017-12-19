@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Sponsorships
+title: titles.sponsorships
 permalink: /community/sponsorships/index.html
 ---
 

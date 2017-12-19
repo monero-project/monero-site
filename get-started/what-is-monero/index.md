@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "What Is Monero (XMR)?"
+title: titles.whatismonero
 permalink: /get-started/what-is-monero/index.html
 ---
 

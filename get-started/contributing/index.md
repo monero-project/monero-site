@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Improving Monero
+title: titles.contributing
 permalink: /get-started/contributing/index.html
 ---
 {% tf get-started/contributing.md %}

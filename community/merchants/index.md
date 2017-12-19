@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Merchants & Services
+title: titles.merchants
 permalink: /community/merchants/index.html
 ---
 {% tf community/merchants.md %}

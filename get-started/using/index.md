@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Using Monero
+title: titles.using
 permalink: /get-started/using/index.html
 ---
 {% tf get-started/using.md %}
