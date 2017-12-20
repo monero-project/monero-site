@@ -2,6 +2,9 @@
 
 Copyright (c) 2014-2018, The Monero Project
 
+## IMPORTANT MULTILANGUAGE UPDATE NOTICE
+The multilingual update has recently been rolled out. The website now requires more steps to update so everyone can have a smooth experience. Please read all instructions carefully and follow them all! If they are not all followed, this leads to a ton of work for the website maintainers. A warning will be issued to repeat offenders.
+
 ## Table of Contents
 
 1.0 Introduction
@@ -28,11 +31,15 @@ Copyright (c) 2014-2018, The Monero Project
 
 12.0 How to add a question to the FAQ
 
-13.0 License
+13.0 How to translate a page
+
+14.0 How to add a new language
+
+15.0 License
 
 ## 1.0 Introduction
 
-This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Please note that translations are not available yet, but when they are added, this document will be updated with instructions on how to translate the content of [getmonero.org website](https://getmonero.org/). In the meantime, any help translating this document into another language is greatly appreciated.
+This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in.
 
 Feel free to skip down to a relevant section if you already know what you need. So to go to the 'How to make a User Guide' section use your find function and type '5.0'. 
 
@@ -71,10 +78,16 @@ Every section from here on out will talk about how to make a specific type of we
 A few random points of note:
 
 - All external links must have http:// or https:// in front of them or they will not redirect properly.
-- If you want to add a new page to the navigation, you should note that there are two menus in `header.html`. One for mobile and one for desktop. Your page must be added in the appropriate place in BOTH navigations.
+- If you want to add a new page to the navigation, you should go to ALL LANGUAGES in the `_data/lang` folder including `template` and add the page.
 - It is strongly strongly STRONGLY encouraged that you if you make a change, you - at the minimum - test it on your local machine before submitting a PR. Sometimes unexpected things may happen due to a change. If you change a page, check the whole page on multiple screen sizes and browsers to make sure there wasn't any collateral damage.
 
 ### 3.1 Housekeeping
+
+#### Editing the Site
+When you make an edit to ANY page on the English language of this website, PLEASE copy your changes into the corresponding `/_i18n/template/` file as well.
+
+The Monero Translation workgroup will do their best to keep tabs on all changes of the site, but it'd be nice to notify them that you've changed a page so they can make sure the equivalent pages are changed accordingly in the other languages.
+
 #### GitHub Issues
 We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributer and the issue is not closed we ask that you close it in a timely manner. A contributer (rehrar, SamsungGalaxyPlayer, or other community members, etc) may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
@@ -119,42 +132,63 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 
 ### 5.1 Quick Start
 
-* Make file in /resources/user-guides with an .md ending and no spaces in filename.
-* Front Matter as in 5.3
+* Create file in /resources/user-guides with an .md ending and no spaces in filename.
+* File content as in 5.3
+* Create file in /_i18n/en/resources/user-guides with the exact same filename as above ending in .md
 * Write User Guide
-* Add guide using markdown in the correct category in /resources/user-guides/index.md being careful not to mess with any indentation
+* Copy User Guide file to ALL LANGUAGES in /_i18n/[ALL LANGUAGES]/resources/user-guides
+* Paste `{% include untranslated.html %}` into the top of each language version of your User Guide, except the original language
+* Add guide using markdown in the correct category in ALL LANGUAGES to /_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
 * Test/Build
 * Submit PR
 
 ### 5.2 Make a file
 Navigate to the /resources/user-guides folder and make a new file. Be sure the file name has no spaces and the ending is .md
 
-### 5.3 Front Matter
+### 5.3 Content of file
 ```
 ---
-layout: static_page
+layout: user-guide
 title: TITLE OF YOUR USER GUIDE
+permalink: /resources/user-guides/NAME-OF-FILE-GOES-HERE.html
 ---
+
+{% tf resources/user-guides/NAME-OF-FILE-GOES-HERE.md %}
 ```
 
-### 5.4 Write
+Copy this exactly and merely change the files names where indicated.
+
+### 5.4 Create file in localization folders
+Navigate to the /i18n/ folder and choose the correct folder for your language. Navigate further into the `resources/user-guides` folders and make a .md file with the EXACT SAME filename as the you made before.
+
+### 5.5 Write
 Write your user guide. Be succinct but thorough. Remember, people will be using your guides when they need help. Make sure all the information is there. Feel free to use images or screenshots if necessary to help get your point across.
 
-### 5.5 Add Guide to the 'User Guide' landing page
-In the /resources/user-guides folder, find the file labeled index.md and open it. 
+The title should be at the top of the User Guide using a single `#` for an H1 tag. Titles will not be automatically put on these pages as with other pages. There should be NO front matter on this file.
+
+### 5.5 Copy User Guide file into all languages
+Copy your file and navigate to each language file in the /i18n folder. In each language folder (INCLUDING template) go to the resources/user-guides folder and paste your user guide (don't worry, you don't have to translate it) there. This is very important, and the site will not build if the file with the same name is not in each language folder.
+
+As you paste into each folder, open up the file and paste the following snippet at the top of the file (before your title):
+`{% include untranslated.html %}`. This does not need to be done in the original language that the User Guide was written in.
+
+### 5.6 Add Guide to the 'User Guide' landing page of EACH LANGUAGE
+In the /_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it. 
 
 DO NOT CHANGE ANYTHING IN THIS DOCUMENT BESIDES WHAT YOU ARE INSTRUCTED TO.
 
 This file will look quite different because it's HTML. Don't panic. Simply Ctrl + F (i.e. the find feature) and search for the category that you want to put your User Guide in. You will see there are some sections that are not indented like the others. They are flush with the left side of the screen. **Do not change the indentation.** You can put markdown in these areas.
 
-Once you've identified the non-indented area under the category you would like your User Guide to be under, you can use markdown to insert your link underneath the others. `[TITLE OF USER GUIDE](LINK-TO-USER-GUIDE.html)`. Please note that the file name in between the parentheses must be EXACTLY the same name as the file name you made in step 5.2, but with a `.html` at the end instead of `.md`.
+Once you've identified the non-indented area under the category you would like your User Guide to be under, you can use markdown to insert your link underneath the others. `[TITLE OF USER GUIDE]({{site.baseurl}}/LINK-TO-USER-GUIDE.html)`. Please note that the file name in between the parentheses must be EXACTLY the same name as the permalink you made in step 5.3, but with a `.html` at the end instead of `.md` and the snippet `{{site.baseurl}}/` before the link.
 
 In the event that you think your User Guide should be in a new Category that doesn't exist yet, contact rehrar to make one for you.
 
-### 5.6 Build/Test
+Repeat the above process for each language version of this index page INCLUDING THE template.
+
+### 5.7 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically and test that your link appears in the correct category and that it leads to your User Guide when clicked. Test your User Guide in the browser and contact rehrar if there are any bugs.
 
-### 5.7 Submit Pull Request
+### 5.8 Submit Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
 ## 6.0 How to make a Moneropedia Entry
@@ -422,7 +456,66 @@ Build your website using `jekyll serve` if it's not rebuilding automatically. If
 ### 12.3 Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
-## 13.0 Website License
+## 13.0 How to translate a page
+
+### 13.1 Quickstart
+* Navigate to the correct language in the /i18n folder and find the page you wish to translate
+* Click the file and translate the page, not touching any HTML or markdown.
+* Remove `{% include untranslated.html %}` from the page
+* Test/Build
+* Submit PR
+
+### 13.2 Naviate to correct file
+Go to the /i18n folder and find the two letter code for the language you wish to translate for. Enter that folder and find the file you wish to translate. The filenames are all in English and MUST NOT BE CHANGED.
+
+### 13.3 Translate the file
+Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip step 13.4. If during testing, the page appears different from the original English page (besides the translated text of course), you did something wrong and may have to start again.
+
+### 13.4 Remove the 'untranslated' snippet
+Somewhere on the page (usually the top) should be a snippet that says `{% include untranslated.html %}`. Simply delete this completely from the file. This will remove the orange bar from the bottom saying the page is untranslated.
+
+### 13.5 Build/Test
+Build your website using `jekyll serve` if it's not rebuilding automatically.
+
+If the build is successful, go to the correct page in the correct language and check to see that everything is translated, and that the page looks identical to the original English page (besides the translated text). Test the page and let rehrar know if there are any bugs.
+
+### 13.6 Submit a Pull Request
+You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
+
+## 14.0 How to add a new language
+Whoo boy, this is the big one. Please follow all directions exactly.
+
+### 14.1 _config.yml file
+Navigate to the root folder of the whole website and find the file labeled `_config.yml`. Open it and find the line that says `languages:`. Add your two letter language code (Google it if you don't know it) in between the brackets after the others already present. You will need to put a comma after the previous last one. 
+
+Example:
+```
+languages: ["en", "es", "NEW LANG HERE"]
+```
+Save and exit the file.
+
+### 14.2 _data folder
+Navigate to the `_data/lang` folder and copy the `template` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to. 
+**The template folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
+
+Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
+
+### 14.3 _i18n folder
+Navigate to the _i18n folder and duplicate the template.yml file. Rename the duplicate to the two letter language code of your language with a `.yml` at the end. Repeat this process with the `template` folder as well.
+**The template folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
+
+Enter the .yml file and translate everything there.
+
+### 14.3 Translate
+If you will be translating the content, please refer to section 13.0 in this README for instructions on translating pages.
+
+### 14.4 Build/Test
+Build your website using `jekyll serve`. If the build is successful, navigate to any page on the site and check to make sure that your language is appearing in the dropdown for languages on both mobile and desktop.
+
+### 14.5 Submit a Pull Request
+You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
+
+## 15.0 Website License
 
 Copyright (c) 2014-2017, The Monero Project
 

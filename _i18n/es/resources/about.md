@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 <div class="about-monero">
     <section class="container">
             <div class="row">

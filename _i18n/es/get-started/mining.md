@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                    <p>See <a href="/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
+                    <p>See <a href="{{site.baseurl}}/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>
@@ -66,8 +66,14 @@
                     </div>
                     <div class="row center-xs">
                         <p><a href="https://github.com/fireice-uk/xmr-stak" target="_blank" rel="noreferrer noopener">XMR Stak</a></p>
+                    </div>
+                    <div class="row center-xs">
                         <p><a href="https://github.com/xmrig/xmrig" target="_blank" rel="noreferrer noopener">XMRig</a></p>
+                    </div>
+                    <div class="row center-xs">
                         <p><a href="https://github.com/xmrig/xmrig-amd" target="_blank" rel="noreferrer noopener">XMRig AMD</a></p>
+                    </div>
+                    <div class="row center-xs">
                         <p><a href="https://github.com/xmrig/xmrig-nvidia" target="_blank" rel="noreferrer noopener">XMRig NVIDIA</a></p>
                     </div>
                 </div>

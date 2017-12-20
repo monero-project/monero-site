@@ -83,8 +83,11 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 </div>
 </div>
 <div class="row center-xs">
-  <div class="col-xs-12">
+  <div class="col-xs-6">
     <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
+  </div>
+  <div class="col-xs-6">
+    <a href="https://monerujo.io"><img style="height: 115px;" src="/img/Monerujo-wallet.png" alt="Monerujo Logo"></a>
   </div>
 </div>
 

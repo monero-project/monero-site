@@ -1075,6 +1075,23 @@ pre.highlight>code {
   border-top: 3px solid #393939;
 }
 
+.untranslated {
+    background-color: #ff7519;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.untranslated-link {
+    color: white; 
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 75rem) {
     
 body p, body blockquote, body ul {
@@ -1102,6 +1119,9 @@ body {font-size: 1rem;}
 .page-wrapper {
     padding-top: 4rem;
 }  
+    .untranslated p {
+        font-size: 0.6rem;
+    }
     
 }
 
@@ -2476,16 +2496,16 @@ body {
 
 .page-wrapper {
     position: relative;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
-.site-wrap {
+/*.site-wrap {
     padding-bottom: 435px;
     padding-bottom: 27.1875rem;
-}
+}*/
 
 footer {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
     background-color: #4c4c4c;

@@ -42,8 +42,7 @@
                         <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                             <h2>2015</h2>
                             <div class="tabPanel-content">
-                               {% for toplevel in site.data.roadmap %}
-                              
+                               {% for toplevel in site.data.lang[site.lang].roadmap %}
                               {% if toplevel.year == 2015 %}
                                 {% for roadlist in toplevel.accomplishments %}
                                   <div class="row start-xs middle-xs">
@@ -54,18 +53,15 @@
                                         <p>{{roadlist.date}}: {{roadlist.name}}</p>
                                      </div>
                                   </div>
-                             
                               {%endfor%}
                               {%endif%}
-                              
                               {%endfor%}
                             </div>
                             <label for="tab-3" tabindex="0"></label>
                             <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
                             <h2>2016</h2>
                             <div class="tabPanel-content">
-                               {% for toplevel in site.data.roadmap %}
-                              
+                               {% for toplevel in site.data.lang[site.lang].roadmap %}
                               {% if toplevel.year == 2016 %}
                                 {% for roadlist in toplevel.accomplishments %}
                                   <div class="row start-xs middle-xs">
@@ -76,18 +72,15 @@
                                         <p>{{roadlist.date}}: {{roadlist.name}}</p>
                                      </div>
                                   </div>
-                             
                               {%endfor%}
                               {%endif%}
-                              
                               {%endfor%}
                             </div>
                             <label for="tab-4" tabindex="0"></label>
                             <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
                             <h2>2017</h2>
                             <div class="tabPanel-content">
-                               {% for toplevel in site.data.roadmap %}
-                              
+                               {% for toplevel in site.data.lang[site.lang].roadmap %}
                               {% if toplevel.year == 2017 %}
                                 {% for roadlist in toplevel.accomplishments %}
                                   <div class="row start-xs middle-xs">
@@ -102,18 +95,15 @@
                                         {%endif%}
                                      </div>
                                   </div>
-                             
                               {%endfor%}
                               {%endif%}
-                              
                               {%endfor%}
                             </div>
                             <label for="tab-5" tabindex="0"></label>
                             <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
                             <h2>Future</h2>
                             <div class="tabPanel-content">
-                               {% for toplevel in site.data.roadmap %}
-                              
+                               {% for toplevel in site.data.lang[site.lang].roadmap %}
                               {% if toplevel.year == 2018 %}
                                 {% for roadlist in toplevel.accomplishments %}
                                   <div class="row start-xs">
@@ -128,16 +118,12 @@
                                         {%endif%}
                                      </div>
                                   </div>
-                             
                               {%endfor%}
                               {%endif%}
-                              
                               {%endfor%}
                             </div>
                           </div>
         </div>
     </div>
 </section>
-
-
 </div>
