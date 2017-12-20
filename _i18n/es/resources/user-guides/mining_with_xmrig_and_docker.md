@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ## Introduction
 
 This guide is two fold, ease of use for mining on Linux distributions and some extra security around mining as most of these miners have not had security auditing.

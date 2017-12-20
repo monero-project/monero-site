@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 # monero-wallet-cli
 
 `monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,

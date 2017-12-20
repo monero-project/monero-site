@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 When you send money to a party who then disputes the payment was made, you need to be able to prove the payment was made.
 
 With Bitcoin, this is typically done by looking up the transaction ID, where the origin and destination addresses are

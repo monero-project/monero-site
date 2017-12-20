@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ## Operating Systems:  Windows, Linux, Mac
 
 ### Account Software:  monero-wallet-cli

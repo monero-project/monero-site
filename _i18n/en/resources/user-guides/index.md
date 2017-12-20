@@ -78,46 +78,4 @@
     
     
 </section>
-<section class="container">
-    <div class="row">
-        <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="info-block">
-                <div class="row center-xs">
-                    <div class="col">
-                        <h2>Website</h2>
-                    </div>
-                </div>
-<div class="row start-xs" markdown="1">
-
-[General Web Edit Instructions (READ FIRST!)]({{site.baseurl}}/resources/user-guides/website-general.html)
-[How to make a blog post]({{site.baseurl}}/resources/user-guides/website-blog.html)
-[How to make a User Guide]({{site.baseurl}}/resources/user-guides/website-user-guide.html)
-[How to make a Moneropedia entry]({{site.baseurl}}/resources/user-guides/website-moneropedia.html)
-[How to make a FFS proposal]({{site.baseurl}}/resources/user-guides/website-ffs.html)
-[How to update the Team page]({{site.baseurl}}/resources/user-guides/website-team.html)
-[How to add update Events page]({{site.baseurl}}/resources/user-guides/website-events.html)
-[How to update the Roadmap]({{site.baseurl}}/resources/user-guides/website-roadmap.html)
-[How to add a new Merchant]({{site.baseurl}}/resources/user-guides/website-merchants.html)
-[How to add a new question to the FAQ]({{site.baseurl}}/resources/user-guides/website-faq.html)
-
-</div>
-            </div>
-        </div>
-        <div class="right half col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="info-block">
-                <div class="row center-xs">
-                    <div class="col">
-                        <h2>Miscellaneous</h2>
-                    </div>
-                </div>
-<div class="row start-xs" markdown="1">
-Coming Soon
-</div>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-</section>
 </div>

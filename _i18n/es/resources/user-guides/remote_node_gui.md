@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ## Finding a node
 First things first, you need to find a node to connect to! [moneroworld.com](https://moneroworld.com/#nodes) has some great resources for finding nodes. One of the easiest methods
 would be to use a node run by moneroworld, but they have a tool for finding random nodes too.

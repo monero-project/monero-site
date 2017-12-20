@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 # Importing the Blockchain to Monero GUI wallet (Windows)
 
 ### Step 1

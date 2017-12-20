@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 # Selecting a pool
 
 There are many pools to choose from, a list is available at

@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ### Operating Systems:  Ubuntu
 
 - Download the [official binaries](https://getmonero.org/downloads/) or compile the last source available on [Github](https://github.com/monero-project/bitmonero)

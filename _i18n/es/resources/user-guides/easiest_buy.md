@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ## How to obtain Monero
 
 This is a guide to obtain your own Monero as of 20150919. This is perhaps the easiest way to purchase and hold Monero.

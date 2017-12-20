@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ## Operating Systems:  Various versions of Linux and Windows 7, 8
  
 ### Wallet Software:  Simplewallet

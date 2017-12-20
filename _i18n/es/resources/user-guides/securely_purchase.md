@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ## How to purchase Monero and securely store it.
 
 This is a guide to purchase and securely store Monero as of June 2017. 

@@ -1,3 +1,4 @@
+{% include untranslated.html %}
 ## How to mine Monero (XMR) without a mining equipment?
 
 If you don’t have a profitable mining equipment, nor time or
