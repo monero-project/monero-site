@@ -24,8 +24,8 @@ The following businesses have supported the Monero Project in its goal to bring 
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Araxis</h2>
-                            <a href="https://www.araxis.com/"><img src="/img/araxis.png"></a>
+                            <h2>JetBrains</h2>
+                            <a href="http://www.jetbrains.com/"><img src="/img/jetbrains.png"></a>
                         </div>
                     </div>
                 </div>
@@ -68,8 +68,8 @@ The following businesses have supported the Monero Project in its goal to bring 
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>JetBrains</h2>
-                            <a href="http://www.jetbrains.com/"><img src="/img/jetbrains.png"></a>
+                            <h2>Araxis</h2>
+                            <a href="https://www.araxis.com/"><img src="/img/araxis.png"></a>
                         </div>
                     </div>
                 </div>
