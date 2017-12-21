@@ -103,6 +103,12 @@
                                                 <source src="/media/Monero%20-%20Ring%20Signatures.m4v">
                                             </video>
                                         </li>
+                                        <li class="carousel-slide">
+                                          <h3>RingCT</h3>
+                                            <video controls poster="/img/ringct-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
+                                                <source src="/media/Monero%20-%20RingCT.m4v">
+                                            </video>
+                                        </li>
                                       </ul>
                             </div>
                         </div>
