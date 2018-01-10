@@ -16,7 +16,7 @@
     - name: Bter
       url: https://bter.com/
     - name: ChangeNOW
-      url: https://changenow.io?utm_source=monero&utm_medium=link&utm_term=merchants&utm_campaign=monero
+      url: https://changenow.io
     - name: CoinCut (OTC)
       url: https://www.coincut.com
     - name: Cryptopia
@@ -191,7 +191,7 @@
     - name: Tuxcon Hosting - Mail and Web Hosting
       url: https://tuxcon.com
     - name: WalletMonero - Online Wallet
-      url: https://walletmonero.com?utm_source=getmonero_org&utm_medium=list&utm_content=monero_list&utm_campaign=getmonero_org
+      url: https://walletmonero.com
     - name: Web Developer - Python with Django web framework
       url: http://www.voteforrodneylewis.com
     - name: Web Developer - Stefanos
