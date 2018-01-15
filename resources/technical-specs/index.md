@@ -62,7 +62,7 @@ title: "Technical Specs"
                     </div>
 
 <div markdown="1">
-* smoothly decreasing and subject to penalties for blocks greater then median size of the last 100 blocks (M100)
+* smoothly decreasing and subject to penalties for blocks greater than median size of the last 100 blocks (M100)
 * see the [latest block](https://moneroblocks.info/) coinbase transaction amount for current reward
 </div>
 
