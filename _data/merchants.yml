@@ -5,6 +5,8 @@
       url: https://webchat.freenode.net?channels=%23monero-otc
     - name: Alfacashier
       url: https://www.alfacashier.com/
+    - name: Binance
+      url: https://www.binance.com/trade.html?symbol=XMR_BTC
     - name: Bitfinex (XMRUSD, XMRBTC)
       url: https://www.bitfinex.com/
     - name: Bisq; decentralized exchange (previously Bitsquare)
