@@ -72,15 +72,14 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 </h4>
 </div>
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
-If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can [use this link for the most current bootstrap](https://downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
-</div>
-</div>
+If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can use this [link](https://downloads.getmonero.org/blockchain.raw) or [torrent]({{ data_downloads.torrent_url }}) for the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
+<p><strong>SHA256 Hash (Torrent):</strong></p> <p class="hash"> {{ data_downloads.torrent_hash }}</p>
+</div></div>
 {% elsif data_downloads.id == "hardware" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 <p>The Monero community has just funded a <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Dedicated Hardware Wallet</a> which is now in progress. As well, Ledger is working on <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">integrating Monero into their hardware wallets</a>.</p>
 </div></div>
-
 {% elsif data_downloads.id == "mobilelight" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
@@ -97,7 +96,9 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 {% elsif data_downloads.gui_hash == nil and data_downloads.cli_hash != nil %}
 <div class="row"><div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12"><h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}"> {{ data_downloads.platform }} (Command-line Tools Only)</a>
- </h4></div></div>
+ </h4>
+ <a href="{{ data_downloads.cli_magnet_link }}">(torrent)</a>
+ </div></div>
  <div class="row"><div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
  <p><strong>SHA256 Hash:</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p></div>
 </div>
@@ -106,7 +107,9 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 
 <h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
- </h4></div>
+ </h4>
+ <a href="{{ data_downloads.gui_magnet_link }}">(torrent)</a>
+ </div>
 <div class="row">
 <p><strong>SHA256 Hash:</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
 </div>
@@ -117,6 +120,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
 </h4>
+<a href="{{ data_downloads.gui_magnet_link }}">(torrent)</a>
 <p><strong>SHA256 Hash (GUI):</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
 
 </div>
@@ -125,6 +129,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <h4>
  <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} (Command-Line Tools Only)</a>
 </h4>
+<a href="{{ data_downloads.cli_magnet_link }}">(torrent)</a>
 <p><strong>SHA256 Hash (CLI):</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p>
 </div>
 </div>
