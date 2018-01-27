@@ -78,32 +78,28 @@
     - name: 0MQ/ZeroMQ
       date: September, 2017
       status: completed
-    - name: Fluffy blocks
-      date:
-      status: ongoing
-    - name: GUI port to android
-      date:
-      status: ongoing
+    - name: Subaddresses
+      date: October, 2017
+      status: completed
+    - name: Multi-signatures (multisig)
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
     - name: Forum Funding System redesign
       date:
       status: ongoing
-    - name: Subaddresses
+    - name: More efficient range proofs for RingCT to reduce transaction sizes
       date:
-      status: ongoing
-    - name: Multi-signatures (multisig)
-      date:
-      status: ongoing
+      status: upcoming
     - name: Kovri alpha release
       date:
       status: upcoming
-- year: 2018
+- year: 2019
   accomplishments:
-    - name: Additional MRL research papers
-      date:
-      status: upcoming
     - name: Second-layer solutions for speed and scalability
       date:
       status: upcoming
-    - name: More efficient range proofs for RingCT to reduce transaction sizes
+    - name: Additional MRL research papers
       date:
       status: upcoming
