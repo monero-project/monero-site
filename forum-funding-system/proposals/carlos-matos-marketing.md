@@ -4,8 +4,7 @@ title: Let's fund me, Carlos, to take over marketing for Monero
 summary: Carlos 4 president
 author: nonono_skamboi
 amount: 20
-address: 47XXhrzQM68Ptao2wXrunrJpPKC5mPNWXBiJrKnZnGNDeXRKejHCGPJjP81kN4tNQTXz9Qx7QJ6qX9NkEhfA4DTXP7gCiuV
-viewkey: 581a9a0f9ac361fd61be00aa24944cb93faeea30a8aaca321204bb08a46cfac4
+address:
 ---
 
 Hello everyone!
