@@ -43,6 +43,7 @@
                     </div>
                     <div class="row start-xs">
                         <p>A Monero wallet is required to secure your own funds. See the <a href="{{site.baseurl}}/downloads/">Downloads</a> page for a listing of available wallets.</p>
+                        <p>The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend <a href="https://interserver.net/dock/vps-231552.html">InterServer.net</a> using the 'MONERO' coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or <a href="https://interserver.net/dock/vps-231552.html">our affiliate link</a> will also assist in the ongoing funding of Monero development.</p>
                     </div>
                 </div>
             </div>
