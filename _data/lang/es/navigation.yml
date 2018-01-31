@@ -1,0 +1,54 @@
+- title: Inicio
+  subfolderitems:
+  - page: ¿Qué es Monero?
+    url: get-started/what-is-monero
+  - page: Usar Monero
+    url: get-started/using
+  - page: Aceptar Monero
+    url: get-started/accepting
+  - page: Contribuir a Monero
+    url: get-started/contributing
+  - page: Minar Monero
+    url: get-started/mining
+  - page: FAQ
+    url: get-started/faq
+- title: Descargas
+  url: downloads
+- title: Noticias
+  subfolderitems:
+    - page: Todas publicaciones
+      url: blog
+    - page: Misivas
+      url: blog/tags/monero%20missives.html
+    - page: Transcripciones de reuniones
+      url: blog/tags/dev%20diaries.html
+    - page: Lanzamientos
+      url: blog/tags/releases.html
+- title: Comunidad
+  subfolderitems:
+  - page: Equipo
+    url: community/team
+  - page: Canales de comunicación
+    url: community/hangouts
+  - page: Eventos
+    url: community/events
+  - page: Patrocinios
+    url: community/sponsorships
+  - page: Comerciantes
+    url: community/merchants
+- title: Recursos
+  subfolderitems:
+  - page: Sobre Monero
+    url: resources/about
+  - page: Hoja de ruta
+    url: resources/roadmap
+  - page: Laboratorio de investigación
+    url: resources/research-lab
+  - page: Moneropedia
+    url: resources/moneropedia
+  - page: Guías de usuario
+    url: resources/user-guides
+  - page: Guías de desarrolladores
+    url: resources/developer-guides
+  - page: Especificaciones técnicas
+    url: technical-specs

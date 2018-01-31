@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Legal
+title: titles.legal
 ---
 
 <div class="legal">

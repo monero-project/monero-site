@@ -23,7 +23,7 @@ layout: custom
                     <div>
                        {% if site.tags[tag.slug] %}
 				{% for post in site.tags[tag.slug] %}
-				  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				  <h3><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h3>
 				  <p>
 					{{ post.summary }}
 				  </p>
@@ -46,7 +46,7 @@ layout: custom
                                 {% for post in site.posts limit:4 %}
                                 <div class="row start-xs info-block-row">
                                     <div class="col">
-                                         <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+                                         <p><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></p>
                                      </div>
                                 </div>
                                 {% endfor %}
@@ -60,7 +60,7 @@ layout: custom
                                     {% for tag in site.data.tags limit:4 %}
                                     <div class="row start-xs">
                                         <div class="col">
-                                             <p><a href="/blog/tags/{{ tag.slug }}.html">{{ tag.name }}</a></p>
+                                             <p><a href="{{site.baseurl}}/blog/tags/{{ tag.slug }}.html">{{ tag.name }}</a></p>
                                          </div>
                                      </div>
                                      {% endfor %}

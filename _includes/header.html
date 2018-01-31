@@ -1,69 +1,27 @@
+{%assign counter=0%}  
 <div class="mob-nav">
               <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
            
         <div class="slide-in-nav">
              <div class="container slide-in">
+                    {% for item in site.data.lang[site.lang].navigation %} 
                  <div class="row">
                      <div class="col-xs-12 dropdown text-center nav-item">
-                            <label for="drop1">Get Started<div class="arrow-down"></div></label>
-                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                           {% if item.subfolderitems %}
+                            {%assign counter=counter | plus: 1%}
+                            <label for="drop{{counter}}">{{item.title}}<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop{{counter}}" type="checkbox">
                             <div class="dropdown-content">
-                                <a href="/get-started/what-is-monero/">What Is Monero?</a>
-                                <a href="/get-started/using/">Using</a>
-                                <a href="/get-started/accepting/">Accepting</a>
-                                <a href="/get-started/contributing/">Contributing</a>
-                                <a href="/get-started/mining/">Mining</a>
-                                <a href="/get-started/faq">FAQ</a>
+                                {% for entry in item.subfolderitems %}
+                              <a href="{{site.baseurl}}/{{ entry.url }}">{{ entry.page }}</a>
+                                  {% endfor %}
                             </div>
+                            {% else %}
+                               <a href="{{site.baseurl}}/{{item.url}}">{{item.title}}</a>
+                            {% endif %}
                      </div>
                  </div>
-                 <div class="row">
-                     <div class="col-xs-12">
-                         <div class="text-center nav-item">
-                            <a href="/downloads/">Downloads</a> 
-                         </div>
-                     </div>
-                 </div>
-                 <div class="row">
-                     <div class="col-xs-12 dropdown text-center nav-item">
-                         <label for="drop2">Recent News<div class="arrow-down"></div></label>
-                         <input class="burger-checkdropdown" id="drop2" type="checkbox">
-                         <div class="dropdown-content">
-                            <a href="/blog/">All Posts</a>
-                            <a href="/blog/tags/monero%20missives.html">Missives</a>
-                            <a href="/blog/tags/dev%20diaries.html">Meeting Logs</a>
-                            <a href="/blog/tags/releases.html">Releases</a>
-                          </div>
-                     </div>
-                 </div>
-                 <div class="row">
-                         <div class="col-xs-12 dropdown text-center nav-item">
-                         <label for="drop3">Community<div class="arrow-down"></div></label>
-                         <input class="burger-checkdropdown" id="drop3" type="checkbox">
-                         <div class="dropdown-content">
-                            <a href="/community/team/">Team</a>
-                            <a href="/community/hangouts/">Hangouts</a>
-                            <a href="/community/events/">Events</a>
-                            <a href="/community/sponsorships/">Sponsorships</a>
-                            <a href="/community/merchants/">Merchants</a>
-                          </div>
-                     </div>
-                 </div>
-                 <div class="row">
-                     <div class="col-xs-12 dropdown text-center nav-item">
-                         <label for="drop4">Resources<div class="arrow-down"></div></label>
-                         <input class="burger-checkdropdown" id="drop4" type="checkbox">
-                         <div class="dropdown-content">
-                            <a href="/resources/about/">About</a>
-                            <a href="/resources/roadmap/">Roadmap</a>
-                            <a href="/resources/research-lab/">Monero Research Lab</a>
-                            <a href="/resources/moneropedia/">Moneropedia</a>
-                            <a href="/resources/user-guides/">User Guides</a>
-                            <a href="/resources/developer-guides/">Developer Guides</a>
-                            <a href="/resources/technical-specs/">Technical Specs</a>
-                          </div>
-                     </div>
-                 </div>
+                 {% endfor %}
                  <div class="row">
                      <div class="col-xs-12">
                          <div class="text-center nav-item mob">
@@ -81,7 +39,7 @@
                  <div class="row">
                      <div class="col-xs-12">
                          <div class="text-center nav-item mob">
-                            <a href="/the-monero-project/">The Monero Project</a> 
+                            <a href="{{site.baseurl}}/the-monero-project/">The Monero Project</a> 
                          </div>
                      </div>
                  </div>            
@@ -89,19 +47,51 @@
           
         </div>
        </div>
+       
         <div class="desktop-nav">
             <nav class="container">
             <div class="topnav">
               <div class="row middle-xs">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <a href="/"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                    <a href="{% if site.lang == 'en' %}
+                    
+                    {{ site.baseurl_root }}/
+                    
+                    {% else %}
+                    
+                    {{ site.baseurl_root }}/{{site.lang}}
+                    
+                    {% endif %}"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
-                      <div class="row end-xs">
+                      <div class="row end-xs middle-xs">
                          <div class="col-md-12">
-                          <a href="https://forum.getmonero.org" class="mob top-link col-md-4">Forum Funding System</a>
-                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="mob top-link col-md-4">Vulnerability Response</a>
-                          <a href="/the-monero-project/" class="mob top-link col-md-3">The Monero Project</a>
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="{{site.baseurl}}/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">{% for lang in site.languages %}
+                            
+                                {% if lang == site.lang %}
+                            
+                                    {% t langs.{{ lang }} %}
+                            
+                                {%endif%}
+                            
+                            {%endfor%}<div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    {% for lang in site.languages %}
+                                {% unless site.lang == lang %}
+                                  {% if lang == site.default_lang %}
+                                    <a href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                  {% else %}
+                                    <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                  {% endif %}
+                                {% endunless %}
+                              {% endfor %}
+                            </div>
+                          </div>
                           </div>
                       </div>
                   </div>
@@ -110,63 +100,61 @@
             <div class="botnav white-nav">
                 <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
                 <div class="row between-xs nav-items">
+                     {% for item in site.data.lang[site.lang].navigation %}
                     <div class="col dropdown nav-item">
-                            <label for="desktopdrop1">Get Started<div class="arrow-down"></div></label>
+                        {% if item.subfolderitems %}
+                            <label for="desktopdrop1">{{item.title}}<div class="arrow-down"></div></label>
                             <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
                             <div class="dropdown-content">
-                                <a href="/get-started/what-is-monero/">What Is Monero?</a>
-                                <a href="/get-started/using/">Using</a>
-                                <a href="/get-started/accepting/">Accepting</a>
-                                <a href="/get-started/contributing/">Contributing</a>
-                                <a href="/get-started/mining/">Mining</a>
-                                <a href="/get-started/faq">FAQ</a>
+                                {% for entry in item.subfolderitems %}
+                                  <a href="{{site.baseurl}}/{{ entry.url }}">{{ entry.page }}</a>
+                                {% endfor %}
                             </div>
+                            {% else %}
+                           <a href="{{site.baseurl}}/{{item.url}}">{{item.title}}</a>
+                            {% endif %}
                     </div>
-                     <div class="col nav-item">
-                        <a href="/downloads/">Downloads</a> 
-                    </div>
-                    <div class="col dropdown nav-item">
-                        <label for="desktopdrop2">Recent News<div class="arrow-down"></div></label>
-                        <input class="burger-checkdropdown" id="desktopdrop2" type="checkbox">
-                         <div class="dropdown-content">
-                            <a href="/blog/">All Posts</a>
-                            <a href="/blog/tags/monero%20missives.html">Missives</a>
-                            <a href="/blog/tags/dev%20diaries.html">Meeting Logs</a>
-                            <a href="/blog/tags/releases.html">Releases</a>
-                          </div>
-                    </div>
-                    <div class="col dropdown nav-item">
-                        <label for="desktopdrop3">Community<div class="arrow-down"></div></label>
-                        <input class="burger-checkdropdown" id="desktopdrop3" type="checkbox">
-                         <div class="dropdown-content">
-                            <a href="/community/team/">Team</a>
-                            <a href="/community/hangouts/">Hangouts</a>
-                            <a href="/community/events/">Events</a>
-                            <a href="/community/sponsorships/">Sponsorships</a>
-                            <a href="/community/merchants/">Merchants</a>
-                          </div>
-                    </div>
-                     <div class="col dropdown nav-item">
-                        <label for="desktopdrop4">Resources<div class="arrow-down"></div></label>
-                        <input class="burger-checkdropdown" id="desktopdrop4" type="checkbox">
-                         <div class="dropdown-content">
-                            <a href="/resources/about/">About</a>
-                            <a href="/resources/roadmap/">Roadmap</a>
-                            <a href="/resources/research-lab/">Research Lab</a>
-                            <a href="/resources/moneropedia/">Moneropedia</a>
-                            <a href="/resources/user-guides/">User Guides</a>
-                            <a href="/resources/developer-guides/">Developer Guides</a>
-                            <a href="/resources/technical-specs/">Technical Specs</a>
-                          </div>
-                    </div>
+                    {% endfor %}
                   </div>
             </div>
         </nav>
         </div>
         <div class="mob bot-nav white-nav">
-            <div class="row center-xs">
+            <div class="row center-xs middle-xs">
                 <div class="col-xs-6">
-                    <a href="/"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                    <a href="{% if site.lang == 'en' %}
+                    
+                    {{ site.baseurl_root }}/
+                    
+                    {% else %}
+                    
+                    {{ site.baseurl_root }}/{{site.lang}}
+                    
+                    {% endif %}"><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
                 </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              {% for lang in site.languages %}
+                                {% if site.lang == lang %}
+                                 {% t langs.{{ lang }} %}
+                                {% endif %}
+                              {% endfor %}
+                                   
+                               </p>
+                               {% for lang in site.languages %}
+                                {% unless site.lang == lang %}
+                                  {% if lang == site.default_lang %}
+                                    <a class="mob-lang-change" href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                  {% else %}
+                                    <a class="mob-lang-change" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                  {% endif %}
+                                {% endunless %}
+                              {% endfor %}
+                            </div>
+                          </div>
             </div>     
         </div>    

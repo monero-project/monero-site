@@ -1075,6 +1075,23 @@ pre.highlight>code {
   border-top: 3px solid #393939;
 }
 
+.untranslated {
+    background-color: #ff7519;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.untranslated-link {
+    color: white; 
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 75rem) {
     
 body p, body blockquote, body ul {
@@ -1102,6 +1119,9 @@ body {font-size: 1rem;}
 .page-wrapper {
     padding-top: 4rem;
 }  
+    .untranslated p {
+        font-size: 0.6rem;
+    }
     
 }
 
@@ -1580,54 +1600,75 @@ img.monero-logo {
     transition: all ease-out .1s;
 }
 
-/*.topnav .topnav-list .language-change {
-    position: relative;
-    display: block;
-}
-
-.topnav .topnav-list .language-change,*/ .topnav .topnav-list .top-link {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-right: 4.5rem;
+.topnav .topnav-list .language-change, .topnav .topnav-list .top-link {
     font-size: 0.9rem;
 } 
 
-/*.topnav .topnav-list .language-change:hover {
-    background-color: #fcfcfc;
+.topnav .topnav-list .top-link {
+    padding: 0.8rem 1rem;
 }
 
-.topnav .topnav-list .language-change:hover>.dropdown-content {
-    opacity: 1;
-    visibility: visible;
+.topnav .topnav-list .top-link.language-change {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin-right: 3.5rem;
+}
+
+.topnav .topnav-list .language-change label {
+    height: 100%;
+    /*width: 100%;*/
+    padding: 0.8rem 1rem;
+    display: block;
+}
+
+.topnav .topnav-list .language-change label:hover {
+    color: #ff7519;
+    cursor: pointer;
+}
+
+.topnav .topnav-list .language-change input:checked + label {
+    background-color: #fcfcfc;
+    -moz-box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    -webkit-box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    box-shadow: 0 3px 5px rgba(50,50,93,.1);
+}
+
+.topnav .topnav-list .language-change input:checked ~ .dropdown-content {
+    display: block;
 }
 
 .topnav .topnav-list .language-change label div.arrow-down {
     display: inline-block;
     margin-bottom: 0.25rem;
-    margin-left: 0.1rem;
+    margin-left: 0.2rem;
     border-top: 3px solid #7a7a7a;
+}
 
+.topnav .topnav-list .language-change label:hover div.arrow-down {
+    border-top: 3px solid #ff7519;
 }
 
 .topnav .topnav-list .language-change .dropdown-content {
+    display: none;
     position: absolute;
     left: 0;
-    top: 99.5%;
+    top: 2.8rem;
     text-align: left;
     background: #fcfcfc;
-    width: 100%; 
+    width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    opacity: 0;
-    visibility: hidden;
     z-index: 1;
     -webkit-transition: all .3s ease;
        -moz-transition: all .3s ease;
         -ms-transition: all .3s ease;
          -o-transition: all .3s ease;
             transition: all .3s ease;
-
+    -moz-box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    -webkit-box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    box-shadow: 0 3px 5px rgba(50,50,93,.1);
 }
 
 .topnav .topnav-list .language-change .dropdown-content a {
@@ -1636,11 +1677,12 @@ img.monero-logo {
 
 .topnav .topnav-list .language-change .dropdown-content a:hover, .topnav .topnav-list .language-change .dropdown-content a:focus {
     text-decoration: none;
+    /*background-color: #f9f9fa;*/
 }
 
 .topnav .topnav-list .language-change .dropdown-content a.active {
     color: #ff7519;
-}*/
+}
 
 
 .topnav .topnav-list a:hover, .topnav .topnav-list a:focus, .topnav .topnav-list a:active {
@@ -1744,13 +1786,12 @@ img.monero-logo {
     font-family: 'Hind', sans-serif;
     font-weight: 500;
     font-size: 0.99rem;
-    padding: 0.8rem 3.4rem 0.8rem 3.5rem;
+    padding: 0.8rem 3rem 0.8rem 3.5rem;
     -webkit-transition: all ease-out .2s;
     -moz-transition: all ease-out .2s;
     -o-transition: all ease-out .2s;
     transition: all ease-out .2s;
     line-height: 1.3;
-    white-space: nowrap;
 }
 
 .nav-item>.dropdown-content>a:hover {
@@ -1767,14 +1808,26 @@ img.monero-logo {
 }
 
 @media only screen and (max-width: 75rem) {
-        
+    
+.topnav .topnav-list .top-link.language-change {
+    margin-right: 3.1rem;
+    font-size: 0.85rem;
+}
+    
 .topnav .topnav-list .top-link {
-    padding-right: 4.1rem;
     font-size: 0.85rem;
 }
     
 img.monero-logo {
     padding-left: 3.1rem;
+}
+    
+.topnav .topnav-list .top-link {
+    padding: 0.8rem 0.5rem;
+}
+    
+.topnav .topnav-list .language-change .dropdown-content {
+    top: 1.9rem;
 }
     
 .nav-items>.nav-item>label, .nav-item>.dropdown-content>a {
@@ -1786,8 +1839,8 @@ img.monero-logo {
 }
     
 .nav-item>.dropdown-content>a {
-    font-size: 1rem;
-    padding-right: 2.7rem;
+    font-size: 0.9rem;
+    padding-right: 2.2rem;
 }
     
 .nav-items>.nav-item:first-of-type>label, .white-nav .nav-item:first-of-type .dropdown-content a {
@@ -1821,11 +1874,15 @@ img.monero-logo {
 
 @media only screen and (max-width: 62rem) {
 
+
+/*.mob.bot-nav.white-nav  .col-xs-6 a {
+    display: inline-block;
+}*/
     
 img.monero-logo {
     position: inherit;
     width: 10rem;
-    padding: 0.39rem 0 0 0;
+    padding: 0.39rem 0 0.39rem 0;
 }
     
 .white-nav {
@@ -2096,17 +2153,94 @@ label[for="mobile-burger"] {
 #drop1:checked ~ .dropdown-content, #drop2:checked ~ .dropdown-content, #drop3:checked ~ .dropdown-content, #drop4:checked ~ .dropdown-content {
     background-color: #fcfcfc;
 }
+    
+.mob-language-change, .mob-language-change label {
+    cursor: pointer;
+}
+    
+.mob-language-change img.icon-language{
+    width: 1.5rem;
+}
         
-/*#langdrop:checked ~ .dropdown-content {
-    position: absolute;
-    top: 100%;
-    width: 100vw;
-    height: 100vh;
+#moblangdrop:checked ~ .dropdown-content {
     display: block;
+    position: inherit;
     opacity: 1;
     visibility: visible;
     box-shadow: none;
-}*/    
+    top: 2.92rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: inherit;
+    margin-top: 0.6rem;
+    background-color: #fff;
+}
+label[for="moblangdrop"] {
+    display: block;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+}
+    
+label[for="moblangdrop"], label[for="moblangdrop"]:checked, #moblangdrop, #moblangdrop:checked {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+    
+#moblangdrop:checked ~ label {
+    background-color: transparent;
+}
+    
+#moblangdrop ~ label .arrow-down {
+    display: inline-block;
+    margin-left: 0.2rem;
+    margin-bottom: 0.6rem;
+    border-top: 3px solid #393939;
+}
+    
+#moblangdrop:checked ~ label .arrow-down {
+    border-bottom: 3px solid #393939;
+    border-top: 0;
+}
+    
+.burger-check:checked + label {
+    position: fixed;
+}
+    
+.nav-item > label {
+    display: flex;
+}
+    
+.white-nav .mob-language-change {
+    position: fixed;
+    right: 0;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+}
+    
+.white-nav .mob-language-change label {
+    color: #393939;
+}
+   
+p.mob-lang-change {
+    padding: 0.8rem;
+    color: #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+    cursor: default;
+}
+    
+a.mob-lang-change {
+    padding: 0.8rem;
+    color: #393939;
+    border-bottom: 1px solid #e8ebef;
+    line-height: 1.7;
+}
+    
+a.mob-lang-change:hover, a.mob-lang-change.active, a.mob-lang-change:focus {
+    color: #ff7519;
+    text-decoration: none;
+}   
     
 }
 
@@ -2211,7 +2345,7 @@ img.monero-logo {
 }
 
 p.main-resources {
-    height: 11rem;
+    height: 12rem;
 }
 
 p.main-downloads {
@@ -2362,16 +2496,16 @@ body {
 
 .page-wrapper {
     position: relative;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
-.site-wrap {
+/*.site-wrap {
     padding-bottom: 435px;
     padding-bottom: 27.1875rem;
-}
+}*/
 
 footer {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
     background-color: #4c4c4c;
