@@ -7,6 +7,10 @@
       
 - stage: Open Tasks
   proposals:
+    - name: Let's fund me, Carlos, to take over marketing for Monero
+      url: /forum-funding-system/proposals/carlos-matos-marketing.html
+      summary: Carlos 4 president
+      author: nonono_skamboi
     - name: Fake. Nothing here yet. Check WiP and Completed Proposals.
       url: #
       summary: This is for the best ideas ever!
