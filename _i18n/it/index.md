@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="site-wrap">
         <section class="container full col-xs-12">
             <div class="info-block info-block-main">

@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="downloads">
 
 <div class="container description" markdown="1">

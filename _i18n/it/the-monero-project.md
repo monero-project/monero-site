@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="site-wrap">
 <section class="container">
     <div class="row">

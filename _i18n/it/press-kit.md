@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="text-center container description">
 <p>Qui troverai il simbolo di Monero e il logo. Puoi o scegliere la dimensione che preferisci, o scaricare il file .ai e editare il logo tu stesso/a.  <strong>Note that the white background options have a white background under the Monero symbol ONLY, not as a background to the whole image.</strong> Lastly, you can download everything on this page in one zip file by clicking <a href="/press-kit/monero-press-kit.zip">here</a>.</p>
 </div>
