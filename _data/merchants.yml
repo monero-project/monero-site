@@ -25,6 +25,8 @@
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
     - name: Evercoin
       url: https://evercoin.com
+    - name: Godex
+      url: https://godex.io
     - name: Kaiserex
       url: https://www.kaiserex.com/
     - name: Karsha
