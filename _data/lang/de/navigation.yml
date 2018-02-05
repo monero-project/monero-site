@@ -1,54 +1,54 @@
 - title: Get Started
   subfolderitems:
-  - page: What is Monero?
+  - page: Was ist Monero?
     url: get-started/what-is-monero
-  - page: Using
+  - page: Monero verwenden
     url: get-started/using
-  - page: Accepting
+  - page: Monero akzeptieren
     url: get-started/accepting
-  - page: Contributing
+  - page: Mach mit!
     url: get-started/contributing
-  - page: Mining
+  - page: Monero minen
     url: get-started/mining
   - page: FAQ
     url: get-started/faq
 - title: Downloads
   url: downloads/
-- title: Recent News
+- title: Nachrichten
   subfolderitems:
-    - page: All Posts
+    - page: Alle Veröffentlichungen
       url: blog
-    - page: Missives
+    - page: Schreiben
       url: blog/tags/monero%20missives.html
-    - page: Meeting Logs
+    - page: Protokolle der Meetings
       url: blog/tags/dev%20diaries.html
-    - page: Releases
+    - page: Updates
       url: blog/tags/releases.html
 - title: Community
   subfolderitems:
   - page: Team
     url: community/team
-  - page: Hangouts
+  - page: Treffpunkte
     url: community/hangouts
   - page: Events
     url: community/events
-  - page: Sponsorships
+  - page: Sponsoren
     url: community/sponsorships
-  - page: Merchants
+  - page: Händler
     url: community/merchants
-- title: Resources
+- title: Ressourcen
   subfolderitems:
-  - page: About
+  - page: Über
     url: resources/about
   - page: Roadmap
     url: resources/roadmap
-  - page: Research Lab
+  - page: Forschungslabor
     url: resources/research-lab
   - page: Moneropedia
     url: resources/moneropedia
-  - page: User Guides
+  - page: Benutzerhandbuch
     url: resources/user-guides
-  - page: Developer Guides
+  - page: Entwicklerhandbuch
     url: resources/developer-guides
-  - page: Technical Specs
+  - page: Technische Daten
     url: technical-specs
