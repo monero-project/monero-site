@@ -98,12 +98,12 @@
       status: upcoming
 - year: 2018
   accomplishments:
-    - name: Additional MRL research papers
+    - name: Ulteriori documenti di ricerca MRL
       date:
       status: upcoming
-    - name: Second-layer solutions for speed and scalability
+    - name: Soluzioni second-layer per velocità e scalabilità
       date:
       status: upcoming
-    - name: More efficient range proofs for RingCT to reduce transaction sizes
+    - name: Range proofs RingCT più efficienti per ridurre le dimensioni delle transazioni
       date:
       status: upcoming

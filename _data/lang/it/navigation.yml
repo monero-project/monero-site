@@ -14,7 +14,7 @@
     url: get-started/faq
 - title: Downloads
   url: downloads/
-- title: News Recenti
+- title: Notizie Recenti
   subfolderitems:
     - page: Tutti i Post
       url: blog
@@ -38,11 +38,11 @@
     url: community/merchants
 - title: Risorse
   subfolderitems:
-  - page: About
+  - page: Informazioni
     url: resources/about
   - page: Roadmap
     url: resources/roadmap
-  - page: Laboratorio di Ricerca
+  - page: Monero Research Lab
     url: resources/research-lab
   - page: Moneropedia
     url: resources/moneropedia

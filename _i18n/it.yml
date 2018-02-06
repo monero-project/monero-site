@@ -1,6 +1,7 @@
 langs:
   en: Inglese
   es: Spagnolo
+  it: Italiano
 
 global:
   date: '%d/%m/%Y'
@@ -11,7 +12,7 @@ global:
   sitename: getmonero.org, The Monero Project
   wiki: Moneropedia
   tags: Articoli secondo Tag
-  wikimeta: su Moneropedia, l'enciclopedia libera di Monero
+  wikimeta: Moneropedia, l'enciclopedia libera di Monero
   tagsmeta: Tutti gli articoli del blog Monero che sono taggati
   titlemeta: Monero, una moneta digitale sicura, privata e non tracciabile
   terms: Termini
@@ -34,7 +35,7 @@ titles:
   events: Eventi
   sponsorships: Sponsorizzazioni
   merchants: Commercianti & Servizi
-  about: Su Monero
+  about: Informazioni
   roadmap: Roadmap
   researchlab: Monero Research Lab
   moneropedia: Moneropedia
@@ -55,42 +56,42 @@ index:
   page_title: "Monero - sicuro, privato, non tracciabile"
   what_is_1: Cosa è
   what_is_2: " ?"
-  what_is_orange_block: "Monero is a secure, private, untraceable currency that is open-source and freely available for anyone to use."
-  what_is_text_block_1: "With Monero, you are your own bank; You have complete control over your funds. With Monero, your accounts and transactions are kept private."
-  what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below. If you'd like to try Monero for yourself the"
-  what_is_text_block_3: "Getting Started"
-  what_is_text_block_4: "section is an excellent launching point."
-  news: News
-  the_latest: The Latest
-  private: Private
-  secure: Secure
-  untraceable: Untraceable
-  private_text: "Monero uses hidden amounts, origins and destinations of @transactions. This means that nobody knows how much you're sending in a transaction except you. This ensures that your purchases and other transfers remain private by default."
-  untraceable_text: "By taking advantage of @ring-signatures, Monero allows you to send and receive funds privately. Even though your transactions are publicly verifiable on the @blockchain, transactions use digital signatures that specify a group of signers such that the person verifying can’t tell which person actually produced the signature. Because it's ambiguous which funds have been spent, your transaction remains private and cannot be traced back to you."
-  secure_text: "Monero uses a distributed peer-to-peer @consensus network and every transaction is cryptographically signed. Your coins are safely stored on the @blockchain and can be restored at any time with the use of a 25 word @mnemonic-seed on any computer with the Monero software. Wallet files are encrypted on disk and locked with a passphrase, rendering them useless if stolen."
-  how_do_i_1: "How do I "
+  what_is_orange_block: "Monero è una criptomoneta sicura, privata e non tracciabile. È open-source e liberamente disponibile per tutti gli utenti."
+  what_is_text_block_1: "Con Monero, sei tu la tua banca; hai il controllo completo sui tuoi fondi e sui tuoi conti. Con Monero, le tue transazioni sono mantenute private."
+  what_is_text_block_2: "Vuoi saperne di più? Di seguito è riportata una panoramica delle principali funzionalità di Monero. Se vuoi provare Monero per te stesso"
+  what_is_text_block_3: "Come Iniziare"
+  what_is_text_block_4: "è un ottimo punto di partenza."
+  news: Notizie
+  the_latest: Le ultime
+  private: Privato
+  secure: Sicuro
+  untraceable: Non tracciabile
+  private_text: "Monero nasconde importi, origini e destinazioni delle @transactions. Ciò significa che nessuno sa quanto stai effettivamente inviando in una transazione tranne te. Ciò garantisce che i tuoi acquisti e i tuoi trasferimenti rimangano privati per impostazione predefinita."
+  untraceable_text: "Sfruttando i vantaggi delle @ring-signatures, Monero ti consente di inviare e ricevere fondi privatamente. Anche se le tue transazioni sono pubblicamente verificabili sulla @blockchain, le transazioni utilizzano firme digitali che specificano un gruppo di firmatari in modo tale che chi verifica non possa dire quale persona abbia effettivamente prodotto la firma. Poiché diventa ambiguo stabilire quali fondi siano stati spesi, la transazione rimane privata e non può essere ricondotta direttamente a te."
+  secure_text: "Monero utilizza una rete distribuita peer-to-peer @consensus e ogni transazione è firmata crittograficamente. Le tue monete vengono memorizzate in modo sicuro nella @blockchain e possono essere ripristinate in qualsiasi momento grazie all'utilizzo di 25 parole @mnemonic-seed su qualsiasi computer dotato del software Monero. I file del Wallet sono crittografati su disco e bloccati con una password, di fatto rendendoli inutili se rubati."
+  how_do_i_1: "Come posso "
   how_do_i_2: " ?"
-  get_started: get started
-  get_started_1: "The fastest way to start using Monero is with a web @account manager such as "
+  get_started: iniziare
+  get_started_1: "Il modo più veloce per iniziare a utilizzare Monero è con un @account web su "
   mymonero: "MyMonero"
   get_started_2: "."
-  get_started_3: "Alternatively, if you would like to run a [full Monero node](/getting-started/running) you can download the client and a kick-starter @blockchain (to bring your local client up to speed) using the download link on the right."
-  where_can_i: Where can I
+  get_started_3: "In alternativa, se desideri eseguire un [full Monero node](/getting-started/running) puoi scaricare il client e un kick-starter @blockchain (per velocizzare il tuo client locale) usando il link di download sulla destra."
+  where_can_i: Dove posso effettuare il
   download_1: download
   download_2: " ?"
-  different_os: "Need it for a different operating system?"
-  all_downloads: View all available downloads here
+  different_os: "Cerchi un sistema operativo differente?"
+  all_downloads: Vedi tutti i download disponibili
   c_download: Download
   monero_for: Monero for
-  latest_blockchain: Latest @Blockchain
+  latest_blockchain: @Blockchain più recente
 blog:
-  title_1: All
-  title_2: Blog
-  title_3: Posts
-  tagged: Tagged under
-  author: Posted by
-  date: Posted at
-  forum: Click here to join the discussion for this entry on the Monero Forum
+  title_1: Tutti
+  title_2: gli articoli del
+  title_3: Blog
+  tagged: Taggati come
+  author: Postato da
+  date: Postato il
+  forum: Clicca qui per unirti alla discussione per questa voce sul Forum Monero
 tags:
-  all: Articles by Tag
-  notags: There are no posts for this tag.
+  all: Articoli per Tag
+  notags: Non ci sono articoli per questo tag.

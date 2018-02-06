@@ -1,6 +1,6 @@
 - title: Resources
   subfolderitems:
-  - name: Su Monero
+  - name: Informazioni
     url: resources/about/
   - name: Moneropedia
     url: resources/moneropedia/
@@ -26,7 +26,7 @@
     url: irc://chat.freenode.net/#monero-translations
   - name: monero-hardware
     url: irc://chat.freenode.net/#monero-hardware
-- title: Community
+- title: Comunità
   subfolderitems:
   - name: Reddit
     url: https://reddit.com/r/monero
@@ -44,7 +44,7 @@
     url: https://openalias.org/
   - name: Kovri
     url: https://getkovri.org/
-  - name: Laboratorio di Ricerca Monero
+  - name: Monero Research Lab
     url: resources/research-lab/
   - name: Monero Kit per la Stampa
     url: press-kit
