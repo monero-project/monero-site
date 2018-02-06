@@ -1,6 +1,7 @@
 langs:
   en: English
   es: Español
+  it: Italian
 
 global:
   date: '%Y/%m/%d'
