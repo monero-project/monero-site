@@ -3,8 +3,8 @@
 
 <div class="container description" markdown="1">
 
-If you need help choosing the correct application, please click [here](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) for a quick answer, then select the appropriate release for your operating system below.
-Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
+Wenn Sie Hilfe bei der Wahl der korrekten Anwendung benötigen, klicken Sie bitte [hier](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) für eine schnelle Antwort. Wählen Sie unten anschließend die passende Version für Ihr Betriebssystem.
+Hinweis: Die SHA256 Hashwerte neben den Downloads dienen dem Komfort. Eine anerkannte GPG-signierte Liste der Hashwert ist unter [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) verfügbar. Der zu der Signatur gehörige öffentliche Schlüssel befindet sich im Quellcode (unter /utils/gpg_keys).
 
 </div>
 <div class="container full downdropdown">
@@ -15,8 +15,8 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
     <div class="col"><a href="#linux">Linux</a></div>
     <div class="col"><a href="#arm">Arm (v7 & 8)</a></div>
     <div class="col"><a href="#bsd">BSD</a></div>
-    <div class="col"><a href="#source">Source & Blockchain</a></div>
-    <div class="col"><a href="#mobilelight">Mobile & Light</a></div>
+    <div class="col"><a href="#source">Code & Blockchain</a></div>
+    <div class="col"><a href="#mobilelight">Mobil & Light</a></div>
     <div class="col"><a href="#hardware">Hardware</a></div>
     
 </div>
@@ -26,15 +26,15 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
   <div class="info-block row center-xs" id="pick-platform">
      <div class="mob dropdowndrop">
         <input id="check01" type="checkbox" name="menu"/>
-        <label for="check01">Choose your OS</label>
+        <label for="check01">Wählen Sie Ihr Betriebssystem</label>
         <ul id="menu">
           <li><a href="#windows">Windows</a></li>
           <li><a href="#mac">Mac</a></li>
           <li><a href="#linux">Linux</a></li>
           <li><a href="#arm">Arm (v7 & 8)</a></li>
           <li><a href="#bsd">BSD</a></li>
-          <li><a href="#source">Source & Blockchain</a></li>
-          <li><a href="#mobilelight">Mobile & Light</a></li>
+          <li><a href="#source">Code & Blockchain</a></li>
+          <li><a href="#mobilelight">Mobil & Light</a></li>
           <li><a href="#hardware">Hardware</a></li>
         </ul>
       </div>
@@ -55,7 +55,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
             {{data_downloads.platform}}
         </h2>
             {% if data_downloads.version != null %}
-        <p class="text-center">Current Version: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
+        <p class="text-center">Aktuelle Version: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
             {%endif%}
 
 
@@ -64,23 +64,23 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 <h4 id="{{ data_downloads.platform | slugify }}">
- <a href="{{ data_downloads.cli_url }}">Source Code</a>
+ <a href="{{ data_downloads.cli_url }}">Quellcode</a>
 </h4>
 </div>
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
-If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can [use this link for the most current bootstrap](https://downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
+Wenn Sie die bereits geladene Blockchain vorziehen, anstatt von Grund auf zu synchronisieren, dann können Sie [hier](https://downloads.getmonero.org/blockchain.raw) die aktuelle Blockchain herunterladen. Normalerweise ist die Synchronisation von Grund auf schneller, jedoch, and it also takes a lot less RAM (import is very greedy).
 </div>
 </div>
 {% elsif data_downloads.id == "hardware" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>The Monero community has just funded a <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Dedicated Hardware Wallet</a> which is now in progress. As well, Ledger is working on <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">integrating Monero into their hardware wallets</a>.</p>
+<p>Die Monero Community hat vor kurzem ein <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">dediziertes Hardware Wallet</a> finanziert, welches sich momentan in Entwicklung befindet. Außerdem arbeitet Ledger daran, <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">Monero in ihre Hardware Wallets zu integrieren</a>.</p>
 </div></div>
 
 {% elsif data_downloads.id == "mobilelight" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href="/community/hangouts/">Hangouts</a> page to see where we are.</p>
+<p>Die folgenden Mobil- und Light-Wallets werden von vertrauten Mitgliedern der Community als sicher erachtet. Sollte ein Wallet hier nicht gelistet sein, so können Sie die Community bitten, dieses auszuprobieren. Eine Liste der Platformen der Monero Community finden Sie auf der <a href="/community/hangouts/">Treffpunkt</a> Seite.</p>
 </div>
 </div>
 <div class="row center-xs">
