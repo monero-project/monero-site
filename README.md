@@ -3,7 +3,7 @@
 Copyright (c) 2014-2018, The Monero Project
 
 ## IMPORTANT MULTILANGUAGE UPDATE NOTICE
-The multilingual update has recently been rolled out. The website now requires more steps to update so everyone can have a smooth experience. Please read all instructions carefully and follow them all! If they are not all followed, this leads to a ton of work for the website maintainers. A warning will be issued to repeat offenders.
+The multilingual update has recently been rolled out. The website now requires more steps to update so everyone can have a smooth experience. Please read all instructions carefully and follow them all! If they are not all followed, this leads to a ton of work for the website maintainers. A warning will be issued to repeat offenders. If you need help/support, you can find it on `#monero-translations` and [Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/wiki/home)
 
 ## Table of Contents
 
@@ -457,6 +457,7 @@ Build your website using `jekyll serve` if it's not rebuilding automatically. If
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
 ## 13.0 How to translate a page
+In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://taiga.getmonero.org/project/erciccione-monero-localization/) who coordinate and give support to translators-volunteers. You can find an updated guide and an example of the workflow we use on our [Guide on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/wiki/translating-monero-website) (frequently updated), also, for live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
 
 ### 13.1 Quickstart
 * Navigate to the correct language in the /i18n folder and find the page you wish to translate
