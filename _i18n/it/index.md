@@ -15,7 +15,7 @@
                         <div class="main-info">
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Private Digital Currency</h2>
-                            <p id="main-text">Monero è una sicura, privata, intracciabile cryptomoneta. E' open-source e accessibile da tutti. Tu sei la banca di te stesso, solo tu controlli e sei responsabile per i tuoi fondi. I tuoi account e le tue transazioni sono private e lontane da occhi indiscreti.</p>
+                            <p id="main-text">Monero è una cryptomoneta sicura, privata e intracciabile. E' open-source e accessibile da tutti. Tu sei la banca di te stesso, solo tu controlli e sei responsabile per i tuoi fondi. I tuoi account e le tue transazioni sono private e lontane da occhi indiscreti.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Get Started</a></p>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="row middle-xs info-block-row private">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12  why-text">
                             <h3>Monero è sicuro</h3>
-                                <p>Monero è una cryptomoneta decentralizzata, ovvero è cash digitale e sicuro operato da un network di utentu. Le transazioni sono confermate perconsenso distribuito e immutabilmente registrate nella blockchain. Non devi fidartidi nessun servizio di terze parti per tenere i tuoi Monero al sicuro. </p>
+                                <p>Monero è una cryptomoneta decentralizzata, ovvero è una moneta digitale e sicura basata sulla crittografia operata da un network di utenti. Le transazioni sono confermate attraverso consenso distribuito e immutabilmente registrate nella blockchain. Non devi fidartidi nessun servizio di terze parti per tenere i tuoi Monero al sicuro. </p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
@@ -45,7 +45,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Monero è privato</h3>
-                            <p>Monero Usa "ring signatures", "ring confidential transactions" e "stealth addressess" per offuscare l'origine, ammontare e destinazione di tutte le transazioni. Monero possiede tutti i benefit di una cryptomoneta decentralizzata senza concedere niente in fatto di privacy. </p>
+                            <p>Monero Usa "ring signatures", "ring confidential transactions" e "stealth addressess" per offuscare l'origine, l'ammontare e la destinazione di tutte le transazioni. Monero possiede tutti i benefit di una cryptomoneta decentralizzata senza concedere niente in fatto di privacy. </p>
                         </div>
                         
                     </div>
@@ -126,7 +126,7 @@
  
                             <div class="row end-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/blog/">More news</a></p>
+                                    <p><a href="{{site.baseurl}}/blog/">Più news</a></p>
                                 </div>
                             </div>
                         </div>

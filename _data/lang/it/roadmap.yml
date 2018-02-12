@@ -3,7 +3,7 @@
     - name: Annuncio su Bitcointalk
       date: 2014-04-18
       status: completed
-    - name: Rinominato da Bitmonero to Monero
+    - name: Rinominato da Bitmonero a Monero
       date: 2014-04-23
       status: completed
     - name: Recuperato dopo un attacco spam
@@ -60,7 +60,7 @@
     - name: Hardfork per sistemare il blocksize minimo e l'algoritmo per le fee dinamiche
       date: 2017-04-15
       status: completed
-    - name: Website ridisegnato
+    - name: Sito web ridisegnato
       date: 2017-07-04
       status: completed
     - name: 0.11.0.0 Helium Hydra rilasciata

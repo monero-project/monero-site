@@ -24,7 +24,7 @@
                                 <h3>Le transazioni con Monero sono confidenziali ed intracciabili.</h3>
                                 <p>Ogni transazione, di default, offusca gli indirizzi di ricezione ed invio, così come l'ammontare scambiato. Essendo privato di default, ogni qualvolta un utente usa Monero rafforza la privacy di altri utenti. Questo non succede con cryptomonete selettivamente trasparenti (es. Z-Cash).</p>
                                 <p>Grazie all'offuscamento di default, Monero è fungibile, nessuna moneta può essere collegata ad una precedente transazione. Questo significa che Monero sarà sempre accettato senza rischio di censura.</p>
-                                <p>Il progetto Kovri, <a href="https://getkovri.org/">correntemente in sviluppo</a>, reindirizzerà e cripterà le transazioni attraverso nodi I2P (Invisible Internet Project). Questa tecnologia nasconderà l'indirizzo IP di chi effettua una transazione e fornisce ulteriore protezione verso un eventuale network monitoring.</p>
+                                <p>Il progetto Kovri, <a href="https://getkovri.org/">correntemente in sviluppo</a>, reindirizzerà e cripterà le transazioni attraverso nodi I2P (Invisible Internet Project). Questa tecnologia nasconderà l'indirizzo IP di chi effettua una transazione e fornisce ulteriore protezione verso un eventuale indesiderato monitoraggio del network.</p>
                             </div>
 
                         </div>
@@ -33,7 +33,7 @@
                                 <h3>Monero è una community orizzontale che attrare i migliori ricercatori ed ingegneri del mondo.</h3>
                                 <p>Più di <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer noopener">240 sviluppatori</a> hanno contribuito al progetto Monero. Inclusi 30 'core developers'. I forum e le chat sono amichevoli e attivi.</p>
                                 <p>Monero Research Lab, Core Development Team e gli sviluppatori/sviluppatrici della community, spingono sempre più in la i limiti di cosa è possibile in materia di privacy e sicurezza nelle cryptomonete.</p>
-                                <p>Monero non è una corporazione. E' sviluppato da esperti in crittografia e sistemi distribuiti provenienti da tutto il mondo, che donano il loro tempo o sono fondati dalle donazioni della community. Questo vuol dire che Monero non può essere bloccato da nessuna nazione e non è costretto in nessuna particolare giurisdizione.</p>
+                                <p>Monero non è un'azienda, nè tanto meno una corporazione. E' sviluppato da esperti in crittografia e sistemi distribuiti provenienti da tutto il mondo, che donano il loro tempo e talvolta sono finanziati dalla community. Questo vuol dire che Monero non può essere bloccato da nessuna nazione e non è costretto in nessuna particolare giurisdizione.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                                 <img src="/img/academic-growth.png" alt="Academic growth" class="main-icon">

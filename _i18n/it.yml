@@ -72,7 +72,7 @@ index:
   how_do_i_1: "Come "
   how_do_i_2: " ?"
   get_started: inizia
-  get_started_1: "Il modo più veloce per usare Monero è usando un web @account maanager come "
+  get_started_1: "Il modo più veloce per usare Monero è usando un web @account manager come "
   mymonero: "MyMonero"
   get_started_2: "."
   get_started_3: "Oppure, puoi far partire un [full node](/getting-started/running) scaricando il client e sincronizzandoti con la @blockchain. Usa il link sulla destra."
