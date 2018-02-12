@@ -7,7 +7,7 @@ author: dEBRYUNE, dnaleor and the Monero project
 ---
 
 
-* PoW change
+# PoW change
 
 Lately, a common reoccurring subject has been ASIC resistance and how we should react to any (potential) threat from ASICs. This blog post sets out our (somewhat) formal stance on ASIC resistance and our intention to maintain ASIC resistance by swiftly reacting to any potential threat from ASICs and considering slightly modifying the PoW at every hardfork.
 
@@ -29,7 +29,7 @@ In sum, we strongly believe that it's beneficial to preserve our ASIC resistance
 
 Patches will be available for the following software: zone117x's pool, Snipa's pool, Lucas Jones' CPU miner, wolf0's CPU miner, ccminer-cryptonight, sgminer-gm, xmr-stak, xmrig-nvidia, wolf-xmr-miner.
 
- * Key reuse
+# Key reuse
 
 It is important to realize that the security of the Monero network and your own Monero is dependent on the security of your Monero keys. Your Monero keys are *MONERO* keys. Do NOT use them for any other purpose, including claiming coins from a Monero fork. Using your keys to spend the same outputs twice on different forked blockchains will damage your privacy, and others', as both spends will bear the same key image, but different rings, with only your spent output in common (this does not impact stealth addresses nor confidential transactions, just ring signatures).  Moreover, by using such a "same keys" fork, the security of your Monero private keys now depends on those third parties.
 
