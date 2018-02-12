@@ -25,6 +25,8 @@
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
     - name: Evercoin
       url: https://evercoin.com
+    - name: Godex
+      url: https://godex.io
     - name: Kaiserex
       url: https://www.kaiserex.com/
     - name: Karsha
@@ -215,6 +217,8 @@
       url: https://allforcrypto.com
     - name: Cellphone and laptop repair online store in Sweden
       url: http://www.LagaiPhone.se
+    - name: CoinBought - Buy anything from Amazon
+      url: https://coinbought.com/
     - name: Congrevape - e-cigarette products
       url: https://Congrevape.com/shop
     - name: Crypto Armory - ammunition for cryptocurrency at a competitive rate
@@ -233,6 +237,8 @@
       url: http://art2unlimited.webs.com/
     - name: Game of Cryptos
       url: https://gameofcryptos.com/
+    - name: Giacobbe & Co. - Diamond and gemstone jewelry
+      url: https://giacobbeandco.com/
     - name: Hammock Universe
       url: https://www.hammockuniverseusa.com/
     - name: Handcrafted goods
@@ -259,6 +265,8 @@
       url: https://synntechgaming.com
     - name: Stamp Monero
       url: https://stampmonero.com/
+    - name: The Kava Society - Kava tea
+      url: https://kavasociety.nz/
     - name: Xusah Boutique
       url: https://xusah.boutique/
     - name: Judit Mátyus - Jewelry
