@@ -14,7 +14,7 @@
                     <div class="col-lg-5 col-md-5 col-xs-12">
                         <div class="main-info">
                             <h1 id="main-h1">Monero</h1>
-                            <h2 id="main-h2">Private Digital Currency</h2>
+                            <h2 id="main-h2">Moneta Digitale Privata</h2>
                             <p id="main-text">Monero è una cryptomoneta sicura, privata e intracciabile. E' open-source e accessibile da tutti. Tu sei la banca di te stesso, solo tu controlli e sei responsabile per i tuoi fondi. I tuoi account e le tue transazioni sono private e lontane da occhi indiscreti.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Get Started</a></p>
                         </div>
