@@ -16,7 +16,7 @@
                         <div class="main-info">
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Private Digital Currency</h2>
-                            <p id="main-text">Monero is a secure, private, and untraceable cryptocurrency. It is open-source and accessible to all. With Monero, you are your own bank. Only you control and are responsible for your funds. Your accounts and transactions are kept private from prying eyes.</p>
+                            <p id="main-text">Monero is cash for a connected world. It’s fast, private, and secure. With Monero, you are your own bank. You can spend safely, knowing that others cannot see your balances or track your activity.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Get Started</a></p>
                         </div>
                     </div>
