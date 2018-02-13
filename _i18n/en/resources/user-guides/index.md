@@ -15,6 +15,7 @@
 [Importing the Monero blockchain]({{site.baseurl}}/resources/user-guides/importing_blockchain.html)
 [How to run a node on VPS]({{site.baseurl}}/resources/user-guides/vps_run_node.html)
 [Securely purchasing and storing Monero]({{site.baseurl}}/resources/user-guides/securely_purchase.html)
+[Using monerod with systemd]({{site.baseurl}}/resources/user-guides/monerod-as-a-systemd-service.html)
 
 </div>
             </div>
