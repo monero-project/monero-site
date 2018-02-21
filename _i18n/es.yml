@@ -1,6 +1,7 @@
 langs:
   en: English
   es: Español
+  tr: Türkçe
 
 global:
   date: '%Y/%m/%d'

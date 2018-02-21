@@ -1,0 +1,54 @@
+- title: Başlayın
+  subfolderitems:
+  - page: Monero Nedir?
+    url: get-started/what-is-monero
+  - page: Kullanım
+    url: get-started/using
+  - page: Kabul Etme
+    url: get-started/accepting
+  - page: Destekle
+    url: get-started/contributing
+  - page: Madencilik
+    url: get-started/mining
+  - page: SSS
+    url: get-started/faq
+- title: İndirmeler
+  url: downloads/
+- title: Son Haberler
+  subfolderitems:
+    - page: Tüm Gönderiler
+      url: blog
+    - page: Mektuplar
+      url: blog/tags/monero%20missives.html
+    - page: Toplantı Kayıtları
+      url: blog/tags/dev%20diaries.html
+    - page: Sürümler
+      url: blog/tags/releases.html
+- title: Topluluk
+  subfolderitems:
+  - page: Takım
+    url: community/team
+  - page: Hangouts
+    url: community/hangouts
+  - page: Etkinlikler
+    url: community/events
+  - page: Sponsorluklar
+    url: community/sponsorships
+  - page: Satıcılar
+    url: community/merchants
+- title: Kaynaklar
+  subfolderitems:
+  - page: Hakkında
+    url: resources/about
+  - page: Yol Haritası
+    url: resources/roadmap
+  - page: Araştırma Labı
+    url: resources/research-lab
+  - page: Moneropedia
+    url: resources/moneropedia
+  - page: Kullanıcı Rehberleri
+    url: resources/user-guides
+  - page: Geliştirici Rehberleri
+    url: resources/developer-guides
+  - page: Teknik Özellikler
+    url: technical-specs
