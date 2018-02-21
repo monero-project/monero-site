@@ -81,7 +81,7 @@
     - name: Fluffy blocks
       date:
       status: ongoing
-    - name: porting della GUI su android
+    - name: Porting della GUI su Android
       date:
       status: ongoing
     - name: Redesign del Forum Funding System
