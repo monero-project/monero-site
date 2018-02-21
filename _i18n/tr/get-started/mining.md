@@ -1,8 +1,8 @@
 <div class="mining">
 <div class="center-xs container description">
-<p>Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.</p>
+<p>Monero dağıtılmış oybirliğine (konsensus) ulaşmak için iş-kanıtı (proof-of-work) madenciliği kullanan bir kripto paradır. Mandeciliğie başlamak için daha fazla bilgi ve kaynağı aşağıda bulabilirsiniz.</p>
 
-<p><strong>The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.</strong></p>
+<p><strong>Monero Projesi belirli bir havuz, yazılım veya donanım önermemekte ve aşağıda gösterilen içerikler bilgi amaçlı sağlanmaktadır.</strong></p>
 </div>
 
 <section class="container">
@@ -12,11 +12,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Support</h2>
+                            <h2>Destek</h2>
                         </div>
                     </div>
                     <div class="row center-xs">
-                    <p>See <a href="{{site.baseurl}}/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
+                    <p>Bakınız <a href="{{site.baseurl}}/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> ve <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>
@@ -29,11 +29,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Pools</h2>
+                            <h2>Havuzlar</h2>
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>A listing of trusted Monero pools is found <a href="http://moneropools.com/"> here</a>.</p>
+                       <p>Güvenilir Monero havuzlarının bir listesi <a href="http://moneropools.com/"> burada</a>.</p>
                     </div>
                 </div>
             </div>
@@ -41,11 +41,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Hardware Benchmarking</h2>
+                            <h2>Donanım Kıyaslama</h2>
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>See <a href="http://monerobenchmarks.info/">here</a> for a listing of GPUs/CPUs and their respective hashrates.</p>
+                       <p>GPU/CPU ve ilgili hash oranlarıyla ilgili detaylı bilgi için <a href="http://monerobenchmarks.info/">bakınız</a>.</p>
                     </div>
                 </div>
             </div>
@@ -58,11 +58,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Mining Software</h2>
+                            <h2>Maden Yazılımı</h2>
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Note that some miners may have developer fees.</p>
+                       <p>Bazı yazılımların geliştirici ücreti olabilir.</p>
                     </div>
                     <div class="row center-xs">
                         <p><a href="https://github.com/fireice-uk/xmr-stak" target="_blank" rel="noreferrer noopener">XMR Stak</a></p>
@@ -81,6 +81,6 @@
             <!-- end full block -->
         </div>
     </section>
-    
+
 
 </div>

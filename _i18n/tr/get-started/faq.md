@@ -1,11 +1,10 @@
-{% include untranslated.html %}
 <div class="tab">
     <input id="tab-one" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-one" class="accordion">How does Monero have value?</label>
-    
+    <label for="tab-one" class="accordion">Monero neden değerli?</label>
+
 <div class="tab-content" markdown="1">
 
-Monero has value because people are willing to buy it. If no one is willing to buy Monero, then it will not have any value. Monero’s price increases if demand exceeds supply, and it decreases if supply exceeds demand.
+Monero, en basit haliyle, kullanıcılar satın almak istediği için bir değere sahip. Eğer hiç kimse Monero satın almazsa Monero’nun herhangi bir değeri olmaz. Monero’nun fiyatı talep arzı aşarsa artar, aksi takdirde azalır.
 
 </div>
 
@@ -13,124 +12,124 @@ Monero has value because people are willing to buy it. If no one is willing to b
 
 <div class="tab">
     <input id="tab-two" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-two" class="accordion">How can I get Monero?</label>
-    
+    <label for="tab-two" class="accordion">Nasıl Monero alabilirim?</label>
+
 <div class="tab-content" markdown="1">
 
-You can buy Monero from an exchange or from an individual. Alternatively, you can try mining Monero to get coins from the block reward.
+Monero’yu bir borsa aracılığıyla veya şahıslardan alabilirsiniz. Ek olarak, Monero madenciliğini deneyebilir ve blok ödülünü kazanabilirsiniz.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-three" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-three" class="accordion">What is a mnemonic seed?</label>
-    
+    <label for="tab-three" class="accordion">Mnemonic seed nedir?</label>
+
 <div class="tab-content" markdown="1">
 
-A mnemonic seed is a set of 25 words that can be used to restore your account anywhere. Keep these words safe and do not share them with someone else. You can use this seed to restore your account, even if your computer crashes.
+Bir “mnemonic seed” hesabınızı istediğiniz yere geri yüklemenizi sağlayan 25 sözcüklü bir kümedir. Seed’inizi iyi saklayın ve hiç kimseyle paylaşmayın. Bilgisayarınız çökse bile bu seed ile hesabınızı geri yükleyebilirsiniz.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-four" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-four" class="accordion">How is Monero’s privacy different from other coins?</label>
-    
+    <label for="tab-four" class="accordion">Monero’nun gizliliği neden diğer kriptolardan farklı?</label>
+
 <div class="tab-content" markdown="1">
 
-Monero uses three different privacy technologies: ring signatures, ring confidential transactions (RingCT), and stealth addresses. These hide the sender, amount, and receiver in the transaction, respectively. All transactions on the network are private by mandate; there is no way to accidentally send a transparent transaction. This feature is exclusive to Monero. You do not need to trust anyone else with your privacy.
+Monero üç farklı gizlilik teknolojisi kullanır: halka imzalar, halkaya-özel işlemler (RingCT) ve görünmez adresler. Bu teknolojiler, sırasıyla, göndericiyi, miktarı ve alıcıyı gizler. Ağ üstündeki tüm işlemler zorunlu olarak gizli tutulur; yanlışlıkla açık bir işlem yapmanız mümkün değildir. Bu özellik Monero’ya hastır. Gizliliğinizi hiç kimseye emanet etmeniz gerekmez.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-five" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-five" class="accordion">Why is my wallet taking so long to sync?</label>
-    
+    <label for="tab-five" class="accordion">Cüzdan senkronizasyonum niye uzun sürüyor?</label>
+
 <div class="tab-content" markdown="1">
 
-If you are running a full node locally, you need to copy the entire blockchain to your computer. This can take a long time, especially on an old hard drive or slow internet connection. If you are using a remote node, your computer still needs to request a copy of all the outputs, which can take several hours. Be patient, and if you would like to sacrifice some privacy for faster sync times, consider using a lightweight wallet instead.
+Tam bir düğüm (nod) çalıştırıyorsanız, bütün blok zincirini bilgisayarınıza kopyalamanız gerekir. Özellikle eski bir sabit disk veya yavaş internet bağlantısıyla bu işlem uzun sürebilir. Düğüme uzaktan erişiyorsanız, bilgisayarınızın yine de tüm çıktıların bir kopyasını alması gerekir, ki bu işlem saatler sürebilir. Sabırlı olun, ve gizliliğinizi daha hızlı senkronizasyon için tehlikeye atmak isterseniz, o halde mobil/hafif cüzdan kullanmayı deneyin.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-six" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-six" class="accordion">What is the different between a lightweight and a normal wallet?</label>
-    
+    <label for="tab-six" class="accordion">Hafif ve normal bir cüzdan arasında ne fark var?</label>
+
 <div class="tab-content" markdown="1">
 
-For a lightweight wallet, you give your view key to a node, who scans the blockchain and looks for incoming transactions to your account on your behalf. This node will know when you receive money, but it will not know how much you receive, who you received it from, or who you are sending money to. Depending on your wallet software, you may be able to use a node you control to avoid privacy leaks. For more privacy, use a normal wallet, which can be used with your own node.
+Hafif cüzdan kullandığınızda, anahtarınızı, sizin adınıza blok zincirini tarayan ve gelen işlemleri arayan bir düğüme verirsiniz. Bu düğüm ne zaman para aldığınızı bilir fakat ne kadar ve kimden aldığınızı veya parayı kime gönderdiğinizi göremez. Cüzdan yazılımınıza bağlı olarak, gizliliğinizi korumak isterseniz kendi kontrol ettiğiniz bir düğümü kullanabilirsiniz. Daha fazla gizlilik için, normal bir cüzdan kullanıp kendi düğümünüzü çalıştırmanız önerilir.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-seven" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-seven" class="accordion">How is Monero different from Bitcoin?</label>
-    
+    <label for="tab-seven" class="accordion">Monero’nun Bitcoin’den farkı nedir?</label>
+
 <div class="tab-content" markdown="1">
 
-Monero is not based on Bitcoin. It is based on the CryptoNote protocol. Bitcoin is a completely transparent system, where people can see exactly how much money is being sent from one user to another. Monero hides this information to protect user privacy in all transactions. It also has a dynamic block size and dynamic fees, an ASIC-resistant proof of work, and a tail coin emission, among several other changes.
+Monero Bitcoin tabanlı değildir ve CryptoNote protokolünü kullanır. Bitcoin, herkesin bir kullanıcıdan diğerine tam olarak ne kadar para gönderildiğini görebileceği, tamamen şeffaf bir sistemdir. Monero bu bilgiyi, gizliliği korumak adına tüm işlemlerde saklı tutar. Ayrıca dinamik blok boyutlu ve dinamik ücretli olup ASIC-dayanıklıdır, kuyruk emisyonunu destekler.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-eight" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-eight" class="accordion">Does Monero have a block size limit?</label>
-    
+    <label for="tab-eight" class="accordion">Monero'nun blok boyutu limiti var mı?</label>
+
 <div class="tab-content" markdown="1">
 
-No, Monero does not have a hard block size limit. Instead, the block size can increase or decrease over time based on demand. It is capped at a certain growth rate to prevent outrageous growth.
+Hayır, Monero’nun keskin bir blok boyut limiti yok. Onun yerine blok boyutu zamanla talebe bağlı olarak artar veya azalır. Aşırı büyümeyi engellemek adına belli bir büyüme oranında sınırlanmıştır.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-nine" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-nine" class="accordion">What is a blockchain?</label>
-    
+    <label for="tab-nine" class="accordion">Blok zinciri nedir??</label>
+
 <div class="tab-content" markdown="1">
 
-A blockchain is a system that stores a copy of all transaction history on the Monero network. Every two minutes, a new block with the latest transaction information is added to the blockchain. This chain allows the network to verify the amount of money accounts have and make it resilient to attacks and centralization attempts.
+Blok zinciri tüm işlemlerin kopyasını Monero ağında tutan bir sistemdir. İki dakikada bir, en güncel işlem bilgilerini içeren yeni bir blok, blok zincirine eklenir. Bu zincir ağdaki hesapların para hesaplarını doğrulamasını sağlar ve saldırı ve merkezileştirme çabalarına karşı koruma sağlar.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-ten" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-ten" class="accordion">What is Kovri?</label>
-    
+    <label for="tab-ten" class="accordion">Kovri nedir?</label>
+
 <div class="tab-content" markdown="1">
 
-Kovri is an I2P router written in C++. I2P is a hidden network like Tor with several technical differences. Kovri is an independent project of Monero, but it will work with Monero and several other projects. Kovri hides the transaction broadcast, so other nodes do not know who created transactions. In adversarial conditions, Kovri can be used to hide all Monero traffic through I2P, which would prevent people from knowing Monero is being used. Kovri is currently in alpha, and it is not yet fully integrated in Monero. Learn more about Kovri at the [project website.](https://getkovri.org)
+Kovri C++ diliyle yazılmış bir I2P yönlendiricidir. I2P, çeşitli teknik farklılıları olmakla birlikte Tor gibi gizli bir ağdır. Kovri, Monero’dan bağımsız bir proje olmasına rağmen Monero ve birkaç projeyle daha çalışacaktır. Kovri işlem yayınını gizler, böyle diğer düğümler işlemi kimin oluşturduğunu bilmez. Sakıncalı durumlarda, Kovri tüm Monero trafiğini I2P ile gizlemek için kullanılabilir, böylece hiç kimse Monero’nun kullanıldığını göremez. Kovri an itibariyle alfa sürümündedir, ve Monero’yla tam entegre değildir. Kovri hakkında daha fazla bilgi almak için [web sayfasını ziyaret edin.](https://getkovri.org)
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-eleven" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-eleven" class="accordion">What is fungibility, and why is it important?</label>
-    
+    <label for="tab-eleven" class="accordion">Değiştirilebilirlik (değiş-tokuş) nedir, neden önemlidir?</label>
+
 <div class="tab-content" markdown="1">
 
-Fungibility is a simple property of money such that there are no differences between two amounts of the same value. If two people exchanged a 10 and two 5’s, then no one would lose out. However, let’s suppose that everyone knows the 10 was previously used in a ransomware attack. Is the other person still going to make the trade? Probably not, even if the person with the 10 has no connection with the ransomware. This is a problem, since the receiver of money needs to constantly check the money they are receiving to not end up with tainted coins. Monero is fungible, which means people do not need to go through this effort.
+Değiştirilebilirlik paranın temel bir özelliği olup aynı değerdeki iki birim arasında bir fark olmaması anlamına gelir. İki kişi birbiriyle bir 10’luk ve 2 5’lik takas ettiğinde hiç kimse değer kaybetmez. Ancak varsayalım ki herkes 10’un daha önce bir zararlı yazılım saldırısında kullandığını biliyor olsun. İkinci şahıs sizce yine de alım yapar mı? 10’a sahip kişinin bu zararlı yazılımla bir ilgisi olmasa bile, cevap muhtemelen hayırdır. Bu bir sorun çünkü alıcı sürekli olarak almış olduğu paranın kirli olup olmadığını kontrol etmek durumundadır. Monero değiştirilebilirdir, yani hiç kimsenin bu gibi bir duruma katlanmasına gerek yoktur.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-twelve" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-twelve" class="accordion">If Monero is so private how do we know they're not being created out of thin air?</label>
-    
+    <label for="tab-twelve" class="accordion">Monero bu kadar gizliyse, paranın yoktan yaratılmadığını nasıl bileceğiz?</label>
+
 <div class="tab-content" markdown="1">
-In Monero, every transaction output is uniquely associated with a key image that can only be generated by the holder of that output. Key images that are used more than once are rejected by the miners as double-spends and cannot be added to a valid block. When a new transaction is received, miners verify that the key image does not already exist for a previous transaction to ensure it's not a double-spend.
+Monero’da her işlem çıktısı, sadece o çıktının sahibi tarafından oluşturulabilecek özel bir anahtar imajıyla ilişkilendirilir. Birden çok kullanılan anahtar imajları madenciler tarafından çift-harcama gereğiyle reddedilir ve geçerli bir bloğa eklenemez. Yeni bir işlem alındığında, anahtar imajın daha önceki bir işlemde mevcut olmadığından emin olmak ve çift-harcamayı önlemek için madenciler bu işlemi doğrular.
 
-We can also know that transaction amounts are valid even though the value of the inputs that you are spending and the value of the outputs you are sending are encrypted (these are hidden to everyone except the recipient). Because the amounts are encrypted using Pedersen commitments what this means is that no observers can tell the amounts of the inputs and outputs, but they can do math on the Pedersen commitments to determine that no Monero was created out of thin air.
+Ayrıca harcadığınız girdilerin veya gönderdiğiniz çıktıların değerleri şifrelenmiş olsa bile miktarların geçerli olduğunu bilebiliriz (bu değerler alıcı dışında herkesten gizlenir). Çünkü miktarlar Pedersen bağlantılarıyla şifrelenir, yani herhangi bir gözlemci girdi veya çıktıların değerini göremese de Pedersen bağlantılarını kullanarak herhangi bir Monero’nun yoktan oluşturulmadığını belirleyebilir.
 
-As long as the encrypted output amounts you create is equal to the sum of the inputs that are being spent (which include an output for the recipient and a change output back to yourself and the unencrypted transaction fee), then you have a legitimate transaction and know no Monero is being created out of thin air. Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable.
+Oluşturduğunuz şifrelenmiş çıktı miktarları gönderilen girdilerin toplamına eşit olduğu sürece (buna alıcı için bir çıktı, size gelen bir değişim çıktısı ve şifrelenmemiş işlem ücreti de dahildir), geçerli bir işleminiz var demektir ve herhangi bir Monero’nun yoktan yaratılmadığını görebilirsiniz. Pedersen bağlantıları aracılığıyla toplamların birbirine eşit olduğu doğrulanabilir, fakat her toplamın Monero toplamı, girdi ve çıktıların Monero cinsinden değeri kişi bazında tespit edilemez.
 </div>
 
 </div>
