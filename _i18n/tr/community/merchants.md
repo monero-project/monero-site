@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please [open a GitHub issue and let us know](https://github.com/monero-project/monero-site/issues).
+Her tipten satıcı Monero’nun sağladığı finansal gizliliğe değer vermeye başladı. Altta mal ve hizmetleri karşılığında Monero kabul etmekte olan satıcıların bir listesini bulabilirsiniz. Herhangi bir kurum Monero alımını durdurmuş veya kurumunuzun listelenmesini istiyorsanız, lütfen [bir GitHub talebi oluşturarak biz haber verin](https://github.com/monero-project/monero-site/issues).
 </div>
 <div class="merchants">
 {% for toplevel in site.data.merchants %}
@@ -23,5 +22,5 @@ Merchants of all kinds have come to value the financial privacy that Monero brin
 </div>
 
 <div markdown="1" class="text-center container description">
-*Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ("buyer beware"); you are responsible for doing your own research. Always use judgement when making online purchases.*
+*Lütfen dikkat: size sağlanmış olan bu bağlantılar bilgi amaçlıdır; listelenmiş olan kurum veya kuruluş veya kişilerle ilgili herhangi bir ürün, servis veya fikir Monero topluluğu üyeleri tarafından tavsiye edilmemektedir. Monero topluluğu listelenmiş olan harici sayfalarla ilgili bilgilerin doğruluğu, yasallığı veya içeriği ile ilgili sorumluluk kabul etmemektedir. İlgili sayfalar hakkında bilgi almak isterseniz lütfen site sahiplerine ulaşınız. Her zaman olduğu gibi, alıcıya uyarı; kendi araştırmanızı kendiniz yapmakla yükümlüsünüz. Online alışveriş yaparken her zaman sağduyunuzu kullanın.*
 </div>

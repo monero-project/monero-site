@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-The following businesses have supported the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
+Altta listeli işletmeler Monero projesini, dünyaya finansal gizlilik sağlaması hedefinde desteklemiş işletmelerdir. Katkıları için ne kadar teşekkür etsek azdır. Monero Projesini desteklemek ve bu sayfada listelenmek için, lütfen dev@getmonero.org adresine bir e-posta gönderiniz.
 </div>
 
 <div>
@@ -37,7 +36,7 @@ The following businesses have supported the Monero Project in its goal to bring 
                 </div>
             </div>
         </div>
-        <div class="row"> 
+        <div class="row">
             <div class="left one-third no-pad-sm col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
@@ -48,7 +47,7 @@ The following businesses have supported the Monero Project in its goal to bring 
                     </div>
                 </div>
             </div>
-            
+
             <div class="center one-third no-pad-sm col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">

@@ -79,7 +79,7 @@ Bir blok zinciri bootstrap kullanmak isterseniz, sıfırdan eşlemek yerine, en 
 {% elsif data_downloads.id == "mobilelight" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>Aşağıdaki mobil/hafif cüzdanlar topluluğun önemli üyeleri tarafından güvenli sayılmaktadır. Burada listelenmeyen bir cüzdan varsa, topluluktan kontrol edilmesini isteyebilirsiniz. <a href="/community/hangouts/">Hangouts</a> sayfamıza giderek güncel duruma göz atabilirsiniz.</p>
+<p>Aşağıdaki mobil/hafif cüzdanlar topluluğun önemli üyeleri tarafından güvenli sayılmaktadır. Burada listelenmeyen bir cüzdan varsa, topluluktan kontrol edilmesini isteyebilirsiniz. <a href="/community/hangouts/">Buluşma Yerleri</a> sayfamıza giderek güncel duruma göz atabilirsiniz.</p>
 </div>
 </div>
 <div class="row center-xs">

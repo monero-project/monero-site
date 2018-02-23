@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Herhangi bir sorunla karşılaşırsanız size destek olarak büyük ve destekleyici bir topluluk var. Daha fazla bilgi için <a href="{{site.baseurl}}/community/hangouts/">Hangouts</a> sayfamıza gidebilirsiniz.</p>
+                        <p>Herhangi bir sorunla karşılaşırsanız size destek olarak büyük ve destekleyici bir topluluk var. Daha fazla bilgi için <a href="{{site.baseurl}}/community/hangouts/">Buluşma Yerleri</a> sayfamıza gidebilirsiniz.</p>
                     </div>
                 </div>
             </div>

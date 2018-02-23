@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-The Monero community is diverse and varied. We come from all over, but we definitely have some places we like to hang out together. You'll find most of them below. Join us!
+Monero topluluğu çeşitli ve farklıdır. Fiziksel olarak dağınık  olsak da buluşup vakit geçirdiğimiz özel yerler yok değil. Bunların birçoğunu altta bulabilirsiniz. Bize katılın!
 </div>
 
 <div class="hangouts">
@@ -29,11 +28,11 @@ The Monero community is diverse and varied. We come from all over, but we defini
                         <div class="info-block">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>Workgroup Resources</h2>
+                                    <h2>İş Grubu Kaynakları</h2>
                                 </div>
                             </div>
                             <div class="row center-xs">
-                                <p>In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects. Mattermost even has relays into the most popular Monero-related IRC channels.</p>
+                                <p>Monero, organik iş gruplarını desteklemek amacıyla topluluk üyelerinin buluşup proje planlayabilecekleri çeşitli kaynaklar sunmakta. Mattermost’da Monero ile ilgili popüler IRC kanalları bulmanız mümkün.</p>
                             </div>
                             <div class="row relays around-xs">
                                 <div class="col-md-4 col-sm-4 col-xs-4">
@@ -50,11 +49,11 @@ The Monero community is diverse and varied. We come from all over, but we defini
                         <div class="info-block">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>IRC Channels</h2>
+                                    <h2>IRC Kanalları</h2>
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.</p>
+                                <p>Monero topluluğu, çeşitli amaçlara hizmet eden birçok IRC kanalı kullanmaktadır. Bazısı iş, bazısıysa muhabbet edip takılmak için. Popüler olanları altta bulabilirsiniz.</p>
                             </div>
                             <div class="row irc">
                                 {% for channel in site.data.irc %}
@@ -76,17 +75,17 @@ The Monero community is diverse and varied. We come from all over, but we defini
                                 <div class="col"><h2>Stack Exchange</h2></div>
                             </div>
                             <div class="row start-xs">
-                                <p>The Monero Stack Exchange is a quick and easy way to ask questions and get answers. Below you'll find some high quality question/answer pairs to some frequently asked questions.</p>
+                                <p>Monero Stack Exchange soru sorup cevap almanızın hızlı bir yoludur. Altta bazı sıkça sorulan kaliteli soruları ve verilen cevapları bulacağınız bağlantıları bulabilirsiniz.</p>
                             </div>
                             <div class="row start-xs sequestions">
-                                <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Why does monero have higher transaction fees than bitcoin?</a>
-                                <a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">What does Monero's scaling roadmap look like?</a>
-                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">What cryptography primitives/concepts, other than the basic ones, does Monero use?</a>
-                                <a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">How to extract data from local blockchain?</a>
-                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">Hiding TCP traffic for Monero miners?</a>
+                                <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Monero’nun işlem ücreti neden Bitcoin’den daha yüksek?</a>
+                                <a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">Monero’nun ölçeklenebilirlik yol haritası nedir?</a>
+                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">Temel kriptografi ve kavramları dışında Monero başka bir yöntem kullanıyor mu?</a>
+                                <a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">Blok zincirinden nasıl veri çekebilirim?</a>
+                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">Monero madencilerinden TCP trafiği gizleme.</a>
                             </div>  
                             <div class="row center-xs">
-                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Visit Stack Exchange</a></p>
+                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Stack Exchange'e Gidin</a></p>
                             </div>
                         </div>
                </div>

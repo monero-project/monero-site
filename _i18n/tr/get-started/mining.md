@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                    <p>Bakınız <a href="{{site.baseurl}}/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> ve <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
+                    <p>Bakınız <a href="{{site.baseurl}}/community/hangouts/"> Buluşma Yerleri</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> ve <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>
