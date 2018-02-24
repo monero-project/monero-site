@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="about-monero">
     <section class="container">
             <div class="row">
@@ -7,14 +6,14 @@
                     <div class="info-block text-adapt">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>A Brief History</h2>
+                                <h2>Kısa Bir Tarihçe</h2>
                             </div>
                         </div>
 <div markdown="1">
 
-Monero was launched in April 2014. It was a fair, pre-announced launch of the CryptoNote reference code. There was no premine or instamine, and no portion of the block reward goes to development. See the original Bitcointalk thread here. The founder, thankful_for_today, proposed some controversial changes that the community disagreed with. A fallout ensued, and the Monero Core Team forked the project with the community following this new Core Team. This Core Team has provided oversight since.
+Monero Nisan 2014’te devreye alındı. CryptoNote referans kodunun çok önceden ilan edilmiş ve adil bir devreye alımıydı. Ön-maden (premine) veya hızlı-maden edilmedi, blok ödülünün hiçbir kısmı geliştirme grubuna gitmedi. İlk Bitcointalk konusunu burada görebilirsiniz. Kurucu thankful_for_today topluluğun kabul etmediği bazı tartışmalı tekliflerde bulundu. Haliyle bir yol ayrımı gerçekleşti ve Monero topluluğunun da takip ettiği Monero Çekirdek Ekip projeyi çatalladı. Bu çekirdek ekip bugüne kadar projeye gözetim sağladı.
 
-Monero has made several large improvements since launch. The blockchain was migrated to a different database structure to provide greater efficiency and flexibility, minimum ring signature sizes were set so that all transactions were private by mandate, and RingCT was implemented to hide the transaction amounts. Nearly all improvements have provided improvements to security or privacy, or they have facilitated use. Monero continues to develop with goals of privacy and security first, ease of use and efficiency second.
+İlk devreye alımından itibaren Monero birçok önemli ilerleme gösterdi. Daha fazla etkinlik ve esneklik için blok zinciri farklı bir veritabanına dönüştürüldü, minimum halka boyutu tüm işlemleri varsayılan bir şekilde gizli tutacak şekilde ayarlandı, ve işlem miktarlarını gizlemek için RingCT devreye alındı. Neredeyse tüm bu geliştirmeler gizlilik ve güvenlikte ilerleme sağladı, veya kullanımı kolaylaştırdı. Monero, gizlilik ve güvenlik birincil, kullanım kolaylığı ve etkinlik ikinci planda olacak şekilde geliştirmelerine devam etmektedir.
 
 </div>
                     </div>
@@ -27,25 +26,25 @@ Monero has made several large improvements since launch. The blockchain was migr
                     <div class="info-block text-adapt">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Our Values</h2>
+                                <h2>Değerlerimiz</h2>
                             </div>
                         </div>
 
 <div markdown="1">
 
-Monero is more than just a technology. It’s also what the technology stands for. Some of the important guiding philosophies are listed below.
+Monero bir teknolojiden çok daha fazlasıdır. Teknolojinin kendisidir. Projeye ışık tutan bazı felsefeleri altta listelenmiş olarak bulabilirsiniz.
 
-### Security
+### Güvenlik
 
-Users must be able to trust Monero with their transactions, without risk of error or attack. Monero gives the full block reward to the miners, who are the most critical members of the network who provide this security. Transactions are cryptographically secure using the latest and most resilient encryption tools available.
+Kullanıcılar hata veya saldırı riski olmaksızın, tüm işlemleriyle Monero’ya güvenebilmeliler. Monero tüm blok ödülünü, bu güvenliği sağlayan ve ağın en önemli üyeleri olan madencilere verir. İşlemler en güncel ve dayanıklı şifreleme araçları kullanılarak kriptografik olarak güvence altındadır.
 
-### Privacy
+### Gizlilik
 
-Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
+Monero gizliliği ciddiye alır. Monero, kullanıcıları mahkemelerden, veya aşırı durumlarda, ölüm cezalarından bile koruyabilmelidir. Bu seviyede bir gizliliğe tüm kullanıcılar, teknolojik olarak bilgileri olsun olmasın, Monero nasıl çalışırı bilsin bilmesin, muhakkak erişebilmelidir. Bir kullanıcı, Monero’ya, harcama alışkanlıklarını başkalarının öğrenme ihtimaline karşı baskı altında hissetmeden rahatlıkla güvenebilmelidir.
 
-### Decentralization
+### Merkezi Olmama
 
-Monero is committed to providing the maximum amount of decentralization. With Monero, you do not have to trust anyone else on the network, and it is not run by any large group. An accessible “Proof of Work” algorithm makes it easy to mine Monero on normal computers, which makes it more difficult for someone to purchase a large amount of mining power. Nodes connect to each other with I2P to lower the risks of revealing sensitive transaction information and censorship (tba). Development decisions are extremely clear and open to public discussion. Developer meeting logs are published online in their entirety and visible by all.
+Monero maksimum seviyede merkezsizlik sağlamaya kararlıdır. Monero’yla ağ üstünde hiç kimseye güvenmeniz gerekmez çünkü ağ herhangi bir büyük grup tarafından çalıştırılmamaktadır. Erişilebilir bir “iş kanıtı” algoritması Monero’nun normal bilgisayarlarda bile maden edilmesini kolaylaştırır, böylece tek bir kişinin büyük miktarlarda madencilik gücü satın almasına engel olur. Düğümler birbirlerine I2P ile bağlanır, böylece hassas işlemlerin açığa çıkarılması veya sansürlenmesi riski en aza indirilir. Geliştirme kararları son derece açık ve halka açık olacak şekilde tartışılır. Geliştirici toplantı notları çevrimiçi olarak bütünüyle ve herkesin görebileceği şekilde paylaşılır.
 
 </div>
                     </div>

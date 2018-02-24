@@ -1,19 +1,18 @@
-{% include untranslated.html %}
 <div class="guides">
 
 <div class="center-xs container description">
-<p class="text-center">Please note: the guides below are currently out of date, but are considered a good starting point for most calls. </p>
+<p class="text-center">Lütfen dikkat: alttaki rehberlerin çoğu eskidir, ama yine de birçok konu için iyi bir başlangıç noktası sayılabilir. </p>
 </div>
 
 <section class="container full">
     <div class="info-block">
-        <h2>RPC Documetation</h2>
+        <h2>RPC Dökümantasyonu</h2>
 <div markdown="1">
 
-[Daemon RPC Documentation](daemon-rpc.html)
-[Wallet RPC Documentation](wallet-rpc.html)
+[Daemon RPC Dökümantasyonu](daemon-rpc.html)
+[Wallet RPC Dökümantasyonu](wallet-rpc.html)
 
-More coming soon...
+Daha fazlası yakında...
 </div>
     </div>
 </section>

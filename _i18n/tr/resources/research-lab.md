@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div class="container description">
-<p>Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.</p>
+<p>Monero yalnızca değiştirilebilir bir para birimi oluşturmakla kalmayıp aynı zamanda mali gizlilik alanında da araştırma çalışmalarını devam ettirmektedir. Altta Monero Labı’mızın oluşturduğu, ve devamı gelecek olan, makale ve kaynakları bulabilirsiniz.</p>
 </div>
 
 <section class="container">
@@ -9,152 +8,88 @@
                 <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="info-block research-paper">
                         <div class="row center-xs">
-                            <div class="col"><h2>Monero Research Lab Papers</h2></div>
+                            <div class="col"><h2>Monero Araştırma Labı Makaleleri</h2></div>
                         </div>
                         <div class="tab">
                               <input id="tab-one" type="checkbox" name="tabs" class="accordion" checked="checked">
-                              <label for="tab-one" class="accordion">MRL-0001: A Note on Chain Reactions in Traceability in CryptoNote 2.0</label>
+                              <label for="tab-one" class="accordion">MRL-0001: CryptoNote 2.0’da Zincir Reaksiyonların İzlenebilirliğine Dair</label>
                               <div class="tab-content">
-                                <p><strong>Abstract:</strong> This research bulletin describes a plausible attack on a ring-signature based
-                                    anonymity system. We use as motivation the cryptocurrency protocol CryptoNote
-                                    2.0 ostensibly published by Nicolas van Saberhagen in 2012. It has been
-                                    previously demonstrated that the untraceability obscuring a one-time key pair can
-                                    be dependent upon the untraceability of all of the keys used in composing that
-                                    ring signature. This allows for the possibility of chain reactions in traceability
-                                    between ring signatures, causing a critical loss in untraceability across the whole
-                                    network if parameters are poorly chosen and if an attacker owns a sufficient
-                                    percentage of the network. The signatures are still one-time, however, and any
-                                    such attack will still not necessarily violate the anonymity of users. However, such
-                                    an attack could plausibly weaken the resistance CryptoNote demonstrates against
-                                    blockchain analysis. This research bulletin has not undergone peer review, and
-                                    reflects only the results of internal investigation.
+                                <p><strong>Özet:</strong> Bu araştırma bülteni halka-bazlı gizlilik sistemine olası bir saldırıyı tarif etmektedir. 2012 yılında görünürde Nicolas van Saberhagen tarafından yayınlanan CryptoNote 2.0 kripto para protokolünü motivasyon olarak alıyoruz. Daha önceden de gösterilmiş olduğu üzere tek-kullanımlık anahtarın takip edilemezliği, ilgili halka imzada kullanılan tüm diğer anahtarların da takip edilemezlik özelliğine bağlıdır. Bu durumda, bir saldırgan eğer ağ üstünde yeterli yüzdeye sahipse, halka imzaları arasındaki zincir reaksiyonların izlenebilirliği kullanarak tüm blok üzerinde takip edilemezliğin yüksek oranda kayba uğramasına yol açabilir. İmzalar tek kullanımlık olduğundan herhangi bir saldırı yine de kullanıcıların gizliliğini tehlikeye atmayacaktır. Ancak böyle bir saldırı CryptoNote’un blok zincirinin analizine karşı gösterdiği savunmayı zayıflatabilir. Bu araştırma bülteni henüz bilimsel incelemeden geçmemiş, ve sadece iç araştırmaların sonuçlarını içermektedir.
                                     <br>
                                     <br>
-                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0001.pdf">Read Paper</a>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0001.pdf">Makaleyi Oku</a>
                                </p>
                               </div>
                             </div>
                             <div class="tab">
                               <input id="tab-two" type="checkbox" name="tabs" class="accordion">
-                              <label for="tab-two" class="accordion">MRL-0002: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing the CryptoNote Protocol</label>
+                              <label for="tab-two" class="accordion">MRL-0002: CryptoNote Protokolünü Kullanan Dijital Paralarda Merkle Tree Açıkları Aracılığıyla Sahtekarlık Yapma</label>
                               <div class="tab-content">
-                                <p><strong>Abstract:</strong> On 4 September 2014, an unusual and novel attack was executed against the
-                                    Monero cryptocurrency network. This attack partitioned the network into two
-                                    distinct subsets which refused to accept the legitimacy of the other subset. This
-                                    had myriad effects, not all of which are yet known. The attacker had a short
-                                    window of time during which a sort of counterfeiting could occur, for example.
-                                    This research bulletin describes deficiencies in the CryptoNote reference code
-                                    allowing for this attack, describes the solution initially put forth by Rafal Freeman
-                                    from Tigusoft.pl and subsequently by the CryptoNote team, describes the current
-                                    fix in the Monero code base, and elaborates upon exactly what the offending
-                                    block did to the network. This research bulletin has not undergone peer review,
-                                    and reflects only the results of internal investigation.<br>
+                                <p><strong>Özet:</strong> 4 Eylül 2014’te Monero kripto para ağına alışılagelmişin dışında yeni bir saldırı düzenlendi. Bu saldırı ağı, birbirini geçersiz sayan iki altkümeye ayırdı. Bu saldırının birçok etkisi oldu, ki çoğu hala bilinmemekte. Saldırganın sahtekarlık yapabileceği kısa bir zaman penceresi oluştu.
+                                    Bu araştırma bülteni, bu gibi bir saldırıya izin veren CryptoNote referans kodundaki bazı eksiklikleri açıklıyor, aynı zamanda Tigusoft.pl’den Rafal Freeman’ın saldırıya karşı oluşturduğu ilk çözümü ve sonrasında CryptoNote takımından gelen çözümü gösteriyor. Yazı ek olarak Monero kodundaki değişiklikleri ve zararlı bloğun ağa nasıl etki ettiğini açıklıyor. Bu araştırma bülteni henüz bilimsel incelemeden geçmemiş, ve sadece iç araştırmaların sonuçlarını içermektedir.<br>
                                     <br>
-                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0002.pdf">Read Paper</a></p>
-                                    
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0002.pdf">Makaleyi Oku</a></p>
+
                               </div>
                             </div>
                             <div class="tab">
                               <input id="tab-three" type="checkbox" name="tabs" class="accordion">
-                              <label for="tab-three" class="accordion">MRL-0003: Monero is Not That Mysterious</label>
+                              <label for="tab-three" class="accordion">MRL-0003: Monero O Kadar da Gizemli Değil</label>
                               <div class="tab-content">
-                                <p><strong>Introduction:</strong> Recently, there have been some vague fears about the CryptoNote source code and
-                                    protocol floating around the internet based on the fact that it is a more complicated
-                                    protocol than, for instance, Bitcoin. The purpose of this note is to try and clear
-                                    up some misconceptions, and hopefully remove some of the mystery surrounding
-                                    Monero Ring Signatures. I will start by comparing the mathematics involved in
-                                    CryptoNote ring signatures (as described in [CN]) to the mathematics in [FS], on
-                                    which CryptoNote is based. After this, I will compare the mathematics of the ring
-                                    signature to what is actually in the CryptoNote codebase.<br>
+                                <p><strong>Giriş:</strong> Son zamanlarda CryptoNote kaynak kodu ve protokolünün diğer protokollerden, mesela Bitcoin, daha karmaşık olduğuna dair internette dolaşan bazı kaygılar olduğunu görüyoruz. Bu yazının amacı bazı yanlış anlamaları gidermek, ve Monero’nun Halka İmzaları ile ilgili kimi bilinmeyenleri ortadan kaldırmaktır. Yazıya CryptoNote halka imzalarında kullanılan matematiği (yazıda [CN] olarak kısaltılmıştır) [FS]’teki matematikle karşılaştırarak başlıyorum. Sonrasında halka imzalarındaki matematiğin orijinal CryptoNote kodunda neye denk geldiğinle ilgili karşılaştırmalarımı sunuyorum.<br>
                                     <br>
-                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0003.pdf">Read Paper</a></p>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0003.pdf">Makaleyi Oku</a></p>
                               </div>
                             </div>
                             <div class="tab">
                               <input id="tab-four" type="checkbox" name="tabs" class="accordion">
-                              <label for="tab-four" class="accordion">MRL-0004: Improving Obfuscation in the CryptoNote Protocol</label>
+                              <label for="tab-four" class="accordion">MRL-0004: CryptoNote Protokolünün Gizliliğinin İyileştirilmesi</label>
                               <div class="tab-content">
-                                <p><strong>Abstract:</strong> We identify several blockchain analysis attacks available to degrade the
-untraceability of the CryptoNote 2.0 protocol. We analyze possible solutions,
-discuss the relative merits and drawbacks to those solutions, and recommend
-improvements to the Monero protocol that will hopefully provide long-term
-resistance of the cryptocurrency against blockchain analysis. Our recommended
-improvements to Monero include a protocol-level network-wide minimum mix-in
-policy of
-n
-= 2
-foreign outputs per ring signature, a protocol-level increase of this
-value to
-n
-= 4
-after two years, and a wallet-level default value of
-n
-= 4
-in the
-interim. We also recommend a torrent-style method of sending Monero output.
-We also discuss a non-uniform, age-dependent mix-in selection method to
-mitigate the other forms of blockchain analysis identified herein, but we make no
-formal recommendations on implementation for a variety of reasons. The
-ramifications following these improvements are also discussed in some detail.
-This research bulletin has not undergone peer review, and reflects only the
-results of internal investigation.<br>
+                                <p><strong>Özet:</strong> CryptoNote 2.0 protokolünün takip edilemezliğine zarar veren bazı blok zinciri analiz saldırılarını tanımlıyoruz. Mümkün çözümleri analiz ediyor, bu çözümlerin görece fayda ve dezavantajlarını tartışıyor ve Monero protokolüne, blok zinciri analizine karşın uzun vadede kripto paranın dayanıklılığını arttıracak olan iyileştirmeler öneriyoruz. Monero’ya önerdiğimiz bazı iyileştirmeler şöyle: protokol-seviyesinde ağ-genişliğinde, halka imza başına yabancı çıktının minimum n = 2 olacak şekilde ayarlanması, ve bu değerin iki yıl sonunda n = 4 olacak şekilde protokol seviyesinde arttırılması, ve cüzdan-seviyesinde varsayılan değerin n = 4 olarak belirlenmesi. Ayrıca Monero çıktısı göndermek için torrent-stilinde bir yöntem öneriyoruz.
+Ek olarak, bu yazıda açıklanan blok zinciri analizinin diğer formlarının zararlı etkilerini azaltmak için, uniform-olmayan, yaş-bağımlı karmaşık bir seçme yöntemi tartışıyoruz, ancak bu yöntemin devreye alımına dair çeşitli sebeplerden ötür resmi bir öneride bulunmuyoruz. Bu iyileştirmelerin etkilerini detaylı bir şekilde aktarıyoruz. Bu araştırma bülteni henüz bilimsel incelemeden geçmemiş, ve sadece iç araştırmaların sonuçlarını içermektedir.<br>
                                     <br>
-                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0004.pdf">Read Paper</a></p>
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0004.pdf">Makaleyi Oku</a></p>
                               </div>
                             </div>
                             <div class="tab">
                               <input id="tab-five" type="checkbox" name="tabs" class="accordion">
-                              <label for="tab-five" class="accordion">MRL-0005: Ring Signature Confidential Transactions</label>
+                              <label for="tab-five" class="accordion">MRL-0005: Halka İmza Gizli İşlemler</label>
                               <div class="tab-content">
-                                <p><strong>Abstract:</strong> This article introduces a method of hiding transaction amounts in the strongly
-decentralized anonymous cryptocurrency Monero. Similar to Bitcoin, Monero is a
-cryptocurrency which is distributed through a proof of work “mining” process.
-The original Monero protocol was based on CryptoNote, which uses ring
-signatures and one-time keys to hide the destination and origin of transactions.
-Recently the technique of using a commitment scheme to hide the amount of a
-transaction has been discussed and implemented by Bitcoin Core Developer
-Gregory Maxwell. In this article, a new type of ring signature, A Multi-layered
-Linkable Spontaneous Anonymous Group signature is described which allows for
-hidden amounts, origins and destinations of transactions with reasonable
-efficiency and verifiable, trustless coin generation. Some extensions of the
-protocol are provided, such as Aggregate Schnorr Range Proofs, and Ring
-Multisignature. The author would like to note that early drafts of this were
-publicized in the Monero Community and on the bitcoin research irc channel.
-Blockchain hashed drafts are available in [14] showing that this work was started
-in Summer 2015, and completed in early October 2015. An eprint is also
-available at
+                                <p><strong>Özet:</strong> Bu makale etkili bir şekilde merkezi olmayan gizli kripto para birimi Monero’da işlem miktarlarının gizlenmesine dair bir yöntem öneriyor. Monero, bir iş kanıtı “madencilik” süreci aracılığıyla dağıtılan, Bitcoin benzeri bir kripto paradır.
+Orijinal Monero protokolü, alıcı ve işlem kökeni bilgilerini gizleyen halka imzaları ve tek-kullanımlık anahtarları kullanan CryptoNote’u baz alır.
+Bir işlemin miktarını gizlemek için bağlantı planı tekniğinin kullanılması, Bitcoin Çekirdek Geliştiricilerinden Gregory Maxwell tarafından tartışılmış ve devreye alınmıştır. Bu makalede, işlem miktar, alıcı ve gönderici bilgilerinin oldukça etkili, doğrulanabilir ve güven bazlı olmayan para üretimiyle yöntemiyle gizlenmesine olanak sağlayan yeni bir halka imza, yani, Çok-katmanlı Bağlanabilir Kendiliğinden Anonim Grup imzası gösterilmektedir. Protokolün, Birleştirilmiş Schnorr Aralık Kanıtları ve Halka Çokluİmzaları gibi bazı uzantıları da sağlanmıştır. Yazar, bu yazının ilk taslaklarının Monero Topluluk ve bitcoin araştırma IRC kanallarında yayınlandığına dair bir not düşmektedir. Bu yazının 2015 yazında başlayıp Ekim başı 2015’te tamamlandığına dair göstergelere blockchain hash bazlı taslaklar [14] üzerinde erişilebilir. Ek olarak yazının bir e-çıktısı burada mevcuttur
 http://eprint.iacr.org/2015/1098
 .<br>
                                     <br>
-                                    <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank" rel="noreferrer noopener">Read Paper</a></p>
+                                    <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank" rel="noreferrer noopener">Makaleyi Oku</a></p>
                               </div>
                             </div>
                           </div>
                     </div>
                 <!-- end left two-thirds block-->
-                
+
                 <!-- right one-third block-->
                 <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Cryptonote Whitepapers</h2>
+                                <h2>Cryptonote Beyaz Kağıtları</h2>
                             </div>
-                            
+
                         </div>
 <div markdown="1">
 
-[Cryptonote Whitepaper](https://cryptonote.org/whitepaper.pdf)
+[Cryptonote Beyaz Kağıdı](https://cryptonote.org/whitepaper.pdf)
 
-This is the original cryptonote paper written by the cryptonote team. Reading it will give an understanding about how the cryptonote algorithm works in general.
+CryptoNote ekibi tarafından yazılan orijinal CryptoNote makalesi. Okumanız CryptoNote algoritmasının genel olarak nasıl çalıştığına dair bir fikir verecektir.
 
-[Annotated Whitepaper](https://downloads.getmonero.org/whitepaper_annotated.pdf)
+[Dipnotlu Beyaz Kağıt](https://downloads.getmonero.org/whitepaper_annotated.pdf)
 
-The Monero Research Lab released an annotated version of the cryptonote whitepaper. This is sort of like an informal review of the claims that are made line-by-line of the whitepaper. It also explains some of the harder concepts in relatively easy to understand terms.
+Monero Araştırma Labı cryptonote beyaz kağıdının dipnotlu bir sürümünü yayınladı. Bu sürüm, beyaz kağıt tarafından ortaya atılan tezlerin satır satır ve resmi olmayan bir açıklaması olarak görülebilir. Ayrıca anlaşılması zor kavramlar anlaşılabilir terimlerle açıklanmaktadır.
 
-[Brandon Goodell's Whitepaper Review](https://downloads.getmonero.org/whitepaper_review.pdf)
+[Brandon Goodell'ın Beyaz Kağıt İncelemesi](https://downloads.getmonero.org/whitepaper_review.pdf)
 
-This paper is a formal review of the original cryptonote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented in the cryptonote paper. 
+Bu makale orijinal cryptonote makalesinin MRL araştırmacısı Brandon Goodell tarafından yapılmış olan resmi bir incelemedir. Cryptonote makalesinde ortaya sürülen tez ve matematiğe dair derin bir bakış atıyor.
 
 </div>
                     </div>
