@@ -119,7 +119,7 @@
                               {% for post in site.posts limit:2 %}
                               <div class="row start-xs">
                                                     <div class="col">
-                                                        <p><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></p>
+                                                        <p><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></p>
                                                     </div>
                                                 </div>
                               {% endfor %}
