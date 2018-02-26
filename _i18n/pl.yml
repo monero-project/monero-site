@@ -1,0 +1,97 @@
+langs:
+  en: English
+  es: Español
+  pl: Polski
+
+global:
+  date: '%Y/%m/%d'
+  monero: Monero
+  getting_started: Wprowadzenie
+  copyright: Prawa autorskie
+  monero_project: Projekt Monero
+  sitename: getmonero.org, Projekt Monero
+  wiki: Moneropedia
+  tags: Artykuły po tagu
+  wikimeta: w Moneropedii, otwartej encyklopedii wiedzy o Monero
+  tagsmeta: Wszystkie otagowane artykuły o Monero na blogu
+  titlemeta: w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna
+  terms: Warunki
+  privacy: Prywatność
+  copyright: Prawa autorskie
+  edit: Edytuj tę stronę
+  untranslated: Ta strona jeszcze nie została przetłumaczona. Jeśli chcesz pomóc w jej tłumaczeniu, przejdź do
+titles:
+  index: Start
+  whatismonero: Czym jest Monero (XMR)?
+  using: Używanie Monero
+  accepting: Akceptowanie Monero
+  contributing: Ulepszanie Monero
+  mining: Wydobywanie Monero
+  faq: FAQ
+  downloads: Do ściągnięcia
+  allposts: Wszystkie wpisy na blogu
+  team: Zespół Monero
+  hangouts: Hangouty
+  events: Wydarzenia
+  sponsorships: Sponsoring
+  merchants: Handlowcy i serwisy
+  about: O Monero
+  roadmap: Oś czasu
+  researchlab: Laboratorium Badawcze Monero
+  moneropedia: Moneropedia
+  userguides: Przewodniki dla użytkowników
+  developerguides: Przewodniki dla deweloperów
+  technicalspecs: Właściwości techniczne
+  themoneroproject: Projekt Monero
+  presskit: Materiały prasowe Monero
+  legal: Informacje prawne
+  ffs: Forumowy System Finansowania
+  ffs-cp: Ukończone propozycje
+  ffs-fr: Wymagane środki
+  ffs-ideas: Pomysły
+  ffs-ot: Zadania otwarte
+  ffs-wip: Prace w toku
+  blogbytag: Blog po tagu
+index:
+  page_title: "Monero - bezpieczne, prywatne, niewykrywalne"
+  what_is_1: Czym jest
+  what_is_2: " ?"
+  what_is_orange_block: "Monero jest bezpieczną, prywatną i niewykrywalną walutą otwartego źródła, która jest wolnodostępna dla wszystkich."
+  what_is_text_block_1: "Z Monero sam jesteś swoim bankiem i masz pełną kontrolę nad swoimi funduszami. Z Monero twoje konta i transakcje są całkowicie prywatne."
+  what_is_text_block_2: "Chcesz się dowiedzieć więcej? Poniżej znajdziesz przegląd najważniejszych charakterystyk Monero. Jeśli chcesz wypróbować Monero,"
+  what_is_text_block_3: "Wprowadzenie"
+  what_is_text_block_4: "ta strona będzie doskonałym punktem startowym."
+  news: Wiadomości
+  the_latest: Najnowsze
+  private: Prywatność
+  secure: Bezpieczeństwo
+  untraceable: Niewykrywalność
+  private_text: "Monero ukrywa kwoty oraz dane nadawcy i odbiorcy wszystkich transakcji. Oznacza to, że nikt poza tobą nie będzie wiedział, ile pieniędzy przesyłasz, a to zapewnia odgórną prywatność twoich zakupów i innych transferów."
+  untraceable_text: "Dzięki użyciu podpisów pierścieniowych, Monero pozwala na prywatne wysyłanie i otrzymywanie pieniędzy. Nawet jeśli twoje transakcje są możliwe do publicznego zweryfikowania w łańcuchu bloków, posiadają one cyfrowy podpis, który uściśla pewną grupę, ale uniemożliwia odkrycie, kto dokładnie dokonał podpisu. Określenie tego, które fundusze zostały przesłane, pozostaje niejasne i dlatego twoje transakcje są prywatne i nie mogą zostać przypisane do ciebie."
+  secure_text: "Monero korzysta z rozproszonej sieci umownej peer-to-peer i wszystkie transakcje są kryptograficznie podpisane. Twoje pieniądze są bezpiecznie przechowywane w łańcuchach bloków i mogą zostać przywrócone w każdej chwili, za pomocą klucza pamięciowego składającego się z 25 słów na każdym komputerze z oprogramowaniem Monero. Pliki portfela są zaszyfrowane na dysku i zablokowane hasłem, dzięki czemu są bezużyteczne, jeśli skradzione."
+  how_do_i_1: "Jak mogę"
+  how_do_i_2: " ?"
+  get_started: zacząć
+  get_started_1: "Najszybszą metodą, aby zacząć używać Monero, jest za pomocą menedżera konta, takiego jak "
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "Jeśli byś chciał uruchomić swój własny [pełny węzeł Monero](/getting-started/running), ściągnij klienta i kickstarter łańcucha bloków (aby przyspieszyć działanie lokalnego klienta), wchodząc w link do ściągnięcia po prawej stronie."
+  where_can_i: Gdzie mogę
+  download_1: ściągnąć
+  download_2: " ?"
+  different_os: "Posiadasz inny system operacyjny?"
+  all_downloads: Zobacz wszystkie dokumenty dostępne do ściągnięcia
+  c_download: Ściągnij
+  monero_for: Monero dla
+  latest_blockchain: Ostatni łańcuch bloków
+blog:
+  title_1: Wszystkie wpisy
+  title_2: Blog
+  title_3: Posty
+  tagged: Otagowane
+  author: Opublikowane przez
+  date: Opublikowane o
+  forum: Kliknij, aby dołączyć się do dyskusji na forum Monero
+tags:
+  all: Artykuły po tagu
+  notags: Nie ma wpisów z tym tagiem.
