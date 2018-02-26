@@ -1,37 +1,35 @@
-{% include untranslated.html %}
-## Introduction
+## Giriş
 
-This guide is two fold, ease of use for mining on Linux distributions and some extra security around mining as most of these miners have not had security auditing.
+Bu rehber iki bölümdür, Linux dağıtımlarda kolay kullanım ve madenciler için ekstra güvenlik (madencilerin çoğu güvenlik denetlemesinden geçmediği için).
 
-At the end of this guide you will be able to sleep a little easier knowing that if the miner gets exploited it will not migrate to your OS.
+Madencinizin kötüye kullanılması durumunda işletim sisteminize zarar gelmeyeceğini bildiğinizden, bu rehberi okuduktan sonra daha rahat uyuyabileceksiniz.
 
-### Why Docker
+### Neden Docker
 
-[Docker](https://www.docker.com/) is being used as it is the most well known and has the biggest chance to be already installed.
+[Docker](https://www.docker.com/) en bilinen ve hali hazırda yüklenmiş olma ihtimali olan bir container olduğundan tercih edilmektedir.
 
-The container I an using is [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/) as per the name it is built on the [Alpine Linux](https://www.alpinelinux.org/) image.
+Benim şu anda kullandığım container [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/). İsmini [Alpine Linux](https://www.alpinelinux.org/) imajından almaktadır.
 
-If you are interested in getting started with Docker, here are some really good starting references.
+Docker’a başlamak için daha fazla bilgiyi, alttaki birkaç iyi referans dökümanında bulabilirsiniz.
 * Arch Linux Wiki [Docker Page](https://wiki.archlinux.org/index.php/Docker)
 * Container Solutions [Security Cheat Sheet](http://container-solutions.com/content/uploads/2015/06/15.06.15_DockerCheatSheet_A2.pdf)
 * Digital Oceans [Dockerfile Howto](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images).
 
-For distribution specific installation please refer to the [Docker Docs](https://docs.docker.com/engine/installation/) website.
+Dağıtım bazlı kurulum için lütfen [Docker Docs](https://docs.docker.com/engine/installation/) web sayfasına bakınız.
 
-### Why XMRig
+### Neden XMRig
 
-[XMRig](https://github.com/xmrig/xmrig) is just a really solid miner to me. Nice output and statistics, no flashy web-ui's or dependencies. The XMRig container is only ~4MB what makes it extremely portable. 
+[XMRig](https://github.com/xmrig/xmrig) bana göre çok sağlam bir madenci yazılımı. İyi çıktı ve istatistikler, gösterişsiz bir web arayüzü var ve herhangi bir bağımlılığı yok. Boyutu da sadece ~4MB, ki bu onu oldukça taşınabilir hale getirmekte.
 
-#### Step 1: Mining with XMRig
+#### 1. Adım: XMRig ile Madencilik
 
-Run the following
+Alttaki komutları çalıştırın
 
 ```bash
 # docker run --restart unless-stopped --read-only -m 50M -c 512 bitnn/alpine-xmrig -o POOL01 -o POOL02 -u WALLET -p PASSWORD -k
 # docker run --restart unless-stopped --read-only -m 50M -c 512 bitnn/alpine-xmrig -o pool.supportxmr.com:7777 -u 45CJVagd6WwQAQfAkS91EHiTyfVaJn12uM4Su8iz6S2SHZ3QthmFM9BSPHVZY388ASWx8G9Wbz4BA24RQZUpGczb35fnnJz -p docker:secret -k
 ```
 
-#### Step 2: There is no Step 2
+#### 2. Adım: 2. Adım Yok
 
-You have already done everything you need to do. You are now mining in a docker container with XMRig `ctrl+c` to exit the miner or add `-d` just after `docker run` to background the miner.
-
+Yapmanız gereken her şeyi yaptınız. Artık docker container kullanarak XMRig ile madencilik yapıyorsunuz. Madenciden çıkmak için `ctrl+c` yapın veya `docker run` komutunun arkasına `-d` ekleyerek madenciyi arka planda çalıştırın.

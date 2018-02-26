@@ -1,31 +1,29 @@
-{% include untranslated.html %}
-Sometimes, your funds will become stuck - you will have some locked funds that never become unlocked. This is how you fix it.
+Bazen paranız sıkışıp kalabilir veya paranız bir daha açılamayacak şekilde kilitlenmiş olabilir. Bu sorunun çözümü burada.
 
-- Load your wallet in monero-wallet-cli.
+- Cüzdanınızı monero-wallet-cli ile açın.
 
-- Type
+- Komut satırına şunu
 
 > seed
 
-into the command prompt. Write down your 25 word seed, if you haven't already. This is the best way to make sure you don't loose access to your funds.
+girin. 25 kelimeden oluşan seed’inizi bir yere not alın. Paranıza erişimi kaybetmemenizin en kolay yolu budur.
 
-- Close monero-wallet-cli by typing
+- Şunu yazarak monero-wallet-cli'den çıkın
 
 > exit
 
-- Backup all of your wallet related files. These include:
+- Cüzdanla alakalı bütün dosyaları yedekleyin:
 
-> yourwalletname.bin
-> yourwalletname.bin.keys
-> yourwalletname.bin.address.txt
+> cuzdanadiniz.bin
+> cuzdanadiniz.bin.keys
+> cuzdanadiniz.bin.address.txt
 
-This can be done by copying the files to a new folder.
+Dosyaları basitçe diğer bir klasöre kopyalayabilirsiniz.
 
-Sometimes, when creating your wallet, you might have named it something without the .bin part. In that case, the wallet file will be called yourwalletname without the .bin at the end.
+Cüzdanınızı oluştururken bazen .bin kısmı olmadan isimlendirmiş olabilirsiniz. Bu durumda cüzdan dosyası sonunda .bin uzantısı olmadan cuzdanadiniz olarak görünecektir.
 
-- Delete yourwallet.bin
+- cuzdanadiniz.bin dosyasını siliniz.
 
-- Load monero-wallet-cli, type in the name of the wallet you just deleted
+- monero-wallet-cli çalıştırıp, henüz silmiş olduğunuz cüzdanın adını giriniz
 
-- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked.
-
+- Parolanızı giriniz. Cüzdanınız şimdi yeniden yüklenecek ve kilitli olan paranızın kilidi muhtemelen açılmış olacaktır.

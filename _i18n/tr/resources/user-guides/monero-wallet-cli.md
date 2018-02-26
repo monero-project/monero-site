@@ -1,146 +1,113 @@
-{% include untranslated.html %}
 # monero-wallet-cli
 
-`monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,
-and manages an account. While a bitcoin wallet manages both an account and the blockchain,
-Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
+`monero-wallet-cli` Monero ağacıyla birlikte gelen cüzdan yazılımıdır. Bir konsol programıdır, ve bir hesabı yönetir. Bitcoin cüzdanları, hesap ve blok zincirini aynı anda yönetirken, Monero bunları ikiye ayırır: `monerod` blok zincirini, `monero-wallet-cli` hesabı yönetir.
 
-This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of Monero and have already created an account according to the other guides.
+Bu rehber size `monero-wallet-cli` arayüzünü kullanarak çeşitli operasyonların nasıl yapıldığını gösterecektir. Rehber Monero’nun son sürümünü kullandığınızı ve diğer rehberleri göz önüne alarak bir hesap oluşturduğunuzu varsayar.
 
 
-## Checking your balance
+## Bakiyenizi kontrol etme
 
-Since the blockchain handling and the wallet are separate programs, many uses of `monero-wallet-cli`
-need to work with the daemon. This includes looking for incoming transactions to your address.
-Once you are running both `monero-wallet-cli` and `monerod`, enter `balance`.
+Blok zinciri ve cüzdanı ayrı programlar olduğundan, `monero-wallet-cli` çoğu zaman daemon’la çalışmak durumundadır. Buna adresinize gelen işlemlere bakmak da dahildir. `monero-wallet-cli` ve `monerod` birlikte çalışıyorken `balance` yazın.
 
-Example:
+Örnek:
 
-This will pull blocks from the daemon the wallet did not yet see, and update your balance
-to match. This process will normally be done in the background every minute or so. To see the
-balance without refreshing:
+Bu, cüzdanın henüz taramadığı blokları daemon’dan çekecek ve bakiyenizi eşleşmesi için güncelleyecektir. Bu işlem normalde arka planda dakikada bir gerçekleşecektir. Bakiyenizi yenilemeden görmek için:
 
     balance
     Balance: 64.526198850000, unlocked balance: 44.526198850000, including unlocked dust: 0.006198850000
-    
-In this example, `Balance` is your total balance. The `unlocked balance` is the amount currently available to spend. Newly received transactions require 10 confirmations on the blockchain before being unlocked. `unlocked dust` refers to very small amounts of unspent outputs that may have accumulated in your account.
 
-## Sending monero
+Bu örnekte, `Balance` toplam bakiyenizdir. `unlocked balance` an itibariyle harcamaya müsait bakiyenizdir. Yeni alınan işlemler, kilitleri açılmadan önce blok zinciri üzerinde 10 onaydan geçer. `unlocked dust` hesabınızda toplanmış olan ve harcanmamış, çok küçük miktarlara tekabül eder.
 
-You will need the standard address you want to send to (a long string starting with '4'), and
-possibly a payment ID, if the receiving party requires one. In that latter case, that party
-may instead give you an integrated address, which is both of these packed into a single address.
+## Monero gönderme
 
-### Sending to a standard address:
+Bunun için göndermek istediğiniz kişinin standard adresine ('4' ile başlayan uzun bir dizi), ve, alıcı kişi istiyorsa, muhtemelen bir ödeme ID’sine ihtiyacınız olacaktır. Ödeme ID’si istenmesi durumunda, alıcı kişi size entegre bir adres verebilir, ki bu adres, ikisinin teke indirgenmiş halidir.
 
-    transfer ADDRESS AMOUNT PAYMENTID
+### Standard bir adrese gönderme:
 
-Replace `ADDRESS` with the address you want to send to, `AMOUNT` with how many monero you want to send,
-and `PAYMENTID` with the payment ID you were given. Payment ID's are optional. If the receiving party doesn't need one, just
-omit it.
+    transfer ADRES MIKTAR ODEMEID
 
-### Sending to an integrated address:
+`ADRES`’i göndermek istediğiniz adresle, `MIKTAR`’ı göndermek istediğiniz Monero miktarıyla, ve `ODEMEID`’yi size verilen ödeme ID’siyle değiştirin. Ödeme ID’leri isteğe bağlıdır. Alıcı istememişse, boş bırakabilirsiniz.
 
-    transfer ADDRESS AMOUNT
+### Entegre bir adrese gönderme:
 
-The payment ID is implicit in the integrated address in that case.
+    transfer ADRES MIKTAR
 
-### Specify the number of outputs for a transaction:
+Bu durumda ödeme ID’si entegre adresin içindedir.
 
-    transfer MIXIN ADDRESS AMOUNT
+### Bir işlem için çıktı sayısı belirtme
 
-Replace `MIXIN` with the number of outputs you wish to use. **If not specified, the default is 4.** It's a good idea to use the default, but you can increase the number if you want to include more outputs. The higher the number, the larger the transaction, and higher fees are needed.
+    transfer ÇIKTISAYISI ADRES MIKTAR
+
+`ÇIKTISAYISI`’nı kullanmak istediğiniz sayıyla değiştirin. **Özellikle belirtilmemişse, varsayılan değer 4’tür.** Varsayılan değeri kullanmak iyi bir fikirdir, ancak isterseniz bu sayıyı arttırabilirsiniz. Daha yüksek çıktı sayısı, daha büyük işlem, haliyle daha çok işlem masrafı demektir.
 
 
-## Receiving monero
+## Monero alma
 
-If you have your own Monero address, you just need to give your standard address to someone.
+Kendi Monero adresiniz varsa, birine bu standard adresi vermeniz yeterlidir.
 
-You can find out your address with:
+Adresinizi şu komutla görebilirsiniz:
 
     address
 
-Since Monero is anonymous, you won't see the origin address the funds you receive came from. If you
-want to know, for instance to credit a particular customer, you'll have to tell the sender to use
-a payment ID, which is an arbitrary optional tag which gets attached to a transaction. To make life
-easier, you can generate an address that already includes a random payment ID:
+Monero anonim olduğundan, size gelen paranın kaynağını göremeyeceksiniz. Mesela ödemenin belli bir müşteriden geldiğini görmek isterseniz, göndericiye bir payment ID kullanmasını söylemeniz gerekecektir, bu ID işleme eklenen herhangi bir etikettir. İşleri kolaylaştırmak için, bir rastgele bir ödeme ID’si içeren entegre bir adres üretebilirsiniz:
 
     integrated_address
 
-This will generate a random payment ID, and give you the address that includes your own account
-and that payment ID. If you want to select a particular payment ID, you can do that too:
+Bu komut rastgele bir payment ID üretecek, ve size kendi hesabınız ve üretilen ödeme ID ile oluşturulmuş entegre bir adres verecektir. Eğer belli bir ödeme ID seçmek isterseniz, o da mümkün:
 
     integrated_address 12346780abcdef00
 
-Payments made to an integrated address generated from your account will go to your account,
-with that payment id attached, so you can tell payments apart.
+Sizin hesabınız ve ödeme ID’nizle üretilen adrese yapılan ödemeler sizin hesabınıza gelecek, ilgili ödeme ID aracılığıyla ödemeyi ayırt edebileceksiniz.
 
 
-## Proving to a third party you paid someone
+## Üçüncü bir şahsa ödeme yaptığınızı kanıtlamak
 
-If you pay a merchant, and the merchant claims to not have received the funds, you may need
-to prove to a third party you did send the funds - or even to the merchant, if it is a honest
-mistake. Monero is private, so you can't just point to your transaction in the blockchain,
-as you can't tell who sent it, and who received it. However, by supplying the per-transaction
-private key to a party, that party can tell whether that transaction sent monero to that
-particular address. Note that storing these per-transaction keys is disabled by default, and
-you will have to enable it before sending, if you think you may need it:
+Bir satıcıya ödeme yapmanıza rağmen satıcı paranızı almadığını iddia ederse, üçüncü bir şahsa, ve hatta satıcının kendisine, ödemeyi yaptığınızı kanıtlamanız gerekebilir. Monero gizlidir, haliyle blok zinciri üstünde işleminizi gösteremezsiniz çünkü kimin ne aldığı veya gönderdiği belli değildir. Ancak bir kişiye, işleme-özel gizli anahtarınızı sağlarsanız o kişi belli bir adrese Monero gönderip gönderilmediğini belirleyebilir. Bu işleme-özel anahtarlar varsayılan olarak etkin değildir, haliyle buna ihtiyacınız olacağını düşünüyorsanız gönderim yapmadan önce etkinleştirmeniz gerekir:
 
     set store-tx-info 1
 
-You can retrieve the tx key from an earlier transaction:
+Tx anahtarını önceki bir işlemden alabilirsiniz
 
     get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
 
-Pass in the transaction ID you want the key for. Remember that a payment might have been
-split in more than one transaction, so you may need several keys. You can then send that key,
-or these keys, to whoever you want to provide proof of your transaction, along with the
-transaction id and the address you sent to. Note that this third party, if knowing your
-own address, will be able to see how much change was returned to you as well.
+Anahtarını bulmak istediğiniz işlemin ID’sini girin. Unutmayın, bir ödeme birden fazla işleme bölünmüş olabilir, haliyle birçok anahtara ihtiyacınız olabilir. Bu anahtar(lar)ı, adres ve işlem ID ile birlikte, işlemi kanıtlamak istediğiniz kişiye gönderebilirsiniz. Ayrıca bu üçüncü şahıs, sizin adresinizi bilmesi durumunda, size ne kadar para üstü verildiğini de görebilecektir.
 
-If you are the third party (that is, someone wants to prove to you that they sent monero
-to an address), then you can check this way:
+Eğer üçüncü şahıs sizseniz (yani birisi size Monero gönderdiğini kanıtlamaya çalışıyor demektir), o halde kontrolü şu şekilde gerçekleştirebilirsiniz:
 
-    check_tx_key TXID TXKEY ADDRESS
+    check_tx_key ISLEMID ISLEMANAHTARI ADRES
 
-Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination
-address which were supplied to you, respectively. monero-wallet-cli will check that transaction
-and let you know how much monero this transaction paid to the given address.
+`ISLEMID`, `ISLEMANAHTARI` ve `ADRES` bilgilerini size sağlanan işlem ID’si, işleme-özel anahtar ve adresle değiştirin. monero-wallet-cli işlemi kontrol edip size belirtilen adrese ne kadar ödeme yapıldığını gösterecektir.
 
 
-## Getting a chance to confirm/cancel payments
+## Ödemeleri onaylama/iptal etmeden önce onay isteme
 
-If you want to get a last chance confirmation when sending a payment:
+Bir ödeme gönderirken son bir onay vermek istiyorsanız:
 
     set always-confirm-transfers 1
 
 
-## How to find a payment to you
+## Size yapılan bir ödeme nasıl bulunur
 
-If you received a payment using a particular payment ID, you can look it up:
+Belli bir ödeme ID’siyle ödeme almışsanız, şu şekilde kontrol edebilirsiniz:
 
-    payments PAYMENTID
+    payments ODEMEID
 
-You can give more than one payment ID too.
+Birden fazla ödeme ID’si sağlayabilirsiniz.
 
-More generally, you can review incoming and outgoing payments:
+Daha genel olarak, gelen ve giden ödemelere şu şekilde bakabilirsiniz:
 
     show_transfers
 
-You can give an optional height to list only recent transactions, and request
-only incoming or outgoing transactions. For example,
+Sadece güncel işlemleri listelemek isterseniz isteğe bağlı bir blok boyutu belirtebilir ve sadece gelen/giden işlemleri talep edebilirsiniz. Örneğin,
 
     show_transfers in 650000
 
-will only incoming transfers after block 650000. You can also give a height
-range.
+size sadece 650000. bloktan sonra gelen transferleri gösterecektir. Ayrıca bir blok aralığı da belirtebilirsiniz.
 
-If you want to mine, you can do so from the wallet:
+Madenciliği başlatmak isterseniz, işlemi cüzdandan yapabilirsiniz:
 
     start_mining 2
 
-This will start mining on the daemon usin two threads. Note that this is solo mining,
-and may take a while before you find a block. To stop mining:
+Bu komut madenciliği daemon üstünde 2 paralel kullanarak başlatacaktır. Bunun bir solo madencilik olduğunu unutmayın, haliyle bir blok bulmanız epey vakit alabilir. Madenciliği durdurmak için:
 
     stop_mining
-

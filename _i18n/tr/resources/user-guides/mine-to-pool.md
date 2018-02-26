@@ -1,48 +1,33 @@
-{% include untranslated.html %}
-# Selecting a pool
+# Bir havuz seçme
 
-There are many pools to choose from, a list is available at
-[moneropools.com](https://moneropools.com). Mining on a larger pool could mean
-more frequent payouts, but mining on a smaller pool helps to keep the network
-decentralized.
+Seçebileceğiniz birçok havuz var, kapsamlı bir liste [moneropools.com](https://moneropools.com) adresinde mevcut. Daha büyük bir havuzda çıkarma yapmanız daha sık ödeme almak anlamına gelse de küçük havuzlarda çıkarmak ağın merkezsiz olmasına katkıda bulunur.
 
-# Selecting a CPU miner
+# Bir CPU madencisi seçme
 
-Just like pools, there are a lot of miners to choose from. The one that you
-should pick depends on the hardware you want to mine on. This guide will only
-use a CPU miner, and will be using
-[xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). Alternatives include
-[wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) and
-[sgminer-gm](https://github.com/genesismining/sgminer-gm). However, their
-configuration is slightly different and will not be covered in this guide.
+Havuzda olduğu gibi, seçebileceğiniz birçok maden yazılımı mevcut. Seçmeniz gereken yazılım kullanacağınız donanıma bağlıdır. Bu rehberde yalnızca bir CPU madencisi olan  [xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu) açıklanmaktadır. Alternatif olarak  [wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) ve
+[sgminer-gm](https://github.com/genesismining/sgminer-gm) kullanılabilir. Ancak bunların ayarları biraz farklıdır ve bu rehberde açıklanmayacaktır.
 
-## For Windows Systems
+## Windows İşletim Sistemleri İçin
 
-If you are using a Windows system, the developer of xmr-stak-cpu provides
-binaries to download on the
-[GitHub release page](https://github.com/fireice-uk/xmr-stak-cpu/releases).
+Windows kullanıyorsanız, xmr-stak-cpu’nun geliştiricisi dosyaları şu adreste sağlamaktadır: [GitHub yayın sayfası](https://github.com/fireice-uk/xmr-stak-cpu/releases).
 
-Download `xmr-stak-cpu-win64.zip` and extract it somewhere you'll be able to
-find it again.
+`xmr-stak-cpu-win64.zip` dosyasını indirin ve sonra tekrar bulabileceğiniz bir dizinde açın.
 
-## For Other Operating Systems
+## Diğer İşletim Sistemleri İçin
 
-If you're not using Windows, you will have to compile xmr-stak-cpu for yourself,
-luckily this isn't as hard as it sounds. Before you can compile the miner, you
-will need to install some of its prerequisites.
+Windows kullanmıyorsanız xmr-stak-cpu’yu kendiniz derlemeniz gerekecek, şansınıza bu görüldüğü kadar zor değil. Yazılımı derlemeden evvel bazı öngerekliliklerini yüklemeniz gerekecek.
 
-For Debian-based distros:
+Debian-bazlı dağıtımlar için:
 
     sudo apt-get install libmicrohttpd-dev libssl-dev cmake build-essential
 
-For Red Hat based distros:
+Red Hat bazlı dağıtımlar için:
 
 	sudo yum install openssl-devel cmake gcc-c++ libmicrohttpd-devel
 
-<!-- TODO: Add dependencies for other operating systems? -->
+<!-- TODO: Diğer işletim sistemleri için de gereklilikleri ekle? -->
 
-Following this, you just need to use cmake to generate the build files, run
-make and copy the config file:
+Sonrasında cmake kullanarak işlem dosyalarını oluşturmanız, make komutunu koşturup config dosyasını kopyalamanız gerek:
 
     mkdir build-$(gcc -dumpmachine)
 	cd $_
@@ -51,64 +36,56 @@ make and copy the config file:
 	cp ../config.txt bin/
 	cd bin
 
-Don't celebrate just yet, as the miner needs to be configured. Running the miner
-now should give you a block of text to copy and paste:
+Hemen sevinmeyin çünkü önce madencinin ayarlanması gerek. Yazılım, çalıştırmanız durumunda size kopyalayıp yapıştırmanız için bir metin bloğu verecek:
 
 ![image1](png/mine_to_pool/1.png)
 
-Open `config.txt` and *replace* the two `"cpu_threads_conf"` lines with the text
-you just copied. It should look something like this afterwards:
+`config.txt` dosyasını açın, iki `"cpu_threads_conf"` satırını kopyalamış olduğunuz metinle *değiştirin*. Görünüm şuna benzemeli::
 
 ![image2](png/mine_to_pool/2.png)
 
-Scroll down in the file until you see the lines containing `"pool_address"`.
-*Replace* the contents of the second set of quotes with the address and port of
-the pool you chose earlier. You can find this information on the pool's website.
+Dosyada `"pool_address"` satırlarını görünceye dek altlara ilerleyin. Burada çift tırnak arasındaki yerleri daha önceden seçmiş olduğunuz havuzun adres ve portuyla *değiştirin*. Bu bilgiyi havuzun web sayfasında bulabilirsiniz.
 
-Put your wallet address between the quotes on the wallet address. You may leave
-the password blank unless the pool specifies otherwise.
+Cüzdan adresi kısmına çift tırnak arasında kendi cüzdan adresinizi koyun. Havuz özellikle belirtmediyse parola kısmını boş bırakabilirsiniz.
 
-After this, your config should look something like this:
+Sonrasında ayarlarınız şuna benzemeli:
 
 ![image3](png/mine_to_pool/3.png)
 
-# Running the miner
+# Madenciyi çalıştırma
 
-**Save the config** file and run the miner!
+**Ayarlarınızı kaydedin** ve madenciyi çalıştırın!
 
 ![image4](png/mine_to_pool/4.png)
 
-Some pools allow you to monitor your hashrate by pasting your address into their
-website. You can also monitor your hashrate by pressing the `h` key.
+Bazı havuzlar adresinizle hash oranınızı kontrol etmenize olanak sağlayabilir. Ayrıca hash oranınızı `h` tuşuna basarak da kontrol edebilirsiniz.
 
-# Tuning the miner
+# Madenciyi Ayarlamak
 
-You might see nasty messages like this:
+Bazen şuna benzer kötü mesajlar görebilirsiniz:
 
 	[2017-07-09 12:04:02] : MEMORY ALLOC FAILED: mmap failed
 
-This means that you can get around a 20% hashrate boost by enabling large pages.
+Bu, büyük sayfaları etkinleştirerek %20 oranında bir hash oranı artışı sağlayabilirsiniz demektir.
 
-## Large pages on Linux
+## Linux'ta Büyük Sayfalar
 
-Firstly stop the miner (if it's running), run the following commands to enable
-large pages and then start the miner as root:
+Öncelikle madenciyi (çalışıyorsa) durdurun, büyük sayfaları etkinleştirmek ve madenciyi başlatmak için alttaki komutları çalıştırın:
 
 	sudo sysctl -w vm.nr_hugepages=128
 	sudo ./xmr-stak-cpu
 
-## Large pages on Windows
+## Windows'ta Büyük Sayfalar
 
-Taken from `config.txt`:
+`config.txt`'ten alınmıştır':
 
->By default we will try to allocate large pages. This means you need to "Run As Administrator" on Windows
-You need to edit your system's group policies to enable locking large pages. Here are the steps from MSDN
-1. On the Start menu, click Run. In the Open box, type gpedit.msc.
-2. On the Local Group Policy Editor console, expand Computer Configuration, and then expand Windows Settings.
-3. Expand Security Settings, and then expand Local Policies.
-4. Select the User Rights Assignment folder.
-5. The policies will be displayed in the details pane.
-6. In the pane, double-click Lock pages in memory.
-7. In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group.
-8. In the Select Users, Service Accounts, or Groups dialog box, add an account that you will run the miner on
-9. Reboot for change to take effect.
+>Varsayılan olarak büyük sayfalar tahsis edeceğiz. Öncelikle Windows’ta Yönetici olarak Çalışmanız gerek. Sisteminizin grup özelliklerini düzenleyerek büyük sayfalar kilidini aktif hale getirmeniz lazım. Gerekli adımlar aşağıdaki gibidir:
+1. Başlangıç menüsünde Çalıştır’a tıklayın. Aç kutusuna gpedit.msc yazın.
+2. Yerel Grup İlkesi Düzenle konsolunda, önce Bilgisayar Ayarları’nı, sonrasında Windows Ayarları’nı genişletin.
+3. Güvenlik Ayarları’nı, sonra Yerel İlkeleri genişletin.
+4. Kullanıcı Hakları Ataması dizinini seçin.
+5. İlkeler detaylar penceresinde gösterilecektir.
+6. Pencerede Sayfaları Bellekte Kilitle’ye çift tıklayın.
+7. Yerel Güvenlik Ayarları’nda - Sayfaları Bellekte Kilitle diyalog kutusunda, Kullanıcı veya Grup Ekle’ye tıklayın.
+8. Kullanıcı, Servis Hesabı veya Grup Seç penceresinde madenciyi çalıştıracağınız bir hesap ekleyin
+9. Değişikliklerin etkinleşmesi için bilgisayarınızı tekrar başlatın.

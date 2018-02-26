@@ -1,57 +1,56 @@
-{% include untranslated.html %}
-# Importing the Blockchain to Monero GUI wallet (Windows)
+# Blok Zincirinin Monero GUI Cüzdana Aktarılması (Windows)
 
-### Step 1
+### 1. Adım
 
-Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the Blockchain from another source.
+Mevcut bootstrap dosyasını https://downloads.getmonero.org/blockchain.raw adresinden indirin; blok zincirini başka bir kaynaktan aktarıyorsanız bu adımı geçebilirsiniz.
 
-### Step 2
+### 2. Adım
 
-Find the path of your Monero wallet (the folder where you extracted your wallet). For example mine is:
+Monero cüzdanınızın dizinini bulun (cüzdanı açtığınız dizin). Mesela benimki:
 
 `D:\monero-gui-0.10.3.1`
 
-Your path may be different depending on where you decided to download your wallet and what version of the Monero wallet you have.
+Cüzdanınızı nereye indirdiğinize ve Monero cüzdan sürümünüze bağlı olarak dizininiz farklılık gösterebilir.
 
-### Step 3
+### 3. Adım
 
-Find the path of your downloaded Blockchain for example mine was: 
+İndirdiğiniz blok zincirinin dizinini bulun, mesela benimki:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Yours might be different depending on where you downloaded the Blockchain to.
+Blok zincirini indirdiğiniz yere göre sizinki farklı olabilir.
 
-### Step 4
+### 4. Adım
 
-Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD`
+Bir Komut Satırı penceresi açın. Bunun için Windows + R tuşladıktan sonra gelen ekrana `CMD` yazabilirsiniz
 
-### Step 5
+### 5. Adım
 
-Now you need to navigate using the CMD window to the path of your Monero wallet. You can do this by typing:
+Şimdi CMD penceresini kullanarak Monero cüzdanının olduğu dizine gitmeniz gerek. Bunun için şu komutu girin:
 
-`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE` 
+`cd C:\SIZIN\MONERO\CUZDAN\DOSYASI\ADRESINIZ\BURADA`
 
-It should look something like:
+Komutunuz şuna benzemeli:
 
 `cd D:\monero-gui-0.10.3.1`
 
-If your Monero wallet is on another drive you can use `DriveLetter:` for example if your Monero wallet was on your D drive then before using the cd command you would do `D:`
+Monero cüzdanınız farklı bir sürücüdeyse `Sürücü:` komutunu kullanabilirsiniz, mesela D sürücündeyse, cd komutundan önce `D:` yapmanız gerek
 
-### Step 6
+### 6. Adım
 
-Now type in your command prompt window:
+Şimdi komut satırınıza şu komutu yazın:
 
-`monero-blockchain-import --verify 1 --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
+`monero-blockchain-import --verify 1 --input-file C:\SIZIN\BLOKZINCIRI\DOSYANIZIN\DIZINI\BURADA`
 
-For example I would type :
+Mesela benim için şöyle :
 
 `monero-blockchain-import --verify 1 --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-If you downloaded the Blockchain from a trusted, reputable source you may set `verify 0` this will reduce the amount of time to sync the Blockchain.  
+Blok zincirini güvenilir, bilinen bir kaynaktan indirmişseniz `verify 0` olarak girebilirsiniz, böylece blok ziniciri senkronize süresi azalmış olur.  
 
-### Step 7
+### 7. Adım
 
-After the the Blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted. 
+Blok zinciri senkronizasyonu tamamlandıktan sonra Monero cüzdanınızı normal bir şekilde açabilirsiniz. İndirmiş olduğunuz blockchain.raw dosyasını silebilirsiniz.
 
 
-Author: Kee Jefferys
+Yazar: Kee Jefferys

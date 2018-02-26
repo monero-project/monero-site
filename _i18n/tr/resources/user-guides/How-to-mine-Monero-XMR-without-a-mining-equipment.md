@@ -1,49 +1,29 @@
-{% include untranslated.html %}
-## How to mine Monero (XMR) without a mining equipment?
+## Maden ekipmanı olmadan nasıl Monero (XMR) madenciliği yaparım?
 
-If you don’t have a profitable mining equipment, nor time or
-money to invest into building it, you can still mine Monero with NiceHash.
+Kar getiren bir ekipmanınız veya buna ayıracak bir vaktiniz yoksa, NiceHash kullanarak da Monero madenciliği yapabilirsiniz.
 
-NiceHash is a hashing power marketplace. Sellers of hashing
-power, i.e. miners, provide the hashing power for buyers (those who want to buy
-a service of mining a certain coin). Hence, NiceHash can provide you a massive
-hashing power in short amount of time. You won’t have to wait for years to see
-if you will make a profit or not and you can control which coin, at which pool,
-and for how long you want to mine.
+NiceHash bir hash gücü marketidir. Hash gücü satan kişiler, bu servisle, ilgilendikleri paranın madenciliğini yapmak isteyen alıcılara hash gücü sağlarlar. Böylece NiceHash size kısa zamanda devasa bir işlem gücü sağlayabilir. Kar edip edemeyeceğinizi görmeniz için yıllarca beklemeniz gerekmez, hangi havuzda hangi parayı ne sürede maden ettiğinizi siz kontrol edersiniz.
 
-### **Step 1:** Create new account at NiceHash
+### **1. Adım:** Bir NiceHash hesabı oluşturun
 
-Visit [registration
-page](https://www.nicehash.com/?p=register) and register with your e-mail address.
+Üye olma sayfasını [ziyaret edip](https://www.nicehash.com/?p=register) e-posta adresinizle kayıt olun.
 
-### **Step 2:** Deposit some Bitcoins to your account
+### **2. Adım:** Hesabınıza bir miktar Bitcoin yükleyin
 
-You will mine Monero, but you can buy hashing power at
-NiceHash only with Bitcoins. You can always withdraw unspent Bitcoins from your
-account back to any Bitcoin wallet.
+Monero madenciliği yapabilmeniz için almanız gereken hash gücü için sadece Bitcoin kullanabilirsiniz. Harcanmamış Bitcoin’lerinizi istediğiniz zaman herhangi bir Bitcoin cüzdanına geri çekebilirsiniz.
 
-Visit your [wallet
-page](https://www.nicehash.com/?p=wallet) and make a deposit. Note that the minimum price for placing an order
-equals 0.01 BTC.
+Cüzdan sayfanızı [ziyaret edin](https://www.nicehash.com/?p=wallet) ve bir yükleme yapın. Lütfen, bir emir girebilmeniz için asgari miktarın 0.01 BTC olduğuna dikkat edin.
 
-### **Step 3:** Find a suitable pool for mining and add it to your pool list
+### **3. Adım:** Maden için uygun bir havuz bulup listenize ekleyin
 
-Selection of the pool plays a big role in the final amount
-of mined cryptocurrency. Make sure the pool you have selected can handle
-massive hashing rate and loads of shares, especially from a single connection.
-You can find a list of Monero pools [here](https://bitcointalk.org/index.php?topic=583449.0).
+Çıkardığınız kripto para miktarında kullandığınız havuz büyük bir rol oynar. Kullandığınız havuzun büyük hash oranları ve paylaşıma sahip olduğuna dikkat edin.
+Monero havuzlarının bir listesini [burada bulabilirsiniz](https://bitcointalk.org/index.php?topic=583449.0).
 
-Note that you will probably have to register an account at
-selected pool as well. The pool will provide you with all the information you need.
-You can save your favorite pools at [this page](https://www.nicehash.com/?p=managepools).
+Seçmiş olduğunuz havuzda bir hesap oluşturmanız gerekeceğini unutmayın. Havuz size gerekli tüm bilgileri sağlayacaktır.
+Favori havuzlarınızı bu sayfada [kaydedebilirsiniz](https://www.nicehash.com/?p=managepools).
 
-### **Step 4:** Create new order and start mining
+### **4. Adım:** Yeni bir emir oluşturup madenciliğe başlayın
 
-When creating a [new order](https://www.nicehash.com/?p=orders&new), make sure you
-select CryptoNight algorithm for mining Monero. If you want to first learn more
-about placing an order with NiceHash, we recommend you to read this [frequently asked question](https://www.nicehash.com/?p=faq#faqb0).
+Yeni bir [emir](https://www.nicehash.com/?p=orders&new) oluşturduğunuzda, Monero çıkarmak için CryptoNight algoritmasını seçtiğinize emin olun. NiceHash ile emir girmek hakkında daha fazla bilgi almak isterseniz, şurayı okuyabilirsiniz: [sıkça sorulan sorular](https://www.nicehash.com/?p=faq#faqb0).
 
-If you want to bid on
-hashing power select Standard (bidding) order type and if you want a fixed
-order that cannot be outbid, select Fixed order type. The status of marketplace
-and approximate prices of mining can be checked at [live marketplace](https://www.nicehash.com/index.jsp?p=orders). 
+Hash gücü için teklif girmek isterseniz Standard’ı seçin, eğer teklifinizin ezilmemesini istiyorsanız, Fixed emir tipini seçebilirsiniz. Marketin durumu ve madencilik ücretleri hakkında canlı bilgi için şuraya bakabilirsiniz: [Canlı Market](https://www.nicehash.com/index.jsp?p=orders). 

@@ -1,65 +1,64 @@
-{% include untranslated.html %}
-## How to obtain Monero
+## Nasıl Monero alınır
 
-This is a guide to obtain your own Monero as of 20150919. This is perhaps the easiest way to purchase and hold Monero.
+Bu 20150919 itibariyle Monero’yu nasıl alabileceğinize dair rehberdir. Monero satın almanız için belki de en kolay yol budur.
 
-####Step 1: Buy Bitcoin
+####1. Adım: Bitcoin Satın Alın
 
-There are many ways to buy Bitcoin. Perhaps the easiest way is through circle.com. Once you have purchased some Bitcoin, you are ready to buy some Monero! Buying Bitcoin is straightforward. Please goto circle.com and just follow the instructions there.
+Bitcoin alabilmenizin birçok yolu var. Belki de en kolayı circle.com aracılığıyladır. Biraz Bitcoin aldıktan sonra, Monero'ya hazırsınız! Bitcoin satın almak oldukça kolay. Circle.com adresine gidip oradaki talimatları takip etmeniz yeterli.
 
-####Step 2: Set up a mymonero.com account
+####2. Adım: Bir mymonero.com hesabı oluşturun
 
-MyMonero.com is an online wallet for Monero, maintained by Monero Core Developer Ricardo Spagni (fluffpony). It is the easiest wallet to use. Simply go to MyMonero.com and click on the "Create an Account" button. 
+MyMonero.com, Monero Çekirdek Geliştirici Ricardo Spagni (fluffypony) tarafından idare edilen çevrimiçi bir Monero cüzdandır. Kullanması en kolay cüzdan budur. Kısaca MyMonero.com’a gidip “Bir Hesap Oluştur” butonuna tıklamanız yeterli.
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
 
-After clicking the button, you will see your private key. This key is what gives you access to your funds. Never share this key with anyone!
+Butona tıkladıktan sonra, özel anahtarınızı göreceksiniz. Bu anahtar paranıza erişim olanağı sağlar. Anahtarınızı asla biriyle paylaşmayın!
 
-### WRITE DOWN THIS KEY IMMEDIATELY!
+### BU ANAHTARI HEMEN BİR YERE NOT ALIN!
 
 ![image2](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/02.png)
 
-Type in your private key in the box below, and click the button.
+Özel anahtarınızı alttaki kutuya yazıp butona tıklayın.
 
-On the next page, you will see your address.
+Bir sonraki sayfada adresinizi göreceksiniz.
 
 ![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/03.png)
 
-Copy your address to the clipboard by highlighting the whole thing and hitting ctrl+c (or edit menu, copy), or clicking the little icon next to your address. Save your address somewhere. This is how others will send Monero to you, and what you will use to deposit Monero into your account!
+Tüm alanı seçtikten sonra adresi ctrl+c aracılığıyla kopyalayın (ya da düzenle menüsü, kopyala), veya adresinizin yanındaki küçük imlece tıklayın. Adresinizi bir yere not alın. Diğer kullanıcılar sizin bu adresinize Monero gönderecek, ve hesabınızdaki parayı bu adreste tutacaksınız!
 
-#### Step 3: Buy Monero and transfer the Monero to your new address
+#### 3. Adım: Monero alıp yeni oluşturduğunuz adrese yollayın
 
-Go to www.shapeshift.io . On the righthand side, of the screen, click icon under "Receive" to select Monero.
+Www.shapeshift.io’yu ziyaret edin. Sağda “Çekme” butonuna tıklayıp Monero’yu seçin.
 
 ![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/05.png)
 ![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/06.png)
 
-Paste your address into the field under the Monero logo. Select the "agree to terms" button, then hit "Start"
+Adresinizi Monero logosunun altındaki alana yapıştırın. “Şartları kabul ediyorum”u seçtikten sonra “Başla”ya basın
 
 ![image7](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/07.png)
 
-In the new screen that pops up, copy the Deposit Address into your clipboard (select and hit ctrl+c or edit-copy)
+Karşınıza çıkan ekrana Çekim adresini kopyalayın (seç, ctrl+c veya düzenle-kopyala)
 
 ![image8](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/08.png)
 
-Go back to your circle.com page, hit the "transfer" button, and paste the Bitcoin address into the field
-Enter the amount of Bitcoin you would like to spend.
+Circle.com sayfasına geri dönün ve “transfer” butonuna tıklayın, ve Bitcoin adresini alana yapıştırın.
+Harcamak istediğiniz Bitcoin miktarını girin.
 
 ![image4](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/04.png)
 ![image9](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/09.png)
 
-You will get a text message verification code. Enter code and hit send.
+Bir kısa mesaj onay kodu alacaksınız. Kodu girip göndere basın.
 
 ![image10](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/10.png)
 
-You will see the shapeshift change to "awaiting exchange"
+Shapeshift’in borsa bekleniyor”a dönüştüğünü göreceksiniz.
 
 ![image11](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/11.png)
 
-Then it will change to COMPLETE!
+Sonrasında TAMAMLANDI! görünecektir.
 
 ![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/12.png)
 
-After a while you will see it in your Monero account
+Bir süre sonra transferi Monero hesabınızda göreceksiniz.
 
 ![image13](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/13.png)
