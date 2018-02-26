@@ -1,52 +1,42 @@
-{% include untranslated.html %}
-When you send money to a party who then disputes the payment was made, you need to be able to prove the payment was made.
+Para gönderdiğiniz şahıs eğer ödemeye itiraz ediyorsa, ödemenin yapıldığını kanıtlayabilmeniz gerekmektedir.
 
-With Bitcoin, this is typically done by looking up the transaction ID, where the origin and destination addresses are
-shown, along with the amount transacted.
+Bitcoin’le bu genelde ilgili işlem ID’si ile yapılır, ve böylece alan ve gönderen adres ile miktar görüntülenebilir.
 
-Monero, however, is private: that information is not available publicly on the blockchain. The steps are therefore a bit
-more involved.
+Ancak Monero gizlidir: bu bilgi blok zinciri üzerinde görünmez. Haliyle ilgili adımlar biraz daha karışıktır.
 
-To prove to Charlie that she made a payment to Bob, Alice must supply Charlie three pieces of information:
+Alice, Bob’a ödeme yaptığını kanıtlayabilmek için Charlie’ye üç adet bilgi sunmalıdır:
 
-- the transaction ID, as is done in Bitcoin
-- Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote currencies
+- işlem ID’si, tıpkı Bitcoin’deki gibi
+- Bob’un adresi, tıpkı Bitcoin’deki gibi
+- işlem anahtarı, ki bu sadece Monero ve diğer CryptoNote bazlı paralara hastır
 
-When Alice made the transaction, a one time key was automatically generated just for this transaction. Alice can
-query it thus in monero-wallet-cli (new name for the old simplewallet):
+Alice işlemi gerçekleştirdiğinde bu işleme özel tek seferlik bir anahtar otomatik olarak üretilir. Alice bu anahtarı monero-wallet-cli ile görüntüleyebilir (simplewallet’ın yeni adı):
 
-> get_tx_key TXID
+> get_tx_key ISLEMID
 
-Alice would plug in her actual transaction ID instead of this TXID placeholder. All being well, the one time transaction key
-will be displayed.
+Alice’in ISLEMID gördüğü yere kendi işlem ID’sini girmesi gerekmektedir. Her şey yolunda giderse, tek seferlik işlem anahtarı görüntülenecektir.
 
-Note that this will only work if monero-wallet-cli is set to save transaction keys. To double check:
+Ayrıca monero-wallet-cli’in işlem anahtarlarını kaydettiğinden emin olunuz. Kontrol etmek için:
 
 > set
 
-If it's set to 0, set it to 1:
+Eğer gelen değer 0’sa, 1’e çekiniz:
 
 > set store-tx-info 1
 
-Alice can now send Charlie the transaction key along with transaction ID and Bob's address.
+Alice artık Charlie’ye işlem anahtarını, işlem ID’sini ve Bob’un adresini gönderebilir.
 
-Note: if several transactions were made, this needs repeating for each such transaction.
+Not: eğer birden çok işlem yapıldıysa, bu süreç her işlem için tekrarlanmalıdır.
 
 
 ---
 
-Charlie now received those three pieces of information, and wants to check Alice is telling the truth: on an up to date
-blockchain, Charlie types in monero-wallet-cli:
+Charlie artık bu üç bilgiyi aldığına göre Alice’in doğruyu söyleyip söylemediğini kontrol edebilir: güncel bir blok zinciri üstünde, Charlie monero-wallet-cli’a girip şunu yazar:
 
-> check_tx_key TXID TXKEY ADDRESS
+> check_tx_key ISLEMID ISLEMANAHTARI ADRES
 
-The information supplied by Alice plugs neatly instead of the placeholders. monero-wallet-cli will use the transaction
-key to decode the transaction, and display how much this particular transaction sent to this address. Obviously,
-Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
+Alice’in göndermiş olduğu bilgiler bu komuta güzelce yerleştirilir. monero-wallet-cli işlem anahtarını kullanarak işlemi açar ve bu işlemin ilgili adrese ne kadar göndermiş olduğunu gösterir. Tabii ki Charlie, Bob’un adresinin ilgili adres olup olmadığını kontrol etmek isteyecektir - tıpkı Bitcoin’de olduğu gibi.
 
-Alternatively, the transaction key can be obtained in the GUI in the History tab. Click on details for each individual transaction to get the key.
+Ek olarak işlem anahtarı GUI’nin Geçmiş sekmesinden de elde edilebilir. Herhangi bir işlemin anahtarını görmek için detaylara tıklayabilirsiniz.
 
-Note: if several transactions were made, this needs repeating for each such transaction.
-
-
+Not: eğer birden çok işlem yapıldıysa, bu süreç her işlem için tekrarlanmalıdır.

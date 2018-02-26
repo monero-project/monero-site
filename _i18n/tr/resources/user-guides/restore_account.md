@@ -1,23 +1,21 @@
-{% include untranslated.html %}
-## Operating Systems:  Windows, Linux, Mac
+## İşletim Sistemleri:  Windows, Linux, Mac
 
-### Account Software:  monero-wallet-cli
+### Hesap Yazılımı:  monero-wallet-cli
 
-- Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @wallet
- 
-- Open a command prompt and navigate to the drive and directory that contains monero-wallet-cli
+- Eski Monero cüzdanınızı (@wallet) oluştururken kaydettiğiniz 25 kelimelik @mnemonic-seed i bulun.
 
-- At the command prompt type:  `monero-wallet-cli --restore-deterministic-wallet`
+- Bir komut satırı açıp monero-wallet-cli’yi içeren ilgili sürücüye ve dizine gidin
 
-- Once you press enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do 
+- Komut satırına şunu yazın: `monero-wallet-cli --restore-deterministic-wallet`
 
-- Press enter again and you will be prompted for a password.  Give your wallet a new and long password
+- Girişe bastığınızda sizden bir cüzdan adı girmeniz istenecek. Herhangi bir isim verin
 
-- Press enter again you will be prompted to repeat the password 
+- Sonrasında sizden bir parola istenecek. Cüzdanınıza yeni ve uzun bir parola belirleyin
 
-- Press enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier
+- Girişe basın ve parolanızı tekrar girin
 
--  You will then be prompted with "Restore from specific blockchain height (optional, default 0):" Default will start the restore process from the beginning of the Monero blockchain. If you don't know the specific blockchain height, just hit enter. (Specifying a specific blockchain height will start the restore process from that specific height. This will save a bit of time in scanning, if you know what starting blockchain height your initial funds were transacted for this specific account.)
+- Girişe basın ve daha önce bulmuş olduğunuz 25 kelimelik electrum stilindeki mnemonic seed’inizi girin
 
-After you have entered the 25 word mnemonic seed and have chosen your specific blockchain height, monero-wallet-cli will generate the same public address and view key as your old wallet and begin the refresh process automatically. (Please be patient as the refresh process may take a while.)
+-  Karşınıza “Belirli bir blok zincirinden itibaren geri yükle (isteğe bağlı, varsayılan 0):” gelecektir. Varsayılan şekilde geri yükleme süreci Monero’nun ilk bloğundan başlar. Eğer cüzdanınızın hangi blok zincirinde olduğunu bilmiyorsanız girişe basın. (Özel bir blok zinciri değeri belirtmeniz süreci o bloktan başlatır. Hesabınızı oluştururken hangi blokta oluştuğunu biliyorsanız, bu seçenek size geri yükleme esnasında biraz zaman kazandırabilir)
 
+25 kelimelik mnemonic seed’inizi girdikten ve özel blok zinciri büyüklüğünü belirttikten sonra monero-wallet-cli eski cüzdanınızla aynı olan genel adres ve görüntüleme anahtarını geri yükleyecek ve senkronizasyon sürecini otomatik olarak başlatacaktır. (Senkronizasyon epey vakit alabilir, lütfen sabırlı olun.)

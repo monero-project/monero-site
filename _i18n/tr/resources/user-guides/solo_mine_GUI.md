@@ -1,16 +1,15 @@
-{% include untranslated.html %}
-It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href="{{site.baseurl}}/downloads/">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays "Connected" in the lower left corner.
+Resmi GUI ile solo madencilik yapmak çok kolay. Daha önce yapmadıysanız, hemen <a href="{{site.baseurl}}/downloads/">Monero indirmeler sayfasına</a> gidip işletim sisteminiz için uygun olan resmi GUI’yi indirin. Kurulumu çalıştırın ve Monero senkronizasyonunu tamamlarken sabırlı olun. Bittiğinde GUI’nin sol alt köşesinde “Bağlı” bildirimini göreceksiniz.
 
 <img src="/resources/user-guides/png/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 
-Click on the "Advanced" tab. You should see that several other options appear. Now click on the "Mining" sub-tab.
+“Gelişmiş” sekmesine tıklayın. Birçok seçenek olduğunu göreceksiniz. Sonra “Madencilik” alt-sekmesine tıklayın.
 
 <img src="/resources/user-guides/png/solo_mine_GUI/02.PNG" style="width: 600px;"/>
 
-You should now have an option to start mining. You can optionally change the number of threads to mine with. For optimal efficiency, you should mine with your CPU's cache divided by 2. You will need to look up your CPU's specs on the manufacturer's website. If you are unsure, leave the number of threads at 1. Click the "Start mining" button.
+Artık madencilik yapmak için sizin de bir yolunuz var. Madencilik yapacağınız paralel sayısını değiştirebilirsiniz. En uygun verimlilik için, işlemcinizin önbellek miktarınızın yarısıyla madencilik yapmanız önerilir. İşlemcinizin teknik özelliklerine üretici sayfasından bakmanız gerekebilir. Emin değilseniz değeri 1 olarak bırakın. “Madenciliğe başla” butonuna tıklayın.
 
 <img src="/resources/user-guides/png/solo_mine_GUI/03.PNG" style="width: 600px;"/>
 
-You are now mining with the network, as you can see on the bottom of the image. In this example, the computer is contributing 23 H/s to the Monero network. Mining helps keep the network secure, and you may get lucky and receive a reward for protecting the network.
+Sayfanın altında göreceğiniz üzere artık ağ ile madencilik yapıyorsunuz. Bu örnekte, bilgisayar Monero ağına 23 H/sn ile destek olmakta. Madencilik ağın güvenli tutulmasına yardımcı olur, ayrıca şansınız yaver giderse ağı korumanız karşılığında ödüllendirilebilirsiniz.
 
-To stop mining, simply click the "Stop mining" button.
+Madenciliği durdurmak için “Madenciliği durdur” butonuna tıklayın.

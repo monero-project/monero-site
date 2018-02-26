@@ -1,37 +1,36 @@
-{% include untranslated.html %}
-## Operating Systems:  Various versions of Linux and Windows 7, 8
- 
-### Wallet Software:  Simplewallet
- 
-#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
- 
-#### Resource for Monero Binaries:  [Monero Binaries](https://getmonero.org/downloads/)
- 
-- Take any computer you have lying around, even your normal workstation. You may find it easier to use an older computer that has no wifi or bluetooth if you're particularly paranoid
- 
-- Create a Linux or Windows bootable disk, and make sure you have the Monero binaries on the same disk or on a second disk (for Linux make sure you have also downloaded copies of the dependencies you will need, libboost1.55 and miniupnpc for instance)
- 
-- Disconnect the network and/or Internet cables from your computer, physically remove the wifi card or switch the wifi/bluetooth off on a laptop if possible
- 
-- Boot into your bootable OS, install the dependencies if necessary
- 
-- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)
- 
-- Don't run the Monero daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account
- 
-- When prompted for a name, give it any name, it doesn't really matter
- 
-- When prompted for a password, type in like 50 - 100 random characters. Don't worry that you don't know the password, just make it LONG
- 
-- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed  
-**WARNING**:  If you forget to write down this information your funds may be lost forever
- 
-- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key
- 
-- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours
- 
-The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box).
- 
-Credit:  Riccardo Spagni
- 
-Related:  [Offline Account Generator](http://moneroaddress.org/)
+## İşletim Sistemleri:  Çeşitli Linux Sürümleri ve Windows 7, 8
+
+### Cüzdan Yazılımı:  Simplewallet
+
+#### Başlat Diski Oluşturmak için Kaynak:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+
+#### Monero Dosyaları için Kaynak:  [Monero Dosyaları](https://getmonero.org/downloads/)
+
+- Boşta duran herhangi bir bilgisayarı, hatta iş istasyonunuzu bile değerlendirebilirsiniz. Paranoyaksanız wifi veya bluetooth bağlantısı olmayan eski bir bilgisayarı da kullanabilirsiniz
+
+- Bir Linux veya Windows başlat diski oluşturun, ve Monero dosyalarının bu disk, veya ikinci bir diskte, olduğundan emin olun (Linux için gereksinimleri indirmeniz gerek, mesela libboost1.55 ve miniupnpc)
+
+- Ağ ve/veya internet kablolarını bilgisayarınızdan çıkarın, wifi kartını fiziksel olarak sökün veya laptop kullanıyorsanız wifi/bluetooth’un kapatıldığından emin olun
+
+- İşletim sisteminizi başlatın, lazımsa gereksinimleri yükleyin
+
+- Monero dosyalarını bir RAM diskine koplayayın (Linux için /dev/shm, Windows ISO’ları için muhtemelen Z: veya benzeri)
+
+- Monero daemon’u çalıştırmayın. Onun yerine komut satırını kullanarak  monero-wallet-cli ile yeni bir Monero hesabı (@account) yaratın
+
+- İstendiğinde herhangi bir isim verin, ne olduğu çok da önemli değil
+
+- Parola istendiğinde, 50 - 100 adet rastgele karakter girin. Parolayı bilmiyorum diye telaşlanmayın, sadece uzun olduğundan emin olun
+
+- **KRİTİK ADIM**: Bir kağıda 25 kelimelik @mnemonic-seed inizi not alın
+**UYARI**:  Bu bilgiyi yazmayı unutursanız paranız sonsuza dek kaybolabilir
+
+- (Telefon, kağıt, farklı bir bilgisayar, nereye isterseniz)  Adres ve görüntüleme anahtarınızı not alın
+
+- Bilgisayarınızı kapatın, pili varsa sökün, ve birkaç saat kadar fiziksel olarak kapalı bırakın
+
+Oluşturmuş olduğunuz hesap RAM’de yaratılmıştı, ve bu dijital dosyalara artık erişilemez. Kötü niyetli kişiler bir şekilde verilerinize ulaşsa dahil ellerinde bu dosyaları açmak için uzun şifreniz olmayacaktır. Ödeme almak istiyorsanız, genel adresiniz, ve ihtiyacınız olursa, görüntüleme anahtarınız var. Hesabınız erişmek isterseniz kullanabileceğiniz 25 kelimelik @mnemonic-seed mevcut, bunu istediğiniz sayıda çoğaltabilir ve hatta banka kutularında bile saklayabilirsiniz.
+
+Yazan:  Riccardo Spagni
+
+İlgili:  [Çevrimdışı Hesap Yaratıcısı](http://moneroaddress.org/)

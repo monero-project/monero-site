@@ -1,13 +1,12 @@
-{% include untranslated.html %}
-A view-only wallet can only see which incoming transactions belong to you. It can not spend any of your Monero, in fact it can't even see outgoing transactions from this wallet. This makes view-only wallets particularly interesting for
+Salt-görüntülenir bir cüzdan sadece hangi gelen işlemlerin size ait olduğunu görebilir. Monero’nuzu harcayamaz, hatta cüzdandan giden işlemlere bile bakamaz. Bu sebeple salt-görüntülenir cüzdanın şu gibi faydaları vardır:
 
-* Developers writing libraries to validate payments
-* End users validating incoming transactions to cold wallets
+* Geliştiriciler ödemeleri doğrulamak için kütüphane yazabilir
+* Son kullanıcılar soğuk cüzdanlara gelen işlemleri doğrulayabilir
 
-### Creating A View-Only Wallet
+### Bir Salt-Görüntülenir Cüzdan Oluşturma
 
-You can create a view-only wallet from any existing wallet.
+Herhangi bir cüzdanı kullanarak salt-görüntülenir bir cüzdan oluşturabilirsiniz.
 
-Open an existing wallet or create a new one using `monero-wallet-cli`. In the wallet, type `address` and `viewkey` to display the wallet's address and secret viewkey. Type `exit` to close the wallet.
+Mevcut bir cüzdanı açın veya `monero-wallet-cli` kullanarak yeni bir tane oluşturun. Cüzdanda `address` ve `viewkey` yazarak cüzdanın adres ve özel görüntüleme-anahtarını gösterin. `exit` yazarak cüzdandan çıkın.
 
-Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and secret view key. Next, enter and confirm a password for your new wallet and you're done.
+Sonrasında `monero-wallet-cli --generate-from-view-key cuzdan-adi` yazarak salt-görüntülenir cüzdanınızı oluşturun. Son değişken yeni cüzdan adınız olacaktır. Sizden `Standard Address` ve `View key` girmeniz istenecektir. Orijinal cüzdan adresinizi ve özel görüntüleme anahtarınızı yapıştırın. Sonrasında yeni cüzdanınız için bir parola belirleyin. İşleminiz tamamdır.

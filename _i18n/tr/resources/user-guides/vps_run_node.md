@@ -1,48 +1,45 @@
-{% include untranslated.html %}
 # monerod
 
-`monerod` is the daemon software that ships with the Monero tree. It is a console program, and manages the blockchain. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
+`monerod` Monero ağacıyla birlikte gelen cüzdan yazılımıdır. Bir konsol programıdır, ve bir hesabı yönetir. Bitcoin cüzdanları, hesap ve blok zincirini aynı anda yönetirken, Monero bunları ikiye ayırır: `monerod` blok zincirini, `monero-wallet-cli` hesabı yönetir.
 
-This guide assumes you have already set up your VPS account and are using SSH to tunnel into the server console.
+Bu rehber bir VPS hesabı oluşturduğunuzu ve SSH kullanarak sunucu konsola tünelle bağlandığınızı varsayar.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
-### Make sure that port 18080 is open
-`monerod` uses this port to communicate with other nodes on the Monero network.
+### 18080 port’unun açık olduğundan emin olun
+Monero ağındaki diğer düğümlerle iletişim kurmak için `monerod` bu portu kullanır.
 
-Example if using `ufw`: `sudo ufw allow 18080`
-Example if using `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
+`ufw` kullanıyorsanız örnek : `sudo ufw allow 18080`
+`iptables` kullanıyorsanız örnek : `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
-### Download the current Monero Core binaries
+### Mevcut Monero Çekirdek dosyalarını indirin
 
     wget https://downloads.getmonero.org/linux64
 
-### Make a directory and extract the files.
+### Bir dizin oluşturup dosyaları dışarı çıkarın.
 
     mkdir monero
     tar -xjvf linux64 -C monero
 
-### Launch the daemon
+### Daemon'u çalıştırın
 
     cd monero
     ./monerod
 
-### Options:
+### Seçenekler:
 
-Show list of all options and settings:
+Tüm seçenek ve ayarları listele:
 
     ./monerod --help
 
-Launch the daemon as a background process:
+Daemon’u bir arka plan process’i olarak çalıştır:
 
     ./monerod --detach
 
-Monitor the output of `monerod` if running as daemon:
+Daemon olarak çalıştırılmışsa `monerod`’nin çıktısına bak:
 
     tail -f ~/.bitmonero/bitmonero.log
-    
-Keep the VPS secure with autoupdate:
+
+VPS’i otomatik güncelleyerek güvenli tutun:
 
 https://help.ubuntu.com/community/AutomaticSecurityUpdates
-
-
