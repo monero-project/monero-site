@@ -23,13 +23,13 @@ global:
 titles:
   index: Ana Sayfa
   whatismonero: Monero (XMR) nedir?
-  using: Monero Kullanımı
-  accepting: Monero Kabul Etme
-  contributing: Monero'ya Katkıda Bulunun
-  mining: Monero Madenciliği
+  using: Kullanım
+  accepting: Alma
+  contributing: Bağış
+  mining: Madencilik
   faq: SSS
   downloads: İndirmeler
-  allposts: Tüm Blog Yazıları
+  allposts: Tüm Yazılar
   team: Monero Takımı
   hangouts: Buluşma Yerleri
   events: Etkinlikler
@@ -37,13 +37,13 @@ titles:
   merchants: Satıcılar & Servisler
   about: Monero Hakkında
   roadmap: Yol Haritası
-  researchlab: Monero Araştırma Labı
+  researchlab: Araştırma Labı
   moneropedia: Moneropedia
   userguides: Kullanıcı Rehberleri
   developerguides: Geliştirici Rehberleri
   technicalspecs: Teknik Özellikler
   themoneroproject: Monero Projesi
-  presskit: Monero Basın Aracı
+  presskit: Monero Basın Kiti
   legal: Yasal
   ffs: Forum Finansman Sistemi
   ffs-cp: Tamamlanmış Teklifler

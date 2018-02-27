@@ -16,7 +16,7 @@
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Gizli Dijital Para</h2>
                             <p id="main-text">Monero gizli, güvenli, ve takip edilemeyen bir kripto paradır. Açık-kaynaklıdır ve herkes erişebilir. Monero’yla kendi bankanızsınız. Paranızı sadece siz kontrol edebilir ve sadece siz sorumlu olursunuz. Hesap ve işlemleriniz meraklı gözlerden saklıdır.</p>
-                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Get Started</a></p>
+                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Haydi Başlayın</a></p>
                         </div>
                     </div>
                 </div>
