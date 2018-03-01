@@ -29,3 +29,6 @@ Another requirement that the Core Team has internally however, is that each memb
 But every change brings new opportunity, and the Core Team is delighted to welcome Jeremie "binaryFate" Dubois-Lacoste on board as the newest member. binaryFate holds a PhD in computer science, with academic expertise in combinatorial systems and optimization algorithms. After working for a couple of years in academic research, he made the decision to become a full-time entrepreneur in the cryptocurrency space. He has been actively investing, trading, and creating businesses in that field since 2012. He has been involved with Monero since May 2014, and has been an active advocate of privacy and fungibility-protecting technologies ever since, both online and in real life
 
 All members of the Core Team, past and present want to thank all volunteers and contributors for their consistent and tireless work. We look forward to what 2018 has in store for us as a project, and as a community.
+
+![Monero Core Team Cartoon](/img/monero-core.jpg)
+Image credit: [helloluis](https://cryptopop.net/)
