@@ -111,6 +111,8 @@
   merchants:
     - name: Atesti Data Timestamping
       url: http://atesti.mooo.com:8081
+    - name: Atomox - Converter
+      url: http://atomox.net/1/XMR/USD
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
     - name: MoneroBase Price Charts and Tools
@@ -164,6 +166,8 @@
       url: http://www.forked.net/
     - name: Go Forward Software
       url: https://www.goforwardsoftware.com
+    - name: Gomojomarketing - Web app developers
+      url: https://www.gomojomarketing.com/
     - name: Guitar Music Theory course w/ 30% XMR discount
       url: http://www.guitartheoryrevolution.info/blog/guitar-theory-revolution-store/
     - name: IdeaSoft - Full-cycle Software Development
@@ -231,6 +235,8 @@
       url: https://allforcrypto.com
     - name: Cellphone and laptop repair online store in Sweden
       url: http://www.LagaiPhone.se
+    - name: Check-coin - Online store
+      url: https://check-coin.com/
     - name: CoinBought - Buy anything from Amazon
       url: https://coinbought.com/
     - name: Congrevape - e-cigarette products
@@ -271,6 +277,8 @@
       url: https://www.kidsweet.com/
     - name: Loja do Cabelo - Hair extensions (pt)
       url: https://lojadocabelo.com/
+    - name: Max5dollars - Online shop
+      url: https://www.max5dollars.com/
     - name: MetaDope - Patch & lapel pin manufacturing services
       url: https://metado.pe/
     - name: Mushroom cultures, mushroom growing supplies, seeds
