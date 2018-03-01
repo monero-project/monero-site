@@ -166,13 +166,13 @@ Write your user guide. Be succinct but thorough. Remember, people will be using 
 
 The title should be at the top of the User Guide using a single `#` for an H1 tag. Titles will not be automatically put on these pages as with other pages. There should be NO front matter on this file.
 
-### 5.5 Copy User Guide file into all languages
+### 5.6 Copy User Guide file into all languages
 Copy your file and navigate to each language file in the /i18n folder. In each language folder (INCLUDING template) go to the resources/user-guides folder and paste your user guide (don't worry, you don't have to translate it) there. This is very important, and the site will not build if the file with the same name is not in each language folder.
 
 As you paste into each folder, open up the file and paste the following snippet at the top of the file (before your title):
 `{% include untranslated.html %}`. This does not need to be done in the original language that the User Guide was written in.
 
-### 5.6 Add Guide to the 'User Guide' landing page of EACH LANGUAGE
+### 5.7 Add Guide to the 'User Guide' landing page of EACH LANGUAGE
 In the /_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it. 
 
 DO NOT CHANGE ANYTHING IN THIS DOCUMENT BESIDES WHAT YOU ARE INSTRUCTED TO.
@@ -185,10 +185,10 @@ In the event that you think your User Guide should be in a new Category that doe
 
 Repeat the above process for each language version of this index page INCLUDING THE template.
 
-### 5.7 Build/Test
+### 5.8 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically and test that your link appears in the correct category and that it leads to your User Guide when clicked. Test your User Guide in the browser and contact rehrar if there are any bugs.
 
-### 5.8 Submit Pull Request
+### 5.9 Submit Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
 ## 6.0 How to make a Moneropedia Entry
