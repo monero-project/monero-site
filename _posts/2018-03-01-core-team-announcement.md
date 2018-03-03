@@ -15,7 +15,6 @@ The responsibilities of the Core Team are as follows (in no particular order):
 - Manage the codebase of the Monero Project, which includes merging code on Github, keeping backups, and ensuring the safety, security, and free access of the code from any party.
 - Steward the general donation fund, and spending the Monero there on anything they see fit to further the Monero Project.
 - Act as trusted signers and distributors of reference clients for the Monero coin, and other related technologies.
-- Set a direction and vision for the Monero Project
     
 In the event that the community deems the Core Team unworthy or lax in their duties, they are free to fork the project away from the current Core Team, as happened with thankful_for_today.
 
