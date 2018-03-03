@@ -34,6 +34,7 @@
 [How to prove payment]({{site.baseurl}}/resources/user-guides/prove-payment.html)
 [Restoring wallet from keys]({{site.baseurl}}/resources/user-guides/restore_from_keys.html)
 [How to connect to a remote node within GUI wallet]({{site.baseurl}}/resources/user-guides/remote_node_gui.html)
+[CLI wallet/daemon isolation with Qubes + Whonix]({{site.baseurl}}/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.html)
 
 </div>
             </div>
