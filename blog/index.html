@@ -1,6 +1,6 @@
 ---
 layout: full-text
-title: All Blog Posts
+title: titles.allposts
 ---
 
 {% for post in paginator.posts %}
@@ -9,7 +9,7 @@ title: All Blog Posts
     {{ post.summary }}
     <small>{% t blog.tagged %}:
     {% for tag in post.tags %}
-    [<a href="/blog/tags/{{ tag }}.html">{{ tag }}]</a>
+    <a href="/blog/tags/{{ tag }}.html">[{{ tag }}]</a>
     {% endfor %}
     </small>
   </p>

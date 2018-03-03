@@ -18,6 +18,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-multiple-languages-plugin (1.5.1)
+      jekyll (>= 2.0, < 4.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
@@ -50,6 +52,7 @@ PLATFORMS
 DEPENDENCIES
   builder
   jekyll
+  jekyll-multiple-languages-plugin
   jekyll-paginate
   rubysl-rexml
 

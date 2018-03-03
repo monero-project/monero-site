@@ -1,60 +1,40 @@
 <footer class="container-fluid">
             <div class="container">
                 <div class="row around-xs footer-wrapper">
-                   <div class="col-sm-3 col-xs-6">
-                        <h3>Resources</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="/resources/about/" class="white">About Monero</a></li>
-                            <li><a href="/resources/moneropedia/" class="white">Moneropedia</a></li>
-                            <li><a href="/resources/developer-guides/" class="white">Developer Guides</a></li>
-                            <li><a href="/resources/user-guides/" class="white">User Guides</a></li>
-                            <li><a href="https://getmonero.org/feed.xml" class="white">RSS Feed</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <h3>IRC Channels</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="irc://chat.freenode.net/#monero" class="white">#monero (General)</a></li>
-                            <li><a href="irc://chat.freenode.net/#monero-dev" class="white">#monero-dev (Development)</a></li>
-                            <li><a href="irc://chat.freenode.net/#monero-markets" class="white">#monero-markets (Markets)</a></li>
-                            <li><a href="irc://chat.freenode.net/#monero-pools" class="white">#monero-pools (Mining)</a></li>
-                            <li><a href="irc://chat.freenode.net/#monero-community" class="white">#monero-community (Community)</a></li>
-                            <li><a href="irc://chat.freenode.net/#monero-translations" class="white">#monero-translations (Localization)</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <h3>Community</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="https://reddit.com/r/monero" class="white">Reddit</a></li>
-                            <li><a href="https://monero.stackexchange.com" class="white">Stack Exchange</a></li>
-                            <li><a href="https://bitcointalk.org/index.php?topic=583449.0" class="white">BitcoinTalk Thread</a></li>
-                            <li><a href="https://mattermost.getmonero.org" class="white">MatterMost Chat</a></li>
-                            <li><a href="https://telegram.me/bitmonero" class="white">Telegram Chat</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <h3>The Monero Project</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="https://openalias.org" class="white">Open Alias</a></li>
-                            <li><a href="https://getkovri.org" class="white">Kovri</a></li>
-                            <li><a href="/resources/research-lab/" class="white">Monero Research Lab</a></li>
-                            <li><a href="/press-kit/" class="white">Monero Press Kit</a></li>
-                        </ul>
-                    </div>
-                </div>
+                  {% for item in site.data.lang[site.lang].footer-1 %} 
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>{{item.title}}</h3>
+                         <ul class="list-unstyled">
+                            {% for entry in item.subfolderitems %}
+                             {% if entry.url contains 'https://' %}
+                              <li><a class="white" href="{{ entry.url }}">{{ entry.name }}</a></li>
+                              {%elsif entry.url contains 'irc'%}
+                              <li><a class="white" href="{{ entry.url }}">{{ entry.name }}</a></li>
+                              {%else%}
+                                <li><a class="white" href="{{site.baseurl}}/{{ entry.url }}">{{ entry.name }}</a></li>
+                              {%endif%}
+                            {% endfor %}
+                         </ul>
+                     </div>
+                 {% endfor %}
                 <div class="row center-xs">
                     <div class="social-icons">
                     </div>
                     <div class="footer-links">
                         <ul class="list-unstyled list-inline">
-                            <li><a href="/legal/" class="white footer-link">Legal</a></li>
-                            <li><a href="https://github.com/monero-project" class="white footer-link">Source Code</a></li>
-                            <li><a href="/resources/technical-specs/" class="white footer-link">Technical Specs</a></li>
+                           {% for item in site.data.lang[site.lang].footer-2 %}
+                            {% if item.url contains 'https://' %}
+                             <li><a href="{{item.url}}" class="white footer-link">{{item.name}}</a></li>
+                            {%else%}
+                             <li><a href="{{site.baseurl}}/{{item.url}}" class="white footer-link">{{item.name}}</a></li>
+                           {%endif%}
+                           {% endfor %}
                         </ul>
                     </div>
                 </div>
+                </div>
             </div>
-        </footer>
+</footer>
 
 
     <!-- JS -->

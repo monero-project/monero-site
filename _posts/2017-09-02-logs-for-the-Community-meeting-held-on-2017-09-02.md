@@ -2,7 +2,7 @@
 layout: post  
 title: Logs for the Community Meeting Held on 2017-09-02  
 summary: Community highlights, Forum Funding System updates and discussion of new proposals, translations, Monero Meetup kit, and miscellaneous  
-tags: [community, crypto]  
+tags: [community]  
 author: dEBRUYNE / fluffypony  
 ---  
     

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: user-guide
 title: "Design and Development Goals"
 title-pre-kick: "Design and Development "
 title-kick: "Goals"
