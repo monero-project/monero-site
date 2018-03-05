@@ -718,6 +718,7 @@ Broadcast a raw transaction to the network.
 Inputs:
 
 * *tx_as_hex* - string; Full transaction information as hexidecimal string.
+* *do_not_relay* - boolean; Stop relaying transaction to other nodes (default is `false` now; in versions 0.11.1 it was `true`).
 
 Outputs:
 
@@ -738,7 +739,7 @@ Example (No return information included here.):
 
 
 ```
-$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3...", "do_not_relay":false}' -H 'Content-Type: application/json'
 ```
 
 
