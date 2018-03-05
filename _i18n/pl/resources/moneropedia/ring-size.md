@@ -1,11 +1,12 @@
 ---
 layout: moneropedia
-entry: "Ring Size"
-terms: ["ring-size"]
-summary: "total number of possible signers in a ring signature"
+entry: "Rozmiar pierścienia"
+terms: ["rozmiar-pierścienia", "rozmiarowi-pierścienia", "rozmiarze-pierścienia", "rozmiarem-pierścienia"]
+summary: "Liczba wszystkich możliwych osób podpisujących za pomocą podpisu pierścieniowego."
 ---
 
-### The Basics
-Ring size refers to the total number of possible signers in a @ring-signature. If a ring size of 4 is selected for a given @transaction, this means that there are 3 foreign outputs in addition to your “real” output. A higher ring size number will typically provide more privacy than a lower number. However, reusing an odd, recognizable ring size number for transactions could possibly make transactions stand out.
+### Podstawy
 
-`Ring size = foreign outputs + 1 (your output)`
+Rozmiar pierścienia oznacza liczbę wszystkich możliwych osób podpisujących za pomocą @podpisu-pierścieniowego. Jeśli rozmiar pierścienia danej @transakcji wynosi 4, oznacza to, że poza twoim, istnieją 3 obce wyjścia. Wyższy numer rozmiaru pierścienia przeważnie zapewnia więcej prywatności niż niższy, jednak ponowne użycie nieparzystego, rozpoznawalnego rozmiaru pierścienia może spowodować, że transakcje będą się wyróżniać.
+
+`Rozmiar pierścienia = obce wyjścia + 1 (twoje wyjście)`

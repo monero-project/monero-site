@@ -1,10 +1,10 @@
 ---
 layout: moneropedia
-entry: "Scalability"
-terms: ["scalability"]
-summary: "Growth potential of Monero, resources required, and methods of increasing efficiency"
+entry: "Skalowalność"
+terms: ["skalowalność", "skalowalności", "skalnowalnością"]
+summary: "Potencjał wzrostu Monero oraz metoda zwiększania efektywności."
 ---
 
-### The Basics
+### Podstawy
 
-Monero has no hardcoded maximum block size, which means that unlike Bitcoin it does not have a 1 MB block size limit preventing scaling. However, a block reward penalty mechanism is built into the protocol to avoid a too excessive block size increase: The new block's size (NBS) is compared to the median size M100 of the last 100 blocks. If NBS>M100, the block reward gets reduced in quadratic dependency of how much NBS exceeds M100. E.g. if NBS is [10%, 50%, 80%, 100%] greater than M100, the nominal block reward gets reduced by [1%, 25%, 64%, 100%]. Generally, blocks greater than 2*M100 are not allowed, and blocks <= 60kB are always free of any block reward penalties.
+Monero nie posiada ustalonego maksymalnego rozmiaru bloku, co oznacza, że, w przeciwieństwie do Bitcoina, którego limit bloku wynosi 1 MB, nie posiada limitu zapobiegającego skalowaniu. Jednak do protokołu wbudowany został mechanizm kary za wynagrodzenie za blok w celu uniknięcia zbytniego wzrostu rozmiaru bloku - nowy rozmiar bloku (NBS) jest porównywalny do rozmiaru mediany M100 ostatnich 100 bloków. Jeśli NBS>M100, wynagrodzenie za blok zostaje zmniejszone o funkcję kwadratową ilości, o którą NBS przekroczył M100, na przykład jeśli NBS jest [10%, 50%, 80%, 100%] większe od M100, wnagrodzenie nominalne za blok zmniejszy się o, odpowiednio, [1%, 25%, 64%, 100%]. Przeważnie bloki większe niż 2*M100 nie są dozwolone, a bloki <= 60kB są zawsze wolne od jakichkolwiek kar.

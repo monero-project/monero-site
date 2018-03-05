@@ -3,13 +3,13 @@ layout: moneropedia
 entry: "Java I2P"
 tags: ["kovri"]
 terms: ["Java-I2P"]
-summary: "The original implementation of I2P - written in Java"
+summary: "Oryginalna implementacja sieci I2P, napisana w Javie."
 ---
 
-### The Basics
+### Podstawy
 
-The term "Java I2P" is often used to describe the original @I2P implementation currently most known and used today. There are various other @I2P implementations, including @Kovri; all of which look up to the original Java implementation.
+Pojęcie "Java I2P" jest często stosowane do opisania oryginalnej implementacji sieci @I2P, obecnie najbardziej znanej i używanej. Istnieje wiele implementacji I2P, w tym @Kovri, wszystkie oparte na oryginalnej implementacji Java.
 
-### Notes
+### Adnotacje
 
-To download/learn more about the Java implementation, visit their [website](https://geti2p.net/).
+Aby ściągnąć lub dowiedzieć się więcej o implementacji Java, odwiedź [stronę I2P](https://geti2p.net/).

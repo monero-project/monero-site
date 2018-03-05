@@ -1,7 +1,7 @@
 ---
 layout: moneropedia
-entry: "Paper Wallet"
-terms: ["paperwallet", "paperwallets", "paper-wallet", "paper-wallets"]
-summary: "A paper wallet stores the information necessary to send and receive Monero"
+entry: "Papierowy portfel"
+terms: ["papierowy-portfel", "papierowego-portfela", "papierowemu-portfelowi"]
+summary: "Papierowy portfel przechowuje informacje niezbędne do wysyłania i otrzymywania Monero."
 ---
 

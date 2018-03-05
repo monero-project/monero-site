@@ -3,15 +3,15 @@ layout: moneropedia
 entry: "I2PControl"
 tags: ["kovri"]
 terms: ["I2PControl"]
-summary: "An API inteface for Kovri and Java-I2P that allows simple remote control"
+summary: "Interfejs programowania aplikacji dla Kovri i Java-I2P pozwalający na prostą zdalną kontrolę."
 ---
 
-### The Basics
+### Podstawy
 
-@I2Pcontrol is [JSONRPC2](https://en.wikipedia.org/wiki/JSON-RPC) [API](https://en.wikipedia.org/wiki/Application_programming_interface) for @Kovri and @Java-I2P which allows an @I2PControl client to remote control/monitor a running instance.
+I2Pcontrol jest interfejsem programowania aplikacji(https://en.wikipedia.org/wiki/Application_programming_interface) [JSONRPC2](https://en.wikipedia.org/wiki/JSON-RPC) dla @Kovri i @Java-I2P, który pozwala klientowi na zdalną kontrolę i monitoring uruchomionej instancji.
 
-Two available @I2PControl clients are: [qtoopie](https://github.com/EinMByte/qtoopie) (C++ client) and [itoopie](https://github.com/i2p/i2p.itoopie) (Java client). Read `kovri.conf` to configure @I2PControl for @Kovri.
+Dwoma dostępnymi klientami I2PControl są: [qtoopie](https://github.com/EinMByte/qtoopie) (klient C++) i [itoopie](https://github.com/i2p/i2p.itoopie) (klient Java). Przejdź do `kovri.conf`, aby skonfigurować I2PControl dla Kovri.
 
-### In-depth information
+### Szczegółowe informacje
 
-Details and specification available on the [I2PControl](https://geti2p.net/en/docs/api/i2pcontrol) page.
+Szczegóły i informacje dostępne są na stronie [I2PControl](https://geti2p.net/en/docs/api/i2pcontrol).

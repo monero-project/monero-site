@@ -1,52 +1,44 @@
-{% include untranslated.html %}
-When you send money to a party who then disputes the payment was made, you need to be able to prove the payment was made.
+Jeżeli dokonasz płatności osobie, która później ją zakwestionuje, musisz być w stanie udowodnić, że pieniądze zostały przesłane.
 
-With Bitcoin, this is typically done by looking up the transaction ID, where the origin and destination addresses are
-shown, along with the amount transacted.
+W przypadku Bitcoina zazwyczaj dokonuje się tego, wyszukując numer identyfikacyjny transakcji, gdzie adres nadawcy i odbiorcy oraz przesłana kwota są ujawnione.
 
-Monero, however, is private: that information is not available publicly on the blockchain. The steps are therefore a bit
-more involved.
+Jednak Monero jest prywatne - te informacje nie są publicznie dostępne w łańcuchu bloków. W związku z tym, kroki są trochę bardziej skomplikowane.
 
-To prove to Charlie that she made a payment to Bob, Alice must supply Charlie three pieces of information:
+Aby udowodnić Pawłowi, że Ewa przesłała pieniądze Jackowi, musi ona przekazać Pawłowi trzy informacje:
 
-- the transaction ID, as is done in Bitcoin
-- Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote currencies
+- numer identyfikacyjny transakcji, tak jak się to dzieje w przypadku Bitcoina
+- adres Jacka, tak jak się to dzieje w przypadku Bitcoina
+- klucz transakcji, który jest wyłącznością Monero i innych walut CryptoNote.
 
-When Alice made the transaction, a one time key was automatically generated just for this transaction. Alice can
-query it thus in monero-wallet-cli (new name for the old simplewallet):
+Gdy Ewa dokonywała transakcji, jendorazowy klucz został wygenerowany tylko dla tej płatności. Ewa może więc odnaleźć go w monero-wallet-cli (nowa nazwa dawnego simplewallet):
 
 > get_tx_key TXID
 
-Alice would plug in her actual transaction ID instead of this TXID placeholder. All being well, the one time transaction key
-will be displayed.
+Ewa zamieni TXID na swój numer identyfikacyjny transakcji. W wyniku tego, wyświetlony zostanie jednorazowy klucz transakcji.
 
-Note that this will only work if monero-wallet-cli is set to save transaction keys. To double check:
+Zauważ, że to zadziała tylko wtedy, gdy monero-wallet-cli zostanie ustawiony na zapisywanie kluczy transakcji. Aby się upewnić, że tak jest, wpisz:
 
 > set
 
-If it's set to 0, set it to 1:
+Jeśli ustawione jest na 0, zmień na 1:
 
 > set store-tx-info 1
 
-Alice can now send Charlie the transaction key along with transaction ID and Bob's address.
+Ewa może teraz przesłać Pawłowi klucz transakcji razem z numerem identyfikacyjnym transakcji oraz adresem Jacka.
 
-Note: if several transactions were made, this needs repeating for each such transaction.
+Zauważ, że jeśli zostało dokonanych wiele transakcji, cały proces musi zostać powtórzony dla każdej transakcji.
 
 
 ---
 
-Charlie now received those three pieces of information, and wants to check Alice is telling the truth: on an up to date
-blockchain, Charlie types in monero-wallet-cli:
+Paweł otrzymał trzy informacje i chce sprawdzić, czy Ewa mówi prawdę - w aktualnym łańcuchu bloków Paweł wpisuje w wierszu poleceń:
 
 > check_tx_key TXID TXKEY ADDRESS
 
-The information supplied by Alice plugs neatly instead of the placeholders. monero-wallet-cli will use the transaction
-key to decode the transaction, and display how much this particular transaction sent to this address. Obviously,
-Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
+Paweł zamienił symbole na informacje dostarczone przez Ewę. monero-wallet-cli użyje klucza transakcji do odszyfrowania jej i wyświetli kwotę przesłaną na ten konkretny adres. Oczywiście, Paweł będzie chciał się upewnić, czy adres Jacka rzeczywiście do niego należy - tak samo jak w przypadku Bitcoina.
 
-Alternatively, the transaction key can be obtained in the GUI in the History tab. Click on details for each individual transaction to get the key.
+Inną opcją jest uzyskanie klucza transakcji w zakładce Historia w Graficznym Interfejsie Użytkownika. Kliknij na detale każdej pojedynczej transakcji, aby otrzymać klucz.
 
-Note: if several transactions were made, this needs repeating for each such transaction.
+Zauważ, że jeśli zostało dokonanych wiele transakcji, cały proces musi zostać powtórzony dla każdej transakcji.
 
 

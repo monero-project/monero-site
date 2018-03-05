@@ -2,11 +2,11 @@
 layout: moneropedia
 entry: "Airgap"
 terms: ["airgap"]
-summary: "An airgap is a security measure to physically separate a computer or device from all other networks, such as the Internet."
+summary: "Airgap jest środkiem bezpieczeństwa, który fizycznie oddziela komputer lub inne urządzenie od wszystkich sieci, takich jak internet."
 ---
 
-### The Basics
+### Podstawy
 
-"An air gap, air wall or air gapping is a network security measure employed on one or more computers to ensure that a secure computer network is physically isolated from unsecured networks, such as the public Internet or an unsecured local area network.[2] The name arises from the technique of creating a network that is physically separated (with a conceptual air gap) from all other networks. The air gap may not be completely literal, as networks employing the use of dedicated cryptographic devices that can tunnel packets over untrusted networks while avoiding packet rate or size variation can be considered air gapped, as there is no ability for computers on opposite sides of the gap to communicate."
+Air gap, air wall lub air gapping jest środkiem bezpieczeństwa sieci podejmowanym na jednym lub więcej komputerach w celu zapewnienia, że bezpieczne sieci komputerowe są fizycznie oddzielone od niebezpiecznych sieci, takich jak internet publiczny lub niezabezpieczone lokalne sieci. Nazwa pochodzi od techniki tworzenia sieci fizycznie oddzielonej (z konceptualistyczną "szczeliną powietrzną") od pozostałych sieci. "Szczelina powietrzna" może nie być zupełnie dosłowna, biorąc pod uwagę, że sieci używające urządzeć kryptograficznych, które mogą tunelować pakiety przez niezaufane sieci, jednocześnie unikając szybkości pakietów lub zmian rozmiarów, mogą być także nazywane air gapped, ponieważ komputery po dwóch różnych stronach szczeliny nie mają możliwości się komunikować."
 
-Taken from https://en.wikipedia.org/wiki/Air_gap_(networking)
+Zaczerpnięte z https://en.wikipedia.org/wiki/Air_gap_(networking).

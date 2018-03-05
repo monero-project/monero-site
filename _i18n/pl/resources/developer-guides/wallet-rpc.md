@@ -1,9 +1,8 @@
-{% include untranslated.html %}
-## Introduction
+## Wprowadzenie
 
-This is a list of the monero-wallet-rpc calls, their inputs and outputs, and examples of each. The program monero-wallet-rpc replaced the rpc interface that was in simplewallet and then monero-wallet-cli.
+Poniżej znajduje się lista funkcji monero-wallet-rpc, ich wejścia i wyniki oraz przykłady. Oprogramowanie monero-wallet-rpc zamieniło interfejs rpc, które znajdowało się w simplewallet, a później w monero-wallet-cli.
 
-All monero-wallet-rpc methods use the same JSON RPC interface. For example:
+Wszystkie metody monero-wallet-rpc korzystają z tego samego interfejsu JSON RPC. Przykład:
 
 ```
 IP=127.0.0.1
@@ -16,7 +15,7 @@ curl \
     -H 'Content-Type: application/json'
 ```
 
-If the monero-wallet-rpc was executed with the `--rpc-login` argument as `username:password`, then follow this example:
+Jeśli funkcja monero-wallet-rpc została zastosowana z argumentem `--rpc-login` jako `username:password`, postępuj zgodnie z przykładem poniżej:
 
 ```
 IP=127.0.0.1
@@ -30,9 +29,9 @@ curl \
     -H 'Content-Type: application/json'
 ```
 
-Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
+Zauważ, że jednostki atomowe są najmniejszą częścią 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 jednostek atomowych.**
 
-### Index of JSON RPC Methods:
+### Lista metod JSON RPC:
 
 * [getbalance](#getbalance)
 * [getaddress](#getaddress)
@@ -72,20 +71,20 @@ Note: "atomic units" refer to the smallest fraction of 1 XMR according to the mo
 
 ---
 
-## JSON RPC Methods:
+## Metody JSON RPC:
 
 ### **getbalance**
 
-Return the wallet's balance.
+Wyszukuje saldo portfela.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs:
+Wynik:
 
-* *balance* - unsigned int; The total balance of the current monero-wallet-rpc in session.
-* *unlocked_balance* - unsigned int; Unlocked funds are those funds that are sufficiently deep enough in the Monero blockchain to be considered safe to spend.
+* *balance* - niepodpisana liczba całkowita; całkowite saldo aktualnego monero-wallet-rpc w sesji.
+* *unlocked_balance* - niepodpisana liczba całkowita; odblokowane środki to środki znajdujące się wystarczająco głęboko w łańcuchu bloków, aby mogły być bezpiecznie wydane.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbalance"}' -H 'Content-Type: application/json'
@@ -103,15 +102,15 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **getaddress**
 
-Return the wallet's address.
+Wyszukuje adres portfela.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs:
+Wynik:
 
-* *address* - string; The 95-character hex address string of the monero-wallet-rpc in session.
+* *address* - ciąg; 95-znakowy heksadecymalny ciąg zawierający adres monero-wallet-rpc w sesji.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getaddress"}' -H 'Content-Type: application/json'
@@ -128,15 +127,15 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **getheight**
 
-Returns the wallet's current block height.
+Wyszukuje aktualną wysokość bloku portfela.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs:
+Wynik:
 
-* *height* - unsigned int; The current monero-wallet-rpc's blockchain height. If the wallet has been offline for a long time, it may need to catch up with the daemon.
+* *height* - niepodpisana liczba całkowita; aktualna wysokość łańcucha bloków dla monero-wallet-rpc. Jeśli portfel był off-ine przez dłuższy czas, możliwe, że będzie on potrzebował zaktualizować demona.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getheight"}' -H 'Content-Type: application/json'
@@ -153,32 +152,32 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **transfer**
 
-Send monero to a number of recipients.
+Wysyła Monero do wielu odbiorców.
 
-Inputs:
+Wejście:
 
-* *destinations* - array of destinations to receive XMR:
-  * *amount* - unsigned int; Amount to send to each destination, in atomic units.
-  * *address* - string; Destination public address.
-* *fee* - unsigned int; Ignored, will be automatically calculated.
-* *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
-* *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
-* *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
-* *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
-* *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
-* *get_tx_hex* - boolean; Return the transaction as hex string after sending
-
-
-Outputs:
-
-* *fee* - Integer value of the fee charged for the txn.
-* *tx_hash* - String for the publically searchable transaction hash
-* *tx_key* - String for the transaction key if get_tx_key is true, otherwise, blank string.
-* *tx_blob* - Transaction as hex string if get_tx_hex is true
+* *destinations* - szereg odbiorców XMR:
+  * *amount* - niepodpisana liczba całkowita; kwota do wysłania każdemu z odbiorców w jednostkach atomowych.
+  * *address* - ciąg; adres publiczny odbiorcy.
+* *fee* - niepodpisana liczba całkowita; kwota opłaty, gdy zignorowana, zostanie obliczona automatycznie.
+* *mixin* - niepodpisana liczba całkowita; liczba wyjść łańcucha do zmiksowaniah (0 oznacza brak miksowania).
+* *unlock_time* - niepodpisana liczba całkowita; liczba bloków, które muszą minąć zanim Monero może zostać wydane (0 oznacza brak       blokady).
+* *payment_id* - ciąg; (opcjonalny) losowy ciąg 32-bajtowy/64-znakowy heksadecymalny służący do identyfikacji transakcji.
+* *get_tx_key* - logiczny typ danych; (opcjonalny) wyszukuje klucz transakcji po jej wysłaniu.
+* *priority* - niepodpisana liczba całkowita; ustala pierwszeństwo transakcji. Akceptowanymi wartościami są 0-3 i oznaczają odpowiednio: domyślna, nieważna, normalna, ważniejsza, pierwszeństwo.
+* *do_not_relay* - logiczny typ danych; (ocpjonalny) Jeśli "true" - nowo utworzona transakcja nie zostanie przekazana sieci Monero (domyślnie ustawiono jako "false").
+* *get_tx_hex* - logiczny typ danych; wyszukuje transakcje jako ciąg heksadecymalny po jej wysłaniu.
 
 
-Example:
+Wynik:
+
+* *fee* - całkowita wartość opłaty poniesionej za dokonaną transakcję.
+* *tx_hash* - ciąg publicznie możliwego do wyszukania hasza transakcji.
+* *tx_key* - ciąg klucza transakcji, jeśli "get_tx_key" jest "true"; w innym przypadku - pusty ciąg.
+* *tx_blob* - transakcja jako ciąg heksadecymalny, jeśli "get_tx_hex" jest "true".
+
+
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBLwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"}],"mixin":4,"get_tx_key": true}}' -H 'Content-Type: application/json'
@@ -197,32 +196,32 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **transfer_split**
 
-Same as transfer, but can split into more than one tx if necessary.
+Funkcja podobna do "transfer", ale potrafi podzielić płatności na więcej niż jedną transakcję, jeśli to konieczne.
 
-Inputs:
+Wejście:
 
-* *destinations* - array of destinations to receive XMR:
-  * *amount* - unsigned int; Amount to send to each destination, in atomic units.
-  * *address* - string; Destination public address.
-* *fee* - unsigned int; Ignored, will be automatically calculated.
-* *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
-* *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
-* *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending. -- Ignored
-* *priority* - unsigned int; Set a priority for the transactions. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
-* *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
-* *get_tx_hex* - boolean; Return the transactions as hex string after sending
-* *new_algorithm* - boolean; True to use the new transaction construction algorithm, defaults to false.
+* *destinations* - szereg odbiorców XMR:
+  * *amount* - niepodpisana liczba całkowita; kwota do wysłania każdemu z odbiorców w jednostkach atomowych.
+  * *address* - ciąg; adres publiczny odbiorcy.
+* *fee* - niepodpisana liczba całkowita; kwota opłaty, gdy zignorowana, zostanie obliczona automatycznie.
+* *mixin* - niepodpisana liczba całkowita; liczba wyjść łańcucha do zmiksowaniah (0 oznacza brak miksowania).
+* *unlock_time* - niepodpisana liczba całkowita; liczba bloków, które muszą minąć zanim Monero może zostać wydane (0 oznacza brak       blokady).
+* *payment_id* - ciąg; (opcjonalny) losowy ciąg 32-bajtowy/64-znakowy heksadecymalny służący do identyfikacji transakcji.
+* *get_tx_keys* - logiczny typ danych; (opcjonalny) wyszukuje klucz transakcji po jej wysłaniu - do zignorowania.
+* *priority* - niepodpisana liczba całkowita; ustala pierwszeństwo transakcji. Akceptowanymi wartościami są 0-3 i oznaczają odpowiednio: domyślna, nieważna, normalna, ważniejsza, pierwszeństwo.
+* *do_not_relay* - logiczny typ danych; (ocpjonalny) Jeśli "true" - nowo utworzona transakcja nie zostanie przekazana sieci Monero (domyślnie ustawiono jako "false").
+* *get_tx_hex* - logiczny typ danych; wyszukuje transakcje jako ciąg heksadecymalny po jej wysłaniu.
+* *new_algorithm* - logiczny typ danych; jeśli "true" - używa algorytmu konstrukcji nowej transakcji, domyślnie ustalony jako "false".
 
-Outputs:
+Wynik:
 
-* *fee_list* - array of: integer. The amount of fees paid for every transaction.
-* *tx_hash_list* - array of: string. The tx hashes of every transaction.
-* *tx_blob_list* - array of: string. The tx as hex string for every transaction.
-* *amount_list* - array of: integer. The amount transferred for every transaction..
-* *tx_key_list* - array of: string. The transaction keys for every transaction.
+* *fee_list* - szereg: liczba całkowita. Kwota opłat za każdą transakcję.
+* *tx_hash_list* - szereg: ciąg. Hasze wszystkich transakcji.
+* *tx_blob_list* - szereg: ciąg. Transakcja jako ciąg heksadecymalny.
+* *amount_list* - szereg: liczba całkowita. Kwota przesłana w każdej transakcji.
+* *tx_key_list* - szereg: ciąg. Klucze wszystkich transakcji.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":100000000,"address":"9wNgSYy2F9qPZu7KBjvsFgZLTKE2TZgEpNFbGka9gA5zPmAXS35QzzYaLKJRkYTnzgArGNX7TvSqZC87tBwtaC5RQgJ8rm"},{"amount":200000000,"address":"9vH5D7Fv47mbpCpdcthcjU34rqiiAYRCh1tYywmhqnEk9iwCE9yppgNCXAyVHG5qJt2kExa42TuhzQfJbmbpeGLkVbg8xit"},{"amount":200000000,"address":"9vC5Q25cR1d3WzKX6dpTaLJaqZyDrtTnfadTmVuB1Wue2tyFGxUhiE4RGa74pEDJv7gSySzcd1Ao6G1nzSaqp78vLfP6MPj"},{"amount":200000000,"address":"A2MSrn49ziBPJBh8ZNEhhbfyLMou6mao4C1F5TLGUatmUnCxZArDYkcbAnVkVEopWVeak2rKDrmc8JpoS7n5dvfN9YDPBTG"},{"amount":200000000,"address":"9tEDyVQ8zgRQbDYiykTdpw5kZ6qWQWcKfExEj9eQshjpGb3sdr3UyWE2AHWzUGzJjaH9HN1DdGBdyQQ4AqGMc7rr5xYwZWW"}],"mixin":4,"get_tx_key": true, "new_algorithm": true}}' -H 'Content-Type: application/json'
@@ -240,15 +239,15 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **sweep_dust**
 
-Send all dust outputs back to the wallet's, to make them easier to spend (and mix).
+Przesyła wszystkie drobne wyniki z powrotem do portfela, aby ułatwić ich wydawanie oraz miksowanie.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs:
+Wynik:
 
-* *tx_hash_list* - list of: string
+* *tx_hash_list* - lista: ciąg
 
-Example (In this example, `sweep_dust` returns an error due to insufficient funds to sweep):
+Przykład (w tym przypadku funkcja `sweep_dust` pokazuje błąd ze względu na niewystarczające środki):
 
 
 ```
@@ -266,27 +265,27 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **sweep_all**
 
-Send all unlocked balance to an address.
+Przesyła wszystkie odblokowane środki na dany adres.
 
-Inputs:
+Wejście:
 
-* *address* - string; Destination public address.
-* *priority* - unsigned int; (Optional)
-* *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
-* *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
-* *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
-* *below_amount* - unsigned int; (Optional)
-* *do_not_relay* - boolean; (Optional)
-* *get_tx_hex* - boolean; (Optional) return the transactions as hex encoded string.
+* *address* - ciąg; adres publiczny odbiorcy.
+* *priority* - niepodpisana liczba całkowita; (opcjonalne)
+* *mixin* - niepodpisana liczba całkowita; liczba wyjść z łańcucha bloków do zmiksowania (0 oznacza brak miksowania).
+* *unlock_time* - niepodpisana liczba całkowita; liczba bloków, które muszą upłynąć, zanim Monero może zostać wydane (0 oznacza brak        blokady).
+* *payment_id* - ciąg; (opcjonalne) Losowy 32-bajtowy/64-znakowy ciąg heksadecymalny służący do identyfikacji transakcji.
+* *get_tx_keys* - logiczny typ danych; (opcjonalne) wyszukuje klucze transakcji po jej dokonaniu.
+* *below_amount* - niepodpisana liczba całkowita; (opcjonalne)
+* *do_not_relay* - logiczny typ danych; (opcjonalne)
+* *get_tx_hex* - logiczny typ danych; (opcjonalne) pokazuje transakcje jako zakodowany heksadecymalnie ciąg.
 
-Outputs:
+Wynik:
 
-* *tx_hash_list* - array of string;
-* *tx_key_list* - array of string;
-* *tx_blob_list* - array of string; 
+* *tx_hash_list* - szereg ciągów;
+* *tx_key_list* - szereg ciągów;
+* *tx_blob_list* - szereg ciągów; 
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_all","params":{"address":"9sS8eRU2b5ZbN2FPSrpkiab1bjbHE5XtL6Ti6We3Fhw5aQPudRfVVypjgzKDNkxtvTQSPs122NKggb2mqcqkKSeMNVu59S","mixin":2,"unlock_time":0,"get_tx_keys":true}}' -H 'Content-Type: application/json'
@@ -303,13 +302,13 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **store**
 
-Save the blockchain.
+Zapisuje łańcuch bloków
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"store"}' -H 'Content-Type: application/json'
@@ -325,22 +324,22 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_payments**
 
-Get a list of incoming payments using a given payment id.
+Pobiera listę płatności przychodzących za pomocą numeru identyfikacyjnego płatności.
 
-Inputs:
+Wejście:
 
-* *payment_id* - string
+* *payment_id* - ciąg
 
-Outputs:
+Wynik:
 
-* *payments* - list of:
-  * *payment_id* - string
-  * *tx_hash* - string
-  * *amount* - unsigned int
-  * *block_height* - unsigned int
-  * *unlock_time* - unsigned int
+* *payments* - lista:
+  * *payment_id* - ciąg
+  * *tx_hash* - ciąg
+  * *amount* - niepodpisana liczba całkowita
+  * *block_height* - niepodpisana liczba całkowita
+  * *unlock_time* - niepodpisana liczba całkowita
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_payments","params":{"payment_id":"4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030"}}' -H 'Content-Type: application/json'
@@ -363,23 +362,23 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_bulk_payments**
 
-Get a list of incoming payments using a given payment id, or a list of payments ids, from a given height. This method is the preferred method over `get_payments` because it has the same functionality but is more extendable. Either is fine for looking up transactions by a single payment ID.
+Wyszukuje listę płatności przychodzących za pomocą numeru identyfikacyjnego płatności lub listy numerów identyfikacyjnych na danej wysokości. Metoda ta jest zalecana, w odróżnieniu od funkcji `get_payments`, ponieważ posiada tę samą funkcjonalność, ale jest bardziej rozszerzalna. Obie funkcje służą do wyszukiwania transakcji za pomocą pojedynczego numeru identyfikacyjnego.
 
-Inputs:
+Wejście:
 
-* *payment_ids* - array of: string
- * *min_block_height* - unsigned int; The block height at which to start looking for payments.
+* *payment_ids* - szereg ciągu
+ * *min_block_height* - niepodpisana liczba całkowita; wysokość bloku, od której rozpoczęto wyszukiwanie płatności.
 
-Outputs:
+Wynik:
 
-* *payments* - list of:
-  * *payment_id* - string
-  * *tx_hash* - string
-  * *amount* - unsigned int
-  * *block_height* - unsigned int
-  * *unlock_time* - unsigned int
+* *payments* - lista:
+  * *payment_id* - ciągu
+  * *tx_hash* - ciągu
+  * *amount* - niepodpisanej liczby całkowitej
+  * *block_height* - niepodpisanej liczby całkowitej
+  * *unlock_time* - niepodpisanej liczby całkowitej
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_bulk_payments","params":{"payment_ids":["4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030"],"min_block_height":990000}}' -H 'Content-Type: application/json'
@@ -402,38 +401,38 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_transfers**
 
-Returns a list of transfers.
+Wyszukuje listę transferów.
 
-Inputs:
+Wejście:
 
-* *in* - boolean;
-* *out* - boolean;
-* *pending* - boolean;
-* *failed* - boolean;
-* *pool* - boolean;
-* *filter_by_height* - boolean;
-* *min_height* - unsigned int;
-* *max_height* - unsigned int;
+* *in* - logiczny typ danych;
+* *out* - logiczny typ danych;
+* *pending* - logiczny typ danych;
+* *failed* - logiczny typ danych;
+* *pool* - logiczny typ danych;
+* *filter_by_height* - logiczny typ danych;
+* *min_height* - niepodpisana liczba całkowita;
+* *max_height* - niepodpisana liczba całkowita;
 
-Outputs:
+Wynik:
 
-* *in* array of transfers:
-  * *txid* - string;
-  * *payment_id* - string;
-  * *height* - unsigned int;
-  * *timestamp* - unsigned int;
-  * *amount* - unsigned int;
-  * *fee* - unsigned int;
-  * *note* - string;
+* *in* szereg transferów:
+  * *txid* - ciąg;
+  * *payment_id* - ciąg;
+  * *height* - niepodpisana liczba całkowita;
+  * *timestamp* - niepodpisana liczba całkowita;
+  * *amount* - niepodpisana liczba całkowita;
+  * *fee* - niepodpisana liczba całkowita;
+  * *note* - ciąg;
   * *destinations* - std::list<transfer_destination>;
-  * *type* - string;
-* *out* array of transfers
-* *pending* array of transfers
-* *failed* array of transfers
-* *pool* array of transfers
+  * *type* - ciąg;
+* *out* szereg transferów
+* *pending* szereg transferów
+* *failed* szereg transferów
+* *pool* szereg transferów
 
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_transfers","params":{"pool":true}}' -H 'Content-Type: application/json'
@@ -458,25 +457,25 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_transfer_by_txid**
 
-Show information about a transfer to/from this address.
+Wyszukuje informacje na temat transferów z/na dany adres.
 
-Inputs:
+Wejście:
 
-* *txid* - string
+* *txid* - ciąg
 
-Outputs:
+Wynik:
 
-* *transfer* - JSON object containing parment information:
-  * *amount* - unsigned int
-  * *fee* - unsigned int
-  * *height* - unsigned int
-  * *note* - string
-  * *payment_id* - string
-  * *timestamp* - unsigned int
-  * *txid* - string
-  * *type* - string
+* *transfer* - obiekt JSON zawierający informacje o płatności:
+  * *amount* - niepodpisana liczba całkowita
+  * *fee* - niepodpisana liczba całkowita
+  * *height* - niepodpisana liczba całkowita
+  * *note* - ciąg
+  * *payment_id* - ciąg
+  * *timestamp* - niepodpisana liczba całkowita
+  * *txid* - ciąg
+  * *type* - ciąg
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_transfer_by_txid","params":{"txid":"f2d33ba969a09941c6671e6dfe7e9456e5f686eca72c1a94a3e63ac6d7f27baf"}}' -H 'Content-Type: application/json'
@@ -502,22 +501,22 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **incoming_transfers**
 
-Return a list of incoming transfers to the wallet.
+Wyszukuje listę transferów przychodzących do portfela.
 
-Inputs:
+Wejście:
 
-* *transfer_type* - string; "all": all the transfers, "available": only transfers which are not yet spent, OR "unavailable": only transfers which are already spent.
+* *transfer_type* - ciąg; "all": wszystkie transfery, "available": jedynie transfery jeszcze nie wydane LUB "unavailable": jedynie transfery już wydane.
 
-Outputs:
+Wynik:
 
-* *transfers* - list of:
-  * *amount* - unsigned int
-  * *spent* - boolean
-  * *global_index* - unsigned int; Mostly internal use, can be ignored by most users.
-  * *tx_hash* - string; Several incoming transfers may share the same hash if they were in the same transaction.
-  * *tx_size* - unsigned int
+* *transfers* - lista:
+  * *amount* - niepodpisana liczba całkowita
+  * *spent* - logiczny typ danych
+  * *global_index* - niepodpisana liczba całkowita; zazwyczaj do użytku wewnętrznego, może zostać zignorowana przez większość użytkowników.
+  * *tx_hash* - ciąg; wiele transferów przychodzących może posiadać ten sam hasz, jeśli zawarte były w tej samej transakcji.
+  * *tx_size* - niepodpisana liczba całkowita
 
-Example (Return "all" transaction types):
+Przykład (wszystkie rodzaje transakcji):
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"all"}}' -H 'Content-Type: application/json'
@@ -549,7 +548,7 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 
-Example (Return "available" transactions):
+Przykład (wszystkie transakcje "available"):
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"available"}}' -H 'Content-Type: application/json'
@@ -581,7 +580,7 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 
-Example (Return "unavailable" transaction. Note that this particular example returns 0 unavailable transactions):
+Przykład (wszystkie transakcje "unavailable". Zauważ, że w tym przypadku znaleziono 0 transakcji "unavailable"):
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"unavailable"}}' -H 'Content-Type: application/json'
@@ -597,17 +596,17 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **query_key**
 
-Return the spend or view private key.
+Wyszukuje prywatny klucz wydawania lub widoczności.
 
-Inputs:
+Wejście:
 
-* *key_type* - string; Which key to retrieve: "mnemonic" - the mnemonic seed (older wallets do not have one) OR "view_key" - the view key
+* *key_type* - ciąg; decyduje o rodzaju klucza do wyszukania: "mnemonic" - kod mnemoniczny (starsze portfele nie posiadają go) LUB "view_key" - klucz widoczności.
 
-Outputs:
+Wynik:
 
-* *key* - string; The view key will be hex encoded, while the mnemonic will be a string of words.
+* *key* - ciąg; klucz widoczności będzie zakodowany heksadecymalnie, a kod mnemoniczny będzie ciągiem słów.
 
-Example (Query view key):
+Przykład (dla klucza widoczności):
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"view_key"}}' -H 'Content-Type: application/json'
@@ -621,7 +620,7 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 
-Example (Query mnemonic key):
+Przykład (dla kodu mnemonicznego):
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"query_key","params":{"key_type":"mnemonic"}}' -H 'Content-Type: application/json'
@@ -638,17 +637,17 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **make_integrated_address**
 
-Make an integrated address from the wallet address and a payment id.
+Tworzy adres zintegrowany złożony z adresu portfela i numeru identyfikacyjnego płatności.
 
-Inputs:
+Wejście:
 
-* *payment_id* - string; hex encoded; can be empty, in which case a random payment id is generated
+* *payment_id* - ciąg; zakodowany heksadecymalnie; może być pusty, co spowoduje wygenerowanie losowego numeru identyfikacyjnego płatności.
 
-Outputs:
+Wynik:
 
-* *integrated_address* - string
+* *integrated_address* - ciąg
 
-Example (Payment ID is empty, use a random ID):
+Przykład (numer identyfikacyjny płatności jest pusty, użycie losowego numeru):
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"payment_id":""}}' -H 'Content-Type: application/json'
@@ -665,18 +664,18 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **split_integrated_address**
 
-Retrieve the standard address and payment id corresponding to an integrated address.
+Wyszukuje adres standardowy i numer identyfikacyjny płatności składające się na adres zintegrowany.
 
-Inputs:
+Wejście:
 
-* *integrated_address* - string
+* *integrated_address* - ciąg
 
-Outputs:
+Wynik:
 
-* *standard_address* - string
-* *payment* - string; hex encoded
+* *standard_address* - ciąg
+* *payment* - ciąg; zakodowany heksadecymalnie
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"split_integrated_address","params":{"integrated_address": "4BpEv3WrufwXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQQ8H2RRJveAtUeiFs6J"}}' -H 'Content-Type: application/json'
@@ -694,13 +693,13 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **stop_wallet**
 
-Stops the wallet, storing the current state.
+Zatrzymuje pracę portfela, zapisując jego aktualny stan.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"stop_wallet"}' -H 'Content-Type: application/json'
@@ -716,21 +715,21 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **make_uri**
 
-Create a payment URI using the official URI spec.
+Tworzy URI płatności przy użyciu oficjalnych specyfikacji URI.
 
-Inputs:
+Wejście:
 
-* *address* - wallet address string
-* *amount* (optional) - the integer amount to receive, in **atomic** units
-* *payment_id* (optional) - 16 or 64 character hexadecimal payment id string
-* *recipient_name* (optional) - string name of the payment recipient
-* *tx_description* (optional) - string describing the reason for the tx
+* *address* - ciąg; adres portfela
+* *amount* (opcjonalne) - niepodpisana liczba całkowita; kwota do otrzymania w jednostkach **atomowych**
+* *payment_id* (opcjonalne) - ciąg; numer identyfikacyjny płatności jako 16- lub 64-znakowy ciąg heksadecymalny
+* *recipient_name* (opcjonalne) - ciąg; nazwa odbiorcy płatności
+* *tx_description* (opcjonalne) - ciąg; tytuł transakcji
 
-Outputs:
+Wynik:
 
-* *uri* - a string containing all the payment input information as a properly formatted payment URI
+* *uri* - ciąg zawierający wszystkie informacje na temat wejścia płatności jako odpowiednio sformatowany URI
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_uri","params":{"address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","amount":10,"payment_id":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef","tx_description":"Testing out the make_uri function.","recipient_name":"Monero Project donation address"}}'  -H 'Content-Type: application/json'
@@ -747,22 +746,22 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **parse_uri**
 
-Parse a payment URI to get payment information.
+Analizuje URI płatności w celu uzyskania informacji na jej temat.
 
-Inputs:
+Wejście:
 
-* *uri* - a string containing all the payment input information as a properly formatted payment URI
+* *uri* - ciąg zawierający wszystkie informacje na temat wejścia płatności jako odpowiednio sformatowany URI
 
-Outputs:
+Wynik:
 
-* *uri* - JSON object containing payment information:
-  * *address* - wallet address string
-  * *amount* - the decimal amount to receive, in **coin** units (0 if not provided)
-  * *payment_id* - 16 or 64 character hexadecimal payment id string (empty if not provided)
-  * *recipient_name* - string name of the payment recipient (empty if not provided)
-  * *tx_description* - string describing the reason for the tx (empty if not provided)
+* *uri* - obiekt JSON zawierający informacje na temat płatności:
+  * *address* - ciąg; adres portfela
+  * *amount* - kwota do otrzymania w jednostkach **monetarnych** (0 jeśli brak informacji)
+  * *payment_id* - numer identyfikacyjny płatności jako 16- lub 64-znakowy ciąg heksadecymalny (zostawić puste, jeśli brak informacji)
+  * *recipient_name* - ciąg; nazwa odbiorcy płatności (zostawić puste, jeśli brak informacji)
+  * *tx_description* - ciąg; tytuł płatności (zostawić puste, jeśli brak informacji)
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"parse_uri","params":{"uri":"monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A?tx_payment_id=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&tx_amount=0.000000000010&recipient_name=Monero%20Project%20donation%20address&tx_description=Testing%20out%20the%20make_uri%20function."}}' -H 'Content-Type: application/json'
@@ -785,13 +784,13 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **rescan_blockchain**
 
-Rescan blockchain from scratch.
+Skanuje łańcuch bloków od początku.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"rescan_blockchain" -H 'Content-Type: application/json'
@@ -807,16 +806,16 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **set_tx_notes**
 
-Set arbitrary string notes for transactions.
+Ustanawia dowolny ciąg adnotacji transakcji.
 
-Inputs:
+Wejście:
 
-* *txids* - array of string; transaction ids
-* *notes* - array of string; notes for the transactions
+* *txids* - szereg ciągów; numery identyfikacyjne transakcji
+* *notes* - szereg ciągów; adnotacje do transakcji
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_tx_notes","params":{"txids":["6a1a100c079c236e2cbf36f7760e8ef1a9e8357c434aa790a8c78de653ec4cf2"],"notes":["This is an example"]}}' -H 'Content-Type: application/json'
@@ -832,17 +831,17 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_tx_notes**
 
-Get string notes for transactions.
+Wyszukuje ciągi adnotacji transakcji.
 
-Inputs:
+Wejście:
 
-* *txids* - array of string; transaction ids
+* *txids* - szereg ciągów; numery identyfikacyjne transakcji
 
-Outputs:
+Wynik:
 
-* *notes* - array of string; notes for the transactions
+* *notes* - szereg ciągów; adnotacje do transakcji
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_tx_notes","params":{"txids":["6a1a100c079c236e2cbf36f7760e8ef1a9e8357c434aa790a8c78de653ec4cf2"]}}' -H 'Content-Type: application/json'
@@ -859,17 +858,17 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **sign**
 
-Sign a string.
+Podpisuje dany ciąg.
 
-Inputs:
+Wejście:
 
-* *data* - string;
+* *data* - ciąg;
 
-Outputs:
+Wynik:
 
-* *signature* - string;
+* *signature* - ciąg;
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sign","params":{"data":"This is sample data to be signed"}}' -H 'Content-Type: application/json'
@@ -886,19 +885,19 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **verify**
 
-Verify a signature on a string.
+Weryfikuje podpis ciągu.
 
-Inputs:
+Wejście:
 
-* *data* - string;
-* *address* - string;
-* *signature* - string;
+* *data* - ciąg;
+* *address* - ciąg;
+* *signature* - ciąg;
 
-Outputs:
+Wynik:
 
-* *good* - boolean;
+* *good* - logiczny typ danych;
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"verify","params":{"data":"This is sample data to be signed","address":"9sS8eRU2b5ZbN2FPSrpkiab1bjbHE5XtL6Ti6We3Fhw5aQPudRfVVypjgzKDNkxtvTQZSPs122NKggb2mqcqkKSeMNVu59S","signature":"SigV1Xp61ZkGguxSCHpkYEVw9eaWfRfSoAf36PCsSCApx4DUrKWHEqM9CdNwjeuhJii6LHDVDFxvTPijFsj3L8NDQp1TV"}}' -H 'Content-Type: application/json'
@@ -915,17 +914,17 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **export_key_images**
 
-Export a signed set of key images.
+Eksportuje podpisany zestaw obrazów klucza.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs:
+Wynik:
 
-* *signed_key_images* - array of signed key images:
-  * *key_image* - string;
-  * *signature* - string;
+* *signed_key_images* - szereg podpisanych obrazów klucza:
+  * *key_image* - ciąg;
+  * *signature* - ciąg;
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"export_key_images"}' -H 'Content-Type: application/json'
@@ -945,21 +944,21 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **import_key_images**
 
-Import signed key images list and verify their spent status.
+Importuje listy podpisanych obrazów klucza i weryfikuje, czy zostały wydane.
 
-Inputs:
+Wejście:
 
-* *signed_key_images* - array of signed key images:
-  * *key_image* - string;
-  * *signature* - string;
+* *signed_key_images* - szereg podpisanych obrazów klucza:
+  * *key_image* - ciąg;
+  * *signature* - ciąg;
 
-Outputs:
+Wynik:
 
-* *height* - unsigned int;
-* *spent* - unsigned int;
-* *unspent* - unsigned int;
+* *height* - niepodpisana liczba całkowita;
+* *spent* - niepodpisana liczba całkowita;
+* *unspent* - niepodpisana liczba całkowita;
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"import_key_images", "params":{"signed_key_images":[{"key_image":"63b83df78cafd99e23b5ad3f667bc6f8d38813d9e84c7bb6c223a556dfd34af","signature":"b87b7e989aa86aa2a7a7cd8adcb3a848d3512ff718b168e15217ff3e5da29c0183c0328b97cc052fcb5ee3548aa5e41e530ba9d854199ea19d7ddaf6a54a4c0a"},{"key_image":"44ec12fbc56c533a30b09de8ae26febd515528c4957dfe875430377a7e212b4e","signature":"91105f15be0b25bc2a94bd78a7e261608974d6d888080b9f1815655b98af190340325ea1a0840a5951dacf913d4de1b2bd33ea59c1cb7bce1b6648afa7133d03"}]}}' -H 'Content-Type: application/json'
@@ -978,21 +977,21 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_address_book**
 
-Retrieves entries from the address book.
+Wyszukuje wpisy do książki adresowej.
 
-Inputs:
+Wejście:
 
-* *entries* - array of unsigned int; indices of the requested address book entries
+* *entries* - szereg niepodpisanych liczb całkowitych; znaczniki żądanych wpisów do książki adresowej
 
-Outputs:
+Wynik:
 
-* *entries* - array of entries:
-  * *address* - string;
-  * *description* - string;
-  * *index* - unsigned int;
-  * *payment_id* - string;
+* *entries* - szereg wpisów:
+  * *address* - ciąg;
+  * *description* - ciąg;
+  * *index* - niepodpisana liczba całkowita;
+  * *payment_id* - ciąg;
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_address_book","params":{"entries":[1,2]}}' -H 'Content-Type: application/json'
@@ -1019,19 +1018,19 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **add_address_book**
 
-Add an entry to the address book.
+Dodaje wpis do książki adresowej.
 
-Inputs:
+Wejście:
 
-* *address* - string;
-* *payment_id* - (optional) string, defaults to "0000000000000000000000000000000000000000000000000000000000000000";
-* *description* - (optional) string, defaults to "";
+* *address* - ciąg;
+* *payment_id* - (opcjonalne) ciąg, domyślnie jako "0000000000000000000000000000000000000000000000000000000000000000";
+* *description* - (opcjonalne) ciąg, domyślnie jako "";
 
-Outputs:
+Wynik:
 
-* *index* - unsigned int; The index of the address book entry.
+* *index* - niepodpisana liczba całkowita; znacznik wpisu do książki adresowej.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"add_address_book","params":{"address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","description":"Donation address for the Monero project"}}' -H 'Content-Type: application/json'
@@ -1048,15 +1047,15 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **delete_address_book**
 
-Delete an entry from the address book.
+Usuwa wpis do książki adresowej.
 
-Inputs:
+Wejście:
 
-* *index* - unsigned int; The index of the address book entry.
+* *index* - niepodpisana liczba całkowita; znacznik wpisu do książki adresowej.
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"delete_address_book","params":{"index":0}}' -H 'Content-Type: application/json'
@@ -1072,13 +1071,13 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **rescan_spent**
 
-Rescan the blockchain for spent outputs.
+Skanuje łańcuch bloków w poszukiwaniu wydanych wyjść.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"rescan_spent"}' -H 'Content-Type: application/json'
@@ -1094,17 +1093,17 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **start_mining**
 
-Start mining in the Monero daemon.
+Rozpoczyna wydobywanie w demonie Monero.
 
-Inputs:
+Wejście:
 
-* *threads_count* - unsigned int; Number of threads created for mining
-* *do_background_mining* - boolean;
-* *ignore_battery* - boolean;
+* *threads_count* - niepodpisana liczba całkowita; liczba pasm stworzonych do wydobycia
+* *do_background_mining* - logiczny typ danych;
+* *ignore_battery* - logiczny typ danych;
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"start_mining","params":{"threads_count":1,"do_background_mining":true,"ignore_battery":true}}' -H 'Content-Type: application/json'
@@ -1120,13 +1119,13 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **stop_mining**
 
-Stop mining in the Monero daemon.
+Przerywa wydobywanie w demonie Monero.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"stop_mining"}' -H 'Content-Type: application/json'
@@ -1142,15 +1141,15 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_languages**
 
-Get a list of available languages for your wallet's seed.
+Wyszukuje listę dostępnych wersji językowych portfela.
 
-Inputs: *None*.
+Wejście: *brak*.
 
-Outputs:
+Wynik:
 
-* *languages* - array of string; List of available languages
+* *languages* - szereg ciągów; lista dostępnych języków
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_languages"}' -H 'Content-Type: application/json'
@@ -1167,17 +1166,17 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **create_wallet**
 
-Create a new wallet. You need to have set the argument "--wallet-dir" when launching monero-wallet-rpc to make this work.
+Tworzy nowy portfel.Create a new wallet. Argument "--wallet-dir" musi zostać ustawiony przy uruchamianiu monero-wallet-rpc, aby funkcja zadziałała.
 
-Inputs:
+Wejście:
 
-* *filename* - string;
-* *password* - string;
-* *language* - string; Language for your wallets' seed.
+* *filename* - ciąg;
+* *password* - ciąg;
+* *language* - ciąg; język twojego portfela
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_wallet","params":{"filename":"mytestwallet","password":"mytestpassword","language":"English"}}' -H 'Content-Type: application/json'
@@ -1193,16 +1192,16 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **open_wallet**
 
-Open a wallet. You need to have set the argument "--wallet-dir" when launching monero-wallet-rpc to make this work.
+Otwiera portfel. Argument "--wallet-dir" musi zostać ustawiony przy uruchamianiu monero-wallet-rpc, aby funkcja zadziałała.
 
-Inputs:
+Wejście:
 
-* *filename* - string;
-* *password* - string;
+* *filename* - ciąg;
+* *password* - ciąg;
 
-Outputs: *None*.
+Wynik: *brak*.
 
-Example:
+Przykład:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"open_wallet","params":{"filename":"mytestwallet","password":"mytestpassword"}}' -H 'Content-Type: application/json'

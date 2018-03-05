@@ -3,60 +3,60 @@ layout: moneropedia
 entry: "Kovri"
 tags: ["kovri"]
 terms: ["Kovri"]
-summary: "Monero's C++ router implementation of the I2P network"
+summary: "Implementacja routera C++ dla Monero w sieci I2P."
 ---
 
-### The Basics
+### Podstawy
 
-[Kovri](https://github.com/monero-project/kovri/) is a C++ implementation of the @I2P network. @Kovri is currently in heavy, active development and not yet integrated with Monero. When Kovri is integrated into your Monero @node, your transactions will be more secure than ever before.
+[Kovri](https://github.com/monero-project/kovri/) jest wdrożeniem sieci @I2P w języku C++. Obecnie jest on w dynamicznym rozwoju i nie został jeszcze zintegrowany z Monero. Po zintegorwaniu Kovri z twoim @węzłem Monero, transakcje będą jeszcze bezpieczniejsze.
 
-### In-depth information
+### Szczegółowe informacje
 
-Kovri will protect you and Monero from:
+Kovri będzie chronił ciebie i Monero przed:
 
-- @Node partitioning attacks
-- Associations between a particular txid and your IP address
-- Mining and/or running a node in highly adversarial environments
-- Metadata leakage (e.g., @OpenAlias lookups)
+- atakami partycjonowania @węzłów
+- powiązaniem pojedynczego numeru identyfikacyjnego transakcji z twoim adresem IP
+- wydobywaniem i/lub uruchamianiem węzła w wysoce kontrowersyjnych środowiskach
+- wyciekami metadanych (np. wyszukiwania @OpenAlias)
 
-...and much more.
+... i wiele więcej.
 
-Read [anonimal's FFS proposal](https://forum.getmonero.org/9/work-in-progress/86967/anonimal-s-kovri-full-time-development-funding-thread) for more details and for reasoning behind the project. Also read the FAQ and User Guide in the [Kovri repository](https://github.com/monero-project/kovri/).
+Przeczytaj [anonimową propozycję FFS](https://forum.getmonero.org/9/work-in-progress/86967/anonimal-s-kovri-full-time-development-funding-thread), aby dowiedzieć się więcej szczegółów oraz na temat argumentacji projektu. Przeczytaj również FAQ i Przewodniki dla Użytkowników w [folderze Kovri](https://github.com/monero-project/kovri/).
 
-### @Kovri / @I2P Terminology
+### Terminologia @Kovri / @I2P
 
-#### Client + API
+#### Klient + Interfejs Programowania Aplikacji
 
-- @Address-Book
-- @Base32-address
-- @Base64-address
-- @Canonically-unique-host
-- @Eepsite (@Hidden-Service, @Garlic-Site, @Garlic-Service)
+- @książka-adresowa
+- @adres-base32
+- @adres-base64
+- @zasadniczy-unikalny-host
+- @Eepsite (@ukryty-serwis, @strona-czosnkowa, @serwis-czosnkowy)
 - @I2PControl
-- @Jump-Service
-- @Locally-unique-host
+- @opcja-przeskakiwania
+- @lokalnie-unikalny-host
 - @Reseed
-- @Subscription
+- @Subskrypcja
 
 #### Core + Router
 
 - @Clearnet
-- @Data-Directory
-- @Destination
-- @Encryption
+- @katalog-danych
+- @węzeł-docelowy
+- @szyfrowanie
 - @Floodfill
-- @Garlic-Encryption
-- @Garlic-Routing
+- @szyfrowanie-czosnkowe
+- @trasowanie-czosnkowe
 - @I2NP
 - @In-net
 - @Java-I2P
-- @Layered-Encryption
+- @szyfrowanie-warstwowe
 - @Lease
 - @LeaseSet
-- @Message @Messages
+- @wiadomość
 - @NTCP
-- @Network-Database
-- @Router-Info
+- @baza-danych-sieci
+- @informacje-o-routerze
 - @SSU
-- @Transports
-- @Tunnel
+- @Transport
+- @Tunel

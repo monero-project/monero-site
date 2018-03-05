@@ -1,19 +1,19 @@
 ---
 layout: moneropedia
-entry: "Mining"
-terms: ["mining", "miner", "miners"]
-summary: "the process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain"
+entry: "Wydobycie"
+terms: ["wydobycie", "wydobywanie", "wydobywania", "wydobycia", "górnik", "górnicy", "górnika", "górnikowi", "górnikom", "górnikami"]
+summary: "Proces kryptograficznego obliczania matematycznego dowodu do bloku zawierającego wiele transakcji, który następnie jest dodawany do łańcucha bloków."
 ---
 
-### The Basics
+### Podstawy
 
-Mining is the distributed process of confirming transactions on the public ledger of all transactions, aka @blockchain.  Monero nodes use the block chain to distinguish legitimate transactions from attempts to re-spend coins that have already been spent elsewhere. 
+Wydobycie jest rozproszonym procesem potwierdzania transakcji w publicznej zapisie wszystkich transakcji, zwanym @łańcuchem-bloków. Węzły Monero używają łańcucha bloków, aby rozróżnić prawowite transakcje od prób ponownego wydania monet, które już raz zostały wydane.
 
-Monero is powered strictly by Proof of Work. It employs a mining algorithm that has the potential to be efficiently tasked to billions of existing devices (any modern x86 CPU and many GPU's). Monero uses the @CryptoNight Proof of Work (@PoW) algorithm, which is designed for use in ordinary CPUs and GPUs.
+Monero napędzane jest ściśle przez Dowód Pracy. Wykorzystuje on algorytm wydobycia, który potencjalnie może zostać skutecznie przypisany miliardom istniejących urządzeń (wszystkim nowoczesnym CPU x86 i wielu GPU). Monero korzysta z algorytmu @dowodu-pracy @CryptoNight, który został zaprojektowany do użycia na zwykłych CPU i GPU.
 
-The smart mining feature allows transparent CPU mining on the user's computer, far from the de facto centralization of mining farms and pool mining, pursuing Satoshi Nakamoto's original vision of a true P2P currency. 
+Inteligentna funkcja wydobywania pozwala na transparentne wydobycie na komputerze użytkownika, z dala od centralizacji farm wydobywczych oraz stowarzyszeń wydobywczych, dążąc do oryginalnej wizji Satoshi Nakamoto o prawdziwej walucie peer-to-peer.
 
-As of June 2017, botnets made of hacked computers account for a not-insignificant portion of the miners on the Monero network.  This is due to the profitability of mining on CPUs via the @CryptoNight algorithm.
+Zgodnie ze stanem na czerwiec 2017 roku, botnety złożone z zaatakowanych komputerów stanowią nieistotną część górników w sieci Monero. Jest to zasługa rentowności wydobycia na CPU za pomocą algorytmu CryptoNight.
 
 
 

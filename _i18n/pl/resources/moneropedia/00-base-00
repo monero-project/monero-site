@@ -5,6 +5,6 @@ terms: ["", ""]
 summary: ""
 ---
 
-### The Basics
+### Podstawy
 
 {{ page.summary | capitalize }}.

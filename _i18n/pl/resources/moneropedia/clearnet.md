@@ -2,32 +2,32 @@
 layout: moneropedia
 entry: "Clearnet"
 tags: ["kovri"]
-terms: ["Clearnet"]
-summary: "The internet in which anonymous overlay networks are built upon"
+terms: ["Clearnet", "Clearnecie", "clearnetu"]
+summary: "Internet, na którym zbudowane są anonimowe sieci nakładkowe"
 ---
 
-### The Basics
+### Podstawy
 
-When you use the internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:
+Gdy używasz internetu do czytania wiadomości, sprawdzania e-maila, social media i nawet Monero, najprawdopodobniej używasz połączenia clearnet. Oznacza to, że *wszystkie* twoje połączenia mogą być śledzone i monitorowane przez:
 
-- your [ISP](https://en.wikipedia.org/wiki/ISP)
-- the website/service/person you're communicating with
-- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity
+- przez twojego [dostawcę usług internetowych](https://en.wikipedia.org/wiki/ISP)
+- stronę, serwis lub osobę, z którą się komunikujesz
+- ewentualnie podmiot [Sojuszu Pięciorga Oczu] (https://en.wikipedia.org/wiki/5_Eyes).
 
-and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (which *encrypts* your transmission), your route is not hidden nor is it anonymous, thus; it is in the *clear*.
+I nawet jeśli korzystasz z [HTTPS](https://en.wikipedia.org/wiki/HTTPS) lub podobnego rozwiązania (które *szyfruje* twoją transmisję), twoja ścieżka nie jest ukryta ani anonimowa. Stąd, jest ona *jasna*.
 
-### In-depth information
+### Szczegółowe informacje
 
-Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:
+Ponieważ tradycyjna [VPN](https://en.wikipedia.org/wiki/VPN) nie uchroni cię od clearnetu (bo nadal używasz *clearnetu*, mimo że za pewnego rodzaju pośrednictwem), powinieneś korzystać z *anonimowej sieci nakładkowej*, aby uniknąć clearnetu:
 
 - @Kovri
 - @Java-I2P
 - [Tor](https://torproject.org/)
 
-These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous.
+Powyższe technologie chronią przed clearnetem poprzez tworzenie anonimowej sieci **ponad** clearnetem, aby twoje transmisje były zaszyfrowane **i** anonimowe.
 
-Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to @Kovri and @I2P in terms of anonymity with the exception that:
+Tutaj znajdziesz dokładny, [interaktywny diagram](https://www.eff.org/pages/tor-and-https) stworzony przez [EFF](https://www.eff.org/), który opisuje *clearnet* w porównaniu z siecią **Tor**. Pojęcie to odnosi się po części do sieci @Kovri i @I2P pod względem anonimowości, z poniższymi różnicami:
 
-- @Kovri does not use exit nodes when connecting to an @eepsite
-- Your traffic never need to leave the @I2P network
-- You do not need HTTPS to use @Kovri (with the exception of @reseed)
+- @Kovri nie korzysta z węzłów wyjściowych przy połączeniu z @eepsite
+- twoje obciążenie nigdy nie musi opuszczać sieć I2P
+- nie potrzebujesz HTTPS, aby używać Kovri (za wyjątkiem @reseeda).

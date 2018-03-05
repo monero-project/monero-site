@@ -1,25 +1,26 @@
 ---
 layout: moneropedia
-entry: "Payment ID"
-terms: ["payment-ID", "payment-IDs"]
-summary: "an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters"
+entry: "Numer identyfikacyjny płatności"
+terms: ["numer-identyfikacyjny-płatności", "numeru-identyfikacyjnego-płatności", "numerem-identyfikacyjnym-płatności", "numerze-identyfikacyjnym-płatności", "numery-identyfikacyjne-płatności", "numerom-identyfikacyjnym-płatności", "numerach-identyfikacyjnych-płatności"]
+summary: "Opcjonalny znacznik dodawany w celu identyfikacji transakcji pomiędzy użytkownikami, składający się z 64 heksadecymalnych znaków."
 ---
 
-### The Basics
+### Podstawy
 
-Payment ID is an **arbitrary** and **optional** transaction attachment that consists of 32 bytes (64 hexadecimal characters) or 8 bytes (in the case of integrated addresses).
+Numer identyfikacyjny płatności jest **arbitralnym** i **opcjonalnym** załącznikiem transakcji składającym się z 32 bitów (64 heksadecymalnych znaków) lub z 8 bitów (w przypadku adresów zintegrowanych).
 
-The Payment ID is usually used to identify transactions to merchants and exchanges: Given the intrinsic privacy features built into Monero, where a single public address is usually used for incoming transactions, the Payment ID is especially useful to tie incoming payments with user accounts.
+Numer identyfikacyjny płatności jest zazwyczaj używany do identyfikacji transakcji pomiędzy użytkownikami oraz na giełdzie. Ze względu na nieodłączną charakterystykę Monero polegającą na korzystaniu z pojedynczego adresu publicznego do transakcji przychodzących, numer identyfikacyjny płatności jest szczególnie użyteczny w łączeniu płatności przychodzących z kontem użytkownika.
 
-### Compact Payment ID's and Integrated Addresses
+### Kompaktowy numer identyfikacyjny płatności a adresy zintegrowane
 
-Since the 0.9 Hydrogen Helix version, the Payment IDs can be encrypted and embedded in a payment address. The payment ID's of this type should be 64-bits and are encrypted with a random one-time key known only to the sender and receiver.
+Począwszy od wersji 0.9 Hydrogen Helix, numery identyfikacyjne płatności mogą zostać zaszyfrowane i włączone do adresu płatności. Numery identyfikacyjne tego rodzaju powinny być 64-bitowe oraz muszą być zaszyfrowane losowym jednorazowym kluczem, znanym jedynie nadawcy i odbiorcy.
 
-### Creating a Payment ID
-It is recommended to use the official wallet's `integrated_address` command to automatically generate Integrated Addresses that contain Compact Payment ID's. If you want to use the command line, you can generate Payment ID's as follows:
+### Tworzenie numeru identyfikacyjnego płatności
 
-Creating a compact Payment ID for an Integrated Address:
+Zaleca się korzystanie z oficjalnej funkcji portfela `integrated_address` do automatycznego wygenerowania adresu zintegrowanego zawierającego kompaktowy numer identyfikacyjny płatności. Jeśli chcesz użyć wiersza poleceń, postępuj jak poniżej:
+
+Tworzenie kompaktowego numeru identyfikacyjnego dla adresu zintegrowanego:
 ```# openssl rand -hex 8```
 
-Creating an old-style Payment ID:
+Tworzenie tradycyjnego numeru identyfikacyjnego:
 ```# openssl rand -hex 32```

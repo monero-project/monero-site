@@ -1,25 +1,25 @@
 ---
 layout: moneropedia
-entry: "Garlic-Encryption"
+entry: "Szyfrowanie czosnkowe"
 tags: ["kovri"]
-terms: ["Garlic-Encryption", "Layered-Encryption"]
-summary: "Layered encryption as implemented in Kovri / I2P"
+terms: ["szyfrowanie-czosnkowe", "szyfrowaniu-czosnkowemu", "szyfrowaniem-czosnkowym", "szyfrowanie-warstwowe", "szyfrowaniem-warstwowym", "szyfrowaniu-warstwowemu", "szyfrowania-warstwowego"]
+summary: "Szyfrowanie warstwowe wdrożone w Kovri / I2P"
 ---
 
-### The Basics
+### Podstawy
 
-@garlic-encryption is @I2P's implementation of @message based @layered-encryption (similar to flow-based [Onion-Routing](https://en.wikipedia.org/wiki/Onion_routing)).
+Szyfrowanie "czosnkowe" jest implementacją @szyfrowania-warstwowego opartego na @wiadomości w sieci @I2P (podobną do opartego na przepływie [trasowania cebulowego](https://en.wikipedia.org/wiki/Onion_routing)).
 
-By @encrypting @messages in layers, this allows a @message to be routed through a sequence of proxies without allowing the proxies (or any intermediaries) to read the contents of the @message. @Layered-Encryption is a fundamental feature in @Kovri, @I2P, and [Tor](https://torproject.org) and is the cornerstone for securing anonymity within these overlay-networks.
+Poprzez @szyfrowanie wiadomości w warstwach, wiadomość jest prowadzona przez serię proxy, nie pozwalając na to, aby proxy (lub inny pośrednik) mógł odczytać jej treść. @Szyfrowanie-warstwowe jest główną charakterystyką @Kovri, @I2P oraz sieci [Tor](https://torproject.org) i jest podstawą dla zabezpieczenia anonimowości w tych sieciach warstwowych.
 
-### In-depth information
+### Szczegółowe informacje
 
-For @garlic-encryption, the primary difference between @Kovri/@I2P and Tor is:
+Głównymi różnicami pomiędzy Kovri/I2P a Tor w zakresie szyfrowania czosnkowego są:
 
-- @Kovri/@I2P bundles multiple @messages together to form garlic "cloves"
-  - any number of messages can be contained in a "clove" instead of *only* a single message
-- @Kovri/@I2P uses [ElGamal](https://en.wikipedia.org/wiki/ElGamal)/[AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) @encryption for @messages and @transports
+- @Kovri/@I2P łączy wiele wiadomości razem, tworząc "ząbki czosnku"
+- na "ząbek czosnku" może składać się dowolny numer wiadomości, a nie *tylko jedna* wiadomość
+- @Kovri/@I2P korzysta z algorytmu [ElGamal](https://en.wikipedia.org/wiki/ElGamal)/[AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) dla wiadomości i transportu.
 
-### Notes
+### Adnotacje
 
-For details, see @garlic-routing.
+Aby dowiedzieć się więcej, przejdź do strony @trasowanie-czosnkowe.

@@ -1,10 +1,10 @@
 ---
 layout: moneropedia
-entry: "Consensus"
-terms: ["consensus", "consensus-network"]
-summary: "consensus describes a property of distributed networks like Monero where most of the participants follow the rules, and thus reject bad participants"
+entry: "zgoda"
+terms: ["zgoda", "sieć-zgody", "sieci-zgody", "zgodzie", "zgody"]
+summary: "Charakterystyka rozproszonych sieci, takich jak Monero, gdzie większość członków przestrzega zasad i tym samym odrzuca szkodliwych uczestników."
 ---
 
-### The Basics
+### Podstawy
 
 {{ page.summary | capitalize }}.

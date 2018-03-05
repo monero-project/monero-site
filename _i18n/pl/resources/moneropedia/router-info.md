@@ -1,18 +1,18 @@
 ---
 layout: moneropedia
-entry: "Router-Info"
+entry: "Informacje o routerze"
 tags: ["kovri"]
-terms: ["Router-Info", "Router-infos"]
-summary: "A data structure or file which contains an I2P peer's needed network information"
+terms: ["informacje-o-routerze", "informacjom-o-routerze", "informacjami-o-routerze", "informacji-o-routerze"]
+summary: "Struktura danych lub plik zawierający potrzebne informacje sieciowe na temat peerów I2P."
 ---
 
-### The Basics
+### Podstawy
 
-@Router-Info is a data structure (periodically written to a [binary file](https://en.wikipedia.org/wiki/Binary_file)) which contains all needed information to locate, identify, and communicate with an @I2P peer. @Router-Info includes IP address, router identity, other misc. technical details; is needed for @network-database and is published to @floodfill routers.
+Informacje o routerze są strukturą danych (cyklicznie zapisywaną w [pliku binarnym](https://en.wikipedia.org/wiki/Binary_file)), która zawiera wszystkie informacje potrzebne do zlokalizowania, zidentyfikowania i skomunikowania się z peerem sieci @I2P. Zawiera ona adres IP, tożsammość routera i inne szczegóły techniczne potrzebne do @bazy-danych-sieci i jest publikowana do routerów @floodfill.
 
-### In-depth information
+### Szczegółowe informacje
 
-In human-readable form, Router-Info may look like this:
+Czytelna forma informacji o routerze może wyglądać następująco:
 
 ```
 Identity: [RouterIdentity:
@@ -63,6 +63,6 @@ Options (2):
         [port] = [22244]]]
 ```
 
-### Notes
+### Adnotacje
 
-For details and specification, visit @Java-I2P [Network Database](https://geti2p.net/en/docs/how/network-database) page.
+Aby dowiedzieć się więcej na temat specyfikacji, przejdź do strony [Bazy Danych Sieci](https://geti2p.net/en/docs/how/network-database) @Java-I2P.

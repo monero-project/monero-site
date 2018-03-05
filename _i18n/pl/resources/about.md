@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="about-monero">
     <section class="container">
             <div class="row">
@@ -7,14 +6,14 @@
                     <div class="info-block text-adapt">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>A Brief History</h2>
+                                <h2>Krótka historia</h2>
                             </div>
                         </div>
 <div markdown="1"> 
 
-Monero was launched in April 2014. It was a fair, pre-announced launch of the CryptoNote reference code. There was no premine or instamine, and no portion of the block reward goes to development. See the original Bitcointalk thread here. The founder, thankful_for_today, proposed some controversial changes that the community disagreed with. A fallout ensued, and the Monero Core Team forked the project with the community following this new Core Team. This Core Team has provided oversight since.
+Monero zostało uruchomione w kwietniu 2014 roku, kiedy po zapowiedzi zainicjowano kod referencyjny w CryptoNote. Nie istniało pre-wydobycie ani wydobycie natychmiastowe, a żadna część wynagrodzenia za blok nie szła do dewelopera. Da się w tym zauważyć nawiązanie do oryginalnego Bitcoina. Twórca - thankful_for_today - zawnioskował o kilka kontrowersyjnych zmian, z którymi nie zgodziła się społeczność. Nastąpił rozłam i Podstawowy Zespół Monero rozpoczął nowy projekt z własną społecznością. Od tego czasu, nadzór sprawuje ten sam Podstawowy Zespół.
 
-Monero has made several large improvements since launch. The blockchain was migrated to a different database structure to provide greater efficiency and flexibility, minimum ring signature sizes were set so that all transactions were private by mandate, and RingCT was implemented to hide the transaction amounts. Nearly all improvements have provided improvements to security or privacy, or they have facilitated use. Monero continues to develop with goals of privacy and security first, ease of use and efficiency second.
+Od czasu wypuszczenia, Monero uległo wielu znaczącym zmianom. Łańcuch bloków został przeniesiony do bazy danych o innej strukturze w celu zwiększenia wydajności i elastyczności, ustalono minimalne rozmiary podpisów pierścieniowych, aby wszystkie płatności były odgórnie prywatne oraz wdrożono system RingCT do ukrycia kwot transakcji. Niemal wszystkie ulepszenia spowodowały zwiększenie bezpieczeństwa i prywatności lub ułatwiły używanie waluty. Monero ciągle się rozwija i ma jako główny cel prywatność i bezpieczeństwo, a jako drugi cel - łatwość użycia i efektywność.
                            
 </div>
                     </div>
@@ -27,25 +26,26 @@ Monero has made several large improvements since launch. The blockchain was migr
                     <div class="info-block text-adapt">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Our Values</h2>
+                                <h2>Nasze wartości</h2>
                             </div>
                         </div>
                         
 <div markdown="1">
 
-Monero is more than just a technology. It’s also what the technology stands for. Some of the important guiding philosophies are listed below.
+Monero to coś więcej niż tylko technologia. Jest także tym, co technologia oznacza. Niektóre z wiodących myśli zostały wypunktowane poniżej.
 
-### Security
 
-Users must be able to trust Monero with their transactions, without risk of error or attack. Monero gives the full block reward to the miners, who are the most critical members of the network who provide this security. Transactions are cryptographically secure using the latest and most resilient encryption tools available.
+### Bezpieczeństwo
 
-### Privacy 
+Użytkownicy muszą ufać Monero w swoich płatnościach, nie obawiając się ryzyka błędu lub ataku. Monero oferuje wynagrodzenie całego bloku górnikom, którzy są najistotniejszymi członkami sieci zapewniającej to bezpieczeństwo. Transakcje są kryptograficznie bezpieczne dzięki użyciu najnowszych i najsilniejszych dostępnych narzędzi szyfrowniczych.
 
-Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
+### Prywatność 
 
-### Decentralization 
+Monero bierze prywatność na serio. Monero musi być w stanie chronić swoich użytkowników w sądzie, a także, w ekstremalnych przypadkach, od kary śmierci. Taki poziom bezpieczeństwa musi być w całości dostępny dla wszystkich użytkowników, niezależnie od tego, czy posiadają oni wiedzę technologiczną, czy nie mają pojęcia, jak działa Monero. Użytkownik powinien w zupełności ufać Monero, aby nie czuł się zobowiązany do zmiany swojego sposobu płatności pod ryzykiem zostania wykrytym przez innych.
+
+### Decentralizacja 
                           
-Monero is committed to providing the maximum amount of decentralization. With Monero, you do not have to trust anyone else on the network, and it is not run by any large group. An accessible “Proof of Work” algorithm makes it easy to mine Monero on normal computers, which makes it more difficult for someone to purchase a large amount of mining power. Nodes connect to each other with I2P to lower the risks of revealing sensitive transaction information and censorship (tba). Development decisions are extremely clear and open to public discussion. Developer meeting logs are published online in their entirety and visible by all. 
+Monero jest zobowiązane do dostarczenia maksymalnej decentralizacji. Nie musisz ufać nikomu w sieci, Monero nie jest prowadzone przez żadną dużą grupę. Dostępny algorytm dowodu pracy ułatwia wydobywanie Monero na zwykłych komputerach, co utrudnia nabycie przez jednostkę znacznej mocy wydobywczej. Węzły łączą się za pomocą sieci I2P, aby zmniejszyć ryzyko cenzury oraz ujawnienia wrażliwych informacji dotyczących transakcji. Decyzje o rozwoju są jasne i otwarte na publiczną dyskusję. Zapisy z czatów deweloperów są w całości publikowane na stronie internetowej i są widoczne dla wszystkich. 
                            
 </div>
                     </div>

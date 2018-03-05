@@ -1,25 +1,25 @@
 ---
 layout: moneropedia
-entry: "Node"
-terms: ["node", "nodes", "full-node", "full-nodes"]
-summary: "a device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network"
+entry: "Węzeł"
+terms: ["węzeł", "węzła", "węzłowi", "węzły", "węzłom", "węzłami"]
+summary: "Urządzenie internetowe uruchamiające oprogramowanie Monero, posiadające pełną kopię łańcuchów bloków monero i aktywnie biorące udział w sieci Monero."
 ---
 
-### The Basics
+### Podstawy
 
 {{ page.summary | capitalize }}.
 
-### More Information
+### Szczegółowe informacje
 
-Nodes participate in the Monero network and secure @transactions by enforcing the rules of the network. Nodes download the entire @blockchain to know what transactions have taken place. Nodes assist the network by relaying transactions to other nodes on the network. Nodes may also choose contribute to the Monero network by participating in crafting @blocks (this is called @mining). 
+Węzły biorą udział w sieci Monero i zabezpieczają @transakcje poprzez egzekwowanie zasad sieci. Węzły ściągają cały @łańcuch-bloków, aby być na bieżąco z dokonanymi transakcjami. Biorą one udział w sieci poprzez przekazywanie między sobą transakcji. Mogą one także brać udział w tworzeniu @bloków (proces ten nazywa się @wydobyciem).
 
-Mining is the process by which nodes create a block from the previously accepted block, transactions that are waiting to be processed in the @tx-pool, and the @coinbase. When a node believes it has crafted a valid block it will transmit the completed block to other nodes on the network and those nodes signal agreement by working on the next block in the chain. 
+Wydobywanie jest procesem, w którym węzły tworzą nowy blok z poprzednio zaakceptowanego bloku, transakcji oczekujących na przetworzenie w @puli-transakcji oraz z @transakcji-coinbase. Gdy nowo utworzony blok jest uznany za ważny, węzeł przekazuje go kolejnym węzłom w sieci, które sygnalizują zgodność poprzez rozpoczęcie pracy nad kolejnym blokiem łańcucha.
 
-The rules that nodes follow are built into the Monero software; When all nodes agree about the rules to follow this is called @consensus). Consensus is necessary for a cryptocurrency because it is how the blockchain is built; If nodes don't agree about which blocks are valid, for example people who have not updated their Monero software, those nodes that don't agree will no longer be able to participate in the Monero network.
+Zasady kierujące węzłami są wbudowane w oprogramowanie Monero. Sytuacja, gdy wszystkie węzły przyjmują ustalone zasady, nazywana jest @zgodą. Zgoda (konsensus) jest niezbędna dla kryptowaluty, ponieważ jest podstawą budowy bloków - węzły, które nie zgadzają się w sprawie ważności bloków (to na przykład użytkownicy ze zdezaktualizowanym oprogramowaniem), nie będą mogły kontynuować swojego udziału w sieci Monero.
 
-The Monero Core Team plans for a @hardforks every 6 months, to occur in September and March of each year. At that time, if you are running a node it must be updated to the most recent version of the Monero software or it will no longer be able to participate in the network. 
+Centralny Zespół Monero planuje dokonywać @hardforku co 6 miesięcy - we wrześniu i marcu każdego roku. Jeśli w tym czasie operujesz węzłem, musisz go zaktualizować do najnowszej wersji oprogramowania Monero, w przeciwnym razie zostaniesz wykluczony z sieci Monero.
 
 ---
 
-##### Other Resources
-<sub>1. *Fluffypony gives a great explanation of why mandatory hardforks are good for Monero.* ([Monero Missives for the Week of 2016-06-20](https://getmonero.org/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
+##### Inne źródła
+<sub>1. *Fluffypony dał dobry przykład tego, dlaczego obowiązkowe hardforki służą dobru Monero.* ([Monero Missives for the Week of 2016-06-20](https://getmonero.org/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>

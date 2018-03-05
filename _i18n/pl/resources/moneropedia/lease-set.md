@@ -3,23 +3,23 @@ layout: moneropedia
 entry: "Lease-Set"
 tags: ["kovri"]
 terms: ["LeaseSet", "LeaseSets"]
-summary: "Contains all currently authorized Leases for a particular I2P Destination"
+summary: "Zestaw wszystkich aktualnie zautoryzowanych leasów dla pojedynczego węzła docelowego I2P."
 ---
 
-### The Basics
+### Podstawy
 
-A Lease-Set contains a set of authorized @leases (and other related information) for a particular @destination.
+Lease-Set jest zestawem zautoryzowanych @leasów (i pozostałych istotnych informacji) dla pojedynczego @węzła-docelowego sieci @I2P.
 
-### In-depth information
+### Szczegółowe informacje
 
-A Lease-Set contains:
+Lease Set zawiera:
 
-- all of the currently authorized @leases for a particular @destination
-- the public key to which garlic messages can be encrypted (see @garlic-routing)
-- the signing public key that can be used to revoke this particular version of the structure
+- wszystkie aktualnie zautoryzowane leasy dla pojedynczego węzła docelowego
+- publiczny klucz, według którego zaszyfrowane mogą być @wiadomości (zobacz: @trasowanie-czosnkowe)
+- publiczny klucz podpisu, który może zostać użyty do unieważnienia danej wersji struktury
 
-The Lease-Set is one of the two structures stored in the @network-database (the other being @router-info), and is keyed under the SHA256 of the contained @destination.
+Lease Set jest jedną z dwóch struktur przechowywanych w @bazie-danych-sieci (drugą są @informacje-o-routerze) i zaszyfrowany jest funkcją SHA256 zawartego @węzła-docelowego.
 
-### Notes
+### Adnotacje
 
-For further details, read @Java-I2P's [LeaseSet](https://geti2p.net/en/docs/how/network-database#leaseSet)
+Aby dowiedzieć się więcej, przejdź do strony [LeaseSet](https://geti2p.net/en/docs/how/network-database#leaseSet) @Java-I2P.

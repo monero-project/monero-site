@@ -1,19 +1,19 @@
 ---
 layout: moneropedia
-entry: "Destination"
+entry: "Węzeł docelowy"
 tags: ["kovri"]
-terms: ["Destination", "Destinations"]
-summary: "A in-net address that serves as a final endpoint (either local or remote)"
+terms: ["węzeł-docelowy", "węzła-docelowego", "węźle-docelowym"]
+summary: "Adres internetowy będący punktem końcowym, zarówno lokalnym jak i odległym."
 ---
 
-### The Basics
+### Podstawy
 
-A @destination is the @I2P @in-net address of the final endpoint you are trying to connect to (example: an @I2P website, service, or Monero node). This can also include a *local destination* of which *other* peers need to connect to in order to make contact for communication (similar to how, in @clearnet, your IP address is given to a website when you connect so it knows *where* to send the information back to).
+Węzeł docelowy jest adresem końcowym sieci @I2P, z którym chcesz się połączyć, np. stroną internetową w sieci I2P, serwisem lub węzłem Monero. Może on także uwzględniać *węzeł docelowy lokalny*, którego pozostali użytkownicy także muszą się połączyć aby nawiązać komunikację (podobnie jak w @clearnecie twój adres IP jest przekazany stronie podczas połączenia, aby wiadomo było *dokąd* wysłać informacje zwrotne).
 
-### In-depth Information
+### Szczegółowe informacje
 
-An @I2P destination can be encoded into a @base32-address or @base64-address. Most users will only care about @base32-address or a `.i2p` hostname while, internally, @Kovri / @I2P @address-book uses @base64-addresses. Ultimately, all @destinations in @I2P are 516-byte (or longer) keys:
+Węzeł docelowy I2P może być zakodowany w @adresie-base32 lub @adresie-base64. Większość użytkowników przejmie się jedynie adresem Base32 lub nazwą hosta `.i2p`, podczas gdy, wewnętrznie, @Kovri i @książka-adresowa korzystają z @adresu-base64. Ostatecznie wszystkie węzły docelowe w I2p są 516-bajtowymi kluczami (lub dłuższymi):
 
 `256-byte public key + 128-byte signing key + a null certificate = 516 bytes in Base64 representation`
 
-Note: certificates are not used now but, if they were, the keys would be longer.
+Uwaga: certyfikaty nie zostały tu użyte, ale gdyby były, klucze byłyby jeszcze dłuższe.

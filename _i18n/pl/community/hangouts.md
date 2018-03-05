@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-The Monero community is diverse and varied. We come from all over, but we definitely have some places we like to hang out together. You'll find most of them below. Join us!
+Społeczność Monero jest różnorodna. Jesteśmy na całym świecie, ale mamy swoje ulubione miejsca spotkań. Większość z nich znajdziesz poniżej. Dołącz do nas!
 </div>
 
 <div class="hangouts">
@@ -29,11 +28,12 @@ The Monero community is diverse and varied. We come from all over, but we defini
                         <div class="info-block">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>Workgroup Resources</h2>
+                                    <h2>Materiały do pracy grupowej</h2>
                                 </div>
                             </div>
                             <div class="row center-xs">
-                                <p>In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects. Mattermost even has relays into the most popular Monero-related IRC channels.</p>
+                                <p>Aby wspomóc pracę grupową, Monero posiada wiele materiałów, które mogą zostać użyte na spotkaniach i przy planowaniu projektów. Najistotniejsze z nich są nawet przekazywane najpopularniejszym kanałom IRC związanym z Monero.
+                               </p>
                             </div>
                             <div class="row relays around-xs">
                                 <div class="col-md-4 col-sm-4 col-xs-4">
@@ -50,11 +50,12 @@ The Monero community is diverse and varied. We come from all over, but we defini
                         <div class="info-block">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>IRC Channels</h2>
+                                    <h2>Kanały IRC</h2>
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.</p>
+                                <p>Społeczność Monero używa wielu kanałów IRC, a każdy z nich jest przeznaczony do czegoś innego. Niektóre z nich służą do pracy, a niektóre do pogadania. Najpopularniejsze z nich znajdziesz poniżej.
+                                </p>
                             </div>
                             <div class="row irc">
                                 {% for channel in site.data.irc %}
@@ -76,17 +77,18 @@ The Monero community is diverse and varied. We come from all over, but we defini
                                 <div class="col"><h2>Stack Exchange</h2></div>
                             </div>
                             <div class="row start-xs">
-                                <p>The Monero Stack Exchange is a quick and easy way to ask questions and get answers. Below you'll find some high quality question/answer pairs to some frequently asked questions.</p>
+                                <p>Stack Exchange Monero jest szybkim i prostym sposobem na zadanie pytania i uzyskanie odpowiedzi. Poniżej znajdziesz kilka istotnych odpowiedzi na często zadawane pytania.
+                              </p>
                             </div>
                             <div class="row start-xs sequestions">
-                                <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Why does monero have higher transaction fees than bitcoin?</a>
-                                <a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">What does Monero's scaling roadmap look like?</a>
-                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">What cryptography primitives/concepts, other than the basic ones, does Monero use?</a>
-                                <a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">How to extract data from local blockchain?</a>
-                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">Hiding TCP traffic for Monero miners?</a>
+                                <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Dlaczego opłaty za transakcje Monero są wyższe niż opłaty za Bitcoina?</a>
+                                <a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">Jak wygląda oś czasu skalowania Monero?</a>
+                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">Jakich pojęć kryptograficznych używa Monero, poza tymi podstawowymi?</a>
+                                <a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">Jak wyodrębnić dane z lokalnego łańcucha bloków?</a>
+                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">Ukrycie Protokołu Kontroli Transmisji dla górników.</a>
                             </div>  
                             <div class="row center-xs">
-                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Visit Stack Exchange</a></p>
+                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Odwiedź Stack Exchange</a></p>
                             </div>
                         </div>
                </div>

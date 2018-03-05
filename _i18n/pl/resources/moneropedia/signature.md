@@ -1,10 +1,10 @@
 ---
 layout: moneropedia
-entry: "Cryptographic Signature"
-terms: ["signature", "signatures"]
-summary: "a cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed"
+entry: "Podpis kryptograficzny"
+terms: ["podpis", "podpisu", "podpisie"]
+summary: "Kryptograficzna metoda na udowodnienie posiadania jakiejś informacji oraz że dana informacja nie została zmieniona po podpisaniu."
 ---
 
-### The Basics
+### Podstawy
 
 {{ page.summary | capitalize }}.

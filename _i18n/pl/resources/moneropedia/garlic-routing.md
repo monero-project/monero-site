@@ -2,44 +2,43 @@
 layout: moneropedia
 entry: "Garlic Routing"
 tags: ["kovri"]
-terms: ["Garlic-Routing"]
-summary: "Routing technology as implemented in Kovri"
+terms: ["trasowanie-czosnkowe", "trasowania-czosnkowego", "trasowaniu-czosnkowym", "trasowaniem-czosnkowym"]
+summary: "Technologia trasowania (rutingu, rutowania) wdrożona w Kovri."
 ---
 
-### The Basics
+### Podstawy
 
-The term *@garlic-routing* has a diverse history of varying interpretations. As it currently stands, Monero defines *@garlic-routing* as the method in which @Kovri and @I2P create a @message-based anonymous overlay network of internet peers.
+Pojęcie *trasowanie czosnkowe* posiada wiele interpretacji. Aktualnie Monero definiuje je jako metodę, którą @Kovri i @I2P tworzą anonimową sieć nakładkową peerów internetowych opartą na @wiadomościach.
 
-The @Garlic-Encryption of @Garlic-Routing is similar to the @Layered-Encryption of [Onion Routing](https://en.wikipedia.org/wiki/Onion_routing) and effectively conceals the IP address of the sender and secures information sent from the sender to its @destination (and vice-versa).
+@Szyfrowanie-czosnkowe trasowania czosnkowego jest podobne do @szyfrowania-warstwowego w [trasowaniu cebulowym](https://en.wikipedia.org/wiki/Onion_routing) i efektywnie ukrywa adresy IP nadawcy oraz zabezpiecza informacje wysłane do @węzła-docelowego (i vice-versa).
 
-### History
+### Historia
 
-In written form, the term *@garlic-routing* can be seen as early as June of 2000 in Roger Dingledine's [Free Haven Master's thesis](http://www.freehaven.net/papers.html) (Section 8.1.1) as derived from the term Onion Routing.
+W formie pisanej pojęcie *garlic routing* pojawiło się w czerwcu 2000 roku w pracy dyplomowej Rogera Dingledine'a [Free Haven](http://www.freehaven.net/papers.html) (Sekcja 8.1.1) jako pochodna pojęcia "trasowanie cebulowe".
 
-As recent as October of 2016, [#tor-dev](https://oftc.net/WebChat/) has offered insight into the creation of the term *@garlic-routing*:
+W październiku 2016 roku kanał [#tor-dev](https://oftc.net/WebChat/) zaproponował stworzenie pojęcia "trasowanie czosnkowe":
 
 [Nick Mathewson](https://en.wikipedia.org/wiki/The_Tor_Project,_Inc):
->[I think that there was some attempt to come up with a plant whose structure resembled the 'leaky-pipe' topology of tor, but I don't believe we ever settled on one.]
+>[Myślę, że chodziło o wymyślenie jakiejś rośliny, której struktura odwzorowywałaby topologię "nieszczelnej rury" sieci Tor, ale nie sądzę, że poprzestaniemy na jednej.]
 
 [Roger Dingledine](https://en.wikipedia.org/wiki/Roger_Dingledine):
->during the free haven brainstorming, there was a moment where we described a routing mechanism, and somebody said "garlic routing!", and everybody laughed.
-so we for sure thought we had invented the name, at the time.
+>Podczas burzy mózgów przy pisaniu "Free Haven" był moment, w którym opisywaliśmy mechanizmy trasowania i ktoś powiedział "trasowanie czosnkowe!" i wszyscy się zaśmiali. Byliśmy pewni, że wymyśliliśmy nową nazwę.
 
-*Note: permission to use the aforementioned quotes was granted by Nick Mathewson and Roger Dingledine*
+*Uwaga: na użycie cytowanych wypowiedzi wyrazili zgodę Nick Mathewson i Roger Dingledine*
 
-### In-depth Information
+### Szczegółowe informacje
 
-In technical terms, for @Kovri and @I2P, *@garlic-routing* translates to any/all of the following:
+W kategoriach technicznych, trasowanie czosnkowe w @Kovri i @I2P oznacza wszystkie poniższe:
 
-- @Layered-Encryption (similar to the @layered-encryption in Onion Routing)
-- Bundling multiple @messages together (garlic cloves)
-- ElGamal/AES @encryption
+- @szyfrowanie-warstwowe (podobnie do szyfrowania warstwowego w trasowaniu cebulowym)
+- łączenie ze sobą wielu @wiadomości (tworzenie "ząbków czosnku")
+- @szyfrowanie algorytmem ElGamal/AES
 
-*Note: though [Tor](https://torproject.org/) uses @layered-encryption, Tor does not use ElGamal and is not message-based.*
+*Uwaga: mimo że [Tor](https://torproject.org/) korzysta z szyfrowania warstwowego, nie używa on algorytmu ElGamal i nie jest oparty na wiadomościach.*
 
-**Read more in @garlic-encryption.**
+**Czytaj więcej na stroine @szyfrowanie-czosnkowe.**
 
-### Notes
+### Adnotacje
 
-- In terms of Onion/Garlic Routing, another way to envision layered @encryption is by replacing the onion/garlic with a [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll) - with each outer/inner doll having a lock and public key to the next/previous doll
-- For more technical details on Garlic Routing, read the @Java-I2P entry on [Garlic Routing](https://geti2p.net/en/docs/how/garlic-routing)
+- W kategoriach trasowania cebulowego/czosnkowego, innym sposobem na wizualizację szyfrowania warstwowego jest zastąpienie cebuli/czosnku [matrioszką](https://en.wikipedia.org/wiki/Matryoshka_doll) - każda lalka jest blokadą posiadającym publiczny klucz do kolejnej lub poprzedniej lalki.
+- Aby dowiedzieć się więcej na temat trasowania czosnkowego, przejdź do strony @Java-I2P w [trasowaniu czosnkowym](https://geti2p.net/en/docs/how/garlic-routing).

@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="team">
 
    <section class="container">
@@ -7,7 +6,7 @@
                         <div class="tabPanel-widget">
                            <label for="tab-1" tabindex="0"></label>
                             <input id="tab-1" type="radio" name="tabs" aria-hidden="true" checked>
-                            <h2>Core</h2>
+                            <h2>Centrum</h2>
                             <div class="tabPanel-content">
                               <div class="row">
                                 {% for toplevel in site.data.team %}
@@ -41,13 +40,13 @@
                             </div>
                             <label for="tab-2" tabindex="0"></label>
                             <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-                            <h2>Developers</h2>
+                            <h2>Deweloperzy</h2>
                             <div class="tabPanel-content">
                              <div class="container full">
                                    <div class="info-block text-adapt">
                                         <div class="row">
                                             <div class="col-xs-12 text-adapt">
-                                                <p>The Monero Project has had well over 200 contributors over the life of the project. For a complete list, please see the <a href="https://www.openhub.net/p/monero/contributors">OpenHub contributors page</a>. Below you'll find some individuals that have gone above and beyond for Monero.</p>
+                                                <p>W Projekcie Monero wzięło udział ponad 200 twórców. Aby zobaczyć całą listę, wejdź        na <a href="https://www.openhub.net/p/monero/contributors">stronę twórców OpenHub</a>. Poniżej znajdziesz listę osób, które szczególnie się przyczyniły dla Monero. </p>
                                             </div>
                                         </div>
                                     </div>
@@ -81,7 +80,7 @@
                             </div>
                             <label for="tab-3" tabindex="0"></label>
                             <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
-                            <h2>Community</h2>
+                            <h2>Społeczność</h2>
                             <div class="tabPanel-content">
                               <div class="row">
                                 {% for toplevel in site.data.team %}
@@ -112,7 +111,7 @@
                             </div>
                             <label for="tab-4" tabindex="0"></label>
                             <input id="tab-4" type="radio" name="tabs" aria-hidden="true">
-                            <h2>Research Lab</h2>
+                            <h2>Laboratorium Badawcze</h2>
                             <div class="tabPanel-content">
                               <div class="row">
                                 {% for toplevel in site.data.team %}
@@ -143,7 +142,7 @@
                             </div>
                             <label for="tab-5" tabindex="0"></label>
                             <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
-                            <h2>Special Thanks</h2>
+                            <h2>Specjalne podziękowania</h2>
                             <div class="tabPanel-content">
                               <div class="row">
                                 {% for toplevel in site.data.team %}

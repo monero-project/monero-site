@@ -1,13 +1,15 @@
 ---
 layout: moneropedia
-entry: "Blockchain"
-terms: ["blockchain", "blockchains"]
-summary: "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
+entry: "Łańcuch bloków"
+terms: ["łańcuch-bloków", "łańcuchu-bloków", "łańcuchowi-bloków"]
+summary: "Przekazywany rejestr wszystkich transakcji minionych i obecnych, który nie ujawnia nadawcy i odbiorcy płatności."
 
 ---
 
-### The Basics
-A @blockchain is a distributed database that continuously grows with a record of all of the transactions that have occurred with a given cryptocurrency.  This database is often referred to as a ledger because the data contains a large list of transactions that have taken place.  In Monero, these transactions are packaged together into 'blocks' every 2 minutes (on average) and all miners and nodes on the network have copies of these blocks.  
+### Podstawy
 
-### Monero's @Blockchain
-Unlike Bitcoin and other cryptocurrencies, transactions in the Monero @blockchain do not reveal where funds came from or went to, providing anonymity and making the currency completely @fungible. Additionally, the amounts of all transactions are hidden by @RingCT, a feature of Monero. For auditing or other transparency purposes a user can share a @view-key to prove they control certain amounts of @Moneroj.
+Łańcuch bloków jest powszechną bazą danych, która ciągle się powiększa, zapisując wszyskie transakcje dokonane w danej kryptowalucie. Ta baza danych często porównywana jest do księgi przychodów i rozchodów ze względu na obszerną listę dokonanych płatności. W przypadku Monero, transakcje te pakowane są średnio co dwie minuty w bloki, których kopie posiadają wszyscy górnicy i węzły w sieci.
+
+### Łańcuch bloków Monero
+
+W odróżnieniu od Bitcoina i innych kryptowalut, transakcje w łańcuchu bloków Monero nie ujawniają nadawcy i odbiorcy, oferując anonimowość i czyniąc walutę zupełnie @zamienną. Dodatkowo kwoty wszystkich płatności są ukryte przez @Poufne-Transakcje-Pierścieniowe, charakterystykę Monero. W celach audytowych lub transparencyjnych, użytkownik może ujawnić @klucz-widoczności, aby dowieść, że ma w posiadaniu pewną ilość Monero.

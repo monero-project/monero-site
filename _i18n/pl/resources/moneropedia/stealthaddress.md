@@ -1,16 +1,16 @@
 ---
 layout: moneropedia
-entry: "Stealth Address"
-terms: ["stealth-address", "stealth-addresses"]
-summary: "automatic one-time addresses for every transaction"
+entry: "Ukryty adres"
+terms: ["ukryty-adres", "ukrytym-adresie", "ukrytego-adresu", "ukrytym-adresem"]
+summary: "Automatyczny jednorazowy adres każdej transakcji."
 ---
 
-### The Basics
+### Podstawy
 
-Stealth addresses are an important part of Monero's inherent privacy. They allow and require the sender to create random one-time addresses for every @transaction on behalf of the recipient. The recipient can publish just one address, yet have all of his/her incoming payments go to unique addresses on the @blockchain, where they cannot be linked back to either the recipient's published address or any other transactions' addresses. By using stealth addresses, only the sender and receiver can determine where a payment was sent.
+Ukryte adresy są istotną częścią nieodłącznej prywatności Monero. Pozwalają one i wymagają od nadawcy stworzenia losowego jednorazowego adresu w imieniu odbiorcy przy każdej @transakcji. Odbiorca może opublikować tylko jeden adres i mimo to otrzymywać wszystkie płatności na unikalny adres w @łańcuchu-bloków, gdzie nie mogą one zostać powiązane ani z publicznym adresem odbiorcy, ani z żadnym innym adresem transakcji. Korzystając z urkytego adresu, jedynie nadawca i odbiorca mogą wiedzieć, dokąd płatność została wysłana.
 
-When you create a Monero account you’ll have a private @view-key, a private @spend-key, and a Public Address. The @spend-key is used to send payments, the @view-key is used to display incoming transactions destined for your account, and the Public Address is for receiving payments. Both the @spend-key and @view-key are used to build your Monero address. You can have a “watch only” wallet that only uses the @view-key. This feature can be used for accounting or auditing purposes but is currently unreliable due to the inability to track outgoing transactions. You can decide who can see your Monero balance by sharing your @view-key. Monero is private by default and optionally semi-transparent!
+Przy tworzeniu swojego konta Monero, otrzymasz prywatny @klucz-widoczności, prywatny @klucz-wydawania oraz adres publiczny. Klucz wydawania służy do przesyłania płatności, klucz widoczności do wyświetlania transakcji przychodzących na twoje konto, a adres publiczny - do otrzymywania płatności. Zarówno klucz wydawania, jak i klucz widoczności, składają się na twój adres Monero. Możesz posiadać portfel "tylko do odczytu", który korzysta jedynie z klucza widoczności. Funkcja ta może służyć do celów księgowości lub audytu, jednak obecnie jest ona nierzetelna, z powodu niemożliwości śledzenia transakcji wychodzących. Do ciebie należy decyzja, kto będzie miał wgląd do twojego salda Monero, poprzez dzielenie się kluczem widoczności. Monero jest domyślnie prywatne i opcjonalnie pół-transparentne!
 
-When using the Monero Wallet all this is handled by the software.  Sending Monero is as easy as entering the destination address, the amount, and pressing Send.  To recieve Monero, simply provide the sender your Public Address.
+Korzystając z portfela Monero, wszystko to jest obsługiwane przez oprogramowanie. Przesyłanie Monero jest łatwe, bo polega jedynie na wpisaniu adresu odbiorcy, kwoty i kliknięciu Wyślij. Aby otrzymać Monero, po prostu przekaż nadawcy swój adres publiczny.
 
-To learn how Monero prevents tracking history (untraceability), see @ring-signatures.
+Aby dowiedzieć się, w jaki sposób Monero zapobiega śledzieniu historii (niewykrywalność), przejdź do strony @podpisów-pierścieniowych.

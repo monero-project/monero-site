@@ -1,23 +1,22 @@
-{% include untranslated.html %}
-## Operating Systems:  Windows, Linux, Mac
+## Systemy operacyjne:  Windows, Linux, Mac
 
-### Account Software:  monero-wallet-cli
+### Oprogramowanie konta:  monero-wallet-cli
 
-- Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @wallet
+- Przygotuj swój 25-słowny kod mnemoniczny, który zachowałeś przy zakładaniu swojego starego portfela Monero
  
-- Open a command prompt and navigate to the drive and directory that contains monero-wallet-cli
+- Otwórz wiersz polecenia i przejdź do dysku i folderu zawierającego monero-wallet-cli
 
-- At the command prompt type:  `monero-wallet-cli --restore-deterministic-wallet`
+- W wierszu poleceń wpisz: `monero-wallet-cli --restore-deterministic-wallet`
 
-- Once you press enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do 
+- Po wciśnięciu Enter zostaniesz poproszony o podanie nowej nazwy pliku portfela. Nazwij go jakkolwiek
 
-- Press enter again and you will be prompted for a password.  Give your wallet a new and long password
+- Naciśnij Enter ponownie i zostaniesz poproszony o hasło. Nadaj swojemu portfelowi nowe, długie hasło
 
-- Press enter again you will be prompted to repeat the password 
+- Naciśnij Enter ponownie i zostaniesz poproszony o powtórzenie hasła
 
-- Press enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier
+- Naciśnij Enter ponownie i zostaniesz poproszony o 25-słowny kod mnemoniczny, który przygotowałeś wcześniej
 
--  You will then be prompted with "Restore from specific blockchain height (optional, default 0):" Default will start the restore process from the beginning of the Monero blockchain. If you don't know the specific blockchain height, just hit enter. (Specifying a specific blockchain height will start the restore process from that specific height. This will save a bit of time in scanning, if you know what starting blockchain height your initial funds were transacted for this specific account.)
+-  Następnie pojawi się wiadomość "Przywróć z określonej wysokości łańcucha bloków (opcjonalne, domyślnie 0)". Domyślnie proces przywracania zacznie się od początku łańcucha bloków monero. Jeśli nie znasz dokładnej wysokości łańcucha, naciśnij Enter. Uściślenie wysokości łańcucha rozpocznie proces przywracania od tej konkretnej wysokości. Oszczędzi to trochę czasu przy skanowaniu, jeśli wiesz, na jakiej wysokości łańcucha twoje pierwsze fundusze zostały przesłane dla tego konta.
 
-After you have entered the 25 word mnemonic seed and have chosen your specific blockchain height, monero-wallet-cli will generate the same public address and view key as your old wallet and begin the refresh process automatically. (Please be patient as the refresh process may take a while.)
+Po wpisaniu 25-słownego kodu mnemonicznego i wybraniu wysokości łańcucha bloków, monero-wallet-cli wygeneruje taki sam adres publiczny i klucz widoczności jak w twoim starym portfelu i automatycznie rozpocznie proces aktualizacji. Bądź cierpliwy, aktualizacja może zająć chwilę.
 

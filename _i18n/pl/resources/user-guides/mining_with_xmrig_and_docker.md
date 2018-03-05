@@ -1,37 +1,33 @@
-{% include untranslated.html %}
-## Introduction
+## Wprowadzenie
 
-This guide is two fold, ease of use for mining on Linux distributions and some extra security around mining as most of these miners have not had security auditing.
+Ten przewodnik jest dwojaki: opisuje łatwość użycia do wydobycia w dystrybucjach Linuksa oraz dodatkowe zabezpieczenia wydobycia, ponieważ większość koparek nie miała przeprowadzonego audytu bezpieczeństwa. Po jego przeczytaniu będziesz mógł spać spokojniej, wiedząc, że wyeksploatowana koparka nie migruje do systemu operacyjnego.
 
-At the end of this guide you will be able to sleep a little easier knowing that if the miner gets exploited it will not migrate to your OS.
+### Dlaczego Docker?
 
-### Why Docker
+[Docker](https://www.docker.com/) jest używany ze względu na to, że jest najbardziej znaną platformą i istnieje szansa, że został już zainstalowany.
 
-[Docker](https://www.docker.com/) is being used as it is the most well known and has the biggest chance to be already installed.
+Kontener, którego używam, to [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/) i, jak sama nazwa wskazuje, został zbudowany na wzór [Alpine Linux](https://www.alpinelinux.org/).
 
-The container I an using is [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/) as per the name it is built on the [Alpine Linux](https://www.alpinelinux.org/) image.
+Jeśli jesteś zainteresowany rozpoczęciem wydobywania z Dockerem, znajdziesz tu kilka dobrych referencji na początek.
+* Arch Linux Wiki [strona Dockera](https://wiki.archlinux.org/index.php/Docker)
+* Container Solutions [ściągawka na temat bezpieczeństwa](http://container-solutions.com/content/uploads/2015/06/15.06.15_DockerCheatSheet_A2.pdf)
+* Digital Oceans [przewodnik po plikach Dockera](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images).
 
-If you are interested in getting started with Docker, here are some really good starting references.
-* Arch Linux Wiki [Docker Page](https://wiki.archlinux.org/index.php/Docker)
-* Container Solutions [Security Cheat Sheet](http://container-solutions.com/content/uploads/2015/06/15.06.15_DockerCheatSheet_A2.pdf)
-* Digital Oceans [Dockerfile Howto](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images).
+Aby zainstalować na konkretną dystrybucję, przejdź do strony [dokumentów Dockera](https://docs.docker.com/engine/installation/).
 
-For distribution specific installation please refer to the [Docker Docs](https://docs.docker.com/engine/installation/) website.
+### Dlaczego XMRig?
 
-### Why XMRig
+[XMRig](https://github.com/xmrig/xmrig) według mnie jest porządną koparką. Posiada niezłą wydajność i statystyki i nie ma krzykliwego interfejsu i zależności. Kontener XMRig ma tylko ~4MB, co czyni go bardzo portatywnym.
 
-[XMRig](https://github.com/xmrig/xmrig) is just a really solid miner to me. Nice output and statistics, no flashy web-ui's or dependencies. The XMRig container is only ~4MB what makes it extremely portable. 
+#### Krok 1: Wydobywanie z XMRig
 
-#### Step 1: Mining with XMRig
-
-Run the following
+Uruchom następującą komendę:
 
 ```bash
 # docker run --restart unless-stopped --read-only -m 50M -c 512 bitnn/alpine-xmrig -o POOL01 -o POOL02 -u WALLET -p PASSWORD -k
 # docker run --restart unless-stopped --read-only -m 50M -c 512 bitnn/alpine-xmrig -o pool.supportxmr.com:7777 -u 45CJVagd6WwQAQfAkS91EHiTyfVaJn12uM4Su8iz6S2SHZ3QthmFM9BSPHVZY388ASWx8G9Wbz4BA24RQZUpGczb35fnnJz -p docker:secret -k
 ```
 
-#### Step 2: There is no Step 2
+#### Krok 2: Nie istnieje krok 2
 
-You have already done everything you need to do. You are now mining in a docker container with XMRig `ctrl+c` to exit the miner or add `-d` just after `docker run` to background the miner.
-
+Zrobiłeś już wszystko, co trzeba. Zacząłeś właśnie wydobywanie w kontenerze Dockera przy użyciu XMRig. Wpisz `ctrl+c`, aby wyjść z koparki lub dodaj `-d` zaraz po `docker run`, aby uruchomić wydobywanie w tle.

@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="about-monero">
     <section class="container">
         <div class="row">
@@ -8,120 +7,120 @@
 
                     <div class="row">
                         <div class="col">
-                            <h3>No premine, no instamine, no token</h3>
+                            <h3>Bez pre-wydobycia, bez wydobycia natychmiastowego, bez tokenów</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* Monero had no premine or instamine
-* Monero did not sell any token
-* Monero had no presale of any kind
+* Monero nie korzysta z pre-wydobycia ani wydobycia natychmiastowego
+* Monero nie sprzedaje tokenów
+* Monero nie prowadzi żadnego rodzaju przedsprzedaży
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Proof of Work</h3>
+                            <h3>Dowód pracy</h3>
                         </div>
                     </div>
 
 <div markdown="1">
 * CryptoNight
-* may change in the future
+* może ulec zmianie w przyszłości
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Difficulty retarget</h3>
+                            <h3>Zmiana poziomu trudności</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* every block
-* based on the last 720 blocks, excluding 20% of the timestamp outliers
+* w każdym bloku
+* na podstawie ostatnich 720 bloków, z wyłączeniem 20% różnic w znacznikach czasowych
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Block time</h3>
+                            <h3>Prędkość bloków</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* 2 minutes
-* may change in the future as long as emission curve is preserved
+* co 2 minuty
+* może ulec zmianie w przyszłości, pod warunkiem utrzymania krzywej emisji
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Block reward</h3>
+                            <h3>Wynagrodzenie za blok</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* smoothly decreasing and subject to penalties for blocks greater then median size of the last 100 blocks (M100)
-* see the [latest block](https://moneroblocks.info/) coinbase transaction amount for current reward
+* powoli maleje i podlega karom w przypadku bloku większego niż mediana ostatnich 100 bloków (M100)
+* zobacz liczbę transakcji monetarnych w [ostatnim bloku](https://moneroblocks.info/), aby dowiedzieć się o obecnym wynagrodzeniu
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Block size</h3>
+                            <h3>Rozmiar bloku</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* dynamic, maximum of 2 * M100
+* dynamiczny, maksymalnie 2 * M100
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Emission curve</h3>
+                            <h3>Krzywa emisji</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* first, main curve: ~18.132 million coins by the end of May 2022
-* then, tail curve: 0.6 XMR per 2-minute block, kicks in once main emission is done, translates to <1% inflation decreasing over time
-* see [charts and details](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
+* początkowo - krzywa główna: ~18.132 millionów monet do końca maja 2022 roku
+* następnie - krzywa z długim ogonem: 0.6 XMR na dwuminutowy blok, aktywowana po ukończeniu głównej emisji; przekłada się na <1% spadku inflacji w czasie
+* zobacz [wykresy i szczegóły](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Max supply</h3>
+                            <h3>Maksymalny zasób</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* infinite
+* nieskończony
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Sender privacy</h3>
+                            <h3>Prywatność nadawcy</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* Ring signatures
+* podpis pierścieniowy
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Recipient privacy</h3>
+                            <h3>Prywatność obiorcy</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* Stealth addresses
+* jednorazowe adresy transakcji
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Amount obfuscation</h3>
+                            <h3>Ukrycie kwoty</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* Ring confidential transactions
+* poufne transakcje pierścieniowe
 </div>
 
                 </div>

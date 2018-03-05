@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="site-wrap">
         <section class="container full col-xs-12">
             <div class="info-block info-block-main">
@@ -15,9 +14,9 @@
                     <div class="col-lg-5 col-md-5 col-xs-12">
                         <div class="main-info">
                             <h1 id="main-h1">Monero</h1>
-                            <h2 id="main-h2">Private Digital Currency</h2>
-                            <p id="main-text">Monero is a secure, private, and untraceable cryptocurrency. It is open-source and accessible to all. With Monero, you are your own bank. Only you control and are responsible for your funds. Your accounts and transactions are kept private from prying eyes.</p>
-                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Get Started</a></p>
+                            <h2 id="main-h2">Prywatna waluta cyfrowa</h2>
+                            <p id="main-text">Monero jest bezpieczną, prywatną i niewykrywalną kryptowalutą otwartego źródła, dostępną dla wszystkich. Z Monero sam jesteś swoim bankiem. Tylko ty kontrolujesz i jesteś odpowiedzialny za swoje fundusze. Twoje konto i wszystkie transakcje są utrzymywane w prywatności przed wścibskim okiem.</p>
+                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Wprowadzenie</a></p>
                         </div>
                     </div>
                 </div>
@@ -29,12 +28,12 @@
         <section class="container about-main full col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
-                        <div class="col"><h2>Why Monero is different</h2></div>
+                        <div class="col"><h2>Dlaczego Monero jest inne?</h2></div>
                     </div>
                     <div class="row middle-xs info-block-row private">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12  why-text">
-                            <h3>Monero is secure</h3>
-                                <p>Monero is a decentralized cryptocurrency, meaning it is secure digital cash operated by a network of users. Transactions are confirmed by distributed consensus and then immutably recorded on the blockchain. Third-parties do not need to be trusted to keep your Monero safe. </p>
+                            <h3>Monero jest bezpieczne</h3>
+                                <p>Monero jest zdecentralizowaną kryptowalutą, co znacza, że jest bezpiecznym, cyfrowym pieniądzem operowanym przez sieć użytkowników. Płatności są potwierdzane za pomocą powszechnej zgody, a następnie zapisywane w łańcuchach bloków. Osoby trzecie nie muszą być zaangażowane, aby twoje Monero były bezpieczne.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
@@ -45,15 +44,15 @@
                             <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero is private</h3>
-                            <p>Monero uses ring signatures, ring confidential transactions, and stealth addresses to obfuscate the origins, amounts, and destinations of all transactions. Monero provides all the benefits of a decentralized cryptocurrency, without any of the typical privacy concessions. </p>
+                            <h3>Monero jest prywatne</h3>
+                            <p>Monero korzysta z podpisów pierścieniowych, poufnych transakcji pierścieniowych i jednorazowych adresów w celu zamaskowania pochodzenia, kwoty oraz odbiorcy wszystkich płatności. Monero dostarcza wszystkich zalet zdecentralizowanej kryptowaluty bez żadnego ustępstwa na rzecz prywatości.</p>
                         </div>
                         
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero is untraceable</h3>
-                            <p>Sending and receiving addresses as well as transacted amounts are obfuscated by default. Transactions on the Monero blockchain cannot be linked to a particular user or real-world identity.</p>
+                            <h3>Monero jest niewykrywalne</h3>
+                            <p>Wychodzące oraz przychodzące adresy oraz przesyłana kwota są odgórnie ukryte. Płatności w łańcuchu bloków Monero nie mogą zostać przypisane do danych pojedynczego użytkownika w realnym świecie.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/untraceable-monero.png" alt="Untraceable Monero paths" class="main-icon">
@@ -64,8 +63,8 @@
                             <img src="/img/fungible-monero.png" alt="Monero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero is fungible</h3>
-                            <p> Monero is <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fungible</a> because it is private by default. Units of Monero cannot be blacklisted by vendors or exchanges due to their association in previous transactions.</p>
+                            <h3>Monero jest zamienialne/h3>
+                            <p> Monero jest <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">zamienialne</a>, ponieważ jest odgórnie prywatne. Jednostki Monero nie mogą zostać wyłączone z obiegu przez sprzedawców lub giełdę z powodu ich powiązania z poprzednimi transakcjami.</p>
                         </div>
                     </div>
                 </div>
@@ -83,26 +82,26 @@
                 <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="info-block">
                         <div class="row center-xs">
-                            <div class="col"><h2>Downloads</h2></div>
+                            <div class="col"><h2>Do ściągnięcia</h2></div>
                         </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Monero for Windows</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Monero na Windowsa</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Monero for Mac</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Monero na Mac</a></p>
                                 </div>
                             </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero for Linux</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero na Linuxa</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Latest Blockchain</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Ostatni łańcuch bloków</a></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12"><p class="main-downloads">Need it for a different operating system? <a href="{{site.baseurl}}/downloads/">View all available downloads here.</a></p>
+                                <div class="col-xs-12"><p class="main-downloads">Posiadasz inny system operacyjny? <a href="{{site.baseurl}}/downloads/">Zobacz wszystkie dostępne wersje.</a></p>
                             </div>
                             </div>
                 </div>
@@ -113,7 +112,7 @@
                 <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="info-block">
                         <div class="row center-xs">
-                            <div class="col"><h2>Latest News</h2></div>
+                            <div class="col"><h2>Najnowsze wiadomości</h2></div>
                         </div>
                         <div class="info-block-row">
                               {% for post in site.posts limit:2 %}
@@ -127,7 +126,7 @@
  
                             <div class="row end-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/blog/">More news</a></p>
+                                    <p><a href="{{site.baseurl}}/blog/">Więcej</a></p>
                                 </div>
                             </div>
                         </div>
@@ -149,8 +148,8 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>Moneropedia</h2>
-                                <p class="main-resources">Would you like to look up the meanings of the terms and concepts used in Monero? Here you will find an alphabetical guide to terms and their meanings from both the Monero and Kovri projects.</p>
-                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Read Moneropedia</a></p>
+                                <p class="main-resources">Chcesz sprawdzić znaczenie pojęć i konceptów używanych przy Monero? Tutaj znajdziesz alfabetyczny przewodnik do pojęć i ich znaczeń z projektu Monero oraz Kovri.</p>
+                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Przejdź do Moneropedii</a></p>
                             </div>
                         </div>
                     </div>
@@ -162,9 +161,9 @@
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>User Guides</h2>
-                                <p class="main-resources">Step-by-step guides to all things Monero are separated by category and cover everything from creating a wallet to supporting the network, and even how to edit this website.</p>
-                                <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Read user guides</a></p>
+                                <h2>Przewodnik dla użytkowników</h2>
+                                <p class="main-resources">Przewodniki do Monero krok po kroku, podzielone na kategorie. Zawiera wszystko, począwszy od zakładania portfela, do wspomagania sieci, a nawet do tego, jak edytować tę stronę.</p>
+                                <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Przejdź do przewodnika dla użytkowników</a></p>
                             </div>
                         </div>
                     </div>
@@ -177,8 +176,8 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>FAQ</h2>
-                                <p class="main-resources">We've heard a lot of questions over the years and have compiled, for your convenience, a thorough and varied FAQ. Don't worry, if your questions are not on here, you can always ask the community.</p>
-                                <p><a href="{{site.baseurl}}/get-started/faq/" class="btn-link btn-auto">Read answers</a></p>
+                                <p class="main-resources">Otrzymujemy wiele pytań, dlatego, dla twojej wygody, opracowaliśmy kompletny i zróżnicowany zestaw pytań i odpowiedzi. Nie przejmuj się, jeśli twoje pytanie nie znajduje się na liście, zawsze możesz je zadać społeczności.</p>
+                                <p><a href="{{site.baseurl}}/get-started/faq/" class="btn-link btn-auto">Przejdź do FAQ</a></p>
                             </div>
                         </div>         
                     </div>

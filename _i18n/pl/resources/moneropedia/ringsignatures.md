@@ -1,18 +1,18 @@
 ---
 layout: moneropedia
-entry: "Ring Signature"
-terms: ["ring-signature", "ring-signatures"]
-summary: "a group of cryptographic signatures with at least one real participant, but no way to tell which in the group is the real one as they all appear valid"
+entry: "Podpis pierścieniowy"
+terms: ["podpis-pierścieniowy", "podpisem-pierścieniowym", "podpisu-pierścieniowego", "podpisie-pierścieniowym"]
+summary: "Grupa podpisów kryptograficznych z przynajmniej jednym prawdziwym uczestnikiem, bez możliwości rozróżnienia, kto w danej grupie nim jest, ponieważ wszystkie podpisy figurują jako ważne."
 ---
 
-### The Basics
+### Podstawy
 
-In cryptography, a ring signature is a type of digital signature that can be performed by any member of a group of users that each have keys. Therefore, a message signed with a ring signature is endorsed by someone in a particular group of people. One of the security properties of a ring signature is that it should be computationally infeasible to determine *which* of the group members' keys was used to produce the signature.
+W kryptografii podpis pierścieniowy jest rodzajem podpisu cyfrowego, który może być dokonany przez jakiegokolwiek członka grupy użytkowników, w której każdy posiada klucz. Wiadomość opatrzona podpisem pierścieniowym jest zatwierdzona przez kogoś z konkretnej grupy. Jedną z charakterystyk bezpieczeństwa podpisu pierścieniowego jest to, że ustalenie klucz *którego* członka grupy został użyty do podpisu jest obliczeniowo niewykonywalne.
 
-For instance, a ring signature could be used to provide an anonymous signature from "a high-ranking White House official", without revealing which official signed the message. Ring signatures are right for this application because the anonymity of a ring signature cannot be revoked, and because the group for a ring signature can be improvised (requires no prior setup).
+Przykładowo, podpis pierścieniowy może zostać użyty do dostarczenia anonimowego podpisu "wysokiej rangi urzędnika Białego Domu" bez wyjawiania, który urzędnik rzeczywiście podpisał wiadomość. Anonimowość tego podpisu nie może zostać unieważniona, a grupa stworzona do podpisu pierścieniowego może być zaimprowizowana - nie wymaga żadnych wcześniejszych przygotowań.
 
-### Application to Monero
+### Aplikacja w Monero
 
-A ring signature makes use of your @account keys and a number of public keys (also known as outputs) pulled from the @blockchain using a triangular distribution method. Over the course of time, past outputs could be used multiple times to form possible signer participants. In a "ring" of possible signers, all ring members are equal and valid. There is no way an outside observer can tell which of the possible signers in a signature group belongs to your @account. So, ring signatures ensure that transaction outputs are untraceable. Moreover, there are no fungibility issues with Monero given that every transaction output has plausible deniability (e.g. the network can not tell which outputs are spent or unspent).
+Podpis pierścieniowy korzysta z twoich kluczy do @konta oraz numeru kluczy publicznych pobranych z @łańcucha-bloków przy użyciu metody rozkładu trójkątnego. Na przestrzeni czasu klucze mogą zostać użyte wielokrotnie, aby tworzyć możliwe grupy podpisowe. W "pierścieniu" (grupie) możliwych osób podpisujących wszyscy członkowie są równi i ważni. Nie ma możliwości, aby zewnętrzny obserwator rozróżnił, który z członków jest przypisany do twojego konta. Podpisy pierścieniowe zapewniają niewykrywalność wyników transakcji. Ponadto nie ma problemów z zamienialnością Monero, ponieważ każdy wynik transakcji jest wiarygodnie zaprzeczalny (sieć nie rozróżnia, który z wyników został wydany lub nie wydany).
 
-To read how Monero gives you privacy by default (unlinkability), see @stealth-addresses.
+Aby dowiedzieć się, w jaki sposób Monero gwarantuje prywatność poprzez domyślną niemożliwość przypisania transakcji do konta, przejdź do @ukrytego-adresu.

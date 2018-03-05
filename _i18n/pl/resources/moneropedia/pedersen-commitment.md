@@ -1,24 +1,24 @@
 ---
 layout: moneropedia
-entry: "Pedersen Commitment"
-terms: ["commitments", "commitment", "pedersen"]
-summary: "Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it."
+entry: "Zobowiązanie Pedersena"
+terms: ["zobowiązanie", "zobowiązania", "zobowiązaniu", "zobowiązaniom", "zobowiązanie-pedersena", "zobowiązaniu-pedersena", "zobowiązaniem-pedersena"]
+summary: "Algorytmy kryptograficzne pozwalające osobie udowadniającej na zobowiązanie się do pewnej wartości bez ujawniania jej ani nie będąc w stanie jej zmienić.
 ---
 
-### The Basics
+### Podstawy
 
-When you spend Monero, the value of the inputs that you are spending and the value of the outputs you are sending are encrypted and opaque to everyone except the recipient of each of those outputs. Pedersen commitments allow you to send Monero without revealing the value of the transactions. Pedersen commitments also make it possible for people to verify that transactions on the blockchain are valid and not creating Monero out of thin air.
+Przy płatnościach Monero wartość wkładu, którą użytkownik wydaje, oraz wartość wyjściowa są zaszyfrowane i nieprzejrzyste dla wszystkich, z wyjątkiem odbiorcy każdego z wyjść. Zobowiązanie Pedersena pozwala na wysyłanie Monero bez ujawniania wartości transakcji. Umożliwia ono także weryfikację, czy transakcje w łańcuchu bloków są prawdziwe i nie tworzą monet z niczego.
 
-### What It Means
+### Co to oznacza
 
-As long as the encrypted output amounts created, which include an output for the recipient and a change output back to the sender, and the unencrypted transaction fee is equal to the sum of the inputs that are being spent, it is a legitimate transaction and can be confirmed to not be creating Monero out of thin air.
+Dopóki zaszyfrowane wartości wyjściowe (w skład których wchodzi wyjście dla odbiorcy oraz @reszta zwracana nadawcy) razem z nieszyfrowanymi opłatami za transakcję są równe sumie wydanego @wkładu, transakcja jest prawdziwa i może zostać potwierdzona, że nie wytworzyła Monero z niczego.
 
-Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable. Pedersen commitments also mean that even the ratio of one input to another, or one output to another is undeterminable.
+Zobowiązanie Pedersena oznacza, że sumy są potwierdzone jako równe, jednak wartość Monero każdej z sum oraz wkładu i wyjścia pozostają niemożliwe do określenia. Znaczy to także, że ukryty jest też stosunek jednego wkładu do drugiego lub jednego wyniku do drugiego.
 
-Even though it's unclear which inputs are really being spent (the ring signature lists both the real inputs being spent and decoy inputs therefore you don't actually know which input Pedersen commitments you need to sum) that's okay, because the RingCT ring signature only has to prove is that for one combination of the inputs the outputs are equal to the sum of the inputs. For mathematical reasons, this is impossible to forge.
+Mimo że pozostaje niejasne, czy wkłady faktycznie zostały wydane (@podpis-pierścieniowy zapisuje zarówno prawdziwe wkłady, jak i te fałszywe, stąd właściwie nie wiadomo, które wartości zobowiązanie Pedersena sumuje), nie jest to problemem, ponieważ podpisy pierścieniowe @poufnych-transakcji-pierścieniowych muszą udowodnić jedynie to, czy suma wyjść jednej kombinacji jest równa sumie wkładów w tej samej kombinacji. Z matematycznego punktu widzenia jest to niemożliwe do sfałszowania.
 
-### In-depth Information
+### Szczegółowe informacje
 
-See information in [Ring Confidential Transactions paper](https://eprint.iacr.org/2015/1098.pdf) by Shen Noether of the Monero Research Lab.
+Przeczytaj więcej w dokumencie Shena Noethera z Laboratorium Badawczego Monero na temat [Poufnych Transakcji Pierścieniowych](https://eprint.iacr.org/2015/1098.pdf).
 
 {{ page.summary | capitalize }}.

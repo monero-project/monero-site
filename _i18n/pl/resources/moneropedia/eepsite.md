@@ -2,29 +2,27 @@
 layout: moneropedia
 entry: "Eepsite"
 tags: ["kovri"]
-terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service"]
-summary: "A website or service hosted within the I2P network"
+terms: ["Eepsite", "ukryty-serwis", "strona-czosnkowa", "serwis-czosnkowy"]
+summary: "Strona lub serwis internetowy zamieszczony w sieci I2P."
 ---
 
-### The Basics
+### Podstawy
 
-Is it [**EEP!** *(in response to the site's content)*](https://en.wikipedia.org/wiki/Onomatopoeia), or **end-to-end protocol**, or something else entirely different?
+Oryginalna definicja pojęcia "eepsite" zagubiła się wraz z upływem czasu, jednak najczęstszym jego rozumieniem jest strona internetowa lub serwis internetowy zamieszczony w sieci @I2P i dostępny jedynie za jej pomocą.
 
-While the original definition of eepsite has been lost with time, its use-case remains: an eepsite is a website or service that is hosted within (and only accessible by) the @I2P network.
+### Szczegółowe informacje
 
-### In-depth Information
+Innymi nazwami eepsite są
 
-Alternate names include:
+1. *Ukryty Serwis*
+  - ponieważ strona lub serwis jest *ukryty* wewnątrz sieci @I2P i może zostać wyświetlony jedynie za jej pomocą
+2. *Strona Czosnkowa*
+  - ponieważ strona korzysta z technologii @trasowania-czosnkowego sieci I2P jako środka komunikacji z klientem
+  - ponieważ serwis jest hostowany jako strona internetowa, a nie inny rodzaj serwisu
+3. *Serwis Czosnkowy*
+  - ponieważ strona korzysta z technologii @trasowania-czosnkowego sieci I2P jako środka komunikacji z klientem
+  - ponieważ serwis jest sprecyzowany do takich usług jak IRC, e-mail lub peer Monero (ale może także uwzględniać strony internetowe)
 
-1. *Hidden Service*
-  - because the site/service is *hidden* within the @I2P network and can only be visited within the network
-2. *Garlic Site*
-  - because the website utilizes @I2P's @garlic-routing technology as a means of communicating with a client
-  - because the service is hosted as a website and not any other type of service
-3. *Garlic Service*
-  - because the service utilizes @I2P's @garlic-routing technology as a means of communicating with a client
-  - because the service is specific to services like IRC, email, or a Monero peer (but may also include websites)
+### Adnotacje
 
-### Notes
-
-To learn how to setup an Eepsite (Hidden Service, Garlic Site, Garlic Service) visit the @Kovri [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+Aby dowiedzieć się, jak skonfigurować Eepsite (Ukryty Serwis, Stronę Czosnkową, Serwis Czosnkowy), przejdź do [przewodnika dla użytkowników](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) @Kovri.

@@ -1,35 +1,34 @@
 ---
 layout: moneropedia
-entry: "Address Book"
+entry: "Książka adresowa"
 tags: ["kovri"]
-terms: ["Address-Book"]
-summary: "Allows you to visit I2P websites/services that have the .i2p domain"
+terms: ["książka-adresowa", "książce-adresowej", "książki-adresowej"]
+summary: "Pozwala na odwiedzanie stron/serwisów w sieci I2P w domenie .i2p."
 ---
 
-### The Basics
+### Podstawy
 
-In order to browse @I2P sites or services with @Kovri, you'll need an address book. An address book will allow you to translate @I2P websites/services that use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain) into an address that @I2P network will understand.
+Aby przeglądać strony i serwisy w sieci @I2P przy użyciu @Kovri, potrzebujesz książki adresowej. Pozwoli ona na przetłumaczenie stron i serwisów I2P, które używają [domeny najwyższego poziomu] `.i2p` (https://en.wikipedia.org/wiki/Top_level_domain), na adres zrozumiały przez sieć I2P.
 
-Without an address book, you would be stuck using a @base32-address every time you visit an @I2P website/service - and that's not fun!
+Bez książki adresowej musiałbyś używać @adresu-base32 za każdą wizytą na stronie sieci I2P, a to nie jest wcale zabawne!
 
-### In-depth information
+### Szczegółowe informacje
 
-Since [DNS](https://en.wikipedia.org/wiki/DNS) does not exist on the @I2P network, @Kovri also does **not** use DNS or any sort of @canonically-unique-host resolution. Instead, Kovri pairs a @locally-unique-host to a @base64-address @destination in a @subscription. Once your address book is filled with a @subscription, you can resolve your favorite `.i2p` domain site into a usable @I2P destination.
+Ponieważ [System Nazywania Domen](https://en.wikipedia.org/wiki/DNS) nie istnieje w sieci I2P, @Kovri również **nie używa** Systemu Nazywania Domen ani żadnego rodzaju rozwiązania @zasadniczego-unikalnego-hostu. Zamiast tego, Kovri łączy @lokalnie-unikalny-host z @adresem-64 w @subskrypcji. Po wypełnieniu książki adresowej subskrypcją, możesz zamienić daną stronę o domenie `.i2p` na łatwą do użycia sieć I2P.
 
-### Creating an Address Book
+### Tworzenie książki adresowej
 
-By default, your installation will come with a default public @subscription called `hosts.txt` in your @data-directory. When @Kovri starts, it loads this subscription and fetches any other subscriptions you've specified. Once loaded, your address book will be appropriately filled. For details on how to manage subscriptions, see @subscription.
+Domyślnie przy instalacji otrzymasz publiczną @subskrypcję o nazwie `hosts.txt` w @katalogu-danych. Po uruchomieniu, Kovri ładuje tę subskrypcję i przywołuje wszystkie pozostałe sprecyzowane subskrypcje. Po załadowaniu, twoja książka adresowa zostanie odpowiednio wypełniona. Po więcej szczegółów dotyczących zarządzania subykrypcjami, przejdź do @subsckrypcji.
 
-### Updating the Address Book
+### Aktualizowanie książki adresowej
 
-Currently, there are several ways to update your address book:
+Obecnie istnieje kilka sposobów na zaktualizowanie książki adresowej:
+1. Użyj @opcji-przeskakiwania, aby wpisać adres I2P do książki adresowej.
+2. Użyj @opcji-przeskakiwania, aby skopiować i wkleić adres do twojej prywatnej subskrypcji.
+3. Ręczniej dodaj lub odejmij z prywatnej subskrypcji.
 
-1. Use a @jump-service to insert I2P addresses into your address book
-2. Use a @jump-service to copy/paste an address into your private @subscription
-3. Manually add or subtract from a private @subscription
+**Uwaga: Kovri jest w trakcie rozwoju. W przyszłości *pojawią się* łatwiejsze sposoby na zaktualizowanie książki adresowej.**
 
-**Note: Kovri is in heavy development. In the future there *will* be easier ways to update the address book**
+### Specyfikacja książki adresowej/nazewnictwa
 
-### Address Book / Naming specification
-
-For specification details and more, visit the [Address Book and Naming Specification](https://geti2p.net/en/docs/naming)
+Aby dowiedzieć się więcej na temat specyfikacji, przejdź do [specyfikacji książki adresowej i nazewnictwa](https://geti2p.net/en/docs/naming).

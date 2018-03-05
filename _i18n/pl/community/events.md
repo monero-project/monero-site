@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-Monero people are always down to get together and have a good time. Check below to see Monero-related events happening in your area.
+Społeczność Monero zawsze jest gotowa na spotkanie się i wspólne spędzenie czasu. Sprawdź poniżej wydarzenia związane z Monero, które odbędą się w Twoim pobliżu.
 </div>
 
 {% for toplevel in site.data.events %}
@@ -11,11 +10,11 @@ Monero people are always down to get together and have a good time. Check below 
                 <div class="row">
                     <div class="col-xs-12">
                         <h2>{{toplevel.event}}</h2>
-                        <h3>Where</h3>
+                        <h3>Gdzie</h3>
                         <p>{{toplevel.where}}</p>
-                        <h3>When</h3>
+                        <h3>Kiedy</h3>
                         <p>{{toplevel.when}}</p>
-                        <h3>Description</h3>
+                        <h3>Szczegóły</h3>
                         <p>{{toplevel.description}}</p>
                         <h3>Link</h3>
                         <a>{{toplevel.link}}</a>

@@ -1,31 +1,29 @@
-{% include untranslated.html %}
-Sometimes, your funds will become stuck - you will have some locked funds that never become unlocked. This is how you fix it.
+Czasami twoje fundusze utkną - część z nich zostanie zablokowana i nigdy nie odblokowana. Oto jak to naprawić:
 
-- Load your wallet in monero-wallet-cli.
+- Załaduj swój portfel w monero-wallet-cli.
 
-- Type
+- Wpisz:
 
 > seed
 
-into the command prompt. Write down your 25 word seed, if you haven't already. This is the best way to make sure you don't loose access to your funds.
+do wiersza polecenia. Wpisz swój 25-słowny kod mnemoniczny, jeśli jeszcze tego nie zrobiłeś. To najlepszy sposób na zapewnienie ciągłego dostępu do twoich funduszy.
 
-- Close monero-wallet-cli by typing
+- Zamnkij monero-wallet-cli, wpisując:
 
 > exit
 
-- Backup all of your wallet related files. These include:
+- Utwórz kopię zapasową wszystkich plików związanych z twoim portfelem, czyli:
 
 > yourwalletname.bin
 > yourwalletname.bin.keys
 > yourwalletname.bin.address.txt
 
-This can be done by copying the files to a new folder.
+Możesz tego dokonać, kopiując pliki do nowego folderu.
 
-Sometimes, when creating your wallet, you might have named it something without the .bin part. In that case, the wallet file will be called yourwalletname without the .bin at the end.
+Czasami przy zakładaniu portfela mogłeś go nazwać bez końcówki ".bin". W takim przypadku plik portfela będzie się nazywał nazwaportfela - bez końcówki ".bin".
 
-- Delete yourwallet.bin
+- Usuń nazwaportfela.bin.
 
-- Load monero-wallet-cli, type in the name of the wallet you just deleted
+- Załaduj monero-wallet-cli, wpisz nazwę portfela, który właśnie usunąłeś.
 
-- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked.
-
+- Wpisz hasło. Portfel zostanie teraz zaktualizowany, a twoje zablokowane fundusze zostaną odblokowane.

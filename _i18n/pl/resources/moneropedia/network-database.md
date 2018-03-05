@@ -1,25 +1,25 @@
 ---
 layout: moneropedia
-entry: "Network Database"
+entry: "Baza danych sieci"
 tags: ["kovri"]
-terms: ["Network-Database"]
-summary: "A distributed database which contains needed router information so the network can stay intact"
+terms: ["baza-danych-sieci", "bazie-danych-sieci", "bazą-danych-sieci"]
+summary: "Rozproszona baza danych zawierająca potrzebne informacje na temat routera, aby sieć pozostała nienaruszona."
 ---
 
-### The Basics
+### Podstawy
 
-@network-database is a [distributed database](https://en.wikipedia.org/wiki/Distributed_database) which contains router information that peers must use so the network can stay intact.
+Baza danych sieci jest [rozproszoną bazą danych](https://en.wikipedia.org/wiki/Distributed_database) zawierającą informacje na temat routera, które muszą być używane przez peerów, aby sieć pozostała nienaruszona.
 
-### In-depth information
+### Szczegółowe informacje
 
-From @Java-I2P:
-
->
-@I2P's @network-database is a specialized distributed database, containing just two types of data - router contact information (@Router-Infos) and @destination contact information (@LeaseSets). Each piece of data is signed by the appropriate party and verified by anyone who uses or stores it. In addition, the data has liveliness information within it, allowing irrelevant entries to be dropped, newer entries to replace older ones, and protection against certain classes of attack.
+Za: @Java-I2P:
 
 >
-The @network-database is distributed with a simple technique called "@floodfill", where a subset of all routers, called "@floodfill routers", maintains the distributed database.
+Baza danych sieci @I2P jest specjalną rozproszoną bazą danych zawierającą tylko dwa rodzaje danych - informacje kontaktowe routera (@informacje-o-routerze) oraz  informacje kontaktowe @węzła docelowego (@LeaseSets). Każda informacja jest podpisana przez odpowiednią stronę i zweryfikowana przez kogokolwiek, kto jej używa lub ją przechowuje. Dodatkowo dane posiadają informacje na temat żywotności, zezwalając na odrzucenie nieistotnych wprowadzeń, nadpisywanie nowszych wprowadzeń nad starszymi oraz na ochronę przed pewnymi rodzajami ataków.
 
-### Notes
+>
+Baza danych sieci jest rozproszona poprzez prostą technikę zwaną "@floodfill", w której jest utrzymywana przez podzbiór wszystkich routerów, zwanych "routerami floodfill".
 
-Read [Network-Database](https://geti2p.net/en/docs/how/network-database) for details.
+### Adnotacje
+
+Aby dowiedzieć się więcej, przejdź do [bazy danych sieci](https://geti2p.net/en/docs/how/network-database).

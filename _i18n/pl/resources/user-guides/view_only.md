@@ -1,13 +1,12 @@
-{% include untranslated.html %}
-A view-only wallet can only see which incoming transactions belong to you. It can not spend any of your Monero, in fact it can't even see outgoing transactions from this wallet. This makes view-only wallets particularly interesting for
+Portfel tylko do odczytu wyświetla jedynie twoje przychodzące transakcje. Nie może on dokonać żadnej płatności, nie może nawet wyświetlić żadnej transakcji wychodzącej. Portfel tylko do odczytu może być ciekawą opcją dla:
 
-* Developers writing libraries to validate payments
-* End users validating incoming transactions to cold wallets
+* deweloperów, którzy tworzą biblioteki w celu sprawdzania poprawności płatności
+* użytkowników końcowych, którzy sprawdzają poprawność transakcje przychodzące do zimnych portfeli.
 
-### Creating A View-Only Wallet
+### Tworzenie portfela tylko do odczytu
 
-You can create a view-only wallet from any existing wallet.
+Możesz przetworzyć swój istniejący portfel na portfel tylko do odczytu.
 
-Open an existing wallet or create a new one using `monero-wallet-cli`. In the wallet, type `address` and `viewkey` to display the wallet's address and secret viewkey. Type `exit` to close the wallet.
+Otwórz istniejący portfel lub stwórz nowy, za pomocą funkcji `monero-wallet-cli`. W portfelu wpisz `address` i `viewkey`, aby wyświetlić adres i klucz widoczności portfela. Wpisz `exit`, aby zamknąć portfel.
 
-Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and secret view key. Next, enter and confirm a password for your new wallet and you're done.
+Następnie stwórz swój portfel tylko do odczytu, wpisując `monero-wallet-cli --generate-from-view-key wallet-name`. Ostatni argument będzie nazwą twojego nowego portfela. Zostaniesz poproszony o `Standard address` oraz `View key`. Wklej adres i klucz widoczności swojego oryginalnego portfela. Następnie wpisz i potwierdź hasło do nowego portfela i gotowe.

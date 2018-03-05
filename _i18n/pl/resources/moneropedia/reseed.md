@@ -3,15 +3,15 @@ layout: moneropedia
 entry: "Reseed"
 tags: ["kovri"]
 terms: ["Reseed"]
-summary: "The method of which Kovri uses to bootstrap into the I2P network"
+summary: "Metoda, za pomocą której Kovri uruchamia sieć I2P."
 ---
 
-### The Basics
+### Podstawy
 
-When you start @Kovri for the first time (or if it's been offline for a long time), @Kovri will need a list of peers to connect to so it can [bootstrap](https://en.wikipedia.org/wiki/Bootstrap) into the @I2P network. @Kovri gets these peers from a special file stored on a reseed server. On this file are all the various pieces of information @Kovri needs in order to connect with @I2P peers.
+Gdy uruchamiasz @Kovri po raz pierwszy (lub jeśli był wyłączony przez dłuższy czas), będzie on potrzebował listy peerów, z którymi się skontaktuje, aby dokonać [bootstrapu](https://en.wikipedia.org/wiki/Bootstrap) do sieci @I2P. Kovri bierze tę listę ze specjalnego pliku przechowywanego na serwerze reseed. W pliku tym znajdują się wszystkie informacje, których Kovri potrzebuje do połączenia się z peerami I2P.
 
-### In-depth information
+### Szczegółowe informacje
 
-@Kovri has a list of [hard-coded](https://en.wikipedia.org/wiki/Hard-coded) reseed servers available to fetch from. These servers securely serve an [SU3](https://geti2p.net/spec/updates#su3) file (signed with a cryptographic @signature) over @clearnet with [HTTPS](https://en.wikipedia.org/wiki/HTTPS). This SU3 file contains information that's used to verify both the integrity of the file and its content.
+Kovri posiada listę [mocno zakodowanych](https://en.wikipedia.org/wiki/Hard-coded) serwerów reseed, dostępnych aby z nich pobierać. Serwery te bezpiecznie serwują plik [SU3](https://geti2p.net/spec/updates#su3), opatrzony kryptograficznym @podpisem, ponad siecią @clearnet przy użyciu [HTTPS](https://en.wikipedia.org/wiki/HTTPS). Plik SU3 zawiera informacje służące do weryfikacji integralności pliku i jego zawartości.
 
-Aside from the technical elements needed to verify and process the file, the file's main contents consist of a series of @router-info files which @Kovri and @I2P routers use to locate and communicate with other @I2P peers. These peers are then stored into a @network-database.
+Poza elementami technicznymi koniecznymi do weryfikacji i przetworzenia, plik ten zawiera przede wszystkim serię plików z @informacjami-o-routerze, których routery Kovri i I2P używają do lokalizacji i komunikacji z pozostałymi peerami I2P, którzy następnie zapisywani są w @bazie-danych-sieci.

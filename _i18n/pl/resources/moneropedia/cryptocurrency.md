@@ -1,22 +1,22 @@
 ---
 layout: moneropedia
-entry: "Cryptocurrency"
-terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins"]
-summary: "a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank"
+entry: "Kryptowaluta"
+terms: ["kryptowaluta", "kryptowaluty", "kryptowalucie", "kryptowalutach", "kryptowalutom", "altcoin", "altcoins"]
+summary: "Waluta cyfrowa, w której użyte są techniki szyfrowania w celu regulacji generowania jednostek walutowych i weryfikowania transferów płatniczych, zazwyczaj funkcjonująca niezależnie od banku centralnego."
 ---
 
-### The Basics
+### Podstawy
 
 {{ page.summary | capitalize }}.
 
-### More Information
+### Szczegółowe informacje
 
-Cryptocurrency is the generic term for a large set of digital assets that use encryption techniques to generate units of currency, verify the transactions, and transfer value. Generally, cryptocurrencies are considered to be decentralized. Cryptocurrency should not be confused with virtual currency which is a type of digital money that is usually controlled by it's creators or developers. (Some examples of virtual currency are gametime in World of Warcraft, ROBUX in Roblox, reward points programs, or Ripple, all of which can be exchanged for currency or cash value, but are not considered cryptocurrency because they are centalized and controlled/issued by a single entity).  
+Kryptowaluta jest ogólnym pojęciem określającym duży zbiór zasobów cyfrowych korzystających z technik szyfrowania w celu produkcji jednostek walutowych oraz weryfikacji transakcji i przesyłanych wartości. Kryptowaluty przeważnie uważane są za zdecentralizowane. Kryptowaluty nie powinny być mylone z walutami wirtualnymi, które są rodzajem pieniądza cyfrowego, przeważnie kontrolowanego przez swoich twórców lub deweloperów (przykładem waluty wirtualnej jest czas gry w World of Warcraft, ROBUX w Roblox, programy z nagrodami za punkty lub Ripple - każda z nich może zostać wymieniona na pieniądz powszechnego użycia, ale żadna nie jest uważana za kryptowalutę, ponieważ są one scentralizowane i kontrolowane oraz wydawane przez pojedynczą instytucję).
 
-Monero is one of many cryptocurrencies currently available. Other examples are Bitcoin, Litecoin, Dogecoin, Dash, Zcash, etc, but nearly all other cryptocurrencies lack features that make them a true money (most importantly @fungability which is a requirement for it to be a @store-of-value).
+Monero jest jedną z wielu obecnie dostępnych kryptowalut. Innymi przykładami są Bitcoin, Litecoin, Dogecoin, Dash, Zcash, jednak prawie żadna z innych kryptowalut nie posiada charakterystyk, która czyniłaby ją prawdziwym pieniądzem (najważniejszą z nich jest @zamienialność, która jest niezbędna, aby waluta stała się @środkiem-przechowywania-wartości).
 
-Not all cryptocurrencies operate the same, but they usually share the properties of @decentralization, encryption, and the ability to send and receive transactions. Most are irreversible, pseudonymous, global, and permissionless. Most aim to be a @store-of-value or be digital cash that allows you to transact.
+Nie wszystkie kryptowaluty działają w ten sam sposób, jednak przeważnie podzielają one charakterystyki @decentralizacji, szyfrowania oraz zdolności do wysyłania i otrzymywania płatności. Większość z nich jest nieodwracalna, pseudonimowa, globalna i nie wymaga zgody. Celem większości jest bycie @środkiem-przechowywania-wartości lub pieniądzem cyfrowym pozwalającym na transakcje.
 
-Most cryptocurrencies (including Monero) use a distributed ledger (called a @blockchain) to keep track of previous transactions . The blockchain serves to tell other users on the network that transactions have happened. There are many different ways for cryptocurrencies to create their blockchain, and not all are the same. Monero uses @proof-of-work to craft blocks, where other cryptocurrencies may use proof-of-stake or other consolidated methods.
+Większość kryptowalut, w tym Monero, korzysta z roproszonej "księgi przychodów i rozchodów", zwanej @łańcuchem-bloków, w celu śledzenia minionych transakcji. Łańcuch bloków służy do informowania pozostałych użytkowników sieci, że została dokonana transakcja. Istnieje wiele sposobów na tworzenie łańcucha bloków, a nie wszystkie kryptowaluty tworzą go tak samo. Monero korzysta z @dowodu-pracy, podczas gdy inne waluty mogą używać dowodu stawki lub innych skonsolidowanych metod. 
 
-Ultimately, cryptocurrency is an attempt to create @trustless value; that is free from borders, governments, and banks. Whether that be to transact or to be digital gold is up to the users of each.
+Ostatecznie kryptowaluta jest próbą stworzenia wartości @bez-zaufania, to znaczy wolnej od granic, rządów i banków. Decyzja, czy zostanie ona uznana za cyfrowe złoto lub środek płatności, należy do każdego użytkownika osobno.

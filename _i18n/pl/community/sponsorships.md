@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-The following businesses have supported the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
+Poniższe organizacje wsparły Projekt Monero w niesieniu światu finansowej prywatności. Jesteśmy bardzo wdzięczni za ich wkład. Jeśli chcesz zasponsorować Projekt Monero i pojawić się na tej liście, wyślij e-mail na adres dev@getmonero.org.
 </div>
 
 <div>

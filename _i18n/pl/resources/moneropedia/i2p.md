@@ -3,29 +3,29 @@ layout: moneropedia
 entry: "I2P"
 tags: ["kovri"]
 terms: ["I2P"]
-summary: "The Invisible Internet Project: an anonymizing overlay network"
+summary: "Projekt Niewidzialny Internet: anonimizująca sieć nakładkowa."
 ---
 
 ### Monero
 
-For Monero's implementation of @I2P, see @Kovri. For a comparison of @I2P to [Tor](https://torproject.org/), read the [Comparison](https://geti2p.net/en/comparison/tor) page.
+Aby dowiedzieć się o implementacji I2P przez Monero, przejdź do @Kovri. Aby porównać I2P z siecią [Tor](https://torproject.org/), przejdź do [porównania](https://geti2p.net/en/comparison/tor).
 
-### The Basics
+### Podstawy
 
-From @Java-I2P:
+Za @Java-I2P:
 
->The I2P network provides strong privacy protections for communication over the Internet. Many activities that would risk your privacy on the public Internet can be conducted anonymously inside I2P.
+>Sieć I2P dostarcza silną ochronę prywatności dla komunikacji internetowej. Wiele aktywności, które wystawiają twoją prywatność na zagrożenia w publicznym Internecie, może być prowadzonych anonimowo wewnątrz I2P.
 
-### In-depth information
+### Szczegółowe informacje
 
-From @Java-I2P:
+Za @Java-I2P:
 
->I2P is an anonymous overlay network - a network within a network. It is intended to protect communication from dragnet surveillance and monitoring by third parties such as ISPs.
+>I2P jest anonimową siecią nakładkową - siecią wewnątrz sieci. Jest ona przeznaczona do ochrony komunikacji przed inwigilacją oraz monitorowaniem przez osoby trzecie, takie jak dostawcy usług internetowych.
 
->I2P is used by many people who care about their privacy: activists, oppressed people, journalists and whistleblowers, as well as the average person.
+>Z I2P korzysta wiele osób troszczących się o swoją prywatność: aktywiści, osoby represjonowane, dziennikarze, informatorzy oraz przeciętni użytkownicy.
 
->No network can be "perfectly anonymous". The continued goal of I2P is to make attacks more and more difficult to mount. Its anonymity will get stronger as the size of the network increases and with ongoing academic review.
+>Żadna sieć nie może być "idealnie anonimowa". Ciągłym celem I2P jest sprawianie, że ataki staną się coraz trudniejsze do dokonania. Jej anonimowość staje się silniejsza wraz z rozrostem sieci i rozwojem bieżących badań akademickich.
 
-### Notes
+### Adnotacje
 
-@I2P documentation and specifications are available [here](https://geti2p.net/docs/).
+Dokumenty I2P oraz specyfikacje dostępne są [tutaj](https://geti2p.net/docs/).

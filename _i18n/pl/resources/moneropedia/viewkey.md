@@ -1,15 +1,15 @@
 ---
 layout: moneropedia
-entry: "View Key"
-terms: ["view-key", "view-keys"]
-summary: "one of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account"
+entry: "Klucz widoczności"
+terms: ["klucz-widoczności", "klucza-widoczności"]
+summary: "Jeden z dwóch rodzajów prywanych i publicznych kluczy kryptograficznych przypisanych do każdego konta. Prywatny klucz widoczności jest wymagany do wyświetlenia wszystkich transakcji danego konta."
 ---
 
-### The Basics
+### Podstawy
 
-Monero features an opaque blockchain (with an explicit allowance system called the @view-key), in sharp contrast with transparent blockchains used by any other cryptocurrency not based on @CryptoNote. Thus, Monero is said to be "private, optionally transparent". 
+Monero używa nieprzezroczystego łańcucha bloków z systemem jawnych uprawnień, zwanym kluczem widoczności, w odróżnieniu od innych kryptowalut nieopartych na @CryptoNote, używających przejrzystych łańcuchów bloków. Stąd Monero określane jest jako "prywatne, opcjonalnie przejrzyste".
 
-Every Monero address has a private viewkey which can be shared.  By sharing a viewkey a person is allowing access to view every incoming transaction for that address.  However, outgoing transactions cannot be reliably viewed as of June 2017. Therefore the balance of a Monero address as shown via a viewkey should not be relied upon.
+Każdy adres Monero posiada prywatny klucz widoczności, który może być udostępniony. Udostępniając innym swój klucz widoczności, użytkownik pozwala na dostęp do wglądu we wszystkie transakcje przychodzące na dany adres. Wychodzące płatności nie są jednak widoczne, zgodnie ze stanem na czerwiec 2017 roku, dlatego saldo adresu Monero ukazane za pomocą klucza widoczności nie może być uznawane za rzetelne.
 
 
 

@@ -3,32 +3,32 @@ layout: moneropedia
 entry: "NTCP"
 tags: ["kovri"]
 terms: ["NTCP"]
-summary: "NIO-Based TCP (Non-blocking I/O based TCP): one of two Kovri transports"
+summary: "Protokół Kontroli Transmisji oparty na nieblokowaniu wejścia/wyjścia: jeden z dwóch środków transportów Kovri."
 ---
 
-### The Basics
+### Podstawy
 
-*NIO-Based TCP (Non-blocking I/O based TCP)* is one of two encrypted @transports for @Kovri.
+*Protokół Kontroli Transmisji oparty na nieblokowaniu wejścia/wyjścia (NTCP)* jest jednym z dwóch szyfrowanych środków @transportu w @Kovri.
 
-Similar to @SSU, @NTCP's *primary* purpose is to securely transmit @in-net @I2NP messages through @tunnels but, unlike @SSU, @NTCP functions solely over encrypted [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol).
+Podobnie do @SSU, *głównym* przeznaczeniem NTCP jest bezpieczny transport @wiadomości @in-net w sieci @I2NP poprzez @tunele, jednak w odróżnieniu od SSU, NTCP działa jedynie za pomocą zaszyfrowanego [Protokołu Kontroli Transmisji](https://en.wikipedia.org/wiki/Transmission_Control_Protocol).
 
-### In-depth information
+### Szczegółowe informacje
 
- - Passes along individual @I2NP messages (both Standard and Time Sync) after:
-   - TCP has been established
-   - Establishment Sequence has been completed
- - Uses the following @encryption:
-   - 2048-bit [Diffie-Hellman](https://en.wikipedia.org/wiki/Diffie-hellman)
+ Przekazuje pojedyncze wiadomości I2NP, po tym jak:
+   - został ustanowiony Protokół Kontroli Transmisji
+   - została ukończona sekwencja ustanowienia
+ Korzysta z następujących @szyfrowań:
+   - 2048-bitowy [Diffie-Hellman](https://en.wikipedia.org/wiki/Diffie-hellman)
    - [AES-256](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)/[CBC](https://en.wikipedia.org/wiki/Block_cipher_modes_of_operation)
- - Establishment Sequence has the following *states*:
-   - Pre-establishment
-   - Establishment
-   - Post-establishment or "Established"
- - Uses the following from the @network-database:
-   - Transport name: NTCP
-   - Host: IP (IPv4 or IPv6) or host name (shortened IPv6 address (with "::") is allowed)
+Sekwencja ustanowienia składa się z następujących *stanów*:
+   - Pre-ustanowienie
+   - ustanowienie
+   - Post-ustanowienie or "Ustanowione"
+ Korzysta z następujących charakterystyk @bazy-danych-sieci:
+   - Nazwa środka transportu: NTCP
+   - Host: IP (IPv4 lub IPv6) lub nazwa hosta (skrócony adres IPv6 (wraz z "::") jest dozwolony)
    - Port: 1024 - 65535
 
-### Notes
+### Adnotacje
 
-For further details, read @Java-I2P's [NTCP](https://geti2p.net/en/docs/transport/ntcp)
+Aby dowiedzieć się więcej, przejdź do strony [NTCP](https://geti2p.net/en/docs/transport/ntcp) @Java-I2P.

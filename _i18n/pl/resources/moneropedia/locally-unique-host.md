@@ -1,22 +1,22 @@
 ---
 layout: moneropedia
-entry: "Locally-unique host"
+entry: "Lokalnie unikalny host"
 tags: ["kovri"]
-terms: ["Locally-unique-host"]
-summary: "A host defined by you and resolved only by you"
+terms: ["lokalnie-unikalny-host", "lokalnie-unikalnego-hosta", "lokalnie-unikalnym-hostem", "lokalnie-unikalnym-hoście"]
+summary: "Host zdefiniowany i ustalony wyłącznie przez ciebie."
 ---
 
-### The Basics
+### Podstawy
 
-A locally-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) defined by **you** and resolved only by you; similar to how a [hosts file](https://en.wikipedia.org/wiki/etc/hosts) is implemented. Not to be confused with @canonically-unique-host.
+Lokalnie unikalny host jest [Pełną, Jendoznaczną Nazwą Domenową](https://en.wikipedia.org/wiki/FQDN) definiowaną przez **ciebie** i ustaloną wyłącznie przez ciebie, podobnie do tego, jak wdrażane są [pliki hosts](https://en.wikipedia.org/wiki/etc/hosts). Nie należy go mylić z @zasadniczym-unikalnym-hostem.
 
-### In-depth information
+### Szczegółowe informacje
 
-You have the option to share your interpretation of how the host is resolved (e.g., `localhost` always resolves to `127.0.0.1`) but the resolution is not canonically enforced (e.g., someone else can map `localhost` to any arbitrary IP address).
+Możesz podzielić się swoją interpretacją tego, jak ustalany jest host, np. `localhost` zawsze jest ustalony jako `127.0.0.1`, ale to ustalenie nie jest ogólnie egzekwowane (np. ktoś może przypisać `localhost` do dowolnego adresu IP).
 
-Hosts in a public subscription can be considered @canonically-unique-host's within the @I2P network but, ultimately, you are free to re-define them as you wish.
+Hosty w publicznej subskrypcji mogą być uważane za @zasadnicze-unikalne-hosty wewnątrz sieci @I2P, jednak ostatecznie to od ciebie zależy, jak je zdefiniujesz.
 
-### Notes
+### Adnotacje
 
-- Monero primarily uses @canonically-unique-host resolution while @I2P only uses @locally-unique-host resolution.
-- @I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)
+- Monero używa przede wszystkim zasadniczych unikalnych hostów, podczas gdy I2P korzysta jedynie z lokalnie unikalnych hostów.
+- Przypisaną domeną najwyższego poziomu I2P jest obecnie `.i2p`, a Kovri zamierza używać jedynie [domeny najwyższego poziomu](https://en.wikipedia.org/wiki/Top_level_domain) `.i2p` .

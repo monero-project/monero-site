@@ -1,16 +1,16 @@
 ---
 layout: moneropedia
-entry: "Block"
-terms: ["block", "blocks"]
-summary: "a container of transactions, a sequence of which forms a blockchain"
+entry: "Blok"
+terms: ["blok", "bloku", "blokiem"]
+summary: "Zbiornik transakcji, jego sekwencja tworzy łańcuch bloków."
 ---
 
-### The Basics
+### Podstawy
 
-A block is a container of @transactions, with a new block being added to the @blockchain once every 2 minutes (see constant `DIFFICULTY_TARGET_V2` defined as 120 seconds), on average.
+Blok jest zbiornikiem @transakcji, a każdy nowy blok dodawany jest do @łańcucha-bloków przeciętnie co dwie minuty (zobacz stały `DIFFICULTY_TARGET_V2` - cel trudności - zdefiniowany jako 120 sekund).
 
-Blocks also contain a special type of transaction, the @coinbase-transaction, which add newly created Monero to the network.
+Bloki zawierają również specjalny rodzaj transakcji, @transakcję-coinbase, która wypuszcza do sieci nowoutworzone Monero.
 
-Blocks are created through the process of @mining, and the @node that successfully mines the block then broadcasts it to each of the @nodes connected to it, who subsequently re-broadcast the block until the entire Monero network has received it.
+Bloki tworzone są w procesie @wydobycia. @węzeł, który efektywnie wydobył blok, przekazuje go wszystkim węzłom z nim połączonym, które następnie przekazujom go kolejnym, aż cała sieć Monero otrzyma nowy blok.
 
-Fake or bad blocks generally cannot be created, as @nodes that receive blocks always verify the @transactions they contain against a set of consensus rules that all nodes adhere to, including validating the cryptographic @signatures on each transaction.
+Bloki sfałszowane lub złe przeważnie nie mają szansy na powstanie, ponieważ węzły zawsze weryfikują, czy ich transakcje nie przekraczają ogólnie przyjętych norm obowiązujących wszystkie węzły, łącznie z potwierdzeniem szyfrowanego @podpisu każdej płatności.

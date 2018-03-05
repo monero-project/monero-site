@@ -1,14 +1,14 @@
 ---
 layout: moneropedia
-entry: "Data Directory"
+entry: "Katalog danych"
 tags: ["kovri"]
-terms: ["Data-Directory"]
-summary: "Where essential kovri data for runtime is stored"
+terms: ["katalog-danych", "katalogu-danych", "katalogowi-danych"]
+summary: "Miejsce przechowywania kluczowych danych Kovri w czasie jego pracy."
 ---
 
-### The Basics
+### Podstawy
 
-Depending on your OS, @Kovri currently stores all run-time data in the following directory:
+W zależności od twojego systemu operacyjnego, @Kovri obecnie przechowuje wszystkie dane wykonawcze w następujących folderach:
 
 - Linux/FreeBSD:
   - `$HOME/.kovri`
@@ -19,4 +19,4 @@ Depending on your OS, @Kovri currently stores all run-time data in the following
 - Windows:
   - `"$APPDATA"\\Kovri`
 
-This includes all configuration files, @address-book, certificates, and resources.
+Zawierają one wszystkie pliki konfiguracyjne, @książkę-adresową, certyfikaty i zasoby.

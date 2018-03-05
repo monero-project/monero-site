@@ -1,10 +1,10 @@
 ---
 layout: moneropedia
-entry: "Coinbase Transaction"
-terms: ["coinbase-transaction"]
-summary: "a special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work"
+entry: "Transakcja coinbase"
+terms: ["transakcja-coinbase", "transakcji-coinbase", "transakcją-coinbase"]
+summary: "Specjalny rodzaj transakcji włączonej do każdego bloku, która zawiera niewielką ilość Monero przesłaną do górnika jako wynagrodzenie za jego pracę wydobywczą."
 ---
 
-### The Basics
+### Podstawy
 
 {{ page.summary | capitalize }}.

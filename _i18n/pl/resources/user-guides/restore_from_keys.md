@@ -1,19 +1,18 @@
-{% include untranslated.html %}
-Restoring a wallet from private keys (via the command line) is pretty simple. If you have the necessary information, with this guide you can completely restore your wallet. Note: you do NOT have to have your password to restore from keys.
+Przywracanie portfela za pomocą prywatnych kluczy (w wierszu poleceń) jest całkiem proste. Jeśli posiadasz potrzebne informacje, z tym przewodnikiem będziesz mógł całkowicie przywrócić swój portfel. Zauważ, że nie musisz posiadać swojego hasła, aby przywracać za pomocą kluczy.
 
-You need to have 3 pieces of data from your wallet, or your .keys file which holds this info and the password to decrypt it. The 3 wallet components that you need are:
+Potrzebujesz trzech różnych informacji z twojego portfela lub plików .keys, które zawierają te informacje oraz hasło do ich odszyfrowania. Trzy komponenty portfela, których potrzebujesz, to:
 
-1. **Address**
-2. **Secret Spendkey**
-3. **Secret Viewkey**
+1. **Adres**
+2. **Ukryty klucz do wydawania**
+3. **Ukryty klucz widoczności**
 
 
-Then run the wallet command:
+Następnie uruchom funkcję portfela:
 
 `./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`
 
-Next, you'll be asked for the Address, the spendkey, the viewkey, and finally the new password for the re-generated wallet.
+Zostaniesz poproszony o adres, klucz do wydawania, klucz widoczności i na końcu o nowe hasło do odwtorzonego portfela.
 
-Running this with the correct parameters will re-generate your wallet files for you and allow you to set a new password.
+Ukończenie tego z poprawnymi parametrami odtworzy pliki twojego portfela i pozwoli na ustalenie nowego hasła.
 
-If you run into any trouble, running `./monero-wallet-cli --help` will show you the options available to you at wallet startup. Once you're inside your wallet, running the `help` command will list the help for the commands available to you within the wallet.
+W przypadku problemów, uruchomienie funkcji `./monero-wallet-cli --help` wyświetli dostępne opcje. Uruchomienie funkcji `help` wewnątrz portfela wyświetli pomoc dotyczącą funkcji dostępnych wewnątrz portfela.

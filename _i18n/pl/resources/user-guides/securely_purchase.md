@@ -1,82 +1,79 @@
-{% include untranslated.html %}
-## How to purchase Monero and securely store it.
+## Jak bezpiecznie kupować i przechowywać Monero?
 
-This is a guide to purchase and securely store Monero as of June 2017. 
+Ten przewodnik opisuje, jak kupować i bezpiecznie przechowywać Monero, zgodnie ze stanem na czerwiec 2017 roku.
 
-#### Step 1: Buy Bitcoin
+#### Krok 1: Kup Bitcoin.
 
-There are many ways to buy Bitcoin. Two semi-reliable companies at this time are Xapo <http://www.xapo.com/> and Coinbase <http://www.coinbase.com/>. The process will involve uploading your personal identification (State ID, Passport, etc.) and will take anywhere from 2 to 10 days (or longer).  Verify their reputation on Reddit before making a large purchase.  Xapo uses Wire Transfer and Coinbase uses Bank Transfer (ACH in the USA).  Xapo should be faster than Coinbase.  Coinbase also allows small "instant" buys via a debit card but adds a large fee for this option. Once you have purchased Bitcoin, you are ready to convert it to Monero!
+Istnieje wiele sposobów na zakupo Bitcoina. Dwie na wpół niezawodne organizacje to Xapo <http://www.xapo.com/> oraz Coinbase <http://www.coinbase.com/>. Proces obejmuje przesłanie swojego dokumentu (dowodu osobistego, paszportu itp.) i zajmie od 2 do 10 dni (lub więcej). Zanim dokonasz dużego zakupu, zweryfikuj ich opinię na Reddit. Xapo korzysta z Wire Transfer, a Coinbase z Bank Transfer (ACH w USA). Xapo zazwyczaj jest szybszy niż Coinbase. Coinbase pozwala także na małe, natychmiastowe kupna za pośrednictwem karty debetowej, ale ta opcja obarczona jest wysoką opłatą. Po zakupie Bitcoina jesteś gotowy na wymianę go na Monero!
 
-#### Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+#### Krok 2: Ściągnij i utwórz papierowy portfel na bezpiecznym i odłączonym od sieci komputerze.
 
-Download the paper wallet generator at: https://moneroaddress.org and copy it to a USB stick (Direct link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip). 
+Ściągnij generator papierowego portfela ze strony https://moneroaddress.org i skopiuj go na USB (bezpośredni link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip). 
 
-Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped computer that hasn't been used before, or has had a clean installation of the OS. 
+Rozpakuj i otwórz generator papierowego portfela (monero-wallet-generator.html) w przeglądarce na odłączonym od sieci komputerze, który nie był wcześniej używany lub posiada świeżo zainstalowany system operacyjny.
 
-Your paper wallet will have four important items:
+Twój papierowy portfel posiada cztery ważne informacje:
 
-Monero Public Address
-The public address is used to receive funds to the wallet.  You give this to anyone who will be sending funds to your wallet.
+Publiczny adres Monero
+Publiczny adres jest używany do otrzymywania płatności. Przekazujesz go osobie, która prześle pieniądze do twojego portfela.
 
-Monero Mnemonic Seed
-The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date.
+Kod mnemoniczny Monero
+Kod mnemoniczny jest metodą przechowywania całego portfela, łatwo rozpoznawalną dla ludzi. Jest wszystkim, czego potrzebujesz, aby przywrócić swój portfel.
 
-Monero Private Spend Key
-The private spend key is used to send funds from the wallet.
+Prywatny klucz wydawania Monero
+Prywatny klucz wydawania jest używany do wysyłania pieniędzy z twojego portfela.
 
-Monero Private View Key
-The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
+Prywatny klucz widoczności Monero
+Prywatny klucz widoczności służy to wyświetlania transakcji przychodzących na konto. Często jest on używany do zakładania portfela tylko do odczytu, który wyświetla transakcje przychodzące, będące aktualnie przesyłane w łańcuchu bloków do zimnego portfela.
 
-At this point you have many options.  You can print the wallet on paper, save it as a PDF or text on a USB stick, burn it to CD/DVD, etc.  Most likely you will want at least two or three copies, stored securely in different locations.  If storing digitally, encrypt everything with a strong password.  If storing on paper, do not show the wallet to anyone else who can memorize your 25 word key, or take a picture of the wallet without your permission.  Sending someone a picture of the wallet is the same as giving away all of your funds.
+W tym miejscu masz wiele opcji. Możesz wydrukować swój portfel, zapisać jako PDF lub plik tekstowy na USB, nagrać na CD/DVD itd. Najpewniej będziesz potrzebował przynajmniej dwóch lub trzech jego kopii, bezpiecznie zachowanych w różnych miejscach. Jeśli zapisujesz je na dysku, ochroń wszystko silnym hasłem. Jeśli zachowujesz portfel na papierze, nie pokazuj go nikomu, aby nie zapamiętano twojego 25-słownego kodu lub nie zrobiono zdjęcia bez twojej zgody. Przesyłanie zdjęcia twojego portfela jest równoznaczne z oddaniem wszystkich twoich pieniędzy.
 
-Whichever method you chose, be sure there's no copy of the Monero wallet left over on the device you used.  You may need to securely delete the Monero wallet if you saved it to a disk, or make sure your printer does not save a copy in memory.
+Jakąkolwiek metodę wybierzesz, upewnij się, że żadna kopia twojego portfela Monero nie została na urządzeniu, którego używałeś. Bezpiecznie usuń portfel po zapisaniu go na dysku lub upewnij się, że drukarka nie zachowała żadnej kopii w swojej pamięci.
 
-*If you lose access to your Monero paper wallet the Monero will not be available to you or anyone else, ever.  You wont be able to recover them!
+*Jeśli stracisz dostęp do swojego papierowego portfela, twoje Monero nigdy nie będzie dostępne ani dla ciebie, ani dla nikogo innego. Nie będziesz mógł ich odzyskać!
 
-#### Side Note
-Option to encrypt an XMR mnemonic seed:
-https://xmr.llcoins.net/
-Download the html page and place it on your airgapped computer. Check the part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a decent password. Thanks manicminer5.
+#### Adnotacja
+Opcją zaszyfrowania kodu mnemonicznego Monero jest https://xmr.llcoins.net/. Ściągnij stronę html i otwórz ją na odłączonym od sieci komputerze. Sprawdź część "Encrypt/Decrypt Mnemonic Seed" i upewnij się, że używasz "CN Add" z mocnym hasłem. Dzięki, manicminer5.
 
 
 
-#### Step 3: Convert your Bitcoin to Monero and have it sent to your Monero Paper Wallet
+#### Krok 3: Zamień Bitcoin na Monero i prześlij je do swojego papierowego portfela.
 
-Switch to your internet connected computer and go to www.shapeshift.io. Choose "Deposit Bitcoin" and "Receive Monero" (quick).
+Przejdź do komputera z połączeniem internetowym i wejdź na stronę www.shapeshift.io. Wybierz "Deposit Bitcoin" i "Receive Monero" (szybko).
 
-Press Continue.
+Naciśnij Dalej.
 
-Your Monero Address (the Monero Public Address on your Monero Paper Wallet)
-Paste the Monero Public address from your paper wallet where it says "Your Monero Address".   But wait, since your Monero Public Address is on an airgapped computer (right?), you can't copy and paste anything...  Copy it over by hand, or get a blank USB drive and copy only the Public Address to it.
+Twój adres Monero (publiczny adres Monero w twoim papierowym portfelu Monero)
+Wklej publiczny adres Monero z papierowego portfela w miejscu podpisanym "Your Monero Address". Ponieważ twój publiczny adres znajduje się na komputerze odłączonym od sieci (prawda?), przepisz go ręcznie lub skopiuj tylko publiczny adres na czysty dysk USB.
 
-Refund Address (Bitcoin Public Address you can receive funds at)
-Enter a Bitcoin address that you control where a refund can be sent in case there's a problem with the transaction.  It's very important that you enter a Bitcoin Public Address you control or can receive funds at.  At Xapo and Coinbase this is called a Receive Address and it may change periodically.
+Adres zwrotny (publiczny adres Bitcoin, na który otrzymujesz pieniądze)
+Wprowadź adres Bitcoin, który kontrolujesz i gdzie ewentualny zwrot zostanie wysłany, jeśli zaistnieje problem z transakcją. Na Xapo i Coinbase adres ten nazywa się adresem otrzymywania i może się czasami zmieniać.
 
-Payment ID
-Leave Payment ID blank if you are sending to your own Monero wallet or Monero paper wallet.
+Numer identyfikacyjny płatności
+Zostaw pole z numerem identyfikacji płatności puste, jeśli wysyłasz do własnego portfela Monero lub do papierowego portfela Monero.
 
-Agree to the Terms and hit the slider to make this a "Reusable Address".  
+Zaznacz zgodę z warunkami i zmień suwak na "Reusable Address".  
 
-Press "Start Transaction".
+Kliknij "Start Transaction".
 
-Deposit Address (Shapeshift.io's Public Bitcoin Address created only to receive your funds)
-In the new screen that pops up, copy the Deposit Address into your clipboard (select and hit ctrl+c or edit-copy).  You will send Bitcoin from Xapo/Coinbase to Shapeshift.io via this address.
+Adres wpłat (publiczny adres Bitcoina, stworzony jedynie do otrzymywania funduszy na Shapeshift.io)
+Z nowego okna skopiuj adres wpłat (ctrl+c lub menu Edit - Copy). Za pomocą tego adresu prześlesz Bitcoin z Xapo lub Coinbase na Shapeshift.io.
 
-Go to your Xapo or Circle account, and find a Transfer or Send button. Paste the Bitcoin Deposit address into the Destination field and enter the amount of bitcoin you would like to have converted to Monero.  It must be within the Deposit Min and Deposit Max range specified by Shapeshift.io.  Press Send and authorize the transaction, if required.
+Przejdź do swojego konta Xapo lub Circle i znajdź przycisk Transfer lub Send. Wklej adres wpłat Bitcoina  wpole Destination i wpisz kwotę w Bitcoinach, którą chcesz zamienić na Monero. Kwota musi się zmieścić w minimalnym i maksymalnym zakresie wpłat Shapeshift.io. Kliknij Send i zautoryzuj transakcję, jeśli zostaniesz o to poproszony.
 
-Once the send has been initiated by Xapo/Coinbase there will be a delay while the transaction enters the Bitcoin blockchain and awaits confirmation.  This may be minutes or hours.  You can check if the payment has been sent by looking up the Shapeshift.io Deposit address at blockchain.info.  Your transaction to Shapeshift.io will show up there.
+Kiedy wysyłka zostanie zainicjowana przez Xapo lub Coinbase, pojawi się pewne opóźnienie przy wejściu transakcji do łańcucha bloków Bitcoina i oczekiwaniu na potwierdzenie. Może ono zająć kilka minut lub godzin. Możesz sprawdzić, czy płatność została wysłana, wyszukując adres wpłat Shapeshift.io na stronie blockchain.info. Pojawi się tam twoja transakcja do Shapeshift.io.
 
-When your Bitcoin transaction has been confirmed, Shapeshift.io will then begin exchanging Bitcoin (BTC) for Monero (XMR) at one of the exchanges and when it's complete, send the Monero to the address of your Cold Storage Paper Wallet!  This can take minutes to hours.  If there's an issue, contact Shapeshift.io.  They have good support.
+Po potwierdzeniu twojej wpłaty Bitcoinów, Shapeshift.io rozpocznie wymianę Bitcoinów (BTC) na Monero (XMR) na jednej z giełd, a gdy ją zakończy, wyśle Monero na adres twojego zimnego papierowego portfela. Zajmie to kilka minut lub godzin. W przypadku problemów, skontaktuj się z ekipą Shapeshift.io, jest ona bardzo pomocna.
 
-When the Shapehift.io webpage says your transaction has been completed, you should now have Monero in your Paper Wallet!
+Gdy Shapeshift.io poinformuje o ukończeniu twojej transakcji, powinieneś już mieć swoje Monero w papierowym portfelu!
 
 
-#### Notes and How to Verify Funds
-Because the Monero blockchain is private and untraceable, you won't be able to lookup your Monero Public Address and confirm that the funds have arrived like you might with Bitcoin.  This is good for privacy, but bad for convenience.
+#### Adnotacje i jak zweryfikować fundusze
+Ponieważ łańcuch bloków Monero jest prywatny i niewykrywalny, nie będziesz mógł wyszukać swojego publicznego adresu Monero i potwierdzić, że fundusze doszły, tak jak to można zrobić w przypadku Bitcoina. To jest dobre dla prywatności, ale niewygodne.
 
-To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet.  This is where that view-key comes in.  To create a view-only wallet see the entry: [View Only Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)
+Aby bezpiecznie zweryfikować, czy pieniądze wpłynęły na twoje konto, będziesz musiał założyć portfel tylko do odczytu. Do tego przyda się klucz widoczności. Aby założyć portfel tylko do odczytu, przejdź do części [Portfele tylko do odczytu]({{site.baseurl}}/resources/user-guides/view_only.html).
 
-To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet or connect it to the internet and it becomes a Hot Wallet.
+Aby zweryfikować, czy pieniądze *nadal* są w twoim portfelu i nie zostały wydane, musisz założyć zimny portfel za pomocą swojego kodu mnemonicznego, na komputerze odłączonym od sieci z aktualną kopią łańcucha bloków Monero. Po skończeniu, bezpiecznie usuń portfel lub połącz go z internetem, aby stał się gorącym portfelem.
 
 
 

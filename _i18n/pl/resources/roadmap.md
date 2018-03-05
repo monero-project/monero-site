@@ -1,18 +1,17 @@
-{% include untranslated.html %}
 <div class="roadmap">
 <div class="text-center pre-roadmap container">
     <div class="row">
        <div class="col-xs-4">
             <li class="completed"></li>
-            <p>Completed task</p>
+            <p>Ukończone</p>
        </div>
        <div class="col-xs-4">
             <li class="ongoing"></li>
-            <p>Ongoing task</p>
+            <p>W trakcie</p>
        </div>
        <div class="col-xs-4">
             <li class="upcoming"></li>
-            <p>Upcoming task</p>
+            <p>Nadchodzące</p>
        </div>
     </div>
 </div>
@@ -102,7 +101,7 @@
                             </div>
                             <label for="tab-5" tabindex="0"></label>
                             <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
-                            <h2>Future</h2>
+                            <h2>W przyszłości</h2>
                             <div class="tabPanel-content">
                                {% for toplevel in site.data.lang[site.lang].roadmap %}
                               {% if toplevel.year == 2018 %}

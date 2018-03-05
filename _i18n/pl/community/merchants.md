@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please [open a GitHub issue and let us know](https://github.com/monero-project/monero-site/issues).
+Różnego rodzaju handlowcy doceniają finansową prywatność, jakiej dostarcza Monero. Poniżej znajduje się lista organizacji, o których wiemy, że akceptują Monero jako środek płatniczy za swoje produkty i usługi. Jeśli któraś z nich już nie uznaje Monero lub chciałbyś, żeby Twoja firma znalazła się na liście, załóż wątek na GitHub i daj nam znać (https://github.com/monero-project/monero-site/issues).
 </div>
 <div class="merchants">
 {% for toplevel in site.data.merchants %}
@@ -23,5 +22,5 @@ Merchants of all kinds have come to value the financial privacy that Monero brin
 </div>
 
 <div markdown="1" class="text-center container description">
-*Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ("buyer beware"); you are responsible for doing your own research. Always use judgement when making online purchases.*
+*Uwaga: powyższe linki są jedynie udogodnieniem i służą tylko do celów informacyjnych; nie reprezentują one wsparcia społeczności Monero dla żadnego z produktów, usług ani opinii wymienionych organizacji lub osób. Społeczność Monero nie bierze odpowiedzialności za zgodność, legalność ani treść tych zewnętrznych stron. W przypadku wątpliwości związanych z treścią linków, skontaktuj się z właścicielami zewnętrznej strony. Jesteś odpowiedzialny za swoje wyszukiwania. Zawsze przemyśl swój internetowy zakup.*
 </div>

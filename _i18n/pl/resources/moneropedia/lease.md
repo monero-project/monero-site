@@ -2,14 +2,14 @@
 layout: moneropedia
 entry: "Lease"
 tags: ["kovri"]
-terms: ["Lease", "Leases"]
-summary: "Authorizes an I2P tunnel to receive messages targeting a destination"
+terms: ["Lease", "Leases", "leasów"]
+summary: "Autoryzuje tunel sieci I2P do otrzymywania wiadomości przeznaczonych do węzła docelowego."
 ---
 
-### The Basics
+### Podstawy
 
-A lease defines the authorization for a particular @I2P @tunnel to receive a @messages targeting a @destination.
+Lease definiuje autoryzację pojedynczego @tunelu sieci @I2P do otrzymywania @wiadomości przeznaczonych do @węzła-docelowego.
 
-### In-depth information
+### Szczegółowe informacje
 
-For further details, read @Java-I2P's [Lease](https://geti2p.net/spec/common-structures#lease)
+Aby dowiedzieć się więcej, przejdź do strony na temat [Lease'u](https://geti2p.net/spec/common-structures#lease) w @Java-I2P.

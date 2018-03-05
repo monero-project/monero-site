@@ -1,16 +1,16 @@
 ---
 layout: moneropedia
-entry: "Spend Key"
-terms: ["spend-key", "spend-keys"]
-summary: "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
+entry: "Klucz wydawania"
+terms: ["klucz-wydawania", "klucza-wydawania", "kluczem-wydawania", "kluczowi-wydawania"]
+summary: "Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, które posiada każde konto. *Prywatny* klucz wydawania służy do wydawania środków na koncie."
 ---
 
-### The Basics
+### Podstawy
 
 {{ page.summary | capitalize }}.
 
-### In-depth Information
+### Szczegółowe informacje
 
-The *private* spend key is a 256-bit integer that is used to sign Monero transactions. With the current deterministic key derivation method of the official wallet, the private spend key is also an alternate representation of the @mnemonic-seed. It can be used to derive all other account keys.
+*Prywatny* klucz wydawania jest 256-bitową liczbą całkowitą używaną do podpisywania transakcji Monero. Poprzez obecną deterministyczną metodę pochodnej klucza w oficjalnym portfelu, prywatny klucz wydawania jest także zastępczą reprezentacją @kodu-mnemonicznego. Może zostać użyty do pobrania wszystkich pozostałych kluczy do konta.
 
 

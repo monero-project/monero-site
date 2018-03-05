@@ -1,16 +1,16 @@
 ---
 layout: moneropedia
-entry: "Tail Emission"
-terms: ["Tail-Emission"]
-summary: "the block reward at the end of the emission curve"
+entry: "Tail emission"
+terms: ["tail-emission", "krzywej-z-długim-ogonem", "krzywą-z-długim-ogonem", "krzywa-z-długim-ogonem"]
+summary: "Wynagrodzenie za blok na końcu krzywej emitowania."
 ---
 
-### The Basics
+### Podstawy
 
-Monero block rewards will never drop to zero. Block rewards will gradually drop until tail emission commences at the end of May 2022. At this point, rewards will be fixed at 0.6 XMR per block.
+Wynagrodzenie za blok Monero nigdy nie spadną do zera, ale będą stopniowo spadać aż do końca maja 2022 roku, kiedy rozpocznie się emisja według krzywej z długim ogonem. W tym momencie wynagrodzenie zostanie ustalone jako 0,6 XMR za blok.
 
-### Why
+### Przyczyny
 
-Miners need an incentive to mine. Because of the dynamic blocksize, competition between miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network.
+Górnicy potrzebują zachęty do wydobywania. Z powodu dynamicznego rozmiaru bloku, konkurencja pomiędzy górnikami spowoduje zmniejszenie opłat za transakcje. Jeśli wydobycie nie będzie rentowne ze względu na wysoki koszt i niskie wynagrodzenie, górnicy stracą motywację i przestaną wydobywać, co spowoduje zmniejszenie bezpieczeństwa sieci.
 
-Tail emission ensures that a dynamic block size and fee market can develop.
+Emisja według krzywej z długim ogonem zapewnia ciągły rozwój dynamicznego rozmiaru bloków i rynku opłat.

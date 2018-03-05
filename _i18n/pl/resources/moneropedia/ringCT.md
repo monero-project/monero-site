@@ -1,18 +1,19 @@
 ---
 layout: moneropedia
-entry: "Ring CT"
-terms: ["ringCT", "ring-CT"]
-summary: "a way to hide the amount sent in a Monero transaction"
+entry: "Poufne Transakcje Pierścieniowe"
+terms: ["poufne-transakcje-pierścieniowe", "poufnym-transakcjom-pierścieniowym", "poufnymi-transakcjami-pierścieniowymi", "poufnych-transakcji-pierścieniowych"]
+summary: "Sposób na ukrycie wartości Monero przesłanych w transakcji."
 ---
 
-### The Basics
-RingCT, short for Ring Confidential Transactions, is how transaction amounts are hidden in Monero. 
+### Podstawy
 
-Ring CT was implemented in block #1220516 in January 2017.  After September 2017, this feature became mandatory for all transactions on the network.
+Poufne Transakcje Pierścieniowe (RingCT) jest sposobem na ukrycie wartości Monero przesyłanych w transakcjach.
 
-RingCT introduces an improved version of @ring-signatures called A Multi-layered Linkable Spontaneous Anonymous Group signature, which allows for hidden amounts, origins and destinations of transactions with reasonable efficiency and verifiable, trustless coin generation.
+Poufne Transakcje Pierścieniowe zostały wdrożone w bloku #1220516 w styczniu 2017 roku. Od września 2017 roku sposób ten jest obowiązkowy dla wszystkich transakcji w sieci.
 
-For more information, please read the creator Shen Noether's paper [here](https://eprint.iacr.org/2015/1098).
+Poufne Transakcje Pierścieniowe są ulepszoną wersją @podpisu-pierścieniowego zwaną Wielowarstwowym, Łączonym, Spontanicznym, Anonimowym Podpisem Grupowym, który pozwala na ukrycie kwot, nadawcy oraz odbiorcy płatności z rozsądną wydajnością i weryfikowalnym, nieufalnym tworzeniem monet.
+
+Aby dowiedzieć się więcej, przeczytaj dokument twórcy, Shena Noethera, [tutaj](https://eprint.iacr.org/2015/1098).
 
 
 {{ page.summary | capitalize }}.

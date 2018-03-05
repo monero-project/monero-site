@@ -3,26 +3,26 @@ layout: moneropedia
 entry: "I2NP"
 tags: ["kovri"]
 terms: ["I2NP"]
-summary: "The I2P Network Protocol: the mechanism in which I2NP messages are sent over the I2P network"
+summary: "Protokół sieci I2P: mechanizm, za pomocą ktąrego wiadomości I2NP są przesyłane do sieci I2P."
 ---
 
-### The Basics
+### Podstawy
 
-From @Java-I2P:
-
->
-@I2NP manages the routing and mixing of messages between routers, as well as the selection of what transports to use when communicating with a peer for which there are multiple common transports supported
-
-### In-depth information
-
-From @Java-I2P:
+Za: @Java-I2P:
 
 >
-@I2NP (@I2P Network Protocol) @messages can be used for one-hop, router-to-router, point-to-point @messages. By @encrypting and wrapping @messages in other @messages, they can be sent in a secure way through multiple hops to the ultimate @destination. @I2NP does not specify nor require any particular @transport layer but does require at least one @transport in use.
+@I2NP zarządza trasowaniem i mieszaniem wiadomości pomiędzy routerami oraz wybiera rodzaj transportu gdy komunikacja z peerem może się odbyć za pomocą wielu środków.
+
+### Szczegółowe informacje
+
+Za: @Java-I2P:
 
 >
-Whenever a @destination wants to send a message to to another @destination, it provides its local router with both the @destination structure and the raw bytes of the message to be sent. The router then determines where to send it, delivers it through outbound @tunnels, instructing the end point to pass it along to the appropriate inbound @tunnel, where it is passed along again to that @tunnel's end point and made available to the target for reception.
+@wiadomości I2NP (Protokół Sieci I2P) mogą zostać użyte do pojedynczego hopu, router-to-router lub point-to-point. Poprzez @szyfrowanie oraz zawieranie wiadomości w innych wiadomościach, możliwe jest wysyłanie ich bezpieczną drogą przez wiele hopów aż do @węzła końcowego. I2NP nie uściśla ani nie wymaga żadnej konkretnej warstwy @transportu, ale wymaga użycia przynajmniej jednego środka.
 
-### Notes
+>
+Za każdym razem gdy węzeł końcowy chce wysłać wiadomość do innego węzła końcowego, udostępnia on swój lokalny router ze strukturą węzła końcowego oraz surowe bajty wiadomości, która ma być wysłana. Następnie router decyduje dokąd ją wysłać, dostarcza ją poprzez wychodzące @tunele, informując punkt końcowy, aby przekazał ją do odpowiedniego tunelu przychodzącego, gdzie zostaje ona przekazana ponownie do tunelu punktu końcowego i udostępniona odbiorcy.
 
-Read more about the @I2NP [protocol](https://geti2p.net/en/docs/protocol/i2np) and [specification](https://geti2p.net/spec/i2np).
+### Adnotacje
+
+Przeczytaj więcej o [protokole I2NP](https://geti2p.net/en/docs/protocol/i2np) oraz jego [specyfikacjach](https://geti2p.net/spec/i2np).
