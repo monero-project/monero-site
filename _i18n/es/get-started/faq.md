@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="tab">
     <input id="tab-one" type="checkbox" name="tabs" class="accordion">
     <label for="tab-one" class="accordion">¿Cómo Monero tiene valor?</label>
