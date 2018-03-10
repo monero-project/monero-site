@@ -23,6 +23,8 @@
       url: https://www.coincut.com
     - name: Cryptopia
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
+    - name: ExchangeD.I2P - Darknet exchange (I2P)
+      url: http://www.exchanged.i2p/en/home
     - name: Evercoin
       url: https://evercoin.com
     - name: Godex
