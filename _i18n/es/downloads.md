@@ -1,10 +1,8 @@
-{% include untranslated.html %}
 <div class="downloads">
 
 <div class="container description" markdown="1">
 
-If you need help choosing the correct application, please click [here](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) for a quick answer, then select the appropriate release for your operating system below.
-Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
+Si necesita ayuda para elegir la aplicación correcta, haga clic [aquí](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) para obtener una respuesta rápida, luego seleccione la versión apropiada para su sistema operativo. Nota: para mayor comodidad los hashes SHA256 se enumeran por las descargas, pero una lista GPG firmada de los hash está en getmonero.org/downloads/hashes.txt ] (https://getmonero.org/downloads/hashes.txt ) y debe tratarse como canónico, con la firma marcada con la clave GPG apropiada en el código fuente (en /utils/gpg_keys).
 
 </div>
 <div class="container full downdropdown">
@@ -26,7 +24,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
   <div class="info-block row center-xs" id="pick-platform">
      <div class="mob dropdowndrop">
         <input id="check01" type="checkbox" name="menu"/>
-        <label for="check01">Choose your OS</label>
+        <label for="check01">Elija su sistema operativo</label>
         <ul id="menu">
           <li><a href="#windows">Windows</a></li>
           <li><a href="#mac">Mac</a></li>
@@ -55,7 +53,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
             {{data_downloads.platform}}
         </h2>
             {% if data_downloads.version != null %}
-        <p class="text-center">Current Version: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
+        <p class="text-center">Versión actual:{{ data_downloads.version }} {{ data_downloads.tag }}</p>
             {%endif%}
 
 
@@ -64,23 +62,24 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 <h4 id="{{ data_downloads.platform | slugify }}">
- <a href="{{ data_downloads.cli_url }}">Source Code</a>
+ <a href="{{ data_downloads.cli_url }}">Código fuente</a>
 </h4>
 </div>
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
-If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can [use this link for the most current bootstrap](https://downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
+Si prefieres usar un blockchain bootstrap, en lugar de sincronizar desde cero, puedes [usar este enlace para el programa de arranque más reciente] (https://downloads.getmonero.org/blockchain.raw). Sin embargo, normalmente es mucho más rápido sincronizar desde cero y también requiere menos RAM (la importación es muy exigente).
 </div>
 </div>
 {% elsif data_downloads.id == "hardware" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>The Monero community has just funded a <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Dedicated Hardware Wallet</a> which is now in progress. As well, Ledger is working on <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">integrating Monero into their hardware wallets</a>.</p>
+    
+<p>La comunidad Monero acaba de financiar una <a href = "https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target = " _blank" rel = "noreferrer, noopener"> Cartera de Hardware Dedicado </a>  que ya está en progreso. Además, el libro principal está trabajando en la <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener"> integración de Monero en sus carteras de hardware.</a>.</p>
 </div></div>
 
 {% elsif data_downloads.id == "mobilelight" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href="/community/hangouts/">Hangouts</a> page to see where we are.</p>
+<p>Los siguientes son carteras móviles o livianas que los miembros de confianza de la comunidad consideran seguros. Si hay una cartera que no está aquí, puede solicitar que la comunidad la revise. <a href="/community/hangouts/">Hangouts</a> Ve a nuestra página de Hangouts para ver dónde.</p>
 </div>
 </div>
 <div class="row center-xs">
