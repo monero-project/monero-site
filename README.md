@@ -138,7 +138,7 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 * Write User Guide
 * Copy User Guide file to ALL LANGUAGES in /_i18n/[ALL LANGUAGES]/resources/user-guides
 * Paste `{% include untranslated.html %}` into the top of each language version of your User Guide, except the original language
-* Add guide using markdown in the correct category in ALL LANGUAGES to /_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
+* Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to /_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
 * Test/Build
 * Submit PR
 
@@ -173,13 +173,13 @@ As you paste into each folder, open up the file and paste the following snippet 
 `{% include untranslated.html %}`. This does not need to be done in the original language that the User Guide was written in.
 
 ### 5.7 Add Guide to the 'User Guide' landing page of EACH LANGUAGE
-In the /_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it. 
+In the /_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it.
 
 DO NOT CHANGE ANYTHING IN THIS DOCUMENT BESIDES WHAT YOU ARE INSTRUCTED TO.
 
 This file will look quite different because it's HTML. Don't panic. Simply Ctrl + F (i.e. the find feature) and search for the category that you want to put your User Guide in. You will see there are some sections that are not indented like the others. They are flush with the left side of the screen. **Do not change the indentation.** You can put markdown in these areas.
 
-Once you've identified the non-indented area under the category you would like your User Guide to be under, you can use markdown to insert your link underneath the others. `[TITLE OF USER GUIDE]({{site.baseurl}}/LINK-TO-USER-GUIDE.html)`. Please note that the file name in between the parentheses must be EXACTLY the same name as the permalink you made in step 5.3, but with a `.html` at the end instead of `.md` and the snippet `{{site.baseurl}}/` before the link.
+Once you've identified the non-indented area under the category you would like your User Guide to be under, you can use markdown to insert your link with the others in alphabetic order. `[TITLE OF USER GUIDE]({{site.baseurl}}/LINK-TO-USER-GUIDE.html)`. Please note that the file name in between the parentheses must be EXACTLY the same name as the permalink you made in step 5.3, but with a `.html` at the end instead of `.md` and the snippet `{{site.baseurl}}/` before the link.
 
 In the event that you think your User Guide should be in a new Category that doesn't exist yet, contact rehrar to make one for you.
 
