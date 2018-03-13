@@ -1,0 +1,98 @@
+langs:
+  en: English
+  es: Español
+  it: Italiano  
+  tr: Türkçe
+
+global:
+  date: '%Y/%m/%d'
+  monero: Monero
+  getting_started: Başlayın
+  copyright: Telif Hakkı
+  monero_project: Monero Projesi
+  sitename: getmonero.org, The Monero Project
+  wiki: Moneropedia
+  tags: Etikete Göre Yazılar
+  wikimeta: Moneropedia, Monero için açık ansiklopedi
+  tagsmeta: Etiketlenmiş olan tüm Monero blog yazıları
+  titlemeta: Monero'nun ana sayfasında, gizli, güvenli ve takip edilemeyen dijital para birimi
+  terms: Koşullar
+  privacy: Gizlilik
+  copyright: Telif Hakkı
+  edit: Bu Sayfayı Düzenle
+  untranslated: Bu sayfa henüz çevrilmemiş. Tercüme için yardım etmek isterseniz, lütfen şuraya bakın
+titles:
+  index: Ana Sayfa
+  whatismonero: Monero (XMR) nedir?
+  using: Kullanım
+  accepting: Alma
+  contributing: Bağış
+  mining: Madencilik
+  faq: SSS
+  downloads: İndirmeler
+  allposts: Tüm Yazılar
+  team: Monero Takımı
+  hangouts: Buluşma Yerleri
+  events: Etkinlikler
+  sponsorships: Sponsorluklar
+  merchants: Satıcılar & Servisler
+  about: Monero Hakkında
+  roadmap: Yol Haritası
+  researchlab: Araştırma Labı
+  moneropedia: Moneropedia
+  userguides: Kullanıcı Rehberleri
+  developerguides: Geliştirici Rehberleri
+  technicalspecs: Teknik Özellikler
+  themoneroproject: Monero Projesi
+  presskit: Monero Basın Kiti
+  legal: Yasal
+  ffs: Forum Finansman Sistemi
+  ffs-cp: Tamamlanmış Teklifler
+  ffs-fr: Finansman Gerekli
+  ffs-ideas: Fikirler
+  ffs-ot: Açık İşler
+  ffs-wip: Devam Eden İşler
+  blogbytag: Etikete göre Blog
+index:
+  page_title: "Monero - gizli, güvenli, takip edilemez"
+  what_is_1:
+  what_is_2: " nedir?"
+  what_is_orange_block: "Monero açık kaynak kodlu ve herkesin kullanımına açık olan, gizli, güvenli ve takip edilemeyen bir para birimidir."
+  what_is_text_block_1: "Monero’yla kendi bankanızsınız; paranızın kontrolü tamamen sizin elinizdedir. Monero’yla hesap ve işlemleriniz gizli tutulur."
+  what_is_text_block_2: "Daha fazla öğrenmek ister misiniz? Monero’nun ana özelliklerinin bir özeti alttadır. Monero’yu kendiniz denemek isterseniz"
+  what_is_text_block_3: "Başlayın"
+  what_is_text_block_4: "bölümü harika bir başlama noktasıdır."
+  news: Haberler
+  the_latest: En Güncel
+  private: Gizli
+  secure: Güvenli
+  untraceable: Takip Edilemez
+  private_text: "Monero, @transactions (işlemlerde) gizlenmiş miktar, alıcı ve gönderen adresi kullanır. Yani, ne kadar para gönderdiğinizi sizin dışınızda hiç kimse bilemez. Böylece alımlarınız ve transferleriniz her halükarda gizli tutulur."
+  untraceable_text: "@ring-signatures sayesinde, Monero gizli ve güvenli bir şekilde para göndermenizi sağlar. İşlemleriniz açık bir şekilde herhangi bir kişi tarafından @blockchain üzerinde doğrulanabilir, fakat bu işlemler blockchain üstünde rastgele dijital imzalar kullandığından, işleminizi doğrulayan kişi bu işlemin kimin tarafından imzalandığını göremez. Hangi miktarı kimin harcadığı görülemediği için, işlemleriniz gizli kalır ve size doğru herhangi bir izi sürülemez."
+  secure_text: "Monero dağıtılmış, kişiden-kişiye (peer-to-peer) bir @consensus ağı kullanır ve her işlem kriptografik olarak imzalanır. Paranız @blockchain üstünde güvenle depolanır ve istediğiniz zaman 25 kelimelik bir @mnemonic-seed ve Monero yazılımı aracılığıyla kişisel cüzdanınıza geri alınabilir. Cüzdan dosyalarınız disk üzerinde şifrelenir ve bir parola ile kilitlenir, böylece cüzdan, çalınması halinde çalan kişi için kullanışsız hale gelir."
+  how_do_i_1: "Nasıl "
+  how_do_i_2: " ?"
+  get_started: başlayın
+  get_started_1: "Monero’yu kullanmaya başlamanın en hızlı yolu bir web @account (hesap) yöneticisidir, mesela "
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "Alternatif olarak, full bir Monero nodu çalıştırmak isterseniz [full Monero node](/getting-started/running), sağdaki indir linkine tıklayarak arayüz programını ve kick-starter @blockchain (yerel programınızı hızlıca çalıştırmak için) indirebilirsiniz."
+  where_can_i: Nereden
+  download_1:
+  download_2: " indirebilirim?"
+  different_os: "Başka bir işletim sistemi için mi ihtiyacınız var?"
+  all_downloads: Buradan tüm mevcut indirmeleri görüntüleyin
+  c_download: İndir
+  monero_for: Şunun için Monero
+  latest_blockchain: En Güncel @Blockchain
+blog:
+  title_1: Tüm
+  title_2: Blog
+  title_3: Yazıları
+  tagged: Altında etiketlenmiş
+  author: Tarafından yayınlanmış
+  date: Zamanında yayınlanmış
+  forum: Bu girdi hakkında Monero Forum’da tartışmalara katılmak için buraya tıklayın
+tags:
+  all: Etikete göre Yazılar
+  notags: Bu etikete ait yazı yok.

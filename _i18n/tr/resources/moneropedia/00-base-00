@@ -1,0 +1,10 @@
+---
+layout: moneropedia
+entry: ""
+terms: ["", ""]
+summary: ""
+---
+
+### Temel Bilgiler
+
+{{ page.summary | capitalize }}.

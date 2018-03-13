@@ -1,0 +1,109 @@
+- year: 2014
+  accomplishments:
+    - name: Bitcointalk'da Piyasaya Sürüldü
+      date: 2014-04-18
+      status: completed
+    - name: Bitmonero'dan Monero'ya Tekrar İsimlendirildi
+      date: 2014-04-23
+      status: completed
+    - name: Bir spam saldırısından kurtarıldı
+      date: 2014-09-04
+      status: completed
+    - name: Monero Araştırma Labı'nın 1. ve 2. Makaleleri yayınlandı
+      date: 2014-09-12
+      status: completed
+    - name: Monero Araştırma Labı'nın 3. Makalesi yayınlandı
+      date: 2014-09-25
+      status: completed
+    - name: 0.8.8.6 sürümü çıktı
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: Monero Araştırma Labı'nın 4. Makalesi yayınlandı
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: 0.9.0 Hydrogen Helix yayınlandı
+      date: 2016-01-01
+      status: completed
+    - name: Monero Araştırma Labı'nın 5. Makalesi yayınlandı
+      date: 2016-02-10
+      status: completed
+    - name: Tüm işlemlerde ringsize’ın 3 olarak zorunlaştırılması için hardfork
+      date: 2016-03-22
+      status: completed
+    - name: 0.10.0 Wolfram Warptangent yayınlandı
+      date: 2016-09-18
+      status: completed
+    - name: Coin tabanının adlandırılması için hardfork
+      date: 2016-09-21
+      status: completed
+    - name: 0.10.1 Wolfram Warptangent yayınlandı
+      date: 2016-12-14
+      status: completed
+    - name: Resmi GUI Beta 1 yayınlandı
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: RingCT işlemlerin etkinleştirilmesi için hardfork
+      date: 2017-01-05
+      status: completed
+    - name: 0.10.2 yayınlandı; kritik bir güvenlik açığı kapatıldı
+      date: 2017-02-22
+      status: completed
+    - name: 0.10.3.1 Wolfram Warptangent yayınlandı
+      date: 2017-03-27
+      status: completed
+    - name: Minimum blok boyutu ve dinamik ücret algoritması için hardfork
+      date: 2017-04-15
+      status: completed
+    - name: Web sitesi tekrar tasarlandı
+      date: 2017-07-04
+      status: completed
+    - name: 0.11.0.0 Helium Hydra yayınlandı
+      date: 2017-09-07
+      status: completed
+    - name: Fluffy blokları
+      date: 2017-09-07
+      status: completed
+    - name: GUI beta sürümünden çıktı
+      date: 2017-09-10
+      status: completed
+    - name: Minimum ringsize'ın 5'e arttırılması ve RingCT işlemlerinin zorunlaştırılması için hardfork
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: Fluffy blokları
+      date:
+      status: ongoing
+    - name: Android'e GUI aktarımı
+      date:
+      status: ongoing
+    - name: Forum Finansman Sisteminin Tekrar Tasarımı
+      date:
+      status: ongoing
+    - name: Altadresler
+      date:
+      status: ongoing
+    - name: Çoklu-imzalar (multisig)
+      date:
+      status: ongoing
+    - name: Kovri alpha sürümü
+      date:
+      status: upcoming
+- year: 2018
+  accomplishments:
+    - name: Ek MRL araştırma makaleleri
+      date:
+      status: upcoming
+    - name: Hız ve ölçeklenebilirlik için ikinci-katman çözümler
+      date:
+      status: upcoming
+    - name: İşlem boyutlarının düşürülmesi için daha etkili RingCT aralık sağlaması
+      date:
+      status: upcoming
