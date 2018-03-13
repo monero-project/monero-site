@@ -5,6 +5,6 @@ terms: ["", ""]
 summary: ""
 ---
 
-### The Basics
+### Temel Bilgiler
 
 {{ page.summary | capitalize }}.

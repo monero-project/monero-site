@@ -1,19 +1,19 @@
 ---
 layout: moneropedia
-entry: "Mining"
-terms: ["mining", "miner", "miners"]
-summary: "the process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain"
+entry: "Madencilik"
+terms: ["madencilik", "madenci", "madenciler"]
+summary: "çeşitli sayıda işlem içeren ve sonrasında bir blok zincirine eklenen blok için kriptografik olarak matematiksel kanıt hesaplama süreci"
 ---
 
-### The Basics
+### Temel Bilgiler
 
-Mining is the distributed process of confirming transactions on the public ledger of all transactions, aka @blockchain.  Monero nodes use the block chain to distinguish legitimate transactions from attempts to re-spend coins that have already been spent elsewhere. 
+Madencilik, genel defter, yani @blok-zinciri üzerinde dağıtılmış bir şekilde işlem doğrulama sürecidir. Monero düğümleri, meşru işlemleri mükerrer harcama girişimlerinden ayırt etmek için blok zincirini kullanır.
 
-Monero is powered strictly by Proof of Work. It employs a mining algorithm that has the potential to be efficiently tasked to billions of existing devices (any modern x86 CPU and many GPU's). Monero uses the @CryptoNight Proof of Work (@PoW) algorithm, which is designed for use in ordinary CPUs and GPUs.
+Monero iş kanıtı (Proof of Work) algoritması ile çalışır. Yani Monero, ilgili işi etkili bir şekilde milyonlarca cihaza (modern herhangi bir x86 işlemci veya çoğu grafik kart) dağıtacak bir madencilik algoritması kullanır. Monero, sıradan işlemci ve grafik kartlarla kullanılabilecek @CryptoNight iş kanıtı (@PoW) algoritmasını kullanır.
 
-The smart mining feature allows transparent CPU mining on the user's computer, far from the de facto centralization of mining farms and pool mining, pursuing Satoshi Nakamoto's original vision of a true P2P currency. 
+Akıllı madencilik özelliği şeffaf işlemci kullanımına olanak sağlar, böylece madencilikte merkezileşmeye karşı önemli bir koruma sağlar, ki bu özellik Satoshi Nakamoto’nun orijinal P2P kripto para vizyonuyla özdeştir.
 
-As of June 2017, botnets made of hacked computers account for a not-insignificant portion of the miners on the Monero network.  This is due to the profitability of mining on CPUs via the @CryptoNight algorithm.
+2017 Haziran itibariyle ele geçirilmiş bilgisayarların oluşturduğu madenci havuzu Monero ağında hatrı sayılır derecede büyük yer tutmaktadır. Bu @CryptoNight algoritması sayesindedir, yani işlemcilerle madencilik bile kar getirebilmektedir.
 
 
 

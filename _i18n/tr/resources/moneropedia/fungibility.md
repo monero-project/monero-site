@@ -1,11 +1,11 @@
 ---
 layout: moneropedia
-entry: "Fungibility"
-terms: ["fungibility"]
-summary: "property of a currency whereby two units can be substituted in place of one another"
+entry: "Değiştirilebilirlik"
+terms: ["değiştirilebilirlik"]
+summary: "bir paranın iki biriminin birbiriyle takas edilebilir olması özelliği"
 ---
 
-### The Basics
+### Temel Bilgiler
 
 Fungibility means that two units of a currency can be mutually substituted and the substituted currency is equal to another unit of the same size.  For example, two $10 bills can be exchanged and they are functionally identical to any other $10 bills in circulation (although $10 bills have unique ID numbers and are therefore not completely fungible).  Gold is probably a closer example of true fungibility, where any 1 oz. of gold of the same grade is worth the same as another 1 oz of gold.  Monero is fungible due to the nature of the currency which provides no way to link transactions together nor trace the history of any particular XMR.  1 XMR is functionally identical to any other 1 XMR.
 

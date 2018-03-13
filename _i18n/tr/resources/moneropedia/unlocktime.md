@@ -1,14 +1,14 @@
 ---
 layout: moneropedia
-entry: "Transaction Unlock Time"
-terms: ["unlock-time"]
-summary: "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
+entry: "İşlem Kilidini Açma Tarihi"
+terms: ["kilit-açma-tarihi"]
+summary: "alıcının almış olduğu parayı, gönderici tarafından belirlenen gelecek bir tarihte harcayabildiği özel bir işlem türü"
 ---
 
-### The Basics
+### Temel Bilgiler
 
 {{ page.summary | capitalize }}.
 
-Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time.
+Kilit açma tarihi özelliği, birine işlem gönderdiğinizde, bu kişinin, işlem belli bir bloğa veya tarihe ulaşmadan parayı harcayamamasını sağlar.
 
-Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.it/wiki/NLockTime), in which the transaction is not valid until the given time.
+Bunun Bitcoin’deki [nLockTime](https://en.bitcoin.it/wiki/NLockTime) özelliğinden farklı olduğuna dikkat edin. NLockTime’da işlem belirtilen tarihten önce geçersizdir.
