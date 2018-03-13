@@ -399,7 +399,7 @@ Outputs:
   * *local_ip* - boolean
   * *localhost* - boolean
   * *peer_id* - string; The node's ID on the network.
-  * *port* - stringl The port that the node is using to connect to the network.
+  * *port* - string; The port that the node is using to connect to the network.
   * *recv_count* - unsigned int
   * *recv_idle_time* - unsigned int
   * *send_count* - unsigned int
@@ -461,7 +461,7 @@ Outputs:
 * *testnet* - boolean; States if the node is on the testnet (true) or mainnet (false).
 * *top_block_hash* - string; Hash of the highest block in the chain.
 * *tx_count* - unsigned int; Total number of non-coinbase transaction in the chain.
-* *tx_pool_siz* - unsigned int; Number of transactions that have been broadcast but not included in a block.
+* *tx_pool_size* - unsigned int; Number of transactions that have been broadcast but not included in a block.
 * *white_peerlist_size* - unsigned int; White Peerlist Size
 
 Following is an example `get_info` call and its return:
@@ -717,6 +717,7 @@ Broadcast a raw transaction to the network.
 Inputs:
 
 * *tx_as_hex* - string; Full transaction information as hexidecimal string.
+* *do_not_relay* - boolean; Stop relaying transaction to other nodes (default is `false` now; in versions 0.11.1 it was `true`).
 
 Outputs:
 
@@ -737,7 +738,7 @@ Example (No return information included here.):
 
 
 ```
-$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3...", "do_not_relay":false}' -H 'Content-Type: application/json'
 ```
 
 

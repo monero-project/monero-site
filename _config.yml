@@ -24,7 +24,8 @@ gems:
   - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin settings:
-languages: ["en", "es", "tr"]
+
+languages: ["en", "es", "it", "tr"]
 
 exclude_from_localizations: ["img", "css", "fonts", "media", "404", "feed.xml", "404", "meta", "forum-funding-system", "_posts", "legal"]
 
