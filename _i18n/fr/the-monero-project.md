@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 <div class="site-wrap">
 <section class="container">
     <div class="row">
@@ -11,11 +10,11 @@
                 </div>
 <div class="row start-xs monero-project" markdown="1">
 
-The Kovri project uses end-to-end encryption so that neither the sender nor receiver of a Monero transaction need to reveal their IP address to the other side or to third-party observers (the blockchain). This is done using the same technology that powers the dark net, i2p (Invisible Internet Protocol). The project is currently in heavy, active development and is not yet integrated with Monero.
+Le projet Kovri utilise un chiffrement de bout-en-bout, si bien que ni l'émetteur ni le destinataire d'une transaction Monero n'ont à révéler leur adresse IP à l'autre côté, ni aux observateurs tiers (la blockchain). Ceci est réalisé en utilisant la même technologie qui fait fonctionner le dark net, i2p (Invisible Internet Protocol). Ce projet est actuellement en cours de dévelopement actif et intensif, et n'est pour le moment pas encore intégré à Monero.
 
 </div>
     <div class="row center-xs">
-        <p><a href="https://www.getkovri.org" class="btn-link btn-fixed">Visit Kovri Website</a></p>
+        <p><a href="https://www.getkovri.org" class="btn-link btn-fixed">Visiter le site de Kovri</a></p>
     </div>
             </div>
         </div>
@@ -28,14 +27,14 @@ The Kovri project uses end-to-end encryption so that neither the sender nor rece
                 </div>
 <div class="row start-xs monero-project" markdown="1">
 
-The OpenAlias project simplifies cryptocurrency payments by providing FQDNs (Fully Qualified Domain Names, i.e. example.openalias.org) for Monero wallet addresses in a way that ensures everyone's privacy is secure. The project is well underway and has already been implemented in many Monero wallets.
+Le projet OpenAlias simplifie les paiements en cryptomonnaie en fournissant des FQDNs (Fully Qualified Domain Names, p.e. example.openalias.org) pour les adresses de portefeuilles Monero d'une manière qui garantit que la Confidentialité de chacun est sécurisée. Ce projet est bien avancé et a déjà été implémenté dans de nombreux portefeuilles Monero.
 
 
 
 </div>
 
     <div class="row center-xs">
-        <p><a href="https://www.openalias.org" class="btn-link btn-fixed">Visit OpenAlias Website</a></p>
+        <p><a href="https://www.openalias.org" class="btn-link btn-fixed">Visiter le site d'OpenAlias</a></p>
     </div>
 
             </div>
