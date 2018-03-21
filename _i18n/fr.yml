@@ -72,7 +72,7 @@ index:
   how_do_i_1: "Comment puis-je "
   how_do_i_2: " ?"
   get_started: commencer
-  get_started_1: "La façon la plus rapide de commencer à utiliser Monero est avec un gestionnaire de @compte en ligne comme "
+  get_started_1: "La façon la plus rapide de commencer à utiliser Monero est avec un gestionnaire de @account en ligne comme "
   mymonero: "MyMonero"
   get_started_2: "."
   get_started_3: "Alternativement, si vous voulez faire fonctionner un [noeud Monero complet](/getting-started/running) vous pouvez télécharger le client et un kick-starter @blockchain (pour ammener votre client local au bon niveau) en utilisant le lien de téléchargement situé à droite."
