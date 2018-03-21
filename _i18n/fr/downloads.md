@@ -1,24 +1,23 @@
-{% include untranslated.html %}
 <div class="downloads">
 
 <div class="container description" markdown="1">
 
-If you need help choosing the correct application, please click [here](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) for a quick answer, then select the appropriate release for your operating system below.
-Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
+Si vous avez besoin d'aide pour choisir la bonne application, merci de cliquer [ici](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) pour une réponse rapide, puis sélectionner va version appropriée pour votre système d'exploitation ci-dessous.
+Note : les sommes de contrôle SHA256 sont indiquées à côté des téléchargements par commodité, mais une liste signée par GPG des sommes de contrôle est disponible à [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) et devrait être traitée de manière canonique, en vérifiant la signature vis-à-vis de la clef GPG appropriée dans le code source (dans /utils/gpg_keys).
 
 </div>
 <div class="container full downdropdown">
 <div class="info-block download-nav row middle-xs between-xs" id="selections">
-    
+
     <div class="col"><a href="#windows">Windows</a></div>
     <div class="col"><a href="#mac">Mac</a></div>
     <div class="col"><a href="#linux">Linux</a></div>
     <div class="col"><a href="#arm">Arm (v7 & 8)</a></div>
     <div class="col"><a href="#bsd">BSD</a></div>
     <div class="col"><a href="#source">Source & Blockchain</a></div>
-    <div class="col"><a href="#mobilelight">Mobile & Light</a></div>
-    <div class="col"><a href="#hardware">Hardware</a></div>
-    
+    <div class="col"><a href="#mobilelight">Mobile & Léger</a></div>
+    <div class="col"><a href="#hardware">Matériel</a></div>
+
 </div>
 </div>
 
@@ -34,8 +33,8 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
           <li><a href="#arm">Arm (v7 & 8)</a></li>
           <li><a href="#bsd">BSD</a></li>
           <li><a href="#source">Source & Blockchain</a></li>
-          <li><a href="#mobilelight">Mobile & Light</a></li>
-          <li><a href="#hardware">Hardware</a></li>
+          <li><a href="#mobilelight">Mobile & Léger</a></li>
+          <li><a href="#hardware">Matériel</a></li>
         </ul>
       </div>
   </div>
@@ -48,7 +47,7 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 
 <section class="container full" id="{{ data_downloads.id}}">
     <div class="info-block">
-        <h2> 
+        <h2>
             {% if data_downloads.icon != null %}
             <span class="{{data_downloads.icon}}"></span>  
             {% endif %}
@@ -64,23 +63,23 @@ Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-s
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 <h4 id="{{ data_downloads.platform | slugify }}">
- <a href="{{ data_downloads.cli_url }}">Source Code</a>
+ <a href="{{ data_downloads.cli_url }}">Code Source</a>
 </h4>
 </div>
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
-If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can [use this link for the most current bootstrap](https://downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
+Si vous préférer utiliser un bootstrap de la blockchain, plutôt que de synchroniser à partir de zéro, vous pouvez [utiliser ce lien pour obtenir le bootstrap le plus récent](https://downloads.getmonero.org/blockchain.raw). Il est cependant habituellement plus rapide de synchroniser à partir de zéro, et cela consomme également nettement moins de RAM (l'import est particulièrement gourmand).
 </div>
 </div>
 {% elsif data_downloads.id == "hardware" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>The Monero community has just funded a <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Dedicated Hardware Wallet</a> which is now in progress. As well, Ledger is working on <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">integrating Monero into their hardware wallets</a>.</p>
+<p>La communauté Monero vient de financer un <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Portefeuille Matériel Dédié</a> qui est en cours d'avancement. De même, Ledger travail sur une <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">intégration de Monero dans leurs portefeuilles matériels</a>.</p>
 </div></div>
 
 {% elsif data_downloads.id == "mobilelight" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href="/community/hangouts/">Hangouts</a> page to see where we are.</p>
+<p>Ci-dessous des portefeuilles mobiles ou légers jugés sûrs par des membres de confiance de la communauté. Si un portefeuille n'est pas cité ici, vous pouvez demander à la communauté de le vérifier. Allez à la page <a href="/community/hangouts/">Rencontres</a> pour voir où nous sommes.</p>
 </div>
 </div>
 <div class="row center-xs">
@@ -98,7 +97,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
  <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}"> {{ data_downloads.platform }} (Command-line Tools Only)</a>
  </h4></div></div>
  <div class="row"><div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
- <p><strong>SHA256 Hash:</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p></div>
+ <p><strong>Somme de contrôle SHA256 :</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p></div>
 </div>
 {% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash == nil %}
 <div class="row">
@@ -107,7 +106,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
  <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
  </h4></div>
 <div class="row">
-<p><strong>SHA256 Hash:</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
+<p><strong>Somme de contrôle SHA256 :</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
 </div>
 {% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash != nil %}
 <div class="row start-md">
@@ -116,7 +115,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <h4 id="{{ data_downloads.platform | slugify }}">
  <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
 </h4>
-<p><strong>SHA256 Hash (GUI):</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
+<p><strong>Somme de contrôle SHA256 (GUI) :</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
 
 </div>
 
@@ -124,7 +123,7 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <h4>
  <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} (Command-Line Tools Only)</a>
 </h4>
-<p><strong>SHA256 Hash (CLI):</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p>
+<p><strong>Somme de contrôle SHA256 (CLI) :</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p>
 </div>
 </div>
 {% endif %}
@@ -137,6 +136,3 @@ If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, 
 <a href="#" class="arrow-up"><i></i></a>
 
 </div>
-
-
-
