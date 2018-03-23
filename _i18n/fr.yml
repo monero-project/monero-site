@@ -1,0 +1,97 @@
+langs:
+  en: English
+  es: Español
+  fr: Français
+
+global:
+  date: '%Y/%m/%d'
+  monero: Monero
+  getting_started: Démarrer
+  copyright: Copyright
+  monero_project: Le Projet Monero
+  sitename: getmonero.org, Le Projet Monero
+  wiki: Moneropedia
+  tags: Articles Par Tag
+  wikimeta: Moneropedia, l'encyclopédie libre des connaissances Monero
+  tagsmeta: Tous les articles de blog Monero qui sont taggés
+  titlemeta: accueil de Monero, une monnaie digitale qui est sécurisée, confidentielle, et intracable
+  terms: Modalités
+  privacy: Confidentialité
+  copyright: Propriété intellectuelle
+  edit: Modifier cette page
+  untranslated: Cette page n'a pas encore été traduite. Si vous voulez aider à la traduire, voyez le
+titles:
+  index: Accueil
+  whatismonero: Qu'est-ce que Monero ?
+  using: Utiliser Monero
+  accepting: Accepter Monero
+  contributing: Améliorer Monero
+  mining: Miner Monero
+  faq: FAQ
+  downloads: Téléchargements
+  allposts: Tous les articles du Blog
+  team: Équipe Monero
+  hangouts: Rencontres
+  events: Évènements
+  sponsorships: Partenarias
+  merchants: Commerçants & Services
+  about: À propos de Monero
+  roadmap: Feuille de route
+  researchlab: Laboratoire de Recherche Monero
+  moneropedia: Moneropedia
+  userguides: Guides Utilisateur
+  developerguides: Guides du Dévelopeur
+  technicalspecs: Spécifications Techniques
+  themoneroproject: Le Projet Monero
+  presskit: Dossier de Presse Monero
+  legal: Juridique
+  ffs: Forum Funding System
+  ffs-cp: Propositions Terminées
+  ffs-fr: Financement Nécessaire
+  ffs-ideas: Idées
+  ffs-ot: Taches Ouvertes
+  ffs-wip: Travail en Cours
+  blogbytag: Blog par Tag
+index:
+  page_title: "Monero - sécurisé, confidentiel, intracable"
+  what_is_1: Qu'est-ce que
+  what_is_2: " ?"
+  what_is_orange_block: "Monero est une monnaie sécurisée, confidentielle, intracable qui est open-source et librement accessible à tous."
+  what_is_text_block_1: "Avec Monero, vous êtes votre propre banque; Vous avez le contrôle total de vos capitaux. Avec Monero, vos comptes et transactions restent confidentiels."
+  what_is_text_block_2: "Vous voulez en savoir plus ? Ci-dessous un tour d'horizon des fonctionnalités principales de Monero. Si vous voulez essayer Monero vous-même, la section"
+  what_is_text_block_3: "Commencer"
+  what_is_text_block_4: "est un excellent point de départ."
+  news: Actualités
+  the_latest: Les Dernières
+  private: confidentiel
+  secure: Sécurisé
+  untraceable: intracable
+  private_text: "Monero utilise des montants, éméteurs et destinataires de @transactions masqués. Cela signifie que persnonne ne peut savoir combien vous envoyez dans une transaction, hormis vous. Cela permet de garantir que vos achats et autres transferts restent confidentiels par défaut."
+  untraceable_text: "En tirant parti des des @ring-signatures (signatures en cercle), Monero vous permet d'envoyer et de recevoir des fonds de manière privé. Même si vos transcations sont vérifiables publiquement sur la @blockchain, elles utilisent des signatures numériques qui indiquent un groupe de signataires, si bien qu'un valideur est incapable de déterminer qui à effectivement réalisé la signature. Parce qu'il est ambigu de savoir quels fonds ont été dépensés, votre transaction reste privée et ne peut pas vous être attribuée."
+  secure_text: "Monero utilise un réseau peer-to-peer à @consensus et chaque transaction est signé cryptographiquement. Vos pièces de monnaie sont stockées en toute sécurité sur la @blockchain et peuvent être restaurées à tout moment en utilisant une @mnemonic-seed de 25 mots sur n'importe quel ordinateur avec le logiciel Monero. Les fichiers du portefeuil sont stoqués par chiffrement et vérouillés par mot de passe, les rendants inutilisables en cas de vol."
+  how_do_i_1: "Comment puis-je "
+  how_do_i_2: " ?"
+  get_started: commencer
+  get_started_1: "La façon la plus rapide de commencer à utiliser Monero est avec un gestionnaire de @account en ligne comme "
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "Alternativement, si vous voulez faire fonctionner un [noeud Monero complet](/getting-started/running) vous pouvez télécharger le client et un kick-starter @blockchain (pour ammener votre client local au bon niveau) en utilisant le lien de téléchargement situé à droite."
+  where_can_i: Où puis-je
+  download_1: Télécharger
+  download_2: " ?"
+  different_os: "Besoin d'un système d'exploitation différent ?"
+  all_downloads: Voir tous les téléchargements disponibles ici
+  c_download: Téléchargements
+  monero_for: Monero pour
+  latest_blockchain: Dernière @Blockchain
+blog:
+  title_1: Tous les
+  title_2: Blog
+  title_3: Posts
+  tagged: Taggés comme
+  author: Publiés par
+  date: Publiés à
+  forum: Cliquer ici pour participer à la discussion de cet entrée sur le Forum Monero
+tags:
+  all: Articles par Tag
+  notags: Il n'y a aucun post pour ce tag.
