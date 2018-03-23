@@ -85,7 +85,7 @@ La communauté Monero est diverse et variée. Nous venons de toutes parts, mais 
                                 <a href="https://monero.stackexchange.com/questions/4377/hiding-tcp-traffic-for-monero-miners">Comment masquer le trafic TCP des mineurs Monero ?</a>
                             </div>  
                             <div class="row center-xs">
-                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Visit Stack Exchange</a></p>
+                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Aller sur Stack Exchange</a></p>
                             </div>
                         </div>
                </div>
