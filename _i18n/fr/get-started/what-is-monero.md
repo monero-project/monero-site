@@ -1,17 +1,16 @@
-{% include untranslated.html %}
 <div class="site-wrap">
     <section class="container">
             <div class="row">
                 <section class="container about-monero full col-xs-12">
                     <div class="info-block">
                         <div class="row center-xs">
-                            <div class="col"><h2>What you need to know</h2></div>
+                            <div class="col"><h2>Ce que vous devez savoir</h2></div>
                         </div>
                         <div class="row middle-xs info-block-row private">
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12  why-text">
-                                <h3>Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.</h3>
-                                <p>Most existing cryptocurrencies, including Bitcoin and Ethereum, have transparent blockchains, meaning that transactions are openly verifiable and traceable by anyone in the world. Furthermore, sending and receiving addresses for these transactions may potentially be linkable to a person's real-world identity. </p>
-                                <p>Monero uses cryptography to shield sending and receiving addresses, as well as transacted amounts.</p>
+                                <h3>Monero est la pricipale cryptomonnaie avec un accent sur la confidentialité et la résistance à la censure de ses transactions.</h3>
+                                <p>La pluspart des cryptomonnaies existante, Bitcoin et Ethereum compris, ont des blockchains transparentes, signifiant que les transactions sont ouvertement vérifiable et traçables par quiconque sur le réseau. De plus, les adresses d'envoie et de réception de ces transactions peuvent potentiellement être liées à l'identité réelle d'une personne. </p>
+                                <p>Monero utilise la cryptographie pour protéger les adresses d'émission et de réception, de même que les montants des transactions.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                                 <img src="/img/crypto-lock.png" alt="Encrypted lock" class="main-icon">
@@ -22,19 +21,19 @@
                                 <img src="/img/monero-classified.png" alt="Classified document" class="main-icon">
                             </div>
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                                <h3>Monero transactions are confidential and untraceable.</h3>
-                                <p>Every Monero transaction, by default, obfuscates sending and receiving addresses as well as transacted amounts. This always-on privacy means that every Monero user's activity enhances the privacy of all other users, unlike selectively transparent cryptocurrencies (e.g. Z-Cash).</p>
-                                <p>Monero is fungible. By virtue of obfuscation, Monero cannot become tainted through participation in previous transactions. This means Monero will always be accepted without the risk of censorship.</p>
-                                <p>The Kovri Project, <a href="https://getkovri.org/">currently in development</a>, will route and encrypt transactions via I2P Invisible Internet Project nodes. This will obfuscate a transactor's IP address and provide further protection against network monitoring.</p>
+                                <h3>Les transactions Monero sont confidentielles et intraçables.</h3>
+                                <p>Chaque transaction Monero masque par défaut les adresses d'émission, de réception et les montants échangés.  Every Monero transaction, by default, obfuscates sending and receiving addresses as well as transacted amounts. Cette confidentialité permanente signifie que l'activité de chaque utilisateur Monero améliore la confidentialité de tous les autres utilisateurs, contrairement aux cryptomonnaies à transparence sélective (p.e. Z-Cash).</p>
+                                <p>Monero est fongible. is fungible. En vertu de l'obfuscation, Monero ne peut pas être sali par une participation à des transactions précédentes. Cela signifie que Monero sera toujours accepté sans risque de censure.</p>
+                                <p>Le projet Kovri, <a href="https://getkovri.org/">actuellement en développement</a>, permettra de router et chiffrer les transactions via des nœuds I2P (Invisible Internet Project). Cela masquera l'adresse IP du transacteur et fournira plus de protection contre la surveillance du réseau.</p>
                             </div>
 
                         </div>
                         <div class="row middle-xs info-block-row">
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                                <h3>Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.</h3>
-                                <p>Over <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer noopener">240 developers</a> have contributed to the Monero project, including 30 core developers. Forums and chat channels are welcoming and active.</p>
-                                <p>Monero's Research Lab, Core Development Team and Community Developers are constantly pushing the frontier of what is possible with cryptocurrency privacy and security.</p>
-                                <p>Monero is not a corporation. It is developed by cryptography and distributed systems experts from all over the world that donate their time or are funded by community donations. This means that Monero can't be shut down by any one country and is not constrained by any particular legal jurisdiction.</p>
+                                <h3>Monero est une communauté populaire qui attire les meilleurs chercheurs en cryptomonnaie et les meilleurs talents en ingénierie au monde.</h3>
+                                <p>Plus de <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer noopener">240 développeurs</a> ont contribués au projet Monero, dont 30 développeurs principaux. Les Forums et cannaux de discussion sont actifs et accueillant.</p>
+                                <p>Le Laboratoire de Recherche de Monero, l'équipe de dévelopement Principale et les développeurs de la communauté repoussent en permanence les limites du possible dans la confidentialité et la sécurité des cryptomonnaies.</p>
+                                <p>Monero n'est pas une société. Il est développé par des experts en cryptographie et en systèmes distribués du monde entier qui donnent de leur temps ou sont financés par des dons communautaires. Cela signifie que Monero ne peut être fermé par un pays et n'est soumis à aucune juridiction légale particulière.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                                 <img src="/img/academic-growth.png" alt="Academic growth" class="main-icon">
@@ -45,8 +44,8 @@
                                 <img src="/img/monero-electronic-cash.png" alt="Electronic cash" class="main-icon">
                             </div>
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                                <h3>Monero is electronic cash that allows fast, inexpensive payments to and from anywhere in the world.</h3>
-                                <p>There are no multi-day holding periods and no risk of fraudulent chargebacks. It is safe from ‘capital controls’ - these are measures that restrict the flow of traditional currencies, sometimes to an extreme degree, in countries experiencing economic instability.</p>
+                                <h3>Monero est de l'argent électronique qui permet des paiements rapides et peu couteux dans le monde entier.</h3>
+                                <p>Il n'y a pas de frais de garde et aucun risque de rétrofacturation frauduleuse. Il est à l'abri des « contrôles de capitaux » - qui sont des mesures limitant les flux de monnaies traditionnelles, parfois à un degré extrême, dans des pays en proie à une instabilité économique.</p>
                             </div>
                         </div>
                     </div>
@@ -54,7 +53,7 @@
                <section class="full col-xs-12 monero-vid">
                     <div class="info-block">
                         <div class="row center-xs">
-                            <div class="col"><h2>Monero Videos</h2></div>
+                            <div class="col"><h2>Vidéos Monero</h2></div>
                         </div>
                         <div class="row center-xs">
                           <div class="col-xs-12 carousel-container">
@@ -80,31 +79,31 @@
                                           <label class="carousel-control carousel-control-forward" for="A"></label>
                                         </div>
                                         <li class="carousel-slide ms">
-                                            <h3>Monero Promo</h3>
+                                            <h3>Promouvoir Monero</h3>
                                             <video controls poster="/img/monero-community.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
                                                 <source src="/media/Monero_Promo.m4v">
                                             </video>
                                         </li>
                                         <li class="carousel-slide">
-                                          <h3>Monero: The Essentials</h3>
+                                          <h3>Monero : L'essentiel</h3>
                                             <video controls poster="/img/monero-cash-video-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
                                                 <source src="/media/Monero%20-%20The%20Essentials.m4v">
                                             </video>
                                         </li>
                                         <li class="carousel-slide">
-                                          <h3>Stealth Addresses</h3>
+                                          <h3>Les Adresses Furtives (Stealth Addresses)</h3>
                                             <video controls poster="/img/stealth-address-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
                                                 <source src="/media/Monero%20-%20Stealth%20Addresses.m4v">
                                             </video>
                                         </li>
                                         <li class="carousel-slide">
-                                          <h3>Ring Signatures</h3>
+                                          <h3>Les Signatures de Cercle (Ring Signatures)</h3>
                                             <video controls poster="/img/ring-signatures-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
                                                 <source src="/media/Monero%20-%20Ring%20Signatures.m4v">
                                             </video>
                                         </li>
                                         <li class="carousel-slide">
-                                          <h3>RingCT</h3>
+                                          <h3>Transactions de Cercle Confidentielles (RingCT)</h3>
                                             <video controls poster="/img/ringct-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
                                                 <source src="/media/Monero%20-%20RingCT.m4v">
                                             </video>
