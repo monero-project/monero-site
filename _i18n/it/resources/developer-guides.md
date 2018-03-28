@@ -7,7 +7,7 @@
 
 <section class="container full">
     <div class="info-block">
-        <h2>RPC Documetation</h2>
+        <h2>RPC Documentation</h2>
 <div markdown="1">
 
 [Daemon RPC Documentation](daemon-rpc.html)
