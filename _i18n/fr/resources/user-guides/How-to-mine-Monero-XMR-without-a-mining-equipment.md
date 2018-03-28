@@ -42,8 +42,8 @@ Vous pouvez enregistrer votre pool préféré sur [cette page]
 ### **Étape 4 :** Passer une nouvelle commande et commencer à miner
 
 Lorsque vous créez une [nouvelle commande (new order)](https://www.nicehash.com/?p=orders&new),
-soyez certain de choisir l'algorythme CryptoNightV7 pour miner Monero (à partir du
-6 Avril 2018, CryptoNight ne sera plus compatible avec Monero). Si vous préférez
+soyez certain de choisir l'algorythme CryptoNightV7 pour miner Monero (Nouvelle variante
+de l'algorithme en vigueur depuis le 6 Avril 2018). Si vous préférez
 commencer par apprendre comment passer une commande sur NiceHash, nous vous
 recommandons de lire cette [foire aux questions](https://www.nicehash.com/?p=faq#faqb0).
 
