@@ -15,6 +15,7 @@
 [Importing the Monero blockchain]({{site.baseurl}}/resources/user-guides/importing_blockchain.html)
 [Monero Tools]({{site.baseurl}}/resources/user-guides/monero_tools.html)
 [Securely purchasing and storing Monero]({{site.baseurl}}/resources/user-guides/securely_purchase.html)
+[Using monerod with systemd]({{site.baseurl}}/resources/user-guides/monerod-as-a-systemd-service.html)
 
 </div>
             </div>
