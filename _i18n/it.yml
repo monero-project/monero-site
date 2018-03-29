@@ -12,9 +12,9 @@ global:
   sitename: getmonero.org, The Monero Project
   wiki: Moneropedia
   tags: Articoli per Tag
-  wikimeta: su Moneropedia, l'enciclopedia su Monero
+  wikimeta: su Moneropedia, l'enciclopedia libera su Monero
   tagsmeta: Tutti gli articoli del blog su Monero che sono taggati
-  titlemeta: sulla home di Monero, la moneta digitale che è sicura, privata e intracciabile
+  titlemeta: sulla home di Monero, la moneta digitale sicura, privata e non tracciabile
   terms: Termini
   privacy: Privacy
   copyright: Copyright
@@ -30,13 +30,13 @@ titles:
   faq: FAQ
   downloads: Downloads
   allposts: Tutti i post del blog
-  team: Monero Team
+  team: Il team Monero
   hangouts: Canali di comunicazione
   events: Eventi
   sponsorships: Sponsorizzazioni
   merchants: Commercianti & Servizi
   about: Riguardo Monero
-  roadmap: Roadmap
+  roadmap: Piano di sviluppo
   researchlab: Monero Research Lab
   moneropedia: Moneropedia
   userguides: Guide per Utenti
@@ -45,30 +45,30 @@ titles:
   themoneroproject: The Monero Project
   presskit: Monero Press Kit
   legal: Legale
-  ffs: Forum Funding System
-  ffs-cp: Completed Proposals
+  ffs: Sistema di Raccolta Fondi
+  ffs-cp: Proposte Completate
   ffs-fr: Fondi Richiesti
   ffs-ideas: Idee
-  ffs-ot: Tasks aperte
-  ffs-wip: Work in Progress
+  ffs-ot: Task aperti
+  ffs-wip: Lavori in Corso
   blogbytag: Blog per Tag
 index:
-  page_title: "Monero - sicuro, privato, irrintracciabile"
+  page_title: "Monero - sicuro, privato, non tracciabile"
   what_is_1: Cos'è
   what_is_2: " ?"
-  what_is_orange_block: "Monero è una valuta open-source sicura, privata, irrintracciabile e liberamente utilizzabile da chiunque."
-  what_is_text_block_1: "Con Monero, tu sei la banca di te stesso/a; Tu hai il completo controllo delle tue finanze. Con Monero, i tuoi account e le tue transazioni sono private."
-  what_is_text_block_2: "Vuoi scoprire di più? Qui sotto puoi trovare una panoramica delle potenzialità di Monero. Se vuoi provare da te, la sezione"
+  what_is_orange_block: "Monero è una valuta open-source sicura, privata, non tracciabile e utilizzabile da chiunque liberamente."
+  what_is_text_block_1: "Con Monero, tu sei la tua banca; solo tu hai il completo controllo delle tue finanze. Con Monero, i tuoi conti e le tue transazioni sono mantenuti privati."
+  what_is_text_block_2: "Vuoi scoprire di più? Qui sotto puoi trovare una panoramica sulle potenzialità di Monero. Se vuoi provare per conto tuo, la sezione"
   what_is_text_block_3: "Inizia da Qui"
-  what_is_text_block_4: "è un eccellente punto di partenza."
-  news: News
+  what_is_text_block_4: "è un ottimo punto di partenza."
+  news: Notizie
   the_latest: L'ultima
   private: Privato
   secure: Sicuro
-  untraceable: Irrintracciabile
-  private_text: "Monero nasconde ammontare, origine e destinazione della @transazione. Questo significa che nessuno sa quanto e a chi stai inviando, eccetto te stesso. Questo assicura che le tue transazioni rimangono private di default."
-  untraceable_text: "Grazie alle @ring-signatures, Monero da la possibilità di inviare e ricevere fondi in privato, pur essendo le transazioni pubblicamente verificabili nella @blockchain. Questo perchè vengono usate firme digitali provenienti da un gruppo di più firmatari, in modo che chi cerca di tracciare la transazione non sa quali fondi siano stati realmente spesi, rendendo il trasferimento irrintracciabile nei tuoi confronti."
-  secure_text: "Monero usa un network peer-to-peer di @consensus distribuito e ogni transazione è crittograficamente firmata. Le tue monete sono conservate al sicuro nella @blockchain e possono essere recuperate in ogni momento usando il seed mnemonico di 25 parole su qualsiasi computer avente installato il software. Il portafogli è criptato nel disco e bloccato con una password, rendendolo così inutile se rubato."
+  untraceable: Non tracciabile
+  private_text: "Monero nasconde valore, origine e destinazione delle @transazioni. Questo significa che nessun altro a parte te può conoscere quanto stai inviando e a chi lo stai inviando. Ciò assicura che le tue transazioni rimangano private di default."
+  untraceable_text: "Grazie alle @ring-signatures (firme digitali ad anello), Monero ti permette di inviare e ricevere fondi in privato, pur essendo le transazioni pubblicamente verificabili all'interno della @blockchain. Lo schema delle @ring-signatures prevede l'utilizzo di firme digitali provenienti da un gruppo di più firmatari, in modo che chiunque verifichi la transazione non è in grado di individuare il vero firmatario della transazione in oggetto. Persistendo un'ambiguità su quali fondi siano stati realmente spesi, la tua transazione rimane quindi privata e non tracciabile."
+  secure_text: "Monero usa un network peer-to-peer di @consensus distribuito ed ogni transazione viene firmata crittograficamente. I tuoi fondi sono conservati al sicuro nella @blockchain e possono essere recuperati in ogni momento usando un @mnemonic-seed (seme mnemonico) di 25 parole su qualsiasi computer venga installato il software Monero. Il file del portafogli è cifrato su disco rigido, protetto con una password, e quindi inutilizzabile in caso di furto del computer."
   how_do_i_1: "Come "
   how_do_i_2: " ?"
   get_started: inizia
@@ -91,7 +91,7 @@ blog:
   tagged: Taggato come
   author: Postato da
   date: Postato su
-  forum: Clicca qui per unirti alla discussione per questa voce sul Monero Forum
+  forum: Clicca qui per unirti alla discussione per questa voce sul Forum Monero
 tags:
   all: Articoli per Tag
   notags: Non ci sono post con questo tag.
