@@ -14,13 +14,13 @@ Monero è un progetto open-source e guidato dalla comunità. Qui sotto sono desc
 <div class="row start-xs" markdown="1">
 
 ### Sviluppa
-Monero è scritto principalmente in C++. Essendo un progetto decentralizzato, chiunque è il benvenuto e può fare aggiunte o modifiche al codice esistente. Le "Pull request" vengono "mergiate" secondo il consenso della comunità. Vedi i <a href="https://github.com/monero-project">repositori</a> e i <a href="https://github.com/monero-project/monero/issues">problemi</a> in sospeso.
+Monero è scritto principalmente in C++. Essendo un progetto decentralizzato, chiunque è il/la benvenuto/a e può fare aggiunte o modifiche al codice esistente. Le "Pull request" vengono accettate secondo il consenso della comunità. Vedi i <a href="https://github.com/monero-project">repositori</a> e i <a href="https://github.com/monero-project/monero/issues">problemi</a> in sospeso.
 
-### Fai girare un Nodo Full
-Esegui monerod con la porta 18080 aperta. Far girare un nodo full assicura la massima privacy nelle transazioni Monero. La presenza del tuo nodo full sulla rete migliora inoltre la distribuzione della blockchain ai nuovi utenti. 
+### Fai girare un nodo locale
+Esegui monerod con la porta 18080 aperta. Far girare un nodo locale assicura la massima privacy nelle transazioni Monero. La presenza del tuo nodo locale sulla rete migliora inoltre la distribuzione della blockchain ai nuovi utenti. 
 
 ### Mina
-Il mining assicura che la rete Monero resti decentralizzata e sicura. Il mining in background può essere attivato usando sia l'interfaccia grafica sia quella a riga di comando di Monero. Ulteriori informazioni sul mining (in lingua inglese) possono essere trovate [qui] (https://reddit.com/r/MoneroMining).
+Il mining assicura che la rete Monero resti decentralizzata e sicura. Il mining in background può essere attivato usando sia l'interfaccia grafica sia quella a riga di comando di Monero. Ulteriori informazioni sul mining (in lingua inglese) possono essere trovate [qui](https://reddit.com/r/MoneroMining).
 
 </div>
                         </div>
