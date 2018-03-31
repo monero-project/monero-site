@@ -7,7 +7,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <h3>No premine, no instamine, no token</h3>
+                            <h3>Nessun premine, nessun instamine, nessun token</h3>
                         </div>
                     </div>
 
@@ -41,13 +41,13 @@
 
                     <div class="row">
                         <div class="col">
-                            <h3>Block time</h3>
+                            <h3>Tempo per blocco</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* creati ogni 2 minuti
-* potrebbe cambiare in futuromay change in the future a patto che la curva di emissione venga mantenuta
+* un blocco viene creato ogni 2 minuti
+* potrebbe cambiare in futuro a patto che la curva di emissione venga rispettata
 </div>
 
                     <div class="row">
@@ -78,8 +78,8 @@
                     </div>
 
 <div markdown="1">
-* primo, curva principale: ~18.132 milioni di monete entro la fine di Maggio 2022
-* poi, curva di emissione: 0.6 XMR per blocco, entra in vigore appena l'emissione principale è finita, il che si traduce in  <1% inflazione decrescente nel tempo
+* prima fase, curva principale: ~18.132 milioni di monete entro la fine di Maggio 2022
+* seconda fase, curva di emissione: 0.6 XMR per blocco (se generato ogni 2 minuti), subentra alla prima fase quando l'emissione principale è terminata; questo si traduce in un tasso di inflazione <1% e decrescente nel tempo
 * vedi [grafici e dettagli](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
 </div>
 
@@ -100,17 +100,17 @@
                     </div>
 
 <div markdown="1">
-* Ring signatures
+* Ring signatures (firme ad anello)
 </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3>Privacy del ricevente</h3>
+                            <h3>Privacy del destinatario</h3>
                         </div>
                     </div>
 
 <div markdown="1">
-* Stealth addresses
+* Stealth addresses (indirizzi stealth)
 </div>
 
                     <div class="row">
@@ -120,7 +120,7 @@
                     </div>
 
 <div markdown="1">
-* Ring confidential transactions
+* Ring confidential transactions (transazioni confidenziali ad anello)
 </div>
 
                 </div>

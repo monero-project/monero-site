@@ -1,5 +1,5 @@
 <div class="text-center container description">
-    <p>Le transazioni tramite Monero possono essere effettuate facilmente. Questa pagina serve a guidare l'utente in questo processo.</p>
+    <p>Effettuare transazioni con Monero è molto semplice. Questa pagina serve a guidare l'utente in questo processo.</p>
 </div>
 <div class="using">
     <section class="container">
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero è una cryptomoneta sicura, privata ed intracciabile. Gli sviluppatori e la community sono impegnati a proteggere questi valori. Scorpi di più leggendo la pagina <a href="{{site.baseurl}}/get-started/what-is-monero/">Cos'è Monero</a>. Il <a href="https://github.com/monero-project">codice sorgente</a> è disponibile per revisioni e suggerimenti.</p>
+                        <p>Monero è una criptovaluta sicura, privata e non tracciabile. Gli sviluppatori e la community sono impegnati a proteggere questi valori. Scopri di più leggendo la pagina <a href="{{site.baseurl}}/get-started/what-is-monero/">Cos'è Monero</a>. Il <a href="https://github.com/monero-project">codice sorgente</a> è disponibile per revisioni e suggerimenti.</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>C'è una community grande e amichevole che ti assisterà se dovessi incontrare qualche difficoltà. Consulta la pagina <a href="{{site.baseurl}}/community/hangouts/">Hangouts</a> per maggiori informazioni.</p>
+                        <p>C'è una community grande e amichevole che ti assisterà se dovessi incontrare qualche difficoltà. Consulta la pagina <a href="{{site.baseurl}}/community/hangouts/">Canali</a> per maggiori informazioni.</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="row start-xs">
                         <p>E' necessario un portafoglio per tenere al sicuro i tuoi fondi. Vedi la pagina <a href="{{site.baseurl}}/downloads/">Downloads</a> per una lista di portafogli disponibili.</p>
-                        <p>Il modo più facile per mantere un nodo Monero, senza effetti sulla tua banda domestica, è di acquistare una VPS (Virtual Private Server). Raccomandiamo fortemente <a href="https://interserver.net/dock/vps-231552.html">InterServer.net</a> e di inserire il codice coupon 'MONERO' per ricevere uno sconto sulle loro già economiche VPS da $6/mese. usando il codice e/o <a href="https://interserver.net/dock/vps-231552.html">il nostro link di affiliazione</a> aiuterai a finanziare lo sviluppo di Monero.</p>
+                        <p>Il modo più facile per eseguire un nodo Monero senza effetti sulla tua banda domestica è quello di acquistare una VPS (Virtual Private Server). Raccomandiamo fortemente <a href="https://interserver.net/dock/vps-231552.html">InterServer.net</a> e vi invitiamo ad inserire il codice coupon 'MONERO' per ricevere uno sconto sulle loro già economiche VPS da $6/mese. usando il codice e/o <a href="https://interserver.net/dock/vps-231552.html">il nostro link di affiliazione</a> aiuterai a finanziare lo sviluppo di Monero.</p>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero può essere acquistato su un <a href="{{site.baseurl}}/community/merchants#exchanges">exchange</a> con denaro 'fiat' o altre cryptomonete. Alternativamente, puoi acquisire Monero tramite <a href="{{site.baseurl}}/get-started/mining/">mining</a>, il processo computazionale che assicura le transazioni siano immutabilmente registrate nella blockchain.</p>
+                        <p>Monero può essere acquistato su un <a href="{{site.baseurl}}/community/merchants#exchanges">exchange</a> (cambiavalute) con denaro 'fiat' o altre criptovalute. Alternativamente, è possibile acquisire Monero tramite <a href="{{site.baseurl}}/get-started/mining/">mining</a>, il processo computazionale che assicura che le transazioni siano immutabilmente registrate sulla blockchain.</p>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero può essere usato per acquistare vari beni e servizi. Per una lista, vedi la pagina <a href="{{site.baseurl}}/community/merchants/">Mercanti</a>. </p>
+                        <p>Monero può essere usato per acquistare vari beni e servizi. Per una lista, vedi la pagina <a href="{{site.baseurl}}/community/merchants/">Venditori</a>. </p>
                     </div>
                 </div>
             </div>

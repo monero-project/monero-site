@@ -82,11 +82,14 @@ Jeśli wolisz użyć bootstrap łańcucha bloków zamiast synchronizować od zer
 </div>
 </div>
 <div class="row center-xs">
-  <div class="col-xs-6">
-    <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
+  <div class="col-xs-6 col-sm-4">
+    <a href="https://cakewallet.io"><img style="height: 115px;"  src="/img/cakewallet.png" alt="Cake Wallet Logo"></a>
   </div>
-  <div class="col-xs-6">
+  <div class="col-xs-6 col-sm-4">
     <a href="https://monerujo.io"><img style="height: 115px;" src="/img/Monerujo-wallet.png" alt="Monerujo Logo"></a>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
   </div>
 </div>
 

@@ -12,7 +12,7 @@
                            
 ### Le Basi
 
-Monero lavora in modo leggermente diverso rispetto a quanto sei stato abituato con le altre @criptovalute. Nel caso di una moneta digitale come Bitcoin e le sue innumerevoli derivate, i sistemi di pagamento dei venditori in genere creano un nuovo indirizzo di destinazione per ogni pagamento o cliente. 
+Monero lavora in modo leggermente diverso rispetto a quanto sei stato/a abituato/a con le altre @criptovalute. Nel caso di una moneta digitale come Bitcoin e le sue innumerevoli derivate, i sistemi di pagamento dei venditori in genere creano un nuovo indirizzo di destinazione per ogni pagamento o cliente. 
 
 Invece, dal momento che Monero fornisce gli @indirizzi-stealth, non c'è alcun bisogno di gestire indirizzi di destinazione separati per ogni pagamento o cliente, e può essere reso noto solamente un indirizzo di pagamento per tutti. Al momento di ricevere un pagamento, il venditore fornirà al cliente un "ID pagamento".
 

@@ -11,8 +11,6 @@
       url: https://www.bitfinex.com/
     - name: Bisq; decentralized exchange (previously Bitsquare)
       url: https://bisq.io/
-    - name: BitMEX
-      url: https://www.bitmex.com/app/trade/XMR7D
     - name: Bittrex
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: Bter
@@ -129,6 +127,8 @@
       url: http://www.nestorgames.com
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
+    - name: Offline Monero multisig address generator
+      url: https://www.cryptocurrencytools.org/
 - category: Services
   id: services
   merchants:
