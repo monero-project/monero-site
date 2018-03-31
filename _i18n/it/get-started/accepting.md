@@ -42,7 +42,7 @@ Se vuoi controllare i pagamenti in modo programmatico, nella prossima sezione tr
 
 ### Controllare lo stato di un pagamento in modo programmatico
 
-Per controllare lo stato dei pagamenti in modo programmatico puoi utilizzare le chiamate API JSON RPC. 
+Per controllare lo stato dei pagamenti in modo programmatico puoi utilizzare le chiamate API JSON RPC get_payments o get_bulk_payments. 
 
 *get_payments*: richiede un parametro payment_id con un ID pagamento singolo.
 

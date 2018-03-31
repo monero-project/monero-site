@@ -14,9 +14,9 @@ Monero è un progetto open-source e guidato dalla comunità. Qui sotto sono desc
 <div class="row start-xs" markdown="1">
 
 ### Sviluppa
-Monero è scritto principalmente in C++. Essendo un progetto decentralizzato, chiunque è il/la benvenuto/a e può fare aggiunte o modifiche al codice esistente. Le "Pull request" vengono accettate secondo il consenso della comunità. Vedi i <a href="https://github.com/monero-project">repositori</a> e i <a href="https://github.com/monero-project/monero/issues">problemi</a> in sospeso.
+Monero è scritto principalmente in C++. Essendo un progetto decentralizzato, chiunque è il/la benvenuto/a e può fare aggiunte o modifiche al codice esistente. Le "Pull request" vengono accettate secondo il consenso della comunità. Vedi i <a href="https://github.com/monero-project">repositories</a> e i <a href="https://github.com/monero-project/monero/issues">problemi</a> in sospeso.
 
-### Fai girare un nodo locale
+### Esegui un nodo locale
 Esegui monerod con la porta 18080 aperta. Far girare un nodo locale assicura la massima privacy nelle transazioni Monero. La presenza del tuo nodo locale sulla rete migliora inoltre la distribuzione della blockchain ai nuovi utenti. 
 
 ### Mina
