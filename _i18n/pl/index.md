@@ -16,7 +16,7 @@
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Prywatna waluta cyfrowa</h2>
                             <p id="main-text">Monero jest bezpieczną, prywatną i niewykrywalną kryptowalutą otwartego źródła, dostępną dla wszystkich. Z Monero sam jesteś swoim bankiem. Tylko ty kontrolujesz i jesteś odpowiedzialny za swoje fundusze. Twoje konto i wszystkie transakcje są utrzymywane w prywatności przed wścibskim okiem.</p>
-                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Wprowadzenie</a></p>
+                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Wstęp</a></p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                                     <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero na Linuxa</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Ostatni łańcuch bloków</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Ostatni łańcuch</a></p>
                                 </div>
                             </div>
                             <div class="row">
@@ -161,9 +161,9 @@
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Przewodnik dla użytkowników</h2>
-                                <p class="main-resources">Przewodniki do Monero krok po kroku, podzielone na kategorie. Zawiera wszystko, począwszy od zakładania portfela, do wspomagania sieci, a nawet do tego, jak edytować tę stronę.</p>
-                                <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Przejdź do przewodnika dla użytkowników</a></p>
+                                <h2>Przewodnik</h2>
+                                <p class="main-resources">Przewodnik Monero dla użytkowników podzielony na kategorie. Zawiera wszystko, począwszy od zakładania portfela, do wspomagania sieci, a nawet do tego, jak edytować tę stronę.</p>
+                                <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Przejdź do przewodnika</a></p>
                             </div>
                         </div>
                     </div>

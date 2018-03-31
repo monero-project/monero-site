@@ -13,8 +13,8 @@ Jeżeli potrzebujesz pomocy przy wyborze właściwej aplikacji, kliknij [tutaj](
     <div class="col"><a href="#linux">Linux</a></div>
     <div class="col"><a href="#arm">Arm (v7 & 8)</a></div>
     <div class="col"><a href="#bsd">BSD</a></div>
-    <div class="col"><a href="#source">Kod źródłowy i łańcuch bloków</a></div>
-    <div class="col"><a href="#mobilelight">Wersje mobilne i lekkie</a></div>
+    <div class="col"><a href="#source">Kod źródłowy i łańcuch</a></div>
+    <div class="col"><a href="#mobilelight">Mobilne i lekkie</a></div>
     <div class="col"><a href="#hardware">Hardware</a></div>
     
 </div>
@@ -31,8 +31,8 @@ Jeżeli potrzebujesz pomocy przy wyborze właściwej aplikacji, kliknij [tutaj](
           <li><a href="#linux">Linux</a></li>
           <li><a href="#arm">Arm (v7 & 8)</a></li>
           <li><a href="#bsd">BSD</a></li>
-          <li><a href="#source">Kod źródłowy i łańcuch bloków</a></li>
-          <li><a href="#mobilelight">Wersje mobilne i lekkie</a></li>
+          <li><a href="#source">Kod źródłowy i łańcuch</a></li>
+          <li><a href="#mobilelight">Mobilne i lekkie</a></li>
           <li><a href="#hardware">Hardware</a></li>
         </ul>
       </div>
