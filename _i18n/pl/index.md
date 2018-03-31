@@ -63,7 +63,7 @@
                             <img src="/img/fungible-monero.png" alt="Monero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero jest zamienialne/h3>
+                            <h3>Monero jest zamienialne</h3>
                             <p> Monero jest <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">zamienialne</a>, ponieważ jest odgórnie prywatne. Jednostki Monero nie mogą zostać wyłączone z obiegu przez sprzedawców lub giełdę z powodu ich powiązania z poprzednimi transakcjami.</p>
                         </div>
                     </div>
