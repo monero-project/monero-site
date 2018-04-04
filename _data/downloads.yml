@@ -23,7 +23,7 @@
   cli_url: mac64
   cli_hash: 61df6eec88df19d4d93c0542d6afb94887309ac20afc02cc45cdbada4b21d2ef
   gui_url: mac64
-  gui_hash: 0c8457e3d1e528b71e8e9ebb3a04fe241f53d6fa06309485a07badbe28a5faa6
+  gui_hash: f74c108d16bd70b6f0052ba4b3ce91fa3ca59622a0aee7d523a1f43967814c12
   version: 0.12.0.0
   tag: Lithium Luna
   blockchain: mac
