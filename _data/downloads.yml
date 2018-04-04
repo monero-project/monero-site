@@ -3,8 +3,8 @@
   icon: icon-windows
   cli_url: win64
   cli_hash: e74fb7abac3a34163e38ae1712282af3bbfb5bec00d2e0c88ca7d35f2fa95d28
-#  gui_url: win64
-#  gui_hash: 39d16f40fccf532b0193f33afd5a90c817c924e9abad41d4f4990a4c8c50ba97
+  gui_url: win64
+  gui_hash: 4b9f31686ecaad97cdb175e6574bf307f8d1c410427825f4304c21da8aac1864
   version: 0.12.0.0
   tag: Lithium Luna
   blockchain: win
@@ -22,8 +22,8 @@
   icon: icon-apple
   cli_url: mac64
   cli_hash: 61df6eec88df19d4d93c0542d6afb94887309ac20afc02cc45cdbada4b21d2ef
-#  gui_url: mac64
-#  gui_hash: 4f63ac3e9c5f87f8d8318ff89cdbfa954716e8addbdc8fcd0352fe678b84f8e2
+  gui_url: mac64
+  gui_hash: 0c8457e3d1e528b71e8e9ebb3a04fe241f53d6fa06309485a07badbe28a5faa6
   version: 0.12.0.0
   tag: Lithium Luna
   blockchain: mac
@@ -33,8 +33,8 @@
   icon: icon-linux
   cli_url: linux64
   cli_hash: 928ad08ff0dea2790c7777a70e610b2d33c35a5df5900fbb050cc8c659237636
-#  gui_url: linux64
-#  gui_hash: e18a13f39a3b4aa87c9afdd9c87dfc087ed4940d99cf18c16ec59037e5f68eaf
+  gui_url: linux64
+  gui_hash: fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388
   version: 0.12.0.0
   tag: Lithium Luna
   blockchain: linux
@@ -43,8 +43,8 @@
   icon: icon-linux
   cli_url: linux32
   cli_hash: ef212bda6b9a30af2a3e7e94cb2af4dd6e01eb0f54a4d1c0eb25abe75316e2ae
-  gui_url: linux32
-  gui_hash: 5df6ebeab728a653eaf64352bc60d8dddbf4d6a47a422856015d7e93ce5dc411
+#  gui_url: linux32
+#  gui_hash: 5df6ebeab728a653eaf64352bc60d8dddbf4d6a47a422856015d7e93ce5dc411
   version: 0.11.1.0
   tag: Helium Hydra
   blockchain: linux
