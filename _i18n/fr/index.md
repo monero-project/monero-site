@@ -176,7 +176,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>FAQ</h2>
-                                <p class="main-resources">Nous avons entendu beaucoup de questions au cours des années et avons compilé, pour votre commodité, une FAQ complète et variée. Ne vous inquiétez pas, si vos questions ne sont pas ici, vous pouvez toujours demander à la communauté.</p>
+                                <p class="main-resources">Nous avons répondu à beaucoup de questions au fil du temps, compilées dans une FAQ complète et variée. S'il vous manque une réponse, pas d'inquiétude vous pouvez toujours demander à la communauté.</p>
                                 <p><a href="{{site.baseurl}}/get-started/faq/" class="btn-link btn-auto">Lire les réponses</a></p>
                             </div>
                         </div>         

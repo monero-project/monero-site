@@ -1,4 +1,4 @@
-Il est très facile de miner en solo avec la GUI officielle. Si vous ne l'avez pas déjà fait, allez sur la <a href="{{site.baseurl}}/downloads/">pade de téléchargement Monero</a> et téléchargez la GUI officielle pour votre système d'exploitation. Puis, lancez l'installation et patientez pendant que Monero se synchronise avec le réseau. Vous devriez voir qu'elle insique "Connecté" dans le coin en bas à gauche.
+Il est très facile de miner en solo avec la GUI officielle. Si vous ne l'avez pas déjà fait, allez sur la <a href="{{site.baseurl}}/downloads/">page de téléchargement Monero</a> et téléchargez la GUI officielle pour votre système d'exploitation. Puis, lancez l'installation et patientez pendant que Monero se synchronise avec le réseau. Vous devriez voir qu'elle indique "Connecté" dans le coin en bas à gauche.
 
 <img src="/resources/user-guides/png/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 
@@ -10,6 +10,6 @@ Vous devriez maintenant avoir une option pour démarrer l'extraction minière. V
 
 <img src="/resources/user-guides/png/solo_mine_GUI/03.PNG" style="width: 600px;"/>
 
-Vous miner maintenant avec le réseau, comme vous pouvez le voir en bas de l'image. Dans cet exemple, l'ordinateur contribue à hauteur de 23 H/s au réseau Monero. l'extraction minière aide à maintenir le réseau sécurisé, et vous pourriez avoir de la chance et recevoir une récompense pour avoir protégé le réseau.
+Vous minez maintenant avec le réseau, comme vous pouvez le voir en bas de l'image. Dans cet exemple, l'ordinateur contribue à hauteur de 23 H/s au réseau Monero. l'extraction minière aide à maintenir le réseau sécurisé, et vous pourriez avoir de la chance et recevoir une récompense pour avoir protégé le réseau.
 
 Pour arrêter l'extraction minière, cliquez simplement sur le bouton "Arrêter".

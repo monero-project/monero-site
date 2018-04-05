@@ -1,8 +1,8 @@
 # monerod
 
-`monerod` est le démon est un logiciel qui est inclus dans la suite Monero. C'est un programme en ligne de commande qui gère la chaîne de blocs. Tandis que le portefeuille Bitcoin gère à la fois un compte et la chaîne de blocs, Monero sépare ces composants : `monerod` gère la chaîne de blocs, et `monero-wallet-cli` gère le compte.
+`monerod` est le démon est une application incluse dans la suite Monero. C'est un programme en ligne de commande qui gère la chaîne de blocs. Tandis que le portefeuille Bitcoin gère à la fois un compte et la chaîne de blocs, Monero sépare ces composants : `monerod` gère la chaîne de blocs, et `monero-wallet-cli` gère le compte.
 
-Ce guide supposes que vous avez déjà créé un compte VPS et que vous utilisez SSH pour accéder à la console du serveur.
+Ce guide suppose que vous avez déjà créé un compte VPS et que vous utilisez SSH pour accéder à la console du serveur.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 

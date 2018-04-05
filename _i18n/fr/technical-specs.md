@@ -35,8 +35,8 @@
                     </div>
 
 <div markdown="1">
-* à chaque block
-* basé sur les 720 derniers blocks, à l'exclusion de 20% des valeurs aberrantes d'horodatage
+* à chaque bloc
+* basé sur les 720 derniers blocs, à l'exclusion de 20% des valeurs aberrantes d'horodatage
 </div>
 
                     <div class="row">
@@ -78,7 +78,7 @@
                     </div>
 
 <div markdown="1">
-* d'abord, courbe principale : ~18,132 million de pièces de monnaie d'ici fin Mai 2022
+* d'abord, courbe principale : ~18,132 million de pièces de monnaie d'ici fin mai 2022
 * puis, courbe de queue : une émission de 0,6 XMR par bloc de 2 minutes entre en vigueur une fois l'émission principale terminée, se traduisant par une inflation <1% décroissant au fil du temps
 * voir les [graphiques et détails](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
 </div>
@@ -95,7 +95,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <h3>Confidentialité de l'éméteur</h3>
+                            <h3>Confidentialité de l'émetteur</h3>
                         </div>
                     </div>
 

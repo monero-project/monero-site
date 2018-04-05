@@ -10,7 +10,7 @@
 ![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/3.png)
 ![image4](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/4.png)
 
-- Vous n'aurez besoin d'effectuer cette étape qu'une seule fois : ouvrez un terminal (Ctrl+Alt+t) et installez les dépendances requises en tapant : "*sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev*". Lorsque cela vous sera demandé, tapez sur les touches O (ou Y sur une installation en langue Anglaise) puis Entrer pour continuer
+- Vous n'aurez besoin d'effectuer cette étape qu'une seule fois : ouvrez un terminal (Ctrl+Alt+t) et installez les dépendances requises en tapant : "*sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev*". Lorsque cela vous sera demandé, tapez sur les touches O (ou Y sur une installation en langue Anglaise) puis la touche Entrée pour continuer
 
 ![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/5.png)
 ![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/6.png)
