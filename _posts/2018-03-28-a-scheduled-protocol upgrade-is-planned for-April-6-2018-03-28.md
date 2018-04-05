@@ -10,13 +10,13 @@ author: dEBRUYNE / fluffypony
 
 https://getmonero.org/downloads/  
 
-Please note that the CLI Windows 32-bit, Linux 32-bit, ARMv7, ARMv8, and FreeBSD binaries as well as GUI Windows 64-bit, Linux 64-bit, Linux 32-bit, and Mac OS X 64-bit binaries are forthcoming.  
+Please note that the CLI Windows 32-bit, ARMv8, DragonflyBSD 64-bit, and FreeBSD 64-bit binaries as well as GUI Linux 32-bit binaries are forthcoming.  
 
 Alternatively, you can use the Github link:  
 
 **CLI:** https://github.com/monero-project/monero/releases/tag/v0.12.0.0  
 
-**GUI:** https://github.com/monero-project/monero-gui/releases/tag/v0.12.0.0 // Forthcoming  
+**GUI:** https://github.com/monero-project/monero-gui/releases/tag/v0.12.0.0  
 
 --------------  
 
@@ -26,7 +26,7 @@ Alternatively, you can use the Github link:
 
 # General information about the scheduled network upgrade  
 
-Approximately the 6th of April there will be a scheduled network upgrade on the Monero network. To be sufficiently prepared, a user, service, merchant, pool operator, or exchange should run CLI v0.12.0.0 or GUI v0.12.0.0. The scheduled network upgrade introduces two major changes. First, a PoW tweak to curb any potential threat of ASICs and preserve ASIC resistance. As a result, miners will have to update their miners (i.e. mining software). Second, the minimum ring size is bumped to 7 (mixin 6). Therefore, pool operators need to ensure that payouts use a minimum ring size of 7 (mixin 6), otherwise they will get rejected by the network.  
+Approximately on the 6th of April there will be a scheduled network upgrade on the Monero network. To be sufficiently prepared, a user, service, merchant, pool operator, or exchange should run CLI v0.12.0.0 or GUI v0.12.0.0. The scheduled network upgrade introduces two major changes. First, a PoW tweak to curb any potential threat of ASICs and preserve ASIC resistance. As a result, miners will have to update their miners (i.e. mining software). Second, the minimum ring size is bumped to 7 (mixin 6). Therefore, pool operators need to ensure that payouts use a minimum ring size of 7 (mixin 6), otherwise they will get rejected by the network.  
 
 More information about the PoW tweak can be found here:  
 
@@ -46,7 +46,7 @@ Due to variance the scheduled network upgrade will take place on or around the 6
 
 First and foremost, we encourage users to check the integrity of the binaries and verify that they were signed by Fluffypony's GPG key. A guide that walks you through this process can be found [here](https://github.com/qubenix/monero-site/blob/7edf03f77d4c4e9fcd11bfd3de68440e5322279b/_i18n/en/resources/user-guides/verification-windows-beginner.md) for Windows and [here](https://github.com/qubenix/monero-documentation/blob/qubenix-verify/binary-verification.md) for Linux and Mac OS X.  
 
-**CLI:**  // Windows 32-bit, Linux 32-bit, ARMv7, ARMv8, and FreeBSD binaries are forthcoming  
+**CLI:**  // Windows 32-bit, Linux 32-bit, ARMv7, ARMv8, DragonflyBSD 64-bit, and FreeBSD 64-bit binaries are forthcoming  
 
 If you are using the CLI you ought to perform the following steps:  
 
@@ -58,7 +58,7 @@ If you are using the CLI you ought to perform the following steps:
 
 Note that a blockchain resync is **not** needed. Thus, if you open `monerod-v.0.12.0.0`, it will simply pick up where it left off.  
 
-**GUI:**  // GUI Binaries are forthcoming  
+**GUI:**  // Linux 32-bit binaries are forthcoming  
 
 If you are using the GUI you ought to perform the following steps:  
 
