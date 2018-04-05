@@ -46,7 +46,7 @@
 #  gui_url: linux32
 #  gui_hash: 5df6ebeab728a653eaf64352bc60d8dddbf4d6a47a422856015d7e93ce5dc411
   version: 0.12.0.0
-  tag: Helium Hydra
+  tag: Lithium Luna
   blockchain: linux
 
 - platform: ARMv7
@@ -55,7 +55,7 @@
   cli_url: linuxarm7
   cli_hash: 30d4d2c96cb56aae6b56b0f9978427346d48403b0da2acba91b8fb06e949ac35
   version: 0.12.0.0
-  tag: Helium Hydra
+  tag: Lithium Luna
   blockchain: arm
 
 - platform: ARMv8
