@@ -68,6 +68,7 @@ Note: "atomic units" refer to the smallest fraction of 1 XMR according to the mo
 * [get_languages](#get_languages)
 * [create_wallet](#create_wallet)
 * [open_wallet](#open_wallet)
+* [label_address](#label_address)
 
 ---
 
@@ -1205,6 +1206,31 @@ Example:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"open_wallet","params":{"filename":"mytestwallet","password":"mytestpassword"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+
+### **label_address**
+
+Set label for a subaddress.
+
+Inputs:
+
+* *index* - unsigned int; subaddress index
+* *label* - string;
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"label_address","params":{"index":0,"label":"MainAddress"}}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
