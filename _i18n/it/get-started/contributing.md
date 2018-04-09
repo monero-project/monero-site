@@ -1,6 +1,5 @@
-{% include untranslated.html %}
 <div markdown="1" class="text-center container description">
-Monero is an open-source, community-driven project. Described below are several ways to support the project.
+Monero è un progetto open-source e guidato dalla comunità. Qui sotto sono descritti diversi modi in cui aiutare il progetto a crescere.
 </div>
 
 <div class="contribute">
@@ -10,18 +9,18 @@ Monero is an open-source, community-driven project. Described below are several 
                <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="info-block text-adapt">
                             <div class="row center-xs">
-                                <div class="col"><h2>Support the Network</h2></div>
+                                <div class="col"><h2>Supporta la rete</h2></div>
                             </div>
 <div class="row start-xs" markdown="1">
 
-### Develop
-Monero is primarily written in C++. As it is a decentralized project, anyone is welcome to add or make changes to existing code. Pull requests are merged based on community consensus. See the <a href="https://github.com/monero-project"> repositories</a> and outstanding <a href="https://github.com/monero-project/monero/issues">issues</a>.
+### Sviluppa
+Monero è scritto principalmente in C++. Essendo un progetto decentralizzato, chiunque è il/la benvenuto/a e può fare aggiunte o modifiche al codice esistente. Le "Pull request" vengono accettate secondo il consenso della comunità. Vedi i <a href="https://github.com/monero-project">repositories</a> e i <a href="https://github.com/monero-project/monero/issues">problemi</a> in sospeso.
 
-### Run a Full Node
-Run monerod with port 18080 open. Running a full node ensures maximum privacy when transacting with Monero. It also improves distribution of the blockchain to new users. 
+### Esegui un nodo locale
+Esegui monerod con la porta 18080 aperta. Far girare un nodo locale assicura la massima privacy nelle transazioni Monero. La presenza del tuo nodo locale sulla rete migliora inoltre la distribuzione della blockchain ai nuovi utenti. 
 
-### Mine
-Mining ensures the Monero network remains decentralized and secure. In the Monero graphical user interface and command-line interface, background mining may be activated. Additional resources for mining may be viewed [here](https://reddit.com/r/MoneroMining).
+### Mina
+Il mining assicura che la rete Monero resti decentralizzata e sicura. Il mining in background può essere attivato usando sia l'interfaccia grafica sia quella a riga di comando di Monero. Ulteriori informazioni sul mining (in lingua inglese) possono essere trovate [qui](https://reddit.com/r/MoneroMining).
 
 </div>
                         </div>
@@ -32,11 +31,11 @@ Mining ensures the Monero network remains decentralized and secure. In the Moner
                         <div class="info-block text-adapt">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>View the Forum Funding System</h2>
+                                    <h2>Guarda il Sistema di Raccolta Fondi</h2>
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>Monero utilizes a <a href="https://forum.getmonero.org">forum funding system</a> whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.</p>
+                                <p>Monero utilizza un <a href="https://forum.getmonero.org">Sistema di Raccolta Fondi basato su Forum</a> (Forum Funding System, FFS) in cui vengono proposti progetti legati allo sviluppo e successivamente finanziati dalla comunità. Il finanziamento viene depositato in garanzia e liquidato agli sviluppatori solo a seguito del raggiungimento delle milestone di sviluppo. Chiunque può avanzare nuove proposte o finanziare le proposte già presenti.</p>
                             </div>
                         </div>
                 </div>
@@ -46,11 +45,11 @@ Mining ensures the Monero network remains decentralized and secure. In the Moner
                         <div class="info-block text-adapt">
                             <div class="row center-xs">
                                 <div class="col">
-                                    <h2>Donate</h2>
+                                    <h2>Dona</h2>
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>Ongoing development is supported by donations and <a href="{{site.baseurl}}/community/sponsorships/">sponsorships</a>.</p>
+                                <p>Lo sviluppo del progetto è supportato dalle donazioni e dalle <a href="{{site.baseurl}}/community/sponsorships/">sponsorizzazioni</a>.</p>
                             </div>
                             <div class="row center-xs">
                                 <div class="col-lg-6">
@@ -62,20 +61,20 @@ Mining ensures the Monero network remains decentralized and secure. In the Moner
                             </div>
                             <div class="row start-xs">
                                <div class="col-xs-12">
-                                <h3>Donating Monero</h3>
-                                <p>Donations may be sent to donate.getmonero.org or 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
+                                <h3>Donare Monero</h3>
+                                <p>Le donazioni possono essere inviate a donate.getmonero.org o all'indirizzo Monero 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
                                </div>
                             </div>
                             <div class="row start-xs">
                                <div class="col-xs-12">
-                                <h3>Donating Bitcoin</h3>
-                                <p>Donations may be sent to donate.getmonero.org or 1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</p>
+                                <h3>Donare Bitcoin</h3>
+                                <p>Le donazioni possono essere inviate a donate.getmonero.org o all'indirizzo Bitcoin 1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</p>
                                 </div>
                             </div>
                             <div class="row start-xs">
                                <div class="col-xs-12">
-                                    <h3>Other</h3>
-                                    <p>E-mail <a href="mailto:dev@getmonero.org">dev@getmonero.org</a> for alternative means of donating or if you would like to become a sponsor for the Monero Project.</p>
+                                    <h3>Altro</h3>
+                                    <p>Manda un'email a <a href="mailto:dev@getmonero.org">dev@getmonero.org</a> per avere informazioni su metodi di donazione alternativi o se vuoi diventare uno sponsor del Progetto Monero.</p>
                                </div>
                             </div>
                         </div>
