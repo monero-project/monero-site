@@ -1,0 +1,10 @@
+---
+layout: moneropedia
+entry: ""
+terms: ["", ""]
+summary: ""
+---
+
+### Podstawy
+
+{{ page.summary | capitalize }}.
