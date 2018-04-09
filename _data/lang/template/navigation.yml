@@ -30,8 +30,6 @@
     url: community/team
   - page: Hangouts
     url: community/hangouts
-  - page: Events
-    url: community/events
   - page: Sponsorships
     url: community/sponsorships
   - page: Merchants
