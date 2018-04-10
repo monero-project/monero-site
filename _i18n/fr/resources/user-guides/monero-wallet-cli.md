@@ -49,9 +49,9 @@ Dans ce cas, l'ID de paiement est implicitement inclus dans l'adresse intégrée
 
 ### Indiquer le nombre de sorties pour une transaction :
 
-    transfer MIXIN ADRESSE MONTANT
+    transfer RINGSIZE ADRESSE MONTANT
 
-Remplacez `MIXIN` avec le nombre de sorties que vous souhaitez utiliser. **S'il n'est pas spécifié, la valeur par défaut est 4.** C'est une bonne idée d'utiliser la valeur par défaut, mais vous pouvez augmenter celle-ci pour inclure plus de sorties. Plus grand est le nombre, plus grosse sera la transaction, nécessitant des frais plus importants.
+Remplacez `RINGSIZE` avec le nombre de sorties que vous souhaitez utiliser. **S'il n'est pas spécifié, la valeur par défaut est 4.** C'est une bonne idée d'utiliser la valeur par défaut, mais vous pouvez augmenter celle-ci pour inclure plus de sorties. Plus grand est le nombre, plus grosse sera la transaction, nécessitant des frais plus importants.
 
 
 ## Recevoir des moneroj
