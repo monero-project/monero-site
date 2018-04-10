@@ -7,6 +7,7 @@ Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
 monero-win-x64-v0.12.0.0.zip, e74fb7abac3a34163e38ae1712282af3bbfb5bec00d2e0c88ca7d35f2fa95d28
+monero-win-x86-v0.12.0.0.zip, 9f8861241c29f891aaf0f7b96470f63193e8b7bbc2985f513e138bf9b1178720
 monero-mac-x64-v0.12.0.0.tar.bz2, 61df6eec88df19d4d93c0542d6afb94887309ac20afc02cc45cdbada4b21d2ef
 monero-linux-x64-v0.12.0.0.tar.bz2, 928ad08ff0dea2790c7777a70e610b2d33c35a5df5900fbb050cc8c659237636
 monero-linux-x86-v0.12.0.0.tar.bz2, bebeb473a4243b4469dc83ebcaa99b9bb2c1db8a350c5e62270027dcc8c0edb2
@@ -19,12 +20,12 @@ monero-gui-linux-x64-v0.12.0.0.tar.bz2, fb0f43387b31202f381c918660d9bc32a3d28a47
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlrGEYcACgkQVUMt8xzN
-T81HSQgArnH6JrkA8PZLDLc2xU45ncSmAsyV/WVc0pLk11BjScz6aN9RV46kDIfT
-S3cDmjeh9DCPKeuNB4VATEq1vwo/8zIZTW6WwrhoZ6fX5DPT4/JuhqfzQCKjXe19
-v5llb4qWqNFLtZp21HW+9rPNWWMcNVNVwawvcPSHHzNz020zsmYCDhCHNh/yVvNr
-UxNvgyfVg4amZhnhp9cd2fcsGc8yI2oWbdjTH43VlxjdKs7H8fQZHqzjK/5mwJNE
-1sr5KVxw2Yw7IFif8cQqfy4Im31jbGJzzjES6nGhNA09etiYofJm5hjR0lQZj8eT
-Kc4B77JBZ80jReYmHgquei5zdeAWug==
-=M3uZ
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlrNIvcACgkQVUMt8xzN
+T82E/Af/UA6FpXdoa9vWBF9EQ6eXpFmjp0PPfuBDQ3gDsZCdrX0x+EIBWrgwwrzW
+rc7HQ/N2qVCmE8nhiIq9ENZ6PE586r1lUl+JQECN6fdep1uz1Ts8YONrOc10EFq7
+fIW+krKuxMCjBmijx6E8iesHyyqHshRduKz5zAnNywn0zaAkHura/ERk3te1XFoR
+TrZ665+BcRfQeAISXVEYTc767SoSSNgZSapZpGRnBlHx3UQwU8GJOpOR5Ui+CHpi
+JmFq3A0mEzwamgPHpAZbpztMANt1WF42PC7gCI3BR9r4/XyT6hBIGw+icTF6VW50
+TXAvlALvBF6Vq4ieRgM04mymm4HIug==
+=Slsl
 -----END PGP SIGNATURE-----

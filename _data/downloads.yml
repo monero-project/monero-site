@@ -12,9 +12,9 @@
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: d1c1c2e75211143f935c2e06cf09892e7118e46fbb1d5fc240cde9cb1d3b92c9
-  version: 0.11.1.0
-  tag: Helium Hydra
+  cli_hash: 9f8861241c29f891aaf0f7b96470f63193e8b7bbc2985f513e138bf9b1178720
+  version: 0.12.0.0
+  tag: Lithium Luna
   blockchain: win
 
 - platform: Mac OS X, 64-bit
@@ -57,31 +57,6 @@
   version: 0.12.0.0
   tag: Lithium Luna
   blockchain: arm
-
-- platform: ARMv8
-  icon: icon-arm
-  cli_url: linuxarm8
-  cli_hash: f1f0850e37eb65595d8e92eb2b84f5119165f418ab54a72dfa8a149e0efa810b
-  version: 0.11.1.0
-  tag: Helium Hydra
-  blockchain: arm
-
-- platform: FreeBSD, 64-bit
-  id: bsd
-  icon: icon-freebsd
-  cli_url: freebsd64
-  cli_hash: bd2090f643d212a4031edbf44a8f1425cf335b6b63c6527a7e82f5bc6a83db67
-  version: 0.11.1.0
-  tag: Helium Hydra
-  blockchain: freebsd
-
-- platform: DragonflyBSD, 64-bit
-  icon: icon-dragonflybsd
-  cli_url: dragonflybsd64
-  cli_hash: 30e2d50db8e1738a72d3a06ec106c1a3f157de057efad344bd12151b6bbd3019
-  version: 0.11.1.0
-  tag: Helium Hydra
-  blockchain: freebsd
 
 - platform: Source Code & Blockchain
   id: source
