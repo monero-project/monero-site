@@ -1,6 +1,6 @@
 langs:
-  en: Englisch
-  es: Spanisch
+  en: English
+  es: Español
   de: Deutsch
 
 global:
@@ -56,7 +56,7 @@ index:
   page_title: "Monero - sicher, privat, unauffindbar"
   what_is_1: Was ist
   what_is_2: " ?"
-  what_is_orange_block: "Monero ist eine sichere, private und unauffindbare Währung, die open-source ist und jedem frei zur Verfügung steht."
+  what_is_orange_block: "Monero ist eine sichere, private und nicht zurückverfolgbare Währung, die open-source ist und jedem frei zur Verfügung steht."
   what_is_text_block_1: "Mit Monero bist du deine eigene Bank; Du hast die komplette Kontrolle über dein Geld. Mit Monero sind sämtliche Accounts und Transaktionen privat."
   what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below. If you'd like to try Monero for yourself the"
   what_is_text_block_3: "Getting Started"
@@ -65,7 +65,7 @@ index:
   the_latest: The Latest
   private: privat
   secure: sicher
-  untraceable: unauffindbar
+  untraceable: nicht zurückverfolgbar
   private_text: "Monero uses hidden amounts, origins and destinations of @transactions. This means that nobody knows how much you're sending in a transaction except you. This ensures that your purchases and other transfers remain private by default."
   untraceable_text: "By taking advantage of @ring-signatures, Monero allows you to send and receive funds privately. Even though your transactions are publicly verifiable on the @blockchain, transactions use digital signatures that specify a group of signers such that the person verifying can’t tell which person actually produced the signature. Because it's ambiguous which funds have been spent, your transaction remains private and cannot be traced back to you."
   secure_text: "Monero uses a distributed peer-to-peer @consensus network and every transaction is cryptographically signed. Your coins are safely stored on the @blockchain and can be restored at any time with the use of a 25 word @mnemonic-seed on any computer with the Monero software. Wallet files are encrypted on disk and locked with a passphrase, rendering them useless if stolen."
