@@ -1,6 +1,6 @@
 {% include untranslated.html %}
 <div class="text-center container description">
-<p>Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself. <strong>Note that the white background options have a white background under the Monero symbol ONLY, not as a background to the whole image.</strong> Lastly, you can download everything on this page in one zip file by clicking <a href="/press-kit/monero-press-kit.zip">here</a>.</p>
+<p>Unten findest du das Monero Symbol und Logo. Du kannst eine beliebige Größe auswählen oder die .ai-Datei herunterladen. <strong>Beachte, dass die Einstellungen für einen weißen Hintergrund nur einen weißen Hintergrund hinter dem Monero Symbol erzeugen, nicht hinter dem gesamten Bild.</strong> Außerdem kannst du alle Dateien auf dieser Seite als eine einzige ZIP-Datei <a href="/press-kit/monero-press-kit.zip">hier</a> herunterladen.</p>
 </div>
 <section class="container">
     <div class="row">
@@ -16,20 +16,20 @@
                 </div>
                 <div class="row center-xs press">
                     <div class="col-md-6">
-                        <p>No background (PNG)</p>
-                        <a href="/press-kit/symbols/monero-symbol-480.png">Small</a>
-                        <a href="/press-kit/symbols/monero-symbol-800.png">Medium</a>
-                        <a href="/press-kit/symbols/monero-symbol-1280.png">Large</a>
+                        <p>Kein Hintergrund (PNG)</p>
+                        <a href="/press-kit/symbols/monero-symbol-480.png">Klein</a>
+                        <a href="/press-kit/symbols/monero-symbol-800.png">Mittel</a>
+                        <a href="/press-kit/symbols/monero-symbol-1280.png">Groß</a>
                     </div>
                     <div class="col-md-6">
-                        <p>White background (PNG)</p>
-                        <a href="/press-kit/symbols/monero-symbol-on-white-480.png">Small</a>
-                        <a href="/press-kit/symbols/monero-symbol-on-white-800.png">Medium</a>
-                        <a href="/press-kit/symbols/monero-symbol-on-white-1280.png">Large</a>
+                        <p>Weißer Hintergrund (PNG)</p>
+                        <a href="/press-kit/symbols/monero-symbol-on-white-480.png">Klein</a>
+                        <a href="/press-kit/symbols/monero-symbol-on-white-800.png">Mittel</a>
+                        <a href="/press-kit/symbols/monero-symbol-on-white-1280.png">Groß</a>
                     </div> 
                 </div>
                 <div class="row center-xs press">
-                    <a href="/press-kit/symbols/monero-symbol.ai" class="adi">Symbol .ai file</a>
+                    <a href="/press-kit/symbols/monero-symbol.ai" class="adi">Symbol .ai-Datei</a>
                 </div>
             </div>
         </div>
@@ -47,21 +47,21 @@
                 </div>
                 <div class="row center-xs press">
                     <div class="col-md-6">
-                        <p>No background (PNG)</p>
-                        <a href="/press-kit/logos/monero-logo-480.png">Small</a>
-                        <a href="/press-kit/logos/monero-logo-800.png">Medium</a>
-                        <a href="/press-kit/logos/monero-logo-1280.png">Large</a>
+                        <p>Kein Hintergrund (PNG)</p>
+                        <a href="/press-kit/logos/monero-logo-480.png">Klein</a>
+                        <a href="/press-kit/logos/monero-logo-800.png">Mittel</a>
+                        <a href="/press-kit/logos/monero-logo-1280.png">Groß</a>
                     </div>
                     <div class="col-md-6">
-                        <p>White background (PNG)</p>
-                        <a href="/press-kit/logos/monero-logo-symbol-on-white-480.png">Small</a>
-                        <a href="/press-kit/logos/monero-logo-symbol-on-white-800.png">Medium</a>
-                        <a href="/press-kit/logos/monero-logo-symbol-on-white-1280.png">Large</a>
+                        <p>Weißer Hintergrund (PNG)</p>
+                        <a href="/press-kit/logos/monero-logo-symbol-on-white-480.png">Klein</a>
+                        <a href="/press-kit/logos/monero-logo-symbol-on-white-800.png">Mittel</a>
+                        <a href="/press-kit/logos/monero-logo-symbol-on-white-1280.png">Groß</a>
                     </div> 
                 </div>
                 <div class="row center-xs press">
                    <div class="col-xs-12">
-                    <a href="/press-kit/logos/monero-logo.ai" class="adi">Logo .ai file</a>
+                    <a href="/press-kit/logos/monero-logo.ai" class="adi">Logo .ai-Datei</a>
                    </div>
                 </div>
             </div>
