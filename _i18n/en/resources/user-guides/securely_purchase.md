@@ -24,7 +24,7 @@ Monero Private Spend Key
 The private spend key is used to send funds from the wallet.
 
 Monero Private View Key
-The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
+The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
 
 At this point you have many options.  You can print the wallet on paper, save it as a PDF or text on a USB stick, burn it to CD/DVD, etc.  Most likely you will want at least two or three copies, stored securely in different locations.  If storing digitally, encrypt everything with a strong password.  If storing on paper, do not show the wallet to anyone else who can memorize your 25 word key, or take a picture of the wallet without your permission.  Sending someone a picture of the wallet is the same as giving away all of your funds.
 
@@ -73,7 +73,7 @@ When the Shapehift.io webpage says your transaction has been completed, you shou
 #### Notes and How to Verify Funds
 Because the Monero blockchain is private and untraceable, you won't be able to lookup your Monero Public Address and confirm that the funds have arrived like you might with Bitcoin.  This is good for privacy, but bad for convenience.
 
-To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet.  This is where that view-key comes in.  To create a view-only wallet see the entry: @view-only
+To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet.  This is where that view-key comes in.  To create a view-only wallet see the entry: [View Only Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)
 
 To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet or connect it to the internet and it becomes a Hot Wallet.
 

@@ -6,30 +6,26 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-monero-win-x64-v0.11.1.0.zip, 81f80876b5ce95b4c94b858bd4b57d2ac808e52e7b98819ab5c33be8ecbc09ae
-monero-win-x86-v0.11.1.0.zip, d1c1c2e75211143f935c2e06cf09892e7118e46fbb1d5fc240cde9cb1d3b92c9
-monero-mac-x64-v0.11.1.0.tar.bz2, 75b12623760574688572adfb10504d872d60ca7c4ac7571011d62429d6288e50
-monero-linux-x64-v0.11.1.0.tar.bz2, 6581506f8a030d8d50b38744ba7144f2765c9028d18d990beb316e13655ab248
-monero-linux-x86-v0.11.1.0.tar.bz2, ef212bda6b9a30af2a3e7e94cb2af4dd6e01eb0f54a4d1c0eb25abe75316e2ae
-monero-linux-armv7-v0.11.1.0.tar.bz2, 72d48a83189e3f99e7bd3d0ceab34e7466d99ec4ca85bb8e7b81ed338c692a46
-monero-linux-armv8-v0.11.1.0.tar.bz2, f1f0850e37eb65595d8e92eb2b84f5119165f418ab54a72dfa8a149e0efa810b
-monero-freebsd-x64-v0.11.1.0.tar.bz2, bd2090f643d212a4031edbf44a8f1425cf335b6b63c6527a7e82f5bc6a83db67
-monero-dragonflybsd-x64-v0.11.1.0.tar.bz2, 30e2d50db8e1738a72d3a06ec106c1a3f157de057efad344bd12151b6bbd3019
+monero-win-x64-v0.12.0.0.zip, e74fb7abac3a34163e38ae1712282af3bbfb5bec00d2e0c88ca7d35f2fa95d28
+monero-win-x86-v0.12.0.0.zip, 9f8861241c29f891aaf0f7b96470f63193e8b7bbc2985f513e138bf9b1178720
+monero-mac-x64-v0.12.0.0.tar.bz2, 61df6eec88df19d4d93c0542d6afb94887309ac20afc02cc45cdbada4b21d2ef
+monero-linux-x64-v0.12.0.0.tar.bz2, 928ad08ff0dea2790c7777a70e610b2d33c35a5df5900fbb050cc8c659237636
+monero-linux-x86-v0.12.0.0.tar.bz2, bebeb473a4243b4469dc83ebcaa99b9bb2c1db8a350c5e62270027dcc8c0edb2
+monero-linux-armv7-v0.12.0.0.tar.bz2, 30d4d2c96cb56aae6b56b0f9978427346d48403b0da2acba91b8fb06e949ac35
 
-monero-gui-win-x64-v0.11.1.0.zip, 39d16f40fccf532b0193f33afd5a90c817c924e9abad41d4f4990a4c8c50ba97
-monero-gui-mac-x64-v0.11.1.0.tar.bz2, 4f63ac3e9c5f87f8d8318ff89cdbfa954716e8addbdc8fcd0352fe678b84f8e2
-monero-gui-linux-x64-v0.11.1.0.tar.bz2, e18a13f39a3b4aa87c9afdd9c87dfc087ed4940d99cf18c16ec59037e5f68eaf
-monero-gui-linux-x86-v0.11.1.0.tar.bz2, 5df6ebeab728a653eaf64352bc60d8dddbf4d6a47a422856015d7e93ce5dc411
+monero-gui-win-x64-v0.12.0.0.zip, 4b9f31686ecaad97cdb175e6574bf307f8d1c410427825f4304c21da8aac1864
+monero-gui-mac-x64-v0.12.0.0.tar.bz2, f74c108d16bd70b6f0052ba4b3ce91fa3ca59622a0aee7d523a1f43967814c12
+monero-gui-linux-x64-v0.12.0.0.tar.bz2, fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAln5m4UACgkQVUMt8xzN
-T83FFAgAqiGND6bA2R9JrOH3fWIL8178TT2MF4dGHt0s9TfQZ6ZRoU6C6BWZ8MSs
-wrB7yJfePCahXPLJP8VapkxvkhIwalg77lgL1130gwxdfv4XKUAmsJPFIiqDirwR
-v/yJIhZJJJ9BF/DZLbVvl3yefd+Zz/jr0DPyEs7NlD1Q6K3Gv/nPBTrQlcbIq1S2
-Zqz9ZG3YM0XXwbEpukfTSK0e9P6emgMr0jLu61qzoubblOEF12+Tm/HakVt0kDk4
-wGEJSMv2zEPb//fg68xOpNF+9QU71IvHmjf38ZjbJdpC3GTFgO/EPa/i0EVPdN1u
-F/lAiazu+JGodmhzUxeXBPMdmrZE7g==
-=vZ6k
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlrNIvcACgkQVUMt8xzN
+T82E/Af/UA6FpXdoa9vWBF9EQ6eXpFmjp0PPfuBDQ3gDsZCdrX0x+EIBWrgwwrzW
+rc7HQ/N2qVCmE8nhiIq9ENZ6PE586r1lUl+JQECN6fdep1uz1Ts8YONrOc10EFq7
+fIW+krKuxMCjBmijx6E8iesHyyqHshRduKz5zAnNywn0zaAkHura/ERk3te1XFoR
+TrZ665+BcRfQeAISXVEYTc767SoSSNgZSapZpGRnBlHx3UQwU8GJOpOR5Ui+CHpi
+JmFq3A0mEzwamgPHpAZbpztMANt1WF42PC7gCI3BR9r4/XyT6hBIGw+icTF6VW50
+TXAvlALvBF6Vq4ieRgM04mymm4HIug==
+=Slsl
 -----END PGP SIGNATURE-----

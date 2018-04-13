@@ -1,0 +1,109 @@
+- year: 2014
+  accomplishments:
+    - name: Pojawienie się na Bitcointalk
+      date: 2014-04-18
+      status: completed
+    - name: Zmiana nazwy z Bitmonero na Monero
+      date: 2014-04-23
+      status: completed
+    - name: Odzyskanie po ataku spamu
+      date: 2014-09-04
+      status: completed
+    - name: Publikacja pierwszej i drugiej dokumentacji Laboratorium Badawczego Monero
+      date: 2014-09-12
+      status: completed
+    - name: Publikacja trzeciej dokumentacji Laboratorium Badawczego Monero
+      date: 2014-09-25
+      status: completed
+    - name: Wypuszczenie wersji 0.8.8.6
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: Publikacja czwartej dokumentacji Laboratorium Badawczego Monero
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: Wypuszczenie wersji 0.9.0 Hydrogen Helix
+      date: 2016-01-01
+      status: completed
+    - name: Publikacja piątej dokumentacji Laboratorium Badawczego Monero
+      date: 2016-02-10
+      status: completed
+    - name: Hardfork do wymagania co najmniej 3 stron we wszystkich transakcjach
+      date: 2016-03-22
+      status: completed
+    - name: Wypuszczenie wersji 0.10.0 Wolfram Warptangent
+      date: 2016-09-18
+      status: completed
+    - name: Hardfork do rozdzielenia bazy monetarnej na jednostki
+      date: 2016-09-21
+      status: completed
+    - name: Wypuszczenie wersji 0.10.1 Wolfram Warptangent
+      date: 2016-12-14
+      status: completed
+    - name: Wypuszczenie oficjalnej wersji Beta 1 Graficznego Interfejsu Użytkownika
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: Hardfork do umożliwienia transakcji RingCT
+      date: 2017-01-05
+      status: completed
+    - name: Wypuszczenie wersji 0.10.2; łatka krytycznej luki
+      date: 2017-02-22
+      status: completed
+    - name: Wypuszczenie wersji 0.10.3.1 Wolfram Warptangent
+      date: 2017-03-27
+      status: completed      
+    - name: Hardfork do regulacji minimalnego rozmiaru bloku i algorytmu dynamicznej opłaty
+      date: 2017-04-15
+      status: completed
+    - name: Zmiana wyglądu strony internetowej
+      date: 2017-07-04
+      status: completed
+    - name: Wypuszczenie wersji 0.11.0.0 Helium Hydra
+      date: 2017-09-07
+      status: completed
+    - name: Puchowe bloki
+      date: 2017-09-07
+      status: completed
+    - name: Graficzny Interfejs Użytkownika poza wersją beta
+      date: 2017-09-10
+      status: completed
+    - name: Hardfork do zwiększenia minimalnej liczby stron transakcji do 5 i do wymagania transakcji RingCT
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: Puchowe bloki
+      date:
+      status: ongoing
+    - name: Graficzny Interfejs Użytkownika dla Androida
+      date:
+      status: ongoing
+    - name: Zmiana wyglądu Forumowego Systemu Finansowania
+      date:
+      status: ongoing
+    - name: Podadresy
+      date:
+      status: ongoing
+    - name: Multi-podpisy (multisig)
+      date:
+      status: ongoing
+    - name: Wypuszczenie systemu Kovri Alpha
+      date:
+      status: upcoming
+- year: 2018
+  accomplishments:
+    - name: Publikacja dodatkowej dokumentacji Laboratorium Badawczego Monero
+      date:
+      status: upcoming
+    - name: Rozwiązania drugowarstwowe dla szybkości i skalowalności
+      date:
+      status: upcoming
+    - name: Efektywniejsze dowody zasięgu dla RingCT w celu zmniejszenia rozmiarów transakcji
+      date:
+      status: upcoming
