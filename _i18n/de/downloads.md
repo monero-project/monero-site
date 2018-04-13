@@ -3,7 +3,7 @@
 
 <div class="container description" markdown="1">
 
-Wenn Sie Hilfe bei der Wahl der korrekten Anwendung benötigen, klicken Sie bitte [hier](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) für eine schnelle Antwort. Wählen Sie unten anschließend die passende Version für Ihr Betriebssystem.
+Wenn Du Hilfe bei der Wahl der korrekten Anwendung benötigst, klicke bitte [hier](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) für eine schnelle Antwort. Wähle unten anschließend die passende Version für Dein Betriebssystem.
 Hinweis: Die SHA256 Hashwerte neben den Downloads dienen dem Komfort. Eine anerkannte GPG-signierte Liste der Hashwert ist unter [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) verfügbar. Der zu der Signatur gehörige öffentliche Schlüssel befindet sich im Quellcode (unter /utils/gpg_keys).
 
 </div>
@@ -26,7 +26,7 @@ Hinweis: Die SHA256 Hashwerte neben den Downloads dienen dem Komfort. Eine anerk
   <div class="info-block row center-xs" id="pick-platform">
      <div class="mob dropdowndrop">
         <input id="check01" type="checkbox" name="menu"/>
-        <label for="check01">Wählen Sie Ihr Betriebssystem</label>
+        <label for="check01">Wähle Dein Betriebssystem</label>
         <ul id="menu">
           <li><a href="#windows">Windows</a></li>
           <li><a href="#mac">Mac</a></li>
@@ -68,7 +68,7 @@ Hinweis: Die SHA256 Hashwerte neben den Downloads dienen dem Komfort. Eine anerk
 </h4>
 </div>
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
-Wenn Sie die bereits geladene Blockchain vorziehen, anstatt von Grund auf zu synchronisieren, dann können Sie [hier](https://downloads.getmonero.org/blockchain.raw) die aktuelle Blockchain herunterladen. Normalerweise ist die Synchronisation von Grund auf schneller, jedoch, and it also takes a lot less RAM (import is very greedy).
+Wenn Du die bereits geladene Blockchain vorziehst, anstatt von Grund auf zu synchronisieren, dann kannst Du [hier](https://downloads.getmonero.org/blockchain.raw) die aktuelle Blockchain herunterladen. Normalerweise ist die Synchronisation von Grund auf schneller und benötigt deutlich weniger Arbeitsspeicher (im Gegensatz zum Import).
 </div>
 </div>
 {% elsif data_downloads.id == "hardware" %}
@@ -80,7 +80,7 @@ Wenn Sie die bereits geladene Blockchain vorziehen, anstatt von Grund auf zu syn
 {% elsif data_downloads.id == "mobilelight" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>Die folgenden Mobil- und Light-Wallets werden von vertrauten Mitgliedern der Community als sicher erachtet. Sollte ein Wallet hier nicht gelistet sein, so können Sie die Community bitten, dieses auszuprobieren. Eine Liste der Platformen der Monero Community finden Sie auf der <a href="/community/hangouts/">Treffpunkt</a> Seite.</p>
+<p>Die folgenden Mobil- und Light-Wallets werden von vertrauten Mitgliedern der Community als sicher erachtet. Sollte ein Wallet hier nicht gelistet sein, so kannst Du die Community bitten, dieses auszuprobieren. Eine Liste der Platformen der Monero Community findest Du auf der <a href="/community/hangouts/">Treffpunkt</a> Seite.</p>
 </div>
 </div>
 <div class="row center-xs">

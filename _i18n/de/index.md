@@ -16,7 +16,7 @@
                         <div class="main-info">
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Private Digitale Währung</h2>
-                            <p id="main-text">Monero ist eine sichere und private Kryptowährung, die nicht zurückverfolgbar ist. Sie ist Open-Source und für jeden zugänglich. Mit Monero sind Sie Ihre eigene Bank. Only you control and are responsible for your funds. Ihre Konten und Transaktionen sind vor neugierigen Blicken geschützt.</p>
+                            <p id="main-text">Monero ist eine sichere und private Kryptowährung, die nicht zurückverfolgbar ist. Sie ist open-source und für jeden zugänglich. Mit Monero bist Du deine eigene Bank. Nur Du kontrollierst und bist verantwortlich für deine Mittel. Deine Konten und Transaktionen sind vor neugierigen Blicken geschützt.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Loslegen</a></p>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                     <div class="row middle-xs info-block-row private">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12  why-text">
                             <h3>Monero ist sicher</h3>
-                                <p>Monero ist eine dezentralisierte Kryptowährung, also sicheres digitales Bargeld betrieben durch ein Netzwerk von Benutzern. Transaktionen werden durch verteilten Konsens bestätigt und anschließend unveränderlich auf der Blockchain festgehalten. Es muss keiner dritten Partei getraut werden, um Ihre Monero sicher aufzubewahren.</p>
+                                <p>Monero ist eine dezentralisierte Kryptowährung, also sicheres digitales Bargeld betrieben durch ein Netzwerk von Benutzern. Transaktionen werden durch verteilten Konsens bestätigt und anschließend unveränderlich auf der Blockchain festgehalten. Du musst keiner dritten Partei vertrauen, um Deine Moneroj sicher aufzubewahren.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
@@ -46,7 +46,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Monero ist privat</h3>
-                            <p>Monero verwendet Ring Signatures, Ring Confidential Transactions sowie Stealth Adressen. So werden Ursprung, Beträge und Empfänger einer jeden Transaktion verschleiert. Monero bietet alle Vorteile einer dezentralisieren Kryptowährung, without any of the typical privacy concessions. </p>
+                            <p>Monero verwendet Ring Signatures, Ring Confidential Transactions sowie Stealth Adressen. So werden Ursprung, Beträge und Empfänger einer jeden Transaktion verschleiert. Monero bietet alle Vorteile einer dezentralisieren Kryptowährung, ohne die typischen Einbußen bei der Privatsphäre.</p>
                         </div>
                         
                     </div>
@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12"><p class="main-downloads">Benötigen Sie Monero für ein anderes Betriebssystem? <a href="{{site.baseurl}}/downloads/">Hier ist eine Liste aller verfügbaren Downloads.</a></p>
+                                <div class="col-xs-12"><p class="main-downloads">Benötigst Du Monero für ein anderes Betriebssystem? <a href="{{site.baseurl}}/downloads/">Hier ist eine Liste aller verfügbaren Downloads.</a></p>
                             </div>
                             </div>
                 </div>
@@ -149,7 +149,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>Moneropedia</h2>
-                                <p class="main-resources">Möchten Sie die Bedeutungen der Fachbegriffe und Konzepte, die in Monero Verwendung finden, nachschlagen? Hier finden Sie eine Anleitung zu den Begriffen und ihren Bedeutungen sowohl von dem Monero als auch dem Kovri Projekt.</p>
+                                <p class="main-resources">Möchtest Du die Bedeutungen der Fachbegriffe und Konzepte, die in Monero Verwendung finden, nachschlagen? Hier findest Du eine Anleitung zu den Begriffen und ihren Bedeutungen sowohl von dem Monero- als auch dem Kovri-Projekt.</p>
                                 <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Moneropedia besuchen</a></p>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>Benutzerhandbuch</h2>
-                                <p class="main-resources">Schritt für Schritt Anleitungen aufgeteilt in Kapitel, die alle Themen behandeln. and cover everything from creating a wallet to supporting the network, and even how to edit this website.</p>
+                                <p class="main-resources">Schritt für Schritt Anleitungen aufgeteilt in Kapitel, die alle Themen behandeln: Angefangen beim Erstellen einer Geldbörse, über die Mithilfe beim Netzwerk, bis zum Bearbeiten dieser Seite.</p>
                                 <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Benutzerhandbuch lesen</a></p>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>FAQ</h2>
-                                <p class="main-resources">Uns wurden in den letzten Jahren viele Fragen gestellt, die in diesen FAQ beantwortet werden. Wenn Ihre Frage nicht aufgeführt ist, hilft Ihnen jederzeit die Community.</p>
+                                <p class="main-resources">Uns wurden in den letzten Jahren viele Fragen gestellt, die in diesen FAQ beantwortet werden. Wenn Deine Frage nicht aufgeführt ist, hilft Dir jederzeit die Community.</p>
                                 <p><a href="{{site.baseurl}}/get-started/faq/" class="btn-link btn-auto">Zu den FAQ</a></p>
                             </div>
                         </div>         
