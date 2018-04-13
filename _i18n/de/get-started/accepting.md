@@ -6,25 +6,25 @@
                     <div class="info-block text-adapt">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Instructions for the Command-Line Interface</h2>
+                                <h2>Anleitungen für die Kommandozeile</h2>
                             </div>
                         </div>
 <div markdown="1">
                            
-### The Basics
+### Die Grundlagen
 
-Monero works a little differently to what you may have become accustomed to from other @cryptocurrencies. In the case of a digital currency like Bitcoin and its many derivatives merchant payment systems will usually create a new recipient @address for each payment or user.
+Monero funktioniert ein wenig anders als du es von anderen @cryptocurrencies gewohnt bist. Bei einer digitalen Währung wie Bitcoin und seinen vielen Derivaten wird vom Bezahlsystem normalerweise eine neue Empfangs @address für jede Bezahlung oder für jeden Nutzer erstellt.
 
-However, because Monero has @stealth-addresses there is no need to have separate recipient addresses for each payment or user, and a single @account address can be published. Instead, when receiving payments a merchant will provide the person paying with a "payment ID".
+Da Monero jedoch @stealth-addresses verwendet, muss keine seperate Empfangsadresse für jede Bezahlung oder für jeden Nutzer erstellt werden: Es wird nur eine Empfangsadresse benötigt. Stattdessen stellt der Händler dem Kunden eine Bezahl-ID zur Verfügung.
 
-A @payment-ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is: 
+Eine @payment-ID ist eine 64 Zeichen langer hexadezimaler Code, der zufällig vom Händerl erstellt wird. Ein Beispiel für eine Bezahl-ID ist: 
 ```
 666c75666679706f6e7920697320746865206265737420706f6e792065766572
 ```
 
-### Checking for a Payment in monero-wallet-cli
+### Eine Bezahlung mit monero-wallet-cli überprüfen
 
-If you want to check for a payment using monero-wallet-cli you can use the "payments" command followed by the payment ID or payment IDs you want to check. For example:
+Wenn Du eine eine Bezahlung mit monero-wallet-cli überprüfen möchtest, verwende den "payments" Befehl gefolgt von der/den Bezahl-ID(s). Ein Beispiel:
 
 ```
 [wallet 49VNLa]: payments 666c75666679706f6e7920697320746865206265737420706f6e792065766572
@@ -33,23 +33,23 @@ If you want to check for a payment using monero-wallet-cli you can use the "paym
 [wallet 49VNLa]: █
 ```
 
-If you need to check for payments programmatically, then details follow the next section.
+Details zur programmatischen Überprüfung von Bezahlungen folgen im nächsten Abschnitt.
 
-### Receiving a Payment Step-by-Step
+### Eine Bezahlung erhalten: Schritt für Schritt
 
-* Generate a random 64 character hexadecimal string for the payment  
-* Communicate the payment ID and Monero address to the individual who is making payment  
-* Check for the payment using the "payments" command in monero-wallet-cli
+* Generiere als Bezahl-ID eine zufällige hexadezimale Zeichenkette bestehend aus 64 Zeichen  
+* Kommuniziere die Bezahl-ID sowie Deine Monero Adresse dem Käufer  
+* Überprüfen die Bezahlung mit dem "payments" Befehl in monero-wallet-cli  
 
-### Checking for a Payment Programmatically
+### Programmatische Überprüfung einer Bezahlung
 
-In order to check for a payment programmatically you can use the get_payments or get_bulk_payments JSON RPC API calls.
+Benutze die get_payments oder get_bulk_payments JSON RPC API Aufrufe, um programmatisch eine Bezahlung zu Überprüfen.
 
-*get_payments*: this requires a payment_id parameter with a single payment ID.
+*get_payments* benötigt den payment_id Parameter mit einer einzigen Bezahl-ID.
 
-*get_bulk_payments*: this is the preferred method, and requires two parameters, payment_ids - a JSON array of payment IDs - and an optional min_block_height - the block height to scan from.
+*get_bulk_payments* ist die präferierte Methode und benötigt zwei Parameter - ein JSON Array mit Bezahl-IDs - und eine optionale min_block_height - die Blockhöhe, von der aus gescannt werden soll.
 
-An example of returned data is as follows:
+Eine Antwort des Aufrufs sieht beispielsweise so aus:
 
 ```
 [ monero->~ ]$ curl -X POST http://127.0.0.1:18500/json_rpc -d '{"jsonrpc":"2.0","method":"get_bulk_payments","id":"test", "params":{"payment_ids": ["666c75666679706f6e7920697320746865206265737420706f6e792065766572"]}}' -H "Content-Type: application/json"
@@ -68,16 +68,17 @@ An example of returned data is as follows:
 }
 ```
 
-It is important to note that the amounts returned are in base Monero units and not in the display units normally used in end-user applications. Also, since a transaction will typically have multiple outputs that add up to the total required for the payment, the amounts should be grouped by the tx_hash or the payment_id and added together. Additionally, as multiple outputs can have the same amount, it is imperative not to try and filter out the returned data from a single get_bulk_payments call.
+Es ist anzumerken, dass die zurückgegebenen Beträge in Basis Monero Einheiten sind und nicht in den Darstellungseinheiten, wie sie gewöhlich in Endnutzer Anwendungen verwendet werden. Also, since a transaction will typically have multiple outputs that add up to the total required for the payment, the amounts should be grouped by the tx_hash or the payment_id and added together. Additionally, as multiple outputs can have the same amount, it is imperative not to try and filter out the returned data from a single get_bulk_payments call.
 
-Before scanning for payments it is useful to check against the daemon RPC API (the get_info RPC call) to see if additional blocks have been received. Typically you would want to then scan only from that received block on by specifying it as the min_block_height to get_bulk_payments.
+Vor dem Überprüfen von Bezahlungen ist es nützlich zu überprüfen, ob neue Blöcke empfangen wurden (mittels des get_info RPC Aufrufs).
+Typischerweise möchtest Du dann nur von diesem empfangen Block aus scannen, indem Du diesen als Parameter min_block_height im Aufruf get_bulk_payments spezifizierst.
 
-### Programatically Scanning for Payments
+### Programmatisch nach Bezahlungen suchen
 
-* Get the current block height from the daemon, only proceed if it has increased since our last scan  
-* Call the get_bulk_payments RPC API call with our last scanned height and the list of all payment IDs in our system  
-* Store the current block height as our last scanned height  
-* Remove duplicates based on transaction hashes we have already received and processed  
+* Erhalte die neueste Blockhöhe von dem Monero Dämon; nur fortfahren, wenn diese sich seit dem letzten Scan geändert hat  
+* Rufe den get_bulk_payments RPC API Aufruf mit der gerade ermittelten Blockhöhe und der Liste aller Bezahl-IDs in deinem System  
+* Speichere die momentane Blockhöhe als zuletzt gescannte Höhe  
+* Entferne Duplikate basierend auf Transaktionshashes, die wir bereits empfangen und verarbeitet haben  
                            
 </div>
                     </div>
