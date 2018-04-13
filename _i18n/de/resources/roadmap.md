@@ -4,15 +4,15 @@
     <div class="row">
        <div class="col-xs-4">
             <li class="completed"></li>
-            <p>Completed task</p>
+            <p>Fertig</p>
        </div>
        <div class="col-xs-4">
             <li class="ongoing"></li>
-            <p>Ongoing task</p>
+            <p>Im Gange</p>
        </div>
        <div class="col-xs-4">
             <li class="upcoming"></li>
-            <p>Upcoming task</p>
+            <p>Anstehend</p>
        </div>
     </div>
 </div>
