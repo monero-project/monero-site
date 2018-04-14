@@ -2,8 +2,9 @@ langs:
   en: English
   es: Español
   de: Deutsch
-  it: Italian
-  pl: Polish
+  it: Italiano
+  pl: Polski
+  fr: Français
 
 global:
   date: '%Y/%m/%d'
