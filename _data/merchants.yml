@@ -129,6 +129,8 @@
       url: http://www.nestorgames.com
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
+    - name: Offline Monero multisig address generator
+      url: https://www.cryptocurrencytools.org/
 - category: Services
   id: services
   merchants:
