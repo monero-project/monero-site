@@ -1,6 +1,6 @@
 ## Système d'exploitations : Différentes versions de Linux et Windows 7, 8
 
-### Logiciel de portefeuille : Simplewallet
+### application de portefeuille : Simplewallet
 
 #### Ressource pour la création d'un disque bootable : [Linux](http://www.pendrivelinux.com/), [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 

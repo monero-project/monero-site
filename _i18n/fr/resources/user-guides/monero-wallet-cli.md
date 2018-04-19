@@ -1,6 +1,6 @@
 # monero-wallet-cli
 
-`monero-wallet-cli` est un logiciel de portefeuille qui est fournit dans la suite Monero. C'est un
+`monero-wallet-cli` est une application de portefeuille qui est incluse dans la suite Monero. C'est un
 programme en ligne de commandes qui permet de gérer un compte. Tandis que le portefeuille Bitcoin
 gère à la fois un compte et la chaîne de bloc, Monero sépare ces deux composants : `monerod`
 s'occupe de la chaîne de blocs, et `monero-wallet-cli` gère le compte.
@@ -10,7 +10,7 @@ Ce guide montrera comment effectuer diverses opération depuis l'interface de `m
 
 ## Vérifier votre solde
 
-Dans la mesure ou la gestion de la chaîne de blocs et le portefeuille sont des logiciels séparés,
+Dans la mesure ou la gestion de la chaîne de blocs et le portefeuille sont des applications séparées,
 de nombreux usages de `monero-wallet-cli` implique de fonctionner avec le démon. Incluant la
 vérifications des transactions entrantes sur votre adresse. Une fois que `monero-wallet-cli` et
 `monerod` sont tous deux en cours d'exécution, entrez `balance`.

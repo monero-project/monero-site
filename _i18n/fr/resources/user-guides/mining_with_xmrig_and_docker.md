@@ -1,8 +1,8 @@
 ## Introduction
 
-Ce guide a deux volets, la simplicité de l'extraction minière sur une distribution Linux et quelques pratique de sécurité autour de l'extraction minière, dans la mesure ou la plupart de ces logiciels d'extraction minière n'ont pas subits d'audit de sécurité.
+Ce guide a deux volets, la simplicité de l'extraction minière sur une distribution Linux et quelques pratique de sécurité autour de l'extraction minière, dans la mesure ou la plupart de ces applications d'extraction minière n'ont pas subits d'audit de sécurité.
 
-A l'issue de ce guide vous pourrez dormir tranquille en sachant que si le mineur se trouve exploité, celà n'affectera pas votre OS.
+A l'issue de ce guide vous pourrez dormir tranquille en sachant que si le mineur se trouve exploité, cela n'affectera pas votre OS.
 
 ### pourquoi Docker
 

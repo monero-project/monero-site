@@ -17,7 +17,7 @@ Il s'agit d'une approche plus sûre que d'autres solutions routant les appels de
 
 ## 2. Dans la machine virtuelle applicative `monerod-ws`:
 
-+ Télécharger, vérifier et installer le logiciel Monero.
++ Télécharger, vérifier et installer l'application Monero.
 
 ```
 user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "https://getmonero.org/downloads/hashes.txt"
