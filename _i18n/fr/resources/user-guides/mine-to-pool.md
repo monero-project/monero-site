@@ -7,7 +7,7 @@ maintenir la décentralisation du réseau.
 
 # Choisir un mineur
 
-Tout comme pour les pools, il y a de nombreuses applications d'extraction minière parmi lesquels
+Tout comme pour les pools, il y a de nombreuses applications d'extraction minière parmi lesquelles
 choisir. Celle que vous sélectionnerez dépendra du matériel sur lequel vous aller
 miner. Ce guide va se concentrer sur un mineur pour CPU, et utilisera
 [xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). Alternativement, vous
