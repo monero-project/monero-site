@@ -11,11 +11,11 @@
                 </div>
 <div class="row start-xs monero-project" markdown="1">
 
-The Kovri project uses end-to-end encryption so that neither the sender nor receiver of a Monero transaction need to reveal their IP address to the other side or to third-party observers (the blockchain). This is done using the same technology that powers the dark net, i2p (Invisible Internet Protocol). The project is currently in heavy, active development and is not yet integrated with Monero.
+Das Kovri Projekt verwendet Ende-zu-Ende-Verschlüsselung, sodass weder der Sender, noch der Empfänger einer Monero Transaktion ihre IP Adresse der jeweils anderen Seite oder einer dritten Partei (der Blockchain) offenlegen müssen. Dies wird durch die gleiche Technologie ermöglicht, die auch im Dark Net oder bei i2p (Invisible Internet Protocol) Verwendung findet. Das Projekt ist momentan in aktiver Entwicklung und ist noch nicht in Monero integriert.
 
 </div>
     <div class="row center-xs">
-        <p><a href="https://www.getkovri.org" class="btn-link btn-fixed">Visit Kovri Website</a></p>
+        <p><a href="https://www.getkovri.org" class="btn-link btn-fixed">Besuche die Kovri Website</a></p>
     </div>
             </div>
         </div>
@@ -28,14 +28,14 @@ The Kovri project uses end-to-end encryption so that neither the sender nor rece
                 </div>
 <div class="row start-xs monero-project" markdown="1">
 
-The OpenAlias project simplifies cryptocurrency payments by providing FQDNs (Fully Qualified Domain Names, i.e. example.openalias.org) for Monero wallet addresses in a way that ensures everyone's privacy is secure. The project is well underway and has already been implemented in many Monero wallets.
+Das OpenAlias Projekt vereinfacht Bezahlungen mit Kryptowährungen durch die Bereitstellung von FQDNs (Fully Qualified Domain Names, z.B. example.openalias.org) als Monero Adressen in einer Art und Weise, dass die Privatsphäre eines jeden geschützt bleibt. Das Projekt ist im vollen Gange und wurde bereits in vielen Monero Wallets implementiert.
 
 
 
 </div>
 
     <div class="row center-xs">
-        <p><a href="https://www.openalias.org" class="btn-link btn-fixed">Visit OpenAlias Website</a></p>
+        <p><a href="https://www.openalias.org" class="btn-link btn-fixed">Besuche die OpenAlias Website</a></p>
     </div>
 
             </div>
