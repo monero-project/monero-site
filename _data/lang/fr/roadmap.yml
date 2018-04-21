@@ -1,0 +1,109 @@
+- year: 2014
+  accomplishments:
+    - name: Lancé sur Bitcointalk
+      date: 2014-04-18
+      status: terminé
+    - name: Renommé de Bitmonero à Monero
+      date: 2014-04-23
+      status: terminé
+    - name: Rétablissement suite à une attaque par spam
+      date: 2014-09-04
+      status: terminé
+    - name: Publication des notes 1 et 2 du Laboratoire de Recherche Monero
+      date: 2014-09-12
+      status: terminé
+    - name: Publication de la note 3 du Laboratoire de Recherche Monero
+      date: 2014-09-25
+      status: terminé
+    - name: Publication de la version 0.8.8.6
+      date: 2014-12-08
+      status: terminé
+- year: 2015
+  accomplishments:
+    - name: Publication de la note 4 du Laboratoire de Recherche Monero
+      date: 2015-01-26
+      status: terminé
+- year: 2016
+  accomplishments:
+    - name: Publication de la version 0.9.0 Hydrogen Helix
+      date: 2016-01-01
+      status: terminé
+    - name: Publication de la note 5 du Laboratoire de Recherche Monero
+      date: 2016-02-10
+      status: terminé
+    - name: Hardfork pour imposer un ringsize minimum de 3 pour toutes les transactions
+      date: 2016-03-22
+      status: terminé
+    - name: Publication de la version 0.10.0 Wolfram Warptangent
+      date: 2016-09-18
+      status: terminé
+    - name: Hardfork pour séparer la coinbase en dénominations
+      date: 2016-09-21
+      status: terminé
+    - name: Publication de la version 0.10.1 Wolfram Warptangent
+      date: 2016-12-14
+      status: terminé
+    - name: Publication de la Beta 1 de la GUI officielle
+      date: 2016-12-22
+      status: terminé
+- year: 2017
+  accomplishments:
+    - name: Hardfork pour activer les transactions RingCT
+      date: 2017-01-05
+      status: terminé
+    - name: Publication de la version 0.10.2; Correction d'une vulnérabilité critique
+      date: 2017-02-22
+      status: terminé
+    - name: Publication de la version 0.10.3.1 Wolfram Warptangent
+      date: 2017-03-27
+      status: terminé
+    - name: Hardfork pour ajuster les algorithmes de frais dynamiques et la taille minimal de block
+      date: 2017-04-15
+      status: terminé
+    - name: Refonte du site Web
+      date: 2017-07-04
+      status: terminé
+    - name: Publication de la version 0.11.0.0 Helium Hydra
+      date: 2017-09-07
+      status: terminé
+    - name: Fluffy blocks
+      date: 2017-09-07
+      status: terminé
+    - name: Sortie de beta de la GUI
+      date: 2017-09-10
+      status: terminé
+    - name: Hardfork pour augmenter la ringsize minimal à 5 et imposer les transactions RingCT
+      date: 2017-09-15
+      status: terminé
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: terminé
+    - name: Fluffy blocks
+      date:
+      status: en cours
+    - name: Portage de la GUI sur android
+      date:
+      status: en cours
+    - name: Refonte du Forum Funding System
+      date:
+      status: en cours
+    - name: Sous-adresses
+      date:
+      status: en cours
+    - name: Multi-signatures (multisig)
+      date:
+      status: en cours
+    - name: Version alpha de Kovri
+      date:
+      status: à venir
+- year: 2018
+  accomplishments:
+    - name: Notes de recherches MRL additionnelles
+      date:
+      status: à venir
+    - name: Solutions de seconde couche pour la vitesse et la capacité d'expension
+      date:
+      status: à venir
+    - name: Range proofs plus efficaces pour RingCT pour réduire la taille des transactions
+      date:
+      status: à venir
