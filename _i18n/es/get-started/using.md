@@ -31,7 +31,9 @@
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Existe una gran comunidad de soporte que te ayudará en caso de experimentar cualquier dificultad. Accede a esta página para ampliar información <a href="{{site.baseurl}}/community/hangouts/">Hangouts</a>.</p>
+                        <p>Existe una gran comunidad de soporte que te ayudará en caso de experimentar cualquier dificultad.
+                        Accede a la página de <a href="{{site.baseurl}}/community/hangouts/">Hangouts</a> para ampliar información.
+                        </p>    
                     </div>
                 </div>
             </div>
