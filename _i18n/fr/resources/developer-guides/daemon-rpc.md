@@ -86,7 +86,7 @@ Look up a block's hash by its height.
 Inputs:
 
 * block height (int array of length 1)
-  
+
 Outputs:
 
 * block hash (string)
@@ -255,7 +255,7 @@ Outputs:
 
 * *block_header* - A structure containing block header information. See [getlastblockheader](#getlastblockheader).
 
-In this example, block 912345 is looked up by its height (notice that the returned information is the save as in the previous example):
+In this example, block 912345 is looked up by its height (notice that the returned information is the same as in the previous example):
 
 ```
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyheight","params":{"height":912345}}' -H 'Content-Type: application/json'
@@ -310,8 +310,8 @@ Outputs:
         * *height* - This block height, a.k.a. when the coinbase is generated.
     * *vout* - List of transaction outputs. Each output contains:
       * *amount* - The amount of the output, in atomic units.
-      * *target* - 
-        * *key* - 
+      * *target* -
+        * *key* -
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 byte/64 character hex string.
     * *signatures* - Contain signatures of tx signers. Coinbased txs do not have signatures.
   * *tx_hashes* - List of hashes of non-coinbase transactions in the block. If there are no other transactions, this will be an empty list.
@@ -544,7 +544,7 @@ Inputs:
   * *ip* - unsigned int; IP address to ban, in Int format.
   * *ban* - boolean; Set `true` to ban.
   * *seconds* - unsigned int; Number of seconds to ban node.
-  
+
 Outputs:
 
 * *status* - string; General RPC error code. "OK" means everything looks good.
@@ -622,7 +622,7 @@ Inputs: *None*.
 
 Outputs:
 
-* *height* - unsigned int; Current length of longest chain known to daemon. 
+* *height* - unsigned int; Current length of longest chain known to daemon.
 
 ```
 $ curl -X POST http://127.0.0.1:18081/getheight -H 'Content-Type: application/json'
@@ -660,7 +660,7 @@ Outputs:
     * *target* - Output destination information:
       * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
   * *extra* - Usually called the "payment ID" but can be used to include any random 32 bytes.
-  * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+  * *signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
 Example 1: Return transaction information in binary format.
 
 ```
@@ -730,7 +730,7 @@ Outputs:
 * *low_mixin* - boolean; Mixin count is too low (`true`) or OK (`false`).
 * *not_rct* - boolean; Transaction is not a ring transaction (`true`) or a ring transaction (`false`).
 * *not_relayed* - boolean; Transaction was not relayed (`true`) or relayed (`false`).
-* *overspend* - boolean; Transaction uses more money than available (`true`) or not (`false`). 
+* *overspend* - boolean; Transaction uses more money than available (`true`) or not (`false`).
 * *reason* - string; Additional information. Currently empty or "Not relayed" if transaction was accepted but not relayed.
 * *too_big* - boolean; Transaction size is too big (`true`) or OK (`false`).
 
@@ -778,7 +778,7 @@ Outputs:
       * *target* - Output destination information:
         * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
-    * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+    * *signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
 
 Example (Note: Some lists in the returned information have been truncated for display reasons):
 

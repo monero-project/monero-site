@@ -255,7 +255,7 @@ Outputs:
 
 * *block_header* - A structure containing block header information. See [getlastblockheader](#getlastblockheader).
 
-In this example, block 912345 is looked up by its height (notice that the returned information is the save as in the previous example):
+In this example, block 912345 is looked up by its height (notice that the returned information is the same as in the previous example):
 
 ```
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyheight","params":{"height":912345}}' -H 'Content-Type: application/json'
@@ -660,7 +660,7 @@ Outputs:
     * *target* - Output destination information:
       * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
   * *extra* - Usually called the "payment ID" but can be used to include any random 32 bytes.
-  * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+  * *signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
 Example 1: Return transaction information in binary format.
 
 ```
@@ -778,7 +778,7 @@ Outputs:
       * *target* - Output destination information:
         * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
-    * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+    * *signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
 
 Example (Note: Some lists in the returned information have been truncated for display reasons):
 
