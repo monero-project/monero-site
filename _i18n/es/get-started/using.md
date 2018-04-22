@@ -87,7 +87,7 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>6. transacciones con Monero</h2>
+                            <h2>6. Transacciones con Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
