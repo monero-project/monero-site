@@ -41,11 +41,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>3. Crea una cartera (Wallet)</h2>
+                            <h2>3. Crea un monedero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Necesitarás una cartera compatible con Monero para guardar tus fondos. En la página de <a href="{{site.baseurl}}/downloads/">Descargas</a> encontrarás una lista de monederos.</p>
+                        <p>Necesitarás un monedero compatible con Monero para guardar tus fondos. En la página de <a href="{{site.baseurl}}/downloads/">Descargas</a> encontrarás una lista de monederos.</p>
                     </div>
                 </div>
             </div>
