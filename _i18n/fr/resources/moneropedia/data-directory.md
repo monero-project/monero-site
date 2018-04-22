@@ -1,14 +1,13 @@
 ---
-entry: "Data Directory"
+entry: "Répertoire de Données"
 tags: ["kovri"]
-terms: ["Data-Directory"]
-summary: "Where essential kovri data for runtime is stored"
+terms: ["Data-Directory", "répertoire-de-données"]
+summary: "Où les données essentielles pour l'exécution de kovri sont stockées."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Depending on your OS, @Kovri currently stores all run-time data in the following directory:
+Dépendamment de votre OS, @Kovri stocke toutes les données pour son fonctionnement dans le répertoire suivant :
 
 - Linux/FreeBSD:
   - `$HOME/.kovri`
@@ -19,4 +18,4 @@ Depending on your OS, @Kovri currently stores all run-time data in the following
 - Windows:
   - `"$APPDATA"\\Kovri`
 
-This includes all configuration files, @address-book, certificates, and resources.
+Cela inclus tous les fichiers de configuration, @carnet-d'adresses, certificats et ressources.

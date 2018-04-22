@@ -1,16 +1,15 @@
 ---
-entry: "Block"
-terms: ["block", "blocks"]
-summary: "a container of transactions, a sequence of which forms a blockchain"
+entry: "Bloc"
+terms: ["block", "blocks", "bloc", "blocs"]
+summary: "Un conteneur de transactions, dont une séquence forme une chaîne de blocs."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A block is a container of @transactions, with a new block being added to the @blockchain once every 2 minutes (see constant `DIFFICULTY_TARGET_V2` defined as 120 seconds), on average.
+Un bloc est un conteneur de @transactions, avec l'ajout d'un nouveau bloc à la @chaîne-de-blocs en moyenne toutes les 2 minutes (voir la constante `DIFFICULTY_TARGET_V2` définit à 120 secondes).
 
-Blocks also contain a special type of transaction, the @coinbase-transaction, which add newly created Monero to the network.
+Les blocs contiennent également un type particulier de transactions, la @transaction-de-la-base-de-la-pièce, qui ajoute des Moneroj nouvellement créés au réseau.
 
-Blocks are created through the process of @mining, and the @node that successfully mines the block then broadcasts it to each of the @nodes connected to it, who subsequently re-broadcast the block until the entire Monero network has received it.
+Les blocs sont créés à travers le processus d'@extraction-minière, et le @nœud qui a miné le bloc avec succès le diffuse alors à tous les @nœuds auquels il est connecté, qui rediffuseront ensuite ce bloc jusqu'à ce que la totalité du réseau l'ait reçu.
 
-Fake or bad blocks generally cannot be created, as @nodes that receive blocks always verify the @transactions they contain against a set of consensus rules that all nodes adhere to, including validating the cryptographic @signatures on each transaction.
+De faux ou mauvais blocs ne peuvent généralement pas être créés, dans la mesure ou les @nœuds recevant les blocs vérifient toujours les @transactions qu'ils contiennent vis-à-vis d'un certain nombre de règles de consensus auxquelles tous les nœuds adhèrent, incluant la validation des @signatures cryptographiques de chaque transaction.

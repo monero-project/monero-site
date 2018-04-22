@@ -1,27 +1,26 @@
 ---
-entry: "Base32 address"
+entry: "Adresse Base32"
 tags: ["kovri"]
-terms: ["Base32-address", "Base32-addresses"]
-summary: "Base32 encoded hash of a Base64 address"
+terms: ["Base32-address", "Base32-addresses", "adresse-Base32", "adresses-Base32"]
+summary: "Hachage encodé en Base32 d'une adresse Base64"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A Base32 address is a shortened, encoded version of an @I2P address. The Base32 address is the first part in a `.b32.i2p` hostname.
+Une adresse Base32 est une version encodée, plus courte, d'une adresse @I2P. L'adresse Base32 est la première partie d'un nom d'hôte `.b32.i2p`.
 
-Example:
+Exemple :
 
 `i35yftyyb22xhcvghmev46t5knefur5v66qzekkajatwfwhyklvq.b32.i2p`
 
-where
+où
 
-`i35yftyyb22xhcvghmev46t5knefur5v66qzekkajatwfwhyklvq` is the Base32 address.
+`i35yftyyb22xhcvghmev46t5knefur5v66qzekkajatwfwhyklvq` est l'adresse Base32.
 
-### In-depth Information
+### Informations détaillées
 
-Ultimately, a Base32 address is a 52 character [Base32 encoded representation](https://en.wikipedia.org/wiki/Base32) of the full SHA-256 hash of an @I2P @base64-address.
+Finalement, une adresse Base32 est une chaîne de 52 caractères [représentation encodée en Base32](https://en.wikipedia.org/wiki/Base32) du hachage SHA-256 complet d'une @adresse-Base64 @I2P.
 
-### Notes
+### Remarques
 
-**Note: `.b32` is not a sub-domain of `.i2p`**
+**Remarque : `.b32` n'est pas un sous-domaine de `.i2p`**

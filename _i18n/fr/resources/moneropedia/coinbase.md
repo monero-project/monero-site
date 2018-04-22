@@ -1,10 +1,9 @@
 ---
-entry: "Coinbase Transaction"
-terms: ["coinbase-transaction"]
-summary: "a special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work"
+entry: "Transaction de la base de la pièce"
+terms: ["coinbase-transaction", "transaction-de-la-base-de-la-pièce"]
+summary: "Une transaction particulière, incluse dans chaque bloc, qui contient un petit montant de Moneroj envoyé au mineur en récompense pour son travail d'extraction minière."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work.
+Une transaction particulière, incluse dans chaque bloc, qui contient un petit montant de Moneroj envoyé au mineur en récompense pour son travail d'extraction minière.

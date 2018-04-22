@@ -1,25 +1,24 @@
 ---
-entry: "Lease-Set"
+entry: "Lot-de-baux"
 tags: ["kovri"]
-terms: ["LeaseSet", "LeaseSets"]
-summary: "Contains all currently authorized Leases for a particular I2P Destination"
+terms: ["LeaseSet", "LeaseSets", "lot-de-baux", "lots-de-baux"]
+summary: "Contient tous les baux actuellement autorisés pour une destination I2P spécifique"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A Lease-Set contains a set of authorized @leases (and other related information) for a particular @destination.
+Un Lot de baux contient un lot de @baux autorisés (et d'autres informations liés) pour une @destination spécifique.
 
-### In-depth information
+### Informations détaillées
 
-A Lease-Set contains:
+Un lot de baux contient :
 
-- all of the currently authorized @leases for a particular @destination
-- the public key to which garlic messages can be encrypted (see @garlic-routing)
-- the signing public key that can be used to revoke this particular version of the structure
+- Tous les baux actuellement autorisés pour une @destination spécifique
+- La clef publique avec laquelle les messages en ail sont chiffrés (voir @routage-en-ail)
+- La clef de signature publique qui peut être utilisée pour révoquer cette version spécifique de la structure
 
-The Lease-Set is one of the two structures stored in the @network-database (the other being @router-info), and is keyed under the SHA256 of the contained @destination.
+Le lot de baux est l'une des deux structures stockées dans la @base-de-donnée-réseau (l'autre étant les @infos-des-routeurs), et verrouillé dans le SHA256 de la @destination en question.
 
-### Notes
+### Remarque
 
-For further details, read @Java-I2P's [LeaseSet](https://geti2p.net/en/docs/how/network-database#leaseSet)
+Pour plus de détail, lisez le [lot de baux](https://geti2p.net/fr/docs/how/network-database#leaseSet) d'@I2P-Java.

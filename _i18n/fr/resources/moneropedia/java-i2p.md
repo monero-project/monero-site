@@ -1,15 +1,14 @@
 ---
 entry: "Java I2P"
 tags: ["kovri"]
-terms: ["Java-I2P"]
-summary: "The original implementation of I2P - written in Java"
+terms: ["Java-I2P", "I2P-Java"]
+summary: "L'implémentation originelle d'I2P - écrite en Java"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-The term "Java I2P" is often used to describe the original @I2P implementation currently most known and used today. There are various other @I2P implementations, including @Kovri; all of which look up to the original Java implementation.
+Le terme "Java I2P" est souvent utilisé pour décrire l'implémentation originelle d'@I2P, actuellement la plus connue et la plus utilisée. Il y a de nombreuses autres implémentations d'@I2P, incluant @Kovri. Elles cherchent toutes à améliorer l'implémentation Java originelle.
 
-### Notes
+### Remarque
 
-To download/learn more about the Java implementation, visit their [website](https://geti2p.net/).
+Pour télécharger l'implémentation Java ou en apprendre plus, visitez leur [site web](https://geti2p.net/fr/).

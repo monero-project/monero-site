@@ -1,15 +1,14 @@
 ---
-entry: "In-net"
+entry: "Interne au réseau"
 tags: ["kovri"]
-terms: ["In-net"]
-summary: "Within the I2P network"
+terms: ["In-net", "interne-au-réseau", "internes-au-réseau"]
+summary: "Au sein du réseau I2P"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-**In-net** is a [colloquial](https://en.wikipedia.org/wiki/Colloquial) term of which describes activities, protocols, or functionality that exist *only* within the @I2P network.
+**Interne au réseau** est un terme [courant](https://fr.wikipedia.org/wiki/Registre_de_langue) qui décrit les activités, protocoles, ou fonctionnalités qui n'existent *que* sur le réseau @I2P.
 
-### In-depth information
+### Informations détaillées
 
-Example: *in-net download* would be defined as downloading *only* within @I2P.
+Exemple : *téléchargement interne au réseau* serait définit comme télécharger *uniquement* au sein d'@I2P.

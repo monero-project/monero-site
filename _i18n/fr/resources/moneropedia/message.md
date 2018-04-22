@@ -2,32 +2,31 @@
 entry: "Message"
 tags: ["kovri"]
 terms: ["Message", "Messages"]
-summary: "The mechanisms in which information travels within I2P"
+summary: "Le mécanisme à travers lequel les informations circulent au sein d'I2P"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-*Messages* (which exist on top of the @transports layer), contain varying types of information that are needed for the network but, most importantly, everything you see, do, send, or receive, will come and go in the form of *messages*.
+Les *Messages* (qui existent au dessus de la couche @transport) contiennent différents types d'informations qui sont necessaries au réseau, mais surtout, tout ce que vous voyez, faites, envoyez ou recevez sera reçu et envoyé sous la forme de *messages*.
 
-There are 2 essential types of *messages* in @I2P:
+Il y a essentiellement deux types de *messages* dans @I2P :
 
-- @Tunnel messages
-- @I2NP messages
+- les messages de @tunnels
+- les messages @I2NP
 
-Essentially: *@tunnel messages* **contain** @I2NP **message fragments** which are then [reassembled](https://geti2p.net/en/docs/tunnels/implementation) at certain points within a @tunnel's path.
+En substance : les *messages de @tunnel* **contiennent** des **fragments de message** @I2NP qui sont [réassemblés](https://geti2p.net/fr/docs/tunnels/implementation) à certains point du chemin du @tunnel.
 
-### In-depth information
+### Informations détaillées
 
-@I2NP messages have a close relationship with @tunnel @messages so it is easy to get the term *messages* confused when reading @Java-I2P specifications:
+Les messages @I2NP ont un lien étroit avec les @messages de @tunnels au point qu'il est facile de confondre les termes @messages en lisant les spécifications @I2P-Java :
 
 >
-1. First, the tunnel gateway accumulates a number of I2NP messages and preprocesses them into tunnel messages for delivery.
-2. Next, that gateway encrypts that preprocessed data, then forwards it to the first hop.
-3. That peer, and subsequent tunnel participants, unwrap a layer of the encryption, verifying that it isn't a duplicate, then forward it on to the next peer.
-4. Eventually, the tunnel messages arrive at the endpoint where the I2NP messages originally bundled by the gateway are reassembled and forwarded on as requested.
+1. D'abord, la passerelle du tunnel accumule une quantité de messages I2NP et les prétraite dans des messages de tunnels pour distribution.
+2. Puis, cette passerelle chiffre les données prétraitées et les transmet au premier saut.
+3. Ce pair, et les participants suivant du tunnel, déballent une couche du chiffrement, vérifient qu'il ne s'agit pas d'un doublon, et transmettent le message au pair suivant.
+4. Finalement, les messages du tunnel arrivent au point de terminaison où les messages I2NP originellement empaquetés par la passerelle sont réassemblés et transmis comme demandé.
 
-### Notes
+### Remarques
 
-- @I2NP @messages need to be fragmented because they are variable in size (from 0 to almost 64 KB) and @tunnel @messages are fixed-size (approximately 1 KB).
-- For details and specifications, visit the [I2NP spec](https://geti2p.net/spec/i2np) and [Tunnel Message spec](https://geti2p.net/spec/tunnel-message)
+- Les @messages @I2NP doivent être fragmentés car ils ont une taille variable (de 0 à environt 64 Ko) et les @messages de @tunnels ont une taille fixe (environ 1 Ko).
+- Pour plus de détaille et les spécifications, rendez-vous sur les [spécifications I2NP](https://geti2p.net/spec/i2np) et les [spécifications de message de tunnel](https://geti2p.net/spec/tunnel-message)

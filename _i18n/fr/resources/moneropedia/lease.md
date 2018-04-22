@@ -1,15 +1,14 @@
 ---
-entry: "Lease"
+entry: "Bail"
 tags: ["kovri"]
-terms: ["Lease", "Leases"]
-summary: "Authorizes an I2P tunnel to receive messages targeting a destination"
+terms: ["Lease", "Leases", "bail", "baux"]
+summary: "Autorise un tunnel I2P à recevoir des messages ciblant une destination"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A lease defines the authorization for a particular @I2P @tunnel to receive a @messages targeting a @destination.
+Un bail définit les autorisations d'un @tunnel @I2P spécifique à recevoir des @messages ciblant une @destination.
 
-### In-depth information
+### Informations détaillées
 
-For further details, read @Java-I2P's [Lease](https://geti2p.net/spec/common-structures#lease)
+Pour plus de détails, lisez la page [Bail](https://geti2p.net/spec/common-structures#lease) de @I2P-Java

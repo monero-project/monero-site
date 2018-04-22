@@ -2,14 +2,13 @@
 entry: "Floodfill"
 tags: ["kovri"]
 terms: ["Floodfill"]
-summary: "An I2P router which maintains a distributed network-database"
+summary: "Un routeur I2P qui maintient une base de données réseau distribuée"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-By actively managing a distributed network-database, a router with *floodfill* capability has the ability to help maintain network stability and resiliancy while also being decentralized and trust-less.
+En gérant activement une base de donnée réseau distribuée, un routeur avec la capacité *floodfill* est en mesure d'aider au maintient de la stabilité et de la résilience du réseau tout en étant également décentralisé et sans nécessité de confiance.
 
-### In-depth information
+### Informations détaillées
 
-Though floodfill itself is a simple storage system, the technical underpinnings of floodfill as it relates to @network-database and other protocols within @I2P are much more complex. Visit the [Network Database](https://geti2p.net/en/docs/how/network-database) page for details.
+Bien que *floodfill* ne soit qu'un simple système de stockage, la technique sous-jacente est bien plus complexe car elle s'appuie sur la @base-de-données-réseau et autres protocoles d'@I2P. Rendez-vous sur la page [Base de données Réseau](https://geti2p.net/fr/docs/how/network-database) pour plus d'informations.

@@ -1,20 +1,19 @@
 ---
-entry: "Mnemonic Seed"
-terms: ["mnemonic-seed", "mnemonic"]
-summary: "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
+entry: "Phrase mnémonique"
+terms: ["mnemonic-seed", "mnemonic", "phrase-mnémonique", "mnémonique"]
+summary: "Une phrase de 13 ou 25 mots utilisé pour sauvegarder votre compte Monero, disponible dans une quantité de langues"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A 13 or 25 word phrase used to backup a Monero account, available in a number of languages. This 25-word phrase (13 words in the case of MyMonero) has all the information needed to view and spend funds from a Monero @account.
+Une phrase de 13 ou 25 mots utilisé pour sauvegarder votre compte Monero, disponible dans une quantité de langues. Cette phrase de 25 mots (13 mots dans le cas de MyMonero) a toutes les informations nécessaire pour voir et dépenser des fonds depuis un @compte Monero.
 
-### In-depth Information
+### Informations détaillées
 
-In the official wallet, the mnemonic seed comprises 25 words with the last word being used as a checksum. Those words correspond to a 256-bit integer, which is the account's *private* @spend-key. The *private* @view-key is derived by hashing the private spend key with Keccak-256, producing a second 256-bit integer. The corresponding *public* keys are then derived from the private keys.
+Dans le portefeuille officiel, la phrase mnémonique est composée de 25 mots dont le dernier est utilisé en tant que somme de contrôle. Ces mots correspondent à un entier de 256 bits, qui est la @clef-de-dépense *privée* du compte. La @clef-d'audit privée est dérivée par hachage de la clef de dépense via Keccak-256, produisant un second entier de 256 bits. Les clefs *publiques* correspondantes sont alors dérivées des clefs privées.
 
-By storing the 25 word mnemonic key in a secure location, you have a backup of your private keys and hence all of your Moneroj.  Sharing this 25 word key is the equivalent of allowing another person complete access to your funds.  
+En concervant la phrase mnémonique de 25 mots en lieu sûr, vous avez une sauvegarde de vos clefs privée et donc de tous vos Moneroj. Partager ces 25 mots clefs est équivalent à donner l'accès à vos fonds à une autre personne.
 
-It's not a good idea to store more than you want to lose in a "hot wallet" aka a wallet which is currently or has ever been connected to the internet or loaded onto any device that has or may in the future be connected to the internet or any untrusted source!
+Il n'est pas recommandé de conserver plus que vous ne voudriez perdre dans un "portefeuille chaud", c'est à dire un portefeuille actuellement ou qui a un jour été connecté à Internet ou chargé dans n'importe quel équipement qui a été ou pourrait être connecté à l'avenir à Internet ou à une quelconque source indigne de confiance !
 
-By creating a cold, or @paper-wallet you can safely store Moneroj.  
+En créant un portefeuille froid ou un @portefeuille-papier vous pouvez conserver vos Moneroj en toute sécurité.

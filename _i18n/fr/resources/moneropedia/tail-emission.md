@@ -1,16 +1,15 @@
 ---
-entry: "Tail Emission"
-terms: ["Tail-Emission"]
-summary: "the block reward at the end of the emission curve"
+entry: "Émission résiduelle"
+terms: ["Tail-Emission", "émission-résiduelle"]
+summary: "la récompense de bloc à l'issue de la courbe d'émission"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Monero block rewards will never drop to zero. Block rewards will gradually drop until tail emission commences at the end of May 2022. At this point, rewards will be fixed at 0.6 XMR per block.
+La récompense de bloc de Monero ne tombera jamais à zéro. La récompense de bloc va diminuer graduellement jusqu'à ce que l'émission résiduelle commence à la fin May 2022. A ce moment là, la récompense sera fixée à 0,6 XMR par bloc.
 
-### Why
+### Pourquoi ?
 
-Miners need an incentive to mine. Because of the dynamic blocksize, competition between @miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network.
+Les mineurs ont besoin d'une motivation pour miner. A cause de la taille de blocs dynamique, la compétition entre @mineurs fera diminuer les frais des transactions. Si l'extraction minière n'est pas profitable à cause d'un cout élevé et d'une faible récompense, les mineurs perdent leur motivation et arrêtent de miner, réduisant la sécurité du réseau.
 
-Tail emission ensures that a dynamic block size and fee market can develop.
+L'émission résiduelle garantit le développement de la taille de blocs dynamique et du marché des frais de transactions.

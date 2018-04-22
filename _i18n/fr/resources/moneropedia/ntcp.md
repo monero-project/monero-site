@@ -2,33 +2,32 @@
 entry: "NTCP"
 tags: ["kovri"]
 terms: ["NTCP"]
-summary: "NIO-Based TCP (Non-blocking I/O based TCP): one of two Kovri transports"
+summary: "NIO-Based TCP (TCP basé sur des E/S non-bloquantes) : l'un des transports de Kovri"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-*NIO-Based TCP (Non-blocking I/O based TCP)* is one of two encrypted @transports for @Kovri.
+*NIO-Based TCP (TCP basé sur des E/S non-bloquantes)* est l'un des deux @transports chiffrés de @Kovri.
 
-Similar to @SSU, @NTCP's *primary* purpose is to securely transmit @in-net @I2NP messages through @tunnels but, unlike @SSU, @NTCP functions solely over encrypted [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol).
+Tout comme @USS, la *principale* raison d'être de @NTCP est de transmettre de manière sécurisé les messages @I2NP @internes-au-réseaumais, contrairement à @USS, @NTCP fonctionne exclusivement sur du [TCP](https://fr.wikipedia.org/wiki/Transmission_Control_Protocol) chiffré.
 
-### In-depth information
+### Informations détaillées
 
- - Passes along individual @I2NP messages (both Standard and Time Sync) after:
-   - TCP has been established
-   - Establishment Sequence has been completed
- - Uses the following @encryption:
-   - 2048-bit [Diffie-Hellman](https://en.wikipedia.org/wiki/Diffie-hellman)
-   - [AES-256](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)/[CBC](https://en.wikipedia.org/wiki/Block_cipher_modes_of_operation)
- - Establishment Sequence has the following *states*:
-   - Pre-establishment
-   - Establishment
-   - Post-establishment or "Established"
- - Uses the following from the @network-database:
-   - Transport name: NTCP
-   - Host: IP (IPv4 or IPv6) or host name (shortened IPv6 address (with "::") is allowed)
-   - Port: 1024 - 65535
+- Passe sûr les messages @I2NP individuel (à la fois Standard et de synchronisation temporelle) après :
+   - l'établissement de TCP
+   - la finalisation de la séquence d'établissement
+- Utilise les @chiffrements suivants :
+   - [Diffie-Hellman](https://fr.wikipedia.org/wiki/%C3%89change_de_cl%C3%A9s_Diffie-Hellman) 2048 bits
+   - [AES-256](https://fr.wikipedia.org/wiki/Advanced_Encryption_Standard)/[CBC](https://fr.wikipedia.org/wiki/Mode_d%27op%C3%A9ration_(cryptographie))
+- La séquence d'établissement suit les *états* suivants :
+   - Pré-établissement
+   - Établissement
+   - Post-établissement ou "Établit"
+- Utilise de la @base-de-données-réseau :
+   - Nom du transport : NTCP
+   - Hôte : IP (IPv4 ou IPv6) ou nom d'hôte (adresses IPv6 raccourcies (avec "::") autorisées)
+   - Port : 1024 - 65535
 
-### Notes
+### Remarque
 
-For further details, read @Java-I2P's [NTCP](https://geti2p.net/en/docs/transport/ntcp)
+Pour plus de détails, lisez [NTCP](https://geti2p.net/fr/docs/transport/ntcp) de @I2P-Java.
