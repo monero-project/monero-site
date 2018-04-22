@@ -1,16 +1,15 @@
 ---
-entry: "Change"
-terms: ["change"]
-summary: "Monero sent as part of a transaction, that returns to your account instead of going to another recipient"
+entry: "Monnaie"
+terms: ["change", "monnaie"]
+summary: "Moneroj envoyés lors d'une transaction, qui reviennent dans votre compte au lieu d'être envoyés à un autre destinataire."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Monero sent as part of a transaction, that returns to your account instead of going to another recipient.
+Moneroj envoyés lors d'une transaction, qui reviennent dans votre compte au lieu d'être envoyés à un autre destinataire.
 
-### More Information
+### Informations détaillées
 
-The @wallet in the Monero software makes change automatically, but when you send a transaction, you are taking an input that you control and telling the Monero network what to do with it. The input is a "deposit" to your account that you are able to spend. Outputs are the part of the transaction that tells the Monero network where to send the funds.
+Le @portefeuille de l'application Monero rends la monnaie automatiquement, mais lorsque vous envoyez une transaction, vous prenez une entrée que vous contrôlez et dites au réseau Monero quoi faire avec. L'entrée est un "dépôt" sur votre compte que vous avez le droit de dépenser. Les sorties sont les portions de la transaction qui disent au réseau Monero où envoyer les fonds.
 
-You might have multiple inputs in your account, in many different denominations (For example: you deposited 0.5 XMR on Friday, and 0.75 XMR on Saturday). So, when have a transaction with an input of 0.5 XMR, but you only want to send 0.1 XMR, your transaction will include a fee to pay the @miner, an output for 0.1 XMR to send to the recipient, and the rest that you want to send back to yourself will be an output back to you (this is called "change"). Once the transaction is completed, the change becomes available to you as an input that you can again split and send with a new transaction.
+Vous pourriez avoir de multiples entrées dans votre compte, de multiples valeurs (par exemple : vous avez déposé 0,5 XMR vendredi, et 0,75 XMR samedi). Donc, lorsque vous avez une transaction avec une entrée de 0,5 XMR, mais que vous ne voulez envoyer que 0,1 XMR, votre transaction va inclure des frais à payer au @mineur, une sorti de 0,1 XMR à envoyer au destinataire, et le reste qui devra vous être rendu (c'est appelé de la "monnaie"). Une fois la transaction terminée, la monnaie devient disponible en tant qu'entrée que vous pourrez de nouveau fractionner lors d'une nouvelle transaction.

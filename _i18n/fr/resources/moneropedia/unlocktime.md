@@ -1,14 +1,13 @@
 ---
-entry: "Transaction Unlock Time"
-terms: ["unlock-time"]
-summary: "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
+entry: "Durée de déverrouillage d'une transaction"
+terms: ["unlock-time", "durée-de-déverrouillage"]
+summary: "une transaction spécifique où le destinataire ne peut dépenser les fonds qu'à une date ultérieure, définie par l'émetteur"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A special transaction where the recipient can only spend the funds after a future date, as set by the sender.
+Une transaction spécifique où le destinataire ne peut dépenser les fonds qu'à une date ultérieure, définie par l'émetteur.
 
-Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time.
+La durée de déverrouillage vous autorise à envoyer une transaction à quelqu'un de sorte qu'il ne pourra dépenser le montant reçu qu'après un certain nombre de blocs, ou après un certain temps.
 
-Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.it/wiki/NLockTime), in which the transaction is not valid until the given time.
+Remarquez que cela fonctionne différemment du [nLockTime](https://en.bitcoin.it/wiki/NLockTime) de Bitcoin dans lequel une transaction n'est pas valide avant le temps indiqué.

@@ -1,16 +1,16 @@
 ---
-entry: "Mining"
-terms: ["mining", "miner", "miners"]
-summary: "the process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain"
+entry: "Extraction minière"
+terms: ["mining", "miner", "miners", "extraction-minière", "mineur", "mineurs"]
+summary: "Le processus de calcul cryptographique d'une preuve mathématique pour un bloc, contenant une quantité de transactions, qui sont alors ajoutés à la chaîne de blocs"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-The process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain.
 
-Mining is the distributed process of confirming transactions on the public ledger of all transactions, aka @blockchain.  Monero nodes use the blockchain to distinguish legitimate transactions from attempts to re-spend coins that have already been spent elsewhere.
+Le processus de calcul cryptographique d'une preuve mathématique pour un bloc, contenant une quantité de transactions, qui sont alors ajoutés à la chaîne de blocs.
 
-Monero is powered strictly by Proof of Work. It employs a mining algorithm that has the potential to be efficiently tasked to billions of existing devices (any modern x86 CPU and many GPUs). Monero uses a variant of CryptoNight Proof of Work (PoW) algorithm, which is designed for use in ordinary CPUs and GPUs.
+L'extraction minière est le processus distribué confirmant les transactions sur le registre publique de toutes les transactions, c'est à dire la chaîne de blocs. Les nœuds Monero utilisent la chaîne de blocs pour différencier les transactions légitimes des tentative de re-dépense des pièces qui ont déjà été dépensées ailleurs.
 
-The smart mining feature allows transparent CPU mining on the user's computer, far from the de facto centralization of mining farms and pool mining, pursuing Satoshi Nakamoto's original vision of a true P2P currency.
+Monero est alimenté uniquement par Preuve de Travail. Il utilise un algorithm d'extraction minière qui a le potentiel pour être exécuté efficacement par des milliards d'équipement existant (tous les processeurs x86 modernes et de nombreux processeurs graphiques). Monero utilise une variante de l'algorithme de preuve de travail CryptoNight, qui est conçu pour une utilisation sur des CPUs et GPUs ordinaires.
+
+La fonctionnalité d'extraction minière intelligente permet une extraction minière transparente sur l'ordinateur de l'utilisateur, loin de la centralisation de facto des fermes et pool d'extractions minières, poursuivant ainsi la vision originelle d'une vrai monnaie pair-à-pair de Satoshi Nakamoto.

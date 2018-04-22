@@ -2,19 +2,18 @@
 entry: "Transports"
 tags: ["kovri"]
 terms: ["Transports", "Transport"]
-summary: "The two encrypted transport layers for Kovri"
+summary: "Les deux couches de transport chiffrées de Kovri"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-@I2P comes with two encrypted transport layer technologies that allow @Kovri to securely use [TCP/IP](https://en.wikipedia.org/wiki/Tcp/ip) connections. These technologies (@SSU and @NTCP) are called *@transports*.
+@I2P contient deux technologies de couches de transport qui permettent à @Kovri d'utiliser des connexions [TCP/IP](https://fr.wikipedia.org/wiki/Tcp/ip) en toute sécurité. Ces technologies (@USS et @NTCP) sont appelées *@transports*.
 
-### In-depth information
+### Informations détaillées
 
-@SSU is encrypted [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) and @NTCP is encrypted [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol). They provide @encryption at the [transport layer](https://en.wikipedia.org/wiki/Transport_layer) so higher level @messages can be sent through @tunnels across the @I2P network.
+@USS est de l'[UDP](https://fr.wikipedia.org/wiki/User_Datagram_Protocol) chiffré et @NTCP est du [TCP](https://fr.wikipedia.org/wiki/Transmission_Control_Protocol) chiffré. Ils fournissent le @chiffrement de la [couche de transport](https://fr.wikipedia.org/wiki/Couche_transport) afin que les @messages de niveau supérieur puissent être envoyés à travers les @tunnels sur le réseau @I2P.
 
-### Notes
+### Remarques
 
-- Read about @I2P's transports on the [Transport](https://geti2p.net/en/docs/transport) page
-- Read about the transports layer within the [OSI model](https://en.wikipedia.org/wiki/OSI_model)
+- Apprenez en plus à propos des transports d'@I2P sur la page [Transport](https://geti2p.net/fr/docs/transport)
+- Apprenez en plus à propos de la couche de transport au sein du [modèle OSI](https://fr.wikipedia.org/wiki/Mod%C3%A8le_OSI)

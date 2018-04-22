@@ -2,36 +2,35 @@
 entry: "Tunnel"
 tags: ["kovri"]
 terms: ["Tunnel", "Tunnels"]
-summary: "Uni-directional virtual paths that pass messages through a defined sequence of I2P routers"
+summary: "Chemins virtuels unidirectionnels qui transmettent les messages à travers une séquence de routeurs I2P définie"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-When you communicate over @I2P (visit an @eepsite / use a @garlic-service), you'll first need to connect to a peer by using @transports and then build virtual *tunnels*. These virtual tunnels are temporary, uni-directional paths that pass information through a defined sequence of @I2P routers to your @destination. Tunnels are built, and then used, with layered @garlic-encryption and are a general-purpose mechanism to transport all @I2NP @messages.
+Lorsque vous communiquez sur @I2P (visitez un @site-eep ou utilisez un @service-en-ail), vous commencez par vous connecter à un homologue en utilisant les @transports puis vous construisez des *tunnels* virtuels. Ces tunnels virtuels sont des chemins temporaires et unidirectionnels qui transmettent l'information vers votre @destination à travers une séquence définie de routeurs @I2P. Les tunnels sont construits, puis utilisés, avec le @chiffrement-en-ail par couche et sont un mécanisme générique de transports de tous les @messages @I2NP.
 
-Each peer builds, at a minimum, *two* uni-directional tunnels: one for **outbound traffic**, and one for **inbound traffic**. These tunnels are classified as either **inbound tunnels** (where @messages come toward the creator of the tunnel) or **outbound tunnels** (where the tunnel creator sends @messages away from the creator of the tunnel). Thus, *four* tunnels are required for a single round-trip @message and reply to your @destination (two for your, two for your destination).
+Chaque homologue construit, au minimum, *deux* tunnels unidirectionnels : un pour le **trafic sortant** et un pour le **trafic entrant**. Ces tunnels sont classés soit en tant que **tunnels entrants** (où les @messages arrivent en provenance du créateur du tunnel) ou en **tunnels sortants** (ou le créateur du tunnel envoie des @messages). Ainsi, *quatre* tunnels sont nécessaires pour un seul @message aller-retour et sa réponse à votre @destination (deux pour vous, deux pour votre destination).
 
-### In-depth information
+### Informations détaillées
 
-From @Java-I2P:
-
->
-Within I2P, @messages are passed in one direction through a virtual tunnel of peers, using whatever means are available to pass the @message on to the next hop. Messages arrive at the tunnel's gateway, get bundled up and/or fragmented into fixed-size @tunnel @messages, and are forwarded on to the next hop in the tunnel, which processes and verifies the validity of the @message and sends it on to the next hop, and so on, until it reaches the @tunnel endpoint. That endpoint takes the messages bundled up by the gateway and forwards them as instructed - either to another router, to another tunnel on another router, or locally.
+Traduit depuis @I2P-Java :
 
 >
-Tunnels all work the same, but can be segmented into two different groups - inbound tunnels and outbound tunnels. The inbound tunnels have an untrusted gateway which passes messages down towards the tunnel creator, which serves as the tunnel endpoint. For outbound tunnels, the tunnel creator serves as the gateway, passing messages out to the remote endpoint.
+Au sein d'I2P, les @messages sont transmis dans une direction à travers un tunnel virtuel d'homologues, en utilisant n'importe quel moyen disponible pour transmettre le @message au saut suivant. Les messages arrivent à la passerelle du tunnel, sont regroupés et/ou fragmentés en @messages de @tunnel à taille fixe, et sont transmis au prochain saut du tunnel, qui traite et vérifie la validité du @message et l'envoie au saut suivant, et ainsi de suite, jusqu'à ce qu'il atteigne le point de terminaison du @tunnel. Ce point de terminaison prend le message groupé par la passerelle et le transmet comme demandé, soit à un autre routeur, à un autre tunnel sur un autre routeur, ou localement.
 
 >
-The tunnel's creator selects exactly which peers will participate in the tunnel, and provides each with the necessary configuration data. They may have any number of hops. It is the intent to make it hard for either participants or third parties to determine the length of a tunnel, or even for colluding participants to determine whether they are a part of the same tunnel at all (barring the situation where colluding peers are next to each other in the tunnel).
-
-### Notes
-
-From @Java-I2P:
+Les tunnels fonctionnent tous de la même façon, mais peuvent être classés en deux groupes différents : les tunnels entrants et les tunnels sortants. Les tunnels entrants ont une passerelle non approuvé qui transmet les messages jusqu'au créateur du tunnel, qui sert de point de terminaison du tunnel. Pour les tunnels sortants, le créateur du tunnel sert de passerelle, transmettant les messages vers le point de terminaison distant.
 
 >
-@I2P is an inherently packet switched network, even with these tunnels, allowing it to take advantage of multiple tunnels running in parallel, increasing resilience and balancing load. Even though the tunnels within I2P bear a resemblance to a circuit switched network, everything within I2P is strictly message based - tunnels are merely accounting tricks to help organize the delivery of messages. No assumptions are made regarding reliability or ordering of messages, and retransmissions are left to higher levels (e.g. I2P's client layer streaming library).
+Le créateur du tunnel choisit précisément quels homologues vont participer au tunnel, et fournit à chacun les données de configuration nécessaires. Ils peuvent avoir n'importe quel nombre de sauts. C'est dans le but de rendre difficile aux participants et tierces parties de déterminer la longueur d'un tunnel, ou même pour des participants connivents de déterminer s'ils font ou non partie du même tunnel (sauf en cas de connivence entre homologues côte à côte dans le tunnel).
+
+### Remarque
+
+Traduit depuis @I2P-Java :
+
+>
+@I2P est intrinsèquement un réseau de commutation de paquet, même avec ces tunnels, permettant de tirer parti de multiples tunnels fonctionnant en parallèle en augmentant la résilience et la répartition de charge. Même si les tunnels au sein d'I2P se rapprochent d'un réseau à commutation de circuits, tout dans I2P est strictement basé sur les messages : les tunnels sont principalement des astuces de comptabilité qui aident à organiser la transmission des messages. Aucune hypothèse n'est faite quant à la fiabilité ou l'ordonnancement des messages, et le soin des retransmissions est laissé aux couches supérieures (p.ex. la librairie de diffusion de la couche client d'I2P).
 
 ### Documentation
 
-For specification and detailed documentation, visit the [Tunnel-Routing](https://geti2p.net/en/docs/how/tunnel-routing) and [Tunnel-Implementation](https://geti2p.net/en/docs/tunnels/implementation) page.
+Pour les spécifications et la documentation détaillée, rendez-vous sur les pages [Tunnel-Routing](https://geti2p.net/fr/docs/how/tunnel-routing) et [Tunnel-Implementation](https://geti2p.net/en/docs/tunnels/implementation).

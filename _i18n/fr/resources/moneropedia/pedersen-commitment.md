@@ -1,24 +1,23 @@
 ---
-entry: "Pedersen Commitment"
-terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments"]
-summary: "Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it"
+entry: "Engagement de Pedersen"
+terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments", "engagement", "engagements", "engagement-de-pedersen", "engagements-de-pedersen"]
+summary: "Les engagements de Pedersen sont des algorythmes de cryptographie qui permettent à un prouveur de s'engager sur une certaine valeur sans la révéler ou pouvoir la modifier"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it.
+Les engagements de Pedersen sont des algorythmes de cryptographie qui permettent à un prouveur de s'engager sur une certaine valeur sans la révéler ou pouvoir la modifier.
 
-When you spend Monero, the value of the inputs that you are spending and the value of the outputs you are sending are encrypted and opaque to everyone except the recipient of each of those outputs. Pedersen commitments allow you to send Monero without revealing the value of the transactions. Pedersen commitments also make it possible for people to verify that transactions on the blockchain are valid and not creating Monero out of thin air.
+Lorsque vous dépensez des Moneroj, la valeur des entrées que vous dépensez et la valeur des sorties que vous envoyez sont chiffrés et opaques pour tout le monde sauf le destinataire de chacune de ces sorties. Les engagements de Pedersen vous permettent d'envoyer des Moneroj sans révéler la valeur des transactions. Les engagements de Pedersen permettent également aux gens de vérifier que les transactions sur la chaîne de blocs sont valides et ne créent pas de Moneroj à partir de rien.
 
-### What It Means
+### Ce que cela signifie
 
-As long as the encrypted output amounts created, which include an output for the recipient and a change output back to the sender, and the unencrypted transaction fee is equal to the sum of the inputs that are being spent, it is a legitimate transaction and can be confirmed to not be creating Monero out of thin air.
+Tant que les montants de sortie chiffrés créés, qui comprennent une sortie pour le destinataire et une sortie de monnaie retournant à l'expéditeur, et que les frais de transaction non chiffrés sont égaux à la somme des entrées qui sont dépensées, il s'agit d'une transaction légitime et on peut confirmer qu'il n'y a pas de création de Moneroj à partir de rien.
 
-Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable. Pedersen commitments also mean that even the ratio of one input to another, or one output to another is undeterminable.
+Les engagements de Pedersen signifient que les sommes peuvent être vérifiées comme étant égales, mais la valeur en Moneroj de chacune des sommes et les valeurs individuelles en Moneroj des entrées et sorties sont indéterminables. Les engagements de Pedersen signifient également que même le ratio d'une entrée à une autre ou d'une sortie à une autre est indéterminable.
 
-It is unclear which inputs are really being spent as the ring signature lists both the real inputs being spent and decoy inputs, therefore you don't actually know which input Pedersen commitments need to be summed. That's okay, because the @RingCT ring signature only has to prove that for one combination of the inputs the outputs are equal to the sum of the inputs. For mathematical reasons, this is impossible to forge.
+L'entrée exacte étant dépensée n'est pas clair, car les signatures de cercle listent à la fois les entrées réelles étant dépensées et les entrées de leurre, donc vous ne savez pas vraiment quelles entrées les engagements de Pedersen doivent additionner. Ce n'est pas un problème car les @transactions-confidentielles-de-cercle des signatures de cercle doivent uniquement prouver que pour une combinaison d'entrées les sorties sont égales à la somme de ces entrées. Pour des raisons mathématiques, c'est impossible à forger.
 
-### In-depth Information
+### Informations détaillées
 
-See information in [Ring Confidential Transactions paper](https://eprint.iacr.org/2015/1098.pdf) by Shen Noether of the Monero Research Lab.
+Voir le document [Transactions confidentielles de cercle](https://eprint.iacr.org/2015/1098.pdf) de Shen Noether du Laboratoire de Recheche Monero.

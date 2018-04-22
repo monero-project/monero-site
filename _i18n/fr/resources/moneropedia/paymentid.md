@@ -1,27 +1,26 @@
 ---
-entry: "Payment ID"
-terms: ["payment-ID", "payment-IDs"]
-summary: "an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters"
+entry: "ID de paiement"
+terms: ["payment-ID", "payment-IDs", "ID-de-paiement", IDs-de-paiement]
+summary: "Une option supplémentaire que est ajouté pour identifier les transactions avec les commerçants, se composant de 64 caractères hexadécimaux"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Payment ID is an **arbitrary** and **optional** transaction attachment that consists of 32 bytes (64 hexadecimal characters) or 8 bytes (in the case of integrated addresses).
+L'ID de transaction est une annexe **arbitraire** et **optionnelle** d'une transaction qui se compose de 32 octets (64 caractères hexadécimaux) ou 8 octets (dans le cas d'une adresse intégrée).
 
-The Payment ID is usually used to identify transactions to merchants and exchanges: Given the intrinsic privacy features built into Monero, where a single public address is usually used for incoming transactions, the Payment ID is especially useful to tie incoming payments with user accounts.
+L'ID de paiement est habituellement utilisé pour identifier des transactions auprès de commerçants ou bourses : A cause des fonctionnalité de confidentialités intrinsèques de Monero, ou une seule adresse publique est habituellement utilisée pour les transactions entrantes, l'ID de paiement est particulièrement utile pour lier les paiements entrant à des comptes utilisateurs.
 
-### Compact Payment IDs and Integrated Addresses
+### IDs de paiement compactes et adresses intégrées
 
-Since the 0.9 Hydrogen Helix version, Payment IDs can be encrypted and embedded in a payment address. The Payment IDs of this type should be 64-bits and are encrypted with a random one-time key known only to the sender and receiver.
+Depuis la version 0.9 Hydrogen Helix, les IDs de paiement peuvent être chiffrés et incorporés dans une adresse de paiement. Les IDs de paiement de ce type devraient être de 64 octets et son chiffrés avec une clef à usage unique aléatoire connue uniquement de l'émetteur et du destinataire.
 
-### Creating a Payment ID
-It is recommended to use the official wallet's `integrated_address` command to automatically generate Integrated Addresses that contain Compact Payment IDs. If you want to use the command line, you can generate Payment IDs as follows:
+### Créer un ID de paiement
+Il est recommandé d'utilisé la commande `integrated_address` du portefeuille officiel pour générer automatiquement les adresses intégrées qui contiennent les IDs de paiement compacts. Si vous voulez utilisez la ligne de commande, vous pouvez générer des IDs de paiement comme suit :
 
-Creating a compact Payment ID for an Integrated Address:
+Créer un ID de paiement compact pour une adresse intégrée :
 
 ```# openssl rand -hex 8```
 
-Creating an old-style Payment ID:
+Créer un ID de paiement de l'ancien type :
 
 ```# openssl rand -hex 32```

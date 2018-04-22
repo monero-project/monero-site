@@ -1,10 +1,9 @@
 ---
-entry: "Paper Wallet"
-terms: ["paperwallet", "paperwallets", "paper-wallet", "paper-wallets"]
-summary: "A paper wallet stores the information necessary to send and receive Monero"
+entry: "portefeuille Papier"
+terms: ["paperwallet", "paperwallets", "paper-wallet", "paper-wallets", "portefeuille-papier", "portefeuilles-papier"]
+summary: "Un portefeuille papier conserve les informations nécessaires pour envoyer et recevoir des Moneroj"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A paper wallet stores the information necessary to send and receive Monero.
+Un portefeuille papier conserve les informations nécessaires pour envoyer et recevoir des Moneroj

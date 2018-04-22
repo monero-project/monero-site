@@ -1,13 +1,11 @@
 ---
-entry: "Blockchain"
-terms: ["blockchain", "blockchains"]
-summary: "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
-
+entry: "Chaîne de blocs"
+terms: ["blockchain", "blockchains", "chaîne-de-blocs", "chaînes-de-blocs", "chaine-de-blocs", "chaines-de-blocs"]
+summary: "Un registre distribué de toutes les transactions passées et présentes, ne révélant ni l'origine, ni la destination des fonds."
 ---
 
-{% include untranslated.html %}
-### The Basics
-A @blockchain is a distributed database that continuously grows with a record of all of the transactions that have occurred with a given cryptocurrency.  This database is often referred to as a ledger because the data contains a large list of transactions that have taken place.  In Monero, these transactions are packaged together into 'blocks' every 2 minutes (on average), and all miners and nodes on the network have copies of these blocks.  
+### Les Bases
+Une chaîne de @blocs est une base de données distribuée qui s'agrandit continuellement en enregistrant toutes les @transactions qui se sont produites pour une @cryptomonnaies donnée. Cette base de données est souvent considérée comme un registre car les données contiennent une longue liste de transactions qui ont eu lieu. Dans Monero, ces transactions sont regroupés ensemble dans des "blocs" toutes les 2 minutes (en moyenne), et tous les mineurs et nœuds du réseau disposent de copies de ces blocs.
 
-### Monero's @Blockchain
-Unlike Bitcoin and other cryptocurrencies, transactions in the Monero @blockchain do not reveal where funds came from or went to, providing anonymity and making the currency completely @fungible. Additionally, the amounts of all transactions are hidden by @RingCT, a feature of Monero. For auditing or other transparency purposes a user can share a @view-key to prove they control certain amounts of Moneroj.
+### Chaîne de blocs de Monero
+Contrairement à Bitcoin et aux autres @cryptomonnaies, les @transactions de la chaîne de blocs de Monero ne révèlent pas l'origine et la destination des fonds, fournissant un anonymat et rendant la @cryptomonnaie totalement @fongible. De plus, les montants de toutes les transaction sont masqués par les @transactions-confidentielles-de-cercle, une fonctionnalité de Monero. Pour de l'audit ou d'autres besoin de transparence, un utilisateur peut partager une @clef-d'audit pour prouver qu'il contrôle une certaine quantité de Moneroj.

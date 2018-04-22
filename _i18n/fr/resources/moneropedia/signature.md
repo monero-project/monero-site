@@ -1,10 +1,9 @@
 ---
-entry: "Cryptographic Signature"
+entry: "Signature Cryptographique"
 terms: ["signature", "signatures"]
-summary: "a cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed"
+summary: "Une méthode cryptographique permettant de prouver la propriété d'une information, de même que de prouver que l'information n'a pas été modifiée après avoir été signée"
 ---
 
-{% include untranslated.html %}
 ### The Basics
 
-A cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed.
+Une méthode cryptographique permettant de prouver la propriété d'une information, de même que de prouver que l'information n'a pas été modifiée après avoir été signée.

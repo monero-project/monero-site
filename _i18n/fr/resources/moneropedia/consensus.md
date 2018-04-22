@@ -1,10 +1,9 @@
 ---
 entry: "Consensus"
-terms: ["consensus", "consensus-network"]
-summary: "consensus describes a property of distributed networks like Monero where most of the participants follow the rules, and thus reject bad participants"
+terms: ["consensus", "consensus-network", "réseau-à-consensus"]
+summary: "Le consensus décrit une propriété des réseaux distribués comme Monero où la plupart des participants suivent les règles, et rejettent donc les participants nocifs."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Consensus describes a property of distributed networks like Monero where most of the participants follow the rules, and thus reject bad participants.
+Le consensus décrit une propriété des réseaux distribués comme Monero où la plupart des participants suivent les règles, et rejettent donc les participants nocifs.
