@@ -6,10 +6,10 @@ langs:
   fr: Français
 
 global:
-  date: '%Y/%m/%d'
+  date: '%d/%m/%Y'
   monero: Monero
-  getting_started: Démarrer
-  copyright: Copyright
+  getting_started: Commencer
+  copyright: Droits d'auteurs
   monero_project: Le Projet Monero
   sitename: getmonero.org, Le Projet Monero
   wiki: Moneropedia
@@ -35,7 +35,7 @@ titles:
   team: Équipe Monero
   hangouts: Rencontres
   events: Évènements
-  sponsorships: Partenarias
+  sponsorships: Parrainages
   merchants: Commerçants & Services
   about: À propos de Monero
   roadmap: Feuille de route
@@ -67,7 +67,7 @@ index:
   the_latest: Les Dernières
   private: confidentiel
   secure: Sécurisé
-  untraceable: intracable
+  untraceable: intraçable
   private_text: "Monero utilise des montants, éméteurs et destinataires de @transactions masqués. Cela signifie que persnonne ne peut savoir combien vous envoyez dans une transaction, hormis vous. Cela permet de garantir que vos achats et autres transferts restent confidentiels par défaut."
   untraceable_text: "En tirant parti des des @ring-signatures (signatures en cercle), Monero vous permet d'envoyer et de recevoir des fonds de manière privé. Même si vos transcations sont vérifiables publiquement sur la @blockchain, elles utilisent des signatures numériques qui indiquent un groupe de signataires, si bien qu'un valideur est incapable de déterminer qui à effectivement réalisé la signature. Parce qu'il est ambigu de savoir quels fonds ont été dépensés, votre transaction reste privée et ne peut pas vous être attribuée."
   secure_text: "Monero utilise un réseau peer-to-peer à @consensus et chaque transaction est signé cryptographiquement. Vos pièces de monnaie sont stockées en toute sécurité sur la @blockchain et peuvent être restaurées à tout moment en utilisant une @mnemonic-seed de 25 mots sur n'importe quel ordinateur avec le logiciel Monero. Les fichiers du portefeuil sont stoqués par chiffrement et vérouillés par mot de passe, les rendants inutilisables en cas de vol."
@@ -77,7 +77,7 @@ index:
   get_started_1: "La façon la plus rapide de commencer à utiliser Monero est avec un gestionnaire de @account en ligne comme "
   mymonero: "MyMonero"
   get_started_2: "."
-  get_started_3: "Alternativement, si vous voulez faire fonctionner un [noeud Monero complet](/getting-started/running) vous pouvez télécharger le client et un kick-starter @blockchain (pour ammener votre client local au bon niveau) en utilisant le lien de téléchargement situé à droite."
+  get_started_3: "Alternativement, si vous voulez faire fonctionner un [noeud Monero complet](/getting-started/running) vous pouvez télécharger le client et une amorce de @blockchain (pour ammener votre client local à la bonne hauteur) en utilisant le lien de téléchargement situé à droite."
   where_can_i: Où puis-je
   download_1: Télécharger
   download_2: " ?"

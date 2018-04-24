@@ -3,7 +3,7 @@
 <div class="container description" markdown="1">
 
 Si vous avez besoin d'aide pour choisir la bonne application, merci de cliquer [ici](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) pour une réponse rapide, puis sélectionner va version appropriée pour votre système d'exploitation ci-dessous.
-Note : les sommes de contrôle SHA256 sont indiquées à côté des téléchargements par commodité, mais une liste signée par GPG des sommes de contrôle est disponible à [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) et devrait être traitée de manière canonique, en vérifiant la signature vis-à-vis de la clef GPG appropriée dans le code source (dans /utils/gpg_keys).
+Remarque : les sommes de contrôle SHA256 sont indiquées à côté des téléchargements par commodité, mais une liste signée par GPG des sommes de contrôle est disponible à [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) et devrait être traitée de manière canonique, en vérifiant la signature vis-à-vis de la clef GPG appropriée dans le code source (dans /utils/gpg_keys).
 
 </div>
 <div class="container full downdropdown">
@@ -67,7 +67,7 @@ Note : les sommes de contrôle SHA256 sont indiquées à côté des télécharge
 </h4>
 </div>
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
-Si vous préférer utiliser une amorce de la chaîne de blocs, plutôt que de synchroniser à partir de zéro, vous pouvez [utiliser ce lien pour obtenir le bootstrap le plus récent](https://downloads.getmonero.org/blockchain.raw). Il est cependant habituellement plus rapide de synchroniser à partir de zéro, et cela consomme également nettement moins de RAM (l'import est particulièrement gourmand).
+Si vous préférez utiliser une amorce de la chaîne de blocs, plutôt que de synchroniser à partir de zéro, vous pouvez [utiliser ce lien pour obtenir l'amorce la plus récente](https://downloads.getmonero.org/blockchain.raw). Il est cependant habituellement plus rapide de synchroniser à partir de zéro, et cela consomme également nettement moins de RAM (l'import est particulièrement gourmand).
 </div>
 </div>
 {% elsif data_downloads.id == "hardware" %}

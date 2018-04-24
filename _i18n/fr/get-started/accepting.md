@@ -16,7 +16,7 @@ Monero fonctionne légèrement différemment de ce dont vous pourriez avoir l'ha
 
 Cependant, comme Monero utilise des @stealth-addresses il n'y a pas de nécessité à disposer d'adresses de destinataires séparées pour chaque paiement ou utilisateur, et une seule adresse de @account peut être publiée. A la place, lors de la réception d'un paiement un commerçant va fournir un "ID de Paiement" à la personne effectuant ce paiement.
 
-Un @payment-ID est une chaine de caractère héxédécimale de 64 caractères, et est normalement créer de manière aléatoire par le commerçant. Voici un exemple d'ID de Paiement :
+Un @payment-ID est une chaine de 64 caractères hexadécimaux, et est normalement créer de manière aléatoire par le commerçant. Voici un exemple d'ID de Paiement :
 ```
 666c75666679706f6e7920697320746865206265737420706f6e792065766572
 ```
@@ -69,9 +69,9 @@ Voici un exemple de donné renvoyée :
 
 Il est important de noter que les montant sont retournés en unités Monero de base et pas en unités normalement utilisées dans les applications pour utilisateurs-finaux. De plus, dans la mesure où une transaction aura typiquement de multiples sorties qui s'ajoutent pour obtenir le total requis pour le paiement, les montants devraient être groupés pax tx_hash ou par payment_id afin de les additionner. Enfin, comme de multiples sorties peuvent avoir le même montant, il est impératif de ne pas essayer de filter les résultat d'une unique requête get_bulk_payments.
 
-Avant de rechercher un paiement, il peut être utile de vérifier auprès du démon RPC API (avec une requête RPC get_info) si de nouveaux blocs ont été reçus. Typiquement, vous voudrez n'effectuer la recherche qu'à partir de ce bloc en le spécifiant comme paramètre min_block_height lors de la requête get_bulk_payments.
+Avant de rechercher un paiement, il peut être utile de vérifier auprès  de l'API RPC du démon (avec une requête RPC get_info) si de nouveaux blocs ont été reçus. Typiquement, vous voudrez n'effectuer la recherche qu'à partir de ce bloc en le spécifiant comme paramètre min_block_height lors de la requête get_bulk_payments.
 
-### Rechercher des Paiement de manière programmatique
+### Rechercher des Paiements de manière programmatique
 
 * Récupérer la hauteur actuelle de bloc auprès du démon, et ne procéder à la recherche que si celle-ci à augmentée depuis la dernière recherche
 * Lancer une requête API RPC get_bulk_payments avec cette dernière hauteur de bloc et la liste de tous les IDs de paiement à rechercher

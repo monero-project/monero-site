@@ -25,7 +25,7 @@
 
 <div markdown="1">
 * CryptoNight
-* Pourrait changer dans l'avenir
+* Pourrait changer à l'avenir
 </div>
 
                     <div class="row">
@@ -36,7 +36,7 @@
 
 <div markdown="1">
 * à chaque bloc
-* basé sur les 720 derniers blocs, à l'exclusion de 20% des valeurs aberrantes d'horodatage
+* basé sur les 720 derniers blocs, à l'exclusion de 20% des horodatages aberrants
 </div>
 
                     <div class="row">
@@ -58,7 +58,7 @@
 
 <div markdown="1">
 * décroissant lentement et soumis à des pénalités pour les blocs supérieurs à la taille médiane des 100 derniers blocs (M100)
-* voir la transaction coinbase du [dernier block](https://moneroblocks.info/) pour la récompense actuelle
+* voir la transaction de la base de la pièce du [dernier bloc](https://moneroblocks.info/) pour la récompense actuelle
 </div>
 
                     <div class="row">
@@ -79,7 +79,7 @@
 
 <div markdown="1">
 * d'abord, courbe principale : ~18,132 million de pièces de monnaie d'ici fin mai 2022
-* puis, courbe de queue : une émission de 0,6 XMR par bloc de 2 minutes entre en vigueur une fois l'émission principale terminée, se traduisant par une inflation <1% décroissant au fil du temps
+* puis, courbe de queue : une émission de 0,6 XMR par bloc de 2 minutes entre en vigueur une fois l'émission principale terminée, se traduisant par une inflation <1%, décroissant au fil du temps
 * voir les [graphiques et détails](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
 </div>
 

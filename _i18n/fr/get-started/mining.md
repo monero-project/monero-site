@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Une liste de confiance de pools Monero est disponible <a href="http://moneropools.com/"> ici</a>.</p>
+                       <p>Une liste de pools Monero de confiance est disponible <a href="http://moneropools.com/"> ici</a>.</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p><a href="http://monerobenchmarks.info/">Ici</a> ce trouve une liste de GPUs/CPUs et leurs taux de hachage respectifs.</p>
+                       <p>Vous trouverez <a href="http://monerobenchmarks.info/">Ici</a> une liste de GPUs/CPUs et leurs taux de hachage respectifs.</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Veuillez noter que certains mineurs pourrait soustraire des frais de développement.</p>
+                       <p>Veuillez noter que certains mineurs pourraient soustraire des frais de développement.</p>
                     </div>
                     <div class="row center-xs">
                         <p><a href="https://github.com/fireice-uk/xmr-stak" target="_blank" rel="noreferrer noopener">XMR Stak</a></p>

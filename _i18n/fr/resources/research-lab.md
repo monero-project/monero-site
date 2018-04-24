@@ -39,7 +39,7 @@
                               <input id="tab-two" type="checkbox" name="tabs" class="accordion">
                               <label for="tab-two" class="accordion">MRL-0002: Contrefaçon par l'exploitation de l'arbre de Merkle dans des monnaies virtuelles employant le protocole CryptoNote.</label>
                               <div class="tab-content">
-                                <p><strong>Résumé :</strong> Le 4 Septembre 2014, une nouvelle et inhabituelle attaque a été lancé contre
+                                <p><strong>Résumé :</strong> Le 4 Septembre 2014, une attaque nouvelle et inhabituelle a été lancé contre
                                     le réseau de cryptomonnaie Monero. Cette attaque a segmentée le réseau en deux
                                     sous-ensembles distincts qui refusaient d'accepter les transactions légitimes
                                     de l'autre sous-ensemble. Cela causa une myriade d'effet, qui n'ont pour le
@@ -124,7 +124,7 @@
                                     destinations des transactions avec une efficacité raisonnable et une génération
                                     de pièces de monnaie vérifiable et fiable. Quelques extensions protocolaires
                                     sont fournies, telles que la preuve à divulgation nulle de connaissance de
-                                    Schnorr, et les multi-signatures en cercle. L'auteur voudrait faire remarquer
+                                    Schnorr, et les multi-signatures de cercle. L'auteur voudrait faire remarquer
                                     que les premières ébauches ont été publiées dans la communauté Monero et sur le
                                     canal IRC de recherche bitcoin. Des brouillons de chaîne de blocs sont disponibles
                                     dans [14], montrant que ce travail a débuté à l'été 2015 et s'est achevé début
@@ -156,7 +156,7 @@ Voici le document originel de CryptoNote écrit par l'équipe CryptoNote. En le 
 
 [Livre Blanc Commenté](https://downloads.getmonero.org/whitepaper_annotated.pdf)
 
-Le Laboratoire de Recherche Monero a publié une version commentée du Livre Blanc CryptoNote. The Monero Research Lab released an annotated version of the cryptonote whitepaper. Il s'agit en quelque sorte d'un examen informel des allégations qui sont faites lignes après lignes dans le livre blanc. Il explique également certains des concepts les plus compliqués dans des termes relativement simples.
+Le Laboratoire de Recherche Monero a publié une version commentée du Livre Blanc CryptoNote. Il s'agit en quelque sorte d'un examen informel des allégations qui sont faites lignes après lignes dans le livre blanc. Il explique également certains des concepts les plus compliqués dans des termes relativement simples.
 
 [Examen du Livre Blanc de Brandon Goodell](https://downloads.getmonero.org/whitepaper_review.pdf)
 
