@@ -39,7 +39,7 @@
                               <input id="tab-two" type="checkbox" name="tabs" class="accordion">
                               <label for="tab-two" class="accordion">MRL-0002: Contrefaçon par l'exploitation de l'arbre de Merkle dans des monnaies virtuelles employant le protocole CryptoNote.</label>
                               <div class="tab-content">
-                                <p><strong>Résumé :</strong> Le 4 Septembre 2014, une attaque nouvelle et inhabituelle a été lancé contre
+                                <p><strong>Résumé :</strong> Le 4 Septembre 2014, une attaque nouvelle et inhabituelle a été lancée contre
                                     le réseau de cryptomonnaie Monero. Cette attaque a segmentée le réseau en deux
                                     sous-ensembles distincts qui refusaient d'accepter les transactions légitimes
                                     de l'autre sous-ensemble. Cela causa une myriade d'effet, qui n'ont pour le

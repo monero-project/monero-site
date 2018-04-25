@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Vous trouverez <a href="http://monerobenchmarks.info/">Ici</a> une liste de GPUs/CPUs et leurs taux de hachage respectifs.</p>
+                       <p>Vous trouverez <a href="http://monerobenchmarks.info/">ici</a> une liste de GPUs/CPUs et leurs taux de hachage respectifs.</p>
                     </div>
                 </div>
             </div>

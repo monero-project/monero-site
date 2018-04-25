@@ -79,7 +79,7 @@
 
 <div markdown="1">
 * d'abord, courbe principale : ~18,132 million de pièces de monnaie d'ici fin mai 2022
-* puis, courbe de queue : une émission de 0,6 XMR par bloc de 2 minutes entre en vigueur une fois l'émission principale terminée, se traduisant par une inflation <1%, décroissant au fil du temps
+* puis, courbe résiduelle : une émission de 0,6 XMR par bloc de 2 minutes entre en vigueur une fois l'émission principale terminée, se traduisant par une inflation <1%, décroissant au fil du temps
 * voir les [graphiques et détails](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
 </div>
 

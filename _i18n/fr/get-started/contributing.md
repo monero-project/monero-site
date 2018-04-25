@@ -20,7 +20,7 @@ Monero est principalement écrit en C ++. Comme il s'agit d'un projet décentral
 Faites fonctionner monerod ouvert sur le port TCP 18080. Faire fonctionner un nœud complet garantit une confidentialité maximale lors d'une transaction Monero. Cela améliore également la distribution de la chaîne de blocs aux nouveaux utilisateurs.
 
 ### Miner
-L'extraction minière garantit que le réseau reste sécurisé et décentralisé. Dans les interfaces graphique et ligne de commande de Monero, l'extraction minière peut être activé en arrière plan. Plus de ressources concernant l'extraction minière sont disponibles [ici](https://reddit.com/r/MoneroMining).
+L'extraction minière garantit que le réseau reste sécurisé et décentralisé. Dans les interfaces graphique et ligne de commande de Monero, l'extraction minière peut être activée en arrière plan. Plus de ressources concernant l'extraction minière sont disponibles [ici](https://reddit.com/r/MoneroMining).
 
 </div>
                         </div>
@@ -35,7 +35,7 @@ L'extraction minière garantit que le réseau reste sécurisé et décentralisé
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>Monero utilise un <a href="https://forum.getmonero.org">forum funding system</a> au travers duquel des projets sont proposé au développement et financés par la communauté. Le financement est entiercé et rémunère les développeurs lorsque des jalons de programmation sont atteints. Chacun peut faire de nouvelles propositions ou en financer d'existantes.</p>
+                                <p>Monero utilise un <a href="https://forum.getmonero.org">Forum Funding System (FFS)</a> qui est une plateforme de financement participatif dédiée aux projets d'amélioration de Monero. Des projets sont proposés au développement au travers du FFS et financés par la communauté. Le financement est entiercé et rémunère les développeurs lorsque des jalons de programmation sont atteints. Chacun peut faire de nouvelles propositions ou en financer d'existantes.</p>
                             </div>
                         </div>
                 </div>
@@ -62,13 +62,13 @@ L'extraction minière garantit que le réseau reste sécurisé et décentralisé
                             <div class="row start-xs">
                                <div class="col-xs-12">
                                 <h3>Faire un don en Monero</h3>
-                                <p>Les contributions peuvent être envoyées à donate.getmonero.org ou 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
+                                <p>Les dons peuvent être envoyées à donate.getmonero.org ou 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
                                </div>
                             </div>
                             <div class="row start-xs">
                                <div class="col-xs-12">
                                 <h3>Faire un don en Bitcoin</h3>
-                                <p>Les contributions peuvent être envoyées à donate.getmonero.org ou 1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</p>
+                                <p>Les dons peuvent être envoyées à donate.getmonero.org ou 1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</p>
                                 </div>
                             </div>
                             <div class="row start-xs">

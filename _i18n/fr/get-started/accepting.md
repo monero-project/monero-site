@@ -69,7 +69,7 @@ Voici un exemple de donné renvoyée :
 
 Il est important de noter que les montant sont retournés en unités Monero de base et pas en unités normalement utilisées dans les applications pour utilisateurs-finaux. De plus, dans la mesure où une transaction aura typiquement de multiples sorties qui s'ajoutent pour obtenir le total requis pour le paiement, les montants devraient être groupés pax tx_hash ou par payment_id afin de les additionner. Enfin, comme de multiples sorties peuvent avoir le même montant, il est impératif de ne pas essayer de filter les résultat d'une unique requête get_bulk_payments.
 
-Avant de rechercher un paiement, il peut être utile de vérifier auprès  de l'API RPC du démon (avec une requête RPC get_info) si de nouveaux blocs ont été reçus. Typiquement, vous voudrez n'effectuer la recherche qu'à partir de ce bloc en le spécifiant comme paramètre min_block_height lors de la requête get_bulk_payments.
+Avant de rechercher un paiement, il peut être utile de vérifier auprès de l'API RPC du démon (avec une requête RPC get_info) si de nouveaux blocs ont été reçus. Typiquement, vous voudrez n'effectuer la recherche qu'à partir de ce bloc en le spécifiant comme paramètre min_block_height lors de la requête get_bulk_payments.
 
 ### Rechercher des Paiements de manière programmatique
 

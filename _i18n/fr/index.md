@@ -15,7 +15,7 @@
                         <div class="main-info">
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Monnaie Digitale Confidentielle</h2>
-                            <p id="main-text">Monero, c'est de l'argent pour un monde connecté. C'est rapide, confidentiel et sécurisé. Avec Monero, vous êtes votre propre banque. Vous pouvez le dépenser en toute sécurité, en sachant que personne ne peut voir votre solde ni suivre votre activité.</p>
+                            <p id="main-text">Monero est une monnaie pour un monde connecté. C'est rapide, confidentiel et sécurisé. Avec Monero, vous êtes votre propre banque. Vous pouvez le dépenser en toute sécurité, en sachant que personne ne peut voir votre solde ni suivre votre activité.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Commencer</a></p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Monero est fongible</h3>
-                            <p> Monero est <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fongible</a> car il est confidentiel par défaut. Des unités de Monero ne peuvent pas être mises sur liste noir par des vendeurs ou des bourses en raison de leurs associations à de précédentes transactions.</p>
+                            <p> Monero est <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fongible</a> car il est confidentiel par défaut. Des unités de Monero ne peuvent pas être mises sur liste noire par des vendeurs ou des bourses en raison de leurs associations à de précédentes transactions.</p>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>User Guides</h2>
-                                <p class="main-resources">Les guides pas à pas de tous les aspects de Monero sont classés par catégories et couvrent tout, de la création d'un portefeuille au soutient du réseau, et même comment modifier ce site.</p>
+                                <p class="main-resources">Les guides pas à pas de tous les aspects de Monero sont classés par catégories et couvrent tout, de la création d'un portefeuille au soutien du réseau, et même comment modifier ce site.</p>
                                 <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Lire les guides utilisateur</a></p>
                             </div>
                         </div>

@@ -9,7 +9,7 @@
                         <div class="row middle-xs info-block-row private">
                             <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12  why-text">
                                 <h3>Monero est la principale cryptomonnaie focalisée sur la confidentialité et la résistance à la censure de ses transactions.</h3>
-                                <p>La plupart des cryptomonnaies existante, Bitcoin et Ethereum compris, ont des chaînes de blocs transparentes, signifiant que les transactions sont ouvertement vérifiable et traçables par quiconque sur le réseau. De plus, les adresses d'envoie et de réception de ces transactions peuvent potentiellement être reliées à l'identité réelle d'une personne. </p>
+                                <p>La plupart des cryptomonnaies existantes, y compris Bitcoin et Ethereum, ont des chaînes de blocs transparentes, signifiant que les transactions sont ouvertement vérifiables et traçables par quiconque sur le réseau. De plus, les adresses d'envoi et de réception de ces transactions peuvent potentiellement être reliées à l'identité réelle d'une personne. </p>
                                 <p>Monero utilise la cryptographie pour protéger les adresses d'émission, de réception, ainsi que les montants des transactions.</p>
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
