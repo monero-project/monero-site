@@ -1,254 +1,253 @@
-{% include untranslated.html %}
-# Verify Binaries: Windows (Beginner)
+# Vérifier des binaires : Windows (Débutant)
 
-Verification of the Monero binary files should be done prior to extracting, installing, or using the Monero software. This is the only way to ensure that you are using the official Monero binary. If you receive a fake binary (eg. phishing, MITM, etc.), following this guide will protect you from being tricked into using it.
+Les fichiers binaires Monero devrait être vérifiés avant extraction, installation ou utilisation de l'application Monero. C'est l'unique manière de vous assurer que vous utilisez le binaire officiel Monero. Si vous recevez un binaire contrefait (p. ex. hameçonnage, HDM, etc.), suivre ce guide vous évitera de vous faire piéger.
 
-To protect the integrity of the binaries the Monero team provides a cryptographically signed list of all the [SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded binary has been tampered with it will be produce a [different hash](https://en.wikipedia.org/wiki/File_verification) than the one in the file.
+Pour protéger l'intégrité des binaires, l'équipe Monero fournit une liste cryptographiquement signée de tous les hachages [SHA256](https://en.wikipedia.org/wiki/SHA-2). Si le binaire que vous avez téléchargé a été altéré il produira un [hachage différent](https://en.wikipedia.org/wiki/File_verification) de celui fourni dans le fichier.
 
-This is a beginners guide for the Windows operating system and will make use of GUIs almost exclusively. It will walk you through the process of installing the required software, importing the signing key, downloading the necessary files, and finally verifying that your binary is authentic.
+Voici un guide pour débutant pour le système d'exploitation Windows qui s'appuiera presque exclusivement sur des interfaces graphiques (GUI). Il couvrira tout le processus d'installation des applications requises, d'import de la clef de signature, de téléchargement des fichiers nécessaires et enfin de vérification de l'authenticité de votre binaire.
 
-## Table of Contents
+## Table des matières
 
-### [1. Gpg4win Installer](#1-using-gpg4win-installer)
-  - [1.1. Getting Gpg4win Installer](#11-getting-gpg4win-installer)
-    + [1.1.1. Download Gpg4win](#111-download-gpg4win)
-    + [1.1.2. Launch Gpg4win](#112-launch-gpg4win)
-  - [1.2. Use Gpg4win Installer](#12-use-gpg4win-installer)
-### [2. Import Signing Key](#2-monero-signing-key)
-  - [2.1. Download Signing Key](#21-download-signing-key)
-  - [2.2. Initialize Kleopatra](#22-initialize-kleopatra)
-    + [2.2.1. Import Signing Key](#221-import-signing-key)
-    + [2.2.2. Create Key Pair](#222-create-key-pair)
-  - [2.3. Verify Signing Key](#23-verify-signing-key)
-### [3. Verify Hash File](#3-hash-file-verification)
-  - [3.1. Download Hash File](#31-download-hash-file)
-  - [3.2. Verify Hash File](#32-verify-hash-file)
-### [4. Verify Binary File](#4-binary-file-verification)
-  - [4.1. Download Binary](#41-download-binary)
-  - [4.2. Verify Binary](#42-verify-binary)
+### [1. Installateur de Gpg4win](#1-utiliser-linstallateur-de-gpg4win)
+  - [1.1. Obtenir l'Installateur de Gpg4win](#11-obtenir-linstallateur-de-gpg4win)
+    + [1.1.1. Télécharger Gpg4win](#111-telecharger-gpg4win)
+    + [1.1.2. Lancer Gpg4win](#112-lancer-gpg4win)
+  - [1.2. Utiliser l'Installateur Gpg4win](#12-utiliser-linstallateur-gpg4win)
+### [2. Importer la Clef de Signature](#2-clef-de-signature-monero)
+  - [2.1. Télécharger la Clef de Signature](#21-telecharger-la-clef-de-signature)
+  - [2.2. Initialiser Kleopatra](#22-initialiser-kleopatra)
+    + [2.2.1. Importer une Clef de Signature](#221-importer-une-clef-de-signature)
+    + [2.2.2. Créer la Paire de Clefs](#222-creer-la-paire-de-clefs)
+  - [2.3. Vérifier la Clef de Signature](#23-verifier-la-clef-de-signature)
+### [3. Vérifier le Fichier de Hachage](#3-verification-du-fichier-de-hachage)
+  - [3.1. Télécharger le Fichier de Hachage](#31-telecharger-le-fichier-de-hachage)
+  - [3.2. Vérifier le Fichier de Hachage](#32-verifier-le-fichier-de-hachage)
+### [4. Vérifier le Fichier Binaire](#4-verification-du-fichier-binaire)
+  - [4.1. Télécharger le Binaire](#41-telecharger-le-binaire)
+  - [4.2. Vérifier le Binaire](#42-verifier-le-binaire)
 
-## 1. Using Gpg4win Installer
+## 1. Utiliser l'Installateur de Gpg4win
 
-This section will cover installing the cryptography software. Windows does not come with the tools required to verify your binary. To install these tools you can use the Gpg4win installer.
+Cette rubrique couvre l'installation de l'application de cryptographie. Windows n'est pas livré avec les outils nécessaire à la vérification de vos binaires. Pour installer ces outils vous pouvez utiliser l'installateur Gpg4win.
 
-### 1.1. Getting Gpg4win Installer
+### 1.1. Obtenir l'Installateur de Gpg4win
 
-#### 1.1.1. Download Gpg4win
+#### 1.1.1. Télécharger Gpg4win
 
-In a web browser, go to [gpg4win.org](https://gpg4win.org) and download the installer by clicking the green button.
+Dans un navigateur internet, rendez-vous sur la page [gpg4win.org](https://gpg4win.org) et téléchargez l'installateur en cliquant sur le bouton vert.
 
-![gpg4win download button](png/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)
+![bouton télécharger gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)
 
-You will be taken to a donation page. If you do not wish to donate select `$0`, then you will be able to click `Download`.
+Vous serez redirigé vers une page de dons. Si vous ne souhaitez pas faire une donation, sélectionnez `$0`, puis vous pourrez cliquer sur `Télécharger` (`Download`).
 
-![gpg4win site donation](png/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)
+![page de don site gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)
 
-Click `Save File`.
+Cliquez sur `Enregistrer le Fichier` (`Save File`).
 
-![gpg4win site save file](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)
+![enregistrer le fichier site gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)
 
-Choose a download location, click `Save`.
+Choisissez un emplacement pour le téléchargement et cliquez sur `Enregistrer` (`Save`).
 
-![gpg4win site download location](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
+![emplacement téléchargement site gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-#### 1.1.2. Launch Gpg4win
+#### 1.1.2. Lancer Gpg4win
 
-When the download is finished, open the containing folder.
+Lorsque le téléchargement est terminé, l'afficher dans le dossier.
 
-![gpg4win site open folder](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)
+![afficher dans le dossier site gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)
 
-Double click the downloaded gpg4win executable to launch.
+Double-cliquez sur l'exécutable gpg4win téléchargé pour le lancer.
 
-![gpg4win launch](png/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
+![lancement gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
-### 1.2. Use Gpg4win Installer
+### 1.2. Utiliser l'Installateur Gpg4win
 
-You will be presented with a security verification screen, click `Run`.
+Un avertissement de sécurité vous sera présenté, cliquez sur `Exécuter`.
 
-![gpg4win installer security](png/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)
+![sécurité installateur gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)
 
-Select your language, click `OK`.
+Sélectionnez votre langue et cliquez sur `OK`.
 
-![gpg4win installer language](png/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)
+![langue installateur gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)
 
-A welcome screen will appear, click `Next`.
+Un écran de bienvenue apparaitra, cliquez sur `Suivant`.
 
-![gpg4win installer welcome](png/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)
+![bienvenue installateur gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)
 
-Now you will see the component selection screen, you must at least leave `Kleopatra` checked for this guide. Make your selections, click `Next`.
+Vous verrez alors la fenêtre de sélection des composants. Vous devrez avoir au minimum `Kleopatra` de sélectionné pour ce guide. Faites votre choix et cliquez sur `Next`.
 
-![gpg4win installer components](png/verify_binary_windows_beginner/verify-win_gpg4win-components.png)
+![composants installateur gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-components.png)
 
-It is best to leave the default installation location unless you know what you are doing. Make your selections, click `Install`.
+Il vaut mieux laisser le dossier d'installation par défaut, à moins que vous sachiez ce que vous faites. Faites votre choix et cliquez sur `Installer`.
 
-![gpg4win installer location](png/verify_binary_windows_beginner/verify-win_gpg4win-install.png)
+![emplacement installateur gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-install.png)
 
-Installation has completed, click `Next`.
+L'installation est terminée, cliquez sur `Suivant`.
 
-![gpg4win installer complete](png/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
+![completion installateur gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
 
-Click `Finish`.
+Cliquez sur `Fermer`.
 
-![gpg4win installer finish](png/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
+![fin installateur gpg4win](png/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## 2. Monero Signing Key
+## 2. Clef de Signature Monero
 
-This section will cover downloading the Monero signing key, verifying that the key is correct, and then importing the key to your keyring. The hash file that will be used to verify your binary is cryptographically signed with the Monero signing key. In order to check the validity of this file you must have the public version of the signing key.
+Cette rubrique couvre le téléchargement de la clef de signature Monero, la vérification que cette clef est correcte et l'import de la clef dans votre trousseau. Le fichier de hachage qui sera utilisé pour vérifier votre binaire est signé cryptographiquement avec la clef de signature Monero. Afin de vérifier la validité de ce fichier vous devez disposer de la variante publique de cette clef de signature.
 
-### 2.1. Download Signing Key
+### 2.1. Télécharger la Clef de Signature
 
-In a web browser, go to [Fluffypony's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), which he uses for signing the Monero binaries. Right click on the page, choose `Save Page As`.
+Dans un navigateur internet, rendez-vous sur [la clef GPG de Fluffypony](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), qu'il utilise pour signer les binaires Monero. Faites un clic droit sur la page et choisissez `Enregistrer sous...`.
 
-![getkey right click](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
+![clic droit getkey](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
 
-Leave the default location, click `Save`.
+Laissez l'emplacement par défaut, supprimez l'extention `.txt` pour ne laisser comme nom de fichier que `fluffypony.asc` et cliquez sur `Enregistrer`.
 
 ![getkey save file](png/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
-### 2.2. Initialize Kleopatra
+### 2.2. Initialiser Kleopatra
 
-If this is your first time using Kleopatra you will have to create a key pair for yourself.
+S'il s'agit de votre première utilisation de Kleopatra vous devrez créer votre propre paire de clefs.
 
-Launch Kleopatra.
+Lancez Kleopatra.
 
-![kleo launch](png/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
+![lancement kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-#### 2.2.1. Import Signing Key
+#### 2.2.1. Importer une Clef de Signature
 
-Click `Import`.
+Cliquez sur `Importer...`.
 
-![kleo firstrun import](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
+![import démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
 
-Enter the directory `Downloads`, select `fluffypony`, and click `Open`.
+Allez dans le répertoire  `téléchargements`, sélectionnez `fluffypony.asc` et cliquez sur `Ouvrir`.
 
-![kleo firstrun key location](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
+![emplacement clef démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
 
-Start the process of certifying the key by clicking `Yes`.
+Démarrez le processus de certification de la clef en cliquant sur `Oui`.
 
-![kleo firstrun start process](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
+![certif process démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
-#### 2.2.2. Create Key Pair
+#### 2.2.2. Créer la Paire de Clefs
 
-Start the process of key creation by clicking `Yes`.
+Démarrez le processus de création de clefs en cliquant sur `Oui`.
 
-![kleo firstrun start key create](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)
+![création clefs démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)
 
-Fill in some details for `Name` and `Email`, click `Next`.
+Renseignez quelques information pour `Nom` et `Adresse électronique` et cliquez sur `suivant`.
 
-![kleo firstrun key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)
+![infos clefs démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)
 
-Verify details, click `Create`.
+Vérifiez les informations et cliquez sur `Créer`.
 
-![kleo firstrun verify key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
+![vérifier infos clefs démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
 
-Set a password, click `OK`.
+Définissez un mot de passe et cliquez sur `OK`.
 
-![kleo firstrun set key pass](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)
+![définir mdp démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)
 
-Click `Finish`.
+Cliquez sur `Terminer`.
 
-![kleo firstrun finish create key](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
+![fin création clefs démarrage kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### 2.3. Verify Signing Key
+### 2.3. Vérifier la Clef de Signature
 
-Visually check that the fingerprint of the key belonging to Riccardo Spagni is `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9`.
+Contrôlez visuellement que l'empreinte de la clef appartenant à Riccardo Spagni est `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9`.
 
-![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
+![certifier empreinte kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-If the fingerprint **DOES** match, click `Next`.
+Si l'empreinte **EST** identique, cochez les cases et cliquez sur `Suivant`.
 
-If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `fluffypony` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key).
+Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `fluffypony.asc` du répertoire `téléchargements` et retournez à la [rubrique 2.1](#21-telecharger-la-clef-de-signature).
 
-Leave `Certify only for myself` selected, click `Certify`.
+Laissez `Certifier uniquement pour moi` coché et cliquez sur `Certifier`.
 
-![kleo certify for self](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
+![certifier pour soi kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
-Enter your password, click `OK`.
+Entrez votre mot de passe et cliquer sur `OK`.
 
-![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
+![certifier mdp kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
-Click `Finish`.
+Cliquez sur `Terminer`.
 
-![kleo certify finish](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
+![fin certifier kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
-## 3. Hash File Verification
+## 3. Vérification du Fichier de Hachage
 
-This section will cover downloading the signed file of known good hashes and verifying its authenticity.
+Cette rubrique couvre le téléchargement du fichier signé des hachages valides et la vérification de son authenticité.
 
-### 3.1. Download Hash File
+### 3.1. Télécharger le Fichier de Hachage
 
-In a web browser, go to the [getmonero.org hash page](https://getmonero.org/downloads/hashes.txt). Right click the page, select `Save Page As`.
+Dans un navigateur internet, rendez-vous sur la [page de haches getmonero.org](https://getmonero.org/fr/downloads/hashes.txt). Faites un clic droit sur la page et sélectionnez `Enregistrer sous...`.
 
-![hashes right click](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
+![clic droit hachages](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
-Leave the default location, click `Save`.
+Laissez l'emplacement par défaut et cliquez sur `Enregistrer`.
 
-![hashes save file](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
+![enregistrer fichier hachages](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### 3.2. Verify Hash File
+### 3.2. Vérifier le Fichier de Hachage
 
-In Kleopatra, click the `Decrypt/Verify` button.
+Dans Kleopatra cliquez sur le bouton `Déchiffrer / vérifier...`.
 
-![hashes kleo verify button](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
+![bouton vérifier kleo hachages](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
 
-Navigate to `Downloads` directory. Select `hashes` file, click `Open`.
+Allez dans le répertoire `téléchargements`. Sélectionnez le fichier `hashes` et cliquez sur `Ouvrir`.
 
-![hashes kleo open file](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)
+![ouvrir fichier kleo hachages](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)
 
-Kleopatra will inform you if the files signature is valid.
+Kleopatra vous indiquera si la signature du fichier est légitime.
 
-If the signature is **VALID** you will see this:
+Si la signature est **VALABLE** vous verrez ceci :
 
-![hashes kleo goodsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)
+![bonne signature kleo hachages](png/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)
 
-If the signature is **INVALID** you will see this:
+Si la signature est **NON VALABLE** vous verrez ceci :
 
-![hashes kleo badsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)
+![mauvaise signature kleo hachages](png/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)
 
-If you receive a **VALID** signature, click `Discard` and move on.
+Si vous obtenez une signature **VALABLE**, cliquez sur `Ne pas tenir compte` et poursuivez.
 
-If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file).
+Si vous obtenez une signature **NON VALABLE**, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `hashes` du répertoire `téléchargements` et retournez à la [rubrique 3.1](#31-telecharger-le-fichier-de-hachage).
 
-## 4. Binary File Verification
+## 4. Vérification du Fichier Binaire
 
-This section will cover downloading the Monero binary and verifying its authenticity.
+Cette rubrique couvre le téléchargement du binaire Monero et la vérification de son authenticité.
 
-### 4.1. Download Binary
+### 4.1. Télécharger le Binaire
 
-In a web browser, go to the [getmonero.org downloads page](https://getmonero.org/downloads/#windows). Select the correct binary for your system.
+Dans un navigateur internet, rendez-vous sur la [page de téléchargement getmonero.org](https://getmonero.org/fr/downloads/#windows). Sélectionnez le binaire approprié à votre système.
 
-![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
+![binaire getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 
-Leave `Save File` selected, click `OK`.
+Laissez `Enregistrer` sélectionné et cliquez sur `OK`.
 
-![binary getmonero save](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
+![enregistrer binaire getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
 
-Leave the default location, click `Save`.
+Laissez l'emplacement par défaut et cliquez sur `Enregistrer`.
 
-![binary getmonero save location](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
+![emplacement enregistrement binaire getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### 4.2. Verify Binary
+### 4.2. Vérifier le Binaire
 
-In a file manager, navigate to `Downloads` directory. Open the file `hashes` with a word processor.
+Dans un gestionnaire de fichier, allez dans le répertoire `Téléchargements`. Ouvrez le fichier `hashes` avec un traitement de texte.
 
-![binary open hashes.txt](png/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)
+![ouvrir hashes.txt binaire](png/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)
 
-Open a terminal (`cmd.exe`).
+Ouvrir une invite de commande (`cmd.exe`).
 
-![binary launch term](png/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)
+![lancer terminal binaire](png/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)
 
-Change to the `Downloads` directory with the command: `cd Downloads`.
+Allez dans le répertoire `Downloads` avec la commande : `cd Downloads`.
 
-![binary cmd cd](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
+![cd cmd binaire](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
 
-Calculate the hash of the Monero binary with the command: `certUtil -hashfile monero-gui-win-x64-v0.11.1.0.zip SHA256` (if you downloaded a command-line only version, replace `monero-gui-win-x64-v0.11.1.0.zip` accordingly).
+Calculez le hachage du binaire Monero avec la commande : `certUtil -hashfile monero-gui-win-x64-v0.12.0.0.zip SHA256` (Si vous avez téléchargé la version ligne de commande, remplacez par `monero-gui-win-x64-v0.12.0.0.zip` en conséquence).
 
-![binary cmd certutil](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
+![certutil cmd binaire](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
 
-Compare the hash from the terminal with the one in the hash file. They should be the same (spaces can be ignored).
+Comparez le hachage entre l'invite de commande et le fichier de hachage. Ils doivent être identiques (les espaces peuvent être ignorés).
 
-![binary compare hashes](png/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
+![comparer hachages binaire](png/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
 
-If your hash **DOES** match then you are finished with verification! You can be sure the Monero files you have are authentic. You may extract and install/use the files normally.
+Si votre hachage **EST** identique vous en avez terminé avec la vérification ! Vous avez la certitude que les fichiers Monero sont authentiques. Vous pouvez extraire et installer / utiliser les fichiers normalement.
 
-If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary).
+Si votre hachage **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le binaire Monero du répertoire `téléchargements` et retournez à la [rubrique 4.1](#41-telecharger-le-binaire).

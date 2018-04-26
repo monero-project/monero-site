@@ -15,6 +15,7 @@
 [Importer la chaîne de blocs Monero]({{site.baseurl}}/resources/user-guides/importing_blockchain.html)
 [Outils Monero]({{site.baseurl}}/resources/user-guides/monero_tools.html)
 [Acheter et Conserver Monero en toute sécurité]({{site.baseurl}}/resources/user-guides/securely_purchase.html)
+[Vérifier des binaires sur Windows (Débutant)]({{site.baseurl}}/resources/user-guides/verification-windows-beginner.html)
 
 </div>
             </div>

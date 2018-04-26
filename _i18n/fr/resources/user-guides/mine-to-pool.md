@@ -7,8 +7,8 @@ maintenir la décentralisation du réseau.
 
 # Choisir un mineur
 
-Tout comme pour les pools, il y a de nombreux logiciels d'extraction minière parmis lesquels
-choisir. Celui que vous sélectionnerez dépendra du matériel sur lequel vous aller
+Tout comme pour les pools, il y a de nombreuses applications d'extraction minière parmi lesquelles
+choisir. Celle que vous sélectionnerez dépendra du matériel sur lequel vous aller
 miner. Ce guide va se concentrer sur un mineur pour CPU, et utilisera
 [xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). Alternativement, vous
 pouvez utiliser [wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) ou
@@ -95,7 +95,7 @@ Cela signifie que vous pourriez obtenir une amélioration du taux de hachage d'e
 ## Pages larges sur linux
 
 Tout d'abord, arrêtez le mineur (s'il est en fonctionnement), lancez la
-commande suivante pour activer les pages larges puis redémarrez le logiciel
+commande suivante pour activer les pages larges puis redémarrez l'application
 d'extraction minière en tant que root :
 
 	sudo sysctl -w vm.nr_hugepages=128

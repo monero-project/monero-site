@@ -1,6 +1,6 @@
 ## Systèmes d'exploitation : Windows, Linux, Mac
 
-### Logiciel de comptabilité :  monero-wallet-cli
+### Application de comptabilité :  monero-wallet-cli
 
 - Récupérez votre @mnemonic-seed de 25 mots que vous avez sauvegardé lorsque vous avez créé votre ancien @wallet Monero ;
 
