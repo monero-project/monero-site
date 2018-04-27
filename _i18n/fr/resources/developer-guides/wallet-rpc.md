@@ -30,7 +30,7 @@ curl \
     -H 'Content-Type: application/json'
 ```
 
-Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
+Note: "@piconero" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 piconeroj.**
 
 ### Index of JSON RPC Methods:
 
@@ -158,7 +158,7 @@ Send monero to a number of recipients.
 Inputs:
 
 * *destinations* - array of destinations to receive XMR:
-  * *amount* - unsigned int; Amount to send to each destination, in atomic units.
+  * *amount* - unsigned int; Amount to send to each destination, in piconero(j).
   * *address* - string; Destination public address.
 * *fee* - unsigned int; Ignored, will be automatically calculated.
 * *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
@@ -202,7 +202,7 @@ Same as transfer, but can split into more than one tx if necessary.
 Inputs:
 
 * *destinations* - array of destinations to receive XMR:
-  * *amount* - unsigned int; Amount to send to each destination, in atomic units.
+  * *amount* - unsigned int; Amount to send to each destination, in piconero(j).
   * *address* - string; Destination public address.
 * *fee* - unsigned int; Ignored, will be automatically calculated.
 * *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
@@ -284,7 +284,7 @@ Outputs:
 
 * *tx_hash_list* - array of string;
 * *tx_key_list* - array of string;
-* *tx_blob_list* - array of string; 
+* *tx_blob_list* - array of string;
 
 Example:
 
@@ -1068,7 +1068,7 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
-    
+
 
 ### **rescan_spent**
 

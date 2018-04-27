@@ -29,7 +29,7 @@ curl \
     -H 'Content-Type: application/json'
 ```
 
-Zauważ, że jednostki atomowe są najmniejszą częścią 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 jednostek atomowych.**
+Zauważ, że @piconero jest najmniejszą częścią 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 piconeroj.**
 
 ### Lista metod JSON RPC:
 
@@ -157,7 +157,7 @@ Wysyła Monero do wielu odbiorców.
 Wejście:
 
 * *destinations* - szereg odbiorców XMR:
-  * *amount* - niepodpisana liczba całkowita; kwota do wysłania każdemu z odbiorców w jednostkach atomowych.
+  * *amount* - niepodpisana liczba całkowita; kwota do wysłania każdemu z odbiorców w piconero(j).
   * *address* - ciąg; adres publiczny odbiorcy.
 * *fee* - niepodpisana liczba całkowita; kwota opłaty, gdy zignorowana, zostanie obliczona automatycznie.
 * *mixin* - niepodpisana liczba całkowita; liczba wyjść łańcucha do zmiksowaniah (0 oznacza brak miksowania).
@@ -201,7 +201,7 @@ Funkcja podobna do "transfer", ale potrafi podzielić płatności na więcej ni�
 Wejście:
 
 * *destinations* - szereg odbiorców XMR:
-  * *amount* - niepodpisana liczba całkowita; kwota do wysłania każdemu z odbiorców w jednostkach atomowych.
+  * *amount* - niepodpisana liczba całkowita; kwota do wysłania każdemu z odbiorców w piconero(j).
   * *address* - ciąg; adres publiczny odbiorcy.
 * *fee* - niepodpisana liczba całkowita; kwota opłaty, gdy zignorowana, zostanie obliczona automatycznie.
 * *mixin* - niepodpisana liczba całkowita; liczba wyjść łańcucha do zmiksowaniah (0 oznacza brak miksowania).
@@ -283,7 +283,7 @@ Wynik:
 
 * *tx_hash_list* - szereg ciągów;
 * *tx_key_list* - szereg ciągów;
-* *tx_blob_list* - szereg ciągów; 
+* *tx_blob_list* - szereg ciągów;
 
 Przykład:
 
@@ -1067,7 +1067,7 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
-    
+
 
 ### **rescan_spent**
 

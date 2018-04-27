@@ -4,7 +4,7 @@ Poniżej znajduje się lista funkcji RPC demona monerod, ich wejścia i wyników
 
 Wiele funkcji RPC korzysta z interfejsu demona JSON RPC, podczas gdy inne używają własnego interfejsu, jak przedstawiono poniżej.
 
-Uwaga: "jednostki atomowe" dotyczą najmniejszego ułamka 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 jednostek atomowych.**
+Uwaga: "@piconero" dotyczą najmniejszego ułamka 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 piconeroj.**
 
 ### [Metody JSON RPC](#json-rpc-methods):
 
@@ -85,7 +85,7 @@ Wyszukuje hasz bloku za pomocą jego wysokości.
 Wejście:
 
 * wysokość bloku (liczba całkowita szeregu o długości 1)
-  
+
 Wynik:
 
 * hasz bloku (ciąg)
@@ -170,7 +170,7 @@ Wynik:
   * *nonce* - niepodpisana liczba całkowita; losowy i jednorazowy numer kryptograficzny użyty do wydobycia bloku Monero.
   * *orphan_status* - logiczny typ danych; zazwyczaj `false`. Jeśli `true`, dany blok nie jest częścią najdłuższego łańcucha.
   * *prev_hash* - ciąg; hasz bloku bezpośrednio poprzedzającego dany blok w łańcuchu.
-  * *reward* - niepodpisana liczba całkowita; liczba nowych jednostek atomowych wytworzonych w danym bloku i przyznanych górnikowi. 	Zauważ: 1 XMR = 1e12 jednostek atomowych.
+  * *reward* - niepodpisana liczba całkowita; liczba nowych piconeroj wytworzonych w danym bloku i przyznanych górnikowi. 	Zauważ: 1 XMR = 1e12 piconeroj.
   * *timestamp* - niepodpisana liczba całkowita; czas, kiedy blok został zapisany w łańcuchu.
 * *status* - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.
 
@@ -308,9 +308,9 @@ Wynik:
       * *gen* - transakcje górnika są transakcjami coinbase, inaczej "gen".
         * *height* - wysokość danego bloku, czyli kiedy coinbase został wygenerowany.
     * *vout* - lista wyjść transakcji. Każde wyjście zawiera:
-      * *amount* - kwotę wyjścia w jednostkach atomowych.
-      * *target* - 
-        * *key* - 
+      * *amount* - kwotę wyjścia w piconero(j).
+      * *target* -
+        * *key* -
     * *extra* - zazwyczaj nazywane "numerem identyfikacyjnym transakcji", może być użyte do zawarcia jakiegokolwiek ciągu 32-		bajtowego/64-znakowego heksadecymalnego.
     * *signatures* - zawiera podpisy uczestników transakcji. Transakcje coinbase nie posiadają podpisów.
   * *tx_hashes* - lista haszy transakcji nie-coinbase w bloku. Jeśli nie było takich transakcji, lista będzie pusta.
@@ -543,7 +543,7 @@ Wejście:
   * *ip* - niepodpisana liczba całkowita; adres IP do zbanowania w formacie numerycznym.
   * *ban* - logiczny typ danych; ustaw `true`, aby zbanować.
   * *seconds* - niepodpisana liczba całkowita; liczba sekund do zbanowania węzła.
-  
+
 Wynik:
 
 * *status* - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.
@@ -651,11 +651,11 @@ Wynik:
   * *unlock_time* - jeśli różne od 0, informuje o czasie, kiedy wyjście transakcji będzie gotowe do wydania.
   * *vin* - lista wkładów do transakcji:
     * *key* - publiczny klucz poprzedniego wyjścia, wydanego w tej transakcji.
-      * *amount* - kwota wkładu w jednostkach atomowych.
+      * *amount* - kwota wkładu w piconero(j).
       * *key_offsets* - lista numerycznych offsetów wkładu.
       * *k_image* - obraz klucza danego wkładu.
   * *vout* - lista wyjść transakcji:
-    * *amount* - kwota wyjścia transakcji w jednostkach atomowych.
+    * *amount* - kwota wyjścia transakcji w piconero(j).
     * *target* - informacje na temat celu wyjścia:
       * *key* - jednorazowy klucz publiczny odbiorcy. Ktokolwiek posiada prywatny klucz połączony z tym kluczem, kontroluje wyjście tej 	transakcji.
   * *extra* - zazwyczaj nazywane "numerem identyfikacyjnym płatności", może zostać użyte do włączenia dowolnych 32 bajtów.
@@ -729,7 +729,7 @@ Wynik:
 * *low_mixin* - logiczny typ danych; liczba Mixin jest zbyt niska (`true`) lub nie (`false`).
 * *not_rct* - logiczny typ danych; transakcja nie jest transakcją pierścieniową (`true`) lub jest transakcją pierścieniową (`false`).
 * *not_relayed* - logiczny typ danych; transakcja nie została przekazana (`true`) lub została przekazana (`false`).
-* *overspend* - logiczny typ danych; transakcja korzysta z większej kwoty niż to możliwe (`true`) lub nie (`false`). 
+* *overspend* - logiczny typ danych; transakcja korzysta z większej kwoty niż to możliwe (`true`) lub nie (`false`).
 * *reason* - ciąg; dodatkowe informacje. Obecnie puste lub "Not relayed", jeśli transakcja została zaakceptowana, ale nie przekazana.
 * *too_big* - logiczny typ danych; rozmiar transakcji jest zbyt duży (`true`) lub nie (`false`).
 
@@ -756,7 +756,7 @@ Wynik:
 * *status* - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.
 * *transactions* - lista transakcji w puli pamięci, które nie zostały uwzględnione w bloku:
   * *blob_size* - niepodpisana liczba całkowita; rozmiar pełnego blobu transakcji.
-  * *fee* - niepodpisana liczba całkowita; kwota opłaty wydobywczej uwzględnionej w transakcji w jednostkach atomowych.
+  * *fee* - niepodpisana liczba całkowita; kwota opłaty wydobywczej uwzględnionej w transakcji w piconero(j).
   * *id_hash* - ciąg; hasz numeru identyfikacyjnego transakcji.
   * *kept_by_block* - logiczny typ danych; nie akceptujemy transakcji, które skończyły się wcześsniej, chyba że ustawiono jako `true`.
   * *last_failed_height* - niepodpisana liczba całkowita; jeśli transakcja skończyła się wcześniej, funckja ta określa, na jakiej 	wysokości się to stało.
@@ -769,11 +769,11 @@ Wynik:
     * *unlock_time* - jeśli różne od 0, określa czas, kiedy wyjście transakcji będzie możliwe do wydania.
  * *vin* - lista wkładów do transakcji:
     * *key* - publiczny klucz poprzedniego wyjścia, wydanego w tej transakcji.
-      * *amount* - kwota wkładu w jednostkach atomowych.
+      * *amount* - kwota wkładu w piconero(j).
       * *key_offsets* - lista numerycznych offsetów wkładu.
       * *k_image* - obraz klucza danego wkładu.
   * *vout* - lista wyjść transakcji:
-    * *amount* - kwota wyjścia transakcji w jednostkach atomowych.
+    * *amount* - kwota wyjścia transakcji w piconero(j).
     * *target* - informacje na temat celu wyjścia:
       * *key* - jednorazowy klucz publiczny odbiorcy. Ktokolwiek posiada prywatny klucz połączony z tym kluczem, kontroluje wyjście tej 	transakcji.
   * *extra* - zazwyczaj nazywane "numerem identyfikacyjnym płatności", może zostać użyte do włączenia dowolnych 32 bajtów.
