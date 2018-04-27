@@ -5,7 +5,7 @@ This is a list of the monerod daemon RPC calls, their inputs and outputs, and ex
 
 Many RPC calls use the daemon's JSON RPC interface while others use their own interfaces, as demonstrated below.
 
-Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
+Note: "@piconero" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 piconeroj.**
 
 ### [JSON RPC Methods](#json-rpc-methods):
 
@@ -171,7 +171,7 @@ Outputs:
   * *nonce* - unsigned int; a cryptographic random one-time number used in mining a Monero block.
   * *orphan_status* - boolean; Usually `false`. If `true`, this block is not part of the longest chain.
   * *prev_hash* - string; The hash of the block immediately preceding this block in the chain.
-  * *reward* - unsigned int; The amount of new atomic units generated in this block and rewarded to the miner. Note: 1 XMR = 1e12 atomic units.
+  * *reward* - unsigned int; The amount of new piconeroj generated in this block and rewarded to the miner. Note: 1 XMR = 1e12 piconeroj.
   * *timestamp* - unsigned int; The time the block was recorded into the blockchain.
 * *status* - string; General RPC error code. "OK" means everything looks good.
 
@@ -309,7 +309,7 @@ Outputs:
       * *gen* - Miner txs are coinbase txs, or "gen".
         * *height* - This block height, a.k.a. when the coinbase is generated.
     * *vout* - List of transaction outputs. Each output contains:
-      * *amount* - The amount of the output, in atomic units.
+      * *amount* - The amount of the output, in piconero(j).
       * *target* - 
         * *key* - 
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 byte/64 character hex string.
@@ -652,11 +652,11 @@ Outputs:
   * *unlock_time* - If not 0, this tells when a transaction output is spendable.
   * *vin* - List of inputs into transaction:
     * *key* - The public key of the previous output spent in this transaction.
-      * *amount* - The amount of the input, in atomic units.
+      * *amount* - The amount of the input, in piconero(j).
       * *key_offsets* - A list of integer offets to the input.
       * *k_image* - The key image for the given input
   * *vout* - List of outputs from transaction:
-    * *amount* - Amount of transaction output, in atomic units.
+    * *amount* - Amount of transaction output, in piconero(j).
     * *target* - Output destination information:
       * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
   * *extra* - Usually called the "payment ID" but can be used to include any random 32 bytes.
@@ -757,7 +757,7 @@ Outputs:
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *transactions* - List of transactions in the mempool that have not been included in a block:
   * *blob_size* - unsigned int; The size of the full transaction blob.
-  * *fee* - unsigned int; The amount of the mining fee included in the transaction, in atomic units.
+  * *fee* - unsigned int; The amount of the mining fee included in the transaction, in piconero(j).
   * *id_hash* - string; The transaction ID hash.
   * *kept_by_block* - boolean; We do not accept transactions that timed out before, unless set `true`.
   * *last_failed_height* - unsigned int; If the transaction has previously timed out, this tells at what height that occured.
@@ -770,11 +770,11 @@ Outputs:
     * *unlock_time* - If not 0, this tells when a transaction output is spendable.
     * *vin* - List of inputs into transaction:
       * *key* - The public key of the previous output spent in this transaction.
-        * *amount* - The amount of the input, in atomic units.
+        * *amount* - The amount of the input, in piconero(j).
         * *key_offsets* - A list of integer offets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
-      * *amount* - Amount of transaction output, in atomic units.
+      * *amount* - Amount of transaction output, in piconero(j).
       * *target* - Output destination information:
         * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
