@@ -37,4 +37,4 @@ Support for input using SI prefixes was [added to the Monero codebase](https://g
 
 ### Monerod Implementation
 
-The smallest fraction of Monero in current monerod implementation is also known as an @atomic-unit which actually equals to 1 piconero.
+The smallest fraction of Monero in the current monerod implementation is also known as the @atomic-unit, which is currently one piconero.
