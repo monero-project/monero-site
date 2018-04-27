@@ -31,13 +31,13 @@
     - name: Il Monero Research Lab pubblica il Paper 5
       date: 2016-02-10
       status: completed
-    - name: Hardfork per richiedere un ringsize minimo di 3 per tutte le transazioni
+    - name: Aggiornamento della Rete per richiedere un ringsize minimo di 3 per tutte le transazioni
       date: 2016-03-22
       status: completed
     - name: 0.10.0 Wolfram Warptangent rilasciata
       date: 2016-09-18
       status: completed
-    - name: Hardfork per dividere coinbase in denominazioni
+    - name: Aggiornamento della Rete per dividere coinbase in denominazioni
       date: 2016-09-21
       status: completed
     - name: 0.10.1 Wolfram Warptangent rilasciata
@@ -48,7 +48,7 @@
       status: completed
 - year: 2017
   accomplishments:
-    - name: Hardfork per abilitare Transazioni RingCT
+    - name: Aggiornamento della Rete per abilitare Transazioni RingCT
       date: 2017-01-05
       status: completed
     - name: 0.10.2 rilasciata; vulnerabilità critica patchata
@@ -57,7 +57,7 @@
     - name: 0.10.3.1 Wolfram Warptangent rilasciata
       date: 2017-03-27
       status: completed
-    - name: Hardfork per sistemare il blocksize minimo e l'algoritmo per le fee dinamiche
+    - name: Aggiornamento della Rete per sistemare il blocksize minimo e l'algoritmo per le fee dinamiche
       date: 2017-04-15
       status: completed
     - name: Sito web ridisegnato
@@ -72,38 +72,43 @@
     - name: GUI non più in beta
       date: 2017-09-10
       status: completed
-    - name: Hardfork per incrementare il ringsize minimo a 5 e richiedere l'uso di transazioni RingCT
+    - name: Aggiornamento della Rete per incrementare il ringsize minimo a 5 e richiedere l'uso di transazioni RingCT
       date: 2017-09-15
       status: completed
     - name: 0MQ/ZeroMQ
       date: September, 2017
       status: completed
-    - name: Fluffy blocks
-      date:
-      status: ongoing
-    - name: Porting della GUI su Android
-      date:
-      status: ongoing
+    - name: Subaddresses
+      date: October, 2017
+      status: completed
+    - name: Multi-signatures (multisig)
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: New Proof of Work CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: Network upgrade to increase minimal ringsize to 7, integrate multisig, subaddresses, and change PoW algo
+      date: 2018-04-06
+      status: completed
+    - name: Getmonero.org Localization in French and Polish
+      date: 2018-04-24
+      status: completed
     - name: Redesign del Forum Funding System
       date:
       status: ongoing
-    - name: Subaddresses
+    - name: Range proofs più efficiente per RingCT - Ridurre dimensione delle transazioni
       date:
-      status: ongoing
-    - name: Multi-signatures (multisig)
-      date:
-      status: ongoing
+      status: upcoming
     - name: Rilascio versione alpha di Kovri
       date:
       status: upcoming
-- year: 2018
+- year: 2019
   accomplishments:
-    - name: Ricerche aggiuntive del MRL
-      date:
-      status: upcoming
     - name: Soluzioni Second-layer per velocità e scalabilità
       date:
       status: upcoming
-    - name: Range proofs più efficiente per RingCT - Ridurre dimensione delle transazioni
+    - name: Ricerche aggiuntive del MRL
       date:
       status: upcoming
