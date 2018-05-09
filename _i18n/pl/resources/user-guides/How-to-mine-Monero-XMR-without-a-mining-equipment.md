@@ -22,6 +22,6 @@ Zauważ, że prawdopodobnie będziesz musiał zarejestrować się także w wybra
 
 ### **Krok 4:** Złóż zamówienie i zacznij wydobywać
 
-Przy składaniu [nowego zamówienia](https://www.nicehash.com/?p=orders&new) upewnij się, że wybrałeś algorytm CryptoNightV7 do wydobycia Monero. Jeśli najpierw chcesz się dowiedzieć więcej o składaniu zamówień na NiceHash, zalecamy przeczytanie [często zadawanych pytań](https://www.nicehash.com/?p=faq#faqb0).
+Przy składaniu [nowego zamówienia](https://www.nicehash.com/?p=orders&new) upewnij się, że wybrałeś algorytm CryptoNightV7 do wydobycia Monero (nowy wariant algorytmu wdrożony 6 kwietnia 2018 roku). Jeśli najpierw chcesz się dowiedzieć więcej o składaniu zamówień na NiceHash, zalecamy przeczytanie [często zadawanych pytań](https://www.nicehash.com/?p=faq#faqb0).
 
 Jeżli chcesz zalicytować moc haszowania, wybierz standardowy (licytowany) rodzaj zamówienia, a jeśli chcesz ustalone zamówienie, które nie zostanie przelicytowane, wybierz ustalony rodzaj zamówienia. Status giełdy oraz przybliżone ceny wydobycia dostępne są na [stronie giełdy na żywo](https://www.nicehash.com/index.jsp?p=orders). 
