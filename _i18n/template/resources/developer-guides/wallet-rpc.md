@@ -1,4 +1,3 @@
-{% include untranslated.html %}
 ## Introduction
 
 This is a list of the monero-wallet-rpc calls, their inputs and outputs, and examples of each. The program monero-wallet-rpc replaced the rpc interface that was in simplewallet and then monero-wallet-cli.
@@ -413,7 +412,7 @@ Inputs:
 * *pool* - boolean;
 * *filter_by_height* - boolean;
 * *min_height* - unsigned int;
-* *max_height* - unsigned int;
+* *max_height* - (optional, defaults to max block height) unsigned int;
 
 Outputs:
 
@@ -1068,7 +1067,7 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
-    
+
 
 ### **rescan_spent**
 
