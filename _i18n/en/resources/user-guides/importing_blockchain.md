@@ -40,11 +40,11 @@ If your Monero wallet is on another drive you can use `DriveLetter:` for example
 
 Now type in your command prompt window:
 
-`monero-blockchain-import --verify 1 --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
+`monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
 For example I would type :
 
-`monero-blockchain-import --verify 1 --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
+`monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
 If you downloaded the Blockchain from a trusted, reputable source you may set `verify 0` this will reduce the amount of time to sync the Blockchain.  
 
