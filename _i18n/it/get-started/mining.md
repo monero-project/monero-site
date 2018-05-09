@@ -1,8 +1,8 @@
 <div class="mining">
 <div class="center-xs container description">
-<p>Monero è una cryptomoneta che utilizza mining proof-of-work per raggiungere un consensus distribuito. Qui sotto trovi alcune informazioni e risorse su come iniziare a minare.</p>
+<p>Monero è una criptovaluta che utilizza mining proof-of-work per raggiungere un consensus distribuito. Qui sotto trovi alcune informazioni e risorse su come iniziare a minare.</p>
 
-<p><strong>Il Progetto Monero non consiglia nessuna pool, software o hardware in particolare, e il contenuto che segue è fornito solo a scopo informativo.</strong></p>
+<p><strong>Il progetto Monero non consiglia nessuna pool, software o hardware in particolare, e il contenuto che segue è fornito solo a scopo informativo.</strong></p>
 </div>
 
 <section class="container">
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                    <p>Vedi <a href="{{site.baseurl}}/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
+                    <p>Vedi <a href="{{site.baseurl}}/community/hangouts/"> Canali</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Nota che alcuni miner potrebbero prevedere una fee per lo sviluppatore.</p>
+                       <p>Nota che alcuni miner potrebbero prevedere una commissione per lo sviluppatore.</p>
                     </div>
                     <div class="row center-xs">
                         <p><a href="https://github.com/fireice-uk/xmr-stak" target="_blank" rel="noreferrer noopener">XMR Stak</a></p>

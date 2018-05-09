@@ -12,7 +12,7 @@ Nota: gli hash SHA256 sono listati qui per convenienza, una lista degli hash fir
     <div class="col"><a href="#windows">Windows</a></div>
     <div class="col"><a href="#mac">Mac</a></div>
     <div class="col"><a href="#linux">Linux</a></div>
-    <div class="col"><a href="#arm">Arm (v7 & 8)</a></div>
+    <div class="col"><a href="#arm">Arm (v7 & v8)</a></div>
     <div class="col"><a href="#bsd">BSD</a></div>
     <div class="col"><a href="#source">Sorgente & Blockchain</a></div>
     <div class="col"><a href="#mobilelight">Mobile & Light</a></div>
@@ -73,14 +73,13 @@ Se preferisci usare una blockchain esterna, invece di sincronizzarla da zero, pu
 {% elsif data_downloads.id == "hardware" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>La community di Monero ha recentemente finanziato un <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Hardware Wallet Dedicato</a> che è in fase di creazione. in più, Ledger sta lavorando a <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">integrare Monero nei loro hardware wallet</a>.</p>
+<p>La community di Monero ha recentemente finanziato un <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Hardware Wallet Dedicato</a> che è in fase di progettazione. in più, Ledger sta lavorando a <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">integrare Monero nei loro hardware wallet</a>.</p>
 </div></div>
 
 {% elsif data_downloads.id == "mobilelight" %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-<p>I seguenti sono mobile o light wallet che sono considerati sicuri da membri fidati della community. Se esiste un wallet non listato qui, puoi chiedere alla community di controllarlo. Vai alla nostra
- The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href="/community/hangouts/">Lista canali</a> per vedere dove siamo.</p>
+<p>I seguenti sono mobile o light wallet (portafogli) che sono considerati sicuri da membri fidati della community. Se esiste un wallet non listato qui, puoi chiedere alla community di controllarlo. Vai alla nostra <a href="/community/hangouts/">Lista canali</a> per vedere dove trovarci.</p>
 </div>
 </div>
 <div class="row center-xs">
@@ -125,7 +124,7 @@ Se preferisci usare una blockchain esterna, invece di sincronizzarla da zero, pu
 
 <div class="col-md-6 col-sm-12">
 <h4>
- <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} (Command-Line Tools Only)</a>
+ <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} (Solo riga di comando (CLI))</a>
 </h4>
 <p><strong>SHA256 Hash (CLI):</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p>
 </div>

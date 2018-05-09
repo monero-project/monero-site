@@ -5,6 +5,6 @@ terms: ["", ""]
 summary: ""
 ---
 
-### The Basics
+### Le Basi
 
 {{ page.summary | capitalize }}.

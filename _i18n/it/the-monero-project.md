@@ -10,7 +10,7 @@
                 </div>
 <div class="row start-xs monero-project" markdown="1">
 
-Il progetto Kovri usa crittografia end-to-end, così che nè il mittente nè il ricevente di una transazione con Monero debba rivelare il proprio indirizzo IP all'altra parte o a terze parti (come la blockchain). Questo usando la stessa tecnologia usata nella darknet, i2p (Invisible Internet Protocol). Il progetto è correntememnte in profondo, attivo sviluppo e non è ancora integrato con Monero.
+Il progetto Kovri usa crittografia end-to-end, così che né il mittente né il ricevente di una transazione con Monero debba rivelare il proprio indirizzo IP all'altra parte o a terze parti (come la blockchain). Questo risultato si ottiene utilizzando la stessa tecnologia adottata nella darknet, I2P (Invisible Internet Protocol). Il progetto è attualmente in attivo e costante sviluppo e non è ancora integrato con Monero.
 
 </div>
     <div class="row center-xs">
@@ -27,14 +27,14 @@ Il progetto Kovri usa crittografia end-to-end, così che nè il mittente nè il 
                 </div>
 <div class="row start-xs monero-project" markdown="1">
 
-Il progetto OpenAlias semplifica il pagamento tramite cryptomonete fornendo FQDNs (Fully Qualified Domain Names, es. esempio.openalias.org) per i portafogli Monero, mantenendo la privacy di tutti al sicuro. Il progetto è ormai attivo da un po' ed è già stato implementato in molti portafogli Monero.
+Il progetto OpenAlias semplifica il pagamento tramite criptovalute fornendo FQDNs (Fully Qualified Domain Names, Domini Autoesplicativi, es. esempio.openalias.org) per i portafogli Monero, mantenendo inalterato il livello di privacy. Il progetto è attualmente attivo ed è già stato implementato in numerosi portafogli Monero.
 
 
 
 </div>
 
     <div class="row center-xs">
-        <p><a href="https://www.openalias.org" class="btn-link btn-fixed">Visit OpenAlias Website</a></p>
+        <p><a href="https://www.openalias.org" class="btn-link btn-fixed">Visita li sito OpenAlias</a></p>
     </div>
 
             </div>
