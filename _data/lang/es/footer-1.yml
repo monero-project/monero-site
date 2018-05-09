@@ -1,16 +1,16 @@
-- title: Resources
+- title: Recursos
   subfolderitems:
-  - name: About Monero
+  - name: Sobre Monero
     url: resources/about/
   - name: Moneropedia
     url: resources/moneropedia/
-  - name: Developer Guides
+  - name: Guias de Desarrollo
     url: resources/developer-guides/
-  - name: User Guides
+  - name: Guias de Usuario
     url: resources/user-guides/
   - name: RSS Feed
     url: https://getmonero.org/feed.xml
-- title: IRC Channels
+- title: Canales IRC
   subfolderitems:
   - name: monero
     url: irc://chat.freenode.net/#monero
@@ -26,7 +26,7 @@
     url: irc://chat.freenode.net/#monero-translations
   - name: monero-hardware
     url: irc://chat.freenode.net/#monero-hardware
-- title: Community
+- title: Comunidad
   subfolderitems:
   - name: Reddit
     url: https://reddit.com/r/monero
@@ -38,7 +38,7 @@
     url: https://mattermost.getmonero.org/
   - name: Telegram Chat
     url: https://telegram.me/bitmonero
-- title: The Monero Project
+- title: El Proyecto Monero
   subfolderitems:
   - name: Open Alias
     url: https://openalias.org/
@@ -46,5 +46,5 @@
     url: https://getkovri.org/
   - name: Monero Research Lab
     url: resources/research-lab/
-  - name: Monero Press Kit
+  - name: Kit de Prensa
     url: press-kit
