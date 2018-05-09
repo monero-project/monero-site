@@ -56,7 +56,7 @@ If you are running a full node locally, you need to copy the entire blockchain t
 
 <div class="tab">
     <input id="tab-six" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-six" class="accordion">What is the different between a lightweight and a normal wallet?</label>
+    <label for="tab-six" class="accordion">What is the difference between a lightweight and a normal wallet?</label>
     
 <div class="tab-content" markdown="1">
 
