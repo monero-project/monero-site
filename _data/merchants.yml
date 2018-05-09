@@ -51,6 +51,8 @@
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (Instant)
       url: https://shapeshift.io/
+    - name: SimpleSwap
+      url: https://simpleswap.io
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
     - name: Trovemat.com (ATM)
@@ -222,6 +224,8 @@
       url: http://www.rohan.law
     - name: Rootbox; Simple, no non-sense hosting
       url: https://rootbox.host/
+    - name: Snel - dedicated and VPS hosting
+      url: https://www.snel.com/
     - name: TheBigCoin - Spend Monero Anywhere
       url: https://www.thebigcoin.io
     - name: ThoughtLab - web design, development, and digital marketing
