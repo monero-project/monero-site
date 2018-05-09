@@ -4,7 +4,7 @@ Poniżej znajduje się lista funkcji RPC demona monerod, ich wejścia i wyników
 
 Wiele funkcji RPC korzysta z interfejsu demona JSON RPC, podczas gdy inne używają własnego interfejsu, jak przedstawiono poniżej.
 
-Uwaga: "jednostki atomowe" dotyczą najmniejszego ułamka 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 jednostek atomowych.**
+Uwaga: "jednostki atomowe (@atomic-unit)" dotyczą najmniejszego ułamka 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 jednostek atomowych.**
 
 ### [Metody JSON RPC](#json-rpc-methods):
 
@@ -85,7 +85,7 @@ Wyszukuje hasz bloku za pomocą jego wysokości.
 Wejście:
 
 * wysokość bloku (liczba całkowita szeregu o długości 1)
-  
+
 Wynik:
 
 * hasz bloku (ciąg)
@@ -309,8 +309,8 @@ Wynik:
         * *height* - wysokość danego bloku, czyli kiedy coinbase został wygenerowany.
     * *vout* - lista wyjść transakcji. Każde wyjście zawiera:
       * *amount* - kwotę wyjścia w jednostkach atomowych.
-      * *target* - 
-        * *key* - 
+      * *target* -
+        * *key* -
     * *extra* - zazwyczaj nazywane "numerem identyfikacyjnym transakcji", może być użyte do zawarcia jakiegokolwiek ciągu 32-		bajtowego/64-znakowego heksadecymalnego.
     * *signatures* - zawiera podpisy uczestników transakcji. Transakcje coinbase nie posiadają podpisów.
   * *tx_hashes* - lista haszy transakcji nie-coinbase w bloku. Jeśli nie było takich transakcji, lista będzie pusta.
@@ -543,7 +543,7 @@ Wejście:
   * *ip* - niepodpisana liczba całkowita; adres IP do zbanowania w formacie numerycznym.
   * *ban* - logiczny typ danych; ustaw `true`, aby zbanować.
   * *seconds* - niepodpisana liczba całkowita; liczba sekund do zbanowania węzła.
-  
+
 Wynik:
 
 * *status* - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.
@@ -729,7 +729,7 @@ Wynik:
 * *low_mixin* - logiczny typ danych; liczba Mixin jest zbyt niska (`true`) lub nie (`false`).
 * *not_rct* - logiczny typ danych; transakcja nie jest transakcją pierścieniową (`true`) lub jest transakcją pierścieniową (`false`).
 * *not_relayed* - logiczny typ danych; transakcja nie została przekazana (`true`) lub została przekazana (`false`).
-* *overspend* - logiczny typ danych; transakcja korzysta z większej kwoty niż to możliwe (`true`) lub nie (`false`). 
+* *overspend* - logiczny typ danych; transakcja korzysta z większej kwoty niż to możliwe (`true`) lub nie (`false`).
 * *reason* - ciąg; dodatkowe informacje. Obecnie puste lub "Not relayed", jeśli transakcja została zaakceptowana, ale nie przekazana.
 * *too_big* - logiczny typ danych; rozmiar transakcji jest zbyt duży (`true`) lub nie (`false`).
 

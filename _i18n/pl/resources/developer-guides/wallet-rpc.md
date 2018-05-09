@@ -29,7 +29,7 @@ curl \
     -H 'Content-Type: application/json'
 ```
 
-Zauważ, że jednostki atomowe są najmniejszą częścią 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 jednostek atomowych.**
+Zauważ, że jednostki atomowe (@atomic-unit) są najmniejszą częścią 1 XMR, zgodnie z implementacją monerod. **1 XMR = 1e12 jednostek atomowych.**
 
 ### Lista metod JSON RPC:
 
@@ -283,7 +283,7 @@ Wynik:
 
 * *tx_hash_list* - szereg ciągów;
 * *tx_key_list* - szereg ciągów;
-* *tx_blob_list* - szereg ciągów; 
+* *tx_blob_list* - szereg ciągów;
 
 Przykład:
 
@@ -1067,7 +1067,7 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
-    
+
 
 ### **rescan_spent**
 
