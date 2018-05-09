@@ -224,6 +224,8 @@
       url: https://rootbox.host/
     - name: TheBigCoin - Spend Monero Anywhere
       url: https://www.thebigcoin.io
+    - name: ThoughtLab - web design, development, and digital marketing
+      url: https://www.thoughtlab.com/
     - name: TorGuard - VPN, proxy and email service
       url: https://torguard.net
     - name: Tuxcon Hosting - Mail and Web Hosting
@@ -242,6 +244,8 @@
       url: https://Whattheserver.me
     - name: XMR.to Monero to Bitcoin Payment Service
       url: https://xmr.to/
+    - name: Zeo Agency - SEO consultancy
+      url: https://zeo.org/
 - category: Goods
   id: goods
   merchants:
