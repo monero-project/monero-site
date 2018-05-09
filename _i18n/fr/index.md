@@ -15,7 +15,7 @@
                         <div class="main-info">
                             <h1 id="main-h1">Monero</h1>
                             <h2 id="main-h2">Monnaie Digitale Confidentielle</h2>
-                            <p id="main-text">Monero de l'argent pour un monde connecté. C'est rapide, confidentiel et sécurisé. Avec Monero, vous êtes votre propre banque. Vous pouvez le dépenser en toute sécurité, en sachant que perdonne ne peut voir votre solde ni suivre votre activité.</p>
+                            <p id="main-text">Monero est une monnaie pour un monde connecté. C'est rapide, confidentiel et sécurisé. Avec Monero, vous êtes votre propre banque. Vous pouvez le dépenser en toute sécurité, en sachant que personne ne peut voir votre solde ni suivre votre activité.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Commencer</a></p>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="row middle-xs info-block-row private">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12  why-text">
                             <h3>Monero est sécurisé</h3>
-                                <p>Monero est une cryptomonnaie décentralisée, cela signifie qu'il s'agit d'argent digital sécurisé manœuvré par un réseau d'utilisateurs. Les transactions sont confirmées par un consensus distribué puis enregistrées de manière immuable sur la chaîne de blocs. Il n'est pas nécessaire de faire confiance à des tiers pour garder vos Moneroj en sécurité. </p>
+                                <p>Monero est une cryptomonnaie décentralisée, cela signifie qu'il s'agit d'argent digital sécurisé manœuvré par un réseau d'utilisateurs. Les transactions sont confirmées par un consensus distribué, puis enregistrées de manière immuable sur la chaîne de blocs. Il n'est pas nécessaire de faire confiance à des tiers pour garder vos Moneroj en sécurité. </p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
@@ -45,14 +45,14 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Monero est confidentiel</h3>
-                            <p>Monero utilise des signatures de cercle, des transactions de cercle confidentielles et des adresses furtives pour dissimuler les origines, les montants et les destinations de toutes les transactions. Monero fournit tous les avantage d'une cryptomonnaie décentralisée, sans aucune des concessions de Confidentialité usuelles. </p>
+                            <p>Monero utilise des signatures de cercle, des transactions de cercle confidentielles et des adresses furtives pour dissimuler les origines, les montants et les destinations de toutes les transactions. Monero fournit tous les avantages d'une cryptomonnaie décentralisée, sans aucune des concessions de confidentialité usuelles. </p>
                         </div>
 
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Monero est intraçable</h3>
-                            <p>Les adresses d'émission et de réception, tout comme les montants sont masqués par défaut. Les transaction de la chaîne de blocs de Monero ne peuvent pas être rattachées à un utilisateur particulier où à une identité du monde réel.</p>
+                            <p>Les adresses d'émission et de réception, tout comme les montants sont masqués par défaut. Les transactions de la chaîne de blocs de Monero ne peuvent pas être rattachées à un utilisateur particulier où à une identité du monde réel.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/untraceable-monero.png" alt="Untraceable Monero paths" class="main-icon">
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Monero est fongible</h3>
-                            <p> Monero est <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fongible</a> car il est confidentiel par défaut. Des unités de Monero ne peuvent pas être mis sur liste noir par des vendeurs ou des bourses en raison de leur association à de précédentes transactions.</p>
+                            <p> Monero est <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fongible</a> car il est confidentiel par défaut. Des unités de Monero ne peuvent pas être mises sur liste noire par des vendeurs ou des bourses en raison de leurs associations à de précédentes transactions.</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                                     <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero pour Linux</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Dernière chaîne de blocs</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Chaîne de blocs</a></p>
                                 </div>
                             </div>
                             <div class="row">
@@ -148,7 +148,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>Moneropedia</h2>
-                                <p class="main-resources">Souhaitez-vous rechercher les significations des termes et concepts utilisés dans Monero ? Vous trouverez ici un guide alphabétique des termes et leurs significations des projets Monero et Kovri.</p>
+                                <p class="main-resources">Souhaitez-vous rechercher les significations des termes et concepts utilisés dans Monero ? Vous trouverez ici un guide par ordre alphabétique des termes des projets Monero et Kovri, et de leurs significations.</p>
                                 <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Lire Moneropedia</a></p>
                             </div>
                         </div>
@@ -162,7 +162,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>User Guides</h2>
-                                <p class="main-resources">Les guides pas à pas de tous les aspects de Monero sont séparés par catégories et couvrent tout, de la création d'un portefeuille au soutient du réseau, et même comment modifier ce site.</p>
+                                <p class="main-resources">Les guides pas à pas de tous les aspects de Monero sont classés par catégories et couvrent tout, de la création d'un portefeuille au soutien du réseau, et même comment modifier ce site.</p>
                                 <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Lire les guides utilisateur</a></p>
                             </div>
                         </div>

@@ -53,7 +53,7 @@ La communauté Monero est diverse et variée. Nous venons de toutes parts, mais 
                                 </div>
                             </div>
                             <div class="row start-xs">
-                                <p>La communauté Monero s'appuie sur différents cannaux IRC qui répondent à des besoins spécifiques. Certains pour travailler, et d'autres simplement pour se rencontrer. Vous trouverez les plus populaires d'entre eux ci-dessous.</p>
+                                <p>La communauté Monero s'appuie sur différents canaux IRC qui répondent à des besoins spécifiques. Certains pour travailler, et d'autres simplement pour se rencontrer. Vous trouverez les plus populaires d'entre eux ci-dessous.</p>
                             </div>
                             <div class="row irc">
                                 {% for channel in site.data.irc %}
@@ -75,7 +75,7 @@ La communauté Monero est diverse et variée. Nous venons de toutes parts, mais 
                                 <div class="col"><h2>Stack Exchange</h2></div>
                             </div>
                             <div class="row start-xs">
-                                <p>Le Stack Exchange de Monero est l'emplacement le plus rapide et facile d'accès pour poser des questions et trouver des réponses. Vous trouverez ci-dessous quelques-une des meilleures questions/réponses qui sont fréquemment recherchées.</p>
+                                <p>Le Stack Exchange de Monero est un moyen simple et rapide de poser des questions et trouver des réponses. Vous trouverez ci-dessous quelques-unes des meilleures questions/réponses qui sont fréquemment recherchées.</p>
                             </div>
                             <div class="row start-xs sequestions">
                                 <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Pourquoi Monero a des frais de transactions supérieurs à Bitcoin ?</a>

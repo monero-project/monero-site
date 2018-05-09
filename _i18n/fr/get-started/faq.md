@@ -38,7 +38,7 @@ Une Phrase mnémonique est un lot de 25 mots qui peut être utilisé pour restau
 
 <div class="tab-content" markdown="1">
 
-Monero s'appuie sur trois technologies différentes : les signature de cercle (ring signatures), les transaction confidentielles de cercle (RingCT) et les adresses furtives (stealth addresses). Celles-ci masquent respectivement l'émetteur, le montant et le destinataire d'une transaction. Toutes les transaction sur le réseaux sont ainsi obligatoirement sécurisées. Il est impossible de faire une transaction non-sécurisée par accident. Cette fonctionnalité est une exclusivité de Monero. Votre confidentialité ne repose pas sur la confiance que vous devriez avoir en qui que ce soit.
+Monero s'appuie sur trois technologies différentes : les signature de cercle (ring signatures), les transaction confidentielles de cercle (RingCT) et les adresses furtives (stealth addresses). Celles-ci masquent respectivement l'émetteur, le montant et le destinataire d'une transaction. Toutes les transactions sur le réseau sont ainsi obligatoirement sécurisées. Il est impossible de faire une transaction non-sécurisée par accident. Cette fonctionnalité est une exclusivité de Monero. Votre confidentialité ne repose pas sur la confiance que vous devriez avoir en qui que ce soit.
 </div>
 
 </div>
@@ -49,7 +49,7 @@ Monero s'appuie sur trois technologies différentes : les signature de cercle (r
 
 <div class="tab-content" markdown="1">
 
-Si vous faites fonctionner un nœud complet localement, vous devez copier la totalité de la chaîne de blocs sur votre ordinateur. Cela peut prendre très longtemps, particulièrement sur un vieux disque dur ou derrière une connection internet lente. Si vous utilisez un nœud distant, votre ordinateur doit tout de même demander une copie de toutes les sorties, ce qui peut prendre plusieurs heures. Soyez patients, et si vous préférez sacrifier votre confidentialité pour de meilleurs temps de synchronisation, considérer plutôt l'utilisation d'un portefeuille léger.
+Si vous faites fonctionner un nœud complet localement, vous devez copier la totalité de la chaîne de blocs sur votre ordinateur. Cela peut prendre très longtemps, particulièrement sur un vieux disque dur ou derrière une connection internet lente. Si vous utilisez un nœud distant, votre ordinateur doit tout de même demander une copie de toutes les sorties, ce qui peut prendre plusieurs heures. Soyez patients, et si vous préférez sacrifier votre confidentialité au profit de meilleurs temps de synchronisation, considérer plutôt l'utilisation d'un portefeuille léger.
 </div>
 
 </div>
@@ -60,7 +60,7 @@ Si vous faites fonctionner un nœud complet localement, vous devez copier la tot
 
 <div class="tab-content" markdown="1">
 
-Pour un portefeuille léger, vous communiquer votre clef publique d'audit à un nœud, qui recherche pour vous les transactions qui vous sont adressées sur la chaîne de blocs. Ce nœud saura quand vous aurez reçu des fonds, mais ne saura pas combien, de la part de qui, ou à destination de qui. Selon l'application de portefeuille, vous pourriez pouvoir disposer d'un nœud que vous contrôleriez pour vous prémunir des fuites de confidentialité. Pour plus de confidentialité, utilisez un portefeuille traditionnel qui peut être utilisé avec votre propre nœud.
+Pour un portefeuille léger, vous communiquez votre clef publique d'audit à un nœud qui recherche pour vous les transactions qui vous sont adressées sur la chaîne de blocs. Ce nœud saura quand vous aurez reçu des fonds, mais ne saura pas combien vous avez reçu, de la part de qui vous les avez reçus, ou à destination de qui vous aurez envoyé des fonds. Certains portefeuilles légers permettent d'utiliser un nœud que vous contrôlez et d'éviter ainsi des fuites de données personnelles. Pour plus de confidentialité, utilisez un portefeuille traditionnel qui peut être utilisé avec votre propre nœud.
 </div>
 
 </div>
@@ -71,7 +71,7 @@ Pour un portefeuille léger, vous communiquer votre clef publique d'audit à un 
 
 <div class="tab-content" markdown="1">
 
-Monero n'est pas basé sur Bitcoin. Il est basé sur le protocole CryptoNote. Bitcoin est un système totalement transparent, où chacun peut voir quel est le montant exacte d'une transaction envoyé d'un utilisateur à un autre. Monero masque ces informations afin de protéger la confidentialité de ses utilisateurs dans toutes les transactions. Il dispose également d'une taille de bloc et de frais de transferts dynamiques, d'une preuve de travail (proof of work) résistant aux ASICs, d'une émission de queue de pièces de monnaies, ainsi que d'autres changements.
+Monero n'est pas basé sur Bitcoin. Il est basé sur le protocole CryptoNote. Bitcoin est un système totalement transparent, où chacun peut voir le montant exact d'une transaction envoyé d'un utilisateur à un autre. Monero masque ces informations afin de protéger la confidentialité de ses utilisateurs dans toutes les transactions. Il dispose également d'une taille de bloc et de frais de transferts dynamiques, d'une preuve de travail (proof of work) résistant aux ASICs, d'une émission résiduelle, ainsi que d'autres changements.
 </div>
 
 </div>
@@ -82,14 +82,14 @@ Monero n'est pas basé sur Bitcoin. Il est basé sur le protocole CryptoNote. Bi
 
 <div class="tab-content" markdown="1">
 
-Non, Monero n'a pas de taille de bloc limite fixe. Au lieu de cela, la taille de bloc peut augmenter ou diminuer au fil du temps selon la demande. Son rythme d'augementation est cependant limité afin d'éviter une croissance scandaleuse.
+Non, Monero n'a pas de taille de bloc limite fixe. Au lieu de cela, la taille de bloc peut augmenter ou diminuer au fil du temps selon la demande. Son rythme d'augmentation est cependant limité afin d'éviter une croissance scandaleuse.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-nine" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-nine" class="accordion">Qu"est ce qu'une chaîne de blocs ?</label>
+    <label for="tab-nine" class="accordion">Qu'est ce qu'une chaîne de blocs ?</label>
 
 <div class="tab-content" markdown="1">
 
@@ -104,7 +104,7 @@ Une chaîne de blocs est un système qui enregistre une copie de tous l'historiq
 
 <div class="tab-content" markdown="1">
 
-Kovri est un routeur I2P écrit en C++. I2P est un réseau caché comme Tor avec quelques différences techniques. Kovri est un projet indépendant de Monero, mais fonctionnera avec Monero et quelques autres projets. Kovri masque les diffusions des transactions, de sorte que les autres nœuds ne puisse savoir qui a créé les transactions. En condition adverses, Kovri peut être utilisé pour masquer tous le trafic de Monero à travers I2P, empêchant de savoir que Monero est en cours d'utilisation. Kovri est actuellement en version alpha, et n'est toujours pas pleinement intégré à Monero. Découvrez-en plus sur Kovri sur le [Site web du projet.](https://getkovri.org)
+Kovri est un routeur I2P écrit en C++. I2P est un réseau caché comme Tor avec quelques différences techniques. Kovri est un projet indépendant de Monero, mais fonctionnera avec Monero et quelques autres projets. Kovri masque les diffusions des transactions, de sorte que les autres nœuds ne puisse savoir qui a créé les transactions. En conditions adverses, Kovri peut être utilisé pour masquer tout le trafic de Monero à travers I2P, empêchant de savoir que Monero est en cours d'utilisation. Kovri est actuellement en version alpha, et n'est toujours pas pleinement intégré à Monero. Découvrez-en plus sur Kovri sur le [Site web du projet.](https://getkovri.org)
 </div>
 
 </div>
@@ -129,7 +129,7 @@ Avec Monero, chaque sortie de transaction est uniquement associée à une image 
 
 Nous pouvons également savoir que les montants des transactions sont valides même si la valeur des entrées que vous dépensez et la valeur des sorties que vous envoyez sont chiffrées (celles-ci sont masquées pour tous, sauf le destinataire). Parce que les montants sont chiffrés en utilisant les engagements de Pedersen, cela signifie qu'aucun observateur ne peut dire le montant des entrées et des sorties, mais ils peuvent faire des calculs sur les engagements de Pedersen pour déterminer qu'aucun Monero n'a été créé à partir de rien.
 
-Tant que les montants de sortie chiffrés que vous créez sont égaux à la somme des entrées dépensées (qui incluent une sortie pour le destinataire, une sortie de changement revenant vers vous et les frais de transaction non chiffrés), vous avez une transaction légitime et savez qu'aucun Monero ne s'est créé à partir de rien. Les engagements de Pedersen signifient que les sommes peuvent être vérifiées comme étant égales, mais la valeur de Monero de chacune des sommes et la valeur de Monero des entrées et des sorties individuellement sont indéterminables.
+Tant que les montants de sortie chiffrés que vous créez sont égaux à la somme des entrées dépensées (qui incluent une sortie pour le destinataire, une sortie de monnaie rendue vous étant retournée et les frais de transaction non chiffrés), vous avez une transaction légitime et savez qu'aucun Monero ne s'est créé à partir de rien. Les engagements de Pedersen signifient que les sommes peuvent être vérifiées comme étant égales, mais la valeur en Monero de chacune des sommes et la valeur en Monero des entrées et des sorties individuellement sont indéterminables.
 </div>
 
 </div>

@@ -24,7 +24,7 @@
             <div class="info-block">
                 <div class="row center-xs">
                     <div class="col">
-                        <h2>Minage</h2>
+                        <h2>Extraction minière</h2>
                     </div>
                 </div>
 <div class="row start-xs" markdown="1">
