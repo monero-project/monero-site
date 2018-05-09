@@ -9,7 +9,9 @@ summary: "a cryptographically signed container that details the transfer of Mone
 
 {{ page.summary | capitalize }}.
 
-The parameters of a transaction contain one or more recipient addresses with corresponding amounts of funds and a `mixin_count` parameter that specifies the number of foreign outputs bound to the transaction. The more outputs that are used, a higher degree of obfuscation is possible, but that comes with a cost. Since a transaction gets larger with more outputs, the transaction fee would be higher. It is possible to form a transaction offline, which is a huge benefit for privacy. 
+The parameters of a transaction contain one or more recipient addresses with corresponding amounts of funds and a @ring-size parameter that specifies the number outputs bound to the transaction. The more outputs that are used, a higher degree of obfuscation is possible, but that comes with a cost. Since a transaction gets larger with more outputs, the transaction fee will be higher.
+
+It is possible to form a transaction offline, which offers additional privacy benefits.
 
 A transaction can be uniquely identified with the use of an optional Transaction ID, which is usually represented by a 32-byte string (64 hexadecimal characters).
 
