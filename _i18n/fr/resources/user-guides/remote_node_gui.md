@@ -9,4 +9,4 @@ Vous serez alors envoyé à la page "Paramètres" de la GUI. A ce moment là vou
 plus petit à droite est celui dans lequel vous saisissez le port du nœud. Le port par défaut est `18081` mais si vous utilisez un nœud aléatoire, le port qu'il utilise peut varier.
 node?moneroworld.com utilise le port 18089.
 ### Votre écran devrait ressembler un peu à cela
-<img src="{{site.baseurl}}/resources/user-guides/png/remote_node/remote-node-screenshot.png" width="600">
+<img src="png/remote_node/remote-node-screenshot.png" width="(600)">
