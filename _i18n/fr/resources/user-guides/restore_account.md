@@ -1,8 +1,8 @@
 ## Systèmes d'exploitation : Windows, Linux, Mac
 
-### Application de comptabilité :  monero-wallet-cli
-
 - Récupérez votre @mnemonic-seed de 25 mots que vous avez sauvegardé lorsque vous avez créé votre ancien @wallet Monero ;
+
+### Application de comptabilité :  monero-wallet-cli
 
 - Ouvrez une invite de commande et naviguez sur le disque et dans le répertoire contenant monero-wallet-cli ;
 
@@ -20,3 +20,32 @@
 
 Après avoir saisit les 25 mots de la phrase mnamonique et avoir choisit la hauteur de bloc, monero-wallet-cli va généré la même adresse publique et clef d'audit que pour votre ancien portefeuille et commancera le processus de réfraichissement automatiquement. (Soyez patient car le processus de rafraichissement peut être long)
 
+### Application de comptabilité :  monero-wallet-gui
+
+Lancez `monero-wallet-gui`. Si c'est la première fois que vous le lancez, allez directement à l'étape suivante, sinon, cliquez sur `Cancel` :
+
+![cancel opening](png/restore_from_keys/cancel-opening.png)
+
+Choisissez votre langue `Français`:
+
+![choose language](png/restore_from_keys/choose-language.png)
+
+Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:
+
+![choose restore](png/restore_from_keys/choose-restore.png)
+
+Conservez `Restaurer à partir de la graine` sélectionné, donnez un nom & un emplacement de stockage à votre portefeuille, complétez `Enter your 25 (or 24) word mnemonic seed`. Optionnellement, indiquez une `Hauteur de restauration (facultative)` pour éviter de scanner les blocs les plus anciens. Enfin cliquez sur la flèche `Droite` :
+
+![restore wallet](png/restore_from_keys/restore-wallet.png)
+
+Sur la page suivante, donnez un mot de passe fort à votre portefeuille avant de cliquer sur la flèche `Droite` :
+
+![wallet password](png/restore_from_keys/wallet-password.png)
+
+Indiquez vos paramètres de démon, et cliquez sur la flèche `Droite` :
+
+![daemon settings](png/restore_from_keys/daemon-settings.png)
+
+Cliquez sur `UTILISER MONERO` pour profiter de votre portefeuille restauré :
+
+![all set up](png/restore_from_keys/all-set-up.png)
