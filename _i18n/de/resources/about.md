@@ -7,14 +7,14 @@
                     <div class="info-block text-adapt">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>A Brief History</h2>
+                                <h2>Eine kurze Geschichte</h2>
                             </div>
                         </div>
 <div markdown="1"> 
 
-Monero was launched in April 2014. It was a fair, pre-announced launch of the CryptoNote reference code. There was no premine or instamine, and no portion of the block reward goes to development. See the original Bitcointalk thread here. The founder, thankful_for_today, proposed some controversial changes that the community disagreed with. A fallout ensued, and the Monero Core Team forked the project with the community following this new Core Team. This Core Team has provided oversight since.
+Monero startete im April 2014. Es war ein fairer, zuvor angekündigter Start des CryptoNote Referenz Codes. Es gab keinen Premine oder Instamin, und kein Teil der Block Belohnung geht an die Entwickler. Siehe der originale Bitcointalk Thread hier. Der Gründer, thankful_for_today, schlug einige kontroverse Änderungen vor, die die Community ablehnte. Auf einige Konsequenzen folgte ein Fork durch das Monero Core Team in ein neues Projekt mit neuem Core Team. Seitdem hat dieses Core Team Aufsicht.
 
-Monero has made several large improvements since launch. The blockchain was migrated to a different database structure to provide greater efficiency and flexibility, minimum ring signature sizes were set so that all transactions were private by mandate, and RingCT was implemented to hide the transaction amounts. Nearly all improvements have provided improvements to security or privacy, or they have facilitated use. Monero continues to develop with goals of privacy and security first, ease of use and efficiency second.
+Monero hat einige große Verbesserungen seit dem Start vorgenommen. Die Datenbank Struktur, die die Blockchain speichert, wurde optimiert für höhere Eiffizienz und Flexibilität. Außerdem wurde eine minimale Größe Ring Sinaturen festgelegt, sodass alle Transaktionen standardmäßig privat sind. Und RingCT wurde implementiert, das die Transaktionsbeträge verbirgt. Fast alle Verbesserungen betreffen die Sicherheit oder Privatsphäre, oder verbessern die Benutzung. Monero wird immer weiter entwickelt. Mit dem primären Ziel der Privatsphäre und Sicherheit und dem sekundären Ziel der einfachen Bedienbarkeit und Effizienz.
                            
 </div>
                     </div>
@@ -27,25 +27,25 @@ Monero has made several large improvements since launch. The blockchain was migr
                     <div class="info-block text-adapt">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Our Values</h2>
+                                <h2>Unsere Werte</h2>
                             </div>
                         </div>
                         
 <div markdown="1">
 
-Monero is more than just a technology. It’s also what the technology stands for. Some of the important guiding philosophies are listed below.
+Monero ist mehr als nur die Technologie. Es ist auch das, wofür die Technologie steht. Eingie der wichtigen leitenden Philosophien sind unten gelistet.
 
-### Security
+### Sicherheit
 
-Users must be able to trust Monero with their transactions, without risk of error or attack. Monero gives the full block reward to the miners, who are the most critical members of the network who provide this security. Transactions are cryptographically secure using the latest and most resilient encryption tools available.
+Benutzer müssen Monero mit ihren Transaktionen trauen, ohne das Risiko eines Fehlers oder Angriffs. Monero gibt die vollständige Block Belohnung an die Miner, die die entscheidenden Mitglieder des Netzwerks sind, die Sicherheit bieten. Transaktionen sind kryptographisch sicher durch Vewendung der neuesten und stabilsten Verschlüsselungstools.
 
-### Privacy 
+### Privatsphäre 
 
-Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
+Monero nimmt Privatsphäre ernst. Monero muss in der Lage sein, Nutzer von dem Gerichtshof zu schützen und, in Extremstfällen, vor der Todesstrafe. Diese Level an Privatsphäre muss vollständig für alle Nutzer nutzbar sein, egal ob sie erfahren im Umgang mit Technologie sind oder nicht wissen, wie Monero funktioniert. Ein Benutzer muss Monero in der Weise trauen, dass er sich nicht gezwungen fühlt, seine Gewohnheiten beim Bezahlen umzustellen.
 
-### Decentralization 
+### Dezentralisierung 
                           
-Monero is committed to providing the maximum amount of decentralization. With Monero, you do not have to trust anyone else on the network, and it is not run by any large group. An accessible “Proof of Work” algorithm makes it easy to mine Monero on normal computers, which makes it more difficult for someone to purchase a large amount of mining power. Nodes connect to each other with I2P to lower the risks of revealing sensitive transaction information and censorship (tba). Development decisions are extremely clear and open to public discussion. Developer meeting logs are published online in their entirety and visible by all. 
+Monero verpflichtet sich, maximale Dezentralisierung zu ermöglichen. Mit Monero musst du niemand anderem im Netzwerk trauen, und es wird von keiner großen Gruppen betrieben. Ein zugänglicher "Proof of Work" Algorithmus macht das Minen von Monero auf normalen Computern einfach, was es schwieriger für jemanden macht, große Miningpower zu kaufen. Nodes verbinden sich über I2P, um das Risiko der Offenlegung sensibler Transaktionsinformationen sowie Zensur zu minimieren (Einzelheiten werden noch bekannt gegeben). Entscheidungen in der Entwicklung sind sehr klar und offen für öffentliche Diskussion. Die Logs der Entwicklertreffen werden online veröffentlicht und sind vollständig für jeden einsehbar.
                            
 </div>
                     </div>
