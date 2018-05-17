@@ -1,11 +1,11 @@
 {% include untranslated.html %}
 <div class="tab">
     <input id="tab-one" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-one" class="accordion">How does Monero have value?</label>
+    <label for="tab-one" class="accordion">Warum hat Monero einen Wert?</label>
     
 <div class="tab-content" markdown="1">
 
-Monero has value because people are willing to buy it. If no one is willing to buy Monero, then it will not have any value. Monero’s price increases if demand exceeds supply, and it decreases if supply exceeds demand.
+Monero hat einen Wert, weil Menschen Einheiten kaufen wollen. Wenn keiner Monero kaufen will, dann hat es keinen Wert. Der Preis von Monero steigt, wenn die Nachfrage höher ist als das Angebot, und sinkt, wenn – umgekehrt – das Angebot höher ist als die Nachfrage.
 
 </div>
 
@@ -13,124 +13,124 @@ Monero has value because people are willing to buy it. If no one is willing to b
 
 <div class="tab">
     <input id="tab-two" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-two" class="accordion">How can I get Monero?</label>
+    <label for="tab-two" class="accordion">Wie bekomme ich Monero?</label>
     
 <div class="tab-content" markdown="1">
 
-You can buy Monero from an exchange or from an individual. Alternatively, you can try mining Monero to get coins from the block reward.
+Du kannst Monero über eine Börse kaufen oder direkt mit einer Person handeln. Alternativ kannst du Monero minen und Einheiten durch den Block Reward erhalten.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-three" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-three" class="accordion">What is a mnemonic seed?</label>
+    <label for="tab-three" class="accordion">Was ist ein Mnemonic Seed?</label>
     
 <div class="tab-content" markdown="1">
 
-A mnemonic seed is a set of 25 words that can be used to restore your account anywhere. Keep these words safe and do not share them with someone else. You can use this seed to restore your account, even if your computer crashes.
+Ein Mnemonic Seed ist ein Satz von 25 Wörtern, mit denen du deinen Account immer wiederherstellen kannst – selbst wenn dein Computer abgestürzt ist. Halte diese Wörter sich und teile sie nicht mit anderen Personen.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-four" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-four" class="accordion">How is Monero’s privacy different from other coins?</label>
+    <label for="tab-four" class="accordion">Wie unterscheidet sich die Privatspähre durch Monero von der anderer Kryptowährungen?</label>
     
 <div class="tab-content" markdown="1">
 
-Monero uses three different privacy technologies: ring signatures, ring confidential transactions (RingCT), and stealth addresses. These hide the sender, amount, and receiver in the transaction, respectively. All transactions on the network are private by mandate; there is no way to accidentally send a transparent transaction. This feature is exclusive to Monero. You do not need to trust anyone else with your privacy.
+Monero verwendet drei verschiedene Technologien, die die Privatsphäre ermöglichen: Ring Signaturen, Ring Confidential Transactions (RingCT) sowie Stealth Adressen. Mittels dieser werden Sender, Empfänger und Betrag einer jeden Transaction versteckt. Es gibt keinen Weg, versehentlich eine transparente Transaktion zu senden. Dieses Feature ist exklusiv bei Monero vorhanden. Du braucht keinem anderen deine Privatspähre anvertrauen.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-five" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-five" class="accordion">Why is my wallet taking so long to sync?</label>
+    <label for="tab-five" class="accordion">Warum braucht mein Wallet so lange zum Synchronisieren?</label>
     
 <div class="tab-content" markdown="1">
 
-If you are running a full node locally, you need to copy the entire blockchain to your computer. This can take a long time, especially on an old hard drive or slow internet connection. If you are using a remote node, your computer still needs to request a copy of all the outputs, which can take several hours. Be patient, and if you would like to sacrifice some privacy for faster sync times, consider using a lightweight wallet instead.
+Wenn du eine Full Node lokal laufen lässt, muss die gesamte Blockchain auf deinen Computer kopiert werden. Dies kann sehr lange dauern, besonders unter der Verwendung von alten Festplatten oder bei langsamer Internetverbindung. Wenn du eine Remote Node verwendest, dann muss dein Computer trotzdem eine Kopie aller Outputs anfordern, was einige Stunden in Anspruch nehmen kann. Sei geduldig; wenn du auf Kosten deiner Privatsphäre schneller synchronisieren möchtest, verwende stattdessen ein leichtgewichtiges (lightweight) Wallet.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-six" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-six" class="accordion">What is the different between a lightweight and a normal wallet?</label>
+    <label for="tab-six" class="accordion">Was ist der Unterschied zwischen einem leichtgewichtigen (lightweight) und einem normalen Wallet?</label>
     
 <div class="tab-content" markdown="1">
 
-For a lightweight wallet, you give your view key to a node, who scans the blockchain and looks for incoming transactions to your account on your behalf. This node will know when you receive money, but it will not know how much you receive, who you received it from, or who you are sending money to. Depending on your wallet software, you may be able to use a node you control to avoid privacy leaks. For more privacy, use a normal wallet, which can be used with your own node.
+Bei einem leichtgewichtigen Wallet gibt du einer Node deinen Viewkey, die für dich die Blockchain auf einkommende Transaktionen prüft. Diese Node weiß, wann du Geld erhalten hast, aber nicht, wie viel du erhalten hast und von wem; sie weiß auch nicht, an wen Geld gesendet wurde. Je nach verwendeter Wallet Software solltest du eine Node benutzen, die du kontrollierst, um Leaks bei der Privatsphäre zu vermeiden. Nutze ein normales Wallet zusammen mit einer eigenen Node für erhöhte Privatsphäre.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-seven" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-seven" class="accordion">How is Monero different from Bitcoin?</label>
+    <label for="tab-seven" class="accordion">Wie unterscheidet sich Monero von Bitcoin?</label>
     
 <div class="tab-content" markdown="1">
 
-Monero is not based on Bitcoin. It is based on the CryptoNote protocol. Bitcoin is a completely transparent system, where people can see exactly how much money is being sent from one user to another. Monero hides this information to protect user privacy in all transactions. It also has a dynamic block size and dynamic fees, an ASIC-resistant proof of work, and a tail coin emission, among several other changes.
+Monero basiert nicht auf Bitcoin. Es basiert auf dem CryptoNote Protokoll. Bitcoin ist ein vollständig transparentes System, bei dem genau eingesehen werden kann, wie viel Geld von wem an wen geschickt wurde. Monero versteckt all diese Informationen in allen Transaktionen. Zudem hat Monero eine dynamische Blockgröße und dynamische Gebühren, einen ASIC resistenten Mining (PoW) Algorithmus und neben der Tail Coin Emission einige andere Änderungen.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-eight" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-eight" class="accordion">Does Monero have a block size limit?</label>
+    <label for="tab-eight" class="accordion">Ist bei Monero die Blockgröße begrenzt?</label>
     
 <div class="tab-content" markdown="1">
 
-No, Monero does not have a hard block size limit. Instead, the block size can increase or decrease over time based on demand. It is capped at a certain growth rate to prevent outrageous growth.
+Nein, Monero hat kein hartes Limit der Blockgröße. Stattdessen kann die Blockgröße über Zeit höher oder niedriger werden, basierend auf Nachfrage. Sie ist auf eine gewisse Wachstumsrate begrenzt, um extremes Wachstum zu unterbinden.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-nine" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-nine" class="accordion">What is a blockchain?</label>
+    <label for="tab-nine" class="accordion">Was ist eine Blockchain?</label>
     
 <div class="tab-content" markdown="1">
 
-A blockchain is a system that stores a copy of all transaction history on the Monero network. Every two minutes, a new block with the latest transaction information is added to the blockchain. This chain allows the network to verify the amount of money accounts have and make it resilient to attacks and centralization attempts.
+Eine Blockchain ist ein System, welches eine Kopie der gesamten Transaktionshistorie im Monero Netzwerk speichert. Alle zwei Minuten wird ein weiterer Block mit den neuesten Transaktionen an die Blockchain angefügt. Diese Kette von Blöcke (Blockchain) erlaubt dem Netzwerk, die Beträge der Konten zu überprüfen und macht es widerstandsfähig gegen Angriffe oder Versuchen von Zentralisierung.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-ten" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-ten" class="accordion">What is Kovri?</label>
+    <label for="tab-ten" class="accordion">Was ist Kovri?</label>
     
 <div class="tab-content" markdown="1">
 
-Kovri is an I2P router written in C++. I2P is a hidden network like Tor with several technical differences. Kovri is an independent project of Monero, but it will work with Monero and several other projects. Kovri hides the transaction broadcast, so other nodes do not know who created transactions. In adversarial conditions, Kovri can be used to hide all Monero traffic through I2P, which would prevent people from knowing Monero is being used. Kovri is currently in alpha, and it is not yet fully integrated in Monero. Learn more about Kovri at the [project website.](https://getkovri.org)
+Kovri ist ein I2P Router, der in C++ geschrieben ist. I2P ist ein verstecktes Netwerk wie Tor mit einigen technischen Unterschieden. Kovri ist ein unabhängiges Projekt von Monero, aber es wird neben Monero auch für andere Projekte verwendbar sein. Kovri versteckt den Broadcast der Transaktion, sodass andere Nodes nicht wissen, wer die Transaktion erstellt hat. Kovri kann benutzt werden, um den gesamten Monero Netzwerkverkehr durch I2P zu leiten, wodurch nicht festgestellt werden kann, dass Monero verwendet wird. Momentan ist Kovri in der Alpha Phase und noch nicht vollständig in Monero integriert. Lerne mehr über Kovri auf der [Website des Projektes](https://getkovri.org).
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-eleven" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-eleven" class="accordion">What is fungibility, and why is it important?</label>
+    <label for="tab-eleven" class="accordion">Was ist Fungibilität und warum ist sie wichtig?</label>
     
 <div class="tab-content" markdown="1">
 
-Fungibility is a simple property of money such that there are no differences between two amounts of the same value. If two people exchanged a 10 and two 5’s, then no one would lose out. However, let’s suppose that everyone knows the 10 was previously used in a ransomware attack. Is the other person still going to make the trade? Probably not, even if the person with the 10 has no connection with the ransomware. This is a problem, since the receiver of money needs to constantly check the money they are receiving to not end up with tainted coins. Monero is fungible, which means people do not need to go through this effort.
+Fungibilität ist die einfache Eigenschaft von Geld, dass kein Unterschied zwischen zwei gleichen Beträgen besteht. Wenn zwei Personen einen Zehner und zwei Fünfer tauschten, dann wäre niemand im Nachteil. Nehmen wir jedoch an, dass der Zehner zuvor bei einem Ransomware Angriff verwendet wurde und dies allgemein bekannt ist: Würde die andere Person nichtsdestotrotz den Handel durchführen? Vermutlich nicht, selbst wenn die Person mit dem Zehner keine Verbindung zu der Ransomware hat. Dies ist ein Problem, da der Empfänger dauernd das Geld prüfen muss, um letzten Endes kein beschmutztes Geld zu erhalten. Monero ist fungibel, wodurch niemand diesen Aufwand betreiben muss.
 </div>
 
 </div>
 
 <div class="tab">
     <input id="tab-twelve" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-twelve" class="accordion">If Monero is so private how do we know they're not being created out of thin air?</label>
+    <label for="tab-twelve" class="accordion">Wenn Monero so privat ist: Wie wissen wir, dass Einheiten nicht aus dem Nichts erzeugt werden?</label>
     
 <div class="tab-content" markdown="1">
-In Monero, every transaction output is uniquely associated with a key image that can only be generated by the holder of that output. Key images that are used more than once are rejected by the miners as double-spends and cannot be added to a valid block. When a new transaction is received, miners verify that the key image does not already exist for a previous transaction to ensure it's not a double-spend.
+Bei Monero ist jeder Transaktions-Output einzigartig mit einem Key Image assoziert, welches nur von dem Inhaber des Outputs generiert werden kann. Key Images, die mehr als ein Mal verwendet werden, werden von den Minern als Double-Spending abgelehnt und können nicht zu einem validen Block hinzugefügt werden. Wenn eine neue Transaktion empfangen wurde, überprüfen die Miner, dass ein Key Image nicht bereits in einer vorherigen Transaktion existiert, um zu versichern, dass es sich nicht um ein Double-Spend handelt.
 
-We can also know that transaction amounts are valid even though the value of the inputs that you are spending and the value of the outputs you are sending are encrypted (these are hidden to everyone except the recipient). Because the amounts are encrypted using Pedersen commitments what this means is that no observers can tell the amounts of the inputs and outputs, but they can do math on the Pedersen commitments to determine that no Monero was created out of thin air.
+Außerdem wissen wir, dass die Transaktionsbeträge gültig sind, obwohl die Beträge der Inputs und Outputs verschlüsselt sind (versteckt für jeden, bis auf den Empfänger). Weil die Beträge mittels eines Pedersen Commitment-Verfahrens verschlüsselt sind, kann zwar kein Beobachter die Beträge selbst sehen, aber mathematisch prüfen, dass keine Monero aus dem Nichts erstellt wurden.
 
-As long as the encrypted output amounts you create is equal to the sum of the inputs that are being spent (which include an output for the recipient and a change output back to yourself and the unencrypted transaction fee), then you have a legitimate transaction and know no Monero is being created out of thin air. Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable.
+Solange die verschlüsselten Output Beträge, die du erstellst, der Summe der Inputs gleichen, die verbraucht werden (diese beinhalten einen Output für den Empfänger und einen Change Output an dich selbst sowie eine unverschlüsselte Transaktionsgebühr), hast du eine legitime Transaktion und weißt, dass keine Monero aus dem Nichts geschaffen wurden. Das Pedersen Commitment-Verfahren bedeutet, dass die Summen als gleich überprüft werden können, ohne dass die Werte selbst bekannt sind.
 </div>
 
 </div>
