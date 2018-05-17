@@ -1,0 +1,6 @@
+- name: Rechtliches
+  url: legal
+- name: Quellcode
+  url: https://github.com/monero-project
+- name: Technische Daten
+  url: technical-specs/

@@ -1,0 +1,99 @@
+langs:
+  en: English
+  es: Español
+  de: Deutsch
+  it: Italiano
+  pl: Polski
+
+global:
+  date: '%Y/%m/%d'
+  monero: Monero
+  getting_started: Getting Started
+  copyright: Copyright
+  monero_project: The Monero Project
+  sitename: getmonero.org, The Monero Project
+  wiki: Moneropedia
+  tags: Artikel pro Tag
+  wikimeta: on Moneropedia, the open encyclopedia of Monero knowledge
+  tagsmeta: Alle Monero Blog Artikel die getagged sind
+  titlemeta: on the home of Monero, a digital currency that is secure, private, and untraceable
+  terms: Terms
+  privacy: Datenschutz
+  copyright: Urheberrecht
+  edit: Diese Seite bearbeiten
+  untranslated: Diese Seite ist noch nicht übersetzt. Wenn du uns mit Übersetzungen unterstützen möchtest, schau bitte hier
+titles:
+  index: Start
+  whatismonero: Was ist Monero (XMR)?
+  using: Monero benutzen
+  accepting: Monero akzeptieren
+  contributing: Beteilige dich an Monero
+  mining: Monero-Mining 
+  faq: FAQ
+  downloads: Downloads
+  allposts: Alle Blog Artikel
+  team: Monero Team
+  hangouts: Hangouts
+  events: Events
+  sponsorships: Sponsorships
+  merchants: Merchants & Services
+  about: Über Monero
+  roadmap: Roadmap
+  researchlab: Monero Research Lab
+  moneropedia: Moneropedia
+  userguides: User Guides
+  developerguides: Developer Guides
+  technicalspecs: Technical Specs
+  themoneroproject: Das Monero Projekt
+  presskit: Monero Pressemappe
+  legal: Rechtliches
+  ffs: Forums-Spenden System
+  ffs-cp: Completed Proposals
+  ffs-fr: Unterstützung nötig
+  ffs-ideas: Ideen
+  ffs-ot: Offene Aufgaben
+  ffs-wip: Bereits in Arbeit
+  blogbytag: Blog by Tag
+index:
+  page_title: "Monero - sicher, privat, unauffindbar"
+  what_is_1: Was ist
+  what_is_2: " ?"
+  what_is_orange_block: "Monero ist eine sichere, private und nicht zurückverfolgbare Währung, die open-source ist und jedem frei zur Verfügung steht."
+  what_is_text_block_1: "Mit Monero bist du deine eigene Bank; Du hast die komplette Kontrolle über dein Geld. Mit Monero sind sämtliche Accounts und Transaktionen privat."
+  what_is_text_block_2: "Want to find out more? An overview of Monero's main features are below. If you'd like to try Monero for yourself the"
+  what_is_text_block_3: "Getting Started"
+  what_is_text_block_4: "section is an excellent launching point."
+  news: Neuigkeiten
+  the_latest: The Latest
+  private: privat
+  secure: sicher
+  untraceable: nicht zurückverfolgbar
+  private_text: "Monero uses hidden amounts, origins and destinations of @transactions. This means that nobody knows how much you're sending in a transaction except you. This ensures that your purchases and other transfers remain private by default."
+  untraceable_text: "By taking advantage of @ring-signatures, Monero allows you to send and receive funds privately. Even though your transactions are publicly verifiable on the @blockchain, transactions use digital signatures that specify a group of signers such that the person verifying can’t tell which person actually produced the signature. Because it's ambiguous which funds have been spent, your transaction remains private and cannot be traced back to you."
+  secure_text: "Monero uses a distributed peer-to-peer @consensus network and every transaction is cryptographically signed. Your coins are safely stored on the @blockchain and can be restored at any time with the use of a 25 word @mnemonic-seed on any computer with the Monero software. Wallet files are encrypted on disk and locked with a passphrase, rendering them useless if stolen."
+  how_do_i_1: "How do I "
+  how_do_i_2: " ?"
+  get_started: get started
+  get_started_1: "The fastest way to start using Monero is with a web @account manager such as "
+  mymonero: "MyMonero"
+  get_started_2: "."
+  get_started_3: "Alternatively, if you would like to run a [full Monero node](/getting-started/running) you can download the client and a kick-starter @blockchain (to bring your local client up to speed) using the download link on the right."
+  where_can_i: Where can I
+  download_1: download
+  download_2: " ?"
+  different_os: "Need it for a different operating system?"
+  all_downloads: View all available downloads here
+  c_download: Download
+  monero_for: Monero for
+  latest_blockchain: Latest @Blockchain
+blog:
+  title_1: All
+  title_2: Blog
+  title_3: Posts
+  tagged: Tagged under
+  author: Posted by
+  date: Posted at
+  forum: Click here to join the discussion for this entry on the Monero Forum
+tags:
+  all: Articles by Tag
+  notags: There are no posts for this tag.
