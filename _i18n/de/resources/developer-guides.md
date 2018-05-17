@@ -2,18 +2,18 @@
 <div class="guides">
 
 <div class="center-xs container description">
-<p class="text-center">Please note: the guides below are currently out of date, but are considered a good starting point for most calls. </p>
+<p class="text-center">Bitte beachte: Die Anleitungen unten sind momentan veraltet, werden aber als guter Anfang für die meisten Aufrufe erachtet.</p>
 </div>
 
 <section class="container full">
     <div class="info-block">
-        <h2>RPC Documetation</h2>
+        <h2>RPC Dokumentation</h2>
 <div markdown="1">
 
-[Daemon RPC Documentation](daemon-rpc.html)
-[Wallet RPC Documentation](wallet-rpc.html)
+[Daemon RPC Dokumentation](daemon-rpc.html)
+[Wallet RPC Dokumentation](wallet-rpc.html)
 
-More coming soon...
+Demnächst mehr verfügbar...
 </div>
     </div>
 </section>
