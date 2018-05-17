@@ -1,8 +1,8 @@
 <div class="mining">
 <div class="center-xs container description">
-<p>Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.</p>
+<p>Monero ist eine Kryptowährung, die auf Proof of Work beruht, um verteilten Konsens zu schaffen. Unten findest du einige Informationen und Ressourcen zum Einstieg ins Mining.</p>
 
-<p><strong>The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.</strong></p>
+<p><strong>Das Monero Projekt befürwortet keinen bestimmten Pool, keine bestimmte Software und keine bestimmte Hardware. Der Inhalt unten wird aus rein informationellen Zwecken zur Verfügung gestellt.</strong></p>
 </div>
 
 <section class="container">
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                    <p>See <a href="{{site.baseurl}}/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
+                    <p>Siehe <a href="{{site.baseurl}}/community/hangouts/"> Hangouts</a>, <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">/r/moneromining</a> and <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>A listing of trusted Monero pools is found <a href="http://moneropools.com/"> here</a>.</p>
+                       <p>Eine Liste von vertrauten Monero Pools findest du <a href="http://moneropools.com/">hier</a>.</p>
                     </div>
                 </div>
             </div>
@@ -41,11 +41,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>Hardware Benchmarking</h2>
+                            <h2>Hardware Leistungsvergleich</h2>
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>See <a href="http://monerobenchmarks.info/">here</a> for a listing of GPUs/CPUs and their respective hashrates.</p>
+                       <p>Siehe <a href="http://monerobenchmarks.info/">hier</a> für eine Liste von GPUs/CPUs mit ihrer jeweiligen Hashrate.</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>Note that some miners may have developer fees.</p>
+                       <p>Beachte, dass einige Miner Entwickler Fees haben.</p>
                     </div>
                     <div class="row center-xs">
                         <p><a href="https://github.com/fireice-uk/xmr-stak" target="_blank" rel="noreferrer noopener">XMR Stak</a></p>
