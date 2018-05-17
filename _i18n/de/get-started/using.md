@@ -1,6 +1,6 @@
 {% include untranslated.html %}
 <div class="text-center container description">
-    <p>Transacting with Monero can be made easy. This page is designed to guide users in that process.</p>
+    <p>Die Benutzung von Monero ist sehr einfach. Diese Seite führt den Nutzer durch den Prozess.</p>
 </div>
 <div class="using">
     <section class="container">
@@ -10,11 +10,11 @@
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>1. Learn</h2>
+                            <h2>1. Lerne</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the <a href="{{site.baseurl}}/get-started/what-is-monero/">What is Monero</a> page. The <a href="https://github.com/monero-project">source code</a> is also available for review and discussion.</p>
+                        <p>Monero ist eine sichere und private Kryptowährung, die nicht zurückverfolgbar ist. Den Entwicklern und der Community liegt es daran, diese Werte zu wahren. Weiteres erfährst du auf der <a href="{{site.baseurl}}/get-started/what-is-monero/">Was ist Monero</a> Seite. Der <a href="https://github.com/monero-project">Quellcode</a> ist auch zugänglich für eine Überprüfung sowie Diskussion.</p>
                     </div>
                 </div>
             </div>
@@ -27,11 +27,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>2. Request Support</h2>
+                            <h2>2. Bitte um Hilfe</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>There is a large and supportive community that will assist if you experience any difficulty. See the <a href="{{site.baseurl}}/community/hangouts/">Hangouts</a> page for more information.</p>
+                        <p>Die große und hilfsbereite Community hilft dir, wenn du Schwierigkeiten hast. Auf der <a href="{{site.baseurl}}/community/hangouts/">Hangouts</a> Seite findest du weitere Informationen.</p>
                     </div>
                 </div>
             </div>
@@ -39,12 +39,12 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>3. Generate a Wallet</h2>
+                            <h2>3. Erstelle ein Wallet</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>A Monero wallet is required to secure your own funds. See the <a href="{{site.baseurl}}/downloads/">Downloads</a> page for a listing of available wallets.</p>
-                        <p>The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend <a href="https://interserver.net/dock/vps-231552.html">InterServer.net</a> using the 'MONERO' coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or <a href="https://interserver.net/dock/vps-231552.html">our affiliate link</a> will also assist in the ongoing funding of Monero development.</p>
+                        <p>Ein Monero Wallet wird benötigt, um deine eigenen Gelder zu sichern. Auf der <a href="{{site.baseurl}}/downloads/">Downloads</a> Seite ist eine Liste von verfügbaren Wallets.</p>
+                        <p>Der einfachste Weg, eine Monero Node zu betreiben, ohne die häusliche Bandbreite zu stören, ist der Kauf eines VPS (Virtual Private Server). Wir empfehlen <a href="https://interserver.net/dock/vps-231552.html">InterServer.net</a> mit der Verwendung des 'MONERO' Gutscheincodes, um einen Rabatt auf die bereits günstigen $6/Monat zu erhalten. Die Verwendung diese Gutscheincodes und/oder der Nutzung <a href="https://interserver.net/dock/vps-231552.html">unseres Affiliate Link</a> unterstützt zudem die laufende Entwicklung an Monero.</p>
                     </div>
                 </div>
             </div>
@@ -57,11 +57,11 @@
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>4. Acquire Monero</h2>
+                            <h2>4. Erwerbe Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be purchased on an <a href="{{site.baseurl}}/community/merchants#exchanges">exchange</a> with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via <a href="{{site.baseurl}}/get-started/mining/">mining</a>, the computationally-complex process whereby transactions are immutably recorded on the blockchain.</p>
+                        <p>Monero kann über eine <a href="{{site.baseurl}}/community/merchants#exchanges">Börse</a> mit Fiat- oder Kryptowährung gekauft werden. Ein alternativer Weg der Beschaffung ist das <a href="{{site.baseurl}}/get-started/mining/">Mining</a>, der rechenaufwändige Prozess, durch den die Transaktionen unveränderlich in der Blockchain gespeichert werden.</p>
                     </div>
                 </div>
             </div>
@@ -74,11 +74,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>5. Send and Receive Monero</h2>
+                            <h2>5. Sende und empfange Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Learn how to send and receive Monero by viewing the <a href="{{site.baseurl}}/get-started/accepting/">guide</a>.</p>
+                        <p>Lerne das Senden und Empfangen von Monero in der <a href="{{site.baseurl}}/get-started/accepting/">Anleitung</a>.</p>
                     </div>
                 </div>
             </div>
@@ -86,11 +86,11 @@
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>6. Transact with Monero</h2>
+                            <h2>6. Tätige ein Geschäft mit Monero</h2>
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>Monero may be used to purchase many goods and services. For a listing, see the <a href="{{site.baseurl}}/community/merchants/">Merchants</a> page. </p>
+                        <p>Monero kann benutzt werden, um Güter oder Dienste zu kaufen. Siehe die <a href="{{site.baseurl}}/community/merchants/">Händler</a> Seite für eine Liste von Händlern. </p>
                     </div>
                 </div>
             </div>
