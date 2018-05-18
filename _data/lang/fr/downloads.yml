@@ -1,14 +1,14 @@
 description: >
-  If you need help choosing the correct application, please click [here](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) for a quick answer, then select the appropriate release for your operating system below.
-  Note: the SHA256 hashes are listed by the downloads for convenience, but a GPG-signed list of the hashes is at [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
-source: Source & Blockchain
-mobilelight: Mobile & Light
-hardware: Hardware
+  Si vous avez besoin d'aide pour choisir la bonne application, merci de cliquer [ici](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) pour une réponse rapide, puis sélectionner va version appropriée pour votre système d'exploitation ci-dessous.
+  Remarque : les sommes de contrôle SHA256 sont indiquées à côté des téléchargements par commodité, mais une liste signée par GPG des sommes de contrôle est disponible à [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) et devrait être traitée de manière canonique, en vérifiant la signature vis-à-vis de la clef GPG appropriée dans le code source (dans /utils/gpg_keys).
+source: Source & Chaîne de blocs
+mobilelight: Mobile & Léger
+hardware: Matériel
 bootstrap: >
-  If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can [use this link for the most current bootstrap](https://downloads.getmonero.org/blockchain.raw). It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
+  Si vous préférez utiliser une amorce de la chaîne de blocs, plutôt que de synchroniser à partir de zéro, vous pouvez [utiliser ce lien pour obtenir l'amorce la plus récente](https://downloads.getmonero.org/blockchain.raw). Il est cependant habituellement plus rapide de synchroniser à partir de zéro, et cela consomme également nettement moins de RAM (l'import est particulièrement gourmand).
 hwwallet: >
-  The Monero community has just funded a <a href='https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet' target='_blank' rel='noreferrer, noopener'>Dedicated Hardware Wallet</a> which is now in progress. As well, Ledger is working on <a href='https://github.com/LedgerHQ/blue-app-monero' target='_blank' rel='noreferrer, noopener'>integrating Monero into their hardware wallets</a>.
+  La communauté Monero vient de financer un <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Portefeuille Matériel Dédié</a> qui est en cours d'avancement. De même, Ledger travail sur une <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">intégration de Monero dans leurs portefeuilles matériels</a>.
 mobilewallet: >
-  The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href='/community/hangouts/'>Hangouts</a> page to see where we are.
-clionly: Command-Line Tools Only
-hash: SHA256 Hash
+  Ci-dessous des portefeuilles mobiles ou légers jugés sûrs par des membres de confiance de la communauté. Si un portefeuille n'est pas cité ici, vous pouvez demander à la communauté de le vérifier. Allez à la page <a href="/community/hangouts/">Rencontres</a> pour voir où nous sommes.
+clionly: Outils ligne de commande uniquement
+hash: Somme de contrôle SHA256
