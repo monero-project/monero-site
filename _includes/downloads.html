@@ -1,0 +1,143 @@
+<div class="downloads">
+
+<div class="container description" markdown="1">
+
+{{ site.data.lang[site.lang].downloads.description }}
+
+</div>
+<div class="container full downdropdown">
+<div class="info-block download-nav row middle-xs between-xs" id="selections">
+
+    <div class="col"><a href="#windows">Windows</a></div>
+    <div class="col"><a href="#mac">Mac</a></div>
+    <div class="col"><a href="#linux">Linux</a></div>
+    <div class="col"><a href="#arm">Arm (v7 & 8)</a></div>
+    <div class="col"><a href="#bsd">BSD</a></div>
+    <div class="col"><a href="#source">{{ site.data.lang[site.lang].downloads.source }}</a></div>
+    <div class="col"><a href="#mobilelight">{{ site.data.lang[site.lang].downloads.mobilelight }}</a></div>
+    <div class="col"><a href="#hardware">{{ site.data.lang[site.lang].downloads.hardware }}</a></div>
+
+</div>
+</div>
+
+<div class="container full">
+  <div class="info-block row center-xs" id="pick-platform">
+     <div class="mob dropdowndrop">
+        <input id="check01" type="checkbox" name="menu"/>
+        <label for="check01">Choose your OS</label>
+        <ul id="menu">
+          <li><a href="#windows">Windows</a></li>
+          <li><a href="#mac">Mac</a></li>
+          <li><a href="#linux">Linux</a></li>
+          <li><a href="#arm">Arm (v7 & 8)</a></li>
+          <li><a href="#bsd">BSD</a></li>
+          <li><a href="#source">{{ site.data.lang[site.lang].downloads.source }}</a></li>
+          <li><a href="#mobilelight">{{ site.data.lang[site.lang].downloads.mobilelight }}</a></li>
+          <li><a href="#hardware">{{ site.data.lang[site.lang].downloads.hardware }}</a></li>
+        </ul>
+      </div>
+  </div>
+</div>
+
+
+<div class="download-platforms">
+
+{% for data_downloads in site.data.downloads %}
+
+<section class="container full" id="{{ data_downloads.id}}">
+    <div class="info-block">
+        <h2>
+            {% if data_downloads.icon != null %}
+            <span class="{{data_downloads.icon}}"></span>
+            {% endif %}
+            {{data_downloads.platform}}
+        </h2>
+            {% if data_downloads.version != null %}
+        <p class="text-center">{{ site.data.lang[site.lang].downloads.version }}: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
+            {%endif%}
+
+
+
+{% if data_downloads.cli_hash == "source" %}
+<div class="row">
+<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+<h4 id="{{ data_downloads.platform | slugify }}">
+ <a href="{{ data_downloads.cli_url }}">Source Code</a>
+</h4>
+</div>
+<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" markdown="1">
+{{ site.data.lang[site.lang].downloads.bootstrap }}
+</div>
+</div>
+{% elsif data_downloads.id == "hardware" %}
+<div class="row">
+<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+<p>{{ site.data.lang[site.lang].downloads.hwwallet }}</p>
+</div></div>
+
+{% elsif data_downloads.id == "mobilelight" %}
+<div class="row">
+<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+<p>{{ site.data.lang[site.lang].downloads.mobilewallet }}</p>
+</div>
+</div>
+<div class="row center-xs">
+  <div class="col-xs-6 col-sm-4">
+    <a href="https://cakewallet.io"><img style="height: 115px;"  src="/img/cakewallet.png" alt="Cake Wallet Logo"></a>
+  </div>
+  <div class="col-xs-6 col-sm-4">
+    <a href="https://monerujo.io"><img style="height: 115px;" src="/img/Monerujo-wallet.png" alt="Monerujo Logo"></a>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
+  </div>
+</div>
+
+
+{% elsif data_downloads.gui_hash == nil and data_downloads.cli_hash != nil %}
+<div class="row"><div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12"><h4 id="{{ data_downloads.platform | slugify }}">
+ <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}"> {{ data_downloads.platform }} ({{ site.data.lang[site.lang].downloads.clionly }})</a>
+ </h4></div></div>
+ <div class="row"><div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+ <p><strong>{{ site.data.lang[site.lang].downloads.hash }}:</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p></div>
+</div>
+{% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash == nil %}
+<div class="row">
+
+<h4 id="{{ data_downloads.platform | slugify }}">
+ <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
+ </h4></div>
+<div class="row">
+<p><strong>{{ site.data.lang[site.lang].downloads.hash }}:</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
+</div>
+{% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash != nil %}
+<div class="row start-md">
+<div class="col-md-6 col-sm-12" >
+
+<h4 id="{{ data_downloads.platform | slugify }}">
+ <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
+</h4>
+<p><strong>{{ site.data.lang[site.lang].downloads.hash }} (GUI):</strong></p> <p class="hash"> {{ data_downloads.gui_hash }}</p>
+
+</div>
+
+<div class="col-md-6 col-sm-12">
+<h4>
+ <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} ({{ site.data.lang[site.lang].downloads.clionly }})</a>
+</h4>
+<p><strong>{{ site.data.lang[site.lang].downloads.hash }} (CLI):</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p>
+</div>
+</div>
+{% endif %}
+    </div>
+</section>
+
+{% endfor %}
+
+</div>
+<a href="#" class="arrow-up"><i></i></a>
+
+</div>
+
+
+

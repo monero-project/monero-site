@@ -1,0 +1,15 @@
+description: >
+  Si vous avez besoin d'aide pour choisir la bonne application, merci de cliquer [ici](https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/) pour une réponse rapide, puis sélectionner va version appropriée pour votre système d'exploitation ci-dessous.
+  Remarque : les sommes de contrôle SHA256 sont indiquées à côté des téléchargements par commodité, mais une liste signée par GPG des sommes de contrôle est disponible à [getmonero.org/downloads/hashes.txt](https://getmonero.org/downloads/hashes.txt) et devrait être traitée de manière canonique, en vérifiant la signature vis-à-vis de la clef GPG appropriée dans le code source (dans /utils/gpg_keys).
+source: Source & Chaîne de blocs
+mobilelight: Mobile & Léger
+hardware: Matériel
+bootstrap: >
+  Si vous préférez utiliser une amorce de la chaîne de blocs, plutôt que de synchroniser à partir de zéro, vous pouvez [utiliser ce lien pour obtenir l'amorce la plus récente](https://downloads.getmonero.org/blockchain.raw). Il est cependant habituellement plus rapide de synchroniser à partir de zéro, et cela consomme également nettement moins de RAM (l'import est particulièrement gourmand).
+hwwallet: >
+  La communauté Monero vient de financer un <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">Portefeuille Matériel Dédié</a> qui est en cours d'avancement. De même, Ledger travail sur une <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">intégration de Monero dans leurs portefeuilles matériels</a>.
+mobilewallet: >
+  Ci-dessous des portefeuilles mobiles ou légers jugés sûrs par des membres de confiance de la communauté. Si un portefeuille n'est pas cité ici, vous pouvez demander à la communauté de le vérifier. Allez à la page <a href="/community/hangouts/">Rencontres</a> pour voir où nous sommes.
+clionly: Outils ligne de commande uniquement
+hash: Somme de contrôle SHA256
+version: Version Actuelle
