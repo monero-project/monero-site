@@ -12,3 +12,4 @@ mobilewallet: >
   The following are mobile or light wallets that are deemed safe by trusted members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our <a href='/community/hangouts/'>Hangouts</a> page to see where we are.
 clionly: Command-Line Tools Only
 hash: SHA256 Hash
+version: Current Version

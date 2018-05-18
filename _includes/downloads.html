@@ -53,7 +53,7 @@
             {{data_downloads.platform}}
         </h2>
             {% if data_downloads.version != null %}
-        <p class="text-center">Current Version: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
+        <p class="text-center">{{ site.data.lang[site.lang].downloads.version }}: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
             {%endif%}
 
 
@@ -96,7 +96,7 @@
 
 {% elsif data_downloads.gui_hash == nil and data_downloads.cli_hash != nil %}
 <div class="row"><div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12"><h4 id="{{ data_downloads.platform | slugify }}">
- <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}"> {{ data_downloads.platform }} (Command-line Tools Only)</a>
+ <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}"> {{ data_downloads.platform }} ({{ site.data.lang[site.lang].downloads.clionly }})</a>
  </h4></div></div>
  <div class="row"><div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
  <p><strong>{{ site.data.lang[site.lang].downloads.hash }}:</strong></p> <p class="hash"> {{ data_downloads.cli_hash }}</p></div>

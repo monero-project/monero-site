@@ -12,3 +12,4 @@ mobilewallet: >
   Ci-dessous des portefeuilles mobiles ou légers jugés sûrs par des membres de confiance de la communauté. Si un portefeuille n'est pas cité ici, vous pouvez demander à la communauté de le vérifier. Allez à la page <a href="/community/hangouts/">Rencontres</a> pour voir où nous sommes.
 clionly: Outils ligne de commande uniquement
 hash: Somme de contrôle SHA256
+version: Version Actuelle
