@@ -18,3 +18,7 @@
   description: Localizing Monero into other languages.
 - channel: monero-hardware
   description: Building hardware wallets to keep your Monero safe.
+- channel: kovri
+  description: This channel is used to discuss all things Kovri related.
+- channel: kovri-dev
+  description: The many contributors and developers come here to discuss Kovri dev-y things.
