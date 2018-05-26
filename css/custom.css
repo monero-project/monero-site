@@ -1087,6 +1087,14 @@ pre.highlight>code {
     padding-bottom: 1rem;
 }
 
+.untranslated.yes {
+    display: none;
+}
+
+.untranslated.no {
+    display: block;
+}
+
 .untranslated-link {
     color: white; 
     text-decoration: underline;

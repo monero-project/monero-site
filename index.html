@@ -3,4 +3,197 @@ layout: base
 title: Home
 permalink: index.html
 ---
-{% tf index.md %}
+<div class="site-wrap">
+        <section class="container full col-xs-12">
+            <div class="info-block info-block-main">
+                <div class="row middle-xs">
+                    <div class="col-lg-7 col-md-7 col-xs-12 main-video">
+                        <div class="monero-video">
+                            <!--iframe width="560" height="315" src="https://www.youtube.com/embed/TZi9xx6aiuY" frameborder="0" allowfullscreen></iframe-->
+                            <video controls poster="/img/monero-community.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
+                                <source src="/media/Monero_Promo.m4v">
+                            </video>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-xs-12">
+                        <div class="main-info">
+                            <h1 id="main-h1">{% t global.monero %}</h1>
+                            <h2 id="main-h2">{% t home.heading2 %}</h2>
+                            <p id="main-text">{% t home.monero_is_cash %}</p>
+                            <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">{% t home.get_started %}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+      
+    <!-- FULL WIDTH BLOCK -->
+        
+        <section class="container about-main full col-xs-12">
+                <div class="info-block">
+                    <div class="row center-xs">
+                        <div class="col"><h2>{% t home.why_monero_is_different %}</h2></div>
+                    </div>
+                    <div class="row middle-xs info-block-row private">
+                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12  why-text">
+                            <h3>{% t home.monero_is_secure %}</h3>
+                                <p>{% t home.monero_is_secure_para %}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
+                            <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
+                        </div>
+                    </div>
+                    <div class="row middle-xs info-block-row">
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
+                            <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
+                            <h3>{% t home.monero_is_private %}</h3>
+                            <p>{% t home.monero_is_private_para %}</p>
+                        </div>
+                        
+                    </div>
+                    <div class="row middle-xs info-block-row">
+                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
+                            <h3>{% t home.monero_is_untraceable %}</h3>
+                            <p>{% t home.monero_is_untraceable_para %}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
+                            <img src="/img/untraceable-monero.png" alt="Untraceable Monero paths" class="main-icon">
+                        </div>
+                    </div>
+                    <div class="row middle-xs info-block-row">
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
+                            <img src="/img/fungible-monero.png" alt="Monero gold" class="main-icon">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
+                            <h3>{% t home.monero_is_fungible %}</h3>
+                            <p>{% t home.monero_is_fungible_para1 %} <a href='{{site.baseurl}}/resources/moneropedia/fungibility.html'>{% t home.monero_is_fungible_para2 %}</a> {% t home.monero_is_fungible_para3 %}</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+    <!-- END FULL WIDTH BLOCK -->
+        
+        
+        
+    <!-- TWO THIRDS & ONE THIRD BLOCKS ROW -->
+        
+        <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row center-xs">
+                            <div class="col"><h2>{% t home.downloads %}</h2></div>
+                        </div>
+                            <div class="row around-xs">
+                                <div class="col">
+                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>{% t home.downloads_windows %}</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>{% t home.downloads_mac %}</a></p>
+                                </div>
+                            </div>
+                            <div class="row around-xs">
+                                <div class="col">
+                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>{% t home.downloads_linux %}</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>{% t home.downloads_blockchain %}</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12"><p class="main-downloads">{% t home.different_system %} <a href="{{site.baseurl}}/downloads/">{% t home.view_all_downloads %}</a></p>
+                            </div>
+                            </div>
+                </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row center-xs">
+                            <div class="col"><h2>{% t home.latest_news %}</h2></div>
+                        </div>
+                        <div class="info-block-row">
+                              {% for post in site.posts limit:2 %}
+                              <div class="row start-xs">
+                                                    <div class="col">
+                                                        <p><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></p>
+                                                    </div>
+                                                </div>
+                              {% endfor %}
+                       
+ 
+                            <div class="row end-xs">
+                                <div class="col">
+                                    <p><a href="{{site.baseurl}}/blog/">{% t home.more_news %}</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+        
+        <!-- END TWO THIRDS & ONE THIRD BLOCKS ROW -->
+        
+        <!-- 3 ONE-THIRD BLOCKS ROW -->
+        
+        <section class="container">
+            <div class="row">
+                <!-- left one-third block-->
+                <div class="left one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row center-xs">
+                            <div class="col">
+                                <h2>{% t home.moneropedia %}</h2>
+                                <p class="main-resources">{% t home.moneropedia_para %}</p>
+                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">{% t home.moneropedia_button %}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end left one-third block-->
+                
+                <!-- center one-third block-->
+                <div class="center one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row center-xs">
+                            <div class="col">
+                                <h2>{% t home.user_guides %}</h2>
+                                <p class="main-resources">{% t home.user_guides_para %}</p>
+                                <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">{% t home.user_guides_button %}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end center one-third block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row center-xs">
+                            <div class="col">
+                                <h2>{% t home.faq %}</h2>
+                                <p class="main-resources">{% t home.faq_para %}</p>
+                                <p><a href="{{site.baseurl}}/get-started/faq/" class="btn-link btn-auto">{% t home.faq_button %}</a></p>
+                            </div>
+                        </div>         
+                    </div>
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+        
+        <!-- END 3 ONE-THIRD BLOCKS ROW -->
+</div>
+
+<div class="untranslated {% t home.translated %}">
+    <p>{% t global.untranslated %} <a class="untranslated-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.</p>
+</div>
