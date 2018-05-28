@@ -297,11 +297,11 @@ using:
   generate_para1: Vous devez posséder un portefeuille Monero pour sécurisé vos fonds. Regardez la page
   generate_para2: Téléchargements
   generate_para3: pour trouver une liste des portefeuilles disponibles.
-  generate_para4: The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend
-  generate_para5: using the
-  generate_para6: coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or
-  generate_para7: our affiliate link
-  generate_para8: will also assist in the ongoing funding of Monero development.
+  generate_para4: La façon la plus simple de faire fonctionner un nœud Monero, sans affecter votre bande passante, est de louer un VPS (Virtual Private Server). Nous recommandons fortement d'utiliser 
+  generate_para5: avec le code de réduction
+  generate_para6: afin d'obtenir une réduction supplémentaire sur leur tarif déjà abordable de VPS à 6$ par mois. En utilisant ce code de réduction et/ou
+  generate_para7: notre lien affilié
+  generate_para8: vous aiderez également au développement continue de Monero.
   acquire: 4. Acquérir Monero
   acquire_para1: Monero peut être acheté sur des
   acquire_para2: bourses
