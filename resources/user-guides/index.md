@@ -19,6 +19,7 @@ title: titles.userguides
                             <a href="{{site.baseurl}}/resources/user-guides/importing_blockchain.html">{% t user-guides.import-blockchain %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/monero_tools.html">{% t user-guides.monero-tools %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/securely_purchase.html">{% t user-guides.purchasing-storing %}</a>
+                            <a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a>
                         </p>
                     </div>

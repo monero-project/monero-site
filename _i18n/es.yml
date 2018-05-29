@@ -21,7 +21,7 @@ global:
   privacy: Privacy
   copyright: Copyright
   untranslated: Esta pagina is not yet translated. If you would like to help translate it, please see the
-  
+
 titles:
   index: Inicio
   whatismonero: ¿Qué es Monero (XMR)?
@@ -54,7 +54,7 @@ titles:
   ffs-ot: Open Tasks
   ffs-wip: Work in Progress
   blogbytag: Blog by Tag
-  
+
 index:
   page_title: "Monero - secure, private, untraceable"
 
@@ -105,7 +105,7 @@ hangouts:
 
 merchants:
   translated: "no"
-  intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please 
+  intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please
   intro2:  open a GitHub issue and let us know.
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
@@ -138,7 +138,7 @@ downloads:
   note2: y debe tratarse como canónico, con la firma marcada con la clave GPG apropiada en el código fuente (en /utils/gpg_keys).
   currentversion: Versión actual
   sourcecode: Código fuente
-  blockchain1: Si prefieres usar un blockchain bootstrap, en lugar de sincronizar desde cero, puedes 
+  blockchain1: Si prefieres usar un blockchain bootstrap, en lugar de sincronizar desde cero, puedes
   blockchain2: usar este enlace para el programa de arranque más reciente.
   blockchain3: Sin embargo, normalmente es mucho más rápido sincronizar desde cero y también requiere menos RAM (la importación es muy exigente).
   hardware1: La comunidad Monero acaba de financiar una
@@ -159,7 +159,7 @@ monero-project:
 
 press-kit:
   translated: "no"
-  intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself. 
+  intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself.
   intro2: Note that the white background options have a white background under the Monero symbol ONLY, not as a background to the whole image.
   intro3: Lastly, you can download everything on this page in one zip file by clicking
   intro4: here.
@@ -352,8 +352,8 @@ about:
   privacy_para: Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
   decentralization: Decentralization
   decentralization_para: Monero is committed to providing the maximum amount of decentralization. With Monero, you do not have to trust anyone else on the network, and it is not run by any large group. An accessible “Proof of Work” algorithm makes it easy to mine Monero on normal computers, which makes it more difficult for someone to purchase a large amount of mining power. Nodes connect to each other with I2P to lower the risks of revealing sensitive transaction information and censorship (tba). Development decisions are extremely clear and open to public discussion. Developer meeting logs are published online in their entirety and visible by all.
-  
-  
+
+
 developer-guides:
   translated: "yes"
   outdated: "Please note: the guides below are currently out of date, but are considered a good starting point for most calls."
@@ -373,6 +373,7 @@ user-guides:
   import-blockchain: Importing the Monero blockchain
   monero-tools: Monero Tools
   purchasing-storing: Securely purchasing and storing Monero
+  verify-allos: Verify binaries on Linux, Mac, or Windows command line (advanced)
   verify-windows: Verify binaries on Windows (beginner)
   mine-on-pool: How to mine on a pool with xmr-stak-cpu
   solo-mine: How to solo mine with the GUI
@@ -427,7 +428,7 @@ blog:
   author: Posted by
   date: Posted at
   forum: Click here to join the discussion for this entry on the Monero Forum
-  
+
 tags:
   all: Articles by Tag
   notags: There are no posts for this tag.

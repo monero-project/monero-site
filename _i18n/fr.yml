@@ -22,7 +22,7 @@ global:
   copyright: Propriété intellectuelle
   edit: Modifier cette page
   untranslated: Cette page n'a pas encore été traduite. Si vous voulez aider à la traduire, voyez le
-  
+
 titles:
   index: Accueil
   whatismonero: Qu'est-ce que Monero ?
@@ -55,7 +55,7 @@ titles:
   ffs-ot: Taches Ouvertes
   ffs-wip: Travail en Cours
   blogbytag: Blog par Tag
-  
+
 index:
   page_title: "Monero - sécurisé, confidentiel, intracable"
 
@@ -141,7 +141,7 @@ downloads:
   blockchain1: Si vous préférez utiliser une amorce de la chaîne de blocs, plutôt que de synchroniser à partir de zéro, vous pouvez
   blockchain2: utiliser ce lien pour obtenir l'amorce la plus récente.
   blockchain3: Il est cependant habituellement plus rapide de synchroniser à partir de zéro, et cela consomme également nettement moins de RAM (l'import est particulièrement gourmand).
-  hardware1: La communauté Monero vient de financer un 
+  hardware1: La communauté Monero vient de financer un
   hardware2: Portefeuille Matériel Dédié
   hardware3: qui est en cours d'avancement. De même, Ledger travail sur une
   hardware4: intégration de Monero dans leurs portefeuilles matériels.
@@ -297,7 +297,7 @@ using:
   generate_para1: Vous devez posséder un portefeuille Monero pour sécurisé vos fonds. Regardez la page
   generate_para2: Téléchargements
   generate_para3: pour trouver une liste des portefeuilles disponibles.
-  generate_para4: La façon la plus simple de faire fonctionner un nœud Monero, sans affecter votre bande passante, est de louer un VPS (Virtual Private Server). Nous recommandons fortement d'utiliser 
+  generate_para4: La façon la plus simple de faire fonctionner un nœud Monero, sans affecter votre bande passante, est de louer un VPS (Virtual Private Server). Nous recommandons fortement d'utiliser
   generate_para5: avec le code de réduction
   generate_para6: afin d'obtenir une réduction supplémentaire sur leur tarif déjà abordable de VPS à 6$ par mois. En utilisant ce code de réduction et/ou
   generate_para7: notre lien affilié
@@ -352,8 +352,8 @@ about:
   privacy_para: Monero prend la confidentialité très au sérieux. Monero doit pouvoir protéger ses utilisateurs devant une cours de justice, ou dans les cas les plus extrêmes, de la peine de mort. Ce niveau de confidentialité doit être accessible à tous les utilisateurs, qu'ils disposent ou non de compétences techniques et aient ou non la moindre idée du fonctionnement interne de Monero. Un utilisateur doit pouvoir être en totale confiance avec Monero de sorte qu'il ne puisse se sentir contraint à modifier ses habitudes de paiement de peur que d'autres ne s'en rendent compte.
   decentralization: Décentralisation
   decentralization_para: Monero s'engage à fournir le maximum de décentralisation possible. Avec Monero, vous n'avez besoin de faire confiance à personne sur le réseau, et il n'est géré par aucun grand groupe. Un algorithme de « Preuve de Travail » (Proof of Work) accessible facilite l'extraction minière de Monero sur des ordinateurs normaux, ce qui rend plus difficile l'achat d'une grande quantité de puissance minière. Les nœuds se connectent les uns aux autres grâce à I2P pour réduire les risques de révélation des informations sensibles sur les transactions et de censure (disponible bientôt). Les décisions de développement sont extrêmement claires et ouvertes à discussion publique. Les compte-rendus des réunions des développeurs sont intégralement publiés en ligne et disponibles publiquement.
-  
-  
+
+
 developer-guides:
   translated: "yes"
   outdated: Attention, les guides ci-dessous sont actuellement obsolètes, mais sont considérés comme de bons points de départ pour la plupart des appels de procédures distantes.
@@ -373,6 +373,7 @@ user-guides:
   import-blockchain: Importer la chaîne de blocs Monero
   monero-tools: Outils Monero
   purchasing-storing: Acheter et Conserver Monero en toute sécurité
+  verify-allos: Vérifier des binaires sur Linux, Mac ou Windows en ligne de commande (avancé)
   verify-windows: Vérifier des binaires sur Windows (Débutant)
   mine-on-pool: Comment miner sur un pool avec xmr-stak-cpu
   solo-mine: Comment miner en solo avec la GUI
@@ -398,8 +399,8 @@ research-lab:
   translated: "yes"
   intro: Monero ne s'engage pas seulement à créer une monnaie fongible, mais également à continuer la recherche dans le domaine de la confidentialité financière qu'impliquent les cryptomonnaies. Vous trouverez ci-dessous le résultat du travail de notre Laboratoire de Recherche Monero, d'autres rapports s'y ajouterons.
   mrl_papers: Rapports du Laboratoire de Recherche Monero
-  abstract: Résumé 
-  introduction: Introduction 
+  abstract: Résumé
+  introduction: Introduction
   read-paper: Lire le rapport complet (en Anglais)
   mrl1: Rapport des réaction de la chaine à la traçabilité dans CryptoNote 2.0
   mrl1_abstract: Ce bulletin de recherche décrit une attaque plausible sur un système anonyme basé sur les signatures de cercle. Nous nous appuyons sur le protocol de cryptomonnaie CryptoNote 2.0 apparemment publié par Nicolas van Saberhagen en 2012. Il a déjà été démontré que l'intraçabilité obscurcissant une pair de clefs à usage unique peut être dépendant de l'intraçabilité de toutes les clefs utilisées dans la composition de cette signature de cercle. Cela rend possible des réactions en chaine de la traçabilité entre les signatures de cercle, pouvant causer une réduction drastique de l'intraçabilité de l'ensemble du réseau si les paramètres sont piètrement choisis et si un attaquant possède un pourcentage suffisant du réseau. Les signatures sont cependant toujours à usage unique, et une telle attaque ne permettrait pas nécessairement de violer l'anonymat des utilisateurs. Cependant, une telle attaque pourrait potentiellement réduire la résistance dont fait preuve CryptoNote contre l'analyse de la chaîne de blocs. Ce bulletin de recherche n'a pas fait l'objet d'un examen par des tiers, et ne reflète que les résultats d'investigations internes.
@@ -427,7 +428,7 @@ blog:
   author: Publiés par
   date: Publiés à
   forum: Cliquer ici pour participer à la discussion de cet entrée sur le Forum Monero
-  
+
 tags:
   all: Articles par Tag
   notags: Il n'y a aucun post pour ce tag.
