@@ -6,8 +6,6 @@ tags: [community]
 author: dEBRUYNE / fluffypony
 ---
 
-*September 16th, 2017*  
-
 # Logs  
 
 **\<sgp>** Starting the meeting (on the correct channel this time)  

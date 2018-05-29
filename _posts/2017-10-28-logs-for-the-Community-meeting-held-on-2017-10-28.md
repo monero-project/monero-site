@@ -6,8 +6,6 @@ tags: [community]
 author: dEBRUYNE / fluffypony
 ---
 
-*October 28th, 2017*  
-
 # Logs  
 
 **\<sgp>** Meeting is starting  
