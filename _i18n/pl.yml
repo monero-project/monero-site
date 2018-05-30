@@ -421,6 +421,43 @@ research-lab:
   brandon: Oficjalne dokumenty zrecenzowane przez Brandona Goodella
   brandon_para: Formalna recenzja oryginalnego dokumentu dotyczącego kryptografii napisanego przez badacza Laboratorium Brandona Goodella. Analizuje on dogłębnie twierdzenia i zagadnienia matematyczne przedstawione w dokumentacji CryptoNote.
 
+specs:
+  translated: "yes"
+  fair_title: Bez pre-wydobycia, bez wydobycia natychmiastowego, bez tokenów
+  fair_premine: Monero nie korzysta z pre-wydobycia ani wydobycia natychmiastowego
+  fair_token: Monero nie sprzedaje tokenów
+  fair_presale: Monero nie prowadzi żadnego rodzaju przedsprzedaży
+  pow_title: Dowód pracy
+  pow_name: CryptoNight
+  pow_disclaimer: może ulec zmianie w przyszłości
+  diff_title: Zmiana poziomu trudności
+  diff_freq: w każdym bloku
+  diff_base: na podstawie ostatnich 720 bloków, z wyłączeniem 20% różnic w znacznikach czasowych
+  block_time_title: Prędkość bloków
+  block_time_duration: co 2 minuty
+  block_time_disclaimer: może ulec zmianie w przyszłości, pod warunkiem utrzymania krzywej emisji
+  block_reward_title: Wynagrodzenie za blok
+  block_reward_amount: powoli maleje i podlega karom w przypadku bloku większego niż mediana ostatnich 100 bloków (M100)
+  block_reward_example1: zobacz liczbę transakcji monetarnych w
+  block_reward_example_link: ostatnim bloku
+  block_reward_example2: ", aby dowiedzieć się o obecnym wynagrodzeniu"
+  block_size_title: Rozmiar bloku
+  block_size: dynamiczny, maksymalnie 2 * M100
+  block_emission_title: Krzywa emisji
+  block_emission_main: "początkowo - krzywa główna: ~18.132 millionów monet do końca maja 2022 roku"
+  block_emission_tail: "następnie - krzywa z długim ogonem: 0.6 XMR na dwuminutowy blok, aktywowana po ukończeniu głównej emisji; przekłada się na <1% spadku inflacji w czasie"
+  block_emission_disclaimer1: zobacz
+  block_emission_disclaimer_link: wykresy i szczegóły
+  block_emission_disclaimer2:
+  supply_title: Maksymalny zasób
+  supply_amount: nieskończony
+  sender_privacy_title: Prywatność nadawcy
+  sender_privacy_mode: podpis pierścieniowy
+  recipient_privacy_title: Prywatność obiorcy
+  recipient_privacy_mode: jednorazowe adresy transakcji
+  amount_hidden_title: Ukrycie kwoty
+  amount_hidden_mode: poufne transakcje pierścieniowe
+
 blog:
   title_1: Wszystkie wpisy
   title_2: Blog

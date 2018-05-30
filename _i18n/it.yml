@@ -420,6 +420,43 @@ research-lab:
   brandon: Brandon Goodell's Whitepaper Review
   brandon_para: This paper is a formal review of the original cryptonote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented in the cryptonote paper.
 
+specs:
+  translated: "yes"
+  fair_title: Nessun premine, nessun instamine, nessun token
+  fair_premine: Monero non è stato preminato o instaminato
+  fair_token: Monero non ha venduto nessun token
+  fair_presale: Monero non ha avuto prevendite di alcun tipo
+  pow_title: Proof of Work
+  pow_name: CryptoNight
+  pow_disclaimer: potrebbe cambiare in futuro
+  diff_title: Ritracciamento difficoltà
+  diff_freq: ogni blocco
+  diff_base: basato sugli ultimi 720 blocchi, escludendo il 20% dei timestamp anomali
+  block_time_title: Tempo per blocco
+  block_time_duration: un blocco viene creato ogni 2 minuti
+  block_time_disclaimer: potrebbe cambiare in futuro a patto che la curva di emissione venga rispettata
+  block_reward_title: Ricompensa per blocco
+  block_reward_amount: in costante decrescita e soggetta a penalità per blocchi più grandi della media degli ultimi 100 blocchi (M100)
+  block_reward_example1: vedi
+  block_reward_example_link: l'ultimo blocco
+  block_reward_example2: nella transazione coinbase per la ricompensa corrente
+  block_size_title: Dimensione blocco
+  block_size: dinamica, massimo di 2 * M100
+  block_emission_title: Curva di emissione
+  block_emission_main: "prima fase, curva principale: ~18.132 milioni di monete entro la fine di Maggio 2022"
+  block_emission_tail: "seconda fase, curva di emissione: 0.6 XMR per blocco (se generato ogni 2 minuti), subentra alla prima fase quando l'emissione principale è terminata; questo si traduce in un tasso di inflazione <1% e decrescente nel tempo"
+  block_emission_disclaimer1: vedi
+  block_emission_disclaimer_link: grafici e dettagli
+  block_emission_disclaimer2:
+  supply_title: Fornitura massima
+  supply_amount: infinita
+  sender_privacy_title: Privacy del mittente
+  sender_privacy_mode: Ring signatures (firme ad anello)
+  recipient_privacy_title: Privacy del destinatario
+  recipient_privacy_mode: Stealth addresses (indirizzi stealth)
+  amount_hidden_title: Offuscamento ammontare
+  amount_hidden_mode: Ring confidential transactions (transazioni confidenziali ad anello)
+
 blog:
   title_1: Tutti
   title_2: Blog
