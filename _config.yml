@@ -19,10 +19,10 @@ exclude: ["README.md"]
 paginate: 10
 paginate_path: blog/page:num/
 
-gems: 
+plugins:
   - jekyll-paginate
   - jekyll-multiple-languages-plugin
-  
+
 # jekyll-multiple-languages-plugin settings:
 languages: ["en", "es", "it", "pl", "fr"]
 
