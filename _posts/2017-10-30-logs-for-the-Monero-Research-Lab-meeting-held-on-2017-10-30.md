@@ -6,8 +6,6 @@ tags: [community, crypto, research]
 author: dEBRUYNE / fluffypony
 ---
 
-*October 30th, 2017*  
-
 # Logs  
 
 **\<sarang>** Let's go  

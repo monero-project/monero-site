@@ -6,8 +6,6 @@ tags: [community]
 author: dEBRUYNE / fluffypony
 ---
 
-*September 30th, 2017*  
-
 # Logs  
 
 **\<rehrar>** 0. Introduction  

@@ -6,8 +6,6 @@ tags: [dev diaries, core, crypto]
 author: gingeropolous
 ---
 
-*March 5th, 2016*
-
 # Overview
 
 Open pull requests mostly just DB stuff by warptangent and hyc, and will be merged within next couple of hours. In the last couple of weeks, unit test fixes, threading fixes, "lots of little things". Hyc had some readtxn changes. Hyc's performance changes need to wait until some kind of migration system is implemented / developed.
