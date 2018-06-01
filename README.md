@@ -98,6 +98,41 @@ Contributers should use [issue keywords](https://help.github.com/articles/closin
 
 Pull requests allow others to make comments or review your changes to the site. We ask that you remain available to comment or make changes to your PR. Pull requests with pending changes for more than 30 days will be closed and need to be resubmitted in the future. Sometimes someone else's changes might make your changes conflict with the current site. If that happens you may need to rebase your PR. (If you're unsure about how to do so, you can reach out to other contributers on IRC (freenode #monero) and someone should be able to walk you through it.
 
+### 3.2 Updates on User Guides
+
+User guides and developer guides may need regular updates, either to fix typos, to add explanations regarding new features, to update screenshots, and so on.
+As those guides are translated in several languages, it could be hard to keep all languages version up to date with the English version.
+To keep track of those changes, guides are versioned using a snippet at the top of each localized (\_i18n/en/ressources/\*-guides) file:
+```
+{% assign version = '1.1.0' | split: '.' %}
+```
+This snippet is responsible for keeping track of the language version.
+
+The based version (English version) is however also tracked in the `Front Matter` from the /resources/user-guides/ or /resources/developer-guides/ directory file:
+```
+mainVersion:
+  - "1"
+  - "1"
+  - "0"
+```
+
+- First number is the Major version number
+- Second number is the Minor version number
+- Third number is the build number.
+
+When you update a guide, you are responsible for updating this version tracking in every file involved in your update:
+
+- For an update on English files, you will update the version tracking number in the `Front Matter` of /ressources/\*-guides/ and in \_i18n/en/ressources/\*-guides
+- For an update on localized files, you will update the version tracking number in the \_i18n/<local>/ressources/\*-guides only, and
+  - You will not update to a higher Major or Minor version number than the reference English guide
+  - If you want to update to a higher Major or Minor version number, you should update the English version accordingly so that English is always the highest Major.Minor version.
+
+And you will increment the version number in the following way:
+
+- Cosmetic change only (typo, rephrasing, screenshot update with exact same field names and positions): Increment the third number (build number). We do not want to even warn the user about this update in another language.
+- Changes that add instructions or explanations (or screenshot updates with different field names and positions), without making the old version misleading for users: Increment the second number (Minor version number) and reset the third to 0. We want to let the user know the English version could be more accurate and helpful to read.
+- Changes that makes the old version false, or misleading to users: Increment the first number (Major version number) and reset the second and third to 1.0. We want to discourage users from reading this too outdated version that could lead them to do wrong things (for instance, buy the wrong algo of mining power on nicehash, after a pow change).
+
 ## 4.0 How to make a blog post
 
 ### 4.1 Quick Start
@@ -138,8 +173,9 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 * File content as in 5.3
 * Create file in /_i18n/en/resources/user-guides with the exact same filename as above ending in .md
 * Write User Guide
+* Add versioning snippet
 * Copy User Guide file to ALL LANGUAGES in /_i18n/[ALL LANGUAGES]/resources/user-guides
-* Paste `{% include untranslated.html %}` into the top of each language version of your User Guide, except the original language
+* set translation to false in the snippet the top of each language version of your User Guide, except the original language
 * Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to /_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
 * Test/Build
 * Submit PR
@@ -153,6 +189,10 @@ Navigate to the /resources/user-guides folder and make a new file. Be sure the f
 layout: user-guide
 title: TITLE OF YOUR USER GUIDE
 permalink: /resources/user-guides/NAME-OF-FILE-GOES-HERE.html
+mainVersion:
+  - "1"
+  - "1"
+  - "0"
 ---
 
 {% tf resources/user-guides/NAME-OF-FILE-GOES-HERE.md %}
@@ -168,11 +208,18 @@ Write your user guide. Be succinct but thorough. Remember, people will be using 
 
 The title should be at the top of the User Guide using a single `#` for an H1 tag. Titles will not be automatically put on these pages as with other pages. There should be NO front matter on this file.
 
+Add the version snippet at the top of your guide (before your title):
+```
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
+```
+Your version should start at `1.1.0` as it is the first Major, first Minor, and no cosmetic changes have occured.
+
 ### 5.6 Copy User Guide file into all languages
 Copy your file and navigate to each language file in the /i18n folder. In each language folder (INCLUDING template) go to the resources/user-guides folder and paste your user guide (don't worry, you don't have to translate it) there. This is very important, and the site will not build if the file with the same name is not in each language folder.
 
-As you paste into each folder, open up the file and paste the following snippet at the top of the file (before your title):
-`{% include untranslated.html %}`. This does not need to be done in the original language that the User Guide was written in.
+As you paste into each folder, open up the file and edit the snippet at the top of the file (before your title) to mark it untranslated:
+`{% include disclaimer.html translated="false" version=page.version %}`. This does not need to be done in the original language that the User Guide was written in.
 
 ### 5.7 Add Guide to the 'User Guide' landing page of EACH LANGUAGE
 In the /_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it.
@@ -519,8 +566,8 @@ Go to the /i18n folder and find the two letter code for the language you wish to
 ### 14.3 Translate the file
 Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip step 13.4. If during testing, the page appears different from the original English page (besides the translated text of course), you did something wrong and may have to start again.
 
-### 14.4 Remove the 'untranslated' snippet
-Somewhere on the page (usually the top) should be a snippet that says `{% include untranslated.html %}`. Simply delete this completely from the file. This will remove the orange bar from the bottom saying the page is untranslated.
+### 14.4 set the 'translated' snippet to true
+Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
 
 ### 14.5 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically.

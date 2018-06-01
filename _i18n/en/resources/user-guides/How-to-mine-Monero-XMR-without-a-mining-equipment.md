@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## How to mine Monero (XMR) without a mining equipment?
 
 If you don’t have a profitable mining equipment, nor time or

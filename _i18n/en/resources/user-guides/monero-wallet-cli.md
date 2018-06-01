@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # monero-wallet-cli
 
 `monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,
@@ -21,7 +23,7 @@ balance without refreshing:
 
     balance
     Balance: 64.526198850000, unlocked balance: 44.526198850000, including unlocked dust: 0.006198850000
-    
+
 In this example, `Balance` is your total balance. The `unlocked balance` is the amount currently available to spend. Newly received transactions require 10 confirmations on the blockchain before being unlocked. `unlocked dust` refers to very small amounts of unspent outputs that may have accumulated in your account.
 
 ## Sending monero

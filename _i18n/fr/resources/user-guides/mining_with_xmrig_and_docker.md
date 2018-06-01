@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
 Ce guide a deux volets, la simplicité de l'extraction minière sur une distribution Linux et quelques pratique de sécurité autour de l'extraction minière, dans la mesure ou la plupart de ces applications d'extraction minière n'ont pas subits d'audit de sécurité.

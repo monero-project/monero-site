@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # monero-wallet-cli
 
 `monero-wallet-cli` jest oprogramowaniem, które współpracuje z Monero. To program konsoli zarządzający kontem. Podczas gdy portfel Bitcoina zarządza zarówno kontem, jak i łańcuchem bloków, Monero rozdzielił je, aby `monerod`operował łańcuchem, a `monero-wallet-cli` kontem.
@@ -16,7 +18,7 @@ Przyciągnie to bloki z daemona, których portfel jeszcze nie widział oraz zakt
 
     balance
     Balance: 64.526198850000, unlocked balance: 44.526198850000, including unlocked dust: 0.006198850000
-    
+
 W tym przypadku, `Balance` jest twoim saldem całkowitym. `unlocked balance` jest kwotą aktualnie dostępną do wydania. Nowe transakcje przychodzące wymagają 10 potwierdzeń zanim zostaną odblokowane. `unlocked dust` to bardzo mała liczba niewydanych wyników, które mogły się nagromadzić na twoim koncie.
 
 ## Wysyłanie monero

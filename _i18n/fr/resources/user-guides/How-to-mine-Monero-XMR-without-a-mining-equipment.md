@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Comment miner Monero (XMR) sans matériel d'extraction minière ?
 
 Si vous ne disposez pas d'un matériel d'extraction minière rentable, ni de temps ou

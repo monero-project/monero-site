@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ### Système d'exploitation :  Ubuntu
 
 - Téléchargez les [binaires officiels](https://getmonero.org/downloads/) ou compilez les dernières sources disponibles sur [Github](https://github.com/monero-project/bitmonero)

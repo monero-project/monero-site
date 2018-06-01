@@ -1095,7 +1095,24 @@ pre.highlight>code {
     display: block;
 }
 
+.disclaimer {
+    background-color: #ff7519;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
 .untranslated-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.disclaimer-link {
     color: white;
     text-decoration: underline;
 }

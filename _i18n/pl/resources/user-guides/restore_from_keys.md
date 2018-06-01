@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ### Przywróć portfel z kluczy
 
 Przywracanie portfela za pomocą prywatnych kluczy jest całkiem proste. Jeśli posiadasz potrzebne informacje, z tym przewodnikiem będziesz mógł całkowicie przywrócić swój portfel. Zauważ, że nie musisz posiadać swojego hasła, aby przywracać za pomocą kluczy.

@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 Minare con la GUI ufficiale è molto semplice. Se non l'hai ancora fatto, vai sulla <a href="{{site.baseurl}}/downloads/">pagina dei download di Monero</a> e scarica la GUI ufficiale per il tuo sistema operativo. Avvia la GUI e attendi che Monero si sincronizzi con la rete. Dovresti vedere "Connesso" nell'angolo in basso a sinistra.
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>

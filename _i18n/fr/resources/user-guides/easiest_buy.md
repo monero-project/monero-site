@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Comment obtenir Monero
 
 Voici un guide pour obtenir vos propre Moneroj datant du 9 Septembre 2015. Il s'agit peut être de la façon la plus simple d'acheter et posséder des Moneroj.

@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
 This guide is two fold, ease of use for mining on Linux distributions and some extra security around mining as most of these miners have not had security auditing.
@@ -19,7 +21,7 @@ For distribution specific installation please refer to the [Docker Docs](https:/
 
 ### Why XMRig
 
-[XMRig](https://github.com/xmrig/xmrig) is just a really solid miner to me. Nice output and statistics, no flashy web-ui's or dependencies. The XMRig container is only ~4MB what makes it extremely portable. 
+[XMRig](https://github.com/xmrig/xmrig) is just a really solid miner to me. Nice output and statistics, no flashy web-ui's or dependencies. The XMRig container is only ~4MB what makes it extremely portable.
 
 #### Step 1: Mining with XMRig
 

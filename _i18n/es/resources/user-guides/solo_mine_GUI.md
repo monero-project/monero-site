@@ -1,4 +1,5 @@
-{% include untranslated.html %}
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href="{{site.baseurl}}/downloads/">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays "Connected" in the lower left corner.
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>

@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # Importare la Blockchain nel portafoglio Monero GUI (Windows)
 
 ### Passo 1

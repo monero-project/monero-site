@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Wprowadzenie
 
 Poniżej znajduje się lista funkcji RPC demona monerod, ich wejścia i wyników oraz przykłady.

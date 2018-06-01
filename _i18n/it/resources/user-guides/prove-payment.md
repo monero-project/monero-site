@@ -1,4 +1,5 @@
-{% include untranslated.html %}
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 ### Prove payments
 
 When you send money to a party who then disputes the payment was made, you need to be able to prove the payment was made.

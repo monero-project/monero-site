@@ -1,4 +1,5 @@
-{% include untranslated.html %}
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 # Selecting a pool
 
 There are many pools to choose from, a list is available at

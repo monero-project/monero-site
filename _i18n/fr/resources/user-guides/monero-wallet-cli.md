@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # monero-wallet-cli
 
 `monero-wallet-cli` est une application de portefeuille qui est incluse dans la suite Monero. C'est un

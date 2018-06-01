@@ -21,6 +21,9 @@ global:
   privacy: Privacy
   copyright: Copyright
   untranslated: Esta pagina is not yet translated. If you would like to help translate it, please see the
+  outdatedMax: Esta página no está actualizada. No recomendamos utilizarla. En su lugar, favor de ver la
+  outdatedVersion: versión en inglés
+  outdatedMin: Esta página ha sido actualizada desde la traducción. Puedes utilizar esta versión, pero puede estar incompleta.
 
 titles:
   index: Inicio

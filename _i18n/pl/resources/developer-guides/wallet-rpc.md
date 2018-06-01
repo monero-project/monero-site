@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Wprowadzenie
 
 Poniżej znajduje się lista funkcji monero-wallet-rpc, ich wejścia i wyniki oraz przykłady. Oprogramowanie monero-wallet-rpc zamieniło interfejs rpc, które znajdowało się w simplewallet, a później w monero-wallet-cli.

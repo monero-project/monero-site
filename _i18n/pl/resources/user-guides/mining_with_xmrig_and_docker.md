@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Wprowadzenie
 
 Ten przewodnik jest dwojaki: opisuje łatwość użycia do wydobycia w dystrybucjach Linuksa oraz dodatkowe zabezpieczenia wydobycia, ponieważ większość koparek nie miała przeprowadzonego audytu bezpieczeństwa. Po jego przeczytaniu będziesz mógł spać spokojniej, wiedząc, że wyeksploatowana koparka nie migruje do systemu operacyjnego.
