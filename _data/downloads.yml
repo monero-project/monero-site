@@ -2,18 +2,18 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: e74fb7abac3a34163e38ae1712282af3bbfb5bec00d2e0c88ca7d35f2fa95d28
+  cli_hash: 188e122e4ec84994cfb8f8f1582514359c0e9e7b121a288362016565ba9d58da
   gui_url: win64
   gui_hash: 4b9f31686ecaad97cdb175e6574bf307f8d1c410427825f4304c21da8aac1864
-  version: 0.12.0.0
+  version: 0.12.2.0
   tag: Lithium Luna
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: 9f8861241c29f891aaf0f7b96470f63193e8b7bbc2985f513e138bf9b1178720
-  version: 0.12.0.0
+  cli_hash: 4a1718e75e2467f9a4b02b5c342b702999c97b1c0f8a1cdd5a63d7c2b21f849a
+  version: 0.12.2.0
   tag: Lithium Luna
   blockchain: win
 
@@ -21,10 +21,10 @@
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: 61df6eec88df19d4d93c0542d6afb94887309ac20afc02cc45cdbada4b21d2ef
+  cli_hash: 31568fdedf9557e5d8398013137266afe0e7ed46011691fef1b40ea7cd94e090
   gui_url: mac64
   gui_hash: f74c108d16bd70b6f0052ba4b3ce91fa3ca59622a0aee7d523a1f43967814c12
-  version: 0.12.0.0
+  version: 0.12.2.0
   tag: Lithium Luna
   blockchain: mac
 
@@ -32,20 +32,20 @@
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: 928ad08ff0dea2790c7777a70e610b2d33c35a5df5900fbb050cc8c659237636
+  cli_hash: cb97e3f8b700a81e1b0f1a77509eefbfb415aa6013f23685f8933b559309c580
   gui_url: linux64
   gui_hash: fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388
-  version: 0.12.0.0
+  version: 0.12.2.0
   tag: Lithium Luna
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: bebeb473a4243b4469dc83ebcaa99b9bb2c1db8a350c5e62270027dcc8c0edb2
+  cli_hash: 99de2b8b5c60ce3d0fceda8607e5b1fcac22c2971f2b8f9016c5acb207587513
 #  gui_url: linux32
 #  gui_hash: 5df6ebeab728a653eaf64352bc60d8dddbf4d6a47a422856015d7e93ce5dc411
-  version: 0.12.0.0
+  version: 0.12.2.0
   tag: Lithium Luna
   blockchain: linux
 
@@ -53,8 +53,17 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: 30d4d2c96cb56aae6b56b0f9978427346d48403b0da2acba91b8fb06e949ac35
-  version: 0.12.0.0
+  cli_hash: f4b7f3fe46d95f8499253c515401c01efb707a7362fec49ca4527ee5839331b3
+  version: 0.12.2.0
+  tag: Lithium Luna
+  blockchain: arm
+
+- platform: ARMv8
+  id: arm
+  icon: icon-arm
+  cli_url: linuxarm8
+  cli_hash: 5ff435057d87952e70a5be4e7edf62440eeeb532734e739e208a9eca67c569c6
+  version: 0.12.2.0
   tag: Lithium Luna
   blockchain: arm
 
