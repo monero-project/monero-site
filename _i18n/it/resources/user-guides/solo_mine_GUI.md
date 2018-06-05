@@ -1,16 +1,15 @@
-{% include untranslated.html %}
-It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href="{{site.baseurl}}/downloads/">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays "Connected" in the lower left corner.
+Minare con la GUI ufficiale è molto semplice. Se non l'hai ancora fatto, vai sulla <a href="{{site.baseurl}}/downloads/">pagina dei download di Monero</a> e scarica la GUI ufficiale per il tuo sistema operativo. Avvia la GUI e attendi che Monero si sincronizzi con la rete. Dovresti vedere "Connesso" nell'angolo in basso a sinistra.
 
 <img src="/resources/user-guides/png/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 
-Click on the "Advanced" tab. You should see that several other options appear. Now click on the "Mining" sub-tab.
+Clicca sulla categoria "Avanzate". Dovresti veder comparire alcune opzioni. Clicca sulla sottocategoria "Mining".
 
 <img src="/resources/user-guides/png/solo_mine_GUI/02.PNG" style="width: 600px;"/>
 
-You should now have an option to start mining. You can optionally change the number of threads to mine with. For optimal efficiency, you should mine with your CPU's cache divided by 2. You will need to look up your CPU's specs on the manufacturer's website. If you are unsure, leave the number of threads at 1. Click the "Start mining" button.
+Adesso dovresti avere un'opzione per avviare il mining. Inoltre hai la possibilità di scegliere il numero dei thread con cui minare. Per maggiore efficienza come numero di thread dovresti utilizzare "(Cache della tua CPU espressa in MB) / 2". Puoi verificare questa informazione sulla scheda tecnica del tuo microprocessore sul sito del produttore. Se non sei sicuro, lascia il numero di thread a 1. Premi il pulsante "Avvia mining".
 
 <img src="/resources/user-guides/png/solo_mine_GUI/03.PNG" style="width: 600px;"/>
 
-You are now mining with the network, as you can see on the bottom of the image. In this example, the computer is contributing 23 H/s to the Monero network. Mining helps keep the network secure, and you may get lucky and receive a reward for protecting the network.
+Da come puoi vedere nella parte inferiore dell'immagine, adesso stai minando assieme al resto della rete. In questo esempio il computer sta contribuendo per 23 H/s alla rete Monero. Minare aiuta a mantenere la rete Monero sicura; inoltre con un po' di fortuna potresti ricevere una ricompensa per aver aiutato a proteggere la rete.
 
-To stop mining, simply click the "Stop mining" button.
+Per smettere di minare è sufficiente cliccare il pulsante "Ferma mining"
