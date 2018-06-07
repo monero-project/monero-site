@@ -502,8 +502,8 @@ Navigate to the `_data/lang` folder and copy the `template` folder. Paste it int
 Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
 
 ### 14.3 _i18n folder
-Navigate to the _i18n folder and duplicate the template.yml file. Rename the duplicate to the two letter language code of your language with a `.yml` at the end. Repeat this process with the `template` folder as well.
-**The template folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
+Navigate to the _i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml` at the end and change all sections marked 'translated: "yes"' to 'translated: "no"'. Change back to 'yes' once you have translated that section. Now duplicate the `en` folder and rename it with the correct language code.
+**The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
 
 Enter the .yml file and translate everything there.
 
