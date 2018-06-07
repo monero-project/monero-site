@@ -420,6 +420,43 @@ research-lab:
   brandon: Examen du Livre Blanc de Brandon Goodell
   brandon_para: Ce document est une revue formelle par Brandon Goodell, chercheur au MRL, du document CryptoNote originel. Il analyse en détail les allégations et les calculs mathématiques présentés dans le document CryptoNote.
 
+specs:
+  translated: "yes"
+  fair_title: Pas préminé, pas instaminé, pas de token
+  fair_premine: Monero n'est ni préminé ni instaminé
+  fair_token: Monero n'a vendu aucun token
+  fair_presale: Monero n'a eu aucune prévente, d'aucune sorte
+  pow_title: Preuve de Travail (Proof of Work)
+  pow_name: CryptoNight
+  pow_disclaimer: Pourrait changer à l'avenir
+  diff_title: Recalibrage de difficulté
+  diff_freq: à chaque bloc
+  diff_base: basé sur les 720 derniers blocs, à l'exclusion de 20% des horodatages aberrants
+  block_time_title: Fréquence de bloc
+  block_time_duration: 2 minutes
+  block_time_disclaimer: pourrait changer à l'avenir tant que la courbe d'émission est préservée
+  block_reward_title: Récompense de bloc
+  block_reward_amount: décroissant lentement et soumis à des pénalités pour les blocs supérieurs à la taille médiane des 100 derniers blocs (M100)
+  block_reward_example1: voir la transaction de la base de la pièce du
+  block_reward_example_link: dernier bloc
+  block_reward_example2: pour la récompense actuelle
+  block_size_title: Taille de bloc
+  block_size: dynamique, avec un maximum de 2 * M100 (deux fois la taille médiane des 100 derniers blocs)
+  block_emission_title: Courbe d'émission
+  block_emission_main: "d'abord, courbe principale : ~18,132 million de pièces de monnaie d'ici fin mai 2022"
+  block_emission_tail: "puis, courbe résiduelle : une émission de 0,6 XMR par bloc de 2 minutes entre en vigueur une fois l'émission principale terminée, se traduisant par une inflation <1%, décroissant au fil du temps"
+  block_emission_disclaimer1: voir les
+  block_emission_disclaimer_link: graphiques et détails
+  block_emission_disclaimer2:
+  supply_title: Émission maximale
+  supply_amount: infinie
+  sender_privacy_title: Confidentialité de l'émetteur
+  sender_privacy_mode: Signatures de cercle
+  recipient_privacy_title: Confidentialité du destinataire
+  recipient_privacy_mode: adresses furtives
+  amount_hidden_title: Montants masqués
+  amount_hidden_mode: transactions de cercle confidentielles
+
 blog:
   title_1: Tous les
   title_2: Blog

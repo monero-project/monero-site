@@ -421,6 +421,44 @@ research-lab:
   brandon_para: This paper is a formal review of the original cryptonote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented in the cryptonote paper.
 
 
+specs:
+  translated: "yes"
+  fair_title: No premine, no instamine, no token
+  fair_premine: Monero had no premine or instamine
+  fair_token: Monero did not sell any token
+  fair_presale: Monero had no presale of any kind
+  pow_title: Proof of Work
+  pow_name: CryptoNight
+  pow_disclaimer: may change in the future
+  diff_title: Difficulty retarget
+  diff_freq: every block
+  diff_base: based on the last 720 blocks, excluding 20% of the timestamp outliers
+  block_time_title: Block time
+  block_time_duration: 2 minutes
+  block_time_disclaimer: may change in the future as long as emission curve is preserved
+  block_reward_title: Block reward
+  block_reward_amount: smoothly decreasing and subject to penalties for blocks greater than median size of the last 100 blocks (M100)
+  block_reward_example1: see the
+  block_reward_example_link: latest block
+  block_reward_example2: coinbase transaction amount for current reward
+  block_size_title: Block size
+  block_size: dynamic, maximum of 2 * M100
+  block_emission_title: Emission curve
+  block_emission_main: "first, main curve: ~18.132 million coins by the end of May 2022"
+  block_emission_tail: "then, tail curve: 0.6 XMR per 2-minute block, kicks in once main emission is done, translates to <1% inflation decreasing over time"
+  block_emission_disclaimer1: see
+  block_emission_disclaimer_link: charts and details
+  block_emission_disclaimer2: ""
+  supply_title: Max supply
+  supply_amount: infinite
+  sender_privacy_title: Sender privacy
+  sender_privacy_mode: Ring signatures
+  recipient_privacy_title: Recipient privacy
+  recipient_privacy_mode: Stealth addresses
+  amount_hidden_title: Amount obfuscation
+  amount_hidden_mode: Ring confidential transactions
+
+
 blog:
   title_1: All
   title_2: Blog
