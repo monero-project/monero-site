@@ -31,13 +31,13 @@
     - name: Publikacja piątej dokumentacji Laboratorium Badawczego Monero
       date: 2016-02-10
       status: completed
-    - name: Hardfork do wymagania co najmniej 3 stron we wszystkich transakcjach
+    - name: Aktualizacja sieci do wymagania co najmniej 3 stron we wszystkich transakcjach
       date: 2016-03-22
       status: completed
     - name: Wypuszczenie wersji 0.10.0 Wolfram Warptangent
       date: 2016-09-18
       status: completed
-    - name: Hardfork do rozdzielenia bazy monetarnej na jednostki
+    - name: Aktualizacja sieci do rozdzielenia bazy monetarnej na jednostki
       date: 2016-09-21
       status: completed
     - name: Wypuszczenie wersji 0.10.1 Wolfram Warptangent
@@ -48,7 +48,7 @@
       status: completed
 - year: 2017
   accomplishments:
-    - name: Hardfork do umożliwienia transakcji RingCT
+    - name: Aktualizacja sieci do umożliwienia transakcji RingCT
       date: 2017-01-05
       status: completed
     - name: Wypuszczenie wersji 0.10.2; łatka krytycznej luki
@@ -56,8 +56,8 @@
       status: completed
     - name: Wypuszczenie wersji 0.10.3.1 Wolfram Warptangent
       date: 2017-03-27
-      status: completed      
-    - name: Hardfork do regulacji minimalnego rozmiaru bloku i algorytmu dynamicznej opłaty
+      status: completed
+    - name: Aktualizacja sieci do regulacji minimalnego rozmiaru bloku i algorytmu dynamicznej opłaty
       date: 2017-04-15
       status: completed
     - name: Zmiana wyglądu strony internetowej
@@ -72,38 +72,43 @@
     - name: Graficzny Interfejs Użytkownika poza wersją beta
       date: 2017-09-10
       status: completed
-    - name: Hardfork do zwiększenia minimalnej liczby stron transakcji do 5 i do wymagania transakcji RingCT
+    - name: Aktualizacja sieci do zwiększenia minimalnej liczby stron transakcji do 5 i do wymagania transakcji RingCT
       date: 2017-09-15
       status: completed
     - name: 0MQ/ZeroMQ
       date: September, 2017
       status: completed
-    - name: Puchowe bloki
-      date:
-      status: ongoing
-    - name: Graficzny Interfejs Użytkownika dla Androida
-      date:
-      status: ongoing
+    - name: Podadresy
+      date: October, 2017
+      status: completed
+    - name: Multi-podpisy (multisig)
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: Nowy dowód pracy CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: Aktualizacja sieci w celu zmniejszenia minimalnego rozmiaru pierścienia do 7, zintegrowania multipodpisu i podadresów oraz zmiany algorytmu dowodu pracy
+      date: 2018-04-06
+      status: completed
+    - name: Lokalizacja strony Getmonero.org na język francuski i polski.
+      date: 2018-04-24
+      status: completed
     - name: Zmiana wyglądu Forumowego Systemu Finansowania
       date:
       status: ongoing
-    - name: Podadresy
+    - name: Efektywniejsze dowody zasięgu dla RingCT w celu zmniejszenia rozmiarów transakcji
       date:
-      status: ongoing
-    - name: Multi-podpisy (multisig)
-      date:
-      status: ongoing
+      status: upcoming
     - name: Wypuszczenie systemu Kovri Alpha
       date:
       status: upcoming
-- year: 2018
+- year: 2019
   accomplishments:
-    - name: Publikacja dodatkowej dokumentacji Laboratorium Badawczego Monero
-      date:
-      status: upcoming
     - name: Rozwiązania drugowarstwowe dla szybkości i skalowalności
       date:
       status: upcoming
-    - name: Efektywniejsze dowody zasięgu dla RingCT w celu zmniejszenia rozmiarów transakcji
+    - name: Publikacja dodatkowej dokumentacji Laboratorium Badawczego Monero
       date:
       status: upcoming

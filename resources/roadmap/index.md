@@ -8,15 +8,15 @@ permalink: /resources/roadmap/index.html
         <div class="row">
             <div class="col-xs-4">
                 <li class="completed"></li>
-                <p>Completed task</p>
+                <p>{% t roadmap.completed %}</p>
             </div>
             <div class="col-xs-4">
                 <li class="ongoing"></li>
-                <p>Ongoing task</p>
+                <p>{% t roadmap.ongoing %}</p>
             </div>
             <div class="col-xs-4">
                 <li class="upcoming"></li>
-                <p>Upcoming task</p>
+                <p>{% t roadmap.upcoming %}</p>
             </div>
         </div>
     </div>
@@ -108,8 +108,8 @@ permalink: /resources/roadmap/index.html
                     <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2018</h2>
                     <div class="tabPanel-content">
-                        {% for toplevel in site.data.lang[site.lang].roadmap %} 
-                            {% if toplevel.year == 2018 %} 
+                        {% for toplevel in site.data.lang[site.lang].roadmap %}
+                            {% if toplevel.year == 2018 %}
                                 {% for roadlist in toplevel.accomplishments %}
                                     <div class="row start-xs">
                                         <div class="col-xs-1">
@@ -129,7 +129,7 @@ permalink: /resources/roadmap/index.html
                     </div>
                     <label for="tab-6" tabindex="0"></label>
                     <input id="tab-6" type="radio" name="tabs" aria-hidden="true">
-                    <h2>Future</h2>
+                    <h2>{% t roadmap.future %}</h2>
                     <div class="tabPanel-content">
                         {% for toplevel in site.data.lang[site.lang].roadmap %}
                             {% if toplevel.year == 2019 %}
