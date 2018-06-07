@@ -21,7 +21,7 @@ global:
   privacy: Privacy
   copyright: Copyright
   untranslated: Questa pagina non è ancora stata tradotta. Se vuoi aiutare a tradurla vedi il
-  
+
 titles:
   index: Home
   whatismonero: Cos'è Monero (XMR)?
@@ -54,7 +54,7 @@ titles:
   ffs-ot: Task aperti
   ffs-wip: Lavori in Corso
   blogbytag: Blog per Tag
-  
+
 index:
   page_title: "Monero - sicuro, privato, non tracciabile"
 
@@ -105,7 +105,7 @@ hangouts:
 
 merchants:
   translated: "no"
-  intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please 
+  intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please
   intro2:  open a GitHub issue and let us know.
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
@@ -177,7 +177,7 @@ accepting:
   translated: "yes"
   title: Istruzioni per l'interfaccia a riga di comando (CLI)
   basics: Le Basi
-  basics_para1: Monero lavora in modo leggermente diverso rispetto a quanto sei stato/a abituato/a con le altre @criptovalute. Nel caso di una moneta digitale come Bitcoin e le sue innumerevoli derivate, i sistemi di pagamento dei venditori in genere creano un nuovo indirizzo di destinazione per ogni pagamento o cliente. 
+  basics_para1: Monero lavora in modo leggermente diverso rispetto a quanto sei stato/a abituato/a con le altre @criptovalute. Nel caso di una moneta digitale come Bitcoin e le sue innumerevoli derivate, i sistemi di pagamento dei venditori in genere creano un nuovo indirizzo di destinazione per ogni pagamento o cliente.
   basics_para2: Invece, dal momento che Monero fornisce gli @indirizzi-stealth, non c'è alcun bisogno di gestire indirizzi di destinazione separati per ogni pagamento o cliente, e può essere reso noto solamente un indirizzo di pagamento per tutti. Al momento di ricevere un pagamento, il venditore fornirà al cliente un "ID pagamento".
   basics_para3: "Un @ID-pagamento è una stringa esadecimale lunga 64 caratteri ed è generalmente creata in modo casuale dal venditore. Un esempio di ID pagamento è:"
   checking: Controllare lo stato di un pagamento in monero-wallet-cli
@@ -187,9 +187,9 @@ accepting:
   receiving: Ricevere un pagamento passo dopo passo
   receiving_list1: Genera una stringa casuale di 64 caratteri esadecimali per il pagamento (ID pagamento)
   receiving_list2: Comunica l'ID pagamento generato nonché il tuo indirizzo Monero a chi vuole effettuare un pagamento
-  receiving_list3: A seguito del pagamento, controlla il suo stato usando il comando "payments" in monero-wallet-cli 
+  receiving_list3: A seguito del pagamento, controlla il suo stato usando il comando "payments" in monero-wallet-cli
   program: Controllare lo stato di un pagamento in modo programmatico
-  program_para1: Per controllare lo stato dei pagamenti in modo programmatico puoi utilizzare le chiamate API JSON RPC get_payments o get_bulk_payments. 
+  program_para1: Per controllare lo stato dei pagamenti in modo programmatico puoi utilizzare le chiamate API JSON RPC get_payments o get_bulk_payments.
   program_para2: richiede un parametro payment_id con un ID pagamento singolo.
   program_para3: questo è il metodo da preferire e richiede due parametri, payment_ids (un array JSON di più ID pagamento) e un parametro opzionale min_block_height (l'altezza del blocco da cui iniziare la scansione).
   program_para4: |
@@ -212,7 +212,7 @@ contributing:
   develop_para3: e i
   develop_para4: problemi in sospeso..
   full-node: Esegui un nodo locale
-  full-node_para: Esegui monerod con la porta 18080 aperta. Far girare un nodo locale assicura la massima privacy nelle transazioni Monero. La presenza del tuo nodo locale sulla rete migliora inoltre la distribuzione della blockchain ai nuovi utenti. 
+  full-node_para: Esegui monerod con la porta 18080 aperta. Far girare un nodo locale assicura la massima privacy nelle transazioni Monero. La presenza del tuo nodo locale sulla rete migliora inoltre la distribuzione della blockchain ai nuovi utenti.
   mine: Mina
   mine_para1: Il mining assicura che la rete Monero resti decentralizzata e sicura. Il mining in background può essere attivato usando sia l'interfaccia grafica sia quella a riga di comando di Monero. Ulteriori informazioni sul mining (in lingua inglese) possono essere trovate
   mine_para2: qui.
@@ -259,7 +259,7 @@ faq:
   a11: La fungibilità è una semplice proprietà di una moneta secondo cui non esistono differenze fra due unità monetarie. Se due persone si scambiano una moneta da 10 per due da 5, nessuno perde nulla. Supponiamo però che tutti siano a conoscenza del fatto che la moneta da 10 è stata usata precedentemente in un attacco ransomware. La persona che cede le due monete da 5 per quella da 10 sarebbe ancora disposta ad effettuare il cambio? Probabilmente no, anche se la persona che possiede la moneta da 10 non ha nulla a che vedere con l'attacco ransomware. Questo è un problema, dal momento che chi riceve denaro deve costantemente controllare che il denaro ricevuto non sia "segnato". Monero è fungibile, il che significa che chi lo utilizza non ha bisogno di effettuare questi controlli.
   q12: Se Monero è così privato come facciamo ad essere sicuri che non venga creata moneta dal nulla?
   a12-1: In Monero, ogni output della transazione è associato in modo univoco con un'immagine chiave (key image) che può essere generata solamente dal detentore di quell'output. Immagini chiave che sono usate più di una volta vengono rigettate dai minatori in quanto ritenute tentativi di double-spending e non possono essere aggiunte ad un blocco valido. Quando la rete riceve una nuova transazione, i minatori verificano che l'immagine chiave associata alla transazione non esista già e non sia già stata associata ad una transazione precedente per assicurarsi che non si tratti di un double-spend.
-  a12-2: E' anche possibile verificare la validità dell'ammontare della transazione anche se il valore degli input che si stanno spendendo ed il valore degli output che si stanno inviando sono cifrati (offuscati per tutti tranne che per il destinatario della transazione). Poiché l'ammontare è cifrato mediante l'utilizzo dei "Pedersen commitment", gli osservatori, seppur non in grado di risalire all'ammontare della transazione, tramite la matematica alla base dei "Pedersen commitment" sono in grado di verificare che non vengano creati Monero dal nulla. 
+  a12-2: E' anche possibile verificare la validità dell'ammontare della transazione anche se il valore degli input che si stanno spendendo ed il valore degli output che si stanno inviando sono cifrati (offuscati per tutti tranne che per il destinatario della transazione). Poiché l'ammontare è cifrato mediante l'utilizzo dei "Pedersen commitment", gli osservatori, seppur non in grado di risalire all'ammontare della transazione, tramite la matematica alla base dei "Pedersen commitment" sono in grado di verificare che non vengano creati Monero dal nulla.
   a12-3: Fintanto che la somma degli output cifrati è uguale alla somma degli input cifrati che vengono spesi (la somma degli output include un output per il destinatario, il resto verso chi ha iniziato la transazione e la commissione non cifrata per la transazione), la transazione è considerata legittima e nessun Monero viene creato dal nulla. I "Pedersen commitment" consentono la verifica di uguaglianza delle somme in ingresso e in uscita della transazione senza conoscere i valori che singolarmente sono indeterminabili.
 
 mining:
@@ -352,8 +352,8 @@ about:
   privacy_para: Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
   decentralization: Decentralization
   decentralization_para: Monero is committed to providing the maximum amount of decentralization. With Monero, you do not have to trust anyone else on the network, and it is not run by any large group. An accessible “Proof of Work” algorithm makes it easy to mine Monero on normal computers, which makes it more difficult for someone to purchase a large amount of mining power. Nodes connect to each other with I2P to lower the risks of revealing sensitive transaction information and censorship (tba). Development decisions are extremely clear and open to public discussion. Developer meeting logs are published online in their entirety and visible by all.
-  
-  
+
+
 developer-guides:
   translated: "no"
   outdated: "Please note: the guides below are currently out of date, but are considered a good starting point for most calls."
@@ -373,6 +373,7 @@ user-guides:
   import-blockchain: Importing the Monero blockchain
   monero-tools: Monero Tools
   purchasing-storing: Securely purchasing and storing Monero
+  verify-allos: Verify binaries on Linux, Mac, or Windows command line (advanced)
   verify-windows: Verify binaries on Windows (beginner)
   mine-on-pool: How to mine on a pool with xmr-stak-cpu
   solo-mine: How to solo mine with the GUI
@@ -427,7 +428,7 @@ blog:
   author: Postato da
   date: Postato su
   forum: Clicca qui per unirti alla discussione per questa voce sul Forum Monero
-  
+
 tags:
   all: Articoli per Tag
   notags: Non ci sono post con questo tag.

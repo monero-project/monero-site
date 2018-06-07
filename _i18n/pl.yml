@@ -22,7 +22,7 @@ global:
   copyright: Prawa autorskie
   edit: Edytuj tę stronę
   untranslated: Ta strona jeszcze nie została przetłumaczona. Jeśli chcesz pomóc w jej tłumaczeniu, przejdź do
-  
+
 titles:
   index: Start
   whatismonero: Czym jest Monero (XMR)?
@@ -55,7 +55,7 @@ titles:
   ffs-ot: Zadania otwarte
   ffs-wip: Prace w toku
   blogbytag: Blog po tagu
-  
+
 index:
   page_title: "Monero - bezpieczne, prywatne, niewykrywalne"
 
@@ -106,7 +106,7 @@ hangouts:
 
 merchants:
   translated: "yes"
-  intro1: Różnego rodzaju handlowcy doceniają finansową prywatność, jakiej dostarcza Monero. Poniżej znajduje się lista organizacji, o których wiemy, że akceptują Monero jako środek płatniczy za swoje produkty i usługi. Jeśli któraś z nich już nie uznaje Monero lub chciałbyś, żeby Twoja firma znalazła się na liście, 
+  intro1: Różnego rodzaju handlowcy doceniają finansową prywatność, jakiej dostarcza Monero. Poniżej znajduje się lista organizacji, o których wiemy, że akceptują Monero jako środek płatniczy za swoje produkty i usługi. Jeśli któraś z nich już nie uznaje Monero lub chciałbyś, żeby Twoja firma znalazła się na liście,
   intro2:  załóż wątek na GitHub i daj nam znać.
   disclaimer: "Uwaga: powyższe linki są jedynie udogodnieniem i służą tylko do celów informacyjnych; nie reprezentują one wsparcia społeczności Monero dla żadnego z produktów, usług ani opinii wymienionych organizacji lub osób. Społeczność Monero nie bierze odpowiedzialności za zgodność, legalność ani treść tych zewnętrznych stron. W przypadku wątpliwości związanych z treścią linków, skontaktuj się z właścicielami zewnętrznej strony. Jesteś odpowiedzialny za swoje wyszukiwania. Zawsze przemyśl swój internetowy zakup."
 
@@ -118,7 +118,7 @@ team:
   translated: "yes"
   core: Centrum
   developers: Deweloperzy
-  developers_para1: W Projekcie Monero wzięło udział ponad 200 twórców. Aby zobaczyć całą listę, wejdź na 
+  developers_para1: W Projekcie Monero wzięło udział ponad 200 twórców. Aby zobaczyć całą listę, wejdź na
   developers_para2: stronę twórców OpenHub.
   developers_para3: Poniżej znajdziesz listę osób, które szczególnie się przyczyniły dla Monero.
   community: Społeczność
@@ -352,9 +352,9 @@ about:
   privacy: Prywatność
   privacy_para: Monero bierze prywatność na serio. Monero musi być w stanie chronić swoich użytkowników w sądzie, a także, w ekstremalnych przypadkach, od kary śmierci. Taki poziom bezpieczeństwa musi być w całości dostępny dla wszystkich użytkowników, niezależnie od tego, czy posiadają oni wiedzę technologiczną, czy nie mają pojęcia, jak działa Monero. Użytkownik powinien w zupełności ufać Monero, aby nie czuł się zobowiązany do zmiany swojego sposobu płatności pod ryzykiem zostania wykrytym przez innych.
   decentralization: Decentralizacja
-  decentralization_para: Monero jest zobowiązane do dostarczenia maksymalnej decentralizacji. Nie musisz ufać nikomu w sieci, Monero nie jest prowadzone przez żadną dużą grupę. Dostępny algorytm dowodu pracy ułatwia wydobywanie Monero na zwykłych komputerach, co utrudnia nabycie przez jednostkę znacznej mocy wydobywczej. Węzły łączą się za pomocą sieci I2P, aby zmniejszyć ryzyko cenzury oraz ujawnienia wrażliwych informacji dotyczących transakcji. Decyzje o rozwoju są jasne i otwarte na publiczną dyskusję. Zapisy z czatów deweloperów są w całości publikowane na stronie internetowej i są widoczne dla wszystkich. 
-  
-  
+  decentralization_para: Monero jest zobowiązane do dostarczenia maksymalnej decentralizacji. Nie musisz ufać nikomu w sieci, Monero nie jest prowadzone przez żadną dużą grupę. Dostępny algorytm dowodu pracy ułatwia wydobywanie Monero na zwykłych komputerach, co utrudnia nabycie przez jednostkę znacznej mocy wydobywczej. Węzły łączą się za pomocą sieci I2P, aby zmniejszyć ryzyko cenzury oraz ujawnienia wrażliwych informacji dotyczących transakcji. Decyzje o rozwoju są jasne i otwarte na publiczną dyskusję. Zapisy z czatów deweloperów są w całości publikowane na stronie internetowej i są widoczne dla wszystkich.
+
+
 developer-guides:
   translated: "yes"
   outdated: Poniższe przewodniki są zdezaktualizowane, ale nadal są dobrym początkiem dla większości funkcji.
@@ -374,13 +374,14 @@ user-guides:
   import-blockchain: Importowanie łańcucha bloków Monero
   monero-tools: Narzędzia Monero
   purchasing-storing: Bezpieczne kupowanie i przechowywanie Monero
-  verify-windows: 
+  verify-allos: 
+  verify-windows:
   mine-on-pool: Jak wydobywać w zrzeszeniu za pomocą xmr-stak-cpu
   solo-mine: Jak wydobywać samemu za pomocą Graficznego Interfejsu Użytkownika
   mine-docker: Wydobywanie za pomocą Dockera i XMRig
   locked-funds: Jak odzyskać zablokowane fundusze
   restore-account: Jak odzyskać konto
-  qubes: 
+  qubes:
   cli-wallet: Wprowadzenie do portfela w Interfejsie Wiersza Poleceń
   remote-node-gui: Jak się połączyć ze zdalnym węzłem w portfelu Graficznego Interfejsu Użytkownika
   view-only: Jak założyć portfel tylko do wyświetlania
@@ -428,7 +429,7 @@ blog:
   author: Opublikowane przez
   date: Opublikowane o
   forum: Kliknij, aby dołączyć się do dyskusji na forum Monero
-  
+
 tags:
   all: Artykuły po tagu
   notags: Nie ma wpisów z tym tagiem.
