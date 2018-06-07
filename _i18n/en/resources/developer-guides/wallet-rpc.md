@@ -68,6 +68,15 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [get_languages](#get_languages)
 * [create_wallet](#create_wallet)
 * [open_wallet](#open_wallet)
+* [get_accounts](#get_accounts)
+* [create_account](#create_account)
+* [label_account](#label_account)
+* [create_address](#create_address)
+* [label_address](#label_address)
+* [get_account_tags](#get_account_tags)
+* [tag_accounts](#tag_accounts)
+* [untag_accounts](#untag_accounts)
+* [set_account_tag_description](#set_account_tag_description)
 
 ---
 
@@ -77,24 +86,43 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 
 Return the wallet's balance.
 
-Inputs: *None*.
+Inputs:
+
+* *account_index* - unsigned int; Return balance for this account.
 
 Outputs:
 
 * *balance* - unsigned int; The total balance of the current monero-wallet-rpc in session.
 * *unlocked_balance* - unsigned int; Unlocked funds are those funds that are sufficiently deep enough in the Monero blockchain to be considered safe to spend.
+* *multisig_import_needed* - boolean; True if importing multisig data is needed for returning a correct balance.
+* *per_subaddress* - array of subaddress information; Balance information for each subaddress in an account.
+  * *address_index* - unsigned int; Index of the subaddress in the account.
+  * *address* - string; Address at this index. Base58 representation of the public keys.
+  * *balance* - unsigned int; Balance for the subaddress (locked or unlocked).
+  * *unlocked_balance* - unsigned int; Unlocked balance for the subaddress.
+  * *label* - string; Label for the subaddress.
+  * *num_unspent_outputs* - unsigned int; Number of unspent outputs available for the subaddress.
 
 Example:
 
 ```
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbalance"}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbalance","params":{"account_index":0}}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
     "balance": 140000000000,
-    "unlocked_balance": 50000000000
+    "unlocked_balance": 50000000000,
+    "multisig_import_needed": false,
+    "per_subaddress": {
+      "address_index": 0,
+      "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA",
+      "balance": 140000000000,
+      "unlocked_balance": 50000000000,
+      "label": "",
+      "num_unspent_outputs": 42
+    }
   }
 }
 ```
@@ -102,9 +130,12 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **getaddress**
 
-Return the wallet's address.
+Return the wallet's addresses for an account. Optionally filter for specific set of subaddresses.
 
-Inputs: *None*.
+Inputs:
+
+* *account_index* - unsigned int; Return subaddresses for this account.
+* *address_index* - array of unsigned int; (Optional) List of subaddresses to return from an account.
 
 Outputs:
 
@@ -113,13 +144,24 @@ Outputs:
 Example:
 
 ```
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getaddress"}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getaddress","params":{"account_index":0,"address_index":[0,1]}}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"
+    "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA",
+    "addresses": [{
+          "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA",
+          "address_index": 0,
+          "label": "Primary account",
+          "used": false
+        },{
+          "address": "88bV1uo76AaKZaWD389kCf5EfPxKFYEKUQbs9ZRJm23E2X2oYgV9bQ54FiY6hAB83aDXMUSZF6KWyfeQqzLqaAeeFrk9iic",
+          "address_index": 1,
+          "label": "",
+          "used": false
+        }]
   }
 }
 ```
@@ -159,6 +201,8 @@ Inputs:
 * *destinations* - array of destinations to receive XMR:
   * *amount* - unsigned int; Amount to send to each destination, in @atomic-units.
   * *address* - string; Destination public address.
+* *account_index* - unsigned int; Transfer from this account index.
+* *subaddr_indices* - array of unsigned int; Transfer from this set of subaddresses.
 * *fee* - unsigned int; Ignored, will be automatically calculated.
 * *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
@@ -167,6 +211,7 @@ Inputs:
 * *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
 * *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
 * *get_tx_hex* - boolean; Return the transaction as hex string after sending
+* *get_tx_metadata* - boolean; Return the metadata needed to relay the transaction.
 
 
 Outputs:
@@ -174,8 +219,11 @@ Outputs:
 * *fee* - Integer value of the fee charged for the txn.
 * *tx_hash* - String for the publically searchable transaction hash
 * *tx_key* - String for the transaction key if get_tx_key is true, otherwise, blank string.
-* *tx_blob* - Transaction as hex string if get_tx_hex is true
-
+* *amount_keys* - List of strings for the amount keys.
+* *amount* - Amount transferred for the transaction.
+* *tx_blob* - Raw transaction represented as hex string, if get_tx_hex is true.
+* *tx_metadata* - Set of transaction metadata needed to relay this transfer later, if get_tx_metadata is true.
+* *multisig_txset* - Set of multisig transactions in the process of being signed (empty for non-multisig).
 
 Example:
 
@@ -188,7 +236,12 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   "result": {
     "fee": 48958481211,
     "tx_hash": "985180f468637bc6d2f72ee054e1e34b8d5097988bb29a2e0cb763e4464db23c",
-    "tx_key": "8d62e5637f1fcc9a8904057d6bed6c697618507b193e956f77c31ce662b2ee07"
+    "tx_key": "8d62e5637f1fcc9a8904057d6bed6c697618507b193e956f77c31ce662b2ee07",
+    "amount_keys":[],
+    "amount": 300000000,
+    "tx_blob": "",
+    "tx_metadata": "",
+    "multisig_txset": ""
   }
 }
 ```
@@ -203,8 +256,10 @@ Inputs:
 * *destinations* - array of destinations to receive XMR:
   * *amount* - unsigned int; Amount to send to each destination, in @atomic-units.
   * *address* - string; Destination public address.
-* *fee* - unsigned int; Ignored, will be automatically calculated.
-* *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
+* *account_index* - unsigned int; Transfer from this account.
+* *subaddr_indices* - array of unsigned int; Transfer from this set of subaddresses.
+* *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
+* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending. -- Ignored
@@ -212,6 +267,7 @@ Inputs:
 * *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
 * *get_tx_hex* - boolean; Return the transactions as hex string after sending
 * *new_algorithm* - boolean; True to use the new transaction construction algorithm, defaults to false.
+* *get_tx_metadata* - boolean; Return list of transaction metadata needed to relay the transfer later.
 
 Outputs:
 
@@ -220,6 +276,8 @@ Outputs:
 * *tx_blob_list* - array of: string. The tx as hex string for every transaction.
 * *amount_list* - array of: integer. The amount transferred for every transaction..
 * *tx_key_list* - array of: string. The transaction keys for every transaction.
+* *tx_metadata_list* - array of: string. List of transaction metadata needed to relay the transactions later.
+* *multisig_txset* - string. The set of signing keys used in a multisig transaction (empty for non-multisig).
 
 Example:
 
@@ -270,20 +328,25 @@ Send all unlocked balance to an address.
 Inputs:
 
 * *address* - string; Destination public address.
-* *priority* - unsigned int; (Optional)
-* *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
+* *account_index* - unsigned int; Sweep transactions from this account.
+* *subaddr_indices* - array of unsigned int; (Optional) Sweep from this set of subaddresses in the account.
+* *priority* - unsigned int; (Optional) Priority for sending the sweep transfer, partially determines fee.
+* *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
-* *below_amount* - unsigned int; (Optional)
-* *do_not_relay* - boolean; (Optional)
+* *below_amount* - unsigned int; (Optional) Include outputs below this amount.
+* *do_not_relay* - boolean; (Optional) If true, do not relay this sweep transfer.
 * *get_tx_hex* - boolean; (Optional) return the transactions as hex encoded string.
+* *get_tx_metadata* - boolean; (Optional) return the transaction metadata as a string.
 
 Outputs:
 
-* *tx_hash_list* - array of string;
-* *tx_key_list* - array of string;
-* *tx_blob_list* - array of string; 
+* *tx_hash_list* - array of string; List of transaction hashes used as transaction IDs.
+* *tx_key_list* - array of string; List of public and private transaction keys.
+* *tx_blob_list* - array of string; List of transactions represented as a hex blob.
+* *tx_metadata_list* - array of string; Transaction metadata needed for relaying.
+* *multisig_txset* - string; Set of multisig transactions in the process of being signed.
 
 Example:
 
@@ -328,16 +391,20 @@ Get a list of incoming payments using a given payment id.
 
 Inputs:
 
-* *payment_id* - string
+* *payment_id* - string; Payment ID used to find the payments.
 
 Outputs:
 
 * *payments* - list of:
-  * *payment_id* - string
-  * *tx_hash* - string
-  * *amount* - unsigned int
-  * *block_height* - unsigned int
-  * *unlock_time* - unsigned int
+  * *payment_id* - string; Payment ID matching the input parameter.
+  * *tx_hash* - string; Transaction hash used as the transaction ID.
+  * *amount* - unsigned int; Amount for this payment.
+  * *block_height* - unsigned int; Height of the block that first confirmed this payment.
+  * *unlock_time* - unsigned int; Time (in block height) until this payment is safe to spend.
+  * *subaddr_index* - subaddress index:
+    * *major* - unsigned int; Account index for the subaddress.
+    * *minor* - unsigned int; Index of the subaddress in the account.
+  * *address* - string; Address receiving the payment; Base58 representation of the public keys.
 
 Example:
 
@@ -354,6 +421,11 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
       "payment_id": "4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030",
       "tx_hash": "c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1",
       "unlock_time": 0
+      "subaddr_index": {
+        "major": 0,
+        "minor": 0,
+      },
+      "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA"
     }]
   }
 }
@@ -366,17 +438,21 @@ Get a list of incoming payments using a given payment id, or a list of payments 
 
 Inputs:
 
-* *payment_ids* - array of: string
- * *min_block_height* - unsigned int; The block height at which to start looking for payments.
+* *payment_ids* - array of: string; Payment IDs used to find the payments.
+* *min_block_height* - unsigned int; The block height at which to start looking for payments.
 
 Outputs:
 
 * *payments* - list of:
-  * *payment_id* - string
-  * *tx_hash* - string
-  * *amount* - unsigned int
-  * *block_height* - unsigned int
-  * *unlock_time* - unsigned int
+  * *payment_id* - string; Payment ID matching one of the input IDs.
+  * *tx_hash* - string; Transaction hash used as the transaction ID.
+  * *amount* - unsigned int; Amount for this payment.
+  * *block_height* - unsigned int; Height of the block that first confirmed this payment.
+  * *unlock_time* - unsigned int; Time (in block height) until this payment is safe to spend.
+  * *subaddr_index* - subaddress index:
+    * *major* - unsigned int; Account index for the subaddress.
+    * *minor* - unsigned int; Index of the subaddress in the account.
+  * *address* - string; Address receiving the payment; Base58 representation of the public keys.
 
 Example:
 
@@ -393,6 +469,11 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
       "payment_id": "4279257e0a20608e25dba8744949c9e1caff4fcdafc7d5362ecf14225f3d9030",
       "tx_hash": "c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1",
       "unlock_time": 0
+      "subaddr_index": {
+        "major": 0,
+        "minor": 1,
+      },
+      "address": "88bV1uo76AaKZaWD389kCf5EfPxKFYEKUQbs9ZRJm23E2X2oYgV9bQ54FiY6hAB83aDXMUSZF6KWyfeQqzLqaAeeFrk9iic"
     }]
   }
 }
@@ -405,31 +486,79 @@ Returns a list of transfers.
 
 Inputs:
 
-* *in* - boolean;
-* *out* - boolean;
-* *pending* - boolean;
-* *failed* - boolean;
-* *pool* - boolean;
-* *filter_by_height* - boolean;
-* *min_height* - unsigned int;
-* *max_height* - unsigned int;
+* *in* - boolean; (Optional) Include incoming transfers.
+* *out* - boolean; (Optional) Include outgoing transfers.
+* *pending* - boolean; (Optional) Include pending transfers.
+* *failed* - boolean; (Optional) Include failed transfers.
+* *pool* - boolean; (Optional) Include transfers from the daemon's transaction pool.
+* *filter_by_height* - boolean; (Optional) Filter transfers by block height.
+* *min_height* - unsigned int; (Optional) Minimum block height to scan for transfers, if filtering by height is enabled.
+* *max_height* - unsigned int; (Opional) Maximum block height to scan for transfers, if filtering by height is enabled.
+* *account_index* - unsigned int; (Optional) Index of the account to query for transfers.
+* *subaddr_indices* - array of unsigned int; (Optional) List of subaddress indices to query for transfers.
 
 Outputs:
 
 * *in* array of transfers:
-  * *txid* - string;
-  * *payment_id* - string;
-  * *height* - unsigned int;
-  * *timestamp* - unsigned int;
-  * *amount* - unsigned int;
-  * *fee* - unsigned int;
-  * *note* - string;
-  * *destinations* - std::list<transfer_destination>;
-  * *type* - string;
-* *out* array of transfers
-* *pending* array of transfers
-* *failed* array of transfers
-* *pool* array of transfers
+  * *txid* - string; Transaction ID for this transfer.
+  * *payment_id* - string; Payment ID for this transfer.
+  * *height* - unsigned int; Height of the first block that confirmed this transfer.
+  * *timestamp* - unsigned int; POSIX timestamp for when this transfer was first confirmed in a block.
+  * *amount* - unsigned int; Amount transferred.
+  * *fee* - unsigned int; Transaction fee for this transfer.
+  * *note* - string; Note about this transfer.
+  * *destinations* - array of transfer destinations:
+    * *amount* - unsigned int; Amount for this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
+  * *type* - string; Transfer type: "in"
+* *out* array of transfers:
+  * *txid* - string; Transaction ID for this transfer.
+  * *payment_id* - string; Payment ID for this transfer.
+  * *height* - unsigned int; Height of the first block that confirmed this transfer.
+  * *timestamp* - unsigned int; POSIX timestamp for when this transfer was first confirmed in a block.
+  * *amount* - unsigned int; Amount transferred.
+  * *fee* - unsigned int; Transaction fee for this transfer.
+  * *note* - string; Note about this transfer.
+  * *destinations* - array of transfer destinations:
+    * *amount* - unsigned int; Amount for this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
+  * *type* - string; Transfer type: "out"
+* *pending* array of transfers:
+  * *txid* - string; Transaction ID for this transfer.
+  * *payment_id* - string; Payment ID for this transfer.
+  * *height* - unsigned int; 0, this transfer is not yet confirmed in a block.
+  * *timestamp* - unsigned int; POSIX timestamp for when this transfer was sent.
+  * *amount* - unsigned int; Amount transferred.
+  * *fee* - unsigned int; Transaction fee for this transfer.
+  * *note* - string; Note about this transfer.
+  * *destinations* - array of transfer destinations:
+    * *amount* - unsigned int; Amount for this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
+  * *type* - string; Transfer type: "pending"
+* *failed* array of transfers:
+  * *txid* - string; Transaction ID for this transfer.
+  * *payment_id* - string; Payment ID for this transfer.
+  * *height* - unsigned int; 0, this transfer will not be confirmed in a block.
+  * *timestamp* - unsigned int; POSIX timestamp for when this transfer was sent.
+  * *amount* - unsigned int; Amount transferred.
+  * *fee* - unsigned int; Transaction fee for this transfer.
+  * *note* - string; Note about this transfer.
+  * *destinations* - array of transfer destinations:
+    * *amount* - unsigned int; Amount for this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
+  * *type* - string; Transfer type: "failed"
+* *pool* array of transfers:
+  * *txid* - string; Transaction ID for this transfer.
+  * *payment_id* - string; Payment ID for this transfer.
+  * *height* - unsigned int; 0, this transfer is not yet confirmed in a block.
+  * *timestamp* - unsigned int; POSIX timestamp for when this transfer was last seen in the transaction pool.
+  * *amount* - unsigned int; Amount transferred.
+  * *fee* - unsigned int; Transaction fee for this transfer.
+  * *note* - string; Note about this transfer.
+  * *destinations* - array of transfer destinations:
+    * *amount* - unsigned int; Amount for this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
+  * *type* - string; Transfer type: "pool"
 
 
 Example:
@@ -461,19 +590,29 @@ Show information about a transfer to/from this address.
 
 Inputs:
 
-* *txid* - string
+* *txid* - string; Transaction ID used to find the transfer.
+* *account_index* - unsigned int; (Optional) Index of the account to query for the transfer.
 
 Outputs:
 
-* *transfer* - JSON object containing parment information:
-  * *amount* - unsigned int
-  * *fee* - unsigned int
-  * *height* - unsigned int
-  * *note* - string
-  * *payment_id* - string
-  * *timestamp* - unsigned int
-  * *txid* - string
-  * *type* - string
+* *transfer* - JSON object containing payment information:
+  * *amount* - unsigned int; Amount of this transfer.
+  * *fee* - unsigned int; Transaction fee for this transfer.
+  * *height* - unsigned int; Height of the first block that confirmed this transfer.
+  * *note* - string; Note about this transfer.
+  * *payment_id* - string; Payment ID for this transfer.
+  * *timestamp* - unsigned int; POSIX timestamp for the block that confirmed this transfer.
+  * *txid* - string; Transaction ID of this transfer (same as input TXID).
+  * *type* - string; Type of transfer, one of the following: "in", "out", "pending", "failed", "pool"
+  * *destinations* - array of JSON objects containing transfer destinations:
+    * *amount* - unsigned int; Amount transferred to this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
+  * *unlock_time* - unsigned int; Number of blocks until transfer is safely spendable.
+  * *subaddr_index* - JSON object containing the major & minor subaddress index:
+    * *major* - unsigned int; Account index for the subaddress.
+    * *minor* - unsigned int; Index of the subaddress under the account.
+  * *address* - string; Address that transferred the funds. Base58 representation of the public keys.
+  * *double_spend_seen* - boolean; True if the key image(s) for the transfer have been seen before.
 
 Example:
 
@@ -493,6 +632,17 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
       "timestamp": 1495539310,
       "txid": "f2d33ba969a09941c6671e6dfe7e9456e5f686eca72c1a94a3e63ac6d7f27baf",
       "type": "in"
+      "destinations": [
+        "amount": 10000000000000,
+        "address": "88bV1uo76AaKZaWD389kCf5EfPxKFYEKUQbs9ZRJm23E2X2oYgV9bQ54FiY6hAB83aDXMUSZF6KWyfeQqzLqaAeeFrk9iic"
+      ],
+      "unlock_time": 0,
+      "subaddr_index": {
+        "major": 0,
+        "minor": 0
+      },
+      "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA",
+      "double_spend_seen": false
     }
   }
 }
@@ -506,15 +656,20 @@ Return a list of incoming transfers to the wallet.
 Inputs:
 
 * *transfer_type* - string; "all": all the transfers, "available": only transfers which are not yet spent, OR "unavailable": only transfers which are already spent.
+* *account_index* - unsigned int; (Optional) Return transfers for this account.
+* *subaddr_indices* - array of unsigned int; (Optional) Return transfers sent to these subaddresses.
+* *verbose* - boolean; (Optional) Enable verbose output, return key image if true.
 
 Outputs:
 
 * *transfers* - list of:
-  * *amount* - unsigned int
-  * *spent* - boolean
+  * *amount* - unsigned int; Amount of this transfer.
+  * *spent* - boolean; Indicates if this transfer has been spent.
   * *global_index* - unsigned int; Mostly internal use, can be ignored by most users.
   * *tx_hash* - string; Several incoming transfers may share the same hash if they were in the same transaction.
-  * *tx_size* - unsigned int
+  * *tx_size* - unsigned int; Size of transaction in bytes.
+  * *subaddr_index* - unsigned int; Subaddress index for incoming transfer.
+  * *key_image* - string; Key image for the incoming transfer's unspent output (empty unless verbose is true).
 
 Example (Return "all" transaction types):
 
@@ -530,19 +685,25 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
       "global_index": 711506,
       "spent": false,
       "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
+      "tx_size": 5870,
+      "subaddr_index": 0,
+      "key_image": ""
     },{
       "amount": 300000000000,
       "global_index": 794232,
       "spent": false,
       "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
+      "tx_size": 5870,
+      "subaddr_index": 0,
+      "key_image": ""
     },{
       "amount": 50000000000,
       "global_index": 213659,
       "spent": false,
       "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
+      "tx_size": 5870,
+      "subaddr_index": 0,
+      "key_image": ""
     }]
   }
 }
@@ -562,19 +723,25 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
       "global_index": 711506,
       "spent": false,
       "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
+      "tx_size": 5870,
+      "subaddr_index": 0,
+      "key_image": ""
     },{
       "amount": 300000000000,
       "global_index": 794232,
       "spent": false,
       "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
+      "tx_size": 5870,
+      "subaddr_index": 0,
+      "key_image": ""
     },{
       "amount": 50000000000,
       "global_index": 213659,
       "spent": false,
       "tx_hash": "&lt;c391089f5b1b02067acc15294e3629a463412af1f1ed0f354113dd4467e4f6c1&gt;",
-      "tx_size": 5870
+      "tx_size": 5870,
+      "subaddr_index": 0,
+      "key_image": ""
     }]
   }
 }
@@ -1205,6 +1372,265 @@ Example:
 
 ```
 $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"open_wallet","params":{"filename":"mytestwallet","password":"mytestpassword"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+### **get_accounts**
+
+Get all accounts for a wallet. Optionally filter accounts by tag.
+
+Inputs:
+
+* *tag* - string; (Optional) Tag for filtering accounts.
+
+Outputs:
+
+* *subaddress_accounts* - array of subaddress account information:
+  * *account_index* - unsigned int; Index of the account.
+  * *balance* - unsigned int; Balance of the account (locked or unlocked).
+  * *base_address* - string; Base64 representation of the first subaddress in the account.
+  * *label* - string; (Optional) Label of the account.
+  * *tag* - string; (Optional) Tag for filtering accounts.
+  * *unlocked_balance* - unsigned int; Unlocked balance for the account.
+* *total_balance* - unsigned int; Total balance of the selected accounts (locked or unlocked).
+* *total_unlocked_balance* - unsigned int; Total unlocked balance of the selected accounts.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_accounts","params":{"tag":"checking"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "subaddress_accounts": [{
+      "account_index": 0,
+      "balance": 0,
+      "base_address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA",
+      "label": "Primary account",
+      "tag": "checking",
+      "unlocked_balance": 0
+    },{
+      "account_index": 1,
+      "balance": 0,
+      "base_address": "88bV1uo76AaKZaWD389kCf5EfPxKFYEKUQbs9ZRJm23E2X2oYgV9bQ54FiY6hAB83aDXMUSZF6KWyfeQqzLqaAeeFrk9iic",
+      "label": "",
+      "tag": "checking",
+      "unlocked_balance": 0
+    }],
+    "total_balance": 0,
+    "total_unlocked_balance": 0
+  }
+}
+```
+
+### **create_account**
+
+Create a new account with an optional label.
+
+Inputs:
+
+* *label* - string; (Optional) Label for the account.
+
+Outputs:
+
+* *account_index* - unsigned int; Index of the new account.
+* *address* - string; Address for this account. Base58 representation of the public keys.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_account","params":{"label":"Secondary account"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "account_index": 1,
+    "address": "88bV1uo76AaKZaWD389kCf5EfPxKFYEKUQbs9ZRJm23E2X2oYgV9bQ54FiY6hAB83aDXMUSZF6KWyfeQqzLqaAeeFrk9iic"
+  }
+}
+```
+
+### **label_account**
+
+Label an account.
+
+Inputs:
+
+* *account_index* - unsigned int; Apply label to account at this index.
+* *label* - string; Label for the account.
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"label_account","params":{"account_index":0,"label":"Secondary account"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+### **create_address**
+
+Create a new address for an account. Optionally, label the new address.
+
+Inputs:
+
+* *account_index* - unsigned int; Create a new address for this account.
+* *label* - string; (Optional) Label for the new address.
+
+Outputs:
+
+* *address* - string; Newly created address. Base58 representation of the public keys.
+* *address_index* - unsigned int; Index of the new address under the input account.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_address","params":{"account_index:0,"label":"Secondary account"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "address": "88bV1uo76AaKZaWD389kCf5EfPxKFYEKUQbs9ZRJm23E2X2oYgV9bQ54FiY6hAB83aDXMUSZF6KWyfeQqzLqaAeeFrk9iic",
+    "address_index": 1
+  }
+}
+```
+
+### **label_address**
+
+Label an address.
+
+Inputs:
+
+* *index* - subaddress index; JSON Object containing the major & minor address index:
+  * *major* - unsigned int; Account index for the subaddress.
+  * *minor* - unsigned int; Index of the subaddress in the account.
+* *label* - string; Label for the address.
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"label_address","params":{"index":{"major":0,"minor":1}},"label":"Secondary account"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+### **get_account_tags**
+
+Get a list of user-defined account tags.
+
+Inputs: *None*.
+
+Outputs:
+
+* *account_tags* - array of account tag information:
+  * *tag* - string; Filter tag.
+  * *label* - string; Label for the tag.
+  * *accounts* - array of int; List of tagged account indices.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_account_tags","params":""}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "account_tags": [{
+      "accounts": [0],
+      "label": "",
+      "tag": "test"
+    }]
+  }
+}
+```
+
+### **tag_accounts**
+
+Apply a filtering tag to a list of accounts.
+
+Inputs:
+
+* *tag* - string; Tag for the accounts.
+* *accounts* - array of unsigned int; Tag this list of accounts.
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"tag_accounts","params":{"tag":"test","accounts":[0,1]}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+### **untag_accounts**
+
+Remove filtering tag from a list of accounts.
+
+Inputs:
+
+* *accounts* - array of unsigned int; Remove tag from this list of accounts.
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"untag_accounts","params":{"accounts":[1]}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+### **set_account_tag_description**
+
+Set description for an account tag.
+
+Inputs:
+
+* *tag* - string; Set a description for this tag.
+* *description* - string; Description for the tag.
+
+Outputs: *None*.
+
+Example:
+
+```
+$ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_account_tag_description","params":{"tag":"test","description":"Test accounts"}}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
