@@ -1,3 +1,5 @@
+### Prove payments
+
 When you send money to a party who then disputes the payment was made, you need to be able to prove the payment was made.
 
 With Bitcoin, this is typically done by looking up the transaction ID, where the origin and destination addresses are
@@ -12,8 +14,11 @@ To prove to Charlie that she made a payment to Bob, Alice must supply Charlie th
 - Bob's address, as is done with Bitcoin
 - the transaction's key, which is new with Monero and other CryptoNote currencies
 
-When Alice made the transaction, a one time key was automatically generated just for this transaction. Alice can
-query it thus in monero-wallet-cli (new name for the old simplewallet):
+When Alice made the transaction, a one time key was automatically generated just for this transaction.
+
+#### CLI
+
+Alice can query it thus in monero-wallet-cli (new name for the old simplewallet):
 
 > get_tx_key TXID
 
@@ -28,15 +33,32 @@ If it's set to 0, set it to 1:
 
 > set store-tx-info 1
 
-Alice can now send Charlie the transaction key along with transaction ID and Bob's address.
+#### GUI
 
-Note: if several transactions were made, this needs repeating for each such transaction.
+Alice can open her monero-wallet-gui and go to the history page to see her transaction detail:
+
+![History](png/prove-payment/history.png)
+
+Here, she can copy the transaction ID and Bob's address by clicking on each of them.
+Then she can click on `P` to get a payment proof (transaction key):
+
+![Payment proof](png/prove-payment/payment-proof.png)
 
 
 ---
 
+Alice can now send Charlie the transaction key along with transaction ID and Bob's address.
+
+Note: if several transactions were made, this needs repeating for each such transaction.
+
+### Check payments
+
 Charlie now received those three pieces of information, and wants to check Alice is telling the truth: on an up to date
-blockchain, Charlie types in monero-wallet-cli:
+blockchain,
+
+#### CLI
+
+Charlie types in monero-wallet-cli:
 
 > check_tx_key TXID TXKEY ADDRESS
 
@@ -44,8 +66,19 @@ The information supplied by Alice plugs neatly instead of the placeholders. mone
 key to decode the transaction, and display how much this particular transaction sent to this address. Obviously,
 Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
 
-Alternatively, the transaction key can be obtained in the GUI in the History tab. Click on details for each individual transaction to get the key.
+#### GUI
+
+Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+
+![Check payment](png/prove-payment/check-payment.png)
+
+Then clicking on Check will tell Charlie how much this particular transaction sent to this address, and how much confirmation the transaction had:
+
+![Payment checked](png/prove-payment/payment-checked.png)
+
+
+---
+
+Obviously, Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
 
 Note: if several transactions were made, this needs repeating for each such transaction.
-
-

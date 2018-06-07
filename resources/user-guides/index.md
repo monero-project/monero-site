@@ -56,6 +56,7 @@ title: titles.userguides
                         <p>
                             <a href="{{site.baseurl}}/resources/user-guides/howto_fix_stuck_funds.html">{% t user-guides.locked-funds %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/restore_account.html">{% t user-guides.restore-account %}</a>
+                            <a href="{{site.baseurl}}/resources/user-guides/restore_from_keys.html">{% t user-guides.restore-from-keys %}</a>
                         </p>
                     </div>
                 </div>
@@ -74,7 +75,6 @@ title: titles.userguides
                             <a href="{{site.baseurl}}/resources/user-guides/remote_node_gui.html">{% t user-guides.remote-node-gui %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/view_only.html">{% t user-guides.view-only %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/prove-payment.html">{% t user-guides.prove-payment %}</a>
-                            <a href="{{site.baseurl}}/resources/user-guides/restore_from_keys.html">{% t user-guides.restore-from-keys %}</a>
                         </p>
                     </div>
                 </div>

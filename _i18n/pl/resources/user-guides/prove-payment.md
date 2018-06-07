@@ -1,3 +1,5 @@
+### Udowodnij płatności
+
 Jeżeli dokonasz płatności osobie, która później ją zakwestionuje, musisz być w stanie udowodnić, że pieniądze zostały przesłane.
 
 W przypadku Bitcoina zazwyczaj dokonuje się tego, wyszukując numer identyfikacyjny transakcji, gdzie adres nadawcy i odbiorcy oraz przesłana kwota są ujawnione.
@@ -10,7 +12,11 @@ Aby udowodnić Pawłowi, że Ewa przesłała pieniądze Jackowi, musi ona przeka
 - adres Jacka, tak jak się to dzieje w przypadku Bitcoina
 - klucz transakcji, który jest wyłącznością Monero i innych walut CryptoNote.
 
-Gdy Ewa dokonywała transakcji, jendorazowy klucz został wygenerowany tylko dla tej płatności. Ewa może więc odnaleźć go w monero-wallet-cli (nowa nazwa dawnego simplewallet):
+Gdy Ewa dokonywała transakcji, jendorazowy klucz został wygenerowany tylko dla tej płatności.
+
+#### CLI
+
+Ewa może więc odnaleźć go w monero-wallet-cli (nowa nazwa dawnego simplewallet):
 
 > get_tx_key TXID
 
@@ -24,20 +30,50 @@ Jeśli ustawione jest na 0, zmień na 1:
 
 > set store-tx-info 1
 
-Ewa może teraz przesłać Pawłowi klucz transakcji razem z numerem identyfikacyjnym transakcji oraz adresem Jacka.
+#### GUI
 
-Zauważ, że jeśli zostało dokonanych wiele transakcji, cały proces musi zostać powtórzony dla każdej transakcji.
+Ewa może otworzyć swój Graficzny Interfejs Użytkownika i przejść do Historii, gdzie wyszuka szczegóły transakcji:
+
+![History](png/prove-payment/history.png)
+
+Stąd może ona skopiować numer identyfikacyjny transakcji oraz adres Jacka, klikając na nie.
+Następnie po kliknięciu `P`, Ewa wygeneruje dowód płatności (klucz transakcji).
+
+![Payment proof](png/prove-payment/payment-proof.png)
 
 
 ---
 
-Paweł otrzymał trzy informacje i chce sprawdzić, czy Ewa mówi prawdę - w aktualnym łańcuchu bloków Paweł wpisuje w wierszu poleceń:
+Ewa może teraz przesłać Pawłowi klucz transakcji razem z numerem identyfikacyjnym transakcji oraz adresem Jacka.
+
+Zauważ, że jeśli zostało dokonanych wiele transakcji, cały proces musi zostać powtórzony dla każdej transakcji.
+
+### Sprawdź płatności
+
+Paweł otrzymał trzy informacje i chce sprawdzić, czy Ewa mówi prawdę - w aktualnym łańcuchu bloków
+
+#### CLI
+
+Paweł wpisuje w wierszu poleceń:
 
 > check_tx_key TXID TXKEY ADDRESS
 
-Paweł zamienił symbole na informacje dostarczone przez Ewę. monero-wallet-cli użyje klucza transakcji do odszyfrowania jej i wyświetli kwotę przesłaną na ten konkretny adres. Oczywiście, Paweł będzie chciał się upewnić, czy adres Jacka rzeczywiście do niego należy - tak samo jak w przypadku Bitcoina.
+Paweł zamienił symbole na informacje dostarczone przez Ewę. monero-wallet-cli użyje klucza transakcji do odszyfrowania jej i wyświetli kwotę przesłaną na ten konkretny adres.
 
-Inną opcją jest uzyskanie klucza transakcji w zakładce Historia w Graficznym Interfejsie Użytkownika. Kliknij na detale każdej pojedynczej transakcji, aby otrzymać klucz.
+#### GUI
+
+Paweł otworzy swój Graficzny Interfejs Użytkownika i przejdzie do strony Advanced > Prove/Check, aby wypełnić pole Check informacjami dostarczonymi przez Ewę.
+
+![Check payment](png/prove-payment/check-payment.png)
+
+Po kliknięciu "Check" Paweł dowie się, jaka kwota została przelana na ten adres w tej konkretnej transakcji oraz ile potwierdzeń miała transakcja.
+
+![Payment checked](png/prove-payment/payment-checked.png)
+
+
+---
+
+Oczywiście, Paweł będzie chciał się upewnić, czy adres Jacka rzeczywiście do niego należy - tak samo jak w przypadku Bitcoina.
 
 Zauważ, że jeśli zostało dokonanych wiele transakcji, cały proces musi zostać powtórzony dla każdej transakcji.
 
