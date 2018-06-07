@@ -7,7 +7,7 @@ permalink: /community/team/index.html
     <section class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class="tabPanel-widget">
+                <div class="tabPanel-widget tabPanel-header5">
                     <label for="tab-1" tabindex="0"></label>
                     <input id="tab-1" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>{% t team.core %}</h2>

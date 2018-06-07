@@ -1068,8 +1068,8 @@ pre.highlight>code {
 }
 
 .arrow-down {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   border-top: 3px solid #393939;
@@ -1096,41 +1096,41 @@ pre.highlight>code {
 }
 
 .untranslated-link {
-    color: white; 
+    color: white;
     text-decoration: underline;
 }
 
 @media only screen and (max-width: 75rem) {
-    
+
 body p, body blockquote, body ul {
     font-size: 16px;
     font-size: 1rem;
-}   
-    
+}
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .page-wrapper {
     padding-top: 4.5rem;
 }
     code {
         word-break: break-all;
     }
-    
+
 }
 
 @media only screen and (max-width: 48rem) {
-    
-body {font-size: 1rem;}    
-    
+
+body {font-size: 1rem;}
+
 .page-wrapper {
     padding-top: 4rem;
-}  
+}
     .untranslated p {
         font-size: 0.6rem;
     }
-    
+
 }
 
 /*******************HEADINGS*************************/
@@ -1143,7 +1143,7 @@ h1 {
     margin: 2.5rem 0 2rem 0;
 }
 
-h2 { 
+h2 {
     font-family: 'Hind', 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 1.75rem;
@@ -1240,7 +1240,7 @@ h2#main-h2 {
     margin: 0.5rem 0 0 0;
 }
 
-h2, .info-block h2 { 
+h2, .info-block h2 {
     font-size: 23px;
     font-size: 	1.5625rem;
     margin-bottom: 0;
@@ -1253,11 +1253,11 @@ h3 {
     margin-top: 1rem;
     margin-bottom: 0;
 }
-  
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 h1 {
     margin: 0.5rem 0 1rem 0;
 }
@@ -1266,7 +1266,7 @@ h1 {
     margin-bottom: 1.5rem;
     margin-top: -1rem;
 }
-    
+
 h1#main-h1 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -1278,7 +1278,7 @@ h2#main-h2 {
     margin: 1rem 0 0 0;
 }
 
-h2, .info-block h2 { 
+h2, .info-block h2 {
     font-size: 23px;
     font-size: 	1.5625rem;
     margin-bottom: 0;
@@ -1295,21 +1295,21 @@ h3 {
 p {
     padding-top: 1rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 48rem) {
-    
+
 h1#main-h1 {
     font-size: 3rem;
-} 
-    
+}
+
 h1 {
     font-size: 1.8rem;
     padding: 0.3rem;
     margin: 0.5rem 0;
 }
-    
+
 .about-main h3, .about-monero h3 {
     padding-top: 1rem;
 }
@@ -1317,18 +1317,18 @@ h1 {
 .container.description p {
     padding: 0 2rem;
 }
-    
+
 .pre-roadmap p, .container.description p {
     margin-bottom: 1rem;
     margin-top: -0.5rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 47.9rem) {
-    
 
-    
+
+
 }
 
 
@@ -1337,16 +1337,16 @@ h1 {
 
 h1#main-h1 {
     font-size: 2.5rem;
-}    
-    
+}
+
 h2#main-h2 {
     font-size: 1.5rem;
     margin-top: 0.5rem;
-}  
-    
+}
+
 h2, .info-block h2 {
     font-size: 1.4rem;
-}   
+}
 }
 
 
@@ -1398,61 +1398,61 @@ h2, .info-block h2 {
 }
 
 @media only screen and (max-width: 75rem) {
-    
+
 .info-block {
     padding: 3rem 2rem;
-}     
-    
+}
+
 .full>.info-block.text-adapt {
     padding: 4rem 10rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .info-block {
     padding: 2.5rem 1.8rem;
-}  
-    
+}
+
 .full>.info-block.text-adapt {
     padding: 4rem;
 }
-    
+
 .center.one-fourth, .right.three-fourths, .left.three-fourths, .left.one-fourth.no-pad-sm, .right.one-fourth.no-pad-sm, .right.half, .left.half, .right.one-third, .left.two-thirds, .left.one-third, .right.two-thirds, .center.one-third {
     padding-left: 0; padding-right: 0;
 }
-    
+
 .center-1.one-fourth {padding-left: 0.5rem; padding-right: 0;}
-    
+
 .center-2.one-fourth {padding-right: 0.5rem; padding-left: 0;}
-    
+
 }
 
 @media only screen and (max-width: 48rem) {
-    
+
 .left.two-thirds, .left.one-third, .left.half, .left.one-fourth, .left.three-fourths, .right.two-thirds, .right.one-third, .center.one-third, .center-1.one-fourth, .center-2.one-fourth, .right.half, .right.one-fourth, .right.three-fourths, .full {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-}   
-    
+}
+
 .info-block {
     margin-bottom: 0.5rem;
 }
-    
+
 .full>.info-block.text-adapt {
     padding: 2.5rem 1.5rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 30rem) {
-    
+
 .info-block, .full>.info-block.text-adapt {
     padding: 2rem 1rem;
     margin-bottom: 0.5rem;
 }
-    
+
 }
 
 /*************************BUTTONS****************************/
@@ -1567,19 +1567,19 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .btn-fixed, .btn-auto {
     font-size: 0.875rem;
-}  
-    
+}
+
 }
 
 @media only screen and (max-width: 48rem) {
-    
+
 .btn-fixed, .btn-auto {
     font-size: 1rem;
-}   
-    
+}
+
 }
 
 @media only screen and (max-width: 30rem) {
@@ -1610,7 +1610,7 @@ img.monero-logo {
 
 .topnav .topnav-list .language-change, .topnav .topnav-list .top-link {
     font-size: 0.9rem;
-} 
+}
 
 .topnav .topnav-list .top-link {
     padding: 0.8rem 1rem;
@@ -1762,7 +1762,7 @@ img.monero-logo {
     top: 99.5%;
     text-align: left;
     background: #ffffff;
-    width: 100%; 
+    width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1816,58 +1816,58 @@ img.monero-logo {
 }
 
 @media only screen and (max-width: 75rem) {
-    
+
 .topnav .topnav-list .top-link.language-change {
     margin-right: 3.1rem;
     font-size: 0.85rem;
 }
-    
+
 .topnav .topnav-list .top-link {
     font-size: 0.85rem;
 }
-    
+
 img.monero-logo {
     padding-left: 3.1rem;
 }
-    
+
 .topnav .topnav-list .top-link {
     padding: 0.8rem 0.5rem;
 }
-    
+
 .topnav .topnav-list .language-change .dropdown-content {
     top: 1.9rem;
 }
-    
+
 .nav-items>.nav-item>label, .nav-item>.dropdown-content>a {
     padding-left: 2.7rem;
 }
-    
+
 .nav-items>.nav-item>label, .nav-items>.nav-item>a {
-    font-size: 1.16rem;      
+    font-size: 1.16rem;
 }
-    
+
 .nav-item>.dropdown-content>a {
     font-size: 0.9rem;
     padding-right: 2.2rem;
 }
-    
+
 .nav-items>.nav-item:first-of-type>label, .white-nav .nav-item:first-of-type .dropdown-content a {
     padding-left: 3.1rem;
 }
-    
+
 .nav-items>.nav-item:last-of-type>label {
     padding-right: 0.8rem;
 }
 
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .desktop-nav {
     display: none;
 }
-    
+
 }
 
 /*MOBILE NAVIGATION*/
@@ -1886,13 +1886,13 @@ img.monero-logo {
 /*.mob.bot-nav.white-nav  .col-xs-6 a {
     display: inline-block;
 }*/
-    
+
 img.monero-logo {
     position: inherit;
     width: 10rem;
     padding: 0.39rem 0 0.39rem 0;
 }
-    
+
 .white-nav {
      line-height: 0.5;
      display: -ms-flexbox;
@@ -1905,21 +1905,21 @@ img.monero-logo {
     border-right: none;
     border-left: none;
 }
-    
+
 .white-nav .nav-items {
     line-height: 1;
 }
-    
+
 .white-nav>.nav-items>.nav-item.mob {display: initial;}
-    
+
 .nav-items {
     display: none;
 }
-    
+
 .dropdown-content {
     display: none;
 }
-    
+
 .burger {
       display: block;
       border: 0;
@@ -1931,12 +1931,12 @@ img.monero-logo {
       width: 1.5rem;
       align-self: flex-end;
 }
-    
+
 .burger::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-    
+
 .burger:before {
   content: "";
   display: block;
@@ -1948,7 +1948,7 @@ img.monero-logo {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
-    
+
 .burger:after {
   content: "";
   display: block;
@@ -1960,13 +1960,13 @@ img.monero-logo {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
-    
+
 .burger-check:checked ~ .burger {
   border-bottom: 4px solid transparent;
   transition: border-bottom 0.5s ease-in-out;
   -webkit-transition: border-bottom 0.5s ease-in-out;
 }
-    
+
 .burger-check:checked ~ .burger:before {
   transform: rotate(-405deg) translateY(6px) translateX(-5px);
   -webkit-transform: rotate(-405deg) translateY(6px) translateX(-5px);
@@ -1975,7 +1975,7 @@ img.monero-logo {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
-    
+
 .burger-check:checked ~ .burger:after {
   transform: rotate(405deg) translateY(0px) translateX(1.3px);
   -webkit-transform: rotate(405deg) translateY(0px) translateX(1.3px);
@@ -1984,7 +1984,7 @@ img.monero-logo {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
-    
+
 .burger-check:checked ~ .nav-items{
     display: block;
 }
@@ -1999,13 +1999,13 @@ img.monero-logo {
 .burger-check:checked + label {
     position: fixed;
 }
-    
+
 .nav-item > label {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
 }
-    
+
 /*.white-nav .mob-language-change label .arrow-down {
     display: inline-block;
     margin-left: 0.2rem;
@@ -2013,19 +2013,19 @@ img.monero-logo {
     border-top: 3px solid #393939;
 }*/
 
-    
+
 .mob-nav {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
 }
-    
+
 .white-nav {
     -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1);
     -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
     box-shadow: 0 2px 2px rgba(0,0,0,.1);
 }
-    
+
 .slide-in-nav {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -2045,11 +2045,11 @@ img.monero-logo {
     overflow: scroll;
     z-index: 10;
 }
-    
-.slide-in-nav::-webkit-scrollbar { 
-    display: none; 
+
+.slide-in-nav::-webkit-scrollbar {
+    display: none;
 }
-    
+
 .mob.bot-nav {
     display: block;
     position: fixed;
@@ -2059,14 +2059,14 @@ img.monero-logo {
     min-height: 3.5rem;
     z-index: 10;
 }
-    
+
 label[for="mobile-burger"] {
     position: fixed;
     top: 1.3rem;
     left: 1rem;
     z-index: 11;
 }
-    
+
 #mobile-burger:checked ~ .slide-in-nav {
     position: fixed;
     -moz-box-shadow: 0 0 900px 900px rgba(0,0,0,0.5);
@@ -2075,11 +2075,11 @@ label[for="mobile-burger"] {
     right: 0;
     left: 0;
 }
-    
+
 #mobile-burger:checked ~ body {
     overflow: none;
 }
-    
+
 .slide-in {
     padding-top: 3.5rem;
     width: 100%;
@@ -2088,22 +2088,22 @@ label[for="mobile-burger"] {
 .slide-in .row label, .slide-in .row a {
     border-bottom: 1px solid #d7d7d7;
 }
-    
+
 .mob-nav .nav-item {
     position: relative;
     text-transform: uppercase;
     text-align: left;
     font-family: 'Hind', sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 1.125rem;
     cursor: pointer;
 }
-    
+
 .mob-nav .nav-item:checked, .mob-nav .nav-item:focus, .mob-nav .nav-item:active {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
 }
-    
+
 .mob-nav .nav-item .arrow-down {
     margin-top: 0.8rem;
     margin-left: 0.2rem;
@@ -2111,7 +2111,7 @@ label[for="mobile-burger"] {
 
 .mob-nav .nav-item a, .mob-nav .nav-item label {
     padding: 1rem 0 1rem 2rem;
-}    
+}
 
 .mob-nav .nav-item>a, .mob-nav .nav-item label, .mob-nav .nav-item .dropdown-content>a, .mob-nav .nav-item .arrow-down {
     -webkit-transition: all ease-out .2s;
@@ -2123,24 +2123,24 @@ label[for="mobile-burger"] {
 .mob-nav .nav-item a {
     display: block;
 }
-    
+
 .mob-nav .nav-item a:hover .arrow-down, .mob-nav .nav-item a.active .arrow-down, .mob-nav .nav-item a:focus .arrow-down, .mob-nav .nav-item label:hover .arrow-down, .mob-nav .nav-item label:focus .arrow-down, .mob-nav .nav-item label.active .arrow-down {
     border-top: 3px solid #ff7519;
 }
-    
+
 .mob-nav .nav-item label, .mob-nav .nav-item>a {
     text-decoration: none;
     color: #393939;
     cursor: pointer;
     height: 1.9rem;
     line-height: 2.1rem;
-} 
-    
-.mob-nav .nav-item>a:hover, .mob-nav .nav-item>a:focus, .mob-nav .nav-item>a:active, .mob-nav .nav-item>a.active, .mob-nav .nav-item label:hover, .mob-nav .nav-item label:focus {
-    color: #ff7519; 
 }
 
-    
+.mob-nav .nav-item>a:hover, .mob-nav .nav-item>a:focus, .mob-nav .nav-item>a:active, .mob-nav .nav-item>a.active, .mob-nav .nav-item label:hover, .mob-nav .nav-item label:focus {
+    color: #ff7519;
+}
+
+
 .mob-nav .nav-item .dropdown-content>a {
     text-align: left;
     padding: 0.8rem 0rem 0.8rem 3rem;
@@ -2151,25 +2151,25 @@ label[for="mobile-burger"] {
     color: #393939;
     cursor: pointer;
 }
-    
-    
+
+
 .mob-nav .nav-item>.dropdown-content>a:hover, .mob-nav .nav-item .dropdown-content>a:focus, .mob-nav .nav-item .dropdown-content>a.active {
     color: #ff7519;
     background-color: #f5f5f5;
 }
-    
+
 #drop1:checked ~ .dropdown-content, #drop2:checked ~ .dropdown-content, #drop3:checked ~ .dropdown-content, #drop4:checked ~ .dropdown-content {
     background-color: #fcfcfc;
 }
-    
+
 .mob-language-change, .mob-language-change label {
     cursor: pointer;
 }
-    
+
 .mob-language-change img.icon-language{
     width: 1.5rem;
 }
-        
+
 #moblangdrop:checked ~ .dropdown-content {
     display: block;
     position: inherit;
@@ -2189,47 +2189,47 @@ label[for="moblangdrop"] {
     margin-right: 0.5rem;
     padding: 0.5rem;
 }
-    
+
 label[for="moblangdrop"], label[for="moblangdrop"]:checked, #moblangdrop, #moblangdrop:checked {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
 }
-    
+
 #moblangdrop:checked ~ label {
     background-color: transparent;
 }
-    
+
 #moblangdrop ~ label .arrow-down {
     display: inline-block;
     margin-left: 0.2rem;
     margin-bottom: 0.6rem;
     border-top: 3px solid #393939;
 }
-    
+
 #moblangdrop:checked ~ label .arrow-down {
     border-bottom: 3px solid #393939;
     border-top: 0;
 }
-    
+
 .burger-check:checked + label {
     position: fixed;
 }
-    
+
 .nav-item > label {
     display: flex;
 }
-    
+
 .white-nav .mob-language-change {
     position: fixed;
     right: 0;
     align-self: center;
     font-family: 'Open Sans', sans-serif;
 }
-    
+
 .white-nav .mob-language-change label {
     color: #393939;
 }
-   
+
 p.mob-lang-change {
     padding: 0.8rem;
     color: #d7d7d7;
@@ -2237,45 +2237,45 @@ p.mob-lang-change {
     border-top: 1px solid #d7d7d7;
     cursor: default;
 }
-    
+
 a.mob-lang-change {
     padding: 0.8rem;
     color: #393939;
     border-bottom: 1px solid #e8ebef;
     line-height: 1.7;
 }
-    
+
 a.mob-lang-change:hover, a.mob-lang-change.active, a.mob-lang-change:focus {
     color: #ff7519;
     text-decoration: none;
-}   
-    
+}
+
 }
 
 @media only screen and (max-width: 48rem) {
 .white-nav {
     margin-bottom: 0;
 }
-    
+
 .burger-check:checked ~ .nav-items{
     display: block;
     height: 100vh;
-} 
-    
+}
+
 }
 
 @media only screen and (max-width: 30rem) {
-    
+
 img.monero-logo {
     width: 9rem;
     padding-top: 0.527rem;
 }
-        
+
 .slide-in-nav {
     width: 100vw;
     left: -110%;
 }
-    
+
 }
 
 
@@ -2361,64 +2361,64 @@ p.main-downloads {
 }
 
 @media only screen and (max-width: 75rem) {
-        
+
 .info-block-main {
     padding: 0;
 }
-    
+
 .main-info {
     padding: 4rem 2rem 4rem 0;
 }
-    
+
 .monero-video {
     padding: 4rem 2rem;
 }
-    
+
 .main-info p {
     padding-top: 0.5rem;
 }
-    
+
 .about-main .info-block-row, .about-monero .info-block-row {
     margin-top: 1.5rem;
 }
 
-    
+
 p.main-resources {
     height: 12rem;
 }
-    
+
 p.main-downloads {
     padding-left: 0.5rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .main-video {
     order: 1;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-    
+
 .main-info, .main-info h2#main-h2  {
     text-align: center;
     padding: 0;
 }
-   
+
 .monero-video {
      padding: 2.6rem 0 0 0;
- }   
-    
+ }
+
 .info-block-main {
     padding: 2.5rem 1.8rem;
-}   
-    
+}
+
 .main-info p {
     padding-top: 1rem;
 }
-    
+
 .about-main .info-block-row, .about-monero .info-block-row {
     margin-top: 3rem;
 }
@@ -2436,62 +2436,62 @@ p.main-downloads {
     padding-right: 1rem;
     padding-left: 1rem;
 }
-    
+
 p.main-resources {
     height: auto;
     text-align: left;
 }
-    
+
 p.main-downloads {
     padding-left: 0;
 }
-    
+
 }
 
 @media only screen and (max-width: 48rem) {
-    
+
 .monero-video {
     padding-top: 2rem;
 }
-    
+
 .about-main .info-block-row, .about-monero .info-block-row {
     margin-top: 1.5rem;
 }
-    
+
 .about-main .info-block-row .col-lg-8 {
     padding-right: 0;
     padding-left: 0;
 }
-    
+
 .about-main .info-block .col-lg-6.why-text, .about-monero .info-block .col-lg-7.why-text {
     padding: 0;
 }
 
-    
+
 }
 
 @media only screen and (max-width: 47.9rem) {
-        
+
 .info-block-row img.main-icon {
     width: 40%;
 }
-    
+
 }
 
 @media only screen and (max-width: 30rem) {
-    
+
 .main-info p#main-text {
     display: none;
 }
-    
+
 .monero-video {
     padding-top: 1.5rem;;
 }
-    
+
 .info-block-row img.main-icon {
     width: 40%;
 }
-    
+
 }
 
 /****************************FOOTER***************************/
@@ -2554,11 +2554,11 @@ footer a.white:hover, a.white:focus {
 }
 
 @media only screen and (max-width: 75rem) {
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .page-wrapper {
     position: relative;
     min-height: 100vh;
@@ -2578,12 +2578,12 @@ footer {
     background-color: #4c4c4c;
     color: #efefef;
     z-index: 1;
-}    
+}
 
 }
 
-@media only screen and (max-width: 48rem) { 
-    
+@media only screen and (max-width: 48rem) {
+
 .page-wrapper {
     position: initial;
     min-height: 100vh;
@@ -2601,31 +2601,31 @@ footer {
     color: #efefef;
     z-index: 1;
 }
-    
+
 .footer-wrapper {
     padding: 2.5rem;
 }
-    
+
 .footer-wrapper div.col-xs-6 {
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
     padding-right: 1rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 30rem) {
-    
+
 .footer-wrapper {
-    padding: 2rem 2rem 0 2rem;    
-}    
-    
+    padding: 2rem 2rem 0 2rem;
+}
+
 .footer-wrapper div.col-xs-6 {
     -ms-flex-preferred-size: 100%;
     max-width: 100%;
     flex-basis: 100%;
     padding-right: 0;
 }
-    
+
 }
 
 /******************MONEROPEDIA******************/
@@ -2677,7 +2677,7 @@ footer {
 .download-nav a:hover {
     background-color: #ff7519;
     color: #fff;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .downloads a img {
@@ -2757,7 +2757,7 @@ footer {
 }
 
 .downloads a.arrow-up:hover, .downloads a.arrow-up:focus {
-    border: none; 
+    border: none;
     background-color: #ff7519;
 }
 
@@ -2781,19 +2781,19 @@ footer {
 }
 
 @media only screen and (max-width: 75rem) {
-  
+
 .downloads .download-nav a {
     font-size: 0.92rem;
 }
-    
+
 .downloads .full>.info-block {
     padding: 3rem 2rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .downloads .download-nav a {
     padding: 1rem 0.6rem;
 }
@@ -2801,28 +2801,28 @@ footer {
 .downloads .downdropdown {
     display: none;
 }
-    
+
 .download-platforms .col-md-6 {
     padding: 0;
 }
-    
+
 #pick-platform {
     display: block;
 }
-    
+
 .info-block#pick-platform {
     padding: 0;
 }
-    
+
 .mob.dropdowndrop input {
     display: none;
 }
-    
+
 .mob.dropdowndrop input:checked ~ ul#menu {
     display: block;
     transition:max-height 0.5s ease-in;
 }
-    
+
 .mob.dropdowndrop label{
   position: relative;
   /*display: block;*/
@@ -2854,9 +2854,9 @@ footer {
   }
 
 .mob.dropdowndrop input:checked ~ label {
-  color: #ff7519; 
+  color: #ff7519;
 }
-    
+
 .mob.dropdowndrop input:hover ~ .mob.dropdowndrop label:after {
     border-top: 4px solid #ff7519 !important;
     border-bottom: 0 solid #ff7519 !important;
@@ -2868,7 +2868,7 @@ footer {
     border-bottom: 4px solid #ff7519;
     transition: border-top .1s, border-bottom .1s .1s;
 }
-    
+
 .mob.dropdowndrop ul#menu {
     display:none;
     padding:0;
@@ -2881,10 +2881,10 @@ footer {
     min-width:100%;
     text-align: left;
     background: #ffffff;
-    width: 100%; 
+    width: 100%;
     margin: 0;
 }
-    
+
 .mob.dropdowndrop ul#menu li a {
     display: block;
     color: #4c4c4c;
@@ -2903,12 +2903,12 @@ footer {
 .mob.dropdowndrop ul#menu li a:hover {
     color: #ff7519;
     background-color: #fcfcfc;
-}  
-    
+}
+
 .downloads .full>.info-block {
     padding: 2.5rem 1.8rem;
 }
-    
+
 }
 
 
@@ -2979,7 +2979,7 @@ footer {
 }
 
 .tabPanel-widget {
-  position: relative; 
+  position: relative;
 }
 
 .tabPanel-widget > label {
@@ -3009,6 +3009,11 @@ footer {
   -moz-box-shadow: 0 1px 0px rgba(50,50,93,.1);
   -webkit-box-shadow: 0 1px 0px rgba(50,50,93,.1);
   box-shadow: 0 1px 0px rgba(50,50,93,.1);
+}
+
+.tabPanel-header5 > label,
+.tabPanel-header5 > h2 {
+  width: 20% !important;
 }
 
 .tabPanel-widget input,
@@ -3048,12 +3053,37 @@ footer {
   left: calc(5 * (100% / 6));
 }
 
+.tabPanel-widget label:nth-child(1),
+.tabPanel-widget h2:nth-child(3) {
+  left: 0;
+}
+
+.tabPanel-header5 label:nth-child(5),
+.tabPanel-header5 h2:nth-child(7) {
+  left: 20%;
+}
+
+.tabPanel-header5 label:nth-child(9),
+.tabPanel-header5 h2:nth-child(11) {
+  left: 40%;
+}
+
+.tabPanel-header5 label:nth-child(13),
+.tabPanel-header5 h2:nth-child(15) {
+  left: 60%;
+}
+
+.tabPanel-header5 label:nth-child(17),
+.tabPanel-header5 h2:nth-child(19) {
+  left: 80%;
+}
+
 .tabPanel-widget input + h2 + div.tabPanel-content {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   border:0;
-  height: 1px; 
-  width: 1px; 
+  height: 1px;
+  width: 1px;
   overflow: hidden;
   padding: 4rem 4.5rem;
 }
@@ -3068,8 +3098,8 @@ footer {
 
 .tabPanel-widget input:checked + h2 + div.tabPanel-content {
   position: static;
-  height: auto; 
-  width: auto; 
+  height: auto;
+  width: auto;
 }
 
 .tabPanel-widget label:hover{
@@ -3087,7 +3117,7 @@ footer {
 }
 
 .tabPanel-widget input[name="tabs"] +h2:after {
-    
+
 }
 
 .tabPanel-widget input[name="tabs"]:checked + h2:after {
@@ -3109,19 +3139,19 @@ footer {
 }
 
 @media only screen and (max-width: 75rem) {
-    
+
 .tabPanel-widget input + h2 + div.tabPanel-content {
     padding: 4rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .tabPanel-widget input + h2 + div.tabPanel-content {
     padding: 2.5rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 48rem) {
@@ -3129,7 +3159,7 @@ footer {
     height: 2rem;
 }
 
-    
+
 .tabPanel-widget {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -3139,7 +3169,7 @@ footer {
 .tabPanel-widget input[name="tabs"] {
     display: none;
 }
-    
+
 .tabPanel-widget > div.tabPanel-content {
     margin-top: 0;
 }
@@ -3147,15 +3177,15 @@ footer {
 .tabPanel-widget > input + h2 + div.tabPanel-content {
     display: block;
     position: static;
-    height: auto; 
-    width: auto; 
+    height: auto;
+    width: auto;
     padding: 2rem;
 }
-    
+
 .roadmap .tabPanel-widget > div.tabPanel-content {
     margin: 0.5rem 0;
 }
-    
+
 .tabPanel-widget > div.tabPanel-content p {
     padding-left: 1rem;
 }
@@ -3166,24 +3196,24 @@ footer {
     padding: 1.5rem 0;
     font-size: 1.5625rem;
 }
-    
+
 .tabPanel-widget input[name="tabs"]:checked + h2:after {
     display: none;
 }
-    
+
 .tabPanel-widget input[name="tabs"]:checked + h2, .tabPanel-widget > h2 {
     background: #ffffff;
     color: #4c4c4c;
 }
-    
+
 .roadmap .tabPanel-content .row:last-of-type {
     margin-bottom: 0;
 }
-    
+
 .pre-roadmap p {
     padding-top: 0;
 }
-    
+
 .roadmap .tabPanel-content span, .pre-roadmap li, .roadmap .ms-completed, .roadmap .ms-upcoming {
     width: 1rem;
     height: 1rem;
@@ -3192,39 +3222,39 @@ footer {
 }
 
 @media only screen and (max-width: 30rem) {
-    
+
 .tabPanel-widget > div.tabPanel-content p {
     padding-left: 1.5rem;
 }
-    
+
 .tabPanel-widget h2 {
     font-size: 1.4rem;
 }
-    
+
 .roadmap .tabPanel-widget > input + h2 + div.tabPanel-content {
     padding: 2rem 1.5rem;
 }
-    
+
 .tabPanel-widget h2 {
     padding-top: 2rem;
 }
-    
+
 .roadmap .tabPanel-widget  div.tabPanel-content .col-xs-1 {
     -ms-flex-preferred-size: 16.667%;
     flex-basis: 16.667%;
     max-width: 16.667%;
-} 
-    
+}
+
 .roadmap .tabPanel-widget  div.tabPanel-content .col-xs-11 {
     -ms-flex-preferred-size: 83.333%;
     flex-basis: 83.333%;
     max-width: 83.333%;
 }
-    
+
 .pre-roadmap p {
     font-size: 0.9rem;
 }
-    
+
 }
 
 /***********************************TEAM PAGE***********************************/
@@ -3250,15 +3280,15 @@ footer {
 
 @media only screen and (max-width: 48rem) {
 
-        
+
 .team .tabPanel-widget input + h2 + div.tabPanel-content {
     padding: 0.5rem 0 0 0;
 }
-    
+
 .team .tabPanel-widget div.tabPanel-content .full {
     padding: 0;
 }
-        
+
 .team .tabPanel-widget div.tabPanel-content .half:nth-child(even) {
     padding-left: 0.25rem;
     padding-right: 0;
@@ -3268,31 +3298,31 @@ footer {
     padding-right: 0.25rem;
     padding-left: 0;
 }
-    
+
 .team .tabPanel-widget div.tabPanel-content .full {
     padding-left: 0;
     padding-right: 0;
 }
-    
+
 .team .tabPanel-widget > div.tabPanel-content p {
     padding-left: 0;
 }
-    
+
 }
 
 @media only screen and (max-width: 41rem) {
-    
+
 .team .tabPanel-widget > div.tabPanel-content .half.col-xs-6 {
      -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
 }
-    
+
 .team .tabPanel-widget div.tabPanel-content .half:nth-child(even), .team .tabPanel-widget div.tabPanel-content .half:nth-child(odd) {
     padding-left: 0;
     padding-right: 0;
 }
-    
+
 }
 
 
@@ -3329,11 +3359,11 @@ footer {
 }
 
 @media only screen and (max-width: 48rem) {
-    
+
 }
 
 @media only screen and (max-width: 30rem) {
-    
+
 }
 
 
@@ -3418,38 +3448,38 @@ footer {
 }
 
 @media only screen and (max-width: 75rem) {
-    
+
 }
 
-@media only screen and (max-width: 62rem) { 
-     
+@media only screen and (max-width: 62rem) {
+
 .hangouts .irc .col-md-4 {
     padding: 0;
     margin-bottom: 1rem;
 }
-    
+
 .hangouts .irc .col-md-4:first-child {
     margin-top: 1rem;
 }
-    
+
 .irc p {
     padding-top: 0px;
 }
-    
+
 }
 
 @media only screen and (max-width: 35rem) {
-    
+
 .hangouts .relays {
     -webkit-flex-flow: column;
     flex-flow: column;
     align-items: center;
 }
-    
+
 .hangouts .relays .col-xs-4 {
     max-width: 100%;
-}    
-    
+}
+
 }
 
 /***************************SPONSORS*****************************/
@@ -3476,18 +3506,18 @@ footer {
 }
 
 @media only screen and (max-width: 75rem) {
-       
+
 .monero-project p {
     height: 12rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
 .monero-project p {
     height: auto;
 }
-    
+
 }
 
 /**************************PRESS KIT*************************/
@@ -3615,118 +3645,118 @@ footer {
 }
 
 @supports (-ms-ime-align:auto) {
-  
+
 .carousel-slide.ms {
     width: 91%;
 }
-    
+
 @media only screen and (max-width: 75rem) {
 
 .carousel-slide.ms {
     width: auto;
 }
-    
-    
+
+
 }
-    
+
 }
 
 
 @media only screen and (max-width: 75rem) {
-    
+
 .carousel {
     height: 33rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
-    
+
 .carousel {
     height: 24rem;
 }
-    
+
 .about-monero .info-block-row img.main-icon {
     width: 100%;
 }
-    
+
 }
 
 @media only screen and (max-width: 48rem) {
 .monero-vid .col-md-6 {
     padding: 1rem;
 }
-    
+
 .carousel-control {
   height: 1.5rem;
   width: 1.5rem;
 }
-    
+
 .about-monero .info-block-row img.main-icon {
     width: 40%;
 }
-    
+
 }
 
 @media only screen and (max-width: 42rem) {
 
 .carousel { height: 22rem;}
-    
+
 .carousel-control {
   margin-top: 0;
 }
-    
+
 }
 
 @media only screen and (max-width: 37rem) {
 
 .carousel { height: 18rem;}
-    
+
 .carousel-control {
   height: 1rem;
   width: 1rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 34rem) {
 
 .carousel { height: 16rem; }
-    
+
 .carousel-slide {
     padding: 0 2.5rem;
 }
-    
+
 }
 
 @media only screen and (max-width: 30rem) {
 .monero-vid .col-md-6 {
     padding: 1rem 0;
 }
-    
+
 }
 
 @media only screen and (max-width: 26rem) {
-    
+
 .carousel {
     height: auto;
     position: static;
-}    
-    
+}
+
 .carousel-activator:nth-of-type(1):checked ~ .carousel-controls:nth-of-type(1), .carousel-activator:nth-of-type(2):checked ~ .carousel-controls:nth-of-type(2), .carousel-activator:nth-of-type(3):checked ~ .carousel-controls:nth-of-type(3), .carousel-activator:nth-of-type(4):checked ~ .carousel-controls:nth-of-type(4) {
   display: none;
 }
-    
+
 .carousel-slide {
     position: static;
     opacity: 1;
     padding: 0;
 }
-    
+
 .carousel video {
     margin-top: 0.5rem;
 }
-    
+
 }
 
 /*********************FORUM FUNDING SYSTEM*************************/
@@ -3811,7 +3841,7 @@ footer {
         rgb(229,115,37) 37%,
         rgb(231,129,58) 69%
     );
-    box-shadow: 
+    box-shadow:
       inset 0 2px 9px  rgba(255,255,255,0.3),
       inset 0 -2px 6px rgba(0,0,0,.07);
     position: relative;
@@ -3880,22 +3910,22 @@ footer {
 }
 
 @media only screen and (max-width: 75rem) {
-    
+
 }
 
 @media only screen and (max-width: 62rem) {
     .ffs .desktop {
         display: none;
     }
-    
+
     .ffs .mobile {
         display: block;
     }
-    
+
     .ffs .mobile .ffs-btn-wrap {
         padding: 0.5rem;
     }
-    
+
     .ffs .mobile a.ffs-btn {
         display: block;
         padding: 2.5rem 0.5rem;
@@ -3910,34 +3940,34 @@ footer {
         font-weight: 700;
         font-family: 'Hind', sans-serif;
     }
-    
+
     .ffs .mobile a.ffs-btn:hover {
         text-decoration: none;
     }
-    
+
     .ffs-btn:active{
         transform: translateY(1px);
         -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
         -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
         box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     }
-    
+
     .ffs .mobile a#ffs-ideas {
         background-color: #74a3bc;
     }
-    
+
     .ffs .mobile a#ffs-opentasks {
         background-color: #e98d4f;
     }
-    
+
     .ffs .mobile a#ffs-fundingrequired {
         background-color: #d95a5a;
     }
-    
+
     .ffs .mobile a#ffs-workinprogress {
         background-color: #f7d859;
     }
-    
+
     .ffs .mobile a#ffs-completedproposals {
         background-color: #61a863;
     }
@@ -3948,11 +3978,11 @@ footer {
     display: block;
     padding: 2rem 1rem;
 }
-    
+
 .container.ideas {
     padding: 0 0.5rem;
 }
-    
+
 .ideas .half:nth-child(even) {
     padding-left: 0.25rem;
     padding-right: 0;
@@ -3962,43 +3992,43 @@ footer {
     padding-right: 0.25rem;
     padding-left: 0;
 }
-    
+
 .ffs-breadcrumbs, .ffs-backlink {
     display: none;
 }
-    
+
 .ms-completed, .ms-upcoming {
     margin-top: 1.2rem !important;
 }
-    
+
 }
 
 @media only screen and (max-width: 41rem) {
-    
+
 .ideas .half.col-xs-6 {
      -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
 }
-    
+
 .ideas .half:nth-child(even), .ideas .half:nth-child(odd) {
     padding: 0;
 }
-    
+
 }
 
 @media only screen and (max-width: 30rem) {
 
 .ffs .mobile a.ffs-btn {
     font-size: 1.25rem;
-}  
-    
+}
+
 .milestones .roadmap .col-xs-1 {
     -ms-flex-preferred-size: 16.667%;
     flex-basis: 16.667%;
     max-width: 16.667%;
-} 
-    
+}
+
 .milestones .roadmap .col-xs-11 {
     -ms-flex-preferred-size: 83.333%;
     flex-basis: 83.333%;
@@ -4007,20 +4037,20 @@ footer {
 }
 
 @media only screen and (max-width: 25rem) {
-        
+
     .ffs .mobile .col-xs-6 {
         -ms-flex-preferred-size: 100%;
         max-width: 100%;
         flex-basis: 100%;
     }
-    
+
     .ffs .mobile .ffs-btn-wrap {
         padding: 0.25rem 0.5rem;
     }
-    
+
     .ffs .mobile a.ffs-btn {
         padding: 1.5rem 0.5rem;
-    }    
+    }
 }
 
 /*************************accordion********************************/
@@ -4158,8 +4188,8 @@ input.accordion[type=radio]:checked + label::after {
 
 .tab-content p {
   margin: 1rem 0;
-} 
-    
+}
+
 }
 
 
