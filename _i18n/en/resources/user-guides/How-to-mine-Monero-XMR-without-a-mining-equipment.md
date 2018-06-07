@@ -39,7 +39,7 @@ You can save your favorite pools at [this page](https://www.nicehash.com/?p=mana
 ### **Step 4:** Create new order and start mining
 
 When creating a [new order](https://www.nicehash.com/?p=orders&new), make sure you
-select CryptoNight algorithm for mining Monero. If you want to first learn more
+select CryptoNightV7 algorithm for mining Monero (New algorithm variant since 2018 April the 6th). If you want to first learn more
 about placing an order with NiceHash, we recommend you to read this [frequently asked question](https://www.nicehash.com/?p=faq#faqb0).
 
 If you want to bid on
