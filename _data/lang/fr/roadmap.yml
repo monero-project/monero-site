@@ -95,6 +95,9 @@
     - name: Traduction du site getmonero.org en Français et Polonais
       date: 2018-04-24
       status: completed
+    - name: Support des portefeuilles matériel Ledger
+      date: 2018-06-04
+      status: completed
     - name: Refonte du Forum Funding System (FFS)
       date:
       status: ongoing

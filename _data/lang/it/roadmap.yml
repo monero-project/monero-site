@@ -95,6 +95,9 @@
     - name: Getmonero.org Localization in French and Polish
       date: 2018-04-24
       status: completed
+    - name: Supporto per hardware wallet Ledger
+      date: 2018-06-04
+      status: completed
     - name: Redesign del Forum Funding System
       date:
       status: ongoing
