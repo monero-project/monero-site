@@ -8,7 +8,7 @@ Il y a différentes façon d'acheter du Bitcoin. La plus simple est peut-être v
 
 ####Étape 2 : Créer un compte mymonero.com
 
-MyMonero.com est un portefeuille en ligne, maintenu par Ricardo Spagni (fluffypony), l'un des développeurs principaux de Monero. C'est le portefeuille le plus siple à utiliser. Contentez-vous d'aller sur MyMonero.com et de cliquer sur le bouton "Create an Account".
+MyMonero.com est un portefeuille en ligne, maintenu par Ricardo Spagni (fluffypony), l'un des développeurs principaux de Monero. C'est le portefeuille le plus simple à utiliser. Contentez-vous d'aller sur MyMonero.com et de cliquer sur le bouton "Create an Account".
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
 

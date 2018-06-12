@@ -30,7 +30,7 @@ A partir de là, vous avez plusieurs options.  Vous pouvez imprimer le portefeui
 
 Quelque soit la méthode que vous aurez choisit, assurez-vous qu'il ne reste aucune copie de votre portefeuille sur l'équipement que vous aurez utilisé.  Vous pourriez avoir besoin de supprimer définitivement le portefeuille Monero si vous l'aviez enregistré sur un disque, ou vous assurer que votre imprimante ne conserve pas une copie en mémoire.
 
-*Si vous perdez l'accès à votre portefeuille papier Monero, vos Moneroj ne seront plus accessible, ni pour vous, ni pour quiconque, jamais.  Vous voulez pouvoir les récupérer !
+*Si vous perdez l'accès à votre portefeuille papier Monero, vos Moneroj ne seront plus accessible, ni pour vous, ni pour quiconque, jamais.  Vous voulez pouvoir les récupérer !*
 
 
 #### Remarque
@@ -64,9 +64,9 @@ Sur le nouvelle écran qui s'affiche, copiez l'adresse de dépôt dans votre pre
 
 Allez sur votre compte Xapo ou Circle et trouvez le bouton Envoyer ("Transfer" ou "Send") Collez l'adresse de dépôt Bitcoin dans le champ destination et entrez le montant en Bitcoin que vous voudriez voir convertit en Moneroj.  Il doit être entre les montant minimum et maximum de dépôt spécifiés par Shapeshift.io.  Cliquer sur Envoyer (send) et autorisez la transaction si nécessaire.
 
-Une fois l'envoie initialisé par Xapo ou Coinbase il y aura délai le temps que la transaction entre sur la chaîne de blocs Bitcoin et soit confirmée.  Cela peut prendre de quelques minutes à plusieurs heures.  Vous pouvez vérifier si le paiement a été envoyé en recherchant l'adresse de dépôt Shapeshift.io sur blockchain.info.  Votre tyransaction vers Shapeshift.io y sera visible.
+Une fois l'envoie initialisé par Xapo ou Coinbase il y aura délai le temps que la transaction entre sur la chaîne de blocs Bitcoin et soit confirmée.  Cela peut prendre de quelques minutes à plusieurs heures.  Vous pouvez vérifier si le paiement a été envoyé en recherchant l'adresse de dépôt Shapeshift.io sur blockchain.info.  Votre transaction vers Shapeshift.io y sera visible.
 
-Lorsque votre transaction Bitcoin sera confirmée, Shapeshift.io lancera le change entre Bitcoin (BTC) et Monero (XMR) sur une bourse et lorsqu'il sera terminé, envera les Moneroj à l'adresse de votre portefeuille papier !  Cela peut prendre de quelques minutes à plusieurs heures.  S'il y a un soucis, contactez Shapeshift.io.  Ils disposent d'une bonne assistance.
+Lorsque votre transaction Bitcoin sera confirmée, Shapeshift.io lancera le change entre Bitcoin (BTC) et Monero (XMR) sur une bourse et lorsqu'il sera terminé, enverra les Moneroj à l'adresse de votre portefeuille papier !  Cela peut prendre de quelques minutes à plusieurs heures.  S'il y a un soucis, contactez Shapeshift.io.  Ils disposent d'une bonne assistance.
 
 Lorsque la page we de Shapehift.io indique que votre transaction est terminée, vous devriez maintenant disposer de vos Moneroj dans votre portefeuille papier !
 

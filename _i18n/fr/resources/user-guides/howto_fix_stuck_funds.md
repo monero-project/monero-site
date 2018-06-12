@@ -6,7 +6,7 @@ Parfois, vos fonds pourraient être bloqués, ou vous auriez des fonds bloqués 
 
 > seed
 
-Dans l'invite de commande. Notez votre phrase mnemonique de 25 mots, si vous ne l'avez pas déjà fait. C'est la meilleure façon de vous assurer que vous ne perdez pas l'accès à vos fonds.
+Dans l'invite de commande. Notez votre phrase mnémonique de 25 mots, si vous ne l'avez pas déjà fait. C'est la meilleure façon de vous assurer que vous ne perdez pas l'accès à vos fonds.
 
 - Fermez monero-wallet-cli en tapant
 

@@ -50,7 +50,7 @@ Si vous avez téléchargé la chaîne de blocs depuis une source fiable et répu
 
 ### Étape 7
 
-Après la fin de la synchronisation de la chaîne de blocs vous pouvez ouvrir votre portefeuille Monero normallement. Le fichier blockchain.raw de la chaîne de blocs que vous avez téléchargé peut être supprimé.
+Après la fin de la synchronisation de la chaîne de blocs vous pouvez ouvrir votre portefeuille Monero normalement. Le fichier blockchain.raw de la chaîne de blocs que vous avez téléchargé peut être supprimé.
 
 
 Auteur : Kee Jefferys
