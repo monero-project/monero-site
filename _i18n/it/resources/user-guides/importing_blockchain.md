@@ -1,57 +1,55 @@
-{% include untranslated.html %}
-# Importing the Blockchain to Monero GUI wallet (Windows)
+# Importare la Blockchain nel portafoglio Monero GUI (Windows)
 
-### Step 1
+### Passo 1
 
-Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the Blockchain from another source.
+Scarica il file della Blockchain attuale da https://downloads.getmonero.org/blockchain.raw; puoi saltare questo passo se vuoi importare la Blockchain da un'altra fonte.
 
-### Step 2
+### Passo 2
 
-Find the path of your Monero wallet (the folder where you extracted your wallet). For example mine is:
+Trova il percorso del tuo portafoglio Monero (la cartella nella quale hai estratto il tuo portafoglio). Per esempio il mio è :
 
 `D:\monero-gui-0.10.3.1`
 
-Your path may be different depending on where you decided to download your wallet and what version of the Monero wallet you have.
+Il tuo percorso potrebbe essere diverso in base a dove hai deciso di scaricare il tuo portafoglio e alla versione del portafoglio Monero che stai utilizzando.
 
-### Step 3
+### Passo 3
 
-Find the path of your downloaded Blockchain for example mine was: 
+Trova il percorso della Blockchain che hai scaricato, per esempio il mio è :
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Yours might be different depending on where you downloaded the Blockchain to.
+Il tuo potrebbe essere diverso in base a dove hai deciso di salvare la Blockchain.
 
-### Step 4
+### Passo 4
 
-Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD`
+Apri la finestra del Prompt dei comandi. Per farlo premi il tasto Windows + R, poi nella finestra scrivi `CMD` e premi Ok
 
-### Step 5
+### Passo 5
 
-Now you need to navigate using the CMD window to the path of your Monero wallet. You can do this by typing:
+Adesso dovrai navigare nella schermata di Prompt dei comandi fino al percorso dove si trova il tuo portafoglio Monero. Puoi farlo digitando :
 
-`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE` 
+`cd C:\IL\TUO\PERCORSO\DEL\PORTAFOGLIO\MONERO\QUI` 
 
-It should look something like:
+Nel mio caso :
 
 `cd D:\monero-gui-0.10.3.1`
 
-If your Monero wallet is on another drive you can use `DriveLetter:` for example if your Monero wallet was on your D drive then before using the cd command you would do `D:`
+Se il tuo portafoglio Monero è in un'altra partizione, puoi cambiarla digitando il comando `LetteraPartizione:`, per esempio se il tuo portafoglio è nella partizione C dovrai digitare `C:`
 
-### Step 6
+### Passo 6
 
-Now type in your command prompt window:
+Adesso digita nella finestra del Prompt dei comandi:
 
-`monero-blockchain-import --verify 1 --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
+`monero-blockchain-import --verify 1 --input-file C:\IL\TUO\PERCORSO\DEL\PORTAFOGLIO\MONERO\QUI`
 
-For example I would type :
+Nel mio caso :
 
 `monero-blockchain-import --verify 1 --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-If you downloaded the Blockchain from a trusted, reputable source you may set `verify 0` this will reduce the amount of time to sync the Blockchain.  
+Se hai scaricato la Blockchain da una fonte sicura e affidabile potresti impostare `verify 0` per ridurre il tempo necessario a sincronizzare la Blockchain.
 
-### Step 7
+### Passo 7
 
-After the the Blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted. 
+Dopo che la Blockchain sarà sincronizzata potrai aprire il tuo portafoglio Monero normalmente. Il file blockchain.raw può essere eliminato.
 
-
-Author: Kee Jefferys
+Autore: Kee Jefferys
