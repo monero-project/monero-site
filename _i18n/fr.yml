@@ -104,6 +104,7 @@ hangouts:
   irc_para: La communauté Monero s'appuie sur différents canaux IRC qui répondent à des besoins spécifiques. Certains pour travailler, et d'autres simplement pour se rencontrer. Vous trouverez les plus populaires d'entre eux ci-dessous.
   stack_exchange: Stack Exchange
   stack_exchange_para: Le Stack Exchange de Monero est un moyen simple et rapide de poser des questions et trouver des réponses. Vous trouverez ci-dessous quelques-unes des meilleures questions/réponses qui sont fréquemment recherchées.
+  stack_exchange_link: Aller sur Stack Exchange
   irc_channels:
   - channel: monero
     description: Ce canal permet de discuter de toutes choses liées à Monero.
@@ -164,7 +165,7 @@ downloads:
   intro3: pour une réponse rapide, puis sélectionner va version appropriée pour votre système d'exploitation ci-dessous.
   note1: "Remarque : les sommes de contrôle SHA256 sont indiquées à côté des téléchargements par commodité, mais une liste signée par GPG des sommes de contrôle est disponible à"
   note2: et devrait être traitée de manière canonique, en vérifiant la signature vis-à-vis de la clef GPG appropriée dans le code source (dans /utils/gpg_keys).
-  currentversion: Current Version
+  currentversion: Version Actuelle
   sourcecode: Code Source
   blockchain1: Si vous préférez utiliser une amorce de la chaîne de blocs, plutôt que de synchroniser à partir de zéro, vous pouvez
   blockchain2: utiliser ce lien pour obtenir l'amorce la plus récente.
@@ -176,7 +177,7 @@ downloads:
   mobilelight1: Ci-dessous des portefeuilles mobiles ou légers jugés sûrs par des membres de confiance de la communauté. Si un portefeuille n'est pas cité ici, vous pouvez demander à la communauté de le vérifier. Allez à la page
   mobilelight2: Rencontres
   mobilelight3:  pour voir où nous sommes.
-  clionly: Command-Line Tools Only
+  clionly: Outils Ligne de Commande uniquement
 
 monero-project:
   translated: "yes"
@@ -193,11 +194,11 @@ press-kit:
   intro4: ici.
   noback: Sans fond
   whiteback: Fond blanc
-  symbol: Monero Symbol
+  symbol: Symbole Monero
   logo: Symbole Monero
-  small: Small
-  medium: Medium
-  large: Large
+  small: Petit
+  medium: Moyen
+  large: Grand
   symbol_file: Symbole au format .ai
   logo_file: Logo au format .ai
 
@@ -363,7 +364,7 @@ what-is-monero:
   grassroots_para5: Monero n'est pas une société. Il est développé par des experts en cryptographie et en systèmes distribués du monde entier qui donnent de leur temps ou sont financés par des dons communautaires. Cela signifie que Monero ne peut être fermé par un pays et n'est soumis à aucune juridiction légale particulière
   electronic: Monero est de l'argent électronique qui permet des paiements rapides et peu couteux dans le monde entier.
   electronic_para1: Il n'y a pas de frais de garde et aucun risque de rétrofacturation frauduleuse. Il est à l'abri des « contrôles de capitaux » - qui sont des mesures limitant les flux de monnaies traditionnelles, parfois à un degré extrême, dans des pays en proie à une instabilité économique.
-  videos: Vidéos Monero (English)
+  videos: Vidéos Monero (Anglais)
 
 about:
   translated: "yes"
@@ -414,6 +415,7 @@ user-guides:
   view-only: Comment créer un portefeuille en lecture seule
   prove-payment: Comment vérifier un paiement
   restore-from-keys: Restaurer un portefeuille depuis les clefs
+  nicehash: Comment miner Monero sans équipement d'extraction minière
 
 roadmap:
   translated: "yes"

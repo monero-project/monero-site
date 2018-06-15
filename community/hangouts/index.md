@@ -77,10 +77,10 @@ permalink: /community/hangouts/index.html
                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="info-block">
                             <div class="row center-xs">
-                                <div class="col"><h2>Stack Exchange</h2></div>
+                                <div class="col"><h2>{% t hangouts.stack_exchange %}</h2></div>
                             </div>
                             <div class="row start-xs">
-                                <p>The Monero Stack Exchange is a quick and easy way to ask questions and get answers. Below you'll find some high quality question/answer pairs to some frequently asked questions.</p>
+                                <p>{% t hangouts.stack_exchange_para %}</p>
                             </div>
                             <div class="row start-xs sequestions">
                                 <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Why does monero have higher transaction fees than bitcoin?</a>
@@ -90,7 +90,7 @@ permalink: /community/hangouts/index.html
                                 <a href="https://monero.stackexchange.com/questions/4377/hiding-tcp-traffic-for-monero-miners">Hiding TCP traffic for Monero miners?</a>
                             </div>  
                             <div class="row center-xs">
-                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">Visit Stack Exchange</a></p>
+                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">{% t hangouts.stack_exchange_link %}</a></p>
                             </div>
                         </div>
                </div>

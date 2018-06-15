@@ -4,7 +4,7 @@ Voici un guide d'achat et de conservation en toute sécurité de Monero à la da
 
 #### Étape 1 : Acheter des Bitcoins
 
-Il y a plusieurs façon d'acheter des Bitcoins. Deux sociétés à peu près fiables pour le moment sont Xapo <http://www.xapo.com/> et Coinbase <http://www.coinbase.com/>. Le processus impliquera de fournir votre identité (carte d'identité, passeport, etc.) et prendra entre 2 et 1à jours (voire plus). Vérifier leur réputation sur Reddit avant d'effectuer des achats conséquents.  Xapo utilise des virements directs et Coinbase utilise des virements standards (ACH aux États-unis, SEPA en Europe).  Xapo devrait donc être plus rapide que Coinbase.  Coinbase propose également de petits achats "instantanés" par carte bancaire mais ajoute des frais importants à cette option. Une fois que vous avez acheté des Bitcoins, vous êtes prêts à les convertir en Moneroj !
+Il y a plusieurs façon d'acheter des Bitcoins. Deux sociétés à peu près fiables pour le moment sont Xapo <http://www.xapo.com/> et Coinbase <http://www.coinbase.com/>. Le processus impliquera de fournir votre identité (carte d'identité, passeport, etc.) et prendra entre 2 et 10 jours (voire plus). Vérifier leur réputation sur Reddit avant d'effectuer des achats conséquents.  Xapo utilise des virements directs et Coinbase utilise des virements standards (ACH aux États-unis, SEPA en Europe).  Xapo devrait donc être plus rapide que Coinbase.  Coinbase propose également de petits achats "instantanés" par carte bancaire mais ajoute des frais importants à cette option. Une fois que vous avez acheté des Bitcoins, vous êtes prêts à les convertir en Moneroj !
 
 #### Étape 2 : Télécharger et créer un portefeuille papier sur un ordinateur sécurisé et isolé
 

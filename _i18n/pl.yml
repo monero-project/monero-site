@@ -104,6 +104,7 @@ hangouts:
   irc_para: Społeczność Monero używa wielu kanałów IRC, a każdy z nich jest przeznaczony do czegoś innego. Niektóre z nich służą do pracy, a niektóre do pogadania. Najpopularniejsze z nich znajdziesz poniżej.
   stack_exchange: Stack Exchange
   stack_exchange_para: Stack Exchange Monero jest szybkim i prostym sposobem na zadanie pytania i uzyskanie odpowiedzi. Poniżej znajdziesz kilka istotnych odpowiedzi na często zadawane pytania.
+  stack_exchange_link: Odwiedź Stack Exchange
   irc_channels:
   - channel: monero
     description: This channel is used to discuss all things Monero related.
@@ -413,6 +414,7 @@ user-guides:
   view-only: Jak założyć portfel tylko do wyświetlania
   prove-payment: Jak udowodnić płatność
   restore-from-keys: Przywracanie portfela za pomocą kluczy
+  nicehash: Jak wydobywać Monero (XMR) bez sprzętu wydobywczego
 
 roadmap:
   translated: "yes"
