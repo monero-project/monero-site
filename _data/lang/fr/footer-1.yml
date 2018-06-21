@@ -10,6 +10,8 @@
     url: resources/user-guides/
   - name: Flux RSS
     url: https://getmonero.org/feed.xml
+  - page: Library
+    url: library
 - title: Canaux IRC
   subfolderitems:
   - name: monero

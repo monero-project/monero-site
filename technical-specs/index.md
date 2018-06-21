@@ -127,6 +127,9 @@ permalink: /technical-specs/index.html
                             <li>{% t specs.amount_hidden_mode %}</li>
                         </ul>
                     </div>
+                    <div>
+                        <p>{% t specs.learn_more %}: <a href="/library">{% t specs.library %}</a></p>
+                    </div>
                 </div>
             </div>
             <!-- end right one-third block-->

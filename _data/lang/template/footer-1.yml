@@ -10,6 +10,8 @@
     url: resources/user-guides/
   - name: RSS Feed
     url: https://getmonero.org/feed.xml
+  - name: Library
+    url: library
 - title: IRC Channels
   subfolderitems:
   - name: monero
