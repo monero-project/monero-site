@@ -458,6 +458,8 @@ specs:
   recipient_privacy_mode: Stealth addresses
   amount_hidden_title: Amount obfuscation
   amount_hidden_mode: Ring confidential transactions
+  learn_more: Learn more
+  library: Monero Library
 
 
 blog:
@@ -475,8 +477,8 @@ tags:
 
 library:
   translated: "no"
-  book_1: Zero to Monero: First Edition
-  book_1_text1: Short Abstract
-  book_1_text2: We endeavor here to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
-  book_1_text3: Get a free pdf copy here:
-  book_1_text4: Zero to Monero (First Edition)
+  book_1_a: Zero to Monero
+  book_1_b: First Edition
+  book_1_text1: We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  book_1_text2: Get the pdf
+  book_1_text3: Zero to Monero (First Edition)

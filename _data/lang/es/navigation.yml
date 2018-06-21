@@ -50,3 +50,5 @@
     url: resources/developer-guides
   - page: Especificaciones técnicas
     url: technical-specs
+  - page: Library
+    url: library
