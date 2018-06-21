@@ -46,6 +46,7 @@ titles:
   technicalspecs: Technical Specs
   themoneroproject: The Monero Project
   presskit: Monero Press Kit
+  library: Monero Library
   legal: Legal
   ffs: Forum Funding System
   ffs-cp: Completed Proposals
@@ -471,3 +472,11 @@ blog:
 tags:
   all: Articles by Tag
   notags: There are no posts for this tag.
+
+library:
+  translated: "no"
+  book_1: Zero to Monero: First Edition
+  book_1_text1: Short Abstract
+  book_1_text2: We endeavor here to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  book_1_text3: Get a free pdf copy here:
+  book_1_text4: Zero to Monero (First Edition)
