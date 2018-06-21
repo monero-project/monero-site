@@ -8,6 +8,8 @@
     url: resources/developer-guides/
   - name: Przewodniki dla użytkowników
     url: resources/user-guides/
+  - name: Księgarnia
+    url: library
   - name: Kanał RSS
     url: https://getmonero.org/feed.xml
 - title: Kanały IRC
