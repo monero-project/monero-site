@@ -102,6 +102,31 @@ hangouts:
   irc_para: The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.
   stack_exchange: Stack Exchange
   stack_exchange_para: The Monero Stack Exchange is a quick and easy way to ask questions and get answers. Below you'll find some high quality question/answer pairs to some frequently asked questions.
+  irc_channels:
+  - channel: monero
+    description: This channel is used to discuss all things Monero related.
+  - channel: monero-community
+    description: This channel is for the Monero community to congretate and discuss ideas.
+  - channel: monero-dev
+    description: The many contributors and developers come here to discuss dev-y things.
+  - channel: monero-markets
+    description: We use this channel to talk about the price of Monero and other coins.
+  - channel: monero-offtopic
+    description: Chatting with other Monero users about things not related to Monero.
+  - channel: monero-otc
+    description: Over the counter Monero. Come here to purchase XMR from your fellow Moneron.
+  - channel: monero-pools
+    description: This is the place for mining questions and discussion.
+  - channel: monero-research-lab
+    description: Research into financial privacy with cryptocurrency.
+  - channel: monero-translations
+    description: Localizing Monero into other languages.
+  - channel: monero-hardware
+    description: Building hardware wallets to keep your Monero safe.
+  - channel: kovri
+    description: This channel is used to discuss all things Kovri related.
+  - channel: kovri-dev
+    description: The many contributors and developers come here to discuss Kovri dev-y things.
 
 merchants:
   translated: "no"
