@@ -62,7 +62,7 @@ texte que vous venez de copier. Après-coup, voici à quoi cela devrait recemble
 ![image2](png/mine_to_pool/2.png)
 
 Descendez dans le fichier jusqu'à trouver le ligne contenant `"pool_address"`.
-*Remplacez* le contenu du second jeux de guillements avec l'adresse et le port du
+*Remplacez* le contenu du second jeux de guillemets avec l'adresse et le port du
 pool que vous avez précédemment choisis. Vous pourrez trouver ces informations sur
 le site web du pool.
 

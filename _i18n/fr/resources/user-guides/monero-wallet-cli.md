@@ -64,13 +64,13 @@ Vous pouvez trouver votre adresse standard avec :
 
 Comme Monero est anonyme, vous ne verrez pas l'adresse à partir de laquelle les fonds vous sont envoyés.
 Si vous voulez le savoir, par exemple pour créditer un client particulier, vous devrez indiquer à
-l'emmeteur d'utiliser un ID de paiement, qui est une étiquette optionnelle et arbitraire qui sera
-associé à la transaction. Pour vous faciliter la vie, vous pouvez générer une adresse qui inclue déjà
+l'émetteur d'utiliser un ID de paiement, qui est une étiquette optionnelle et arbitraire qui sera
+associé à la transaction. Pour vous faciliter la vie, vous pouvez générer une adresse qui inclus déjà
 un ID de paiement aléatoire.
 
     integrated_address
 
-Cela va générer un ID de paiement aléatoire et vous fournir l'adresse qui inclue votre propre compte
+Cela va générer un ID de paiement aléatoire et vous fournir l'adresse qui inclus votre propre compte
 et cet ID de paiement. Si vous voulez sélectionner un ID de paiement particulier, vous pouvez aussi
 faire :
 
@@ -84,7 +84,7 @@ avec cet ID de paiement associé, vous permettant de distinguer les paiements.
 
 Si vous payez un commerçants, et que celui-ci prétends qu'il n'a pas reçu les fonds, vous pourriez
 avoir besoin de prouver à un tiers que vous avez bien envoyé les fonds (ou même au commerçants,
-s'il sagit d'une erreur honnête). Monero est confidentiel, de sorte que vous ne pouvez pas
+s'il s'agit d'une erreur honnête). Monero est confidentiel, de sorte que vous ne pouvez pas
 simplement indiquer votre transaction dans la chaîne de blocs, dans la mesure où vous ne pouvez ni
 dire qui l'a envoyé, ni qui l'a reçu. Cependant, en fournissant la clef privée propre à la
 transaction à un tiers, celui-ci peut dire si la transaction à envoyé des moneroj à cette adresse
@@ -102,7 +102,7 @@ Indiquez l'ID de transaction dont vous voulez la clef. Souvenez vous qu'un paiem
 été scindé en plusieurs transactions, donc vous pourriez avoir besoin de plusieurs clefs. Vous
 pourrez alors envoyer cette clef, ou ces clefs, à quiconque vous fournira la preuve de votre
 transaction, accompagné de l'ID de transaction et de l'adresse à laquelle vous avez envoyé les
-fonds. Notez que ce tiers, s'il connait votre propre adresse, sera également en mesure de voir
+fonds. Notez que ce tiers, s'il connaît votre propre adresse, sera également en mesure de voir
 quelle quantité de monnaie vous aurait été rendue.
 
 Si vous êtes le tiers (c'est à dire que quelqu'un veut vous prouver qu'il a effectivement envoyé
@@ -110,7 +110,7 @@ des moneroj à une adresse), vous pouvez le vérifier comme suit :
 
     check_tx_key IDTX CLEFTX ADRESSE
 
-Remplacez `IDTX`, `CLEFTX` et `ADRESSE` respecectivement par l'ID de transation, la clef propre
+Remplacez `IDTX`, `CLEFTX` et `ADRESSE` respectivement par l'ID de transaction, la clef propre
 à la transaction et l'adresse de destination qui vous ont été communiqués. monero-wallet-cli va
 vérifier cette transaction et vous indiquera combien de moneroj ont été payés à l'adresse fournie.
 

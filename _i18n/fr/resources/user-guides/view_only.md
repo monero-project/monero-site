@@ -11,7 +11,7 @@ Vous pouvez créer un portefeuille d'audit depuis n'importe quel portefeuille ex
 
 Ouvrez un portefeuille existant ou créez en un nouveau en utilisant `monero-wallet-cli`. Dans le portefeuille, tapez `address` et `viewkey` pour afficher l'adresse et la clef privée d'audit du portefeuille. Tapez `exit` pour fermer le portefeuille.
 
-Ensuite, créez votre portefeuille d'audit en tapant `monero-wallet-cli --generate-from-view-key nom-du-portefeuille`. Le dernier argument sera le nom du fichier de votre portefeuille. Vos `adresse standard` (`Standard address`) et `clef d'audit` (`View key`) vous seront demandées par le portefeuille. Collez l'adresse originelle de votre portefeuille et la clef privée d'audit. Puis, appuyez sur la touche Entrée et confirmez un mot de passe pour pour votre nouveau portefeuille afin de terminer l'opération.
+Ensuite, créez votre portefeuille d'audit en tapant `monero-wallet-cli --generate-from-view-key nom-du-portefeuille`. Le dernier argument sera le nom du fichier de votre portefeuille. Vos `adresse standard` (`Standard address`) et `clef d'audit` (`View key`) vous seront demandées par le portefeuille. Collez l'adresse originelle de votre portefeuille et la clef privée d'audit. Puis, appuyez sur la touche Entrée et confirmez un mot de passe pour votre nouveau portefeuille afin de terminer l'opération.
 
 #### GUI
 

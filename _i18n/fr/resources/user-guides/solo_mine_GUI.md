@@ -2,7 +2,7 @@ Il est très facile de miner en solo avec la GUI officielle. Si vous ne l'avez p
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 
-Cliquez sur l'onglet "Anvancé". Vous devriez voir aparaitre d'autres options. Cliquez maintenant sur le sous-onglet "Mine".
+Cliquez sur l'onglet "Avancé". Vous devriez voir apparaître d'autres options. Cliquez maintenant sur le sous-onglet "Mine".
 
 <img src="png/solo_mine_GUI/02.PNG" style="width: 600px;"/>
 

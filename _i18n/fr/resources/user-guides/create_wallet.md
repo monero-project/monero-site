@@ -26,7 +26,7 @@
 ![image10](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/10.png)
 ![image11](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/11.png)
 
-- Une fois monerod synchronisé avec le réseau, ouvrez un nouveau terminal, chagez de répertoire (voir l'étape 5) et lancez le portefeuille CLI en tapant "*./monero-wallet-cli*"
+- Une fois monerod synchronisé avec le réseau, ouvrez un nouveau terminal, changez de répertoire (voir l'étape 5) et lancez le portefeuille CLI en tapant "*./monero-wallet-cli*"
 
 ![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/12.png)
 
@@ -53,6 +53,6 @@
 ![image22](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/22.png)
 ![image23](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/23.png)
 
-- Pour quiter le portefeuille CLI tapez simplement "*exit*" dans le terminal correspondant.
+- Pour quitter le portefeuille CLI tapez simplement "*exit*" dans le terminal correspondant.
 
-À partir de maintenant, pour accéder au portefeuille que vous venez de créer, vous aurez besoin de démarrer monerod, d'attendre qu'il soit syncrhonisé avec le réseau, de lancer le portefeuille CLI, et de taper le nom de votre portefeuille et son mot de passe.
+À partir de maintenant, pour accéder au portefeuille que vous venez de créer, vous aurez besoin de démarrer monerod, d'attendre qu'il soit synchronisé avec le réseau, de lancer le portefeuille CLI, et de taper le nom de votre portefeuille et son mot de passe.

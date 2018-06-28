@@ -19,7 +19,7 @@ Pour une installation sur une distribution spécifique, merci de vous référer 
 
 ### pourquoi XMRig
 
-[XMRig](https://github.com/xmrig/xmrig) est simplement un bon mineur à mon sens. De bons affichage et statistiques, pas de dépendances ou de web-ui tape-à-l'oeil. Le conteneur XMRig ne fait qu'environ 4Mo, ce qui le rend extrèmement portable.
+[XMRig](https://github.com/xmrig/xmrig) est simplement un bon mineur à mon sens. De bons affichage et statistiques, pas de dépendances ou de web-ui tape-à-l'oeil. Le conteneur XMRig ne fait qu'environ 4Mo, ce qui le rend extrêmement portable.
 
 #### Étape 1 : Miner avec XMRig
 

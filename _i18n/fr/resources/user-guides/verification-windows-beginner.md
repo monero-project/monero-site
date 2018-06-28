@@ -10,21 +10,24 @@ Voici un guide pour débutant pour le système d'exploitation Windows qui s'appu
 
 ### [1. Installateur de Gpg4win](#1-utiliser-linstallateur-de-gpg4win)
   - [1.1. Obtenir l'Installateur de Gpg4win](#11-obtenir-linstallateur-de-gpg4win)
-    + [1.1.1. Télécharger Gpg4win](#111-telecharger-gpg4win)
+    + [1.1.1. Télécharger Gpg4win](#111-télécharger-gpg4win)
     + [1.1.2. Lancer Gpg4win](#112-lancer-gpg4win)
   - [1.2. Utiliser l'Installateur Gpg4win](#12-utiliser-linstallateur-gpg4win)
+
 ### [2. Importer la Clef de Signature](#2-clef-de-signature-monero)
-  - [2.1. Télécharger la Clef de Signature](#21-telecharger-la-clef-de-signature)
+  - [2.1. Télécharger la Clef de Signature](#21-télécharger-la-clef-de-signature)
   - [2.2. Initialiser Kleopatra](#22-initialiser-kleopatra)
     + [2.2.1. Importer une Clef de Signature](#221-importer-une-clef-de-signature)
     + [2.2.2. Créer la Paire de Clefs](#222-creer-la-paire-de-clefs)
-  - [2.3. Vérifier la Clef de Signature](#23-verifier-la-clef-de-signature)
+  - [2.3. Vérifier la Clef de Signature](#23-vérifier-la-clef-de-signature)
+
 ### [3. Vérifier le Fichier de Hachage](#3-verification-du-fichier-de-hachage)
-  - [3.1. Télécharger le Fichier de Hachage](#31-telecharger-le-fichier-de-hachage)
-  - [3.2. Vérifier le Fichier de Hachage](#32-verifier-le-fichier-de-hachage)
+  - [3.1. Télécharger le Fichier de Hachage](#31-télécharger-le-fichier-de-hachage)
+  - [3.2. Vérifier le Fichier de Hachage](#32-vérifier-le-fichier-de-hachage)
+
 ### [4. Vérifier le Fichier Binaire](#4-verification-du-fichier-binaire)
-  - [4.1. Télécharger le Binaire](#41-telecharger-le-binaire)
-  - [4.2. Vérifier le Binaire](#42-verifier-le-binaire)
+  - [4.1. Télécharger le Binaire](#41-télécharger-le-binaire)
+  - [4.2. Vérifier le Binaire](#42-vérifier-le-binaire)
 
 ## 1. Utiliser l'Installateur de Gpg4win
 
@@ -100,7 +103,7 @@ Dans un navigateur internet, rendez-vous sur [la clef GPG de Fluffypony](https:/
 
 ![clic droit getkey](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
 
-Laissez l'emplacement par défaut, supprimez l'extention `.txt` pour ne laisser comme nom de fichier que `fluffypony.asc` et cliquez sur `Enregistrer`.
+Laissez l'emplacement par défaut, supprimez l'extension `.txt` pour ne laisser comme nom de fichier que `fluffypony.asc` et cliquez sur `Enregistrer`.
 
 ![getkey save file](png/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
@@ -156,7 +159,7 @@ Contrôlez visuellement que l'empreinte de la clef appartenant à Riccardo Spagn
 
 Si l'empreinte **EST** identique, cochez les cases et cliquez sur `Suivant`.
 
-Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `fluffypony.asc` du répertoire `téléchargements` et retournez à la [rubrique 2.1](#21-telecharger-la-clef-de-signature).
+Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `fluffypony.asc` du répertoire `téléchargements` et retournez à la [rubrique 2.1](#21-télécharger-la-clef-de-signature).
 
 Laissez `Certifier uniquement pour moi` coché et cliquez sur `Certifier`.
 
@@ -206,7 +209,7 @@ Si la signature est **NON VALABLE** vous verrez ceci :
 
 Si vous obtenez une signature **VALABLE**, cliquez sur `Ne pas tenir compte` et poursuivez.
 
-Si vous obtenez une signature **NON VALABLE**, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `hashes` du répertoire `téléchargements` et retournez à la [rubrique 3.1](#31-telecharger-le-fichier-de-hachage).
+Si vous obtenez une signature **NON VALABLE**, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `hashes` du répertoire `téléchargements` et retournez à la [rubrique 3.1](#31-télécharger-le-fichier-de-hachage).
 
 ## 4. Vérification du Fichier Binaire
 
@@ -250,4 +253,4 @@ Comparez le hachage entre l'invite de commande et le fichier de hachage. Ils doi
 
 Si votre hachage **EST** identique vous en avez terminé avec la vérification ! Vous avez la certitude que les fichiers Monero sont authentiques. Vous pouvez extraire et installer / utiliser les fichiers normalement.
 
-Si votre hachage **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le binaire Monero du répertoire `téléchargements` et retournez à la [rubrique 4.1](#41-telecharger-le-binaire).
+Si votre hachage **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le binaire Monero du répertoire `téléchargements` et retournez à la [rubrique 4.1](#41-télécharger-le-binaire).
