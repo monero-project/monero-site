@@ -95,6 +95,9 @@
     - name: Lokalizacja strony Getmonero.org na język francuski i polski.
       date: 2018-04-24
       status: completed
+    - name: Support dla portfeli Ledger Hardware
+      date: 2018-06-04
+      status: completed
     - name: Zmiana wyglądu Forumowego Systemu Finansowania
       date:
       status: ongoing
