@@ -104,6 +104,33 @@ hangouts:
   irc_para: La communauté Monero s'appuie sur différents canaux IRC qui répondent à des besoins spécifiques. Certains pour travailler, et d'autres simplement pour se rencontrer. Vous trouverez les plus populaires d'entre eux ci-dessous.
   stack_exchange: Stack Exchange
   stack_exchange_para: Le Stack Exchange de Monero est un moyen simple et rapide de poser des questions et trouver des réponses. Vous trouverez ci-dessous quelques-unes des meilleures questions/réponses qui sont fréquemment recherchées.
+  irc_channels:
+  - channel: monero
+    description: Ce canal permet de discuter de toutes choses liées à Monero.
+  - channel: monero-community
+    description: Ce canal permet à la communnauté Monero de se réunir et de débatre.
+  - channel: monero-dev
+    description: Les nombreux contributeurs de Monero viennent ici pour discuter développement.
+  - channel: monero-markets
+    description: Nous utilisons ce canal pour discuter du cours de Monero et d'autres cryptomonnaies.
+  - channel: monero-offtopic
+    description: Pour discuter avec d'autres utilisateurs de Monero d'autre choses que Monero.
+  - channel: monero-otc
+    description: Monero sous le comptoir. Venez pour acheter des Moneroj auprès d'autres Moneron.
+  - channel: monero-pools
+    description: Le lieux des questions et discussion d'extraction minière.
+  - channel: monero-research-lab
+    description: Recherche sur la confidentialité financière de cryptomonnaies.
+  - channel: monero-translations
+    description: Traduire Monero dans d'autres langues.
+  - channel: monero-hardware
+    description: Construction de matériel pour garder vos moneroj en toute sécurité.
+  - channel: kovri
+    description: Ce canal permet de discuter de toutes choses liées à Kovri.
+  - channel: kovri-dev
+    description: Les nombreux contributeurs de Kovri viennent ici pour discuter développement.
+  - channel: monero-fr
+    description: Ce canal permet à la communauté francophone de Monero de se réunir et d'échanger.
 
 merchants:
   translated: "yes"
