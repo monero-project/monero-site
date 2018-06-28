@@ -8,6 +8,8 @@
     url: resources/developer-guides/
   - name: Guides Utilisateur
     url: resources/user-guides/
+  - name: Librairie
+    url: library
   - name: Flux RSS
     url: https://getmonero.org/feed.xml
 - title: Canaux IRC

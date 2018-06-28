@@ -31,17 +31,19 @@ The multilingual update has recently been rolled out. The website now requires m
 
 12.0 How to add a question to the FAQ
 
-13.0 How to translate a page
+13.0 How to add a publication to the Library
 
-14.0 How to add a new language
+14.0 How to translate a page
 
-15.0 License
+15.0 How to add a new language
+
+16.0 License
 
 ## 1.0 Introduction
 
 This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in.
 
-Feel free to skip down to a relevant section if you already know what you need. So to go to the 'How to make a User Guide' section use your find function and type '5.0'. 
+Feel free to skip down to a relevant section if you already know what you need. So to go to the 'How to make a User Guide' section use your find function and type '5.0'.
 
 If for any reason you have questions or need to contact us, you can find us on the IRC channel #monero. We'll do whatever we can to help you.
 
@@ -120,7 +122,7 @@ author: YOUR NAME OR HANDLE HERE
 ```
 
 ### 4.4 Write
-After the front matter is finished you are free to write the remainder of your blog post in markdown. 
+After the front matter is finished you are free to write the remainder of your blog post in markdown.
 
 ### 4.5 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically and test that your page appears in the 'News' section of the website, as well as the sidebars.
@@ -253,7 +255,7 @@ The layout will depend on if you are simply presenting an idea that you do not p
 
 ### 7.4 Editing the .yml file
 
-Navigate to the /_data folder and open the file titled `ffs.yml`. In this file you will find a long list of FFS proposals. 
+Navigate to the /_data folder and open the file titled `ffs.yml`. In this file you will find a long list of FFS proposals.
 
 **DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
 
@@ -266,11 +268,11 @@ Identify the section you will be placing your proposal in. If you used `ffs-idea
   author:
 ```
 
-and paste it as the very top underneath the `proposals:`. 
+and paste it as the very top underneath the `proposals:`.
 
 **Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail. If in doubt, put the line with the hyphen (-name) all the way to the left and press space four time, and then put the remainder of the variables all the way to the left and press space six times.**
 
-Fill in the information. 
+Fill in the information.
 * `name:` should be the same as the title chosen in 7.3  
 * for `url:` you should append the EXACT name of the file as chosen in 7.2 to the current string but with `.html` at the end instead of `.md`. So it should look like `/forum-funding-system/proposals/YOUR-FILE-NAME.html`
 * `summary:` should be the same summary copy and pasted from the front matter in 7.3
@@ -294,7 +296,7 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 If you are acting on behalf of another individual, please make sure you get their permission first before adding them onto the Team page.
 
 ### 8.1 Change the .yml file
-Navigate to the `/_data/` folder and open `team.yml`. You will notice a long list separated by main `-area:` tags. 
+Navigate to the `/_data/` folder and open `team.yml`. You will notice a long list separated by main `-area:` tags.
 
 **DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
 
@@ -320,7 +322,7 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 ## 9.0 How to make an Event
 
 ### 9.1 Edit the .yml file
-Navigate to the `/_data/` folder and open `events.yml`. You will notice a  list separated by hyphenated `-event` tags. 
+Navigate to the `/_data/` folder and open `events.yml`. You will notice a  list separated by hyphenated `-event` tags.
 
 **DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
 
@@ -356,7 +358,7 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 ## 10.0 How to update the Roadmap
 
 ### 10.1 Edit the .yml file
-Navigate to the `/_data/` folder and open `roadmap.yml`. You will notice a list separated by hyphenated `-year` tags. 
+Navigate to the `/_data/` folder and open `roadmap.yml`. You will notice a list separated by hyphenated `-year` tags.
 
 **DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
 
@@ -388,7 +390,7 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 ## 11.0 How to add a new Merchant
 
 ### 11.1 Edit the .yml file
-Navigate to the `/_data/` folder and open `merchants.yml`. You will notice a list separated by hyphenated `-category` tags. 
+Navigate to the `/_data/` folder and open `merchants.yml`. You will notice a list separated by hyphenated `-category` tags.
 
 **DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
 
@@ -425,7 +427,7 @@ Copy the code below:
 <div class="tab">
     <input id="tab-CHANGETHIS" type="checkbox" name="tabs" class="accordian">
     <label for="tab-CHANGETHIS" class="accordian">CHANGE QUESTION</label>
-    
+
 <div class="tab-content" markdown="1">
 
 CHANGE ANSWER
@@ -446,7 +448,7 @@ and change the sections in between the quotes that say 'CHANGETHIS'. Leave the f
 
 Now inside the label tag you're going to find where it says 'CHANGE QUESTION' and change it to the Question you want answered.
 
-Lastly, find the words 'CHANGE ANSWER' and change it to the answer of your question. 
+Lastly, find the words 'CHANGE ANSWER' and change it to the answer of your question.
 
 **DO NOT MESS WITH THE INDENTATION HERE. The div that has `markdown=1` MUST be flush with the left side, the answer to the question must start flush with the left side, and the `</div>` MUST be flush with the left side. **
 
@@ -456,38 +458,83 @@ Build your website using `jekyll serve` if it's not rebuilding automatically. If
 ### 12.3 Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
-## 13.0 How to translate a page
+## 13.0 How to add a publication to the Library
+
+### 13.1 Add your file
+Navigate to the `/library/` folder and drop your publication file here.
+
+Please remind to minimize the size of your publication. For PDF, you'll find a large amount of service to compress your file with a minimal loss in quality.
+
+### 13.2 Edit the .yml files
+Navigate to the `/_i18n/` folder and open `en.yml`.
+
+Go down until you find the `library` section. You will notice a list separated by hyphenated `-category` tags in a `books:` section.
+
+**DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
+
+Find the category that best corresponds your publication and copy the code below:
+```
+- name: "<name>"
+  file: "<filename>"
+  abstract: >
+    <abstract><br>
+    <on multiple lines>
+```
+and paste it in the correct category under the `publications:` section.
+
+For books, paste it in alphabetical order. For magazines, past it at the top.
+
+Fill in the placeholders as follows:
+* `<name>` The name of the publication, as it should be displayed.
+* `<file>` The filename you have dropped in `/library/` folder, including extension.
+* `<abstract>`,`<on multiple lines>` An abstract for your publication, formatted with html newlines `<br>`
+
+**Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
+
+Save the file.
+
+open other `*.yml` files and copy the same code to it, in the exact same place.
+
+### 13.3 Build/Test
+Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in a `*.yml` file back in 13.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
+
+If the build is successful, go to the Library page `/library/` and check to see that the publication is showing up in the correct category and that the link is downloading correctly. Test the page and let rehrar know if there are any bugs.
+
+### 13.4 Submit a Pull Request
+You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
+
+## 14.0 How to translate a page
 In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://taiga.getmonero.org/project/erciccione-monero-localization/) who coordinate and give support to translators-volunteers. You can find an updated guide and an example of the workflow we use on our [Guide on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/wiki/translating-monero-website) (frequently updated), also, for live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
 
-### 13.1 Quickstart
+### 14.1 Quickstart
 * Navigate to the correct language in the /i18n folder and find the page you wish to translate
 * Click the file and translate the page, not touching any HTML or markdown.
 * Remove `{% include untranslated.html %}` from the page
 * Test/Build
 * Submit PR
 
-### 13.2 Naviate to correct file
+### 14.2 Naviate to correct file
 Go to the /i18n folder and find the two letter code for the language you wish to translate for. Enter that folder and find the file you wish to translate. The filenames are all in English and MUST NOT BE CHANGED.
 
-### 13.3 Translate the file
+### 14.3 Translate the file
 Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip step 13.4. If during testing, the page appears different from the original English page (besides the translated text of course), you did something wrong and may have to start again.
 
-### 13.4 Remove the 'untranslated' snippet
+### 14.4 Remove the 'untranslated' snippet
 Somewhere on the page (usually the top) should be a snippet that says `{% include untranslated.html %}`. Simply delete this completely from the file. This will remove the orange bar from the bottom saying the page is untranslated.
 
-### 13.5 Build/Test
+### 14.5 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically.
 
 If the build is successful, go to the correct page in the correct language and check to see that everything is translated, and that the page looks identical to the original English page (besides the translated text). Test the page and let rehrar know if there are any bugs.
 
-### 13.6 Submit a Pull Request
+### 14.6 Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
-## 14.0 How to add a new language
+## 15.0 How to add a new language
 Whoo boy, this is the big one. Please follow all directions exactly.
 
-### 14.1 _config.yml file
-Navigate to the root folder of the whole website and find the file labeled `_config.yml`. Open it and find the line that says `languages:`. Add your two letter language code (Google it if you don't know it) in between the brackets after the others already present. You will need to put a comma after the previous last one. 
+### 15.1 _config.yml file
+Navigate to the root folder of the whole website and find the file labeled `_config.yml`. Open it and find the line that says `languages:`. Add your two letter language code (Google it if you don't know it) in between the brackets after the others already present. You will need to put a comma after the previous last one.
 
 Example:
 ```
@@ -495,28 +542,28 @@ languages: ["en", "es", "NEW LANG HERE"]
 ```
 Save and exit the file.
 
-### 14.2 _data folder
-Navigate to the `_data/lang` folder and copy the `template` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to. 
+### 15.2 _data folder
+Navigate to the `_data/lang` folder and copy the `template` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
 **The template folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
 
 Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
 
-### 14.3 _i18n folder
+### 15.3 _i18n folder
 Navigate to the _i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml` at the end and change all sections marked 'translated: "yes"' to 'translated: "no"'. Change back to 'yes' once you have translated that section. Now duplicate the `en` folder and rename it with the correct language code.
 **The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
 
 Enter the .yml file and translate everything there.
 
-### 14.3 Translate
+### 15.3 Translate
 If you will be translating the content, please refer to section 13.0 in this README for instructions on translating pages.
 
-### 14.4 Build/Test
+### 15.4 Build/Test
 Build your website using `jekyll serve`. If the build is successful, navigate to any page on the site and check to make sure that your language is appearing in the dropdown for languages on both mobile and desktop.
 
-### 14.5 Submit a Pull Request
+### 15.5 Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
-## 15.0 Website License
+## 16.0 Website License
 
 Copyright (c) 2014-2017, The Monero Project
 
