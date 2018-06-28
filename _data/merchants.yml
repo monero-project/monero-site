@@ -70,6 +70,8 @@
       url: https://moneroexplorer.com/
     - name: MoneroHash Explorer
       url: https://monerohash.com/explorer/
+    - name: MoneroVision
+      url: https://monerovision.com
     - name: xmrchain.net
       url: https://xmrchain.net/
 - category: Payment Gateways
