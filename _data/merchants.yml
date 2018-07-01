@@ -27,6 +27,8 @@
       url: http://www.exchanged.i2p/en/home
     - name: Evercoin
       url: https://evercoin.com
+    - name: EXMO - USD/XMR
+      url: https://exmo.com/
     - name: Godex
       url: https://godex.io
     - name: Kaiserex
@@ -55,6 +57,8 @@
       url: https://shapeshift.io/
     - name: SimpleSwap
       url: https://simpleswap.io
+    - name: switchain - Instant exchange
+      url: https://www.switchain.com/
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
     - name: Trovemat.com (ATM)
