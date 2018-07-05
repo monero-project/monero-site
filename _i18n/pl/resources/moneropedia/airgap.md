@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Airgap"
 terms: ["airgap"]
 summary: "Airgap jest środkiem bezpieczeństwa, który fizycznie oddziela komputer lub inne urządzenie od wszystkich sieci, takich jak internet."

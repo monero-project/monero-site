@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Base32 address"
 tags: ["kovri"]
 terms: ["Base32-address", "Base32-addresses"]

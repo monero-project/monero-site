@@ -3,6 +3,7 @@ layout: full-text
 title: titles.faq
 permalink: /get-started/faq/index.html
 ---
+{% t global.lang_tag %}
 <div class="tab">
     <input id="tab-one" type="checkbox" name="tabs" class="accordion">
     <label for="tab-one" class="accordion">{% t faq.q1 %}</label>
@@ -47,7 +48,7 @@ permalink: /get-started/faq/index.html
 </div>
 <div class="tab">
     <input id="tab-seven" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-seven" class="accordion">{% t faq.q7 %}</label> 
+    <label for="tab-seven" class="accordion">{% t faq.q7 %}</label>
     <div class="tab-content">
         <p>{% t faq.a7 %}</p>
     </div>

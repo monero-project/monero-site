@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Message"
 tags: ["kovri"]
 terms: ["Message", "Messages"]

@@ -1,21 +1,21 @@
-# Copyright (c) 2014-2015, The Monero Project
-# 
+# Copyright (c) 2014-2018, The Monero Project
+#
 # All rights reserved.
-# 
+#
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
-# 
+#
 # 1. Redistributions of source code must retain the above copyright notice, this list of
 #    conditions and the following disclaimer.
-# 
+#
 # 2. Redistributions in binary form must reproduce the above copyright notice, this list
 #    of conditions and the following disclaimer in the documentation and/or other
 #    materials provided with the distribution.
-# 
+#
 # 3. Neither the name of the copyright holder nor the names of its contributors may be
 #    used to endorse or promote products derived from this software without specific
 #    prior written permission.
-# 
+#
 # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
 # EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 # MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
@@ -30,52 +30,95 @@ module Jekyll
   module Converters
     class Markdown < Converter
       alias base_converter convert
-      @@moneropedia = Array.new
+      @@moneropedia = Hash.new
       @@moneropedia_ordered = Hash.new
+      @@language = Array.new
 
       def convert(content)
+        # Building language from config
+        if @@language.empty?
+          @@language = @config["languages"]
+          @@language.each do |lang|
+            # Each country code has its own hash
+            @@moneropedia[lang] = Array.new
+            @@moneropedia_ordered[lang] = Hash.new
+          end
+        end
+
         # build up index of Moneropedia summaries
-        if @@moneropedia.empty?
-          
-          # grab all .md files in the Moneropedia folder, ignore index.md
-          moneropedia_path = File.join(@config["source"], "/resources/moneropedia/*.md")
-          files = Dir.glob(moneropedia_path).reject{|f| f =~ Regexp.new('index.md', Regexp::EXTENDED | Regexp::IGNORECASE) }
+        if @@moneropedia["en"].empty?
 
-          # step through all the files
-          files.each do |entry_file|
-            entry = { }
-            entry = SafeYAML.load_file(entry_file)
+          # Loop around all languages from _i18n
+          @@language.each do |lang|
+            # grab all .md files in the Moneropedia folder, ignore index.md
+            moneropedia_path = File.join(@config["source"], "/_i18n/", lang, "/resources/moneropedia/*.md")
+            files = Dir.glob(moneropedia_path)
 
-            if !entry.empty?
-              @@moneropedia.push({ :terms => entry['terms'], :summary => entry['summary'], :file => File.basename(entry_file, ".*") })
-              @@moneropedia_ordered = @@moneropedia_ordered.merge({ entry['entry'] => File.basename(entry_file, ".*") })
+            # step through all the files
+            files.each do |entry_file|
+              entry = { }
+              entry = SafeYAML.load_file(entry_file)
+
+              if !entry.empty?
+                @@moneropedia[lang].push({ :terms => entry['terms'], :summary => entry['summary'], :file => File.basename(entry_file, ".*") })
+                @@moneropedia_ordered[lang] = @@moneropedia_ordered[lang].merge({ entry['entry'] => File.basename(entry_file, ".*") })
+              end
+
             end
           end
         end
 
-        # Jekyll.logger.warn YAML::dump(@@moneropedia_ordered)
-        if content.include? '@moneropedia'
-          # Moneropedia index, replace with a list of entries
-          cur_letter = 'A'
-          replace = "<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>A</h4>\n"
-          @@moneropedia_ordered.sort.map do |entry, link|
-            if cur_letter != entry[0]
-              replace += "</div>\n<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>" + entry[0] + "</h4>\n"
-              cur_letter = entry[0]
-            end
-            replace += "<a href='/resources/moneropedia/" + link + ".html'>" + entry + "</a><br>\n"
-          end
-          replace += "</div>"
-          content = content.gsub(/(\@moneropedia)/i, replace)          
+        # Cleaning Moneropedia article from Front Matter & tag
+        if content.include? '@moneropedia_article'
+          content = content.gsub(/<hr \/>.*—<\/p>\n/mi, "")
+          content = content.gsub(/(\@moneropedia_article\n)/i, "")
         end
 
-        # replace instances of @term with tooltips of the summary
-        @@moneropedia.each do |entry|
-          entry[:terms].each do |term|
-            content = content.gsub(/(\@#{term})\b/i, '<a data-tooltip="' + entry[:summary] + '" href="/resources/moneropedia/' + entry[:file] + '.html" >' + term.gsub('-',' ') + '</a>')
+        # Getting language from tag, and cleaning it
+        if content.include? '@lang_tag_'
+          lang = content[/\@lang_tag_\w{2}/][-2, 2].downcase
+          content = content.gsub(/(\@lang_tag_\w{2}\n)/i, "")
+
+          # Jekyll.logger.warn YAML::dump(@@moneropedia_ordered)
+          if content.include? '@moneropedia_index'
+            # Moneropedia index, replace with a list of entries
+            cur_letter = 'A'
+            replace = "<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>A</h4>\n"
+            @@moneropedia_ordered[lang].sort.map do |entry, link|
+              if cur_letter != entry[0]
+                replace += "</div>\n<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>" + entry[0] + "</h4>\n"
+                cur_letter = entry[0]
+              end
+              # English is default, no country code in the link
+              if lang == "en"
+                replace += "<a href='/resources/moneropedia/" + link + ".html'>" + entry + "</a><br>\n"
+              else
+                replace += "<a href='/" + lang + "/resources/moneropedia/" + link + ".html'>" + entry + "</a><br>\n"
+              end
+            end
+            replace += "</div>"
+            content = content.gsub(/(\@moneropedia_index)/i, replace)
+          end
+
+          # define which suffix could be joined to the term to lookahead for them
+          lookahead = "(based|like|form)"
+          # replace instances of @term with tooltips of the summary
+          # For all non-English pages
+          if lang != "en"
+            @@moneropedia[lang].each do |entry|
+              entry[:terms].each do |term|
+                content = content.gsub(/(\@#{term})((?=-#{lookahead})|(?![\w-]))/i, '<a data-tooltip="' + entry[:summary] + '" href="/' + lang + '/resources/moneropedia/' + entry[:file] + '.html" >' + term.gsub('-',' ') + '</a>')
+              end
+            end
+          end
+          # For English and as a default (in case an entry has been forgotten in a non-English moneropedia folder)
+          @@moneropedia["en"].each do |entry|
+            entry[:terms].each do |term|
+              content = content.gsub(/(\@#{term})((?=-#{lookahead})|(?![\w-]))/i, '<a data-tooltip="' + entry[:summary] + '" href="/resources/moneropedia/' + entry[:file] + '.html" >' + term.gsub('-',' ') + '</a>')
+            end
           end
         end
-        
+
         base_converter(content)
       end
     end

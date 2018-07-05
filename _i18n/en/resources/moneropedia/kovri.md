@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Kovri"
 tags: ["kovri"]
 terms: ["Kovri"]

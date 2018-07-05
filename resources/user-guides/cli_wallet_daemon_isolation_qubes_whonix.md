@@ -8,4 +8,5 @@ mainVersion:
   - "0"
 ---
 
+{% t global.lang_tag %}
 {% tf resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md %}

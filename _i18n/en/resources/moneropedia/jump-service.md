@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Jump Service"
 tags: ["kovri"]
 terms: ["Jump-Service"]

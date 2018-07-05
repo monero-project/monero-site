@@ -1,7 +1,6 @@
 ---
-layout: moneropedia
 entry: "Łańcuch bloków"
-terms: ["łańcuch-bloków", "łańcuchu-bloków", "łańcuchowi-bloków"]
+terms: ["blockchain", "blockchains", "łańcuch-bloków", "łańcuchu-bloków", "łańcuchowi-bloków", "łańcucha-bloków", "łańcuchem-bloków"]
 summary: "Przekazywany rejestr wszystkich transakcji minionych i obecnych, który nie ujawnia nadawcy i odbiorcy płatności."
 
 ---

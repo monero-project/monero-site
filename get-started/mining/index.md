@@ -3,6 +3,7 @@ layout: custom
 title: titles.mining
 permalink: /get-started/mining/index.html
 ---
+{% t global.lang_tag %}
 <div class="mining">
     <div class="center-xs container description">
         <p>{% t mining.intro1 %}</p>

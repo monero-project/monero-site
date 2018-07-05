@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Smart Mining"
 terms: ["smart-mining"]
 summary: "Proces limitowania wydobycia w celu uniknięcia niedogodności."
@@ -12,5 +11,3 @@ Smart mining (inteligentne wydobywanie) jest procesem limitowania wydobycia w ce
 Smart mining jest dostępne w oficjalnym portfelu wiersza poleceń oraz Graficznego Interfejsu Użytkownika, które znajdują się na stronie [do ściągnięcia](https://getmonero.org/downloads/).
 
 Spodziewa się, że powolność inteligentnej koparki (szczególnie na urządzeniach o niskiej mocy) zostanie zrekompensowana przez wielu użytkowników korzystających z niej w celu ewentualnej "wygranej na loterii", a tym samym znaczne zwiększenie bezpieczeństwa sieci Monero. Zwiększona prędkość haszowania przez wiele różnych źródeł pomaga utrzymać sieć Monero zdecentralizowaną.
-
-{{ page.summary | capitalize }}.

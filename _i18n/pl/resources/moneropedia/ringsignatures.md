@@ -1,7 +1,6 @@
 ---
-layout: moneropedia
 entry: "Podpis pierścieniowy"
-terms: ["podpis-pierścieniowy", "podpisem-pierścieniowym", "podpisu-pierścieniowego", "podpisie-pierścieniowym"]
+terms: ["ring-signature", "ring-signatures", "podpis-pierścieniowy", "podpisem-pierścieniowym", "podpisu-pierścieniowego", "podpisie-pierścieniowym"]
 summary: "Grupa podpisów kryptograficznych z przynajmniej jednym prawdziwym uczestnikiem, bez możliwości rozróżnienia, kto w danej grupie nim jest, ponieważ wszystkie podpisy figurują jako ważne."
 ---
 

@@ -3,6 +3,7 @@ layout: custom
 title: titles.technicalspecs
 permalink: /technical-specs/index.html
 ---
+{% t global.lang_tag %}
 <div class="about-monero">
     <section class="container">
         <div class="row">

@@ -1,10 +1,9 @@
 ---
-layout: moneropedia
 entry: "Podpis kryptograficzny"
-terms: ["podpis", "podpisu", "podpisie"]
+terms: ["signature", "signatures", "podpis", "podpisu", "podpisie", "podpisów", "podpisem"]
 summary: "Kryptograficzna metoda na udowodnienie posiadania jakiejś informacji oraz że dana informacja nie została zmieniona po podpisaniu."
 ---
 
 ### Podstawy
 
-{{ page.summary | capitalize }}.
+Kryptograficzna metoda na udowodnienie posiadania jakiejś informacji oraz że dana informacja nie została zmieniona po podpisaniu.

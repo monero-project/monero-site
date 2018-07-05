@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Network Database"
 tags: ["kovri"]
 terms: ["Network-Database"]
 summary: "A distributed database which contains needed router information so the network can stay intact"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 @network-database is a [distributed database](https://en.wikipedia.org/wiki/Distributed_database) which contains router information that peers must use so the network can stay intact.

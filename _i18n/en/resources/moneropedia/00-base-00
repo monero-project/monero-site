@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: ""
 terms: ["", ""]
 summary: ""
@@ -7,4 +6,4 @@ summary: ""
 
 ### The Basics
 
-{{ page.summary | capitalize }}.
+<Re-write summary here>

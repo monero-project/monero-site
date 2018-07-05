@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Reseed"
 tags: ["kovri"]
-terms: ["Reseed"]
+terms: ["Reseed", "reseeda"]
 summary: "Metoda, za pomocą której Kovri uruchamia sieć I2P."
 ---
 

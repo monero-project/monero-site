@@ -3,6 +3,7 @@ layout: custom
 title: titles.using
 permalink: /get-started/using/index.html
 ---
+{% t global.lang_tag %}
 <div class="text-center container description">
     <p>{% t using.intro %}</p>
 </div>

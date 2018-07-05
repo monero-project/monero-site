@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Transports"
 tags: ["kovri"]
-terms: ["Transporty", "Transport", "transportowi", "transportem", "transportami"]
+terms: ["Transports", "Transport", "Transporty", "Transport", "transportowi", "transportem", "transportami", "transportowej", "transportu"]
 summary: "Dwie zaszyfrowane warstwy transportu w Kovri."
 ---
 

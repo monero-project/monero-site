@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "I2NP"
 tags: ["kovri"]
 terms: ["I2NP"]

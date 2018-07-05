@@ -4,6 +4,7 @@ title: titles.sponsorships
 permalink: /community/sponsorships/index.html
 ---
 
+{% t global.lang_tag %}
 <div class="text-center container description">
     <p>{% t sponsorships.intro %}</p>
 </div>
@@ -42,7 +43,7 @@ permalink: /community/sponsorships/index.html
                 </div>
             </div>
         </div>
-        <div class="row"> 
+        <div class="row">
             <div class="left one-third no-pad-sm col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
@@ -53,7 +54,7 @@ permalink: /community/sponsorships/index.html
                     </div>
                 </div>
             </div>
-            
+
             <div class="center one-third no-pad-sm col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">

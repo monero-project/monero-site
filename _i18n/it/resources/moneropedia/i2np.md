@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "I2NP"
 tags: ["kovri"]
 terms: ["I2NP"]
 summary: "The I2P Network Protocol: the mechanism in which I2NP messages are sent over the I2P network"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 From @Java-I2P:

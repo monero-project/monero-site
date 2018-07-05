@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Router-Info"
 tags: ["kovri"]
 terms: ["Router-Info", "Router-infos"]

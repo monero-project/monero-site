@@ -1,7 +1,6 @@
 ---
-layout: moneropedia
 entry: "Skalowalność"
-terms: ["skalowalność", "skalowalności", "skalnowalnością"]
+terms: ["scalability", "skalowalność", "skalowalności", "skalnowalnością"]
 summary: "Potencjał wzrostu Monero oraz metoda zwiększania efektywności."
 ---
 

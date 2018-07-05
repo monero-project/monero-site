@@ -1,10 +1,10 @@
 ---
-layout: moneropedia
 entry: "Block"
 terms: ["block", "blocks"]
 summary: "a container of transactions, a sequence of which forms a blockchain"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 A block is a container of @transactions, with a new block being added to the @blockchain once every 2 minutes (see constant `DIFFICULTY_TARGET_V2` defined as 120 seconds), on average.

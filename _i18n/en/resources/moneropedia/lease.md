@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Lease"
 tags: ["kovri"]
 terms: ["Lease", "Leases"]

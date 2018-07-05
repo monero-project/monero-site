@@ -25,6 +25,7 @@ global:
   outdatedMax: Questa pagina è obsoleta. Suggeriamo di non utilizzarla. Invece, per favore guarda
   outdatedVersion: versione in inglese
   outdatedMin: Questa pagina è stata aggiornata successivamente all'ultima traduzione. Puoi utilizzare questa versione, ma potrebbe essere incompleta.
+  lang_tag: "@lang_tag_it"
 
 titles:
   index: Home
@@ -527,6 +528,13 @@ library:
       abstract: >
         Quarterly Monero magazine, Q3 2017 edition.<br>
         In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
+
+moneropedia:
+  translated: "no"
+  add_new_button: Add New Entry
+  add_new_text1: If there is an entry you'd like to modify or be added, please
+  add_new_link: open an issue on this website's Github repository
+  add_new_text2: or submit changes via pull request
 
 blog:
   title_1: Tutti

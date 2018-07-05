@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Canonically-unique host"
 tags: ["kovri"]
 terms: ["Canonically-unique-host"]

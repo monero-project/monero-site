@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Eepsite"
 tags: ["kovri"]
 terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service"]
 summary: "A website or service hosted within the I2P network"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 Is it [**EEP!** *(in response to the site's content)*](https://en.wikipedia.org/wiki/Onomatopoeia), or **end-to-end protocol**, or something else entirely different?

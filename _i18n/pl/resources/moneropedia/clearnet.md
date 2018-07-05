@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Clearnet"
 tags: ["kovri"]
 terms: ["Clearnet", "Clearnecie", "clearnetu"]

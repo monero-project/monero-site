@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Jump Service"
 tags: ["kovri"]
 terms: ["Jump-Service"]
 summary: "An I2P website service that adds addresses to your address book"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 In your @I2P configured web browser, you can use a Jump Service to *jump* to an @I2P address that you don't have in your @address-book. Once you've *jumped* to the address, the address will be saved into your @address-book.

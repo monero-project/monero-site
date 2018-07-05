@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Reseed"
 tags: ["kovri"]
 terms: ["Reseed"]

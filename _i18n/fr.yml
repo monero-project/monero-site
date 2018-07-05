@@ -26,6 +26,7 @@ global:
   outdatedMax: Cette page est dans une version trop ancienne. Nous vous recommandons de ne pas vous baser dessus et de consulter la
   outdatedVersion: verson anglaise
   outdatedMin: Cette page a été modifiée depuis sa traduction. Vous pouvez vous baser sur cette version, mais elle pourrait être incomplète.
+  lang_tag: "@lang_tag_fr"
 
 titles:
   index: Accueil
@@ -529,6 +530,13 @@ library:
       abstract: >
         Magazine trimestriel de Monero, édition Q3 2017.<br>
         Dans cette parution, des nouvelles concernant : le développement, le laboratoire de Recherche Monero, Kovri, la communauté, le matériel et Monerujo.
+
+moneropedia:
+  translated: "yes"
+  add_new_button: Ajouter une Nouvelle Entrée
+  add_new_text1: Si vous souhaitez ajouter ou modifier une entrée, merci
+  add_new_link: d'ouvrir une *issue* sur le dépôt GitHub du site web
+  add_new_text2: ou de proposer vos changement par *pull request*
 
 blog:
   title_1: Tous les

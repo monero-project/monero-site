@@ -1,12 +1,8 @@
 ---
 layout: moneropedia
-entry: "Atomic Units"
-terms: ["atomic-units", "atomic-unit"]
-summary: "Atomic Units refer to the smallest fraction of 1 XMR."
 ---
 
-### The Basics
+@moneropedia_article
 
-Atomic Units refer to the smallest fraction of 1 XMR.
-One atomic unit is currently 1e-12 XMR (0.000000000001 XMR, or one @piconero).
-It may be changed in the future.
+{% t global.lang_tag %}
+{% tf resources/moneropedia/atomic-units.md %}

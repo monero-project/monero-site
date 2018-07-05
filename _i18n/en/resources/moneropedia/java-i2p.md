@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Java I2P"
 tags: ["kovri"]
 terms: ["Java-I2P"]

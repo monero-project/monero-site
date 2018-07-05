@@ -1,17 +1,16 @@
 ---
-layout: moneropedia
 entry: "Transakcja"
-terms: ["transakcja", "transakcję", "transakcji", "transakcją", "transakcje", "transakcjom", "transakcjami"]
+terms: ["transaction", "transactions", "transakcja", "transakcję", "transakcji", "transakcją", "transakcje", "transakcjom", "transakcjami"]
 summary: "Kryptograficznie podpisany zbiornik, który wyszczególnia transfer Monero do odbiorcy lub odbiorców."
 ---
 
 ### Podstawy
 
-{{ page.summary | capitalize }}.
+Kryptograficznie podpisany zbiornik, który wyszczególnia transfer Monero do odbiorcy lub odbiorców.
 
-Parametry transakcji zawierają jeden lub więcej adresów odbiorcy wraz z odpowiednimi kwotami oraz parametr `mixin_count`, który określa liczbę obcych @wyjść powiązanych z transakcją. Im więcej wyjść, tym bardziej możliwy wyższy poziom maskowania, jednak wiąże się to z pewnym kosztem. Ponieważ transakcje stają się coraz większe i z większą liczbą wyjść, opłaty za nie rosną. Możliwe jest także tworzenie transakcji off-line, które daje ogromną korzyść dla prywatności.
+Parametry transakcji zawierają jeden lub więcej adresów odbiorcy wraz z odpowiednimi kwotami oraz parametr @rozmiar-pierścienia, który określa liczbę obcych wyjść powiązanych z transakcją. Im więcej wyjść, tym bardziej możliwy wyższy poziom maskowania, jednak wiąże się to z pewnym kosztem. Ponieważ transakcje stają się coraz większe i z większą liczbą wyjść, opłaty za nie rosną. Możliwe jest także tworzenie transakcji off-line, które daje ogromną korzyść dla prywatności.
 
-Transakcja może być zidentyfikowana jedynie przy użyciu opcjonalnego @numeru-identyfikacji-transakcji, który przeważnie jest 32-bajtowym ciągiem (64 znaków heksadecymalnych).
+Transakcja może być zidentyfikowana jedynie przy użyciu opcjonalnego numeru identyfikacji transakcji, który przeważnie jest 32-bajtowym ciągiem (64 znaków heksadecymalnych).
 
 ### Szczegółowe informacje
 

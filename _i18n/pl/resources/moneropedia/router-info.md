@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Informacje o routerze"
 tags: ["kovri"]
-terms: ["informacje-o-routerze", "informacjom-o-routerze", "informacjami-o-routerze", "informacji-o-routerze"]
+terms: ["Router-Info", "Router-infos", "informacje-o-routerze", "informacjom-o-routerze", "informacjami-o-routerze", "informacji-o-routerze"]
 summary: "Struktura danych lub plik zawierający potrzebne informacje sieciowe na temat peerów I2P."
 ---
 

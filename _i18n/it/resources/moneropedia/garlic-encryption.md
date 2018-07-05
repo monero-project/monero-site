@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Garlic-Encryption"
 tags: ["kovri"]
 terms: ["Garlic-Encryption", "Layered-Encryption"]
 summary: "Layered encryption as implemented in Kovri / I2P"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 @garlic-encryption is @I2P's implementation of @message based @layered-encryption (similar to flow-based [Onion-Routing](https://en.wikipedia.org/wiki/Onion_routing)).

@@ -1,13 +1,13 @@
 ---
-layout: moneropedia
 entry: "Spend Key"
 terms: ["spend-key", "spend-keys"]
 summary: "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
-{{ page.summary | capitalize }}.
+One of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account.
 
 ### In-depth Information
 

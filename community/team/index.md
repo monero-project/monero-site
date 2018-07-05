@@ -3,6 +3,7 @@ layout: custom
 title: titles.team
 permalink: /community/team/index.html
 ---
+{% t global.lang_tag %}
 <div class="team">
     <section class="container">
         <div class="row">

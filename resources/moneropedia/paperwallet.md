@@ -1,7 +1,8 @@
 ---
 layout: moneropedia
-entry: "Paper Wallet"
-terms: ["paperwallet", "paperwallets", "paper-wallet", "paper-wallets"]
-summary: "A paper wallet stores the information necessary to send and receive Monero"
 ---
 
+@moneropedia_article
+
+{% t global.lang_tag %}
+{% tf resources/moneropedia/paperwallet.md %}

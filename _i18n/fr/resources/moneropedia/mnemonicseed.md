@@ -1,13 +1,13 @@
 ---
-layout: moneropedia
 entry: "Mnemonic Seed"
 terms: ["mnemonic-seed", "mnemonic"]
 summary: "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
-{{ page.summary | capitalize }}. This 25-word phrase (13 words in the case of MyMonero) has all the information needed to view and spend funds from a Monero @account.
+A 13 or 25 word phrase used to backup a Monero account, available in a number of languages. This 25-word phrase (13 words in the case of MyMonero) has all the information needed to view and spend funds from a Monero @account.
 
 ### In-depth Information
 

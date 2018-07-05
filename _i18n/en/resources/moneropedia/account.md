@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Account"
 terms: ["account", "accounts", "wallet", "wallets"]
 summary: "similar in function to a bank account, contains all of your sent and received transactions"
@@ -23,7 +22,7 @@ This means that individuals can easily create a Monero account for themselves as
 
 Monero relies heavily on a cryptography principle known as *public/private key cryptography* or *asymmetric cryptography*, which is thoroughly detailed in [this Wikipedia article](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
-Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction-privacy.
+Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy.
 
 The private keys for both of these must be protected by you in order to retain your account privacy. On the other hand, the public keys are obviously public (they are part of your Monero account address). For normal public/private key cryptography someone could send you a private message by encrypting it with either of your public keys, and you would then be the only one able to decrypt it with your private keys.
 
@@ -52,7 +51,7 @@ Your wallet has been generated.
 To start synchronizing with the daemon, use "refresh" command.
 Use "help" command to see the list of available commands.
 Always use "exit" command when closing monero-wallet-cli to save your
-current session's state. Otherwise, you might need to synchronize 
+current session's state. Otherwise, you might need to synchronize
 your wallet again (your wallet keys are NOT at risk in any case).
 
 PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.

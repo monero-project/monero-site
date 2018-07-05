@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Subscription"
 tags: ["kovri"]
 terms: ["Subscription"]

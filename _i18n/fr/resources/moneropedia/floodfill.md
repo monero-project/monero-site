@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Floodfill"
 tags: ["kovri"]
 terms: ["Floodfill"]
 summary: "An I2P router which maintains a distributed network-database"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 By actively managing a distributed network-database, a router with *floodfill* capability has the ability to help maintain network stability and resiliancy while also being decentralized and trust-less.

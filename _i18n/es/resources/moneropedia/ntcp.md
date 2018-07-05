@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "NTCP"
 tags: ["kovri"]
 terms: ["NTCP"]
 summary: "NIO-Based TCP (Non-blocking I/O based TCP): one of two Kovri transports"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 *NIO-Based TCP (Non-blocking I/O based TCP)* is one of two encrypted @transports for @Kovri.

@@ -3,6 +3,7 @@ layout: custom
 title: titles.presskit
 permalink: /press-kit/index.html
 ---
+{% t global.lang_tag %}
 <div class="text-center container description">
     <p>{% t press-kit.intro1 %} <strong>{% t press-kit.intro1 %}</strong> {% t press-kit.intro3 %} <a href="/press-kit/monero-press-kit.zip">{% t press-kit.intro4 %}</a></p>
 </div>
@@ -30,7 +31,7 @@ permalink: /press-kit/index.html
                         <a href="/press-kit/symbols/monero-symbol-on-white-480.png">{% t press-kit.small %}</a>
                         <a href="/press-kit/symbols/monero-symbol-on-white-800.png">{% t press-kit.medium %}</a>
                         <a href="/press-kit/symbols/monero-symbol-on-white-1280.png">{% t press-kit.large %}</a>
-                    </div> 
+                    </div>
                 </div>
                 <div class="row center-xs press">
                     <a href="/press-kit/symbols/monero-symbol.ai" class="adi">{% t press-kit.symbol_file %}</a>
@@ -61,7 +62,7 @@ permalink: /press-kit/index.html
                         <a href="/press-kit/logos/monero-logo-symbol-on-white-480.png">{% t press-kit.small %}</a>
                         <a href="/press-kit/logos/monero-logo-symbol-on-white-800.png">{% t press-kit.medium %}</a>
                         <a href="/press-kit/logos/monero-logo-symbol-on-white-1280.png">{% t press-kit.large %}</a>
-                    </div> 
+                    </div>
                 </div>
                 <div class="row center-xs press">
                    <div class="col-xs-12">

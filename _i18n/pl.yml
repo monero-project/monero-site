@@ -26,6 +26,7 @@ global:
   outdatedMax: Ta strona jest nieaktualna. Nie zalecamy korzystania z niej. Zamiast tego, przejdź do
   outdatedVersion: wersja po angielsku
   outdatedMin: Ta strona została zaktualizowana po tym, jak została przetłumaczona. Możesz korzystać z tej wersji, jednak może być ona niekompletna.
+  lang_tag: "@lang_tag_pl"
 
 titles:
   index: Start
@@ -528,6 +529,13 @@ library:
       abstract: >
         Quarterly Monero magazine, Q3 2017 edition.<br>
         In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
+
+moneropedia:
+  translated: "no"
+  add_new_button: Add New Entry
+  add_new_text1: If there is an entry you'd like to modify or be added, please
+  add_new_link: open an issue on this website's Github repository
+  add_new_text2: or submit changes via pull request
 
 blog:
   title_1: Wszystkie wpisy

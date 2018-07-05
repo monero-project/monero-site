@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Floodfill"
 tags: ["kovri"]
 terms: ["Floodfill"]

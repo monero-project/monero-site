@@ -136,14 +136,14 @@ And you will increment the version number in the following way:
 ## 4.0 How to make a blog post
 
 ### 4.1 Quick Start
-* Make new .md file in _posts (named whatever, no spaces)
+* Make new .md file in \_posts (named whatever, no spaces)
 * Front Matter (below)
 * Write Blog Post
 * Test/Build
 * Submit PR
 
 ### 4.2 Make a file
-Navigate to the _posts folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md
+Navigate to the \_posts folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md
 
 ### 4.3 Front Matter
 ```
@@ -171,12 +171,12 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 
 * Create file in /resources/user-guides with an .md ending and no spaces in filename.
 * File content as in 5.3
-* Create file in /_i18n/en/resources/user-guides with the exact same filename as above ending in .md
+* Create file in /\_i18n/en/resources/user-guides with the exact same filename as above ending in .md
 * Write User Guide
 * Add versioning snippet
-* Copy User Guide file to ALL LANGUAGES in /_i18n/[ALL LANGUAGES]/resources/user-guides
+* Copy User Guide file to ALL LANGUAGES in /\_i18n/[ALL LANGUAGES]/resources/user-guides
 * set translation to false in the snippet the top of each language version of your User Guide, except the original language
-* Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to /_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
+* Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to /\_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
 * Test/Build
 * Submit PR
 
@@ -222,7 +222,7 @@ As you paste into each folder, open up the file and edit the snippet at the top 
 `{% include disclaimer.html translated="false" version=page.version %}`. This does not need to be done in the original language that the User Guide was written in.
 
 ### 5.7 Add Guide to the 'User Guide' landing page of EACH LANGUAGE
-In the /_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it.
+In the /\_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it.
 
 DO NOT CHANGE ANYTHING IN THIS DOCUMENT BESIDES WHAT YOU ARE INSTRUCTED TO.
 
@@ -242,28 +242,57 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 
 ## 6.0 How to make a Moneropedia Entry
 
-### 6.1 Make a file
+### 6.1 Make a Global file
 Navigate to the /resources/moneropedia folder and make a new file. Be sure the file name has no spaces and the ending is .md
-
-### 6.2 Front Matter
+Fil this file with this exact content:
 ```
 ---
 layout: moneropedia
+---
+
+@moneropedia_article
+
+{% t global.lang_tag %}
+{% tf resources/moneropedia/account.md %}
+
+```
+
+### 6.2 Make the localized File
+Navigate to the /\_i18n/en/resources/moneropedia folder and make a new file. give it the same <name>.md than in previous step.
+Start the file with the front Matter:
+```
+---
 entry: "PUT THE NAME OF THE TERM HERE IN QUOTE, THIS IS HOW IT WILL SHOW UP ON THE LANDING PAGE"
 terms: ["PUT", "TERMS", "HERE", "EXPLAINED", "BELOW"]
 summary: "PUT SUMMARY OF YOUR ENTRY HERE IN QUOTES"
 ---
 ```
 
-There is one thing to highlight. The `terms:` section of the front matter can be filled with as many terms as you would like. This is how other Moneropedia entries will link to this page. You can link to other Moneropedia entries as well in your page by putting an ampersand before the term used, i.e. `@THE-TERM-USED`. This will make an automatic link in the Moneropedia entry to the referred term, replace the @term with the word used in that terms `entry:` area of the front matter, and on hover it will show the summary. How cool is that?
+There is two thing to highlight:  
+The `terms:` section of the front matter can be filled with as many terms as you would like. This is how other Moneropedia entries will link to this page. You can link to other Moneropedia entries as well in your page by putting an ampersand before the term used, i.e. `@THE-TERM-USED`. This will make an automatic link in the Moneropedia entry to the referred term, replace the @term with the word used in that terms `entry:` area of the front matter, and on hover it will show the summary. How cool is that?  
+The lines must not contains trailing whitespace, and it must be no blank lines added, otherwise the site with not build correctly.
 
 ### 6.3 Write
 Write your Moneropedia entry. Remember that you can link to other Moneropedia entries using `@term-used-in-entry` as described above. Just go to the .md file of the Moneropedia entry you want to link to and use any of the terms in the `terms:` field of the front matter. Be sure to write whichever one you choose EXACTLY as shown and preceded by an ampersand.
 
-### 6.4 Build/Test
+### 6.4 Copy to other languages
+Copy the file from the /\_i18n/en/resources/moneropedia folder to the other /\_i18n/<language>/resources/moneropedia folders and add the untranslated snippet at the same time just after the front matter, so it looks like:
+```
+---
+entry: "PUT THE NAME OF THE TERM HERE IN QUOTE, THIS IS HOW IT WILL SHOW UP ON THE LANDING PAGE"
+terms: ["PUT", "TERMS", "HERE", "EXPLAINED", "BELOW"]
+summary: "PUT SUMMARY OF YOUR ENTRY HERE IN QUOTES"
+---
+
+{% include untranslated.html %}
+```
+
+If you want to translate in your native language, go to the 14.3.2 section below to read about specificities.
+
+### 6.5 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically and test check the link to your entry is appearing on the alphabetical list of Moneropedia entries and that it leads to your entry when clicked. Test your Moneropedia entry in the browser and contact rehrar if there are any bugs.
 
-### 6.5 Submit Pull Request
+### 6.6 Submit Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
 ## 7.0 How to make a FFS Proposal
@@ -302,7 +331,7 @@ The layout will depend on if you are simply presenting an idea that you do not p
 
 ### 7.4 Editing the .yml file
 
-Navigate to the /_data folder and open the file titled `ffs.yml`. In this file you will find a long list of FFS proposals.
+Navigate to the /\_data folder and open the file titled `ffs.yml`. In this file you will find a long list of FFS proposals.
 
 **DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
 
@@ -497,7 +526,7 @@ Now inside the label tag you're going to find where it says 'CHANGE QUESTION' an
 
 Lastly, find the words 'CHANGE ANSWER' and change it to the answer of your question.
 
-**DO NOT MESS WITH THE INDENTATION HERE. The div that has `markdown=1` MUST be flush with the left side, the answer to the question must start flush with the left side, and the `</div>` MUST be flush with the left side. **
+**DO NOT MESS WITH THE INDENTATION HERE. The div that has `markdown=1` MUST be flush with the left side, the answer to the question must start flush with the left side, and the `</div>` MUST be flush with the left side.**
 
 ### 12.2 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically. If the build is successful, go to the FAQ page `/get-started/faq/` and check to see that your question is showing up and, when clicked, the answer drops down. If not, check to make sure that the `id="tab-CHANGETHIS"` in the input and the `for="CHANGETHIS"` in the label are identical to each other. Test the page and let rehrar know if there are any bugs.
@@ -566,6 +595,34 @@ Go to the /i18n folder and find the two letter code for the language you wish to
 ### 14.3 Translate the file
 Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip step 13.4. If during testing, the page appears different from the original English page (besides the translated text of course), you did something wrong and may have to start again.
 
+#### 14.3.2 Notes for Moneropedia Entries
+Moneropedia entries have two specificities:
+
+* The Front Matter:  
+Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
+This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
+
+* The old *unstranslated* snippet must be removed, therefor the next section 14.4 is irrelevant here.
+
+Finally, your entry should go from:
+```
+---
+entry: "Entry name in English"
+terms: ["English", "terms"]
+summary: "English summary."
+---
+
+{% include untranslated.html %}
+```
+To:
+```
+---
+entry: "Translated entry name"
+terms: ["English", "terms", "translated", "terms"]
+summary: "Translated summary."
+---
+```
+
 ### 14.4 set the 'translated' snippet to true
 Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
 
@@ -580,7 +637,7 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 ## 15.0 How to add a new language
 Whoo boy, this is the big one. Please follow all directions exactly.
 
-### 15.1 _config.yml file
+### 15.1 \_config.yml file
 Navigate to the root folder of the whole website and find the file labeled `_config.yml`. Open it and find the line that says `languages:`. Add your two letter language code (Google it if you don't know it) in between the brackets after the others already present. You will need to put a comma after the previous last one.
 
 Example:
@@ -589,14 +646,14 @@ languages: ["en", "es", "NEW LANG HERE"]
 ```
 Save and exit the file.
 
-### 15.2 _data folder
+### 15.2 \_data folder
 Navigate to the `_data/lang` folder and copy the `template` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
 **The template folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
 
 Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
 
-### 15.3 _i18n folder
-Navigate to the _i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml` at the end and change all sections marked 'translated: "yes"' to 'translated: "no"'. Change back to 'yes' once you have translated that section. Now duplicate the `en` folder and rename it with the correct language code.
+### 15.3 \_i18n folder
+Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml` at the end and change all sections marked 'translated: "yes"' to 'translated: "no"'. Change back to 'yes' once you have translated that section. Now duplicate the `en` folder and rename it with the correct language code.
 **The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
 
 Enter the .yml file and translate everything there.

@@ -1,10 +1,7 @@
 ---
 layout: moneropedia
-entry: ""
-terms: ["", ""]
-summary: ""
 ---
 
-### The Basics
+@moneropedia_article
 
-{{ page.summary | capitalize }}.
+{% t global.lang_tag %}

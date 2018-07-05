@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "OpenAlias"
 terms: ["OpenAlias"]
 summary: "a standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org"
@@ -15,6 +14,6 @@ As part of the ongoing development of the Monero cryptocurrency project, we aske
 
 At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralized and decentralized domain systems.
 
-{{ page.summary | capitalize }}.
+A standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org.
 
-More information can be found on the [OpenAlias page](/knowledge-base/openalias) or on the [OpenAlias website](https://openalias.org)
+More information can be found on the [OpenAlias page](/resources/openalias) or on the [OpenAlias website](https://openalias.org)

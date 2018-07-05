@@ -3,6 +3,7 @@ layout: custom
 title: titles.roadmap
 permalink: /resources/roadmap/index.html
 ---
+{% t global.lang_tag %}
 <div class="roadmap">
     <div class="text-center pre-roadmap container">
         <div class="row">

@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Lease"
 tags: ["kovri"]
 terms: ["Lease", "Leases"]
 summary: "Authorizes an I2P tunnel to receive messages targeting a destination"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 A lease defines the authorization for a particular @I2P @tunnel to receive a @messages targeting a @destination.

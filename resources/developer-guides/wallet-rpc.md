@@ -7,4 +7,5 @@ mainVersion:
   - "2"
   - "0"
 ---
+{% t global.lang_tag %}
 {% tf resources/developer-guides/wallet-rpc.md %}

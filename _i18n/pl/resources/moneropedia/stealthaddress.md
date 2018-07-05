@@ -1,7 +1,6 @@
 ---
-layout: moneropedia
 entry: "Ukryty adres"
-terms: ["ukryty-adres", "ukrytym-adresie", "ukrytego-adresu", "ukrytym-adresem"]
+terms: ["stealth-address", "stealth-addresses", "ukryty-adres", "ukrytym-adresie", "ukrytego-adresu", "ukrytym-adresem"]
 summary: "Automatyczny jednorazowy adres każdej transakcji."
 ---
 

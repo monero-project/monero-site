@@ -7,4 +7,5 @@ mainVersion:
   - "1"
   - "0"
 ---
+{% t global.lang_tag %}
 {% tf resources/user-guides/restore_from_keys.md %}

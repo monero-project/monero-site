@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Tail Emission"
 terms: ["Tail-Emission"]
 summary: "the block reward at the end of the emission curve"
@@ -11,6 +10,6 @@ Monero block rewards will never drop to zero. Block rewards will gradually drop 
 
 ### Why
 
-Miners need an incentive to mine. Because of the dynamic blocksize, competition between miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network.
+Miners need an incentive to mine. Because of the dynamic blocksize, competition between @miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network.
 
 Tail emission ensures that a dynamic block size and fee market can develop.

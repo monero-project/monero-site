@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Subscription"
 tags: ["kovri"]
 terms: ["Subscription"]
 summary: "A file used by address book which contains I2P hosts paired with I2P destinations"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 A subscription is a file which contains a list of `.i2p` hosts paired with their respective @destination. Subscriptions are used by the @address-book.

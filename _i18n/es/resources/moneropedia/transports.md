@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Transports"
 tags: ["kovri"]
 terms: ["Transports", "Transport"]
 summary: "The two encrypted transport layers for Kovri"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 @I2P comes with two encrypted transport layer technologies that allow @Kovri to securely use [TCP/IP](https://en.wikipedia.org/wiki/Tcp/ip) connections. These technologies (@SSU and @NTCP) are called *@transports*.

@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "I2PControl"
 tags: ["kovri"]
 terms: ["I2PControl"]

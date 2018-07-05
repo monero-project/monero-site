@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Tunnel"
 tags: ["kovri"]
 terms: ["Tunnel", "Tunnels"]
 summary: "Uni-directional virtual paths that pass messages through a defined sequence of I2P routers"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 When you communicate over @I2P (visit an @eepsite / use a @garlic-service), you'll first need to connect to a peer by using @transports and then build virtual *tunnels*. These virtual tunnels are temporary, uni-directional paths that pass information through a defined sequence of @I2P routers to your @destination. Tunnels are built, and then used, with layered @garlic-encryption and are a general-purpose mechanism to transport all @I2NP @messages.

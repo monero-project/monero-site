@@ -8,4 +8,5 @@ mainVersion:
   - "0"
 ---
 
+{% t global.lang_tag %}
 {% tf resources/user-guides/How-to-mine-Monero-XMR-without-a-mining-equipment.md %}

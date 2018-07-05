@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Data Directory"
 tags: ["kovri"]
 terms: ["Data-Directory"]

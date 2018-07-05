@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "SSU"
 tags: ["kovri"]
 terms: ["SSU"]
 summary: "Secure Semi-reliable UDP: one of two Kovri transports"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 *Secure Semi-reliable UDP* is one of two encrypted @transports for @Kovri.

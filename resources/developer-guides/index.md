@@ -3,6 +3,8 @@ layout: custom
 title: titles.developerguides
 permalink: /resources/developer-guides/index.html
 ---
+
+{% t global.lang_tag %}
 <div class="guides">
     <div class="center-xs container description">
         <p class="text-center">{% t developer-guides.outdated %}</p>

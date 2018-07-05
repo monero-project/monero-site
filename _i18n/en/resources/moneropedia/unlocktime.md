@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Transaction Unlock Time"
 terms: ["unlock-time"]
 summary: "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
@@ -7,7 +6,7 @@ summary: "a special transaction where the recipient can only spend the funds aft
 
 ### The Basics
 
-{{ page.summary | capitalize }}.
+A special transaction where the recipient can only spend the funds after a future date, as set by the sender.
 
 Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time.
 

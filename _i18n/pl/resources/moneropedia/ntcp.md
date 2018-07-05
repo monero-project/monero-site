@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "NTCP"
 tags: ["kovri"]
 terms: ["NTCP"]

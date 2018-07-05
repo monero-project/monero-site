@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Address Book"
 tags: ["kovri"]
 terms: ["Address-Book"]
