@@ -1,0 +1,6 @@
+- name: قانوني
+  url: legal
+- name: شفره المصدر
+  url: https://github.com/monero-project
+- name: المواصفات التقنيه
+  url: technical-specs/

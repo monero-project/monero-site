@@ -1,0 +1,52 @@
+- title: إبدأ
+  subfolderitems:
+  - page: ما هو مونيرو ؟
+    url: get-started/what-is-monero
+  - page: الإستخدام
+    url: get-started/using
+  - page: القبول
+    url: get-started/accepting
+  - page: المشاركه
+    url: get-started/contributing
+  - page: التعدين
+    url: get-started/mining
+  - page: الأسئله المتكرره
+    url: get-started/faq
+- title: التنزيلات
+  url: downloads/
+- title: آخر الأخبار
+  subfolderitems:
+    - page: جميع المشاركات
+      url: blog
+    - page: خطابات
+      url: blog/tags/monero%20missives.html
+    - page: سجل الإجتماعات
+      url: blog/tags/dev%20diaries.html
+    - page: الإصدارات
+      url: blog/tags/releases.html
+- title: المجتمع
+  subfolderitems:
+  - page: الفريق
+    url: community/team
+  - page: الملتقي
+    url: community/hangouts
+  - page: الرعاه
+    url: community/sponsorships
+  - page: التجار
+    url: community/merchants
+- title: موارد
+  subfolderitems:
+  - page: عن مونيرو
+    url: resources/about
+  - page: خريطه الطريق
+    url: resources/roadmap
+  - page: مختبر البحث
+    url: resources/research-lab
+  - page: مونيروبيديا
+    url: resources/moneropedia
+  - page: دليل المستخدم
+    url: resources/user-guides
+  - page: دليل المُطور
+    url: resources/developer-guides
+  - page: المواصفات التقنيه
+    url: technical-specs

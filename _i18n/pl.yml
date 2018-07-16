@@ -4,6 +4,7 @@ langs:
   it: Italian
   pl: Polski
   fr: Français
+  ar: العربية
 
 global:
   date: '%Y/%m/%d'
