@@ -37,6 +37,7 @@ title: titles.userguides
                             <a href="{{site.baseurl}}/resources/user-guides/mine-to-pool.html">{% t user-guides.mine-on-pool %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/solo_mine_GUI.html">{% t user-guides.solo-mine %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/mining_with_xmrig_and_docker.html">{% t user-guides.mine-docker %}</a>
+                            <a href="{{site.baseurl}}/resources/user-guides/How-to-mine-Monero-XMR-without-a-mining-equipment.html">{% t user-guides.nicehash %}</a>
                         </p>
                     </div>
                 </div>

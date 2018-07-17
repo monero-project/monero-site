@@ -43,7 +43,7 @@ permalink: /downloads/index.html
         {% for data_downloads in site.data.downloads %}
             <section class="container full" id="{{ data_downloads.id}}">
                 <div class="info-block">
-                    <h2> 
+                    <h2>
                         {% if data_downloads.icon != null %}
                             <span class="{{data_downloads.icon}}"></span>  
                         {% endif %}
@@ -69,7 +69,7 @@ permalink: /downloads/index.html
                     {% elsif data_downloads.id == "mobilelight" %}
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/">{% t downloads.mobilelight2 %}</a>{% t downloads.mobilelight3 %}</p>
+                                <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a>{% t downloads.mobilelight3 %}</p>
                             </div>
                         </div>
                         <div class="row center-xs">
@@ -94,7 +94,7 @@ permalink: /downloads/index.html
                          </div>
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <p><strong>SHA256 Hash:</strong></p> 
+                                <p><strong>SHA256 Hash:</strong></p>
                                 <p class="hash"> {{ data_downloads.cli_hash }}</p>
                             </div>
                         </div>
