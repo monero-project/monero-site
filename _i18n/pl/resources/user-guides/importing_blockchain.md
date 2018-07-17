@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # Importowanie łańcucha bloków do portfela Graficznego Interfejsu Użytkownika Monero (dla Windowsa)
 
 ### Krok 1
@@ -28,7 +30,7 @@ Otwórz okno wiersza polecenia. Możesz tego dokonać, klikając w przycisk Wind
 
 Używając okienka CMD, przejdź do lokalizacji twojego portfela Monero. Możesz tego dokonać, wpisując:
 
-`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE` 
+`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE`
 
 Powinno to wyglądać mniej więcej tak:
 
@@ -46,7 +48,7 @@ Na przykład:
 
 `monero-blockchain-import --verify 1 --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Jeśli ściągnąłeś łańcuch bloków z zaufanego, renomowanego źródła, możesz ustawić `verify 0`. To zmniejszy czas synchronizacji łańcucha. 
+Jeśli ściągnąłeś łańcuch bloków z zaufanego, renomowanego źródła, możesz ustawić `verify 0`. To zmniejszy czas synchronizacji łańcucha.
 
 ### Krok 7
 

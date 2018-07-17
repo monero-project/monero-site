@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Operating Systems:  Windows, Linux, Mac
 
 - Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @wallet

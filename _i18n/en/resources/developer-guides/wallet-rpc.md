@@ -1,3 +1,5 @@
+{% assign version = '1.2.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
 This is a list of the monero-wallet-rpc calls, their inputs and outputs, and examples of each. The program monero-wallet-rpc replaced the rpc interface that was in simplewallet and then monero-wallet-cli.
@@ -1234,7 +1236,7 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
-    
+
 
 ### **rescan_spent**
 

@@ -21,6 +21,9 @@ global:
   privacy: Privacy
   copyright: Copyright
   untranslated: This page is not yet translated. If you would like to help translate it, please see the
+  outdatedMax: This page is outdated. We do not recommend using it. Instead, please see the
+  outdatedVersion: english version
+  outdatedMin: This page has been updated since the translation. You can use this version, but it may be incomplete.
 
 titles:
   index: Home

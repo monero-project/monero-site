@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## W jaki sposób nabyć Monero?
 
 To jest przewodnik dotyczący nabycia Monero według stanu na dzień 19 września 2015 roku. To prawdopodobnie najprostsza metoda na zakup i posiadanie Monero.
@@ -8,7 +10,7 @@ Istnieje wiele sposobów na zakup Bitcoina. Być może najłatwiejszym z nich je
 
 ####Krok 2: Załóż konto na mymonero.com
 
-MyMonero.com jest portfelem Monero on-line, utrzymywanym przez głównego dewelopera Monero - Ricardo Spagni (fluffpony). Jest najłatwiejszym protfelem w użyciu. Po prostu przejdź do strony MyMonero.com i kliknij na "Create a new account". 
+MyMonero.com jest portfelem Monero on-line, utrzymywanym przez głównego dewelopera Monero - Ricardo Spagni (fluffpony). Jest najłatwiejszym protfelem w użyciu. Po prostu przejdź do strony MyMonero.com i kliknij na "Create a new account".
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
 

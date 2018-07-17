@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # monerod
 
 `monerod` est le démon est une application incluse dans la suite Monero. C'est un programme en ligne de commande qui gère la chaîne de blocs. Tandis que le portefeuille Bitcoin gère à la fois un compte et la chaîne de blocs, Monero sépare ces composants : `monerod` gère la chaîne de blocs, et `monero-wallet-cli` gère le compte.

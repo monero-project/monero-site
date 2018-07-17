@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ### Systemy operacyjne:  Ubuntu
 
 - Ściągnij [oficjalne pliki binarne](https://getmonero.org/downloads/) lub skompiluj ostatnie dostępne źródło na [Github](https://github.com/monero-project/bitmonero).
@@ -30,8 +32,8 @@
 
 ![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/12.png)
 
-- Wpisz nazwę, którą chcesz nadać swojemu portfolio i postępuj zgodnie z instrukcjami terminala. 
- 
+- Wpisz nazwę, którą chcesz nadać swojemu portfolio i postępuj zgodnie z instrukcjami terminala.
+
 ![image13](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/13.png)
 ![image14](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/14.png)
 ![image15](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/15.png)
@@ -41,7 +43,7 @@
 
 ![image17](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/17.png)
 
-*To jest twój klucz widoczności. 
+*To jest twój klucz widoczności.
 This is your view key. Potrzebujesz go do stworzenia portfela tylko do wyświetlania (zobacz także: powiązany przewodnik dla użytkowników).*
 
 ![image18](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/18.png)

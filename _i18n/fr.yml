@@ -22,6 +22,9 @@ global:
   copyright: Propriété intellectuelle
   edit: Modifier cette page
   untranslated: Cette page n'a pas encore été traduite. Si vous voulez aider à la traduire, voyez le
+  outdatedMax: Cette page est dans une version trop ancienne. Nous vous recommandons de ne pas vous baser dessus et de consulter la
+  outdatedVersion: verson anglaise
+  outdatedMin: Cette page a été modifiée depuis sa traduction. Vous pouvez vous baser sur cette version, mais elle pourrait être incomplète.
 
 titles:
   index: Accueil

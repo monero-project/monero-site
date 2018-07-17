@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # monerod
 
 `monerod` jest oprogramowaniem daemona, które współpracuje z Monero. To program konsoli zarządzający łańcuchem bloków. Podczas gdy portfel Bitcoina zarządza zarówno kontem, jak i łańcuchem bloków, Monero rozdzielił je, aby `monerod` operował łańcuchem, a `monero-wallet-cli` kontem.
@@ -39,7 +41,7 @@ Uruchom daemona w tle:
 Monitoruj rezultaty `monerod`, jeśli daemon jest uruchomiony:
 
     tail -f ~/.bitmonero/bitmonero.log
-    
+
 Utrzymuj VPS w bezpieczeństwie, korzystając z autoaktualizacji:
 
 https://help.ubuntu.com/community/AutomaticSecurityUpdates

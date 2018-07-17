@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 Parfois, vos fonds pourraient être bloqués, ou vous auriez des fonds bloqués qui ne se débloqueraient jamais. Voici comment solutionner ce problème.
 
 - Chargez votre portefeuille dans monero-wallet-cli.

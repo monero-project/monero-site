@@ -1,4 +1,5 @@
-{% include untranslated.html %}
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 # monerod
 
 `monerod` is the daemon software that ships with the Monero tree. It is a console program, and manages the blockchain. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
@@ -40,7 +41,7 @@ Launch the daemon as a background process:
 Monitor the output of `monerod` if running as daemon:
 
     tail -f ~/.bitmonero/bitmonero.log
-    
+
 Keep the VPS secure with autoupdate:
 
 https://help.ubuntu.com/community/AutomaticSecurityUpdates

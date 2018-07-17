@@ -1,4 +1,5 @@
-{% include untranslated.html %}
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 # Importing the Blockchain to Monero GUI wallet (Windows)
 
 ### Step 1
@@ -15,7 +16,7 @@ Your path may be different depending on where you decided to download your walle
 
 ### Step 3
 
-Find the path of your downloaded Blockchain for example mine was: 
+Find the path of your downloaded Blockchain for example mine was:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
@@ -29,7 +30,7 @@ Open a Command Prompt window. You can do this by pressing the Windows key + R, a
 
 Now you need to navigate using the CMD window to the path of your Monero wallet. You can do this by typing:
 
-`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE` 
+`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE`
 
 It should look something like:
 
@@ -51,7 +52,7 @@ If you downloaded the Blockchain from a trusted, reputable source you may set `v
 
 ### Step 7
 
-After the the Blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted. 
+After the the Blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.
 
 
 Author: Kee Jefferys

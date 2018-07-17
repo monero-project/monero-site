@@ -1,4 +1,5 @@
-{% include untranslated.html %}
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 Sometimes, your funds will become stuck - you will have some locked funds that never become unlocked. This is how you fix it.
 
 - Load your wallet in monero-wallet-cli.

@@ -1,0 +1,28 @@
+{% assign disclaimer = "" %}
+
+{% if site.lang == 'en' %}
+  <!-- Do nothing for English -->
+{% elsif version[0] != page.mainVersion[0] %}
+  <!-- Add outdated disclaimer and link to English version for major version mismatch -->
+  {% capture linkEN %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+  {% capture disclaimer %}{% t global.outdatedMax %} <a class="disclaimer-link" href="{{ linkEN }}" >{% t global.outdatedVersion %}</a>.{% endcapture %}
+{% elsif version[1] != page.mainVersion[1] %}
+  <!-- Add outdated disclaimer for minor version mismatch -->
+  {% capture disclaimer %}{% t global.outdatedMin %}{% endcapture %}
+{% endif %}
+
+{% if include.translated != "true" %}
+  <!-- Add untranslated disclaimer if needed -->
+  {% if disclaimer != "" %}
+    {% capture disclaimer %}<br>{{ disclaimer }}{% endcapture %}
+  {% endif %}
+  {% capture disclaimer %}{% t global.untranslated %} <a class="disclaimer-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.{{ disclaimer }}{% endcapture %}
+{% else %}
+
+{% endif %}
+{% if disclaimer != "" %}
+  <!-- Print the disclaimer if not empty -->
+  <div class="disclaimer">
+    <p>{{ disclaimer }}</p>
+  </div>
+{% endif %}

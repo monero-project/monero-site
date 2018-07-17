@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## How to obtain Monero
 
 This is a guide to obtain your own Monero as of 20150919. This is perhaps the easiest way to purchase and hold Monero.
@@ -8,7 +10,7 @@ There are many ways to buy Bitcoin. Perhaps the easiest way is through circle.co
 
 ####Step 2: Set up a mymonero.com account
 
-MyMonero.com is an online wallet for Monero, maintained by Monero Core Developer Ricardo Spagni (fluffpony). It is the easiest wallet to use. Simply go to MyMonero.com and click on the "Create an Account" button. 
+MyMonero.com is an online wallet for Monero, maintained by Monero Core Developer Ricardo Spagni (fluffpony). It is the easiest wallet to use. Simply go to MyMonero.com and click on the "Create an Account" button.
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
 

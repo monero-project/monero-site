@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # CLI Wallet/Daemon Isolation with Qubes + Whonix
 
 With [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) you can have a Monero wallet that is without networking and running on a virtually isolated system from the Monero daemon which has all of its traffic forced over [Tor](https://torproject.org).
@@ -7,7 +9,7 @@ Qubes gives the flexibility to easily create separate VMs for different purposes
 This is safer than other approaches which route the wallets rpc over a Tor hidden service, or that use physical isolation but still have networking to connect to the daemon. In this way you don't need any network connection on the wallet, you preserve resources of the Tor network, and there is less latency.
 
 
-## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install): 
+## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
 
 + Using a Whonix workstation template, create two workstations as follows:
 
@@ -15,14 +17,14 @@ This is safer than other approaches which route the wallets rpc over a Tor hidde
 
   - The second workstation will be for the `monerod` daemon, it will be referred to as `monerod-ws`. You will have `NetVM` set to the Whonix gateway `sys-whonix`.
 
-## 2. In the AppVM `monerod-ws`: 
+## 2. In the AppVM `monerod-ws`:
 
 + Download, verify, and install Monero software.
 
 ```
 user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "https://getmonero.org/downloads/hashes.txt"
 user@host:~$ gpg --recv-keys BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9
-user@host:~$ gpg --verify hashes.txt 
+user@host:~$ gpg --verify hashes.txt
 gpg: Signature made Wed 01 Nov 2017 10:01:41 AM UTC
 gpg:                using RSA key 0x55432DF31CCD4FCD
 gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]

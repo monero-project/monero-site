@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## Jak bezpiecznie kupować i przechowywać Monero?
 
 Ten przewodnik opisuje, jak kupować i bezpiecznie przechowywać Monero, zgodnie ze stanem na czerwiec 2017 roku.
@@ -8,7 +10,7 @@ Istnieje wiele sposobów na zakupo Bitcoina. Dwie na wpół niezawodne organizac
 
 #### Krok 2: Ściągnij i utwórz papierowy portfel na bezpiecznym i odłączonym od sieci komputerze.
 
-Ściągnij generator papierowego portfela ze strony https://moneroaddress.org i skopiuj go na USB (bezpośredni link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip). 
+Ściągnij generator papierowego portfela ze strony https://moneroaddress.org i skopiuj go na USB (bezpośredni link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip).
 
 Rozpakuj i otwórz generator papierowego portfela (monero-wallet-generator.html) w przeglądarce na odłączonym od sieci komputerze, który nie był wcześniej używany lub posiada świeżo zainstalowany system operacyjny.
 
