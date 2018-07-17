@@ -148,7 +148,7 @@ team:
   translated: "no"
   core: Core
   developers: Developers
-  developers_para1: he Monero Project has had well over 200 contributors over the life of the project. For a complete list, please see the
+  developers_para1: he Monero Project has had well over 400 contributors over the life of the project. For a complete list, please see the
   developers_para2: OpenHub contributors page.
   developers_para3: Below you'll find some individuals that have gone above and beyond for Monero.
   community: Community
@@ -359,7 +359,7 @@ what-is-monero:
   confidential_para5: ", will route and encrypt transactions via I2P Invisible Internet Project nodes. This will obfuscate a transactor's IP address and provide further protection against network monitoring."
   grassroots: Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.
   grassroots_para1: Over
-  grassroots_para2: 240 developers
+  grassroots_para2: 420 developers
   grassroots_para3: have contributed to the Monero project, including 30 core developers. Forums and chat channels are welcoming and active.
   grassroots_para4: Monero's Research Lab, Core Development Team and Community Developers are constantly pushing the frontier of what is possible with cryptocurrency privacy and security.
   grassroots_para5: Monero is not a corporation. It is developed by cryptography and distributed systems experts from all over the world that donate their time or are funded by community donations. This means that Monero can't be shut down by any one country and is not constrained by any particular legal jurisdiction.
