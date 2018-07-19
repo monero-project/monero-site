@@ -76,6 +76,7 @@ title: titles.userguides
                             <a href="{{site.baseurl}}/resources/user-guides/remote_node_gui.html">{% t user-guides.remote-node-gui %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/view_only.html">{% t user-guides.view-only %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/prove-payment.html">{% t user-guides.prove-payment %}</a>
+                            <a href="{{site.baseurl}}/resources/user-guides/ledger-wallet-cli.html">{% t user-guides.ledger-wallet-cli %}</a>
                         </p>
                     </div>
                 </div>

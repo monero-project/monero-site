@@ -419,6 +419,7 @@ user-guides:
   prove-payment: Comment vérifier un paiement
   restore-from-keys: Restaurer un portefeuille depuis les clefs
   nicehash: Comment miner Monero sans équipement d'extraction minière
+  ledger-wallet-cli: Comment générer un portefeuille Monero Ledger avec la CLI (monero-wallet-cli)
 
 roadmap:
   translated: "yes"

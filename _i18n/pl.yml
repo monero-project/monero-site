@@ -418,6 +418,7 @@ user-guides:
   prove-payment: Jak udowodnić płatność
   restore-from-keys: Przywracanie portfela za pomocą kluczy
   nicehash: Jak wydobywać Monero (XMR) bez sprzętu wydobywczego
+  ledger-wallet-cli: 
 
 roadmap:
   translated: "yes"
