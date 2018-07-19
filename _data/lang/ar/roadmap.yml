@@ -1,0 +1,114 @@
+- year: 2014
+  accomplishments:
+    - name: تم إنشاء المشروع علي Bitcointalk
+      date: 2014-04-18
+      status: completed
+    - name: تغيير الإسم من بيت مونيرو إلي مونيرو
+      date: 2014-04-23
+      status: completed
+    - name: تم التعافي من هجمه اسبام
+      date: 2014-09-04
+      status: completed
+    - name: تم نشر أول ورقتين بحث لمختبر بحث مونيرو
+      date: 2014-09-12
+      status: completed
+    - name: تم نشر الورقه البحثيه الثالثه لمختبر بحث مونيرو
+      date: 2014-09-25
+      status: completed
+    - name: 0.8.8.6 نشر الإصدار رقم
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: الورقه البحثيه الرابعه لمختبر بحث مونيرو
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: 0.9.0 نشر الإصدار رقم
+      date: 2016-01-01
+      status: completed
+    - name: الورقه البحثيه الخامسه لمختبر البحث
+      date: 2016-02-10
+      status: completed
+    - name: تحديث للشبكه لإستخدام 3 كأقل عدد لحجم الحلقات اللازم لكل المعاملات
+      date: 2016-03-22
+      status: completed
+    - name: 0.10.0 نشر الإصدار رقم
+      date: 2016-09-18
+      status: completed
+    - name: تحديث للشبكه لفصل معامله الاساس الي عده فئات
+      date: 2016-09-21
+      status: completed
+    - name: 0.10.1 نشر الإصدار
+      date: 2016-12-14
+      status: completed
+    - name: الإصدار التجريبي الاول للواجهه الرسوميه الرسميه
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: تحديث الشبكه للسماح بمعاملات الحقل السريه
+      date: 2017-01-05
+      status: completed
+    - name: 0.10.2 الإصدار رقم , تم معالجه ثغيره خطيره
+      date: 2017-02-22
+      status: completed
+    - name: 0.10.3.1 الإصدار رقم
+      date: 2017-03-27
+      status: completed
+    - name: تحديث للشبكه لتعديل أقل حجم للكتل و خوارزميه الرسوم الديناميكية
+      date: 2017-04-15
+      status: completed
+    - name: إعاده تصميم الموقع
+      date: 2017-07-04
+      status: completed
+    - name: 0.11.0.0 إصدار رقم
+      date: 2017-09-07
+      status: completed
+    - name: الكتل الرقيقه
+      date: 2017-09-07
+      status: completed
+    - name: نهايه المرحله التجريبيه للواجهه الرسوميه
+      date: 2017-09-10
+      status: completed
+    - name: تحديث للشبكه لإستخدام 5 كأقل عدد لحجم الحلقات اللازم و إلزام معاملات الحقل السريه لكل المعاملات
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: العناوين الفرعيه
+      date: October, 2017
+      status: completed
+    - name: ثنائيه التوقيع (multisig)
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: تقنيه إثبات العمل جديده CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: تحديث للشبكه لإستخدام 7 كأقل عدد لحجم الحلقات اللازم, دمح ثنائيه التوقيع , العناوين الفرعيه , وتغيير تقنيه إثبات العمل
+      date: 2018-04-06
+      status: completed
+    - name: ترجمه الموقع إلي الفرنسيه والبولنديه
+      date: 2018-04-24
+      status: completed
+    - name: إعاده تصميم نظام التمويل بالمنتدي
+      date:
+      status: ongoing
+    - name: نظام "مدي التأكيد" أكثر كفأً لمعاملات الحقل السري لتقليل حجم المعاملات
+      date:
+      status: upcoming
+    - name: الإصدار الأول لمشروع كوفري
+      date:
+      status: upcoming
+- year: 2019
+  accomplishments:
+    - name: حلول الطبقه الثانيه للسرعه و قابليه التوسع
+      date:
+      status: upcoming
+    - name: أوراق بحثيه إضافيه لمختبر بحث مونيرو
+      date:
+      status: upcoming
