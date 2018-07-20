@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 ## مُقدمه
 
 هذا الدليل ذو شقين ، سهولة التعدين في توزيعات لينكس وبعض الأمان الإضافي حول التعدين حيث أن معظم هذه البرامج لم تخضع للتدقيق الأمني.

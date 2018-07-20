@@ -22,6 +22,9 @@ global:
   privacy: الخصوصيه
   copyright: حقوق الملكيه
   untranslated: هذه الصفحه لم تترجم بعد , إذا أردت المساعده في الترجمه من فضلك تواصل معنا
+  outdatedMax:
+  outdatedVersion:
+  outdatedMin:
 
 titles:
   index: الرئيسيه
@@ -103,6 +106,32 @@ hangouts:
   irc_para: مجتمع مونيرو ينتفع بالعديد من قنوان الدردشه IRC كل منها لغرض معين. بعضها للعمل, وبعضها للإلتقاء بالمجتمع, سوف تجد أشهرهم في الأسفل.
   stack_exchange: Stack Exchange
   stack_exchange_para: مونيرو Stack Exchange هو طريقه سريعه للسؤال والحصول علي إجابات حول مونيرو , ستجد بالأدني بعض الأسئله والإجابات القيمه للأسئله الشائعه .
+  stack_exchange_link:
+  irc_channels:
+  - channel: monero
+    description:
+  - channel: monero-community
+    description:
+  - channel: monero-dev
+    description:
+  - channel: monero-markets
+    description:
+  - channel: monero-offtopic
+    description:
+  - channel: monero-otc
+    description:
+  - channel: monero-pools
+    description:
+  - channel: monero-research-lab
+    description:
+  - channel: monero-translations
+    description:
+  - channel: monero-hardware
+    description:
+  - channel: kovri
+    description:
+  - channel: kovri-dev
+    description: 
 
 merchants:
   translated: "yes"
@@ -387,6 +416,8 @@ user-guides:
   view-only: كيفيه عمل محفظه رؤيه فقط
   prove-payment: كيفيه إثبات إتمام معامله
   restore-from-keys: إستعاده محفظه من المفاتيح
+  nicehash:
+  ledger-wallet-cli:
 
 roadmap:
   translated: "yes"

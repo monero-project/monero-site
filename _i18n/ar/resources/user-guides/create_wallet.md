@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 ### Operating Systems:  Ubuntu
 
 - Download the [official binaries](https://getmonero.org/downloads/) or compile the last source available on [Github](https://github.com/monero-project/bitmonero)
@@ -31,7 +33,7 @@
 ![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/12.png)
 
 - Enter the name you want for your portfolio and follow the instructions from the terminal
- 
+
 ![image13](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/13.png)
 ![image14](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/14.png)
 ![image15](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/15.png)

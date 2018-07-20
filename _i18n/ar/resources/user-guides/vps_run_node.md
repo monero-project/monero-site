@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # monerod
 
 `monerod` هو برنامج خادم مونيرو. وهو برنامج وحده تحكم في سلسله الكتل. بينما تُدير محفظه البيتكوين كلاً من الحساب وسلسله الكتل, يقوم مونيرو بفصلهم, فالخادم `monerod` يتحكم في سلسله الكتل وواجهه سطر الأوامر `monero-wallet-cli` تتحكم في الحساب.
@@ -39,7 +41,7 @@ Example if using `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACC
 تابع مُخرجات الخادم `monerod`:
 
     tail -f ~/.bitmonero/bitmonero.log
-    
+
 حافظ علي أمان الخادم بتشغيل التحديثات التلقائيه:
 
 https://help.ubuntu.com/community/AutomaticSecurityUpdates

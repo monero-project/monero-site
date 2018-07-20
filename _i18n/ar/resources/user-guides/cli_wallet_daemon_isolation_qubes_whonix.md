@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # عزل واجهه سطر الأوامر/الخادم في نظام Qubes + Whonix
 
 مع نظام [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) يُمكنك إنشاء محفظه مونيرو بدون إتصال بالإنترنت تعمل علي نظام إفتراضي معزول عن خادم مونيرو الذي يَمر كل بياناته من خلال شبكه التور  [Tor](https://torproject.org).
@@ -7,7 +9,7 @@
 هذه الطريقه أكثر أماناً من الطرق الاخري التي توجّه بروتوكول (RPC) المحفظه خلال خدمه تور(TOR) مخفيه, أو التي تستخدم العزل المادي لكنها ماتزال تستخدم الإنترنت للإتصال بالخادم. بهذه الطريقه لا تحتاج أي إتصال شبكي بالمحفظه, فإنك تُحافظ علي موارد شبكة تور(Tor) ، ووقت الإستجابة أقل.
 
 
-## 1. [إنشاء مكنه إفتراضي للتطبيقات علي وونكس (Whonix AppVMs)](https://www.whonix.org/wiki/Qubes/Install): 
+## 1. [إنشاء مكنه إفتراضي للتطبيقات علي وونكس (Whonix AppVMs)](https://www.whonix.org/wiki/Qubes/Install):
 
 + بإستخدام قالب مكن وونكس الإفتراضي , إنشيء مكنتين كما التالي :
 
@@ -15,14 +17,14 @@
 
   - المكنه الأخري سوف تُستخدم للخادم, سيُشار إليها بـ`monerod-ws`. سيتم إختيار `sys-whonix` ل `NetVM`.
 
-## 2. في مكنه تطبيق `monerod-ws`: 
+## 2. في مكنه تطبيق `monerod-ws`:
 
 + تنزيل وتطبيق وتسطيب برنامج مونيرو.
 
 ```
 user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "https://getmonero.org/downloads/hashes.txt"
 user@host:~$ gpg --recv-keys BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9
-user@host:~$ gpg --verify hashes.txt 
+user@host:~$ gpg --verify hashes.txt
 gpg: Signature made Wed 01 Nov 2017 10:01:41 AM UTC
 gpg:                using RSA key 0x55432DF31CCD4FCD
 gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
