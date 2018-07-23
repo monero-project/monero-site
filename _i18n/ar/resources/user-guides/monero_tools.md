@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # أدوات مونيرو
 
 هذه الأدوات يُمكن إستخدامها لجمع المعلومات حول شبكه مونيرو أو بيانات مُعاملاتك في سلسله الكتل.

@@ -1,3 +1,5 @@
+{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="true" version=page.version %}
 # إختيار حقل (تجمّع للتعدين)
 
 هُناك العديد من الحقول يمكنك الإختيار منها , قائمه بالحقول المتاحه موجوده بـ [moneropools.com](https://moneropools.com).
@@ -6,13 +8,13 @@
 # إختيار برنامج تعدين لوحده المعالجه المركزيه (CPU)
 
 تماماً كحقول التعدين هُناك العديد من برامج التعدين. يجب عليك إختيار المُناسب للجهاز الذي تريد التعدين عليه. هذا الدليل سيُغطي التعدين عن طريق وحده المعالجه المركزيه فقط, وسنقوم بإستخدام برنامج
-[xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). من البدائل برنامج 
-[wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) و برنامج 
+[xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). من البدائل برنامج
+[wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) و برنامج
 [sgminer-gm](https://github.com/genesismining/sgminer-gm). إعدادات هذه البرامج تختلف قليلاً ولن يتم تغطيتها في هذا الدليل.
 
 ## لأنظمه ويندوز
 
-إذا كنت تستخدم نظام ويندوز يوفر مطور برنامج (xmr-stak-cpu) ملفات التنزيل علي 
+إذا كنت تستخدم نظام ويندوز يوفر مطور برنامج (xmr-stak-cpu) ملفات التنزيل علي
 [GitHub release page](https://github.com/fireice-uk/xmr-stak-cpu/releases).
 
 حمّل `xmr-stak-cpu-win64.zip` وفك ضغطه في مكان سهل الوصول إليه.
@@ -44,7 +46,7 @@
 
 ![image1](png/mine_to_pool/1.png)
 
-إفتح `config.txt` وقم *بتبديل* سطرين `"cpu_threads_conf"`بالنص الذي قمت بنسخه, سيبدو كذلك بعدها : 
+إفتح `config.txt` وقم *بتبديل* سطرين `"cpu_threads_conf"`بالنص الذي قمت بنسخه, سيبدو كذلك بعدها :
 
 ![image2](png/mine_to_pool/2.png)
 
@@ -62,7 +64,7 @@
 
 ![image4](png/mine_to_pool/4.png)
 
-بعض الحقول تسمح لك بمتابعه قوه التعدين الخاصه بعنوانك عن طريق لصق عنوانك في موقعهم. يمكنك أيضاً متابعه قوه التعدين الخاصه بك عن طريق ضغط مفتاح `h` 
+بعض الحقول تسمح لك بمتابعه قوه التعدين الخاصه بعنوانك عن طريق لصق عنوانك في موقعهم. يمكنك أيضاً متابعه قوه التعدين الخاصه بك عن طريق ضغط مفتاح `h`
 
 # ضبط برنامج التعدين
 
