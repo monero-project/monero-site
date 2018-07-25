@@ -95,13 +95,16 @@
     - name: ترجمه الموقع إلي الفرنسيه والبولنديه
       date: 2018-04-24
       status: completed
+    - name: الإصدار الأول لمشروع كوفري
+      date: 2018-08-01
+      status: completed
     - name: إعاده تصميم نظام التمويل بالمنتدي
       date:
       status: ongoing
-    - name: نظام "مدي التأكيد" أكثر كفأً لمعاملات الحقل السري لتقليل حجم المعاملات
+    - name: Implementation of BulletProofs instead of RingCT to reduce transaction sizes
       date:
-      status: upcoming
-    - name: الإصدار الأول لمشروع كوفري
+      status: ongoing
+    - name: Kovri beta release
       date:
       status: upcoming
 - year: 2019

@@ -98,13 +98,16 @@
     - name: Support dla portfeli Ledger Hardware
       date: 2018-06-04
       status: completed
+    - name: Wypuszczenie systemu Kovri Alpha
+      date: 2018-08-01
+      status: completed
     - name: Zmiana wyglądu Forumowego Systemu Finansowania
       date:
       status: ongoing
-    - name: Efektywniejsze dowody zasięgu dla RingCT w celu zmniejszenia rozmiarów transakcji
+    - name: Implementation of BulletProofs instead of RingCT w celu zmniejszenia rozmiarów transakcji
       date:
-      status: upcoming
-    - name: Wypuszczenie systemu Kovri Alpha
+      status: ongoing
+    - name: Wypuszczenie systemu Kovri Beta
       date:
       status: upcoming
 - year: 2019

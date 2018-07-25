@@ -98,13 +98,16 @@
     - name: Ledger Hardware Wallets Support
       date: 2018-06-04
       status: completed
+    - name: Kovri alpha release
+      date: 2018-08-01
+      status: completed
     - name: Forum Funding System redesign
       date:
       status: ongoing
-    - name: More efficient range proofs for RingCT to reduce transaction sizes
+    - name: Implementation of BulletProofs instead of RingCT to reduce transaction sizes
       date:
-      status: upcoming
-    - name: Kovri alpha release
+      status: ongoing
+    - name: Kovri beta release
       date:
       status: upcoming
 - year: 2019

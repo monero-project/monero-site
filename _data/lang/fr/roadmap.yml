@@ -98,13 +98,16 @@
     - name: Support des portefeuilles matériel Ledger
       date: 2018-06-04
       status: completed
+    - name: Version alpha de Kovri
+      date: 2018-08-01
+      status: completed
     - name: Refonte du Forum Funding System (FFS)
       date:
       status: ongoing
-    - name: Preuves à divulgation nulle de connaissance plus efficaces pour les transactions confidentielles de cercle (RingCT) afin de réduire la taille des transactions
+    - name: Mise en place des *BulletProofs* à la place des transactions confidentielles de cercle (RingCT) afin de réduire la taille des transactions
       date:
-      status: upcoming
-    - name: Version alpha de Kovri
+      status: ongoing
+    - name: Version beta de Kovri
       date:
       status: upcoming
 - year: 2019
