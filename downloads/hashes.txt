@@ -1,7 +1,7 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-This GPG-signed message exists to confirm the SHA256 sums on Monero CLI binaries.
+This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
@@ -14,20 +14,20 @@ monero-linux-x86-v0.12.3.0.tar.bz2, 41d68f66a43098754de0d2ead0eaeb125fc7eb05ecf3
 monero-linux-armv7-v0.12.3.0.tar.bz2, 839bddb01214acb8f7bc12181b206e1e8d99314337addef7ba850b15c32dc685
 monero-linux-armv8-v0.12.3.0.tar.bz2, a6e994dc9fcec7259b656752a6fc0f9686bad47da9deec0f50398718cd9b9be8
 
-monero-gui-win-x64-v0.12.2.0.zip, 3ec0d58db79bbdffc7b8f5eaf175ab412f55260325fd7af40504c6e223868de9
-monero-gui-mac-x64-v0.12.2.0.tar.bz2, 298ff610d3c18afe1ae78691fa995d7f0e0ab39cd768de3ce6616e4678ee57b8
-monero-gui-linux-x64-v0.12.2.0.tar.bz2, 9fb90501d9a86b74d7bb88936dfddba0de9eabb8e0a7fe61f3e45fddfb02798a
-monero-gui-linux-x86-v0.12.2.0.tar.bz2, 79975f5fd8b089cd42af9e9426ba559ea7fdd5eebd76d117946c038692abf0f0
+monero-gui-linux-x64-v0.12.3.0.tar.bz2, dcf0a103589b8e71cdb8298dec96610f9f50b25e8f48afef5186d4c460a4ecae
+monero-gui-linux-x86-v0.12.3.0.tar.bz2, 6858519657add070aeedb03a22d4661ec1b868acdd0b3437fe45e6b640ea4e3b
+monero-gui-mac-x64-v0.12.3.0.tar.bz2, 90a9fa02e7bcef653b034f8a0365f16ec96cd553791546df2200a3c2591d5104
+monero-gui-win-x64-v0.12.3.0.zip, 947efb72418d9ee60ccb0a2afa1f85553fa6a777a0a4e0f89f353592c84e00dc
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAltGFLUACgkQVUMt8xzN
-T80HcAf9FhqN/xEKjRKmQFiP64NSbh8CFPTvP4Fo5BqYxZ39oGCzKYgvKdAc/xeI
-rYrQCwd9cgdsKsr3+6gXbkiVRMdpJwLOY+2XWhjkOK09iOsBOe0iK1TxMVPSddhv
-638U/DO2taUtrvW2xG0hGFWeJnJ7RlmyOi4/9Kxar974xb3g/XXLE3NOIqVRXUK0
-6VLs1XwVEtGVGuG9qnbQav7NqwmkCErTh7H+pMXz5XlOd6FrJXMre9QuyAenAErp
-0tszQbFv3wuEB+REfzYL9/bdB1Ihke0XV6NiTVbyeKOke9hSZlXk4XDWZ6rn8lj9
-K342XXV/YHMoqBm3hOyb8+LWQdBhjg==
-=IPUy
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAltaKPIACgkQVUMt8xzN
+T80sXggAwlH8iMaNdSs7sG/h7lcUJreRcNB+ktkzuzJ/lQrmRiah2pzC7tFuU6Ng
+V8WKBtsAdRxgCSaRY1KCXrw2B/H6bwpUnGdeIyTrT0XXXgdKcG16Gol44P9hqSN8
+sOiWZpeGL6SqYFZ7r2CvA7UXkWWdDnWamsSc6K28aX/zA+JGBKT4C6+OKwmT09Ae
+bLDMiAy0vibP79WA2gJ9FgCI7F0tzI+04WYUh/TSxZtvV0OqvxLY6UfNRdhnvcjt
+qQimJYHwCgUNnYXWGehecOVs7mGyvgrWw4Wr4x+qB32cOuMAsklquazIt/q0B6u5
+SYoWfV7pXZSZijVd9VLbKZ+JcLhDRQ==
+=kxN3
 -----END PGP SIGNATURE-----
