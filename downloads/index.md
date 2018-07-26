@@ -69,7 +69,7 @@ permalink: /downloads/index.html
                     {% elsif data_downloads.id == "mobilelight" %}
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a>{% t downloads.mobilelight3 %}</p>
+                                <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a> {% t downloads.mobilelight3 %}</p>
                             </div>
                         </div>
                         <div class="row center-xs">
