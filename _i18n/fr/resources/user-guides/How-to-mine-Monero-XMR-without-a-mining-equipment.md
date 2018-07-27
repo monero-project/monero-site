@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% assign version = '1.1.1' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Comment miner Monero (XMR) sans matériel d'extraction minière ?
 
@@ -34,12 +34,11 @@ Le choix du pool joue un rôle important dans le montant final de cryptomonnaie
 que vous minerez. Soyez sûr que le pool que vous avez choisis sera capable de
 supporter une grande puissance de hachage et un grand nombre de shares,
 particulièrement depuis une connexion unique. Vous trouverez une liste de pools
-Monero [Ici] (https://bitcointalk.org/index.php?topic=583449.0).
+Monero [Ici](https://bitcointalk.org/index.php?topic=583449.0).
 
 Notez que vous vous aurez probablement à créer également un compte sur le pool que
 vous aurez choisis. Le pool devrait vous fournir toutes les informations nécessaires.
-Vous pouvez enregistrer votre pool préféré sur [cette page]
-(https://www.nicehash.com/?p=managepools).
+Vous pouvez enregistrer votre pool préféré sur [cette page](https://www.nicehash.com/?p=managepools).
 
 ### **Étape 4 :** Passer une nouvelle commande et commencer à miner
 
