@@ -51,7 +51,7 @@ permalink: /resources/research-lab/index.html
                     <input id="tab-four" type="checkbox" name="tabs" class="accordion">
                     <label for="tab-four" class="accordion">MRL-0004: {% t research-lab.mrl4 %}</label>
                     <div class="tab-content">
-                        <p><strong>{% t research-lab.abstract %}:</strong>{% t research-lab.mrl4_abstract %}
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl4_abstract %}
                             <br>
                             <br>
                             <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0004.pdf">{% t research-lab.read-paper %}</a></p>
@@ -61,10 +61,20 @@ permalink: /resources/research-lab/index.html
                     <input id="tab-five" type="checkbox" name="tabs" class="accordion">
                     <label for="tab-five" class="accordion">MRL-0005: {% t research-lab.mrl5 %}</label>
                     <div class="tab-content">
-                        <p><strong>{% t research-lab.abstract %}:</strong>{% t research-lab.mrl5_abstract %}
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl5_abstract %}
                             <br>
                             <br>
-                            <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank" rel="noreferrer noopener">{% t research-lab.mrl5_abstract %}</a></p>
+                            <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank" rel="noreferrer noopener">{% t research-lab.read-paper %}</a></p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-sixth" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-sixth" class="accordion">MRL-0006: {% t research-lab.mrl6 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl6_abstract %}
+                            <br>
+                            <br>
+                            <a href="https://lab.getmonero.org/pubs/MRL-0006.pdf" target="_blank" rel="noreferrer noopener">{% t research-lab.read-paper %}</a></p>
                     </div>
                 </div>
             </div>
