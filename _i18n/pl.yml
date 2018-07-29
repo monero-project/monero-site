@@ -175,8 +175,8 @@ downloads:
   blockchain3: Jednak synchronizacja od zera przeważnie jest dużo szybsza i zajmuje dużo mniej pamięci RAM (importowanie jest bardzo zachłanne).
   hardware1: Społeczność Monero ufundowała niedawno
   hardware2: Dedykowany Portfel Sprzętowy
-  hardware3: który jest w trakcie opracowania. Z kolei Ledger pracuje nad
-  hardware4: zintegrowaniem Monero z jego portfelem sprzętowym.
+  hardware3: który jest w trakcie opracowania. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
+  hardware4: integrated Monero into their hardware wallets.
   mobilelight1: Poniżej znajdują się portfele mobilne i lżejsze, uważane za bezpieczne przez zaufanych członków społeczności. Jeśli jakiś portfel nie znajduje się na liście, poproś społeczność o sprawdzenie go. Przejdź do strony z naszymi
   mobilelight2: Hangoutami
   mobilelight3:  i zobacz, gdzie można nas spotkać.

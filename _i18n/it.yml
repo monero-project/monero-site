@@ -175,8 +175,8 @@ downloads:
   blockchain3: E' tipicamente molto più veloce sincronizzare da zero e richiede anche molta meno RAM (la funzione "import" richiede molte risorse).
   hardware1: La community di Monero ha recentemente finanziato un
   hardware2: Hardware Wallet Dedicato
-  hardware3: che è in fase di progettazione. in più, Ledger sta lavorando a
-  hardware4: integrare Monero nei loro hardware wallet.
+  hardware3: che è in fase di progettazione. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
+  hardware4: integrated Monero into their hardware wallets.
   mobilelight1: I seguenti sono mobile o light wallet (portafogli) che sono considerati sicuri da membri fidati della community. Se esiste un wallet non listato qui, puoi chiedere alla community di controllarlo. Vai alla nostra
   mobilelight2: Lista canali
   mobilelight3:  per vedere dove trovarci.

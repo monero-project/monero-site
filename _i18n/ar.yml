@@ -173,8 +173,8 @@ downloads:
   blockchain3: في الغالب الأسرع هو المزامنه من الصفر, وأيضاً يحتاج ذاكره عشوائيه أقل بكثير ( الإستيراد جشع جداً )
   hardware1: مجتمع مونيرو قام بتمويل
   hardware2: محفظه صلبه مخصصه
-  hardware3: مازال العمل عليها قائماً. وأيضاً شركه ليدجر قد طورت المحفظه الصلبه الخاصه بهم
-  hardware4: ويمكنك الأن إستخدام مونيرو علي محفظه ليدجر
+  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
+  hardware4: integrated Monero into their hardware wallets.
   mobilelight1: محافظ الهاتف او المحافظ الخفيفه التاليه تعتبر آمنه بواسطه أعضاء موثوق بهم من المجتمع. إذا كان هناك محفظه ليست معروضه هنا يمكنك طلب فحصها من قبل المجتمع. إذهب إلي
   mobilelight2:   الملتقي
   mobilelight3:  للتواصل معنا
