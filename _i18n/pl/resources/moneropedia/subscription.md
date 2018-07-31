@@ -12,7 +12,7 @@ Subskrypcja jest plikiem, który zawiera listę hostów `.i2p` sparowanych z odp
 
 ### Szczegółowe informacje
 
-Podobnie do tego, jak [plik hostów](https://en.wikipedia.org/wiki/etc/hosts) łączy nazwę hostu internetowego z konkretnym adresem, subskrypcja przypisuje adres `.i2p` do @adresu-base64 poprzez użycie następującego formatu (bez spacji): `host=address`
+Podobnie do tego, jak [plik hostów](https://en.wikipedia.org/wiki/Hosts_(file)) łączy nazwę hostu internetowego z konkretnym adresem, subskrypcja przypisuje adres `.i2p` do @adresu-base64 poprzez użycie następującego formatu (bez spacji): `host=address`
 
 Dokładniej, subskrypcja paruje @lokalnie-unikalny-host z @adresem-base64.
 
