@@ -92,7 +92,7 @@ Note that aforementioned text will be appended to the path of `monero-wallet-cli
 
 Where the full path is, intuitively, the actual path on your Mac OS X.
 
-7. The CLI will, after executing aforementioned command, prompt your for a password. Make sure to set a strong password and confirm it thereafter.
+7. The CLI will, after executing aforementioned command, prompt you for a password. Make sure to set a strong password and confirm it thereafter.
 
 8. The Ledger will ask whether you want to export the private view key or not. First and foremost, your funds cannot be compromised with merely the private view key. Exporting the private view key enables the client (on the computer - Monero v0.12.2.0) to scan blocks looking for transactions that belong to your wallet / address. If this option is not utilized, the device (Ledger) will scan blocks, which will be significantly slower. There is, however, one caveat. That is, if your system gets compromised, the adversary will potentially be able to compromise your private view key as well, which is detrimental to privacy. This is virtually impossible when the private view key is not exported.
 
