@@ -314,7 +314,7 @@ mining:
   software_para: Veuillez noter que certains mineurs pourraient soustraire des frais de développement.
 
 using:
-  translated: "no"
+  translated: "yes"
   intro: Les transactions sont simples avec Monero. Cette page est conçue pour permettre aux utilisateurs de les réaliser.
   learn: 1. Apprendre
   learn_para1: Monero est une cryptomonnaie sécurisée, confidentielle et intraçable. Les développeurs et la communauté s'engagent à protéger ces valeurs. Pour en savoir plus, lisez la page
