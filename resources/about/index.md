@@ -4,6 +4,7 @@ title: titles.about
 permalink: /resources/about/index.html
 ---
 
+{% t global.lang_tag %}
 <div class="about-monero">
     <section class="container">
         <div class="row">

@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Encryption"
 tags: ["kovri"]
 terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting"]

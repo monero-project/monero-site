@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Książka adresowa"
 tags: ["kovri"]
-terms: ["książka-adresowa", "książce-adresowej", "książki-adresowej"]
+terms: ["Address-Book", "książka-adresowa", "książce-adresowej", "książki-adresowej", "książkę-adresową", "książki-adresowe"]
 summary: "Pozwala na odwiedzanie stron/serwisów w sieci I2P w domenie .i2p."
 ---
 
@@ -14,7 +13,7 @@ Bez książki adresowej musiałbyś używać @adresu-base32 za każdą wizytą n
 
 ### Szczegółowe informacje
 
-Ponieważ [System Nazywania Domen](https://en.wikipedia.org/wiki/DNS) nie istnieje w sieci I2P, @Kovri również **nie używa** Systemu Nazywania Domen ani żadnego rodzaju rozwiązania @zasadniczego-unikalnego-hostu. Zamiast tego, Kovri łączy @lokalnie-unikalny-host z @adresem-64 w @subskrypcji. Po wypełnieniu książki adresowej subskrypcją, możesz zamienić daną stronę o domenie `.i2p` na łatwą do użycia sieć I2P.
+Ponieważ [System Nazywania Domen](https://en.wikipedia.org/wiki/DNS) nie istnieje w sieci I2P, @Kovri również **nie używa** Systemu Nazywania Domen ani żadnego rodzaju rozwiązania @zasadniczego-unikalnego-hostu. Zamiast tego, Kovri łączy @lokalnie-unikalny-host z @adresem-base64 w @subskrypcji. Po wypełnieniu książki adresowej subskrypcją, możesz zamienić daną stronę o domenie `.i2p` na łatwą do użycia sieć I2P.
 
 ### Tworzenie książki adresowej
 

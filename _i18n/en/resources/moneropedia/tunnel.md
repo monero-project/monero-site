@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Tunnel"
 tags: ["kovri"]
 terms: ["Tunnel", "Tunnels"]

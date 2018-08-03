@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Bootstrap-node"
 terms: ["bootstrap-node", "bootstrap-nodes"]
 summary: "A node to which a daemon connects to give immediate usability to wallets while syncing"

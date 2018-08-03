@@ -1,13 +1,12 @@
 ---
-layout: moneropedia
 entry: "Kod mnemoniczny"
-terms: ["kod-mnemoniczny", "kodzie-mnemonicznym", "kodu-mnemonicznego"]
+terms: ["mnemonic-seed", "mnemonic", "kod-mnemoniczny", "kodzie-mnemonicznym", "kodu-mnemonicznego"]
 summary: "Ciąg 13 lub 25 słów używany do tworzenia kopii zapasowej konta Monero, dostępny w wielu językach."
 ---
 
 ### Podstawy
 
-{{ page.summary | capitalize }}. Ten 25-słowny ciąg (13-słowny w przypadku MyMonero) zawiera wszystkie informacje potrzebne do wglądu i wydawania funduszy z @konta Monero.
+Ciąg 13 lub 25 słów używany do tworzenia kopii zapasowej konta Monero, dostępny w wielu językach. Ten 25-słowny ciąg (13-słowny w przypadku MyMonero) zawiera wszystkie informacje potrzebne do wglądu i wydawania funduszy z @konta Monero.
 
 ### Szczegółowe informacje
 
@@ -17,4 +16,4 @@ Przechowując 25-słowny klucz mnemoniczny w bezpiecznym miejscu, chronisz kopi�
 
 Zalecane jest nieprzechowywanie więcej, niż jesteś gotowy stracić, w "gorącym portfelu", to znaczy w portfelu podłączonym do internetu lub załadowanym na jakimkolwiek urządzeniu, które kiedyś było lub może być w przyszłości podłączone do internetu lub innego niezaufanego źródła.
 
-Możesz bezpiecznie przechowywać swoje Monero w "zimnym" lub @papierowym-portfelu. 
+Możesz bezpiecznie przechowywać swoje Monero w "zimnym" lub @papierowym-portfelu.

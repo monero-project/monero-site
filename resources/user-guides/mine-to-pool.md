@@ -7,4 +7,5 @@ mainVersion:
   - "1"
   - "0"
 ---
+{% t global.lang_tag %}
 {% tf resources/user-guides/mine-to-pool.md %}

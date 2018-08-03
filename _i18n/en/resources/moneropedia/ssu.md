@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "SSU"
 tags: ["kovri"]
 terms: ["SSU"]

@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Lokalnie unikalny host"
 tags: ["kovri"]
-terms: ["lokalnie-unikalny-host", "lokalnie-unikalnego-hosta", "lokalnie-unikalnym-hostem", "lokalnie-unikalnym-hoście"]
+terms: ["Locally-unique-host", "lokalnie-unikalny-host", "lokalnie-unikalnego-hosta", "lokalnie-unikalnym-hostem", "lokalnie-unikalnym-hoście", "lokalnym-unikalnym-hostem", "lokalnego-unikalnego-hosta"]
 summary: "Host zdefiniowany i ustalony wyłącznie przez ciebie."
 ---
 

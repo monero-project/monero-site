@@ -1,13 +1,12 @@
 ---
-layout: moneropedia
 entry: "Klucz wydawania"
-terms: ["klucz-wydawania", "klucza-wydawania", "kluczem-wydawania", "kluczowi-wydawania"]
+terms: ["spend-key", "spend-keys", "klucz-wydawania", "klucza-wydawania", "kluczem-wydawania", "kluczowi-wydawania"]
 summary: "Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, które posiada każde konto. *Prywatny* klucz wydawania służy do wydawania środków na koncie."
 ---
 
 ### Podstawy
 
-{{ page.summary | capitalize }}.
+Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, które posiada każde konto. *Prywatny* klucz wydawania służy do wydawania środków na koncie.
 
 ### Szczegółowe informacje
 

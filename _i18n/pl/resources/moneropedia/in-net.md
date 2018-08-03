@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "In-net"
 tags: ["kovri"]
 terms: ["In-net"]

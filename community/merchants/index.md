@@ -3,6 +3,7 @@ layout: custom
 title: titles.merchants
 permalink: /community/merchants/index.html
 ---
+{% t global.lang_tag %}
 <div class="text-center container description">
     <p>{% t merchants.intro1 %}<a href="https://github.com/monero-project/monero-site/issues"> {% t merchants.intro2 %}</a></p>
 </div>

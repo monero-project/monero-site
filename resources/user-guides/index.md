@@ -2,6 +2,7 @@
 layout: custom
 title: titles.userguides
 ---
+{% t global.lang_tag %}
 <div class="guides">
     <section class="container">
         <div class="row">

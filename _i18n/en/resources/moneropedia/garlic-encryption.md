@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Garlic-Encryption"
 tags: ["kovri"]
 terms: ["Garlic-Encryption", "Layered-Encryption"]

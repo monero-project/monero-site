@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Locally-unique host"
 tags: ["kovri"]
 terms: ["Locally-unique-host"]

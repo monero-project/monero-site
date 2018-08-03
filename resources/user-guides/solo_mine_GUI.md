@@ -8,4 +8,5 @@ mainVersion:
   - "0"
 ---
 
+{% t global.lang_tag %}
 {% tf resources/user-guides/solo_mine_GUI.md %}

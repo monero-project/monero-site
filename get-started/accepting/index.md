@@ -3,6 +3,7 @@ layout: custom
 title: titles.accepting
 permalink: /get-started/accepting/index.html
 ---
+{% t global.lang_tag %}
 <section class="container">
     <div class="row">
     <!-- left two-thirds block-->

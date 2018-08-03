@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Scalability"
 terms: ["scalability"]
 summary: "Growth potential of Monero, resources required, and methods of increasing efficiency"

@@ -1,7 +1,6 @@
 ---
-layout: moneropedia
 entry: "Portfel"
-terms: ["portfel", "portfela"]
+terms: ["wallet", "wallets", "portfel", "portfela"]
 summary: "Portfel przechowuje informacje niezbędne do wysyłania i otrzymywanie Monero."
 ---
 

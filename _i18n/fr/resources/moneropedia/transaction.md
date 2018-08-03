@@ -1,13 +1,13 @@
 ---
-layout: moneropedia
 entry: "Transactions"
 terms: ["transaction", "transactions"]
 summary: "a cryptographically signed container that details the transfer of Monero to a recipient (or recipients)"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
-{{ page.summary | capitalize }}.
+A cryptographically signed container that details the transfer of Monero to a recipient (or recipients).
 
 The parameters of a transaction contain one or more recipient addresses with corresponding amounts of funds and a @ring-size parameter that specifies the number outputs bound to the transaction. The more outputs that are used, a higher degree of obfuscation is possible, but that comes with a cost. Since a transaction gets larger with more outputs, the transaction fee will be higher.
 

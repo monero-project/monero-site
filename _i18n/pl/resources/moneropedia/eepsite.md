@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Eepsite"
 tags: ["kovri"]
-terms: ["Eepsite", "ukryty-serwis", "strona-czosnkowa", "serwis-czosnkowy"]
+terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service", "ukryty-serwis", "strona-czosnkowa", "serwis-czosnkowy", "serwisu-czosnkowego"]
 summary: "Strona lub serwis internetowy zamieszczony w sieci I2P."
 ---
 

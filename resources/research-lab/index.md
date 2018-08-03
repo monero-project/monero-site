@@ -3,6 +3,7 @@ layout: custom
 title: titles.researchlab
 permalink: /resources/research-lab/index.html
 ---
+{% t global.lang_tag %}
 <div class="container description">
     <p>{% t research-lab.intro %}</p>
 </div>

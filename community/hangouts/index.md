@@ -4,6 +4,7 @@ title: titles.hangouts
 permalink: /community/hangouts/index.html
 ---
 
+{% t global.lang_tag %}
 <div class="text-center container description">
     <p>{% t hangouts.intro %}</p>
 </div>

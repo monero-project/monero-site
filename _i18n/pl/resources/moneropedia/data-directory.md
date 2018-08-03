@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Katalog danych"
 tags: ["kovri"]
-terms: ["katalog-danych", "katalogu-danych", "katalogowi-danych"]
+terms: ["Data-Directory", "katalog-danych", "katalogu-danych", "katalogowi-danych"]
 summary: "Miejsce przechowywania kluczowych danych Kovri w czasie jego pracy."
 ---
 

@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Lease-Set"
 tags: ["kovri"]
 terms: ["LeaseSet", "LeaseSets"]
 summary: "Contains all currently authorized Leases for a particular I2P Destination"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 A Lease-Set contains a set of authorized @leases (and other related information) for a particular @destination.

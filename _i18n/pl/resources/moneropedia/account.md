@@ -1,7 +1,6 @@
 ---
-layout: moneropedia
 entry: "Konto"
-terms: ["konto", "konta"]
+terms: ["account", "accounts", "wallet", "wallets", "konto", "konta", "portfel", "portfela"]
 summary: "Podobnie jak konto bankowe, konto Monero zawiera wszystkie twoje płatności wychodzące i przychodzące."
 ---
 
@@ -17,13 +16,13 @@ Kluczowa różnica między tradycyjną walutą elektroniczną a Monero polega na
 
 Nie istnieją żadne koszta związane z założeniem konta Monero ani żadne opłaty, z wyjątkiem opłat za pojedyncze @transakcje, które trafiają do @górników.
 
-Oznacza to, że każdy może w łatwy sposób założyć konto Monero dla siebie, jak i konto łączone z partnerem lub indywidualne dla dziecka. Podobnie firma może założyć osobne konta dla każdego oddziału lub grupy pracowniczej. Ponieważ @opłaty za transakcje są dość niskie, przekazywanie środków między kontami nie jest drogie.
+Oznacza to, że każdy może w łatwy sposób założyć konto Monero dla siebie, jak i konto łączone z partnerem lub indywidualne dla dziecka. Podobnie firma może założyć osobne konta dla każdego oddziału lub grupy pracowniczej. Ponieważ opłaty za @transakcje są dość niskie, przekazywanie środków między kontami nie jest drogie.
 
 ### Klucze kryptograficzne
 
 Monero opiera się głównie na zasadzie kryptograficznej znanej jako *kryptografia kluczy publicznych i prywatnych* lub *kryptografia asymetryczna*, która została dokładnie opisana w [tym artykule Wikipedii](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
-Twoje konto bazuje na dwóch kluczach: kluczu wydawania i kluczu widoczności. @Klucz-wydawania jest jedynym kluczem wymaganym do wydawania twoich środków Monero, podczas gdy @klucz-widoczności pozwala na ujawnienie twoich @transakcji osobom trzecim, na przykład dla celów kontrolnych czy rachunkowych. Klucze te pełnią również istotną rolę w @prywatności-transakcji.
+Twoje konto bazuje na dwóch kluczach: kluczu wydawania i kluczu widoczności. @Klucz-wydawania jest jedynym kluczem wymaganym do wydawania twoich środków Monero, podczas gdy @klucz-widoczności pozwala na ujawnienie twoich @transakcji osobom trzecim, na przykład dla celów kontrolnych czy rachunkowych. Klucze te pełnią również istotną rolę w prywatności @transakcji.
 
 Klucze prywatne w obu przypadkach muszą być chronione przez ciebie, aby utrzymać prywatność twojego konta. Z drugiej storny, klucze publiczne, jak sama nazwa wskazuje, mogą zostać ujawnione i tworzą część twojego adresu konta Monero. Różnica pomiędzy kluczem prywatnym a publicznym polega na tym, że ktoś może wysłać ci wiadomość zaszyfrowaną jednym z twoich publicznych kluczy, a jedynie ty możesz ją odszyfrować przy użyciu twoich kluczy prywatnych.
 
@@ -52,7 +51,7 @@ Your wallet has been generated.
 To start synchronizing with the daemon, use "refresh" command.
 Use "help" command to see the list of available commands.
 Always use "exit" command when closing monero-wallet-cli to save your
-current session's state. Otherwise, you might need to synchronize 
+current session's state. Otherwise, you might need to synchronize
 your wallet again (your wallet keys are NOT at risk in any case).
 
 PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.

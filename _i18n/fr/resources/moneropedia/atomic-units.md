@@ -1,10 +1,10 @@
 ---
-layout: moneropedia
 entry: "Atomic Units"
 terms: ["atomic-units", "atomic-unit"]
 summary: "Atomic Units refer to the smallest fraction of 1 XMR."
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 Atomic Units refer to the smallest fraction of 1 XMR.

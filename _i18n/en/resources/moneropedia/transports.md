@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Transports"
 tags: ["kovri"]
 terms: ["Transports", "Transport"]

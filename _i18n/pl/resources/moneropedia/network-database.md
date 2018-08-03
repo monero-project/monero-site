@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Baza danych sieci"
 tags: ["kovri"]
-terms: ["baza-danych-sieci", "bazie-danych-sieci", "bazą-danych-sieci"]
+terms: ["Network-Database", "baza-danych-sieci", "bazie-danych-sieci", "bazą-danych-sieci", "bazy-danych-sieci"]
 summary: "Rozproszona baza danych zawierająca potrzebne informacje na temat routera, aby sieć pozostała nienaruszona."
 ---
 

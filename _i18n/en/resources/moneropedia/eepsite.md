@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Eepsite"
 tags: ["kovri"]
 terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service"]

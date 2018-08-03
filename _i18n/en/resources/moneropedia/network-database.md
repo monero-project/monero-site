@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Network Database"
 tags: ["kovri"]
 terms: ["Network-Database"]

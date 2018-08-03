@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Data Directory"
 tags: ["kovri"]
 terms: ["Data-Directory"]
 summary: "Where essential kovri data for runtime is stored"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 Depending on your OS, @Kovri currently stores all run-time data in the following directory:

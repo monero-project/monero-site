@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Message"
 tags: ["kovri"]
 terms: ["Message", "Messages"]
 summary: "The mechanisms in which information travels within I2P"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 *Messages* (which exist on top of the @transports layer), contain varying types of information that are needed for the network but, most importantly, everything you see, do, send, or receive, will come and go in the form of *messages*.

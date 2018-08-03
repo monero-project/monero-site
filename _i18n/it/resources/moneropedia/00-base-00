@@ -1,10 +1,10 @@
 ---
-layout: moneropedia
 entry: ""
 terms: ["", ""]
 summary: ""
 ---
 
-### Le Basi
+{% include untranslated.html %}
+### The Basics
 
-{{ page.summary | capitalize }}.
+<Re-write summary here>

@@ -1,5 +1,4 @@
 ---
-layout: moneropedia
 entry: "Ring Size"
 terms: ["ring-size"]
 summary: "total number of possible signers in a ring signature"

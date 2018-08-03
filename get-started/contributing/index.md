@@ -3,6 +3,7 @@ layout: custom
 title: titles.contributing
 permalink: /get-started/contributing/index.html
 ---
+{% t global.lang_tag %}
 <div class="text-center container description">
     <p>{% t contributing.intro %}</p>
 </div>

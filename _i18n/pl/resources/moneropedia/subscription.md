@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Subskrypcja"
 tags: ["kovri"]
-terms: ["subskrypcja", "subskrypcji", "subskrypcją", "subskrypcję"]
+terms: ["Subscription", "subskrypcja", "subskrypcji", "subskrypcją", "subskrypcję", "subsckrypcji"]
 summary: "Plik używany przez książkę adresową zawierający hosty I2P sparowane z węzłami docelowymi I2P."
 ---
 

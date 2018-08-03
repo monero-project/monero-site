@@ -4,6 +4,7 @@ title: titles.themoneroproject
 permalink: /the-monero-project/index.html
 ---
 
+{% t global.lang_tag %}
 <div class="site-wrap">
     <section class="container">
         <div class="row">

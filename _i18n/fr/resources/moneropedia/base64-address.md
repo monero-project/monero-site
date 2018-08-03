@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Base64 address"
 tags: ["kovri"]
 terms: ["Base64-address", "Base64-addresses"]
 summary: "Base64 encoded I2P destination"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 A @base64-address is a 516-character [Base64 encoded](https://en.wikipedia.org/wiki/Base64) @I2P @destination. @base64-addresses are primarily used for @address-book, @jump-service, and also internally.

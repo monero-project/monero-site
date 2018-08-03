@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Kovri"
 tags: ["kovri"]
 terms: ["Kovri"]
 summary: "Monero's C++ router implementation of the I2P network"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 [Kovri](https://github.com/monero-project/kovri/) is a C++ implementation of the @I2P network. @Kovri is currently in heavy, active development and not yet integrated with Monero. When Kovri is integrated into your Monero @node, your transactions will be more secure than ever before.

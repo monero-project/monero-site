@@ -4,6 +4,7 @@ title: titles.downloads
 permalink: /downloads/index.html
 ---
 
+{% t global.lang_tag %}
 <div class="downloads">
     <div class="container description">
     <p>{% t downloads.intro1 %} <a href="https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/">{% t downloads.intro2 %}</a> {% t downloads.intro3 %}</p>

@@ -1,8 +1,7 @@
 ---
-layout: moneropedia
 entry: "Tunel"
 tags: ["kovri"]
-terms: ["unel", "unele", "tunelem", "tunelowi", "tunelom", "tunelami"]
+terms: ["Tunnel", "Tunnels", "tunel", "tunele", "tunelem", "tunelowi", "tunelom", "tunelami", "tunelowe", "tunelu"]
 summary: "Jednokierunkowe ścieżki wirtualne, które przekazują wiadomości przez ustaloną sekwencję routerów sieci I2P."
 ---
 
@@ -17,7 +16,7 @@ Każdy peer buduje przynajmniej *dwa* jednokierunkowe tunele: jeden dla  **ruchu
 Za: @Java-I2P:
 
 >
-Wewnątrz sieci I2P wiadomości przekazywane są w jednym kierunku przez wirtualne tunele peerów, które używają jakiegokolwiek dostępnego środka, aby przesłać wiadomość do następnego hopu. Wiadomości dochodzą do @furtki-tunelu, są łączone i/lub dzielone do stałych rozmiarów i następnie przekazywane dalej do następnego hopu w tunelu, który je przetwarza i weryfikuje ich ważność i przesyła dalej aż dotrą do końca tunelu. Punkt końcowy przekazuje złączoną przy furtce wiadomość zgodnie z instrukcjami - do kolejnego routera, do innego tunelu lub lokalnie.
+Wewnątrz sieci I2P wiadomości przekazywane są w jednym kierunku przez wirtualne tunele peerów, które używają jakiegokolwiek dostępnego środka, aby przesłać wiadomość do następnego hopu. Wiadomości dochodzą do furtki @tunelu, są łączone i/lub dzielone do stałych rozmiarów i następnie przekazywane dalej do następnego hopu w tunelu, który je przetwarza i weryfikuje ich ważność i przesyła dalej aż dotrą do końca tunelu. Punkt końcowy przekazuje złączoną przy furtce wiadomość zgodnie z instrukcjami - do kolejnego routera, do innego tunelu lub lokalnie.
 
 >
 Wszystkie tunele działają tak samo, ale mogą być podzielona na dwie grupy: tunele wejścia i tunele wyjścia. Tunele wejścia posiadają niezaufaną furtkę, która przekazuje wiadomości w kierunku twórcy tunelu będącego jego punktem końcowym. W tunelach wyjścia to twórca służy jako furtka przekazująca wiadomości do oddalonego punktu końcowego.

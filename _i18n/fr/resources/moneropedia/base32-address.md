@@ -1,11 +1,11 @@
 ---
-layout: moneropedia
 entry: "Base32 address"
 tags: ["kovri"]
 terms: ["Base32-address", "Base32-addresses"]
 summary: "Base32 encoded hash of a Base64 address"
 ---
 
+{% include untranslated.html %}
 ### The Basics
 
 A Base32 address is a shortened, encoded version of an @I2P address. The Base32 address is the first part in a `.b32.i2p` hostname.

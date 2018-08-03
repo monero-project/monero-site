@@ -1,15 +1,8 @@
 ---
 layout: moneropedia
-entry: "In-net"
-tags: ["kovri"]
-terms: ["In-net"]
-summary: "Within the I2P network"
 ---
 
-### The Basics
+@moneropedia_article
 
-**In-net** is a [colloquial](https://en.wikipedia.org/wiki/Colloquial) term of which describes activities, protocols, or functionality that exist *only* within the @I2P network.
-
-### In-depth information
-
-Example: *in-net download* would be defined as downloading *only* within @I2P.
+{% t global.lang_tag %}
+{% tf resources/moneropedia/in-net.md %}
