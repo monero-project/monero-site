@@ -12,7 +12,7 @@ A subscription is a file which contains a list of `.i2p` hosts paired with their
 
 ### In-depth information
 
-Similar to how a [hosts file](https://en.wikipedia.org/wiki/etc/hosts) can map an internet hostname to a specified address, a subscription matches a `.i2p` address to @base64-address by using the following format (no spaces allowed): `host=address`
+Similar to how a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) can map an internet hostname to a specified address, a subscription matches a `.i2p` address to @base64-address by using the following format (no spaces allowed): `host=address`
 
 More specifically, a subscription pairs a @locally-unique-host to @base64-address.
 

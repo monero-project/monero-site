@@ -14,7 +14,7 @@ A Canonically-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) that w
 
 A Canonically-unique host is defined by remote authoritative sources; usually through [DNS](https://en.wikipedia.org/wiki/DNS). When resolving a peer's hostname, you will most likely use an external source for resolution unless you have the following implemented:
 
-- a database file similar to a [hosts file](https://en.wikipedia.org/wiki/etc/hosts)
+- a database file similar to a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file))
 - an internal-network resolver (which eventually pulls from external sources)
 
 ### Notes

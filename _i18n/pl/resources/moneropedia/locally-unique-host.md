@@ -8,7 +8,7 @@ summary: "Host zdefiniowany i ustalony wyłącznie przez ciebie."
 
 ### Podstawy
 
-Lokalnie unikalny host jest [Pełną, Jendoznaczną Nazwą Domenową](https://en.wikipedia.org/wiki/FQDN) definiowaną przez **ciebie** i ustaloną wyłącznie przez ciebie, podobnie do tego, jak wdrażane są [pliki hosts](https://en.wikipedia.org/wiki/etc/hosts). Nie należy go mylić z @zasadniczym-unikalnym-hostem.
+Lokalnie unikalny host jest [Pełną, Jendoznaczną Nazwą Domenową](https://en.wikipedia.org/wiki/FQDN) definiowaną przez **ciebie** i ustaloną wyłącznie przez ciebie, podobnie do tego, jak wdrażane są [pliki hosts](https://en.wikipedia.org/wiki/Hosts_(file)). Nie należy go mylić z @zasadniczym-unikalnym-hostem.
 
 ### Szczegółowe informacje
 
