@@ -7,6 +7,8 @@
       url: https://www.alfacashier.com/
     - name: Binance
       url: https://www.binance.com/trade.html?symbol=XMR_BTC
+    - name: BITEXBOOK (XMRBTC)
+      url: https://bitexbook.com/trading/xmrbtc
     - name: Bitfinex (XMRUSD, XMRBTC)
       url: https://www.bitfinex.com/
     - name: Bisq; decentralized exchange (previously Bitsquare)
