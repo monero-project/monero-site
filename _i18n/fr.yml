@@ -409,7 +409,7 @@ user-guides:
   purchasing-storing: Acheter et Conserver Monero en toute sécurité
   verify-allos: Vérifier des binaires sur Linux, Mac ou Windows en ligne de commande (avancé)
   verify-windows: Vérifier des binaires sur Windows (Débutant)
-  mine-on-pool: Comment miner sur un pool avec xmr-stak-cpu
+  mine-on-pool: Comment miner sur un pool avec XMRig
   solo-mine: Comment miner en solo avec la GUI
   mine-docker: Miner avec Docker et XMRig
   locked-funds: Comment corriger un blocage de fonds

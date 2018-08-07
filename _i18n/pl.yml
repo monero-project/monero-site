@@ -408,7 +408,7 @@ user-guides:
   purchasing-storing: Bezpieczne kupowanie i przechowywanie Monero
   verify-allos:
   verify-windows:
-  mine-on-pool: Jak wydobywać w zrzeszeniu za pomocą xmr-stak-cpu
+  mine-on-pool: Jak wydobywać w zrzeszeniu za pomocą XMRig
   solo-mine: Jak wydobywać samemu za pomocą Graficznego Interfejsu Użytkownika
   mine-docker: Wydobywanie za pomocą Dockera i XMRig
   locked-funds: Jak odzyskać zablokowane fundusze

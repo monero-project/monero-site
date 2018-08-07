@@ -407,7 +407,7 @@ user-guides:
   purchasing-storing: Securely purchasing and storing Monero
   verify-allos: Verify binaries on Linux, Mac, or Windows command line (advanced)
   verify-windows: Verify binaries on Windows (beginner)
-  mine-on-pool: How to mine on a pool with xmr-stak-cpu
+  mine-on-pool: How to mine on a pool with XMRig
   solo-mine: How to solo mine with the GUI
   mine-docker: Mining with Docker and XMRig
   locked-funds: How to fix locked up funds
