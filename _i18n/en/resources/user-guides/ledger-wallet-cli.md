@@ -159,7 +159,7 @@ Congratulations, you can now use your Ledger Monero wallet in conjunction with t
 
    If the Ledger wallet files are not in the same directory as `monero-wallet-cli`, you ought to open `monero-wallet-cli` with the `--wallet-file /path/to/wallet.keys/file` flag. Alternatively, you can copy the Ledger wallet files to the same directory as `monero-wallet-cli`.
 
-5. If you have any further questions or need assistance, please leave a comment to the orginal [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli) answer.
+5. If you have any further questions or need assistance, please leave a comment to the original [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli) answer.
 
 Author: dEBRUYNE
 Secondary scribe: el00ruobuob
