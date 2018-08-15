@@ -221,7 +221,6 @@ Outputs:
 * *fee* - Integer value of the fee charged for the txn.
 * *tx_hash* - String for the publically searchable transaction hash
 * *tx_key* - String for the transaction key if get_tx_key is true, otherwise, blank string.
-* *amount_keys* - List of strings for the amount keys.
 * *amount* - Amount transferred for the transaction.
 * *tx_blob* - Raw transaction represented as hex string, if get_tx_hex is true.
 * *tx_metadata* - Set of transaction metadata needed to relay this transfer later, if get_tx_metadata is true.
@@ -239,7 +238,6 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
     "fee": 48958481211,
     "tx_hash": "985180f468637bc6d2f72ee054e1e34b8d5097988bb29a2e0cb763e4464db23c",
     "tx_key": "8d62e5637f1fcc9a8904057d6bed6c697618507b193e956f77c31ce662b2ee07",
-    "amount_keys":[],
     "amount": 300000000,
     "tx_blob": "",
     "tx_metadata": "",
