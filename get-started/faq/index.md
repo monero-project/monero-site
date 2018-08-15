@@ -90,6 +90,20 @@ permalink: /get-started/faq/index.html
         <p>{% t faq.a12-3 %}</p>
     </div>
 </div>
+<div class="tab">
+    <input id="tab-thirteen" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-thirteen" class="accordion">{% t faq.q13 %}</label>
+    <div class="tab-content">
+        <p>{% t faq.a13 %}</p>
+    </div>
+</div>
+<div class="tab">
+    <input id="tab-fourteen" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-fourteen" class="accordion">{% t faq.q14 %}</label>
+    <div class="tab-content">
+        <p>{% t faq.a14 %}</p>
+    </div>
+</div>
 
 <div class="untranslated {% t faq.translated %}">
     <p>{% t global.untranslated %} <a class="untranslated-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.</p>

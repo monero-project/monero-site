@@ -293,6 +293,10 @@ faq:
   a12-1: في مونيرو, كل ناتج معامله مربوط بشكل فريد بصوره مفتاح التي لا يمكن إنشاؤها إلا بواسطه المالك لهذا الناتج. صور المفاتيح التي تستخدم أكثر من مره يتم رفضها بواسطه المُعدنين كمعامله مُتكرره ولا يمكن إضافتها في كتله سليمه. عندما يتم إستلام معامله جديده يتحقق المعدنين من أن صوره المفتاح لا توجد بالفعل في معامله سابقه للتأكد من أنها ليست مُعامله مُتكرره.
   a12-2: يمكننا أيضاً معرفه أن كميه المعاملات سليمه علي الرغم من أن قيمه المعاملات المُرسله وناتجها مُشفرين ( مُشفرين لكل الناس عدا المُستلم ). لأن الكميه مُشفره عن طريق التزامات بيدرسن (Pedersen commitments) ما يعني ذلك أنه لا يُوجد مُلاحظ يمكنه معرفه المُدخلات والمُخرجات لكن يمكن عمل عمليات حسابيه علي إلتزامات بيدرسن لتأكيد أنه لم يتم إنشاء أي مونيرو من الهواء .
   a12-3: طالما أن كميه المُخرجات المُشفره التي أنشأتها تُساوي نتيجه جميع المُدخلات التي يتم صرفها ( والتي تحوي مُخرج للمُستلم وآخر وهو الباقي ويعود لك و ايضاً رسوم المعامله وهي غير مشفره) بذلك تكون المعامله صحيحه ولم يتم إصدار أي مونيرو من الهواء. إلتزامات بيدرسن تعني أنه يمكن التأكد من أن مجموع النواتج مُتساوي. لكن القيمه الفرديه لكل عمليه جمع وحدها و المدخلات و المُخرجات وحدها لا يمكن تحديدها.
+  q13: Is Monero magic and protect my privacy no matter what I do ?
+  a13: Monero is not magic. If you use Monero but give your name and address to another party, the other party will not magically forget your name and address. If you give out your secret keys, others will know what you've done. If you get compromised, others will be able to keylog you. If you use a weak password, others will be able to brute force your keys file. If you backup your seed in the cloud, you'll be poorer soon.
+  q14: Is Monero 100% anonymous ?
+  a14: There is no such thing as 100% anonymous. If nothing else, your anonymity set is the set of people using Monero. Some people don't use Monero. Monero may also have bugs. Even if not, ways may exist to infer some information through Monero's privacy layers, either now or later. Attacks only get better. If you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.
 
 mining:
   translated: "yes"
