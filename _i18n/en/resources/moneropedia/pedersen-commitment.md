@@ -1,6 +1,6 @@
 ---
 entry: "Pedersen Commitment"
-terms: ["commitments", "commitment", "pedersen"]
+terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments"]
 summary: "Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it"
 ---
 
