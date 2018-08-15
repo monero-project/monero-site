@@ -10,7 +10,7 @@ At the end of this guide you will be able to sleep a little easier knowing that 
 
 [Docker](https://www.docker.com/) is being used as it is the most well known and has the biggest chance to be already installed.
 
-The container I an using is [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/) as per the name it is built on the [Alpine Linux](https://www.alpinelinux.org/) image.
+The container I am using is [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/) as per the name it is built on the [Alpine Linux](https://www.alpinelinux.org/) image.
 
 If you are interested in getting started with Docker, here are some really good starting references.
 * Arch Linux Wiki [Docker Page](https://wiki.archlinux.org/index.php/Docker)
