@@ -5,6 +5,8 @@
       url: https://webchat.freenode.net?channels=%23monero-otc
     - name: Alfacashier
       url: https://www.alfacashier.com/
+    - name: Anycoin Direct
+      url: https://anycoindirect.eu/buy/monero
     - name: Binance
       url: https://www.binance.com/trade.html?symbol=XMR_BTC
     - name: BITEXBOOK (XMRBTC)
