@@ -534,6 +534,13 @@ library:
       abstract: >
         Magazine trimestriel de Monero, édition Q3 2017.<br>
         Dans cette parution, des nouvelles concernant : le développement, le laboratoire de Recherche Monero, Kovri, la communauté, le matériel et Monerujo.
+  - category: Press Documentation
+    publications:
+    - name: "Quick-Facts"
+      file: "QuickFacts.pdf"
+      abstract: >
+        A quick and easy to read document to know everything about Monero: history, key differentiating factors, technical fundamentals, and features in development.<br>
+        See <a href="http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts.pdf">Monero Outreach</a> website for the latest version.    
 
 moneropedia:
   translated: "yes"
