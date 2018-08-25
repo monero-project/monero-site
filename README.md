@@ -91,18 +91,18 @@ When you make an edit to ANY page on the English language of this website, PLEAS
 The Monero Translation workgroup will do their best to keep tabs on all changes of the site, but it'd be nice to notify them that you've changed a page so they can make sure the equivalent pages are changed accordingly in the other languages.
 
 #### GitHub Issues
-We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributer and the issue is not closed we ask that you close it in a timely manner. A contributer (rehrar, SamsungGalaxyPlayer, or other community members, etc) may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
+We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor (rehrar, SamsungGalaxyPlayer, or other community members, etc) may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
 #### Pull Requests
-Contributers should use [issue keywords](https://help.github.com/articles/closing-issues-using-keywords/) to make it easier for maintainers to close issues when they merge. Include close, closes, closed, fix, fixes, fixed, resolve, resolves, resolved, etc in the commit message or pull request description, so that the correct issue can be closed if your PR is merged. (Example: 'fixes #1234' could close Issue 1234 when merged.)
+Contributors should use [issue keywords](https://help.github.com/articles/closing-issues-using-keywords/) to make it easier for maintainers to close issues when they merge. Include close, closes, closed, fix, fixes, fixed, resolve, resolves, resolved, etc in the commit message or pull request description, so that the correct issue can be closed if your PR is merged. (Example: 'fixes #1234' could close Issue 1234 when merged.)
 
-Pull requests allow others to make comments or review your changes to the site. We ask that you remain available to comment or make changes to your PR. Pull requests with pending changes for more than 30 days will be closed and need to be resubmitted in the future. Sometimes someone else's changes might make your changes conflict with the current site. If that happens you may need to rebase your PR. (If you're unsure about how to do so, you can reach out to other contributers on IRC (freenode #monero) and someone should be able to walk you through it.
+Pull requests allow others to make comments or review your changes to the site. We ask that you remain available to comment or make changes to your PR. Pull requests with pending changes for more than 30 days will be closed and need to be resubmitted in the future. Sometimes someone else's changes might make your changes conflict with the current site. If that happens you may need to rebase your PR. (If you're unsure about how to do so, you can reach out to other contributors on IRC (freenode #monero) and someone should be able to walk you through it.
 
 ### 3.2 Updates on User Guides
 
 User guides and developer guides may need regular updates, either to fix typos, to add explanations regarding new features, to update screenshots, and so on.
 As those guides are translated in several languages, it could be hard to keep all languages version up to date with the English version.
-To keep track of those changes, guides are versioned using a snippet at the top of each localized (\_i18n/en/ressources/\*-guides) file:
+To keep track of those changes, guides are versioned using a snippet at the top of each localized (\_i18n/en/resources/\*-guides) file:
 ```
 {% assign version = '1.1.0' | split: '.' %}
 ```
@@ -122,8 +122,8 @@ mainVersion:
 
 When you update a guide, you are responsible for updating this version tracking in every file involved in your update:
 
-- For an update on English files, you will update the version tracking number in the `Front Matter` of /ressources/\*-guides/ and in \_i18n/en/ressources/\*-guides
-- For an update on localized files, you will update the version tracking number in the \_i18n/<local>/ressources/\*-guides only, and
+- For an update on English files, you will update the version tracking number in the `Front Matter` of /resources/\*-guides/ and in \_i18n/en/resources/\*-guides
+- For an update on localized files, you will update the version tracking number in the \_i18n/<local>/resources/\*-guides only, and
   - You will not update to a higher Major or Minor version number than the reference English guide
   - If you want to update to a higher Major or Minor version number, you should update the English version accordingly so that English is always the highest Major.Minor version.
 
@@ -213,7 +213,7 @@ Add the version snippet at the top of your guide (before your title):
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ```
-Your version should start at `1.1.0` as it is the first Major, first Minor, and no cosmetic changes have occured.
+Your version should start at `1.1.0` as it is the first Major, first Minor, and no cosmetic changes have occurred.
 
 ### 5.6 Copy User Guide file into all languages
 Copy your file and navigate to each language file in the /i18n folder. In each language folder (INCLUDING template) go to the resources/user-guides folder and paste your user guide (don't worry, you don't have to translate it) there. This is very important, and the site will not build if the file with the same name is not in each language folder.
@@ -268,9 +268,9 @@ summary: "PUT SUMMARY OF YOUR ENTRY HERE IN QUOTES"
 ---
 ```
 
-There is two thing to highlight:  
+There are two things to highlight:  
 The `terms:` section of the front matter can be filled with as many terms as you would like. This is how other Moneropedia entries will link to this page. You can link to other Moneropedia entries as well in your page by putting an ampersand before the term used, i.e. `@THE-TERM-USED`. This will make an automatic link in the Moneropedia entry to the referred term, replace the @term with the word used in that terms `entry:` area of the front matter, and on hover it will show the summary. How cool is that?  
-The lines must not contains trailing whitespace, and it must be no blank lines added, otherwise the site with not build correctly.
+The lines must not contain trailing whitespace, and it must be no blank lines added, otherwise the site with not build correctly.
 
 ### 6.3 Write
 Write your Moneropedia entry. Remember that you can link to other Moneropedia entries using `@term-used-in-entry` as described above. Just go to the .md file of the Moneropedia entry you want to link to and use any of the terms in the `terms:` field of the front matter. Be sure to write whichever one you choose EXACTLY as shown and preceded by an ampersand.
@@ -602,7 +602,7 @@ Moneropedia entries have two specificities:
 Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
 This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
 
-* The old *unstranslated* snippet must be removed, therefor the next section 14.4 is irrelevant here.
+* The old *untranslated* snippet must be removed, therefore the next section 14.4 is irrelevant here.
 
 Finally, your entry should go from:
 ```
