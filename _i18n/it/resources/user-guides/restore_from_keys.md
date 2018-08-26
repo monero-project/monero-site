@@ -25,7 +25,7 @@ If you run into any trouble, running `./monero-wallet-cli --help` will show you 
 
 #### GUI
 
-Lauch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:
+Launch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:
 
 ![cancel opening](png/restore_from_keys/cancel-opening.png)
 
