@@ -57,6 +57,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [rescan_blockchain](#rescan_blockchain)
 * [set_tx_notes](#set_tx_notes)
 * [get_tx_notes](#get_tx_notes)
+* [get_tx_key](#get_tx_key)
 * [sign](#sign)
 * [verify](#verify)
 * [export_key_images](#export_key_images)
@@ -1021,6 +1022,33 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
+
+### **get_tx_key**
+
+Get the transaction private key for a transaction.
+
+Inputs:
+
+* *txid* - string; transaction id
+
+Outputs:
+
+* *tx_key* - string; transaction private key of the transaction
+
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","method":"get_tx_key","params":{"txid":"6a1a100c079c236e2cbf36f7760e8ef1a9e8357c434aa790a8c78de653ec4cf2"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "tx_key": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  }
+}
+```
+
 
 
 ### **sign**
