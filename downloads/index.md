@@ -16,7 +16,6 @@ permalink: /downloads/index.html
             <div class="col"><a href="#mac">Mac</a></div>
             <div class="col"><a href="#linux">Linux</a></div>
             <div class="col"><a href="#arm">Arm (v7 & 8)</a></div>
-            <div class="col"><a href="#bsd">BSD</a></div>
             <div class="col"><a href="#source">{% t downloads.sourceblockchain %}</a></div>
             <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
             <div class="col"><a href="#hardware">{% t downloads.hardware %}</a></div>
@@ -32,7 +31,6 @@ permalink: /downloads/index.html
               <li><a href="#mac">Mac</a></li>
               <li><a href="#linux">Linux</a></li>
               <li><a href="#arm">Arm (v7 & 8)</a></li>
-              <li><a href="#bsd">BSD</a></li>
               <li><a href="#source">{% t downloads.sourceblockchain %}</a></li>
               <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
               <li><a href="#hardware">{% t downloads.hardware %}</a></li>
