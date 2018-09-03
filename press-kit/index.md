@@ -3,7 +3,7 @@ layout: custom
 title: titles.presskit
 permalink: /press-kit/index.html
 ---
-{% t global.lang_tag %}
+
 <div class="text-center container description">
     <p>{% t press-kit.intro1 %} <strong>{% t press-kit.intro1 %}</strong> {% t press-kit.intro3 %} <a href="/press-kit/monero-press-kit.zip">{% t press-kit.intro4 %}</a></p>
 </div>
