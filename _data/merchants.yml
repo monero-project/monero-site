@@ -29,6 +29,8 @@
       url: https://www.coindirect.com/buy/monero
     - name: CoinSwitch.co
       url: https://www.coinswitch.co
+    - name: CRYPTODIGGERS.EU
+      url: https://cryptodiggers.eu/
     - name: Cryptopia
       url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
     - name: ExchangeD.I2P - Darknet exchange (I2P)
@@ -91,6 +93,8 @@
 - category: Payment Gateways
   id: payment-gateways
   merchants:
+    - name: CDPay
+      url: https://www.cdpay.eu/
     - name: CoinPayments
       url: https://www.coinpayments.net/
     - name: GloBee
@@ -156,6 +160,8 @@
   merchants:
     - name: 1Gbits
       url: https://1gbits.com/
+    - name: 1oasis.net
+      url: https://web.senang.online/
     - name: 99Stack Hosting
       url: https://www.99stack.com
     - name: Abaco Hosting
