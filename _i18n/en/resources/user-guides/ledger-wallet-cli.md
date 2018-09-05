@@ -145,19 +145,19 @@ Congratulations, you can now use your Ledger Monero wallet in conjunction with t
 
 ### 4. A few final notes
 
-1. We'd strongly advise to test the full process first. That is, send a small amount to the wallet and subsequently restore it (using aforementioned guide) to verify that you can recover the wallet. Note that, upon recreating / restoring the wallet, you ought to append the `--restore-height` flag (with a block height before the height of your first transaction to the wallet) to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux). More information about the restore height and how to approximate it can be found [here](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height).
+1. We'd strongly advise to test the full process first. That is, send a small amount to the wallet and subsequently restore it (using aforementioned guide) to verify that you can recover the wallet. Note that, upon recreating / restoring the wallet, you ought to append the `--restore-height` option (with a block height before the height of your first transaction to the wallet) to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux). More information about the restore height and how to approximate it can be found [here](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height).
 
-2. If you use a remote node, append the `--daemon-address host:port` flag to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux).
+2. If you use a remote node, append the `--daemon-address host:port` option to the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux).
 
 3. If desired, you can manually tweak the `--subaddress-lookahead` value. The first value is the number of accounts and the second value is the number of subaddresses per account. Thus, if you, for instance, want to pregenerate 5 accounts with 100 subaddresses each, use `--subaddress-lookahead 5:100`. Bear in mind that, the more subaddresses you pregenerate, the longer it takes for the Ledger to create your wallet.
 
-4. You only have to use the `--generate-from-device` flag once (i.e. upon wallet creation). Thereafter, you'd basically use it similar to how you normally use the CLI. That is:
+4. You only have to use the `--generate-from-device` option once (i.e. upon wallet creation). Thereafter, you'd basically use it similar to how you normally use the CLI. That is:
    1. Make sure your Ledger is plugged in and the Monero app is running.
    2. Open `monero-wallet-cli`.
    3. Enter the wallet name of your Ledger Monero wallet.
    4. Enter the password to open the wallet.
 
-   If the Ledger wallet files are not in the same directory as `monero-wallet-cli`, you ought to open `monero-wallet-cli` with the `--wallet-file /path/to/wallet.keys/file` flag. Alternatively, you can copy the Ledger wallet files to the same directory as `monero-wallet-cli`.
+   If the Ledger wallet files are not in the same directory as `monero-wallet-cli`, you ought to open `monero-wallet-cli` with the `--wallet-file /path/to/wallet.keys/file` option. Alternatively, you can copy the Ledger wallet files to the same directory as `monero-wallet-cli`.
 
 5. If you have any further questions or need assistance, please leave a comment to the original [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli) answer.
 
