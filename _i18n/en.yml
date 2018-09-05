@@ -416,7 +416,7 @@ user-guides:
   mine-docker: Mining with Docker and XMRig
   locked-funds: How to fix locked up funds
   restore-account: How to restore your account
-  qubes: CLI wallet/daemon isolation with Qubes + Whonix
+  qubes: Wallet/daemon isolation with Qubes + Whonix
   cli-wallet: Getting started with the CLI wallet
   remote-node-gui: How to connect to a remote node within GUI wallet
   view-only: How to make a view-only wallet

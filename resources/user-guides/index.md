@@ -72,12 +72,12 @@ title: titles.userguides
                     </div>
                     <div class="row start-xs">
                         <p>
-                            <a href="{{site.baseurl}}/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.html">{% t user-guides.qubes %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/monero-wallet-cli.html">{% t user-guides.cli-wallet %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/remote_node_gui.html">{% t user-guides.remote-node-gui %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/view_only.html">{% t user-guides.view-only %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/prove-payment.html">{% t user-guides.prove-payment %}</a>
                             <a href="{{site.baseurl}}/resources/user-guides/ledger-wallet-cli.html">{% t user-guides.ledger-wallet-cli %}</a>
+                            <a href="{{site.baseurl}}/resources/user-guides/wallet_daemon_isolation_qubes_whonix.html">{% t user-guides.qubes %}</a>
                         </p>
                     </div>
                 </div>
