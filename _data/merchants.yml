@@ -277,6 +277,8 @@
 - category: Goods
   id: goods
   merchants:
+    - name: Accessory Authority
+      url: https://www.accessoryauthority.com/
     - name: All For Crypto
       url: https://allforcrypto.com
     - name: BitDials - Luxury Boutique
