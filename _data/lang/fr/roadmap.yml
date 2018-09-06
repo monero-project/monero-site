@@ -107,7 +107,7 @@
     - name: Mise en place des *BulletProofs* à la place des transactions confidentielles de cercle (RingCT) afin de réduire la taille des transactions
       date:
       status: ongoing
-    - name: Version beta de Kovri
+    - name: Intégration de Kovri
       date:
       status: upcoming
 - year: 2019
