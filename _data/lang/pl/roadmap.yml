@@ -107,7 +107,7 @@
     - name: Implementation of BulletProofs instead of RingCT w celu zmniejszenia rozmiarów transakcji
       date:
       status: ongoing
-    - name: Wypuszczenie systemu Kovri Beta
+    - name: Integracja Kovri
       date:
       status: upcoming
 - year: 2019
