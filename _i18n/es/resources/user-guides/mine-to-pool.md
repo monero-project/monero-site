@@ -1,49 +1,34 @@
 {% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
-# Selecting a pool
+{% include disclaimer.html translated="true" version=page.version %}
+# Seleccionando una pool
 
-There are many pools to choose from, a list is available at
-[moneropools.com](https://moneropools.com). Mining on a larger pool could mean
-more frequent payouts, but mining on a smaller pool helps to keep the network
-decentralized.
+Hay muchas pools para escoger, una lista está disponible en [moneropools.com](https://moneropools.com). Minar en una pool grande puede significar pagos más frecuentes, pero minar en una pequeña ayuda a mantener la red descentralizada.
 
-# Selecting a CPU miner
+# Seleccionar un minero CPU
 
-Just like pools, there are a lot of miners to choose from. The one that you
-should pick depends on the hardware you want to mine on. This guide will only
-use a CPU miner, and will be using
-[xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). Alternatives include
-[wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) and
-[sgminer-gm](https://github.com/genesismining/sgminer-gm). However, their
-configuration is slightly different and will not be covered in this guide.
+Al igual que las pools, hay muchos mineros para escoger. El que debes elegir depende del hardware que quieras utilizar para minar. Esta guía utilizará un minero CPU solamente, y será [xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). Otras alternativas son [wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) y [sgminer-gm](https://github.com/genesismining/sgminer-gm). No obstante, su configuración es ligeramente distinta y no se estará cubriendo en esta guía.
 
-## For Windows Systems
+## Para sistemas Windows
 
-If you are using a Windows system, the developer of xmr-stak-cpu provides
-binaries to download on the
-[GitHub release page](https://github.com/fireice-uk/xmr-stak-cpu/releases).
+Si estás usando Windows, el desarrollador de xmr-stak-cpu provee los binarios para descargar en la página de lanzamientos en [GitHub](https://github.com/fireice-uk/xmr-stak-cpu/releases).
 
-Download `xmr-stak-cpu-win64.zip` and extract it somewhere you'll be able to
-find it again.
+Descarga `xmr-stak-cpu-win64.zip` y extrae los archivos donde puedas encontrarlos después.
 
-## For Other Operating Systems
+## Para otros sistemas operativos
 
-If you're not using Windows, you will have to compile xmr-stak-cpu for yourself,
-luckily this isn't as hard as it sounds. Before you can compile the miner, you
-will need to install some of its prerequisites.
+Si no estás usando Windows, tendrás que compilar xmr-stak-cpu tú mismo. Por suerte, esto no es tan difícil como suena. Antes de que compiles el minero, necesitarás instalar algunos prerrequisitos.
 
-For Debian-based distros:
+Para distros basadas en Debian:
 
     sudo apt-get install libmicrohttpd-dev libssl-dev cmake build-essential
 
-For Red Hat based distros:
+Para distros basadas en Red Hat:
 
 	sudo yum install openssl-devel cmake gcc-c++ libmicrohttpd-devel
 
 <!-- TODO: Add dependencies for other operating systems? -->
 
-Following this, you just need to use cmake to generate the build files, run
-make and copy the config file:
+A continuación, sólo necesitas utilizar cmake para generar los archivos de construcción, ejecutar `make` y copiar el archivo de configuración:
 
     mkdir build-$(gcc -dumpmachine)
 	cd $_
@@ -52,64 +37,57 @@ make and copy the config file:
 	cp ../config.txt bin/
 	cd bin
 
-Don't celebrate just yet, as the miner needs to be configured. Running the miner
-now should give you a block of text to copy and paste:
+Aún no es tiempo de celebrar, el minero necesita ser configurado. Ejecutar el minero ahora debe dar un bloque de texto para copiar y pegar:
 
 ![image1](png/mine_to_pool/1.png)
 
-Open `config.txt` and *replace* the two `"cpu_threads_conf"` lines with the text
-you just copied. It should look something like this afterwards:
+Abre `config.txt` y *reemplaza* las dos líneas `"cpu_threads_conf"` con el texto que acabas de copiar. Se debería ver como sigue:
 
 ![image2](png/mine_to_pool/2.png)
 
-Scroll down in the file until you see the lines containing `"pool_address"`.
-*Replace* the contents of the second set of quotes with the address and port of
-the pool you chose earlier. You can find this information on the pool's website.
+Desplázate hacia abajo en el archivo hasta que veas las líneas que contienen `"pool_address"`.
+*Reemplaza* el contenido del segundo conjunto de comillas con la dirección y puerto de la pool que elegiste antes. Puedes encontrar esta información en el sitio web de la pool.
 
-Put your wallet address between the quotes on the wallet address. You may leave
-the password blank unless the pool specifies otherwise.
+Ingresa tu dirección de monedero entre las comillas en wallet_address. Puedes dejar la contraseña en blanco a no ser que la pool especifique lo contrario.
 
-After this, your config should look something like this:
+Después de esto, tu archivo config  se deberá ver algo así:
 
 ![image3](png/mine_to_pool/3.png)
 
-# Running the miner
+# Corriendo el minero
 
-**Save the config** file and run the miner!
+**Guarda el archivo config** y corre el minero.
 
 ![image4](png/mine_to_pool/4.png)
 
-Some pools allow you to monitor your hashrate by pasting your address into their
-website. You can also monitor your hashrate by pressing the `h` key.
+Algunas pools te permiten monitorear tu hashrate al pegar tu dirección en su sitio web. También puedes monitorear tu hashrate presionando la tecla `h`.
 
-# Tuning the miner
+# Optimizando el minero
 
-You might see nasty messages like this:
+Es posible que veas mensajes desagradables como este:
 
 	[2017-07-09 12:04:02] : MEMORY ALLOC FAILED: mmap failed
 
-This means that you can get around a 20% hashrate boost by enabling large pages.
+Esto significa que puedes obtener alrededor de un 20% extra de hashrate activando las páginas grandes.
 
-## Large pages on Linux
+## Páginas grandes en Linux
 
-Firstly stop the miner (if it's running), run the following commands to enable
-large pages and then start the miner as root:
+En primer lugar, detén el minero (si está en ejecución), y corre los siguientes comandos para activar las páginas grandes e iniciar el minero como root:
 
 	sudo sysctl -w vm.nr_hugepages=128
 	sudo ./xmr-stak-cpu
 
-## Large pages on Windows
+## Páginas grandes en Windows
 
-Taken from `config.txt`:
+Tomado de `config.txt`:
 
->By default we will try to allocate large pages. This means you need to "Run As Administrator" on Windows
-You need to edit your system's group policies to enable locking large pages. Here are the steps from MSDN
-1. On the Start menu, click Run. In the Open box, type gpedit.msc.
-2. On the Local Group Policy Editor console, expand Computer Configuration, and then expand Windows Settings.
-3. Expand Security Settings, and then expand Local Policies.
-4. Select the User Rights Assignment folder.
-5. The policies will be displayed in the details pane.
-6. In the pane, double-click Lock pages in memory.
-7. In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group.
-8. In the Select Users, Service Accounts, or Groups dialog box, add an account that you will run the miner on
-9. Reboot for change to take effect.
+>Por defecto trataremos de asignar páginas grandes. Esto significa que necesitas "Ejecutar como Administrador" en Windows. Necesitas editar las políticas de grupo del sistema para habilitar el bloqueo de páginas grandes. Aquí están los pasos de MSDN
+1. En el menú de inicio, haz clic en Ejecutar. En la ventana abierta, escribe gpedit.msc.
+2. En la consola de Editor de directivas de grupo local, expande Configuración del equipo, y luego expande Configuración de Windows.
+3. Expande Configuración de seguridad, y luego expande Directivas locales.
+4. Selecciona la carpeta Asignación de derechos de usuario.
+5. Las políticas serán mostradas en el panel de detalles.
+6. En el panel, haz doble clic en Bloquear páginas en la memoria.
+7. En la pestaña Configuración de seguridad local, haz clic en Agregar usuario o grupo.
+8. En el cuadro de dialogo Seleccionar Usuarios, Cuentas de Servicio o Grupos, agrega una cuenta con la que vas a ejecutar el minero.
+9. Reinicia para que el cambio haga efecto.
