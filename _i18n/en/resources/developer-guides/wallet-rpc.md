@@ -117,14 +117,14 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
     "balance": 140000000000,
     "unlocked_balance": 50000000000,
     "multisig_import_needed": false,
-    "per_subaddress": {
+    "per_subaddress": [{
       "address_index": 0,
       "address": "427ZuEhNJQRXoyJAeEoBaNW56ScQaLXyyQWgxeRL9KgAUhVzkvfiELZV7fCPBuuB2CGuJiWFQjhnhhwiH1FsHYGQGaDsaBA",
       "balance": 140000000000,
       "unlocked_balance": 50000000000,
       "label": "",
       "num_unspent_outputs": 42
-    }
+    }]
   }
 }
 ```
