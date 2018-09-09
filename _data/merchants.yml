@@ -120,6 +120,8 @@
       url: https://github.com/bigreddmachine/MoneroPy
     - name: monero-python (Python)
       url: https://github.com/emesik/monero-python
+    - name: node-monero-rpc (Node.js)
+      url: https://github.com/ExcitableAardvark/node-monero-rpc
     - name: PHP-Monero (PHP)
       url: https://github.com/MalMen/PHP-Monero
     - name: python-monero (Python)
