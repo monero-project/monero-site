@@ -44,4 +44,4 @@ Możesz skorzystać z @opcji-przeskakiwania, aby ręcznie zaktualizować swoją 
 
 ### Adnotacje
 
-Aby dowiedzieć się, w jaki sposób zapisać się do wielu subskrypcji, przejdź do [przewodnika dla użytkowników](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+Aby dowiedzieć się, w jaki sposób zapisać się do wielu subskrypcji, przejdź do [przewodnika dla użytkowników](https://gitlab.com/kovri-project/kovri-docs/blob/master/i18n/en/user_guide.md).
