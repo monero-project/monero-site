@@ -1,14 +1,13 @@
 ---
-entry: "View Key"
-terms: ["view-key", "view-keys"]
-summary: "one of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account"
+entry: "Clef d'audit"
+terms: ["view-key", "view-keys", "clef-d'audit", "clefs-d'audit"]
+summary: "l'une des deux paires de clefs cryptographiques publiques et privées dont disposent chaque comptes, la clef privée d'audit étant nécessaire pour voir toutes les transactions liées à un compte"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-One of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account.
+L'une des deux paires de clefs cryptographiques publiques et privées dont disposent chaque comptes, la clef privée d'audit étant nécessaire pour voir toutes les transactions liées à un compte.
 
-Monero features an opaque blockchain (with an explicit allowance system called the @view-key), in sharp contrast with transparent blockchains used by any other cryptocurrency not based on CryptoNote. Thus, Monero is said to be "private, optionally transparent".
+Monero se caractérise par une chaîne de blocs opaque (avec un système d'autorisation spécifique nommé @clef-d'audit), contrastant fortement des chaînes de blocs transparentes utilisées par n'importe quelle autre cryptomonnaie qui ne serait pas basée sur CryptoNote. Ainsi, Monero est dit "privée, optionnellement transparent".
 
-Every Monero address has a private viewkey which can be shared.  By sharing a viewkey, a person is allowing access to view every incoming transaction for that address.  However, outgoing transactions cannot be reliably viewed as of June 2017. Therefore, the balance of a Monero address as shown via a viewkey should not be relied upon.
+Chaque adresse Monero a une clef privée d'audit qui peut être partagée. En partageant une clef d'audit une personne permet d'accéder à toutes les transactions entrantes pour cette adresse. Cependant, les transactions sortantes ne peuvent pas consultées de manière fiable depuis Juin 2017. C'est pourquoi il ne faudrait pas se fier au solde d'une adresse Monero tel qu'indiqué avec une clef d'audit.

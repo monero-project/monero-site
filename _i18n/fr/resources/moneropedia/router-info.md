@@ -1,18 +1,17 @@
 ---
-entry: "Router-Info"
+entry: "Infos des routeurs"
 tags: ["kovri"]
-terms: ["Router-Info", "Router-infos"]
-summary: "A data structure or file which contains an I2P peer's needed network information"
+terms: ["Router-Info", "Router-infos", "Info-des-routeurs", "Infos-des-routeurs"]
+summary: "Une structure de données ou un fichier qui contient les informations réseau nécessaires pour un homologue I2P"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-@Router-Info is a data structure (periodically written to a [binary file](https://en.wikipedia.org/wiki/Binary_file)) which contains all needed information to locate, identify, and communicate with an @I2P peer. @Router-Info includes IP address, router identity, other misc. technical details; is needed for @network-database and is published to @floodfill routers.
+Les @infos-des-routeurs sont une structure de données (périodiquement écrite dans un [fichier binaire](https://fr.wikipedia.org/wiki/Fichier_binaire)) qui contient toutes les informations nécessaires pour localiser, identifier et communiquer avec un homologue @I2P. Les @infos-des-routeurs inclues l'adresse IP, l'identité du routeur et d'autres détails techniques divers. Elle est nécessaire à la @base-de-données-réseau et est publiée aux routeurs @floodfill.
 
-### In-depth information
+### Informations détaillées
 
-In human-readable form, Router-Info may look like this:
+Sous une forme lisible par l'homme, les Infos des routeurs ressemble à cela :
 
 ```
 Identity: [RouterIdentity:
@@ -33,7 +32,7 @@ Options (5):
         [router.version] = [0.9.26]
 Addresses (4):
 [RouterAddress:
-Type: SSU
+Type: USS
 Cost: 4
 Options (5):
         [caps] = [BC]
@@ -48,7 +47,7 @@ Options (2):
         [host] = [2a01:e35:8b5c:b240:71a2:6750:8d4:47fa]
         [port] = [22244]]
 [RouterAddress:
-Type: SSU
+Type: USS
 Cost: 6
 Options (4):
         [caps] = [BC]
@@ -63,6 +62,6 @@ Options (2):
         [port] = [22244]]]
 ```
 
-### Notes
+### Remarque
 
-For details and specification, visit @Java-I2P [Network Database](https://geti2p.net/en/docs/how/network-database) page.
+Pour de détails et spécifications, consultez la page [Base de donnée réseau](https://geti2p.net/fr/docs/how/network-database) de @I2P-Java.

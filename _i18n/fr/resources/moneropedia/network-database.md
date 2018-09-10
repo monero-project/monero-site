@@ -1,25 +1,24 @@
 ---
-entry: "Network Database"
+entry: "Base de données réseau"
 tags: ["kovri"]
-terms: ["Network-Database"]
-summary: "A distributed database which contains needed router information so the network can stay intact"
+terms: ["Network-Database", "base-de-données-réseau"]
+summary: "Une base de données distribuée qui contient les informations de routeurs nécessaire pour que le réseau reste intact"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-@network-database is a [distributed database](https://en.wikipedia.org/wiki/Distributed_database) which contains router information that peers must use so the network can stay intact.
+Une @base-de-données-réseau est une [base de données distribuée](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_distribu%C3%A9e) qui contient les informations des routeurs que les pairs doivent utiliser afin que le réseau reste intact.
 
-### In-depth information
+### Informations détaillées
 
-From @Java-I2P:
-
->
-@I2P's @network-database is a specialized distributed database, containing just two types of data - router contact information (@Router-Infos) and @destination contact information (@LeaseSets). Each piece of data is signed by the appropriate party and verified by anyone who uses or stores it. In addition, the data has liveliness information within it, allowing irrelevant entries to be dropped, newer entries to replace older ones, and protection against certain classes of attack.
+Traduit depuis @I2P-Java:
 
 >
-The @network-database is distributed with a simple technique called "@floodfill", where a subset of all routers, called "@floodfill routers", maintains the distributed database.
+La @base-de-données-réseau d'@IEP est une base de données distribuée spécialisée qui contient uniquement deux types de données : les informations de contact des routeurs (@Infos-des-routeurs) et les informations de contact des @destinations (@Lots-de-baux). Chaque donnée est signée par la partie appropriée et vérifiée par tous ceux qui l'utilisent ou la conservent. De plus, la donnée contient une information de durée de vie, permettant aux entrées désuètes d'êtres supprimées, aux nouvelles entrées de remplacer les anciennes, et une protection vis-à-vis de certaines classes d'attaques.
+
+>
+La @base-de-données-réseau est distribué par une technique simple appelée "@floodfill", selon laquelle une portions de tous les routeurs, appelés "routeurs @floodfill", maintiennent et distribuent la base de données.
 
 ### Notes
 
-Read [Network-Database](https://geti2p.net/en/docs/how/network-database) for details.
+Lisez [Base de Données](https://geti2p.net/fr/docs/how/network-database) pour plus de détails.

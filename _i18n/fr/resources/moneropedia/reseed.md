@@ -1,17 +1,16 @@
 ---
-entry: "Reseed"
+entry: "Réensemencement"
 tags: ["kovri"]
-terms: ["Reseed"]
-summary: "The method of which Kovri uses to bootstrap into the I2P network"
+terms: ["Reseed", "réensemencement"]
+summary: "La méthode que Kovri utilise pour s'amorcer sur le réseau I2P"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-When you start @Kovri for the first time (or if it's been offline for a long time), @Kovri will need a list of peers to connect to so it can [bootstrap](https://en.wikipedia.org/wiki/Bootstrap) into the @I2P network. @Kovri gets these peers from a special file stored on a reseed server. On this file are all the various pieces of information @Kovri needs in order to connect with @I2P peers.
+Lorsque vous démarrez @Kovri pour la première fois (ou s'il a été arrêté longtemps), @Kovri a besoin d'une liste de pairs auxquels se connecter afin qu'il puisse s'[amorcer](https://en.wikipedia.org/wiki/Bootstrapping) dans le réseau @I2P. @Kovri obtient ces pairs à partir d'un fichier spécifique stocké sur un serveur de réensemencement. Les diverses données dont @Kovri a besoin pour se connecter avec des pairs @I2P se trouvent dans ce fichier.
 
-### In-depth information
+### Informations détaillées
 
-@Kovri has a list of [hard-coded](https://en.wikipedia.org/wiki/Hard-coded) reseed servers available to fetch from. These servers securely serve an [SU3](https://geti2p.net/spec/updates#su3) file (signed with a cryptographic @signature) over @clearnet with [HTTPS](https://en.wikipedia.org/wiki/HTTPS). This SU3 file contains information that's used to verify both the integrity of the file and its content.
+@Kovri dispose d'une liste de serveur de réensemencement [programmée en dur](https://en.wikipedia.org/wiki/Hard-coded) à partir desquels récupérer les données. Ces serveurs servent un fichier [SU3](https://geti2p.net/spec/updates#su3) de manière sécurisée (signé avec une @signature cryptographique) sur le @réseau-en-clair avec [HTTPS](https://fr.wikipedia.org/wiki/HTTPS). Ce fichier SU3 contient les informations nécessaires à la vérification à la fois de l'intégrité et du contenu de ce fichier.
 
-Aside from the technical elements needed to verify and process the file, the file's main contents consist of a series of @router-info files which @Kovri and @I2P routers use to locate and communicate with other @I2P peers. These peers are then stored into a @network-database.
+Conjointement aux éléments techniques nécessaires pour vérifier et traiter le fichier, le contenu principal du fichier est une série de fichier d'@info-des-routeurs que les routeurs @Kovri et @I2P utilisent pour trouver et communiquer avec d'autres pairs @I2P. Ces pairs sont ensuite stockés dans une @base-de-données-réseau.

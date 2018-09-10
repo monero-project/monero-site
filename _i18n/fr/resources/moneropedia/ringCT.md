@@ -1,15 +1,14 @@
 ---
-entry: "Ring CT"
-terms: ["ringCT", "ring-CT"]
-summary: "a way to hide the amount sent in a Monero transaction"
+entry: "Transactions confidentielles de cercle"
+terms: ["ringCT", "ring-CT", "transactions-confidentielles-de-cercle", "transaction-confidentielle-de-cercle"]
+summary: "Un moyen de masquer le montant envoyé dans une transaction Monero"
 ---
 
-{% include untranslated.html %}
-### The Basics
-RingCT, short for Ring Confidential Transactions, is how transaction amounts are hidden in Monero.
+### Les Bases
+RingCT, abréviation de Transactions confidentielles de cercle (*Ring Confidential Transactions*), est la méthode grâce à laquelle les montants sont cachés dans Monero.
 
-Ring CT was implemented in block #1220516 in January 2017.  After September 2017, this feature became mandatory for all transactions on the network.
+Les transactions confidentielles de cercle ont été implémentées dans le block #1220516 en Janvier 2017. Après Septembre 2017, cette fonctionnalité est devenue obligatoire pour toutes les transactions sur le réseau.
 
-RingCT introduces an improved version of @ring-signatures called "A Multi-layered Linkable Spontaneous Anonymous Group signature", which allows for hidden amounts, origins and destinations of transactions with reasonable efficiency and verifiable, trustless coin generation.
+Les transactions confidentielles de cercle introduisent une version améliorée des @signatures-de-cercle appelées "Une signature de groupe anonyme Spontanée multi-couches liable" (*A Multi-layered Linkable Spontaneous Anonymous Group signature*), qui permet de masquer les montants, les origines et les destinations des transactions avec une efficacité suffisante et une génération de pièces contrôlable et sans nécessité de confiance.
 
-For more information, please read the creator Shen Noether's paper [here](https://eprint.iacr.org/2015/1098).
+Pour plus d'informations, lisez le document du créateur Shen Noether [ici](https://eprint.iacr.org/2015/1098).

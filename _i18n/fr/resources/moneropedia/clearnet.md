@@ -1,33 +1,32 @@
 ---
 entry: "Clearnet"
 tags: ["kovri"]
-terms: ["Clearnet"]
-summary: "The Internet in which anonymous overlay networks are built upon"
+terms: ["Clearnet", "réseau-en-clair"]
+summary: "L'Internet sur lequel les surcouches réseaux anonymes sont construites."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-When you use the Internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:
+Lorsque vous utilisez Internet pour des choses comme lire des actualités, e-mail, média sociaux, et même Monero, vous utilisez certainement une connexion réseau *en clair*. Cela signifie que *toutes* vos connexions peuvent être suivies, tracées et observées par :
 
-- your [ISP](https://en.wikipedia.org/wiki/ISP)
-- the website/service/person you're communicating with
-- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity
+- votre [FAI](https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_Internet)
+- le site web, service, ou personne avec qui vous communiquez
+- potentiellement une entité compétente [Five Eyes](https://fr.wikipedia.org/wiki/Five_Eyes)
 
-and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (which *encrypts* your transmission), your route is not hidden nor is it anonymous, thus; it is in the *clear*.
+et même si vous utilisez [HTTPS](https://fr.wikipedia.org/wiki/HyperText_Transfer_Protocol_Secure) ou équivalent (qui *chiffre* votre transmission), votre passage n'est pas masqué ni anonyme, et donc est *en clair*.
 
-### In-depth information
+### Informations détaillées
 
-Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:
+Comme un [VPN](https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel) traditionnel ne peut pas vous épargner du réseau en clair (comme vous utilisez toujours le réseau en clair (bien que vous soyez mieux mandaté que sans un VPN)), vous devriez utiliser une *surcouche réseau anonyme* pour éviter d'utiliser le réseau en clair directement :
 
 - @Kovri
-- @Java-I2P
+- @I2P-Java
 - [Tor](https://torproject.org/)
 
-These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous.
+Ces technologies vous protègent du réseau en clair en construisant un réseau anonyme **par dessus** le réseau en clair pour garder vos transmissions à la fois chiffrées **et** anonymes.
 
-Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to @Kovri and @I2P in terms of anonymity with the exception that:
+Voici un [diagramme interactif](https://www.eff.org/pages/tor-and-https) précis fournit par l'[EFF](https://www.eff.org/) qui décrit comment **Tor** se relie au *réseau en clair*. Le principe est également applicable (en partie) à @Kovri et @I2P en termes d'anonymat, à l'exception des points suivants :
 
-- @Kovri does not use exit nodes when connecting to an @eepsite
-- Your traffic never need to leave the @I2P network
-- You do not need HTTPS to use @Kovri (with the exception of @reseed)
+- @Kovri n'utilise pas de nœud de sortie lors d'une connexion à un @site-eep
+- Votre trafic ne quite jamais le réseau @I2P
+- Vous n'avez pas besoin de HTTPS pour utiliser @Kovri (à l'exception du @réensemencement)

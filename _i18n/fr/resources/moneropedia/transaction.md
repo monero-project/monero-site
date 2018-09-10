@@ -1,23 +1,22 @@
 ---
 entry: "Transactions"
 terms: ["transaction", "transactions"]
-summary: "a cryptographically signed container that details the transfer of Monero to a recipient (or recipients)"
+summary: "un conteneur signé cryptographiquement qui détaille le transfer de Moneroj à un destinataire (ou des destinataires)"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A cryptographically signed container that details the transfer of Monero to a recipient (or recipients).
+Un conteneur signé cryptographiquement qui détaille le transfert de Moneroj à un destinataire (ou des destinataires).
 
-The parameters of a transaction contain one or more recipient addresses with corresponding amounts of funds and a @ring-size parameter that specifies the number outputs bound to the transaction. The more outputs that are used, a higher degree of obfuscation is possible, but that comes with a cost. Since a transaction gets larger with more outputs, the transaction fee will be higher.
+Les paramètres d'une transaction contiennent une ou plusieurs adresses de destinataires avec le montant des fonds correspondants et un paramètre de @taille-de-cercle qui spécifie le nombre de sorties attachées à la transaction. Plus le nombre de sorties est important, plus grand est le degré d'obscurcissement possible, mais cela a un coût. Comme une transaction devient plus grande avec plus de sorties, les frais de transaction seront plus élevés.
 
-It is possible to form a transaction offline, which offers additional privacy benefits.
+Il est possible de concevoir une transaction hors-ligne, ce qui permet une confidentialité supplémentaire.
 
-A transaction can be uniquely identified with the use of an optional Transaction ID, which is usually represented by a 32-byte string (64 hexadecimal characters).
+Une transaction peut être identifiée de façon unique en utilisant un ID de transaction optionnel, qui est habituellement représenté par une chaîne de caractères de 32 octets (64 caractères hexadécimaux).
 
-### In-depth Information
-Every transaction involves two keys: a public @spend-key, and a public @view-key. The destination for an output in a transaction is actually a one-time public key computed from these two keys.
+### Informations détaillées
+Chaque transaction nécessite deux clef : une @clef-de-dépense publique et une @clef-d'audit publique. La destination d'une sortie de transaction est en réalité une clef publique à usage unique calculée à partir de ces deux clefs.
 
-When a wallet is scanning for incoming transactions, every transaction is scanned to see if it is for "you". This only requires your private view key and your public spend key, and this check is immutable and cannot be faked. You cannot receive transactions and identify them without a corresponding private view key.
+Lorsqu'un portefeuille est à la recherche de transactions entrantes, chaque transaction est scannée pour voir si elle est pour "vous". Cela ne nécessite que votre clef privée d'autit et votre clef de dépense publique, et cette vérification est inaliénable et ne peut pas être falsifiée. Vous ne pouvez pas recevoir de transactions et les identifier sans la clef privée d'audit correspondante.
 
-In order to spend the funds you have to compute a one-time private spend key for that output.  This is almost always done automatically by the Monero Wallet software.
+Afin de dépenser les fonds que vous avez, vous devez calculer une clef de dépense privée à usage unique pour cette sortie. Ce qui est la plupart du temps fait automatiquement par le logiciel de portefeuille Monero.

@@ -1,23 +1,27 @@
 ---
 entry: "Canonically-unique host"
 tags: ["kovri"]
-terms: ["Canonically-unique-host"]
-summary: "A host that is canonically resolved to an address or set of addresses"
+terms: ["Canonically-unique-host", "hôte-canonique-unique", "hôtes-canoniques-uniques"]
+summary: "Un hôte qui est résolu canoniquement en une adresse ou un groupe d'adresses."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A Canonically-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) that will canonically resolve to a designated address or set of addresses. Not to be confused with a @locally-unique-host.
+Un hôte canonique unique est un [FQDN](https://en.wikipedia.org/wiki/FQDN) qui sera résolu canoniquement en une adresse désignée ou un groupe d'adresses. A ne pas confondre avec un @hôte-unique-localement.
 
-### In-depth information
+### Informations détaillées
 
-A Canonically-unique host is defined by remote authoritative sources; usually through [DNS](https://en.wikipedia.org/wiki/DNS). When resolving a peer's hostname, you will most likely use an external source for resolution unless you have the following implemented:
+Un hôte canonique unique est défini par des sources autoritaires distantes, communément à travers [DNS](https://fr.wikipedia.org/wiki/Domain_Name_System). Lors de la résolution du nom d'hôte d'un correspondant, vous utiliserez certainement une source externe pour la résolution, à moins que vous n'ayez ceci d'implémenté :
 
+<<<<<<< HEAD
 - a database file similar to a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file))
 - an internal-network resolver (which eventually pulls from external sources)
+=======
+- un fichier de bases de données similaire à un [fichier hosts](https://en.wikipedia.org/wiki/etc/hosts)
+- un résolveur interne (qui éventuellement récupèrera des données depuis des sources externes)
+>>>>>>> Ongoing Moneropedia French Translation
 
-### Notes
+### Remarques
 
-- Monero primarily uses @canonically-unique-host resolution while @I2P only uses @locally-unique-host resolution.
-- @I2P's and @Kovri's self-assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)
+- Monero utilise en premier lieu la résolution de @hôte-canonique-unique alors que @I2P utilise uniquement la résolution d'@hôte-unique-localement.
+- le domaine de premier niveau auto-attribué de @I2P et @Kovri est actuellement `.i2p` et @Kovri se destine à n'utiliser et ne traiter que le [domaine de premier niveau](https://fr.wikipedia.org/wiki/Top_level_domain) `.i2p`.

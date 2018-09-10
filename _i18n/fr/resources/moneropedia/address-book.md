@@ -1,35 +1,34 @@
 ---
-entry: "Address Book"
+entry: "Carnet d'Adresses"
 tags: ["kovri"]
-terms: ["Address-Book"]
-summary: "Allows you to visit I2P websites/services that have the .i2p domain"
+terms: ["Address-Book", "carnet-d'adresses"]
+summary: "Vous permet de visiter des sites et services I2P du domaine .i2p"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-In order to browse @I2P sites or services with @Kovri, you'll need an address book. An address book will allow you to translate @I2P websites/services that use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain) into an address that @I2P network will understand.
+Afin de naviguer sur des sites @I2P ou de consulter des services avec @Kovri, vous aurez besoin d'un carnet d'adresses. Un carnet d'adresses vous permettra de traduire les sites et services @I2P qui utilisent le [domaine de premier niveau](https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau) `.i2p` en adresses que le réseau @I2P comprendra.
 
-Without an address book, you would be stuck using a @base32-address every time you visit an @I2P website/service - and that's not fun!
+Sans carnet d'adresse, vous seriez contraint d'utiliser une @adresse-base32 chaque fois que vous visiteriez un site ou service @I2P, et ce n'est pas drôle !
 
-### In-depth information
+### Informations détaillées
 
-Since [DNS](https://en.wikipedia.org/wiki/DNS) does not exist on the @I2P network, @Kovri also does **not** use DNS or any sort of @canonically-unique-host resolution. Instead, Kovri pairs a @locally-unique-host to a @base64-address @destination in a @subscription. Once your address book is filled with a @subscription, you can resolve your favorite `.i2p` domain site into a usable @I2P destination.
+Comme [DNS](https://fr.wikipedia.org/wiki/Domain_Name_System) n'existe pas sur le réseau @I2P, @Kovri **ne peut pas** utiliser DNS ou quelque sorte de résolution d'@hôte-canonique-unique. Au lieu de cela, @Kovri fait correspondre un @hôte-unique-localement à une @adresse-base64 de @destination dans une @souscription. Une fois que votre carnet d'adresse est complété avec une @souscription, vous pouvez résoudre vos sites favoris du domaine `.i2p` en une adresse destination @I2P utilisable.
 
-### Creating an Address Book
+### Créer un carnet d'adresses
 
-By default, your installation will come with a default public @subscription called `hosts.txt` in your @data-directory. When @Kovri starts, it loads this subscription and fetches any other subscriptions you've specified. Once loaded, your address book will be appropriately filled. For details on how to manage subscriptions, see @subscription.
+Par défaut, votre installation contiendra une @souscription publique par défaut appelée `hosts.txt` dans votre @répertoire-de-données. Au démarrage de @Kovri, il chargera cette souscription et récupèrera toute autre souscription que vous aurez spécifié. Une fois chargé, votre carnet d'adresses sera correctement rempli. Pour des détails sur la gestion des souscriptions, voir @souscription.
 
-### Updating the Address Book
+### Mettre à jour le carnet d'adresses
 
-Currently, there are several ways to update your address book:
+Actuellement, il y a plusieurs façons de mettre à jour votre carnet d'adresses :
 
-1. Use a @jump-service to insert I2P addresses into your address book
-2. Use a @jump-service to copy/paste an address into your private @subscription
-3. Manually add or subtract from a private @subscription
+1. Utiliser un @service-de-rebond pour insérer des adresses I2P dans votre carnet d'adresses
+2. Utiliser un @service-de-rebond pour copier/coller une adresse dans votre @souscription privée
+3. Ajouter ou supprimer manuellement depuis une @souscription privée
 
-**Note: Kovri is in heavy development. In the future there *will* be easier ways to update the address book**
+**Remarque : Kovri est en cours de développement intensif. Dans le futur il y *aura* des moyens plus simples de mettre à jour le carnet d'adresses**
 
-### Address Book / Naming specification
+### Spécifications du carnets d'adresse / du nommage
 
-For specification details and more, visit the [Address Book and Naming Specification](https://geti2p.net/en/docs/naming)
+Pour des spécifications détaillées et plus encore, visiter les [Spécifications du carnet d'adresses et du nommage](https://geti2p.net/fr/docs/naming)
