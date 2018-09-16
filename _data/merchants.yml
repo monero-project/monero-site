@@ -141,8 +141,8 @@
       url: http://monerobase.com
     - name: Monero Monitor for Chrome
       url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
-    - name: MoneroPric.es Price Converter
-      url: https://moneropric.es
+    - name: Monero Price Converter
+      url: https://currencymarkets.today/XMR/
     - name: MoneroPrice.com Price Converter
       url: http://moneroprice.com/
     - name: nestorgames
