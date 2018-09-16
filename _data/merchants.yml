@@ -394,6 +394,8 @@
 - category: Entertainment
   id: entertainment
   merchants:
+    - name: Monero.win - Bet on The Blockchain
+      url: https://monero.win
     - name: Bitsler - Online Casino
       url: https://www.bitsler.com/
     - name: Crypto Games
