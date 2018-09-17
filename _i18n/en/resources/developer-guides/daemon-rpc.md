@@ -1,4 +1,4 @@
-{% assign version = '2.1.0' | split: '.' %}
+{% assign version = '2.2.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
