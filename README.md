@@ -1,3 +1,17 @@
+# Repository moved to https://repo.getmonero.org/monero-project/monero-site
+
+This repository has recently been moved to https://repo.getmonero.org/monero-project/monero-site  
+Please submit your changes on the new repository.
+
+To contribute on https://repo.getmonero.org/ please proceed this way:
+
+ * Create an account or login using OAuth2 with your GitHub account
+ * Create a password
+ * Fork the repository https://repo.getmonero.org/monero-project/monero-site
+ * Push your branches to your newly forked repo, or contribute just like you did on GitHub.
+
+Thanks for your comprehension.
+
 # Monero Website Instructions
 
 Copyright (c) 2014-2018, The Monero Project
