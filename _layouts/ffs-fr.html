@@ -5,7 +5,7 @@ layout: base
 <div class="site-wrap">
 <div class="container ffs-breadcrumbs">
 
-<p><a href="/forum-funding-system/">Forum Funding System</a> > <a href="/forum-funding-system/funding-required/">Funding Required</a> > {{page.title}}</p>
+<p><a href="/forum-funding-system/">Forum Funding System</a> <a href="/forum-funding-system/funding-required/">Funding Required</a> > {{page.title}}</p>
 
 </div>
        <!-- FULL WIDTH BLOCK -->
@@ -40,6 +40,19 @@ layout: base
                                         <p>Have a valid Monero address. If you don't have one, you can read on getting started!</p>
                                         <p>Send the amount of XMR that you wish to contribute to the address: <strong>{{page.address}}</strong></p>
                                         <p>Make sure that you enter a payment ID of <strong>{{page.paymentid}}</strong> in order for us to be able to assign your contribution to this specific project!</p>
+					<p><div id="qrcode"></div></p>
+					<script src="{{ base.url | prepend: site.url }}/js/qrcode.min.js"></script>
+					<script type="text/javascript">
+						var qr_description = encodeURIComponent("{{page.title}}");
+						new QRCode(document.getElementById("qrcode"), {
+							text: "monero:{{page.address}}?tx_payment_id={{page.paymentid}}&tx_description="+qr_description,
+						        width: 150,
+							height: 150,
+						        colorDark : "#000000",
+						        colorLight : "#ffffff",
+						        correctLevel : QRCode.CorrectLevel.M
+						});
+					</script>
                                     </div>
                                 </div>
                             </div>

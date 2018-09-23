@@ -11,6 +11,10 @@
       url: #
       summary: This is for the best ideas ever!
       author: rehrar
+    - name: QR Codes for Funding Required
+      url: /forum-funding-system/proposals/qr-code-for-fr.html
+      summary: The title says it all!
+      author: m2049r
       
 - stage: Funding Required
   proposals:
