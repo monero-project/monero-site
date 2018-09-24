@@ -135,6 +135,8 @@
       url: http://atesti.mooo.com:8081
     - name: Atomox - Converter
       url: http://atomox.net/1/XMR/USD
+    - name: Cryptoradar (Marketplace comparison website)
+      url: https://cryptoradar.co/buy-monero
     - name: ForkGuard Network Monitoring
       url: http://forkguard.com
     - name: MoneroBase Price Charts and Tools
