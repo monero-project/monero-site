@@ -4,7 +4,7 @@ title: "Daemon RPC documentation"
 permalink: /resources/developer-guides/daemon-rpc.html
 mainVersion:
   - "2"
-  - "1"
+  - "2"
   - "0"
 ---
 
