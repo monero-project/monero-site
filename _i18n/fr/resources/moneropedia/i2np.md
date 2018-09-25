@@ -2,27 +2,26 @@
 entry: "I2NP"
 tags: ["kovri"]
 terms: ["I2NP"]
-summary: "The I2P Network Protocol: the mechanism in which I2NP messages are sent over the I2P network"
+summary: "Protocole réseau I2P (I2P Network Protocol) : le mécanisme par lequel des messages I2NP sont envoyés sur le réseau I2P"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-From @Java-I2P:
-
->
-@I2NP manages the routing and mixing of messages between routers, as well as the selection of what transports to use when communicating with a peer for which there are multiple common transports supported
-
-### In-depth information
-
-From @Java-I2P:
+Traduit depuis @I2P-Java :
 
 >
-@I2NP (@I2P Network Protocol) @messages can be used for one-hop, router-to-router, point-to-point @messages. By @encrypting and wrapping @messages in other @messages, they can be sent in a secure way through multiple hops to the ultimate @destination. @I2NP does not specify nor require any particular @transport layer but does require at least one @transport in use.
+@I2NP gère le routage et le mélange des messages entre les routeurs, de même que la sélection des transports à utiliser lors de la communication avec un pair qui a en commun de multiples transports supportés
+
+### Informations détaillées
+
+Traduit depuis @I2P-Java :
 
 >
-Whenever a @destination wants to send a message to to another @destination, it provides its local router with both the @destination structure and the raw bytes of the message to be sent. The router then determines where to send it, delivers it through outbound @tunnels, instructing the end point to pass it along to the appropriate inbound @tunnel, where it is passed along again to that @tunnel's end point and made available to the target for reception.
+les @messages @I2NP (@I2P Network Protocol - Protocol Réseau @I2P) peuvent être utilisés pour des @messages point-à-point d'un seul saut, routeur à routeur. En @chiffrant et emballant les @messages dans d'autres @messages, ils peuvent être transmits de manière sécurisé à travers plusieurs sauts jusqu'à la @destination finale. @I2NP ne spécifie et ne requiert aucune couche de @transport particulière mais requière au moins l'utilisation d'un @transport.
 
-### Notes
+>
+Lorsqu'une @destination souhaite envoyer un message à une autre @destination, elle fournie à son routeur local la structure de @destination ainsi que les octets bruts du message en à envoyer. Le routeur détermine alors où l'envoyer, le distribue à travers des @tunnels sortant, en indiquant le point de terminaison auquel l'envoyer ainsi que le @tunnel entrant approprié, où il est de nouveau transmis à ce point de terminaison de @tunnel et rendu disponible pour réception sur la cible.
 
-Read more about the @I2NP [protocol](https://geti2p.net/en/docs/protocol/i2np) and [specification](https://geti2p.net/spec/i2np).
+### Remarque
+
+Apprenez en plu à propos du [protocole](https://geti2p.net/fr/docs/protocol/i2np) et des [spécifications](https://geti2p.net/spec/i2np) @I2NP.

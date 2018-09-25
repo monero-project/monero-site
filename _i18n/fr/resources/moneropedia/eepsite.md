@@ -1,30 +1,29 @@
 ---
-entry: "Eepsite"
+entry: "Site eep"
 tags: ["kovri"]
-terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service"]
-summary: "A website or service hosted within the I2P network"
+terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service", "site-eep", "service-caché", "site-en-ail", "service-en-ail"]
+summary: "Un site web ou service hébergé au sein du réseau I2P."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Is it [**EEP!** *(in response to the site's content)*](https://en.wikipedia.org/wiki/Onomatopoeia), or **end-to-end protocol**, or something else entirely different?
+Est-ce [**EEP!** *(en réponse au contenu du site)*](https://fr.wikipedia.org/wiki/Onomatop%C3%A9e), ou **end-to-end protocol** (*protocol de bout-en-bout*), ou quelque chose de totalement différent ?
 
-While the original definition of eepsite has been lost with time, its use-case remains: an eepsite is a website or service that is hosted within (and only accessible by) the @I2P network.
+Tandis que la définition originelle de site eep s'est perdue au fil du temps, son cas d'usage demeure : un site eep est un site web ou un service qui est hébergé (et uniquement accessible depuis) le réseau @I2P.
 
-### In-depth Information
+### Informations détaillées
 
-Alternate names include:
+d'autres noms comprennent :
 
-1. *Hidden Service*
-  - because the site/service is *hidden* within the @I2P network and can only be visited within the network
-2. *Garlic Site*
-  - because the website utilizes @I2P's @garlic-routing technology as a means of communicating with a client
-  - because the service is hosted as a website and not any other type of service
-3. *Garlic Service*
-  - because the service utilizes @I2P's @garlic-routing technology as a means of communicating with a client
-  - because the service is specific to services like IRC, email, or a Monero peer (but may also include websites)
+1. *Service Caché*
+  - Car le site ou service est *caché* au sein du réseau @I2P et ne peut être visité que depuis ce réseau
+2. *Site en ail*
+  - Car le site utilise la technologie de @routage-en-ail d'@I2P comme moyen de communication avec le client
+  - Car le service hébergé est un site web et pas un autre type de service
+3. *Service en ail*
+  - Car le service utilise la technologie de @routage-en-ail d'@I2P comme moyen de communication avec le client
+  - Car le service est propre à des services comme IRC, e-mail ou un correspondant Monero (mais peut également inclure des sites web)
 
-### Notes
+### Remarques
 
-To learn how to setup an Eepsite (Hidden Service, Garlic Site, Garlic Service) visit the @Kovri [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+Pour en savoir plus sur la mise en place d'un site eep (service caché, site en ail, service en ail), consultez le [guide utilisateur](https://gitlab.com/kovri-project/kovri-docs/blob/master/i18n/fr/user_guide.md) de @Kovri.

@@ -1,15 +1,14 @@
 ---
-entry: "Smart Mining"
-terms: ["smart-mining"]
-summary: "a process of having a throttled miner mine when it otherwise does not cause drawbacks"
+entry: "Extraction minière intelligente"
+terms: ["smart-mining", "extraction-minière-intelligente"]
+summary: "un processus selon lequel un mineur régulé mine lorsqu'il ne cause pas d'inconvénient"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-Smart mining is the process of having a throttled @miner mine when it otherwise does not cause drawbacks.
-Drawbacks include increases heat, slower machine, depleting battery, etc. The intent of smart mining is to increase network security by allowing as many people as possible to let the smart miner on all the time. For this to work, the miner must prove unobtrusive, or it will be turned off, depriving the Monero network from a little bit of security. As such, it is likely that a smart miner will mine slower than a normal miner on the same hardware.
+L'Extraction minière intelligente est le processus selon lequel un @mineur régulé mine lorsqu'il ne cause pas d'inconvénient
+Les inconvénients inclus une élévation de la température, une perte de performance de la machine, une batterie épuisée, etc. Le but de l'extraction minière intelligente est d'augmenter la sécurité du réseau en permettant au maximum de personnes de laisser l'extraction minière intelligente active en permanence. Pour que cela fonctionne, le mineur doit se montrer non intrusif, ou il serait désactivé, privant Monero d'un peu de sa sécurité. De ce fait, il est probable qu'un mineur intelligent mine moins rapidement qu'un mineur normal sur le même matériel.
 
-Smart mining is available in the official CLI and GUI wallet, which are available in the [downloads page](https://getmonero.org/downloads/).
+L'extraction minière intelligente est disponible dans les portefeuilles CLI et GUI officiels, qui sont disponible sur la [page téléchargements](/downloads/).
 
-It is hoped that the relative slowness of a smart miner (especially on low-power machines) will be offset by the large amount of people running a miner for a possible "lottery win", and thus increase the Monero network security by a non trivial amount. The increased hash rate from many different sources helps keep the Monero network decentralized.
+On espère que la lenteur relative d'un mineur intelligent (particulièrement sur les machines de faible puissance) sera contrebalancé par le grand nombre d'utilisateur utilisant le mineur pour un possible "gain à la loterie", et que la sécurité du réseau Monero sera augmenté d'une valeur non négligeable. L'augmentation du taux de hachage depuis de nombreuses sources différentes aide à la conservation de la décentralisation du réseau Monero.

@@ -1,25 +1,24 @@
 ---
-entry: "Garlic-Encryption"
+entry: "Chiffrement en ail"
 tags: ["kovri"]
-terms: ["Garlic-Encryption", "Layered-Encryption"]
-summary: "Layered encryption as implemented in Kovri / I2P"
+terms: ["Garlic-Encryption", "Layered-Encryption", "chiffrement-en-ail", "chiffrement-par-couche"]
+summary: "Chiffrement par couche tel qu'implémenté dans Kovri / I2P"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-@garlic-encryption is @I2P's implementation of @message based @layered-encryption (similar to flow-based [Onion-Routing](https://en.wikipedia.org/wiki/Onion_routing)).
+Le @chiffrement-en-ail est l'implémentation d'@I2P du @chiffrement-par-couche basé sur @messages (similaire au [routage en oignon](https://en.wikipedia.org/wiki/Onion_routing).
 
-By @encrypting @messages in layers, this allows a @message to be routed through a sequence of proxies without allowing the proxies (or any intermediaries) to read the contents of the @message. @Layered-Encryption is a fundamental feature in @Kovri, @I2P, and [Tor](https://torproject.org) and is the cornerstone for securing anonymity within these overlay-networks.
+En @chiffrant les @messages en couches, cela permet à un @message d'être routé à travers une séquence de mandataires sans leur permettre (ni à aucun intermédiaire) de lire le contenu du @message. Le @chiffrement-par-couche est une fonctionnalité fondamentale de @Kovri, @I2P et [Tor](https://torproject.org), et est la pierre angulaire garantissant l'anonymat au sein de ces surcouches réseaux.
 
-### In-depth information
+### Information détaillées
 
-For @garlic-encryption, the primary difference between @Kovri/@I2P and Tor is:
+Pour le @chiffrement-en-ail, les principales différences entre @Kovri / @I2P et tor sont :
 
-- @Kovri/@I2P bundles multiple @messages together to form garlic "cloves"
-  - any number of messages can be contained in a "clove" instead of *only* a single message
-- @Kovri/@I2P uses [ElGamal](https://en.wikipedia.org/wiki/ElGamal)/[AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) @encryption for @messages and @transports
+- @Kovri / @I2P groupe plusieurs @messages ensemble pour former des "gousses" d'ail
+  - autant de messages que nécessaires peuvent être concaténés dans une "gousse" au lieu de *seulement* un seul message
+- @Kovri / @I2P utilise le @chiffrement [ElGamal](https://fr.wikipedia.org/wiki/Cryptosyst%C3%A8me_de_ElGamal) et [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) pour les @messages et les @transports
 
-### Notes
+### Remarque
 
-For details, see @garlic-routing.
+Pourplus de détail, voir @routage-en-ail.

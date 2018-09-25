@@ -1,22 +1,21 @@
 ---
-entry: "Cryptocurrency"
-terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins"]
-summary: "a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank"
+entry: "Cryptomonnaie"
+terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins", "cryptomonnaie", "cryptomonnaies", "pièce-alternative", "pièces-alternatives"]
+summary: "Une monnaie numérique s'appuyant sur des méthodes de chiffrement pour réguler la génération de nouvelles pièces de monnaie et vérifier le transfert des fonds, opérant généralement indépendamment d'une banque centrale."
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-A digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank.
+Une monnaie numérique s'appuyant sur des méthodes de chiffrement pour réguler la génération de nouvelles pièces de monnaie et vérifier le transfert des fonds, opérant généralement indépendamment d'une banque centrale.
 
-### More Information
+### Plus d'Informations
 
-Cryptocurrency is the generic term for a large set of digital assets that use encryption techniques to generate units of currency, verify the transactions, and transfer value. Generally, cryptocurrencies are considered to be decentralized. Cryptocurrency should not be confused with virtual currency which is a type of digital money that is usually controlled by its creators or developers. Some examples of virtual currency are gametime in World of Warcraft, ROBUX in Roblox, reward points programs, or Ripple, all of which can be exchanged for currency or cash value, but are not considered cryptocurrency because they are centalized and controlled/issued by a single entity.  
+Cryptomonnaie est le terme générique d'un grand nombre de ressources numériques qui utilisent des techniques de chiffrement pour générer des unités de monnaie, vérifier les transactions, et transférer de la valeur. Généralement, les cryptomonnaies sont considérées décentralisées. Une cryptomonnaie ne doit pas être confondue avec une monnaie virtuelle qui est un type de monnaie numérique qui est habituellement contrôlée par ses créateurs et développeurs. Quelques exemples de monnaies virtuelles sont gametime dans World of Warcraft, ROBUX dans Roblox, les programmes de points de récompense, ou Ripple, tout cela peut être échangé contre de la monnaie ou des valeur marchandes, mais elles ne sont pas considérés comme des cryptomonnaies car elles sont centralisées, contrôlées et émises par une entité unique.
 
-Monero is one of many cryptocurrencies currently available. Other examples are Bitcoin, Litecoin, Dogecoin, Dash, Zcash, etc, but nearly all other cryptocurrencies lack features that make them a true money (most importantly @fungibility which is a requirement for it to be a store-of-value).
+Monero est l'une des nombreuses cryptomonnaies actuellement disponibles. D'autres exemples sont Bitcoin, Litecoin, Dogecoin, Dash, Zcash, etc. mais la plupart des autres cryptomonnaies sont exempte de fonctionnalités qui feraient d'elles de vrai monnaies (la plus importante étant la @fongibilité qui est un prérequis pour qu'elle soit une réserve de valeur).
 
-Not all cryptocurrencies operate the same, but they usually share the properties of decentralization, encryption, and the ability to send and receive transactions. Most are irreversible, pseudonymous, global, and permissionless. Most aim to be a store-of-value or be digital cash that allows you to transact.
+Toutes les cryptomonnaies ne fonctionnent pas de la même manière, mais elles partagent généralement des propriétés de décentralisation, chiffrement, et la capacité à envoyer et recevoir des transactions. La plupart sont irrévocables, pseudonymiques, globales, et libre d'utilisation. La plupart ont pour objectif d'être des réserves de valeurs ou de la monnaie numérique avec laquelle vous pouvez effectuer des transactions.
 
-Most cryptocurrencies (including Monero) use a distributed ledger (called a @blockchain) to keep track of previous transactions. The blockchain serves to tell other users on the network that transactions have happened. There are many different ways for cryptocurrencies to create their blockchain, and not all are the same. Monero uses proof-of-work to craft blocks, where other cryptocurrencies may use proof-of-stake or other consolidated methods.
+La plupart des cryptomonnaies (Monero comprit) utilise un registre distribué (appelé @chaîne-de-blocs) pour garder une trace des transactions précédentes. La chaine de bloc set à dire aux autres utilisateurs du réseau que les transactions ont eu lieu. Il y a différentes façons pour les cryptomonnaies de créer leurs chaîne de blocs, et elles ne sont pas toutes identiques. Monero utilise une preuve de travail pour façonner les blocs, lorsque d'autres cryptomonnaies peuvent utiliser une preuve de participation ou d'autres méthodes de consolidation.
 
-Ultimately, cryptocurrency is an attempt to create trustless value; that is free from borders, governments, and banks. Whether that be to transact or to be digital gold is up to the users of each.
+Finalement, une cryptomonnaie est une tentative de création d'une valeur sans besoin de confiance, libérée des frontières, des gouvernements et des banques. Qu'elle soit pour faire des transactions ou pour être de l'or numérique est à la discrétion de ses utilisateurs.

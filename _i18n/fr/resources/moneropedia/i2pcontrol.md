@@ -2,16 +2,15 @@
 entry: "I2PControl"
 tags: ["kovri"]
 terms: ["I2PControl"]
-summary: "An API inteface for Kovri and Java-I2P that allows simple remote control"
+summary: "Une interface API pour Kovri et I2P qui permet un simple contrôle distant"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Les Bases
 
-@I2Pcontrol is a [JSONRPC2](https://en.wikipedia.org/wiki/JSON-RPC) [API](https://en.wikipedia.org/wiki/Application_programming_interface) for @Kovri and @Java-I2P which allows an @I2PControl client to remote control/monitor a running instance.
+@I2Pcontrol est une [API](https://fr.wikipedia.org/wiki/Interface_de_programmation) [JSONRPC2](https://en.wikipedia.org/wiki/JSON-RPC) pour @Kovri et @I2P-Java qui permet à un client @I2PControl de contrôler ou surveiller une instance en fonctionnement.
 
-Two available @I2PControl clients are: [qtoopie](https://github.com/EinMByte/qtoopie) (C++ client) and [itoopie](https://github.com/i2p/i2p.itoopie) (Java client). Read `kovri.conf` to configure @I2PControl for @Kovri.
+Deux clients @I2PControl sont : [qtoopie](https://github.com/EinMByte/qtoopie) (client C++) et [itoopie](https://github.com/i2p/i2p.itoopie) (client Java). Consultez `kovri.conf` pour configurer @I2PControl pour @Kovri.
 
-### In-depth information
+### Informations détaillées
 
-Details and specification available on the [I2PControl](https://geti2p.net/en/docs/api/i2pcontrol) page.
+Les détails et spécifications sont disponibles sur la page [I2PControl](https://geti2p.net/fr/docs/api/i2pcontrol).
