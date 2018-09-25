@@ -3,8 +3,8 @@ layout: user-guide
 title: "Wallet RPC documentation"
 permalink: /resources/developer-guides/wallet-rpc.html
 mainVersion:
-  - "1"
   - "2"
+  - "1"
   - "0"
 ---
 {% t global.lang_tag %}
