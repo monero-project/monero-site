@@ -29,7 +29,7 @@ Where
 
 Whereas a key image in Monero is described by the following formula:
 
-`I =  `xHp(P)`
+`I = xHp(P)`
 
 Where
 
