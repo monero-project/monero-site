@@ -279,6 +279,8 @@
 - category: Goods
   id: goods
   merchants:
+    - name: Alagoria - Crypto Retail Shopping
+      url: https://alagoria.com/
     - name: All For Crypto
       url: https://allforcrypto.com
     - name: BitDials - Luxury Boutique
