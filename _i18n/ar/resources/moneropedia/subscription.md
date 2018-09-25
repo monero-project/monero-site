@@ -1,5 +1,4 @@
 ---
-entry: "Subscription"
 tags: ["kovri"]
 terms: ["Subscription"]
 summary: "A file used by address book which contains I2P hosts paired with I2P destinations"

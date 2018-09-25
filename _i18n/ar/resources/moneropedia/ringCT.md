@@ -1,5 +1,4 @@
 ---
-entry: "Ring CT"
 terms: ["ringCT", "ring-CT"]
 summary: "a way to hide the amount sent in a Monero transaction"
 ---

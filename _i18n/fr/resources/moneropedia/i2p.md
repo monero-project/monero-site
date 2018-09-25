@@ -1,5 +1,4 @@
 ---
-entry: "I2P"
 tags: ["kovri"]
 terms: ["I2P"]
 summary: "Le Projet Internet Invisible (Invisible Internet Project) : une surcouche réseau d'anonymisation"

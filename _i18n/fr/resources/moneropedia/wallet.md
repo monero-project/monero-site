@@ -1,5 +1,4 @@
 ---
-entry: "Portefeuille"
 terms: ["wallet", "wallets", "portefeuille", "portefeuilles"]
 summary: "Un portefeuille conserve les informations nécessaires pour envoyer et recevoir des Moneroj"
 ---

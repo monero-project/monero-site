@@ -1,5 +1,4 @@
 ---
-entry: "Transports"
 tags: ["kovri"]
 terms: ["Transports", "Transport", "Transporty", "Transport", "transportowi", "transportem", "transportami", "transportowej", "transportu"]
 summary: "Dwie zaszyfrowane warstwy transportu w Kovri."

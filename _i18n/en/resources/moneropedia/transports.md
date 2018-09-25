@@ -1,5 +1,4 @@
 ---
-entry: "Transports"
 tags: ["kovri"]
 terms: ["Transports", "Transport"]
 summary: "The two encrypted transport layers for Kovri"

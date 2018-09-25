@@ -1,5 +1,4 @@
 ---
-entry: "Smart Mining"
 terms: ["smart-mining"]
 summary: "Proces limitowania wydobycia w celu uniknięcia niedogodności."
 ---

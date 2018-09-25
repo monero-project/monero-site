@@ -1,5 +1,4 @@
 ---
-entry: "Extraction minière"
 terms: ["mining", "miner", "miners", "extraction-minière", "mineur", "mineurs"]
 summary: "Le processus de calcul cryptographique d'une preuve mathématique pour un bloc, contenant une quantité de transactions, qui sont alors ajoutés à la chaîne de blocs"
 ---

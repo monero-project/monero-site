@@ -1,5 +1,4 @@
 ---
-entry: "Blok"
 terms: ["block", "blocks", "blok", "bloku", "blokiem", "bloków"]
 summary: "Zbiornik transakcji, jego sekwencja tworzy łańcuch bloków."
 ---

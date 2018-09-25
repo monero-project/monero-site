@@ -1,5 +1,4 @@
 ---
-entry: "Lot-de-baux"
 tags: ["kovri"]
 terms: ["LeaseSet", "LeaseSets", "lot-de-baux", "lots-de-baux"]
 summary: "Contient tous les baux actuellement autorisés pour une destination I2P spécifique"

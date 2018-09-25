@@ -1,5 +1,4 @@
 ---
-entry: "Transactions"
 terms: ["transaction", "transactions"]
 summary: "un conteneur signé cryptographiquement qui détaille le transfert de Moneroj à un destinataire (ou des destinataires)"
 ---

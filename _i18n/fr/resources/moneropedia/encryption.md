@@ -1,5 +1,4 @@
 ---
-entry: "Chiffrement"
 tags: ["kovri"]
 terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting", "chiffrement", "chiffré", "chiffrée", "chiffrés", "chiffrées", "chiffrer", "chiffrant", "déchiffrement", "déchiffré", "déchiffrée", "déchiffrés", "déchiffrées", "déchiffrer", "déchiffrant"]
 summary: "Le processus d'encodage de messages ou d'informations de sorte que seule les parties autorisés puissent les décoder et les lire."

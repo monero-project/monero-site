@@ -1,5 +1,4 @@
 ---
-entry: "Lease-Set"
 tags: ["kovri"]
 terms: ["LeaseSet", "LeaseSets"]
 summary: "Contains all currently authorized Leases for a particular I2P Destination"

@@ -1,5 +1,4 @@
 ---
-entry: "Canonically-unique host"
 tags: ["kovri"]
 terms: ["Canonically-unique-host", "hôte-canonique-unique", "hôtes-canoniques-uniques"]
 summary: "Un hôte qui est résolu canoniquement en une adresse ou un groupe d'adresses."

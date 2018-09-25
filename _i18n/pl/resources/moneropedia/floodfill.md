@@ -1,5 +1,4 @@
 ---
-entry: "Floodfill"
 tags: ["kovri"]
 terms: ["Floodfill"]
 summary: "Router sieci I2P, który utrzymuje bazę danych rozproszonej sieci."

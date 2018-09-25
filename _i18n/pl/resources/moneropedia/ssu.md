@@ -1,5 +1,4 @@
 ---
-entry: "SSU"
 tags: ["kovri"]
 terms: ["SSU"]
 summary: "Bezpieczny Semi niezawodny Protokół Pakietów Użytkownika: jeden z dwóch środków transportu Kovri."

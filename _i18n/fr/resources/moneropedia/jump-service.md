@@ -1,5 +1,4 @@
 ---
-entry: "Service de rebond"
 tags: ["kovri"]
 terms: ["Jump-Service", "service-de-rebond"]
 summary: "Un service sur un site I2P qui ajoute une adresse à votre carnet d'adresse."

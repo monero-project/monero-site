@@ -1,5 +1,4 @@
 ---
-entry: "Węzeł"
 terms: ["node", "nodes", "full-node", "full-nodes", "węzeł", "węzła", "węzłowi", "węzły", "węzłom", "węzłami", "węzłem", "węzłów"]
 summary: "Urządzenie internetowe uruchamiające oprogramowanie Monero, posiadające pełną kopię łańcuchów bloków monero i aktywnie biorące udział w sieci Monero."
 ---

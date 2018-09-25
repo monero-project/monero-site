@@ -1,5 +1,4 @@
 ---
-entry: "I2PControl"
 tags: ["kovri"]
 terms: ["I2PControl"]
 summary: "An API inteface for Kovri and Java-I2P that allows simple remote control"

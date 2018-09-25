@@ -1,5 +1,4 @@
 ---
-entry: "Carnet d'Adresses"
 tags: ["kovri"]
 terms: ["Address-Book", "carnet-d'adresses"]
 summary: "Vous permet de visiter des sites et services I2P du domaine .i2p"

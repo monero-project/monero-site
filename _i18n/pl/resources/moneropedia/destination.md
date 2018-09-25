@@ -1,5 +1,4 @@
 ---
-entry: "Węzeł docelowy"
 tags: ["kovri"]
 terms: ["Destination", "Destinations", "węzeł-docelowy", "węzła-docelowego", "węźle-docelowym", "węzłów-docelowych"]
 summary: "Adres internetowy będący punktem końcowym, zarówno lokalnym jak i odległym."

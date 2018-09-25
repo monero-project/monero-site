@@ -1,5 +1,4 @@
 ---
-entry: "Smart Mining"
 terms: ["smart-mining"]
 summary: "a process of having a throttled miner mine when it otherwise does not cause drawbacks"
 ---

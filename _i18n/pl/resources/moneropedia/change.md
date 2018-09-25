@@ -1,5 +1,4 @@
 ---
-entry: "Reszta"
 terms: ["change", "reszta", "reszty", "reszcie"]
 summary: "Monero wysłane jako część transakcji, która jest zwracana na twoje konto zamiast być przelana do innego odbiorcy."
 ---

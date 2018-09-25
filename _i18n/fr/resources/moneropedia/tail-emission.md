@@ -1,5 +1,4 @@
 ---
-entry: "Émission résiduelle"
 terms: ["Tail-Emission", "émission-résiduelle"]
 summary: "la récompense de bloc à l'issue de la courbe d'émission"
 ---

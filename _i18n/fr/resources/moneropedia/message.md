@@ -1,5 +1,4 @@
 ---
-entry: "Message"
 tags: ["kovri"]
 terms: ["Message", "Messages"]
 summary: "Le mécanisme à travers lequel les informations circulent au sein d'I2P"

@@ -1,5 +1,4 @@
 ---
-entry: "Interne au réseau"
 tags: ["kovri"]
 terms: ["In-net", "interne-au-réseau", "internes-au-réseau"]
 summary: "Au sein du réseau I2P"

@@ -1,5 +1,4 @@
 ---
-entry: "Zamienialność"
 terms: ["fungibility", "fungible", "zamienialność", "zamienialności", "zamienialnością", "zamienną"]
 summary: "Charakterystyka waluty, gdzie dwie jednostki mogą zostać zamienione jedna na drugą."
 ---

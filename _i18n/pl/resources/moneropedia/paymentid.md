@@ -1,5 +1,4 @@
 ---
-entry: "Numer identyfikacyjny płatności"
 terms: ["payment-ID", "payment-IDs", "numer-identyfikacyjny-płatności", "numeru-identyfikacyjnego-płatności", "numerem-identyfikacyjnym-płatności", "numerze-identyfikacyjnym-płatności", "numery-identyfikacyjne-płatności", "numerom-identyfikacyjnym-płatności", "numerach-identyfikacyjnych-płatności"]
 summary: "Opcjonalny znacznik dodawany w celu identyfikacji transakcji pomiędzy użytkownikami, składający się z 64 heksadecymalnych znaków."
 ---

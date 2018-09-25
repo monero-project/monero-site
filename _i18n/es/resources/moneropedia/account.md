@@ -1,5 +1,4 @@
 ---
-entry: "Account"
 terms: ["account", "accounts", "wallet", "wallets"]
 summary: "similar in function to a bank account, contains all of your sent and received transactions"
 ---

@@ -1,5 +1,4 @@
 ---
-entry: "Réensemencement"
 tags: ["kovri"]
 terms: ["Reseed", "réensemencement"]
 summary: "La méthode que Kovri utilise pour s'amorcer sur le réseau I2P"

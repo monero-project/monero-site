@@ -1,5 +1,4 @@
 ---
-entry: "Adres"
 terms: ["address", "addresses", "adres", "adresu", "adresie"]
 summary: "Alias nazwy adresu, np. donate.getmonero.org lub zestaw 95 znaków zaczynający się od 4"
 ---

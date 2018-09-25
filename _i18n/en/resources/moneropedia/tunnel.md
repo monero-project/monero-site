@@ -1,5 +1,4 @@
 ---
-entry: "Tunnel"
 tags: ["kovri"]
 terms: ["Tunnel", "Tunnels"]
 summary: "Uni-directional virtual paths that pass messages through a defined sequence of I2P routers"

@@ -1,5 +1,4 @@
 ---
-entry: "Data Directory"
 tags: ["kovri"]
 terms: ["Data-Directory"]
 summary: "Where essential kovri data for runtime is stored"

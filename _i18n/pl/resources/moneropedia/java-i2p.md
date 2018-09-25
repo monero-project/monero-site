@@ -1,5 +1,4 @@
 ---
-entry: "Java I2P"
 tags: ["kovri"]
 terms: ["Java-I2P"]
 summary: "Oryginalna implementacja sieci I2P, napisana w Javie."

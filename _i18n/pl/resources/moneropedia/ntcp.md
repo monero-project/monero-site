@@ -1,5 +1,4 @@
 ---
-entry: "NTCP"
 tags: ["kovri"]
 terms: ["NTCP"]
 summary: "Protokół Kontroli Transmisji oparty na nieblokowaniu wejścia/wyjścia: jeden z dwóch środków transportów Kovri."

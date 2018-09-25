@@ -1,5 +1,4 @@
 ---
-entry: "Szyfrowanie czosnkowe"
 tags: ["kovri"]
 terms: ["Garlic-Encryption", "Layered-Encryption", "szyfrowanie-czosnkowe", "szyfrowaniu-czosnkowemu", "szyfrowaniem-czosnkowym", "szyfrowanie-warstwowe", "szyfrowaniem-warstwowym", "szyfrowaniu-warstwowemu", "szyfrowania-warstwowego"]
 summary: "Szyfrowanie warstwowe wdrożone w Kovri / I2P"

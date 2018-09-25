@@ -1,5 +1,4 @@
 ---
-entry: "Portfel"
 terms: ["wallet", "wallets", "portfel", "portfela"]
 summary: "Portfel przechowuje informacje niezbędne do wysyłania i otrzymywanie Monero."
 ---

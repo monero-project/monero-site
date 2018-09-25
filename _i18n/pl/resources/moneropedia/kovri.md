@@ -1,5 +1,4 @@
 ---
-entry: "Kovri"
 tags: ["kovri"]
 terms: ["Kovri"]
 summary: "Implementacja routera C++ dla Monero w sieci I2P."

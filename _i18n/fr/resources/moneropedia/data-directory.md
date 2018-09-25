@@ -1,5 +1,4 @@
 ---
-entry: "Répertoire de Données"
 tags: ["kovri"]
 terms: ["Data-Directory", "répertoire-de-données"]
 summary: "Où les données essentielles pour l'exécution de kovri sont stockées."

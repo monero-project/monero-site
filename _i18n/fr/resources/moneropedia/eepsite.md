@@ -1,5 +1,4 @@
 ---
-entry: "Site eep"
 tags: ["kovri"]
 terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service", "site-eep", "service-caché", "site-en-ail", "service-en-ail"]
 summary: "Un site web ou service hébergé au sein du réseau I2P."

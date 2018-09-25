@@ -1,5 +1,4 @@
 ---
-entry: "Książka adresowa"
 tags: ["kovri"]
 terms: ["Address-Book", "książka-adresowa", "książce-adresowej", "książki-adresowej", "książkę-adresową", "książki-adresowe"]
 summary: "Pozwala na odwiedzanie stron/serwisów w sieci I2P w domenie .i2p."

@@ -1,5 +1,4 @@
 ---
-entry: "In-net"
 tags: ["kovri"]
 terms: ["In-net"]
 summary: "Within the I2P network"

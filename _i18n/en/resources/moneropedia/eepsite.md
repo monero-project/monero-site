@@ -1,5 +1,4 @@
 ---
-entry: "Eepsite"
 tags: ["kovri"]
 terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service"]
 summary: "A website or service hosted within the I2P network"

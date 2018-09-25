@@ -1,5 +1,4 @@
 ---
-entry: "Fluffy Blocks"
 terms: ["fluffy blocks", "fluffyblocks"]
 summary: "a way of saving bandwidth when sending new blocks around the network"
 ---

@@ -1,5 +1,4 @@
 ---
-entry: "Transaction Unlock Time"
 terms: ["unlock-time", "czasem-na-odblokowanie"]
 summary: "Specjalny rodzaj transakcji, gdzie odbiorca może wydać otrzymane środki dopiero po dacie ustalonej przez nadawcę."
 ---

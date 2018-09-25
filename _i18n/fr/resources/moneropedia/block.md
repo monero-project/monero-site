@@ -1,5 +1,4 @@
 ---
-entry: "Bloc"
 terms: ["block", "blocks", "bloc", "blocs"]
 summary: "Un conteneur de transactions, dont une séquence forme une chaîne de blocs."
 ---

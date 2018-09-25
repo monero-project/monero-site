@@ -1,5 +1,4 @@
 ---
-entry: "Kovri"
 tags: ["kovri"]
 terms: ["Kovri"]
 summary: "Monero's C++ router implementation of the I2P network"

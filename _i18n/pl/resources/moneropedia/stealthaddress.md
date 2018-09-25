@@ -1,5 +1,4 @@
 ---
-entry: "Ukryty adres"
 terms: ["stealth-address", "stealth-addresses", "ukryty-adres", "ukrytym-adresie", "ukrytego-adresu", "ukrytym-adresem"]
 summary: "Automatyczny jednorazowy adres każdej transakcji."
 ---

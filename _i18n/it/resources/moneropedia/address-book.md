@@ -1,5 +1,4 @@
 ---
-entry: "Address Book"
 tags: ["kovri"]
 terms: ["Address-Book"]
 summary: "Allows you to visit I2P websites/services that have the .i2p domain"

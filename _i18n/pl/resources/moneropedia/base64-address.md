@@ -1,5 +1,4 @@
 ---
-entry: "Adres Base64"
 tags: ["kovri"]
 terms: ["Base64-address", "Base64-addresses", "adres-base64", "adresu-base64", "adresie-base64", "adresem-base64"]
 summary: "Zakodowany w Base64 adres I2P"

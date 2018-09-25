@@ -1,5 +1,4 @@
 ---
-entry: "Clearnet"
 tags: ["kovri"]
 terms: ["Clearnet", "Clearnecie", "clearnetu"]
 summary: "Internet, na którym zbudowane są anonimowe sieci nakładkowe"

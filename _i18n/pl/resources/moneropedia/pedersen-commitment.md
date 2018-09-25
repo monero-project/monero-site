@@ -1,5 +1,4 @@
 ---
-entry: "Zobowiązanie Pedersena"
 terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments", "zobowiązanie", "zobowiązania", "zobowiązaniu", "zobowiązaniom", "zobowiązanie-pedersena", "zobowiązaniu-pedersena", "zobowiązaniem-pedersena"]
 summary: "Algorytmy kryptograficzne pozwalające osobie udowadniającej na zobowiązanie się do pewnej wartości bez ujawniania jej ani nie będąc w stanie jej zmienić."
 ---

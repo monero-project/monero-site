@@ -1,5 +1,4 @@
 ---
-entry: "Taille de cercle"
 terms: ["ring-size", "taille-de-cercle"]
 summary: "Le nombre total de signataires possibles dans une signature de cercle"
 ---

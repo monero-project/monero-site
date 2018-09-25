@@ -1,5 +1,4 @@
 ---
-entry: "Address"
 terms: ["address", "addresses"]
 summary: "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
 ---

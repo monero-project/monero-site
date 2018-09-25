@@ -1,5 +1,4 @@
 ---
-entry: "Souscription"
 tags: ["kovri"]
 terms: ["Subscription", "souscription", "souscriptions"]
 summary: "Un fichier utilisé par le carnet d'adresses qui contient les hôtes I2P associés aux destinations I2P"

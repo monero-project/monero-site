@@ -1,5 +1,4 @@
 ---
-entry: "Wydobycie"
 terms: ["mining", "miner", "miners", "wydobycie", "wydobywanie", "wydobywania", "wydobycia", "górnik", "górnicy", "górnika", "górnikowi", "górnikom", "górnikami", "górników", "wydobyciem"]
 summary: "Proces kryptograficznego obliczania matematycznego dowodu do bloku zawierającego wiele transakcji, który następnie jest dodawany do łańcucha bloków."
 ---
