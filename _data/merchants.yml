@@ -103,6 +103,8 @@
       url: https://monero-merchants.com
     - name: Monero WooCommerce Extension (PHP)
       url: https://github.com/monero-integrations/monerowp
+    - name: MyCryptoCheckout
+      url: https://mycryptocheckout.com
 - category: Libraries and Helpers
   id: libraries
   merchants:
