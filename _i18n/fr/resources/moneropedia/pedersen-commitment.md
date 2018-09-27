@@ -1,5 +1,4 @@
 ---
-entry: "Engagement de Pedersen"
 terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments", "engagement", "engagements", "engagement-de-pedersen", "engagements-de-pedersen"]
 summary: "Les engagements de Pedersen sont des algorythmes de cryptographie qui permettent à un prouveur de s'engager sur une certaine valeur sans la révéler ou pouvoir la modifier"
 ---

@@ -1,5 +1,4 @@
 ---
-entry: "Phrase mnémonique"
 terms: ["mnemonic-seed", "mnemonic", "phrase-mnémonique", "mnémonique"]
 summary: "Une phrase de 13 ou 25 mots utilisé pour sauvegarder votre compte Monero, disponible dans une quantité de langues"
 ---

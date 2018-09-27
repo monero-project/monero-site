@@ -1,5 +1,4 @@
 ---
-entry: "OpenAlias"
 terms: ["OpenAlias"]
 summary: "Standard pozwalający na korzystanie z adresu e-mail lub domeny internetowej, np. donate@getmonero.org lub donate.getmonero.org,  w celu płatności, zamiast adresu numerycznego."
 ---

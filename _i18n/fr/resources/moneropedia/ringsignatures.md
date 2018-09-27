@@ -1,5 +1,4 @@
 ---
-entry: "Signature de Cercle"
 terms: ["ring-signature", "ring-signatures", "signature-de-cercle", "signatures-de-cercle"]
 summary: "Un groupe de signatures cryptographiques qui contiennent au moins un participant réel, mais aucun moyen de déterminer laquelle est la vraie car elles paraissent toutes valides"
 ---

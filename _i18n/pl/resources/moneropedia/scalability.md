@@ -1,5 +1,4 @@
 ---
-entry: "Skalowalność"
 terms: ["scalability", "skalowalność", "skalowalności", "skalnowalnością"]
 summary: "Potencjał wzrostu Monero oraz metoda zwiększania efektywności."
 ---

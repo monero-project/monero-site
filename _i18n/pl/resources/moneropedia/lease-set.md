@@ -1,5 +1,4 @@
 ---
-entry: "Lease-Set"
 tags: ["kovri"]
 terms: ["LeaseSet", "LeaseSets"]
 summary: "Zestaw wszystkich aktualnie zautoryzowanych leasów dla pojedynczego węzła docelowego I2P."

@@ -1,5 +1,4 @@
 ---
-entry: "Clef d'audit"
 terms: ["view-key", "view-keys", "clef-d'audit", "clefs-d'audit"]
 summary: "l'une des deux paires de clefs cryptographiques publiques et privées dont disposent chaque compte, la clef privée d'audit étant nécessaire pour voir toutes les transactions liées à un compte"
 ---

@@ -1,5 +1,4 @@
 ---
-entry: "Dénominations"
 terms: ["denominations", "subunits", "tacoshi", "piconero", "nanonero", "micronero", "millinero", "centinero", "decinero","decanero","hectonero","kilonero","meganero","giganero", "dénominations", "coupures", "sous-unités"]
 summary: "Une dénomination ou coupure est une description exacte d'un montant d'une monnaie. Il s'agit souvent d'une sous-unité de la monnaie. Par exemple, traditionnellement, un centime est 1/100ème d'une unité de monnaie précise."
 ---

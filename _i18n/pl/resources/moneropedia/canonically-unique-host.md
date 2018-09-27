@@ -1,5 +1,4 @@
 ---
-entry: "Zasadniczy unikalny host"
 tags: ["kovri"]
 terms: ["Canonically-unique-host", "zasadniczy-unikalny-host", "zasadniczego-unikalnego-hosta", "zasadniczym-unikalnym-hoście", "zasadniczego-unikalnego-hostu", "zasadniczym-unikalnym-hostem", "zasadnicze-unikalne-hosty"]
 summary: "Host ogólnie przyjęty jako przypisany do adresu lub zestawu adresów"

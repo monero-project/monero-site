@@ -1,5 +1,4 @@
 ---
-entry: "Garlic-Encryption"
 tags: ["kovri"]
 terms: ["Garlic-Encryption", "Layered-Encryption"]
 summary: "Layered encryption as implemented in Kovri / I2P"

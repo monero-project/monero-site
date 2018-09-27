@@ -1,5 +1,4 @@
 ---
-entry: "Subscription"
 tags: ["kovri"]
 terms: ["Subscription"]
 summary: "A file used by address book which contains I2P hosts paired with I2P destinations"
@@ -44,4 +43,4 @@ A *private* subscription:
 You can use a @jump-service to manually update your private subscription. The updated subscription will then be fed into the @address-book for you to use.
 
 ### Notes
-To learn how to subscribe to multiple subscriptions, see the [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+To learn how to subscribe to multiple subscriptions, see the [user-guide](https://gitlab.com/kovri-project/kovri-docs/blob/master/i18n/en/user_guide.md).

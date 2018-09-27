@@ -1,5 +1,4 @@
 ---
-entry: "Reseed"
 tags: ["kovri"]
 terms: ["Reseed"]
 summary: "The method of which Kovri uses to bootstrap into the I2P network"

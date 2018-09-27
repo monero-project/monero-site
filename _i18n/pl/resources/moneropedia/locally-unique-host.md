@@ -1,5 +1,4 @@
 ---
-entry: "Lokalnie unikalny host"
 tags: ["kovri"]
 terms: ["Locally-unique-host", "lokalnie-unikalny-host", "lokalnie-unikalnego-hosta", "lokalnie-unikalnym-hostem", "lokalnie-unikalnym-hoście", "lokalnym-unikalnym-hostem", "lokalnego-unikalnego-hosta"]
 summary: "Host zdefiniowany i ustalony wyłącznie przez ciebie."

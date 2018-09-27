@@ -1,5 +1,4 @@
 ---
-entry: "Nœud d'amorce"
 terms: ["bootstrap-node", "bootstrap-nodes", "nœud-d'amorce", "nœuds-d'amorce"]
 summary: "Un nœud auquel un démon se connecte pour permettre l'utilisation immédiate des portefeuilles pendant sa synchronisation."
 ---

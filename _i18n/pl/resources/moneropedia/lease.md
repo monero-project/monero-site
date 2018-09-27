@@ -1,5 +1,4 @@
 ---
-entry: "Lease"
 tags: ["kovri"]
 terms: ["Lease", "Leases", "leasów"]
 summary: "Autoryzuje tunel sieci I2P do otrzymywania wiadomości przeznaczonych do węzła docelowego."

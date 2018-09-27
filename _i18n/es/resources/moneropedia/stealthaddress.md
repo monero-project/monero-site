@@ -1,5 +1,4 @@
 ---
-entry: "Stealth Address"
 terms: ["stealth-address", "stealth-addresses"]
 summary: "automatic one-time addresses for every transaction"
 ---

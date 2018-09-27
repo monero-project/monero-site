@@ -1,5 +1,4 @@
 ---
-entry: "Transactions confidentielles de cercle"
 terms: ["ringCT", "ring-CT", "transactions-confidentielles-de-cercle", "transaction-confidentielle-de-cercle"]
 summary: "Un moyen de masquer le montant envoyé dans une transaction Monero"
 ---

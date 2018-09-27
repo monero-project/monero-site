@@ -1,5 +1,4 @@
 ---
-entry: "Clef de dépense"
 terms: ["spend-key", "spend-keys", "clef-de-dépense", "clefs-de-dépense"]
 summary: "l'une des deux paires de clefs cryptographiques publiques et privées dont disposent chaque comptes, la clef *privée* de dépense permettant de dépensez tous les fonds du compte"
 ---

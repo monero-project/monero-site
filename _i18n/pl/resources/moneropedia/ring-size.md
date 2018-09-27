@@ -1,5 +1,4 @@
 ---
-entry: "Rozmiar pierścienia"
 terms: ["ring-size", "rozmiar-pierścienia", "rozmiarowi-pierścienia", "rozmiarze-pierścienia", "rozmiarem-pierścienia"]
 summary: "Liczba wszystkich możliwych osób podpisujących za pomocą podpisu pierścieniowego."
 ---

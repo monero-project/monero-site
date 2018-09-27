@@ -1,5 +1,4 @@
 ---
-entry: "Network Database"
 tags: ["kovri"]
 terms: ["Network-Database"]
 summary: "A distributed database which contains needed router information so the network can stay intact"

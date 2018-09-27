@@ -1,5 +1,4 @@
 ---
-entry: "Clearnet"
 tags: ["kovri"]
 terms: ["Clearnet", "réseau-en-clair"]
 summary: "L'Internet sur lequel les surcouches réseaux anonymes sont construites."

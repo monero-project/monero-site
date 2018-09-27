@@ -1,5 +1,4 @@
 ---
-entry: "Subskrypcja"
 tags: ["kovri"]
 terms: ["Subscription", "subskrypcja", "subskrypcji", "subskrypcją", "subskrypcję", "subsckrypcji"]
 summary: "Plik używany przez książkę adresową zawierający hosty I2P sparowane z węzłami docelowymi I2P."
@@ -44,4 +43,4 @@ Możesz skorzystać z @opcji-przeskakiwania, aby ręcznie zaktualizować swoją 
 
 ### Adnotacje
 
-Aby dowiedzieć się, w jaki sposób zapisać się do wielu subskrypcji, przejdź do [przewodnika dla użytkowników](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+Aby dowiedzieć się, w jaki sposób zapisać się do wielu subskrypcji, przejdź do [przewodnika dla użytkowników](https://gitlab.com/kovri-project/kovri-docs/blob/master/i18n/en/user_guide.md).

@@ -1,5 +1,4 @@
 ---
-entry: "Transakcja"
 terms: ["transaction", "transactions", "transakcja", "transakcję", "transakcji", "transakcją", "transakcje", "transakcjom", "transakcjami"]
 summary: "Kryptograficznie podpisany zbiornik, który wyszczególnia transfer Monero do odbiorcy lub odbiorców."
 ---

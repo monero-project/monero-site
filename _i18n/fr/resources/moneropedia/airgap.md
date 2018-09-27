@@ -1,5 +1,4 @@
 ---
-entry: "Air-gap"
 terms: ["airgap", "air-gap"]
 summary: "Un air-gap est une mesure de sécurité pour séparer un ordinateur ou périphérique de tout autre réseau, tel qu'Internet."
 ---

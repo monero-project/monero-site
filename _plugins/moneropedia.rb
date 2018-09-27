@@ -33,6 +33,7 @@ module Jekyll
       @@moneropedia = Hash.new
       @@moneropedia_ordered = Hash.new
       @@language = Array.new
+      @@localConfig = Hash.new
 
       def convert(content)
         # Building language from config
@@ -42,6 +43,8 @@ module Jekyll
             # Each country code has its own hash
             @@moneropedia[lang] = Array.new
             @@moneropedia_ordered[lang] = Hash.new
+            @@localConfig[lang] = Hash.new
+            @@localConfig[lang] = SafeYAML.load_file(File.join(@config["source"], "/_i18n/", lang + ".yml"))
           end
         end
 
@@ -60,8 +63,10 @@ module Jekyll
               entry = SafeYAML.load_file(entry_file)
 
               if !entry.empty?
-                @@moneropedia[lang].push({ :terms => entry['terms'], :summary => entry['summary'], :file => File.basename(entry_file, ".*") })
-                @@moneropedia_ordered[lang] = @@moneropedia_ordered[lang].merge({ entry['entry'] => File.basename(entry_file, ".*") })
+                baseName = File.basename(entry_file, ".*")
+                displayName = @@localConfig[lang]["moneropedia"]["entries"][baseName]
+                @@moneropedia[lang].push({ :terms => entry['terms'], :summary => entry['summary'], :file => baseName })
+                @@moneropedia_ordered[lang] = @@moneropedia_ordered[lang].merge({ displayName => baseName })
               end
 
             end

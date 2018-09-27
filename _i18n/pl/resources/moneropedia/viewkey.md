@@ -1,5 +1,4 @@
 ---
-entry: "Klucz widoczności"
 terms: ["view-key", "view-keys", "klucz-widoczności", "klucza-widoczności", "kluczem-widoczności"]
 summary: "Jeden z dwóch rodzajów prywanych i publicznych kluczy kryptograficznych przypisanych do każdego konta. Prywatny klucz widoczności jest wymagany do wyświetlenia wszystkich transakcji danego konta."
 ---

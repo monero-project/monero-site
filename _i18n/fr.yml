@@ -541,6 +541,72 @@ moneropedia:
   add_new_text1: Si vous souhaitez ajouter ou modifier une entrée, merci
   add_new_link: d'ouvrir une *issue* sur le dépôt GitHub du site web
   add_new_text2: ou de proposer vos changement par *pull request*
+  entries:
+    account: Compte
+    address-book: Carnet d'Adresses
+    address: Adresse
+    airgap: Air-gap
+    atomic-units: Unités Atomiques
+    base32-address: Adresse Base32
+    base64-address: Adresse Base64
+    blockchain: Chaîne de blocs
+    block: Bloc
+    bootstrap-node: Nœud d'amorce
+    canonically-unique-host: Canonically-unique host
+    change: Monnaie
+    clearnet: Réseau en clair
+    coinbase: Transaction de la base de la pièce
+    consensus: Consensus
+    cryptocurrency: Cryptomonnaie
+    data-directory: Répertoire de Données
+    denominations: Dénominations
+    destination: Destination
+    eepsite: Site eep
+    encryption: Chiffrement
+    floodfill: Floodfill
+    fluffyblocks: Fluffy Blocks
+    fungibility: Fongibilité
+    garlic-encryption: Chiffrement en ail
+    garlic-routing: Routage en ail
+    i2np: I2NP
+    i2pcontrol: I2PControl
+    i2p: I2P
+    in-net: Interne au réseau
+    java-i2p: I2P Java
+    jump-service: Service de rebond
+    kovri: Kovri
+    lease: Bail
+    lease-set: Lot-de-baux
+    locally-unique-host: Hôte unique localement
+    message: Message
+    mining: Extraction minière
+    mnemonicseed: Phrase mnémonique
+    network-database: Base de données réseau
+    node: Nœud
+    ntcp: NTCP
+    openalias: OpenAlias
+    paperwallet: portefeuille Papier
+    paymentid: ID de paiement
+    pedersen-commitment: Engagement de Pedersen
+    reseed: Réensemencement
+    ringCT: Transactions confidentielles de cercle
+    ringsignatures: Signature de Cercle
+    ring-size: Taille de cercle
+    router-info: Infos des routeurs
+    scalability: Évolutivité
+    signature: Signature Cryptographique
+    smartmining: Extraction minière intelligente
+    spendkey: Clef de dépense
+    ssu: USS
+    stealthaddress: Adresses Furtives
+    subscription: Souscription
+    tail-emission: Émission résiduelle
+    transaction: Transactions
+    transports: Transports
+    tunnel: Tunnel
+    unlocktime: Durée de déverrouillage d'une transaction
+    viewkey: Clef d'audit
+    wallet: Portefeuille
 
 blog:
   title_1: Tous les

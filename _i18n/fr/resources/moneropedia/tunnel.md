@@ -1,5 +1,4 @@
 ---
-entry: "Tunnel"
 tags: ["kovri"]
 terms: ["Tunnel", "Tunnels"]
 summary: "Chemins virtuels unidirectionnels qui transmettent les messages à travers une séquence de routeurs I2P définie"

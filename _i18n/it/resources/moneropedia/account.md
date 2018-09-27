@@ -1,6 +1,4 @@
 ---
-layout: moneropedia
-entry: "Conti"
 terms: ["account", "accounts", "wallet", "wallets", "conto", "conti", "portafoglio", "portafogli"]
 summary: "funzionalmente simile ad un conto bancario, contiene tutte le transazioni in ingresso e in uscita"
 ---

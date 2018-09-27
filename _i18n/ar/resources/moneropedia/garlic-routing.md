@@ -1,5 +1,4 @@
 ---
-entry: "Garlic Routing"
 tags: ["kovri"]
 terms: ["Garlic-Routing"]
 summary: "Routing technology as implemented in Kovri"

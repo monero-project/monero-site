@@ -1,5 +1,4 @@
 ---
-entry: "Locally-unique host"
 tags: ["kovri"]
 terms: ["Locally-unique-host"]
 summary: "A host defined by you and resolved only by you"

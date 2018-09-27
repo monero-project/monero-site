@@ -1,5 +1,4 @@
 ---
-entry: "Adresses Furtives"
 terms: ["stealth-address", "stealth-addresses", "adresse-furtive", "adresses-furtives"]
 summary: "Adresses à usage unique automatiques pour chaque transaction"
 ---

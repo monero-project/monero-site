@@ -1,5 +1,4 @@
 ---
-entry: "Message"
 tags: ["kovri"]
 terms: ["Message", "Messages", "wiadomość", "wiadomości", "wiadomością", "wiadomościami", "wiadomościom", "wiadomościach"]
 summary: "Mechanizm, dzięki któremu informacje są przekazywane wewnątrz sieci I2P."

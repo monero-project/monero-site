@@ -1,5 +1,4 @@
 ---
-entry: "Destination"
 tags: ["kovri"]
 terms: ["Destination", "Destinations"]
 summary: "Une adresse sur le réseau qui sert comme point de terminaison (soit local, soit distant)."

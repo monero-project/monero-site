@@ -1,5 +1,4 @@
 ---
-entry: "SSU"
 tags: ["kovri"]
 terms: ["SSU"]
 summary: "Secure Semi-reliable UDP: one of two Kovri transports"

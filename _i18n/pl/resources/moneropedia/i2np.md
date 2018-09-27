@@ -1,5 +1,4 @@
 ---
-entry: "I2NP"
 tags: ["kovri"]
 terms: ["I2NP"]
 summary: "Protokół sieci I2P: mechanizm, za pomocą ktąrego wiadomości I2NP są przesyłane do sieci I2P."

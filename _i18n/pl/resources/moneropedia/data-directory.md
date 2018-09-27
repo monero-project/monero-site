@@ -1,5 +1,4 @@
 ---
-entry: "Katalog danych"
 tags: ["kovri"]
 terms: ["Data-Directory", "katalog-danych", "katalogu-danych", "katalogowi-danych"]
 summary: "Miejsce przechowywania kluczowych danych Kovri w czasie jego pracy."

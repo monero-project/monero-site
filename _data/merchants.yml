@@ -103,6 +103,8 @@
       url: https://monero-merchants.com
     - name: Monero WooCommerce Extension (PHP)
       url: https://github.com/monero-integrations/monerowp
+    - name: MyCryptoCheckout
+      url: https://mycryptocheckout.com
 - category: Libraries and Helpers
   id: libraries
   merchants:
@@ -283,6 +285,8 @@
 - category: Goods
   id: goods
   merchants:
+    - name: Accessory Authority
+      url: https://www.accessoryauthority.com/
     - name: Alagoria - Crypto Retail Shopping
       url: https://alagoria.com/
     - name: All For Crypto

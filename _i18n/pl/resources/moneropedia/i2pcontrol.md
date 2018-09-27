@@ -1,5 +1,4 @@
 ---
-entry: "I2PControl"
 tags: ["kovri"]
 terms: ["I2PControl"]
 summary: "Interfejs programowania aplikacji dla Kovri i Java-I2P pozwalający na prostą zdalną kontrolę."

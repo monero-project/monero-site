@@ -1,5 +1,4 @@
 ---
-entry: "Kod mnemoniczny"
 terms: ["mnemonic-seed", "mnemonic", "kod-mnemoniczny", "kodzie-mnemonicznym", "kodu-mnemonicznego"]
 summary: "Ciąg 13 lub 25 słów używany do tworzenia kopii zapasowej konta Monero, dostępny w wielu językach."
 ---

@@ -1,5 +1,4 @@
 ---
-entry: "Eepsite"
 tags: ["kovri"]
 terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service", "ukryty-serwis", "strona-czosnkowa", "serwis-czosnkowy", "serwisu-czosnkowego"]
 summary: "Strona lub serwis internetowy zamieszczony w sieci I2P."
@@ -24,4 +23,4 @@ Innymi nazwami eepsite są
 
 ### Adnotacje
 
-Aby dowiedzieć się, jak skonfigurować Eepsite (Ukryty Serwis, Stronę Czosnkową, Serwis Czosnkowy), przejdź do [przewodnika dla użytkowników](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md) @Kovri.
+Aby dowiedzieć się, jak skonfigurować Eepsite (Ukryty Serwis, Stronę Czosnkową, Serwis Czosnkowy), przejdź do [przewodnika dla użytkowników](https://gitlab.com/kovri-project/kovri-docs/blob/master/i18n/en/user_guide.md) @Kovri.

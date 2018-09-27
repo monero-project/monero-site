@@ -1,5 +1,4 @@
 ---
-entry: "Eepsite"
 tags: ["kovri"]
 terms: ["Eepsite", "Hidden-Service", "Garlic-Site", "Garlic-Service"]
 summary: "A website or service hosted within the I2P network"
@@ -26,4 +25,4 @@ Alternate names include:
 
 ### Notes
 
-To learn how to setup an Eepsite (Hidden Service, Garlic Site, Garlic Service) visit the @Kovri [user-guide](https://github.com/monero-project/kovri/blob/master/doc/USER_GUIDE.md).
+To learn how to setup an Eepsite (Hidden Service, Garlic Site, Garlic Service) visit the @Kovri [user-guide](https://gitlab.com/kovri-project/kovri-docs/blob/master/i18n/en/user_guide.md).

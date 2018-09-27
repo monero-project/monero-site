@@ -1,5 +1,4 @@
 ---
-entry: "Routage en ail"
 tags: ["kovri"]
 terms: ["Garlic-Routing", "routage-en-ail"]
 summary: "Technologie de routage telle qu'implémentée dans Kovri"

@@ -1,5 +1,4 @@
 ---
-entry: "Tail emission"
 terms: ["tail-emission", "krzywej-z-długim-ogonem", "krzywą-z-długim-ogonem", "krzywa-z-długim-ogonem"]
 summary: "Wynagrodzenie za blok na końcu krzywej emitowania."
 ---

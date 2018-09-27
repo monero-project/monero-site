@@ -1,5 +1,4 @@
 ---
-entry: "Clearnet"
 tags: ["kovri"]
 terms: ["Clearnet"]
 summary: "The Internet in which anonymous overlay networks are built upon"

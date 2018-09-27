@@ -1,5 +1,4 @@
 ---
-entry: "Transports"
 tags: ["kovri"]
 terms: ["Transports", "Transport"]
 summary: "Les deux couches de transport chiffrées de Kovri"

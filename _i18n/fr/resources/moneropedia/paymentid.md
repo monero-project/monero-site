@@ -1,5 +1,4 @@
 ---
-entry: "ID de paiement"
 terms: ["payment-ID", "payment-IDs", "ID-de-paiement", IDs-de-paiement]
 summary: "Une option supplémentaire que est ajouté pour identifier les transactions avec les commerçants, se composant de 64 caractères hexadécimaux"
 ---

@@ -1,5 +1,4 @@
 ---
-entry: "Base64 address"
 tags: ["kovri"]
 terms: ["Base64-address", "Base64-addresses"]
 summary: "Base64 encoded I2P destination"

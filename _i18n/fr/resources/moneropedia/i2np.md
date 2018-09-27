@@ -1,5 +1,4 @@
 ---
-entry: "I2NP"
 tags: ["kovri"]
 terms: ["I2NP"]
 summary: "Protocole réseau I2P (I2P Network Protocol) : le mécanisme par lequel des messages I2NP sont envoyés sur le réseau I2P"

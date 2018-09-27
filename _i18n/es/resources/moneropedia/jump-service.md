@@ -1,5 +1,4 @@
 ---
-entry: "Jump Service"
 tags: ["kovri"]
 terms: ["Jump-Service"]
 summary: "An I2P website service that adds addresses to your address book"

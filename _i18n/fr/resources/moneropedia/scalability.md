@@ -1,5 +1,4 @@
 ---
-entry: "Évolutivité"
 terms: ["scalability", "Évolutivité"]
 summary: "Potentiel de croissance de Monero, ressources nécessaires, et méthodes d'augmentation de l'efficacité"
 ---
