@@ -1,5 +1,4 @@
 ---
-entry: "Hôte unique localement"
 tags: ["kovri"]
 terms: ["Locally-unique-host", "hôte-unique-localement"]
 summary: "Un hôte que vous avez définit et que vous seul pouvez résoudre"

@@ -1,5 +1,4 @@
 ---
-entry: "Destination"
 tags: ["kovri"]
 terms: ["Destination", "Destinations"]
 summary: "A in-net address that serves as a final endpoint (either local or remote)"

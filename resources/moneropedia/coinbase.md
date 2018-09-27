@@ -1,5 +1,7 @@
 ---
 layout: moneropedia
+title: titles.moneropedia
+entry: moneropedia.entries.coinbase
 ---
 
 @moneropedia_article

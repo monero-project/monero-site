@@ -1,5 +1,4 @@
 ---
-entry: "Monnaie"
 terms: ["change", "monnaie"]
 summary: "Moneroj envoyés lors d'une transaction, qui reviennent dans votre compte au lieu d'être envoyés à un autre destinataire."
 ---

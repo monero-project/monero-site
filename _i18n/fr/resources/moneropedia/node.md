@@ -1,6 +1,5 @@
 ---
-entry: "Nœud"
-terms: ["node", "nodes", "full-node", "full-nodes", "nœud", "nœud", "noeud", "noeuds", "nœud-complet", "nœuds-complets", "noeud-complet", "noeuds-complets"]
+terms: ["node", "nodes", "full-node", "full-nodes", "nœud", "nœuds", "noeud", "noeuds", "nœud-complet", "nœuds-complets", "noeud-complet", "noeuds-complets"]
 summary: "Un équipement sur Internet faisant fonctionner le logiciel Monero, avec une copie complète de la chaîne de bloc, soutenant activement le réseau Monero"
 ---
 

@@ -1,5 +1,4 @@
 ---
-entry: "Block"
 terms: ["block", "blocks"]
 summary: "a container of transactions, a sequence of which forms a blockchain"
 ---

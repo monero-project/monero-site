@@ -1,5 +1,7 @@
 ---
 layout: moneropedia
+title: titles.moneropedia
+entry: moneropedia.entries.ntcp
 ---
 
 @moneropedia_article

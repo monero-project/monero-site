@@ -1,5 +1,4 @@
 ---
-entry: "Floodfill"
 tags: ["kovri"]
 terms: ["Floodfill"]
 summary: "Un routeur I2P qui maintient une base de données réseau distribuée"

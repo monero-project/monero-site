@@ -1,5 +1,4 @@
 ---
-entry: "Bail"
 tags: ["kovri"]
 terms: ["Lease", "Leases", "bail", "baux"]
 summary: "Autorise un tunnel I2P à recevoir des messages ciblant une destination"

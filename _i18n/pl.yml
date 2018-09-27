@@ -540,6 +540,72 @@ moneropedia:
   add_new_text1: If there is an entry you'd like to modify or be added, please
   add_new_link: open an issue on this website's Github repository
   add_new_text2: or submit changes via pull request
+  entries:
+    account: Konto
+    address-book: Książka adresowa
+    address: Adres
+    airgap: Airgap
+    atomic-units: Atomic Units
+    base32-address: adres Base32
+    base64-address: Adres Base64
+    blockchain: Łańcuch bloków
+    block: Blok
+    bootstrap-node: Bootstrap-node
+    canonically-unique-host: Zasadniczy unikalny host
+    change: Reszta
+    clearnet: Clearnet
+    coinbase: Transakcja coinbase
+    consensus: zgoda
+    cryptocurrency: Kryptowaluta
+    data-directory: Katalog danych
+    denominations: Nominał
+    destination: Węzeł docelowy
+    eepsite: Eepsite
+    encryption: szyfrowanie
+    floodfill: Floodfill
+    fluffyblocks: Fluffy Blocks
+    fungibility: Zamienialność
+    garlic-encryption: Szyfrowanie czosnkowe
+    garlic-routing: Garlic Routing
+    i2np: I2NP
+    i2pcontrol: I2PControl
+    i2p: I2P
+    in-net: In-net
+    java-i2p: Java I2P
+    jump-service: Jump Service
+    kovri: Kovri
+    lease: Lease
+    lease-set: Lease-Set
+    locally-unique-host: Lokalnie unikalny host
+    message: Message
+    mining: Wydobycie
+    mnemonicseed: Kod mnemoniczny
+    network-database: Baza danych sieci
+    node: Węzeł
+    ntcp: NTCP
+    openalias: OpenAlias
+    paperwallet: Papierowy portfel
+    paymentid: Numer identyfikacyjny płatności
+    pedersen-commitment: Zobowiązanie Pedersena
+    reseed: Reseed
+    ringCT: Poufne Transakcje Pierścieniowe
+    ringsignatures: Podpis pierścieniowy
+    ring-size: Rozmiar pierścienia
+    router-info: Informacje o routerze
+    scalability: Skalowalność
+    signature: Podpis kryptograficzny
+    smartmining: Smart Mining
+    spendkey: Klucz wydawania
+    ssu: SSU
+    stealthaddress: Ukryty adres
+    subscription: Subskrypcja
+    tail-emission: Tail emission
+    transaction: Transakcja
+    transports: Transports
+    tunnel: Tunel
+    unlocktime: Transaction Unlock Time
+    viewkey: Klucz widoczności
+    wallet: Portfel
 
 blog:
   title_1: Wszystkie wpisy

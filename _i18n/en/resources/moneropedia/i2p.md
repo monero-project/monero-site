@@ -1,5 +1,4 @@
 ---
-entry: "I2P"
 tags: ["kovri"]
 terms: ["I2P"]
 summary: "The Invisible Internet Project: an anonymizing overlay network"

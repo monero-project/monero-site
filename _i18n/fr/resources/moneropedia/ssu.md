@@ -1,5 +1,4 @@
 ---
-entry: "USS"
 tags: ["kovri"]
 terms: ["SSU", "USS"]
 summary: "UDP Semi-fiable Sécurisé : l'un des deux transports de Kovri"

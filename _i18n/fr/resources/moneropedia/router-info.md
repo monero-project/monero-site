@@ -1,5 +1,4 @@
 ---
-entry: "Infos des routeurs"
 tags: ["kovri"]
 terms: ["Router-Info", "Router-infos", "Info-des-routeurs", "Infos-des-routeurs"]
 summary: "Une structure de données ou un fichier qui contient les informations réseau nécessaires pour un homologue I2P"

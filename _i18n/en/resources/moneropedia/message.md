@@ -1,5 +1,4 @@
 ---
-entry: "Message"
 tags: ["kovri"]
 terms: ["Message", "Messages"]
 summary: "The mechanisms in which information travels within I2P"

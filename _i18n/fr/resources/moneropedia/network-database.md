@@ -1,5 +1,4 @@
 ---
-entry: "Base de données réseau"
 tags: ["kovri"]
 terms: ["Network-Database", "base-de-données-réseau"]
 summary: "Une base de données distribuée qui contient les informations de routeurs nécessaire pour que le réseau reste intact"

@@ -1,5 +1,4 @@
 ---
-entry: "Subskrypcja"
 tags: ["kovri"]
 terms: ["Subscription", "subskrypcja", "subskrypcji", "subskrypcją", "subskrypcję", "subsckrypcji"]
 summary: "Plik używany przez książkę adresową zawierający hosty I2P sparowane z węzłami docelowymi I2P."

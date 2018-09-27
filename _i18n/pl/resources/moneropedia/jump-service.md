@@ -1,5 +1,4 @@
 ---
-entry: "Jump Service"
 tags: ["kovri"]
 terms: ["Jump-Service", "opcja-przeskakiwania", "opcji-przeskakiwania"]
 summary: "Serwis strony w sieci I2P, który dodaje adresy do twojej książki adresowej."

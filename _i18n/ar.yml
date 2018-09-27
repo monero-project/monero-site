@@ -534,6 +534,79 @@ library:
         Quarterly Monero magazine, Q3 2017 edition.<br>
         In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
 
+moneropedia:
+  translated: "no"
+  add_new_button: Add New Entry
+  add_new_text1: If there is an entry you'd like to modify or be added, please
+  add_new_link: open an issue on this website's Github repository
+  add_new_text2: or submit changes via pull request
+  entries:
+    account: Account
+    address-book: Address Book
+    address: Address
+    airgap: Airgap
+    atomic-units: Atomic Units
+    base32-address: Base32 address
+    base64-address: Base64 address
+    blockchain: Blockchain
+    block: Block
+    bootstrap-node: Bootstrap-node
+    canonically-unique-host: Canonically-unique host
+    change: Change
+    clearnet: Clearnet
+    coinbase: Coinbase Transaction
+    consensus: Consensus
+    cryptocurrency: Cryptocurrency
+    data-directory: Data Directory
+    denominations: Denominations
+    destination: Destination
+    eepsite: Eepsite
+    encryption: Encryption
+    floodfill: Floodfill
+    fluffyblocks: Fluffy Blocks
+    fungibility: Fungibility
+    garlic-encryption: Garlic-Encryption
+    garlic-routing: Garlic Routing
+    i2np: I2NP
+    i2pcontrol: I2PControl
+    i2p: I2P
+    in-net: In-net
+    java-i2p: Java I2P
+    jump-service: Jump Service
+    kovri: Kovri
+    lease: Lease
+    lease-set: Lease-Set
+    locally-unique-host: Locally-unique host
+    message: Message
+    mining: Mining
+    mnemonicseed: Mnemonic Seed
+    network-database: Network Database
+    node: Node
+    ntcp: NTCP
+    openalias: OpenAlias
+    paperwallet: Paper Wallet
+    paymentid: Payment ID
+    pedersen-commitment: Pedersen Commitment
+    reseed: Reseed
+    ringCT: Ring CT
+    ringsignatures: Ring Signature
+    ring-size: Ring Size
+    router-info: Router-Info
+    scalability: Scalability
+    signature: Cryptographic Signature
+    smartmining: Smart Mining
+    spendkey: Spend Key
+    ssu: SSU
+    stealthaddress: Stealth Address
+    subscription: Subscription
+    tail-emission: Tail Emission
+    transaction: Transactions
+    transports: Transports
+    tunnel: Tunnel
+    unlocktime: Transaction Unlock Time
+    viewkey: View Key
+    wallet: Wallet
+
 blog:
   title_1: الجميع
   title_2: المدونه

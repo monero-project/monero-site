@@ -1,5 +1,4 @@
 ---
-entry: "Router-Info"
 tags: ["kovri"]
 terms: ["Router-Info", "Router-infos"]
 summary: "A data structure or file which contains an I2P peer's needed network information"

@@ -1,5 +1,4 @@
 ---
-entry: "Adresse Base32"
 tags: ["kovri"]
 terms: ["Base32-address", "Base32-addresses", "adresse-Base32", "adresses-Base32"]
 summary: "Hachage encodé en Base32 d'une adresse Base64"

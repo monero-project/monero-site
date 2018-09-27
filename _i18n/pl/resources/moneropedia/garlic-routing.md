@@ -1,5 +1,4 @@
 ---
-entry: "Garlic Routing"
 tags: ["kovri"]
 terms: ["Garlic-Routing", "trasowanie-czosnkowe", "trasowania-czosnkowego", "trasowaniu-czosnkowym", "trasowaniem-czosnkowym"]
 summary: "Technologia trasowania (rutingu, rutowania) wdrożona w Kovri."

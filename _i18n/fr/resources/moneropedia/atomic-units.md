@@ -1,5 +1,4 @@
 ---
-entry: "Unités Atomiques"
 terms: ["atomic-units", "atomic-unit", "unité-atomique", "unités-atomiques"]
 summary: "Les Unités Atomiques réfèrent à la plus petite fraction de 1 XMR."
 ---

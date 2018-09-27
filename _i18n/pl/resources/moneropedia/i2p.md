@@ -1,5 +1,4 @@
 ---
-entry: "I2P"
 tags: ["kovri"]
 terms: ["I2P"]
 summary: "Projekt Niewidzialny Internet: anonimizująca sieć nakładkowa."

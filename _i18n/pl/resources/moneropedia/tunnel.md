@@ -1,5 +1,4 @@
 ---
-entry: "Tunel"
 tags: ["kovri"]
 terms: ["Tunnel", "Tunnels", "tunel", "tunele", "tunelem", "tunelowi", "tunelom", "tunelami", "tunelowe", "tunelu"]
 summary: "Jednokierunkowe ścieżki wirtualne, które przekazują wiadomości przez ustaloną sekwencję routerów sieci I2P."

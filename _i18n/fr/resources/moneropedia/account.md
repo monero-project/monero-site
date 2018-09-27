@@ -1,5 +1,4 @@
 ---
-entry: "Compte"
 terms: ["account", "accounts", "wallet", "wallets", "compte", "comptes", "portefeuille", "portefeuilles"]
 summary: "Similaire à un compte en banque dans son fonctionnement, contient toutes vos transactions envoyées et reçues"
 ---

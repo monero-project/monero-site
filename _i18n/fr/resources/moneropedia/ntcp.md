@@ -1,5 +1,4 @@
 ---
-entry: "NTCP"
 tags: ["kovri"]
 terms: ["NTCP"]
 summary: "NIO-Based TCP (TCP basé sur des E/S non-bloquantes) : l'un des transports de Kovri"

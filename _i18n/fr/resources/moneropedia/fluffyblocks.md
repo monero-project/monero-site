@@ -1,5 +1,4 @@
 ---
-entry: "Fluffy Blocks"
 terms: ["fluffy blocks", "fluffyblocks", "blocs légers", "blocs allégés"]
 summary: "une façon d'économiser de la bande passante lors de la transmission de nouveaux blocs sur le réseau"
 ---

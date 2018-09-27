@@ -1,5 +1,4 @@
 ---
-entry: "szyfrowanie"
 tags: ["kovri"]
 terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting", "szyfrowanie", "szyfrowania", "szyfrowaniu", "zaszyfrowany", "zaszyfrowana", "zaszyfrowanej", "zaszyfrowanemu", "zaszyfrowaną", "zaszyfrowanego", "odszyfrowanie", "rozszyfrowanie", "odszyfrowana", "odszyfrowany", "odszyfrowanej", "odszyfrowanego", "odszyfrowanemu", "odszyfrowaną", "rozszyfrowana", "rozszyfrowany", "rozszyfrowanego", "rozszyfrowanemu", "rozszyfrowanej", "rozszyfrowaną", "szyfrowań"]
 summary: "Proces kodowania wiadomości lub informacji w taki sposób, że tylko upoważnione osoby mogą je odkodować i odczytać."

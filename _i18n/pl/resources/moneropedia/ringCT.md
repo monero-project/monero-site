@@ -1,5 +1,4 @@
 ---
-entry: "Poufne Transakcje Pierścieniowe"
 terms: ["ringCT", "ring-CT", "poufne-transakcje-pierścieniowe", "poufnym-transakcjom-pierścieniowym", "poufnymi-transakcjami-pierścieniowymi", "poufnych-transakcji-pierścieniowych"]
 summary: "Sposób na ukrycie wartości Monero przesłanych w transakcji."
 ---

@@ -1,5 +1,4 @@
 ---
-entry: "Chaîne de blocs"
 terms: ["blockchain", "blockchains", "chaîne-de-blocs", "chaînes-de-blocs", "chaine-de-blocs", "chaines-de-blocs"]
 summary: "Un registre distribué de toutes les transactions passées et présentes, ne révélant ni l'origine, ni la destination des fonds."
 ---

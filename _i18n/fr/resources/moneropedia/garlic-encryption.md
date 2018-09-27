@@ -1,5 +1,4 @@
 ---
-entry: "Chiffrement en ail"
 tags: ["kovri"]
 terms: ["Garlic-Encryption", "Layered-Encryption", "chiffrement-en-ail", "chiffrement-par-couche"]
 summary: "Chiffrement par couche tel qu'implémenté dans Kovri / I2P"

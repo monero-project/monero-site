@@ -1,5 +1,4 @@
 ---
-entry: "Extraction minière intelligente"
 terms: ["smart-mining", "extraction-minière-intelligente"]
 summary: "un processus selon lequel un mineur régulé mine lorsqu'il ne cause pas d'inconvénient"
 ---

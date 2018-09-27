@@ -1,5 +1,4 @@
 ---
-entry: "Kryptowaluta"
 terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins", "kryptowaluta", "kryptowaluty", "kryptowalucie", "kryptowalutach", "kryptowalutom"]
 summary: "Waluta cyfrowa, w której użyte są techniki szyfrowania w celu regulacji generowania jednostek walutowych i weryfikowania transferów płatniczych, zazwyczaj funkcjonująca niezależnie od banku centralnego."
 ---

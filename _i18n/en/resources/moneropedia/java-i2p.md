@@ -1,5 +1,4 @@
 ---
-entry: "Java I2P"
 tags: ["kovri"]
 terms: ["Java-I2P"]
 summary: "The original implementation of I2P - written in Java"

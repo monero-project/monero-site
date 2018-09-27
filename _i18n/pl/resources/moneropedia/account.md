@@ -1,5 +1,4 @@
 ---
-entry: "Konto"
 terms: ["account", "accounts", "wallet", "wallets", "konto", "konta", "portfel", "portfela"]
 summary: "Podobnie jak konto bankowe, konto Monero zawiera wszystkie twoje płatności wychodzące i przychodzące."
 ---

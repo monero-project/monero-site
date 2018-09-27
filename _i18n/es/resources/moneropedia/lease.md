@@ -1,5 +1,4 @@
 ---
-entry: "Lease"
 tags: ["kovri"]
 terms: ["Lease", "Leases"]
 summary: "Authorizes an I2P tunnel to receive messages targeting a destination"
