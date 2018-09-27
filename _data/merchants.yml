@@ -283,6 +283,8 @@
 - category: Goods
   id: goods
   merchants:
+    - name: Accessory Authority
+      url: https://www.accessoryauthority.com/
     - name: Alagoria - Crypto Retail Shopping
       url: https://alagoria.com/
     - name: All For Crypto
