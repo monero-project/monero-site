@@ -1,50 +1,50 @@
 {% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
-## How to mine Monero (XMR) without a mining equipment?
+{% include disclaimer.html translated="true" version=page.version %}
+## Cómo minar Monero (XMR) sin un equipo de minado?
 
-If you don’t have a profitable mining equipment, nor time or
-money to invest into building it, you can still mine Monero with NiceHash.
+Si no cuentas con un equipo de minado rentable, tiempo o
+dinero para invertir en construirlo, puedes minar Monero con NiceHash.
 
-NiceHash is a hashing power marketplace. Sellers of hashing
-power, i.e. miners, provide the hashing power for buyers (those who want to buy
-a service of mining a certain coin). Hence, NiceHash can provide you a massive
-hashing power in short amount of time. You won’t have to wait for years to see
-if you will make a profit or not and you can control which coin, at which pool,
-and for how long you want to mine.
+NiceHash es un mercado de compra/venta de poder de procesamiento. Vendedores de poder
+de procesamiento, por ejemplo, mineros, proveen el poder de procesamiento para compradores (aquellos que desean
+un servicio de minado de alguna moneda). Por lo tanto, NiceHash puede proveerte con un poder de procesamiento
+masivo en un corto periodo de tiempo. No tendrás que esperar años para ver
+si obtienes ganancias o no, y puedes controlar qué moneda, con qué pool
+y por cuánto tiempo deseas minar.
 
-### **Step 1:** Create new account at NiceHash
+### **Paso 1:** Crear una nueva cuenta en NiceHash
 
-Visit [registration
-page](https://www.nicehash.com/?p=register) and register with your e-mail address.
+Visita la [página de
+registro](https://www.nicehash.com/?p=register) y únete con tu dirección de e-mail.
 
-### **Step 2:** Deposit some Bitcoins to your account
+### **Paso 2:** Deposita algo de Bitcoins a tu cuenta
 
-You will mine Monero, but you can buy hashing power at
-NiceHash only with Bitcoins. You can always withdraw unspent Bitcoins from your
-account back to any Bitcoin wallet.
+Minarás Monero, pero sólo puedes comprar poder de procesamiento en
+NiceHash con Bitcoins. Puedes retirar Bitcoins que no han sido gastados de tu
+cuenta a cualquier monedero de Bitcoin.
 
-Visit your [wallet
-page](https://www.nicehash.com/?p=wallet) and make a deposit. Note that the minimum price for placing an order
-equals 0.01 BTC.
+Ve a la [página de tu
+monedero](https://www.nicehash.com/?p=wallet) y haz un depósito. Ten en cuenta que el precio mínimo para hacer una orden
+es de 0.01 BTC.
 
-### **Step 3:** Find a suitable pool for mining and add it to your pool list
+### **Paso 3:** Busca una pool adecuada para minar y agrégala a tu lista
 
-Selection of the pool plays a big role in the final amount
-of mined cryptocurrency. Make sure the pool you have selected can handle
-massive hashing rate and loads of shares, especially from a single connection.
-You can find a list of Monero pools [here](https://bitcointalk.org/index.php?topic=583449.0).
+La selección de la pool juega un gran rol en la cantidad final
+de criptomoneda a minar. Asegura que la pool que selecciones pueda soportar
+un poder de procesamiento masivo y cargas de shares, especialmente desde una conexión individual.
+Puedes encontrar una lista de las pools de Monero [aquí](https://bitcointalk.org/index.php?topic=583449.0).
 
-Note that you will probably have to register an account at
-selected pool as well. The pool will provide you with all the information you need.
-You can save your favorite pools at [this page](https://www.nicehash.com/?p=managepools).
+Ten en cuenta que probablemente también tendrás que registrar una cuenta en
+tu pool seleccionada. La pool te proveerá con toda la información que necesitas.
+Puedes guardar tu pool favorita en [esta página](https://www.nicehash.com/?p=managepools).
 
-### **Step 4:** Create new order and start mining
+### **Paso 4:** Crea una orden nueva y empieza a minar
 
-When creating a [new order](https://www.nicehash.com/?p=orders&new), make sure you
-select CryptoNightV7 algorithm for mining Monero (New algorithm variant since 2018 April the 6th). If you want to first learn more
-about placing an order with NiceHash, we recommend you to read this [frequently asked question](https://www.nicehash.com/?p=faq#faqb0).
+Cuando crees una [nueva orden](https://www.nicehash.com/?p=orders&new), asegúrate de
+seleccionar el algoritmo CryptoNightV7 para minar Monero (nuevo variante de algoritmo desde el 6 de abril del 2018). Si antes deseas aprender
+acerca de crear una orden en NiceHash, te recomendamos que leas las [preguntas frecuentes](https://www.nicehash.com/?p=faq#faqb0).
 
-If you want to bid on
-hashing power select Standard (bidding) order type and if you want a fixed
-order that cannot be outbid, select Fixed order type. The status of marketplace
-and approximate prices of mining can be checked at [live marketplace](https://www.nicehash.com/index.jsp?p=orders). 
+Si deseas hacer una oferta en
+poder de procesamiento, selecciona una orden tipo "Standard (bidding)" y si deseas una orden
+fija que no pueda ser contra ofertada, selecciona una orden tipo "Fixed" (fija). El estado del mercado
+y aproximaciones de precios de minado pueden ser consultados en el [mercado en vivo](https://www.nicehash.com/index.jsp?p=orders). 

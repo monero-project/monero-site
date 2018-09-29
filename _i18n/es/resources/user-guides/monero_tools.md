@@ -1,19 +1,19 @@
 {% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
-# Monero tools
+{% include disclaimer.html translated="true" version=page.version %}
+# Herramientas Monero
 
-These tools can be used to gain information about the Monero network or your transaction data in the blockchain.
+Estas herramientas pueden ser utilizadas para obtener información acerca de la red de Monero o datos de tu transacción en la blockchain.
 
-### [Check that a recipient has received your funds](http://xmrtests.llcoins.net/checktx.html)
+### [Revisar que un receptor ha recibido tus fondos](http://xmrtests.llcoins.net/checktx.html)
 
-### [Tools for monero address generation](https://xmr.llcoins.net/)
+### [Herramientas para generar una dirección de Monero](https://xmr.llcoins.net/)
 
-### [Monero node count](http://moneronodes.i2p.xyz/)
+### [Cuenta de nodos de Monero](http://moneronodes.i2p.xyz/)
 
-### [Monero node map](https://monerohash.com/nodes-distribution.html)
+### [Mapa de nodos de Monero](https://monerohash.com/nodes-distribution.html)
 
-### [Monero offline wallet generator](http://moneroaddress.org/)
+### [Generador de monedero offline de Monero](http://moneroaddress.org/)
 
-### [Monero network statistics](http://moneroblocks.info/stats)
+### [Estadísticas de red de Monero](http://moneroblocks.info/stats)
 
-### [Monero.how statistics](https://www.monero.how/)
+### [Estadísticas Monero.how](https://www.monero.how/)
