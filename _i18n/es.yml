@@ -5,6 +5,7 @@
   pl: Polski
   fr: Français
   ar: العربية
+  ru: Русский
 
 global:
   date: '%d/%m/%Y'
