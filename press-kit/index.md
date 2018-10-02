@@ -73,6 +73,19 @@ permalink: /press-kit/index.html
         </div>
     </div>
 </section>
+{% for press in site.translations[site.lang].press-kit.documents %}
+<section class="container full">
+  <div class="info-block">
+    <h2>{{ press.category }}</h2>
+    <div>
+      {% for publication in press.publications %}
+        <h3><a href="{{ publication.url_file }}">{{ publication.name }}</a></h3>
+        <p>{{ publication.abstract }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
 
 <div class="untranslated {% t press-kit.translated %}">
     <p>{% t global.untranslated %} <a class="untranslated-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.</p>
