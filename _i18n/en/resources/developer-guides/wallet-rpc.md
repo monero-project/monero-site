@@ -1282,7 +1282,8 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **rescan_blockchain**
 
-Rescan blockchain from scratch.
+Rescan the blockchain from scratch, losing any information which can not be recovered from the blockchain itself.  
+This includes destination addresses, tx secret keys, tx notes, etc.
 
 Alias: *None*.
 
