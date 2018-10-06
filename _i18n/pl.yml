@@ -392,8 +392,8 @@ about:
 
 
 developer-guides:
-  translated: "yes"
-  outdated: Poniższe przewodniki są zdezaktualizowane, ale nadal są dobrym początkiem dla większości funkcji.
+  translated: "no"
+  outdated: "Please note: the guides below have been recently refreshed and are maintained almost up-to-date by the community. However, methods are often added / removed / updated and may not be accurately described here."
   rpc: Dokumenty RPC
   daemonrpc: Dokumenty Daemon RPC
   walletrpc: Dokumenty Portfela RPC

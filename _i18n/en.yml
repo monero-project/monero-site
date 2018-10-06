@@ -391,8 +391,8 @@ about:
 
 
 developer-guides:
-  translated: "yes"
-  outdated: "Please note: the guides below are currently out of date, but are considered a good starting point for most calls."
+  translated: "no"
+  outdated: "Please note: the guides below have been recently refreshed and are maintained almost up-to-date by the community. However, methods are often added / removed / updated and may not be accurately described here."
   rpc: RPC Documentation
   daemonrpc: Daemon RPC Documentation
   walletrpc: Wallet RPC Documentation

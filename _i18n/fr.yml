@@ -394,7 +394,7 @@ about:
 
 developer-guides:
   translated: "yes"
-  outdated: Attention, les guides ci-dessous sont actuellement obsolètes, mais sont considérés comme de bons points de départ pour la plupart des appels de procédures distantes.
+  outdated: Attention, les guides ci-dessous ont été récemment mis à niveau et sont maintenu relativement à jour par la communauté. Cependant, des méthodes sont fréquemment ajoutées / supprimées / modifiées et pourraient ne pas être fidèlement décrites ici.
   rpc: Documentation RPC
   daemonrpc: Documentation RPC du Démon
   walletrpc: Documentation RPC du Portefeuille
