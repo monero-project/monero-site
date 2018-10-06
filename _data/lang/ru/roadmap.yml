@@ -101,13 +101,13 @@
     - name: Выпуск alpha версии Kovri
       date: 2018-08-01
       status: completed
-    - name: Изменение внешнего вида для "Системы общественного финансирования"
+    - name: Изменение внешнего вида для cистемы общественного финансирования "FFS"
       date:
       status: ongoing
     - name: Улучшение эффективности доказательства диапазона RingCT для уменьшения размера транзакций
       date:
-      status: upcoming
-    - name: Выпуск beta версии Kovri
+      status: ongoing
+    - name: Интеграция Kovri
       date:
       status: upcoming
 - year: 2019
