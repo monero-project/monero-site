@@ -2,55 +2,55 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: 5c06097acebf643857672e673258d16d66a71de504377399b7407318f9887ee3s
+  cli_hash: 82db8f99fa4b2900f78c282c2d99309b79da544824f9cdb10d0b80ceb511c5ed
   gui_url: win64
   gui_hash: 947efb72418d9ee60ccb0a2afa1f85553fa6a777a0a4e0f89f353592c84e00dc
-  cli_version: 0.12.3.0
+  cli_version: 0.13.0.2
   gui_version: 0.12.3.0
-  tag: Lithium Luna
+  tag: Beryllium Bullet
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: 4a1718e75e2467f9a4b02b5c342b702999c97b1c0f8a1cdd5a63d7c2b21f849a
-  version: 0.12.2.0
-  tag: Lithium Luna
+  cli_hash: f9fad998af2c439dce45b8210784b228c8a99dced926e9bec3522af2a213c747
+  version: 0.13.0.2
+  tag: Beryllium Bullet
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: 39d40e2001ca9948f434637c28b3933c0d79c66e2db07ffc4274711ab2d2ae66
+  cli_hash: bb0f197c9e43e183b9af48dfbc4f7b492568fe01d2c23c66ec3632c8aa85e4e9
   gui_url: mac64
   gui_hash: 90a9fa02e7bcef653b034f8a0365f16ec96cd553791546df2200a3c2591d5104
-  cli_version: 0.12.3.0
+  cli_version: 0.13.0.2
   gui_version: 0.12.3.0
-  tag: Lithium Luna
+  tag: Beryllium Bullet
   blockchain: mac
 
 - platform: Linux, 64-bit
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: 72fe937aa2832a0079767914c27671436768ff3c486597c3353a8567d9547487
+  cli_hash: a59fc0fffb325b4f92a5b500438bf340ddbf78e91581eb4df95ad2d5e5fb42a8
   gui_url: linux64
   gui_hash: dcf0a103589b8e71cdb8298dec96610f9f50b25e8f48afef5186d4c460a4ecae
-  cli_version: 0.12.3.0
+  cli_version: 0.13.0.2
   gui_version: 0.12.3.0
-  tag: Lithium Luna
+  tag: Beryllium Bullet
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: 41d68f66a43098754de0d2ead0eaeb125fc7eb05ecf3eb6a48c96ce6874052f3
+  cli_hash: 87396e833859cbafff53db753443f8f94a962d9738cb0f69ea9d0b3c940960e6
   gui_url: linux32
   gui_hash: 6858519657add070aeedb03a22d4661ec1b868acdd0b3437fe45e6b640ea4e3b
-  cli_version: 0.12.3.0
+  cli_version: 0.13.0.2
   gui_version: 0.12.3.0
-  tag: Lithium Luna
+  tag: Beryllium Bullet
   blockchain: linux
 
 - platform: ARMv7
