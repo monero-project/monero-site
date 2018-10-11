@@ -60,7 +60,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>Fork Networking</h2>
-                            <a href="https://www.forked.net"><img src="/img/forked_logo.png"></a>
+                            <a href="http://www.forked.net"><img src="/img/forked_logo.png"></a>
                         </div>
                     </div>
                 </div>
