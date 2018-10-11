@@ -2026,7 +2026,7 @@ Outputs:
   * *id_hash* - string; Key image.
   * *txs_hashes* - string list; tx hashes of the txes (usually one) spending that key image.
 * *status* - string; General RPC error code. "OK" means everything looks good.
-* *transactions* - List of transactions in the mempool are not in in a block on the main chain at the moment:
+* *transactions* - List of transactions in the mempool are not in a block on the main chain at the moment:
   * *blob_size* - unsigned int; The size of the full transaction blob.
   * *double_spend_seen* - boolean; States if this transaction has been seen as double spend.
   * *do_not_relay*; boolean; States if this transaction should not be relayed
