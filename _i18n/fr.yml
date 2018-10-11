@@ -192,7 +192,7 @@ monero-project:
   openalias_button: Visiter le site d'OpenAlias
 
 press-kit:
-  translated: "yes"
+  translated: "no"
   intro1: Vous trouverez ci-dessous tous les symboles et logos Monero. Vous pouvez choisir la taille qui vous convient, ou télécharger le fichier au format .ai pour jouer avec le logo vous-même.
   intro2: Notez que seul l'option fond blanc dispose d'un fond blanc derrière le symbole Monero UNIQUEMENT, et non derrière l'image entière.
   intro3: Enfin, vous pouvez télécharger tous les éléments de cette page dans un seul fichier zip en cliquant
@@ -206,6 +206,14 @@ press-kit:
   large: Grand
   symbol_file: Symbole au format .ai
   logo_file: Logo au format .ai
+  documents:
+  - category: Press Documentation
+    publications:
+    - name: "Quelques Faits"
+      url_file: "https://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts_fr.pdf"
+      abstract: >
+        A quick and easy to read document to know everything about Monero: historique, points clefs différenciateurs, fondamentaux techniques, and fonctionnalités en développement.<br>
+        See <a target="_blank" href="https://www.monerooutreach.org/accueil.php">Monero Outreach</a> website for more information.
 
 accepting:
   translated: "yes"

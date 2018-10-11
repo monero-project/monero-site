@@ -204,6 +204,14 @@ press-kit:
   large: Grande
   symbol_file: Símbolo en archivo .ai
   logo_file: Logo en archivo .ai
+  documents:
+  - category: Press Documentation
+    publications:
+    - name: "Hoja de Datos"
+      url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts_es.pdf"
+      abstract: >
+        Una hoja de datos fácil de leer para conocer todo acerca de Monero: historia, factores clave de diferenciación, fundamentos técnicos y características en desarrollo.<br>
+        Visita el sitio web de <a target="_blank" href="https://www.monerooutreach.org/principal.php">Monero Outreach</a> para mayor información.
 
 accepting:
   translated: "yes"
