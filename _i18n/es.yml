@@ -25,6 +25,8 @@ global:
   outdatedMax: Esta página no está actualizada. No recomendamos utilizarla. En su lugar, favor de ver la
   outdatedVersion: versión en inglés
   outdatedMin: Esta página ha sido actualizada desde la traducción. Puedes utilizar esta versión, pero puede estar incompleta.
+  upgrade: To continue using Monero, make sure your software is up-to-date with the October 18th network upgrade.
+  moreinfo: More info
   lang_tag: "@lang_tag_es"
 
 titles:
