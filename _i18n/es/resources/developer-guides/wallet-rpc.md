@@ -575,8 +575,8 @@ Inputs:
 * *account_index* - unsigned int; (Optional) Transfer from this account index. (Defaults to 0)
 * *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to 0)
 * *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
-* *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
-* *ring_size* - unsigned int; Number of outpouts to mix in the transaction (this output + N decoys from the blockchain).
+* *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
+* *ring_size* - unsigned int; Number of outputs to mix in the transaction (this output + N decoys from the blockchain).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
