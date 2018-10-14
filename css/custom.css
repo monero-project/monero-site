@@ -1095,6 +1095,136 @@ pre.highlight>code {
     display: block;
 }
 
+
+
+
+
+
+
+
+.upgrade-content {
+    background-color: #e5ba38;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    text-align: center;
+    color: #4c4c4c;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
+    -moz-box-shadow: 0 2px 6px rgba(50,50,93,.1);
+    -webkit-box-shadow: 0 2px 6px rgba(50,50,93,.1);
+    box-shadow: 0 2px 6px rgba(50,50,93,.1);
+    margin-bottom: 0.4rem;
+    position: relative;
+}
+
+.upgrade-content a {
+    color: #4c4c4c;
+    font-size: 1.1rem;
+}
+
+.upgrade-content p {
+    padding: 0;
+    display: block;
+    font-size: 1.1rem;
+}
+
+#upgrade-toggle {
+    display: none;
+}
+
+#upgrade-toggle:checked ~ .upgrade-content, #upgrade-toggle:checked ~ .upgrade-x {
+    display: none;
+}
+
+label.upgrade-x {
+  position: absolute;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+label.upgrade-x:hover {
+  opacity: 1;
+}
+
+label.upgrade-x:before, label.upgrade-x:after {
+  position: absolute;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  background-color: #4c4c4c;
+}
+
+label.upgrade-x:before {
+  transform: rotate(45deg);
+}
+
+label.upgrade-x:after {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 75rem) {
+
+.upgrade-content p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+    
+.upgrade-content a {        
+    font-size: 1rem;
+}
+    
+label.upgrade-x:before, label.upgrade-x:after {
+  position: absolute;
+  content: ' ';
+  height: 30px;
+  background-color: #4c4c4c;
+}
+
+}
+
+@media only screen and (max-width: 62rem) {
+
+.upgrade-content {        
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 0;
+    -moz-box-shadow: 0 0 6px rgba(50,50,93,.1);
+    -webkit-box-shadow: 0 0 6px rgba(50,50,93,.1);
+    box-shadow: 0 0 6px rgba(50,50,93,.1);
+}
+    
+.upgrade-content p {
+    width: 80%;
+}
+    
+label.upgrade-x {
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+}
+
+@media only screen and (max-width: 30rem) {
+    
+.upgrade-content p {
+    width: 75%;
+}
+
+}
+
+
+
+
+
+
+
 .disclaimer {
     background-color: #ff7519;
     position: fixed;
