@@ -1203,7 +1203,7 @@ Alias: *None*.
 Inputs:
 
 * *standard_address* - string; (Optional, defaults to primary address) Destination public address.
-* *payment_id* - string; 16 characters hex encoded; can't be empty.
+* *payment_id* - string; (Optional, defaults to a random ID) 16 characters hex encoded.
 
 Outputs:
 
@@ -1213,7 +1213,7 @@ Outputs:
 Example (Payment ID is empty, use a random ID):
 
 ```
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"standard_address":"55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt","payment_id":"420fa29b2d9a49f5"}}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"standard_address":"55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt"}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
