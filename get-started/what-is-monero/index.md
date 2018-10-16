@@ -30,7 +30,7 @@ permalink: /get-started/what-is-monero/index.html
                             <h3>{% t what-is-monero.confidential %}</h3>
                             <p>{% t what-is-monero.confidential_para1 %}</p>
                             <p>{% t what-is-monero.confidential_para2 %}</p>
-                            <p>{% t what-is-monero.confidential_para3 %} <a href="https://getkovri.org/">{% t what-is-monero.confidential_para4 %}</a>{% t what-is-monero.confidential_para5 %}</p>
+                            <p>{% t what-is-monero.confidential_para3 %} <a href="https://kovri.io/">{% t what-is-monero.confidential_para4 %}</a>{% t what-is-monero.confidential_para5 %}</p>
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">

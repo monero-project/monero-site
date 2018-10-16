@@ -19,7 +19,7 @@ permalink: /the-monero-project/index.html
                         <p>{% t monero-project.kovri %}</p>
                     </div>
                     <div class="row center-xs">
-                        <p><a href="https://www.getkovri.org" class="btn-link btn-fixed">{% t monero-project.kovri_button %}</a></p>
+                        <p><a href="https://www.kovri.io" class="btn-link btn-fixed">{% t monero-project.kovri_button %}</a></p>
                     </div>
                 </div>
             </div>
