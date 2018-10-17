@@ -133,7 +133,7 @@ only incoming or outgoing transactions. For example,
 
     show_transfers in 650000
 
-will only incoming transfers after block 650000. You can also give a height
+will only show incoming transfers after block 650000. You can also give a height
 range.
 
 If you want to mine, you can do so from the wallet:
