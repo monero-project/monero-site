@@ -25,8 +25,8 @@ global:
   outdatedMax: Esta página no está actualizada. No recomendamos utilizarla. En su lugar, favor de ver la
   outdatedVersion: versión en inglés
   outdatedMin: Esta página ha sido actualizada desde la traducción. Puedes utilizar esta versión, pero puede estar incompleta.
-  upgrade: To continue using Monero, make sure your software is up-to-date with the October 18th network upgrade.
-  moreinfo: More info
+  upgrade: Para seguir usando Monero, asegúrate de que tu software esté al corriente con la actualización de la red de Monero de este 18 de Octubre.
+  moreinfo: Más información
   lang_tag: "@lang_tag_es"
 
 titles:
@@ -156,7 +156,7 @@ team:
   developers_para2: página de contribuyentes de OpenHub.
   developers_para3: A continuación encontrarás algunos individuos que han ido lejos por Monero.
   community: Comunidad
-  mrl: Lab de Investigación
+  mrl: Lab. de Investigación
   thanks: Reconocimientos
 
 downloads:
