@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% assign version = '3.1.0' | split: '.' %}
 {% include disclaimer.html translated="false" version=page.version %}
 ## How to mine Monero (XMR) without a mining equipment?
 
@@ -41,8 +41,8 @@ You can save your favorite pools at [this page](https://www.nicehash.com/?p=mana
 ### **Step 4:** Create new order and start mining
 
 When creating a [new order](https://www.nicehash.com/?p=orders&new), make sure you
-select CryptoNightV7 algorithm for mining Monero (New algorithm variant since 2018 April the 6th). If you want to first learn more
-about placing an order with NiceHash, we recommend you to read this [frequently asked question](https://www.nicehash.com/?p=faq#faqb0).
+select CryptoNightR algorithm for mining Monero (New algorithm variant since 2019 March the 9th). If you want to first learn more
+about placing an order with NiceHash, we recommend you to read this [frequently asked question](https://www.nicehash.com/help/buyers).
 
 If you want to bid on
 hashing power select Standard (bidding) order type and if you want a fixed

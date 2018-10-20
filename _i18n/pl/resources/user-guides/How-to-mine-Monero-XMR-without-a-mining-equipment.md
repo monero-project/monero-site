@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% assign version = '3.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Jak wydobywać Monero (XMR) bez sprzętu wydobywczego?
 
@@ -24,6 +24,6 @@ Zauważ, że prawdopodobnie będziesz musiał zarejestrować się także w wybra
 
 ### **Krok 4:** Złóż zamówienie i zacznij wydobywać
 
-Przy składaniu [nowego zamówienia](https://www.nicehash.com/?p=orders&new) upewnij się, że wybrałeś algorytm CryptoNightV7 do wydobycia Monero (nowy wariant algorytmu wdrożony 6 kwietnia 2018 roku). Jeśli najpierw chcesz się dowiedzieć więcej o składaniu zamówień na NiceHash, zalecamy przeczytanie [często zadawanych pytań](https://www.nicehash.com/?p=faq#faqb0).
+Przy składaniu [nowego zamówienia](https://www.nicehash.com/?p=orders&new) upewnij się, że wybrałeś algorytm CryptoNightR do wydobycia Monero (nowy wariant algorytmu wdrożony 9 marca 2019 roku). Jeśli najpierw chcesz się dowiedzieć więcej o składaniu zamówień na NiceHash, zalecamy przeczytanie [często zadawanych pytań](https://www.nicehash.com/help/buyers).
 
 Jeżli chcesz zalicytować moc haszowania, wybierz standardowy (licytowany) rodzaj zamówienia, a jeśli chcesz ustalone zamówienie, które nie zostanie przelicytowane, wybierz ustalony rodzaj zamówienia. Status giełdy oraz przybliżone ceny wydobycia dostępne są na [stronie giełdy na żywo](https://www.nicehash.com/index.jsp?p=orders). 

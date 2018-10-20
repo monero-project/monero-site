@@ -1,4 +1,4 @@
-{% assign version = '1.1.1' | split: '.' %}
+{% assign version = '3.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Comment miner Monero (XMR) sans matériel d'extraction minière ?
 
@@ -43,10 +43,10 @@ Vous pouvez enregistrer votre pool préféré sur [cette page](https://www.niceh
 ### **Étape 4 :** Passer une nouvelle commande et commencer à miner
 
 Lorsque vous créez une [nouvelle commande (new order)](https://www.nicehash.com/?p=orders&new),
-soyez certain de choisir l'algorythme CryptoNightV7 pour miner Monero (Nouvelle variante
-de l'algorithme en vigueur depuis le 6 Avril 2018). Si vous préférez
+soyez certain de choisir l'algorythme CryptoNightR pour miner Monero (Nouvelle variante
+de l'algorithme en vigueur depuis le 9 Mars 2019). Si vous préférez
 commencer par apprendre comment passer une commande sur NiceHash, nous vous
-recommandons de lire cette [foire aux questions](https://www.nicehash.com/?p=faq#faqb0).
+recommandons de lire cette [foire aux questions](https://www.nicehash.com/help/buyers).
 
 Si vous voulez faire une offre de puissance de hachage, sélectionnez le type de
 commande standard (bidding), et si vous souhaitez un type de commande fixe qui ne
