@@ -140,7 +140,7 @@ hangouts:
 merchants:
   translated: "yes"
   intro1: Comerciantes de todo tipo han llegado a valorar la privacidad financiera que Monero provee. A continuación se muestra una lista de comerciantes que aceptan Monero actualmente a cambio de sus bienes y servicios. Si una compañía ya no acepta Monero o te gustaría que tu negocio aparezca en la lista, puedes
-  intro2:  abrir un caso en GitHub.
+  intro2:  abrir un caso en GitLab.
   disclaimer: |
     "Tenga en cuenta: estos enlaces están siendo provistos como una conveniencia y por propósitos informativos solamente; no constituyen un acto de aprobación por la comunidad de Monero de ningún producto, servicio u opinión de las corporaciones, organizaciones o individuos listados. La comunidad de Monero no tiene responsabilidad de la exactitud, legalidad o contenido de estos sitios externos. Contacte el sitio externo para respuestas a preguntas respecto a sus contenidos. Cada individuo es responsable de su propia investigación, o en otras palabras, caveat emptor (dejar que el comprador se preocupe). Siempre utilice su juicio cuando realice compras en línea."
 
@@ -547,7 +547,7 @@ moneropedia:
   translated: "no"
   add_new_button: Add New Entry
   add_new_text1: If there is an entry you'd like to modify or be added, please
-  add_new_link: open an issue on this website's Github repository
+  add_new_link: open an issue on this website's GitLab repository
   add_new_text2: or submit changes via pull request
   entries:
     account: Account

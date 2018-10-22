@@ -140,7 +140,7 @@ hangouts:
 merchants:
   translated: "yes"
   intro1: التجار من جميع الأنواع يُقدرون قيمه السريه الماليه التي يوفرها مونيرو. بالأدني قائمه للتجار الذين نعرف أنهم يقبلون مونيرو لمنتجاتهم او خدماتهم. إذا كان هناك شركه لا تقبل مونيرو أدناه أو كنت تود إضافه شركتك للقائمه, من فضلك
-  intro2:  إفتح مسأله في GITHUB
+  intro2:  إفتح مسأله في GitLab
   disclaimer: |
     "من فضلك لاحظ: هذه الروابط تم توفيرها هنا لسهوله الوصول ولإغراض تعريفيه فقط: ولا تشكل موافقه او دعم من مجتمع مونيرو لأي من المنتجات أو الخدمات أو رأي في الشركه أو المؤسسه المعروضه هنا. مجتمع مونيرو لا يتحمل أي مسئوليه لصحه أو قانونيه أو محتوي هذه المواقع. راسل هذه المواقع للحصول علي إجابات حول ما يحتويه موقعهم. ودائما تذكر مسئوليه المشتري " إحذر كمشتري " أنت مسئول عن القيام بالبحث الخاص بك والحكم قبل الشراء من أي موقع. "
 
@@ -548,7 +548,7 @@ moneropedia:
   translated: "no"
   add_new_button: Add New Entry
   add_new_text1: If there is an entry you'd like to modify or be added, please
-  add_new_link: open an issue on this website's Github repository
+  add_new_link: open an issue on this website's GitLab repository
   add_new_text2: or submit changes via pull request
   entries:
     account: Account

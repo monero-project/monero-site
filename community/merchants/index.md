@@ -5,7 +5,7 @@ permalink: /community/merchants/index.html
 ---
 {% t global.lang_tag %}
 <div class="text-center container description">
-    <p>{% t merchants.intro1 %}<a href="https://github.com/monero-project/monero-site/issues"> {% t merchants.intro2 %}</a></p>
+    <p>{% t merchants.intro1 %}<a href="https://repo.getmonero.org/monero-project/monero-site/issues"> {% t merchants.intro2 %}</a></p>
 </div>
 <div class="merchants">
 {% for toplevel in site.data.merchants %}
@@ -32,5 +32,5 @@ permalink: /community/merchants/index.html
 </div>
 
 <div class="untranslated {% t merchants.translated %}">
-    <p>{% t global.untranslated %} <a class="untranslated-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.</p>
+    <p>{% t global.untranslated %} <a class="untranslated-link" href="https://repo.getmonero.org/monero-project/monero-site/blob/master/README.md#140-how-to-translate-a-page">README</a>.</p>
 </div>

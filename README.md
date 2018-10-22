@@ -68,7 +68,7 @@ If for any reason you have questions or need to contact us, you can find us on t
   * Install Bundler: `gem install bundler`
   * Install Jekyll with all dependencies (run from the project directory): `bundle`
 
-* GitHub: Pretty much everything in Monero is hosted on [GitHub](https://github.com) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register for GitHub and fork the [Monero Website repository](https://github.com/monero-project/monero-site).
+* GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com), [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects) or [GitLab](https://gitlab.com/users/kovri-project/projects) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register for GitHub and fork the [Monero Website repository](https://repo.getmonero.org/monero-project/monero-site).
 
 * Markdown experience: To write pages, you're going to need to know how to use Markdown. It's basically an in-between language that enables people who don't know HTML to just write, and it will be compiled into HTML for you. You can find a great Markdown cheat sheet with examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). IF you need more help, Google and YouTube are great resources.
 
@@ -104,11 +104,11 @@ When you make an edit to ANY page on the English language of this website, PLEAS
 
 The Monero Translation workgroup will do their best to keep tabs on all changes of the site, but it'd be nice to notify them that you've changed a page so they can make sure the equivalent pages are changed accordingly in the other languages.
 
-#### GitHub Issues
+#### GitLab Issues
 We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor (rehrar, SamsungGalaxyPlayer, or other community members, etc) may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
 #### Pull Requests
-Contributors should use [issue keywords](https://help.github.com/articles/closing-issues-using-keywords/) to make it easier for maintainers to close issues when they merge. Include close, closes, closed, fix, fixes, fixed, resolve, resolves, resolved, etc in the commit message or pull request description, so that the correct issue can be closed if your PR is merged. (Example: 'fixes #1234' could close Issue 1234 when merged.)
+Contributors should use [issue keywords](https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html) to make it easier for maintainers to close issues when they merge. Include close, closes, closed, fix, fixes, fixed, resolve, resolves, resolved, etc in the commit message or pull request description, so that the correct issue can be closed if your PR is merged. (Example: 'fixes #1234' could close Issue 1234 when merged.)
 
 Pull requests allow others to make comments or review your changes to the site. We ask that you remain available to comment or make changes to your PR. Pull requests with pending changes for more than 30 days will be closed and need to be resubmitted in the future. Sometimes someone else's changes might make your changes conflict with the current site. If that happens you may need to rebase your PR. (If you're unsure about how to do so, you can reach out to other contributors on IRC (freenode #monero) and someone should be able to walk you through it.
 
@@ -395,7 +395,7 @@ Find the area that you want to update and copy the code below:
 - name:
   url:
 ```
-Put the name or handle of the person in the `name` section and in the  `url:` section put the link to their GitHub URL (it must have https:// at the beginning). If they have no GitHub, then you may leave it blank, it won't mess anything up.
+Put the name or handle of the person in the `name` section and in the  `url:` section put the link to their GitHub or GitLab URL (it must have https:// at the beginning). If they have no GitHub, then you may leave it blank, it won't mess anything up.
 
 **Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
 
@@ -404,7 +404,7 @@ Save the file.
 ### 8.2 Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in the `team.yml` file back in 8.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
 
-If the build is successful, go to the Team page `/community/team/` and check to see that the contributor is showing up in the correct place. Click their GitHub link (if applicable) and make sure it redirects correctly. Test the page and let rehrar know if there are any bugs.
+If the build is successful, go to the Team page `/community/team/` and check to see that the contributor is showing up in the correct place. Click their GitHub or GitLab link (if applicable) and make sure it redirects correctly. Test the page and let rehrar know if there are any bugs.
 
 ### 8.3 Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
