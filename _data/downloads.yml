@@ -2,10 +2,10 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: 82db8f99fa4b2900f78c282c2d99309b79da544824f9cdb10d0b80ceb511c5ed
+  cli_hash: d809acd1ed688a4567716cf199c75b51e696a022e6953df3642a8922a48a734a
   gui_url: win64
   gui_hash: 5dfed8e36057bbffbddfe10ca5543666553e3c2aa21752c0ed0592a2592befdc
-  cli_version: 0.13.0.2
+  cli_version: 0.13.0.4
   gui_version: 0.13.0.3
   tag: Beryllium Bullet
   blockchain: win
@@ -13,8 +13,8 @@
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: f9fad998af2c439dce45b8210784b228c8a99dced926e9bec3522af2a213c747
-  version: 0.13.0.2
+  cli_hash: f2034f3dc125097c3ae50dff5b0a46798863fab60da8e4f35e4cb8d7d2202741
+  version: 0.13.0.4
   tag: Beryllium Bullet
   blockchain: win
 
@@ -22,10 +22,10 @@
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: bb0f197c9e43e183b9af48dfbc4f7b492568fe01d2c23c66ec3632c8aa85e4e9
+  cli_hash: dd859659bf46a11f4bb2de5bddca7c19038758024e32eb7979bc6bf29ef72e56
   gui_url: mac64
   gui_hash: c4da9847d65f5d1051522833c7518b7137cdcbb69399ec0aac4036371f293d29
-  cli_version: 0.13.0.2
+  cli_version: 0.13.0.4
   gui_version: 0.13.0.3
   tag: Beryllium Bullet
   blockchain: mac
@@ -34,10 +34,10 @@
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: a59fc0fffb325b4f92a5b500438bf340ddbf78e91581eb4df95ad2d5e5fb42a8
+  cli_hash: 693e1a0210201f65138ace679d1ab1928aca06bb6e679c20d8b4d2d8717e50d6
   gui_url: linux64
   gui_hash: b26fe2fb921c5ab7f774ceac69cc0ff5ee0e0d730dd902aa4f45046320e58749
-  cli_version: 0.13.0.2
+  cli_version: 0.13.0.4
   gui_version: 0.13.0.3
   tag: Beryllium Bullet
   blockchain: linux
@@ -45,21 +45,30 @@
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: 87396e833859cbafff53db753443f8f94a962d9738cb0f69ea9d0b3c940960e6
+  cli_hash: 3f02b0de407f944e524afc9d53d7e9ce92bf17ac6e6ef92cd3c22346afc2cb6c
   gui_url: linux32
   gui_hash: 9b4e919de5937fc1a2b7e0f48e58564c30a8f404b1954385f4002a24e38d9ebd
-  cli_version: 0.13.0.2
+  cli_version: 0.13.0.4
   gui_version: 0.13.0.3
   tag: Beryllium Bullet
   blockchain: linux
+
+- platform: FreeBSD, 64-bit
+  id: bsd
+  icon: icon-freebsd
+  cli_url: freebsd64
+  cli_hash: 95bbf57dcae4810077012835a8d369cf3ecac6e1be7b484d0d518c09868a0377
+  version: 0.13.0.4
+  tag: Beryllium Bullet
+  blockchain: freebsd
 
 - platform: ARMv7
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: 839bddb01214acb8f7bc12181b206e1e8d99314337addef7ba850b15c32dc685
-  version: 0.12.3.0
-  tag: Lithium Luna
+  cli_hash: 65e2ce5d0abf80ed3b4ecef5babc37445dc4f032457811aafa8a221af78f554a
+  version: 0.13.0.4
+  tag: Beryllium Bullet
   blockchain: arm
 
 - platform: ARMv8
