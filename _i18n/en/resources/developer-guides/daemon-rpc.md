@@ -1,4 +1,4 @@
-{% assign version = '2.2.0' | split: '.' %}
+{% assign version = '2.3.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
@@ -44,9 +44,7 @@ Note2: Guide updated as of network height of 1,562,465.
 * [/get_blocks_by_height.bin](#get_blocks_by_heightbin)
 * [/get_hashes.bin](#get_hashesbin)
 * [/get_o_indexes.bin](#get_o_indexesbin)
-* [/get_random_outs.bin](#get_random_outsbin)
 * [/get_outs.bin](#get_outsbin)
-* [/get_random_rctouts.bin](#get_random_rctoutsbin)
 * [/get_transactions](#get_transactions)
 * [/get_alt_blocks_hashes](#get_alt_blocks_hashes)
 * [/is_key_image_spent](#is_key_image_spent)
@@ -1395,37 +1393,6 @@ $ curl -X POST http://127.0.0.1:18081/get_o_indexes.bin --data-binary '{"txid":"
 --->
 
 
-### **/get_random_outs.bin**
-
-Get a list of random outputs for a specific list of amounts. Binary request.
-
-Alias: */getrandom_outs.bin*.
-
-Inputs:
-
-* *amounts* - array of unsigned int; amounts to get random outputs for
-* *outs_count* - unsigned int; Number of output to get
-
-Output:
-
-* *outs* - array of structure *outs_for_amount* as follows:
-  * *amount* - unsigned int;
-  * *outs* - array of structure *out_entry* as follows:
-    * *global_amount_index* - unsigned int;
-    * *out_key* - public key;
-* *status* - string; General RPC error code. "OK" means everything looks good.
-* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced (`false`).
-
-<!-- Cannot get this working
-Example:
-
-```
-$ curl -X POST http://127.0.0.1:18081/get_o_indexes.bin -d '{"txid":"d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"}' -H 'Content-Type: application/json'
-
-```
---->
-
-
 ### **/get_outs.bin**
 
 Get outputs. Binary request.
@@ -1455,36 +1422,6 @@ Example:
 
 ```
 $ curl -X POST http://127.0.0.1:18081/get_o_indexes.bin --data-binary '{"txid":"d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"}'
-
-```
---->
-
-
-### **/get_random_rctouts.bin**
-
-Get random RingCT outputs. Binary request.
-
-Alias: */getrandom_rctouts.bin*.
-
-Inputs:
-
-* *outs_count* - unsigned int; amount of RingCT output to get
-
-Outputs:
-
-* *outs* - array of structure *out_entry* as follows:
-  * *amount* - unsigned int;
-  * *commitment* - RingCT Key;
-  * *global_amount_index* - unsigned int;
-  * *out_key* - public key;
-* *status* - string; General RPC error code. "OK" means everything looks good.
-* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced (`false`).
-
-<!-- Cannot get this working
-Example:
-
-```
-$ curl -X POST http://127.0.0.1:18081/get_random_rctouts.bin -d '{"outs_count":7}' -H 'Content-Type: application/json'
 
 ```
 --->
