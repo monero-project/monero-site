@@ -5,8 +5,11 @@
   cli_hash: ee68ef8d4b3309cca9e68ee272919c222021804e493c2549c910ef370dfe595a
   gui_url: win64
   gui_hash: c23c849a2a970370f2bf7e22aae34f633f51d8490b6130337e5fe9369aff77e0
+  gui_installer_url: win64install
+  gui_installer_hash: 4c0ceb81361a4b69bff6cd5a47ef94cfd2992796fb25ca3923aed51d6fcd48bd
   cli_version: 0.14.0.2
   gui_version: 0.14.0.0
+  gui_installer_version: 0.14.0.0
   tag: Boron Butterfly
   blockchain: win
 
@@ -87,9 +90,9 @@
   mirror1: https://git.pwned.systems/monero-project/monero
   cli_hash: source
   version: Bleeding edge (possibly unstable)
-  
+
 - platform: Mobile & Light Wallets
   id: mobilelight
-  
+
 - platform: Hardware Wallets
   id: hardware
