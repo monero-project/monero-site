@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% assign version = '1.2.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 Un monedero de visualización solamente puede ver qué transacciones de entrada te pertenecen. No puede utilizar nada de tu Monero, de hecho ni siquiera puede ver las transacciones de salida del monedero. Esto hace a los monederos de sólo visualización interesantes para
 
@@ -17,11 +17,11 @@ A continuación, crea tu monedero de visualización escribiendo `monero-wallet-c
 
 #### GUI
 
-Abre un monedero existente o crea uno nuevo usando `monero-wallet-gui`. En el ejemplo, ve a la página de `opciones`
+Abre un monedero existente o crea uno nuevo usando `monero-wallet-gui`. En el ejemplo, ve a la página de `Opciones` > `Monedero`
 
 ![settings](png/view-only/settings.png)
 
-Haz clic en `Crear un monedero de visualización`, y dale un nombre y ubicación antes de hacer clic en la flecha de `Siguiente`:
+Haz clic en `Crear un monedero de sólo visualización` > `Crear monedero`, y dale un nombre y ubicación antes de hacer clic en la flecha de `Siguiente`:
 
 ![create-view-only](png/view-only/create-view-only.png)
 
