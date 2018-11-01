@@ -17,6 +17,18 @@ permalink: /resources/research-lab/index.html
                 </div>
 
                 <div class="tab">
+                    <input id="tab-7" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-7" class="accordion">MRL-0007: {% t research-lab.mrl7 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl7_abstract %}
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/resources/research-lab/pubs/MRL-0007.pdf">{% t research-lab.read-paper %}</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
                     <input id="tab-6" type="checkbox" name="tabs" class="accordion">
                     <label for="tab-6" class="accordion">MRL-0006: {% t research-lab.mrl6 %}</label>
                     <div class="tab-content">
