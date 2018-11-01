@@ -15,69 +15,79 @@ permalink: /resources/research-lab/index.html
                 <div class="row center-xs">
                     <div class="col"><h2>{% t research-lab.mrl_papers %}</h2></div>
                 </div>
+
                 <div class="tab">
-                    <input id="tab-one" type="checkbox" name="tabs" class="accordion" checked="checked">
-                    <label for="tab-one" class="accordion">MRL-0001: {% t research-lab.mrl1 %}</label>
-                    <div class="tab-content">
-                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl1_abstract %}
-                            <br>
-                            <br>
-                            <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0001.pdf">{% t research-lab.read-paper %}</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="tab">
-                    <input id="tab-two" type="checkbox" name="tabs" class="accordion">
-                    <label for="tab-two" class="accordion">MRL-0002: {% t research-lab.mrl2 %}</label>
-                    <div class="tab-content">
-                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl2_abstract %}
-                            <br>
-                            <br>
-                            <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0002.pdf">{% t research-lab.read-paper %}</a>
-                        </p>            
-                    </div>
-                </div>
-                <div class="tab">
-                    <input id="tab-three" type="checkbox" name="tabs" class="accordion">
-                    <label for="tab-three" class="accordion">MRL-0003: {% t research-lab.mrl3 %}</label>
-                    <div class="tab-content">
-                        <p><strong>{% t research-lab.introduction %}:</strong> {% t research-lab.mrl3_abstract %}
-                            <br>
-                            <br>
-                            <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0003.pdf">{% t research-lab.read-paper %}</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="tab">
-                    <input id="tab-four" type="checkbox" name="tabs" class="accordion">
-                    <label for="tab-four" class="accordion">MRL-0004: {% t research-lab.mrl4 %}</label>
-                    <div class="tab-content">
-                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl4_abstract %}
-                            <br>
-                            <br>
-                            <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0004.pdf">{% t research-lab.read-paper %}</a></p>
-                    </div>
-                </div>
-                <div class="tab">
-                    <input id="tab-five" type="checkbox" name="tabs" class="accordion">
-                    <label for="tab-five" class="accordion">MRL-0005: {% t research-lab.mrl5 %}</label>
-                    <div class="tab-content">
-                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl5_abstract %}
-                            <br>
-                            <br>
-                            <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank" rel="noreferrer noopener">{% t research-lab.read-paper %}</a></p>
-                    </div>
-                </div>
-                <div class="tab">
-                    <input id="tab-sixth" type="checkbox" name="tabs" class="accordion">
-                    <label for="tab-sixth" class="accordion">MRL-0006: {% t research-lab.mrl6 %}</label>
+                    <input id="tab-6" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-6" class="accordion">MRL-0006: {% t research-lab.mrl6 %}</label>
                     <div class="tab-content">
                         <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl6_abstract %}
                             <br>
                             <br>
-                            <a href="https://lab.getmonero.org/pubs/MRL-0006.pdf" target="_blank" rel="noreferrer noopener">{% t research-lab.read-paper %}</a></p>
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/resources/research-lab/pubs/MRL-0006.pdf">{% t research-lab.read-paper %}</a>
+                        </p>
                     </div>
                 </div>
+
+                <div class="tab">
+                    <input id="tab-5" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-5" class="accordion">MRL-0005: {% t research-lab.mrl5 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl5_abstract %}
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/resources/research-lab/pubs/MRL-0005.pdf">{% t research-lab.read-paper %}</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-4" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-4" class="accordion">MRL-0004: {% t research-lab.mrl4 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl4_abstract %}
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/resources/research-lab/pubs/MRL-0004.pdf">{% t research-lab.read-paper %}</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-3" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-3" class="accordion">MRL-0003: {% t research-lab.mrl3 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl3_abstract %}
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/resources/research-lab/pubs/MRL-0003.pdf">{% t research-lab.read-paper %}</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-2" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-2" class="accordion">MRL-0002: {% t research-lab.mrl2 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl2_abstract %}
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/resources/research-lab/pubs/MRL-0002.pdf">{% t research-lab.read-paper %}</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-1" type="checkbox" name="tabs" class="accordion">
+                    <label for="tab-1" class="accordion">MRL-0001: {% t research-lab.mrl1 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.mrl1_abstract %}
+                            <br>
+                            <br>
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/resources/research-lab/pubs/MRL-0001.pdf">{% t research-lab.read-paper %}</a>
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- end left two-thirds block-->
