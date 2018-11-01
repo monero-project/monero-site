@@ -466,6 +466,8 @@ research-lab:
   mrl7_abstract: This technical note generalizes the concept of spend outputs using basic set theory. The definition captures a variety of earlier work on identifying such outputs. We quantify the effects of this analysis on the Monero blockchain and give a brief overview of mitigations.
   mrl8: Dual Linkable Ring Signatures
   mrl8_abstract: This bulletin describes a modification to Monero's linkable ring signature scheme that permits dual-key outputs as ring members. Key images are tied to both output one-time public keys in a dual, preventing both keys in that transaction from being spent separately. This method has applications to non-interactive refund transactions. We discuss the security implications of the scheme.
+  mrl9: Thring Signatures and their Applications to Spender-Ambiguous Digital Currencies
+  mrl9_abstract: We present threshold ring multi-signatures (\textit{thring signatures}) for collaborative computation of ring signatures, present a game of existential forgery for thring signatures, and discuss uses of thring signatures in digital currencies that include spender-ambiguous cross-chain atomic swaps for confidential amounts without a trusted setup. We present an implementation of thring signatures that we call linkable spontaneous threshold anonymous group signatures, and prove the implementation existentially unforgeable.
   cryptonote: Cryptonote Whitepapers
   cryptonote-whitepaper: Cryptonote Whitepaper
   cryptonote-whitepaper_para: This is the original cryptonote paper written by the cryptonote team. Reading it will give an understanding about how the cryptonote algorithm works in general.
