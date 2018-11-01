@@ -13,21 +13,23 @@ monero-linux-x64-v0.13.0.4.tar.bz2, 693e1a0210201f65138ace679d1ab1928aca06bb6e67
 monero-linux-x86-v0.13.0.4.tar.bz2, 3f02b0de407f944e524afc9d53d7e9ce92bf17ac6e6ef92cd3c22346afc2cb6c
 monero-freebsd-x64-v0.13.0.4.tar.bz2, 95bbf57dcae4810077012835a8d369cf3ecac6e1be7b484d0d518c09868a0377
 monero-linux-armv7-v0.13.0.4.tar.bz2, 65e2ce5d0abf80ed3b4ecef5babc37445dc4f032457811aafa8a221af78f554a
+monero-linux-armv8-v0.13.0.4.tar.bz2, 7158380839f41ef7b25f303d5c01cab0deeec96c26fde5bf4aaac6798d114bb9
 
-monero-gui-win-x64-v0.13.0.3.zip, 5dfed8e36057bbffbddfe10ca5543666553e3c2aa21752c0ed0592a2592befdc
-monero-gui-mac-x64-v0.13.0.3.tar.bz2, c4da9847d65f5d1051522833c7518b7137cdcbb69399ec0aac4036371f293d29
-monero-gui-linux-x64-v0.13.0.3.tar.bz2, b26fe2fb921c5ab7f774ceac69cc0ff5ee0e0d730dd902aa4f45046320e58749
-monero-gui-linux-x86-v0.13.0.3.tar.bz2, 9b4e919de5937fc1a2b7e0f48e58564c30a8f404b1954385f4002a24e38d9ebd
+monero-gui-win-x64-v0.13.0.4.zip, ff1b1467dc6252462e5e7818485857ad2ee253712670ff7f5716aa57241577c7
+monero-gui-win-x86-v0.13.0.4.zip, 50feee5c42c7342140a7e5c95a88d330262bebf3b844817ed49e4be86787795b
+monero-gui-mac-x64-v0.13.0.4.tar.bz2, c425f1b984cf00ffd1a9f1322e5da876aa07c106e975ca9fe08ee0a2d2956335
+monero-gui-linux-x64-v0.13.0.4.tar.bz2, 284d61981204246425a520087723edb65155c89b9cb807750dca8c8687156679
+monero-gui-linux-x86-v0.13.0.4.tar.bz2, 53750002c3f630457a397ef097929eb3eaa204ac393ff65ef1a05916872eb788
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlvQ48QACgkQVUMt8xzN
-T80v1ggAlQVG7HKzmv8ZfC6s7U1PzyXVaegxh43Epw66kJ+XHyjJmy9RKgA1xH3t
-opT7VJ+7DCmHO2n/L1qyC3xBGWxwRcET7DVhx9u/wzPSJSCwgW0sRdIabUCTMZLK
-vV3mVlsX9yOpPlVuq0Iy8qZ2vQMB+qHRbaeqj+pQjUp0+536yOu/hoDEYvx1Iify
-lbf5hqpDdpRTO5rsavfSW/aKSDhNGVoejXb35GQejuNiSg3F5Ag7Og/cCx4PwW08
-aOtssN+bJNsnOL8k/IJPY+d/i173mWSlTjhIEasCT96s4QjZIFdCo3Fr0Mpf9YjH
-o7+GeEc8GHbnoldv7wp74m1P5HyC9g==
-=30Vg
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlvbdKYACgkQVUMt8xzN
+T81xIwf6At5nGWYJIbzWZovvuQnxIoPzc6hI2dsIGh0Yo6bCWCHPJ7Ovv06sPdBf
+GOZ5VueDoJvTo8iiFGDRBJ6uXR/7Ft0AP/33ucv1U/N3rCGQQIjk8xllxv6ZAYXg
+adohevlxp2t+WuBu3iAoPcNiyxAbTGQlIXtkJXPtgkpVdAHx0f4vd154Htm3l7Cc
+LDxMqZTB/Qe7XM/BVTgpFK71M3uQ7cybU+5uEBjNdBobGrTWSGJC1yCk5DNxO5Em
+kQvteyFfsi721CykJeX+CE4lJk4s01ZgzSvjXCQWis7zyxPY8gs7dnGL8H1xT3Ui
+LRtVNZQvC9KCeWnMLfirBz0gbu1zhA==
+=XBEI
 -----END PGP SIGNATURE-----

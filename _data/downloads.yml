@@ -4,9 +4,9 @@
   cli_url: win64
   cli_hash: d809acd1ed688a4567716cf199c75b51e696a022e6953df3642a8922a48a734a
   gui_url: win64
-  gui_hash: 5dfed8e36057bbffbddfe10ca5543666553e3c2aa21752c0ed0592a2592befdc
+  gui_hash: ff1b1467dc6252462e5e7818485857ad2ee253712670ff7f5716aa57241577c7
   cli_version: 0.13.0.4
-  gui_version: 0.13.0.3
+  gui_version: 0.13.0.4
   tag: Beryllium Bullet
   blockchain: win
 
@@ -14,7 +14,10 @@
   icon: icon-windows
   cli_url: win32
   cli_hash: f2034f3dc125097c3ae50dff5b0a46798863fab60da8e4f35e4cb8d7d2202741
-  version: 0.13.0.4
+  gui_url: win32
+  gui_hash: 50feee5c42c7342140a7e5c95a88d330262bebf3b844817ed49e4be86787795b
+  cli_version: 0.13.0.4
+  gui_version: 0.13.0.4
   tag: Beryllium Bullet
   blockchain: win
 
@@ -24,9 +27,9 @@
   cli_url: mac64
   cli_hash: dd859659bf46a11f4bb2de5bddca7c19038758024e32eb7979bc6bf29ef72e56
   gui_url: mac64
-  gui_hash: c4da9847d65f5d1051522833c7518b7137cdcbb69399ec0aac4036371f293d29
+  gui_hash: c425f1b984cf00ffd1a9f1322e5da876aa07c106e975ca9fe08ee0a2d2956335
   cli_version: 0.13.0.4
-  gui_version: 0.13.0.3
+  gui_version: 0.13.0.4
   tag: Beryllium Bullet
   blockchain: mac
 
@@ -36,9 +39,9 @@
   cli_url: linux64
   cli_hash: 693e1a0210201f65138ace679d1ab1928aca06bb6e679c20d8b4d2d8717e50d6
   gui_url: linux64
-  gui_hash: b26fe2fb921c5ab7f774ceac69cc0ff5ee0e0d730dd902aa4f45046320e58749
+  gui_hash: 284d61981204246425a520087723edb65155c89b9cb807750dca8c8687156679
   cli_version: 0.13.0.4
-  gui_version: 0.13.0.3
+  gui_version: 0.13.0.4
   tag: Beryllium Bullet
   blockchain: linux
 
@@ -47,9 +50,9 @@
   cli_url: linux32
   cli_hash: 3f02b0de407f944e524afc9d53d7e9ce92bf17ac6e6ef92cd3c22346afc2cb6c
   gui_url: linux32
-  gui_hash: 9b4e919de5937fc1a2b7e0f48e58564c30a8f404b1954385f4002a24e38d9ebd
+  gui_hash: 53750002c3f630457a397ef097929eb3eaa204ac393ff65ef1a05916872eb788
   cli_version: 0.13.0.4
-  gui_version: 0.13.0.3
+  gui_version: 0.13.0.4
   tag: Beryllium Bullet
   blockchain: linux
 
@@ -75,9 +78,9 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm8
-  cli_hash: a6e994dc9fcec7259b656752a6fc0f9686bad47da9deec0f50398718cd9b9be8
-  version: 0.12.3.0
-  tag: Lithium Luna
+  cli_hash: 7158380839f41ef7b25f303d5c01cab0deeec96c26fde5bf4aaac6798d114bb9
+  version: 0.13.0.4
+  tag: Beryllium Bullet
   blockchain: arm
 
 - platform: Source Code & Blockchain
