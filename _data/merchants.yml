@@ -286,6 +286,8 @@
       url: https://xmr.to/
     - name: Zeo Agency - SEO consultancy
       url: https://zeo.org/
+    - name: Smsanon - Receive SMS anonymously with monero
+      url: https://smsanon.com/
 - category: Goods
   id: goods
   merchants:
