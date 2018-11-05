@@ -85,7 +85,7 @@ home:
   downloads_windows: Monero для Windows
   downloads_mac: Monero для Mac
   downloads_linux: Monero для Linux
-  downloads_blockchain: Актуальный блокчейн
+  downloads_blockchain: Блокчейн
   different_system: Вашей операционной системы нет в списке?
   view_all_downloads: Просмотреть все доступные загрузки можно здесь.
   latest_news: Последние новости
@@ -156,7 +156,7 @@ team:
   developers_para3: Ниже вы найдете список людей, которые сделали все возможное для развития проекта Monero.
   community: Сообщество
   mrl: Лаборатория
-  thanks: Особая благодарность
+  thanks: Благодарность
 
 downloads:
   translated: "yes"
