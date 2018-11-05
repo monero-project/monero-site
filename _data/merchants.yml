@@ -260,6 +260,8 @@
       url: http://www.rohan.law
     - name: Rootbox; Simple, no non-sense hosting
       url: https://rootbox.host/
+    - name: Smsanon - Receive SMS anonymously with monero
+      url: https://smsanon.com/
     - name: Snel - dedicated and VPS hosting
       url: https://www.snel.com/
     - name: TheBigCoin - Spend Monero Anywhere
@@ -286,8 +288,6 @@
       url: https://xmr.to/
     - name: Zeo Agency - SEO consultancy
       url: https://zeo.org/
-    - name: Smsanon - Receive SMS anonymously with monero
-      url: https://smsanon.com/
 - category: Goods
   id: goods
   merchants:
