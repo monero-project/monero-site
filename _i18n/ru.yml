@@ -552,6 +552,7 @@ moneropedia:
     blockchain: Блокчейн
     block: Блок
     bootstrap-node: Узел начальной загрузки
+    bulletproofs: Bulletproofs
     canonically-unique-host: Канонически уникальный хост
     change: Сдача
     clearnet: Клирнет
