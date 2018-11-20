@@ -401,8 +401,8 @@ about:
 
 
 developer-guides:
-  translated: "yes"
-  outdated: "Tenga en cuenta: las siguientes guías están desactualizadas, pero son consideradas como un buen punto de inicio para la mayoría de las llamadas."
+  translated: "no"
+  outdated: "Tenga en cuenta: the guides below have been recently refreshed and are maintained almost up-to-date by the community. However, methods are often added / removed / updated and may not be accurately described here."
   rpc: Documentación RPC
   daemonrpc: Documentación de Daemon RPC
   walletrpc: Documentación de Monedero RPC
