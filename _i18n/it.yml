@@ -140,7 +140,7 @@ hangouts:
 merchants:
   translated: "no"
   intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please
-  intro2:  open a GitHub issue and let us know.
+  intro2:  open a GitLab issue and let us know.
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
 
@@ -547,7 +547,7 @@ moneropedia:
   translated: "no"
   add_new_button: Add New Entry
   add_new_text1: If there is an entry you'd like to modify or be added, please
-  add_new_link: open an issue on this website's Github repository
+  add_new_link: open an issue on this website's GitLab repository
   add_new_text2: or submit changes via pull request
   entries:
     account: Conti
