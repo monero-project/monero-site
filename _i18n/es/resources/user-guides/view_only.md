@@ -1,34 +1,34 @@
 {% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
-A view-only wallet can only see which incoming transactions belong to you. It can not spend any of your Monero, in fact it can't even see outgoing transactions from this wallet. This makes view-only wallets particularly interesting for
+{% include disclaimer.html translated="true" version=page.version %}
+Un monedero de visualización solamente puede ver qué transacciones de entrada te pertenecen. No puede utilizar nada de tu Monero, de hecho ni siquiera puede ver las transacciones de salida del monedero. Esto hace a los monederos de sólo visualización interesantes para
 
-* Developers writing libraries to validate payments
-* End users validating incoming transactions to cold wallets
+* Desarrolladores escribiendo librerías para validar pagos
+* Usuarios finales validando transacciones de entrada para monederos de almacenamiento en frío
 
-### Creating A View-Only Wallet
+### Creando un Monedero de Visualización
 
-You can create a view-only wallet from any existing wallet.
+Puedes crear un monedero de visualización de cualquier monedero existente.
 
 #### CLI
 
-Open an existing wallet or create a new one using `monero-wallet-cli`. In the wallet, type `address` and `viewkey` to display the wallet's address and secret viewkey. Type `exit` to close the wallet.
+Abre un monedero existente o crea uno nuevo usando `monero-wallet-cli`. En el monedero, escribe `address` y `viewkey` para mostrar la dirección del monedero y la clave secreta de visualización. Escribe `exit` para cerrar el monedero.
 
-Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and secret view key. Next, enter and confirm a password for your new wallet and you're done.
+A continuación, crea tu monedero de visualización escribiendo `monero-wallet-cli --generate-from-view-key wallet-name`. El último argumento será el nuevo nombre de tu monedero. Se te preguntará por un `Standard address` y `View key` por el monedero. Pega la dirección original de tu monedero y la clave secreta de visualización. A continuación, ingresa y confirma una contraseña para tu nuevo monedero y estarás listo.
 
 #### GUI
 
-Open an existing wallet or create a new one using `monero-wallet-gui`. In the wallet, go to the `settings` page:
+Abre un monedero existente o crea uno nuevo usando `monero-wallet-gui`. En el ejemplo, ve a la página de `opciones`
 
 ![settings](png/view-only/settings.png)
 
-Click on `Create view only wallet`, then give it a name and a storage location before clicking the `Right` arrow:
+Haz clic en `Crear un monedero de visualización`, y dale un nombre y ubicación antes de hacer clic en la flecha de `Siguiente`:
 
 ![create-view-only](png/view-only/create-view-only.png)
 
-Give your view-only wallet a strong password and confirm it before clicking on `Create wallet`:
+Da a tu monedero de visualización una contraseña fuerte y confírmala antes de hacer clic en `Crear monedero`:
 
 ![wallet-password](png/view-only/wallet-password.png)
 
-Optionally, double-click the `Success` windows to copy the message, then click `OK` to close it:
+Opcionalmente, haz doble clic en la ventana `Éxito` para copiar el mensaje, y haz clic en `OK` para cerrarlo:
 
 ![Success](png/view-only/Success.png)

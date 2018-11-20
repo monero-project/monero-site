@@ -1,32 +1,32 @@
 {% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
-Sometimes, your funds will become stuck - you will have some locked funds that never become unlocked. This is how you fix it.
+{% include disclaimer.html translated="true" version=page.version %}
+Algunas veces, tus fondos estarán estancados - tendrás fondos bloqueados que nunca se podrán desbloquear. Esta es la forma de arreglarlo.
 
-- Load your wallet in monero-wallet-cli.
+- Carga tu monedero en monero-wallet-cli.
 
-- Type
+- Escribe
 
 > seed
 
-into the command prompt. Write down your 25 word seed, if you haven't already. This is the best way to make sure you don't loose access to your funds.
+en la consola. Escribe tu semilla de 25 palabras si aún no lo has hecho. Esta es la mejor forma de asegurar que no pierdas acceso a tus fondos.
 
-- Close monero-wallet-cli by typing
+- Cierra monero-wallet-cli escribiendo
 
 > exit
 
-- Backup all of your wallet related files. These include:
+- Respalda todos los archivos relacionados con tu monedero. Estos incluyen:
 
-> yourwalletname.bin
-> yourwalletname.bin.keys
-> yourwalletname.bin.address.txt
+> nombredetumonedero.bin
+> nombredetumonedero.bin.keys
+> nombredetumonedero.bin.address.txt
 
-This can be done by copying the files to a new folder.
+Esto se logra copiando los archivos a una nueva carpeta.
 
-Sometimes, when creating your wallet, you might have named it something without the .bin part. In that case, the wallet file will be called yourwalletname without the .bin at the end.
+Algunas veces, cuando creas un monedero, la pudiste haber llamado de alguna forma sin el final como .bin. En ese caso, el archivo del monedero será llamado nombredetumonedero sin .bin al final.
 
-- Delete yourwallet.bin
+- Elimina tumonedero.bin
 
-- Load monero-wallet-cli, type in the name of the wallet you just deleted
+- Abre monero-wallet-cli, escribe el nombre del monedero que acabas de eliminar.
 
-- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked.
+- Ingresa la contraseña. El monedero se actualizará y posiblemente tus fondos bloqueados estarán ahora desbloqueados.
 
