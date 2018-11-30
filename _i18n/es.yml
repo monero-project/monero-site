@@ -208,7 +208,7 @@ press-kit:
   symbol_file: Símbolo en archivo .ai
   logo_file: Logo en archivo .ai
   documents:
-  - category: Press Documentation
+  - category: Documentación de Prensa
     publications:
     - name: "Hoja de Datos"
       url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts_es.pdf"
