@@ -28,5 +28,5 @@ Parfois, lors de la création de votre portefeuille, vous pourriez lui avoir don
 
 - Lancez monero-wallet-cli, et tapez le nom de votre portefeuille que vous venez de supprimer.
 
-- Entrez votre mot de passe. Votre portefeuille sera alors mis à jour et avec un peu de change vos fonds bloqués seront alors débloqués.
+- Entrez votre mot de passe. Votre portefeuille sera alors mis à jour et avec un peu de chance vos fonds bloqués seront alors débloqués.
 
