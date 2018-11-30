@@ -1,0 +1,6 @@
+- name: Юридическая информация
+  url: legal
+- name: Исходный код
+  url: https://github.com/monero-project
+- name: Техническая спецификация
+  url: technical-specs/

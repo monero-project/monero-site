@@ -1,0 +1,120 @@
+- year: 2014
+  accomplishments:
+    - name: Создание раздела на Bitcointalk
+      date: 2014-04-18
+      status: completed
+    - name: Переименование из Bitmonero в Monero
+      date: 2014-04-23
+      status: completed
+    - name: Восстановление после спам-атаки
+      date: 2014-09-04
+      status: completed
+    - name: Публикация первого и второго отчета от Иследовательской Лабаратории Monero
+      date: 2014-09-12
+      status: completed
+    - name: Публикация третьего отчета от Иследовательской Лабаратории Monero
+      date: 2014-09-25
+      status: completed
+    - name: Выпуск версии 0.8.8.6
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: Публикация четвертого отчета от Иследовательской Лабаратории Monero
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: Выпуск версии 0.9.0 Hydrogen Helix
+      date: 2016-01-01
+      status: completed
+    - name: Публикация пятого отчета от Иследовательской Лабаратории Monero
+      date: 2016-02-10
+      status: completed
+    - name: Обновление сети, изменен минимально допустимый размера кольца "ringsize" от 3 и более для всех транзаций
+      date: 2016-03-22
+      status: completed
+    - name: Выпуск версии 0.10.0 Wolfram Warptangent
+      date: 2016-09-18
+      status: completed
+    - name: Обновление сети для разделения на номиналы
+      date: 2016-09-21
+      status: completed
+    - name: Выпуск версии 0.10.1 Wolfram Warptangent
+      date: 2016-12-14
+      status: completed
+    - name: Официальный выпуск GUI Beta 1
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: Обновление сети для включения функции RingCT в состав транзакции
+      date: 2017-01-05
+      status: completed
+    - name: Выпуск версии 0.10.2; исправлена критическая уязвимость
+      date: 2017-02-22
+      status: completed
+    - name: Выпуск версии 0.10.3.1 Wolfram Warptangent
+      date: 2017-03-27
+      status: completed
+    - name: Обновление сети для настройки минимального размера блока и динамического алгоритма сборов
+      date: 2017-04-15
+      status: completed
+    - name: Изменение внешнего вида веб-сайта getmonero.org
+      date: 2017-07-04
+      status: completed
+    - name: Выпуск версии 0.11.0.0
+      date: 2017-09-07
+      status: completed
+    - name: Пушистые блоки "Fluffy blocks"
+      date: 2017-09-07
+      status: completed
+    - name: Выход GUI версии из статуса бета-версии
+      date: 2017-09-10
+      status: completed
+    - name: Обновление сети, изменен минимально допустимый размера кольца "ringsize" от 5 и более и включения функции RingCT для всех транзаций
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: Субадреса
+      date: October, 2017
+      status: completed
+    - name: Мультиподписи (multisig)
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: Переход на новый алгоритм доказательства работы "PoW" CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: Обновление сети, изменен минимально допустимый размера кольца "ringsize" от 7 и более, интегрированы мультиподписи (multisig) и субадреса, изменен алгоритм доказательства работы "PoW"
+      date: 2018-04-06
+      status: completed
+    - name: Перевод getmonero.org на французский и польский язык
+      date: 2018-04-24
+      status: completed
+    - name: Поддержка аппаратного кошелька Ledger
+      date: 2018-06-04
+      status: completed
+    - name: Выпуск alpha версии Kovri
+      date: 2018-08-01
+      status: completed
+    - name: Изменение внешнего вида для cистемы общественного финансирования "FFS"
+      date:
+      status: ongoing
+    - name: Улучшение эффективности доказательства диапазона RingCT для уменьшения размера транзакций
+      date:
+      status: ongoing
+    - name: Интеграция Kovri
+      date:
+      status: upcoming
+- year: 2019
+  accomplishments:
+    - name: Решения второго уровня для скорости и масштабируемости
+      date:
+      status: upcoming
+    - name: Дополнительные научные работы от Иследовательской Лабаратории Monero
+      date:
+      status: upcoming
