@@ -509,7 +509,7 @@ specs:
   sender_privacy_title: Privacidad del Emisor
   sender_privacy_mode: Firmas circulares
   recipient_privacy_title: Privacidad del Receptor
-  recipient_privacy_mode: Direcciones sigilo
+  recipient_privacy_mode: Direcciones secretas
   amount_hidden_title: Encubrimiento de Cantidades
   amount_hidden_mode: Transacciones confidenciales circulares
 
@@ -550,77 +550,77 @@ library:
         En esta publicacióne, actualizaciones acerca de: desarrollo, Laboratorio de Investigación de Monero, Kovri, y comunidad, Hardware, y Monerujo.
 
 moneropedia:
-  translated: "no"
-  add_new_button: Add New Entry
-  add_new_text1: If there is an entry you'd like to modify or be added, please
-  add_new_link: open an issue on this website's GitLab repository
-  add_new_text2: or submit changes via pull request
+  translated: "yes"
+  add_new_button: Crear Nueva Entrada
+  add_new_text1: Si hay una entrada que quisieras modificar o agregar, por favor
+  add_new_link: abre un caso en el repositorio de este sitio en GitLab
+  add_new_text2: o presenta tus cambios a través de un pull request
   entries:
-    account: Account
-    address-book: Address Book
-    address: Address
+    account: Cuenta
+    address-book: Directorio
+    address: Dirección
     airgap: Airgap
-    atomic-units: Atomic Units
-    base32-address: Base32 address
-    base64-address: Base64 address
+    atomic-units: Unidades Atómicas
+    base32-address: Dirección Base32
+    base64-address: Dirección Base64
     blockchain: Blockchain
-    block: Block
-    bootstrap-node: Bootstrap-node
-    canonically-unique-host: Canonically-unique host
-    change: Change
+    block: Bloque
+    bootstrap-node: Nodo Bootstrap
+    canonically-unique-host: Host único canónico
+    change: Cambio
     clearnet: Clearnet
-    coinbase: Coinbase Transaction
-    consensus: Consensus
-    cryptocurrency: Cryptocurrency
-    data-directory: Data Directory
-    denominations: Denominations
-    destination: Destination
+    coinbase: Transacción de Coinbase
+    consensus: Consenso
+    cryptocurrency: Criptomoneda
+    data-directory: Directorio de Datos
+    denominations: Denominaciones
+    destination: Destino
     eepsite: Eepsite
-    encryption: Encryption
+    encryption: Encriptación
     floodfill: Floodfill
-    fluffyblocks: Fluffy Blocks
-    fungibility: Fungibility
-    garlic-encryption: Garlic-Encryption
-    garlic-routing: Garlic Routing
+    fluffyblocks: Bloques Fluffy
+    fungibility: Fungibilidad
+    garlic-encryption: Encriptación Garlic
+    garlic-routing: Enrutado Garlic
     i2np: I2NP
     i2pcontrol: I2PControl
     i2p: I2P
-    in-net: In-net
+    in-net: En-red
     java-i2p: Java I2P
-    jump-service: Jump Service
+    jump-service: Servicio Jump
     kovri: Kovri
-    lease: Lease
-    lease-set: Lease-Set
-    locally-unique-host: Locally-unique host
-    message: Message
-    mining: Mining
-    mnemonicseed: Mnemonic Seed
-    network-database: Network Database
-    node: Node
+    lease: Contrato
+    lease-set: Conjunto de Contratos
+    locally-unique-host: Host único local
+    message: Mensaje
+    mining: Minería
+    mnemonicseed: Semilla Mnemónica
+    network-database: Base de Datos de Red
+    node: Nodo
     ntcp: NTCP
     openalias: OpenAlias
-    paperwallet: Paper Wallet
-    paymentid: Payment ID
-    pedersen-commitment: Pedersen Commitment
-    reseed: Reseed
-    ringCT: Ring CT
-    ringsignatures: Ring Signature
-    ring-size: Ring Size
-    router-info: Router-Info
-    scalability: Scalability
-    signature: Cryptographic Signature
-    smartmining: Smart Mining
-    spendkey: Spend Key
+    paperwallet: Monedero en Papel
+    paymentid: ID de Pago
+    pedersen-commitment: Compromiso Pedersen
+    reseed: Resembrar
+    ringCT: Transacción Circular Confidencial
+    ringsignatures: Firmas Circulares
+    ring-size: Tamaño de Círculo
+    router-info: Información del Router
+    scalability: Escalabilidad
+    signature: Firma Criptográfica
+    smartmining: Minería Inteligente
+    spendkey: Clave de Gasto
     ssu: SSU
-    stealthaddress: Stealth Address
-    subscription: Subscription
-    tail-emission: Tail Emission
-    transaction: Transactions
-    transports: Transports
-    tunnel: Tunnel
-    unlocktime: Transaction Unlock Time
-    viewkey: View Key
-    wallet: Wallet
+    stealthaddress: Dirección secreta
+    subscription: Subscripción
+    tail-emission: Emisión de Cola
+    transaction: Transacción
+    transports: Transportes
+    tunnel: Túnel
+    unlocktime: Tiempo de Desbloqueo de Transacción
+    viewkey: Clave de Visualización
+    wallet: Monedero
 
 blog:
   title_1: Todas
