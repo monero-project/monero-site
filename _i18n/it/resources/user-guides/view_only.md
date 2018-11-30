@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% assign version = '1.2.0' | split: '.' %}
 {% include disclaimer.html translated="false" version=page.version %}
 A view-only wallet can only see which incoming transactions belong to you. It can not spend any of your Monero, in fact it can't even see outgoing transactions from this wallet. This makes view-only wallets particularly interesting for
 
@@ -17,11 +17,11 @@ Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-
 
 #### GUI
 
-Open an existing wallet or create a new one using `monero-wallet-gui`. In the wallet, go to the `settings` page:
+Open an existing wallet or create a new one using `monero-wallet-gui`. In the wallet, go to the `Impostazioni` > `Portafoglio` page:
 
 ![settings](png/view-only/settings.png)
 
-Click on `Create view only wallet`, then give it a name and a storage location before clicking the `Right` arrow:
+Click on `Crea un portafoglio Solo-visualizzazione` > `Crea portafoglio`, then give it a name and a storage location before clicking the `Right` arrow:
 
 ![create-view-only](png/view-only/create-view-only.png)
 

@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% assign version = '1.2.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 Portfel tylko do odczytu wyświetla jedynie twoje przychodzące transakcje. Nie może on dokonać żadnej płatności, nie może nawet wyświetlić żadnej transakcji wychodzącej. Portfel tylko do odczytu może być ciekawą opcją dla:
 
@@ -17,11 +17,11 @@ Następnie stwórz swój portfel tylko do odczytu, wpisując `monero-wallet-cli 
 
 #### GUI
 
-Otwórz istniejący portfel lub stwórz nowy, za pomocą funkcji `monero-wallet-gui`. W portfelu przejdź do strony ustawień.
+Otwórz istniejący portfel lub stwórz nowy, za pomocą funkcji `monero-wallet-gui`. W portfelu przejdź do strony `Ustawienia` > `Portfel`.
 
 ![settings](png/view-only/settings.png)
 
-Kliknij w przycisk `Utwórz portfel tylko do podglądu`, nadaj nazwę portfelowi i wybierz jego lokalizację, a następnie kliknij w strzałkę w `prawo`:
+Kliknij w przycisk `Utwórz portfel tylko do podglądu` > `Utwórz portfel`, nadaj nazwę portfelowi i wybierz jego lokalizację, a następnie kliknij w strzałkę w `prawo`:
 
 ![create-view-only](png/view-only/create-view-only.png)
 
