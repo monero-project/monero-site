@@ -6,6 +6,7 @@ langs:
   fr: Français
   ar: العربية
   ru: Русский
+  de: Deutsch
 
 global:
   date: '%d/%m/%Y'

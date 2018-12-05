@@ -1,0 +1,52 @@
+- title: Ressourcen
+  subfolderitems:
+  - name: Über Monero
+    url: resources/about/
+  - name: Moneropedia
+    url: resources/moneropedia/
+  - name: Anleitungen für Entwickler
+    url: resources/developer-guides/
+  - name: Anleitungen für Nutzer
+    url: resources/user-guides/
+  - name: Bibliothek
+    url: library
+  - name: RSS-Feed
+    url: https://getmonero.org/feed.xml
+- title: IRC-Channels
+  subfolderitems:
+  - name: monero
+    url: irc://chat.freenode.net/#monero
+  - name: monero-dev
+    url: irc://chat.freenode.net/#monero-dev
+  - name: monero-markets
+    url: irc://chat.freenode.net/#monero-markets
+  - name: monero-pools
+    url: irc://chat.freenode.net/#monero-pools
+  - name: monero-community
+    url: irc://chat.freenode.net/#monero-community
+  - name: monero-translations
+    url: irc://chat.freenode.net/#monero-translations
+  - name: monero-hardware
+    url: irc://chat.freenode.net/#monero-hardware
+- title: Community
+  subfolderitems:
+  - name: Reddit
+    url: https://reddit.com/r/monero
+  - name: Stack Exchange
+    url: https://monero.stackexchange.com/
+  - name: Thread auf BitcoinTalk
+    url: https://bitcointalk.org/index.php?topic=583449.0
+  - name: Mattermost-Chat
+    url: https://mattermost.getmonero.org/
+  - name: Telegram-Chat
+    url: https://telegram.me/bitmonero
+- title: Das Monero-Projekt
+  subfolderitems:
+  - name: OpenAlias
+    url: https://openalias.org/
+  - name: Kovri
+    url: https://kovri.io/
+  - name: Monero Research Lab
+    url: resources/research-lab/
+  - name: Monero-Presseunterlagen
+    url: press-kit
