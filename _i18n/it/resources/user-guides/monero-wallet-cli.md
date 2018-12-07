@@ -50,7 +50,7 @@ The payment ID is implicit in the integrated address in that case.
 
     transfer RINGSIZE ADDRESS AMOUNT
 
-Replace `RINGSIZE` with the number of outputs you wish to use. **If not specified, the default is 7.** It's a good idea to use the default, but you can increase the number if you want to include more outputs. The higher the number, the larger the transaction, and higher fees are needed.
+Replace `RINGSIZE` with the number of outputs you wish to use. **If not specified, the default is 11.** It's a good idea to use the default, but you can increase the number if you want to include more outputs. The higher the number, the larger the transaction, and higher fees are needed.
 
 
 ## Receiving monero

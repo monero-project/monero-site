@@ -39,9 +39,9 @@ Numer identyfikacyjny w tym przypadku jest domniemany w adresie zintegrowanym.
 
 ### Precyzowanie liczby wyników transakcji:
 
-    transfer MIXIN ADDRESS AMOUNT
+    transfer RINGSIZE ADDRESS AMOUNT
 
-Zamień `MIXIN` na numer wyników, jaki chcesz użyć. **Domyślny numer wyników, gdy niesprecyzowany, wynosi 4.** Dobrym pomysłem jest użycie numeru domyślnego, ale możesz zwiększyć go, gdy chcesz dołączyć więcej wyników. Im wyższy numer, tym większa transakcja i wyższe opłaty.
+Zamień `RINGSIZE` na numer wyników, jaki chcesz użyć. **Domyślny numer wyników, gdy niesprecyzowany, wynosi 11.** Dobrym pomysłem jest użycie numeru domyślnego, ale możesz zwiększyć go, gdy chcesz dołączyć więcej wyników. Im wyższy numer, tym większa transakcja i wyższe opłaty.
 
 ## Otrzymywanie Monero:
 
