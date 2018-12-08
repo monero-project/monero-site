@@ -50,7 +50,7 @@ El ID de pago está implícito en la dirección integrada en este caso.
 
     transfer RINGSIZE ADDRESS AMOUNT
 
-Reemplaza `RINGSIZE` con el número de salidas que deseas utilizar. **Si no se especifica, el valor por defecto es 7.** Es una buena idea utilizar el valor por defecto, pero puedes incrementar el número si quieres incluir más salidas. Entre más alto el número, más grande es la transacción, y se requerirá más comisión.
+Reemplaza `RINGSIZE` con el número de salidas que deseas utilizar. **Si no se especifica, el valor por defecto es 11.** Es una buena idea utilizar el valor por defecto, pero puedes incrementar el número si quieres incluir más salidas. Entre más alto el número, más grande es la transacción, y se requerirá más comisión.
 
 
 ## Recibiendo Monero
