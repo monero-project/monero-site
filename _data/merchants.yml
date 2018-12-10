@@ -107,6 +107,8 @@
       url: https://github.com/monero-integrations/monerowp
     - name: MyCryptoCheckout
       url: https://mycryptocheckout.com
+    - name: SwirlPay
+      url: https://swirlpay.io/
 - category: Libraries and Helpers
   id: libraries
   merchants:
