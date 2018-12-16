@@ -433,7 +433,7 @@ user-guides:
   view-only: How to make a view-only wallet
   prove-payment: How to prove payment
   restore-from-keys: Restoring wallet from keys
-  nicehash:
+  nicehash: Come minare Monero XMR senza equipaggimento per miners
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
 
 roadmap:
