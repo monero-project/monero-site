@@ -506,7 +506,6 @@ specs:
   block_emission_tail: "después, cola de curva: 0.6 XMR por cada bloque (2 minutos), y comienza una vez se realiza la emisión principal, que se traduce en un <1% de reducción de inflación a través del tiempo"
   block_emission_disclaimer1: Ver las
   block_emission_disclaimer_link: gráficas y detalles
-  block_emission_disclaimer2: ""
   supply_title: Suministro Máximo
   supply_amount: Infinito
   sender_privacy_title: Privacidad del Emisor

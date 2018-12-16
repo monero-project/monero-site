@@ -508,7 +508,6 @@ specs:
   block_emission_tail: "puis, courbe résiduelle : une émission de 0,6 XMR par bloc de 2 minutes entre en vigueur une fois l'émission principale terminée, se traduisant par une inflation <1%, décroissant au fil du temps"
   block_emission_disclaimer1: voir les
   block_emission_disclaimer_link: graphiques et détails
-  block_emission_disclaimer2:
   supply_title: Émission maximale
   supply_amount: infinie
   sender_privacy_title: Confidentialité de l'émetteur

@@ -506,7 +506,6 @@ specs:
   block_emission_tail: "seconda fase, curva di emissione: 0.6 XMR per blocco (se generato ogni 2 minuti), subentra alla prima fase quando l'emissione principale è terminata; questo si traduce in un tasso di inflazione <1% e decrescente nel tempo"
   block_emission_disclaimer1: vedi
   block_emission_disclaimer_link: grafici e dettagli
-  block_emission_disclaimer2:
   supply_title: Fornitura massima
   supply_amount: infinita
   sender_privacy_title: Privacy del mittente
