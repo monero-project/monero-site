@@ -218,7 +218,7 @@ press-kit:
 
 accepting:
   translated: "yes"
-  title: Instrucciones para la interface de Consola de Comandos
+  title: Instrucciones para la interfaz de Consola de Comandos
   basics: Lo Básico
   basics_para1: Monero trabaja un poco distinto a lo que puedes estar acostumbrado de otras criptomonedas. En el caso de dinero digital como Bitcoin y sus diversos sistemas de pago mercantil derivados que usualmente crean una nueva dirección recipiente (@address) por cada pago o usuario.
   basics_para2: No obstante, debido a que Monero cuenta con direcciones de sigilo (@stealth-addresses) no existe la necesidad de tener direcciones recipientes separadas para cada pago o usuario, y una simple cuenta (@account) puede ser publicada. En su lugar, cuando un comerciante recibes pagos proveerá al comprador con una "ID de pago".
@@ -257,7 +257,7 @@ contributing:
   full-node: Correr un Nodo
   full-node_para: Abre monerod con puerto 18080 abierto. Correr un nodo asegura máxima privacidad cuando se utiliza Monero para transacciones. Esto también mejora la distribución de la blockchain a nuevos usuarios.
   mine: Minar
-  mine_para1: Minar asegura que la red de Monero siga descentralizada y segura. En la interface gráfica de usuario de Monero y la interface de consola de comandos, es posible activar el minado en segundo plano. Recursos adicionales para minar pueden ser vistos
+  mine_para1: Minar asegura que la red de Monero siga descentralizada y segura. En la interfaz gráfica de usuario de Monero y la interfaz de consola de comandos, es posible activar el minado en segundo plano. Recursos adicionales para minar pueden ser vistos
   mine_para2: aquí.
   ffs: Ver el Sistema de Financiamiento Colectivo
   ffs_para1: Monero utiliza un
@@ -304,10 +304,10 @@ faq:
   a12-1: En Monero, cada transacción de salida está asociada únicamente con una llave de imagen que sólo puede ser generada por el dueño de esa transacción de salida. Llaves de imagen que son usadas más de una vez son rechazadas por mineros por doble uso y no pueden ser agregadas a un bloque válido. Cuando una nueva transacción es recibida, los mineros verifican que la llave imagen no exista para alguna transacción previa y aseguran que no sea una transacción repetida.
   a12-2: También podemos saber que la cantidad de la transacción es válida incluso aunque el valor de las entradas que gastas y salidas que envías estén encriptadas (ocultas a todos excepto al receptor). Debido a que las cantidades están encriptadas con Pedersen, significa que terceros no pueden saber la cantidad de entradas o salidas, pero pueden hacer cálculos en Pedersen para determinar que ningún Monero haya sido creado de la nada.
   a12-3: Siempre y cuando la cantidad encriptada de salidas que crees sea igual a la suma de las entradas que están siento utilizadas (lo que incluye la salida para el receptor, el cambio de vuelta para ti mismo y la no-encriptada cuota de transacción), entonces tienes una transacción legítima y sabes que Monero no ha sido creado de la nada. Pedersen significa que las sumas pueden ser verificadas como un igual, pero el valor de Monero de cada suma y de las entradas y salidas son indeterminables individualmente.
-  q13: Is Monero magic and protect my privacy no matter what I do ?
-  a13: Monero is not magic. If you use Monero but give your name and address to another party, the other party will not magically forget your name and address. If you give out your secret keys, others will know what you've done. If you get compromised, others will be able to keylog you. If you use a weak password, others will be able to brute force your keys file. If you backup your seed in the cloud, you'll be poorer soon.
-  q14: Is Monero 100% anonymous ?
-  a14: There is no such thing as 100% anonymous. If nothing else, your anonymity set is the set of people using Monero. Some people don't use Monero. Monero may also have bugs. Even if not, ways may exist to infer some information through Monero's privacy layers, either now or later. Attacks only get better. If you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.
+  q13: ¿Es Monero mágico y protege mi privacidad no importa lo que haga?
+  a13: Monero no es mágia. Si usas Monero pero le das tú nombre y dirección a la otra parte, la otra parte mágicamente no olvidará tú nombre y dirección. Si entregas tus llaves secretas, otros sabrán cuánto has hecho. Si llegas a estar comprometido, otros podrán registrar tus movimientos. Si usas una clave débil, otros podrán hacerte un ataque de fuerza bruta a tú archivo de llaves. Si haces una copia de seguridad en la nube, serás pobre pronto.
+  q14: ¿Es Monero 100% anónimo?
+  a14: No existe tal cosa como 100% anónimo. Sin nada más, tú anónimato se compone del conjunto de personas que usen Monero. Unas personas no usan Monero. Monero también podría tener errores de programación. Aún si no los tuviera, existen muchas maneras de deducir información a través de las capas de seguridad de Monero, sea ya ó más adelante. Los ataques solo se vuelven mejores. Si tu usas un cinturón, aún podrías morir en un accidente de carro. Usa el sentido común, prudencia y defensas intensas.
 
 mining:
   translated: "yes"
@@ -402,11 +402,11 @@ about:
 
 
 developer-guides:
-  translated: "no"
-  outdated: "Tenga en cuenta: the guides below have been recently refreshed and are maintained almost up-to-date by the community. However, methods are often added / removed / updated and may not be accurately described here."
+  translated: "yes"
+  outdated: "Tenga en cuenta: las guías de más abajo han sido recientemente actualizadas y son mantenidas casi al día por la comunidad. Sin embargo, algunos métodos son agregados / removidos / actualizados y puede que no sean descritos con claridad aquí."
   rpc: Documentación RPC
-  daemonrpc: Documentación de Daemon RPC
-  walletrpc: Documentación de Monedero RPC
+  daemonrpc: Documentación del Daemon RPC
+  walletrpc: Documentación del Monedero RPC
   soon: Más guías próximamente...
 
 user-guides:
@@ -459,18 +459,18 @@ research-lab:
   mrl3_abstract: Recientemente, han habido ciertas dudas respecto al código fuente y protocolo de CryptoNote que transita por internet basadas en el hecho de que es un protocolo más complicado que, por ejemplo, el de Bitcoin. El propósito de este artículo es el de intentar clarificar malentendidos, y con suerte, eliminar los misteriosos conceptos de las firmas circulares de Monero. Comenzaré comparando las matemáticas envueltas en las firmas circulares de CryptoNote (descritas en [CN]) a las matemáticas en [FS], en la cual CryptoNote está basado. Después de esto, compararé las matemáticas de las firmas circulares a lo que actualmente existe en el código base de CryptoNote.
   mrl4: Mejorando la ofuscación en el protocolo CryptoNote
   mrl4_abstract: Hemos identificado considerables ataques de identificación en la blockchain para degradar la imposibilidad de rastreo del protocolo 2.0 de CryptoNote. Analizamos posibles soluciones discutiendo sus méritos e inconvenientes, y recomendamos mejoras al protocolo de Monero que con suerte proveerán resistencia a largo plazo en la criptomoneda para identificación de la blockchain. Nuestras mejoras sugeridas a Monero incluyen una política mixta del nivel de protocolo mínimo en toda la red de n = 2 salidas por firma circular, un aumento en el nivel de protocolo de este valor a n = 4 después de dos años, y un valor del nivel de monedero de n = 4 por defecto de manera provisional. También recomendamos un método de envío de Monero estilo torrent. Además, discutimos un método de mezclado no uniforme y dependiente del tiempo para mitigar las demás formas de identificación de blockchain utilizadas, pero no realizamos recomendaciones formales para implementaciones debido a varias razones. Las ramificaciones resultantes de estas mejoras también son discutidas en detalle. Este boletín de investigación no ha sido revisado más de una vez, y refleja sólo los resultados de investigación interna.
-  mrl5: Transaciones confidenciales de firmas circulares
+  mrl5: Transacciones confidenciales de firmas circulares
   mrl5_abstract: Este artículo presenta un método para ocultar la cantidad en una transacción en la criptomoneda descentralizada y anónima Monero. Similar a Bitcoin, Monero es una criptomoneda que se distribuye a través del minado por prueba-de-trabajo. El protocolo original de Monero estuvo basado en CryptoNote, que utiliza firmas circulares y llaves de un solo uso para ocultar el origen y destino de sus transacciones. Recientemente, la técnica de utilizar un esquema de compromiso para ocultar la cantidad de una transacción ha sido discutida e implementada por el desarrollador del equipo central de Bitcoin, Gregory Maxwell. En este artículo, un nuevo tipo de firma circular, de grupo de enlace multicapa espontánea anónima, es descrita en la forma en que se utiliza para ocultar cantidades, orígenes y destinos en transacciones con buena eficiencia y verificabilidad, con una generación de monedas sin dependencia. Algunas extensiones del protocolo de transacciones son provistas, tales como pruebas agregadas del rango Schnorr (Aggregate Schnorr Range Proofs), y multi-firmas circulares (Ring Multisignature). El autor quisiera que se tenga en cuenta que borradores previos de esto fueron publicitados en la Comunidad de Monero y en canal de investigación de Bitcoin en IRC. Borradores de hash de la Blockchain están disponibles en [14] mostrando que este trabajo empezó en el verano del 2015, y completado en octubre del mismo año. Una impresión digital está disponible en http://eprint.iacr.org/2015/1098.
-  mrl6: An Efficient Implementation of Monero Subadresses
+  mrl6: Una eficiente implementación de las subdirecciones de Monero
   mrl6_abstract: Usuarios de la criptomoneda Monero que desean reutilizar direcciones del monedero de una forma separada deben mantener monederos separados, lo que necesita escanear transacciones de entrada para cada uno. Documentamos un nuevo esquema de direcciones que permite al usuario mantener una simple dirección de monedero maestra y generar un número arbitrario de subdirecciones desvinculables. Cada transacción necesita ser escaneada sólo una vez para determinar si está destinada para cualquiera de las subdirecciones del usuario. El esquema soporta adicionalmente múltiples salidas a otras subdirecciones, y es tan eficiente como las transacciones tradicionales de un monedero.
-  mrl7: Sets of Spent Outputs
-  mrl7_abstract: This technical note generalizes the concept of spend outputs using basic set theory. The definition captures a variety of earlier work on identifying such outputs. We quantify the effects of this analysis on the Monero blockchain and give a brief overview of mitigations.
-  mrl8: Dual Linkable Ring Signatures
-  mrl8_abstract: This bulletin describes a modification to Monero's linkable ring signature scheme that permits dual-key outputs as ring members. Key images are tied to both output one-time public keys in a dual, preventing both keys in that transaction from being spent separately. This method has applications to non-interactive refund transactions. We discuss the security implications of the scheme.
-  mrl9: Thring Signatures and their Applications to Spender-Ambiguous Digital Currencies
-  mrl9_abstract: We present threshold ring multi-signatures (thring signatures) for collaborative computation of ring signatures, present a game of existential forgery for thring signatures, and discuss uses of thring signatures in digital currencies that include spender-ambiguous cross-chain atomic swaps for confidential amounts without a trusted setup. We present an implementation of thring signatures that we call linkable spontaneous threshold anonymous group signatures, and prove the implementation existentially unforgeable.
-  mrl10: Discrete Logarithm Equality Across Groups
-  mrl10_abstract: This technical note describes an algorithm used to prove knowledge of the same discrete logarithm across different groups. The scheme expresses the common value as a scalar representation of bits, and uses a set of ring signatures to prove each bit is a valid value that is the same (up to an equivalence) across both scalar groups.
+  mrl7: Conjunto de Outputs gastados
+  mrl7_abstract: Esta nota técnica generaliza el concepto del gasto de outputs usando la teoría de conjuntos. La definición captura una clase de trabajo inicial identificando tales outputs. Identificamos los efectos de este análisis en el blockchain de Monero y damos un pequeño resumen de las mitigaciones.
+  mrl8: Firmas de círculo de doble enlace
+  mrl8_abstract: Este boletín describe la modificación de los esquemas de enlace de las firmas de círculo de Monero que permiten outputs de llaves dobles como miembros del círculo. Las llaves de visualización están atadas a ambos outputs de llaves públicas únicas en un doble, previniendo que ambas llaves en la transacción se gasten de manera separada. Éste método tiene aplicaciones a las transacciones reembolsables no interáctivas. Discutimos las implicaciones de seguridad del esquema.
+  mrl9: Firmas thring y sus aplicaciones en las monedas digitales de gasto-ambiguo
+  mrl9_abstract: Presentamos el límite de las firmas múltiples de círculo (\textit{thring signatures}) para el cálculo colaborativo de firmas de círculo, presentamos un juego de falsificación para las firmas thring y discutimos los usos de las firmas thring en monedas digitales que incluyen cruces de cadena atómicos de gasto-ambiguo para cantidades confidenciales sin un sistema de confianza. Presentamos una implementación de las firmas de thring que nombramos enlaces de firmas grupales espontáneos de límites anónimos y probamos la implementación existencial no falsable.
+  mrl10: Igualdad de logaritmo discreto a través de grupos
+  mrl10_abstract: Esta nota técnica describe un algoritmo usado para demostrar conocimiento del mismo logaritmo discreto a través de diferentes grupos. El esquema expresa el valor común cómo una representación escalado de bits y usa una serie de firmas de círculo que demuestra que cada bit es un valor legítimo, que es el mismo (hasta una equivalencia), a través de los grupos escalados.
   cryptonote: Libros Blancos de Cryptonote
   cryptonote-whitepaper: Libro Blanco de Cryptonote
   cryptonote-whitepaper_para: Este es el libro blanco original de CryptoNote escrito por el equipo de CryptoNote. Leerlo dará un entendimiento acerca de cómo funciona el algoritmo CryptoNote en general.
