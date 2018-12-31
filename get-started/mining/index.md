@@ -37,7 +37,7 @@ permalink: /get-started/mining/index.html
                         </div>
                     </div>
                     <div class="row center-xs">
-                       <p>{% t mining.pools_para1 %} <a href="http://moneropools.com/"> {% t mining.pools_para2 %}</a></p>
+                       <p>{% t mining.pools_para1 %} <a href="https://miningpoolstats.stream/monero"> {% t mining.pools_para2 %}</a></p>
                     </div>
                 </div>
             </div>
