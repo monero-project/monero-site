@@ -85,7 +85,7 @@ permalink: /technical-specs/index.html
                         <ul>
                             <li>{% t specs.block_emission_main %}</li>
                             <li>{% t specs.block_emission_tail %}</li>
-                            <li>{% t specs.block_emission_disclaimer1 %} <a href="https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/">{% t specs.block_emission_disclaimer_link %}</a>{% t specs.block_emission_disclaimer2 %}</li>
+                            <li>{% t specs.block_emission_disclaimer1 %} <a href="https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/">{% t specs.block_emission_disclaimer_link %}</a></li>
                         </ul>
                     </div>
                     <div class="row">

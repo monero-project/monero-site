@@ -507,7 +507,6 @@ specs:
   block_emission_tail: "then, tail curve: 0.6 XMR per 2-minute block, kicks in once main emission is done, translates to <1% inflation decreasing over time"
   block_emission_disclaimer1: see
   block_emission_disclaimer_link: charts and details
-  block_emission_disclaimer2: ""
   supply_title: Max supply
   supply_amount: infinite
   sender_privacy_title: Sender privacy

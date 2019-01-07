@@ -433,7 +433,7 @@ user-guides:
   view-only: How to make a view-only wallet
   prove-payment: How to prove payment
   restore-from-keys: Restoring wallet from keys
-  nicehash:
+  nicehash: Come minare Monero XMR senza equipaggimento per miners
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
 
 roadmap:
@@ -506,7 +506,6 @@ specs:
   block_emission_tail: "seconda fase, curva di emissione: 0.6 XMR per blocco (se generato ogni 2 minuti), subentra alla prima fase quando l'emissione principale è terminata; questo si traduce in un tasso di inflazione <1% e decrescente nel tempo"
   block_emission_disclaimer1: vedi
   block_emission_disclaimer_link: grafici e dettagli
-  block_emission_disclaimer2:
   supply_title: Fornitura massima
   supply_amount: infinita
   sender_privacy_title: Privacy del mittente

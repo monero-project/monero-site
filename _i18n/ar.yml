@@ -507,7 +507,6 @@ specs:
   block_emission_tail: "ثانياً, منحني الذيل; 0.6 مونيرو يتم إنشائهم كل دقيقتين بمجرد إنتهاء الإصدار الأساسي, يُترجم كـ أقل من 1% تضخم ويقل تدريجياً مع الوقت"
   block_emission_disclaimer1: أُنظر
   block_emission_disclaimer_link: الرسوم البيانية والتفاصيل
-  block_emission_disclaimer2: ""
   supply_title: الحد الأقصى للإِصدار
   supply_amount: لانهائي
   sender_privacy_title: خصوصيه المُرسل

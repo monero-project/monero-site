@@ -497,7 +497,6 @@ specs:
   block_emission_tail: "затем хвостовая рекурсия: 0.6 XMR за 2-минутный блок, после окончания основной эмиссии и перевод на <1% инфляцию, снижающуюся с течением времени"
   block_emission_disclaimer1: ознакомьтесь
   block_emission_disclaimer_link: с диаграммами для подробной информации
-  block_emission_disclaimer2: ""
   supply_title: Максимальное количество монет
   supply_amount: Неограниченно
   sender_privacy_title: Конфиденциальность отправителя

@@ -507,7 +507,6 @@ specs:
   block_emission_tail: "następnie - krzywa z długim ogonem: 0.6 XMR na dwuminutowy blok, aktywowana po ukończeniu głównej emisji; przekłada się na <1% spadku inflacji w czasie"
   block_emission_disclaimer1: zobacz
   block_emission_disclaimer_link: wykresy i szczegóły
-  block_emission_disclaimer2:
   supply_title: Maksymalny zasób
   supply_amount: nieskończony
   sender_privacy_title: Prywatność nadawcy
