@@ -173,6 +173,7 @@ downloads:
   note2: and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys).
   currentversion: Current Version
   sourcecode: Source Code
+  mirror: Mirror
   blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can
   blockchain2: use this link for the most current bootstrap.
   blockchain3: It is typically much faster to sync from scratch, however, and it also takes a lot less RAM (import is very greedy).
