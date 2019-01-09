@@ -101,10 +101,10 @@
     - name: Kovri alpha release
       date: 2018-08-01
       status: completed
+    - name: Implementation of Bulletproofs to reduce transaction sizes
+      date: 2018-10-18
+      status: completed
     - name: Forum Funding System redesign
-      date:
-      status: ongoing
-    - name: Implementation of BulletProofs instead of RingCT to reduce transaction sizes
       date:
       status: ongoing
     - name: Kovri Integration
