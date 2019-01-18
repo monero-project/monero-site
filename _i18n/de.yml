@@ -436,6 +436,7 @@ user-guides:
   restore-from-keys: Wallet mit privaten Schlüsseln wiederherstellen
   nicehash: Monero (XMR) ohne spezielle Hardware minen
   ledger-wallet-cli: Eine Wallet mit Ledger erstellen (Befehlszeile)
+  multisig-messaging-system:
 
 roadmap:
   translated: "yes"

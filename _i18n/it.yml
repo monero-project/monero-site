@@ -436,6 +436,7 @@ user-guides:
   restore-from-keys: Restoring wallet from keys
   nicehash: Come minare Monero XMR senza equipaggimento per miners
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
+  multisig-messaging-system:
 
 roadmap:
   translated: "no"

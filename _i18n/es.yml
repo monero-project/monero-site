@@ -436,6 +436,7 @@ user-guides:
   restore-from-keys: Restaurar monedero desde claves
   nicehash: Cómo minar Monero XMR sin un equipo de minado
   ledger-wallet-cli: Cómo generar un monedero Ledger Monero con la consola de comandos (monero-wallet-cli)
+  multisig-messaging-system:
 
 roadmap:
   translated: "Yes"

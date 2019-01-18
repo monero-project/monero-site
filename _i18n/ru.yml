@@ -426,6 +426,7 @@ user-guides:
   restore-from-keys: Восстановление кошелька из ключей
   nicehash: Как заниматься майнингом Monero, не имея оборудования для майнинга
   ledger-wallet-cli: Как создать Ledger Monero кошелек с помощью CLI (monero-wallet-cli)
+  multisig-messaging-system:
 
 roadmap:
   translated: "yes"

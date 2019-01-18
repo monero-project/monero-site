@@ -62,6 +62,7 @@ title: titles.userguides
                             <p><a href="{{site.baseurl}}/resources/user-guides/view_only.html">{% t user-guides.view-only %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/prove-payment.html">{% t user-guides.prove-payment %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/ledger-wallet-cli.html">{% t user-guides.ledger-wallet-cli %}</a></p>
+                            <p><a href="{{site.baseurl}}/resources/user-guides/multisig-messaging-system.html">{% t user-guides.multisig-messaging-system %}</a></p>
                         </div>
                     </div>
                 </div>
