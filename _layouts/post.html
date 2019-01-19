@@ -26,26 +26,12 @@ layout: base
                 <!-- left two-thirds block-->
                 <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="info-block">
-                        <div class="row">
-                            <div class="col">
                                <h2>{{ page.title }}</h2> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
                                 <p class="author">{% t blog.author %}: {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p>{{ page.date | date: '%B %d, %Y' }}</p>
-                            </div>
-                        </div>
-                    <div>
-                        {{content}}
-                    </div>
-                    <hr>
-                    <p id="post-meta">{{ tags_content }}</p>
+                                <p class="post-date">{{ page.date | date: '%B %d, %Y' }}</p>
+                                {{content}}
+                                <hr>
+                                <p id="post-meta">{{ tags_content }}</p>
                     </div>
                 </div>
                 <!-- end left two-thirds block-->

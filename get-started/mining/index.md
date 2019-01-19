@@ -6,8 +6,7 @@ permalink: /get-started/mining/index.html
 {% t global.lang_tag %}
 <div class="mining">
     <div class="center-xs container description">
-        <p>{% t mining.intro1 %}</p>
-        <p><strong>{% t mining.intro2 %}</strong></p>
+        <p>{% t mining.intro1 %} {% t mining.intro2 %}</p>
     </div>
     <section class="container">
         <div class="row">      

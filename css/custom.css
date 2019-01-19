@@ -967,12 +967,11 @@ body p, body blockquote, body ul {
 }
 
 a {
-    color: #ff7519;
+    color: #000;
     text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
-    text-decoration: underline;
     outline: 0;
 }
 
@@ -1027,6 +1026,23 @@ img, video {max-width: 100%;}
 
 .text-center {text-align: center;}
 
+.info-block a.orange {
+    color: #d26e2b;
+    border-bottom: 2px dotted #d26e2b;
+    font-family: 'Hind';
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.info-block a.orange:hover, .info-block a.orange:focus, .info-block a.orange:active {
+    color: #ce5e14;
+    border-bottom: 2px solid #ce5e14;
+}
+
+.nopad {
+    padding: 0;
+}
+
 .text-adapted {
     max-width: 40rem;
     margin-left: auto;
@@ -1038,6 +1054,16 @@ img, video {max-width: 100%;}
     -moz-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     box-shadow: 0 2px 4px rgba(50,50,93,.1);
+}
+
+.info-block a {
+    border-bottom: 2px dotted #a1aabb;
+    display: inline;
+    line-height: 1.7;
+}
+
+.info-block a:hover, .info-block a:focus, .info-block a:active {
+    border-bottom: 2px solid #a1aabb;
 }
 
 .bold {
@@ -1076,7 +1102,7 @@ pre.highlight>code {
 }
 
 .untranslated {
-    background-color: #ff7519;
+    background-color: #d26e2b;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1226,7 +1252,7 @@ label.upgrade-x {
 
 
 .disclaimer {
-    background-color: #ff7519;
+    background-color: #d26e2b;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1287,7 +1313,7 @@ h1 {
     font-weight: 700;
     font-size: 2.3rem;
     line-height: 1;
-    margin: 2.5rem 0 2rem 0;
+    margin: 2.5rem 0 1rem 0;
 }
 
 h2 {
@@ -1299,11 +1325,10 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hind', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     /*margin: 2.7rem 0 1rem 0;*/
-    letter-spacing: 0.05rem;
     line-height: 1.3;
     padding-top: 1rem;
     margin-top: 1rem;
@@ -1339,9 +1364,13 @@ h2#main-h2 {
 .about-main h3, .about-monero h3 {
     padding-top: 0;
     font-weight: 600;
-    line-height: 1.7;
-    font-size: 1.15rem;
+    line-height: 1.5;
+    font-size: 1.3rem;
     letter-spacing: normal;
+}
+
+.about-main p {
+    padding-top: 0.5rem;
 }
 
 .info-block h2 {
@@ -1365,9 +1394,50 @@ h2#main-h2 {
     margin-bottom: 2.5rem;
 }
 
+.container.description a {
+    border-bottom: 2px dotted #a1aabb;
+}
+
+.container.description a:hover, .container.description a:focus, .container.description a:active {
+    border-bottom: 2px solid #a1aabb;
+}
+
+.pre-roadmap {
+    margin-bottom: 2rem;
+}
 
 .pre-roadmap p {
     margin-bottom: 2.5rem;
+    display: inline;
+    padding: 0;
+}
+
+.pre-roadmap p.pre-completed:before, .pre-roadmap p.pre-ongoing:before, .pre-roadmap p.pre-upcoming:before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    color: white;
+    margin-right: 1rem;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+.pre-roadmap p.pre-completed:before {
+    background: #4c4c4c;
+    border: 1px solid #4c4c4c;
+}
+
+.pre-roadmap p.pre-ongoing:before {
+    background: #d26e2b;
+    border: 1px solid #d26e2b;
+}
+
+.pre-roadmap p.pre-upcoming:before {
+    background: #fff;
+    border: 2px solid #4c4c4c;
 }
 
 .hangouts ul {
@@ -1406,12 +1476,15 @@ h3 {
 @media only screen and (max-width: 62rem) {
 
 h1 {
-    margin: 0.5rem 0 1rem 0;
+    margin: 1rem 0 0.7rem 0;
 }
 
 .pre-roadmap p, .container.description p {
     margin-bottom: 1.5rem;
-    margin-top: -1rem;
+}
+
+.container.description p {
+    padding: 0 1rem;
 }
 
 h1#main-h1 {
@@ -1457,17 +1530,25 @@ h1 {
     margin: 0.5rem 0;
 }
 
-.about-main h3, .about-monero h3 {
+.about-monero h3 {
     padding-top: 1rem;
 }
 
+.about-main h3 {
+    padding-top: 0;
+}
+
 .container.description p {
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .pre-roadmap p, .container.description p {
     margin-bottom: 1rem;
     margin-top: -0.5rem;
+}
+
+.about-main h3, .about-monero h3 {
+    font-size: 1.1rem;
 }
 
 }
@@ -1604,14 +1685,14 @@ h2, .info-block h2 {
 
 /*************************BUTTONS****************************/
 
-.btn-fixed, .btn-auto {
+a.btn-fixed, a.btn-auto {
     background: none;
-    border: 1px solid #ff7519;
+    border: 2px solid #d26e2b;
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
     font-weight: 700;
-    color: #ff7519;
+    color: #d26e2b;
     text-transform: uppercase;
     /*padding: 0.5rem 1rem 0.3rem 1rem;*/
     padding: 0 1rem;
@@ -1622,8 +1703,8 @@ h2, .info-block h2 {
     -o-transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
     transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
     display: inline-block;
-    height: 2.6rem;
-    line-height: 2.7rem;
+    height: 2.9rem;
+    line-height: 3rem;
     -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
     -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
@@ -1638,7 +1719,7 @@ h2, .info-block h2 {
     -moz-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
-    border: 1px solid #ff7519;
+    border: 2px solid #d26e2b;
 }
 
 .btn-fixed:active, .btn-auto:active {
@@ -1646,18 +1727,19 @@ h2, .info-block h2 {
     -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-    border: 1px solid #ff7519;
+    border: 1px solid #d26e2b;
 }
 
 a.btn-link:hover, a.btn-link.active, a.btn-link:focus {
     text-decoration: none;
     outline: 0;
+    border: 2px solid #d26e2b;
 }
 
 .btn-link span.icon-windows, .btn-link span.icon-linux, .btn-link span.icon-apple, .btn-link span.icon-blockchain {
     height: 2rem;
     width: 2rem;
-    display: inline-block;
+    display: none;
     margin-right: 0.5rem;
     vertical-align: middle;
 }
@@ -1708,9 +1790,10 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 
 .btn-fixed:hover, .btn-fixed:active, .btn-fixed:focus, .btn-auto:hover, .btn-auto:active, .btn-auto:focus {
-    background-color: #ff7519;
+    background-color: #d26e2b;
     color: #fff!important;
     text-decoration: none;
+    border: 2px solid #d26e2b;
 }
 
 @media only screen and (max-width: 62rem) {
@@ -1778,7 +1861,7 @@ img.monero-logo {
 }
 
 .topnav .topnav-list .language-change label:hover {
-    color: #ff7519;
+    color: #d26e2b;
     cursor: pointer;
 }
 
@@ -1801,7 +1884,7 @@ img.monero-logo {
 }
 
 .topnav .topnav-list .language-change label:hover div.arrow-down {
-    border-top: 3px solid #ff7519;
+    border-top: 3px solid #d26e2b;
 }
 
 .topnav .topnav-list .language-change .dropdown-content {
@@ -1836,12 +1919,12 @@ img.monero-logo {
 }
 
 .topnav .topnav-list .language-change .dropdown-content a.active {
-    color: #ff7519;
+    color: #d26e2b;
 }
 
 
 .topnav .topnav-list a:hover, .topnav .topnav-list a:focus, .topnav .topnav-list a:active {
-    color: #ff7519;
+    color: #d26e2b;
     text-decoration: underline;
 }
 
@@ -1889,12 +1972,12 @@ img.monero-logo {
 }
 
 .nav-items>.nav-item>label:hover, .nav-items>.nav-item>a:hover, .nav-items>.nav-item>a:focus, .nav-items>.nav-item>a:active {
-    color: #ff7519;
+    color: #d26e2b;
     text-decoration: none;
 }
 
 .nav-items>.nav-item>label:hover .arrow-down, .nav-items>.nav-item>a:hover .arrow-down, .nav-items>.nav-item>a:focus .arrow-down, .nav-items>.nav-item>a:active .arrow-down {
-    border-top: 3px solid #ff7519;
+    border-top: 3px solid #d26e2b;
 }
 
 /*DROPDOWN MENU*/
@@ -1950,7 +2033,7 @@ img.monero-logo {
 }
 
 .nav-item>.dropdown-content>a:hover {
-    color: #ff7519;
+    color: #d26e2b;
     background-color: #fcfcfc;
 }
 
@@ -2233,7 +2316,7 @@ label[for="mobile-burger"] {
 }
 
 .slide-in .row label, .slide-in .row a {
-    border-bottom: 1px solid #d7d7d7;
+    border-bottom: 1px solid #edeef0;
 }
 
 .mob-nav .nav-item {
@@ -2272,7 +2355,7 @@ label[for="mobile-burger"] {
 }
 
 .mob-nav .nav-item a:hover .arrow-down, .mob-nav .nav-item a.active .arrow-down, .mob-nav .nav-item a:focus .arrow-down, .mob-nav .nav-item label:hover .arrow-down, .mob-nav .nav-item label:focus .arrow-down, .mob-nav .nav-item label.active .arrow-down {
-    border-top: 3px solid #ff7519;
+    border-top: 3px solid #d26e2b;
 }
 
 .mob-nav .nav-item label, .mob-nav .nav-item>a {
@@ -2284,7 +2367,7 @@ label[for="mobile-burger"] {
 }
 
 .mob-nav .nav-item>a:hover, .mob-nav .nav-item>a:focus, .mob-nav .nav-item>a:active, .mob-nav .nav-item>a.active, .mob-nav .nav-item label:hover, .mob-nav .nav-item label:focus {
-    color: #ff7519;
+    color: #d26e2b;
 }
 
 
@@ -2301,7 +2384,7 @@ label[for="mobile-burger"] {
 
 
 .mob-nav .nav-item>.dropdown-content>a:hover, .mob-nav .nav-item .dropdown-content>a:focus, .mob-nav .nav-item .dropdown-content>a.active {
-    color: #ff7519;
+    color: #d26e2b;
     background-color: #f5f5f5;
 }
 
@@ -2379,9 +2462,9 @@ label[for="moblangdrop"], label[for="moblangdrop"]:checked, #moblangdrop, #mobla
 
 p.mob-lang-change {
     padding: 0.8rem;
-    color: #d7d7d7;
-    border-bottom: 1px solid #d7d7d7;
-    border-top: 1px solid #d7d7d7;
+    color: #edeef0;
+    border-bottom: 1px solid #edeef0;
+    border-top: 1px solid #edeef0;
     cursor: default;
 }
 
@@ -2393,7 +2476,7 @@ a.mob-lang-change {
 }
 
 a.mob-lang-change:hover, a.mob-lang-change.active, a.mob-lang-change:focus {
-    color: #ff7519;
+    color: #d26e2b;
     text-decoration: none;
 }
 
@@ -2463,10 +2546,18 @@ img.monero-logo {
 }
 
 .main-info p a.btn-auto, a.btn-primary {
-    background-color: #ff7519;
+    background-color: #d26e2b;
+    border: 2px solid #d26e2b;
     color: #ffffff;
-    border: none;
     display: inline-block;
+}
+
+.main-info p a.btn-auto:hover, a.btn-primary:hover, .main-info p a.btn-auto:focus, a.btn-primary:focus, .main-info p a.btn-auto:active, a.btn-primary:active {
+    background-color: #ce5e14;
+    border: 2px solid #ce5e14;
+    -moz-box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 30px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 30px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px rgba(50, 50, 93, .2), 0 3px 30px rgba(0, 0, 0, .2);
 }
 
 .about-main .info-block .col-lg-6.why-text, .about-monero .info-block .col-lg-7.why-text {
@@ -2499,13 +2590,23 @@ img.monero-logo {
     padding-right: 3rem;
 }
 
-p.main-resources {
-    height: 12rem;
-}
-
 p.main-downloads {
     padding-left: 1.9rem;
 }
+
+.about-monero h3 + p {
+    padding-top: 0.5rem;    
+}
+
+.about-monero h3:first-of-type {
+    margin-top: 1rem;
+}
+
+.about-monero .why-text h3:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 
 @media only screen and (max-width: 75rem) {
 
@@ -2527,11 +2628,6 @@ p.main-downloads {
 
 .about-main .info-block-row, .about-monero .info-block-row {
     margin-top: 1.5rem;
-}
-
-
-p.main-resources {
-    height: 12rem;
 }
 
 p.main-downloads {
@@ -2584,11 +2680,6 @@ p.main-downloads {
     padding-left: 1rem;
 }
 
-p.main-resources {
-    height: auto;
-    text-align: left;
-}
-
 p.main-downloads {
     padding-left: 0;
 }
@@ -2614,13 +2705,26 @@ p.main-downloads {
     padding: 0;
 }
 
-
 }
 
 @media only screen and (max-width: 47.9rem) {
 
 .info-block-row img.main-icon {
-    width: 40%;
+    width: 75%;
+}
+
+}
+
+@media only screen and (max-width: 37rem) {
+
+.about-main .col-xs-4 {
+    display: none;
+}
+
+.about-main .col-xs-8 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
 }
 
 }
@@ -2671,16 +2775,13 @@ footer {
 footer a.white {
     color: #efefef;
     text-decoration: none;
-    -webkit-transition: all ease-out .2s;
-    -moz-transition: all ease-out .2s;
-    -o-transition: all ease-out .2s;
-    transition: all ease-out .2s;
     font-size: 0.9375rem;
+    border-bottom: none;
+    
 }
 
 footer a.white:hover, a.white:focus {
-    color: #ff7519;
-    text-decoration: underline;
+    border-bottom: 2px dotted #efefef;
 }
 
 .footer-wrapper {
@@ -2697,7 +2798,7 @@ footer a.white:hover, a.white:focus {
 }
 
 .footer-link {
-    padding: 0 1rem;
+    margin: 0 1rem;
 }
 
 @media only screen and (max-width: 75rem) {
@@ -2775,6 +2876,60 @@ footer {
 
 }
 
+/*******************************USING MONERO****************************/
+
+.using h2 {
+    text-align: left;
+}
+
+.using img.main-icon {
+    width: 65%;
+}
+
+.using .why-text {
+    padding: 0 2rem;
+}
+
+@media only screen and (max-width: 62rem) {
+
+.using img.main-icon {
+    width: 90%;
+}
+
+}
+
+@media only screen and (max-width: 48rem) {
+
+.using .last-sm {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+}
+
+.using .why-text {
+    padding: 0;
+}
+
+.using p {
+    padding-top: 0.3rem;
+}
+
+}
+
+@media only screen and (max-width: 37rem) {
+
+.using .col-xs-4 {
+    display: none;
+}
+
+.using .col-xs-8 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+}
+
 /******************MONEROPEDIA******************/
 
 .moneropedia {
@@ -2789,12 +2944,27 @@ footer {
     line-height: 1.7;
 }
 
+@media only screen and (max-width: 48rem) {
 
+.moneropedia h4.text-center {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+}
 
 /*******************************GUIDE STYLING****************************/
 
 .guides a{
-    display: block;
+    display: inline;
+}
+
+.guides h2 {
+    text-align: left;
+}
+
+.guides h2:first-of-type {
+    margin-top: 0;
 }
 
 /******************************DOWNLOADS STYLING***********************/
@@ -2813,24 +2983,31 @@ footer {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     font-weight: bold;
     -webkit-transition: all ease-out .2s;
     -moz-transition: all ease-out .2s;
     -o-transition: all ease-out .2s;
     transition: all ease-out .2s;
+    border: none;
+    font-family: 'Hind', sans-serif;
 }
 
 .download-nav a:hover {
-    background-color: #ff7519;
+    background-color: #d26e2b;
     color: #fff;
     text-decoration: none;
 }
 
-.downloads a img {
-    padding-top: 1rem;
+.downloads .mob-wallets a {
+    border-bottom: none;
 }
 
+.downloads a img {
+    margin-top: 2rem;
+    border: 2px dotted #ffffff;
+    padding: 0.5rem;
+}
 
 .downloads .full>.info-block {
     padding: 4rem 5rem;
@@ -2840,12 +3017,34 @@ footer {
     display: none;
 }
 
+.downloads .info-block h2 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.downloads p.prehash {
+    padding-top: 0.5rem;
+}
+
 .downloads p.hash {
     word-break: break-all;
 }
 
+.downloads p.hash {
+    padding-top: 0;
+    background-color: #fff1e8;
+    color: #2f6f9f;
+    white-space: pre-wrap;
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    text-indent: -8px;
+    line-height: 1.1rem;
+    font-family: monospace;
+    margin-top: 0.5rem;
+}
+
 .download-platforms .col-md-6 {
-    padding: 0 1rem;
+    padding: 0 2rem 0 0;
 }
 
 .download-platforms h2 span {
@@ -2892,7 +3091,7 @@ footer {
 }
 
 .downloads a.arrow-up {
-    border: 1px solid #ff7519;
+    border: 1px solid #d26e2b;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
@@ -2905,11 +3104,11 @@ footer {
 
 .downloads a.arrow-up:hover, .downloads a.arrow-up:focus {
     border: none;
-    background-color: #ff7519;
+    background-color: #d26e2b;
 }
 
 .downloads a.arrow-up i {
-    border: solid #ff7519;
+    border: solid #d26e2b;
     border-width: 0 3px 3px 0;
     padding: 0.5rem;
     position: absolute;
@@ -2953,6 +3152,10 @@ footer {
     padding: 0;
 }
 
+.download-platforms .col-md-6:nth-of-type(2) {
+    padding-top: 1rem;
+}
+
 #pick-platform {
     display: block;
 }
@@ -2972,17 +3175,19 @@ footer {
 
 .mob.dropdowndrop label{
   position: relative;
-  /*display: block;*/
-  padding: 0 1rem 0 1rem;
   font-size: 1.125rem;
   font-weight: 500;
-  line-height: 3rem;
   cursor: pointer;
   color: #4c4c4c;
   -webkit-transition: all ease-out .2s;
   -moz-transition: all ease-out .2s;
   -o-transition: all ease-out .2s;
   transition: all ease-out .2s;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    padding: 1rem 1rem 0.9rem 1rem;
+    font-family: 'Hind', sans-serif;
 }
 
 .mob.dropdowndrop label:after{
@@ -2990,7 +3195,7 @@ footer {
   position: absolute;
   display: block;
   top: 50%;
-  right: 0;
+  right: 1rem;
   width: 0;
   height: 0;
   border-top: 4px solid #4c4c4c;
@@ -3001,18 +3206,18 @@ footer {
   }
 
 .mob.dropdowndrop input:checked ~ label {
-  color: #ff7519;
+  color: #d26e2b;
 }
 
 .mob.dropdowndrop input:hover ~ .mob.dropdowndrop label:after {
-    border-top: 4px solid #ff7519 !important;
-    border-bottom: 0 solid #ff7519 !important;
+    border-top: 4px solid #d26e2b !important;
+    border-bottom: 0 solid #d26e2b !important;
     transition: border-top .1s, border-bottom .1s .1s;
 }
 
 .mob.dropdowndrop input:checked ~ label:after{
-    border-top: 0 solid #ff7519;
-    border-bottom: 4px solid #ff7519;
+    border-top: 0 solid #d26e2b;
+    border-bottom: 4px solid #d26e2b;
     transition: border-top .1s, border-bottom .1s .1s;
 }
 
@@ -3045,10 +3250,12 @@ footer {
     -o-transition: all ease-out .2s;
     transition: all ease-out .2s;
     text-align: center;
+    border-bottom: none;
+    border-top: 1px solid #edeef0;
 }
 
 .mob.dropdowndrop ul#menu li a:hover {
-    color: #ff7519;
+    color: #d26e2b;
     background-color: #fcfcfc;
 }
 
@@ -3061,16 +3268,15 @@ footer {
 
 /***************************MERCHANTS STYLING***********************************/
 
-.merchants a {
-    color: #4c4c4c;
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-    display: inline-block;
+.merchants .col-md-4 {
+    padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.merchants a:hover, .merchants a.active, .merchants a:focus {
-    color: #ff7519;
+.merchants a {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    display: inline;
 }
 
 
@@ -3083,20 +3289,20 @@ footer {
 }
 
 .roadmap .ongoing {
-    background: #ff7519;
-    border: 1px solid #ff7519;
+    background: #d26e2b;
+    border: 1px solid #d26e2b;
     border-radius: 50%;
 }
 
 .roadmap .upcoming {
     background: #fff;
-    border: 1px solid black;
+    border: 2px solid #4c4c4c;
     border-radius: 50%;
 }
 
 .roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   text-align: center;
   border-radius: 1rem;
   display: block;
@@ -3114,9 +3320,13 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+.roadmap .tabPanel-content .row:last-child {
+    margin-bottom: 0;
+}
+
 .pre-roadmap li {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   text-align: center;
   border-radius: 1rem;
   margin: 0 1rem;
@@ -3152,7 +3362,7 @@ footer {
   margin: 0;
   text-align: center;
   background: #ffffff;
-  color: #ff7519;
+  color: #000;
   -moz-box-shadow: 0 1px 0px rgba(50,50,93,.1);
   -webkit-box-shadow: 0 1px 0px rgba(50,50,93,.1);
   box-shadow: 0 1px 0px rgba(50,50,93,.1);
@@ -3259,7 +3469,7 @@ footer {
 }
 
 .tabPanel-widget input[name="tabs"]:checked + h2 {
-  background: #ff7519;
+  background: #d26e2b;
   color: #ffffff;
 }
 
@@ -3278,7 +3488,7 @@ footer {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #ff7519;
+  border-top: 10px solid #d26e2b;
 }
 
 .roadmap .tabPanel-widget > div.tabPanel-content p {
@@ -3340,8 +3550,12 @@ footer {
 .tabPanel-widget h2 {
     width: 100%;
     position: static !important;
-    padding: 1.5rem 0;
+    padding: 1rem 0 0.8rem 0;
     font-size: 1.5625rem;
+}
+
+.team .tabPanel-widget h2 {
+    width: 100% !important;
 }
 
 .tabPanel-widget input[name="tabs"]:checked + h2:after {
@@ -3370,6 +3584,13 @@ footer {
 
 @media only screen and (max-width: 30rem) {
 
+.pre-roadmap .col-xs-4 {
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
+    max-width: 90%;
+    text-align: left;
+}
+
 .tabPanel-widget > div.tabPanel-content p {
     padding-left: 1.5rem;
 }
@@ -3383,7 +3604,7 @@ footer {
 }
 
 .tabPanel-widget h2 {
-    padding-top: 2rem;
+    padding: 1rem 0;
 }
 
 .roadmap .tabPanel-widget  div.tabPanel-content .col-xs-1 {
@@ -3423,6 +3644,10 @@ footer {
 
 .team .icons {
     margin-top: 1rem;
+}
+
+.team .icons a {
+    border-bottom: none;
 }
 
 @media only screen and (max-width: 48rem) {
@@ -3475,22 +3700,57 @@ footer {
 
 /***********************************POST STYLING********************************/
 
+.post-tag {
+    padding-top: 1.5rem;
+}
+
+.post-lead {
+    border-bottom: 1px solid #d0d4dd;
+    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+}
+
 .post .info-block {
     word-break: break-word;
 }
 
-.post .info-block p, .post .info-block h2 {
+.post h2 {
     text-align: left;
+}
+
+.post p.author, .post p.post-date {
+    color: #9ca1ac;
+    line-height: 1.7;
+    padding-top: 0;
+    display: block;
 }
 
 .post h3, .post h3:first-of-type {
     margin-top: 1rem;
-    /*margin-bottom: 0.5rem;*/
     margin-bottom: 0;
 }
 
+.post hr {
+    margin: 1.5rem 0 0 0;
+}
+
 .page-numbers {
-    margin-top: 2.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.page-numbers p {
+    padding-top: 0;
+}
+
+.page-numbers p a {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    border-bottom: 2px dotted #a1aabb;
+}
+
+.page-numbers p a:hover, .page-numbers p a:focus, .page-numbers p a:active {
+    border-bottom: 2px solid #a1aabb;
 }
 
 @media only screen and (max-width: 75rem) {
@@ -3502,6 +3762,7 @@ footer {
 @media only screen and (max-width: 62rem) {
 .page-numbers {
     margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
 }
 }
 
@@ -3516,16 +3777,17 @@ footer {
 
 /* Hangouts Styling */
 
-.hangouts ul {
+p.hangouts-social {
+    margin-bottom: 1rem!important;
+}
+
+.hangouts-social ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 2.5rem;
 }
 
-.hangouts ul li {
-
-}
-
-.hangouts .social-icon, .team .social-icon {
+.hangouts-social .social-icon, .team .social-icon {
     -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -3542,7 +3804,7 @@ footer {
 
 .social-icon.twitter:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -48px;
+    background-position: -176px -47px;
 }
 
 .social-icon.reddit {
@@ -3552,7 +3814,7 @@ footer {
 
 .social-icon.reddit:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -96px;
+    background-position: -176px -95px;
 }
 
 .social-icon.facebook {
@@ -3562,7 +3824,7 @@ footer {
 
 .social-icon.facebook:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px 0;
+    background-position: -176px 1px;
 }
 
 .social-icon.github {
@@ -3572,7 +3834,7 @@ footer {
 
 .social-icon.github:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -175px -144px;
+    background-position: -176px -143px;
 }
 
 .hangouts .irc .col-md-4 {
@@ -3631,12 +3893,30 @@ footer {
 
 /***************************SPONSORS*****************************/
 
+.sponsors a, .sponsors a:hover, .sponsors a:active, .sponsors a:focus {
+    border: none;
+}
+
 .sponsors img {
     width: 100%;
 }
 
 .sponsors .info-block h2, .merchants .info-block h2, .info-block.research-paper h2 {
     padding-bottom: 1rem;
+}
+
+.whitepaper {
+    border-top: 1px solid #edeef0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.whitepaper:first-of-type {
+    border-top: none;
+}
+
+.whitepaper:last-of-type {
+    padding-bottom: 0;
 }
 
 /***************************CONTRIBUTE***************************/
@@ -3843,6 +4123,10 @@ footer {
     width: 40%;
 }
 
+.about-monero .info-block-row .col-sm-4 {
+    display: none;
+}
+
 }
 
 @media only screen and (max-width: 42rem) {
@@ -4016,7 +4300,7 @@ footer {
 .fr-contribute label.accordion, .milestones label.accordion {
     display: inline-block;
     padding: 0 2rem 0 1rem;
-    border: 1px solid #ff7519;
+    border: 1px solid #d26e2b;
     margin: 0;
     line-height: 2.7rem;
     height: 2.7rem;
@@ -4024,12 +4308,12 @@ footer {
     -moz-transition: background .15s ease;
     -o-transition: background .15s ease;
     transition: background .15s ease;
-    color: #ff7519;
+    color: #d26e2b;
     text-transform: uppercase;
 }
 
 .fr-contribute label.accordion:hover, .fr-contribute label.accordion:focus, .fr-contribute  input.accordion[type=checkbox]:checked + label, .milestones label.accordion:hover, .milestones label.accordion:focus, .milestones input.accordion[type=checkbox]:checked + label {
-    background-color: #ff7519;
+    background-color: #d26e2b;
     color: #ffffff;
 }
 
@@ -4037,7 +4321,7 @@ footer {
     right: 1rem;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid #ff7519;
+    border-top: 4px solid #d26e2b;
 }
 
 .fr-contribute label.accordion:hover:after, .fr-contribute label.accordion:focus:after, .fr-contribute  input.accordion[type=checkbox]:checked + label:after, .milestones label.accordion:hover:after, .milestones label.accordion:focus:after, .milestones input.accordion[type=checkbox]:checked + label:after {
@@ -4207,12 +4491,22 @@ footer {
   width: 100%;
   color: #4c4c4c;
   overflow: hidden;
-  border-top: 1px solid #d7d7d7;
+  border-top: 1px solid #edeef0;
+}
+
+.tab:first-of-type {
+    border-top: none !important;
+}
+
+.tab label {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.3rem;
 }
 
 .tab:last-of-type {
-    border-bottom: 1px solid #d7d7d7;
+    border-bottom: 1px solid #edeef0;
 }
+
 input.accordion {
   position: absolute;
   display: none;
@@ -4221,11 +4515,24 @@ input.accordion {
 label.accordion {
   position: relative;
   display: block;
-  padding: 1rem 2rem 1rem 0;
+  padding: 1.3rem 2rem 1.3rem 0;
   font-weight: bold;
   line-height: 1.7;
   cursor: pointer;
   margin-right: 0.5rem;
+}
+
+.research-paper .tab label {
+    font-size: 1.1rem;
+}
+
+.research-paper .tab .tab-content p {
+    padding-top: 0;
+}
+
+.research-paper .tab .tab-content a {
+    padding-top: 1rem;
+    display: inline-block;
 }
 
 .tab-content {
@@ -4238,7 +4545,7 @@ label.accordion {
 }
 
 .tab-content p {
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 1rem 2rem 1rem;
 }
 
 input.accordion:checked ~ .tab-content {

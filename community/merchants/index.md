@@ -15,8 +15,8 @@ permalink: /community/merchants/index.html
         <div class="row">
             {% assign sortedMerchants = toplevel.merchants | sort: 'name' %}
             {% for merchants in sortedMerchants %}
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="{{merchants.url}}">{{merchants.name}}</a>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <p><a href="{{merchants.url}}">{{merchants.name}}</a></p>
             </div>
             {% endfor %}
         </div>
