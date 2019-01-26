@@ -24,7 +24,7 @@ global:
   copyright: Copyright
   untranslated: This page is not yet translated. If you would like to help translate it, please see the
   outdatedMax: This page is outdated. We do not recommend using it. Instead, please see the
-  outdatedVersion: english version
+  outdatedVersion: English version
   outdatedMin: This page has been updated since the translation. You can use this version, but it may be incomplete.
   upgrade: To continue using Monero, make sure your software is up-to-date with the October 18th network upgrade.
   moreinfo: More info
@@ -153,7 +153,7 @@ team:
   translated: "yes"
   core: Core
   developers: Developers
-  developers_para1: The Monero Project has had well over 400 contributors over the life of the project. For a complete list, please see the
+  developers_para1: The Monero Project has had well over 500 contributors over the life of the project. For a complete list, please see the
   developers_para2: OpenHub contributors page.
   developers_para3: Below you'll find some individuals that have gone above and beyond for Monero.
   community: Community
@@ -369,14 +369,14 @@ what-is-monero:
   leading_para1: Most existing cryptocurrencies, including Bitcoin and Ethereum, have transparent blockchains, meaning that transactions are openly verifiable and traceable by anyone in the world. Furthermore, sending and receiving addresses for these transactions may potentially be linkable to a person's real-world identity.
   leading_para2: Monero uses cryptography to shield sending and receiving addresses, as well as transacted amounts.
   confidential: Monero transactions are confidential and untraceable.
-  confidential_para1: Every Monero transaction, by default, obfuscates sending and receiving addresses as well as transacted amounts. This always-on privacy means that every Monero user's activity enhances the privacy of all other users, unlike selectively transparent cryptocurrencies (e.g. Z-Cash).
+  confidential_para1: Every Monero transaction, by default, obfuscates sending and receiving addresses as well as transacted amounts. This always-on privacy means that every Monero user's activity enhances the privacy of all other users, unlike selectively transparent cryptocurrencies (e.g. Zcash).
   confidential_para2: Monero is fungible. By virtue of obfuscation, Monero cannot become tainted through participation in previous transactions. This means Monero will always be accepted without the risk of censorship.
   confidential_para3: The Kovri Project,
   confidential_para4: currently in development
   confidential_para5: ", will route and encrypt transactions via I2P Invisible Internet Project nodes. This will obfuscate a transactor's IP address and provide further protection against network monitoring."
   grassroots: Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.
   grassroots_para1: Over
-  grassroots_para2: 420 developers
+  grassroots_para2: 500 developers
   grassroots_para3: have contributed to the Monero project, including 30 core developers. Forums and chat channels are welcoming and active.
   grassroots_para4: Monero's Research Lab, Core Development Team and Community Developers are constantly pushing the frontier of what is possible with cryptocurrency privacy and security.
   grassroots_para5: Monero is not a corporation. It is developed by cryptography and distributed systems experts from all over the world that donate their time or are funded by community donations. This means that Monero can't be shut down by any one country and is not constrained by any particular legal jurisdiction.

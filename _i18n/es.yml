@@ -153,7 +153,7 @@ team:
   translated: "yes"
   core: Equipo Central
   developers: Desarrolladores
-  developers_para1: El Proyecto Monero ha tenido más de 400 contribuyentes durante la vida del proyecto. Para la lista completa, favor de ver la
+  developers_para1: El Proyecto Monero ha tenido más de 500 contribuyentes durante la vida del proyecto. Para la lista completa, favor de ver la
   developers_para2: página de contribuyentes de OpenHub.
   developers_para3: A continuación encontrarás algunos individuos que han ido lejos por Monero.
   community: Comunidad
@@ -369,14 +369,14 @@ what-is-monero:
   leading_para1: La mayoría de las criptomonedas existentes, incluidas Bitcoin y Ethereum, tienen una blockchain transparente, lo que significa que las transacciones son abiertamente verificables y rastreables por cualquier persona en el mundo. Además, las direcciones emisoras y receptoras de estas transacciones pueden ser potencialmente enlazadas a la identidad de una persona en el mundo real.
   leading_para2: Monero utiliza criptografía para resguardar cualquier dirección emisora o receptora, al igual que las cantidades enviadas.
   confidential: Las transacciones de Monero son confidenciales y no rastreables.
-  confidential_para1: Cada transacción en Monero, por defecto, oculta las direcciones de quien envía y quien recibe así como las cantidades enviadas. Esta tecnología de privacidad siempre activa significa que toda actividad de todo usuario en la red de Monero mejora la privacidad de todos los demás usuarios, a diferencia de criptomonedas de transparencia selectiva (e.g. Z-Cash).
+  confidential_para1: Cada transacción en Monero, por defecto, oculta las direcciones de quien envía y quien recibe así como las cantidades enviadas. Esta tecnología de privacidad siempre activa significa que toda actividad de todo usuario en la red de Monero mejora la privacidad de todos los demás usuarios, a diferencia de criptomonedas de transparencia selectiva (e.g. Zcash).
   confidential_para2: Monero es fungible. Por virtud de la ofuscación, Monero no puede contaminarse a causa de uso en transacciones previas. Esto significa que Monero siempre será aceptado sin riesgo de censura o rechazo.
   confidential_para3: El
   confidential_para4: proyecto Kovri,
   confidential_para5: "actualmente en desarrollo, será capaz de enrutar y encriptar transacciones vía nodos I2P (Invisible Internet Project). Esto ocultará la dirección IP de una transacción y proveerá protección adicional contra el monitoreo de red."
   grassroots: Monero es una comunidad sólida que ha logrado atraer a los mejores ingenieros e investigadores del mundo en criptomonedas.
   grassroots_para1: Más de
-  grassroots_para2: 420 desarrolladores
+  grassroots_para2: 500 desarrolladores
   grassroots_para3: han contribuido al proyecto Monero, incluyendo 30 desarrolladores centrales. Los foros y canales de comunicación son muy acogedores y activos.
   grassroots_para4: El Laboratorio de Investigación de Monero, Equipo de Desarrollo Central y Comunidad de Desarrolladores están constantemente rompiendo la barrera de lo que es posible con privacidad y seguridad de criptomonedas.
   grassroots_para5: Monero no es una corporación. Es desarrollado por expertos en criptografía y sistemas distribuidos de todo el mundo que ofrecen de manera gratuita su tiempo o son patrocinados por donaciones de la comunidad. Esto significa que Monero no puede ser cerrado por ningún país y no está restringido por ninguna jurisdicción legal.
