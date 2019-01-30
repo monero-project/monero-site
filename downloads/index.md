@@ -54,6 +54,9 @@ permalink: /downloads/index.html
                                 <h4 id="{{ data_downloads.platform | slugify }}">
                                     <a href="{{ data_downloads.cli_url }}">{% t downloads.sourcecode %}</a>
                                 </h4>
+                                <h4>
+                                    <a href="{{ data_downloads.mirror1 }}">{% t downloads.mirror %}</a>
+                                </h4>
                             </div>
                             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                                 <p>{% t downloads.blockchain1 %} <a href="https://downloads.getmonero.org/blockchain.raw">{% t downloads.blockchain2 %}</a> {% t downloads.blockchain3 %}</p>

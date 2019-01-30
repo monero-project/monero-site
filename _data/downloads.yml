@@ -87,6 +87,7 @@
   id: source
   icon: icon-github
   cli_url: https://github.com/monero-project/monero
+  mirror1: https://git.pwned.systems/monero-project/monero
   cli_hash: source
   version: Bleeding edge (possibly unstable)
   
