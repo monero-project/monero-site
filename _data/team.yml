@@ -155,10 +155,15 @@
       reddit: https://www.reddit.com/user/therealtacotime
 - area: Monero Research Lab
   member:
-    - name: Brandon Goodell (Surae Noether)
-      github:
+    - name: Brandon Goodell, Ph.D. (Surae Noether)
+      github: https://github.com/b-g-goodell
+      reddit: https://www.reddit.com/user/snoether
     - name: Sarang Noether
       github: https://github.com/SarangNoether
       reddit: https://www.reddit.com/user/SarangNoether
     - name: Stoffu Noether
       github: https://github.com/stoffu
+    - name: Mitchell Krawiec-Thayer, Ph.D. (Isthmus)
+      email: Isthmus@getmonero.org
+      github: https://github.com/mitchellpkt
+      reddit: https://www.reddit.com/user/mitchellpkt
