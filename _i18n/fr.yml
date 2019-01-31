@@ -570,6 +570,7 @@ moneropedia:
     blockchain: Chaîne de blocs
     block: Bloc
     bootstrap-node: Nœud d'amorce
+    bulletproofs: Bulletproofs
     canonically-unique-host: Canonically-unique host
     change: Monnaie
     clearnet: Réseau en clair

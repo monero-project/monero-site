@@ -568,6 +568,7 @@ moneropedia:
     blockchain: Blockchain
     block: Bloque
     bootstrap-node: Nodo Bootstrap
+    bulletproofs: Bulletproofs
     canonically-unique-host: Host único canónico
     change: Cambio
     clearnet: Clearnet
