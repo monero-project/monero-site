@@ -1,0 +1,120 @@
+- year: 2014
+  accomplishments:
+    - name: Veröffentlicht auf Bitcointalk
+      date: 2014-04-18
+      status: completed
+    - name: Umbenennung von Bitmonero zu Monero
+      date: 2014-04-23
+      status: completed
+    - name: Erholung von einer Spamattacke
+      date: 2014-09-04
+      status: completed
+    - name: „Monero Research Lab“-Papers 1 und 2 veröffentlicht
+      date: 2014-09-12
+      status: completed
+    - name: „Monero Research Lab“-Paper 3 veröffentlicht
+      date: 2014-09-25
+      status: completed
+    - name: 0.8.8.6 veröffentlicht
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: „Monero Research Lab“-Paper 4 veröffentlicht
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: 0.9.0 Hydrogen Helix veröffentlicht
+      date: 2016-01-01
+      status: completed
+    - name: „Monero Research Lab“-Paper 5 veröffentlicht
+      date: 2016-02-10
+      status: completed
+    - name: Netzwerkupgrade, das eine minimale Ringgröße von 3 für alle Transaktionen voraussetzt
+      date: 2016-03-22
+      status: completed
+    - name: 0.10.0 Wolfram Warptangent veröffentlicht
+      date: 2016-09-18
+      status: completed
+    - name: Netzwerkupgrade um ungleiche Transaktionsbeträge unter den Ringen zu ermöglichen
+      date: 2016-09-21
+      status: completed
+    - name: 0.10.1 Wolfram Warptangent veröffentlicht
+      date: 2016-12-14
+      status: completed
+    - name: Offizielle GUI Beta 1 veröffentlicht
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: Netzwerkupgrade, um RingCT Transaktionen zu ermöglichen
+      date: 2017-01-05
+      status: completed
+    - name: 0.10.2 veröffentlicht; kritische Schwachstelle gepatcht
+      date: 2017-02-22
+      status: completed
+    - name: 0.10.3.1 Wolfram Warptangent veröffentlicht
+      date: 2017-03-27
+      status: completed
+    - name: Netzwerkupgrade, das die kleinstmögliche Blockgröße und den dynamischen Gebührenalgorithmus anpasst
+      date: 2017-04-15
+      status: completed
+    - name: Webseite neu gestaltet
+      date: 2017-07-04
+      status: completed
+    - name: 0.11.0.0 Helium Hydra veröffentlicht
+      date: 2017-09-07
+      status: completed
+    - name: Fluffy-Blocks
+      date: 2017-09-07
+      status: completed
+    - name: Betaphase der GUI beendet
+      date: 2017-09-10
+      status: completed
+    - name: Netzwerkupgrade, das die minimale Ringgröße auf 5 anhebt und RingCT voraussetzt
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: Subadressen
+      date: October, 2017
+      status: completed
+    - name: Mehrfachsignaturen (multisig)
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: Neuer PoW CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: Netzwerkupgrade, das die minimale Ringgröße auf 7 erhöht, Mehrfachsignaturen und Subadressen integriert und den PoW-Algorithmus ändert
+      date: 2018-04-06
+      status: completed
+    - name: "Getmonero.org: Übersetzungen in Französisch und Polnisch"
+      date: 2018-04-24
+      status: completed
+    - name: Hardware-Wallets von Ledger werden unterstützt
+      date: 2018-06-04
+      status: completed
+    - name: Kovri Alpha veröffentlicht
+      date: 2018-08-01
+      status: completed
+    - name: Forum-Finanzierungs-System neu gestaltet
+      date:
+      status: ongoing
+    - name: Implementation von BulletProofs anstelle von RingCT, um Transaktionsgrößen zu verringern
+      date:
+      status: ongoing
+    - name: Kovri Beta
+      date:
+      status: upcoming
+- year: 2019
+  accomplishments:
+    - name: Zweitschichtlösungen für bessere Geschwindigkeit und Skalierbarkeit
+      date:
+      status: upcoming
+    - name: Weitere „Monero Research Lab“-Papers
+      date:
+      status: upcoming
