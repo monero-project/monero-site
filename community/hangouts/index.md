@@ -6,11 +6,8 @@ permalink: /community/hangouts/index.html
 
 {% t global.lang_tag %}
 <div class="text-center container description">
-    <p>{% t hangouts.intro %}</p>
-</div>
-
-<div class="hangouts">
-    <section class="container">   
+    <p class="hangouts-social">{% t hangouts.intro %}</p>
+    <section class="hangouts-social container">   
         <ul class="row center-xs">
             <li>
                 <a href="https://twitter.com/monerocurrency" target="_blank" rel="noreferrer noopener"><div class="social-icon twitter"></div></a>
@@ -26,6 +23,9 @@ permalink: /community/hangouts/index.html
             </li>
         </ul>
     </section>
+</div>
+
+<div class="hangouts">
     <section class="container">
           <div class="row">
                 <!-- left two-thirds block-->
@@ -40,7 +40,7 @@ permalink: /community/hangouts/index.html
                             <div class="row center-xs">
                                 <p>{% t hangouts.resources_para %}</p>
                             </div>
-                            <div class="row relays around-xs">
+                            <div class="row relays center-xs">
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <p><a href="https://monero.slack.com/" class="btn-link btn-fixed">Slack</a></p>
                                 </div>
@@ -73,25 +73,22 @@ permalink: /community/hangouts/index.html
                     </div>
                 </div>
                 <!-- end left two-thirds block-->
-
                 <!-- right one-third block-->
                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="info-block">
-                            <div class="row center-xs">
-                                <div class="col"><h2>{% t hangouts.stack_exchange %}</h2></div>
-                            </div>
-                            <div class="row start-xs">
-                                <p>{% t hangouts.stack_exchange_para %}</p>
-                            </div>
-                            <div class="row start-xs sequestions">
-                                <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Why does monero have higher transaction fees than bitcoin?</a>
-                                <a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">What does Monero's scaling roadmap look like?</a>
-                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">What cryptography primitives/concepts, other than the basic ones, does Monero use?</a>
-                                <a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">How to extract data from local blockchain?</a>
-                                <a href="https://monero.stackexchange.com/questions/4377/hiding-tcp-traffic-for-monero-miners">Hiding TCP traffic for Monero miners?</a>
+                            <div class="row">
+                                <div class="col">
+                                    <h2>{% t hangouts.stack_exchange %}</h2>
+                                    <p>{% t hangouts.stack_exchange_para %}</p>
+                                    <p><a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Why does monero have higher transaction fees than bitcoin?</a></p>
+                                    <p><a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">What does Monero's scaling roadmap look like?</a></p>
+                                    <p><a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">What cryptography primitives/concepts, other than the basic ones, does Monero use?</a></p>
+                                    <p><a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">How to extract data from local blockchain?</a></p>
+                                    <p><a href="https://monero.stackexchange.com/questions/4377/hiding-tcp-traffic-for-monero-miners">Hiding TCP traffic for Monero miners?</a></p>
+                                </div>
                             </div>  
-                            <div class="row center-xs">
-                                <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">{% t hangouts.stack_exchange_link %}</a></p>
+                            <div class="row">
+                                <p><a href="https://monero.stackexchange.com" class="orange">{% t hangouts.stack_exchange_link %}</a></p>
                             </div>
                         </div>
                </div>

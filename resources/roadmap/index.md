@@ -5,19 +5,16 @@ permalink: /resources/roadmap/index.html
 ---
 {% t global.lang_tag %}
 <div class="roadmap">
-    <div class="text-center pre-roadmap container">
-        <div class="row">
-            <div class="col-xs-4">
-                <li class="completed"></li>
-                <p>{% t roadmap.completed %}</p>
+    <div class="pre-roadmap container">
+        <div class="row center-xs">
+            <div class="col-sm-3 col-xs-4">
+                <p class="pre-completed">{% t roadmap.completed %}</p>
             </div>
-            <div class="col-xs-4">
-                <li class="ongoing"></li>
-                <p>{% t roadmap.ongoing %}</p>
+            <div class="col-sm-3 col-xs-4">
+                <p class="pre-ongoing">{% t roadmap.ongoing %}</p>
             </div>
-            <div class="col-xs-4">
-                <li class="upcoming"></li>
-                <p>{% t roadmap.upcoming %}</p>
+            <div class="col-sm-3 col-xs-4">
+                <p class="pre-upcoming">{% t roadmap.upcoming %}</p>
             </div>
         </div>
     </div>
@@ -112,7 +109,7 @@ permalink: /resources/roadmap/index.html
                         {% for toplevel in site.data.lang[site.lang].roadmap %}
                             {% if toplevel.year == 2018 %}
                                 {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs">
+                                    <div class="row start-xs middle-xs">
                                         <div class="col-xs-1">
                                             <span class="{{roadlist.status}}"></span>
                                         </div>
@@ -135,7 +132,7 @@ permalink: /resources/roadmap/index.html
                         {% for toplevel in site.data.lang[site.lang].roadmap %}
                             {% if toplevel.year == 2019 %}
                                 {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs">
+                                    <div class="row start-xs middle-xs">
                                         <div class="col-xs-1">
                                             <span class="{{roadlist.status}}"></span>
                                         </div>

@@ -7,8 +7,7 @@ permalink: /downloads/index.html
 {% t global.lang_tag %}
 <div class="downloads">
     <div class="container description">
-    <p>{% t downloads.intro1 %} <a href="https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/">{% t downloads.intro2 %}</a> {% t downloads.intro3 %}</p>
-    <p><em>{% t downloads.note1 %} <a href="https://getmonero.org/downloads/hashes.txt ">getmonero.org/downloads/hashes.txt</a> {% t downloads.note2 %}</em></p>
+    <p>{% t downloads.intro1 %} <a href="https://www.reddit.com/r/Monero/comments/64b5lf/what_is_the_best_monero_wallet/">{% t downloads.intro2 %}</a> {% t downloads.intro3 %} {% t downloads.note1 %} <a href="https://getmonero.org/downloads/hashes.txt ">getmonero.org/downloads/hashes.txt</a> {% t downloads.note2 %}</p>
     </div>
     <div class="container full downdropdown">
         <div class="info-block download-nav row middle-xs between-xs" id="selections">
@@ -44,92 +43,84 @@ permalink: /downloads/index.html
                 <div class="info-block">
                     <h2>
                         {% if data_downloads.icon != null %}
-                            <span class="{{data_downloads.icon}}"></span>  
+                            <span class="{{data_downloads.icon}}"></span>
                         {% endif %}
                         {{data_downloads.platform}}
                     </h2>
                     {% if data_downloads.cli_hash == "source" %}
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <h4 id="{{ data_downloads.platform | slugify }}">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3 id="{{ data_downloads.platform | slugify }}">
                                     <a href="{{ data_downloads.cli_url }}">{% t downloads.sourcecode %}</a>
-                                </h4>
-                                <h4>
+                                </h3>
+                                <h3>
                                     <a href="{{ data_downloads.mirror1 }}">{% t downloads.mirror %}</a>
-                                </h4>
+                                </h3>
                             </div>
-                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <p>{% t downloads.blockchain1 %} <a href="https://downloads.getmonero.org/blockchain.raw">{% t downloads.blockchain2 %}</a> {% t downloads.blockchain3 %}</p>
                             </div>
                         </div>
                     {% elsif data_downloads.id == "hardware" %}
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <p>{% t downloads.hardware1 %} <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware2 %}</a> {% t downloads.hardware3 %} <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware4 %}</a></p>
                             </div>
                         </div>
                     {% elsif data_downloads.id == "mobilelight" %}
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a> {% t downloads.mobilelight3 %}</p>
                             </div>
                         </div>
-                        <div class="row center-xs">
-                            <div class="col-xs-6 col-sm-3">
+                        <div class="row between-xs mob-wallets">
                                 <a href="https://cakewallet.io"><img style="height: 115px;"  src="/img/cakewallet.png" alt="Cake Wallet Logo"></a>
-                            </div>
-                            <div class="col-xs-6 col-sm-3">
                                 <a href="https://monerujo.io"><img style="height: 115px;" src="/img/Monerujo-wallet.png" alt="Monerujo Logo"></a>
-                            </div>
-                            <div class="col-xs-6 col-sm-3">
                                 <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
-                            </div>
-                            <div class="col-xs-6 col-sm-3">
                                 <a href="https://edge.app/"><img style="height: 115px;" src="/img/edge-wallet.png" alt="Edge Logo"></a>
-                            </div>
                         </div>
                     {% elsif data_downloads.gui_hash == nil and data_downloads.cli_hash != nil %}
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <h4 id="{{ data_downloads.platform | slugify }}">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3 id="{{ data_downloads.platform | slugify }}">
                                      <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}"> {{ data_downloads.platform }} {% t downloads.clionly %}</a>
-                                </h4>
+                                </h3>
                                 <p>{% t downloads.currentversion %}: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
                             </div>
                          </div>
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <p><strong>SHA256 Hash:</strong></p>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <p class="prehash">SHA256 Hash:</p>
                                 <p class="hash"> {{ data_downloads.cli_hash }}</p>
                             </div>
                         </div>
                     {% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash == nil %}
                         <div class="row">
-                            <h4 id="{{ data_downloads.platform | slugify }}">
+                            <h3 id="{{ data_downloads.platform | slugify }}">
                                 <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
-                            </h4>
+                            </h3>
                             <p>{% t downloads.currentversion %}: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
                         </div>
                         <div class="row">
-                            <p><strong>SHA256 Hash:</strong></p>
+                            <p class="prehash">SHA256 Hash:</p>
                             <p class="hash"> {{ data_downloads.gui_hash }}</p>
                         </div>
                     {% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash != nil %}
                         <div class="row start-md">
                             <div class="col-md-6 col-sm-12" >
-                                <h4 id="{{ data_downloads.platform | slugify }}">
+                                <h3 id="{{ data_downloads.platform | slugify }}">
                                     <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
-                                </h4>
+                                </h3>
                                 <p>{% t downloads.currentversion %}: {{ data_downloads.gui_version }} {{ data_downloads.tag }}</p>
-                                <p><strong>SHA256 Hash (GUI):</strong></p>
+                                <p class="prehash">SHA256 Hash (GUI):</p>
                                 <p class="hash"> {{ data_downloads.gui_hash }}</p>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <h4>
+                                <h3>
                                     <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} {% t downloads.clionly %}</a>
-                                </h4>
+                                </h3>
                                 <p>{% t downloads.currentversion %}: {{ data_downloads.cli_version }} {{ data_downloads.tag }}</p>
-                                <p><strong>SHA256 Hash (CLI):</strong></p>
+                                <p class="prehash">SHA256 Hash (CLI):</p>
                                 <p class="hash"> {{ data_downloads.cli_hash }}</p>
                             </div>
                         </div>
