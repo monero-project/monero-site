@@ -16,11 +16,9 @@
     - name: Bitqist - Instant exchange
       url: https://bitqist.com/
     - name: Bisq; decentralized exchange (previously Bitsquare)
-      url: https://bisq.io/
+      url: https://bisq.network/
     - name: Bittrex
       url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
-    - name: Bter
-      url: https://bter.com/
     - name: ChangeHero - Instant exchange
       url: https://changehero.io/
     - name: ChangeNOW
@@ -65,8 +63,6 @@
       url: https://localmonero.co/
     - name: Magnetic Exchange
       url: https://magneticexchange.com
-    - name: MoneroDirect (Euro only)
-      url: https://monerodirect.com
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (Instant)
@@ -105,8 +101,6 @@
       url: https://globee.com/
     - name: Living Room of Satoshi
       url: https://www.livingroomofsatoshi.com/?sc=xmr
-    - name: Monero Merchants
-      url: https://monero-merchants.com
     - name: Monero WooCommerce Extension (PHP)
       url: https://github.com/monero-integrations/monerowp
     - name: MyCryptoCheckout
@@ -143,8 +137,6 @@
 - category: Tools
   id: tools
   merchants:
-    - name: Atesti Data Timestamping
-      url: http://atesti.mooo.com:8081
     - name: Atomox - Converter
       url: http://atomox.net/1/XMR/USD
     - name: Cryptoradar (Marketplace comparison website)
@@ -157,8 +149,8 @@
       url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
     - name: MoneroPric.es Price Converter
       url: https://moneropric.es
-    - name: MoneroPrice.com Price Converter
-      url: http://moneroprice.com/
+    - name: Price.exchange Monero Price Converter
+      url: http://monero.price.exchange/
     - name: nestorgames
       url: http://www.nestorgames.com
     - name: Offline Monero address generator
@@ -180,17 +172,13 @@
       url: https://ablative.hosting
     - name: AirVPN
       url: https://airvpn.org/
-    - name: algoStrategic - Internet Marketing and Web Development
-      url: https://algostrategic.com
     - name: Azur Samui - Luxury Apartment and Villa Development, Koh, Samui, Thailand
       url: http://www.azursamui.com
     - name: BunkerVPN (Ethical VPN Provider)
       url: https://bunkervpn.com
     - name: BuyPrivacy
       url: https://www.buyprivacy.net
-    - name: California Fintech Network
-      url: https://www.californiafintech.org/plans/
-      name: Computer Lab - React, Django, Security Consultancy in NYC
+    - name: Computer Lab - React, Django, Security Consultancy in NYC
       url: https://computerlab.io
     - name: cloakVPN.com
       url: https://cloakVPN.com
@@ -210,8 +198,6 @@
       url: https://flokinet.is
     - name: Fork Networking, Inc. - Colocation, Dedicated Servers, VPS
       url: http://www.forked.net/
-    - name: Go Forward Software
-      url: https://www.goforwardsoftware.com
     - name: Gomojomarketing - Web app developers
       url: https://www.gomojomarketing.com/
     - name: Guitar Music Theory course w/ 30% XMR discount
@@ -220,8 +206,6 @@
       url: https://www.hiri.com/crypto/currency/XMR/
     - name: IdeaSoft - Full-cycle Software Development
       url: https://i-deasoft.com
-    - name: Incognito Deals
-      url: https://www.incognitodeals.com
     - name: Ink Rebels
       url: https://ink-rebels.com
     - name: Interactive Developer - Developer/Designer - Online advertising
@@ -256,8 +240,6 @@
       url: https://njal.la/
     - name: Nofraud.co - proxy/VPN/fraudulent IP detection system
       url: https://nofraud.co
-    - name: perpro.ga - personal proxy for anonymous shopping
-      url: https://perpro.ga
     - name: ppcprotect - Online fraud detection platform
       url: https://ppcprotect.com
     - name: Pradeep Atluri, Psychiatrist, New York
@@ -311,8 +293,6 @@
       url: https://www.bitdials.eu
     - name: Cellphone and laptop repair online store in Sweden
       url: http://www.LagaiPhone.se
-    - name: Check-coin - Online store
-      url: https://check-coin.com/
     - name: Chicago Gem Shop - Online gem shop
       url: https://chicagogemshop.com/
     - name: City Map Decor - City map themed home decor
@@ -363,8 +343,6 @@
       url: https://giacobbeandco.com/
     - name: Hammock Universe
       url: https://www.hammockuniverseusa.com/
-    - name: Handcrafted goods
-      url: https://mychain.store/
     - name: Hodlmonkey - Crypto T-Shirts
       url: https://hodlmonkey.com/
     - name: indyBudmarv2
@@ -375,12 +353,12 @@
       url: https://www.keys4coins.com/
     - name: Kidsweet - All-Natural Zero-Calorie Sweetener
       url: https://www.kidsweet.com/
+    - name: Lingot Swiss
+      url: https://lingot-swiss.com/
     - name: Lynx art collection - Artwork engineered to generate emotion
       url: https://lynxartcollection.com/
     - name: Loja do Cabelo - Hair extensions (pt)
       url: https://lojadocabelo.com/
-    - name: Max5dollars - Online shop
-      url: https://www.max5dollars.com/
     - name: MetaDope - Patch & lapel pin manufacturing services
       url: https://metado.pe/
     - name: Miners For Less - ASIC miners
@@ -397,8 +375,6 @@
       url: https://www.vesp.co/Fungible
     - name: Name Chains
       url: https://namechains.myshopify.com
-    - name: Nature Provides - Shilajit
-      url: https://mountain-blood.com/
     - name: One Stop NY
       url: http://onestopny.com
     - name: Para Not-So Normal - Waterpipes and Smoking Supplies
@@ -407,8 +383,6 @@
       url: http://www.projectcoralreef.com/all-stores
     - name: Renjer Snacks
       url: http://www.renjer.ky
-    - name: Reservoir Mugs - Roasted gourmet coffees, mugs, t-shirts
-      url: https://reservoirmugs.com/
     - name: Revolution Microelectronics
       url: https://revolutionmicro.com/
     - name: SecPoint IT Security Products
@@ -423,8 +397,6 @@
       url: https://kavasociety.nz/
     - name: Toys4sex - Adult toys
       url: https://toys4sex.com.au/
-    - name: Urban Detail
-      url: https://urbandetail.com.au/
     - name: Xusah Boutique
       url: https://xusah.boutique/
     - name: Judit Mátyus - Jewelry
