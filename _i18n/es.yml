@@ -527,7 +527,7 @@ library:
       abstract: >
         Una explicación conceptual, comprensiva (y técnica) de Monero.<br>
         Nos esforzamos por enseñar a cualquiera que conozca álgebra básica y conceptos simples de ciencias de la computación, como ‘representación de bits’ de un número, no solamente cómo funciona Monero a un nivel profundo y completo, sino también qué tan útil y bella puede ser la criptografía.
-    - name: "Mastering Monero (Preview)"
+    - name: "Mastering Monero (Vista previa)"
       file: "Mastering-Monero-Preview.pdf"
       abstract: >
         Una guía a través del aparentemente complejo mundo de Monero.<br>
@@ -541,16 +541,16 @@ library:
         Ver el sitio web de <a href="https://masteringmonero.com/">Mastering Monero</a> para información acerca de la versión completa.
   - category: Revistas
     publications:
-    - name: "Revuo Monero Q4 2017"
-      file: "Revuo-2017-Q4.pdf"
+    - name: "Revuo Monero 4T 2017"
+      file: "Revuo-2017-Q4_es.pdf"
       abstract: >
-        Revista trimestral de Monero, edición Q4, 2017.<br>
-        En esta publicacióne, actualizaciones acerca de: desarrollo, Laboratorio de Investigación de Monero, Kovri, y comunidad.
-    - name: "Revuo Monero Q3 2017"
+        Revista trimestral de Monero, edición 4T, 2017.<br>
+        En esta publicación, actualizaciones acerca de: desarrollo, el Laboratorio de Investigación de Monero, Kovri y la comunidad.
+    - name: "Revuo Monero 3T 2017"
       file: "Monero-Revuo-3Q-2017.pdf"
       abstract: >
-        Revista trimestral de Monero, edición Q3, 2017.<br>
-        En esta publicacióne, actualizaciones acerca de: desarrollo, Laboratorio de Investigación de Monero, Kovri, y comunidad, Hardware, y Monerujo.
+        Revista trimestral de Monero, edición 3T, 2017.<br>
+        En esta publicación, actualizaciones acerca de: desarrollo, el Laboratorio de Investigación de Monero, Kovri, la comunidad, Hardware y Monerujo.
 
 moneropedia:
   translated: "yes"
