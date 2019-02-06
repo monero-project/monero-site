@@ -570,6 +570,7 @@ moneropedia:
     blockchain: Blockchain
     block: Block
     bootstrap-node: Bootstrap-Node
+    bulletproofs: Bulletproofs
     canonically-unique-host: Eindeutig zuordenbarer Host
     change: Wechselgeld
     clearnet: Clearnet
