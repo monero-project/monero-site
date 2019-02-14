@@ -81,8 +81,13 @@ module Jekyll
 
         # Getting language from tag, and cleaning it
         if content.include? '@lang_tag_'
-          lang = content[/\@lang_tag_\w{2}/][-2, 2].downcase
-          content = content.gsub(/(\@lang_tag_\w{2}\n)/i, "")
+          if ( content =~ /\@lang_tag_\w{2}-\w{2}/ )
+            lang = content[/\@lang_tag_\w{2}-\w{2}/][-5, 5].downcase;
+            content = content.gsub(/(\@lang_tag_\w{2}-\w{2}\n)/i, "")
+          else
+            lang = content[/\@lang_tag_\w{2}/][-2, 2].downcase;
+            content = content.gsub(/(\@lang_tag_\w{2}\n)/i, "")
+          end
 
           # Jekyll.logger.warn YAML::dump(@@moneropedia_ordered)
           if content.include? '@moneropedia_index'
