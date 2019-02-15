@@ -20,18 +20,20 @@ layout: custom
 		                  <h2 class="inline">{% t tags.all %}: <span class="kicks">{{ tag.name }}</span></h2>
 		                </div>
                     </div>
-                    <div>
+                    
                        {% if site.tags[tag.slug] %}
 				{% for post in site.tags[tag.slug] %}
-				  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-				  <p>
-					{{ post.summary }}
-				  </p>
+                  <div class="post-tag">
+                      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                      <p>
+                        {{ post.summary }}
+                      </p>
+                  </div>
 				{% endfor %}
 			{% else %}
 				<h3>{% t tags.notags %}</h3>
 			{% endif %}
-                    </div>
+                    
                     </div>
                 </div>
                 <!-- end left two-thirds block-->

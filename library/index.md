@@ -10,7 +10,7 @@ permalink: /library/index.html
   </div>
   {% for book in site.translations[site.lang].library.books %}
     <section class="container full">
-      <div class="info-block">
+      <div class="info-block text-adapt">
         <h2>{{ book.category }}</h2>
         <div>
           {% for publication in book.publications %}

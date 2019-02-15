@@ -54,10 +54,10 @@ permalink: /community/team/index.html
                     <h2>{% t team.developers %}</h2>
                     <div class="tabPanel-content">
                         <div class="container full">
-                            <div class="info-block text-adapt">
+                            <div class="info-block">
                                 <div class="row">
-                                    <div class="col-xs-12 text-adapt">
-                                        <p>{% t team.developers_para1 %} <a href="https://www.openhub.net/p/monero/contributors">{% t team.developers_para2 %}</a> {% t team.developers_para3 %}</p>
+                                    <div class="col-xs-12">
+                                        <p class="nopad">{% t team.developers_para1 %} <a href="https://www.openhub.net/p/monero/contributors">{% t team.developers_para2 %}</a> {% t team.developers_para3 %}</p>
                                     </div>
                                 </div>
                             </div>
