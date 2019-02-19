@@ -63,6 +63,8 @@
       url: https://localmonero.co/
     - name: Magnetic Exchange
       url: https://magneticexchange.com
+    - name: MorphToken
+      url: https://www.morphtoken.com/
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: ShapeShift (Instant)
@@ -182,6 +184,8 @@
       url: https://computerlab.io
     - name: cloakVPN.com
       url: https://cloakVPN.com
+    - name: Cryptoho.st - VPS hosting
+      url: https://cryptoho.st/
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
     - name: Domains-Index
@@ -256,6 +260,8 @@
       url: https://smsanon.com/
     - name: Snel - dedicated and VPS hosting
       url: https://www.snel.com/
+    - name: Tactical VPN
+      url: https://meg-it.info/tacticalvpn
     - name: TheBigCoin - Spend Monero Anywhere
       url: https://www.thebigcoin.io
     - name: ThoughtLab - web design, development, and digital marketing
