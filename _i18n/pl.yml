@@ -437,6 +437,7 @@ user-guides:
   restore-from-keys: Przywracanie portfela za pomocą kluczy
   nicehash: Jak wydobywać Monero (XMR) bez sprzętu wydobywczego
   ledger-wallet-cli:
+  multisig-messaging-system:
 
 roadmap:
   translated: "yes"

@@ -436,6 +436,7 @@ user-guides:
   restore-from-keys: إستعاده محفظه من المفاتيح
   nicehash:
   ledger-wallet-cli:
+  multisig-messaging-system:
 
 roadmap:
   translated: "yes"
