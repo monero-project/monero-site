@@ -2,85 +2,85 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: d809acd1ed688a4567716cf199c75b51e696a022e6953df3642a8922a48a734a
+  cli_hash: d65a98eec232219c8aee0023510ce162835cc8e567ff2d54fd23cca1e86f4c86
   gui_url: win64
   gui_hash: ff1b1467dc6252462e5e7818485857ad2ee253712670ff7f5716aa57241577c7
-  cli_version: 0.13.0.4
+  cli_version: 0.14.0.0
   gui_version: 0.13.0.4
-  tag: Beryllium Bullet
+  tag: Boron Butterfly
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: f2034f3dc125097c3ae50dff5b0a46798863fab60da8e4f35e4cb8d7d2202741
+  cli_hash: ca90d2e7bcc61b5983c38d32cab299e62f5e27a0daa95bf1b5b1e5eae4e60e0e
   gui_url: win32
   gui_hash: 50feee5c42c7342140a7e5c95a88d330262bebf3b844817ed49e4be86787795b
-  cli_version: 0.13.0.4
+  cli_version: 0.14.0.0
   gui_version: 0.13.0.4
-  tag: Beryllium Bullet
+  tag: Boron Butterfly
   blockchain: win
 
 - platform: Mac OS X, 64-bit
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: dd859659bf46a11f4bb2de5bddca7c19038758024e32eb7979bc6bf29ef72e56
+  cli_hash: 8307432e7a22da197bc5909e8ac5bbefda6ea5f826ebcc284592d3445dd71009
   gui_url: mac64
   gui_hash: c425f1b984cf00ffd1a9f1322e5da876aa07c106e975ca9fe08ee0a2d2956335
-  cli_version: 0.13.0.4
+  cli_version: 0.14.0.0
   gui_version: 0.13.0.4
-  tag: Beryllium Bullet
+  tag: Boron Butterfly
   blockchain: mac
 
 - platform: Linux, 64-bit
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: 693e1a0210201f65138ace679d1ab1928aca06bb6e679c20d8b4d2d8717e50d6
+  cli_hash: 1e67163de7a924d65f30da251932ab31fdbccf8042d5e04ef63041709eec7854
   gui_url: linux64
   gui_hash: 284d61981204246425a520087723edb65155c89b9cb807750dca8c8687156679
-  cli_version: 0.13.0.4
+  cli_version: 0.14.0.0
   gui_version: 0.13.0.4
-  tag: Beryllium Bullet
+  tag: Boron Butterfly
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: 3f02b0de407f944e524afc9d53d7e9ce92bf17ac6e6ef92cd3c22346afc2cb6c
+  cli_hash: f452f4ab594c8ae7b93bd845dac8d6c0384498736711af2e8fcc8a5b2e628de0
   gui_url: linux32
   gui_hash: 53750002c3f630457a397ef097929eb3eaa204ac393ff65ef1a05916872eb788
-  cli_version: 0.13.0.4
+  cli_version: 0.14.0.0
   gui_version: 0.13.0.4
-  tag: Beryllium Bullet
+  tag: Boron Butterfly
   blockchain: linux
 
 - platform: FreeBSD, 64-bit
   id: bsd
   icon: icon-freebsd
   cli_url: freebsd64
-  cli_hash: 95bbf57dcae4810077012835a8d369cf3ecac6e1be7b484d0d518c09868a0377
-  version: 0.13.0.4
-  tag: Beryllium Bullet
+  cli_hash: d91c3fff2d120b9ad867e49b4d4834dbeacdfba6e55c9f7cbbc74e72a48d3d66
+  version: 0.14.0.0
+  tag: Boron Butterfly
   blockchain: freebsd
-
-- platform: ARMv7
-  id: arm
-  icon: icon-arm
-  cli_url: linuxarm7
-  cli_hash: 65e2ce5d0abf80ed3b4ecef5babc37445dc4f032457811aafa8a221af78f554a
-  version: 0.13.0.4
-  tag: Beryllium Bullet
-  blockchain: arm
 
 - platform: ARMv8
   id: arm
   icon: icon-arm
   cli_url: linuxarm8
-  cli_hash: 7158380839f41ef7b25f303d5c01cab0deeec96c26fde5bf4aaac6798d114bb9
-  version: 0.13.0.4
-  tag: Beryllium Bullet
+  cli_hash: 331ca2aa42e849ba0e69d2a2c52b9bec63e3f1793ff6c7a6a137cedc1b0d1980
+  version: 0.14.0.0
+  tag: Boron Butterfly
+  blockchain: arm
+
+- platform: ARMv7
+  id: arm
+  icon: icon-arm
+  cli_url: linuxarm7
+  cli_hash: caa37b27f0cd4dbe8a932cb2fee8c7e0713ce55759a72120310da1d675e61cd0
+  version: 0.14.0.0
+  tag: Boron Butterfly
   blockchain: arm
 
 - platform: Source Code & Blockchain
