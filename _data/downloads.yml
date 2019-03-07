@@ -2,10 +2,10 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: d65a98eec232219c8aee0023510ce162835cc8e567ff2d54fd23cca1e86f4c86
+  cli_hash: ee68ef8d4b3309cca9e68ee272919c222021804e493c2549c910ef370dfe595a
   gui_url: win64
   gui_hash: ff1b1467dc6252462e5e7818485857ad2ee253712670ff7f5716aa57241577c7
-  cli_version: 0.14.0.0
+  cli_version: 0.14.0.2
   gui_version: 0.13.0.4
   tag: Boron Butterfly
   blockchain: win
@@ -13,10 +13,10 @@
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: ca90d2e7bcc61b5983c38d32cab299e62f5e27a0daa95bf1b5b1e5eae4e60e0e
+  cli_hash: e471015b4851aef259758fc6a98805655c69db53f29b68362f63dccb496f6e55
   gui_url: win32
   gui_hash: 50feee5c42c7342140a7e5c95a88d330262bebf3b844817ed49e4be86787795b
-  cli_version: 0.14.0.0
+  cli_version: 0.14.0.2
   gui_version: 0.13.0.4
   tag: Boron Butterfly
   blockchain: win
@@ -25,10 +25,10 @@
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: 8307432e7a22da197bc5909e8ac5bbefda6ea5f826ebcc284592d3445dd71009
+  cli_hash: 255ae412daa04a0e0143325a7763e0574a27e7be86f4ef48582efde9fc07241c
   gui_url: mac64
   gui_hash: c425f1b984cf00ffd1a9f1322e5da876aa07c106e975ca9fe08ee0a2d2956335
-  cli_version: 0.14.0.0
+  cli_version: 0.14.0.2
   gui_version: 0.13.0.4
   tag: Boron Butterfly
   blockchain: mac
@@ -37,10 +37,10 @@
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: 1e67163de7a924d65f30da251932ab31fdbccf8042d5e04ef63041709eec7854
+  cli_hash: 4dd5cd9976eda6b33b16821e79e671527b78a1c9bfb3d973efe84b824642dd21
   gui_url: linux64
   gui_hash: 284d61981204246425a520087723edb65155c89b9cb807750dca8c8687156679
-  cli_version: 0.14.0.0
+  cli_version: 0.14.0.2
   gui_version: 0.13.0.4
   tag: Boron Butterfly
   blockchain: linux
@@ -48,10 +48,10 @@
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: f452f4ab594c8ae7b93bd845dac8d6c0384498736711af2e8fcc8a5b2e628de0
+  cli_hash: be6ad1de8f16bdeeaf5f4f36f93dcaad97eaa8ff02449b7fffed1abe21605e0e
   gui_url: linux32
   gui_hash: 53750002c3f630457a397ef097929eb3eaa204ac393ff65ef1a05916872eb788
-  cli_version: 0.14.0.0
+  cli_version: 0.14.0.2
   gui_version: 0.13.0.4
   tag: Boron Butterfly
   blockchain: linux
@@ -60,8 +60,8 @@
   id: bsd
   icon: icon-freebsd
   cli_url: freebsd64
-  cli_hash: d91c3fff2d120b9ad867e49b4d4834dbeacdfba6e55c9f7cbbc74e72a48d3d66
-  version: 0.14.0.0
+  cli_hash: 3fc84b1ca32d99d436d304ee1401e911bbc1b0e1fc0314dc3f879df15e8428f3
+  version: 0.14.0.2
   tag: Boron Butterfly
   blockchain: freebsd
 
@@ -69,8 +69,8 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm8
-  cli_hash: 331ca2aa42e849ba0e69d2a2c52b9bec63e3f1793ff6c7a6a137cedc1b0d1980
-  version: 0.14.0.0
+  cli_hash: 6558f4cff51a1f25c9979a57fc31edd46caaaeda18c81c76e1dc6c94144525c6
+  version: 0.14.0.2
   tag: Boron Butterfly
   blockchain: arm
 
@@ -78,8 +78,8 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: caa37b27f0cd4dbe8a932cb2fee8c7e0713ce55759a72120310da1d675e61cd0
-  version: 0.14.0.0
+  cli_hash: f0e3d82354a9a25776bd2081f2bb1c081a8589ffb783e765ec974d211174236a
+  version: 0.14.0.2
   tag: Boron Butterfly
   blockchain: arm
 
