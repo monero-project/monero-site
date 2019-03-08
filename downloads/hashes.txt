@@ -15,21 +15,22 @@ monero-linux-armv8-v0.14.0.2.tar.bz2, 6558f4cff51a1f25c9979a57fc31edd46caaaeda18
 monero-linux-armv7-v0.14.0.2.tar.bz2, f0e3d82354a9a25776bd2081f2bb1c081a8589ffb783e765ec974d211174236a
 monero-freebsd-x64-v0.14.0.2.tar.bz2, 3fc84b1ca32d99d436d304ee1401e911bbc1b0e1fc0314dc3f879df15e8428f3
 
-monero-gui-win-x64-v0.13.0.4.zip, ff1b1467dc6252462e5e7818485857ad2ee253712670ff7f5716aa57241577c7
-monero-gui-win-x86-v0.13.0.4.zip, 50feee5c42c7342140a7e5c95a88d330262bebf3b844817ed49e4be86787795b
-monero-gui-mac-x64-v0.13.0.4.tar.bz2, c425f1b984cf00ffd1a9f1322e5da876aa07c106e975ca9fe08ee0a2d2956335
-monero-gui-linux-x64-v0.13.0.4.tar.bz2, 284d61981204246425a520087723edb65155c89b9cb807750dca8c8687156679
-monero-gui-linux-x86-v0.13.0.4.tar.bz2, 53750002c3f630457a397ef097929eb3eaa204ac393ff65ef1a05916872eb788
+monero-gui-win-x64-v0.14.0.0.zip, c23c849a2a970370f2bf7e22aae34f633f51d8490b6130337e5fe9369aff77e0
+monero-gui-mac-x64-v0.14.0.0.tar.bz2, b5d8150e5dc5edf4463eecd6a05faab1d868d04947181ef14db25f68eb238ea1
+monero-gui-linux-x64-v0.14.0.0.tar.bz2, 3d03da7d1c6c6b8f0193729ac4e6b31788ee0aea9890e85770e8d62f3ec2558b
+monero-gui-linux-x86-v0.14.0.0.tar.bz2, b711e0b7222c3c701e3b9aa552fcb9d04425dfea2d04671409ea471f2b2c2dc2
+
+monero-gui-install-win-x64-v0.14.0.0.exe, c1f7674055d72eefcf7e2a069d619125db67f5d006773e598047af8abb00612f
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlyBb88ACgkQVUMt8xzN
-T81lFggAmkdZegCtteVy/MKxENcyWxA0UujYeMLGv3gXQRoWfZg/Tyu9TrSBpROq
-75Q5iwe3myrHzbpQkGeMCGdSFyNcqu0C5KYNH99nQA4jXrloxI6ZdRvDh0QhEOd4
-FcLTuAVdiLJwk8tQkqDldbDMzkfuICp3YFiXLHgi1vqVaqekLl3lKcMt17/BuQnz
-7uwFCWxwo8a5ReTR7UoclCUHNYQ1+OVioUBXcb3iNc4wEnHkoLIkd96PAHixEKWl
-WPW32MTOBvrupRNMm1puIdNc6+jIsl85qvPe+JZRa/nc0QzRkIeUlQoWmCqVxlEi
-EHpwoLOg5Hl/x2C4a9r6JD8/bdlUrA==
-=libN
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlyClo0ACgkQVUMt8xzN
+T821zggAoY6a6vHhs3p25i/KmSai1uVSrO9whFeE2l6fBXdhLfyP/Rvq/D72BtOe
+MWRxp162eCOcJzG8JwqLLfPcokPgYgb3RA1uoINkei3U4/Cu+rK2ktJCw1psjQwT
+Ad9K1h8Axow6mTF2OXo0Kvvz7sUrrJDJNXQYDiI5dY7DZHzlesRmFqvR6ZxShHJl
+WoetEZznX3rFSeLaMv5aaUQJY1D/9/8oq3ER5j80btCnkctt49Jfabj9N5PweT9k
+9g5a4HtH6MTMQaDnTzW1RsQOjv7Iqw6SkN5BFAAA6NYvJHuMcNn8Abe89lUfrPcc
+GnoHyvipxf6/SqgJ3vyiCz7YhPn2wQ==
+=yvc0
 -----END PGP SIGNATURE-----
