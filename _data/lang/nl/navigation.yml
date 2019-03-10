@@ -1,0 +1,54 @@
+- title: Aan de slag
+  subfolderitems:
+  - page: Wat is Monero?
+    url: get-started/what-is-monero
+  - page: Gebruiken
+    url: get-started/using
+  - page: Accepteren
+    url: get-started/accepting
+  - page: Bijdragen
+    url: get-started/contributing
+  - page: Minen
+    url: get-started/mining
+  - page: FAQ
+    url: get-started/faq
+- title: Downloads
+  url: downloads/
+- title: Nieuws
+  subfolderitems:
+    - page: Alles
+      url: blog
+    - page: Missives
+      url: blog/tags/monero%20missives.html
+    - page: Vergaderingen
+      url: blog/tags/dev%20diaries.html
+    - page: Releases
+      url: blog/tags/releases.html
+- title: Community
+  subfolderitems:
+  - page: Team
+    url: community/team
+  - page: Ontmoetingsplekken
+    url: community/hangouts
+  - page: Sponsors
+    url: community/sponsorships
+  - page: Verkopers
+    url: community/merchants
+- title: Informatie
+  subfolderitems:
+  - page: Over Monero
+    url: resources/about/
+  - page: Planning
+    url: resources/roadmap
+  - page: Research Lab
+    url: resources/research-lab
+  - page: Moneropedia
+    url: resources/moneropedia
+  - page: Gebruikershandleidingen
+    url: resources/user-guides
+  - page: Handleidingen voor ontwikkelaars
+    url: resources/developer-guides
+  - page: Technische specificaties
+    url: technical-specs
+  - page: Bibliotheek
+    url: library

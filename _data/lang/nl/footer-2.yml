@@ -1,0 +1,6 @@
+- name: Juridisch
+  url: legal
+- name: Broncode
+  url: https://github.com/monero-project
+- name: Technische specificaties
+  url: technical-specs/
