@@ -1,0 +1,120 @@
+- year: 2014
+  accomplishments:
+    - name: Gestart op Bitcointalk
+      date: 2014-04-18
+      status: completed
+    - name: Naam veranderd van Bitmonero in Monero
+      date: 2014-04-23
+      status: completed
+    - name: Hersteld van een spamaanval
+      date: 2014-09-04
+      status: completed
+    - name: Papers 1 en 2 van het Monero Research Lab gepubliceerd
+      date: 2014-09-12
+      status: completed
+    - name: Paper 3 van het Monero Research Lab gepubliceerd
+      date: 2014-09-25
+      status: completed
+    - name: Versie 0.8.8.6
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: Paper 4 van het Monero Research Lab gepubliceerd
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: Versie 0.9.0 Hydrogen Helix
+      date: 2016-01-01
+      status: completed
+    - name: Paper 5 van het Monero Research Lab gepubliceerd
+      date: 2016-02-10
+      status: completed
+    - name: Netwerkupgrade waardoor minimale ringgrootte van 3 verplicht wordt voor alle transacties
+      date: 2016-03-22
+      status: completed
+    - name: Versie 0.10.0 Wolfram Warptangent
+      date: 2016-09-18
+      status: completed
+    - name: Netwerkupgrade om coinbase te splitsen in coupures
+      date: 2016-09-21
+      status: completed
+    - name: Versie 0.10.1 Wolfram Warptangent
+      date: 2016-12-14
+      status: completed
+    - name: Officiële GUI bèta 1
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: Netwerkupgrade om RingCT-transacties mogelijk te maken
+      date: 2017-01-05
+      status: completed
+    - name: Versie 0.10.2, met een patch voor een kritiek beveiligingsprobleem
+      date: 2017-02-22
+      status: completed
+    - name: Versie 0.10.3.1 Wolfram Warptangent
+      date: 2017-03-27
+      status: completed
+    - name: Netwerkupgrade om minimale blokgrootte en dynamische transactiekosten aan te passen
+      date: 2017-04-15
+      status: completed
+    - name: Nieuw ontwerp van de website
+      date: 2017-07-04
+      status: completed
+    - name: Versie 0.11.0.0 Helium Hydra
+      date: 2017-09-07
+      status: completed
+    - name: Fluffy blocks
+      date: 2017-09-07
+      status: completed
+    - name: GUI niet meer bèta
+      date: 2017-09-10
+      status: completed
+    - name: Netwerkupgrade voor minimale ringgrootte van 5 en verplichte RingCT-transacties
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September 2017
+      status: completed
+    - name: Subadressen
+      date: Oktober 2017
+      status: completed
+    - name: Meerdere handtekeningen (multisig)
+      date: December 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: Nieuw proof-of-workalgoritme CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: Netwerkupgrade: minimale ringgrootte verhogen naar 7, multisig integreren, subadressen, PoW-algoritme wijzigen
+      date: 2018-04-06
+      status: completed
+    - name: Getmonero.org vertaald in het Frans en Pools
+      date: 2018-04-24
+      status: completed
+    - name: Ondersteuning van de hardwarewallet Ledger
+      date: 2018-06-04
+      status: completed
+    - name: Alfa-release van Kovri
+      date: 2018-08-01
+      status: completed
+    - name: Nieuw ontwerp Forum Funding System
+      date:
+      status: ongoing
+    - name: Implementatie van BulletProofs in plaats van RingCT om transacties kleiner te maken
+      date:
+      status: ongoing
+    - name: Integratie van Kovri
+      date:
+      status: upcoming
+- year: 2019
+  accomplishments:
+    - name: Oplossingen op de tweede laag voor snelheid en schaalbaarheid
+      date:
+      status: upcoming
+    - name: Meer onderzoeksartikelen van MRL
+      date:
+      status: upcoming
