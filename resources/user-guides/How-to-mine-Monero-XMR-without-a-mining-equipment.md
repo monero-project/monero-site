@@ -3,7 +3,7 @@ layout: user-guide
 title: "How to mine Monero XMR without a mining equipment"
 permalink: /resources/user-guides/How-to-mine-Monero-XMR-without-a-mining-equipment.html
 mainVersion:
-  - "1"
+  - "3"
   - "1"
   - "0"
 ---
