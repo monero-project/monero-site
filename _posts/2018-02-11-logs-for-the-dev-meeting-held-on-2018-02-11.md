@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview and Logs for the Dev Meeting Held on 2018-01-28
+title: Overview and Logs for the Dev Meeting Held on 2018-02-11
 summary: Discussion of open PRs and issues, Bulletproofs and auditing, March HF, slight PoW tweak, dedicated Monero hardware wallet, and miscellaneous
 tags: [dev diaries, core, crypto]
 author: dEBRUYNE / fluffypony
