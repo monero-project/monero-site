@@ -1,4 +1,4 @@
-{% assign version = '2.1.0' | split: '.' %}
+{% assign version = '2.1.1' | split: '.' %}
 {% include disclaimer.html translated="false" version=page.version %}
 ## Introduction
 
@@ -575,8 +575,8 @@ Inputs:
 * *account_index* - unsigned int; (Optional) Transfer from this account index. (Defaults to 0)
 * *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to 0)
 * *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
-* *mixin* - unsigned int; Number of outpouts from the blockchain to mix with (0 means no mixing).
-* *ring_size* - unsigned int; Number of outpouts to mix in the transaction (this output + N decoys from the blockchain).
+* *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
+* *ring_size* - unsigned int; Number of outputs to mix in the transaction (this output + N decoys from the blockchain).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
@@ -1203,7 +1203,7 @@ Alias: *None*.
 Inputs:
 
 * *standard_address* - string; (Optional, defaults to primary address) Destination public address.
-* *payment_id* - string; 16 characters hex encoded; can't be empty.
+* *payment_id* - string; (Optional, defaults to a random ID) 16 characters hex encoded.
 
 Outputs:
 
@@ -1213,7 +1213,7 @@ Outputs:
 Example (Payment ID is empty, use a random ID):
 
 ```
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"standard_address":"55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt","payment_id":"420fa29b2d9a49f5"}}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"make_integrated_address","params":{"standard_address":"55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt"}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1282,7 +1282,8 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **rescan_blockchain**
 
-Rescan blockchain from scratch.
+Rescan the blockchain from scratch, losing any information which can not be recovered from the blockchain itself.  
+This includes destination addresses, tx secret keys, tx notes, etc.
 
 Alias: *None*.
 
@@ -1569,7 +1570,7 @@ Inputs:
 
 Outputs:
 
-* *signature* - string; transaction signature.
+* *signature* - string; spend signature.
 
 Example:
 
@@ -1595,11 +1596,11 @@ Inputs:
 
 * *txid* - string; transaction id.
 * *message* - string; (Optional) Should be the same message used in `get_spend_proof`.
-* *signature* - string; transaction signature to confirm.
+* *signature* - string; spend signature to confirm.
 
 Outputs:
 
-* *good* - boolean; States if the inputs proves the transaction.
+* *good* - boolean; States if the inputs proves the spend.
 
 In the example below, the spend has been proven:
 
@@ -1643,7 +1644,7 @@ Inputs:
 
 Outputs:
 
-* *signature* - string; transaction signature.
+* *signature* - string; reserve signature.
 
 Example:
 
@@ -1661,7 +1662,7 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **check_reserve_proof**
 
-Proves a wallet as a disposable reserve using a signature.
+Proves a wallet has a disposable reserve using a signature.
 
 Alias: *None*.
 
@@ -1669,11 +1670,11 @@ Inputs:
 
 * *address* - string; Public address of the wallet.
 * *message* - string; (Optional) Should be the same message used in `get_reserve_proof`.
-* *signature* - string; transaction signature to confirm.
+* *signature* - string; reserve signature to confirm.
 
 Outputs:
 
-* *good* - boolean; States if the inputs proves the transaction.
+* *good* - boolean; States if the inputs proves the reserve.
 
 In the example below, the reserve has been proven:
 
@@ -1705,7 +1706,7 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 }
 ```
 
-In the example below, the wrong message is used, avoiding the transaction to be proved:
+In the example below, the wrong message is used, avoiding the reserve to be proved:
 
 ```
 $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"check_spend_proof","params":{"txid":"19d5089f9469db3d90aca9024dfcb17ce94b948300101c8345a5e9f7257353be","message":"wrong message","signature":"SpendProofV1aSh8Todhk54736iXgV6vJAFP7egxByuMWZeyNDaN2JY737S95X5zz5mNMQSuCNSLjjhi5HJCsndpNWSNVsuThxwv285qy1KkUrLFRkxMSCjfL6bbycYN33ScZ5UB4Fzseceo1ndpL393T1q638VmcU3a56dhNHF1RPZFiGPS61FA78nXFSqE9uoKCCoHkEz83M1dQVhxZV5CEPF2P6VioGTKgprLCH9vvj9k1ivd4SX19L2VSMc3zD1u3mkR24ioETvxBoLeBSpxMoikyZ6inhuPm8yYo9YWyFtQK4XYfAV9mJ9knz5fUPXR8vvh7KJCAg4dqeJXTVb4mbMzYtsSZXHd6ouWoyCd6qMALdW8pKhgMCHcVYMWp9X9WHZuCo9rsRjRpg15sJUw7oJg1JoGiVgj8P4JeGDjnZHnmLVa5bpJhVCbMhyM7JLXNQJzFWTGC27TQBbthxCfQaKdusYnvZnKPDJWSeceYEFzepUnsWhQtyhbb73FzqgWC4eKEFKAZJqT2LuuSoxmihJ9acnFK7Ze23KTVYgDyMKY61VXADxmSrBvwUtxCaW4nQtnbMxiPMNnDMzeixqsFMBtN72j5UqhiLRY99k6SE7Qf5f29haNSBNSXCFFHChPKNTwJrehkofBdKUhh2VGPqZDNoefWUwfudeu83t85bmjv8Q3LrQSkFgFjRT5tLo8TMawNXoZCrQpyZrEvnodMDDUUNf3NL7rxyv3gM1KrTWjYaWXFU2RAsFee2Q2MTwUW7hR25cJvSFuB1BX2bfkoCbiMk923tHZGU2g7rSKF1GDDkXAc1EvFFD4iGbh1Q5t6hPRhBV8PEncdcCWGq5uAL5D4Bjr6VXG8uNeCy5oYWNgbZ5JRSfm7QEhPv8Fy9AKMgmCxDGMF9dVEaU6tw2BAnJavQdfrxChbDBeQXzCbCfep6oei6n2LZdE5Q84wp7eoQFE5Cwuo23tHkbJCaw2njFi3WGBbA7uGZaGHJPyB2rofTWBiSUXZnP2hiE9bjJghAcDm1M4LVLfWvhZmFEnyeru3VWMETnetz1BYLUC5MJGFXuhnHwWh7F6r74FDyhdswYop4eWPbyrXMXmUQEccTGd2NaT8g2VHADZ76gMC6BjWESvcnz2D4n8XwdmM7ZQ1jFwhuXrBfrb1dwRasyXxxHMGAC2onatNiExyeQ9G1W5LwqNLAh9hvcaNTGaYKYXoceVzLkgm6e5WMkLsCwuZXvB"}}' -H 'Content-Type: application/json'
@@ -1953,7 +1954,7 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **import_outputs**
 
-Export all outputs in hex format.
+Import outputs in hex format.
 
 Alias: *None*.
 
@@ -2056,7 +2057,7 @@ Alias: *None*.
 Inputs:
 
 * *address* - string; Wallet address
-* *amount* - unsigned int; (optional) the integer amount to receive, in **atomic** units
+* *amount* - unsigned int; (optional) the integer amount to receive, in **@atomic-units**
 * *payment_id* - string; (optional) 16 or 64 character hexadecimal payment id
 * *recipient_name* - string; (optional) name of the payment recipient
 * *tx_description* - string; (optional) Description of the reason for the tx
@@ -2093,7 +2094,7 @@ Outputs:
 
 * *uri* - JSON object containing payment information:
   * *address* - string; Wallet address
-  * *amount* - unsigned int; Decimal amount to receive, in **coin** units (0 if not provided)
+  * *amount* - unsigned int; Integer amount to receive, in **@atomic-units** (0 if not provided)
   * *payment_id* - string; 16 or 64 character hexadecimal payment id (empty if not provided)
   * *recipient_name* - string; Name of the payment recipient (empty if not provided)
   * *tx_description* - string; Description of the reason for the tx (empty if not provided)

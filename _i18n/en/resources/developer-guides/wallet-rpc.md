@@ -1,4 +1,4 @@
-{% assign version = '2.1.0' | split: '.' %}
+{% assign version = '2.1.1' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
@@ -2057,7 +2057,7 @@ Alias: *None*.
 Inputs:
 
 * *address* - string; Wallet address
-* *amount* - unsigned int; (optional) the integer amount to receive, in **atomic** units
+* *amount* - unsigned int; (optional) the integer amount to receive, in **@atomic-units**
 * *payment_id* - string; (optional) 16 or 64 character hexadecimal payment id
 * *recipient_name* - string; (optional) name of the payment recipient
 * *tx_description* - string; (optional) Description of the reason for the tx
@@ -2094,7 +2094,7 @@ Outputs:
 
 * *uri* - JSON object containing payment information:
   * *address* - string; Wallet address
-  * *amount* - unsigned int; Decimal amount to receive, in **coin** units (0 if not provided)
+  * *amount* - unsigned int; Integer amount to receive, in **@atomic-units** (0 if not provided)
   * *payment_id* - string; 16 or 64 character hexadecimal payment id (empty if not provided)
   * *recipient_name* - string; Name of the payment recipient (empty if not provided)
   * *tx_description* - string; Description of the reason for the tx (empty if not provided)

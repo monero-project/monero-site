@@ -5,7 +5,7 @@ permalink: /resources/developer-guides/wallet-rpc.html
 mainVersion:
   - "2"
   - "1"
-  - "0"
+  - "1"
 ---
 {% t global.lang_tag %}
 {% tf resources/developer-guides/wallet-rpc.md %}
