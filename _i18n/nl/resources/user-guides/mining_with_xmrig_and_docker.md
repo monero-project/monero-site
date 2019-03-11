@@ -8,7 +8,7 @@ Aan het eind van deze handleiding kun je er gerust op zijn dat je besturingssyst
 
 ### Waarom Docker?
 
-Hierbij gebruiken we [Docker](https://www.docker.com/), want dat is de bekendste containertechnologie, met de grootste kans dat het al is geïnstalleerd.
+Hierbij gebruiken we [Docker](https://www.docker.com/), want dat is de bekendste containertechnologie, met de grootste kans dat het al is geÃ¯nstalleerd.
 
 De container die ik gebruik is [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/). Zoals de naam aangeeft, is deze gebaseerd op de distributie [Alpine Linux](https://www.alpinelinux.org/).
 

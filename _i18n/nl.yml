@@ -1,4 +1,4 @@
-﻿langs:
+langs:
   en: English
   es: Español
   it: Italiano
@@ -176,6 +176,7 @@ downloads:
   note2: en die vormt de officiële lijst, waarbij je de ondertekening controleert op basis van de toepasselijke GPG-sleutel in de broncode (in /utils/gpg_keys).
   currentversion: Huidige versie
   sourcecode: Broncode
+  mirror: Mirror
   blockchain1: Als je de blockchain liever niet vanaf het begin synchroniseert maar een bootstrap-bestand wil downloaden, kun je
   blockchain2: via deze link de meest recente bootstrap vinden.
   blockchain3: Maar het is meestal veel sneller om vanaf het begin te synchroniseren, en dit kost ook veel minder RAM (het importeren vreet werkgeheugen).
@@ -198,7 +199,7 @@ monero-project:
 press-kit:
   translated: "yes"
   intro1: Hieronder vind je het symbool en logo van Monero. Je kunt de gewenste grootte kiezen of het .ai-bestand downloaden om het logo zelf te bewerken.
-  intro2: Let op: de opties met een witte achtergrond hebben ALLEEN een witte achtergrond onder het Monero-symbool, niet als achtergrond voor de hele afbeelding.
+  intro2: "Let op: de opties met een witte achtergrond hebben ALLEEN een witte achtergrond onder het Monero-symbool, niet als achtergrond voor de hele afbeelding."
   intro3: Tenslotte kun je alles op deze pagina in een zip downloaden door
   intro4: hier te klikken.
   noback: Geen achtergrond
@@ -265,7 +266,7 @@ contributing:
   ffs: Bekijk het Forum Funding System
   ffs_para1: Monero gebruikt een
   ffs_para2: forum funding system
-  waarbij projecten worden voorgesteld en door de community gefinancierd. De financiering wordt in bewaring gehouden en uitgekeerd aan de ontwikkelaars nadat ze een mijlpaal hebben bereikt. Iedereen kan een nieuw voorstel doen of projecten financieren.
+  ffs_para3: waarbij projecten worden voorgesteld en door de community gefinancierd. De financiering wordt in bewaring gehouden en uitgekeerd aan de ontwikkelaars nadat ze een mijlpaal hebben bereikt. Iedereen kan een nieuw voorstel doen of projecten financieren.
   donate: Doneren
   donate_para1: Het ontwikkelen van Monero wordt ondersteund door giften en
   donate_para2: sponsoring.
@@ -328,12 +329,12 @@ mining:
   benchmarking_para1: Kijk hier
   benchmarking_para2: voor een lijst met videokaarten/CPU's en de bijbehorende hashrate.
   software: Miningsoftware
-  software_para: Let op: bij sommige miningprogramma's krijgen de ontwikkelaars een vergoeding.
+  software_para: "Let op: bij sommige miningprogramma's krijgen de ontwikkelaars een vergoeding."
 
 using:
   translated: "yes"
   intro: Betalen met Monero kan heel makkelijk zijn. Deze pagina helpt je daarbij.
-  learn: 1. Leren
+  learn: "1. Leren"
   learn_para1: Monero is een veilige, vertrouwelijke en niet volgbare cryptovaluta. De ontwikkelaars en de community staan voor het handhaven van deze waarden. Je kunt meer leren door de pagina
   learn_para2: Wat is Monero?
   learn_para3: te lezen. De
@@ -355,9 +356,9 @@ using:
   acquire: 4. Monero kopen
   acquire_para1: Monero kun je kopen bij een
   acquire_para2: exchange
-  acquire_para3: met euro's, dollars of andere cryptovaluta. Een andere manier om aan Monero te komen is door te
+  acquire_para3: "met euro's, dollars of andere cryptovaluta. Een andere manier om aan Monero te komen is door te"
   acquire_para4: minen
-  - het uitvoeren van uitvoerige berekeningen waardoor transacties onveranderlijk worden vastgelegd op de blockchain.
+  acquire_para5: het uitvoeren van uitvoerige berekeningen waardoor transacties onveranderlijk worden vastgelegd op de blockchain.
   send-receive: 5. Monero verzenden en ontvangen
   send-receive_para1: Hoe je Monero verzendt en ontvangt lees je in de
   send-receive_para2: handleiding.
@@ -384,7 +385,7 @@ what-is-monero:
   grassroots_para4: Het Monero Research Lab, het Core Development Team en de andere ontwikkelaars verleggen steeds de grenzen van wat mogelijk is met privacy en beveiliging van cryptovaluta.
   grassroots_para5: Monero is geen bedrijf. Het wordt ontwikkeld door experts in cryptografie en gedistribueerde systemen van over de hele wereld, die zonder vergoeding werken of worden gefinancierd door giften van de community. Hierdoor kan Monero niet worden verboden door een bepaald land of beperkt in een bepaald rechtsgebied.
   electronic: Monero is elektronisch geld voor wereldwijde snelle, goedkope betalingen.
-  electronic_para1: Er zijn geen 'valutadagen' en er is geen risico van frauduleuze terugboekingen. Er zijn geen kapitaalrestricties mogelijk: maatregelen die het gebruik van traditionele valuta's beperken, soms in extreme mate, in landen met een instabiele economie.
+  electronic_para1: "Er zijn geen 'valutadagen' en er is geen risico van frauduleuze terugboekingen. Er zijn geen kapitaalrestricties mogelijk: maatregelen die het gebruik van traditionele valuta's beperken, soms in extreme mate, in landen met een instabiele economie."
   videos: Video's over Monero (Engels)
 
 about:
@@ -438,6 +439,7 @@ user-guides:
   restore-from-keys: Portemonnee herstellen met sleutels
   nicehash: Monero (XMR) minen zonder miningapparatuur
   ledger-wallet-cli: Een Monero-portemonnee op een Ledger maken met de opdrachtregel (monero-wallet-cli)
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
 
 roadmap:
   translated: "yes"
@@ -461,9 +463,9 @@ research-lab:
   mrl3: Monero is Not That Mysterious
   mrl3_abstract: Er is onlangs her en der op het internet angst gezaaid over de CryptoNote-broncode en het CryptoNote-protocol, op grond van het feit dat het ingewikkelder is dan bijvoorbeeld Bitcoin. Met deze notitie is wil ik enkele misverstanden ophelderen en hopelijk iets van het mysterie rond de ring-handtekeningen van Monero wegnemen. Om te beginnen vergelijk ik de wiskunde in de ring-handtekeningen van CryptoNote (zoals beschreven in [CN]) met de wiskunde in [FS] waarop CryptoNote is gebaseerd. Vervolgens vergelijk ik de wiskunde van de ring-handtekening met wat werkelijk in de CryptoNote-broncode staat.
   mrl4: Improving Obfuscation in the CryptoNote Protocol
-  mrl4_abstract: We beschrijven verschillende aanvallen met blockchain-analyse waarmee de onvolgbaarheid van het protocol CryptoNote 2.0 zou kunnen worden aangetast. We analyseren mogelijke oplossingen, bespreken de voor- en nadelen van deze oplossingen en we raden verbeteringen van het Monero-protocol aan waarmee deze cryptovaluta op de lange termijn hopelijk beter bestand zal zijn tegen blockchain-analyse. Onze aanbevolen verbeteringen van Monero zijn onder meer: een minimale mixin van n = 2 externe outputs per ring-handtekening op protocolniveau voor het hele netwerk, een verhoging van deze waarde tot n = 4 op protocolniveau na twee jaar, en voorlopig een standaardwaarde van n = 4 op het niveau van de portemonnee. We raden ook aan om Monero-uitvoer te verzenden in de vorm van een torrent. Verder bespreken we een niet-uniforme, leeftijdsafhankelijke methode om mixins te selecteren, waarmee de andere vormen van blockchain-analyse die hier zijn vermeld, kunnen worden vermeden, maar om verschillende redenen doen we geen formele aanbevelingen over het implementeren hiervan. De consequenties van deze verbeteringen worden ook uitgelegd. Dit onderzoeksbulletin is niet onderworpen aan peer review en geeft alleen de resultaten van intern onderzoek weer.
+  mrl4_abstract: "We beschrijven verschillende aanvallen met blockchain-analyse waarmee de onvolgbaarheid van het protocol CryptoNote 2.0 zou kunnen worden aangetast. We analyseren mogelijke oplossingen, bespreken de voor- en nadelen van deze oplossingen en we raden verbeteringen van het Monero-protocol aan waarmee deze cryptovaluta op de lange termijn hopelijk beter bestand zal zijn tegen blockchain-analyse. Onze aanbevolen verbeteringen van Monero zijn onder meer: een minimale mixin van n = 2 externe outputs per ring-handtekening op protocolniveau voor het hele netwerk, een verhoging van deze waarde tot n = 4 op protocolniveau na twee jaar, en voorlopig een standaardwaarde van n = 4 op het niveau van de portemonnee. We raden ook aan om Monero-uitvoer te verzenden in de vorm van een torrent. Verder bespreken we een niet-uniforme, leeftijdsafhankelijke methode om mixins te selecteren, waarmee de andere vormen van blockchain-analyse die hier zijn vermeld, kunnen worden vermeden, maar om verschillende redenen doen we geen formele aanbevelingen over het implementeren hiervan. De consequenties van deze verbeteringen worden ook uitgelegd. Dit onderzoeksbulletin is niet onderworpen aan peer review en geeft alleen de resultaten van intern onderzoek weer."
   mrl5: Ring Signature Confidential Transactions
-  mrl5_abstract: In dit artikel wordt een methode geïntroduceerd voor het verbergen van transactiebedragen in de sterk gedecentraliseerde anonieme cryptovaluta Monero. Net als Bitcoin is Monero een cryptovaluta die wordt verspreid via een proces van *mining* voor *proof of work*. Het oorspronkelijke Monero-protocol was gebaseerd op CryptoNote, waarin ring-handtekeningen en eenmalige sleutels worden gebruikt om de herkomst en bestemming van transacties te verbergen. Onlangs heeft Bitcoin Core-ontwikkelaar Gregory Maxwell een methode besproken en geïmplementeerd om het bedrag van een transactie te verbergen met een *commitment scheme* (verbintenis). In dit artikel wordt een nieuw type ring-handtekening beschreven: een *Multi-layered Linkable Spontaneous Anonymous Group*. Hiermee kunnen bedragen, afzenders en ontvangers worden verborgen met redelijke efficiëntie, terwijl de hoeveelheid gegenereerde coins kan worden gecontroleerd zonder dat je iemand hoeft te vertrouwen. Er worden een aantal uitbreidingen van het protocol voorgesteld, namelijk *Aggregate Schnorr Range Proofs* en *Ring Multisignature*. De auteur wil hierbij aantekenen dat vroege schetsen van dit artikel zijn gepubliceerd binnen de Monero-community en op het IRC-kanaal bitcoin-research. Hashes op de blockchain van schetsen zijn beschikbaar in [14], waaruit blijkt dat dit werk is begonnen in de zomer van 2015 en voltooid in het begin van oktober 2015. Er is ook een e-print beschikbaar op http://eprint.iacr.org/2015/1098.
+  mrl5_abstract: "In dit artikel wordt een methode geïntroduceerd voor het verbergen van transactiebedragen in de sterk gedecentraliseerde anonieme cryptovaluta Monero. Net als Bitcoin is Monero een cryptovaluta die wordt verspreid via een proces van *mining* voor *proof of work*. Het oorspronkelijke Monero-protocol was gebaseerd op CryptoNote, waarin ring-handtekeningen en eenmalige sleutels worden gebruikt om de herkomst en bestemming van transacties te verbergen. Onlangs heeft Bitcoin Core-ontwikkelaar Gregory Maxwell een methode besproken en geïmplementeerd om het bedrag van een transactie te verbergen met een *commitment scheme* (verbintenis). In dit artikel wordt een nieuw type ring-handtekening beschreven: een *Multi-layered Linkable Spontaneous Anonymous Group*. Hiermee kunnen bedragen, afzenders en ontvangers worden verborgen met redelijke efficiëntie, terwijl de hoeveelheid gegenereerde coins kan worden gecontroleerd zonder dat je iemand hoeft te vertrouwen. Er worden een aantal uitbreidingen van het protocol voorgesteld, namelijk *Aggregate Schnorr Range Proofs* en *Ring Multisignature*. De auteur wil hierbij aantekenen dat vroege schetsen van dit artikel zijn gepubliceerd binnen de Monero-community en op het IRC-kanaal bitcoin-research. Hashes op de blockchain van schetsen zijn beschikbaar in [14], waaruit blijkt dat dit werk is begonnen in de zomer van 2015 en voltooid in het begin van oktober 2015. Er is ook een e-print beschikbaar op http://eprint.iacr.org/2015/1098."
   mrl6: An Efficient Implementation of Monero Subadresses
   mrl6_abstract: Gebruikers van de cryptovaluta Monero die adressen willen hergebruiken zonder dat ze aan elkaar kunnen worden gekoppeld, moeten afzonderlijke portemonnees gebruiken. Daarvoor moeten ze binnenkomende transacties voor elke portemonnee opzoeken. We documenteren een nieuw systeem van adressen waarbij een gebruiker één hoofdadres voor een portemonnee heeft en een onbeperkt aantal subadressen die niet aan elkaar gekoppeld kunnen worden. Elke transactie hoeft maar één keer gescand te worden om te bepalen of deze bestemd is voor een van de subadressen van de gebruiker. Dit systeem ondersteunt ook meerdere outputs naar andere subadressen en is net zo efficiënt als traditionele transacties.
   mrl7: Sets of Spent Outputs
@@ -507,7 +509,7 @@ specs:
   block_size: Dynamisch, maximaal 2 * M100
   block_emission_title: Uitgiftecurve
   block_emission_main: "Eerst de gewone curve: ~18.132 miljoen coins eind mei 2022"
-  block_emission_tail: "Daarna de blijvende uitgifte: 0,6 XMR per blok om de 2 minuten, nadat de gewone uitgifte klaar is, wat een steeds verder dalende inflatie van < 1% oplevert.
+  block_emission_tail: "Daarna de blijvende uitgifte: 0,6 XMR per blok om de 2 minuten, nadat de gewone uitgifte klaar is, wat een steeds verder dalende inflatie van < 1% oplevert."
   block_emission_disclaimer1: Zie
   block_emission_disclaimer_link: grafieken en details
   supply_title: Maximale geldhoeveelheid
@@ -556,7 +558,7 @@ library:
         In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri, community, hardware en Monerujo.
 
 moneropedia:
-  translated: "yes"
+  translated: "no"
   add_new_button: Nieuw trefwoord toevoegen
   add_new_text1: Wil je een trefwoord bewerken of een nieuw trefwoord toevoegen?
   add_new_link: Open dan een issue op de GitLab-repository van deze website
@@ -572,6 +574,7 @@ moneropedia:
     blockchain: Blockchain
     block: Block
     bootstrap-node: Bootstrap-node
+    bulletproofs: Bulletproofs
     canonically-unique-host: Canonically-unique host
     change: Change
     clearnet: Clearnet

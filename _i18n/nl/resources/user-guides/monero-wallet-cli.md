@@ -18,7 +18,7 @@ Wanneer `monero-wallet-cli` en `monerod` beide worden uitgevoerd, voer je `balan
 Voorbeeld:
 
 Hiermee worden blokken uit de node opgehaald die de portemonnee nog niet gezien heeft, en wordt je saldo navenant
-bijgewerkt. Dit proces wordt normaal ongeveer één keer per minuut in de achtergrond uitgevoerd. Zo geef je het saldo weer
+bijgewerkt. Dit proces wordt normaal ongeveer Ã©Ã©n keer per minuut in de achtergrond uitgevoerd. Zo geef je het saldo weer
 zonder te vernieuwen:
 
     balance
@@ -30,7 +30,7 @@ In dit voorbeeld is `Balance` je totale saldo. De `unlocked balance` is het bedr
 
 Wat je nodig hebt is het standaardadres waaraan je wilt betalen (een lange tekenreeks die begint met een 4), en
 eventueel een betalings-ID als de ontvangende partij daarom vraagt. In dat geval kan de begunstigde
-ook een geïntegreerd adres opgeven, waarbij het standaardadres en de betalings-ID in één adres worden verpakt.
+ook een geÃ¯ntegreerd adres opgeven, waarbij het standaardadres en de betalings-ID in Ã©Ã©n adres worden verpakt.
 
 ### Verzenden naar een standaardadres:
 
@@ -40,11 +40,11 @@ Vervang `ADRES` door het adres waaraan je wilt betalen, `BEDRAG` door hoeveel Mo
 en `BETALINGSID` door de betalings-ID die je hebt ontvangen. Betalings-ID's zijn optioneel. Als de ontvangende partij er geen nodig heeft, kun je
 de ID gewoon weglaten.
 
-### Verzenden naar een geïntegreerd adres:
+### Verzenden naar een geÃ¯ntegreerd adres:
 
     transfer ADRES BEDRAG
 
-Hier is de betalings-ID opgenomen in het geïntegreerde adres.
+Hier is de betalings-ID opgenomen in het geÃ¯ntegreerde adres.
 
 ### Het aantal outputs in een transactie opgeven:
 
@@ -73,7 +73,7 @@ betalings-ID worden samengevat. Het is ook mogelijk om een bepaalde betalings-ID
 
     integrated_address 12346780abcdef00
 
-Betalingen aan een geïntegreerd adres dat jij hebt gegenereerd gaan naar jouw account
+Betalingen aan een geÃ¯ntegreerd adres dat jij hebt gegenereerd gaan naar jouw account
 met vermelding van die betalings-ID, zodat je betalingen kunt onderscheiden.
 
 
@@ -82,7 +82,7 @@ met vermelding van die betalings-ID, zodat je betalingen kunt onderscheiden.
 Als je een verkoper betaalt, en de verkoper beweert dat hij/zij het geld niet heeft ontvangen, wil je misschien
 aan een derde bewijzen dat je het geld wel degelijk hebt verzonden - of aan de verkoper zelf, als het een eerlijke
 vergissing is. Monero is vertrouwelijk, dus je kunt niet zomaar je transactie aanwijzen op de blockchain,
-want daar is niet te zien wie een transactie heeft verzonden of ontvangen. Maar je kunt iemand wel de privésleutel van een transactie
+want daar is niet te zien wie een transactie heeft verzonden of ontvangen. Maar je kunt iemand wel de privÃ©sleutel van een transactie
 geven, zodat die kan zien of die transactie Monero naar dat
 adres heeft verzonden. Houd er rekening mee dat het opslaan van deze transactiesleutels standaard is uitgeschakeld.
 Je moet deze functie voor het verzenden inschakelen als je denkt dat je deze misschien nodig hebt:
@@ -94,7 +94,7 @@ Je kunt de transactiesleutel van een eerdere transactie ophalen:
     get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
 
 Voer hierbij de ID in van de transactie waarvoor u de sleutel wilt hebben. Houd er rekening mee dat een betaling kan zijn gesplitst
-in meer dan één transactie, zodat je meerdere sleutels nodig hebt. Vervolgens kun je de sleutel
+in meer dan Ã©Ã©n transactie, zodat je meerdere sleutels nodig hebt. Vervolgens kun je de sleutel
 of sleutels opsturen naar wie je het bewijs van je transactie wilt laten zien, met de
 transactie-ID en het adres van de ontvanger erbij. Opmerking: als deze partij ook je eigen
 adres kent, kan deze ook zien hoeveel wisselgeld je hebt teruggekregen.
@@ -122,7 +122,7 @@ Als je een betaling met een bepaalde betalings-ID hebt ontvangen, kun je deze op
 
     payments BETALINGSID
 
-Je kunt ook meer dan één betalings-ID opgeven.
+Je kunt ook meer dan Ã©Ã©n betalings-ID opgeven.
 
 In het algemeen kun je binnenkomende en uitgaande betalingen bekijken:
 

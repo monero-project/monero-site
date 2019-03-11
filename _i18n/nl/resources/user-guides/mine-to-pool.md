@@ -43,7 +43,7 @@ Voor distributies op basis van Red Hat:
 <!-- TODO: Add dependencies for other operating systems? -->
 
 Hierna hoef je alleen nog de build-bestanden te maken met cmake,
-make uit te voeren en het configuratiebestand te kopi�ren:
+make uit te voeren en het configuratiebestand te kopiëren:
 
     mkdir build-$(gcc -dumpmachine)
 	cd $_
@@ -53,7 +53,7 @@ make uit te voeren en het configuratiebestand te kopi�ren:
 	cd bin
 
 Juich niet te vroeg, want het miningprogramma moet nog worden geconfigureerd. Als je het miningprogramma nu uitvoert,
-wordt er een blok tekst weergegeven om te kopi�ren en plakken:
+wordt er een blok tekst weergegeven om te kopiëren en plakken:
 
 ![image1](png/mine_to_pool/1.png)
 
@@ -110,6 +110,6 @@ Je moet het vergrendelen van grote pagina's inschakelen in het groepsbeleid van 
 4. Selecteer de map `Toewijzing van gebruikersrechten`.
 5. De beleidsregels worden weergegeven in het detailvenster.
 6. Dubbelklik in het deelvenster op `Pagina's in het geheugen vergrendelen`.
-7. Klik in het dialoogvenster `Lokale beveiligingsinstelling` – `Pagina's in het geheugen vergrendelen` op `Gebruiker of groep toevoegen`.
+7. Klik in het dialoogvenster `Lokale beveiligingsinstelling` â `Pagina's in het geheugen vergrendelen` op `Gebruiker of groep toevoegen`.
 8. Voeg in het dialoogvenster `Gebruikers of groepen selecteren` een account toe waarop u het miningprogramma wilt uitvoeren.
 9. Start de computer opnieuw op om de wijziging door te voeren.

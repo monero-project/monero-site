@@ -31,7 +31,7 @@ is 0,01 BTC.
 
 Het selecteren van een pool speelt heeft een grote invloed op hoeveel
 van een cryptovaluta je uiteindelijk kunt minen. Zorg dat de pool die je hebt geselecteerd een hoge hashrate
-en veel shares kan verwerken, met name via één verbinding.
+en veel shares kan verwerken, met name via Ã©Ã©n verbinding.
 [Hier](https://bitcointalk.org/index.php?topic=583449.0) vind je een lijst met Monero-pools.
 
 Waarschijnlijk moet je bij de pool die je kiest ook een account
@@ -47,4 +47,4 @@ hoe je een order opgeeft bij NiceHash, raden we je aan [het antwoord op deze vra
 Als je wilt bieden op
 hashpower, selecteer je het ordertype *Standard (bidding)*, en als je een vaste
 order wilt geven waar anderen niet overheen kunnen bieden, selecteer je het ordertype *Fixed order*. De status van de marktplaats
-en een schatting van de prijzen van het minen kun je controleren op de [live marktplaats](https://www.nicehash.com/index.jsp?p=orders). 
+en een schatting van de prijzen van het minen kun je controleren op de [live marktplaats](https://www.nicehash.com/index.jsp?p=orders).Â 

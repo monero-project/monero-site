@@ -14,19 +14,19 @@ MyMonero.com is een online portemonnee voor Monero, beheerd door Monero Core-ont
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
 
-Nadat je op de knop klikt, wordt je privésleutel weergegeven. Deze sleutel geeft je toegang tot je geld. Geef deze sleutel nooit aan iemand anders!
+Nadat je op de knop klikt, wordt je privÃ©sleutel weergegeven. Deze sleutel geeft je toegang tot je geld. Geef deze sleutel nooit aan iemand anders!
 
 ### SCHRIJF DEZE SLEUTEL METEEN OP!
 
 ![image2](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/02.png)
 
-Typ je privésleutel in het onderstaand vak en klik op de knop.
+Typ je privÃ©sleutel in het onderstaand vak en klik op de knop.
 
 Op de volgende pagina wordt je adres weergegeven.
 
 ![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/03.png)
 
-Kopieer je adres naar het klembord door het te selecteren en op Ctrl+C te drukken (of menu Bewerken en Kopiëren) of door op het kleine pictogram naast je adres te klikken. Sla je adres ergens op. Hiermee kunnen anderen Monero naar je verzenden en kun je Monero in je eigen account storten.
+Kopieer je adres naar het klembord door het te selecteren en op Ctrl+C te drukken (of menu Bewerken en KopiÃ«ren) of door op het kleine pictogram naast je adres te klikken. Sla je adres ergens op. Hiermee kunnen anderen Monero naar je verzenden en kun je Monero in je eigen account storten.
 
 #### Stap 3. Koop Monero en boek het over naar je nieuwe adres.
 

@@ -43,7 +43,7 @@
     - name: Versie 0.10.1 Wolfram Warptangent
       date: 2016-12-14
       status: completed
-    - name: Officiële GUI bèta 1
+    - name: OfficiÃ«le GUI bÃ¨ta 1
       date: 2016-12-22
       status: completed
 - year: 2017
@@ -69,7 +69,7 @@
     - name: Fluffy blocks
       date: 2017-09-07
       status: completed
-    - name: GUI niet meer bèta
+    - name: GUI niet meer bÃ¨ta
       date: 2017-09-10
       status: completed
     - name: Netwerkupgrade voor minimale ringgrootte van 5 en verplichte RingCT-transacties
@@ -89,7 +89,7 @@
     - name: Nieuw proof-of-workalgoritme CryptoNoteV7
       date: 2018-04-06
       status: completed
-    - name: Netwerkupgrade: minimale ringgrootte verhogen naar 7, multisig integreren, subadressen, PoW-algoritme wijzigen
+    - name: "Netwerkupgrade: minimale ringgrootte verhogen naar 7, multisig integreren, subadressen, PoW-algoritme wijzigen"
       date: 2018-04-06
       status: completed
     - name: Getmonero.org vertaald in het Frans en Pools

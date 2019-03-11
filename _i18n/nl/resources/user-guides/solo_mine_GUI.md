@@ -1,6 +1,6 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-Het is heel makkelijk om solo te minen met de officiële grafische interface (GUI). Als je het nog niet gedaan hebt, ga dan naar de pagina <a href="{{site.baseurl}}/downloads/">Monero-downloads</a> en download de officiële GUI voor je besturingssysteem. Voer de installatie uit en wacht terwijl Monero wordt gesynchroniseerd met het netwerk. Als het goed is, staat er "Verbonden" in de linkerbenedenhoek.
+Het is heel makkelijk om solo te minen met de officiÃ«le grafische interface (GUI). Als je het nog niet gedaan hebt, ga dan naar de pagina <a href="{{site.baseurl}}/downloads/">Monero-downloads</a> en download de officiÃ«le GUI voor je besturingssysteem. Voer de installatie uit en wacht terwijl Monero wordt gesynchroniseerd met het netwerk. Als het goed is, staat er "Verbonden" in de linkerbenedenhoek.
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 

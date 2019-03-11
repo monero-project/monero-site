@@ -20,7 +20,7 @@ op de opdrachtregel. Schrijf je hersteltekst van 25 woorden op, als je dat nog n
 > portemonnee.bin.keys
 > portemonnee.bin.address.txt
 
-Dit kun je doen door de bestanden naar een nieuwe map te kopiëren.
+Dit kun je doen door de bestanden naar een nieuwe map te kopiÃ«ren.
 
 Het is mogelijk dat je je portemonnee een naam hebt gegeven zonder de toevoeging .bin. In dat geval heet het portemonneebestand portemonnee zonder .bin erachter.
 

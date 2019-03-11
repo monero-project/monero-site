@@ -10,7 +10,7 @@
 
 - Gebruik een willekeurige computer, desnoods de computer waar je normaal op werkt. Als je extra voorzichtig bent, is het handig om een oudere computer te gebruiken zonder wifi of bluetooth.
 
-- Maak een opstartbare schijf voor Linux of Windows, en zet de Monero-binaries op dezelfde schijf of een tweede schrijf. (Maak voor Linux ook kopieën van de gedownloade afhankelijkheden die je nodig hebt, bijvoorbeeld libboost1.55 en miniupnpc.)
+- Maak een opstartbare schijf voor Linux of Windows, en zet de Monero-binaries op dezelfde schijf of een tweede schrijf. (Maak voor Linux ook kopieÃ«n van de gedownloade afhankelijkheden die je nodig hebt, bijvoorbeeld libboost1.55 en miniupnpc.)
 
 - Maak de netwerk-/internetkabels los van de computer, haal de wifi-kaart eruit of schakel de wifi en bluetooth uit op een laptop, voor zover dat mogelijk is.
 
