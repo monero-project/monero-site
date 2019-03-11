@@ -187,6 +187,7 @@ downloads:
   mobilelight2: Hangouts
   mobilelight3:  page to see where we are.
   clionly: Command-Line Tools Only
+  installer: Installer
 
 monero-project:
   translated: "yes"

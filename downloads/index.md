@@ -124,6 +124,19 @@ permalink: /downloads/index.html
                                 <p class="hash"> {{ data_downloads.cli_hash }}</p>
                             </div>
                         </div>
+                        <br/>
+                        {% if data_downloads.gui_installer_hash != nil %}
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12" >
+                                <h3 id="{{ data_downloads.platform | slugify }}">
+                                    <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_installer_url }}">{{ data_downloads.platform }} {% t downloads.installer %}</a>
+                                </h3>
+                                <p>{% t downloads.currentversion %}: {{ data_downloads.gui_installer_version }} {{ data_downloads.tag }}</p>
+                                <p class="prehash">SHA256 Hash (GUI Installer):</p>
+                                <p class="hash"> {{ data_downloads.gui_installer_hash }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
                     {% endif %}
                 </div>
             </section>
