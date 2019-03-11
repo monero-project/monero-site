@@ -1,8 +1,8 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-Binaries verifiëren Windows (beginner)
+Binaries verifiÃ«ren Windows (beginner)
 
-Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de binaire bestanden van Monero verifiëren. Dit is de enige manier om er zeker van te zijn dat je de officiële Monero-binaries gebruikt. Als je een onecht binair bestand ontvangt (bijvoorbeeld via phishing of een *man-in-the-middle attack*), voorkomt deze methode dat je er gebruik van maakt.
+Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de binaire bestanden van Monero verifiÃ«ren. Dit is de enige manier om er zeker van te zijn dat je de officiÃ«le Monero-binaries gebruikt. Als je een onecht binair bestand ontvangt (bijvoorbeeld via phishing of een *man-in-the-middle attack*), voorkomt deze methode dat je er gebruik van maakt.
 
 Het Monero-team stelt een cryptografisch ondertekende lijst beschikbaar met alle [SHA256](https://en.wikipedia.org/wiki/SHA-2)-hashes, om de integriteit van de binaries te garanderen. Als er met het gedownloade binaire bestand is geknoeid, levert het een [andere hash](https://nl.wikipedia.org/wiki/Hashfunctie) op dan in de lijst.
 
@@ -20,17 +20,17 @@ Dit is een handleiding voor beginners die Windows als besturingssysteem gebruike
   - [2.2. Kleopatra initialiseren](#22-initialize-kleopatra)
     + [2.2.1. Ondertekeningssleutel importeren](#221-import-signing-key)
     + [2.2.2. Sleutelpaar aanmaken](#222-create-key-pair)
-  - [2.3. Ondertekeningssleutel verifiëren](#23-verify-signing-key)
-### [3. Hashbestand verifiëren](#3-hash-file-verification)
+  - [2.3. Ondertekeningssleutel verifiÃ«ren](#23-verify-signing-key)
+### [3. Hashbestand verifiÃ«ren](#3-hash-file-verification)
   - [3.1. Hashbestand downloaden](#31-download-hash-file)
-  - [3.2. Hashbestand verifiëren](#32-verify-hash-file)
-### [4. Binair bestand verifiëren](#4-binary-file-verification)
+  - [3.2. Hashbestand verifiÃ«ren](#32-verify-hash-file)
+### [4. Binair bestand verifiÃ«ren](#4-binary-file-verification)
   - [4.1. Binary downloaden](#41-download-binary)
-  - [4.2. Binary verifiëren](#42-verify-binary)
+  - [4.2. Binary verifiÃ«ren](#42-verify-binary)
 
 ## 1. Gpg4win-installatieprogramma gebruiken
 
-In dit gedeelte leggen we uit hoe je de cryptografische software gebruikt. De hulpmiddelen die je nodig hebt om binaries te verifiëren worden niet meegeleverd met Windows. Met het Gpg4win-installatieprogramma kun je deze tools installeren.
+In dit gedeelte leggen we uit hoe je de cryptografische software gebruikt. De hulpmiddelen die je nodig hebt om binaries te verifiÃ«ren worden niet meegeleverd met Windows. Met het Gpg4win-installatieprogramma kun je deze tools installeren.
 
 ### 1.1. Gpg4win-installatieprogramma ophalen
 
@@ -94,7 +94,7 @@ Klik op `Finish`.
 
 ## 2. Monero-ondertekeningssleutel
 
-In dit gedeelte leggen we uit hoe je de Monero-ondertekeningssleutel downloadt, verifieert dat de sleutel correct is en de sleutel importeert in je sleutelring. Het hashbestand wordt gebruikt om te verifiëren dat je binaire bestand cryptografisch is ondertekend met de Monero-ondertekeningssleutel. Om de geldigheid van dit hashbestand te controleren heb je de openbare versie van de ondertekeningssleutel nodig.
+In dit gedeelte leggen we uit hoe je de Monero-ondertekeningssleutel downloadt, verifieert dat de sleutel correct is en de sleutel importeert in je sleutelring. Het hashbestand wordt gebruikt om te verifiÃ«ren dat je binaire bestand cryptografisch is ondertekend met de Monero-ondertekeningssleutel. Om de geldigheid van dit hashbestand te controleren heb je de openbare versie van de ondertekeningssleutel nodig.
 
 ### 2.1. Ondertekeningssleutel downloaden
 
@@ -140,7 +140,7 @@ Vul iets in voor `Naam` en `E-mail` en klik op `Volgende`.
 
 Verifieer de details en klik op `Aanmaken`.
 
-![kleo eerste keer gegevens sleutel verifiëren](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
+![kleo eerste keer gegevens sleutel verifiÃ«ren](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
 
 Stel een wachtwoord in en klik op `OK`.
 
@@ -150,7 +150,7 @@ Klik op `Finish`.
 
 ![kleo eerste keer sleutel aanmaken voltooien](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### 2.3. Ondertekeningssleutel verifiëren
+### 2.3. Ondertekeningssleutel verifiÃ«ren
 
 Controleer visueel dat de sleutel van Riccardo Spagni de vingerafdruk `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9` heeft.
 
@@ -172,7 +172,7 @@ Klik op `Finish`.
 
 ![kleo certificeren voltooien](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
-## 3. Hashbestand verifiëren
+## 3. Hashbestand verifiÃ«ren
 
 In dit gedeelte leggen we uit hoe je het ondertekende bestand met bekende goede hashes downloadt en de authenticiteit verifieert.
 
@@ -186,11 +186,11 @@ Laat de standaardlocatie staan en klik op `Opslaan`.
 
 ![hashes bestand opslaan](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### 3.2. Hashbestand verifiëren
+### 3.2. Hashbestand verifiÃ«ren
 
-Klik in Kleopatra op de knop `Ontcijferen/verifiëren`.
+Klik in Kleopatra op de knop `Ontcijferen/verifiÃ«ren`.
 
-![hashes kleo knop verifiëren](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
+![hashes kleo knop verifiÃ«ren](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
 
 Ga naar de map `Downloads`. Selecteer het bestand `hashes` en klik op `Openen`.
 
@@ -210,7 +210,7 @@ Als je een **GELDIGE** ondertekening hebt ontvangen, klik je op `Discard` en ga 
 
 **GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt ontvangen. Verwijder dan het bestand `hashes` uit de map `Downloads` en ga terug naar [paragraaf 3.1](#31-download-hash-file).
 
-## 4. Binair bestand verifiëren
+## 4. Binair bestand verifiÃ«ren
 
 In dit gedeelte leggen we uit hoe je de Monero-binary downloadt en de authenticiteit verifieert.
 
@@ -228,7 +228,7 @@ Laat de standaardlocatie staan en klik op `Opslaan`.
 
 ![binary getmonero opslaan locatie](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### 4.2. Binary verifiëren
+### 4.2. Binary verifiÃ«ren
 
 Ga in een bestandenverkenner naar de map `Downloads`. Open het bestand `hashes` in een tekstverwerker.
 

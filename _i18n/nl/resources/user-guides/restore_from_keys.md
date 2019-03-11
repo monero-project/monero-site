@@ -2,7 +2,7 @@
 {% include disclaimer.html translated="true" version=page.version %}
 ### Herstellen met sleutels
 
-Je kunt een portemonnee makkelijk herstellen met je privésleutels. Als je de benodigde gegevens hebt, kun je met deze handleiding je portemonnee volledig herstellen. Je hebt je wachtwoord NIET nodig voor herstellen met sleutels.
+Je kunt een portemonnee makkelijk herstellen met je privÃ©sleutels. Als je de benodigde gegevens hebt, kun je met deze handleiding je portemonnee volledig herstellen. Je hebt je wachtwoord NIET nodig voor herstellen met sleutels.
 
 Wat je nodig hebt zijn ofwel 3 gegevens uit je portemonnee, ofwel het bestand met de extensie .keys waarin deze gegevens staan, plus het wachtwoord waarmee dit bestand is versleuteld. Je hebt deze 3 onderdelen van je portemonnee nodig:
 
@@ -37,7 +37,7 @@ Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:
 
 ![herstellen kiezen](png/restore_from_keys/choose-restore.png)
 
-Selecteer `Herstel met sleutels`, geef een name en opslaglocatie op voor de portemonnee en vul de velden `Adres van account (openbaar)`, `Alleen-lezen sleutel (privé)` en `Bestedingssleutel (privé)` in. Eventueel kun je een `Herstelpunt (optioneel)` opgeven, zodat er niet hoeft te worden gezocht in oudere blokken. Klik vervolgens op de pijl naar rechts:
+Selecteer `Herstel met sleutels`, geef een name en opslaglocatie op voor de portemonnee en vul de velden `Adres van account (openbaar)`, `Alleen-lezen sleutel (privÃ©)` en `Bestedingssleutel (privÃ©)` in. Eventueel kun je een `Herstelpunt (optioneel)` opgeven, zodat er niet hoeft te worden gezocht in oudere blokken. Klik vervolgens op de pijl naar rechts:
 
 ![portemonnee herstellen](png/restore_from_keys/restore-wallet.png)
 

@@ -41,7 +41,7 @@ Alice kan haar monero-wallet-gui openen en haar transactiedetails bekijken op de
 
 ![Geschiedenis](png/prove-payment/history.png)
 
-Hier kan ze de transactie-ID en het adres van Bob kopiëren door erop te klikken.
+Hier kan ze de transactie-ID en het adres van Bob kopiÃ«ren door erop te klikken.
 Vervolgens kan ze op `P` klikken voor het bewijs van een betaling (de transactiesleutel):
 
 ![Bewijs van betaling](png/prove-payment/payment-proof.png)

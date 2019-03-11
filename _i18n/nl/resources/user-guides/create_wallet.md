@@ -2,7 +2,7 @@
 {% include disclaimer.html translated="true" version=page.version %}
 ### Besturingssystemen:  Ubuntu
 
-- Download de [officiële binaries](https://getmonero.org/downloads/) of compileer de nieuwste broncode die beschikbaar is op [Github](https://github.com/monero-project/bitmonero).
+- Download de [officiÃ«le binaries](https://getmonero.org/downloads/) of compileer de nieuwste broncode die beschikbaar is op [Github](https://github.com/monero-project/bitmonero).
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/1.png)
 ![image2](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/2.png)
@@ -12,7 +12,7 @@
 ![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/3.png)
 ![image4](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/4.png)
 
-Deze stap hoef je maar één keer uit te voeren. Open een terminal (Ctrl+Alt+T) en installeer de vereiste afhankelijkheden door het volgende te typen: "*sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev*". Druk wanneer erom gevraagd wordt op de toets Y en vervolgens op Enter om door te gaan.
+Deze stap hoef je maar Ã©Ã©n keer uit te voeren. Open een terminal (Ctrl+Alt+T) en installeer de vereiste afhankelijkheden door het volgende te typen: "*sudo apt-get install libboost-all-dev libssl-dev libevent-dev libdb++-dev*". Druk wanneer erom gevraagd wordt op de toets Y en vervolgens op Enter om door te gaan.
 
 ![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/5.png)
 ![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/6.png)
@@ -39,7 +39,7 @@ Deze stap hoef je maar één keer uit te voeren. Open een terminal (Ctrl+Alt+T) en
 ![image15](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/15.png)
 ![image16](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/16.png)
 
-*Dit is je privésleutel. Schrijf deze sleutel op en bewaar deze op een veilige plek!*
+*Dit is je privÃ©sleutel. Schrijf deze sleutel op en bewaar deze op een veilige plek!*
 
 ![image17](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/create_wallet/17.png)
 

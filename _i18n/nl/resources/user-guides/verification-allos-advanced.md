@@ -1,8 +1,8 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Binary verifiëren: Linux, Mac of Windows via opdrachtregel (geavanceerd)
+# Binary verifiÃ«ren: Linux, Mac of Windows via opdrachtregel (geavanceerd)
 
-Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de binaire bestanden van Monero verifiëren. Dit is de enige manier om er zeker van te zijn dat je de officiële Monero-software gebruikt. Als je een onecht Monero-binary ontvangt (bijvoorbeeld via phishing of een *man-in-the-middle attack*), voorkomt deze methode dat je er gebruik van maakt.
+Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de binaire bestanden van Monero verifiÃ«ren. Dit is de enige manier om er zeker van te zijn dat je de officiÃ«le Monero-software gebruikt. Als je een onecht Monero-binary ontvangt (bijvoorbeeld via phishing of een *man-in-the-middle attack*), voorkomt deze methode dat je er gebruik van maakt.
 
 Het Monero-team stelt een cryptografisch ondertekende lijst beschikbaar met alle [SHA256](https://en.wikipedia.org/wiki/SHA-2)-hashes, om de integriteit van de binaries te garanderen. Als er met het gedownloade binaire bestand is geknoeid, levert het een [andere hash](https://nl.wikipedia.org/wiki/Hashfunctie) op dan in de lijst.
 
@@ -11,17 +11,17 @@ Dit is een geavanceerde handleiding voor de besturingssystemen Linux, Mac en Win
 ## Inhoud
 
 ### [1. GnuPG installeren](#1-installing-gnupg)
-### [2. Ondertekeningssleutel verifiëren en importeren](#2-verify-and-import-signing-key)
+### [2. Ondertekeningssleutel verifiÃ«ren en importeren](#2-verify-and-import-signing-key)
   + [2.1. Ondertekeningssleutel ophalen](#21-get-signing-key)
-  + [2.2. Ondertekeningssleutel verifiëren](#22-verify-signing-key)
+  + [2.2. Ondertekeningssleutel verifiÃ«ren](#22-verify-signing-key)
   + [2.3. Ondertekeningssleutel importeren](#23-import-signing-key)
-### [3. Hashbestand downloaden en verifiëren](#3-download-and-verify-hash-file)
+### [3. Hashbestand downloaden en verifiÃ«ren](#3-download-and-verify-hash-file)
   + [3.1. Hashbestand ophalen](#31-get-hash-file)
-  + [3.2. Hashbestand verifiëren](#32-verify-hash-file)
-### [4. Binary downloaden en verifiëren](#4-download-and-verify-binary)
+  + [3.2. Hashbestand verifiÃ«ren](#32-verify-hash-file)
+### [4. Binary downloaden en verifiÃ«ren](#4-download-and-verify-binary)
   + [4.1. Monero-binary ophalen](#41-get-monero-binary)
-  + [4.2. Binary verifiëren op Linux of Mac](#42-binary-verification-on-linux-or-mac)
-  + [4.3. Binary verifiëren op Windows](#43-binary-verification-on-windows)
+  + [4.2. Binary verifiÃ«ren op Linux of Mac](#42-binary-verification-on-linux-or-mac)
+  + [4.3. Binary verifiÃ«ren op Windows](#43-binary-verification-on-windows)
 
 ## 1. GnuPG installeren
 
@@ -29,9 +29,9 @@ Dit is een geavanceerde handleiding voor de besturingssystemen Linux, Mac en Win
 
 + Op een Mac ga je naar de [downloadpagina voor Gpgtools](https://gpgtools.org/) en volg je de instructies voor het installeren.
 
-+ Op Linux is GnuPG standaard geïnstalleerd.
++ Op Linux is GnuPG standaard geÃ¯nstalleerd.
 
-## 2. Ondertekeningssleutel verifiëren en importeren
+## 2. Ondertekeningssleutel verifiÃ«ren en importeren
 
 In dit gedeelte leggen we uit hoe je de Monero-ondertekeningssleutel ophaalt, controleert of deze correct is en de sleutel importeert in GnuPG.
 
@@ -45,7 +45,7 @@ Op Linux kun je de ondertekeningssleutel van Fluffypony downloaden door de volge
 wget -O fluffypony.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc
 ```
 
-### 2.2. Ondertekeningssleutel verifiëren
+### 2.2. Ondertekeningssleutel verifiÃ«ren
 
 Op alle besturingssystemen kun je de vingerafdruk van `fluffypony.asc` controleren door de volgende opdracht te geven in een terminal:
 
@@ -74,7 +74,7 @@ Importeer de ondertekeningssleutel in een terminal:
 gpg --import fluffypony.asc
 ```
 
-Als dit de eerste keer is dat je de sleutel hebt geïmporteerd, ziet de uitvoer er als volgt uit:
+Als dit de eerste keer is dat je de sleutel hebt geÃ¯mporteerd, ziet de uitvoer er als volgt uit:
 
 ```
 gpg: key 0x7455C5E3C0CDCEB9: 2 signatures not checked due to missing keys
@@ -85,7 +85,7 @@ gpg:               imported: 1
 gpg: no ultimately trusted keys found
 ```
 
-Als je de sleutel eerder hebt geïmporteerd, ziet de uitvoer er als volgt uit:
+Als je de sleutel eerder hebt geÃ¯mporteerd, ziet de uitvoer er als volgt uit:
 
 ```
 gpg: key 0x7455C5E3C0CDCEB9: "Riccardo Spagni <ric@spagni.net>" not changed
@@ -93,7 +93,7 @@ gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
 
-## 3. Hashbestand downloaden en verifiëren
+## 3. Hashbestand downloaden en verifiÃ«ren
 
 In dit gedeelte leggen we uit hoe je het hashbestand downloadt en de authenticiteit verifieert.
 
@@ -107,7 +107,7 @@ Op Linux kun je het ondertekende hashbestand downloaden door de volgende opdrach
 wget -O hashes.txt https://getmonero.org/downloads/hashes.txt
 ```
 
-### 3.2. Hashbestand verifiëren
+### 3.2. Hashbestand verifiÃ«ren
 
 Het hashbestand is ondertekend met de sleutel `94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD`, een subsleutel van de sleutel `BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9` (zoals weergegeven in de uitvoer hieronder).
 
@@ -133,7 +133,7 @@ Als er **Good signature** in de uitvoer staat, zoals in het voorbeeld, kun je ve
 
 **GA NIET VERDER** als er **BAD signature** in de uitvoer staat. Verwijder dan het bestand `hashes.txt` en ga terug naar [paragraaf 3.1](#31-get-hash-file).
 
-## 4. Binary downloaden en verifiëren
+## 4. Binary downloaden en verifiÃ«ren
 
 In dit gedeelte leggen we uit hoe je de Monero-binary voor je besturingssysteem downloadt, de `SHA256`-hash van je download ophaalt en verifieert dat deze correct is.
 
@@ -147,7 +147,7 @@ Op Linux kun je de opdrachtregelversie downloaden door de volgende opdracht op t
 wget -O monero-linux-x64-v0.12.0.0.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
-### 4.2. Binary verifiëren op Linux of Mac
+### 4.2. Binary verifiÃ«ren op Linux of Mac
 
 De stappen op zowel Linux als Mac zijn hetzelfde. In een terminal bereken je de `SHA256`-hash van je gedownloade Monero-binary. Als voorbeeld gebruiken we hier het binaire bestand voor 64-bits Linux. Vervang `monero-gui-linux-x64-v0.12.0.0.tar.bz2` door de naam van het binaire bestand dat je hebt gedownload in [paragraaf 4.1](#41-get-monero-binary).
 
@@ -165,7 +165,7 @@ Als de hash **WEL** overeenkomt, ben je klaar met deze handleiding! Dan kun je d
 
 **GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de binary die je hebt gedowload en ga terug naar [paragraaf 4.1](#41-get-monero-binary).
 
-### 4.3. Binary verifiëren op Windows
+### 4.3. Binary verifiÃ«ren op Windows
 
 In een terminal bereken je de `SHA256`-hash van je gedownloade Monero-binary. Als voorbeeld gebruiken we hier het binaire bestand voor de 64-bits Windows GUI. Vervang `monero-gui-win-x64-v0.12.0.0.zip` door de naam van het binaire bestand dat je hebt gedownload in [paragraaf 4.1](#41-get-monero-binary).
 

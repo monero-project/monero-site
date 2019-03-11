@@ -12,7 +12,7 @@ Je kunt op allerlei manieren Bitcoin kopen. Twee min of meer betrouwbare bedrijv
 
 Download de *paper wallet generator* op https://moneroaddress.org en kopieer deze naar een USB-stick. (Directe link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip).
 
-Pak de *paper wallet generator* uit en open deze (monero-wallet-generator.html) in een browser op een offline computer die nog nooit is gebruikt, of waarop het besturingssysteem opnieuw is geïnstalleerd.
+Pak de *paper wallet generator* uit en open deze (monero-wallet-generator.html) in een browser op een offline computer die nog nooit is gebruikt, of waarop het besturingssysteem opnieuw is geÃ¯nstalleerd.
 
 De papieren portemonnee bestaat uit vier belangrijke onderdelen:
 
@@ -22,11 +22,11 @@ Het openbare adres wordt gebruikt om geld in de portemonnee te ontvangen.  Je ku
 Monero-hersteltekst
 Met de hersteltekst wordt de hele portemonnee opgeslagen op een manier die begrijpelijk is voor mensen.  Dit is alles wat je nodig hebt om later je portemonnee te herstellen.
 
-Privé-bestedingssleutel
-De privé-bestedingssleutel wordt gebruikt om geld vanuit de portemonnee te verzenden.
+PrivÃ©-bestedingssleutel
+De privÃ©-bestedingssleutel wordt gebruikt om geld vanuit de portemonnee te verzenden.
 
-Privé alleen-lezen sleutel
-De privé alleen-lezen sleutel is bedoeld om te bekijken welke transacties worden ontvangen door de portemonnee. Deze wordt vaak gebruikt om een alleen-lezen portemonnee voor *cold storage* (koude opslag) te maken, zodat je direct op de blockchain kunt zien welke transacties daar binnenkomen.
+PrivÃ© alleen-lezen sleutel
+De privÃ© alleen-lezen sleutel is bedoeld om te bekijken welke transacties worden ontvangen door de portemonnee. Deze wordt vaak gebruikt om een alleen-lezen portemonnee voor *cold storage* (koude opslag) te maken, zodat je direct op de blockchain kunt zien welke transacties daar binnenkomen.
 
 Op dit punt heb je allerlei opties.  Je kunt de portemonnee op papier afdrukken, opslaan als een PDF of een tekstbestand op een USB-stick, op een cd of dvd branden enzovoort. Het wordt aangeraden om tenminste twee of drie exemplaren op verschillende plekken op te slaan.  Versleutel alles met een sterk wachtwoord als je de portemonnee digitaal bewaart.  Als je de portemonnee op papier bewaart, laat hem dan niet zien aan iemand die je hersteltekst van 25 woorden kan onthouden of zonder je toestemming een foto van de portemonnee kan maken.  Iemand een foto van de portemonnee sturen is hetzelfde als al het geld weggeven.
 
@@ -48,7 +48,7 @@ Ga op je computer met een internetverbinding naar www.shapeshift.io. Kies "Bron:
 Klik op Doorgaan.
 
 Je Monero adres (bestemmingsadres)
-Plak hier het openbare Monero-adres uit je papieren portemonnee in het tekstvak waar "Je Monero adres" staat.   Maar wacht even: je openbare Monero-adres staat op een offline computer (toch?) dus je kunt het niet kopiëren en plakken.  Kopieer het met de hand, of kopieer alleen het openbare adres naar een lege USB-stick.
+Plak hier het openbare Monero-adres uit je papieren portemonnee in het tekstvak waar "Je Monero adres" staat.   Maar wacht even: je openbare Monero-adres staat op een offline computer (toch?) dus je kunt het niet kopiÃ«ren en plakken.  Kopieer het met de hand, of kopieer alleen het openbare adres naar een lege USB-stick.
 
 Je Bitcoin adres voor het omgewisselde bedrag
 Voer een Bitcoin-adres in dat eigendom van jou is, zodat je daar een terugbetaling kunt ontvangen als er een probleem is met de transactie.  Het is erg belangrijk dat je een openbaar Bitcoin-adres invoert dat eigendom van jou is en waar je geld kunt ontvangen.  Bij Xapo en Coinbase heet dit een Receive Address (ontvangstadres). Het kan af en toe gewijzigd worden.
@@ -72,7 +72,7 @@ Nadat je Bitcoin-transactie is bevestigd, begint Shapeshift.io met het omwissele
 Wanneer de transactie volgens de webpagina van Shapeshift.io is voltooid, zou je Monero in je papieren portemonnee moeten hebben.
 
 
-### Opmerkingen en het verifiëren van je saldo
+### Opmerkingen en het verifiÃ«ren van je saldo
 Omdat de Monero-blockchain vertrouwelijk en niet volgbaar is, kun je niet je openbare Monero-adres opzoeken om te bevestigen dat het geld is aangekomen, zoals je met Bitcoin zou kunnen doen.  Dit is goed voor je privacy, maar minder gemakkelijk.
 
 Je hebt een alleen-lezen portemonnee nodig om veilig te controleren of je geld is aangekomen in je portemonnee.  Daarvoor heb je die alleen-lezen sleutel bewaard. Zie de handleiding voor het maken van een alleen-lezen portemonnee: [Een alleen-lezen portemonnee maken]({{site.baseurl}}/resources/user-guides/view_only.html)

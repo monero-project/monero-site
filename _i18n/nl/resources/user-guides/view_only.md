@@ -29,6 +29,6 @@ Geef je alleen-lezen portemonnee een sterk wachtwoord en bevestig dit voordat je
 
 ![wallet-password](png/view-only/wallet-password.png)
 
-Dubbelklik eventueel op het scherm `Geslaagd` om het bericht te kopiëren en klik vervolgens op `OK` om het te sluiten:
+Dubbelklik eventueel op het scherm `Geslaagd` om het bericht te kopiÃ«ren en klik vervolgens op `OK` om het te sluiten:
 
 ![Success](png/view-only/Success.png)
