@@ -1,4 +1,4 @@
-{% assign version = '2.1.0' | split: '.' %}
+{% assign version = '2.2.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
@@ -573,7 +573,7 @@ Entrées :
   * *amount* - entier non signé; Montant à envoyer à chaque destination, en @unités-atomiques.
   * *address* - chaîne de caractères; Adresse publique de destination.
 * *account_index* - entier non signé; (Optionnel) Transférer depuis cet index de compte. (0 par défaut)
-* *subaddr_indices* - liste d'entier non signé; (Optionnel) Transférer depuis cette liste de sous-adresses. (0 par défaut)
+* *subaddr_indices* - liste d'entier non signé; (Optionnel) Transférer depuis cette liste de sous-adresses. (vide par défaut - tous les indices)
 * *priority* - entier non signé; Définir une priorité pour la transaction. Les valeurs acceptées sont de 0 à 3 respectivement pour les priorités par défaut, non-importante, normale et élevée.
 * *mixin* - entier non signé; Nombre de sorties de la chaîne de blocs avec lesquelles se mélanger (0 signifie pas de mélange).
 * *ring_size* - entier non signé; Nombre de sorties à mélanger dans la transaction (cette sortie + N leurres depuis la chaîne de blocs).
@@ -628,7 +628,7 @@ Entrées :
   * *amount* - entier non signé; Montant à envoyer à chaque destination, en @unités-atomiques.
   * *address* - chaîne de caractères; Adresse publique de destination.
 * *account_index* - entier non signé; (Optionnel) Transférer depuis cet index de compte. (0 par défaut)
-* *subaddr_indices* - liste d'entier non signé; (Optionnel) Transférer depuis cette liste de sous-adresses. (0 par défaut)
+* *subaddr_indices* - liste d'entier non signé; (Optionnel) Transférer depuis cette liste de sous-adresses. (vide par défaut - tous les indices)
 * *mixin* - entier non signé; Nombre de sorties de la chaîne de blocs avec lesquelles se mélanger (0 signifie pas de mélange).
 * *ring_size* - entier non signé; Nombre de sorties à mélanger dans la transaction (cette sortie + N leurres depuis la chaîne de blocs).
 * *unlock_time* - entier non signé; Nombre de blocs avant que les Moneroj puissent être dépensés (0 pour ne pas ajouter de verrouillage).
@@ -654,15 +654,16 @@ Sorties :
 Exemple :
 
 ```
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":1000000000000,"address":"7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"},{"amount":2000000000000,"address":"75sNpRwUtekcJGejMuLSGA71QFuK1qcCVLZnYRTfQLgFU5nJ7xiAHtR5ihioS53KMe8pBhH61moraZHyLoG4G7fMER8xkNv"}],"account_index":0,"subaddr_indices":[0],"priority":0,"ring_size":7,"get_tx_key": true}}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":1000000000000,"address":"7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"},{"amount":2000000000000,"address":"75sNpRwUtekcJGejMuLSGA71QFuK1qcCVLZnYRTfQLgFU5nJ7xiAHtR5ihioS53KMe8pBhH61moraZHyLoG4G7fMER8xkNv"}],"account_index":0,"subaddr_indices":[0],"priority":0,"ring_size":7,"get_tx_keys": true}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
     "amount_list": [3000000000000],
-    "fee_list": [85106400000],
+    "fee_list": [473710000],
     "multisig_txset": "",
-    "tx_hash_list": ["c8d815f48f27d53fdaf198a74b292a91bfaf87529a9a9a9ee66079a890b3b58b"],
+    "tx_hash_list": ["4adcdc1af3f665770cdf8fb7a380887cd07ac53c2b771bd18df5ca375d5e7540"],
+    "tx_key_list": ["5b455c0f97168be652a2c03c5c68a064bb84cdae4ddef01b5c48d73a0bbb27075fb714f2ca19ea6c8ff592417e606addea6deb1d6530e2969f75681ffcbfc4075677b94a8c9197963ae38fa6f543ee68f0a4c4bbda4c453f39538f00b28e980ea08509730b51c004960101ba2f3adbc34cbbdff0d5af9dba061b523090debd06"],
     "unsigned_txset": ""
   }
 }
@@ -1735,7 +1736,7 @@ Entrées :
 * *min_height* - entier non signé; (Optionnel) Hauteur de bloc minimale pour rechercher les transferts, si le filtrage par hauteur de bloc est activé.
 * *max_height* - entier non signé; (Opional) Hauteur de bloc maximale pour rechercher les transferts, si le filtrage par hauteur de bloc est activé (Hauteur de bloc maximale par défaut).
 * *account_index* - entier non signé; (Optionnel) Index du compte pour lequel rechercher les transferts. (0 par défaut)
-* *subaddr_indices* - liste d'entier non signé; (Optionnel) Liste d'indices de sous-adresse pour lequel rechercher les transferts. (0 par défaut)
+* *subaddr_indices* - liste d'entier non signé; (Optionnel) Liste d'indices de sous-adresse pour lequel rechercher les transferts. (vide par défaut - tous les indices)
 
 Sorties :
 

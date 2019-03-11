@@ -4,8 +4,8 @@ title: "Wallet RPC documentation"
 permalink: /resources/developer-guides/wallet-rpc.html
 mainVersion:
   - "2"
-  - "1"
-  - "1"
+  - "2"
+  - "0"
 ---
 {% t global.lang_tag %}
 {% tf resources/developer-guides/wallet-rpc.md %}
