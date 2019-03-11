@@ -1,0 +1,120 @@
+- year: 2014
+  accomplishments:
+    - name: Lançado no Bitcointalk
+      date: 2014-04-18
+      status: completed
+    - name: Renomeado de Bitmonero para Monero
+      date: 2014-04-23
+      status: completed
+    - name: Recuperado de um ataque de Spam
+      date: 2014-09-04
+      status: completed
+    - name: Publicação dos trabalhos de pesquisa nº1 e nº2 do Laboratório de Pesquisa Monero
+      date: 2014-09-12
+      status: completed
+    - name: Publicação do trabalho de pesquisa nº3 do Laboratório de Pesquisa Monero
+      date: 2014-09-25
+      status: completed
+    - name: 0.8.8.6 Lançado
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: Publicação do trabalho de pesquisa nº4 do Laboratório de Pesquisa Monero
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: 0.9.0 Hydrogen Helix lançado
+      date: 2016-01-01
+      status: completed
+    - name: Publicação do trabalho de pesquisa nº5 do Laboratório de Pesquisa Monero
+      date: 2016-02-10
+      status: completed
+    - name: Atualização da rede exigindo o tamanho mínimo de 3 nas assinaturas em anel para todas as transações
+      date: 2016-03-22
+      status: completed
+    - name: 0.10.0 Wolfram Warptangent lançado
+      date: 2016-09-18
+      status: completed
+    - name: Atualização da rede para dividir o "coinbase" em denominações
+      date: 2016-09-21
+      status: completed
+    - name: 0.10.1 Wolfram Warptangent lançado
+      date: 2016-12-14
+      status: completed
+    - name: Carteira oficial GUI Beta 1 lançada
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: Atualização da rede ativando as transações com RingCT
+      date: 2017-01-05
+      status: completed
+    - name: 0.10.2 lançado; vulnerabilidade crítica corrigida
+      date: 2017-02-22
+      status: completed
+    - name: 0.10.3.1 Wolfram Warptangent lançado
+      date: 2017-03-27
+      status: completed
+    - name: Atualização da rede para ajustar o tamanho mínimo do bloco e o algoritmo de taxas dinâmicas
+      date: 2017-04-15
+      status: completed
+    - name: Website redesenhado
+      date: 2017-07-04
+      status: completed
+    - name: 0.11.0.0 Helium Hydra lançado
+      date: 2017-09-07
+      status: completed
+    - name: Blocos fluffy
+      date: 2017-09-07
+      status: completed
+    - name: GUI deixa de ser Beta
+      date: 2017-09-10
+      status: completed
+    - name: Atualização da rede para aumentar o tamanho mínimo das assinaturas em anel para 5 e exigindo RingCT em todas as transações
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: Setembro, 2017
+      status: completed
+    - name: Subendereços
+      date: Outubro, 2017
+      status: completed
+    - name: Assinaturas múltiplas (multisig)
+      date: Dezembro, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: Novo algoritmo para Prova de Trabalho CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: Atualização da rede para aumentar o tamanho mínimo das assinaturas em anel para 7, integração do multisig, subendereços e mudança na Prova de Trabalho
+      date: 2018-04-06
+      status: completed
+    - name: Getmonero.org traduzido para Francês e Polonês
+      date: 2018-04-24
+      status: completed
+    - name: Suporte à carteira em hardware Ledger
+      date: 2018-06-04
+      status: completed
+    - name: Kovri alpha lançado
+      date: 2018-08-01
+      status: completed
+    - name: Forum Funding System redesenhado
+      date:
+      status: ongoing
+    - name: Implementação do BulletProofs no lugar do RingCT para reduzir o tamanho das transações
+      date:
+      status: ongoing
+    - name: Kovri beta lançado
+      date:
+      status: upcoming
+- year: 2019
+  accomplishments:
+    - name: Soluções de segunda camada para velocidade e escalabilidade
+      date:
+      status: upcoming
+    - name: Novos trabalhos de pesquisa do Laboratório de Pesquisa Monero
+      date:
+      status: upcoming

@@ -8,6 +8,7 @@ langs:
   ru: Русский
   de: Deutsch
   nl: Nederlands
+  pt-br: Português do Brasil
 
 global:
   date: '%Y/%m/%d'
@@ -38,7 +39,7 @@ titles:
   using: Monero nutzen
   accepting: Monero akzeptieren
   contributing: Monero verbessern
-  mining: Monero-Mining 
+  mining: Monero-Mining
   faq: FAQ
   downloads: Downloads
   allposts: Alle Blogeinträge
@@ -142,7 +143,7 @@ hangouts:
 
 merchants:
   translated: "yes"
-  intro1: Händler aller Art haben die Privatsphäre, die Monero bietet, zu schätzen gelernt. Weiter unten findest du eine Liste von vielen Firmen, die ihre Waren und Dienstleistungen im Austausch für Monero anbieten. Falls eine Firma Monero nicht mehr akzeptiert oder du hier aufgeführt sein möchtest, 
+  intro1: Händler aller Art haben die Privatsphäre, die Monero bietet, zu schätzen gelernt. Weiter unten findest du eine Liste von vielen Firmen, die ihre Waren und Dienstleistungen im Austausch für Monero anbieten. Falls eine Firma Monero nicht mehr akzeptiert oder du hier aufgeführt sein möchtest,
   intro2: erstelle eine Meldung („Issue“) auf GitLab.
   disclaimer: |
     "Beachte bitte: Die folgenden Links werden auf einer rein informativen Basis bereit gestellt; sie stellen keine Befürwortung der Monero-Community für Produkte, Dienstleistungen oder Meinungen der aufgelisteten Firmen, Organisationen oder Personen dar. Die Monero-Community übernimmt keine Verantwortung für die Richtigkeit, Legalität, oder den Inhalt der verlinkten Seiten. Bei Fragen sind die Betreiber der jeweiligen Seite zu kontaktieren. Wie immer wird eine Gewährleistung ausgeschlossen. Es ist an dir, dich selbst zu informieren. Benutze immer deinen gesunden Menschenverstand, wenn du online einkaufst."
@@ -180,7 +181,7 @@ downloads:
   blockchain3: Üblicherweise ist es allerdings schneller von Null auf zu beginnen und es benötigt auch weniger Arbeitsspeicher.
   hardware1: Die Monero-Community hat eine
   hardware2: eigene Hardware-Wallet
-  hardware3: finanziert, die aktuell in Entwicklung ist. Zusätzlich hat seit CLI 0.12.1 und GUI 0.12.3 Ledger 
+  hardware3: finanziert, die aktuell in Entwicklung ist. Zusätzlich hat seit CLI 0.12.1 und GUI 0.12.3 Ledger
   hardware4: Monero in ihre Hardware-Wallets integriert.
   mobilelight1: Nachfolgend aufgeführt sind einige Light- und Mobile-Wallets, die von der Community als sicher erachtet werden. Fehlt deiner Meinung nach eine Wallet hier, kannst du diese Wallet gerne der Community vorstellen. Gehe zu unseren
   mobilelight2: Hangouts
@@ -275,7 +276,7 @@ contributing:
   donate-btc: Bitcoin spenden
   donate-btc_para: Spenden können gesendet werden an
   donate-other: Andere
-  donate-other_para1: Schreibe eine E-Mail an 
+  donate-other_para1: Schreibe eine E-Mail an
   donate-other_para2: für andere Möglichkeiten zu spenden, oder wenn du ein Sponsor für das Monero Projekt werden möchtest.
 
 faq:
@@ -348,7 +349,7 @@ using:
   generate_para2: Downloads
   generate_para3: findest du verfügbare Wallets, die du nutzen kannst.
   generate_para4: Der einfachste Weg, einen eigenen Monero-Node zu betreiben, ohne deine eigene Internetleitung zu belasten, ist es, einen VPS (Virtuellen Privaten Server) zu kaufen. Wir empfehlen dir,
-  generate_para5: und den 
+  generate_para5: und den
   generate_para6: Coupon-Code zu nutzen, um einen Rabatt auf den bereits günstigen Preis von 6$ pro Monat und VPS zu erhalten. Durch Eingabe des Coupons und/oder Nutzung
   generate_para7: unseres Partnerlinks
   generate_para8: wird die weitere Entwicklung Moneros unterstützt.
@@ -559,7 +560,7 @@ library:
 moneropedia:
   translated: "yes"
   add_new_button: Neuen Eintrag erstellen
-  add_new_text1: Wenn es einen Eintrag gibt, den du hinzufügen oder ändern möchtest, 
+  add_new_text1: Wenn es einen Eintrag gibt, den du hinzufügen oder ändern möchtest,
   add_new_link: eröffne bitte ein neues Issue im Repository dieser Webseite auf GitLab
   add_new_text2: oder schlage Änderungen mittels eines Pull-Requests vor
   entries:
