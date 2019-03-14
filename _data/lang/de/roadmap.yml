@@ -75,18 +75,36 @@
     - name: Netzwerkupgrade, das die minimale Ringgröße auf 5 anhebt und RingCT voraussetzt
       date: 2017-09-15
       status: completed
+    - name: GUI 0.11.0.0 Helium Hydra veröffentlicht
+      date: 2017-09-24
+      status: completed
     - name: 0MQ/ZeroMQ
       date: September, 2017
       status: completed
     - name: Subadressen
       date: October, 2017
       status: completed
+    - name: „Monero Research Lab“-Paper 6 veröffentlicht
+      date: 2017-10-03
+      status: completed
+    - name: 0.11.1.0 Helium Hydra veröffentlicht
+      date: 2017-10-25
+      status: completed
+    - name: GUI 0.11.1.0 Helium Hydra veröffentlicht
+      date: 2017-10-27
+      status: completed
     - name: Mehrfachsignaturen (multisig)
       date: December, 2017
       status: completed
 - year: 2018
   accomplishments:
-    - name: Neuer PoW CryptoNoteV7
+    - name: 0.12.0.0 Lithium Luna veröffentlicht
+      date: 2018-03-24
+      status: completed
+    - name: GUI 0.12.0.0 Lithium Luna veröffentlicht
+      date: 2018-04-04
+      status: completed
+    - name: Neuer PoW CryptoNightV2
       date: 2018-04-06
       status: completed
     - name: Netzwerkupgrade, das die minimale Ringgröße auf 7 erhöht, Mehrfachsignaturen und Subadressen integriert und den PoW-Algorithmus ändert
@@ -95,23 +113,112 @@
     - name: "Getmonero.org: Übersetzungen in Französisch und Polnisch"
       date: 2018-04-24
       status: completed
+    - name: 0.12.1.0 Lithium Luna veröffentlicht
+      date: 2018-05-23
+      status: completed
     - name: Hardware-Wallets von Ledger werden unterstützt
       date: 2018-06-04
+      status: completed
+    - name: 0.12.2.0 Lithium Luna veröffentlicht
+      date: 2018-06-04
+      status: completed
+    - name: 0.12.3.0 Lithium Luna veröffentlicht
+      date: 2018-07-23
+      status: completed
+    - name: GUI 0.12.3.0 Lithium Luna veröffentlicht
+      date: 2018-07-27
       status: completed
     - name: Kovri Alpha veröffentlicht
       date: 2018-08-01
       status: completed
-    - name: Forum-Finanzierungs-System neu gestaltet
-      date:
-      status: ongoing
+    - name: Getmonero.org Moneropedia open for Localization
+      date: 2018-08-03
+      status: completed
+    - name: "Getmonero.org: Übersetzungen in Arabisch"
+      date: 2018-08-10
+      status: completed
+    - name: 0.13.0.2 Beryllium Bullet veröffentlicht
+      date: 2018-10-11
+      status: completed
+    - name: GUI 0.13.0.3 Beryllium Bullet veröffentlicht
+      date: 2018-10-14
+      status: completed
+    - name: Neuer PoW CryptoNightV3
+      date: 2018-10-18
+      status: completed
     - name: Implementation von BulletProofs anstelle von RingCT, um Transaktionsgrößen zu verringern
       date:
       status: ongoing
-    - name: Kovri Beta
-      date:
-      status: upcoming
+    - name: Network upgrade to increase minimal ringsize to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
+      date: 2018-10-18
+      status: completed
+    - name: 0.13.0.4 Beryllium Bullet veröffentlicht
+      date: 2018-10-25
+      status: completed
+    - name: „Monero Research Lab“-Papers 8 und 9 veröffentlicht
+      date: 2018-11-01
+      status: completed
+    - name: GUI 0.13.0.4 Beryllium Bullet veröffentlicht
+      date: 2018-11-19
+      status: completed
+    - name: „Monero Research Lab“-Paper 7 veröffentlicht
+      date: 2018-11-26
+      status: completed
+    - name: „Monero Research Lab“-Paper 10 veröffentlicht
+      date: 2018-12-04
+      status: completed
+    - name: Implementation of Monero Messaging System (MMS) to automate multisig wallets information exchange
+      date: 2018-12-20
+      status: completed
 - year: 2019
   accomplishments:
+    - name: Getmonero.org Localization in German
+      date: 2019-02-11
+      status: completed
+    - name: 0.14.0.0 Boron Butterfly veröffentlicht
+      date: 2019-02-25
+      status: completed
+    - name: GUI 0.14.0.0 Boron Butterfly veröffentlicht
+      date: 2019-03-01
+      status: completed
+    - name: New Community Crowdfunding System (CCS) to replace the Forum Funding System (FFS)
+      date: 2019-03-06
+      status: completed
+    - name: 0.14.0.2 Boron Butterfly veröffentlicht
+      date: 2019-03-08
+      status: completed
+    - name: Neuer PoW CryptoNightR
+      date: 2019-03-09
+      status: completed
+    - name: "Getmonero.org: Übersetzungen in Brasilien-Portugiesisch und Niederländisch"
+      date: 2019-03-12
+      status: completed
+    - name: Trezor Hardware Wallets Support
+      date:
+      status: ongoing
+    - name: Pruning nodes
+      date:
+      status: ongoing
+    - name: Broadcast transaction over Tor
+      date:
+      status: upcoming
+    - name: tini2p integration
+      date:
+      status: upcoming
+    - name: Kovri Integration
+      date:
+      status: upcoming
+    - name: Return address
+      date:
+      status: upcoming
+    - name: Neuer PoW RandomX
+      date: 
+      status: upcoming
+- year: 2020
+  accomplishments:
+    - name: Anonymity network aggregator for data transmission
+      date:
+      status: upcoming
     - name: Zweitschichtlösungen für bessere Geschwindigkeit und Skalierbarkeit
       date:
       status: upcoming

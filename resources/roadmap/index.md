@@ -80,7 +80,7 @@ permalink: /resources/roadmap/index.html
                         {%endfor%}
                     </div>
                     <label for="tab-4" tabindex="0"></label>
-                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
+                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true">
                     <h2>2017</h2>
                     <div class="tabPanel-content">
                         {% for toplevel in site.data.lang[site.lang].roadmap %}
@@ -103,7 +103,7 @@ permalink: /resources/roadmap/index.html
                         {%endfor%}
                     </div>
                     <label for="tab-5" tabindex="0"></label>
-                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
+                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
                     <h2>2018</h2>
                     <div class="tabPanel-content">
                         {% for toplevel in site.data.lang[site.lang].roadmap %}
@@ -126,11 +126,34 @@ permalink: /resources/roadmap/index.html
                         {%endfor%}
                     </div>
                     <label for="tab-6" tabindex="0"></label>
-                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true">
-                    <h2>{% t roadmap.future %}</h2>
+                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <h2>2019</h2>
                     <div class="tabPanel-content">
                         {% for toplevel in site.data.lang[site.lang].roadmap %}
                             {% if toplevel.year == 2019 %}
+                                {% for roadlist in toplevel.accomplishments %}
+                                    <div class="row start-xs middle-xs">
+                                        <div class="col-xs-1">
+                                            <span class="{{roadlist.status}}"></span>
+                                        </div>
+                                        <div class="col-xs-11">
+                                            {% if roadlist.date %}
+                                                <p>{{roadlist.date}}: {{roadlist.name}}</p>
+                                            {%else%}
+                                                <p>{{roadlist.name}}</p>
+                                            {%endif%}
+                                        </div>
+                                    </div>
+                                {%endfor%}
+                            {%endif%}
+                        {%endfor%}
+                    </div>
+                    <label for="tab-7" tabindex="0"></label>
+                    <input id="tab-7" type="radio" name="tabs" aria-hidden="true">
+                    <h2>{% t roadmap.future %}</h2>
+                    <div class="tabPanel-content">
+                        {% for toplevel in site.data.lang[site.lang].roadmap %}
+                            {% if toplevel.year == 2020 %}
                                 {% for roadlist in toplevel.accomplishments %}
                                     <div class="row start-xs middle-xs">
                                         <div class="col-xs-1">
