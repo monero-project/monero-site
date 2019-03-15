@@ -36,17 +36,17 @@ Jekyll::Hooks.register :site, :post_write do |site|
   guides = Dir.glob(guides_dir)
   # For each guide folder, get the screenshot files
   guides.each do |guide|
-    files_dir = File.join(source, "/_i18n/", lang, "/resources/user-guides/png/", guide, "/*")
+    guidename = File.basename(guide)
+    files_dir = File.join(guide, "/*")
     files = Dir.glob(files_dir)
     # For each screenshot, do the copy
     files.each do |file|
-      file_path = "#{source}/_i18n/#{lang}/resources/user-guides/png/#{guide}/#{file}"
       if lang == 'en'
-        dest_path = "#{destination}/ressources/user-guides/png/"
+        dest_path = "#{destination}/resources/user-guides/png/#{guidename}/"
       else
-        dest_path = "#{destination}/#{lang}/ressources/user-guides/png/"
+        dest_path = "#{destination}/#{lang}/resources/user-guides/png/#{guidename}/"
       end
-      FileUtils.cp(file_path, dest_path)
+      FileUtils.cp(file, dest_path)
     end
   end
 end
