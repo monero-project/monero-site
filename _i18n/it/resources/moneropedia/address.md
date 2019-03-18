@@ -10,7 +10,7 @@ When you send Monero to someone you only need one piece of information, and that
 
 Because those addresses are long and complex, you will often encounter an @OpenAlias address instead. For example, Monero donations can be sent to <span class="long-term">donate@getmonero.org</span> or <span class="long-term">donate.getmonero.org</span>.
 
-If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](/resources/openalias).
+If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](/it/the-monero-project/).
 
 ### Integrated address
 

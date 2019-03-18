@@ -9,7 +9,7 @@ Lorsque vous envoyez des Moneroj à quelqu'un, vous n'avez besoin que de cette i
 
 Comme ces adresses sont longues et complexes, vous rencontrerez souvent une adresse @OpenAlias à la place. Par exemple, les dons à Monero peuvent être envoyés à <span class="long-term">donate@getmonero.org</span> ou <span class="long-term">donate.getmonero.org</span>.
 
-Si vous voulez disposer de votre propre adresse @OpenAlias, vous trouverez des informations sur la [page OpenAlias](/resources/openalias).
+Si vous voulez disposer de votre propre adresse @OpenAlias, vous trouverez des informations sur la [page OpenAlias](/fr/the-monero-project/).
 
 ### Adresse intégrée
 
