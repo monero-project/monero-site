@@ -1,5 +1,5 @@
-{% assign version = '1.2.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% assign version = '1.3.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 Portfel tylko do odczytu wyświetla jedynie twoje przychodzące transakcje. Nie może on dokonać żadnej płatności, nie może nawet wyświetlić żadnej transakcji wychodzącej. Portfel tylko do odczytu może być ciekawą opcją dla:
 
 * deweloperów, którzy tworzą biblioteki w celu sprawdzania poprawności płatności
@@ -21,13 +21,7 @@ Otwórz istniejący portfel lub stwórz nowy, za pomocą funkcji `monero-wallet-
 
 ![settings](png/view-only/settings.png)
 
-Kliknij w przycisk `Utwórz portfel tylko do podglądu` > `Utwórz portfel`, nadaj nazwę portfelowi i wybierz jego lokalizację, a następnie kliknij w strzałkę w `prawo`:
-
-![create-view-only](png/view-only/create-view-only.png)
-
-Nadaj swojemu portfelowi tylko do odczytu silne hasło i potwierdź je, a następnie kliknij w `Utwórz portfel`.:
-
-![wallet-password](png/view-only/wallet-password.png)
+Kliknij w przycisk `Utwórz portfel tylko do podglądu` > `Utwórz portfel`, the wallet will be created within the same directory and using your current password.
 
 Możesz dwukrotnie kliknąć w okno `Sukces`, aby skopiować wiadomość, a następnie kliknij `OK`, aby je zamknąć:
 

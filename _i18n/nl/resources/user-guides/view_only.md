@@ -1,5 +1,5 @@
-{% assign version = '1.2.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% assign version = '1.3.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 Met een alleen-lezen portemonnee kun je alleen zien welke binnenkomende transacties van jou zijn. Je kunt er geen Monero mee uitgeven. Sterker nog, je kunt zelfs uitgaande transacties vanuit deze portemonnee niet zien. Alleen-lezen portemonnees zijn daarom interessant voor:
 
 * Ontwikkelaars die libraries voor het valideren van betalingen programmeren
@@ -21,13 +21,7 @@ Open een bestaande portemonnee of maak een nieuwe met `monero-wallet-gui`. Ga in
 
 ![settings](png/view-only/settings.png)
 
-Klik op `Maak een alleen-lezen portemonnee aan` > `Portemonnee maken`, geef een naam en een opslaglocatie op, en klik daarna op de pijl naar rechts:
-
-![create-view-only](png/view-only/create-view-only.png)
-
-Geef je alleen-lezen portemonnee een sterk wachtwoord en bevestig dit voordat je op `Portemonnee maken` klikt:
-
-![wallet-password](png/view-only/wallet-password.png)
+Klik op `Maak een alleen-lezen portemonnee aan` > `Portemonnee maken`, the wallet will be created within the same directory and using your current password.
 
 Dubbelklik eventueel op het scherm `Geslaagd` om het bericht te kopiëren en klik vervolgens op `OK` om het te sluiten:
 

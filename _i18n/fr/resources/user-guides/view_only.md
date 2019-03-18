@@ -1,4 +1,4 @@
-{% assign version = '1.2.0' | split: '.' %}
+{% assign version = '1.3.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 Un portefeuille d'audit ne peut que voir quelles transactions entrantes vous appartiennent. Il ne peut pas dépenser vos Moneroj, en fait il ne peut même pas voir les transactions sortantes de votre portefeuille. Cela rend le portefeuille d'audit particulièrement intéressant pour :
 
@@ -21,14 +21,8 @@ Ouvrez un portefeuille existant ou créez en un nouveau en utilisant `monero-wal
 
 ![settings](png/view-only/settings.png)
 
-Cliquez sur `Créer un portefeuille d'audit` > `Créer un portefeuille`, Puis donnez lui un nom et un emplacement de stockage avant de cliquer sur la flèche `Droite` :
+Cliquez sur `Créer un portefeuille d'audit` > `Créer un portefeuille`, le portefeuille sera créé dans le même répertoire et en utilisant le mot de passe actuel.
 
-![create-view-only](png/view-only/create-view-only.png)
-
-Donnez un mot de passe fort à votre portefeuille d'audit et confirmez-le avant de cliquer sur `Créer un portefeuille`:
-
-![wallet-password](png/view-only/wallet-password.png)
-
-Optionnellement, double-cliquez sur la fenêtre de `Succès` pour en copier le message, puis cliquez sur `OK` pour la fermer :
+Optionnellement, double-cliquez sur la fenêtre de `Succès` pour en copier le message, puis cliquez sur `OK` pour le fermer :
 
 ![Success](png/view-only/Success.png)
