@@ -59,7 +59,7 @@ The MMS basically has 3 parts:
 
 The author of the MMS hopes that you will give it a try: PyBitmessage is fully open source, is under continued development, has enough users to almost assure message transport at any time, and takes privacy very seriously - just like Monero.
 
-Hopefully a future MMS will build on Monero's "native" private communication system, [Kovri](https://getkovri.org/), but we are probably still quite some time away from a Kovri release ready for broad use.
+Hopefully a future MMS will build on Monero's "native" private communication system, [Kovri](https://kovri.io/), but we are probably still quite some time away from a Kovri release ready for broad use.
 
 MMS communications should be **safe**: The Bitmessage system is considered safe as it's completely invisible who sends messages to whom, and all traffic is encrypted. For additional safety the MMS encrypts any message contents itself as well: Nobody except the receiver of an MMS message can decrypt and use its content, and the messages are signed, meaning the receiver can be sure they come from the right sender.
 
