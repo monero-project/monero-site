@@ -297,6 +297,8 @@
   merchants:
     - name: Accessory Authority
       url: https://www.accessoryauthority.com/
+      name: Airport Decor - Decor for Aviation Lovers
+      url: https://AirportDecor.com/
     - name: Alagoria - Crypto Retail Shopping
       url: https://alagoria.com/
     - name: All For Crypto
@@ -383,6 +385,8 @@
       url: https://www.mobisun.com/
     - name: mojave.cafe
       url: https://mojave.cafe/
+      name: Monero.style - Monero themed merchandise for everybody
+      url: https://monero.style/
     - name: MoneroApparel - Merchandise
       url: https://moneroapparel.com/
     - name: Monerobox - Monero plug-and-play full nodes
