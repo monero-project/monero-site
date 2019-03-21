@@ -1,4 +1,4 @@
-{% assign version = '2.1.0' | split: '.' %}
+{% assign version = '2.2.0' | split: '.' %}
 {% include disclaimer.html translated="false" version=page.version %}
 ## Introduction
 
@@ -573,7 +573,7 @@ Inputs:
   * *amount* - unsigned int; Amount to send to each destination, in @atomic-units.
   * *address* - string; Destination public address.
 * *account_index* - unsigned int; (Optional) Transfer from this account index. (Defaults to 0)
-* *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to 0)
+* *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to empty - all indices)
 * *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Number of outputs to mix in the transaction (this output + N decoys from the blockchain).
@@ -629,7 +629,7 @@ Inputs:
   * *amount* - unsigned int; Amount to send to each destination, in @atomic-units.
   * *address* - string; Destination public address.
 * *account_index* - unsigned int; (Optional) Transfer from this account index. (Defaults to 0)
-* *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to 0)
+* *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to empty - all indices)
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
@@ -655,15 +655,16 @@ Outputs:
 Example:
 
 ```
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":1000000000000,"address":"7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"},{"amount":2000000000000,"address":"75sNpRwUtekcJGejMuLSGA71QFuK1qcCVLZnYRTfQLgFU5nJ7xiAHtR5ihioS53KMe8pBhH61moraZHyLoG4G7fMER8xkNv"}],"account_index":0,"subaddr_indices":[0],"priority":0,"ring_size":7,"get_tx_key": true}}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer_split","params":{"destinations":[{"amount":1000000000000,"address":"7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o"},{"amount":2000000000000,"address":"75sNpRwUtekcJGejMuLSGA71QFuK1qcCVLZnYRTfQLgFU5nJ7xiAHtR5ihioS53KMe8pBhH61moraZHyLoG4G7fMER8xkNv"}],"account_index":0,"subaddr_indices":[0],"priority":0,"ring_size":7,"get_tx_keys": true}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
     "amount_list": [3000000000000],
-    "fee_list": [85106400000],
+    "fee_list": [473710000],
     "multisig_txset": "",
-    "tx_hash_list": ["c8d815f48f27d53fdaf198a74b292a91bfaf87529a9a9a9ee66079a890b3b58b"],
+    "tx_hash_list": ["4adcdc1af3f665770cdf8fb7a380887cd07ac53c2b771bd18df5ca375d5e7540"],
+    "tx_key_list": ["5b455c0f97168be652a2c03c5c68a064bb84cdae4ddef01b5c48d73a0bbb27075fb714f2ca19ea6c8ff592417e606addea6deb1d6530e2969f75681ffcbfc4075677b94a8c9197963ae38fa6f543ee68f0a4c4bbda4c453f39538f00b28e980ea08509730b51c004960101ba2f3adbc34cbbdff0d5af9dba061b523090debd06"],
     "unsigned_txset": ""
   }
 }
@@ -1737,7 +1738,7 @@ Inputs:
 * *min_height* - unsigned int; (Optional) Minimum block height to scan for transfers, if filtering by height is enabled.
 * *max_height* - unsigned int; (Opional) Maximum block height to scan for transfers, if filtering by height is enabled (defaults to max block height).
 * *account_index* - unsigned int; (Optional) Index of the account to query for transfers. (defaults to 0)
-* *subaddr_indices* - array of unsigned int; (Optional) List of subaddress indices to query for transfers. (defaults to 0)
+* *subaddr_indices* - array of unsigned int; (Optional) List of subaddress indices to query for transfers. (Defaults to empty - all indices)
 
 Outputs:
 
