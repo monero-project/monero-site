@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% assign version = '3.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Monero (XMR) minen zonder miningapparatuur
 
@@ -41,7 +41,7 @@ Je kunt je favoriete pools op [deze pagina](https://www.nicehash.com/?p=managepo
 ### **Stap 4.** Geef een nieuwe order op en begin te minen
 
 Let bij het opgeven van een [nieuwe order](https://www.nicehash.com/?p=orders&new) op dat je
-het algoritme CryptoNightV8 voor het minen van Monero selecteert. (De nieuwe variant van het algoritme sinds 18 oktober 2018.) Als je eerst meer wilt weten over
+het algoritme CryptoNightR voor het minen van Monero selecteert. (De nieuwe variant van het algoritme sinds 9 maart 2019.) Als je eerst meer wilt weten over
 hoe je een order opgeeft bij NiceHash, raden we je aan [het antwoord op deze vraag](https://www.nicehash.com/?p=faq#faqb0) te lezen.
 
 Als je wilt bieden op
