@@ -59,10 +59,21 @@ layout: custom
                                         <h2>Popular Tags</h2>
                                     </div>
                                 </div>
-                                    {% for tag in site.data.tags limit:4 %}
+                                {% capture taglist %}
+                                  {% for site_tag in site.tags %}
+                                    {% for data_tag in site.data.tags %}
+                                      {% if data_tag.slug == site_tag[0] %}
+                                        ;{{ site_tag[1].size | plus: 100000 }}#{{ data_tag.name }}#{{ data_tag.slug }}
+                                      {% endif %}
+                                    {% endfor %}
+                                  {% endfor %}
+                                {% endcapture %}
+                                {% assign sortedtags = taglist | strip | remove_first: ';' | split:';' | sort | reverse %}
+                                {% for tagitem in sortedtags limit: 6 %}
+                                  {% assign pop_tag = tagitem | strip |  split: '#' %}
                                     <div class="row start-xs">
                                         <div class="col">
-                                             <p><a href="/blog/tags/{{ tag.slug }}.html">{{ tag.name }}</a></p>
+                                             <p><a href="/blog/tags/{{ pop_tag[2] }}.html">{{ pop_tag[1] }}</a></p>
                                          </div>
                                      </div>
                                      {% endfor %}
