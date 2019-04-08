@@ -1785,7 +1785,7 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 
 .btn-fixed {
-    width: 15rem;
+    width: 17rem;
     display: block;
 }
 
@@ -3929,13 +3929,13 @@ p.hangouts-social {
 /**************************MONERO PROJECT***********************/
 
 .monero-project p {
-    height: 13rem;
+    height: 14rem;
 }
 
 @media only screen and (max-width: 75rem) {
 
 .monero-project p {
-    height: 12rem;
+    height: 15rem;
 }
 
 }
