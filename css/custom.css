@@ -525,6 +525,10 @@
 }
 
 @media only screen and (min-width: 62em) {
+  .topnav-list .end-xs .col-md-12 {
+    margin-right: 3.5rem;
+  }
+  
   .container {
     width: 61rem;
   }
@@ -1850,11 +1854,12 @@ img.monero-logo {
     position: relative;
     display: inline-block;
     padding: 0;
-    margin-right: 3.5rem;
+    /*margin-right: 3.5rem;*/
 }
 
 .topnav .topnav-list .language-change label {
     height: 100%;
+    min-width: 75px;
     /*width: 100%;*/
     padding: 0.8rem 1rem;
     display: block;
@@ -2047,8 +2052,12 @@ img.monero-logo {
 
 @media only screen and (max-width: 75rem) {
 
+.topnav-list .end-xs .col-md-12 {
+  margin-right: 3.1rem;
+}
+
 .topnav .topnav-list .top-link.language-change {
-    margin-right: 3.1rem;
+    /*margin-right: 3.1rem;*/
     font-size: 0.85rem;
 }
 
@@ -2062,6 +2071,8 @@ img.monero-logo {
 
 .topnav .topnav-list .top-link {
     padding: 0.8rem 0.5rem;
+    max-width: 22%;
+    vertical-align: middle;
 }
 
 .topnav .topnav-list .language-change .dropdown-content {
