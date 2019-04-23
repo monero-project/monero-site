@@ -1,31 +1,30 @@
 ---
 terms: ["bulletproofs", "bulletproof"]
-summary: "a new kind of range proofs replacing RingCT in transactions to obfuscate the amounts sent"
+summary: "новый вид доказательства диапазона, заменяющий RingCT в транзакциях, для запутывания отправляемых сумм"
 ---
 
-{% include untranslated.html %}
-### The Basics
-@RingCT was introduced to obfuscate transaction amounts. One goal of @RingCT was to prove the sum of inputs - outputs in the @transaction was equal to 0, and all outputs were positive numbers.  
-To accomplish this, two kind of ring signatures were constructed: One ring signature for the whole transaction (to prove the sum is 0), and a set of ring signatures for the subsets of transaction bits (to prove the outputs are positive numbers), then combined together using originally Schnorr signatures (and later replaced by Borromean ring signature).  
-While it was doing the job, a big drawback was the huge size of such a ringCT transaction.
+### Основы
+Целью введения протокола @RingCT было сокрытие сумм, переводимых при совершении транзакций. Одной из задач @RingCT также было доказательство суммы выходов — выходы @транзакции были равны 0, а все выходы были представлены положительными числами.  
+Чтобы решить эту задачу, было построено два типа кольцевых подписей: одна кольцевая подпись для всей транзакции (чтоб доказать, что сумма является нулевой) и набор кольцевых подписей для поднаборов битов транзакций (позднее были заменены кольцевой подписью Борромео).  
+Несмотря на то, что протокол работал и решал свою задачу, у него был один серьёзный недостаток: огромный размер таких RingCT транзакций.
 
-### Where it comes to bulletproofs
-Back in 2017, a [Standford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  
+### Как появились Bulletproofs
+В 2017 году [группой исследователей](https://crypto.stanford.edu/bulletproofs/), работающих в области прикладной криптографии, из Стэнфорда была написана [работа](https://eprint.iacr.org/2017/1066.pdf), в которой предлагался новый вид доказательств диапазона под названием Bulletproofs.  
 
-> Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted setup.
+> Bulletproofs являются короткими неинтерактивными доказательствами с нулевым раскрытием конфиденциальной информации, не требующими доверенных настроек.
 
-Bulletproofs, unlike Borromean or Schnorr signatures, are very efficient as range proofs. Proving a big set of data only generates a small proof, and the size of this proofs grows logarithmically with the size of the data being proved.  
-It means that increasing the number of outputs in a transaction will, with bulletproofs only slightly increase the size of the proof.  
-Bulletproofs also have the advantage to allow to prove that multiple committed amounts are in the desired range at once. No need to prove each output to each destination in separate proofs; the whole transaction amounts could be proven in one bigger (but still very small) bulletproof.
+Bulletproofs, в отличие от подписей Борромео и Шнорра, являются довольно эффективным доказательством диапазона. При доказательстве большого объёма данных генерируется небольшое доказательство, а размер подобных доказательств растёт логарифмически по мере роста объёма доказываемых данных.  
+Это означает, что увеличение количества выходов в транзакции при использовании Bulletproofs лишь незначительно увеличит размер доказательства.  
+Другим преимуществом также является то, что они позволяют одновременно доказать, что множество подтверждённых сумм находится в пределах желаемого диапазона. Необходимость в доказательстве каждого выхода, передаваемого в любом направлении, отдельным доказательством отсутствует; все суммы транзакций могут быть доказаны одним большим (но всё же небольшим) доказательством Bulletproof.
 
-### Thorough audit process and implementation
-As bulletproofs were really new, and the initial implementation made by the group, while thoroughly done, needed a rewrite focused on our specific use-case, implementing bulletproof in Monero was not a simple thing.  
-The code has been written and rewritten to follow the new version of bulletproofs which was still being developed, but once this Monero implementation was finalized, the resulting deployment should be taken with extreme care.  
-Therefore, the community started an auditing process. Researchers reached out to Benedikt Bünz, lead author of the Bulletproofs paper, and to [OSTIF](https://ostif.org/) an organization which helps open source technologies to improve and secure themselves.  
-OSTIF directed the group to several organizations with the skills required to perform the audit. While one of them asked to be kept unnamed and was therefore put away from the process that needed to be public, two others (QuarksLab & Kudelski Security) were choosen to conduct the audit.  
-Our 3 auditors were funded by the community to check out the if the implementation did not did not contain critical bugs, and if it did not have any exploits.  
-The final reports were released during the summer of 2018, with several useful corrections and fixes suggested, and the final bulletproof implementation has been added first to Monero Stagenet, and then to the main Monero network during the October 2018 network upgrade.
+### Процесс глубокого аудита и реализации
+Так как доказательства Bulletproofs были абсолютно новой технологией, начальная реализация, выполненная группой, даже несмотря на то, что она была тщательно проработана, требовала редакции с учётом определённых вариантов использования, так что реализация Bulletproofs в рамках Monero стала довольно непростым делом.  
+Код писался и переписывался в соответствии с новой версией Bulletproofs, которая всё ещё находилась в разработке. Но как только реализация доказательств для Monero была завершена, стало ясно, что ввод технологии в эксплуатацию требует предельной осторожности.  
+Поэтому сообществом был запущен процесс аудита. Исследователи связались с Бенедиктом Бюнцем (Benedikt Bünz), главным автором работы по Bulletproofs, и с [OSTIF](https://ostif.org/), организацией, которая помогает улучшать и обеспечивать безопасность открытых технологий.  
+OSTIF была направлена группа специалистов из нескольких организаций, обладающих необходимыми для проведения аудита навыками. Несмотря на то, что один из специалистов пожелал сохранить анонимность и был отстранён от процесса, так как процесс в данном случае требовал публичности, двое других (QuarksLab & Kudelski Security) были выбраны для проведения аудита.  
+Работа трёх аудиторов финансировалась сообществом и была направлена на то, чтобы гарантировать отсутствие в реализации критических багов, а также эксплоитов.  
+Окончательные отчёты были выпущены летом 2018 года. При этом было предложено внести несколько полезных исправлений. Окончательный вариант реализации Bulletproofs сначала был добавлен в стендовую сеть Monero, а затем, в октябре 2018, в основную сеть в рамках её обновления.
 
-Since the bulletproofs deployment, the size of an average transaction has dropped by at least 80%, as well as the transaction fees.
+После введения Bulletproofs в эксплуатацию средний размер транзакций сократился, по крайней мере, на 80%, равно как и размер комиссий за проведение транзакций.
 
-More explanations on Monero's implementation of bulletproofs could be found on youtube fondajo channel in a [conversation with Sarang Noether](https://www.youtube.com/watch?v=6lEWqIMLzUU).
+Более подробную информацию по реализации Bulletproofs Monero можно найти на YouTube канале fondajo [в интервью с Сарангом Ноезером (Sarang Noether)](https://www.youtube.com/watch?v=6lEWqIMLzUU).
