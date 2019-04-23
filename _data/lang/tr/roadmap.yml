@@ -1,0 +1,120 @@
+- year: 2014
+  accomplishments:
+    - name: Bitcointalk'ta faaliyete geçti
+      date: 2014-04-18
+      status: completed
+    - name: İsmi Bitmonero'dan Monero'ya değiştirildi
+      date: 2014-04-23
+      status: completed
+    - name: Bir spam saldırıyı atlattı
+      date: 2014-09-04
+      status: completed
+    - name: Monero Araştırma Laboratuvarı Makale 1 ve 2 yayınlandı
+      date: 2014-09-12
+      status: completed
+    - name: Monero Araştırma Laboratuvarı Makale 3 yayınlandı
+      date: 2014-09-25
+      status: completed
+    - name: 0.8.8.6 yayınlandı
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: Monero Araştırma Laboratuvarı Makale 4 yayınlandı
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: 0.9.0 Hydrogen Helix yayınlandı
+      date: 2016-01-01
+      status: completed
+    - name: Monero Araştırma Laboratuvarı Makale 5 yayınlandı
+      date: 2016-02-10
+      status: completed
+    - name: Tüm işlemlerde asgari 3 halkaboyunun zorunlu kılınması için ağ yükseltildi
+      date: 2016-03-22
+      status: completed
+    - name: 0.10.0 Wolfram Warptangent yayınlandı
+      date: 2016-09-18
+      status: completed
+    - name: Para tabanının birimlere ayrılması için ağ yükseltildi
+      date: 2016-09-21
+      status: completed
+    - name: 0.10.1 Wolfram Warptangent yayınlandı
+      date: 2016-12-14
+      status: completed
+    - name: Resmi GUI Beta 1 yayınlandı
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: RingCT işlemlerinin etkinleştirilmesi için ağ yükseltildi
+      date: 2017-01-05
+      status: completed
+    - name: 0.10.2 yayınlandı; kritik zaaf yamalandı
+      date: 2017-02-22
+      status: completed
+    - name: 0.10.3.1 Wolfram Warptangent yayınlandı
+      date: 2017-03-27
+      status: completed
+    - name: Asgari blok boyutu ve dinamik ücret algoritmasının ayarlanması için ağ yükseltildi
+      date: 2017-04-15
+      status: completed
+    - name: Web sitesi yeniden tasarlandı
+      date: 2017-07-04
+      status: completed
+    - name: 0.11.0.0 Helium Hydra yayınlandı
+      date: 2017-09-07
+      status: completed
+    - name: Pofuduk bloklar
+      date: 2017-09-07
+      status: completed
+    - name: GUI betadan çıktı
+      date: 2017-09-10
+      status: completed
+    - name: Asgari halka boyutunu 5'e artırılması ve RingCT işlemlerini zorunlu kılınması için ağ yükseltildi
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: Altadresler
+      date: October, 2017
+      status: completed
+    - name: Çoklu-imzalar (multisig)
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: Yeni İş Kanıtı CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: Asgari halka boyutunun 7'ye yükseltilmesi, çoklu-imzaların, altadreslerin entegre edilmesi ve PoW algoritmasını değiştirilmesi için ağ yükseltildi
+      date: 2018-04-06
+      status: completed
+    - name: Getmonero.org'un Fransızca ve Polonyacaya yerelleştirilmesi
+      date: 2018-04-24
+      status: completed
+    - name: Ledger Donanım Cüzdanları Desteği
+      date: 2018-06-04
+      status: completed
+    - name: Kovri alfa yayını
+      date: 2018-08-01
+      status: completed
+    - name: İşlem boyutlarının düşürülmesi için Kurşun-geçirmezlerin uygulamaya konulması
+      date: 2018-10-18
+      status: completed
+    - name: Forum Fonlama Sistemi yeniden tasarımı
+      date:
+      status: ongoing
+    - name: Kovri'nin Uygulamaya Konulması
+      date:
+      status: upcoming
+- year: 2019
+  accomplishments:
+    - name: Hız ve ölçeklenebilirlik için ikinci-katman çözümler
+      date:
+      status: upcoming
+    - name: Ek MAL araştırma makaleleri
+      date:
+      status: upcoming
