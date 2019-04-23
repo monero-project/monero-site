@@ -15,4 +15,4 @@ summary: "Стандарт, который позволяет использов
 
 При проведении платежей этот стандарт позволяет использовать адрес электронной почты или доменное имя вместо обычного адреса, например, donate@getmonero.org или donate.getmonero.org.
 
-Больше информации вы найдёте на странице [OpenAlias](/resources/openalias) или посетив [веб-сайт OpenAlias](https://openalias.org)
+Больше информации вы найдёте на странице [OpenAlias](/ru/the-monero-project/) или посетив [веб-сайт OpenAlias](https://openalias.org)
