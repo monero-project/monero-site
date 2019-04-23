@@ -77,6 +77,8 @@
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
     - name: Trovemat.com (ATM)
       url: https://trovemat.com/
+    - name: Swaplab
+      url: https://swaplab.cc/
 - category: Block Explorers
   id: block-explorers
   merchants:
