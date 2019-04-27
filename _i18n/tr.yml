@@ -32,7 +32,7 @@ global:
   outdatedMin: Bu sayfa çeviriden sonra güncellendi. Bu sürümü kullanabilirsiniz, ancak eksik olabilir.
   upgrade: Monero kullanmaya devam etmek için yazılımınızın 9 Mart ağ yükseltmesine güncellediğinden emin olun.
   moreinfo: Daha fazla bilgi
-  lang_tag: "@lang_tag_en"
+  lang_tag: "@lang_tag_tr"
 
 titles:
   index: Ana Sayfa
