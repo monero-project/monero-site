@@ -177,6 +177,7 @@ downloads:
   note2: " . Bestätigen kannst du diese, wenn die Signatur mit dem entsprechenden GPG-Schlüssel im Quellcode (in /utils/gpg_keys) übereinstimmt."
   currentversion: Aktuelle Version
   sourcecode: Quellcode
+  mirror: Mirror
   blockchain1: Wenn du nicht von Null auf die Blockchain herunterladen möchtest, kannst du eine Vorlage unter
   blockchain2: diesem Link für die aktuellste Vorlage finden.
   blockchain3: Üblicherweise ist es allerdings schneller von Null auf zu beginnen und es benötigt auch weniger Arbeitsspeicher.
@@ -440,7 +441,7 @@ user-guides:
   restore-from-keys: Wallet mit privaten Schlüsseln wiederherstellen
   nicehash: Monero (XMR) ohne spezielle Hardware minen
   ledger-wallet-cli: Eine Wallet mit Ledger erstellen (Befehlszeile)
-  multisig-messaging-system:
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
 
 roadmap:
   translated: "yes"

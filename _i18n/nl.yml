@@ -189,6 +189,7 @@ downloads:
   mobilelight2: Ontmoetingsplekken
   mobilelight3:  staat waar je ons kunt vinden.
   clionly: Alleen opdrachtregeltools
+  installer: Installer
 
 monero-project:
   translated: "yes"
@@ -229,6 +230,7 @@ accepting:
   basics_para2: Maar omdat Monero @stealth-addresses heeft, is het niet nodig om afzonderlijke ontvangstadressen te gebruiken voor elke betaling of gebruiker. Je kunt gewoon één adres als rekening (@account) publiceren. Verkopers die betalingen ontvangen geven de klant een "betalings-ID".
   basics_para3: "Een @payment-ID is een hexadecimale tekenreeks van 64 tekens, die normaal gesproken door de verkoper wordt gegenereerd. Een voorbeeld van een betalings-ID is:"
   controleren: Een betaling opzoeken in monero-wallet-cli
+  checking: Checking for a Payment in monero-wallet-cli
   checking_para1: |
     Als je een betaling wilt opzoeken met monero-wallet-cli, gebruik je de opdracht "payments" gevolgd door de betalings-ID(s) die je wilt opzoeken. Bijvoorbeeld:
   checking_para2: Uitleg van het geautomatiseerd opzoeken van betalingen volgt hieronder.

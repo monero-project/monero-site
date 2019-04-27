@@ -177,6 +177,7 @@ downloads:
   note2: i jest uznawana za ogónie przyjętą, z podpisem zweryfikowanym przeciwko odpowiedniemu kluczowi GPG w kodzie źródłowym (in /utils/gpg_keys).
   currentversion: Obecna wersja
   sourcecode: Kod źródłowy
+  mirror: Mirror
   blockchain1: Jeśli wolisz użyć bootstrap łańcucha bloków zamiast synchronizować od zera, możesz
   blockchain2: użyć tego linka do najnowszego bootstrapa.
   blockchain3: Jednak synchronizacja od zera przeważnie jest dużo szybsza i zajmuje dużo mniej pamięci RAM (importowanie jest bardzo zachłanne).
@@ -426,22 +427,22 @@ user-guides:
   import-blockchain: Importowanie łańcucha bloków Monero
   monero-tools: Narzędzia Monero
   purchasing-storing: Bezpieczne kupowanie i przechowywanie Monero
-  verify-allos:
-  verify-windows:
+  verify-allos: Verify binaries on Linux, Mac, or Windows command line (advanced)
+  verify-windows: Verify binaries on Windows (beginner)
   mine-on-pool: Jak wydobywać w zrzeszeniu za pomocą xmr-stak-cpu
   solo-mine: Jak wydobywać samemu za pomocą Graficznego Interfejsu Użytkownika
   mine-docker: Wydobywanie za pomocą Dockera i XMRig
   locked-funds: Jak odzyskać zablokowane fundusze
   restore-account: Jak odzyskać konto
-  qubes:
+  qubes: CLI wallet/daemon isolation with Qubes + Whonix
   cli-wallet: Wprowadzenie do portfela w Interfejsie Wiersza Poleceń
   remote-node-gui: Jak się połączyć ze zdalnym węzłem w portfelu Graficznego Interfejsu Użytkownika
   view-only: Jak założyć portfel tylko do wyświetlania
   prove-payment: Jak udowodnić płatność
   restore-from-keys: Przywracanie portfela za pomocą kluczy
   nicehash: Jak wydobywać Monero (XMR) bez sprzętu wydobywczego
-  ledger-wallet-cli:
-  multisig-messaging-system:
+  ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
 
 roadmap:
   translated: "yes"

@@ -30,6 +30,8 @@ global:
   outdatedMax: Эта страница устарела. Мы рекомендуем вам не полагаться на нее и вместо этого перейти к
   outdatedVersion: английской версии
   outdatedMin: Эта страница была обновлена с момента перевода. Вы можете использовать данную версию, но она может быть неточной.
+  upgrade: To continue using Monero, make sure your software is up-to-date with the March 9th network upgrade.
+  moreinfo: More info
   lang_tag: "@lang_tag_ru"
 
 titles:
@@ -175,6 +177,7 @@ downloads:
   note2: и должен рассматриваться как канонический, при этом подпись проверяется соответствующим ключом GPG в исходном коде (в / utils / gpg_keys).
   currentversion: Актуальная версия
   sourcecode: Исходный код
+  mirror: Mirror
   blockchain1: Если вы предпочитаете скачивать блокчейн отдельно, вместо полной синхронизации, вы можете
   blockchain2: использовать эту ссылку для загрузки актуальной версии блокчейна Monero.
   blockchain3: Как правило, гораздо быстрее выполнить синхронизацию в клиенте Monero с нуля. На процесс полной синхронизации требуется намного меньше вычислительной мощности вашего компьютера (процесс импорта очень ресурсоемкий).
@@ -186,6 +189,7 @@ downloads:
   mobilelight2: Месту встречи,
   mobilelight3: чтобы увидеть, как с нами связаться.
   clionly: Только Command-Line Tools
+  installer: Installer
 
 monero-project:
   translated: "yes"
@@ -429,7 +433,7 @@ user-guides:
   restore-from-keys: Восстановление кошелька из ключей
   nicehash: Как заниматься майнингом Monero, не имея оборудования для майнинга
   ledger-wallet-cli: Как создать Ledger Monero кошелек с помощью CLI (monero-wallet-cli)
-  multisig-messaging-system:
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
 
 roadmap:
   translated: "yes"

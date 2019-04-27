@@ -179,6 +179,7 @@ downloads:
   note2: et devrait être traitée de manière canonique, en vérifiant la signature vis-à-vis de la clef GPG appropriée dans le code source (dans /utils/gpg_keys).
   currentversion: Version Actuelle
   sourcecode: Code Source
+  mirror: Mirror
   blockchain1: Si vous préférez utiliser une amorce de la chaîne de blocs, plutôt que de synchroniser à partir de zéro, vous pouvez
   blockchain2: utiliser ce lien pour obtenir l'amorce la plus récente.
   blockchain3: Il est cependant habituellement plus rapide de synchroniser à partir de zéro, et cela consomme également nettement moins de RAM (l'import est particulièrement gourmand).
@@ -442,7 +443,11 @@ user-guides:
   restore-from-keys: Restaurer un portefeuille depuis les clefs
   nicehash: Comment miner Monero sans équipement d'extraction minière
   ledger-wallet-cli: Comment générer un portefeuille Monero Ledger avec la CLI (monero-wallet-cli)
+<<<<<<< HEAD
   multisig-messaging-system: Transactions multi-signatures avec MMS et le portefeuille CLI
+=======
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
+>>>>>>> add missing i18n keys and values in the languages files
 
 roadmap:
   translated: "yes"
