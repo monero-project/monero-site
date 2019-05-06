@@ -443,11 +443,7 @@ user-guides:
   restore-from-keys: Restaurer un portefeuille depuis les clefs
   nicehash: Comment miner Monero sans équipement d'extraction minière
   ledger-wallet-cli: Comment générer un portefeuille Monero Ledger avec la CLI (monero-wallet-cli)
-<<<<<<< HEAD
   multisig-messaging-system: Transactions multi-signatures avec MMS et le portefeuille CLI
-=======
-  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
->>>>>>> add missing i18n keys and values in the languages files
 
 roadmap:
   translated: "yes"
