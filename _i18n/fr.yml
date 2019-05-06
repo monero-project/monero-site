@@ -200,7 +200,7 @@ monero-project:
   openalias_button: Visiter le site d'OpenAlias
 
 press-kit:
-  translated: "no"
+  translated: "yes"
   intro1: Vous trouverez ci-dessous tous les symboles et logos Monero. Vous pouvez choisir la taille qui vous convient, ou télécharger le fichier au format .ai pour jouer avec le logo vous-même.
   intro2: Notez que seul l'option fond blanc dispose d'un fond blanc derrière le symbole Monero UNIQUEMENT, et non derrière l'image entière.
   intro3: Enfin, vous pouvez télécharger tous les éléments de cette page dans un seul fichier zip en cliquant
@@ -220,8 +220,8 @@ press-kit:
     - name: "Quelques Faits"
       url_file: "https://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts_fr.pdf"
       abstract: >
-        A quick and easy to read document to know everything about Monero: historique, points clefs différenciateurs, fondamentaux techniques, and fonctionnalités en développement.<br>
-        See <a target="_blank" href="https://www.monerooutreach.org/accueil.php">Monero Outreach</a> website for more information.
+        Un document rapide et facile à lire pour tout savoir de Monero: historique, points clefs différenciateurs, fondamentaux techniques, et fonctionnalités en développement.<br>
+        Voir le site web de <a target="_blank" href="https://www.monerooutreach.org/accueil.php">Monero Outreach</a> pour plus d'informations.
 
 accepting:
   translated: "yes"
@@ -442,7 +442,7 @@ user-guides:
   restore-from-keys: Restaurer un portefeuille depuis les clefs
   nicehash: Comment miner Monero sans équipement d'extraction minière
   ledger-wallet-cli: Comment générer un portefeuille Monero Ledger avec la CLI (monero-wallet-cli)
-  multisig-messaging-system:
+  multisig-messaging-system: Transactions multi-signatures avec MMS et le portefeuille CLI
 
 roadmap:
   translated: "yes"
@@ -469,16 +469,16 @@ research-lab:
   mrl4_abstract: Nous avons identifier plusieurs attaques d'analyse de la chaîne de blocs pouvant dégrader l'intraçabilité du protocol CryptoNote 2.0. Nous analysons de possibles solutions, discutons de leurs avantages et inconvénients et recommandons des améliorations du protocole Monero qui devraient fournir une résistance à l'analyse de la chaîne de blocs de la cryptomonnaie sur le long terme. Nos recommandations d'améliorations incluent une politique minimale protocolaire de mixage des entrées minimale de n = 2 sortie distantes par signature de cercle, une augmentation protocolaire de cette valeur à n = 4 au bout de deux ans et une valeur par défaut dans le portefeuille à n = 4 dans l'intervalle. Nous recommandons également une méthode d'émission des sorties Monero "à la torrent". Nous discutons aussi d'une méthode de sélection du mixage des entrées non-uniforme et dépendante du temps pour atténuer les autres formes d'analyse de la chaîne de blocs identifiés ici, mais nous ne faisons aucune recommandations formelles de son implémentation pour diverses raisons. Nous y détaillons par ailleurs les répercussions découlant de ces améliorations. Ce bulletin de recherche n'a pas fait l'objet d'un examen par des tiers, et ne reflète que les résultats d'investigations internes.
   mrl5: Transactions Confidentielles à Signatures de Cercle
   mrl5_abstract: Cet article présente une méthode de masquage du montant des transactions dans la cryptomonnaie anonyme fortement décentralisée Monero. De la même manière que Bitcoin, Monero est une cryptomonnaie basée sur un processus "d'extraction minière" basé sur une preuve de travail. Le protocole originel de Monero était basé sur CryptoNote , qui utilise les signatures de cercle et des clefs à usage unique pour masquer l'origine et la destination des transactions. Récemment, une technique utilisant un mécanisme déterministe pour masquer le montant d'une transaction a été étudié et implémenté par Gregory Maxwell, l'un des développeur principaux de Bitcoin. Dans cette article, nous exposons un nouveau type de signatures de cercle, une Signature de Groupe Associable Anonyme et Spontané à Plusieurs Niveaux permettant de masquer les montants, les origines et les destinations des transactions avec une efficacité raisonnable et une génération de pièces de monnaie vérifiable et fiable. Quelques extensions protocolaires sont fournies, telles que la preuve à divulgation nulle de connaissance de Schnorr, et les multi-signatures de cercle. L'auteur voudrait faire remarquer que les premières ébauches ont été publiées dans la communauté Monero et sur le canal IRC de recherche bitcoin. Des brouillons de chaîne de blocs sont disponibles dans [14], montrant que ce travail a débuté à l'été 2015 et s'est achevé début octobre 2015. Une impression électronique est également disponible sur http://eprint.iacr.org/2015/1098.
-  mrl6: An Efficient Implementation of Monero Subadresses
+  mrl6: Une Implémentation efficace des sous-adresses Monero
   mrl6_abstract: Les Utilisateurs de la cryptomonnaie Monero qui souhaitent réutiliser des adresses de portefeuille d'une manière non connectable doivent maintenir des portefeuilles séparés, ce qui nécessite de scanner les transactions entrante pour chacun. Nous avons documenté un nouveau schéma d'adresses qui permet à un utilisateur de maintenir une seule adresse de portefeuille et de générer un nombre arbitraire de sous-adresses non connectables. Chaque transaction n'a besoin d'être scannée qu'une seule fois pour déterminer si la destination appartient à une quelconque sous-adresse de l'utilisateur. Le schéma supporte également des sorties multiples vers d'autres sous-adresses et est aussi efficace que les transactions traditionnelles de portefeuille.
-  mrl7: Sets of Spent Outputs
-  mrl7_abstract: This technical note generalizes the concept of spend outputs using basic set theory. The definition captures a variety of earlier work on identifying such outputs. We quantify the effects of this analysis on the Monero blockchain and give a brief overview of mitigations.
-  mrl8: Dual Linkable Ring Signatures
-  mrl8_abstract: This bulletin describes a modification to Monero's linkable ring signature scheme that permits dual-key outputs as ring members. Key images are tied to both output one-time public keys in a dual, preventing both keys in that transaction from being spent separately. This method has applications to non-interactive refund transactions. We discuss the security implications of the scheme.
-  mrl9: Thring Signatures and their Applications to Spender-Ambiguous Digital Currencies
-  mrl9_abstract: We present threshold ring multi-signatures (thring signatures) for collaborative computation of ring signatures, present a game of existential forgery for thring signatures, and discuss uses of thring signatures in digital currencies that include spender-ambiguous cross-chain atomic swaps for confidential amounts without a trusted setup. We present an implementation of thring signatures that we call linkable spontaneous threshold anonymous group signatures, and prove the implementation existentially unforgeable.
-  mrl10: Discrete Logarithm Equality Across Groups
-  mrl10_abstract: This technical note describes an algorithm used to prove knowledge of the same discrete logarithm across different groups. The scheme expresses the common value as a scalar representation of bits, and uses a set of ring signatures to prove each bit is a valid value that is the same (up to an equivalence) across both scalar groups.
+  mrl7: Lots de sorties dépensées
+  mrl7_abstract: Cette note tehnique généralise le concept de sorties dépensées en utilisant la théorie des ensembles de base. La définition tient compte de divers travaux antérieurs sur la détermination de ces sorties. Nous quantifions les effets de cette analyse sur la chaîne de blocs de Monero et donnons un aperçu rapide des mesures palliatives à prendre.
+  mrl8: Paires de signatures de cercle associables
+  mrl8_abstract: Ce bulletin décrit une modification apportée au système de signatures de cercle associables de Monero qui permet l'utilisation de sorties à deux clés comme membres du cercle. Les images de clés sont liées aux deux clés publiques ponctuelles des sorties dans une paire, ce qui évite que les deux clés de cette transaction ne soient utilisées séparément. Cette méthode s'applique aux opérations de remboursement non interactives. Nous discutons des implications du système sur le plan de la sécurité.
+  mrl9: Les signatures Thring et leurs applications aux monnaies numériques à dépenses ambiguës
+  mrl9_abstract: Nous présentons des multi-signatures de cercle à seuil (signatures Thring) pour le calcul collaboratif des signatures de cercle, nous présentons un jspécimen de falsification fondamentale pour les signatures Thring, et nous parlons des utilisations des signatures Thring pour les monnaies numériques qui incluent des échanges atomiques entre chaînes à dépenses ambiguës pour des montants confidentiels, sans avoir besoin de paramétrage de confiance. Nous présentons une implémentation des signatures thring que nous appelons signatures de groupe anonymes à seuil spontané associable, et prouvons que l'implémentation est fondamentalement infalsifiable.
+  mrl10: Égalité logarithmique discrète entre groupes
+  mrl10_abstract: Cette note technique décrit un algorithme utilisé pour prouver la connaissance du même logarithme discret dans différents groupes. Le schéma exprime la valeur commune sous la forme d'une représentation scalaire des bits et utilise un ensemble de signatures de cercle pour prouver que chaque bit est une valeur valide et identique (jusqu'à une équivalence) entres les deux groupes scalaires.
   cryptonote: Livres Blancs CryptoNote
   cryptonote-whitepaper: Livre Blanc Cryptonote
   cryptonote-whitepaper_para: Voici le document originel de CryptoNote écrit par l'équipe CryptoNote. En le lisant, vous comprendrez comment l'algorithme CryptoNote fonctionne d'une manière générale.
