@@ -177,6 +177,7 @@ downloads:
   note2: y debe tratarse como canónico, con la firma marcada con la clave GPG apropiada en el código fuente (en /utils/gpg_keys).
   currentversion: Versión actual
   sourcecode: Código Fuente
+  mirror: Mirror
   blockchain1: Si prefieres realizar un bootstrap para sincronizar la blockchain, puedes utilizar
   blockchain2: este enlace
   blockchain3: para el programa de arranque más reciente. Sin embargo, normalmente es mucho más rápido sincronizar desde cero y también requiere menos RAM (la importación es muy exigente).
@@ -440,7 +441,7 @@ user-guides:
   restore-from-keys: Restaurar monedero desde claves
   nicehash: Cómo minar Monero XMR sin un equipo de minado
   ledger-wallet-cli: Cómo generar un monedero Ledger Monero con la consola de comandos (monero-wallet-cli)
-  multisig-messaging-system:
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
 
 roadmap:
   translated: "Yes"

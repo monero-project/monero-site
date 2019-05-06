@@ -27,9 +27,9 @@ global:
   privacy: الخصوصيه
   copyright: حقوق الملكيه
   untranslated: هذه الصفحه لم تترجم بعد , إذا أردت المساعده في الترجمه من فضلك تواصل معنا
-  outdatedMax:
-  outdatedVersion:
-  outdatedMin:
+  outdatedMax: This page is outdated. We do not recommend using it. Instead, please see the
+  outdatedVersion: English version
+  outdatedMin: This page has been updated since the translation. You can use this version, but it may be incomplete.
   upgrade: To continue using Monero, make sure your software is up-to-date with the March 9th network upgrade.
   moreinfo: More info
   lang_tag: "@lang_tag_ar"
@@ -115,32 +115,32 @@ hangouts:
   irc_para: مجتمع مونيرو ينتفع بالعديد من قنوان الدردشه IRC كل منها لغرض معين. بعضها للعمل, وبعضها للإلتقاء بالمجتمع, سوف تجد أشهرهم في الأسفل.
   stack_exchange: Stack Exchange
   stack_exchange_para: مونيرو Stack Exchange هو طريقه سريعه للسؤال والحصول علي إجابات حول مونيرو , ستجد بالأدني بعض الأسئله والإجابات القيمه للأسئله الشائعه .
-  stack_exchange_link:
+  stack_exchange_link: Visit Stack Exchange
   irc_channels:
   - channel: monero
-    description:
+    description: This channel is used to discuss all things Monero related.
   - channel: monero-community
-    description:
+    description: This channel is for the Monero community to congretate and discuss ideas.
   - channel: monero-dev
-    description:
+    description: The many contributors and developers come here to discuss dev-y things.
   - channel: monero-markets
-    description:
+    description: We use this channel to talk about the price of Monero and other coins.
   - channel: monero-offtopic
-    description:
+    description: Chatting with other Monero users about things not related to Monero.
   - channel: monero-otc
-    description:
+    description: Over the counter Monero. Come here to purchase XMR from your fellow Moneron.
   - channel: monero-pools
-    description:
+    description: This is the place for mining questions and discussion.
   - channel: monero-research-lab
-    description:
+    description: Research into financial privacy with cryptocurrency.
   - channel: monero-translations
-    description:
+    description: Localizing Monero into other languages.
   - channel: monero-hardware
-    description:
+    description: Building hardware wallets to keep your Monero safe.
   - channel: kovri
-    description:
+    description: This channel is used to discuss all things Kovri related.
   - channel: kovri-dev
-    description:
+    description: The many contributors and developers come here to discuss Kovri dev-y things.
 
 merchants:
   translated: "yes"
@@ -177,6 +177,7 @@ downloads:
   note2: ويجب معاملتها كمعيار افتراضي , مع فحص التوقيع بالمفتاح الموجود في الكود المصدري (in /utils/gpg_keys).
   currentversion: الإصدار الحالي
   sourcecode: الكود المصدري
+  mirror: Mirror
   blockchain1: إذا كنت تريد استخدام ملف تمهيدي لسلسله الكتل بدلأ من المزامنه من الصفر , يمكنك
   blockchain2: استخدام هذا الرابط لأحدث ملف تمهيدي موجود.
   blockchain3: في الغالب الأسرع هو المزامنه من الصفر, وأيضاً يحتاج ذاكره عشوائيه أقل بكثير ( الإستيراد جشع جداً )
@@ -438,9 +439,9 @@ user-guides:
   view-only: كيفيه عمل محفظه رؤيه فقط
   prove-payment: كيفيه إثبات إتمام معامله
   restore-from-keys: إستعاده محفظه من المفاتيح
-  nicehash:
-  ledger-wallet-cli:
-  multisig-messaging-system:
+  nicehash: How to mine Monero XMR without a mining equipment
+  ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
 
 roadmap:
   translated: "yes"

@@ -177,6 +177,7 @@ downloads:
   note2: e devem ser tratados como canônica, com a assinatura verificada contra a chave GPG apropriada no código fonte (em /utils/gpg_keys).
   currentversion: Versão Atual
   sourcecode: Código Fonte
+  mirror: Mirror
   blockchain1: Se você preferir usar um bootstrap do blockchain, ao invés de sincronizá-lo do zero, você pode
   blockchain2: usar este link para o bootstrap atual.
   blockchain3: No entanto, normalmente é muito mais rápido sincronizar do zero, o que também usa menos RAM (a importação pede muita memória)
@@ -188,6 +189,7 @@ downloads:
   mobilelight2: Fóruns & Grupos
   mobilelight3: para saber onde nos encontrar.
   clionly: Versão Linha de Comando
+  installer: Installer
 
 monero-project:
   translated: "yes"
@@ -439,6 +441,7 @@ user-guides:
   restore-from-keys: Restaurando uma carteira através das chaves privadas
   nicehash: Como minerar Monero XMR sem equipamento de mineração
   ledger-wallet-cli: Como criar uma carteira Monero na Ledger usando o CLI (monero-wallet-cli)
+  multisig-messaging-system: Multisig transactions with MMS and CLI wallet
 
 roadmap:
   translated: "yes"

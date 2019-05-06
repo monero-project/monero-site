@@ -177,6 +177,7 @@ downloads:
   note2: e dovrebbe essere trattato come "canonico", confrontando le firme con l'appropriata chiave GPG nel codice sorgente (in /utils/gpg_keys).
   currentversion: Versione corrente
   sourcecode: Codice Sorgente
+  mirror: Mirror
   blockchain1: Se preferisci usare una blockchain esterna, invece di sincronizzarla da zero, puoi
   blockchain2: scaricare la versione più recente da questo link.
   blockchain3: E' tipicamente molto più veloce sincronizzare da zero e richiede anche molta meno RAM (la funzione "import" richiede molte risorse).
@@ -440,7 +441,7 @@ user-guides:
   restore-from-keys: Restoring wallet from keys
   nicehash: Come minare Monero XMR senza equipaggimento per miners
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
-  multisig-messaging-system:
+  multisig-messaging-system: Transazione multifirma con MMS e portafoglio CLI
 
 roadmap:
   translated: "no"
