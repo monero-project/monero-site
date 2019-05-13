@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% assign version = '1.3.0' | split: '.' %}
+{% include disclaimer.html translated="false" version=page.version %}
 محفظه الرؤيه فقط يمكنها رؤيه المعاملات الوارده إلي المحفظه ولا يمكنها القيام بإنفاق الأموال, في الواقع لا يُمكنها حتي رؤيه المعاملات الصادره من هذه المحفظه. وهذا يجعلها مثيره للإهتمام لكل من 
 
 * المُطورين القائمين بكتابه مكتبات للتحقق من المدفوعات
@@ -21,13 +21,7 @@
 
 ![settings](png/view-only/settings.png)
 
-إختار 'إنشاء محفظه رؤيه فقط' وعيّن إسماً للمحفظه وإختار مكان حفظها ثم إضغط علي السهم 'الأيمن':
-
-![create-view-only](png/view-only/create-view-only.png)
-
-عيّن كلمه سر قويه لمحفظه الرؤيه وقم بتأكيدها قبل النقر علي 'إنشاء المحفظه':
-
-![wallet-password](png/view-only/wallet-password.png)
+Click on `Create a view only wallet` > `Create wallet`, the wallet will be created within the same directory and using your current password.
 
 يُمكنك إختيارياً النقر علي كلمه 'نجح' لنسخ الرساله , وبعد ذلك إنقر علي 'تم' لإغلاقها:
 
