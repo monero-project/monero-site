@@ -3362,7 +3362,7 @@ footer {
 .tabPanel-widget > label,
 .tabPanel-widget > h2 {
   font-size: 1.1rem;
-  width: calc(100% / 6);
+  width: calc(100% / 7);
   height: 2rem;
   line-height: 2rem;
   padding: 1rem 0;
@@ -3398,27 +3398,32 @@ footer {
 
 .tabPanel-widget label:nth-child(5),
 .tabPanel-widget h2:nth-child(7) {
-  left: calc(1 * (100% / 6));
+  left: calc(1 * (100% / 7));
 }
 
 .tabPanel-widget label:nth-child(9),
 .tabPanel-widget h2:nth-child(11) {
-  left: calc(2 * (100% / 6));
+  left: calc(2 * (100% / 7));
 }
 
 .tabPanel-widget label:nth-child(13),
 .tabPanel-widget h2:nth-child(15) {
-  left: calc(3 * (100% / 6));
+  left: calc(3 * (100% / 7));
 }
 
 .tabPanel-widget label:nth-child(17),
 .tabPanel-widget h2:nth-child(19) {
-  left: calc(4 * (100% / 6));
+  left: calc(4 * (100% / 7));
 }
 
 .tabPanel-widget label:nth-child(21),
 .tabPanel-widget h2:nth-child(23) {
-  left: calc(5 * (100% / 6));
+  left: calc(5 * (100% / 7));
+}
+
+.tabPanel-widget label:nth-child(25),
+.tabPanel-widget h2:nth-child(27) {
+  left: calc(6 * (100% / 7));
 }
 
 .tabPanel-widget label:nth-child(1),
