@@ -1,0 +1,54 @@
+- title: 開始使用
+  subfolderitems:
+  - page: 什麼是門羅幣？
+    url: get-started/what-is-monero
+  - page: 開始使用
+    url: get-started/using
+  - page: 接受支付
+    url: get-started/accepting
+  - page: 貢獻
+    url: get-started/contributing
+  - page: 挖礦
+    url: get-started/mining
+  - page: 常見問題
+    url: get-started/faq
+- title: 下載
+  url: downloads/
+- title: 最新消息
+  subfolderitems:
+    - page: 所有文章
+      url: blog
+    - page: 重大消息
+      url: blog/tags/monero%20missives.html
+    - page: 會議記錄
+      url: blog/tags/dev%20diaries.html
+    - page: 版本發佈
+      url: blog/tags/releases.html
+- title: 社群
+  subfolderitems:
+  - page: 合作團隊
+    url: community/team
+  - page: 聊天室
+    url: community/hangouts
+  - page: 贊助單位
+    url: community/sponsorships
+  - page: 使用商家
+    url: community/merchants
+- title: 相關資源
+  subfolderitems:
+  - page: 關於門羅幣
+    url: resources/about
+  - page: 發展規劃
+    url: resources/roadmap
+  - page: 研究實驗室
+    url: resources/research-lab
+  - page: 門羅幣百科
+    url: resources/moneropedia
+  - page: 使用者指引
+    url: resources/user-guides
+  - page: 開發者指引
+    url: resources/developer-guides
+  - page: 技術規格
+    url: technical-specs
+  - page: 圖書出版品
+    url: library

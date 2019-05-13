@@ -1,0 +1,120 @@
+- year: 2014
+  accomplishments:
+    - name: 在 Bitcointalk 上公開
+      date: 2014-04-18
+      status: completed
+    - name: 從 Bitmonero 更名為 Monero
+      date: 2014-04-23
+      status: completed
+    - name: 從垃圾交易攻擊中恢復
+      date: 2014-09-04
+      status: completed
+    - name: 門羅幣研究實驗室論文編號 1 與編號 2 發表
+      date: 2014-09-12
+      status: completed
+    - name: 門羅幣研究實驗室論文編號 3 發表
+      date: 2014-09-25
+      status: completed
+    - name: 0.8.8.6 版本發佈
+      date: 2014-12-08
+      status: completed
+- year: 2015
+  accomplishments:
+    - name: 門羅幣研究實驗室論文編號 4 發表
+      date: 2015-01-26
+      status: completed
+- year: 2016
+  accomplishments:
+    - name: 0.9.0 Hydrogen Helix 版本發佈
+      date: 2016-01-01
+      status: completed
+    - name: 門羅幣研究實驗室論文編號 5 發表
+      date: 2016-02-10
+      status: completed
+    - name: 升級網路以調整最低環狀簽名大小至 3
+      date: 2016-03-22
+      status: completed
+    - name: 0.10.0 Wolfram Warptangent 版本發佈
+      date: 2016-09-18
+      status: completed
+    - name: Network Upgrade to split coinbase into denominations
+      date: 2016-09-21
+      status: completed
+    - name: 0.10.1 Wolfram Warptangent 版本發佈
+      date: 2016-12-14
+      status: completed
+    - name: 官方 GUI 錢包 Beta 1 版本發佈
+      date: 2016-12-22
+      status: completed
+- year: 2017
+  accomplishments:
+    - name: 交易網路升級啟動 RingCT 交易
+      date: 2017-01-05
+      status: completed
+    - name: 0.10.2 版本發佈; 修補重大漏洞
+      date: 2017-02-22
+      status: completed
+    - name: 0.10.3.1 Wolfram Warptangent 版本發佈
+      date: 2017-03-27
+      status: completed
+    - name: 交易網路升級以調整最小區塊容量與動態手續費公式
+      date: 2017-04-15
+      status: completed
+    - name: 重新設計官方網站
+      date: 2017-07-04
+      status: completed
+    - name: 0.11.0.0 Helium Hydra 版本發佈
+      date: 2017-09-07
+      status: completed
+    - name: Fluffy blocks
+      date: 2017-09-07
+      status: completed
+    - name: GUI 錢包完成 Beta 測試
+      date: 2017-09-10
+      status: completed
+    - name: 交易網路升級以提升最低環狀簽名大小至 5 及強制使用 RingCT 交易
+      date: 2017-09-15
+      status: completed
+    - name: 0MQ/ZeroMQ
+      date: September, 2017
+      status: completed
+    - name: 子地址（Subaddresses）
+      date: October, 2017
+      status: completed
+    - name: 多重簽名（multisig）
+      date: December, 2017
+      status: completed
+- year: 2018
+  accomplishments:
+    - name: 新的工作量證明（PoW）演算法 CryptoNoteV7
+      date: 2018-04-06
+      status: completed
+    - name: 交易網路升級以提升最低環狀簽名大小至 7 、加入多重簽名、子地址和 PoW 演算法微調
+      date: 2018-04-06
+      status: completed
+    - name: Getmonero.org 網站加入法文及波蘭文語言翻譯
+      date: 2018-04-24
+      status: completed
+    - name: Ledger 硬體錢包支援
+      date: 2018-06-04
+      status: completed
+    - name: Kovri alpha 版本發佈
+      date: 2018-08-01
+      status: completed
+    - name: 實作防彈協定（Bulletproofs）以減少交易所需容量
+      date: 2018-10-18
+      status: completed
+    - name: 論壇募資系統重新設計
+      date:
+      status: ongoing
+    - name: Kovri 整合
+      date:
+      status: upcoming
+- year: 2019
+  accomplishments:
+    - name: 第二層交易網路協定以提高交易速度與擴展性
+      date:
+      status: upcoming
+    - name: 更多的門羅幣研究實驗室論文發表
+      date:
+      status: upcoming

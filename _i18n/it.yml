@@ -11,6 +11,7 @@ langs:
   pt-br: Português do Brasil
   tr: Türkçe
   zh-cn: 简体中文
+  zh-tw: 繁體中文 臺灣
 
 global:
   date: '%Y/%m/%d'
