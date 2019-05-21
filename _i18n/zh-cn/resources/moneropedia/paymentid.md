@@ -3,26 +3,24 @@ terms: ["payment-ID", "payment-IDs"]
 summary: "an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters"
 ---
 
-*Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.
+### 基础知识
 
-{% include untranslated.html %}
-### The Basics
+支付ID是一个**任意**和**可选**交易附件，包含32字节（64个十六进制字符）或8字节（在集成地址的情况下）。
 
-Payment ID is an **arbitrary** and **optional** transaction attachment that consists of 32 bytes (64 hexadecimal characters) or 8 bytes (in the case of integrated addresses).
+支付ID通常用于识别商家和交易所的交易：鉴于门罗币内置的固有隐私特性，其中一个公共地址通常用于转入的交易，支付ID对于将转入的款项与用户帐户绑定在一起尤其有用。
 
-The Payment ID is usually used to identify transactions to merchants and exchanges: Given the intrinsic privacy features built into Monero, where a single public address is usually used for incoming transactions, the Payment ID is especially useful to tie incoming payments with user accounts.
+### 紧凑的支付ID和集成地址
 
-### Compact Payment IDs and Integrated Addresses
+自0.9 Hydrogen Helix 版本以来，支付ID可以加密并嵌入到一个支付地址中。这种类型的支付ID应该是64位的，并且使用只有发送方和接收方知道的随机一次性密钥进行加密。
 
-Since the 0.9 Hydrogen Helix version, Payment IDs can be encrypted and embedded in a payment address. The Payment IDs of this type should be 64-bits and are encrypted with a random one-time key known only to the sender and receiver.
+### 创建一个支付ID
 
-### Creating a Payment ID
-It is recommended to use the official wallet's `integrated_address` command to automatically generate Integrated Addresses that contain Compact Payment IDs. If you want to use the command line, you can generate Payment IDs as follows:
+建议使用官方钱包的 `integrated_address` 命令自动生成包含紧凑支付ID的集成地址。如果你想使用命令行，你可以用一下方法生成支付ID:
 
-Creating a compact Payment ID for an Integrated Address:
+为综合地址创建一个紧凑的支付ID:
 
 ```# openssl rand -hex 8```
 
-Creating an old-style Payment ID:
+创建一个老式的支付ID:
 
 ```# openssl rand -hex 32```

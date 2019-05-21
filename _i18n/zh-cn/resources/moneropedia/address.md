@@ -3,18 +3,18 @@ terms: ["address", "addresses"]
 summary: "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
 ---
 
-### The Basics
+### 基础
 
-When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.
+当你发送门罗币给某人时，你只需要一条信息，那就是他们的门罗币地址。一个*原始* 门罗币地址由95个字符组成，以“4”开头。例如，门罗币的捐款地址是 <span class="long-term">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</span>.
 
-Because those addresses are long and complex, you will often encounter an @OpenAlias address instead. For example, Monero donations can be sent to <span class="long-term">donate@getmonero.org</span> or <span class="long-term">donate.getmonero.org</span>.
+因为这些地址又长又复杂，所以您经常会遇到@OpenAlias地址。例如，Monero捐款可以发送到<span class="long-term">donate@getmonero.org</span>或<span class="long-term">donate.getmonero.org</span>。
 
-If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](/the-monero-project/).
+如果您想获得自己的@OpenAlias地址，那么 [OpenAlias页面](/the-monero-project/) 上有一些信息。
 
-### Integrated address
+### 集成地址
 
-An integrated address is an address combined with an encrypted 64-bit @payment-ID. A raw integrated address is 106 characters long.
+集成地址是与加密的64位@payment-ID相结合的地址。一个原始的集成地址长度为106个字符。
 
-### In-depth Information
+### 深度信息
 
-The address is actually the concatenation, in Base58 format, of the *public* @spend-key and the *public* @view-key, prefixed with the network byte (the number 18 for Monero) and suffixed with the first four bytes of the Keccac-256 hash of the whole string (used as a checksum).
+地址实际上是*公开* @支付密钥 和 *公开* @查看密钥 的Base58格式的串联，前缀是网络字节(Monero的代号是18)，后缀是整个字符串的keccache-256散列的前四个字节(用作校验和)。

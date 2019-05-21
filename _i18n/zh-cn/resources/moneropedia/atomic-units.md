@@ -3,8 +3,8 @@ terms: ["atomic-units", "atomic-unit"]
 summary: "Atomic Units refer to the smallest fraction of 1 XMR."
 ---
 
-### The Basics
+### 基础知识
 
-Atomic Units refer to the smallest fraction of 1 XMR.
-One atomic unit is currently 1e-12 XMR (0.000000000001 XMR, or one @piconero).
-It may be changed in the future.
+原子单位是指1XMR的最小分数。
+一个原子单元目前是1e-12 XMR (0.000000000001 XMR，或一个@皮罗)。
+这在将来有可能改变。

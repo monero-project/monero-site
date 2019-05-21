@@ -3,10 +3,10 @@ terms: ["unlock-time"]
 summary: "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
 ---
 
-### The Basics
+### 基础知识
 
-A special transaction where the recipient can only spend the funds after a future date, as set by the sender.
+一种特殊的交易，在这种交易中，收件人只能在将来某个日期之后才可以使用资金，这是由发送者设定的。
 
-Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time.
+解锁时间允许您向某人发送一笔交易，而接收者就必须在一定数量的区块后，或者直到某一时间才能使用该笔资金。
 
-Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.it/wiki/NLockTime), in which the transaction is not valid until the given time.
+注意，这与比特币的 [nLockTime](https://en.bitcoin.it/wiki/NLockTime) 不同，在比特币的网络当中，交易直到给定的时间才有效。

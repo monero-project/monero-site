@@ -4,14 +4,14 @@ terms: ["Destination", "Destinations"]
 summary: "A in-net address that serves as a final endpoint (either local or remote)"
 ---
 
-### The Basics
+### 基础知识
 
-A @destination is the @I2P @in-net address of the final endpoint you are trying to connect to (example: an @I2P website, service, or Monero node). This can also include a *local destination* of which *other* peers need to connect to in order to make contact for communication (similar to how, in @clearnet, your IP address is given to a website when you connect so it knows *where* to send the information back to).
+@目标指的是，您试图连接到的最终端点的@I2P @网内地址（例如:@I2P网站、服务或门罗币节点）。这也可以包括一个*本地目标*，这其中 *其它* 对等节点需要连接到这个*本地目标*，以便与之进行通信（类似于在@明网中，当您连到某个网站时，您的IP地址也会被发送到这个网站，因此它也知道把信息发回“哪里”）。
 
-### In-depth Information
+### 深度信息
 
-An @I2P destination can be encoded into a @base32-address or @base64-address. Most users will only care about @base32-addresses or a `.i2p` hostname while, internally, @Kovri / @I2P @address-book uses @base64-addresses. Ultimately, all @destinations in @I2P are 516-byte (or longer) keys:
+一个@I2P目标可以被编码成@base32地址或@base64地址。大多数用户只关心@base32地址或一个 `.i2p` 。在内部，@Kovri / @I2P @地址薄使用@base64地址。最终，@I2P中的所有@目标都是516字节（或更长）的密钥:
 
-`256-byte public key + 128-byte signing key + a null certificate = 516 bytes in Base64 representation`
+`256字节公钥 + 128字节签名密钥 + 空证书 = 经Base64编码后表示为516字节`
 
-Note: certificates are not used now but, if they were, the keys would be longer.
+注意:这是在不使用证书的情况下，如果使用证书，密钥会更长。

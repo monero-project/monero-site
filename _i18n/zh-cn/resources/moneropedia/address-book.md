@@ -4,30 +4,28 @@ terms: ["Address-Book"]
 summary: "Allows you to visit I2P websites/services that have the .i2p domain"
 ---
 
-### The Basics
+### 基础知识
 
-In order to browse @I2P sites or services with @Kovri, you'll need an address book. An address book will allow you to translate @I2P websites/services that use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain) into an address that @I2P network will understand.
+为了使用@Kovri浏览@I2P站点或服务，您需要一个地址薄。这个地址薄将那些使用 `.i2p` [顶级域名](https://en.wikipedia.org/wiki/Top_level_domain)的地址,翻译成为一个@I2P网络(匿名网络)可以理解的地址。
+如果没有地址簿，每次访问@I2P网站/服务时，您将不得不使用@base32地址—这样可一点都不好玩!
 
-Without an address book, you would be stuck using a @base32-address every time you visit an @I2P website/service - and that's not fun!
+### 深度信息
 
-### In-depth information
+由于@I2P网络上不存在[DNS](https://en.wikipedia.org/wiki/DNS)， @Kovri也不使用DNS或任何类型的@标准唯一主机解析。相反，Kovri在@订阅中将@本地唯一主机与@base64地址@目标配对。一旦你的地址簿中填了一个@订阅，你就可以将你最喜欢的 `.i2p` 域站点转换为为可用的@I2P目标。
 
-Since [DNS](https://en.wikipedia.org/wiki/DNS) does not exist on the @I2P network, @Kovri also does **not** use DNS or any sort of @canonically-unique-host resolution. Instead, Kovri pairs a @locally-unique-host to a @base64-address @destination in a @subscription. Once your address book is filled with a @subscription, you can resolve your favorite `.i2p` domain site into a usable @I2P destination.
+### 创建一个地址薄
 
-### Creating an Address Book
+默认情况下，在安装时在你的@数据词典里将带有一个名为 `hosts.txt` 的默认公共@订阅。当@Kovri启动时，它加载这个订阅并获取您指定的任何其他订阅。一旦加载，您的通讯录将被适当地填充。有关如何管理订阅的详细信息，请参见@订阅。
 
-By default, your installation will come with a default public @subscription called `hosts.txt` in your @data-directory. When @Kovri starts, it loads this subscription and fetches any other subscriptions you've specified. Once loaded, your address book will be appropriately filled. For details on how to manage subscriptions, see @subscription.
+### 更新地址薄
 
-### Updating the Address Book
+目前，有几种方法可以更新你的地址薄:
+1. 使用@跳转服务，将I2P地址插入地址簿
+2. 使用@跳转服务，复制/粘贴一个地址到您的私有@订阅当中
+3. 从私有@订阅中，手动添加或删除
 
-Currently, there are several ways to update your address book:
+**注意:Kovri正在大力开发中。在未来，将有更容易的方法来更新通讯录**
 
-1. Use a @jump-service to insert I2P addresses into your address book
-2. Use a @jump-service to copy/paste an address into your private @subscription
-3. Manually add or subtract from a private @subscription
+### 地址薄 / 命名规范
 
-**Note: Kovri is in heavy development. In the future there *will* be easier ways to update the address book**
-
-### Address Book / Naming specification
-
-For specification details and more, visit the [Address Book and Naming Specification](https://geti2p.net/en/docs/naming)
+有关规范详细信息及更多内容，请访问 [地址薄以及命名规范](https://geti2p.net/en/docs/naming)
