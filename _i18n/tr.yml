@@ -267,7 +267,7 @@ contributing:
   mine_para2: burada görüntüleyebilirsiniz.
   ffs: Forum Fonlama Sistemini Görüntüleyin
   ffs_para1: Monero projelerin gelişim için önerildiği ve topluluk tarafından fonlandığı bir
-  ffs_para2: forum fonlama sistemi 
+  ffs_para2: forum fonlama sistemi
   ffs_para3: kullanır. Fonlama emanette tutulur ve programlama kilometre taşları başarıya ulaştıkça geliştiricilere karşılık olarak verilir. Herkes yeni öneriler üretebilir veya mevcut olanları fonlayabilir.
   donate: Bağışla
   donate_para1: Mevcut gelişimi destekleme araçları bağışlar ve
@@ -473,11 +473,13 @@ research-lab:
   mrl7: Harcanmış Çıktıların Kümeleri
   mrl7_abstract: Bu teknik not temel küme kuramını kullanarak harcama çıktıları kavramını genelleştirir. Tanım böyle çıktıları tanımla üzerindeki önceden yapılan çeşitli işleri kapsar. Bu analizin Monero blokzinciri üzerinde etkileri nitelendiriyor ve azaltımlarına kısa bir genel bakış veriyoruz.
   mrl8: Çifte Bağlanabilir Halka İmzalar
-  mrl8_abstract: Bu bülten halka üyesi olarak çifte anahtar çıktıları izin veren Monero'nun bağlanabilir halka imza şemasına bir değişikliği betimler. Anahtar imgeler bir çift olarak çıktı tek kullanımlık açık anahtarlara bağlanarak bu işlemdeki iki anahtarın ayrı şekilde harcanmasını engeller. Bu yöntemin etkileşimsiz geri ödeme işlemlerinde uygulamaları vardır. Şemanın güvenlik çıkarımlarını tartışıyoruz.  
+  mrl8_abstract: Bu bülten halka üyesi olarak çifte anahtar çıktıları izin veren Monero'nun bağlanabilir halka imza şemasına bir değişikliği betimler. Anahtar imgeler bir çift olarak çıktı tek kullanımlık açık anahtarlara bağlanarak bu işlemdeki iki anahtarın ayrı şekilde harcanmasını engeller. Bu yöntemin etkileşimsiz geri ödeme işlemlerinde uygulamaları vardır. Şemanın güvenlik çıkarımlarını tartışıyoruz.
   mrl9: Eşhalka İmzaları ve Harcayıcı-Belirsiz Dijital Paralara Uygulamaları
   mrl9_abstract: Halka imzaların işbirlikçi bilgi-sayımı için eşik halka çoklu imzaları (eşhalka imzalar) sunuyor, eşhalka imzaları için varoluşsal bir tahrifat oyunu sunuyor ve güvenilir bir kurulum olmadan gizli miktarların harcayıcı-belirsiz çapraz-zincir atomik değişimlerini içeren dijital paralarda eşhalka imzaların kullanımını tartışıyoruz. Eşhalka imzaların bağlanabilir spontane eşit anonim grup imzaları dediğimiz bir uygulamasını sunuyor ve uygulamanın varoluşsal açıdan tahrif edilemeyeceğini kanıtlıyoruz.
   mrl10: Gruplar Arası Ayrık Logaritma Denkliği
   mrl10_abstract: Bu teknik not farklı gruplar arasında aynı ayrık logaritmanın bilgisini kanıtlamakta kullanılan bir algoritmayı betimler. Şema bitlerin skalar bir temsilini ortak değer olarak ifade eder ve bir halka imzalar kümesini her bitin iki skalar grup arasında (bir denkliğe kadar) aynı olan geçerli bir değer olduğunu kanıtlamak için kullanır.
+  mrl11: Compact linkable ring signatures and applications
+  mrl11_abstract: We describe an efficient linkable ring signature scheme, compact linkable spontaneous anonymous group (CLSAG) signatures, for use in confidential transactions. Compared to the existing signature scheme used in Monero, CLSAG signatures are both smaller and more efficient to generate and verify for ring sizes of interest. We generalize the construction and show how it can be used to produce signatures with coins of different type in the same transaction.
   cryptonote: Cryptonote Beyaz Bültenleri
   cryptonote-whitepaper: Cryptonote Beyaz Bülteni
   cryptonote-whitepaper_para: Bu, Cryptonote ekibi tarafından yazılan orijinal cryptonote makalesidir. Okumak size cryptonote algoritmasının genelde nasıl çalıştığı anlayışını verecektir.
