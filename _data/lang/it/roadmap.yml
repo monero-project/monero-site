@@ -73,7 +73,7 @@
       date: 10-09-2017
       status: completed
     - name: Aggiornamento della rete per incrementare il ringsize minimo a 5 e richiedere l'uso di transazioni RingCT
-      date: 15-09-201
+      date: 15-09-2017
       status: completed
     - name: GUI 0.11.0.0 Helium Hydra rilasciata
       date: 24-09-2017
@@ -181,7 +181,7 @@
     - name: GUI 0.14.0.0 Boron Butterfly rilasciata
       date: 01-03-2019
       status: completed
-    - name: Nuovo Community Crowdfunding System (CCS) per sostituire il Forum Funding System (FFS)
+    - name: Nuovo Community Crowdfunding System (CCS) sostituisce il Forum Funding System (FFS)
       date: 06-03-2019
       status: completed
     - name: 0.14.0.2 Boron Butterfly rilasciata
@@ -199,7 +199,7 @@
     - name: Sfoltimento nodi
       date:
       status: ongoing
-    - name: Broadcast transazioni su Tor
+    - name: Broadcast transazioni tramite Tor
       date:
       status: upcoming
     - name: Integrazione di tini2p
