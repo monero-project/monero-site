@@ -55,10 +55,10 @@
       url: https://www.kraken.com/
     - name: Liberalcoins
       url: https://liberalcoins.com/
-    - name: Livecoin (BTC and USD trading pairs)
-      url: https://www.livecoin.net
     - name: LiteBit (Bankwire/GiroPay/iDeal/SOFORT)
       url: https://www.litebit.eu/en/buy/monero
+    - name: LocalCoin.is - LLC/XMR
+      url: https://localcoin.is/
     - name: LocalMonero (P2P exchange)
       url: https://localmonero.co/
     - name: Magnetic Exchange
@@ -214,6 +214,8 @@
       url: http://www.guitartheoryrevolution.info/blog/guitar-theory-revolution-store/
     - name: Hiri - Email client
       url: https://www.hiri.com/crypto/currency/XMR/
+    - name: HostingCanada - Web hosting 
+      url: https://hostingcanada.org/
     - name: IdeaSoft - Full-cycle Software Development
       url: https://i-deasoft.com
     - name: Information Technology Works
