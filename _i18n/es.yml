@@ -1,4 +1,4 @@
-﻿langs:
+langs:
   en: English
   es: Español
   it: Italiano
@@ -478,6 +478,8 @@ research-lab:
   mrl9_abstract: Presentamos el límite de las firmas múltiples de círculo (\textit{thring signatures}) para el cálculo colaborativo de firmas de círculo, presentamos un juego de falsificación para las firmas thring y discutimos los usos de las firmas thring en monedas digitales que incluyen cruces de cadena atómicos de gasto-ambiguo para cantidades confidenciales sin un sistema de confianza. Presentamos una implementación de las firmas de thring que nombramos enlaces de firmas grupales espontáneos de límites anónimos y probamos la implementación existencial no falsable.
   mrl10: Igualdad de logaritmo discreto a través de grupos
   mrl10_abstract: Esta nota técnica describe un algoritmo usado para demostrar conocimiento del mismo logaritmo discreto a través de diferentes grupos. El esquema expresa el valor común cómo una representación escalado de bits y usa una serie de firmas de círculo que demuestra que cada bit es un valor legítimo, que es el mismo (hasta una equivalencia), a través de los grupos escalados.
+  mrl11: Compact linkable ring signatures and applications
+  mrl11_abstract: We describe an efficient linkable ring signature scheme, compact linkable spontaneous anonymous group (CLSAG) signatures, for use in confidential transactions. Compared to the existing signature scheme used in Monero, CLSAG signatures are both smaller and more efficient to generate and verify for ring sizes of interest. We generalize the construction and show how it can be used to produce signatures with coins of different type in the same transaction.
   cryptonote: Libros Blancos de Cryptonote
   cryptonote-whitepaper: Libro Blanco de Cryptonote
   cryptonote-whitepaper_para: Este es el libro blanco original de CryptoNote escrito por el equipo de CryptoNote. Leerlo dará un entendimiento acerca de cómo funciona el algoritmo CryptoNote en general.
