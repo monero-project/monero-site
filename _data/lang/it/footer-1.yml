@@ -4,15 +4,15 @@
     url: resources/about/
   - name: Moneropedia
     url: resources/moneropedia/
-  - name: Guide per Sviluppatori
+  - name: Guide Sviluppatore
     url: resources/developer-guides/
-  - name: Guide per l'utente
+  - name: Guide Utente
     url: resources/user-guides/
   - name: Libreria
     url: library
-  - name: RSS Feed
+  - name: Feed RSS
     url: https://getmonero.org/feed.xml
-- title: IRC Chats
+- title: Chat IRC
   subfolderitems:
   - name: monero
     url: irc://chat.freenode.net/#monero
@@ -28,19 +28,19 @@
     url: irc://chat.freenode.net/#monero-translations
   - name: monero-hardware
     url: irc://chat.freenode.net/#monero-hardware
-- title: Community
+- title: Comunità
   subfolderitems:
   - name: Reddit
     url: https://reddit.com/r/monero
   - name: Stack Exchange
     url: https://monero.stackexchange.com/
-  - name: BitcoinTalk Thread
+  - name: Thread BitcoinTalk
     url: https://bitcointalk.org/index.php?topic=583449.0
-  - name: Mattermost Chat
+  - name: Chat Mattermost
     url: https://mattermost.getmonero.org/
-  - name: Telegram Chat
+  - name: Chat Telegram
     url: https://telegram.me/bitmonero
-- title: The Monero Project
+- title: Il progetto Monero
   subfolderitems:
   - name: Open Alias
     url: https://openalias.org/
