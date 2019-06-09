@@ -106,16 +106,7 @@ permalink: /downloads/index.html
                             <p class="hash"> {{ data_downloads.gui_hash }}</p>
                         </div>
                     {% elsif data_downloads.gui_hash != nil and data_downloads.cli_hash != nil %}
-                        {% if data_downloads.gui_installer_hash != nil %}
                         <div class="row start-md">
-                            <div class="col-md-6 col-sm-12" >
-                                <h3 id="{{ data_downloads.platform | slugify }}">
-                                    <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_installer_url }}">{{ data_downloads.platform }} {% t downloads.installer %}</a>
-                                </h3>
-                                <p>{% t downloads.currentversion %}: {{ data_downloads.gui_installer_version }} {{ data_downloads.tag }}</p>
-                                <p class="prehash">SHA256 Hash (GUI Installer):</p>
-                                <p class="hash"> {{ data_downloads.gui_installer_hash }}</p>
-                            </div>
                             <div class="col-md-6 col-sm-12" >
                                 <h3 id="{{ data_downloads.platform | slugify }}">
                                     <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
@@ -124,9 +115,6 @@ permalink: /downloads/index.html
                                 <p class="prehash">SHA256 Hash (GUI):</p>
                                 <p class="hash"> {{ data_downloads.gui_hash }}</p>
                             </div>
-                        </div>
-                        {% endif %}
-                        <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <h3>
                                     <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} {% t downloads.clionly %}</a>
@@ -137,6 +125,18 @@ permalink: /downloads/index.html
                             </div>
                         </div>
                         <br/>
+                        {% if data_downloads.gui_installer_hash != nil %}
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12" >
+                                <h3 id="{{ data_downloads.platform | slugify }}">
+                                    <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_installer_url }}">{{ data_downloads.platform }} {% t downloads.installer %}</a>
+                                </h3>
+                                <p>{% t downloads.currentversion %}: {{ data_downloads.gui_installer_version }} {{ data_downloads.tag }}</p>
+                                <p class="prehash">SHA256 Hash (GUI Installer):</p>
+                                <p class="hash"> {{ data_downloads.gui_installer_hash }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
                     {% endif %}
                 </div>
             </section>
