@@ -38,7 +38,7 @@ permalink: /get-started/contributing/index.html
                         </div>
                     </div>
                     <div class="row start-xs">
-                        <p>{% t contributing.ffs_para1 %} <a href="https://forum.getmonero.org">{% t contributing.ffs_para2 %}</a> {% t contributing.ffs_para3 %}</p>
+                        <p>{% t contributing.ffs_para1 %} <a href="https://ccs.getmonero.org">{% t contributing.ffs_para2 %}</a> {% t contributing.ffs_para3 %}</p>
                     </div>
                 </div>
             </div>
