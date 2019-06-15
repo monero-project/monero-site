@@ -6,14 +6,14 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-monero-win-x64-v0.14.0.2.zip, ee68ef8d4b3309cca9e68ee272919c222021804e493c2549c910ef370dfe595a
-monero-win-x86-v0.14.0.2.zip, e471015b4851aef259758fc6a98805655c69db53f29b68362f63dccb496f6e55
-monero-mac-x64-v0.14.0.2.tar.bz2, 255ae412daa04a0e0143325a7763e0574a27e7be86f4ef48582efde9fc07241c
-monero-linux-x64-v0.14.0.2.tar.bz2, 4dd5cd9976eda6b33b16821e79e671527b78a1c9bfb3d973efe84b824642dd21
-monero-linux-x86-v0.14.0.2.tar.bz2, be6ad1de8f16bdeeaf5f4f36f93dcaad97eaa8ff02449b7fffed1abe21605e0e
-monero-linux-armv8-v0.14.0.2.tar.bz2, 6558f4cff51a1f25c9979a57fc31edd46caaaeda18c81c76e1dc6c94144525c6
-monero-linux-armv7-v0.14.0.2.tar.bz2, f0e3d82354a9a25776bd2081f2bb1c081a8589ffb783e765ec974d211174236a
-monero-freebsd-x64-v0.14.0.2.tar.bz2, 3fc84b1ca32d99d436d304ee1401e911bbc1b0e1fc0314dc3f879df15e8428f3
+monero-win-x64-v0.14.1.0.zip, ca4367c565026ea23bf90180cdd750a1d6adfab36ee19435e91ed740a369a6fc
+monero-win-x86-v0.14.1.0.zip, ed26ad4c7f3fc15893c615e438a76f91c8c5c18e29d32bf350e126beecc2877f
+monero-mac-x64-v0.14.1.0.tar.bz2, 96ae0af11cdf4ad66326ae128675d6476088719ed3d226a7dbc903767f3a858a
+monero-linux-x64-v0.14.1.0.tar.bz2, 2b95118f53d98d542a85f8732b84ba13b3cd20517ccb40332b0edd0ddf4f8c62
+monero-linux-x86-v0.14.1.0.tar.bz2, a31bca6e556064d56f7a37ddbea26408902e5f387e5b67fa5b0999ca299b8eef
+monero-linux-armv7-v0.14.1.0.tar.bz2, b95903a0f1b0c15cefdf59814fe12e3597a3322ae6d0567c732f0ab79c877724
+monero-linux-armv8-v0.14.1.0.tar.bz2, cf46a1cdea6f7983697df6dfbbb184b6dd23e816ed156899070885a78b310171
+monero-freebsd-x64-v0.14.1.0.tar.bz2, 17f21d718ad0ba6d7965004ed8390a01a9ccf06ef95891ab26bd6592a7169c58
 
 monero-gui-win-x64-v0.14.0.0.zip, c23c849a2a970370f2bf7e22aae34f633f51d8490b6130337e5fe9369aff77e0
 monero-gui-mac-x64-v0.14.0.0.tar.bz2, b5d8150e5dc5edf4463eecd6a05faab1d868d04947181ef14db25f68eb238ea1
@@ -25,12 +25,12 @@ monero-gui-install-win-x64-v0.14.0.0.exe, 4c0ceb81361a4b69bff6cd5a47ef94cfd29927
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAlyCxvoACgkQVUMt8xzN
-T81WaggArUo98Mupt/tNbIf05+b+mtbnNwHL94KmW73tUiGT3o9fnWARmXUaD5BA
-WwX0Ms/bw9JYQSg0AGbf6lxolF7U/VkgNaad0VFMhjrzE3Y9lE298/SeBwtQuYip
-lQYjBphG8vYgswEVm9J1XF1chrbLhHgXpsA4a3IsTjD2T/g/MrnpC2RYC1bimLZh
-c5L/XpKE1pt4yQt0gjDwvBDydNZN6uiNGatEzpo+L9x4921V0+2OeUqg8QeGJOVv
-mvRP/2o62BhHIO6ANQ2dT0DA/T06XEsDjQTSuOwdYvdjd17rEuEmJ02RkOUlbFq2
-Nc+GpZ2c52bmfhldRDV+Ub/wQHhknw==
-=Ijam
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAl0Ewq0ACgkQVUMt8xzN
+T812tQgArtR6SQOPu7by9dOc04tcJdHnOKqnvmg9UVSojDCVgBOXDcAADPX4gqKw
+aH0Zc7vcVAH7UCdepYvYeY5R2Qm6t+dS7iodHioR7VKdfzcKawQ/Ee6LLa0l6emV
+1rgtzCA4o6vYPJgZ9COcStWFzoPtNooVU4zcH8g+9UEjEw6ilT9w9YN+Z3h0Sxfs
+ERkZyAbHSqkiIFWLz7U00aC2m7K8Zr9Jt1LTtnceOyN+m1ANhDmd82Y6DKKV17Qm
+46zZhg6Xf7L1qEihCnT1C5TqKIEgq8sQCEAxfPsOvqHEhjvpWH9+pEjv57M6A6Pg
+2rFkH3wCaUHlsnV+OhAygnxsWlRWuw==
+=K0dK
 -----END PGP SIGNATURE-----
