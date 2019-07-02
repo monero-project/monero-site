@@ -914,7 +914,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_coinbase_tx_sum**
 
-Get the coinbase ammount and the fees ammount for n last blocks starting at particular height
+Get the coinbase amount and the fees amount for n last blocks starting at particular height
 
 Alias: *None*.
 
