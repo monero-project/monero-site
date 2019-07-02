@@ -15,22 +15,19 @@ monero-linux-armv7-v0.14.1.0.tar.bz2, b95903a0f1b0c15cefdf59814fe12e3597a3322ae6
 monero-linux-armv8-v0.14.1.0.tar.bz2, cf46a1cdea6f7983697df6dfbbb184b6dd23e816ed156899070885a78b310171
 monero-freebsd-x64-v0.14.1.0.tar.bz2, 17f21d718ad0ba6d7965004ed8390a01a9ccf06ef95891ab26bd6592a7169c58
 
-monero-gui-win-x64-v0.14.0.0.zip, c23c849a2a970370f2bf7e22aae34f633f51d8490b6130337e5fe9369aff77e0
-monero-gui-mac-x64-v0.14.0.0.tar.bz2, b5d8150e5dc5edf4463eecd6a05faab1d868d04947181ef14db25f68eb238ea1
-monero-gui-linux-x64-v0.14.0.0.tar.bz2, 3d03da7d1c6c6b8f0193729ac4e6b31788ee0aea9890e85770e8d62f3ec2558b
-monero-gui-linux-x86-v0.14.0.0.tar.bz2, b711e0b7222c3c701e3b9aa552fcb9d04425dfea2d04671409ea471f2b2c2dc2
-
-monero-gui-install-win-x64-v0.14.0.0.exe, 4c0ceb81361a4b69bff6cd5a47ef94cfd2992796fb25ca3923aed51d6fcd48bd
+monero-gui-win-x64-v0.14.1.0.zip, cecb32d57684c9ec719f56ef72464413986d8bda93b2d5f51852eb1946e51993
+monero-gui-mac-x64-v0.14.1.0.tar.bz2, b0d3f906265a27b2b60090466e693d7f15a00bb8d058d8fad89f0b10c50fe6ea
+monero-gui-linux-x64-v0.14.1.0.tar.bz2, 51739f0472ccbd49832a5828ca1000ebb1ce63b19dd57507b7905739bf8cf238
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAl0Ewq0ACgkQVUMt8xzN
-T812tQgArtR6SQOPu7by9dOc04tcJdHnOKqnvmg9UVSojDCVgBOXDcAADPX4gqKw
-aH0Zc7vcVAH7UCdepYvYeY5R2Qm6t+dS7iodHioR7VKdfzcKawQ/Ee6LLa0l6emV
-1rgtzCA4o6vYPJgZ9COcStWFzoPtNooVU4zcH8g+9UEjEw6ilT9w9YN+Z3h0Sxfs
-ERkZyAbHSqkiIFWLz7U00aC2m7K8Zr9Jt1LTtnceOyN+m1ANhDmd82Y6DKKV17Qm
-46zZhg6Xf7L1qEihCnT1C5TqKIEgq8sQCEAxfPsOvqHEhjvpWH9+pEjv57M6A6Pg
-2rFkH3wCaUHlsnV+OhAygnxsWlRWuw==
-=K0dK
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAl0btvgACgkQVUMt8xzN
+T82SdAf9EK5TiFDB5J41AtGBfLFmT7mvwhrjbT7pUNVR5YKKLxnvx0qzO9cKszih
+KgHrKYNBkskAsBtgi1V7g7z4EeRPOoK5LllbIJ/3mQopbbbYJ1wDNcTnjZJjC51o
+n84Dkxy9RHb7Gjr+NzBQYVbhKWzxZ4SH4+FSMSwQnAgGrdnFKKVcryPyk5pLEHom
+Ix/73v1TnKoQBrp/aBS8fSeVXTtL88HGMf3YJArX9S9ztoEO8y2hRrv9VLB8l+j2
+yWjMuDBlXJkjTGNaOeQdBlyqob9ygBZ0W6G+KOteTHbooc+7+2vDNWgoShHL5GRX
+4xXBFwUbUPpR791MZCikorOh9Z9PFw==
+=XLlr
 -----END PGP SIGNATURE-----
