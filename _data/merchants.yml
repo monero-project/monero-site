@@ -7,10 +7,12 @@
       url: https://www.alfacashier.com/
     - name: Anycoin Direct
       url: https://anycoindirect.eu/buy/monero
+    - name: Bitci (XMR/BTCI, XMR/TRY, XMR/CHFT)
+      url: https://www.bitci.com/
     - name: Binance
       url: https://www.binance.com/trade.html?symbol=XMR_BTC
-    - name: BITEXBOOK (XMRBTC)
-      url: https://bitexbook.com/trading/xmrbtc
+    - name: BITEXBOOK (XMR/BTC, XMR/USD, XMR/RUB)
+      url: https://bitexbook.com/
     - name: Bitfinex (XMRUSD, XMRBTC)
       url: https://www.bitfinex.com/
     - name: Bitqist - Instant exchange
@@ -33,8 +35,6 @@
       url: https://crypto-bridge.org
     - name: CRYPTODIGGERS.EU
       url: https://cryptodiggers.eu/
-    - name: Cryptopia
-      url: https://www.cryptopia.co.nz/Exchange?market=XMR_BTC
     - name: ExchangeD.I2P - Darknet exchange (I2P)
       url: http://www.exchanged.i2p/en/home
     - name: Evercoin
@@ -415,6 +415,8 @@
       url: https://paranotsonormal.com
     - name: PawanpatSilver
       url: https://www.pawanpatsilver.com
+    - name: Print-ted - Online store for apparels and accessories
+      url: https://print-ted.com/
     - name: Project Coral Reef Store
       url: http://www.projectcoralreef.com/all-stores
     - name: Purism - Privacy Phones & Laptops
