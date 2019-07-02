@@ -4,10 +4,35 @@ title: titles.merchants
 permalink: /community/merchants/index.html
 ---
 {% t global.lang_tag %}
-<div class="text-center container description">
+<div class="merchants text-center container description">
     <p>{% t merchants.intro1 %}<a href="https://repo.getmonero.org/monero-project/monero-site/issues"> {% t merchants.intro2 %}</a></p>
 </div>
 <div class="merchants">
+
+{% assign itemCount = site.data.merchants | size %}
+{% assign headerRow = itemCount | divided_by: 5.0 | ceil | times: 1.0 %}
+{% assign itemInRow = itemCount | divided_by: headerRow | ceil %}
+
+{% assign Item_processed = 0 %}
+<div class="container full">
+  {% for toplevel in site.data.merchants %}
+    {% assign isHeader = Item_processed | modulo: itemInRow %}
+    {% if isHeader == 0 %}
+      <div class="tabPanel-merchant tabPanel-merchant{{ itemInRow }}">
+    {% endif %}
+        <h2><a href="#{{ toplevel.id }}">{{ toplevel.category }}</a></h2>
+        {% assign Item_processed = Item_processed | plus: 1 %}
+    {% assign isHeader = Item_processed | modulo: itemInRow %}
+    {% if isHeader == 0 %}
+      </div>
+      {% if Item_processed != itemCount %}
+        {% assign headerRow = itemCount | minus: Item_processed | divided_by: 5.0 | ceil | times: 1.0 %}
+        {% assign itemInRow = itemCount | minus: Item_processed | divided_by: headerRow | ceil %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
 {% for toplevel in site.data.merchants %}
 <div class="container full" id="{{toplevel.id}}">
        <div class="info-block">
