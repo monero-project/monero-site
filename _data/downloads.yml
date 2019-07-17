@@ -6,10 +6,10 @@
   gui_url: win64
   gui_hash: cecb32d57684c9ec719f56ef72464413986d8bda93b2d5f51852eb1946e51993
   gui_installer_url: win64install
-  gui_installer_hash: 4c0ceb81361a4b69bff6cd5a47ef94cfd2992796fb25ca3923aed51d6fcd48bd
+  gui_installer_hash: aff1a4780d7a0814bc9bf8927815e104f6afee5b3c3edec454c56a994e87e50f
   cli_version: 0.14.1.0
   gui_version: 0.14.1.0
-  gui_installer_version: 0.14.0.0
+  gui_installer_version: 0.14.1.0
   tag: Boron Butterfly
   blockchain: win
 
