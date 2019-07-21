@@ -1,5 +1,5 @@
 {% assign version = '2.3.0' | split: '.' %}
-{% include untranslated.html %}
+{% include disclaimer.html translated="false" version=page.version %}
 ## Introduction
 
 This is a list of the monerod daemon RPC calls, their inputs and outputs, and examples of each.
