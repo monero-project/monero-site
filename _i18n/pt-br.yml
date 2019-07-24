@@ -19,19 +19,19 @@ global:
   copyright: Direitos Autorais
   monero_project: Projeto Monero
   sitename: getmonero.org, Projeto Monero
-  wiki: Moneropedia
+  wiki: Moneropédia
   tags: Artigos por Tag
-  wikimeta: em Moneropedia, a enciclopédia livre sobre o Monero
+  wikimeta: em Moneropédia, a enciclopédia livre sobre o Monero
   tagsmeta: Todos os artigos do blog Monero que possuem tags
   titlemeta: na casa do Monero, uma moeda digital segura, privada e não rastreável
   terms: Termos
   privacy: Privacidade
   copyright: Direitos Autorais
-  untranslated: Esta página ainda não está traduzida. Se você gostaria de ajudar a traduzi-la, por favor veja a
+  untranslated: Esta página ainda não está traduzida. Se você gostaria de ajudar a traduzi-la, veja a
   outdatedMax: Esta página está desatualizada. Nós não recomendamos consultá-la. Por favor, veja a
   outdatedVersion: versão em inglês
   outdatedMin: Esta página foi atualizada desde a tradução. Você pode consultá-la, mas é possível que ela esteja incompleta.
-  upgrade: Para continuar usando o Monero, certifique-se que seu software está atualizado para a versão de 9 de março.
+  upgrade: Para continuar usando o Monero, certifique-se de que seu software está atualizado para a versão de 9 de março.
   moreinfo: Mais informações
   lang_tag: "@lang_tag_pt-br"
 
@@ -77,29 +77,29 @@ home:
   heading2: Moeda Digital Privada
   monero_is_cash: Monero é o dinheiro para um mundo conectado. Ele é rápido, privado e seguro. Com o Monero, você é o seu próprio banco. Você pode usá-lo com segurança, sabendo que outras pessoas não poderão ver seu saldo ou rastrear suas atividades financeiras.
   get_started: Início
-  why_monero_is_different: Porquê o Monero é diferente
+  why_monero_is_different: Por que o Monero é diferente
   monero_is_secure: Monero é seguro
-  monero_is_secure_para: O Monero é uma criptomoeda descentralizada, o que o faz um dinheiro digital seguro operador por uma grande rede de usuários. As transações são confirmadas via consenso distribuído e então gravadas no blockchain de forma definitiva. Não é preciso confiar em terceiros para manter seu Monero seguro.
+  monero_is_secure_para: Monero é uma criptomoeda descentralizada, um dinheiro digital seguro operado por uma grande rede de usuários. As transações são confirmadas através de um consenso distribuído e então registradas no blockchain de forma definitiva. Você não precisa confiar em terceiros para manter suas moedas em segurança.
   monero_is_private: Monero é privado
-  monero_is_private_para: O Monero usa assinaturas em anel, transações confidenciais em anel e endeços sigilosos para ofuscar a origem, os valores e o destinatário de todas as transações. O Monero fornece todos os benefícios de uma criptomoeda descentralizada, sem nenhuma das típicas concessões de privacidade.
-  monero_is_untraceable: Monero é não rastreável
-  monero_is_untraceable_para: Os Subendereços do remetente e destinatário, assim como os valores das transações, são ofuscados por padrão. As transações no blockchain do Monero não podem ser vinculadas a um usuário em particular ou a uma identidade do mundo real.
+  monero_is_private_para: Monero usa assinaturas em anel, transações confidenciais em anel e endereços sigilosos para ofuscar o remetente, a quantia e o destinatário de todas as transações. Você tem todos os benefícios de uma criptomoeda descentralizada, sem abrir mão da sua privacidade.
+  monero_is_untraceable: Monero não é rastreável
+  monero_is_untraceable_para: Os endereços do remetente e do destinatário, assim como as quantias, são ofuscados por padrão. As transações registradas no blockchain do Monero não podem ser vinculadas a uma pessoa específica ou a uma identidade na vida real.
   monero_is_fungible: Monero é fungível
   monero_is_fungible_para1: Monero é
   monero_is_fungible_para2: fungível
-  monero_is_fungible_para3: porque ele é privado por padrão. Comerciantes e corretoras não podem adicionar unidades do Monero em listas negras devido à sua associação em transações anteriores.
+  monero_is_fungible_para3: porque ele é privado por padrão. Como não é possível rastrear o passado de nenhuma unidade do Monero, comerciantes e corretoras não podem criar listas negras com unidades do Monero.
   downloads: Downloads
   downloads_windows: Monero para Windows
   downloads_mac: Monero para Mac
   downloads_linux: Monero para Linux
   downloads_blockchain: Último Blockchain
-  different_system: Precisa para um outro sistema operacional?
+  different_system: Procura para outro sistema operacional?
   view_all_downloads: Veja todos os downloads disponíveis aqui.
   latest_news: Notícias
   more_news: Mais notícias
   moneropedia: Moneropédia
-  moneropedia_para: Você quer conhecer o significado dos termos e conceitos usados no Monero? Aqui você encontrará um guia alfabético com os termos e seus significados dos projetos Monero e Kovri.
-  moneropedia_button: Leia o Moneropédia
+  moneropedia_para: Quer conhecer o significado dos termos e conceitos usados no Monero? Aqui você encontrará um guia alfabético com os termos e seus significados dos projetos Monero e Kovri.
+  moneropedia_button: Leia a Moneropédia
   user_guides: Guias do Usuário
   user_guides_para: Guias passo-a-passo separados por categoria cobrindo tudo sobre o Monero, desde a criação de uma carteira até como você pode ajudar a rede ou mesmo editar este website.
   user_guides_button: Leia os Guias
