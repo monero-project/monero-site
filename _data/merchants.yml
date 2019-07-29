@@ -101,6 +101,8 @@
       url: https://www.cdpay.eu/
     - name: CoinPayments
       url: https://www.coinpayments.net/
+    - name: CryptAPI
+      url: https://cryptapi.io/
     - name: GloBee
       url: https://globee.com/
     - name: Living Room of Satoshi
@@ -182,6 +184,8 @@
       url: https://bunkervpn.com
     - name: BuyPrivacy
       url: https://www.buyprivacy.net
+    - name: Caliston Design - Design and web development agency
+      url: https://calistondesign.com/
     - name: Computer Lab - React, Django, Security Consultancy in NYC
       url: https://computerlab.io
     - name: cloakVPN.com
@@ -200,6 +204,8 @@
       url: https://galanglaw.com/
     - name: Esperanto lessons from Kaja
       url: mailto:kiah.morante@gmail.com
+    - name: EchangeRates - compares the prices of Monero and other cryptocurrencies across exchanges
+      url: https://exchangerates.pro/
     - name: Farmer ALP, LLC, Arizona
       url: mailto:farmeralp@gmail.com
     - name: Flokinet.is
@@ -258,6 +264,8 @@
       url: https://ppcprotect.com
     - name: Pradeep Atluri, Psychiatrist, New York
       url: http://dr.mindsci.com/
+    - name: PrivacyAustralia - SME consultancy
+      url: https://privacyaustralia.net/
     - name: Ray Luechtefeld, PhD, Leadership & Team Coaching and Development
       url: https://clarity.fm/rayluechtefeld
     - name: Red/Cedar websites - digital marketing company
@@ -266,6 +274,8 @@
       url: http://www.rohan.law
     - name: Rootbox; Simple, no non-sense hosting
       url: https://rootbox.host/
+    - name: RouterHosting - Hosting (VPS)
+      url: https://www.routerhosting.com/
     - name: ServersDrift - Dedicated Hosting, VPS, OPSEC & Pentesting Services
       url: https://serversdrift.com
     - name: Seymour Locksmiths
@@ -274,6 +284,8 @@
       url: https://smsanon.com/
     - name: Snel - dedicated and VPS hosting
       url: https://www.snel.com/
+    - name: Social Media LTD - Digital marketing agency
+      url: https://social-media.co.uk/
     - name: Tactical VPN
       url: https://meg-it.info/tacticalvpn
     - name: TheBigCoin - Spend Monero Anywhere
