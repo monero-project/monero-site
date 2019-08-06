@@ -979,7 +979,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_fee_estimate**
 
-Donne une estimation des frais par kO.
+Donne une estimation des frais par octet.
 
 Alias : *Aucun*.
 
@@ -989,7 +989,8 @@ Entrées :
 
 Sorties :
 
-* *fee* - entier non signé; Montant estimé des frais par kO en @unités-atomiques
+* *fee* - entier non signé; Montant estimé des frais par octet en @unités-atomiques
+* *quantization_mask* - entier non signé; Les frais finaux doivent être arrondis à un multiple de cette valeur
 * *status* - chaîne de caractères; Code erreur général RPC. "OK" signifie que tout va bien.
 * *untrusted* - booléen; Indique si le résultat est obtenu en utilisant un nœud d'amorce, auquel il ne faudrait pas faire confiance (`true`), ou si le démon est totalement synchronisé (`false`).
 

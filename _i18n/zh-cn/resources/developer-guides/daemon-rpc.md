@@ -914,7 +914,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_coinbase_tx_sum**
 
-Get the coinbase ammount and the fees ammount for n last blocks starting at particular height
+Get the coinbase amount and the fees amount for n last blocks starting at particular height
 
 Alias: *None*.
 
@@ -979,7 +979,7 @@ $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 
 ### **get_fee_estimate**
 
-Gives an estimation on fees per kB.
+Gives an estimation on fees per byte.
 
 Alias: *None*.
 
@@ -989,7 +989,8 @@ Inputs:
 
 Outputs:
 
-* *fee* - unsigned int; Amount of fees estimated per kB in @atomic-units
+* *fee* - unsigned int; Amount of fees estimated per byte in @atomic-units
+* *quantization_mask* - unsigned int; Final fee should be rounded up to an even multiple of this value
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced (`false`).
 
