@@ -269,8 +269,8 @@ contributing:
   mine_para2: qui.
   ffs: Guarda il Sistema di Raccolta Fondi
   ffs_para1: Monero utilizza un
-  ffs_para2: Sistema di Raccolta Fondi basato su Forum
-  ffs_para3: (Forum Funding System, FFS) in cui vengono proposti progetti legati allo sviluppo e successivamente finanziati dalla comunità. Il finanziamento viene depositato in garanzia e liquidato agli sviluppatori solo a seguito del raggiungimento delle milestone di sviluppo. Chiunque può avanzare nuove proposte o finanziare le proposte già presenti.
+  ffs_para2: Sistema di Raccolta Fondi
+  ffs_para3: (Community Crowdfunding System, CCS) in cui vengono proposti progetti legati allo sviluppo e successivamente finanziati dalla comunità. Il finanziamento viene depositato in garanzia e liquidato agli sviluppatori solo a seguito del raggiungimento delle milestone di sviluppo. Chiunque può avanzare nuove proposte o finanziare le proposte già presenti.
   donate: Dona
   donate_para1: Lo sviluppo del progetto è supportato dalle donazioni e dalle
   donate_para2: sponsorizzazioni.
