@@ -1,6 +1,6 @@
 - name: Legale
   url: legal
 - name: Codice Sorgente
-  url: https://github.com/monero-project
+  url: https://repo.getmonero.org
 - name: Specifiche Tecniche
   url: technical-specs/

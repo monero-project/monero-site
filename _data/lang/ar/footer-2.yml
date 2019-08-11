@@ -1,6 +1,6 @@
 - name: قانوني
   url: legal
 - name: شفره المصدر
-  url: https://github.com/monero-project
+  url: https://repo.getmonero.org
 - name: المواصفات التقنيه
   url: technical-specs/
