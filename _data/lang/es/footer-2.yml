@@ -1,6 +1,6 @@
 - name: Aviso Legal
   url: legal
 - name: Código Fuente
-  url: https://github.com/monero-project
+  url: https://repo.getmonero.org
 - name: Especificaciones Técnicas
   url: technical-specs/

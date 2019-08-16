@@ -1,6 +1,6 @@
 - name: Юридическая информация
   url: legal
 - name: Исходный код
-  url: https://github.com/monero-project
+  url: https://repo.getmonero.org
 - name: Техническая спецификация
   url: technical-specs/

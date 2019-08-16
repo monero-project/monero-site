@@ -1,6 +1,6 @@
 - name: Juridisch
   url: legal
 - name: Broncode
-  url: https://github.com/monero-project
+  url: https://repo.getmonero.org
 - name: Technische specificaties
   url: technical-specs/

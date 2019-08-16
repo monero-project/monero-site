@@ -1,6 +1,6 @@
 - name: Yasal
   url: legal
 - name: Kaynak Kodu
-  url: https://github.com/monero-project
+  url: https://repo.getmonero.org
 - name: Teknik Özellikler
   url: technical-specs/
