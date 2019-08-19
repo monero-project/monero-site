@@ -2422,8 +2422,10 @@ label[for="mobile-burger"] {
     right: 0;
     text-align: center;
     width: inherit;
-    margin-top: 0.6rem;
+    margin-top: 0.5rem;
     background-color: #fff;
+    max-height: calc(100% - 50px);
+    overflow: auto;
 }
 label[for="moblangdrop"] {
     display: block;
