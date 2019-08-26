@@ -147,7 +147,8 @@ hangouts:
 merchants:
   translated: "yes"
   intro1: I commercianti hanno imparato a valutare la privacy finanziaria di Monero. Di seguito è riportato un elenco dei commercianti che sappiamo accettare Monero per i loro beni e servizi. Se una società non accetta più Monero o desideri che la tua attività sia elencata,
-  intro2:  apri una issue GitLab e facci sapere.
+  intro2:  apri una issue GitLab e facci sapere 
+  intro3: (seleziona il template "Merchant" e completa tutte le sezioni).
   disclaimer: |
           "Nota: questi link vengono forniti per comodità e solo a scopo informativo; non costituiscono un'approvazione da parte della comunità Monero di alcun prodotto, servizio o opinione delle società o organizzazioni o individui elencati. La comunità Monero non si assume alcuna responsabilità per l'accuratezza, la legalità o il contenuto di questi siti esterni. Contatta il sito esterno per le risposte alle domande riguardanti il suo contenuto. Come sempre, caveat emptor ('l'acquirente stia attento'); sei totalmente responsabile della tua ricerca. Usa sempre il giudizio quando fai acquisti online."
 

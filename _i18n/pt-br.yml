@@ -147,7 +147,8 @@ hangouts:
 merchants:
   translated: "yes"
   intro1: Comerciantes de todos os tipos passaram a valorizar a privacidade financeira que o Monero proporciona. Abaixo está uma lista de comerciantes que sabemos que atualmente aceitam Monero como forma de pagamento pelos seus produtos e serviços. Se uma empresa deixou de aceitar Monero, ou se você quer adicionar seu negócio na lista, por favor
-  intro2:  abra um ticket no GitLab nos informando.
+  intro2:  abra um ticket no GitLab nos informando 
+  intro3:
   disclaimer: |
     "Favor notar que os links presentes são listados por conveniência e para fins informativos; eles não constituem endosso da comunidade Monero de quaisquer produtos, serviços ou opiniões das corporações, organizações e indivíduos aqui listados. A comunidade Monero não se responsabiliza pela exatidão, legalidade ou conteúdo destes websites externos. Entre em contato com o serviço em questão para obter respostas sobre seu conteúdo. Seja prudente, você é responsável por fazer sua própria pesquisa. Sempre use o bom senso ao realizar compras online."
 
