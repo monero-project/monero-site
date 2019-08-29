@@ -5,7 +5,7 @@ permalink: /resources/user-guides/remote_node_gui.html
 mainVersion:
   - "1"
   - "2"
-  - "0"
+  - "1"
 ---
 
 {% t global.lang_tag %}
