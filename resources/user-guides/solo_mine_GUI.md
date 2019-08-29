@@ -9,4 +9,5 @@ mainVersion:
 ---
 
 {% t global.lang_tag %}
+<h1>{% t user-guides.solo-mine %}</h1>
 {% tf resources/user-guides/solo_mine_GUI.md %}

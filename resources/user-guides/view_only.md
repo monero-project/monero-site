@@ -9,4 +9,5 @@ mainVersion:
 ---
 
 {% t global.lang_tag %}
+<h1>{% t user-guides.view-only %}</h1>
 {% tf resources/user-guides/view_only.md %}

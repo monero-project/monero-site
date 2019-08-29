@@ -9,4 +9,5 @@ mainVersion:
 ---
 
 {% t global.lang_tag %}
+<h1>{% t user-guides.locked-funds %}</h1>
 {% tf resources/user-guides/howto_fix_stuck_funds.md %}
