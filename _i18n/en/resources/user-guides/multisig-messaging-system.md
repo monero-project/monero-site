@@ -1,7 +1,5 @@
 {% assign version = '1.1.1' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Multisig Transactions with MMS and CLI Wallet
-
 ## Introduction
 
 This manual describes the *Multisig Messaging System*, abbreviated as *MMS*. It's a system that aims to **simplify multisig transactions** for Monero and similar CrypoNote-based cryptocurrencies by making it easy to exchange info like key sets and sync data between wallets and by offering some "workflow support" guiding you through the various steps.

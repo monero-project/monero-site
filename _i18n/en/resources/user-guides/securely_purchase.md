@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-## How to purchase Monero and securely store it.
-
 This is a guide to purchase and securely store Monero as of June 2017.
 
 #### Step 1: Buy Bitcoin

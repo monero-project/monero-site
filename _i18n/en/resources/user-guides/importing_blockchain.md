@@ -1,6 +1,6 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Importing the Blockchain to Monero GUI wallet (Windows)
+## Importing the Blockchain to Monero GUI wallet (Windows)
 
 ### Step 1
 
