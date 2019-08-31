@@ -2,7 +2,7 @@
 layout: post
 title: A Scheduled Network Upgrade is Planned for April 6
 summary: A scheduled network upgrade is planned for April 6. To be sufficiently prepared, please run CLI v0.12.0.0 or GUI v0.12.0.0
-tags: [network upgrade, core, crypto]
+tags: [network upgrade, core, crypto, announcements]
 author: dEBRUYNE / fluffypony
 ---
 

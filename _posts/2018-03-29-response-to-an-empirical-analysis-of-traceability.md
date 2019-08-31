@@ -2,7 +2,7 @@
 layout: post
 title: Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2
 summary: A response to Malte Möser, et al.
-tags:  [core, crypto, research]
+tags:  [core, crypto, research, announcements]
 author: Justin Ehrenhofer (SamsungGalaxyPlayer, sgp)
 ---
 
