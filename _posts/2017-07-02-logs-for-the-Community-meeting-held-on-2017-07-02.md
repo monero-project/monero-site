@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-07-02
 summary: Official website, marketing / social media, slogan, Kovri, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: dEBRUYNE / fluffypony
 ---  
   

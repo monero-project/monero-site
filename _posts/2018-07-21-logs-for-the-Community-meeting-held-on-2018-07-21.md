@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-07-21
 summary: Community highlights, Forum Funding System updates, Workgroup report, Tracking challenge discussion, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

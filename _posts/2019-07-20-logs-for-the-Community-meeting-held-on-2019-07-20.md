@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2019-07-20
 summary: Community highlights, CCS updates, Workgroup report, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / rehrar
 ---
 

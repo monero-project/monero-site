@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Monero Research Lab Meeting Held on 2019-03-18
 summary: Sarang work, Surae work, Output distribution and miscellaneous
-tags: [community, crypto, research]
+tags: [dev diaries, community, crypto, research]
 author: el00ruobuob / sarang
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-07-30
 summary: Monero Meetups, Case studies – communities in other cryptocurrencies, Twitter / Facebook background, helping out with testing, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: dEBRUYNE / fluffypony
 ---
 
