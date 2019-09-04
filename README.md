@@ -14,7 +14,7 @@
 - [How to add a new Merchant](#how-to-add-a-new-merchant)
 - [How to add a question to the FAQ](#how-to-add-a-question-to-the-faq)
 - [How to add a publication to the Library](#how-to-add-a-publication-to-the-library)
-- [Localization](#localization)
+- [Translations](#translations)
   - [How to translate a page](#how-to-translate-a-page)
   - [How to add a new language](#how-to-add-a-new-language)
 
