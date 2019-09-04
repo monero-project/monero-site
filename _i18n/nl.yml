@@ -147,7 +147,8 @@ hangouts:
 merchants:
   translated: "yes"
   intro1: Allerlei soorten verkopers stellen de financiële privacy die Monero biedt op prijs. Hieronder volgt een lijst met de verkopers die momenteel Monero accepteren voor goederen en diensten, voorzover we weten. Accepteert een bedrijf geen Monero meer, of wil je jouw bedrijf laten vermelden?
-  intro2:  Open een GitLab-issue en laat het ons weten.
+  intro2:  Open een GitLab-issue en laat het ons weten 
+  intro3: 
   disclaimer: |
     "Disclaimer: deze links worden uitsluitend aangeboden ter informatie en voor het gemak van de lezer; ze vormen geen goedkeuring door de Monero-community van enige producten, diensten of standpunten van de vermelde bedrijven, organisaties en personen. De Monero-community is niet aansprakelijk voor de juistheid, de wettigheid of de inhoud van deze externe websites. Neem contact op met de beheerder van een externe website voor vragen over de inhoud ervan. Volg altijd het principe *caveat emptor* (let op, koper): je bent zelf verantwoordelijk voor het controleren van verkopers. Wees altijd voorzichtig bij het doen van aankopen op internet."
 

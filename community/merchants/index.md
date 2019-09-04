@@ -5,7 +5,7 @@ permalink: /community/merchants/index.html
 ---
 {% t global.lang_tag %}
 <div class="merchants text-center container description">
-    <p>{% t merchants.intro1 %}<a href="https://repo.getmonero.org/monero-project/monero-site/issues"> {% t merchants.intro2 %}</a></p>
+    <p>{% t merchants.intro1 %}<a href="https://repo.getmonero.org/monero-project/monero-site/issues"> {% t merchants.intro2 %}</a> {% t merchants.intro3 %}</p>
 </div>
 <div class="merchants">
 
