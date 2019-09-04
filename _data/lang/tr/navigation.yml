@@ -16,14 +16,14 @@
   url: downloads/
 - title: Son Haberler
   subfolderitems:
-    - page: Tüm Gönderiler
-      url: blog
-    - page: Mektuplar
-      url: blog/tags/monero%20missives.html
+    - page: Duyurular
+      url: blog/tags/announcements.html
     - page: Toplantı Kayıtları
       url: blog/tags/dev%20diaries.html
     - page: Bültenler
       url: blog/tags/releases.html
+    - page: Tüm Gönderiler
+      url: blog
 - title: Topluluk
   subfolderitems:
   - page: Ekip
