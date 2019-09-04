@@ -16,14 +16,14 @@
   url: downloads/
 - title: Notícias
   subfolderitems:
-    - page: Todos os Posts
-      url: blog
-    - page: Missivas
-      url: blog/tags/monero%20missives.html
+    - page: Comunicados
+      url: blog/tags/announcements.html
     - page: Logs das Reuniões
       url: blog/tags/dev%20diaries.html
     - page: Lançamentos
       url: blog/tags/releases.html
+    - page: Todos os Posts
+      url: blog
 - title: Comunidade
   subfolderitems:
   - page: Equipe

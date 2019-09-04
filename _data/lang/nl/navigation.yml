@@ -16,14 +16,14 @@
   url: downloads/
 - title: Nieuws
   subfolderitems:
-    - page: Alles
-      url: blog
-    - page: Missives
-      url: blog/tags/monero%20missives.html
+    - page: Mededelingen
+      url: blog/tags/announcements.html
     - page: Vergaderingen
       url: blog/tags/dev%20diaries.html
     - page: Releases
       url: blog/tags/releases.html
+    - page: Alles
+      url: blog
 - title: Community
   subfolderitems:
   - page: Team

@@ -16,14 +16,14 @@
   url: downloads/
 - title: Последние новости
   subfolderitems:
-    - page: Все новости
-      url: blog
-    - page: Официальные отчёты
-      url: blog/tags/monero%20missives.html
+    - page: Объявления
+      url: blog/tags/announcements.html
     - page: Журналы встреч
       url: blog/tags/dev%20diaries.html
     - page: Релизы
       url: blog/tags/releases.html
+    - page: Все новости
+      url: blog
 - title: Сообщество
   subfolderitems:
   - page: Команда

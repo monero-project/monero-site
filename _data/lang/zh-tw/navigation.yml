@@ -16,14 +16,14 @@
   url: downloads/
 - title: 最新消息
   subfolderitems:
-    - page: 所有文章
-      url: blog
-    - page: 重大消息
-      url: blog/tags/monero%20missives.html
+    - page: 通告
+      url: blog/tags/announcements.html
     - page: 會議記錄
       url: blog/tags/dev%20diaries.html
     - page: 版本發佈
       url: blog/tags/releases.html
+    - page: 所有文章
+      url: blog
 - title: 社群
   subfolderitems:
   - page: 合作團隊

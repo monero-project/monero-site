@@ -16,14 +16,14 @@
   url: downloads/
 - title: آخر الأخبار
   subfolderitems:
-    - page: جميع المشاركات
-      url: blog
-    - page: خطابات
-      url: blog/tags/monero%20missives.html
+    - page:الإعلاناتت
+      url:blog/tags/announcements.html
     - page: سجل الإجتماعات
       url: blog/tags/dev%20diaries.html
     - page: الإصدارات
       url: blog/tags/releases.html
+    - page: جميع المشاركات
+      url: blog
 - title: المجتمع
   subfolderitems:
   - page: الفريق
