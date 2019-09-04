@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monero Compatible Bulletproofs
-tags: [crypto, research]
+tags: [crypto, research, announcements]
 author: Sarang Noether
 ---
 

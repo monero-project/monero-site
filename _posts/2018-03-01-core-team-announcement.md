@@ -2,7 +2,7 @@
 layout: post
 title: Core Team Announcement
 summary: Small elaboration on the Core Team's role and an announcement on its membership
-tags:  [monero, core]
+tags:  [monero, core, announcements]
 author: The Core Team
 ---
 

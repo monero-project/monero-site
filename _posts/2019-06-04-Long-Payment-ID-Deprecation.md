@@ -2,7 +2,7 @@
 layout: post
 title: Long Payment ID Deprecation
 summary: Announcement of the deprecation of long payment IDs
-tags: [community, crypto]
+tags: [community, crypto, announcements]
 author: dEBRUYNE / Fluffypony
 ---
 

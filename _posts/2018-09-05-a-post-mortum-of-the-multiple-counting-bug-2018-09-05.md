@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Post Mortem of The Multiple Counting Bug
-tags: [dev, core, crypto]
+tags: [dev, core, crypto, announcements]
 author: dEBRUYNE
 ---
 
