@@ -8,4 +8,5 @@ mainVersion:
   - "0"
 ---
 
+<h1>{% t user-guides.ledger-wallet-cli %}</h1>
 {% tf resources/user-guides/ledger-wallet-cli.md %}

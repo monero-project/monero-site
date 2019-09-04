@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-## How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
-
 ### Table of Content
 
 * [1. Windows](#1-windows)

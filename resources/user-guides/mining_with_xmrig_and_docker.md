@@ -8,4 +8,5 @@ mainVersion:
   - "0"
 ---
 {% t global.lang_tag %}
+<h1>{% t user-guides.mine-docker %}</h1>
 {% tf resources/user-guides/mining_with_xmrig_and_docker.md %}

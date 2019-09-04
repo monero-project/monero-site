@@ -9,4 +9,5 @@ mainVersion:
 ---
 
 {% t global.lang_tag %}
+<h1>{% t user-guides.verify-allos %}</h1>
 {% tf resources/user-guides/verification-allos-advanced.md %}

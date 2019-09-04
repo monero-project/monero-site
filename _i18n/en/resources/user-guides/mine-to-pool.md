@@ -1,13 +1,13 @@
 {% assign version = '1.1.1' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Selecting a pool
+## Selecting a pool
 
 There are many pools to choose from, a list is available at
 [moneropools.com](https://moneropools.com). Mining on a larger pool could mean
 more frequent payouts, but mining on a smaller pool helps to keep the network
 decentralized.
 
-# Selecting a CPU miner
+## Selecting a CPU miner
 
 Just like pools, there are a lot of miners to choose from. The one that you
 should pick depends on the hardware you want to mine on. This guide will only
@@ -18,7 +18,7 @@ Alternatives include
 [sgminer-gm](https://github.com/genesismining/sgminer-gm).
 However, their configuration is slightly different and will not be covered in this guide.
 
-## For Windows Systems
+### For Windows Systems
 
 If you are using a Windows system, the developer of xmr-stak-cpu provides
 binaries to download on the
@@ -27,7 +27,7 @@ binaries to download on the
 Download `xmr-stak-cpu-win64.zip` and extract it somewhere you'll be able to
 find it again.
 
-## For Other Operating Systems
+### For Other Operating Systems
 
 If you're not using Windows, you will have to compile xmr-stak-cpu for yourself,
 luckily this isn't as hard as it sounds. Before you can compile the miner, you
@@ -74,7 +74,7 @@ After this, your config should look something like this:
 
 ![image3](png/mine_to_pool/3.png)
 
-# Running the miner
+## Running the miner
 
 **Save the config** file and run the miner!
 
@@ -83,7 +83,7 @@ After this, your config should look something like this:
 Some pools allow you to monitor your hashrate by pasting your address into their
 website. You can also monitor your hashrate by pressing the `h` key.
 
-# Tuning the miner
+## Tuning the miner
 
 You might see nasty messages like this:
 
@@ -91,7 +91,7 @@ You might see nasty messages like this:
 
 This means that you can get around a 20% hashrate boost by enabling large pages.
 
-## Large pages on Linux
+### Large pages on Linux
 
 Firstly stop the miner (if it's running), run the following commands to enable
 large pages and then start the miner as root:
@@ -99,7 +99,7 @@ large pages and then start the miner as root:
 	sudo sysctl -w vm.nr_hugepages=128
 	sudo ./xmr-stak-cpu
 
-## Large pages on Windows
+### Large pages on Windows
 
 Taken from `config.txt`:
 

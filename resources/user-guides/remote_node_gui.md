@@ -9,4 +9,6 @@ mainVersion:
 ---
 
 {% t global.lang_tag %}
+
+<h1>{% t user-guides.remote-node-gui %}</h1>
 {% tf resources/user-guides/remote_node_gui.md %}

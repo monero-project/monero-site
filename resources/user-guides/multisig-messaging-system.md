@@ -8,4 +8,5 @@ mainVersion:
   - "1"
 ---
 {% t global.lang_tag %}
+<h1>{% t user-guides.multisig-messaging-system %}</h1>
 {% tf resources/user-guides/multisig-messaging-system.md %}

@@ -9,4 +9,5 @@ mainVersion:
 ---
 
 {% t global.lang_tag %}
+<h1>{% t user-guides.import-blockchain %}</h1>
 {% tf resources/user-guides/importing_blockchain.md %}
