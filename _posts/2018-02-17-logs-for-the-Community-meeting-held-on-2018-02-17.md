@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-02-17
 summary: Community highlights, Forum Funding System updates, RFC-HWALLET-1, Localization workgroup, March HF, chain split discussion (e.g. MoneroV), and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: dEBRUYNE / fluffypony
 ---
 

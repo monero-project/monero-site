@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-01-20
 summary: Community highlights, Forum Funding System updates, RFC-HWALLET-1, Kasisto, open ideas, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: dEBRUYNE / fluffypony
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2019-06-08
 summary: CCS updates, Workgroup report, RandomX fund leftover, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / rehrar
 ---
 

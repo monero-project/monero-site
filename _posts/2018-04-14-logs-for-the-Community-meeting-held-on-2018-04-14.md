@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-04-14
 summary: Community highlights, Forum Funding System updates, Localization workgroup, Important update for the community workgroup, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

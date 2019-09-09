@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-10-27
 summary: Community highlights, Forum Funding System updates, Workgroup report, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / rehrar
 ---
 

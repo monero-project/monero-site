@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2019-02-02
 summary: Community highlights, Forum Funding System updates, Workgroup report, and Code of Conduct discussion
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / rehrar
 ---
 

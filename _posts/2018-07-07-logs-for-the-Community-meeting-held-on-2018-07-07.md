@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-07-07
 summary: Community highlights, Forum Funding System updates, Dutch translations discussion, Monero Outreach discussion, Outreach workgroup report, Monero Marketing workgorup (including r/MoneroMarketing potential transfer) report, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

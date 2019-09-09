@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-09-15
 summary: Community highlights, Forum Funding System updates, Workgroup report, Changelly r/Monero discussion, and miscellaneous
-tags: [community, crypto]
+tags: [dev diaries, community, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 
