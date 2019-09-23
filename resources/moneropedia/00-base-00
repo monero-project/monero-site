@@ -1,9 +1,0 @@
----
-layout: moneropedia
-title: titles.moneropedia
-entry: moneropedia.entries.00
----
-
-@moneropedia_article
-
-{% t global.lang_tag %}
