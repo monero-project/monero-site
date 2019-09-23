@@ -188,6 +188,7 @@ downloads:
   hardware2: Monedero de Hardware Dedicado
   hardware3: que ya está en progreso. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
   hardware4: integrated Monero into their hardware wallets.
+  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: Los siguientes son monederos móviles y livianos que los miembros de confianza de la comunidad consideran seguros. Si hay un monedero que no está aquí, puedes solicitar que la comunidad lo revise. Ve a nuestra página de
   mobilelight2: Medios de Comunicación
   mobilelight3:  para ver en dónde realizar la petición.

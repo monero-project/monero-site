@@ -188,6 +188,7 @@ downloads:
   hardware2: 專門的硬體錢包開發專案
   hardware3: 正在進行中。不過自從在版本 CLI 0.12.1 和 GUI 0.12.3 之後 Ledger 已成功
   hardware4: 整合門羅幣至他們的硬體錢包。
+  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: 以下是數個行動版錢包或輕錢包已被門羅幣社群認可為安全的選擇。如果有錢包沒有被列在上面的，你可以先到社群上請求大家來試用看看，可以到
   mobilelight2: 聊天室
   mobilelight3: 頁面找到社群所在。
