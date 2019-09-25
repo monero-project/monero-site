@@ -42,7 +42,7 @@ permalink: /community/hangouts/index.html
                             </div>
                             <div class="row relays center-xs">
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <p><a href="https://monero.slack.com/" class="btn-link btn-fixed">Slack</a></p>
+                                    <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>
                                 </div>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <p><a href="https://mattermost.getmonero.org/" class="btn-link btn-fixed">Mattermost</a></p>
