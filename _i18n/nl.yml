@@ -188,6 +188,7 @@ downloads:
   hardware2: gespecialiseerde hardware-wallet
   hardware3: waar nu aan gewerkt wordt. Bovendien heeft Ledger sinds CLI 0.12.1 en GUI 0.12.3
   hardware4: Monero geïntegreerd in hun hardware-wallets.
+  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: Dit zijn mobiele portemonnees of light wallets die veilig worden geacht door vertrouwde leden van de community. Als een portemonnee hier niet bij staat, kun je de community vragen om ernaar te kijken. Op de pagina
   mobilelight2: Ontmoetingsplekken
   mobilelight3:  staat waar je ons kunt vinden.

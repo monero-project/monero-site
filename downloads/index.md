@@ -65,6 +65,7 @@ permalink: /downloads/index.html
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <p>{% t downloads.hardware1 %} <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware2 %}</a> {% t downloads.hardware3 %} <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware4 %}</a></p>
+                                <p>{% t downloads.hardware5 %}</p>
                             </div>
                         </div>
                     {% elsif data_downloads.id == "mobilelight" %}

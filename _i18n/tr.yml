@@ -188,6 +188,7 @@ downloads:
   hardware2: Özel Donanım Cüzdanı
   hardware3: fonlamıştır. Dahası CLI 0.12.1 ve GUI 0.12.3'ten beri Ledger
   hardware4: Monero'yu donanım cüzdanlarına entegre etmiştir.
+  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: Aşağıdakiler topluluğun güvenilen üyeleri tarafından güvenli olarak görülen mobil veya hafif cüzdanlardır. Eğer burada olmayan bir cüzdan varsa topluluktan kontrol etmesini isteyebilirsiniz. Nerede olduklarını görüntülemek için
   mobilelight2: Buluşmalar
   mobilelight3:  sayfasına gidin.

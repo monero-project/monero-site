@@ -188,6 +188,7 @@ downloads:
   hardware2: 专用硬件钱包，
   hardware3: 目前正在开发中。自CLI 0.12.1和GUI 0.12.3 版本后，Ledger已经
   hardware4: 将门罗币集成到硬件钱包中。
+  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: 以下是受到社区成员信任的手机钱包/轻钱包。如果这里还有尚未列出的钱包，您可以到
   mobilelight2: 社区
   mobilelight3: 来通知我们。
