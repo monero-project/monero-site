@@ -29,6 +29,8 @@
       url: https://www.coincut.com
     - name: Coindirect - Instant exchange
       url: https://www.coindirect.com/buy/monero
+    - name: Coinexwo - Anonymous crypto exchange
+      url: https://trade.coinexwo.com/
     - name: CoinSwitch.co
       url: https://www.coinswitch.co
     - name: CryptoBridge
@@ -43,6 +45,8 @@
       url: https://www.evonax.com/
     - name: EXMO - USD/XMR
       url: https://exmo.com/
+    - name: FixedFloat - Fully automated cryptocurrency exchange
+      url: https://fixedfloat.com/
     - name: Godex
       url: https://godex.io
     - name: Indacoin - Instant exchange
@@ -298,6 +302,8 @@
       url: https://www.thoughtlab.com/
     - name: TorGuard - VPN, proxy and email service
       url: https://torguard.net
+    - name: Travala - Cryptocurrency Friendly Travel Booking
+      url: https://www.travala.com/
     - name: Tuxcon Hosting - Mail and Web Hosting
       url: https://tuxcon.com
     - name: Vpn.surf
