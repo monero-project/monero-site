@@ -14,7 +14,6 @@ permalink: /resources/developer-guides/index.html
             <h2>{% t developer-guides.rpc %}</h2>
             <p><a href="daemon-rpc.html">{% t developer-guides.daemonrpc %}</a></p>
             <p><a href="wallet-rpc.html">{% t developer-guides.walletrpc %}</a></p>
-            <p>{% t developer-guides.soon %}</p>
         </div>
     </section>
 </div>

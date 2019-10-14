@@ -417,7 +417,6 @@ developer-guides:
   rpc: RPC Documentation
   daemonrpc: Daemon RPC Documentation
   walletrpc: Wallet RPC Documentation
-  soon: More coming soon...
 
 user-guides:
   translated: "yes"
