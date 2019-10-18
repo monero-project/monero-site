@@ -23,7 +23,7 @@ To reiterate, following [our earlier announcement](https://lists.getmonero.org/h
 
 Services still utilizing long payment IDs are thus reminded to *upgrade to either integrated addresses or subaddresses as soon as possible*. If any assistance is required, feel free to contact the Monero dev community at #monero-dev (freenode - IRC, Riot/Matrix, [MatterMost](https://mattermost.getmonero.org)). 
 
-Note that a preliminary information thread regarding the scheduled network upgraded [has been posted on Reddit](https://www.reddit.com/r/Monero/comments/d884zt/preliminary_information_thread_regarding_the/) that contains more elaborate information for users and miners.
+Note that a preliminary information thread regarding the scheduled network upgrade [has been posted on Reddit](https://www.reddit.com/r/Monero/comments/d884zt/preliminary_information_thread_regarding_the/) that contains more elaborate information for users and miners.
 
 Kind regards,
 
