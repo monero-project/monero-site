@@ -134,7 +134,7 @@
     - name: Getmonero.org Moneropedia open for Localization
       date: 2018-08-03
       status: completed
-    - name: Перевод getmonero.org на арабском языке
+    - name: Перевод getmonero.org на арабский язык
       date: 2018-08-10
       status: completed
     - name: Выпуск версии 0.13.0.2 Beryllium Bullet
@@ -149,7 +149,7 @@
     - name: Улучшение эффективности доказательства диапазона RingCT для уменьшения размера транзакций
       date: 2018-10-18
       status: completed
-    - name: Network upgrade to increase minimal ringsize to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
+    - name: Обновление сети для увеличения минимального размера кольца до 11, интеграция Bulletproofs, обновление алгоритма расчета сборов и изменение алгоритма доказательства работы "PoW"
       date: 2018-10-18
       status: completed
     - name: Выпуск версии 0.13.0.4 Beryllium Bullet
@@ -167,12 +167,12 @@
     - name: Публикация десятого отчета от Иследовательской Лабаратории
       date: 2018-12-04
       status: completed
-    - name: Implementation of Monero Messaging System (MMS) to automate multisig wallets information exchange
+    - name: Внедрение Системы обмена сообщениями Monero (MMS) для автоматизации обмена информацией с multisig-кошельками
       date: 2018-12-20
       status: completed
 - year: 2019
   accomplishments:
-    - name: Перевод getmonero.org на немецком языке
+    - name: Перевод getmonero.org на немецкий язык
       date: 2019-02-11
       status: completed
     - name: Выпуск версии 0.14.0.0 Boron Butterfly
@@ -181,7 +181,7 @@
     - name: Выпуск GUI версии 0.14.0.0 Boron Butterfly
       date: 2019-03-01
       status: completed
-    - name: New Community Crowdfunding System (CCS) to replace the Forum Funding System (FFS)
+    - name: Новая Система краудфандинга сообщества (CCS), которая должна заменить Систему финансирования форума (FFS)
       date: 2019-03-06
       status: completed
     - name: Выпуск версии 0.14.0.2 Boron Butterfly
@@ -190,19 +190,19 @@
     - name: Переход на новый алгоритм доказательства работы "PoW" CryptoNightR
       date: 2019-03-09
       status: completed
-    - name: Перевод getmonero.org на португальско-бразильском и русском языках
+    - name: Перевод getmonero.org на португальско-бразильский и русский язык
       date: 2019-03-12
       status: completed
-    - name: Trezor Hardware Wallets Support
+    - name: Поддержка аппаратных кошельков Trezor
       date:
       status: ongoing
-    - name: Pruning nodes
+    - name: Обрезка узлов
       date:
       status: ongoing
-    - name: Broadcast transaction over Tor
+    - name: Трансляция транзакции через Tor
       date:
       status: upcoming
-    - name: tini2p integration
+    - name: Интеграция tini2p
       date:
       status: upcoming
     - name: Интеграция Kovri
