@@ -1,4 +1,4 @@
-{% assign version = '2.2.0' | split: '.' %}
+{% assign version = '2.3.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
@@ -1729,14 +1729,14 @@ Alias: *None*.
 
 Inputs:
 
-* *in* - boolean; (Optional) Include incoming transfers.
-* *out* - boolean; (Optional) Include outgoing transfers.
-* *pending* - boolean; (Optional) Include pending transfers.
-* *failed* - boolean; (Optional) Include failed transfers.
-* *pool* - boolean; (Optional) Include transfers from the daemon's transaction pool.
+* *in* - boolean; (defaults to false) Include incoming transfers.
+* *out* - boolean; (defaults to false) Include outgoing transfers.
+* *pending* - boolean; (defaults to false) Include pending transfers.
+* *failed* - boolean; (defaults to false) Include failed transfers.
+* *pool* - boolean; (defaults to false) Include transfers from the daemon's transaction pool.
 * *filter_by_height* - boolean; (Optional) Filter transfers by block height.
 * *min_height* - unsigned int; (Optional) Minimum block height to scan for transfers, if filtering by height is enabled.
-* *max_height* - unsigned int; (Opional) Maximum block height to scan for transfers, if filtering by height is enabled (defaults to max block height).
+* *max_height* - unsigned int; (Optional) Maximum block height to scan for transfers, if filtering by height is enabled (defaults to max block height).
 * *account_index* - unsigned int; (Optional) Index of the account to query for transfers. (defaults to 0)
 * *subaddr_indices* - array of unsigned int; (Optional) List of subaddress indices to query for transfers. (Defaults to empty - all indices)
 
