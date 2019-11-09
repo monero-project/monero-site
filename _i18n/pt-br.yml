@@ -32,7 +32,7 @@ global:
   outdatedMax: Esta página está desatualizada. Nós não recomendamos consultá-la. Por favor, veja a
   outdatedVersion: versão em inglês
   outdatedMin: Esta página foi atualizada desde a tradução. Você pode consultá-la, mas é possível que ela esteja incompleta.
-  upgrade: Para continuar usando o Monero, certifique-se de que seu software está atualizado para a versão de 9 de março.
+  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
   moreinfo: Mais informações
   lang_tag: "@lang_tag_pt-br"
 
