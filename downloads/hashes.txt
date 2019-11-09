@@ -6,30 +6,25 @@ This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 Please verify the signature against the signature for fluffypony in the
 source code repository (/utils/gpg_keys).
 
-monero-win-x64-v0.14.1.2.zip, a11b58d8ad8f5e3a4b3fe076ea2d620ef0e2efb33d5e2506e68458253ac14421
-monero-win-x86-v0.14.1.2.zip, 9f4d6a1386e09c29c400096f8053838ceecb8c5754fe584a6bc310fda19ce105
-monero-mac-x64-v0.14.1.2.tar.bz2, 038abb39dfb66d56cf03537277d8dade6524c10dd94b89bfc6203c301b48e4df
-monero-linux-x64-v0.14.1.2.tar.bz2, a4d1ddb9a6f36fcb985a3c07101756f544a5c9f797edd0885dab4a9de27a6228
-monero-linux-x86-v0.14.1.2.tar.bz2, ede3b29d085d25058268cea932190c77c276618d97fd2a859002dc01de0c54cb
-monero-linux-armv7-v0.14.1.2.tar.bz2, 7f040bf1d0fec4f76064f5c8af249f1df9d5a6decd6846c3080bd749b2516280
-monero-linux-armv8-v0.14.1.2.tar.bz2, d462fd0f2e4010b6717de2cf6aa8d04a50e56a8fdfd3735230a2a36e63cdb9fb
-monero-freebsd-x64-v0.14.1.2.tar.bz2, d070d71d1bc9b5e7555e6fe5f8e90c44ff06f28cafc34de9c8f821a317e4e6fe
-
-monero-gui-win-x64-v0.14.1.0.zip, cecb32d57684c9ec719f56ef72464413986d8bda93b2d5f51852eb1946e51993
-monero-gui-mac-x64-v0.14.1.0.tar.bz2, b0d3f906265a27b2b60090466e693d7f15a00bb8d058d8fad89f0b10c50fe6ea
-monero-gui-linux-x64-v0.14.1.0.tar.bz2, 51739f0472ccbd49832a5828ca1000ebb1ce63b19dd57507b7905739bf8cf238
-
-monero-gui-install-win-x64-v0.14.1.0.exe, aff1a4780d7a0814bc9bf8927815e104f6afee5b3c3edec454c56a994e87e50f
+monero-win-x64-v0.15.0.0.zip, 6b72b3836d179eb517154bbcb8e2119b168ae9d1054866a438aaeab9521f795f
+monero-win-x86-v0.15.0.0.zip, b4856d0d3389497bf103d5a4dc4e73c6a39e5be20736b3e0286e76f100c508b6
+monero-mac-x64-v0.15.0.0.tar.bz2, bca6b776e7e906fcda4c829aa8666eb9d92014450b87a6723a7c6eda6d6e7de1
+monero-linux-x64-v0.15.0.0.tar.bz2, 53d9da55137f83b1e7571aef090b0784d9f04a980115b5c391455374729393f3
+monero-linux-x86-v0.15.0.0.tar.bz2, 2197d04f4ffad4e1344b2648273f0be152de637bafc5d940cdf215cbc50e1f79
+monero-linux-armv7-v0.15.0.0.tar.bz2, 326f783ffde78694b2820c95aa310ead00bb5876937ed4edf9c1abd6b6aadc02
+monero-linux-armv8-v0.15.0.0.tar.bz2, f92f0acbc49076ad57337b5928981cd72c01aabe6a8eb69a1782f7fa1388fb77
+monero-android-armv7-v0.15.0.0.tar.bz2, 90f7717c47031f27512e95c111e74313544049c44c765b59420ac1c13721cd09
+monero-android-armv8-v0.15.0.0.tar.bz2, 01c18528f93f1c347188a0645ab4150016c6471aa391b2499b618f9e3d2fad2d
 
 Riccardo "fluffypony" Spagni
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAl0zbBsACgkQVUMt8xzN
-T83mvwf/VfDZ3pK9gU24AysGwQJqzgiIBnA6ur22X201T0HFjm3UQHGjig4ExLLA
-NmROL6xGBnHMfkAys7xsm8pvFmbSB3hT4rc2xxRhF/AqZfPFhm4KxF94X+GT2ab+
-k/NizsuIudQpndxSuEIciVaxLoBNoUwsHjkVqw8ctjog8U8auF0kgTdcEjeL98IP
-RvL7NljBYuWBTRzi/e9uLnY7RtbZSAqYuN+xtC1KAjNbJhe4kvKEKHmB82/XDKTW
-3KFFZ5g6V+w/LtRUQofjlqo1bTUMEFLjQyeDOLFSGzq/LsNfqz0YXxMnNZXFNV84
-ikgsbonnVjZS3crrQW4EqYcZhfOL7A==
-=2u9x
+iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAl3GHOcACgkQVUMt8xzN
+T83gqwgAozMVbeqdSABtRfFNvWdcWrM/XEF3z0XTxg3kqGcipuufhUULN174oWBk
+PwsoRrVjPaU+IKCwmN/gSeC7mT5F07mQic9D1Qr4WR/LnSlyAG9N+4sQpKoN4A5a
+++qzo6VcTWGk6Bc76YJrtJ4ylZcfcoUKa8nJkISA+5+AWLzxJ45203OP8fzxHrB9
+714JhfGZ6xYPyhG4dCJbRe+GDLgvl+H7QeOfAtmRXTfKVxzfMDjtbFvqKAXucLf5
+aO+Uy2MMBd8YBvepJEf/pKhJNUROW2LiujLMmbt5sFo4Day/uyTYotK3N1DG65Fn
+AOODbzp+8XbPGYNYRlKXk6yxw1F6WQ==
+=b2Og
 -----END PGP SIGNATURE-----
