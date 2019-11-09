@@ -67,7 +67,7 @@ titles:
   ffs-ideas: Fikirler
   ffs-ot: Açık Görevler
   ffs-wip: Devam Eden İşler
-  blogbytag: Etiketlere Göre Blog
+  blogbytag: Blog
   library: Kütüphane
 
 index:
@@ -649,5 +649,4 @@ blog:
   forum: Monero Forum'daki bu girdi için tartışmaya katılmak için buraya tıklayın
 
 tags:
-  all: Etiketlere göre Makaleler
   notags: Bu etiket için gönderi yok.

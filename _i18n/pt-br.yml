@@ -67,7 +67,7 @@ titles:
   ffs-ideas: Ideias
   ffs-ot: Tarefas em Aberto
   ffs-wip: Trabalho em Andamento
-  blogbytag: Blog por Tag
+  blogbytag: Blog
   library: Biblioteca
 
 index:
@@ -650,5 +650,4 @@ blog:
   forum: Clique aqui para participar da discussão deste item no Fórum Monero
 
 tags:
-  all: Artigos por tag
   notags: Não há posts com esta tag.
