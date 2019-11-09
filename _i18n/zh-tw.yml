@@ -32,7 +32,7 @@ global:
   outdatedMax: 這個頁面資訊已過時，我們不建議使用它，請移駕至
   outdatedVersion: 英文版本
   outdatedMin: 這個頁面資訊因未更新翻譯，資訊已過時。您仍可繼續使用這個頁面，但資料可能不完整。
-  upgrade: 若要繼續使用門羅幣，請務必確認您的軟體已更新相容於 3 月 9 號的交易網路協定升級。
+  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
   moreinfo: 更多資訊
   lang_tag: "@lang_tag_zh-tw"
 

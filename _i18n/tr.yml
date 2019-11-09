@@ -32,7 +32,7 @@ global:
   outdatedMax: Bu sayfa güncel değil. Kullanmanızı tavsiye etmiyoruz. Bunun yerine şunu görüntüleyin
   outdatedVersion: İngilizce sürüm
   outdatedMin: Bu sayfa çeviriden sonra güncellendi. Bu sürümü kullanabilirsiniz, ancak eksik olabilir.
-  upgrade: Monero kullanmaya devam etmek için yazılımınızın 9 Mart ağ yükseltmesine güncellediğinden emin olun.
+  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
   moreinfo: Daha fazla bilgi
   lang_tag: "@lang_tag_tr"
 

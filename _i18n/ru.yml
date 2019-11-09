@@ -32,7 +32,7 @@ global:
   outdatedMax: Эта страница устарела. Мы рекомендуем вам не полагаться на нее и вместо этого перейти к
   outdatedVersion: английской версии
   outdatedMin: Эта страница была обновлена с момента перевода. Вы можете использовать данную версию, но она может быть неточной.
-  upgrade: Для того, чтобы продолжить использование Monero, убедитесь, что ваше программное обеспечение обновлено до актуального, от 9 марта.
+  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
   moreinfo: Дополнительная информация
   lang_tag: "@lang_tag_ru"
 

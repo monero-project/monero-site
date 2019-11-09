@@ -32,7 +32,7 @@ global:
   outdatedMax: 这个页面已经过时。我们不建议继续使用此界面。 请以此网址替代：
   outdatedVersion: 英文版本
   outdatedMin: 这个页面自被翻译后又有更新。您可以继续使用，但是可能这个页面并不完整。 
-  upgrade: 要使用门罗币, 请保证你的门罗区块链是2018.10.18日分叉的最新链.
+  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
   moreinfo: 更多信息
   lang_tag: "@lang_tag_zh-cn"
 
