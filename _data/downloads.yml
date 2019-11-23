@@ -2,22 +2,22 @@
   id: windows
   icon: icon-windows
   cli_url: win64
-  cli_hash: 6b72b3836d179eb517154bbcb8e2119b168ae9d1054866a438aaeab9521f795f
+  cli_hash: a1d2a4a0a9f2cdb17808c0b7a2a872a70c9f3e6487494b29cc1627b5490f25e9
   gui_url: win64
-  gui_hash: cecb32d57684c9ec719f56ef72464413986d8bda93b2d5f51852eb1946e51993
+  gui_hash: a09cc7bf06834e49ec267e89daf1dc6ecc3b2c34ac50e8f0548f8997aef37b06
   gui_installer_url: win64install
-  gui_installer_hash: aff1a4780d7a0814bc9bf8927815e104f6afee5b3c3edec454c56a994e87e50f
-  cli_version: 0.15.0.0
-  gui_version: 0.14.1.0
-  gui_installer_version: 0.14.1.0
+  gui_installer_hash: 55b4ac0b5131337ea7a7a66a7c6d4a277354a150c303bf70148ac284f6da5b9c
+  cli_version: 0.15.0.1
+  gui_version: 0.15.0.1
+  gui_installer_version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: win
 
 - platform: Windows, 32-bit
   icon: icon-windows
   cli_url: win32
-  cli_hash: b4856d0d3389497bf103d5a4dc4e73c6a39e5be20736b3e0286e76f100c508b6
-  version: 0.15.0.0
+  cli_hash: a3dc6d57c52383fcb83337799909c2c85cc8fe88b127d9408e3ea92880beb38d
+  version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: win
 
@@ -25,11 +25,11 @@
   id: mac
   icon: icon-apple
   cli_url: mac64
-  cli_hash: bca6b776e7e906fcda4c829aa8666eb9d92014450b87a6723a7c6eda6d6e7de1
+  cli_hash: f3648a94fc9252a2e5b6e56978e756ff272403ec385f8be42338cae3f4f4e8a5
   gui_url: mac64
-  gui_hash: b0d3f906265a27b2b60090466e693d7f15a00bb8d058d8fad89f0b10c50fe6ea
-  cli_version: 0.15.0.0
-  gui_version: 0.14.1.0
+  gui_hash: c8994781510e234985e24f465761355e4ae7bd58ef686bd8b0ce4401c2314d51
+  cli_version: 0.15.0.1
+  gui_version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: mac
 
@@ -37,19 +37,19 @@
   id: linux
   icon: icon-linux
   cli_url: linux64
-  cli_hash: 53d9da55137f83b1e7571aef090b0784d9f04a980115b5c391455374729393f3
+  cli_hash: 8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad
   gui_url: linux64
-  gui_hash: 51739f0472ccbd49832a5828ca1000ebb1ce63b19dd57507b7905739bf8cf238
-  cli_version: 0.15.0.0
-  gui_version: 0.14.1.0
+  gui_hash: 85a6885849d578691a09834c66ed55af4783ea8347b7784de9ea46e90995a57c
+  cli_version: 0.15.0.1
+  gui_version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: linux
 
 - platform: Linux, 32-bit
   icon: icon-linux
   cli_url: linux32
-  cli_hash: 2197d04f4ffad4e1344b2648273f0be152de637bafc5d940cdf215cbc50e1f79
-  cli_version: 0.15.0.0
+  cli_hash: f157d8130978772bfe3ec4ebaca21f561dc0deffe49904af49f4a11d96c0cda6
+  cli_version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: linux
 
@@ -57,8 +57,8 @@
   id: bsd
   icon: icon-freebsd
   cli_url: freebsd64
-  cli_hash: d070d71d1bc9b5e7555e6fe5f8e90c44ff06f28cafc34de9c8f821a317e4e6fe
-  version: 0.14.1.2
+  cli_hash: 810dbac09546a14fe6e2c276f41eebc5489bc43f91c0a85a080528ccd9ce12a8
+  version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: freebsd
 
@@ -66,8 +66,8 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm8
-  cli_hash: f92f0acbc49076ad57337b5928981cd72c01aabe6a8eb69a1782f7fa1388fb77
-  version: 0.15.0.0
+  cli_hash: 67b890a10332cd91c69472e345b9ab624532540601a1d99f6fabb9c5c1b62455
+  version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: arm
 
@@ -75,8 +75,8 @@
   id: arm
   icon: icon-arm
   cli_url: linuxarm7
-  cli_hash: 326f783ffde78694b2820c95aa310ead00bb5876937ed4edf9c1abd6b6aadc02
-  version: 0.15.0.0
+  cli_hash: 19c34bf8d79b6ae809efe30a4c02695cd2d8212709a5bff43a5aec49517c41ee
+  version: 0.15.0.1
   tag: Carbon Chamaeleon
   blockchain: arm
 
