@@ -10,7 +10,8 @@
   cli_version: 0.15.0.1
   gui_version: 0.15.0.1
   gui_installer_version: 0.15.0.1
-  tag: Carbon Chamaeleon
+  cli_tag: Carbon Chamaeleon
+  gui_tag: Carbon Chamaeleon
   blockchain: win
 
 - platform: Windows, 32-bit
@@ -18,7 +19,7 @@
   cli_url: win32
   cli_hash: a3dc6d57c52383fcb83337799909c2c85cc8fe88b127d9408e3ea92880beb38d
   version: 0.15.0.1
-  tag: Carbon Chamaeleon
+  cli_tag: Carbon Chamaeleon
   blockchain: win
 
 - platform: Mac OS X, 64-bit
@@ -30,10 +31,11 @@
   gui_hash: c8994781510e234985e24f465761355e4ae7bd58ef686bd8b0ce4401c2314d51
   cli_version: 0.15.0.1
   gui_version: 0.15.0.1
-  tag: Carbon Chamaeleon
+  cli_tag: Carbon Chamaeleon
+  gui_tag: Carbon Chamaeleon
   blockchain: mac
 
-- platform: Linux, 64-bit
+- platform: Linux, x86_64, 64-bit
   id: linux
   icon: icon-linux
   cli_url: linux64
@@ -42,16 +44,53 @@
   gui_hash: 85a6885849d578691a09834c66ed55af4783ea8347b7784de9ea46e90995a57c
   cli_version: 0.15.0.1
   gui_version: 0.15.0.1
-  tag: Carbon Chamaeleon
+  cli_tag: Carbon Chamaeleon
+  gui_tag: Carbon Chamaeleon
   blockchain: linux
 
-- platform: Linux, 32-bit
+- platform: Linux, x86, 32-bit
   icon: icon-linux
   cli_url: linux32
   cli_hash: f157d8130978772bfe3ec4ebaca21f561dc0deffe49904af49f4a11d96c0cda6
   cli_version: 0.15.0.1
-  tag: Carbon Chamaeleon
+  cli_tag: Carbon Chamaeleon
   blockchain: linux
+
+- platform: Linux, ARMv8, 64-bit
+  id: linux
+  icon: icon-arm
+  cli_url: linuxarm8
+  cli_hash: 67b890a10332cd91c69472e345b9ab624532540601a1d99f6fabb9c5c1b62455
+  version: 0.15.0.1
+  cli_tag: Carbon Chamaeleon
+  blockchain: arm
+
+- platform: Linux, ARMv7, 32-bit
+  id: linux
+  icon: icon-arm
+  cli_url: linuxarm7
+  cli_hash: 19c34bf8d79b6ae809efe30a4c02695cd2d8212709a5bff43a5aec49517c41ee
+  version: 0.15.0.1
+  cli_tag: Carbon Chamaeleon
+  blockchain: arm
+
+- platform: Android, ARMv8, 64-bit
+  id: android
+  icon: icon-arm
+  cli_url: androidarm7
+  cli_hash: f9cbf531049068f9c07b92a89371ff8aab6b69062077c3dfe4fa27a9956f8759
+  version: 0.15.0.1
+  cli_tag: Carbon Chameleon
+  blockchain: arm
+
+- platform: Android, ARMv7, 32-bit
+  id: android
+  icon: icon-arm
+  cli_url: androidarm8
+  cli_hash: ea5eac2eed4d10cb35af50182ad11edeeffc4200d2b2b8e47f0283ae06fc4185
+  version: 0.15.0.1
+  cli_tag: Carbon Chameleon
+  blockchain: arm
 
 - platform: FreeBSD, 64-bit
   id: bsd
@@ -59,26 +98,8 @@
   cli_url: freebsd64
   cli_hash: 810dbac09546a14fe6e2c276f41eebc5489bc43f91c0a85a080528ccd9ce12a8
   version: 0.15.0.1
-  tag: Carbon Chamaeleon
+  cli_tag: Carbon Chamaeleon
   blockchain: freebsd
-
-- platform: ARMv8
-  id: arm
-  icon: icon-arm
-  cli_url: linuxarm8
-  cli_hash: 67b890a10332cd91c69472e345b9ab624532540601a1d99f6fabb9c5c1b62455
-  version: 0.15.0.1
-  tag: Carbon Chamaeleon
-  blockchain: arm
-
-- platform: ARMv7
-  id: arm
-  icon: icon-arm
-  cli_url: linuxarm7
-  cli_hash: 19c34bf8d79b6ae809efe30a4c02695cd2d8212709a5bff43a5aec49517c41ee
-  version: 0.15.0.1
-  tag: Carbon Chamaeleon
-  blockchain: arm
 
 - platform: Source Code & Blockchain
   id: source

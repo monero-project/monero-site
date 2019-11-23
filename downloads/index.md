@@ -14,7 +14,8 @@ permalink: /downloads/index.html
             <div class="col"><a href="#windows">Windows</a></div>
             <div class="col"><a href="#mac">Mac</a></div>
             <div class="col"><a href="#linux">Linux</a></div>
-            <div class="col"><a href="#arm">Arm (v7 & 8)</a></div>
+            <div class="col"><a href="#android">Android</a></div>
+            <div class="col"><a href="#freebsd">FreeBSD</a></div>
             <div class="col"><a href="#source">{% t downloads.sourceblockchain %}</a></div>
             <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
             <div class="col"><a href="#hardware">{% t downloads.hardware %}</a></div>
@@ -29,7 +30,8 @@ permalink: /downloads/index.html
               <li><a href="#windows">Windows</a></li>
               <li><a href="#mac">Mac</a></li>
               <li><a href="#linux">Linux</a></li>
-              <li><a href="#arm">Arm (v7 & 8)</a></li>
+              <li><a href="#android">Android</a></li>
+              <li><a href="#freebsd">FreeBSD</a></li>
               <li><a href="#source">{% t downloads.sourceblockchain %}</a></li>
               <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
               <li><a href="#hardware">{% t downloads.hardware %}</a></li>
@@ -86,7 +88,7 @@ permalink: /downloads/index.html
                                 <h3 id="{{ data_downloads.platform | slugify }}">
                                      <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}"> {{ data_downloads.platform }} {% t downloads.clionly %}</a>
                                 </h3>
-                                <p>{% t downloads.currentversion %}: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
+                                <p>{% t downloads.currentversion %}: {{ data_downloads.version }} {{ data_downloads.cli_tag }}</p>
                             </div>
                          </div>
                         <div class="row">
@@ -100,7 +102,7 @@ permalink: /downloads/index.html
                             <h3 id="{{ data_downloads.platform | slugify }}">
                                 <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
                             </h3>
-                            <p>{% t downloads.currentversion %}: {{ data_downloads.version }} {{ data_downloads.tag }}</p>
+                            <p>{% t downloads.currentversion %}: {{ data_downloads.version }} {{ data_downloads.gui_tag }}</p>
                         </div>
                         <div class="row">
                             <p class="prehash">SHA256 Hash:</p>
@@ -112,7 +114,7 @@ permalink: /downloads/index.html
                                 <h3 id="{{ data_downloads.platform | slugify }}">
                                     <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_url }}">{{ data_downloads.platform }}</a>
                                 </h3>
-                                <p>{% t downloads.currentversion %}: {{ data_downloads.gui_version }} {{ data_downloads.tag }}</p>
+                                <p>{% t downloads.currentversion %}: {{ data_downloads.gui_version }} {{ data_downloads.gui_tag }}</p>
                                 <p class="prehash">SHA256 Hash (GUI):</p>
                                 <p class="hash"> {{ data_downloads.gui_hash }}</p>
                             </div>
@@ -120,7 +122,7 @@ permalink: /downloads/index.html
                                 <h3>
                                     <a href="//downloads.getmonero.org/cli/{{ data_downloads.cli_url }}">{{ data_downloads.platform }} {% t downloads.clionly %}</a>
                                 </h3>
-                                <p>{% t downloads.currentversion %}: {{ data_downloads.cli_version }} {{ data_downloads.tag }}</p>
+                                <p>{% t downloads.currentversion %}: {{ data_downloads.cli_version }} {{ data_downloads.cli_tag }}</p>
                                 <p class="prehash">SHA256 Hash (CLI):</p>
                                 <p class="hash"> {{ data_downloads.cli_hash }}</p>
                             </div>
@@ -132,7 +134,7 @@ permalink: /downloads/index.html
                                 <h3 id="{{ data_downloads.platform | slugify }}">
                                     <a href="//downloads.getmonero.org/gui/{{ data_downloads.gui_installer_url }}">{{ data_downloads.platform }} {% t downloads.installer %}</a>
                                 </h3>
-                                <p>{% t downloads.currentversion %}: {{ data_downloads.gui_installer_version }} {{ data_downloads.tag }}</p>
+                                <p>{% t downloads.currentversion %}: {{ data_downloads.gui_installer_version }} {{ data_downloads.gui_tag }}</p>
                                 <p class="prehash">SHA256 Hash (GUI Installer):</p>
                                 <p class="hash"> {{ data_downloads.gui_installer_hash }}</p>
                             </div>
