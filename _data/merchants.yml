@@ -161,6 +161,8 @@
       url: http://monerobase.com
     - name: Monero Monitor for Chrome
       url: https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo
+    - name: MoneroNotify - Transaction Notification Service
+      url: https://xmrnotify.com
     - name: MoneroPric.es Price Converter
       url: https://moneropric.es
     - name: Price.exchange Monero Price Converter
