@@ -228,32 +228,55 @@ press-kit:
 
 accepting:
   translated: "yes"
-  title: Instructions for the Command-Line Interface
-  basics: The Basics
-  basics_para1: Monero works a little differently to what you may have become accustomed to from other @cryptocurrencies. In the case of a digital currency like Bitcoin and its many derivatives merchant payment systems will usually create a new recipient @address for each payment or user.
-  basics_para2: However, because Monero has @stealth-addresses there is no need to have separate recipient addresses for each payment or user, and a single @account address can be published. Instead, when receiving payments a merchant will provide the person paying with a "payment ID".
-  basics_para3: "A @payment-ID is a hexadecimal string that is 64 characters long, and is normally randomly created by the merchant. An example of a payment ID is:"
-  checking: Checking for a Payment in monero-wallet-cli
-  checking_para1: |
-    If you want to check for a payment using monero-wallet-cli you can use the "payments" command followed by the payment ID or payment IDs you want to check. For example:
-  checking_para2: If you need to check for payments programmatically, then details follow the next section.
-  receiving: Receiving a Payment Step-by-Step
-  receiving_list1: Generate a random 64 character hexadecimal string for the payment
-  receiving_list2: Communicate the payment ID and Monero address to the individual who is making payment
-  receiving_list3: Check for the payment using the "payments" command in monero-wallet-cli
-  program: Checking for a Payment Programmatically
-  program_para1: In order to check for a payment programmatically you can use the get_payments or get_bulk_payments JSON RPC API calls.
-  program_para2: this requires a payment_id parameter with a single payment ID.
-  program_para3: this is the preferred method, and requires two parameters, payment_ids - a JSON array of payment IDs - and an optional min_block_height - the block height to scan from.
-  program_para4: |
-    An example of returned data is as follows:
-  program_para5: It is important to note that the amounts returned are in base Monero units and not in the display units normally used in end-user applications. Also, since a transaction will typically have multiple outputs that add up to the total required for the payment, the amounts should be grouped by the tx_hash or the payment_id and added together. Additionally, as multiple outputs can have the same amount, it is imperative not to try and filter out the returned data from a single get_bulk_payments call.
-  program_para6: Before scanning for payments it is useful to check against the daemon RPC API (the get_info RPC call) to see if additional blocks have been received. Typically you would want to then scan only from that received block on by specifying it as the min_block_height to get_bulk_payments.
-  scanning: Programatically Scanning for Payments
-  scanning_list1: Get the current block height from the daemon, only proceed if it has increased since our last scan
-  scanning_list2: Call the get_bulk_payments RPC API call with our last scanned height and the list of all payment IDs in our system
-  scanning_list3: Store the current block height as our last scanned height
-  scanning_list4: Remove duplicates based on transaction hashes we have already received and processed
+  title_gui: Instructions for the GUI
+  gui1: "Accepting a payment with the GUI is very easy. Doesn't matter if you are a merchant or an user, you will have two pages available: Receive and Merchants."
+  gui2: The receive page (shown below) is explained in every detail
+  guilinkguide: in the guide of the GUI.
+  guiinstructions: >
+    To receive XMR you only need to provide the payer with an @address where they can send funds to. Most of the time it's easier to just share a QR code and let the payer scan it, instead of copy-pasting the alphanumeric string. 
+    With the GUI every generated address come with its QR code. Make the person scan the QR code with the Monero @wallet on their phone and receive your XMR in minutes. 
+    Remember you can generate as many addresses (subaddresses) as you want. This is useful if you want to keep funds separated for any reason.
+  guimerchant: Merchants will probably find more convenient to use the 'Merchant' page (screenshot below), which is explained in detail in the 'Merchant view' section of
+  guilinkguide1: the guide linked above
+  guimerchant1: >
+    This is a POS-like page that merchant can easily use to set the amount of XMR to receive. If the 'Sale tracker' option is enabled, 
+    you will see the payments while they arrive in real time in your wallet, along with the number of confirmations.
+  guisteps: "These two pages give everybody the possibility to easily receive XMR following these steps:"
+  guiol: "Go to the 'Receive' page and create/select the address where you want to receive your coins."
+  guiol1: Share the address composed by letters and numbers to the person you want to receive coins from. You probably prefer to use the more user friendly QR code.
+  guiol2: "If you want to specify the amount to receive, got to the 'Merchant' page (after you selected in the 'Receive' page the @account that will be used to receive XMR)."
+  guiol3: "Insert the amount to receive, then share with the payer the payment URL or the QR code. If you want to track the payment in real time, tick the 'enable sales tracker' option."
+  guiol4: Wait until the payment is arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
+  cliinstructions: Instructions for the CLI
+  clicreatewallet: >
+    When you create your wallet for the first time, an @address will be automatically shown to you. That's your primary address. 
+    If you want, you can simply use that address to receive payments. You should be concerned about who knows about this address (since one address in different locations can be associated), 
+    but you do not need to worry about blockchain observers watching transactions to this address like with Bitcoin. A friend can send transactions to the same address without reduced privacy.
+  cliaccounts: >
+    You can have much more control if you want to. Monero gives the possibility to create multiple accounts, each containing multiple subaddresses,  
+    useful if you want to control multiple accounts. For example, you may want to have an @account for receiving donations and another one for your daily use.
+    That will allow you to easily monitor incoming funds to your 'donations' account, without mixing it with your primary account.
+  clicreateaccount: "To create an account, simply run this command:"
+  clicreateaccount1: Now you have another account separated from your primary one. You can switch anytime between accounts.
+  cliindex: >
+    As you can see from the picture above, every account has an index number that you can use to switch from one account to the other using the command 
+    `account switch [index]`. For example, using the picture above as reference, if you would like to switch to the 'Donations' account to monitor it, 
+    you can do so by giving your CLI this command `account switch 1`. Now you are sitting on your 'Donations' account and you can start using it right away.
+  cliindex1: >
+    Every account can host a virtually infinite amount of subaddresses. These work exactly like a normal address and you can create as many 
+    as you want and use them to receive XMR to the account they are linked to. To create a new subaddress for an account, use the command:
+  clinotes: >
+    Note that the instructions below are just the minimal necessary to create and use accounts/subaddresses. 
+    The CLI offer more capillary ways to handle accounts and the wallet in general. Use the command 'help' to list all the available options.
+  merchantstitle: Instructions for merchants
+  merchantsreceive: If you are a business and you wish to programmatically receive @transactions or use advanced features like multisignature, it's suggested to consult the
+  merchdevguides: developer guides
+  merchantsreceive1: "If you need support, the community will always be happy to help. Come chat on #monero, the chatroom is on Freenode, but also relayed on MatterMost and Matrix."
+  merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the monero community has created a set of integrations for various platform and languages. You can find more info on"
+  merchantsintlink: the GitHub organization
+  merchantsthirdp: If you are looking for other third party integration system, there is a list of payment gateways on
+  merchthirdlink: the merchant page
+  merchantsthirdp1: Some of those offer nice features like the possibility to automatically convert part of your income in fiat money or to accept other cryptocurrencies along with Monero.
 
 contributing:
   translated: "yes"
