@@ -168,32 +168,68 @@ team:
   thanks: Ringraziamenti Speciali
 
 downloads:
-  translated: "yes"
-  choose: Scegli il tuo SO
-  sourceblockchain: Sorgente & Blockchain
-  mobilelight: Mobile & Leggero
-  hardware: Hardware
-  intro1: Se hai bisogno di aiuto per scegliere l'applicazione corretta, clicca
-  intro2: qui
-  intro3: (in inglese) per una risposta rapida, dopodiché scegli qui sotto la release appropriata per il tuo sistema operativo.
-  note1: "Nota: gli hash SHA256 sono listati qui per convenienza, una lista degli hash firmata con GPG è disponibile su"
-  note2: e dovrebbe essere trattato come "canonico", confrontando le firme con l'appropriata chiave GPG nel codice sorgente (in /utils/gpg_keys).
-  currentversion: Versione Corrente
-  sourcecode: Codice Sorgente
-  mirror: Mirror
-  blockchain1: Se preferisci usare una blockchain esterna, invece di sincronizzarla da zero, puoi
-  blockchain2: scaricare la versione più recente da questo link.
-  blockchain3: E' tipicamente molto più veloce sincronizzare da zero e richiede anche molta meno RAM (la funzione "import" richiede molte risorse).
-  hardware1: La comunità Monero ha recentemente finanziato un
-  hardware2: Portafoglio Hardware Dedicato
-  hardware3: che è in fase di progettazione. Inoltre, dalla versione CLI 0.12.1 e GUI 0.12.3 Ledger ha
-  hardware4: integrato Monero nei loro portafogli hardware.
+  translated: "no"
+  intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
+  choose: Choose your OS
+  gui: GUI Wallet
+  cli: CLI Wallet
+  blockchain: Blockchain Bootstrap
+  blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can use the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM.
+  blockchainbutton: Download Blockchain
+  mobilelight: Mobile & Light Wallets
+  hardware: Hardware Wallets
+  gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds of users, but it is especially recommended for less technical people who want to quickly send and receive XMR.
+  simplemode: Simple mode
+  simplemode1: Created for less technical users who only want to use Monero in the easiest and quickest way possible. Open the wallet, automatically connect to a remote node, send/receive XMR, done!
+  advancedmode: Advanced mode
+  advancedmode1: With all the advanced features you could need. Ideal for seasoned Monero users who prefer to have full control of their wallet and node
+  merchantpage: Merchant page
+  merchantpage1: Receive XMR for your business, easily
+  hwcompatible: Compatible with hardware wallets
+  hwcompatible1: such Trezor and Ledger
+  fiatconv: in-app fiat conversion
+  fiatconv1: No longer a need to check the value of your XMR online
+  pruning: Blockchain pruning
+  pruning1: Not enough disk space? Just use pruning to download only 1/3 of the blockchain
+  langs: "<b>30+ languages</b> available"
+  cli_intro: The CLI wallet gives you the total control over your Monero node and funds. Highly customizable and includes various analysis tools, as well as an HTTP RPC and 0MQ interface.
+  currentversion: Current Version
+  sourcecode: Source Code
+  showissues: Show known issues for this release
+  noissues: This release has no known major issues
+  yesissues: >
+    This release has the following known issues:<br>
+    - Initial sync of the blockchain very slow. Will be fixed with a point release
+  helpsupport: Help and Support
+  helpsupport1: "A guide with an explanation of every section of the wallet is available:"
+  helpsupport2: "See latest release"
+  gui_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the GUI team at #monero-gui, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
+  cli_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the CLI team at #monero or #monero-dev, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
+  localremote: Local or remote node
+  localremote1: Use your own copy of the blockchain or a publicly available one
+  transacttor: Transactions over Tor/I2P
+  transacttor1: For an additional layer of privacy
+  bootstrapnode: Bootstrap node
+  bootstrapnode1: Use a remote node while downloading the blockchain locally, this will allow you to use Monero immediately and switch to your local node once it's completely synced
+  rpc: RPC Wallet and Daemon
+  rpc1: included in the archive
+  payforrpc: Pay-for-RPC
+  payforrpc1: A new feature that allows node operators to get rewarded when their node is used
+  verify: Verify
+  verify1: You are strongly advised to verify the hashes of the archive you downloaded. This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds. Always verify your downloads!
+  showhash: Show hashes to verify your download
+  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as canonical, with the signature checked against the appropriate GPG key
+  showhash2: in the source code
+  showhash3: "Two guides are available to guide you through the verification process:"
+  hardware1: The Monero community has funded a
+  hardware2: Dedicated Hardware Wallet (Kastelo)
+  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
+  hardware4: integrated Monero into their hardware wallets.
   hardware5: Trezor model T supports Monero since version 0.14.1.
-  mobilelight1: I seguenti sono portafogli mobili o leggeri (light wallet) considerati sicuri da membri fidati della comunità. Se esiste un portafoglio che non compare in questa lista, puoi chiedere alla comunità di controllarlo. Vai alla nostra
-  mobilelight2: Lista canali
-  mobilelight3:  per vedere dove trovarci.
-  clionly: Strumenti a riga di comando
-  installer: Programma di installazione
+  mobilelight1: The following are mobile or light wallets that are deemed safe by respected members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our
+  mobilelight2: Hangouts
+  mobilelight3:  page to see where we are.
+  installer: Installer
 
 monero-project:
   translated: "yes"

@@ -2982,6 +2982,37 @@ footer {
 
 /******************************DOWNLOADS STYLING***********************/
 
+.downloads h2.center {
+  text-align: center;
+}
+
+.downloads img.screen {
+    margin: 1rem auto;
+}
+
+.downloads .align-blocks {
+  padding: auto 0;
+  border: 3px solid transparent;
+  text-align: center;
+}
+
+.downloads summary:hover {
+    font-weight:bold;
+}
+
+.downloads ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.downloads li.downloads {
+  padding: 0.3rem;
+}
+
+.downloads ul.logo {
+  list-style-image: url('/img/logo-list.png');
+}
+
 .download-nav.info-block {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -3043,9 +3074,8 @@ footer {
     word-break: break-all;
 }
 
-.downloads p.hash {
+.downloads dd.hash {
     padding-top: 0;
-    background-color: #fff1e8;
     color: #2f6f9f;
     white-space: pre-wrap;
     padding: 0.7rem;
@@ -3053,14 +3083,14 @@ footer {
     text-indent: -8px;
     line-height: 1.1rem;
     font-family: monospace;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .download-platforms .col-md-6 {
     padding: 0 2rem 0 0;
 }
 
-.download-platforms h2 span {
+.download-platforms span {
     height: 2rem;
     width: 2rem;
     display: inline-block;
@@ -3068,39 +3098,44 @@ footer {
     vertical-align: middle;
 }
 
-.download-platforms h2 span.icon-windows {
+.download-platforms span.icon-windows {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px 0;
 }
 
-.download-platforms h2 span.icon-apple {
+.download-platforms span.icon-apple {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px -96px;
 }
 
-.download-platforms h2 span.icon-linux{
+.download-platforms span.icon-linux{
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px -48px;
 }
 
-.download-platforms h2 span.icon-arm {
+.download-platforms span.icon-arm {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -176px;
 }
 
-.download-platforms h2 span.icon-freebsd {
+.download-platforms span.icon-freebsd {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -208px;
 }
 
-.download-platforms h2 span.icon-dragonflybsd {
+.download-platforms span.icon-dragonflybsd {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -287px;
 }
 
-.download-platforms h2 span.icon-github {
+.download-platforms span.icon-github {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -240px;
+}
+
+.download-platforms span.icon-android {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: 0 -321px;
 }
 
 .downloads a.arrow-up {
@@ -3139,7 +3174,19 @@ footer {
     border-color: #ffffff;
 }
 
+.mobile-only {
+  display:none;
+}
+
 @media only screen and (max-width: 75rem) {
+
+.desktop-only {
+    display:none;
+}
+
+.mobile-only {
+  display:block;
+}
 
 .downloads .download-nav a {
     font-size: 0.92rem;
