@@ -67,7 +67,7 @@ titles:
   ffs-ideas: Ideas
   ffs-ot: Tareas Abiertas
   ffs-wip: Trabajo en Proceso
-  blogbytag: Blog por Etiqueta
+  blogbytag: Blog
   library: Librería
 
 index:
@@ -648,5 +648,4 @@ blog:
   forum: Presiona aquí para unirte a la discusión para esta entrada en el Foro Monero
 
 tags:
-  all: Artículos por etiqueta
   notags: No hay artículos para esta etiqueta.

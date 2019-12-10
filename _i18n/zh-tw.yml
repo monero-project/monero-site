@@ -67,7 +67,7 @@ titles:
   ffs-ideas: 構想
   ffs-ot: 尚未執行的專案
   ffs-wip: 進行中的專案
-  blogbytag: 以標籤篩選文章
+  blogbytag: Blog
   library: 圖書出版品
 
 index:
@@ -647,5 +647,4 @@ blog:
   forum: 點這裡以加入關於此項條目的討論
 
 tags:
-  all: 由標籤分類文章
   notags: 此標籤下沒有找到文章。

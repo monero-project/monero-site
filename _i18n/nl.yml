@@ -67,7 +67,7 @@ titles:
   ffs-ideas: Ideas
   ffs-ot: Open Tasks
   ffs-wip: Work in Progress
-  blogbytag: Blog per tag
+  blogbytag: Blog
   library: Bibliotheek
 
 index:
@@ -650,5 +650,4 @@ blog:
   forum: Klik hier om dit trefwoord te bespreken op het Monero-forum
 
 tags:
-  all: Artikelen per tag
   notags: Er zijn geen posts voor deze tag.

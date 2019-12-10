@@ -67,7 +67,7 @@ titles:
   ffs-ideas: 想法
   ffs-ot: 开放式任务
   ffs-wip: 正在执行
-  blogbytag: 按标签分类的博客
+  blogbytag: Blog
   library: 资料
 
 index:
@@ -647,5 +647,4 @@ blog:
   forum: 点击这里在Monero Forum加入讨论
 
 tags:
-  all: 按标签分类的文章
   notags: 这个标签还没有文章。

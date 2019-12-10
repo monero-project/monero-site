@@ -67,7 +67,7 @@ titles:
   ffs-ideas: Ideas
   ffs-ot: Open Tasks
   ffs-wip: Work in Progress
-  blogbytag: Blog by Tag
+  blogbytag: Blog
   library: Library
 
 index:
@@ -648,5 +648,4 @@ blog:
   forum: Click here to join the discussion for this entry on the Monero Forum
 
 tags:
-  all: Articles by Tag
   notags: There are no posts for this tag.

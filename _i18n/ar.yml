@@ -67,7 +67,7 @@ titles:
   ffs-ideas: أفكار
   ffs-ot: مهمات مفتوحه
   ffs-wip: جاري العمل عليها
-  blogbytag: التدوينه بالوصف
+  blogbytag: Blog
   library: Library
 
 index:
@@ -648,5 +648,4 @@ blog:
   forum: إضغط هُنا للمشاركه في المناقشه حول هذا الموضوع في منتديات مونيرو
 
 tags:
-  all: المواضيع بالوصف
   notags: لا يوجد مواضيع تحت هذا الوصف.

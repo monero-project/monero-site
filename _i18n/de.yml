@@ -67,7 +67,7 @@ titles:
   ffs-ideas: Ideen
   ffs-ot: Offene Aufgaben
   ffs-wip: In Bearbeitung
-  blogbytag: Blog nach Tags
+  blogbytag: Blog
   library: Bibliothek
 
 index:
@@ -649,5 +649,4 @@ blog:
   forum: Klicke hier, um der Diskussion für diesen Eintrag im Moneroforum beizutreten
 
 tags:
-  all: Einträge nach Tags
   notags: Es gibt für diesen Tag keine passenden Einträge.
