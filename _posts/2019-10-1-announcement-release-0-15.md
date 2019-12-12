@@ -15,7 +15,7 @@ A tentative schedule for the upcoming scheduled network upgrade has been set. Th
 **November 30** - *Network upgrade*
 
 
-<img src = "/img/blog/monero_015_schedule.png" alt="upgrade schedule">
+<img src = "/blog/assets/2019-10-1-announcement-release-0-15/monero_015_schedule.png" alt="upgrade schedule">
 
 Thus, approximately the 30th of November there will be a scheduled network upgrade on the Monero network. To be sufficiently prepared, a user, service, merchant, pool operator, or exchange should run CLI v0.15 or GUI v0.15. The scheduled network upgrade introduces a few major changes. First and foremost, a new long-term Proof-of-Work algorithm, namely **RandomX**, will be introduced. Miners therefore ought to upgrade their mining software as well. Second, **long payment IDs will be phased out** in order to improve privacy and user experience as well as reduce support work for services and exchanges. Third, **transactions will now require at least two outputs**. Fourth, the **ten block (approximately twenty minutes) lock time** for incoming transactions will be enforced on the protocol level. Both these changes will improve privacy for the user as well as for the whole network.
 
