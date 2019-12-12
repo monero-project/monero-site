@@ -1,16 +1,20 @@
 #### What's the name of your business?
-*<write here>*
 
-#### What's the URL of the website? *referral links and/or trackers are not accepted*
-*<write here>*
+<!-- Write here -->
 
-#### Write a description of your business/service (in few words)
-*<write here>*
+#### What's the URL of the website?
 
-#### Is it specified somewhere on the website that you accept Monero?
+<!-- Write here. Referral links and/or trackers are not accepted -->
 
-- [ ] Yes
-- [ ] No
+#### Write a brief description of your business/service (max 50 characters)
+
+<!-- Write here. This text will be displayed on the Merchant page. Keep it short -->
+
+#### Enter the URL where a Monero mention can be found
+
+<!-- Be aware of the fact that to be listed, you must specify somewhere on your website that you accept Monero. -->
+
+https://
 
 #### How do you accept Monero? *(choose only one option)*
 
@@ -31,4 +35,5 @@
 - [ ] Entertainment
 
 #### Comment
-*<write here>*
+
+<!-- Write here any additional comment -->
