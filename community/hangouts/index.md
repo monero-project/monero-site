@@ -74,7 +74,12 @@ permalink: /community/hangouts/index.html
                 </div>
                 <!-- end left two-thirds block-->
                 <!-- right one-third block-->
-               <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               <div class="right col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="info-block center-xs">
+                          <h2>{% t hangouts.mailing_list %}</h2>
+                            <p>{% t hangouts.mailing_list1 %}</p>
+                            <p><a class="btn-link btn-auto btn-primary" href="https://lists.getmonero.org/postorius/lists/monero-announce.lists.getmonero.org/">{% t hangouts.subscribe %}</a></p>
+                        </div>
                         <div class="info-block">
                             <div class="row">
                                 <div class="col">

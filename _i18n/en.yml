@@ -118,6 +118,9 @@ hangouts:
   stack_exchange: Stack Exchange
   stack_exchange_para: The Monero Stack Exchange is a quick and easy way to ask questions and get answers. Below you'll find some high quality question/answer pairs to some frequently asked questions.
   stack_exchange_link: Visit Stack Exchange
+  mailing_list: Mailing List
+  mailing_list1: Do you want to receive important announcements directly on your email address? join our mailing lists!
+  subscribe: Subscribe
   irc_channels:
   - channel: monero
     description: This channel is used to discuss all things Monero related.
