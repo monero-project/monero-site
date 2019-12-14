@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Importing the Blockchain to Monero GUI wallet (Windows)
-
 ### Step 1
 
 Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the Blockchain from another source.

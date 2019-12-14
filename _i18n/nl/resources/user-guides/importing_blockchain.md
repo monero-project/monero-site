@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# De blockchain importeren in de grafische Monero-portemonnee (Windows)
-
 ### Stap 1
 
 Download het huidige bootstrap-bestand van https://downloads.getmonero.org/blockchain.raw. Deze stap kun je overslaan als je de blockchain uit een andere bron importeert.

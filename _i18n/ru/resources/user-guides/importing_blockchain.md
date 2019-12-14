@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Импорт блокчейна в кошелёк Monero GUI (Windows)
-
 ### Шаг 1
 
 Скачать последнюю программу самозагрузки по ссылке: https://downloads.getmonero.org/blockchain.raw. Этот шаг можно пропустить, если блокчейн импортируется из другого источника.

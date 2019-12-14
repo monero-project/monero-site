@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Importando la Blockchain al monedero GUI (Windows)
-
 ### Paso 1
 
 Descarga la blockchain actual de https://downloads.getmonero.org/blockchain.raw; puedes saltar este paso si estás importando la blockchain de otra fuente.
