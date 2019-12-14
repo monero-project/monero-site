@@ -178,6 +178,9 @@ downloads:
   cli: CLI Wallet
   blockchain: Blockchain Bootstrap
   blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can use the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM.
+  blockchain2: If you wish to proceed anyway, take a look at the user guide
+  blockchain3: Importing the Monero blockchain
+  blockchain4: for step-by-step instructions for Windows.
   blockchainbutton: Download Blockchain
   mobilelight: Mobile & Light Wallets
   hardware: Hardware Wallets
