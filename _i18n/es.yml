@@ -482,6 +482,7 @@ user-guides:
   nicehash: Cómo minar Monero XMR sin un equipo de minado
   ledger-wallet-cli: Cómo generar un monedero Ledger Monero con la consola de comandos (monero-wallet-cli)
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
+  tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
   translated: "Yes"

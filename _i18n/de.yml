@@ -482,6 +482,7 @@ user-guides:
   nicehash: Monero (XMR) ohne spezielle Hardware minen
   ledger-wallet-cli: Eine Wallet mit Ledger erstellen (Befehlszeile)
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
+  tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
   translated: "yes"

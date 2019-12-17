@@ -481,6 +481,7 @@ user-guides:
   nicehash: 如何在没有挖矿设备的情况下挖掘门罗币
   ledger-wallet-cli: 如何用命令行钱包（CLI）制作一个Ledger硬件钱包的门罗币钱包
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
+  tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
   translated: "yes"
