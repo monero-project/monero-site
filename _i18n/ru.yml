@@ -474,6 +474,7 @@ user-guides:
   nicehash: Как заниматься майнингом Monero, не имея оборудования для майнинга
   ledger-wallet-cli: Как создать Ledger Monero кошелек с помощью CLI (monero-wallet-cli)
   multisig-messaging-system: Multisig-транзакции с MMS и CLI кошельком
+  tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
   translated: "yes"
