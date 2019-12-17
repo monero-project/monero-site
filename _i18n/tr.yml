@@ -170,7 +170,7 @@ team:
 downloads:
   translated: "no"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
-  choose: Choose your OS
+  choose: Choose your download
   gui: GUI Wallet
   cli: CLI Wallet
   blockchain: Blockchain Bootstrap
