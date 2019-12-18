@@ -73,8 +73,8 @@ permalink: /press-kit/index.html
         </div>
     </div>
 </section>
-{% for press in site.translations[site.lang].press-kit.documents %}
 <section class="container full">
+  {% for press in site.translations[site.lang].press-kit.documents %}
   <div class="info-block">
     <h2>{{ press.category }}</h2>
     <div>
@@ -84,8 +84,19 @@ permalink: /press-kit/index.html
       {% endfor %}
     </div>
   </div>
+  {% endfor %}
+  <div class="info-block">
+  {% for entry in site.translations[site.lang].press-kit.marketing %}
+    <h2>{{ entry.category }}</h2>
+    <div>
+      {% for publication in entry.publications %}
+      <h3><a href="{{ publication.url_file }}">{{ publication.name }}</a></h3>
+      <p>{{ publication.abstract }}</p>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
 </section>
-{% endfor %}
 
 <div class="untranslated {% t press-kit.translated %}">
     <p>{% t global.untranslated %} <a class="untranslated-link" href="https://repo.getmonero.org/monero-project/monero-site/blob/master/README.md#140-how-to-translate-a-page">README</a>.</p>
