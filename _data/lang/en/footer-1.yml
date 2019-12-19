@@ -11,7 +11,7 @@
   - name: Library
     url: library
   - name: RSS Feed
-    url: https://getmonero.org/feed.xml
+    url: rss
 - title: IRC Channels
   subfolderitems:
   - name: monero

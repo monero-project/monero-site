@@ -8,11 +8,13 @@
                             {% for entry in item.subfolderitems %}
                              {% if entry.url contains 'https://' %}
                               <li><a class="white" href="{{ entry.url }}">{{ entry.name }}</a></li>
-                              {%elsif entry.url contains 'irc'%}
+                             {% elsif entry.url contains 'irc' %}
                               <li><a class="white" href="{{ entry.url }}">{{ entry.name }}</a></li>
-                              {%else%}
-                                <li><a class="white" href="{{site.baseurl}}/{{ entry.url }}">{{ entry.name }}</a></li>
-                              {%endif%}
+                             {% elsif entry.url == 'rss' %}
+                                <li><a class="white" href="{{ site.baseurl_root }}/feed.xml">{{ entry.name }}</a></li>
+                             {% else %}
+                                <li><a class="white" href="{{ site.baseurl }}/{{ entry.url }}">{{ entry.name }}</a></li>
+                             {% endif %}
                             {% endfor %}
                          </ul>
                      </div>
@@ -24,9 +26,9 @@
                         <ul class="list-unstyled list-inline">
                            {% for item in site.data.lang[site.lang].footer-2 %}
                             {% if item.url contains 'https://' %}
-                             <li><a href="{{item.url}}" class="white footer-link">{{item.name}}</a></li>
+                             <li><a href="{{ item.url }}" class="white footer-link">{{item.name}}</a></li>
                             {%else%}
-                             <li><a href="{{site.baseurl}}/{{item.url}}" class="white footer-link">{{item.name}}</a></li>
+                             <li><a href="{{ site.baseurl }}/{{ item.url }}" class="white footer-link">{{item.name}}</a></li>
                            {%endif%}
                            {% endfor %}
                         </ul>
