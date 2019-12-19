@@ -6,7 +6,7 @@
 
 #### Materiały do tworzenia dysków rozruchowych:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Materiały do plików binarnych Monero:  [Pliki Binarne Monero](https://getmonero.org/downloads/)
+#### Materiały do plików binarnych Monero:  [Pliki Binarne Monero]({{ site.baseurl }}/downloads/)
 
 - Przygotuj jakikolwiek dostępny komputer, może być nawet twoja normalna stacja robocza. Jeśli jesteś szczególnie paranoidalny, najlepiej użyj starego komputera bez WiFi ani Bluetoothe'a.
 

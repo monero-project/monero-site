@@ -178,7 +178,7 @@ Esta sección cubrirá la descarga del archivo firmado conocido de buenos hashes
 
 ### 3.1. Descargar Archivo Hash
 
-En un navegador web, ve a la [página de hashes en getmonero.org](https://getmonero.org/downloads/hashes.txt). Haz un clic derecho en la página, y selecciona `Guardar página como`.
+En un navegador web, ve a la [página de hashes en getmonero.org]({{ site.baseurl }}/downloads/hashes.txt). Haz un clic derecho en la página, y selecciona `Guardar página como`.
 
 ![hashes right click](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
@@ -216,7 +216,7 @@ Esta sección cubrirá la descarga del archivo binario Monero y la verificación
 
 ### 4.1. Descargar Binario
 
-En un navegador web, ve a la [página de descargas de getmonero.org](https://getmonero.org/downloads/#windows). Selecciona el binario correcto para tu sistema.
+En un navegador web, ve a la [página de descargas de getmonero.org]({{ site.baseurl }}/downloads/#windows). Selecciona el binario correcto para tu sistema.
 
 ![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 

@@ -6,7 +6,7 @@
 
 #### Recursos para crear un disco booteable:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Recursos para binarios de Monero:  [Monero Binaries](https://getmonero.org/downloads/)
+#### Recursos para binarios de Monero:  [Monero Binaries]({{ site.baseurl }}/downloads/)
 
 - Toma cualquier computadora que tengas cerca, incluso tu estación de trabajo. Lo tendrás más fácil si usas una computadora vieja sin Wi-Fi o Bluetooth si eres particularmente paranoico
 

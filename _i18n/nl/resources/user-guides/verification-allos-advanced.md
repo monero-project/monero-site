@@ -99,12 +99,12 @@ In dit gedeelte leggen we uit hoe je het hashbestand downloadt en de authenticit
 
 ### 3.1. Hashbestand ophalen
 
-Op Windows of een Mac ga je naar het [hashbestand op getmonero.org](https://getmonero.org/downloads/hashes.txt) en sla je de pagina op als `hashes.txt` in je homedirectory.
+Op Windows of een Mac ga je naar het [hashbestand op getmonero.org]({{ site.baseurl }}/downloads/hashes.txt) en sla je de pagina op als `hashes.txt` in je homedirectory.
 
 Op Linux kun je het ondertekende hashbestand downloaden door de volgende opdracht op te geven:
 
 ```
-wget -O hashes.txt https://getmonero.org/downloads/hashes.txt
+wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
 ```
 
 ### 3.2. Hashbestand verifiëren
@@ -139,7 +139,7 @@ In dit gedeelte leggen we uit hoe je de Monero-binary voor je besturingssysteem 
 
 ### 4.1. Monero-binary ophalen
 
-Op Windows of een Mac ga je naar [getmonero.org](https://getmonero.org/downloads/) en download je het juiste bestand voor je besturingssysteem. Sla het bestand op in je homedirectory. **Pak de bestanden nog niet uit.**
+Op Windows of een Mac ga je naar [getmonero.org]({{ site.baseurl }}/downloads/) en download je het juiste bestand voor je besturingssysteem. Sla het bestand op in je homedirectory. **Pak de bestanden nog niet uit.**
 
 Op Linux kun je de opdrachtregelversie downloaden door de volgende opdracht op te geven:
 

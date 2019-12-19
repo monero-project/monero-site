@@ -106,7 +106,7 @@ Sur Windows et Mac, rendez-vous sur sur la [page de haches getmonero.org](https:
 Sur Linux, vous pouvez télécharger le fichier de hachage en tapant la commande suivante :
 
 ```
-wget -O hashes.txt https://getmonero.org/downloads/hashes.txt
+wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
 ```
 
 ### 3.2. Vérifier le Fichier de Hachage

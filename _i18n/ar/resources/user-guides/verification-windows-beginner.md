@@ -179,7 +179,7 @@
 
 ### 3.1. تنزيل ملف الهاش
 
-في متصفح الويب ، انتقل إلى [صفحة الهاش getmonero.org] (https://getmonero.org/downloads/hashes.txt). انقر بزر الماوس الأيمن على الصفحة ، وحدد `Save Page As`.
+في متصفح الويب ، انتقل إلى [صفحة الهاش getmonero.org] ({{ site.baseurl }}/downloads/hashes.txt). انقر بزر الماوس الأيمن على الصفحة ، وحدد `Save Page As`.
 
 ![hashes right click](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
@@ -217,7 +217,7 @@
 
 ### 4.1. تنزيل ملف التثبيت
 
-في المتصفح إذهب إلي [getmonero.org فصحه التنزيلات ](https://getmonero.org/downloads/#windows), وإختر الملف المناسب لنظام تشغيلك.
+في المتصفح إذهب إلي [getmonero.org فصحه التنزيلات ]({{ site.baseurl }}/downloads/#windows), وإختر الملف المناسب لنظام تشغيلك.
 
 ![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 

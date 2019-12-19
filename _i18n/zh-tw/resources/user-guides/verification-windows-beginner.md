@@ -178,7 +178,7 @@ This section will cover downloading the signed file of known good hashes and ver
 
 ### 3.1. Download Hash File
 
-In a web browser, go to the [getmonero.org hash page](https://getmonero.org/downloads/hashes.txt). Right click the page, select `Save Page As`.
+In a web browser, go to the [getmonero.org hash page]({{ site.baseurl }}/downloads/hashes.txt). Right click the page, select `Save Page As`.
 
 ![hashes right click](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
@@ -216,7 +216,7 @@ This section will cover downloading the Monero binary and verifying its authenti
 
 ### 4.1. Download Binary
 
-In a web browser, go to the [getmonero.org downloads page](https://getmonero.org/downloads/#windows). Select the correct binary for your system.
+In a web browser, go to the [getmonero.org downloads page]({{ site.baseurl }}/downloads/#windows). Select the correct binary for your system.
 
 ![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 
