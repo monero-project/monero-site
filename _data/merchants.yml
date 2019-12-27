@@ -9,6 +9,8 @@
       url: https://www.alfacashier.com/
     - name: Anycoin Direct
       url: https://anycoindirect.eu/buy/monero
+    - name: BestChange
+      url: https://www.bestchange.com
     - name: Bitci (XMR/BTCI, XMR/TRY, XMR/CHFT)
       url: https://www.bitci.com/
     - name: Binance
@@ -81,6 +83,10 @@
       url: https://shapeshift.io/
     - name: SimpleSwap
       url: https://simpleswap.io
+    - name: StealthEX
+      url: https://stealthex.io/
+    - name: SwapSpace
+      url: https://swapspace.co/
     - name: switchain - Instant exchange
       url: https://www.switchain.com/
     - name: Tux Exchange
@@ -306,6 +312,10 @@
       url: https://www.snel.com/
     - name: Social Media LTD - Digital marketing agency
       url: https://social-media.co.uk/
+    - name: SporeStack - Accountless, API-driven VPS hosting
+      url: https://sporestack.com
+    - name: Sports Betting Tips
+      url: https://sportsbettingtips.space/
     - name: Tactical VPN
       url: https://meg-it.info/tacticalvpn
     - name: TheBigCoin - Spend Monero Anywhere
@@ -461,6 +471,8 @@
       url: http://www.projectcoralreef.com/all-stores
     - name: Purism - Privacy Phones & Laptops
       url: https://shop.puri.sm/
+    - name: Reagent Tests UK - tests to detect adulteration and substitution of drugs
+      url: https://www.reagent-tests.uk/
     - name: Renjer Snacks
       url: http://www.renjer.ky
     - name: Revolution Microelectronics
