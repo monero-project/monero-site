@@ -81,6 +81,7 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [check_reserve_proof](#check_reserve_proof)
 * [get_transfers](#get_transfers)
 * [get_transfer_by_txid](#get_transfer_by_txid)
+* [describe_transfer](#describe_transfer)
 * [sign](#sign)
 * [verify](#verify)
 * [export_outputs](#export_outputs)
@@ -91,14 +92,17 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [parse_uri](#parse_uri)
 * [get_address_book](#get_address_book)
 * [add_address_book](#add_address_book)
+* [edit_address_book](#edit_address_book)
 * [delete_address_book](#delete_address_book)
 * [refresh](#refresh)
+* [auto_refresh](#auto_refresh)
 * [rescan_spent](#rescan_spent)
 * [start_mining](#start_mining)
 * [stop_mining](#stop_mining)
 * [get_languages](#get_languages)
 * [create_wallet](#create_wallet)
 * [open_wallet](#open_wallet)
+* [restore_deterministic_wallet](#restore_deterministic_wallet)
 * [close_wallet](#close_wallet)
 * [change_wallet_password](#change_wallet_password)
 * [is_multisig](#is_multisig)
@@ -578,7 +582,6 @@ Inputs:
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Number of outputs to mix in the transaction (this output + N decoys from the blockchain).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
 * *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
 * *get_tx_hex* - boolean; Return the transaction as hex string after sending (Defaults to false)
@@ -633,7 +636,6 @@ Inputs:
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
 * *priority* - unsigned int; Set a priority for the transactions. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
 * *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
@@ -804,7 +806,6 @@ Inputs:
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
 * *below_amount* - unsigned int; (Optional) Include outputs below this amount.
 * *do_not_relay* - boolean; (Optional) If true, do not relay this sweep transfer. (Defaults to false)
@@ -856,7 +857,6 @@ Inputs:
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
-* *payment_id* - string; (Optional) Random 32-byte/64-character hex string to identify a transaction.
 * *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
 * *key_image* - string; Key image of specific output to sweep.
 * *below_amount* - unsigned int; (Optional) Include outputs below this amount.
@@ -1869,6 +1869,67 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 ```
 
 
+### **describe_transfer**
+
+Returns details for each transaction in an unsigned or multisig transaction set. Transaction sets are obtained as return values from one of the following RPC methods: 
+* transfer
+* transfer_split
+* sweep_all
+* sweep_single
+* sweep_dust
+
+These methods return unsigned transaction sets if the wallet is view-only (i.e. the wallet was created without the private spend key).
+
+Inputs:
+
+* *unsigned_txset* - string; (Optional) A hexadecimal string representing a set of unsigned transactions (empty for multisig transactions; non-multisig signed transactions are not supported).
+* *multisig_txset* - string; (Optional) A hexadecimal string representing the set of signing keys used in a multisig transaction (empty for unsigned transactions; non-multisig signed transactions are not supported).
+
+Outputs:
+* *desc* - The description of the transfer as a list of:
+  * *amount_in* - unsigned int (64 bit); The sum of the inputs spent by the transaction in @atomic units.
+  * *amount_out* - unsigned int (64 bit); The sum of the outputs created by the transaction in @atomic units.
+  * *recipients* - list of:
+    * *address* - string; The public address of the recipient. 
+    * *amount* - unsigned int; The amount sent to the recipient in @atomic units.
+  * *change_address* - string; The address of the change recipient.
+  * *change_amount* - unsigned int; The amount sent to the change address in @atomic units.
+  * *fee* - unsigned int; The fee charged for the transaction in @atomic units.
+  * *payment_id* - string; payment ID for this transfer (empty if not provided.
+  * *ring_size* - unsigned int; The number of inputs in the ring (1 real output + the number of decoys from the blockchain).
+  * *unlock_time* - unsigned int; The number of blocks before the monero can be spent (0 for no lock).
+  * *dummy_outputs* - unsigned int; The number of fake outputs added to single-output transactions.  Fake outputs have 0 amount and are sent to a random address.
+  * *extra* - string; Arbitrary transaction data in hexadecimal format.
+  
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"describe_transfer","params":{"unsigned_txset":"...long hex..."}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "desc": [{
+      "amount_in": 886489038634812,
+      "amount_out": 886455352051344,
+      "change_address": "5BqWeZrK944YesCy5VdmBneWeaSZutEijFVAKjpVHeVd4unsCSM55CjgViQsK9WFNHK1eZgcCuZ3fRqYpzKDokqSUmQfJzvswQs13AAidJ",
+      "change_amount": 4976287087263,
+      "dummy_outputs": 0,
+      "extra": 01b998f16459bcbac9c92074d3128d10724f10b74f5a7b1ec8e5a1e7f1150544020209010000000000000000",
+      "fee": 33686583468, 
+      "payment_id": "0000000000000000000000000000000000000000000000000000000000000000",
+      "recipients": [{
+        "address": "0b057f69acc1552014cb157138e5c4dd495347d333f68ff0af70494b979aed10",
+        "amount": 881479064964081
+      }],       
+      "ring_size": 11,
+      "unlock_time": 0
+    ]}
+  }
+}
+```
+
+
 ### **sign**
 
 Sign a string.
@@ -2192,6 +2253,37 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
 ```
 
 
+### **edit_address_book**
+
+Edit an existing address book entry.
+
+Alias: *None*
+
+Inputs:
+
+* *index* - unsigned_int; Index of the address book entry to edit.
+* *set_address* - boolean; If true, set the address for this entry to the value of "address".
+* *address* - string; (Optional) The 95-character public address to set.
+* *set_description* - boolean; If true, set the description for this entry to the value of "description".
+* *description* - string; (Optional) Human-readable description for this entry.
+* *set_payment_id* - boolean; If true, set the payment ID for this entry to the value of "payment_id".
+* *payment_id* - string; (Optional) Payment ID for this address.
+
+Outputs: *none*.
+
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"edit_address_book","params":{"index":0, "set_address":true, "address":"0b057f69acc1552014cb157138e5c4dd495347d333f68ff0af70494b979aed10", "set_payment_id":true, "payment_id":"60900e5603bf96e3", "set_description":true, "description":"Example description."}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+
 ### **delete_address_book**
 
 Delete an entry from the address book.
@@ -2242,6 +2334,30 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   "result": {
     "blocks_fetched": 24,
     "received_money": true
+  }
+}
+```
+
+
+### **auto_refresh**
+
+Set whether and how often to automatically refresh the current wallet.
+
+Inputs:
+
+* *enable* - boolean; (Optional) Enable or disable automatic refreshing (default = true).
+* *period* - unsigned integer; (Optional) The period of the wallet refresh cycle (i.e. time between refreshes) in seconds.
+
+Outputs: *none*.
+
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"auto_refresh","params":{"enable":true, "period":10}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
   }
 }
 ```
@@ -2397,6 +2513,47 @@ $ curl -X POST http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   "result": {
   }
 }
+```
+
+
+### **restore_deterministic_wallet**
+
+Create and open a wallet on the RPC server from an existing mnemonic phrase and close the currently open wallet.
+
+Alias: *None*.
+
+Inputs:
+
+* *name* - string; Name of the wallet.
+* *password* - string; Password of the wallet.
+* *seed* - string; Mnemonic phrase of the wallet to restore.
+* *restore_height* - long; (Optional) Block height to restore the wallet from (default = 0).
+* *language* - string; (Optional) Language of the mnemonic phrase in case the old language is invalid.
+* *seed_offset* - string; (Optional) Offset used to derive a new seed from the given mnemonic to recover a secret wallet from the mnemonic phrase.
+* *autosave_current* - boolean; Whether to save the currently open RPC wallet before closing it (Defaults to true).
+
+Outputs: 
+
+* *address* - string; 95-character hexadecimal address of the restored wallet as a string.
+* *info* - string; Message describing the success or failure of the attempt to restore the wallet.
+* *seed* - string; Mnemonic phrase of the restored wallet, which is updated if the wallet was restored from a deprecated-style mnemonic phrase.
+* *was_deprecated* - boolean; Indicates if the restored wallet was created from a deprecated-style mnemonic phrase.
+
+Example:
+
+```
+$ curl -X POST http://localhost:38083/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"restore_deterministic_wallet","params":{"filename":"My Wallet","password":"mypassword123","seed":"awkward vogue odometer amply bagpipe kisses poker aspire slug eluded hydrogen selfish later toolbox enigma wolf tweezers eluded gnome soprano ladder broken jukebox lordship aspire","restore_height":0, "language":"English","seed_offset":"","autosave_current":true}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "address": "9wB1Jc5fy5hjTkFBnv4UNY3WfhUswhx8M7uWjZrwRBzH2uatJcn8AqiKEHWuSNrnapApCzzTxP4iSiV3y3pqYcRbDHNboJK",
+    "info": "Wallet has been restored successfully.",
+    "seed": "awkward vogue odometer amply bagpipe kisses poker aspire slug eluded hydrogen selfish later toolbox enigma wolf tweezers eluded gnome soprano ladder broken jukebox lordship aspire",
+    "was_deprecated": false
+  }
+}
+
 ```
 
 
