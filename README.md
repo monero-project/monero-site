@@ -491,16 +491,16 @@ In this section you'll find the info you need to translate a page and add a new 
 
 ### 1. Quickstart
 * Navigate to the correct language in the /i18n folder and find the page you wish to translate
-* Click the file and translate the page, not touching any HTML or markdown.
+* Click the file and translate the page, not touching any HTML or markdown
 * Remove `{% include untranslated.html %}` from the page
 * Test/Build
 * Submit PR
 
-### 2. Naviate to correct file
+### 2. Navigate to correct file
 Go to the /i18n folder and find the two letter code for the language you wish to translate for. Enter that folder and find the file you wish to translate. The filenames are all in English and MUST NOT BE CHANGED.
 
 ### 3. Translate the file
-Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip step 13.4. If during testing, the page appears different from the original English page (besides the translated text of course), you did something wrong and may have to start again.
+Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip step 13.4. If during testing, the page appears different from the original English page (besides the translated text, of course), you did something wrong and may have to start again.
 
 #### 3.1. Notes for Moneropedia Entries
 Moneropedia entries have two specificities:
