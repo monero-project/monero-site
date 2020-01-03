@@ -178,7 +178,7 @@ In dit gedeelte leggen we uit hoe je het ondertekende bestand met bekende goede 
 
 ### 3.1. Hashbestand downloaden
 
-Ga in een browser naar de [hashpagina op getmonero.org](https://getmonero.org/downloads/hashes.txt). Klik met de rechtermuisknop op de pagina en klik vervolgens op `Pagina opslaan als`.
+Ga in een browser naar de [hashpagina op getmonero.org]({{ site.baseurl }}/downloads/hashes.txt). Klik met de rechtermuisknop op de pagina en klik vervolgens op `Pagina opslaan als`.
 
 ![hashes contextmenu](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
@@ -216,7 +216,7 @@ In dit gedeelte leggen we uit hoe je de Monero-binary downloadt en de authentici
 
 ### 4.1. Binary downloaden
 
-Ga in een browser naar de [downloadpagina op getmonero.org](https://getmonero.org/downloads/#windows). Selecteer het juiste binaire bestand voor je systeem.
+Ga in een browser naar de [downloadpagina op getmonero.org]({{ site.baseurl }}/downloads/#windows). Selecteer het juiste binaire bestand voor je systeem.
 
 ![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 

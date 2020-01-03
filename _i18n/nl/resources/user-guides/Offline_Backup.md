@@ -6,7 +6,7 @@
 
 ### Tool voor het maken van opstartbare schijven:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-### Monero-binaries downloaden:  [Binaire bestanden voor Monero](https://getmonero.org/downloads/)
+### Monero-binaries downloaden:  [Binaire bestanden voor Monero]({{ site.baseurl }}/downloads/)
 
 - Gebruik een willekeurige computer, desnoods de computer waar je normaal op werkt. Als je extra voorzichtig bent, is het handig om een oudere computer te gebruiken zonder wifi of bluetooth.
 

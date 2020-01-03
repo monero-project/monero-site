@@ -99,12 +99,12 @@ This section will cover downloading the hash file and verifying its authenticity
 
 ### 3.1. Get Hash File
 
-On Windows or Mac, go to the [hashes file on getmonero.org](https://getmonero.org/downloads/hashes.txt) and save the page as `hashes.txt` to your home directory.
+On Windows or Mac, go to the [hashes file on getmonero.org]({{ site.baseurl_root }}/downloads/hashes.txt) and save the page as `hashes.txt` to your home directory.
 
 On Linux, you can download the signed hashes file by issuing the following command:
 
 ```
-wget -O hashes.txt https://getmonero.org/downloads/hashes.txt
+wget -O hashes.txt {{ site.baseurl_root }}/downloads/hashes.txt
 ```
 
 ### 3.2. Verify Hash File
@@ -139,7 +139,7 @@ This section will cover downloading the Monero binary for your operating system,
 
 ### 4.1. Get Monero binary
 
-On Windows or Mac, go to [getmonero.org](https://getmonero.org/downloads/) and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**
+On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/) and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**
 
 On Linux, you can download the command line tools by issuing the following command:
 

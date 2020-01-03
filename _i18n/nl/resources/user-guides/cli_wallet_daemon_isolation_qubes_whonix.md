@@ -22,7 +22,7 @@ Dit is veiliger dan andere benaderingen, waarbij de RPC van de portemonnee via e
 + Download, verifieer en installeer de Monero-software.
 
 ```
-user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "https://getmonero.org/downloads/hashes.txt"
+user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "{{ site.baseurl }}/downloads/hashes.txt"
 user@host:~$ gpg --recv-keys BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9
 user@host:~$ gpg --verify hashes.txt
 gpg: Signature made Wed 01 Nov 2017 10:01:41 AM UTC

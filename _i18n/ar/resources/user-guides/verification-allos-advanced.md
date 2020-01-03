@@ -99,12 +99,12 @@ gpg:              unchanged: 1
 
 ### 3.1. إحصل علي ملف الهاش
 
-على نظام ويندوز أو ماك انتقل إلى [ملف الهاشات على getmonero.org] (https://getmonero.org/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` إلى مجلدك الرئيسي.
+على نظام ويندوز أو ماك انتقل إلى [ملف الهاشات على getmonero.org] ({{ site.baseurl }}/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` إلى مجلدك الرئيسي.
 
 في ليُنكس يمكنك تنزيل ملف الهاشات الموقّع عن طريق إصدار الأمر التالي:
 
 ```
-wget -O hashes.txt https://getmonero.org/downloads/hashes.txt
+wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
 ```
 
 ### 3.2. تأكد من ملف الهاش
@@ -139,7 +139,7 @@ Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
 
 ### 4.1. الحصول علي ملفات التسطيب
 
-علي ويندوز أو ماك توجه إلي [getmonero.org](https://getmonero.org/downloads/) وقم بتنزيل الملف الخاص بنظام التشغيل الخاص بك. قم بحفظ الملف لمجلدك الرئيسي. **لا تقم بفك الضغط **
+علي ويندوز أو ماك توجه إلي [getmonero.org]({{ site.baseurl }}/downloads/) وقم بتنزيل الملف الخاص بنظام التشغيل الخاص بك. قم بحفظ الملف لمجلدك الرئيسي. **لا تقم بفك الضغط **
 
 في Linux ، يمكنك تنزيل واجهه سطر الأوامر عن طريق إصدار الأمر التالي:
 

@@ -6,7 +6,7 @@
 
 #### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Resource for Monero Binaries:  [Monero Binaries](https://getmonero.org/downloads/)
+#### Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl }}/downloads/)
 
 - Take any computer you have lying around, even your normal workstation. You may find it easier to use an older computer that has no wifi or bluetooth if you're particularly paranoid
 
