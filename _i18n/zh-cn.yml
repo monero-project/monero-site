@@ -261,6 +261,18 @@ press-kit:
       abstract: >
         这份门罗币简介可以帮你快速了解有关门罗币的所有内容: 门罗币的历史、和其他币的关键性差异、技术基础以及正在开发的功能。<br>
         浏览 <a target="_blank" href="https://www.monerooutreach.org/index.php">门罗币宣传组</a> 以获取更多信息。
+        marketing:
+  marketing:
+  - category: Marketing Material
+    publications:
+    - name: "The 'Don't buy Monero' sticker"
+      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
+      abstract: >
+        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+    - name: Guerrilla Toolkit
+      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
+      abstract: >
+        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   translated: "yes"

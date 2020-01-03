@@ -261,6 +261,17 @@ press-kit:
       abstract: >
         Um documento rápido e fácil de ler para saber tudo sobre o Monero: história, principais fatores de diferenciação, fundamentos técnicos e recursos de desenvolvimento.<br>
         Veja o website <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> para mais informações.
+  marketing:
+  - category: Marketing Material
+    publications:
+    - name: "The 'Don't buy Monero' sticker"
+      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
+      abstract: >
+        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+    - name: Guerrilla Toolkit
+      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
+      abstract: >
+        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   translated: "yes"
