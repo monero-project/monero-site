@@ -31,7 +31,7 @@ cli:
   downloads:
    - platform: Windows 64-bit
      hash: a1d2a4a0a9f2cdb17808c0b7a2a872a70c9f3e6487494b29cc1627b5490f25e9
-     link: https://downloads.getmonero.org/gui/win64
+     link: https://downloads.getmonero.org/cli/win64
      icon: icon-windows
      vers: 
    - platform: Windows 32-bit
