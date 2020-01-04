@@ -3,6 +3,8 @@ terms: ["payment-ID", "payment-IDs", "ID-de-paiement", IDs-de-paiement]
 summary: "Une option supplémentaire que est ajouté pour identifier les transactions avec les commerçants, se composant de 64 caractères hexadécimaux"
 ---
 
+*Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.
+
 ### Les Bases
 
 L'ID de transaction est une annexe **arbitraire** et **optionnelle** d'une transaction qui se compose de 32 octets (64 caractères hexadécimaux) ou 8 octets (dans le cas d'une adresse intégrée).
