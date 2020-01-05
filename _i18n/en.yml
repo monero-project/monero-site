@@ -592,8 +592,8 @@ library:
       abstract: >
         A comprehensive conceptual (and technical) explanation of Monero.<br>
         We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
-    - name: "Mastering Monero (Preview)"
-      file: "Mastering-Monero-Preview.pdf"
+    - name: "Mastering Monero"
+      file: "https://masteringmonero.com/free-download.html"
       abstract: >
         A guide through the seemingly complex world of Monero.<br>
         It includes:
@@ -603,7 +603,7 @@ library:
         <li>Details of the Monero decentralized network, peer-to-peer architecture, transaction lifecycle, and security principles.</li>
         <li>Introductions to technical foundations of Monero, intended for developers, engineers, software architects, and curious users.</li>
         <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc.</li></ul>
-        See <a href="https://masteringmonero.com/">Mastering Monero</a> website for info about full version.
+        See <a href="https://masteringmonero.com/">Mastering Monero</a> website for information.
   - category: Magazines
     publications:
     - name: "Revuo Monero Q4 2017"

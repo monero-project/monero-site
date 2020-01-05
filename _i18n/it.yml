@@ -584,8 +584,8 @@ library:
       abstract: >
         Una spiegazione concettuale (e tecnica) di Monero.<br>
         Proviamo ad insegnare a chiunque conosca l'algebra di base e semplici concetti di informatica come la "rappresentazione di bit" di un numero non solo come Monero funziona in profondità, ma anche come può essere utile e bella la crittografia.
-    - name: "Mastering Monero (Bozza)"
-      file: "Mastering-Monero-Preview.pdf"
+    - name: "Mastering Monero"
+      file: "https://masteringmonero.com/free-download.html"
       abstract: >
         Una guida sul mondo apparentemente complesso di Monero.<br>
         Include:
