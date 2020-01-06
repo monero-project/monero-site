@@ -19,7 +19,7 @@ permalink: /get-started/mining/index.html
                         </div>
                     </div>
                     <div class="row center-xs">
-                        <p>{% t mining.support_para1 %} <a href="{{site.baseurl}}/community/hangouts/"> {% t mining.support_para2 %}</a> <a href="https://www.reddit.com/r/MoneroMining/" target="_blank" rel="noreferrer noopener">{% t mining.support_para3 %}</a> {% t mining.support_para4 %} <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
+                        <p>{% t mining.support_para1 %} <a href="{{site.baseurl}}/community/hangouts/">  {% t mining.support_para4 %} <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
                     </div>
                 </div>
             </div>

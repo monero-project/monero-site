@@ -377,8 +377,7 @@ mining:
   intro2: The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.
   support: Support
   support_para1: See
-  support_para2: Hangouts,
-  support_para3: /r/moneromining (English)
+  support_para2: Hangouts
   support_para4: and
   pools: Pools
   pools_para1: A listing of trusted Monero pools is found
