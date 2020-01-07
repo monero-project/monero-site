@@ -115,9 +115,6 @@ hangouts:
   resources_para: من جهتنا في دعم مجموعات العمل, مونيرو يحتوي علي العديد من الموارد يمكن ان يستخدمها المجتمع للإلتقاء وتخطيط المشاريع . علي mattermost يحتوي علي إعاده بث في معظم قنوان مونيرو المشهوره علي بروتوكول الدردشة عبر الإنترنت IRC.
   irc: IRC Channels
   irc_para: مجتمع مونيرو ينتفع بالعديد من قنوان الدردشه IRC كل منها لغرض معين. بعضها للعمل, وبعضها للإلتقاء بالمجتمع, سوف تجد أشهرهم في الأسفل.
-  stack_exchange: Stack Exchange
-  stack_exchange_para: مونيرو Stack Exchange هو طريقه سريعه للسؤال والحصول علي إجابات حول مونيرو , ستجد بالأدني بعض الأسئله والإجابات القيمه للأسئله الشائعه .
-  stack_exchange_link: Visit Stack Exchange
   irc_channels:
   - channel: monero
     description: This channel is used to discuss all things Monero related.
@@ -139,6 +136,8 @@ hangouts:
     description: Localizing Monero into other languages.
   - channel: monero-hardware
     description: Building hardware wallets to keep your Monero safe.
+  - channel: monero-site
+    description: Where the development of this website is coordinated
   - channel: kovri
     description: This channel is used to discuss all things Kovri related.
   - channel: kovri-dev

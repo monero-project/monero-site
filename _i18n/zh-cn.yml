@@ -115,9 +115,6 @@ hangouts:
   resources_para: 以下是门罗社区工作组经常谈论和规划项目的几个频道，你可以在这里找到开发组人员。 Mattermost甚至将被列为最受欢迎的门罗币交流频道。 
   irc: IRC频道
   irc_para: 门罗社区采用了很多网络交流（IRC)频道，每个频道有各自针对的话题。有的频道用来谈论正式议题，有的只是闲聊。下面列出了最受欢迎的一些频道。
-  stack_exchange: 交流栈
-  stack_exchange_para: 你可以在Monero交流栈快捷地提出问题并获得回答。 下面列出了一些高质量的经常被问到的问题。
-  stack_exchange_link: 访问交流栈
   irc_channels: 
   - channel: Monero
     description: 这个频道用于谈论所有和门罗币相关的事宜。
@@ -139,6 +136,8 @@ hangouts:
     description: 把门罗项目本土化成其他语言。
   - channel: monero-hardware
     description: 构建硬件钱包来保障你的门罗币安全。
+  - channel: monero-site
+    description: Where the development of this website is coordinated
   - channel: kovri
     description: 这个频道用于讨论所有和科维匿名网络（Kovri）相关的东西。
   - channel: kovri-dev

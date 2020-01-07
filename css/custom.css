@@ -3989,6 +3989,16 @@ p.hangouts-social {
     background-position: -176px -143px;
 }
 
+.social-icon.gitlab {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: -128px -190px;
+}
+
+.social-icon.gitlab:hover {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: -176px -190px;
+}
+
 .hangouts .irc .col-md-4 {
     padding: 1rem 0.5rem;
 }

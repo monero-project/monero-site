@@ -116,9 +116,6 @@ hangouts:
   resources_para: Afin de maintenir des groupes de travail organiques, Monero dispose de plusieurs ressources que la communauté peut utiliser pour se retrouver et planifier des projets. Mattermost a même des relais dans les canaux IRC liés à Monero les plus populaires.
   irc: Canaux IRC
   irc_para: La communauté Monero s'appuie sur différents canaux IRC qui répondent à des besoins spécifiques. Certains pour travailler, et d'autres simplement pour se rencontrer. Vous trouverez les plus populaires d'entre eux ci-dessous.
-  stack_exchange: Stack Exchange
-  stack_exchange_para: Le Stack Exchange de Monero est un moyen simple et rapide de poser des questions et trouver des réponses. Vous trouverez ci-dessous quelques-unes des meilleures questions/réponses qui sont fréquemment recherchées.
-  stack_exchange_link: Aller sur Stack Exchange
   irc_channels:
   - channel: monero
     description: Ce canal permet de discuter de toutes choses liées à Monero.
@@ -140,6 +137,8 @@ hangouts:
     description: Traduire Monero dans d'autres langues.
   - channel: monero-hardware
     description: Construction de matériel pour garder vos moneroj en toute sécurité.
+  - channel: monero-site
+    description: Where the development of this website is coordinated
   - channel: kovri
     description: Ce canal permet de discuter de toutes choses liées à Kovri.
   - channel: kovri-dev

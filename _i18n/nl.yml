@@ -115,9 +115,6 @@ hangouts:
   resources_para: Voor het ondersteunen van werkgroepen die zichzelf organiseren zijn er verschillende communicatiekanalen waarin de Monero-community contact kan houden en projecten kan plannen. Er zijn zelfs relays van Mattermost naar de populairste Monero-kanalen op IRC.
   irc: IRC-kanalen
   irc_para: De Monero-community gebruikt allerlei IRC-kanalen, voor verschillende doelen. Sommige zijn bedoeld voor werkoverleg, sommige gewoon om te chatten. Hieronder staan de populairste kanalen.
-  stack_exchange: Stack Exchange
-  stack_exchange_para: De Monero Stack Exchange is een handige plek waar je snel vragen kunt stellen en antwoorden krijgt. Hieronder vind je een aantal voorbeelden van goed geformuleerde vragen een antwoorden over veel voorkomende problemen.
-  stack_exchange_link: Bezoek Stack Exchange
   irc_channels:
   - kanaal: monero
     description: In dit kanaal bespreken we alle Monero-gerelateerde zaken.
@@ -139,6 +136,8 @@ hangouts:
     description: Over het lokaliseren van Monero in andere talen.
   - channel: monero-hardware
     description: Hardware wallets maken om je Monero veilig te bewaren.
+  - channel: monero-site
+    description: Where the development of this website is coordinated
   - channel: kovri
     description: In dit kanaal bespreken we alle Kovri-gerelateerde zaken.
   - channel: kovri-dev
