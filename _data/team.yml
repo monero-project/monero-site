@@ -4,37 +4,37 @@
       github: https://github.com/fluffypony
       twitter: https://twitter.com/fluffypony
       reddit: https://reddit.com/user/fluffyponyza
-      email: ric@getmonero.org
+      email: ric[at]getmonero[dot]org
       description:
     - name: Francisco "ArticMine" Cabañas
       github: https://github.com/ArticMine
       reddit: https://www.reddit.com/user/ArticMine
-      email: articmine@getmonero.org
+      email: articmine[at]getmonero[dot]org
       description:
     - name: othe
       github: 
       reddit: https://www.reddit.com/user/othexmr
-      email: othe@getmonero.org
+      email: othe[at]getmonero[dot]org
       description:
     - name: smooth
       github: https://github.com/iamsmooth
       reddit: https://www.reddit.com/user/smooth_xmr
-      email: smooth@getmonero.org
+      email: smooth[at]getmonero[dot]org
       description:
     - name: binaryFate
       github: https://github.com/binaryfate
       reddit: https://www.reddit.com/user/binaryFate
-      email: binaryfate@getmonero.org
+      email: binaryfate[at]getmonero[dot]org
       description:
     - name: luigi1111
       github: https://github.com/luigi1111
       reddit: https://www.reddit.com/user/cloud10again
-      email: luigi1111@getmonero.org
+      email: luigi1111[at]getmonero[dot]org
       description:
     - name: NoodleDoodle
       github: https://github.com/NoodleDoodleNoodleDoodleNoodleDoodleNoo
       reddit: https://www.reddit.com/user/NoodleDoodle_xmr
-      email: noodledoodle@getmonero.org
+      email: noodledoodle[at]getmonero[dot]org
       description:
 - area: Developers
   member:
@@ -158,12 +158,15 @@
     - name: Brandon Goodell, Ph.D. (Surae Noether)
       github: https://github.com/b-g-goodell
       reddit: https://www.reddit.com/user/snoether
-    - name: Sarang Noether
+      email: surae.noether[at]protonmail[dot]com
+      email1: surae[at]getmonero[dot]org
+    - name: Sarang Noether, Ph.D.
       github: https://github.com/SarangNoether
       reddit: https://www.reddit.com/user/SarangNoether
+      email: sarang.noether[at]protonmail[dot]com
     - name: Stoffu Noether
       github: https://github.com/stoffu
     - name: Mitchell Krawiec-Thayer, Ph.D. (Isthmus)
-      email: Isthmus@getmonero.org
+      email: Isthmus[at]getmonero[dot]org
       github: https://github.com/mitchellpkt
       reddit: https://www.reddit.com/user/mitchellpkt
