@@ -145,6 +145,16 @@ permalink: /community/team/index.html
                                                 <div class="row center-xs">
                                                     <h3>{{member.name}}</h3>
                                                 </div>
+                                                    {% if member.email and member.email1 %}
+                                                      <div class="row center-xs">
+                                                        <p>{{ member.email }}<br>
+                                                           {{ member.email1 }}</p>
+                                                      </div>
+                                                    {% elsif member.email %}
+                                                      <div class="row center-xs">
+                                                        <p>{{ member.email }}</p>
+                                                      </div>
+                                                    {% endif %}
                                                 <div class="row center-xs icons">
                                                     {% if member.github %}
                                                         <a href="{{member.github}}" target="_blank" rel="noreferrer, noopener">
