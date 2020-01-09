@@ -21,6 +21,9 @@ permalink: /community/hangouts/index.html
             <li>
                 <a href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener"><div class="social-icon github"></div></a>
             </li>
+            <li>
+                <a href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener"><div class="social-icon gitlab"></div></a>
+            </li>
         </ul>
     </section>
 </div>
@@ -52,24 +55,6 @@ permalink: /community/hangouts/index.html
                                 </div>
                             </div>
                         </div>
-                        <div class="info-block">
-                            <div class="row center-xs">
-                                <div class="col">
-                                    <h2>{% t hangouts.irc %}</h2>
-                                </div>
-                            </div>
-                            <div class="row start-xs">
-                                <p>{% t hangouts.irc_para %}</p>
-                            </div>
-                            <div class="row irc">
-                                {% for channel in site.translations[site.lang].hangouts.irc_channels %}
-                                    <div class="col-md-4 col-xs-12">
-                                        <a href="irc://chat.freenode.net/#{{ channel.channel }}">#{{ channel.channel }}</a>
-                                        <p>{{ channel.description }}</p>
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!-- end left two-thirds block-->
@@ -80,24 +65,26 @@ permalink: /community/hangouts/index.html
                             <p>{% t hangouts.mailing_list1 %}</p>
                             <p><a class="btn-link btn-auto btn-primary" href="https://lists.getmonero.org/postorius/lists/monero-announce.lists.getmonero.org/">{% t hangouts.subscribe %}</a></p>
                         </div>
-                        <div class="info-block">
-                            <div class="row">
-                                <div class="col">
-                                    <h2>{% t hangouts.stack_exchange %}</h2>
-                                    <p>{% t hangouts.stack_exchange_para %}</p>
-                                    <p><a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Why does monero have higher transaction fees than bitcoin?</a></p>
-                                    <p><a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">What does Monero's scaling roadmap look like?</a></p>
-                                    <p><a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">What cryptography primitives/concepts, other than the basic ones, does Monero use?</a></p>
-                                    <p><a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">How to extract data from local blockchain?</a></p>
-                                    <p><a href="https://monero.stackexchange.com/questions/4377/hiding-tcp-traffic-for-monero-miners">Hiding TCP traffic for Monero miners?</a></p>
-                                </div>
-                            </div>  
-                            <div class="row">
-                                <p><a href="https://monero.stackexchange.com" class="orange">{% t hangouts.stack_exchange_link %}</a></p>
-                            </div>
-                        </div>
                </div>
                <!-- end right one-third block-->
+           </div>
+           <div class="info-block">
+             <div class="raw">
+               <div class="col">
+                 <h2>{% t hangouts.irc %}</h2>
+              </div>
+              <div class="row start-xs">
+                <p>{% t hangouts.irc_para %}</p>
+             </div>
+             <div class="row irc">
+             {% for channel in site.translations[site.lang].hangouts.irc_channels %}
+               <div class="col-md-4 col-xs-12">
+                 <a href="irc://chat.freenode.net/#{{ channel.channel }}">#{{ channel.channel }}</a>
+                <p>{{ channel.description }}</p>
+              </div>
+             {% endfor %}
+             </div>
+             </div>
            </div>
         </section>
 </div>

@@ -115,9 +115,6 @@ hangouts:
   resources_para: Organik çalışma gruplarını desteklemek adına Monero, topluluğun buluşup proje planlayabileceği birçok kaynağa sahiptir. Mattermost'un en popüler Monero ilintili IRC kanallarına röleleri bile vardır.
   irc: IRC Kanalları
   irc_para: Monero topluluğu her biri farklı amaçlara sahip pek çok IRC kanalından faydalanmaktadır. Kimisi çalışır, kimisiyse sadece takılır. En popüler olanları aşağıda bulacaksınız.
-  stack_exchange: Stack Exchange
-  stack_exchange_para: Monero Stack Exchange sayfası soru sorup cevap almanın hızlı bir yoludur. Aşağıda bazı sıkça sorulan sorulara yüksek kalitedeki bazı soru/cevap çiftlerini bulacaksınız.
-  stack_exchange_link: Stack Exchange'i Ziyaret Edin
   irc_channels:
   - channel: monero
     description: Bu kanal Monero'ya ilişkin her şeyi tartışmak için kullanılır.
@@ -139,6 +136,8 @@ hangouts:
     description: Monero'nun diğer dillere yerelleştirilmesi.
   - channel: monero-hardware
     description: Monero'nuzu güvende tutmak için donanım cüzdanları yapımı.
+  - channel: monero-site
+    description: Where the development of this website is coordinated
   - channel: kovri
     description: Bu kanal Kovri'ye ilişkin her şeyi tartışmak için kullanılır.
   - channel: kovri-dev

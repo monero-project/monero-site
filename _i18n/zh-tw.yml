@@ -115,9 +115,6 @@ hangouts:
   resources_para: 為了支持有組織性的協作，門羅幣有幾種資源平台可以用聚會或是規劃專案，Mattermost 甚至有橋接了數個熱門的 Monero IRC 頻道。
   irc: IRC 頻道
   irc_para: 門羅幣社群利用了許多 IRC 頻道作為多種不同用途的溝通管道。有些是工作用，有些則是單純閒聊，你可以在下面找到幾個比較熱門的頻道。
-  stack_exchange: Stack Exchange
-  stack_exchange_para: 門羅幣的 Stack Exchange 是一個快速且容易提出問題與獲得解答的地方，在下面你可以看到一些高品質的常見問答。
-  stack_exchange_link: 造訪 Stack Exchange
   irc_channels:
   - channel: monero
     description: 這頻道是用來討論所有與門羅幣相關的主題。
@@ -139,6 +136,8 @@ hangouts:
     description: 將門羅幣專案翻譯至當地語言的工作溝通頻道。
   - channel: monero-hardware
     description: 打造硬體錢包以保護你的門羅幣安全。
+  - channel: monero-site
+    description: Where the development of this website is coordinated
   - channel: kovri
     description: 這是用來討論與 Kovri 專案相關的頻道。
   - channel: kovri-dev
