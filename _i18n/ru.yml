@@ -32,7 +32,7 @@ global:
   outdatedMax: Эта страница устарела. Мы рекомендуем вам не полагаться на нее и вместо этого перейти к
   outdatedVersion: английской версии
   outdatedMin: Эта страница была обновлена с момента перевода. Вы можете использовать данную версию, но она может быть неточной.
-  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
+  upgrade: Чтобы продолжить использование Monero, убедитесь, что ваше программное обеспечение обновлено от 30 ноября.
   moreinfo: Дополнительная информация
   lang_tag: "@lang_tag_ru"
 
@@ -115,6 +115,9 @@ hangouts:
   resources_para: В целях поддержки рабочих групп Monero располагает несколькими ресурсами, которые сообщество может использовать для организации и планирования проектов. Mattermost транслирует самые популярные каналы IRC, связанные с рабочими группами Monero.
   irc: Каналы IRC
   irc_para: Сообщество Monero использует большое множество IRC-каналов, каждый из которых используется для самых различных целей. В одних мы работаем, в других просто общаемся. Ниже вы найдете наиболее популярные из каналов.
+  mailing_list: Список рассылки
+  mailing_list1: Хотите получать важные обновления прямо на свой адрес электронной почты? Присоединяйтесь к нашим спискам рассылки!
+  subscribe: Подписаться
   irc_channels:
   - channel: monero
     description: Этот канал используется для обсуждения всего, что связано с Monero.
@@ -137,7 +140,7 @@ hangouts:
   - channel: monero-hardware
     description: Разработка аппаратных кошельков для Monero.
   - channel: monero-site
-    description: Where the development of this website is coordinated
+    description: Координирование разработки данного сайта
   - channel: kovri
     description: Этот канал используется для обсуждения всего, связанного с Kovri.
   - channel: kovri-dev
@@ -146,7 +149,7 @@ hangouts:
 merchants:
   translated: "yes"
   intro1: Продавцы стали ценить финансовую независимость, которую обеспечивает Monero. Ниже приведен список продавцов, о которых мы знаем, которые в настоящее время принимают к оплате Monero за их товары и услуги. Если компания больше не принимает Monero или вы хотите, чтобы ваш проект был включен в этот список, пожалуйста,
-  intro2:  сообщите нам об этом на GitHub 
+  intro2:  сообщите нам об этом на GitHub
   intro3: (выберите шаблон «Продавец» и заполните соответствующие разделы).
   disclaimer: |
     "Обратите внимание: эти ссылки предоставляются в целях ознакомления; они не являются полноценно одобренными со стороны сообщества Monero. Сообщество Monero не несет ответственности за законность или какое-либо содержание этих сайтов. Будьте предельно бдительны при совершении сделок. Ознакомьтесь с отзывами о конкретном сайте при совершении любых сделок или покупок."
@@ -167,68 +170,70 @@ team:
   thanks: Благодарность
 
 downloads:
-  translated: "no"
-  intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
-  choose: Choose your download
-  gui: GUI Wallet
-  cli: CLI Wallet
-  blockchain: Blockchain Bootstrap
-  blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can use the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM.
-  blockchainbutton: Download Blockchain
-  mobilelight: Mobile & Light Wallets
-  hardware: Hardware Wallets
-  gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds of users, but it is especially recommended for less technical people who want to quickly send and receive XMR.
-  simplemode: Simple mode
-  simplemode1: Created for less technical users who only want to use Monero in the easiest and quickest way possible. Open the wallet, automatically connect to a remote node, send/receive XMR, done!
-  advancedmode: Advanced mode
-  advancedmode1: With all the advanced features you could need. Ideal for seasoned Monero users who prefer to have full control of their wallet and node
-  merchantpage: Merchant page
-  merchantpage1: Receive XMR for your business, easily
-  hwcompatible: Compatible with hardware wallets
-  hwcompatible1: such Trezor and Ledger
-  fiatconv: in-app fiat conversion
-  fiatconv1: No longer a need to check the value of your XMR online
-  pruning: Blockchain pruning
-  pruning1: Not enough disk space? Just use pruning to download only 1/3 of the blockchain
-  langs: "<b>30+ languages</b> available"
-  cli_intro: The CLI wallet gives you the total control over your Monero node and funds. Highly customizable and includes various analysis tools, as well as an HTTP RPC and 0MQ interface.
-  currentversion: Current Version
-  sourcecode: Source Code
-  showissues: Show known issues for this release
-  noissues: This release has no known major issues
+  translated: "yes"
+  intro: На этой странице вы сможете загрузить последнюю версию программного обеспечения Monero, а также аппаратные, лёгкие и мобильные кошельки.
+  choose: Выберите свою ОС
+  gui: GUI кошелёк
+  cli: CLI кошелёк
+  blockchain: Автоматическая загрузка блокчейна
+  blockchain1: Если вы предпочитаете использовать автоматическую загрузку блокчейна, а не синхронизацию с нуля, можете воспользоваться последней версией автоматической загрузки. Тем не менее обычно гораздо быстрее получается именно синхронизироваться с нуля, а также для этого требуется меньший объём ОЗУ.
+  blockchainbutton: Загрузка блокчейна
+  mobilelight: Мобильные и лёгкие кошельки
+  hardware: Аппаратные кошельки
+  gui_intro: GUI кошелёк имеет дружелюбный и адаптируемый пользовательский интерфейс, но, прежде всего, мы рекомендуем использовать его технически неискушённым пользователям, желающим быстро отправлять и получать XMR.
+  simplemode: Простой режим
+  simplemode1: Предназначен для наименее технически подкованных пользователей, которые хотят, чтобы использование Monero было максимально простым и быстрым. Требуется просто открыть кошелёк, подсоединиться к удалённому узлу, отправить/получить XMR, и всё готово!
+  advancedmode: Продвинутый режим
+  advancedmode1: Предусматривает все продвинутые функции. Идеально подходит для опытных пользователей Monero, предпочитающих полностью контролировать свой кошелёк и соединение с узлом
+  merchantpage: Страница продавца
+  merchantpage1: Позволяет вам получать XMR за ваши товары или услуги
+  hwcompatible: Совместимость с аппаратными кошельками
+  hwcompatible1: такими как Trezor и Ledger
+  fiatconv: Возможность оценки в фиатной валюте внутри приложения
+  fiatconv1: Теперь, чтобы узнать стоимость ваших XMR в фиатной валюте, вам более не нужно получать актуальную информацию из других сервисов.
+  pruning: Обрезание блокчейна
+  pruning1: Недостаточно места на диске? Воспользуйтесь обрезанием и загрузите 1/3 от всего блокчейна.
+  langs: "Доступно более чем на <b>30+ языках</b>"
+  cli_intro: CLI кошелёк обеспечивает полный контроль над вашим узлом Monero и средствами. Его очень удобно адаптировать под себя, и он содержит самые различные средства анализа, а также HTTP и 0MQ интерфейс.
+  currentversion: Актуальная версия
+  sourcecode: Исходный код
+  showissues: Известные проблемы, связанные с данной версией
+  noissues: Данная версией не имеет каких-либо существенных проблем
   yesissues: >
-    This release has the following known issues:<br>
-    - Initial sync of the blockchain very slow. Will be fixed with a point release
-  helpsupport: Help and Support
-  helpsupport1: "A guide with an explanation of every section of the wallet is available:"
-  helpsupport2: "See latest release"
-  gui_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the GUI team at #monero-gui, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
-  cli_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the CLI team at #monero or #monero-dev, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
-  localremote: Local or remote node
-  localremote1: Use your own copy of the blockchain or a publicly available one
-  transacttor: Transactions over Tor/I2P
-  transacttor1: For an additional layer of privacy
-  bootstrapnode: Bootstrap node
-  bootstrapnode1: Use a remote node while downloading the blockchain locally, this will allow you to use Monero immediately and switch to your local node once it's completely synced
-  rpc: RPC Wallet and Daemon
-  rpc1: included in the archive
+    Этот выпуск имеет следующие проблемы:<br>
+    - Первоначальная синхронизация блокчейна занимает много времени. Будет исправлено в следующем плановом выпуске
+  helpsupport: Помощь и поддержка
+  helpsupport1: "Существует руководство, которое поможет разобраться с каждым разделом кошелька:"
+  helpsupport2: "Последнюю версию можно найти по этой ссылке"
+  gui_helpsupport: "Если у вас возникнут вопросы или вам понадобится больше информации, то вы можете просто связаться с сообществом. Команду разработчиков GUI можно найти, используя #monero-gui или же зайдя на страницу Hangouts, где выложен более полный список всех контактов и чатов"
+  cli_helpsupport: "Если у вас возникнут вопросы или вам понадобится больше информации, то вы можете просто связаться с сообществом. Команду разработчиков CLI можно найти при помощи #monero или #monero-dev или же зайдя на страницу Hangouts, где выложен более полный список всех контактов и чатов"
+  localremote: Локальный или удалённый узел
+  localremote1: Вы можете пользоваться собственной или общедоступной копией блокчейна
+  transacttor: Tor/I2P транзакции
+  transacttor1: Обеспечивает дополнительный уровень анонимности
+  bootstrapnode: Узел начальной загрузки
+  bootstrapnode1: Во время скачивания блокчейна будет использоваться удалённый узел. Это позволит вам сразу начать использовать Monero и переключиться на локальный узел, после его синхронизации
+  rpc: RPC кошелёк и демон
+  rpc1: включены в архив
   payforrpc: Pay-for-RPC
-  payforrpc1: A new feature that allows node operators to get rewarded when their node is used
-  verify: Verify
-  verify1: You are strongly advised to verify the hashes of the archive you downloaded. This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds. Always verify your downloads!
-  showhash: Show hashes to verify your download
-  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as canonical, with the signature checked against the appropriate GPG key
-  showhash2: in the source code
-  showhash3: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
-  hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
-  mobilelight1: The following are mobile or light wallets that are deemed safe by respected members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our
+  payforrpc1: Новая функция позволяет операторам узлов получать вознаграждение за использование их узлов
+  verify: Верификация
+  verify1: Настоятельно рекомендуется проверять хеши скачиваемого архива. Это позволяет убедиться в том, что скачанные вами файлы полностью совпадают с файлами, загруженными группой разработчиков Monero. Не стоит недооценивать важность этого шага, так как повреждённый архив может стать причиной потери ваших средств! Всегда следует проверять скачиваемые вами файлы!
+  verify2: Всегда проверяйте скачиваемые файлы!
+  showhash: Хеши, необходимые для проверки скачиваемых файлов
+  showhash1: Хэши SHA256 перечислены для удобства, список хэшей, подписанный GPG, находится по ссылке
+  showhash2: и должен рассматриваться как канонический, с проверкой подписи соответствующим GPG ключем
+  showhash3:  в исходном коде
+  showhash4: "Доступны два руководства, которые помогут вам в этом процессе проверки:"
+  hardware1: Сообщество Monero занимается финансированием разработки
+  hardware2: унифицированного аппаратного кошелька (Kastelo)
+  hardware3: которая продолжается в настоящий момент. Кроме того, начиная с версий CLI 0.12.1 и GUI 0.12.3, Ledger
+  hardware4: интегрирует Monero в свои аппаратные кошельки.
+  hardware5: Trezor модель T поддерживает Monero, начиная с версии 0.14.1.
+  mobilelight1: далее указаны мобильные или лёгкие кошельки, которые были одобрены как безопасные уважаемыми членами сообщества. Если где-то существует кошелёк, которого нет в этом списке, вы можете попросить сообщество проверить его. Посетите нашу страницу
   mobilelight2: Hangouts
-  mobilelight3:  page to see where we are.
-  installer: Installer
+  mobilelight3: чтобы узнать о нас больше
+  installer: Установщик
 
 monero-project:
   translated: "yes"
@@ -253,24 +258,24 @@ press-kit:
   symbol_file: Символ в формате .ai
   logo_file: Логотип в формате .ai
   documents:
-  - category: Press Documentation
+  - category: Документация для прессы
     publications:
-    - name: "Quick-Facts Sheet"
+    - name: "Быстрые факты"
       url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts.pdf"
       abstract: >
-        A quick and easy to read document to know everything about Monero: history, key differentiating factors, technical fundamentals, and features in development.<br>
-        See <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> website for more information.
+        Простой и удобный для чтения документ, в котором вы можете узнать основную информацию о Monero: историю, интересные факты, основные технические аспекты, характеристики и особенности разработки и т. д.<br>
+        Посетите веб-сайт <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> для получения дополнительной информации.
   marketing:
-  - category: Marketing Material
+  - category: Рекламный материал
     publications:
-    - name: "The 'Don't buy Monero' sticker"
+    - name: "Стикер 'Не покупайте Monero'"
       url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
       abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
+        Теперь у вас есть возможность распространять Monero с помощью стикеров. Доступно на различных языках и в нескольких форматах (включая векторные изображения).
+    - name: Инструменты партизанского маркетинга
+      url_file: "https://www.monerooutreach.org/%D0%A0%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7%D1%8B/%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3%D0%B0.php"
       abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+        Документ, созданный рабочей группой Monero Outreach и содержащий материалы и советы для эффективной кампании партизанского маркетинга.
 
 accepting:
   translated: "yes"
@@ -381,7 +386,7 @@ mining:
   benchmarking_para1: Смотрите здесь
   benchmarking_para2: полный список GPU /CPU оборудования для майнинга и их соответствующий хешрейт.
   software: Программное обеспечение для майнинга
-  software_para: Обратите внимание, что некоторые майнеры могут иметь сборы для разработчика за ипользование их программного обеспечения.
+  software_para: Обратите внимание, что некоторые майнеры имеют сборы для разработчика за ипользование их программного обеспечения.
 
 using:
   translated: "yes"
@@ -463,7 +468,6 @@ developer-guides:
   rpc: Документация по RPC
   daemonrpc: Документация по демону RPC
   walletrpc: Документация по кошельку RPC
-  soon: Больше руководств и документации в ближайшее время...
 
 user-guides:
   translated: "yes"
@@ -492,7 +496,7 @@ user-guides:
   nicehash: Как заниматься майнингом Monero, не имея оборудования для майнинга
   ledger-wallet-cli: Как создать Ledger Monero кошелек с помощью CLI (monero-wallet-cli)
   multisig-messaging-system: Multisig-транзакции с MMS и CLI кошельком
-  tor_wallet: Connecting your local wallet to your own daemon over Tor
+  tor_wallet: Подключение вашего локального кошелька к демону через Tor
 
 roadmap:
   translated: "yes"
