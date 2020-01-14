@@ -507,6 +507,9 @@ research-lab:
   abstract: نبذه مختصره
   introduction: المقدمه
   read-paper: قراءة البحث
+  summary: Summary
+  mrlhtp: Understanding ge_fromfe_frombytes_vartime
+  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into elliptic curve points. It is useful for creating key images, in particular. This document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime() function) into mathematical expressions.
   mrl1: ملاحظه علي التتبع في برتوكول كريبتونوت ( CryptoNote )  2.0
   mrl1_abstract: هذه النشره البحثيه تصف هجوماً جديراً بالإهتمام في نظام إخفاء الهويه القائم علي توقيعات-الطوق. نستخدم بروتوكول كريبتونوت (CryptoNote) 2.0 الذي تم نشره ظاهرياً بواسطه نيكولاس فان سابريرهاجن في 2012. لقد تم إثبات سابقًا أن التعتيم علي إمكانية التتبع لزوج مفتاح لمرة واحدة يعتمد على عدم إمكانية الوصول إلى كافة المفاتيح المستخدمة في إنشاء توقيع-الطوق. ويتيح ذلك إمكانيه التتبع بين توقيعات-الطوق, مسبباً خساره فادحه في التعتيم علي التتبع في الشبكه كلها إذا تم إختيار عناصر ضعيفه او إذ كان المهاجم يمتلك جزء كبير من الشبكه. التوقعيات مازلات تستخدم مره واحده, ولذلك, اي هجوم مماثل لن يقوم بالضروره بإنتهاك خصوصيه المستخدمين. وبالرغم من هذا, يمكن لمثل هذا الهجوم أن يضعف مقاومه بروتوكول كريبتونوت (CryptoNote) أمام تحليل سلسله الكتل. هذه النشره البحثيه لم تخضع للمراجعه, ولا تعكس سوي نتائج التحقيق الداخلي.
   mrl2: التزييف في العملات الرقميه التي تستخدم بروتوكول كريبتونوت (CryptoNote) بإستخدام ثغره شجره ميركل (Merkle Tree)

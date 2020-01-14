@@ -510,6 +510,9 @@ research-lab:
   abstract: Résumé
   introduction: Introduction
   read-paper: Lire le rapport complet (en Anglais)
+  summary: Summary
+  mrlhtp: Understanding ge_fromfe_frombytes_vartime
+  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into elliptic curve points. It is useful for creating key images, in particular. This document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime() function) into mathematical expressions.
   mrl1: Rapport des réaction de la chaine à la traçabilité dans CryptoNote 2.0
   mrl1_abstract: Ce bulletin de recherche décrit une attaque plausible sur un système anonyme basé sur les signatures de cercle. Nous nous appuyons sur le protocol de cryptomonnaie CryptoNote 2.0 apparemment publié par Nicolas van Saberhagen en 2012. Il a déjà été démontré que l'intraçabilité obscurcissant une pair de clefs à usage unique peut être dépendant de l'intraçabilité de toutes les clefs utilisées dans la composition de cette signature de cercle. Cela rend possible des réactions en chaine de la traçabilité entre les signatures de cercle, pouvant causer une réduction drastique de l'intraçabilité de l'ensemble du réseau si les paramètres sont piètrement choisis et si un attaquant possède un pourcentage suffisant du réseau. Les signatures sont cependant toujours à usage unique, et une telle attaque ne permettrait pas nécessairement de violer l'anonymat des utilisateurs. Cependant, une telle attaque pourrait potentiellement réduire la résistance dont fait preuve CryptoNote contre l'analyse de la chaîne de blocs. Ce bulletin de recherche n'a pas fait l'objet d'un examen par des tiers, et ne reflète que les résultats d'investigations internes.
   mrl2: Contrefaçon par l'exploitation de l'arbre de Merkle dans des monnaies virtuelles employant le protocole CryptoNote.
