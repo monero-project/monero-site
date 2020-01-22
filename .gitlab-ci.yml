@@ -2,6 +2,9 @@ image: ruby:2.5
 stages:
   - build
 
+variables:
+  LANG: "C.UTF-8"
+
 before_script:
   - gem install bundler
 
