@@ -587,8 +587,8 @@ library:
       abstract: >
         Monero'nun kapsamlı kavramsal (ve teknik) bir açıklaması.<br>
         Temel cebir ve bir sayının 'bit temsili' gibi basit bilgisayar bilimi kavramları bilen herkese sadece Monero'nun derin ve kapsamlı bir seviyede nasıl işlediğini değil, ayrıca kriptografinin ne kadar kullanışlı ve güzel olabileceğini öğretmeye çabalıyoruz.
-    - name: "Monero'da Ustalaşmak (Önizleme)"
-      file: "Mastering-Monero-Preview.pdf"
+    - name: "Monero'da Ustalaşmak"
+      file: "https://masteringmonero.com/free-download.html"
       abstract: >
         Monero'nun karışık görünen dünyasına bir rehber.<br>
         Şunları içerir:

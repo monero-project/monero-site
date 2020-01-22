@@ -588,8 +588,8 @@ library:
       abstract: >
         Een uitgebreide conceptuele en technische uitleg van Monero.<br>
         We proberen voor iedereen die elementaire algebra en eenvoudige informaticabegrippen zoals de weergave van cijfers in bits begrijpt, diepgaand en compleet uit te leggen hoe Monero werkt en hoe nuttig en mooi cryptografie kan zijn.
-    - name: "Mastering Monero (preview)"
-      file: "Mastering-Monero-Preview.pdf"
+    - name: "Mastering Monero"
+      file: "https://masteringmonero.com/free-download.html"
       abstract: >
         Een handleiding tot de schijnbaar ingewikkelde wereld van Monero.<br>
         Met onder meer:

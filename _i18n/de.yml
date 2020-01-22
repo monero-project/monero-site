@@ -587,8 +587,8 @@ library:
       abstract: >
         Eine verständliche Erklärung des Konzeptes (und der Technik) hinter Monero<br>
         Unser Wunsch ist es, jedem mit einem Grundverständnis von Algebra und Grundlagen der Computertechnik, wie beispielsweise der Repräsentation von Zahlen im Binärsystem, nicht nur verständlich beizubringen, wie Monero im Detail funktioniert, sondern auch, wie nützlich und schön Kryptographie sein kann.
-    - name: "Mastering Monero (Vorschau)"
-      file: "Mastering-Monero-Preview.pdf"
+    - name: "Mastering Monero"
+      file: "https://masteringmonero.com/free-download.html"
       abstract: >
         Ein Begleiter durch die scheinbar komplizierte Welt Moneros<br>
         Er enthält:

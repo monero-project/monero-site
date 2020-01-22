@@ -14,7 +14,11 @@ permalink: /library/index.html
         <h2>{{ book.category }}</h2>
         <div>
           {% for publication in book.publications %}
-            <h3><a href="{{ site.baseurl_root }}/library/{{ publication.file }}">{{ publication.name }}</a></h3>
+            {% if publication.file contains 'https' %}
+              <h3><a href="{{ publication.file }}">{{ publication.name }}</a></h3>
+            {% else %}
+              <h3><a href="{{ site.baseurl_root }}/library/{{ publication.file }}">{{ publication.name }}</a></h3>
+            {% endif %}
             <p>{{ publication.abstract }}</p>
           {% endfor %}
         </div>

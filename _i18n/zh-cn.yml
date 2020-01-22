@@ -586,8 +586,8 @@ library:
       abstract: >
         门罗币全面的技术和概念层面的解释。<br>
         我们在此书中将协助您从最基本的代数和简单的计算机概念学起，比如一个数字如何用比特的方式进行表达。我们还会协助您从更深和更全面的角度理解门罗币是如何运作的，同时我们也希望您能在此书中体会到加密算法的有用之处，并感受到这不仅仅是计算机技术，更是一门美妙且精确的艺术。
-    - name: "精通门罗币(预览版)"
-      file: "Mastering-Monero-Preview.pdf"
+    - name: "精通门罗币"
+      file: "https://masteringmonero.com/free-download.html"
       abstract: >
         一本能让你在看似复杂的门罗世界里畅游无阻的指南。<br>
         其中包括:
