@@ -4,51 +4,49 @@
 - [What you'll need](#what-youll-need)
 - [General change recommendations](#general-change-recommendations)
 - [housekeeping](#housekeeping)
+- [How to make a blog post](#how-to-make-a-blog-post)
+- [Updates on User Guides](#updates-on-user-guides)
 - [Updates on User Guides](#updates-on-user-guides)
 - [How to make a blog post](#how-to-make-a-blog-post)
-- [How to make a User Guide](#how-to-make-a-user-Guide)
-- [How to make a Moneropedia entry](#how-to-make-a-moneropedia-entry)
+- [How to make a User Guide](#how-to-make-a-user-guide)
+- [How to make a Moneropedia Entry](#how-to-make-a-moneropedia-entry)
 - [How to update the Team page](#how-to-update-the-team-page)
-- [How to make an Event](#how-to-make-an-event)
 - [How to update the Roadmap](#how-to-update-the-roadmap)
 - [How to add a new Merchant](#how-to-add-a-new-merchant)
 - [How to add a question to the FAQ](#how-to-add-a-question-to-the-faq)
 - [How to add a publication to the Library](#how-to-add-a-publication-to-the-library)
-- [Translations](#translations)
-  - [How to translate a page](#how-to-translate-a-page)
-  - [How to add a new language](#how-to-add-a-new-language)
+- [How to translate a page](#how-to-translate-a-page)
+- [How to add a new language](#how-to-add-a-new-language)
 
 ## Introduction
 This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in.
 Feel free to skip down to a relevant section if you already know what you need.
 
-If you need support about something related to the website, plese join `#monero-site` on Freenode (also relayed on Matrix and mattermost). For general info about Monero join `#monero`. We'll do whatever we can to help you.
+If you need support about something related to the website, plese join `#monero-site` [Freenode/IRC](irc://chat.freenode.net/#monero-site), [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org) and MatterMost. For general info about Monero join `#monero`. We'll do whatever we can to help you.
 
 ## What you'll need
 
-* Jekyll: [getmonero.org](https://getmonero.org/) is made using a simple, static website generator called [Jekyll](https://jekyllrb.com/). You will need it installed on your system to test any changes that you made. If you're using Windows, you will want to check out [this site](http://jekyll-windows.juthilo.com/) for instructions on how to get Jekyll working on your system. If you're using a Linux-based system you can just follow the instructions on the website to get up and going:
-  * Install Ruby
+* Jekyll: [getmonero.org](https://getmonero.org/) is made using a simple, static website generator called [Jekyll](https://jekyllrb.com/). You will need it installed on your system to test any changes that you made. Follow the instructions on the website to get up and going:
+  * Install Ruby dependencies as suggested [in the Jekyll documentation](https://jekyllrb.com/docs/installation/)
   * Install Bundler: `gem install bundler`
   * Install Jekyll with all dependencies (run from the project directory): `bundle`
 
-* GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com) or [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects)and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register on GitLab and fork the [Monero Website repository](https://repo.getmonero.org/monero-project/monero-site).
-
-* Markdown experience: To write pages, you're going to need to know how to use Markdown. It's basically an in-between language that enables people who don't know HTML to just write, and it will be compiled into HTML for you. You can find a great Markdown cheat sheet with examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). IF you need more help, Google and YouTube are great resources.
+* GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com/monero-project) or [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register on GitLab and fork the [Monero Website repository](https://repo.getmonero.org/monero-project/monero-site).
 
 *Note: If you're confused, feel free to click other files in the same directory (folder) that you are in for the step that you are on to see some working examples. Compare them to the instructions and you should understand better.*
 
 Once you have the above list of things, it's typically a good idea to build the website from your local computer to make sure it works before you make any changes. To do this, complete the following steps:
 
 1. Navigate to your local `monero-site` repository.
-2. Serve the website: `bundle exec jekyll serve --baseurl ''`
+2. Serve the website: `bundle exec jekyll serve --baseurl ''`. If you want, you can speedup thi process by loading only the last blog post instead of all of them. Simply add `--limit_posts 1` to the command above. The resulting command will be `bundle exec jekyll serve --limit_posts 1 --baseurl ''`.
 3. Open a browser and go to [http://127.0.0.1:4000](http://127.0.0.1:4000).
 4. If all went well, you should see the Monero website and you're ready to make changes.
 
 
 ## General change recommendations
-The average Monero user that will want to contribute to the website should probably start looking for issues labelled [⛑️ help needed](https://repo.getmonero.org/monero-project/monero-site/issues?label_name%5B%5D=%E2%9B%91%EF%B8%8F++help+needed) or making blog posts, user guides or Moneropedia entries; all of which are covered in this document. If this is all you want to do, don't worry, it's actually not a daunting task at all. If you are not well versed in web development however, it is not recommended you try to do anything beyond that.
+The average Monero user that will want to contribute to the website should probably start looking for issues labelled [⛑️ help needed](https://repo.getmonero.org/monero-project/monero-site/issues?label_name%5B%5D=%E2%9B%91%EF%B8%8F++help+needed) or making blog posts, user guides or Moneropedia entries; all of which are covered in this document. If this is all you want to do, don't worry, it's actually not a daunting task at all.
 
-If you are a web developer and would like to make large macro-level changes, it would be best to get in contact with rehrar and the developers on `#monero-site` or `#monero-dev` (IRC/Freenode, MatterMost, Matrix). The HTML/CSS framework is custom, though quite easy to use for a seasoned developer. Still, there are some pages that are more complicated than others and would require fair amounts of styling changes should the structure change significantly.
+If you are a web developer and would like to make large macro-level changes, it would be best to open an issue first or to get in contact with the developers on `#monero-site` (IRC/Freenode, MatterMost, Matrix).
 
 This website is completely open-source however and anything and everything is available for changing should the community deem it necessary.
 
@@ -57,14 +55,14 @@ Every section from here on out will talk about how to make a specific type of we
 A few random points of note:
 
 - After [a discussion](https://repo.getmonero.org/monero-project/monero-site/issues/982), the community decided to include only open source wallets in the 'Downloads' section of the website. Requests to add closed source wallets to that page will be rejected.
-- All external links must have http:// or https:// in front of them or they will not redirect properly.
-- If you want to add a new page to the navigation, you should go to ALL LANGUAGES in the `_data/lang` folder including `template` and add the page.
+- All external links must have `https://` in front of them or they will not redirect properly.
+- If you want to add a new page to the navigation, you should go to ALL LANGUAGES in the `_data/lang` folder and add the page.
 - It is strongly strongly STRONGLY encouraged that if you make a change, you - at the minimum - test it on your local machine before submitting a PR. Sometimes unexpected things may happen due to a change. If you change a page, check the whole page on multiple screen sizes and browsers to make sure there wasn't any collateral damage.
 
 ## Housekeeping
 
 ### Editing the Site
-When you make an edit to ANY page on the English language of this website, PLEASE copy your changes into the corresponding `/_i18n/template/` file as well.
+When you make an edit to ANY page on the English language of this website, PLEASE copy your changes into the corresponding language files as well.
 
 The Monero Localization workgroup will do their best to keep tabs on all changes of the site, but it'd be nice to notify them that you've changed a page so they can make sure the equivalent pages are changed accordingly in the other languages.
 
@@ -74,7 +72,7 @@ We ask that if you open an issue on the site that you remain available for clari
 ### Pull Requests
 Contributors should use [issue keywords](https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html) to make it easier for maintainers to close issues when they merge. Include close, closes, closed, fix, fixes, fixed, resolve, resolves, resolved, etc in the commit message or pull request description, so that the correct issue can be closed if your PR is merged. (Example: 'fixes #1234' could close Issue 1234 when merged.)
 
-Pull requests allow others to make comments or review your changes to the site. We ask that you remain available to comment or make changes to your PR. Pull requests with pending changes for more than 30 days will be closed and need to be resubmitted in the future. Sometimes someone else's changes might make your changes conflict with the current site. If that happens you may need to rebase your PR.
+Pull requests allow others to make comments or review your changes to the site. We ask that you remain available to comment or make changes to your PR. Sometimes someone else's changes might make your changes conflict with the current site. If that happens you may need to rebase your PR.
 
 ## Updates on User Guides
 User guides and developer guides may need regular updates, either to fix typos, to add explanations regarding new features, to update screenshots, and so on.
@@ -147,7 +145,6 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 ### 1. Quick Start
 
 * Create file in /resources/user-guides with an .md ending and no spaces in filename.
-* File content as in 5.3
 * Create file in /\_i18n/en/resources/user-guides with the exact same filename as above ending in .md
 * Write User Guide
 * Add versioning snippet
@@ -264,8 +261,6 @@ summary: "PUT SUMMARY OF YOUR ENTRY HERE IN QUOTES"
 {% include untranslated.html %}
 ```
 
-If you want to translate in your native language, go to the 14.3.2 section below to read about specificities.
-
 ### 5. Build/Test
 Build your website using `jekyll serve` if it's not rebuilding automatically and test check the link to your entry is appearing on the alphabetical list of Moneropedia entries and that it leads to your entry when clicked. Test your Moneropedia entry in the browser and contact rehrar if there are any bugs.
 
@@ -296,42 +291,6 @@ Save the file.
 Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in the `team.yml` file back in 8.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
 
 If the build is successful, go to the Team page `/community/team/` and check to see that the contributor is showing up in the correct place. Click their GitHub or GitLab link (if applicable) and make sure it redirects correctly. Test the page and let rehrar know if there are any bugs.
-
-### 3. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
-
-## How to make an Event
-
-### 1. Edit the .yml file
-Navigate to the `/_data/` folder and open `events.yml`. You will notice a  list separated by hyphenated `-event` tags.
-
-**DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
-
-Find the area that you want to update and copy the code below:
-```
-- event:
-  where:
-  when:
-  description:
-  link:
-```
-and paste it IN THE CHRONOLOGICAL ORDER that it will be in. So if there is an event happening before yours, make sure it is higher up than yours. If there is an event happening AFTER yours, make sure it is after your event.
-
-Fill in the data as follows:
-* `event:` The name of the event goes here as well as the date. The recommended format is: `Event Name - January 1st, 2000`
-* `where:` Where the event will take place. Venue name and address are recommended.
-* `when:` Date and time
-* `description:` Description of the happenings of your event
-* `link:` The website of your event (if applicable, this can be left blank and everything will be ok). This link must have http:// at the beginning if it is an external link.
-
-**Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
-
-Save the file.
-
-### 2. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in the `events.yml` file back in 9.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
-
-If the build is successful, go to the Events page `/community/events/` and check to see that the event is showing up in the correct place. Click their Event url link (if applicable) and make sure it redirects correctly. Test the page and let rehrar know if there are any bugs.
 
 ### 3. Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
@@ -484,10 +443,8 @@ If the build is successful, go to the Library page `/library/` and check to see 
 ### 4. Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
-## Translations
-In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://taiga.getmonero.org/project/erciccione-monero-localization/) who coordinate and give support to translators-volunteers. You can find an updated guide and an example of the workflow we use on our [Guide on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/wiki/translating-monero-website) (frequently updated), also, for live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
-
 ## How to translate a page
+In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. You can find an updated guide and an example of the workflow we use on our [Guide on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/wiki/translating-monero-website), also, for live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
 
 ### 1. Quickstart
 * Navigate to the correct language in the /i18n folder and find the page you wish to translate
@@ -500,7 +457,7 @@ In this section you'll find the info you need to translate a page and add a new 
 Go to the /i18n folder and find the two letter code for the language you wish to translate for. Enter that folder and find the file you wish to translate. The filenames are all in English and MUST NOT BE CHANGED.
 
 ### 3. Translate the file
-Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip step 13.4. If during testing, the page appears different from the original English page (besides the translated text, of course), you did something wrong and may have to start again.
+Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip it. If during testing, the page appears different from the original English page (besides the translated text, of course), you did something wrong and may have to start again.
 
 #### 3.1. Notes for Moneropedia Entries
 Moneropedia entries have two specificities:
@@ -509,7 +466,7 @@ Moneropedia entries have two specificities:
 Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
 This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
 
-* The old *untranslated* snippet must be removed, therefore the next section 14.4 is irrelevant here.
+* The old *untranslated* snippet must be removed, therefore the next section is irrelevant here.
 
 Finally, your entry should go from:
 ```
@@ -554,8 +511,8 @@ languages: ["en", "es", "NEW LANG HERE"]
 Save and exit the file.
 
 ### 2. \_data folder
-Navigate to the `_data/lang` folder and copy the `template` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
-**The template folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
+Navigate to the `_data/lang` folder and copy the `en` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
+**The 'en' folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
 
 Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
 
@@ -566,7 +523,7 @@ Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicat
 Enter the .yml file and translate everything there.
 
 ### 4. Translate
-If you will be translating the content, please refer to section 13.0 in this README for instructions on translating pages.
+If you will be translating the content, please refer to section '[How to translate a page](#how-to-translate-a-page)' in this README for instructions on translating pages.
 
 ### 5. Build/Test
 Build your website using `jekyll serve`. If the build is successful, navigate to any page on the site and check to make sure that your language is appearing in the dropdown for languages on both mobile and desktop.
