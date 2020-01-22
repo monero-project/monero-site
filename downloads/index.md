@@ -224,7 +224,7 @@ permalink: /downloads/index.html
                             <div class="col-md-12 col-sm-12 col-xs-12">
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p>{% t downloads.blockchain1 %}</p><br><!-- Add link to user guide with instractions about how to use the bootstrap node-->
+                                <p>{% t downloads.blockchain1 %} {% t downloads.blockchain2 %} <a href="{{site.baseurl}}/resources/user-guides/importing_blockchain.html">"{% t downloads.blockchain3 %}"</a> {% t downloads.blockchain4 %}</p><br>
                                 <div class="center-xs"><a class="btn-link btn-auto btn-primary" href="https://downloads.getmonero.org/blockchain.raw">{% t downloads.blockchainbutton %}</a></div>
                             </div>
                         </div>

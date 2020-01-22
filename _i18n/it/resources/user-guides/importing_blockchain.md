@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Importare la Blockchain nel portafoglio Monero GUI (Windows)
-
 ### Passo 1
 
 Scarica il file della Blockchain attuale da https://downloads.getmonero.org/blockchain.raw; puoi saltare questo passo se vuoi importare la Blockchain da un'altra fonte.
