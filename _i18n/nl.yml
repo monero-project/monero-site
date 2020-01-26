@@ -509,6 +509,9 @@ research-lab:
   abstract: Samenvatting
   introduction: Inleiding
   read-paper: Paper lezen
+  summary: Summary
+  mrlhtp: Understanding ge_fromfe_frombytes_vartime
+  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into elliptic curve points. It is useful for creating key images, in particular. This document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime() function) into mathematical expressions.
   mrl1: A Note on Chain Reactions in Traceability in CryptoNote 2.0
   mrl1_abstract: Dit onderzoeksbulletin beschrijft een plausibele aanval op een anonimiteitssysteem dat is gebaseerd op ring-handtekeningen. Als aanleiding gebruiken we het cryptovaluta-protocol CryptoNote 2.0, dat onder de naam Nicolas van Saberhagen is gepubliceerd, waarbij 2012 als jaar van publicatie is vermeld. Eerder is aangetoond dat de onvolgbaarheid waarmee een eenmalig sleutelpaar wordt verborgen kan afhangen van de onvolgbaarheid van alle sleutels waarmee die ring-handtekening wordt gemaakt. Hierdoor zou er een kettingreactie van volgbaarheid tussen ring-handtekeningen kunnen optreden, met als gevolg een gevaarlijk verminderde onvolgbaarheid in het hele netwerk als parameters slecht zijn gekozen en een aanvaller een bepaald percentage van het netwerk bezit. De handtekeningen zijn echter nog steeds eenmalig, dus een dergelijke aanval is niet per se schadelijk voor de anonimiteit van gebruikers. Maar zo'n aanval zou CryptoNote wel minder bestendig tegen blockchain-analyse kunnen maken. Dit onderzoeksbulletin is niet onderworpen aan peer review en geeft alleen de resultaten van intern onderzoek weer.
   mrl2: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing the CryptoNote Protocol
