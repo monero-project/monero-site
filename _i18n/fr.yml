@@ -74,7 +74,6 @@ index:
   page_title: "Monero - sécurisé, confidentiel, intracable"
 
 home:
-  translated: "yes"
   heading2: Monnaie Digitale Confidentielle
   monero_is_cash: Monero est une monnaie pour un monde connecté. C'est rapide, confidentiel et sécurisé. Avec Monero, vous êtes votre propre banque. Vous pouvez le dépenser en toute sécurité, en sachant que personne ne peut voir votre solde ni suivre votre activité.
   get_started: Commencer
@@ -109,7 +108,6 @@ home:
   faq_button: Lire les réponses
 
 hangouts:
-  translated: "yes"
   intro: La communauté Monero est diverse et variée. Nous venons de toutes parts, mais nous avons certainement nos lieux de rencontres favoris. Vous trouverez la plupart d'entre eux ci-dessous. Rejoignez-nous!
   resources: Groupes de Travail
   resources_para: Afin de maintenir des groupes de travail organiques, Monero dispose de plusieurs ressources que la communauté peut utiliser pour se retrouver et planifier des projets. Mattermost a même des relais dans les canaux IRC liés à Monero les plus populaires.
@@ -146,18 +144,15 @@ hangouts:
     description: Ce canal permet à la communauté francophone de Monero de se réunir et d'échanger.
 
 merchants:
-  translated: "yes"
   intro1: Toute sorte de commerçants ont fini par apprécier la confidentialité financière qu'apporte Monero. Vous trouverez ci-dessous une liste de commerçants dont nous savons qu'ils acceptent Monero comme moyen de paiement pour leurs biens ou leurs services. Si une société a cessé d'accepter Monero, ou bien si vous souhaitez y faire figurer votre affaire, merci
   intro2:  d'ouvrir un problème sur GitLab pour nous le faire savoir 
   intro3: 
   disclaimer: Notez que les liens sont fournis à titre informatif uniquement. Aucun des produits, services ou opinions des compagnies, sociétés et individus cités ne sont approuvés par la communauté en raison de leur présence dans cette liste. La communauté Monero n'assume aucune responsabilité quant à l'exactitude, la légalité ou le contenu de ces sites externes. Pour des questions concernant leurs contenus, contactez directement ces sites externes. Comme toujours, seul l'acheteur est responsable de son achat (acheteurs, méfiez-vous). C'est à vous de faire vos propres recherches. Faites toujours preuve de bon sens lorsque vous effectuez des achats en ligne.
 
 sponsorships:
-  translated: "yes"
   intro: Les entreprises suivantes ont soutenues le projet Monero et son objectif d'apporter au monde la confidentialité financière. Nous ne pourrions être plus fiers de leurs contributions. Si vous souhaitez sponsoriser Monero et être cité sur cette page, merci de nous contacter par e-mail à dev@getmonero.org.
 
 team:
-  translated: "yes"
   core: Noyau
   developers: Développeurs
   developers_para1: Le Projet Monero a déjà eu plus de 500 contributeurs sur sa durée. Pour une liste exhaustive, consultez la page
@@ -168,7 +163,6 @@ team:
   thanks: Remerciements Particuliers
 
 downloads:
-  translated: "no"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
@@ -232,14 +226,12 @@ downloads:
   installer: Installer
 
 monero-project:
-  translated: "yes"
   kovri: Le projet Kovri utilise un chiffrement de bout-en-bout, si bien que ni l'émetteur ni le destinataire d'une transaction Monero n'ont à révéler leur adresse IP à l'autre côté, ni aux observateurs tiers (la chaîne de blocs). Ceci est réalisé en utilisant la même technologie qui fait fonctionner le dark net, i2p (Invisible Internet Protocol). Ce projet est actuellement en cours de développement actif et intensif, et n'est pour le moment pas encore intégré à Monero.
   kovri_button: Visiter le site de Kovri
   openalias: Le projet OpenAlias simplifie les paiements en cryptomonnaie en fournissant des FQDNs (Fully Qualified Domain Names, p.e. example.openalias.org) pour les adresses de portefeuilles Monero d'une manière qui garantit que la confidentialité de chacun est sécurisée. Ce projet est bien avancé et a déjà été implémenté dans de nombreux portefeuilles Monero.
   openalias_button: Visiter le site d'OpenAlias
 
 press-kit:
-  translated: "yes"
   intro1: Vous trouverez ci-dessous tous les symboles et logos Monero. Vous pouvez choisir la taille qui vous convient, ou télécharger le fichier au format .ai pour jouer avec le logo vous-même.
   intro2: Notez que seul l'option fond blanc dispose d'un fond blanc derrière le symbole Monero UNIQUEMENT, et non derrière l'image entière.
   intro3: Enfin, vous pouvez télécharger tous les éléments de cette page dans un seul fichier zip en cliquant
@@ -274,7 +266,6 @@ press-kit:
         A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
-  translated: "yes"
   title: Instructions pour l'Interface en Ligne de Commande (CLI)
   basics: Les Bases
   basics_para1: Monero fonctionne légèrement différemment de ce dont vous pourriez avoir l'habitude avec les autres @cryptocurrencies. Dans le cas d'une monnaie digitale comme Bitcoin ou ses nombreux dérivés, les systèmes de paiements des commerçants devront habituellement créer une nouvelle @address de destinataire pour chaque paiement ou chaque utilisateur.
@@ -303,7 +294,6 @@ accepting:
   scanning_list4: Supprimer les doublons en fonction des hachages de transaction déjà reçus et traités
 
 contributing:
-  translated: "yes"
   intro: Monero est un projet open-source, emmené par sa communauté. Ci-dessous se trouvent différents moyens pour soutenir le projet.
   network: Soutenir le Réseau
   develop: Développer
@@ -333,7 +323,6 @@ contributing:
   donate-other_para2: pour un autre moyen de don ou si vous souhaitez devenir un sponsor pour le projet Monero.
 
 faq:
-  translated: "yes"
   q1: Pourquoi Monero a de la valeur ?
   a1: Monero a de la valeur car des personnes veulent en acheter. Si personne ne voulait acheter Monero, alors il n'aurait pas de valeur. Le prix du Monero augmente lorsque la demande dépasse l'offre et diminue lorsque l'offre dépasse la demande.
   q2: Comment puis-je obtenir du Monero ?
@@ -367,7 +356,6 @@ faq:
   a14: L'anonymat à 100% n'existe pas. Sans rien ajouter, votre niveau d'anonymat est la quantité de personnes qui utilisent Monero. Certaines personnes n'utilisent pas Monero. Monero peut aussi avoir des bugs. Même si ce n'est pas le cas, il peut exister des moyens de déduire certaines informations par le biais des couches de confidentialité de Monero, maintenant ou plus tard. Les attaques ne font que s'améliorer. Si vous portez une ceinture de sécurité, vous pouvez toujours mourir dans un accident de voiture. Faites preuve de bon sens, de prudence et de défense approfondit.
 
 mining:
-  translated: "yes"
   intro1: Monero est une cryptomonnaie qui s'appuie sur une extraction minière par preuve de travail (Proof-of-Work) pour permettre un consensus distribué. Vous trouvez ci-dessous des ressources et des informations vous permettant de commencer à miner.
   intro2: Le projet Monero ne plébiscite aucun pool, logiciel ou matériel particulier. Le contenu suivant n'est fournit qu'à titre purement informatif.
   support: Assistance
@@ -385,7 +373,6 @@ mining:
   software_para: Veuillez noter que certains mineurs pourraient soustraire des frais de développement.
 
 using:
-  translated: "yes"
   intro: Les transactions sont simples avec Monero. Cette page est conçue pour permettre aux utilisateurs de les réaliser.
   learn: 1. Apprendre
   learn_para1: Monero est une cryptomonnaie sécurisée, confidentielle et intraçable. Les développeurs et la communauté s'engagent à protéger ces valeurs. Pour en savoir plus, lisez la page
@@ -420,7 +407,6 @@ using:
   transact_para2: Commerçants en avoir une liste.
 
 what-is-monero:
-  translated: "yes"
   need-to-know: Ce que vous devez savoir
   leading: Monero est la principale cryptomonnaie focalisée sur la confidentialité et la résistance à la censure de ses transactions.
   leading_para1: La plupart des cryptomonnaies existantes, y compris Bitcoin et Ethereum, ont des chaînes de blocs transparentes, signifiant que les transactions sont ouvertement vérifiables et traçables par quiconque sur le réseau. De plus, les adresses d'envoi et de réception de ces transactions peuvent potentiellement être reliées à l'identité réelle d'une personne.
@@ -442,7 +428,6 @@ what-is-monero:
   videos: Vidéos Monero (Anglais)
 
 about:
-  translated: "yes"
   history: Un bref historique
   history_para1: Monero a été lancé en avril 2014. Il s'agissait d'un lancement équitable et pré-annoncé du code de référence CryptoNote. Il n'y avait eu aucune pré-extraction minière ou extraction minière instantanée, et aucune partie de la récompense de bloc n'est reversée au développement. Vous trouverez la discussion d'origine de BitcoinTalk
   history_para2: ici.
@@ -459,7 +444,6 @@ about:
 
 
 developer-guides:
-  translated: "yes"
   outdated: Attention, les guides ci-dessous ont été récemment mis à niveau et sont maintenu relativement à jour par la communauté. Cependant, des méthodes sont fréquemment ajoutées / supprimées / modifiées et pourraient ne pas être fidèlement décrites ici.
   rpc: Documentation RPC
   daemonrpc: Documentation RPC du Démon
@@ -467,7 +451,6 @@ developer-guides:
   soon: A suivre...
 
 user-guides:
-  translated: "yes"
   general: Général
   mining: Extraction minière
   recovery: Récupération
@@ -496,7 +479,6 @@ user-guides:
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
-  translated: "yes"
   completed: Tâches terminées
   ongoing: Tâches en cours
   upcoming: Tâches à venir
@@ -504,7 +486,6 @@ roadmap:
 
 
 research-lab:
-  translated: "yes"
   intro: Monero ne s'engage pas seulement à créer une monnaie fongible, mais également à continuer la recherche dans le domaine de la confidentialité financière qu'impliquent les cryptomonnaies. Vous trouverez ci-dessous le résultat du travail de notre Laboratoire de Recherche Monero, d'autres rapports s'y ajouterons.
   mrl_papers: Rapports du Laboratoire de Recherche Monero
   abstract: Résumé
@@ -546,7 +527,6 @@ research-lab:
   brandon_para: Ce document est une revue formelle par Brandon Goodell, chercheur au MRL, du document CryptoNote originel. Il analyse en détail les allégations et les calculs mathématiques présentés dans le document CryptoNote.
 
 specs:
-  translated: "yes"
   fair_title: Pas préminé, pas instaminé, pas de token
   fair_premine: Monero n'est ni préminé ni instaminé
   fair_token: Monero n'a vendu aucun token
@@ -582,7 +562,6 @@ specs:
   amount_hidden_mode: transactions de cercle confidentielles
 
 library:
-  translated: "yes"
   description: "Vous trouverez ci-dessous des publications, livres ou revues disponibles au téléchargement."
   books:
   - category: Livres
@@ -618,7 +597,6 @@ library:
         Dans cette parution, des nouvelles concernant : le développement, le laboratoire de Recherche Monero, Kovri, la communauté, le matériel et Monerujo.
 
 moneropedia:
-  translated: "yes"
   add_new_button: Ajouter une Nouvelle Entrée
   add_new_text1: Si vous souhaitez ajouter ou modifier une entrée, merci
   add_new_link: d'ouvrir une *issue* sur le dépôt GitLab du site web

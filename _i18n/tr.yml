@@ -73,7 +73,6 @@ index:
   page_title: "Monero - güvenli, gizli, takip edilemez"
 
 home:
-  translated: "yes"
   heading2: Gizli Dijital Para
   monero_is_cash: Monero bağlı bir dünya için paradır. Hızlı, gizli ve güvenlidir. Monero'yla kendi bankanız siz olursunuz. Başkalarının bakiyenizi göremeyeceğini veya aktivitelerinizi takip edemeyeceğini bilerek güvenli şekilde harcayabilirsiniz.
   get_started: Başlangıç
@@ -108,7 +107,6 @@ home:
   faq_button: Cevapları oku
 
 hangouts:
-  translated: "yes"
   intro: Monero topluluğu çeşitli ve farklı bireylerden oluşur. Dünya'nın her yerinden geliyor olsak da birlikte takılmaktan hoşlandığımız bazı yerler de yok değildir. Çoğunu aşağıda bulacaksınız. Bize katılın!
   resources: Çalışma Grubu Kaynakları
   resources_para: Organik çalışma gruplarını desteklemek adına Monero, topluluğun buluşup proje planlayabileceği birçok kaynağa sahiptir. Mattermost'un en popüler Monero ilintili IRC kanallarına röleleri bile vardır.
@@ -143,7 +141,6 @@ hangouts:
     description: Çok sayıdaki katkıda bulunan ve geliştirici buraya Kovri geliştirme şeylerini tartışmak için gelir.
 
 merchants:
-  translated: "yes"
   intro1: Her türden satıcı Monero'nun getirdiği finansal gizliliğe değer vermeye başlamıştır. Aşağıda malları ve hizmetleri için şu anda Monero kabul ettiğini bildiğimiz satıcıların bir listesi bulunmaktadır. Eğer bir şirket artık Monero kabul etmiyorsa veya işletmenizin listelenmesini istiyorsanız lütfen
   intro2:  bir GitLab sorunu açın ve bize haber verin 
   intro3: 
@@ -151,11 +148,9 @@ merchants:
     "Lütfen dikkate alınız: Bu bağlantılar kolaylık olması ve sadece bilgi verme amaçlı olarak sağlanmaktadır; listelenen şirketlerin veya organizasyonların veya bireylerin herhangi bir ürününün, hizmetinin veya düşüncesinin Monero topluluğunca kabulünü oluşturmazlar. Monero topluluğu bu harici sitelerin doğruluğu, yasallığı veya içeriği üzerinde hiçbir sorumluluk sahibi değildir. İçerikleri hakkındaki sorularınıza cevap için harici sayfaya ulaşın. Her zamanki gibi, caveat emptor ('alıcı sakınsın'); kendi araştırmanızı yapmaktan siz sorumlusunuz. Çevrimiçi satın alım yaparken her zaman sağduyu kullanın."
 
 sponsorships:
-  translated: "yes"
   intro: Aşağıdaki işletmeler Dünyaya finansal gizlilik getirme hedefinde Monero Projesini desteklemektedir. Katkıları için ne kadar minnettar olsak az. Eğer Monero Projesine sponsor olmak ve bu sayfada listelenmek isterseniz lütfen dev@getmonero.org'a bir e-posta gönderin.
 
 team:
-  translated: "yes"
   core: Çekirdek
   developers: Geliştiriciler
   developers_para1: Monero Projesi, projesinin yaşamı boyunca 500'den çok daha fazla geliştiriciye sahip olmuştur. Tam bir liste için ziyaret etmeniz gereken yer
@@ -166,7 +161,6 @@ team:
   thanks: Özel Teşekkürler
 
 downloads:
-  translated: "no"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
@@ -230,14 +224,12 @@ downloads:
   installer: Installer
 
 monero-project:
-  translated: "yes"
   kovri: Kovri projesi bir Monero işleminin ne göndericisinin ne de alıcısının IP adreslerinin diğer tarafa veya üçüncü taraf gözlemcilerine (blokzincire) açığa çıkmaması gerekliliği için uçtan-uca şifrelemeyi kullanır. Bu karanlık ağı güçlendiren aynı teknolojiyi, i2p'yi (Görünmez İnternet Protokolü) kullanır. Proje şu anda yoğun, aktif gelişim hâlindedir ve henüz Monero ile entegre edilmemiştir.
   kovri_button: Kovri İnternet Sayfasını Ziyaret Edin
   openalias: OpenAlias projesi Monero cüzdan adresleri için herkesin gizliliğinin korunduğundan emin olunacak bir şekilde FQDN'ler (Tam Nitelikli Alan adı, örneğin örnek.openalias.org) sağlayarak kriptopara ödemelerini kolaylaştırır. Proje oldukça ilerlemiştir ve pek çok Monero cüzdanında uygulamaya konmuştur.
   openalias_button: OpenAlias İnternet Sayfasını Ziyaret Edin
 
 press-kit:
-  translated: "yes"
   intro1: Burada, aşağıda Monero sembolünü ve logosunu bulacaksınız. Dilediğiniz boyutu seçebilir veya logoyla kendiniz oynamak için .ai dosyasını indirebilirsiniz.
   intro2: Beyaz arka plan seçeneklerinin SADECE Monero sembolü altında beyaz bir arka planı olduğuna, tüm imgeye arka plan olmadığına dikkat edin.
   intro3: Son olarak bu sayfadaki her şeyi tek bir zip dosyası olarak indirmek için
@@ -272,7 +264,6 @@ press-kit:
         A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
-  translated: "yes"
   title: Komut-Satırı Arayüzü için Talimatlar
   basics: Temel Öğeler
   basics_para1: Monero alışagelmiş olabileceğiniz diğer @kriptoparalar dan biraz daha farklı çalışır. Bitcoin gibi dijital paralar ve bunların çok sayıdaki türev satıcı ödeme sistemleri genellikle her ödeme veya kullanıcı için yeni bir alıcı @adres i yaratır.
@@ -301,7 +292,6 @@ accepting:
   scanning_list4: Zaten almış ve işlemiş olduğumuz işlem sağlamalarına dayanarak kopyaları kaldırın
 
 contributing:
-  translated: "yes"
   intro: Monero açık kaynak kodlu, topluluk güdümlü bir projedir. Aşağıda projeyi desteklemenin birçok yolu tarif edilmiştir.
   network: Ağı Destekleyin
   develop: Geliştirin
@@ -331,7 +321,6 @@ contributing:
   donate-other_para2: a e-posta gönderin.
 
 faq:
-  translated: "yes"
   q1: Monero'nun değeri niye vardır?
   a1: İnsanlar almak istediği için Monero'nun değeri vardır. Hiç kimse Monero almaya gönüllü değilse bir değeri olmayacaktır. Monero'nun değeri talep arzı aştığında artar ve arz talebi aştığında düşer.
   q2: Nasıl Monero alabilirim?
@@ -365,7 +354,6 @@ faq:
   a14: "%100 anonimlik diye bir şey yoktur. Hiç değilse anonimlik sınırınız Monero’yu kullanan insanlar kümesidir. Bazı insanlar Monero’yu kullanmaz. Monero’nun hataları da olabilir. Böyle olmasa bile şimdiye veya daha sonra Monero’nun gizlilik katmanları aracılığıyla bazı bilgilerin çıkarımını yapma yolları var olabilir. Saldırılar sürekli güçlenmektedir. Emniyet kemeri taksanız bile bir araba kazasında ölebilirsiniz. Mantığınızı, sağduyunuzu ve savunmanızı etraflıca kullanın."
 
 mining:
-  translated: "yes"
   intro1: Monero dağıtık uzlaşıma ulaşmak için iş kanıtı madenciliğine bel bağlayan bir kriptoparadır. Aşağıda madenciliğe nasıl başlanacağı hakkında bazı bilgiler ve kaynaklar bulacaksınız.
   intro2: Monero Projesi herhangi bir havuzu, yazılımı veya donanımı benimsememektedir ve aşağıdaki içerik sadece bilgilendirme amaçlı olarak sunulmuştur.
   support: Destek
@@ -383,7 +371,6 @@ mining:
   software_para: Bazı madencilerin geliştirici ücreti olabileceğine dikkate alın.
 
 using:
-  translated: "yes"
   intro: Monero'yla işlem yapmak kolay olabilir. Bu sayfa kullanıcılara bu süreçte rehber olması için tasarlanmıştır.
   learn: 1. Öğrenin
   learn_para1: Monero güvenli, gizli ve takip edilemez bir kriptoparadır. Geliştiriciler ve topluluk kendilerini bu değerleri korumaya adamıştır.
@@ -418,7 +405,6 @@ using:
   transact_para2: Satıcılar sayfası.
 
 what-is-monero:
-  translated: "yes"
   need-to-know: Bilmeniz gerekenler
   leading: Monero gizliliğe ve sansüre dayanıklı işlemlere odaklanan önde gelen kriptoparadır.
   leading_para1: Bitcoin ve Ethereum’u da içeren mevcut kriptoparaların çoğunun saydam blokzincirleri vardır, bu da işlemlerin Dünyadaki herkes tarafından açık şekilde doğrulanabildiği ve izlenebildiği anlamına gelir. Dahası bu işlemler için gönderici ve alıcı adreslerinin kişinin gerçek dünya kimliğine bağlanabilme potansiyeli vardır.
@@ -440,7 +426,6 @@ what-is-monero:
   videos: Monero Videoları (İngilizce)
 
 about:
-  translated: "yes"
   history: Kısa Bir Tarihi
   history_para1: Monero Nisan 2014’te faaliyete geçmişti. CryptoNote referans kodunun adil, önceden duyurulmuş bir yayınıydı. Ön-madeni veya anında-madeni yoktu ve blok ödülünün hiçbir kısmı geliştirmeye gitmez. Orijinal Bitcointalk başlığını
   history_para2: buradan
@@ -457,7 +442,6 @@ about:
 
 
 developer-guides:
-  translated: "yes"
   outdated: "Lütfen dikkate alın: Aşağıdaki rehberler topluluk tarafından yakında yenilenmiştir ve neredeyse güncel şekilde sürülmektedir. Ancak yöntemler sıklıkla eklenmekte / kaldırılmakta / güncellenmektedir ve burada isabetli şekilde anlatılmamış olabilir."
   rpc: RPC Belgelendirmesi
   daemonrpc: Daemon RPC Belgelendirmesi
@@ -465,7 +449,6 @@ developer-guides:
   soon: Dahası pek yakında...
 
 user-guides:
-  translated: "yes"
   general: Genel
   mining: Madencilik
   recovery: Geri Alma
@@ -494,7 +477,6 @@ user-guides:
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
-  translated: "yes"
   completed: Tamamlanmış görev
   ongoing: Devam eden görev
   upcoming: Yaklaşan görev
@@ -502,7 +484,6 @@ roadmap:
 
 
 research-lab:
-  translated: "yes"
   intro: Monero sadece değiştirilebilir bir para yaratmaya değil, kriptoparaları içermesiyle finansal gizlilik alemine sürekli araştırmaya da kendini adamıştır. Aşağıda Monero Araştırma Laboratuvarı’mızın gelecek olan daha fazla makalesiyle mevcut işlerini bulacaksınız.
   mrl_papers: Monero Araştırma Laboratuvarı Makaleleri (İngilizce)
   abstract: Özet
@@ -545,7 +526,6 @@ research-lab:
 
 
 specs:
-  translated: "yes"
   fair_title: Ön-maden yok, anında-maden yok, jeton yok
   fair_premine: Monero'nun ön-madeni veya anında-madeni yoktu
   fair_token: Monero hiç jeton satmadı
@@ -581,7 +561,6 @@ specs:
   amount_hidden_mode: Halka gizli işlemler
 
 library:
-  translated: "yes"
   description: "Aşağı indirebileceğiniz bazı yayınlar, kitaplar ve dergiler yer almaktadır."
   books:
   - category: Kitaplar
@@ -617,7 +596,6 @@ library:
         Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri, topluluk, Donanım ve Monerujo.
 
 moneropedia:
-  translated: "yes"
   add_new_button: Yeni Girdi Ekleyin
   add_new_text1: Değiştirmek veya eklemek istediğiniz bir girdi varsa lütfen
   add_new_link: bu sitenin GitLab deposunda bir sorun açın

@@ -73,7 +73,6 @@ index:
   page_title: "Monero - veilig, vertrouwelijk, onvolgbaar"
 
 home:
-  translated: "yes"
   heading2: Vertrouwelijke digitale valuta
   monero_is_cash: Monero is contant geld voor een verbonden wereld. Het is snel, vertrouwelijk en veilig. Met Monero ben je je eigen bank. Je kunt het veilig uitgeven, want niemand anders kan je saldo bekijken of je activiteit volgen.
   get_started: Aan de slag
@@ -108,7 +107,6 @@ home:
   faq_button: Antwoorden lezen
 
 hangouts:
-  translated: "yes"
   intro: De Monero-community bestaat uit allerlei soorten mensen. Waar we ook vandaan komen, we ontmoeten elkaar op bepaalde plekken online. De belangrijkste staan hieronder. Kom eens langs!
   resources: Voor werkgroepen
   resources_para: Voor het ondersteunen van werkgroepen die zichzelf organiseren zijn er verschillende communicatiekanalen waarin de Monero-community contact kan houden en projecten kan plannen. Er zijn zelfs relays van Mattermost naar de populairste Monero-kanalen op IRC.
@@ -143,7 +141,6 @@ hangouts:
     description: Hier bespreken onze vele bijdragers en ontwikkelaars het ontwikkelen van Kovri.
 
 merchants:
-  translated: "yes"
   intro1: Allerlei soorten verkopers stellen de financiële privacy die Monero biedt op prijs. Hieronder volgt een lijst met de verkopers die momenteel Monero accepteren voor goederen en diensten, voorzover we weten. Accepteert een bedrijf geen Monero meer, of wil je jouw bedrijf laten vermelden?
   intro2:  Open een GitLab-issue en laat het ons weten 
   intro3: 
@@ -151,11 +148,9 @@ merchants:
     "Disclaimer: deze links worden uitsluitend aangeboden ter informatie en voor het gemak van de lezer; ze vormen geen goedkeuring door de Monero-community van enige producten, diensten of standpunten van de vermelde bedrijven, organisaties en personen. De Monero-community is niet aansprakelijk voor de juistheid, de wettigheid of de inhoud van deze externe websites. Neem contact op met de beheerder van een externe website voor vragen over de inhoud ervan. Volg altijd het principe *caveat emptor* (let op, koper): je bent zelf verantwoordelijk voor het controleren van verkopers. Wees altijd voorzichtig bij het doen van aankopen op internet."
 
 sponsorships:
-  translated: "yes"
   intro: De volgende bedrijven ondersteunen het Monero-project om ons te helpen financiële privacy voor iedereen mogelijk te maken. We zijn dankbaar voor hun bijdragen. Stuur een e-mail naar dev@getmonero.org als je het Monero-project wilt sponsoren en op deze pagina vermeld wilt worden.
 
 team:
-  translated: "yes"
   core: Kernteam
   developers: Ontwikkelaars
   developers_para1: Meer dan 500 personen hebben in de loop van de tijd bijgedragen aan het Monero-project. Zie voor een complete lijst de
@@ -166,7 +161,6 @@ team:
   thanks: Bijzondere dank
 
 downloads:
-  translated: "no"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
@@ -230,14 +224,12 @@ downloads:
   installer: Installer
 
 monero-project:
-  translated: "yes"
   kovri: Het Kovri-project past end-to-endversleuteling toe, zodat noch de afzender, noch de ontvanger van een Monero-transactie zijn of haar IP-adres hoeft te laten zien aan de andere partij, of aan een derde partij (via de blockchain). Hiervoor wordt i2p gebruikt, dezelfde technologie gebruikt die de basis vormt van het darknet (Invisible Internet Protocol). Het project wordt actief ontwikkeld en is nog niet geïntegreerd met Monero.
   kovri_button: Website van Kovri
   openalias: Het OpenAlias-project vereenvoudigt cryptovaluta-betalingen met FQDN's (Fully Qualified Domain Names, bijvoorbeeld example.openalias.org) voor Monero-adressen op een manier waarbij de privacy van iedereen beschermd blijft. DIt project is al goed gevorderd en is al geïmplementeerd in veel Monero-portemonnees.
   openalias_button: Website van OpenAlias
 
 press-kit:
-  translated: "yes"
   intro1: Hieronder vind je het symbool en logo van Monero. Je kunt de gewenste grootte kiezen of het .ai-bestand downloaden om het logo zelf te bewerken.
   intro2: "Let op: de opties met een witte achtergrond hebben ALLEEN een witte achtergrond onder het Monero-symbool, niet als achtergrond voor de hele afbeelding."
   intro3: Tenslotte kun je alles op deze pagina in een zip downloaden door
@@ -272,7 +264,6 @@ press-kit:
         A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
-  translated: "yes"
   title: Instructies voor de opdrachtregel-interface (CLI)
   basics: De basis
   basics_para1: Monero werkt anders dan je misschien gewend bent van andere cryptovaluta (zie @cryptocurrencies). Voor digitale valuta zoals Bitcoin en de vele altcoins die daarvan zijn afgeleid maken betalingssystemen voor verkopers meestal een nieuw ontvangstadres (@address) voor iedere betaling of gebruiker.
@@ -302,7 +293,6 @@ accepting:
   scanning_list4: Verwijder dubbele treffers op basis van transactiehashes die je al hebt ontvangen en verwerkt.
 
 contributing:
-  translated: "yes"
   intro: Monero is een door de community gecreëerd open-sourceproject. Hier volgen verschillende manier om het project te steunen.
   network: Bijdragen aan het netwerk
   develop: Programmeren
@@ -332,7 +322,6 @@ contributing:
   donate-other_para2: voor andere manieren om geld te geven of als je een sponsor van het Monero-project wilt worden.
 
 faq:
-  translated: "yes"
   q1: Waardoor heeft Monero waarde?
   a1: Monero heeft waarde omdat mensen het willen kopen. Als niemand Monero zou willen kopen, dan zou het geen waarde hebben. De prijs van Monero stijgt als de vraag groter is dan het aanbod en daalt als het aanbod groter is dan de vraag.
   q2: Hoe kan ik Monero kopen?
@@ -366,7 +355,6 @@ faq:
   a14: 100% anonimiteit bestaat niet. Je *anonymity set* (de groep mensen waarin je je verstopt) is hooguit de mensen die Monero gebruiken. Sommige mensen gebruiken Monero niet. Er kunnen ook bugs in Monero zitten. Zelfs als er geen bugs in zitten, kunnen er manieren zijn om informatie af te leiden ondanks de privacylagen van Monero. Aanvallen worden alleen maar beter. Ook als je een gordel draagt, kun je nog steeds een dodelijk auto-ongeluk krijgen. Gebruik gezond verstand, wees voorzichtig en pas een verdediging met meerdere lagen toe.
 
 mining:
-  translated: "yes"
   intro1: Monero is een cryptovaluta die mining voor *proof-of-work* nodig heeft om verspreide consensus te bereiken. Hieronder vind je informatie en hulpmiddelen waarmee je kunt beginnen te minen.
   intro2: Het Monero-project ondersteunt niet een bepaalde pool, software of hardware. De onderstaande gegevens worden alleen ter informatie aangeboden.
   support: Ondersteuning
@@ -384,7 +372,6 @@ mining:
   software_para: "Let op: bij sommige miningprogramma's krijgen de ontwikkelaars een vergoeding."
 
 using:
-  translated: "yes"
   intro: Betalen met Monero kan heel makkelijk zijn. Deze pagina helpt je daarbij.
   learn: "1. Leren"
   learn_para1: Monero is een veilige, vertrouwelijke en niet volgbare cryptovaluta. De ontwikkelaars en de community staan voor het handhaven van deze waarden. Je kunt meer leren door de pagina
@@ -419,7 +406,6 @@ using:
   transact_para2: pagina Verkopers.
 
 what-is-monero:
-  translated: "yes"
   need-to-know: Wat je moet weten
   leading: Monero is de beste van de cryptovaluta's die zich richten op vertrouwelijke en censuurbestendige transacties.
   leading_para1: De meeste bestaande cryptovaluta, zoals Bitcoin en Ethereum, hebben transparante blockchains, zodat de hele wereld transacties openlijk kan verifiëren en volgen. Bovendien kunnen verzend- en ontvangstadressen voor die transacties mogelijk worden gekoppeld aan de echte identiteit van mensen.
@@ -441,7 +427,6 @@ what-is-monero:
   videos: Video's over Monero (Engels)
 
 about:
-  translated: "yes"
   history: Korte geschiedenis
   history_para1: Monero is gestart in april 2014. Het was een eerlijke, vooraf aangekondigde toepassing van de CryptoNote-referentiecode. Er was geen premine of instamine en ontwikkelaars ontvangen geen deel van de beloning per blok. Zie de oorspronkelijke discussie
   history_para2: op Bitcointalk.
@@ -458,7 +443,6 @@ about:
 
 
 developer-guides:
-  translated: "no"
   outdated: "Let op: de onderstaande handleidingen zijn onlangs vernieuwd en worden door de community bijna up-to-date gehouden. Maar methoden worden vaak toegevoegd, verwijderd of bijgewerkt, dus het is mogelijk dat ze hier niet allemaal correct worden beschreven."
   rpc: RPC-documentatie
   daemonrpc: Daemon RPC Documentation
@@ -466,7 +450,6 @@ developer-guides:
   soon: Binnenkort meer...
 
 user-guides:
-  translated: "yes"
   general: Algemeen
   mining: Mining
   recovery: Herstellen
@@ -495,7 +478,6 @@ user-guides:
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
-  translated: "yes"
   completed: Voltooide taak
   ongoing: Lopende taak
   upcoming: Komende taak
@@ -503,7 +485,6 @@ roadmap:
 
 
 research-lab:
-  translated: "yes"
   intro: Monero werkt niet alleen aan een inwisselbare valuta, maar doet ook onderzoek naar financiële privacy op het gebied van cryptovaluta. Hieronder vind je het werk van ons eigen Monero Research Lab. En er komen nog meer papers aan.
   mrl_papers: Monero Research Lab Papers (Engels)
   abstract: Samenvatting
@@ -546,7 +527,6 @@ research-lab:
 
 
 specs:
-  translated: "yes"
   fair_title: Geen premine, geen instamine, geen token
   fair_premine: Er is geen premine of instamine van Monero geweest
   fair_token: Monero heeft nooit een token verkocht
@@ -582,7 +562,6 @@ specs:
   amount_hidden_mode: Vertrouwelijke ring-transacties
 
 library:
-  translated: "yes"
   description: "Hier volgen publicaties, boeken en tijdschriften die je kunt downloaden."
   books:
   - category: Boeken
@@ -618,7 +597,6 @@ library:
         In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri, community, hardware en Monerujo.
 
 moneropedia:
-  translated: "no"
   add_new_button: Nieuw trefwoord toevoegen
   add_new_text1: Wil je een trefwoord bewerken of een nieuw trefwoord toevoegen?
   add_new_link: Open dan een issue op de GitLab-repository van deze website

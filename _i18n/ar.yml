@@ -72,8 +72,7 @@ titles:
 index:
   page_title: "مونيرو - آمن ,سري , لا يمكن تعقبها"
 
-home:
-  translated: "yes"
+home:  
   heading2: عمله رقميه سريه
   monero_is_cash: مونيرو هو النقد في العالم المُتصل , إنه سريع وسري وآمن. مع مونيرو أنت مصرفك الخاص. يمكنك الإنفاق بأمان بإيقان أن الأخرين لا يمكنهم معرفه رصيدك أو تتبع نشاطك .
   get_started: إبدأ
@@ -108,7 +107,6 @@ home:
   faq_button: قراءه الإجابات
 
 hangouts:
-  translated: "yes"
   intro: مجتمع مونيرو متعدد ومختلف. لقد أتينا من كل مكان. لكن بكل تأكيد هناك أماكن نحب أن نلتقي بها معاً. ستجد بالأسفل معظمهم شاركنا الأن!
   resources: موارد مجموعه العمل
   resources_para: من جهتنا في دعم مجموعات العمل, مونيرو يحتوي علي العديد من الموارد يمكن ان يستخدمها المجتمع للإلتقاء وتخطيط المشاريع . علي mattermost يحتوي علي إعاده بث في معظم قنوان مونيرو المشهوره علي بروتوكول الدردشة عبر الإنترنت IRC.
@@ -143,7 +141,6 @@ hangouts:
     description: The many contributors and developers come here to discuss Kovri dev-y things.
 
 merchants:
-  translated: "yes"
   intro1: التجار من جميع الأنواع يُقدرون قيمه السريه الماليه التي يوفرها مونيرو. بالأدني قائمه للتجار الذين نعرف أنهم يقبلون مونيرو لمنتجاتهم او خدماتهم. إذا كان هناك شركه لا تقبل مونيرو أدناه أو كنت تود إضافه شركتك للقائمه, من فضلك
   intro2:  إفتح مسأله في GitLab
   intro3:
@@ -151,11 +148,9 @@ merchants:
     "من فضلك لاحظ: هذه الروابط تم توفيرها هنا لسهوله الوصول ولإغراض تعريفيه فقط: ولا تشكل موافقه او دعم من مجتمع مونيرو لأي من المنتجات أو الخدمات أو رأي في الشركه أو المؤسسه المعروضه هنا. مجتمع مونيرو لا يتحمل أي مسئوليه لصحه أو قانونيه أو محتوي هذه المواقع. راسل هذه المواقع للحصول علي إجابات حول ما يحتويه موقعهم. ودائما تذكر مسئوليه المشتري " إحذر كمشتري " أنت مسئول عن القيام بالبحث الخاص بك والحكم قبل الشراء من أي موقع. "
 
 sponsorships:
-  translated: "yes"
   intro: الأعمال التاليه قد ساندت مونيرو في هدفه لتوفير السريه الماليه للعالم. نحن شاكرين جداً لمشاركتهم. إذا كنت تود دعم مشروع مونيرو وعرض مشروعك في هذه الصفحه من فضلك قم بمراسله dev@getmonero.org.
 
 team:
-  translated: "yes"
   core: Core
   developers: المُطورين
   developers_para1: في دوره حياه مشروع مونيرو قد شاركك أكثر من 500 مشارك . إذا كنت تود رؤيه جميع المشاركين, من فضلك إنظر في
@@ -166,7 +161,6 @@ team:
   thanks: شكر خاص
 
 downloads:
-  translated: "no"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
@@ -230,14 +224,12 @@ downloads:
   installer: Installer
 
 monero-project:
-  translated: "yes"
   kovri: مشروع كوفري يستخدم تقنيه التشفير بين الطرفين فلا يحتاج الراسل او المستلم بأي معامله مونيرو الكشف عن عنوان الip الخاص به إلي الجهه الأخري أو أي طرف تالت يراقب المعامله ( سلسله الكتل ). ويتم ذلك من خلال نفس التقنيه التي يعمل من خلالها الإنترنت المُظلم, i2p ( بروتوكول الإنترنت الخفي ). هذا المشروع حالياً قيد التطوير ولم يتم دمجه مع مونيرو بعد .
   kovri_button: زياره موقع كوفري .
   openalias: يقوم مشروع OpenAlias بتبسيط الدفع بالعملات الرقميه من خلال تقنيه FQDNs ( أسماء نطاقات مؤهله بالكامل مثال example.openalias.org ) لعناوين محافظ مونيرو بطريقه تحافظ علي خصوصيه الجميع . المشروع قيد التنفيذ وقد تم دمجه بالفعل بالعديد من محافظ مونيرو .
   openalias_button: زياره موقع OpenAlias
 
 press-kit:
-  translated: "no"
   intro1: هنا ستجد رمز وشعار مونيرو بالأسفل. يمكنك إختيار أي حجم تريده أو تنزيل الملف والتعديل علي الشعار كما تريد.
   intro2: لاحظ أن إختيار الخلفيه البيضاء يجعل الخلفيه بيضاء خلف رمز مونيرو فقط, وليست خلفيه للصوره كامله.
   intro3: أخيراً, يمكنك تحميل كل شيء في هذه الصفحه في ملف مضغوط واحد بالضغط
@@ -272,7 +264,6 @@ press-kit:
         A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
-  translated: "yes"
   title: تعليمات واجهه سطر الاوامر
   basics: الأساسيات
   basics_para1: يعمل مونيرو بطريقه مختلفه قليلاً عن التي ربما قد تكون إعتدت عليها في باقي العملات الرقميه الأخري. في حاله عمله رقميه مثل البتكوين ونظم الدفع الكثيره المشتقه للتجاره الإلتكرونيه سوف تلاحظ إنشاء عنوان دفع جديد لكل معامله أو مستخدم.
@@ -301,7 +292,6 @@ accepting:
   scanning_list4: إحذف المُكرر بناء علي هاش المعاملات التي إستلمناها بالفعل وتمت معالجتها
 
 contributing:
-  translated: "yes"
   intro: مونيرو هو مشروع مفتوح المصدر, يُقاد من قبل المجتمع , موضح بالأدني طرق عديده لمسانده المشروع .
   network: ساند الشبكه
   develop: طوّر
@@ -331,7 +321,6 @@ contributing:
   donate-other_para2: لوسائل أخري للتبرع أو إذا أحببت أن تكون من الراعيين لمشروع مونيرو.
 
 faq:
-  translated: "yes"
   q1: كيف يكون لمونيرو قيمه ؟
   a1: مونيرو له قيمه لأن الناس مستعده لشراءه. إذا لم يكن هناك مَن يُريد شراءه لن يكون له أي قيمه. سعر مونيرو يُحدد بالعرض والطلب, يزيد سعر مونيرو إذا زاد الطلب عن العرض ويَقل السعر في حاله حدوث العكس.
   q2: كيف أحصل علي مونيرو؟
@@ -365,7 +354,6 @@ faq:
   a14: There is no such thing as 100% anonymous. If nothing else, your anonymity set is the set of people using Monero. Some people don't use Monero. Monero may also have bugs. Even if not, ways may exist to infer some information through Monero's privacy layers, either now or later. Attacks only get better. If you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.
 
 mining:
-  translated: "yes"
   intro1: مونيرو هو عمله رقميه تعتمد علي طريقه خوارزميه تأكيد-العمل  في التعدين لتحقيق الموافقه الإجماعيه الموزعه . أدناه ستجد المعلومات والموارد اللازمه للبدأ في التعدين.
   intro2: مشروع مونيرو لا يُرجّح حقل (تجمّع للتعدين) أو برامج أو مُعدات معينه والمعلومات أدناه لأغراض معرفيه فقط.
   support: الدعم
@@ -383,7 +371,6 @@ mining:
   software_para: لاحظ أن بعض البرامج تحوي رُسوم للمُطور
 
 using:
-  translated: "yes"
   intro: إجراء مُعاملات علي مونيرو هو أمر يُمكن تبسيطه. هذه الصفحه مُوجهه لمساعده المستخدمين في هذا الأمر .
   learn: 1. تَعَلَم
   learn_para1: مونيرو هو عمله رقميه آمنه, سريه, لا يمكن تعقبها. المُجتمع والمُطورين مُلتزمين بحمايه هذه القيم. تعلم أكثر عبر قراءة
@@ -418,7 +405,6 @@ using:
   transact_para2: صفحه التجار.
 
 what-is-monero:
-  translated: "yes"
   need-to-know: ما تحتاج إلي معرفته
   leading: مونيرو هي العمله الرقميه الرائده بالتركيز علي المعاملات السريه ومقاومه الرقابه.
   leading_para1: معظم العملات الرقميه الموجوده, بما فيها البتكوين والإيثيريوم لديهم سلسله كتل شفافه, ويعني ذلك أن المعاملات مفتوحه للتحقق والتعقب من قِبَل أي شخص في العالم. ضف إلي ذلك عناوين الإرسال والإستقبال لهذه المعاملات يحتمل ربطها بشخصيه صاحبها في العالم الحقيقي.
@@ -440,7 +426,6 @@ what-is-monero:
   videos: Monero Videos (English)
 
 about:
-  translated: "yes"
   history: لمحه تاريخيه
   history_para1: تم إطلاق مونيرو في ربيع اﻵخر سنه 2014. إنطلاق عادل, تم الإعلان المُسبق عن الكود المرجعي ل(CryptoNote). لم يكن هناك أي تعدين مُسبق أو فعلي ولا يوجد نسبه من مكافئات الكتل تذهب إلي التطوير. أُنظر الموضوع الأصلي علي موقع حديث البتكوين
   history_para2: هُنا.
@@ -457,14 +442,12 @@ about:
 
 
 developer-guides:
-  translated: "yes"
   outdated: "Please note: the guides below have been recently refreshed and are maintained almost up-to-date by the community. However, methods are often added / removed / updated and may not be accurately described here."
   rpc: RPC Documentation
   daemonrpc: Daemon RPC Documentation
   walletrpc: Wallet RPC Documentation
 
 user-guides:
-  translated: "yes"
   general: عام
   mining: التعدين
   recovery: الإستعاده
@@ -493,7 +476,6 @@ user-guides:
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
-  translated: "yes"
   completed: المهات المكتمله
   ongoing: المهمات الجاريه
   upcoming: المهمات القادمه
@@ -501,7 +483,6 @@ roadmap:
 
 
 research-lab:
-  translated: "yes"
   intro: لا يلتزم مونيرو بإنشاء عمله آمنه لامركزيه إستبداليه فقط . ولكن بالبحث المستمر في مجال الخصوصيه الماليه التي تنطوي علي العملات الرقميه. بالأدني ستجد أبحاث فريق مختبر بحث مونيرو والعمل قائم علي المزيد من الأبحاث.
   mrl_papers: أبحاث فريق مختبر بحث مونيرو
   abstract: نبذه مختصره
@@ -544,7 +525,6 @@ research-lab:
 
 
 specs:
-  translated: "yes"
   fair_title: بدون تعدين مُسبق أو تعدين لحظي أو عمله رمزيه
   fair_premine:  لم يكن لمونيرو تعدين مُسبق أو لحظي
   fair_token: لم يبيع مونيرو اي عمله رمزيه
@@ -580,7 +560,6 @@ specs:
   amount_hidden_mode: مُعاملات الطوق السريه (Ring confidential transactions)
 
 library:
-  translated: "no"
   description: "Below are some publications, books or magazines available for you to download."
   books:
   - category: Books
@@ -616,7 +595,6 @@ library:
         In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
 
 moneropedia:
-  translated: "no"
   add_new_button: Add New Entry
   add_new_text1: If there is an entry you'd like to modify or be added, please
   add_new_link: open an issue on this website's GitLab repository
