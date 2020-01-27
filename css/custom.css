@@ -1121,21 +1121,6 @@ pre.highlight>code {
     padding-bottom: 1rem;
 }
 
-.untranslated.yes {
-    display: none;
-}
-
-.untranslated.no {
-    display: block;
-}
-
-
-
-
-
-
-
-
 .upgrade-content {
     background-color: #eb912c;
     top: 0;
