@@ -33,7 +33,7 @@ title: titles.allposts
 {% if paginator.total_pages > 1 %}
 <div class="text-center page-numbers"><p>
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
     <span>&laquo; Prev</span>
   {% endif %}
@@ -49,7 +49,7 @@ title: titles.allposts
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
   {% else %}
     <span>Next &raquo;</span>
   {% endif %}
