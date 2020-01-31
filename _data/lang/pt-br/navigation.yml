@@ -16,12 +16,14 @@
   url: downloads/
 - title: Notícias
   subfolderitems:
-    - page: Comunicados
-      url: blog/tags/announcements.html
-    - page: Logs das Reuniões
-      url: blog/tags/dev%20diaries.html
+    - page: Urgente
+      url: blog/tags/urgent.html
     - page: Lançamentos
       url: blog/tags/releases.html
+    - page: Comunidade
+      url: blog/tags/community.html
+    - page: Logs das Reuniões
+      url: blog/tags/dev%20diaries.html
     - page: Todos os Posts
       url: blog
 - title: Comunidade

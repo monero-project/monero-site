@@ -16,12 +16,14 @@
   url: downloads/
 - title: Najnowsze
   subfolderitems:
-    - page: Ogłoszenia
-      url: blog/tags/announcements.html
-    - page: Zapisy z czatów
-      url: blog/tags/dev%20diaries.html
+    - page: Ważne
+      url: blog/tags/urgent.html
     - page: Aktualizacje
       url: blog/tags/releases.html
+    - page: Społeczność
+      url: blog/tags/community.html
+    - page: Zapisy z czatów
+      url: blog/tags/dev%20diaries.html
     - page: Wszystkie wpisy
       url: blog
 - title: Społeczność
