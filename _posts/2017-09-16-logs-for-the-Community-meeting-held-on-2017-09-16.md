@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-09-16
 summary: Community highlights, Forum Funding System discussions, workgroups and resources, Monero support, translations, open ideas time, and miscellaneous
-tags: [community]
+tags: [dev diaries]
 author: dEBRUYNE / fluffypony
 ---
 

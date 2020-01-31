@@ -2,7 +2,7 @@
 layout: post
 title: An update from the Core Team on some technical responsibilities
 summary: Update on who is responsible for certain part of development, release and infrastructure
-tags: [announcement]
+tags: [community]
 author: The Core Team
 ---
 

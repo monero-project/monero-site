@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Monero Research Lab Meeting Held on 2018-06-25
 summary: MRL work, and miscellaneous
-tags: [dev diaries, community, crypto, research]
+tags: [dev diaries, crypto, research]
 author: el00ruobuob / surae
 ---
 

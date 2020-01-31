@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Monero Research Lab Meeting Held on 2018-02-05
 summary: Bulletproofs, dedicated Monero conference, increasing minimum ring size, making ring size static, and miscellaneous
-tags: [dev diaries, community, crypto, research]
+tags: [dev diaries, crypto, research]
 author: dEBRUYNE / fluffypony
 ---
 

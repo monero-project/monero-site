@@ -2,7 +2,7 @@
 layout: post
 title: Advisory note for users making use of subaddresses
 summary: Users should be aware of the privacy functionality of subaddresses
-tags: [announcements]
+tags: [urgent]
 author: Justin Ehrenhofer / knaccc
 ---
 

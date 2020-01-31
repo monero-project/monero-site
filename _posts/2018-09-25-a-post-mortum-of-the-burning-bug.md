@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Post Mortem of The Burning Bug
-tags: [dev, core, crypto, announcements]
+tags: [dev, core, crypto, community]
 author: dEBRUYNE
 ---
 

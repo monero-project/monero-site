@@ -2,7 +2,7 @@
 layout: post
 title: Disclosure of a Major Bug in CryptoNote Based Currencies
 summary: Patched in Monero and others, but still in the wild
-tags:  [core, crypto, research, announcements]
+tags:  [core, crypto, research, urgent]
 author: luigi1111 and Riccardo "fluffypony" Spagni
 ---
 

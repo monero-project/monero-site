@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Monero Localization Workgroup meeting held on 2018-05-03
 summary: Translation's workflow improvements and future of Pootle
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: erciccione
 ---
 

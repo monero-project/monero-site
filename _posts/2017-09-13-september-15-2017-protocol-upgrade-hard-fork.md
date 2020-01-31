@@ -2,7 +2,7 @@
 layout: post
 title: A Scheduled Protocol Upgrade is Planned for September 15
 summary: To be sufficiently prepared, please run CLI v0.11.0.0 or GUI v0.11.0.0
-tags: [protocol upgrade, core, crypto, announcements]
+tags: [protocol upgrade, core, crypto, community]
 author: dEBRUYNE / fluffypony
 ---
 

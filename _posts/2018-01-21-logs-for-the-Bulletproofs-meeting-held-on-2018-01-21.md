@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Bulletproofs Meeting Held on 2018-01-21
 summary: Bulletproofs, fees, hardforks, and miscellaneous
-tags: [community, crypto, research]
+tags: [dev diaries, crypto, research]
 author: dEBRUYNE / fluffypony
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: About supply auditability
 summary: Information on supply auditing and how it relates to assumptions and tradeoffs
-tags: [announcements]
+tags: [community]
 author: Sarang Noether, Ph.D.; Justin Ehrenhofer
 ---
 

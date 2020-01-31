@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Hardware Meeting Held on 2018-01-05
 summary: Poll conducted, Reddit summaries, status report(s), conclusion of name search, highlights of 34C3 in Leipzig, etherpads for groups, test plan discussion, recent firmware & FPGA research, mechanical engineering, recent logo contributions, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: dEBRUYNE / fluffypony
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A note on fees
-tags: [crypto, research, announcements]
+tags: [crypto, research, community]
 author: dEBRUYNE / ArticMine
 ---
 

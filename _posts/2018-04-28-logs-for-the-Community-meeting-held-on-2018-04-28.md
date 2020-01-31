@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-04-28
 summary: Community highlights, Forum Funding System updates, Localization workgroup Q&A, Monero Integrations, Monero QR GUI discussion, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

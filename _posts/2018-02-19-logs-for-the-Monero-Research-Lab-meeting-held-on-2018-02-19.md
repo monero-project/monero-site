@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Monero Research Lab Meeting Held on 2018-02-19
 summary: Multisig (paper), chain split (e.g. MoneroV), anonymity set, auditing options, and miscellaneous
-tags: [dev diaries, community, crypto, research]
+tags: [dev diaries, crypto, research]
 author: dEBRUYNE / fluffypony
 ---
 

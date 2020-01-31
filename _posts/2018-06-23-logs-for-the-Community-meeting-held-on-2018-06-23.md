@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-06-23
 summary: Community highlights, Community workgroup developments, Forum Funding System updates, Localization workgroup report, Outreach workgroup report, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

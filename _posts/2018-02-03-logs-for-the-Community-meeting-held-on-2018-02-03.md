@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-02-03
 summary: Community highlights, Monero Integrations, Monero outreach initiative, Forum Funding System updates, RFC-HWALLET-1, Localization workgroup, open ideas, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: dEBRUYNE / fluffypony
 ---
 

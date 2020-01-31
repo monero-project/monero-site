@@ -2,7 +2,7 @@
 layout: post
 title: Network upgrade and release 0.15
 summary: Tentative schedule for network upgrade and release 0.15
-tags: [announcements]
+tags: [community]
 author: dEBRUYNE / ErCiccione
 ---
 

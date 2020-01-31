@@ -2,7 +2,7 @@
 layout: post
 title: A Statement on the MWR Labs Disclosure
 summary: Clarifying some misconceptions and statements
-tags: [core, rpc]
+tags: [core, rpc, community]
 author: Riccardo Spagni (fluffypony)
 ---
 

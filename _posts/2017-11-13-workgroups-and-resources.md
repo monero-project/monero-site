@@ -2,7 +2,7 @@
 layout: post
 title: Workgroups and Resources
 summary: A brief overview of workgroups in Monero and the resources that are provided for them to succeed.
-tags: [community, announcements]
+tags: [community]
 author: rehrar
 ---
 

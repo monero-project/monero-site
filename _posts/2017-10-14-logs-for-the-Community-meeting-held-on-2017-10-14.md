@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-10-14
 summary: Community highlights, Forum Funding System updates, Monero Coffee Chat debrief, Monero meetups & meetup kit, open ideas time, and miscellaneous
-tags: [community]
+tags: [dev diaries]
 author: dEBRUYNE / fluffypony
 ---
 

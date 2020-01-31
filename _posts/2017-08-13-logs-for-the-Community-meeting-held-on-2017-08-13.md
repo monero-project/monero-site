@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-08-13
 summary: Monero Meetups, Serhack's web integrations, PoW discussion, eSport sponsoring, and miscellaneous
-tags: [community]
+tags: [dev diaries]
 author: dEBRUYNE / fluffypony
 ---
 

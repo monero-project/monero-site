@@ -2,7 +2,7 @@
 layout: post
 title: PoW change and key reuse
 summary: Monero will tweak Cryptonight, and how key reuse can compromise your privacy
-tags:  [mining, protocol upgrade, crypto, announcements]
+tags:  [mining, protocol upgrade, crypto, community]
 author: dEBRYUNE, dnaleor and the Monero project
 ---
 
