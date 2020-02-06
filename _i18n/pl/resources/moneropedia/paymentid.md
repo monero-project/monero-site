@@ -3,6 +3,8 @@ terms: ["payment-ID", "payment-IDs", "numer-identyfikacyjny-płatności", "numer
 summary: "Opcjonalny znacznik dodawany w celu identyfikacji transakcji pomiędzy użytkownikami, składający się z 64 heksadecymalnych znaków."
 ---
 
+*Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.
+
 ### Podstawy
 
 Numer identyfikacyjny płatności jest **arbitralnym** i **opcjonalnym** załącznikiem transakcji składającym się z 32 bitów (64 heksadecymalnych znaków) lub z 8 bitów (w przypadku adresów zintegrowanych).
