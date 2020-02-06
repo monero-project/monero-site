@@ -71,22 +71,15 @@
                           <a href="{{site.baseurl}}/the-monero-project/" class="top-link">The Monero Project</a>
                           <div href="#" class="dropdown top-link language-change">
                             <input class="burger-checkdropdown" id="langdrop" type="checkbox">
-                            <label for="langdrop">{% for lang in site.languages %}
-                            
-                                {% if lang == site.lang %}
-                            
-                                    {% t langs.{{ lang }} %}
-                            
-                                {%endif%}
-                            
-                            {%endfor%}<div class="arrow-down"></div></label>
+                            <label for="langdrop">{{ site.data.languages.langs.[site.lang] }}
+                           <div class="arrow-down"></div></label>
                             <div class="dropdown-content text-center">
-                                    {% for lang in site.languages %}
+                              {% for lang in site.languages %}
                                 {% unless site.lang == lang %}
                                   {% if lang == site.default_lang %}
-                                    <a href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                    <a href="{{ site.baseurl_root }}{{ page.url }}" >{{ site.data.languages.langs.[lang] }}</a>
                                   {% else %}
-                                    <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                    <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{{ site.data.languages.langs.[lang] }}</a>
                                   {% endif %}
                                 {% endunless %}
                               {% endfor %}
@@ -136,21 +129,13 @@
                 <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
                  <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
                                <div class="mob dropdown-content text-center">
-                               <p class="mob-lang-change mob-lang-selected">
-                                   
-                              {% for lang in site.languages %}
-                                {% if site.lang == lang %}
-                                 {% t langs.{{ lang }} %}
-                                {% endif %}
-                              {% endfor %}
-                                   
-                               </p>
+                               <p class="mob-lang-change mob-lang-selected">{{ site.data.languages.langs.[site.lang] }}</p>
                                {% for lang in site.languages %}
                                 {% unless site.lang == lang %}
                                   {% if lang == site.default_lang %}
-                                    <a class="mob-lang-change" href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                    <a class="mob-lang-change" href="{{ site.baseurl_root }}{{ page.url }}" >{{ site.data.languages.langs.[lang] }}</a>
                                   {% else %}
-                                    <a class="mob-lang-change" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                                    <a class="mob-lang-change" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{{ site.data.languages.langs.[lang] }}</a>
                                   {% endif %}
                                 {% endunless %}
                               {% endfor %}
