@@ -51,7 +51,7 @@
       url: https://godex.io
     - name: Indacoin - Instant exchange
       url: https://indacoin.com/
-    - name: InstaEx
+    - name: InstaEx - Instant exchange
       url: https://instaex.io/
     - name: Kaiserex
       url: https://www.kaiserex.com/
@@ -71,8 +71,12 @@
       url: https://www.morphtoken.com/
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
+    - name: REXI.cc
+      url: https://rexi.cc
     - name: ShapeShift (Instant)
       url: https://shapeshift.io/
+    - name: SideShift AI - A rapid coin swap that fully supports Monero
+      url: https://sideshift.ai
     - name: SimpleSwap
       url: https://simpleswap.io
     - name: StealthEX
@@ -99,6 +103,8 @@
 - category: Payment Gateways
   id: payment-gateways
   merchants:
+    - name: Bidali
+      url: https://www.bidali.com/
     - name: CDPay
       url: https://www.cdpay.eu/
     - name: CoinPayments
@@ -113,6 +119,8 @@
       url: https://github.com/monero-integrations/monerowp
     - name: MyCryptoCheckout
       url: https://mycryptocheckout.com
+    - name: NOWPayments - Cryptocurrency payment solution
+      url: https://nowpayments.io/
     - name: SwirlPay
       url: https://swirlpay.io/
 - category: Libraries and Helpers
@@ -362,6 +370,8 @@
   merchants:
     - name: Crypto Games
       url: https://www.crypto-games.net/
+    - name: Minko.to - The Monero Plinko. Provably fair on-chain game.
+      url: https://minko.to
     - name: Monero.win - Bet on the Monero Blockchain
       url: https://monero.win/
     - name: SafeDice
