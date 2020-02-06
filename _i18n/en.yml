@@ -73,7 +73,6 @@ index:
   page_title: "Monero - secure, private, untraceable"
 
 home:
-  translated: "yes"
   heading2: A Reasonably Private Digital Currency
   monero_is_cash: Monero is cash for a connected world. It’s fast, private, and secure. With Monero, you are your own bank. You can spend safely, knowing that others cannot see your balances or track your activity.
   get_started: Get Started
@@ -108,7 +107,6 @@ home:
   faq_button: Read answers
 
 hangouts:
-  translated: "yes"
   intro: The Monero community is diverse and varied. We come from all over, but we definitely have some places we like to hang out together. You'll find most of them below. Join us!
   resources: Workgroup Resources
   resources_para: In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects. Mattermost even has relays into the most popular Monero-related IRC channels.
@@ -146,7 +144,6 @@ hangouts:
     description: The many contributors and developers come here to discuss Kovri dev-y things.
 
 merchants:
-  translated: "yes"
   intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please
   intro2:  open a GitLab issue and let us know 
   intro3: (select the "Merchant" template and fill up all sections).
@@ -154,11 +151,9 @@ merchants:
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
 
 sponsorships:
-  translated: "yes"
   intro: The following businesses have supported the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
 
 team:
-  translated: "yes"
   core: Core
   developers: Developers
   developers_para1: The Monero Project has had well over 500 contributors over the life of the project. For a complete list, please see the
@@ -169,7 +164,6 @@ team:
   thanks: Special Thanks
 
 downloads:
-  translated: "yes"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
@@ -238,14 +232,12 @@ downloads:
   installer: Installer
 
 monero-project:
-  translated: "yes"
   kovri: The Kovri project uses end-to-end encryption so that neither the sender nor receiver of a Monero transaction need to reveal their IP address to the other side or to third-party observers (the blockchain). This is done using the same technology that powers the dark net, i2p (Invisible Internet Protocol). The project is currently in heavy, active development and is not yet integrated with Monero.
   kovri_button: Visit Kovri Website
   openalias: The OpenAlias project simplifies cryptocurrency payments by providing FQDNs (Fully Qualified Domain Names, i.e. example.openalias.org) for Monero wallet addresses in a way that ensures everyone's privacy is secure. The project is well underway and has already been implemented in many Monero wallets.
   openalias_button: Visit OpenAlias Website
 
 press-kit:
-  translated: "yes"
   intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself.
   intro2: Note that the white background options have a white background under the Monero symbol ONLY, not as a background to the whole image.
   intro3: Lastly, you can download everything on this page in one zip file by clicking
@@ -280,7 +272,6 @@ press-kit:
         A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
-  translated: "yes"
   title_gui: Instructions for the GUI
   gui1: "Accepting a payment with the GUI is very easy. Doesn't matter if you are a merchant or an user, you will have two pages available: Receive and Merchants."
   gui2: The receive page (shown below) is explained in every detail
@@ -332,7 +323,6 @@ accepting:
   merchantsthirdp1: Some of those offer nice features like the possibility to automatically convert part of your income in fiat money or to accept other cryptocurrencies along with Monero.
 
 contributing:
-  translated: "yes"
   intro: Monero is an open-source, community-driven project. Described below are several ways to support the project.
   network: Support the Network
   develop: Develop
@@ -362,7 +352,6 @@ contributing:
   donate-other_para2: for alternative means of donating or if you would like to become a sponsor for the Monero Project.
 
 faq:
-  translated: "yes"
   q1: How does Monero have value?
   a1: Monero has value because people are willing to buy it. If no one is willing to buy Monero, then it will not have any value. Monero’s price increases if demand exceeds supply, and it decreases if supply exceeds demand.
   q2: How can I get Monero?
@@ -396,7 +385,6 @@ faq:
   a14: There is no such thing as 100% anonymous. If nothing else, your anonymity set is the set of people using Monero. Some people don't use Monero. Monero may also have bugs. Even if not, ways may exist to infer some information through Monero's privacy layers, either now or later. Attacks only get better. If you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.
 
 mining:
-  translated: "yes"
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
   intro2: The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.
   support: Support
@@ -413,7 +401,6 @@ mining:
   software_para: Note that some miners may have developer fees.
 
 using:
-  translated: "yes"
   intro: Transacting with Monero can be made easy. This page is designed to guide users in that process.
   learn: 1. Learn
   learn_para1: Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the
@@ -448,7 +435,6 @@ using:
   transact_para2: Merchants page.
 
 what-is-monero:
-  translated: "yes"
   need-to-know: What you need to know
   leading: Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.
   leading_para1: Most existing cryptocurrencies, including Bitcoin and Ethereum, have transparent blockchains, meaning that transactions are openly verifiable and traceable by anyone in the world. Furthermore, sending and receiving addresses for these transactions may potentially be linkable to a person's real-world identity.
@@ -470,7 +456,6 @@ what-is-monero:
   videos: Monero Videos (English)
 
 about:
-  translated: "yes"
   history: A Brief History
   history_para1: Monero was launched in April 2014. It was a fair, pre-announced launch of the CryptoNote reference code. There was no premine or instamine, and no portion of the block reward goes to development. See the original Bitcointalk thread
   history_para2: here.
@@ -487,14 +472,12 @@ about:
 
 
 developer-guides:
-  translated: "yes"
   outdated: "Please note: the guides below have been recently refreshed and are maintained almost up-to-date by the community. However, methods are often added / removed / updated and may not be accurately described here."
   rpc: RPC Documentation
   daemonrpc: Daemon RPC Documentation
   walletrpc: Wallet RPC Documentation
 
 user-guides:
-  translated: "yes"
   general: General
   mining: Mining
   recovery: Recovery
@@ -523,7 +506,6 @@ user-guides:
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
-  translated: "yes"
   completed: Completed task
   ongoing: Ongoing task
   upcoming: Upcoming task
@@ -531,7 +513,6 @@ roadmap:
 
 
 research-lab:
-  translated: "yes"
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
   mrl_papers: Monero Research Lab Papers (English)
   abstract: Abstract
@@ -574,7 +555,6 @@ research-lab:
 
 
 specs:
-  translated: "yes"
   fair_title: No premine, no instamine, no token
   fair_premine: Monero had no premine or instamine
   fair_token: Monero did not sell any token
@@ -610,7 +590,6 @@ specs:
   amount_hidden_mode: Ring confidential transactions
 
 library:
-  translated: "yes"
   description: "Below are some publications, books or magazines available for you to download."
   books:
   - category: Books
@@ -646,7 +625,6 @@ library:
         In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
 
 moneropedia:
-  translated: "yes"
   add_new_button: Add New Entry
   add_new_text1: If there is an entry you'd like to modify or be added, please
   add_new_link: open an issue on this website's GitLab repository

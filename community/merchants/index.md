@@ -55,7 +55,3 @@ permalink: /community/merchants/index.html
         <em>{% t merchants.disclaimer %}</em>
     </p>
 </div>
-
-<div class="untranslated {% t merchants.translated %}">
-    <p>{% t global.untranslated %} <a class="untranslated-link" href="https://repo.getmonero.org/monero-project/monero-site/blob/master/README.md#140-how-to-translate-a-page">README</a>.</p>
-</div>

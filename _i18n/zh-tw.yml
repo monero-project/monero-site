@@ -73,7 +73,6 @@ index:
   page_title: "門羅幣 - 安全、保護隱私且完全匿蹤的加密貨幣"
 
 home:
-  translated: "yes"
   heading2: 保護隱私的數位貨幣
   monero_is_cash: 門羅幣是網路世界的現金，快速、保護隱私且安全。使用門羅幣時，你就是你自己的銀行，你可以安全的交易，不用擔心別人會看到你的帳戶餘額或追蹤你的金融活動。
   get_started: 開始使用
@@ -108,7 +107,6 @@ home:
   faq_button: 閱讀解答
 
 hangouts:
-  translated: "yes"
   intro: 門羅幣的社群具有高度的多樣性，我們雖然來自世界各地，但還是常常會在幾個地方聚在一起交流，你可以在以下幾個地方找到我們，加入我們吧！
   resources: 協作群組資源
   resources_para: 為了支持有組織性的協作，門羅幣有幾種資源平台可以用聚會或是規劃專案，Mattermost 甚至有橋接了數個熱門的 Monero IRC 頻道。
@@ -143,7 +141,6 @@ hangouts:
     description: 這是用來討論與 Kovri 專案開發的頻道。
 
 merchants:
-  translated: "yes"
   intro1: 使用門羅幣的各類商家都可以獲得門羅幣帶來的金融隱私保護價值，以下是一些我們知道目前接受使用門羅幣購買商品或服務的商家。如果其中有商家已停止接受使用門羅幣，或是你想讓你所經營的事業被列在此表
   intro2: 請在 GitLab 上開一個新 issue 通知我們 
   intro3: 
@@ -151,11 +148,9 @@ merchants:
     "請注意：這些連結只是提供便利的資訊，並不代表是由門羅幣社群認可的產品、服務或該單位所發表之個人或單位的意見。門羅幣社群不對其準確性，合法性或其網站內容負擔任何責任。請聯絡該單位以獲得與其內容相關的問題解答。 請謹記貨物售出概不退換的原則，你必須自己做功課並為其負責，永遠要在線上購物時發揮你的判斷力。
 
 sponsorships:
-  translated: "yes"
   intro: 下列商家已用行動支持門羅幣專案其欲達成世界金融隱私的目標，我們由衷的感激他們的貢獻。如果你也想要贊助門羅幣專案並被列在本頁清單，請電郵至 dev@getmonero.org。
 
 team:
-  translated: "yes"
   core: 核心開發團隊
   developers: 開發者們
   developers_para1: 門羅幣專案誕生以來，擁有來自世界各地超過 500 位的開發貢獻者，完整的清單請見
@@ -166,7 +161,6 @@ team:
   thanks: 特別感謝
 
 downloads:
-  translated: "no"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
@@ -230,14 +224,12 @@ downloads:
   installer: Installer
 
 monero-project:
-  translated: "yes"
   kovri: Kovri 專案使用點對點的加密技術，使得不論是門羅幣交易的發送者或接收者都不會向對方或第三方揭露他們的 IP 位址。這與暗網的所用到的是相同的技術：I2P (Invisible Internet Protocol)。這專案目前正在積極活躍的開發中，尚未整合到門羅幣中。
   kovri_button: 造訪 Kovri 專案網站
   openalias: OpenAlias 專案藉由 FQDNs (Fully Qualified Domain Names)， 像是 example.openalias.org 這樣的網址來簡化加密貨幣的支付。這功能可確保大家的門羅幣錢包地址的隱私安全。此專案的進展相當順利，並已在許多門羅幣錢包中完成實做。
   openalias_button: 造訪 OpenAlias 專案網站
 
 press-kit:
-  translated: "yes"
   intro1: 你可以在這邊取得一些門羅幣的代表性圖案與標誌。你可以選擇想要的尺寸或是下載 .ai 檔案以自行編輯你想要的標示圖案。
   intro2: 請注意白色背景選項是只有在門羅幣圖案底下的白色背景，而非整張圖片的背景。
   intro3: 最後，你可以在這裡下載一個包含所有檔案的 zip 壓縮檔，請點擊
@@ -272,7 +264,6 @@ press-kit:
         A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
-  translated: "yes"
   title: 指令界面工具的使用說明
   basics: 基本介紹
   basics_para1: 門羅幣與你過去曾接觸過其他的 @加密貨幣 稍微有點不同。以比特幣與其相同衍生類型的幣為例，通常商家的支付系統會為每一個使用者或每一筆交易產生全新的收款 @地址 。
@@ -301,7 +292,6 @@ accepting:
   scanning_list4: 以交易雜湊碼來判斷並去除與先前已處理過的重複的交易紀錄。
 
 contributing:
-  translated: "yes"
   intro: 門羅幣是一個開放原始碼、由社群推動的專案。以下列出了一些可以支持本專案的方法。
   network: 支持交易網路
   develop: 開發工作
@@ -331,7 +321,6 @@ contributing:
   donate-other_para2: 若你想要以其他的方式贊助或是想要成為門羅幣的贊助單位。
 
 faq:
-  translated: "yes"
   q1: 門羅幣的價值是怎麼產生的？
   a1: 門羅幣之所以會有價值是因為人們願意購買它，若是沒有人願意購買門羅幣，他將不會有任何價值。而若是市場需求量提升，門羅幣的價格亦隨著上升，若是供過於求則會使價格下降。
   q2: 我要如何取得門羅幣？
@@ -365,7 +354,6 @@ faq:
   a14: 沒有所謂的百分之百匿名。 正常情況下，門羅幣能提供的匿名程度就是相對於不使用門羅幣能提供的保護程度。門羅幣也有可能出現 bug，即使沒有，還是有可能存在著一些在門羅幣使用中推測出些許隱私資訊的方法，不論是現在或未來，對隱私的的攻擊力道只會越來越強。舉例來說，即使你有繫安全帶還是有可能在車禍中重傷致死。請使用常識思考，謹慎面對威脅並作出一定程度的防禦。
 
 mining:
-  translated: "yes"
   intro1: 門羅幣是一種透過工作量證明達到分散式共識的加密貨幣。你可以在下面找到一些關於如何開始挖礦的資訊。
   intro2: 門羅幣專案並不為任何礦池、軟體、硬體做背書，以下提供之內容僅為教學使用的資訊分享。
   support: 技術支援
@@ -383,7 +371,6 @@ mining:
   software_para: 請注意有些挖礦工具可能會收取開發者手續費。
 
 using:
-  translated: "yes"
   intro: 用門羅幣交易可以很簡單，本頁面將會引導使用者進行。
   learn: 1. 學習
   learn_para1: 門羅幣是安全、保護隱私且完全匿蹤的加密或幣。開發者與社群都致力於保護這些核心價值，欲瞭解更多請詳見
@@ -418,7 +405,6 @@ using:
   transact_para2: 商家頁面。
 
 what-is-monero:
-  translated: "yes"
   need-to-know: 你需要知道的事情
   leading: 門羅幣是專注在保護隱私與對抗審查交易的領導加密貨幣。
   leading_para1: 大多數現行的加密或幣，包括比特幣與乙太幣都是透明的區塊鏈，意思是所有交易都是向全世界任何一個人開放驗證與查詢。此外，發送與接收這些交易的錢包地址有可能會被連結至某個人在真實世界中的身分。
@@ -440,7 +426,6 @@ what-is-monero:
   videos: 門羅幣影片 (英文)
 
 about:
-  translated: "yes"
   history: 簡要歷史
   history_para1: 門羅幣專案創始於 2014 年 4 月。是一次公平、預先公告以 CryptoNote 程式碼作為基礎的發行。沒有預挖或瞬挖，也沒有給開發工作的抽成。詳見原始的 Bitcointalk 公告
   history_para2: 討論串。
@@ -457,7 +442,6 @@ about:
 
 
 developer-guides:
-  translated: "yes"
   outdated: "請注意：以下的教學已在近期由社群更新並保持在最新狀態。然而，方法函式常常會增加 / 移除 / 更新，因此教學中描述的資訊仍有可能不夠準確。"
   rpc: RPC 說明文件
   daemonrpc: 節點 RPC 說明文件
@@ -465,7 +449,6 @@ developer-guides:
   soon: 更多文件即將發布...
 
 user-guides:
-  translated: "yes"
   general: 一般
   mining: 挖礦
   recovery: 回復
@@ -494,7 +477,6 @@ user-guides:
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
-  translated: "yes"
   completed: 已完成的工作
   ongoing: 進行中的工作
   upcoming: 即將到來的工作
@@ -502,7 +484,6 @@ roadmap:
 
 
 research-lab:
-  translated: "yes"
   intro: 門羅幣不只是致力於打造一個滿足貨幣替代性的貨幣，更是持續研究著與加密貨幣相關的金融隱私。在以下你能看到一些來自門羅幣研究實驗室發表的研究論文，還有更多論文正在準備發表。
   mrl_papers: 門羅幣研究實驗室的論文 (英文)
   abstract: 摘要
@@ -543,7 +524,6 @@ research-lab:
 
 
 specs:
-  translated: "yes"
   fair_title: 沒有預挖、沒有瞬挖、沒有代幣
   fair_premine: 門羅幣從未進行預挖或瞬挖
   fair_token: 門羅幣從未販售過任何代幣
@@ -579,7 +559,6 @@ specs:
   amount_hidden_mode: 環狀保密交易
 
 library:
-  translated: "no"
   description: "以下是一些出版物、書籍或雜誌提供下載。"
   books:
   - category: 書籍
@@ -615,7 +594,6 @@ library:
         In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
 
 moneropedia:
-  translated: "no"
   add_new_button: 新增條目
   add_new_text1: 如果你有條目想要修改或新增，請
   add_new_link: 在本網站的 GitLab repository 新開一個 issue

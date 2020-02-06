@@ -73,7 +73,6 @@ index:
   page_title: "门罗币-安全、隐私、无法追踪" 
 
 home:
-  translated: "yes"  
   heading2: 隐私数字货币
   monero_is_cash: 门罗币是互联网世界的电子现金。使用门罗币交易快速，保护隐私且安全。有了门罗币，您就是自己的银行。您可以安全地进行交易，不用担心别人会看到你的余额和跟踪你的金融活动。
   get_started: 开始
@@ -108,7 +107,6 @@ home:
   faq_button: 查看回答
 
 hangouts:
-  translated: "yes"
   intro: 门罗币在各种社交媒体上都有许多社区。我们可能来自世界各处，但是总有一些地方是我们常去的。门罗社区的聚集处已经列在下面，加入我们吧！ 
   resources: 工作组
   resources_para: 以下是门罗社区工作组经常谈论和规划项目的几个频道，你可以在这里找到开发组人员。 Mattermost甚至将被列为最受欢迎的门罗币交流频道。 
@@ -143,7 +141,6 @@ hangouts:
     description: 很多开发人员和代码贡献者在这里讨论科维开发事宜。
 
 merchants:
-  translated: "yes"
   intro1: 各类服务商都开始逐渐重视门罗币为我们带来的财务隐私。以下是目前接受门罗币作为支付手段的商家列表。如果这里有公司不再接受门罗币，或者您想被添加到这个列表，
   intro2: 请打开GitLab issue并告知我们 
   intro3: 
@@ -151,11 +148,9 @@ merchants:
     "温馨提示：这些链接仅为浏览方便而列出，仅供参考；这并不代表门罗社区对这些商家/服务的认可！门罗社区不对这些外部网站的安全性、真实性、合法性承担责任。如有疑问请您自行联系这些网站。请您在网络购物时始终保持警惕和独立思考。"
 
 sponsorships:
-  translated: "yes"
   intro: 以下企业支持门罗币将金融隐私带给全世界的愿景。我们对他们的帮助和贡献感激不尽。如果您也想赞助门罗项目并被添加到此列表，请给dev@getmonero.org发送电子邮件。
 
 team:
-  translated: "yes"
   core: 核心开发组
   developers: 开发者  
   developers_para1: 门罗币项目自创始以来已经有超过500位贡献者。详细的名单请参见
@@ -166,7 +161,6 @@ team:
   thanks: 特别致谢
 
 downloads:
-  translated: "no"
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
@@ -230,14 +224,12 @@ downloads:
   installer: Installer
 
 monero-project:
-  translated: "yes"
   kovri: Kovri项目使用端对端的加密技术，因此门罗币交易的发送方和接收方都不需要向另一方或第三方（区块链）透露其IP地址。这是使用与暗网i2p（隐形互联网协议）相同的技术完成的。该项目目前正处于积极发展阶段，尚未与Monero集成。
   kovri_button: 浏览Kovri网站
   openalias: OpenAlias项目通过为门罗币钱包地址提供FQDN（完全限定域名，即example.openalias.org）来确保每个人的隐私都是安全的，从而简化加密货币支付。该项目正在顺利进行，并已在许多Monero钱包中应用。
   openalias_button: 浏览OpenAlias网站
 
 press-kit:
-  translated: "yes"
   intro1: 您可以在这里下载门罗币各种大小的图标文件。您可以直接下载图片文件，或者下载.ai格式文件自己编辑。
   intro2: 白色背景填充仅限于门罗币图案内部，而非整个图片。
   intro3: 您可以点击这里把所有的文件下载到一个
@@ -273,7 +265,6 @@ press-kit:
         A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
-  translated: "yes"
   title: 命令行界面的说明
   basics: 基础知识
   basics_para1: 门罗币的工作方式和其他@加密货币的工作方式不一样。对比特币和其他山寨币来说，商家收款时常常用一次就更换一次@地址。
@@ -302,7 +293,6 @@ accepting:
   scanning_list4: 根据我们已收到并处理的事务哈希删除重复项
 
 contributing:
-  translated: "yes"
   intro: 门罗是一个开源的，社区主导的项目。下面列出了您可以为社区贡献力量的几种方式。
   network: 为网络提供支持
   develop: 开发
@@ -331,7 +321,6 @@ contributing:
   donate-other_para1: 如果您希望成为门罗项目的赞助商，请给
   donate-other_para2: 发送电子邮件以获取其他捐助方式。
 faq:
-  translated: "yes"
   q1: 为什么门罗币有价值？
   a1: 门罗币有价值，因为人们愿意购买它。如果没有人愿意购买它，那么它就不再有价值。如果供不应求，价格上涨；供大于求，价格下跌。
   q2: 怎么才能获得门罗币？
@@ -365,7 +354,6 @@ faq:
   a14: 不可能有100%匿名的东西。很简单，你的匿名范围就是使用门罗币的人们。很多人不用门罗币，门罗币也可能有漏洞。即便今天没有破解门罗匿名的办法，我们也不能保证以后没有。网络攻击只会变本加厉。打个比方，就算你系了安全带，车祸来了一样得死（丧）。永远保持独立思考，动用你的直觉和常识，最好能深入了解和学习，补充知识，以便更好地保持自己的匿名性。
 
 mining:
-  translated: "yes"
   intro1: 门罗币是一种使用工作量证明（POW）来实现去中心化共识的加密货币。我们在下方为您列出了一些用于挖矿的信息和工具。
   intro2: 门罗项目并不支持任何特定的矿池、软件、硬件，以下内容仅供参考，是否使用请您自行决定。
   support: 帮助
@@ -383,7 +371,6 @@ mining:
   software_para: 注意：一些挖矿软件会收取手续费。
 
 using:
-  translated: "yes"
   intro: 使用门罗币其实非常简单。这个页面会指导您如何使用门罗币。
   learn: 一：学习相关知识
   learn_para1: 门罗币是一种安全、私密且无法追踪的加密货币。开发人员和社区致力于保护此种价值观。通过阅读
@@ -418,7 +405,6 @@ using:
   transact_para2: 商家页面。
 
 what-is-monero:
-  translated: "yes"
   need-to-know: 你需要知道的：
   leading: 门罗币是加密货币匿名和抗审查领域中的先锋。
   leading_para1: 当下存在的大多数加密货币都拥有透明可查询的区块链，包括比特币和以太坊，这意味着世界上的任何人都可以查看任何一笔交易。而币的地址可以和实体世界的个人关联起来。
@@ -440,7 +426,6 @@ what-is-monero:
   videos: 门罗币视频（英文）
 
 about:
-  translated: "yes"
   history: 门罗币历史
   history_para1: 门罗币项目在2014年4月正式发起。门罗项目非常公平，预先公布了CryptoNote参考代码。门罗没有预挖或者代挖等，并且没有任何的公司开发稅（比如从块奖励中抽成20%作为团队收入)。最开始在bitcointalk上面的发起帖请查看
   history_para2: 这里。
@@ -457,7 +442,6 @@ about:
 
 
 developer-guides:
-  translated: "yes"
   outdated: "请注意：以下指南一直由社区进行着不断更新，但是具体的使用方法可能经常变更，其中变更的内容在此可能描述不准确。"
   rpc: RPC文件
   daemonrpc: 后台程序RPC文件
@@ -465,7 +449,6 @@ developer-guides:
   soon: 敬请期待更多..
 
 user-guides:
-  translated: "yes"
   general: 常见问题
   mining: 挖矿
   recovery: 恢复
@@ -494,7 +477,6 @@ user-guides:
   tor_wallet: Connecting your local wallet to your own daemon over Tor
 
 roadmap:
-  translated: "yes"
   completed: 已经完成的事情
   ongoing: 着手实现的目标
   upcoming: 计划实现的目标
@@ -502,7 +484,6 @@ roadmap:
 
 
 research-lab:
-  translated: "no"
   intro: 门罗不仅致力于创造可互换性的货币，而且还致力于研究金融隐私领域，因为它也涉及加密货币。您可以在下面找到我们自己的门罗研究组的工作，以后还会有更多论文。
   mrl_papers: 门罗研究组论文(英文)
   abstract: 摘要
@@ -543,7 +524,6 @@ research-lab:
 
 
 specs:
-  translated: "yes"
   fair_title: 不预挖，不分成，不众筹
   fair_premine: 门罗项目没有任何的预挖或项目开发组的保留币
   fair_token: 门罗项目也不卖任何币和代币
@@ -580,7 +560,6 @@ specs:
   amount_hidden_mode: 环加密交易
 
 library:
-  translated: "yes"
   description: "以下是一些可供您下载的出版物，书籍和杂志。"
   books:
   - category: 书籍
@@ -616,7 +595,6 @@ library:
         在本期中谈到了: 最新进展，门罗研究组，科维，社区，硬件和Monerujo。
 
 moneropedia:
-  translated: "yes"
   add_new_button: 添加新条目
   add_new_text1: 如果有您想添加或修改的条目，请在
   add_new_link: 这个网页的GitLab存储库中开启一个新问题
