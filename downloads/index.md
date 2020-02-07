@@ -240,7 +240,7 @@ permalink: /downloads/index.html
                             </div>
                         </div>
                         <div class="row mob-wallets center-xs">
-                          <a href="https://kastelo.org"><img src="/img/kastelo.png"></a>
+                          <a href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png"></a>
                         </div>
                         <div class="row mob-wallets center-xs">
                           <a href="https://www.ledger.com/monero-wallet/"><img src="/img/ledger.png"></a>
