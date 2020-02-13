@@ -193,35 +193,68 @@
     - name: Getmonero.org Localization in Brazilian-Portuguese and Dutch
       date: 2019-03-12
       status: completed
-    - name: Trezor Hardware Wallets Support
-      date:
-      status: ongoing
-    - name: Pruning nodes
-      date:
-      status: ongoing
-    - name: Broadcast transaction over Tor
-      date:
-      status: upcoming
-    - name: tini2p integration
-      date:
-      status: upcoming
-    - name: Kovri Integration
-      date:
-      status: upcoming
-    - name: Return address
-      date:
-      status: upcoming
+    - name: "DLSAG: Non-Interactive Refund Transactions For Interoperable Payment Channels in Monero"
+      date: 2019-05-29
+      status: completed
+    - name: Blockchain pruning
+      date: 2019-07-17
+      status: completed
+    - name: Trezor model T support
+      date: 2019-07-17
+      status: completed
+    - name: Ledger Nano X support
+      date: 2019-07-17
+      status: completed
+    - name: Tor & I2P CLI wallet integration
+      date: 2019-07-17
+      status: completed
+    - name: Multisig Messaging System
+      date: 2019-07-17
+      status: completed
+    - name: "Localization platform change: from Pootle to Weblate"
+      date: 2019-10-07
+      status: completed
+    - name: Pay for service system using mining (RPC-Pay)
+      date: 2019-11-12
+      status: completed
+    - name: IPv6 support
+      date: 2019-11-12
+      status: completed
+    - name: Standalone (long) payment ID support removed
+      date: 2019-11-12
+      status: completed
+    - name: GUI automatic remote nodes discovering and switching option
+      date: 2019-11-19
+      status: completed
     - name: New Proof of Work RandomX
-      date: 
-      status: upcoming
+      date: 2019-11-30
+      status: completed
 - year: 2020
   accomplishments:
-    - name: Anonymity network aggregator for data transmission
+    - name: Getmonero translatable on Weblate
+      date: 2020-02-12
+      status: completed
+    - name: Onion address for Getmonero.org
       date:
-      status: upcoming
+      status: ongoing
+    - name: Implementation of the Dandelion++ protocol
+      date:
+      status: ongoing
+    - name: Wallet scanning speedups (support for supercop ASM)
+      date:
+      status: ongoing
+    - name: Concise linkable spontaneous anonymous group (CLSAG) signatures
+      date:
+      status: ongoing
+    - name: "Triptych: logarithmic-sized linkable ring signatures with applications"
+      date:
+      status: ongoing
+    - name: "Kastelo: open source hardware wallet"
+      date:
+      status: ongoing
     - name: Second-layer solutions for speed and scalability
       date:
       status: upcoming
-    - name: Additional MRL research papers
+    - name: Return addresses
       date:
       status: upcoming
