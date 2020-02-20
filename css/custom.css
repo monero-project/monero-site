@@ -3416,6 +3416,16 @@ footer {
   left: calc(3 * (100% / 5));
 }
 
+@media only screen and (max-width: 50rem) {
+
+.tabPanel-merchant > h2 {
+  font-size: 1.1rem;
+  height: 3rem;
+  padding: 1rem 0;
+}
+
+}
+
 /***************************ROADMAP STYLING*********************************/
 
 .roadmap .completed {
