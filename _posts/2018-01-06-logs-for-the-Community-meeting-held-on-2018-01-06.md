@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-01-06
 summary: Community highlights, Forum Funding System updates, RFC-HWALLET-1, Rehrar's Kovri proposal, Serhack's integrations, Fondajo, community materials, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: dEBRUYNE / fluffypony
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: The Funds Travel Rule and Monero
 summary: Monero as a platform does not interfere with the Funds Travel Rule regulatory requirements
-tags: [announcements]
+tags: [community]
 author: Monero Compliance Workgroup
 ---
 

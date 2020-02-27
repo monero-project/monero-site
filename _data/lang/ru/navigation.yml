@@ -16,12 +16,14 @@
   url: downloads/
 - title: Последние новости
   subfolderitems:
-    - page: Объявления
-      url: blog/tags/announcements.html
-    - page: Журналы встреч
-      url: blog/tags/dev%20diaries.html
+    - page: срочные
+      url: blog/tags/urgent.html
     - page: Релизы
       url: blog/tags/releases.html
+    - page: сообщество
+      url: blog/tags/community.html
+    - page: Журналы встреч
+      url: blog/tags/dev%20diaries.html
     - page: Все новости
       url: blog
 - title: Сообщество

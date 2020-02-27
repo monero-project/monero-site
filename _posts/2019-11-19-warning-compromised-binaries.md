@@ -2,7 +2,7 @@
 layout: post
 title: "Warning: The binaries of the CLI wallet were compromised for a short time"
 summary: The binaries available on this website were compromised for a short time
-tags: [announcements]
+tags: [urgent]
 author: ErCiccione
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the GUI Meeting Held on 2019-04-23
 summary: Pending PRs, Issues, past week development, coming week development and miscellaneous
-tags: [gui, dev-diaries]
+tags: [gui, dev diaries]
 author: el00ruobuob / dsc
 ---
 

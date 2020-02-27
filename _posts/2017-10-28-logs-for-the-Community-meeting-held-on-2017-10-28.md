@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-10-28
 summary: Community highlights, Forum Funding System updates, Monero meetup kit, 34C3, RFC-HWALLET-1, Monero integrations, upcoming meetups, community survey, and miscellaneous
-tags: [community]
+tags: [dev diaries]
 author: dEBRUYNE / fluffypony
 ---
 

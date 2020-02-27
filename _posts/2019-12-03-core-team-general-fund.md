@@ -2,7 +2,7 @@
 layout: post
 title: A message from the Core Team about the General Fund
 summary: On General Fund and related matters, from the core team
-tags: [announcements]
+tags: [community]
 author: The Core Team
 ---
 

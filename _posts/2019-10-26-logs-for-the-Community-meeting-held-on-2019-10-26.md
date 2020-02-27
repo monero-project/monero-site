@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2019-10-26
 summary: Community highlights, CCS updates, Workgroup report, 0.15 naming discussion, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

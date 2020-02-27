@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-09-30
 summary: Community highlights, Forum Funding System updates, Monero Q&A sessions, Monero support, Monero meetups, Taiga projects, open ideas time, and miscellaneous
-tags: [community]
+tags: [dev diaries]
 author: dEBRUYNE / fluffypony
 ---
 

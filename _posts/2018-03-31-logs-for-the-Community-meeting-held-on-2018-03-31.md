@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2018-03-31
 summary: Community highlights, Forum Funding System updates, RFC-HWALLET-1, Localization workgroup, RIAT Monero workgroup, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

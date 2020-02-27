@@ -2,7 +2,7 @@
 layout: post
 title: Announcing the Monero Celebrity Center
 summary: Providing rapid assistance to the heaviest of Monero's users!
-tags: [core]
+tags: [core, community]
 author: Monero Core Team
 ---
 

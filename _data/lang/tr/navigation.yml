@@ -16,12 +16,14 @@
   url: downloads/
 - title: Son Haberler
   subfolderitems:
-    - page: Duyurular
-      url: blog/tags/announcements.html
-    - page: Toplantı Kayıtları
-      url: blog/tags/dev%20diaries.html
+    - page: Urgent
+      url: blog/tags/urgent.html
     - page: Bültenler
       url: blog/tags/releases.html
+    - page: Community
+      url: blog/tags/community.html
+    - page: Toplantı Kayıtları
+      url: blog/tags/dev%20diaries.html
     - page: Tüm Gönderiler
       url: blog
 - title: Topluluk

@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2017-07-16
 summary: Work groups and IRC channel reorganization, meeting structure, slogan, user guides, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: dEBRUYNE / fluffypony
 ---
 

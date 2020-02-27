@@ -2,7 +2,7 @@
 layout: post
 title: An Unofficial Response to "An Empirical Analysis of Linkability in the Monero Blockchain"
 summary: A community-drafted response to Andrew Miller, et al.
-tags:  [core, crypto, research, announcements]
+tags:  [core, crypto, research, community]
 author: Justin Ehrenhofer (SamsungGalaxyPlayer) and the Monero community
 ---
 

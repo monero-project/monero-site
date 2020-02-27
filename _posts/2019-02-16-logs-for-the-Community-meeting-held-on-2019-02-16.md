@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2019-02-16
 summary: Community highlights, Forum Funding System updates, Workgroup report, Network Upgrade, and RamdomX PoW discussion
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

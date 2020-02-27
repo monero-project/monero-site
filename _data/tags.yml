@@ -84,3 +84,6 @@
 
 - slug: announcements
   name: Announcements
+
+- slug: urgent
+  name: Urgent

@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Community Meeting Held on 2019-01-19
 summary: Community highlights, Forum Funding System updates, Event topics, Hardware topics, Surveys, Workgroup report, and miscellaneous
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: el00ruobuob / SamsungGalaxyPlayer
 ---
 

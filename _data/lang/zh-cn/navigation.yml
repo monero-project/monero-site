@@ -16,12 +16,14 @@
   url: downloads/
 - title: 最新资讯
   subfolderitems:
-    - page: 通告
-      url: blog/tags/announcements.html
-    - page: 会议记录
-      url: blog/tags/dev%20diaries.html
+    - page: Urgent
+      url: blog/tags/urgent.html
     - page: 发布
       url: blog/tags/releases.html
+    - page: Community
+      url: blog/tags/community.html
+    - page: 会议记录
+      url: blog/tags/dev%20diaries.html
     - page: 所有文章
       url: blog
 - title: 社区

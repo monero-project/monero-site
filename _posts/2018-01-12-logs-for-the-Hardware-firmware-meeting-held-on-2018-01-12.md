@@ -2,7 +2,7 @@
 layout: post
 title: Logs for the Hardware Firmware Meeting Held on 2018-01-12
 summary: Discussion of the firmware for the dedicated hardware wallet and a discussion of Ledger's approach
-tags: [dev diaries, community, crypto]
+tags: [dev diaries, crypto]
 author: dEBRUYNE / fluffypony
 ---
 

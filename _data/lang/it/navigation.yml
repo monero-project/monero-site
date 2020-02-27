@@ -16,12 +16,14 @@
   url: downloads/
 - title: Notizie recenti
   subfolderitems:
-    - page: Annunci
-      url: blog/tags/announcements.html
-    - page: Log dei meeting
-      url: blog/tags/dev%20diaries.html
+    - page: Urgente
+      url: blog/tags/urgent.html
     - page: Uscite
       url: blog/tags/releases.html
+    - page: Comunità
+      url: blog/tags/community.html
+    - page: Log dei meeting
+      url: blog/tags/dev%20diaries.html
     - page: Tutti i post
       url: blog
 - title: Comunità
