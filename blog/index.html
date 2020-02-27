@@ -16,9 +16,11 @@ title: titles.allposts
                             {{ post.summary }}
                         </p>
                         <p>
-                            <small>{% t blog.tagged %}:
+                            <small>
+                            {% t blog.author %} {{ post.author }} | {{ post.date | date: "%-d %B %Y" }}<br>
+                            Category:
                             {% for tag in post.tags %}
-                            <a href="/blog/tags/{{ tag }}.html">[{{ tag }}]</a>
+                            <a href="/blog/tags/{{ tag }}.html">{{ tag }}</a>
                             {% endfor %}
                             </small>
                         </p>

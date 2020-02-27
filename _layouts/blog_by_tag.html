@@ -28,6 +28,10 @@ layout: custom
                       <p>
                         {{ post.summary }}
                       </p>
+                      <p><small>
+                        {% t blog.author %} {{ post.author }} | {{ post.date | date: "%-d %B %Y" }}
+                        </small>
+                      </p>
                   </div>
 				{% endfor %}
 			{% else %}
