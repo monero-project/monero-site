@@ -123,6 +123,8 @@
       url: https://nowpayments.io/
     - name: SwirlPay
       url: https://swirlpay.io/
+    - name: Vigla
+      url: https://vigla.biz/
 - category: Libraries and Helpers
   id: libraries
   merchants:
@@ -141,7 +143,7 @@
     - name: MoneroPy (Python)
       url: https://github.com/bigreddmachine/MoneroPy
     - name: monero-python (Python)
-      url: https://github.com/emesik/monero-python
+      url: https://github.com/monero-ecosystem/monero-python
     - name: PHP-Monero (PHP)
       url: https://github.com/MalMen/PHP-Monero
     - name: python-monero (Python)
