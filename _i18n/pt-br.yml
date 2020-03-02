@@ -634,6 +634,7 @@ moneropedia:
     paperwallet: Carteira em Papel
     paymentid: ID de Pagamento
     pedersen-commitment: Comprometimento de Pedersen
+    remote-node: Remote Node
     reseed: Reseed
     ringCT: Ring CT
     ringsignatures: Assinaturas em anel
