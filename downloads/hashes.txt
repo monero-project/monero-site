@@ -3,9 +3,13 @@ Hash: SHA256
 
 This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 
-Please verify the signature against the signature for fluffypony in the
+Please verify the signature against the key for binaryFate in the
 source code repository (/utils/gpg_keys).
 
+Note the previous signer for Monero binaries was fluffypony, the change of responsibility
+has been announced here: https://web.getmonero.org/2019/12/16/technical-responsibilities-update.html
+
+# CLI
 monero-win-x64-v0.15.0.1.zip, a1d2a4a0a9f2cdb17808c0b7a2a872a70c9f3e6487494b29cc1627b5490f25e9
 monero-win-x86-v0.15.0.1.zip, a3dc6d57c52383fcb83337799909c2c85cc8fe88b127d9408e3ea92880beb38d
 monero-mac-x64-v0.15.0.1.tar.bz2, f3648a94fc9252a2e5b6e56978e756ff272403ec385f8be42338cae3f4f4e8a5
@@ -17,23 +21,30 @@ monero-android-armv8-v0.15.0.1.tar.bz2, f9cbf531049068f9c07b92a89371ff8aab6b6906
 monero-android-armv7-v0.15.0.1.tar.bz2, ea5eac2eed4d10cb35af50182ad11edeeffc4200d2b2b8e47f0283ae06fc4185
 monero-freebsd-x64-v0.15.0.1.tar.bz2, 810dbac09546a14fe6e2c276f41eebc5489bc43f91c0a85a080528ccd9ce12a8
 
-monero-gui-win-x64-v0.15.0.2.zip, 8684d9ba3cdad8f9b73bbcae85a69f7eb3cfd27db030163485e066131b68e7b7
-monero-gui-install-win-x64-v0.15.0.2.exe, e09edd01afa7f2224b3498825e5ba5dcf3fe887efb0b3ff07bbc30c5bce847f1
-monero-gui-mac-x64-v0.15.0.2.tar.bz2, a652484a2a74f0d2697a4f0c000221d2a90927b8b8d536f1429756596d048f90
-monero-gui-linux-x64-v0.15.0.2.tar.bz2, e21d688b5e26c3dea7c774e97fdd44f169abd218d212378eaacab5c64ea80f7d
+# GUI
+monero-gui-win-x64-v0.15.0.4.zip, 9b61fa807c66ebe3010869d1fa926fe033a2c82e6e660ca8acb75a8fba0248a0
+monero-gui-install-win-x64-v0.15.0.4.exe, 874ebbfcf79d09c60e2d85d09e5b8b971066c6355dfc2a5eca6d109d32e45ddb
+monero-gui-mac-x64-v0.15.0.4.tar.bz2, 9b0164cd90345c5fd4014a6bc8258465c2e5aae7c527c7f64a2d795830db7ae4
+monero-gui-linux-x64-v0.15.0.4.tar.bz2, 2d105c792b46ec03739d39aaa6db3801f268e074814ab26e3824435f954c6a1c
 
+# Source
 monero-source-v0.15.0.1.tar.bz2, 083a3862f554a2e5157686d7a8075557dfd6f07de08069cac91017c17739750b
-monero-gui-source-v0.15.0.1.tar.bz2, 260edb14b1614e5b862b761eccd6259c1f0914d978016b227a9f4558059e4866
 
-Riccardo "fluffypony" Spagni
+
+~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEElLc43TUBMvWsvuodVUMt8xzNT80FAl3z5rgACgkQVUMt8xzN
-T82gggf/V+CoKHF0mRxo+jwvOkPwEkYZfU7MXJ3ZgIGk9OEbJY8IMevyLhzTmkY9
-blIXfWg9Wawo7+UVu91DYj0RUMt3STTnurUMAcNWdETSxiH8L1tMYbVHgnZB6+fi
-ao2aKPzLKXmzDjbu9XuDLG0NOEuesz316eTvoWllDa6k/fVCvdD4mcQ2Pvd7v/hJ
-L2tf72kO+puBP6wDmZrKWqDdhPuM40/UmiCOP0ARZE/PnLewEjXmu25PB8OMNUD1
-jAhiTTpGVlLfSMxZbFb+NR9DuqmdSoiotEUTq35GhKcEPyX//1WhE0/NomrPxuj9
-yZ1nn7/YouJVWhVQKBatLNviKJoChw==
-=msSM
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAl5g8rwACgkQ8K9NRioL
+35L3sw/+LPB7lfLGOhpDXu4Wr9XikXmueruI+VoHCDcvqp1coTKttxIuJMj0ki0x
+RrWricNf981A3s4xqGw/72AGGQOp5XKmzXiObpcK30VASOawxz0F6lrZ4G8uJC6j
+nrntgys0bWl0TlriXIXeB8PVunLedbxdxj12nRGB/m2qmGOEAXHRpT7U45jYtQI3
+AUlcfsiU12YCbOTw1tRh7wcJm9TX5A7HnfSmuwRQ/WdpAmgXbWf9eUYC1Us2lC35
+0EaS+XAtiLj+NFeF566QSwzFZ13Rme98tWNP4s7ExfwfYZHmqQJYuBgnn9REDq9Q
+xfWK5VggjcH5T55azEwIM6yO4Qwz5cJnXg8FdITsGnd9JDtAEkp1mIPcFPhpUbh+
+qfJidqPamdQoDdv//mP2IjUjs1zDZAkTOPyYucAYgLkHj1tHxio7OoJhbYtQ0CwP
+mW2DcuUZnCr3Y/ttLQ3/2eA9uCzy3/qPfY2bERYQDHoFnA9ep21sho3CSFChTVKX
+QigSNqprk8Uaj9Z0kzLb7vqfaqS5eu9isBTF2tquHxWdVd1xL08OZWQA64mP327U
+0xX3STTMjk8++wUXVJcXn4aSl2zSxmoQK/Jcl6J2FEvvQ7sfFUvb6rgYay2oYqxM
+twSisesTAZ7estEQ0xp4lzuz/mrUGK0zvGP+JqRALUr50YiIIsU=
+=LMIN
 -----END PGP SIGNATURE-----
