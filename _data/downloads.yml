@@ -1,23 +1,23 @@
 gui:
-- version: "0.15.0.2 - Carbon Chamaeleon"
+- version: "0.15.0.4 - Carbon Chamaeleon"
   downloads:
    - platform: Windows 64-bit (Installer)
-     hash: e09edd01afa7f2224b3498825e5ba5dcf3fe887efb0b3ff07bbc30c5bce847f1
+     hash: 874ebbfcf79d09c60e2d85d09e5b8b971066c6355dfc2a5eca6d109d32e45ddb
      link: https://downloads.getmonero.org/gui/win64install
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: 8684d9ba3cdad8f9b73bbcae85a69f7eb3cfd27db030163485e066131b68e7b7
+     hash: 9b61fa807c66ebe3010869d1fa926fe033a2c82e6e660ca8acb75a8fba0248a0
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
    - platform: Mac OS X 64-bit
-     hash: a652484a2a74f0d2697a4f0c000221d2a90927b8b8d536f1429756596d048f90
+     hash: 9b0164cd90345c5fd4014a6bc8258465c2e5aae7c527c7f64a2d795830db7ae4
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: e21d688b5e26c3dea7c774e97fdd44f169abd218d212378eaacab5c64ea80f7d
+     hash: 2d105c792b46ec03739d39aaa6db3801f268e074814ab26e3824435f954c6a1c
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
