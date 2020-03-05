@@ -3,7 +3,7 @@ Hash: SHA256
 
 This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
 
-Please verify the signature against the signature for binaryFate in the
+Please verify the signature against the key for binaryFate in the
 source code repository (/utils/gpg_keys).
 
 Note the previous signer for Monero binaries was fluffypony, the change of responsibility
@@ -34,17 +34,17 @@ monero-source-v0.15.0.1.tar.bz2, 083a3862f554a2e5157686d7a8075557dfd6f07de08069c
 ~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAl5g7S0ACgkQ8K9NRioL
-35LC6g/+OePCfNoCGTc95/Yty4zziV6ESkABo0vrnAbR4bHzi+pONkuTt/caJEFS
-DVeyuzceFFmF6mDZ3vcQrEbYl716Q5hoDR2TGXfyeFqeFnyt4wC0u4ak7nrBffCg
-5fXg1QZzBZVGaokD6vw2OG0Dv6j4zZu9pTY1eT4954yQkMtKgNsDUinDPp1ozen+
-A3GjXbaiC3Sz2+jB3gtPNUrGpvTmGeeyBYBUYgzj1ilWMbJySEdHfrUK/VfYkzD8
-x4Ydd5lOo2xVLMoCBUmxrzmivpv09EOPyB8pIvE5H2Hmi5F0MDAMqd1nx6ujv3Jh
-dIit7XlXolX1prLXi8tIAdwdl9OxVMelxSjn0YSVU9mcFLd2giXj9ycuHJH+LzWA
-4Z33nTd1F4gJVZXP3g6S6eotMpC4M6bi9Rs+TGZK1QNeEvZ5esE1HCYDGAetT+bo
-L26aoBO7lZt3f4Z0AQDvLt2968Ve8uB7C+6Oh9kQT/2Dgh7ULKVn2Fc9wyNiwjDN
-23MWi7owWkNDCIcb+vsnZS8m6xM06LWfZI9+ZHoT+UF6c/m/e/Vrd+JYr3sMGzSK
-QHiDLPHcd1twxJ/D2FEp5PUwr/XBXBC23OcXTCM2D2s3qWVApfgSKjXF8R0vKTgx
-D+1/2YNTVfzUqQdBBX4l5jFsPou6Z0kaB9DzvgQ5XcgQt1UlnXY=
-=0jMX
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAl5g8rwACgkQ8K9NRioL
+35L3sw/+LPB7lfLGOhpDXu4Wr9XikXmueruI+VoHCDcvqp1coTKttxIuJMj0ki0x
+RrWricNf981A3s4xqGw/72AGGQOp5XKmzXiObpcK30VASOawxz0F6lrZ4G8uJC6j
+nrntgys0bWl0TlriXIXeB8PVunLedbxdxj12nRGB/m2qmGOEAXHRpT7U45jYtQI3
+AUlcfsiU12YCbOTw1tRh7wcJm9TX5A7HnfSmuwRQ/WdpAmgXbWf9eUYC1Us2lC35
+0EaS+XAtiLj+NFeF566QSwzFZ13Rme98tWNP4s7ExfwfYZHmqQJYuBgnn9REDq9Q
+xfWK5VggjcH5T55azEwIM6yO4Qwz5cJnXg8FdITsGnd9JDtAEkp1mIPcFPhpUbh+
+qfJidqPamdQoDdv//mP2IjUjs1zDZAkTOPyYucAYgLkHj1tHxio7OoJhbYtQ0CwP
+mW2DcuUZnCr3Y/ttLQ3/2eA9uCzy3/qPfY2bERYQDHoFnA9ep21sho3CSFChTVKX
+QigSNqprk8Uaj9Z0kzLb7vqfaqS5eu9isBTF2tquHxWdVd1xL08OZWQA64mP327U
+0xX3STTMjk8++wUXVJcXn4aSl2zSxmoQK/Jcl6J2FEvvQ7sfFUvb6rgYay2oYqxM
+twSisesTAZ7estEQ0xp4lzuz/mrUGK0zvGP+JqRALUr50YiIIsU=
+=LMIN
 -----END PGP SIGNATURE-----
