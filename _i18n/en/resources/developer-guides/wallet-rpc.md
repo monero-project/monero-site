@@ -42,6 +42,7 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [get_address_index](#get_address_index)
 * [create_address](#create_address)
 * [label_address](#label_address)
+* [validate_address](#validate_address)
 * [get_accounts](#get_accounts)
 * [create_account](#create_account)
 * [label_account](#label_account)
@@ -315,6 +316,42 @@ $ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","me
   }
 }
 ```
+
+
+### validate_address
+
+Analyzes a string to determine whether it is a valid monero wallet address and returns the result and the address specifications.
+
+Inputs:
+
+* *address* - string; The address to validate.
+* *any_net_type* - boolean (Optional); If true, consider addresses belonging to any of the three Monero networks (mainnet, stagenet, and testnet) valid. Otherwise, only consider an address valid if it belongs to the network on which the rpc-wallet's current daemon is running (Defaults to false).
+* *allow_openalias* - boolean (Optional); If true, consider [OpenAlias-formatted addresses](https://web.getmonero.org/resources/moneropedia/openalias.html) valid (Defaults to false).
+
+Outputs:
+* *valid* - boolean; True if the input address is a valid Monero address.
+* *integrated* - boolean; True if the given address is an [integrated address](https://web.getmonero.org/resources/moneropedia/address.html).
+* *subaddress* - boolean; True if the given address is a [subaddress](https://github.com/monero-project/monero/pull/2056)
+* *nettype* - string; Specifies which of the three Monero networks (mainnet, stagenet, and testnet) the address belongs to.
+* *openalias_address* - boolean; True if the address is [OpenAlias-formatted](https://web.getmonero.org/resources/moneropedia/openalias.html).
+
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"validate_address", params={"address":"42go2d3XqA9Mx4HjZoqr93BHspcMxwAUBivs3yJKV1FyTycEcbgjNyEaGNEcgnUE9DDDAXNanzB16YgMt88Sa8cFSm2QcHK","any_net_type":"true","allow_openalias":"true"},' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "valid": true,
+    "integrated": false,
+    "subaddress": false,
+    "nettype": "mainnet",
+    "openalias_address": false
+  }
+}
+```
+
 
 ### **get_accounts**
 
