@@ -89,7 +89,7 @@ permalink: /downloads/index.html
                   <div class="col-md-12 col-sm-12 col-xs-12">
                   <p><details>
                        <summary>{% t downloads.showissues %}</summary>
-                       <p><i>{% t downloads.noissues %}.</i></p>
+                       <p><i>{% t downloads.yesissuesgui %}.</i></p>
                      </details></p>
                   {% for entry in item.downloads %}
                     {% if entry.vers != nil %}

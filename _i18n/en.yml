@@ -174,9 +174,11 @@ downloads:
   sourcecode: Source Code
   showissues: Show known issues for this release
   noissues: This release has no known major issues
-  yesissues: >
+  yesissuesgui: >
+    Release 0.15.04 was accidentally compiled without Trezor support. Thus, Trezor Monero users on Linux are recommend to wait until next release (0.15.0.5) or compile the GUI by themselves.
+  yesissuescli: >
     This release has the following known issues:<br>
-    - Initial sync of the blockchain very slow. Will be fixed with a point release
+    - placeholder
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
