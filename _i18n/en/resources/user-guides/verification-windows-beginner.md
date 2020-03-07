@@ -6,6 +6,8 @@ To protect the integrity of the binaries the Monero team provides a cryptographi
 
 This is a beginners guide for the Windows operating system and will make use of GUIs almost exclusively. It will walk you through the process of installing the required software, importing the signing key, downloading the necessary files, and finally verifying that your binary is authentic.
 
+**Important note:** Even if the text of this guide is updated, the screenshots are still showing the process using Fluffypony's details. Just follow the guide and keep in mind that when a screenshot is showing *fluffypony*, it actually refers to *binaryfate*.
+
 ## Table of Contents
 
 ### [1. Gpg4win Installer](#1-using-gpg4win-installer)
@@ -96,7 +98,7 @@ This section will cover downloading the Monero signing key, verifying that the k
 
 ### 2.1. Download Signing Key
 
-In a web browser, go to [Fluffypony's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), which he uses for signing the Monero binaries. Right click on the page, choose `Save Page As`.
+In a web browser, go to [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), which he uses for signing the Monero binaries. Right click on the page, choose `Save Page As`.
 
 ![getkey right click](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
 
@@ -118,7 +120,7 @@ Click `Import`.
 
 ![kleo firstrun import](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
 
-Enter the directory `Downloads`, select `fluffypony`, and click `Open`.
+Enter the directory `Downloads`, select `binaryfate`, and click `Open`.
 
 ![kleo firstrun key location](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
 
@@ -156,7 +158,7 @@ Visually check that the fingerprint of the key belonging to Riccardo Spagni is `
 
 If the fingerprint **DOES** match, click `Next`.
 
-If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `fluffypony` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key).
+If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key).
 
 Leave `Certify only for myself` selected, click `Certify`.
 
