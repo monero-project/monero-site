@@ -362,6 +362,8 @@ faq:
   a13: Monero is not magic. If you use Monero but give your name and address to another party, the other party will not magically forget your name and address. If you give out your secret keys, others will know what you've done. If you get compromised, others will be able to keylog you. If you use a weak password, others will be able to brute force your keys file. If you backup your seed in the cloud, you'll be poorer soon.
   q14: Is Monero 100% anonymous ?
   a14: There is no such thing as 100% anonymous. If nothing else, your anonymity set is the set of people using Monero. Some people don't use Monero. Monero may also have bugs. Even if not, ways may exist to infer some information through Monero's privacy layers, either now or later. Attacks only get better. If you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.
+  q15: Is Monero a mixer or mixing service?
+  a15: No. Monero uses a completely non-interactive, non-custodial, and automatic process to create private transactions. By contrast for mixing services, users opt-in to participate.
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
