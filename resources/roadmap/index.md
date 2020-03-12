@@ -27,175 +27,116 @@ permalink: /resources/roadmap/index.html
                     <h2>2014-2015</h2>
                     <div class="tabPanel-content">
                         <h2>2014</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}    
-                            {% if toplevel.year == 2014 %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.year_2014 %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.completed %}
+                                        <li class="completed">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                         <h2>2015</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}
-                            {% if toplevel.year == 2015 %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.year_2015 %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.completed %}
+                                        <li class="completed">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                     </div>
                     <label for="tab-2" tabindex="0"></label>
                     <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                     <h2>2016</h2>
                     <div class="tabPanel-content">
                         <h2>2016</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}
-                            {% if toplevel.year == 2016 %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.year_2016 %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.completed %}
+                                        <li class="completed">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                     </div>
                     <label for="tab-3" tabindex="0"></label>
                     <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
                     <h2>2017</h2>
                     <div class="tabPanel-content">
                         <h2>2017</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}
-                            {% if toplevel.year == 2017 %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            {% if roadlist.date %}
-                                                <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                            {%else%}
-                                                <p>{{roadlist.name}}</p>
-                                            {%endif%}
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.year_2017 %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.completed %}
+                                        <li class="completed">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                     </div>
                     <label for="tab-4" tabindex="0"></label>
                     <input id="tab-4" type="radio" name="tabs" aria-hidden="true">
                     <h2>2018</h2>
                     <div class="tabPanel-content">
                         <h2>2018</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}
-                            {% if toplevel.year == 2018 %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            {% if roadlist.date %}
-                                                <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                            {%else%}
-                                                <p>{{roadlist.name}}</p>
-                                            {%endif%}
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.year_2018 %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.completed %}
+                                        <li class="completed">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                     </div>
                     <label for="tab-5" tabindex="0"></label>
                     <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
                     <h2>2019</h2>
                     <div class="tabPanel-content">
                         <h2>2019</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}
-                            {% if toplevel.year == 2019 %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            {% if roadlist.date %}
-                                                <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                            {%else%}
-                                                <p>{{roadlist.name}}</p>
-                                            {%endif%}
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.year_2019 %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.completed %}
+                                        <li class="completed">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                     </div>
                     <label for="tab-6" tabindex="0"></label>
                     <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2020</h2>
                     <div class="tabPanel-content">
                         <h2>2020</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}
-                            {% if toplevel.year == 2020 %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            {% if roadlist.date %}
-                                                <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                            {%else%}
-                                                <p>{{roadlist.name}}</p>
-                                            {%endif%}
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.year_2020 %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.completed %}
+                                        <li class="completed">{{ item.name }}</li>
+                                    {% endfor %}
+                                    {% for item in roadmap.ongoing %}
+                                        <li class="ongoing">{{ item.name }}</li>
+                                    {% endfor %}
+                                    {% for item in roadmap.upcoming %}
+                                        <li class="upcoming">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>
                     <input id="tab-7" type="radio" name="tabs" aria-hidden="true">
                     <h2>{% t roadmap.future %}</h2>
                     <div class="tabPanel-content">
                         <h2>{% t roadmap.future %}</h2>
-                        {% for toplevel in site.data.lang[site.lang].roadmap %}
-                            {% if toplevel.year == "future" %}
-                                {% for roadlist in toplevel.accomplishments %}
-                                    <div class="row start-xs middle-xs">
-                                        <div class="col-xs-1">
-                                            <span class="{{roadlist.status}}"></span>
-                                        </div>
-                                        <div class="col-xs-11">
-                                            {% if roadlist.date %}
-                                                <p>{{roadlist.date}}: {{roadlist.name}}</p>
-                                            {%else%}
-                                                <p>{{roadlist.name}}</p>
-                                            {%endif%}
-                                        </div>
-                                    </div>
-                                {%endfor%}
-                            {%endif%}
-                        {%endfor%}
+                            <ul>
+                                {% for roadmap in site.data.lang[site.lang].roadmap.future %}
+                                    <h3 id="months">{{ roadmap.month }}</h3>
+                                    {% for item in roadmap.ongoing %}
+                                        <li class="ongoing">{{ item.name }}</li>
+                                    {% endfor %}
+                                    {% for item in roadmap.upcoming %}
+                                        <li class="upcoming">{{ item.name }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
                     </div>
                 </div>
             </div>
