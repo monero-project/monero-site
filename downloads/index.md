@@ -153,7 +153,7 @@ permalink: /downloads/index.html
                     <ul>
                       <li class="downloads"><span class="icon-windows"></span><a class="orange" href="https://downloads.getmonero.org/cli/win64">Windows 64-bit</a> | <a class="orange" href="https://downloads.getmonero.org/cli/win32">32-bit</a></li>
                       <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/cli/mac64">Mac OS X 64-bit</a></li>
-                      <li class="downloads"><span class="icon-android"></span><a class="orange" href="https://downloads.getmonero.org/cli/monero-android-armv8-v0.15.0.1.tar.bz2">Android ARMv8</a> | <a class="orange" href="https://downloads.getmonero.org/cli/monero-android-armv7-v0.15.0.1.tar.bz2">ARMv7</a></li> <!-- These will be changed to general android-armv7 link -->
+                      <li class="downloads"><span class="icon-android"></span><a class="orange" href="https://downloads.getmonero.org/cli/androidarm8">Android ARMv8</a> | <a class="orange" href="https://downloads.getmonero.org/cli/androidarm7">Android ARMv7</a></li>
                     </ul>
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
