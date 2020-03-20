@@ -9,6 +9,7 @@ permalink: /downloads/index.html
     <div class="container description">
     <p>{% t downloads.intro %}</p>
     </div>
+    <!-- Downloads menu: desktop -->
     <div class="container full downdropdown">
         <div class="info-block download-nav row middle-xs between-xs" id="selections">
             <div class="col"><a href="#gui">{% t downloads.gui %}</a></div>
@@ -18,6 +19,8 @@ permalink: /downloads/index.html
             <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
         </div>
     </div>
+    <!-- End downloads menu: desktop -->
+    <!-- Downloads menu: mobile -->
     <div class="container full">
       <div class="info-block row center-xs" id="pick-platform">
          <div class="mob dropdowndrop">
@@ -33,8 +36,10 @@ permalink: /downloads/index.html
           </div>
       </div>
     </div>
+    <!-- End downloads menu: mobile -->
     <div class="download-platforms">
       <section class="container full">
+        <!-- 'GUI Wallet' -->
         <div class="info-block">
         {% for item in site.data.downloads.gui %}
           <div class="row start-md">
@@ -124,6 +129,8 @@ permalink: /downloads/index.html
           </div>
         {% endfor %}  
         </div>
+        <!-- End 'GUI Wallet' -->
+        <!-- 'CLI Wallet' -->
         <div class="info-block">
         {% for item in site.data.downloads.cli %}
           <div class="row start-md">
@@ -217,7 +224,9 @@ permalink: /downloads/index.html
         {% endfor %}  
         </div>
       </section>
+      <!-- End 'CLI Wallet' -->
             <section class="container full">
+                <!-- 'Import Blockchain' -->
                 <div class="info-block">
                     <h2 id="blockchain">{% t downloads.blockchain %}</h2>
                         <div class="row">
@@ -229,9 +238,11 @@ permalink: /downloads/index.html
                             </div>
                         </div>
                 </div>
+                <!-- End 'Import Blockchain' -->
             </section>
             <section class="container full">
                 <div class="info-block">
+                <!-- 'Hardware Wallets' -->
                   <h2 id="hardware">{% t downloads.hardware %}</h2>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -240,15 +251,17 @@ permalink: /downloads/index.html
                             </div>
                         </div>
                         <div class="row mob-wallets center-xs">
-                          <a href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png"></a>
+                            <a href="https://www.ledger.com/monero-wallet/"><img src="/img/ledger.png"></a>
+                            <a href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png"></a>
                         </div>
                         <div class="row mob-wallets center-xs">
-                          <a href="https://www.ledger.com/monero-wallet/"><img src="/img/ledger.png"></a>
-                          <a href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png"></a>
+                            <a href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png"></a>
                         </div>                    
                 </div>
+                <!-- End 'Hardware Wallets' -->
             </section>
             <section class="container full">
+                <!-- 'Mobile & Light Wallets' -->
                 <div class="info-block">
                   <h2 id="mobilelight">{% t downloads.mobilelight %}</h2>
                         <div class="row">
@@ -263,6 +276,7 @@ permalink: /downloads/index.html
                                 <a href="https://edge.app/"><img style="height: 115px;" src="/img/edge-wallet.png" alt="Edge Logo"></a>
                         </div>
                 </div>
+                <!-- End 'Mobile & Light Wallets' -->
             </section>
     </div>
     <a href="#" class="arrow-up"><i></i></a>
