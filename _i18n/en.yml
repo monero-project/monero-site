@@ -177,8 +177,7 @@ downloads:
   yesissuesgui: >
     Release 0.15.04 was accidentally compiled without Trezor support. Thus, Trezor Monero users on Linux are recommend to wait until next release (0.15.0.5) or compile the GUI by themselves.
   yesissuescli: >
-    This release has the following known issues:<br>
-    - placeholder
+    Because of glibc compatibility problems, this version won't run on Ubuntu 16.04 (glibc < 2.25)
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
