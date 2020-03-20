@@ -538,39 +538,25 @@ research-lab:
 
 
 specs:
-  fair_title: No premine, no instamine, no token
-  fair_premine: Monero had no premine or instamine
-  fair_token: Monero did not sell any token
-  fair_presale: Monero had no presale of any kind
+  title: Technical Info
+  intro: Here are listed some basic technical info about Monero. For more in-depth details, consult
+  intro_link: the library
+  intro1: or get in touch with the community
   pow_title: Proof of Work
-  pow_name: CryptoNight
-  pow_disclaimer: may change in the future
-  diff_title: Difficulty retarget
-  diff_freq: every block
-  diff_base: based on the last 720 blocks, excluding 20% of the timestamp outliers
-  block_time_title: Block time
-  block_time_duration: 2 minutes
-  block_time_disclaimer: may change in the future as long as emission curve is preserved
-  block_reward_title: Block reward
-  block_reward_amount: smoothly decreasing and subject to penalties for blocks greater than median size of the last 100 blocks (M100)
-  block_reward_example1: see the
-  block_reward_example_link: latest block
-  block_reward_example2: coinbase transaction amount for current reward
-  block_size_title: Block size
-  block_size: dynamic, maximum of 2 * M100
+  pow: Monero uses RandomX, an ASIC-resistant and CPU-friendly POW algorithm created by Monero community members, designed to make the use of mining-specific hardware unfeasible. Monero previously used CryptoNight and variations of this algorithm
+  pow_link: More info in the GitHub repo
   block_emission_title: Emission curve
+  block_emission_pre: "To make sure there will always be an incentive to mine Monero and keep it safe, the emission is infinite. There are two main emissions:"
   block_emission_main: "first, main curve: ~18.132 million coins by the end of May 2022"
   block_emission_tail: "then, tail curve: 0.6 XMR per 2-minute block, kicks in once main emission is done, translates to <1% inflation decreasing over time"
-  block_emission_disclaimer1: see
-  block_emission_disclaimer_link: charts and details
-  supply_title: Max supply
-  supply_amount: infinite
-  sender_privacy_title: Sender privacy
-  sender_privacy_mode: Ring signatures
-  recipient_privacy_title: Recipient privacy
-  recipient_privacy_mode: Stealth addresses
-  amount_hidden_title: Amount obfuscation
-  amount_hidden_mode: Ring confidential transactions
+  blocks_title: Blocks
+  blocks: A new @block is created every ~2 minutes. There is no maximum block size, but instead a block reward penality and a dynamic block size, to ensure a dynamic @scalability
+  privacytech_title: Main privacy enhancing technologies
+  privacytech_ringct: "@RingCT"
+  privacytech_sh: "@Stealth-Addresses"
+  privacytech_rs: Ring Signatures
+  privacytech_tor-i2p: Transactions over Tor/I2P
+  privacytech_dandelion: Dandelion++
 
 library:
   description: "Below are some publications, books or magazines available for you to download."
