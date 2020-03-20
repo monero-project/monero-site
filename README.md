@@ -3,6 +3,7 @@
 - [Introduction](#introduction)
 - [What you'll need](#what-youll-need)
 - [General change recommendations](#general-change-recommendations)
+- [Translation](#translation)
 - [housekeeping](#housekeeping)
 - [How to make a blog post](#how-to-make-a-blog-post)
 - [Updates on User Guides](#updates-on-user-guides)
@@ -15,8 +16,6 @@
 - [How to add a new Merchant](#how-to-add-a-new-merchant)
 - [How to add a question to the FAQ](#how-to-add-a-question-to-the-faq)
 - [How to add a publication to the Library](#how-to-add-a-publication-to-the-library)
-- [How to translate a page](#how-to-translate-a-page)
-- [How to add a new language](#how-to-add-a-new-language)
 
 ## Introduction
 This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in.
@@ -42,7 +41,6 @@ Once you have the above list of things, it's typically a good idea to build the 
 3. Open a browser and go to [http://127.0.0.1:4000](http://127.0.0.1:4000).
 4. If all went well, you should see the Monero website and you're ready to make changes.
 
-
 ## General change recommendations
 The average Monero user that will want to contribute to the website should probably start looking for issues labelled [⛑️ help needed](https://repo.getmonero.org/monero-project/monero-site/issues?label_name%5B%5D=%E2%9B%91%EF%B8%8F++help+needed) or making blog posts, user guides or Moneropedia entries; all of which are covered in this document. If this is all you want to do, don't worry, it's actually not a daunting task at all.
 
@@ -58,6 +56,83 @@ A few random points of note:
 - All external links must have `https://` in front of them or they will not redirect properly.
 - If you want to add a new page to the navigation, you should go to ALL LANGUAGES in the `_data/lang` folder and add the page.
 - It is strongly strongly STRONGLY encouraged that if you make a change, you - at the minimum - test it on your local machine before submitting a PR. Sometimes unexpected things may happen due to a change. If you change a page, check the whole page on multiple screen sizes and browsers to make sure there wasn't any collateral damage.
+
+## Translation
+In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. For live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
+
+The bulk of the website is translatable on Weblate, an easy to use localization platform that provide contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
+
+We are trying to move most of the localization work on Weblate, but some parts of the website still need to be manually translated on the repository. The following instructions will tell you which files to translate and how to proceed.
+
+### 1. Quickstart
+* Navigate to the correct language in the /i18n folder and find the page you wish to translate
+* Do not translate any of the `*.yml` files in the /_18n folder
+* Click the file and translate the page, not touching any HTML or markdown
+* Remove `{% include untranslated.html %}` from the page
+* Test/Build
+* Submit PR
+
+### 2. Navigate to correct file
+Go to the /i18n folder and find the two letter code for the language you wish to translate for. Enter that folder and find the file you wish to translate. The filenames are all in English and MUST NOT BE CHANGED.
+
+### 3. Translate the file
+Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip it. If during testing, the page appears different from the original English page (besides the translated text, of course), you did something wrong and may have to start again.
+
+#### 3.1. Notes for Moneropedia Entries
+Moneropedia entries have two specificities:
+
+* The Front Matter:  
+Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
+This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
+
+* The old *untranslated* snippet must be removed, therefore the next section is irrelevant here.
+
+Finally, your entry should go from:
+```
+---
+entry: "Entry name in English"
+terms: ["English", "terms"]
+summary: "English summary."
+---
+
+{% include untranslated.html %}
+```
+To:
+```
+---
+entry: "Translated entry name"
+terms: ["English", "terms", "translated", "terms"]
+summary: "Translated summary."
+---
+```
+
+### 4. set the 'translated' snippet to true
+Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
+
+## How to add a new language
+Whoo boy, this is the big one. Please follow all directions exactly.
+
+### 1. \_config.yml file
+Navigate to the root folder of the whole website and find the file labeled `_config.yml`. Open it and find the line that says `languages:`. Add your two letter language code (Google it if you don't know it) in between the brackets after the others already present. You will need to put a comma after the previous last one.
+
+Example:
+```
+languages: ["en", "es", "NEW LANG HERE"]
+```
+Save and exit the file.
+
+### 2. \_data folder
+Navigate to the `_data/lang` folder and copy the `en` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
+**The 'en' folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
+
+Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
+
+### 3. \_i18n folder
+Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml`. Now duplicate the `en` folder and rename it with the correct language code.
+**The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
+
+### 4. Open an issue on the repo where the website is hosted
+After you've done all the above, you'll need to [open an issue on the repository](https://repo.getmonero.org/monero-project/monero-site/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=) asking to add the language you are working on to Weblate, where the core of the website is translated.
 
 ## Housekeeping
 
@@ -204,15 +279,9 @@ This file will look quite different because it's HTML. Don't panic. Simply Ctrl 
 
 Once you've identified the non-indented area under the category you would like your User Guide to be under, you can use markdown to insert your link with the others in alphabetic order. `[TITLE OF USER GUIDE]({{site.baseurl}}/LINK-TO-USER-GUIDE.html)`. Please note that the file name in between the parentheses must be EXACTLY the same name as the permalink you made in step 5.3, but with a `.html` at the end instead of `.md` and the snippet `{{site.baseurl}}/` before the link.
 
-In the event that you think your User Guide should be in a new Category that doesn't exist yet, contact rehrar to make one for you.
+In the event that you think your User Guide should be in a new Category that doesn't exist yet, contact the Website workgroup.
 
 Repeat the above process for each language version of this index page INCLUDING THE template.
-
-### 8. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically and test that your link appears in the correct category and that it leads to your User Guide when clicked. Test your User Guide in the browser and contact rehrar if there are any bugs.
-
-### 9. Submit Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
 ## How to make a Moneropedia Entry
 
@@ -441,92 +510,4 @@ Build your website using `jekyll serve` if it's not rebuilding automatically. If
 If the build is successful, go to the Library page `/library/` and check to see that the publication is showing up in the correct category and that the link is downloading correctly. Test the page and let rehrar know if there are any bugs.
 
 ### 4. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
-
-## How to translate a page
-In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. You can find an updated guide and an example of the workflow we use on our [Guide on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/wiki/translating-monero-website), also, for live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
-
-### 1. Quickstart
-* Navigate to the correct language in the /i18n folder and find the page you wish to translate
-* Click the file and translate the page, not touching any HTML or markdown
-* Remove `{% include untranslated.html %}` from the page
-* Test/Build
-* Submit PR
-
-### 2. Navigate to correct file
-Go to the /i18n folder and find the two letter code for the language you wish to translate for. Enter that folder and find the file you wish to translate. The filenames are all in English and MUST NOT BE CHANGED.
-
-### 3. Translate the file
-Here you can do your translation. Depending on the page, you may have to maneuver around some HTML or markdown. In general, anything between two tags (such as `<p>TRANSLATE THIS</p>`) should be fine. Testing is VERY important, so do NOT skip it. If during testing, the page appears different from the original English page (besides the translated text, of course), you did something wrong and may have to start again.
-
-#### 3.1. Notes for Moneropedia Entries
-Moneropedia entries have two specificities:
-
-* The Front Matter:  
-Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
-This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
-
-* The old *untranslated* snippet must be removed, therefore the next section is irrelevant here.
-
-Finally, your entry should go from:
-```
----
-entry: "Entry name in English"
-terms: ["English", "terms"]
-summary: "English summary."
----
-
-{% include untranslated.html %}
-```
-To:
-```
----
-entry: "Translated entry name"
-terms: ["English", "terms", "translated", "terms"]
-summary: "Translated summary."
----
-```
-
-### 4. set the 'translated' snippet to true
-Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
-
-### 5. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically.
-
-If the build is successful, go to the correct page in the correct language and check to see that everything is translated, and that the page looks identical to the original English page (besides the translated text). Test the page and let rehrar know if there are any bugs.
-
-### 6. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
-
-## How to add a new language
-Whoo boy, this is the big one. Please follow all directions exactly.
-
-### 1. \_config.yml file
-Navigate to the root folder of the whole website and find the file labeled `_config.yml`. Open it and find the line that says `languages:`. Add your two letter language code (Google it if you don't know it) in between the brackets after the others already present. You will need to put a comma after the previous last one.
-
-Example:
-```
-languages: ["en", "es", "NEW LANG HERE"]
-```
-Save and exit the file.
-
-### 2. \_data folder
-Navigate to the `_data/lang` folder and copy the `en` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
-**The 'en' folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
-
-Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
-
-### 3. \_i18n folder
-Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml` at the end and change all sections marked 'translated: "yes"' to 'translated: "no"'. Change back to 'yes' once you have translated that section. Now duplicate the `en` folder and rename it with the correct language code.
-**The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
-
-Enter the .yml file and translate everything there.
-
-### 4. Translate
-If you will be translating the content, please refer to section '[How to translate a page](#how-to-translate-a-page)' in this README for instructions on translating pages.
-
-### 5. Build/Test
-Build your website using `jekyll serve`. If the build is successful, navigate to any page on the site and check to make sure that your language is appearing in the dropdown for languages on both mobile and desktop.
-
-### 6. Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
