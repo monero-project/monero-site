@@ -633,6 +633,7 @@ moneropedia:
     paperwallet: Paper-Wallet
     paymentid: Payment-ID
     pedersen-commitment: Pedersen-Commitment
+    remote-node: Remote Node
     reseed: Reseed
     ringCT: vertrauliche Ringtransaktionen (Ring CT)
     ringsignatures: Ringsignatur
