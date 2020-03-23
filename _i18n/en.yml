@@ -174,8 +174,7 @@ downloads:
   sourcecode: Source Code
   showissues: Show known issues for this release
   noissues: This release has no known major issues
-  yesissuesgui: >
-    Release 0.15.04 was accidentally compiled without Trezor support. Thus, Trezor Monero users on Linux are recommend to wait until next release (0.15.0.5) or compile the GUI by themselves.
+  yesissuesgui: Release 0.15.0.4 (Linux) was accidentally compiled without Trezor support. Thus, Trezor Monero users on Linux are recommend to wait until next release (0.15.0.5) or compile the GUI by themselves
   yesissuescli: >
     Because of glibc compatibility problems, this version won't run on Ubuntu 16.04 (glibc < 2.25)
   helpsupport: Help and Support
