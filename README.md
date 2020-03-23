@@ -434,35 +434,27 @@ Navigate to the `/get-started/faq` folder and open the `index.md` file. Inside y
 Copy the code below:
 ```
 <div class="tab">
-    <input id="tab-CHANGETHIS" type="checkbox" name="tabs" class="accordian">
-    <label for="tab-CHANGETHIS" class="accordian">CHANGE QUESTION</label>
-
-<div class="tab-content" markdown="1">
-
-CHANGE ANSWER
-
-</div>
-
+    <input id="tab-CHANGETHIS" type="checkbox" name="tabs" class="accordion">
+    <label for="tab-CHANGETHIS" class="accordion">{% t faq.qN %}</label>
+    <div class="tab-content">
+        <p>{% t faq.aN %}</p>
+    </div>
 </div>
 ```
 And paste it at the very bottom of the file (literally underneath everything else).
 
 Now we're going to change just a couple of things. Find the section with:
 ```
-<input id="tab-CHANGETHIS" type="checkbox" name="tabs" class="accordian">
-<label for="tab-CHANGETHIS" class="accordian">CHANGE QUESTION</label>
+<input id="tab-CHANGETHIS" type="checkbox" name="tabs" class="accordion">
+<label for="tab-CHANGETHIS" class="accordion">{% t faq.qN %}</label>
 ```
 
-and change the sections in between the quotes that say 'CHANGETHIS'. Leave the first part `tab-` alone. You can change it to anything really, as long as they are identical in the input and label, but it's good to see what number is on the last FAQ question (i.e. `tab-nine`) and make it the next number.
+and change the sections in between the quotes that say 'CHANGETHIS'. Leave the first part `tab-` alone and see what number is on the last FAQ question (i.e. `tab-nine`). Now make it "tab-NEXTNUMBER".
 
-Now inside the label tag you're going to find where it says 'CHANGE QUESTION' and change it to the Question you want answered.
-
-Lastly, find the words 'CHANGE ANSWER' and change it to the answer of your question.
-
-**DO NOT MESS WITH THE INDENTATION HERE. The div that has `markdown=1` MUST be flush with the left side, the answer to the question must start flush with the left side, and the `</div>` MUST be flush with the left side.**
+Now you're going to find where it says `{% t faq.qN %}` and `{% t faq.aN %}`. Those are links to vaiables. You need to navigate to `_18n/en.yml` and find the `faq` section. You'll see the list of all the other FAQs with the structure: `qNUMBER` `aNUMBER`. Go to the bottom of that list and add your variable in the structure `qN`, where `N` is the number that follows the precedent in the list. For example, if the last entries were q20 and a20, you have to add q21 and a21. q21 will contain the string with your question, a21 will contain the answer. Now edit `{% t faq.qN %}` and `{% t faq.aN %}` accordingly.
 
 ### 2. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically. If the build is successful, go to the FAQ page `/get-started/faq/` and check to see that your question is showing up and, when clicked, the answer drops down. If not, check to make sure that the `id="tab-CHANGETHIS"` in the input and the `for="CHANGETHIS"` in the label are identical to each other. Test the page and let rehrar know if there are any bugs.
+Build your website using `bundle exec jekyll serve`. If the build is successful, go to the FAQ page `/get-started/faq/` and check to see that your question is showing up and, when clicked, the answer drops down. If not, check to make sure that the `id="tab-CHANGETHIS"` in the input and the `for="CHANGETHIS"` in the label are identical to each other. Test the page and let the website worgroup know if there are any issues.
 
 ### 3. Submit a Pull Request
 You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
