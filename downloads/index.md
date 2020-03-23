@@ -94,7 +94,7 @@ permalink: /downloads/index.html
                   <div class="col-md-12 col-sm-12 col-xs-12">
                   <p><details>
                        <summary>{% t downloads.showissues %}</summary>
-                       <p><i>{% t downloads.yesissuesgui %}.</i></p>
+                       <p><i>{% t downloads.yesissuesgui %}.</i></p><!-- Change here if there are known GUI issues (`downloads.yesissuesgui` if issues, `downloads.noissues` if no issues) -->
                      </details></p>
                   {% for entry in item.downloads %}
                     {% if entry.vers != nil %}
@@ -187,7 +187,7 @@ permalink: /downloads/index.html
                 <div class="col-md-12 col-sm-12 col-xs-12">
                 <p><details>
                      <summary>{% t downloads.showissues %}</summary>
-                       <p><i>{% t downloads.noissues %}.</i></p>
+                       <p><i>{% t downloads.yesissuescli %}.</i></p><!-- Change here if there are known CLI issues (`downloads.yesissuescli` if issues, `downloads.noissues` if no issues) -->
                      </details></p>
                 </div>
                 </div>
