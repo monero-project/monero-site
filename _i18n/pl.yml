@@ -633,6 +633,7 @@ moneropedia:
     paperwallet: Papierowy portfel
     paymentid: Numer identyfikacyjny płatności
     pedersen-commitment: Zobowiązanie Pedersena
+    pruning: Pruning
     remote-node: Remote Node
     reseed: Reseed
     ringCT: Poufne Transakcje Pierścieniowe

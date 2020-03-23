@@ -632,6 +632,7 @@ moneropedia:
     paperwallet: 纸钱包
     paymentid: 付款ID
     pedersen-commitment: Pedersen Commitment 
+    pruning: Pruning
     remote-node: Remote Node
     reseed: Reseed 
     ringCT: 环交易
