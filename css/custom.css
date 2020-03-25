@@ -3436,7 +3436,7 @@ h3#months {
 .roadmap li.completed:before {
   content: "\02714";
   color: green;
-  font-size:2.5rem;
+  font-size: 2rem;
   padding-right: 2%;
   vertical-align: -8%;
 }
