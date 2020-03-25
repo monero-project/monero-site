@@ -2963,6 +2963,30 @@ footer {
     margin-top: 0;
 }
 
+.guides span {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.guides span.icon-github {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: 0 -240px;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.guides span.icon-page:before {
+  content: "\01F4C4";
+  float: left;
+}
+
+.guides span.icon-globe:before {
+  content: "\01F310";
+  float: left;
+}
+
 /******************************DOWNLOADS STYLING***********************/
 
 .downloads h2.center {

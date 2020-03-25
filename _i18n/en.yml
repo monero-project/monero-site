@@ -453,10 +453,19 @@ about:
 
 
 developer-guides:
-  outdated: "Please note: the guides below have been recently refreshed and are maintained almost up-to-date by the community. However, methods are often added / removed / updated and may not be accurately described here."
+  head: Collection of guides, documentation and useful resources for developers (in English).
+  outdated: "Methods are often added / removed / updated and may not be accurately described."
   rpc: RPC Documentation
-  daemonrpc: Daemon RPC Documentation
-  walletrpc: Wallet RPC Documentation
+  daemonrpc: Daemon RPC
+  daemonrpc_descr: RPC calls for the daemon. Including input, outputs and examples.
+  walletrpc: Wallet RPC
+  walletrpc_descr: monero-wallet-rpc calls. Including input, outputs and examples.
+  external: External resources
+  external_head: Useful docs and resources maintained by community members.
+  monerodocs: Comprehensive resource which aims to organize the technical knowledge about Monero. Some sections might be outdated.
+  moneroexamples: Rich list of examples and docs related to Monero development.
+  moneroecosystem: Community of Monero developers. Contains libraries and resources and guides of some Monero Workgroups, like the Localization Workgroup and the Outreach Workgroup.
+  monerose: One of the most complete resources for both users and developers.
 
 user-guides:
   general: General
