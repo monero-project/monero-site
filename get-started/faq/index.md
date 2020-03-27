@@ -111,7 +111,3 @@ permalink: /get-started/faq/index.html
         <p>{% t faq.a15 %}</p>
     </div>
 </div>
-
-<div class="untranslated {% t faq.translated %}">
-    <p>{% t global.untranslated %} <a class="untranslated-link" href="https://repo.getmonero.org/monero-project/monero-site/blob/master/README.md#140-how-to-translate-a-page">README</a>.</p>
-</div>
