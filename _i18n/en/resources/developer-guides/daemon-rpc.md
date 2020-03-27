@@ -8,8 +8,6 @@ Many RPC calls use the daemon's JSON RPC interface while others use their own in
 
 Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 @atomic-units.**
 
-Note2: Guide updated as of network height of 1,562,465.
-
 ### [JSON RPC Methods](#json-rpc-methods):
 
 * [get_block_count](#get_block_count)
