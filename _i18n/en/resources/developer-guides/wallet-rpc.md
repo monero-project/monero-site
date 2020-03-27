@@ -1,4 +1,4 @@
-{% assign version = '2.3.0' | split: '.' %}
+{% assign version = '2.4.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
 ## Introduction
 
@@ -37,6 +37,7 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 
 ### Index of JSON RPC Methods:
 
+* [set_daemon](#set_daemon)
 * [get_balance](#get_balance)
 * [get_address](#get_address)
 * [get_address_index](#get_address_index)
@@ -119,6 +120,37 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 ---
 
 ## JSON RPC Methods:
+
+### **set_daemon**
+
+Connect the RPC server to a Monero daemon.
+
+Inputs:
+
+* *address* - string; (Optional; Default: "") The URL of the daemon to connect to.
+* *trusted* - boolean; (Optional; Default: false) If false, some RPC wallet methods will be disabled.
+* *ssl_support* - string; (Optional; Default: autodetect; Accepts: disabled, enabled, autodetect) Specifies whether the Daemon uses SSL encryption.
+* *ssl_private_key_path* - string; (Optional) The file path location of the SSL key.
+* *ssl_certificate_path* - string; (Optional) The file path location of the SSL certificate.
+* *ssl_ca_file* - string; (Optional) The file path location of the certificate authority file.
+* *ssl_allowed_fingerprints* - array of string; (Optional) The SHA1 fingerprints accepted by the SSL certificate.
+* *ssl_allow_any_cert* - boolean; (Optional; Default: false) If false, the certificate must be signed by a trusted certificate authority.
+
+Outputs:
+* *None*
+
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_daemon","params": {"address":"http://localhost:18081","trusted":true,"ssl_support":"enabled","ssl_private_key_path":"path/to/ssl/key","ssl_certificate_path":"path/to/ssl/certificate","ssl_ca_file":"path/to/ssl/ca/file","ssl_allowed_fingerprints":["85:A7:68:29:BE:73:49:80:84:91:7A:BB:1F:F1:AD:7E:43:FE:CC:B8"],"ssl_allow_any_cert":true}},' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
 
 ### **get_balance**
 
