@@ -149,6 +149,7 @@ year_2020:
 - month: March
   completed:
     - name: GUI 0.15.0.4 released
+    - name: CLI 0.15.0.5 released
 - month: Coming Soon
   ongoing: 
     - name: Onion address for Getmonero.org
