@@ -2981,6 +2981,7 @@ footer {
 
 .downloads summary:hover {
     font-weight:bold;
+    cursor: pointer;
 }
 
 .downloads ul {
