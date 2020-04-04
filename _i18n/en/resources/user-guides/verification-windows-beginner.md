@@ -152,7 +152,7 @@ Click `Finish`.
 
 ### 2.3. Verify Signing Key
 
-Visually check that the fingerprint of the key belonging to Riccardo Spagni is `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9`.
+Visually check that the fingerprint of the key belonging to binaryFate is `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
 
 ![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
