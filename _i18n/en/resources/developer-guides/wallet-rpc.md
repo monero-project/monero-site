@@ -1956,14 +1956,14 @@ Inputs:
 
 Outputs:
 * *desc* - The description of the transfer as a list of:
-  * *amount_in* - unsigned int (64 bit); The sum of the inputs spent by the transaction in @atomic units.
-  * *amount_out* - unsigned int (64 bit); The sum of the outputs created by the transaction in @atomic units.
+  * *amount_in* - unsigned int (64 bit); The sum of the inputs spent by the transaction in @atomic-units.
+  * *amount_out* - unsigned int (64 bit); The sum of the outputs created by the transaction in @atomic-units.
   * *recipients* - list of:
     * *address* - string; The public address of the recipient. 
-    * *amount* - unsigned int; The amount sent to the recipient in @atomic units.
+    * *amount* - unsigned int; The amount sent to the recipient in @atomic-units.
   * *change_address* - string; The address of the change recipient.
-  * *change_amount* - unsigned int; The amount sent to the change address in @atomic units.
-  * *fee* - unsigned int; The fee charged for the transaction in @atomic units.
+  * *change_amount* - unsigned int; The amount sent to the change address in @atomic-units.
+  * *fee* - unsigned int; The fee charged for the transaction in @atomic-units.
   * *payment_id* - string; payment ID for this transfer (empty if not provided.
   * *ring_size* - unsigned int; The number of inputs in the ring (1 real output + the number of decoys from the blockchain).
   * *unlock_time* - unsigned int; The number of blocks before the monero can be spent (0 for no lock).
