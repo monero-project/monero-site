@@ -124,7 +124,7 @@ hangouts:
 
 merchants:
   intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. If a company no longer accepts Monero or you would like your business to be listed, please
-  intro2:  open a GitLab issue and let us know 
+  intro2:  open a GitLab issue and let us know
   intro3: (select the "Merchant" template and fill up all sections).
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
@@ -196,7 +196,7 @@ downloads:
   verify1: You are strongly advised to verify the hashes of the archive you downloaded. This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds.
   verify2: Always verify your downloads!
   showhash: Show hashes to verify your download
-  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list of the hashes is at 
+  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list of the hashes is at
   showhash2: and should be treated as canonical, with the signature checked against the appropriate GPG key
   showhash3: in the source code
   showhash4: "Two guides are available to guide you through the verification process:"
@@ -256,13 +256,13 @@ accepting:
   gui2: The receive page (shown below) is explained in every detail
   guilinkguide: in the guide of the GUI.
   guiinstructions: >
-    To receive XMR you only need to provide the payer with an @address where they can send funds to. Most of the time it's easier to just share a QR code and let the payer scan it, instead of copy-pasting the alphanumeric string. 
-    With the GUI every generated address come with its QR code. Make the person scan the QR code with the Monero @wallet on their phone and receive your XMR in minutes. 
+    To receive XMR you only need to provide the payer with an @address where they can send funds to. Most of the time it's easier to just share a QR code and let the payer scan it, instead of copy-pasting the alphanumeric string.
+    With the GUI every generated address come with its QR code. Make the person scan the QR code with the Monero @wallet on their phone and receive your XMR in minutes.
     Remember you can generate as many addresses (subaddresses) as you want. This is useful if you want to keep funds separated for any reason.
   guimerchant: Merchants will probably find more convenient to use the 'Merchant' page (screenshot below), which is explained in detail in the 'Merchant view' section of
   guilinkguide1: the guide linked above
   guimerchant1: >
-    This is a POS-like page that merchant can easily use to set the amount of XMR to receive. If the 'Sale tracker' option is enabled, 
+    This is a POS-like page that merchant can easily use to set the amount of XMR to receive. If the 'Sale tracker' option is enabled,
     you will see the payments while they arrive in real time in your wallet, along with the number of confirmations.
   guisteps: "These two pages give everybody the possibility to easily receive XMR following these steps:"
   guiol: "Go to the 'Receive' page and create/select the address where you want to receive your coins."
@@ -272,24 +272,24 @@ accepting:
   guiol4: Wait until the payment is arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
   cliinstructions: Instructions for the CLI
   clicreatewallet: >
-    When you create your wallet for the first time, an @address will be automatically shown to you. That's your primary address. 
-    If you want, you can simply use that address to receive payments. You should be concerned about who knows about this address (since one address in different locations can be associated), 
+    When you create your wallet for the first time, an @address will be automatically shown to you. That's your primary address.
+    If you want, you can simply use that address to receive payments. You should be concerned about who knows about this address (since one address in different locations can be associated),
     but you do not need to worry about blockchain observers watching transactions to this address like with Bitcoin. A friend can send transactions to the same address without reduced privacy.
   cliaccounts: >
-    You can have much more control if you want to. Monero gives the possibility to create multiple accounts, each containing multiple subaddresses,  
+    You can have much more control if you want to. Monero gives the possibility to create multiple accounts, each containing multiple subaddresses,
     useful if you want to control multiple accounts. For example, you may want to have an @account for receiving donations and another one for your daily use.
     That will allow you to easily monitor incoming funds to your 'donations' account, without mixing it with your primary account.
   clicreateaccount: "To create an account, simply run this command:"
   clicreateaccount1: Now you have another account separated from your primary one. You can switch anytime between accounts.
   cliindex: >
-    As you can see from the picture above, every account has an index number that you can use to switch from one account to the other using the command 
-    `account switch [index]`. For example, using the picture above as reference, if you would like to switch to the 'Donations' account to monitor it, 
+    As you can see from the picture above, every account has an index number that you can use to switch from one account to the other using the command
+    `account switch [index]`. For example, using the picture above as reference, if you would like to switch to the 'Donations' account to monitor it,
     you can do so by giving your CLI this command `account switch 1`. Now you are sitting on your 'Donations' account and you can start using it right away.
   cliindex1: >
-    Every account can host a virtually infinite amount of subaddresses. These work exactly like a normal address and you can create as many 
+    Every account can host a virtually infinite amount of subaddresses. These work exactly like a normal address and you can create as many
     as you want and use them to receive XMR to the account they are linked to. To create a new subaddress for an account, use the command:
   clinotes: >
-    Note that the instructions below are just the minimal necessary to create and use accounts/subaddresses. 
+    Note that the instructions below are just the minimal necessary to create and use accounts/subaddresses.
     The CLI offer more capillary ways to handle accounts and the wallet in general. Use the command 'help' to list all the available options.
   merchantstitle: Instructions for merchants
   merchantsreceive: If you are a business and you wish to programmatically receive @transactions or use advanced features like multisignature, it's suggested to consult the
@@ -522,8 +522,8 @@ research-lab:
   mrl9_abstract: We present threshold ring multi-signatures (thring signatures) for collaborative computation of ring signatures, present a game of existential forgery for thring signatures, and discuss uses of thring signatures in digital currencies that include spender-ambiguous cross-chain atomic swaps for confidential amounts without a trusted setup. We present an implementation of thring signatures that we call linkable spontaneous threshold anonymous group signatures, and prove the implementation existentially unforgeable.
   mrl10: Discrete Logarithm Equality Across Groups
   mrl10_abstract: This technical note describes an algorithm used to prove knowledge of the same discrete logarithm across different groups. The scheme expresses the common value as a scalar representation of bits, and uses a set of ring signatures to prove each bit is a valid value that is the same (up to an equivalence) across both scalar groups.
-  mrl11: Compact linkable ring signatures and applications
-  mrl11_abstract: We describe an efficient linkable ring signature scheme, compact linkable spontaneous anonymous group (CLSAG) signatures, for use in confidential transactions. Compared to the existing signature scheme used in Monero, CLSAG signatures are both smaller and more efficient to generate and verify for ring sizes of interest. We generalize the construction and show how it can be used to produce signatures with coins of different type in the same transaction.
+  iacr2019654: Concise Linkable Ring Signatures and Forgery Against Adversarial Keys
+  iacr2019654_abstract: We demonstrate that a version of non-slanderability is a natural definition of unforgeability for linkable ring signatures. We present a linkable ring signature construction with concise signatures and multi-dimensional keys that is linkably anonymous if a variation of the decisional Diffie-Hellman problem with random oracles is hard, linkable if key aggregation is a one-way function, and non-slanderable if a one-more variation of the discrete logarithm problem is hard. We remark on some applications in signer-ambiguous confidential transaction models without trusted setup.
   iacr2020018: "Triptych: logarithmic-sized linkable ring signatures with applications"
   iacr2020018_abstract: Ring signatures are a common construction used to provide signer ambiguity among a non-interactive set of public keys specified at the time of signing. Unlike early approaches where signature size is linear in the size of the signer anonymity set, current optimal solutions either require centralized trusted setups or produce signatures logarithmic in size. However, few also provide linkability, a property used to determine whether the signer of a message has signed any previous message, possibly with restrictions on the anonymity set choice. Here we introduce Triptych, a family of linkable ring signatures without trusted setup that is based on generalizations of zero-knowledge proofs of knowledge of commitment openings to zero. We demonstrate applications of Triptych in signer-ambiguous transaction protocols by extending the construction to openings of parallel commitments in independent anonymity sets. Signatures are logarithmic in the anonymity set size and, while verification complexity is linear, collections of proofs can be efficiently verified in batches. We show that for anonymity set sizes practical for use in distributed protocols, Triptych offers competitive performance with a straightforward construction.
   iacr2020312: "Triptych-2: efficient proofs for confidential transactions"
