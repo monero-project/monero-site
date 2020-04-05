@@ -563,11 +563,16 @@ library:
   books:
   - category: Books
     publications:
-    - name: "Zero to Monero"
-      file: "Zero-to-Monero-1-0-0.pdf"
+    - name: "Zero to Monero: Second Edition"
+      file: "Zero-to-Monero-2-0-0.pdf"
       abstract: >
+        Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
         A comprehensive conceptual (and technical) explanation of Monero.<br>
         We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+    - name: "Zero to Monero: First Edition"
+      file: "Zero-to-Monero-1-0-0.pdf"
+      abstract: >
+        Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
     - name: "Mastering Monero"
       file: "https://masteringmonero.com/free-download.html"
       abstract: >
