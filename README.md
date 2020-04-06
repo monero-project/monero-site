@@ -7,7 +7,6 @@
 - [housekeeping](#housekeeping)
 - [How to make a blog post](#how-to-make-a-blog-post)
 - [Updates on User Guides](#updates-on-user-guides)
-- [Updates on User Guides](#updates-on-user-guides)
 - [How to make a blog post](#how-to-make-a-blog-post)
 - [How to make a User Guide](#how-to-make-a-user-guide)
 - [How to make a Moneropedia Entry](#how-to-make-a-moneropedia-entry)
@@ -60,7 +59,7 @@ A few random points of note:
 ## Translation
 In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. For live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
 
-The bulk of the website is translatable on Weblate, an easy to use localization platform that provide contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
+The bulk of the website and the roadmap are translatable on Weblate, an easy to use localization platform that provide contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
 
 We are trying to move most of the localization work on Weblate, but some parts of the website still need to be manually translated on the repository. The following instructions will tell you which files to translate and how to proceed.
 
@@ -110,7 +109,7 @@ summary: "Translated summary."
 Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
 
 ## How to add a new language
-Whoo boy, this is the big one. Please follow all directions exactly.
+Adding a new language can be complicated. If you feel unsure about the steps necessary, contact the Website workgroup and somebody will add the new language for you.
 
 ### 1. \_config.yml file
 Navigate to the root folder of the whole website and find the file labeled `_config.yml`. Open it and find the line that says `languages:`. Add your two letter language code (Google it if you don't know it) in between the brackets after the others already present. You will need to put a comma after the previous last one.
@@ -125,7 +124,7 @@ Save and exit the file.
 Navigate to the `_data/lang` folder and copy the `en` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
 **The 'en' folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
 
-Translate the content of the files. Do not touch anything labeled `url`, and in the roadmap.yml ONLY translate the `name:` content.
+Translate the content of the files. Do not touch anything labeled `url`.
 
 ### 3. \_i18n folder
 Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml`. Now duplicate the `en` folder and rename it with the correct language code.
@@ -136,18 +135,8 @@ After you've done all the above, you'll need to [open an issue on the repository
 
 ## Housekeeping
 
-### Editing the Site
-When you make an edit to ANY page on the English language of this website, PLEASE copy your changes into the corresponding language files as well.
-
-The Monero Localization workgroup will do their best to keep tabs on all changes of the site, but it'd be nice to notify them that you've changed a page so they can make sure the equivalent pages are changed accordingly in the other languages.
-
 ### GitLab Issues
 We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
-
-### Pull Requests
-Contributors should use [issue keywords](https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html) to make it easier for maintainers to close issues when they merge. Include close, closes, closed, fix, fixes, fixed, resolve, resolves, resolved, etc in the commit message or pull request description, so that the correct issue can be closed if your PR is merged. (Example: 'fixes #1234' could close Issue 1234 when merged.)
-
-Pull requests allow others to make comments or review your changes to the site. We ask that you remain available to comment or make changes to your PR. Sometimes someone else's changes might make your changes conflict with the current site. If that happens you may need to rebase your PR.
 
 ## Updates on User Guides
 User guides and developer guides may need regular updates, either to fix typos, to add explanations regarding new features, to update screenshots, and so on.
@@ -185,17 +174,10 @@ And you will increment the version number in the following way:
 
 ## How to make a blog post
 
-### 1. Quick Start
-* Make new .md file in \_posts (named whatever, no spaces)
-* Front Matter (below)
-* Write Blog Post
-* Test/Build
-* Submit PR
+### 1. Make a file
+Navigate to the \_posts folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md. Take a look at the other posts to get an idea of how to name yours
 
-### 2. Make a file
-Navigate to the \_posts folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md
-
-### 3. Front Matter
+### 2. Front Matter
 ```
 ---
 layout: post
@@ -206,14 +188,8 @@ author: YOUR NAME OR HANDLE HERE
 ---
 ```
 
-### 4. Write
+### 3. Write
 After the front matter is finished you are free to write the remainder of your blog post in markdown.
-
-### 5. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically and test that your page appears in the 'News' section of the website, as well as the sidebars.
-
-### 6. Submit Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
 
 ## How to make a User Guide
 
@@ -265,7 +241,7 @@ Add the version snippet at the top of your guide (before your title):
 Your version should start at `1.1.0` as it is the first Major, first Minor, and no cosmetic changes have occurred.
 
 ### 6. Copy User Guide file into all languages
-Copy your file and navigate to each language file in the /i18n folder. In each language folder (INCLUDING template) go to the resources/user-guides folder and paste your user guide (don't worry, you don't have to translate it) there. This is very important, and the site will not build if the file with the same name is not in each language folder.
+Copy your file and navigate to each language file in the /i18n folder. In each language folder go to the resources/user-guides folder and paste your user guide (don't worry, you don't have to translate it) there. This is very important, and the site will not build if the file with the same name is not in each language folder.
 
 As you paste into each folder, open up the file and edit the snippet at the top of the file (before your title) to mark it untranslated:
 `{% include disclaimer.html translated="false" version=page.version %}`. This does not need to be done in the original language that the User Guide was written in.
@@ -281,7 +257,7 @@ Once you've identified the non-indented area under the category you would like y
 
 In the event that you think your User Guide should be in a new Category that doesn't exist yet, contact the Website workgroup.
 
-Repeat the above process for each language version of this index page INCLUDING THE template.
+Repeat the above process for each language version of this index page.
 
 ## How to make a Moneropedia Entry
 
@@ -330,12 +306,6 @@ summary: "PUT SUMMARY OF YOUR ENTRY HERE IN QUOTES"
 {% include untranslated.html %}
 ```
 
-### 5. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically and test check the link to your entry is appearing on the alphabetical list of Moneropedia entries and that it leads to your entry when clicked. Test your Moneropedia entry in the browser and contact rehrar if there are any bugs.
-
-### 6. Submit Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
-
 ## How to update the Team page
 
 If you are acting on behalf of another individual, please make sure you get their permission first before adding them onto the Team page.
@@ -356,54 +326,40 @@ Put the name or handle of the person in the `name` section and in the  `url:` se
 
 Save the file.
 
-### 2. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in the `team.yml` file back in 8.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
-
-If the build is successful, go to the Team page `/community/team/` and check to see that the contributor is showing up in the correct place. Click their GitHub or GitLab link (if applicable) and make sure it redirects correctly. Test the page and let rehrar know if there are any bugs.
-
-### 3. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
-
 ## How to update the Roadmap
 
 ### 1. Edit the .yml file
-Navigate to the `/_data/` folder and open `roadmap.yml`. You will notice a list separated by hyphenated `-year` tags.
+Navigate to the `/_data/` folder and open `lang/en/roadmap.yml`. You will notice this structure:
 
-**DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
-
-Find the year that you want to update and copy the code below:
 ```
-- name:
-  date:
-  status:
+year_2014:
+- month:
+  STATUS:
+    - name:
 ```
-and paste it in the correct year's `accomplishments:` section IN THE CHRONOLOGICAL ORDER that it will be in. So if there is a accomplishment that happened/is happening before the one you are inputting, make sure it is higher up than yours. If there is an accomplishment that happened/is happening AFTER yours, make sure it is after yours. If you don't have exact dates, just do your best to estimate.
+Where STATUS can be either `completed`, `ongoing` or `upcoming`.
 
-Fill in the data as follows:
-* `name:` The name of the accomplishment. Try to keep it short, a sentence or two at most.
-* `date:` When the accomplishment happened (past) or when it is expected to happen (future)
-* `status:` If the task is done, put `completed`, if the task is currently in the works put `ongoing`, and if work on the task has not yet started to your knowledge, but is expected to, put `upcoming`.
+Look for the year and month related to the entry you want to add, if the month and status are already present, simply add `- name: NAME OF YOUR ENTRY` in the correct position.
+
+For example, there was a new release on March 2020 and you would like to add it to the roadmap as "completed":
+
+- Scroll the `roadmap.yml` file until you arrive to `year_2020`
+- The milestone happened in March so you need to look for that month (`- month: March`)
+- Since the milestione has been already achieved, look for the `completed:` status.
+- Under it add `-name: NAME OF YOUR ACHIEVED MULESTONE`. Which in our case would be `-name: release wallet WHATEVER`
+
+If a year, month or status is missing, simpluy adding by following the structure you see in the page.
 
 **Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
 
-Save the file.
-
-### 2. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in the `roadmap.yml` file back in 10.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
-
-If the build is successful, go to the Events page `/resources/roadmap/` and check to see that the newly added accomplishment is showing up in the correct place in the correct year. Test the page and let rehrar know if there are any bugs.
-
-### 3. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
+The translation of the roadmap happens [on Weblate](https://translate.getmonero.org/projects/getmonero/roadmap/).
 
 ## How to add a new Merchant
 
 ### 1. Edit the .yml file
 Navigate to the `/_data/` folder and open `merchants.yml`. You will notice a list separated by hyphenated `-category` tags.
 
-**DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
-
-Find the category that best describes your business/service and copy the code below:
+Find the category that best describes your business/service and copy the code below, making sure you are keeping the alphabetic order consistent:
 ```
 - name:
   url:
@@ -418,46 +374,8 @@ Fill in the data as follows:
 
 Save the file.
 
-### 2. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in the `merchants.yml` file back in 10.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
-
-If the build is successful, go to the Merchants page `/community/merchants/` and check to see that the business is showing up in the correct category and that the link is redirecting correctly. Test the page and let rehrar know if there are any bugs.
-
-### 3. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
-
 ## How to add a question to the FAQ
-
-### 1. Copy/Paste Code
-Navigate to the `/get-started/faq` folder and open the `index.md` file. Inside you will see HTML code, but you will see it is very repetitive.
-
-Copy the code below:
-```
-<div class="tab">
-    <input id="tab-CHANGETHIS" type="checkbox" name="tabs" class="accordion">
-    <label for="tab-CHANGETHIS" class="accordion">{% t faq.qN %}</label>
-    <div class="tab-content">
-        <p>{% t faq.aN %}</p>
-    </div>
-</div>
-```
-And paste it at the very bottom of the file (literally underneath everything else).
-
-Now we're going to change just a couple of things. Find the section with:
-```
-<input id="tab-CHANGETHIS" type="checkbox" name="tabs" class="accordion">
-<label for="tab-CHANGETHIS" class="accordion">{% t faq.qN %}</label>
-```
-
-and change the sections in between the quotes that say 'CHANGETHIS'. Leave the first part `tab-` alone and see what number is on the last FAQ question (i.e. `tab-nine`). Now make it "tab-NEXTNUMBER".
-
-Now you're going to find where it says `{% t faq.qN %}` and `{% t faq.aN %}`. Those are links to vaiables. You need to navigate to `_18n/en.yml` and find the `faq` section. You'll see the list of all the other FAQs with the structure: `qNUMBER` `aNUMBER`. Go to the bottom of that list and add your variable in the structure `qN`, where `N` is the number that follows the precedent in the list. For example, if the last entries were q20 and a20, you have to add q21 and a21. q21 will contain the string with your question, a21 will contain the answer. Now edit `{% t faq.qN %}` and `{% t faq.aN %}` accordingly.
-
-### 2. Build/Test
-Build your website using `bundle exec jekyll serve`. If the build is successful, go to the FAQ page `/get-started/faq/` and check to see that your question is showing up and, when clicked, the answer drops down. If not, check to make sure that the `id="tab-CHANGETHIS"` in the input and the `for="CHANGETHIS"` in the label are identical to each other. Test the page and let the website worgroup know if there are any issues.
-
-### 3. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
+The structure of the FAQ is a bit more complex than it used to be and contains anchors, variables and a TOC. A step by step guide would be too complex to follow. A basic knowledge of HTML is necessary to edit the page. If you wish to add a new FAQ please open an issue in the repository or/and contact the Website workgroup.
 
 ## How to add a publication to the Library
 
@@ -470,8 +388,6 @@ Please remind to minimize the size of your publication. For PDF, you'll find a l
 Navigate to the `/_i18n/` folder and open `en.yml`.
 
 Go down until you find the `library` section. You will notice a list separated by hyphenated `-category` tags in a `books:` section.
-
-**DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
 
 Find the category that best corresponds your publication and copy the code below:
 ```
@@ -493,13 +409,3 @@ Fill in the placeholders as follows:
 **Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
 
 Save the file.
-
-open other `*.yml` files and copy the same code to it, in the exact same place.
-
-### 3. Build/Test
-Build your website using `jekyll serve` if it's not rebuilding automatically. If the build fails and you receive an error, you may have messed up somewhere in a `*.yml` file back in 13.1. Go back to that section and check the indentation. Yes, it's stupid. Yes, it has to be perfect.
-
-If the build is successful, go to the Library page `/library/` and check to see that the publication is showing up in the correct category and that the link is downloading correctly. Test the page and let rehrar know if there are any bugs.
-
-### 4. Submit a Pull Request
-You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure to make any changes if requested.
