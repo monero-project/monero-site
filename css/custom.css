@@ -2993,7 +2993,7 @@ footer {
 }
 
 .downloads ul.logo {
-  list-style-image: url('/img/logo-list.png');
+  list-style-image: url('/img/logo-list.svg');
 }
 
 .download-nav.info-block {
