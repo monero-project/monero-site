@@ -4372,13 +4372,102 @@ p.hangouts-social {
 
 }
 
+/*************************FAQ********************************/
+
+.faq h2 {
+  margin-bottom: 1rem;
+}
+
+.faq ul {
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+.faq ul.logo {
+  list-style-image: url('/img/logo-list.svg');
+}
+
+.faq li.category {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.faq .tab {
+  padding: 1rem 0;
+}
+
+.faq .tab-answer {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+.faq .tab h3 {
+  font-weight: bold;
+}
+
+.faq a.arrow-up {
+  border: 1px solid #d26e2b;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.faq a.arrow-up:hover, .downloads a.arrow-up:focus {
+  border: none;
+  background-color: #d26e2b;
+}
+
+.faq a.arrow-up i {
+  border: solid #d26e2b;
+  border-width: 0 3px 3px 0;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1.02rem;
+  left: 0.88rem;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -webkit-transition: all ease-out .2s;
+  -moz-transition: all ease-out .2s;
+  -o-transition: all ease-out .2s;
+  transition: all ease-out .2s;
+}
+
+.faq a.arrow-up:hover i, .faq a.arrow-up:focus i {
+  border-color: #ffffff;
+}
+
+.tab .anchor {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  visibility: hidden;
+  position: absolute;
+  left: -2rem;
+  border-bottom: none;
+  z-index: 1;
+  line-height: unset;
+  padding-left: 0.5rem;
+}
+
+.tab .anchor:before {
+  content: "\01F517";
+}
+
+.tab:hover .anchor {
+  visibility: visible;
+  border-bottom: none;
+}
+
 /*************************accordion********************************/
 
 .tab {
   position: relative;
   width: 100%;
   color: #4c4c4c;
-  overflow: hidden;
   border-top: 1px solid #edeef0;
 }
 
@@ -4425,11 +4514,11 @@ label.accordion {
 
 .tab-content {
   max-height: 0;
-  overflow: hidden;
   border-radius: 3px;
   -webkit-transition: max-height 0.3s;
   -o-transition: max-height 0.3s;
   transition: max-height 0.3s;
+  overflow: hidden;
 }
 
 .tab-content p {
@@ -4438,7 +4527,6 @@ label.accordion {
 
 input.accordion:checked ~ .tab-content {
   max-height: 100rem;
-  overflow: visible;
 }
 
 label.accordion::after {
