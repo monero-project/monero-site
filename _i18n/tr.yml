@@ -633,6 +633,7 @@ moneropedia:
     paperwallet: Kâğıt Cüzdan
     paymentid: Ödeme ID
     pedersen-commitment: Pedersen Üstlenmesi
+    pruning: Pruning
     remote-node: Remote Node
     reseed: Tekrar-tohum
     ringCT: Halka CT

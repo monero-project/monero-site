@@ -638,6 +638,7 @@ moneropedia:
     paperwallet: Бумажный кошелёк
     paymentid: Идентификатор платежа
     pedersen-commitment: Обязательство Педерсена
+    pruning: Pruning
     remote-node: Remote Node
     reseed: Повторное заполнение
     ringCT: Ring CT

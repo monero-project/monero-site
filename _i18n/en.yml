@@ -167,7 +167,7 @@ downloads:
   fiatconv: in-app fiat conversion
   fiatconv1: No longer a need to check the value of your XMR online
   pruning: Blockchain pruning
-  pruning1: Not enough disk space? Just use pruning to download only 1/3 of the blockchain
+  pruning1: Not enough disk space? Just use @pruning to download only 1/3 of the blockchain
   langs: "<b>30+ languages</b> available"
   cli_intro: The CLI wallet gives you the total control over your Monero node and funds. Highly customizable and includes various analysis tools, as well as an HTTP RPC and 0MQ interface.
   currentversion: Current Version
@@ -651,6 +651,7 @@ moneropedia:
     paperwallet: Paper Wallet
     paymentid: Payment ID
     pedersen-commitment: Pedersen Commitment
+    pruning: Pruning
     remote-node: Remote Node
     reseed: Reseed
     ringCT: Ring CT
