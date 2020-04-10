@@ -169,6 +169,8 @@
       url: http://www.nestorgames.com
     - name: Offline Monero address generator
       url: https://moneroaddress.org/
+    - name: Ownbit
+      url: https://ownbit.io
 - category: Services
   id: services
   merchants:
@@ -371,6 +373,8 @@
       url: https://revolutionmicro.com/
     - name: SecPoint IT Security Products
       url: https://shop.secpoint.com/shop/frontpage.html
+    - name: ShopinBit - Baked Goods, 16k Pet Supplies, 80k Electronics + Concierge Service
+      url: https://shopinbit.com
     - name: Tasteless - Adult store
       url: https://tasteless.io/
     - name: The Kava Society - Kava tea
