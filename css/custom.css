@@ -4454,7 +4454,7 @@ p.hangouts-social {
 }
 
 .tab .anchor:before {
-  content: "\01F517";
+  content: url('/img/link.svg');
 }
 
 .tab:hover .anchor {
