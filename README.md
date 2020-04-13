@@ -29,7 +29,7 @@ If you need support about something related to the website, plese join `#monero-
   * Install Bundler: `gem install bundler`
   * Install Jekyll with all dependencies (run from the project directory): `bundle`
 
-* GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com/monero-project) or [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register on GitLab and fork the [Monero Website repository](https://repo.getmonero.org/monero-project/monero-site). Please note that GitLab accounts logged in using the "Log in with GitHub" option require manual intervention in order to be able to fork repositories. Either register your account using email/password or contact the Website Workgroup via GitLab or `#monero-site` to have your GitHub OAuth profile unlocked.
+* GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com/monero-project) or [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register on GitLab and fork the [Monero Website repository](https://github.com/monero-project/monero-site). Please note that GitLab accounts logged in using the "Log in with GitHub" option require manual intervention in order to be able to fork repositories. Either register your account using email/password or contact the Website Workgroup via GitLab or `#monero-site` to have your GitHub OAuth profile unlocked.
 
 *Note: If you're confused, feel free to click other files in the same directory (folder) that you are in for the step that you are on to see some working examples. Compare them to the instructions and you should understand better.*
 
@@ -41,7 +41,7 @@ Once you have the above list of things, it's typically a good idea to build the 
 4. If all went well, you should see the Monero website and you're ready to make changes.
 
 ## General change recommendations
-The average Monero user that will want to contribute to the website should probably start looking for issues labelled [⛑️ help needed](https://repo.getmonero.org/monero-project/monero-site/issues?label_name%5B%5D=%E2%9B%91%EF%B8%8F++help+needed) or making blog posts, user guides or Moneropedia entries; all of which are covered in this document. If this is all you want to do, don't worry, it's actually not a daunting task at all.
+The average Monero user that will want to contribute to the website should probably start looking for issues labelled [⛑️ contributor needed](https://github.com/monero-project/monero-site/issues?q=is%3Aissue+is%3Aopen+label%3A%22%E2%9B%91%EF%B8%8F+contributor+needed%22) or making blog posts, user guides or Moneropedia entries; all of which are covered in this document. If this is all you want to do, don't worry, it's actually not a daunting task at all.
 
 If you are a web developer and would like to make large macro-level changes, it would be best to open an issue first or to get in contact with the developers on `#monero-site` (IRC/Freenode, MatterMost, Matrix).
 
@@ -131,11 +131,11 @@ Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicat
 **The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
 
 ### 4. Open an issue on the repo where the website is hosted
-After you've done all the above, you'll need to [open an issue on the repository](https://repo.getmonero.org/monero-project/monero-site/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=) asking to add the language you are working on to Weblate, where the core of the website is translated.
+After you've done all the above, you'll need to [open an issue on the repository](https://github.com/monero-project/monero-site/issues) asking to add the language you are working on to Weblate, where the core of the website is translated.
 
 ## Housekeeping
 
-### GitLab Issues
+### GitHub Issues
 We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
 ## Updates on User Guides

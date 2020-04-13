@@ -1,4 +1,4 @@
 - name: Juridisch
   url: legal
 - name: Broncode
-  url: https://repo.getmonero.org
+  url: https://github.com/monero-project/monero-site
