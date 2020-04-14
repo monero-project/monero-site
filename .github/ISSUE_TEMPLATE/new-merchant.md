@@ -1,3 +1,12 @@
+---
+name: New Merchant
+about: Propose a new merchant to add to the 'Merchants' page
+title: ''
+labels: "\U0001F3EA merchant, \U0001F50D Needs investigation"
+assignees: ''
+
+---
+
 #### What's the name of your business?
 
 <!-- Write here -->
