@@ -1,86 +1,86 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="false" version=page.version %}
 
-Below we'll show an example configuration that allows you to run a Monero daemon (eg on a home server or VPS) that you can connect to from another computer running your wallet.  We do this over the Tor anonymity network to retrieve the transaction information needed by your wallet.  The benefit of this approach is that the daemon (`monerod`) can stay on all of the time sending / receiving blocks, while the wallet can connect when needed and have access to the full blockchain. [Monerujo](https://www.monerujo.io/) should also work via [Orbot](https://guardianproject.info/apps/org.torproject.android/).  Because Tor hidden services provide encryption and authentication, you can be confident that your RPC credentials will not be sent in the clear.  Tor also solves problems often seen on home servers related to port-forwarding, IP addresses changing, etc -- it just works.  This setup will also obfuscate the fact that you are connecting to a remote Monero node. Tested with Monero `v0.15.0.1` connecting a Mac laptop wallet to a remote Linux node (Ubuntu 18.04.2).
+Ниже нами приводится пример конфигурации, позволяющей запустить демон Monero (например, на домашнем сервере или VPS), к которому вы могли бы подсоединиться с другого компьютера, на котором будет запущен ваш кошелёк. Для получения информации транзакций, необходимой для вашего кошелька, мы используем анонимную сеть Tor. Преимущество данного подхода заключается том, что демон (`monerod`) может постоянно осуществлять передачу/приём блоков, в то время как кошелёк будет подсоединяться по необходимости и иметь доступ к полному блокчейну. [Monerujo](https://www.monerujo.io/) также должен работать через [Orbot](https://guardianproject.info/apps/org.torproject.android/). Поскольку скрытые службы Tor обеспечивают возможность шифрования и аутентификации, вы можете быть уверены в том, что ваши данные RPC не будут передаваться в открытую. Tor также решает проблемы, зачастую характерные для домашних серверов и связанные с пробросом портов, изменением IP-адресов и т. д. Всё это просто работает. Данная настройка также позволит скрыть тот факт, что вы подсоединяетесь к удалённому узлу Monero. Она была протестирована с версией Monero `v0.15.0.1.` В ходе тестирования кошелёк, установленный на ноутбук Mac, соединялся с удалённым узлом Linux (Ubuntu 18.04.2).
 
-## Create a Tor hidden service for RPC
+## Создание скрытой службы Tor для RPC
 
-Make sure [Tor is installed](https://community.torproject.org/relay/setup/bridge/debian-ubuntu/) and running correctly, then proceed.
+Убедитесь в том, что [Tor установлен](https://community.torproject.org/relay/setup/bridge/debian-ubuntu/) и работает надлежащим образом. После этого можно двигаться дальше.
 
-We only need to configure the RPC server to run as a hidden service here on port `18081`.
+Необходимо только конфигурировать сервер RPC так, чтобы он использовал скрытую службу на порте `18081`.
 
-File: `/etc/torrc`
+Файл: `/etc/torrc`
 
 ```
 HiddenServiceDir /var/lib/tor/monero-service/
 HiddenServicePort 18081 127.0.0.1:18081
 ```
-Restart Tor:
+Перезапустите Tor:
 ```
 sudo systemctl restart tor@default
 ```
 
-Make sure Tor started correctly:
+Убедитесь в том, что Tor запустился правильно:
 ```
 sudo systemctl status tor@default.service
 ```
 
-If everything looks good, make a note of the hidden service (onion address) name:
+Если всё хорошо, отметьте название скрытой службы (луковый адрес):
 ```
 sudo cat /var/lib/tor/monero-service/hostname
 ```
-It will be something like 4dcj312uxag2r6ye.onion -- use this for `HIDDEN_SERVICE` below.
+Он будет выглядеть примерно так: like 4dcj312uxag2r6ye.onion -- Используйте его для `HIDDEN_SERVICE` ниже.
 
-### Configure Daemon to allow RPC
+### Конфигурирование демона под использование RPC
 
-In this example, we don't use Tor for interacting with the p2p network, just to connect to the monero node, so only RPC hidden service is needed.
+В этом примере мы не используем Tor для взаимодействия с p2p сетью, а просто соединяемся с узлом Monero, поэтому нам необходима только скрытая служба RPC.
 
-File: `~/.bitmonero/bitmonero.conf` (in the home directory of the Monero user)
+Файл: `~/.bitmonero/bitmonero.conf` (в домашней директории пользователя Monero)
 
 ```
 no-igd=1
 restricted-rpc=1
 rpc-login=USERNAME:PASSWORD
 ```
-(Make up a USERNAME and PASSWORD to use for RPC)
+(Чтобы использовать RPC придумайте ИМЯ ПОЛЬЗОВАТЕЛЯ (USERNAME) и ПАРОЛЬ (PASSWORD))
 
-Restart the Daemon: `monerod stop_daemon; sleep 10; monerod --detach`
+Перезапустите демон: `monerod stop_daemon; sleep 10; monerod --detach`
 
-Make sure the daemon started correctly:
+Убедитесь в том, что демон запустился правильно:
 ```
 tail -f ~/.bitmonero/bitmonero.log
 ```
 
-## Connecting to your node from a local wallet
+## Подсоединение к вашему узлу с локального кошелька
 
-Make sure you have Tor running locally so you can connect to the Tor network. One simple way on the Mac is to just start the Tor browser and use its Tor daemon.
+Убедитесь в том, что Tor работает локально, после чего можно подсоединиться к сети Tor. Одним из простых способов, в случае с Mac, является простой запуск браузера Tor и использование демона Tor.
 
-Then test a simple RPC command, eg:
+Затем следует протестировать простую команду RPC, например:
 ```
 curl --socks5-hostname 127.0.0.1:9150 -u USERNAME:PASSWORD --digest -X POST http://HIDDEN_SERVICE.onion:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_info"}' -H 'Content-Type: application/json'
 ```
-Replace `USERNAME`, `PASSWORD`, and `HIDDEN_SERVICE` with values from above.  Change `9150` to another port if needed by your local Tor daemon.
+Замените `USERNAME`, `PASSWORD`, и `HIDDEN_SERVICE` значениями, указанными выше. Измените порт `9150` если того потребует ваш локальный демон Tor.
 
-When you execute the command, you should get some info about the remote daemon if everything is working correctly.  If not, add a ` -v ` to the beginning and try to debug why it's not connecting, check firewalls, password, etc.
+Когда выполняется команда, и если всё работает надлежащим образом, вы должны получить некоторую информацию об удалённом демоне. Если это не так, следует добавить ` -v ` в начале и попытаться выяснить, почему соединение отсутствует, проверить средства сетевой защиты (firewall), правильность пароля и т. д.
 
-Once it is working, you can connect using your cli wallet:
+Как только всё заработает, можно подсоединяться, используя свой CLI-кошелёк:
 ```
 ./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD --wallet-file ~/PATH/TO/YOUR/WALLET
 ```
-Replace values above as needed.
+По необходимости можно заменить значения, указанные выше.
 
 ## GUI
 
-If you are interested in experimenting with the GUI over Tor, you can try `torsocks` (note this may leak info -- do not rely on it if your life depends on maintaining anonymity).  Here is an example on MacOS, adjust as needed for the Linux GUI:
+Если вам хочется поэкспериментировать с соединением GUI через Tor, вы можете попытаться воспользоваться `torsocks` (следует отметить, что это может привести к утечке информации — не стоит особо полагаться на этот вариант, если от вашей анонимности будет зависеть ваша жизнь). Мы приводим пример для MacOS, который при необходимости можно адаптировать по Linux GUI:
 ```
 torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui
 ```
 
-This will allow the GUI to communicate with the Tor network.  Once the GUI is open and a wallet loaded, you must configure it to connect to your Tor hidden service by adding your onion address to:  "Settings > Node > Remote node > Address".
+Это позволит GUI связаться с сетью Tor. Как только будет открыт GUI и кошелёк будет запущен, будет необходимо конфигурировать его для соединения с вашей скрытой службой Tor, добавив соответствующий луковый адрес: "Settings > Node > Remote node > Address".
 
-In future versions of the GUI, we expect to add direct Tor / I2P support so that `torsocks` + commandline are not needed.
+Мы надеемся, что в следующих версиях GUI будет добавлена прямая поддержка Tor / I2P, и необходимость в использовании командной строки и `torsocks` отпадёт.
 
-# Additional resources
+# Дополнительные ссылки
 
 * [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)
-* [Using Tor](https://github.com/monero-project/monero#using-tor) (Monero README)
+* [Используем Tor](https://github.com/monero-project/monero#using-tor) (Monero README)
