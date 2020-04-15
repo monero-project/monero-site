@@ -548,38 +548,32 @@ specs:
 
 library:
   description: "Vous trouverez ci-dessous des publications, livres ou revues disponibles au téléchargement."
-  books:
-  - category: Livres
-    publications:
-    - name: "Zero to Monero"
-      file: "Zero-to-Monero-1-0-0.pdf"
-      abstract: >
-        Une explication conceptuelle (et technique) compréhensible de Monero.<br>
-        Nous nous efforçons d'enseigner à tous ceux qui connaissent les bases de l'algèbre et les concepts des sciences de l'informatique simple, comme la ‘représentation binaire’ d'un nombre, non seulement comment fonctionne Monero dans le détail et de manière compréhensible, mais également quelle peut être l'utilité et la beauté de la cryptographie.
-    - name: "Mastering Monero"
-      file: "https://masteringmonero.com/free-download.html"
-      abstract: |
-        Un guide à travers le monde apparemment complexe de Monero.<br>
-        Il contient :
-        <ul><li>Une vaste introduction aux chaînes de blocs et à l\'importance de la confidentialité, idéale pour les utilisateurs non-techniques.</li>
-        <li>La discussion des lacunes de Bitcoin et les solutions spécifiques apportées par Monero.</li>
-        <li>Des scénarios utilisateurs (illustrant de quelle manière Monero protège votre confidentialité), des analogies, des exemples, des discussions juridiques/éthiques et des bribes de code illustrant les concepts techniques clef.</li>
-        <li>Des détails sur le réseau décentralisé de Monero, l\'architecture pair à pair, le cycle de vie des transactions et les principes de sécurité.</li>
-        <li>Une introduction aux fondations techniques de Monero, à destination des développeurs, ingénieurs, architectes logiciel et utilisateurs curieux.</li>
-        <li>Les nouveaux développements, tel que Kovri, les Bulletproofs, les Multisignature, les Portefeuilles Materiel, etc.</li></ul>
-        Voir le site web de <a href="https://masteringmonero.com/">Mastering Monero</a> pour plus d'informations sur la version complète.
-  - category: Magazines
-    publications:
-    - name: "Revuo Monero Q4 2017"
-      file: "Revuo-2017-Q4.pdf"
-      abstract: >
-        Magazine trimestriel de Monero, édition Q4 2017.<br>
-        Dans cette parution, des nouvelles concernant : le développement, le laboratoire de Recherche Monero, Kovri et la communauté.
-    - name: "Revuo Monero Q3 2017"
-      file: "Monero-Revuo-3Q-2017.pdf"
-      abstract: >
-        Magazine trimestriel de Monero, édition Q3 2017.<br>
-        Dans cette parution, des nouvelles concernant : le développement, le laboratoire de Recherche Monero, Kovri, la communauté, le matériel et Monerujo.
+  books: Livres
+  zerotomonerov2: "Zero to Monero: Second Edition"
+  zerotomonerov2p: >
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
+    A comprehensive conceptual (and technical) explanation of Monero.<br>
+    We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  zerotomonerov1: "Zero to Monero: First Edition"
+  zerotomonerov1p: >
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+  masteringmonerop: >
+    Un guide à travers le monde apparemment complexe de Monero.<br>
+    Il contient :
+    <ul><li>Une vaste introduction aux chaînes de blocs et à l\'importance de la confidentialité, idéale pour les utilisateurs non-techniques.</li>
+    <li>La discussion des lacunes de Bitcoin et les solutions spécifiques apportées par Monero.</li>
+    <li>Des scénarios utilisateurs (illustrant de quelle manière Monero protège votre confidentialité), des analogies, des exemples, des discussions juridiques/éthiques et des bribes de code illustrant les concepts techniques clef.</li>
+    <li>Des détails sur le réseau décentralisé de Monero, l\'architecture pair à pair, le cycle de vie des transactions et les principes de sécurité.</li>
+    <li>Une introduction aux fondations techniques de Monero, à destination des développeurs, ingénieurs, architectes logiciel et utilisateurs curieux.</li>
+    <li>Les nouveaux développements, tel que Kovri, les Bulletproofs, les Multisignature, les Portefeuilles Materiel, etc.</li></ul>
+    Voir le site web de <a href="https://masteringmonero.com/">Mastering Monero</a> pour plus d'informations sur la version complète.
+  magazines: Magazines
+  revuoq4p: >
+    Magazine trimestriel de Monero, édition Q4 2017.<br>
+    Dans cette parution, des nouvelles concernant : le développement, le laboratoire de Recherche Monero, Kovri et la communauté.
+  revuoq3p: >
+    Magazine trimestriel de Monero, édition Q3 2017.<br>
+    Dans cette parution, des nouvelles concernant : le développement, le laboratoire de Recherche Monero, Kovri, la communauté, le matériel et Monerujo.
 
 moneropedia:
   add_new_button: Ajouter une Nouvelle Entrée

@@ -612,7 +612,6 @@ library:
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
     Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
-  masteringmonero: "Mastering Monero"
   masteringmonerop: >
     A guide through the seemingly complex world of Monero.<br>
     It includes:
@@ -624,11 +623,9 @@ library:
     <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc.</li></ul>
     See <a href="https://masteringmonero.com/">Mastering Monero</a> website for information.
   magazines: Magazines
-  revuoq4: "Revuo Monero Q4 2017"
   revuoq4p: >
     Quarterly Monero magazine, Q4 2017 edition.<br>
     In this issue, updates about: development, Monero Research Lab, Kovri, and community.
-  revuoq3: "Revuo Monero Q3 2017"
   revuoq3p: >
     Quarterly Monero magazine, Q3 2017 edition.<br>
     In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
