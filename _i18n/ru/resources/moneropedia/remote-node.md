@@ -1,23 +1,23 @@
 ---
-terms: ["remote-node", "remote-nodes"]
-summary: "Nodes wich are not running in the same machine as the wallet. Open remote nodes allow to use the Monero network immediately"
+terms: ["remote-node", "remote-nodes", "удаленный-узел", "удалённый-узел", "удалённые-узлы"]
+summary: "Узлы Monero, которые работают в другой сети или на другом компьютере отдельно от кошелька. Удаленные узлы позволяют начать использовать Monero, без загрузки локальной копии блокчейна."
 ---
 
-A @node that doesn't run on the same local machine where the Monero @wallet is located is called "Remote Node" and can be private or open.
+@Узел, работающий не на той же машине, на которой установлен @кошелёк Monero, называется «удалённым узлом» и может быть как приватным, так и открытым.
 
-A **private remote node** doesn't run on your local machine, but you have full control over it. A classic example is a node running on a VPS or a server. That node is not on your local machine, but you have full control over it. You can even decide to make it become an open node, allowing people to connect to it.
+**Приватный удалённый узел** работает не на вашей локальной машине, но контролируется вами. Классическим примером может служить узел, работающий на VPS или на сервере. В этом случае узел не установлен на вашей машине, но вы полностью контролируете его. Вы даже можете сделать его открытым узлом и разрешить другим людям пользоваться им.
 
-An **Open remote node** can be used by people who, for their own reasons (usually because of hardware requirements, disk space, or technical abilities), cannot/don't want to run their own node and prefer to relay on one publicly available on the Monero network. Open remote nodes are often simply referred as "remote nodes".
+**Открытый удалённый узел** может использоваться теми людьми, которые в силу каких-либо причин (как правило это ограничения, связанные с аппаратным обеспечением, недостаточным объёмом жёсткого диска, или другие технические причины) не могут или не хотят создавать и использовать собственный узел и предпочитают полагаться на публично доступный узел в сети Monero. Открытые удалённые узлы часто называют просто «удалёнными узлами».
 
-Using an open node will allow to make a @transaction instantaneously, without the need to download the @blockchain and sync to the Monero network first, but at the cost of the control over your privacy. the Monero community suggests to always run your own node to obtain the maximum privacy possible and to help decentralize the network.
+Использование открытого узла обеспечивает возможность практически мгновенного проведения @транзакций в силу отсутствия необходимости в предварительном скачивании @блoкчейна и синхронизации с сетью Monero, но это подразумевает утрату контроля над вашей анонимностью. Сообщество Monero рекомендует постоянно использовать собственный узел, так как это обеспечивает максимально возможную анонимность, а также способствует децентрализации сети.
 
-### Public Nodes
+### Публичные узлы
 
-Open nodes are cool because, as we said above, allow people who are not running their own node to immediately join the Monero network. There are 2 main ways to connect to an open node: Simply get somebody to share with you their node, by asking them to "open it" and provide you with IP address and port, or use a public one.
+Открытые узлы — это здорово, поскольку, как уже было сказано выше, они позволяют людям, не пользующимся собственными узлами, быстро подсоединяться к сети Monero. Существует два основных способа соединения с открытым узлом: найти кого-то и попросить «поделиться» своим узлом, попросить этого человека «открыть» свой узел и предоставить его IP-адрес и номер порта, или же можно просто воспользоваться публичным узлом.
 
-Public nodes are reachable in the network using two systems:
+Публичные узлы можно найти в сети по двум системам:
 
-- **Node aggregators**, which are basically lists of open remote nodes. The operators of those nodes decided to add them to the aggregator so that other people can use them. The aggregator will provide to the person who want to use a remote node a simple URL. This URL connects to one of the nodes in the list and will need to be inserted in the Monero wallet (GUI or CLI). The wallet will then contact one of the nodes provided by the URL and will allow the end user to immediately receive and send transactions. One of the most famous node aggregators is [MoneroWorld](https://moneroworld.com/#nodes).
-- **Native public nodes**. This is one of the new coolest features the Monero devs came up with to improve the user experience and to make easier to connect to the network. The CLI wallet allow to make a node public by simply adding the flag `--public-node`. Doing so, it will be advertised on the P2P network and people will be able to connect to it (or to another public node advertising itself in the same way) using the related option in the GUI and CLI wallets.
+- Через **агрегаторы узлов**, которые по сути являются списками удалённых узлов. Операторы добавляют свои узлы в такие агрегаторы для того, чтобы другие люди могли пользоваться ими. Агрегатор выдаёт человеку, желающему воспользоваться удалённым узлом, соответствующий URL. Этот URL обеспечивает соединение с одним узлом из списка, и должен быть указан в кошельке Monero (GUI или CLI). После этого кошелёк свяжется с одним из узлов, связанных с этим URL, и пользователь тут же сможет получать и отправлять транзакции. Одним из самых известных агрегаторов узлов является [MoneroWorld](https://moneroworld.com/#nodes).
+- **«Родные» публичные узлы**. Это одна из новых и самых крутых особенностей Monero, реализованных разработчиками Monero и направленных на повышение удобства использования и упрощение процесса подсоединения к сети. CLI-кошелёк позволяет сделать узел публичным простым добавлением признака `--public-node`. После этого узел будет виден в P2P сети, и люди смогут подсоединяться к нему (или к другому публичному узлу, который «позиционирует» себя таким же образом), используя соответствующую опцию GUI- или CLI-кошелька.
 
-Be aware that using public remote nodes can be risky. Node operators can link transactions to IP addresses. These risks can be mitigated, but you should always avoid using them if you have the possibility. Run your own node!
+Следует помнить о том, что использование публичных узлов связано с определёнными рисками. Оператор узла может связать ваши транзакции с вашим IP-адресом. Этого можно избежать, но по возможности лучше не пользоваться публичными узлами. Лучше создавайте собственный узел и пользуйтесь им!
