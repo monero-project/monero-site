@@ -1,86 +1,80 @@
 {% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
-### Prove payments
 
-When you send money to a party who then disputes the payment was made, you need to be able to prove the payment was made.
+### Provando pagamentos
 
-With Bitcoin, this is typically done by looking up the transaction ID, where the origin and destination addresses are
-shown, along with the amount transacted.
+Se você enviou dinheiro para alguém, e essa pessoa precisa que você confirme para ela que o pagamento foi feito, você precisa ser capaz de provar isso.
 
-Monero, however, is private: that information is not available publicly on the blockchain. The steps are therefore a bit
-more involved.
+No Bitcoin, para comprovar uma transação, normalmente se envia o ID da transação, que, ao ser pesquisado na blockchain, informará quais os endereços de origem e de destino, assim como a quantia transacionada.
 
-To prove to Charlie that she made a payment to Bob, Alice must supply Charlie three pieces of information:
+O Monero, entretanto, é uma moeda privada: essas informações não estão disponíveis publicamente na blockchain. Em função disso, os passos necessários para comprovar a transação são um pouco mais complexos.
 
-- the transaction ID, as is done in Bitcoin
-- Bob's address, as is done with Bitcoin
-- the transaction's key, which is new with Monero and other CryptoNote currencies
+Para provar para Charlie que ela fez um pagamento para Bob, Alice precisa fornecer a Charlie três informações:
 
-When Alice made the transaction, a one time key was automatically generated just for this transaction.
+- o ID da transação, assim como é feito no Bitcoin
+- a chave da transação, que é uma chave usada pelo Monero e outras moedas que usam o protocolo CryptoNote
+- o endereço do Bob, assim como é feito no Bitcoin
+
+Quando a Alice faz uma transação, uma chave de uso único é gerada automaticamente para cada transação.
 
 #### CLI
 
-Alice can query it thus in monero-wallet-cli (new name for the old simplewallet):
+Alice pode requisitar a chave da transação (tx_key) na monero-wallet-cli:
 
-> get_tx_key TXID
+> get_tx_key ID_DA_TRANSAÇÃO
 
-Alice would plug in her actual transaction ID instead of this TXID placeholder. All being well, the one time transaction key
-will be displayed.
+A ID da transação deve ser inserida no lugar de ID_DA_TRANSAÇÃO. Se tudo der certo, a chave da transação será exibida.
 
-Note that this will only work if monero-wallet-cli is set to save transaction keys. To double check:
+Note que isso só irá funcionar se a monero-wallet-cli estiver configurada para salvar as chaves de transação. Para verificar, digite:
 
 > set
 
-If it's set to 0, set it to 1:
+Se o salvamento das chaves de transação (store-tx-info) estiver configurado para 0 (desativado), então você terá que configurá-lo para 1 (ativado):
 
 > set store-tx-info 1
 
 #### GUI
 
-Alice can open her monero-wallet-gui and go to the history page to see her transaction detail:
+Alice pode abrir sua monero-wallet-gui e ir para a página Histórico para ver os detalhes da transação:
 
 ![History](png/prove-payment/history.png)
 
-Here, she can copy the transaction ID and Bob's address by clicking on each of them.
-Then she can click on `P` to get a payment proof (transaction key):
+Nesta página ela pode copiar o ID da transação e o endereço do Bob (endereço de destino), clicando em cada um deles.
+Então ela pode clicar em `P` para obter uma prova de pagamento (chave da transação):
 
 ![Payment proof](png/prove-payment/payment-proof.png)
 
 
 ---
 
-Alice can now send Charlie the transaction key along with transaction ID and Bob's address.
+Agora Alice pode enviar para Charlie a ID da transação, a chave da transação e o endereço do Bob.
 
-Note: if several transactions were made, this needs repeating for each such transaction.
+Nota: se várias transações forem feitas, o procedimento precisa ser repetido para cada transação.
 
-### Check payments
+### Verificando pagamentos
 
-Charlie now received those three pieces of information, and wants to check Alice is telling the truth: on an up to date
-blockchain,
+Agora que Charlie recebeu essas três informações, ele pode verificar se a Alice está falando a verdade: em uma blockchain atualizada,
 
 #### CLI
 
-Charlie types in monero-wallet-cli:
+Charlie digita na monero-wallet-cli:
 
-> check_tx_key TXID TXKEY ADDRESS
+> check_tx_key ID_DA_TRANSAÇÃO CHAVE_DA_TRANSAÇÃO ENDEREÇO
 
-The information supplied by Alice plugs neatly instead of the placeholders. monero-wallet-cli will use the transaction
-key to decode the transaction, and display how much this particular transaction sent to this address. Obviously,
-Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
+As informações que a Alice forneceu devem ser substituídas nos campos ID_DA_TRANSAÇÃO, CHAVE_DA_TRANSAÇÃO e ENDEREÇO. A monero-wallet-cli irá usar a chave da transação para decodificar a transação, exibindo quantos XMR essa transação enviou para o endereço. Logicamente, Charlie deverá verificar com Bob se o endereço realmente é dele, assim como seria necessário com Bitcoin.
 
 #### GUI
 
-Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
+Charlie irá abrir sua monero-wallet-gui e ir até a página Avançado > Provar/Conferir, preenchendo a seção "Verificar transação" com as informações fornecidas pela Alice:
 
 ![Check payment](png/prove-payment/check-payment.png)
 
-Then clicking on Check will tell Charlie how much this particular transaction sent to this address, and how much confirmation the transaction had:
+Ao clicar em Verificar, Charlie ficará sabendo quantos XMR essa transação enviou para este endereço e quantas confirmações a transação já teve:
 
 ![Payment checked](png/prove-payment/payment-checked.png)
 
 
 ---
 
-Obviously, Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
+Logicamente, Charlie deverá checar com Bob se o endereço realmente é dele, assim como seria necessário com Bitcoin.
 
-Note: if several transactions were made, this needs repeating for each such transaction.
+Nota: se várias transações forem feitas, o procedimento precisa ser repetido para cada transação.
