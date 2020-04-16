@@ -1,4 +1,4 @@
 - name: Juridique
   url: legal
 - name: Code Source
-  url: https://repo.getmonero.org
+  url: https://github.com/monero-project/monero-site
