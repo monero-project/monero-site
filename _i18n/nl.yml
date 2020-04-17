@@ -548,38 +548,32 @@ specs:
 
 library:
   description: "Hier volgen publicaties, boeken en tijdschriften die je kunt downloaden."
-  books:
-  - category: Boeken
-    publications:
-    - name: "Zero to Monero"
-      file: "Zero-to-Monero-1-0-0.pdf"
-      abstract: >
-        Een uitgebreide conceptuele en technische uitleg van Monero.<br>
-        We proberen voor iedereen die elementaire algebra en eenvoudige informaticabegrippen zoals de weergave van cijfers in bits begrijpt, diepgaand en compleet uit te leggen hoe Monero werkt en hoe nuttig en mooi cryptografie kan zijn.
-    - name: "Mastering Monero"
-      file: "https://masteringmonero.com/free-download.html"
-      abstract: >
-        Een handleiding tot de schijnbaar ingewikkelde wereld van Monero.<br>
-        Met onder meer:
-        <ul><li>Een algemene inleiding tot blockchains en het belang van privacy, geschikt voor niet-technische lezers.</li>
-        <li>Bespreking van de tekortkomingen van Bitcoin en specifieke oplossingen die worden geboden door Monero.</li>
-        <li>User stories (scenario's waarin wordt geïllustreerd hoe Monero je privacy beschermt), vergelijkingen, voorbeelden, juridische en ethische discussies, en codefragmenten om technische kernbegrippen te demonstreren.</li>
-        <li>Details over het gedecentraliseerde netwerk van Monero, de architectuur van het peer-to-peernetwerk, de levenscyclus van een transactie en beveilingsprincipes.</li>
-        <li>Inleiding tot de technische grondslagen van Monero, bedoeld voor ontwikkelaars, programmeurs, software-architecten en nieuwsgierige gebruikers.</li>
-        <li>Nieuwe ontwikkelingen zoals Kovri, Bulletproofs, multisignature, hardware wallets etc.</li></ul>
-        Zie de website <a href="https://masteringmonero.com/">Mastering Monero</a> voor informatie over de volledige versie.
-  - category: Tijdschriften
-    publications:
-    - name: "Revuo Monero Q4 2017"
-      file: "Revuo-2017-Q4.pdf"
-      abstract: >
-        Kwartaalblad over Monero, vierde kwartaal 2017.<br>
-        In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri en de community.
-    - name: "Revuo Monero Q3 2017"
-      file: "Monero-Revuo-3Q-2017.pdf"
-      abstract: >
-        Kwartaalblad over Monero, derde kwartaal 2017.<br>
-        In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri, community, hardware en Monerujo.
+  books: Boeken
+  zerotomonerov2: "Zero to Monero: Second Edition"
+  zerotomonerov2p: >
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
+    A comprehensive conceptual (and technical) explanation of Monero.<br>
+    We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  zerotomonerov1: "Zero to Monero: First Edition"
+  zerotomonerov1p: >
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+  masteringmonerop: >
+    Een handleiding tot de schijnbaar ingewikkelde wereld van Monero.<br>
+    Met onder meer:
+    <ul><li>Een algemene inleiding tot blockchains en het belang van privacy, geschikt voor niet-technische lezers.</li>
+    <li>Bespreking van de tekortkomingen van Bitcoin en specifieke oplossingen die worden geboden door Monero.</li>
+    <li>User stories (scenario's waarin wordt geïllustreerd hoe Monero je privacy beschermt), vergelijkingen, voorbeelden, juridische en ethische discussies, en codefragmenten om technische kernbegrippen te demonstreren.</li>
+    <li>Details over het gedecentraliseerde netwerk van Monero, de architectuur van het peer-to-peernetwerk, de levenscyclus van een transactie en beveilingsprincipes.</li>
+    <li>Inleiding tot de technische grondslagen van Monero, bedoeld voor ontwikkelaars, programmeurs, software-architecten en nieuwsgierige gebruikers.</li>
+    <li>Nieuwe ontwikkelingen zoals Kovri, Bulletproofs, multisignature, hardware wallets etc.</li></ul>
+    Zie de website <a href="https://masteringmonero.com/">Mastering Monero</a> voor informatie over de volledige versie.
+  magazines: Tijdschriften
+  revuoq4p: >
+    Kwartaalblad over Monero, vierde kwartaal 2017.<br>
+    In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri en de community.
+  revuoq3p: >
+    Kwartaalblad over Monero, derde kwartaal 2017.<br>
+    In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri, community, hardware en Monerujo.
 
 moneropedia:
   add_new_button: Nieuw trefwoord toevoegen

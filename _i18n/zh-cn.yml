@@ -546,38 +546,32 @@ specs:
 
 library:
   description: "以下是一些可供您下载的出版物，书籍和杂志。"
-  books:
-  - category: 书籍
-    publications:
-    - name: "从零开始：门罗币"
-      file: "Zero-to-Monero-1-0-0.pdf"
-      abstract: >
-        门罗币全面的技术和概念层面的解释。<br>
-        我们在此书中将协助您从最基本的代数和简单的计算机概念学起，比如一个数字如何用比特的方式进行表达。我们还会协助您从更深和更全面的角度理解门罗币是如何运作的，同时我们也希望您能在此书中体会到加密算法的有用之处，并感受到这不仅仅是计算机技术，更是一门美妙且精确的艺术。
-    - name: "精通门罗币"
-      file: "https://masteringmonero.com/free-download.html"
-      abstract: >
-        一本能让你在看似复杂的门罗世界里畅游无阻的指南。<br>
-        其中包括:
-        <ul><li>区块链的广泛介绍和隐私的重要性——对不懂技术的用户来说，这是个好的入手点。</li>
-        <li>对比特币的缺点的讨论和门罗币为此提供的具体解决方案。</li>
-        <li>其他用户的小故事（以此来说名门罗是如何保护您的隐私），类比、事例、法律／道德层面的讨论和对于一些关键技术代码的讨论。</li>
-        <li>门罗币的去中心化网络、点对点结构、交易周期和安全原则的详细信息。</li>
-        <li>针对开发人员，工程师，软件架构师等人的对门罗技术基础的介绍</li>
-        <li>新项目介绍：防弹证明，科维，多重签名和硬件钱包</li></ul>
-        有关完整版，请参见 <a href="https://masteringmonero.com/">Mastering Monero</a> 网站
-  - category: 杂志
-    publications:
-    - name: "Revuo Monero 2017 冬"
-      file: "Revuo-2017-Q4.pdf"
-      abstract: >
-        门罗季刊，2017年冬<br>
-        在本期中谈到了: 最新进展，门罗研究组，科维和社区
-    - name: "Revuo Monero 2017 秋"
-      file: "Monero-Revuo-3Q-2017.pdf"
-      abstract: >
-        门罗季刊，2017年秋<br>
-        在本期中谈到了: 最新进展，门罗研究组，科维，社区，硬件和Monerujo。
+  books: 书籍
+  zerotomonerov2: "Zero to Monero: Second Edition"
+  zerotomonerov2p: >
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
+    A comprehensive conceptual (and technical) explanation of Monero.<br>
+    We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  zerotomonerov1: "Zero to Monero: First Edition"
+  zerotomonerov1p: >
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+  masteringmonerop: >
+    一本能让你在看似复杂的门罗世界里畅游无阻的指南。<br>
+    其中包括:
+    <ul><li>区块链的广泛介绍和隐私的重要性——对不懂技术的用户来说，这是个好的入手点。</li>
+    <li>对比特币的缺点的讨论和门罗币为此提供的具体解决方案。</li>
+    <li>其他用户的小故事（以此来说名门罗是如何保护您的隐私），类比、事例、法律／道德层面的讨论和对于一些关键技术代码的讨论。</li>
+    <li>门罗币的去中心化网络、点对点结构、交易周期和安全原则的详细信息。</li>
+    <li>针对开发人员，工程师，软件架构师等人的对门罗技术基础的介绍</li>
+    <li>新项目介绍：防弹证明，科维，多重签名和硬件钱包</li></ul>
+    有关完整版，请参见 <a href="https://masteringmonero.com/">Mastering Monero</a> 网站
+  magazines: 杂志
+  revuoq4p: >
+    门罗季刊，2017年冬<br>
+    在本期中谈到了: 最新进展，门罗研究组，科维和社区
+  revuoq3p: >
+    门罗季刊，2017年秋<br>
+    在本期中谈到了: 最新进展，门罗研究组，科维，社区，硬件和Monerujo。
 
 moneropedia:
   add_new_button: 添加新条目

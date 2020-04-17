@@ -547,38 +547,32 @@ specs:
 
 library:
   description: "Aşağı indirebileceğiniz bazı yayınlar, kitaplar ve dergiler yer almaktadır."
-  books:
-  - category: Kitaplar
-    publications:
-    - name: "Sıfırdan Monero'ya"
-      file: "Zero-to-Monero-1-0-0.pdf"
-      abstract: >
-        Monero'nun kapsamlı kavramsal (ve teknik) bir açıklaması.<br>
-        Temel cebir ve bir sayının 'bit temsili' gibi basit bilgisayar bilimi kavramları bilen herkese sadece Monero'nun derin ve kapsamlı bir seviyede nasıl işlediğini değil, ayrıca kriptografinin ne kadar kullanışlı ve güzel olabileceğini öğretmeye çabalıyoruz.
-    - name: "Monero'da Ustalaşmak"
-      file: "https://masteringmonero.com/free-download.html"
-      abstract: >
-        Monero'nun karışık görünen dünyasına bir rehber.<br>
-        Şunları içerir:
-        <ul><li>Blokzincirlere ve gizliliğin önemine geniş bir giriş - teknik olmayan kullanıcılar için idealdir.</li>
-        <li>Bitcoin'in eksikliklerinin ve Monero tarafından sunulan belirli çözümlerin tartışması.</li>
-        <li>(Monero'nun gizliliğinizi nasıl koruduğunu sergileyen) kullanıcı hikayeleri, analojiler, örnekler, yasal/etik tartışmalar ve temel teknik kavramları sergileyen kod parçacıkları.</li>
-        <li>Monero merkeziyetsiz ağının, eşler-arası mimarinin, işlem yaşam döngüsünün ve güvenlik prensiplerinin detayları.</li>
-        <li>Geliştiricilere, mühendislere, yazılım mimarlarına ve meraklı kullanıcılara yönelik Monero'nun teknik temellerinin tanıtımları.</li>
-        <li>Kovri, Kurşun-geçirmezler, Çoklu-imzalar, Donanım Cüzdanları vs. gibi yeni gelişmeler.</li></ul>
-        Tam sürümü hakkında bilgi için <a href="https://masteringmonero.com/">Monero'da Ustalaşmak</a> internet sayfasını görüntüleyin.
-  - category: Dergiler
-    publications:
-    - name: "Revuo Monero 2017 Ç4"
-      file: "Revuo-2017-Q4.pdf"
-      abstract: >
-        Aylık Monero dergisi, 2017 Ç4 baskısı.<br>
-        Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri ve topluluk.
-    - name: "Revuo Monero 2017 Ç3"
-      file: "Monero-Revuo-3Q-2017.pdf"
-      abstract: >
-        Aylık Monero dergisi, 2017 Ç3 baskısı.<br>
-        Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri, topluluk, Donanım ve Monerujo.
+  books: Kitaplar
+  zerotomonerov2: "Zero to Monero: Second Edition"
+  zerotomonerov2p: >
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
+    A comprehensive conceptual (and technical) explanation of Monero.<br>
+    We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  zerotomonerov1: "Zero to Monero: First Edition"
+  zerotomonerov1p: >
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+  masteringmonerop: >
+    Monero'nun karışık görünen dünyasına bir rehber.<br>
+    Şunları içerir:
+    <ul><li>Blokzincirlere ve gizliliğin önemine geniş bir giriş - teknik olmayan kullanıcılar için idealdir.</li>
+    <li>Bitcoin'in eksikliklerinin ve Monero tarafından sunulan belirli çözümlerin tartışması.</li>
+    <li>(Monero'nun gizliliğinizi nasıl koruduğunu sergileyen) kullanıcı hikayeleri, analojiler, örnekler, yasal/etik tartışmalar ve temel teknik kavramları sergileyen kod parçacıkları.</li>
+    <li>Monero merkeziyetsiz ağının, eşler-arası mimarinin, işlem yaşam döngüsünün ve güvenlik prensiplerinin detayları.</li>
+    <li>Geliştiricilere, mühendislere, yazılım mimarlarına ve meraklı kullanıcılara yönelik Monero'nun teknik temellerinin tanıtımları.</li>
+    <li>Kovri, Kurşun-geçirmezler, Çoklu-imzalar, Donanım Cüzdanları vs. gibi yeni gelişmeler.</li></ul>
+    Tam sürümü hakkında bilgi için <a href="https://masteringmonero.com/">Monero'da Ustalaşmak</a> internet sayfasını görüntüleyin.
+  magazines: Dergiler
+  revuoq4p: >
+    Aylık Monero dergisi, 2017 Ç4 baskısı.<br>
+    Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri ve topluluk.
+  revuoq3p: >
+    Aylık Monero dergisi, 2017 Ç3 baskısı.<br>
+    Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri, topluluk, Donanım ve Monerujo.
 
 moneropedia:
   add_new_button: Yeni Girdi Ekleyin
