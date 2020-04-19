@@ -23,6 +23,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-word">{% t faq.qword %}</a></li>
                         <li><a href="#anchor-contribute">{% t faq.qcontribute %}</a></li>
                         <li><a href="#anchor-value">{% t faq.q1 %}</a></li>
+                        <li><a href="#anchor-buy-fiat">{% t faq.qwherebuy %}</a></li>
                         <li><a href="#anchor-buy">{% t faq.q2 %}</a></li>
                         <li><a href="#anchor-different">{% t faq.q4 %}</a></li>
                         <li><a href="#anchor-btc-difference">{% t faq.q7 %}</a></li>
@@ -108,6 +109,12 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-value"></a>{% t faq.q1 %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.a1 %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="anchor-buy-fiat">
+                    <h3><a class="anchor" href="#anchor-buy-fiat"></a>{% t faq.qwherebuy %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.awherebuy %}</p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-buy">

@@ -378,6 +378,50 @@ faq:
   a13: Monero is not magic. If you use Monero but give your name and address to another party, the other party will not magically forget your name and address. If you give out your secret keys, others will know what you've done. If you get compromised, others will be able to keylog you. If you use a weak password, others will be able to brute force your keys file. If you backup your seed in the cloud, you'll be poorer soon.
   q14: Is Monero 100% anonymous?
   a14: There is no such thing as 100% anonymous. If nothing else, your anonymity set is the set of people using Monero. Some people don't use Monero. Monero may also have bugs. Even if not, ways may exist to infer some information through Monero's privacy layers, either now or later. Attacks only get better. If you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.
+  qwherebuy: Where can I buy Monero for Fiat?
+  awherebuy: |
+      Note: Many exchanges require KYC (Photo ID) to purchase cryptocurrencies. Monero's anonymity protects users after sending coins off exchanges, but if you don't want to be KYC'd at all, look into platforms like <a href="https://localmonero.co/">LocalMonero</a> when purchasing XMR. Also keep in mind the following table is incomplete, and there may be more exchanges out there than what are listed below.
+
+      <table>
+        <tr>
+          <th class="tg-0lax">Fiat</th>
+          <th class="tg-0lax">Exchange</th>
+        </tr>
+        <tr>
+          <td class="tg-0lax">CAD</td>
+          <td class="tg-0lax"><a href="https://www.newton.co/">Newton.co</a></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">KRW</td>
+          <td class="tg-0lax"><a href="https://www.bithumb.com/trade/order/XMR_KRW">Bithumb</a></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">THB</td>
+          <td class="tg-0lax"><a href="https://satang.pro/exchange/market/XMR-THB">Satang</a></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">USD</td>
+          <td class="tg-0lax"><a href="https://www.bitfinex.com/t/XMRUSD">Bitfinex</a></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">USD/EUR</td>
+          <td class="tg-0lax"><a href="https://trade.kraken.com/markets/kraken/xmr/usd">Kraken</a></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">RUB</td>
+          <td class="tg-0lax"><a href="https://bitexbook.com/en/trading/xmrrub">Bitexbook</a></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">RUB</td>
+          <td class="tg-0lax"><a href="https://exmo.com/en/trade/XMR_RUB">Exmo</a></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">IDR</td>
+          <td class="tg-0lax"><a href="https://indodax.com/market/XMRIDR">Indodax</a></td>
+        </tr>
+      </table>
+
+      If none of these options work for you, the best rates will come from getting BTC first, then trading it on a top exchange like <a href="https://www.binance.com/">Binance</a> or <a href="https://www.huobi.com/en-us/">.
   q15: Is Monero a mixer or mixing service?
   a15: No. Monero uses a completely non-interactive, non-custodial, and automatic process to create private transactions. By contrast for mixing services, users opt-in to participate.
   qwallet: What wallet should I use?
