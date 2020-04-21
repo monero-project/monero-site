@@ -1373,6 +1373,7 @@ h2#main-h2 {
 
 .about-main p {
     padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .info-block h2 {
@@ -1781,7 +1782,7 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 
 .btn-fixed {
-    width: 17rem;
+    width: 10rem;
     display: block;
 }
 
@@ -2586,6 +2587,11 @@ img.monero-logo {
     margin: 0 auto;
 }
 
+.info-block-row img.main-icon-mrl {
+  width: 40%;
+  margin: 0 auto;
+}
+
 .about-monero .info-block-row img.main-icon {
     width: 60%;
     margin: 0 auto;
@@ -2612,6 +2618,9 @@ p.main-downloads {
     padding-top: 0;
 }
 
+.btn-intro{
+  width: 92%;
+}
 
 @media only screen and (max-width: 75rem) {
 
