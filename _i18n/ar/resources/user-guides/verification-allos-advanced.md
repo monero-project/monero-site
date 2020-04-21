@@ -37,58 +37,57 @@
 
 ### 2.1. إحصل علي مفتاح التوقيع
 
-علي ويندوز أو ماك إذهب إلي [Fluffypony's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc) لتحميل المُفتاح المُستخدم في توقيع الملفات وقم بحفظه بإسم `fluffypony.asc` في مجلدك الرئيسي.
+علي ويندوز أو ماك إذهب إلي [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc) لتحميل المُفتاح المُستخدم في توقيع الملفات وقم بحفظه بإسم `binaryfate.asc` في مجلدك الرئيسي.
 
 في ليُنكس يمكنك تحميل ملف مفتاح التوقيع من خلال الأمر التالي :
 
 ```
-wget -O fluffypony.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc
+wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
 ### 2.2. تأكد من مفتاح التوقيع
 
-في جميع أنظمة التشغيل ، تحقق من بصمة `fluffypony.asc` بإصدار الأمر التالي في سطر الأوامر :
+في جميع أنظمة التشغيل ، تحقق من بصمة `binaryfate.asc` بإصدار الأمر التالي في سطر الأوامر :
 
 ```
-gpg --keyid-format long --with-fingerprint fluffypony.asc
+gpg --keyid-format long --with-fingerprint binaryfate.asc
 ```
 
 
 تحقق من تطابق البصمه بالتالي :
 
 ```
-pub  2048R/7455C5E3C0CDCEB9 2013-04-08 Riccardo Spagni <ric@spagni.net>
-      Key fingerprint = BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-sub  2048R/55432DF31CCD4FCD 2013-04-08
+pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]
+      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
+uid                           binaryFate <binaryfate@getmonero.org>
 ```
 
 إذا كانت البصمه **صحيحه** يمكنك المُتابعه.
 
-إذا كانت البصمه ** غير متطابقه ** **لا تُكمل** بل قم بحذف ملف `fluffypony.asc` وإذهب إلي [فصل 2.1](#21-get-signing-key).
+إذا كانت البصمه ** غير متطابقه ** **لا تُكمل** بل قم بحذف ملف `binaryfate.asc` وإذهب إلي [فصل 2.1](#21-get-signing-key).
 
 ### 2.3. إستيراد مفتاح التوقيع
 
 من سطر الأوامر ، قم باستيراد مفتاح التوقيع:
 
 ```
-gpg --import fluffypony.asc
+gpg --import binaryfate.asc
 ```
 
 إذا كانت هذه هي المرة الأولى التي تستورد فيها المفتاح ، فسيبدو الناتج كما يلي:
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: 2 signatures not checked due to missing keys
-gpg: key 0x7455C5E3C0CDCEB9: public key "Riccardo Spagni <ric@spagni.net>" importe
-d
+gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys
+gpg: key F0AF4D462A0BDF92: public key "binaryFate <binaryfate@getmonero.org>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
-gpg: no ultimately trusted keys found
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 ```
 
 إذا قمت باستيراد المفتاح مسبقًا ، فسيبدو الناتج كما يلي:
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: "Riccardo Spagni <ric@spagni.net>" not changed
+gpg: key F0AF4D462A0BDF92: "binaryFate <binaryfate@getmonero.org>" not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
@@ -109,7 +108,7 @@ wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
 
 ### 3.2. تأكد من ملف الهاش
 
-ملف الهاش موقع بمفتاح  `94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD`, الذي هو مفتاح فرعي من المفتاح `BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9` (كما هو موضح في الناتج أدناه).
+ملف الهاش موقع بمفتاح  `81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92`, كما هو موضح في الناتج أدناه.
 
 في جميع أنظمة التشغيل ، تحقق من توقيع ملف التجزئة عن طريق إصدار الأمر التالي في سطر الأوامر:
 
@@ -120,13 +119,11 @@ gpg --verify hashes.txt
 إذا كان الملف صحيح ، سيبدو الناتج كما يلي:
 
 ```
-gpg: Signature made Thu 05 Apr 2018 06:07:35 AM MDT
-gpg:                using RSA key 94B738DD350132F5ACBEEA1D55432DF31CCD4FCD
-gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
+gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92
+gpg: Good signature from "binaryFate <binaryfate@getmonero.org>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-     Subkey fingerprint: 94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD
+Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
 ```
 
 إذا كان الناتج يُظهر ** Good signature ** كما هو موضح في المثال فيمكنك المتابعة.
@@ -144,21 +141,21 @@ Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
 في Linux ، يمكنك تنزيل واجهه سطر الأوامر عن طريق إصدار الأمر التالي:
 
 ```
-wget -O monero-linux-x64-v0.12.0.0.tar.bz2 https://downloads.getmonero.org/cli/linux64
+wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
 ### 4.2. تأكد من الملفات علي ليُنكس اوماك
 
-هذه الخطوات لنظامي تشغيل لينُكس وماك. من سطر الأوامر إحصل علي هاش  `SHA256` لملف التثبيت. كمثال سيستخدم هذا الدليل واجهه المستخدم الرسوميه علي ليُنكس , إستبدل `monero-gui-linux-x64-v0.12.0.0.tar.bz2` بإسم ملف التثبيت الذي قمت بتنزيله في [الفصل 4.1](#41-get-monero-binary).
+هذه الخطوات لنظامي تشغيل لينُكس وماك. من سطر الأوامر إحصل علي هاش  `SHA256` لملف التثبيت. كمثال سيستخدم هذا الدليل واجهه المستخدم الرسوميه علي ليُنكس , إستبدل `monero-gui-linux-x64-v0.15.0.1.tar.bz2` بإسم ملف التثبيت الذي قمت بتنزيله في [الفصل 4.1](#41-get-monero-binary).
 
 ```
-shasum -a 256 monero-gui-linux-x64-v0.12.0.0.tar.bz2
+shasum -a 256 monero-gui-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 سيبدو الناتج كهذا ، ولكن سيكون مختلفًا لكل ملف. يجب أن يتطابق هاش `SHA256` الخاصة بك مع الهاش في القائمة المدرجة في ملف` hashes.txt` لملف التثبيت.
 
 ```
-fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388  monero-gui-linux-x64-v0.12.0.0.tar.bz2
+fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388  monero-gui-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 إذا كان الهاش **مُتطابق** يمكنك الأن فك الضفط والتثبيت.
@@ -167,7 +164,7 @@ fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388  monero-gui-lin
 
 ### 4.3. تأكد من الملفات علي ويندوز
 
-من سطر الأوامر احصل على هاش `SHA256` من ملف التثبيت الذي تم تنزيله. على سبيل المثال ، سيستخدم هذا الدليل ثنائي واجهة المستخدم الرسومية لنظام ويندوز ، 64 بت. استبدل `monero-gui-win-x64-v0.12.0.0.zip` باسم الملف الذي قمت بتنزيله في [القسم 4.1](#41-get-monero-binary).
+من سطر الأوامر احصل على هاش `SHA256` من ملف التثبيت الذي تم تنزيله. على سبيل المثال ، سيستخدم هذا الدليل ثنائي واجهة المستخدم الرسومية لنظام ويندوز ، 64 بت. استبدل `monero-gui-win-x64-v0.15.0.1.zip` باسم الملف الذي قمت بتنزيله في [القسم 4.1](#41-get-monero-binary).
 
 ```
 certUtil -hashfile monero-gui-win-x64-v0.12.0.0.zip SHA256

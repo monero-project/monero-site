@@ -37,58 +37,57 @@ In dit gedeelte leggen we uit hoe je de Monero-ondertekeningssleutel ophaalt, co
 
 ### 2.1. Ondertekeningssleutel ophalen
 
-Op Windows of een Mac: ga naar [Fluffypony's GPG-sleutel](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), waarmee hij de Monero-binaries ondertekent, en sla de pagina op als `fluffypony.asc` in je homedirectory.
+Op Windows of een Mac: ga naar [Fluffypony's GPG-sleutel](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), waarmee hij de Monero-binaries ondertekent, en sla de pagina op als `binaryfate.asc` in je homedirectory.
 
-Op Linux kun je de ondertekeningssleutel van Fluffypony downloaden door de volgende opdracht op te geven:
+Op Linux kun je de ondertekeningssleutel van binaryFate downloaden door de volgende opdracht op te geven:
 
 ```
-wget -O fluffypony.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc
+wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
 ### 2.2. Ondertekeningssleutel verifiëren
 
-Op alle besturingssystemen kun je de vingerafdruk van `fluffypony.asc` controleren door de volgende opdracht te geven in een terminal:
+Op alle besturingssystemen kun je de vingerafdruk van `binaryfate.asc` controleren door de volgende opdracht te geven in een terminal:
 
 ```
-gpg --keyid-format long --with-fingerprint fluffypony.asc
+gpg --keyid-format long --with-fingerprint binaryfate.asc
 ```
 
 
 Controleer of de vingerafdruk overeenkomt:
 
 ```
-pub  2048R/7455C5E3C0CDCEB9 2013-04-08 Riccardo Spagni <ric@spagni.net>
-      Key fingerprint = BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-sub  2048R/55432DF31CCD4FCD 2013-04-08
+pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]
+      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
+uid                           binaryFate <binaryfate@getmonero.org>
 ```
 
 Als de vingerafdruk **WEL** overeenkomt, kun je verder gaan.
 
-**GA NIET VERDER** als de vingerafdruk **NIET** overeenkomt. Verwijder dan het bestand `fluffypony.asc` en ga terug naar [paragraaf 2.1](#21-get-signing-key).
+**GA NIET VERDER** als de vingerafdruk **NIET** overeenkomt. Verwijder dan het bestand `binaryfate.asc` en ga terug naar [paragraaf 2.1](#21-get-signing-key).
 
 ### 2.3. Ondertekeningssleutel importeren
 
 Importeer de ondertekeningssleutel in een terminal:
 
 ```
-gpg --import fluffypony.asc
+gpg --import binaryfate.asc
 ```
 
 Als dit de eerste keer is dat je de sleutel hebt geïmporteerd, ziet de uitvoer er als volgt uit:
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: 2 signatures not checked due to missing keys
-gpg: key 0x7455C5E3C0CDCEB9: public key "Riccardo Spagni <ric@spagni.net>" importe
-d
+gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys
+gpg: key F0AF4D462A0BDF92: public key "binaryFate <binaryfate@getmonero.org>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
-gpg: no ultimately trusted keys found
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 ```
 
 Als je de sleutel eerder hebt geïmporteerd, ziet de uitvoer er als volgt uit:
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: "Riccardo Spagni <ric@spagni.net>" not changed
+gpg: key F0AF4D462A0BDF92: "binaryFate <binaryfate@getmonero.org>" not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
@@ -109,7 +108,7 @@ wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
 
 ### 3.2. Hashbestand verifiëren
 
-Het hashbestand is ondertekend met de sleutel `94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD`, een subsleutel van de sleutel `BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9` (zoals weergegeven in de uitvoer hieronder).
+Het hashbestand is ondertekend met de sleutel `81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92`, zoals weergegeven in de uitvoer hieronder.
 
 Op alle besturingssystemen kun je de ondertekening van het hasbestand controleren door de volgende opdracht te geven in een terminal:
 
@@ -120,13 +119,11 @@ gpg --verify hashes.txt
 Als het bestand authentiek is, ziet de uitvoer er als volgt uit:
 
 ```
-gpg: Signature made Thu 05 Apr 2018 06:07:35 AM MDT
-gpg:                using RSA key 94B738DD350132F5ACBEEA1D55432DF31CCD4FCD
-gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
+gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92
+gpg: Good signature from "binaryFate <binaryfate@getmonero.org>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-     Subkey fingerprint: 94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD
+Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
 ```
 
 Als er **Good signature** in de uitvoer staat, zoals in het voorbeeld, kun je verder gaan.
@@ -144,21 +141,21 @@ Op Windows of een Mac ga je naar [getmonero.org]({{ site.baseurl }}/downloads/) 
 Op Linux kun je de opdrachtregelversie downloaden door de volgende opdracht op te geven:
 
 ```
-wget -O monero-linux-x64-v0.12.0.0.tar.bz2 https://downloads.getmonero.org/cli/linux64
+wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
 ### 4.2. Binary verifiëren op Linux of Mac
 
-De stappen op zowel Linux als Mac zijn hetzelfde. In een terminal bereken je de `SHA256`-hash van je gedownloade Monero-binary. Als voorbeeld gebruiken we hier het binaire bestand voor 64-bits Linux. Vervang `monero-gui-linux-x64-v0.12.0.0.tar.bz2` door de naam van het binaire bestand dat je hebt gedownload in [paragraaf 4.1](#41-get-monero-binary).
+De stappen op zowel Linux als Mac zijn hetzelfde. In een terminal bereken je de `SHA256`-hash van je gedownloade Monero-binary. Als voorbeeld gebruiken we hier het binaire bestand voor 64-bits Linux. Vervang `monero-gui-linux-x64-v0.15.0.1.tar.bz2` door de naam van het binaire bestand dat je hebt gedownload in [paragraaf 4.1](#41-get-monero-binary).
 
 ```
-shasum -a 256 monero-gui-linux-x64-v0.12.0.0.tar.bz2
+shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 De uitvoer ziet er uit als volgt, maar met verschillende details per binair bestand. Je `SHA256`-hash moet overeenkomen met de hash in het bestand `hashes.txt` van je binaire bestand.
 
 ```
-fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388  monero-gui-linux-x64-v0.12.0.0.tar.bz2
+8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad  monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 Als de hash **WEL** overeenkomt, ben je klaar met deze handleiding! Dan kun je de bestanden uitpakken en installeren.
@@ -170,7 +167,7 @@ Als de hash **WEL** overeenkomt, ben je klaar met deze handleiding! Dan kun je d
 In een terminal bereken je de `SHA256`-hash van je gedownloade Monero-binary. Als voorbeeld gebruiken we hier het binaire bestand voor de 64-bits Windows GUI. Vervang `monero-gui-win-x64-v0.12.0.0.zip` door de naam van het binaire bestand dat je hebt gedownload in [paragraaf 4.1](#41-get-monero-binary).
 
 ```
-certUtil -hashfile monero-gui-win-x64-v0.12.0.0.zip SHA256
+certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256
 ```
 De uitvoer ziet er uit als volgt, maar met verschillende details per binair bestand. Je `SHA256`-hash moet overeenkomen met de hash in het bestand `hashes.txt` van je binaire bestand.
 

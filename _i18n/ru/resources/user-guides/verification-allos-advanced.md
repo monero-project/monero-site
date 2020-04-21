@@ -37,58 +37,57 @@
 
 ### 2.1. Получение ключа подписи
 
-Для Windows или Mac можно взять [GPG ключ Fluffypony](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), оторый он использует для подписи двоичных файлов Monero, и сохранить страницу как `fluffypony.asc` в вашей исходной, «домашней» директории.
+Для Windows или Mac можно взять [GPG ключ binaryFate](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), оторый он использует для подписи двоичных файлов Monero, и сохранить страницу как `binaryfate.asc` в вашей исходной, «домашней» директории.
 
 Для Linux можно загрузить ключ подписи Fluffypony, используя следующую команду:
 
 ```
-wget -O fluffypony.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc
+wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
 ### 2.2. Верификация ключа подписи
 
-В случае со всеми операционными системами следует проверить отпечаток в `fluffypony.asc` используя следующую команду в консоли:
+В случае со всеми операционными системами следует проверить отпечаток в `binaryfate.asc` используя следующую команду в консоли:
 
 ```
-gpg --keyid-format long --with-fingerprint fluffypony.asc
+gpg --keyid-format long --with-fingerprint binaryfate.asc
 ```
 
 
 Следует проверить совпадение отпечатков:
 
 ```
-pub  2048R/7455C5E3C0CDCEB9 2013-04-08 Riccardo Spagni <ric@spagni.net>
-      Key fingerprint = BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-sub  2048R/55432DF31CCD4FCD 2013-04-08
+pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]
+      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
+uid                           binaryFate <binaryfate@getmonero.org>
 ```
 
 Если отпечаток **СОВПАДЕТ**, можно продолжать.
 
-В случае **НЕСОВПАДЕНИЯ** отпечатка, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ**. Вместо этого необходимо удалить файл `fluffypony.asc` и вернуться к [пункту 2.1](#21-get-signing-key).
+В случае **НЕСОВПАДЕНИЯ** отпечатка, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ**. Вместо этого необходимо удалить файл `binaryfate.asc` и вернуться к [пункту 2.1](#21-get-signing-key).
 
 ### 2.3. Импорт ключа подписи
 
 Используя консоль, импортировать ключ подписи:
 
 ```
-gpg --import fluffypony.asc
+gpg --import binaryfate.asc
 ```
 
 Если ключ импортируется впервые, выход должен выглядеть так:
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: 2 signatures not checked due to missing keys
-gpg: key 0x7455C5E3C0CDCEB9: public key "Riccardo Spagni <ric@spagni.net>" importe
-d
+gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys
+gpg: key F0AF4D462A0BDF92: public key "binaryFate <binaryfate@getmonero.org>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
-gpg: no ultimately trusted keys found
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 ```
 
 Если же ключ импортировался до этого, то выход будет следующим:
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: "Riccardo Spagni <ric@spagni.net>" not changed
+gpg: key F0AF4D462A0BDF92: "binaryFate <binaryfate@getmonero.org>" not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
@@ -109,7 +108,7 @@ wget -O hashes.txt https://getmonero.org/downloads/hashes.txt
 
 ### 3.2. Верификация хеш-файла
 
-Хеш-файл подписывается ключом `94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD`, который является подключом ключа `BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9` (что видно в выходе ниже).
+Хеш-файл подписывается ключом `81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92`, что видно в выходе ниже.
 
 В случае со всеми операционными системами следует проверить подпись хеш-файла, введя следующую команду в консоль:
 
@@ -120,13 +119,11 @@ gpg --verify hashes.txt
 Если файл является аутентичным (подлинным), выход будет выглядеть так:
 
 ```
-gpg: Signature made Thu 05 Apr 2018 06:07:35 AM MDT
-gpg:                using RSA key 94B738DD350132F5ACBEEA1D55432DF31CCD4FCD
-gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
+gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92
+gpg: Good signature from "binaryFate <binaryfate@getmonero.org>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-     Subkey fingerprint: 94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD
+Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
 ```
 
 Если в выходе видно, что подпись является **ПРАВИЛЬНОЙ**, как в примере, показанном выше, можно продолжать.
@@ -144,7 +141,7 @@ Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
 Для Linux можно загрузить инструменты командной строки, используя следующую команду:
 
 ```
-wget -O monero-linux-x64-v0.12.0.0.tar.bz2 https://downloads.getmonero.org/cli/linux64
+wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
 ### 4.2. Верификация двоичного файла под Linux и Mac
@@ -152,13 +149,13 @@ wget -O monero-linux-x64-v0.12.0.0.tar.bz2 https://downloads.getmonero.org/cli/l
 Этапы проверки для Linux и Mac ничем не отличаются. Используя консоль, необходимо получить хеш `SHA256` загруженного двоичного файла Monero. Для примера в этом руководстве взят двоичный файл для `Linux 64-bit` GUI. Следует заменить `monero-gui-linux-x64-v0.12.0.0.tar.bz2` на имя двоичного файла, загруженного в соответствии с [пунктом 4.1](#41-get-monero-binary).
 
 ```
-shasum -a 256 monero-gui-linux-x64-v0.12.0.0.tar.bz2
+shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 Выход должен выглядеть так, как показано, но при этом он будет отличаться в случае с каждым двоичным файлом. Хеш SHA256 должен соответствовать указанному в файле hashes.txt двоичного файла.
 
 ```
-fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388  monero-gui-linux-x64-v0.12.0.0.tar.bz2
+8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad  monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 При **СОВПАДЕНИИ** хеша можно завершить работу с настоящим руководством! Теперь файлы можно извлечь и установить.
@@ -167,10 +164,10 @@ fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388  monero-gui-lin
 
 ### 4.3. Верификация двоичного файла под Windows
 
-Используя терминал, необходимо получить хеш `SHA256` загруженного двоичного файла Monero. Для примера в этом руководстве взят двоичный файл для `Windows, 64bit` GUI. Следует заменить `monero-gui-win-x64-v0.12.0.0.zip` на имя двоичного файла, загруженного в соответствии с [пунктом 4.1](#41-get-monero-binary).
+Используя терминал, необходимо получить хеш `SHA256` загруженного двоичного файла Monero. Для примера в этом руководстве взят двоичный файл для `Windows, 64bit` GUI. Следует заменить `monero-gui-win-x64-v0.15.0.1.zip` на имя двоичного файла, загруженного в соответствии с [пунктом 4.1](#41-get-monero-binary).
 
 ```
-certUtil -hashfile monero-gui-win-x64-v0.12.0.0.zip SHA256
+certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256
 ```
 Выход должен выглядеть так, как показано, но при этом он будет отличаться в случае с каждым двоичным файлом. Хеш `SHA256` должен соответствовать указанному в файле `hashes.txt` двоичного файла.
 

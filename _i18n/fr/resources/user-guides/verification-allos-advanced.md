@@ -39,58 +39,57 @@ Cette rubrique couvre le téléchargement de la clef de signature Monero, la vé
 
 ### 2.1. Obtenir la Clef de Signature
 
-Sur Windows et Mac, rendez-vous sur [la clef GPG de Fluffypony](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), qu'il utilise pour signer les binaires Monero et sauvegardez la page sous `fluffypony.asc` dans votre répertoire utilisateur.
+Sur Windows et Mac, rendez-vous sur [la clef GPG de binaryFate](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), qu'il utilise pour signer les binaires Monero et sauvegardez la page sous `binaryfate.asc` dans votre répertoire utilisateur.
 
 Sur Linux, vous pouvez télécharger la clef de signature de Fluffypony en tapant la commande suivante :
 
 ```
-wget -O fluffypony.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc
+wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
 ### 2.2. Vérifier la Clef de Signature
 
-Sur l'ensemble des systèmes d'exploitation, vérifiez l'empreinte de `fluffypony.asc` en tapant la commande suivante dans un terminal :
+Sur l'ensemble des systèmes d'exploitation, vérifiez l'empreinte de `binaryfate.asc` en tapant la commande suivante dans un terminal :
 
 ```
-gpg --keyid-format long --with-fingerprint fluffypony.asc
+gpg --keyid-format long --with-fingerprint binaryfate.asc
 ```
 
 
 Vérifiez que l'empreinte est bien :
 
 ```
-pub  2048R/7455C5E3C0CDCEB9 2013-04-08 Riccardo Spagni <ric@spagni.net>
-      Key fingerprint = BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-sub  2048R/55432DF31CCD4FCD 2013-04-08
+pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]
+      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
+uid                           binaryFate <binaryfate@getmonero.org>
 ```
 
 Si l'empreinte **EST** identique, vous pouvez continuer.
 
-Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `fluffypony.asc` et retournez à la [rubrique 2.1](#21-obtenir-la-clef-de-signature).
+Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `binaryfate.asc` et retournez à la [rubrique 2.1](#21-obtenir-la-clef-de-signature).
 
 ### 2.3. Importer la Clef de Signature
 
 Depuis un terminal, importez la clef de signature :
 
 ```
-gpg --import fluffypony.asc
+gpg --import binaryfate.asc
 ```
 
 Si c'est la première fois que vous importez la clef, la sortie ressemblera à ceci :
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: 2 signatures not checked due to missing keys
-gpg: key 0x7455C5E3C0CDCEB9: public key "Riccardo Spagni <ric@spagni.net>" importe
-d
+gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys
+gpg: key F0AF4D462A0BDF92: public key "binaryFate <binaryfate@getmonero.org>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
-gpg: no ultimately trusted keys found
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 ```
 
 Si vous avez déjà importé la clef précédemment, la sortie ressemblera à cela :
 
 ```
-gpg: key 0x7455C5E3C0CDCEB9: "Riccardo Spagni <ric@spagni.net>" not changed
+gpg: key F0AF4D462A0BDF92: "binaryFate <binaryfate@getmonero.org>" not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
@@ -111,7 +110,7 @@ wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
 
 ### 3.2. Vérifier le Fichier de Hachage
 
-Le fichier de hachage est signé avec la clef `94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD`, qui est une sous-clef de la clef `BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9` (comme vous pouvez le voir dans la sortie ci-dessous).
+Le fichier de hachage est signé avec la clef `81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92`, comme vous pouvez le voir dans la sortie ci-dessous.
 
 Sur tous les systèmes d'exploitations, vérifiez la signature du fichier de hachage en tapant la commande suivante dans un terminal :
 
@@ -122,13 +121,11 @@ gpg --verify hashes.txt
 Si le fichier est authentique, la sortie ressemblera à ceci :
 
 ```
-gpg: Signature made Thu 05 Apr 2018 06:07:35 AM MDT
-gpg:                using RSA key 94B738DD350132F5ACBEEA1D55432DF31CCD4FCD
-gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
+gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92
+gpg: Good signature from "binaryFate <binaryfate@getmonero.org>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-     Subkey fingerprint: 94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD
+Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
 ```
 
 Si votre sortie affiche **Good signature** comme dans l'exemple, alors vous pouvez continuer.
@@ -146,21 +143,21 @@ Sur Windows et Mac, rendez-vous sur [getmonero.org](https://getmonero.org/fr/dow
 Sur Linux, vous pouvez télécharger les outils ligne de commande avec la commande suivante :
 
 ```
-wget -O monero-linux-x64-v0.12.2.0.tar.bz2 https://downloads.getmonero.org/cli/linux64
+wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
 ### 4.2. Vérifier les binaires sur Linux et Mac
 
-Les étapes pour Linux et Mac sont les mêmes. Depuis un terminal, récupérez le hachage `SHA256` du binaire Monero téléchargé. A titre d'exemple, ce guide utilisera le binaire GUI `Linux, 64bit`. Remplacez `monero-gui-linux-x64-v0.12.0.0.tar.bz2` par le nom du binaire que vous aurez téléchargé dans la [rubrique 4.1](#41-télécharger-les-binaires-monero).
+Les étapes pour Linux et Mac sont les mêmes. Depuis un terminal, récupérez le hachage `SHA256` du binaire Monero téléchargé. A titre d'exemple, ce guide utilisera le binaire GUI `Linux, 64bit`. Remplacez `monero-gui-linux-x64-v0.15.0.1.tar.bz2` par le nom du binaire que vous aurez téléchargé dans la [rubrique 4.1](#41-télécharger-les-binaires-monero).
 
 ```
-shasum -a 256 monero-gui-linux-x64-v0.12.0.0.tar.bz2
+shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 La sortie ressemblera à ceci, mais sera différente pour chaque binaire. Votre hachage `SHA256` deoit correspondre à celui indiqué dans le fichier `hashes.txt` pour votre binaire.
 
 ```
-fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388  monero-gui-linux-x64-v0.12.0.0.tar.bz2
+8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad  monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
 Si votre hachage **EST** identique vous en avez terminé avec la vérification ! Vous pouvez extraire et installer les fichiers.
@@ -172,7 +169,7 @@ Si votre hachage **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela
 Depuis un terminal, récupérez le hachage `SHA256` du binaire Monero téléchargé. A titre d'exemple, ce guide utilisera le binaire GUI `Windows, 64bit`. Remplacez `monero-gui-win-x64-v0.12.0.0.zip` par le nom du binaire que vous aurez téléchargé dans la [rubrique 4.1](#41-télécharger-les-binaires-monero).
 
 ```
-certUtil -hashfile monero-gui-win-x64-v0.12.0.0.zip SHA256
+certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256
 ```
 
 La sortie ressemblera à ceci, mais sera différente pour chaque binaire. Votre hachage `SHA256` deoit correspondre à celui indiqué dans le fichier `hashes.txt` pour votre binaire.
