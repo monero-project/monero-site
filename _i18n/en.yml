@@ -393,40 +393,6 @@ mining:
   software: Mining Software
   software_para: Note that some miners may have developer fees.
 
-using:
-  intro: Transacting with Monero can be made easy. This page is designed to guide users in that process.
-  learn: 1. Learn
-  learn_para1: Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the
-  learn_para2: What is Monero
-  learn_para3: page. The
-  learn_para4: source code
-  learn_para5: is also available for review and discussion.
-  support: 2. Request Support
-  support_para1: There is a large and supportive community that will assist if you experience any difficulty. See the
-  support_para2: Hangouts
-  support_para3: page for more information.
-  generate: 3. Generate a Wallet
-  generate_para1: A Monero wallet is required to secure your own funds. See the
-  generate_para2: Downloads page
-  generate_para3: for a listing of available wallets.
-  generate_para4: The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend
-  generate_para5: using the
-  generate_para6: coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or
-  generate_para7: our affiliate link
-  generate_para8: will also assist in the ongoing funding of Monero development.
-  acquire: 4. Acquire Monero
-  acquire_para1: Monero may be purchased on an
-  acquire_para2: exchange
-  acquire_para3: with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via
-  acquire_para4: mining,
-  acquire_para5: the computationally-complex process whereby transactions are immutably recorded on the blockchain.
-  send-receive: 5. Send and Receive Monero
-  send-receive_para1: Learn how to send and receive Monero by viewing the
-  send-receive_para2: guide.
-  transact: 6. Transact with Monero
-  transact_para1: Monero may be used to purchase many goods and services. For a listing, see the
-  transact_para2: Merchants page.
-
 what-is-monero:
   need-to-know: What you need to know
   leading: Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.

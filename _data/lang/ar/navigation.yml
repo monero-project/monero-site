@@ -2,8 +2,6 @@
   subfolderitems:
   - page: ما هو مونيرو ؟
     url: get-started/what-is-monero
-  - page: الإستخدام
-    url: get-started/using
   - page: القبول
     url: get-started/accepting
   - page: المشاركه
