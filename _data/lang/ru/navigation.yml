@@ -16,11 +16,11 @@
   url: downloads/
 - title: Последние новости
   subfolderitems:
-    - page: срочные
+    - page: Срочные
       url: blog/tags/urgent.html
     - page: Релизы
       url: blog/tags/releases.html
-    - page: сообщество
+    - page: Сообщество
       url: blog/tags/community.html
     - page: Журналы встреч
       url: blog/tags/dev%20diaries.html

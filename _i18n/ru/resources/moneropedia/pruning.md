@@ -1,17 +1,16 @@
 ---
-terms: ["pruning"]
+terms: ["pruning", "обрезанием", "Обрезание", "обрезание", "обрезания"]
 summary: "Feature that allows node operators to download and sync only 1/3 of the blockchain"
 ---
 
-{% include untranslated.html %}
-'Pruning' allows node operators to save 2/3 of storage space while keeping the full transaction history. Pruning works by removing 7/8 of unnecessary ring signature data. The 1/8 remaining data will be available to the other nodes and will be used to sync with the network. Other pruned nodes will have a random 1/8 of the data, which they will also make available to the network. There are no privacy or security downsides when using a pruned node.
+'Обрезание' позволяет операторам узлов сэкономить 2/3 объёма памяти при сохранении полной истории транзакций. Обрезание предполагает удаление 7/8 ненужных данных кольцевых подписей. Остающаяся 1/8 данных будет доступна остальным узлам и будет использоваться для синхронизации с сетью. Остальные «обрезанные» узлы будут иметь случайную 1/8 данных, которая также будет доступна сети. Такими обрезанными узлами можно пользоваться без какого-либо ущерба для анонимности или безопасности.
 
-There are three ways to prune:
+Существует три способа обрезания:
 
-- *Synchronize a pruned node from scratch:* You will download and sync only 1/3 of the full blockchain.
-- *Prune an existing node:* The already existing blockchain will be pruned, but this will not result in a smaller blockchain. Instead, it will mark parts of the file as free, so that future data will use that free space, causing the file to not grow until free space grows scarce.
-- *Create a new pruned blockchain from a full one:* A full blockchain that you already have will be used to create a new, pruned blockchain.
+- *Синхронизация обрезанного узла с нуля.* Загружается и синхронизируется только 1/3 всего блокчейна.
+- *Обрезание существующего узла.* Обрезается уже существующий блокчейн, но в результате блокчейн не становится меньше. Вместо этого части файла помечаются как свободные, после чего данные будут использовать это свободное место, и файл не будет разрастаться до тех пор, пока свободного место будет достаточно.
+- *Создание нового обрезанного блокчейна на основе полного.* Имеющийся полный блокчейн будет использован для нового обрезанного блокчейна.
 
-Pruned nodes are very useful and preferable to @remote-nodes, but if possible, users should run a full node and opt for pruning only in case if necessary.
+Обрезанные узлы довольно полезны, и в качестве @удалённых-узлов лучше использовать именно их, но, по возможности, пользователям рекомендуется создавать полные узлы и прибегать к обрезанию только в случае разумной необходимости.
 
-The 'database pruning' feature [was added](https://github.com/monero-project/monero/pull/4843) on January 2019. See the [blog post](https://web.getmonero.org/2019/02/01/pruning.html) for more information.
+Возможность 'обрезания базы данных' [добавлена](https://github.com/monero-project/monero/pull/4843) в январе 2019. Дополнительная информация содержится в соответствующем [посте](https://web.getmonero.org/2019/02/01/pruning.html).

@@ -1,5 +1,5 @@
 ---
-terms: ["stealth-address", "stealth-addresses", "скрытые-адреса", "скрытый-адрес"]
+terms: ["stealth-address", "stealth-addresses", "скрытые-адреса", "скрытый-адрес", "Скрытые-адреса"]
 summary: "Автоматические одноразовые адреса для транзакций"
 ---
 
