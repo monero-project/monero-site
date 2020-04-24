@@ -1,5 +1,5 @@
 ---
-terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments", "обязательство-Педерсена"]
+terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments", "обязательство-Педерсена", "обязательств-Педерсена"]
 summary: "Обязательства Педерсена представляют собой криптографические алгоритмы, которые позволяют доказывающему сделать расчет обязательство по сумме, не раскрывая её, и будучи не в состоянии её изменить"
 ---
 
