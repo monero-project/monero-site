@@ -150,10 +150,12 @@ year_2020:
   completed:
     - name: GUI 0.15.0.4 released
     - name: CLI 0.15.0.5 released
+- month: April
+  completed:
+    - name: Implementation of the Dandelion++ protocol
 - month: Coming Soon
   ongoing: 
     - name: Onion address for Getmonero.org
-    - name: Implementation of the Dandelion++ protocol
     - name: Wallet scanning speedups (support for supercop ASM)
     - name: Concise linkable spontaneous anonymous group (CLSAG) signatures
     - name: "Triptych: logarithmic-sized linkable ring signatures with applications"
