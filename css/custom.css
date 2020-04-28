@@ -4462,6 +4462,27 @@ p.hangouts-social {
   border-bottom: none;
 }
 
+/*************************404********************************/
+
+.nopage {
+  text-align: center;
+}
+
+#fourofour {
+  font-weight: bold;
+  font-size: 15rem;;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 48rem) {
+
+#fourofour {
+  font-weight: bold;
+  font-size: 8rem;
+  margin-top: 25%;
+}
+}
+
 /*************************accordion********************************/
 
 .tab {
