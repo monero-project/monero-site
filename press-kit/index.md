@@ -74,26 +74,23 @@ permalink: /press-kit/index.html
     </div>
 </section>
 <section class="container full">
-  {% for press in site.translations[site.lang].press-kit.documents %}
   <div class="info-block">
-    <h2>{{ press.category }}</h2>
+    <h2>{% t press-kit.pressdoc %}</h2>
     <div>
-      {% for publication in press.publications %}
-        <h3><a href="{{ publication.url_file }}">{{ publication.name }}</a></h3>
-        <p>{{ publication.abstract }}</p>
-      {% endfor %}
+        <h3><a href="http://www.monerooutreach.org/quick-facts.html">{% t press-kit.quickfacts %}</a></h3>
+        <p>{% t press-kit.quickfactsp %}</p>
     </div>
   </div>
-  {% endfor %}
+
   <div class="info-block">
-  {% for entry in site.translations[site.lang].press-kit.marketing %}
-    <h2>{{ entry.category }}</h2>
+    <h2>{% t press-kit.marketing %}</h2>
     <div>
-      {% for publication in entry.publications %}
-      <h3><a href="{{ publication.url_file }}">{{ publication.name }}</a></h3>
-      <p>{{ publication.abstract }}</p>
-      {% endfor %}
+      <h3><a href="https://github.com/monero-ecosystem/dont-buy-monero-sticker">{% t press-kit.dontbuysticker %}</a></h3>
+      <p>{% t press-kit.dontbuystickerp %}</p>
     </div>
-  {% endfor %}
+    <div>
+      <h3><a href="https://www.monerooutreach.org/guerrilla-toolkit.html">{% t press-kit.guerrillakit %}</a></h3>
+      <p>{% t press-kit.guerrillakitp %}</p>
+    </div>
   </div>
 </section>
