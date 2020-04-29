@@ -228,25 +228,16 @@ press-kit:
   large: 大
   symbol_file: 圖案 .ai 原始圖檔
   logo_file: 標誌 .ai 原始圖檔
-  documents:
-  - category: 新聞稿文件
-    publications:
-    - name: "懶人包"
-      url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts.pdf"
-      abstract: >
-        一份可以快速全面了解門羅幣的讀物： 發展歷史、關鍵的獨特之處、技術的奠基與開發中的功能。<br>
-        參訪 <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> 網站以查看更多資訊。
-  marketing:
-  - category: Marketing Material
-    publications:
-    - name: "The 'Don't buy Monero' sticker"
-      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
-      abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
-      abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  pressdoc: 新聞稿文件
+  quickfacts: "懶人包"
+  quickfactsp: >
+    一份可以快速全面了解門羅幣的讀物： 發展歷史、關鍵的獨特之處、技術的奠基與開發中的功能。<br>
+    參訪 <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> 網站以查看更多資訊。
+  marketing: Marketing Material
+  dontbuysticker: "The 'Don't buy Monero' sticker"
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  guerrillakit: Guerrilla Toolkit
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: 指令界面工具的使用說明

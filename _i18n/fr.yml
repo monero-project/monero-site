@@ -230,25 +230,16 @@ press-kit:
   large: Grand
   symbol_file: Symbole au format .ai
   logo_file: Logo au format .ai
-  documents:
-  - category: Press Documentation
-    publications:
-    - name: "Quelques Faits"
-      url_file: "https://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts_fr.pdf"
-      abstract: >
-        Un document rapide et facile à lire pour tout savoir de Monero: historique, points clefs différenciateurs, fondamentaux techniques, et fonctionnalités en développement.<br>
-        Voir le site web de <a target="_blank" href="https://www.monerooutreach.org/accueil.php">Monero Outreach</a> pour plus d'informations.
-  marketing:
-  - category: Marketing Material
-    publications:
-    - name: "The 'Don't buy Monero' sticker"
-      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
-      abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
-      abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  pressdoc: Press Documentation
+  quickfacts: "Quelques Faits"
+  quickfactsp: >
+    Un document rapide et facile à lire pour tout savoir de Monero: historique, points clefs différenciateurs, fondamentaux techniques, et fonctionnalités en développement.<br>
+    Voir le site web de <a target="_blank" href="https://www.monerooutreach.org/accueil.php">Monero Outreach</a> pour plus d'informations.
+  marketing: Marketing Material
+  dontbuysticker: "The 'Don't buy Monero' sticker"
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  guerrillakit: Guerrilla Toolkit
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: Instructions pour l'Interface en Ligne de Commande (CLI)

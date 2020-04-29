@@ -228,25 +228,16 @@ press-kit:
   large: Grande
   symbol_file: Símbolo en archivo .ai
   logo_file: Logo en archivo .ai
-  documents:
-  - category: Documentación de Prensa
-    publications:
-    - name: "Hoja de Datos"
-      url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts_es.pdf"
-      abstract: >
-        Una hoja de datos fácil de leer para conocer todo acerca de Monero: historia, factores clave de diferenciación, fundamentos técnicos y características en desarrollo.<br>
-        Visita el sitio web de <a target="_blank" href="https://www.monerooutreach.org/principal.php">Monero Outreach</a> para mayor información.
-  marketing:
-  - category: Marketing Material
-    publications:
-    - name: "The 'Don't buy Monero' sticker"
-      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
-      abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
-      abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  pressdoc: Documentación de Prensa
+  quickfacts: "Hoja de Datos"
+  quickfactsp: >
+    Una hoja de datos fácil de leer para conocer todo acerca de Monero: historia, factores clave de diferenciación, fundamentos técnicos y características en desarrollo.<br>
+    Visita el sitio web de <a target="_blank" href="https://www.monerooutreach.org/principal.php">Monero Outreach</a> para mayor información.
+  marketing: Marketing Material
+  dontbuysticker: "The 'Don't buy Monero' sticker"
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  guerrillakit: Guerrilla Toolkit
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: Instrucciones para la interfaz de Consola de Comandos
