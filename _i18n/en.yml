@@ -482,9 +482,9 @@ developer-guides:
   outdated: "Methods are often added / removed / updated and may not be accurately described."
   rpc: RPC Documentation
   daemonrpc: Daemon RPC
-  daemonrpc_descr: RPC calls for the daemon. Including input, outputs and examples.
+  daemonrpc_descr: RPC calls for the daemon. Including input, outputs and examples. In English.
   walletrpc: Wallet RPC
-  walletrpc_descr: monero-wallet-rpc calls. Including input, outputs and examples.
+  walletrpc_descr: monero-wallet-rpc calls. Including input, outputs and examples. In English.
   external: External resources
   external_head: Useful docs and resources maintained by community members.
   monerodocs: Comprehensive resource which aims to organize the technical knowledge about Monero. Some sections might be outdated.

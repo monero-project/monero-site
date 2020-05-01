@@ -143,7 +143,7 @@ We ask that if you open an issue on the site that you remain available for clari
 ## Updates on User Guides
 User guides and developer guides may need regular updates, either to fix typos, to add explanations regarding new features, to update screenshots, and so on.
 As those guides are translated in several languages, it could be hard to keep all languages version up to date with the English version.
-To keep track of those changes, guides are versioned using a snippet at the top of each localized (\_i18n/en/resources/\*-guides) file:
+To keep track of those changes, the user guides (but not the developer guides) are versioned using a snippet at the top of each localized (\_i18n/en/resources/\*-guides) file:
 ```
 {% assign version = '1.1.0' | split: '.' %}
 ```
