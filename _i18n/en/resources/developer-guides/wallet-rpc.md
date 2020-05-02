@@ -2596,7 +2596,7 @@ Inputs:
 * *name* - string; Name of the wallet.
 * *password* - string; Password of the wallet.
 * *seed* - string; Mnemonic phrase of the wallet to restore.
-* *restore_height* - long; (Optional) Block height to restore the wallet from (default = 0).
+* *restore_height* - integer; (Optional) Block height to restore the wallet from (default = 0).
 * *language* - string; (Optional) Language of the mnemonic phrase in case the old language is invalid.
 * *seed_offset* - string; (Optional) Offset used to derive a new seed from the given mnemonic to recover a secret wallet from the mnemonic phrase.
 * *autosave_current* - boolean; Whether to save the currently open RPC wallet before closing it (Defaults to true).
