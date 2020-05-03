@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Krok 1
 
 Ściągnij aktualny bootrstap ze strony https://downloads.getmonero.org/blockchain.raw. Możesz pominąć ten krok, jeśli importujesz łańcuch bloków z innego źródła.

@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 في بعض الأحيان سوف تتعلق أموالك - سيكون لديك بعض الأموال المغلقه. هذه هي طريقة إصلاحها.
 
 - شغل محفظتك في واجهه سطر الأوامر (monero-wallet-cli)

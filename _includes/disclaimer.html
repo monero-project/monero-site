@@ -1,28 +1,24 @@
 {% assign disclaimer = "" %}
 
-{% if site.lang == 'en' %}
-  <!-- Do nothing for English -->
-{% elsif version[0] != page.mainVersion[0] %}
-  <!-- Add outdated disclaimer and link to English version for major version mismatch -->
-  {% capture linkEN %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-  {% capture disclaimer %}{% t global.outdatedMax %} <a class="disclaimer-link" href="{{ linkEN }}" >{% t global.outdatedVersion %}</a>.{% endcapture %}
-{% elsif version[1] != page.mainVersion[1] %}
-  <!-- Add outdated disclaimer for minor version mismatch -->
-  {% capture disclaimer %}{% t global.outdatedMin %}{% endcapture %}
-{% endif %}
+<!-- If the English version is outdated, all versions (for all languages) will be outdated. No need to check the state of the translations. -->
+{% if page.outdated %}
+<div class="disclaimer">
+    <p>{% t global.outdated %}</p>
+</div>
 
-{% if include.translated != "true" %}
-  <!-- Add untranslated disclaimer if needed -->
-  {% if disclaimer != "" %}
-    {% capture disclaimer %}<br>{{ disclaimer }}{% endcapture %}
-  {% endif %}
-  {% capture disclaimer %}{% t global.untranslated %} <a class="disclaimer-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.{{ disclaimer }}{% endcapture %}
-{% else %}
+<!-- If page is translated but the English version got updated, the translation is outdated -->
+{% elsif include.translationOutdated == "yes" %}
+    {% capture disclaimer %}{% t global.outdatedMin %} <a class="disclaimer-link" href="{{ site.baseurl_root }}{{ page.url }}" >{% t global.outdatedVersion %}</a>.{% endcapture %}
+
+<!-- The page is not translated -->
+{% elsif include.translated == "no" %}
+    {% capture disclaimer %}{% t global.untranslated %} <a class="disclaimer-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>{% endcapture %}
 
 {% endif %}
-{% if disclaimer != "" %}
-  <!-- Print the disclaimer if not empty -->
-  <div class="disclaimer">
+
+<!-- Print the disclaimer if not empty and not English -->
+{% if disclaimer != "" and site.lang != "en" %}
+<div class="disclaimer">
     <p>{{ disclaimer }}</p>
-  </div>
+</div>
 {% endif %}

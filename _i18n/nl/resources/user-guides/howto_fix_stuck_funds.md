@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Het kan gebeuren dat je geld vast komt te zitten. Je Monero wordt vergrendeld maar nooit ontgrendeld. Dat kun je op de volgende manier oplossen.
 
 - Laad je portemonnee in monero-wallet-cli.

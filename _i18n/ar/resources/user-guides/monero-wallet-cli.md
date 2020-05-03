@@ -1,5 +1,5 @@
-﻿{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+﻿{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # واجهه سطر الأوامر (monero-wallet-cli)
 
 واجهه سطر الأوامر `monero-wallet-cli` هو برنامج المحفظه الذي يأتي مع مونيرو. إنه برنامج وحده تحكم ويُدير الحساب. بينما في البتكوين تُدير المحفظه كلاً من الحساب وسلسله الكُتل. يقوم مونيرو بفصلهم : الخادم `monerod` يُدير سلسله الكُتل و واجهه سطر الأوامر `monero-wallet-cli` تُدير الحساب.

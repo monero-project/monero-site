@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Соло-майнинг довольно прост, если использовать официальный GUI. Если у вас до сих пор нет его, следует зайти на страницу для скачивания файлов Monero и <a href="{{site.baseurl}}/downloads/">загрузить</a> официальный GUI для вашей операционной системы. Затем необходимо запустить настройку и терпеливо ожидать, пока Monero синхронизируется с сетью. Когда это произойдёт, в левом нижнем углу отобразится надпись "Connected" (Соединение установлено).
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>

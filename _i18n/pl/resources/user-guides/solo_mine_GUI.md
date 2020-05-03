@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Wydobywanie samemu za poomocą oficjalnego Interfejsu Graficznego Użytkownika jest bardzo proste. Jeśli jeszcze go nie ściągnąłeś, wejdź na <a href="{{site.baseurl}}/downloads/">stronę z materiałami do ściągnięcia</a> i wybierz wersję Graficznego Interfejsu Użytkownika dla twojego systemu operacyjnego. Następnie uruchom ustawienia i uzbrój się w cierpliwość podczas synchronizacji Monero z siecią. Powinienieś zobaczyć "Connected" w lewym dolnym rogu.
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>

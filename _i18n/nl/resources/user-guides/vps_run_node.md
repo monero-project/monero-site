@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # monerod
 
 `monerod` is de daemon-software die onderdeel uitmaakt van de Monero-code. Het is een console-programma waarmee de blockchain wordt beheerd. Terwijl een Bitcoin-portemonnee zowel een account als de blockchain beheert, worden deze functies in Monero gescheiden: `monerod` beheert de blockchain en `monero-wallet-cli` beheert het account.

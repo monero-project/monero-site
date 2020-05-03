@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Sistemas operativos:  varias versiones de Linux y Windows 7, 8
 
 ### Software de monedero:  Simplewallet

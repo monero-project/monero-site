@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # Aislamiento de Monedero CLI/Daemon con Qubes + Whonix
 
 Con [Qubes](https://qubes-os.org) más [Whonix](https://whonix.org) puedes tener un monedero de Monero sin conexión a la red y en ejecución en un sistema virtualmente aislado del daemon de Monero que tiene todo su tráfico sobre [Tor](https://torproject.org).

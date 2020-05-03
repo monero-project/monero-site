@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Encontrando un nodo
 Primero lo primero, necesitas encontrar un modo para conectarte. [moneroworld.com](https://moneroworld.com/#nodes) cuenta con buenos recursos para encontrar nodos. Uno de los métodos más fáciles
 sería ejecutar un nodo por moneroworld, pero también tienen una herramienta para encontrar nodos aleatorios.

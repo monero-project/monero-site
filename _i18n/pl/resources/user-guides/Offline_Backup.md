@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Systemy operacyjne: różne wersje Linuxa oraz Windows 7 i 8
 
 ### Oprogramowanie portfela:  Simplewallet

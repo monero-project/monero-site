@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## نظام التشغيل : إصدارات مُختلِفه من ليُنكس وويندوز 7 و 8
 
 ### برنامج المحفظه : Simplewallet

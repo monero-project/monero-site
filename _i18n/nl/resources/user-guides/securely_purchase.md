@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Monero kopen en veilig opslaan
 
 Dit is een handleiding voor het aanschaffen en veilig opslaan van Monero, geschreven in juni 2017.

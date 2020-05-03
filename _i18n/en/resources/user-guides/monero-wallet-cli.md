@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+
 # monero-wallet-cli
 
 `monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,

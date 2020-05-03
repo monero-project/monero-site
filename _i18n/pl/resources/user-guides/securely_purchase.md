@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Jak bezpiecznie kupować i przechowywać Monero?
 
 Ten przewodnik opisuje, jak kupować i bezpiecznie przechowywać Monero, zgodnie ze stanem na czerwiec 2017 roku.

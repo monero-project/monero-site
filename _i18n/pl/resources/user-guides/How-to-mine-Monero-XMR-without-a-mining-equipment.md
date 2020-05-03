@@ -1,5 +1,5 @@
-{% assign version = '3.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Jak wydobywać Monero (XMR) bez sprzętu wydobywczego?
 
 Jeżeli nie posiadasz opłacalnego sprzętu wydobywczego ani czasu lub pieniędzy na zainwestowanie w niego, nadal możesz wydobywać Monero z NiceHash.

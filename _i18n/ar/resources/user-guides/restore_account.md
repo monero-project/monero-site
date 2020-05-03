@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## نظام التشغيل : ويندوز وليُنكس وماك
 
 - إستعاده ال25 كلمه (@mnemonic-seed) الذي قمت بحفظهم عند إنشائك محفظه مونيرو القديمه (@wallet)

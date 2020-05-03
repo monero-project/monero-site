@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 A verificação dos arquivos binários deve sempre ser feita antes de se extrair, instalar e usar o software do Monero. Essa é a única maneira de assegurar que você está usando o software oficial do Monero. Com esse guia você aprenderá como não ser enganado a usar um programa falso do Monero que você venha a baixar em um phishing, em um ataque hacker, etc.
 
 Para proteger a integridade dos binários, a equipe Monero fornece uma lista assinada criptograficamente contendo todos os hashes [SHA256](https://pt.wikipedia.org/wiki/SHA-2) dos binários. Se o binário que você baixou foi adulterado, ele irá produzir um [hash diferente](https://pt.wikipedia.org/wiki/File_hashing) do que o hash esperado para o arquivo.

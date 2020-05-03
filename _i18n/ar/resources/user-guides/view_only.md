@@ -1,5 +1,5 @@
-{% assign version = '1.3.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 محفظه الرؤيه فقط يمكنها رؤيه المعاملات الوارده إلي المحفظه ولا يمكنها القيام بإنفاق الأموال, في الواقع لا يُمكنها حتي رؤيه المعاملات الصادره من هذه المحفظه. وهذا يجعلها مثيره للإهتمام لكل من 
 
 * المُطورين القائمين بكتابه مكتبات للتحقق من المدفوعات

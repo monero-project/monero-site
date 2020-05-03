@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Restaurar desde claves
 
 Restaurar un monedero desde las claves privadas es muy simple. Si cuentas con la información necesaria, con esta guía puedes restaurar tu monedero completamente. Nota: no necesitas tener tu contraseña para restaurar desde claves privadas.

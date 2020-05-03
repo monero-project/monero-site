@@ -2,10 +2,7 @@
 layout: user-guide
 title: "Connecting your local wallet to your own daemon over Tor"
 permalink: /resources/user-guides/tor_wallet.html
-mainVersion:
-  - "1"
-  - "1"
-  - "0"
+outdated: False
 ---
 
 {% t global.lang_tag %}

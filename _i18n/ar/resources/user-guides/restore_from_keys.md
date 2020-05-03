@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### الإستعاده من خلال المفاتيح
 
 إستعاده المحفظه من المفاتيح أمر بسيط للغايه إذا توافرت لديك البيانات اللازمه هذا الدليل سيُساعدك علي إستعاده محفظتك. ملاحظه: كلمه المرور غير ضروريه لإستعاده المحفظه من المفاتيح.

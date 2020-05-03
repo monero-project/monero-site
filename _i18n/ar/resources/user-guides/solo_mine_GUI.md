@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 من السهل جداً التعدين منفرداً بإستخدام الواجهه الرسوميه. إذا لم تقم بتنزيل الواجهه الرسوميه بعد توجه إلي  <a href="{{site.baseurl}}/downloads/">صفحه تنزيلات مونيرو </a> وقم بتنزيل الواجهه الرسوميه الخاصه بنظام تشغيلك. بعد ذلك قم بتشغيلها وكُن صبوراً خلال قيام مونيرو بالتزامن مع الشبكه. يجب أن تري كلمه " مُتصل " في أسفل اليسار .
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>

@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Cómo generar un monedero Ledger Monero con la consola de comandos (monero-wallet-cli)
 
 ### Tabla de Contenido

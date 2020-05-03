@@ -2,10 +2,7 @@
 layout: user-guide
 title: "View Only Wallets"
 permalink: /resources/user-guides/view_only.html
-mainVersion:
-  - "1"
-  - "3"
-  - "0"
+outdated: False
 ---
 
 {% t global.lang_tag %}

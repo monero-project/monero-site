@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # monerod
 
 `monerod` является демон-программой в составе дерева Monero. Это консольная программа, используемая для управления блокчейном. Если кошелек Bitcoin позволяет управлять как аккаунтом, так и блокчейном, то в Monero эти функции разделены: `monerod` работает с блокчейном, а `monero-wallet-cli` управляет аккаунтом.

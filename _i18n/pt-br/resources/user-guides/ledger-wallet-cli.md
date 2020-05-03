@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ## How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
 
 ### Table of Content

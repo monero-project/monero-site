@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Betalingen bewijzen
 
 Wanneer iemand naar wie je geld hebt gestuurd beweert dat de betaling niet is uitgevoerd, moet je kunnen bewijzen dat je hebt betaald.

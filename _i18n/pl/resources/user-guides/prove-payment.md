@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Udowodnij płatności
 
 Jeżeli dokonasz płatności osobie, która później ją zakwestionuje, musisz być w stanie udowodnić, że pieniądze zostały przesłane.

@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### Restoring from keys
 
 Restoring a wallet from private keys is pretty simple. If you have the necessary information, with this guide you can completely restore your wallet. Note: you do NOT have to have your password to restore from keys.

@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # Outils Monero
 
 Ces outils peuvent être utilisés pour obtenir des informations concernant le réseau Monero ou les données de vos transactions dans la chaîne de blocs.

@@ -1,4 +1,4 @@
-{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 ### Provando pagamentos
 

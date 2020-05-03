@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # Isolation du Portefeuille CLI et du Démon avec Qubes et Whonix
 
 Avec [Qubes](https://qubes-os.org) et [Whonix](https://whonix.org) vous pouvez disposer d'un portefeuille Monero hors connexion fonctionnant sur un système virtuel isolé du démon Monero dont tout le trafic est forcé à passer à travers [Tor](https://torproject.org).

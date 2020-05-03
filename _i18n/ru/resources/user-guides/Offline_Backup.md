@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Операционные системы: разные версии для Linux и Windows 7, 8
 
 ### Кошелёк: Simplewallet

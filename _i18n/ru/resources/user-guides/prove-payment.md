@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Доказательство платежей
 
 Когда вы отправляете деньги стороне, которая затем оспаривает платеж, вы должны быть в состоянии доказать, что платеж был действительно совершен.
