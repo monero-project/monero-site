@@ -157,6 +157,7 @@ permalink: /get-started/faq/index.html
                         <p>{% t faq.a12-1 %}</p>
                         <p>{% t faq.a12-2 %}</p>
                         <p>{% t faq.a12-3 %}</p>
+                        <p>{% t faq.additional %} <a href="{% post_url 2020-01-17-auditability %}">About supply auditability</a></p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-light-normal">
