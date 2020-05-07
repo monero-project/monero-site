@@ -13,9 +13,9 @@
 В качестве контейнера я использую [alpine-xmrig](https://hub.docker.com/r/bitnn/alpine-xmrig/) в основе которого (что следует из названия) лежит образ [Alpine Linux](https://www.alpinelinux.org/).
 
 Если вы действительно заинтересовались и хотите начать с использования Docker, то здесь вы найдёте некоторые полезные ссылки:
-* Arch Linux Wiki: Страница Docker; [Docker Page](https://wiki.archlinux.org/index.php/Docker)
-* Container Solutions: Шпаргалка по безопасности; [Security Cheat Sheet](http://container-solutions.com/content/uploads/2015/06/15.06.15_DockerCheatSheet_A2.pdf)
-* Digital Oceans: Как пользоваться [Dockerfile Howto](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images).
+* Arch Linux Wiki: [Страница Docker](https://wiki.archlinux.org/index.php/Docker)
+* ; [Шпаргалка по безопасности](http://container-solutions.com/content/uploads/2015/06/15.06.15_DockerCheatSheet_A2.pdf)
+* Digital Oceans: [Как пользоваться Docker](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images).
 
 Материалы по особым способам установки можно найти на веб-сайте [Docker Docs](https://docs.docker.com/engine/installation/).
 

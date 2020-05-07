@@ -1,12 +1,12 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Верификация двоичных файлов для Windows (для начинающих)
+Верификацию двоичных файлов Monero следует производить до извлечения, установки или использования программного обеспечения Monero. Это единственный способ гарантированно убедиться в том, что вы используете официальный двоичный файл Monero. Если вами был получен фальшивый файл (фишинговый, MITM и т. д.), лучше воспользоваться этим руководством, чтобы такой файл не навредил вам.
 
-Верификация двоичных файлов Monero производится до извлечения, установки или использования программного обеспечения Monero. Это единственный способ убедиться в том, что вы используете официальный двоичный файл Monero. Если вами был получен поддельный двоичный файл Monero (например, фишинговый, MITM и т. д.), соблюдение правил, изложенных в данном руководстве, поможет избежать обмана, связанного с использованием такого файла.
+Для защиты целостности двоичных файлов командой Monero используется криптографически подписанный список хешей [SHA256](https://en.wikipedia.org/wiki/SHA-2). Если скачанный вами двоичный файл изменён каким-либо образом, его хеш [будет отличатся](https://en.wikipedia.org/wiki/File_verification) от того, что указан в файле.
 
-Для защиты целостности двоичных файлов, команда Monero обеспечивает криптографически подписанный список всех хешей [SHA256.](https://en.wikipedia.org/wiki/SHA-2) Если загруженный вами двоичный файл был изменён, он будет выдавать хеш, [отличающийся](https://en.wikipedia.org/wiki/File_verification) от того, что находится в файле.
+Это руководство предназначено для новичков, использующих операционную систему Windows, и предполагает использование GUI. Руководство описывает процесс установки необходимого программного обеспечения, импорта подписывающих ключей, скачивания необходимых файлов и, наконец, верификации аутентичности вашего двоичного файла.
 
-Это руководство для новичков, использующих операционную систему Windows, и практически во всех случаях будет использоваться исключительно графический интерфейс пользователя (GUI). В руководстве подробно рассматривается процесс установки необходимого программного обеспечения, импорта ключа подписи, загрузки необходимых файлов и, наконец, проверки аутентичности ваших двоичных файлов.
+**Важное примечание!** Даже если текст данного руководства претерпит изменения, скриншоты по-прежнему будут отражать процесс, использующий данные Fluffypony. Просто следуйте руководству и помните о том, что если на скриншоте указан *fluffypony*, фактически этот скриншот относится к *binaryfate*.
 
 ## Содержание
 
@@ -30,226 +30,226 @@
 
 ## 1. Программа установки Gpg4win
 
-В этом разделе будет рассмотрен процесс установки криптографического программного обеспечения. В операционную систему Windows не входят инструменты, необходимые для верификации двоичных файлов. Для установки таких инструментов можно воспользоваться программой Gpg4win.
+В этом разделе рассматривается процесс установки криптографического программного обеспечения. Windows не имеет инструментов, необходимых для верификации вашего двоичного файла. Чтобы установить эти инструменты можно воспользоваться программой установки Gpg4win.
 
-### 1.1. Получение программы установки Gpg4win
+### 1.1. Где взять программу установки Gpg4win
 
 #### 1.1.1. Загрузка Gpg4win
 
-Используя веб-браузер, необходимо открыть страницу [gpg4win.org](https://gpg4win.org) и загрузить программу установки: для этого достаточно нажать зеленую кнопку.
+В веб-браузере следует зайти на сайт [gpg4win.org](https://gpg4win.org) и нажатием зелёной кнопки скачать программу установки.
 
 ![gpg4win download button](png/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)
 
-После этого вас перенаправят на страницу для сбора пожертвований. Если желание вносить пожертвование отсутствует, следует выбрать вариант `$0`, после чего можно будет нажать на кнопку `Download` [Загрузить]
+Вы попадёте на страницу пожертвований. Если вы не собираетесь делать пожертвование, следует выбрать `$0`, после чего можно будет нажать на кнопку `Download` (Загрузить)
 
 ![gpg4win site donation](png/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)
 
-После этого нужно нажать кнопку `Save File` [Сохранить файл].
+Нажмите `Save File` (Сохранить файл).
 
 ![gpg4win site save file](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)
 
-Выбрать место для загрузки, а затем нажать `Save` [Сохранить].
+Выберите место для сохранения файла и нажмите `Save` (Сохранить).
 
 ![gpg4win site download location](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
 #### 1.1.2. Запуск Gpg4win
 
-По завершении загрузки нужно открыть папку с файлом.
+Как только загрузка файла будет завершена, откройте папку, в которую он был сохранён.
 
 ![gpg4win site open folder](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)
 
-Программа запускается двойным кликом по ярлыку исполняемого файла gpg4win.
+Двойным кликом запустите исполняемый файл gpg4win.
 
 ![gpg4win launch](png/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
 ### 1.2. Работа с программой установки Gpg4win
 
-Должен появиться экрана проверки безопасности, в нём следует нажать `Run` [Запустить].
+Должен появиться экрана проверки безопасности, в нём следует нажать `Run` (Запустить).
 
 ![gpg4win installer security](png/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)
 
-После этого необходимо выбрать язык и нажать `ОК`.
+Выберите язык и нажмите `ОК`.
 
 ![gpg4win installer language](png/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)
 
-Появится экран приветствия. Нажать `Next` [Далее].
+Появится экран приветствия. Нажмите `Next` (Далее).
 
 ![gpg4win installer welcome](png/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)
 
-Теперь должен появиться экран выбора компонента. В соответствии с данным руководством необходимо оставить выбранной, по крайней мере, утилиту `Kleopatra`. Как только выбор будет сделан, нажать `Next` [Далее].
+Теперь должен появиться экран выбора компонентов. Для продолжения работы в соответствии с данным руководством необходимо выбрать хотя бы `Kleopatra`, а затем нажать `Next` (Далее).
 
 ![gpg4win installer components](png/verify_binary_windows_beginner/verify-win_gpg4win-components.png)
 
-Если вы не совсем уверены в том, что делаете, лучше сохранить без изменений место установки, используемое по умолчанию. После того, как место установки будет выбрано, нажать `Install` [Установить].
+Если вы не уверены в том, что делаете, лучше оставить место установки без изменений (используемое по умолчанию). После того, как место установки будет выбрано, нажать `Install` (Установить).
 
 ![gpg4win installer location](png/verify_binary_windows_beginner/verify-win_gpg4win-install.png)
 
-После того, как установка будет завершена, нажать `Next` [Далее].
+После того, как установка будет завершена, нажмите `Next` (Далее).
 
 ![gpg4win installer complete](png/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
 
-Нажать `Finish` [Завершить].
+Нажмите `Finish` (Завершить).
 
 ![gpg4win installer finish](png/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## 2. Импорт ключа подписи Monero
+## 2. Импорт подписывающего ключа Monero
 
-Данный раздел посвящён загрузке ключа подписи Monero, проверке его правильности и последующему импорту ключа в набор ключей. Хеш-файл, который будет использован для верификации двоичного файла, криптографически подписан ключом подписи Monero. Для проверки действительности данного файла необходима публичная версия ключа подписи.
+В этом разделе описан процесс загрузки подписывающего ключа Monero, верификации правильности ключа и последующего импорта ключа в ваш набор ключей. Файл хешей, используемый для верификации вашего двоичного файла, криптографически зашифрован при помощи подписывающего ключа Monero. Чтобы проверить правильность этого файла вам понадобится публичная версия подписывающего ключа.
 
-### 2.1. Загрузка ключа подписи
+### 2.1. Загрузка подписывающего ключа
 
-Используя веб-браузер, необходимо открыть [Fluffypony's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), который используется для подписи двоичных файлов Monero, а затем правой кнопкой мыши щелкнуть по странице и выбрать `Save Page As` [Сохранить страницу как].
+В веб-браузере необходимо перейти по ссылке [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), который используется для подписи двоичных файлов Monero. Кликом правой кнопки мыши необходимо выбрать `Save Page As` (Сохранить страницу как).
 
 ![getkey right click](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
 
-Оставить путь сохранения, используемый по умолчанию, и нажать `Save` [Сохранить].
+Оставьте место для загрузки, используемое по умолчанию, без изменений и нажмите `Save` (Сохранить).
 
 ![getkey save file](png/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
 ### 2.2. Запуск утилиты Kleopatra
 
-Если данная утилита используется впервые, будет необходимо создать для себя пару ключей.
+Если вы впервые пользуетесь Kleopatra, вам придётся создать для себя пару ключей.
 
-Запустить Kleopatra.
+Запустите Kleopatra.
 
 ![kleo launch](png/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-#### 2.2.1. Импорт ключа подписи
+#### 2.2.1. Импорт подписывающего ключа
 
-Нажать `Import` [Импортировать].
+Нажмите `Import` (Импортировать).
 
 ![kleo firstrun import](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
 
-Войти в директорию `Downloads` [Загрузки], выбрать `fluffypony` и нажать `Open` [Открыть].
+Перейдите в директорию `Downloads` (Загрузки), выберите `binaryfate` и нажмите `Open` (Открыть).
 
 ![kleo firstrun key location](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
 
- Чтобы запустить процесс сертификации ключа, нажать `Yes` [Да].
+Запустите процесс сертификации ключа нажатием `Yes` (Да).
 
 ![kleo firstrun start process](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
 #### 2.2.2. Создание пары ключей
 
-Для запуска процесса генерации ключа нажать `Yes` [Да].
+Запустите процесс создания ключа нажатием `Yes` (Да).
 
 ![kleo firstrun start key create](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)
 
-Указать некоторую информацию в полях `Name` [Имя] и `Email` [Электронная почта] и нажать `Next` [Далее].
+Введите информацию, заполнив поля `Name` (Имя) и `Email` (Электронная почта), нажмите `Next` (Далее).
 
 ![kleo firstrun key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)
 
-Проверить указанную информацию и нажать `Create` [Создать].
+Проверить указанную информацию и нажмите `Create` (Создать).
 
 ![kleo firstrun verify key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
 
-Ввести пароль и нажать `OK`.
+Введите пароль и нажмите `OK`.
 
 ![kleo firstrun set key pass](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)
 
-Нажать `Finish` [Завершить].
+Нажмите `Finish` (Завершить).
 
 ![kleo firstrun finish create key](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### 2.3. Верификация ключа подписи
+### 2.3. Верификация подписывающего ключа
 
-Визуально проверить, соответствует ли отпечаток ключа, принадлежащего Riccardo Spagni, `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9`.
+Визуально проверить, соответствует ли отпечаток ключа, принадлежащего binaryFate, `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
 
 ![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-В случае **СОВПАДЕНИЯ** отпечатка нажать `Next` [Далее].
+Если отпечаток **СООТВЕТСТВУЕТ** отпечатку, нажать `Next` (Далее).
 
-В случае **НЕСОВПАДЕНИЯ** отпечатка данного ключа, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ**. Необходимо удалить `fluffypony.asc` из директории `Downloads` и вернуться к [пункту 2.1](#21-download-signing-key).
+Если отпечаток **НЕ СООТВЕТСТВУЕТ**, продолжать дальнейшие выполнение пунктов инструкции **НЕ СЛЕДУЕТ**. Необходимо удалить `binaryfate` из директории `Downloads` и повторить действия, описанные в [пункте 2.1](#21-download-signing-key).
 
-Оставить отмеченным `Certify only for myself` [Подтвердить только для себя] и нажать `Certify` [Подтвердить].
+Оставить отмеченным `Certify only for myself` (Подтвердить только для себя) и нажать `Certify` (Подтвердить).
 
 ![kleo certify for self](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
-Ввести свой пароль и нажать `OK`.
+Введите свой пароль и нажмите `OK`.
 
 ![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
-Нажать `Finish` [Завершить].
+Нажмите `Finish` (Завершить).
 
 ![kleo certify finish](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. Верификация хеш-файла
 
-Данный раздел касается загрузки подписанного файла с известными действительными хешами и проверке его подлинности.
+В этом разделе рассматривается процесс загрузки подписанного файла с гарантировано правильными хешами и проверка его подлинности.
 
 ### 3.1. Загрузка хеш-файла
 
-Используя веб-браузер, открыть [страницу хеш-файлов на getmonero.org](https://getmonero.org/downloads/hashes.txt). Нажатием правой кнопки мыши на странице выбрать `Save Page As` [Сохранить страницу как].
+В веб-браузере следует перейти на [страницу хешей на getmonero.org](https://getmonero.org/downloads/hashes.txt). Кликом правой кнопки мыши выбрать `Save Page As` (Сохранить страницу как).
 
 ![hashes right click](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
-Оставьте путь сохранения, используемый по умолчанию, и нажмите `Save` [Сохранить].
+Оставьте место для загрузки, используемое по умолчанию, без изменений и нажмите `Save` (Сохранить).
 
 ![hashes save file](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
 ### 3.2. Верификация хеш-файла
 
-В утилите Kleopatra нажать кнопку `Decrypt/Verify` [Расшифровать/проверить].
+В утилите Kleopatra нажать кнопку `Decrypt/Verify` (Расшифровать/проверить).
 
 ![hashes kleo verify button](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
 
-Указать путь к директории `Downloads`, выбрать файл `hashes` и нажать `Open` [Открыть].
+Указать путь к директории `Downloads`, выбрать файл `hashes` и нажать `Open` (Открыть).
 
 ![hashes kleo open file](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)
 
-Kleopatra должна сообщить, является ли подпись файлов действительной.
+Kleopatra сообщит, является ли подпись файла действительной.
 
-Если подпись **ДЕЙСТВИТЕЛЬНА**, появится следующее:
+Если подпись **ЯВЛЯЕТСЯ** действительной, вы увидите следующее:
 
 ![hashes kleo goodsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)
 
-Если же подпись **НЕДЕЙСТВИТЕЛЬНА**, то появится следующее:
+Если же подпись **НЕ ЯВЛЯЕТСЯ** действительной, вы увидите это:
 
 ![hashes kleo badsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)
 
-Если подпись **ДЕЙСТВИТЕЛЬНА**, следует нажать `Discard` [Не учитывать] и продолжить.
+Если вами была получена **ДЕЙСТВИТЕЛЬНА** подпись, нажмите `Discard` (Не учитывать) и продолжайте.
 
-Если подпись **НЕДЕЙСТВИТЕЛЬНА**, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ**. Вместо этого необходимо удалить файл `hashes` из директории `Downloads` и вернуться к [пункту 3.1](#31-download-hash-file).
+Если вами была получена **НЕДЕЙСТВИТЕЛЬНАЯ** подпись, продолжать **НЕ СЛЕДУЕТ**. Вместо этого необходимо удалить файл `hashes` из директории `Downloads` и вернуться к действиям, описанным в [пункте 3.1](#31-download-hash-file).
 
 ## 4. Верификация двоичного файла
 
-В этом разделе описаны загрузка двоичного файла Monero и проверка его аутентичности.
+В этом разделе описан процесс загрузки двоичного файла Monero и верификации его аутентичности.
 
 ### 4.1. Загрузка двоичного файла
 
-Используя веб-браузер, перейти на [страницу загрузок getmonero.org](https://getmonero.org/downloads/#windows) и выбрать подходящий для вашей системы двоичный файл.
+В веб-браузере следует перейти на [страницу загрузки файлов getmonero.org](https://getmonero.org/downloads/#windows) и выбрать правильный файл для вашей системы.
 
 ![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 
-Выбрать `Save File` [Сохранить файл] и нажать `OK`.
+Выберите `Save File` (Сохранить файл) и нажмите `OK`.
 
 ![binary getmonero save](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
 
-Оставить без изменений путь для сохранения, используемый по умолчанию, и нажать `Save` [Сохранить].
+Оставьте место для загрузки, используемое по умолчанию, без изменений и нажмите `Save` (Сохранить).
 
 ![binary getmonero save location](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### 4.2. Проверка бинарного файла
+### 4.2. Верификация двоичного файла
 
-Используя файловый менеджер, перейти в директорию `Downloads`, открыть файл `hashes` при помощи текстового редактора.
+В файловом менеджере выберите директорию `Downloads` и откройте файл `hashes` при помощи текстового редактора.
 
 ![binary open hashes.txt](png/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)
 
-Открыть командную консоль (`cmd.exe`).
+Откройте консоль (`cmd.exe`).
 
 ![binary launch term](png/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)
 
-Изменить путь на директорию `Downloads` при помощи команды `cd Downloads`.
+Изменить путь на директорию `cd Downloads`, измените директорию на `Downloads`
 
 ![binary cmd cd](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
 
-Вычислить хеш двоичного файла Monero, используя команду `certUtil -hashfile monero-gui-win-x64-v0.11.1.0.zip SHA256` (при этом, если вы загрузили версию, поддерживающую только командную строку, замените также и `monero-gui-win-x64-v0.11.1.0.zip`).
+Вычислите хеш двоичного файла Monero при помощи команды `certUtil -hashfile monero-gui-win-x64-v0.11.1.0.zip SHA256` (если вы загрузили версию, предполагающую только использование командной строки, замените `monero-gui-win-x64-v0.11.1.0.zip`, именем скачанного файла кошелька).
 
 ![binary cmd certutil](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
 
-Сравнить хеш в консоли с хешем из хеш-файла. Они должны быть одинаковыми (пробелы можно не учитывать).
+Сравните хеш, полученный при помощи командной строки, с хешем из файла хешей. Они должны совпадать (пробелы можно не учитывать).
 
 ![binary compare hashes](png/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
 
-Если хеш **СОВПАДАЕТ**, значит верификация закончена! Вы можете быть уверены в том, что используемые вами файлы Monero являются аутентичными. Теперь файлы можно извлечь и установить/использовать в обычном режиме.
+Если хеши **СОВПАДАЮТ**, значит, верификация успешно пройдена! Вы можете быть уверены в том, что имеющиеся у вас двоичные файлы Monero аутентичны. Вы спокойно можете извлекать/устанавливать и пользоваться ими.
 
-Если хеш **НЕ СОВПАДАЕТ**, **ПРОДОЛЖАТЬ НЕ СЛЕДУЕТ**. Необходимо удалить двоичный файл Monero из директории `Downloads` и вернуться к [пункту 4.1](#41-download-binary).
+Если хеши **НЕ СОВПАДАЮТ**, продолжать **НЕ СЛЕДУЕТ**. Вместо этого необходимо удалить двоичный файл Monero из директории `Downloads` и вернуться к действиям, описанным в [пункту 4.1](#41-download-binary).
