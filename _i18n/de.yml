@@ -445,6 +445,112 @@ roadmap:
   upcoming: Kommende Aufgabe
   future: Zukunft
 
+  jan: 
+  feb: 
+  mar: 
+  apr: 
+  may: 
+  jun: 
+  jul: 
+  aug: 
+  sep: 
+  oct: 
+  nov: 
+  dec: 
+  comingsoon:
+
+  launched: Veröffentlicht auf Bitcointalk
+  renamed: Umbenennung von Bitmonero zu Monero
+  recovered: Erholung von einer Spamattacke
+  paper1-2: „Monero Research Lab“-Papers 1 und 2 veröffentlicht
+  paper3: „Monero Research Lab“-Paper 3 veröffentlicht
+  released-0-8-8-6: 0.8.8.6 veröffentlicht
+
+  paper4: „Monero Research Lab“-Paper 4 veröffentlicht
+
+  released-0-9-0: 0.9.0 Hydrogen Helix veröffentlicht
+  paper5: „Monero Research Lab“-Paper 5 veröffentlicht
+  ringsize-3: Netzwerkupgrade, das eine minimale Ringgröße von 3 für alle Transaktionen voraussetzt
+  released-0-10-0: 0.10.0 Wolfram Warptangent veröffentlicht
+  splitcoinbase: Netzwerkupgrade um ungleiche Transaktionsbeträge unter den Ringen zu ermöglichen
+  released-0-10-1: 0.10.1 Wolfram Warptangent veröffentlicht
+  guibeta1: Offizielle GUI Beta 1 veröffentlicht
+
+  enableringct: Netzwerkupgrade, um RingCT Transaktionen zu ermöglichen
+  released-0-10-2: 0.10.2 veröffentlicht; kritische Schwachstelle gepatcht
+  released-0-10-3-1: 0.10.3.1 Wolfram Warptangent veröffentlicht
+  hfminblock: Netzwerkupgrade, das die kleinstmögliche Blockgröße und den dynamischen Gebührenalgorithmus anpasst
+  webredesign: Webseite neu gestaltet
+  released-0-11-0: 0.11.0.0 Helium Hydra veröffentlicht
+  fluffyblocks: Fluffy blocks
+  guioutbeta: Betaphase der GUI beendet
+  minringsize5: Netzwerkupgrade, das die minimale Ringgröße auf 5 anhebt und RingCT voraussetzt
+  releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra veröffentlicht
+  zeromq: 0MQ/ZeroMQ
+  subaddress: Subadressen
+  paper6: „Monero Research Lab“-Paper 6 veröffentlicht
+  release-0-11-1: 0.11.1.0 Helium Hydra veröffentlicht
+  releasedgui-0-11-1: GUI 0.11.1.0 Helium Hydra veröffentlicht
+  multisig: Mehrfachsignaturen (multisig)
+
+  released-0-12-0: 0.12.0.0 Lithium Luna veröffentlicht
+  releasedgui-0-12-0: GUI 0.12.0.0 Lithium Luna veröffentlicht
+  cryptonightv2: Neuer PoW CryptoNightV2
+  hfring7: Netzwerkupgrade, das die minimale Ringgröße auf 7 erhöht, Mehrfachsignaturen und Subadressen integriert und den PoW-Algorithmus ändert
+  getmonero-fr-pl: "Getmonero.org: Übersetzungen in Französisch und Polnisch"
+  released-0-12-1: 0.12.1.0 Lithium Luna veröffentlicht
+  ledger: Hardware-Wallets von Ledger werden unterstützt
+  released-0-12-2: 0.12.2.0 Lithium Luna veröffentlicht
+  released-0-12-3: 0.12.3.0 Lithium Luna veröffentlicht
+  releasedgui-0-12-3: GUI 0.12.3.0 Lithium Luna veröffentlicht
+  kovrialpha: Kovri Alpha veröffentlicht
+  moneropedialoc:
+  getmonero-ar: "Getmonero.org: Übersetzungen in Arabisch"
+  released-0-13-0-2: 0.13.0.2 Beryllium Bullet veröffentlicht
+  releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet veröffentlicht
+  cryptonightv3: Neuer PoW CryptoNightV3
+  bulletproofs: Implementation von BulletProofs anstelle von RingCT, um Transaktionsgrößen zu verringern
+  ringsize11: 
+  released-0-13-0-4: 0.13.0.4 Beryllium Bullet veröffentlicht
+  paper8-9: „Monero Research Lab“-Papers 8 und 9 veröffentlicht
+  releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet veröffentlicht
+  paper7: „Monero Research Lab“-Paper 7 veröffentlicht
+  paper10: „Monero Research Lab“-Paper 10 veröffentlicht
+  mms: 
+
+  getmonero-de: 
+  released-0-14-0: 
+  releasedgui-0-14-0: 
+  ccs: 
+  released-0-14-0-2:
+  cryptonightr: 
+  getmonero-pt_br:
+  dlsag: 
+  pruning: 
+  trezort: 
+  nanox: 
+  tori2p: 
+  multisigms:
+  weblate:
+  rpcpay:
+  ipv6:
+  removedpid: 
+  nodediscovery:
+  randomx: 
+
+  getmoneroweblate:
+  releasedgui-0-15-0-4:
+  released-0-15-0-5:
+  dandelion: 
+  onionaddress:
+  supercop:
+  clsag: 
+  tryptych: 
+  kastelo: 
+  layer2: 
+  
+  returnaddr:
+
 
 research-lab:
   intro: Monero widmet sich nicht nur einer fungiblen Währung, sondern auch einer kontinuierlichen Forschung im Bereich des finanziellen Datenschutzes, da dies Kryptowährungen mit einschließt. Weiter unten findest du Arbeiten unseres Monero Research Lab; weitere Abhandlungen werden folgen.

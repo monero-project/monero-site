@@ -446,6 +446,112 @@ roadmap:
   upcoming: Tâches à venir
   future: Ultérieur
 
+  jan: 
+  feb: 
+  mar: 
+  apr: 
+  may: 
+  jun: 
+  jul: 
+  aug: 
+  sep: 
+  oct: 
+  nov: 
+  dec: 
+  comingsoon:
+
+  launched: Lancé sur Bitcointalk
+  renamed: Renommé de Bitmonero à Monero
+  recovered: Rétablissement suite à une attaque par spam
+  paper1-2: Publication des notes 1 et 2 du Laboratoire de Recherche Monero
+  paper3: Publication de la note 3 du Laboratoire de Recherche Monero
+  released-0-8-8-6: Publication de la version 0.8.8.6
+
+  paper4: Publication de la note 4 du Laboratoire de Recherche Monero
+
+  released-0-9-0: Publication de la version 0.9.0 Hydrogen Helix
+  paper5: Publication de la note 5 du Laboratoire de Recherche Monero
+  ringsize-3: Mise à jour du réseau pour imposer un taille de cercle minimum de 3 pour toutes les transactions
+  released-0-10-0: Publication de la version 0.10.0 Wolfram Warptangent
+  splitcoinbase: Mise à jour du réseau pour séparer la base de la pièce par dénominations
+  released-0-10-1: Publication de la version 0.10.1 Wolfram Warptangent
+  guibeta1: Publication de la Beta 1 de la GUI officielle
+
+  enableringct: Mise à jour du réseau pour activer les transactions confidentielles de cercle (RingCT)
+  released-0-10-2: Publication de la version 0.10.2; Correction d'une vulnérabilité critique
+  released-0-10-3-1: Publication de la version 0.10.3.1 Wolfram Warptangent
+  hfminblock: Mise à jour du réseau pour ajuster les algorithmes de frais dynamiques et la taille minimal de block
+  webredesign: Refonte du site Web
+  released-0-11-0: Publication de la version 0.11.0.0 Helium Hydra
+  fluffyblocks: Fluffy blocks
+  guioutbeta: Sortie de beta de la GUI
+  minringsize5: Mise à jour du réseau pour augmenter la taille de cercle minimal à 5 et imposer les transactions confidentielles de cercle (RingCT)
+  releasedgui-0-11-0: Publication de la GUI version 0.11.0.0 Helium Hydra
+  zeromq: 0MQ/ZeroMQ
+  subaddress: Sous-adresses
+  paper6: Publication de la note 6 du Laboratoire de Recherche Monero
+  release-0-11-1: Publication de la version 0.11.1.0 Helium Hydra
+  releasedgui-0-11-1: Publication de la GUI version 0.11.1.0 Helium Hydra
+  multisig: Multi-signatures (multisig)
+
+  released-0-12-0: Publication de la version 0.12.0.0 Lithium Luna
+  releasedgui-0-12-0: Publication de la GUI version 0.12.0.0 Lithium Luna
+  cryptonightv2: Nouvelle preuve de travail CryptoNightV2
+  hfring7: Mise à jour du réseau pour augmenter la taille de cercle minimal à 7, intégrer les sous-adresses, les multi-signatures et changer l'algorithme de preuve de travail
+  getmonero-fr-pl: Traduction du site getmonero.org en Français et Polonais
+  released-0-12-1: Publication de la version 0.12.1.0 Lithium Luna
+  ledger: Support des portefeuilles matériel Ledger
+  released-0-12-2: Publication de la version 0.12.2.0 Lithium Luna
+  released-0-12-3: Publication de la version 0.12.3.0 Lithium Luna
+  releasedgui-0-12-3: Publication de la GUI version 0.12.3.0 Lithium Luna
+  kovrialpha: Version alpha de Kovri
+  moneropedialoc: Moneropedia de getmonero.org ouvert à la traduction
+  getmonero-ar: Traduction du site getmonero.org en Arabe
+  released-0-13-0-2: Publication de la version 0.13.0.2 Beryllium Bullet
+  releasedgui-0-13-3: Publication de la GUI version 0.13.0.3 Beryllium Bullet
+  cryptonightv3: Nouvelle preuve de travail CryptoNightV3
+  bulletproofs: Implémentation de BulletProofs afin de réduire la taille des transactions
+  ringsize11: Mise à jour du réseau pour augmenter la taille de cercle minimal à 11, intégrer BulletProofs, mettre à niveau l'algorithme de calcul des frais et changer l'algorithme de preuve de travail
+  released-0-13-0-4: Publication de la version 0.13.0.4 Beryllium Bullet
+  paper8-9: Publication des notes 8 and 9 du Laboratoire de Recherche Monero
+  releasedgui-0-13-0-4: Publication de la GUI version 0.13.0.4 Beryllium Bullet
+  paper7: Publication de la note 7 du Laboratoire de Recherche Monero
+  paper10: Monero Research Lab Paper 10 du Laboratoire de Recherche Monero
+  mms: Implémentation du Monero Messaging System (MMS) pour automatiser les échanges d'informations des portefeuilles multisignatures
+
+  getmonero-de: Traduction du site getmonero.org en Allemand
+  released-0-14-0: Publication de la version 0.14.0.0 Boron Butterfly
+  releasedgui-0-14-0: Publication de la GUI version 0.14.0.0 Boron Butterfly
+  ccs: Nouveau Community Crowdfunding System (CCS) en remplacement du Forum Funding System (FFS)
+  released-0-14-0-2: Publication de la version 0.14.0.2 Boron Butterfly
+  cryptonightr: Nouvelle preuve de travail CryptoNightR
+  getmonero-pt_br: Traduction du site getmonero.org en Portuguais-Brézilien et Hollandais
+  dlsag: 
+  pruning: 
+  trezort: 
+  nanox: 
+  tori2p: 
+  multisigms: 
+  weblate:
+  rpcpay: 
+  ipv6: 
+  removedpid: 
+  nodediscovery: 
+  randomx:
+
+  getmoneroweblate:
+  releasedgui-0-15-0-4: 
+  released-0-15-0-5: 
+  dandelion:
+  onionaddress: 
+  supercop: 
+  clsag: 
+  tryptych: 
+  kastelo:
+  layer2:
+  
+  returnaddr: 
+
 
 research-lab:
   intro: Monero ne s'engage pas seulement à créer une monnaie fongible, mais également à continuer la recherche dans le domaine de la confidentialité financière qu'impliquent les cryptomonnaies. Vous trouverez ci-dessous le résultat du travail de notre Laboratoire de Recherche Monero, d'autres rapports s'y ajouterons.
