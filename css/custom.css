@@ -1886,7 +1886,7 @@ img.monero-logo {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition: all .3s ease;
        -moz-transition: all .3s ease;
         -ms-transition: all .3s ease;
