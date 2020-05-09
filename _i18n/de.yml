@@ -228,25 +228,16 @@ press-kit:
   large: Groß
   symbol_file: Symbol .ai-Datei
   logo_file: Logo .ai-Datei
-  documents:
-  - category: Presseunterlagen
-    publications:
-    - name: "Kurzübersicht (englisch)"
-      url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts.pdf"
-      abstract: >
-        Ein kurzer Abriss des Grundwissens um Monero: Geschichte, herausstechende Unterscheidungsmerkmale, technische Grundlagen und Besonderheiten der Entwicklung.<br>
-        Auf der Webseite <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreachs</a> gibt es weitere Informationen.
-  marketing:
-  - category: Marketing Material
-    publications:
-    - name: "The 'Don't buy Monero' sticker"
-      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
-      abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
-      abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  pressdoc: Presseunterlagen
+  quickfacts: "Kurzübersicht (englisch)"
+  quickfactsp: >
+    Ein kurzer Abriss des Grundwissens um Monero: Geschichte, herausstechende Unterscheidungsmerkmale, technische Grundlagen und Besonderheiten der Entwicklung.<br>
+    Auf der Webseite <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreachs</a> gibt es weitere Informationen.
+  marketing: Marketing Material
+  dontbuysticker: "The 'Don't buy Monero' sticker"
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  guerrillakit: Guerrilla Toolkit
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: Anleitungen für das Befehlszeilenprogramm

@@ -228,25 +228,16 @@ press-kit:
   large: Büyük
   symbol_file: Sembol .ai dosyası
   logo_file: Logo .ai dosyası
-  documents:
-  - category: Basın Belgelendirmesi
-    publications:
-    - name: "Hızlı Gerçekler Tablosu"
-      url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts.pdf"
-      abstract: >
-        Monero hakkındaki her şeyi öğrenmek için okuması hızlı ve kolay bir belge: tarihi, önemli farklılaştıran etkenleri, teknik temel prensipleri ve gelişimdeki özellikleri.<br>
-        Daha fazla bilgi için <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> sayfasını görüntüleyin.
-  marketing:
-  - category: Marketing Material
-    publications:
-    - name: "The 'Don't buy Monero' sticker"
-      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
-      abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
-      abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  pressdoc: Basın Belgelendirmesi
+  quickfacts: "Hızlı Gerçekler Tablosu"
+  quickfactsp: >
+    Monero hakkındaki her şeyi öğrenmek için okuması hızlı ve kolay bir belge: tarihi, önemli farklılaştıran etkenleri, teknik temel prensipleri ve gelişimdeki özellikleri.<br>
+    Daha fazla bilgi için <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> sayfasını görüntüleyin.
+  marketing: Marketing Material
+  dontbuysticker: "The 'Don't buy Monero' sticker"
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  guerrillakit: Guerrilla Toolkit
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: Komut-Satırı Arayüzü için Talimatlar

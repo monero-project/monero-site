@@ -228,25 +228,16 @@ press-kit:
   large: Groot
   symbol_file: .ai-bestand symbool
   logo_file: .ai-bestand logo
-  documents:
-  - category: Persmap
-    publications:
-    - name: "Quick-Facts Sheet"
-      url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts.pdf"
-      abstract: >
-        Een vlot leesbaar document waarin de hoofdpunten van Monero worden uitgelegd: geschiedenis, unieke eigenschappen, technische basis en functies die nog worden ontwikkeld.<br>
-        Zie de website <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> voor meer informatie.
-  marketing:
-  - category: Marketing Material
-    publications:
-    - name: "The 'Don't buy Monero' sticker"
-      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
-      abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
-      abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  pressdoc: Persmap
+  quickfacts: "Quick-Facts Sheet"
+  quickfactsp: >
+    Een vlot leesbaar document waarin de hoofdpunten van Monero worden uitgelegd: geschiedenis, unieke eigenschappen, technische basis en functies die nog worden ontwikkeld.<br>
+    Zie de website <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> voor meer informatie.
+  marketing: Marketing Material
+  dontbuysticker: "The 'Don't buy Monero' sticker"
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  guerrillakit: Guerrilla Toolkit
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: Instructies voor de opdrachtregel-interface (CLI)

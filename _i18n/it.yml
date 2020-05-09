@@ -230,25 +230,16 @@ press-kit:
   large: Grande
   symbol_file: File .ai del simbolo
   logo_file: File .ai del logo
-  documents:
-  - category: Documentazione per la stampa
-    publications:
-    - name: "Quick-Facts Sheet (inglese)"
-      url_file: "http://www.monerooutreach.org/pubs/2018/QuickFacts/QuickFacts.pdf"
-      abstract: >
-       Un documento veloce e semplice da leggere per conoscere tutto ciò che riguarda Monero: la storia, i fattori chiave che lo differenziano, i fondamenti tecnici e le funzionalità in sviluppo.<br>
-        Visita il sito <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> per maggiori informazioni.
-  marketing:
-  - category: Marketing Material
-    publications:
-    - name: "The 'Don't buy Monero' sticker"
-      url_file: "https://github.com/monero-ecosystem/dont-buy-monero-sticker"
-      abstract: >
-        Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-    - name: Guerrilla Toolkit
-      url_file: "https://www.monerooutreach.org/guerrilla-toolkit.php"
-      abstract: >
-        A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  pressdoc: Documentazione per la stampa
+  quickfacts: "Quick-Facts Sheet (inglese)"
+  quickfactsp: >
+    Un documento veloce e semplice da leggere per conoscere tutto ciò che riguarda Monero: la storia, i fattori chiave che lo differenziano, i fondamenti tecnici e le funzionalità in sviluppo.<br>
+    Visita il sito <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> per maggiori informazioni.
+  marketing: Marketing Material
+  dontbuysticker: "The 'Don't buy Monero' sticker"
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  guerrillakit: Guerrilla Toolkit
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: Istruzioni per l'interfaccia a riga di comando (CLI)
