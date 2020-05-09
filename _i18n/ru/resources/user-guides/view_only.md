@@ -1,5 +1,5 @@
 {% assign version = '1.3.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
+{% include disclaimer.html translated="true" version=page.version %}
 Кошелек для просмотра может видеть только то, какие входящие транзакции принадлежат вам. С помощью него нельзя потратить ваши Monero. На самом деле он даже не может видеть исходящие транзакции из этого кошелька. Это делает кошелек для просмотра исключительно интересным в следующих целях:
 
 * Разработчикам, которые создают библиотеки для проверки платежей
@@ -21,7 +21,7 @@
 
 ![settings](png/view-only/settings.png)
 
-Click on `Create a view only wallet` > `Create wallet`, the wallet will be created within the same directory and using your current password.
+Нажмите `Create a view only wallet` (Создать кошелек только для просмотра) > `Create wallet` (Создать кошелек), кошелек будет создан в том же каталоге, где располагаются ваши другие кошельки.
 
 При необходимости дважды щелкните по окну `Success` (Успешно), чтобы скопировать сообщение, затем нажмите `ОК`, чтобы закрыть окно:
 

@@ -1,7 +1,5 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-## Как создать Ledger Monero кошелек с помощью CLI (monero-wallet-cli)
-
 ### Содержание
 
 * [1. Windows](#1-windows)
@@ -102,7 +100,7 @@
 
 11. `monero-wallet-cli` начнет обновлять данные. Подождите, пока он полностью не закончит.
 
-Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с CLI.
+12. Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с CLI.
 
 ### 3. Linux
 Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за собой следующее:
