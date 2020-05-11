@@ -50,8 +50,6 @@
     url: resources/user-guides
   - page: Geliştirici Rehberleri
     url: resources/developer-guides
-  - page: Teknik Özellikler
-    url: technical-specs
   - page: Kütüphane
     url: library
   - page: Press Kit

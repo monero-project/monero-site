@@ -50,8 +50,6 @@
     url: resources/user-guides
   - page: Przewodniki dla deweloperów
     url: resources/developer-guides
-  - page: Właściwości techniczne
-    url: technical-specs
   - page: Księgarnia
     url: library
   - page: Press Kit
