@@ -95,32 +95,19 @@ hangouts:
   mailing_list1: Do you want to receive important announcements directly on your email address? join our mailing lists!
   subscribe: Subscribe
   irc_channels:
-  - channel: monero
-    description: This channel is used to discuss all things Monero related.
-  - channel: monero-community
-    description: This channel is for the Monero community to congregate and discuss ideas.
-  - channel: monero-dev
-    description: The many contributors and developers come here to discuss dev-y things.
-  - channel: monero-markets
-    description: We use this channel to talk about the price of Monero and other coins.
-  - channel: monero-offtopic
-    description: Chatting with other Monero users about things not related to Monero.
-  - channel: monero-otc
-    description: Over the counter Monero. Come here to purchase XMR from your fellow Moneron.
-  - channel: monero-pools
-    description: This is the place for mining questions and discussion.
-  - channel: monero-research-lab
-    description: Research into financial privacy with cryptocurrency.
-  - channel: monero-translations
-    description: Localizing Monero into other languages.
-  - channel: monero-hardware
-    description: Building hardware wallets to keep your Monero safe.
-  - channel: monero-site
-    description: Where the development of this website is coordinated
-  - channel: kovri
-    description: This channel is used to discuss all things Kovri related.
-  - channel: kovri-dev
-    description: The many contributors and developers come here to discuss Kovri dev-y things.
+    monero: This channel is used to discuss all things Monero related.
+    monero-community: This channel is for the Monero community to congregate and discuss ideas.
+    monero-dev: The many contributors and developers come here to discuss dev-y things.
+    monero-markets: We use this channel to talk about the price of Monero and other coins.
+    monero-offtopic: Chatting with other Monero users about things not related to Monero.
+    monero-otc: Over the counter Monero. Come here to purchase XMR from your fellow Moneron.
+    monero-pools: This is the place for mining questions and discussion.
+    monero-research-lab: Research into financial privacy with cryptocurrency.
+    monero-translations: Localizing Monero into other languages.
+    monero-hardware: Building hardware wallets to keep your Monero safe.
+    monero-site: Where the development of this website is coordinated
+    kovri: This channel is used to discuss all things Kovri related.
+    kovri-dev: The many contributors and developers come here to discuss Kovri dev-y things.
 
 merchants:
   intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. These merchants are not endorsed by the community, see disclaimer at the bottom of this page. If a company no longer accepts Monero or you would like your business to be listed, please

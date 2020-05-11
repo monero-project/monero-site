@@ -98,32 +98,19 @@ hangouts:
   irc: IRC频道
   irc_para: 门罗社区采用了很多网络交流（IRC)频道，每个频道有各自针对的话题。有的频道用来谈论正式议题，有的只是闲聊。下面列出了最受欢迎的一些频道。
   irc_channels: 
-  - channel: Monero
-    description: 这个频道用于谈论所有和门罗币相关的事宜。
-  - channel: monero-community
-    description: 这个频道用于社区聚会，讨论各自的想法。
-  - channel: monero-dev
-    description: 很多代码贡献者和开发组人员在这里讨论问题。
-  - channel: monero-markets
-    description: 这个频道专门讨论门罗币价和其他币的价格。
-  - channel: monero-offtopic
-    description: 和门罗币社区的朋友们聊天胡侃的专用频道。
-  - channel: monero-otc
-    description: 来和你的门罗币伙伴（Moneron）交易门罗币。
-  - channel: monero-pools
-    description: 为挖矿问题相关提供的频道。
-  - channel: monero-research-lab
-    description: 研究使用加密货币的金融隐私问题。
-  - channel: monero-translations
-    description: 把门罗项目本土化成其他语言。
-  - channel: monero-hardware
-    description: 构建硬件钱包来保障你的门罗币安全。
-  - channel: monero-site
-    description: Where the development of this website is coordinated
-  - channel: kovri
-    description: 这个频道用于讨论所有和科维匿名网络（Kovri）相关的东西。
-  - channel: kovri-dev
-    description: 很多开发人员和代码贡献者在这里讨论科维开发事宜。
+    Monero: 这个频道用于谈论所有和门罗币相关的事宜。
+    monero-community: 这个频道用于社区聚会，讨论各自的想法。
+    monero-dev: 很多代码贡献者和开发组人员在这里讨论问题。
+    monero-markets: 这个频道专门讨论门罗币价和其他币的价格。
+    monero-offtopic: 和门罗币社区的朋友们聊天胡侃的专用频道。
+    monero-otc: 来和你的门罗币伙伴（Moneron）交易门罗币。
+    monero-pools: 为挖矿问题相关提供的频道。
+    monero-research-lab: 研究使用加密货币的金融隐私问题。
+    monero-translations: 把门罗项目本土化成其他语言。
+    monero-hardware: 构建硬件钱包来保障你的门罗币安全。
+    monero-site: 
+    kovri: 这个频道用于讨论所有和科维匿名网络（Kovri）相关的东西。
+    kovri-dev: 很多开发人员和代码贡献者在这里讨论科维开发事宜。
 
 merchants:
   intro1: 各类服务商都开始逐渐重视门罗币为我们带来的财务隐私。以下是目前接受门罗币作为支付手段的商家列表。如果这里有公司不再接受门罗币，或者您想被添加到这个列表，

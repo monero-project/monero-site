@@ -98,32 +98,19 @@ hangouts:
   irc: IRC-Channels
   irc_para: Die Monero-Community verteilt sich auf viele IRC-Channels, die unterschiedlichen Zwecken dienen. Einige, um zu arbeiten und andere, um einfach nur miteinander zu reden. Ein paar davon findest du weiter unten.
   irc_channels:
-  - channel: monero
-    description: Hier wird alles rund um Monero diskutiert.
-  - channel: monero-community
-    description: In diesem Channel versammelt sich die Community, um Ideen zu besprechen.
-  - channel: monero-dev
-    description: Die vielen Entwickler und Mitwirkenden an Monero treffen sich hier, um über die Weiterentwicklung von Monero zu sprechen.
-  - channel: monero-markets
-    description: Hier wird über den Preis und den Markt von Monero und anderen Kryptowährungen diskutiert.
-  - channel: monero-offtopic
-    description: Mit anderen Monero-Nutzern über Dinge sprechen, die mit Monero nichts zu tun haben.
-  - channel: monero-otc
-    description: OTC-Handel (Over The Counter) von Monero. Komm' hierher, wenn du Monero außerhalb von Börsen und Mittelsmännern erwerben oder verkaufen möchtest.
-  - channel: monero-pools
-    description: Hier wird über alles rund ums Mining gesprochen.
-  - channel: monero-research-lab
-    description: Forschung rund um die finanzielle Privatsphäre im Bereich von Kryptowährungen
-  - channel: monero-translations
-    description: Monero in andere Sprachen übersetzen
-  - channel: monero-hardware
-    description: Hardware-Wallets verwenden, um deine Monero sicher zu verwahren
-  - channel: monero-site
-    description: Where the development of this website is coordinated
-  - channel: kovri
-    description: Alles rund um Kovri
-  - channel: kovri-dev
-    description: Die vielen Entwickler und Mitwirkenden an Kovri treffen sich hier, um über die Weiterentwicklung von Kovri zu sprechen.
+    monero: Hier wird alles rund um Monero diskutiert.
+    monero-community: In diesem Channel versammelt sich die Community, um Ideen zu besprechen.
+    monero-dev: Die vielen Entwickler und Mitwirkenden an Monero treffen sich hier, um über die Weiterentwicklung von Monero zu sprechen.
+    monero-markets: Hier wird über den Preis und den Markt von Monero und anderen Kryptowährungen diskutiert.
+    monero-offtopic: Mit anderen Monero-Nutzern über Dinge sprechen, die mit Monero nichts zu tun haben.
+    monero-otc: OTC-Handel (Over The Counter) von Monero. Komm' hierher, wenn du Monero außerhalb von Börsen und Mittelsmännern erwerben oder verkaufen möchtest.
+    monero-pools: Hier wird über alles rund ums Mining gesprochen.
+    monero-research-lab: Forschung rund um die finanzielle Privatsphäre im Bereich von Kryptowährungen
+    monero-translations: Monero in andere Sprachen übersetzen
+    monero-hardware: Hardware-Wallets verwenden, um deine Monero sicher zu verwahren
+    monero-site: 
+    kovri: Alles rund um Kovri
+    kovri-dev: Die vielen Entwickler und Mitwirkenden an Kovri treffen sich hier, um über die Weiterentwicklung von Kovri zu sprechen.
 
 merchants:
   intro1: Händler aller Art haben die Privatsphäre, die Monero bietet, zu schätzen gelernt. Weiter unten findest du eine Liste von vielen Firmen, die ihre Waren und Dienstleistungen im Austausch für Monero anbieten. Falls eine Firma Monero nicht mehr akzeptiert oder du hier aufgeführt sein möchtest,

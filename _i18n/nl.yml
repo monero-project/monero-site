@@ -98,32 +98,19 @@ hangouts:
   irc: IRC-kanalen
   irc_para: De Monero-community gebruikt allerlei IRC-kanalen, voor verschillende doelen. Sommige zijn bedoeld voor werkoverleg, sommige gewoon om te chatten. Hieronder staan de populairste kanalen.
   irc_channels:
-  - kanaal: monero
-    description: In dit kanaal bespreken we alle Monero-gerelateerde zaken.
-  - channel: monero-community
-    description: Hier komt de Monero-community bijeen en worden ideeën besproken.
-  - channel: monero-dev
-    description: Hier bespreken onze vele bijdragers en ontwikkelaars het ontwikkelen van Monero.
-  - channel: monero-markets
-    description: Hier wordt de prijs van Monero en andere coins besproken.
-  - channel: monero-offtopic
-    description: Hier kun je met andere Monero-gebruikers chatten over dingen die niet met Monero te maken hebben.
-  - channel: monero-otc
-    description: OTC = over the counter. Hier kun je onderhands XMR kopen of verkopen.
-  - channel: monero-pools
-    description: Dit is de plek voor vragen en discussie over minen.
-  - channel: monero-research-lab
-    description: Onderzoek naar financiële privacy met cryptovaluta.
-  - channel: monero-translations
-    description: Over het lokaliseren van Monero in andere talen.
-  - channel: monero-hardware
-    description: Hardware wallets maken om je Monero veilig te bewaren.
-  - channel: monero-site
-    description: Where the development of this website is coordinated
-  - channel: kovri
-    description: In dit kanaal bespreken we alle Kovri-gerelateerde zaken.
-  - channel: kovri-dev
-    description: Hier bespreken onze vele bijdragers en ontwikkelaars het ontwikkelen van Kovri.
+    monero: In dit kanaal bespreken we alle Monero-gerelateerde zaken.
+    monero-community: Hier komt de Monero-community bijeen en worden ideeën besproken.
+    monero-dev: Hier bespreken onze vele bijdragers en ontwikkelaars het ontwikkelen van Monero.
+    monero-markets: Hier wordt de prijs van Monero en andere coins besproken.
+    monero-offtopic: Hier kun je met andere Monero-gebruikers chatten over dingen die niet met Monero te maken hebben.
+    monero-otc: OTC = over the counter. Hier kun je onderhands XMR kopen of verkopen.
+    monero-pools: Dit is de plek voor vragen en discussie over minen.
+    monero-research-lab: Onderzoek naar financiële privacy met cryptovaluta.
+    monero-translations: Over het lokaliseren van Monero in andere talen.
+    monero-hardware: Hardware wallets maken om je Monero veilig te bewaren.
+    monero-site: 
+    kovri: In dit kanaal bespreken we alle Kovri-gerelateerde zaken.
+    kovri-dev: Hier bespreken onze vele bijdragers en ontwikkelaars het ontwikkelen van Kovri.
 
 merchants:
   intro1: Allerlei soorten verkopers stellen de financiële privacy die Monero biedt op prijs. Hieronder volgt een lijst met de verkopers die momenteel Monero accepteren voor goederen en diensten, voorzover we weten. Accepteert een bedrijf geen Monero meer, of wil je jouw bedrijf laten vermelden?

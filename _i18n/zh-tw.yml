@@ -98,32 +98,19 @@ hangouts:
   irc: IRC 頻道
   irc_para: 門羅幣社群利用了許多 IRC 頻道作為多種不同用途的溝通管道。有些是工作用，有些則是單純閒聊，你可以在下面找到幾個比較熱門的頻道。
   irc_channels:
-  - channel: monero
-    description: 這頻道是用來討論所有與門羅幣相關的主題。
-  - channel: monero-community
-    description: 這頻道是門羅幣社群用來組織及討論想法的地方。
-  - channel: monero-dev
-    description: 許多貢獻者與開發者會在這裡討論開發相關的事情。
-  - channel: monero-markets
-    description: 我們用這頻道來討論門羅幣或其他幣種的價格資訊。
-  - channel: monero-offtopic
-    description: 在這裡可以與其他門羅幣使用者聊聊與門羅幣無關的事情。
-  - channel: monero-otc
-    description: 門羅幣的場外交易。可以來這裡與其他的門羅幣愛好者交易門羅幣。
-  - channel: monero-pools
-    description: 這是用來討論門羅幣挖礦與礦池的頻道。
-  - channel: monero-research-lab
-    description: 這頻道的主題是研究金融與加密貨幣的隱私。
-  - channel: monero-translations
-    description: 將門羅幣專案翻譯至當地語言的工作溝通頻道。
-  - channel: monero-hardware
-    description: 打造硬體錢包以保護你的門羅幣安全。
-  - channel: monero-site
-    description: Where the development of this website is coordinated
-  - channel: kovri
-    description: 這是用來討論與 Kovri 專案相關的頻道。
-  - channel: kovri-dev
-    description: 這是用來討論與 Kovri 專案開發的頻道。
+    monero: 這頻道是用來討論所有與門羅幣相關的主題。
+    monero-community: 這頻道是門羅幣社群用來組織及討論想法的地方。
+    monero-dev: 許多貢獻者與開發者會在這裡討論開發相關的事情。
+    monero-markets: 我們用這頻道來討論門羅幣或其他幣種的價格資訊。
+    monero-offtopic: 在這裡可以與其他門羅幣使用者聊聊與門羅幣無關的事情。
+    monero-otc: 門羅幣的場外交易。可以來這裡與其他的門羅幣愛好者交易門羅幣。
+    monero-pools: 這是用來討論門羅幣挖礦與礦池的頻道。
+    monero-research-lab: 這頻道的主題是研究金融與加密貨幣的隱私。
+    monero-translations: 將門羅幣專案翻譯至當地語言的工作溝通頻道。
+    monero-hardware: 打造硬體錢包以保護你的門羅幣安全。
+    monero-site: 
+    kovri: 這是用來討論與 Kovri 專案相關的頻道。
+    kovri-dev: 這是用來討論與 Kovri 專案開發的頻道。
 
 merchants:
   intro1: 使用門羅幣的各類商家都可以獲得門羅幣帶來的金融隱私保護價值，以下是一些我們知道目前接受使用門羅幣購買商品或服務的商家。如果其中有商家已停止接受使用門羅幣，或是你想讓你所經營的事業被列在此表

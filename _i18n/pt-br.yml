@@ -98,32 +98,19 @@ hangouts:
   irc: Canais no IRC
   irc_para: A comunidade internacional do Monero utiliza diferentes canais no IRC, cada um com propósitos diferentes. Alguns para trabalhar e outros somente para bater papo. Veja os mais populares abaixo.
   irc_channels:
-  - channel: monero
-    description: Canal para discussão livre do Monero.
-  - channel: monero-community
-    description: Canal onde a comunidade Monero se reúne para discutir ideias.
-  - channel: monero-dev
-    description: Os diversos colaboradores e desenvolvedores do Monero se reúnem aqui para discutir o desenvolvimento técnico.
-  - channel: monero-markets
-    description: Usamos este canal para falar sobre o preço do Monero e de outras criptos.
-  - channel: monero-offtopic
-    description: Bate-papo com outros membros da comunidade sobre assuntos não relacionados ao Monero.
-  - channel: monero-otc
-    description: Venda livre de Monero. Canal para comprar XMR diretamente de outros membros da comunidade.
-  - channel: monero-pools
-    description: Canal para perguntas e discussões sobre mineração.
-  - channel: monero-research-lab
-    description: Pesquisas de alto nível sobre privacidade financeira com criptomoedas.
-  - channel: monero-translations
-    description: Traduzindo o Monero para outros idiomas.
-  - channel: monero-hardware
-    description: Construindo carteiras de hardware para manter seu Monero seguro.
-  - channel: monero-site
-    description: Where the development of this website is coordinated
-  - channel: kovri
-    description: Canal para discutir tudo relacionado ao projeto Kovri.
-  - channel: kovri-dev
-    description: Os diversos colaboradores e desenvolvedores do Kovri se reúnem aqui para discutir o desenvolvimento técnico.
+    monero: Canal para discussão livre do Monero.
+    monero-community: Canal onde a comunidade Monero se reúne para discutir ideias.
+    monero-dev: Os diversos colaboradores e desenvolvedores do Monero se reúnem aqui para discutir o desenvolvimento técnico.
+    monero-markets: Usamos este canal para falar sobre o preço do Monero e de outras criptos.
+    monero-offtopic: Bate-papo com outros membros da comunidade sobre assuntos não relacionados ao Monero.
+    monero-otc: Venda livre de Monero. Canal para comprar XMR diretamente de outros membros da comunidade.
+    monero-pools: Canal para perguntas e discussões sobre mineração.
+    monero-research-lab: Pesquisas de alto nível sobre privacidade financeira com criptomoedas.
+    monero-translations: Traduzindo o Monero para outros idiomas.
+    monero-hardware: Construindo carteiras de hardware para manter seu Monero seguro.
+    monero-site: 
+    kovri: Canal para discutir tudo relacionado ao projeto Kovri.
+    kovri-dev: Os diversos colaboradores e desenvolvedores do Kovri se reúnem aqui para discutir o desenvolvimento técnico.
 
 merchants:
   intro1: Comerciantes de todos os tipos passaram a valorizar a privacidade financeira que o Monero proporciona. Abaixo está uma lista de comerciantes que sabemos que atualmente aceitam Monero como forma de pagamento pelos seus produtos e serviços. Se uma empresa deixou de aceitar Monero, ou se você quer adicionar seu negócio na lista, por favor
