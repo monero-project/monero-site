@@ -243,6 +243,7 @@ press-kit:
 
 accepting:
   title_gui: Instructions for the GUI
+  index: Index
   gui1: "Accepting a payment with the GUI is very easy. Doesn't matter if you are a merchant or an user, you will have two pages available: Receive and Merchants."
   gui2: The receive page (shown below) is explained in every detail
   guilinkguide: in the guide of the GUI.

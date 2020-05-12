@@ -8,7 +8,13 @@ permalink: /get-started/accepting/index.html
     <div class="row">
         <div class="full">
           <div class="info-block text-adapt">
-            <h3>{% t accepting.title_gui %}</h3>
+            <h3>{% t accepting.index %}</h3>
+            <ul class="logo">
+              <li><a href="#gui">{% t accepting.title_gui %}</a></li>
+              <li><a href="#cli">{% t accepting.cliinstructions %}</a></li>
+              <li><a href="#merchants">{% t accepting.merchantstitle %}</a></li>
+            </ul>
+            <h3 id="gui">{% t accepting.title_gui %}</h3>
               <p>{% t accepting.gui1 %}</p>
               <p>{% t accepting.gui2 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md#receive-monero">{% t accepting.guilinkguide %}</a></p>
                 <img class="top-margin" src="/img/receive.png" alt="receive page">
@@ -24,7 +30,7 @@ permalink: /get-started/accepting/index.html
                 <li>{% t accepting.guiol3 %}</li>
                 <li>{% t accepting.guiol4 %}</li>
               </ol>
-            <h3>{% t accepting.cliinstructions %}</h3>
+            <h3 id="cli">{% t accepting.cliinstructions %}</h3>
               <p>{% t accepting.clicreatewallet %}</p>
               <p>{% t accepting.cliaccounts %}</p>
               <p>{% t accepting.clicreateaccount %}</p>
@@ -36,7 +42,7 @@ permalink: /get-started/accepting/index.html
               <p>{% t accepting.cliindex1 %}</p>
               <p><code>address new [label text with white spaces allowed]</code></p>
               <p><i>{% t accepting.clinotes %}</i></p>
-            <h3>{% t accepting.merchantstitle %}</h3>
+            <h3 id="merchants">{% t accepting.merchantstitle %}</h3>
               <p>{% t accepting.merchantsreceive %} <a href="{{ site.baseurl }}/resources/developer-guides/">{% t accepting.merchdevguides %}</a>. {% t accepting.merchantsreceive1 %}</p>
               <p>{% t accepting.merchantsint %} <a href="https://github.com/monero-integrations">{% t accepting.merchantsintlink %}</a>.</p>
               <p>{% t accepting.merchantsthirdp %} <a href="{{ site.baseurl }}/community/merchants/">{% t accepting.merchthirdlink %}</a>. {% t accepting.merchantsthirdp1 %}</p>
