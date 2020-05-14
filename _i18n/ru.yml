@@ -633,6 +633,7 @@ moneropedia:
     paymentid: Идентификатор платежа
     pedersen-commitment: Обязательство Педерсена
     pruning: Pruning
+    randomx: RandomX
     remote-node: Remote Node
     reseed: Повторное заполнение
     ringCT: Ring CT
