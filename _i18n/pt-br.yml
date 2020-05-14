@@ -620,6 +620,7 @@ moneropedia:
     paymentid: ID de Pagamento
     pedersen-commitment: Comprometimento de Pedersen
     pruning: Pruning
+    randomx: RandomX
     remote-node: Remote Node
     reseed: Reseed
     ringCT: Ring CT

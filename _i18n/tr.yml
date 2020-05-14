@@ -619,6 +619,7 @@ moneropedia:
     paymentid: Ödeme ID
     pedersen-commitment: Pedersen Üstlenmesi
     pruning: Pruning
+    randomx: RandomX
     remote-node: Remote Node
     reseed: Tekrar-tohum
     ringCT: Halka CT

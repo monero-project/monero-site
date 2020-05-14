@@ -617,6 +617,7 @@ moneropedia:
     paymentid: 付款ID
     pedersen-commitment: Pedersen Commitment 
     pruning: Pruning
+    randomx: RandomX
     remote-node: Remote Node
     reseed: Reseed 
     ringCT: 环交易

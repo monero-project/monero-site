@@ -619,6 +619,7 @@ moneropedia:
     paymentid: ID de Pago
     pedersen-commitment: Compromiso Pedersen
     pruning: Pruning
+    randomx: RandomX
     remote-node: Remote Node
     reseed: Resembrar
     ringCT: Transacción Circular Confidencial
