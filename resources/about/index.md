@@ -69,7 +69,7 @@ permalink: /resources/about/index.html
                                     <li>{% t specs.privacytech_sh %}</li>
                                     <li>{% t specs.privacytech_rs%}</li>
                                     <li>{% t specs.privacytech_tor-i2p %}</li>
-                                    <!-- <li>{% t specs.privacytech_dandelion %}</li> -->
+                                    <li>{% t specs.privacytech_dandelion %}</li>
                                 </ul>
                     </div>
                 </div>
