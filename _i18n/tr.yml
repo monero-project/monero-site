@@ -98,32 +98,19 @@ hangouts:
   irc: IRC Kanalları
   irc_para: Monero topluluğu her biri farklı amaçlara sahip pek çok IRC kanalından faydalanmaktadır. Kimisi çalışır, kimisiyse sadece takılır. En popüler olanları aşağıda bulacaksınız.
   irc_channels:
-  - channel: monero
-    description: Bu kanal Monero'ya ilişkin her şeyi tartışmak için kullanılır.
-  - channel: monero-community
-    description: Bu kanal Monero topluluğunun toplanıp fikirlerini tartışması içindir.
-  - channel: monero-dev
-    description: Çok sayıdaki katkıda bulunan ve geliştirici buraya geliştirme şeylerini tartışmak için gelir.
-  - channel: monero-markets
-    description: Bu kanalı Monero'nun değeri ve diğer paralar hakkında konuşmak için kullanıyoruz.
-  - channel: monero-offtopic
-    description: Monero'ya ilişkin olmayan şeyler hakkında diğer Monero kullanıcıyla sohbet.
-  - channel: monero-otc
-    description: Borsa dışı Monero. Akran Monerodaşlarınızdan XMR almak için buraya gelin.
-  - channel: monero-pools
-    description: Madencilik sorularının ve tartışmalarının yeri burasıdır.
-  - channel: monero-research-lab
-    description: Kriptoparalarla finansal mahremiyet araştırmaları.
-  - channel: monero-translations
-    description: Monero'nun diğer dillere yerelleştirilmesi.
-  - channel: monero-hardware
-    description: Monero'nuzu güvende tutmak için donanım cüzdanları yapımı.
-  - channel: monero-site
-    description: Where the development of this website is coordinated
-  - channel: kovri
-    description: Bu kanal Kovri'ye ilişkin her şeyi tartışmak için kullanılır.
-  - channel: kovri-dev
-    description: Çok sayıdaki katkıda bulunan ve geliştirici buraya Kovri geliştirme şeylerini tartışmak için gelir.
+    monero: Bu kanal Monero'ya ilişkin her şeyi tartışmak için kullanılır.
+    monero-community: Bu kanal Monero topluluğunun toplanıp fikirlerini tartışması içindir.
+    monero-dev: Çok sayıdaki katkıda bulunan ve geliştirici buraya geliştirme şeylerini tartışmak için gelir.
+    monero-markets: Bu kanalı Monero'nun değeri ve diğer paralar hakkında konuşmak için kullanıyoruz.
+    monero-offtopic: Monero'ya ilişkin olmayan şeyler hakkında diğer Monero kullanıcıyla sohbet.
+    monero-otc: Borsa dışı Monero. Akran Monerodaşlarınızdan XMR almak için buraya gelin.
+    monero-pools: Madencilik sorularının ve tartışmalarının yeri burasıdır.
+    monero-research-lab: Kriptoparalarla finansal mahremiyet araştırmaları.
+    monero-translations: Monero'nun diğer dillere yerelleştirilmesi.
+    monero-hardware: Monero'nuzu güvende tutmak için donanım cüzdanları yapımı.
+    monero-site: 
+    kovri: Bu kanal Kovri'ye ilişkin her şeyi tartışmak için kullanılır.
+    kovri-dev: Çok sayıdaki katkıda bulunan ve geliştirici buraya Kovri geliştirme şeylerini tartışmak için gelir.
 
 merchants:
   intro1: Her türden satıcı Monero'nun getirdiği finansal gizliliğe değer vermeye başlamıştır. Aşağıda malları ve hizmetleri için şu anda Monero kabul ettiğini bildiğimiz satıcıların bir listesi bulunmaktadır. Eğer bir şirket artık Monero kabul etmiyorsa veya işletmenizin listelenmesini istiyorsanız lütfen

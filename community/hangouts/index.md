@@ -79,8 +79,8 @@ permalink: /community/hangouts/index.html
              <div class="row irc">
              {% for channel in site.translations[site.lang].hangouts.irc_channels %}
                <div class="col-md-4 col-xs-12">
-                 <a href="irc://chat.freenode.net/#{{ channel.channel }}">#{{ channel.channel }}</a>
-                <p>{{ channel.description }}</p>
+                 <a href="irc://chat.freenode.net/#{{ channel[0] }}">#{{ channel[0] }}</a>
+                <p>{% t hangouts.irc_channels.{{ channel[0] }} %}</p>
               </div>
              {% endfor %}
              </div>
