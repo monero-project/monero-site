@@ -50,8 +50,6 @@
     url: resources/user-guides
   - page: 开发者指南
     url: resources/developer-guides
-  - page: 技术说明书
-    url: technical-specs
   - page: 文库
     url: library
   - page: Press Kit

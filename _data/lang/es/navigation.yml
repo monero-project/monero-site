@@ -50,8 +50,6 @@
     url: resources/user-guides
   - page: Guías de desarrolladores
     url: resources/developer-guides
-  - page: Especificaciones técnicas
-    url: technical-specs
   - page: Librería
     url: library
   - page: Press Kit
