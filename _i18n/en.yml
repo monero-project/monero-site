@@ -115,6 +115,7 @@ merchants:
   intro3: (select the "Merchant" template and fill up all sections).
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
+  onion: Onion address (needs Tor)
 
 sponsorships:
   intro: The following businesses have supported the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.

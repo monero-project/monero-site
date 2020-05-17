@@ -41,7 +41,8 @@ permalink: /community/merchants/index.html
             {% assign sortedMerchants = toplevel.merchants | sort: 'name' %}
             {% for merchants in sortedMerchants %}
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <p><a href="{{merchants.url}}">{{merchants.name}}</a></p>
+                <p><a href="{{merchants.url}}">{{merchants.name}}</a>
+                {% if merchants.url contains ".onion" %}<img class="onion-mid" src="/img/onion-tor.svg" alt="onion" title="{% t merchants.onion %}">{% endif %}</p>
             </div>
             {% endfor %}
         </div>
