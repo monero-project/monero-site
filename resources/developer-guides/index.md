@@ -19,9 +19,9 @@ permalink: /resources/developer-guides/index.html
                         </div>
                     </div>
                     <p><i>{% t developer-guides.outdated %}</i></p>
-                    <h3><span class="icon-page"></span><a href="daemon-rpc.html">{% t developer-guides.daemonrpc %}</a></h3>
+                    <h3><span class="icon-page"></span><a href="{{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html">{% t developer-guides.daemonrpc %}</a></h3>
                         <p>{% t developer-guides.daemonrpc_descr %}</p>
-                    <h3><span class="icon-page"></span><a href="wallet-rpc.html">{% t developer-guides.walletrpc %}</a></h3>
+                    <h3><span class="icon-page"></span><a href="{{ site.baseurl_root }}/resources/developer-guides/wallet-rpc.html">{% t developer-guides.walletrpc %}</a></h3>
                         <p>{% t developer-guides.walletrpc_descr %}</p>
                 </div>
             </div>
