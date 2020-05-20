@@ -156,6 +156,8 @@
       url: https://github.com/TheKoziTwo/xmr-integration
     - name: Monero Utilities (golang)
       url: https://github.com/paxos-bankchain/moneroutil
+    - name: monerorpc (Java)
+      url: https://github.com/00-matt/monerorpc
 - category: Tools
   id: tools
   merchants:
