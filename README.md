@@ -386,28 +386,19 @@ Navigate to the `/library/` folder and drop your publication file here.
 
 Please remind to minimize the size of your publication. For PDF, you'll find a large amount of service to compress your file with a minimal loss in quality.
 
-### 2. Edit the .yml files
-Navigate to the `/_i18n/` folder and open `en.yml`.
+### 2. Edit the library/index.md file
+Navigate to the `library` folder and open the `index.md` file. Look for the appropriate section for your publication (`books` or `magazines`) and under the last entry add yours, using the same structure as the other entries:
 
-Go down until you find the `library` section. You will notice a list separated by hyphenated `-category` tags in a `books:` section.
-
-Find the category that best corresponds your publication and copy the code below:
 ```
-- name: "<name>"
-  file: "<filename>"
-  abstract: >
-    <abstract><br>
-    <on multiple lines>
+<h3><a href="LINK-TO-PUBLICATION">NAME</a></h3>
+                    <p>{% t library.PLACEHOLDER-NAME %}</p>
 ```
-and paste it in the correct category under the `publications:` section.
 
-For books, paste it in alphabetical order. For magazines, past it at the top.
+Where `LINK-TO-PUBLICATION` is the URL of the actual publication. If it's a resource external to Getmonero, simply add the URL (for example `https://masteringmonero.com/free-download.html`). If you uploaded the file in the `/library` folder as explained in step 1, use this structure: `{{ site.baseurl_root }}/library/NAME-FILE`.
 
-Fill in the placeholders as follows:
-* `<name>` The name of the publication, as it should be displayed.
-* `<file>` The filename you have dropped in `/library/` folder, including extension.
-* `<abstract>`,`<on multiple lines>` An abstract for your publication, formatted with html newlines `<br>`
+`PLACEHOLDER-NAME` needs to be a placeholder that will be added in the `_18n/en.yml` file, under the `library` category, as explained in the next step.
 
-**Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
+### 3. Add placeholder in en.yml
+After you found the `library` category, add your placeholder and value after the last entry of the list. For example: `mypublication: "This is the description of my publication"`. In this example `mypublication` is the placeholder and needs to be also added to the entry in `index.md`, the result will be `<p>{% t library.mypublication %}</p>` and the value contained in the placeholder will be correctly displayed.
 
-Save the file.
+Save the changes.
