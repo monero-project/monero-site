@@ -1,23 +1,23 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-# This GPG-signed message exists to confirm the SHA256 sums on Monero binaries.
+# This GPG-signed message exists to confirm the SHA256 sums of Monero binaries.
 #
 # Please verify the signature against the key for binaryFate in the
 # source code repository (/utils/gpg_keys).
 #
 #
 ## CLI
-52e46ead674275ed446e261795b2cde19e65f7098ce62902bfa275e67f9f10f7  monero-android-armv7-v0.15.0.5.tar.bz2
-ceccc11723c4dff3cef420b37bc795850b74a8e71d23d44aa26faf5cd8fcc0e6  monero-android-armv8-v0.15.0.5.tar.bz2
-b0ea91c4d0f68d8d85ba15ed537bdd81589fa796f88d96aec451543f87b9fdb7  monero-freebsd-x64-v0.15.0.5.tar.bz2
-a23402ccf5ac432306fe263fae660646206ecb9d2aec3cfacb25afce34794067  monero-linux-armv7-v0.15.0.5.tar.bz2
-04e73cf72f37f0bbdfa757c9bb5df2117aee473632a917041077da3c05169743  monero-linux-armv8-v0.15.0.5.tar.bz2
-6cae57cdfc89d85c612980c6a71a0483bbfc1b0f56bbb30e87e933e7ba6fc7e7  monero-linux-x64-v0.15.0.5.tar.bz2
-fd2c32fc3efa47b2feda6526b0a2df4e1acc7325ec205a25d7947fbc843b24df  monero-linux-x86-v0.15.0.5.tar.bz2
-8ef04398350b8de68e21da236801f276cf662641e03dc067f6e865180f9853f6  monero-mac-x64-v0.15.0.5.tar.bz2
-0286e21552d3fedfedbc7c7aba2f34c370ad4c21007a75fb67ac87994c5cec5a  monero-win-x64-v0.15.0.5.zip
-bdcc5af964b6271bbf05609edfc49093b690f15031b748dfb43ffe991ae9cc6e  monero-win-x86-v0.15.0.5.zip
+c3f9f41b3fd3c8859d952ac95d9b5ab2cc9ad541a868edf6e9100afff5d4dd7f  monero-android-armv7-v0.16.0.0.tar.bz2
+06c352fd73307f2757c003eb295152715ef2003323db6367d72b258e512f6cbc  monero-android-armv8-v0.16.0.0.tar.bz2
+56e68d171d93e2bcea5a7e8eb7f410fcb8fb811c69b6a4f2fad0e15c0a48f6db  monero-freebsd-x64-v0.16.0.0.tar.bz2
+8aad622b0e562b610b69bc0ed0fab98bc7bfc77352151b9259ef5c8cab9338d0  monero-linux-armv7-v0.16.0.0.tar.bz2
+76afab3670df104d392048f52fde92dc611342ca0780690e7e042f1371828acb  monero-linux-armv8-v0.16.0.0.tar.bz2
+e507943b46e9d7c9ccdb641dcccb9d8205dd9de660a0ab5566dac5423f8b95e2  monero-linux-x64-v0.16.0.0.tar.bz2
+1c08139550bbbbe1844cf48b6b1d60385be70072841fcbe5e0614fa628a23604  monero-linux-x86-v0.16.0.0.tar.bz2
+8e9382cc509751765ed9601f6ac9d37cdb9e94dd5e541312545430e6617c6850  monero-mac-x64-v0.16.0.0.tar.bz2
+f2750efb65b70ae9cad64d977cb0bfbe4dc6d014fe0b7fd565002282d67d469d  monero-win-x64-v0.16.0.0.zip
+b1fc293dd9c12f90c7c343777298e86a22f25788561629b92ec0b23eb6cfb42c  monero-win-x86-v0.16.0.0.zip
 #
 ## GUI
 9b61fa807c66ebe3010869d1fa926fe033a2c82e6e660ca8acb75a8fba0248a0  monero-gui-win-x64-v0.15.0.4.zip
@@ -29,17 +29,17 @@ bdcc5af964b6271bbf05609edfc49093b690f15031b748dfb43ffe991ae9cc6e  monero-win-x86
 # ~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAl5yl8gACgkQ8K9NRioL
-35Isnw/+KuXvyejWypW0T1G2PrjqFvDrkpSz4du6PixUr+INDgRPTa6Yx7QlQEmB
-ivAwO095KIURlXo8SFwSRoXpNqDSUIeavnwaotxMztBv6L14P4dWQXI7SViZLmEQ
-Ocu0ueRth70cOuMLwPsIilSae9JkviiFzpOwzoCyQ4IHYvbTjDJl5o2ujPHlBzXT
-pEeTbrq4RC7DDvcO922PlHYXUJ1hc+fyHofstlo+NaT2BNxKYG1a/UTnwfNY107O
-JoupMTVRWLz0tqmvpUyY4PGX8FmnplXqApKV6iao32YW9blPMJ29ebFVc9mQkWzE
-7115U6X2gLAKpSF7tFc0flPHC8WAp7LrL1xG0UG3Yk9R83aKSPuX7OjGiXZK6u8d
-AqaOqPkMGhGBTJEdvrFsaHMoo6gM+svn/Sf48V3Ecq0UsVENulsFhRPvtlYyQs0q
-YTi5eZ0JvNDqcw7KuTIKzGCZta1Vzg5S9VTBVZEQneaSpk4GMT04ttroLKP8iH0e
-mlbJDUixRbS2It35MM5nYf1XhTzh2JtxXaJ7XjgLSXdY66QcFwo2st5ZU5IbtXRn
-zEtFYvUyNhFkCUvayQ7zhER4FHKVvOam07UWDiDh/dvjgTpZC8vEpid2W0Sw+AxB
-IG9LwTwPMzNGgM37w0DUglrxP9Hgxvn1igdQhUBScqandlPR62o=
-=3TBJ
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAl7JF1QACgkQ8K9NRioL
+35IFUw/+On1FsAwNbqG1ynntgdkWZyPEF0HMj4V5RehU8aAwasnXZkQOxBJSTIFk
+hW5BqCFZQ/1T84ZD0VSnwOIewGfe2i8ujqwZysUmm85u8ECPt+DXWBJDjR5e8D7/
+76b+FJL0mSOoe4Wq7HW+8hVr4tVV5R6w6PtRepmvtSQu6vuPMvbVBwCLxbtmZkGY
+cQeFJwAXsWTPitwHtcCF9YwiPN/g/9cY1KhWkRM9cKl69jieF3MjscKKFEFWZhwx
+0u4UZNQvv9fe9oxPPU0F+/9qcyfEy+TzGGt8EIzxcpZdixCc2+KWIHlAUwVO7Mp2
+vh0LjufUkdzPULKv+4GRT1oDIZpcxrjo0ohvirTACk2wI8FQMvqw28oR9Q94I/Qw
+VPbhXHgnTMZwA6aIIeLhNb93WH0d5ftXnNjuQpEuiyC8rLwD40HLWiTcyPfzIQeD
+TC2+Puuh1ZSv3wOcSp9GdII82ZZOMCQzZssU4jRdI5HHg5qAwzGHfTBxgv4lJ9ZD
+VfWNzg6AWKFeyqrrZu2qfE1KTR7Oa2EKsmoTQATCmaSNXaY130frlG2BVZvsXQsl
+gY+5YpkPFYRVDbbrgBZfKWh6CmrKJIYzF8VYY+F5dYhM7Ls39DscVPXtrKNX2bqw
+SDdb8wct/I+7LLwPMtjf2DzpWWbTC6bDWmHL7wq3+r6xF9yDu24=
+=Zi4H
 -----END PGP SIGNATURE-----
