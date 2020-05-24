@@ -28,7 +28,8 @@
     {% elsif page.summary %}{{ page.summary }}
     {% else %}{% t global.titlemeta %}
     {% endif %}">
-    <meta property="og:image" content="{% if page.icon %}http://static.getmonero.org/images/opengraph/{{ page.icon }}.png{% else %}http://static.getmonero.org/images/opengraph/logo.png{% endif %}">
+    <!-- If the page specifies a dedicated image we use that one, otherwise we use the classic Monero logo -->
+    <meta property="og:image" content="{% if page.image %}https://getmonero.org{{ page.image }}{% else %}https://getmonero.org/press-kit/symbols/monero-symbol-on-white-480.png{% endif %}">
     <meta property="og:site_name" content="{% t global.sitename %}">
     <meta property="og:url" content="https://getmonero.org{{ page.url }}">
     <meta property="og:type" content="website">
