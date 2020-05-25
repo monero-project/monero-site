@@ -5,7 +5,7 @@ summary: "Alias nazwy adresu, np. donate.getmonero.org lub zestaw 95 znaków zac
 
 ### Podstawy
 
-Gdy wysyłasz do kogoś Monero, potrzebujesz jedynie jednej informacji, a jest nią adres Monero tej osoby. Jest to ciąg 95 znaków zaczynający się od "4". Przykładowo adres darowizn Monero to <span class="long-term">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</span>.
+Gdy wysyłasz do kogoś Monero, potrzebujesz jedynie jednej informacji, a jest nią adres Monero tej osoby. Jest to ciąg 95 znaków zaczynający się od "4". Przykładowo adres darowizn Monero to <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.
 
 Ponieważ adresy są długie i skomplikowane, często zamiast niego spotkasz adres @OpenAlias, na przykład darowizny Monero mogą być wysyłane na adres <span class="long-term">donate@getmonero.org</span> or <span class="long-term">donate.getmonero.org</span>.
 
