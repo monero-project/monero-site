@@ -489,7 +489,7 @@ user-guides:
   wallets: Wallets
   offline-backup: How to make an offline backup
   vps-node: How to run a node on VPS
-  import-blockchain: Importing the Monero blockchain
+  import-blockchain: Importing the Monero blockchain (Windows)
   monero-tools: Monero Tools
   purchasing-storing: Securely purchasing and storing Monero
   verify-allos: Verify binaries on Linux, Mac, or Windows command line (advanced)
