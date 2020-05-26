@@ -38,7 +38,7 @@ If you need support about something related to the website, plese join `#monero-
 Once you have the above list of things, it's typically a good idea to build the website from your local computer to make sure it works before you make any changes. To do this, complete the following steps:
 
 1. Navigate to your local `monero-site` repository.
-2. Serve the website: `bundle exec jekyll serve --baseurl ''`. If you want, you can speedup thi process by loading only the last blog post instead of all of them. Simply add `--limit_posts 1` to the command above. The resulting command will be `bundle exec jekyll serve --limit_posts 1 --baseurl ''`.
+2. Serve the website: `bundle exec jekyll serve --baseurl ''`. If you want, you can speedup this process by loading only the last blog post instead of all of them. Simply add `--limit_posts 1` to the command above. The resulting command will be `bundle exec jekyll serve --limit_posts 1 --baseurl ''`.
 3. Open a browser and go to [http://127.0.0.1:4000](http://127.0.0.1:4000).
 4. If all went well, you should see the Monero website and you're ready to make changes.
 
