@@ -58,4 +58,18 @@
     })();
 </script>
 <!-- End Matomo Code -->
+<script type="text/javascript">
+//this script will pause the video on homepage on video body click
+if(document.querySelectorAll(".monero-video video").length === 1){
+    document.querySelectorAll(".monero-video video")[0].addEventListener("click", function(){
+        if(this.readyState === 4){
+            if(this.paused){
+                this.play()
+            } else {
+                this.pause();
+            }
+        }
+    })
+}
+</script>
 {% include hostflag.html %}
