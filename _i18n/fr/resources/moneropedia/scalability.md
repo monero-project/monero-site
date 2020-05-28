@@ -1,8 +1,11 @@
 ---
 terms: ["scalability", "Évolutivité"]
-summary: "Potentiel de croissance de Monero, ressources nécessaires, et méthodes d'augmentation de l'efficacité"
+summary: "How Monero scaling is flexible and can accommodate many transactions as demand changes"
 ---
 
-### Les Bases
+{% include untranslated.html %}
+### The Basics
 
-Monero n'a pas de taille de bloc maximale programmée en dur, ce qui signifie que contrairement à Bitcoin il n'a pas une limite de taille de bloc à 1 Mo empêchant l'évolution. Cependant, un mécanisme de pénalité de récompense de bloc est intégré dans le protocol pour éviter un accroissement trop excessif de la taille de bloc : La taille du nouveau bloc (TNB) est comparée à la taille médiane M100 des 100 derniers blocs. Si TNB > M100, la récompense de bloc est réduite avec une dépendance quadratic du dépassement de TNB vis à vis de M100. P.ex. si TNB est [10%, 50%, 80%, 100%] plus grand que M100, la récompense de bloc nominale est réduite de [1%, 25%, 64%, 100%]. Généralement, les blocs plus grands que 2*M100 e sont pas autorisés, et les blocs <= 60 ko sont toujours exempt de pénalités de récompense de bloc.
+The size of Monero @blocks (which contain @transactions) is flexible and can accommodate many transactions as demand changes. Formulas determine how the reward miners receive interacts with the number of transactions they choose to include in blocks. The @blockchain can therefore scale to meet changes in transaction volume.
+
+Scaling may also refer to the ability to conduct certain types of intermediate transactions safely without interacting with a blockchain. Monero does not currently support native off-chain solutions like atomic swaps, since its privacy features do not permit the use of required functionality like non-interactive refund transactions or complex scripting. However, academic and industry research is ongoing and promising in this area.
