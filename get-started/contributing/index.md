@@ -65,7 +65,7 @@ permalink: /get-started/contributing/index.html
                     <div class="row start-xs">
                         <div class="col-xs-12">
                             <h3>{% t contributing.donate-xmr %}</h3>
-                            <p>{% t contributing.donate-xmr_para %} donate.getmonero.org {% t contributing.or %} 44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
+                            <p>{% t contributing.donate-xmr_para %} donate.getmonero.org {% t contributing.or %} 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</p>
                         </div>
                     </div>
                     <div class="row start-xs">

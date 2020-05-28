@@ -5,7 +5,7 @@ summary: "soit un alias, comme donate.getmonero.org, ou un lot de 95 caractères
 
 ### Les Bases
 
-Lorsque vous envoyez des Moneroj à quelqu'un, vous n'avez besoin que de cette information, et c'est son adresse Monero. Une adresse Monero *brut* est un lot de 95 caractères commençant par un '4'. L'adresse de dons de Monero, par exemple, est <span class="long-term">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</span>.
+Lorsque vous envoyez des Moneroj à quelqu'un, vous n'avez besoin que de cette information, et c'est son adresse Monero. Une adresse Monero *brut* est un lot de 95 caractères commençant par un '4'. L'adresse de dons de Monero, par exemple, est <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.
 
 Comme ces adresses sont longues et complexes, vous rencontrerez souvent une adresse @OpenAlias à la place. Par exemple, les dons à Monero peuvent être envoyés à <span class="long-term">donate@getmonero.org</span> ou <span class="long-term">donate.getmonero.org</span>.
 

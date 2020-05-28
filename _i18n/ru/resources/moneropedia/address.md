@@ -5,7 +5,7 @@ summary: "Место отправления либо назначения пла
 
 ### Основная информация
 
-Если вы хотите отправить кому-нибудь Monero, то вам для этого понадобится знать только адрес Monero этого человека. *Необработанный* адрес Monero представляет собой ряд из 95 символов, начинающийся с 4. Адрес для сбора пожертвований Monero, например, выглядит так: <span class="long-term">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</span>.
+Если вы хотите отправить кому-нибудь Monero, то вам для этого понадобится знать только адрес Monero этого человека. *Необработанный* адрес Monero представляет собой ряд из 95 символов, начинающийся с 4. Адрес для сбора пожертвований Monero, например, выглядит так: <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.
 
 Поскольку такие адреса являются длинными и сложными, вы часто будете сталкиваться с адресами @OpenAlias, используемыми вместо них. Например, пожертвования Monero можно отправлять на адрес <span class="long-term">donate@getmonero.org</span> или <span class="long-term">donate.getmonero.org</span>.
 
