@@ -1,8 +1,11 @@
 ---
 terms: ["scalability", "масштабируемость"]
-summary: "Потенциал роста Monero, требуемые ресурсы и методы повышения эффективности"
+summary: "How Monero scaling is flexible and can accommodate many transactions as demand changes"
 ---
 
-### Основная информация
+{% include untranslated.html %}
+### The Basics
 
-У Monero нет жёстко закодированного максимального размера блока, что означает, что в отличие от Bitcoin, у этой криптовалюты нет предельного размера блока, составляющего 1 MB, что препятствует масштабированию. Тем не менее в протокол встроен механизм наложения штрафа на вознаграждение за блок, что позволяет избежать появления блоков слишком большого размера. Размер нового блока (new block's size — NBS) сравнивается со средним размером M100 последних 100 блоков. Если NBS > M100, размер вознаграждения за блок снижается в квадратической зависимости от того, насколько NBS превышает M100. Например, если NBS на [10%, 50%, 80%, 100%] больше M100, номинальный размер вознаграждения за блок снижается на [1%, 25%, 64%, 100%]. В целом запрещается генерировать блоки, размер которых превышает 2*M100, а на вознаграждение за блоки, размер которых меньше либо равен 60 kB, обычно не налагается какого-либо штрафа.
+The size of Monero @blocks (which contain @transactions) is flexible and can accommodate many transactions as demand changes. Formulas determine how the reward miners receive interacts with the number of transactions they choose to include in blocks. The @blockchain can therefore scale to meet changes in transaction volume.
+
+Scaling may also refer to the ability to conduct certain types of intermediate transactions safely without interacting with a blockchain. Monero does not currently support native off-chain solutions like atomic swaps, since its privacy features do not permit the use of required functionality like non-interactive refund transactions or complex scripting. However, academic and industry research is ongoing and promising in this area.
