@@ -12,10 +12,10 @@ Also an important note on updates: Our policy is to only provide announcements o
 
 **Major Updates**
 
-1. The big one...we have a logo! If you use Monero in any of your projects, [you can grab a branding pack here](http://downloads.getmonero.org/resources/branding.zip). You can also see it in all its glory right here:  
-![logo](http://downloads.getmonero.org/resources/logo-200.jpg){: .center-image }
+1. The big one...we have a logo! If you use Monero in any of your projects, [you can grab a branding pack here](https://downloads.getmonero.org/resources/branding.zip). You can also see it in all its glory right here:  
+![logo](https://downloads.getmonero.org/resources/logo-200.jpg){: .center-image }
 
-2. With our logo completed, we are going to be moving forward on a major overhaul and redesign of our website. We are also in the process of architecting and designing a better repository of information - which includes a forum-style that allows for both discussion, as well an open-source, crowd-funded development incubator. We will be keeping you updated on our progress in the coming weeks. In the meantime, the best place for threaded discussions are the [/r/monero subreddit](http://www.reddit.com/r/monero), and for live discussions join us on Freenode: #monero for general chat, #monero-dev for development efforts, and #monero-otc for price talk and over-the-counter trades.
+2. With our logo completed, we are going to be moving forward on a major overhaul and redesign of our website. We are also in the process of architecting and designing a better repository of information - which includes a forum-style that allows for both discussion, as well an open-source, crowd-funded development incubator. We will be keeping you updated on our progress in the coming weeks. In the meantime, the best place for threaded discussions are the [/r/monero subreddit](https://www.reddit.com/r/monero), and for live discussions join us on Freenode: #monero for general chat, #monero-dev for development efforts, and #monero-otc for price talk and over-the-counter trades.
 
 3. The pool bounty has now closed, and was awarded to zone117x and LucasJones for their excellent work on the Node CryptoNote pool. You can see the results of their hard work on [their github repo here](https://github.com/zone117x/node-cryptonote-pool) or, you know, just use pretty much any of the Monero mining pools:)
 

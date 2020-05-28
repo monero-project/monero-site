@@ -99,7 +99,7 @@ fluffypony extends his gratitude to all contributors, and everyone makes their w
 **\<warptangent>**  1. berkeleydb support for importer - almost ready, some argument usage cleanup  
 **\<moneromooo>**  Once I re-merged then  
 **\<hyc>**  but I don't consider anything I'm looking at now as bug-fix  
-**\<fluffypony>**  (this is how we meeting http://i.imgur.com/OR5ZVoI.jpg)  
+**\<fluffypony>**  (this is how we meeting https://i.imgur.com/OR5ZVoI.jpg)  
 **\<warptangent>**  2. finish hf fix for importer - mostly done, pending some cleanup with bdb  
 **\<fluffypony>**  hokay  
 **\<hyc>**  (I have a wineglass here too, sadly empty)  

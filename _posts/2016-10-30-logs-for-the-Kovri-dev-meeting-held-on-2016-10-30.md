@@ -43,7 +43,7 @@ author: dEBRUYNE / fluffypony
 **\<meeting-bot> [anonimal]** (e.g., favourite book, long walks on the beach, etc.)  
 **\<meeting-bot> [anonimal]** nanoakron: moneropedia. We can talk more about that at the end of the meeting too.  
 **\<meeting-bot> [olark]** Have been programming for the last 3-4 years on and off. Just getting back into C++ have followed Monero and Kovri for the last year or so and figured I should stop procrastinating and help move things forward.  
-**\<fluffypony>** olark: http://i.imgur.com/9AQYqBr.png  
+**\<fluffypony>** olark: https://i.imgur.com/9AQYqBr.png  
 **\<meeting-bot> [olark]** Also long time i2p user, so I know what's up.  
 **\<meeting-bot> [anonimal]** lol, badge of honor.  
 **\<meeting-bot> [anonimal]** Alright, well we're glad to have more hands on deck.  

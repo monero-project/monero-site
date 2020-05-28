@@ -11,7 +11,7 @@ Hello XMR users! Welcome to our second Monero Missives.
 **Major Updates**
 
 1. We're happy to introduce a major new feature for Monero: deterministic wallets based on a mnemonic seed! When creating a new wallet you now get a 24 word seed that you can use to restore the wallet:  
-![mnemonic screenshot](http://i.imgur.com/Qk90Rp2.png){: .center-image }  
+![mnemonic screenshot](https://i.imgur.com/Qk90Rp2.png){: .center-image }  
   Usage: This affects simplewallet, and is the default behaviour for --generate-new-wallet. If you would like to disable the deterministic seed during wallet generation, you can pass the --non-deterministic flag. To restore from a seed you can use the --restore-deterministic-wallet flag.  
   This provides a MAJOR benefit in that backing up your wallet *no longer requires backing up the .bin.keys file*! All you have to do is write down the 24 words and that's the only backup you need. If you're particularly brave you can even memorise the 24 words. You can also use this to create an offline cold wallet or a paper wallet: create a wallet on a computer disconnected from the Internet, write the 24 words and the address and the view key down, and then remove all the files created by the wallet.  
   Security notes: Please note that this key is independent of your password. By default the 24 word key is written to simplewallet.log when the wallet is created. This is the expected behaviour, the next release will both exclude this from the log and reduce the default log level. Please run --generate-new-wallet with the --set_log 0 flag, or alternatively make sure to delete the simplewallet.log file afterwards.  
