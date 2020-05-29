@@ -1,23 +1,23 @@
 gui:
-- version: "0.15.0.4 - Carbon Chamaeleon"
+- version: "0.16.0.0 - Nitrogen Nebula"
   downloads:
    - platform: Windows 64-bit (Installer)
-     hash: 874ebbfcf79d09c60e2d85d09e5b8b971066c6355dfc2a5eca6d109d32e45ddb
+     hash: 0820aeb30b39bb86b550ff5d6e641c16491cff3cff2b9ab9873bdc05acc6a041
      link: https://downloads.getmonero.org/gui/win64install
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: 9b61fa807c66ebe3010869d1fa926fe033a2c82e6e660ca8acb75a8fba0248a0
+     hash: f7894e92a8973f9b504fe028dc90a672fc3e97086ab835c346a1ae2dfb0d53cf
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
    - platform: Mac OS X 64-bit
-     hash: 9b0164cd90345c5fd4014a6bc8258465c2e5aae7c527c7f64a2d795830db7ae4
+     hash: 96effab969c1d4f715d323835d98b202e33f75b835ed4587bb49a76fb288bc6d
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: 2d105c792b46ec03739d39aaa6db3801f268e074814ab26e3824435f954c6a1c
+     hash: 6a1064e89d1ac626ae9307429276ad447ddbbf38035de0b24599e267977e61f1
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
