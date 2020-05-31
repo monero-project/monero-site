@@ -423,7 +423,7 @@ user-guides:
   purchasing-storing: Monero sicher kaufen und verwahren
   verify-allos: Dateien auf Linux, Mac bzw. Windows in der Befehlszeile verifizieren (fortgeschritten)
   verify-windows: Dateien unter Windows verifizieren (Anfänger)
-  mine-on-pool: Mining auf einem Pool mit xmr-stak-cpu
+  mine-on-pool: Mining auf einem Pool mit XMRig
   solo-mine: Solomining mit der GUI
   mine-docker: Mining mit Docker und XMRig
   locked-funds: Feststeckende Guthaben freigeben

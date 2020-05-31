@@ -423,7 +423,7 @@ user-guides:
   purchasing-storing: Güvenli şekilde Monero alımı ve depolaması
   verify-allos: İkilileri Linux, Mac veya Windows komut satırında doğrulayın (ileri düzey)
   verify-windows: İkilileri Windows'da doğrulayın (başlangıç seviyesi)
-  mine-on-pool: xmr-stak-cpu ile bir havuzda madencilik yapımı
+  mine-on-pool: XMRig ile bir havuzda madencilik yapımı
   solo-mine: GUI ile tek başına madencilik yapımı
   mine-docker: Docker ve XMRig ile madencilik
   locked-funds: Kilitlenmiş fonlar düzeltilmesi
