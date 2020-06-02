@@ -14,18 +14,8 @@
     url: get-started/faq
 - title: التنزيلات
   url: downloads/
-- title: آخر الأخبار
-  subfolderitems:
-    - page: Urgent
-      url: blog/tags/urgent.html
-    - page: الإصدارات
-      url: blog/tags/releases.html
-    - page: Community
-      url: blog/tags/community.html
-    - page: سجل الإجتماعات
-      url: blog/tags/dev%20diaries.html
-    - page: جميع المشاركات
-      url: blog
+- title: Blog
+  url: blog
 - title: المجتمع
   subfolderitems:
   - page: الفريق

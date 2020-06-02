@@ -9,21 +9,55 @@ layout: custom
 	{% endif %}
   {% endfor %}
 
+<div class="blog">
+  <!-- Category selector: desktop -->
+    <div class="container full desktop-only">
+        <div class="info-block blog-nav row">
+            <div class="col"><a href="{{ site.baseurl_root }}/blog">{% t blog.allposts %}</a></div>
+            <div class="col {% if filename == 'urgent' %}checked{% endif %}"><a href="{{ site.baseurl_root }}/blog/tags/urgent.html">{% t blog.urgent %}</a></div>
+            <div class="col {% if filename == 'releases' %}checked{% endif %}"><a href="{{ site.baseurl_root }}/blog/tags/releases.html">{% t blog.releases %}</a></div>
+            <div class="col {% if filename == 'community' %}checked{% endif %}"><a href="{{ site.baseurl_root }}/blog/tags/community.html">{% t blog.community %}</a></div>
+            <div class="col {% if filename == 'dev diaries' %}checked{% endif %}"><a href="{{ site.baseurl_root }}/blog/tags/dev%20diaries.html">{% t blog.meetinglogs %}</a></div>
+        </div>
+    </div>
+  <!-- End category selector: desktop -->
+  <!-- Category selector: mobile -->
+  <div class="container full">
+      <div class="info-block row center-xs" id="pick-platform">
+          <div class="mob dropdowndrop">
+              <input id="filter" type="checkbox" name="category-filter"/>
+              <label for="filter">{% t blog.filter %}</label>
+              <ul id="menu">
+                  <li><a href="{{ site.baseurl_root }}/blog">{% t blog.allposts %}</a></li>
+                  <li><a href="{{ site.baseurl_root }}/blog/tags/urgent.html">{% t blog.urgent %}</a></li>
+                  <li><a href="{{ site.baseurl_root }}/blog/tags/releases.html">{% t blog.releases %}</a></li>
+                  <li><a href="{{ site.baseurl_root }}/blog/tags/community.html">{% t blog.community %}</a></li>
+                  <li><a href="{{ site.baseurl_root }}/blog/tags/dev%20diaries.html">{% t blog.meetinglogs %}</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- End category selector: mobile -->
+</div>
+
 <div class="site-wrap">
     <section class="container">
             <div class="row">
                 <!-- left two-thirds block-->
                 <div class="left two-thirds col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                    <div class="info-block">
+                  <div class="info-block">
                         <div class="row center-xs">
-                        <div class="page-title">
-		                  <h2 class="inline"><span class="kicks">{{ tag.name }}</span></h2>
-		                </div>
-                    </div>
-                    
+                          <div class="page-title">
+                          {% if tag.name != "Dev Diaries" %}
+                            <h2 class="inline"><span class="kicks">{{ tag.name }}</span></h2>
+                          {% else %}
+                            <h2 class="inline"><span class="kicks">{% t blog.meetinglogs %}</span></h2>
+                          {% endif %}
+		                      </div>
+                        </div>
                        {% if site.tags[tag.slug] %}
-				{% for post in site.tags[tag.slug] %}
-                  <div class="post-tag">
+			                 	 {% for post in site.tags[tag.slug] %}
+                  <div class="post-lead">
                       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                       <p>
                         {{ post.summary }}
@@ -33,10 +67,11 @@ layout: custom
                         </small>
                       </p>
                   </div>
-				{% endfor %}
-			{% else %}
-				<h3>{% t tags.notags %}</h3>
-			{% endif %}
+                
+                         {% endfor %}
+                       {% else %}
+                        <h3>{% t tags.notags %}</h3>
+                       {% endif %}
                     
                     </div>
                 </div>

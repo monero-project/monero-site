@@ -670,12 +670,15 @@ moneropedia:
     wallet: Wallet
 
 blog:
-  title_1: All
-  title_2: Blog
-  title_3: Posts
+  allposts: All Posts
+  urgent: Urgent
+  releases: Releases
+  community: Community
+  meetinglogs: Meeting Logs
   author: Posted by
   date: Posted at
-  forum: Click here to join the discussion for this entry on the Monero Forum
+  filter: "Filter by category:"
+
 
 tags:
   notags: There are no posts for this tag.

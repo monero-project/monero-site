@@ -14,18 +14,8 @@
     url: get-started/faq
 - title: Загрузки
   url: downloads/
-- title: Последние новости
-  subfolderitems:
-    - page: Срочные
-      url: blog/tags/urgent.html
-    - page: Релизы
-      url: blog/tags/releases.html
-    - page: Сообщество
-      url: blog/tags/community.html
-    - page: Журналы встреч
-      url: blog/tags/dev%20diaries.html
-    - page: Все новости
-      url: blog
+- title: Blog
+  url: blog
 - title: Сообщество
   subfolderitems:
   - page: Команда
