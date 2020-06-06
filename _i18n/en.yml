@@ -197,6 +197,8 @@ downloads:
   mobilelight2: Hangouts
   mobilelight3:  page to see where we are.
   installer: Installer
+  avwarning: Be aware that some antiviruses and firewalls may flag the Monero executables and archives as malware.
+  moreinfofaq: More info in the FAQ
 
 monero-project:
   kovri: The Kovri project uses end-to-end encryption so that neither the sender nor receiver of a Monero transaction need to reveal their IP address to the other side or to third-party observers (the blockchain). This is done using the same technology that powers the dark net, i2p (Invisible Internet Protocol). The project is currently in heavy, active development and is not yet integrated with Monero.
