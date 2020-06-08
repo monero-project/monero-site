@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="false" version=page.version %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ## Operating Systems:  Various versions of Linux and Windows 7, 8
 
 ### Wallet Software:  Simplewallet

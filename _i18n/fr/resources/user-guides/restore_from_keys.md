@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Restoring from keys
 
 Restaurer un portefeuille à partir de la clef privé est très simple. Si vous avez les informations nécessaire, avec ce guide vous pourrez totalement restaurer votre portefeuille. Notez : vous n'avez pas besoin de connaître votre mot de passe pour restaurer depuis la clef.

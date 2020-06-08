@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Herstellen met sleutels
 
 Je kunt een portemonnee makkelijk herstellen met je privésleutels. Als je de benodigde gegevens hebt, kun je met deze handleiding je portemonnee volledig herstellen. Je hebt je wachtwoord NIET nodig voor herstellen met sleutels.

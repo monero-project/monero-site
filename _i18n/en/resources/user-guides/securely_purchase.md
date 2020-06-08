@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+
 This is a guide to purchase and securely store Monero as of June 2017.
 
 #### Step 1: Buy Bitcoin

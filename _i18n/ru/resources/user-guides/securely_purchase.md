@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Это руководство по приобретению и безопасному хранению Monero по состоянию на июнь 2017 года.
 
 #### Шаг 1. Покупка Bitcoin

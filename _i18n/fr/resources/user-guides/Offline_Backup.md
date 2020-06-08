@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Système d'exploitations : Différentes versions de Linux et Windows 7, 8
 
 ### Application de portefeuille : Simplewallet

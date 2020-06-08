@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 С помощью [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) можно создать кошелек Monero, который не будет требовать подключения к сети и работать на фактически изолированной от демона Monero системе , у которого весь сетевой трафик будет проходить через сеть [Tor](https://torproject.org).
 
 Qubes предоставляет гибкость, позволяющую легко создавать отдельные виртуальные машины для разных целей. Сначала нужно создать рабочую станцию Whonix для кошелька без подключения к сети. Далее, создается другая рабочая станция Whonix для демона, который будет использовать шлюз Whonix, так как это NetVM. Для обмена данными между кошельком и демоном можно использовать Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).

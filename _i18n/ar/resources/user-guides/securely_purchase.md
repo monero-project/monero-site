@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## كيفية شراء مونيرو وتخزينه بأمان.
 
 هذا دليل لشراء وتخزين مونيرو بشكل آمن اعتبارًا من يونيو 2017.

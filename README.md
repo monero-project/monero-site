@@ -216,10 +216,7 @@ Navigate to the /resources/user-guides folder and make a new file. Be sure the f
 layout: user-guide
 title: TITLE OF YOUR USER GUIDE
 permalink: /resources/user-guides/NAME-OF-FILE-GOES-HERE.html
-mainVersion:
-  - "1"
-  - "1"
-  - "0"
+outdated: False
 ---
 
 {% tf resources/user-guides/NAME-OF-FILE-GOES-HERE.md %}
@@ -231,22 +228,19 @@ Copy this exactly and merely change the files names where indicated.
 Navigate to the /i18n/ folder and choose the correct folder for your language. Navigate further into the `resources/user-guides` folders and make a .md file with the EXACT SAME filename as the you made before.
 
 ### 5. Write
-Write your user guide. Be succinct but thorough. Remember, people will be using your guides when they need help. Make sure all the information is there. Feel free to use images or screenshots if necessary to help get your point across.
+Write your user guide. Be succinct but thorough. Remember, people will be using your guides when they need help. Make sure all the information is there. Feel free to use images or screenshots if necessary to help get your point across. There should be NO front matter on this file.
 
-The title should be at the top of the User Guide using a single `#` for an H1 tag. Titles will not be automatically put on these pages as with other pages. There should be NO front matter on this file.
-
-Add the version snippet at the top of your guide (before your title):
+Add the snippet monitoring the status of the translations at the top of your guide:
 ```
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ```
-Your version should start at `1.1.0` as it is the first Major, first Minor, and no cosmetic changes have occurred.
+If you are copying the structure of another guide, the snippet will be already there with the default value (`no` and `no`. Meaning the guide is not translated)
 
 ### 6. Copy User Guide file into all languages
 Copy your file and navigate to each language file in the /i18n folder. In each language folder go to the resources/user-guides folder and paste your user guide (don't worry, you don't have to translate it) there. This is very important, and the site will not build if the file with the same name is not in each language folder.
 
-As you paste into each folder, open up the file and edit the snippet at the top of the file (before your title) to mark it untranslated:
-`{% include disclaimer.html translated="false" version=page.version %}`. This does not need to be done in the original language that the User Guide was written in.
+As you paste into each folder, open up the file and make sure the snippet at the top of the file is correct:
+`{% include disclaimer.html translated="no" translationOutdated="no" %}`.
 
 ### 7. Add Guide to the 'User Guide' landing page of EACH LANGUAGE
 In the /\_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it.

@@ -1,3 +1,5 @@
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Prouver un paiement
 
 Lorsque vous envoyez un paiement à une partie qui conteste qu'il ait été effectué, vous devez pouvoir prouver qu'il a bien été effectué.

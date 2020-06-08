@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # Choisir un pool
 
 Il y a de nombreux pool parmi lesquels choisir, une liste est disponible sur

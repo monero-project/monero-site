@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # monero-wallet-cli
 
 `monero-wallet-cli` es el software de monedero que viene con el árbol de Monero. Es un programa de consola,

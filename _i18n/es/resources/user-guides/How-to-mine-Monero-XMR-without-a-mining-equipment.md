@@ -1,5 +1,5 @@
-{% assign version = '3.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Cómo minar Monero (XMR) sin un equipo de minado?
 
 Si no cuentas con un equipo de minado rentable, tiempo o

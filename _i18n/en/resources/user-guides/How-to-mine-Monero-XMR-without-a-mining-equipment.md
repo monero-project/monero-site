@@ -1,5 +1,5 @@
-{% assign version = '3.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+
 If you don’t have a profitable mining equipment, nor time or
 money to invest into building it, you can still mine Monero with NiceHash.
 

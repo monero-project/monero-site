@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # Portemonnee isoleren van node met Qubes en Whonix
 
 Met [Qubes](https://qubes-os.org) en [Whonix](https://whonix.org) kun je een Monero-portemonnee zonder netwerkverbinding uitvoeren op een virtueel systeem, geïsoleerd van de Monero-node, waarvan al het verkeer verplicht via [Tor](https://torproject.org) loopt.

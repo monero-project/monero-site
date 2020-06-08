@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Comment acheter des Moneroj et les conserver en toute sécurité
 
 Voici un guide d'achat et de conservation en toute sécurité de Monero à la date de Juin 2017.

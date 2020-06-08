@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Wyszukiwanie węzła
 
 Pierwszą rzeczą jest znalezienie węzła, aby się podłączyć. [Moneroworld.com](https://moneroworld.com/#nodes) posiada dobre materiały służące odnajdywaniu węzłów. Jedną z najprostszych metod jest użycie węzła prowadzonego przez moneroworld, ale oni mają także narzędzie służące do wynajdywania losowych węzłów.

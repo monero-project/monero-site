@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # Herramientas Monero
 
 Estas herramientas pueden ser utilizadas para obtener información acerca de la red de Monero o datos de tu transacción en la blockchain.

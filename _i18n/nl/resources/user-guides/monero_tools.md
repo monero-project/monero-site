@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # Monero-tools
 
 Met deze hulpmiddelen kun je informatie vinden over het Monero-netwerk of over je transactiegegevens op de blockchain.

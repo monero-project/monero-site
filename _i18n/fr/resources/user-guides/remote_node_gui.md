@@ -1,5 +1,5 @@
-{% assign version = '1.2.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Trouver un nœud
 Commencez par le commencement, vous devez trouver un nœud auquel vous connecter ! [moneroworld.com](https://moneroworld.com/#nodes) propose quelques bonnes ressources pour trouver
 des nœuds. L'une des méthodes les plus simple serait d'utiliser un nœud appartenant à moneroworld, mais ils propose également un outil pour trouver des nœuds aléatoires.

@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Czasami twoje fundusze utkną - część z nich zostanie zablokowana i nigdy nie odblokowana. Oto jak to naprawić:
 
 - Załaduj swój portfel w monero-wallet-cli.

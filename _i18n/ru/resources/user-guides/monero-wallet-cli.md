@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # monero-wallet-cli
 
 `monero-wallet-cli` - это программное обеспечение кошелька, которое поставляется вместе с Monero. Оно представляет собой консольную программу, которая управляет учетными записями пользователей Monero. В то время как кошелек Bitcoin управляет как учетными записями, так и блокчейном, в Monero эти функции разделены: `monerod` обрабатывает блокчейн, а `monero-wallet-cli` обрабатывает учетные записи пользователей.

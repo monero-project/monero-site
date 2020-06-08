@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Étape 1
 
 Téléchargez l'amorce actuelle depuis https://downloads.getmonero.org/blockchain.raw ; vous pouvez sauter cette étape si vous importez la chaîne de blocs depuis une autre source.

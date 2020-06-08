@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # إختيار حقل (تجمّع للتعدين)
 
 هُناك العديد من الحقول يمكنك الإختيار منها , قائمه بالحقول المتاحه موجوده بـ [moneropools.com](https://moneropools.com).

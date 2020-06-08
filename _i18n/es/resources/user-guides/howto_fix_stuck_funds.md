@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Algunas veces, tus fondos estarán estancados - tendrás fondos bloqueados que nunca se podrán desbloquear. Esta es la forma de arreglarlo.
 
 - Carga tu monedero en monero-wallet-cli.

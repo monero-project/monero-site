@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Sistemas Operativos:  Windows, Linux, Mac
 
 - Recupera la semilla mnemónica de 25 palabras que guardaste cuando creaste tu viejo monedero de Monero.

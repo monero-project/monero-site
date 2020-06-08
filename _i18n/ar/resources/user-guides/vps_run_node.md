@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # monerod
 
 `monerod` هو برنامج خادم مونيرو. وهو برنامج وحده تحكم في سلسله الكتل. بينما تُدير محفظه البيتكوين كلاً من الحساب وسلسله الكتل, يقوم مونيرو بفصلهم, فالخادم `monerod` يتحكم في سلسله الكتل وواجهه سطر الأوامر `monero-wallet-cli` تتحكم في الحساب.

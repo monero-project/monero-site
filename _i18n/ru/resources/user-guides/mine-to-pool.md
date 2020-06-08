@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Выбираем пул
 
 Существует множество пулов, список которых можно найти на [moneropools.com](https://moneropools.com). Если выбрать для майнинга большой пул, то выплаты будут происходить чаще, но небольшие майнинговые пулы способствуют поддержанию децентрализации сети.

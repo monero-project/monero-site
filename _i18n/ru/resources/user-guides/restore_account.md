@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Операционные системы: Windows, Linux, Mac
 
 - Найти состоящую из 25 слов @мнемоническую-фразу, которую вы сохранили, когда создавали @кошелёк Monero.

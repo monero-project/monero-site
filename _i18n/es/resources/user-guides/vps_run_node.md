@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 # monerod
 
 `monerod` es el software daemon que viene con el árbol de Monero. Es un programa de consola, y administra la blockchain. Mientras bitcoin administra tanto cuenta como blockchain, Monero lo separa en: `monerod` se encarga de la blockchain, y `monero-wallet-cli` de la cuenta.

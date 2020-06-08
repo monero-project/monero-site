@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Besturingssystemen:  Windows, Linux, Mac
 
 - Neem je hersteltekst (zie @mnemonic-seed) erbij die je hebt opgeslagen bij het maken van je oude Monero-portemonnee (zie @wallet).

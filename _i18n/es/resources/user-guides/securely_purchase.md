@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ## Cómo comprar y guardar Monero de manera segura.
 
 Esta es una guía para comprar y guardar Monero de manera segura a Junio del 2017.

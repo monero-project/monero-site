@@ -2,10 +2,7 @@
 layout: user-guide
 title: Importing the Monero Blockchain from an outside source
 permalink: /resources/user-guides/importing_blockchain.html
-mainVersion:
-  - "1"
-  - "1"
-  - "0"
+outdated: False
 ---
 
 {% t global.lang_tag %}

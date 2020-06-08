@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Случается так, что ваши средства «застревают», то есть у вас появляются заблокированные средства, которые никогда не будут разблокированы. И вот способ решения этой проблемы.
 
 - Загрузить ваш кошелёк в monero-wallet-cli.

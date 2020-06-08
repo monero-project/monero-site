@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### Probar pagos
 
 Cuando envías dinero a una parte quien después reclama que el pago haya sido realizado, necesitas ser capaz de probar que el pago fue realizado.

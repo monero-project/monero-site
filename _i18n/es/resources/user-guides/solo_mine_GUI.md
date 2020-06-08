@@ -1,5 +1,5 @@
-{% assign version = '1.1.0' | split: '.' %}
-{% include disclaimer.html translated="true" version=page.version %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 Es muy fácil minar en solitario en la GUI oficial. Si no lo has hecho aún, ve a <a href="{{site.baseurl}}/downloads/">Monero downloads page</a> y descarga la GUI oficial para tu sistema operativo. Después, ejecuta el programa y espera a que Monero se sincronice con la red. Deberás ver que se muestre "Conectado" en la esquina inferior izquierda.
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>
