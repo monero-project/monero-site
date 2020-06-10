@@ -508,6 +508,7 @@ user-guides:
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
+  node-i2pzero: Run a Monero node through I2P with I2P-zero
 
 roadmap:
   completed: Completed task
