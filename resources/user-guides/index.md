@@ -18,6 +18,7 @@ title: titles.userguides
                             <p><a href="{{site.baseurl}}/resources/user-guides/securely_purchase.html">{% t user-guides.purchasing-storing %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a></p>
+                            <p><a href="{{site.baseurl}}/resources/user-guides/node-i2p-zero.html">{% t user-guides.node-i2pzero %}</a></p>
                         </div>
                     </div>
                 </div>
