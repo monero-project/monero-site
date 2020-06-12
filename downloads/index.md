@@ -91,6 +91,7 @@ permalink: /downloads/index.html
                     {% endfor %}
                     </ul>
                   </div>
+                  <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                   <p><details>
                        <summary>{% t downloads.showissues %}</summary>
@@ -184,6 +185,7 @@ permalink: /downloads/index.html
                       {% endfor %}
                     </ul>
                 </div>
+                <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                 <p><details>
                      <summary>{% t downloads.showissues %}</summary>
