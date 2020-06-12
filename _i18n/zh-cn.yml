@@ -422,7 +422,7 @@ user-guides:
   purchasing-storing: 安全地购买和存储门罗币
   verify-allos: 在Linux，Mac，或者Windows命令行上验证二进制文件(专家)
   verify-windows: 在Windows上验证二进制文件(新手)
-  mine-on-pool: 怎么用xmr-stak-cpu在矿池里挖矿
+  mine-on-pool: 怎么用XMRig在矿池里挖矿
   solo-mine: 怎么用GUI独立挖矿
   mine-docker: 用Docker和XMRig挖矿
   locked-funds: 如何解锁被锁定的资金

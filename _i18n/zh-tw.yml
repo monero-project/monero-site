@@ -423,7 +423,7 @@ user-guides:
   purchasing-storing: 安全地購買與儲存門羅幣
   verify-allos: 在 Linux, Mac, 或 Windows 系統上驗證執行檔 (進階)
   verify-windows: 在 windows 系統上驗證執行檔 (入門)
-  mine-on-pool: 如何使用 xmr-stak-cpu 在礦池挖礦
+  mine-on-pool: 如何使用 XMRig 在礦池挖礦
   solo-mine: 如何使用 GUI 錢包進行 solo 挖礦
   mine-docker: 使用 Docker 與 XMRig 進行挖礦
   locked-funds: 如何修復被鎖定的資金

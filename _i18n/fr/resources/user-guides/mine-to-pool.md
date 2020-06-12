@@ -1,115 +1,195 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-# Choisir un pool
+## Wallet
 
-Il y a de nombreux pool parmi lesquels choisir, une liste est disponible sur
-[moneropools.com](https://moneropools.com). Miner sur un grand pool signifie
-des paiements plus fréquent, mais miner sur un pool plus petit permet de
-maintenir la décentralisation du réseau.
+Before starting, you already need to have a wallet configured and
+working. The pool needs to know your wallet address to be able to send
+payments there. See the [Accepting Monero guide]({{ site.baseurl
+}}/get-started/accepting) for more information.
 
-# Choisir un mineur
+## Profitability
 
-Tout comme pour les pools, il y a de nombreuses applications d'extraction minière parmi lesquelles
-choisir. Celle que vous sélectionnerez dépendra du matériel sur lequel vous aller
-miner. Ce guide va se concentrer sur un mineur pour CPU, et utilisera
-[xmr-stak-cpu](https://github.com/fireice-uk/xmr-stak-cpu). Alternativement, vous
-pouvez utiliser [wolf's CPUMiner](https://github.com/wolf9466/cpuminer-multi) ou
-[sgminer-gm](https://github.com/genesismining/sgminer-gm). Cependant, leurs
-configurations sont légèrement différentes et ne seront pas abordés dans ce guide.
+Before mining, you should decide if it is worth it or not for you. You
+have to decide this for yourself, based on your power costs and the
+hardware that you have available. There are many sites, such as
+[CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr)
+that allow you to enter your miner's speed and power draw, and it will
+show you the profit (or loss) per week/month.
 
-## Pour Windows
+## Download Miner
 
-Si vous utilisez Windows, le développeur de xmr-stak-cpu fournit des binaires à
-télécharger sur page
-[GitHub Version](https://github.com/fireice-uk/xmr-stak-cpu/releases).
+The first step is to download mining software onto your computer.
 
-Téléchargez et décompressez `xmr-stak-cpu-win64.zip` à un endroit où vous pourrez
-le retrouver.
+### Windows
 
-## Pour d'autres systèmes d'exploitation
+The XMRig developer provides pre-built binaries for Windows
+users. They are available on the [GitHub release
+page](https://github.com/xmrig/xmrig/releases/latest).
 
-Si vous n'utilisez pas windows, vous devrez compiler xmr-stak-cpu vous-même,
-heureusement ce n'est pas si difficile qu'il n'y parait. Avant de pouvoir compiler
-le mineur, vous devez installer certains de ses prérequis.
+Scroll down until you see `xmrig-VERSION-msvc-win64.zip`. Download
+this file and extract the archive somewhere memorable, like your desktop.
 
-Pour les distributions basées sur Debian :
+### Ubuntu Linux
 
-    sudo apt-get install libmicrohttpd-dev libssl-dev cmake build-essential
+The XMRig developer provides pre-built binaries for Ubuntu Xenial
+Xerus (16.04). They may work on other Ubuntu versions, and on other
+distributions, but this is not guaranteed.
 
-Pour les distributions basées sur Red Hat :
+These binaries are available on the [GitHub release
+page](https://github.com/xmrig/xmrig/releases/latest).
 
-	sudo yum install openssl-devel cmake gcc-c++ libmicrohttpd-devel
+Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download
+this file, extract the archive somewhere memorable, like your desktop.
 
-<!-- TODO: Add dependencies for other operating systems? -->
+### Other Linux
 
-Après cela, vous n'avez plus qu'à utiliser cmake pour générer les fichier
-nécessaires, lancer make et copier le fichier de configuration :
+Users of other Linux distributions can compile XMRig from
+source. Firstly, install the dependencies:
 
-    mkdir build-$(gcc -dumpmachine)
-	cd $_
-	cmake ../
-	make -j$(nproc)
-	cp ../config.txt bin/
-	cd bin
+```
+# For Debian-based distros
+sudo apt install \
+	build-essential \
+	cmake \
+	git \
+	libhwloc-dev \
+	libssl-dev \
+	libuv1-dev
+```
 
-Ne criez pas victoire tout de suite, car le mineur doit encore être
-onfiguré. Lancer le mineur maintenant devrait vous donner un bloc de
-texte à copier et coller :
+Download the XMRig source code:
 
-![image1](png/mine_to_pool/1.png)
+```
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+```
 
-Ouvrez `config.txt` et *remplacez* les deux lignes `"cpu_threads_conf"` avec le
-texte que vous venez de copier. Après-coup, voici à quoi cela devrait recembler :
+Configure and compile XMRig:
 
-![image2](png/mine_to_pool/2.png)
+```
+cmake -Bbuild
+make -Cbuild -j$(nproc)
+```
 
-Descendez dans le fichier jusqu'à trouver le ligne contenant `"pool_address"`.
-*Remplacez* le contenu du second jeux de guillemets avec l'adresse et le port du
-pool que vous avez précédemment choisis. Vous pourrez trouver ces informations sur
-le site web du pool.
+Copy binary and example configuration to your home directory:
 
-Saisissez l'adresse de votre portefeuille entre les guillemets sur la ligne "wallet
-address". Vous pouvez laisser le mot de passe vierge, sauf avis contraire du pool.
+```
+cp build/xmrig ~/
+cp src/config.json ~/
+```
 
-Après cela, votre configuration devrait ressembler à ceci :
+### macOS Build
 
-![image3](png/mine_to_pool/3.png)
+Firstly, install XCode and [Homebrew](https://brew.sh).
 
-# Lancer le mineur
+Use Homebrew to install dependencies:
 
-**Sauvegardez le fichier de configuration** et lancez le mineur !
+```
+brew install \
+	cmake \
+	hwloc \
+	libmicrohttpd \
+	libuv \
+	openssl
+```
 
-![image4](png/mine_to_pool/4.png)
+Download XMRig sources:
 
-Certains pools vous permettent d'observer votre taux de hachage en collant votre
-adresse sur leur site web. Vous pouvez également surveiller votre taux de hachage en
-tapant la touche `h`.
+```
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+```
 
-# Ajuster le lgiciel d'extraction minière
+Configure and compile XMRig:
 
-Vous pourriez voir des messages désagréables comme ceci :
+```
+cmake -Bbuild -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+make -Cbuild -j$(nproc)
+```
 
-	[2017-07-09 12:04:02] : MEMORY ALLOC FAILED: mmap failed
+Copy binary and example configuration to your home directory:
 
-Cela signifie que vous pourriez obtenir une amélioration du taux de hachage d'environ
-20% en activant les pages larges.
+```
+cp build/xmrig ~/
+cp src/config.json ~/
+```
 
-## Pages larges sur linux
+## Selecting a pool
 
-Tout d'abord, arrêtez le mineur (s'il est en fonctionnement), lancez la
-commande suivante pour activer les pages larges puis redémarrez l'application
-d'extraction minière en tant que root :
+There are lots of pools to choose from. You can find a list at
+[miningpoolstats.stream/monero](https://miningpoolstats.stream/monero).
 
-	sudo sysctl -w vm.nr_hugepages=128
-	sudo ./xmr-stak-cpu
+Choosing a larger pool means that you will see more frequent (but
+smaller) payouts, but choosing a smaller pools helps keep the network
+decentralised. [Miners will not lose any revenue by mining on a
+smaller pool](https://redd.it/g6uh2l).
 
-## Pages larges sur Windows
+## Configuring the miner
 
-Comme expliqué dans `config.txt`:
+Navigate to your chosen pool's webpage and read their
+documentation. They should mention an address and port for you to
+enter into your miner. For example, `pool.xmr.pt:3333`.
 
->By default we will try to allocate large pages. This means you need to "Run As Administrator" on Windows
-You need to edit your system's group policies to enable locking large pages. Here are the steps from MSDN
-1. On the Start menu, click Run. In the Open box, type gpedit.msc.
+Next, open up the config.json you copied or extracted earlier in your
+favourite text editor. Scroll down to the line that says
+`donate.v2.xmrig.com:3333` and change the text inside the quotes to
+the address of your pool. The line below should contain
+`YOUR_WALLET_ADDRESS`. Change that to your actual wallet address.
+
+After these modifications, your configuration should look something like this:
+
+```
+{
+	// [...]
+	"pools": [
+		{
+			"url": "pool.xmr.pt:3333",
+			"user": "43YjW8SZov..."
+		}
+	],
+	// [...]
+}
+```
+
+## Starting the miner
+
+Windows users can double click on xmrig.exe. Users of other operating
+systems should `cd` into the directory that contains XMRig and then
+type `./xmrig` and press return.
+
+If you see green messages saying that shares have been accepted,
+congratulations, everything is working!
+
+## Troubleshooting
+
+### Anti-virus keeps removing XMRig
+
+Some anti-viruses flag XMRig as malware because it is often deployed
+to infected computers to mine without the owner's consent. As it is
+your computer and you are configuring the miner to mine for you, it is
+safe to add XMRig to your anti-virus whitelist.
+
+### Cannot read/set MSR
+
+On some CPUs, XMRig tries to increase performance by disabling certain
+features like your CPU's instruction prefetcher. These operations
+require root/administrator, so try right clicking xmrig.exe and
+running it as administrator, or running `sudo ./xmrig` on other
+systems.
+
+### Algo not known
+
+Find the line in config.json that says `algo: null` and change it to
+`algo: "rx/0"`. By default, XMRig expects the pool to tell it which
+hashing algorithm to use.
+
+### Huge Pages 0%
+
+#### Allowing large pages on Windows
+
+Taken from [the MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
+
+>1. On the Start menu, click Run. In the Open box, type gpedit.msc.
 2. On the Local Group Policy Editor console, expand Computer Configuration, and then expand Windows Settings.
 3. Expand Security Settings, and then expand Local Policies.
 4. Select the User Rights Assignment folder.
@@ -118,3 +198,47 @@ You need to edit your system's group policies to enable locking large pages. Her
 7. In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group.
 8. In the Select Users, Service Accounts, or Groups dialog box, add an account that you will run the miner on
 9. Reboot for change to take effect.
+
+You may also need to launch the miner as administrator.
+
+#### Allowing large pages on Linux
+
+Firstly stop the miner (if it's running), run the following commands to enable
+large pages and then start the miner as root:
+
+	sudo sysctl -w vm.nr_hugepages=1168
+	sudo ./xmrig
+
+You may have to increase 1168 depending on how many NUMA nodes your
+CPU(s) have.
+
+#### Allowing large pages on macOS
+
+Huge pages are not supported on macOS.
+
+### Balance Not Increasing
+
+Most pools are <abbr title="Pay Per Last N Shares">PPLNS</abbr> pools,
+which means that you only get paid when a miner on the pool finds a
+block. If the pool you are mining on is small, this can take a few
+days to weeks.
+
+Additionally, any blocks found must mature before they can be paid
+out. This takes 60 blocks (approx. 2 hours).
+
+## Getting Help
+
+An active Monero mining community on Reddit is
+[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can
+also join [#monero-pools on
+freenode](https://webchat.freenode.net/?channel=#monero-pools).
+
+## Going Futher
+
+* Consider using a subaddress just for mining, to prevent your address
+  being linked to different services.
+* [Consider using Tor to connect to the
+  pool](https://xmrig.com/docs/miner/tor) (or to a hidden service pool
+  like HashVault, RespectXMR and MoneroOcean). This hides mining
+  activity from your ISP, and prevents the pool from knowing who you
+  are.

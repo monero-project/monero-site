@@ -424,7 +424,7 @@ user-guides:
   purchasing-storing: Monero kopen en veilig opslaan
   verify-allos: Binaries verifiëren op een opdrachtregel in Linux, Mac of Windows (geavanceerd)
   verify-windows: Binaries verifiëren in Windows (voor beginners)
-  mine-on-pool: Minen via een pool met xmr-stak-cpu
+  mine-on-pool: Minen via een pool met XMRig
   solo-mine: Solo minen met de grafische interface (GUI)
   mine-docker: Minen met Docker en XMRig
   locked-funds: Vergrendeld geld ontgrendelen
