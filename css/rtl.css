@@ -1,0 +1,1076 @@
+body {
+    direction: rtl;
+} 
+
+.col-xs-offset-1{
+    margin-right: 8.333%;
+    margin-left: auto;
+}
+
+.col-xs-offset-2{
+    margin-right: 16.667%;
+    margin-left: auto;
+}
+
+.col-xs-offset-3{
+    margin-right: 25%;
+    margin-left: auto;
+}
+
+.col-xs-offset-4{
+    margin-right: 33.333%;
+    margin-left: auto;
+}
+
+.col-xs-offset-5{
+    margin-right: 41.667%;
+    margin-left: auto;
+}
+
+.col-xs-offset-6{
+    margin-right: 50%;
+    margin-left: auto;
+}
+
+.col-xs-offset-7{
+    margin-right: 58.333%;
+    margin-left: auto;
+}
+
+.col-xs-offset-8{
+    margin-right: 66.667%;
+    margin-left: auto;
+}
+
+.col-xs-offset-9{
+    margin-right: 75%;
+    margin-left: auto;
+}
+
+.col-xs-offset-10{
+    margin-right: 83.333%;
+    margin-left: auto;
+}
+
+.col-xs-offset-11{
+    margin-right: 91.667%;
+    margin-left: auto;
+}
+
+.end-xs{
+    text-align: left;
+}
+
+@media only screen and (min-width: 48em){
+    .col-sm-offset-1{
+        margin-right: 8.333%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-2{
+        margin-right: 16.667%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-3{
+        margin-right: 25%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-4{
+        margin-right: 33.333%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-5{
+        margin-right: 41.667%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-6{
+        margin-right: 50%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-7{
+        margin-right: 58.333%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-8{
+        margin-right: 66.667%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-9{
+        margin-right: 75%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-10{
+        margin-right: 83.333%;
+        margin-left: auto;
+    }
+
+    .col-sm-offset-11{
+        margin-right: 91.667%;
+        margin-left: auto;
+    }
+
+    .end-sm{
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 62em){
+    .topnav-list .end-xs .col-md-12{
+        margin-left: 3.5rem;
+        margin-right: auto;
+    }
+
+    .col-md-offset-1{
+        margin-right: 8.333%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-2{
+        margin-right: 16.667%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-3{
+        margin-right: 25%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-4{
+        margin-right: 33.333%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-5{
+        margin-right: 41.667%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-6{
+        margin-right: 50%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-7{
+        margin-right: 58.333%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-8{
+        margin-right: 66.667%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-9{
+        margin-right: 75%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-10{
+        margin-right: 83.333%;
+        margin-left: auto;
+    }
+
+    .col-md-offset-11{
+        margin-right: 91.667%;
+        margin-left: auto;
+    }
+
+    .end-md{
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 75em){
+    .col-lg-offset-1{
+        margin-right: 8.333%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-2{
+        margin-right: 16.667%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-3{
+        margin-right: 25%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-4{
+        margin-right: 33.333%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-5{
+        margin-right: 41.667%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-6{
+        margin-right: 50%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-7{
+        margin-right: 58.333%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-8{
+        margin-right: 66.667%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-9{
+        margin-right: 75%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-10{
+        margin-right: 83.333%;
+        margin-left: auto;
+    }
+
+    .col-lg-offset-11{
+        margin-right: 91.667%;
+        margin-left: auto;
+    }
+
+    .end-lg{
+        text-align: left;
+    }
+
+}
+
+.container, .container-fluid{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.list-unstyled{
+    padding-right: 0;
+}
+
+.text-adapted{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.arrow-down{
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.untranslated{
+    right: 0;
+    left: auto;
+}
+
+.upgrade-content{
+    right: 0;
+    left: auto;
+}
+
+label.upgrade-x{
+    left: 1rem;
+    right: auto;
+}
+
+@media only screen and (max-width: 75rem){
+    h2#main-h2{
+        margin: 0.5rem 0 0 0 ;
+    }
+
+    .topnav-list .end-xs .col-md-12{
+        margin-left: 3.1rem;
+        margin-right: auto;
+    }
+
+    img.monero-logo{
+        padding-right: 3.1rem;
+        padding-left: 0;
+    }
+
+    .nav-items>.nav-item>label, .nav-item>.dropdown-content>a{
+        padding-right: 2.7rem;
+        padding-left: 0;
+    }
+
+    .nav-item>.dropdown-content>a{
+        padding-left: 2.2rem;
+        padding-right: 0;
+    }
+
+    .nav-items>.nav-item:first-of-type>label, .white-nav .nav-item:first-of-type .dropdown-content a{
+        padding-right: 3.1rem;
+        padding-left: 0;
+    }
+
+    .nav-items>.nav-item:last-of-type>label{
+        padding-left: 0.8rem;
+        padding-right: 0;
+    }
+
+    .main-info{
+        padding: 4rem 0 4rem 2rem ;
+    }
+
+    p.main-downloads{
+        padding-right: 0.5rem;
+        padding-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 62rem){
+    label.upgrade-x{
+        left: 0.5rem;
+        right: auto;
+    }
+
+    h1{
+        margin: 1rem 0 0.7rem 0 ;
+    }
+
+    h2#main-h2{
+        margin: 1rem 0 0 0 ;
+    }
+
+    .center.one-fourth, .right.three-fourths, .left.three-fourths, .left.one-fourth.no-pad-sm, .right.one-fourth.no-pad-sm, .right.half, .left.half, .right.one-third, .left.two-thirds, .left.one-third, .right.two-thirds, .center.one-third{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .center-1.one-fourth{
+        padding-right: 0.5rem;
+        padding-left: 0;
+    }
+
+    .center-2.one-fourth{
+        padding-left: 0.5rem;
+        padding-right: 0;
+    }
+
+    img.monero-logo{
+        padding: 0.39rem 0 0.39rem 0 ;
+    }
+
+    .white-nav{
+        border-left: none;
+        border-right: none;
+    }
+
+    .slide-in-nav{
+        left: 200%;
+        right: -100%;
+    }
+
+    .mob.bot-nav{
+        right: 0;
+        left: auto;
+    }
+
+    label[for="mobile-burger"]{
+        right: 1rem;
+        left: auto;
+    }
+
+    #mobile-burger:checked ~ .slide-in-nav{
+        left: 0;
+        right: 0;
+    }
+
+    .mob-nav .nav-item{
+        text-align: right;
+    }
+
+    .mob-nav .nav-item .arrow-down{
+        margin-right: 0.2rem;
+        margin-left: auto;
+    }
+
+    .mob-nav .nav-item a, .mob-nav .nav-item label{
+        padding: 1rem 2rem 1rem 0 ;
+    }
+
+    .mob-nav .nav-item .dropdown-content>a{
+        text-align: right;
+        padding: 0.8rem 3rem 0.8rem 0rem ;
+    }
+
+    #moblangdrop:checked ~ .dropdown-content{
+        right: 0;
+        left: 0;
+    }
+
+    label[for="moblangdrop"]{
+        margin-left: 0.5rem;
+        margin-right: auto;
+    }
+
+    #moblangdrop ~ label .arrow-down{
+        margin-right: 0.2rem;
+        margin-left: auto;
+    }
+
+    .white-nav .mob-language-change{
+        left: 0;
+        right: auto;
+    }
+
+    .main-video{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .monero-video{
+        padding: 2.6rem 0 0 0 ;
+    }
+
+    .about-main .info-block-row .col-lg-8{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    p.main-downloads{
+        padding-right: 0;
+    }
+
+    .mob.dropdowndrop label{
+        padding: 1rem 1rem 0.9rem 1rem ;
+    }
+
+    .mob.dropdowndrop label:after{
+        left: 1rem;
+        right: auto;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+
+    .mob.dropdowndrop ul#menu{
+        text-align: right;
+    }
+
+}
+
+@media only screen and (max-width: 30rem){
+    .slide-in-nav{
+        right: -110%;
+        left: auto;
+    }
+
+    .footer-wrapper{
+        padding: 2rem 2rem 0 2rem ;
+    }
+
+    .footer-wrapper div.col-xs-6{
+        padding-left: 0;
+    }
+
+    .pre-roadmap .col-xs-4{
+        text-align: right;
+    }
+
+    .tabPanel-widget > div.tabPanel-content p{
+        padding-right: 1.5rem;
+        padding-left: 0;
+    }
+
+}
+
+.disclaimer{
+    right: 0;
+    left: auto;
+}
+
+@media only screen and (max-width: 48rem){
+    .left.two-thirds, .left.one-third, .left.half, .left.one-fourth, .left.three-fourths, .right.two-thirds, .right.one-third, .center.one-third, .center-1.one-fourth, .center-2.one-fourth, .right.half, .right.one-fourth, .right.three-fourths, .full{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .about-main .info-block-row .col-lg-8{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer-wrapper div.col-xs-6{
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .moneropedia h4.text-center{
+        text-align: right;
+    }
+
+    .tabPanel-widget{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .tabPanel-widget > div.tabPanel-content p{
+        padding-right: 1rem;
+        padding-left: 0;
+    }
+
+    .tabPanel-widget h2{
+        padding: 1rem 0 0.8rem 0 ;
+    }
+
+    .team .tabPanel-widget input + h2 + div.tabPanel-content{
+        padding: 0.5rem 0 0 0 ;
+    }
+
+    .team .tabPanel-widget div.tabPanel-content .full{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .team .tabPanel-widget div.tabPanel-content .half:nth-child(even){
+        padding-right: 0.25rem;
+        padding-left: 0;
+    }
+
+    .team .tabPanel-widget div.tabPanel-content .half:nth-child(odd){
+        padding-left: 0.25rem;
+        padding-right: 0;
+    }
+
+    .team .tabPanel-widget > div.tabPanel-content p{
+        padding-right: 0;
+    }
+
+}
+
+h1{
+    margin: 2.5rem 0 1rem 0 ;
+}
+
+h2#main-h2{
+    margin: 1rem 0 0 0 ;
+    text-align: right;
+}
+
+.pre-roadmap p.pre-completed:before{
+    padding-left: 4%;
+    padding-right: 0;
+}
+
+.pre-roadmap p.pre-ongoing:before{
+    padding-left: 4%;
+    padding-right: 0;
+}
+
+.pre-roadmap p.pre-upcoming:before{
+    padding-left: 4%;
+    padding-right: 0;
+}
+
+.left.two-thirds, .left.one-third, .left.half, .left.one-fourth, .left.three-fourths{
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+.right.two-thirds, .right.one-third, .right.half, .right.one-fourth, .right.three-fourths{
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+.center.one-third, .center-1.one-fourth, .center-2.one-fourth{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.btn-link span.icon-windows, .btn-link span.icon-linux, .btn-link span.icon-apple, .btn-link span.icon-blockchain{
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+.btn-link span.icon-windows{
+    background-position: right  0;
+}
+
+a.btn-link:hover span.icon-windows, a.btn-link:focus span.icon-windows, a.btn-link.active span.icon-windows{
+    background-position: right -48px right ;
+}
+
+.btn-link span.icon-linux, span.icon-linux{
+    background-position: right  -48px;
+}
+
+a.btn-link:hover span.icon-linux, a.btn-link:focus span.icon-linux, a.btn-link.active span.icon-linux{
+    background-position: right -48px -48px;
+}
+
+.btn-link span.icon-apple{
+    background-position: right  -96px;
+}
+
+a.btn-link:hover span.icon-apple, a.btn-link:focus span.icon-apple, a.btn-link.active span.icon-apple{
+    background-position: right -48px -96px;
+}
+
+.btn-link span.icon-blockchain{
+    background-position: right  -144px;
+}
+
+a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.btn-link.active span.icon-blockchain{
+    background-position: right -48px -144px;
+}
+
+img.monero-logo{
+    padding: 0.8rem 3.4rem 0.8rem 0.8rem ;
+}
+
+.topnav .topnav-list .language-change label div.arrow-down{
+    margin-right: 0.2rem;
+    margin-left: auto;
+}
+
+.topnav .topnav-list .language-change .dropdown-content{
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+.nav-items>.nav-item>label, .nav-items>.nav-item>a{
+    padding: 1.5rem 3.5rem 1.5rem 2rem ;
+}
+
+.desktop-nav .nav-item .arrow-down{
+    margin-right: 0.2rem;
+    margin-left: auto;
+}
+
+.white-nav .nav-item .dropdown-content{
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+.nav-item>.dropdown-content>a{
+    padding: 0.8rem 3.5rem 0.8rem 3rem ;
+}
+
+.monero-video video{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-info{
+    padding: 4rem 0 4rem 2.5rem ;
+}
+
+.about-main .info-block-row .col-lg-8{
+    padding-left: 3rem;
+    padding-right: 0;
+}
+
+p.main-downloads{
+    padding-right: 1.9rem;
+    padding-left: 0;
+}
+
+.using h2{
+    text-align: right;
+}
+
+.guides h2{
+    text-align: right;
+}
+
+.guides span.icon-github{
+    background-position: right  -240px;
+    float: right;
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+.guides span.icon-page:before{
+    float: right;
+}
+
+.guides span.icon-globe:before{
+    float: right;
+}
+
+.downloads ul{
+    text-align: right;
+}
+
+.downloads .info-block h2{
+    text-align: right;
+}
+
+.download-platforms .col-md-6{
+    padding: 0 0 0 2rem ;
+}
+
+.download-platforms span{
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+.download-platforms span.icon-windows{
+    background-position: right -96px right ;
+}
+
+.download-platforms span.icon-apple{
+    background-position: right -96px -96px;
+}
+
+.download-platforms span.icon-linux{
+    background-position: right -96px -48px;
+}
+
+.download-platforms span.icon-arm{
+    background-position: right  -176px;
+}
+
+.download-platforms span.icon-freebsd{
+    background-position: right  -208px;
+}
+
+.download-platforms span.icon-dragonflybsd{
+    background-position: right  -287px;
+}
+
+.download-platforms span.icon-github{
+    background-position: right  -240px;
+}
+
+.download-platforms span.icon-android{
+    background-position: right  -321px;
+}
+
+.downloads a.arrow-up{
+    left: 2rem;
+    right: auto;
+}
+
+.downloads a.arrow-up i{
+    border-width: 0 0 3px 3px ;
+    right: 0.88rem;
+    left: auto;
+}
+
+.merchants .col-md-4{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.tabPanel-merchant h2:nth-child(1){
+    right: 0;
+    left: auto;
+}
+
+.tabPanel-merchant3 h2:nth-child(2){
+    right: calc(1 * (100% / 3));
+    left: auto;
+}
+
+.tabPanel-merchant3 h2:nth-child(3){
+    right: calc(2 * (100% / 3));
+    left: auto;
+}
+
+.tabPanel-merchant4 h2:nth-child(2){
+    right: calc(1 * (100% / 4));
+    left: auto;
+}
+
+.tabPanel-merchant4 h2:nth-child(3){
+    right: calc(2 * (100% / 4));
+    left: auto;
+}
+
+.tabPanel-merchant4 h2:nth-child(4){
+    right: calc(3 * (100% / 4));
+    left: auto;
+}
+
+.tabPanel-merchant5 h2:nth-child(2){
+    right: calc(1 * (100% / 5));
+    left: auto;
+}
+
+.tabPanel-merchant5 h2:nth-child(3){
+    right: calc(2 * (100% / 5));
+    left: auto;
+}
+
+.tabPanel-merchant5 h2:nth-child(4){
+    right: calc(3 * (100% / 5));
+    left: auto;
+}
+
+.tabPanel-merchant5 h2:nth-child(5){
+    right: calc(3 * (100% / 5));
+    left: auto;
+}
+
+.roadmap ul{
+    margin-right: 2rem;
+    margin-left: auto;
+}
+
+.roadmap li.completed:before{
+    padding-left: 2%;
+    padding-right: 0;
+}
+
+.roadmap li.ongoing:before{
+    padding-left: 2%;
+    padding-right: 0;
+}
+
+.roadmap li.upcoming:before{
+    padding-left: 2%;
+    padding-right: 0;
+}
+
+.roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming{
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.tabPanel-widget label:nth-child(1), .tabPanel-widget h2:nth-child(3){
+    right: 0;
+    left: auto;
+}
+
+.tabPanel-widget label:nth-child(5), .tabPanel-widget h2:nth-child(7){
+    right: calc(1 * (100% / 7));
+    left: auto;
+}
+
+.tabPanel-widget label:nth-child(9), .tabPanel-widget h2:nth-child(11){
+    right: calc(2 * (100% / 7));
+    left: auto;
+}
+
+.tabPanel-widget label:nth-child(13), .tabPanel-widget h2:nth-child(15){
+    right: calc(3 * (100% / 7));
+    left: auto;
+}
+
+.tabPanel-widget label:nth-child(17), .tabPanel-widget h2:nth-child(19){
+    right: calc(4 * (100% / 7));
+    left: auto;
+}
+
+.tabPanel-widget label:nth-child(21), .tabPanel-widget h2:nth-child(23){
+    right: calc(5 * (100% / 7));
+    left: auto;
+}
+
+.tabPanel-widget label:nth-child(25), .tabPanel-widget h2:nth-child(27){
+    right: calc(6 * (100% / 7));
+    left: auto;
+}
+
+.tabPanel-header5 label:nth-child(5), .tabPanel-header5 h2:nth-child(7){
+    right: 20%;
+    left: auto;
+}
+
+.tabPanel-header5 label:nth-child(9), .tabPanel-header5 h2:nth-child(11){
+    right: 40%;
+    left: auto;
+}
+
+.tabPanel-header5 label:nth-child(13), .tabPanel-header5 h2:nth-child(15){
+    right: 60%;
+    left: auto;
+}
+
+.tabPanel-header5 label:nth-child(17), .tabPanel-header5 h2:nth-child(19){
+    right: 80%;
+    left: auto;
+}
+
+.tabPanel-widget input[name="tabs"]:checked + h2:after{
+    right: 0;
+    left: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.team .tabPanel-widget input + h2 + div.tabPanel-content{
+    padding: 1rem 0 0 0 ;
+}
+
+.team .tabPanel-widget div.tabPanel-content .half:nth-child(even){
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+.team .tabPanel-widget div.tabPanel-content .half:nth-child(odd){
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 41rem){
+    .team .tabPanel-widget div.tabPanel-content .half:nth-child(even), .team .tabPanel-widget div.tabPanel-content .half:nth-child(odd){
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+}
+
+.post h2{
+    text-align: right;
+}
+
+.post hr{
+    margin: 1.5rem 0 0 0 ;
+}
+
+.page-numbers p a{
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.social-icon.twitter{
+    background-position: right -128px -48px;
+}
+
+.social-icon.twitter:hover{
+    background-position: right -176px -47px;
+}
+
+.social-icon.reddit{
+    background-position: right -128px -96px;
+}
+
+.social-icon.reddit:hover{
+    background-position: right -176px -95px;
+}
+
+.social-icon.facebook{
+    background-position: right -128px right ;
+}
+
+.social-icon.facebook:hover{
+    background-position: right -176px 1px;
+}
+
+.social-icon.github{
+    background-position: right -127px -144px;
+}
+
+.social-icon.github:hover{
+    background-position: right -176px -143px;
+}
+
+.social-icon.gitlab{
+    background-position: right -128px -190px;
+}
+
+.social-icon.gitlab:hover{
+    background-position: right -176px -190px;
+}
+
+.hangouts .sequestions a{
+    margin: 0 0 1rem 0 ;
+}
+
+.hangouts .relays .btn-fixed{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contribute ol{
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+.carousel-control{
+    border-width: 5px 0 0 5px ;
+}
+
+.carousel-control-backward{
+    right: 0.8rem;
+    left: auto;
+}
+
+.carousel-control-forward{
+    left: 0.8rem;
+    right: auto;
+}
+
+.carousel h3{
+    text-align: right;
+}
+
+.faq .tab-answer{
+    margin: 0 1rem 1rem 1rem ;
+}
+
+.faq a.arrow-up{
+    left: 2rem;
+    right: auto;
+}
+
+.faq a.arrow-up i{
+    border-width: 0 0 3px 3px ;
+    right: 0.88rem;
+    left: auto;
+}
+
+.tab .anchor{
+    right: -2rem;
+    left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+label.accordion{
+    padding: 1.3rem 0 1.3rem 2rem ;
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+.tab-content p{
+    margin: 0 1rem 2rem 1rem ;
+}
+
+label.accordion::after{
+    margin-left: 0;
+    left: 0;
+    right: auto;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+[data-tooltip]:before{
+    right: 50%;
+    left: auto;
+    margin-right: -80px;
+    margin-left: auto;
+}
+
+[data-tooltip]:after{
+    right: 50%;
+    left: auto;
+    margin-right: -5px;
+    margin-left: auto;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
