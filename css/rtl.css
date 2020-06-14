@@ -11,12 +11,28 @@
     text-align: right;
 }
 
+.guides {
+    text-align: left;
+}
+
 h2#main-h2 {
     text-align: right;
 }
 
 .using h2 {
     text-align: right;
+}
+
+.about-monero {
+    direction: rtl;
+}
+
+.moneropedia {
+    text-align: left;
+}
+
+.roadmap {
+    text-align: left;
 }
 
 .footer-wrapper {
