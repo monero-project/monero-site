@@ -1,0 +1,40 @@
+.nav-items {
+    direction: rtl;
+}
+
+.white-nav .nav-item .dropdown-content {
+	direction: rtl;
+	text-align: right;
+}
+
+.site-wrap {
+    text-align: right;
+}
+
+.guides {
+    text-align: left;
+}
+
+h2#main-h2 {
+    text-align: right;
+}
+
+.using h2 {
+    text-align: right;
+}
+
+.about-monero {
+    direction: rtl;
+}
+
+.moneropedia {
+    text-align: left;
+}
+
+.roadmap {
+    text-align: left;
+}
+
+.footer-wrapper {
+	direction: rtl;
+}
