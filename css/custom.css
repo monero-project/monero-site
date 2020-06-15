@@ -1191,6 +1191,10 @@ label.upgrade-x:after {
   transform: rotate(-45deg);
 }
 
+ul.logo {
+  list-style-image: url('/img/logo-list.svg');
+}
+
 @media only screen and (max-width: 75rem) {
 
 .upgrade-content p {
