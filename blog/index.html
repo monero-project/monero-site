@@ -39,7 +39,10 @@ title: titles.blogbytag
     <div class="row">
       <!-- Full block-->
         <div class="info-block">
-          <h2>{% t blog.allposts %}</h2>
+          <div class="feed">
+            <a href="/feed.atom"><span class="feed-pic"></span></a>
+            <h2>{% t blog.allposts %}</h2>
+          </div>
           {% for post in paginator.posts %}
           <div class="post-lead">
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

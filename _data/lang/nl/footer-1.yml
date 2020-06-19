@@ -11,7 +11,7 @@
   - name: Bibliotheek
     url: library
   - name: RSS-kanaal
-    url: https://getmonero.org/feed.xml
+    url: feed.atom
 - title: IRC-kanalen
   subfolderitems:
   - name: monero
