@@ -385,6 +385,8 @@ faq:
   qantivirus: Why is my antivirus/firewall flagging the Monero software i just downloaded as malware?
   aantivirus: After you have downloaded the Monero software (GUI and CLI alike), your antivirus or firewall may flag the executables as malware. Some antiviruses only warn you about the possible menace, others go as far as silently removing your downloaded wallet/daemon. This likely happens because of the integrated miner, which is used for mining and for @block verification. Some antiviruses may erroneously consider the miner as dangerous software and act to remove it.
   aantivirus1: The problem is being discussed and solutions are being elaborated. In the meantime, if you get a warning from your antivirus, make sure the software you downloaded is legitimate (see the guides linked below), then add an exception for it in your antivirus, so that it won't get removed or blocked. If you need assistance, feel free to contact the community.
+  qmoneromeaning: "Why is Monero called 'Monero'?"
+  amoneromeaning: "Monero is an Esperanto word which means 'coin'. Initially Monero was called 'Bitmonero', which translates to 'Bitcoin' in Esperanto. After the community decided to fork from the original maintainer, 'bit' was dropped in favour of simply 'Monero'."
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
