@@ -30,6 +30,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-magic">{% t faq.q13 %}</a></li>
                         <li><a href="#anchor-anonymous">{% t faq.q14 %}</a></li>
                         <li><a href="#antivirus">{% t faq.qantivirus %}</a></li>
+                        <li><a href="#monero-meaning">{% t faq.qmoneromeaning %}</a></li>
                     </ul>
                     <li class="category">{% t faq.advanced %}</li>
                     <ul class="logo">
@@ -154,6 +155,12 @@ permalink: /get-started/faq/index.html
                         <p>{% t faq.aantivirus %}</p>
                         <p>{% t faq.aantivirus1 %}</p>
                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a>, <a href="{{ site.baseurl }}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a></p>
+                    </div>
+                </div>
+                <div class="tab" id="monero-meaning">
+                    <h3><a class="anchor" href="#monero-meaning"></a>{% t faq.qmoneromeaning %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.amoneromeaning %}</p>
                     </div>
                 </div>
                 <div class="row center-xs">
