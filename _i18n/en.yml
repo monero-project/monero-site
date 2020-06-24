@@ -516,6 +516,112 @@ roadmap:
   upcoming: Upcoming task
   future: Future
 
+  jan: January
+  feb: February
+  mar: March
+  apr: April
+  may: May
+  jun: June
+  jul: July
+  aug: August
+  sep: September
+  oct: October
+  nov: November
+  dec: December
+  comingsoon: Coming Soon
+
+  launched: Launched on Bitcointalk
+  renamed: Renamed from Bitmonero to Monero
+  recovered: Recovered from a spam attack
+  paper1-2: Monero Research Lab Papers 1 and 2 published
+  paper3: Monero Research Lab Paper 3 published
+  released-0-8-8-6: 0.8.8.6 released
+
+  paper4: Monero Research Lab Paper 4 published
+
+  released-0-9-0: 0.9.0 Hydrogen Helix released
+  paper5: Monero Research Lab Paper 5 published
+  ringsize-3: Network Upgrade to require minimum ringsize of 3 on all transactions
+  released-0-10-0: 0.10.0 Wolfram Warptangent released
+  splitcoinbase: Network Upgrade to split coinbase into denominations
+  released-0-10-1: 0.10.1 Wolfram Warptangent released
+  guibeta1: Official GUI Beta 1 released
+
+  enableringct: Network Upgrade to enable RingCT transactions
+  released-0-10-2: 0.10.2 released; critical vulnerability patched
+  released-0-10-3-1: 0.10.3.1 Wolfram Warptangent released
+  hfminblock: Network Upgrade to adjust minimum blocksize and dynamic fee algorithm
+  webredesign: Website redesigned
+  released-0-11-0: 0.11.0.0 Helium Hydra released
+  fluffyblocks: Fluffy blocks
+  guioutbeta: GUI out of beta
+  minringsize5: Network Upgrade to increase minimum ringsize to 5 and require RingCT transactions
+  releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra released
+  zeromq: 0MQ/ZeroMQ
+  subaddress: Subaddresses
+  paper6: Monero Research Lab Paper 6 published
+  release-0-11-1: 0.11.1.0 Helium Hydra released
+  releasedgui-0-11-1: GUI 0.11.1.0 Helium Hydra released
+  multisig: Multi-signatures (multisig)
+
+  released-0-12-0: 0.12.0.0 Lithium Luna released
+  releasedgui-0-12-0: GUI 0.12.0.0 Lithium Luna released
+  cryptonightv2: New Proof of Work CryptoNightV2
+  hfring7: Network upgrade to increase minimal ringsize to 7, integrate multisig, subaddresses, and change PoW algo
+  getmonero-fr-pl: Getmonero.org Localization in French and Polish
+  released-0-12-1: 0.12.1.0 Lithium Luna released
+  ledger: Ledger Hardware Wallets Support
+  released-0-12-2: 0.12.2.0 Lithium Luna released
+  released-0-12-3: 0.12.3.0 Lithium Luna released
+  releasedgui-0-12-3: GUI 0.12.3.0 Lithium Luna released
+  kovrialpha: Kovri alpha release
+  moneropedialoc: Getmonero.org Moneropedia open for Localization
+  getmonero-ar: Getmonero.org Localization in Arabic
+  released-0-13-0-2: 0.13.0.2 Beryllium Bullet released
+  releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet released
+  cryptonightv3: New Proof of Work CryptoNightV3
+  bulletproofs: Implementation of Bulletproofs to reduce transaction sizes
+  ringsize11: Network upgrade to increase minimal ringsize to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
+  released-0-13-0-4: 0.13.0.4 Beryllium Bullet released
+  paper8-9: Monero Research Lab Papers 8 and 9 published
+  releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet released
+  paper7: Monero Research Lab Paper 7 published
+  paper10: Monero Research Lab Paper 10 published
+  mms: Implementation of Monero Messaging System (MMS) to automate multisig wallets information exchange
+
+  getmonero-de: Getmonero.org Localization in German
+  released-0-14-0: 0.14.0.0 Boron Butterfly released
+  releasedgui-0-14-0: GUI 0.14.0.0 Boron Butterfly released
+  ccs: New Community Crowdfunding System (CCS) to replace the Forum Funding System (FFS)
+  released-0-14-0-2: 0.14.0.2 Boron Butterfly released
+  cryptonightr: New Proof of Work CryptoNightR
+  getmonero-pt_br: Getmonero.org Localization in Brazilian-Portuguese and Dutch
+  dlsag: "DLSAG: Non-Interactive Refund Transactions For Interoperable Payment Channels in Monero"
+  pruning: Blockchain pruning
+  trezort: Trezor model T support
+  nanox: Ledger Nano X support
+  tori2p: Tor & I2P CLI wallet integration
+  multisigms: Multisig Messaging System
+  weblate: "Localization platform change: from Pootle to Weblate"
+  rpcpay: Pay for service system using mining (RPC-Pay)
+  ipv6: IPv6 support
+  removedpid: Standalone (long) payment ID support removed
+  nodediscovery: GUI automatic remote nodes discovering and switching option
+  randomx: New Proof of Work RandomX
+
+  getmoneroweblate: Getmonero translatable on Weblate
+  releasedgui-0-15-0-4: GUI 0.15.0.4 released
+  released-0-15-0-5: CLI 0.15.0.5 released
+  dandelion: Implementation of the Dandelion++ protocol 
+  onionaddress: Onion address for Getmonero.org
+  supercop: Wallet scanning speedups (support for supercop ASM)
+  clsag: Concise linkable spontaneous anonymous group (CLSAG) signatures
+  tryptych: "Triptych: logarithmic-sized linkable ring signatures with applications"
+  kastelo: "Kastelo: open source hardware wallet"
+  layer2: Second-layer solutions for speed and scalability
+  
+  returnaddr: Return addresses
+
 
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.

@@ -444,6 +444,112 @@ roadmap:
   upcoming: 计划实现的目标
   future: 未来
 
+  jan: 
+  feb: 
+  mar: 
+  apr: 
+  may: 
+  jun: 
+  jul: 
+  aug: 
+  sep: 
+  oct: 
+  nov: 
+  dec: 
+  comingsoon:
+  
+  launched:
+  renamed:
+  recovered:
+  paper1-2:
+  paper3:
+  released-0-8-8-6:
+  
+  paper4:
+  
+  released-0-9-0:
+  paper5:
+  ringsize-3:
+  released-0-10-0:
+  splitcoinbase:
+  released-0-10-1:
+  guibeta1:
+  
+  enableringct:
+  released-0-10-2:
+  released-0-10-3-1:
+  hfminblock:
+  webredesign: 
+  released-0-11-0: 
+  fluffyblocks:
+  guioutbeta: 
+  minringsize5:
+  releasedgui-0-11-0: 
+  zeromq: 
+  subaddress: 
+  paper6: 
+  release-0-11-1: 
+  releasedgui-0-11-1:
+  multisig: 
+  
+  released-0-12-0: 
+  releasedgui-0-12-0: 
+  cryptonightv2: 
+  hfring7: 
+  getmonero-fr-pl: 
+  released-0-12-1: 
+  ledger: 
+  released-0-12-2:
+  released-0-12-3: 
+  releasedgui-0-12-3:
+  kovrialpha: 
+  moneropedialoc: 
+  getmonero-ar: 
+  released-0-13-0-2:
+  releasedgui-0-13-3:
+  cryptonightv3: 
+  bulletproofs:
+  ringsize11: 
+  released-0-13-0-4: 
+  paper8-9: 
+  releasedgui-0-13-0-4: 
+  paper7:
+  paper10:
+  mms: 
+  
+  getmonero-de:
+  released-0-14-0: 
+  releasedgui-0-14-0: 
+  ccs: 
+  released-0-14-0-2: 
+  cryptonightr: 
+  getmonero-pt_br: 
+  dlsag: 
+  pruning: 
+  trezort: 
+  nanox: 
+  tori2p: 
+  multisigms: 
+  weblate:
+  rpcpay: 
+  ipv6: 
+  removedpid: 
+  nodediscovery: 
+  randomx:
+  
+  getmoneroweblate:
+  releasedgui-0-15-0-4: 
+  released-0-15-0-5: 
+  dandelion:
+  onionaddress: 
+  supercop: 
+  clsag: 
+  tryptych: 
+  kastelo:
+  layer2:
+  
+  returnaddr: 
+
 
 research-lab:
   intro: 门罗不仅致力于创造可互换性的货币，而且还致力于研究金融隐私领域，因为它也涉及加密货币。您可以在下面找到我们自己的门罗研究组的工作，以后还会有更多论文。

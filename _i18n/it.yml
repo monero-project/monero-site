@@ -444,6 +444,112 @@ roadmap:
   ongoing: Task in corso
   upcoming: Task in arrivo
   future: Futuro
+ 
+  jan: 
+  feb: 
+  mar: 
+  apr: 
+  may: 
+  jun: 
+  jul: 
+  aug: 
+  sep: 
+  oct: 
+  nov: 
+  dec: 
+  comingsoon: 
+
+  launched: Annuncio su Bitcointalk
+  renamed: Rinominato da Bitmonero a Monero
+  recovered: Recupero dopo un attacco spam
+  paper1-2: Il Monero Research Lab pubblica i Paper 1 e 2
+  paper3: Il Monero Research Lab pubblica il Paper 3
+  released-0-8-8-6: 0.8.8.6 rilasciata
+
+  paper4: Il Monero Research Lab pubblica il Paper 4
+
+  released-0-9-0: 0.9.0 Hydrogen Helix rilasciata
+  paper5: Il Monero Research Lab pubblica il Paper 5
+  ringsize-3: Aggiornamento della rete per richiedere un ringsize minimo di 3 per tutte le transazioni
+  released-0-10-0: 0.10.0 Wolfram Warptangent rilasciata
+  splitcoinbase: Aggiornamento della rete per dividere coinbase in denominazioni
+  released-0-10-1: 0.10.1 Wolfram Warptangent rilasciata
+  guibeta1: GUI Beta 1 ufficialmente rilasciata
+
+  enableringct: Aggiornamento della rete per abilitare transazioni RingCT
+  released-0-10-2: 0.10.2 rilasciata; vulnerabilità critica patchata
+  released-0-10-3-1: 0.10.3.1 Wolfram Warptangent rilasciata
+  hfminblock: Aggiornamento della rete per sistemare la dimensione minima di blocco e l'algoritmo per le commissioni dinamiche
+  webredesign: Sito web ridisegnato
+  released-0-11-0: 0.11.0.0 Helium Hydra rilasciata
+  fluffyblocks: Fluffy blocks
+  guioutbeta: GUI non più in beta
+  minringsize5: Aggiornamento della rete per incrementare il ringsize minimo a 5 e richiedere l'uso di transazioni RingCT
+  releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra rilasciata
+  zeromq: 0MQ/ZeroMQ
+  subaddress: Sottoindirizzi
+  paper6: Il Monero Research Lab pubblica il Paper 6
+  release-0-11-1: 0.11.1.0 Helium Hydra rilasciata
+  releasedgui-0-11-1: GUI 0.11.1.0 Helium Hydra rilasciata
+  multisig: Multifirma (multisig)
+
+  released-0-12-0: 0.12.0.0 Lithium Luna rilasciata
+  releasedgui-0-12-0: GUI 0.12.0.0 Lithium Luna rilasciata
+  cryptonightv2: Nuovo Proof of Work (PoW) CryptoNightV2
+  hfring7: Aggiornamento della rete per portare il ringsize minimo a 7, integrare multifirma, sottoindirizzi e modificare l'algoritmo PoW
+  getmonero-fr-pl: Localizzazione Getmonero.org in Francese e Polacco
+  released-0-12-1: 0.12.1.0 Lithium Luna rilasciata
+  ledger: Supporto per portafoglio hardware Ledger
+  released-0-12-2: 0.12.2.0 Lithium Luna rilasciata
+  released-0-12-3: 0.12.3.0 Lithium Luna rilasciata
+  releasedgui-0-12-3: GUI 0.12.3.0 Lithium Luna rilasciata
+  kovrialpha: Versione alpha di Kovri rilasciata
+  moneropedialoc: Getmonero.org Moneropedia pronta per localizzazione
+  getmonero-ar: Localizzazione Getmonero.org in Arabo
+  released-0-13-0-2: 0.13.0.2 Beryllium Bullet rilasciata
+  releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet rilasciata
+  cryptonightv3: Nuovo Proof of Work CryptoNightV3
+  bulletproofs: Implementazione dei BulletProof - Riduzione della dimensione delle transazioni
+  ringsize11: Aggiornamento della rete per portare il ringsize minimo ad 11, integrare Bulletproof, aggiornare l'algoritmo di calcolo delle commissioni e modificare l'algoritmo PoW
+  released-0-13-0-4: 0.13.0.4 Beryllium Bullet rilasciata
+  paper8-9: Il Monero Research Lab pubblica i Paper 8 e 9
+  releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet rilasciata
+  paper7: Il Monero Research Lab pubblica il Paper 7
+  paper10: Il Monero Research Lab pubblica il Paper 10
+  mms: Implementazione del Sistema di Messaggistica Monero (MMS) per automatizzare lo scambio di informazioni fra portafogli multifirma
+
+  getmonero-de: Localizzazione Getmonero.org in Tedesco
+  released-0-14-0: 0.14.0.0 Boron Butterfly rilasciata
+  releasedgui-0-14-0: GUI 0.14.0.0 Boron Butterfly rilasciata
+  ccs: Nuovo Community Crowdfunding System (CCS) sostituisce il Forum Funding System (FFS)
+  released-0-14-0-2: 0.14.0.2 Boron Butterfly rilasciata
+  cryptonightr: Nuovo Proof of Work CryptoNightR
+  getmonero-pt_br: Localizzazion Getmonero.org in Portoghese Brasiliano e Olandese
+  dlsag: 
+  pruning: 
+  trezort: 
+  nanox: 
+  tori2p: 
+  multisigms: 
+  weblate: 
+  rpcpay: 
+  ipv6: 
+  removedpid: 
+  nodediscovery: 
+  randomx: 
+
+  getmoneroweblate: 
+  releasedgui-0-15-0-4: 
+  released-0-15-0-5: 
+  dandelion: 
+  onionaddress: 
+  supercop: 
+  clsag: 
+  tryptych: 
+  kastelo: 
+  layer2: 
+  
+  returnaddr: 
 
 
 research-lab:
