@@ -2,8 +2,6 @@
   subfolderitems:
   - page: Monero Nedir?
     url: get-started/what-is-monero
-  - page: Kullanımı
-    url: get-started/using
   - page: Kabulü
     url: get-started/accepting
   - page: Katkıda Bulunulması

@@ -2,8 +2,6 @@
   subfolderitems:
   - page: Qu'est-ce que Monero ?
     url: get-started/what-is-monero
-  - page: Utiliser
-    url: get-started/using
   - page: Accepter
     url: get-started/accepting
   - page: Contribuer

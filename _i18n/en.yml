@@ -54,36 +54,33 @@ index:
 home:
   heading2: A Private Digital Currency
   monero_is_cash: Monero is cash for a connected world. It’s fast, private, and secure. With Monero, you are your own bank. You can spend safely, knowing that others cannot see your balances or track your activity.
+  whatis: Learn more about Monero
   get_started: Get Started
-  why_monero_is_different: Why Monero is different
-  monero_is_secure: Monero is secure
-  monero_is_secure_para: Monero is a decentralized cryptocurrency, meaning it is secure digital cash operated by a network of users. Transactions are confirmed by distributed consensus and then immutably recorded on the blockchain. Third-parties do not need to be trusted to keep your Monero safe.
-  monero_is_private: Monero is private
-  monero_is_private_para: Monero uses ring signatures, ring confidential transactions, and stealth addresses to obfuscate the origins, amounts, and destinations of all transactions. Monero provides all the benefits of a decentralized cryptocurrency, without any of the typical privacy concessions.
-  monero_is_untraceable: Monero is untraceable
-  monero_is_untraceable_para: Sending and receiving addresses as well as transacted amounts are obfuscated by default. Transactions on the Monero blockchain cannot be linked to a particular user or real-world identity.
-  monero_is_fungible: Monero is fungible
-  monero_is_fungible_para1: Monero is
-  monero_is_fungible_para2: fungible
-  monero_is_fungible_para3: because it is private by default. Units of Monero cannot be blacklisted by vendors or exchanges due to their association in previous transactions.
+  choosewallet: Choose a Wallet
+  choosewallet_para: To use Monero, the first thing you are going to need is a wallet. Visit our Downloads page and get the right wallet for you. The Monero wallets are available for a variety of platforms and contain everything you need to use Monero immediately.
   downloads: Downloads
-  downloads_windows: Monero for Windows
-  downloads_mac: Monero for Mac
-  downloads_linux: Monero for Linux
-  downloads_blockchain: Latest Blockchain
-  different_system: Need it for a different operating system?
-  view_all_downloads: View all available downloads here.
-  latest_news: Latest News
-  more_news: More news
-  moneropedia: Moneropedia
+  getcoins: Get Some Coins
+  getcoins_para: After you install a wallet, you need to get some Monero. There are multiple ways to acquire some coins to spend, like mining or working in exchange for Monero, but the easiest way is to use an exchange and convert your fiat money into XMR. many exchanges, centralized and decentralized, list Monero (XMR).
+  exchanges: Exchanges
+  useit: "It's a Currency: Use It!"
+  useit_para: Monero is a currency and can be exchanged for goods and services, privately and with very low fees. Many entities will gladly accept XMR for payments; take a look at our list of merchants currently accepting Monero.
+  merchants: Merchants
+  answers: Find Answers to Your Questions
+  faq: FAQ
+  faq_para: We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community.
+  guides: Guides and Resources
+  guides_para: >
+    The community has put together a vast amount of resources and documentation. Users can find useful info and guides about common configurations and 
+    tips in the 'User Guides' section. Developers can find everything they need to build a service based on Monero or simply communicate with the network 
+    in the 'Developer Guides'. The Library offers publications and books downloadable for free, including the full 'Mastering Monero' and 'Zero to Monero' books.
   moneropedia_para: Would you like to look up the meanings of the terms and concepts used in Monero? Here you will find an alphabetical guide to terms and their meanings from both the Monero and Kovri projects.
   moneropedia_button: Read Moneropedia
-  user_guides: User Guides
-  user_guides_para: Step-by-step guides to all things Monero are separated by category and cover everything from creating a wallet to supporting the network, and even how to edit this website.
-  user_guides_button: Read user guides
-  faq: FAQ
-  faq_para: We've heard a lot of questions over the years and have compiled, for your convenience, a thorough and varied FAQ. Don't worry, if your questions are not on here, you can always ask the community.
-  faq_button: Read answers
+  joincommunity: Join the Community
+  contributecommunity: "We Need Your Skills: Contribute!"
+  contributecommunity_para: Monero is not simply a currency, it's a decentralized community and exists only thanks to the hundred of volunteers that dedicate their time to the project. Join us!
+  researchlab_para: The MRL (Monero Research Lab) is a very important part of Monero. Researchers and cryptographers from all over the world meet to find new ways to improve Monero. Read their papers and join them!
+  visitmrl: Visit the MRL
+  contributing: Contributing
 
 hangouts:
   intro: The Monero community is diverse and varied. We come from all over, but we definitely have some places we like to hang out together. You'll find most of them below. Join us!
@@ -397,40 +394,6 @@ mining:
   benchmarking_para2: for a listing of GPUs/CPUs and their respective hashrates.
   software: Mining Software
   software_para: Note that some miners may have developer fees.
-
-using:
-  intro: Transacting with Monero can be made easy. This page is designed to guide users in that process.
-  learn: 1. Learn
-  learn_para1: Monero is a secure, private, and untraceable cryptocurrency. The developers and community are committed to protecting these values. Learn more by reading the
-  learn_para2: What is Monero
-  learn_para3: page. The
-  learn_para4: source code
-  learn_para5: is also available for review and discussion.
-  support: 2. Request Support
-  support_para1: There is a large and supportive community that will assist if you experience any difficulty. See the
-  support_para2: Hangouts
-  support_para3: page for more information.
-  generate: 3. Generate a Wallet
-  generate_para1: A Monero wallet is required to secure your own funds. See the
-  generate_para2: Downloads page
-  generate_para3: for a listing of available wallets.
-  generate_para4: The easiest way to run a Monero node, without affecting your home bandwidth, is to purchase a VPS (Virtual Private Server). We strongly recommend
-  generate_para5: using the
-  generate_para6: coupon code to get a discount over and above their already cheap $6/month VPS. Using this coupon code and/or
-  generate_para7: our affiliate link
-  generate_para8: will also assist in the ongoing funding of Monero development.
-  acquire: 4. Acquire Monero
-  acquire_para1: Monero may be purchased on an
-  acquire_para2: exchange
-  acquire_para3: with fiat or other cryptocurrencies. An alternate way of acquiring Monero is via
-  acquire_para4: mining,
-  acquire_para5: the computationally-complex process whereby transactions are immutably recorded on the blockchain.
-  send-receive: 5. Send and Receive Monero
-  send-receive_para1: Learn how to send and receive Monero by viewing the
-  send-receive_para2: guide.
-  transact: 6. Transact with Monero
-  transact_para1: Monero may be used to purchase many goods and services. For a listing, see the
-  transact_para2: Merchants page.
 
 what-is-monero:
   need-to-know: What you need to know

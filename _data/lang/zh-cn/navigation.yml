@@ -2,8 +2,6 @@
   subfolderitems:
   - page: 什么是门罗币？
     url: get-started/what-is-monero
-  - page: 使用
-    url: get-started/using
   - page: 接收
     url: get-started/accepting
   - page: 贡献
