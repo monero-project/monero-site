@@ -190,6 +190,8 @@ author: YOUR NAME OR HANDLE HERE
 ---
 ```
 
+If you want to add a personalized picture to a blog post that will show as logo on social networks, add `image: /blog/assets/$FOLDER/$IMAGE` to the front matter. Where `$FOLDER` is the name of the folder you created to contain the image related to your blog post and `$IMAGE` is the name of the image.
+
 ### 3. Write
 After the front matter is finished you are free to write the remainder of your blog post in markdown.
 
