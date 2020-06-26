@@ -27,55 +27,55 @@ gui:
      
 
 cli:
-- version: "0.16.0.0 - Nitrogen Nebula"
+- version: "0.16.0.1 - Nitrogen Nebula"
   downloads:
    - platform: Windows 64-bit
-     hash: f2750efb65b70ae9cad64d977cb0bfbe4dc6d014fe0b7fd565002282d67d469d
+     hash: 851b57ec0783d191f0942232e431aedfbc2071125b1bd26af9356c7b357ab431
      link: https://downloads.getmonero.org/cli/win64
      icon: icon-windows
      vers: 
    - platform: Windows 32-bit
-     hash: b1fc293dd9c12f90c7c343777298e86a22f25788561629b92ec0b23eb6cfb42c
+     hash: e944d15b98fcf01e54badb9e2d22bae4cd8a28eda72c3504a8156ee30aac6b0f
      link: https://downloads.getmonero.org/cli/win32
      icon: icon-windows
      vers:
    - platform: Mac OS X 64-bit
-     hash: 8e9382cc509751765ed9601f6ac9d37cdb9e94dd5e541312545430e6617c6850
+     hash: d226c704042ff4892a7a96bb508b80590a40173683101db6ad3a3a9e20604334
      link: https://downloads.getmonero.org/cli/mac64
      icon: icon-apple
      vers:
    - platform: Linux 64-bit
-     hash: e507943b46e9d7c9ccdb641dcccb9d8205dd9de660a0ab5566dac5423f8b95e2
+     hash: 4615b9326b9f57565193f5bfe092c05f7609afdc37c76def81ee7d324cb07f35
      link: https://downloads.getmonero.org/cli/linux64
      icon: icon-linux
      vers: 
    - platform: Linux 32-bit
-     hash: 1c08139550bbbbe1844cf48b6b1d60385be70072841fcbe5e0614fa628a23604
+     hash: 3e4524694a56404887f8d7fedc49d5e148cbf15498d3ee18e5df6338a86a4f68
      link: https://downloads.getmonero.org/cli/linux6432
      icon: icon-linux
      vers:
    - platform: Linux ARMv8
-     hash: 76afab3670df104d392048f52fde92dc611342ca0780690e7e042f1371828acb
+     hash: 83c21fe8bb5943c4a4c77af90980a9c3956eea96426b4dea89fe85792cc1f032
      link: https://downloads.getmonero.org/cli/linuxarm8
      icon: icon-linux
      vers:
    - platform: Linux ARMv7
-     hash: 8aad622b0e562b610b69bc0ed0fab98bc7bfc77352151b9259ef5c8cab9338d0
+     hash: 962f30701ef63a133a62ada24066a49a2211cd171111828e11f7028217a492ad
      link: https://downloads.getmonero.org/cli/linuxarm7
      icon: icon-linux
      vers:
    - platform: Android ARMv8
-     hash: 06c352fd73307f2757c003eb295152715ef2003323db6367d72b258e512f6cbc
+     hash: d9e885b3b896219580195fa4c9a462eeaf7e9f7a6c8fdfae209815682ab9ed8a
      link: https://downloads.getmonero.org/cli/androidarmv8
      icon: icon-android
      vers:
    - platform: Android ARMv7
-     hash: c3f9f41b3fd3c8859d952ac95d9b5ab2cc9ad541a868edf6e9100afff5d4dd7f
+     hash: 8e3ce10997ab50eec2ec3959846d61b1eb3cb61b583c9f0f9f5cc06f63aaed14
      link: https://downloads.getmonero.org/cli/androidarmv7
      icon: icon-android
      vers:
    - platform: FreeBSD 64-bit
-     hash: 56e68d171d93e2bcea5a7e8eb7f410fcb8fb811c69b6a4f2fad0e15c0a48f6db
+     hash: 4f4a2c761b3255027697cd57455f5e8393d036f225f64f0e2eff73b82b393b50
      link: https://downloads.getmonero.org/cli/freebsd64
      icon: icon-freebsd
      vers:
