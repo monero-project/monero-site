@@ -1,50 +1,34 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Wallet
+## Кошелёк
 
-Before starting, you already need to have a wallet configured and
-working. The pool needs to know your wallet address to be able to send
-payments there. See the [Accepting Monero guide]({{ site.baseurl
-}}/get-started/accepting) for more information.
+Перед тем как начать, вам необходимо иметь уже сконфигурированный и готовый к работе кошелёк. Пулу нужно знать адрес вашего кошелька, чтобы он смог направлять на него платежи. Дополнительную информацию можно найти в [Руководстве по приёму Monero]({{ site.baseurl}}/get-started/accepting)
 
-## Profitability
+## Прибыльность
 
-Before mining, you should decide if it is worth it or not for you. You
-have to decide this for yourself, based on your power costs and the
-hardware that you have available. There are many sites, such as
-[CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr)
-that allow you to enter your miner's speed and power draw, and it will
-show you the profit (or loss) per week/month.
+Перед тем как начать майнинг, вы должны решить, стоит ли вам вообще этим заниматься. Решение необходимо принять, исходя из ваших затрат на электроэнергию и доступного вам оборудования. Существует множество сайтов, таких как [CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr), которые позволяют ввести значения параметров скорости и мощности вашего майнера и на основе этих данных вычисляют возможную прибыль (или убыток) за неделю/месяц.
 
-## Download Miner
+## Скачивание майнера
 
-The first step is to download mining software onto your computer.
+Первым шагом является скачивание на ваш компьютер программного обеспечения, необходимого для майнинга.
 
 ### Windows
 
-The XMRig developer provides pre-built binaries for Windows
-users. They are available on the [GitHub release
-page](https://github.com/xmrig/xmrig/releases/latest).
+Разработчик XMRig предоставляет готовые двоичные файлы, которые потребуются пользователям Windows. Их можно скачать со [страницы релизов на GitHub](https://github.com/xmrig/xmrig/releases/latest).
 
-Scroll down until you see `xmrig-VERSION-msvc-win64.zip`. Download
-this file and extract the archive somewhere memorable, like your desktop.
+Там вы сможете найти архив `xmrig-VERSION-msvc-win64.zip`. Скачайте этот файл и извлеките его содержимое в какое-нибудь место, например, на рабочий стол.
 
 ### Ubuntu Linux
 
-The XMRig developer provides pre-built binaries for Ubuntu Xenial
-Xerus (16.04). They may work on other Ubuntu versions, and on other
-distributions, but this is not guaranteed.
+Разработчик XMRig предоставляет готовые двоичные файлы для Ubuntu Xenial Xerus (16.04). Они могут работать и с другими версиями Ubuntu, и с другими дистрибутивами, но это не гарантируется.
 
-These binaries are available on the [GitHub release
-page](https://github.com/xmrig/xmrig/releases/latest).
+Эти двоичные файлы также можно скачать на [странице релизов на GitHub](https://github.com/xmrig/xmrig/releases/latest).
 
-Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download
-this file, extract the archive somewhere memorable, like your desktop.
+На ней выложен соответствующий архив `xmrig-VERSION-xenial-x64.tar.gz`. Скачайте этот файл и извлеките его содержимое в какое-нибудь место, например, на рабочий стол.
 
-### Other Linux
+### Другие дистрибутивы Linux
 
-Users of other Linux distributions can compile XMRig from
-source. Firstly, install the dependencies:
+Пользователи других дистрибутивов Linux могут скомпилировать XMRig из исходного кода. Во-первых, следует установить зависимости:
 
 ```
 # For Debian-based distros
@@ -57,32 +41,32 @@ sudo apt install \
 	libuv1-dev
 ```
 
-Download the XMRig source code:
+Скачивание исходного кода XMRig:
 
 ```
 git clone https://github.com/xmrig/xmrig.git
 cd xmrig
 ```
 
-Configure and compile XMRig:
+Конфигурирование и компиляция XMRig:
 
 ```
 cmake -Bbuild
 make -Cbuild -j$(nproc)
 ```
 
-Copy binary and example configuration to your home directory:
+Затем необходимо скопировать двоичный файл и пример конфигурации в свою домашнюю директорию:
 
 ```
 cp build/xmrig ~/
 cp src/config.json ~/
 ```
 
-### macOS Build
+### Сборка для macOS
 
-Firstly, install XCode and [Homebrew](https://brew.sh).
+Во-первых, следует установить XCode и [Homebrew](https://brew.sh).
 
-Use Homebrew to install dependencies:
+Homebrew используется для установки зависимостей:
 
 ```
 brew install \
@@ -93,50 +77,40 @@ brew install \
 	openssl
 ```
 
-Download XMRig sources:
+Скачивание исходного кода XMRig:
 
 ```
 git clone https://github.com/xmrig/xmrig.git
 cd xmrig
 ```
 
-Configure and compile XMRig:
+Конфигурирование и компиляция XMRig:
 
 ```
 cmake -Bbuild -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
 make -Cbuild -j$(nproc)
 ```
 
-Copy binary and example configuration to your home directory:
+Затем необходимо скопировать двоичный файл и пример конфигурации в свою домашнюю директорию:
 
 ```
 cp build/xmrig ~/
 cp src/config.json ~/
 ```
 
-## Selecting a pool
+## Выбор пула
 
-There are lots of pools to choose from. You can find a list at
-[miningpoolstats.stream/monero](https://miningpoolstats.stream/monero).
+Существует огромное количество пулов. Список пулов можно найти на [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero).
 
-Choosing a larger pool means that you will see more frequent (but
-smaller) payouts, but choosing a smaller pools helps keep the network
-decentralised. [Miners will not lose any revenue by mining on a
-smaller pool](https://redd.it/g6uh2l).
+Выбор большего пула означает, что вы будете получать более частые (но меньшие) выплаты, а выбор меньших пулов поможет обеспечить децентрализованность сети. [Майнеры не теряют доходность при работе в меньших пулах](https://redd.it/g6uh2l).
 
-## Configuring the miner
+## Конфигурирование майнера
 
-Navigate to your chosen pool's webpage and read their
-documentation. They should mention an address and port for you to
-enter into your miner. For example, `pool.xmr.pt:3333`.
+Необходимо перейти на веб-страницу выбранного пула и ознакомиться с их документацией. Там должен быть указан адрес и порт, которые следует использовать для подключения вашего майнера. Например, `pool.xmr.pt:3333`.
 
-Next, open up the config.json you copied or extracted earlier in your
-favourite text editor. Scroll down to the line that says
-`donate.v2.xmrig.com:3333` and change the text inside the quotes to
-the address of your pool. The line below should contain
-`YOUR_WALLET_ADDRESS`. Change that to your actual wallet address.
+Затем при помощи используемого вами текстового редактора необходимо открыть файл config.json, который был скопирован или извлечён ранее. Следует прокрутить вниз до строки, в которой будет написано `donate.v2.xmrig.com:3333`, и изменить текст в кавычках на адрес вашего пула. Строка ниже должна содержать `YOUR_WALLET_ADDRESS`. Следует изменить этот текст на фактический адрес вашего кошелька.
 
-After these modifications, your configuration should look something like this:
+После внесения этих изменений полученная конфигурация должна выглядеть примерно так:
 
 ```
 {
@@ -151,94 +125,69 @@ After these modifications, your configuration should look something like this:
 }
 ```
 
-## Starting the miner
+## Запуск майнера
 
-Windows users can double click on xmrig.exe. Users of other operating
-systems should `cd` into the directory that contains XMRig and then
-type `./xmrig` and press return.
+Пользователи Windows могут сделать это двойным кликом по файлу xmrig.exe. Пользователям других операционных систем следует воспользоваться командой `cd` и перейти в директорию, содержащую XMRig, затем ввести `./xmrig` и дождаться ответа на команду.
 
-If you see green messages saying that shares have been accepted,
-congratulations, everything is working!
+Если вы видите зелёные сообщения о том, что данные были приняты, поздравляем - всё работает!
 
-## Troubleshooting
+## Диагностика и устранение неисправностей
 
-### Anti-virus keeps removing XMRig
+### Антивирус удаляет XMRig
 
-Some anti-viruses flag XMRig as malware because it is often deployed
-to infected computers to mine without the owner's consent. As it is
-your computer and you are configuring the miner to mine for you, it is
-safe to add XMRig to your anti-virus whitelist.
+Некоторые антивирусы помечают XMRig как вредоносное программное обеспечение, поскольку XMRig часто устанавливается на заражённые компьютеры без согласия их владельцев в целях недобросовестного майнинга. Так как это ваш компьютер и вы настраиваете майнер для себя, можно уверенно добавить XMRig в список исключений вашего антивируса.
 
-### Cannot read/set MSR
+### Не удаётся прочитать/настроить MSR
 
-On some CPUs, XMRig tries to increase performance by disabling certain
-features like your CPU's instruction prefetcher. These operations
-require root/administrator, so try right clicking xmrig.exe and
-running it as administrator, or running `sudo ./xmrig` on other
+В случае с некоторыми CPU XMRig пытается повысить производительность, отключая определённые функции, такие как буфер предварительной выборки команд CPU. Для этих операций требуются права администратора, поэтому попробуйте правой кнопкой мыши кликнуть по файлу xmrig.exe и запустить его от имени администратора или же запустить `sudo ./xmrig` в других системах.
 systems.
 
-### Algo not known
+### Алгоритм не известен
 
-Find the line in config.json that says `algo: null` and change it to
-`algo: "rx/0"`. By default, XMRig expects the pool to tell it which
-hashing algorithm to use.
+Следует найти строку в config.json, в которой будет написано `algo: null`, и изменить текст на `algo: "rx/0"`. По умолчанию XMRig ожидает, что именно пул укажет ему, какой алгоритм использовать при майнинге.
 
-### Huge Pages 0%
+### Большие страницы не загружаются (0%)
 
-#### Allowing large pages on Windows
+#### Как разрешить загрузку больших страниц в Windows
 
-Taken from [the MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
+Взято из [MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
 
->1. On the Start menu, click Run. In the Open box, type gpedit.msc.
-2. On the Local Group Policy Editor console, expand Computer Configuration, and then expand Windows Settings.
-3. Expand Security Settings, and then expand Local Policies.
-4. Select the User Rights Assignment folder.
-5. The policies will be displayed in the details pane.
-6. In the pane, double-click Lock pages in memory.
-7. In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group.
-8. In the Select Users, Service Accounts, or Groups dialog box, add an account that you will run the miner on
-9. Reboot for change to take effect.
+>1. В меню Start (Запуск) выбрать Run (Запустить). В окошке Open (Открыть) набрать gpedit.msc.
+2. В консоли Local Group Policy Editor (Редактор локальной групповой политики) перейти в Computer Configuration (Конфигурация компьютера), а затем в Windows Settings (Конфигурация Windows).
+3. Перейти в Security Settings (Параметры безопасности), а затем в Local Policies (Локальные политики).
+4. Выбрать папку User Rights Assignment (Назначение прав пользователя).
+5. Политика будет отображаться в окошке подробной информации.
+6. В этом окошке двойным кликом выберите Lock pages in memory (Блокировка страниц в памяти).
+7. В диалоговом окне Local Security Setting — Lock pages in memory (Параметр локальной безопасности — Блокировка страниц в памяти) выберите Add User or Group (Добавить пользователя или группу).
+8. В диалоговом окне Select Users, Service Accounts, or Groups (Выбор: «Пользователи» или «Группы») добавить пользователя, под которым вы будете запускать майнер.
+9. Перезагрузите компьютер, чтобы изменения вступили в силу.
 
-You may also need to launch the miner as administrator.
+Также может понадобиться запустить майнер от имени администратора.
 
-#### Allowing large pages on Linux
+#### Как разрешить загрузку больших страниц в Linux
 
-Firstly stop the miner (if it's running), run the following commands to enable
-large pages and then start the miner as root:
+Сначала необходимо остановить майнер (если он работает) и ввести следующие команды, чтобы включить возможность загрузки больших страниц, а затем запустить майнер от имени root:
 
 	sudo sysctl -w vm.nr_hugepages=1168
 	sudo ./xmrig
 
-You may have to increase 1168 depending on how many NUMA nodes your
-CPU(s) have.
+Возможно, придётся увеличить значение 1168 в зависимости от того, сколько узлов NUMA поддерживает ваш CPU.
 
-#### Allowing large pages on macOS
+#### Как разрешить загрузку больших страниц в macOS
 
-Huge pages are not supported on macOS.
+Большие страницы не поддерживаются macOS.
 
-### Balance Not Increasing
+### Баланс не увеличивается
 
-Most pools are <abbr title="Pay Per Last N Shares">PPLNS</abbr> pools,
-which means that you only get paid when a miner on the pool finds a
-block. If the pool you are mining on is small, this can take a few
-days to weeks.
+Большинство пулов является <abbr title="Оплата за N последних шар">пулами PPLNS</abbr>, а это означает, что вам платят только тогда, когда майнер, находящийся в пуле, находит блок. Если пул, в котором вы занимаетесь майнингом, небольшой, то это может занять от нескольких дней до нескольких недель.
 
-Additionally, any blocks found must mature before they can be paid
-out. This takes 60 blocks (approx. 2 hours).
+Кроме того, все вычисленные блоки должны стать достаточно «зрелыми», прежде чем за них можно будет получить вознаграждение. На это уходит еще порядка 60 блоков (примерно 2 часа).
 
-## Getting Help
+## Помощь
 
-An active Monero mining community on Reddit is
-[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can
-also join [#monero-pools on
-freenode](https://webchat.freenode.net/?channel=#monero-pools).
+Активное майнинг-сообщество Monero на Reddit можно найти здесь: [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Вы также можете присоединиться к [#monero-pools на freenode](https://webchat.freenode.net/?channel=#monero-pools).
 
-## Going Futher
+## Дальнейшие действия
 
-* Consider using a subaddress just for mining, to prevent your address
-  being linked to different services.
-* [Consider using Tor to connect to the
-  pool](https://xmrig.com/docs/miner/tor) (or to a hidden service pool
-  like HashVault, RespectXMR and MoneroOcean). This hides mining
-  activity from your ISP, and prevents the pool from knowing who you
-  are.
+* Подумайте об использовании отдельного подадреса для майнинга, чтобы ваш основной адрес нельзя было связать с различными сервисами.
+* [Рассмотрите возможность использования Tor для подключения к пулу](https://xmrig.com/docs/miner/tor) (или к скрытым пулам, таким как HashVault, RespectXMR и MoneroOcean). Это позволит скрыть то, что вы занимаетесь майнингом, от вашего интернет-провайдера и не позволит самому пулу узнать, кто вы.

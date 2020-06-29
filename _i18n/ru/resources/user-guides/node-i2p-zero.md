@@ -1,21 +1,21 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Steps:
-1. Download the [Monero CLI]({{  site.baseurl }}/downloads/#cli).
-2. Download and unzip the latest (non-GUI) version of I2P-zero: https://github.com/i2p-zero/i2p-zero/releases
-3. Run I2P-zero by entering the i2p-zero unzipped directory and  typing: `router/bin/i2p-zero`
-4. (optional) Find out your randomly assigned I2P port by typing: `router/bin/tunnel-control.sh router.externalPort`. For privacy reasons, do not disclose this port number to other people. Tell your firewall to forward traffic through to this port so that your I2P node is publicly reachable. If you have no ability to allow incoming connections, everything will still work, but your I2P node will not be helping the I2P network as much as it could.
-5. Create a socks tunnel for outgoing I2P connections by typing: `router/bin/tunnel-control.sh socks.create 8060`
-6. Create a server tunnel for incoming I2P connections by typing: `router/bin/tunnel-control.sh server.create 127.0.0.1 8061`.
-7. The command above will result in an I2P address being printed to the command line, which will end with `.b32.i2p`. This is your new I2P address.
-8. Run monerod by typing the following, replacing `XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p` with your own I2P address that was printed from step 6: `monerod --tx-proxy i2p,127.0.0.1:8060 --add-peer core5hzivg4v5ttxbor4a3haja6dssksqsmiootlptnsrfsgwqqa.b32.i2p --add-peer dsc7fyzzultm7y6pmx2avu6tze3usc7d27nkbzs5qwuujplxcmzq.b32.i2p --add-peer sel36x6fibfzujwvt4hf5gxolz6kd3jpvbjqg6o3ud2xtionyl2q.b32.i2p --add-peer yht4tm2slhyue42zy5p2dn3sft2ffjjrpuy7oc2lpbhifcidml4q.b32.i2p --anonymous-inbound XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p,127.0.0.1:8061 --detach`
+## Шаги:
+1. Скачать [Monero CLI]({{  site.baseurl }}/downloads/#cli).
+2. Скачать и разархивировать последнюю версию I2P-zero (не для GUI): https://github.com/i2p-zero/i2p-zero/releases
+3. Запустить I2P-zero. Для этого войти в распакованную директорию I2P-zero и набрать: `router/bin/i2p-zero`
+4. (необязательно) Найти свой случайным образом назначенный порт I2P. Для этого набрать: `router/bin/tunnel-control.sh router.externalPort`. Из соображений приватности не следует сообщать номер этого порта другим людям. Настроить брандмауэр так, чтобы он переадресовывал трафик на этот порт и чтобы ваш I2P-узел был доступным. Если у вас нет возможности разрешить входящие соединения, всё равно всё будет работать, но ваш I2P-узел не будет помогать I2P-сети в той мере, в какой мог бы.
+5. Создать туннель SOCKS для исходящих I2P-соединений. Для этого набрать: `router/bin/tunnel-control.sh socks.create 8060`
+6. Создать туннель сервера для входящих I2P-соединений. Для этого набрать:`router/bin/tunnel-control.sh server.create 127.0.0.1 8061`.
+7. После ввода указанной выше команды I2P-адрес будет напечатан на командной строке с `.b32.i2p` в конце. Это ваш новый I2P-адрес.
+8. Запустить monerod, набрав следующее и заменив `XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p` на ваш собственный I2P-адрес, который был создан при выполнении шага 6: `monerod --tx-proxy i2p,127.0.0.1:8060 --add-peer core5hzivg4v5ttxbor4a3haja6dssksqsmiootlptnsrfsgwqqa.b32.i2p --add-peer dsc7fyzzultm7y6pmx2avu6tze3usc7d27nkbzs5qwuujplxcmzq.b32.i2p --add-peer sel36x6fibfzujwvt4hf5gxolz6kd3jpvbjqg6o3ud2xtionyl2q.b32.i2p --add-peer yht4tm2slhyue42zy5p2dn3sft2ffjjrpuy7oc2lpbhifcidml4q.b32.i2p --anonymous-inbound XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p,127.0.0.1:8061 --detach`
 
-That's it! Do not replace the dsc****.b32.i2p address with yours, only replace the XXXXXXX.b32.i2p one. The dsc****.b32.i2p is a seed node that will help you discover other I2P-accessible monero nodes.
+Готово! Не следует менять адрес dsc****.b32.i2p на ваш собственный. Заменяется только XXXXXXX.b32.i2p. dsc****.b32.i2p является сид-узлом, который поможет вам открыть другие доступные через I2P узлы Monero.
 
-## Setting up Linux services so that monerod and I2P-zero are automatically started
-If you are running Linux, it would be useful to set this all up to run automatically if the machine is ever rebooted. You can do this by creating systemd service files:
+## Настройка служб Linux для автоматического запуска monerod и I2P-zero
+Если вы работаете под Linux, было бы полезно настроить систему так, чтобы всё запускалось автоматически, на тот случай, если машина когда-либо будет перезагружена. Для этого необходимо создать файлы службы systemd:
 
-Note: take care to replace version numbers in the files below with the version numbers of monero and i2p-zero that you download. Also replace `<username>` and `<usergroup>` with your Linux user and group names (use `whoami` and `groups` commands if you don't know them).
+Примечание: следует позаботиться о замене номера версий в файлах, указанных ниже, на номера соответствующих загружаемых вами версий Monero и I2P-zero. Также необходимо заменить`<username>` и `<usergroup>` на используемые вами в Linux имя пользователя и имя пользовательской группы (при этом следует пользоваться командами `whoami` и `groups`, если вы их не знаете).
 
 ### /etc/systemd/system/i2pzero.service
 ````                                                
@@ -50,16 +50,16 @@ Group=<usergroup>
 WantedBy=multi-user.target
 ````
 
-After creating these two files, run:
+После создания этих двух файлов следует запустить:
 ````
 systemctl daemon-reload
 service i2pzero start
 service monerod start
 ````
 
-To see the output of these services, use `journalctl -u i2pzero` and `journalctl -u monerod`
+Чтобы увидеть, как работают эти службы, следует использовать команды `journalctl -u i2pzero` и `journalctl -u monerod`
 
-## Running your own seed node (mipseed)
-If you want to run your own seed node (known as a 'mipseed') to help other people discover I2P-accessible Monero nodes, follow instructions [in the i2p-zero repo](https://github.com/i2p-zero/i2p-zero/blob/master/mipseed.md).
+Запуск собственного сид-узла (mipseed)
+Если вы хотите запустить собственный сид-узел (известный как 'mipseed'), чтобы помочь другим людям находить доступные через I2P узлы Monero, воспользуйтесь инструкциям, расположенными [в репозитории I2P-zero](https://github.com/i2p-zero/i2p-zero/blob/master/mipseed.md).
 
-*The original version of this guide was originally uploaded on the [i2p-zero repository](https://github.com/i2p-zero/i2p-zero/blob/master/monerod-with-i2p-zero.md).*
+*Оригинальная версия этого руководства первоначально была загружена [в репозитории I2P-zero](https://github.com/i2p-zero/i2p-zero/blob/master/monerod-with-i2p-zero.md).*
