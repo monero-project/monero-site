@@ -27,7 +27,7 @@ permalink: /downloads/index.html
             <input id="check01" type="checkbox" name="menu"/>
             <label for="check01">{% t downloads.choose %}</label>
             <ul id="menu">
-              <li><<a href="#gui">{% t downloads.gui %}</a></li>
+              <li><a href="#gui">{% t downloads.gui %}</a></li>
               <li><a href="#cli">{% t downloads.cli %}</a></li>
               <li><a href="#blockchain">{% t downloads.blockchain %}</a></li>
               <li><a href="#hardware">{% t downloads.hardware %}</a></li>
