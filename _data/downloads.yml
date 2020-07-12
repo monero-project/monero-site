@@ -7,7 +7,7 @@ gui:
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: 9ff8c91268f8eb027bd26dcf53fda5e16cb482815a6d5b87921d96631a79f33f
+     hash: 6e0efb25d1f5c45a4527c66ad6f6c623c08590d7c21de5a611d8c2ff0e3fbb55
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
@@ -17,7 +17,7 @@ gui:
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: 6e0efb25d1f5c45a4527c66ad6f6c623c08590d7c21de5a611d8c2ff0e3fbb55
+     hash: 9ff8c91268f8eb027bd26dcf53fda5e16cb482815a6d5b87921d96631a79f33f
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
