@@ -51,7 +51,7 @@ cli:
      vers: 
    - platform: Linux 32-bit
      hash: 3e4524694a56404887f8d7fedc49d5e148cbf15498d3ee18e5df6338a86a4f68
-     link: https://downloads.getmonero.org/cli/linux6432
+     link: https://downloads.getmonero.org/cli/linux32
      icon: icon-linux
      vers:
    - platform: Linux ARMv8
@@ -66,12 +66,12 @@ cli:
      vers:
    - platform: Android ARMv8
      hash: d9e885b3b896219580195fa4c9a462eeaf7e9f7a6c8fdfae209815682ab9ed8a
-     link: https://downloads.getmonero.org/cli/androidarmv8
+     link: https://downloads.getmonero.org/cli/androidarm8
      icon: icon-android
      vers:
    - platform: Android ARMv7
      hash: 8e3ce10997ab50eec2ec3959846d61b1eb3cb61b583c9f0f9f5cc06f63aaed14
-     link: https://downloads.getmonero.org/cli/androidarmv7
+     link: https://downloads.getmonero.org/cli/androidarm7
      icon: icon-android
      vers:
    - platform: FreeBSD 64-bit
