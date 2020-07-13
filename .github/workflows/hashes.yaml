@@ -1,0 +1,50 @@
+---
+name: Validate Hashes
+on:
+  push:
+    paths:
+      - 'downloads/hashes.txt'
+      - '_data/downloads.yml'
+  pull_request:
+    paths:
+      - 'downloads/hashes.txt'
+      - '_data/downloads.yml'
+jobs:
+  validate-hashes:
+    name: Validate Hashes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y --no-install-recommends curl gpg jq python-pip
+          sudo pip install yq
+      - name: Verify hashes.txt signature
+        run: |         
+          gpg --recv-keys 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92
+          gpg --verify downloads/hashes.txt
+      - name: Download releases
+        run: |
+          for file in $(awk '/monero-/ {print $2}' downloads/hashes.txt); do
+              [ -f $file ] && continue
+              echo Downloading $file...
+              dir=cli
+              if [[ $file =~ gui ]]; then
+                  dir=gui
+              fi
+              url=https://dlsrc.getmonero.org/${dir}/${file}
+              curl -sLO $url
+          done
+      - name: Verify hashes.txt hashes
+        run: |
+          grep monero- downloads/hashes.txt | sha256sum -c
+      - name: Verify downloads.yml hashes
+        run: |
+          yq -r '.[] | .[0].downloads[] | "\(.link)|\(.hash)"' _data/downloads.yml | grep -v github |
+              while read line; do
+                  [ -z "$line" ] && continue
+                  url=$(echo $line | cut -d'|' -f1)
+                  hash=$(echo $line | cut -d'|' -f2)
+                  filename=$(curl -sLI $url | awk -F '/' '/^Location:/ {print $NF}' | tail -n1 | sed 's/\r//')
+                  echo "$hash  $filename" | sha256sum -c
+              done
