@@ -681,6 +681,7 @@ moneropedia:
     coinbase: Paratabanı İşlemi
     consensus: Uzlaşım
     cryptocurrency: Kriptopara
+    daemon: Daemon
     data-directory: Veri Rehberi
     denominations: Birimler
     destination: Varış Noktası

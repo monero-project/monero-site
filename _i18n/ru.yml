@@ -695,6 +695,7 @@ moneropedia:
     coinbase: Coinbase транзакция
     consensus: Консенсус
     cryptocurrency: Криптовалюта
+    daemon: Daemon
     data-directory: Директория данных
     denominations: Номиналы
     destination: Адрес назначения

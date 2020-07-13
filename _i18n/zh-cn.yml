@@ -679,6 +679,7 @@ moneropedia:
     coinbase: 区块奖励
     consensus: 共识
     cryptocurrency: 加密货币
+    daemon: Daemon
     data-directory: 数据目录
     denominations: 单位名称
     destination: 目的地

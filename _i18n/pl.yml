@@ -680,6 +680,7 @@ moneropedia:
     coinbase: Transakcja coinbase
     consensus: zgoda
     cryptocurrency: Kryptowaluta
+    daemon: Daemon
     data-directory: Katalog danych
     denominations: Nominał
     destination: Węzeł docelowy
