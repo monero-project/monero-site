@@ -74,10 +74,7 @@ permalink: /get-started/mining/index.html
                         <p><a href="https://github.com/xmrig/xmrig" target="_blank" rel="noreferrer noopener">XMRig</a></p>
                     </div>
                     <div class="row center-xs">
-                        <p><a href="https://github.com/xmrig/xmrig-amd" target="_blank" rel="noreferrer noopener">XMRig AMD</a></p>
-                    </div>
-                    <div class="row center-xs">
-                        <p><a href="https://github.com/xmrig/xmrig-nvidia" target="_blank" rel="noreferrer noopener">XMRig NVIDIA</a></p>
+                        <p><a href="https://github.com/xmrig/xmrig-cuda" target="_blank" rel="noreferrer noopener">XMRig NVIDIA CUDA plugin</a></p>
                     </div>
                 </div>
             </div>
