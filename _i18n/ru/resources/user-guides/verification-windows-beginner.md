@@ -6,8 +6,6 @@
 
 Это руководство предназначено для новичков, использующих операционную систему Windows, и предполагает использование GUI. Руководство описывает процесс установки необходимого программного обеспечения, импорта подписывающих ключей, скачивания необходимых файлов и, наконец, верификации аутентичности вашего двоичного файла.
 
-**Важное примечание!** Даже если текст данного руководства претерпит изменения, скриншоты по-прежнему будут отражать процесс, использующий данные Fluffypony. Просто следуйте руководству и помните о том, что если на скриншоте указан *fluffypony*, фактически этот скриншот относится к *binaryfate*.
-
 ## Содержание
 
 ### [1. Установка Gpg4win](#1-using-gpg4win-installer)
@@ -156,21 +154,15 @@
 
 ![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-Если отпечаток **СООТВЕТСТВУЕТ** отпечатку, нажать `Next` (Далее).
+Если отпечаток **СООТВЕТСТВУЕТ** отпечатку, нажать `Certify` (Далее).
 
 Если отпечаток **НЕ СООТВЕТСТВУЕТ**, продолжать дальнейшие выполнение пунктов инструкции **НЕ СЛЕДУЕТ**. Необходимо удалить `binaryfate` из директории `Downloads` и повторить действия, описанные в [пункте 2.1](#21-download-signing-key).
-
-Оставить отмеченным `Certify only for myself` (Подтвердить только для себя) и нажать `Certify` (Подтвердить).
-
-![kleo certify for self](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
 Введите свой пароль и нажмите `OK`.
 
 ![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Нажмите `Finish` (Завершить).
-
-![kleo certify finish](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. Верификация хеш-файла
 
@@ -242,7 +234,7 @@ Kleopatra сообщит, является ли подпись файла дей
 
 ![binary cmd cd](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
 
-Вычислите хеш двоичного файла Monero при помощи команды `certUtil -hashfile monero-gui-win-x64-v0.11.1.0.zip SHA256` (если вы загрузили версию, предполагающую только использование командной строки, замените `monero-gui-win-x64-v0.11.1.0.zip`, именем скачанного файла кошелька).
+Вычислите хеш двоичного файла Monero при помощи команды `certUtil -hashfile monero-gui-win-x64-v0.16.0.2.zip SHA256` (если вы загрузили версию, предполагающую только использование командной строки, замените `monero-gui-win-x64-v0.16.0.2.zip`, именем скачанного файла кошелька).
 
 ![binary cmd certutil](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
 

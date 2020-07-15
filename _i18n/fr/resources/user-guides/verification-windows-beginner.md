@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
-# Vérifier des binaires : Windows (Débutant)
-
 Les fichiers binaires Monero devrait être vérifiés avant extraction, installation ou utilisation de l'application Monero. C'est l'unique manière de vous assurer que vous utilisez le binaire officiel Monero. Si vous recevez un binaire contrefait (p. ex. hameçonnage, HDM, etc.), suivre ce guide vous évitera de vous faire piéger.
 
 Pour protéger l'intégrité des binaires, l'équipe Monero fournit une liste cryptographiquement signée de tous les hachages [SHA256](https://en.wikipedia.org/wiki/SHA-2). Si le binaire que vous avez téléchargé a été altéré il produira un [hachage différent](https://en.wikipedia.org/wiki/File_verification) de celui fourni dans le fichier.
@@ -159,21 +157,15 @@ Contrôlez visuellement que l'empreinte de la clef appartenant à Riccardo Spagn
 
 ![certifier empreinte kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-Si l'empreinte **EST** identique, cochez les cases et cliquez sur `Suivant`.
+Si l'empreinte **EST** identique, cochez les cases et cliquez sur `Certifier`.
 
 Si l'empreinte **N'EST PAS** identique, **NE POURSUIVEZ PAS.** Au lieu de cela, supprimez le fichier `fluffypony.asc` du répertoire `téléchargements` et retournez à la [rubrique 2.1](#21-télécharger-la-clef-de-signature).
-
-Laissez `Certifier uniquement pour moi` coché et cliquez sur `Certifier`.
-
-![certifier pour soi kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
 Entrez votre mot de passe et cliquer sur `OK`.
 
 ![certifier mdp kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Cliquez sur `Terminer`.
-
-![fin certifier kleo](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. Vérification du Fichier de Hachage
 

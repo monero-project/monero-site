@@ -6,8 +6,6 @@ To protect the integrity of the binaries the Monero team provides a cryptographi
 
 This is a beginners guide for the Windows operating system and will make use of GUIs almost exclusively. It will walk you through the process of installing the required software, importing the signing key, downloading the necessary files, and finally verifying that your binary is authentic.
 
-**Important note:** Even if the text of this guide is updated, the screenshots are still showing the process using Fluffypony's details. Just follow the guide and keep in mind that when a screenshot is showing *fluffypony*, it actually refers to *binaryfate*.
-
 ## Table of Contents
 
 ### [1. Gpg4win Installer](#1-using-gpg4win-installer)
@@ -156,21 +154,15 @@ Visually check that the fingerprint of the key belonging to binaryFate is `81AC5
 
 ![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-If the fingerprint **DOES** match, click `Next`.
+If the fingerprint **DOES** match, click `Certify`.
 
 If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key).
-
-Leave `Certify only for myself` selected, click `Certify`.
-
-![kleo certify for self](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
 Enter your password, click `OK`.
 
 ![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Click `Finish`.
-
-![kleo certify finish](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. Hash File Verification
 
@@ -242,7 +234,7 @@ Change to the `Downloads` directory with the command: `cd Downloads`.
 
 ![binary cmd cd](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
 
-Calculate the hash of the Monero binary with the command: `certUtil -hashfile monero-gui-win-x64-v0.11.1.0.zip SHA256` (if you downloaded a command-line only version, replace `monero-gui-win-x64-v0.11.1.0.zip` accordingly).
+Calculate the hash of the Monero binary with the command: `certUtil -hashfile monero-gui-win-x64-v0.16.0.2.zip SHA256` (if you downloaded a command-line only version, replace `monero-gui-win-x64-v0.16.0.2.zip` accordingly).
 
 ![binary cmd certutil](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
 

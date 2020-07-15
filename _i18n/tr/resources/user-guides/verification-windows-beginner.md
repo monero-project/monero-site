@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-# Verify Binaries: Windows (Beginner)
-
 Verification of the Monero binary files should be done prior to extracting, installing, or using the Monero software. This is the only way to ensure that you are using the official Monero binary. If you receive a fake binary (eg. phishing, MITM, etc.), following this guide will protect you from being tricked into using it.
 
 To protect the integrity of the binaries the Monero team provides a cryptographically signed list of all the [SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded binary has been tampered with it will be produce a [different hash](https://en.wikipedia.org/wiki/File_verification) than the one in the file.
@@ -98,7 +96,7 @@ This section will cover downloading the Monero signing key, verifying that the k
 
 ### 2.1. Download Signing Key
 
-In a web browser, go to [Fluffypony's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), which he uses for signing the Monero binaries. Right click on the page, choose `Save Page As`.
+In a web browser, go to [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), which he uses for signing the Monero binaries. Right click on the page, choose `Save Page As`.
 
 ![getkey right click](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
 
@@ -120,7 +118,7 @@ Click `Import`.
 
 ![kleo firstrun import](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
 
-Enter the directory `Downloads`, select `fluffypony`, and click `Open`.
+Enter the directory `Downloads`, select `binaryfate`, and click `Open`.
 
 ![kleo firstrun key location](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
 
@@ -152,25 +150,19 @@ Click `Finish`.
 
 ### 2.3. Verify Signing Key
 
-Visually check that the fingerprint of the key belonging to Riccardo Spagni is `BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9`.
+Visually check that the fingerprint of the key belonging to binaryFate is `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
 
 ![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-If the fingerprint **DOES** match, click `Next`.
+If the fingerprint **DOES** match, click `Certify`.
 
-If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `fluffypony` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key).
-
-Leave `Certify only for myself` selected, click `Certify`.
-
-![kleo certify for self](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
+If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` directory and go back to [section 2.1](#21-download-signing-key).
 
 Enter your password, click `OK`.
 
 ![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Click `Finish`.
-
-![kleo certify finish](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. Hash File Verification
 
@@ -242,7 +234,7 @@ Change to the `Downloads` directory with the command: `cd Downloads`.
 
 ![binary cmd cd](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
 
-Calculate the hash of the Monero binary with the command: `certUtil -hashfile monero-gui-win-x64-v0.11.1.0.zip SHA256` (if you downloaded a command-line only version, replace `monero-gui-win-x64-v0.11.1.0.zip` accordingly).
+Calculate the hash of the Monero binary with the command: `certUtil -hashfile monero-gui-win-x64-v0.16.0.2.zip SHA256` (if you downloaded a command-line only version, replace `monero-gui-win-x64-v0.16.0.2.zip` accordingly).
 
 ![binary cmd certutil](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
 
