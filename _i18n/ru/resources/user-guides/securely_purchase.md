@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Это руководство по приобретению и безопасному хранению Monero по состоянию на июнь 2017 года.
 
