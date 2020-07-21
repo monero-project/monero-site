@@ -1,6 +1,61 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-# Multisig Transactions with MMS and CLI Wallet
+## Table Of Contents
+- [Table Of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Monero Multisig in a Nutshell](#monero-multisig-in-a-nutshell)
+- [The Architecture of the MMS](#the-architecture-of-the-mms)
+- [The MMS User Experience](#the-mms-user-experience)
+  - [A Messaging System](#a-messaging-system)
+  - [Signers and Messages](#signers-and-messages)
+- [Getting the MMS](#getting-the-mms)
+- [Installing and Configuring PyBitmessage](#installing-and-configuring-pybitmessage)
+- [Further PyBitmessage Tweaks](#further-pybitmessage-tweaks)
+- [MMS Command Overview](#mms-command-overview)
+- [Configuring a Wallet for Use with the MMS](#configuring-a-wallet-for-use-with-the-mms)
+  - [Addresses and Labels](#addresses-and-labels)
+  - [Running CLI Wallet](#running-cli-wallet)
+  - [Initializing the MMS](#initializing-the-mms)
+  - [Configuring Signers](#configuring-signers)
+  - [Manually Configuring Signers](#manually-configuring-signers)
+  - [Auto-Config](#auto-config)
+  - [Sending Signer Configuration](#sending-signer-configuration)
+- [Establishing the Multisig Address](#establishing-the-multisig-address)
+- [Funding the Multisig Wallet](#funding-the-multisig-wallet)
+- [Syncing Wallets](#syncing-wallets)
+- [Making Multisig Transactions](#making-multisig-transactions)
+- [The Commands in Detail](#the-commands-in-detail)
+  - [mms init](#mms-init)
+  - [mms info](#mms-info)
+  - [mms signer](#mms-signer)
+  - [mms list](#mms-list)
+  - [mms next](#mms-next)
+  - [mms sync](#mms-sync)
+  - [mms transfer](#mms-transfer)
+  - [mms delete](#mms-delete)
+  - [mms send](#mms-send)
+  - [mms receive](#mms-receive)
+  - [mms note](#mms-note)
+  - [mms show](#mms-show)
+  - [mms export](#mms-export)
+  - [mms set](#mms-set)
+  - [mms start\_auto\_config](#mms-start_auto_config)
+  - [mms auto\_config](#mms-auto_config)
+  - [mms stop\_auto\_config](#mms-stop_auto_config)
+  - [mms send\_signer\_config](#mms-send_signer_config)
+- [Security](#security)
+  - [Use of Encryption and Signatures](#use-of-encryption-and-signatures)
+  - [Communication MMS to PyBitmessage](#communication-mms-to-pybitmessage)
+  - [Impersonation](#impersonation)
+  - [Attacker-Controlled Data](#attacker-controlled-data)
+- [Troubleshooting](#troubleshooting)
+  - [Solving Syncing Troubles](#solving-syncing-troubles)
+  - [Redirecting a Transaction to Another Signer](#redirecting-a-transaction-to-another-signer)
+  - [Ignoring Uncooperative Signers when Syncing](#ignoring-uncooperative-signers-when-syncing)
+  - [Recovering from Lost or Duplicate Messages](#recovering-from-lost-or-duplicate-messages)
+  - [Correcting / Updating Signer Information](#correcting--updating-signer-information)
+  - [Starting from Scratch](#starting-from-scratch)
+  - [MMS / PyBitmessage Interactions](#mms--pybitmessage-interactions)
 
 ## Introduction
 
@@ -148,12 +203,12 @@ There is only **one** new command in the CLI wallet that gives access to the MMS
     show        Show detailed info about a single message
     export      Export the content of a message to file
     set         Set options, 'auto-send' being the only one so far
-
+    
     start_auto_config   Start the auto-config process at the auto-config manager's wallet by creating new tokens
     auto_config         Start auto-config by using the token received from the auto-config manager
     stop_auto_config    Delete any tokens and abort an auto-config process
     send_signer_config  Send your complete signer configuration to all other signers
-
+    
 You get the list of commands by issuing `help mms`, and help for a particular subcommand by using `help mms <subcommand>`, e.g. `help mms next`. You can alternatively use `mms help <subcommand>` if that feels more natural.
 
 ## Configuring a Wallet for Use with the MMS
@@ -222,7 +277,7 @@ After the above sample `init` command the list of signers looks like that:
        Auto-Config Token    Monero Address
      1 alice                BM-2cUVEbbb3H6ojddYQziK3RafJ5GPcFQv7e
                             A1VRwm8HT8CgA5bSULDZKggR9Enc9enhWHNJuDXDK4wDD6Rwha3W7UG5Wu3YGwARTXdPw1AvFSzoNPBdiKfpEYEQP1b5cCH
-
+    
      2 <not set>            <not set>
                             <not set>
 
@@ -262,7 +317,7 @@ Alice's complete signer list looks like this:
        Auto-Config Token    Monero Address
      1 alice                BM-2cUVEbbb3H6ojddYQziK3RafJ5GPcFQv7e
                             A1VRwm8HT8CgA5bSULDZKggR9Enc9enhWHNJuDXDK4wDD6Rwha3W7UG5Wu3YGwARTXdPw1AvFSzoNPBdiKfpEYEQP1b5cCH
-
+    
      2 bob                  BM-2cStcTfCx8D3McrMcmGZYZcF4csKcQT2pa
                             9yXKZ6UUdd8NnNN5UyK34oXV7zp7gjgZ4WTKHk8KzWsAAuyksfqoeRMLLkdWur85vnc1YL5E2rrMdPMHunA8WzUS9EL3Uoj
 
@@ -314,7 +369,7 @@ So, after you completed the info about all signers, either manually or through a
     MultisigV18uEUr5L7EvFDqKWvbnK2ys395ddRPuG6zaxNTwbDq3WoUNJtkPUPbRAEQKBaCC52g5iJXi8XUF4aUP9984hdFrHsP1y3W8yQkm
     YUSDYXzouhzd479tMmpL4LJKUoW5e54bubEg5E4J3BZtJQiGNzvVsiBKGAKgT7J4bcNN66Xq7hpL4V
     Send this multisig info to all other participants, then use make_multisig <threshold> <info1> [<info2>...] with others' multisig info
-    This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants
+    This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants 
       Id I/O  Authorized Signer              Message Type           Height   R Message State   Since                                   
        1 out  bob: BM-2cStcTfCx8D3McrMcmGZ.. key set                     0   0 ready to send   2018-12-26 07:46:21, 1 seconds ago      
     Queued for sending.
@@ -325,7 +380,7 @@ After Alice receives Bob's key set, another `mms next` command will process it a
 
     [wallet A1VRwm]: mms next
     make_multisig
-    Wallet password:
+    Wallet password: 
     2/2 multisig address: 9uWY5Kq6XocGGqUByp22ty4HYxj4CfjCXdRrZ24EKvYW2U7fudSzCvTRRT35tMNx5heQfqKmVmFjahWUZ1BENnzH8UvyVF7
 
 The wallet may be "out of sync" after this step; if yes, just do a quick `refresh`.
@@ -367,7 +422,7 @@ At least, with the MMS, it's only a case of issuing `mms next` commands until al
 
 Don't worry if you receive such sync messages from other signers already before you are able to start sending yours: The MMS will handle this situation quite fine and send first, process afterwards.
 
-Check the chapter *Troubleshooting* if you ever get stuck somehow: E.g. there is a way to force sync even if `mms next` gets confused and thinks that syncing is not necessary or not possible.
+Check the chapter *Troubleshooting* if you ever get stuck somehow: E.g. there is a way to force sync even if `mms next` gets confused and thinks that syncing is not necessary or not possible. 
 
 ## Making Multisig Transactions
 
@@ -381,7 +436,7 @@ With multisig the `mms transfer` command does of course not yet transfer, but pr
 
     [wallet 9uWY5K]: mms transfer 9zo5QDV9YivQ8Fdygt7BNdGo1c98yfAWxAz6HMwsf15Vf1Gkme9pjQG2Typ9JnBKv5goziC2MT93o3YDUfoWdU9XUinX5kS 5
     No payment id is included with this transaction. Is this okay?  (Y/Yes/N/No): y
-
+    
     Transaction 1/1:
     Spending from address index 0
     Sending 5.000000000000.  The transaction fee is 0.000094300000
@@ -428,7 +483,7 @@ Yet another `mms next` does result in a choice for Bob, because he can either su
     Choose processing:
     1: Submit tx
     2: Send the tx for submission to alice: BM-2cUVEbbb3H6ojddYQziK3RafJ5GPcFQv7e
-    Choice:
+    Choice: 
 
 As already mentioned elsewhere after the transaction is submitted to the network and processed you have to sync the wallets before you can do another transfer. Also note that regardless of any syncing needs it's a restriction of Monero multisig that you must do **strictly one transaction after the other**. For example you can't put away fully-signed transactions for submitting them later and already start a new one to submit that first. (For some such scenarious the MMS is not smart enough to prevent you from trying; see chapter *Troubleshooting* about how you can recover by deleting messages containing unprocessable transactions and forcing sync.)
 
@@ -510,7 +565,7 @@ The complete list of message types:
 
 *The* central and probably most useful command of the MMS: Check the state of the wallet plus the received and sent messages and their message state, and decide which action is the next one to execute, and then actually execute it.
 
-When in doubt, just issue a `mms next` command; the MMS will either execute the proper next command according to Monero's "multisig workflow rules", or tell you what it's waiting for before it can proceed. For "dangerous" things you can count on confirming prompts before the real action happens. Worst case a `mms next` can execute something earlier than you might have intended, but otherwise can hardly do any harm.
+When in doubt, just issue a `mms next` command; the MMS will either execute the proper next command according to Monero's "multisig workflow rules", or tell you what it's waiting for before it can proceed. For "dangerous" things you can count on confirming prompts before the real action happens. Worst case a `mms next` can execute something earlier than you might have intended, but otherwise can hardly do any harm. 
 
 Note how for many actions there is **no** dedicated command, and `mms next` the **only** way to move things forward. Don't look e.g. for commands to selectively process certain messages: If it's time to process some received messages in state *waiting*, the command will do so.
 
@@ -658,7 +713,7 @@ Check chapter *Auto-Config* for a complete list of all steps of an auto-config p
 
     mms stop_auto_config
 
-Delete any auto-config tokens from signer configuration and stop any running auto-config process that way.
+Delete any auto-config tokens from signer configuration and stop any running auto-config process that way. 
 
 Deleted tokens cannot be recoverd or reconstructed, as they are random. If you are the "config manager" and delete tokens you will never become able again to receive auto-config messages that other signers send to you using those deleted tokens. (Nobody else will receive them either, however.) Everybody will need new tokens issued by you.
 
