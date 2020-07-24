@@ -181,7 +181,7 @@ module Jekyll
     # Returns the location of the page or post
     def fill_location(site, page_or_post)
       loc = REXML::Element.new "loc"
-      url = site.config['url'] + site.config['baseurl']
+      url = site.config['baseurl']
       loc.text = page_or_post.location_on_server(url)
 
       loc
