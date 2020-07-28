@@ -159,13 +159,11 @@ Certain logos, such as those for the operating systems and platforms we support 
 <div class="col" markdown="1">
 ### What We Collect
 
-The Monero Project uses [Matomo](https://matomo.org/) to collect usage and visitor data for this website. This is enabled via a small piece of JavaScript code, and will not run if you have JavaScript disabled. We also collect standard server logs from our webserver.
+We collect standard server logs from our webserver.
 
 ### What We Use the Data For
 
-The Matomo data is used to provide statistics on the website and help us to improve the content and the information flow.
-
-Server logs are used to analyze errors and diagnose requests to dead links. A portion of the server logs are used to gather statistics on Monero downloads in order to help us better understand our user's needs.
+Server log data is used to provide statistics on the website and help us to improve the content and the information flow. This data is also used to analyze errors and diagnose requests to dead links. A portion of the server logs are used to gather statistics on Monero downloads in order to help us better understand our users' needs.
 </div>
 </div>
             </div>
