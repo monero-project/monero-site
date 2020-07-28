@@ -2329,6 +2329,7 @@ Inputs:
 * *outputs* array of *get_outputs_out* structure as follows:
   * *amount* - unsigned int;
   * *index* - unsigned int;
+* *get_txid* - boolean; If `true`, a *txid* will included for each output in the response.
 
 Outputs:
 
