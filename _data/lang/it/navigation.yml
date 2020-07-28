@@ -12,18 +12,8 @@
     url: get-started/faq
 - title: Download
   url: downloads/
-- title: Notizie recenti
-  subfolderitems:
-    - page: Urgente
-      url: blog/tags/urgent.html
-    - page: Uscite
-      url: blog/tags/releases.html
-    - page: Comunità
-      url: blog/tags/community.html
-    - page: Log dei meeting
-      url: blog/tags/dev%20diaries.html
-    - page: Tutti i post
-      url: blog
+- title: Blog
+  url: blog
 - title: Comunità
   subfolderitems:
   - page: Team

@@ -1929,6 +1929,7 @@ img.monero-logo {
 .white-nav {
     margin-bottom: 1rem;
     line-height: 1;
+    text-align: center;
 }
 
 .white-nav>.nav-items>.nav-item {
@@ -3889,6 +3890,42 @@ h3#months {
 
 
 /***********************************POST STYLING********************************/
+
+.blog .blog-nav a {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 0.92rem;
+  font-family: 'Hind', sans-serif;
+  -webkit-transition: all ease-out .2s;
+  -moz-transition: all ease-out .2s;
+  -o-transition: all ease-out .2s;
+  transition: all ease-out .2s;
+  border: none;
+}
+
+.blog-nav a:hover {
+  background-color: #d26e2b;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog .full>.info-block.blog-nav {
+  padding: 0;
+}
+
+.blog .col {
+  width: 20%;
+}
+
+.checked a {
+  background-color: #d26e2b;
+  color: #fff;
+  text-decoration: none;
+}
 
 .post-tag {
     padding-top: 1.5rem;

@@ -12,18 +12,8 @@
     url: get-started/faq
 - title: Downloads
   url: downloads/
-- title: Nieuws
-  subfolderitems:
-    - page: Urgent
-      url: blog/tags/urgent.html
-    - page: Releases
-      url: blog/tags/releases.html
-    - page: Community
-      url: blog/tags/community.html
-    - page: Vergaderingen
-      url: blog/tags/dev%20diaries.html
-    - page: Alles
-      url: blog
+- title: Blog
+  url: blog
 - title: Community
   subfolderitems:
   - page: Team

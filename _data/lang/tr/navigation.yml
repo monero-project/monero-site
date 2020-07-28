@@ -12,18 +12,8 @@
     url: get-started/faq
 - title: İndirmeler
   url: downloads/
-- title: Son Haberler
-  subfolderitems:
-    - page: Urgent
-      url: blog/tags/urgent.html
-    - page: Bültenler
-      url: blog/tags/releases.html
-    - page: Community
-      url: blog/tags/community.html
-    - page: Toplantı Kayıtları
-      url: blog/tags/dev%20diaries.html
-    - page: Tüm Gönderiler
-      url: blog
+- title: Blog
+  url: blog
 - title: Topluluk
   subfolderitems:
   - page: Ekip

@@ -12,18 +12,8 @@
     url: get-started/faq
 - title: 下載
   url: downloads/
-- title: 最新消息
-  subfolderitems:
-    - page: Urgent
-      url: blog/tags/urgent.html
-    - page: 版本發佈
-      url: blog/tags/releases.html
-    - page: Community
-      url: blog/tags/community.html
-    - page: 會議記錄
-      url: blog/tags/dev%20diaries.html
-    - page: 所有文章
-      url: blog
+- title: Blog
+  url: blog
 - title: 社群
   subfolderitems:
   - page: 合作團隊
