@@ -4696,8 +4696,11 @@ input.accordion[type=radio]:checked + label::after {
   margin: 1rem 0;
 }
 
+[data-tooltip]:before {
+  width: 0;
 }
 
+}
 
 
 
