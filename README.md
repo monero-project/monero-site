@@ -31,7 +31,7 @@ If you need support about something related to the website, plese join `#monero-
   * Install Bundler: `gem install bundler`
   * Install Jekyll with all dependencies (run from the project directory): `bundle`
 
-* GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com/monero-project) or [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register on GitLab and fork the [Monero Website repository](https://github.com/monero-project/monero-site). Please note that GitLab accounts logged in using the "Log in with GitHub" option require manual intervention in order to be able to fork repositories. Either register your account using email/password or contact the Website Workgroup via GitLab or `#monero-site` to have your GitHub OAuth profile unlocked.
+* GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com/monero-project) or [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register on GitHub and fork the [Monero Website repository](https://github.com/monero-project/monero-site).
 
 *Note: If you're confused, feel free to click other files in the same directory (folder) that you are in for the step that you are on to see some working examples. Compare them to the instructions and you should understand better.*
 
@@ -140,39 +140,33 @@ After you've done all the above, you'll need to [open an issue on the repository
 ### GitHub Issues
 We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
+### Reviewing Process
+When a pull request suggesting changes is opened, it will be merged only once it will be reviewed (with some exceptions, like binaries and hashes updates). The process to review a PR is simple:
+
+1. Go through the suggested changes and check that everything is fine and nothing is broken. We have multiple tools that make this process easier: Netlify's previews, which will show a preview of how the website will look like once the PR is merged; GitHub's checks, which will try to build the PR and will say if there were errors during the process.
+2. if you think something should be changed, comment on the interested lines, stating clearly what changes you suggest and why. GitHub gives [a set of useful tools](https://github.com/features/code-review/) to make code review easier for both authors and reviewers.
+3. When you think the PR is ready to be merged, use GitHub's native "Approve" option, or write a comment explicitly stating your approval. Some common ways to approve a PR is by writing: *ACK/uTACK*, *Reviewed* and *LGTM (Let's Get This Merged)*. Doesn't matter what wording you use, just make your approval clear.
+4. In the case you wish a PR doesn't get merged for some reason, make it known by using clear wording. A common way to show disapproval is by writing *NACK (Not Acknowledged)*. NACKing a PR should be accompanied by a detailed explanation of why that PR should be refused.
+
+Some pull requests may be labelled `Needs Review`, these PR are prioritary and should be reviewed as soon as possible.
+
 ## Updates on User Guides
 User guides and developer guides may need regular updates, either to fix typos, to add explanations regarding new features, to update screenshots, and so on.
 As those guides are translated in several languages, it could be hard to keep all languages version up to date with the English version.
 To keep track of those changes, the user guides (but not the developer guides) are versioned using a snippet at the top of each localized (\_i18n/en/resources/\*-guides) file:
 ```
-{% assign version = '1.1.0' | split: '.' %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ```
-This snippet is responsible for keeping track of the language version.
+This snippet is responsible for keeping track of the language version. If the guide is translated, change `translated="no"` to `translated="yes"`. if the page is translated, but something changed in the original guide in English, change `translationOutdated="no"` to `translationOutdated="yes"`.
 
-The based version (English version) is however also tracked in the `Front Matter` from the /resources/user-guides/ or /resources/developer-guides/ directory file:
+The based version (English version) is however also tracked in the `Front Matter` from the /resources/user-guides/ directory file:
 ```
-mainVersion:
-  - "1"
-  - "1"
-  - "0"
+outdated: False
 ```
 
-- First number is the Major version number
-- Second number is the Minor version number
-- Third number is the build number.
+If the guide is outdated, simply change `False` into `True`.
 
-When you update a guide, you are responsible for updating this version tracking in every file involved in your update:
-
-- For an update on English files, you will update the version tracking number in the `Front Matter` of /resources/\*-guides/ and in \_i18n/en/resources/\*-guides
-- For an update on localized files, you will update the version tracking number in the \_i18n/<local>/resources/\*-guides only, and
-  - You will not update to a higher Major or Minor version number than the reference English guide
-  - If you want to update to a higher Major or Minor version number, you should update the English version accordingly so that English is always the highest Major.Minor version.
-
-And you will increment the version number in the following way:
-
-- Cosmetic change only (typo, rephrasing, screenshot update with exact same field names and positions): Increment the third number (build number). We do not want to even warn the user about this update in another language.
-- Changes that add instructions or explanations (or screenshot updates with different field names and positions), without making the old version misleading for users: Increment the second number (Minor version number) and reset the third to 0. We want to let the user know the English version could be more accurate and helpful to read.
-- Changes that makes the old version false, or misleading to users: Increment the first number (Major version number) and reset the second and third to 1.0. We want to discourage users from reading this too outdated version that could lead them to do wrong things (for instance, buy the wrong algo of mining power on nicehash, after a pow change).
+When you update a guide, you are responsible for updating this version tracking in every file involved in your update. Don't be afraid to ask for help if the process is not clear to you.
 
 ## How to make a blog post
 
