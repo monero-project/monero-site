@@ -1,7 +1,7 @@
 ---
 name: New Merchant
 about: Propose a new merchant to add to the 'Merchants' page
-title: ''
+title: 'Add <NAME OF YOUR BUSINESS> to the list of merchants'
 labels: "\U0001F3EA merchant, \U0001F50D Needs investigation"
 assignees: ''
 
