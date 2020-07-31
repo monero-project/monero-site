@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 ## Comment acheter des Moneroj et les conserver en toute sécurité
 
