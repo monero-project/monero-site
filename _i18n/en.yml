@@ -684,6 +684,7 @@ moneropedia:
   add_new_text1: If there is an entry you'd like to modify or be added, please
   add_new_link: open an issue on this website's GitLab repository
   add_new_text2: or submit changes via pull request
+  back: Back to the Moneropedia
   entries:
     account: Account
     address-book: Address Book
