@@ -681,6 +681,7 @@ moneropedia:
     coinbase: Coinbase-Transaktion
     consensus: Konsens
     cryptocurrency: Kryptowährung
+    daemon: Daemon
     data-directory: Datenverzeichnis
     denominations: Stückelung
     destination: Ziel

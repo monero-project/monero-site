@@ -703,6 +703,7 @@ moneropedia:
     coinbase: Coinbase Transaction
     consensus: Consensus
     cryptocurrency: Cryptocurrency
+    daemon: Daemon
     denominations: Denominations
     destination: Destination
     encryption: Encryption
