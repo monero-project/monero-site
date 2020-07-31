@@ -3,16 +3,19 @@ terms: ["mnemonic-seed", "mnemonic"]
 summary: "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
 ---
 
-### The Basics
+### 基础知识
 
-A 13 or 25 word phrase used to backup a Monero account, available in a number of languages. This 25-word phrase (13 words in the case of MyMonero) has all the information needed to view and spend funds from a Monero @account.
+一个13或25个单词的词组，用于备份门罗币帐户，有多个语种可用。这个25个单词组成的词组（MyMonero钱包用的是13个单词组成的词组，与大部分其它钱包不通用）是你需要的所有信息，用来查看和使用罗币@帐户的资金```
 
-### In-depth Information
 
-In the official wallet, the mnemonic seed comprises 25 words with the last word being used as a checksum. Those words correspond to a 256-bit integer, which is the account's *private* @spend-key. The *private* @view-key is derived by hashing the private spend key with Keccak-256, producing a second 256-bit integer. The corresponding *public* keys are then derived from the private keys.
+### 深度信息
 
-By storing the 25 word mnemonic key in a secure location, you have a backup of your private keys and hence all of your Moneroj.  Sharing this 25 word key is the equivalent of allowing another person complete access to your funds.  
+在官方钱包中，助记种子由25个单词组成，最后一个单词用作校验和。这些单词对应一个256位整数，即帐户的*私有* @支付密钥。
 
-It's not a good idea to store more than you want to lose in a "hot wallet" aka a wallet which is currently or has ever been connected to the internet or loaded onto any device that has or may in the future be connected to the internet or any untrusted source!
+*私有* @查看密钥是通过用Keccak-256散列私有支付密钥得到的，生成第二个256位整数。然后，从私有密钥派生出相应的*公开*密钥。
 
-By creating a cold, or @paper-wallet you can safely store Moneroj.  
+通过将25个单词的助记词存储在一个安全的位置，您可以备份您的私钥，从而备份您所有的门罗币。分享这25个单词的密钥相当于允许其他人完全使用您的资金。  
+
+不要把太多（超过你所能承受的损失的数量）的币存在一个热钱包里面，热钱包指的是现在或曾经被联网的钱包，或在任何曾经或将来会联网的设备上加载的钱包，或在不可信来源上载入的钱包。
+
+通过创建一个冷钱包，或@纸钱包，来安全地存储门罗币。

@@ -4,28 +4,29 @@ terms: ["Clearnet"]
 summary: "The Internet in which anonymous overlay networks are built upon"
 ---
 
-### The Basics
+### 基础知识
 
-When you use the Internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:
+当你为了看新闻、电子邮件、社交媒体，甚至是门罗币而使用互联网时，你最有可能使用明网连接。这意味着您的*所有*连接都可以通过以下方式进行跟踪、追溯和监视:
 
-- your [ISP](https://en.wikipedia.org/wiki/ISP)
-- the website/service/person you're communicating with
-- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity
+- 你的 [ISP](https://en.wikipedia.org/wiki/ISP)
+- 你正在进行通讯的网站/服务/人
+- 可能是一个像 [五眼联盟](https://en.wikipedia.org/wiki/5_Eyes) 之类的，有能力的实体
 
-and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (which *encrypts* your transmission), your route is not hidden nor is it anonymous, thus; it is in the *clear*.
+即使您使用[HTTPS](https://en.wikipedia.org/wiki/HTTPS)或类似的协议(它*加密*您的传输)，您的路由也不是隐藏的，也不是匿名的，因此；这是*明面上的*。
 
-### In-depth information
+### 深度信息
 
-Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:
+由于传统的[VPN](https://en.wikipedia.org/wiki/VPN)不能让您免于明网(因为您仍然在使用*明网*(尽管比没有VPN要隐蔽))，您应该使用*匿名覆盖网络*来避免直接使用明网:
 
 - @Kovri
 - @Java-I2P
 - [Tor](https://torproject.org/)
 
-These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous.
+这些技术通过在明网上建立一个匿名网络，从而使您的传输经过加密**并**匿名，以从明网中保护你，
 
-Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to @Kovri and @I2P in terms of anonymity with the exception that:
+这是一个由[EFF](https://www.eff.org/pages/tor&https)提供的准确的[交互式图表](https://www.eff.org/)，它描述了*明网*与**洋葱路由器**的关系。这个概念也(在一定程度上)适用于@Kovri和@I2P的匿名性，除了:
 
-- @Kovri does not use exit nodes when connecting to an @eepsite
-- Your traffic never need to leave the @I2P network
-- You do not need HTTPS to use @Kovri (with the exception of @reseed)
+- @Kovri在连接到@eep站点时不使用出口节点
+- 您的流量永远不需要离开@I2P网络
+- 不需要HTTPS来使用@Kovri (@补种的情况除外)
+

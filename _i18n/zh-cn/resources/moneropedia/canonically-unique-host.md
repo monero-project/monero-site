@@ -4,18 +4,19 @@ terms: ["Canonically-unique-host"]
 summary: "A host that is canonically resolved to an address or set of addresses"
 ---
 
-### The Basics
+### 基础知识
 
-A Canonically-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) that will canonically resolve to a designated address or set of addresses. Not to be confused with a @locally-unique-host.
+一个标准唯一主机是一个[完全限定域名](https://en.wikipedia.org/wiki/FQDN)，它将规范地解析为一个指定的地址或一组地址。不要与@本地唯一主机混淆。
 
-### In-depth information
+### 深度信息
 
-A Canonically-unique host is defined by remote authoritative sources; usually through [DNS](https://en.wikipedia.org/wiki/DNS). When resolving a peer's hostname, you will most likely use an external source for resolution unless you have the following implemented:
+一个标准唯一主机由远程权威来源定义;通常通过 [DNS](https://en.wikipedia.org/wiki/DNS)。在解析节点的主机名时，很可能使用外部源进行解析，除非以下文件已执行:
 
-- a database file similar to a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file))
-- an internal-network resolver (which eventually pulls from external sources)
+-一个类似于[域名解析文件](https://en.wikipedia.org/wiki/Hosts_(file))的数据库文件
 
-### Notes
+-一个内部网络解析器(最终从外部来源获取)
 
-- Monero primarily uses @canonically-unique-host resolution while @I2P only uses @locally-unique-host resolution.
-- @I2P's and @Kovri's self-assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)
+### 备注
+
+- 门罗币主要使用@标准唯一主机解析，而@I2P只使用@本地唯一主机解析。
+- @I2P和@Kovri的自定义顶级域名当前为`.i2p`，@Kovri只打算处理/使用 `.i2p` [顶级域名](https://en.wikipedia.org/wiki/Top_level_domain)

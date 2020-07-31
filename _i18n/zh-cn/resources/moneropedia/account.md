@@ -1,36 +1,35 @@
 ---
-terms: ["account", "accounts", "wallet", "wallets"]
-summary: "similar in function to a bank account, contains all of your sent and received transactions"
+terms: ["账户", "钱包"]
+summary: "类似于银行账户的功能，包含所有您发送和接收的交易"
 ---
 
-### The Basics
+### 基础知识
 
-Those familiar with Monero's predecessors will be more familiar with the term *wallet* to describe this. In Monero we call this an account, and it is a private account owned and operated by a Monero user.
+那些熟悉门罗币的前辈（例如：比特币）的人会更熟悉“钱包”这个术语，用以描述这些。在门罗币这里，我们称之为一个帐户，它是一个由门罗币用户拥有和操作的私人帐户。
 
-Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time.
+您的帐户包含您发送和接收的所有门罗币@交易。你的账户余额是你收到的所有门罗币减去你发送的门罗币。当使用门罗币时，您可能会注意到您的帐户有两个余额，一个锁定的和一个未锁定的余额。未锁定余额包含可以立即使用的资金，而锁定余额包含不能立即使用的资金。您可能收到一个设置了@解锁时间的交易，或者您可能发送了一些门罗币并等待@找零回到您的钱包，这两种情况都可能导致这些资金被锁定一段时间。
 
-A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security).
+传统电子货币和门罗币之间的一个关键区别是，您的帐户仅处于您的控制之下，通常位于您的计算机上，不会被任何人使用，只要您[养成良好的安全习惯]。
 
-### Multiple Accounts
+### 多个帐户
 
-There are no costs attached to creating a Monero account, and there are no fees charged except for individual @transaction fees that go to @miners.
+创建一个门罗币帐户无需任何费用，除了@矿工收取的个人@交易费用之外，不收取任何其他费用。
 
-This means that individuals can easily create a Monero account for themselves as well as a joint account to share with their partner, and individual accounts for their children. Similarly, a business could create separate accounts for each division or group. Since Monero's @transaction fees are quite low, moving funds between accounts is not an expensive exercise.
 
-### Cryptographic Keys
+### 加密密钥
 
-Monero relies heavily on a cryptography principle known as *public/private key cryptography* or *asymmetric cryptography*, which is thoroughly detailed in [this Wikipedia article](https://en.wikipedia.org/wiki/Public-key_cryptography).
+门罗币很依赖于一种名为*公/私钥加密* 或 *非对称密码学* 的密码学原理，这在[维基百科文章](https://en.wikipedia.org/wiki/publickey_cryptography)中有详细的描述。
 
-Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy.
+您的帐户基于两个密钥，一个@支付密钥和一个@查看密钥。@支付密钥的特殊之处在于，它是花费门罗币资金所需的唯一密钥，而@查看密钥允许您向第三方披露@交易记录，例如用于审计或会计目的。您帐户中的这些密钥在门罗币的@交易隐私当中，也扮演着重要的角色。
 
-The private keys for both of these must be protected by you in order to retain your account privacy. On the other hand, the public keys are obviously public (they are part of your Monero account address). For normal public/private key cryptography someone could send you a private message by encrypting it with either of your public keys, and you would then be the only one able to decrypt it with your private keys.
+为了保护您的帐户隐私，您必须保护这两个密钥。另一方面，公钥显然是公开的(它们是门罗币帐户地址的一部分)。对于普通的公/私钥加密，有人可以通过使用您的任何一个公钥加密来发送一条私钥消息，而您将是惟一能够使用您的私钥解密它的人。
 
-### Backing Up Your Account
+### 备份您的帐户
 
-When you manage your own Monero Account with the private @spend-key, you are solely responsible for the security of your funds. Thankfully, Monero makes it very easy to backup your account. When creating a Monero account for the first time you will be given a unique @mnemonic-seed for your account that consists of 13 or 25 words in the language of your choosing. **This seed is the only thing you need to backup for your account**, and so it is imperative that it is written down and stored securely.  Never store this seed in a form or location that would allow someone else to see it!
+当您使用私有的@支付密钥管理您自己的门罗币帐户时，您将全权负责您资金的安全性。谢天谢地，门罗币让您的帐户备份变得非常容易。当您第一次创建一个门罗币帐号时，您的帐号会有一个独一无二的@助记种子，由你选择的语言的13或25个单词组成。**该种子是您帐号备份唯一需要东西**，因此必须将其记录下来并安全地存储。永远不要把种子储存在别人可以看到的地方!
 
 ```
-List of available languages for your wallet's seed:
+钱包种子可选语言列表:
 0 : Deutsch
 1 : English
 2 : Español
@@ -42,39 +41,40 @@ List of available languages for your wallet's seed:
 8 : 日本語
 9 : 简体中文 (中国)
 10 : Esperanto
-Enter the number corresponding to the language of your choice: 1
-Generated new wallet: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmhZEWD6XoFDGz55bgzisT9Dnv61sbsA6Sa47TYu
+输入与您所选择的语言相对应的号码: 1
+生成的新钱包: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmhZEWD6XoFDGz55bgzisT9Dnv61sbsA6Sa47TYu
 view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903
 **********************************************************************
-Your wallet has been generated.
-To start synchronizing with the daemon, use "refresh" command.
-Use "help" command to see the list of available commands.
-Always use "exit" command when closing monero-wallet-cli to save your
-current session's state. Otherwise, you might need to synchronize
-your wallet again (your wallet keys are NOT at risk in any case).
+您的钱包已经生成。
+使用“刷新”命令，以启动同步进程。
+使用“帮助”命令，以查看可用命令列表。
+当关闭门罗币命令行钱包时，始终使用“exit”命令保存当前会话的状态。
+否则，您可能需要再次同步您的钱包(您的钱包密钥在任何情况下都没有风险)。
 
-PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.
+请注意:以下25个单词可以用来恢复对您钱包的使用。请把它们写下来，放在安全的地方。请不要将它们存储在您的电子邮件或您无法立即控制的文件存储服务中。
 
 aunt knuckle italics moisture hawk thorn iris abort
 chlorine smog uphill glass aptitude nowhere sewage plywood
 dual relic fierce divers anvil nodes bubble cabin abort
 **********************************************************************
-Starting refresh...
-Refresh done, blocks received: 21939                            
-Balance: 0.000000000000, unlocked balance: 0.000000000000
-Background refresh thread started
-[wallet 4B15Zj]: █
+开始刷新...
+刷新结束, 收到区块数量: 21939                            
+余额: 0.000000000000, 未锁定余额: 0.000000000000
+后台刷新线程启动
+[钱包 4B15Zj]: █
 
 ```
 
-As the example above indicates, it is incredibly important to store these words in safe locations. If you are concerned about the risk of critical loss at your home, for instance, you may want to store a second copy of your seed with your attorney or in a safety deposit box. It is also recommended that it is stored in a way that does not make it obvious that it is your seed, so writing it into a letter or as part of other notes is advisable.
+如上例所示，将这些助记词存储在安全的位置非常重要。如果你担心在家里有遗失的风险，您可以把种子的第二份副本存放在你的律师那里，或者放在一个保险箱内。我们也建议您用一种不易察觉的方式存储你的助记种子，明智的做法是把它写在信里或是写在笔记里。
 
-### Practicing Good Security
+### 养成良好的安全习惯
 
-Over and above backing up your @mnemonic-seed so that you have access to your account in the event of critical data loss, it is also important to practice good security. Use a secure password when creating a local Monero account (not used on [MyMonero](https://mymonero.com) or other web-based account systems).
+为了在关键数据丢失时可以访问您的账户，除了备份您的@助记种子之外，养成良好的安全习惯也很重要。在创建本地门罗币帐户时，使用一个安全性高的密码（不要用 [MyMonero](https://mymonero.com) 或其他基于网络的帐户系统）。
 
-Don't ever give your Monero account password to anyone, as this can be used to access the Monero on your computer without knowing your @mnemonic-seed. Similarly, make sure you have running and up-to-date antivirus, especially on Windows computers. Finally, be careful when clicking links in emails or on unknown and untrusted websites, as malware installed on your computer can sit and wait for you to access your Monero account before taking the funds from it.
+永远不要把你的门罗币帐号密码交给任何人，因为在不知道你的@主机种子的情况下，是可以用密码使用你电脑上的门罗币。同样，要确保你的杀毒软件运行良好而且是最新版本的，尤其是在 Windows 系统的电脑上。
 
-### Leaving Your Account to Next of Kin
+最后，在点击电子邮件或不知名、不可信网站的链接时要格外小心，因为安装在你电脑上的恶意软件会对你的账户虎视眈眈，在你进入账户后拿走你的钱。
 
-Providing access to your Monero account to your next of kin is just as easy as it is to backup your Monero account. Simply leave your @mnemonic-seed to them in your will, or store it somewhere safe where it will be given to them upon the execution of your will. A key advantage to this is that your next of kin won't have to wait for months for a third party to release the funds to them.
+### 把你的帐户留给你的近亲
+
+让您的近亲能够使用您的门罗币帐户，就像备份您的门罗币帐户一样简单。只要把你的@助记种子放在你的遗嘱里，或者把它储存在某个安全的地方，在你的遗嘱执行时就会给他们。这样做的一个关键好处是，你的近亲不必等上几个月由第三方发给他们资金。

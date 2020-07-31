@@ -3,10 +3,9 @@ terms: ["bootstrap-node", "bootstrap-nodes"]
 summary: "A node to which a daemon connects to give immediate usability to wallets while syncing"
 ---
 
-### The Basics
+### 基础知识
 
-The daemon running on a local @node has to sync with other (remote) @nodes. While it is not fully synced, @wallet may still be connected to the local node. Therefore, the @wallet cannot access the @blocks that are bot yet synced on the local @node.
+运行在本地@节点上的守护进程必须与其他(远程)@节点们同步。当没有完全同步时，@钱包可能仍然连接到本地节点。但是，@钱包无法访问本地@节点上尚未同步的@区块。
 
-To allow the @wallet to be immediately usable, the daemon on the local @node uses a bootstrap node to which the RPC request are proxying to, giving access to the missing @blocks.
-
-Note: the replies from the bootstrap node may be untrustworthy.
+为了允许@钱包立即可用，本地@节点上的守护进程使用RPC请求代理到的引导节点，从而访问丢失的@区块。
+注意:来自引导节点的响应可能不可信。

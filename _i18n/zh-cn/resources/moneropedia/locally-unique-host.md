@@ -4,17 +4,17 @@ terms: ["Locally-unique-host"]
 summary: "A host defined by you and resolved only by you"
 ---
 
-### The Basics
+### 基础知识
 
-A locally-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) defined by **you** and resolved only by you; similar to how a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) is implemented. Not to be confused with @canonically-unique-host.
+本地唯一主机是由**您**定义并仅由您解析的[完全限定域名](https://en.wikipedia.org/wiki/FQDN); 类似一个[域名解析文件](https://en.wikipedia.org/wiki/Hosts_(file))是如何执行的。不要与@标准唯一主机混淆。
 
-### In-depth information
+### 深度信息
 
-You have the option to share your interpretation of how the host is resolved (e.g., `localhost` always resolves to `127.0.0.1`) but the resolution is not canonically enforced (e.g., someone else can map `localhost` to any arbitrary IP address).
+您可以选择共享您对主机解析方式的诠释（例如，“本地主机”总是解析为“127.0.0.1”），但是解析被不正规的执行（例如，其他人可以将“本地主机”映射到任意IP地址）。
 
-Hosts in a public subscription can be considered @canonically-unique-host's within the @I2P network but, ultimately, you are free to re-define them as you wish.
+在@I2P网络中，公共订阅中的主机可以被认为是@标准唯一主机，但最终，您可以自由地重新定义它们。
 
-### Notes
+### 备注
 
-- Monero primarily uses @canonically-unique-host resolution while @I2P only uses @locally-unique-host resolution.
-- @I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)
+- 门罗币主要使用@标准唯一主机解析，而@I2P只使用@本地唯一主机解析。
+- @I2P和@Kovri的自定义顶级域名当前为 `.i2p` ，@Kovri只打算处理/使用 `.i2p` [顶级域名](https://en.wikipedia.org/wiki/Top_level_domain)

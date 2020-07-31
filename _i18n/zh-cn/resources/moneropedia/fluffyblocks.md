@@ -3,15 +3,12 @@ terms: ["fluffy blocks", "fluffyblocks"]
 summary: "a way of saving bandwidth when sending new blocks around the network"
 ---
 
-### The Basics
+### 基础知识
 
-A @block is made up of a header and @transactions. Fluffy Blocks only contain
-a header, a list of transaction indices, and any transactions that the node
-recieving the block may be missing. This saves bandwidth because nodes might
-already know about most or all of the transactions in the block and they don't
-need to be sent them again.
+@区块由区块头和@交易组成。
+蓬松区块只包含一个区块头、一个交易索引列表以及接收该块的节点可能丢失的任何交易。这节省了带宽，因为节点可能已经知道区块中的大部分或所有交易，并且不需要再次发送它们。
 
-### See Also
+### 另请参阅
 
-* [BIP152 "Compact Block Relay"](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki)
+* [BIP152 “紧密区块传播”](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki)
 * [Xthin](https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/release/doc/bu-xthin-protocol.md)
