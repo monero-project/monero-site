@@ -17,7 +17,7 @@
       url: https://bitni.com
     - name: Binance
       url: https://www.binance.com/trade.html?symbol=XMR_BTC
-    - name: BITEXBOOK (XMR/BTC, XMR/USD, XMR/RUB)
+    - name: BITEXBOOK (XMR/USD, RUB, UAH, BTC, ETH)
       url: https://bitexbook.com/
     - name: Bitfinex (XMRUSD, XMRBTC)
       url: https://www.bitfinex.com/
