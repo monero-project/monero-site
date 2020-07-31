@@ -22,6 +22,11 @@ paginate_path: blog/page:num/
 plugins:
   - jekyll-paginate
   - jekyll-multiple-languages-plugin
+  - jekyll-feed
+
+feed:
+  path: feed.atom
+  posts_limit: 20
 
 # jekyll-multiple-languages-plugin settings:
 languages: ["en", "es", "it", "pl", "fr", "ar", "ru", "de", "nl", "pt-br", "tr", "zh-cn", "zh-tw"]

@@ -11,7 +11,7 @@
   - name: Kütüphane
     url: library
   - name: RSS Besleme
-    url: https://getmonero.org/feed.xml
+    url: feed.atom
 - title: IRC Kanalları
   subfolderitems:
   - name: monero

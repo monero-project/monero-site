@@ -3980,6 +3980,22 @@ h3#months {
     border-bottom: 2px solid #a1aabb;
 }
 
+.info-block .feed h2 {
+  margin-top: 0;
+}
+
+.feed span {
+  height: 30px;
+  width: 30px;
+  display: block;
+  padding-right: 1rem;
+}
+
+.feed span.feed-pic {
+  background: url(../img/feed.svg) no-repeat;
+  float: right;
+}
+
 @media only screen and (max-width: 75rem) {
 .page-numbers {
     margin-top: 2rem;

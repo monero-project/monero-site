@@ -9,7 +9,7 @@
   - name: دليل المستخدم
     url: resources/user-guides/
   - name: RSS Feed
-    url: https://getmonero.org/feed.xml
+    url: feed.atom
 - title: IRC قنوات الدردشة
   subfolderitems:
   - name: مونيرو
