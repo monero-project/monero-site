@@ -1,0 +1,4 @@
+- name: Juridisk
+  url: legal
+- name: Kildekode
+  url: https://github.com/monero-project/monero-site

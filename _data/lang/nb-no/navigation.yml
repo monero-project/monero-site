@@ -1,0 +1,54 @@
+- title: Kom i gang
+  subfolderitems:
+  - page: Hva er Monero?
+    url: get-started/what-is-monero
+  - page: Godkjenning
+    url: get-started/accepting
+  - page: Bidrag
+    url: get-started/contributing
+  - page: Utvinning
+    url: get-started/mining
+  - page: Ofte stilte spørsmål
+    url: get-started/faq
+- title: Nedlastinger
+  url: downloads/
+- title: Siste nytt
+  subfolderitems:
+    - page: Pressende
+      url: blog/tags/urgent.html
+    - page: Utgivelser
+      url: blog/tags/releases.html
+    - page: Samfunn
+      url: blog/tags/community.html
+    - page: Møtelogger
+      url: blog/tags/dev%20diaries.html
+    - page: Alle innlegg
+      url: blog
+- title: Samfunn
+  subfolderitems:
+  - page: Team
+    url: community/team
+  - page: Treffsteder
+    url: community/hangouts
+  - page: Sponsorer
+    url: community/sponsorships
+  - page: Forhandlere
+    url: community/merchants
+- title: Ressurser
+  subfolderitems:
+  - page: Om
+    url: resources/about
+  - page: Veikart
+    url: resources/roadmap
+  - page: Forskningslab
+    url: resources/research-lab
+  - page: Moneropedia
+    url: resources/moneropedia
+  - page: Veiledninger
+    url: resources/user-guides
+  - page: Utviklerguider
+    url: resources/developer-guides
+  - page: Bibliotek
+    url: library
+  - page: Pressepakke
+    url: press-kit
