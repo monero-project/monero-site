@@ -61,7 +61,7 @@ If the attacker's attempt is unsuccessful and the targeted subaddress is not der
 
 ## Breaking Monero explanation
 
-Justin Ehrenhofer explains the limitations of subaddresses, including the Janus attack, in this Breaking Monero video: https://www.youtube.com/watch?v=M_IYzzC5Zqk
+Justin Ehrenhofer explains the limitations of subaddresses, including the Janus attack, in [a Breaking Monero video](https://www.youtube.com/watch?v=M_IYzzC5Zqk).
 
 ## Conclusion
 
