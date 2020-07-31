@@ -169,11 +169,11 @@ permalink: /resources/research-lab/index.html
                             <p>{% t research-lab.cryptonote-whitepaper_para %}</p>
                         </div>
                         <div class="whitepaper">
-                            <a href="https://downloads.getmonero.org/whitepaper_annotated.pdf">{% t research-lab.annotated %}</a>
+                            <a href="{{site.baseurl}}/resources/research-lab/pubs/whitepaper_annotated.pdf">{% t research-lab.annotated %}</a>
                             <p>{% t research-lab.annotated_para %}</p>
                         </div>
                         <div class="whitepaper">
-                            <a href="https://downloads.getmonero.org/whitepaper_review.pdf">{% t research-lab.brandon %}</a>
+                            <a href="{{site.baseurl}}/resources/research-lab/pubs/whitepaper_review.pdf">{% t research-lab.brandon %}</a>
                             <p>{% t research-lab.brandon_para %}</p>
                         </div>
                     </div>
