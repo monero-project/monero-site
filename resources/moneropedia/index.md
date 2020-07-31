@@ -3,6 +3,10 @@ layout: full
 title: titles.moneropedia
 ---
 
+<div class="center-xs moneropedia-desc">
+    <p>{% t moneropedia.description %}</p>
+</div>
+
 {% t global.lang_tag %}
 
 <div class="row">
