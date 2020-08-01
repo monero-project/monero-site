@@ -47,7 +47,7 @@ Generated new wallet: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmh
 view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903
 **********************************************************************
 Your wallet has been generated.
-To start synchronizing with the daemon, use "refresh" command.
+To start synchronizing with the @daemon, use "refresh" command.
 Use "help" command to see the list of available commands.
 Always use "exit" command when closing monero-wallet-cli to save your
 current session's state. Otherwise, you might need to synchronize

@@ -18,7 +18,7 @@
 
 - Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)
 
-- Don't run the Monero daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account
+- Don't run the Monero @daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account
 
 - When prompted for a name, give it any name, it doesn't really matter
 

@@ -19,7 +19,7 @@ We first have to ensure that we're sufficiently prepared. This entails the follo
 
 4. Your Ledger needs to be plugged in and the Ledger Monero app should be running.
 
-5. Either your daemon (`monerod.exe`) should be running and preferably be fully synced or you should connect to a remote node.
+5. Either your @daemon (`monerod.exe`) should be running and preferably be fully synced or you should connect to a remote node.
 
 Now that we're sufficiently prepared, let's start!
 
