@@ -25,7 +25,6 @@ plugins:
   - jekyll-feed
 
 feed:
-  path: feed.atom
   posts_limit: 20
 
 # jekyll-multiple-languages-plugin settings:

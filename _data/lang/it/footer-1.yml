@@ -11,7 +11,7 @@
   - name: Libreria
     url: library
   - name: Feed RSS
-    url: feed.atom
+    url: feed.xml
 - title: Chat IRC
   subfolderitems:
   - name: monero
