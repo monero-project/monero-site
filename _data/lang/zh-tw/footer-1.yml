@@ -44,8 +44,6 @@
   subfolderitems:
   - name: Open Alias
     url: https://openalias.org/
-  - name: Kovri
-    url: https://kovri.io/
   - name: 門羅幣研究實驗室
     url: resources/research-lab/
   - name: 門羅幣新聞資料袋
