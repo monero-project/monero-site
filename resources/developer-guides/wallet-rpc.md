@@ -3,6 +3,7 @@ layout: user-guide
 title: "Wallet RPC documentation"
 ---
 
+{% t global.lang_tag %}
 # Wallet RPC
 
 ## Introduction
