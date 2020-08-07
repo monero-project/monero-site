@@ -88,6 +88,7 @@ hangouts:
   resources_para: In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects. Mattermost even has relays into the most popular Monero-related IRC channels.
   irc: IRC Channels
   irc_para: The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.
+  bridges: These channels are bridged to a number of other platforms, allowing the community to communicate using their favourite chat service/protocol.
   mailing_list: Mailing List
   mailing_list1: Do you want to receive important announcements directly on your email address? join our mailing lists!
   subscribe: Subscribe
@@ -103,8 +104,6 @@ hangouts:
     monero-translations: Localizing Monero into other languages.
     monero-hardware: Building hardware wallets to keep your Monero safe.
     monero-site: Where the development of this website is coordinated
-    kovri: This channel is used to discuss all things Kovri related.
-    kovri-dev: The many contributors and developers come here to discuss Kovri dev-y things.
 
 merchants:
   intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. These merchants are not endorsed by the community, see disclaimer at the bottom of this page. If a company no longer accepts Monero or you would like your business to be listed, please
