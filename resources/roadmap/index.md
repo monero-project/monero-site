@@ -183,6 +183,8 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.released-0-15-0-5 %}</li>
                                 <h3 id="months">{% t roadmap.apr %}</h3>
                                     <li class="completed">{% t roadmap.dandelion %}</li>
+                                <h3 id="months">{% t roadmap.may %}</h3>
+                                    <li class="completed">{% t roadmap.released-0-16-0-0 %}</li>
                                 <h3 id="months">{% t roadmap.comingsoon %}</h3>
                                     <li class="ongoing">{% t roadmap.onionaddress %}</li>
                                     <li class="ongoing">{% t roadmap.supercop %}</li>
