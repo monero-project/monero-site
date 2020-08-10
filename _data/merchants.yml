@@ -179,7 +179,7 @@
       url: https://moneroaddress.org/
     - name: Ownbit
       url: https://ownbit.io
-    - name: NOWNodes: Explorer & Node APIs
+    - name: NOWNodes - Explorer & Node APIs
       url: https://nownodes.io/connect-xmr-node
 - category: Services
   id: services
