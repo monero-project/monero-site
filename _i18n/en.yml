@@ -443,6 +443,19 @@ developer-guides:
   moneroexamples: Rich list of examples and docs related to Monero development.
   moneroecosystem: Community of Monero developers. Contains libraries and resources and guides of some Monero Workgroups, like the Localization Workgroup and the Outreach Workgroup.
   monerose: One of the most complete resources for both users and developers.
+  libraries: Libraries and helpers
+  libraries_para: Monero libraries created and maintained by the community. They are not vetted by the core team and are listed here only for convenience. Make your own researches before using them. If you want to add a library to this list, please open an issue on
+  monero-javascript: A Node.js library for using Monero.
+  monero-nodejs: Wallet manager for interacting with monero-wallet-rpc.
+  monerophp: A Monero library written in PHP by the Monero Integrations team.
+  monerowp: Monero WooCommerce Plugin for Wordpress.
+  monero-python: A comprehensive Python module for handling Monero cryptocurrency.
+  moneriote-python: Python scripts to maintain Monero opennodes DNS records.
+  monerorpc: A Java interface for Monero wallet and daemon RPC.
+  monero-java: A Java library for using Monero.
+  monero-cpp: A C++ library for using Monero.
+  vanity-monero: Generate vanity address for CryptoNote currency (Monero etc.).
+  go-monero-rpc-client: A go client for the Monero wallet and daemon RPC.
 
 user-guides:
   general: General
