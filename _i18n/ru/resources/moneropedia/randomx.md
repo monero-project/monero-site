@@ -1,10 +1,10 @@
 ---
 terms: ["randomx", "random-x"]
-summary: "ASIC-resistant POW algoritm currenctly used by Monero"
+summary: "ASIC-устойчивый алгоритм доказательства работы (POW), используемый Monero в настоящее время"
 ---
 
-RandomX is a Proof Of Work algorithm developed by Monero contributors and adopted by Monero from release 0.15.
+RandomX — это алгоритм доказательства работы, разработанный контрибьюторами Monero и используемый Monero начиная с версии 0.15.
 
-This innovative POW is optimized for CPUs and it's based on execution of random code and other memory-heavy techniques. The goal is to discourage the use of specialized hardware (like ASICs) for mining Monero. RandomX was created with the intent of keeping mining decentralized and to create a more egalitarian distribution of the block rewards.
+Данный инновационный алгоритм оптимизирован под CPU, а в основе его работы лежит выполнение случайного кода и применение других технологий, требующих большого объёма памяти. Задача RandomX состоит в том, чтобы исключить возможность использования специализированного оборудования (например, ASIC) для майнинга Monero. RandomX был создан с целью поддержания децентрализации майнинга и более эгалитарного распределения вознаграждений за вычисление блоков.
 
-RandomX specifications and development can be found [on the GitHub repository](https://github.com/tevador/RandomX), while [an article dedicated to RandomX](https://www.monerooutreach.org/stories/RandomX.html) made by the Outreach workgroup contains more information about the history of RandomX and its relation with Monero.
+Спецификации и информацию о разработке RandomX можно найти [в репозитории GitHub](https://github.com/tevador/RandomX), а также в [статье, посвященной RandomX](https://www.monerooutreach.org/stories/RandomX.html), написанной рабочей группой Monero Outreach. Указанная статья содержит больше сведений об истории RandomX и о связи этого алгоритма с Monero.
