@@ -2570,13 +2570,13 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"c
 Restores a wallet from a given wallet address, view key, and optional spend key.
 
 Inputs:
-* *restore_height* - integer; (Optional; default = 0) The block height to restore the wallet from.
+* *restore_height* - integer; (Optional; defaults to 0) The block height to restore the wallet from.
 * *filename* - string; The wallet's file name on the RPC server. 
 * *address* - string; The wallet's primary address.
 * *spendkey* - string; (Optional; omit to create a view-only wallet) The wallet's private spend key. 
 * *viewkey* - string; The wallet's private view key.
-* *password* - string; Sets the password for opening the wallet on the current file system.
-* *autosave_current* - boolean; (Default = false) If true, save the current wallet before generating the new wallet. 
+* *password* - string; Sets the wallet's password.
+* *autosave_current* - boolean; (Defaults to true) If true, save the current wallet before generating the new wallet. 
 
 Outputs:
 * *address* - string; The wallet's address.
