@@ -4118,6 +4118,23 @@ p.hangouts-social {
     margin-right: auto;
 }
 
+.hangouts a.chats-img {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.hangouts img.mattermost {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+}
+
+.hangouts img.matrix {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3rem;
+}
+
 @media only screen and (max-width: 75rem) {
 
 }

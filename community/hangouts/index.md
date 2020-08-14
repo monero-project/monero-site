@@ -74,12 +74,24 @@ permalink: /community/hangouts/index.html
                  <h2>{% t hangouts.irc %}</h2>
               </div>
               <div class="row start-xs">
-                <p>{% t hangouts.irc_para %}</p>
+                <p>{% t hangouts.irc_para %} {% t hangouts.bridges %}</p>
              </div>
              <div class="row irc">
              {% for channel in site.translations[site.lang].hangouts.irc_channels %}
                <div class="col-md-4 col-xs-12">
-                 <a href="irc://chat.freenode.net/#{{ channel[0] }}">#{{ channel[0] }}</a>
+                 <a href="irc://chat.freenode.net/#{{ channel[0] }}">#{{ channel[0] }}</a> 
+                 {% for rooms_list in site.data.chats.chats %}
+                   {% for room in rooms_list %}
+                     {% if room[0] == channel[0] %}
+                       {% if rooms_list.mattermost %}
+                         <a class="chats-img" href="{{ rooms_list.mattermost }}"><img class="mattermost" src="/img/mattermost.png" title="MatterMost" alt="Mattermost logo"></a>
+                       {% endif %}
+                       {% if rooms_list.matrix %}
+                         <a class="chats-img" href="{{ rooms_list.matrix }}"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a>
+                       {% endif %}
+                     {% endif %}
+                   {% endfor %}
+                 {% endfor %}
                 <p>{% t hangouts.irc_channels.{{ channel[0] }} %}</p>
               </div>
              {% endfor %}
