@@ -1782,7 +1782,7 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 
 .btn-fixed {
-    width: 10rem;
+    min-width: 10rem;
     display: block;
 }
 
