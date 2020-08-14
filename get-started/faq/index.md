@@ -116,6 +116,8 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-buy"></a>{% t faq.q2 %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.a2 %}</p>
+                        <p>{% t faq.a2exchanges %} <a href="{{ site.baseurl }}/community/merchants/#exchanges">{% t titles.merchants %}</a>.</p>
+                        <p>{% t faq.additional %} <a href="https://www.monerooutreach.org/how-to-buy-monero.html">How to Buy Monero (Monero Outreach)</a></p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-different">
