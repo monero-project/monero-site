@@ -3,6 +3,7 @@ layout: user-guide
 title: "Daemon RPC documentation"
 ---
 
+{% t global.lang_tag %}
 # Daemon RPC
 
 ## Introduction
