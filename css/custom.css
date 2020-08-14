@@ -3210,6 +3210,10 @@ footer {
   display:none;
 }
 
+.mobile-only .nopadding {
+    padding: 0;
+}
+
 @media only screen and (max-width: 75rem) {
 
 .desktop-only {
@@ -4716,9 +4720,18 @@ input.accordion[type=radio]:checked + label::after {
 .tab-content p {
   margin: 1rem 0;
 }
+}
+
+@media only screen and (max-width: 62rem) {
+
 
 [data-tooltip]:before {
-  width: 0;
+  width: auto;
+  bottom: 100%;
+}
+    
+.downloads ul.logo {
+  padding-inline-start: 20px;
 }
 
 }
