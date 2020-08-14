@@ -48,7 +48,7 @@
     
     <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
 
-  <!-- Expose helper tag to support automated discovery of blog feed -->
-  {% feed_meta %}
+  <!-- Feed autodetection -->
+  <link type="application/atom+xml" rel="alternate" href="{{ site.baseurl_root }}/feed.xml" title="Monero">
 
   </head>

@@ -11,7 +11,7 @@
   - name: Librairie
     url: library
   - name: Flux RSS
-    url: feed.atom
+    url: feed.xml
 - title: Canaux IRC
   subfolderitems:
   - name: monero

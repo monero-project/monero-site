@@ -11,7 +11,7 @@
   - name: Księgarnia
     url: library
   - name: Kanał RSS
-    url: feed.atom
+    url: feed.xml
 - title: Kanały IRC
   subfolderitems:
   - name: monero

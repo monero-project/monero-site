@@ -9,7 +9,7 @@
   - name: دليل المستخدم
     url: resources/user-guides/
   - name: RSS Feed
-    url: feed.atom
+    url: feed.xml
 - title: IRC قنوات الدردشة
   subfolderitems:
   - name: مونيرو

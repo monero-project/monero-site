@@ -11,7 +11,7 @@
   - name: 圖書出版品
     url: library
   - name: RSS 摘要
-    url: feed.atom
+    url: feed.xml
 - title: IRC 頻道
   subfolderitems:
   - name: monero
