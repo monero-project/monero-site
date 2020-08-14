@@ -75,6 +75,13 @@ permalink: /press-kit/index.html
 </section>
 <section class="container full">
   <div class="info-block">
+      <h2>{% t press-kit.othersymbols %}</h2>
+      <div>
+           <h3><a href="/press-kit/logos/mrl-logo.svg">Monero Research Lab logo (SVG)</a></h3>
+           <p>{% t press-kit.mrllogo_para %}</p>
+      </div>
+  </div>
+  <div class="info-block">
     <h2>{% t press-kit.pressdoc %}</h2>
     <div>
         <h3><a href="http://www.monerooutreach.org/quick-facts.html">{% t press-kit.quickfacts %}</a></h3>
