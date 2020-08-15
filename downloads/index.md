@@ -91,6 +91,7 @@ permalink: /downloads/index.html
                     {% endfor %}
                     </ul>
                   </div>
+                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package">{% t downloads.packages_link %}</a>.</p>
                   <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                   <p><details>
@@ -185,6 +186,7 @@ permalink: /downloads/index.html
                       {% endfor %}
                     </ul>
                 </div>
+                <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package">{% t downloads.packages_link %}</a>.</p>
                 <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                 <p><details>
