@@ -109,6 +109,7 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [stop_mining](#stop_mining)
 * [get_languages](#get_languages)
 * [create_wallet](#create_wallet)
+* [generate_from_keys](#generate_from_keys)
 * [open_wallet](#open_wallet)
 * [restore_deterministic_wallet](#restore_deterministic_wallet)
 * [close_wallet](#close_wallet)
@@ -2560,6 +2561,37 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"c
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
+  }
+}
+```
+
+
+### **generate_from_keys**
+
+Restores a wallet from a given wallet address, view key, and optional spend key.
+
+Inputs:
+* *restore_height* - integer; (Optional; defaults to 0) The block height to restore the wallet from.
+* *filename* - string; The wallet's file name on the RPC server. 
+* *address* - string; The wallet's primary address.
+* *spendkey* - string; (Optional; omit to create a view-only wallet) The wallet's private spend key. 
+* *viewkey* - string; The wallet's private view key.
+* *password* - string; The wallet's password.
+* *autosave_current* - boolean; (Defaults to true) If true, save the current wallet before generating the new wallet. 
+
+Outputs:
+* *address* - string; The wallet's address.
+* *info* - string; Verification message indicating that the wallet was generated successfully and whether or not it is a view-only wallet.
+
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"generate_from_keys", "params"={"restore_height":0,"filename":"wallet_name","address":"42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM","spendkey":"11d3fd247672c4cb29b6e38791dcf07629cd2d68d868f0b78811ce584a6b0d01","viewkey":"97cf64f2cd6c930242e9bed5f14f8f16a33047229aca3eababf4af7e8d113209","password":"pass","autosave_current":true}},' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  result": {"address":"42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM",
+    "info":"Wallet has been generated successfully."   
   }
 }
 ```
