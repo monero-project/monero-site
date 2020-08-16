@@ -3,6 +3,7 @@ terms: ["ring-signature", "ring-signatures", "podpis-pierścieniowy", "podpisem-
 summary: "Grupa podpisów kryptograficznych z przynajmniej jednym prawdziwym uczestnikiem, bez możliwości rozróżnienia, kto w danej grupie nim jest, ponieważ wszystkie podpisy figurują jako ważne."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 W kryptografii podpis pierścieniowy jest rodzajem podpisu cyfrowego, który może być dokonany przez jakiegokolwiek członka grupy użytkowników, w której każdy posiada klucz. Wiadomość opatrzona podpisem pierścieniowym jest zatwierdzona przez kogoś z konkretnej grupy. Jedną z charakterystyk bezpieczeństwa podpisu pierścieniowego jest to, że ustalenie klucz *którego* członka grupy został użyty do podpisu jest obliczeniowo niewykonywalne.

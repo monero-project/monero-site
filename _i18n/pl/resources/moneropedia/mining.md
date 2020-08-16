@@ -3,6 +3,7 @@ terms: ["mining", "miner", "miners", "wydobycie", "wydobywanie", "wydobywania", 
 summary: "Proces kryptograficznego obliczania matematycznego dowodu do bloku zawierającego wiele transakcji, który następnie jest dodawany do łańcucha bloków."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Proces kryptograficznego obliczania matematycznego dowodu do bloku zawierającego wiele transakcji, który następnie jest dodawany do łańcucha bloków.

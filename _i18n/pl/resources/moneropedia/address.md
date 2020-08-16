@@ -3,6 +3,7 @@ terms: ["address", "addresses", "adres", "adresu", "adresie"]
 summary: "Alias nazwy adresu, np. donate.getmonero.org lub zestaw 95 znaków zaczynający się od 4"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Gdy wysyłasz do kogoś Monero, potrzebujesz jedynie jednej informacji, a jest nią adres Monero tej osoby. Jest to ciąg 95 znaków zaczynający się od "4". Przykładowo adres darowizn Monero to <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.

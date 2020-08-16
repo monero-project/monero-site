@@ -3,6 +3,7 @@ terms: ["stealth-address", "stealth-addresses"]
 summary: "automatic one-time addresses for every transaction"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 混淆地址是门罗币固有隐私性的重要组成部分。它们允许并要求发送方代表接收方为每个@交易创建随机的一次性地址。接收方只能发布一个地址，但他/她的所有收入支付都被转到@区块链上的唯一地址，该地址无法链接回接收方发布的地址或任何其他交易的地址。通过使用混淆地址，只有发送方和接收方可以确定付款被发送到何处。

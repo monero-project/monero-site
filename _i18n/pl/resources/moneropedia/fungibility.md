@@ -3,6 +3,7 @@ terms: ["fungibility", "fungible", "zamienialność", "zamienialności", "zamien
 summary: "Charakterystyka waluty, gdzie dwie jednostki mogą zostać zamienione jedna na drugą."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Charakterystyka waluty, gdzie dwie jednostki mogą zostać zamienione jedna na drugą.

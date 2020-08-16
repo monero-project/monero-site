@@ -3,6 +3,7 @@ terms: ["账户", "钱包"]
 summary: "类似于银行账户的功能，包含所有您发送和接收的交易"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 那些熟悉门罗币的前辈（例如：比特币）的人会更熟悉“钱包”这个术语，用以描述这些。在门罗币这里，我们称之为一个帐户，它是一个由门罗币用户拥有和操作的私人帐户。

@@ -3,6 +3,7 @@ terms: ["atomic-units", "atomic-unit"]
 summary: "Atomic Units refer to the smallest fraction of 1 XMR."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 原子单位是指1XMR的最小分数。

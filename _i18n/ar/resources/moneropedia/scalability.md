@@ -3,7 +3,7 @@ terms: ["scalability"]
 summary: "How Monero scaling is flexible and can accommodate many transactions as demand changes"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 The size of Monero @blocks (which contain @transactions) is flexible and can accommodate many transactions as demand changes. Formulas determine how the reward miners receive interacts with the number of transactions they choose to include in blocks. The @blockchain can therefore scale to meet changes in transaction volume.

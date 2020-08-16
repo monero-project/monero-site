@@ -3,6 +3,7 @@ terms: ["spend-key", "spend-keys", "klucz-wydawania", "klucza-wydawania", "klucz
 summary: "Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, które posiada każde konto. *Prywatny* klucz wydawania służy do wydawania środków na koncie."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, które posiada każde konto. *Prywatny* klucz wydawania służy do wydawania środków na koncie.

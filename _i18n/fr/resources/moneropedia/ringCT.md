@@ -3,6 +3,7 @@ terms: ["ringCT", "ring-CT", "transactions-confidentielles-de-cercle", "transact
 summary: "Un moyen de masquer le montant envoyé dans une transaction Monero"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 RingCT, abréviation de Transactions confidentielles de cercle (*Ring Confidential Transactions*), est la méthode grâce à laquelle les montants sont cachés dans Monero.
 

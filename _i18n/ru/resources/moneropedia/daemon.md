@@ -3,7 +3,8 @@ terms: ["daemon", "демон"]
 summary: "Фоновый процесс, который запускает и управляет узлом Monero"
 ---
 
-'Демон' - это общий термин части программного обеспечения, работающего в фоновом режиме. В Monero демон запускается с помощью программы 'monerod'. Если вы используете демон локально, вы запускаете локальный @узел. Если демон запущен на другом устройстве, значит, это @удаленный-узел. @кошелёк, такой как CLI или GUI, должен подключаться к демону (локальному или удаленному) для возможности передачи @транзакций в сеть.
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+'Daemon' is the general term for a piece of software running in the background. In Monero, the Daemon is started through the 'monerod' program. If you run the Daemon locally, you are running a local @node. If the Daemon is running on another device it's a @remote-node. A @wallet, like the CLI or the GUI, needs to connect to a Daemon (local or remote) to relay @transactions to the network.
 
 Также, существует возможность отправлять команды демону напрямую или через интерфейс RPC. Ознакомьтесь с [Руководством по демону RPC]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), которое содержит подробное руководство (с примерами) с доступными вызовами RPC. Для получения подробной технической информации о демоне перейдите по ссылке на Monerodocs внизу этой страницы.
 

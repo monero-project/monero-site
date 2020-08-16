@@ -3,6 +3,7 @@ terms: ["stealth-address", "stealth-addresses", "ukryty-adres", "ukrytym-adresie
 summary: "Automatyczny jednorazowy adres każdej transakcji."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Ukryte adresy są istotną częścią nieodłącznej prywatności Monero. Pozwalają one i wymagają od nadawcy stworzenia losowego jednorazowego adresu w imieniu odbiorcy przy każdej @transakcji. Odbiorca może opublikować tylko jeden adres i mimo to otrzymywać wszystkie płatności na unikalny adres w @łańcuchu-bloków, gdzie nie mogą one zostać powiązane ani z publicznym adresem odbiorcy, ani z żadnym innym adresem transakcji. Korzystając z urkytego adresu, jedynie nadawca i odbiorca mogą wiedzieć, dokąd płatność została wysłana.

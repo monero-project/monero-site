@@ -3,6 +3,7 @@ terms: ["mnemonic-seed", "mnemonic", "kod-mnemoniczny", "kodzie-mnemonicznym", "
 summary: "Ciąg 13 lub 25 słów używany do tworzenia kopii zapasowej konta Monero, dostępny w wielu językach."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Ciąg 13 lub 25 słów używany do tworzenia kopii zapasowej konta Monero, dostępny w wielu językach. Ten 25-słowny ciąg (13-słowny w przypadku MyMonero) zawiera wszystkie informacje potrzebne do wglądu i wydawania funduszy z @konta Monero.

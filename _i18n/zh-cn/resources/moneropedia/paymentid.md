@@ -3,6 +3,7 @@ terms: ["payment-ID", "payment-IDs"]
 summary: "an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 支付ID是一个**任意**和**可选**交易附件，包含32字节（64个十六进制字符）或8字节（在集成地址的情况下）。

@@ -3,6 +3,7 @@ terms: ["ring-signature", "ring-signatures", "signature-de-cercle", "signatures-
 summary: "Un groupe de signatures cryptographiques qui contiennent au moins un participant réel, mais aucun moyen de déterminer laquelle est la vraie car elles paraissent toutes valides"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 En cryptographie, une signature de cercle est une sorte de signature numérique qui peut être générée par n'importe quel nombre d'utilisateurs disposant chacun d'une clef. De ce fait, un message signé par une signature de cercle est endossé par quelqu'un dans un groupe de personnes spécifique. L'une des propriétés de sécurité d'une signature de cercle est qu'il est informatiquement impossible de déterminer *quelle* clef des membres du groupe a été utilisée pour générer la signature.

@@ -3,6 +3,7 @@ terms: ["wallet", "wallets", "portfel", "portfela"]
 summary: "Portfel przechowuje informacje niezbędne do wysyłania i otrzymywanie Monero."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Konto Monero, lub inaczej portfel, przechowuje informacje niezbędne do wysyłania i otrzymywanie Monero. Poza wysyłaniem i otrzymywaniem, oprogramowanie portfela Monero utrzymuje w prywatności historię twoich transakcji i pozwala na kryptograficzne podpisywanie wiadomości. Zawiera on także program do wydobywania monet i książkę adresową.

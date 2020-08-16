@@ -3,6 +3,7 @@ terms: ["address", "addresses"]
 summary: "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础
 
 当你发送门罗币给某人时，你只需要一条信息，那就是他们的门罗币地址。一个*原始* 门罗币地址由95个字符组成，以“4”开头。例如，门罗币的捐款地址是 <span class="long-term">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</span>.

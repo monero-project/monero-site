@@ -3,6 +3,7 @@ terms: ["node", "nodes", "full-node", "full-nodes", "узле", "узлами", 
 summary: "Устройство в сети интернет с установленным программным обеспечением Monero, полной копией блокчейна Monero, активно поддерживающее сеть Monero."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Основная информация
 
 Устройство в сети интернет с установленным программным обеспечением Monero, полной копией @блoкчейна Monero, активно поддерживающее сеть Monero.

@@ -3,6 +3,7 @@ terms: ["fluffy blocks", "fluffyblocks"]
 summary: "a way of saving bandwidth when sending new blocks around the network"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A @block is made up of a header and @transactions. Fluffy Blocks only contain

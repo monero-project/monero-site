@@ -3,7 +3,7 @@ terms: ["mining", "miner", "miners"]
 summary: "the process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 The process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain.

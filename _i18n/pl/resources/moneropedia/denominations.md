@@ -3,6 +3,7 @@ terms: ["denominations", "subunits", "nominał", "nominały", "nominałem", "nom
 summary: "Nominał jest prawidłowym opisem ilości waluty. Często jest on podjednostką waluty, na przykład cent jest 1/100 danej jednostki waluty."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Nominał jest prawidłowym opisem ilości waluty. Często jest on podjednostką waluty, na przykład cent jest 1/100 danej jednostki waluty.

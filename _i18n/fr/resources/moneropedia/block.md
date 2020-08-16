@@ -3,6 +3,7 @@ terms: ["block", "blocks", "bloc", "blocs"]
 summary: "Un conteneur de transactions, dont une séquence forme une chaîne de blocs."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Un bloc est un conteneur de @transactions, avec l'ajout d'un nouveau bloc à la @chaîne-de-blocs en moyenne toutes les 2 minutes (voir la constante `DIFFICULTY_TARGET_V2` définit à 120 secondes).

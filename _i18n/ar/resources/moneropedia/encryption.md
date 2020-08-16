@@ -4,7 +4,7 @@ terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "dec
 summary: "The process of encoding messages or information in a way that only authorized parties can decode and read"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 From [Encryption](https://en.wikipedia.org/wiki/Encryption):

@@ -69,7 +69,7 @@ We are trying to move most of the localization work on Weblate, but some parts o
 * Navigate to the correct language in the /i18n folder and find the page you wish to translate
 * Do not translate any of the `*.yml` files in the /_18n folder
 * Click the file and translate the page, not touching any HTML or markdown
-* Remove `{% include untranslated.html %}` from the page
+* Adapt the snippet keeping track of the status of the translation in the document `{% include disclaimer.html translated="no" translationOutdated="no" %}`, changing to `yes` where appropriate
 * Test/Build
 * Submit PR
 
@@ -86,7 +86,7 @@ Moneropedia entries have two specificities:
 Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
 This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
 
-* The old *untranslated* snippet must be removed, therefore the next section is irrelevant here.
+* The snippet keeping track of the status of the translation must be updated (`{% include disclaimer.html translated="no" translationOutdated="no" %}`). If the document is translated, change `translated="no"` to `translated="yes"`. If the document is translated, but the original file (in English) was updated, change `translationOutdated="no"` to `translationOutdated="yes`.
 
 Finally, your entry should go from:
 ```
@@ -96,7 +96,7 @@ terms: ["English", "terms"]
 summary: "English summary."
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ```
 To:
 ```

@@ -3,6 +3,7 @@ terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pederse
 summary: "Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 佩德森承诺是一种密码算法，它允许验证者在不暴露或无法更改某个值的情况下提交该值。

@@ -3,6 +3,7 @@ terms: ["node", "nodes", "full-node", "full-nodes", "węzeł", "węzła", "węz�
 summary: "Urządzenie internetowe uruchamiające oprogramowanie Monero, posiadające pełną kopię łańcuchów bloków monero i aktywnie biorące udział w sieci Monero."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Urządzenie internetowe uruchamiające oprogramowanie Monero, posiadające pełną kopię łańcuchów bloków monero i aktywnie biorące udział w sieci Monero.

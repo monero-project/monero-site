@@ -3,6 +3,7 @@ terms: ["unlock-time"]
 summary: "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 一种特殊的交易，在这种交易中，收件人只能在将来某个日期之后才可以使用资金，这是由发送者设定的。

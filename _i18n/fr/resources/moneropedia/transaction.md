@@ -3,6 +3,7 @@ terms: ["transaction", "transactions"]
 summary: "un conteneur signé cryptographiquement qui détaille le transfert de Moneroj à un destinataire (ou des destinataires)"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Un conteneur signé cryptographiquement qui détaille le transfert de Moneroj à un destinataire (ou des destinataires).

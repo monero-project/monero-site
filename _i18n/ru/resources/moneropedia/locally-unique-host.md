@@ -4,6 +4,7 @@ terms: ["Locally-unique-host", "локально-уникальным-хосто
 summary: "Хост, определенный вами и разрешенный только вами"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Основная информация
 
 Локально уникальным хостом является [FQDN](https://en.wikipedia.org/wiki/FQDN), определяемый и разрешаемый **вами** подобно тому, как реализуется [хост-файл](https://en.wikipedia.org/wiki/Hosts_(file). Не следует путать с @канонически-уникальным-хостом.

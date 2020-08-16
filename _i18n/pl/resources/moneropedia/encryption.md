@@ -4,6 +4,7 @@ terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "dec
 summary: "Proces kodowania wiadomości lub informacji w taki sposób, że tylko upoważnione osoby mogą je odkodować i odczytać."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Za Wikipedią: [Szyfrowanie](https://en.wikipedia.org/wiki/Encryption):

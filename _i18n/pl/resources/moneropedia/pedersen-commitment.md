@@ -3,6 +3,7 @@ terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pederse
 summary: "Algorytmy kryptograficzne pozwalające osobie udowadniającej na zobowiązanie się do pewnej wartości bez ujawniania jej ani nie będąc w stanie jej zmienić."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Algorytmy kryptograficzne pozwalające osobie udowadniającej na zobowiązanie się do pewnej wartości bez ujawniania jej ani nie będąc w stanie jej zmienić.

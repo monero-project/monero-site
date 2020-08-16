@@ -4,7 +4,7 @@ terms: ["Canonically-unique-host"]
 summary: "A host that is canonically resolved to an address or set of addresses"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A Canonically-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) that will canonically resolve to a designated address or set of addresses. Not to be confused with a @locally-unique-host.

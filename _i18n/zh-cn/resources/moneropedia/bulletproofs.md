@@ -3,6 +3,7 @@ terms: ["bulletproofs", "bulletproof"]
 summary: "a new kind of range proofs replacing RingCT in transactions to obfuscate the amounts sent"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 引入环机密交易是为了混淆交易金额。@环机密交易的一个目标是证明@交易中的输入和输出之和为0，并且所有输出都是正数。

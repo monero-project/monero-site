@@ -3,6 +3,7 @@ terms: ["block", "blocks", "blok", "bloku", "blokiem", "bloków"]
 summary: "Zbiornik transakcji, jego sekwencja tworzy łańcuch bloków."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Blok jest zbiornikiem @transakcji, a każdy nowy blok dodawany jest do @łańcucha-bloków przeciętnie co dwie minuty (zobacz stały `DIFFICULTY_TARGET_V2` - cel trudności - zdefiniowany jako 120 sekund).

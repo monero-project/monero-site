@@ -3,6 +3,7 @@ terms: ["OpenAlias"]
 summary: "a standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 门罗币核心团队发布了一个名为 OpenAlias 的标准，该标准允许更多人类可读的地址，并“解决”了 Zooko 三角（人性化-去中心化-安全）。

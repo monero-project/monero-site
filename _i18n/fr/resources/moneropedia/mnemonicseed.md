@@ -3,6 +3,7 @@ terms: ["mnemonic-seed", "mnemonic", "phrase-mnémonique", "mnémonique"]
 summary: "Une phrase de 13 ou 25 mots utilisé pour sauvegarder votre compte Monero, disponible dans une quantité de langues"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Une phrase de 13 ou 25 mots utilisé pour sauvegarder votre compte Monero, disponible dans une quantité de langues. Cette phrase de 25 mots (13 mots dans le cas de MyMonero) a toutes les informations nécessaire pour voir et dépenser des fonds depuis un @compte Monero.

@@ -3,7 +3,7 @@ terms: ["pruning"]
 summary: "Feature that allows node operators to download and sync only 1/3 of the blockchain"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 'Pruning' allows node operators to save 2/3 of storage space while keeping the full transaction history. Pruning works by removing 7/8 of unnecessary ring signature data. The 1/8 remaining data will be available to the other nodes and will be used to sync with the network. Other pruned nodes will have a random 1/8 of the data, which they will also make available to the network. There are no privacy or security downsides when using a pruned node.
 
 There are three ways to prune:

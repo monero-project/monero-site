@@ -3,6 +3,7 @@ terms: ["fluffy blocks", "fluffyblocks", "blocs légers", "blocs allégés"]
 summary: "une façon d'économiser de la bande passante lors de la transmission de nouveaux blocs sur le réseau"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Un @bloc est constitué d'une entête et de @transactions. Les blocs allégés ne contiennent qu'une entête, une liste d'indices de transactions, et toute transaction manquante au nœud recevant le bloc. Cela économise de la bande passante car les nœuds peuvent déjà connaître la plupart des transactions du blocs et non pas besoin qu'on leur transmette de nouveau.

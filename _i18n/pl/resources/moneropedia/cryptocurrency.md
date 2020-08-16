@@ -3,6 +3,7 @@ terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins", "kryptowalu
 summary: "Waluta cyfrowa, w której użyte są techniki szyfrowania w celu regulacji generowania jednostek walutowych i weryfikowania transferów płatniczych, zazwyczaj funkcjonująca niezależnie od banku centralnego."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Waluta cyfrowa, w której użyte są techniki szyfrowania w celu regulacji generowania jednostek walutowych i weryfikowania transferów płatniczych, zazwyczaj funkcjonująca niezależnie od banku centralnego.
