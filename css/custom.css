@@ -4759,6 +4759,20 @@ input.accordion[type=radio]:checked + label::after {
 
 /*********************TOOLTIPS********************/
 
+.info-block a.info-tooltip {
+  border-bottom: none;
+}
+
+.info-block a.info-tooltip:hover {
+  border-bottom: 2px solid #a1aabb;
+}
+
+.info-tooltip {
+  background: url("/img/circled-i.svg") no-repeat right top;
+  padding-right: 0.7rem;
+  background-size: 0.7rem;
+}
+
 [data-tooltip] {
   position: relative;
   z-index: 2;
