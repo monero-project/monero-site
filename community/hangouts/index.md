@@ -10,19 +10,19 @@ permalink: /community/hangouts/index.html
     <section class="hangouts-social container">   
         <ul class="row center-xs">
             <li>
-                <a href="https://twitter.com/monero" target="_blank" rel="noreferrer noopener"><div class="social-icon twitter"></div></a>
+                <a class="ext-noicon" href="https://twitter.com/monero" target="_blank" rel="noreferrer noopener"><div class="social-icon twitter"></div></a>
             </li>
             <li>
-                <a href="https://reddit.com/r/Monero" target="_blank" rel="noreferrer noopener"><div class="social-icon reddit"></div></a>
+                <a class="ext-noicon" href="https://reddit.com/r/Monero" target="_blank" rel="noreferrer noopener"><div class="social-icon reddit"></div></a>
             </li>
             <li>
-                <a href="https://www.facebook.com/monerocurrency/" target="_blank" rel="noreferrer noopener"><div class="social-icon facebook"></div></a>
+                <a class="ext-noicon" href="https://www.facebook.com/monerocurrency/" target="_blank" rel="noreferrer noopener"><div class="social-icon facebook"></div></a>
             </li>
             <li>
-                <a href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener"><div class="social-icon github"></div></a>
+                <a class="ext-noicon" href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener"><div class="social-icon github"></div></a>
             </li>
             <li>
-                <a href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener"><div class="social-icon gitlab"></div></a>
+                <a class="ext-noicon" href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener"><div class="social-icon gitlab"></div></a>
             </li>
         </ul>
     </section>

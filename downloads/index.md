@@ -249,33 +249,33 @@ permalink: /downloads/index.html
                             <td><img src="/img/cakewallet.png" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
-                            <td><a id="ext-noicon" href="https://github.com/cake-tech/cake_wallet"><span class="icon-github"></span></a></td>
+                            <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
                             <td><img src="/img/Monerujo-wallet.png" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
                             <td><span class="icon-android"></span></td>
                             <td>X</td>
-                            <td><a id="ext-noicon" href="https://github.com/m2049r/xmrwallet"><span class="icon-github"></span></a></td>
+                            <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
                             <td><img src="/img/mymonero.png" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
                             <td><span class="icon-apple"></span></td>
                             <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a id="ext-noicon" href="https://github.com/mymonero"><span class="icon-github"></span></a></td>
+                            <td><a class="ext-noicon" href="https://github.com/mymonero"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
                             <td><img src="/img/edge-wallet.png" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
-                            <td><a id="ext-noicon" href="https://github.com/EdgeApp"><span class="icon-github"></span></a></td>
+                            <td><a class="ext-noicon" href="https://github.com/EdgeApp"><span class="icon-github"></span></a></td>
                         </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <ul>
-                                <li><a id="ext-noicon" href="https://cakewallet.io"><img style="width: 50px" src="/img/cakewallet.png" alt="Cake Wallet Logo">Cake Wallet</a></li>
-                                <li><a id="ext-noicon" href="https://monerujo.io"><img src="/img/Monerujo-wallet.png" alt="Monerujo Logo">Monerujo</a></li>
-                                <li><a id="ext-noicon" href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo">MyMonero</a></li>
-                                <li><a id="ext-noicon" href="https://edge.app/"><img src="/img/edge-wallet.png" alt="Edge Logo">Edge</a></li>
+                                <li><a class="ext-noicon" href="https://cakewallet.io"><img style="width: 50px" src="/img/cakewallet.png" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://monerujo.io"><img src="/img/Monerujo-wallet.png" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo">MyMonero</a></li>
+                                <li><a class="ext-noicon" href="https://edge.app/"><img src="/img/edge-wallet.png" alt="Edge Logo">Edge</a></li>
                             </ul>
                         </div>
             </div>
@@ -307,11 +307,11 @@ permalink: /downloads/index.html
                             </div>
                         </div>
                         <div class="row mob-wallets center-xs">
-                            <a href="https://www.ledger.com/monero-wallet/"><img src="/img/ledger.png"></a>
-                            <a href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png"></a>
+                            <a class="ext-noicon" href="https://www.ledger.com/monero-wallet/"><img src="/img/ledger.png"></a>
+                            <a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png"></a>
                         </div>
                         <div class="row mob-wallets center-xs">
-                            <a href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png"></a>
+                            <a class="ext-noicon" href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png"></a>
                         </div>                    
                 </div>
                 <!-- End 'Hardware Wallets' -->

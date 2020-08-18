@@ -975,6 +975,29 @@ a {
     text-decoration: none;
 }
 
+/* External link icon */
+
+a[href^="https:"]:not([href*="getmonero.org"]):not([class*="btn-link"]):not([class="chats-img"]):not([class*="ext-noicon"]):not([class*="white"]) {
+  background: url(/img/external.svg) no-repeat right;
+  padding-right: 0.7em;
+  background-size: 0.6em;
+}
+
+a[href^="https:"]:not([href*="getmonero.org"]).white {
+  background: url(/img/external-white.svg) no-repeat right;
+  padding-right: 0.7em;
+  background-size: 0.6em;
+}
+
+a[href^="https:"]:not([href*="getmonero.org"]).orange {
+  background: url(/img/external.svg) no-repeat right;
+  padding-right: 0.7em;
+  padding-top: 0.5em;
+  background-size: 0.6em;
+}
+
+/* END External link icon */
+
 a:hover, a:focus, a:active {
     outline: 0;
 }
@@ -3175,7 +3198,7 @@ span.icon-browser {
   background-position: 0 -355px;
 }
 
-.downloads a#ext-noicon {
+.downloads a.ext-noicon {
   border-bottom: none;
 }
 
