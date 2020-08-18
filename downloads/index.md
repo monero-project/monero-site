@@ -14,9 +14,9 @@ permalink: /downloads/index.html
         <div class="info-block download-nav row middle-xs between-xs" id="selections">
             <div class="col"><a href="#gui">{% t downloads.gui %}</a></div>
             <div class="col"><a href="#cli">{% t downloads.cli %}</a></div>
+            <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
             <div class="col"><a href="#blockchain">{% t downloads.blockchain %}</a></div>
             <div class="col"><a href="#hardware">{% t downloads.hardware %}</a></div>
-            <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
         </div>
     </div>
     <!-- End downloads menu: desktop -->
@@ -29,9 +29,9 @@ permalink: /downloads/index.html
             <ul id="menu">
               <li><a href="#gui">{% t downloads.gui %}</a></li>
               <li><a href="#cli">{% t downloads.cli %}</a></li>
+              <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
               <li><a href="#blockchain">{% t downloads.blockchain %}</a></li>
               <li><a href="#hardware">{% t downloads.hardware %}</a></li>
-              <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
             </ul>
           </div>
       </div>
@@ -227,6 +227,58 @@ permalink: /downloads/index.html
         </div>
       </section>
       <!-- End 'CLI Wallet' -->
+      <section class="container full">
+            <!-- 'Mobile & Light Wallets' -->
+            <div class="info-block">
+                <h2 id="mobilelight">{% t downloads.mobilelight %}</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a> {% t downloads.mobilelight3 %}</p>
+                        </div>
+                    </div>
+                        <table class="desktop-only">
+                        <tr>
+                            <th>Wallet</th>
+                            <th>Mobile</th>
+                            <th>Desktop</th>
+                            <th>Source Code</th>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/cakewallet.png" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td>X</td>
+                            <td><a id="ext-noicon" href="https://github.com/cake-tech/cake_wallet"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/Monerujo-wallet.png" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
+                            <td><span class="icon-android"></span></td>
+                            <td>X</td>
+                            <td><a id="ext-noicon" href="https://github.com/m2049r/xmrwallet"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/mymonero.png" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
+                            <td><span class="icon-apple"></span></td>
+                            <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a id="ext-noicon" href="https://github.com/mymonero"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/edge-wallet.png" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td>X</td>
+                            <td><a id="ext-noicon" href="https://github.com/EdgeApp"><span class="icon-github"></span></a></td>
+                        </tr>
+                        </table>
+                        <div class="row between-xs mob-wallets mobile-only">
+                            <ul>
+                                <li><a id="ext-noicon" href="https://cakewallet.io"><img style="width: 50px" src="/img/cakewallet.png" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a id="ext-noicon" href="https://monerujo.io"><img src="/img/Monerujo-wallet.png" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a id="ext-noicon" href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo">MyMonero</a></li>
+                                <li><a id="ext-noicon" href="https://edge.app/"><img src="/img/edge-wallet.png" alt="Edge Logo">Edge</a></li>
+                            </ul>
+                        </div>
+            </div>
+            <!-- End 'Mobile & Light Wallets' -->
+            </section>
             <section class="container full">
                 <!-- 'Import Blockchain' -->
                 <div class="info-block">
@@ -261,24 +313,6 @@ permalink: /downloads/index.html
                         </div>                    
                 </div>
                 <!-- End 'Hardware Wallets' -->
-            </section>
-            <section class="container full">
-                <!-- 'Mobile & Light Wallets' -->
-                <div class="info-block">
-                  <h2 id="mobilelight">{% t downloads.mobilelight %}</h2>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a> {% t downloads.mobilelight3 %}</p>
-                            </div>
-                        </div>
-                        <div class="row between-xs mob-wallets">
-                                <a href="https://cakewallet.io"><img style="height: 115px;"  src="/img/cakewallet.png" alt="Cake Wallet Logo"></a>
-                                <a href="https://monerujo.io"><img style="height: 115px;" src="/img/Monerujo-wallet.png" alt="Monerujo Logo"></a>
-                                <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
-                                <a href="https://edge.app/"><img style="height: 115px;" src="/img/edge-wallet.png" alt="Edge Logo"></a>
-                        </div>
-                </div>
-                <!-- End 'Mobile & Light Wallets' -->
             </section>
     </div>
     <a href="#" class="arrow-up"><i></i></a>
