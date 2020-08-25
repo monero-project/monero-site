@@ -37,7 +37,7 @@ https://
 - [ ] Exchange
 - [ ] Block Explorer
 - [ ] Payment Gateway
-- [ ] Library and Helper
+- [ ] Web Hosting
 - [ ] Tool
 - [ ] Service
 - [ ] Goods
