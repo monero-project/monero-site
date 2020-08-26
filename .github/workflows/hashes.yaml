@@ -20,8 +20,9 @@ jobs:
           sudo apt-get install -y --no-install-recommends curl gpg jq python-pip
           sudo pip install yq
       - name: Verify hashes.txt signature
-        run: |         
-          gpg --recv-keys 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92
+        run: |
+          curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
+            gpg --import
           gpg --verify downloads/hashes.txt
       - name: Download releases
         run: |
@@ -45,6 +46,27 @@ jobs:
                   [ -z "$line" ] && continue
                   url=$(echo $line | cut -d'|' -f1)
                   hash=$(echo $line | cut -d'|' -f2)
-                  filename=$(curl -sLI $url | awk -F '/' '/^Location:/ {print $NF}' | tail -n1 | sed 's/\r//')
+                  filename=
+                  case $url in
+                      *gui/win64install) filename=monero-gui-install-win-x64 ;;
+                      *gui/win64) filename=monero-gui-win-x64 ;;
+                      *gui/mac64) filename=monero-gui-mac-x64 ;;
+                      *gui/linux64) filename=monero-gui-linux-x64 ;;
+                      *cli/win64) filename=monero-win-x64 ;;
+                      *cli/win32) filename=monero-win-x86 ;;
+                      *cli/mac64) filename=monero-mac-x64 ;;
+                      *cli/linux64) filename=monero-linux-x64 ;;
+                      *cli/linux32) filename=monero-linux-x86 ;;
+                      *cli/linuxarm8) filename=monero-linux-armv8 ;;
+                      *cli/linuxarm7) filename=monero-linux-armv7 ;;
+                      *cli/androidarm8) filename=monero-android-armv8 ;;
+                      *cli/androidarm7) filename=monero-android-armv7 ;;
+                      *cli/freebsd64) filename=monero-freebsd-x64 ;;
+                      *)
+                          echo "Unknown url $url" >&2
+                          exit 1
+                      ;;
+                  esac
+                  filename=$(awk "/${filename}/ {print \$2}" downloads/hashes.txt)
                   echo "$hash  $filename" | sha256sum -c
               done
