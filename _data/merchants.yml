@@ -137,35 +137,49 @@
       url: https://swirlpay.io/
     - name: Vigla
       url: https://vigla.biz/
-- category: Libraries and Helpers
-  id: libraries
+- category: Web hosting
+  id: hosting
   merchants:
-    - name: Monero Integrations (eCommerce plugins)
-      url: http://monerointegrations.com/
-    - name: monero-nodejs (Node.js)
-      url: https://github.com/PsychicCat/monero-nodejs
-    - name: MoneroApi.Net (.NET)
-      url: https://github.com/Jojatekok/MoneroApi.Net
-    - name: moneronjs (NodeJS)
-      url: https://github.com/netmonk/moneronjs
-    - name: Monero Payments Library (PHP)
-      url: https://github.com/monero-integrations/monerophp
-    - name: Monero-PHP (PHP)
-      url: https://github.com/PsychicCat/monero-php
-    - name: MoneroPy (Python)
-      url: https://github.com/bigreddmachine/MoneroPy
-    - name: monero-python (Python)
-      url: https://github.com/monero-ecosystem/monero-python
-    - name: PHP-Monero (PHP)
-      url: https://github.com/MalMen/PHP-Monero
-    - name: python-monero (Python)
-      url: https://github.com/tippero/python-monero
-    - name: xmr-integration (PHP)
-      url: https://github.com/TheKoziTwo/xmr-integration
-    - name: Monero Utilities (golang)
-      url: https://github.com/paxos-bankchain/moneroutil
-    - name: monerorpc (Java)
-      url: https://github.com/00-matt/monerorpc
+    - name: 1Gbits
+      url: https://1gbits.com/
+    - name: 1oasis.net
+      url: https://web.senang.online/
+    - name: 99Stack Hosting
+      url: https://www.99stack.com
+    - name: Abaco Hosting
+      url: https://abacohosting.com/
+    - name: Ablative Hosting
+      url: https://ablative.hosting
+    - name: Capsul - Simple, Fast, Private Virtual Machines
+      url: https://capsul.org
+    - name: Cryptoho.st - VPS hosting
+      url: https://cryptoho.st/
+    - name: Evolution Host - Hosting services
+      url: https://evolution-host.com/
+    - name: HostingCanada - Web hosting 
+      url: https://hostingcanada.org/
+    - name: Monovm
+      url: https://monovm.com/
+    - name: NiceVPS - VPS and web hosting
+      url: https://nicevps.net/
+    - name: Njalla - privacy-aware domain registration
+      url: https://njal.la/
+    - name: RouterHosting - Hosting (VPS)
+      url: https://www.routerhosting.com/
+    - name: Snel - dedicated and VPS hosting
+      url: https://www.snel.com/
+    - name: SporeStack - Accountless, API-driven VPS hosting
+      url: https://sporestack.com
+    - name: SuperBitHost - Dedicated server, VPS, shared hosting, domains and SSL certificates
+      url: https://www.superbithost.com
+    - name: Tuxcon Hosting - Mail and Web Hosting
+      url: https://tuxcon.com
+    - name: VPNtesting
+      url: https://www.vpntesting.com/
+    - name: Webbdo Hosting (se)
+      url: https://www.webbdo.se/webbhotell/
+    - name: Whattheserver - Web hosting
+      url: https://Whattheserver.me
 - category: Tools
   id: tools
   merchants:
@@ -186,16 +200,6 @@
 - category: Services
   id: services
   merchants:
-    - name: 1Gbits
-      url: https://1gbits.com/
-    - name: 1oasis.net
-      url: https://web.senang.online/
-    - name: 99Stack Hosting
-      url: https://www.99stack.com
-    - name: Abaco Hosting
-      url: https://abacohosting.com/
-    - name: Ablative Hosting
-      url: https://ablative.hosting
     - name: AGRsicurezza - Business Consultant (IT)
       url: https://www.agrsicurezza.it/
     - name: AirVPN
@@ -212,12 +216,8 @@
       url: https://bunkervpn.com
     - name: Caliston Design - Design and web development agency
       url: https://calistondesign.com/
-    - name: Capsul - Simple, Fast, Private Virtual Machines
-      url: https://capsul.org
     - name: cloakVPN.com
       url: https://cloakVPN.com
-    - name: Cryptoho.st - VPS hosting
-      url: https://cryptoho.st/
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
     - name: cryptwerk - online directory with companies, websites, shops, services accepting cryptocurrencies
@@ -228,8 +228,6 @@
       url: https://galanglaw.com/
     - name: Esperanto lessons from Kaja
       url: mailto:kiah.morante@gmail.com
-    - name: Evolution Host - Hosting services
-      url: https://evolution-host.com/
     - name: ExchangeRates - compares the prices of Monero and other cryptocurrencies across exchanges
       url: https://exchangerates.pro/
     - name: Farmer ALP, LLC, Arizona
@@ -244,8 +242,6 @@
       url: https://healthiermatters.com/advertise-with-us
     - name: Hiri - Email client
       url: https://www.hiri.com/crypto/currency/XMR/
-    - name: HostingCanada - Web hosting 
-      url: https://hostingcanada.org/
     - name: Information Technology Works
       url: https://itwrx.org/
     - name: Ink Rebels
@@ -260,42 +256,18 @@
       url: https://marcosaguayo.com/
     - name: MSvB Hardware Design (using a secure element)
       url: mailto:monerodev+sitesvcs@encambio.com?subject=Monero%20Services%20Hardware%20Design%20Request
-    - name: MoneroJobs - Find and list jobs that pay Monero (XMR)
-      url: https://www.monerojobs.com/
-    - name: Monovm
-      url: https://monovm.com/
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
-    - name: NiceVPS - VPS and web hosting
-      url: https://nicevps.net/
-    - name: Njalla - privacy-aware domain registration
-      url: https://njal.la/
-    - name: RouterHosting - Hosting (VPS)
-      url: https://www.routerhosting.com/
     - name: Seymour Locksmiths
       url: https://seymour-locksmiths.co.uk/
-    - name: Snel - dedicated and VPS hosting
-      url: https://www.snel.com/
     - name: Social Media LTD - Digital marketing agency
       url: https://social-media.co.uk/
-    - name: SporeStack - Accountless, API-driven VPS hosting
-      url: https://sporestack.com
-    - name: SuperBitHost - Dedicated server, VPS, shared hosting, domains and SSL certificates
-      url: https://www.superbithost.com
     - name: TorGuard - VPN, proxy and email service
       url: https://torguard.net
     - name: Travala - Cryptocurrency Friendly Travel Booking
       url: https://www.travala.com/
-    - name: Tuxcon Hosting - Mail and Web Hosting
-      url: https://tuxcon.com
     - name: Vpn.surf
       url: https://vpn.surf/blog/buy-vpn-with-monero/
-    - name: VPNtesting
-      url: https://www.vpntesting.com/
-    - name: Webbdo Hosting (se)
-      url: https://www.webbdo.se/webbhotell/
-    - name: Whattheserver - Web hosting
-      url: https://Whattheserver.me
     - name: XMR.to Monero to Bitcoin Payment Service
       url: https://xmr.to/
 - category: Goods
