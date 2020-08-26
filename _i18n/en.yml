@@ -222,7 +222,9 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
   promographics: "Monero Promotional graphics - Badges and stickers for websites"
   promographicsp: Various graphics and Badges created by TheMonera, for both merchants and simple enthusiasts.
-
+  othersymbols: Other symbols and logos
+  mrllogo_para: The logo of the Monero Research Lab in SVG format.
+  
 accepting:
   title_gui: Instructions for the GUI
   index: Index
