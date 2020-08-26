@@ -27,4 +27,4 @@ The logs of the meeting where the dates of the network upgrade were decided [are
 **A:** *No. You will simply have to use an updated version of the Monero software when you will decide to move your coins.*
 
 **Q:** Will there be any changes to the PoW algorithm?  
-**A:** *No. The PoW algorithm will not be affected. Mining will work as before.*
+**A:** *No. The PoW algorithm will not be affected. Mining will work as before and miners won't need to update their software.*
