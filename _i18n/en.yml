@@ -195,6 +195,8 @@ downloads:
   installer: Installer
   avwarning: Be aware that some antiviruses and firewalls may flag the Monero executables and archives as malware.
   moreinfofaq: More info in the FAQ
+  packages: There are also packages available for multiple Linux distributions.
+  packages_link: See the list on GitHub
 
 press-kit:
   intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself.
