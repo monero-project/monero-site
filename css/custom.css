@@ -3130,44 +3130,86 @@ footer {
     vertical-align: middle;
 }
 
-.download-platforms span.icon-windows {
+span.icon-windows {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px 0;
 }
 
-.download-platforms span.icon-apple {
+span.icon-apple {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px -96px;
 }
 
-.download-platforms span.icon-linux{
+span.icon-linux{
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px -48px;
 }
 
-.download-platforms span.icon-arm {
+span.icon-arm {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -176px;
 }
 
-.download-platforms span.icon-freebsd {
+span.icon-freebsd {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -208px;
 }
 
-.download-platforms span.icon-dragonflybsd {
+span.icon-dragonflybsd {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -287px;
 }
 
-.download-platforms span.icon-github {
+span.icon-github {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -240px;
 }
 
-.download-platforms span.icon-android {
+span.icon-android {
   background-image: url(../img/monero-spritesheet.png);
   background-position: 0 -321px;
+}
+
+span.icon-browser {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: 0 -355px;
+}
+
+.downloads a#ext-noicon {
+  border-bottom: none;
+}
+
+.downloads td img {
+  display: inline-block;
+  padding: 0;
+  padding-right: 0.5rem;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.downloads table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.downloads table, th, td {
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.downloads th {
+  text-align: left;
+}
+
+.downloads .mobile-only ul {
+  padding-left: 0;
+}
+
+.downloads .mobile-only img {
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
 }
 
 .downloads a.arrow-up {
