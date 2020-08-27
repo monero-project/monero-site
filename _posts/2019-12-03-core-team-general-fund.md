@@ -8,7 +8,7 @@ author: The Core Team
 
 ## Administration of the General Fund
 
-The Core Team as a group has existed from the very early days of Monero, and its responsibilities have evolved over the years. For a write up of the responsibilities that the team considers itself responsible for nowadays (that is, trusted by the community to take care of), see https://web.getmonero.org/2018/03/01/core-team-announcement.html. These responsibilities tend to diminish as the project moves forward and some structures are changing; for instance, reproducible builds are a big step forward to provide binaries to the community without having to blindly trust any of us.
+The Core Team as a group has existed from the very early days of Monero, and its responsibilities have evolved over the years. For a write up of the responsibilities that the team considers itself responsible for nowadays (that is, trusted by the community to take care of), see {{ site.baseurl }}/2018/03/01/core-team-announcement.html. These responsibilities tend to diminish as the project moves forward and some structures are changing; for instance, reproducible builds are a big step forward to provide binaries to the community without having to blindly trust any of us.
 
 A responsibility that remains fully in our hands is to administer and/or escrow financial donations to the project. In practice it means:
 
