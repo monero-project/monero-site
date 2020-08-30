@@ -378,6 +378,9 @@ faq:
   aantivirus1: The problem is being discussed and solutions are being elaborated. In the meantime, if you get a warning from your antivirus, make sure the software you downloaded is legitimate (see the guides linked below), then add an exception for it in your antivirus, so that it won't get removed or blocked. If you need assistance, feel free to contact the community.
   qmoneromeaning: "Why is Monero called 'Monero'?"
   amoneromeaning: "Monero is an Esperanto word which means 'coin'. Initially Monero was called 'Bitmonero', which translates to 'Bitcoin' in Esperanto. After the community decided to fork from the original maintainer, 'bit' was dropped in favour of simply 'Monero'."
+  qimporting: Can I manually import the blockchain?
+  aimporting: >
+    Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. If you really need to import an external blockchain, you can download one in <a href="{{ site.baseurl }}/downloads/#blockchain">the 'Downloads' page</a> of this website. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
