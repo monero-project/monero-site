@@ -17,7 +17,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>My Monero</h2>
-                            <a href="https://mymonero.com/#/" target="_blank" rel="noreferrer noopener"><img src="/img/mymonero.png"></a>
+                            <a href="https://mymonero.com/#/" target="_blank" rel="noreferrer noopener"><img src="/img/mymonero.png" alt="MyMonero logo"></a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>JetBrains</h2>
-                            <a href="http://www.jetbrains.com/"><img src="/img/jetbrains.png"></a>
+                            <a href="http://www.jetbrains.com/"><img src="/img/jetbrains.png" alt="jetBrains logo"></a>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>Dome9 Security</h2>
-                            <a href="https://dome9.com/"><img src="/img/dome9.png"></a>
+                            <a href="https://dome9.com/"><img src="/img/dome9.png" alt="Dome9 security logo"></a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>Kitware</h2>
-                            <a href="https://www.kitware.com/"><img src="/img/kitware.png"></a>
+                            <a href="https://www.kitware.com/"><img src="/img/kitware.png" alt="Kitware logo"></a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>Fork Networking</h2>
-                            <a href="http://www.forked.net"><img src="/img/forked_logo.png"></a>
+                            <a href="http://www.forked.net"><img src="/img/forked_logo.png" alt="Fork Networking logo"></a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>Araxis</h2>
-                            <a href="https://www.araxis.com/"><img src="/img/araxis.png"></a>
+                            <a href="https://www.araxis.com/"><img src="/img/araxis.png" alt="Araxis logo"></a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>Navicat</h2>
-                            <a href="https://www.navicat.com"><img src="/img/navicat.png"></a>
+                            <a href="https://www.navicat.com"><img src="/img/navicat.png" alt="Navicat logo"></a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ permalink: /community/sponsorships/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <h2>Symas</h2>
-                            <a href="https://symas.com/"><img src="/img/symas.png"></a>
+                            <a href="https://symas.com/"><img src="/img/symas.png" alt="Symas logo"></a>
                         </div>
                     </div>
                 </div>

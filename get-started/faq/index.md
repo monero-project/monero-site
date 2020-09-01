@@ -274,6 +274,6 @@ permalink: /get-started/faq/index.html
             </div>
         </div>
         <!-- END full block-->
-        <a href="#" class="arrow-up"><i></i></a>
+        <a aria-label="{% t accessibility.arrowup %}" href="#" class="arrow-up"><i></i></a>
     </div>
 </section>

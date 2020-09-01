@@ -761,3 +761,8 @@ blog:
 
 tags:
   notags: There are no posts for this tag.
+
+accessibility:
+  arrowup: Go back to the top of the page
+  guiscreen: A screenshot of the Monero GUI wallet. It shows the wallet's balance and a navigation menu on the left, and a form for sending XMR on the right.
+  cliscreen: CLI wallet screenshot
