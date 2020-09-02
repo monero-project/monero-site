@@ -247,7 +247,7 @@ accepting:
   guiol1: Share the address composed by letters and numbers to the person you want to receive coins from. You probably prefer to use the more user friendly QR code.
   guiol2: "If you want to specify the amount to receive, go to the 'Merchant' page (after you selected in the 'Receive' page the @account that will be used to receive XMR)."
   guiol3: "Insert the amount to receive, then share with the payer the payment URL or the QR code. If you want to track the payment in real time, tick the 'enable sales tracker' option."
-  guiol4: Wait until the payment is arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
+  guiol4: Wait until the payment has arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
   cliinstructions: Instructions for the CLI
   clicreatewallet: >
     When you create your wallet for the first time, an @address will be automatically shown to you. That's your primary address.
