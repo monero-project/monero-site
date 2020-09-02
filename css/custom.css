@@ -4237,12 +4237,26 @@ p.hangouts-social {
 
 /***************************SPONSORS*****************************/
 
+.sponsors .info-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sponsors a, .sponsors a:hover, .sponsors a:active, .sponsors a:focus {
     border: none;
 }
 
+.sponsors p {
+    padding-top: 2rem;
+}
+
+.sponsors p#tari {
+    padding-top: 3rem;
+}
+
 .sponsors img {
-    width: 100%;
+    max-height: 100px;
 }
 
 .sponsors .info-block h2, .merchants .info-block h2, .info-block.research-paper h2 {
