@@ -273,7 +273,7 @@ accepting:
   merchantsreceive: If you are a business and you wish to programmatically receive @transactions or use advanced features like multisignature, it's suggested to consult the
   merchdevguides: developer guides
   merchantsreceive1: "If you need support, the community will always be happy to help. Come chat on #monero, the chatroom is on Freenode, but also relayed on MatterMost and Matrix."
-  merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the monero community has created a set of integrations for various platform and languages. You can find more info on"
+  merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the Monero community have created a set of integrations for various platforms and languages. You can find more info on"
   merchantsintlink: the GitHub organization
   merchantsthirdp: If you are looking for other third party integration system, there is a list of payment gateways on
   merchthirdlink: the merchant page
