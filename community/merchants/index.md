@@ -5,7 +5,7 @@ permalink: /community/merchants/index.html
 ---
 {% t global.lang_tag %}
 <div class="merchants text-center container description">
-    <p>{% t merchants.intro1 %}<a href="https://github.com/monero-project/monero-site/issues"> {% t merchants.intro2 %}</a> {% t merchants.intro3 %}</p>
+    <p>{% t merchants.intro1 %}<a href="https://github.com/monero-project/monero-site/issues" target="_blank" rel="noreferrer noopener"> {% t merchants.intro2 %}</a> {% t merchants.intro3 %}</p>
 </div>
 <div class="merchants">
 
@@ -41,7 +41,7 @@ permalink: /community/merchants/index.html
             {% assign sortedMerchants = toplevel.merchants | sort: 'name' %}
             {% for merchants in sortedMerchants %}
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <p><a href="{{merchants.url}}">{{merchants.name}}</a>
+                <p><a href="{{merchants.url}}" target="_blank" rel="noreferrer noopener">{{merchants.name}}</a>
                 {% if merchants.url contains ".onion" %}<img class="onion-mid" src="/img/onion-tor.svg" alt="onion" title="{% t merchants.onion %}">{% endif %}</p>
             </div>
             {% endfor %}
