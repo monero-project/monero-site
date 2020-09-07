@@ -365,14 +365,14 @@ Inputs:
 
 * *address* - string; The address to validate.
 * *any_net_type* - boolean (Optional); If true, consider addresses belonging to any of the three Monero networks (mainnet, stagenet, and testnet) valid. Otherwise, only consider an address valid if it belongs to the network on which the rpc-wallet's current daemon is running (Defaults to false).
-* *allow_openalias* - boolean (Optional); If true, consider [OpenAlias-formatted addresses](https://web.getmonero.org/resources/moneropedia/openalias.html) valid (Defaults to false).
+* *allow_openalias* - boolean (Optional); If true, consider [OpenAlias-formatted addresses]({{ site.baseurl }}/resources/moneropedia/openalias.html) valid (Defaults to false).
 
 Outputs:
 * *valid* - boolean; True if the input address is a valid Monero address.
-* *integrated* - boolean; True if the given address is an [integrated address](https://web.getmonero.org/resources/moneropedia/address.html).
+* *integrated* - boolean; True if the given address is an [integrated address]({{ site.baseurl }}/resources/moneropedia/address.html).
 * *subaddress* - boolean; True if the given address is a [subaddress](https://github.com/monero-project/monero/pull/2056)
 * *nettype* - string; Specifies which of the three Monero networks (mainnet, stagenet, and testnet) the address belongs to.
-* *openalias_address* - boolean; True if the address is [OpenAlias-formatted](https://web.getmonero.org/resources/moneropedia/openalias.html).
+* *openalias_address* - boolean; True if the address is [OpenAlias-formatted]({{ site.baseurl }}/resources/moneropedia/openalias.html).
 
 Example:
 

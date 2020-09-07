@@ -14,4 +14,4 @@ There are three ways to prune:
 
 Pruned nodes are very useful and preferable to @remote-nodes, but if possible, users should run a full node and opt for pruning only in case if necessary.
 
-The 'database pruning' feature [was added](https://github.com/monero-project/monero/pull/4843) on January 2019. See the [blog post](https://web.getmonero.org/2019/02/01/pruning.html) for more information.
+The 'database pruning' feature [was added](https://github.com/monero-project/monero/pull/4843) on January 2019. See the [blog post]({{ site.baseurl }}/2019/02/01/pruning.html) for more information.
