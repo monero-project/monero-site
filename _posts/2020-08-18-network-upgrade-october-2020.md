@@ -18,7 +18,7 @@ The logs of the meeting where the dates of the network upgrade were decided [are
 **A:** *No. Hard forks in Monero are made to improve the base protocol, and are non-contentious. There will be no split and no new coin will be created.*
 
 **Q:** What do I have to do to be prepared for this upgrade?  
-**A:** *A new release will be announced before the network upgrade (around 17th September). You will only have to be using the updated software by the time the network upgrade occurs (17th October). To the final user, it will be like a simple software update.*
+**A:** *A new release will be announced before the network upgrade (around 17th September). You will only have to be using the updated software by the time the network upgrade occurs (17th October). To the end user, it will be like a simple software update.*
 
 **Q:** How do I update my wallet/node?  
 **A:** *Detailed instructions will be posted along with the software update, but basically users will need to simply replace their previous software (monerod, monero-wallet-cli, monero-wallet-gui) with the new version. That's it.*
