@@ -38,6 +38,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-light-normal">{% t faq.q6 %}</a></li>
                         <li><a href="#anchor-block-limit">{% t faq.q8 %}</a></li>
                         <li><a href="#anchor-mixing">{% t faq.q15 %}</a></li>
+                        <li><a href="#import-blockchain">{% t faq.qimporting %}</a></li>
                     </ul>
                     <li class="category">{% t faq.nodeandwallet %}</li>
                     <ul class="logo">
@@ -194,6 +195,13 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-mixing"></a>{% t faq.q15 %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.a15 %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="import-blockchain">
+                    <h3><a class="anchor" href="#import-blockchain"></a>{% t faq.qimporting %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.aimporting %}</p>
+                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/resources/user-guides/importing_blockchain.html">{% t user-guides.import-blockchain %}</a></p>
                     </div>
                 </div>
                 <div class="row center-xs">
