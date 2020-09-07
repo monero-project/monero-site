@@ -39,6 +39,8 @@
       url: https://www.coinswitch.co
     - name: CRYPTODIGGERS.EU
       url: https://cryptodiggers.eu/
+    - name: DV Chain (OTC) - Cryptocurrency OTC desk that offers buying and selling of Monero
+      url: https://dvchain.co
     - name: EnterChange
       url: https://enter-change.com
     - name: ExchangeD.I2P - Darknet exchange (I2P)
@@ -77,6 +79,8 @@
       url: https://magneticexchange.com
     - name: MorphToken
       url: https://www.morphtoken.com/
+    - name: Newton - Canadian cryptocurrency exchange
+      url: https://newton.co
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: REXI.cc
@@ -101,6 +105,8 @@
       url: https://trovemat.com/
     - name: Swaplab
       url: https://swaplab.cc/
+    - name: xChange.me - Fully anonymous cryptocurrency exchanger
+      url: https://xchange.me
 - category: Block Explorers
   id: block-explorers
   merchants:
@@ -123,6 +129,8 @@
       url: https://www.coinpayments.net/
     - name: CryptAPI
       url: https://cryptapi.io/
+    - name: CryptoWoo Monero Plugin - Gateway for WooCommerce users
+      url: https://www.cryptowoo.com/
     - name: GloBee
       url: https://globee.com/
     - name: Living Room of Satoshi
@@ -152,6 +160,8 @@
       url: https://ablative.hosting
     - name: Capsul - Simple, Fast, Private Virtual Machines
       url: https://capsul.org
+    - name: Cockbox - Tor-friendly, privacy-oriented VPS provider.
+      url: https://cockbox.org/
     - name: Cryptoho.st - VPS hosting
       url: https://cryptoho.st/
     - name: Evolution Host - Hosting services
