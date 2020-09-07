@@ -94,10 +94,6 @@ permalink: /downloads/index.html
                   <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package">{% t downloads.packages_link %}</a>.</p>
                   <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                  <p><details>
-                       <summary>{% t downloads.showissues %}</summary>
-                       <p><i>{% t downloads.noissues %}.</i></p><!-- Change here if there are known GUI issues (`downloads.yesissuesgui` if issues, `downloads.noissues` if no issues) -->
-                     </details></p>
                   {% for entry in item.downloads %}
                     {% if entry.vers != nil %}
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -188,12 +184,6 @@ permalink: /downloads/index.html
                 </div>
                 <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package">{% t downloads.packages_link %}</a>.</p>
                 <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                <p><details>
-                     <summary>{% t downloads.showissues %}</summary>
-                       <p><i>{% t downloads.noissues %}.</i></p><!-- Change here if there are known CLI issues (`downloads.yesissuescli` if issues, `downloads.noissues` if no issues) -->
-                     </details></p>
-                </div>
                 </div>
                 {% for entry in item.downloads %}
                     {% if entry.vers != nil %}
