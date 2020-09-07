@@ -242,7 +242,7 @@ accepting:
   guiol1: Share the address composed by letters and numbers to the person you want to receive coins from. You probably prefer to use the more user friendly QR code.
   guiol2: "If you want to specify the amount to receive, go to the 'Merchant' page (after you selected in the 'Receive' page the @account that will be used to receive XMR)."
   guiol3: "Insert the amount to receive, then share with the payer the payment URL or the QR code. If you want to track the payment in real time, tick the 'enable sales tracker' option."
-  guiol4: Wait until the payment is arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
+  guiol4: Wait until the payment has arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
   cliinstructions: Instructions for the CLI
   clicreatewallet: >
     When you create your wallet for the first time, an @address will be automatically shown to you. That's your primary address.
@@ -268,7 +268,7 @@ accepting:
   merchantsreceive: If you are a business and you wish to programmatically receive @transactions or use advanced features like multisignature, it's suggested to consult the
   merchdevguides: developer guides
   merchantsreceive1: "If you need support, the community will always be happy to help. Come chat on #monero, the chatroom is on Freenode, but also relayed on MatterMost and Matrix."
-  merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the monero community has created a set of integrations for various platform and languages. You can find more info on"
+  merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the Monero community have created a set of integrations for various platforms and languages. You can find more info on"
   merchantsintlink: the GitHub organization
   merchantsthirdp: If you are looking for other third party integration system, there is a list of payment gateways on
   merchthirdlink: the merchant page
