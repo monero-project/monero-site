@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 محفظه الرؤيه فقط يمكنها رؤيه المعاملات الوارده إلي المحفظه ولا يمكنها القيام بإنفاق الأموال, في الواقع لا يُمكنها حتي رؤيه المعاملات الصادره من هذه المحفظه. وهذا يجعلها مثيره للإهتمام لكل من 
 

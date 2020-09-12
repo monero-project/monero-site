@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Met een alleen-lezen portemonnee kun je alleen zien welke binnenkomende transacties van jou zijn. Je kunt er geen Monero mee uitgeven. Sterker nog, je kunt zelfs uitgaande transacties vanuit deze portemonnee niet zien. Alleen-lezen portemonnees zijn daarom interessant voor:
 
