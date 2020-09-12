@@ -355,7 +355,7 @@ faq:
   qnofunds: I can't see my funds. Did I just lose all my Monero?
   anofunds: "You probably didn't. It's very hard to simply 'lose' your coins, since they are technically nowhere. Your coins 'live' on the blockchain and are linked to your account through a system of public and private keys secured by cryptography. That's why if you don't see your funds, it's probably because of a technical issue. Take a look at the 'Resources & Help' section at the top of this page for a list of useful resources that will help you identify and fix your problem."
   qnodetor: How can I connect my node via Tor?
-  anodetor: Support for Tor is still in its infancies, but it's already possible to natively send transactions through the network and to run a Monero daemon on the Tor network. Better Tor and I2P integrations are in progress.
+  anodetor: Support for Tor is still in its infancies, but it's already possible to natively send transactions through the network and to run a Monero @daemon on the Tor network. Better Tor and I2P integrations are in progress.
   qfullpruned: How do I decide if I should run a full node or a pruned node?
   afullpruned: "A full @node requires a considerable amount of storage and could take a long time to download and verify the entire blockchain, especially on older hardware. If you have limited storage, a pruned node is recommended. It only stores 1/8th of unnecessary blockchain data while keeping the full transaction history. If plenty of storage is available, a full node is recommended but a pruned node still greatly contributes to the network and improves your privacy."
   qblockspace: Why does the blockchain need so much space?
@@ -369,7 +369,7 @@ faq:
   qdangerrnode: Is it dangerous to use a remote node? What's the data a node operator can get from me?
   adangerrnode: "It's always advisable, especially for privacy-conscious users, to use a personal node when transacting on the network to achieve the highest rate of privacy. Some people for convenience prefer to use @remote-node which are not under their control (public nodes). The convenience of not having to deal with a personal copy of the @blockchain comes at a cost: lessened privacy. A remote node operator is able to see from what IP address a transaction comes from (even if cannot see the recipient nor the amount) and in some extreme cases, can make attacks able to reduce your privacy. Some dangers can be mitigated by using remote nodes on the Tor or I2P networks or using a VPN."
   qantivirus: Why is my antivirus/firewall flagging the Monero software i just downloaded as malware?
-  aantivirus: After you have downloaded the Monero software (GUI and CLI alike), your antivirus or firewall may flag the executables as malware. Some antiviruses only warn you about the possible menace, others go as far as silently removing your downloaded wallet/daemon. This likely happens because of the integrated miner, which is used for mining and for @block verification. Some antiviruses may erroneously consider the miner as dangerous software and act to remove it.
+  aantivirus: After you have downloaded the Monero software (GUI and CLI alike), your antivirus or firewall may flag the executables as malware. Some antiviruses only warn you about the possible menace, others go as far as silently removing your downloaded @wallet / @daemon. This likely happens because of the integrated miner, which is used for mining and for @block verification. Some antiviruses may erroneously consider the miner as dangerous software and act to remove it.
   aantivirus1: The problem is being discussed and solutions are being elaborated. In the meantime, if you get a warning from your antivirus, make sure the software you downloaded is legitimate (see the guides linked below), then add an exception for it in your antivirus, so that it won't get removed or blocked. If you need assistance, feel free to contact the community.
   qmoneromeaning: "Why is Monero called 'Monero'?"
   amoneromeaning: "Monero is an Esperanto word which means 'coin'. Initially Monero was called 'Bitmonero', which translates to 'Bitcoin' in Esperanto. After the community decided to fork from the original maintainer, 'bit' was dropped in favour of simply 'Monero'."
@@ -432,7 +432,7 @@ developer-guides:
   outdated: "Methods are often added / removed / updated and may not be accurately described."
   rpc: RPC Documentation
   daemonrpc: Daemon RPC
-  daemonrpc_descr: RPC calls for the daemon. Including input, outputs and examples. In English.
+  daemonrpc_descr: RPC calls for the @daemon. Including input, outputs and examples. In English.
   walletrpc: Wallet RPC
   walletrpc_descr: monero-wallet-rpc calls. Including input, outputs and examples. In English.
   external: External resources

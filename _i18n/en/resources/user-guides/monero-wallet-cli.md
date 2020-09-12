@@ -12,7 +12,7 @@ This guide will show how to perform various operations from the `monero-wallet-c
 ## Checking your balance
 
 Since the blockchain handling and the wallet are separate programs, many uses of `monero-wallet-cli`
-need to work with the daemon. This includes looking for incoming transactions to your address.
+need to work with the @daemon. This includes looking for incoming transactions to your address.
 Once you are running both `monero-wallet-cli` and `monerod`, enter `balance`.
 
 Example:
