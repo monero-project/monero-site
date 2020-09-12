@@ -27,17 +27,17 @@ permalink: /community/team/index.html
                                                     </div>
                                                     <div class="row center-xs icons">
                                                     {% if member.github %}
-                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo">
                                                             <div class="col social-icon github"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.twitter %}
-                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener" aria-label="Twitter logo">
                                                             <div class="col social-icon twitter"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.reddit %}
-                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener" aria-label="Reddit logo">
                                                             <div class="col social-icon reddit"></div>
                                                         </a>
                                                     {%endif%}
@@ -73,17 +73,17 @@ permalink: /community/team/index.html
                                                 </div>
                                                 <div class="row center-xs icons">
                                                     {% if member.github %}
-                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo">
                                                             <div class="col social-icon github"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.twitter %}
-                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener" aria-label="Twitter logo">
                                                             <div class="col social-icon twitter"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.reddit %}
-                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener" aria-label="Reddit logo">
                                                             <div class="col social-icon reddit"></div>
                                                         </a>
                                                     {%endif%}
@@ -110,17 +110,17 @@ permalink: /community/team/index.html
                                                 </div>
                                                 <div class="row center-xs icons">
                                                     {% if member.github %}
-                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo">
                                                             <div class="col social-icon github"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.twitter %}
-                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener" aria-label="Twitter logo">
                                                             <div class="col social-icon twitter"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.reddit %}
-                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener" aria-label="Reddit logo">
                                                             <div class="col social-icon reddit"></div>
                                                         </a>
                                                     {%endif%}
@@ -157,17 +157,17 @@ permalink: /community/team/index.html
                                                     {% endif %}
                                                 <div class="row center-xs icons">
                                                     {% if member.github %}
-                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo"> 
                                                             <div class="col social-icon github"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.twitter %}
-                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener" aria-label="Twitter logo">
                                                             <div class="col social-icon twitter"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.reddit %}
-                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener" aria-label="Reddit logo">
                                                             <div class="col social-icon reddit"></div>
                                                         </a>
                                                     {%endif%}
@@ -194,17 +194,17 @@ permalink: /community/team/index.html
                                                 </div>
                                                 <div class="row center-xs icons">
                                                     {% if member.github %}
-                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.github}}" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo">
                                                             <div class="col social-icon github"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.twitter %}
-                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.twitter}}" target="_blank" rel="noreferrer, noopener" aria-label="Twitter logo">
                                                             <div class="col social-icon twitter"></div>
                                                         </a>
                                                     {%endif%}
                                                     {% if member.reddit %}
-                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener">
+                                                        <a class="ext-noicon" href="{{member.reddit}}" target="_blank" rel="noreferrer, noopener" aria-label="Reddit logo">
                                                             <div class="col social-icon reddit"></div>
                                                         </a>
                                                     {%endif%}
