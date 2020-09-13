@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 ## Een node vinden
 Eerst moet je natuurlijk een node vinden om verbinding mee te maken! [moneroworld.com](https://moneroworld.com/#nodes) biedt uitstekende hulpmiddelen voor het vinden van nodes. Een van de eenvoudigste methoden
