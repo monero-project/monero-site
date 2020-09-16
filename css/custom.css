@@ -975,6 +975,19 @@ a {
     text-decoration: none;
 }
 
+/* Videos */
+
+.box-video {
+  padding: 0.5rem 0;
+}
+
+.box-video video {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* External link icon */
 
 a[href^="https:"]:not([href*="getmonero.org"]):not([class*="btn-link"]):not([class="chats-img"]):not([class*="ext-noicon"]):not([class*="white"]) {
@@ -2662,10 +2675,6 @@ p.main-downloads {
     padding: 4rem 2rem 4rem 0;
 }
 
-.monero-video {
-    padding: 4rem 2rem;
-}
-
 .main-info p {
     padding-top: 0.5rem;
 }
@@ -4339,133 +4348,7 @@ p.hangouts-social {
     padding: 1rem 1.5rem;
 }
 
-/*CAROUSEL*/
-
-
-.carousel {
-  height: 38rem;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.carousel-controls,
-.carousel-activator {
-  display: none;
-}
-
-.carousel-slide {
-  opacity: 0;
-  z-index: -1;
-  height: 100%;
-  position: absolute;
-  padding: 0 3rem;
-  overflow: hidden;
-  -webkit-transition: opacity ease-out .3s;
-    -moz-transition: opacity ease-out .3s;
-    -o-transition: opacity ease-out .3s;
-    transition: opacity ease-out .3s;
-}
-
-.carousel-activator:nth-of-type(1):checked ~ .carousel-controls:nth-of-type(1), .carousel-activator:nth-of-type(2):checked ~ .carousel-controls:nth-of-type(2), .carousel-activator:nth-of-type(3):checked ~ .carousel-controls:nth-of-type(3), .carousel-activator:nth-of-type(4):checked ~ .carousel-controls:nth-of-type(4) {
-  display: block;
-}
-
-
-.carousel-activator:nth-of-type(1):checked ~ .carousel-slide:nth-of-type(1), .carousel-activator:nth-of-type(2):checked ~ .carousel-slide:nth-of-type(2), .carousel-activator:nth-of-type(3):checked ~ .carousel-slide:nth-of-type(3), .carousel-activator:nth-of-type(4):checked ~ .carousel-slide:nth-of-type(4) {
-    z-index: 2;
-    opacity: 1;
-}
-
-.carousel-control {
-  height: 2rem;
-  width: 2rem;
-  margin-top: -1rem;
-  top: 50%;
-  position: absolute;
-  display: block;
-  cursor: pointer;
-  border-width: 5px 5px 0 0;
-  border-style: solid;
-  border-color: #4c4c4c;
-  opacity: 0.35;
-  outline: 0;
-  z-index: 3;
-}
-.carousel-control:hover {
-  opacity: 1;
-}
-.carousel-control-backward {
-  left: 0.8rem;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-.carousel-control-forward {
-  right: 0.8rem;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-
-@-webkit-keyframes carousel-show-slide {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes carousel-show-slide {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.carousel video {
-    margin-top: 1rem;
-}
-
-.carousel h3 {
-    text-align: left;
-}
-
-@supports (-ms-ime-align:auto) {
-
-.carousel-slide.ms {
-    width: 91%;
-}
-
-@media only screen and (max-width: 75rem) {
-
-.carousel-slide.ms {
-    width: auto;
-}
-
-
-}
-
-}
-
-
-@media only screen and (max-width: 75rem) {
-
-.carousel {
-    height: 33rem;
-}
-
-}
-
 @media only screen and (max-width: 62rem) {
-
-.carousel {
-    height: 24rem;
-}
 
 .about-monero .info-block-row img.main-icon {
     width: 100%;
@@ -4478,78 +4361,12 @@ p.hangouts-social {
     padding: 1rem;
 }
 
-.carousel-control {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
 .about-monero .info-block-row img.main-icon {
     width: 40%;
 }
 
 .about-monero .info-block-row .col-sm-4 {
     display: none;
-}
-
-}
-
-@media only screen and (max-width: 42rem) {
-
-.carousel { height: 22rem;}
-
-.carousel-control {
-  margin-top: 0;
-}
-
-}
-
-@media only screen and (max-width: 37rem) {
-
-.carousel { height: 18rem;}
-
-.carousel-control {
-  height: 1rem;
-  width: 1rem;
-}
-
-}
-
-@media only screen and (max-width: 34rem) {
-
-.carousel { height: 16rem; }
-
-.carousel-slide {
-    padding: 0 2.5rem;
-}
-
-}
-
-@media only screen and (max-width: 30rem) {
-.monero-vid .col-md-6 {
-    padding: 1rem 0;
-}
-
-}
-
-@media only screen and (max-width: 26rem) {
-
-.carousel {
-    height: auto;
-    position: static;
-}
-
-.carousel-activator:nth-of-type(1):checked ~ .carousel-controls:nth-of-type(1), .carousel-activator:nth-of-type(2):checked ~ .carousel-controls:nth-of-type(2), .carousel-activator:nth-of-type(3):checked ~ .carousel-controls:nth-of-type(3), .carousel-activator:nth-of-type(4):checked ~ .carousel-controls:nth-of-type(4) {
-  display: none;
-}
-
-.carousel-slide {
-    position: static;
-    opacity: 1;
-    padding: 0;
-}
-
-.carousel video {
-    margin-top: 0.5rem;
 }
 
 }

@@ -2,7 +2,7 @@ email: dev@getmonero.org
 name: Monero
 description: Monero is a digital currency that is secure, private, and untraceable.
 keywords: "monero, xmr, bitmonero, cryptocurrency"
-baseurl: ""
+baseurl: "https://www.getmonero.org"
 url: "https://www.getmonero.org"
 
 markdown: kramdown
