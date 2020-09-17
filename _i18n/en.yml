@@ -186,9 +186,9 @@ downloads:
   showhash4: "Two guides are available to guide you through the verification process:"
   hardware1: The Monero community has funded a
   hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
-  hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
+  hardware3: which is now in progress.
+  hardware4: Ledger Nano S and Nano X are supported in Monero CLI, Monero GUI, and Monerujo wallets.
+  hardware5: Trezor Model T is supported in Monero CLI and Monero GUI wallets.
   mobilelight1: The following are mobile or light wallets that are deemed safe by respected members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our
   mobilelight2: Hangouts
   mobilelight3:  page to see where we are.
