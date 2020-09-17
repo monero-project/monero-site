@@ -112,8 +112,8 @@
   merchants:
     - name: MoneroBlocks
       url: https://moneroblocks.info
-    - name: MoneroExplorer
-      url: https://moneroexplorer.com/
+    - name: Explore Monero
+      url: https://www.exploremonero.com/
     - name: MoneroVision
       url: https://monerovision.com
     - name: xmrchain.net
