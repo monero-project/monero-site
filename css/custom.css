@@ -1156,7 +1156,7 @@ pre.highlight>code {
     z-index: 4;
     width: 100%;
     text-align: center;
-    color: #4c4c4c;
+    color: #171717;
     padding-bottom: 1.3rem;
     padding-top: 1.3rem;
     -moz-box-shadow: 0 2px 6px rgba(50,50,93,.1);
@@ -1167,8 +1167,13 @@ pre.highlight>code {
 }
 
 .upgrade-content a {
-    color: #4c4c4c;
+    color: #171717;
     font-size: 1.1rem;
+    border-bottom: 2px dotted;
+}
+
+.upgrade-content a:hover {
+  border-bottom: 1px solid;
 }
 
 .upgrade-content p {
@@ -1286,11 +1291,6 @@ label.upgrade-x {
     text-align: center;
     color: white;
     padding-bottom: 1rem;
-}
-
-.untranslated-link {
-    color: white;
-    text-decoration: underline;
 }
 
 .disclaimer-link {
