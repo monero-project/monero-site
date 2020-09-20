@@ -1,44 +1,44 @@
 - title: С чего начать
   subfolderitems:
   - page: Что такое Monero?
-    url: get-started/what-is-monero
+    url: get-started/what-is-monero/
   - page: Получение
-    url: get-started/accepting
+    url: get-started/accepting/
   - page: Содействие
-    url: get-started/contributing
+    url: get-started/contributing/
   - page: Майнинг
-    url: get-started/mining
+    url: get-started/mining/
   - page: Вопросы-Ответы
-    url: get-started/faq
+    url: get-started/faq/
 - title: Загрузки
   url: downloads/
 - title: Blog
-  url: blog
+  url: blog/
 - title: Сообщество
   subfolderitems:
   - page: Команда
-    url: community/team
+    url: community/team/
   - page: Место встречи
-    url: community/hangouts
+    url: community/hangouts/
   - page: Благотворительность
-    url: community/sponsorships
+    url: community/sponsorships/
   - page: Торговля
-    url: community/merchants
+    url: community/merchants/
 - title: Ресурсы
   subfolderitems:
   - page: О Monero
-    url: resources/about
+    url: resources/about/
   - page: Дорожная карта
-    url: resources/roadmap
+    url: resources/roadmap/
   - page: Исследовательская лаборатория
-    url: resources/research-lab
+    url: resources/research-lab/
   - page: Moneropedia
-    url: resources/moneropedia
+    url: resources/moneropedia/
   - page: Руководства для пользователей
-    url: resources/user-guides
+    url: resources/user-guides/
   - page: Руководства для разработчиков
-    url: resources/developer-guides
+    url: resources/developer-guides/
   - page: Библиотека
-    url: library
+    url: library/
   - page: Press Kit
-    url: press-kit
+    url: press-kit/

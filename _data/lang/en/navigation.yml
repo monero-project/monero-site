@@ -1,44 +1,44 @@
 - title: Get Started
   subfolderitems:
   - page: What is Monero?
-    url: get-started/what-is-monero
+    url: get-started/what-is-monero/
   - page: Accepting
-    url: get-started/accepting
+    url: get-started/accepting/
   - page: Contributing
-    url: get-started/contributing
+    url: get-started/contributing/
   - page: Mining
-    url: get-started/mining
+    url: get-started/mining/
   - page: FAQ
-    url: get-started/faq
+    url: get-started/faq/
 - title: Downloads
   url: downloads/
 - title: Blog
-  url: blog
+  url: blog/
 - title: Community
   subfolderitems:
   - page: Team
-    url: community/team
+    url: community/team/
   - page: Hangouts
-    url: community/hangouts
+    url: community/hangouts/
   - page: Sponsorships
-    url: community/sponsorships
+    url: community/sponsorships/
   - page: Merchants
-    url: community/merchants
+    url: community/merchants/
 - title: Resources
   subfolderitems:
   - page: About
-    url: resources/about
+    url: resources/about/
   - page: Roadmap
-    url: resources/roadmap
+    url: resources/roadmap/
   - page: Research Lab
-    url: resources/research-lab
+    url: resources/research-lab/
   - page: Moneropedia
-    url: resources/moneropedia
+    url: resources/moneropedia/
   - page: User Guides
-    url: resources/user-guides
+    url: resources/user-guides/
   - page: Developer Guides
-    url: resources/developer-guides
+    url: resources/developer-guides/
   - page: Library
-    url: library
+    url: library/
   - page: Press Kit
-    url: press-kit
+    url: press-kit/

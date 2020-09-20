@@ -1,44 +1,44 @@
 - title: Başlangıç
   subfolderitems:
   - page: Monero Nedir?
-    url: get-started/what-is-monero
+    url: get-started/what-is-monero/
   - page: Kabulü
-    url: get-started/accepting
+    url: get-started/accepting/
   - page: Katkıda Bulunulması
-    url: get-started/contributing
+    url: get-started/contributing/
   - page: Madenciliği
-    url: get-started/mining
+    url: get-started/mining/
   - page: SSS
-    url: get-started/faq
+    url: get-started/faq/
 - title: İndirmeler
   url: downloads/
 - title: Blog
-  url: blog
+  url: blog/
 - title: Topluluk
   subfolderitems:
   - page: Ekip
-    url: community/team
+    url: community/team/
   - page: Buluşmalar
-    url: community/hangouts
+    url: community/hangouts/
   - page: Sponsorluklar
-    url: community/sponsorships
+    url: community/sponsorships/
   - page: Satıcılar
-    url: community/merchants
+    url: community/merchants/
 - title: Kaynaklar
   subfolderitems:
   - page: Hakkında
-    url: resources/about
+    url: resources/about/
   - page: Yol Haritası
-    url: resources/roadmap
+    url: resources/roadmap/
   - page: Araştırma Laboratuvarı
-    url: resources/research-lab
+    url: resources/research-lab/
   - page: Moneropedi
-    url: resources/moneropedia
+    url: resources/moneropedia/
   - page: Kullanıcı Rehberleri
-    url: resources/user-guides
+    url: resources/user-guides/
   - page: Geliştirici Rehberleri
-    url: resources/developer-guides
+    url: resources/developer-guides/
   - page: Kütüphane
-    url: library
+    url: library/
   - page: Press Kit
-    url: press-kit
+    url: press-kit/

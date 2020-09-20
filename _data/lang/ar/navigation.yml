@@ -1,40 +1,40 @@
 - title: إبدأ
   subfolderitems:
   - page: ما هو مونيرو ؟
-    url: get-started/what-is-monero
+    url: get-started/what-is-monero/
   - page: القبول
-    url: get-started/accepting
+    url: get-started/accepting/
   - page: المشاركه
-    url: get-started/contributing
+    url: get-started/contributing/
   - page: التعدين
-    url: get-started/mining
+    url: get-started/mining/
   - page: الأسئله المتكرره
-    url: get-started/faq
+    url: get-started/faq/
 - title: التنزيلات
   url: downloads/
 - title: Blog
-  url: blog
+  url: blog/
 - title: المجتمع
   subfolderitems:
   - page: الفريق
-    url: community/team
+    url: community/team/
   - page: الملتقي
-    url: community/hangouts
+    url: community/hangouts/
   - page: الرعاه
-    url: community/sponsorships
+    url: community/sponsorships/
   - page: التجار
-    url: community/merchants
+    url: community/merchants/
 - title: موارد
   subfolderitems:
   - page: عن مونيرو
-    url: resources/about
+    url: resources/about/
   - page: خريطه الطريق
-    url: resources/roadmap
+    url: resources/roadmap/
   - page: مختبر البحث
-    url: resources/research-lab
+    url: resources/research-lab/
   - page: مونيروبيديا
-    url: resources/moneropedia
+    url: resources/moneropedia/
   - page: دليل المستخدم
-    url: resources/user-guides
+    url: resources/user-guides/
   - page: دليل المُطور
-    url: resources/developer-guides
+    url: resources/developer-guides/

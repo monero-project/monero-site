@@ -1,44 +1,44 @@
 - title: 開始使用
   subfolderitems:
   - page: 什麼是門羅幣？
-    url: get-started/what-is-monero
+    url: get-started/what-is-monero/
   - page: 接受支付
-    url: get-started/accepting
+    url: get-started/accepting/
   - page: 貢獻
-    url: get-started/contributing
+    url: get-started/contributing/
   - page: 挖礦
-    url: get-started/mining
+    url: get-started/mining/
   - page: 常見問題
-    url: get-started/faq
+    url: get-started/faq/
 - title: 下載
   url: downloads/
 - title: Blog
-  url: blog
+  url: blog/
 - title: 社群
   subfolderitems:
   - page: 合作團隊
-    url: community/team
+    url: community/team/
   - page: 聊天室
-    url: community/hangouts
+    url: community/hangouts/
   - page: 贊助單位
-    url: community/sponsorships
+    url: community/sponsorships/
   - page: 使用商家
-    url: community/merchants
+    url: community/merchants/
 - title: 相關資源
   subfolderitems:
   - page: 關於門羅幣
-    url: resources/about
+    url: resources/about/
   - page: 發展規劃
-    url: resources/roadmap
+    url: resources/roadmap/
   - page: 研究實驗室
-    url: resources/research-lab
+    url: resources/research-lab/
   - page: 門羅幣百科
-    url: resources/moneropedia
+    url: resources/moneropedia/
   - page: 使用者指引
-    url: resources/user-guides
+    url: resources/user-guides/
   - page: 開發者指引
-    url: resources/developer-guides
+    url: resources/developer-guides/
   - page: 圖書出版品
-    url: library
+    url: library/
   - page: Press Kit
-    url: press-kit
+    url: press-kit/
