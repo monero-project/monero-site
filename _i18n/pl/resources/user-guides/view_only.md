@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Portfel tylko do odczytu wyświetla jedynie twoje przychodzące transakcje. Nie może on dokonać żadnej płatności, nie może nawet wyświetlić żadnej transakcji wychodzącej. Portfel tylko do odczytu może być ciekawą opcją dla:
 

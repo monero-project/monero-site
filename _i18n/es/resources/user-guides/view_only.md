@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Un monedero de visualización solamente puede ver qué transacciones de entrada te pertenecen. No puede utilizar nada de tu Monero, de hecho ni siquiera puede ver las transacciones de salida del monedero. Esto hace a los monederos de sólo visualización interesantes para
 
