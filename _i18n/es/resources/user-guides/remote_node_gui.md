@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 ## Encontrando un nodo
 Primero lo primero, necesitas encontrar un modo para conectarte. [moneroworld.com](https://moneroworld.com/#nodes) cuenta con buenos recursos para encontrar nodos. Uno de los métodos más fáciles

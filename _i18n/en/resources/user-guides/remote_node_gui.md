@@ -1,20 +1,43 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Finding a node
-First things first, you need to find a node to connect to! [moneroworld.com](https://moneroworld.com/#nodes) has some great resources for finding nodes. One of the easiest methods
-would be to use a node run by moneroworld, but they have a tool for finding random nodes too.
+## Check if your wallet is in advanced mode
+To use a custom remote node, your wallet must be in advanced mode. Simple mode and Simple mode (bootstrap) don't support this feature.
 
-## Opening wallet in Advanced mode
-### From an open wallet
-If your wallet is already open in a mode, click "Settings" > "Wallet" > "Close wallet"
+To check if your wallet is in advanced mode, go to `Settings` > `Info` and see `Wallet mode`. 
+
+If your wallet is not in Advanced mode, you will have to change it to Advanced mode (see next step).
+
+If your wallet is already in Advanced mode, you can skip the next step.
+
+![Wallet mode](png/remote_node/wallet_mode_info.png){:width="600px"}
+
+## Change your wallet to advanced mode
+If your wallet is open, you need to close it first. Go to `Settings` > `Wallet` > `Close this wallet`
+
 ![Close Wallet](png/remote_node/close_open_wallet.png){:width="600px"}
-### From the Welcome screen
-At the bottom of the Welcome screen, click ![Change wallet mode](png/remote_node/change_wallet_mode.png), and select "Advanced mode". Open your wallet.
 
-## Connecting to the node from the GUI wallet
-A moment after the wallet opens a pop up will appear and give the option to "use custom settings". Click on it, and you will be sent to "Settings" > "Node" in the GUI. 
+The main menu (`Welcome to Monero` screen) will open. At the bottom left, click on `Change wallet mode` button, and on the next page select `Advanced mode`. Next, open your wallet file again.
 
-On this page select 'Remote Node' and there will be four text boxes labeled "Address", "Port", "Daemon username" and "Daemon password". Fill the address of the node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any old IP address. Then fill the "Port" box with the node's port. The default port is `18081` but if you are using a random node the port that is used will vary. The port for node.moneroworld.com uses 18089. Optionally, fill the username and password if your remote note requires them.
+![Change Wallet Mode](png/remote_node/change_wallet_mode.png){:width="600px"}
 
-### Your screen should look a bit like this
-![Node testing broke image](png/remote_node/remote-node-screenshot.png){:width="600px"}
+![Advanced Mode](png/remote_node/advanced_mode.png){:width="600px"}
+
+## Finding a public remote node
+First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources for finding nodes. One of the easiest methods would be to use a public remote node run by moneroworld, but they have a tool for finding random nodes too.
+
+## Configuring your wallet to connect to a custom public remote node
+When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. 
+
+If you don't see this pop up, go to `Settings` > `Node` page.
+
+![Configure Remote Node](png/remote_node/remote_node_config.png){:width="600px"}
+
+On this page select `Remote Node`.
+
+In `Address` you should fill the address of the remote node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any IP address. 
+
+In `Port` you should fill the port of the remote node. If a remote node is listed as `node.moneroworld.com:18089`, the address is `node.moneroworld.com` and the port is `18089`. The default port is `18081`, but it can vary depending on the node you are connecting to.
+
+If your remote node requires authentication, you can enter a username in `Daemon username` and a password in `Daemon password`.
+
+Finally, click on `Connect` button and wait for your wallet to connect.
