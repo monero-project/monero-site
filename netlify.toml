@@ -1,6 +1,6 @@
 [build]
   publish = "_site/"
-  command = "jekyll build --trace --limit-posts 10 --baseurl ''"
+  command = "jekyll build --trace --limit-posts 10"
 
 [build.environment]
   RUBY_VERSION = "2.6"
