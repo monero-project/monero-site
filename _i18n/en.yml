@@ -16,8 +16,10 @@ global:
   outdated: The content of this page is outdated and the might be not valid anymore. Contact the community if you need support.
   outdatedMin: This page has been updated since the translation. You can use this version, but it may be incomplete. Please use the
   outdatedVersion: English version
-  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
-  moreinfo: More info
+  upgradoct: Make sure your software is up-to-date with the
+  upgradeoctlink: "October 17th network upgrade."
+  upgrdecont: To continue using Monero after that date,
+  dwlsoftware: Download Monero 0.17 "Oxygen Orion".
   lang_tag: "@lang_tag_en"
 
 titles:
