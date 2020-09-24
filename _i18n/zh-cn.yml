@@ -54,6 +54,19 @@ titles:
   blogbytag: Blog
   library: 资料
 
+navigation:
+  getstarted: 始
+  whatis: 什么是门罗币？
+  accepting: 接收
+  contributing: 贡献
+  mining: 挖矿
+  community: 社区
+  team: 团队
+  merchants: 商户
+  resources: 资源
+  about: 关于
+  mrl: 研究实验室
+
 index:
   page_title: "门罗币-安全、隐私、无法追踪" 
 

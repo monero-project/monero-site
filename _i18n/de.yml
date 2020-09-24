@@ -54,6 +54,19 @@ titles:
   blogbytag: Blog
   library: Bibliothek
 
+navigation:
+  getstarted: Einstieg
+  whatis: Was ist Monero?
+  accepting: Akzeptieren
+  contributing: Unterstützen
+  mining: Mining
+  community: Community
+  team: Team
+  merchants: Händler
+  resources: Ressourcen
+  about: Über
+  mrl: Research Lab
+
 index:
   page_title: "Monero – sicher, privat, nicht nachverfolgbar"
 

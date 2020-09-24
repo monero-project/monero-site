@@ -55,6 +55,19 @@ titles:
   blogbytag: Blog
   library: Księgarnia
 
+navigation:
+  getstarted: Wstęp
+  whatis: Czym jest Monero?
+  accepting: Akceptowanie
+  contributing: Współpraca
+  mining: Wydobywanie
+  community: Społeczność
+  team: Zespół
+  merchants: Handel
+  resources: Materiały
+  about: O Monero
+  mrl: Laboratorium badawcze
+
 index:
   page_title: "Monero - bezpieczne, prywatne, niewykrywalne"
 

@@ -54,6 +54,19 @@ titles:
   blogbytag: Blog
   library: Library
 
+navigation:
+  getstarted: إبدأ
+  whatis: ما هو مونيرو ؟
+  accepting: القبول
+  contributing: المشاركه
+  mining: التعدين
+  community: المجتمع
+  team: الفريق
+  merchants: التجار
+  resources: موارد
+  about: عن مونيرو
+  mrl: مختبر البحث
+
 index:
   page_title: "مونيرو - آمن ,سري , لا يمكن تعقبها"
 

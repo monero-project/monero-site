@@ -60,6 +60,20 @@ titles:
   ffs-wip: Незавершенная работа
   blogbytag: Блог
   library: Библиотека
+
+navigation:
+  getstarted: С чего начать
+  whatis: Что такое Monero?
+  accepting: Получение
+  contributing: Содействие
+  mining: Майнинг
+  community: Сообщество
+  team: Команда
+  merchants: Торговля
+  resources: Ресурсы
+  about: О Monero
+  mrl: Исследовательская лаборатория
+
 index:
   page_title: Monero безопасна, конфиденциальна и неотслеживаема
 home:
