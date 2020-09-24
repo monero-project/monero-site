@@ -21,13 +21,13 @@ Open an existing wallet and type `address` and `viewkey` commands to display the
 Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and private (secret) view key. Next, enter and confirm a password for your new wallet.
 
 ### GUI: Creating a View-Only Wallet from an Existing Wallet File
-If you have access to the existing wallet, open your wallet and go to the `Settings` > `Wallet` page:
+If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
 
 ![settings](png/view-only/settings.png)
 
-Click on `Create a view only wallet` > `Create wallet`. The view-only wallet file will be created within the same directory and using your current password.
+The view-only wallet file will be created within the same directory and using your current password.
 
-Optionally, double-click the `Success` windows to copy the message, then click `OK` to close it:
+Optionally, double-click the `Success` window to copy the message, then click `OK` to close it:
 
 ![Success](png/view-only/Success.png)
 
@@ -47,5 +47,7 @@ In `Account address (public)` field, enter your wallet's main address, which sta
 In `View key (private)` field, enter the private view key of your wallet.
 
 Leave the `Spend key (private)` field blank.
+
+Enter a `Wallet creation date` or a `Restore height` if you have one (optional).
 
 Click on `Next` to create your view-only wallet file.
