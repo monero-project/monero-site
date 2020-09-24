@@ -25,7 +25,6 @@ global:
 titles:
   index: Home
   whatismonero: What is Monero (XMR)?
-  using: Using Monero
   accepting: Accepting Monero
   contributing: Improving Monero
   mining: Mining Monero
@@ -34,7 +33,6 @@ titles:
   allposts: All Blog Posts
   team: Monero Team
   hangouts: Hangouts
-  events: Events
   sponsorships: Sponsorships
   merchants: Merchants & Services
   about: About Monero
@@ -49,6 +47,19 @@ titles:
   legal: Legal
   blogbytag: Blog
   library: Library
+
+navigation:
+  getstarted: Get Started
+  whatis: What is Monero?
+  accepting: Accepting
+  contributing: Contributing
+  mining: Mining
+  community: Community
+  team: Team
+  merchants: Merchants
+  resources: Resources
+  about: About
+  mrl: Research Lab
 
 index:
   page_title: "Monero - secure, private, untraceable"
