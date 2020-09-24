@@ -59,6 +59,19 @@ titles:
   blogbytag: Blog
   library: Kütüphane
 
+navigation:
+  getstarted: Başlangıç
+  whatis: Monero Nedir?
+  accepting: Kabulü
+  contributing: Katkıda Bulunulması
+  mining: Madenciliği
+  community: Topluluk
+  team: Ekip
+  merchants: Satıcılar
+  resources: Kaynaklar
+  about: Hakkında
+  mrl: Araştırma Laboratuvarı
+
 index:
   page_title: "Monero - güvenli, gizli, takip edilemez"
 

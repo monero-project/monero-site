@@ -60,6 +60,19 @@ titles:
   blogbytag: Blog
   library: Librairie
 
+navigation:
+  getstarted: Commencer
+  whatis: Qu'est-ce que Monero ?
+  accepting: Accepter
+  contributing: Contribuer
+  mining: Miner
+  community: Communauté
+  team: Équipe
+  merchants: Commerçants
+  resources: Ressources
+  about: À propos
+  mrl: Laboratoire de Recherche
+
 index:
   page_title: "Monero - sécurisé, confidentiel, intracable"
 
