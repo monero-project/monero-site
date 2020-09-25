@@ -1752,6 +1752,8 @@ Inputs:
 Outputs:
 
 * *good* - boolean; States if the inputs proves the reserve.
+* *spent* - unsigned int; Amount (in @atomic-units) of the total that has been spent.
+* *total* - unsigned int; Total amount (in @atomic-units) of the reserve that was proven.
 
 In the example below, the reserve has been proven:
 
