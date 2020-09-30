@@ -8,16 +8,16 @@ Hash: SHA256
 #
 #
 ## CLI
-620c10c940eb9480f1004b80de6cdf0db0ff402d45ebda07b0677f556d3d8535  monero-android-armv7-v0.17.0.0.tar.bz2
-ff9c51f03be4728614a6c4b9ceefe60334dee118c1cd3a96be9af3db30b80cb0  monero-android-armv8-v0.17.0.0.tar.bz2
-a183c9729b4fcf53b29207c218ae39a01f59d4788620bf4227aa3a4adc4312ad  monero-freebsd-x64-v0.17.0.0.tar.bz2
-95b424be406346acd0422d2a12598d5f7d7033e20dfdb0e123fd75e185bcf76c  monero-linux-armv7-v0.17.0.0.tar.bz2
-47d7a24a15457ddca2bd5151805f35f000c92d8d216a0aaa31a982d1a68e31c3  monero-linux-armv8-v0.17.0.0.tar.bz2
-29a1a3d2d4a6bcbaccba0a8016be43c36c88523c358c721d9886e1f0c5ae662d  monero-linux-x64-v0.17.0.0.tar.bz2
-390125abd93ad7640e5033a88c34cda618fa4a78eb38156d9f9a29742968f44e  monero-linux-x86-v0.17.0.0.tar.bz2
-b07ca7a00373c4b7f151133e5ecd47da8a2ab65bdaa00154311cee8be735fd07  monero-mac-x64-v0.17.0.0.tar.bz2
-8b84b4c9820a9b0f5e010079ceaf622936cbf4a5cec6de099c2dbbaf3cf47b73  monero-win-x64-v0.17.0.0.zip
-bd92b31b82d4349416f2bac6d9d76404c526f9e546f90cc9806084badccd9de8  monero-win-x86-v0.17.0.0.zip
+6a41ba50f3eff23343d147a28e2e694e56f257aeffed46cb019ad0dcc71d2a4f  monero-android-armv7-v0.17.0.1.tar.bz2
+78f5c2f0199533c845a1c060a1888f029df1dbd13bd28e035d02ff83ec3493ae  monero-android-armv8-v0.17.0.1.tar.bz2
+a2c946f4aef22d5dd2637713ebaaf14d9307ae5cb2e8cb016e34bcd997aed2d8  monero-freebsd-x64-v0.17.0.1.tar.bz2
+be98deb70f5b8cda364dc37fdd7733c548474bf6baf40e3fbc5b00bc38d56c4a  monero-linux-armv7-v0.17.0.1.tar.bz2
+4805b496019cb74500b68c34457a15b394accfdb33ad97fe8ba0fbb2e83eb711  monero-linux-armv8-v0.17.0.1.tar.bz2
+2335716555ff0428da0f206a491d9c57b7ae2221d1cfbbb3bf43960d3a2a4dfe  monero-linux-x64-v0.17.0.1.tar.bz2
+8d2b20c36bf74e5d4d33d20a17dc0811e8ff6f0cb3ef8fb093fb0f430a2aa82c  monero-linux-x86-v0.17.0.1.tar.bz2
+af6737a6d81a2ec3f1ecfb8581e4e615e5a22ad34d808b3191ef488cb90084c1  monero-mac-x64-v0.17.0.1.tar.bz2
+f59a771efdd5e6bcd74668be9fe6798e1c2effeb38fce1639b24b307a95985cb  monero-win-x64-v0.17.0.1.zip
+ac50eb3fb993fd496a1856b01655494b5fe2b0a57a01c432c0c06a996e90058e  monero-win-x86-v0.17.0.1.zip
 #
 ## GUI
 50fe1d2dae31deb1ee542a5c2165fc6d6c04b9a13bcafde8a75f23f23671d484  monero-gui-install-win-x64-v0.16.0.3.exe
@@ -29,17 +29,17 @@ bd92b31b82d4349416f2bac6d9d76404c526f9e546f90cc9806084badccd9de8  monero-win-x86
 # ~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAl9ksIsACgkQ8K9NRioL
-35LCkw/+JX2wnq8CsuL2Rt+roozRN+C6tfGzmYpMVsfCpphl+oft87d6EA9fwXua
-rOdy7y/wfYNgtacIHPEl8OiKDnGGbDQ5/+nsHzrZcqIXvQF5zWQoK/0g2pez+DKK
-/Xqfctkee0/YKhAGrJGk9LSt3n9o9E3fPmflgn8BcLzxPEHCTqf6OOnNvizAANEb
-l+OrWMro0KNc1x4881RQV682ChwDePd1t0zG4iNdUJ1zWahRrXZkP95Wed/rZqQ2
-V7IbfXbbPTI51tB1rSF4PMjiWoKHhAVu5OivX/SUlmFr14ys8A9Qg5P97OoRr8tj
-VcCAyHsmVHE7qH2OKnbplBLM1YB/i1clBWvt+D4tMU9RpyDGp1E73Km2+Tf1WRAg
-nNN3g2RK2mXAZF2+ois0T5B5qyYfhcUpDvtIQfoiYjkLT+O/QX5V3ROFf3YjCoSu
-dESx9n+T8HMavbJ4xjwo1htL3NcgeKOijq0ie97yD8y99odeAEaAtrkLJVTHP7zI
-mPRx/WvudB4108BV8W6wEzji9xWDn5b7iFmUA0kv7n32SEAP/rUDQPlIyvRMHNFi
-K0F4bJZ06/1A9iUGYF7Ogd86+QpYSLRtKAxZA5T0jCkRf5NGjfdcxdMDFZs9HIz2
-afgjl9Sc3JcTDwwhQIFadeDrtYsPZztLjkiG3OphEbX8wcJgM0I=
-=4kFE
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAl90XXcACgkQ8K9NRioL
+35JLuxAAjwpRVjQqJnwlpBrp1iRCIQ0qBiFR9ug1qULPS0ZuqC8dDw3fKwCIpiqc
+2v2DhKYyI0ViDHMj/bgK3+ZgsuiBDOsQjOuBAdcXEQWkIm2O+7XxdFqGVH9HE9w3
+ipHZckv6z7tb1/fG2MAuroB+cst5c0GXo993l8gCz3XFJCRohELfZqYi6yFE8+pa
+mr0gkA0O49fzxModpWs3pRP3c0ypnOlgZkkH6rvwI+iU6z4hTe/92HjbZT4eIa8X
+6vkNY7GAMCpnD09fwSvUqd/pOE08CbGP3qT8GCCM+RdcWhONFQhrNNPn8TRSplL2
+YfgGlGMc59Mm6VzYbAJeyTLGizQU5JguUJk24Xt6aKJE0dXN690EiuJ2TzuKM5Et
+WMY2POhRu7OPgHxaX+MJ9BHt8VsL/tIVMAQIe+FOGud0mWhwnj9dwPY/fkx5Fryl
+qrzUK04haV3BEO9sz/DyN+utm1USAkE0D2MFRHai7h6jSGacyyU7ugUdOuFLfHzH
+/sc6DEYKU7RUTKVFJoOFMjeEBFS5rLY5U0mh5MScL3rp94z41Ivox2BgY5dapU/I
+RBg8qTemNpYMHpeAsl43dKyd0D2GqZjUZm0gx2QHAKcO81EXz+XyW9HQ9sWITRIn
+9wAOAPqbfu6cWPIL1cVpaa8mzuIBMdpJy8uWLvLmU0Px2dw2KQA=
+=wOP+
 -----END PGP SIGNATURE-----
