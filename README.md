@@ -122,12 +122,6 @@ languages: ["en", "es", "NEW LANG HERE"]
 ```
 Save and exit the file.
 
-### 2. \_data folder
-Navigate to the `_data/lang` folder and copy the `en` folder. Paste it into the same folder and the copy renamed to the two letter language code of the language you will be translated to.
-**The 'en' folder itself should still be there. It should not be renamed. There should be a new folder in addition to the ones that were already there.**
-
-Translate the content of the files. Do not touch anything labeled `url`.
-
 ### 3. \_i18n folder
 Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml`. Now duplicate the `en` folder and rename it with the correct language code.
 **The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**

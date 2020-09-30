@@ -61,6 +61,12 @@ navigation:
   about: About
   mrl: Research Lab
 
+footer:
+  feed: RSS Feed
+  legal: Legal
+  source: Source Code
+  channels: IRC channels
+
 index:
   page_title: "Monero - secure, private, untraceable"
 
