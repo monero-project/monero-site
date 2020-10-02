@@ -709,7 +709,6 @@ moneropedia:
   back: Back to the Moneropedia
   entries:
     account: Account
-    address-book: Address Book
     address: Address
     airgap: Airgap
     atomic-units: Atomic Units
@@ -725,7 +724,6 @@ moneropedia:
     cryptocurrency: Cryptocurrency
     daemon: Daemon
     denominations: Denominations
-    destination: Destination
     encryption: Encryption
     fluffyblocks: Fluffy Blocks
     fungibility: Fungibility
