@@ -33,4 +33,4 @@ summary: "The process of encoding messages or information in a way that only aut
 - @隧道加密：大蒜消息通过@隧道传递，并由@隧道网关加密到@隧道端点
 - @传输层加密防止在[媒体层](https://en.wikipedia.org/wiki/OSI_model)解密@消息
 
-有关@Kovri和@I2P中使用的各类型的加密和加密@签名的详细信息，请访问@Java-I2P的[密码学](https://geti2p.net/spec/cryptography)。
+有关@Kovri和I2P中使用的各类型的加密和加密@签名的详细信息，请访问@Java-I2P的[密码学](https://geti2p.net/spec/cryptography)。

@@ -18,5 +18,5 @@ A Canonically-unique host is defined by remote authoritative sources; usually th
 
 ### Notes
 
-- Monero primarily uses @canonically-unique-host resolution while @I2P only uses @locally-unique-host resolution.
-- @I2P's and @Kovri's self-assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)
+- Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution.
+- I2P's and @Kovri's self-assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)

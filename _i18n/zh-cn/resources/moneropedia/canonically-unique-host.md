@@ -19,5 +19,5 @@ summary: "A host that is canonically resolved to an address or set of addresses"
 
 ### 备注
 
-- 门罗币主要使用@标准唯一主机解析，而@I2P只使用@本地唯一主机解析。
-- @I2P和@Kovri的自定义顶级域名当前为`.i2p`，@Kovri只打算处理/使用 `.i2p` [顶级域名](https://en.wikipedia.org/wiki/Top_level_domain)
+- 门罗币主要使用@标准唯一主机解析，而I2P只使用@本地唯一主机解析。
+- I2P和@Kovri的自定义顶级域名当前为`.i2p`，@Kovri只打算处理/使用 `.i2p` [顶级域名](https://en.wikipedia.org/wiki/Top_level_domain)

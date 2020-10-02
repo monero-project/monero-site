@@ -18,5 +18,5 @@ Un hôte canonique unique est défini par des sources autoritaires distantes, co
 
 ### Remarques
 
-- Monero utilise en premier lieu la résolution de @hôte-canonique-unique alors que @I2P utilise uniquement la résolution d'@hôte-unique-localement.
-- le domaine de premier niveau auto-attribué de @I2P et @Kovri est actuellement `.i2p` et @Kovri se destine à n'utiliser et ne traiter que le [domaine de premier niveau](https://fr.wikipedia.org/wiki/Top_level_domain) `.i2p`.
+- Monero utilise en premier lieu la résolution de @hôte-canonique-unique alors que I2P utilise uniquement la résolution d'@hôte-unique-localement.
+- le domaine de premier niveau auto-attribué de I2P et @Kovri est actuellement `.i2p` et @Kovri se destine à n'utiliser et ne traiter que le [domaine de premier niveau](https://fr.wikipedia.org/wiki/Top_level_domain) `.i2p`.

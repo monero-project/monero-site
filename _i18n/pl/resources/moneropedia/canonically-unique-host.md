@@ -18,5 +18,5 @@ Zasadniczy unikalny host jest definiowany przez zdalne autorytatywne źródła, 
 
 ### Adnotacje
 
-- Monero głównie używa zasadniczego unikalnego hosta, podczas gdy @I2P korzysta jedynie z @lokalnego-unikalnego-hosta.
+- Monero głównie używa zasadniczego unikalnego hosta, podczas gdy I2P korzysta jedynie z @lokalnego-unikalnego-hosta.
 - Własną przypisaną domeną najwyższego poziomu sieci I2P i Kovri jest obecnie `.i2p`, a Kovri planuje używać jedynie [domeny najwyższego poziomu] `.i2p`(https://en.wikipedia.org/wiki/Top_level_domain).

@@ -6,7 +6,7 @@ summary: "Base64 encoded I2P destination"
 
 ### 基础知识
 
-@Base64地址是由516个字符组成的 [Base64编码](https://en.wikipedia.org/wiki/Base64) @I2P @目标。@base64地址主要用于@地址薄、@跳转服务以及内部。
+@Base64地址是由516个字符组成的 [Base64编码](https://en.wikipedia.org/wiki/Base64) I2P @目标。base64地址主要用于@地址薄、@跳转服务以及内部。
 
 例如:
 
@@ -17,4 +17,4 @@ AQZGLAMpI9Q0l0kmMj1vpJJYK3CjLp~fE3MfvE-e7KMKjI5cPOH6EN8m794uHJ6b09qM8mb9VEv1lVLE
 
 ### 深度信息
 
-有关@base64地址的更多详细信息，请参见@目标
+有关base64地址的更多详细信息，请参见@目标

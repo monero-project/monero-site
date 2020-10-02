@@ -13,7 +13,7 @@ Lokalnie unikalny host jest [Pełną, Jendoznaczną Nazwą Domenową](https://en
 
 Możesz podzielić się swoją interpretacją tego, jak ustalany jest host, np. `localhost` zawsze jest ustalony jako `127.0.0.1`, ale to ustalenie nie jest ogólnie egzekwowane (np. ktoś może przypisać `localhost` do dowolnego adresu IP).
 
-Hosty w publicznej subskrypcji mogą być uważane za @zasadnicze-unikalne-hosty wewnątrz sieci @I2P, jednak ostatecznie to od ciebie zależy, jak je zdefiniujesz.
+Hosty w publicznej subskrypcji mogą być uważane za @zasadnicze-unikalne-hosty wewnątrz sieci I2P, jednak ostatecznie to od ciebie zależy, jak je zdefiniujesz.
 
 ### Adnotacje
 
