@@ -9,14 +9,19 @@ global:
   tags: Etiketlere göre Yazılar
   wikimeta: Monero bilgisinin açık ansiklopedisi Moneropedi'de
   tagsmeta: Etiketlenen tüm Monero blog yazıları
-  titlemeta: Güvenli, gizli ve takip edilemeyen bir dijital para olan Monero'nun ana sayfasında
+  titlemeta: Güvenli, gizli ve takip edilemeyen bir dijital para olan Monero'nun ana
+    sayfasında
   terms: Şartlar
   privacy: Gizlilik
-  untranslated: Bu sayfa henüz çevrilmedi. Çevrilmesine yardım etmek isterseniz şunu görüntüleyin
-  outdatedMax: Bu sayfa güncel değil. Kullanmanızı tavsiye etmiyoruz. Bunun yerine şunu görüntüleyin
+  untranslated: Bu sayfa henüz çevrilmedi. Çevrilmesine yardım etmek isterseniz şunu
+    görüntüleyin
+  outdatedMax: Bu sayfa güncel değil. Kullanmanızı tavsiye etmiyoruz. Bunun yerine
+    şunu görüntüleyin
   outdatedVersion: İngilizce sürüm
-  outdatedMin: Bu sayfa çeviriden sonra güncellendi. Bu sürümü kullanabilirsiniz, ancak eksik olabilir.
-  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
+  outdatedMin: Bu sayfa çeviriden sonra güncellendi. Bu sürümü kullanabilirsiniz,
+    ancak eksik olabilir.
+  upgrade: To continue using Monero, make sure your software is up-to-date with the
+    November 30th network upgrade.
   moreinfo: Daha fazla bilgi
   lang_tag: "@lang_tag_tr"
 
@@ -59,19 +64,30 @@ index:
 
 home:
   heading2: Gizli Dijital Para
-  monero_is_cash: Monero bağlı bir dünya için paradır. Hızlı, gizli ve güvenlidir. Monero'yla kendi bankanız siz olursunuz. Başkalarının bakiyenizi göremeyeceğini veya aktivitelerinizi takip edemeyeceğini bilerek güvenli şekilde harcayabilirsiniz.
+  monero_is_cash: Monero bağlı bir dünya için paradır. Hızlı, gizli ve güvenlidir.
+    Monero'yla kendi bankanız siz olursunuz. Başkalarının bakiyenizi göremeyeceğini
+    veya aktivitelerinizi takip edemeyeceğini bilerek güvenli şekilde harcayabilirsiniz.
   get_started: Başlangıç
   why_monero_is_different: Monero'nun farklı olma sebepleri
   monero_is_secure: Monero güvenlidir
-  monero_is_secure_para: Monero merkeziyetsiz bir kripto-paradır, yani bir kullanıcılar ağınca işletilen güvenli dijital paradır. İşlemler dağıtık uzlaşımla onaylanıp değiştirilemez şekilde blokzincire kaydedilir. Moneronuzun güvende tutulması için üçüncü taraflara güvenilmesi gerekmez.
+  monero_is_secure_para: Monero merkeziyetsiz bir kripto-paradır, yani bir kullanıcılar
+    ağınca işletilen güvenli dijital paradır. İşlemler dağıtık uzlaşımla onaylanıp
+    değiştirilemez şekilde blokzincire kaydedilir. Moneronuzun güvende tutulması için
+    üçüncü taraflara güvenilmesi gerekmez.
   monero_is_private: Monero gizlidir
-  monero_is_private_para: Monero tüm işlemlerin kaynaklarını, miktarlarını ve varış noktalarını gizlemek için halka imzaları, halka gizli işlemleri ve hayalet adresleri kullanır. Monero olağan gizlilikten imtiyaz vermeden merkeziyetsiz bir kriptoparanın tüm faydalarını sağlar.
+  monero_is_private_para: Monero tüm işlemlerin kaynaklarını, miktarlarını ve varış
+    noktalarını gizlemek için halka imzaları, halka gizli işlemleri ve hayalet adresleri
+    kullanır. Monero olağan gizlilikten imtiyaz vermeden merkeziyetsiz bir kriptoparanın
+    tüm faydalarını sağlar.
   monero_is_untraceable: Monero takip edilemezdir
-  monero_is_untraceable_para: Gönderici ve alıcı adreslerin yanında aktarılan miktarlar da varsayılan şekilde gizlidir. Monero blokzincirindeki işlemler belirli bir kullanıcıya veya gerçek dünya kimliğine bağlanamaz.
+  monero_is_untraceable_para: Gönderici ve alıcı adreslerin yanında aktarılan miktarlar
+    da varsayılan şekilde gizlidir. Monero blokzincirindeki işlemler belirli bir kullanıcıya
+    veya gerçek dünya kimliğine bağlanamaz.
   monero_is_fungible: Monero değiştirilebilirdir
   monero_is_fungible_para1: Monero
   monero_is_fungible_para2: değiştirilebilirdir
-  monero_is_fungible_para3: çünkü varsayılan şekilde gizlidir. Monero birimleri önceki işlemlerdeki ilişkilendirmesi sebebiyle satıcı veya borsalarca kara listeye alınamaz.
+  monero_is_fungible_para3: çünkü varsayılan şekilde gizlidir. Monero birimleri önceki
+    işlemlerdeki ilişkilendirmesi sebebiyle satıcı veya borsalarca kara listeye alınamaz.
   downloads: İndirmeler
   downloads_windows: Windows için Monero
   downloads_mac: Mac için Monero
@@ -82,50 +98,75 @@ home:
   latest_news: Son Haberler
   more_news: Daha fazla haber
   moneropedia: Moneropedi
-  moneropedia_para: Monero'da kullanılan terimlerin ve kavramların anlamlarına bakmak ister misiniz? Burada hem Monero hem de Kovri projelerinden terimlerin ve onların anlamlarının alfabetik bir rehberini bulacaksınız.
+  moneropedia_para: Monero'da kullanılan terimlerin ve kavramların anlamlarına bakmak
+    ister misiniz? Burada hem Monero hem de Kovri projelerinden terimlerin ve onların
+    anlamlarının alfabetik bir rehberini bulacaksınız.
   moneropedia_button: Moneropedi'yi Oku
   user_guides: Kullanıcı Rehberleri
-  user_guides_para: Monero olan tüm şeylerin kategorilere ayrıldığı ve bir cüzdan yaratmaktan ağı desteklemeye, hatta bu internet sitesini düzenlemeye kadar her şeyi kapsayan adım adım rehberler.
+  user_guides_para: Monero olan tüm şeylerin kategorilere ayrıldığı ve bir cüzdan
+    yaratmaktan ağı desteklemeye, hatta bu internet sitesini düzenlemeye kadar her
+    şeyi kapsayan adım adım rehberler.
   user_guides_button: Kullanıcı rehberlerini oku
   faq: SSS
-  faq_para: Yıllar boyunca pek çok soruyla karşılaştık ve kolaylığınız için ayrıntılı ve çeşitlendirilmiş bir SSS derledik. Merak etmeyin, eğer sorularınız burada değilse her zaman topluluğumuza sorabilirsiniz.
+  faq_para: Yıllar boyunca pek çok soruyla karşılaştık ve kolaylığınız için ayrıntılı
+    ve çeşitlendirilmiş bir SSS derledik. Merak etmeyin, eğer sorularınız burada değilse
+    her zaman topluluğumuza sorabilirsiniz.
   faq_button: Cevapları oku
 
 hangouts:
-  intro: Monero topluluğu çeşitli ve farklı bireylerden oluşur. Dünya'nın her yerinden geliyor olsak da birlikte takılmaktan hoşlandığımız bazı yerler de yok değildir. Çoğunu aşağıda bulacaksınız. Bize katılın!
+  intro: Monero topluluğu çeşitli ve farklı bireylerden oluşur. Dünya'nın her yerinden
+    geliyor olsak da birlikte takılmaktan hoşlandığımız bazı yerler de yok değildir.
+    Çoğunu aşağıda bulacaksınız. Bize katılın!
   resources: Çalışma Grubu Kaynakları
-  resources_para: Organik çalışma gruplarını desteklemek adına Monero, topluluğun buluşup proje planlayabileceği birçok kaynağa sahiptir. Mattermost'un en popüler Monero ilintili IRC kanallarına röleleri bile vardır.
+  resources_para: Organik çalışma gruplarını desteklemek adına Monero, topluluğun
+    buluşup proje planlayabileceği birçok kaynağa sahiptir. Mattermost'un en popüler
+    Monero ilintili IRC kanallarına röleleri bile vardır.
   irc: IRC Kanalları
-  irc_para: Monero topluluğu her biri farklı amaçlara sahip pek çok IRC kanalından faydalanmaktadır. Kimisi çalışır, kimisiyse sadece takılır. En popüler olanları aşağıda bulacaksınız.
+  irc_para: Monero topluluğu her biri farklı amaçlara sahip pek çok IRC kanalından
+    faydalanmaktadır. Kimisi çalışır, kimisiyse sadece takılır. En popüler olanları
+    aşağıda bulacaksınız.
   irc_channels:
     monero: Bu kanal Monero'ya ilişkin her şeyi tartışmak için kullanılır.
-    monero-community: Bu kanal Monero topluluğunun toplanıp fikirlerini tartışması içindir.
-    monero-dev: Çok sayıdaki katkıda bulunan ve geliştirici buraya geliştirme şeylerini tartışmak için gelir.
-    monero-markets: Bu kanalı Monero'nun değeri ve diğer paralar hakkında konuşmak için kullanıyoruz.
-    monero-offtopic: Monero'ya ilişkin olmayan şeyler hakkında diğer Monero kullanıcıyla sohbet.
-    monero-otc: Borsa dışı Monero. Akran Monerodaşlarınızdan XMR almak için buraya gelin.
+    monero-community: Bu kanal Monero topluluğunun toplanıp fikirlerini tartışması
+      içindir.
+    monero-dev: Çok sayıdaki katkıda bulunan ve geliştirici buraya geliştirme şeylerini
+      tartışmak için gelir.
+    monero-markets: Bu kanalı Monero'nun değeri ve diğer paralar hakkında konuşmak
+      için kullanıyoruz.
+    monero-offtopic: Monero'ya ilişkin olmayan şeyler hakkında diğer Monero kullanıcıyla
+      sohbet.
+    monero-otc: Borsa dışı Monero. Akran Monerodaşlarınızdan XMR almak için buraya
+      gelin.
     monero-pools: Madencilik sorularının ve tartışmalarının yeri burasıdır.
     monero-research-lab: Kriptoparalarla finansal mahremiyet araştırmaları.
     monero-translations: Monero'nun diğer dillere yerelleştirilmesi.
     monero-hardware: Monero'nuzu güvende tutmak için donanım cüzdanları yapımı.
-    monero-site: 
+    monero-site:
     kovri: Bu kanal Kovri'ye ilişkin her şeyi tartışmak için kullanılır.
-    kovri-dev: Çok sayıdaki katkıda bulunan ve geliştirici buraya Kovri geliştirme şeylerini tartışmak için gelir.
+    kovri-dev: Çok sayıdaki katkıda bulunan ve geliştirici buraya Kovri geliştirme
+      şeylerini tartışmak için gelir.
 
 merchants:
-  intro1: Her türden satıcı Monero'nun getirdiği finansal gizliliğe değer vermeye başlamıştır. Aşağıda malları ve hizmetleri için şu anda Monero kabul ettiğini bildiğimiz satıcıların bir listesi bulunmaktadır. Eğer bir şirket artık Monero kabul etmiyorsa veya işletmenizin listelenmesini istiyorsanız lütfen
-  intro2:  bir GitLab sorunu açın ve bize haber verin 
-  intro3: 
+  intro1: Her türden satıcı Monero'nun getirdiği finansal gizliliğe değer vermeye
+    başlamıştır. Aşağıda malları ve hizmetleri için şu anda Monero kabul ettiğini
+    bildiğimiz satıcıların bir listesi bulunmaktadır. Eğer bir şirket artık Monero
+    kabul etmiyorsa veya işletmenizin listelenmesini istiyorsanız lütfen
+  intro2: bir GitLab sorunu açın ve bize haber verin
+  intro3:
   disclaimer: |
     "Lütfen dikkate alınız: Bu bağlantılar kolaylık olması ve sadece bilgi verme amaçlı olarak sağlanmaktadır; listelenen şirketlerin veya organizasyonların veya bireylerin herhangi bir ürününün, hizmetinin veya düşüncesinin Monero topluluğunca kabulünü oluşturmazlar. Monero topluluğu bu harici sitelerin doğruluğu, yasallığı veya içeriği üzerinde hiçbir sorumluluk sahibi değildir. İçerikleri hakkındaki sorularınıza cevap için harici sayfaya ulaşın. Her zamanki gibi, caveat emptor ('alıcı sakınsın'); kendi araştırmanızı yapmaktan siz sorumlusunuz. Çevrimiçi satın alım yaparken her zaman sağduyu kullanın."
 
 sponsorships:
-  intro: Aşağıdaki işletmeler Dünyaya finansal gizlilik getirme hedefinde Monero Projesini desteklemektedir. Katkıları için ne kadar minnettar olsak az. Eğer Monero Projesine sponsor olmak ve bu sayfada listelenmek isterseniz lütfen dev@getmonero.org'a bir e-posta gönderin.
+  intro: Aşağıdaki işletmeler Dünyaya finansal gizlilik getirme hedefinde Monero Projesini
+    desteklemektedir. Katkıları için ne kadar minnettar olsak az. Eğer Monero Projesine
+    sponsor olmak ve bu sayfada listelenmek isterseniz lütfen dev@getmonero.org'a
+    bir e-posta gönderin.
 
 team:
   core: Çekirdek
   developers: Geliştiriciler
-  developers_para1: Monero Projesi, projesinin yaşamı boyunca 500'den çok daha fazla geliştiriciye sahip olmuştur. Tam bir liste için ziyaret etmeniz gereken yer
+  developers_para1: Monero Projesi, projesinin yaşamı boyunca 500'den çok daha fazla
+    geliştiriciye sahip olmuştur. Tam bir liste için ziyaret etmeniz gereken yer
   developers_para2: OpenHub katkıda bulunanlar sayfasıdır.
   developers_para3: Aşağıda Monero için sınırları zorlayan bazı bireyleri bulacaksınız.
   community: Topluluk
@@ -133,20 +174,28 @@ team:
   thanks: Özel Teşekkürler
 
 downloads:
-  intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
+  intro: On this page you can find and download the latest version available of the
+    Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
   cli: CLI Wallet
   blockchain: Blockchain Bootstrap
-  blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from scratch, you can use the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM.
+  blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from
+    scratch, you can use the most current bootstrap. It is typically much faster to
+    sync from scratch, however, and it also takes a lot less RAM.
   blockchainbutton: Download Blockchain
   mobilelight: Mobile & Light Wallets
   hardware: Hardware Wallets
-  gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds of users, but it is especially recommended for less technical people who want to quickly send and receive XMR.
+  gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds
+    of users, but it is especially recommended for less technical people who want
+    to quickly send and receive XMR.
   simplemode: Simple mode
-  simplemode1: Created for less technical users who only want to use Monero in the easiest and quickest way possible. Open the wallet, automatically connect to a remote node, send/receive XMR, done!
+  simplemode1: Created for less technical users who only want to use Monero in the
+    easiest and quickest way possible. Open the wallet, automatically connect to a
+    remote node, send/receive XMR, done!
   advancedmode: Advanced mode
-  advancedmode1: With all the advanced features you could need. Ideal for seasoned Monero users who prefer to have full control of their wallet and node
+  advancedmode1: With all the advanced features you could need. Ideal for seasoned
+    Monero users who prefer to have full control of their wallet and node
   merchantpage: Merchant page
   merchantpage1: Receive XMR for your business, easily
   hwcompatible: Compatible with hardware wallets
@@ -156,7 +205,9 @@ downloads:
   pruning: Blockchain pruning
   pruning1: Not enough disk space? Just use pruning to download only 1/3 of the blockchain
   langs: "<b>30+ languages</b> available"
-  cli_intro: The CLI wallet gives you the total control over your Monero node and funds. Highly customizable and includes various analysis tools, as well as an HTTP RPC and 0MQ interface.
+  cli_intro: The CLI wallet gives you the total control over your Monero node and
+    funds. Highly customizable and includes various analysis tools, as well as an
+    HTTP RPC and 0MQ interface.
   currentversion: Current Version
   sourcecode: Source Code
   showissues: Show known issues for this release
@@ -167,43 +218,68 @@ downloads:
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
-  gui_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the GUI team at #monero-gui, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
-  cli_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the CLI team at #monero or #monero-dev, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
+  gui_helpsupport: "If you are experiencing issues or you need more info, feel free\
+    \ to reach out to the community. You can find the GUI team at #monero-gui, or\
+    \ else check out the Hangouts page for a more complete list of contacts and chatrooms"
+  cli_helpsupport: "If you are experiencing issues or you need more info, feel free\
+    \ to reach out to the community. You can find the CLI team at #monero or #monero-dev,\
+    \ or else check out the Hangouts page for a more complete list of contacts and\
+    \ chatrooms"
   localremote: Local or remote node
   localremote1: Use your own copy of the blockchain or a publicly available one
   transacttor: Transactions over Tor/I2P
   transacttor1: For an additional layer of privacy
   bootstrapnode: Bootstrap node
-  bootstrapnode1: Use a remote node while downloading the blockchain locally, this will allow you to use Monero immediately and switch to your local node once it's completely synced
+  bootstrapnode1: Use a remote node while downloading the blockchain locally, this
+    will allow you to use Monero immediately and switch to your local node once it's
+    completely synced
   rpc: RPC Wallet and Daemon
   rpc1: included in the archive
   payforrpc: Pay-for-RPC
-  payforrpc1: A new feature that allows node operators to get rewarded when their node is used
+  payforrpc1: A new feature that allows node operators to get rewarded when their
+    node is used
   verify: Verify
-  verify1: You are strongly advised to verify the hashes of the archive you downloaded. This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds. Always verify your downloads!
+  verify1: You are strongly advised to verify the hashes of the archive you downloaded.
+    This will confirm that the files you downloaded perfectly match the files uploaded
+    by the Monero development workgroup. Please don't underestimate this step, a corrupted
+    archive could result in lost funds. Always verify your downloads!
   showhash: Show hashes to verify your download
-  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as canonical, with the signature checked against the appropriate GPG key
+  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list
+    of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as
+    canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
   hardware1: The Monero community has funded a
   hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
+  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
+    has
   hardware4: integrated Monero into their hardware wallets.
   hardware5: Trezor model T supports Monero since version 0.14.1.
-  mobilelight1: The following are mobile or light wallets that are deemed safe by respected members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our
+  mobilelight1: The following are mobile or light wallets that are deemed safe by
+    respected members of the community. If there is a wallet that is not on here,
+    you can request the community check it out. Go to our
   mobilelight2: Hangouts
-  mobilelight3:  page to see where we are.
+  mobilelight3: page to see where we are.
   installer: Installer
 
 monero-project:
-  kovri: Kovri projesi bir Monero işleminin ne göndericisinin ne de alıcısının IP adreslerinin diğer tarafa veya üçüncü taraf gözlemcilerine (blokzincire) açığa çıkmaması gerekliliği için uçtan-uca şifrelemeyi kullanır. Bu karanlık ağı güçlendiren aynı teknolojiyi, i2p'yi (Görünmez İnternet Protokolü) kullanır. Proje şu anda yoğun, aktif gelişim hâlindedir ve henüz Monero ile entegre edilmemiştir.
+  kovri: Kovri projesi bir Monero işleminin ne göndericisinin ne de alıcısının IP
+    adreslerinin diğer tarafa veya üçüncü taraf gözlemcilerine (blokzincire) açığa
+    çıkmaması gerekliliği için uçtan-uca şifrelemeyi kullanır. Bu karanlık ağı güçlendiren
+    aynı teknolojiyi, i2p'yi (Görünmez İnternet Protokolü) kullanır. Proje şu anda
+    yoğun, aktif gelişim hâlindedir ve henüz Monero ile entegre edilmemiştir.
   kovri_button: Kovri İnternet Sayfasını Ziyaret Edin
-  openalias: OpenAlias projesi Monero cüzdan adresleri için herkesin gizliliğinin korunduğundan emin olunacak bir şekilde FQDN'ler (Tam Nitelikli Alan adı, örneğin örnek.openalias.org) sağlayarak kriptopara ödemelerini kolaylaştırır. Proje oldukça ilerlemiştir ve pek çok Monero cüzdanında uygulamaya konmuştur.
+  openalias: OpenAlias projesi Monero cüzdan adresleri için herkesin gizliliğinin
+    korunduğundan emin olunacak bir şekilde FQDN'ler (Tam Nitelikli Alan adı, örneğin
+    örnek.openalias.org) sağlayarak kriptopara ödemelerini kolaylaştırır. Proje oldukça
+    ilerlemiştir ve pek çok Monero cüzdanında uygulamaya konmuştur.
   openalias_button: OpenAlias İnternet Sayfasını Ziyaret Edin
 
 press-kit:
-  intro1: Burada, aşağıda Monero sembolünü ve logosunu bulacaksınız. Dilediğiniz boyutu seçebilir veya logoyla kendiniz oynamak için .ai dosyasını indirebilirsiniz.
-  intro2: Beyaz arka plan seçeneklerinin SADECE Monero sembolü altında beyaz bir arka planı olduğuna, tüm imgeye arka plan olmadığına dikkat edin.
+  intro1: Burada, aşağıda Monero sembolünü ve logosunu bulacaksınız. Dilediğiniz boyutu
+    seçebilir veya logoyla kendiniz oynamak için .ai dosyasını indirebilirsiniz.
+  intro2: Beyaz arka plan seçeneklerinin SADECE Monero sembolü altında beyaz bir arka
+    planı olduğuna, tüm imgeye arka plan olmadığına dikkat edin.
   intro3: Son olarak bu sayfadaki her şeyi tek bir zip dosyası olarak indirmek için
   intro4: buraya tıklayın.
   noback: Arka plansız
@@ -218,59 +294,97 @@ press-kit:
   pressdoc: Basın Belgelendirmesi
   quickfacts: "Hızlı Gerçekler Tablosu"
   quickfactsp: >
-    Monero hakkındaki her şeyi öğrenmek için okuması hızlı ve kolay bir belge: tarihi, önemli farklılaştıran etkenleri, teknik temel prensipleri ve gelişimdeki özellikleri.<br>
-    Daha fazla bilgi için <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a> sayfasını görüntüleyin.
+    Monero hakkındaki her şeyi öğrenmek için okuması hızlı ve kolay bir belge: tarihi,
+    önemli farklılaştıran etkenleri, teknik temel prensipleri ve gelişimdeki özellikleri.<br>
+    Daha fazla bilgi için <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero
+    Outreach</a> sayfasını görüntüleyin.
   marketing: Marketing Material
   dontbuysticker: "The 'Don't buy Monero' sticker"
-  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available
+    in multiple languages and formats (vectors included).
   guerrillakit: Guerrilla Toolkit
-  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials
+    and tips for an effective guerrilla marketing campaign.
 
 accepting:
   title: Komut-Satırı Arayüzü için Talimatlar
   basics: Temel Öğeler
-  basics_para1: Monero alışagelmiş olabileceğiniz diğer @kriptoparalar dan biraz daha farklı çalışır. Bitcoin gibi dijital paralar ve bunların çok sayıdaki türev satıcı ödeme sistemleri genellikle her ödeme veya kullanıcı için yeni bir alıcı @adres i yaratır.
-  basics_para2: Ancak Monero @hayalet-adresler e sahip olduğu için her ödeme veya kullanıcı için ayrı alıcı adreslerine sahip olmaya gerek yoktur ve tek bir @hesap adresi yayımlanabilir. Bunun yerine ödeme alırken bir satıcı ödeme yapacak kişiye bir "ödeme ID"si sağlar.
-  basics_para3: "Bir @ödeme-id si 64 karakter uzunluğunda olan bir onaltılı bir dizidir ve normalde satıcı tarafından rastgele yaratılır. Bir ödeme ID örneği şöyledir:"
+  basics_para1: Monero alışagelmiş olabileceğiniz diğer @kriptoparalar dan biraz daha
+    farklı çalışır. Bitcoin gibi dijital paralar ve bunların çok sayıdaki türev satıcı
+    ödeme sistemleri genellikle her ödeme veya kullanıcı için yeni bir alıcı @adres
+    i yaratır.
+  basics_para2: Ancak Monero @hayalet-adresler e sahip olduğu için her ödeme veya
+    kullanıcı için ayrı alıcı adreslerine sahip olmaya gerek yoktur ve tek bir @hesap
+    adresi yayımlanabilir. Bunun yerine ödeme alırken bir satıcı ödeme yapacak kişiye
+    bir "ödeme ID"si sağlar.
+  basics_para3: "Bir @ödeme-id si 64 karakter uzunluğunda olan bir onaltılı bir dizidir\
+    \ ve normalde satıcı tarafından rastgele yaratılır. Bir ödeme ID örneği şöyledir:"
   checking: monero-wallet-cli'da Ödeme Kontrolü
   checking_para1: |
     Eğer monero-wallet-cli kullanarak bir ödemeyi kontrol etmek isterseniz kontrol etmek istediğiniz ödeme ID veya ID'lerini takip eden şekilde "payments" komutunu kullanabilirsiniz. Örneğin:
-  checking_para2: Eğer programlanabilir şekilde ödemeleri kontrol etmeniz gerekiyorsa detaylar bir sonraki bölümde yer almaktadır.
+  checking_para2: Eğer programlanabilir şekilde ödemeleri kontrol etmeniz gerekiyorsa
+    detaylar bir sonraki bölümde yer almaktadır.
   receiving: Adım Adım Ödeme Almak
   receiving_list1: Ödeme için bir rastgele 64 karakterlik onaltılı dizi oluşturun
   receiving_list2: Ödeme ID'sini ve Monero adresini ödemeyi yapmakta olan kişiye iletin
-  receiving_list3: monero-wallet-cli'da "payments" komutunu kullanarak ödemeleri kontrol edin
+  receiving_list3: monero-wallet-cli'da "payments" komutunu kullanarak ödemeleri kontrol
+    edin
   program: Programlanabilir Şekilde Ödeme Kontrolü
-  program_para1: Programlanabilir şekilde ödemeleri kontrol etmek için get_payments veya get_bulk_payments JSON RPC API çağrılarını kullanabilirsiniz.
+  program_para1: Programlanabilir şekilde ödemeleri kontrol etmek için get_payments
+    veya get_bulk_payments JSON RPC API çağrılarını kullanabilirsiniz.
   program_para2: bu tek bir ödeme ID'siyle bir payment_id parametresi gerektirir.
-  program_para3: bu tercih edilen yöntemdir ve iki parametre, payment_ids - ödeme ID'lerinin bir JSON dizilimi - ve opsiyonel bir min_block_height - taramanın başlayacağı blok yüksekliği - gerektirir.
+  program_para3: bu tercih edilen yöntemdir ve iki parametre, payment_ids - ödeme
+    ID'lerinin bir JSON dizilimi - ve opsiyonel bir min_block_height - taramanın başlayacağı
+    blok yüksekliği - gerektirir.
   program_para4: |
     Dönen verinin bir örneği aşağıdaki gibidir:
-  program_para5: Geri dönen miktarların temel Monero birimlerinde olduğuna, normalde son-kullanıcı uygulamalarında kullanılan gösterim birimlerinde olmadığına dikkat etmek önemlidir. Ayrıca bir işlemin tipik olarak ödeme için gereken toplama eklenecek çoklu çıktısı olduğu için miktarlar tx_hash veya payment_id tarafından gruplanmalı ve birlikte eklenmelidir. Ek olarak çoklu çıktılar aynı miktara sahip olabileceği için tek bir get_bulk_payment çağrısından dönen veriyi filtrelemeyi denememek zaruridir.
-  program_para6: Ödemeleri taramadan önce ek blokların alınıp alınmadığını görmek için daemon RPC API'a (get_info RPC çağrısı) karşı kontrol etmek kullanışlıdır. Tipik olarak alınan bloğu get_bulk_payments'a min_block_height olarak belirterek sadece oradan taramak istersiniz.
+  program_para5: Geri dönen miktarların temel Monero birimlerinde olduğuna, normalde
+    son-kullanıcı uygulamalarında kullanılan gösterim birimlerinde olmadığına dikkat
+    etmek önemlidir. Ayrıca bir işlemin tipik olarak ödeme için gereken toplama eklenecek
+    çoklu çıktısı olduğu için miktarlar tx_hash veya payment_id tarafından gruplanmalı
+    ve birlikte eklenmelidir. Ek olarak çoklu çıktılar aynı miktara sahip olabileceği
+    için tek bir get_bulk_payment çağrısından dönen veriyi filtrelemeyi denememek
+    zaruridir.
+  program_para6: Ödemeleri taramadan önce ek blokların alınıp alınmadığını görmek
+    için daemon RPC API'a (get_info RPC çağrısı) karşı kontrol etmek kullanışlıdır.
+    Tipik olarak alınan bloğu get_bulk_payments'a min_block_height olarak belirterek
+    sadece oradan taramak istersiniz.
   scanning: Programlanabilir Şekilde Ödeme Taraması
-  scanning_list1: Daemon'dan mevcut blok yüksekliğini alın, sadece son taramamızdan beri arttıysan ilerleyin
-  scanning_list2: get_bulk_payments RPC API çağrısını son taranmış yüksekliğimizle ve sistemimizdeki tüm ödeme ID'lerin listesiyle arayın
+  scanning_list1: Daemon'dan mevcut blok yüksekliğini alın, sadece son taramamızdan
+    beri arttıysan ilerleyin
+  scanning_list2: get_bulk_payments RPC API çağrısını son taranmış yüksekliğimizle
+    ve sistemimizdeki tüm ödeme ID'lerin listesiyle arayın
   scanning_list3: Mevcut blok yüksekliğini taranan son yüksekliğimiz olarak depolayın
-  scanning_list4: Zaten almış ve işlemiş olduğumuz işlem sağlamalarına dayanarak kopyaları kaldırın
+  scanning_list4: Zaten almış ve işlemiş olduğumuz işlem sağlamalarına dayanarak kopyaları
+    kaldırın
 
 contributing:
-  intro: Monero açık kaynak kodlu, topluluk güdümlü bir projedir. Aşağıda projeyi desteklemenin birçok yolu tarif edilmiştir.
+  intro: Monero açık kaynak kodlu, topluluk güdümlü bir projedir. Aşağıda projeyi
+    desteklemenin birçok yolu tarif edilmiştir.
   network: Ağı Destekleyin
   develop: Geliştirin
-  develop_para1: "Monero öncelikli olarak C++'da yazılmıştır. Merkeziyetsiz bir proje olması sayesinde herkes var olan koda ekleme veya değişiklik yapabilir. İste talepleri topluluk uzlaşımına dayanılarak birleştirilir. Görüntüleyin:"
+  develop_para1: "Monero öncelikli olarak C++'da yazılmıştır. Merkeziyetsiz bir proje\
+    \ olması sayesinde herkes var olan koda ekleme veya değişiklik yapabilir. İste\
+    \ talepleri topluluk uzlaşımına dayanılarak birleştirilir. Görüntüleyin:"
   develop_para2: Depolar
   develop_para3: ve öne çıkan
   develop_para4: sorunlar.
   full-node: Tam Düğüm Çalıştırın
-  full-node_para: Port 18080 açıkken monerod çalıştırın. Bir tam düğüm çalıştırmak Monero'yla işlem yaparken azami gizliliği kesinleştirir. Ayrıca blokzincirin yeni kullanıcılara dağıtımını geliştirir.
+  full-node_para: Port 18080 açıkken monerod çalıştırın. Bir tam düğüm çalıştırmak
+    Monero'yla işlem yaparken azami gizliliği kesinleştirir. Ayrıca blokzincirin yeni
+    kullanıcılara dağıtımını geliştirir.
   mine: Madencilik Yapın
-  mine_para1: Madencilik Monero ağının merkeziyetsiz ve güvenli kalmasını kesinleştirir. Monero grafiksel kullanıcı arayüzünde ve komut-satırı arayüzünde arka plan madenciliği etkinleştirilebilir. Madencilik hakkındaki ek kaynakları
+  mine_para1: Madencilik Monero ağının merkeziyetsiz ve güvenli kalmasını kesinleştirir.
+    Monero grafiksel kullanıcı arayüzünde ve komut-satırı arayüzünde arka plan madenciliği
+    etkinleştirilebilir. Madencilik hakkındaki ek kaynakları
   mine_para2: burada görüntüleyebilirsiniz.
   ffs: Forum Fonlama Sistemini Görüntüleyin
-  ffs_para1: Monero projelerin gelişim için önerildiği ve topluluk tarafından fonlandığı bir
+  ffs_para1: Monero projelerin gelişim için önerildiği ve topluluk tarafından fonlandığı
+    bir
   ffs_para2: forum fonlama sistemi
-  ffs_para3: kullanır. Fonlama emanette tutulur ve programlama kilometre taşları başarıya ulaştıkça geliştiricilere karşılık olarak verilir. Herkes yeni öneriler üretebilir veya mevcut olanları fonlayabilir.
+  ffs_para3: kullanır. Fonlama emanette tutulur ve programlama kilometre taşları başarıya
+    ulaştıkça geliştiricilere karşılık olarak verilir. Herkes yeni öneriler üretebilir
+    veya mevcut olanları fonlayabilir.
   donate: Bağışla
   donate_para1: Mevcut gelişimi destekleme araçları bağışlar ve
   donate_para2: sponsorluklar.
@@ -280,45 +394,113 @@ contributing:
   donate-btc: Bitcoin Bağışlama
   donate-btc_para: "Bağış gönderebileceğiniz adresler şunlardır:"
   donate-other: Diğer
-  donate-other_para1: Alternatif bağış yolları için veya Monero Projesine sponsor olmak istiyorsanız
+  donate-other_para1: Alternatif bağış yolları için veya Monero Projesine sponsor
+    olmak istiyorsanız
   donate-other_para2: a e-posta gönderin.
 
 faq:
   q1: Monero'nun değeri niye vardır?
-  a1: İnsanlar almak istediği için Monero'nun değeri vardır. Hiç kimse Monero almaya gönüllü değilse bir değeri olmayacaktır. Monero'nun değeri talep arzı aştığında artar ve arz talebi aştığında düşer.
+  a1: İnsanlar almak istediği için Monero'nun değeri vardır. Hiç kimse Monero almaya
+    gönüllü değilse bir değeri olmayacaktır. Monero'nun değeri talep arzı aştığında
+    artar ve arz talebi aştığında düşer.
   q2: Nasıl Monero alabilirim?
-  a2: Bir borsadan veya kişiden Monero alabilirsiniz. Alternatif olarak blok ödülünden para almak için Monero madenciliği yapmayı deneyebilirsiniz.
+  a2: Bir borsadan veya kişiden Monero alabilirsiniz. Alternatif olarak blok ödülünden
+    para almak için Monero madenciliği yapmayı deneyebilirsiniz.
   q3: Anımsatıcı tohum nedir?
-  a3: Anımsatıcı tohum hesabınızı nerede olursanız olun geri getirmek için kullanılabilecek 25 kelimelik bir kümedir. Bu kelimeleri güvenli şekilde koruyun ve başka kimseyle paylaşmayın. Bilgisayarınız bozulsa bile bu tohumu kullanarak hesabınızı geri getirebilirsiniz.
+  a3: Anımsatıcı tohum hesabınızı nerede olursanız olun geri getirmek için kullanılabilecek
+    25 kelimelik bir kümedir. Bu kelimeleri güvenli şekilde koruyun ve başka kimseyle
+    paylaşmayın. Bilgisayarınız bozulsa bile bu tohumu kullanarak hesabınızı geri
+    getirebilirsiniz.
   q4: Monero'nun gizliliği diğer paralardan nasıl farklıdır?
   a4: |
     Monero üç farklı gizlilik teknolojisi kullanır: halka imzalar, halka gizli işlemler (RingCT) ve hayalet adresler. Bunlar sırasıyla göndericiyi, miktarı ve alıcıyı gizler. Ağdaki tüm işlemler zorunlu olarak gizlidir; kazayla saydam bir işlem göndermenin bir yolu yoktur. Bu özellik sadece Monero'da bulunur. Gizliliğiniz için başka birine güvenmeniz gerekmez.
   q5: Cüzdanımın senkronize olması neden bu kadar uzun sürüyor?
-  a5: Eğer yerel olarak bir tam düğüm çalıştırıyorsanız tüm blokzinciri bilgisayarınıza kopyalamanız gerekir. Bu özellikle eski bir sabit sürücüde veya yavaş bir internet bağlantısında uzun zaman alabilir. Eğer bir uzak düğüm kullanıyorsanız bilgisayarınız yine de tüm çıktıların bir kopyasını istemesi gerekecektir ki bu birkaç saat alabilir. Sabırlı olun ve daha hızlı senkron süreleri için biraz gizlilik feda etmek isterseniz bunların yerine bir hafif cüzdan kullanmayı düşünün.
+  a5: Eğer yerel olarak bir tam düğüm çalıştırıyorsanız tüm blokzinciri bilgisayarınıza
+    kopyalamanız gerekir. Bu özellikle eski bir sabit sürücüde veya yavaş bir internet
+    bağlantısında uzun zaman alabilir. Eğer bir uzak düğüm kullanıyorsanız bilgisayarınız
+    yine de tüm çıktıların bir kopyasını istemesi gerekecektir ki bu birkaç saat alabilir.
+    Sabırlı olun ve daha hızlı senkron süreleri için biraz gizlilik feda etmek isterseniz
+    bunların yerine bir hafif cüzdan kullanmayı düşünün.
   q6: Hafif ve normal cüzdan arasındaki fark nedir?
-  a6: Hafif bir cüzdanda görüntüleme anahtarınızı sizin yerinize blokzinciri tarayan ve hesabınıza gelecek işlemleri bekleyen bir uca verirsiniz. Bu uç ne zaman paranızı aldığınızı bilecektir, ancak ne kadar aldığınızı, kimden aldığınızı veya kime para gönderdiğinizi bilmeyecektir. Cüzdan yazılımınıza bağlı olarak gizlilik sızıntılarından kaçınmak için sizin kontrol ettiğiniz bir düğüm kullanabilirsiniz. Daha fazla gizlilik için kendi düğümünüzle kullanılabilecek olan bir normal cüzdan kullanın.
+  a6: Hafif bir cüzdanda görüntüleme anahtarınızı sizin yerinize blokzinciri tarayan
+    ve hesabınıza gelecek işlemleri bekleyen bir uca verirsiniz. Bu uç ne zaman paranızı
+    aldığınızı bilecektir, ancak ne kadar aldığınızı, kimden aldığınızı veya kime
+    para gönderdiğinizi bilmeyecektir. Cüzdan yazılımınıza bağlı olarak gizlilik sızıntılarından
+    kaçınmak için sizin kontrol ettiğiniz bir düğüm kullanabilirsiniz. Daha fazla
+    gizlilik için kendi düğümünüzle kullanılabilecek olan bir normal cüzdan kullanın.
   q7: Monero'nun Bitcoin'den nesi farklı?
-  a7: Monero Bitcoin'e dayanmaz. CryptoNote protokolüne dayanır. Bitcoin insanların bir kullanıcının diğerine tam olarak ne kadar para gönderdiğini görebildiği tamamıyla saydam bir sistemdir. Monero kullanıcı gizliliğini korumak için tüm işlemlerde bu bilgiyi saklar. Ayrıca pek çok başka değişikliğin yanında dinamik blok boyutuna ve dinamik ücretlere, ASIC-dirençli bir iş kanıtına ve bir uç para salınımına sahiptir.
+  a7: Monero Bitcoin'e dayanmaz. CryptoNote protokolüne dayanır. Bitcoin insanların
+    bir kullanıcının diğerine tam olarak ne kadar para gönderdiğini görebildiği tamamıyla
+    saydam bir sistemdir. Monero kullanıcı gizliliğini korumak için tüm işlemlerde
+    bu bilgiyi saklar. Ayrıca pek çok başka değişikliğin yanında dinamik blok boyutuna
+    ve dinamik ücretlere, ASIC-dirençli bir iş kanıtına ve bir uç para salınımına
+    sahiptir.
   q8: Monero'nun bir blok boyutu sınırı var mı?
-  a8: Hayır, Monero'nun sert bir blok boyutu sınırı yoktur. Bunun yerine blok boyutu talebe bağlı olarak zamanla artabilir veya azılabilir. Ölçüsüz büyümeyi engellemek adına belirli bir büyüme oranıyla sınırlanmıştır.
+  a8: Hayır, Monero'nun sert bir blok boyutu sınırı yoktur. Bunun yerine blok boyutu
+    talebe bağlı olarak zamanla artabilir veya azılabilir. Ölçüsüz büyümeyi engellemek
+    adına belirli bir büyüme oranıyla sınırlanmıştır.
   q9: Blokzincir nedir?
-  a9: Blokzincir, Monero ağında tüm işlem tarihçesinin bir kopyasını saklayan bir sistemdir. Her iki dakikada bir en son işlem bilgilerinin olduğu bir blok, blokzincire eklenir. Bu zincir ağa para hesaplarının sahip olduğu miktarı doğrulamasına izin verir ve saldırılara ve merkezileşme çabalarına karşı onu dirençli kılar.
+  a9: Blokzincir, Monero ağında tüm işlem tarihçesinin bir kopyasını saklayan bir
+    sistemdir. Her iki dakikada bir en son işlem bilgilerinin olduğu bir blok, blokzincire
+    eklenir. Bu zincir ağa para hesaplarının sahip olduğu miktarı doğrulamasına izin
+    verir ve saldırılara ve merkezileşme çabalarına karşı onu dirençli kılar.
   q10: Kovri nedir?
-  a10: Kovri C++’da yazılmış olan bir I2P yönelticidir. I2P Tor gibi gizli bir ağdır, ama çeşitli teknik farklılıklara sahiptir. Kovri Monero'dan bağımsız bir projedir, ama Monero’yla ve birkaç başka projeyle birlikte çalışacaktır. Kovri işlem yayınını saklar, böylelikle diğer uçlar işlemleri kimin yarattığını bilmez. Muhalif durumlarda Kovri insanların Monero’nun kullanıldığını öğrenmesini engellemek adına I2P aracılığıyla tüm Monero trafiğini saklamak için kullanılabilir. Kovri şu an alfa aşamasındadır ve Monero’yla tamamen entegre edilmemiştir. Kovri hakkında daha fazla bilgiyi <a href="https://kovri.io">projenin internet sayfası</a>ndan öğrenebilirsiniz.
+  a10: Kovri C++’da yazılmış olan bir I2P yönelticidir. I2P Tor gibi gizli bir ağdır,
+    ama çeşitli teknik farklılıklara sahiptir. Kovri Monero'dan bağımsız bir projedir,
+    ama Monero’yla ve birkaç başka projeyle birlikte çalışacaktır. Kovri işlem yayınını
+    saklar, böylelikle diğer uçlar işlemleri kimin yarattığını bilmez. Muhalif durumlarda
+    Kovri insanların Monero’nun kullanıldığını öğrenmesini engellemek adına I2P aracılığıyla
+    tüm Monero trafiğini saklamak için kullanılabilir. Kovri şu an alfa aşamasındadır
+    ve Monero’yla tamamen entegre edilmemiştir. Kovri hakkında daha fazla bilgiyi
+    <a href="https://kovri.io">projenin internet sayfası</a>ndan öğrenebilirsiniz.
   q11: Değiştirilebilirlik nedir ve neden önemlidir?
-  a11: Değiştirilebilirlik paranın aynı değerdeki iki miktarı arasında hiçbir fark olmaması yönündeki basit bir özelliğidir. Eğer iki kişi bir 10’luk ve iki 5’lik değişirse kimse kaybetmez. Ancak diyelim ki herkes 10'luğun daha önce bir fidye yazılım saldırısında kullanıldığını biliyor. Diğer kişi bu takası yine de yapar mıydı? 10’luğu olan kişinin fidye yazılımla bir bağlantısı olmasa bile herhalde hayır. Paranın alıcısının aldıkları paranın lekelenmiş paralara karışmayacağını sürekli kontrol etmesi gerektiği için bu bir sorundur. Monero değiştirilebilirdir, yani insanların bu çabayı harcamasını gerektirmez.
+  a11: Değiştirilebilirlik paranın aynı değerdeki iki miktarı arasında hiçbir fark
+    olmaması yönündeki basit bir özelliğidir. Eğer iki kişi bir 10’luk ve iki 5’lik
+    değişirse kimse kaybetmez. Ancak diyelim ki herkes 10'luğun daha önce bir fidye
+    yazılım saldırısında kullanıldığını biliyor. Diğer kişi bu takası yine de yapar
+    mıydı? 10’luğu olan kişinin fidye yazılımla bir bağlantısı olmasa bile herhalde
+    hayır. Paranın alıcısının aldıkları paranın lekelenmiş paralara karışmayacağını
+    sürekli kontrol etmesi gerektiği için bu bir sorundur. Monero değiştirilebilirdir,
+    yani insanların bu çabayı harcamasını gerektirmez.
   q12: Monero bu kadar gizliyse hiç yoktan yaratılmadığını nasıl biliyoruz?
-  a12-1: Monero’da her işlem çıktısı sadece o çıktının sahibi tarafından üretilebilen bir anahtar imgesiyle eşsiz şekilde eşleştirilir. Birden fazla kullanılan anahtar imgeleri çifte harcama olarak madenciler tarafından reddedilir ve geçerli bir bloka eklenemez. Yeni bir işlem alındığında madenciler bunun bir çifte harcama olmadığına emin olmak için anahtar imgesinin önceki bir işlemde olmadığını doğrular.
-  a12-2: Ayrıca harcadığınızın girdi değerleri ve gönderdiğinizin çıktı değerleri şifrelenmiş olsa bile (bunlar alıcı dışında herkes için gizlidir) işlem miktarlarının geçerli olduğunu bilebiliriz. Bunun sebebi hiçbir gözlemcinin girdilerin ve çıktıların miktarlarını bilemeyeceği Pedersen üstlenmelerinin kullanılarak miktarların şifrelenmesidir, ancak hiçbir Monero'nun yoktan yaratılmadığını belirlemek için Pedersen üstlenmelerinde matematik yapabilirler.
-  a12-3: Yarattığınız şifrelenmiş çıktı miktarları harcanan girdilerin toplamına eşit olduğu sürece (ki bu alıcı için bir çıktı, kendinize bir değişiklik çıktısı ve şifrelenmemiş işlem ücretini içerir) meşru bir işleminiz vardır ve Monero'nun yoktan yaratılmadığını bilirsiniz. Pedersen üstlenmeleri toplamların eşit olmasıyla doğrulanabilir, ancak toplamların her birinin Monero değeri ve girdi ve çıktıların ayrı ayrı Monero değeri belirlenemez.
+  a12-1: Monero’da her işlem çıktısı sadece o çıktının sahibi tarafından üretilebilen
+    bir anahtar imgesiyle eşsiz şekilde eşleştirilir. Birden fazla kullanılan anahtar
+    imgeleri çifte harcama olarak madenciler tarafından reddedilir ve geçerli bir
+    bloka eklenemez. Yeni bir işlem alındığında madenciler bunun bir çifte harcama
+    olmadığına emin olmak için anahtar imgesinin önceki bir işlemde olmadığını doğrular.
+  a12-2: Ayrıca harcadığınızın girdi değerleri ve gönderdiğinizin çıktı değerleri
+    şifrelenmiş olsa bile (bunlar alıcı dışında herkes için gizlidir) işlem miktarlarının
+    geçerli olduğunu bilebiliriz. Bunun sebebi hiçbir gözlemcinin girdilerin ve çıktıların
+    miktarlarını bilemeyeceği Pedersen üstlenmelerinin kullanılarak miktarların şifrelenmesidir,
+    ancak hiçbir Monero'nun yoktan yaratılmadığını belirlemek için Pedersen üstlenmelerinde
+    matematik yapabilirler.
+  a12-3: Yarattığınız şifrelenmiş çıktı miktarları harcanan girdilerin toplamına eşit
+    olduğu sürece (ki bu alıcı için bir çıktı, kendinize bir değişiklik çıktısı ve
+    şifrelenmemiş işlem ücretini içerir) meşru bir işleminiz vardır ve Monero'nun
+    yoktan yaratılmadığını bilirsiniz. Pedersen üstlenmeleri toplamların eşit olmasıyla
+    doğrulanabilir, ancak toplamların her birinin Monero değeri ve girdi ve çıktıların
+    ayrı ayrı Monero değeri belirlenemez.
   q13: Monero büyülü müdür ve ne yaparsam yapayım gizliliğimi korur mu?
-  a13: Monero büyülü değildir. Monero kullanır, ancak başka bir tarafa isminizi ve adresini verirsiniz diğer taraf büyülenmiş gibi isminizi ve adresinizi unutmayacaktır. Eğer gizli anahtarlarınızı verirseniz diğerleri ne yaptığınızı bilecektir. Eğer ifşa edilirseniz diğerleri tuşlarınızı kaydedebilir. Zayıf bir şifre kullanırsanız diğerleri anahtarlar dosyanızı kaba kuvvetle çözebilir. Eğer tohumunuzu bir buluta yedeklerseniz yakında fakirleşeceksiniz.
+  a13: Monero büyülü değildir. Monero kullanır, ancak başka bir tarafa isminizi ve
+    adresini verirsiniz diğer taraf büyülenmiş gibi isminizi ve adresinizi unutmayacaktır.
+    Eğer gizli anahtarlarınızı verirseniz diğerleri ne yaptığınızı bilecektir. Eğer
+    ifşa edilirseniz diğerleri tuşlarınızı kaydedebilir. Zayıf bir şifre kullanırsanız
+    diğerleri anahtarlar dosyanızı kaba kuvvetle çözebilir. Eğer tohumunuzu bir buluta
+    yedeklerseniz yakında fakirleşeceksiniz.
   q14: Monero %100 anonim mi ?
-  a14: "%100 anonimlik diye bir şey yoktur. Hiç değilse anonimlik sınırınız Monero’yu kullanan insanlar kümesidir. Bazı insanlar Monero’yu kullanmaz. Monero’nun hataları da olabilir. Böyle olmasa bile şimdiye veya daha sonra Monero’nun gizlilik katmanları aracılığıyla bazı bilgilerin çıkarımını yapma yolları var olabilir. Saldırılar sürekli güçlenmektedir. Emniyet kemeri taksanız bile bir araba kazasında ölebilirsiniz. Mantığınızı, sağduyunuzu ve savunmanızı etraflıca kullanın."
+  a14: "%100 anonimlik diye bir şey yoktur. Hiç değilse anonimlik sınırınız Monero’yu\
+    \ kullanan insanlar kümesidir. Bazı insanlar Monero’yu kullanmaz. Monero’nun hataları\
+    \ da olabilir. Böyle olmasa bile şimdiye veya daha sonra Monero’nun gizlilik katmanları\
+    \ aracılığıyla bazı bilgilerin çıkarımını yapma yolları var olabilir. Saldırılar\
+    \ sürekli güçlenmektedir. Emniyet kemeri taksanız bile bir araba kazasında ölebilirsiniz.\
+    \ Mantığınızı, sağduyunuzu ve savunmanızı etraflıca kullanın."
 
 mining:
-  intro1: Monero dağıtık uzlaşıma ulaşmak için iş kanıtı madenciliğine bel bağlayan bir kriptoparadır. Aşağıda madenciliğe nasıl başlanacağı hakkında bazı bilgiler ve kaynaklar bulacaksınız.
-  intro2: Monero Projesi herhangi bir havuzu, yazılımı veya donanımı benimsememektedir ve aşağıdaki içerik sadece bilgilendirme amaçlı olarak sunulmuştur.
+  intro1: Monero dağıtık uzlaşıma ulaşmak için iş kanıtı madenciliğine bel bağlayan
+    bir kriptoparadır. Aşağıda madenciliğe nasıl başlanacağı hakkında bazı bilgiler
+    ve kaynaklar bulacaksınız.
+  intro2: Monero Projesi herhangi bir havuzu, yazılımı veya donanımı benimsememektedir
+    ve aşağıdaki içerik sadece bilgilendirme amaçlı olarak sunulmuştur.
   support: Destek
   support_para1: "Şunları görüntüleyin:"
   support_para2: Buluşmalar,
@@ -334,78 +516,139 @@ mining:
   software_para: Bazı madencilerin geliştirici ücreti olabileceğine dikkate alın.
 
 using:
-  intro: Monero'yla işlem yapmak kolay olabilir. Bu sayfa kullanıcılara bu süreçte rehber olması için tasarlanmıştır.
+  intro: Monero'yla işlem yapmak kolay olabilir. Bu sayfa kullanıcılara bu süreçte
+    rehber olması için tasarlanmıştır.
   learn: 1. Öğrenin
-  learn_para1: Monero güvenli, gizli ve takip edilemez bir kriptoparadır. Geliştiriciler ve topluluk kendilerini bu değerleri korumaya adamıştır.
+  learn_para1: Monero güvenli, gizli ve takip edilemez bir kriptoparadır. Geliştiriciler
+    ve topluluk kendilerini bu değerleri korumaya adamıştır.
   learn_para2: Monero Nedir
   learn_para3: sayfasını okuyarak daha fazlasını öğrenin.
   learn_para4: Kaynak kodu
   learn_para5: da incelemeye ve tartışmaya açıktır.
   support: 2. Destek İsteyin
-  support_para1: Bir zorlukla karşılaşırsanız yardımcı olacak büyük ve destekçi bir topluluk var. Daha fazla bilgi için
+  support_para1: Bir zorlukla karşılaşırsanız yardımcı olacak büyük ve destekçi bir
+    topluluk var. Daha fazla bilgi için
   support_para2: Buluşmalar
   support_para3: sayfasını görüntüleyin.
   generate: 3. Bir Cüzdan Yaratın
-  generate_para1: Bir Monero cüzdanı kendi fonlarınızı güvenlik altına almak için gereklidir. Mevcut cüzdanların bir listelemesi için
+  generate_para1: Bir Monero cüzdanı kendi fonlarınızı güvenlik altına almak için
+    gereklidir. Mevcut cüzdanların bir listelemesi için
   generate_para2: İndirmeler sayfasını
   generate_para3: ziyaret edin.
-  generate_para4: Ev bant aralığınızı etkilemeden bir Monero düğümü çalıştırmanın en kolay yolu bir VPS (Sanal Özel Sunucu) satın almaktadır. Güçlü bir şekilde
+  generate_para4: Ev bant aralığınızı etkilemeden bir Monero düğümü çalıştırmanın
+    en kolay yolu bir VPS (Sanal Özel Sunucu) satın almaktadır. Güçlü bir şekilde
   generate_para5: ’i kullanmanızı tavsiye ediyoruz.
-  generate_para6: kupon koduyla zaten ucuz olan aylık 6$’lık VPS'in yanında indirim alabilirsiniz. Bu kupon kodunu ve/veya
+  generate_para6: kupon koduyla zaten ucuz olan aylık 6$’lık VPS'in yanında indirim
+    alabilirsiniz. Bu kupon kodunu ve/veya
   generate_para7: işbirlik bağlantımızı
-  generate_para8: kullanmak Monero gelişiminin devam eden fonlanmasına da yardımcı olacaktır.
+  generate_para8: kullanmak Monero gelişiminin devam eden fonlanmasına da yardımcı
+    olacaktır.
   acquire: 4. Monero Elde Edin
   acquire_para1: Monero bir
   acquire_para2: borsa
-  acquire_para3: dan itibari para veya diğer kriptoparalarla alınabilir. Monero elde etmenin başka bir yoluysa
+  acquire_para3: dan itibari para veya diğer kriptoparalarla alınabilir. Monero elde
+    etmenin başka bir yoluysa
   acquire_para4: madencilik,
-  acquire_para5: yani işlemlerin değiştirilemez şekilde blokzincire kaydedildiği bilgi-sayımsal açıdan karmaşık bir süreçtir.
+  acquire_para5: yani işlemlerin değiştirilemez şekilde blokzincire kaydedildiği bilgi-sayımsal
+    açıdan karmaşık bir süreçtir.
   send-receive: 5. Monero Gönderin ve Alın
   send-receive_para1: Nasıl Monero gönderip alındığını öğrenebileceğiniz
   send-receive_para2: rehber.
   transact: 6. Monero’yla İşlem Yapın
-  transact_para1: Monero pek çok mal ve hizmetin alımında kullanılabilir. İşte bir listelemeye ulaşabileceğiniz
+  transact_para1: Monero pek çok mal ve hizmetin alımında kullanılabilir. İşte bir
+    listelemeye ulaşabileceğiniz
   transact_para2: Satıcılar sayfası.
 
 what-is-monero:
   need-to-know: Bilmeniz gerekenler
   leading: Monero gizliliğe ve sansüre dayanıklı işlemlere odaklanan önde gelen kriptoparadır.
-  leading_para1: Bitcoin ve Ethereum’u da içeren mevcut kriptoparaların çoğunun saydam blokzincirleri vardır, bu da işlemlerin Dünyadaki herkes tarafından açık şekilde doğrulanabildiği ve izlenebildiği anlamına gelir. Dahası bu işlemler için gönderici ve alıcı adreslerinin kişinin gerçek dünya kimliğine bağlanabilme potansiyeli vardır.
-  leading_para2: Monero gönderici ve alıcı adreslerin yanı sıra gönderilen miktarları da korumak için kriptografi kullanır.
+  leading_para1: Bitcoin ve Ethereum’u da içeren mevcut kriptoparaların çoğunun saydam
+    blokzincirleri vardır, bu da işlemlerin Dünyadaki herkes tarafından açık şekilde
+    doğrulanabildiği ve izlenebildiği anlamına gelir. Dahası bu işlemler için gönderici
+    ve alıcı adreslerinin kişinin gerçek dünya kimliğine bağlanabilme potansiyeli
+    vardır.
+  leading_para2: Monero gönderici ve alıcı adreslerin yanı sıra gönderilen miktarları
+    da korumak için kriptografi kullanır.
   confidential: Monero işlemleri mahremdir ve takip edilemez.
-  confidential_para1: Her Monero işlemi varsayılan şekilde gönderici ve alıcı adreslerinin yanında gönderilen miktarları da karartır. Bu her zaman açık gizlilik, seçime bağlı saydamlıktaki kriptoparaların (örneğin Zcash) aksine her Monero kullanıcısının eylemlerinin diğer tüm kullanıcıların gizliliği arttırdığı anlamına gelir.
-  confidential_para2: Monero değiştirilebilirdir. Karartmanın doğası gereği Monero önceki işlemlerde yer alması sebebiyle lekelenemez. Bu, Monero'nun sansür riski olmadan her zaman kabul edileceği anlamına gelir.
+  confidential_para1: Her Monero işlemi varsayılan şekilde gönderici ve alıcı adreslerinin
+    yanında gönderilen miktarları da karartır. Bu her zaman açık gizlilik, seçime
+    bağlı saydamlıktaki kriptoparaların (örneğin Zcash) aksine her Monero kullanıcısının
+    eylemlerinin diğer tüm kullanıcıların gizliliği arttırdığı anlamına gelir.
+  confidential_para2: Monero değiştirilebilirdir. Karartmanın doğası gereği Monero
+    önceki işlemlerde yer alması sebebiyle lekelenemez. Bu, Monero'nun sansür riski
+    olmadan her zaman kabul edileceği anlamına gelir.
   confidential_para3: Kovri Projesi,
   confidential_para4: ki şu anda gelişim aşamasındadır
-  confidential_para5: ", I2P Görünmez İnternet Projesi düğümleriyle işlemleri nakledecek ve şifreleyecektir. Bu işlemi gerçekleştirenin IP adresini karartacak ve ağ görüntülemesine karşı daha fazla koruma sağlayacak."
-  grassroots: Monero Dünya’nın en iyi kriptopara araştırmacılarını ve mühendislik yeteneklerini çeken kökleşmiş bir topluluktur.
+  confidential_para5: ", I2P Görünmez İnternet Projesi düğümleriyle işlemleri nakledecek\
+    \ ve şifreleyecektir. Bu işlemi gerçekleştirenin IP adresini karartacak ve ağ\
+    \ görüntülemesine karşı daha fazla koruma sağlayacak."
+  grassroots: Monero Dünya’nın en iyi kriptopara araştırmacılarını ve mühendislik
+    yeteneklerini çeken kökleşmiş bir topluluktur.
   grassroots_para1: 30 çekirdek geliştirici dahil,
   grassroots_para2: 500 geliştirici
-  grassroots_para3: den fazlası Monero projesine katkıda bulunmuştur. Forumlar ve sohbet kanalları misafirperver ve aktiftir.
-  grassroots_para4: Monero'nun Araştırma Laboratuvarı, Çekirdek Geliştirme Ekibi ve Topluluk Geliştiricileri kriptopara gizliliği ve güvenliğinde mümkün olanın sınırını sürekli şekilde ileriye taşımaktadır.
-  grassroots_para5: Monero bir şirket değildir. Dünyanın dört bir yanından zamanlarını bağışlayan veya topluluk bağışlarıyla fonlanan kriptografi ve dağıtık sistemler uzmanlarınca geliştirilmektedir. Bu Monero’nun hiçbir ülke tarafından kapatılamayacağı ve hiçbir adli yargılama tarafından kısıtlanamayacağı anlamına gelir.
-  electronic: Monero Dünya'nın her yerinden başka bir yerine hızlı, ucuz ödemelere olanak sağlayan elektronik paradır.
-  electronic_para1: Çok sayıda bekletme günü ve sahtekâr ters ibraz riski yoktur. ’Sermaye kontrolleri'nden güvendedir - bunlar geleneksel paraların akışını, ekonomik istikrarsızlık yaşayan ülkelerde bazen uç noktalarda kısıtlayan önlemlerdir.
+  grassroots_para3: den fazlası Monero projesine katkıda bulunmuştur. Forumlar ve
+    sohbet kanalları misafirperver ve aktiftir.
+  grassroots_para4: Monero'nun Araştırma Laboratuvarı, Çekirdek Geliştirme Ekibi ve
+    Topluluk Geliştiricileri kriptopara gizliliği ve güvenliğinde mümkün olanın sınırını
+    sürekli şekilde ileriye taşımaktadır.
+  grassroots_para5: Monero bir şirket değildir. Dünyanın dört bir yanından zamanlarını
+    bağışlayan veya topluluk bağışlarıyla fonlanan kriptografi ve dağıtık sistemler
+    uzmanlarınca geliştirilmektedir. Bu Monero’nun hiçbir ülke tarafından kapatılamayacağı
+    ve hiçbir adli yargılama tarafından kısıtlanamayacağı anlamına gelir.
+  electronic: Monero Dünya'nın her yerinden başka bir yerine hızlı, ucuz ödemelere
+    olanak sağlayan elektronik paradır.
+  electronic_para1: Çok sayıda bekletme günü ve sahtekâr ters ibraz riski yoktur.
+    ’Sermaye kontrolleri'nden güvendedir - bunlar geleneksel paraların akışını, ekonomik
+    istikrarsızlık yaşayan ülkelerde bazen uç noktalarda kısıtlayan önlemlerdir.
   videos: Monero Videoları (İngilizce)
 
 about:
   history: Kısa Bir Tarihi
-  history_para1: Monero Nisan 2014’te faaliyete geçmişti. CryptoNote referans kodunun adil, önceden duyurulmuş bir yayınıydı. Ön-madeni veya anında-madeni yoktu ve blok ödülünün hiçbir kısmı geliştirmeye gitmez. Orijinal Bitcointalk başlığını
+  history_para1: Monero Nisan 2014’te faaliyete geçmişti. CryptoNote referans kodunun
+    adil, önceden duyurulmuş bir yayınıydı. Ön-madeni veya anında-madeni yoktu ve
+    blok ödülünün hiçbir kısmı geliştirmeye gitmez. Orijinal Bitcointalk başlığını
   history_para2: buradan
-  history_para3: görüntüleyebilirsiniz. Kurucu thankful_for_today topluluğun kabul etmediği bazı tartışmalı değişiklikler önerdi. Bunu bir patlama takip etti ve Monero Çekirdek Ekibi, topluluğun bu yeni Çekirdek Ekibi takip etmesiyle projeyi çatalladı. Bu Çekirdek Ekip o zamandan beri gözetimi sağlıyor.
-  history_para4: Monero faaliyete geçmesinden beri birçok büyük gelişim gerçekleştirdi. Blokzincir daha yüksek verimlilik ve esneklik sağlaması için başka bir veri tabanı yapısına taşındı, asgari halka imza boyutları tüm işlemlerin zorunlu şekilde gizli olması için ayarlandı ve RingCT işlem miktarlarını gizlemek için uygulamaya konuldu. Neredeyse tüm gelişimler güvenlik veya gizliliğe gelişim sağladı veya kullanımı kolaylaştırdı. Monero birinci sırada gizlilik ve güvenli, ikinci sırada kullanım kolaylığı ve verimlilik hedefleriyle gelişime devam ediyor.
+  history_para3: görüntüleyebilirsiniz. Kurucu thankful_for_today topluluğun kabul
+    etmediği bazı tartışmalı değişiklikler önerdi. Bunu bir patlama takip etti ve
+    Monero Çekirdek Ekibi, topluluğun bu yeni Çekirdek Ekibi takip etmesiyle projeyi
+    çatalladı. Bu Çekirdek Ekip o zamandan beri gözetimi sağlıyor.
+  history_para4: Monero faaliyete geçmesinden beri birçok büyük gelişim gerçekleştirdi.
+    Blokzincir daha yüksek verimlilik ve esneklik sağlaması için başka bir veri tabanı
+    yapısına taşındı, asgari halka imza boyutları tüm işlemlerin zorunlu şekilde gizli
+    olması için ayarlandı ve RingCT işlem miktarlarını gizlemek için uygulamaya konuldu.
+    Neredeyse tüm gelişimler güvenlik veya gizliliğe gelişim sağladı veya kullanımı
+    kolaylaştırdı. Monero birinci sırada gizlilik ve güvenli, ikinci sırada kullanım
+    kolaylığı ve verimlilik hedefleriyle gelişime devam ediyor.
   values: Değerlerimiz
-  values_para: Monero bir teknolojiden fazlasıdır. Ayrıca teknolojinin simgesidir. Rehberlik eden önemli felsefelerden bazıları aşağıda listelenmiştir.
+  values_para: Monero bir teknolojiden fazlasıdır. Ayrıca teknolojinin simgesidir.
+    Rehberlik eden önemli felsefelerden bazıları aşağıda listelenmiştir.
   security: Güvenlik
-  security_para: Kullanıcılar hata veya saldırı riski olmadan işlemlerinde Monero'ya güvenebilmelidir. Monero bu güvenliği sağlayan ağın en önemli üyeleri olan madencilere tam blok ödülü verir. İşlemler mevcut en son ve en dirençli şifreleme araçları kullanılarak kriptografik açıdan güvenlidir.
+  security_para: Kullanıcılar hata veya saldırı riski olmadan işlemlerinde Monero'ya
+    güvenebilmelidir. Monero bu güvenliği sağlayan ağın en önemli üyeleri olan madencilere
+    tam blok ödülü verir. İşlemler mevcut en son ve en dirençli şifreleme araçları
+    kullanılarak kriptografik açıdan güvenlidir.
   privacy: Gizlilik
-  privacy_para: Monero gizliliği ciddiye alır. Monero'nun kullanıcılarını mahkemede ve uç durumlarda idam cezasından koruyabilmesi gerekir. Bu seviyedeki güvenlik teknolojik açıdan ehil olsalar da Monero’nun nasıl işlediğini hiç bilmeseler de tüm kullanıcılar tarafından tamamıyla erişilebilir olmalıdır. Bir kullanıcının Monero’ya bu kişinin diğerlerinin öğrenmesi riski sebebiyle harcama alışkanlıklarını değiştirme baskını hissetmeyecek şekilde eminlikle güvenmesi gerekir.
+  privacy_para: Monero gizliliği ciddiye alır. Monero'nun kullanıcılarını mahkemede
+    ve uç durumlarda idam cezasından koruyabilmesi gerekir. Bu seviyedeki güvenlik
+    teknolojik açıdan ehil olsalar da Monero’nun nasıl işlediğini hiç bilmeseler de
+    tüm kullanıcılar tarafından tamamıyla erişilebilir olmalıdır. Bir kullanıcının
+    Monero’ya bu kişinin diğerlerinin öğrenmesi riski sebebiyle harcama alışkanlıklarını
+    değiştirme baskını hissetmeyecek şekilde eminlikle güvenmesi gerekir.
   decentralization: Merkeziyetsizlik
-  decentralization_para: Monero en yüksek miktarda merkeziyetsizliği sağlamaya kendini adamıştır. Monero’yla ağda başka birine güvenmeniz gerekmez ve büyük bir grup tarafından işletilmemektedir. Erişilebilir bir “İş Kanıtı" algoritması normal bilgisayarlarda Monero’nun madenciliğini kolaylaştırır, bu da birinin yüksek miktarda madencilik gücü satın almasını zorlaştırır. Düğümler hassas işlem bilgisinin açığa çıkma ve sansür riskini azaltmak için birbirine I2P ile bağlanır. Geliştirici görüşme kayıtları bütünüyle çevrimiçi yayınlanır ve herkes tarafından görülebilir.
+  decentralization_para: Monero en yüksek miktarda merkeziyetsizliği sağlamaya kendini
+    adamıştır. Monero’yla ağda başka birine güvenmeniz gerekmez ve büyük bir grup
+    tarafından işletilmemektedir. Erişilebilir bir “İş Kanıtı" algoritması normal
+    bilgisayarlarda Monero’nun madenciliğini kolaylaştırır, bu da birinin yüksek miktarda
+    madencilik gücü satın almasını zorlaştırır. Düğümler hassas işlem bilgisinin açığa
+    çıkma ve sansür riskini azaltmak için birbirine I2P ile bağlanır. Geliştirici
+    görüşme kayıtları bütünüyle çevrimiçi yayınlanır ve herkes tarafından görülebilir.
 
 
 developer-guides:
-  outdated: "Lütfen dikkate alın: Aşağıdaki rehberler topluluk tarafından yakında yenilenmiştir ve neredeyse güncel şekilde sürülmektedir. Ancak yöntemler sıklıkla eklenmekte / kaldırılmakta / güncellenmektedir ve burada isabetli şekilde anlatılmamış olabilir."
+  outdated: "Lütfen dikkate alın: Aşağıdaki rehberler topluluk tarafından yakında\
+    \ yenilenmiştir ve neredeyse güncel şekilde sürülmektedir. Ancak yöntemler sıklıkla\
+    \ eklenmekte / kaldırılmakta / güncellenmektedir ve burada isabetli şekilde anlatılmamış\
+    \ olabilir."
   rpc: RPC Belgelendirmesi
   daemonrpc: Daemon RPC Belgelendirmesi
   walletrpc: Cüzdan RPC Belgelendirmesi
@@ -421,7 +664,8 @@ user-guides:
   import-blockchain: Monero blokzincirinin içe aktarımı
   monero-tools: Monero Araçları
   purchasing-storing: Güvenli şekilde Monero alımı ve depolaması
-  verify-allos: İkilileri Linux, Mac veya Windows komut satırında doğrulayın (ileri düzey)
+  verify-allos: İkilileri Linux, Mac veya Windows komut satırında doğrulayın (ileri
+    düzey)
   verify-windows: İkilileri Windows'da doğrulayın (başlangıç seviyesi)
   mine-on-pool: XMRig ile bir havuzda madencilik yapımı
   solo-mine: GUI ile tek başına madencilik yapımı
@@ -445,29 +689,26 @@ roadmap:
   upcoming: Yaklaşan görev
   future: Gelecek
 
-  jan: 
-  feb: 
-  mar: 
-  apr: 
-  may: 
-  jun: 
-  jul: 
-  aug: 
-  sep: 
-  oct: 
-  nov: 
-  dec: 
+  jan:
+  feb:
+  mar:
+  apr:
+  may:
+  jun:
+  jul:
+  aug:
+  sep:
+  oct:
+  nov:
+  dec:
   comingsoon:
-  
   launched:
   renamed:
   recovered:
   paper1-2:
   paper3:
   released-0-8-8-6:
-  
   paper4:
-  
   released-0-9-0:
   paper5:
   ringsize-3:
@@ -475,123 +716,232 @@ roadmap:
   splitcoinbase:
   released-0-10-1:
   guibeta1:
-  
   enableringct:
   released-0-10-2:
   released-0-10-3-1:
   hfminblock:
-  webredesign: 
-  released-0-11-0: 
+  webredesign:
+  released-0-11-0:
   fluffyblocks:
-  guioutbeta: 
+  guioutbeta:
   minringsize5:
-  releasedgui-0-11-0: 
-  zeromq: 
-  subaddress: 
-  paper6: 
-  release-0-11-1: 
+  releasedgui-0-11-0:
+  zeromq:
+  subaddress:
+  paper6:
+  release-0-11-1:
   releasedgui-0-11-1:
-  multisig: 
-  
-  released-0-12-0: 
-  releasedgui-0-12-0: 
-  cryptonightv2: 
-  hfring7: 
-  getmonero-fr-pl: 
-  released-0-12-1: 
-  ledger: 
+  multisig:
+  released-0-12-0:
+  releasedgui-0-12-0:
+  cryptonightv2:
+  hfring7:
+  getmonero-fr-pl:
+  released-0-12-1:
+  ledger:
   released-0-12-2:
-  released-0-12-3: 
+  released-0-12-3:
   releasedgui-0-12-3:
-  kovrialpha: 
-  moneropedialoc: 
-  getmonero-ar: 
+  kovrialpha:
+  moneropedialoc:
+  getmonero-ar:
   released-0-13-0-2:
   releasedgui-0-13-3:
-  cryptonightv3: 
+  cryptonightv3:
   bulletproofs:
-  ringsize11: 
-  released-0-13-0-4: 
-  paper8-9: 
-  releasedgui-0-13-0-4: 
+  ringsize11:
+  released-0-13-0-4:
+  paper8-9:
+  releasedgui-0-13-0-4:
   paper7:
   paper10:
-  mms: 
-  
+  mms:
   getmonero-de:
-  released-0-14-0: 
-  releasedgui-0-14-0: 
-  ccs: 
-  released-0-14-0-2: 
-  cryptonightr: 
-  getmonero-pt_br: 
-  dlsag: 
-  pruning: 
-  trezort: 
-  nanox: 
-  tori2p: 
-  multisigms: 
+  released-0-14-0:
+  releasedgui-0-14-0:
+  ccs:
+  released-0-14-0-2:
+  cryptonightr:
+  getmonero-pt_br:
+  dlsag:
+  pruning:
+  trezort:
+  nanox:
+  tori2p:
+  multisigms:
   weblate:
-  rpcpay: 
-  ipv6: 
-  removedpid: 
-  nodediscovery: 
+  rpcpay:
+  ipv6:
+  removedpid:
+  nodediscovery:
   randomx:
-  
   getmoneroweblate:
-  releasedgui-0-15-0-4: 
-  released-0-15-0-5: 
+  releasedgui-0-15-0-4:
+  released-0-15-0-5:
   dandelion:
-  onionaddress: 
-  supercop: 
-  clsag: 
-  tryptych: 
+  onionaddress:
+  supercop:
+  clsag:
+  tryptych:
   kastelo:
   layer2:
-  
-  returnaddr: 
+  returnaddr:
 
 
 research-lab:
-  intro: Monero sadece değiştirilebilir bir para yaratmaya değil, kriptoparaları içermesiyle finansal gizlilik alemine sürekli araştırmaya da kendini adamıştır. Aşağıda Monero Araştırma Laboratuvarı’mızın gelecek olan daha fazla makalesiyle mevcut işlerini bulacaksınız.
+  intro: Monero sadece değiştirilebilir bir para yaratmaya değil, kriptoparaları içermesiyle
+    finansal gizlilik alemine sürekli araştırmaya da kendini adamıştır. Aşağıda Monero
+    Araştırma Laboratuvarı’mızın gelecek olan daha fazla makalesiyle mevcut işlerini
+    bulacaksınız.
   mrl_papers: Monero Araştırma Laboratuvarı Makaleleri (İngilizce)
   abstract: Özet
   introduction: Giriş
   read-paper: Makaleyi Oku
   summary: Summary
   mrlhtp: Understanding ge_fromfe_frombytes_vartime
-  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into elliptic curve points. It is useful for creating key images, in particular. This document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime() function) into mathematical expressions.
+  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into
+    elliptic curve points. It is useful for creating key images, in particular. This
+    document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime()
+    function) into mathematical expressions.
   mrl1: CryptoNote 2.0’da Zincir Reaksiyonlarda Takip Edilebilirlik Üzerine Bir Not
-  mrl1_abstract: Bu araştırma bülteni anonim sisteme dayalı bir halka imza üzerinde makul bir saldırıyı betimler. Görünürde 2012’de Nicolas van Saberhagen tarafından yayınlanan kriptopara protokolü CryptoNote 2.0’ı motivasyon olarak kullanıyoruz. Daha önce tek kullanımlık anahtar çiftini karartan takip edilemezliğin o halka imzayı oluşturmakta kullanılan anahtarların tümünün takip edilemezliğine dayanabileceği gösterilmişti. Bu, halka imzalar arasındaki takip edilebilirlikte zincir reaksiyonların olasılığına izin vererek parametreler yetersiz seçildiğinde ve bir saldırganın ağın yeterli yüzdesine sahip olduğunda tüm ağ çapında takip edilemezlikte kritik bir kayba sebep olur. İmzalar hâlâ tek kullanımlık olsa da böyle bir saldırı zorunlu şekilde kullanıcıların anonimliğini ihlal etmez. Ancak böyle bir saldırı, CryptoNote’un blokzincir analizine karşı gösterdiği direnci makul şekilde zayıflatabilir. Bu araştırma bülteni akran değerlendirmesinden geçmemiştir ve sadece dahili araştırma sonuçlarını yansıtır.
-  mrl2: CryptoNote Protokolünü Barındıran Sanal Paralar İçerisinde Merkle Ağacı Suistimalleri Aracılığıyla Sahtecilik
-  mrl2_abstract: 4 Eylül 2014’te sıra dışı ve alışılmamış bir saldırı Monero kriptopara ağına karşı gerçekleştirildi. Bu saldırı, ağı diğer altkümenin meşruluğunu kabul etmeyi reddeden iki ayrı altkümeye böldü. Bu tamamı henüz bilinmeyen çok sayıda etkiye sahipti. Saldırgan örneğin bu esnada bir çeşit sahteciliğin oluşabileceği kısa bir zaman aralığına sahipti. Bu araştırma bülteni bu saldırıya olanak sağlayan CryptoNote referans kodundaki yetersizlikleri betimler, ilk olarak Tigusoft.pl’den Rafal Freeman ve sonrasında CryptoNote ekibi tarafından öne sürülen çözümü betimler, Monero kod temelindeki mevcut düzeltmeyi betimler ve sorun yaratan bloğun ağa tam olarak ne yaptığı üzerinde durur. Bu araştırma bülteni akran değerlendirmesinden geçmemiştir ve sadece dahili araştırma sonuçlarını yansıtır.
+  mrl1_abstract: Bu araştırma bülteni anonim sisteme dayalı bir halka imza üzerinde
+    makul bir saldırıyı betimler. Görünürde 2012’de Nicolas van Saberhagen tarafından
+    yayınlanan kriptopara protokolü CryptoNote 2.0’ı motivasyon olarak kullanıyoruz.
+    Daha önce tek kullanımlık anahtar çiftini karartan takip edilemezliğin o halka
+    imzayı oluşturmakta kullanılan anahtarların tümünün takip edilemezliğine dayanabileceği
+    gösterilmişti. Bu, halka imzalar arasındaki takip edilebilirlikte zincir reaksiyonların
+    olasılığına izin vererek parametreler yetersiz seçildiğinde ve bir saldırganın
+    ağın yeterli yüzdesine sahip olduğunda tüm ağ çapında takip edilemezlikte kritik
+    bir kayba sebep olur. İmzalar hâlâ tek kullanımlık olsa da böyle bir saldırı zorunlu
+    şekilde kullanıcıların anonimliğini ihlal etmez. Ancak böyle bir saldırı, CryptoNote’un
+    blokzincir analizine karşı gösterdiği direnci makul şekilde zayıflatabilir. Bu
+    araştırma bülteni akran değerlendirmesinden geçmemiştir ve sadece dahili araştırma
+    sonuçlarını yansıtır.
+  mrl2: CryptoNote Protokolünü Barındıran Sanal Paralar İçerisinde Merkle Ağacı Suistimalleri
+    Aracılığıyla Sahtecilik
+  mrl2_abstract: 4 Eylül 2014’te sıra dışı ve alışılmamış bir saldırı Monero kriptopara
+    ağına karşı gerçekleştirildi. Bu saldırı, ağı diğer altkümenin meşruluğunu kabul
+    etmeyi reddeden iki ayrı altkümeye böldü. Bu tamamı henüz bilinmeyen çok sayıda
+    etkiye sahipti. Saldırgan örneğin bu esnada bir çeşit sahteciliğin oluşabileceği
+    kısa bir zaman aralığına sahipti. Bu araştırma bülteni bu saldırıya olanak sağlayan
+    CryptoNote referans kodundaki yetersizlikleri betimler, ilk olarak Tigusoft.pl’den
+    Rafal Freeman ve sonrasında CryptoNote ekibi tarafından öne sürülen çözümü betimler,
+    Monero kod temelindeki mevcut düzeltmeyi betimler ve sorun yaratan bloğun ağa
+    tam olarak ne yaptığı üzerinde durur. Bu araştırma bülteni akran değerlendirmesinden
+    geçmemiştir ve sadece dahili araştırma sonuçlarını yansıtır.
   mrl3: Monero O Kadar da Gizemli Değil
-  mrl3_abstract: Son zamanlarda örneğin Bitcoin’den daha karmaşık bir protokol olması gerçeğine dayanarak CryptoNote kaynak kodu ve protokolü hakkında internette dolaşan bazı belirsiz korkular ortaya çıkmıştır. Bu notun amacı bazı kavram hatalarını aydınlatmaya ve ümitle Monero Halka İmzaları saran gizemlerden bazılarını ortadan kaldırmaya çalışmaktır. ([CN]de betimlendiği şekliyle) CryptoNote halka imzalarında yer alan matematiği CryptoNote temelli [FS]deki matematikle kıyaslayarak başlayacağım. Bunun ardından halka imzaların matematiğini CryptoNote kod temelinde aslında olanla kıyaslayacağım.
+  mrl3_abstract: Son zamanlarda örneğin Bitcoin’den daha karmaşık bir protokol olması
+    gerçeğine dayanarak CryptoNote kaynak kodu ve protokolü hakkında internette dolaşan
+    bazı belirsiz korkular ortaya çıkmıştır. Bu notun amacı bazı kavram hatalarını
+    aydınlatmaya ve ümitle Monero Halka İmzaları saran gizemlerden bazılarını ortadan
+    kaldırmaya çalışmaktır. ([CN]de betimlendiği şekliyle) CryptoNote halka imzalarında
+    yer alan matematiği CryptoNote temelli [FS]deki matematikle kıyaslayarak başlayacağım.
+    Bunun ardından halka imzaların matematiğini CryptoNote kod temelinde aslında olanla
+    kıyaslayacağım.
   mrl4: CryptoNote Protokolündeki Karartmayı Geliştirmek
-  mrl4_abstract: CryptoNote 2.0 protokolünün takip edilemezliğini indirgemeye müsait çeşitli blokzincir analiz saldırılarını tanımlıyoruz. Mevcut çözümleri analiz ediyor, bu çözümlerin görece faydalarını ve eksikliklerini tartışıyor ve ümitle blokzincir analizine karşı uzun vadeli kriptopara direnci sağlayacak Monero protokolüne gelişmeleri tavsiye ediyoruz. Monero’ya tavsiye ettiğimiz gelişmeler halka imza başına protokol seviyesinde, ağ çapında en az n = 2 yabancı çıktı katma poliçesini, iki yılın ardından protokol seviyesinde bu değerin n = 4’e bir artışı ve aradaki zamanda cüzdan seviyesinde n = 4 varsayılan değerini içerir. Ayrıca Monero çıktısı gönderiminin torrent tarzında bir yöntemini öneriyoruz. Ayrıca burada tanımlanan diğer blokzincir analiz şekillerini azaltmak için düzensiz, yaşa bağlı bir katma seçme yöntemini tartışıyoruz; ancak çeşitli sebeplerden dolayı uygulanması üzerine formal tavsiyelerde bulunmuyoruz. Bu gelişmeleri takip eden sonuçlar ayrıca bir miktar detayla tartışılıyor. Bu araştırma bülteni akran değerlendirmesinden geçmemiştir ve sadece dahili araştırma sonuçlarını yansıtır.
+  mrl4_abstract: CryptoNote 2.0 protokolünün takip edilemezliğini indirgemeye müsait
+    çeşitli blokzincir analiz saldırılarını tanımlıyoruz. Mevcut çözümleri analiz
+    ediyor, bu çözümlerin görece faydalarını ve eksikliklerini tartışıyor ve ümitle
+    blokzincir analizine karşı uzun vadeli kriptopara direnci sağlayacak Monero protokolüne
+    gelişmeleri tavsiye ediyoruz. Monero’ya tavsiye ettiğimiz gelişmeler halka imza
+    başına protokol seviyesinde, ağ çapında en az n = 2 yabancı çıktı katma poliçesini,
+    iki yılın ardından protokol seviyesinde bu değerin n = 4’e bir artışı ve aradaki
+    zamanda cüzdan seviyesinde n = 4 varsayılan değerini içerir. Ayrıca Monero çıktısı
+    gönderiminin torrent tarzında bir yöntemini öneriyoruz. Ayrıca burada tanımlanan
+    diğer blokzincir analiz şekillerini azaltmak için düzensiz, yaşa bağlı bir katma
+    seçme yöntemini tartışıyoruz; ancak çeşitli sebeplerden dolayı uygulanması üzerine
+    formal tavsiyelerde bulunmuyoruz. Bu gelişmeleri takip eden sonuçlar ayrıca bir
+    miktar detayla tartışılıyor. Bu araştırma bülteni akran değerlendirmesinden geçmemiştir
+    ve sadece dahili araştırma sonuçlarını yansıtır.
   mrl5: Halka İmza Gizli İşlemleri
-  mrl5_abstract: Bu makale yüksek şekilde merkeziyetsiz olan anonim kriptopara Monero’da işlem miktarlarını gizlemenin bir yöntemini tanıtır. Bitcoin’e benzer şekilde Monero bir iş kanıtı “madencilik“ süreci yoluyla dağıtık olan bir kriptoparadır. Orijinal Monero protokolü işlemlerin varış noktasını ve kökenini gizleyen halka imzalar ve tek kullanımlık anahtarlar kullanan CryptoNote’u temel alıyordu. Son zamanlarda bir işlemin miktarını gizlemek için bir üstlenme şemasının kullanılma tekniği Bitcoin Core Geliştirici Gregory Maxwell tarafından tartışılmış ve uygulanmıştır. Bu makalede işlemlerin gizli miktarlarına, kökenlerine ve varış noktalarına makul verimlilik ve doğrulanabilirlikle, güvensiz para üretimine olanak sağlayan yeni bir halka imza türü olan Çok-katmanlı Bağlanabilir Spontane Anonim Grup imzası betimlenmiştir. Protokolün Toplam Schnorr Seri Kanıtları ve Halka Çoklu-imzaları gibi uzantıları sağlanmıştır. Yazar bunun erken taslaklarının Monero Topluluğunda ve Bitcoin araştırma irc kanalında yayınlandığının dikkate alınmasını istemektedir. Bu işin 2015 Yazı’nda başladığını ve Ekim 2015 başında tamamlandığını gösteren blokzincir sağlamalı taslaklar [14]’de bulunabilir. Bir e-baskı ayrıca http://eprint.iacr.org/2015/1098 adresinde bulunabilir.
+  mrl5_abstract: Bu makale yüksek şekilde merkeziyetsiz olan anonim kriptopara Monero’da
+    işlem miktarlarını gizlemenin bir yöntemini tanıtır. Bitcoin’e benzer şekilde
+    Monero bir iş kanıtı “madencilik“ süreci yoluyla dağıtık olan bir kriptoparadır.
+    Orijinal Monero protokolü işlemlerin varış noktasını ve kökenini gizleyen halka
+    imzalar ve tek kullanımlık anahtarlar kullanan CryptoNote’u temel alıyordu. Son
+    zamanlarda bir işlemin miktarını gizlemek için bir üstlenme şemasının kullanılma
+    tekniği Bitcoin Core Geliştirici Gregory Maxwell tarafından tartışılmış ve uygulanmıştır.
+    Bu makalede işlemlerin gizli miktarlarına, kökenlerine ve varış noktalarına makul
+    verimlilik ve doğrulanabilirlikle, güvensiz para üretimine olanak sağlayan yeni
+    bir halka imza türü olan Çok-katmanlı Bağlanabilir Spontane Anonim Grup imzası
+    betimlenmiştir. Protokolün Toplam Schnorr Seri Kanıtları ve Halka Çoklu-imzaları
+    gibi uzantıları sağlanmıştır. Yazar bunun erken taslaklarının Monero Topluluğunda
+    ve Bitcoin araştırma irc kanalında yayınlandığının dikkate alınmasını istemektedir.
+    Bu işin 2015 Yazı’nda başladığını ve Ekim 2015 başında tamamlandığını gösteren
+    blokzincir sağlamalı taslaklar [14]’de bulunabilir. Bir e-baskı ayrıca http://eprint.iacr.org/2015/1098
+    adresinde bulunabilir.
   mrl6: Monero Altadreslerinin Verimli Bir Uygulaması
-  mrl6_abstract: Bağlanamaz bir şekilde cüzdan adreslerini tekrar kullanmayı dileyen Monero kriptoparası kullanıcıları her biri için gelen işlemleri taramayı zorunlu kılan ayrı cüzdanlar sürdürmek zorundadır. Bir kullanıcının tek bir temel cüzdan adresi sürdürmesine ve keyfi bir sayıda bağlanamayan altadres üretmesine olanak sağlayan yeni bir adres şeması belgeliyoruz. Her işlemin kullanıcının altadreslerinden birine varıp varmadığını belirlemek için sadece bir kez taranması gerekir. Şema diğer altadreslere çoklu çıktıyı ek olarak destekler ve geleneksel cüzdan işlemleri kadar verimlidir.
+  mrl6_abstract: Bağlanamaz bir şekilde cüzdan adreslerini tekrar kullanmayı dileyen
+    Monero kriptoparası kullanıcıları her biri için gelen işlemleri taramayı zorunlu
+    kılan ayrı cüzdanlar sürdürmek zorundadır. Bir kullanıcının tek bir temel cüzdan
+    adresi sürdürmesine ve keyfi bir sayıda bağlanamayan altadres üretmesine olanak
+    sağlayan yeni bir adres şeması belgeliyoruz. Her işlemin kullanıcının altadreslerinden
+    birine varıp varmadığını belirlemek için sadece bir kez taranması gerekir. Şema
+    diğer altadreslere çoklu çıktıyı ek olarak destekler ve geleneksel cüzdan işlemleri
+    kadar verimlidir.
   mrl7: Harcanmış Çıktıların Kümeleri
-  mrl7_abstract: Bu teknik not temel küme kuramını kullanarak harcama çıktıları kavramını genelleştirir. Tanım böyle çıktıları tanımla üzerindeki önceden yapılan çeşitli işleri kapsar. Bu analizin Monero blokzinciri üzerinde etkileri nitelendiriyor ve azaltımlarına kısa bir genel bakış veriyoruz.
+  mrl7_abstract: Bu teknik not temel küme kuramını kullanarak harcama çıktıları kavramını
+    genelleştirir. Tanım böyle çıktıları tanımla üzerindeki önceden yapılan çeşitli
+    işleri kapsar. Bu analizin Monero blokzinciri üzerinde etkileri nitelendiriyor
+    ve azaltımlarına kısa bir genel bakış veriyoruz.
   mrl8: Çifte Bağlanabilir Halka İmzalar
-  mrl8_abstract: Bu bülten halka üyesi olarak çifte anahtar çıktıları izin veren Monero'nun bağlanabilir halka imza şemasına bir değişikliği betimler. Anahtar imgeler bir çift olarak çıktı tek kullanımlık açık anahtarlara bağlanarak bu işlemdeki iki anahtarın ayrı şekilde harcanmasını engeller. Bu yöntemin etkileşimsiz geri ödeme işlemlerinde uygulamaları vardır. Şemanın güvenlik çıkarımlarını tartışıyoruz.
+  mrl8_abstract: Bu bülten halka üyesi olarak çifte anahtar çıktıları izin veren Monero'nun
+    bağlanabilir halka imza şemasına bir değişikliği betimler. Anahtar imgeler bir
+    çift olarak çıktı tek kullanımlık açık anahtarlara bağlanarak bu işlemdeki iki
+    anahtarın ayrı şekilde harcanmasını engeller. Bu yöntemin etkileşimsiz geri ödeme
+    işlemlerinde uygulamaları vardır. Şemanın güvenlik çıkarımlarını tartışıyoruz.
   mrl9: Eşhalka İmzaları ve Harcayıcı-Belirsiz Dijital Paralara Uygulamaları
-  mrl9_abstract: Halka imzaların işbirlikçi bilgi-sayımı için eşik halka çoklu imzaları (eşhalka imzalar) sunuyor, eşhalka imzaları için varoluşsal bir tahrifat oyunu sunuyor ve güvenilir bir kurulum olmadan gizli miktarların harcayıcı-belirsiz çapraz-zincir atomik değişimlerini içeren dijital paralarda eşhalka imzaların kullanımını tartışıyoruz. Eşhalka imzaların bağlanabilir spontane eşit anonim grup imzaları dediğimiz bir uygulamasını sunuyor ve uygulamanın varoluşsal açıdan tahrif edilemeyeceğini kanıtlıyoruz.
+  mrl9_abstract: Halka imzaların işbirlikçi bilgi-sayımı için eşik halka çoklu imzaları
+    (eşhalka imzalar) sunuyor, eşhalka imzaları için varoluşsal bir tahrifat oyunu
+    sunuyor ve güvenilir bir kurulum olmadan gizli miktarların harcayıcı-belirsiz
+    çapraz-zincir atomik değişimlerini içeren dijital paralarda eşhalka imzaların
+    kullanımını tartışıyoruz. Eşhalka imzaların bağlanabilir spontane eşit anonim
+    grup imzaları dediğimiz bir uygulamasını sunuyor ve uygulamanın varoluşsal açıdan
+    tahrif edilemeyeceğini kanıtlıyoruz.
   mrl10: Gruplar Arası Ayrık Logaritma Denkliği
-  mrl10_abstract: Bu teknik not farklı gruplar arasında aynı ayrık logaritmanın bilgisini kanıtlamakta kullanılan bir algoritmayı betimler. Şema bitlerin skalar bir temsilini ortak değer olarak ifade eder ve bir halka imzalar kümesini her bitin iki skalar grup arasında (bir denkliğe kadar) aynı olan geçerli bir değer olduğunu kanıtlamak için kullanır.
+  mrl10_abstract: Bu teknik not farklı gruplar arasında aynı ayrık logaritmanın bilgisini
+    kanıtlamakta kullanılan bir algoritmayı betimler. Şema bitlerin skalar bir temsilini
+    ortak değer olarak ifade eder ve bir halka imzalar kümesini her bitin iki skalar
+    grup arasında (bir denkliğe kadar) aynı olan geçerli bir değer olduğunu kanıtlamak
+    için kullanır.
   mrl11: Compact linkable ring signatures and applications
-  mrl11_abstract: We describe an efficient linkable ring signature scheme, compact linkable spontaneous anonymous group (CLSAG) signatures, for use in confidential transactions. Compared to the existing signature scheme used in Monero, CLSAG signatures are both smaller and more efficient to generate and verify for ring sizes of interest. We generalize the construction and show how it can be used to produce signatures with coins of different type in the same transaction.
+  mrl11_abstract: We describe an efficient linkable ring signature scheme, compact
+    linkable spontaneous anonymous group (CLSAG) signatures, for use in confidential
+    transactions. Compared to the existing signature scheme used in Monero, CLSAG
+    signatures are both smaller and more efficient to generate and verify for ring
+    sizes of interest. We generalize the construction and show how it can be used
+    to produce signatures with coins of different type in the same transaction.
   iacr2020018: "Triptych: logarithmic-sized linkable ring signatures with applications"
-  iacr2020018_abstract: Ring signatures are a common construction used to provide signer ambiguity among a non-interactive set of public keys specified at the time of signing. Unlike early approaches where signature size is linear in the size of the signer anonymity set, current optimal solutions either require centralized trusted setups or produce signatures logarithmic in size. However, few also provide linkability, a property used to determine whether the signer of a message has signed any previous message, possibly with restrictions on the anonymity set choice. Here we introduce Triptych, a family of linkable ring signatures without trusted setup that is based on generalizations of zero-knowledge proofs of knowledge of commitment openings to zero. We demonstrate applications of Triptych in signer-ambiguous transaction protocols by extending the construction to openings of parallel commitments in independent anonymity sets. Signatures are logarithmic in the anonymity set size and, while verification complexity is linear, collections of proofs can be efficiently verified in batches. We show that for anonymity set sizes practical for use in distributed protocols, Triptych offers competitive performance with a straightforward construction.
+  iacr2020018_abstract: Ring signatures are a common construction used to provide
+    signer ambiguity among a non-interactive set of public keys specified at the time
+    of signing. Unlike early approaches where signature size is linear in the size
+    of the signer anonymity set, current optimal solutions either require centralized
+    trusted setups or produce signatures logarithmic in size. However, few also provide
+    linkability, a property used to determine whether the signer of a message has
+    signed any previous message, possibly with restrictions on the anonymity set choice.
+    Here we introduce Triptych, a family of linkable ring signatures without trusted
+    setup that is based on generalizations of zero-knowledge proofs of knowledge of
+    commitment openings to zero. We demonstrate applications of Triptych in signer-ambiguous
+    transaction protocols by extending the construction to openings of parallel commitments
+    in independent anonymity sets. Signatures are logarithmic in the anonymity set
+    size and, while verification complexity is linear, collections of proofs can be
+    efficiently verified in batches. We show that for anonymity set sizes practical
+    for use in distributed protocols, Triptych offers competitive performance with
+    a straightforward construction.
   cryptonote: Cryptonote Beyaz Bültenleri
   cryptonote-whitepaper: Cryptonote Beyaz Bülteni
-  cryptonote-whitepaper_para: Bu, Cryptonote ekibi tarafından yazılan orijinal cryptonote makalesidir. Okumak size cryptonote algoritmasının genelde nasıl çalıştığı anlayışını verecektir.
+  cryptonote-whitepaper_para: Bu, Cryptonote ekibi tarafından yazılan orijinal cryptonote
+    makalesidir. Okumak size cryptonote algoritmasının genelde nasıl çalıştığı anlayışını
+    verecektir.
   annotated: Açıklamalı Beyaz Bülten
-  annotated_para: Monero Araştırma Laboratuvarı cryptonote beyaz bülteninin açıklamalı bir sürümünü yayınladı. Bu, beyaz bültende bulunulan iddiaların satır satır enformal bir incelemesi gibidir. Ayrıca daha zor kavramların bazılarını anlaşılması görece daha kolay terimlerle açıklar.
+  annotated_para: Monero Araştırma Laboratuvarı cryptonote beyaz bülteninin açıklamalı
+    bir sürümünü yayınladı. Bu, beyaz bültende bulunulan iddiaların satır satır enformal
+    bir incelemesi gibidir. Ayrıca daha zor kavramların bazılarını anlaşılması görece
+    daha kolay terimlerle açıklar.
   brandon: Brandon Goodell'ın Beyaz Bülten İncelemesi
-  brandon_para: Bu makale orijinal cryptonote makalesinin MRL araştırmacısı Brandon Goodell tarafından yapılan formal bir incelemesidir. Cryptonote makalesinde sunulan iddialara ve matematiğe derinlemesine bakar.
+  brandon_para: Bu makale orijinal cryptonote makalesinin MRL araştırmacısı Brandon
+    Goodell tarafından yapılan formal bir incelemesidir. Cryptonote makalesinde sunulan
+    iddialara ve matematiğe derinlemesine bakar.
 
 
 specs:
@@ -609,7 +959,8 @@ specs:
   block_time_duration: 2 dakika
   block_time_disclaimer: salınım eğrisi korunduğu sürece gelecekte değişebilir
   block_reward_title: Blok ödülü
-  block_reward_amount: pürüzsüzce azalan ve son 100 blokun medyan boyutundan (M100) büyük bloklar için cezaya tabii
+  block_reward_amount: pürüzsüzce azalan ve son 100 blokun medyan boyutundan (M100)
+    büyük bloklar için cezaya tabii
   block_reward_example1: şu anki ödül için
   block_reward_example_link: son blok
   block_reward_example2: paratabanı işlem miktarını görüntüleyin
@@ -617,7 +968,8 @@ specs:
   block_size: dinamik, en fazla 2 * M100
   block_emission_title: Salınım eğrisi
   block_emission_main: "önce, ana eğri: Mayıs 2022 sonuna kadar ~18.132 milyon para"
-  block_emission_tail: "sonra, uç eğrisi: 2 dakikalık blok başına 0.6 XMR, ana salınım bittiğinde geçerli, zamanla azalan <%1 enflasyona çevrilir"
+  block_emission_tail: "sonra, uç eğrisi: 2 dakikalık blok başına 0.6 XMR, ana salınım\
+    \ bittiğinde geçerli, zamanla azalan <%1 enflasyona çevrilir"
   block_emission_disclaimer1: "Görüntüleyin:"
   block_emission_disclaimer_link: çizelgeler ve detaylar
   supply_title: Azami arz
@@ -634,29 +986,43 @@ library:
   books: Kitaplar
   zerotomonerov2: "Zero to Monero: Second Edition"
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
-    We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+    We endeavor to teach anyone who knows basic algebra and simple computer science
+    concepts like the ‘bit representation’ of a number not only how Monero works at
+    a deep and comprehensive level, but also how useful and beautiful cryptography
+    can be.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    source code here</a>
   masteringmonerop: >
     Monero'nun karışık görünen dünyasına bir rehber.<br>
     Şunları içerir:
-    <ul><li>Blokzincirlere ve gizliliğin önemine geniş bir giriş - teknik olmayan kullanıcılar için idealdir.</li>
-    <li>Bitcoin'in eksikliklerinin ve Monero tarafından sunulan belirli çözümlerin tartışması.</li>
-    <li>(Monero'nun gizliliğinizi nasıl koruduğunu sergileyen) kullanıcı hikayeleri, analojiler, örnekler, yasal/etik tartışmalar ve temel teknik kavramları sergileyen kod parçacıkları.</li>
-    <li>Monero merkeziyetsiz ağının, eşler-arası mimarinin, işlem yaşam döngüsünün ve güvenlik prensiplerinin detayları.</li>
-    <li>Geliştiricilere, mühendislere, yazılım mimarlarına ve meraklı kullanıcılara yönelik Monero'nun teknik temellerinin tanıtımları.</li>
-    <li>Kovri, Kurşun-geçirmezler, Çoklu-imzalar, Donanım Cüzdanları vs. gibi yeni gelişmeler.</li></ul>
-    Tam sürümü hakkında bilgi için <a href="https://masteringmonero.com/">Monero'da Ustalaşmak</a> internet sayfasını görüntüleyin.
+    <ul><li>Blokzincirlere ve gizliliğin önemine geniş bir giriş - teknik olmayan
+    kullanıcılar için idealdir.</li>
+    <li>Bitcoin'in eksikliklerinin ve Monero tarafından sunulan belirli çözümlerin
+    tartışması.</li>
+    <li>(Monero'nun gizliliğinizi nasıl koruduğunu sergileyen) kullanıcı hikayeleri,
+    analojiler, örnekler, yasal/etik tartışmalar ve temel teknik kavramları sergileyen
+    kod parçacıkları.</li>
+    <li>Monero merkeziyetsiz ağının, eşler-arası mimarinin, işlem yaşam döngüsünün
+    ve güvenlik prensiplerinin detayları.</li>
+    <li>Geliştiricilere, mühendislere, yazılım mimarlarına ve meraklı kullanıcılara
+    yönelik Monero'nun teknik temellerinin tanıtımları.</li>
+    <li>Kovri, Kurşun-geçirmezler, Çoklu-imzalar, Donanım Cüzdanları vs. gibi yeni
+    gelişmeler.</li></ul>
+    Tam sürümü hakkında bilgi için <a href="https://masteringmonero.com/">Monero'da
+    Ustalaşmak</a> internet sayfasını görüntüleyin.
   magazines: Dergiler
   revuoq4p: >
     Aylık Monero dergisi, 2017 Ç4 baskısı.<br>
     Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri ve topluluk.
   revuoq3p: >
     Aylık Monero dergisi, 2017 Ç3 baskısı.<br>
-    Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri, topluluk, Donanım ve Monerujo.
+    Bu sayıdaki güncellemeler: gelişim, Monero Araştırma Laboratuvarı, Kovri, topluluk,
+    Donanım ve Monerujo.
 
 moneropedia:
   add_new_button: Yeni Girdi Ekleyin
