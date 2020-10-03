@@ -9,7 +9,7 @@
   - name: Veiledninger
     url: resources/user-guides/
   - name: Bibliotek
-    url: library
+    url: library/
   - name: RSS-strøm
     url: rss
 - title: IRC-kanaler
@@ -47,4 +47,4 @@
   - name: Monero-forskningslab
     url: resources/research-lab/
   - name: Monero-pressepakke
-    url: press-kit
+    url: press-kit/

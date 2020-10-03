@@ -9,7 +9,7 @@
   - name: Guias do Usuário
     url: resources/user-guides/
   - name: Biblioteca
-    url: library
+    url: library/
   - name: RSS Feed
     url: feed.xml
 - title: Canais no IRC
@@ -47,4 +47,4 @@
   - name: Laboratório de Pesquisa Monero
     url: resources/research-lab/
   - name: Kit de Imprensa do Monero
-    url: press-kit
+    url: press-kit/

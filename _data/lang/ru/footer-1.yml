@@ -9,7 +9,7 @@
   - name: Руководства для пользователей
     url: resources/user-guides/
   - name: Библиотека
-    url: library
+    url: library/
   - name: Канал RSS
     url: feed.xml
 - title: Каналы IRC
@@ -47,4 +47,4 @@
   - name: Исследовательская лаборатория Monero
     url: resources/research-lab/
   - name: Пресс-кит Monero
-    url: press-kit
+    url: press-kit/

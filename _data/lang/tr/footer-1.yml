@@ -9,7 +9,7 @@
   - name: Kullanıcı Rehberleri
     url: resources/user-guides/
   - name: Kütüphane
-    url: library
+    url: library/
   - name: RSS Besleme
     url: feed.xml
 - title: IRC Kanalları
@@ -47,4 +47,4 @@
   - name: Monero Araştırma Laboratuvarı
     url: resources/research-lab/
   - name: Monero Basın Kiti
-    url: press-kit
+    url: press-kit/

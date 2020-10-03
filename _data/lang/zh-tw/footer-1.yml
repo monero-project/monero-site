@@ -9,7 +9,7 @@
   - name: 使用者指引
     url: resources/user-guides/
   - name: 圖書出版品
-    url: library
+    url: library/
   - name: RSS 摘要
     url: feed.xml
 - title: IRC 頻道
@@ -47,4 +47,4 @@
   - name: 門羅幣研究實驗室
     url: resources/research-lab/
   - name: 門羅幣新聞資料袋
-    url: press-kit
+    url: press-kit/
