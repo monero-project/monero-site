@@ -1,21 +1,20 @@
 ---
 terms: ["address", "addresses", "Adresse" , "Adressen"]
-summary: "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
+summary: "Entweder ein Alias wie donate.getmonero.org, oder eine Reihe von 95 Schriftzeichen, beginnend mit einer 4"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Grundlagen
 
-When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.
+Wenn du Monero an jemanden versenden möchtest, benötigst du nur eine einzige Information, und das ist die Monero-Adresse des jeweiligen Empfängers. Eine *rohe* Monero-Adresse ist eine Reihe von 95 Schriftzeichen, beginnend mit einer "4". Die Spendenadresse von Monero ist beispielsweise <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.
 
-Because those addresses are long and complex, you will often encounter an @OpenAlias address instead. For example, Monero donations can be sent to <span class="long-term">donate@getmonero.org</span> or <span class="long-term">donate.getmonero.org</span>.
+Da diese Adressen lang und komplex sind, wird dir stattdessen häufig eine @OpenAlias-Adresse begegnen. So können Spenden an Monero zum Beispiel an <span class="long-term">donate@getmonero.org</span> oder <span class="long-term">donate.getmonero.org</span> gesendet werden.
 
-If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](/de/the-monero-project/).
+Solltest du eine eigene @OpenAlias-Adresse haben wollen, findest du einige Informationen auf der [OpenAlias-Seite] (https://getmonero.org/resources/moneropedia/openalias.html).
 
-### Integrated address
+### Integrierte Adresse
 
-An integrated address is an address combined with an encrypted 64-bit @payment-ID. A raw integrated address is 106 characters long.
+Eine integrierte Adresse ist eine Adresse, die mit einer verschlüsselten 64-bit-@Zahlungs-ID kombiniert ist. Eine rohe integrierte Adresse hat eine Länge von 106 Zeichen.
 
-### In-depth Information
+### Detaillierte Informationen
 
-The address is actually the concatenation, in Base58 format, of the *public* @spend-key and the *public* @view-key, prefixed with the network byte (the number 18 for Monero) and suffixed with the first four bytes of the Keccac-256 hash of the whole string (used as a checksum).
+Die Adresse ist genau genommen die Verkettung (im Base58-Format) des *öffentlichen* @Spend-Keys und des *öffentlichen* @View-Keys, mit vorangestelltem Netzwerk-Byte (für Monero die Zahl 18) und den angehängten ersten vier Bytes des Keccac-256-Hashs des gesamten Strings (gebraucht als Prüfsumme).

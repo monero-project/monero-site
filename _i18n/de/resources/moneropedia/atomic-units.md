@@ -1,11 +1,10 @@
 ---
-terms: ["atomic-units", "atomic-unit"]
-summary: "Atomic Units refer to the smallest fraction of 1 XMR."
+terms: ["atomic-units", "atomic-unit", "Kleinste-Einheit"]
+summary: "Kleinste Einheiten beziehen sich auf den kleinsten Bruchteil eines XMRs"
 ---
 
-{% include untranslated.html %}
-### The Basics
+### Grundlagen
 
-Atomic Units refer to the smallest fraction of 1 XMR.
-One atomic unit is currently 1e-12 XMR (0.000000000001 XMR, or one @piconero).
-It may be changed in the future.
+Kleinste Einheiten beziehen sich auf den kleinsten Bruchteil eines XMRs.
+Eine kleinste Einheit ist derzeit 1e-12 XMR (0.000000000001 XMR, oder ein @Piconero).
+In Zukunft könnte dies geändert werden.
