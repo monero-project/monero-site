@@ -1,32 +1,33 @@
 ---
 tags: ["kovri"]
 terms: ["Clearnet"]
-summary: "The Internet in which anonymous overlay networks are built upon"
+summary: "Das Internet, auf welchem anonyme, überlagernde Netzwerke aufbauen"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-When you use the Internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:
+Wenn du das Internet für Dinge wie das Abrufen der Nachrichten, E-Mails, soziale Medien oder auch Monero nutzt, nutzt du sehr wahrscheinlich eine Clearnet-Verbindung. Dies bedeutet, dass deine *gesamten* Verbindungen aufgespürt, verfolgt und überwacht werden können, und das von:
 
-- your [ISP](https://en.wikipedia.org/wiki/ISP)
-- the website/service/person you're communicating with
-- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity
+- deinem [Internetprovider](https://de.wikipedia.org/wiki/Internetdienstanbieter)
+- der Webseite/der Person/dem Service, mit der/dem du in Verbindung stehst
+- eventuell einer mit den Möglichkeiten der [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) befähigten Instanz
 
-and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (which *encrypts* your transmission), your route is not hidden nor is it anonymous, thus; it is in the *clear*.
+Selbst wenn du [HTTPS](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure) oder Ähnliches nutzt, sind die übertragenen Inhalte zwar verschlüsselt (vor dem "Abhören" durch Dritte geschützt), jedoch ist die Verbindung weder verborgen, noch anonym (Dritte können feststellen, dass die Verbindung existiert und zwischen wem). Daher werden auch HTTPs und ähnliche Technologien dem Clearnet zugeordnet.
 
-### In-depth information
+### Ausführliche Informationen
 
-Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:
+Da dich ein klassisches [VPN](https://de.wikipedia.org/wiki/Virtual_Private_Network) nicht vor dem Clearnet schützen kann - du nutzt schließlich nach wie vor das *Clearnet* (wobei deine Daten zumindest besser umgeleitet werden, als ohne die Verwendung eines VPNs) - solltest du ein sogenanntes Overlay-Netzwerk, also ein anonymes, überlagerndes Netzwerk nutzen, um den direkten Gebrauch des Clearnets zu vermeiden:
 
 - @Kovri
-- @Java-I2P
-- [Tor](https://torproject.org/)
+- Java-I2P
+- [Tor](https://torproject.org/de/)
 
-These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous.
+Diese Technologien schützen dich vor dem Clearnet, indem sie ein anonymes Netz **über** ebendiesem errichten und deine Verbindungen somit verschlüsselt **und** anonym bleiben.
 
-Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to @Kovri and @I2P in terms of anonymity with the exception that:
+Ein [interaktives Diagramm](https://www.eff.org/pages/tor-and-https) des [EFF](https://www.eff.org/) zeigt den Zusammenhang des *Clearnets* und **Tor**. Dieses Konzept trifft in puncto Anonymität (in gewisser Hinsicht) auch auf @Kovri und I2P zu, mit der Ausnahme, dass:
 
-- @Kovri does not use exit nodes when connecting to an @eepsite
-- Your traffic never need to leave the @I2P network
-- You do not need HTTPS to use @Kovri (with the exception of @reseed)
+- Kovri für Verbindungen zu einer Eepsite keine Exit-Nodes verwendet
+- dein Datenverkehr niemals das I2P-Netzwerk verlassen muss
+- du HTTPS nicht benötigst, um @Kovri nutzen zu können (ausgenommen ist ein Reseed)
+
