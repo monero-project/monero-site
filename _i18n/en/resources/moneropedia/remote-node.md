@@ -3,6 +3,7 @@ terms: ["remote-node", "remote-nodes"]
 summary: "Nodes wich are not running in the same machine as the wallet. Open remote nodes allow to use the Monero network immediately"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 A @node that doesn't run on the same local machine where the Monero @wallet is located is called "Remote Node" and can be private or open.
 
 A **private remote node** doesn't run on your local machine, but you have full control over it. A classic example is a node running on a VPS or a server. That node is not on your local machine, but you have full control over it. You can even decide to make it become an open node, allowing people to connect to it.
