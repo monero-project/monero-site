@@ -1,23 +1,23 @@
 gui:
-- version: "0.16.0.3 - Nitrogen Nebula"
+- version: "0.17.0.1 - Oxygen Orion"
   downloads:
    - platform: Windows 64-bit (Installer)
-     hash: 50fe1d2dae31deb1ee542a5c2165fc6d6c04b9a13bcafde8a75f23f23671d484
+     hash: 6250fc57720c6190362fd1cb74e61eb4f765cd8d15c7cc512d48bb15e8fefd51
      link: https://downloads.getmonero.org/gui/win64install
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: 371cb4de2c9ccb5ed99b2622068b6aeea5bdfc7b9805340ea7eb92e7c17f2478
+     hash: c18a47e6d6c273406ea4cf7cc834982a7905a53021268d4fe503ef95507890b5
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
    - platform: Mac OS X 64-bit
-     hash: 574a84148ee6af7119fda6b9e2859e8e9028fe8a8eec4dfdd196aeade47e9c90
+     hash: 1796d266e7bffed1803531b2aab18ff2162f3925d2d42fbe8c8c98bd687c1bcc
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: 20c03ddb1c82e1bcb73339ef22f409e5850a54042005c6e97e42400f56ab2505
+     hash: d7ab169a2cd4177adb5320ea0a8e0fb541a0d1bc6e1dde4a1c4c0710bf736a8c
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
