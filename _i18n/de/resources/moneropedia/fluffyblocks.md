@@ -1,18 +1,16 @@
 ---
-terms: ["fluffy blocks", "fluffyblocks"]
-summary: "a way of saving bandwidth when sending new blocks around the network"
+terms: ["fluffy blocks", "fluffyblocks", "Fluffy-Blocks"]
+summary: "Eine Möglichkeit, beim Senden neuer Blöcke Datenübertragungsraten zu verringern"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A @block is made up of a header and @transactions. Fluffy Blocks only contain
-a header, a list of transaction indices, and any transactions that the node
-recieving the block may be missing. This saves bandwidth because nodes might
-already know about most or all of the transactions in the block and they don't
-need to be sent them again.
+Ein @Block besteht aus einem Header und @Transaktionen. Fluffy-Blocks enthalten lediglich einen Header, eine Liste von Transaktionsindizes und jegliche Transaktionen, welche dem Node, der den Block empfängt, eventuell fehlen. 
 
-### See Also
+Dies spart Bandbreite, weil Nodes möglicherweise bereits über die meisten Transaktionen innerhalb des Blocks Bescheid wissen und ein erneutes Senden dieser deshalb nicht nötig ist.
+
+### Siehe auch
 
 * [BIP152 "Compact Block Relay"](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki)
 * [Xthin](https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/release/doc/bu-xthin-protocol.md)
