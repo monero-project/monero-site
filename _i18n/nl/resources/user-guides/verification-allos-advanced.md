@@ -103,7 +103,7 @@ Op Windows of een Mac ga je naar het [hashbestand op getmonero.org]({{ site.base
 Op Linux kun je het ondertekende hashbestand downloaden door de volgende opdracht op te geven:
 
 ```
-wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
+wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt
 ```
 
 ### 3.2. Hashbestand verifiëren
