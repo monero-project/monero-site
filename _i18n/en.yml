@@ -19,7 +19,7 @@ global:
   upgradoct: Make sure your software is up-to-date with the
   upgradeoctlink: "October 17th network upgrade."
   upgrdecont: To continue using Monero after that date,
-  dwlsoftware: Download Monero 0.17 "Oxygen Orion".
+  dwlsoftware: Download Monero "Oxygen Orion" (0.17).
   lang_tag: "@lang_tag_en"
 
 titles:
