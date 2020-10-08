@@ -292,12 +292,13 @@ permalink: /downloads/index.html
                   <h2 id="hardware">{% t downloads.hardware %}</h2>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p>{% t downloads.hardware1 %} <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware2 %}</a> {% t downloads.hardware3 %} <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware4 %}</a></p>
-                                <p>{% t downloads.hardware5 %}</p>
+                                <p>{% t downloads.hardware1 %} <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware2 %}</a> {% t downloads.hardware3 %}</p>
+                                <p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware4 %}</a></p>
+                                <p><a href="https://wiki.trezor.io/Monero_(XMR)" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware5 %}</a></p>
                             </div>
                         </div>
                         <div class="row mob-wallets center-xs">
-                            <a class="ext-noicon" href="https://www.ledger.com/monero-wallet/"><img src="/img/ledger.png" alt="ledger logo"></a>
+                            <a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img src="/img/ledger.png" alt="ledger logo"></a>
                             <a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" alt="Trezor logo"></a>
                         </div>
                         <div class="row mob-wallets center-xs">
