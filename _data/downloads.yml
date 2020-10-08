@@ -79,3 +79,6 @@ cli:
      link: https://downloads.getmonero.org/cli/freebsd64
      icon: icon-freebsd
      vers:
+   - platform: Source Code
+     link: https://github.com/monero-project/monero
+     icon: icon-github
