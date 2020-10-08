@@ -4,6 +4,7 @@ terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "dec
 summary: "Процесс кодирования сообщений или информации таким образом, что только авторизованные стороны могут декодировать и прочитать ее"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 ### Основная информация
 
 Из статьи [Шифрование](https://en.wikipedia.org/wiki/Encryption):

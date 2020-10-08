@@ -3,6 +3,7 @@ terms: ["view-key", "view-keys"]
 summary: "one of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 每个帐户拥有的两组私有和公开的加密密钥中的一组，要查看与该帐户相关的所有交易要使用私有的查看密钥。

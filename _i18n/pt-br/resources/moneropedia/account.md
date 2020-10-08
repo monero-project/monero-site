@@ -1,45 +1,37 @@
 ---
-terms: ["account", "accounts", "wallet", "wallets", "conto", "conti", "portafoglio", "portafogli"]
-summary: "funzionalmente simile ad un conto bancario, contiene tutte le transazioni in ingresso e in uscita"
+terms: ["account", "accounts", "wallet", "wallets"]
+summary: "similar in function to a bank account, contains all of your sent and received transactions"
 ---
 
-### Le Basi
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+### The Basics
 
-Coloro che hanno familiarità con i predecessori di Monero, e con le criptovalute in generale, conosceranno probabilmente il termine *portafoglio*. In Monero il portafoglio viene descritto più propriamente col termine account, ed esso costituisce un conto privato di proprietà di e gestito da un utente Monero.
+Those familiar with Monero's predecessors will be more familiar with the term *wallet* to describe this. In Monero we call this an account, and it is a private account owned and operated by a Monero user.
 
-Un account di tua proprietà contiene tutte le @transazioni Monero che hai inviato e ricevuto. Il saldo del tuo account è pari alla somma di tutti i Monero che hai ricevuto meno la somma dei Monero che hai inviato. Quando usi Monero, potresti notare che il tuo account presenta due saldi, un saldo bloccato e un saldo sbloccato. Il saldo sbloccato contiene fondi che possono essere spesi immediatamente, mentre il saldo bloccato contiene fondi che non possono al momento essere spesi. Potresti aver ricevuto una transazione con un @tempo-di-sblocco impostato, o potresti aver inviato una transazione e sei in attesa che il @resto torni nel tuo portafoglio: queste sono due situazioni che possono generare fondi bloccati per un certo periodo.
+Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time.
 
-Una differenza fondamentale fra la valuta elettronica tradizionale e Monero è che il tuo account si trova sotto il tuo totale controllo, in genere sul tuo computer, e ad esso non può accedere nessun altro tranne te, se vengono seguite delle [pratiche di buona sicurezza](#pratiche-di-buona-sicurezza).
+A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security).
 
-### Account Multipli
+### Multiple Accounts
 
-Non sono previsti costi aggiuntivi per la creazione di un account Monero e non vi sono commissioni addebitate, ad eccezione delle singole commissioni legate alle @transazioni, commissioni che vengono incassate dai @minatori.
+There are no costs attached to creating a Monero account, and there are no fees charged except for individual @transaction fees that go to @miners.
 
-Ciò significa che chiunque può facilmente creare un account Monero per se stesso/a, un account comune da condividere con il proprio partner e account individuali per i propri figli. Allo stesso modo, un'azienda potrebbe creare account separati per ogni divisione o gruppo. Poiché le commissioni di @transazione di Monero sono piuttosto basse, lo spostamento di fondi fra account non è un esercizio costoso.
+This means that individuals can easily create a Monero account for themselves as well as a joint account to share with their partner, and individual accounts for their children. Similarly, a business could create separate accounts for each division or group. Since Monero's @transaction fees are quite low, moving funds between accounts is not an expensive exercise.
 
-### Chiavi Crittografiche
+### Cryptographic Keys
 
-Monero si basa in gran parte su un principio crittografico noto come *crittografia a chiave pubblica/privata* o *crittografia asimmetrica*, concetto dettagliatamente descritto in [questo articolo di Wikipedia](https://it.wikipedia.org/wiki/Crittografia_asimmetrica).
+Monero relies heavily on a cryptography principle known as *public/private key cryptography* or *asymmetric cryptography*, which is thoroughly detailed in [this Wikipedia article](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
-Il tuo account è basato su due coppie di chiavi, la coppia relativa alla "chiave di spesa" (@spend-key) e la coppia relativa alla "chiave di visualizzazione" (@view-key). La chiave di spesa è speciale in quanto viene richiesta per spendere i fondi Monero, mentre la chiave di visualizzazione ti consente di rivelare le tue @transazioni a terzi, ad esempio per scopi di controllo (audit) o contabilità. Queste chiavi, utilizzate nel tuo account, svolgono anche un ruolo molto importante nella privacy delle @transazioni di Monero.
+Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy.
 
-Le chiavi private di spesa e di visualizzazione devono essere protette da te al fine di mantenere intatta la privacy del tuo account; le chiavi pubbliche di spesa e di visualizzazione, invece, sono ovviamente pubbliche (fanno parte dell'indirizzo del tuo account Monero). Usando la normale crittografia a chiave pubblica/privata, qualcuno potrebbe inviarti un messaggio privato cifrandolo con una delle tue chiavi pubbliche e tu saresti l'unico in grado di decifrarlo con le tue chiavi private.
+The private keys for both of these must be protected by you in order to retain your account privacy. On the other hand, the public keys are obviously public (they are part of your Monero account address). For normal public/private key cryptography someone could send you a private message by encrypting it with either of your public keys, and you would then be the only one able to decrypt it with your private keys.
 
+### Backing Up Your Account
 
-### Fare il Backup del tuo Account
-
-Quando gestisci il tuo account Monero con la chiave di spesa (@spend-key) privata, sei l'unico responsabile della sicurezza dei tuoi fondi. Fortunatamente, Monero rende molto semplice effettuare il backup del tuo account. Quando crei un account Monero per la prima volta ti verrà dato un @mnemonic-seed unico per il tuo account che consiste di 13 o 25 parole nella lingua di tua scelta. **Questo seed è l'unica cosa di cui hai bisogno per eseguire il backup del tuo account**, quindi è assolutamente necessario, una volta comunicatoti, annotarlo ed archiviarlo in modo sicuro. Non conservare mai questo seed in una forma o in un luogo tale da consentire a qualcun altro di vederlo!
-
-Segue un estratto dell'interfaccia del software Monero al momento della creazione di un account.
-Nonostante l'interfaccia sia in lingua inglese, è possibile estrarre le seguenti informazioni, generate alla creazione dell'account stesso:
-
-* Indirizzo account (portafogli): 48zfLeXXJqYVMdbRNbMQFLMDdgtkdQA3QPqaps4dbKGyVazV8C1H7AQifXbEyMeG49DzyMFphUM3XPavayao1AB2VEpBUkY
-* Chiave di visualizzazione: e7afaf6ad061d9b92b3901bcddd3e248973c129d40df5b055cfe05e7df961305
-* Seed mnemonico: realista zoccolo scatola affare ceretta bustina mese clausola stancare alloggio locale piatto marzo iniziare spada istruire
-garanzia estrarre farfalla opuscolo passare nervo vacca vampiro spada
+When you manage your own Monero Account with the private @spend-key, you are solely responsible for the security of your funds. Thankfully, Monero makes it very easy to backup your account. When creating a Monero account for the first time you will be given a unique @mnemonic-seed for your account that consists of 13 or 25 words in the language of your choosing. **This seed is the only thing you need to backup for your account**, and so it is imperative that it is written down and stored securely.  Never store this seed in a form or location that would allow someone else to see it!
 
 ```
-Lista di lingue disponibili per il seed mnemonico dell'account:
+List of available languages for your wallet's seed:
 0 : Deutsch
 1 : English
 2 : Español
@@ -51,40 +43,39 @@ Lista di lingue disponibili per il seed mnemonico dell'account:
 8 : 日本語
 9 : 简体中文 (中国)
 10 : Esperanto
-11 : Lojban
-Enter the number corresponding to the language of your choice: 4
-Generated new wallet: 48zfLeXXJqYVMdbRNbMQFLMDdgtkdQA3QPqaps4dbKGyVazV8C1H7AQifXbEyMeG49DzyMFphUM3XPavayao1AB2VEpBUkY
-View key: e7afaf6ad061d9b92b3901bcddd3e248973c129d40df5b055cfe05e7df961305
+Enter the number corresponding to the language of your choice: 1
+Generated new wallet: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmhZEWD6XoFDGz55bgzisT9Dnv61sbsA6Sa47TYu
+view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903
 **********************************************************************
-Your wallet has been generated!
-To start synchronizing with the daemon, use the "refresh" command.
-Use the "help" command to see the list of available commands.
-Use "help <command>" to see a command's documentation.
-Always use the "exit" command when closing monero-wallet-cli to save
-your current session's state. Otherwise, you might need to synchronize
+Your wallet has been generated.
+To start synchronizing with the daemon, use "refresh" command.
+Use "help" command to see the list of available commands.
+Always use "exit" command when closing monero-wallet-cli to save your
+current session's state. Otherwise, you might need to synchronize
 your wallet again (your wallet keys are NOT at risk in any case).
 
+PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.
 
-NOTE: the following 25 words can be used to recover access to your wallet. Write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.
-
-realista zoccolo scatola affare ceretta bustina mese clausola
-stancare alloggio locale piatto marzo iniziare spada istruire
-garanzia estrarre farfalla opuscolo passare nervo vacca vampiro spada
+aunt knuckle italics moisture hawk thorn iris abort
+chlorine smog uphill glass aptitude nowhere sewage plywood
+dual relic fierce divers anvil nodes bubble cabin abort
 **********************************************************************
+Starting refresh...
+Refresh done, blocks received: 21939                            
+Balance: 0.000000000000, unlocked balance: 0.000000000000
 Background refresh thread started
-[wallet 48zfLe]: █
+[wallet 4B15Zj]: █
 
 ```
 
-Come riporta l'interfaccia dell'esempio, è estremamente importante memorizzare queste parole in un luogo sicuro. Se il rischio legato ad una potenziale perdita del seed ti preoccupa, potresti ad esempio trovar conveniente conservare una seconda copia del seed presso lo studio di un notaio o in una cassetta di sicurezza. Si consiglia inoltre di conservare il seed in un modo che non sia possibile dimostrare che si tratta del *tuo* seed, quindi è consigliabile scriverlo in una lettera o come frammento di altre note.
+As the example above indicates, it is incredibly important to store these words in safe locations. If you are concerned about the risk of critical loss at your home, for instance, you may want to store a second copy of your seed with your attorney or in a safety deposit box. It is also recommended that it is stored in a way that does not make it obvious that it is your seed, so writing it into a letter or as part of other notes is advisable.
 
-### Pratiche di Buona Sicurezza
+### Practicing Good Security
 
-Oltre ad eseguire il backup del @mnemonic-seed in modo da poter accedere al tuo account in caso di perdita di dati, è importante anche adottare delle pratiche di buona sicurezza. Utilizza una password sicura quando crei un account Monero in locale (non utilizzato su [MyMonero](https://mymonero.com) o altri sistemi di accounting basati sul Web).
+Over and above backing up your @mnemonic-seed so that you have access to your account in the event of critical data loss, it is also important to practice good security. Use a secure password when creating a local Monero account (not used on [MyMonero](https://mymonero.com) or other web-based account systems).
 
-Non dare mai la password del tuo account Monero a nessuno, in quanto essa può essere utilizzata per accedere a Monero sul tuo computer senza conoscere il tuo @mnemonic-seed. Allo stesso modo, assicurati di avere un antivirus attivo e aggiornato, specialmente su un sistema operativo Windows. Infine, fai attenzione quando fai clic sui link nelle e-mail o su siti Web sconosciuti e non attendibili, poiché il malware installato sul tuo computer può stare fermo ad aspettare l'accesso al tuo account Monero prima di prelevare tutti i fondi da esso.
+Don't ever give your Monero account password to anyone, as this can be used to access the Monero on your computer without knowing your @mnemonic-seed. Similarly, make sure you have running and up-to-date antivirus, especially on Windows computers. Finally, be careful when clicking links in emails or on unknown and untrusted websites, as malware installed on your computer can sit and wait for you to access your Monero account before taking the funds from it.
 
+### Leaving Your Account to Next of Kin
 
-### Lasciare il tuo Account in eredità
-
-Lasciare in eredità il tuo account Monero è facile come effettuare un backup. Lascia ai tuoi ereditieri il @mnemonic-seed del tuo account nel testamento, o conserva il seed in un luogo sicuro cui i tuoi ereditieri avranno accesso a seguito dell'esecuzione delle tue ultime volontà. Il vantaggio di questa scelta è che i tuoi ereditieri non dovranno attendere mesi prima che una terza parte svincoli i fondi legati all'eredità.
+Providing access to your Monero account to your next of kin is just as easy as it is to backup your Monero account. Simply leave your @mnemonic-seed to them in your will, or store it somewhere safe where it will be given to them upon the execution of your will. A key advantage to this is that your next of kin won't have to wait for months for a third party to release the funds to them.

@@ -3,6 +3,7 @@ terms: ["ring-signature", "ring-signatures"]
 summary: "a group of cryptographic signatures with at least one real participant, but no way to tell which in the group is the real one as they all appear valid"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 在密码学中，环形签名是一种数字签名，可以由一组用户中的任何成员执行，每个用户都有密钥。因此，一个带有环签名的消息是由特定人群中的某个人背书的。环签名的安全特性之一是，不能通过计算确定*哪个*组成员的密钥才是签名。

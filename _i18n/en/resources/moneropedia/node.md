@@ -3,6 +3,7 @@ terms: ["node", "nodes", "full-node", "full-nodes"]
 summary: "A device on the Internet running the Monero software, with a full copy of the Monero blockchain. It can be local or remote"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network. A node that is not running on your local machine is called @remote-node. Remote nodes can be private, if they are for personal use only, or open, if they are accessible by other people.

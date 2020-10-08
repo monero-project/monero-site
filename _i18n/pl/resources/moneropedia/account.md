@@ -3,6 +3,7 @@ terms: ["account", "accounts", "wallet", "wallets", "konto", "konta", "portfel",
 summary: "Podobnie jak konto bankowe, konto Monero zawiera wszystkie twoje płatności wychodzące i przychodzące."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Dla bardziej zaznajomionych z poprzednikami Monero bliższe będzie określenie *portfel*. Jest to prywatne konto w posiadaniu i obsłudze użytkownika Monero.

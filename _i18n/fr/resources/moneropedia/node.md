@@ -3,6 +3,7 @@ terms: ["node", "nodes", "full-node", "full-nodes", "nœud", "nœuds", "noeud", 
 summary: "Un équipement sur Internet faisant fonctionner le logiciel Monero, avec une copie complète de la chaîne de bloc, soutenant activement le réseau Monero"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 ### Les Bases
 
 Un équipement sur Internet faisant fonctionner le logiciel Monero, avec une copie complète de la chaîne de bloc, soutenant activement le réseau Monero.

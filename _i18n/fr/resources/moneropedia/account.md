@@ -3,6 +3,7 @@ terms: ["account", "accounts", "wallet", "wallets", "compte", "comptes", "portef
 summary: "Similaire à un compte en banque dans son fonctionnement, contient toutes vos transactions envoyées et reçues"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Ceux qui sont familiers avec les prédécesseurs de Monero seront plus familiers avec le terme de *portefeuille* pour décrire ceci. Dans Monero nous appelons cela un compte, et c'est un compte privé détenu et utilisé par un utilisateur de Monero.

@@ -3,7 +3,7 @@ terms: ["unlock-time", "tempo-di-sblocco"]
 summary: "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A special transaction where the recipient can only spend the funds after a future date, as set by the sender.

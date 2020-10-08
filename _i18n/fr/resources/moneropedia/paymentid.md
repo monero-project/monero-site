@@ -3,6 +3,7 @@ terms: ["payment-ID", "payment-IDs", "ID-de-paiement", IDs-de-paiement]
 summary: "Une option supplémentaire que est ajouté pour identifier les transactions avec les commerçants, se composant de 64 caractères hexadécimaux"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 *Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.
 
 ### Les Bases

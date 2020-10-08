@@ -3,6 +3,7 @@ terms: ["airgap"]
 summary: "An airgap is a security measure to physically separate a computer or device from all other networks, such as the Internet."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 “网闸是在一台或多台电脑上实施的网络安全措施，以确保安全的电脑网络与不安全的网络（例如公共互联网或不安全的局域网）在物理上隔离。[2]

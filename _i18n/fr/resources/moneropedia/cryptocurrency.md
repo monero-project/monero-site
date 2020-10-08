@@ -3,6 +3,7 @@ terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins", "cryptomonn
 summary: "Une monnaie numérique s'appuyant sur des méthodes de chiffrement pour réguler la génération de nouvelles pièces de monnaie et vérifier le transfert des fonds, opérant généralement indépendamment d'une banque centrale."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Une monnaie numérique s'appuyant sur des méthodes de chiffrement pour réguler la génération de nouvelles pièces de monnaie et vérifier le transfert des fonds, opérant généralement indépendamment d'une banque centrale.

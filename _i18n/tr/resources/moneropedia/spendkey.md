@@ -3,6 +3,7 @@ terms: ["spend-key", "spend-keys"]
 summary: "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
 ---
 
+ {% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 One of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account.

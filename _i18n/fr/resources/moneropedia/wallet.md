@@ -3,6 +3,7 @@ terms: ["wallet", "wallets", "portefeuille", "portefeuilles"]
 summary: "Un portefeuille conserve les informations nécessaires pour envoyer et recevoir des Moneroj"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Un compte Monero, ou portefeuille, conserve les informations nécessaires pour envoyer et recevoir des Moneroj. En plus d'envoyer et de recevoir, le logiciel du portefeuille Monero conserve un historique privé de vos transactions et vous permet de signer cryptographiquement des messages. Il inclut également un logiciel d'extraction minière de Monero et un carnet d'adresses.

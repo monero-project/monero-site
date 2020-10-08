@@ -4,6 +4,7 @@ terms: ["Canonically-unique-host", "zasadniczy-unikalny-host", "zasadniczego-uni
 summary: "Host ogólnie przyjęty jako przypisany do adresu lub zestawu adresów"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Zasadniczy unikalny host jest [Pełną, Jednoznaczną Nazwą Domenową] (https://en.wikipedia.org/wiki/FQDN), która kanonicznie tłumaczy dany adres lub zestaw adresów. Nie należy jej mylić z @lokalnym-unikalnym-hostem.

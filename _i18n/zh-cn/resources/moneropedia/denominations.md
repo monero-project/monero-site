@@ -3,6 +3,7 @@ terms: ["denominations", "subunits", "tacoshi", "piconero", "nanonero", "microne
 summary: "A denomination is a proper description of a currency amount. It is oftentimes a sub-unit of the currency. For example, traditionally a cent is 1/100th of a particular unit of currency.)"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 面额是对货币数量的恰当描述。它通常是货币的一个次级单位。例如，传统上一分钱是特定货币单位的百分之一。

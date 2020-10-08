@@ -3,6 +3,7 @@ terms: ["bulletproofs", "bulletproof"]
 summary: "Une nouvelle sorte de preuve d'étendue remplaçant les transactions confidentielles de cercle pour masquer les montant envoyés."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 Les @transactions-confidentielles-de-cercle ont été mise en place pour masquer le montant des transactions. L'un des objectifs de @ringCT était de prouver que la sommes des entrées - sorties dans la @transaction était égale à 0, et que toutes les sorties étaient des nombre positifs.  
 Pour ce faire, deux types de signatures de cercle étaient construits : une signature cercle pour la totalité de la transaction (prouvant que la somme est 0) et un lot de signatures de cercle pour chaque bit de la transaction (prouvant que les sorties sont des nombres positifs), alors agrégés en utilisant d'abord les signatures de Schnorr (remplacées ensuite par les signatures de cercle Borroméennes).  

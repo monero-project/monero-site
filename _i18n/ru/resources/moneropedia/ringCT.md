@@ -3,6 +3,7 @@ terms: ["ringCT", "ring-CT"]
 summary: "Способ сокрытия суммы, отправленной в транзакции Monero"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Основная информация
 Ring CT (сокращение от Ring Confidential Transactions — кольцевые конфиденциальные транзакции) является протоколом, позволяющим скрыть суммы транзакций Monero.
 

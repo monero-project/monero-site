@@ -3,6 +3,7 @@ terms: ["spend-key", "spend-keys"]
 summary: "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 每个帐户拥有的两对私钥和公钥中的一对，其中*私有的*支付密钥(私钥)，用于花费帐户中的任何资金。

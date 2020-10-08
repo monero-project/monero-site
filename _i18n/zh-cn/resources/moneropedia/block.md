@@ -3,6 +3,7 @@ terms: ["block", "blocks"]
 summary: "a container of transactions, a sequence of which forms a blockchain"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 区块是@交易的容器，平均每2分钟就有一个新的区块被添加到@区块链当中(请参见定义为120秒的常量 `DIFFICULTY_TARGET_V2` )。

@@ -3,6 +3,7 @@ terms: ["change"]
 summary: "Monero sent as part of a transaction, that returns to your account instead of going to another recipient"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 门罗币发送作为交易的一部分，它将返回到您的帐户，而不是发送到另一个接收者。

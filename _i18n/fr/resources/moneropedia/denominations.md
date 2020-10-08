@@ -3,6 +3,7 @@ terms: ["denominations", "subunits", "tacoshi", "piconero", "nanonero", "microne
 summary: "Une dénomination ou coupure est une description exacte d'un montant d'une monnaie. Il s'agit souvent d'une sous-unité de la monnaie. Par exemple, traditionnellement, un centime est 1/100ème d'une unité de monnaie précise."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### The Basics
 
 Une dénomination ou coupure est une description exacte d'un montant d'une monnaie. Il s'agit souvent d'une sous-unité de la monnaie. Par exemple, traditionnellement, un centime est 1/100ème d'une unité de monnaie précise.

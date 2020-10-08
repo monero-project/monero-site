@@ -3,6 +3,7 @@ terms: ["node", "nodes", "full-node", "full-nodes"]
 summary: "a device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 一种在互联网上运行门罗币软件的设备，带有完整的门罗币区块链备份，积极协助门罗币网络。不在本地运行的节点叫做@远程节点。如果只是私人使用的话，远程节点可以是私有的，如果其他人也使用的话，就是开放的。

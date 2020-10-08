@@ -3,6 +3,7 @@ terms: ["transaction", "transactions", "transakcja", "transakcję", "transakcji"
 summary: "Kryptograficznie podpisany zbiornik, który wyszczególnia transfer Monero do odbiorcy lub odbiorców."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Kryptograficznie podpisany zbiornik, który wyszczególnia transfer Monero do odbiorcy lub odbiorców.

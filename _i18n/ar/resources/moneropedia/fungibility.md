@@ -3,7 +3,7 @@ terms: ["fungibility", "fungible"]
 summary: "property of a currency whereby two units can be substituted in place of one another"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 Property of a currency whereby two units can be substituted in place of one another.

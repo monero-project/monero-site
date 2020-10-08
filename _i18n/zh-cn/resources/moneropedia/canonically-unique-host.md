@@ -4,6 +4,7 @@ terms: ["Canonically-unique-host"]
 summary: "A host that is canonically resolved to an address or set of addresses"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 一个标准唯一主机是一个[完全限定域名](https://en.wikipedia.org/wiki/FQDN)，它将规范地解析为一个指定的地址或一组地址。不要与@本地唯一主机混淆。
