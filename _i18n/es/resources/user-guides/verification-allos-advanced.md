@@ -103,7 +103,7 @@ En Windows o Mac, ve a los [archivos hash en getmonero.org]({{ site.baseurl }}/d
 En Linux, puedes descargar los hashes firmados utilizando el siguiente comando:
 
 ```
-wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
+wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt
 ```
 
 ### 3.2. Verificar Archivo Hash

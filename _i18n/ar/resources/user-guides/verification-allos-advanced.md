@@ -103,7 +103,7 @@ gpg:              unchanged: 1
 في ليُنكس يمكنك تنزيل ملف الهاشات الموقّع عن طريق إصدار الأمر التالي:
 
 ```
-wget -O hashes.txt {{ site.baseurl }}/downloads/hashes.txt
+wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt
 ```
 
 ### 3.2. تأكد من ملف الهاش
