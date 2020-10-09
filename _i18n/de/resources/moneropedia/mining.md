@@ -1,15 +1,15 @@
 ---
-terms: ["mining", "miner", "miners"]
-summary: "the process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain"
+terms: ["mining", "miner", "miners", "Mining", "Miner", "Minings", "Miners", "Minern"]
+summary: "Prozess des kryptografischen Errechnens eines mathematischen Nachweises eines Blocks, der eine Anzahl von Transaktionen enthält, welche dann zur Blockchain hinzugefügt werden"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-The process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain.
+Der Prozess des kryptografischen Errechnens eines mathematischen Nachweises eines Blocks, welcher eine Anzahl von Transaktionen enthält, die dann zur Blockchain hinzugefügt werden.
 
-Mining is the distributed process of confirming transactions on the public ledger of all transactions, aka @blockchain.  Monero nodes use the blockchain to distinguish legitimate transactions from attempts to re-spend coins that have already been spent elsewhere.
+Mining ist der verteilte Prozess des Bestätigens von Transaktionen im öffentlichen, alle Transaktionen umfassenden Kassenbuch, bekannt als @Blockchain. Monero-Nodes nutzen die Blockchain, um rechtmäßige Transaktionen von denen zu unterscheiden, in welchen versucht wird, bereits zuvor ausgegebene Coins erneut zu senden.
 
-Monero is powered strictly by Proof of Work. It employs a mining algorithm that has the potential to be efficiently tasked to billions of existing devices (any modern x86 CPU and many GPUs). Monero uses a variant of CryptoNight Proof of Work (PoW) algorithm, which is designed for use in ordinary CPUs and GPUs.
+Monero wird ausschließlich durch ein Proof-of-Work-Verfahren betrieben. Es setzt einen Mining-Algorithmus ein, der das Potenzial hat, effizient auf Milliarden von bestehenden Geräten (jeder modernen x86-CPU und vielen GPUs) ausgeführt zu werden. Monero verwendet eine Variante des CryptoNight-Proof-of-Work-Algorithmus, der für den Gebrauch in üblichen CPUs und GPUs entwickelt wurde.
 
-The smart mining feature allows transparent CPU mining on the user's computer, far from the de facto centralization of mining farms and pool mining, pursuing Satoshi Nakamoto's original vision of a true P2P currency.
+Diese intelligente Eigenschaft des Minings erlaubt transparentes CPU-Mining auf dem Rechner des Nutzers, weit weg von faktisch zentralisierten Mining-Farms und Mining-Pools, und strebt damit Satoshi Nakamotos ursprüngliche Vision einer wahrhaftigen P2P-Währung an.
