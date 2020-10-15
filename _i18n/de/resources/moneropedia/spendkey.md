@@ -1,15 +1,14 @@
 ---
-terms: ["spend-key", "spend-keys"]
-summary: "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
+terms: ["spend-key", "spend-keys", "Spend-Key", "Spend-Keys"]
+summary: "Eines der zwei Paare privater und öffentlicher kryptografischer Schlüssel, über welche jedes Konto verfügt; der private Spend-Key wird genutzt, um jegliches Guthaben auf dem Konto auszugeben"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-One of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account.
+Eines der zwei Paare privater und öffentlicher kryptografischer Schlüssel, über welche jedes Konto verfügt. Der *private* Spend-Key wird genutzt, um jegliches Guthaben auf dem Konto auszugeben.
 
-### In-depth Information
+### Ausführliche Informationen
 
-The *private* spend key is a 256-bit integer that is used to sign Monero transactions. With the current deterministic key derivation method of the official wallet, the private spend key is also an alternate representation of the @mnemonic-seed. It can be used to derive all other account keys.
-
+Der *private* Spend-Key ist ein 256-Bit-Integer, der zum Signieren von Monero-Transaktionen verwendet wird. Durch das aktuelle, deterministische Verfahren des offiziellen Wallets, durch welches eine Ableitung der Schlüssel erfolgt, ist der private Spend-Key zusätzlich eine alternative Schreibweise des @mnemonischen-Seeds. Er kann zum Ableiten aller anderen Konto-Schlüssel genutzt werden.
 

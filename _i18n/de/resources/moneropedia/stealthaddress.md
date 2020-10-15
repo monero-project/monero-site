@@ -1,15 +1,15 @@
 ---
 terms: ["stealth-address", "stealth-addresses", "Schattenadressen", "Schattenadresse"]
-summary: "automatic one-time addresses for every transaction"
+summary: "Automatische Einmal-Adresse für jede Transaktion"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-Stealth addresses are an important part of Monero's inherent privacy. They allow and require the sender to create random one-time addresses for every @transaction on behalf of the recipient. The recipient can publish just one address, yet have all of his/her incoming payments go to unique addresses on the @blockchain, where they cannot be linked back to either the recipient's published address or any other transactions' addresses. By using stealth addresses, only the sender and receiver can determine where a payment was sent.
+Schattenadressen sind ein wichtiger Teil von Moneros inhärenter Privatsphäre. Dem Sender wird ermöglich und abverlangt, im Namen des Empfängers für jede @Transaktion zufällige Einmal-Adressen zu erstellen. Der Empfänger kann so lediglich eine Adresse veröffentlichen und nichtsdestotrotz gehen all seine eingehenden Zahlungen an einmalige Adressen auf der @Blockchain. Von dort aus können sie weder zur veröffentlichten Adresse des Empfängers noch zu einer anderweitigen Adresse irgendeiner anderen Transaktion zurückverfolgt werden. Unter der Verwendung von Schattenadressen können ausschließlich der Sender und der Empfänger ausmachen, wohin eine Zahlung geschickt wurde.
 
-When you create a Monero account you’ll have a private @view-key, a private @spend-key, and a Public Address. The @spend-key is used to send payments, the @view-key is used to display incoming transactions destined for your account, and the Public Address is for receiving payments. Both the @spend-key and @view-key are used to build your Monero address. You can have a “watch only” wallet that only uses the @view-key. This feature can be used for accounting or auditing purposes but is currently unreliable due to the inability to track outgoing transactions. You can decide who can see your Monero balance by sharing your @view-key. Monero is private by default and optionally semi-transparent!
+Wenn du ein Monero-Konto erstellst, wirst du einen privaten @View-Key, einen privaten @Spend-Key und eine öffentliche Adresse erhalten. Der @Spend-Key wird zum Senden von Zahlungen, der @View-Key zum Anzeigen von auf deinem Konto eingehenden Transaktionen und die öffentliche Adresse zum Empfangen von Zahlungen verwendet. Sowohl der Spend- als auch der View-Key werden zum Erstellen deiner Monero-Adresse genutzt. Du kannst ein View-Only-Wallet haben, welches lediglich den @View-Key verwendet. Diese Funktion kann zu Zwecken der Buchhaltung oder Betriebsprüfung genutzt werden, ist derzeit allerdings unverlässlich, da abgehende Transaktionen nicht abgebildet werden können. Du kannst mit der Weitergabe deines @View-Keys entscheiden, wer dein Monero-Guthaben sehen kann. Monero ist standardmäßig privat und optional halbtransparent!
 
-When using the Monero Wallet all this is handled by the software.  Sending Monero is as easy as entering the destination address, the amount, and pressing Send.  To recieve Monero, simply provide the sender your Public Address.
+Beim Verwenden des Monero-Wallets wird all dies von der Software erledigt. Das Senden von Monero ist kinderleicht: Eingabe der Zieladresse und des Betrags, auf "Senden" klicken - fertig. Zum Empfangen von Monero musst du dem Sender lediglich deine öffentliche Adresse übermitteln.
 
-To learn how Monero prevents tracking history (untraceability), see @ring-signatures.
+Im Eintrag über @Ringsignaturen wird erklärt, wie Monero eine Verfolgungschronik verhindert (unmögliche Rückverfolgbarkeit).
