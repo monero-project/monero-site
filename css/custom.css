@@ -3907,76 +3907,40 @@ h3.months {
 
 /***********************************TEAM PAGE***********************************/
 
-
-.team .tabPanel-widget input + h2 + div.tabPanel-content {
-    padding: 1rem 0 0 0;
-}
-
-.team .tabPanel-widget div.tabPanel-content .half:nth-child(even) {
-    padding-left: 0.5rem;
-    padding-right: 0;
-}
-
-.team .tabPanel-widget div.tabPanel-content .half:nth-child(odd) {
-    padding-right: 0.5rem;
-    padding-left: 0;
-}
-
 .team .icons {
-    margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .team .icons a {
-    border-bottom: none;
+  border-bottom: none;
 }
 
-@media only screen and (max-width: 48rem) {
-
-
-.team .tabPanel-widget input + h2 + div.tabPanel-content {
-    padding: 0.5rem 0 0 0;
+.team a.chats-img {
+  text-decoration: none;
+  border-bottom: none;
 }
 
-.team .tabPanel-widget div.tabPanel-content .full {
-    padding: 0;
+.team img.matrix {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 3rem;
 }
 
-.team .tabPanel-widget div.tabPanel-content .half:nth-child(even) {
-    padding-left: 0.25rem;
-    padding-right: 0;
+.team img.mattermost {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 1.5rem;
 }
 
-.team .tabPanel-widget div.tabPanel-content .half:nth-child(odd) {
-    padding-right: 0.25rem;
-    padding-left: 0;
+.team img.freenode {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 1.6rem;
 }
 
-.team .tabPanel-widget div.tabPanel-content .full {
-    padding-left: 0;
-    padding-right: 0;
+.team p {
+  padding-top:0.3rem;
 }
-
-.team .tabPanel-widget > div.tabPanel-content p {
-    padding-left: 0;
-}
-
-}
-
-@media only screen and (max-width: 41rem) {
-
-.team .tabPanel-widget > div.tabPanel-content .half.col-xs-6 {
-     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-}
-
-.team .tabPanel-widget div.tabPanel-content .half:nth-child(even), .team .tabPanel-widget div.tabPanel-content .half:nth-child(odd) {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-}
-
 
 /***********************************POST STYLING********************************/
 
