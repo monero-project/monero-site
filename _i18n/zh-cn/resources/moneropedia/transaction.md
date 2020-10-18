@@ -3,6 +3,7 @@ terms: ["transaction", "transactions"]
 summary: "a cryptographically signed container that details the transfer of Monero to a recipient (or recipients)"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 交易的参数包含一个或多个具有相应资金数额的收件人地址和一个@环尺寸参数，该参数指定绑定到交易的输出数量。使用的输出越多，混淆的程度就越高，但这是有代价的。因为交易越大输出越多，交易费也就越高。

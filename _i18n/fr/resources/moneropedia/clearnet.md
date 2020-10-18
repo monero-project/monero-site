@@ -4,6 +4,7 @@ terms: ["Clearnet", "réseau-en-clair"]
 summary: "L'Internet sur lequel les surcouches réseaux anonymes sont construites."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Lorsque vous utilisez Internet pour des choses comme lire des actualités, e-mail, média sociaux, et même Monero, vous utilisez certainement une connexion réseau *en clair*. Cela signifie que *toutes* vos connexions peuvent être suivies, tracées et observées par :

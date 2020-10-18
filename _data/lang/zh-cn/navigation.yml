@@ -1,44 +1,44 @@
 - title: 始
   subfolderitems:
   - page: 什么是门罗币？
-    url: get-started/what-is-monero
+    url: get-started/what-is-monero/
   - page: 接收
-    url: get-started/accepting
+    url: get-started/accepting/
   - page: 贡献
-    url: get-started/contributing
+    url: get-started/contributing/
   - page: 挖矿
-    url: get-started/mining
+    url: get-started/mining/
   - page: 常见问题
-    url: get-started/faq
+    url: get-started/faq/
 - title: 下载
   url: downloads/
 - title: Blog
-  url: blog
+  url: blog/
 - title: 社区
   subfolderitems:
   - page: 团队
-    url: community/team
+    url: community/team/
   - page: 社群
-    url: community/hangouts
+    url: community/hangouts/
   - page: 赞助
-    url: community/sponsorships
+    url: community/sponsorships/
   - page: 商户
-    url: community/merchants
+    url: community/merchants/
 - title: 资源
   subfolderitems:
   - page: 关于
-    url: resources/about
+    url: resources/about/
   - page: 路线图
-    url: resources/roadmap
+    url: resources/roadmap/
   - page: 研究实验室
-    url: resources/research-lab
+    url: resources/research-lab/
   - page: 门罗币百科
-    url: resources/moneropedia
+    url: resources/moneropedia/
   - page: 用户指南
-    url: resources/user-guides
+    url: resources/user-guides/
   - page: 开发者指南
-    url: resources/developer-guides
+    url: resources/developer-guides/
   - page: 文库
-    url: library
+    url: library/
   - page: Press Kit
-    url: press-kit
+    url: press-kit/

@@ -975,6 +975,29 @@ a {
     text-decoration: none;
 }
 
+/* External link icon */
+
+a[href^="https:"]:not([href*="getmonero.org"]):not([class*="btn-link"]):not([class="chats-img"]):not([class*="ext-noicon"]):not([class*="white"]) {
+  background: url(/img/external.svg) no-repeat right;
+  padding-right: 0.7em;
+  background-size: 0.6em;
+}
+
+a[href^="https:"]:not([href*="getmonero.org"]).white {
+  background: url(/img/external-white.svg) no-repeat right;
+  padding-right: 0.7em;
+  background-size: 0.6em;
+}
+
+a[href^="https:"]:not([href*="getmonero.org"]).orange {
+  background: url(/img/external.svg) no-repeat right;
+  padding-right: 0.7em;
+  padding-top: 0.5em;
+  background-size: 0.6em;
+}
+
+/* END External link icon */
+
 a:hover, a:focus, a:active {
     outline: 0;
 }
@@ -1133,7 +1156,7 @@ pre.highlight>code {
     z-index: 4;
     width: 100%;
     text-align: center;
-    color: #4c4c4c;
+    color: #171717;
     padding-bottom: 1.3rem;
     padding-top: 1.3rem;
     -moz-box-shadow: 0 2px 6px rgba(50,50,93,.1);
@@ -1144,8 +1167,13 @@ pre.highlight>code {
 }
 
 .upgrade-content a {
-    color: #4c4c4c;
+    color: #171717;
     font-size: 1.1rem;
+    border-bottom: 2px dotted;
+}
+
+.upgrade-content a:hover {
+  border-bottom: 1px solid;
 }
 
 .upgrade-content p {
@@ -1263,11 +1291,6 @@ label.upgrade-x {
     text-align: center;
     color: white;
     padding-bottom: 1rem;
-}
-
-.untranslated-link {
-    color: white;
-    text-decoration: underline;
 }
 
 .disclaimer-link {
@@ -1782,7 +1805,7 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 
 .btn-fixed {
-    width: 10rem;
+    min-width: 10rem;
     display: block;
 }
 
@@ -1827,7 +1850,7 @@ img.monero-logo {
 }
 
 .topnav .topnav-list a, .topnav .topnav-list label {
-    color: #7a7a7a;
+    color: #6B6B6B;
     text-decoration: none;
     -webkit-transition: all ease-out .1s;
     -moz-transition: all ease-out .1s;
@@ -3130,44 +3153,86 @@ footer {
     vertical-align: middle;
 }
 
-.download-platforms span.icon-windows {
+span.icon-windows {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px 0;
 }
 
-.download-platforms span.icon-apple {
+span.icon-apple {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px -96px;
 }
 
-.download-platforms span.icon-linux{
+span.icon-linux{
     background-image: url(../img/monero-spritesheet.png);
     background-position: -96px -48px;
 }
 
-.download-platforms span.icon-arm {
+span.icon-arm {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -176px;
 }
 
-.download-platforms span.icon-freebsd {
+span.icon-freebsd {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -208px;
 }
 
-.download-platforms span.icon-dragonflybsd {
+span.icon-dragonflybsd {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -287px;
 }
 
-.download-platforms span.icon-github {
+span.icon-github {
     background-image: url(../img/monero-spritesheet.png);
     background-position: 0 -240px;
 }
 
-.download-platforms span.icon-android {
+span.icon-android {
   background-image: url(../img/monero-spritesheet.png);
   background-position: 0 -321px;
+}
+
+span.icon-browser {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: 0 -355px;
+}
+
+.downloads a.ext-noicon {
+  border-bottom: none;
+}
+
+.downloads td img {
+  display: inline-block;
+  padding: 0;
+  padding-right: 0.5rem;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.downloads table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.downloads table, th, td {
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.downloads th {
+  text-align: left;
+}
+
+.downloads .mobile-only ul {
+  padding-left: 0;
+}
+
+.downloads .mobile-only img {
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
 }
 
 .downloads a.arrow-up {
@@ -3208,6 +3273,10 @@ footer {
 
 .mobile-only {
   display:none;
+}
+
+.mobile-only .nopadding {
+    padding: 0;
 }
 
 @media only screen and (max-width: 75rem) {
@@ -4114,6 +4183,23 @@ p.hangouts-social {
     margin-right: auto;
 }
 
+.hangouts a.chats-img {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.hangouts img.mattermost {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+}
+
+.hangouts img.matrix {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3rem;
+}
+
 @media only screen and (max-width: 75rem) {
 
 }
@@ -4151,12 +4237,26 @@ p.hangouts-social {
 
 /***************************SPONSORS*****************************/
 
+.sponsors .info-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sponsors a, .sponsors a:hover, .sponsors a:active, .sponsors a:focus {
     border: none;
 }
 
+.sponsors p {
+    padding-top: 2rem;
+}
+
+.sponsors p#tari {
+    padding-top: 3rem;
+}
+
 .sponsors img {
-    width: 100%;
+    max-height: 100px;
 }
 
 .sponsors .info-block h2, .merchants .info-block h2, .info-block.research-paper h2 {
@@ -4716,9 +4816,18 @@ input.accordion[type=radio]:checked + label::after {
 .tab-content p {
   margin: 1rem 0;
 }
+}
+
+@media only screen and (max-width: 62rem) {
+
 
 [data-tooltip]:before {
-  width: 0;
+  width: auto;
+  bottom: 100%;
+}
+    
+.downloads ul.logo {
+  padding-inline-start: 20px;
 }
 
 }

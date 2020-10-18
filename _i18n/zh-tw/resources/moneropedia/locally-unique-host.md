@@ -4,6 +4,7 @@ terms: ["Locally-unique-host"]
 summary: "A host defined by you and resolved only by you"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A locally-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) defined by **you** and resolved only by you; similar to how a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) is implemented. Not to be confused with @canonically-unique-host.

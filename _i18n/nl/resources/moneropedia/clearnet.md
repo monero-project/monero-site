@@ -4,6 +4,7 @@ terms: ["Clearnet"]
 summary: "The Internet in which anonymous overlay networks are built upon"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 When you use the Internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:

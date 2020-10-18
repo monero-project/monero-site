@@ -4,6 +4,7 @@ terms: ["Clearnet", "Clearnecie", "clearnetu"]
 summary: "Internet, na którym zbudowane są anonimowe sieci nakładkowe"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Gdy używasz internetu do czytania wiadomości, sprawdzania e-maila, social media i nawet Monero, najprawdopodobniej używasz połączenia clearnet. Oznacza to, że *wszystkie* twoje połączenia mogą być śledzone i monitorowane przez:

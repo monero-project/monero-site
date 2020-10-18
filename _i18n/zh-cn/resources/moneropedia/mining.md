@@ -3,6 +3,7 @@ terms: ["mining", "miner", "miners"]
 summary: "the process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 一种以密码方式计算一个区块的数学证明的过程，该区块包含一定数量的交易，然后将这些交易添加到区块链中。

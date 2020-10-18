@@ -1,0 +1,1239 @@
+global:
+  date: '%Y/%m/%d'
+  tagsmeta: Alle Monero-bloggartikler som er emneknagget
+  lang_tag: '@lang_tag_no'
+  moreinfo: Mer informasjon
+  upgrade: For å fortsette å bruke Monero, må du sørge for at programvaren din er
+    oppdatert med nettverksoppgraderingen datert 30. november.
+  outdatedVersion: den engelske versjonen
+  outdatedMin: Denne siden har blitt oppdatert etter den ble oversatt. Du kan bruke
+    denne versjonen, men den kan være ufullstendig. Bruk
+  outdated: Innholdet i denne siden er utdatert og er muligens ikke gyldig lenger.
+    Kontakt samfunnet hvis du trenger støtte.
+  titlemeta: Monero – en digital valuta som er sikker, privat og usporbar
+  untranslated: Den siden er ikke oversatt enda. Hvis du vil hjelpe med å oversette
+    den, kan du se
+  privacy: Personvern
+  terms: Vilkår
+  wikimeta: på Moneropedia – det åpne oppslagsverket for Monero-kunnskap
+  tags: Artikler etter emneknagg
+  wiki: Moneropedia
+  sitename: getmonero.org – Monero-prosjektet
+  monero_project: Monero-prosjektet
+  copyright: Opphavsrett
+  getting_started: Kom i gang
+  monero: Monero
+moneropedia:
+  entries:
+    randomx: RandomX
+    bulletproofs: Bulletproofs
+    wallet: Lommebok
+    viewkey: Se nøkkel
+    unlocktime: Opplåsingstid for transaksjon
+    transaction: Transaksjoner
+    tail-emission: Haleemisjon
+    stealthaddress: Skjult adresse
+    spendkey: Forbruksnøkkel
+    smartmining: Smart utvinning
+    signature: Kryptografisk signatur
+    scalability: Skalerbarhet
+    ring-size: Ringstørrelse
+    ringsignatures: Ringsignatur
+    ringCT: Ring CT
+    remote-node: Ekstern node
+    pruning: Utrensking
+    pedersen-commitment: Pedersen-forpliktelse
+    paymentid: Betalings-ID
+    paperwallet: Papirlommebok
+    openalias: OpenAlias
+    node: Node
+    mnemonicseed: Mnemonisk frø
+    mining: Utvinning
+    locally-unique-host: Lokalt-unik vert
+    kovri: Kovri
+    fungibility: Fungibilitet
+    fluffyblocks: Luftige blokker
+    encryption: Kryptering
+    destination: Destinasjon
+    denominations: Benevnelser
+    cryptocurrency: Kryptovaluta
+    consensus: Konsensus
+    coinbase: Coinbase-transaksjon
+    clearnet: Clearnet
+    change: Endre
+    canonically-unique-host: Kanonisk-unik vert
+    bootstrap-node: Oppstartsprogram-node
+    block: Blokk
+    blockchain: Blokkjede
+    atomic-units: Atomiske enheter
+    airgap: Luftvegg
+    address: Adresse
+    address-book: Adressebok
+    account: Konto
+    daemon: Daemon
+  add_new_text2: eller sende inn endringer via en trekkforespørsel
+  add_new_link: åpne en sak på GitLab-arkivet på denne nettsiden
+  add_new_text1: Hvis det er en oppføring som du ønsker å endre eller at skal legges
+    til, kan du
+  add_new_button: Legg til en ny oppføring
+  back: Tilbake til Moneropedia
+  description: "Terminologien rundt Monero kan være veldig kompleks og teknisk. Moneropedia\
+    \ er et verktøy som er opprettet av Monero-samfunnet for å gi en enkel forklaring\
+    \ til disse uttrykkene. Nedenfor vil du finne en liste over alle Moneropedia-oppføringene\
+    \ i alfabetisk rekkefølge. Hvis du vil redigere en eksisterende stemme eller legge\
+    \ til en ny, kan du trykke på knappen nederst på siden.\n"
+specs:
+  privacytech_dandelion: Dandelion++
+  privacytech_ringct: '@RingCT'
+  privacytech_tor-i2p: Transaksjoner over Tor/I2P
+  privacytech_rs: Ringsignaturer
+  privacytech_sh: Skjulte adresser
+  privacytech_title: Hovedteknologier som styrker personvernet
+  blocks: En ny blokk lages hvert ~2. minutt. Det er ingen maksimal blokkstørrelse,
+    men i stedet en blokkbelønningsbot og en dynamisk blokkstørrelse for å sikre en
+    dynamisk skalerbarhet
+  blocks_title: Blokker
+  block_emission_tail: 'deretter en halekurve: 0,6 XMR per 2-minutters blokk trer
+    i kraft når hovedemisjonen er ferdig, og tilsvarer <1 % inflasjon som avtar over
+    tid'
+  block_emission_main: 'den første er en hovedkurve: ~18,132 millioner mynter innen
+    slutten av mai 2022'
+  block_emission_pre: 'For å sikre at det alltid vil være et insentiv til å utvinne
+    Monero og holde nettverket trygt, er emisjonene uendelige. Det finnes to hovedemisjoner:'
+  block_emission_title: Emisjonskurve
+  pow_link: Mer informasjon i GitHub-arkivet
+  pow: Monero bruker RandomX, en ASIC-resistent og CPU-vennlig POW-algoritme, som
+    er laget av Moneros samfunnsmedlemmer og utformet til å gjøre det ulønnsomt å
+    bruke maskinvare spesifikt til utvinning. Monero brukte tidligere CryptoNight
+    og variasjoner av denne algoritmen
+  pow_title: Proof of work
+  intro1: eller ta kontakt med samfunnet
+  intro_link: biblioteket
+  intro: Her er en liste over grunnleggende, teknisk informasjon om Monero. For mer
+    dyptgående detaljer, henvises du til
+  title: Teknisk info
+tags:
+  notags: Det finnes ingen innlegg for denne emneknaggen.
+blog:
+  date: Lagt ut
+  author: Lagt ut av
+  filter: 'Filtrer etter kategori:'
+  meetinglogs: Møtelogger
+  community: Samfunn
+  releases: Utgivelser
+  urgent: Hastende
+  allposts: Alle innlegg
+library:
+  revuoq3p: "Quarterly Monero magazine, Q3 2017-utgave.<br> I denne utgaven finnes\
+    \ oppdateringer om: utvikling, Moneros forskningslab, Kovri, samfunnet, maskinvare\
+    \ og Monerujo.\n"
+  revuoq4p: "Quarterly Monero magazine, Q4 2017-utgave.<br> I denne utgaven finnes\
+    \ oppdateringer om: utvikling, Moneros forskningslab, Kovri og samfunnet.\n"
+  magazines: Tidsskrifter
+  masteringmonerop: "En veiledning til den tilsynelatende komplekse verden bak Monero.<br>\
+    \ Det inkluderer: <ul><li>En bred introduksjon til blokkjeder og viktigheten av\
+    \ personvern – ideelt for brukere med lite teknisk kunnskap.</li> <li>Drøfting\
+    \ av Bitcoins mangler og spesifikke løsninger som er gitt av Monero.</li> <li>Historier\
+    \ fra brukere (som illustrerer hvordan Monero beskytter personvernet ditt), analogier,\
+    \ eksempler, lovlige/etiske diskusjoner og kodeutdrag som illustrerer viktige,\
+    \ tekniske konsepter.</li> <li>Detaljer på Moneros desentraliserte nettverk, peer-to-peer-arkitektur,\
+    \ transaksjoners livssyklus og sikkerhetsprinsipper.</li> <li>Introduksjoner til\
+    \ Moneros tekniske fundament, som er ment for utviklere, ingeniører, programvarearkitekter,\
+    \ og nysgjerrige brukere.</li> <li>Nye utviklinger som f.eks. Kovri, Bulletproofs,\
+    \ multi-signatur, maskinvare-lommebøker, osv.</li></ul> Se <a href=\"https://masteringmonero.com/\"\
+    >Mestring av Monero</a>-nettsiden for mer informasjon.\n"
+  zerotomonerov1p: "Publisert: 26. juni, 2018, med <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
+    >LaTeX-kildekode her</a>\n"
+  zerotomonerov1: 'Zero to Monero: Første utgave'
+  zerotomonerov2p: "Publisert: 4. april, 2020, med <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
+    >LaTeX-kildekode her</a><br> En omfattende, konseptuell (og teknisk) forklaring\
+    \ av Monero.<br> Vi streber etter å lære alle som kjenner til grunnleggende algebra\
+    \ og enkel informatikk konsepter som f.eks. «bit-representasjonen» av et tall\
+    \ – ikke bare hvordan Monero fungerer på et dyptgående og forståelig nivå, men\
+    \ også hvor nyttig og vakkert kryptografi kan være.\n"
+  description: Nedenfor finnes publikasjoner, bøker eller tidsskrifter som du kan
+    laste ned.
+  zerotomonerov2: 'Zero to Monero: Andre utgave'
+  books: Bøker
+research-lab:
+  brandon_para: Dette dokumentet er en formell anmeldelse av det originale cryptonote-dokumentet
+    av MRL-forsker Brandon Goodell. Han tar en grundig gjennomgang av påstandene og
+    matematikken som er lagt frem i cryptonote-dokumentet.
+  brandon: Brandon Goodells whitepaper-anmeldelse
+  annotated_para: Monero-forskningslaben utga en annotert versjon av cryptonotes whitepaper.
+    Dette er en slags uformell anmeldelse av påstandene som er kommet med i whitepaperen,
+    linje for linje. Det forklarer også noen av de vanskeligere konseptene i begreper
+    som er relativt enkelt å forstå.
+  annotated: Whitepaper med kommentarer
+  cryptonote-whitepaper_para: Dette er det originale cryptonote-papiret som ble skrevet
+    av cryptonote-teamet. Å lese det vil gi deg en forståelse om hvordan cryptonote-algoritmen
+    fungerer i sin alminnelighet.
+  cryptonote-whitepaper: Cryptonote Whitepaper
+  cryptonote: Cryptonote Whitepapers
+  iacr2020312_abstract: Konfidensielle transaksjoner brukes i distribuerte digitale
+    eiendeler for å demonstrere balansen av verdier som ligger skjult i forpliktelsene,
+    mens det beholder signerer-tvetydighet. Tidligere arbeid beskriver en signerer-tvetydig
+    «proof of knowledge» til åpningen av forpliktelser til null, og samtidig den samme
+    indeksen på tvers av flere offentlige forpliktelsessett og evalueringen av en
+    verifiserbar tilfeldig funksjon brukes som en koblingsknagg, og bruker dette for
+    å bygge en linkbar ringsignatur ved navn tryptyk som kan brukes som en byggestein
+    for en konfidensiell transaksjonsmodell. I dette arbeidet forlenger vi triptyken
+    til å bygge Arcturus – et bevissystem som beviser kjennskap til åpninger av flere
+    forpliktelser til null innen et enkelt sett, korrekt oppbygging av en verifiserbar
+    tilfeldig funksjon som er evaluert i hver åpening, og verdibalanse på tvers av
+    en separat liste av forpliktelser innen et enkelt bevis. Selv om fornuft avhenger
+    av en antakelse om en ny dual diskré-logaritmisk hardhet, bruker vi data fra Monero-blokkjeden
+    til å vise at Arcturus kan brukes i en konfidensiell transaksjonsmodell for å
+    gi raskere, total partiverifiseringstid enn andre moderne konstruksjoner uten
+    et betrodd oppsett.
+  iacr2020312: 'Arcturus: effektive bevis for konfidensielle transaksjoner'
+  iacr2020018_abstract: Ringsignaturer er en vanlig oppbygging som brukes til å gi
+    signerer-tvetydighet blant et ikke-interaktivt sett med offentlige nøkler som
+    er spesifisert ved tidspunktet på signeringen. I motsetning til tidligere tilnærminger
+    der signaturstørrelsen er lineær i størrelsen på signererens anonymitetssett,
+    trenger gjeldende optimale løsninger enten sentraliserte, pålitelige oppsett eller
+    produserer signaturer som er logaritmisk i størrelse. Noen få gir imidlertid også
+    linkbarhet, en egenskap som brukes til å fastslå hvorvidt signereren av en melding
+    har signert en tidligere melding, muligens med restriksjoner på valgene av anonymiteten.
+    Vi introduserer her Triptyk, som er en familie av linkbare ringsignaturer uten
+    et betrodd oppsett som er basert på generaliseringer av null-kunnskaps «bevis
+    av kunnskap» av forpliktelsesåpnninger av parallelle forpliktelser i uavhengige
+    anonymitetssett. Signaturer er logaritmiske i anonymitetssett-størrelsen, og samlinger
+    med bevis effektiv kan – mens verifikasjonskompleksitet er lineært – verifiseres
+    i partier. Vi viser at Triptyk tilbyr konkurransemessig ytelse med en rett-frem-oppbygging
+    i anonymitetssett-størrelser som er praktiske for bruk i distribuerte protokoller.
+  iacr2020018: 'Triptyk: linkbare ringsignaturer i logaritmestørrelse med anvendelser'
+  iacr2019654_abstract: Vi demonstrerer at en versjon av ikke-baktalelse er en naturlig
+    definisjon på uforfalskning for linkbare ringsignaturer. Vi presenterer en linkbar
+    ringsignaturoppbygging med kortfattede signaturer og flerdimensjonelle nøkler
+    som er linkbart anonyme dersom en variasjon av det bestemmende Diffie-Hellman-problemet
+    med tilfeldige orakler er vanskelig, linkbar dersom nøkkelaggregatoren er en énveisfunksjon,
+    og ikke-baktalende dersom en «one-more»-variasjon av det diskré logaritmeproblemet
+    er vanskelig. Vi kommer med bemerkelser i noen anvendelser i signerer-tvetydige
+    og konfidensielle transaksjonsmodeller uten et pålitelig oppsett.
+  iacr2019654: Konsise linkbare ringsignaturer og forfalskning mot rivaliserende nøkler
+  mrl10_abstract: Dette tekniske notatet beskriver en algoritme som er brukt til å
+    bevise kjennskap til den samme diskré logaritmen på tvers av forskjellige grupper.
+    Planen uttrykker den samme verdinormen som en skalarrepresentasjon av bits og
+    bruker et sett med ringsignaturer for å bevise at hver bit er en gyldig verdi
+    som er den samme (opptil en tilsvarende verdi) på tvers av begge skalargruppene.
+  mrl10: Diskré logaritmisk likhet på tvers av grupper
+  mrl9_abstract: Vi presenterer terskelring-multisignaturer (thring-signaturer) for
+    samarbeidende beregning av ringsignaturer, presenterer et spill av eksistensiell
+    forfalskning for thring-signaturer, og drøfter bruksområder på thring-signaturer
+    i digitale valuta som inkluderer spender-ambiguous cross-chain atomic swaps for
+    konfidensielle beløp uten et betrodd oppsett. Vi presenterer en implementering
+    av thring-signaturer som vi kaller for «linkable spontaneous threshold anonymous
+    group»-signaturer, og beviser at implementeringen i det store og hele er uforfalskbar.
+  mrl9: Thring-signaturer og dens anvendelser til Spender-Ambiguous Digital Currencies
+  mrl8_abstract: Denne oppslagstavlen beskriver en modifikasjon til Moneros linkbare
+    ringsignaturordning som tillater dobbeltnøkkel (dual-key)-utdata som ringmedlemmer.
+    Nøkkelbilder er knyttet til begge utdata som er tilknyttet éngangnøkler i en «dobbel»,
+    noe som hindrer at begge nøklene i den transaksjonen forbrukes separat. Denne
+    metoden kan anvendes på ikke-interaktive tilbakebetalingstransaksjoner. Vi drøfter
+    sikkerhetsimplikasjonene av planen.
+  mrl8: Dobbelt linkbare ringsignaturer (Dual Linkable Ring Signatures)
+  mrl7_abstract: Dette tekniske notatet generaliserer konseptet av brukte utdata ved
+    grunnleggende mengdelære. Definisjonen fanger mange forskjellige tidligere arbeid
+    på å identifisere nevnte utdata. Vi kvantifiserer effektene av denne analysen
+    på Monero-blokkjeden og gir en kort oversikt over begrensninger.
+  mrl7: Mengder av brukte utdata
+  mrl6_abstract: Brukere av Monero som ønsker å gjenbruke lommebokadresser på en måte
+    som fjerner leddet mellom dem, må opprettholde separate lommebøker som nødvendiggjør
+    skanning av innkommende transaksjoner for hver av dem. Vi dokumenterer en ny adresseordning
+    som lar en bruker opprettholde en enkel master-lommebokadresse og generere et
+    vilkårlig antall adresser som ikke kan kobles til hverandre. Hver transaksjon
+    må skannes én gang for å fastslå om den er bestemt for noen av brukerens underadresser.
+    Ordningen støtter flere utdata til andre underadresser, og den er like effektiv
+    som transaksjonene til tradisjonelle lommebøker.
+  mrl6: En effektiv implementering av Monero-underadresser
+  mrl5_abstract: Denne artikkelen introduserer en metode som går ut på å skjule transaksjonsbeløpene
+    i den sterkt desentraliserte, anonyme kryptovalutaen Monero. Monero likner på
+    Bitcoin og er en kryptovaluta som er distribuert gjennom en «proof of work»-utvinningsprosess.
+    Den opprinnelige Monero-protokollen var basert på CryptoNote som bruker ringsignaturer
+    og éngangsnøkler for å skjule destinasjonens og transaksjonenes opphav. Teknikken
+    som går ut på å ta i bruk en forpliktelsesordning for å skjule beløpet på en transaksjon,
+    har nylig blitt diskutert og implementert av Bitcoin Core-utvikler Gregory Maxwell.
+    I denne artikkelen er beskrevet en ny type med ringsignaturer, en «Multi-layered
+    Linkable Spontaneous Anonymous Group»-signatur, som tillater skjulte beløp, og
+    opphav og destinasjoner til transaksjoner med rimelig effektivitet og verifiserbar
+    generering av mynter der man ikke er avhengig av tillit. Noen utvidelser av protokollen
+    er sørget for, som f.eks. et «Aggregate Schnorr Range»-bevis og ring-multisignaturer.
+    Forfatteren ønsker å merke at tidligere utkast for dette ble publisert i Monero-samfunnet
+    og på «bitcoin research»-IRC-kanalen. Blokkjede-hashede utkast er tilgjengelig
+    i [14] der det vises at dette arbeidet ble påbegynt sommeren 2015 og fullført
+    tidlig oktober 2015. En e-printversjon er også tilgjengelig på http://eprint.iacr.org/2015/1098.
+  mrl5: Konfidensielle ringsignaturtransaksjoner
+  mrl4_abstract: Vi identifiserer flere blokkjedeanalyseangrep som er tilgjengelig
+    for å forringe usporbarheten til CryptoNote 2.0-protokollen. Vi analyserer mulige
+    løsninger, diskuterer de relative fordelene og ulempene knyttet til de løsningene,
+    og kommer med anbefaling til forbedringer til Monero-protokollen som forhåpentligvis
+    gir langvarig motstandsdyktighet av kryptovaluta mot blokkjedeanalyse. Våre anbefalte
+    forbedringer til Monero inkluderer en omspennende nettverks «minimum mix-in»-praksis
+    på n = 2 på protokollnivå i fremmede utdata per ringsignatur, en økning i protokoll
+    på denne verdien til n = 4 etter to år, og i mellomtiden en standardverdi på lommeboknivå
+    på n = 4. Vi anbefaler også en torrentaktig metode for å sende Monero-utdata.
+    Vi diskuterer også en ikke-uniform, aldersavhengig mix-in-utvalgsmetode for å
+    avverge de andre formene for blokkjedeanalyse som identifiseres i dette dokumentet,
+    men vi kommer av ulike årsaker ikke med formelle anbefalinger knyttet til implementeringen.
+    Forgreningene som følger av disse forbedringene er også diskutert i en viss detalj.
+    Denne forskningsoppslagstavlen har ikke gjennomgått fagfellevurdering, og gjenspeiler
+    kun resultatene av intern undersøking.
+  mrl4: Å forbedre tilsløringen i CryptoNote-protokollen
+  mrl3_abstract: Det har i det siste vært noen vage bekymringer om kildekoden og protokollen
+    til CryptoNote som flyter rundt på nettet, basert på det faktum at det er en mer
+    komplisert protokoll enn for eksempel Bitcoin. Formålet med dette notatet er å
+    prøve å oppklare noen misforståelser og forhåpentligvis bli kvitt litt av mystikken
+    rundt Moneros ringsignaturer. Jeg vil begynne med å sammenlikne matematikken som
+    er involvert i CryptoNote-ringsignaturene (som beskrevet i [CN]) til matematikken
+    i [FS] som CryptoNote er basert på. Etter dette vil jeg sammenlikne matematikken
+    bak ringsignaturene med hva som faktisk er i CryptoNote-kodebasen.
+  mrl3: Monero er ikke så mystisk
+  mrl2_abstract: 4. september 2014 ble et uvanlig og nytt angrep utført mot Monero-nettverket.
+    Dette angrepet oppdelte nettverket i to distinkte undergrupper som nektet å akseptere
+    legitimiteten til den andre undergruppen. Dette hadde en myriade av effekter,
+    der ikke alle enda er kjent. Angriperen hadde for eksempel en liten tidsluke hvor
+    en slags forfalskning kunne skje. Denne forskningsoppslagstavlen beskriver mangler
+    i CryptoNote-referansekoden som lot angrepet skje, beskriver løsningen som opprinnelig
+    ble lagt frem av Rafal Freeman fra Tigusoft.pl og deretter av CryptoNote-teamet,
+    beskriver den nåværende løsningen i Monero-kodebasen, og utdyper nøyaktig hva
+    den utsatte blokken gjorde til nettverket. Denne forskningsoppslagstavlen har
+    ikke gjennomgått fagfellevurdering og reflekterer kun resultatene til intern granskning.
+  mrl2: Forfalskning via Merkle Tree-utnyttelser i virtuelle valutaer som anvender
+    CryptoNote-protokollen
+  mrl1_abstract: Denne forskningsoppslagstavlen beskriver et plausibelt angrep på
+    et ringsignaturbasert anonymitetssystem. Vi bruker kryptovalutaprotokoll CryptoNote
+    2.0 som motivasjon som tilsynelatende er publisert av Nicolas van Saberhagen i
+    2012. Det har tidligere blitt demonstrert at usporbarheten som tilslører en éngangsnøkkel
+    kan avhenge av usporbarheten til all nøklene som brukes i utarbeidelsen av den
+    ringsignaturen. Dette muliggjør kjedereaksjoner i sporbarhet mellom ringsignaturer,
+    noe som forårsaker et kritisk tap i usporbarheten på tvers av hele nettverket
+    dersom parametere er valgt på en dårlig måte og hvis en angriper eier en tilstrekkelig
+    prosentdel av nettverket. Ringsignaturer er imidlertid fremdeles éngangs, og slike
+    angrep vil ikke nødvendigvis krenke brukernes anonymitet. Et slik angrep kunne
+    sannsynlig ha svekket resistansen som CryptoNote demonstrerer mot blokkjedeanalyser.
+    Denne forskningsoppslagstavlen har ikke gjennomgått fagfellevurdering og reflekterer
+    kun resultatene av intern gransking.
+  mrl1: En merknad på kjedereaksjoner i sporbarhet i CryptoNote 2.0
+  mrlhtp_summary: Monero bruker en unik hash-funksjon som omdanner skalarer til elliptiske
+    kurvepunkter. Dette er spesielt nyttig for å opprette nøkkelbilder. Dette dokumentet,
+    skrevet av Shen Noether, oversetter denne kodeimplementeringen (the ge_fromfe_frombytes_vartime()
+    function) om til matematiske uttrykk.
+  mrlhtp: Å forstå ge_fromfe_frombytes_vartime
+  summary: Sammendrag
+  read-paper: Les dokumentet
+  introduction: Introduksjon
+  abstract: Abstrakt
+  mrl_papers: Dokumenter til Monero Forskningslab (engelsk)
+  intro: Monero har ikke bare forpliktet seg til å skape en fungibel valuta, men også
+    vedvarende forskning innenfor økonomisk personvern i og med at det har med kryptovaluta
+    å gjøre. Nedenfor vil du finne arbeid som er gjort av vårt eget Monero-forskningslab,
+    og flere dokumenter er i vente.
+developer-guides:
+  daemonrpc: Daemon RPC
+  monerose: Ett av de mest komplette ressursene for både brukere og utviklere.
+  moneroecosystem: Monero-utviklernes samfunn. Inneholder bibliotek og ressurser og
+    brukerveiledninger til noen av Monero-arbeidsgruppene, som lokaliserings-arbeidsgruppen
+    og Outreach (Oppsøkings)-arbeidsgruppen.
+  moneroexamples: En omfangsrik liste med eksempler og dokumenter knyttet til Monero-utvikling.
+  monerodocs: Omfattende ressurs som har som formål å organisere den tekniske kunnskapen
+    om Monero. Noen seksjoner er muligens utdaterte.
+  external_head: Nyttige dokumenter og ressurser som vedlikeholdes av medlemmene.
+  external: Eksterne ressurser
+  walletrpc_descr: monero-wallet-rpc-samtaler. Inkluderer inndata, utdata og eksempler.
+    På engelsk.
+  walletrpc: Wallet-RPC-dokumentasjon
+  daemonrpc_descr: RPC-samtaler for daemon. Inkluderer inndata, utdata og eksempler.
+    På engelsk.
+  rpc: RPC-dokumentasjon
+  outdated: Metoder legges til / fjernes / oppdateres ofte og er ikke nødvendigvis
+    beskrevet nøyaktig.
+  head: Samling av brukerveiledninger, dokumentasjon og nyttige ressurser for utviklere
+    (på engelsk).
+  go-monero-rpc-client: En go-klient for Monero-lommeboken og daemon RPC.
+  vanity-monero: Generer en vanity-adresse for CryptoNote-valuta (Monero, osv.).
+  monero-cpp: Et C++-bibliotek for bruk av Monero.
+  monero-java: Et Java-bibliotek for bruk av Monero.
+  monerorpc: Et Java-grensesnitt for Monero-lommebok og daemon RPC.
+  moneriote-python: Python-skripter for vedlikeholding av Monero opennodes DNS-oppføringer.
+  monero-python: En omfattende Python-modul for håndtering av kryptovalutaen Monero.
+  monerowp: Monero WooCommerce-plugin for Wordpress.
+  monerophp: Et Monero-bibliotek skrevet i PHP av Monero Integrations-teamet.
+  monero-nodejs: Lommebok-administrator for samhandling med monero-wallet-rpc.
+  monero-javascript: Et Node.js-bibliotek for bruk av Monero.
+  libraries_para: Monero-bibliotek som er opprettet og vedlikeholdt av samfunnet.
+    De er ikke undersøkt av kjerneteamet, og er kun oppført her av bekvemmelighetshensyn.
+    Foreta undersøkelser selv før du bruker dem. Hvis du vil legge et bibliotek til
+    denne listen, kan du åpne en sak på
+  libraries: Bibliotek og hjelpere
+roadmap:
+  future: Fremtiden
+  upcoming: Kommende oppgave
+  ongoing: Pågående oppgave
+  completed: Fullført oppgave
+  zeromq: 0MQ/ZeroMQ
+  returnaddr: Avsenderadresser
+  released-0-16-0-0: CLI og GUI 0.16.0.0 utgitt
+  layer2: Andrelags løsninger for hastighet og skalerbarhet
+  kastelo: 'Kastelo: maskinvarelommebok med åpen kildekode'
+  tryptych: 'Triptych: linkbare ringsignaturer i logaritmisk størrelse med anvendelser'
+  clsag: Kortfattet, linkbar, spontan, anonym gruppe (CLSAG)-signaturer
+  supercop: Økning av farten på lommebokskanninger (støtte for supercop ASM)
+  onionaddress: Onion-adresse for Getmonero.org
+  dandelion: Implementering av Dandelion++-protokollen
+  released-0-15-0-5: CLI 0.15.0.5 utgitt
+  releasedgui-0-15-0-4: GUI 0.15.0.4 utgitt
+  getmoneroweblate: Getmonero er oversettbar på Weblate
+  randomx: Ny Proof of Work RandomX
+  nodediscovery: Oppdagings- og byttevalg for GUI-automatiske, eksterne noder
+  removedpid: Støtte for frittstående (lang) betalings-ID fjernet
+  ipv6: IPv6-støtte
+  rpcpay: Betal-for-tjeneste (pay for service)-system ved bruk av utvinning (RPC-Pay)
+  weblate: 'Endring av lokaliseringsplattform: fra Pootle til Weblate'
+  multisigms: Multisig-meldingssystem
+  tori2p: Tor- og I2P CLI-lommebokintegrasjon
+  nanox: Støtte for Ledger Nano X
+  trezort: Støtte for Trezor modell T
+  pruning: Blokkjede-utrensking
+  dlsag: 'DLSAG: Ikke-interaktive tilbakebetalingstransaksjoner for interoperable
+    betalingskanaler i Monero'
+  getmonero-pt_br: Getmonero.org-lokalisering på brasiliansk-portugisisk og nederlandsk
+  cryptonightr: Ny Proof of Work CryptoNightR
+  released-0-14-0-2: 0.14.0.2 Boron Butterfly utgitt
+  ccs: Nytt Community Crowdfunding System (samfunnsinnsamlingssystem) for å erstatte
+    Forum Funding System (foruminnsamlingssystemet)
+  releasedgui-0-14-0: GUI 0.14.0.0 Boron Butterfly utgitt
+  released-0-14-0: 0.14.0.0 Boron Butterfly utgitt
+  getmonero-de: Getmonero.org-lokalisering på tysk
+  mms: Implementering av Monero Messaging System (MMS) for å automatisere utveksling
+    av informasjon mellom multisig-lommebøker
+  paper10: Forskningsdokument 10 til Monero Forskningslab ble publisert
+  paper7: Forskningsdokument 7 til Monero Forskningslab ble publisert
+  releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet utgitt
+  paper8-9: Forskningsdokument 8 og 9 til Monero Forskningslab ble publisert
+  released-0-13-0-4: 0.13.0.4 Beryllium Bullet utgitt
+  ringsize11: Nettverksoppgradering for å øke minste ringstørrelse til 11, integrere
+    Bulletproofs, oppdatere algoritmen til beregning av gebyrer, og endring av PoW-algoritmen
+  bulletproofs: Implementering av Bulletproofs for å redusere transaksjonsstørrelser
+  cryptonightv3: Ny Proof of Work CryptoNightV3
+  releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet utgitt
+  released-0-13-0-2: 0.13.0.2 Beryllium Bullet utgitt
+  getmonero-ar: Getmonero.org-lokalisering på arabisk
+  moneropedialoc: Getmonero.org – Moneropedia åpen for lokalisering
+  kovrialpha: Utgivelse av Kovri alpha
+  releasedgui-0-12-3: GUI 0.12.3.0 Lithium Luna utgitt
+  released-0-12-3: 0.12.3.0 Lithium Luna utgitt
+  released-0-12-2: 0.12.2.0 Lithium Luna utgitt
+  ledger: Støtte for Ledger-maskinvarelommebøker
+  released-0-12-1: 0.12.1.0 Lithium Luna utgitt
+  getmonero-fr-pl: Getmonero.org-lokalisering på fransk og polsk
+  hfring7: Nettverksoppgradering for å øke minimum ringstørrelse til 7, integrere
+    multisig, underadresser, og endring av PoW-algoritmen
+  cryptonightv2: Ny Proof of Work CryptoNightV2
+  releasedgui-0-12-0: GUI 0.12.0.0 Lithium Luna utgitt
+  released-0-12-0: 0.12.0.0 Lithium Luna utgitt
+  multisig: Flersignaturer (multisig)
+  releasedgui-0-11-1: GUI 0.11.1.0 Helium Hydra utgitt
+  release-0-11-1: 0.11.1.0 Helium Hydra utgitt
+  paper6: Forskningsdokument 6 til Monero Forskningslab ble publisert
+  subaddress: Underadresser
+  releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra utgitt
+  minringsize5: Nettverksoppgradering for å øke minimum ringstørrelse til 5 og kreve
+    RingCT-transaksjoner
+  guioutbeta: GUI ut av beta
+  fluffyblocks: Myke blokker
+  released-0-11-0: 0.11.0.0 Helium Hydra utgitt
+  webredesign: Nettsiden ble designet på nytt
+  hfminblock: Nettverksoppgradering for å justere minimum blokkstørrelse og dynamisk
+    gebyralgoritme
+  released-0-10-3-1: 0.10.3.1 Wolfram Warptangent utgitt
+  released-0-10-2: 0.10.2 utgitt; kritisk sårbarhet ble fikset
+  enableringct: Nettverksoppgradering for å muliggjøre RingCT-transaksjoner
+  guibeta1: Offisiell GUI Beta 1 utgitt
+  released-0-10-1: 0.10.1 Wolfram Warptangent utgitt
+  splitcoinbase: Nettverksoppgradering for å splitte grunnbelønningen for utvinningen
+    om til mindre nevnere
+  released-0-10-0: 0.10.0 Wolfram Warptangent utgitt
+  ringsize-3: Nettverksoppgradering for å kreve en minimum ringstørrelse på 3 på alle
+    transaksjoner
+  paper5: Forskningsdokument 5 til Monero Forskningslab ble publisert
+  released-0-9-0: 0.9.0 Hydrogen Helix utgitt
+  paper4: Forskningsdokument 4 til Monero Forskningslab ble publisert
+  released-0-8-8-6: 0.8.8.6 utgitt
+  paper3: Forskningsdokument 3 til Monero Forskningslab ble publisert
+  paper1-2: Forskningsdokument 1 og 2 til Monero Forskningslab ble publisert
+  recovered: Kom seg på fote igjen etter et spam-angrep
+  renamed: Omdøpt fra Bitmonero til Monero
+  launched: Lansert på Bitcointalk
+  comingsoon: Kommer snart
+  dec: Desember
+  nov: November
+  oct: Oktober
+  sep: September
+  aug: August
+  jul: Juli
+  jun: Juni
+  may: Mai
+  apr: April
+  mar: Mars
+  feb: Februar
+  jan: Januar
+user-guides:
+  tor_wallet: Å koble din lokale lommebok til din egen daemon over Tor
+  multisig-messaging-system: Multisig-transaksjoner med MMS- og CLI-lommeboken
+  ledger-wallet-cli: Hvordan å generere en ledger Monero-lommebok med CLI-en (monero-wallet-cli)
+  nicehash: Hvordan å utvinne Monero XMR uten utvinningsutstyr
+  restore-from-keys: Gjenoppretting av lommebok fra nøkler
+  prove-payment: Hvordan å bevise en betaling
+  view-only: Hvordan å lage en visningslommebok
+  remote-node-gui: Hvordan å koble til en ekstern node innad i GUI-lommeboken
+  cli-wallet: Å komme i gang med CLI-lommeboken
+  qubes: CLI-lommebok-/daemon-isolering med Qubes + Whonix
+  restore-account: Hvordan å gjenopprette kontoen din
+  locked-funds: Hvordan å fikse låste midler
+  solo-mine: Hvordan solo-utvinne med GUI-en
+  mine-on-pool: Hvordan å utvinne på en pool med XMRig
+  verify-windows: Verifiser binærfiler i Windows (nybegynner)
+  verify-allos: Verifiser binærfiler med kommandolinjen på Linux, Mac eller Windows
+    (avansert)
+  purchasing-storing: Sikkert kjøp og oppbevaring av Monero
+  monero-tools: Monero-verktøy
+  import-blockchain: Importering av Monero-blokkjeden
+  vps-node: Hvordan kjøre en node på en VPS
+  offline-backup: Hvordan å lage en frakoblet sikkerhetskopi
+  wallets: Lommebøker
+  recovery: Gjenoppretting
+  mining: Utvinning
+  general: Generelt
+  guiguide: Veiledning for Monero GUI-lommeboken
+  node-i2pzero: Kjør en Monero-node via I2P eller I2P-zero
+what-is-monero:
+  grassroots_para1: Over
+  videos: Monero-videoer (engelsk)
+  electronic_para1: Det er ingen holdeperioder som går over flere dager og ingen risiko
+    for uredelige tilbakeføring. Det er trygt fra «kapitalkontroller». Disse er tiltak
+    som begrenser flyten av tradisjonelle valutaer – av og til i ekstrem grad – i
+    land som opplever økonomisk ustabilitet.
+  electronic: Monero er elektroniske penger som tillater raske, rimelige betalinger
+    til eller fra hvor som helst i verden.
+  grassroots_para5: Monero er ikke et selskap. Det er utviklet av eksperter innen
+    kryptografi og distribuerte systemer fra rundt om i verden som donerer tiden sin
+    eller som er finansiert av samfunnsdonasjoner. Dette betyr at Monero ikke kan
+    stenges av noe som helst land, og det er ikke begrenset av bestemte juridiske
+    jurisdiksjoner.
+  grassroots_para4: Moneros forskningslab, kjerneutviklingsteam og samfunnsutviklere
+    presser stadig grensene for hva som er mulig med personvern og sikkerhet i kryptovaluta.
+  grassroots_para3: har bidratt til Monero-prosjektet, inkludert 30 kjerneutviklere.
+    Fora og chattekanaler er gjestfrie og aktive.
+  grassroots_para2: 500 utviklere
+  grassroots: Monero er et grasrot-samfunn som tiltrekker de beste forsker- og ingeniørtalentene
+    innen kryptovaluta.
+  confidential_para2: Monero er fungibelt. Monero kan, i kraft av tåkelegging, ikke
+    bli «urent» gjennom deltakelse i tidligere transaksjoner. Dette betyr at Monero
+    alltid vil aksepteres uten risiko for sensur.
+  confidential_para1: Enhver Monero-transaksjon tilslører som standard sender- og
+    mottaker-adressene i tillegg til de overførte beløpene. Dette personvernet som
+    alltid er «aktivt» gjør at enhver Monero-brukers aktivitet forbedrer personvernet
+    til alle andre brukere, i motsetning til utvalgte, gjennomskuelige kryptovalutaer
+    (som f.eks. Zcash).
+  confidential: Monero-transaksjoner er konfidensielle og usporbare.
+  leading_para2: Monero bruker kryptografi for å skjerme adressene som sender og mottar,
+    samt overførte beløp.
+  leading_para1: De fleste kryptovalutaene, inkludert Bitcoin og Ethereum, har gjennomskuelige
+    blokkjeder, noe som betyr at transaksjoner kan verifiseres åpent og sporbart av
+    alle i verden. Adressene som disse transaksjonene sendes og mottas til kan dessuten
+    potensielt lenkes til den virkelige identiteten til en person.
+  leading: Monero er den ledende kryptovalutaen med fokus på private og sensurresistente
+    transaksjoner.
+  need-to-know: Hva du trenger å vite
+mining:
+  software: Utvinningsprogramvare
+  benchmarking_para2: for en liste over GPU-er/CPU-er og hashratene deres.
+  benchmarking_para1: Se her
+  benchmarking: Maskinvare-benchmark
+  pools_para2: her.
+  pools_para1: En liste over pålitelige Monero-pools kan bli funnet
+  support_para4: og
+  support_para2: Treffsteder
+  support_para1: Se
+  support: Støtte
+  intro2: Monero-prosjektet gir ikke tilslutning til en spesifikk pool, programvare
+    eller maskinvare, og innholdet under er kun gitt i informasjonsøyemed.
+  intro1: Monero er en kryptovaluta som avhenger av «proof-of-work» («bevis på arbeid»)-utvinning
+    for å oppnå distribuert konsensus. Nedenfor vil du finne informasjon og ressurser
+    på hvordan du kan begynne å utvinne.
+  pools: Pools
+  software_para: Merk at noen utvinnere kan ta utviklergebyrer.
+faq:
+  adangerrnode: 'Det tilrådes alltid, spesielt for brukere som verdsetter personvern,
+    å bruke en personlig node når det gjøres transaksjoner på nettverket for å oppnå
+    det høyeste personvernnivået. Noen foretrekker for enkelhetens skyld å bruke en
+    ekstern node som ikke er under deres kontroll (offentlige noder). Bekvemmeligheten
+    ved å ikke måtte håndtere en personlig kopi av blokkjeden kommer med en kostnad:
+    mindre personvern. En ekstern nodeoperatør er i stand til å se fra hvilken IP-adresse
+    en transaksjon kommer fra (selv om de verken kan se mottakeren eller beløpet),
+    og de kan i noen ekstreme tilfeller utføre angrep som reduserer personvernet ditt.
+    Noen farer kan avverges ved å bruke eksterne noder på Tor- eller I2P-nettverket
+    eller ved å bruke en VPN.'
+  qdangerrnode: Er det farlig å kjøre en ekstern node? Hva slags data kan en nodeoperatør
+    få fra meg?
+  adangernode: Å kjøre en personlig @node er den tryggeste måten å samhandle med Monero-nettverket
+    på fordi du er i kontroll og ikke trenger å stole på tredjeparter. Det er generelt
+    ikke farlig å kjøre en node, men vær klar over at ISP-en din kan se at du kjører
+    en Monero-node.
+  qdangernode: Er det farlig å kjøre en personlig node?
+  ascanned: Fordi nye transaksjoner har blitt registrert på blokkjeden fra sist gang
+    du åpnet lommeboken din, som må skanne alle for å sørge for at ingen av de transaksjonene
+    er dine. Denne prosessen er ikke nødvendig i en mymonero-style (openmonero)-lommebok,
+    som er en sentral server (som kan administreres av deg) som gjør denne jobben
+    for deg.
+  qscanned: Hvorfor må lommeboken min skannes hver gang jeg åpner den?
+  aavoidbc: Ja. Du trenger ikke å laste ned blokkjeden for å foreta transaksjoner
+    med nettverket. Du kan koble til en ekstern node som lagrer blokkjeden for deg.
+    Alle de vanligste lommebøkene (inkludert GUI og CLI) lar deg bruke eksterne noder
+    for å foreta transaksjoner på nettverket. Det finnes flere måter å dra fordel
+    av denne funksjonaliteten på. GUI og CLI tilbyr for eksempel en «oppstartsmodus-node»-funksjon
+    som lar folk laste ned sin egen blokkjede mens de bruker en ekstern node til å
+    bruke nettverket umiddelbart. Det forskes stadig på måter å forbedre brukervennligheten
+    til Monero på.
+  qavoidbc: Kan jeg unngå å laste ned hele blokkjeden?
+  ablockspace: Når du laster ned blokkjeden, laster du ned hele historikken av transaksjoner
+    som har skjedd i Monero-nettverket siden det ble opprettet. Transaksjonene og
+    de tilknyttede dataene er omfattende, og hele historikken må bevares av enhver
+    node for å sikre at den er lik for alle. Å utrenske en blokkjede lar deg kjøre
+    en node som kun holder 1/8 av blokkjededata som ikke er strengt nødvendig å ha.
+    Dette resulterer i en blokkjede som er 2/3 mindre enn en fullstendig en – beleilig
+    for de med begrenset diskplass. Sjekk ut Moneropedia-oppføringene «Node» og «Ekstern
+    node» for flere detaljer.
+  qblockspace: Hvorfor trenger blokkjeden så mye plass?
+  afullpruned: En fullstendig node krever en betydelig mengde lagringsplass, og det
+    kan ta lang tid å laste ned og verifisere hele blokkjeden, spesielt på eldre programvare.
+    Hvis du har begrenset med lagring, anbefales en utrensket node. Den lagrer bare
+    1/8 av uønsket blokkjededata mens den bevarer hele transaksjonshistorikken. En
+    fullstendig node anbefales dersom mye lagring er tilgjengelig, men en utrensket
+    node bidrar allikevel mye til nettverket og forbedrer personvernet ditt.
+  qfullpruned: Hvordan bestemmer jeg om jeg vil kjøre en fullstendig node eller en
+    utrensket node?
+  anodetor: Støtte for Tor er fremdeles i sin spede barndom, men det er allerede mulig
+    å sende transaksjoner gjennom nettverket lokalt og kjøre Monero daemon på Tor-nettverket.
+    Det jobbes med bedre Tor- og I2P-integrasjoner.
+  qnodetor: Hvordan kan jeg koble til noden min via Tor?
+  anofunds: Du har sannsynligvis ikke det. Det er veldig vanskelig å «miste» myntene
+    dine, siden de teknisk sett ikke befinner seg noe sted. Myntene dine «lever» på
+    blokkjeden og er sammenkoblet til kontoen din gjennom et system av offentlige
+    og private nøkler som er kryptografisk sikret. Dette er årsaken til at du ikke
+    ser midlene dine. Det skyldes sannsynligvis et teknisk problem. Ta en titt på
+    «Ressurser og hjelp»-seksjonen øverst på denne siden for en liste over nyttige
+    ressurser som hjelper deg med å identifisere og løse problemet ditt.
+  qnofunds: Jeg kan ikke se midlene mine. Mistet jeg nettopp Moneroene mine?
+  awallet: Det finnes flere tilgjengelige lommebøker for en rekke plattformer. På
+    denne nettsiden vil du finne lommebøkene som ble utgitt av kjerneteamet (GUI og
+    CLI), samt en liste over tredjeparts pålitelige lommebøker med åpen kildekode
+    for skrivebord og mobil.
+  qwallet: Hva slags lommebok bør jeg bruke?
+  a15: Nei. Monero bruker en fullstendig ikke-interaktiv, ikke-forvarende og automatisk
+    prosess for å opprette private transaksjoner. I mixingtjenester, derimot, må brukere
+    velge å delta i denne prosessen.
+  q15: Er Monero en mixer eller mixertjeneste?
+  a14: Det er ikke noe som heter 100 % anonymt. Om ikke annet er anonymiteten din
+    en funksjon av hvor mange som bruker Monero. Noen bruker ikke Monero. Monero kan
+    også ha programfeil. Og hvis ikke, finnes det muligens måter å utlede visse typer
+    informasjon gjennom Moneros personvernsjikt, enten nå eller senere. Angrep blir
+    bare bedre. Hvis du fester setebeltet, kan du fremdeles dø i en bilulykke. Bruk
+    rikelig med sunn fornuft, aktsomhet og forsvar.
+  q14: Er Monero 100 % anonymt?
+  a13: Monero er ikke magisk. Hvis du bruker Monero, men gir bort navnet og adressen
+    til en annen part, vil den andre parten ikke på magisk vis glemme navnet og adressen
+    din. Hvis du deler ut de hemmelige nøklene dine, vil andre kunne vite hva du har
+    gjort. Hvis du blir kompromittert, vil andre kunne nøkkellogge deg. Hvis du bruker
+    et svakt passord, vil andre kunne bruke «brute force» («rå makt») på nøkkelfilen
+    din. Hvis du sikkerhetskopierer frøet ditt i skyen, vil du snart bli meget fattigere.
+  q13: Er Monero som magi og beskytter personvernet mitt uansett hva jeg gjør?
+  a12-3: Så lenge de krypterte utdatabeløpene du oppretter er lik summen av inndataene
+    som brukes (som inkluderer en utdata for mottakeren og en endret utdata tilbake
+    til deg selv og det ukrypterte transaksjonsgebyret), har du en legitim transaksjon
+    og vet at ingen Monero skapes fra ingenting. Pedersen-forpliktelser betyr at summene
+    kan verifiseres til å være like, men Monero-verdien av hver av summene og Monero-verdien
+    av inn- og utdataene er umulige å fastslå hver for seg.
+  a12-2: Vi kan også vite at transaksjonsbeløp er gyldige selv om verdien på inndataene
+    du bruker og verdien på utdataene du sender er krypterte (disse er skjult for
+    alle, bortsett fra mottakeren). Beløpet er kryptert med Pedersen-forpliktelser,
+    noe som betyr at ingen observatører kan vite mengden på inn- og utdataene, men
+    de kan foreta matematiske beregninger på Pedersen-forpliktelsene for å fastslå
+    at ingen Monero har blitt opprettet fra ingenting.
+  a12-1: I Monero er hver transaksjonsutdata unikt assosiert med et nøkkelbilde som
+    kun kan genereres av besitteren av den utdataen. Nøkkelbilder som brukes mer enn
+    én gang avvises av utvinnere som dobbeltforbruk, og kan ikke legges til en gyldig
+    blokk. Når en ny transaksjon mottas, verifiserer utvinnere at nøkkelbildet ikke
+    allerede finnes for en tidligere transaksjon for å sikre at den ikke utgjør et
+    dobbeltforbruk.
+  q12: Hvis Monero er så privat, hvordan vet vi at de ikke lages ut av løse luften?
+  a11: Fungibilitet er en egenskap som penger har som gjør at det ikke er forskjell
+    mellom to mengder av samme verdi. Hvis to personer veksler en 10-er og to 5-ere
+    med hverandre, går ingen av partene i tap. Men – la oss anta at alle vet at 10-eren
+    nylig ble brukt i et løsepengevirusangrep. Er personen fremdeles interessert i
+    å gjennomføre handelen? Sannsynligvis ikke, selv om personen med 10-eren ikke
+    har noen tilknytning til løsepengevirusangrepet. Dette er et problem, siden mottakeren
+    av pengene konstant må sjekke at pengene de mottar ikke stammer fra «skitne» mynter.
+    Monero er fungibelt, som betyr at folk slipper å gå gjennom dette bryet.
+  q11: Hva er fungibilitet, og hvorfor er det så viktig?
+  a8: Nei, Monero har ikke en blokkstørrelsegrense. Blokkstørrelsen kan i stedet øke
+    eller avta over tid basert på etterspørsel. Den avkortes på en viss vekstrate
+    for å forhindre hårreisende vekst (skalerbarhet).
+  q8: Har Monero en grense hva gjelder blokkstørrelse?
+  a7: Monero er ikke basert på Bitcoin. Det er basert på CryproNote-protokollen. Bitcoin
+    er et fullstendig gjennomsiktig system der folk kan se nøyaktig hvor mye penger
+    som har blitt sendt fra én bruker til en annen. Monero skjuler denne informasjonen
+    for å beskytte brukernes personvern i alle transaksjoner. Det har også en dynamisk
+    blokkstørrelse og dynamiske gebyrer, en ASIC-resistent «proof of work» (RandomX)
+    og en haleemisjon, i tillegg til flere andre endringer.
+  acontribute1: Oversettelser. Det er enkelt, og alle som snakker et språk utenom
+    engelsk kan hjelpe. Oversettelser foregår i hovedsak på
+  q7: Hvordan skiller Monero seg fra Bitcoin?
+  a6: Med en lettvektig lommebok, gir du visningsnøkkelen din til en node som skanner
+    blokkjeden og ser etter innkommende transaksjoner til kontoen din på dine vegne.
+    Denne noden vil vite når du mottar penger, men den vil ikke vite hvor mye du har
+    mottatt, hvem du har mottatt det fra, eller hvem du sender penger til. Avhengig
+    av lommebokprogramvaren din, kan du kanskje bruke en node som du kontrollerer
+    for å unngå personvernlekkasjer. For økt personvern, kan du bruke en normal lommebok
+    som kan brukes med din egen node.
+  q6: Hva er forskjellen mellom en lettvektig og normal lommebok?
+  a5: Hvis du kjører en fullstendig node lokalt, må du kopiere hele blokkjeden til
+    PC-en din. Dette kan ta endel tid, spesielt på en eldre harddisk eller om du har
+    en treg internettforbindelse. Hvis du bruker en ekstern node, må PC-en din fremdeles
+    be om en kopi av alle utdataene, noe som kan ta flere timer. Vær tålmodig – og
+    hvis du vil ofre litt personvern for en raskere synkroniseringstid, kan du vurdere
+    å bruke en ekstern node eller lettvektig lommebok i stedet.
+  q5: Hvorfor tar det så lang tid før lommeboken min synkroniseres?
+  a4: 'Monero bruker tre forskjellige personvernteknologier: ringsignaturer, ringkonfidensielle
+    transaksjoner (RingCT) og skjulte adresser. Disse skjuler hhv. senderen, beløpet
+    og mottakeren i transaksjonen. Alle transaksjoner på nettverket er private i kraft
+    av mandat; det går ikke an å sende en gjennomsiktig transaksjon ved uhell. Denne
+    funksjonen er utelukkende forbeholdt Monero. Du trenger ikke å stole på andre
+    med personvernet ditt.'
+  q4: Hvordan skiller Moneros personvern seg fra andre mynter?
+  a3: Et mnemonisk frø er et sett med 25 ord som kan brukes til å gjenopprette kontoen
+    din fra overalt. Hold disse ordene trygge og ikke del dem med noen andre. Du kan
+    bruke dette frøet til å gjenopprette kontoen din, selv om PC-en din krasjer.
+  q3: Hvorfor er det mnemoniske frøet så viktig?
+  a2: Du kan kjøpe Monero på en børs eller fra en enkeltperson. Alternativt kan du
+    utvinne Monero og erverve mynter via blokkbelønninger.
+  q2: Hvordan kan jeg få Monero?
+  a1: Monero har verdi fordi folk er villige til å kjøpe det. Hvis ingen er villig
+    til å kjøpe Monero, vil det ikke ha verdi. Prisen på Monero øker hvis etterspørselen
+    er høyere enn tilbudet, og avtar hvis tilbudet er høyere enn etterspørselen.
+  q1: Hvordan har Monero verdi?
+  acontribute4: 'Outreach-arbeidsgruppen har skrevet en nyttig artikkel for å hjelpe
+    nykommere:'
+  acontribute3: Gjør hva du kan gjøre best. Er du designer? Opprett Monero-relaterte
+    bilder og spre dem rundt. Er du skribent? Skriv om Monero. Bare fantasien setter
+    grenser. Finn ut hva du liker å gjøre og gjør det for Monero!
+  acontribute2: 'Kontakt en arbeidsgruppe. Nesten alt i Monero håndteres av arbeidsgrupper,
+    som er grupper bestående av bidragsytere (ofte ledet av en koordinator) som jobber
+    på spesifikke aspekter ved utviklingen. Noen eksempler er: lokaliseringsarbeidsgruppen
+    (oversettelser), samfunnsarbeidsgruppen, GUI-arbeidsgruppen, Outreach-arbeidsgruppen,
+    osv. Arbeidsgrupper er i hovedsak uavhengige og har sin egen struktur. Kontakt
+    arbeidsgruppen som interesserer deg og spør hvordan du kan hjelpe. For en liste
+    over kontakter, kan du se'
+  acontribute: 'Monero er et samfunnsbasert prosjekt med åpen kildekode. Dette betyr
+    at det ikke er et selskap som drives det, og det er ingen adm. dir. som ansetter
+    folk. Alt er bygget av frivillige eller bidragsytere som er finansiert av samfunnet
+    som vier tiden sin til prosjektet. Det er mange måter å bidra på:'
+  qcontribute: Hvordan kan jeg bidra?
+  aword1: 'Dette er en omfattende liste med uttrykk som du ofte ser og en tilhørende
+    forklaring. Hvis du ikke vet hva et ord betyr eller du ønsker mer informasjon
+    om det, kan du besøke Moneropedia. Eksempler på uttrykk som ofte er søkt på er:
+    node, fungibilitet, visningsnøkkel, utrensking.'
+  aword: Terminologien som brukes i Monero kan være temmelig kompleks. Derfor har
+    vi
+  qword: Hva er betydningen bak [technical word]?
+  monerohow: Gamle og kjente ressurser med en rekke bruksanvisninger og «hvordan å
+    gjøre det»
+  monerosupport: En subreddit som er viet til å hjelpe Monero-brukere. Medlemmene
+    i samfunnet hjelper i bunn og grunn hverandre. Bruk søkefunksjonen.
+  devguides: Veiledninger og ressurser for utviklere.
+  userguides: En samling av dokumenter for å hjelpe brukere med å samhandle med Monero-nettverket
+    og dets komponenter.
+  stackexchange: En av de mest komplette ressursene om Monero. Hvis du har spørsmål
+    som ikke er besvart i de ofte stilte spørsmålene, vil du sannsynligvis finne svaret
+    på Monero StackExchange.
+  resandhelp: Ressurser og hjelp
+  additional: 'Mer informasjon:'
+  nodeandwallet: Node og lommebok
+  advanced: Avansert
+  general: Generelt
+  toc: Innholdsfortegnelse
+  intro: Liste over typiske spørsmål med tilhørende svar og ressurser
+  amoneromeaning: Monero er et esperanto-ord som betyr «mynt». Monero ble opprinnelig
+    kalt «Bitmonero», som oversettes til «Bitcoin» på esperanto. Etter at samfunnet
+    bestemte seg for å forgrene fra den opprinnelige vedlikeholderen, ble «bit» sløyfet
+    til fordel for bare «Monero».
+  qmoneromeaning: Hvorfor kalles Monero for «Monero»?
+  aantivirus1: Problemet blir diskutert og løsninger blir utarbeidet. Hvis du i mellomtiden
+    får en advarsel fra antivirusprogrammet ditt, kan du sørge for at programvaren
+    du lastet ned er legitim (se veiledningene som er lenket til under), og legg deretter
+    til et unntak for det i antivirusprogramvaren din slik at den ikke blir fjernet
+    eller blokkert. Det er bare å ta kontakt med samfunnet dersom du trenger assistanse.
+  aantivirus: Etter du har lastet ned Monero-programvaren (GUI og CLI), kan antivirusprogrammet
+    eller brannmuren din flagge Moneros kjørbare filer som skadevare. Enkelte antivirusprogrammer
+    advarer deg kun om mulig ondsinnet programvare, og andre går så langt som å fjerne
+    din nedlastede lommebok/daemon i det stille. Dette skjer sannsynligvis på grunn
+    av den integrerte utvinneren som brukes til utvinning og blokkverifisering. Enkelte
+    antivirusprogrammer kan feilaktig anse utvinneren som farlig programvare og således
+    fjerne den.
+  qantivirus: Hvorfor flagger antiviruset/brannmuren min Monero-programvaren jeg nettopp
+    lastet ned som skadevare?
+  a2exchanges: 'Tidligere trengte du bitcoin for å kjøpe Monero, men det er ikke lenger
+    tilfelle. Du kan veksle Monero direkte på børser med valutaer som USD, EUR, GBP,
+    osv. eller andre kryptovaluta. Noen krever KYC (identifikasjonsbevis) og andre
+    ikke, som desentraliserte børser. På denne nettsiden finner du en liste over børser
+    hvor man kan kjøpe og selge Monero (XMR):'
+contributing:
+  mine_para1: Utvinning sikrer at Monero-nettverket forblir desentralisert og sikkert.
+    Bakgrunnsutvinning kan aktiveres i Moneros grafiske bruker- og kommandolinjegrensesnitt.
+    Ytterligere ressurser for utvinning kan du se
+  donate: Doner
+  donate-other_para2: for alternative måter å donere på eller om du ønsker å bli sponsor
+    for Monero-prosjektet.
+  donate-other_para1: Send en e-post til
+  donate-other: Annet
+  donate-btc_para: Doneringer kan sendes til
+  donate-btc: Donering av BTC
+  or: eller
+  donate-xmr_para: Donasjoner kan sendes til
+  donate-xmr: Donering av Monero
+  donate_para2: sponsorstøtte.
+  donate_para1: Pågående utvikling støttes av donasjoner og
+  mine_para2: her.
+  mine: Utvinn
+  full-node_para: Kjør monerod med port 18080 åpen. Å kjøre enn fullstendig node sikrer
+    maksimalt personvern når transaksjoner med Monero foretas. Det forbedrer også
+    distribusjonen av blokkjeden til nye brukere.
+  full-node: Kjør en fullstendig node
+  develop_para4: saker.
+  develop_para3: og utestående
+  develop_para2: arkivene
+  develop_para1: Monero er i hovedsak skrevet i C++. I og med at det er et desentralisert
+    prosjekt, er alle velkomne til å legge til eller foreta endringer til eksisterende
+    kode. Trekkforespørsler flettes på grunnlag av konsensus fra samfunnet. Se
+  develop: Utvikl
+  network: Støtt nettverket
+  intro: Monero er et samfunnsdrevet prosjekt med åpen kildekode. Nedenfor er det
+    forklart flere måter man kan støtte prosjektet på.
+accepting:
+  merchantsthirdp1: Noen av disse tilbyr fine funksjoner som muligheten til å automatisk
+    konvertere deler av inntekten din i fiat-penger eller å ta imot andre kryptovaluta
+    sammen med Monero.
+  cliindex: "Som du kan se fra bildet over, har hver konto et indeksnummer som du\
+    \ kan bruke til å bytte fra én konto til en annen ved å bruke kommandoen «kontobytte\
+    \ [index]». Hvis du vil bytte til «Donasjoner»-kontoen for å føre tilsyn med den,\
+    \ kan du for eksempel – ved å bruke bildet over som referanse – gjøre dette ved\
+    \ å gi CLI-en din denne kommandoen: «kontobytte 1». Nå sitter du på din «Donasjoner»-konto,\
+    \ og du kan begynne å bruke den med én gang.\n"
+  merchdevguides: utviklerguider
+  merchthirdlink: forhandlersiden
+  merchantsthirdp: Hvis du er på utkikk etter et annet tredjeparts integrasjonssystem,
+    finnes en liste over betalingsporter på
+  merchantsintlink: GitHub-organisasjonen
+  merchantsint: Hvis du foretrekker å ikke håndtere lommebøkene direkte, kan du bruke
+    et tredjeparts betalingssystem. Medlemmer av Monero-samfunnet har opprettet et
+    sett med integrasjoner for ulike plattformer og språk. Du kan finne mer informasjon
+    i
+  merchantsreceive1: 'Hvis du trenger støtte, er samfunnet alltid glade for å hjelpe.
+    Slå av en prat på #monero. Chatrommet er på Freenode, men også overbrakt på Mattermost
+    og Matrix.'
+  merchantsreceive: Hvis du eier et foretak og ønsker å programmatisk motta transaksjoner
+    eller bruke avanserte funksjoner som multi-signatur, anbefales det å rådføre seg
+    med
+  merchantstitle: Bruksanvisning for forhandlere
+  clinotes: "Merk at bruksanvisningene nedenfor er et minimum som er nødvendig for\
+    \ å opprette og bruke kontoer/underadresser. CLI-en tilbyr flere kapillære måter\
+    \ å håndtere kontoer og lommeboken generelt. Bruk kommandoen «Hjelp» for å liste\
+    \ opp alle de tilgjengelige valgene.\n"
+  cliindex1: "Hver konto kan være vert for praktisk talt et uendelig antall underadresser.\
+    \ Disse fungerer nøyaktig som en normal adresse, og du kan opprette så mange du\
+    \ vil og bruke dem til å motta XMR til kontoen de er lenket til. For å opprette\
+    \ en ny underadresse for en konto, kan du bruke kommandoen:\n"
+  clicreateaccount1: Nå har du en annen konto som er separat fra din primære. Du kan
+    når som helst bytte mellom kontoer.
+  clicreateaccount: 'For å opprette en konto, kan du kjøre denne kommandoen:'
+  cliaccounts: "Du kan ha mye mer kontroll hvis du ønsker. Monero gir muligheten til\
+    \ å opprette opptil flere kontoer, der hver inneholder opptil flere underadresser,\
+    \ noe som er nyttig hvis du vil ha kontroll på flere kontoer. Du vil for eksempel\
+    \ kanskje ha en konto for å motta donasjoner og en annen for daglig bruk. Dette\
+    \ lar deg enkelt føre tilsyn med innkommende midler til «donasjoner»-kontoen din,\
+    \ uten å blande dem med hovedkontoen din.\n"
+  clicreatewallet: "Når du oppretter lommeboken din for første gang, vil en adresse\
+    \ automatisk vises. Dette er din hovedadresse. Hvis du vil, kan du ganske enkelt\
+    \ bruke den adressen til å motta betalinger. Du bør være påpasselig med hvem som\
+    \ kjenner til denne adressen (siden én adresse på ulike steder kan være tilsluttet\
+    \ hverandre), men du trenger ikke å bekymre deg om at blokkjedeobservatører iakttar\
+    \ transaksjoner til denne adressen som med Bitcoin. En venn kan sende transaksjoner\
+    \ til den samme adressen uten redusert personvern.\n"
+  cliinstructions: Bruksanvisning for CLI-en
+  guiol4: Vent til betalingen har ankommet og har fått nok bekreftelser (Jo flere
+    bekreftelser, jo tryggere er transaksjonen. Du trenger minst 10 bekreftelser før
+    du kan bruke midlene).
+  guiol3: Sett inn beløpet du vil motta og del deretter betalings-URL-en eller QR-koden
+    med betaleren. Hvis du vil spore betalingen i sanntid, kan du huke av «aktiver
+    salgssporing»-valget.
+  guiol2: Hvis du vil spesifisere beløpet du vil motta, kan du gå til «Forhandler»-siden
+    (etter at du på «Motta»-siden har valgt hvilken konto som skal brukes til å motta
+    XMR-ene).
+  guiol1: Del adressen som er sammensatt av bokstaver og tall til personen du vil
+    motta mynter fra. Du foretrekker sannsynligvis å bruke den mer brukervennlige
+    QR-koden.
+  guiol: Gå til «Motta»-siden og opprett/velg adressen som du vil motta myntene dine
+    til.
+  guisteps: 'Disse to sidene gir alle muligheten til å enkelt motta XMR ved å følge
+    disse trinnene:'
+  guimerchant1: "Dette er en salgsstedaktig side som forhandlere enkelt kan bruke\
+    \ for å angi antallet XMR de vil motta. Hvis «Salgssporer»-valget er aktivert,\
+    \ vil du se betalingene i sanntid mens de ankommer lommeboken sammen med antallet\
+    \ bekreftelser.\n"
+  guilinkguide1: veiledningen som er lenket til over
+  guimerchant: Forhandlere vil sannsynligvis synes det er mer beleilig å bruke «Forhandler»-siden
+    (se skjermbildet under), som er forklart i detalj i «Forhandlerinnblikk»-seksjonen
+    til
+  guiinstructions: "For å motta XMR, trenger du kun å oppgi en adresse til betaleren\
+    \ om hvor de skal sende midlene til. Som oftest er det lettest å bare dele en\
+    \ QR-kode og la betaleren skanne den, i stedet for å kopiere en alfanumerisk streng.\
+    \ Med GUI-en kommer hver genererte adresse med sin egen QR-kode. Få personen til\
+    \ å skanne QR-koden med Monero-lommeboken på sin telefon og motta XMR-ene dine\
+    \ på noen minutter. Husk at du kan generere så mange adresser (underadresser)\
+    \ du vil. Dette er nyttig dersom du av en eller annen grunn vil holde midler separat.\n"
+  guilinkguide: i guiden i GUI-en.
+  gui2: Motta-siden (vist nedenfor) er forklart i detalj
+  gui1: 'Å ta imot en betaling med GUI-en er veldig enkelt. Det har ikke noe å si
+    om du er forhandler eller bruker – du vil få to sider tilgjengelig: Motta og Forhandlere.'
+  title_gui: Bruksanvisning for GUI-en
+  index: Indeks
+press-kit:
+  promographicsp: Ulike grafikker og skilt, laget av TheMonera, for både forhandlere
+    og entusiaster.
+  promographics: Monero-reklamerende grafikker – Skilt og klistremerker for nettsider
+  guerrillakitp: Et dokument laget av Monero Outreach-arbeidsgruppen som inneholder
+    materialer og tips for en effektiv geriljamarkedsføringskampanje.
+  guerrillakit: Guerrilla-verktøysett
+  dontbuystickerp: Spre Monero overalt ved hjelp av dette klistremerket. Tilgjengelig
+    i flere språk og formater (vektorer er inkludert).
+  dontbuysticker: «Ikke kjøp Monero»-klistremerket
+  marketing: Markedsføringsmateriale
+  quickfactsp: "Et dokument som er raskt og enkelt å lese der du får vite alt om Monero:\
+    \ historie, nøkkelfaktorer som skiller dem ut, tekniske fundamenter og funksjoner\
+    \ som er under utvikling.<br> Se <a target=\"_blank\" href=\"https://www.monerooutreach.org\"\
+    >Monero Outreach</a>-nettsiden for mer informasjon.\n"
+  quickfacts: Hurtigfaktadokument
+  pressdoc: Pressedokumentasjon
+  logo_file: Logo som .ai-fil
+  symbol_file: Symbol som .ai-fil
+  large: Stor
+  medium: Middels
+  small: Liten
+  logo: Monero-logo
+  symbol: Monero-symbol
+  whiteback: Hvit bakgrunn
+  noback: Ingen bakgrunn
+  intro4: her.
+  intro3: Avslutningsvis kan du laste ned alt på denne siden i én zip-fil ved å trykke
+  intro2: Merk at de hvite bakgrunnsvalgene KUN har en hvit bakgrunn under Monero-symbolet,
+    ikke som bakgrunn i hele bildet.
+  intro1: Her vil du finne Monero-symbolet og -logoen nedenfor. Du kan velge den størrelsen
+    du ønsker eller laste ned .ai-filen for å leke med logoen på egenhånd.
+  mrllogo_para: Monero Forskningslabs logo i SVG-format.
+  othersymbols: Andre symboler og logoer
+downloads:
+  blockchainbutton: Last ned blokkjede
+  installer: Installerer
+  mobilelight3: -side for å se hvor vi holder til.
+  mobilelight2: Treffsteder
+  mobilelight1: Følgende er mobil- eller light-lommebøker som anses som trygge av
+    respekterende medlemmer av samfunnet. Hvis det finnes en lommebok som ikke står
+    oppført her, kan du be samfunnet om å ta en titt på den. Gå til
+  hardware5: Trezor modell T har hatt støtte for Monero siden versjon 0.14.1.
+  hardware4: integrert Monero i maskinvarelommebøkene sine.
+  hardware3: som for øyeblikket pågår. Også fordi CLI 0.12.1- og GUI 0.12.3-ledgeren
+    har
+  hardware2: dedikert maskinvarelommebok (Kastelo)
+  hardware1: Monero-samfunnet har finansiert en
+  showhash4: 'To veiledninger er tilgjengelige for å veilede deg gjennom verifiseringsprosessen:'
+  showhash3: i kildekoden
+  showhash2: og bør behandles som kanonisk, der signaturen kontrolleres opp mot den
+    egnede GPG-nøkkelen
+  showhash1: Disse SHA256-hashene er listet opp for enkelhetens skyld, men en GPG-signert
+    liste av hashene finnes på
+  showhash: Vis hasher for å verifisere nedlastingen din
+  verify2: Verifiser alltid nedlastingene dine!
+  verify1: Du tilrådes på det sterkeste å verifisere hashene til arkivene du laster
+    ned. Dette vil bekrefte at filene du laster ned samsvarer perfekt med filene som
+    lastes opp av arbeidsgruppen til Moneros utviklere. Ikke undervurder dette trinnet,
+    da et korrupt arkiv kan medføre at midlene dine går tapt.
+  verify: Verifiser
+  payforrpc1: En ny funksjon som lar de som betjener noder bli belønnet når noden
+    deres brukes
+  payforrpc: Pay-for-RPC
+  rpc1: inkludert i arkivet
+  rpc: RPC-lommebok og Daemon
+  bootstrapnode1: Bruk en ekstern node mens du laster ned blokkjeden lokalt. Dette
+    lar deg umiddelbart bruke Monero og bytte til din lokale node når den er ferdig
+    synkronisert
+  bootstrapnode: Oppstartsmodus-node
+  transacttor1: For et ekstra lag med personvern
+  transacttor: Transaksjoner over Tor/I2P
+  localremote1: Bruk din egen kopi av blokkjeden eller en som er offentlig tilgjengelig
+  localremote: Lokal eller ekstern node
+  cli_helpsupport: 'Hvis du opplever problemer eller trenger med informasjon, er du
+    velkommen til å nå ut til samfunnet. Du kan finne CLI-teamet på #monero eller
+    #monero-dev, eller ta en titt på Treffsteder-siden for en mer komplett liste over
+    kontakter og samtalerom'
+  gui_helpsupport: 'Hvis du opplever problemer eller trenger mer informasjon, er du
+    velkommen til å nå ut til samfunnet. Du kan finne GUI-teamet på #monero-gui eller
+    ta en titt på Treffsteder-siden for en mer komplett liste over kontakter og samtalerom'
+  helpsupport2: Se siste utgivelse
+  helpsupport1: 'En veiledning med en forklaring på hver seksjon til lommeboken er
+    tilgjengelig:'
+  helpsupport: Hjelp og støtte
+  yesissuescli: "På grunn av kompatibilitetsproblemer med glibc, vil ikke denne versjonen\
+    \ kjøre på Ubuntu 16.04 (glibc < 2.25)\n"
+  yesissuesgui: Utgivelse 0.15.0.4 (Linux) ble ved et uhell kompilert uten Trezor-støtte.
+    Monero-brukere på Linux som bruker Trezor tilrådes derfor å vente på neste utgivelse
+    (0.15.0.5) eller å kompilere GUI-en på egenhånd
+  noissues: Denne utgivelsen har ingen kjente, kritiske problemer
+  showissues: Vis kjente problemer for denne utgivelsen
+  sourcecode: Kildekode
+  currentversion: Gjeldende versjon
+  cli_intro: CLI-lommeboken gir deg total kontroll på Monero-noden og midlene dine.
+    Den er veldig egendefinerbar og inkluderer ulike analyseverktøy, i tillegg til
+    et HTTP-RPC- og 0MQ-grensesnitt.
+  langs: <b>30+ språk</b> tilgjengelig
+  pruning1: Ikke nok diskplass? Bare bruk utrensking for å kun laste ned en tredel
+    av blokkjeden
+  pruning: Blokkjedeutrensking
+  fiatconv1: Ikke lenger behov for å sjekke verdien på XMR-ene dine på nett
+  fiatconv: «in-app»-fiatveksling
+  hwcompatible1: som for eksempel Trezor og Ledger
+  hwcompatible: Kompatibel med maskinvarelommebøker
+  merchantpage1: Motta XMR for bedriften din – enkelt
+  merchantpage: Forhandlerside
+  advancedmode1: Med alle de avanserte funksjonene du skulle trenge. Ideell for rutinerte
+    Monero-brukere som foretrekker å ha full kontroll over lommeboken og noden sin
+  advancedmode: Avansert modus
+  simplemode1: Laget for mindre tekniske brukere som bare vil bruke Monero på den
+    enkleste og raskeste måten som mulig. Åpne lommeboken, koble automatisk til en
+    ekstern node, send/motta XMR – ferdig!
+  simplemode: Enkel modus
+  gui_intro: GUI-lommeboken gir et fint brukergrensesnitt som er tilpasset alle slags
+    brukere, men det anbefales spesielt til personer med lite teknisk kunnskap som
+    raskt vil sende og motta XMR.
+  hardware: Maskinvarelommebøker
+  mobilelight: Mobil- og light-lommebøker
+  blockchain4: for en trinn-for-trinn-bruksanvisning for Windows.
+  blockchain3: Importering av Monero-blokkjeden
+  blockchain2: Hvis du vil fortsette uansett, kan du ta en titt på brukerveiledningen
+  blockchain1: Hvis du foretrekker å bruke en rå blokkjede i stedet for å synkronisere
+    fra bunn, kan du bruke det siste oppstartsprogrammet. Det er ofte mye raskere
+    å synkronisere fra bunn, og det krever også mye mindre RAM.
+  blockchain: Importer blokkjede
+  cli: CLI-lommebok
+  gui: GUI-lommebok
+  choose: Velg en nedlasting
+  intro: På denne siden kan du finne og laste ned den siste tilgjengelige versjonen
+    av Monero-programvaren, i tillegg til maskinvare og mobil- og light-lommebøker.
+  packages_link: Se listen på GitHub
+  packages: Det finnes også tilgjengelige pakker for flere Linux-distribusjoner.
+  moreinfofaq: Mer informasjon i OSS
+  avwarning: Vær oppmerksom på at noen antivirus og brannmurer kan flagge de kjørbare
+    filene og arkivene til Monero som skadevare.
+team:
+  developers_para2: OpenHub bidragsside.
+  thanks: En spesiell takk
+  mrl: Forskningslab
+  community: Samfunn
+  developers_para3: Nedenfor vil du finne noen mennesker som har gjort langt mer enn
+    det som kreves for Monero.
+  developers_para1: Monero-prosjektet har hatt godt over 500 bidragsytere i løpet
+    av prosjektets levetid. For en fullstendig liste, kan du se
+  developers: Utviklere
+  core: Kjerne
+hangouts:
+  irc_para: Monero-samfunnet benytter mange IRC-kanaler, der hver tjener ulike hensikter.
+    Noen til arbeid og noen til å bare sosialisere. Du vil finne de mest populære
+    nedenfor.
+  irc_channels:
+    monero-site: Hvor utviklingen av denne nettsiden samordnes
+    monero-hardware: Bygging av maskinvarelommebøker for å holde Moneroene dine trygge.
+    monero-translations: Lokalisering av Monero til andre språk.
+    monero-research-lab: Undersøk økonomisk personvern med kryptovaluta nærmere.
+    monero-pools: Dette er stedet for spørsmål og diskusjon knyttet til utvinning.
+    monero-otc: Monero over disken. Kom hit for å kjøpe XMR fra din med-Moneron.
+    monero-offtopic: Prat med andre Monero-brukere om ting som ikke har med Monero
+      å gjøre.
+    monero-markets: Vi bruker denne kanalen til å snakke om prisen på Monero og andre
+      mynter.
+    monero-dev: Mange bidragsytere og utviklere kommer hit for å diskutere utviklerrelaterte
+      ting.
+    monero-community: Denne kanalen er for Monero-samfunnet for å samle og diskutere
+      ideer.
+    monero: Denne kanalen brukes til å diskutere alt som har med Monero å gjøre.
+  subscribe: Abonner
+  mailing_list1: Ønsker du å motta viktige kunngjøringer direkte til e-postadressen
+    din? Meld deg i så fall på e-postlisten vår!
+  mailing_list: E-postliste
+  irc: IRC-kanaler
+  resources_para: I et forsøk på å støtte organiske arbeidsgrupper, har Monero flere
+    ressurser som samfunnet kan bruke for å møtes og planlegge prosjekter. Mattermost
+    har til og med mellomstasjoner til de mest populære Monero-relaterte IRC-kanalene.
+  resources: Arbeidsgrupperessurser
+  intro: Monero-samfunnet er allsidig og variert. Vi kommer fra alle kanter, men vi
+    har noen steder som vi liker å treffes. Du finner de fleste av dem under. Bli
+    med!
+  bridges: Disse kanalene er forbundet med en rekke andre plattformer, noe som lar
+    samfunnet kommunisere via deres favorittchattjeneste/-protokoll.
+about:
+  decentralization_para: Monero har viet seg til å gi den aller største graden av
+    desentralisering. Med Monero trenger du ikke å stole på noen andre i nettverket,
+    og det drives ikke av en stor gruppe. En tilgjengelig «Proof of work»-algoritme
+    gjør det enkelt å utvinne Monero på vanlige PC-er, noe som gjør det vanskelig
+    for noen å kjøpe store mengder utvinningskraft. Noder kobles til hverandre med
+    I2P for å redusere risikoen for å avdekke sensitiv transaksjonsinformasjon og
+    sensur (skal kunngjøres senere). Beslutninger knyttet til utvikling er svært tydelig
+    og åpent for offentlig diskusjon. Møtelogger for utviklere publiseres på nett
+    i sin helhet og er synlige for alle.
+  decentralization: Desentralisering
+  privacy_para: Monero tar personvern seriøst. Monero må kunne beskytte brukere i
+    en rettssak, og i ekstreme tilfeller fra dødsstraff. Dette nivået av personvern
+    må bli fullstendig tilgjengelig til alle brukere, enten de er teknologisk kompetente
+    eller ikke aner hvordan Monero fungerer. En bruker må kunne ha tiltro til Monero
+    slik at denne personen ikke føler seg presset til å endre forbruksvanene i frykt
+    for at andre finner ut av dem.
+  privacy: Personvern
+  security_para: Brukere må kunne stole på Monero med transaksjonene sine uten å påløpe
+    risiko for feil eller angrep. Monero gir fulle blokkbelønninger til utvinnerne
+    – som er de mest kritiske medlemmene av nettverket i og med at de tilfører denne
+    sikkerheten. Transaksjoner er kryptografisk sikre ved å bruke de siste og mest
+    motstandsdyktige krypteringsverktøyene som er tilgjengelige.
+  security: Sikkerhet
+  values_para: Monero er mer enn bare en teknologi. Det er også hva teknologien står
+    for. Noen av de viktige grunnfilosofiene er listet opp under.
+  values: Våre verdier
+  history_para4: Monero har kommet med flere store forbedringer siden oppstarten.
+    Blokkjeden ble migrert til en annen databasestruktur for å legge til rette for
+    økt effektivitet og fleksibilitet, minstestørrelser på ringsignaturer ble satt
+    opp slik at alle transaksjonene ble private i kraft av mandat, og RingCT ble implementert
+    for å skjule transaksjonsbeløpet. Nesten alle forbedringene har gitt forbedringer
+    til sikkerhet eller personvern, eller så har de lagt til rette for bruk. Monero
+    fortsetter å utvikle mål knyttet til primært personvern og sikkerhet, og sekundært
+    brukervennlighet og effektivitet.
+  history_para3: Grunnleggeren, thankful_for_today, foreslo noen kontroversielle endringer
+    som samfunnet var uenig i. En konflikt oppstod, og Monero-kjerneteamet forgrenet
+    prosjektet med samfunnet etter at dette nye kjerneteamet ble opprettet. Dette
+    kjerneteamet har ført tilsyn etter dette.
+  history_para2: her.
+  history_para1: Monero ble lansert i april 2014. Det var en rettferdig lansering
+    av CryptoNote-referansekoden som ble kunngjort på forhånd. Det var ingen tilfeller
+    av forhåndsutvinning eller insta-utvinning, og ingen porsjon av blokkbelønningen
+    går til utvikling. Se den opprinnelige Bitcointalk-tråden
+  history: En kort historie
+sponsorships:
+  intro: De følgende selskapene har støttet Monero-prosjektet i dets mål om å bringe
+    økonomisk personvern til verden. Vi kunne ikke ha vært mer takknemlige for bidragene
+    deres. Hvis du ønsker å sponse Monero-prosjektet og bli oppført på denne siden,
+    kan du sende en e-post til dev@getmonero.org.
+merchants:
+  onion: Onion-adresse (trenger Tor)
+  disclaimer: "«Vennligst merk: disse lenkene gjøres tilgjengelig som en bekvemmelighet\
+    \ og kun i informasjonsøyemed; de utgjør ikke en tilslutning av Monero-samfunnet\
+    \ for produkter, tjenester eller meninger av selskaper eller organisasjoner eller\
+    \ individer som er oppført. Monero-samfunnet står ikke ansvarlig for nøyaktigheten,\
+    \ lovligheten eller innholdet av disse eksterne nettsidene. Ta kontakt med de\
+    \ eksterne sidene for svar til spørsmål knyttet til dets innhold. Og som alltid:\
+    \ caveat emptor (kjøper, vær på vakt). Du står ansvarlig for å gjøre din egen\
+    \ gransking. Bruk alltid dømmekraften din når du foretar deg kjøp på nett.»\n"
+  intro3: (velg «Forhandler»-malen og fyll inn seksjonene).
+  intro2: åpne en GitHub-sak og gi oss beskjed
+  intro1: Forhandlere av alle slag har funnet verdien i det økonomiske personvernet
+    som Monero gir dem. Nedenfor er en liste over forhandlere som vi vet om som for
+    tiden aksepterer Monero for sine varer og tjenester. Disse forhandlerne har ikke
+    tilslutning fra samfunnet, så ta en titt på ansvarsfraskrivelsen nederst på denne
+    siden. Hvis et selskap ikke lenger aksepterer Monero eller du vil at forretningen
+    din blir oppført, ber vi deg
+home:
+  moneropedia_button: Les Moneropedia
+  moneropedia_para: Ønsker du å søke opp betydningene av vilkårene og konseptene som
+    brukes i Monero? Her finner du en alfabetisk guide til vilkår og deres betydninger
+    fra både Monero- og Kovri-prosjektene.
+  faq_para: Vi har fått mange spørsmål i løpet av årene og har for enkelhetens skyld
+    samlet en gjennomgående og variert OSS (Ofte stilte spørsmål). Fortvil ikke om
+    spørsmålene dine ikke er der – du kan alltid spørre Monero-samfunnet.
+  faq: Ofte stilte spørsmål
+  downloads: Nedlastinger
+  get_started: Kom i gang
+  monero_is_cash: Monero er kontanter for en sammenkoblet verden. Det er raskt, privat
+    og sikkert. Med Monero er du din egen bank. Du kan forbruke på en trygg måte i
+    visshet om at andre ikke kan se saldoene dine eller spore aktiviteten din.
+  heading2: En privat, digital valuta
+  contributing: Å bidra
+  visitmrl: Besøk Monero Forskningslaben
+  researchlab_para: Monero Forskningslab (Monero Research Lab) er en svært viktig
+    del av Monero. Forskere og kryptografer fra over hele verden møtes for å finne
+    nye måter å forbedre Monero på. Les de vitenskapelige dokumentene deres og bli
+    med dem!
+  contributecommunity_para: Monero er ikke bare en valuta, det er et desentralisert
+    samfunn og finnes kun takket være de flere hundre bidragsyterne som vier tiden
+    sin til prosjektet. Bli med!
+  contributecommunity: 'Vi trenger ferdighetene dine: Bidra!'
+  joincommunity: Bli med i samfunnet
+  guides_para: "Monero-samfunnet har satt sammen en bred samling av ressurser og dokumentasjon.\
+    \ Brukere kan finne nyttig informasjon og veiledninger om vanlige konfigurasjoner\
+    \ og tips i Brukerveiledninger-seksjonen. Utviklere kan finne alt de trenger for\
+    \ å bygge en tjeneste som er basert på Monero eller rett og slett å kommunisere\
+    \ med nettverket i Utviklerveiledningen. Biblioteket tilbyr publikasjoner og bøker\
+    \ som kan lastes ned gratis, inkludert alle «Mastering Monero»- og «Zero to Monero»-bøkene.\n"
+  guides: Veiledninger og ressurser
+  answers: Finn svar på spørsmålene dine
+  merchants: Forhandlere
+  useit_para: Monero er en valuta og kan veksles for varer og tjenester på en privat
+    måte og med veldig lave gebyrer. Mange entiteter tar med glede imot XMR for betalinger.
+    Ta en titt på vår liste over forhandlere som tar imot Monero.
+  useit: Det er en valuta – bruk den!
+  exchanges: Børser
+  getcoins_para: Etter du installerer en lommebok, trenger du noen Monero. Det er
+    flere måter å oppdrive mynter på, som for eksempel utvinning eller å jobbe i bytte
+    mot Monero, men den enkleste måten er å bruke en børs og veksle pengene dine til
+    XMR. Mange børser – sentraliserte og desentralisete – noterer Monero (XMR).
+  getcoins: Få tak i noen mynter
+  choosewallet_para: Det første du må gjøre for å bruke Monero er å opprette en lommebok.
+    Besøk nedlastingssiden vår og få lommeboken som er riktig for deg. Monero-lommebøkene
+    er tilgjengelige for en rekke plattformer og inneholder alt du trenger for å bruke
+    Monero med én gang.
+  choosewallet: Velg en lommebok
+  whatis: Lær mer om Monero
+index:
+  page_title: Monero – sikker, privat og usporbar
+titles:
+  library: Bibliotek
+  blogbytag: Blogg
+  legal: Juridisk
+  presskit: Pressepakke
+  themoneroproject: Monero-prosjektet
+  technicalspecs: Tekniske spesifikasjoner
+  developerguides: Utviklerguider
+  userguides: Brukerveiledninger
+  moneropedia: Moneropedia
+  researchlab: Monero Forskningslab
+  roadmap: Veikart
+  about: Om Monero
+  merchants: Forhandlere og tjenester
+  sponsorships: Sponsing
+  events: Hendelser
+  hangouts: Treffsteder
+  team: Monero-teamet
+  allposts: Alle blogginnlegg
+  downloads: Nedlastinger
+  faq: Ofte stilte spørsmål
+  mining: Utvinning av Monero
+  contributing: Forbedring av Monero
+  accepting: Å ta imot Monero
+  using: Å bruke Monero
+  whatismonero: Hva er Monero (XMR)?
+  index: Hjem

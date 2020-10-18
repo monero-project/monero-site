@@ -3,6 +3,7 @@ terms: ["blockchain", "blockchains", "łańcuch-bloków", "łańcuchu-bloków", 
 summary: "Przekazywany rejestr wszystkich transakcji minionych i obecnych, który nie ujawnia nadawcy i odbiorcy płatności."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Łańcuch bloków jest powszechną bazą danych, która ciągle się powiększa, zapisując wszyskie transakcje dokonane w danej kryptowalucie. Ta baza danych często porównywana jest do księgi przychodów i rozchodów ze względu na obszerną listę dokonanych płatności. W przypadku Monero, transakcje te pakowane są średnio co dwie minuty w bloki, których kopie posiadają wszyscy górnicy i węzły w sieci.

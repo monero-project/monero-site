@@ -3,6 +3,7 @@ layout: user-guide
 title: "Wallet RPC documentation"
 ---
 
+{% t global.lang_tag %}
 # Wallet RPC
 
 ## Introduction
@@ -108,6 +109,7 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [stop_mining](#stop_mining)
 * [get_languages](#get_languages)
 * [create_wallet](#create_wallet)
+* [generate_from_keys](#generate_from_keys)
 * [open_wallet](#open_wallet)
 * [restore_deterministic_wallet](#restore_deterministic_wallet)
 * [close_wallet](#close_wallet)
@@ -363,14 +365,14 @@ Inputs:
 
 * *address* - string; The address to validate.
 * *any_net_type* - boolean (Optional); If true, consider addresses belonging to any of the three Monero networks (mainnet, stagenet, and testnet) valid. Otherwise, only consider an address valid if it belongs to the network on which the rpc-wallet's current daemon is running (Defaults to false).
-* *allow_openalias* - boolean (Optional); If true, consider [OpenAlias-formatted addresses](https://web.getmonero.org/resources/moneropedia/openalias.html) valid (Defaults to false).
+* *allow_openalias* - boolean (Optional); If true, consider [OpenAlias-formatted addresses]({{ site.baseurl }}/resources/moneropedia/openalias.html) valid (Defaults to false).
 
 Outputs:
 * *valid* - boolean; True if the input address is a valid Monero address.
-* *integrated* - boolean; True if the given address is an [integrated address](https://web.getmonero.org/resources/moneropedia/address.html).
+* *integrated* - boolean; True if the given address is an [integrated address]({{ site.baseurl }}/resources/moneropedia/address.html).
 * *subaddress* - boolean; True if the given address is a [subaddress](https://github.com/monero-project/monero/pull/2056)
 * *nettype* - string; Specifies which of the three Monero networks (mainnet, stagenet, and testnet) the address belongs to.
-* *openalias_address* - boolean; True if the address is [OpenAlias-formatted](https://web.getmonero.org/resources/moneropedia/openalias.html).
+* *openalias_address* - boolean; True if the address is [OpenAlias-formatted]({{ site.baseurl }}/resources/moneropedia/openalias.html).
 
 Example:
 
@@ -1750,6 +1752,8 @@ Inputs:
 Outputs:
 
 * *good* - boolean; States if the inputs proves the reserve.
+* *spent* - unsigned int; Amount (in @atomic-units) of the total that has been spent.
+* *total* - unsigned int; Total amount (in @atomic-units) of the reserve that was proven.
 
 In the example below, the reserve has been proven:
 
@@ -2559,6 +2563,37 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"c
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
+  }
+}
+```
+
+
+### **generate_from_keys**
+
+Restores a wallet from a given wallet address, view key, and optional spend key.
+
+Inputs:
+* *restore_height* - integer; (Optional; defaults to 0) The block height to restore the wallet from.
+* *filename* - string; The wallet's file name on the RPC server. 
+* *address* - string; The wallet's primary address.
+* *spendkey* - string; (Optional; omit to create a view-only wallet) The wallet's private spend key. 
+* *viewkey* - string; The wallet's private view key.
+* *password* - string; The wallet's password.
+* *autosave_current* - boolean; (Defaults to true) If true, save the current wallet before generating the new wallet. 
+
+Outputs:
+* *address* - string; The wallet's address.
+* *info* - string; Verification message indicating that the wallet was generated successfully and whether or not it is a view-only wallet.
+
+Example:
+
+```
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"generate_from_keys", "params"={"restore_height":0,"filename":"wallet_name","address":"42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM","spendkey":"11d3fd247672c4cb29b6e38791dcf07629cd2d68d868f0b78811ce584a6b0d01","viewkey":"97cf64f2cd6c930242e9bed5f14f8f16a33047229aca3eababf4af7e8d113209","password":"pass","autosave_current":true}},' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  result": {"address":"42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM",
+    "info":"Wallet has been generated successfully."   
   }
 }
 ```

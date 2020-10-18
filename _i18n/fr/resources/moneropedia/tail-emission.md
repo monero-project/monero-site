@@ -3,6 +3,7 @@ terms: ["Tail-Emission", "émission-résiduelle"]
 summary: "la récompense de bloc à l'issue de la courbe d'émission"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 La récompense de bloc de Monero ne tombera jamais à zéro. La récompense de bloc va diminuer graduellement jusqu'à ce que l'émission résiduelle commence à la fin May 2022. A ce moment-là, la récompense sera fixée à 0,6 XMR par bloc.

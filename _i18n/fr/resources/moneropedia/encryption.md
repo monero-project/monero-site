@@ -4,6 +4,7 @@ terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "dec
 summary: "Le processus d'encodage de messages ou d'informations de sorte que seule les parties autorisés puissent les décoder et les lire."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 ### Les Bases
 
 Extrait de [Chiffrement](https://fr.wikipedia.org/wiki/Chiffrement) :

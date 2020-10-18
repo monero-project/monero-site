@@ -39,6 +39,8 @@
       url: https://www.coinswitch.co
     - name: CRYPTODIGGERS.EU
       url: https://cryptodiggers.eu/
+    - name: DV Chain (OTC) - Cryptocurrency OTC desk that offers buying and selling of Monero
+      url: https://dvchain.co
     - name: EnterChange
       url: https://enter-change.com
     - name: ExchangeD.I2P - Darknet exchange (I2P)
@@ -55,6 +57,8 @@
       url: https://godex.io
     - name: HollaEx
       url: https://www.hollaex.com/
+    - name: Incognito - Completely anonymous decentralized exchange
+      url: https://incognito.org/
     - name: Indacoin - Instant exchange
       url: https://indacoin.com/
     - name: InstaEx - Instant exchange
@@ -75,6 +79,8 @@
       url: https://magneticexchange.com
     - name: MorphToken
       url: https://www.morphtoken.com/
+    - name: Newton - Canadian cryptocurrency exchange
+      url: https://newton.co
     - name: Poloniex
       url: https://poloniex.com/exchange/btc_xmr
     - name: REXI.cc
@@ -99,13 +105,15 @@
       url: https://trovemat.com/
     - name: Swaplab
       url: https://swaplab.cc/
+    - name: xChange.me - Fully anonymous cryptocurrency exchanger
+      url: https://xchange.me
 - category: Block Explorers
   id: block-explorers
   merchants:
     - name: MoneroBlocks
       url: https://moneroblocks.info
-    - name: MoneroExplorer
-      url: https://moneroexplorer.com/
+    - name: Explore Monero
+      url: https://www.exploremonero.com/
     - name: MoneroVision
       url: https://monerovision.com
     - name: xmrchain.net
@@ -121,6 +129,8 @@
       url: https://www.coinpayments.net/
     - name: CryptAPI
       url: https://cryptapi.io/
+    - name: CryptoWoo Monero Plugin - Gateway for WooCommerce users
+      url: https://www.cryptowoo.com/
     - name: GloBee
       url: https://globee.com/
     - name: Living Room of Satoshi
@@ -135,52 +145,8 @@
       url: https://swirlpay.io/
     - name: Vigla
       url: https://vigla.biz/
-- category: Libraries and Helpers
-  id: libraries
-  merchants:
-    - name: Monero Integrations (eCommerce plugins)
-      url: http://monerointegrations.com/
-    - name: monero-nodejs (Node.js)
-      url: https://github.com/PsychicCat/monero-nodejs
-    - name: MoneroApi.Net (.NET)
-      url: https://github.com/Jojatekok/MoneroApi.Net
-    - name: moneronjs (NodeJS)
-      url: https://github.com/netmonk/moneronjs
-    - name: Monero Payments Library (PHP)
-      url: https://github.com/monero-integrations/monerophp
-    - name: Monero-PHP (PHP)
-      url: https://github.com/PsychicCat/monero-php
-    - name: MoneroPy (Python)
-      url: https://github.com/bigreddmachine/MoneroPy
-    - name: monero-python (Python)
-      url: https://github.com/monero-ecosystem/monero-python
-    - name: PHP-Monero (PHP)
-      url: https://github.com/MalMen/PHP-Monero
-    - name: python-monero (Python)
-      url: https://github.com/tippero/python-monero
-    - name: xmr-integration (PHP)
-      url: https://github.com/TheKoziTwo/xmr-integration
-    - name: Monero Utilities (golang)
-      url: https://github.com/paxos-bankchain/moneroutil
-    - name: monerorpc (Java)
-      url: https://github.com/00-matt/monerorpc
-- category: Tools
-  id: tools
-  merchants:
-    - name: Cryptoradar (Marketplace comparison website)
-      url: https://cryptoradar.co/buy-monero
-    - name: MoneroBase Price Charts and Tools
-      url: https://monerobase.com
-    - name: MoneroNotify - Transaction Notification Service
-      url: https://xmrnotify.com
-    - name: nestorgames
-      url: http://www.nestorgames.com
-    - name: Offline Monero address generator
-      url: https://moneroaddress.org/
-    - name: Ownbit
-      url: https://ownbit.io
-- category: Services
-  id: services
+- category: Web hosting
+  id: hosting
   merchants:
     - name: 1Gbits
       url: https://1gbits.com/
@@ -192,6 +158,60 @@
       url: https://abacohosting.com/
     - name: Ablative Hosting
       url: https://ablative.hosting
+    - name: Capsul - Simple, Fast, Private Virtual Machines
+      url: https://capsul.org
+    - name: Cockbox - Tor-friendly, privacy-oriented VPS provider.
+      url: https://cockbox.org/
+    - name: Cryptoho.st - VPS hosting
+      url: https://cryptoho.st/
+    - name: Evolution Host - Hosting services
+      url: https://evolution-host.com/
+    - name: HostingCanada - Web hosting 
+      url: https://hostingcanada.org/
+    - name: LyraHosting - Offshore hosting company
+      url: https://lyrahosting.com/
+    - name: Monovm
+      url: https://monovm.com/
+    - name: NiceVPS - VPS and web hosting
+      url: https://nicevps.net/
+    - name: Njalla - privacy-aware domain registration
+      url: https://njal.la/
+    - name: RouterHosting - Hosting (VPS)
+      url: https://www.routerhosting.com/
+    - name: Snel - dedicated and VPS hosting
+      url: https://www.snel.com/
+    - name: SporeStack - Accountless, API-driven VPS hosting
+      url: https://sporestack.com
+    - name: SuperBitHost - Dedicated server, VPS, shared hosting, domains and SSL certificates
+      url: https://www.superbithost.com
+    - name: Tuxcon Hosting - Mail and Web Hosting
+      url: https://tuxcon.com
+    - name: VPNtesting
+      url: https://www.vpntesting.com/
+    - name: Webbdo Hosting (se)
+      url: https://www.webbdo.se/webbhotell/
+    - name: Whattheserver - Web hosting
+      url: https://Whattheserver.me
+- category: Tools
+  id: tools
+  merchants:
+    - name: Cryptoradar (Marketplace comparison website)
+      url: https://cryptoradar.co/buy-monero
+    - name: MoneroBase Price Charts and Tools
+      url: https://monerobase.com
+    - name: MoneroNotify - Transaction Notification Service
+      url: https://xmrnotify.com
+    - name: nestorgames
+      url: https://www.nestorgames.com
+    - name: Offline Monero address generator
+      url: https://moneroaddress.org/
+    - name: Ownbit
+      url: https://ownbit.io
+    - name: NOWNodes - Explorer & Node APIs
+      url: https://nownodes.io/connect-xmr-node
+- category: Services
+  id: services
+  merchants:
     - name: AGRsicurezza - Business Consultant (IT)
       url: https://www.agrsicurezza.it/
     - name: AirVPN
@@ -201,19 +221,15 @@
     - name: AnonAddy - Anonymous email forwarding service
       url: https://anonaddy.com/
     - name: Azur Samui - Luxury Apartment and Villa Development, Koh, Samui, Thailand
-      url: http://www.azursamui.com
+      url: https://www.azursamui.com
     - name: Bitsa - Prepaid card without bank account
       url: https://www.bitsacard.com/en/
     - name: BunkerVPN (Ethical VPN Provider)
       url: https://bunkervpn.com
     - name: Caliston Design - Design and web development agency
       url: https://calistondesign.com/
-    - name: Capsul - Simple, Fast, Private Virtual Machines
-      url: https://capsul.org
     - name: cloakVPN.com
       url: https://cloakVPN.com
-    - name: Cryptoho.st - VPS hosting
-      url: https://cryptoho.st/
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
     - name: cryptwerk - online directory with companies, websites, shops, services accepting cryptocurrencies
@@ -224,8 +240,6 @@
       url: https://galanglaw.com/
     - name: Esperanto lessons from Kaja
       url: mailto:kiah.morante@gmail.com
-    - name: Evolution Host - Hosting services
-      url: https://evolution-host.com/
     - name: ExchangeRates - compares the prices of Monero and other cryptocurrencies across exchanges
       url: https://exchangerates.pro/
     - name: Farmer ALP, LLC, Arizona
@@ -240,8 +254,6 @@
       url: https://healthiermatters.com/advertise-with-us
     - name: Hiri - Email client
       url: https://www.hiri.com/crypto/currency/XMR/
-    - name: HostingCanada - Web hosting 
-      url: https://hostingcanada.org/
     - name: Information Technology Works
       url: https://itwrx.org/
     - name: Ink Rebels
@@ -256,40 +268,18 @@
       url: https://marcosaguayo.com/
     - name: MSvB Hardware Design (using a secure element)
       url: mailto:monerodev+sitesvcs@encambio.com?subject=Monero%20Services%20Hardware%20Design%20Request
-    - name: Monovm
-      url: https://monovm.com/
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
-    - name: NiceVPS - VPS and web hosting
-      url: https://nicevps.net/
-    - name: Njalla - privacy-aware domain registration
-      url: https://njal.la/
-    - name: RouterHosting - Hosting (VPS)
-      url: https://www.routerhosting.com/
     - name: Seymour Locksmiths
       url: https://seymour-locksmiths.co.uk/
-    - name: Snel - dedicated and VPS hosting
-      url: https://www.snel.com/
     - name: Social Media LTD - Digital marketing agency
       url: https://social-media.co.uk/
-    - name: SporeStack - Accountless, API-driven VPS hosting
-      url: https://sporestack.com
-    - name: SuperBitHost - Dedicated server, VPS, shared hosting, domains and SSL certificates
-      url: https://www.superbithost.com
     - name: TorGuard - VPN, proxy and email service
       url: https://torguard.net
     - name: Travala - Cryptocurrency Friendly Travel Booking
       url: https://www.travala.com/
-    - name: Tuxcon Hosting - Mail and Web Hosting
-      url: https://tuxcon.com
     - name: Vpn.surf
       url: https://vpn.surf/blog/buy-vpn-with-monero/
-    - name: VPNtesting
-      url: https://www.vpntesting.com/
-    - name: Webbdo Hosting (se)
-      url: https://www.webbdo.se/webbhotell/
-    - name: Whattheserver - Web hosting
-      url: https://Whattheserver.me
     - name: XMR.to Monero to Bitcoin Payment Service
       url: https://xmr.to/
 - category: Goods
@@ -299,10 +289,14 @@
       url: https://AirportDecor.com/
     - name: Alagoria - Crypto Retail Shopping
       url: https://alagoria.com/
+    - name: AUGET - French brand of scented candles
+      url: https://auget.paris/en/
     - name: BitDials - Luxury Boutique
       url: https://www.bitdials.eu
+    - name: Bitvape - Australia's top rated JUUL store
+      url: https://bitvape.com.au
     - name: Cellphone and laptop repair online store in Sweden
-      url: http://www.LagaiPhone.se
+      url: https://www.LagaiPhone.se
     - name: Copy Corner - Full Service Printing & Graphics
       url: https://www.mycopycorner.com
     - name: City Map Decor - City map themed home decor
@@ -350,7 +344,7 @@
     - name: iCryptoNode - Seller of Raspberry Pi Monero Nodes and open source software provider
       url: https://icryptonode.com/
     - name: indyBudmarv2
-      url: http://www.budmarv2.com
+      url: https://www.budmarv2.com
     - name: Keys4Coin - pc game store
       url: https://www.keys4coins.com/
     - name: Kidsweet - All-Natural Zero-Calorie Sweetener
@@ -384,7 +378,7 @@
     - name: Print-ted - Online store for apparels and accessories
       url: https://print-ted.com/
     - name: Project Coral Reef Store
-      url: http://www.projectcoralreef.com/all-stores
+      url: https://www.projectcoralreef.com/all-stores
     - name: Purism - Privacy Phones & Laptops
       url: https://shop.puri.sm/
     - name: Reagent Tests UK - tests to detect adulteration and substitution of drugs
@@ -405,6 +399,8 @@
       url: https://toys4sex.com.au/
     - name: Judit Mátyus - Jewelry
       url: https://www.juditmatyus.com/
+    - name: XenPods - E-cigarette supplier
+      url: https://xenpods.com.au/
 - category: Entertainment
   id: entertainment
   merchants:

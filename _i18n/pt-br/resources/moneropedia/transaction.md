@@ -3,7 +3,7 @@ terms: ["transaction", "transactions", "transazione", "transazioni"]
 summary: "a cryptographically signed container that details the transfer of Monero to a recipient (or recipients)"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A cryptographically signed container that details the transfer of Monero to a recipient (or recipients).

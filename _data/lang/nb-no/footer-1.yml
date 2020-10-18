@@ -44,8 +44,6 @@
   subfolderitems:
   - name: Open Alias
     url: https://openalias.org/
-  - name: Kovri
-    url: https://kovri.io/
   - name: Monero-forskningslab
     url: resources/research-lab/
   - name: Monero-pressepakke

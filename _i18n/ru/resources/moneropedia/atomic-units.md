@@ -3,6 +3,7 @@ terms: ["atomic-units", "atomic-unit", "атомная-единица"]
 summary: "Атомные единицы являются самыми малыми частями 1 XMR."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Основная информация
 
 Атомные единицы являются самыми малыми частями 1 XMR.

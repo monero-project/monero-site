@@ -3,6 +3,7 @@ terms: ["smart-mining", "extraction-minière-intelligente"]
 summary: "un processus selon lequel un mineur régulé mine lorsqu'il ne cause pas d'inconvénient"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 L'Extraction minière intelligente est le processus selon lequel un @mineur régulé mine lorsqu'il ne cause pas d'inconvénient

@@ -3,6 +3,7 @@ terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pederse
 summary: "Les engagements de Pedersen sont des algorythmes de cryptographie qui permettent à un prouveur de s'engager sur une certaine valeur sans la révéler ou pouvoir la modifier"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Les engagements de Pedersen sont des algorythmes de cryptographie qui permettent à un prouveur de s'engager sur une certaine valeur sans la révéler ou pouvoir la modifier.

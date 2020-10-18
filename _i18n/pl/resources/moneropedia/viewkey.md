@@ -3,6 +3,7 @@ terms: ["view-key", "view-keys", "klucz-widoczności", "klucza-widoczności", "k
 summary: "Jeden z dwóch rodzajów prywanych i publicznych kluczy kryptograficznych przypisanych do każdego konta. Prywatny klucz widoczności jest wymagany do wyświetlenia wszystkich transakcji danego konta."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Jeden z dwóch rodzajów prywanych i publicznych kluczy kryptograficznych przypisanych do każdego konta. Prywatny klucz widoczności jest wymagany do wyświetlenia wszystkich transakcji danego konta.

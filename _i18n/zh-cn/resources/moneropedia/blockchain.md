@@ -3,6 +3,7 @@ terms: ["blockchain", "blockchains"]
 summary: "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 @区块链是一个分布式数据库，它持续增长，记录使用指定加密货币发生的所有交易。这个数据库通常被称为账簿，因为数据包含一个大列表，上面记录着已发生的交易。在门罗币的区块链之中，这些交易平均每2分钟被打包成一个“区块”，网络上的所有矿工和节点都有这些区块的副本。

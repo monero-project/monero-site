@@ -3,6 +3,7 @@ terms: ["wallet", "wallets"]
 summary: "A wallet stores the information necessary to send and receive Monero"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 门罗币帐户或钱包存储了发送和接收门罗币所需的信息。除了发送和接收之外，门罗币钱包软件还保存了您交易的私人历史记录，并允许您对消息进行加密签名。它还包括门罗币的挖矿软件和地址薄。

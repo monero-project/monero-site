@@ -3,6 +3,7 @@ terms: ["change", "monnaie"]
 summary: "Moneroj envoyés lors d'une transaction, qui reviennent dans votre compte au lieu d'être envoyés à un autre destinataire."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Moneroj envoyés lors d'une transaction, qui reviennent dans votre compte au lieu d'être envoyés à un autre destinataire.

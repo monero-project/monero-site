@@ -103,7 +103,7 @@ On Windows or Mac, go to the [hashes file on getmonero.org]({{ site.baseurl_root
 On Linux, you can download the signed hashes file by issuing the following command:
 
 ```
-wget -O hashes.txt {{ site.baseurl_root }}/downloads/hashes.txt
+wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt
 ```
 
 ### 3.2. Verify Hash File

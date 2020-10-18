@@ -3,6 +3,7 @@ terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pederse
 summary: "Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it.

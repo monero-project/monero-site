@@ -3,6 +3,7 @@ terms: ["mnemonic-seed", "mnemonic"]
 summary: "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 一个13或25个单词的词组，用于备份门罗币帐户，有多个语种可用。这个25个单词组成的词组（MyMonero钱包用的是13个单词组成的词组，与大部分其它钱包不通用）是你需要的所有信息，用来查看和使用罗币@帐户的资金```

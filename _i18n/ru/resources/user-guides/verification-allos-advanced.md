@@ -101,7 +101,7 @@ gpg:              unchanged: 1
 В том случае, если используется Linux, можно загрузить подписанный хеш-файл, используя следующую команду:
 
 ```
-wget -O hashes.txt {{ site.baseurl_root }}/downloads/hashes.txt
+wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt
 ```
 
 ### 3.2. Верификация хеш-файла

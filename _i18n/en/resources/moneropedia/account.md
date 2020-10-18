@@ -3,6 +3,7 @@ terms: ["account", "accounts", "wallet", "wallets"]
 summary: "similar in function to a bank account, contains all of your sent and received transactions"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 Those familiar with Monero's predecessors will be more familiar with the term *wallet* to describe this. In Monero we call this an account, and it is a private account owned and operated by a Monero user.
@@ -47,7 +48,7 @@ Generated new wallet: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmh
 view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903
 **********************************************************************
 Your wallet has been generated.
-To start synchronizing with the daemon, use "refresh" command.
+To start synchronizing with the @daemon, use "refresh" command.
 Use "help" command to see the list of available commands.
 Always use "exit" command when closing monero-wallet-cli to save your
 current session's state. Otherwise, you might need to synchronize

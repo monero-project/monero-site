@@ -3,6 +3,7 @@ terms: ["fungibility", "fungible"]
 summary: "property of a currency whereby two units can be substituted in place of one another"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 货币的一种属性，其中任意两个单位可以相互替换。

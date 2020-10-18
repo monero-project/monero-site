@@ -3,6 +3,7 @@ terms: ["address", "addresses", "адресата", "адрес", "адреса"
 summary: "Место отправления либо назначения платежа, например, donate.getmonero.org или набор из 95 символов, начинающийся с 4"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Основная информация
 
 Если вы хотите отправить кому-нибудь Monero, то вам для этого понадобится знать только адрес Monero этого человека. *Необработанный* адрес Monero представляет собой ряд из 95 символов, начинающийся с 4. Адрес для сбора пожертвований Monero, например, выглядит так: <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.

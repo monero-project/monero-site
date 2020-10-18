@@ -14,9 +14,9 @@ permalink: /downloads/index.html
         <div class="info-block download-nav row middle-xs between-xs" id="selections">
             <div class="col"><a href="#gui">{% t downloads.gui %}</a></div>
             <div class="col"><a href="#cli">{% t downloads.cli %}</a></div>
+            <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
             <div class="col"><a href="#blockchain">{% t downloads.blockchain %}</a></div>
             <div class="col"><a href="#hardware">{% t downloads.hardware %}</a></div>
-            <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
         </div>
     </div>
     <!-- End downloads menu: desktop -->
@@ -29,9 +29,9 @@ permalink: /downloads/index.html
             <ul id="menu">
               <li><a href="#gui">{% t downloads.gui %}</a></li>
               <li><a href="#cli">{% t downloads.cli %}</a></li>
+              <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
               <li><a href="#blockchain">{% t downloads.blockchain %}</a></li>
               <li><a href="#hardware">{% t downloads.hardware %}</a></li>
-              <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
             </ul>
           </div>
       </div>
@@ -48,7 +48,7 @@ permalink: /downloads/index.html
                 <i>{% t downloads.gui_intro %}</i>
             </div>
             <div class="col-md-7 col-sm-12 align-blocks">
-                <img class="screen" src={% if site.lang == "en" %}"/img/downloads/gui.png"{% else %}"/img/downloads/{{site.lang}}/gui.png"{% endif %}>
+                <img class="screen" alt="{% t accessibility.guiscreen %}" src={% if site.lang == "en" %}"/img/downloads/gui.png"{% else %}"/img/downloads/{{site.lang}}/gui.png"{% endif %}>
             </div>
             <div class="col-md-5 col-sm-12 align-blocks">
               <ul class="logo">
@@ -91,12 +91,9 @@ permalink: /downloads/index.html
                     {% endfor %}
                     </ul>
                   </div>
+                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package">{% t downloads.packages_link %}</a>.</p>
                   <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                  <p><details>
-                       <summary>{% t downloads.showissues %}</summary>
-                       <p><i>{% t downloads.noissues %}.</i></p><!-- Change here if there are known GUI issues (`downloads.yesissuesgui` if issues, `downloads.noissues` if no issues) -->
-                     </details></p>
                   {% for entry in item.downloads %}
                     {% if entry.vers != nil %}
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -140,7 +137,7 @@ permalink: /downloads/index.html
                 <i>{% t downloads.cli_intro %}</i>
             </div>
             <div class="col-md-7 col-sm-12 align-blocks">
-                <img class="screen" src={% if site.lang == "en" %}"/img/downloads/cli.png"{% else %}"/img/downloads/{{site.lang}}/cli.png"{% endif %}>
+                <img class="screen"  alt="{% t accessibility.cliscreen %}" src={% if site.lang == "en" %}"/img/downloads/cli.png"{% else %}"/img/downloads/{{site.lang}}/cli.png"{% endif %}>
             </div>
             <div class="col-md-5 col-sm-12 align-blocks">
               <ul class="logo">
@@ -185,13 +182,8 @@ permalink: /downloads/index.html
                       {% endfor %}
                     </ul>
                 </div>
+                <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package">{% t downloads.packages_link %}</a>.</p>
                 <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                <p><details>
-                     <summary>{% t downloads.showissues %}</summary>
-                       <p><i>{% t downloads.noissues %}.</i></p><!-- Change here if there are known CLI issues (`downloads.yesissuescli` if issues, `downloads.noissues` if no issues) -->
-                     </details></p>
-                </div>
                 </div>
                 {% for entry in item.downloads %}
                     {% if entry.vers != nil %}
@@ -227,6 +219,58 @@ permalink: /downloads/index.html
         </div>
       </section>
       <!-- End 'CLI Wallet' -->
+      <section class="container full">
+            <!-- 'Mobile & Light Wallets' -->
+            <div class="info-block">
+                <h2 id="mobilelight">{% t downloads.mobilelight %}</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a> {% t downloads.mobilelight3 %}</p>
+                        </div>
+                    </div>
+                        <table class="desktop-only">
+                        <tr>
+                            <th>Wallet</th>
+                            <th>Mobile</th>
+                            <th>Desktop</th>
+                            <th>Source Code</th>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/cakewallet.png" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td>X</td>
+                            <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/Monerujo-wallet.png" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
+                            <td><span class="icon-android"></span></td>
+                            <td>X</td>
+                            <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/mymonero.png" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
+                            <td><span class="icon-apple"></span></td>
+                            <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://github.com/mymonero" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/edge-wallet.png" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td>X</td>
+                            <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                        </tr>
+                        </table>
+                        <div class="row between-xs mob-wallets mobile-only">
+                            <ul>
+                                <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon"><img style="width: 50px" src="/img/cakewallet.png" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img src="/img/Monerujo-wallet.png" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon"><img src="/img/mymonero.png" alt="MyMonero Logo">MyMonero</a></li>
+                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon"><img src="/img/edge-wallet.png" alt="Edge Logo">Edge</a></li>
+                            </ul>
+                        </div>
+            </div>
+            <!-- End 'Mobile & Light Wallets' -->
+            </section>
             <section class="container full">
                 <!-- 'Import Blockchain' -->
                 <div class="info-block">
@@ -248,38 +292,21 @@ permalink: /downloads/index.html
                   <h2 id="hardware">{% t downloads.hardware %}</h2>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p>{% t downloads.hardware1 %} <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware2 %}</a> {% t downloads.hardware3 %} <a href="https://github.com/LedgerHQ/blue-app-monero" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware4 %}</a></p>
-                                <p>{% t downloads.hardware5 %}</p>
+                                <p>{% t downloads.hardware1 %} <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware2 %}</a> {% t downloads.hardware3 %}</p>
+                                <p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware4 %}</a></p>
+                                <p><a href="https://wiki.trezor.io/Monero_(XMR)" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware5 %}</a></p>
                             </div>
                         </div>
                         <div class="row mob-wallets center-xs">
-                            <a href="https://www.ledger.com/monero-wallet/"><img src="/img/ledger.png"></a>
-                            <a href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png"></a>
+                            <a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img src="/img/ledger.png" alt="ledger logo"></a>
+                            <a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" alt="Trezor logo"></a>
                         </div>
                         <div class="row mob-wallets center-xs">
-                            <a href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png"></a>
+                            <a class="ext-noicon" href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png" alt="Kastelo logo"></a>
                         </div>                    
                 </div>
                 <!-- End 'Hardware Wallets' -->
             </section>
-            <section class="container full">
-                <!-- 'Mobile & Light Wallets' -->
-                <div class="info-block">
-                  <h2 id="mobilelight">{% t downloads.mobilelight %}</h2>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a> {% t downloads.mobilelight3 %}</p>
-                            </div>
-                        </div>
-                        <div class="row between-xs mob-wallets">
-                                <a href="https://cakewallet.io"><img style="height: 115px;"  src="/img/cakewallet.png" alt="Cake Wallet Logo"></a>
-                                <a href="https://monerujo.io"><img style="height: 115px;" src="/img/Monerujo-wallet.png" alt="Monerujo Logo"></a>
-                                <a href="https://mymonero.com"><img src="/img/mymonero.png" alt="MyMonero Logo"></a>
-                                <a href="https://edge.app/"><img style="height: 115px;" src="/img/edge-wallet.png" alt="Edge Logo"></a>
-                        </div>
-                </div>
-                <!-- End 'Mobile & Light Wallets' -->
-            </section>
     </div>
-    <a href="#" class="arrow-up"><i></i></a>
+    <a href="#" class="arrow-up" aria-label="{% t accessibility.arrowup %}"><i></i></a>
 </div>

@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 ## Trouver un nœud
 Commencez par le commencement, vous devez trouver un nœud auquel vous connecter ! [moneroworld.com](https://moneroworld.com/#nodes) propose quelques bonnes ressources pour trouver

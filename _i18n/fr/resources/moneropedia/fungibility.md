@@ -3,6 +3,7 @@ terms: ["fungibility", "fungible", "fongibilité", "fongible"]
 summary: "propriété d'une monnaie selon laquelle deux unités peuvent se substituer l'une à l'autre"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Propriété d'une monnaie selon laquelle deux unités peuvent se substituer l'une à l'autre.

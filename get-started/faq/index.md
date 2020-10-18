@@ -38,6 +38,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-light-normal">{% t faq.q6 %}</a></li>
                         <li><a href="#anchor-block-limit">{% t faq.q8 %}</a></li>
                         <li><a href="#anchor-mixing">{% t faq.q15 %}</a></li>
+                        <li><a href="#import-blockchain">{% t faq.qimporting %}</a></li>
                     </ul>
                     <li class="category">{% t faq.nodeandwallet %}</li>
                     <ul class="logo">
@@ -116,6 +117,8 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-buy"></a>{% t faq.q2 %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.a2 %}</p>
+                        <p>{% t faq.a2exchanges %} <a href="{{ site.baseurl }}/community/merchants/#exchanges">{% t titles.merchants %}</a>.</p>
+                        <p>{% t faq.additional %} <a href="https://www.monerooutreach.org/how-to-buy-monero.html">How to Buy Monero (Monero Outreach)</a></p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-different">
@@ -194,6 +197,13 @@ permalink: /get-started/faq/index.html
                         <p>{% t faq.a15 %}</p>
                     </div>
                 </div>
+                <div class="tab" id="import-blockchain">
+                    <h3><a class="anchor" href="#import-blockchain"></a>{% t faq.qimporting %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.aimporting %}</p>
+                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/resources/user-guides/importing_blockchain.html">{% t user-guides.import-blockchain %}</a></p>
+                    </div>
+                </div>
                 <div class="row center-xs">
                     <!-- 'Node and Wallet' section-->
                     <div class="col"><h2>{% t faq.nodeandwallet %}</h2></div>
@@ -264,6 +274,6 @@ permalink: /get-started/faq/index.html
             </div>
         </div>
         <!-- END full block-->
-        <a href="#" class="arrow-up"><i></i></a>
+        <a aria-label="{% t accessibility.arrowup %}" href="#" class="arrow-up"><i></i></a>
     </div>
 </section>

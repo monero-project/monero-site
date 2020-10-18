@@ -4,6 +4,7 @@ terms: ["Clearnet"]
 summary: "The Internet in which anonymous overlay networks are built upon"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 当你为了看新闻、电子邮件、社交媒体，甚至是门罗币而使用互联网时，你最有可能使用明网连接。这意味着您的*所有*连接都可以通过以下方式进行跟踪、追溯和监视:

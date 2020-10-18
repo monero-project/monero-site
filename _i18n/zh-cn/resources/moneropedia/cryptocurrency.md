@@ -3,6 +3,7 @@ terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins"]
 summary: "a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### 基础知识
 
 一种数字货币，使用加密技术来规范货币单位的产生和验证资金的转移，通常独立于中央银行进行操作。

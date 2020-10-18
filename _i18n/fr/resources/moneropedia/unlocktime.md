@@ -3,6 +3,7 @@ terms: ["unlock-time", "durée-de-déverrouillage"]
 summary: "une transaction spécifique où le destinataire ne peut dépenser les fonds qu'à une date ultérieure, définie par l'émetteur"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Une transaction spécifique où le destinataire ne peut dépenser les fonds qu'à une date ultérieure, définie par l'émetteur.

@@ -3,6 +3,7 @@ terms: ["wallet", "wallets"]
 summary: "A wallet stores the information necessary to send and receive Monero"
 ---
 
+ {% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A Monero account, or wallet, stores the information necessary to send and receive Moneroj.  In addition to sending and receiving, the Monero Wallet software keeps a private history of your transactions and allows you to cryptographically sign messages.  It also includes Monero mining software and an address book.

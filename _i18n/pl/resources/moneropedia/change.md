@@ -3,6 +3,7 @@ terms: ["change", "reszta", "reszty", "reszcie"]
 summary: "Monero wysłane jako część transakcji, która jest zwracana na twoje konto zamiast być przelana do innego odbiorcy."
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Podstawy
 
 Monero wysłane jako część transakcji, która jest zwracana na twoje konto zamiast być przelana do innego odbiorcy.

@@ -3,6 +3,7 @@ terms: ["stealth-address", "stealth-addresses", "adresse-furtive", "adresses-fur
 summary: "Adresses à usage unique automatiques pour chaque transaction"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 Les adresses furtives constitue une part importante de la confidentialité inhérente à Monero. Elle permettent et imposent à l'émetteur de créer une adresse à usage unique aléatoire pour chaque @transaction pour le compte du destinataire. Le destinataire peut publier une seule adresse tout en recevant ses paiements à destinations d'adresses uniques sur la @chaîne-de-blocs, ou elles ne peuvent pas être reliées ni à l'adresse publiée du destinataire, ni à aucune autre adresse de transaction. En utilisant les adresses furtives, seule l'émetteur et le destinataire peuvent déterminer où un paiement à été envoyé.

@@ -3,6 +3,7 @@ terms: ["address", "addresses"]
 summary: "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
 ---
 
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.

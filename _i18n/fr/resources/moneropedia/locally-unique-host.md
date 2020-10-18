@@ -6,11 +6,8 @@ summary: "Un hôte que vous avez définit et que vous seul pouvez résoudre"
 
 ### Les Bases
 
-<<<<<<< HEAD
-A locally-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) defined by **you** and resolved only by you; similar to how a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) is implemented. Not to be confused with @canonically-unique-host.
-=======
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 Un hôte unique localement est un [FQDN](https://fr.wikipedia.org/wiki/FQDN) que **vous** définissez et que vous seul pouvez résoudre, de manière analogue à l'implémentation d'un [fichier hosts](https://fr.wikipedia.org/wiki/Hosts). A ne pas confondre avec un @hôte-canonique-unique.
->>>>>>> Ongoing Moneropedia French Translation
 
 ### Informations détaillées
 

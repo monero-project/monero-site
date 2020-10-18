@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 ## Как найти узел
 Перво-наперво необходимо найти узел, к которому можно будет подключится! На веб-сайте [moneroworld.com](https://moneroworld.com/#nodes) предлагается множество способов для поиска узлов. Один из самых простых заключается в использовании узла, поддерживаемого самим сайтом, но вы также можете воспользоваться и инструментом, позволяющим найти случайные узлы.

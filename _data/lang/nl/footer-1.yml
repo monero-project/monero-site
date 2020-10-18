@@ -11,7 +11,7 @@
   - name: Bibliotheek
     url: library
   - name: RSS-kanaal
-    url: feed.atom
+    url: feed.xml
 - title: IRC-kanalen
   subfolderitems:
   - name: monero
@@ -44,8 +44,6 @@
   subfolderitems:
   - name: OpenAlias
     url: https://openalias.org/
-  - name: Kovri
-    url: https://kovri.io/
   - name: Monero Research Lab
     url: resources/research-lab/
   - name: Monero Press Kit

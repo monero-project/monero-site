@@ -4,7 +4,7 @@ terms: ["Destination", "Destinations"]
 summary: "A in-net address that serves as a final endpoint (either local or remote)"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
 A @destination is the @I2P @in-net address of the final endpoint you are trying to connect to (example: an @I2P website, service, or Monero node). This can also include a *local destination* of which *other* peers need to connect to in order to make contact for communication (similar to how, in @clearnet, your IP address is given to a website when you connect so it knows *where* to send the information back to).

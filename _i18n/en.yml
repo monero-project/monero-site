@@ -16,8 +16,10 @@ global:
   outdated: The content of this page is outdated and the might be not valid anymore. Contact the community if you need support.
   outdatedMin: This page has been updated since the translation. You can use this version, but it may be incomplete. Please use the
   outdatedVersion: English version
-  upgrade: To continue using Monero, make sure your software is up-to-date with the November 30th network upgrade.
-  moreinfo: More info
+  upgradoct: Make sure your software is up-to-date with the
+  upgradeoctlink: "October 17th network upgrade."
+  upgrdecont: To continue using Monero after that date,
+  dwlsoftware: Download Monero "Oxygen Orion" (0.17).
   lang_tag: "@lang_tag_en"
 
 titles:
@@ -60,7 +62,7 @@ home:
   choosewallet_para: To use Monero, the first thing you are going to need is a wallet. Visit our Downloads page and get the right wallet for you. The Monero wallets are available for a variety of platforms and contain everything you need to use Monero immediately.
   downloads: Downloads
   getcoins: Get Some Coins
-  getcoins_para: After you install a wallet, you need to get some Monero. There are multiple ways to acquire some coins to spend, like mining or working in exchange for Monero, but the easiest way is to use an exchange and convert your fiat money into XMR. many exchanges, centralized and decentralized, list Monero (XMR).
+  getcoins_para: After you install a wallet, you need to get some Monero. There are multiple ways to acquire some coins to spend, like mining or working in exchange for Monero, but the easiest way is to use an exchange and convert your fiat money into XMR. Many exchanges, centralized and decentralized, list Monero (XMR).
   exchanges: Exchanges
   useit: "It's a Currency: Use It!"
   useit_para: Monero is a currency and can be exchanged for goods and services, privately and with very low fees. Many entities will gladly accept XMR for payments; take a look at our list of merchants currently accepting Monero.
@@ -88,6 +90,7 @@ hangouts:
   resources_para: In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects. Mattermost even has relays into the most popular Monero-related IRC channels.
   irc: IRC Channels
   irc_para: The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.
+  bridges: These channels are bridged to a number of other platforms, allowing the community to communicate using their favourite chat service/protocol.
   mailing_list: Mailing List
   mailing_list1: Do you want to receive important announcements directly on your email address? join our mailing lists!
   subscribe: Subscribe
@@ -103,8 +106,6 @@ hangouts:
     monero-translations: Localizing Monero into other languages.
     monero-hardware: Building hardware wallets to keep your Monero safe.
     monero-site: Where the development of this website is coordinated
-    kovri: This channel is used to discuss all things Kovri related.
-    kovri-dev: The many contributors and developers come here to discuss Kovri dev-y things.
 
 merchants:
   intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. These merchants are not endorsed by the community, see disclaimer at the bottom of this page. If a company no longer accepts Monero or you would like your business to be listed, please
@@ -115,7 +116,12 @@ merchants:
   onion: Onion address (needs Tor)
 
 sponsorships:
-  intro: The following businesses have supported the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
+  intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
+  tari: Tari Labs sponsors the CDN used by this website.
+  globee: GloBee sponsors the main Monero website infrastructure.
+  symas: Symas sponsors its CTO Howard Chu (hyc) for his work on the Monero codebase.
+  forknetworking: Fork Networking provides a server which is used for development.
+  macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
 
 team:
   core: Core
@@ -157,11 +163,6 @@ downloads:
   cli_intro: The CLI wallet gives you the total control over your Monero node and funds. Highly customizable and includes various analysis tools, as well as an HTTP RPC and 0MQ interface.
   currentversion: Current Version
   sourcecode: Source Code
-  showissues: Show known issues for this release
-  noissues: This release has no known major issues
-  yesissuesgui: Release 0.15.0.4 (Linux) was accidentally compiled without Trezor support. Thus, Trezor Monero users on Linux are recommend to wait until next release (0.15.0.5) or compile the GUI by themselves
-  yesissuescli: >
-    Because of glibc compatibility problems, this version won't run on Ubuntu 16.04 (glibc < 2.25)
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
@@ -187,15 +188,17 @@ downloads:
   showhash4: "Two guides are available to guide you through the verification process:"
   hardware1: The Monero community has funded a
   hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger has
-  hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
+  hardware3: which is now in progress.
+  hardware4: Ledger Nano S and Nano X are supported in Monero CLI, Monero GUI, and Monerujo wallets.
+  hardware5: Trezor Model T is supported in Monero CLI and Monero GUI wallets.
   mobilelight1: The following are mobile or light wallets that are deemed safe by respected members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our
   mobilelight2: Hangouts
   mobilelight3:  page to see where we are.
   installer: Installer
   avwarning: Be aware that some antiviruses and firewalls may flag the Monero executables and archives as malware.
   moreinfofaq: More info in the FAQ
+  packages: There are also packages available for multiple Linux distributions.
+  packages_link: See the list on GitHub
 
 press-kit:
   intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself.
@@ -223,7 +226,9 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
   promographics: "Monero Promotional graphics - Badges and stickers for websites"
   promographicsp: Various graphics and Badges created by TheMonera, for both merchants and simple enthusiasts.
-
+  othersymbols: Other symbols and logos
+  mrllogo_para: The logo of the Monero Research Lab in SVG format.
+  
 accepting:
   title_gui: Instructions for the GUI
   index: Index
@@ -244,7 +249,7 @@ accepting:
   guiol1: Share the address composed by letters and numbers to the person you want to receive coins from. You probably prefer to use the more user friendly QR code.
   guiol2: "If you want to specify the amount to receive, go to the 'Merchant' page (after you selected in the 'Receive' page the @account that will be used to receive XMR)."
   guiol3: "Insert the amount to receive, then share with the payer the payment URL or the QR code. If you want to track the payment in real time, tick the 'enable sales tracker' option."
-  guiol4: Wait until the payment is arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
+  guiol4: Wait until the payment has arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
   cliinstructions: Instructions for the CLI
   clicreatewallet: >
     When you create your wallet for the first time, an @address will be automatically shown to you. That's your primary address.
@@ -270,7 +275,7 @@ accepting:
   merchantsreceive: If you are a business and you wish to programmatically receive @transactions or use advanced features like multisignature, it's suggested to consult the
   merchdevguides: developer guides
   merchantsreceive1: "If you need support, the community will always be happy to help. Come chat on #monero, the chatroom is on Freenode, but also relayed on MatterMost and Matrix."
-  merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the monero community has created a set of integrations for various platform and languages. You can find more info on"
+  merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the Monero community have created a set of integrations for various platforms and languages. You can find more info on"
   merchantsintlink: the GitHub organization
   merchantsthirdp: If you are looking for other third party integration system, there is a list of payment gateways on
   merchthirdlink: the merchant page
@@ -289,10 +294,6 @@ contributing:
   mine: Mine
   mine_para1: Mining ensures the Monero network remains decentralized and secure. In the Monero graphical user interface and command-line interface, background mining may be activated. Additional resources for mining may be viewed
   mine_para2: here.
-  ffs: View the Community Crowdfunding System
-  ffs_para1: Monero utilizes a
-  ffs_para2: community crowdfunding system
-  ffs_para3: whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
   donate: Donate
   donate_para1: Ongoing development is supported by donations and
   donate_para2: sponsorships.
@@ -331,6 +332,7 @@ faq:
   a1: Monero has value because people are willing to buy it. If no one is willing to buy Monero, then it will not have any value. Monero’s price increases if demand exceeds supply, and it decreases if supply exceeds demand.
   q2: How can I get Monero?
   a2: You can buy Monero from an exchange or from an individual. Alternatively, you can try mining Monero to get coins from the @block reward.
+  a2exchanges: "In past, you needed Bitcoin to buy Monero, but that's not the case anymore. You can directly trade Monero for national currencies (USD, EUR, GBP, etc) or other cryptocurrencies on many exchanges. Some require KYC (proof of identification); others do not, like decentralized exchanges. On this website is available a list of exchanges where it's possible to buy/sell Monero (XMR):"
   q3: Why is the Mnemonic Seed important?
   a3: A @mnemonic-seed is a set of 25 words that can be used to restore your account anywhere. Keep these words safe and do not share them with someone else. You can use this seed to restore your account, even if your computer crashes.
   q4: How is Monero’s privacy different from other coins?
@@ -360,7 +362,7 @@ faq:
   qnofunds: I can't see my funds. Did I just lose all my Monero?
   anofunds: "You probably didn't. It's very hard to simply 'lose' your coins, since they are technically nowhere. Your coins 'live' on the blockchain and are linked to your account through a system of public and private keys secured by cryptography. That's why if you don't see your funds, it's probably because of a technical issue. Take a look at the 'Resources & Help' section at the top of this page for a list of useful resources that will help you identify and fix your problem."
   qnodetor: How can I connect my node via Tor?
-  anodetor: Support for Tor is still in its infancies, but it's already possible to natively send transactions through the network and to run a Monero daemon on the Tor network. Better Tor and I2P integrations are in progress.
+  anodetor: Support for Tor is still in its infancies, but it's already possible to natively send transactions through the network and to run a Monero @daemon on the Tor network. Better Tor and I2P integrations are in progress.
   qfullpruned: How do I decide if I should run a full node or a pruned node?
   afullpruned: "A full @node requires a considerable amount of storage and could take a long time to download and verify the entire blockchain, especially on older hardware. If you have limited storage, a pruned node is recommended. It only stores 1/8th of unnecessary blockchain data while keeping the full transaction history. If plenty of storage is available, a full node is recommended but a pruned node still greatly contributes to the network and improves your privacy."
   qblockspace: Why does the blockchain need so much space?
@@ -374,10 +376,13 @@ faq:
   qdangerrnode: Is it dangerous to use a remote node? What's the data a node operator can get from me?
   adangerrnode: "It's always advisable, especially for privacy-conscious users, to use a personal node when transacting on the network to achieve the highest rate of privacy. Some people for convenience prefer to use @remote-node which are not under their control (public nodes). The convenience of not having to deal with a personal copy of the @blockchain comes at a cost: lessened privacy. A remote node operator is able to see from what IP address a transaction comes from (even if cannot see the recipient nor the amount) and in some extreme cases, can make attacks able to reduce your privacy. Some dangers can be mitigated by using remote nodes on the Tor or I2P networks or using a VPN."
   qantivirus: Why is my antivirus/firewall flagging the Monero software i just downloaded as malware?
-  aantivirus: After you have downloaded the Monero software (GUI and CLI alike), your antivirus or firewall may flag the executables as malware. Some antiviruses only warn you about the possible menace, others go as far as silently removing your downloaded wallet/daemon. This likely happens because of the integrated miner, which is used for mining and for @block verification. Some antiviruses may erroneously consider the miner as dangerous software and act to remove it.
+  aantivirus: After you have downloaded the Monero software (GUI and CLI alike), your antivirus or firewall may flag the executables as malware. Some antiviruses only warn you about the possible menace, others go as far as silently removing your downloaded @wallet / @daemon. This likely happens because of the integrated miner, which is used for mining and for @block verification. Some antiviruses may erroneously consider the miner as dangerous software and act to remove it.
   aantivirus1: The problem is being discussed and solutions are being elaborated. In the meantime, if you get a warning from your antivirus, make sure the software you downloaded is legitimate (see the guides linked below), then add an exception for it in your antivirus, so that it won't get removed or blocked. If you need assistance, feel free to contact the community.
   qmoneromeaning: "Why is Monero called 'Monero'?"
   amoneromeaning: "Monero is an Esperanto word which means 'coin'. Initially Monero was called 'Bitmonero', which translates to 'Bitcoin' in Esperanto. After the community decided to fork from the original maintainer, 'bit' was dropped in favour of simply 'Monero'."
+  qimporting: Can I manually import the blockchain?
+  aimporting: >
+    Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. If you really need to import an external blockchain, you can download one in <a href="{{ site.baseurl }}/downloads/#blockchain">the 'Downloads' page</a> of this website. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
@@ -434,7 +439,7 @@ developer-guides:
   outdated: "Methods are often added / removed / updated and may not be accurately described."
   rpc: RPC Documentation
   daemonrpc: Daemon RPC
-  daemonrpc_descr: RPC calls for the daemon. Including input, outputs and examples. In English.
+  daemonrpc_descr: RPC calls for the @daemon. Including input, outputs and examples. In English.
   walletrpc: Wallet RPC
   walletrpc_descr: monero-wallet-rpc calls. Including input, outputs and examples. In English.
   external: External resources
@@ -443,6 +448,19 @@ developer-guides:
   moneroexamples: Rich list of examples and docs related to Monero development.
   moneroecosystem: Community of Monero developers. Contains libraries and resources and guides of some Monero Workgroups, like the Localization Workgroup and the Outreach Workgroup.
   monerose: One of the most complete resources for both users and developers.
+  libraries: Libraries and helpers
+  libraries_para: Monero libraries created and maintained by the community. They are not vetted by the core team and are listed here only for convenience. Make your own researches before using them. If you want to add a library to this list, please open an issue on
+  monero-javascript: A Node.js library for using Monero.
+  monero-nodejs: Wallet manager for interacting with monero-wallet-rpc.
+  monerophp: A Monero library written in PHP by the Monero Integrations team.
+  monerowp: Monero WooCommerce Plugin for Wordpress.
+  monero-python: A comprehensive Python module for handling Monero cryptocurrency.
+  moneriote-python: Python scripts to maintain Monero opennodes DNS records.
+  monerorpc: A Java interface for Monero wallet and daemon RPC.
+  monero-java: A Java library for using Monero.
+  monero-cpp: A C++ library for using Monero.
+  vanity-monero: Generate vanity address for CryptoNote currency (Monero etc.).
+  go-monero-rpc-client: A go client for the Monero wallet and daemon RPC.
 
 user-guides:
   general: General
@@ -471,6 +489,7 @@ user-guides:
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
   node-i2pzero: Run a Monero node through I2P with I2P-zero
+  guiguide: Guide for the Monero GUI wallet
 
 roadmap:
   completed: Completed task
@@ -581,6 +600,7 @@ roadmap:
   tryptych: "Triptych: logarithmic-sized linkable ring signatures with applications"
   kastelo: "Kastelo: open source hardware wallet"
   layer2: Second-layer solutions for speed and scalability
+  released-0-16-0-0: CLI and GUI 0.16.0.0 released
   
   returnaddr: Return addresses
 
@@ -684,7 +704,7 @@ moneropedia:
     The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order. If you wish to edit an existing voice or to add a new one, click the button at the bottom of the page.
   add_new_button: Add New Entry
   add_new_text1: If there is an entry you'd like to modify or be added, please
-  add_new_link: open an issue on this website's GitLab repository
+  add_new_link: open an issue on this website's GitHub repository
   add_new_text2: or submit changes via pull request
   back: Back to the Moneropedia
   entries:
@@ -748,3 +768,8 @@ blog:
 
 tags:
   notags: There are no posts for this tag.
+
+accessibility:
+  arrowup: Go back to the top of the page
+  guiscreen: A screenshot of the Monero GUI wallet. It shows the wallet's balance and a navigation menu on the left, and a form for sending XMR on the right.
+  cliscreen: CLI wallet screenshot

@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 ## إيجاد خادم
 أولاً يجب عليك إيجاد خادم للإتصال به! يحتوي [moneroworld.com](https://moneroworld.com/#nodes) علي العديد من الموارد العظيمه لإيجاد خوادم. أسهل هذه الطرق هو إستخدام الخادم المُشغل بواسطه moneroworld بالفعل, لكن لديهم أيضاً أداه لإيجاد خوادم عشوائيه.

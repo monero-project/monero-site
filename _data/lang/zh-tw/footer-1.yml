@@ -11,7 +11,7 @@
   - name: 圖書出版品
     url: library
   - name: RSS 摘要
-    url: feed.atom
+    url: feed.xml
 - title: IRC 頻道
   subfolderitems:
   - name: monero
@@ -44,8 +44,6 @@
   subfolderitems:
   - name: Open Alias
     url: https://openalias.org/
-  - name: Kovri
-    url: https://kovri.io/
   - name: 門羅幣研究實驗室
     url: resources/research-lab/
   - name: 門羅幣新聞資料袋

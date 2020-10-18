@@ -3,6 +3,7 @@ terms: ["account", "accounts", "wallet", "wallets", "conto", "conti", "portafogl
 summary: "funzionalmente simile ad un conto bancario, contiene tutte le transazioni in ingresso e in uscita"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Le Basi
 
 Coloro che hanno familiarità con i predecessori di Monero, e con le criptovalute in generale, conosceranno probabilmente il termine *portafoglio*. In Monero il portafoglio viene descritto più propriamente col termine account, ed esso costituisce un conto privato di proprietà di e gestito da un utente Monero.

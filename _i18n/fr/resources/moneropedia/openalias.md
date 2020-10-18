@@ -3,6 +3,7 @@ terms: ["OpenAlias"]
 summary: "Un standard qui permet d'utiliser une syntaxe d'adresse e-mail ou de nom de domaine pour payer quelqu'un au lieu d'une adresse, p.ex. donate@getmonero.org ou donate.getmonero.org"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Les Bases
 
 L'équipe cœur de Monero a publié un standard appelé OpenAlias qui permet aux adresses d'être plus facilement lisibles et répond au triangle de Zooko. OpenAlias peut être utilisé par toutes les cryptomonnaies et est déjà implémenté dans Monero, Bitcoin (dans les dernières versions Electrum) et HyperStake.
