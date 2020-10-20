@@ -333,7 +333,7 @@ faq:
   q2: How can I get Monero?
   a2: You can buy Monero from an exchange or from an individual. Alternatively, you can try mining Monero to get coins from the @block reward.
   qxmrfiat: How can I get Monero from fiat?
-  axmrfiat: You can buy Monero from an institutional exchange but the fees can be very high. Also, you can buy XMR from local exchanges, i.e. peer-2-peer transaction sites, but beware of scammers as usual...
+  axmrfiat: You can buy Monero from an institutional exchange but the fees can be very high. Also, you can buy XMR from local exchanges, i.e. peer-2-peer transaction sites, but beware of scammers as usual... Monero is legal is most countries, however, it is illegal or banking banned in the following countries: Algeria, Bangladesh, Bolivia, Cambodia, Canada, China, Colombia, Ecuador, Egypt, Indonesia, Iran, Jordan, Morocco, Nepal, Pakistan, Russia, Saudi Arabia, Taiwan, Vietnam.
   a2exchanges: "In past, you needed Bitcoin to buy Monero, but that's not the case anymore. You can directly trade Monero for national currencies (USD, EUR, GBP, etc) or other cryptocurrencies on many exchanges. Some require KYC (proof of identification); others do not, like decentralized exchanges. On this website is available a list of exchanges where it's possible to buy/sell Monero (XMR):"
   q3: Why is the Mnemonic Seed important?
   a3: A @mnemonic-seed is a set of 25 words that can be used to restore your account anywhere. Keep these words safe and do not share them with someone else. You can use this seed to restore your account, even if your computer crashes.
