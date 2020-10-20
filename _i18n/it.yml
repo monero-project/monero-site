@@ -126,24 +126,29 @@ hangouts:
     aspetti. Alcuni servono per lavorare, altri semplicemente per chattare. Qua sotto
     troverai un elenco con i canali più famosi.
   mailing_list: Mailing List
-  mailing_list1: Vuoi ricevere annunci importanti direttamente al tuo indirizzo email? iscriviti alla nostra mailing list!
+  mailing_list1: Vuoi ricevere annunci importanti direttamente al tuo indirizzo email?
+    iscriviti alla nostra mailing list!
   subscribe: Iscriviti
   irc_channels:
     monero: Questo canale è usato per trattare tutti i temi che riguardano Monero.
-    monero-community: Questo canale è usato dalla comunità Monero per incontrarsi e discutere su nuove idee.
-    monero-dev: I molti collaboratori e sviluppatori si trovano qui per discutere di questioni di sviluppo.
-    monero-markets: Usiamo questo canale per parlare del prezzo di Monero e di altre criptovalute.
-    monero-offtopic: Si chatta con altri utenti Monero di cose che non riguardano Monero.
-    monero-otc: Over the counter Monero. Vieni qui per acquistare XMR da altri appassionati di Monero.
+    monero-community: Questo canale è usato dalla comunità Monero per incontrarsi
+      e discutere su nuove idee.
+    monero-dev: I molti collaboratori e sviluppatori si trovano qui per discutere
+      di questioni di sviluppo.
+    monero-markets: Usiamo questo canale per parlare del prezzo di Monero e di altre
+      criptovalute.
+    monero-offtopic: Si chatta con altri utenti Monero di cose che non riguardano
+      Monero.
+    monero-otc: Over the counter Monero. Vieni qui per acquistare XMR da altri appassionati
+      di Monero.
     monero-pools: Questo è il luogo per domande e discussioni sul mining.
     monero-research-lab: Ricerche sulla privacy finanziaria con le criptovalute.
     monero-translations: Localizzazione di Monero in altre lingue.
     monero-hardware: Costruire portafogli hardware per tenere al sicuro i tuoi Moneroj.
-    monero-site: 
     monero-italia: Canale in italiano per appassionati di Monero
     kovri: Questo canale è usato per discutere tutto ciò che riguarda Kovri.
-    kovri-dev: I molti collaboratori e sviluppatori si trovano qui per discutere di questioni di sviluppo di Kovri.
-    
+    kovri-dev: I molti collaboratori e sviluppatori si trovano qui per discutere di
+      questioni di sviluppo di Kovri.
 merchants:
   intro1: I commercianti hanno imparato a valutare la privacy finanziaria di Monero.
     Di seguito è riportato un elenco dei commercianti che sappiamo accettare Monero
@@ -169,20 +174,19 @@ team:
   community: Comunità
   mrl: Research Lab
   thanks: Ringraziamenti Speciali
-
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
   gui: GUI Wallet
   cli: CLI Wallet
-  blockchain: Blockchain Bootstrap
+  blockchain: Importa Blockchain
   blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from
     scratch, you can use the most current bootstrap. It is typically much faster to
     sync from scratch, however, and it also takes a lot less RAM.
   blockchain2: Se desideri procedere comunque, dai un'occhiata alla guida utente
   blockchain3: Importazione della blockchain Monero
-  blockchain4: for step-by-step instructions for Windows.
+  blockchain4: per istruzioni dettagliate su Windows.
   blockchainbutton: Download Blockchain
   mobilelight: Mobile & Light Wallets
   hardware: Hardware Wallets
@@ -190,9 +194,9 @@ downloads:
     of users, but it is especially recommended for less technical people who want
     to quickly send and receive XMR.
   simplemode: Simple mode
-  simplemode1: Created for less technical users who only want to use Monero in the
-    easiest and quickest way possible. Open the wallet, automatically connect to a
-    remote node, send/receive XMR, done!
+  simplemode1: Creato per utenti meno esperti che desiderano utilizzare Monero nel
+    modo più semplice e rapido possibile. Apri il portafoglio, connettiti automaticamente
+    ad un @nodo-remoto, invia/ricevi XMR, fatto!
   advancedmode: Advanced mode
   advancedmode1: With all the advanced features you could need. Ideal for seasoned
     Monero users who prefer to have full control of their wallet and node
@@ -249,7 +253,8 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: 'Two guides are available to guide you through the verification process:'
-  showhash4: "Sono disponibili due guide per assistere l'utente attraverso il processo di verifica:"
+  showhash4: "Sono disponibili due guide per assistere l'utente attraverso il processo\
+    \ di verifica:"
   hardware1: The Monero community has funded a
   hardware2: Dedicated Hardware Wallet (Kastelo)
   hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
@@ -262,7 +267,10 @@ downloads:
   mobilelight2: Hangouts
   mobilelight3: page to see where we are.
   installer: Installer
-  
+  yesissuesgui: La versione 0.15.0.4 (Linux) è stata compilata per errore senza il
+    supporto Trezor. Pertanto, si consiglia agli utenti Trezor Monero su Linux di
+    attendere fino alla prossima versione (0.15.0.5) oppure di compilare la GUI da
+    soli
 monero-project:
   kovri: Il progetto Kovri usa la crittografia end-to-end, in modo tale che né il
     mittente né il ricevente di una transazione Monero debba rivelare il proprio indirizzo
@@ -294,32 +302,46 @@ press-kit:
   symbol_file: File .ai del simbolo
   logo_file: File .ai del logo
   pressdoc: Documentazione per la stampa
-  quickfacts: "Quick-Facts Sheet (inglese)"
+  quickfacts: Quick-Facts Sheet (inglese)
   quickfactsp: >
-    Un documento veloce e semplice da leggere per conoscere tutto ciò che riguarda Monero: la storia, i fattori chiave che lo differenziano, i fondamenti tecnici e le funzionalità in sviluppo.<br>
-    Visita il sito <a target="_blank" href="https://www.monerooutreach.org">Monero Outreach</a> per maggiori informazioni.
+    Un documento veloce e semplice da leggere per conoscere tutto ciò che riguarda
+    Monero: la storia, i fattori chiave che lo differenziano, i fondamenti tecnici
+    e le funzionalità in sviluppo.<br>
+    Visita il sito <a target="_blank" href="https://www.monerooutreach.org">Monero
+    Outreach</a> per maggiori informazioni.
   marketing: Marketing Material
-  dontbuysticker: "The 'Don't buy Monero' sticker"
-  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
+  dontbuysticker: The 'Don't buy Monero' sticker
+  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available
+    in multiple languages and formats (vectors included).
   guerrillakit: Guerrilla Toolkit
-  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
-
+  guerrillakitp: A document created by the Monero Outreach workgroup containing materials
+    and tips for an effective guerrilla marketing campaign.
 accepting:
   title_gui: Istruzioni per la GUI
-  gui1: "Accettare un pagamento con la GUI è molto semplice. Non importa se sei un commerciante o un utente, avrai due pagine disponibili: Ricevi e Commercianti."
+  gui1: 'Accettare un pagamento con la GUI è molto semplice. Non importa se sei un
+    commerciante o un utente, avrai due pagine disponibili: Ricevi e Commercianti.'
   gui2: La pagina di ricezione (mostrata sotto) è spiegata in ogni dettaglio
-  guilinkguide: nella guida della GUI.    
+  guilinkguide: nella guida della GUI.
   guiinstructions: >
-    Per ricevere XMR devi solo fornire a chi deve pagare un @indirizzo al quale possono inviare fondi. 
-    Il più delle volte è più semplice condividere un codice QR e consentire a chi deve pagare di scansionarlo, invece di incollare la stringa alfanumerica. 
-    Con la GUI ogni indirizzo generato viene fornito con il suo codice QR. Fai scansionare il codice QR con Monero @wallet sul telefono e ricevi i tuoi XMR in pochi minuti. 
-    Ricorda che puoi generare tutti gli indirizzi (indirizzi secondari) che desideri. Ciò è utile se si desidera mantenere separati i fondi per qualsiasi motivo.
-  guimerchant: "Merchants will probably find more convenient to use the 'Merchant' page (screenshot below), which is explained in detail in the 'Merchant view' section of"
-  guilinkguide1: la guida linkata sopra    
-  guisteps: "Queste due pagine offrono a tutti la possibilità di ricevere facilmente XMR seguendo questi passaggi:"
-  guiol: "Vai alla pagina 'Ricevi' e crea/seleziona l'indirizzo dove desideri ricevere le tue monete."
-  guiol1: Condividi l'indirizzo composto da lettere e numeri con la persona da cui desideri ricevere monete. Probabilmente potresti preferire l'utilizzo del più intuitivo codice QR.
-
+    Per ricevere XMR devi solo fornire a chi deve pagare un @indirizzo al quale possono
+    inviare fondi.  Il più delle volte è più semplice condividere un codice QR e consentire
+    a chi deve pagare di scansionarlo, invece di incollare la stringa alfanumerica.  Con
+    la GUI ogni indirizzo generato viene fornito con il suo codice QR. Fai scansionare
+    il codice QR con Monero @wallet sul telefono e ricevi i tuoi XMR in pochi minuti.  Ricorda
+    che puoi generare tutti gli indirizzi (indirizzi secondari) che desideri. Ciò
+    è utile se si desidera mantenere separati i fondi per qualsiasi motivo.
+  guimerchant: Merchants will probably find more convenient to use the 'Merchant'
+    page (screenshot below), which is explained in detail in the 'Merchant view' section
+    of
+  guilinkguide1: la guida linkata sopra
+  guisteps: 'Queste due pagine offrono a tutti la possibilità di ricevere facilmente
+    XMR seguendo questi passaggi:'
+  guiol: Vai alla pagina 'Ricevi' e crea/seleziona l'indirizzo dove desideri ricevere
+    le tue monete.
+  guiol1: Condividi l'indirizzo composto da lettere e numeri con la persona da cui
+    desideri ricevere monete. Probabilmente potresti preferire l'utilizzo del più
+    intuitivo codice QR.
+  merchdevguides: guide per sviluppatori
 contributing:
   intro: Monero è un progetto open-source e guidato dalla comunità. Qui sotto sono
     descritti diversi modi in cui aiutare il progetto a crescere.
@@ -673,47 +695,32 @@ roadmap:
   ongoing: Task in corso
   upcoming: Task in arrivo
   future: Futuro
- 
-  jan: 
-  feb: 
-  mar: 
-  apr: 
-  may: 
-  jun: 
-  jul: 
-  aug: 
-  sep: 
-  oct: 
-  nov: 
-  dec: 
-  comingsoon: 
-
   launched: Annuncio su Bitcointalk
   renamed: Rinominato da Bitmonero a Monero
   recovered: Recupero dopo un attacco spam
   paper1-2: Il Monero Research Lab pubblica i Paper 1 e 2
   paper3: Il Monero Research Lab pubblica il Paper 3
   released-0-8-8-6: 0.8.8.6 rilasciata
-
   paper4: Il Monero Research Lab pubblica il Paper 4
-
   released-0-9-0: 0.9.0 Hydrogen Helix rilasciata
   paper5: Il Monero Research Lab pubblica il Paper 5
-  ringsize-3: Aggiornamento della rete per richiedere un ringsize minimo di 3 per tutte le transazioni
+  ringsize-3: Aggiornamento della rete per richiedere un ringsize minimo di 3 per
+    tutte le transazioni
   released-0-10-0: 0.10.0 Wolfram Warptangent rilasciata
   splitcoinbase: Aggiornamento della rete per dividere coinbase in denominazioni
   released-0-10-1: 0.10.1 Wolfram Warptangent rilasciata
   guibeta1: GUI Beta 1 ufficialmente rilasciata
-
   enableringct: Aggiornamento della rete per abilitare transazioni RingCT
   released-0-10-2: 0.10.2 rilasciata; vulnerabilità critica patchata
   released-0-10-3-1: 0.10.3.1 Wolfram Warptangent rilasciata
-  hfminblock: Aggiornamento della rete per sistemare la dimensione minima di blocco e l'algoritmo per le commissioni dinamiche
+  hfminblock: Aggiornamento della rete per sistemare la dimensione minima di blocco
+    e l'algoritmo per le commissioni dinamiche
   webredesign: Sito web ridisegnato
   released-0-11-0: 0.11.0.0 Helium Hydra rilasciata
   fluffyblocks: Fluffy blocks
   guioutbeta: GUI non più in beta
-  minringsize5: Aggiornamento della rete per incrementare il ringsize minimo a 5 e richiedere l'uso di transazioni RingCT
+  minringsize5: Aggiornamento della rete per incrementare il ringsize minimo a 5 e
+    richiedere l'uso di transazioni RingCT
   releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra rilasciata
   zeromq: 0MQ/ZeroMQ
   subaddress: Sottoindirizzi
@@ -721,11 +728,11 @@ roadmap:
   release-0-11-1: 0.11.1.0 Helium Hydra rilasciata
   releasedgui-0-11-1: GUI 0.11.1.0 Helium Hydra rilasciata
   multisig: Multifirma (multisig)
-
   released-0-12-0: 0.12.0.0 Lithium Luna rilasciata
   releasedgui-0-12-0: GUI 0.12.0.0 Lithium Luna rilasciata
   cryptonightv2: Nuovo Proof of Work (PoW) CryptoNightV2
-  hfring7: Aggiornamento della rete per portare il ringsize minimo a 7, integrare multifirma, sottoindirizzi e modificare l'algoritmo PoW
+  hfring7: Aggiornamento della rete per portare il ringsize minimo a 7, integrare
+    multifirma, sottoindirizzi e modificare l'algoritmo PoW
   getmonero-fr-pl: Localizzazione Getmonero.org in Francese e Polacco
   released-0-12-1: 0.12.1.0 Lithium Luna rilasciata
   ledger: Supporto per portafoglio hardware Ledger
@@ -738,49 +745,26 @@ roadmap:
   released-0-13-0-2: 0.13.0.2 Beryllium Bullet rilasciata
   releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet rilasciata
   cryptonightv3: Nuovo Proof of Work CryptoNightV3
-  bulletproofs: Implementazione dei BulletProof - Riduzione della dimensione delle transazioni
-  ringsize11: Aggiornamento della rete per portare il ringsize minimo ad 11, integrare Bulletproof, aggiornare l'algoritmo di calcolo delle commissioni e modificare l'algoritmo PoW
+  bulletproofs: Implementazione dei BulletProof - Riduzione della dimensione delle
+    transazioni
+  ringsize11: Aggiornamento della rete per portare il ringsize minimo ad 11, integrare
+    Bulletproof, aggiornare l'algoritmo di calcolo delle commissioni e modificare
+    l'algoritmo PoW
   released-0-13-0-4: 0.13.0.4 Beryllium Bullet rilasciata
   paper8-9: Il Monero Research Lab pubblica i Paper 8 e 9
   releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet rilasciata
   paper7: Il Monero Research Lab pubblica il Paper 7
   paper10: Il Monero Research Lab pubblica il Paper 10
-  mms: Implementazione del Sistema di Messaggistica Monero (MMS) per automatizzare lo scambio di informazioni fra portafogli multifirma
-
+  mms: Implementazione del Sistema di Messaggistica Monero (MMS) per automatizzare
+    lo scambio di informazioni fra portafogli multifirma
   getmonero-de: Localizzazione Getmonero.org in Tedesco
   released-0-14-0: 0.14.0.0 Boron Butterfly rilasciata
   releasedgui-0-14-0: GUI 0.14.0.0 Boron Butterfly rilasciata
-  ccs: Nuovo Community Crowdfunding System (CCS) sostituisce il Forum Funding System (FFS)
+  ccs: Nuovo Community Crowdfunding System (CCS) sostituisce il Forum Funding System
+    (FFS)
   released-0-14-0-2: 0.14.0.2 Boron Butterfly rilasciata
   cryptonightr: Nuovo Proof of Work CryptoNightR
   getmonero-pt_br: Localizzazion Getmonero.org in Portoghese Brasiliano e Olandese
-  dlsag: 
-  pruning: 
-  trezort: 
-  nanox: 
-  tori2p: 
-  multisigms: 
-  weblate: 
-  rpcpay: 
-  ipv6: 
-  removedpid: 
-  nodediscovery: 
-  randomx: 
-
-  getmoneroweblate: 
-  releasedgui-0-15-0-4: 
-  released-0-15-0-5: 
-  dandelion: 
-  onionaddress: 
-  supercop: 
-  clsag: 
-  tryptych: 
-  kastelo: 
-  layer2: 
-  
-  returnaddr: 
-
-
 research-lab:
   intro: Monero non si impegna solo a creare una moneta fungibile, ma anche a perseguire
     la ricerca nel campo della privacy finanziaria. Qui di seguito troverai il lavoro
@@ -978,34 +962,45 @@ specs:
   amount_hidden_mode: Ring confidential transactions (transazioni confidenziali ad
     anello)
 library:
-  description: "Qui sotto sono elencate alcuni fra pubblicazioni, riviste e libri per il download:"
+  description: 'Qui sotto sono elencate alcuni fra pubblicazioni, riviste e libri
+    per il download:'
   books: Books
-  zerotomonerov2: "Zero to Monero: Second Edition"
+  zerotomonerov2: 'Zero to Monero: Second Edition'
   zerotomonerov2p: >
-    Pubblicato: 4 Aprile 2020, <a href="https://github.com/UkoeHB/Monero-RCT-report">codice sorgente LaTeX qui</a><br>
+    Pubblicato: 4 Aprile 2020, <a href="https://github.com/UkoeHB/Monero-RCT-report">codice
+    sorgente LaTeX qui</a><br>
     Una spiegazione concettuale (e tecnica) di Monero.<br>
-    Proviamo ad insegnare a chiunque conosca l'algebra di base e semplici concetti di informatica come la "rappresentazione di bit" di un numero non solo come Monero funziona in profondità, ma anche come può essere utile e bella la crittografia.
-  zerotomonerov1: "Zero to Monero: First Edition"
+    Proviamo ad insegnare a chiunque conosca l'algebra di base e semplici concetti
+    di informatica come la "rappresentazione di bit" di un numero non solo come Monero
+    funziona in profondità, ma anche come può essere utile e bella la crittografia.
+  zerotomonerov1: 'Zero to Monero: First Edition'
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
+    source code here</a>
   masteringmonerop: >
     Una guida sul mondo apparentemente complesso di Monero.<br>
     Include:
-    <ul><li>Una introduzione alle blockchain e all'importanza della privacy - ideale per utenti non tecnici.</li>
+    <ul><li>Una introduzione alle blockchain e all'importanza della privacy - ideale
+    per utenti non tecnici.</li>
     <li>Discussione sui limiti di Bitcoin e soluzioni specifiche apportate da Monero.</li>
-    <li>Storie degli utilizzatori (come Monero protegge la tua privacy), analogie, esempi, discussioni tecnico-legali, e frammenti di codice che illustrano gli aspetti tecnici principali.</li>
-    <li>Dettagli della rete decentralizzata Monero, l'architettura p2p, il ciclo di vita della transazione e i principi di sicurezza.</li>
-    <li>Introduzione ai fondamenti tecnici di Monero, rivolto a sviluppatori, ingegneri, architetti software ed utenti curiosi.</li>
+    <li>Storie degli utilizzatori (come Monero protegge la tua privacy), analogie,
+    esempi, discussioni tecnico-legali, e frammenti di codice che illustrano gli aspetti
+    tecnici principali.</li>
+    <li>Dettagli della rete decentralizzata Monero, l'architettura p2p, il ciclo di
+    vita della transazione e i principi di sicurezza.</li>
+    <li>Introduzione ai fondamenti tecnici di Monero, rivolto a sviluppatori, ingegneri,
+    architetti software ed utenti curiosi.</li>
     <li>Nuovi sviluppi come Kovri, Bulletproofs, Multifirma, Portafogli hardware etc.</li></ul>
-    Visita il sito <a href="https://masteringmonero.com/">Mastering Monero</a> per informazioni sulla versione completa.
+    Visita il sito <a href="https://masteringmonero.com/">Mastering Monero</a> per
+    informazioni sulla versione completa.
   magazines: Riviste
   revuoq4p: >
     Rivista Monero trimestrale, edizione Q4 2017.<br>
     In questo numero, aggiornamenti su: sviluppo, Monero Research Lab, Kovri e comunità.
   revuoq3p: >
     Rivista Monero trimestrale, edizione Q3 2017.<br>
-    In questo numero, aggiornamenti su: sviluppo, Monero Research Lab, Kovri, comunità, Hardware e Monerujo.
-
+    In questo numero, aggiornamenti su: sviluppo, Monero Research Lab, Kovri, comunità,
+    Hardware e Monerujo.
 moneropedia:
   add_new_button: Aggiungi nuova voce
   add_new_text1: Se c'è una voce che vorresti modificare o aggiungere,

@@ -117,6 +117,28 @@ home:
   exchanges: Corretoras
   choosewallet: Escolha uma Carteira
   whatis: Aprenda mais sobre o Monero
+  visitmrl: Visitar o Laboratório
+  researchlab_para: O Laboratório de Pesquisa Monero é uma parte muito importante
+    do Monero. Pesquisadores e especialistas em criptografia de todo o mundo se reúnem
+    para encontrar novas maneiras de melhorar o Monero. Leia os artigos dos nossos
+    cientistas e junte-se a eles!
+  contributecommunity_para: Monero não é apenas uma moeda, é uma comunidade descentralizada
+    que existe graças a centenas de voluntários que dedicam seu tempo ao projeto.
+    Junte-se a nós!
+  contributecommunity: 'Nós Precisamos de Você: Colabore!'
+  guides: Guias e Recursos
+  merchants: Comerciantes
+  choosewallet_para: Para usar Monero, você precisará de uma carteira. Visite nossa
+    página de Downloads e escolha a que mais lhe agrada. Nossas carteiras estão disponíveis
+    para diversas plataformas e são tudo o que você precisa para começar a fazer transações.
+  useit_para: Monero é uma moeda que pode ser trocada por bens e serviços, de maneira
+    privada e com taxas bem acessíveis. Muitas pessoas e empresas aceitam XMR como
+    pagamento. Confira nossa lista de comerciantes que atualmente aceitam Monero.
+  getcoins_para: Depois de instalar a carteira, você precisará obter algumas moedas
+    de Monero. Existem diversas formas de se adquirir moedas, você pode tentar minerá-las
+    ou recebê-las em troca de algum serviço, mas a maneira mais fácil é usar uma corretora
+    para trocar o seu dinheiro por XMR. Diversas corretoras (centralizadas e descentralizadas)
+    listam Monero (XMR).
 hangouts:
   intro: A comunidade Monero é bem diversa. Viemos de todos os cantos, mas certamente
     temos alguns lugares onde nos reunimos para conversar. Você encontrará a maioria
@@ -165,6 +187,7 @@ merchants:
   intro3: (selecione o modelo 'Comerciante' e preencha todas as seções).
   disclaimer: |
     "Favor notar que os links presentes são listados por conveniência e para fins informativos; eles não constituem endosso da comunidade Monero de quaisquer produtos, serviços ou opiniões das corporações, organizações e indivíduos aqui listados. A comunidade Monero não se responsabiliza pela exatidão, legalidade ou conteúdo destes websites externos. Entre em contato com o serviço em questão para obter respostas sobre seu conteúdo. Seja prudente, você é responsável por fazer sua própria pesquisa. Sempre use o bom senso ao realizar compras online."
+  onion: Endereço onion (requer Tor)
 sponsorships:
   intro: As seguintes empresas apoiam o Projeto Monero em sua meta de trazer privacidade
     financeira ao mundo. Nós não poderíamos ser mais gratos por suas contribuições.
@@ -284,6 +307,9 @@ downloads:
   yesissuesgui: A versão 0.15.0.4 (Linux) foi acidentalmente compilada sem suporte
     a Trezor. Assim, recomenda-se aos usuários Trezor no Linux esperar pela nova versão
     (0.15.0.5) ou compilar a Carteira GUI por si sós
+  moreinfofaq: Mais informações nas Perguntas Frequentes
+  avwarning: Alguns programas de antivírus e firewall podem sinalizar os arquivos
+    e os executáveis do Monero como malware.
 monero-project:
   kovri: O projeto Kovri usa criptografia de ponta a ponta para que nem o remetente
     e nem o destinatário de uma transação do Monero precisem revelar seu endereço
