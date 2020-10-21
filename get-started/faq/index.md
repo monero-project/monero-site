@@ -201,7 +201,7 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#import-blockchain"></a>{% t faq.qimporting %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.aimporting %}</p>
-                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/resources/user-guides/importing_blockchain.html">{% t user-guides.import-blockchain %}</a></p>
+                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/downloads/#blockchain">{% t downloads.blockchain %}</a></p>
                     </div>
                 </div>
                 <div class="row center-xs">
