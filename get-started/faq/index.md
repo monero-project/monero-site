@@ -23,8 +23,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-word">{% t faq.qword %}</a></li>
                         <li><a href="#anchor-contribute">{% t faq.qcontribute %}</a></li>
                         <li><a href="#anchor-value">{% t faq.q1 %}</a></li>
-                        <li><a href="#anchor-buy">{% t faq.q2 %}</a></li>
-                        <li><a href="#anchor-buy-fiat">{% t faq.qxmrfiat %}</a></li>
+                        <li><a href="#anchor-buy">{% t faq.q2xmrfiat %}</a></li>
                         <li><a href="#anchor-different">{% t faq.q4 %}</a></li>
                         <li><a href="#anchor-btc-difference">{% t faq.q7 %}</a></li>
                         <li><a href="#anchor-fungibility">{% t faq.q11 %}</a></li>
@@ -115,17 +114,11 @@ permalink: /get-started/faq/index.html
                     </div>
                 </div>
                 <div class="tab" id="anchor-buy">
-                    <h3><a class="anchor" href="#anchor-buy"></a>{% t faq.q2 %}</h3>
+                    <h3><a class="anchor" href="#anchor-buy"></a>{% t faq.q2xmrfiat %}</h3>
                     <div class="tab-answer">
-                        <p>{% t faq.a2 %}</p>
+                        <p>{% t faq.a2xmrfiat %}</p>
                         <p>{% t faq.a2exchanges %} <a href="{{ site.baseurl }}/community/merchants/#exchanges">{% t titles.merchants %}</a>.</p>
                         <p>{% t faq.additional %} <a href="https://www.monerooutreach.org/how-to-buy-monero.html">How to Buy Monero (Monero Outreach)</a></p>
-                    </div>
-                </div>
-                <div class="tab" id="anchor-buy-fiat">
-                    <h3><a class="anchor" href="#anchor-buy-fiat"></a>{% t faq.qxmrfiat %}</h3>
-                    <div class="tab-answer">
-                        <p>{% t faq.axmrfiat %}</p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-different">
