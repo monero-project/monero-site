@@ -28,8 +28,16 @@
     {% elsif page.summary %}{{ page.summary }}
     {% else %}{% t global.titlemeta %}
     {% endif %}">
-    <!-- If the page specifies a dedicated image we use that one, otherwise we use the classic Monero logo -->
-    <meta property="og:image" content="{% if page.image %}https://getmonero.org{{ page.image }}{% else %}https://getmonero.org/press-kit/symbols/monero-symbol-on-white-480.png{% endif %}">
+    <!-- If the page specifies a dedicated image which is not an SVG file, we use that one. Otherwise we use the classic Monero logo -->
+    <meta property="og:image" content="{% capture og_image %}
+    {% capture monero_logo %}{{ site.baseurl}}/press-kit/symbols/monero-symbol-on-white-480.png{% endcapture %}
+    {% if page.image %}
+      {% if page.image contains '.svg' or page.image contains '.SVG' %}{{ monero_logo }}
+      {% else %}{{ site.baseurl}}{{ page.image }}
+      {% endif %}
+    {% else %}{{ monero_logo }}
+    {% endif %}
+    {% endcapture %}{{ og_image | strip }}">
     <meta property="og:site_name" content="{% t global.sitename %}">
     <meta property="og:url" content="https://getmonero.org{{ page.url }}">
     <meta property="og:type" content="website">
