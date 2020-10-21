@@ -55,6 +55,19 @@ titles:
   blogbytag: Blog
   library: 圖書出版品
 
+navigation:
+  getstarted: 開始使用
+  whatis: 什麼是門羅幣？
+  accepting: 接受支付
+  contributing: 貢獻
+  mining: 挖礦
+  community: 社群
+  team: 合作團隊
+  merchants: 使用商家
+  resources: 相關資源
+  about: 關於門羅幣
+  mrl: 研究實驗室
+
 index:
   page_title: "門羅幣 - 安全、保護隱私且完全匿蹤的加密貨幣"
 
