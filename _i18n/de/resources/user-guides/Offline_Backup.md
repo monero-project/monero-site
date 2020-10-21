@@ -1,38 +1,38 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Operating Systems:  Various versions of Linux and Windows 7, 8
+## Betriebssysteme:  Verschiedene Linux-Versionen und Windows 7, 8
 
-### Wallet Software:  Simplewallet
+### Wallet-Software:  Simplewallet
 
-#### Resource for Creating Bootable Disks:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
+#### Quelle zur Erstellung eines bootfähigen Speichermediums:  [Linux](http://www.pendrivelinux.com/),       [Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
 
-#### Resource for Monero Binaries:  [Monero Binaries]({{ site.baseurl }}/downloads/)
+#### Quelle für Monero-Software:  [Monero-Software]({{ site.baseurl }}/downloads/)
 
-- Take any computer you have lying around, even your normal workstation. You may find it easier to use an older computer that has no wifi or bluetooth if you're particularly paranoid
+- Nimm irgendeinen Computer, der bei dir herumliegt, oder auch deinen regulären Rechner. Solltest du besonders paranoid sein, findest du es vielleicht besser, einen alten Computer ohne Bluetooth- oder WLAN-Funktion zu nutzen.
 
-- Create a Linux or Windows bootable disk, and make sure you have the Monero binaries on the same disk or on a second disk (for Linux make sure you have also downloaded copies of the dependencies you will need, libboost1.55 and miniupnpc for instance)
+- Erstelle ein bootfähiges Linux- oder Windows-Speichermedium und stelle sicher, dass die Monero-Software auf diesem oder einem anderen Medium gespeichert ist (bei Linux solltest du sichergehen, dass du außerdem Kopien der benötigten Abhängigkeiten, wie z.B. libboost1.55 und miniupnpc, heruntergeladen hast).
 
-- Disconnect the network and/or Internet cables from your computer, physically remove the wifi card or switch the wifi/bluetooth off on a laptop if possible
+- Trenne die Netzwerk- und/oder die Internetkabel von deinem Computer, entferne die WLAN-Platine oder schalte bei Möglichkeit die WLAN-/Bluetooth-Funktion eines Laptops aus.
 
-- Boot into your bootable OS, install the dependencies if necessary
+- Fahre dein bootfähiges Betriebssystem hoch und installiere bei Bedarf die Abhängigkeiten.
 
-- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)
+- Kopiere die Monero-Software auf eine RAM-Festplatte (/dev/shm bei Linux; bootfähige Windows-ISOs haben in der Regel ein "Z:"-Laufwerk oder Ähnliches).
 
-- Don't run the Monero daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account
+- Betreibe keinen Monero-Hintergrunddienst. Stattdessen kannst du durch die Befehlszeile mit dem Befehl "monero-wallet-cli" ein neues Monero-@Konto erstellen.
 
-- When prompted for a name, give it any name, it doesn't really matter
+- Wenn nach einem Namen gefragt wird, kannst du einfach irgendeinen eingeben. Der gewählte Name spielt keine große Rolle.
 
-- When prompted for a password, type in like 50 - 100 random characters. Don't worry that you don't know the password, just make it LONG
+- Wenn nach einem Passwort gefragt wird, tippe etwa 50 bis 100 zufällige Charakter ein. Wenn du dir das Passwort nicht merken kannst, keine Sorge - es soll einfach nur LANG sein.
 
-- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed  
-**WARNING**:  If you forget to write down this information your funds may be lost forever
+- **DER ENTSCHEIDENDE SCHRITT**:  Schreibe deinen 25 Wörter umfassenden @mnemonischen-Seed (auf Papier) nieder.
+**WARNUNG**:  Solltest du vergessen, diese Information aufzuschreiben, könnten deine Gelder für immer verloren gehen.
 
-- Write down (on your phone, on paper, on another computer, wherever you want) your address and view key
+- Schreibe deine Adresse und deinen View-Key (auf deinem Telefon, auf Papier, einem anderen Rechner - wo auch immer du möchtest) nieder.
 
-- Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours
+- Schalte den Computer aus, wenn es eine Batterie gibt, entferne diese bei Möglichkeit, und lasse deinen Rechner für einige Stunden ausgeschaltet.
 
-The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box).
+Das Konto, das du erstellt hast, wurde im RAM erstellt. Die digitalen Dateien sind jetzt nicht abrufbar. Sollte ein Angreifer es irgendwie schaffen, an diese Daten zu gelangen, fehlt ihm immer noch das lange Passwort, um es öffnen zu können. Wenn du Zahlungen erhalten möchtest, hast du deine öffentliche Adresse und bei Bedarf deinen View-Key. Wenn du auf dein Konto zugreifen willst, hast du deinen 25 Wörter umfassenden @mnemonischen-Seed, von welchem du nun mehrere Kopien (einschließlich einer in bspw. einem Bankschließfach hinterlegten analogen Kopie) anfertigen kannst. 
 
-Credit:  Riccardo Spagni
+Credit: Riccardo Spagni
 
-Related:  [Offline Account Generator](http://moneroaddress.org/)
+Siehe auch: [Offline Konto-Generator](http://moneroaddress.org/)
