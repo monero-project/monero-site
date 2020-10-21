@@ -484,7 +484,6 @@ user-guides:
   view-only: How to make a view-only wallet
   prove-payment: How to prove payment
   restore-from-keys: Restoring wallet from keys
-  nicehash: How to mine Monero XMR without a mining equipment
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
