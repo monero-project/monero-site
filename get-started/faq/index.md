@@ -23,7 +23,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-word">{% t faq.qword %}</a></li>
                         <li><a href="#anchor-contribute">{% t faq.qcontribute %}</a></li>
                         <li><a href="#anchor-value">{% t faq.q1 %}</a></li>
-                        <li><a href="#anchor-buy">{% t faq.q2xmrfiat %}</a></li>
+                        <li><a href="#anchor-buy">{% t faq.q2 %}</a></li>
                         <li><a href="#anchor-different">{% t faq.q4 %}</a></li>
                         <li><a href="#anchor-btc-difference">{% t faq.q7 %}</a></li>
                         <li><a href="#anchor-fungibility">{% t faq.q11 %}</a></li>
