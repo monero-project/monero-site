@@ -1,53 +1,53 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Operating Systems:  Windows, Linux, Mac
+## Betriebssysteme:  Windows, Linux, Mac
 
-- Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @wallet
+- Rufe deinen 25 Wörter umfassenden @mnemonischen Seed, welchen du im Zuge der Erstellung deines alten Monero-@Wallets gesichert hast, ab.
 
-### Account Software:  monero-wallet-cli
+### Konto-Software:  monero-wallet-cli
 
-- Open a command prompt and navigate to the drive and directory that contains monero-wallet-cli
+- Öffne die Befehlszeile und navigiere zu dem Laufwerk und Verzeichnis, in welchem monero-wallet-cli liegt.
 
-- At the command prompt type:  `monero-wallet-cli --restore-deterministic-wallet`
+- Gib `monero-wallet-cli --restore-deterministic-wallet` in die Befehlszeile ein.
 
-- Once you press enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do
+- Sobald du auf Eingabe drückst, wirst du dazu aufgefordert, einen Wallet-Dateinamen einzugeben. Gib deinem Wallet einen Namen (irgendein beliebiger reicht aus).
 
-- Press enter again and you will be prompted for a password.  Give your wallet a new and long password
+- Nach der erneuten Betätigung der Eingabetaste wirst du aufgefordert, ein Passwort einzugeben. Gib deinem Wallet ein neues und langes Passwort.
 
-- Press enter again you will be prompted to repeat the password
+- Drücke erneut auf Eingabe; die Wiederholung des Passwortes wird gefordert.
 
-- Press enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier
+- Nach erneuter Betätigung der Eingabetaste wirst du aufgefordert, deinen 25 Worte umfassenden mnemonischen Seed (nach Electrum-Art), welchen du zuvor abgerufen hast, einzugeben.
 
--  You will then be prompted with "Restore from specific blockchain height (optional, default 0):" Default will start the restore process from the beginning of the Monero blockchain. If you don't know the specific blockchain height, just hit enter. (Specifying a specific blockchain height will start the restore process from that specific height. This will save a bit of time in scanning, if you know what starting blockchain height your initial funds were transacted for this specific account.)
+- Dir wird anschließend "Wiederherstellung von konkreter Blockchainhöhe (optional, 0 voreingestellt):" angezeigt. Der Wiederherstellungsprozess startet gemäß Standardeinstellung ganz zu Beginn der Blockchain. Wenn du die konkrete Blockchainhöhe nicht kennst, drücke einfach auf Eingabe. (Das Festsetzen einer konkreten Blockchainhöhe startet den Wiederherstellungsprozess ab ebendieser Höhe. Das spart ein wenig Zeit im Scanprozess, vorausgesetzt du kennst die Blockchainhöhe bei der ersten Transaktion dieses Kontos.)
 
-After you have entered the 25 word mnemonic seed and have chosen your specific blockchain height, monero-wallet-cli will generate the same public address and view key as your old wallet and begin the refresh process automatically. (Please be patient as the refresh process may take a while.)
+Nachdem du die 25 Wörter und damit deinen mnemonischen Seed eingegeben und deine konkrete Blockchainhöhe gewählt hast, wird monero-wallet-cli dieselbe öffentliche Adresse und denselben View-Key deines alten Wallets generieren und den Aktualisierungsvorgang automatisch starten. (Bitte gedulde dich ein wenig; der Aktualisierungsvorgang kann eine Weile dauern.)
 
-### Account Software:  monero-wallet-gui
+### Konto-Software:  monero-wallet-gui
 
-Lauch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:
+Starte `monero-wallet-gui`. Gehe über zum nächsten Schritt, falls du das Programm zum ersten Mal startest, ansonsten wähle `Abbrechen`:
 
 ![cancel opening](png/restore_account/cancel-opening.png)
 
-Select your appropriate language `English(US)`:
+Wähle die für dich passende Sprache `Deutsch`:
 
 ![choose language](png/restore_account/choose-language.png)
 
-Click on `Restore wallet from keys or mnemonic seed`:
+Klicke auf `Stelle Wallet mit Schlüsseln oder mnemonischem Seed wieder her`:
 
 ![choose restore](png/restore_account/choose-restore.png)
 
-Keep `Restore from seed` selected, give your wallet a name & storage location, and complete the `Enter your 25 (or 24) word mnemonic seed`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:
+Lasse `Mit mnemonischem Seed wiederherstellen` ausgewählt, lege Namen und Speicherstelle deines Wallets fest und vervollständige den Teil `Gebe deinen, aus 25 (oder 24) Wörtern bestehenden, mnemonischen Seed ein`. Um das Scannen der ältesten Blöcke zu umgehen, kannst du eine optionale `Wiederherstellungshöhe` festlegen. Klicke dann auf den `rechten` Pfeil:
 
 ![restore wallet](png/restore_account/restore-wallet.png)
 
-On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:
+Auf der nächsten Seite gibst du deinem Wallet ein starkes Passwort. Bestätige dieses, bevor du erneut auf den `rechten` Pfeil klickst:
 
 ![wallet password](png/restore_account/wallet-password.png)
 
-Specify your daemon settings and click the `Right` arrow:
+Lege die Einstellungen deines Hintergrunddienstes fest und klicke abermals auf den `rechten` Pfeil:
 
 ![daemon settings](png/restore_account/daemon-settings.png)
 
-Click on `USE MONERO` to enjoy your restored wallet:
+Klicke auf `USE MONERO` und hab Spaß mit deinem wiederhergestellten Wallet:
 
 ![all set up](png/restore_account/all-set-up.png)

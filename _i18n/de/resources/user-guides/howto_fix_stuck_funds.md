@@ -1,32 +1,32 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-Sometimes, your funds will become stuck - you will have some locked funds that never become unlocked. This is how you fix it.
+Manchmal kann es passieren, dass dein Geld feststeckt - du hast gesperrtes Guthaben, das niemals freigegeben wird. So löst du das Problem:
 
-- Load your wallet in monero-wallet-cli.
+- Lade dein Wallet in monero-wallet-cli.
 
-- Type
+- Tippe
 
 > seed
 
-into the command prompt. Write down your 25 word seed, if you haven't already. This is the best way to make sure you don't loose access to your funds.
+in die Befehlszeile ein. Falls noch nicht geschehen, schreibe deinen 25-Wort-Seed nieder. Dies ist der beste Weg um sicherzustellen, dass du den Zugriff auf dein Vermögen nicht verlierst.
 
-- Close monero-wallet-cli by typing
+- Schließe monero-wallet-cli durch die Eingabe von
 
 > exit
 
-- Backup all of your wallet related files. These include:
+- Sichere alle dem Wallet zugehörigen Dateien. Diese beinhalten:
 
 > yourwalletname.bin
 > yourwalletname.bin.keys
 > yourwalletname.bin.address.txt
 
-This can be done by copying the files to a new folder.
+Du kannst dies tun, indem du die Dateien in einen neuen Ordner kopierst.
 
-Sometimes, when creating your wallet, you might have named it something without the .bin part. In that case, the wallet file will be called yourwalletname without the .bin at the end.
+Beim Erstellen deines Wallets könntest du einen Namen ohne das ".bin"-Element gewählt haben. In diesem Fall wird sich die Wallet-Datei schlicht "yourwalletname" (ohne ".bin") nennen.
 
-- Delete yourwallet.bin
+- Lösche yourwallet.bin.
 
-- Load monero-wallet-cli, type in the name of the wallet you just deleted
+- Lade monero-wallet-cli und gib den Namen deines gerade gelöschten Wallets ein.
 
-- Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked.
+- Gib das Passwort ein. Das Wallet wird nun aktualisieren, danach wird dein gesperrtes Guthaben hoffentlich freigegeben und verfügbar sein.
 

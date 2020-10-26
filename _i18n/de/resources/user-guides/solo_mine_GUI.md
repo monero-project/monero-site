@@ -1,17 +1,17 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-It is very easy to solo mine with the official GUI. If you have not done so already, go to the <a href="{{site.baseurl}}/downloads/">Monero downloads page</a> and download the official GUI for your operating system. Then, run the setup and be patient as Monero synchronizes with the network. You should see that it displays "Connected" in the lower left corner.
+Das Solomining ist mit dem offiziellen GUI ziemlich einfach. Solltest du das offizielle GUI-Wallet noch nicht heruntergeladen haben, besuche die <a href="{{site.baseurl}}/downloads/">Monero-Downloads-Seite</a> und lade die für dein Betriebssystem passende Version herunter. Führe die Einrichtung durch und übe dich dabei in Geduld - Monero muss zunächst mit dem Netzwerk synchronisieren. Dir sollte dann in der unteren linken Ecke "Verbunden" angezeigt werden.
 
 <img src="png/solo_mine_GUI/01.PNG" style="width: 600px;"/>
 
-Click on the "Advanced" tab. You should see that several other options appear. Now click on the "Mining" sub-tab.
+Klicke auf den "Erweitert"-Reiter. Dir sollten einige andere Optionen angezeigt werden. Klicke nun auf den "Mining"-Unterreiter. 
 
 <img src="png/solo_mine_GUI/02.PNG" style="width: 600px;"/>
 
-You should now have an option to start mining. You can optionally change the number of threads to mine with. For optimal efficiency, you should mine with your CPU's cache divided by 2. You will need to look up your CPU's specs on the manufacturer's website. If you are unsure, leave the number of threads at 1. Click the "Start mining" button.
+Dir sollte nun eine Option zum Starten des Minings angezeigt werden. Optional kannst du die Anzahl der Threads, mit denen du minest, abändern. Es ist am effizientesten, wenn du das Mining mit der Hälfte des Caches deines CPUs betreibst. Hierzu musst du zunächst die Spezifikationen deines CPUs herausfinden. Wenn du dir unsicher bist, belasse die Anzahl der Threads bei 1. Klicke nun auf den "Starte Mining"-Button.
 
 <img src="png/solo_mine_GUI/03.PNG" style="width: 600px;"/>
 
-You are now mining with the network, as you can see on the bottom of the image. In this example, the computer is contributing 23 H/s to the Monero network. Mining helps keep the network secure, and you may get lucky and receive a reward for protecting the network.
+Wie du im unteren Bereich des Fotos sehen kannst, minest du nun innerhalb des Netzwerks. In diesem Beispiel trägt der Computer 23 H/s zum Monero-Netzwerk bei. Mining hilft dabei, das Netzwerk abzusichern, und vielleicht hast du Glück und erhältst für deinen Aufwand zum Schutz des Netzwerks eine Belohnung.
 
-To stop mining, simply click the "Stop mining" button.
+Um das Mining zu beenden, klickst du einfach auf den "Beende Mining"-Button.
