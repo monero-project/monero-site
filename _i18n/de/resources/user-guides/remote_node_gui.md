@@ -1,43 +1,44 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Check if your wallet is in advanced mode
-To use a custom remote node, your wallet must be in advanced mode. Simple mode and Simple mode (bootstrap) don't support this feature.
+## Den erweiterten Modus des Wallets überprüfen
+Um einen benutzerdefinierten Remote-Node zu nutzen, muss sich dein Wallet im erweiterten Modus befinden. Weder der einfache Modus noch der einfache Modus (Bootstrap) unterstützen diese Funktion. 
 
-To check if your wallet is in advanced mode, go to `Settings` > `Info` and see `Wallet mode`. 
+Um zu überprüfen, ob sich dein Wallet im erweiterten Modus befindet, gehe zu `Einstellungen` > `Info` und sieh den `Wallet-Modus` ein.
 
-If your wallet is not in Advanced mode, you will have to change it to Advanced mode (see next step).
+Sollte dein Wallet noch nicht im erweiterten Modus sein, musst du zu diesem wechseln (siehe nächster Schritt).
 
-If your wallet is already in Advanced mode, you can skip the next step.
+Wenn dein Wallet bereits im erweiterten Modus ist, kannst du den nächsten Schritt überspringen.
 
 ![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
 
-## Change your wallet to advanced mode
-If your wallet is open, you need to close it first. Go to `Settings` > `Wallet` > `Close this wallet`
+## In den erweiterten Modus wechseln
+Wenn dein Wallet geöffnet ist, musst du es zunächst schließen. Gehe zu `Einstellungen` > `Wallet` > `Dieses Wallet schließen`.
 
 ![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
 
-The main menu (`Welcome to Monero` screen) will open. At the bottom left, click on `Change wallet mode` button, and on the next page select `Advanced mode`. Next, open your wallet file again.
+Das Hauptmenü (`Willkommen bei Monero`-Maske) öffnet sich. Unten links klickst du zunächst auf den `Walletmodus ändern`-Button und wählst auf der nächsten Seite die Option `Erweiterter Modus` aus. Anschließend öffnest du deine Wallet-Datei erneut.
 
 ![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
 
 ![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
 
-## Finding a public remote node
-First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources for finding nodes. One of the easiest methods would be to use a public remote node run by moneroworld, but they have a tool for finding random nodes too.
+## Einen öffentlichen Remote-Node finden
+Als Erstes musst du einen öffentlichen Remote-Node finden, zu dem du dich verbinden kannst. Einige gute Ressourcen zum Auffinden von Nodes sind auf der [moneroworld.com](https://moneroworld.com/#nodes)-Seite gelistet. Eine der einfachsten Methoden wäre es wohl, einen von Moneroworld betriebenen öffentlichen Remote-Node zu nutzen; dort gibt es aber auch ein Tool zum Aufspüren zufälliger Nodes.
 
-## Configuring your wallet to connect to a custom public remote node
-When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. 
+## Das Wallet zwecks Verbindung zu einem benutzerdefinierten Remote-Node konfigurieren
 
-If you don't see this pop up, go to `Settings` > `Node` page.
+Beim Öffnen deines Wallets erscheint ein Fenster mit der Option `Benutzerdefinierte Einstellungen verwenden`. Wenn du diese auswählst, wirst du über `Einstellungen` zu `Node` geleitet.
 
-![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
+Wenn dieses Pop-up nicht erscheint, gehe direkt über `Einstellungen` zur `Node`-Seite.
 
-On this page select `Remote Node`.
+![Configure Remote Node](png/remote_node/remote_node_config.png){:width="600px"}
 
-In `Address` you should fill the address of the remote node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any IP address. 
+Wähle auf dieser Seite `Remote-Node`.
 
-In `Port` you should fill the port of the remote node. If a remote node is listed as `node.moneroworld.com:18089`, the address is `node.moneroworld.com` and the port is `18089`. The default port is `18081`, but it can vary depending on the node you are connecting to.
+Bei `Adresse` trägst du die Adresse des Remote-Nodes, zu welchem du dich verbinden möchtest, ein. Diese kann in etwa wie `node.moneroworld.com` oder jedwede IP-Adresse aussehen.
 
-If your remote node requires authentication, you can enter a username in `Daemon username` and a password in `Daemon password`.
+Bei `Port` trägst du den Port des Remote-Nodes ein. Wenn ein Node unter `node.moneroworld.com:18089` gelistet ist, ist die Adresse `node.moneroworld.com` und der Port ist `18089`. Der standardmäßig voreingestellte Port ist `18081`, er kann aber je nach gewähltem Node variieren. 
 
-Finally, click on `Connect` button and wait for your wallet to connect.
+Sollte dein Remote-Node einer Authentifizierung bedürfen, kannst du einen Nutzernamen in `Benutzername des Hintergrunddienstes` und ein Passwort in `Passwort des Hintergrunddienstes` eingeben.
+ 
+Abschließend klickst du auf den `Verbinden`-Button und wartest darauf, dass sich dein Wallet verbindet.
