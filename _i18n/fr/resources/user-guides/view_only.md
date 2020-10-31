@@ -19,10 +19,10 @@ Ensuite, créez votre portefeuille d'audit en tapant `monero-wallet-cli --genera
 
 Ouvrez un portefeuille existant ou créez en un nouveau en utilisant `monero-wallet-gui`. Dans le portefeuille, allez à la page `Réglages` > `Portefeuille` :
 
-![settings](png/view-only/settings.png)
+![settings](/img/resources/user-guides/en/view-only/settings.png)
 
 Cliquez sur `Créer un portefeuille d'audit` > `Créer un portefeuille`, le portefeuille sera créé dans le même répertoire et en utilisant le mot de passe actuel.
 
 Optionnellement, double-cliquez sur la fenêtre de `Succès` pour en copier le message, puis cliquez sur `OK` pour le fermer :
 
-![Success](png/view-only/Success.png)
+![Success](/img/resources/user-guides/en/view-only/Success.png)

@@ -39,12 +39,12 @@ Stel het in op 1 als de instelling 0 is:
 
 Alice kan haar monero-wallet-gui openen en haar transactiedetails bekijken op de pagina Geschiedenis:
 
-![Geschiedenis](png/prove-payment/history.png)
+![Geschiedenis](/img/resources/user-guides/en/prove-payment/history.png)
 
 Hier kan ze de transactie-ID en het adres van Bob kopiëren door erop te klikken.
 Vervolgens kan ze op `P` klikken voor het bewijs van een betaling (de transactiesleutel):
 
-![Bewijs van betaling](png/prove-payment/payment-proof.png)
+![Bewijs van betaling](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 
 ---
@@ -72,11 +72,11 @@ zal Charlie bij Bob willen navragen of het adres inderdaad van hem is, net als b
 
 Charlie opent monero-wallet-gui en gaat naar de pagina Geavanceerd > Bewijzen/controleren om de gegevens van Alice in te vullen in het gedeelte Transactie controleren.
 
-![Check payment](png/prove-payment/check-payment.png)
+![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
 
 Vervolgens klikt Charlie op Controleren om te zien hoeveel door deze transactie naar dit adres is verzonden, en hoeveel bevestigingen de transactie heeft.
 
-![Betaling gecontroleerd](png/prove-payment/payment-checked.png)
+![Betaling gecontroleerd](/img/resources/user-guides/en/prove-payment/payment-checked.png)
 
 
 ---

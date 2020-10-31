@@ -36,12 +36,12 @@ Jeśli ustawione jest na 0, zmień na 1:
 
 Ewa może otworzyć swój Graficzny Interfejs Użytkownika i przejść do Historii, gdzie wyszuka szczegóły transakcji:
 
-![History](png/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.png)
 
 Stąd może ona skopiować numer identyfikacyjny transakcji oraz adres Jacka, klikając na nie.
 Następnie po kliknięciu `P`, Ewa wygeneruje dowód płatności (klucz transakcji).
 
-![Payment proof](png/prove-payment/payment-proof.png)
+![Payment proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 
 ---
@@ -66,11 +66,11 @@ Paweł zamienił symbole na informacje dostarczone przez Ewę. monero-wallet-cli
 
 Paweł otworzy swój Graficzny Interfejs Użytkownika i przejdzie do strony Advanced > Prove/Check, aby wypełnić pole Check informacjami dostarczonymi przez Ewę.
 
-![Check payment](png/prove-payment/check-payment.png)
+![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
 
 Po kliknięciu "Check" Paweł dowie się, jaka kwota została przelana na ten adres w tej konkretnej transakcji oraz ile potwierdzeń miała transakcja.
 
-![Payment checked](png/prove-payment/payment-checked.png)
+![Payment checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)
 
 
 ---

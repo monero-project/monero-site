@@ -27,28 +27,28 @@
 
 شغّل `monero-wallet-gui`. إذا كانت هذه هي المره الأولي التي تقوم فيها بتشغيلها فإذهب إلي الخطوه التاليه, غير ذلك إضغط `إلغاء`:
 
-![cancel opening](png/restore_from_keys/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
 
 إختر اللغه المناسبه :
 
-![choose language](png/restore_from_keys/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
 
 إختر 'إستعاده المحفظه من المفاتيح أو كلمات الإستعاده':
 
-![choose restore](png/restore_from_keys/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
 
 اختر 'إستعاده من المفاتيح', عيّن لمحفظتك إسماً ومكان للتخزين, وأكمل بيانات 'عنوان الحساب (عام)' و 'مفتاح الرؤيه (خاص)' و 'مفتاح الإنفاق (خاص)'. يمكنك إختيارياً تحديد 'طول الإسترجاع' لتفادي فحص الكتل القديمه. وبعد ذلك إضغط السهم جهه 'اليمين':
 
-![restore wallet](png/restore_from_keys/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
 
 في الصفحه التاليه, عيّن لمحفظتك كلمه سر قويه وقم بتأكيدها قبل ضغط السهم جهه 'اليمين':
 
-![wallet password](png/restore_from_keys/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
 
 حدد إعدادات الخادم وقم بالضغط علي السهم جهه 'اليمين':
 
-![daemon settings](png/restore_from_keys/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
 
 إنقر علي 'إستخدم مونيرو' للإستمتاع بمحفظتك المُستعاده:
 
-![all set up](png/restore_from_keys/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)

@@ -26,28 +26,28 @@ Después de haber ingresado la semilla mnemónica de 25 palabras y haber elegido
 
 Abre `monero-wallet-gui`. Si es la primera vez que lo abres ve al siguiente paso, de otro modo, haz clic en  `Cancel`:
 
-![cancel opening](png/restore_account/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)
 
 Selecciona el lenguaje apropiado `Español`:
 
-![choose language](png/restore_account/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)
 
 Haz clic en  `Restaurar monedero de claves o semilla mnemónica`:
 
-![choose restore](png/restore_account/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)
 
 Mantén `Restaurar desde semilla` seleccionado, da un nombre a tu monedero y ubicación de guardado, y llena `Ingresa tu semilla mnemónica de 25 (o 24) palabras`. Opcionalmente, especifica la `Altura de restaurado (opcional)` para evitar escaneo de bloques viejos. Haz clic en la flecha de `Siguiente`:
 
-![restore wallet](png/restore_account/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)
 
 En la página siguiente, da a tu monedero una contraseña fuerte y confírmala antes de hacer clic en la flecha de `Siguiente`:
 
-![wallet password](png/restore_account/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
 Especifica la configuración del daemon y haz clic la flecha de `Siguiente`:
 
-![daemon settings](png/restore_account/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 
 Haz clic en `USAR MONERO` para disfrutar de tu monedero restaurado:
 
-![all set up](png/restore_account/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)

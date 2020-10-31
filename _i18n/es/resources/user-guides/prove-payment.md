@@ -39,12 +39,12 @@ Si set es 0, cámbialo a 1:
 
 Alicia puede abrir monero-wallet-gui e ir al historial para ver los detalles de su transacción:
 
-![Historial](png/prove-payment/history.png)
+![Historial](/img/resources/user-guides/en/prove-payment/history.png)
 
 Aquí, ella puede copiar el ID de transacción y la dirección de Bob haciendo clic en cada uno.
 Entonces ella puede hacer clic en `P` para obtener una prueba de pago (llave de transacción):
 
-![Prueba de pago](png/prove-payment/payment-proof.png)
+![Prueba de pago](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 
 ---
@@ -72,11 +72,11 @@ Charlie querrá volver a revisar con Bob que la dirección es realmente de él -
 
 Charlie abrirá su monero-wallet-gui e irá a la página en Avanzado > Probar/verificar para llenar la sección Comprobar con la información provista por Alicia:
 
-![Prueba de pago](png/prove-payment/check-payment.png)
+![Prueba de pago](/img/resources/user-guides/en/prove-payment/check-payment.png)
 
 Entonces haciendo clic en Check dirá a Charlie cuánto envió esta transacción en particular a la dirección, y cuántas confirmaciones tuvo la transacción:
 
-![Pago revisado](png/prove-payment/payment-checked.png)
+![Pago revisado](/img/resources/user-guides/en/prove-payment/payment-checked.png)
 
 
 ---

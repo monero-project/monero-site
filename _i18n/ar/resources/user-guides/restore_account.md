@@ -26,28 +26,28 @@
 
 إفتح واجهه المستخدم الرسوميه `monero-wallet-gui`. إذا كانت هذه هي المرة الأولى التي تقوم فيها بتشغيلها ، فانتقل إلى الخطوة التالية ، وإلا فاضغط على "إلغاء":
 
-![cancel opening](png/restore_account/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)
 
 قم بإختيار اللغه المناسبه :
 
-![choose language](png/restore_account/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)
 
 إختر الإسترجاع من كَلِمات التكوين:
 
-![choose restore](png/restore_account/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)
 
 إترك خيار `الإسترجاع من كَلِمات التكوين` مُختاراً وإعط لمحفظتك إسماً ومكان للتخزين وقم بوضع ال25 كلمه ( أو 24) الخاصه بإستعاده محفظتك.( إختياري , قم بتحديد طول كتله لبدأ الفحص لتفادي البحث في الكتل القديمه. ثم إضغط علي السهم 'الأيمن':
 
-![restore wallet](png/restore_account/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)
 
 في الصفحة التالية ، امنح محفظتك كلمة مرور قوية وقم بتأكيدها قبل النقر على السهم 'الأيمن':
 
-![wallet password](png/restore_account/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
 حدد خيارات الخادم وإضغط علي السهم 'الأيمن':
 
-![daemon settings](png/restore_account/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 
 إضغط علي 'إستخدم مونيرو' لإستخدام محفظتك المُستعاده:
 
-![all set up](png/restore_account/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)

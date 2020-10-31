@@ -26,28 +26,28 @@
 
 Запустить `monero-wallet-gui`. Если вы запускаете его впервые, переходите к следующему шагу, в противном случае нажмите `Cancel` (Отменить):
 
-![cancel opening](png/restore_account/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)
 
 Выберите нужный вам язык, например, `English(US)`:
 
-![choose language](png/restore_account/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)
 
 Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):
 
-![choose restore](png/restore_account/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)
 
 Выберите `Restore from seed` (Восстановить на основе мнемонической фразы), укажите имя вашего кошелька и место, где он будет находиться, и заполните поле укажите `Enter your 25 (or 24) word mnemonic seed` (Введите вашу мнемоническую фразу из 25 (или 24) слов). Дополнительно указать `Restore height (optional)` (Высоту восстановления (опционально)) во избежание сканирования старых блоков. Затем нажать стрелку вправо:
 
-![restore wallet](png/restore_account/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)
 
 На следующей странице ввести сложный пароль для вашего кошелька и подтвердить его перед нажатием стрелки `Right` (Вправо):
 
-![wallet password](png/restore_account/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
 Указать настройки демон-программы и нажать стрелку `Right` (Вправо):
 
-![daemon settings](png/restore_account/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 
 Щёлкнуть `USE MONERO` (пользоваться Monero) и наслаждаться восстановленным кошельком:
 
-![all set up](png/restore_account/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)

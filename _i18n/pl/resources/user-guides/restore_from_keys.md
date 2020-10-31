@@ -27,28 +27,28 @@ W przypadku problemów, uruchomienie funkcji `./monero-wallet-cli --help` wyświ
 
 Uruchom Graficzny Interfejs Użytkownika Monero. Jeśli uruchamiasz go po raz pierwszy, przejdź do następnego kroku, jeśli nie - kliknij `Anuluj`:
 
-![cancel opening](png/restore_from_keys/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
 
 Wybierz odpowiedni język `Polski`:
 
-![choose language](png/restore_from_keys/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
 
 Kliknij w `Odzyskaj portfel z kluczy lub mnemonicznego seeda`:
 
-![choose restore](png/restore_from_keys/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
 
 Wybierz `Przywróć portfel z kluczy`, nazwij swój portfel i wybierz jego lokalizację i uzupełnij pola `Adres konta (publiczny)`, `Klucz tylko do odczytu (prywatny)` & `Klucz do wydawania (prywatny)`. Możesz opcjonalnie uściślić wysokość bloku w polu `Wysokość początkowa przywracania portfela (opcjonalne)`, aby uniknąć skanowania starszych bloków. Następniej kliknij w strzałkę w `prawo`:
 
-![restore wallet](png/restore_from_keys/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
 
 Na następnej stronie ustaw silne hasło i potwierdź je, zanim ponownie klikniesz w strzałkę w `prawo`:
 
-![wallet password](png/restore_from_keys/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
 
 Sprecyzuj ustawienia swojego demona i kliknij w strzałkę w `prawo`:
 
-![daemon settings](png/restore_from_keys/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
 
 Kliknij w `UŻYJ MONERO`, aby skorzystać ze swojego przywróconego portfela:
 
-![all set up](png/restore_from_keys/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)

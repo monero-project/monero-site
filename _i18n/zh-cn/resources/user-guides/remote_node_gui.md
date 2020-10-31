@@ -9,18 +9,18 @@ If your wallet is not in Advanced mode, you will have to change it to Advanced m
 
 If your wallet is already in Advanced mode, you can skip the next step.
 
-![Wallet mode](png/remote_node/wallet_mode_info.png){:width="600px"}
+![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
 
 ## Change your wallet to advanced mode
 If your wallet is open, you need to close it first. Go to `Settings` > `Wallet` > `Close this wallet`
 
-![Close Wallet](png/remote_node/close_open_wallet.png){:width="600px"}
+![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
 
 The main menu (`Welcome to Monero` screen) will open. At the bottom left, click on `Change wallet mode` button, and on the next page select `Advanced mode`. Next, open your wallet file again.
 
-![Change Wallet Mode](png/remote_node/change_wallet_mode.png){:width="600px"}
+![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
 
-![Advanced Mode](png/remote_node/advanced_mode.png){:width="600px"}
+![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
 
 ## Finding a public remote node
 First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources for finding nodes. One of the easiest methods would be to use a public remote node run by moneroworld, but they have a tool for finding random nodes too.
@@ -30,7 +30,7 @@ When opening your wallet, a pop up will appear with the option `Use custom setti
 
 If you don't see this pop up, go to `Settings` > `Node` page.
 
-![Configure Remote Node](png/remote_node/remote_node_config.png){:width="600px"}
+![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
 
 On this page select `Remote Node`.
 

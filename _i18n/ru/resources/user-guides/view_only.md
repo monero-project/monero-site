@@ -19,10 +19,10 @@
 
 Откройте существующий кошелек или создайте новый, используя `monero-wallet-gui`. В кошельке перейдите на страницу `Settings` (Настройки):
 
-![settings](png/view-only/settings.png)
+![settings](/img/resources/user-guides/en/view-only/settings.png)
 
 Нажмите `Create a view only wallet` (Создать кошелек только для просмотра) > `Create wallet` (Создать кошелек), кошелек будет создан в том же каталоге, где располагаются ваши другие кошельки.
 
 При необходимости дважды щелкните по окну `Success` (Успешно), чтобы скопировать сообщение, затем нажмите `ОК`, чтобы закрыть окно:
 
-![Success](png/view-only/Success.png)
+![Success](/img/resources/user-guides/en/view-only/Success.png)
