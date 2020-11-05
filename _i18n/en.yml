@@ -409,7 +409,7 @@ mining:
   support_para2: Hangouts
   support_para4: and
   pools: Pools
-  pools_para1: A listing of trusted Monero pools is found
+  pools_para1: A listing of Monero pools is found
   pools_para2: here.
   benchmarking: Hardware Benchmarking
   benchmarking_para1: See here
