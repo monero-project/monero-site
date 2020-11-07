@@ -60,7 +60,9 @@ footer:
   feed: RSS Feed
   legal: Legal
   source: Source Code
-  channels: IRC channels
+  ml: Mailing List
+  ccs: Community Crowdfunding System
+  reachout: Reach Out
 
 index:
   page_title: "Monero - secure, private, untraceable"
