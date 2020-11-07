@@ -31,6 +31,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-anonymous">{% t faq.q14 %}</a></li>
                         <li><a href="#antivirus">{% t faq.qantivirus %}</a></li>
                         <li><a href="#monero-meaning">{% t faq.qmoneromeaning %}</a></li>
+                        <li><a href="#hardforks">{% t faq.qhf %}</a></li>
                     </ul>
                     <li class="category">{% t faq.advanced %}</li>
                     <ul class="logo">
@@ -164,6 +165,14 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#monero-meaning"></a>{% t faq.qmoneromeaning %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.amoneromeaning %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="hardforks">
+                    <h3><a class="anchor" href="#monero-meaning"></a>{% t faq.qhf %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.ahf %}</p>
+                        <p>{% t faq.ahf1 %}</p>
+                        <p>{% t faq.additional %} <a href="{{ site.baseurl_root }}/2020/09/01/note-scheduled-upgrades.html">A note on scheduled protocol upgrades</a></p>
                     </div>
                 </div>
                 <div class="row center-xs">
