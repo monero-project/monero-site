@@ -1,23 +1,23 @@
 gui:
-- version: "0.17.1.3 - Oxygen Orion"
+- version: "0.17.1.4 - Oxygen Orion"
   downloads:
    - platform: Windows 64-bit (Installer)
-     hash: 15ad80b2abb18ac2521398c4dad9b8bfea2e6fc535cf4ebcc60d99b8042d4fb2
+     hash: 8c9a820fd7dc228807f8ecc46973350d3d5d871c6f8dd67ef066d04407575d14
      link: https://downloads.getmonero.org/gui/win64install
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: 0a49ccccb561445f3d7ec0087ddc83a8b76f424fb7d5e0d725222f3639375ec4
+     hash: df78006226d21e70ea5d342b0f6d4335cf398e94cb3d0f750aec4db2d2b3f7f9
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
    - platform: Mac OS X 64-bit
-     hash: 23405534c7973a8d6908b76121b81894dc853039c942d7527d254dfde0bd2e8f
+     hash: 4e319a9dfb5e1caa42b52f6503480af3b44403f3bf4691da523880c6a6ec38a9
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: 3bed02f9db5b7b2fe4115a636fecf0c6ec9079dd4e9284c8ce2c67d4996e2a4a
+     hash: abe94552803fd6646e934d1248e6ef33d8d6e2ac9a725c600fa7e8d4bfcc21a3
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
