@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
-Binaries verifiëren Windows (beginner)
-
 Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de binaire bestanden van Monero verifiëren. Dit is de enige manier om er zeker van te zijn dat je de officiële Monero-binaries gebruikt. Als je een onecht binair bestand ontvangt (bijvoorbeeld via phishing of een *man-in-the-middle attack*), voorkomt deze methode dat je er gebruik van maakt.
 
 Het Monero-team stelt een cryptografisch ondertekende lijst beschikbaar met alle [SHA256](https://en.wikipedia.org/wiki/SHA-2)-hashes, om de integriteit van de binaries te garanderen. Als er met het gedownloade binaire bestand is geknoeid, levert het een [andere hash](https://nl.wikipedia.org/wiki/Hashfunctie) op dan in de lijst.
@@ -156,21 +154,15 @@ Controleer visueel dat de sleutel van Riccardo Spagni de vingerafdruk `BDA6BD704
 
 ![kleo vingerafdruk certificeren](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-Klik op `Next` als de vingerafdruk **WEL** overeenkomt.
+Klik op `Certify` als de vingerafdruk **WEL** overeenkomt.
 
 **GA NIET VERDER** als de vingerafdruk van deze sleutel **NIET** overeenkomt. Verwijder dan het bestand `fluffypony` uit de map `Downloads` en ga terug naar [paragraaf 2.1](#21-download-signing-key).
-
-Laat `Certificeer alleen voor mijzelf` geselecteerd en klik op `Certifeer`.
-
-![kleo certificeren voor jezelf](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
 Voer je wachtwoord in en klik op `OK`.
 
 ![kleo certificeren wachtwoord](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Klik op `Finish`.
-
-![kleo certificeren voltooien](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. Hashbestand verifiëren
 

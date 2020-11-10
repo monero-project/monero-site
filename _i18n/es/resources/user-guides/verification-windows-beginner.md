@@ -156,21 +156,15 @@ Revisa visualmente que la huella de la clave perteneciente a Riccardo Spagni es 
 
 ![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-Si la huella **SÍ** coincide, haz clic en `Next`.
+Si la huella **SÍ** coincide, haz clic en `Certify`.
 
 Si la huella de clave **NO** coincide, **NO CONTINÚES**. En su lugar elimina el archivo `fluffypony` de `Descargas` y regresa a la [sección 2.1](#21-descargar-clave-de-firma).
-
-Deja `Certify only for myself` seleccionado, y haz clic en `Certify`.
-
-![kleo certify for self](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
 Ingresa tu contraseña, haz clic en `OK`.
 
 ![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Haz clic en `Finish`.
-
-![kleo certify finish](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. Verificar Archivo Hash
 

@@ -1849,6 +1849,12 @@ img.monero-logo {
     padding: 0.8rem 0.8rem 0.8rem 3.4rem;
 }
 
+img.icon-language {
+  width: 1rem;
+  padding-right: 0.2rem;
+  vertical-align: middle;
+}
+
 .topnav .topnav-list a, .topnav .topnav-list label {
     color: #6B6B6B;
     text-decoration: none;

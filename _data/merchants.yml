@@ -160,14 +160,14 @@
       url: https://ablative.hosting
     - name: Capsul - Simple, Fast, Private Virtual Machines
       url: https://capsul.org
+    - name: ClientVPS - Offshore Hosting
+      url: https://www.clientvps.com/
     - name: Cockbox - Tor-friendly, privacy-oriented VPS provider.
       url: https://cockbox.org/
     - name: Cryptoho.st - VPS hosting
       url: https://cryptoho.st/
     - name: Evolution Host - Hosting services
       url: https://evolution-host.com/
-    - name: HostingCanada - Web hosting 
-      url: https://hostingcanada.org/
     - name: LyraHosting - Offshore hosting company
       url: https://lyrahosting.com/
     - name: Monovm
@@ -230,6 +230,8 @@
       url: https://calistondesign.com/
     - name: cloakVPN.com
       url: https://cloakVPN.com
+    - name: Codify Global - AWS consulting and technology stack modernization
+      url: https://codify.global/
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
     - name: cryptwerk - online directory with companies, websites, shops, services accepting cryptocurrencies
@@ -293,6 +295,8 @@
       url: https://auget.paris/en/
     - name: BitDials - Luxury Boutique
       url: https://www.bitdials.eu
+    - name: Bitgear Australia - Australian hardware wallet retailer
+      url: https://www.bitgear.com.au/
     - name: Bitvape - Australia's top rated JUUL store
       url: https://bitvape.com.au
     - name: Cellphone and laptop repair online store in Sweden
@@ -309,6 +313,8 @@
       url: https://www.crypto-armory.com
     - name: Crypto Clothing - apparel and accessory shop based on the popular cryptocurrencies
       url: https://cryptoclothing.org/
+    - name: Crypto Cove - Crypto merch and apparel store
+      url: https://cryptocove.io/
     - name: Crypto homes
       url: https://www.cryptohomes.me
     - name: Cryptocurrency Posters
@@ -410,8 +416,6 @@
       url: https://minko.to
     - name: Monero Betting
       url: http://moneroeetsad6quaq4weauz5ndsx5jf6y3z5zwtckhudciapom26byid.onion/
-    - name: Monero Card Games - Provably fair Monero card games
-      url: https://monerocardgames.com
     - name: Monero.win - Bet on the Monero Blockchain
       url: https://monero.win/
     - name: SafeDice

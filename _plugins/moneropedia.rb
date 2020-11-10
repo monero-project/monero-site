@@ -65,6 +65,9 @@ module Jekyll
               if !entry.empty?
                 baseName = File.basename(entry_file, ".*")
                 displayName = @@localConfig[lang]["moneropedia"]["entries"][baseName]
+                if displayName == nil
+                  displayName = @@localConfig["en"]["moneropedia"]["entries"][baseName]
+                end
                 @@moneropedia[lang].push({ :terms => entry['terms'], :summary => entry['summary'], :file => baseName })
                 @@moneropedia_ordered[lang] = @@moneropedia_ordered[lang].merge({ displayName => baseName })
               end

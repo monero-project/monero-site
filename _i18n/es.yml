@@ -58,6 +58,20 @@ titles:
   ffs-wip: Trabajo en Proceso
   blogbytag: Blog
   library: Librería
+
+navigation:
+  getstarted: Inicio
+  whatis: ¿Qué es Monero?
+  accepting: Aceptar Monero
+  contributing: Contribuir a Monero
+  mining: Minar Monero
+  community: Comunidad
+  team: Equipo
+  merchants: Comerciantes
+  resources: Recursos
+  about: Sobre Monero
+  mrl: Laboratorio de investigación
+
 index:
   page_title: Monero - seguro, privado e imposible de rastrear
 home:

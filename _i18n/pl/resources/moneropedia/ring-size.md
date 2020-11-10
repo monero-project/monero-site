@@ -1,11 +1,12 @@
 ---
 terms: ["ring-size", "rozmiar-pierścienia", "rozmiarowi-pierścienia", "rozmiarze-pierścienia", "rozmiarem-pierścienia"]
-summary: "Liczba wszystkich możliwych osób podpisujących za pomocą podpisu pierścieniowego."
+summary: "Liczba wszystkich możliwych osób podpisujących za pomocą podpisu pierścieniowego"
 ---
 
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
-### Podstawy
+{% include disclaimer.html translated="no" translationOutdated="no" %}
+### The Basics
+Ring size refers to the total number of signers in a @ring-signature. Before release [0.13.0 "Beryllium Bullet"]({{ site.baseurl }}/2018/10/11/monero-0.13.0-released.html), it was possible to select an arbitrary number of signers. With release 0.13, it was decided to set this number to 11 to enforce transaction uniformity.
 
-Rozmiar pierścienia oznacza liczbę wszystkich możliwych osób podpisujących za pomocą @podpisu-pierścieniowego. Jeśli rozmiar pierścienia danej @transakcji wynosi 4, oznacza to, że poza twoim, istnieją 3 obce wyjścia. Wyższy numer rozmiaru pierścienia przeważnie zapewnia więcej prywatności niż niższy, jednak ponowne użycie nieparzystego, rozpoznawalnego rozmiaru pierścienia może spowodować, że transakcje będą się wyróżniać.
+`Ring size (11) = foreign outputs (10) + your output (1)`
 
-`Rozmiar pierścienia = obce wyjścia + 1 (twoje wyjście)`
+Foreign outputs are typically called "decoys," and the number of decoys was previously called the "mixin" size.

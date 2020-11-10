@@ -30,7 +30,6 @@ title: titles.userguides
                             <h2>{% t user-guides.mining %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/mine-to-pool.html">{% t user-guides.mine-on-pool %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/solo_mine_GUI.html">{% t user-guides.solo-mine %}</a></p>
-                            <p><a href="{{site.baseurl}}/resources/user-guides/How-to-mine-Monero-XMR-without-a-mining-equipment.html">{% t user-guides.nicehash %}</a></p>
                         </div>
                     </div>
                 </div>
@@ -65,6 +64,7 @@ title: titles.userguides
                             <p><a href="{{site.baseurl}}/resources/user-guides/multisig-messaging-system.html">{% t user-guides.multisig-messaging-system %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/tor_wallet.html">{% t user-guides.tor_wallet %}</a></p>
                             <p><a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md">{% t user-guides.guiguide %}</a></p>
+                            <p><a href="http://xmrguide42y34onq.onion/tails">{% t user-guides.tailsguide %}</a><img class="onion-mid" src="/img/onion-tor.svg" title="Onion link" alt="onion logo"></p>
                         </div>
                     </div>
                 </div>

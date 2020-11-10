@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
-# تأكد من ملفات التسطيب علي ويندوز (للمُبتدئين)
-
 التأكد من صحه ملفات التثبيت يجب أن يكون قبل فك الضغط أو التثبيت أو إستخدام البرامج. هذه هي الطريقه الوحيده للتأكد من حصولك علي البرامج الرسميه. إذا حصلت علي ملفات تثبيت مزيفه ( مثال هجمات التصيد و إختراق الإتصال وخلافه) بمتابعه هذا لدليل سوف تحمي نفسك من الوقوع ضحيه لهذه الملفات.
 
 لحماية تكامل الثنائيات ، يوفر فريق مونيرو قائمة موقعة مشفرة لكل الملفات [SHA256] (https://en.wikipedia.org/wiki/SHA-2). إذا تم العبث بالملف الذي تم تنزيله ، فسيتم إنتاجه [هاش مختلف] (https://en.wikipedia.org/wiki/File_verification) عن الموجود في الملف.
@@ -157,21 +155,15 @@
 
 ![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
-إذا كانت البصمه **مُتطابقه** إضغط 'Next'.
+إذا كانت البصمه **مُتطابقه** إضغط 'Certify'.
 
 إذا كانت البصمه **غير مُتطابقه** **لا تُكمل** بل إحذف الملف `fluffypony` من مجلد `Downloads`وعُد إلي  [القسم 2.1](#21-download-signing-key).
-
-إترك `Certify only for myself` مُختاره وإنقر `Certify`.
-
-![kleo certify for self](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png)
 
 أدخل كلمة المرور الخاصة بك وإنقر `OK`.
 
 ![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 إنقر `Finish`.
-
-![kleo certify finish](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png)
 
 ## 3. التحقق من ملف الهاش
 

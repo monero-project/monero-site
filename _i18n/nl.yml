@@ -59,6 +59,19 @@ titles:
   blogbytag: Blog
   library: Bibliotheek
 
+navigation:
+  getstarted: Aan de slag
+  whatis: Wat is Monero?
+  accepting: Accepteren
+  contributing: Bijdragen
+  mining: Minen
+  community: Community
+  team: Team
+  merchants: Verkopers
+  resources: Informatie
+  about: Over Monero
+  mrl: Research Lab
+
 index:
   page_title: "Monero - veilig, vertrouwelijk, onvolgbaar"
 

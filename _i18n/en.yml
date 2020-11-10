@@ -25,7 +25,6 @@ global:
 titles:
   index: Home
   whatismonero: What is Monero (XMR)?
-  using: Using Monero
   accepting: Accepting Monero
   contributing: Improving Monero
   mining: Mining Monero
@@ -34,7 +33,6 @@ titles:
   allposts: All Blog Posts
   team: Monero Team
   hangouts: Hangouts
-  events: Events
   sponsorships: Sponsorships
   merchants: Merchants & Services
   about: About Monero
@@ -49,6 +47,25 @@ titles:
   legal: Legal
   blogbytag: Blog
   library: Library
+
+navigation:
+  getstarted: Get Started
+  whatis: What is Monero?
+  accepting: Accepting
+  contributing: Contributing
+  mining: Mining
+  community: Community
+  team: Team
+  merchants: Merchants
+  resources: Resources
+  about: About
+  mrl: Research Lab
+
+footer:
+  feed: RSS Feed
+  legal: Legal
+  source: Source Code
+  channels: IRC channels
 
 index:
   page_title: "Monero - secure, private, untraceable"
@@ -382,7 +399,7 @@ faq:
   amoneromeaning: "Monero is an Esperanto word which means 'coin'. Initially Monero was called 'Bitmonero', which translates to 'Bitcoin' in Esperanto. After the community decided to fork from the original maintainer, 'bit' was dropped in favour of simply 'Monero'."
   qimporting: Can I manually import the blockchain?
   aimporting: >
-    Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. If you really need to import an external blockchain, you can download one in <a href="{{ site.baseurl }}/downloads/#blockchain">the 'Downloads' page</a> of this website. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
+    Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. If you really need to import an external blockchain, you can download one in the 'Downloads' page of this website. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
@@ -484,12 +501,12 @@ user-guides:
   view-only: How to make a view-only wallet
   prove-payment: How to prove payment
   restore-from-keys: Restoring wallet from keys
-  nicehash: How to mine Monero XMR without a mining equipment
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
   node-i2pzero: Run a Monero node through I2P with I2P-zero
   guiguide: Guide for the Monero GUI wallet
+  tailsguide: Set up a wallet (using a remote node) on Tails
 
 roadmap:
   completed: Completed task
@@ -709,7 +726,6 @@ moneropedia:
   back: Back to the Moneropedia
   entries:
     account: Account
-    address-book: Address Book
     address: Address
     airgap: Airgap
     atomic-units: Atomic Units
@@ -725,7 +741,6 @@ moneropedia:
     cryptocurrency: Cryptocurrency
     daemon: Daemon
     denominations: Denominations
-    destination: Destination
     encryption: Encryption
     fluffyblocks: Fluffy Blocks
     fungibility: Fungibility
@@ -773,3 +788,7 @@ accessibility:
   arrowup: Go back to the top of the page
   guiscreen: A screenshot of the Monero GUI wallet. It shows the wallet's balance and a navigation menu on the left, and a form for sending XMR on the right.
   cliscreen: CLI wallet screenshot
+
+error:
+  title: Page not found (perhaps it values privacy)
+  button: To the Homepage
