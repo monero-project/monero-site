@@ -311,6 +311,10 @@ contributing:
   mine: Mine
   mine_para1: Mining ensures the Monero network remains decentralized and secure. In the Monero graphical user interface and command-line interface, background mining may be activated. Additional resources for mining may be viewed
   mine_para2: here.
+  ffs: View the Community Crowdfunding System
+  ffs_para1: Monero utilizes a
+  ffs_para2: community crowdfunding system
+  ffs_para3: whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
   donate: Donate
   donate_para1: Ongoing development is supported by donations and
   donate_para2: sponsorships.
