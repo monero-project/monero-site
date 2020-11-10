@@ -2838,8 +2838,8 @@ footer a.white:hover, a.white:focus {
 }
 
 .footer-wrapper {
-    padding: 4rem 1rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
 }
 
 .footer-wrapper ul {
@@ -2847,7 +2847,7 @@ footer a.white:hover, a.white:focus {
 }
 
 .footer-links {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .footer-link {
