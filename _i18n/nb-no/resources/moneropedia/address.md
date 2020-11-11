@@ -1,8 +1,9 @@
 ---
-terms: ["adresse", "adresser"]
+terms: ["address", "addresses", "adresse", "adresser"]
 summary: "enten et alias, som for eksempel donate.getmonero.org, eller et sett med 95 tegn som starter med en 4"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunnleggende
 
 Når du sender Monero til noen, trenger du kun én opplysning, og det er Monero-adressen deres. En *rå* Monero-adresse er et sett med 95 tegn som starter med en '4'. Adressen til Monero-donasjonene er for eksempel <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.

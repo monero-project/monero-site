@@ -1,8 +1,9 @@
 ---
-terms: ["blokk", "blokker"]
+terms: ["block", "blocks", "blokk", "blokker"]
 summary: "en beholder av transaksjoner, en sekvens som danner en blokkjede"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunnleggende
 
 En blokk er en beholder av transaksjoner, der en ny blokk legges til blokkjeden hvert 2. minutt i gjennomsnitt (se konstant `DIFFICULTY_TARGET_V2` (vanskelighetsmål), som er definert som 120 sekunder).

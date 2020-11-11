@@ -1,8 +1,9 @@
 ---
-terms: ["oppstartsprogram-node", "oppstartsprogram-noder"]
+terms: ["bootstrap-node", "bootstrap-nodes", "oppstartsprogram-node", "oppstartsprogram-noder"]
 summary: "En node som en daemon kobler til for å gi umiddelbar bruksnytte til lommebøker under synkronisering"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunnleggende
 
 Daemonen som kjører på en lokal node må synkronisere med andre eksterne noder. Lommeboken kan fremdeles kobles til den lokale noden mens den ikke enda er fullstendig synkronisert, og den kan derfor ikke få tilgang til blokkene som ikke enda er synkronisert på den lokale noden.
