@@ -1,8 +1,9 @@
 ---
-terms: ["konto", "kontoer", "lommebok", "lommebøker"]
+terms: ["account", "accounts", "wallet", "wallets", "konto", "kontoer", "lommebok", "lommebøker"]
 summary: "Tilsvarende en bankkonto og inneholder alle dine sendte og mottatte transaksjoner"
 ---
 
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunnleggende
 
 De som kjenner til Moneros forgjengere, vil være bedre kjent med begrepet *lommebok* i denne beskrivelsen. I Monero kaller vi dette for en konto, og det er en privat konto, eid og styrt av en Monero-bruker.
