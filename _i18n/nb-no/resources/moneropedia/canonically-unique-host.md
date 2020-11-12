@@ -1,6 +1,6 @@
 ---
 tags: ["kovri"]
-terms: ["Kanonisk-unik-vert"]
+terms: ["Canonically-unique-host", "Kanonisk-unik-vert"]
 summary: "En vert som er kanonisk innstilt til en adresse eller sett med adresser"
 ---
 
