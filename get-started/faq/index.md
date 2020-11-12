@@ -32,6 +32,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#antivirus">{% t faq.qantivirus %}</a></li>
                         <li><a href="#monero-meaning">{% t faq.qmoneromeaning %}</a></li>
                         <li><a href="#hardforks">{% t faq.qhf %}</a></li>
+                        <li><a href="#videos">{% t faq.qvideos %}</a></li>
                     </ul>
                     <li class="category">{% t faq.advanced %}</li>
                     <ul class="logo">
@@ -173,6 +174,19 @@ permalink: /get-started/faq/index.html
                         <p>{% t faq.ahf %}</p>
                         <p>{% t faq.ahf1 %}</p>
                         <p>{% t faq.additional %} <a href="{{ site.baseurl_root }}/2020/09/01/note-scheduled-upgrades.html">A note on scheduled protocol upgrades</a></p>
+                    </div>
+                </div>
+                <div class="tab" id="videos">
+                    <h3><a class="anchor" href="#videos"></a>{% t faq.qvideos %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.avideos %}</p>
+                        <ol>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero_Promo.m4v">{% t faq.video_intro %}</a> ({% t faq.aavailable %} <a href="{{ site.baseurl_root }}/media/ru/Monero_Promo.m4v">Russian</a> {% t faq.and %} <a href="{{ site.baseurl_root }}/media/pt-br/Monero_Promo.m4v">Brazilian Portuguese</a>)</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20The%20Essentials.m4v">{% t faq.video_essentials %}</a></li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Stealth%20Addresses.m4v">{% t faq.video_sa %}</a> - {% t faq.mvideos %} @stealth-addresses</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Ring%20Signatures.m4v">{% t faq.video_ringsig %}</a> - {% t faq.mvideos %} @ring-signatures</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">RingCT</a> - {% t faq.mvideos %} @ring-ct</li>
+                        </ol>
                     </div>
                 </div>
                 <div class="row center-xs">
