@@ -13,7 +13,7 @@ This is safer than other approaches which route the wallets rpc over a Tor hidde
 
   - The first workstation will be used for your wallet, it will referred to as `monero-wallet-ws`. You will have `NetVM` set to `none`.
 
-  - The second workstation will be for the `monerod` daemon, it will be referred to as `monerod-ws`. You will have `NetVM` set to the Whonix gateway `sys-whonix`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain](https://web.getmonero.org/downloads/#blockchain). Keep in mind that the blockchain will take more space with time.
+  - The second workstation will be for the `monerod` daemon, it will be referred to as `monerod-ws`. You will have `NetVM` set to the Whonix gateway `sys-whonix`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain](https://web.getmonero.org/downloads/#blockchain). Keep in mind that the blockchain will take up more space with time.
 
 ## 2. In the AppVM `monerod-ws`:
 
@@ -71,7 +71,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Add this line:
