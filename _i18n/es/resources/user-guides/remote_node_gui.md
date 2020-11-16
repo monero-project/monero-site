@@ -9,4 +9,4 @@ Después de que ingreses la contraseña de tu monedero, verás un pop-up que te 
 enviado a la página de ajustes en la GUI. En este punto debes ser capaz de ver dos cajas de texto en la derecha de una etiqueta llamada "Daemon address". En la primera caja (a la izquierda) necesitarás ingresar la dirección del nodo al que te deseas
 conectar. Esta dirección se debe ver como `node.moneroworld.com` o puede verse como cualquier dirección ip vieja. La caja pequeña en la derecha es donde ingresas el puerto del nodo. El puerto por defecto es `18081` pero si estás usando un nodo aleatorio el puerto que es usado puede variar. El puerto para node.moneroworld.com es 18089.
 ### Tu pantalla se debería ver algo como esto:
-![Node](png/remote_node/remote-node-screenshot.png){:width="600px"}
+![Node](/img/resources/user-guides/en/remote_node/remote-node-screenshot.png){:width="600px"}

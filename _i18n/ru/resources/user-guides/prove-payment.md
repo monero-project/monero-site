@@ -36,11 +36,11 @@
 
 Алиса может открыть свой monero-wallet-gui и перейти на страницу `History` (История), чтобы увидеть детали транзакции:
 
-![History](png/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.png)
 
 Здесь она может скопировать идентификатор транзакции и адрес Боба, щелкнув по каждому из них. Затем она может нажать на `P`, чтобы получить подтверждение платежа `transaction key` (Ключ транзакции):
 
-![Payment proof](png/prove-payment/payment-proof.png)
+![Payment proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 
 ---
@@ -67,11 +67,11 @@
 
 Чарли необходимой открыть свой monero-wallet-gui и перейдет на страницу `Advanced` (Дополнительно), перейти в пункт `Prove / Check` (Подтвердить / Проверить), заполнить поля с информацией предоставленной Алисой в разделе `Check` (Проверить):
 
-![Check payment](png/prove-payment/check-payment.png)
+![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
 
 Затем, нажать `Check` (Проверить), он сообщит Чарли, сколько именно монет отправлено по этой транзакции на этот адрес и сколько у нее подтверждений:
 
-![Payment checked](png/prove-payment/payment-checked.png)
+![Payment checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)
 
 
 ---

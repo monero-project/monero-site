@@ -36,12 +36,12 @@ Se o salvamento das chaves de transação (store-tx-info) estiver configurado pa
 
 Alice pode abrir sua monero-wallet-gui e ir para a página Histórico para ver os detalhes da transação:
 
-![History](png/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.png)
 
 Nesta página ela pode copiar o ID da transação e o endereço do Bob (endereço de destino), clicando em cada um deles.
 Então ela pode clicar em `P` para obter uma prova de pagamento (chave da transação):
 
-![Payment proof](png/prove-payment/payment-proof.png)
+![Payment proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 
 ---
@@ -66,11 +66,11 @@ As informações que a Alice forneceu devem ser substituídas nos campos ID_DA_T
 
 Charlie irá abrir sua monero-wallet-gui e ir até a página Avançado > Provar/Conferir, preenchendo a seção "Verificar transação" com as informações fornecidas pela Alice:
 
-![Check payment](png/prove-payment/check-payment.png)
+![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
 
 Ao clicar em Verificar, Charlie ficará sabendo quantos XMR essa transação enviou para este endereço e quantas confirmações a transação já teve:
 
-![Payment checked](png/prove-payment/payment-checked.png)
+![Payment checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)
 
 
 ---

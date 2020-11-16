@@ -19,10 +19,10 @@ Następnie stwórz swój portfel tylko do odczytu, wpisując `monero-wallet-cli 
 
 Otwórz istniejący portfel lub stwórz nowy, za pomocą funkcji `monero-wallet-gui`. W portfelu przejdź do strony `Ustawienia` > `Portfel`.
 
-![settings](png/view-only/settings.png)
+![settings](/img/resources/user-guides/en/view-only/settings.png)
 
 Kliknij w przycisk `Utwórz portfel tylko do podglądu` > `Utwórz portfel`, the wallet will be created within the same directory and using your current password.
 
 Możesz dwukrotnie kliknąć w okno `Sukces`, aby skopiować wiadomość, a następnie kliknij `OK`, aby je zamknąć:
 
-![Success](png/view-only/Success.png)
+![Success](/img/resources/user-guides/en/view-only/Success.png)

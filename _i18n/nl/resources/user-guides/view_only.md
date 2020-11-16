@@ -19,10 +19,10 @@ Vervolgens kun je je alleen-lezen portemonnee aanmaken door het volgende te type
 
 Open een bestaande portemonnee of maak een nieuwe met `monero-wallet-gui`. Ga in de portemonnee naar de pagina `Instellingen` > `Portemonnee`:
 
-![settings](png/view-only/settings.png)
+![settings](/img/resources/user-guides/en/view-only/settings.png)
 
 Klik op `Maak een alleen-lezen portemonnee aan` > `Portemonnee maken`, the wallet will be created within the same directory and using your current password.
 
 Dubbelklik eventueel op het scherm `Geslaagd` om het bericht te kopiëren en klik vervolgens op `OK` om het te sluiten:
 
-![Success](png/view-only/Success.png)
+![Success](/img/resources/user-guides/en/view-only/Success.png)

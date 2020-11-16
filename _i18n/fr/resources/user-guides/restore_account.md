@@ -26,28 +26,28 @@ Après avoir saisit les 25 mots de la phrase mnémonique et avoir choisit la hau
 
 Lancez `monero-wallet-gui`. Si c'est la première fois que vous le lancez, allez directement à l'étape suivante, sinon, cliquez sur `Cancel` :
 
-![cancel opening](png/restore_from_keys/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
 
 Choisissez votre langue `Français`:
 
-![choose language](png/restore_from_keys/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
 
 Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:
 
-![choose restore](png/restore_from_keys/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
 
 Conservez `Restaurer à partir de la graine` sélectionné, donnez un nom & un emplacement de stockage à votre portefeuille, complétez `Enter your 25 (or 24) word mnemonic seed`. Optionnellement, indiquez une `Hauteur de restauration (facultative)` pour éviter de scanner les blocs les plus anciens. Enfin cliquez sur la flèche `Droite` :
 
-![restore wallet](png/restore_from_keys/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
 
 Sur la page suivante, donnez un mot de passe fort à votre portefeuille avant de cliquer sur la flèche `Droite` :
 
-![wallet password](png/restore_from_keys/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
 
 Indiquez vos paramètres de démon, et cliquez sur la flèche `Droite` :
 
-![daemon settings](png/restore_from_keys/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
 
 Cliquez sur `UTILISER MONERO` pour profiter de votre portefeuille restauré :
 
-![all set up](png/restore_from_keys/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)

@@ -19,10 +19,10 @@
 
 إفتح محفظه موجوده بالفعل أو أنشيء محفظه جديده بإستخدام واجهه المستخدم الرسوميه `monero-wallet-gui`. وإذهب إلي صفحه الإعدادات.
 
-![settings](png/view-only/settings.png)
+![settings](/img/resources/user-guides/en/view-only/settings.png)
 
 Click on `Create a view only wallet` > `Create wallet`, the wallet will be created within the same directory and using your current password.
 
 يُمكنك إختيارياً النقر علي كلمه 'نجح' لنسخ الرساله , وبعد ذلك إنقر علي 'تم' لإغلاقها:
 
-![Success](png/view-only/Success.png)
+![Success](/img/resources/user-guides/en/view-only/Success.png)

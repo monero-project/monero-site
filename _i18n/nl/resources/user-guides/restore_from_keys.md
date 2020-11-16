@@ -27,28 +27,28 @@ Als je problemen tegenkomt, kun je `./monero-wallet-cli --help` uitvoeren om te 
 
 Start `monero-wallet-gui`. Als dit de eerste keer is dat je het start, ga dan naar de volgende stap. Zo niet, klik dan op `Annuleren`:
 
-![openen annuleren](png/restore_from_keys/cancel-opening.png)
+![openen annuleren](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
 
 Selecteer de gewenste taal `Nederlands`:
 
-![taal kiezen](png/restore_from_keys/choose-language.png)
+![taal kiezen](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
 
 Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:
 
-![herstellen kiezen](png/restore_from_keys/choose-restore.png)
+![herstellen kiezen](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
 
 Selecteer `Herstel met sleutels`, geef een name en opslaglocatie op voor de portemonnee en vul de velden `Adres van account (openbaar)`, `Alleen-lezen sleutel (privé)` en `Bestedingssleutel (privé)` in. Eventueel kun je een `Herstelpunt (optioneel)` opgeven, zodat er niet hoeft te worden gezocht in oudere blokken. Klik vervolgens op de pijl naar rechts:
 
-![portemonnee herstellen](png/restore_from_keys/restore-wallet.png)
+![portemonnee herstellen](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
 
 Geef je portemonnee op de volgende pagina een sterk wachtwoord en bevestig dit voordat je op de pijl naar rechts klikt:
 
-![wachtwoord portemonnee](png/restore_from_keys/wallet-password.png)
+![wachtwoord portemonnee](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
 
 Geef de instellingen voor je node op en klik op de pijl naar rechts:
 
-![instellingen node](png/restore_from_keys/daemon-settings.png)
+![instellingen node](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
 
 Klik op `GEBRUIK MONERO` om je herstelde portemonnee te gebruiken:
 
-![klaar is kees](png/restore_from_keys/all-set-up.png)
+![klaar is kees](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)

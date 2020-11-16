@@ -19,10 +19,10 @@ A continuación, crea tu monedero de visualización escribiendo `monero-wallet-c
 
 Abre un monedero existente o crea uno nuevo usando `monero-wallet-gui`. En el ejemplo, ve a la página de `Opciones` > `Monedero`
 
-![settings](png/view-only/settings.png)
+![settings](/img/resources/user-guides/en/view-only/settings.png)
 
 Haz clic en `Crear un monedero de sólo visualización` > `Crear monedero`, the wallet will be created within the same directory and using your current password.
 
 Opcionalmente, haz doble clic en la ventana `Éxito` para copiar el mensaje, y haz clic en `OK` para cerrarlo:
 
-![Success](png/view-only/Success.png)
+![Success](/img/resources/user-guides/en/view-only/Success.png)

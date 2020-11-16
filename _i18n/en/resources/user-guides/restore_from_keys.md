@@ -25,28 +25,28 @@ If you run into any trouble, running `./monero-wallet-cli --help` will show you 
 
 Launch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:
 
-![cancel opening](png/restore_from_keys/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
 
 Select your appropriate language `English(US)`:
 
-![choose language](png/restore_from_keys/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
 
 Click on `Restore wallet from keys or mnemonic seed`:
 
-![choose restore](png/restore_from_keys/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
 
 Select `Restore from keys`, give your wallet a name & storage location, and complete the `Account address (public)`, `View key (private)` & `Spend key (private)`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:
 
-![restore wallet](png/restore_from_keys/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
 
 On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:
 
-![wallet password](png/restore_from_keys/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
 
 Specify your daemon settings and click the `Right` arrow:
 
-![daemon settings](png/restore_from_keys/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
 
 Click on `USE MONERO` to enjoy your restored wallet:
 
-![all set up](png/restore_from_keys/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)

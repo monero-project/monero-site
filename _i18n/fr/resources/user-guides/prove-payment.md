@@ -39,12 +39,12 @@ Si la valeur est fixée à 0, positionnez-la à 1 :
 
 Alice peut ouvrir son monero-wallet-gui et aller à la page historique pour voir les détails de la transaction :
 
-![History](png/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.png)
 
 Ici, elle peut copier l'ID de transaction et l'adresse de Bob en cliquant sur chacun d'eux.
 Puis elle peut cliquer sur `P` pour obtenir une preuve de paiement (clef de transaction) :
 
-![Payment proof](png/prove-payment/payment-proof.png)
+![Payment proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 
 ---
@@ -72,11 +72,11 @@ transaction spécifique.
 
 Charlie ouvre son monero-wallet-gui et va à la page Avancé > Prouver/vérifier afin de remplir la section Vérifier avec les éléments transmis par Alice :
 
-![Check payment](png/prove-payment/check-payment.png)
+![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
 
 Puis cliquer sur Vérifier indiquera à Charlie combien a été envoyé à cette adresse pour cette transaction spécifique et combien de confirmation la transaction a eu :
 
-![Payment checked](png/prove-payment/payment-checked.png)
+![Payment checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)
 
 
 ---

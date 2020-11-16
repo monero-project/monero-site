@@ -26,28 +26,28 @@ Nadat je de hersteltekst van 25 woorden hebt ingevoerd en een specifieke hoogte 
 
 Start `monero-wallet-gui`. Als dit de eerste keer is dat je het start, ga dan naar de volgende stap. Zo niet, klik dan op `Annuleren`:
 
-![openen annuleren](png/restore_account/cancel-opening.png)
+![openen annuleren](/img/resources/user-guides/en/restore_account/cancel-opening.png)
 
 Selecteer de gewenste taal `Nederlands`:
 
-![taal kiezen](png/restore_account/choose-language.png)
+![taal kiezen](/img/resources/user-guides/en/restore_account/choose-language.png)
 
 Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:
 
-![herstellen kiezen](png/restore_account/choose-restore.png)
+![herstellen kiezen](/img/resources/user-guides/en/restore_account/choose-restore.png)
 
 Zorg dat `Herstel met hersteltekst` is ingeschakeld, geef een name en opslaglocatie op voor de portemonnee en vul het veld `Voer uw hersteltekst van 25 (of 24) woorden in` in. Eventueel kun je een `Herstelpunt (optioneel)` opgeven, zodat er niet hoeft te worden gezocht in oudere blokken. Klik vervolgens op de pijl naar rechts:
 
-![portemonnee herstellen](png/restore_account/restore-wallet.png)
+![portemonnee herstellen](/img/resources/user-guides/en/restore_account/restore-wallet.png)
 
 Geef je portemonnee op de volgende pagina een sterk wachtwoord en bevestig dit voordat je op de pijl naar rechts klikt:
 
-![wachtwoord portemonnee](png/restore_account/wallet-password.png)
+![wachtwoord portemonnee](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
 Geef de instellingen voor je node op en klik op de pijl naar rechts:
 
-![instellingen node](png/restore_account/daemon-settings.png)
+![instellingen node](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 
 Klik op `GEBRUIK MONERO` om je herstelde portemonnee te gebruiken:
 
-![klaar is kees](png/restore_account/all-set-up.png)
+![klaar is kees](/img/resources/user-guides/en/restore_account/all-set-up.png)

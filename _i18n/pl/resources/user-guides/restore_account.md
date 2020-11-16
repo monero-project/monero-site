@@ -26,28 +26,28 @@ Po wpisaniu 25-słownego kodu mnemonicznego i wybraniu wysokości łańcucha blo
 
 Uruchom Graficzny Interfejs Użytkownika Monero. Jeśli uruchamiasz go po raz pierwszy, przejdź do następnego kroku, jeśli nie - kliknij `Anuluj`:
 
-![cancel opening](png/restore_account/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)
 
 Wybierz odpowiedni język `Polski`:
 
-![choose language](png/restore_account/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)
 
 Kliknij w `Odzyskaj portfel z kluczy lub mnemonicznego seeda`:
 
-![choose restore](png/restore_account/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)
 
 Zaznacz opcję `Przywróć portfel z seeda`, nazwij swój portfel i wybierz jego lokalizację i wpisz swój kod mnemoniczny w polu `Enter your 25 (or 24) word mnemonic seed`. Możesz opcjonalnie uściślić wysokość bloku w polu `Wysokość początkowa przywracania portfela (opcjonalne)`, aby uniknąć skanowania starszych bloków. Następniej kliknij w strzałkę w `prawo`:
 
-![restore wallet](png/restore_account/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)
 
 Na następnej stronie ustaw silne hasło i potwierdź je, zanim ponownie klikniesz w strzałkę w `prawo`:
 
-![wallet password](png/restore_account/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
 Sprecyzuj ustawienia swojego demona i kliknij w strzałkę w `prawo`:
 
-![daemon settings](png/restore_account/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 
 Kliknij w `UŻYJ MONERO`, aby skorzystać ze swojego przywróconego portfela:
 
-![all set up](png/restore_account/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)

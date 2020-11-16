@@ -107,6 +107,18 @@ summary: "Translated summary."
 ---
 ```
 
+#### 3.2. Notes for user guides screenshots
+User guides can contain screenshots. By default they are all displayed in English, but a complete localized user guide should have translated screenshots as well.  
+Screenshots cannot be translated as text obviously, so the only viable solution is to take the same screenshot as the one in the English version, but using the language of the guide you want to update.
+
+For example, if the user guide `How to solo mine with the GUI` is translated into French and you want to have the screenshot translated, follow these steps:
+
+1. Go to `/img/resources/user-guides`
+2. If this is the first localized screenshot for that language, you'll need to create a dedicate folder with the code of that language. In this example we'll use `fr`.
+3. Copy the folder containing the screenshots of the guide you are working on from inside the `en` folder. In this example you have to copy `solo_mine_GUI` into `fr`
+4. Now take a look at the screenshots inside `solo_mine_GUI` and replace them with screenshots of the GUI in French.
+5. Edit the path of the images in the markdown file which contains the guide. Remember that by default all guides point to the english version, so everything you'll have to do is to change the path of the screenshot and replace `en` with your language code. In ouur example, we need to navigate to `/_i18n/fr/resources/user-guides/solo_mine_GUI.md` and change the path of all screenshots from `/img/resources/user-guides/en/remote_node/SCREENSHOT.png` to `/img/resources/user-guides/fr/remote_node/SCREENSHOT.png`.
+
 ### 4. set the 'translated' snippet to true
 Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
 
@@ -161,6 +173,8 @@ outdated: False
 If the guide is outdated, simply change `False` into `True`.
 
 When you update a guide, you are responsible for updating this version tracking in every file involved in your update. Don't be afraid to ask for help if the process is not clear to you.
+
+The screenshots of all user guides are in `/img/user-guides/LANG`. Where `LANG` cna be any of the languages supported by Getmonero. By default, all localized versions of the website will use the english version of the screenshots, see the [translations](#translation) section for info about translating screenshots.
 
 ## How to make a blog post
 

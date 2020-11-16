@@ -36,59 +36,59 @@ This section will cover installing the cryptography software. Windows does not c
 
 In a web browser, go to [gpg4win.org](https://gpg4win.org) and download the installer by clicking the green button.
 
-![gpg4win download button](png/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)
+![gpg4win download button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)
 
 You will be taken to a donation page. If you do not wish to donate select `$0`, then you will be able to click `Download`.
 
-![gpg4win site donation](png/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)
+![gpg4win site donation](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)
 
 Click `Save File`.
 
-![gpg4win site save file](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)
+![gpg4win site save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)
 
 Choose a download location, click `Save`.
 
-![gpg4win site download location](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
+![gpg4win site download location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
 #### 1.1.2. Launch Gpg4win
 
 When the download is finished, open the containing folder.
 
-![gpg4win site open folder](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)
+![gpg4win site open folder](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)
 
 Double click the downloaded gpg4win executable to launch.
 
-![gpg4win launch](png/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
+![gpg4win launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
 ### 1.2. Use Gpg4win Installer
 
 You will be presented with a security verification screen, click `Run`.
 
-![gpg4win installer security](png/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)
+![gpg4win installer security](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)
 
 Select your language, click `OK`.
 
-![gpg4win installer language](png/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)
+![gpg4win installer language](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)
 
 A welcome screen will appear, click `Next`.
 
-![gpg4win installer welcome](png/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)
+![gpg4win installer welcome](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)
 
 Now you will see the component selection screen, you must at least leave `Kleopatra` checked for this guide. Make your selections, click `Next`.
 
-![gpg4win installer components](png/verify_binary_windows_beginner/verify-win_gpg4win-components.png)
+![gpg4win installer components](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-components.png)
 
 It is best to leave the default installation location unless you know what you are doing. Make your selections, click `Install`.
 
-![gpg4win installer location](png/verify_binary_windows_beginner/verify-win_gpg4win-install.png)
+![gpg4win installer location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install.png)
 
 Installation has completed, click `Next`.
 
-![gpg4win installer complete](png/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
+![gpg4win installer complete](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
 
 Click `Finish`.
 
-![gpg4win installer finish](png/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
+![gpg4win installer finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
 ## 2. Monero Signing Key
 
@@ -98,11 +98,11 @@ This section will cover downloading the Monero signing key, verifying that the k
 
 In a web browser, go to [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), which he uses for signing the Monero binaries. Right click on the page, choose `Save Page As`.
 
-![getkey right click](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
+![getkey right click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
 
 Leave the default location, click `Save`.
 
-![getkey save file](png/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
+![getkey save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
 ### 2.2. Initialize Kleopatra
 
@@ -110,49 +110,49 @@ If this is your first time using Kleopatra you will have to create a key pair fo
 
 Launch Kleopatra.
 
-![kleo launch](png/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
+![kleo launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
 #### 2.2.1. Import Signing Key
 
 Click `Import`.
 
-![kleo firstrun import](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
+![kleo firstrun import](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
 
 Enter the directory `Downloads`, select `binaryfate`, and click `Open`.
 
-![kleo firstrun key location](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
+![kleo firstrun key location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
 
 Start the process of certifying the key by clicking `Yes`.
 
-![kleo firstrun start process](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
+![kleo firstrun start process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
 #### 2.2.2. Create Key Pair
 
 Start the process of key creation by clicking `Yes`.
 
-![kleo firstrun start key create](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)
+![kleo firstrun start key create](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)
 
 Fill in some details for `Name` and `Email`, click `Next`.
 
-![kleo firstrun key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)
+![kleo firstrun key details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)
 
 Verify details, click `Create`.
 
-![kleo firstrun verify key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
+![kleo firstrun verify key details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
 
 Set a password, click `OK`.
 
-![kleo firstrun set key pass](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)
+![kleo firstrun set key pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)
 
 Click `Finish`.
 
-![kleo firstrun finish create key](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
+![kleo firstrun finish create key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
 ### 2.3. Verify Signing Key
 
 Visually check that the fingerprint of the key belonging to binaryFate is `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
 
-![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
+![kleo certify fingerprint](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
 If the fingerprint **DOES** match, click `Certify`.
 
@@ -160,7 +160,7 @@ If the fingerprint of this key **DOES NOT** match, **DO NOT CONTINUE**. Instead 
 
 Enter your password, click `OK`.
 
-![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
+![kleo certify pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Click `Finish`.
 
@@ -172,31 +172,31 @@ This section will cover downloading the signed file of known good hashes and ver
 
 In a web browser, go to the [getmonero.org hash page]({{ site.baseurl_root }}/downloads/hashes.txt). Right click the page, select `Save Page As`.
 
-![hashes right click](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
+![hashes right click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
 Leave the default location, click `Save`.
 
-![hashes save file](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
+![hashes save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
 ### 3.2. Verify Hash File
 
 In Kleopatra, click the `Decrypt/Verify` button.
 
-![hashes kleo verify button](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
+![hashes kleo verify button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
 
 Navigate to `Downloads` directory. Select `hashes` file, click `Open`.
 
-![hashes kleo open file](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)
+![hashes kleo open file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)
 
 Kleopatra will inform you if the files signature is valid.
 
 If the signature is **VALID** you will see this:
 
-![hashes kleo goodsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)
+![hashes kleo goodsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)
 
 If the signature is **INVALID** you will see this:
 
-![hashes kleo badsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)
+![hashes kleo badsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)
 
 If you receive a **VALID** signature, click `Discard` and move on.
 
@@ -210,37 +210,37 @@ This section will cover downloading the Monero binary and verifying its authenti
 
 In a web browser, go to the [getmonero.org downloads page]({{ site.baseurl_root }}/downloads/#windows). Select the correct binary for your system.
 
-![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
+![binary getmonero](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 
 Leave `Save File` selected, click `OK`.
 
-![binary getmonero save](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
+![binary getmonero save](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
 
 Leave the default location, click `Save`.
 
-![binary getmonero save location](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
+![binary getmonero save location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
 ### 4.2. Verify Binary
 
 In a file manager, navigate to `Downloads` directory. Open the file `hashes` with a word processor.
 
-![binary open hashes.txt](png/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)
+![binary open hashes.txt](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)
 
 Open a terminal (`cmd.exe`).
 
-![binary launch term](png/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)
+![binary launch term](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)
 
 Change to the `Downloads` directory with the command: `cd Downloads`.
 
-![binary cmd cd](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
+![binary cmd cd](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
 
 Calculate the hash of the Monero binary with the command: `certUtil -hashfile monero-gui-win-x64-v0.16.0.2.zip SHA256` (if you downloaded a command-line only version, replace `monero-gui-win-x64-v0.16.0.2.zip` accordingly).
 
-![binary cmd certutil](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
+![binary cmd certutil](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
 
 Compare the hash from the terminal with the one in the hash file. They should be the same (spaces can be ignored).
 
-![binary compare hashes](png/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
+![binary compare hashes](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
 
 If your hash **DOES** match then you are finished with verification! You can be sure the Monero files you have are authentic. You may extract and install/use the files normally.
 

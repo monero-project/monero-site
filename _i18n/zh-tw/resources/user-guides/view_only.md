@@ -23,20 +23,20 @@ Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-
 ### GUI: Creating a View-Only Wallet from an Existing Wallet File
 If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
 
-![settings](png/view-only/settings.png)
+![settings](/img/resources/user-guides/en/view-only/settings.png)
 
 The view-only wallet file will be created within the same directory and using your current password.
 
 Optionally, double-click the `Success` window to copy the message, then click `OK` to close it:
 
-![Success](png/view-only/Success.png)
+![Success](/img/resources/user-guides/en/view-only/Success.png)
 
 ### GUI: Creating a View-only Wallet from a Private View Key
 If you don't have access to the existing wallet, you can create a view-only wallet by knowing the wallet's main address and its private view key.
 
 In order to do that, go to the main Menu and click on `Restore wallet from keys or mnemonic seed`:
 
-![restore-view-only](png/view-only/restore-view-only.png)
+![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)
 
 Enter a name for you view-only wallet file. Optionally, you can change the file location.
 

@@ -36,59 +36,59 @@
 
 В веб-браузере следует зайти на сайт [gpg4win.org](https://gpg4win.org) и нажатием зелёной кнопки скачать программу установки.
 
-![gpg4win download button](png/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)
+![gpg4win download button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)
 
 Вы попадёте на страницу пожертвований. Если вы не собираетесь делать пожертвование, следует выбрать `$0`, после чего можно будет нажать на кнопку `Download` (Загрузить)
 
-![gpg4win site donation](png/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)
+![gpg4win site donation](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)
 
 Нажмите `Save File` (Сохранить файл).
 
-![gpg4win site save file](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)
+![gpg4win site save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)
 
 Выберите место для сохранения файла и нажмите `Save` (Сохранить).
 
-![gpg4win site download location](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
+![gpg4win site download location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
 #### 1.1.2. Запуск Gpg4win
 
 Как только загрузка файла будет завершена, откройте папку, в которую он был сохранён.
 
-![gpg4win site open folder](png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)
+![gpg4win site open folder](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)
 
 Двойным кликом запустите исполняемый файл gpg4win.
 
-![gpg4win launch](png/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
+![gpg4win launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
 ### 1.2. Работа с программой установки Gpg4win
 
 Должен появиться экрана проверки безопасности, в нём следует нажать `Run` (Запустить).
 
-![gpg4win installer security](png/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)
+![gpg4win installer security](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)
 
 Выберите язык и нажмите `ОК`.
 
-![gpg4win installer language](png/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)
+![gpg4win installer language](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)
 
 Появится экран приветствия. Нажмите `Next` (Далее).
 
-![gpg4win installer welcome](png/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)
+![gpg4win installer welcome](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)
 
 Теперь должен появиться экран выбора компонентов. Для продолжения работы в соответствии с данным руководством необходимо выбрать хотя бы `Kleopatra`, а затем нажать `Next` (Далее).
 
-![gpg4win installer components](png/verify_binary_windows_beginner/verify-win_gpg4win-components.png)
+![gpg4win installer components](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-components.png)
 
 Если вы не уверены в том, что делаете, лучше оставить место установки без изменений (используемое по умолчанию). После того, как место установки будет выбрано, нажать `Install` (Установить).
 
-![gpg4win installer location](png/verify_binary_windows_beginner/verify-win_gpg4win-install.png)
+![gpg4win installer location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install.png)
 
 После того, как установка будет завершена, нажмите `Next` (Далее).
 
-![gpg4win installer complete](png/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
+![gpg4win installer complete](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
 
 Нажмите `Finish` (Завершить).
 
-![gpg4win installer finish](png/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
+![gpg4win installer finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
 ## 2. Импорт подписывающего ключа Monero
 
@@ -98,11 +98,11 @@
 
 В веб-браузере необходимо перейти по ссылке [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), который используется для подписи двоичных файлов Monero. Кликом правой кнопки мыши необходимо выбрать `Save Page As` (Сохранить страницу как).
 
-![getkey right click](png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
+![getkey right click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)
 
 Оставьте место для загрузки, используемое по умолчанию, без изменений и нажмите `Save` (Сохранить).
 
-![getkey save file](png/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
+![getkey save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
 ### 2.2. Запуск утилиты Kleopatra
 
@@ -110,49 +110,49 @@
 
 Запустите Kleopatra.
 
-![kleo launch](png/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
+![kleo launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
 #### 2.2.1. Импорт подписывающего ключа
 
 Нажмите `Import` (Импортировать).
 
-![kleo firstrun import](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
+![kleo firstrun import](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)
 
 Перейдите в директорию `Downloads` (Загрузки), выберите `binaryfate` и нажмите `Open` (Открыть).
 
-![kleo firstrun key location](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
+![kleo firstrun key location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)
 
 Запустите процесс сертификации ключа нажатием `Yes` (Да).
 
-![kleo firstrun start process](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
+![kleo firstrun start process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
 #### 2.2.2. Создание пары ключей
 
 Запустите процесс создания ключа нажатием `Yes` (Да).
 
-![kleo firstrun start key create](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)
+![kleo firstrun start key create](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)
 
 Введите информацию, заполнив поля `Name` (Имя) и `Email` (Электронная почта), нажмите `Next` (Далее).
 
-![kleo firstrun key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)
+![kleo firstrun key details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)
 
 Проверить указанную информацию и нажмите `Create` (Создать).
 
-![kleo firstrun verify key details](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
+![kleo firstrun verify key details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)
 
 Введите пароль и нажмите `OK`.
 
-![kleo firstrun set key pass](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)
+![kleo firstrun set key pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)
 
 Нажмите `Finish` (Завершить).
 
-![kleo firstrun finish create key](png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
+![kleo firstrun finish create key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
 ### 2.3. Верификация подписывающего ключа
 
 Визуально проверить, соответствует ли отпечаток ключа, принадлежащего binaryFate, `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
 
-![kleo certify fingerprint](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
+![kleo certify fingerprint](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)
 
 Если отпечаток **СООТВЕТСТВУЕТ** отпечатку, нажать `Certify` (Далее).
 
@@ -160,7 +160,7 @@
 
 Введите свой пароль и нажмите `OK`.
 
-![kleo certify pass](png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
+![kleo certify pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)
 
 Нажмите `Finish` (Завершить).
 
@@ -172,31 +172,31 @@
 
 В веб-браузере следует перейти на [страницу хешей на getmonero.org](https://getmonero.org/downloads/hashes.txt). Кликом правой кнопки мыши выбрать `Save Page As` (Сохранить страницу как).
 
-![hashes right click](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
+![hashes right click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
 Оставьте место для загрузки, используемое по умолчанию, без изменений и нажмите `Save` (Сохранить).
 
-![hashes save file](png/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
+![hashes save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
 ### 3.2. Верификация хеш-файла
 
 В утилите Kleopatra нажать кнопку `Decrypt/Verify` (Расшифровать/проверить).
 
-![hashes kleo verify button](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
+![hashes kleo verify button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)
 
 Указать путь к директории `Downloads`, выбрать файл `hashes` и нажать `Open` (Открыть).
 
-![hashes kleo open file](png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)
+![hashes kleo open file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)
 
 Kleopatra сообщит, является ли подпись файла действительной.
 
 Если подпись **ЯВЛЯЕТСЯ** действительной, вы увидите следующее:
 
-![hashes kleo goodsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)
+![hashes kleo goodsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)
 
 Если же подпись **НЕ ЯВЛЯЕТСЯ** действительной, вы увидите это:
 
-![hashes kleo badsig](png/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)
+![hashes kleo badsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)
 
 Если вами была получена **ДЕЙСТВИТЕЛЬНА** подпись, нажмите `Discard` (Не учитывать) и продолжайте.
 
@@ -210,37 +210,37 @@ Kleopatra сообщит, является ли подпись файла дей
 
 В веб-браузере следует перейти на [страницу загрузки файлов getmonero.org](https://getmonero.org/downloads/#windows) и выбрать правильный файл для вашей системы.
 
-![binary getmonero](png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
+![binary getmonero](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)
 
 Выберите `Save File` (Сохранить файл) и нажмите `OK`.
 
-![binary getmonero save](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
+![binary getmonero save](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
 
 Оставьте место для загрузки, используемое по умолчанию, без изменений и нажмите `Save` (Сохранить).
 
-![binary getmonero save location](png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
+![binary getmonero save location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
 ### 4.2. Верификация двоичного файла
 
 В файловом менеджере выберите директорию `Downloads` и откройте файл `hashes` при помощи текстового редактора.
 
-![binary open hashes.txt](png/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)
+![binary open hashes.txt](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)
 
 Откройте консоль (`cmd.exe`).
 
-![binary launch term](png/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)
+![binary launch term](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)
 
 Изменить путь на директорию `cd Downloads`, измените директорию на `Downloads`
 
-![binary cmd cd](png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
+![binary cmd cd](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)
 
 Вычислите хеш двоичного файла Monero при помощи команды `certUtil -hashfile monero-gui-win-x64-v0.16.0.2.zip SHA256` (если вы загрузили версию, предполагающую только использование командной строки, замените `monero-gui-win-x64-v0.16.0.2.zip`, именем скачанного файла кошелька).
 
-![binary cmd certutil](png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
+![binary cmd certutil](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)
 
 Сравните хеш, полученный при помощи командной строки, с хешем из файла хешей. Они должны совпадать (пробелы можно не учитывать).
 
-![binary compare hashes](png/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
+![binary compare hashes](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
 
 Если хеши **СОВПАДАЮТ**, значит, верификация успешно пройдена! Вы можете быть уверены в том, что имеющиеся у вас двоичные файлы Monero аутентичны. Вы спокойно можете извлекать/устанавливать и пользоваться ими.
 

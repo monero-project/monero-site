@@ -39,12 +39,12 @@ If it's set to 0, set it to 1:
 
 Alice can open her monero-wallet-gui and go to the history page to see her transaction detail:
 
-![History](png/prove-payment/history.png)
+![History](/img/resources/user-guides/en/prove-payment/history.png)
 
 Here, she can copy the transaction ID and Bob's address by clicking on each of them.
 Then she can click on `P` to get a payment proof (transaction key):
 
-![Payment proof](png/prove-payment/payment-proof.png)
+![Payment proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)
 
 
 ---
@@ -72,11 +72,11 @@ Charlie will want to double check with Bob the address is really his - same as w
 
 Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check page to fill the Check section with the informations provided by Alice:
 
-![Check payment](png/prove-payment/check-payment.png)
+![Check payment](/img/resources/user-guides/en/prove-payment/check-payment.png)
 
 Then clicking on Check will tell Charlie how much this particular transaction sent to this address, and how much confirmation the transaction had:
 
-![Payment checked](png/prove-payment/payment-checked.png)
+![Payment checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)
 
 
 ---

@@ -26,28 +26,28 @@ After you have entered the 25 word mnemonic seed and have chosen your specific b
 
 Lauch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:
 
-![cancel opening](png/restore_account/cancel-opening.png)
+![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)
 
 Select your appropriate language `Italiano`:
 
-![choose language](png/restore_account/choose-language.png)
+![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)
 
 Click on `Restore wallet from keys or mnemonic seed`:
 
-![choose restore](png/restore_account/choose-restore.png)
+![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)
 
 Keep `Restore from seed` selected, give your wallet a name & storage location, and complete the `Enter your 25 (or 24) word mnemonic seed`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:
 
-![restore wallet](png/restore_account/restore-wallet.png)
+![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)
 
 On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:
 
-![wallet password](png/restore_account/wallet-password.png)
+![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
 Specify your daemon settings and click the `Right` arrow:
 
-![daemon settings](png/restore_account/daemon-settings.png)
+![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 
 Click on `USE MONERO` to enjoy your restored wallet:
 
-![all set up](png/restore_account/all-set-up.png)
+![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)
