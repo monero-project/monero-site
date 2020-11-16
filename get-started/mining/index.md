@@ -68,9 +68,6 @@ permalink: /get-started/mining/index.html
                        <p>{% t mining.software_para %}</p>
                     </div>
                     <div class="row center-xs">
-                        <p><a href="https://github.com/fireice-uk/xmr-stak" target="_blank" rel="noreferrer noopener">XMR Stak</a></p>
-                    </div>
-                    <div class="row center-xs">
                         <p><a href="https://github.com/xmrig/xmrig" target="_blank" rel="noreferrer noopener">XMRig</a></p>
                     </div>
                     <div class="row center-xs">
