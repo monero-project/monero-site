@@ -1,9 +1,9 @@
 ---
-terms: ["coinbase-transaction"]
-summary: "a special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work"
+terms: ["coinbase-transaction", "Coinbase-Transaktion"]
+summary: "Eine in jedem Block enthaltene besondere Art der Transaktion, welche einen kleinen Monero-Betrag enthält, der als Belohnung für den Mining-Aufwand an den Miner geht"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work.
+Eine in jedem Block enthaltene besondere Art der Transaktion, welche einen kleinen Monero-Betrag enthält, der als Belohnung für den Mining-Aufwand an den Miner geht.

@@ -1,15 +1,15 @@
 ---
-terms: ["change"]
-summary: "Monero sent as part of a transaction, that returns to your account instead of going to another recipient"
+terms: ["change", "Wechselgeld"]
+summary: "Monero, die Teil einer Transaktion waren und auf das Konto zurückgebucht werden, anstatt an einen anderen Empfänger zu gehen"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-Monero sent as part of a transaction, that returns to your account instead of going to another recipient.
+Monero, die als Teil einer Transaktion versendet wurden und auf das Konto zurückgebucht werden, anstatt an einen anderen Empfänger zu gehen.
 
-### More Information
+### Weitere Informationen
 
-The @wallet in the Monero software makes change automatically, but when you send a transaction, you are taking an input that you control and telling the Monero network what to do with it. The input is a "deposit" to your account that you are able to spend. Outputs are the part of the transaction that tells the Monero network where to send the funds.
+Das @Wallet der Monero-Software berechnet Wechselgeld automatisch. Wenn du eine Transaktion vornimmst, sagst du dem Monero-Netzwerk, was es mit einem von dir kontrollierten Input tun soll. Ein Input ist eine "Einzahlung" auf dein Konto, welche du anschließend ausgeben kannst. Outputs sind der Teil einer Transaktion, welcher dem Monero Netzwerk mitteilt, wohin Beträge gesendet werden sollen (Outputs sind also gewissermaßen die gesendeten und damit ausgegebenen Geldbeträge).
 
-You might have multiple inputs in your account, in many different denominations (For example: you deposited 0.5 XMR on Friday, and 0.75 XMR on Saturday). So, when have a transaction with an input of 0.5 XMR, but you only want to send 0.1 XMR, your transaction will include a fee to pay the @miner, an output for 0.1 XMR to send to the recipient, and the rest that you want to send back to yourself will be an output back to you (this is called "change"). Once the transaction is completed, the change becomes available to you as an input that you can again split and send with a new transaction.
+Du kannst mehrere Inputs in verschiedenen Stückelungen auf deinem Konto haben (so hast du vielleicht am Freitag 0,5 XMR und am Samstag 0,75 XMR eingezahlt). Wenn du also eine Transaktion mit einem Input von 0,5 XMR hast, jedoch nur 0,1 XMR versenden möchtest, wird deine @Transaktion neben einer Gebühr zur Bezahlung des @Miners einen Output von 0,1 XMR, die an den Empfänger gehen, enthalten. Der Restbetrag, den du zurückerhalten möchtest, geht als Output an dich selbst (dies wird "Wechselgeld" genannt). Sobald die Transaktion abgeschlossen ist, wird das Wechselgeld zu einem Input, welches du wieder aufteilen und in einer neuen Transaktion versenden kannst.
