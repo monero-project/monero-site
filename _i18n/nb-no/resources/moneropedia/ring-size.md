@@ -5,6 +5,8 @@ summary: "totalt antall mulige underskrivere i en ringsignatur"
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunnleggende
-Ringstørrelse refererer til det totale antallet underskrivere i en ringsignatur. Hvis en ringstørrelse på 4 velges for en gitt transaksjon, betyr det at det finnes tre fremmede utdata i tillegg til din «ekte» utdata. Et høyere ringstørrelsetall vil typisk gi mer personvern enn et lavere tall. Å gjenbruke et gammelt, gjenkjennelig ringstørrelsetall for transaksjoner kan imidlertid få transaksjonene til å skille seg ut.
+Ringstørrelse refererer til det totale antallet underskrivere i en ringsignatur. Før utgivelsen av [0.13.0 "Beryllium Bullet"]({{ site.baseurl }}/2018/10/11/monero-0.13.0-released.html), var det mulig å velge et vilkårlig antall underskrivere (av og til med minstegrenser). Med 0.13-utgivelsen, ble det bestemt å sette dette tallet til 11 for å tvinge gjennom transaksjonsensartethet.
 
 `Ring size (11) = foreign outputs (10) + your output (1)`
+
+Fremmede utdata (foreign outputs) kalles som regel for «avledninger» (decoys), og antallet avledninger ble tidligere kalt for «mixin»-størrelsen.
