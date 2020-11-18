@@ -16,4 +16,4 @@ OpenAlias er i bunn og grunn en TXT-DNS-oppføring på en FQDN (fullt kvalifiser
 
 En standard som lar deg bruke en e-post eller domenesyntaks istedenfor en adresse for å betale noen, f.eks. donate@getmonero.org eller donate.getmonero.org.
 
-Du kan finne mer informasjon på [OpenAlias-siden](/the-monero-project/) eller på [OpenAlias-nettsiden](https://openalias.org)
+Du kan finne mer informasjon på [OpenAlias-nettsiden](https://openalias.org)
