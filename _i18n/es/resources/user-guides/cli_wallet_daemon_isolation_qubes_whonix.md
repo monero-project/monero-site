@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 # Aislamiento de Monedero CLI/Daemon con Qubes + Whonix
 
