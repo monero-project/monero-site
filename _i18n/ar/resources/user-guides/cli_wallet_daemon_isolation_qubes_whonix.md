@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 # عزل واجهه سطر الأوامر/الخادم في نظام Qubes + Whonix
 
