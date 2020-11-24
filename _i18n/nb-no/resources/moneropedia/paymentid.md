@@ -4,7 +4,7 @@ summary: "et valgfritt flagg bestående av 64 heksadesimaltegn som er lagt til f
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
-*Merknad:* Lange betalings-ID-er har blitt fjernet etter 0.15-utgivelsen; det er ikke mulig å bruke dem lenger. Mer informasjon kan du finne i [blogginnlegget](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html) som kunngjorde at det ble avskrevet.
+*Merknad:* Lange betalings-ID-er har blitt fjernet etter 0.15-utgivelsen, så det er ikke mulig å bruke dem lenger. Mer informasjon kan du finne i [blogginnlegget](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html) som kunngjorde at det ble avskrevet.
 
 ### Det grunnleggende
 
