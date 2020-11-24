@@ -1,6 +1,6 @@
 ---
 terms: ["address", "addresses", "adresse", "adresser"]
-summary: "enten et alias, som for eksempel donate.getmonero.org, eller et sett med 95 tegn som starter med en 4"
+summary: "enten et alias, som for eksempel donate.getmonero.org, eller et sett med 95 tegn som begynner med en 4"
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
