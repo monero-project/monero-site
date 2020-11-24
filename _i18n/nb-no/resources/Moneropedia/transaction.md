@@ -9,7 +9,7 @@ summary: "en kryptografisk signert beholder som redegjør for overføringen av M
 En kryptografisk signert beholder som redegjør for overføringen av Monero til en mottaker (eller mottakere).
 
 
-Parameterne til en transaksjon innholder én eller flere mottakeradresser med tilhørende beløp og en parameter i ringstørrelse som spesifiserer antall utdata som er bundet til transaksjonen. Jo flere utdata som brukes, jo høyere grad av forkludring er mulig – men det har sin pris. Siden en transaksjon blir større med mer utdata, blir transaksjonskostnaden høyere.
+Parameterne til en transaksjon innholder én eller flere mottakeradresser med tilhørende beløp og én parameter i ringstørrelse som spesifiserer antall utdata som er bundet til transaksjonen. Jo flere utdata som brukes, jo høyere grad av forkludring er mulig – men det har sin pris. Siden en transaksjon blir større med mer utdata, blir transaksjonskostnaden høyere.
 
 Det er mulig å lage en transaksjon i frakoblet tilstand, noe som tilbyr ytterligere personvernfordeler.
 
