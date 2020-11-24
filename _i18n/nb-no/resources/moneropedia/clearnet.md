@@ -25,7 +25,7 @@ Fordi en tradisjonell [VPN](https://en.wikipedia.org/wiki/VPN) ikke kan redde de
 
 Disse teknologiene beskytter deg fra clearnet ved å bygge et anonymt nettverk **over** clearnet med hensikt å holde overføringene dine både krypterte **og** anonyme.
 
-Her er et nøyaktig, [interaktivt diagram](https://www.eff.org/pages/tor-and-https) gitt av [EFF](https://www.eff.org/) som beskriver *clearnet* i sammenheng med **Tor**. Konseptet gjelder også (i en viss grad) Kovri og I2P hva gjelder anonymitet, med unntaket av at:
+Her er et nøyaktig, [interaktivt diagram](https://www.eff.org/pages/tor-and-https) gitt av [EFF](https://www.eff.org/) som beskriver *clearnet* i sammenheng med **Tor**. Konseptet gjelder også (til en viss grad) for Kovri og I2P hva gjelder anonymitet, med unntaket av at:
 
 - Kovri ikke bruker utgangsnoder når vi kobler til en @eepsite
 - Trafikken din trenger aldri å forlate I2P-nettverket
