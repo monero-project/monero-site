@@ -18,4 +18,4 @@ Verter i et offentlig abonnement kan betraktes som kanonisk unike verter i I2P-n
 ### Merknader
 
 - Monero bruker i hovedsak kanonisk unik vert-oppløsning, mens I2P kun bruker lokal unik vert-oppløsning.
-- I2P-er og @Kovrier som er tilordnet toppnivådomener er for tiden `.i2p`, og Kovri har kun til hensikt å behandle/bruke `.i2p`-[toppnivådomenet](https://en.wikipedia.org/wiki/Top_level_domain)
+- I2P-er og Kovrier som er tilordnet toppnivådomener er for tiden `.i2p`, og Kovri har kun til hensikt å behandle/bruke `.i2p`-[toppnivådomenet](https://en.wikipedia.org/wiki/Top_level_domain)
