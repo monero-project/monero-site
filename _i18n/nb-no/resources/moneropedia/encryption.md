@@ -31,4 +31,4 @@ Kovri implementerer ulike typer kryptering i *minst* fire essensielle kapasitete
 - Tunnelkryptering: garlic-meldinger passeres gjennom en tunnel og krypteres av tunnelportalen til tunnelsluttpunktet
 - Transportlagkryptering hindrer muligheten til å avkode meldinger på [medialag](https://en.wikipedia.org/wiki/OSI_model)
 
-For detaljer om krypteringstyper og kryptografiske signaturer som er brukt i Kovri og I2P, kan du besøke Java-I2Ps artikkel om [kryptografi](https://geti2p.net/spec/cryptography)
+For detaljer om krypteringstyper og kryptografiske signaturer som er brukt i Kovri og I2P, kan du se Java-I2Ps artikkel om [kryptografi](https://geti2p.net/spec/cryptography)
