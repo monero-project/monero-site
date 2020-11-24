@@ -17,7 +17,7 @@ Og selv om du bruker [HTTPS](https://en.wikipedia.org/wiki/HTTPS) eller liknende
 
 ### Inngående informasjon
 
-Fordi en tradisjonell [VPN](https://en.wikipedia.org/wiki/VPN) ikke kan redde deg fra clearnet (i og med at du fremdeles bruker *clearnet* (selvom du er mer sikret enn uten en VPN)), bør du bruke et *anonymt overleggsnettverk* for å unngå å bruke clearnet direkte:
+Fordi en tradisjonell [VPN](https://en.wikipedia.org/wiki/VPN) ikke kan redde deg fra clearnet (i og med at du fremdeles bruker *clearnet* (selv om du er mer sikret enn uten en VPN)), bør du bruke et *anonymt overleggsnettverk* for å unngå å bruke clearnet direkte:
 
 - Kovri
 - Java-I2P
