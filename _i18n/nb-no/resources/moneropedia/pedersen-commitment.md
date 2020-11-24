@@ -1,6 +1,6 @@
 ---
 terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments", forpliktelse", "forpliktelser", "pedersen-forpliktelse", "pedersen-forpliktelser"]
-summary: "Pedersen-forpliktelser er kryptografiske algoritmer som lar en beviser å forplikte seg til en viss verdi uten å avsløre den eller kunne endre den"
+summary: "Pedersen-forpliktelser er kryptografiske algoritmer som lar en beviser forplikte seg til en viss verdi uten å avsløre den eller kunne endre den"
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
