@@ -10,7 +10,7 @@ Monero-kjerneteamet lanserte en standard, kalt OpenAlias, som tillater mer lettl
 
 OpenAlias prøver å gi en måte å forenkle oppretting og bruk av aliser i et teknologiklima som stadig er i endring. Brukere prøver å krysse broen til private og kryptografisk sikre infrastrukturer og systemer, men mange av dem har såvidt begynte å huske e-postadressene til vennene og familien sin.
 
-Som del av den pågående utviklingen av Monero-kryptovalutaprosjektet, spurte vi oss selv: Hvordan kan vi simplifisere betalinger for brukere som ikke er vant med krytovaluta? Moneros stealth-adresser har en lengde på minst 95 tegn – å huske dem er ikke er alternativ, og å spørre noen om å sende en betaling til en <95-character-string> vil bare føre til forvirring.
+Som del av den pågående utviklingen av Monero-kryptovalutaprosjektet, spurte vi oss selv: Hvordan kan vi forenkle betalinger for brukere som ikke er vant med krytovaluta? Moneros stealth-adresser har en lengde på minst 95 tegn – å huske dem er ikke er alternativ, og å spørre noen om å sende en betaling til en <95-character-string> vil bare føre til forvirring.
 
 OpenAlias er i bunn og grunn en TXT-DNS-oppføring på en FQDN (fullt kvalifisert domenenavn). Ved å kombinere dette med DNS-relaterte teknologier, har vi opprettet en alias-standard som er utvidbar for utviklere, intuitiv og kjent for brukere, og som kan kjøres sammen med både sentraliserte og desentraliserte domenesystemer.
 
