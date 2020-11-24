@@ -1,7 +1,6 @@
 ---
 terms: ["spend-key", "spend-keys", "forbruksnøkkel", "forbruksnøkler"]
 summary: "ett av to par med private og offentlige kryptografiske nøkler som hver konto har, med en *privat* forbruksnøkkel som brukes til å forbruke eventuelle midler på kontoen"
-
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
