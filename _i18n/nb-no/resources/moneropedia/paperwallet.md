@@ -1,5 +1,5 @@
 ---
-terms: ["paperwallet", "paperwallets", "paper-wallet", "paper-wallets", "papilommebok", "papirlommebøker", "papir-lommebok", papir-lommebøker"]
+terms: ["paperwallet", "paperwallets", "paper-wallet", "paper-wallets", "papirlommebok", "papirlommebøker", "papir-lommebok", papir-lommebøker"]
 summary: "En papirlommebok som lagrer nødvendig informasjon for å sende og motta Monero"
 ---
 
