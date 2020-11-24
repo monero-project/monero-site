@@ -8,7 +8,7 @@ summary: "Tilsvarende en bankkonto og inneholder alle dine sendte og mottatte tr
 
 De som kjenner til Moneros forgjengere, vil være bedre kjent med begrepet *lommebok* i denne beskrivelsen. I Monero kaller vi dette for en konto, og det er en privat konto, eid og styrt av en Monero-bruker.
 
-Kontoen din inneholder alle Monero-transaksjonene du har sendt og mottatt. Kontobalansen din er summen av alle Moneroene du har mottatt, fratrukket Moneroene du har mottatt. Når du bruker Monero, legger du kanskje merke til at kontoen din har to saldoer – en låst og en ulåst saldo. Den ulåste saldoen inneholder midler som kan brukes umiddelbart, og den låste saldoen inneholder midler som ikke kan brukes med én gang. Kanskje du motta en transaksjon som har en forhåndsinnstilt opplåsningstid, eller kanskje du har sendt noen Monero og venter på at vekslepengene kommer tilbake til lommeboken din. Begge er situasjoner som kan føre til at midler låses i en viss periode.
+Kontoen din inneholder alle Monero-transaksjonene du har sendt og mottatt. Kontosaldoen din er summen av alle Moneroene du har mottatt, fratrukket Moneroene du har mottatt. Når du bruker Monero, legger du kanskje merke til at kontoen din har to saldoer – en låst og en ulåst saldo. Den ulåste saldoen inneholder midler som kan brukes umiddelbart, og den låste saldoen inneholder midler som ikke kan brukes med én gang. Kanskje du motta en transaksjon som har en forhåndsinnstilt opplåsningstid, eller kanskje du har sendt noen Monero og venter på at vekslepengene kommer tilbake til lommeboken din. Begge er situasjoner som kan føre til at midler låses i en viss periode.
 
 Hovedforskjellen mellom tradisjonell elektronisk valuta og Monero er at det bare er du som har kontroll over kontoen din, vanligvis via PC-en, og at ingen andre kan få tilgang til den dersom du [tar gode forholdsregler](#practicing-good-security).
 
@@ -22,7 +22,7 @@ Dette betyr at man enkelt kan opprette en Monero-konto for seg selv, i tillegg t
 
 Monero avhenger i stor grad av et kryptografisk prinsipp kalt *kryptografi med offentlig/privat nøkkel* eller *asymmetrisk kryptografi*, som er grundig forklart i [denne Wikipedia-artikkelen](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
-Kontoen din er basert på to nøkler – en forbruksnøkkel og en visningsnøkkel. Forbruksnøkkelen er spesiell i og med at det er den eneste nøkkelen som trengs for å bruke Monero-midlene dine, mens visningsnøkkelen lar deg avsløre alle transaksjonene dine til en tredjepart, for eksempel for revisjon eller bokføringsformål. Disse nøklene i kontoen din spiller også en viktig rolle i Moneros transaksjonspersonvern.
+Kontoen din er basert på to nøkler – en forbruksnøkkel og en visningsnøkkel. Forbruksnøkkelen er spesiell i og med at det er den eneste nøkkelen som trengs for å bruke Monero-midlene dine, mens visningsnøkkelen lar deg avsløre alle transaksjonene dine til en tredjepart, for eksempel for revisjons- eller bokføringsøyemed. Disse nøklene i kontoen din spiller også en viktig rolle i Moneros transaksjonspersonvern.
 
 De private nøklene for begge disse må beskyttes av deg for å opprettholde personvernet til kontoen din. De offentlige nøklene, derimot, er åpenbart offentlige (de utgjør en del av Monero-kontoadressen din). I normal kryptografi med offentlige/private nøkler, kan noen sende deg en privat melding ved å kryptere den med en av dine offentlige nøkler, og da ville du ha vært den eneste som kunne ha avkodet den med dine private nøkler.
 
