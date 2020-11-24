@@ -6,7 +6,7 @@ summary: "en standard som lar deg bruke en e-post eller domenesyntaks til å bet
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunnleggende
 
-Monero-kjerneteamet lanserte en standard, kalt OpenAlias, som tillater mer lettleste adresser, og Zookos trekant «til en firkant». OpenAlias kan brukes for enhver kryptovaluta, og er allerede implementert i Monero, Bitcoin (i den seneste Electrum-versjonen) og HyperStake.
+Monero-kjerneteamet lanserte en standard, kalt OpenAlias, som tillater mer lettleste adresser, og gjør Zookos trekant «til en firkant». OpenAlias kan brukes for enhver kryptovaluta, og er allerede implementert i Monero, Bitcoin (i den seneste Electrum-versjonen) og HyperStake.
 
 OpenAlias prøver å gi en måte å forenkle oppretting og bruk av aliser i et teknologiklima som stadig er i endring. Brukere prøver å krysse broen til private og kryptografisk sikre infrastrukturer og systemer, men mange av dem har såvidt begynte å huske e-postadressene til vennene og familien sin.
 
