@@ -1,5 +1,5 @@
 ---
-terms: ["denominations", "subunits", "valører", "underenheter", "tacoshi", "piconero", "nanonero", "micronero", "millinero", "centinero", "decinero","decanero","hectonero","kilonero","meganero","giganero"]
+terms: ["denominations", "subunits", "valører", "underenheter", "tacoshi", "piconero", "nanonero", "micronero", "millinero", "centinero", "decinero", "decanero", "hectonero", "kilonero", "meganero", "giganero"]
 summary: "En valør er en egnet beskrivelse av en valutamengde. Den er ofte en underenhet av valutaen. En cent er for eksempel tradisjonelt sett 1/100 av en spesiell valutaenhet.)"
 ---
 
@@ -26,7 +26,7 @@ Valørnavnene til Monero sløyfer «mo»-delen og legger til SI-prefikser for å
 |============+==========+===================|
 | decanero   | 10^1     | 10                |
 | hectonero  | 10^2     | 100               |
-| kilonero   | 10^3     | 1 000             |
+| kilonero   | 10^3     | 1000             |
 | meganero   | 10^6     | 1 000 000         |
 |------------+----------+-------------------|
 
