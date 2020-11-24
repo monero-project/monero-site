@@ -1,6 +1,6 @@
 ---
 tags: ["kovri"]
-terms: ["Kanonisk-unik-vert"]
+terms: ["Canonically-unique-host", "Kanonisk-unik-vert"]
 summary: "En vert som er kanonisk innstilt til en adresse eller sett med adresser"
 ---
 
@@ -18,5 +18,5 @@ En kanonisk-unik-vert er definert av eksterne, autoritative kilder; vanligvis gj
 
 ### Merknader
 
-- Monero bruker primært en kanonisk-unik-vert-resolusjon, mens I2P bare bruker lokal-unik-vert-resolusjon.
+- Monero bruker primært en kanonisk-unik-vert-resolusjon, mens I2P kun bruker en lokal-unik-vert-resolusjon.
 - I2Ps og Kovris selvtilordnede toppnivå-domene er for tiden `.i2p`, og det er meningen at Kovri kun behandler/bruker `.i2p`-[toppnivå-domenet](https://en.wikipedia.org/wiki/Top_level_domain)
