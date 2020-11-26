@@ -1,23 +1,23 @@
 gui:
-- version: "0.17.1.4 - Oxygen Orion"
+- version: "0.17.1.5 - Oxygen Orion"
   downloads:
    - platform: Windows 64-bit (Installer)
-     hash: 8c9a820fd7dc228807f8ecc46973350d3d5d871c6f8dd67ef066d04407575d14
+     hash: 89e6bad3e8b5b1a57c647f7ddb30ebe4476c74db5730738c0cb7115fb8e44b65
      link: https://downloads.getmonero.org/gui/win64install
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: df78006226d21e70ea5d342b0f6d4335cf398e94cb3d0f750aec4db2d2b3f7f9
+     hash: a5ed83ffeec340b6695c4dcf0305decd5c419a97572e104c323b956deeac3c3d
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
    - platform: Mac OS X 64-bit
-     hash: 4e319a9dfb5e1caa42b52f6503480af3b44403f3bf4691da523880c6a6ec38a9
+     hash: 7c7812263ab242f954534d062984e63cbe34211d8a6fd7f08e4bacfeb52ad1ec
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: abe94552803fd6646e934d1248e6ef33d8d6e2ac9a725c600fa7e8d4bfcc21a3
+     hash: 577c5b2bcef436cffb57e4addf3ae9b669733f9aae83dc74f5025c76671667ed
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
@@ -27,55 +27,55 @@ gui:
      
 
 cli:
-- version: "0.17.1.3 - Oxygen Orion"
+- version: "0.17.1.5 - Oxygen Orion"
   downloads:
    - platform: Windows 64-bit
-     hash: 3eee0d0e896fb426ef92a141a95e36cb33ca7d1e1db3c1d4cb7383994af43a59
+     hash: 4bb0fca53bc58c1167bc0a258f61dd69a54507fd83ad37edf4213b4f30df8c94
      link: https://downloads.getmonero.org/cli/win64
      icon: icon-windows
      vers: 
    - platform: Windows 32-bit
-     hash: c9e9dde61b33adccd7e794eba8ba29d820817213b40a2571282309d25e64e88a
+     hash: 7dc0565a2880b38e73d85599153a31bbed85965963c6f74e1a5cf6dbd06f619e
      link: https://downloads.getmonero.org/cli/win32
      icon: icon-windows
      vers:
    - platform: Mac OS X 64-bit
-     hash: 79557c8bee30b229bda90bb9ee494097d639d60948fc2ad87a029359b56b1b48
+     hash: adfc663b2b36b0cb2fdfcc35185b3d93c8c2256de06da01521e555b7b20ee292
      link: https://downloads.getmonero.org/cli/mac64
      icon: icon-apple
      vers:
    - platform: Linux 64-bit
-     hash: cf3fb693339caed43a935c890d71ecab5b89c430e778dc5ef0c3173c94e5bf64
+     hash: 95666508e695637830b4c1700538c717ff97f02f181fbb337a109763372c8d34
      link: https://downloads.getmonero.org/cli/linux64
      icon: icon-linux
      vers: 
    - platform: Linux 32-bit
-     hash: d107384ff7b1f77ee4db93940dbfda24d6045bf59c43169bc81a0118e3986bfa
+     hash: c5b19fa1db2de6a66e475e634b07f2b5f74d5cd41e968aa0ed34ffd8f91f527f
      link: https://downloads.getmonero.org/cli/linux32
      icon: icon-linux
      vers:
    - platform: Linux ARMv8
-     hash: a0419993fbc6a5ca11bcd2e825acef13e429824f4d8c7ba4ec73ac446d2af2fb
+     hash: 50f113959bcc230860ff77cbac03a2713db772a72e80afe50f511418f9e9d97f
      link: https://downloads.getmonero.org/cli/linuxarm8
      icon: icon-linux
      vers:
    - platform: Linux ARMv7
-     hash: 57d6f9c25bd1dbc9d6b39fcfb13260b21c5594b4334e8ed3b8922108730ee2f0
+     hash: 99fa5eb56616c1b7b6aef69572b8c51efa813bfaff2f2336ac982b449e8ee2a1
      link: https://downloads.getmonero.org/cli/linuxarm7
      icon: icon-linux
      vers:
    - platform: Android ARMv8
-     hash: 0e94f58572646992ee21f01d291211ed3608e8a46ecb6612b378a2188390dba0
+     hash: 01998179f2c39d97f4e204b1323c17ca35c5797c558a9c51ad3f8a21c23620fe
      link: https://downloads.getmonero.org/cli/androidarm8
      icon: icon-android
      vers:
    - platform: Android ARMv7
-     hash: 38a04a7bd00733e9d943edba3004e44730c0848fe5e8a4fca4cb29c12d1e6b2f
+     hash: 972f4ed467e34ea783fb66ad6f50749c2b7b3d9f77bb2825e70a8763d84b00f2
      link: https://downloads.getmonero.org/cli/androidarm7
      icon: icon-android
      vers:
    - platform: FreeBSD 64-bit
-     hash: ae1a1b61d7b4a06690cb22a3389bae5122c8581d47f3a02d303473498f405a1a
+     hash: 8fead098417cd4d3896012e485494efec8851c28abcb1883c3a1716652390321
      link: https://downloads.getmonero.org/cli/freebsd64
      icon: icon-freebsd
      vers:
