@@ -1,15 +1,15 @@
 ---
-terms: ["block", "blocks"]
-summary: "a container of transactions, a sequence of which forms a blockchain"
+terms: ["block", "blocks", "Block", "Blöcke"]
+summary: "Eine Zusammenfassung von Transaktionen; eine Reihung dieser formt eine Blockchain"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A block is a container of @transactions, with a new block being added to the @blockchain once every 2 minutes (see constant `DIFFICULTY_TARGET_V2` defined as 120 seconds), on average.
+Ein Block enthält @Transaktionen (ein Block ist sozusagen eine Zusammenfassung ebendieser). Durchschnittlich wird alle zwei Minuten ein neuer Block zur @Blockchain hinzugefügt (siehe das konstant als 120 Sekunden definierte `DIFFICULTY_TARGET_V2`).
 
-Blocks also contain a special type of transaction, the @coinbase-transaction, which add newly created Monero to the network.
+Blöcke enthalten zudem eine besondere Art von Transaktion: die @Coinbase-Transaktion, welche neu erschaffene Monero zum Netzwerk hinzufügt.
 
-Blocks are created through the process of @mining, and the @node that successfully mines the block then broadcasts it to each of the @nodes connected to it, who subsequently re-broadcast the block until the entire Monero network has received it.
+Blöcke werden durch den Prozess des @Minings erschaffen. Der @Node, der einen Block erfolgreich geminet ("geschürft") hat, sendet diesen dann zu allen verbundenen @Nodes, welche den Block wiederum weitersenden, bis ihn das ganze Monero-Netzwerk empfangen hat.
 
-Fake or bad blocks generally cannot be created, as @nodes that receive blocks always verify the @transactions they contain against a set of consensus rules that all nodes adhere to, including validating the cryptographic @signatures on each transaction.
+Falsche oder fehlerhafte, schlechte Blöcke können grundsätzlich nicht erstellt werden. @Nodes, welche Blöcke empfangen, verifizieren die in diesen enthaltenen @Transaktionen durch eine Reihe allgemeingültiger Regeln, die von allen Nodes eingehalten werden. Dazu gehört auch die Validierung der kryptografischen @Signaturen jeder einzelnen Transaktion.

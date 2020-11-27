@@ -1,13 +1,13 @@
 ---
-terms: ["bootstrap-node", "bootstrap-nodes"]
-summary: "A node to which a daemon connects to give immediate usability to wallets while syncing"
+terms: ["bootstrap-node", "bootstrap-nodes", "Bootstrap-Node", "Bootstrap-Nodes"]
+summary: "Ein Node, zu dem ein Hintergrunddienst verbindet, um schon während des Synchronisierens eine sofortige Verwendbarkeit von Wallets zu ermöglichen"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-The daemon running on a local @node has to sync with other (remote) @nodes. While it is not fully synced, @wallet may still be connected to the local node. Therefore, the @wallet cannot access the @blocks that are bot yet synced on the local @node.
+Ein auf einem lokalen @Node laufender Hintergrunddienst muss mit anderen (Remote-)@Nodes synchronisieren. Während er noch nicht gänzlich synchronisiert ist, könnte das @Wallet noch mit dem lokalen Node verbunden sein, was zur Folge hat, dass es keinen Zugriff auf die noch nicht synchronisierten @Blöcke hat.
 
-To allow the @wallet to be immediately usable, the daemon on the local @node uses a bootstrap node to which the RPC request are proxying to, giving access to the missing @blocks.
+Um das @Wallet unmittelbar nutzbar zu machen, nutzt der (auf einem lokalen @Node laufende) Hintergrunddienst einen Bootstrap-Node, an welchen RPC-Anfragen umgeleitet werden. Dadurch wird der Zugriff auf die noch fehlenden @Blöcke ermöglicht.
 
-Note: the replies from the bootstrap node may be untrustworthy.
+Anmerkung: Die Antworten des Bootstrap-Nodes könnten nicht vertrauenswürdig sein.
