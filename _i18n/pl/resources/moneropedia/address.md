@@ -10,7 +10,7 @@ Gdy wysyłasz do kogoś Monero, potrzebujesz jedynie jednej informacji, a jest n
 
 Ponieważ adresy są długie i skomplikowane, często zamiast niego spotkasz adres @OpenAlias, na przykład darowizny Monero mogą być wysyłane na adres <span class="long-term">donate@getmonero.org</span> or <span class="long-term">donate.getmonero.org</span>.
 
-Jeśli chcesz stworzyć swój adres OpenAlias, znajdziesz więcej informacji na [stronie OpenAlias](/knowledge-base/openalias).
+Jeśli chcesz stworzyć swój adres OpenAlias, znajdziesz więcej informacji na [stronie OpenAlias](https://openalias.org/).
 
 ### Adres zintegrowany
 

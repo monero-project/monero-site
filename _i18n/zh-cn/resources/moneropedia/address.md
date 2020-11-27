@@ -10,7 +10,7 @@ summary: "either an alias, such as donate.getmonero.org, or a set of 95 characte
 
 因为这些地址又长又复杂，所以您经常会遇到@OpenAlias地址。例如，Monero捐款可以发送到<span class="long-term">donate@getmonero.org</span>或<span class="long-term">donate.getmonero.org</span>。
 
-如果您想获得自己的@OpenAlias地址，那么 [OpenAlias页面](/the-monero-project/) 上有一些信息。
+如果您想获得自己的@OpenAlias地址，那么 [OpenAlias页面](https://openalias.org/). 上有一些信息。
 
 ### 集成地址
 
