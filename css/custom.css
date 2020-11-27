@@ -3555,7 +3555,7 @@ span.icon-browser {
 
 /***************************ROADMAP STYLING*********************************/
 
-h3#months {
+h3.months {
   font-style: italic;
   margin-bottom: 0.5rem
 }
