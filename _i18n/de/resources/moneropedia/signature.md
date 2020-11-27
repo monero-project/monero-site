@@ -1,9 +1,9 @@
 ---
-terms: ["signature", "signatures"]
-summary: "a cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed"
+terms: ["signature", "signatures", "Signatur", "Signaturen"]
+summary: "Eine kryptografische Methode zum Beweisen des Besitzes einer Information wie auch zum Nachweis dessen, dass diese Information nach dem Signieren nicht abgeändert worden ist"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed.
+Eine kryptografische Methode zum Beweisen des Besitzes einer Information wie auch zum Nachweis dessen, dass diese Information nach dem Signieren nicht abgeändert worden ist.
