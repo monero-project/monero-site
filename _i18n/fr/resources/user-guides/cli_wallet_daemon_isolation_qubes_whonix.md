@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 # Isolation du Portefeuille CLI et du Démon avec Qubes et Whonix
 
