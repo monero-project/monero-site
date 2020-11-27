@@ -1,13 +1,13 @@
 ---
-terms: ["unlock-time"]
-summary: "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
+terms: ["unlock-time", "Freigabedauer", "Freigabedauer-von-Transaktionen"]
+summary: "Eine besondere Art der Transaktion, bei welcher der Empfänger die Gelder erst nach einem vom Sender gesetzten zukünftigen Zeitpunkt ausgeben kann"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A special transaction where the recipient can only spend the funds after a future date, as set by the sender.
+Eine besondere Art der Transaktion, bei welcher der Empfänger die Gelder erst nach einem vom Sender gesetzten zukünftigen Zeitpunkt ausgeben kann.
 
-Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time.
+Die Freigabedauer erlaubt es dir, eine Transaktion an jemanden zu senden, die dieser jedoch erst nach einer gewissen Anzahl von Blöcken oder nach einer bestimmten Zeit verwenden kann.
 
-Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.it/wiki/NLockTime), in which the transaction is not valid until the given time.
+Beachte, dass dies anders als Bitcoins [nLockTime](https://en.bitcoin.it/wiki/NLockTime) (englischsprachiger Artikel) funktioniert. Dort ist die Transaktion bis zum gesetzten Zeitpunkt ungültig.

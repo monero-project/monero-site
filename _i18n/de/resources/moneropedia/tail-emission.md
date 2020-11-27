@@ -1,15 +1,15 @@
 ---
-terms: ["Tail-Emission"]
-summary: "the block reward at the end of the emission curve"
+terms: ["Tail-Emission", "Anschlussverteilung"]
+summary: "Die festgesetzte Blockbelohnung am Ende der Verteilungskurve"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-Monero block rewards will never drop to zero. Block rewards will gradually drop until tail emission commences at the end of May 2022. At this point, rewards will be fixed at 0.6 XMR per block.
+Monero-Blockbelohnungen werden niemals bis auf Null fallen. Sie werden schrittweise sinken, bis Ende Mai 2022 die Anschlussverteilung startet. Zu diesem Zeitpunkt werden die Belohnungen auf 0,6 XMR pro Block festgesetzt sein.
 
-### Why
+### Warum
 
-Miners need an incentive to mine. Because of the dynamic blocksize, competition between @miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network.
+Miner benötigen einen Ansporn zum Minen. Aufgrund der dynamischen Blockgröße wird ein Konkurrenzkampf unter den @Minern Gebühren zum Sinken bringen. Wenn Mining aufgrund hoher Kosten und niedriger Belohnungen nicht profitabel ist, werden Miner den Ansporn dazu verlieren und das Mining stoppen. Dadurch würde die Sicherheit des Netzwerk reduziert werden.
 
-Tail emission ensures that a dynamic block size and fee market can develop.
+Die Anschlussverteilung stellt sicher, dass sich weiterhin eine dynamische Blockgröße und ein dynamischer Gebührenmarkt entwickeln können.
