@@ -22,7 +22,7 @@
 This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in.
 Feel free to skip down to a relevant section if you already know what you need.
 
-If you need support about something related to the website, plese join `#monero-site` [Freenode/IRC](irc://chat.freenode.net/#monero-site), [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org) and MatterMost. For general info about Monero join `#monero`. We'll do whatever we can to help you.
+If you need support about something related to the website, please join `#monero-site` [Freenode/IRC](irc://chat.freenode.net/#monero-site), [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org) and MatterMost. For general info about Monero join `#monero`. We'll do whatever we can to help you.
 
 ## What you'll need
 
@@ -83,7 +83,7 @@ Here you can do your translation. Depending on the page, you may have to maneuve
 Moneropedia entries have two specificities:
 
 * The Front Matter:  
-Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
+Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extended with their translation, leaving the English words **untouched**.
 This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
 
 * The snippet keeping track of the status of the translation must be updated (`{% include disclaimer.html translated="no" translationOutdated="no" %}`). If the document is translated, change `translated="no"` to `translated="yes"`. If the document is translated, but the original file (in English) was updated, change `translationOutdated="no"` to `translationOutdated="yes`.
@@ -117,7 +117,7 @@ For example, if the user guide `How to solo mine with the GUI` is translated int
 2. If this is the first localized screenshot for that language, you'll need to create a dedicate folder with the code of that language. In this example we'll use `fr`.
 3. Copy the folder containing the screenshots of the guide you are working on from inside the `en` folder. In this example you have to copy `solo_mine_GUI` into `fr`
 4. Now take a look at the screenshots inside `solo_mine_GUI` and replace them with screenshots of the GUI in French.
-5. Edit the path of the images in the markdown file which contains the guide. Remember that by default all guides point to the english version, so everything you'll have to do is to change the path of the screenshot and replace `en` with your language code. In ouur example, we need to navigate to `/_i18n/fr/resources/user-guides/solo_mine_GUI.md` and change the path of all screenshots from `/img/resources/user-guides/en/remote_node/SCREENSHOT.png` to `/img/resources/user-guides/fr/remote_node/SCREENSHOT.png`.
+5. Edit the path of the images in the markdown file which contains the guide. Remember that by default all guides point to the English version, so everything you'll have to do is to change the path of the screenshot and replace `en` with your language code. In our example, we need to navigate to `/_i18n/fr/resources/user-guides/solo_mine_GUI.md` and change the path of all screenshots from `/img/resources/user-guides/en/remote_node/SCREENSHOT.png` to `/img/resources/user-guides/fr/remote_node/SCREENSHOT.png`.
 
 ### 4. set the 'translated' snippet to true
 Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
@@ -174,7 +174,7 @@ If the guide is outdated, simply change `False` into `True`.
 
 When you update a guide, you are responsible for updating this version tracking in every file involved in your update. Don't be afraid to ask for help if the process is not clear to you.
 
-The screenshots of all user guides are in `/img/user-guides/LANG`. Where `LANG` cna be any of the languages supported by Getmonero. By default, all localized versions of the website will use the english version of the screenshots, see the [translations](#translation) section for info about translating screenshots.
+The screenshots of all user guides are in `/img/user-guides/LANG`. Where `LANG` can be any of the languages supported by Getmonero. By default, all localized versions of the website will use the English version of the screenshots, see the [translations](#translation) section for info about translating screenshots.
 
 ## How to make a blog post
 
@@ -345,10 +345,10 @@ For example, there was a new release on March 2020 and you would like to add it 
 
 - Scroll the `roadmap.yml` file until you arrive to `year_2020`
 - The milestone happened in March so you need to look for that month (`- month: March`)
-- Since the milestione has been already achieved, look for the `completed:` status.
+- Since the milestone has been already achieved, look for the `completed:` status.
 - Under it add `-name: NAME OF YOUR ACHIEVED MULESTONE`. Which in our case would be `-name: release wallet WHATEVER`
 
-If a year, month or status is missing, simpluy adding by following the structure you see in the page.
+If a year, month or status is missing, simply adding by following the structure you see in the page.
 
 **Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
 
