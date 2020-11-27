@@ -1,39 +1,39 @@
 ---
-terms: ["denominations", "subunits", "tacoshi", "piconero", "nanonero", "micronero", "millinero", "centinero", "decinero","decanero","hectonero","kilonero","meganero","giganero"]
-summary: "A denomination is a proper description of a currency amount. It is oftentimes a sub-unit of the currency. For example, traditionally a cent is 1/100th of a particular unit of currency.)"
+terms: ["denominations", "subunits", "tacoshi", "piconero", "nanonero", "micronero", "millinero", "centinero", "decinero","decanero","hectonero","kilonero","meganero","giganero", "Stückelung", "Stückelungen", "Piconero"]
+summary: "Eine Stückelung ist eine genaue Beschreibung eines Währungsbetrags. Häufig ist dies eine Untereinheit der Währung; so ist ein Cent klassischerweise 1/100stel einer bestimmten Währungseinheit"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A denomination is a proper description of a currency amount. It is oftentimes a sub-unit of the currency. For example, traditionally a cent is 1/100th of a particular unit of currency.).
+Eine Stückelung ist eine genaue Beschreibung eines Währungsbetrags. Häufig ist dies eine Untereinheit der Währung; so ist ein Cent klassischerweise 1/100stel einer bestimmten Währungseinheit.
 
-Monero denomination names add SI prefixes after dropping the initial "mo" for ease of use. Actually, the smallest unit of Monero is 1 piconero (0.000000000001 XMR).
+Zur Bezeichnung von Monero-Stückelungen wird die Anfangssilbe "Mo" durch SI-Einheiten als Präfixe ersetzt. Die kleinste Einheit von Monero ist demnach ein Piconero (0.000000000001 XMR).
 
-### Denominations of Monero
+### Stückelungen von Monero
 
-|------------+----------+-------------------|
-| Name       | Base 10  | Amount            |
-|-----------:|:--------:| -----------------:|
-| piconero   | 10^-12   | 0.000000000001    |
-| nanonero   | 10^-9    | 0.000000001       |
-| micronero  | 10^-6    | 0.000001          |
-| millinero  | 10^-3    | 0.001             |
-| centinero  | 10^-2    | 0.01              |
-| decinero   | 10^-1    | 0.1               |
-|============+==========+===================|
-| **monero** | **10^0** | **1**             |
-|============+==========+===================|
-| decanero   | 10^1     | 10                |
-| hectonero  | 10^2     | 100               |
-| kilonero   | 10^3     | 1,000             |
-| meganero   | 10^6     | 1,000,000         |
-|------------+----------+-------------------|
+|------------+---------------+-------------------|
+| Name       | Dezimalsystem | Betrag            |
+|-----------:|:-------------:| -----------------:|
+| Piconero   | 10^-12        | 0,000000000001    |
+| Nanonero   | 10^-9         | 0,000000001       |
+| Micronero  | 10^-6         | 0,000001          |
+| Millinero  | 10^-3         | 0,001             |
+| Centinero  | 10^-2         | 0,01              |
+| Decinero   | 10^-1         | 0,1               |
+|============+===============+===================|
+| **Monero** | **10^0**      | **1**             |
+|============+===============+===================|
+| Decanero   | 10^1          | 10                |
+| Hectonero  | 10^2          | 100               |
+| Kilonero   | 10^3          | 1.000             |
+| Meganero   | 10^6          | 1.000.000         |
+|------------+---------------+-------------------|
 
-### In-depth Information
+### Ausführliche Informationen
 
-Support for input using SI prefixes was [added to the Monero codebase](https://github.com/monero-project/monero/pull/1826) on March 3, 2017 by [Moneromooo](https://github.com/moneromooo-monero). The smallest unit of Monero (10^-12 XMR) was originally called a tacoshi in honor of user [Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270), an early Monero contributor and was later renamed for ease of use and consistancy.
+Die Möglichkeit, bei der Eingabe die SI-Präfixe nutzen zu können, wurde am 3. März 2017 von [Moneromooo](https://github.com/moneromooo-monero) [zu Moneros Codebasis hinzugefügt](https://github.com/monero-project/monero/pull/1826). Zu Ehren des Nutzers [Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270), einem frühen Mitwirkenden Moneros, wurde die kleinste Einheit von Monero (10^-12 XMR) zunächst "Tacoshi" genannt; zugunsten der Nutzerfreundlichkeit und Konsistenz wurde dies allerdings später geändert.
 
-### Monerod Implementation
+### Monerod-Implementierung
 
-The smallest fraction of Monero in the current monerod implementation is also known as the @atomic-unit, which is currently one piconero.
+Der kleinste Bruchteil von Monero in der aktuellen Monerod-Implementierung ist auch bekannt als @Kleinste-Einheit, was derzeit ein Piconero ist.
