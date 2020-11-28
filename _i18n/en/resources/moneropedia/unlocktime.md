@@ -16,7 +16,7 @@ Using `unlock_time` has privacy consequences for the user(s) (and the wider Mone
 
 ### Technical Use
 
-Usage when using the `transfer` command: `unlock_time` + ` ` + unsigned int
+Usage when using the `transfer` command: `unlock_time` + unsigned int
 
 Integer values less than 500,000,000 are interpreted as absolute block height. Values greater than or equal to 500,000,000 are interpreted as an absolute Unix epoch timestamp.
 
