@@ -1,6 +1,6 @@
 ---
 terms: ["remote-node", "remote-nodes"]
-summary: "Nodes wich are not running in the same machine as the wallet. Open remote nodes allow to use the Monero network immediately"
+summary: "Nodes which are not running in the same machine as the wallet. Open remote nodes allow to use the Monero network immediately"
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
