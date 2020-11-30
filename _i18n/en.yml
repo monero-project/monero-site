@@ -123,6 +123,7 @@ hangouts:
     monero-translations: Localizing Monero into other languages.
     monero-hardware: Building hardware wallets to keep your Monero safe.
     monero-site: Where the development of this website is coordinated
+    monero-pow: Where the community discusses Monero's Proof of Work algorithm
 
 merchants:
   intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. These merchants are not endorsed by the community, see disclaimer at the bottom of this page. If a company no longer accepts Monero or you would like your business to be listed, please

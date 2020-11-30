@@ -40,3 +40,5 @@ chats:
 - monero-site:
   matrix: https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org
   mattermost: https://mattermost.getmonero.org/monero/channels/monero-site
+
+- monero-pow:
