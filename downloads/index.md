@@ -108,7 +108,7 @@ permalink: /downloads/index.html
                     <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                     <details>
                     <summary>{% t downloads.showhash %}</summary>
-                     <p>{% t downloads.showhash1 %} <a href="https://getmonero.org/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
+                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
                      <p>{% t downloads.showhash4 %} <a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a> - <a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a>.</p>
                      <dl>
                     {% for entry in item.downloads %}
@@ -200,7 +200,7 @@ permalink: /downloads/index.html
                 <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                   <details>
                     <summary>{% t downloads.showhash %}</summary>
-                     <p>{% t downloads.showhash1 %} <a href="https://getmonero.org/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
+                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
                      <p>{% t downloads.showhash4 %} <a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a> - <a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a>.</p>
                       <dl>
                      {% for entry in item.downloads %}
