@@ -12,6 +12,6 @@ Det er tre måter å utrenske på:
 - *Utrenske en eksisterende node:* Blokkjeden som allerede eksisterer vil utrenskes, men dette vil ikke resultere i en mindre blokkjede. Den vil istedenfor markere deler av filen som ledig, slik at fremtidig data benytter den ledige lagringsplassen, noe som medfører at filen ikke vokser før den ledige lagringsplassen blir knapp.
 - *Opprette en ny, utrensket blokkjede fra en full en:* En full blokkjede som du allerede har vil brukes for å opprette en ny, utrensket blokkjede.
 
-Utrenskede noder er svært nyttige, og foretrekkes fremfor eksterne noder, men brukere bør, hvis mulig, kjøre en fullstendig node og kun velge å utrenske hvis det er nødvendig.
+Utrenskede noder er svært nyttige, og foretrekkes fremfor @eksterne noder, men brukere bør, hvis mulig, kjøre en fullstendig node og kun velge å utrenske hvis det er nødvendig.
 
 «Databaseutrensking»-funksjonen [ble lagt til](https://github.com/monero-project/monero/pull/4843) i januar 2019. Se [blogginnlegget]({{ site.baseurl }}/2019/02/01/pruning.html) for mer informasjon.
