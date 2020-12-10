@@ -26,9 +26,9 @@ Hensikten med kryptering er å sikre at det kun er en som er autorisert til å f
 
 Kovri implementerer ulike typer kryptering i *minst* fire essensielle kapasiteter:
 
-- Reseed for bootstrapping
-- Garlic-routing: tre lag med kryptering («garlic-encryption») brukes for å verifisere den sikre leveringen av meldinger til mottakeren/motparten/destinasjonen
-- Tunnelkryptering: garlic-meldinger passeres gjennom en tunnel og krypteres av tunnelportalen til tunnelsluttpunktet
-- Transportlagkryptering hindrer muligheten til å avkode meldinger på [medialag](https://en.wikipedia.org/wiki/OSI_model)
+- @Reseed for bootstrapping
+- @Garlic-routing: tre lag med kryptering («@garlic-encryption») brukes for å verifisere den sikre leveringen av @meldinger til mottakeren/motparten/@destinasjonen
+- @Tunnelkryptering: garlic-meldinger passeres gjennom en @tunnel og krypteres av @tunnelportalen til @tunnelsluttpunktet
+- @Transportlagkryptering hindrer muligheten til å avkode @meldinger på [medialag](https://en.wikipedia.org/wiki/OSI_model)
 
-For detaljer om krypteringstyper og kryptografiske signaturer som er brukt i Kovri og I2P, kan du se Java-I2Ps artikkel om [kryptografi](https://geti2p.net/spec/cryptography)
+For detaljer om krypteringstyper og kryptografiske @signaturer som er brukt i @Kovri og @I2P, kan du se @Java-I2Ps artikkel om [kryptografi](https://geti2p.net/spec/cryptography)
