@@ -5,7 +5,7 @@ summary: "en ny type rekkeviddebevis som tilslører det sendte beløpet ved å e
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunnleggende
-RingCT-er ble introdusert for å tilsløre transaksjonsbeløpene. Ett mål med RingCT-ene var å bevise at summen av inndataene fratrukket utdataene  i transaksjonen var lik 0, og at alle utdata var positive tall. For å oppnå dette ble to typer ringsignaturer opprettet: Én ringsignatur for hele transaksjonen (for å bevise at summen er 0), og et sett med ringsignaturer for undergruppene av transaksjonsdelene (for å bevise at utdataene er positive tall), og deretter kombinere dem ved å bruke Schnorr-signaturer (som senere ble byttet ut med Borromean-ringsignaturer).
+@RingCT-er ble introdusert for å tilsløre transaksjonsbeløpene. Ett mål med @RingCT-ene var å bevise at summen av inndataene fratrukket utdataene i @transaksjonen var lik 0, og at alle utdata var positive tall. For å oppnå dette ble to typer ringsignaturer opprettet: Én ringsignatur for hele transaksjonen (for å bevise at summen er 0), og et sett med ringsignaturer for undergruppene av transaksjonsdelene (for å bevise at utdataene er positive tall), og deretter kombinere dem ved å bruke Schnorr-signaturer (som senere ble byttet ut med Borromean-ringsignaturer).
 Mens den utførte jobben, viste det seg at den omfattende størrelsen på ringCT-transaksjonene var en stor ulempe.
 
 ### Når det kommer til bulletproofs
