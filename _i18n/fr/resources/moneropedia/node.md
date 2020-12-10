@@ -21,4 +21,4 @@ L'équipe cœur de Monero planifie une mise à jour du réseau tous les 6 mois, 
 ---
 
 ##### Autres Resources
-<sub>1. *Fluffypony a donné une excellent explication du bénéfice des mises à jour réseau pour Monero.* ([Missive Monero pour la semaine du 20/06/2016](https://getmonero.org/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
+<sub>1. *Fluffypony a donné une excellent explication du bénéfice des mises à jour réseau pour Monero.* ([Missive Monero pour la semaine du 20/06/2016]({{ site.baseurl_root }}/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
