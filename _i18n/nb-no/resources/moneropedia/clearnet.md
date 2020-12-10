@@ -19,14 +19,14 @@ Og selv om du bruker [HTTPS](https://en.wikipedia.org/wiki/HTTPS) eller liknende
 
 Fordi en tradisjonell [VPN](https://en.wikipedia.org/wiki/VPN) ikke kan redde deg fra clearnet (i og med at du fremdeles bruker *clearnet* (selv om du er mer sikret enn uten en VPN)), bør du bruke et *anonymt overleggsnettverk* for å unngå å bruke clearnet direkte:
 
-- Kovri
-- Java-I2P
+- @Kovri
+- @Java-I2P
 - [Tor](https://torproject.org/)
 
 Disse teknologiene beskytter deg fra clearnet ved å bygge et anonymt nettverk **over** clearnet med hensikt å holde overføringene dine både krypterte **og** anonyme.
 
-Her er et nøyaktig, [interaktivt diagram](https://www.eff.org/pages/tor-and-https) gitt av [EFF](https://www.eff.org/) som beskriver *clearnet* i sammenheng med **Tor**. Konseptet gjelder også (til en viss grad) for Kovri og I2P hva gjelder anonymitet, med unntaket av at:
+Her er et nøyaktig, [interaktivt diagram](https://www.eff.org/pages/tor-and-https) gitt av [EFF](https://www.eff.org/) som beskriver *clearnet* i sammenheng med **Tor**. Konseptet gjelder også (til en viss grad) for @Kovri og @I2P hva gjelder anonymitet, med unntaket av at:
 
-- Kovri ikke bruker utgangsnoder når vi kobler til en @eepsite
-- Trafikken din trenger aldri å forlate I2P-nettverket
-- Du trenger ikke HTTPS for å bruke Kovri (med unntak av @reseed)
+- @Kovri ikke bruker utgangsnoder når vi kobler til en @eepsite
+- Trafikken din trenger aldri å forlate @I2P-nettverket
+- Du trenger ikke HTTPS for å bruke @Kovri (med unntak av @reseed)
