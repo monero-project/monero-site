@@ -10,7 +10,7 @@ Når du sender Monero til noen, trenger du kun én opplysning, og det er Monero-
 
 Fordi disse adressene er lange og komplekse, vil du ofte støte på en OpenAlias-adresse i stedet. Monero-donasjoner kan for eksempel sendes til <span class="long-term">donate@getmonero.org</span> eller <span class="long-term">donate.getmonero.org</span>.
 
-Hvis du vil få din egen OpenAlias-adresse, finnes informasjon om dette på [OpenAlias-siden](/the-monero-project/).
+Hvis du vil få din egen OpenAlias-adresse, finnes informasjon om dette på [OpenAlias-siden](https://openalias.org/).
 
 ### Integrert adresse
 
