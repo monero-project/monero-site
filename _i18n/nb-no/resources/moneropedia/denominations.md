@@ -36,4 +36,4 @@ Støtte for inndata ved å bruke SI-prefikser ble [lagt til Monero kodebasen](ht
 
 ### Monerod-implementering
 
-Den minste brøkdelen av Monero som er i monerod-implementeringen er også kjent som en atomisk enhet, som for øyeblikket er én piconero.
+Den minste brøkdelen av Monero som er i monerod-implementeringen er også kjent som en @atomisk enhet, som for øyeblikket er én piconero.
