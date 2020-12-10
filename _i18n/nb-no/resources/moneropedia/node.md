@@ -21,4 +21,4 @@ Monero-kjerneteamet har som plan å gjennomføre en nettverksoppgradering omtren
 ---
 
 ##### Andre ressurser
-<sub>1. *Fluffypony gir en fin forklaring på hvorfor obligatoriske nettverksoppgraderinger er bra for Monero.* ([Monero Missives for the Week of 2016-06-20](https://getmonero.org/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
+<sub>1. *Fluffypony gir en fin forklaring på hvorfor obligatoriske nettverksoppgraderinger er bra for Monero.* ([Monero Missives for the Week of 2016-06-20]({{ site.baseurl_root }}/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
