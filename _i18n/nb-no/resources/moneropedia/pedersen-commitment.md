@@ -16,7 +16,7 @@ Så lenge de krypterte utdatabeløpene opprettes, som inkluderer en utdata for m
 
 Pedersen-forpliktelser innebærer at summene kan verifiseres som like, men Monero-verdien av hver av summene og Monero-verdien av inndataene og utdataene hver for seg er ubestemte. Pedersen-forpliktelser innebærer også at til og med forholdet mellom én inndata og en annen, eller én utdata og en annen, er ubestemt.
 
-Det er uklart hvilke inndata som virkelig forbrukes i og med at ringsignaturen lister opp både ekte inndata som forbrukes og avledningsinndata, og derfor kan du ikke vite for hvilke inndata Pedersen-forpliktelsene må summeres. Men det er greit, fordi RingCT-ringsignaturen må bare bevise at utdataene er like for summen av inndataene for én kombinasjon. Dette er, av matematiske årsaker, umulig å forfalske.
+Det er uklart hvilke inndata som virkelig forbrukes i og med at ringsignaturen lister opp både ekte inndata som forbrukes og avledningsinndata, og derfor kan du ikke vite for hvilke inndata Pedersen-forpliktelsene må summeres. Men det er greit, fordi @RingCT-ringsignaturen må bare bevise at utdataene er like for summen av inndataene for én kombinasjon. Dette er, av matematiske årsaker, umulig å forfalske.
 
 ### Inngående informasjon
 
