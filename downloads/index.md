@@ -91,9 +91,6 @@ permalink: /downloads/index.html
                     {% endfor %}
                     </ul>
                   </div>
-                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package">{% t downloads.packages_link %}</a>.</p>
-                  <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
-                  <div class="col-md-12 col-sm-12 col-xs-12">
                   {% for entry in item.downloads %}
                     {% if entry.vers != nil %}
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -104,6 +101,9 @@ permalink: /downloads/index.html
                     </div>
                     {% endif %}
                   {% endfor %}
+                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package">{% t downloads.packages_link %}</a>.</p>
+                  <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                   <h3>{% t downloads.verify %}</h3>
                     <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                     <details>
@@ -182,19 +182,19 @@ permalink: /downloads/index.html
                       {% endfor %}
                     </ul>
                 </div>
+                {% for entry in item.downloads %}
+                  {% if entry.vers != nil %}
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
+                    <ul>
+                      <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                    </ul>
+                  </div>
+                  {% endif %}
+                {% endfor %}
                 <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package">{% t downloads.packages_link %}</a>.</p>
                 <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                 </div>
-                {% for entry in item.downloads %}
-                    {% if entry.vers != nil %}
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                      <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
-                      <ul>
-                        <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
-                      </ul>
-                    </div>
-                    {% endif %}
-                  {% endfor %}
                 <div class="col-md-12 col-sm-12 col-xs-12">
                 <h3>{% t downloads.verify %}</h3>
                 <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
