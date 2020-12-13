@@ -512,6 +512,7 @@ user-guides:
   node-i2pzero: Run a Monero node through I2P with I2P-zero
   guiguide: Guide for the Monero GUI wallet
   tailsguide: Set up a wallet (using a remote node) on Tails
+  back: Back to the list
 
 roadmap:
   completed: Completed task
