@@ -31,7 +31,7 @@ titles:
   faq: FAQ
   downloads: Downloads
   allposts: All Blog Posts
-  team: Monero Team
+  workgroups: Workgroups
   hangouts: Hangouts
   sponsorships: Sponsorships
   merchants: Merchants & Services
@@ -55,7 +55,6 @@ navigation:
   contributing: Contributing
   mining: Mining
   community: Community
-  team: Team
   merchants: Merchants
   resources: Resources
   about: About
@@ -141,14 +140,42 @@ sponsorships:
   macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
 
 team:
-  core: Core
-  developers: Developers
-  developers_para1: The Monero Project has had well over 500 contributors over the life of the project. For a complete list, please see the
-  developers_para2: OpenHub contributors page.
-  developers_para3: Below you'll find some individuals that have gone above and beyond for Monero.
-  community: Community
+  introduction: Workgroups are formed by community members who join forces to achieve a common goal. They have different structures and goals. On this page we list some of the more active workgroups and some tips to get you started, if you wish to contribute to any of them.
+  core: Core Team
+  community: Community Workgroup
   mrl: Research Lab
-  thanks: Special Thanks
+  descr: Description
+  start: Where to start
+  contacts: Chatrooms and Contacts
+  chat: "Chat:"
+  website: "Website:"
+  core_descr: Stewards of the community, the Core Team manages and maintains infrastructure where centralization cannot be avoided (domains, website, github repositories...). Its members act as mediators as they see fit and aim to weigh consensus in the community, perpetuating the quality interactions that made Monero the successful project it is today. The Core Team does not and has never received any financial compensation.
+  core_start: The Core Team is a closed workgroup; it's not possible to join it unless invited.
+  community_descr: Workgroup used by the community to organize and coordinate. This is the place where every non-coder who wants to contribute to Monero should start.
+  community_start: The best way to start contributing to this workgroup is to join the chatrooms and introduce yourself, stating your interests and the skills you would like to offer to the community.
+  devworkgroup: Development Workgroup
+  devworkgroup_descr: "This workgroup reunites Monero developers working on the wallets and daemon maintained by the Core Team. This workgorup consists of two main parts: the CLI and the GUI teams. These teams coordinate using two different chatrooms."
+  devworkgroup_start: It's a good idea to take a look at open issues on both repositories to have an idea of what could be fixed or improved. Both codebases, but especially the core repository, can be quite challenging, so it's suggested to first write in the chatroom introducing yourself, your skills and what you wish to contribute to.
+  chatgeneral: "Chat (general):"
+  chatgui: "Chat (GUI):"
+  webworkgroup: Website Workgroup
+  web_descr: Another dev-focused workgroup where to coordinate the development of the website. Most devs in there are part of the development workgroup. The website workgroup was created mostly to have discussions related to the website all in one place.
+  web_start: It's always a good idea to join the chatroom and talk directly with the members of the workgroup, but if you prefer to get started by yourself, take a look at the readme in the GitHub repository. It contains step by step instructions to edit every single part of this website.
+  localization: Localization Workgroup
+  localization_descr: One of the oldest Monero Workgroups. It's formed by contributors working on translating Monero-related software and documentation. It's strongly suggested to contact the workgroup before working on translations.
+  localization_start: Contact the workgroup on the chatroom or open an issue on the GitHub repository. You can also start translating immediately using the Weblate platform. Just make sure to read the guide for translators first.
+  locplatform: "Localization platform:"
+  outreach_descr: This workgroup is focused on getting Monero out there, gathering artists, writers and anyone who wish to make Monero known to the World.
+  outreach_start: The members of the Outreach workgroup heavily use Telegram for coordination and matrix/freenode in minor part. If you want to help, you have to contact the workgroup on one of this channels. They are quite structured, so you'll probably be directed to a coordinator.
+  telegram: "Telegram chat:"
+  mrl_descr: As the name suggests, the Monero Research Lab is the workgroup focused on Monero related research. It's formed by scientists trying to find a way to improve Monero's protocol and features. Most of the protocol improvements who make Monero amazing, like CLSAG and @Bulletproofs, are the result of the work of this workgroup.
+  mrl_start: Join the chatroom below, state your interests and your skills. Research is always ongoing and somebody will point you in the right direction.
+  space: Monero Space
+  space_descr: Monero Space is an active, project-focused Monero workgroup that provides services to the Monero community. It hosts popular resources and organizes events such as Monero Meet.
+  space_start: The workgroup can be contacted by writing to their chatroom on Freenode.
+  mrw: Malware Response Workgroup
+  mrw_descr: The Monero Malware Response Workgroup provides resources and live support for multiple types of Monero-related malware.
+  mrw_start: Most of the activity of this workgroup happens on the IRC chat. If you wish to contribute, just join the channel to ask questions or provide support.
 
 downloads:
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
