@@ -19,4 +19,4 @@ OpenAlias 旨在为快速变化的技术环境提供一种简化别名的方法�
 该标准允许你使用电子邮件或域名语法而不是地址付款。
 例如：donate@getmonero.org 或 donate.getmonero.org
 
-更多信息可以在 [OpenAlias 页面](/the-monero-project/) 或 [OpenAlias 网站](https://openalias.org)上找到。
+更多信息可以在 [OpenAlias 网站](https://openalias.org)上找到。

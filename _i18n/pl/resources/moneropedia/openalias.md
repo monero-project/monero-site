@@ -16,4 +16,4 @@ Zasadniczo OpenAlias jest zapisem TXT DNS w Pełnej, Jednoznacznej Nazwie Domeno
 
 Standard pozwalający na korzystanie z adresu e-mail lub domeny internetowej, np. donate@getmonero.org lub donate.getmonero.org,  w celu płatności, zamiast adresu numerycznego.
 
-Więcej informacji znajdziesz w artykule na temat [OpenAlias](/knowledge-base/openalias) lub [stronie OpenAlias](https://openalias.org).
+Więcej informacji znajdziesz w artykule na temat [stronie OpenAlias](https://openalias.org).
