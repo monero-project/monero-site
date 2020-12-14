@@ -24,5 +24,5 @@ summary: "a device on the Internet running the Monero software, with a full copy
 
 ##### 其它资源
 
-<sub>1. *Fluffypony很好地解释了为什么强制的网络升级对门罗币很有好处。* （[门罗币公函_周：2016-06-20](https://getmonero.org/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html)）</sub>
+<sub>1. *Fluffypony很好地解释了为什么强制的网络升级对门罗币很有好处。* （[门罗币公函_周：2016-06-20]({{ site.baseurl_root }}/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html)）</sub>
 
