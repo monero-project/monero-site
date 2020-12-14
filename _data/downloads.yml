@@ -1,3 +1,5 @@
+# 'vers' is meant to be used in case of a platform-specific release (e.g. vers: "0.18.2.0 - Mumbling Potato")
+
 gui:
 - version: "0.17.1.6 - Oxygen Orion"
   downloads:
