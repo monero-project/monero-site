@@ -25,9 +25,9 @@ summary: "The Internet in which anonymous overlay networks are built upon"
 
 这些技术通过在明网上建立一个匿名网络，从而使您的传输经过加密**并**匿名，以从明网中保护你，
 
-这是一个由[EFF](https://www.eff.org/pages/tor&https)提供的准确的[交互式图表](https://www.eff.org/)，它描述了*明网*与**洋葱路由器**的关系。这个概念也(在一定程度上)适用于@Kovri和@I2P的匿名性，除了:
+这是一个由[EFF](https://www.eff.org/pages/tor&https)提供的准确的[交互式图表](https://www.eff.org/)，它描述了*明网*与**洋葱路由器**的关系。这个概念也(在一定程度上)适用于@Kovri和I2P的匿名性，除了:
 
 - @Kovri在连接到@eep站点时不使用出口节点
-- 您的流量永远不需要离开@I2P网络
+- 您的流量永远不需要离开I2P网络
 - 不需要HTTPS来使用@Kovri (@补种的情况除外)
 
