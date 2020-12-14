@@ -775,6 +775,7 @@ moneropedia:
     unlocktime: Transaction Unlock Time
     viewkey: View Key
     wallet: Wallet
+    clsag: CLSAG
 
 blog:
   allposts: All Posts
