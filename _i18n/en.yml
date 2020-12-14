@@ -431,6 +431,19 @@ faq:
   qimporting: Can I manually import the blockchain?
   aimporting: >
     Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. If you really need to import an external blockchain, you can download one in the 'Downloads' page of this website. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
+  qhf: Is it true that Monero has a hard fork every 6 months?
+  ahf: Monero used to have 2 network upgrades (hard forks) a year, but this is not the case anymore. The choice of the biannual hard forks was taken in order to be able to introduce important consensus changes, which added privacy features and network-wide improvements (For example @bulletproofs and CLSAG both required a hard fork) and avoid the ossification of the protocol. Recently, the biannual hard forks included changes to the PoW algorithm, to preserve ASIC-resistance.
+  ahf1: The dev community and the Core Team agree that the protocol is stable and mature enough and biannual hard forks are not necessary anymore. Furthermore, the ecosystem around Monero has grown exponentially during the years and frequent protocol changes would be increasingly hard to coordinate, could be detrimental to the growth of the ecosystem and to the user experience. Cherry on the top, the new algorithm @randomx is ensuring long term ASIC-resistance, so regular changes are not needed anymore. Network upgrades will still be used to add important protocol improvements and consensus changes, but at a lower and less strict frequency (every 9-12 months).
+  qvideos: Are there videos I can watch to learn about Monero?
+  avideos: >
+    During the years the community has created a vast amount of informative content like articles and videos. Most of these videos are publicly available on platforms like YouTube. On this website we host a few videos that explain the fundamentals of Monero. To optimize their effectiveness, they should be viewed in sequence:
+  video_intro: Introduction to Monero
+  video_essentials: "Monero: The Essentials"
+  video_sa: Stealth Addresses
+  video_ringsig: Ring Signatures
+  mvideos: "More info on the Moneropedia entry:"
+  aavailable: also available in
+  and: and
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
