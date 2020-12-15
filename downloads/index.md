@@ -259,6 +259,12 @@ permalink: /downloads/index.html
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
+                        <tr>
+                            <td><img src="/img/Feather-icon.png" alt="Feather Logo"><a href="https://featherwallet.org/">Edge</a></td>
+                            <td>X</td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://git.wownero.com/feather/feather" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                        </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <ul>
