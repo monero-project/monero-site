@@ -642,6 +642,7 @@ Outputs:
 * *block_size_limit* - unsigned int; Maximum allowed block size
 * *block_size_median* - unsigned int; Median block size of latest 100 blocks
 * *bootstrap_daemon_address* - string; @Bootstrap-node to give immediate usability to wallets while syncing by proxying RPC to it. (Note: the replies may be untrustworthy).
+* *busy_syncing* - boolean; States if new blocks are being added (`true`) or not (`false`).
 * *cumulative_difficulty* - unsigned int; Cumulative difficulty of all blocks in the blockchain.
 * *difficulty* - unsigned int; Network difficulty (analogous to the strength of the network)
 * *free_space* - unsigned int; Available disk space on the node.
@@ -679,6 +680,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     "block_size_limit": 600000,
     "block_size_median": 129017,
     "bootstrap_daemon_address": "",
+    "busy_syncing": "false",
     "cumulative_difficulty": 14121125493385685,
     "difficulty": 60580751777,
     "free_space": 138758750208,
