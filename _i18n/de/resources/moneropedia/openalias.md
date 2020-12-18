@@ -1,19 +1,19 @@
 ---
-terms: ["OpenAlias"]
-summary: "a standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org"
+terms: ["OpenAlias", "OpenAlias-Adresse"]
+summary: "Ein Standard, der es ermöglicht, zur Zahlung einen E-Mail- oder Domainsyntax (z.B. donate@getmonero.org oder donate.getmonero.org) anstelle einer komplizierten Adresse zu verwenden"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-The Monero Core Team released a standard called OpenAlias which permits much more human-readable addresses and "squares" the Zooko's triangle. OpenAlias can be used for any cryptocurrency and is already implemented in Monero, Bitcoin (in latest Electrum versions) and HyperStake.
+Das Monero-Core-Team hat mit der sogenannten OpenAlias einen Standard veröffentlicht, der Adressen mit besserer visueller Lesbarkeit erlaubt und Zookos Dreieck "quadriert". OpenAlias kann bei jeder Kryptowährung verwendet werden und ist bisher in Monero, Bitcoin (den letzten Electrum-Versionen) und HyperStake implementiert.
 
-OpenAlias seeks to provide a way to simplify aliasing amidst a rapidly shifting technology climate. Users are trying to cross the bridge to private and cryptographically secure infrastructure and systems, but many of them have just barely started remembering the email addresses of their friends and family.
+OpenAlias bemüht sich, inmitten eines sich rapide ändernden Technologieklimas einen Weg zu öffnen, um Aliasing zu vereinfachen. Nutzer versuchen, eine Brücke zu privater und kryptografisch sicherer Infrastruktur und sicheren Systemen zu schlagen, dabei haben viele aber gerade erst damit begonnen, sich die E-Mail-Adressen ihrer Freunde und Familien zu merken.
 
-As part of the ongoing development of the Monero cryptocurrency project, we asked ourselves: how can we simplify payments for users unfamiliar with cryptocurrency? Monero stealth addresses are at least 95 characters long - memorizing them is not an option, and asking someone to send a payment to <95-character-string> is only going to lead to confusion.
+Im Zuge der kontinuierlichen Entwicklung des Monero-Kryptowährungsprojekts haben wir uns gefragt: Wie können wir Zahlungen für Nutzer vereinfachen, die mit Kryptowährungen nicht vertraut sind? Monero-Schattenadressen sind mindestens 95 Zeichen lang - sich diese zu merken ist keine Option, und jemanden darum zu bitten, eine Zahlung an eine <95stellige Zeichenkette> zu senden, würde lediglich Verwirrung stiften.
 
-At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralized and decentralized domain systems.
+OpenAlias ist im Wesentlichen ein TXT DNS-Eintrag eines FQDNs (Fully Qualified Domain Name). Die Kombination dessen mit DNS-bezogenen Technologien schafft einen Aliasing-Standard, der durch Entwickler erweiterbar und für Nutzer intuitiv verwendbar und vertraut ist und außerdem mit zentralisierten wie dezentralisierten Domainsystemen kollaborieren kann.
 
-A standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org.
+Ein Standard, der es erlaubt, einen E-Mail- oder Domain-Syntax anstelle einer komplizierten Adresse zu verwenden, wie z.B. donate@getmonero.org oder donate.getmonero.org.
 
-More information can be found on the [OpenAlias page](/de/the-monero-project/) or on the [OpenAlias website](https://openalias.org)
+Mehr Informationen finden sich auf der [OpenAlias-Webseite](https://openalias.org).
