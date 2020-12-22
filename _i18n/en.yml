@@ -582,19 +582,19 @@ roadmap:
 
   released-0-9-0: 0.9.0 Hydrogen Helix released
   paper5: Monero Research Lab Paper 5 published
-  ringsize-3: Network Upgrade to require minimum ringsize of 3 on all transactions
+  ringsize-3: Network Upgrade to require minimum @ringsize of 3 on all @transactions
   released-0-10-0: 0.10.0 Wolfram Warptangent released
-  splitcoinbase: Network Upgrade to split coinbase into denominations
+  splitcoinbase: Network Upgrade to split coinbase into @denominations
   released-0-10-1: 0.10.1 Wolfram Warptangent released
   guibeta1: Official GUI Beta 1 released
 
-  enableringct: Network Upgrade to enable RingCT transactions
+  enableringct: Network Upgrade to enable @RingCT transactions
   released-0-10-2: 0.10.2 released; critical vulnerability patched
   released-0-10-3-1: 0.10.3.1 Wolfram Warptangent released
   hfminblock: Network Upgrade to adjust minimum blocksize and dynamic fee algorithm
   webredesign: Website redesigned
   released-0-11-0: 0.11.0.0 Helium Hydra released
-  fluffyblocks: Fluffy blocks
+  fluffyblocks: '@fluffy blocks'
   guioutbeta: GUI out of beta
   minringsize5: Network Upgrade to increase minimum ringsize to 5 and require RingCT transactions
   releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra released
@@ -621,8 +621,8 @@ roadmap:
   released-0-13-0-2: 0.13.0.2 Beryllium Bullet released
   releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet released
   cryptonightv3: New Proof of Work CryptoNightV3
-  bulletproofs: Implementation of Bulletproofs to reduce transaction sizes
-  ringsize11: Network upgrade to increase minimal ringsize to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
+  bulletproofs: Implementation of @Bulletproofs to reduce transaction sizes
+  ringsize11: Network upgrade to increase minimal @ring-size to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
   released-0-13-0-4: 0.13.0.4 Beryllium Bullet released
   paper8-9: Monero Research Lab Papers 8 and 9 published
   releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet released
@@ -638,7 +638,7 @@ roadmap:
   cryptonightr: New Proof of Work CryptoNightR
   getmonero-pt_br: Getmonero.org Localization in Brazilian-Portuguese and Dutch
   dlsag: "DLSAG: Non-Interactive Refund Transactions For Interoperable Payment Channels in Monero"
-  pruning: Blockchain pruning
+  pruning: Blockchain @pruning
   trezort: Trezor model T support
   nanox: Ledger Nano X support
   tori2p: Tor & I2P CLI wallet integration
@@ -646,9 +646,9 @@ roadmap:
   weblate: "Localization platform change: from Pootle to Weblate"
   rpcpay: Pay for service system using mining (RPC-Pay)
   ipv6: IPv6 support
-  removedpid: Standalone (long) payment ID support removed
-  nodediscovery: GUI automatic remote nodes discovering and switching option
-  randomx: New Proof of Work RandomX
+  removedpid: Standalone (long) @payment-ID support removed
+  nodediscovery: GUI automatic @remote-nodes discovering and switching option
+  randomx: New Proof of Work @RandomX
 
   getmoneroweblate: Getmonero translatable on Weblate
   releasedgui-0-15-0-4: GUI 0.15.0.4 released
