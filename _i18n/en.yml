@@ -169,7 +169,7 @@ team:
   mrl_descr: As the name suggests, the Monero Research Lab is the workgroup focused on Monero related research. It's formed by scientists trying to find ways to improve Monero's protocol and features. Most of the protocol improvements that make Monero amazing, like CLSAG and @Bulletproofs, are the result of the work of this workgroup.
   mrl_start: Join the chatroom below, state your interests and your skills. Research is always ongoing and somebody will point you in the right direction.
   space: Monero Space
-  space_descr: Monero Space is an active, project-focused Monero workgroup that provides services to the Monero community. It hosts popular resources and organizes events such as Monero Meet.
+  space_descr: Monero Space is an active, project-focused Monero workgroup that provides services to the Monero community. It hosts popular resources and organizes events such as Monero Meet. It is incorporated in the US as an LLC (Limited Liability Company).
   space_start: The workgroup can be contacted by writing to their chatroom on Freenode.
   mrw: Malware Response Workgroup
   mrw_descr: The Monero Malware Response Workgroup provides resources and live support for multiple types of Monero-related malware.
