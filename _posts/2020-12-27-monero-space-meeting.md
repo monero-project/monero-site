@@ -376,7 +376,7 @@ author: Justin Ehrenhofer (sgp_)
 **\<needmoney90\>** Do we know what the entry vector was?  
 **\<anhdres[m]\>** Someone put a script to mine Monero on the server of the Monero forum?  
 **\<SerHack\>** The attack and their modus operandi seems indicate that the attacker got into our machine via SSH bruteforcing, logging in as "www" user (a default user with no permissions except for touching and executing scripts into /tmp/ directory). Database was not touched since we believe they could not have access to db (restricted to root user).  
-\< https://matrix.org/\_matrix/media/r0/download/matrix.org/VJmbNFryhDEkHBGxPkjXMljy/images.jpg \>  
+**\<anhdres[m]\>** \< https://matrix.org/\_matrix/media/r0/download/matrix.org/VJmbNFryhDEkHBGxPkjXMljy/images.jpg \>  
 **\<needmoney90\>** I think getting a Monero miner virus is kind of hilarious  
 **\<sgp\_\>** not to joke too much about a serious matter, but it seems the forum supported the Monero network more than we even expected  
 **\<needmoney90\>** 👀  
