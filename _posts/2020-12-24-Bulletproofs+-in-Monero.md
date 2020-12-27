@@ -49,12 +49,12 @@ The size and timing characteristics of range proofs depend on the structure of t
 
 "Regardless of the number of outputs in a transaction, the corresponding Bulletproofs+ range proof is *96 bytes* smaller than a Bulletproofs range proof."
 
-This table shows the reduction in size for the most common transaction types seen on the Monero network.
+This table shows the reduction in size for the most common 2-output transaction types seen on the Monero network.
 
-Spent inputs | New outputs | Current size | New size | Reduction, % smaller
---- | --- | --- | --- | ---
-1 | 2 | 1.42 kB | 1.33 kB | 6.6%
-2 | 2 | 1.92 kB | 1.83 kB | 5.1%
+Spent inputs | Current size | New size | Reduction, % smaller
+--- | --- | --- | ---
+1 | 1.42 kB | 1.33 kB | 6.6%
+2 | 1.92 kB | 1.83 kB | 5.1%
 
 The results are clear. Bulletproofs+ range proofs are smaller than Bulletproofs range proofs, saving space on the blockchain!
 
