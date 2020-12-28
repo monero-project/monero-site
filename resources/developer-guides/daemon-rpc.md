@@ -656,6 +656,7 @@ Outputs:
 * *stagenet* - boolean; States if the node is on the stagenet (`true`) or not (`false`).
 * *start_time* - unsigned int; Start time of the daemon, as UNIX time.
 * *status* - string; General RPC error code. "OK" means everything looks good.
+* *synchronized* - boolean; States if the node is synchronized (`true`) or not (`false`).
 * *target* - unsigned int; Current target for next proof of work.
 * *target_height* - unsigned int; The height of the next block in the chain.
 * *testnet* - boolean; States if the node is on the testnet (`true`) or not (`false`).
@@ -693,6 +694,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     "stagenet": false,
     "start_time": 1524751757,
     "status": "OK",
+    "synchronized": true,
     "target": 120,
     "target_height": 1562063,
     "testnet": false,
