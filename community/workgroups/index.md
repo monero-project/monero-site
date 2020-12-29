@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: titles.workgroups
-permalink: /community/team/index.html
+permalink: /community/workgroups/index.html
 ---
 
 {% t global.lang_tag %}
