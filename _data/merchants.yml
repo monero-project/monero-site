@@ -83,10 +83,6 @@
       url: https://poloniex.com/exchange/btc_xmr
     - name: REXI.cc
       url: https://rexi.cc
-    - name: ShapeShift (Instant)
-      url: https://shapeshift.io/
-    - name: SideShift AI - A rapid coin swap that fully supports Monero
-      url: https://sideshift.ai
     - name: SimpleSwap
       url: https://simpleswap.io
     - name: StealthEX
