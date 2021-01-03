@@ -289,20 +289,14 @@
   merchants:
     - name: Airport Decor - Decor for Aviation Lovers
       url: https://AirportDecor.com/
-    - name: Alagoria - Crypto Retail Shopping
-      url: https://alagoria.com/
     - name: AUGET - French brand of scented candles
       url: https://auget.paris/en/
     - name: BitDials - Luxury Boutique
       url: https://www.bitdials.eu
     - name: Bitgear Australia - Australian hardware wallet retailer
       url: https://www.bitgear.com.au/
-    - name: Bitvape - Australia's top rated JUUL store
-      url: https://bitvape.com.au
     - name: Cellphone and laptop repair online store in Sweden
       url: https://www.LagaiPhone.se
-    - name: Copy Corner - Full Service Printing & Graphics
-      url: https://www.mycopycorner.com
     - name: City Map Decor - City map themed home decor
       url: https://www.citymapdecor.com/
     - name: Coincards - Gift Cards, Mobile Top-ups and Prepaid Vouchers
@@ -321,8 +315,6 @@
       url: https://www.cryptocurrencyposters.com/
     - name: CryptoFlooring - plank flooring (U.S.)
       url: https://www.cryptoflooring.com
-    - name: Cryptonic Physical Monero & Bitcoin coins
-      url: https://cryptonic.net
     - name: Digital gift cards
       url: https://giftoff.com/
     - name: Direct Depot - Trucking Products And Power Inverters
