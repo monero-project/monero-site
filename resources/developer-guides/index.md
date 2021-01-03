@@ -69,6 +69,8 @@ permalink: /resources/developer-guides/index.html
                         <li><a href="https://github.com/monero-ecosystem/go-monero-rpc-client">go-monero-rpc-client (Monero Ecosystem)</a> - {% t developer-guides.go-monero-rpc-client %}</li>
                     <h3>Rust</h3>
                         <li><a href="https://github.com/monero-rs/monero-rs">monero-rs</a> - {% t developer-guides.monero-rs %}</li>
+                    <h3>C#</h3>
+                        <li><a href="https://github.com/monero-ecosystem/csharp-monero-rpc-client">csharp-monero-rpc-client (Monero Ecosystem)</a> - {% t developer-guides.csharp-monero %}</li>
                 </ul>
                 </div>
             </div>
