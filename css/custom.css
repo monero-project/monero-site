@@ -2890,6 +2890,13 @@ footer a.white:hover, a.white:focus {
     margin: 0 1rem;
 }
 
+.footer-links img {
+  width: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.2rem;
+}
+
 @media only screen and (max-width: 75rem) {
 
 }
