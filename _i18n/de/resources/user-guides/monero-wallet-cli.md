@@ -1,147 +1,113 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 # monero-wallet-cli
 
-`monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,
-and manages an account. While a bitcoin wallet manages both an account and the blockchain,
-Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
+`monero-wallet-cli` ist die im Monero-Baum enthaltene Wallet-Software, die als Konsolenprogramm ein Konto verwaltet. Während ein Bitcoin-Wallet sowohl das Konto als auch die Blockchain verwaltet, ist dies bei Monero getrennt: `monerod` ist für die Blockchain, `monero-wallet-cli` für das Konto zuständig.
 
-This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of Monero and have already created an account according to the other guides.
+Wie verschiedene Vorgänge ausgehend von der Benutzeroberfläche des `monero-wallet-cli` - die Befehlszeile - gesteuert werden, wird in dieser Anleitung erklärt. Es wird angenommen, dass du die neueste Version Moneros nutzt und mithilfe anderer Anleitungen bereits ein Konto erstellt hast.
 
+## Guthaben überprüfen
 
-## Checking your balance
+Da die Zuständigkeiten für Blockchain und Wallet bei verschiedenen Programmen liegen, benötigen einige Dienste des `monero-wallet-cli` eine Verbindung mit einem Hintergrunddienst (darunter die Suche nach eingehenden Transaktionen). 
+Sobald du sowohl `monero-wallet-cli` wie auch `monerod` gestartet hast, kannst du `balance` eingeben.
 
-Since the blockchain handling and the wallet are separate programs, many uses of `monero-wallet-cli`
-need to work with the daemon. This includes looking for incoming transactions to your address.
-Once you are running both `monero-wallet-cli` and `monerod`, enter `balance`.
+Beispiel: 
 
-Example:
-
-This will pull blocks from the daemon the wallet did not yet see, and update your balance
-to match. This process will normally be done in the background every minute or so. To see the
-balance without refreshing:
+Dies lädt Blöcke aus dem Hintergrunddienst, welche dein Wallet vielleicht noch nicht gesehen hat, und aktualisiert dein Guthaben entsprechend. Dieser Vorgang läuft normalerweise etwa jede Minute im Hintergrund ab. Um dein Guthaben ohne Aktualisierung anzuzeigen:
 
     balance
     Balance: 64.526198850000, unlocked balance: 44.526198850000, including unlocked dust: 0.006198850000
 
-In this example, `Balance` is your total balance. The `unlocked balance` is the amount currently available to spend. Newly received transactions require 10 confirmations on the blockchain before being unlocked. `unlocked dust` refers to very small amounts of unspent outputs that may have accumulated in your account.
+In diesem Beispiel ist `Balance` dein gesamtes Guthaben. `unlocked balance` steht für den Betrag, den du derzeit ausgeben kannst; neu eingehende Transaktionen benötigen zunächst zehn Bestätigungen innerhalb der Blockchain, bevor sie entsperrt und für dich freigegeben werden. Der `unlocked dust` sind die Kleinstbeträge nichtausgegebener Outputs, die sich auf deinem Konto angesammelt haben.
 
-## Sending monero
+## Monero versenden
 
-You will need the standard address you want to send to (a long string starting with '4'), and
-possibly a payment ID, if the receiving party requires one. In that latter case, that party
-may instead give you an integrated address, which is both of these packed into a single address.
+Du brauchst hierzu die Standardadresse, an die du deine Monero senden möchtest (eine lange, mit einer '4' beginnende Zeichenkette), und zudem möglicherweise eine Zahlungs-ID, falls der Empfänger eine solche benötigt. Im letzteren Fall kann dir dieser stattdessen eine integrierte Adresse zukommen lassen, die sowohl die Standardadresse als auch eine Zahlungs-ID in einer einzelnen Adresse vereint. 
 
-### Sending to a standard address:
+### An eine Standardadresse senden
 
     transfer ADDRESS AMOUNT PAYMENTID
 
-Replace `ADDRESS` with the address you want to send to, `AMOUNT` with how many monero you want to send,
-and `PAYMENTID` with the payment ID you were given. Payment ID's are optional. If the receiving party doesn't need one, just
-omit it.
+Ersetze `ADDRESS` mit der Adresse, an die du senden möchtest, `AMOUNT` mit dem Betrag der Monero, die du versenden wirst und `PAYMENTID` mit der dir bereitgestellten Zahlungs-ID. Zahlungs-IDs sind optional: Wenn der Empfänger keine benötigt, kannst du sie einfach weglassen.
 
-### Sending to an integrated address:
+### An eine integrierte Adresse senden
 
     transfer ADDRESS AMOUNT
 
-The payment ID is implicit in the integrated address in that case.
+In diesem Fall ist die Zahlungs-ID in die integrierte Adresse inkludiert.
 
-### Specify the number of outputs for a transaction:
+### Die Anzahl an Outputs für eine Transaktion festlegen
 
     transfer RINGSIZE ADDRESS AMOUNT
 
-Replace `RINGSIZE` with the number of outputs you wish to use. **If not specified, the default is 7.** It's a good idea to use the default, but you can increase the number if you want to include more outputs. The higher the number, the larger the transaction, and higher fees are needed.
+Ersetze `RINGSIZE` mit der Anzahl an Outputs, die du verwenden möchtest. **Die Standardeinstellung ist 11, wenn nichts anderes festgelegt wird.** Es ist ratsam, die voreingestellte Ringgröße zu verwenden; du kannst die Zahl aber auch erhöhen, wenn du mehr Outputs beifügen möchtest. Je größer die Zahl ist, desto größer ist auch die Transaktion und die mit ihr einhergehenden Gebühren.
 
+## Monero empfangen
 
-## Receiving monero
+Wenn du eine eigene Monero-Adresse hast, kannst du jemandem ganz einfach deine Standardadresse geben.
 
-If you have your own Monero address, you just need to give your standard address to someone.
-
-You can find out your address with:
+Diese findest du heraus mit:
 
     address
 
-Since Monero is anonymous, you won't see the origin address the funds you receive came from. If you
-want to know, for instance to credit a particular customer, you'll have to tell the sender to use
-a payment ID, which is an arbitrary optional tag which gets attached to a transaction. To make life
-easier, you can generate an address that already includes a random payment ID:
+Da Monero anonym ist, wirst du die Ursprungsadresse deiner empfangenen Gelder nicht sehen können. Wenn du sie aber doch aus irgendeinem Grund (beispielsweise, um einen besonderen Kunden zu honorieren) wissen möchtest, musst du dem Sender mitteilen, dass er eine Zahlungs-ID verwenden soll. Diese ist ein willkürlicher, optionaler Tag, mit welchem die Transaktion versehen wird. Um es dir einfach zu machen, kannst du eine Adresse erstellen, die bereits eine zufällige Zahlungs-ID enthält:
 
     integrated_address
 
-This will generate a random payment ID, and give you the address that includes your own account
-and that payment ID. If you want to select a particular payment ID, you can do that too:
+Dies generiert eine zufällige Zahlungs-ID und gibt eine Adresse aus, welche dein eigenes Konto und zudem ebendiese Zahlungs-ID enthält. Wenn du eine bestimmte Zahlungs-ID verwenden möchtest, kannst du das folgendermaßen machen:
 
     integrated_address 12346780abcdef00
 
-Payments made to an integrated address generated from your account will go to your account,
-with that payment id attached, so you can tell payments apart.
+An eine von deinem Konto aus generierte integrierte Adresse gesendete Zahlungen gehen mit der Zahlungs-ID markiert auf dein Konto. Auf diese Weise kannst du Zahlungen unterscheiden.
 
+## Getätigte Zahlungen gegenüber Dritten nachweisen
 
-## Proving to a third party you paid someone
-
-If you pay a merchant, and the merchant claims to not have received the funds, you may need
-to prove to a third party you did send the funds - or even to the merchant, if it is a honest
-mistake. Monero is private, so you can't just point to your transaction in the blockchain,
-as you can't tell who sent it, and who received it. However, by supplying the per-transaction
-private key to a party, that party can tell whether that transaction sent monero to that
-particular address. Note that storing these per-transaction keys is disabled by default, and
-you will have to enable it before sending, if you think you may need it:
+Solltest du einen Händler bezahlt haben, dieser aber bestreiten, das Geld empfangen zu haben, kann es passieren, dass du deine Zahlung gegenüber Dritten nachweisen musst - oder sogar gegenüber des Händlers, sofern es ein ehrlicher Fehler seinerseits war. Da Monero privat ist und man nicht ausmachen kann, wer Gelder empfangen oder gesendet hat, kannst du nicht einfach auf deine Transaktion in der Blockchain verweisen. Durch Bereitstellen des privaten, pro Transaktion vertraulichen Schlüssels ist es Dritten allerdings möglich, zu sehen, ob in dieser Transaktion Monero an die jeweilige Adresse gesendet wurden. Beachte, dass das Abspeichern dieser Transaktionsschlüssel standardmäßig deaktiviert ist. Wenn du denkst, du könntest diese Funktion gebrauchen, musst du sie vor dem Senden einschalten:
 
     set store-tx-info 1
 
-You can retrieve the tx key from an earlier transaction:
+Du kannst den Transaktionsschlüssel einer früheren Transaktion abrufen:
 
     get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
 
-Pass in the transaction ID you want the key for. Remember that a payment might have been
-split in more than one transaction, so you may need several keys. You can then send that key,
-or these keys, to whoever you want to provide proof of your transaction, along with the
-transaction id and the address you sent to. Note that this third party, if knowing your
-own address, will be able to see how much change was returned to you as well.
+Gib die Transaktions-ID, deren Schlüssel du benötigst, ein. Vergiss nicht, dass eine Zahlung mit verschiedenen Einzeltransaktionen getätigt werden kann; es kann also sein, dass du mehrere Schlüssel brauchst. Du kannst diese(n) Schlüssel (zusammen mit der Transaktions-ID und der Empfangsadresse) anschließend an denjenigen schicken, dem du einen Nachweis über deine Transaktion erbringen möchtest. Bedenke, dass der entsprechende Dritte - sollte er deine eigene Adresse kennen - sehen kann, wie viel Wechselgeld an dich zurückgegangen ist.
 
-If you are the third party (that is, someone wants to prove to you that they sent monero
-to an address), then you can check this way:
+Wenn du dieser Dritte bist (weil dir jemand beweisen möchte, dass er Monero an eine Adresse gesendet hat), kannst du den Nachweis folgendermaßen überprüfen:
 
     check_tx_key TXID TXKEY ADDRESS
 
-Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination
-address which were supplied to you, respectively. monero-wallet-cli will check that transaction
-and let you know how much monero this transaction paid to the given address.
+Ersetze `TXID`, `TXKEY` und `ADDRESS` mit der dir bereitgestellten Transaktions-ID, dem jeweiligen Transaktionsschlüssel und der Zieladresse. monero-wallet-cli überprüft nun diese Transaktion und teilt dir mit, wie viele Monero in dieser Transaktion an die vorgegebene Adresse gesendet wurden.
 
+## Möglichkeit des Bestätigens/Abbrechens von Zahlungen einrichten
 
-## Getting a chance to confirm/cancel payments
-
-If you want to get a last chance confirmation when sending a payment:
+Wenn du eine finale Bestätigungsmöglichkeit beim Senden einer Zahlung möchtest:
 
     set always-confirm-transfers 1
 
 
-## How to find a payment to you
+## Eine an dich gehende Zahlung finden
 
-If you received a payment using a particular payment ID, you can look it up:
+Hast du eine Zahlung mit einer bestimmten Zahlungs-ID erhalten, kannst du diese folgendermaßen aufsuchen:
 
     payments PAYMENTID
 
-You can give more than one payment ID too.
+Du kannst auch mehr als eine Zahlungs-ID eingeben.
 
-More generally, you can review incoming and outgoing payments:
+Grundsätzlich kannst du ein- und ausgehende Zahlungen wie folgt prüfen:
 
     show_transfers
 
-You can give an optional height to list only recent transactions, and request
-only incoming or outgoing transactions. For example,
+Du kannst zur Anzeige jüngerer Transaktionen eine bestimmte Höhe setzen und nur eingehende oder nur ausgehende Transaktionen abfragen, zum Beispiel zeigt
 
     show_transfers in 650000
 
-will only show incoming transfers after block 650000. You can also give a height
-range.
+nur die eingegangen Transaktionen nach dem Block 650000 an. Du kannst außerdem einen Höhenbereich festlegen.
 
-If you want to mine, you can do so from the wallet:
+Falls du minen möchtest, kannst du dies vom Wallet aus tun:
 
     start_mining 2
 
-This will start mining on the daemon usin two threads. Note that this is solo mining,
-and may take a while before you find a block. To stop mining:
+Hierdurch startet das Mining mit dem Hintergrunddienst unter Gebrauch zweier Threads. Bedenke, dass dieses Solomining eine Weile dauern kann, bis du einen Block findest. Du beendest das Minen mit
 
     stop_mining
 

@@ -1,53 +1,55 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-A view-only wallet is a special type of wallet that can only see incoming transactions. Since it doesn't hold your mnemonic seed and private spend key, it can't sign transactions and it can't see outgoing transactions. This makes them particularly interesting for
+Ein View-Only-Wallet ist eine spezielle Form des Wallets, die ausschließlich eingehende Transaktionen einsehen kann. Da es weder deinen mnemonischen Seed noch deinen privaten Spend-Key enthält, kann es keine Transaktionen signieren und keine ausgehenden Transaktionen einsehen. Diese Eigenschaften machen es besonders nützlich für:
 
-* Validate incoming transactions to cold wallets or hardware wallets
-* Monitor incoming donations to a fundraising campaign
-* Developers writing libraries to validate payments
+* die Überprüfung von auf Cold-Wallets oder Hardware-Wallets eingehenden Transaktionen
+* das Beobachten eingehender Spenden für eine Fundraising-Kampagne
+* Entwickler beim Erstellen von Programmbibliotheken zum Validieren von Zahlungen
 
-View-only wallets cannot sign transactions, therefore they can't spend a balance alone. However, they can be used as part of an offline transaction signing, by creating unsigned transactions to be signed offline in a cold device, and later by sending the signed transaction to the network.
+View-Only-Wallets können keine Transaktionen signieren und damit auch kein Guthaben eigenständig ausgeben. Sie können jedoch in den Prozess des Offline-Signierens einer Transaktion eingebunden werden, indem unsignierte Transaktionen erstellt, später in einem Cold-Gerät offline-signiert und anschließend, als nun signierte Transaktionen, ans Netzwerk gesendet werden. 
 
-If your wallet has outgoing transactions, the balance displayed will not be correct. To get a correct balance in a view-only wallet, you have to import the accompanying key images of each output of the wallet.
+Sollte dein Wallet ausgehende Transaktionen enthalten, wird das Guthaben nicht korrekt angezeigt werden. Um das korrekte Guthaben in einem View-Only-Wallet angezeigt zu bekommen, musst du die zugehörigen Schlüsselbilder eines jeden Outputs des Wallets importieren.
 
-You can also create a view-only wallet of a hardware wallet, however this kind of view-only wallet doesn't support offline transaction signing and importing of key images.
+Du kannst auch ein View-Only-Wallet eines Hardware-Wallets erstellen, allerdings unterstützt ein solches weder das Offline-Signieren von Transaktionen noch den Import von Schlüsselbildern.
 
-In order to create a view-only wallet, you must either have access to a wallet or know the main address and the private view key from a wallet.
+Um ein View-Only-Wallet zu erstellen, benötigst du entweder den Zugriff auf ein Wallet oder musst die Hauptadresse und den privaten View-Key eines Wallets kennen.
 
-### CLI: Creating a View-Only Wallet from a Private View Key
+### CLI: Ein View-Only-Wallet von einem privaten View-Key erstellen
 
-Open an existing wallet and type `address` and `viewkey` commands to display the wallet's address and its private (secret) view key. Type `exit` to close the wallet.
+Öffne ein bestehendes Wallet und gib die Befehle `address` und `viewkey` ein, um dir die Adresse und den privaten (geheimen) View-Key des Wallets anzeigen zu lassen. Tippe zum Schließen des Wallets `exit` ein.
 
-Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and private (secret) view key. Next, enter and confirm a password for your new wallet.
+Als Nächstes erstellst du dein View-Only-Wallet, indem du `monero-wallet-cli --generate-from-view-key wallet-name` eingibst. Hierbei ist das letzte Argument der Dateiname deines neuen Wallets. Das Wallet fragt dich anschließend nach `Standardadresse` und `View-Key`; hier fügst du die Adresse und den privaten (geheimen) View-Key deines ursprünglichen Wallets ein. Als Letztes gibst du ein Passwort für dein neues Wallet ein und bestätigst dieses.
 
-### GUI: Creating a View-Only Wallet from an Existing Wallet File
-If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
+### GUI: Ein View-Wallet von der Datei eines bestehenden Wallets erstellen
+
+Wenn du auf das bereits bestehende Wallet zugreifen kannst, öffne es und gehe über `Einstellungen` > `Wallet` > `View-Only-Wallet erstellen`:
 
 ![settings](/img/resources/user-guides/en/view-only/settings.png)
 
-The view-only wallet file will be created within the same directory and using your current password.
+Die View-Only-Wallet-Datei wird innerhalb desselben Verzeichnisses und unter Verwendung deines derzeitigen Passworts erstellt.
 
-Optionally, double-click the `Success` window to copy the message, then click `OK` to close it:
+Optional kannst du das `Erfolg`-Fenster zum Kopieren der Nachricht doppelt anklicken und anschließend auf `OK` klicken, um es zu schließen:
 
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
 
-### GUI: Creating a View-only Wallet from a Private View Key
-If you don't have access to the existing wallet, you can create a view-only wallet by knowing the wallet's main address and its private view key.
+### GUI: Ein View-Only-Wallet von einem privaten View-Key erstellen
 
-In order to do that, go to the main Menu and click on `Restore wallet from keys or mnemonic seed`:
+Solltest du keinen Zugriff auf das bestehende Wallet haben, kannst du ein View-Only-Wallet erstellen, wenn du dessen Hauptadresse und privaten View-Key kennst.
+
+Dazu klickst du im Hauptmenü auf `Stelle Wallet mit Schlüsseln oder mnemonischem Seed wieder her`:
 
 ![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)
 
-Enter a name for you view-only wallet file. Optionally, you can change the file location.
+Gib einen Namen für die Datei deines View-Only-Wallets ein. Optional kannst du den Speicherort der Datei ändern.
 
-Select `Restore from keys`.
+Wähle `Mit Schlüsseln wiederherstellen` aus.
 
-In `Account address (public)` field, enter your wallet's main address, which starts with 4.
+Im `Wallet-Adresse (öffentlich)`-Feld gibst du die Hauptadresse deines Wallets ein (diese beginnt mit einer 4).
 
-In `View key (private)` field, enter the private view key of your wallet.
+Im `View-Key (privat)`-Feld gibst du den privaten View-Key deines Wallets ein.
 
-Leave the `Spend key (private)` field blank.
+Spare das `Spend-Key (privat)`-Feld aus.
 
-Enter a `Wallet creation date` or a `Restore height` if you have one (optional).
+Gib ein `Erstellungsdatum des Wallets` oder eine `Wiederherstellungshöhe` ein, sofern du eine dieser Informationen hast (optional).
 
-Click on `Next` to create your view-only wallet file.
+Klicke auf `Weiter`, um deine View-Only-Wallet-Datei zu erstellen.
