@@ -151,17 +151,17 @@ Suche in der "config.json"-Datei nach der Zeile, die `algo: null` enthält, und 
 
 #### Große Seiten auf Windows erlauben
 
-Von [MDSN](https://docs.microsoft.com/de-de/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15) übernommen:
+Von [MDSN](https://docs.microsoft.com/de-de/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15) in angepasster Form übernommen:
 
->1. Klicken Sie im Menü "Start" auf "Ausführen". Geben Sie "gpedit.msc" im Feld "Öffnen" ein.
-2. Erweitern Sie in der Konsole "Editor für lokale Gruppenrichtlinien" die Option "Computerkonfiguration" und dann "Windows-Einstellungen".
-3. Erweitern Sie "Sicherheitseinstellungen" und dann "Lokale Richtlinien".
-4. Wählen Sie den Ordner "Zuweisen von Benutzerrechten" aus. 
+>1. Klicke im Menü "Start" auf "Ausführen". Gebe "gpedit.msc" im Feld "Öffnen" ein.
+2. Erweitere in der Konsole "Editor für lokale Gruppenrichtlinien" die Option "Computerkonfiguration" und dann "Windows-Einstellungen".
+3. Erweitere "Sicherheitseinstellungen" und dann "Lokale Richtlinien".
+4. Wähle den Ordner "Zuweisen von Benutzerrechten" aus. 
 Die Richtlinien werden im Detailbereich angezeigt.
-5. Doppelklicken Sie im Detailbereich auf "Sperren von Seiten im Speicher".
-6. Klicken Sie im Dialogfeld "Lokale Sicherheitseinstellung" > "Sperren von Seiten im Speicher auf Benutzer oder Gruppe hinzufügen".
-7. Wählen Sie im Dialogfeld "Select Users, Service Accounts, or Groups" (Benutzer, Dienstkonten oder Gruppen auswählen) das SQL Server-Dienstkonto aus.
-8. Starten Sie SQL Server neu, damit diese Einstellung übernommen wird.
+5. Doppelklicke im Detailbereich auf "Sperren von Seiten im Speicher".
+6. Klicke im Dialogfeld "Lokale Sicherheitseinstellung" > "Sperren von Seiten im Speicher auf Benutzer oder Gruppe hinzufügen".
+7. Wähle im Dialogfeld "Select Users, Service Accounts, or Groups" (Benutzer, Dienstkonten oder Gruppen auswählen) das Benutzerkonto [aus, unter welchem der Miner ausgeführt werden soll].
+8. Starte den [Rechner neu, damit die Änderungen übernommen werden].
 
 Es kann zudem sein, dass du den Miner als Administrator starten musst.
 
