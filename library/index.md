@@ -18,6 +18,8 @@ permalink: /library/index.html
                     <p>{% t library.zerotomonerov1p %}</p>
                 <h3><a href="https://masteringmonero.com/free-download.html">Mastering Monero</a></h3>
                     <p>{% t library.masteringmonerop %}</p> 
+                <h3><a href="MoneroAddressesCheatsheet20201206.pdf">{% t library.moneroaddressescheatsheet20201206 %}</a></h3>
+                    <p>{% t library.moneroaddressescheatsheet20201206p %}</p>
             </div>
         </div>
     </section>

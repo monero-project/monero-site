@@ -752,6 +752,9 @@ library:
     <li>Introductions to technical foundations of Monero, intended for developers, engineers, software architects, and curious users.</li>
     <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc.</li></ul>
     See <a href="https://masteringmonero.com/">Mastering Monero</a> website for information.
+  moneroaddressescheatsheet20201206: "Monero Addresses Cheatsheet (version 20201206)"
+  moneroaddressescheatsheet20201206p: >
+    Between the ‘big picture’ and the mathematical details, a single-page recap of various keys, addresses, scopes (private/public, spend/view, on-chain/off-chain, payer’s/payee’s) and their relations.
   magazines: Magazines
   revuoq4p: >
     Quarterly Monero magazine, Q4 2017 edition.<br>
