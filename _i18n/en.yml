@@ -708,6 +708,8 @@ research-lab:
   annotated_para: The Monero Research Lab released an annotated version of the cryptonote whitepaper. This is sort of like an informal review of the claims that are made line-by-line of the whitepaper. It also explains some of the harder concepts in relatively easy to understand terms.
   brandon: Brandon Goodell's Whitepaper Review
   brandon_para: This paper is a formal review of the original cryptonote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented in the cryptonote paper.
+  libraryp: "The library contains useful documents like 'Zero to Monero' and 'Mastering Monero', which explore and explain Monero in detail."
+  librarybutton: Explore the Library
 
 
 specs:

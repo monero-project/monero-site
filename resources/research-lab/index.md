@@ -10,7 +10,7 @@ permalink: /resources/research-lab/index.html
 <section class="container">
     <div class="row">
         <!-- left two-thirds block-->
-        <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="left two-thirds col-lg-8 col-md-8 col-sm-8 col-xs-12">
             <div class="info-block research-paper">
                 <div class="row center-xs">
                     <div class="col"><h2>{% t research-lab.mrl_papers %}</h2></div>
@@ -160,21 +160,36 @@ permalink: /resources/research-lab/index.html
         <!-- end left two-thirds block-->
         <!-- right one-third block-->
         <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div class="info-block">
-                <div class="row">
-                    <div class="col">
-                        <h2>{% t research-lab.cryptonote %}</h2>
-                        <div class="whitepaper">
-                            <a href="https://cryptonote.org/whitepaper.pdf">{% t research-lab.cryptonote-whitepaper %}</a>
-                            <p>{% t research-lab.cryptonote-whitepaper_para %}</p>
+            <div class="sidebar col-sm-12 col-xs-12">
+                <div class="info-block">
+                    <div class="row">
+                        <div class="col">
+                            <h2>{% t titles.library %}</h2>
+                            <div>
+                                <p>{% t research-lab.libraryp %}</p><br>
+                                <div class="center-xs">
+                                    <a class="btn-link btn-auto btn-primary" href="{{ site.baseurl }}/library/">{% t research-lab.librarybutton %}</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="whitepaper">
-                            <a href="{{site.baseurl}}/resources/research-lab/pubs/whitepaper_annotated.pdf">{% t research-lab.annotated %}</a>
-                            <p>{% t research-lab.annotated_para %}</p>
-                        </div>
-                        <div class="whitepaper">
-                            <a href="{{site.baseurl}}/resources/research-lab/pubs/whitepaper_review.pdf">{% t research-lab.brandon %}</a>
-                            <p>{% t research-lab.brandon_para %}</p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="row">
+                        <div class="col">
+                            <h2>{% t research-lab.cryptonote %}</h2>
+                            <div class="whitepaper">
+                                <a href="https://cryptonote.org/whitepaper.pdf">{% t research-lab.cryptonote-whitepaper %}</a>
+                                <p>{% t research-lab.cryptonote-whitepaper_para %}</p>
+                            </div>
+                            <div class="whitepaper">
+                                <a href="{{site.baseurl}}/resources/research-lab/pubs/whitepaper_annotated.pdf">{% t research-lab.annotated %}</a>
+                                <p>{% t research-lab.annotated_para %}</p>
+                            </div>
+                            <div class="whitepaper">
+                                <a href="{{site.baseurl}}/resources/research-lab/pubs/whitepaper_review.pdf">{% t research-lab.brandon %}</a>
+                                <p>{% t research-lab.brandon_para %}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
