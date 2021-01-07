@@ -53,6 +53,8 @@
       url: https://exmo.com/
     - name: FixedFloat - Fully automated cryptocurrency exchange
       url: https://fixedfloat.com/
+    - name: Flipper - Secure, anonymous crypto currency exchange telegram bot
+      url: https://flipper.exchange/
     - name: Godex
       url: https://godex.io
     - name: HollaEx
