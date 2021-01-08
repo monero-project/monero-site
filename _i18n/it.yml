@@ -1007,6 +1007,9 @@ library:
     <li>Nuovi sviluppi come Kovri, Bulletproofs, Multifirma, Portafogli hardware etc.</li></ul>
     Visita il sito <a href="https://masteringmonero.com/">Mastering Monero</a> per
     informazioni sulla versione completa.
+  moneroaddressescheatsheet20201206: "Monero Addresses Cheatsheet (version 20201206)"
+  moneroaddressescheatsheet20201206p: >
+    A mezza via tra la visione d'insieme e i dettagli matematici, il riepilogo tutto in una pagina delle varie chiavi, indirizzi, ambiti d'uso (privato/pubblico, spend/view, on-chain/fuori-chain, pagante/pagato) e le loro relazioni. 
   magazines: Riviste
   revuoq4p: >
     Rivista Monero trimestrale, edizione Q4 2017.<br>
