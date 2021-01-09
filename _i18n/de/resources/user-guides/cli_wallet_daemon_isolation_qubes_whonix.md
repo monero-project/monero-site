@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# CLI-Wallet-/Hintergrunddienstisolierung mit Qubes + Whonix
-
 Mit [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) ist es möglich, ein nicht vernetztes Wallet in einem System zu betreiben, welches quasi vom Hintergrunddienst isoliert ist und seinen Datenverkehr über [Tor](https://torproject.org/de/) laufen lässt.
 
 Qubes ermöglicht es, flexibel und einfach separate VMs für unterschiedliche Zwecke zu erstellen. Zunächst erstellst du eine Whonix-Workstation für das nicht vernetzte Wallet. Als Nächstes eine weitere Whonix-Workstation für den Hintergrunddienst, der dein Whonix-Gateway als seine NetVM nutzt. Zur Kommunikation zwischen Wallet und Hintergrunddienst kannst du Qubes' [Qrexec](https://www.qubes-os.org/doc/qrexec3/) nutzen.
@@ -18,24 +16,6 @@ Dies ist sicherer als andere Methoden, die etwa den RPC des Wallets durch einen 
 
 ## 2. In der AppVM `monerod-ws`:
 
-+ Monero-Software herunterladen, verifizieren und installieren.
-
-```
-user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "{{ site.baseurl }}/downloads/hashes.txt"
-user@host:~$ gpg --recv-keys BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9
-user@host:~$ gpg --verify hashes.txt
-gpg: Signature made Wed 01 Nov 2017 10:01:41 AM UTC
-gpg:                using RSA key 0x55432DF31CCD4FCD
-gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-     Subkey fingerprint: 94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD
-user@host:~$ echo '6581506f8a030d8d50b38744ba7144f2765c9028d18d990beb316e13655ab248  monero-linux-x64-v0.11.1.0.tar.bz2' | shasum -c
-monero-linux-x64-v0.11.1.0.tar.bz2: OK
-user@host:~$ tar xf monero-linux-x64-v0.11.1.0.tar.bz2
-user@host:~$ sudo cp monero-v0.11.1.0/monerod /usr/local/bin/
-```
 + Erstelle eine `systemd`-Datei.
 
 ```
@@ -65,12 +45,6 @@ PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
-```
-
-+ Kopiere die `monero-wallet-cli`-Programmdatei in die `monero-wallet-ws`-VM.
-
-```
-user@host:~$ qvm-copy-to-vm monero-wallet-ws monero-v0.11.1.0/monero-wallet-cli
 ```
 
 + Stelle durch Abändern der Datei `/rw/config/rc.local` ein, dass der `monerod`-Hintergrunddienst bei Systemstart ausgeführt wird.
@@ -108,12 +82,6 @@ socat STDIO TCP:localhost:18081
 + Fahre `monerod-ws` herunter.
 
 ## 3. In der AppVM `monero-wallet-ws`:
-
-+ Verschiebe die `monero-wallet-cli`-Programmdatei.
-
-```
-user@host:~$ sudo mv QubesIncoming/monerod-ws/monero-wallet-cli /usr/local/bin/
-```
 
 + Bearbeite die Datei `/rw/config/rc.local`.
 
