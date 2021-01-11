@@ -524,6 +524,7 @@ developer-guides:
   vanity-monero: Generate vanity address for CryptoNote currency (Monero etc.).
   go-monero-rpc-client: A go client for the Monero wallet and daemon RPC.
   monero-rs: Library with support for (de)serialization on block data structures and key/address generation and scanning related to Monero cryptocurrency.
+  csharp-monero: A wallet and daemon client to interface with Monero's JSON-RPC API, built on .netstandard2.1
 
 user-guides:
   general: General
