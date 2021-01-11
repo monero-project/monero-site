@@ -46,6 +46,7 @@ permalink: /get-started/faq/index.html
                     <ul class="logo">
                         <li><a href="#anchor-wallet">{% t faq.qwallet %}</a></li>
                         <li><a href="#anchor-lost-funds">{% t faq.qnofunds %}</a></li>
+                        <li><a href="#long-time-move">{% t faq.qlongtimemove %}</a></li>
                         <li><a href="#anchor-tor-node">{% t faq.qnodetor %}</a></li>
                         <li><a href="#anchor-long-sync">{% t faq.q5 %}</a></li>
                         <li><a href="#anchor-full-pruned">{% t faq.qfullpruned %}</a></li>
@@ -242,6 +243,12 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-lost-funds"></a>{% t faq.qnofunds %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.anofunds %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="long-time-move">
+                    <h3><a class="anchor" href="#long-time-move"></a>{% t faq.qlongtimemove %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.alongtimemove %}</p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-tor-node">
