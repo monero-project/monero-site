@@ -205,6 +205,8 @@ permalink: /resources/roadmap/index.html
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
                                     <li class="upcoming">{% t roadmap.returnaddr %}</li>
+                                    <li class="ongoing">{% t roadmap.atomicswaps %}</li>
+                                    <li class="ongoing">{% t roadmap.bplus %}</li>
                             </ul>
                     </div>
                 </div>

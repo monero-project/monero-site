@@ -664,6 +664,8 @@ roadmap:
   released-0-17: CLI and GUI 0.17 'Oxygen Orion' released
   
   returnaddr: Return addresses
+  atomicswaps: Monero <-> Bitcoin atomic swaps
+  bplus: Bulletproofs+
 
 
 research-lab:
