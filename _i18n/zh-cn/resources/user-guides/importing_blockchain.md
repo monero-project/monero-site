@@ -2,7 +2,7 @@
 
 ### Purpose and Warning
 
-Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero daemon will verify each block as it's received, instead of verifying separately after downloading.
+Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
 
 This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
 
@@ -57,6 +57,3 @@ For example I would type :
 ### Step 7
 
 After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.
-
-
-Author: Kee Jefferys

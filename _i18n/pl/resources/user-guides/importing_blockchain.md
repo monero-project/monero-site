@@ -1,56 +1,59 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Krok 1
+### Purpose and Warning
 
-Ściągnij aktualny bootrstap ze strony https://downloads.getmonero.org/blockchain.raw. Możesz pominąć ten krok, jeśli importujesz łańcuch bloków z innego źródła.
+Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
 
-### Krok 2
+This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
 
-Znajdź ścieżkę swojego portfela Monero (folder, do którego wypakowałeś swój portfel). Na przykład moja to:
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+
+### Step 1
+
+Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
+
+### Step 2
+
+Find the path where the Monero software is installed. For example mine is:
 
 `D:\monero-gui-0.10.3.1`
 
-Twoja ścieżka może być inna, w zależności od tego, gdzie zdecydowałeś się ściągnąć swój portfel i od twojej wersji portfela Monero.
+Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
 
-### Krok 3
+### Step 3
 
-Znajdź ścieżkę ściągniętego łańcucha bloków. Na przykład moja to:
+Find the path of your downloaded blockchain for example mine was:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Twoja ścieżka może być inna, w zależności od tego, gdzie ściągnąłeś łańcuch bloków.
+Yours might be different depending on where you chose to save the downloaded blockchain.
 
-### Krok 4
+### Step 4
 
-Otwórz okno wiersza polecenia. Możesz tego dokonać, klikając w przycisk Windows + R i następnie wpisując `CMD` w nowym okienku.
+Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
 
-### Krok 5
+### Step 5
 
-Używając okienka CMD, przejdź do lokalizacji twojego portfela Monero. Możesz tego dokonać, wpisując:
+Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
 
-`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE`
+`cd C:\YOUR\MONERO\PATH\HERE`
 
-Powinno to wyglądać mniej więcej tak:
+It should look something like:
 
 `cd D:\monero-gui-0.10.3.1`
 
-Jeśli twój portfel Monero znajduje się na innym dysku, użyj `DriveLetter:`. Na przykład, jeśli twój portfel znajduje się na dysku D, przed użyciem funkcji cd, wpisz `D:`.
+If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
 
-### Krok 6
+### Step 6
 
-Wpisz w oknie wiersza poleceń:
+Now type in your command prompt window:
 
-`monero-blockchain-import --verify 1 --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
+`monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
-Na przykład:
+For example I would type :
 
-`monero-blockchain-import --verify 1 --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
+`monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Jeśli ściągnąłeś łańcuch bloków z zaufanego, renomowanego źródła, możesz ustawić `verify 0`. To zmniejszy czas synchronizacji łańcucha.
+### Step 7
 
-### Krok 7
-
-Po ukończeniu synchronizacji łańcucha bloków, możesz normalnie otworzyć swój portfel Monero. Ściągnięty plik blockchain.raw może zostać usunięty.
-
-
-Autor: Kee Jefferys
+After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.

@@ -57,6 +57,3 @@ Ich würde beispielsweise dies eintippen:
 ### Schritt 7
 
 Nachdem die Blockchain die Synchronisation abgeschlossen hat, kannst du dein Monero-Wallet ganz normal öffnen. Die heruntergeladene "rohe" Blockchain (blockchain.raw) kann gelöscht werden.
-
-
-Autor: Kee Jefferys

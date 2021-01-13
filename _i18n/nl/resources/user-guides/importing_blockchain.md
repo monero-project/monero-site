@@ -1,56 +1,59 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Stap 1
+### Purpose and Warning
 
-Download het huidige bootstrap-bestand van https://downloads.getmonero.org/blockchain.raw. Deze stap kun je overslaan als je de blockchain uit een andere bron importeert.
+Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
 
-### Stap 2
+This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
 
-Zoek het pad van je Monero-portemonnee op (de map waar je de Monero-software hebt uitgepakt). Mijn pad is bijvoorbeeld:
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+
+### Step 1
+
+Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
+
+### Step 2
+
+Find the path where the Monero software is installed. For example mine is:
 
 `D:\monero-gui-0.10.3.1`
 
-Je kunt een ander pad hebben, afhankelijk van waar je de portemonnee hebt gedownload en welke versie van de Monero-portemonnee je gebruikt.
+Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
 
-### Stap 3
+### Step 3
 
-Zoek het pad op van de blockchain die je hebt gedownload. Voor mij is het bijvoorbeeld:
+Find the path of your downloaded blockchain for example mine was:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Voor jou kan het anders zijn, afhankelijk van waar je de blockchain hebt gedownload.
+Yours might be different depending on where you chose to save the downloaded blockchain.
 
-### Stap 4
+### Step 4
 
-Open een opdrachtregelvenster. Dit kun je doen door op de Windows-toets + R te drukken en vervolgens in het pop-upvenster `CMD` te typen.
+Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
 
-### Stap 5
+### Step 5
 
-Nu moet je in het CMD-venster naar het pad van je Monero-portemonnee navigeren. Dit kun je doen door het volgende te typen:
+Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
 
-`cd C:\HIER\HET\BESTANDSPAD\VAN\JE\MONERO-PORTEMONNEE`
+`cd C:\YOUR\MONERO\PATH\HERE`
 
-Bijvoorbeeld zoiets:
+It should look something like:
 
 `cd D:\monero-gui-0.10.3.1`
 
-Als je Monero-portemonnee op een ander station staat, gebruik je `Stationsletter:`. Bijvoorbeeld: als je portemonnee op station D staat, voer je `D:` in voordat je de `cd`-opdracht gebruikt.
+If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
 
-### Stap 6
+### Step 6
 
-Typ nu het volgende in het opdrachtregelvenster:
+Now type in your command prompt window:
 
-`monero-blockchain-import --input-file C:\HIER\HET\BESTANDSPAD\VAN\JE\BLOCKCHAIN`
+`monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
-Ik zou bijvoorbeeld het volgende typen:
+For example I would type :
 
 `monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Als je de blockchain hebt gedownload van een bron die je vertrouwt, kun je de instelling `verify 0` opgeven. Hiermee wordt de blockchain sneller gesynchroniseerd.  
+### Step 7
 
-### Stap 7
-
-Nadat de blockchain is gesynchroniseerd, kun je je Monero-portemonnee op de normale manier openen. Het gedownloade bestand blockchain.raw kun je verwijderen.
-
-
-Geschreven door: Kee Jefferys.
+After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.
