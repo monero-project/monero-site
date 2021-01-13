@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Comment générer un portefeuille Monero Ledger avec la CLI (monero-wallet-cli)
-
 ### Table des Matières
 
 * [1. Windows](#1-windows)
@@ -162,6 +160,3 @@ Félicitations, vous pouvez maintenant utiliser votre portefeuille Monero Ledger
    Si les fichiers du portefeuille Ledger ne sont pas dans le même répertoire que `monero-wallet-cli`, vous devez ouvrir `monero-wallet-cli` avec l'option `--wallet-file /chemin/vers/fichier/clefs.portefeuille`. Sinon, vous pouvez copier les fichiers du portefeuille Ledger dans le même répertoire que `monero-wallet-cli`.
 
 5. Si vous avez des questions, ou besoin d'aide, ajoutez un commentaire sur l'article d'origine sur [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli).
-
-Auteur: dEBRUYNE
-Transcripteur secondaire: el00ruobuob

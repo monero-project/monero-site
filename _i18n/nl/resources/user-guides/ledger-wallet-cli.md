@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Een Monero-portemonnee op een Ledger maken met de opdrachtregel (monero-wallet-cli)
-
 ## Inhoud
 
 * [1. Windows](#1-windows)
@@ -160,6 +158,3 @@ Gefeliciteerd! Nu kun je je Monero-portemonnee voor de Ledger samen met de CLI g
    Als de portemonneebestanden op de Ledger niet in dezelfde directory staan als `monero-wallet-cli`, moet je `monero-wallet-cli` openen met de parameter `--wallet-file /pad/naar/bestand/portemonnee.keys`. Maar je kunt de bestanden van de Ledger-portemonnee ook kopiëren naar dezelfde directory als `monero-wallet-cli`.
 
 5. Als je nog meer vragen hebt of hulp nodig hebt, kun je een reactie achterlaten op het oorspronkelijke [antwoord op StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli).
-
-Auteur: dEBRUYNE
-Bewerkt door: el00ruobuob
