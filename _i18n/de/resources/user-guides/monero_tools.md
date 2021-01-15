@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# Monero-Tools
-
 Die folgenden Tools können dazu verwendet werden, Informationen über das Monero-Netzwerk oder zu den eigenen Transaktionsdaten innerhalb der Blockchain zu erhalten.
 
 
