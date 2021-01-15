@@ -24,7 +24,7 @@ permalink: /resources/roadmap/index.html
                 <div class="tabPanel-widget">
                     <label for="tab-1" tabindex="0"></label>
                     <input id="tab-1" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2014-2015</h2>
+                    <h2>2014-2016</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2014</h2>
                             <ul>
@@ -43,11 +43,6 @@ permalink: /resources/roadmap/index.html
                                 <h3 class="months">{% t roadmap.jan %}</h3>
                                     <li class="completed">{% t roadmap.paper4 %}</li>
                             </ul>
-                    </div>
-                    <label for="tab-2" tabindex="0"></label>
-                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2016</h2>
-                    <div class="tabPanel-content info-block">
                         <h2>2016</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.jan %}</h3>
@@ -62,7 +57,6 @@ permalink: /resources/roadmap/index.html
                                 <h3 class="months">{% t roadmap.dec %}</h3>
                                     <li class="completed"><a href="{{ site.baseurl_root }}/2016/12/14/monero-0.10.1-released.html" target="_blank" rel="noreferrer noopener">{% t roadmap.released-0-10-1 %}</a></li>
                                     <li class="completed"><a href="{{ site.baseurl_root }}/2016/12/22/monero-core-gui-beta-released.html" target="_blank" rel="noreferrer noopener">{% t roadmap.guibeta1 %}</a></li>
-                            </ul>
                     </div>
                     <label for="tab-3" tabindex="0"></label>
                     <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
