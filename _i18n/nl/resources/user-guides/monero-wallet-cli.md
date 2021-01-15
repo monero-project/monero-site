@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# monero-wallet-cli
-
 `monero-wallet-cli` is de portemonnee-software die onderdeel uitmaakt van de Monero-code. Het is een consoleprogramma
 waarmee je een account beheert. Terwijl een Bitcoin-portemonnee zowel een account als de blockchain beheert,
 worden deze functies in Monero gescheiden: `monerod` beheert de blockchain en `monero-wallet-cli` beheert het account.

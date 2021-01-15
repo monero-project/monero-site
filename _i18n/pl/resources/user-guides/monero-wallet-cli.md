@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# monero-wallet-cli
-
 `monero-wallet-cli` jest oprogramowaniem, które współpracuje z Monero. To program konsoli zarządzający kontem. Podczas gdy portfel Bitcoina zarządza zarówno kontem, jak i łańcuchem bloków, Monero rozdzielił je, aby `monerod`operował łańcuchem, a `monero-wallet-cli` kontem.
 
 Ten przewodnik pokaże, jak wykonywać różne operacje w interfejsie `monero-wallet-cli`. Przewodnik zakłada, że używasz najnowszej wersji Monero i założyłeś już swoje konto zgodnie z instrukcjami.
