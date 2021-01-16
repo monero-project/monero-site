@@ -33,6 +33,4 @@
 
 Das Konto, das du erstellt hast, wurde im RAM erstellt. Die digitalen Dateien sind jetzt nicht abrufbar. Sollte ein Angreifer es irgendwie schaffen, an diese Daten zu gelangen, fehlt ihm immer noch das lange Passwort, um es öffnen zu können. Wenn du Zahlungen erhalten möchtest, hast du deine öffentliche Adresse und bei Bedarf deinen View-Key. Wenn du auf dein Konto zugreifen willst, hast du deinen 25 Wörter umfassenden @mnemonischen-Seed, von welchem du nun mehrere Kopien (einschließlich einer in bspw. einem Bankschließfach hinterlegten analogen Kopie) anfertigen kannst. 
 
-Credit: Riccardo Spagni
-
 Siehe auch: [Offline Konto-Generator](http://moneroaddress.org/)

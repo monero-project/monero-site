@@ -33,6 +33,4 @@
 
 Le compte que vous avez créé se trouvait en mémoire vive, et les fichiers sont maintenant inaccessible. Si un ennemi parvenait d'une quelconque manière à obtenir ces données, il lui manquerait le long mot de passe pour pouvoir l'ouvrir. Si vous avez besoin de recevoir des paiements, vous avez votre adresse publique, et vous avez votre clef d'audit si nécessaire. Si vous avez besoin d'y accéder, vous avez votre @mnemonic-seed de 25 mots, et vous pouvez maintenant en faire quelques copies, dont une copie externe (par exemple, dans le coffre d'une banque).
 
-Mérite :  Riccardo Spagni
-
 Lié : [Générateur de Compte Hors-Ligne](http://moneroaddress.org/)
