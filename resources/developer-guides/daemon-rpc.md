@@ -1108,7 +1108,7 @@ Outputs:
   * *speed* - unsigned int; connection speed
   * *start_block_height* - unsigned int; block height of the first block in that span
 * *status* - string; General RPC error code. "OK" means everything looks good.
-* *target_height* - unsigned int; target height the node is syncing from (will be undefined if node is fully synced)
+* *target_height* - unsigned int; target height the node is syncing from (will be 0 if node is fully synced)
 
 Example:
 
