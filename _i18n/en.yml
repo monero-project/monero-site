@@ -328,30 +328,42 @@ contributing:
   intro: Monero is an open-source, community-driven project. Described below are several ways to support the project.
   network: Support the Network
   develop: Develop
-  develop_para1: Monero is primarily written in C++. As it is a decentralized project, anyone is welcome to add or make changes to existing code. Pull requests are merged based on community consensus. See the
-  develop_para2: repositories
-  develop_para3: and outstanding
-  develop_para4: issues.
-  full-node: Run a Full Node
-  full-node_para: Run monerod with port 18080 open. Running a full node ensures maximum privacy when transacting with Monero. It also improves distribution of the blockchain to new users.
+  developp: "Monero is open source and permissionless; contributors are welcome and encouraged. A developer may contribute in numerous way to different projects:"
+  cli: "CLI wallet and Daemon: "
+  cli_p: The core wallet, mostly written in C++.
+  gui: "GUI Wallet: "
+  gui_p: Mostly QML and C++.
+  website: "This website: "
+  website_p: Built with Jekyll. No Javascript.
+  bug: "Bug and vulnerability hunting: Monero is listed on Hackerone and developers are asked to responsibly disclose bugs and vulnerabilities. See"
+  discl: The Monero Project Vulnerability Response Process.
+  develop_descr: >
+    This list only includes the tools stewarded by the core team, but the Monero ecosystem is much more vaste. People can contribute to the development of libraries, services, documentation, graphics, etc. The list is virtually infinite. Contact or join the workgroup more affine to your way of contributing.
+  develop_wg: See the Monero Workgroups.
+  full-node: Run a Node
+  full-node_p: An easy and effective way to help the Monero network is to run a @node. Nodes ensure the network keeps running safe and decentralized. A simple fully synchronized node is enough to help the network, but if you want to go out of your way, you could run an open @remote-node, to allow other people to connect to it.
+  full-node_p2: "We have several guides to help you run and configure your node:"
+  allguides: See all User Guides.
   mine: Mine
-  mine_para1: Mining ensures the Monero network remains decentralized and secure. In the Monero graphical user interface and command-line interface, background mining may be activated. Additional resources for mining may be viewed
-  mine_para2: here.
-  ffs: View the Community Crowdfunding System
-  ffs_para1: Monero utilizes a
-  ffs_para2: community crowdfunding system
-  ffs_para3: whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
+  mine_p: >
+    Mining ensures the safety of the network. Monero uses @randomx, an ASIC-resistant algorithm developed by Monero contributors, which aims to remain mineable by common consumer-grade hardware. For more info about mining see the
+  mine_link: dedicated Mining page.
+  ffs: Community Crowdfunding System
+  ccs_p: Monero utilizes a community crowdfunding system whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
+  ccsbutton: Go the the CCS
   donate: Donate
-  donate_para1: Ongoing development is supported by donations and
-  donate_para2: sponsorships.
-  donate-xmr: Donating Monero
-  donate-xmr_para: Donations may be sent to
-  or: or
-  donate-btc: Donating Bitcoin
-  donate-btc_para: Donations may be sent to
+  donate_p: Donation to the general fund are used to pay the salary of core's assistant Rehrar and in case of emergencies or need. Infrastructure costs are currently covered by sponsors.
+  genfund: General Fund
+  genfund_p: "You can donate both Monero and Bitcoin:"
   donate-other: Other
   donate-other_para1: E-mail
   donate-other_para2: for alternative means of donating or if you would like to become a sponsor for the Monero Project.
+  supportdev: Support the developers
+  supportdev_p: The developers working on Monero are mostly indepentent volunteers, but some of them may be funded through CCS proposals. If you wish to support their efforts by donating some XMRs, consider contacting them personally or using tipping services.
+  sponsor: Sponsorships
+  sponsor_p: You can also support Monero through a sponsorship program. See the dedicated 
+  sponsor_link: Sponsorships page
+  sponsor_p2: for more info.
 
 faq:
   intro: List of common questions with relative answers and resources
