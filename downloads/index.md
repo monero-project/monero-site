@@ -230,10 +230,10 @@ permalink: /downloads/index.html
                     </div>
                         <table class="desktop-only">
                         <tr>
-                            <th>Wallet</th>
-                            <th>Mobile</th>
-                            <th>Desktop</th>
-                            <th>Source Code</th>
+                            <th>{% t downloads.wallet %}</th>
+                            <th>{% t downloads.mobile %}</th>
+                            <th>{% t downloads.desktop %}</th>
+                            <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
                             <td><img src="/img/cakewallet.png" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>

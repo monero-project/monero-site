@@ -242,6 +242,9 @@ downloads:
   packages: There are also packages available for multiple Linux distributions.
   packages_link: See the list on GitHub
   releasenotes: release notes
+  wallet: Wallet
+  mobile: Mobile
+  desktop: Desktop
 
 press-kit:
   intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself.
