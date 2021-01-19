@@ -164,6 +164,23 @@ permalink: /community/workgroups/index.html
           </div>
         </div>
       </div>
+      <div class="left half col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="info-block">
+          <div class="row center-xs">
+            <h2>{% t team.mpwg %}</h2>
+          </div>
+          <h4>{% t team.descr %}</h4>
+          <p>{% t team.mpwg_descr %}</p>
+          <h4>{% t team.start %}</h4>
+          <p>{% t team.mpwg_start %}</p>
+          <h4>{% t team.contacts %}</h4>
+          <ul class="logo">
+            <li>{% t team.chat %} <code>#monero-policy</code> <a class="chats-img" href="irc://chat.freenode.net/#monero-policy"><img class="freenode" src="/img/freenode.png" title="freenode" alt="freenode logo"></a> <a class="chats-img" href="https://matrix.to/#/#freenode_#monero-policy:matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>Email: <code>policy[at]getmonero[dot]org</code></li>
+            <li>{% t team.website %} <a href="https://moneropolicy.org">moneropolicy.org</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="right half col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="row center-xs">
