@@ -1,83 +1,43 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Monero kopen en veilig opslaan
+## Step 1: Acquire Monero
+There are multiple ways to acquire Monero: You can mine it, you can exchange services or goods for it, or you can convert other cryptocurrencies and fiat money to XMR. If you choose the latter, the most convenient way to do it is to use an exchange.
 
-Dit is een handleiding voor het aanschaffen en veilig opslaan van Monero, geschreven in juni 2017.
+There are multiple exchanges supporting Monero. Some are centralized, which usually have great liquidity and fast service, but requires you to provide personal information before starting the trade (KYC). Some are decentralized and don't require any identification, but usually have less volume and can be harder to use. There are also services that allow people to meet and perform a trade without third parties involved.
 
-#### Stap 1. Koop Bitcoin
+An incomplete list of Exchanges that support Monero is on our [Merchants page]({{ site.baseurl }}/community/merchants/#exchanges).
 
-Je kunt op allerlei manieren Bitcoin kopen. Twee min of meer betrouwbare bedrijven zijn op dit moment Xapo <http://www.xapo.com/> en Coinbase <http://www.coinbase.com/>. Hiervoor is het nodig om een kopie van je identiteitsbewijs (paspoort, rijbewijs of identiteitskaart) te uploaden. Verificatie van je identiteit kan 2 tot 10 dagen duren (of langer).  Controleer de reputatie van een exchange voordat je een grote aankoop doet.  Xapo gebruikt elektronische overboekingen en Coinbase gebruikt bankoverschrijvingen (ACH in de VS).  Xapo zal waarschijnlijk sneller werken dan Coinbase.  Coinbase biedt ook de mogelijkheid om "instant" kleine bedragen te kopen met een betaalpas, maar rekent hoge kosten voor deze optie. Nadat je Bitcoin hebt gekocht, kun je ze omwisselen voor Monero.
+## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+Download the @paper-wallet generator at: [moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick (Direct link: [https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip)).
 
-#### Stap 2. Download en maak een papieren portemonnee (paper wallet) op een veilige computer die niet verbonden is met internet.
+Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system.
 
-Download de *paper wallet generator* op https://moneroaddress.org en kopieer deze naar een USB-stick. (Directe link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip).
+Your paper wallet will have four important items:
 
-Pak de *paper wallet generator* uit en open deze (monero-wallet-generator.html) in een browser op een offline computer die nog nooit is gebruikt, of waarop het besturingssysteem opnieuw is geïnstalleerd.
+- Monero Public @Address: The public address is used to receive funds to the @wallet. You give this to anyone who will be sending funds to your wallet.
 
-De papieren portemonnee bestaat uit vier belangrijke onderdelen:
+- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date.
 
-Openbaar Monero-adres
-Het openbare adres wordt gebruikt om geld in de portemonnee te ontvangen.  Je kunt dit adres aan iedereen geven die jou wil betalen.
+- Monero @Spend-Key: The private spend key is used to send funds from the wallet.
 
-Monero-hersteltekst
-Met de hersteltekst wordt de hele portemonnee opgeslagen op een manier die begrijpelijk is voor mensen.  Dit is alles wat je nodig hebt om later je portemonnee te herstellen.
+- Monero @View-Key: The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
 
-Privé-bestedingssleutel
-De privé-bestedingssleutel wordt gebruikt om geld vanuit de portemonnee te verzenden.
+At this point you have many options. You can print the wallet on paper, save it as a PDF or text on a USB stick, burn it to CD/DVD, etc. Most likely you will want at least two or three copies, stored securely in different locations. If storing digitally, encrypt everything with a strong password.  If storing on paper, do not show the wallet to anyone else who can memorize your 25 word key, or take a picture of the wallet without your permission.  Sending someone a picture of the wallet is the same as giving away all of your funds.
 
-Privé alleen-lezen sleutel
-De privé alleen-lezen sleutel is bedoeld om te bekijken welke transacties worden ontvangen door de portemonnee. Deze wordt vaak gebruikt om een alleen-lezen portemonnee voor *cold storage* (koude opslag) te maken, zodat je direct op de blockchain kunt zien welke transacties daar binnenkomen.
+Whichever method you chose, be sure there's no copy of the Monero wallet left over on the device you used. You may need to securely delete the Monero wallet if you saved it to a disk, or make sure your printer does not save a copy in memory.
 
-Op dit punt heb je allerlei opties.  Je kunt de portemonnee op papier afdrukken, opslaan als een PDF of een tekstbestand op een USB-stick, op een cd of dvd branden enzovoort. Het wordt aangeraden om tenminste twee of drie exemplaren op verschillende plekken op te slaan.  Versleutel alles met een sterk wachtwoord als je de portemonnee digitaal bewaart.  Als je de portemonnee op papier bewaart, laat hem dan niet zien aan iemand die je hersteltekst van 25 woorden kan onthouden of zonder je toestemming een foto van de portemonnee kan maken.  Iemand een foto van de portemonnee sturen is hetzelfde als al het geld weggeven.
+*If you lose access to your Monero paper wallet the Monero will not be available to you or anyone else, ever. You wont be able to recover them!*
 
-Welke methode je ook kiest, zorg ervoor dat er geen exemplaar van de Monero-portemonnee achterblijft op het apparaat dat je hebt gebruikt.  Eventueel moet je de Monero-portemonnee veilig verwijderen als je hem op een schijf hebt opgeslagen, of controleren of je printer geen exemplaar heeft opgeslagen in zijn geheugen.
+#### Side Note
+Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
+Download the html page and place it on your airgapped computer. Check the part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a decent password. Thanks manicminer5.
 
-*Als je de toegang tot je papieren Monero-portemonnee kwijtraakt, ben je de Monero die erop staan voorgoed kwijt.  Niemand kan je helpen om ze terug te krijgen!*
+## Step 3: Send your Moneroj to the paper wallet
+Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
 
-#### Kanttekening
-Je kunt een XMR-hersteltekst versleutelen met:
-https://xmr.llcoins.net/
-Download de html-pagina en breng die naar je offline computer. Vink de optie "Encrypt/Decrypt Mnemonic Seed" aan en gebruik "CN Add" met een degelijk wachtwoord. Met dank aan manicminer5.
+#### Notes and How to Verify Funds
+Because the Monero blockchain is private and untraceable, you won't be able to lookup your Monero Public Address and confirm that the funds have arrived like you might with Bitcoin. This is good for privacy, but bad for convenience.
 
+To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet. This is where that view-key comes in. To create a view-only wallet see the entry: [View Only Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)
 
-
-#### Stap 3. Wissel je Bitcoin om voor Monero en laat je Monero naar je papieren portemonnee sturen.
-
-Ga op je computer met een internetverbinding naar www.shapeshift.io. Kies "Bron: Bitcoin", "Doel: Monero" en "Snel".
-
-Klik op Doorgaan.
-
-Je Monero adres (bestemmingsadres)
-Plak hier het openbare Monero-adres uit je papieren portemonnee in het tekstvak waar "Je Monero adres" staat.   Maar wacht even: je openbare Monero-adres staat op een offline computer (toch?) dus je kunt het niet kopiëren en plakken.  Kopieer het met de hand, of kopieer alleen het openbare adres naar een lege USB-stick.
-
-Je Bitcoin adres voor het omgewisselde bedrag
-Voer een Bitcoin-adres in dat eigendom van jou is, zodat je daar een terugbetaling kunt ontvangen als er een probleem is met de transactie.  Het is erg belangrijk dat je een openbaar Bitcoin-adres invoert dat eigendom van jou is en waar je geld kunt ontvangen.  Bij Xapo en Coinbase heet dit een Receive Address (ontvangstadres). Het kan af en toe gewijzigd worden.
-
-Payment Id
-Laat Payment Id (Betalings-ID) leeg als je Monero naar je eigen portemonnee of papieren portemonnee verzendt.
-
-Ga akkoord met de voorwaarden en klik op de schuifknop "Bewaren Adres?" om er een herbruikbaar adres van te maken.  
-
-Klik op "Transactie starten".
-
-Stortingsadres (het openbare Bitcoin-adres van Shapeshift.io dat alleen is bestemd voor het ontvangen van je geld)
-In het nieuwe scherm dat wordt weergegeven kopieer je het stortingsadres onder "Verzonden naar dit adres" naar je klembord (selecteer het en druk op Ctrl-C of klik op Bewerken - Plakken).  Via dit adres verzend je Bitcoin van Xapo/Coinbase naar Shapeshift.io.
-
-Ga naar je Xapo- of Circle-account en zoek de knop Transfer of Send op. Plak het Bitcoin-stortingsadres in het veld Destination en voer in hoeveel Bitcoin je wilt laten omwisselen voor Monero.  Het bedrag moet binnen het door Shapeshift.io opgegeven bereik voor Minimaal inlegbedrag en Maximaal inlegbedrag vallen.  Klik op Send en autoriseer indien nodig de transactie.
-
-Nadat het verzenden is gestart door Xapo/Coinbase, moet je wachten terwijl de transactie op de Bitcoin-blockchain wordt vastgelegd en bevestigd.  Dit kan minuten of uren duren.  Je kunt controleren of de betaling is verzonden door het stortingsadres bij Shapeshift.io op te zoeken op blockchain.info.  Daar wordt je transactie naar Shapeshift.io weergegeven.
-
-Nadat je Bitcoin-transactie is bevestigd, begint Shapeshift.io met het omwisselen van Bitcoin (BTC) voor Monero (XMR) op een van de exchanges. Wanneer dat klaar is, wordt je Monero verzonden naar het adres van je papieren portemonnee voor cold storage.  Dit kan minuten tot uren duren.  Neem contact op met Shapeshift.io als er een probleem is.  Hun ondersteuning is goed.
-
-Wanneer de transactie volgens de webpagina van Shapeshift.io is voltooid, zou je Monero in je papieren portemonnee moeten hebben.
-
-
-### Opmerkingen en het verifiëren van je saldo
-Omdat de Monero-blockchain vertrouwelijk en niet volgbaar is, kun je niet je openbare Monero-adres opzoeken om te bevestigen dat het geld is aangekomen, zoals je met Bitcoin zou kunnen doen.  Dit is goed voor je privacy, maar minder gemakkelijk.
-
-Je hebt een alleen-lezen portemonnee nodig om veilig te controleren of je geld is aangekomen in je portemonnee.  Daarvoor heb je die alleen-lezen sleutel bewaard. Zie de handleiding voor het maken van een alleen-lezen portemonnee: [Een alleen-lezen portemonnee maken]({{site.baseurl}}/resources/user-guides/view_only.html)
-
-Om te controleren of het geld *nog steeds in* je portemonnee zit en niet uitgegeven is, moet je een 'koude' portemonnee (cold wallet) maken met je hersteltekst (voor al je geld) op een offline computer waar een bijgewerkt exemplaar van de Monero-blockchain op staat. Wanneer je daarmee klaar bent, moet je de portemonnee veilig wissen of met internet verbinden zodat het een 'hot wallet' wordt.
-
-
-
+To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet or connect it to the internet and it becomes a Hot Wallet.
