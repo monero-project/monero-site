@@ -166,7 +166,7 @@ permalink: /resources/roadmap/index.html
                             </ul>
                     </div>
                     <label for="tab-5" tabindex="0"></label>
-                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
+                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
                     <h2>2020</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2020</h2>
