@@ -2,7 +2,7 @@
 
 # monerod
 
-`monerod` is the daemon software that ships with the Monero tree. It is a console program, and manages the blockchain. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
+`monerod` is the @daemon software that ships with the Monero tree. It is a console program, and manages the blockchain. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
 
 This guide assumes you have already set up your VPS account and are using SSH to tunnel into the server console.
 
