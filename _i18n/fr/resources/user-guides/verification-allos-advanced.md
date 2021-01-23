@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-#  Vérifier des binaires : Outils CLI pour Linux, Mac ou (Avancé)
-
 Les fichiers binaires Monero devrait être vérifiés avant extraction, installation ou utilisation de l'application Monero. C'est l'unique manière de vous assurer que vous utilisez le binaire officiel Monero. Si vous recevez un binaire contrefait (p. ex. hameçonnage, HDM, etc.), suivre ce guide vous évitera de vous faire piéger.
 
 Pour protéger l'intégrité des binaires, l'équipe Monero fournit une liste cryptographiquement signée de tous les hachages [SHA256](https://en.wikipedia.org/wiki/SHA-2). Si le binaire que vous avez téléchargé a été altéré il produira un [hachage différent](https://en.wikipedia.org/wiki/File_verification) de celui fourni dans le fichier.

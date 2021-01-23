@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
-# Binary verifiëren: Linux, Mac of Windows via opdrachtregel (geavanceerd)
-
 Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de binaire bestanden van Monero verifiëren. Dit is de enige manier om er zeker van te zijn dat je de officiële Monero-software gebruikt. Als je een onecht Monero-binary ontvangt (bijvoorbeeld via phishing of een *man-in-the-middle attack*), voorkomt deze methode dat je er gebruik van maakt.
 
 Het Monero-team stelt een cryptografisch ondertekende lijst beschikbaar met alle [SHA256](https://en.wikipedia.org/wiki/SHA-2)-hashes, om de integriteit van de binaries te garanderen. Als er met het gedownloade binaire bestand is geknoeid, levert het een [andere hash](https://nl.wikipedia.org/wiki/Hashfunctie) op dan in de lijst.
