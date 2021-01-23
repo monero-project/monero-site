@@ -1,6 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# Verifikation von Binärdateien: Windows (Anfänger)
 Vor dem Extrahieren, Installieren oder Nutzen der Monero-Software sollten die Monero-Binärdateien verifiziert werden, da du nur so sichergehen kannst, dass du tatsächlich die offiziellen Binärdateien von Monero verwendest. Solltest du (bspw. durch Phishing, eine MITM-Attacke etc.) eine gefälschte Binärdatei erhalten haben, schützt dich das Befolgen dieser Anleitung davor, zur Verwendung der falschen Dateien verleitet zu werden.
 
 Das Team von Monero bietet zum Schutz der Integrität dieser Binärdateien eine kryptografisch signierte Liste aller [SHA256](https://de.wikipedia.org/wiki/SHA-2)-Hashwerte. Sollte deine heruntergeladene Binärdatei manipuliert worden sein, wird sie einen [Hashwert](https://en.wikipedia.org/wiki/File_verification) produzieren, welcher von dem in der Datei enthaltenen Wert abweicht.
