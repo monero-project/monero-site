@@ -84,3 +84,15 @@ cli:
    - platform: Source Code
      link: https://github.com/monero-project/monero
      icon: icon-github
+  
+  downloads:
+  Mobile & Light Wallets:
+  Wallet: Incognito Wallet
+    - version: "4.0.0"
+    link: https://incognito.org/
+    icon: https://drive.google.com/file/d/1jTMLD4R4ANQNdjUfFLkInEn-GrL-fJGC/view?usp=sharing
+  Mobile:
+    icon: icon-apple, icon-android
+  Desktop:  X
+  Source Code:
+    link: https://github.com/incognitochain
