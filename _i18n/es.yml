@@ -730,6 +730,7 @@ faq:
     En este sitio web hay una lista disponible de casas de cambio donde es posible
     comprar/vender Monero (XMR):'
   qavoidbc: ¿Puedo evitar descargar toda la cadena de bloques?
+  qblocksize: ¿Qué tan grande es la cadena de bloques Monero?
   qblockspace: ¿Por qué la cadena de bloques necesita tanto espacio?
   anodetor: El soporte a Tor todavia está en su primera etapa, pero es posible envíar
     de manera nativa transacciones por la red y ejecutar el daemon de Monero en la
@@ -750,6 +751,7 @@ faq:
     ver al receptor ni la cantidad) y en algunos casos extremos, puede realizar ataques
     capaces de reducir tu privacidad. Algunos peligros pueden ser disminuidos usando
     nodos remotos a través del uso de una VPN o de las redes de Tor o I2P.'
+  ablocksize: La cadena de bloques Monero siempre creciendo. A partir de 2021, la cadena de bloques tiene alrededor de 95-100GB.
   ablockspace: Cuando descargas la @cadena-de-bloques, estás descargando el historial
     completo de las @transacciones que ocurrieron en la red Monero desde que fue creada.
     Las transacciones y los datos relacionados son pesados y todo el historial debe
