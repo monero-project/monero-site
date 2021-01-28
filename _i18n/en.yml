@@ -430,6 +430,8 @@ faq:
   anodetor: Support for Tor is still in its infancies, but it's already possible to natively send transactions through the network and to run a Monero @daemon on the Tor network. Better Tor and I2P integrations are in progress.
   qfullpruned: How do I decide if I should run a full node or a pruned node?
   afullpruned: "A full @node requires a considerable amount of storage and could take a long time to download and verify the entire blockchain, especially on older hardware. If you have limited storage, a pruned node is recommended. It only stores 1/8th of unnecessary blockchain data while keeping the full transaction history. If plenty of storage is available, a full node is recommended but a pruned node still greatly contributes to the network and improves your privacy."
+  qblocksize: How big is the Monero blockchain?
+  ablocksize: "The Monero @blockchain is always growing so there is no fixed size. As of 2021, the blockchain is around 95-100GB. "
   qblockspace: Why does the blockchain need so much space?
   ablockspace: "When you download the @blockchain, you are downloading the entire history of the @transactions that happened in the Monero network since it was created. The transactions and the related data are heavy and the entire history must be kept by every node to ensure it's the same for everybody. @pruning a blockchain allows to run a node which keeps only 1/8 of not strictly necessary blockchain data. This results in a blockchain 2/3 smaller than a full one. Convenient for people with limited disk space. Check out the Moneropedia entries @node and @remote-node for more details."
   qavoidbc: Can I avoid downloading the entire blockchain?

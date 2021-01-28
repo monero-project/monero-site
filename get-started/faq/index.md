@@ -50,6 +50,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-tor-node">{% t faq.qnodetor %}</a></li>
                         <li><a href="#anchor-long-sync">{% t faq.q5 %}</a></li>
                         <li><a href="#anchor-full-pruned">{% t faq.qfullpruned %}</a></li>
+                        <li><a href="#anchor-block-size">{% t faq.qblocksize %}</a></li>
                         <li><a href="#anchor-block-space">{% t faq.qblockspace %}</a></li>
                         <li><a href="#anchor-avoid-bc">{% t faq.qavoidbc %}</a></li>
                         <li><a href="#anchor-scanned-wallet">{% t faq.qscanned %}</a></li>
@@ -268,6 +269,12 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-full-pruned"></a>{% t faq.qfullpruned %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.afullpruned %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="anchor-block-size">
+                    <h3><a class="anchor" href="#anchor-block-size"></a>{% t faq.qblocksize %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.ablocksize %}</p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-block-space">
