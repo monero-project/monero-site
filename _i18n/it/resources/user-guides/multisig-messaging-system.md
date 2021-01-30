@@ -599,7 +599,7 @@ This hardly matters with multisig types like 2/2 or 2/3, but of course the highe
 
     mms delete (<message_id> | all)
 
-Delete a single message given its message id, or delete all messages by using the `all` parameter. Single messages will be deleted without confirmation even if not yet sent or not yet processed. A deleted message is gone for good, there is no undo, and it's gone from PyBitmessage's store as well. (If you loose a message you can ask the sender to re-send it to you.)
+Delete a single message given its message id, or delete all messages by using the `all` parameter. Single messages will be deleted without confirmation even if not yet sent or not yet processed. A deleted message is gone for good, there is no undo, and it's gone from PyBitmessage's store as well. (If you lose a message you can ask the sender to re-send it to you.)
 
 There are situations where you have to clear by deleting messages that did not get processed, got unprocessable and now "disturb the workflow"; more see chapter *Troubleshooting*. Deleting is also useful when somebody re-sends you a message and the original message finally reaches you as well later on.
 
@@ -767,7 +767,7 @@ If Alice the buyer and Bob the seller use 2/3 multisig for *escrow* there will b
 
 In this *escrow* situation you really want **three** distinct persons in play. If Bob somehow can *impersonate* Trent by posing as him, by pretending to Alice to be two persons Bob plus Trent, and set up **two** different wallets with two sets of keys, Bob will be able to make those 2/3 multisig transactions valid all on his own and cheat.
 
-How big this danger of impersonation is depends on how secure the initial exchange of key sets is at the very beginning of the whole process, when configuring the wallets and finally "going multisig": If you can assure that only the right people get the right key sets, and nobody can pose somehow as somebody else, everything is alright. If not, you may loose.
+How big this danger of impersonation is depends on how secure the initial exchange of key sets is at the very beginning of the whole process, when configuring the wallets and finally "going multisig": If you can assure that only the right people get the right key sets, and nobody can pose somehow as somebody else, everything is alright. If not, you may lose.
 
 If you use the full capabilities of the MMS you don't use it only to transact, but already before that, to exchange key sets between all signers. Especially for higher forms of multisig like 2/4 with multiple key exchange rounds this is very helpful and less error-prone than some manual process. So, the task to prevent impersonation shifts from securing the exchange of keys to securely setting up signer addresses in the MMS: If Bob can somehow trick Alice into accepting one of **his** Monero and Bitmessage addresses in stead of those of Trent, he has won.
 
