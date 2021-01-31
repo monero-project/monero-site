@@ -824,6 +824,7 @@ moneropedia:
     locally-unique-host: Locally-unique host
     mining: Mining
     mnemonicseed: Mnemonic Seed
+    networkupgrade: Network Upgrade
     node: Node
     openalias: OpenAlias
     paperwallet: Paper Wallet
