@@ -286,8 +286,6 @@
       url: https://www.travala.com/
     - name: Vpn.surf
       url: https://vpn.surf/blog/buy-vpn-with-monero/
-    - name: XMR.to Monero to Bitcoin Payment Service
-      url: https://xmr.to/
 - category: Goods
   id: goods
   merchants:
