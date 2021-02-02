@@ -1,5 +1,5 @@
 ---
-terms: ["networkupgrade"]
+terms: ["network-upgrade"]
 summary: Network Upgrades (hard forks) are non-contentious and no new coin will be created. We have multiple blog posts we could link to.
 ---
 
