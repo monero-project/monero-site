@@ -842,6 +842,7 @@ moneropedia:
     stealthaddress: Stealth Address
     tail-emission: Tail Emission
     transaction: Transactions
+    transaction-weight: Transaction Weight
     unlocktime: Transaction Unlock Time
     viewkey: View Key
     wallet: Wallet
