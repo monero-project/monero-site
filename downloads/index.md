@@ -308,5 +308,5 @@ permalink: /downloads/index.html
                 <!-- End 'Hardware Wallets' -->
             </section>
     </div>
-    <a href="#" class="arrow-up" aria-label="{% t accessibility.arrowup %}"><i></i></a>
+    <a href="#" class="arrow-up" aria-label="{% t accessibility.arrowup %}" title="{% t accessibility.gotop %}"><i></i></a>
 </div>
