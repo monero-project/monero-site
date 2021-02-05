@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Cómo generar un monedero Ledger Monero con la consola de comandos (monero-wallet-cli)
-
 ### Tabla de Contenido
 
 * [1. Windows](#1-windows)
@@ -160,6 +158,3 @@ Felicidades, ahora puedes utilizar tu monedero Ledger Monero en conjunto con mon
    Si los archivos del monedero Ledger no se encuentran en la misma dirección que `monero-wallet-cli`, debes abrir `monero-wallet-cli` con el marcador `--wallet-file /path/to/wallet.keys/file`. De manera alternativa, puedes copiar los archivos del monedero Ledger al mismo directorio de `monero-wallet-cli`.
 
 5. Si tienes más preguntas o necesitas asistencia, por favor deja un comentario en la respuesta original en [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli).
-
-Autor: dEBRUYNE
-Escritor secundario: el00ruobuob

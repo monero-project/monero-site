@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Ein Monero-Ledger-Wallet mit dem CLI (monero-wallet-cli) erstellen
-
 ### Inhaltsverzeichnis
 
 * [1. Windows](#1-windows)
@@ -162,6 +160,3 @@ Glückwunsch, du kannst dein Monero-Ledger-Wallet nun in Verbindung mit dem CLI 
    Sollten die Ledger-Wallet-Dateien nicht in demselben Verzeichnis wie `monero-wallet-cli` gespeichert sein, solltest du `monero-wallet-cli` mit dem `--wallet-file /path/to/wallet.keys/file`-Flag öffnen. Alternativ kannst du die Dateien auch in das Verzeichnis, in welchem `monero-wallet-cli` liegt, kopieren.
 
 5. Wenn du weitere Fragen hast oder Unterstützung benötigst, hinterlasse einen Kommentar unter der ursprünglichen Frage auf [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli).
-
-Autor: dEBRUYNE
-Zweiter Verfasser: el00ruobuob

@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
-
 ### Table of Content
 
 * [1. Windows](#1-windows)
@@ -21,7 +19,7 @@ We first have to ensure that we're sufficiently prepared. This entails the follo
 
 4. Your Ledger needs to be plugged in and the Ledger Monero app should be running.
 
-5. Either your daemon (`monerod.exe`) should be running and preferably be fully synced or you should connect to a remote node.
+5. Either your @daemon (`monerod.exe`) should be running and preferably be fully synced or you should connect to a remote node.
 
 Now that we're sufficiently prepared, let's start!
 
@@ -160,6 +158,3 @@ Congratulations, you can now use your Ledger Monero wallet in conjunction with t
    If the Ledger wallet files are not in the same directory as `monero-wallet-cli`, you ought to open `monero-wallet-cli` with the `--wallet-file /path/to/wallet.keys/file` flag. Alternatively, you can copy the Ledger wallet files to the same directory as `monero-wallet-cli`.
 
 5. If you have any further questions or need assistance, please leave a comment to the original [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli) answer.
-
-Author: dEBRUYNE
-Secondary scribe: el00ruobuob
