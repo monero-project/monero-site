@@ -33,6 +33,4 @@
 
 La cuenta que acabas de crear fue creada en la RAM, y los archivos digitales ahora son inaccesibles. Si algún adversario se las arregla para de alguna forma obtener los datos, no contarán con la larga contraseña para abrirla. Si necesitas recibir pagos, cuentas con tu dirección pública, y tienes la llave de visualización por si acaso. Si necesitas acceder a tu cuenta, cuentas con la semilla mnemónica (@mnemonic-seed) de 25 palabras, y puedes escribir varias copias de ella, incluyendo una copia fuera de sitio (e.g. una caja de depósito bancaria).
 
-Créditos: Riccardo Spagni
-
 Relacionado:  [Generador de cuenta offline](http://moneroaddress.org/)

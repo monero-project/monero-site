@@ -1,11 +1,43 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Wyszukiwanie węzła
+## Check if your wallet is in advanced mode
+To use a custom remote node, your wallet must be in advanced mode. Simple mode and Simple mode (bootstrap) don't support this feature.
 
-Pierwszą rzeczą jest znalezienie węzła, aby się podłączyć. [Moneroworld.com](https://moneroworld.com/#nodes) posiada dobre materiały służące odnajdywaniu węzłów. Jedną z najprostszych metod jest użycie węzła prowadzonego przez moneroworld, ale oni mają także narzędzie służące do wynajdywania losowych węzłów.
+To check if your wallet is in advanced mode, go to `Settings` > `Info` and see `Wallet mode`. 
 
-## Łączenie się z węzłem przez portfel Graficznego Interfejsu Użytkownika
-Po wpisaniu hasła do portfela pojawi się okienko z opcją użycia niestandardowych ustawień, kliknij na nie. Zostaniesz przeniesiony do strony z ustawieniami w Graficznym Interfejsie Użytkownika. W tym momencie powinieneś zobaczyć dwa okienka tekstowe po prawej stronie etykietki "Adres daemona". W pierwszym okienku (po lewej) wpisz adres węzła, z którym chcesz się połączyć. Adres ten może wyglądać na przykład `node.moneroworld.com` lub jak jakikolwiek adres IP. W mniejszym okienku po prawej stronie wpisz port węzła. Domyślnym portem jest `18081`, ale jeśli używasz losowego węzła, port się zmieni- Port dla node.moneroworld.com to 18089.
+If your wallet is not in Advanced mode, you will have to change it to Advanced mode (see next step).
 
-### Twój ekran powinien wyglądać mniej więcej tak:
-![Node](/img/resources/user-guides/en/remote_node/remote-node-screenshot.png){:width="600px"}
+If your wallet is already in Advanced mode, you can skip the next step.
+
+![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
+
+## Change your wallet to advanced mode
+If your wallet is open, you need to close it first. Go to `Settings` > `Wallet` > `Close this wallet`
+
+![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
+
+The main menu (`Welcome to Monero` screen) will open. At the bottom left, click on `Change wallet mode` button, and on the next page select `Advanced mode`. Next, open your wallet file again.
+
+![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
+
+![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
+
+## Finding a public remote node
+First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources for finding nodes. One of the easiest methods would be to use a public remote node run by moneroworld, but they have a tool for finding random nodes too.
+
+## Configuring your wallet to connect to a custom public remote node
+When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. 
+
+If you don't see this pop up, go to `Settings` > `Node` page.
+
+![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
+
+On this page select `Remote Node`.
+
+In `Address` you should fill the address of the remote node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any IP address. 
+
+In `Port` you should fill the port of the remote node. If a remote node is listed as `node.moneroworld.com:18089`, the address is `node.moneroworld.com` and the port is `18089`. The default port is `18081`, but it can vary depending on the node you are connecting to.
+
+If your remote node requires authentication, you can enter a username in `Daemon username` and a password in `Daemon password`.
+
+Finally, click on `Connect` button and wait for your wallet to connect.

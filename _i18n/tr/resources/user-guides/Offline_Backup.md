@@ -18,7 +18,7 @@
 
 - Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows bootable ISOs normally have a Z: drive or something)
 
-- Don't run the Monero daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account
+- Don't run the Monero @daemon. Instead, using the command line, use monero-wallet-cli to create a new Monero @account
 
 - When prompted for a name, give it any name, it doesn't really matter
 
@@ -32,7 +32,5 @@
 - Switch off the computer, remove the battery if there is one, and leave it physically off for a few hours
 
 The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box).
-
-Credit:  Riccardo Spagni
 
 Related:  [Offline Account Generator](http://moneroaddress.org/)

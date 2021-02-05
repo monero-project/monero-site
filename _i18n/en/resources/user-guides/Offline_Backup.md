@@ -33,6 +33,4 @@
 
 The account you've created was created in RAM, and the digital files are now inaccessible. If some adversary manages to somehow obtain the data, they will lack the long password to open it. If you need to receive payments, you have your public address, and you have the view key if needed. If you need access to it, you have your 25 word @mnemonic-seed, and you can now write out several copies of it, including an offsite copy (e.g. a bank deposit box).
 
-Credit:  Riccardo Spagni
-
 Related:  [Offline Account Generator](http://moneroaddress.org/)
