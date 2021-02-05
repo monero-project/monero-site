@@ -5,7 +5,7 @@ summary: "Optionales Flag, welches zur Identifizierung von Transaktionen an Hän
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-*Anmerkung:* Lange Zahlungs-IDs wurden mit der 0.15-Version entfernt. Es ist nicht möglich, diese weiterhin zu verwenden. Weitere Infos finden sich im dies ankündigenden [Blogpost](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html).
+*Anmerkung:* Lange Zahlungs-IDs wurden mit der 0.15-Version entfernt. Es ist nicht möglich, diese weiterhin zu verwenden. Weitere Infos finden sich im dies ankündigenden [Blogpost]({{ site.baseurl_root }}/2019/06/04/Long-Payment-ID-Deprecation.html).
 
 ### Grundlagen
 
