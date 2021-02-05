@@ -1,56 +1,59 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Étape 1
+### Purpose and Warning
 
-Téléchargez l'amorce actuelle depuis https://downloads.getmonero.org/blockchain.raw ; vous pouvez sauter cette étape si vous importez la chaîne de blocs depuis une autre source.
+Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
 
-### Étape 2
+This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
 
-Trouvez le répertoire de votre portefeuille Monero (le dossier où vous avez extrait votre portefeuille). Par exemple, le mien est :
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+
+### Step 1
+
+Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
+
+### Step 2
+
+Find the path where the Monero software is installed. For example mine is:
 
 `D:\monero-gui-0.10.3.1`
 
-Votre répertoire peut être différent en fonction de l'endroit ou vous avez décidé de télécharger votre portefeuille et de la version de portefeuille Monero que vous utilisez.
+Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
 
-### Étape 3
+### Step 3
 
-Trouvez ke répertoire dans lequel vous avez téléchargé la chaîne de blocs, par exemple le mien était :
+Find the path of your downloaded blockchain for example mine was:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Le votre pourrait être différent selon l'endroit ou vous avez téléchargé la chaîne de blocs.
+Yours might be different depending on where you chose to save the downloaded blockchain.
 
-### Étape 4
+### Step 4
 
-Ouvrez une invite de commande. Vous pouvez le faire en tapant les touches Windows + R, puis en tapant `CMD` dans la fenêtre qui s'affiche.
+Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
 
-### Étape 5
+### Step 5
 
-Vous devez maintenant vous déplacer dans le répertoire de votre portefeuille Monero depuis l'invite de commande (la fenêtre CMD). Pour cela tapez :
+Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
 
-`cd C:\LE\REPERTOIRE\DE\VOTRE\PORTEFEUILLE\MONERO`
+`cd C:\YOUR\MONERO\PATH\HERE`
 
-Cela devrait ressembler à :
+It should look something like:
 
 `cd D:\monero-gui-0.10.3.1`
 
-Si votre portefeuille Monero est sur un autre disque vous devez utiliser `LettreDeLecteur:` par exemple, si votre portefeuille Monero est sur votre disque D, vous devez taper `D:` avant d'utiliser la commande cd.
+If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
 
-### Étape 6
+### Step 6
 
-Maintenant, dans l'invite de commande, tapez :
+Now type in your command prompt window:
 
-`monero-blockchain-import --verify 1 --input-file C:\LE\REPERTOIRE\DE\LA\CHAINE\DE\BLOCS`
+`monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
-Par exemple, je taperais :
+For example I would type :
 
-`monero-blockchain-import --verify 1 --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
+`monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Si vous avez téléchargé la chaîne de blocs depuis une source fiable et réputée, vous pouvez positionner `verify 0` cela réduira le temps nécessaire à la synchronisation de la chaîne de blocs.
+### Step 7
 
-### Étape 7
-
-Après la fin de la synchronisation de la chaîne de blocs vous pouvez ouvrir votre portefeuille Monero normalement. Le fichier blockchain.raw de la chaîne de blocs que vous avez téléchargé peut être supprimé.
-
-
-Auteur : Kee Jefferys
+After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.

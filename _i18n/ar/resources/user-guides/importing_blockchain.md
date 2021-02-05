@@ -1,56 +1,59 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### الخطوه 1
+### Purpose and Warning
 
-قم بتحميل الملف الحالي من https://downloads.getmonero.org/blockchain.raw; يُمكنك تخطي هذه الخُطوه إذا كنت تستورد سلسله الكتل من مصدر آخر.
+Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
 
-### الخطوه 2
+This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
 
-ابحث عن مسار محفظة مونيرو (المجلد حيث قمت باستخراج محفظتك فيه). على سبيل المثال :
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+
+### Step 1
+
+Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
+
+### Step 2
+
+Find the path where the Monero software is installed. For example mine is:
 
 `D:\monero-gui-0.10.3.1`
 
-قد يكون مسارك مختلفًا بُناءً على المكان الذي قررت فيه تنزيل محفظتك وإصدار نسخة المحفظه.
+Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
 
-### الخطوه 3
+### Step 3
 
-أعثر على مسار سلسله الكتل التي تم تنزيلها على سبيل المثال :
+Find the path of your downloaded blockchain for example mine was:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-قد يكون المكان مختلفًا حسب المكان الذي قمت بتنزيل سلسله الكتل به.
+Yours might be different depending on where you chose to save the downloaded blockchain.
 
-### الخطوه 4
+### Step 4
 
-افتح نافذة موجه الأوامر. يمكنك القيام بذلك عن طريق الضغط على مفتاح Windows + R ، ثم كتابه `CMD` في المربع المنبثق
+Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
 
-### الخطوه 5
+### Step 5
 
-الآن تحتاج إلى التنقل باستخدام نافذة CMD إلى مسار محفظة مونيرو. يمكنك القيام بذلك عن طريق كتابة:
+Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
 
-`cd C:\YOUR\MONERO\WALLET\FILE\PATH\HERE`
+`cd C:\YOUR\MONERO\PATH\HERE`
 
-يجب أن يبدو مثل:
+It should look something like:
 
 `cd D:\monero-gui-0.10.3.1`
 
-إذا كانت محفظة مونيرو الخاصة بك موجودة على محرك أقراص آخر ، يمكنك استخدام `DriveLetter:` على سبيل المثال إذا كانت محفظة مونيرو الخاصة بك موجودة على محرك الأقراص D ، قم بإستخدام الأمر `D:` قبل أمر cd
+If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
 
-### الخطوه 6
+### Step 6
 
-الآن اكتب في نافذة موجه الأوامر :
+Now type in your command prompt window:
 
 `monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
-علي سبيل المثال:
+For example I would type :
 
 `monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-إذا قمت بتنزيل سلسله الكتل من مصدر موثوق به فيمكنك تعيين `verify 0` مما يقلل من الوقت اللازم للمزامنة.
+### Step 7
 
-### الخطوه 7
-
-بعد انتهاء سلسله الكتل من المزامنة ، يمكنك فتح محفظة مونيرو بشكل طبيعي. يمكن حذف ملف blockchain.raw الذي تم تنزيله.
-
-
-Author: Kee Jefferys
+After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.
