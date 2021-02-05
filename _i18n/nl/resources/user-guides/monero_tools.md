@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# Monero-tools
-
 Met deze hulpmiddelen kun je informatie vinden over het Monero-netwerk of over je transactiegegevens op de blockchain.
 
 ### [Controleren of een geadresseerde je geld heeft ontvangen](http://xmrtests.llcoins.net/checktx.html)

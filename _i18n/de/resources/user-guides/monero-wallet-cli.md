@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# monero-wallet-cli
-
 `monero-wallet-cli` ist die im Monero-Baum enthaltene Wallet-Software, die als Konsolenprogramm ein Konto verwaltet. Während ein Bitcoin-Wallet sowohl das Konto als auch die Blockchain verwaltet, ist dies bei Monero getrennt: `monerod` ist für die Blockchain, `monero-wallet-cli` für das Konto zuständig.
 
 Wie verschiedene Vorgänge ausgehend von der Benutzeroberfläche des `monero-wallet-cli` - die Befehlszeile - gesteuert werden, wird in dieser Anleitung erklärt. Es wird angenommen, dass du die neueste Version Moneros nutzt und mithilfe anderer Anleitungen bereits ein Konto erstellt hast.

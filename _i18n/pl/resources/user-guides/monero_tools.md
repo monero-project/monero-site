@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# Narzędzia Monero
-
 Poniższe narzędzia mogą zostać użyte w celu zdobycia informacji na temat sieci Monero lub twoich transakcji w łańcuchu bloków.
 
 ### [Sprawdzenie, czy odbiorca otrzymał twój przelew](http://xmrtests.llcoins.net/checktx.html)

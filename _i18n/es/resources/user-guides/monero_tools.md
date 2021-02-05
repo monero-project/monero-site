@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# Herramientas Monero
-
 Estas herramientas pueden ser utilizadas para obtener información acerca de la red de Monero o datos de tu transacción en la blockchain.
 
 ### [Revisar que un receptor ha recibido tus fondos](http://xmrtests.llcoins.net/checktx.html)
