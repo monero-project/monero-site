@@ -2893,6 +2893,10 @@ footer a.white:hover, a.white:focus {
   padding-right: 0.2rem;
 }
 
+.footer-links img.tor {
+  vertical-align: top;
+}
+
 @media only screen and (max-width: 75rem) {
 
 }
