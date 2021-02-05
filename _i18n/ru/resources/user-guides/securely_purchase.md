@@ -1,78 +1,43 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-Это руководство по приобретению и безопасному хранению Monero по состоянию на июнь 2017 года.
+## Step 1: Acquire Monero
+There are multiple ways to acquire Monero: You can mine it, you can exchange services or goods for it, or you can convert other cryptocurrencies and fiat money to XMR. If you choose the latter, the most convenient way to do it is to use an exchange.
 
-#### Шаг 1. Покупка Bitcoin
+There are multiple exchanges supporting Monero. Some are centralized, which usually have great liquidity and fast service, but requires you to provide personal information before starting the trade (KYC). Some are decentralized and don't require any identification, but usually have less volume and can be harder to use. There are also services that allow people to meet and perform a trade without third parties involved.
 
-Существует множество способов приобретения Bitcoin. Двумя относительно надежными компаниями в настоящее время являются Xapo <http://www.xapo.com/> и Coinbase <http://www.coinbase.com/>. Сам процесс включает в себя загрузку ваших персональных данных (данных удостоверения личности государственного образца, паспорта, и т. д.) и занимает приблизительно от 2 до 10 дней (случается, что и больше). Перед совершением крупной закупки следует проверить репутацию продавца на Reddit. Xapo использует телеграфные денежные переводы, а Coinbase — банковские переводы (ACH в USA). Xapo, пожалуй, работает быстрее, чем Coinbase. При этом Coinbase поддерживает проведение небольших «мгновенных» сделок с использованием дебетовых карт. Однако за данную опцию придётся заплатить довольно крупную комиссию. После приобретения Bitcoin его можно конвертировать в Monero.
+An incomplete list of Exchanges that support Monero is on our [Merchants page]({{ site.baseurl }}/community/merchants/#exchanges).
 
-#### Шаг 2. Загрузка и создание бумажного кошелька на безопасном изолированном компьютере
+## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+Download the @paper-wallet generator at: [moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick (Direct link: [https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip)).
 
-Необходимо загрузить генератор бумажных кошельков. Это можно сделать по ссылке: https://moneroaddress.org. После этого генератор следует скопировать на USB-накопитель (прямая ссылка: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip).
+Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system.
 
-Затем необходимо разархивировать и открыть генератор (monero-wallet-generator.html) в веб-браузере на изолированном компьютере, который либо до этого не использовался, либо на который установлена только ОС.
+Your paper wallet will have four important items:
 
-Бумажный кошелек должен иметь четыре важных элемента.
+- Monero Public @Address: The public address is used to receive funds to the @wallet. You give this to anyone who will be sending funds to your wallet.
 
-Публичный адрес Monero
-убличный адрес используется для получения средств на кошелек. Его можно передать любому лицу, собирающемуся отправить вам средства.
+- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date.
 
-Мнемоническая фраза Monero
-Мнемоническая фраза представляет собой легко читаемый человеком способ обеспечения безопасности целого кошелька. Её будет достаточно для восстановления кошелька в будущем.
+- Monero @Spend-Key: The private spend key is used to send funds from the wallet.
 
-Приватный ключ траты Monero
-Приватный ключ траты используется для перевода средств с кошелька.
+- Monero @View-Key: The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
 
-Приватный ключ просмотра Monero
-Приватный ключ просмотра необходим для наблюдения за входящими на кошелек транзакциями. Обычно он используется для настройки кошелька формата «view-only», который позволяет только просматривать входящие в блокчейн транзакции в режиме реального времени по мере того, как они отправляются на холодный кошелёк.
+At this point you have many options. You can print the wallet on paper, save it as a PDF or text on a USB stick, burn it to CD/DVD, etc. Most likely you will want at least two or three copies, stored securely in different locations. If storing digitally, encrypt everything with a strong password.  If storing on paper, do not show the wallet to anyone else who can memorize your 25 word key, or take a picture of the wallet without your permission.  Sending someone a picture of the wallet is the same as giving away all of your funds.
 
-На данном этапе у пользователя имеется множество опций. Можно создать бумажный кошелек, сохранить его в формате PDF или в текстовом формате на USB-носителе, CD/DVD диске и т. д. Скорее всего, потребуется не менее двух-трёх копий, которые будет можно хранить в безопасности в разных местах. При хранении на цифровых носителях требуется защитить их надёжным паролем. При хранении на бумаге не следует показывать кошелёк лицам, способным либо запомнить ваш ключ, состоящий из 25 слов, либо сфотографировать его без вашего разрешения. Отправка фотографии кошелька третьим лицам может означать потерю всех ваших средств.
+Whichever method you chose, be sure there's no copy of the Monero wallet left over on the device you used. You may need to securely delete the Monero wallet if you saved it to a disk, or make sure your printer does not save a copy in memory.
 
-Какой бы способ вы не выбрали, следует убедиться в том, что на устройстве, которое было использовано, не осталось ни одной копии кошелька Monero. Вам может потребоваться полное удаление кошелька, если вы сохранили его на диске, а также убедиться в том, что ваш принтер не сохранил каких-либо копий в памяти.
+*If you lose access to your Monero paper wallet the Monero will not be available to you or anyone else, ever. You wont be able to recover them!*
 
-*При потере доступа к вашему бумажному кошельку Monero ни вы, ни кто-либо другой не сможет когда-нибудь снова получить его. Восстановить кошелёк вы уже никогда не сможете!
+#### Side Note
+Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
+Download the html page and place it on your airgapped computer. Check the part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a decent password. Thanks manicminer5.
 
-#### Сноска на полях
-Опция шифрования мнемонической фразы XMR:
-https://xmr.llcoins.net/
-Загрузите html-страницу и разместите ее на изолированном компьютере. Далее выберите Encrypt/Decrypt Mnemonic Seed [Зашифровать/расшифровать мнемоническую фразу] и убедитесь, что используете CN Add с надёжным паролем. Спасибо пользователю manicminer5.
+## Step 3: Send your Moneroj to the paper wallet
+Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
 
+#### Notes and How to Verify Funds
+Because the Monero blockchain is private and untraceable, you won't be able to lookup your Monero Public Address and confirm that the funds have arrived like you might with Bitcoin. This is good for privacy, but bad for convenience.
 
+To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet. This is where that view-key comes in. To create a view-only wallet see the entry: [View Only Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)
 
-#### Шаг 3. Перевод Bitcoin в Monero и отправка на бумажный кошелек Monero
-
-Сядьте за компьютер с подключением к интернету и перейдите по адресу www.shapeshift.io. Выберите раздел Deposit Bitcoin [Внести Bitcoin] и Receive Monero [Получить Monero] (и побыстрее).
-
-Нажмите Continue [Продолжить].
-
-Your Monero Address [Адрес Monero] (публичный адрес Monero вашего бумажного кошелька)
-Введите публичный адрес Monero вашего бумажного кошелька в поле Your Monero Address (Ваш адрес Monero). Хотя, стоп! Ведь если ваш публичный адрес находится на изолированном компьютере (верно же?), вы не сможете скопировать и вставить что бы то ни было… Тогда либо перепишите его от руки, либо придется взять чистый USB-накопитель и скопировать на него публичный адрес.
-
-Refund Address [Адрес возмещения] (публичный адрес Bitcoin, на который вы можете получать средства)
-Введите ваш адрес Bitcoin, на который будут возвращены средства при возникновении каких-либо проблем с транзакцией. Очень важно указать публичный адрес Bitcoin, который вы либо полностью контролируете, либо на который вы сможете получить средства. В случае с Xapo и Coinbase он будет называться Receive Address [Адрес получения] и может периодически меняться.
-
-Payment ID [Идентификатор платежа]
-При отправке средств на принадлежащий вам кошелек Monero или бумажный кошелек Monero данное поле следует оставить незаполненным.
-
-Согласитесь с условиями и переместите слайдер до поля "Reusable Address" (Многоразовый адрес).  
-
-Нажмите "Start Transaction" [Начать транзакцию].
-
-Deposit Address [Адрес депозита] (публичный адрес Bitcoin обменника Shapeshift.io, предназначенный исключительно для получения средств)
-Скопируйте адрес депозита из появившегося всплывающего окна в буфер обмена (используя клавиши Ctrl+C или через меню: Правка–Копировать). По этому адресу произойдёт отправка Bitcoin из Xapo / Coinbase в Shapeshift.io.
-
-Теперь необходимо вернуться в свою учётную запись Xapo или Circle и найти кнопку Transfer [Перевести] или Send [Отправить]. Следует вставить адрес депозита Bitcoin в поле Destination [Адресат] и ввести сумму Bitcoin, которую требуется перевести в Monero. Сумма должна находиться в пределах минимального и максимального депозита, определяемого Shapeshift.io. После этого можно нажать Send (Отправить) и, в случае необходимости, подтвердить транзакцию.
-
-После начала передачи через Xapo / Coinbase произойдёт задержка, связанная с вводом транзакции в блокчейн Bitcoin и ожиданием подтверждения. Это может занять от нескольких минут до нескольких часов. Факт отправки платежа можно проверить через адрес депозита Shapeshift.io на blockchain.info. Здесь должна отобразиться ваша транзакция Shapeshift.io.
-
-После подтверждения транзакции Shapeshift.io начнёт обмен Bitcoin (BTC) на Monero (XMR) через одну из бирж, и по завершении обмена отправит Monero на адрес вашего холодного бумажного кошелька! Это также может занять от нескольких минут до нескольких часов. В случае возникновения проблем следует обратиться в Shapeshift.io. У них хорошая служба поддержки.
-
-Когда на веб-странице Shapehift.io появится информация, подтверждающая завершение транзакции, Monero уже будут в вашем бумажном кошельке!
-
-
-#### Примечания и способы верификации средств
-Ввиду того, что блокчейн Monero анонимен и не допускает отслеживания транзакций, вы не сможете при просмотре вашего публичного адреса Monero удостовериться в получении средств, как можно было бы сделать в случае с Bitcoin. Это хорошо с точки зрения анонимности, но плохо с точки зрения создаваемых неудобств.
-
-Чтобы безопасно проверить получение средств на кошелёк, необходимо установить кошелек, предназначенный исключительно для просмотра (view-only). Здесь пригодится ключ просмотра. Для создания такого кошелька ознакомьтесь с: [Кошелек только для просмотра]({{site.baseurl}}/resources/user-guides/view_only.html)
-
-Для подтверждения того, что средства *по-прежнему находятся* вашем кошельке и не были потрачены, требуется создать холодный кошелек при помощи вашего мнемонического ключа (для всех ваших средств) на изолированном компьютере с актуальной копией блокчейна Monero. После завершения в целях безопасности придётся либо стереть кошелек, либо подключить его к Интернету, после чего он станет горячим кошельком.
+To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet or connect it to the internet and it becomes a Hot Wallet.

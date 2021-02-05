@@ -1,84 +1,43 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## كيفية شراء مونيرو وتخزينه بأمان.
+## Step 1: Acquire Monero
+There are multiple ways to acquire Monero: You can mine it, you can exchange services or goods for it, or you can convert other cryptocurrencies and fiat money to XMR. If you choose the latter, the most convenient way to do it is to use an exchange.
 
-هذا دليل لشراء وتخزين مونيرو بشكل آمن اعتبارًا من يونيو 2017.
+There are multiple exchanges supporting Monero. Some are centralized, which usually have great liquidity and fast service, but requires you to provide personal information before starting the trade (KYC). Some are decentralized and don't require any identification, but usually have less volume and can be harder to use. There are also services that allow people to meet and perform a trade without third parties involved.
 
-#### الخطوه 1: شراء بيتكوين
+An incomplete list of Exchanges that support Monero is on our [Merchants page]({{ site.baseurl }}/community/merchants/#exchanges).
 
-هناك العديد من الطرق لشراء البيتكوين. أولاً في البلاد الغربيه هُناك شركتان شبه موثوقتان في هذا الوقت هما Xapo <http://www.xapo.com/> و Coinbase <http://www.coinbase.com/>. ستشمل العملية تحميل هويتك الشخصية (هوية الدولة ، جواز السفر ، وما إلى ذلك) وستستغرق من يومين إلى 10 أيام (أو أكثر). تحقق من سمعتهما على موقع Reddit قبل إجراء عملية شراء كبيرة. يستخدم Xapo حوالة مصرفية و Coinbase يستخدم التحويل المصرفي (ACH في الولايات المتحدة الأمريكية). Xapo أسرع من Coinbase. كما يسمح Coinbase للشراء "الفوري" للكميات الصغيره عبر بطاقة الخصم لكنه يضيف رسومًا كبيرة لهذا الخيار. بمجرد شراء بيتكوين ، فأنت على استعداد لتحويله إلى مونيرو!
+## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+Download the @paper-wallet generator at: [moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick (Direct link: [https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip)).
 
-أما في الدول العربيه فأفضل خيار هو موقع localbitcoins . والوسطاء المعتمدين علي موقع ترايدنت.(إستخدم هذه المصادر علي مسئوليتك الشخصيه)
+Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system.
 
-#### الخطوه 2: تحميل وإنشاء محفظه ورقيه علي جهاز كمبيوتر آمن.
+Your paper wallet will have four important items:
 
-قم بتنزيل مولد المحفظة الورقيه من: https://moneroaddress.org وانسخه إلى USB (الرابط المباشر: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip).
+- Monero Public @Address: The public address is used to receive funds to the @wallet. You give this to anyone who will be sending funds to your wallet.
 
-قم بفك ضغط وفتح مولد المحفظة الورقيه (monero-wallet-generator.html) في مستعرض ويب علي نسخه نظام تشغيل آمنه تم تنزيلها حديثاً.
+- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date.
 
-ستحتوي محفظتك الورقية على أربعة عناصر مهمة:
+- Monero @Spend-Key: The private spend key is used to send funds from the wallet.
 
-Monero Public Address
-يُستخدم العنوان العام لتلقي الأموال إلى المحفظة. أنت تُعطي هذا العنوان لأي شخص ليُرسل الأموال إلى محفظتك.
+- Monero @View-Key: The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
 
-Monero Mnemonic Seed
-طريقة تخزين المحفظة بطريقه سهله على البشر. هذا هو كل ما تحتاجه لاستعادة محفظتك في وقت لاحق.
+At this point you have many options. You can print the wallet on paper, save it as a PDF or text on a USB stick, burn it to CD/DVD, etc. Most likely you will want at least two or three copies, stored securely in different locations. If storing digitally, encrypt everything with a strong password.  If storing on paper, do not show the wallet to anyone else who can memorize your 25 word key, or take a picture of the wallet without your permission.  Sending someone a picture of the wallet is the same as giving away all of your funds.
 
-Monero Private Spend Key
-يتم استخدام مفتاح الإنفاق الخاص لإرسال الأموال من المحفظة.
+Whichever method you chose, be sure there's no copy of the Monero wallet left over on the device you used. You may need to securely delete the Monero wallet if you saved it to a disk, or make sure your printer does not save a copy in memory.
 
-Monero Private View Key
-مفتاح العرض الخاص يستخدم لعرض المعاملات التي تدخل إلى المحفظة. عادة ما يتم استخدام هذا المفتاح لإنشاء محفظة رؤيه فقط والتي يمكن أن ترى المعاملات الواردة مباشرة على سلسله الكتل بدون إمكانيه إنفاقها.
+*If you lose access to your Monero paper wallet the Monero will not be available to you or anyone else, ever. You wont be able to recover them!*
 
-عند هذه النقطة لديك العديد من الخيارات. يمكنك طباعة المحفظة على ورقه او حفظها كملف PDF أو علي USB او حرقها على CD / DVD ، وما إلى ذلك. على الأرجح ستحتاج على الأقل إلى نسختين أو ثلاث مخزنة بشكل آمن في مواقع مختلفة. في حالة التخزين الرقمي ، قم بتشفير كل شيء بكلمة مرور قوية. إذا كنت ستقوم بالتخزين على ورقه ، لا تعرض المحفظة لأي شخص آخر يمكنه حفظ مفتاحك المكون من 25 كلمة ، أو التقاط صورة للمحفظة دون إذنك. إن إرسال شخص ما صورة للمحفظة يعتبر كإعطائه كل أموالك.
+#### Side Note
+Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
+Download the html page and place it on your airgapped computer. Check the part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a decent password. Thanks manicminer5.
 
-أيًا كانت الطريقة التي اخترتها ، تأكد من عدم وجود نسخة من محفظة مونيرو متبقية على الجهاز الذي استخدمته. قد تحتاج إلى حذف محفظة مونيرو بأمان إذا قمت بحفظها على قرص أو تأكد من عدم قيام الطابعة بحفظ نسخة في الذاكرة.
+## Step 3: Send your Moneroj to the paper wallet
+Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
 
-* إذا فقدت إمكانية الوصول إلى محفظة مونيرو الورقية ، فلن تتمكن أنت أو أي شخص آخر من إستعادتها.
+#### Notes and How to Verify Funds
+Because the Monero blockchain is private and untraceable, you won't be able to lookup your Monero Public Address and confirm that the funds have arrived like you might with Bitcoin. This is good for privacy, but bad for convenience.
 
-#### ملحوظه
-خيار لتشفير كلمات الإستعاده الخاصه بك:
-https://xmr.llcoins.net/
-قم بتحميل صفحه الـHTML ووضعها علي جهاز عير متصل بالإنترنت. قم بإختيار "Encrypt/Decrypt Mnemonic Seed" وتأكد من إستخدام "CN Add" مع كلمه سر جيّده.
+To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet. This is where that view-key comes in. To create a view-only wallet see the entry: [View Only Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)
 
-
-
-#### خطوه 3: حوّل البتكوين إلي مونيرو وإرسله إلي محفظتك الورقيه
-
-علي الحاسوب المتصل بالإنترنت لديك انتقل إلى www.shapeshift.io. اختر "Deposit Bitcoin" و "Receive Monero" (سريع).
-
-إضغط إستمرار.
-
-Your Monero Address (عنوان مونيرو العام في محفظة مونيرو الورقيه الخاصة بك)
-إلصق عنوان مونيرو العام من محفتظ الورقيه في "Your Monero Address". ولكن لأن عنوان مونيرو الخاص بك موجود علي جهاز غير متصل بالإنترنت لا يمكنك النسخ واللصق لذلك قم بنسخه يدويا أو إستخدم USB فارغ وقم بنسخ العنوان من خلاله.
-
-Refund Address (عنوان البيتكوين الخاص بك)
-قم بإدخال عنوان بيتكوين خاص بك حتي يتم رد الأموال إليه في حاله وجود مشكله في المعامله. من المهم جداً إدخال عنوان بيتكوين يمكنك التحكم به وإستقبال الأموال عليه. لاحظ أن في coinbase و xapo يتغير هذا العنوان بشكل دوري.
-
-Payment ID
-أترك حقل هويه المعامله فارغا إذا كنت تُرسل إلي محفظه مونيرو خاصه بك . ( إذا كنت تستخدم منصه تداول يجب إدخال هويه المعامله حتي لا تضيع أموالك)
-
-وافق علي الشروط وقم بتحديد خيار "Reusable Address".
-
-إضغط "Start Transaction".
-
-Deposit Address (عنوان بيتكوين من موقع Shapeshift لإستلام الأموال منك)
-قم بنسخ هذا العنوان, ستقوم بإرسال البيتكوين إليه.
-
-قم بإرسال البيتكوين ويرجي ملاحظه أن تكون الكميه أكبر من اقل كميه وأقل من أكبر كميه محدده من قبل موقع Shapeshift.
-
-بعد إرسال البتكوين سيكون هُناك تأخير لدقائق أو ساعات إلي أن يتم تأكيد المعامله . يمكنك مُتابعه عنوان الإيداع علي موقع blockchain.info للتاكد من تأكيد المعامله.
-
-بعد تأكيد معامله البتكوين سيقوم موقع shapeshift بتحويل البتكوين إلي مونيرو علي أحد منصات التداول وحينما يتم التحويل سيقوم بإرسال المونيرو علي عنوانك, ربما يأخذ هذا بضع دقائق أو ساعات إذا حدثت أي مشكله أو تأخير قم بالتواصل مع فريق دعم موقع shapeshift.
-
-حينما يُظهر موقع shapeshift أن المعامله تمت بنجاح يعني أن المونيرو قد وصل حسابك بالفعل!
-
-
-#### ملاحظات وكيف يمكنك التأكد من المعامله
-لأن سلسله كتل مونيرو خاصه ولا يمكن تتبعها لن يمكنك البحث بإستخدام عنوان مونيرو الخاص بك والتأكد من وصول الأموال كما في البتكوين. هذه الخاصيه جيده للخصوصيه لكنها ليست سهله التأكيد كما في البتكوين.
-
-للتأكد من وصول الأموال لك سيتحتم عليك إنشاء محفظه رؤيه فقط بإستخدام مفتاح الرؤيه الخاص بمحفظتك , لإنشاء محفظه رؤيه أنظر : [View Only Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)
-
-
-
-
+To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet or connect it to the internet and it becomes a Hot Wallet.
