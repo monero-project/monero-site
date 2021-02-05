@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Restoring from keys
-
 Restoring a wallet from private keys is pretty simple. If you have the necessary information, with this guide you can completely restore your wallet. Note: you do NOT have to have your password to restore from keys.
 
 You need to have 3 pieces of data from your wallet, or your .keys file which holds this info and the password to decrypt it. The 3 wallet components that you need are:
@@ -13,7 +11,7 @@ You need to have 3 pieces of data from your wallet, or your .keys file which hol
 
 #### CLI
 
-Run the wallet command:
+Then run the wallet command:
 
 `./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`
 
@@ -29,7 +27,7 @@ Launch `monero-wallet-gui`. If this is the first time you launched it go to the 
 
 ![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
 
-Select your appropriate language `Italiano`:
+Select your appropriate language `English(US)`:
 
 ![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
 

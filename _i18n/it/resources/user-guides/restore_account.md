@@ -28,7 +28,7 @@ Lauch `monero-wallet-gui`. If this is the first time you launched it go to the n
 
 ![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)
 
-Select your appropriate language `Italiano`:
+Select your appropriate language `English(US)`:
 
 ![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)
 
@@ -44,7 +44,7 @@ On the next page, give your wallet a strong password and confirm it before click
 
 ![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
-Specify your daemon settings and click the `Right` arrow:
+Specify your @daemon settings and click the `Right` arrow:
 
 ![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 

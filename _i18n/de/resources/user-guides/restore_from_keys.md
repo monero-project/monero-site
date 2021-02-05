@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Wiederherstellung durch Schlüssel
-
 Die Wiederherstellung eines Wallets durch private Schlüssel ist ziemlich einfach. Wenn du die notwendigen Angaben hast, kannst du dein Wallet mit dieser Anleitung komplett wiederherstellen. Zur Info: Du benötigst NICHT dein Passwort, um dein Wallet durch die Schlüssel wiederherzustellen.
 
 Du brauchst drei Angaben deines Wallets oder alternativ deine ".keys"-Dateien, welche sowohl diese Infos wie auch das Passwort zum Entschlüsseln enthalten. Die drei benötigten Bestandteile des Wallets sind:

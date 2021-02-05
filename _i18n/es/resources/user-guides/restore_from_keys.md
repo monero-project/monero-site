@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Restaurar desde claves
-
 Restaurar un monedero desde las claves privadas es muy simple. Si cuentas con la información necesaria, con esta guía puedes restaurar tu monedero completamente. Nota: no necesitas tener tu contraseña para restaurar desde claves privadas.
 
 Necesitas tener 3 piezas de información de tu monedero, o tu archivo .keys el cual guarda esta información y la contraseña para des-encriptar. Los 3 componentes de tu monedero que necesitas son:

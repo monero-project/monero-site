@@ -44,7 +44,7 @@ On the next page, give your wallet a strong password and confirm it before click
 
 ![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
-Specify your daemon settings and click the `Right` arrow:
+Specify your @daemon settings and click the `Right` arrow:
 
 ![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 

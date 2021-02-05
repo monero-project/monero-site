@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Restoring from keys
-
 Restaurer un portefeuille à partir de la clef privé est très simple. Si vous avez les informations nécessaire, avec ce guide vous pourrez totalement restaurer votre portefeuille. Notez : vous n'avez pas besoin de connaître votre mot de passe pour restaurer depuis la clef.
 
 Vous avez besoin de trois données pour restaurer votre portefeuille, soit vos fichiers .keys qui contiennent ces informations ainsi que le mot de passe pour les déchiffrer. Les trois composant du portefeuille dont vous avez besoin sont :
