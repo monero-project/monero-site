@@ -91,6 +91,7 @@ permalink: /get-started/contributing/index.html
                         <div class="col-xs-12">
                             <h3>{% t contributing.supportdev %}</h3>
                             <p>{% t contributing.supportdev_p %}</p>
+                            <p>{% t contributing.supportdev_p2 %} <a href="https://www.openhub.net/p/monero/contributors/summary">{% t contributing.supportdev_link %}</a>.</p>
                         </div>
                     </div>
                     <div class="row start-xs">

@@ -366,6 +366,8 @@ contributing:
   donate-other_para2: for alternative means of donating or if you would like to become a sponsor for the Monero Project.
   supportdev: Support the developers
   supportdev_p: The developers working on Monero are mostly indepentent volunteers, but some of them may be funded through CCS proposals. If you wish to support their efforts by donating some XMRs, consider contacting them personally or using tipping services.
+  supportdev_p2: You can find an overview of the people who directly contribute, or have contributed, to the Monero repositories (along with other useful statistics) on
+  supportdev_link: Monero's OpenHub page
   sponsor: Sponsorships
   sponsor_p: You can also support Monero through a sponsorship program. See the dedicated 
   sponsor_link: Sponsorships page
