@@ -344,7 +344,7 @@ contributing:
   bug: "Bug and vulnerability hunting: Monero is listed on Hackerone and developers are asked to responsibly disclose bugs and vulnerabilities. See"
   discl: The Monero Project Vulnerability Response Process.
   develop_descr: >
-    This list only includes the tools stewarded by the core team, but the Monero ecosystem is much more vaste. People can contribute to the development of libraries, services, documentation, graphics, etc. The list is virtually infinite. Contact or join the workgroup more affine to your way of contributing.
+    This list only includes the tools stewarded by the core team, but the Monero ecosystem is much more vast. People can contribute to the development of libraries, services, documentation, graphics, etc. The list is virtually infinite. Contact or join the workgroup more affine to your way of contributing.
   develop_wg: See the Monero Workgroups.
   full-node: Run a Node
   full-node_p: An easy and effective way to help the Monero network is to run a @node. Nodes ensure the network keeps running safe and decentralized. A simple fully synchronized node is enough to help the network, but if you want to go out of your way, you could run an open @remote-node, to allow other people to connect to it.
@@ -358,7 +358,7 @@ contributing:
   ccs_p: Monero utilizes a community crowdfunding system whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
   ccsbutton: Go the the CCS
   donate: Donate
-  donate_p: Donation to the general fund are used to pay the salary of core's assistant Rehrar and in case of emergencies or need. Infrastructure costs are currently covered by sponsors.
+  donate_p: Donations to the general fund are used to pay the salary of core's assistant Rehrar and in case of emergencies or need. Infrastructure costs are currently covered by sponsors.
   genfund: General Fund
   genfund_p: "You can donate both Monero and Bitcoin:"
   donate-other: Other
