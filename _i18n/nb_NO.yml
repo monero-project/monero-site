@@ -2,9 +2,6 @@ global:
   date: '%Y/%m/%d'
   tagsmeta: Alle Monero-bloggartikler som er emneknagget
   lang_tag: '@lang_tag_no'
-  moreinfo: Mer informasjon
-  upgrade: For å fortsette å bruke Monero, må du sørge for at programvaren din er
-    oppdatert med nettverksoppgraderingen datert 30. november.
   outdatedVersion: den engelske versjonen
   outdatedMin: Denne siden har blitt oppdatert etter den ble oversatt. Du kan bruke
     denne versjonen, men den kan være ufullstendig. Bruk
@@ -54,7 +51,6 @@ moneropedia:
     fungibility: Fungibilitet
     fluffyblocks: Luftige blokker
     encryption: Kryptering
-    destination: Destinasjon
     denominations: Benevnelser
     cryptocurrency: Kryptovaluta
     consensus: Konsensus
@@ -68,14 +64,12 @@ moneropedia:
     atomic-units: Atomiske enheter
     airgap: Luftvegg
     address: Adresse
-    address-book: Adressebok
     account: Konto
     daemon: Daemon
   add_new_text2: eller sende inn endringer via en trekkforespørsel
-  add_new_link: åpne en sak på GitLab-arkivet på denne nettsiden
+  add_new_link: åpne en sak i GitHub-arkivet på denne nettsiden
   add_new_text1: Hvis det er en oppføring som du ønsker å endre eller at skal legges
     til, kan du
-  add_new_button: Legg til en ny oppføring
   back: Tilbake til Moneropedia
   description: "Terminologien rundt Monero kan være veldig kompleks og teknisk. Moneropedia\
     \ er et verktøy som er opprettet av Monero-samfunnet for å gi en enkel forklaring\
@@ -343,7 +337,7 @@ developer-guides:
   walletrpc_descr: monero-wallet-rpc-samtaler. Inkluderer inndata, utdata og eksempler.
     På engelsk.
   walletrpc: Wallet-RPC-dokumentasjon
-  daemonrpc_descr: RPC-samtaler for daemon. Inkluderer inndata, utdata og eksempler.
+  daemonrpc_descr: RPC-anrop for daemon. Inkluderer inndata, utdata og eksempler.
     På engelsk.
   rpc: RPC-dokumentasjon
   outdated: Metoder legges til / fjernes / oppdateres ofte og er ikke nødvendigvis
@@ -482,7 +476,6 @@ user-guides:
   tor_wallet: Å koble din lokale lommebok til din egen daemon over Tor
   multisig-messaging-system: Multisig-transaksjoner med MMS- og CLI-lommeboken
   ledger-wallet-cli: Hvordan å generere en ledger Monero-lommebok med CLI-en (monero-wallet-cli)
-  nicehash: Hvordan å utvinne Monero XMR uten utvinningsutstyr
   restore-from-keys: Gjenoppretting av lommebok fra nøkler
   prove-payment: Hvordan å bevise en betaling
   view-only: Hvordan å lage en visningslommebok
@@ -507,6 +500,7 @@ user-guides:
   general: Generelt
   guiguide: Veiledning for Monero GUI-lommeboken
   node-i2pzero: Kjør en Monero-node via I2P eller I2P-zero
+  tailsguide: Sett opp en lommebok (ved å bruke en ekstern node) på Tails
 what-is-monero:
   grassroots_para1: Over
   videos: Monero-videoer (engelsk)
@@ -788,31 +782,28 @@ faq:
     osv. eller andre kryptovaluta. Noen krever KYC (identifikasjonsbevis) og andre
     ikke, som desentraliserte børser. På denne nettsiden finner du en liste over børser
     hvor man kan kjøpe og selge Monero (XMR):'
+  aimporting: "Ja, det kan du, men du bør antagelig la være. Å importere en ekstern\
+    \ blokkjede er veldig ressurskrevende, og medfører at du må stole på opphavet\
+    \ som gir deg den. Det er vanligvis raskere å laste den ned på en normal måte:\
+    \ Kjør en node og la den synkroniseres med de andre nodene i nettverket. Hvis\
+    \ du virkelig trenger å importere en ekstern blokkjede, kan du laste en ned i\
+    \ <a href=\"{{ site.baseurl }}/downloads/#blockchain\">«Nedlastinger»-delen</a>\
+    \ på denne nettsiden. Følg veiledningen nedenfor hvis du bruker Windows. Hvis\
+    \ du er Linux-bruker, kan du bruke verktøyet «monero-blockchain-import», som er\
+    \ å finne i arkivet når du laster ned GUI- eller CLI-lommebøkene. Start synkroniseringen\
+    \ av den importerte blokkjeden med denne kommandoen: «monero-blockchain-import\
+    \ --input-file blockchain.raw».\n"
+  qimporting: Kan jeg importere blokkjeden manuelt?
 contributing:
-  mine_para1: Utvinning sikrer at Monero-nettverket forblir desentralisert og sikkert.
-    Bakgrunnsutvinning kan aktiveres i Moneros grafiske bruker- og kommandolinjegrensesnitt.
-    Ytterligere ressurser for utvinning kan du se
   donate: Doner
   donate-other_para2: for alternative måter å donere på eller om du ønsker å bli sponsor
     for Monero-prosjektet.
   donate-other_para1: Send en e-post til
   donate-other: Annet
-  donate-btc_para: Doneringer kan sendes til
-  donate-btc: Donering av BTC
-  or: eller
   donate-xmr_para: Donasjoner kan sendes til
-  donate-xmr: Donering av Monero
-  donate_para2: sponsorstøtte.
-  donate_para1: Pågående utvikling støttes av donasjoner og
   mine_para2: her.
   mine: Utvinn
-  full-node_para: Kjør monerod med port 18080 åpen. Å kjøre enn fullstendig node sikrer
-    maksimalt personvern når transaksjoner med Monero foretas. Det forbedrer også
-    distribusjonen av blokkjeden til nye brukere.
   full-node: Kjør en fullstendig node
-  develop_para4: saker.
-  develop_para3: og utestående
-  develop_para2: arkivene
   develop_para1: Monero er i hovedsak skrevet i C++. I og med at det er et desentralisert
     prosjekt, er alle velkomne til å legge til eller foreta endringer til eksisterende
     kode. Trekkforespørsler flettes på grunnlag av konsensus fra samfunnet. Se
@@ -871,9 +862,9 @@ accepting:
     \ transaksjoner til denne adressen som med Bitcoin. En venn kan sende transaksjoner\
     \ til den samme adressen uten redusert personvern.\n"
   cliinstructions: Bruksanvisning for CLI-en
-  guiol4: Vent til betalingen har ankommet og har fått nok bekreftelser (Jo flere
-    bekreftelser, jo tryggere er transaksjonen. Du trenger minst 10 bekreftelser før
-    du kan bruke midlene).
+  guiol4: Vent til betalingen har ankommet og fått nok bekreftelser (jo flere bekreftelser,
+    jo tryggere er transaksjonen. Du trenger minst 10 bekreftelser før du kan bruke
+    midlene).
   guiol3: Sett inn beløpet du vil motta og del deretter betalings-URL-en eller QR-koden
     med betaleren. Hvis du vil spore betalingen i sanntid, kan du huke av «aktiver
     salgssporing»-valget.
@@ -950,10 +941,10 @@ downloads:
   mobilelight1: Følgende er mobil- eller light-lommebøker som anses som trygge av
     respekterende medlemmer av samfunnet. Hvis det finnes en lommebok som ikke står
     oppført her, kan du be samfunnet om å ta en titt på den. Gå til
-  hardware5: Trezor modell T har hatt støtte for Monero siden versjon 0.14.1.
-  hardware4: integrert Monero i maskinvarelommebøkene sine.
-  hardware3: som for øyeblikket pågår. Også fordi CLI 0.12.1- og GUI 0.12.3-ledgeren
-    har
+  hardware5: Det er støtte for Trezor modell T i Monero CLI- og Monero GUI-lommebøkene.
+  hardware4: Det er støtte for Ledger Nano S og Nano X i Monero CLI-, Monero GUI-
+    og Monerujo-lommebøkene.
+  hardware3: som for øyeblikket pågår.
   hardware2: dedikert maskinvarelommebok (Kastelo)
   hardware1: Monero-samfunnet har finansiert en
   showhash4: 'To veiledninger er tilgjengelige for å veilede deg gjennom verifiseringsprosessen:'
@@ -993,13 +984,6 @@ downloads:
   helpsupport1: 'En veiledning med en forklaring på hver seksjon til lommeboken er
     tilgjengelig:'
   helpsupport: Hjelp og støtte
-  yesissuescli: "På grunn av kompatibilitetsproblemer med glibc, vil ikke denne versjonen\
-    \ kjøre på Ubuntu 16.04 (glibc < 2.25)\n"
-  yesissuesgui: Utgivelse 0.15.0.4 (Linux) ble ved et uhell kompilert uten Trezor-støtte.
-    Monero-brukere på Linux som bruker Trezor tilrådes derfor å vente på neste utgivelse
-    (0.15.0.5) eller å kompilere GUI-en på egenhånd
-  noissues: Denne utgivelsen har ingen kjente, kritiske problemer
-  showissues: Vis kjente problemer for denne utgivelsen
   sourcecode: Kildekode
   currentversion: Gjeldende versjon
   cli_intro: CLI-lommeboken gir deg total kontroll på Monero-noden og midlene dine.
@@ -1045,15 +1029,8 @@ downloads:
   avwarning: Vær oppmerksom på at noen antivirus og brannmurer kan flagge de kjørbare
     filene og arkivene til Monero som skadevare.
 team:
-  developers_para2: OpenHub bidragsside.
-  thanks: En spesiell takk
   mrl: Forskningslab
   community: Samfunn
-  developers_para3: Nedenfor vil du finne noen mennesker som har gjort langt mer enn
-    det som kreves for Monero.
-  developers_para1: Monero-prosjektet har hatt godt over 500 bidragsytere i løpet
-    av prosjektets levetid. For en fullstendig liste, kan du se
-  developers: Utviklere
   core: Kjerne
 hangouts:
   irc_para: Monero-samfunnet benytter mange IRC-kanaler, der hver tjener ulike hensikter.
@@ -1135,10 +1112,16 @@ about:
     går til utvikling. Se den opprinnelige Bitcointalk-tråden
   history: En kort historie
 sponsorships:
-  intro: De følgende selskapene har støttet Monero-prosjektet i dets mål om å bringe
-    økonomisk personvern til verden. Vi kunne ikke ha vært mer takknemlige for bidragene
-    deres. Hvis du ønsker å sponse Monero-prosjektet og bli oppført på denne siden,
-    kan du sende en e-post til dev@getmonero.org.
+  intro: Følgende selskaper støtter Monero-prosjektet i dets mål om å bringe økonomisk
+    personvern til verden. Vi kunne ikke ha vært mer takknemlige for bidragene deres.
+    Hvis du ønsker å sponse Monero-prosjektet og bli oppført på denne siden, kan du
+    sende en e-post til dev@getmonero.org.
+  macstadium: MacStadium sponser en egen Mac Mini som brukes til macOS-relatert utvikling.
+  globee: GloBee sponser Moneros hovednettside-infrastruktur.
+  tari: Tari Labs sponser innholdsleveransenettverket som brukes på denne nettsiden.
+  forknetworking: Fork Networking tilbyr en server som brukes til utvikling.
+  symas: Symas sponser sin teknikkansvarlige, Howard Chu (hyc) for hans arbeid på
+    Monero-kodebasen.
 merchants:
   onion: Onion-adresse (trenger Tor)
   disclaimer: "«Vennligst merk: disse lenkene gjøres tilgjengelig som en bekvemmelighet\
@@ -1200,7 +1183,7 @@ home:
   getcoins_para: Etter du installerer en lommebok, trenger du noen Monero. Det er
     flere måter å oppdrive mynter på, som for eksempel utvinning eller å jobbe i bytte
     mot Monero, men den enkleste måten er å bruke en børs og veksle pengene dine til
-    XMR. Mange børser – sentraliserte og desentralisete – noterer Monero (XMR).
+    XMR. Mange børser – sentraliserte og desentraliserte – noterer Monero (XMR).
   getcoins: Få tak i noen mynter
   choosewallet_para: Det første du må gjøre for å bruke Monero er å opprette en lommebok.
     Besøk nedlastingssiden vår og få lommeboken som er riktig for deg. Monero-lommebøkene
@@ -1225,16 +1208,13 @@ titles:
   about: Om Monero
   merchants: Forhandlere og tjenester
   sponsorships: Sponsing
-  events: Hendelser
   hangouts: Treffsteder
-  team: Monero-teamet
   allposts: Alle blogginnlegg
   downloads: Nedlastinger
   faq: Ofte stilte spørsmål
   mining: Utvinning av Monero
   contributing: Forbedring av Monero
   accepting: Å ta imot Monero
-  using: Å bruke Monero
   whatismonero: Hva er Monero (XMR)?
   index: Hjem
 navigation:
@@ -1244,8 +1224,19 @@ navigation:
   contributing: Bidrag
   mining: Utvinning
   community: Samfunn
-  team: Team
   merchants: Forhandlere
   resources: Ressurser
   about: Om
   mrl: Forskningslab
+accessibility:
+  arrowup: Gå tilbake til toppen av siden
+  cliscreen: Skjermbilde av CLI-lommeboken
+  guiscreen: Skjermbilde av Moneros GUI-lommebok. Den viser lommebokens saldo, en
+    navigasjonsmeny på venstre side og et skjema for innsending av XMR til høyre.
+error:
+  button: Til hjemmesiden
+  title: Siden ble ikke funnet (kanskje den verdsetter personvern)
+footer:
+  source: Kildekode
+  legal: Juridisk
+  feed: RSS-strøm

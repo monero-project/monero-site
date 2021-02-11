@@ -15,29 +15,21 @@ global:
   privacy: Gizlilik
   untranslated: Bu sayfa henüz çevrilmedi. Çevrilmesine yardım etmek isterseniz şunu
     görüntüleyin
-  outdatedMax: Bu sayfa güncel değil. Kullanmanızı tavsiye etmiyoruz. Bunun yerine
-    şunu görüntüleyin
   outdatedVersion: İngilizce sürüm
   outdatedMin: Bu sayfa çeviriden sonra güncellendi. Bu sürümü kullanabilirsiniz,
     ancak eksik olabilir.
-  upgrade: To continue using Monero, make sure your software is up-to-date with the
-    November 30th network upgrade.
-  moreinfo: Daha fazla bilgi
   lang_tag: "@lang_tag_tr"
 
 titles:
   index: Ana Sayfa
   whatismonero: Monero (XMR) Nedir?
-  using: Monero Kullanımı
   accepting: Monero Kabulü
   contributing: Monero'ya Katkıda Bulunulması
   mining: Monero Madenciliği
   faq: SSS
   downloads: İndirmeler
   allposts: Tüm Blog Gönderileri
-  team: Monero Ekibi
   hangouts: Buluşmalar
-  events: Etkinlikler
   sponsorships: Sponsorluklar
   merchants: Satıcılar & Hizmetler
   about: Monero Hakkında
@@ -50,12 +42,6 @@ titles:
   themoneroproject: Monero Projesi
   presskit: Monero Basın Kiti
   legal: Yasal
-  ffs: Forum Fonlama Sistemi
-  ffs-cp: Tamamlanan Öneriler
-  ffs-fr: Fonlama Gerekenler
-  ffs-ideas: Fikirler
-  ffs-ot: Açık Görevler
-  ffs-wip: Devam Eden İşler
   blogbytag: Blog
   library: Kütüphane
 
@@ -66,7 +52,6 @@ navigation:
   contributing: Katkıda Bulunulması
   mining: Madenciliği
   community: Topluluk
-  team: Ekip
   merchants: Satıcılar
   resources: Kaynaklar
   about: Hakkında
@@ -81,51 +66,15 @@ home:
     Monero'yla kendi bankanız siz olursunuz. Başkalarının bakiyenizi göremeyeceğini
     veya aktivitelerinizi takip edemeyeceğini bilerek güvenli şekilde harcayabilirsiniz.
   get_started: Başlangıç
-  why_monero_is_different: Monero'nun farklı olma sebepleri
-  monero_is_secure: Monero güvenlidir
-  monero_is_secure_para: Monero merkeziyetsiz bir kripto-paradır, yani bir kullanıcılar
-    ağınca işletilen güvenli dijital paradır. İşlemler dağıtık uzlaşımla onaylanıp
-    değiştirilemez şekilde blokzincire kaydedilir. Moneronuzun güvende tutulması için
-    üçüncü taraflara güvenilmesi gerekmez.
-  monero_is_private: Monero gizlidir
-  monero_is_private_para: Monero tüm işlemlerin kaynaklarını, miktarlarını ve varış
-    noktalarını gizlemek için halka imzaları, halka gizli işlemleri ve hayalet adresleri
-    kullanır. Monero olağan gizlilikten imtiyaz vermeden merkeziyetsiz bir kriptoparanın
-    tüm faydalarını sağlar.
-  monero_is_untraceable: Monero takip edilemezdir
-  monero_is_untraceable_para: Gönderici ve alıcı adreslerin yanında aktarılan miktarlar
-    da varsayılan şekilde gizlidir. Monero blokzincirindeki işlemler belirli bir kullanıcıya
-    veya gerçek dünya kimliğine bağlanamaz.
-  monero_is_fungible: Monero değiştirilebilirdir
-  monero_is_fungible_para1: Monero
-  monero_is_fungible_para2: değiştirilebilirdir
-  monero_is_fungible_para3: çünkü varsayılan şekilde gizlidir. Monero birimleri önceki
-    işlemlerdeki ilişkilendirmesi sebebiyle satıcı veya borsalarca kara listeye alınamaz.
   downloads: İndirmeler
-  downloads_windows: Windows için Monero
-  downloads_mac: Mac için Monero
-  downloads_linux: Linux için Monero
-  downloads_blockchain: Son Blokzincir
-  different_system: Başka bir işletim sistemi için mi ihtiyacınız var?
-  view_all_downloads: Tüm mevcut indirmeleri burada görüntüleyin.
-  latest_news: Son Haberler
-  more_news: Daha fazla haber
-  moneropedia: Moneropedi
   moneropedia_para: Monero'da kullanılan terimlerin ve kavramların anlamlarına bakmak
     ister misiniz? Burada hem Monero hem de Kovri projelerinden terimlerin ve onların
     anlamlarının alfabetik bir rehberini bulacaksınız.
   moneropedia_button: Moneropedi'yi Oku
-  user_guides: Kullanıcı Rehberleri
-  user_guides_para: Monero olan tüm şeylerin kategorilere ayrıldığı ve bir cüzdan
-    yaratmaktan ağı desteklemeye, hatta bu internet sitesini düzenlemeye kadar her
-    şeyi kapsayan adım adım rehberler.
-  user_guides_button: Kullanıcı rehberlerini oku
   faq: SSS
   faq_para: Yıllar boyunca pek çok soruyla karşılaştık ve kolaylığınız için ayrıntılı
     ve çeşitlendirilmiş bir SSS derledik. Merak etmeyin, eğer sorularınız burada değilse
     her zaman topluluğumuza sorabilirsiniz.
-  faq_button: Cevapları oku
-
 hangouts:
   intro: Monero topluluğu çeşitli ve farklı bireylerden oluşur. Dünya'nın her yerinden
     geliyor olsak da birlikte takılmaktan hoşlandığımız bazı yerler de yok değildir.
@@ -155,10 +104,6 @@ hangouts:
     monero-translations: Monero'nun diğer dillere yerelleştirilmesi.
     monero-hardware: Monero'nuzu güvende tutmak için donanım cüzdanları yapımı.
     monero-site:
-    kovri: Bu kanal Kovri'ye ilişkin her şeyi tartışmak için kullanılır.
-    kovri-dev: Çok sayıdaki katkıda bulunan ve geliştirici buraya Kovri geliştirme
-      şeylerini tartışmak için gelir.
-
 merchants:
   intro1: Her türden satıcı Monero'nun getirdiği finansal gizliliğe değer vermeye
     başlamıştır. Aşağıda malları ve hizmetleri için şu anda Monero kabul ettiğini
@@ -177,15 +122,8 @@ sponsorships:
 
 team:
   core: Çekirdek
-  developers: Geliştiriciler
-  developers_para1: Monero Projesi, projesinin yaşamı boyunca 500'den çok daha fazla
-    geliştiriciye sahip olmuştur. Tam bir liste için ziyaret etmeniz gereken yer
-  developers_para2: OpenHub katkıda bulunanlar sayfasıdır.
-  developers_para3: Aşağıda Monero için sınırları zorlayan bazı bireyleri bulacaksınız.
   community: Topluluk
   mrl: Araştırma Laboratuvarı
-  thanks: Özel Teşekkürler
-
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.
@@ -223,11 +161,6 @@ downloads:
     HTTP RPC and 0MQ interface.
   currentversion: Current Version
   sourcecode: Source Code
-  showissues: Show known issues for this release
-  noissues: This release has no known major issues
-  yesissues: >
-    This release has the following known issues:<br>
-    - Initial sync of the blockchain very slow. Will be fixed with a point release
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
@@ -275,19 +208,7 @@ downloads:
   mobilelight3: page to see where we are.
   installer: Installer
 
-monero-project:
-  kovri: Kovri projesi bir Monero işleminin ne göndericisinin ne de alıcısının IP
-    adreslerinin diğer tarafa veya üçüncü taraf gözlemcilerine (blokzincire) açığa
-    çıkmaması gerekliliği için uçtan-uca şifrelemeyi kullanır. Bu karanlık ağı güçlendiren
-    aynı teknolojiyi, i2p'yi (Görünmez İnternet Protokolü) kullanır. Proje şu anda
-    yoğun, aktif gelişim hâlindedir ve henüz Monero ile entegre edilmemiştir.
-  kovri_button: Kovri İnternet Sayfasını Ziyaret Edin
-  openalias: OpenAlias projesi Monero cüzdan adresleri için herkesin gizliliğinin
-    korunduğundan emin olunacak bir şekilde FQDN'ler (Tam Nitelikli Alan adı, örneğin
-    örnek.openalias.org) sağlayarak kriptopara ödemelerini kolaylaştırır. Proje oldukça
-    ilerlemiştir ve pek çok Monero cüzdanında uygulamaya konmuştur.
-  openalias_button: OpenAlias İnternet Sayfasını Ziyaret Edin
-
+monero-project: {}
 press-kit:
   intro1: Burada, aşağıda Monero sembolünü ve logosunu bulacaksınız. Dilediğiniz boyutu
     seçebilir veya logoyla kendiniz oynamak için .ai dosyasını indirebilirsiniz.
@@ -319,93 +240,18 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
 
-accepting:
-  title: Komut-Satırı Arayüzü için Talimatlar
-  basics: Temel Öğeler
-  basics_para1: Monero alışagelmiş olabileceğiniz diğer @kriptoparalar dan biraz daha
-    farklı çalışır. Bitcoin gibi dijital paralar ve bunların çok sayıdaki türev satıcı
-    ödeme sistemleri genellikle her ödeme veya kullanıcı için yeni bir alıcı @adres
-    i yaratır.
-  basics_para2: Ancak Monero @hayalet-adresler e sahip olduğu için her ödeme veya
-    kullanıcı için ayrı alıcı adreslerine sahip olmaya gerek yoktur ve tek bir @hesap
-    adresi yayımlanabilir. Bunun yerine ödeme alırken bir satıcı ödeme yapacak kişiye
-    bir "ödeme ID"si sağlar.
-  basics_para3: "Bir @ödeme-id si 64 karakter uzunluğunda olan bir onaltılı bir dizidir\
-    \ ve normalde satıcı tarafından rastgele yaratılır. Bir ödeme ID örneği şöyledir:"
-  checking: monero-wallet-cli'da Ödeme Kontrolü
-  checking_para1: |
-    Eğer monero-wallet-cli kullanarak bir ödemeyi kontrol etmek isterseniz kontrol etmek istediğiniz ödeme ID veya ID'lerini takip eden şekilde "payments" komutunu kullanabilirsiniz. Örneğin:
-  checking_para2: Eğer programlanabilir şekilde ödemeleri kontrol etmeniz gerekiyorsa
-    detaylar bir sonraki bölümde yer almaktadır.
-  receiving: Adım Adım Ödeme Almak
-  receiving_list1: Ödeme için bir rastgele 64 karakterlik onaltılı dizi oluşturun
-  receiving_list2: Ödeme ID'sini ve Monero adresini ödemeyi yapmakta olan kişiye iletin
-  receiving_list3: monero-wallet-cli'da "payments" komutunu kullanarak ödemeleri kontrol
-    edin
-  program: Programlanabilir Şekilde Ödeme Kontrolü
-  program_para1: Programlanabilir şekilde ödemeleri kontrol etmek için get_payments
-    veya get_bulk_payments JSON RPC API çağrılarını kullanabilirsiniz.
-  program_para2: bu tek bir ödeme ID'siyle bir payment_id parametresi gerektirir.
-  program_para3: bu tercih edilen yöntemdir ve iki parametre, payment_ids - ödeme
-    ID'lerinin bir JSON dizilimi - ve opsiyonel bir min_block_height - taramanın başlayacağı
-    blok yüksekliği - gerektirir.
-  program_para4: |
-    Dönen verinin bir örneği aşağıdaki gibidir:
-  program_para5: Geri dönen miktarların temel Monero birimlerinde olduğuna, normalde
-    son-kullanıcı uygulamalarında kullanılan gösterim birimlerinde olmadığına dikkat
-    etmek önemlidir. Ayrıca bir işlemin tipik olarak ödeme için gereken toplama eklenecek
-    çoklu çıktısı olduğu için miktarlar tx_hash veya payment_id tarafından gruplanmalı
-    ve birlikte eklenmelidir. Ek olarak çoklu çıktılar aynı miktara sahip olabileceği
-    için tek bir get_bulk_payment çağrısından dönen veriyi filtrelemeyi denememek
-    zaruridir.
-  program_para6: Ödemeleri taramadan önce ek blokların alınıp alınmadığını görmek
-    için daemon RPC API'a (get_info RPC çağrısı) karşı kontrol etmek kullanışlıdır.
-    Tipik olarak alınan bloğu get_bulk_payments'a min_block_height olarak belirterek
-    sadece oradan taramak istersiniz.
-  scanning: Programlanabilir Şekilde Ödeme Taraması
-  scanning_list1: Daemon'dan mevcut blok yüksekliğini alın, sadece son taramamızdan
-    beri arttıysan ilerleyin
-  scanning_list2: get_bulk_payments RPC API çağrısını son taranmış yüksekliğimizle
-    ve sistemimizdeki tüm ödeme ID'lerin listesiyle arayın
-  scanning_list3: Mevcut blok yüksekliğini taranan son yüksekliğimiz olarak depolayın
-  scanning_list4: Zaten almış ve işlemiş olduğumuz işlem sağlamalarına dayanarak kopyaları
-    kaldırın
-
+accepting: {}
 contributing:
   intro: Monero açık kaynak kodlu, topluluk güdümlü bir projedir. Aşağıda projeyi
     desteklemenin birçok yolu tarif edilmiştir.
   network: Ağı Destekleyin
   develop: Geliştirin
-  develop_para1: "Monero öncelikli olarak C++'da yazılmıştır. Merkeziyetsiz bir proje\
-    \ olması sayesinde herkes var olan koda ekleme veya değişiklik yapabilir. İste\
-    \ talepleri topluluk uzlaşımına dayanılarak birleştirilir. Görüntüleyin:"
-  develop_para2: Depolar
-  develop_para3: ve öne çıkan
   develop_para4: sorunlar.
   full-node: Tam Düğüm Çalıştırın
-  full-node_para: Port 18080 açıkken monerod çalıştırın. Bir tam düğüm çalıştırmak
-    Monero'yla işlem yaparken azami gizliliği kesinleştirir. Ayrıca blokzincirin yeni
-    kullanıcılara dağıtımını geliştirir.
   mine: Madencilik Yapın
-  mine_para1: Madencilik Monero ağının merkeziyetsiz ve güvenli kalmasını kesinleştirir.
-    Monero grafiksel kullanıcı arayüzünde ve komut-satırı arayüzünde arka plan madenciliği
-    etkinleştirilebilir. Madencilik hakkındaki ek kaynakları
-  mine_para2: burada görüntüleyebilirsiniz.
   ffs: Forum Fonlama Sistemini Görüntüleyin
-  ffs_para1: Monero projelerin gelişim için önerildiği ve topluluk tarafından fonlandığı
-    bir
-  ffs_para2: forum fonlama sistemi
-  ffs_para3: kullanır. Fonlama emanette tutulur ve programlama kilometre taşları başarıya
-    ulaştıkça geliştiricilere karşılık olarak verilir. Herkes yeni öneriler üretebilir
-    veya mevcut olanları fonlayabilir.
   donate: Bağışla
-  donate_para1: Mevcut gelişimi destekleme araçları bağışlar ve
-  donate_para2: sponsorluklar.
-  donate-xmr: Monero Bağışlama
   donate-xmr_para: "Bağış gönderebileceğiniz adresler şunlardır:"
-  or: ve
-  donate-btc: Bitcoin Bağışlama
-  donate-btc_para: "Bağış gönderebileceğiniz adresler şunlardır:"
   donate-other: Diğer
   donate-other_para1: Alternatif bağış yolları için veya Monero Projesine sponsor
     olmak istiyorsanız
@@ -452,20 +298,6 @@ faq:
   a8: Hayır, Monero'nun sert bir blok boyutu sınırı yoktur. Bunun yerine blok boyutu
     talebe bağlı olarak zamanla artabilir veya azılabilir. Ölçüsüz büyümeyi engellemek
     adına belirli bir büyüme oranıyla sınırlanmıştır.
-  q9: Blokzincir nedir?
-  a9: Blokzincir, Monero ağında tüm işlem tarihçesinin bir kopyasını saklayan bir
-    sistemdir. Her iki dakikada bir en son işlem bilgilerinin olduğu bir blok, blokzincire
-    eklenir. Bu zincir ağa para hesaplarının sahip olduğu miktarı doğrulamasına izin
-    verir ve saldırılara ve merkezileşme çabalarına karşı onu dirençli kılar.
-  q10: Kovri nedir?
-  a10: Kovri C++’da yazılmış olan bir I2P yönelticidir. I2P Tor gibi gizli bir ağdır,
-    ama çeşitli teknik farklılıklara sahiptir. Kovri Monero'dan bağımsız bir projedir,
-    ama Monero’yla ve birkaç başka projeyle birlikte çalışacaktır. Kovri işlem yayınını
-    saklar, böylelikle diğer uçlar işlemleri kimin yarattığını bilmez. Muhalif durumlarda
-    Kovri insanların Monero’nun kullanıldığını öğrenmesini engellemek adına I2P aracılığıyla
-    tüm Monero trafiğini saklamak için kullanılabilir. Kovri şu an alfa aşamasındadır
-    ve Monero’yla tamamen entegre edilmemiştir. Kovri hakkında daha fazla bilgiyi
-    <a href="https://kovri.io">projenin internet sayfası</a>ndan öğrenebilirsiniz.
   q11: Değiştirilebilirlik nedir ve neden önemlidir?
   a11: Değiştirilebilirlik paranın aynı değerdeki iki miktarı arasında hiçbir fark
     olmaması yönündeki basit bir özelliğidir. Eğer iki kişi bir 10’luk ve iki 5’lik
@@ -517,7 +349,6 @@ mining:
   support: Destek
   support_para1: "Şunları görüntüleyin:"
   support_para2: Buluşmalar,
-  support_para3: /r/moneromining (İngilizce)
   support_para4: ve
   pools: Havuzlar
   pools_para1: Güvenilen Monero havuzlarının bir listesi
@@ -528,50 +359,7 @@ mining:
   software: Madencilik Yazılımları
   software_para: Bazı madencilerin geliştirici ücreti olabileceğine dikkate alın.
 
-using:
-  intro: Monero'yla işlem yapmak kolay olabilir. Bu sayfa kullanıcılara bu süreçte
-    rehber olması için tasarlanmıştır.
-  learn: 1. Öğrenin
-  learn_para1: Monero güvenli, gizli ve takip edilemez bir kriptoparadır. Geliştiriciler
-    ve topluluk kendilerini bu değerleri korumaya adamıştır.
-  learn_para2: Monero Nedir
-  learn_para3: sayfasını okuyarak daha fazlasını öğrenin.
-  learn_para4: Kaynak kodu
-  learn_para5: da incelemeye ve tartışmaya açıktır.
-  support: 2. Destek İsteyin
-  support_para1: Bir zorlukla karşılaşırsanız yardımcı olacak büyük ve destekçi bir
-    topluluk var. Daha fazla bilgi için
-  support_para2: Buluşmalar
-  support_para3: sayfasını görüntüleyin.
-  generate: 3. Bir Cüzdan Yaratın
-  generate_para1: Bir Monero cüzdanı kendi fonlarınızı güvenlik altına almak için
-    gereklidir. Mevcut cüzdanların bir listelemesi için
-  generate_para2: İndirmeler sayfasını
-  generate_para3: ziyaret edin.
-  generate_para4: Ev bant aralığınızı etkilemeden bir Monero düğümü çalıştırmanın
-    en kolay yolu bir VPS (Sanal Özel Sunucu) satın almaktadır. Güçlü bir şekilde
-  generate_para5: ’i kullanmanızı tavsiye ediyoruz.
-  generate_para6: kupon koduyla zaten ucuz olan aylık 6$’lık VPS'in yanında indirim
-    alabilirsiniz. Bu kupon kodunu ve/veya
-  generate_para7: işbirlik bağlantımızı
-  generate_para8: kullanmak Monero gelişiminin devam eden fonlanmasına da yardımcı
-    olacaktır.
-  acquire: 4. Monero Elde Edin
-  acquire_para1: Monero bir
-  acquire_para2: borsa
-  acquire_para3: dan itibari para veya diğer kriptoparalarla alınabilir. Monero elde
-    etmenin başka bir yoluysa
-  acquire_para4: madencilik,
-  acquire_para5: yani işlemlerin değiştirilemez şekilde blokzincire kaydedildiği bilgi-sayımsal
-    açıdan karmaşık bir süreçtir.
-  send-receive: 5. Monero Gönderin ve Alın
-  send-receive_para1: Nasıl Monero gönderip alındığını öğrenebileceğiniz
-  send-receive_para2: rehber.
-  transact: 6. Monero’yla İşlem Yapın
-  transact_para1: Monero pek çok mal ve hizmetin alımında kullanılabilir. İşte bir
-    listelemeye ulaşabileceğiniz
-  transact_para2: Satıcılar sayfası.
-
+using: {}
 what-is-monero:
   need-to-know: Bilmeniz gerekenler
   leading: Monero gizliliğe ve sansüre dayanıklı işlemlere odaklanan önde gelen kriptoparadır.
@@ -590,11 +378,6 @@ what-is-monero:
   confidential_para2: Monero değiştirilebilirdir. Karartmanın doğası gereği Monero
     önceki işlemlerde yer alması sebebiyle lekelenemez. Bu, Monero'nun sansür riski
     olmadan her zaman kabul edileceği anlamına gelir.
-  confidential_para3: Kovri Projesi,
-  confidential_para4: ki şu anda gelişim aşamasındadır
-  confidential_para5: ", I2P Görünmez İnternet Projesi düğümleriyle işlemleri nakledecek\
-    \ ve şifreleyecektir. Bu işlemi gerçekleştirenin IP adresini karartacak ve ağ\
-    \ görüntülemesine karşı daha fazla koruma sağlayacak."
   grassroots: Monero Dünya’nın en iyi kriptopara araştırmacılarını ve mühendislik
     yeteneklerini çeken kökleşmiş bir topluluktur.
   grassroots_para1: 30 çekirdek geliştirici dahil,
@@ -665,8 +448,6 @@ developer-guides:
   rpc: RPC Belgelendirmesi
   daemonrpc: Daemon RPC Belgelendirmesi
   walletrpc: Cüzdan RPC Belgelendirmesi
-  soon: Dahası pek yakında...
-
 user-guides:
   general: Genel
   mining: Madencilik
@@ -682,7 +463,6 @@ user-guides:
   verify-windows: İkilileri Windows'da doğrulayın (başlangıç seviyesi)
   mine-on-pool: XMRig ile bir havuzda madencilik yapımı
   solo-mine: GUI ile tek başına madencilik yapımı
-  mine-docker: Docker ve XMRig ile madencilik
   locked-funds: Kilitlenmiş fonlar düzeltilmesi
   restore-account: Hesabınızın geri alımı
   qubes: CLI cüzdan/daemon’ın Qubes + Whonix ile izolasyonu
@@ -691,7 +471,6 @@ user-guides:
   view-only: Sadece görüntülenir bir cüzdan yapımı
   prove-payment: Ödeme kanıtlanması
   restore-from-keys: Anahtarlardan cüzdanın geri alınması
-  nicehash: Madencilik ekipmanı olmadan Monero XMR madenciliği yapımı
   ledger-wallet-cli: CLI (monero-wallet-cli) ile Ledger Monero cüzdanı üretimi
   multisig-messaging-system: MMS ve CLI cüzdanla çoklu-imza işlemleri
   tor_wallet: Connecting your local wallet to your own daemon over Tor
@@ -917,13 +696,6 @@ research-lab:
     ortak değer olarak ifade eder ve bir halka imzalar kümesini her bitin iki skalar
     grup arasında (bir denkliğe kadar) aynı olan geçerli bir değer olduğunu kanıtlamak
     için kullanır.
-  mrl11: Compact linkable ring signatures and applications
-  mrl11_abstract: We describe an efficient linkable ring signature scheme, compact
-    linkable spontaneous anonymous group (CLSAG) signatures, for use in confidential
-    transactions. Compared to the existing signature scheme used in Monero, CLSAG
-    signatures are both smaller and more efficient to generate and verify for ring
-    sizes of interest. We generalize the construction and show how it can be used
-    to produce signatures with coins of different type in the same transaction.
   iacr2020018: "Triptych: logarithmic-sized linkable ring signatures with applications"
   iacr2020018_abstract: Ring signatures are a common construction used to provide
     signer ambiguity among a non-interactive set of public keys specified at the time
@@ -958,42 +730,11 @@ research-lab:
 
 
 specs:
-  fair_title: Ön-maden yok, anında-maden yok, jeton yok
-  fair_premine: Monero'nun ön-madeni veya anında-madeni yoktu
-  fair_token: Monero hiç jeton satmadı
-  fair_presale: Monero'nun hiçbir şekilde önsatışı yoktu
   pow_title: İş Kanıtı
-  pow_name: CryptoNight
-  pow_disclaimer: gelecekte değişebilir
-  diff_title: Zorluk tekrar hedeflemesi
-  diff_freq: her blokta
-  diff_base: zaman damgası uç değerlerinin %20'si hariç, son 720 bloka dayanır
-  block_time_title: Blok zamanı
-  block_time_duration: 2 dakika
-  block_time_disclaimer: salınım eğrisi korunduğu sürece gelecekte değişebilir
-  block_reward_title: Blok ödülü
-  block_reward_amount: pürüzsüzce azalan ve son 100 blokun medyan boyutundan (M100)
-    büyük bloklar için cezaya tabii
-  block_reward_example1: şu anki ödül için
-  block_reward_example_link: son blok
-  block_reward_example2: paratabanı işlem miktarını görüntüleyin
-  block_size_title: Blok boyutu
-  block_size: dinamik, en fazla 2 * M100
   block_emission_title: Salınım eğrisi
   block_emission_main: "önce, ana eğri: Mayıs 2022 sonuna kadar ~18.132 milyon para"
   block_emission_tail: "sonra, uç eğrisi: 2 dakikalık blok başına 0.6 XMR, ana salınım\
     \ bittiğinde geçerli, zamanla azalan <%1 enflasyona çevrilir"
-  block_emission_disclaimer1: "Görüntüleyin:"
-  block_emission_disclaimer_link: çizelgeler ve detaylar
-  supply_title: Azami arz
-  supply_amount: sonsuz
-  sender_privacy_title: Gönderici gizliliği
-  sender_privacy_mode: Halka imzalar
-  recipient_privacy_title: Alıcı gizliliği
-  recipient_privacy_mode: Hayalet adresler
-  amount_hidden_title: Miktar karartma
-  amount_hidden_mode: Halka gizli işlemler
-
 library:
   description: "Aşağı indirebileceğiniz bazı yayınlar, kitaplar ve dergiler yer almaktadır."
   books: Kitaplar
@@ -1038,18 +779,14 @@ library:
     Donanım ve Monerujo.
 
 moneropedia:
-  add_new_button: Yeni Girdi Ekleyin
   add_new_text1: Değiştirmek veya eklemek istediğiniz bir girdi varsa lütfen
   add_new_link: bu sitenin GitLab deposunda bir sorun açın
   add_new_text2: veya değişiklikleri iste talebiyle bildirin
   entries:
     account: Hesap
-    address-book: Adres Defteri
     address: Adres
     airgap: Hava Aralığı
     atomic-units: Atomik Birimler
-    base32-address: Temel32 adres
-    base64-address: Temel64 adres
     blockchain: Blokzincir
     block: Blok
     bootstrap-node: Önyükleme-düğümü
@@ -1061,32 +798,15 @@ moneropedia:
     consensus: Uzlaşım
     cryptocurrency: Kriptopara
     daemon: Daemon
-    data-directory: Veri Rehberi
     denominations: Birimler
-    destination: Varış Noktası
-    eepsite: Uupsite
     encryption: Şifreleme
-    floodfill: Taşkındolgu
     fluffyblocks: Pofuduk Bloklar
     fungibility: Değiştirilebilirlik
-    garlic-encryption: Sarımsak-Şifreleme
-    garlic-routing: Sarımsak Yöneltme
-    i2np: I2NP
-    i2pcontrol: I2PKontrol
-    i2p: I2P
-    in-net: In-ağ
-    java-i2p: Java I2P
-    jump-service: Zıplama Hizmeti
     kovri: Kovri
-    lease: İcar
-    lease-set: İcar-Küme
     locally-unique-host: Yerel-benzersiz barındırıcı
-    message: Mesaj
     mining: Madencilik
     mnemonicseed: Anımsatıcı Tohum
-    network-database: Ağ Veri Tabanı
     node: Düğüm
-    ntcp: NTCP
     openalias: OpenAlias
     paperwallet: Kâğıt Cüzdan
     paymentid: Ödeme ID
@@ -1094,34 +814,22 @@ moneropedia:
     pruning: Pruning
     randomx: RandomX
     remote-node: Remote Node
-    reseed: Tekrar-tohum
     ringCT: Halka CT
     ringsignatures: Halka İmza
     ring-size: Halka Boyutu
-    router-info: Yöneltici-Bilgi
     scalability: Ölçeklenebilirlik
     signature: Kriptografik İmza
     smartmining: Akıllı Madencilik
     spendkey: Harcama Anahtarı
-    ssu: SSU
     stealthaddress: Hayalet Adres
-    subscription: Abonelik
     tail-emission: Uç Salınım
     transaction: İşlemler
-    transports: İletim
-    tunnel: Tünel
     unlocktime: İşlem Kilit Açma Zamanı
     viewkey: Görüntüleme Anahtarı
     wallet: Cüzdan
 
 blog:
-  title_1: Hepsi
-  title_2: Blog
-  title_3: Gönderilen
-  tagged: Etiketler
   author: Gönderen
   date: Gönderim tarihi
-  forum: Monero Forum'daki bu girdi için tartışmaya katılmak için buraya tıklayın
-
 tags:
   notags: Bu etiket için gönderi yok.

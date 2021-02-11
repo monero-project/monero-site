@@ -15,29 +15,21 @@ global:
   privacy: Privacy
   untranslated: Deze pagina is nog niet vertaald. Wil je deze pagina vertalen? Lees
     dan de
-  outdatedMax: Deze pagina is verouderd. We raden je af hier gebruik van te maken.
-    Lees in plaats daarvan de
   outdatedVersion: Engelse versie
   outdatedMin: Deze pagina is bijgewerkt nadat er een vertaling van is gemaakt. Je
     kunt deze versie gebruiken, maar die kan onvolledig zijn.
-  upgrade: To continue using Monero, make sure your software is up-to-date with the
-    November 30th network upgrade.
-  moreinfo: Meer informatie
   lang_tag: "@lang_tag_nl"
 
 titles:
   index: Start
   whatismonero: Wat is Monero (XMR)?
-  using: Monero gebruiken
   accepting: Monero accepteren
   contributing: Monero verbeteren
   mining: Monero minen
   faq: Veelgestelde vragen
   downloads: Downloads
   allposts: Alle blogposts
-  team: Monero-team
   hangouts: Ontmoetingsplekken
-  events: Evenementen
   sponsorships: Sponsors
   merchants: Winkels en services
   about: Over Monero
@@ -50,12 +42,6 @@ titles:
   themoneroproject: Het Monero-project
   presskit: Monero Press Kit
   legal: Juridisch
-  ffs: Forum Funding System
-  ffs-cp: Completed Proposals
-  ffs-fr: Funding Required
-  ffs-ideas: Ideas
-  ffs-ot: Open Tasks
-  ffs-wip: Work in Progress
   blogbytag: Blog
   library: Bibliotheek
 
@@ -66,7 +52,6 @@ navigation:
   contributing: Bijdragen
   mining: Minen
   community: Community
-  team: Team
   merchants: Verkopers
   resources: Informatie
   about: Over Monero
@@ -81,53 +66,15 @@ home:
     en veilig. Met Monero ben je je eigen bank. Je kunt het veilig uitgeven, want
     niemand anders kan je saldo bekijken of je activiteit volgen.
   get_started: Aan de slag
-  why_monero_is_different: Wat Monero anders maakt
-  monero_is_secure: Monero is veilig
-  monero_is_secure_para: Monero is een gedecentraliseerde cryptovaluta, een veilige
-    vorm van digitaal geld, beheerd door een netwerk van gebruikers. Transacties worden
-    bevestigd door verspreide consensus en vervolgens onveranderlijk vastgelegd op
-    de blockchain. Je hoeft geen derde partijen te vertrouwen om je Monero veilig
-    te bewaren.
-  monero_is_private: Monero is vertrouwelijk
-  monero_is_private_para: Monero gebruikt ring-handtekeningen, vertrouwelijke ring-transacties
-    en verborgen adressen om de herkomst, bedragen en bestemmingen van alle transacties
-    te verbergen. Monero biedt alle voordelen van een gedecentraliseerde cryptovaluta,
-    zonder de gebruikelijke nadelen op het gebied van privacy.
-  monero_is_untraceable: Monero is onvolgbaar
-  monero_is_untraceable_para: Zowel verzendende en ontvangende adressen als overgemaakte
-    bedragen worden standaard versleuteld. Transacties op de Monero-blockchain kunnen
-    niet aan een bepaalde gebruiker of identiteit worden gekoppeld.
-  monero_is_fungible: Monero is inwisselbaar
-  monero_is_fungible_para1: Monero is
-  monero_is_fungible_para2: inwisselbaar
-  monero_is_fungible_para3: (fungibel) omdat het standaard vertrouwelijk is. Er kunnen
-    niet bepaalde eenheden Monero worden geblokkeerd door verkopers of exchanges omdat
-    ze betrokken waren bij eerdere transacties.
   downloads: Downloads
-  downloads_windows: Monero voor Windows
-  downloads_mac: Monero voor Mac
-  downloads_linux: Monero voor Linux
-  downloads_blockchain: Nieuwste blockchain
-  different_system: Heb je een ander besturingssysteem?
-  view_all_downloads: Bekijk hier alle beschikbare downloads.
-  latest_news: Laatste nieuws
-  more_news: Meer nieuws
-  moneropedia: Moneropedia
   moneropedia_para: Wil je de betekenissen van termen en begrippen die in Monero worden
     gebruikt opzoeken? Hier vind je een uitleg in alfabetische volgorde van termen
     die in de projecten Monero en Kovri worden gebruikt.
   moneropedia_button: Moneropedia lezen
-  user_guides: Gebruikershandleidingen
-  user_guides_para: Stapsgewijze instructies verdeeld in categoriëen voor allerlei
-    Monero-gerelateerde onderwerpen, van het aanmaken van een portemonnee tot het
-    ondersteunen van het netwerk, en zelfs hoe je deze website bewerkt.
-  user_guides_button: Gebruikershandleidingen lezen
   faq: Veelgestelde vragen
   faq_para: In de loop van de jaren zijn er veel vragen aan ons gesteld. We hebben
     ze voor het gemak verzameld in een diepgravende en gevarieerde FAQ. En als je
     vragen hier niet bij staan, kun je altijd vragen stellen aan de community.
-  faq_button: Antwoorden lezen
-
 hangouts:
   intro: De Monero-community bestaat uit allerlei soorten mensen. Waar we ook vandaan
     komen, we ontmoeten elkaar op bepaalde plekken online. De belangrijkste staan
@@ -155,10 +102,6 @@ hangouts:
     monero-translations: Over het lokaliseren van Monero in andere talen.
     monero-hardware: Hardware wallets maken om je Monero veilig te bewaren.
     monero-site:
-    kovri: In dit kanaal bespreken we alle Kovri-gerelateerde zaken.
-    kovri-dev: Hier bespreken onze vele bijdragers en ontwikkelaars het ontwikkelen
-      van Kovri.
-
 merchants:
   intro1: Allerlei soorten verkopers stellen de financiële privacy die Monero biedt
     op prijs. Hieronder volgt een lijst met de verkopers die momenteel Monero accepteren
@@ -177,15 +120,8 @@ sponsorships:
 
 team:
   core: Kernteam
-  developers: Ontwikkelaars
-  developers_para1: Meer dan 500 personen hebben in de loop van de tijd bijgedragen
-    aan het Monero-project. Zie voor een complete lijst de
-  developers_para2: pagina met bijdragers bij OpenHub.
-  developers_para3: De volgende personen hebben meer dan hun best gedaan voor Monero
   community: Community
   mrl: Research Lab
-  thanks: Bijzondere dank
-
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.
@@ -223,11 +159,6 @@ downloads:
     HTTP RPC and 0MQ interface.
   currentversion: Current Version
   sourcecode: Source Code
-  showissues: Show known issues for this release
-  noissues: This release has no known major issues
-  yesissues: >
-    This release has the following known issues:<br>
-    - Initial sync of the blockchain very slow. Will be fixed with a point release
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
@@ -275,20 +206,7 @@ downloads:
   mobilelight3: page to see where we are.
   installer: Installer
 
-monero-project:
-  kovri: Het Kovri-project past end-to-endversleuteling toe, zodat noch de afzender,
-    noch de ontvanger van een Monero-transactie zijn of haar IP-adres hoeft te laten
-    zien aan de andere partij, of aan een derde partij (via de blockchain). Hiervoor
-    wordt i2p gebruikt, dezelfde technologie gebruikt die de basis vormt van het darknet
-    (Invisible Internet Protocol). Het project wordt actief ontwikkeld en is nog niet
-    geïntegreerd met Monero.
-  kovri_button: Website van Kovri
-  openalias: Het OpenAlias-project vereenvoudigt cryptovaluta-betalingen met FQDN's
-    (Fully Qualified Domain Names, bijvoorbeeld example.openalias.org) voor Monero-adressen
-    op een manier waarbij de privacy van iedereen beschermd blijft. DIt project is
-    al goed gevorderd en is al geïmplementeerd in veel Monero-portemonnees.
-  openalias_button: Website van OpenAlias
-
+monero-project: {}
 press-kit:
   intro1: Hieronder vind je het symbool en logo van Monero. Je kunt de gewenste grootte
     kiezen of het .ai-bestand downloaden om het logo zelf te bewerken.
@@ -321,96 +239,18 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
 
-accepting:
-  title: Instructies voor de opdrachtregel-interface (CLI)
-  basics: De basis
-  basics_para1: Monero werkt anders dan je misschien gewend bent van andere cryptovaluta
-    (zie @cryptocurrencies). Voor digitale valuta zoals Bitcoin en de vele altcoins
-    die daarvan zijn afgeleid maken betalingssystemen voor verkopers meestal een nieuw
-    ontvangstadres (@address) voor iedere betaling of gebruiker.
-  basics_para2: Maar omdat Monero @stealth-addresses heeft, is het niet nodig om afzonderlijke
-    ontvangstadressen te gebruiken voor elke betaling of gebruiker. Je kunt gewoon
-    één adres als rekening (@account) publiceren. Verkopers die betalingen ontvangen
-    geven de klant een "betalings-ID".
-  basics_para3: "Een @payment-ID is een hexadecimale tekenreeks van 64 tekens, die\
-    \ normaal gesproken door de verkoper wordt gegenereerd. Een voorbeeld van een\
-    \ betalings-ID is:"
-  controleren: Een betaling opzoeken in monero-wallet-cli
-  checking: Checking for a Payment in monero-wallet-cli
-  checking_para1: |
-    Als je een betaling wilt opzoeken met monero-wallet-cli, gebruik je de opdracht "payments" gevolgd door de betalings-ID(s) die je wilt opzoeken. Bijvoorbeeld:
-  checking_para2: Uitleg van het geautomatiseerd opzoeken van betalingen volgt hieronder.
-  receiving: Stap voor stap een betaling ontvangen
-  receiving_list1: Genereer een willekeurige hexadecimale tekenreeks van 64 tekens
-    voor de betaling.
-  receiving_list2: Geef de betalings-ID en het Monero-adres door aan de persoon door
-    wie je wordt betaald.
-  receiving_list3: Zoek de betaling op met de opdracht "payments" in monero-wallet-cli.
-  program: Een betaling geautomatiseerd opzoeken
-  program_para1: Om met een script een betaling op te zoeken, gebruik je de JSON RPC
-    API call get_payments of get_bulk_payments.
-  program_para2: vereist de parameter payment_id met één betalings-ID.
-  program_para3: deze methode heeft de voorkeur en accepteert twee parameters, payment_ids
-    (een JSON-array van betalings-ID's) en een optionele min_block_height (de blokhoogte
-    waar je begint te zoeken).
-  program_para4: |
-    Hier is een voorbeeld van de gegevens die je ontvangt:
-  program_para5: Het is belangrijk om er rekening mee te houden dat de bedragen worden
-    uitgedrukt in de basiseenheden van Monero en niet in de weergave-eenheden die
-    worden gebruikt in applicaties voor eindgebruikers. En omdat een transactie meestal
-    meerdere outputs bevat die bij elkaar het vereiste totaal voor de betaling vormen,
-    moeten de bedragen worden gegroepeerd op de tx_hash of de payment_id en worden
-    opgeteld. Verder kunnen meerdere outputs hetzelfde bedrag hebben, dus probeer
-    nooit de geretourneerde gegevens van één call get_bulk_payments te filteren.
-  program_para6: Voordat je betalingen opzoekt, kun je het beste eerst via de RPC
-    API van de node (de call get_info) opvragen of er nieuwe blokken zijn ontvangen.
-    Meestal zul je dan alleen het laatste ontvangen blok willen scannen door dat blok
-    op te geven als de min_block_height bij get_bulk_payments.
-  scanning: Geautomatiseerd recente betalingen opzoeken
-  scanning_list1: Haal de huidige blokhoogte op van de node en ga alleen verder als
-    deze groter is dan bij de vorige scan
-  scanning_list2: Voer de RPC API call get_bulk_payments uit met je laatste gescande
-    hoogte en de lijst van alle betalings-ID's op je systeem.
-  scanning_list3: Sla de huidige blokhoogte op als de laatste gescande hoogte
-  scanning_list4: Verwijder dubbele treffers op basis van transactiehashes die je
-    al hebt ontvangen en verwerkt.
-
+accepting: {}
 contributing:
   intro: Monero is een door de community gecreëerd open-sourceproject. Hier volgen
     verschillende manier om het project te steunen.
   network: Bijdragen aan het netwerk
   develop: Programmeren
-  develop_para1: Monero is grotendeels geschreven in C++. Het is een gedecentraliseerd
-    project, dus iedereen kan de bestaande code wijzigen of er code aan toevoegen.
-    Pull requests worden toegevoegd op basis van consensus in de community. Zie de
-    pagina
-  develop_para2: repository's
-  develop_para3: en de openstaande
   develop_para4: issues.
   full-node: Een volledige node draaien
-  full-node_para: Voer monerod uit met poort 18080 geopend. Als je een volledige node
-    draait, heb je de beste privacy voor je eigen Monero-transacties. Het helpt ook
-    om de blockchain te verspreiden naar nieuwe gebruikers.
   mine: Minen
-  mine_para1: Minen zorgt ervoor dat het Monero-netwerk gedecentraliseerd en veilig
-    blijft. Minen op de achtergrond kun je inschakelen in de grafische interface en
-    de opdrachtregel-interface van Monero. Meer informatie over minen vind je
-  mine_para2: hier
   ffs: Bekijk het Forum Funding System
-  ffs_para1: Monero gebruikt een
-  ffs_para2: forum funding system
-  ffs_para3: waarbij projecten worden voorgesteld en door de community gefinancierd.
-    De financiering wordt in bewaring gehouden en uitgekeerd aan de ontwikkelaars
-    nadat ze een mijlpaal hebben bereikt. Iedereen kan een nieuw voorstel doen of
-    projecten financieren.
   donate: Doneren
-  donate_para1: Het ontwikkelen van Monero wordt ondersteund door giften en
-  donate_para2: sponsoring.
-  donate-xmr: Monero doneren
   donate-xmr_para: Giften kun je verzenden naar
-  or: of
-  donate-btc: Bitcoin doneren
-  donate-btc_para: Giften kun je verzenden naar
   donate-other: Overig
   donate-other_para1: E-mail
   donate-other_para2: voor andere manieren om geld te geven of als je een sponsor
@@ -458,21 +298,6 @@ faq:
   a8: Nee, er is in Monero geen harde limiet aan de grootte van blokken. De blokgrootte
     kan in de loop van de tijd groeien of afnemen op basis van de vraag. Het groeitempo
     is echter beperkt, zodat het niet uit de hand kan lopen.
-  q9: Wat is een blockchain?
-  a9: Een blockchain is een systeem waarin een kopie van alle transacties op het Monero-netwerk
-    wordt opgeslagen. Om de twee minuten wordt een nieuw blok met de gegevens van
-    de nieuwste transacties toegevoegd aan de blockchain. Met deze keten kan het netwerk
-    verifiëren hoeveel geld de verschillende accounts hebben. Dankzij de blockchain
-    is het netwerk bestand tegen aanvallen en pogingen tot centralisatie.
-  q10: Wat is Kovri?
-  a10: Kovri is I2P-router die in C++ is geschreven. I2P is een verborgen netwerk,
-    net als Tor, maar met een aantal technische verschillen. Kovri is een zelfstandig
-    project, maar werkt samen met Monero en andere projecten. Kovri verbergt het verspreiden
-    van transacties, zodat andere nodes niet kunnen zien wie een transactie heeft
-    gecreëerd. In vijandige omstandigheden kan Kovri worden gebruikt om al het Monero-verkeer
-    via I2P te leiden, zodat anderen niet kunnen zien dat Monero wordt gebruikt. Kovri
-    is momenteel in alfa en is nog niet volledig geïntegreerd met Monero. Lees meer
-    over Kovri op de <a href="https://kovri.io">website van het project.</a>
   q11: Wat is inwisselbaarheid en waarom is het belangrijk?
   a11: Inwisselbaarheid (fungibiliteit) is een basiseigenschap van geld, namelijk
     dat er geen verschil is tussen twee hoeveelheden met dezelfde waarde. Als je een
@@ -531,7 +356,6 @@ mining:
   support: Ondersteuning
   support_para1: Zie
   support_para2: Ontmoetingsplekken
-  support_para3: /r/moneromining (Engels)
   support_para4: en
   pools: Pools
   pools_para1: Een lijst van betrouwbare Monero-pools vind je
@@ -543,50 +367,7 @@ mining:
   software_para: "Let op: bij sommige miningprogramma's krijgen de ontwikkelaars een\
     \ vergoeding."
 
-using:
-  intro: Betalen met Monero kan heel makkelijk zijn. Deze pagina helpt je daarbij.
-  learn: "1. Leren"
-  learn_para1: Monero is een veilige, vertrouwelijke en niet volgbare cryptovaluta.
-    De ontwikkelaars en de community staan voor het handhaven van deze waarden. Je
-    kunt meer leren door de pagina
-  learn_para2: Wat is Monero?
-  learn_para3: te lezen. De
-  learn_para4: broncode
-  learn_para5: is ook beschikbaar voor controle en discussie.
-  support: 2. Hulp vragen
-  support_para1: Er is een grote, behulpzame community die je graag helpt als je een
-    probleem tegenkomt. Zie de pagina
-  support_para2: Ontmoetingsplekken
-  support_para3: voor meer informatie.
-  generate: 3. Een portemonnee genereren
-  generate_para1: Een Monero-portemonnee is nodig om je eigen geld veilig te bewaren.
-    Zie de pagina
-  generate_para2: Downloadpagina
-  generate_para3: voor een lijst met beschikbare portemonnee-software.
-  generate_para4: De makkelijkste manier om een Monero-node te draaien, zonder de
-    bandbreedte van je thuisaansluiting te gebruiken, is door een VPS (Virtual Private
-    Server) aan te schaffen. We raden je aan om
-  generate_para5: gebruik te maken van de
-  generate_para6: boncode om een korting te krijgen op deze VPS die met $6 per maand
-    al voordelig is. Als je deze kortingscode en/of
-  generate_para7: onze partnerlink
-  generate_para8: gebruikt, draag je ook bij aan het financieren van Monero-ontwikkelaars.
-  acquire: 4. Monero kopen
-  acquire_para1: Monero kun je kopen bij een
-  acquire_para2: exchange
-  acquire_para3: "met euro's, dollars of andere cryptovaluta. Een andere manier om\
-    \ aan Monero te komen is door te"
-  acquire_para4: minen
-  acquire_para5: het uitvoeren van uitvoerige berekeningen waardoor transacties onveranderlijk
-    worden vastgelegd op de blockchain.
-  send-receive: 5. Monero verzenden en ontvangen
-  send-receive_para1: Hoe je Monero verzendt en ontvangt lees je in de
-  send-receive_para2: handleiding.
-  transact: 6. Betalen met Monero
-  transact_para1: Je kunt allerlei goederen en diensten kopen met Monero. Er staat
-    een lijst op de
-  transact_para2: pagina Verkopers.
-
+using: {}
 what-is-monero:
   need-to-know: Wat je moet weten
   leading: Monero is de beste van de cryptovaluta's die zich richten op vertrouwelijke
@@ -606,11 +387,6 @@ what-is-monero:
     niet 'besmet' worden verklaard als het eerder in verdachte transacties is gebruikt.
     Dit betekent dat je Monero altijd wordt geaccepteerd en censuur niet mogelijk
     is.
-  confidential_para3: Met het Kovri-project,
-  confidential_para4: dat momenteel wordt ontwikkeld
-  confidential_para5: ", worden transacties omgeleid en versleuteld via nodes van\
-    \ I2P, het Invisible Internet Project. Hierdoor wordt het IP-adres van de afzender\
-    \ verborgen, om nog meer bescherming te bieden tegen observatie van het netwerk."
   grassroots: Monero is een community van vrijwilligers waar de beste onderzoekers
     en programmeurs van cryptovaluta op af komen.
   grassroots_para1: Meer dan
@@ -685,8 +461,6 @@ developer-guides:
   rpc: RPC-documentatie
   daemonrpc: Daemon RPC Documentation
   walletrpc: Wallet RPC Documentation
-  soon: Binnenkort meer...
-
 user-guides:
   general: Algemeen
   mining: Mining
@@ -702,7 +476,6 @@ user-guides:
   verify-windows: Binaries verifiëren in Windows (voor beginners)
   mine-on-pool: Minen via een pool met XMRig
   solo-mine: Solo minen met de grafische interface (GUI)
-  mine-docker: Minen met Docker en XMRig
   locked-funds: Vergrendeld geld ontgrendelen
   restore-account: Je account herstellen
   qubes: CLI-portemonnee isoleren van node met Qubes en Whonix
@@ -712,7 +485,6 @@ user-guides:
   view-only: Een alleen-lezen portemonnee maken
   prove-payment: Betalingen bewijzen
   restore-from-keys: Portemonnee herstellen met sleutels
-  nicehash: Monero (XMR) minen zonder miningapparatuur
   ledger-wallet-cli: Een Monero-portemonnee op een Ledger maken met de opdrachtregel
     (monero-wallet-cli)
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
@@ -963,13 +735,6 @@ research-lab:
     en wordt een verzameling ring-handtekeningen gebruikt om te bewijzen dat alle
     bits een geldige waarde hebben die hetzelfde is (tot een bepaalde equivalentie)
     in beide scalaire groepen.
-  mrl11: Compact linkable ring signatures and applications
-  mrl11_abstract: We describe an efficient linkable ring signature scheme, compact
-    linkable spontaneous anonymous group (CLSAG) signatures, for use in confidential
-    transactions. Compared to the existing signature scheme used in Monero, CLSAG
-    signatures are both smaller and more efficient to generate and verify for ring
-    sizes of interest. We generalize the construction and show how it can be used
-    to produce signatures with coins of different type in the same transaction.
   iacr2020018: "Triptych: logarithmic-sized linkable ring signatures with applications"
   iacr2020018_abstract: Ring signatures are a common construction used to provide
     signer ambiguity among a non-interactive set of public keys specified at the time
@@ -1004,45 +769,12 @@ research-lab:
 
 
 specs:
-  fair_title: Geen premine, geen instamine, geen token
-  fair_premine: Er is geen premine of instamine van Monero geweest
-  fair_token: Monero heeft nooit een token verkocht
-  fair_presale: Er is geen enkele presale of voorverkoop van Monero geweest
   pow_title: Proof of Work
-  pow_name: CryptoNight
-  pow_disclaimer: Kan in de toekomst veranderen
-  diff_title: Herberekening moeilijkheidsgraad
-  diff_freq: Ieder blok
-  diff_base: Gebaseerd op de laatste 720 blokken, maar zonder de 20% kortste en langste
-    tijden
-  block_time_title: Bloktijd
-  block_time_duration: 2 minuten
-  block_time_disclaimer: Kan in de toekomst veranderen, maar de uitgiftecurve verandert
-    niet
-  block_reward_title: Beloning per blok
-  block_reward_amount: Neemt gelijkmatig af, met een malus voor blokken die groter
-    zijn dan de mediaan van de laatste 100 blokken (M100)
-  block_reward_example1: Zie de coinbase-transactie in het
-  block_reward_example_link: laatste blok
-  block_reward_example2: voor de huidige beloning
-  block_size_title: Blokgrootte
-  block_size: Dynamisch, maximaal 2 * M100
   block_emission_title: Uitgiftecurve
   block_emission_main: "Eerst de gewone curve: ~18.132 miljoen coins eind mei 2022"
   block_emission_tail: "Daarna de blijvende uitgifte: 0,6 XMR per blok om de 2 minuten,\
     \ nadat de gewone uitgifte klaar is, wat een steeds verder dalende inflatie van\
     \ < 1% oplevert."
-  block_emission_disclaimer1: Zie
-  block_emission_disclaimer_link: grafieken en details
-  supply_title: Maximale geldhoeveelheid
-  supply_amount: Oneindig
-  sender_privacy_title: Privacy afzender
-  sender_privacy_mode: Ring-handtekeningen
-  recipient_privacy_title: Privacy ontvanger
-  recipient_privacy_mode: Stealth addresses
-  amount_hidden_title: Verborgen bedragen
-  amount_hidden_mode: Vertrouwelijke ring-transacties
-
 library:
   description: "Hier volgen publicaties, boeken en tijdschriften die je kunt downloaden."
   books: Boeken
@@ -1087,18 +819,14 @@ library:
     hardware en Monerujo.
 
 moneropedia:
-  add_new_button: Nieuw trefwoord toevoegen
   add_new_text1: Wil je een trefwoord bewerken of een nieuw trefwoord toevoegen?
   add_new_link: Open dan een issue op de GitLab-repository van deze website
   add_new_text2: of stel wijzigingen voor via een merge request
   entries:
     account: Account
-    address-book: Address Book
     address: Address
     airgap: Airgap
     atomic-units: Atomic Units
-    base32-address: Base32 address
-    base64-address: Base64 address
     blockchain: Blockchain
     block: Block
     bootstrap-node: Bootstrap-node
@@ -1110,32 +838,15 @@ moneropedia:
     consensus: Consensus
     cryptocurrency: Cryptocurrency
     daemon: Daemon
-    data-directory: Data Directory
     denominations: Denominations
-    destination: Destination
-    eepsite: Eepsite
     encryption: Encryption
-    floodfill: Floodfill
     fluffyblocks: Fluffy Blocks
     fungibility: Fungibility
-    garlic-encryption: Garlic-Encryption
-    garlic-routing: Garlic Routing
-    i2np: I2NP
-    i2pcontrol: I2PControl
-    i2p: I2P
-    in-net: In-net
-    java-i2p: Java I2P
-    jump-service: Jump Service
     kovri: Kovri
-    lease: Lease
-    lease-set: Lease-Set
     locally-unique-host: Locally-unique host
-    message: Message
     mining: Mining
     mnemonicseed: Mnemonic Seed
-    network-database: Network Database
     node: Node
-    ntcp: NTCP
     openalias: OpenAlias
     paperwallet: Paper Wallet
     paymentid: Payment ID
@@ -1143,34 +854,22 @@ moneropedia:
     pruning: Pruning
     randomx: RandomX
     remote-node: Remote Node
-    reseed: Reseed
     ringCT: Ring CT
     ringsignatures: Ring Signature
     ring-size: Ring Size
-    router-info: Router-Info
     scalability: Scalability
     signature: Cryptographic Signature
     smartmining: Smart Mining
     spendkey: Spend Key
-    ssu: SSU
     stealthaddress: Stealth Address
-    subscription: Subscription
     tail-emission: Tail Emission
     transaction: Transactions
-    transports: Transports
-    tunnel: Tunnel
     unlocktime: Transaction Unlock Time
     viewkey: View Key
     wallet: Wallet
 
 blog:
-  title_1: Alles
-  title_2: Blog
-  title_3: Posts
-  tagged: Met tag
   author: Geplaatst door
   date: Geplaatst op
-  forum: Klik hier om dit trefwoord te bespreken op het Monero-forum
-
 tags:
   notags: Er zijn geen posts voor deze tag.

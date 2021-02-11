@@ -13,27 +13,20 @@ global:
   terms: 條款
   privacy: 隱私
   untranslated: 這個頁面尚未被翻譯，如果您願意協助翻譯，請見
-  outdatedMax: 這個頁面資訊已過時，我們不建議使用它，請移駕至
   outdatedVersion: 英文版本
   outdatedMin: 這個頁面資訊因未更新翻譯，資訊已過時。您仍可繼續使用這個頁面，但資料可能不完整。
-  upgrade: To continue using Monero, make sure your software is up-to-date with the
-    November 30th network upgrade.
-  moreinfo: 更多資訊
   lang_tag: "@lang_tag_zh-tw"
 
 titles:
   index: 首頁
   whatismonero: 什麼是門羅幣 (XMR)?
-  using: 使用門羅幣
   accepting: 收取門羅幣
   contributing: 改善門羅幣
   mining: 挖取門羅幣
   faq: 常見問題
   downloads: 下載
   allposts: 所有文章
-  team: 門羅幣團隊
   hangouts: 聊天室
-  events: 事件
   sponsorships: 贊助單位
   merchants: 商家 ＆ 服務
   about: 關於門羅幣
@@ -46,12 +39,6 @@ titles:
   themoneroproject: 門羅幣專案
   presskit: 門羅幣新聞資料袋
   legal: 使用規定
-  ffs: 論壇募資系統
-  ffs-cp: 已完成的提案
-  ffs-fr: 需要資助
-  ffs-ideas: 構想
-  ffs-ot: 尚未執行的專案
-  ffs-wip: 進行中的專案
   blogbytag: Blog
   library: 圖書出版品
 
@@ -62,7 +49,6 @@ navigation:
   contributing: 貢獻
   mining: 挖礦
   community: 社群
-  team: 合作團隊
   merchants: 使用商家
   resources: 相關資源
   about: 關於門羅幣
@@ -75,36 +61,11 @@ home:
   heading2: 保護隱私的數位貨幣
   monero_is_cash: 門羅幣是網路世界的現金，快速、保護隱私且安全。使用門羅幣時，你就是你自己的銀行，你可以安全的交易，不用擔心別人會看到你的帳戶餘額或追蹤你的金融活動。
   get_started: 開始使用
-  why_monero_is_different: 為什麼門羅幣如此特別
-  monero_is_secure: 門羅幣很安全
-  monero_is_secure_para: 門羅幣是去中心化的加密貨幣，意味著它是由使用者組成的網路所共同運作的安全數位現金。交易是由分散式共識與無法竄改的區塊鏈紀錄所確認。不需要信任特定的第三方就可以保護你的門羅幣安全。
-  monero_is_private: 門羅幣保護隱私
-  monero_is_private_para: 門羅幣使用環狀簽名、環狀保密交易和隱匿性地址以混淆所有交易的來源、金額與流向。門羅幣提供所有去中心化加密貨幣的好處，但不會對隱私疑慮做任何的妥協。
-  monero_is_untraceable: 門羅幣是完全匿蹤
-  monero_is_untraceable_para: 發送和接收門羅幣的地址和交易金額都是預設混淆過的。在門羅幣區塊鏈上的交易無法被連結到特定使用者或真實世界中的身份。
-  monero_is_fungible: 門羅幣具有替代性
-  monero_is_fungible_para1: 門羅幣具有
-  monero_is_fungible_para2: 替代性
-  monero_is_fungible_para3: 由於門羅幣預設都是保護隱私的，門羅幣的貨幣不會因為先前的交易紀錄而被商家或交易所列入黑名單。
   downloads: 下載
-  downloads_windows: 適用 Windows 系統的門羅幣
-  downloads_mac: 適用 Mac 系統的門羅幣
-  downloads_linux: 適用 Linux 系統的門羅幣
-  downloads_blockchain: 最新的區塊鏈檔案
-  different_system: 需要其他作業系統的嗎？
-  view_all_downloads: 這裡有全部的可用版本下載
-  latest_news: 最新消息
-  more_news: 更多消息
-  moneropedia: 門羅幣百科
   moneropedia_para: 你想要找門羅幣的各種用詞和概念的解釋嗎？在這裡你可以找到用字母排序的字詞與其意義解釋，範圍包括門羅幣與 Kovri 專案。
   moneropedia_button: 閱讀門羅幣百科
-  user_guides: 使用者指引
-  user_guides_para: 依不同分類整理好的鉅細靡遺教學，內容囊括了從建立錢包到支持門羅幣網路，甚至還有如何編輯本網站的教學。
-  user_guides_button: 閱讀使用者指引
   faq: 常見問題
   faq_para: 在過去數年常常聽到的許多疑問，我們把它編列成了一份方便閱讀的常見問題集。別擔心，如果你的問題不在這邊，永遠歡迎直接到社群發問。
-  faq_button: 閱讀解答
-
 hangouts:
   intro: 門羅幣的社群具有高度的多樣性，我們雖然來自世界各地，但還是常常會在幾個地方聚在一起交流，你可以在以下幾個地方找到我們，加入我們吧！
   resources: 協作群組資源
@@ -124,9 +85,6 @@ hangouts:
     monero-translations: 將門羅幣專案翻譯至當地語言的工作溝通頻道。
     monero-hardware: 打造硬體錢包以保護你的門羅幣安全。
     monero-site:
-    kovri: 這是用來討論與 Kovri 專案相關的頻道。
-    kovri-dev: 這是用來討論與 Kovri 專案開發的頻道。
-
 merchants:
   intro1: 使用門羅幣的各類商家都可以獲得門羅幣帶來的金融隱私保護價值，以下是一些我們知道目前接受使用門羅幣購買商品或服務的商家。如果其中有商家已停止接受使用門羅幣，或是你想讓你所經營的事業被列在此表
   intro2: 請在 GitLab 上開一個新 issue 通知我們
@@ -139,14 +97,8 @@ sponsorships:
 
 team:
   core: 核心開發團隊
-  developers: 開發者們
-  developers_para1: 門羅幣專案誕生以來，擁有來自世界各地超過 500 位的開發貢獻者，完整的清單請見
-  developers_para2: OpenHub 上的貢獻者頁面。
-  developers_para3: 以下是一些在門羅幣專案中有著特別傑出貢獻的開發者們。
   community: 社群
   mrl: 研究實驗室
-  thanks: 特別感謝
-
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.
@@ -184,11 +136,6 @@ downloads:
     HTTP RPC and 0MQ interface.
   currentversion: Current Version
   sourcecode: Source Code
-  showissues: Show known issues for this release
-  noissues: This release has no known major issues
-  yesissues: >
-    This release has the following known issues:<br>
-    - Initial sync of the blockchain very slow. Will be fixed with a point release
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
@@ -236,14 +183,7 @@ downloads:
   mobilelight3: page to see where we are.
   installer: Installer
 
-monero-project:
-  kovri: Kovri 專案使用點對點的加密技術，使得不論是門羅幣交易的發送者或接收者都不會向對方或第三方揭露他們的 IP 位址。這與暗網的所用到的是相同的技術：I2P
-    (Invisible Internet Protocol)。這專案目前正在積極活躍的開發中，尚未整合到門羅幣中。
-  kovri_button: 造訪 Kovri 專案網站
-  openalias: OpenAlias 專案藉由 FQDNs (Fully Qualified Domain Names)， 像是 example.openalias.org
-    這樣的網址來簡化加密貨幣的支付。這功能可確保大家的門羅幣錢包地址的隱私安全。此專案的進展相當順利，並已在許多門羅幣錢包中完成實做。
-  openalias_button: 造訪 OpenAlias 專案網站
-
+monero-project: {}
 press-kit:
   intro1: 你可以在這邊取得一些門羅幣的代表性圖案與標誌。你可以選擇想要的尺寸或是下載 .ai 檔案以自行編輯你想要的標示圖案。
   intro2: 請注意白色背景選項是只有在門羅幣圖案底下的白色背景，而非整張圖片的背景。
@@ -272,65 +212,17 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
 
-accepting:
-  title: 指令界面工具的使用說明
-  basics: 基本介紹
-  basics_para1: 門羅幣與你過去曾接觸過其他的 @加密貨幣 稍微有點不同。以比特幣與其相同衍生類型的幣為例，通常商家的支付系統會為每一個使用者或每一筆交易產生全新的收款
-    @地址 。
-  basics_para2: 但是，因為門羅幣有 @隱匿性地址 所以並不需要在每次交易中使用不同的收款地址，可以公開使用同一個 @帳戶 地址。取而代之的是商家將會提供一個「付款
-    ID」給付款者。
-  basics_para3: " @付款ID 是一個十六進位制的64字元長的字串，通常是由商家隨機產生，一個付款ID的範例如下："
-  checking: 在 monero-wallet-cli 中檢查一筆付款
-  checking_para1: |
-    如果你想要使用 monero-wallet-cli 檢查一筆付款，你可以使用「payments」指令搭配一或多組付款ID，譬如：
-  checking_para2: 如果你想要透過程式化的方式檢查付款，其細節將在下一個部份解釋。
-  receiving: 接收一筆付款的步驟
-  receiving_list1: 產生一組隨機的十六進位制 64 字元字串作為付款ID
-  receiving_list2: 將這組付款ID與門羅幣地址提供給付款者
-  receiving_list3: 在 monero-wallet-cli 中用「payments」檢查付款
-  program: 透過程式化的方式檢查付款
-  program_para1: 若要透過程式化的方式檢查付款，你可以透過 JSON RPC API 呼叫 get_payments 或 get_bulk_payments。
-  program_para2: 這將需要一個付款ID作為 payment_id 的參數。
-  program_para3: 這是較為適當的方式，需要兩個參數，一為 payment_ids (帶有付款ID的 JSON 陣列) 和可選的 min_block_height
-    參數 (指定掃描的區塊高度起始點)。
-  program_para4: |
-    一個回傳的資料範例如下：
-  program_para5: 重要的一點是，回傳的金額是以基本門羅幣單位來呈現，而由於付款通常都是由多組交易輸出所組成，金額會是由 tx_hash 或是 payment_id
-    分群的多個結果組合而成。 此外，由於多個交易輸出可能有相同的金額，因此請不要嘗試從單一個 get_bulk_payments 指令回傳的資料中篩選交易。
-  program_para6: 在掃瞄付款之前，最好先透過節點的 RPC API (呼叫 get_info) 來確認是否有收到新的區塊資料，通常你會想要只從這些新收到的區塊資料中掃描付款，可以透過指定
-    min_block_height 再呼叫 get_bulk_payments 來達成。
-  scanning: 透過程式化的方式檢查付款
-  scanning_list1: 從節點取得目前的區塊高度，僅在區塊高度增加時進行掃描。
-  scanning_list2: 在我們系統上呼叫 get_bulk_payments RPC API 指令，並指定最後一次的掃描區塊高度以及付款 ID 清單。
-  scanning_list3: 將目前的區塊高度儲存起來以作為最後一次的掃描高度。
-  scanning_list4: 以交易雜湊碼來判斷並去除與先前已處理過的重複的交易紀錄。
-
+accepting: {}
 contributing:
   intro: 門羅幣是一個開放原始碼、由社群推動的專案。以下列出了一些可以支持本專案的方法。
   network: 支持交易網路
   develop: 開發工作
-  develop_para1: 門羅幣主要是以 C++ 語言撰寫，由於它是一個去中心化的專案，任何人都歡迎在現有的程式碼上進行新增或修改，拉取請求 (Pull requests)
-    將由社群共識決定是否可以被合併 (merge)，詳情請見
-  develop_para2: 儲存庫
-  develop_para3: 和一些重要的
   develop_para4: 議題 (issues)。
   full-node: 運行全節點
-  full-node_para: 運作一個開啟連接埠 18080 的 monerod，運作一個全節點可以確保在交易門羅幣時可以獲得完整的隱私保護，同時也幫助將區塊鏈資料分配給新加入的使用者。
   mine: 挖礦
-  mine_para1: 挖礦可以確保門羅幣維持去中心化與安全，在門羅幣的圖形化介面或指令介面錢包中，可以啟用背景挖礦，更多的挖礦資訊可以參考
-  mine_para2: 這裡。
   ffs: 造訪論壇募資系統
-  ffs_para1: 門羅幣專案利用一個
-  ffs_para2: 論壇募資系統
-  ffs_para3: 來進行社群資助的開發專案提案，募資的資金將會被託管，直到專案開發進度達到事先設定的里程碑，任何人都可以提出新的提案或是資助現有的提案。
   donate: 贊助
-  donate_para1: 正在進行中的開發是由社群贊助與
-  donate_para2: 贊助單位所贊助。
-  donate-xmr: 以門羅幣贊助
   donate-xmr_para: 贊助款項可以發送至
-  or: 或
-  donate-btc: 以比特幣贊助
-  donate-btc_para: 贊助款項可以發送至
   donate-other: 其他
   donate-other_para1: 發送電子郵件至
   donate-other_para2: 若你想要以其他的方式贊助或是想要成為門羅幣的贊助單位。
@@ -355,12 +247,6 @@ faq:
     ASIC 礦機的工作量證明 (proof of work) 演算法、尾發行與一些其他的改變。
   q8: 門羅幣有區塊容量限制嗎？
   a8: 沒有，門羅幣並沒有硬性固定的區塊容量限制。取而代之的是，區塊容量會隨著需求量增加或減少區塊容量。但區塊的成長速率有設定上限以避免沒有節制的暴增。
-  q9: 什麼是區塊鏈？
-  a9: 區塊鏈是一個可以儲存門羅幣所有交易歷史的系統，每隔兩分鐘，帶有最新交易紀錄的新區塊就會產生並被添加到區塊鏈上，這條鏈可以提供整個交易網路做驗證，使得其免於攻擊與中心化的干預。
-  q10: 什麼是 Kovri ？
-  a10: Kovri 是一個以 C++ 撰寫的 I2P 路由。I2P 是一個隱藏的網路，就像是一種 Tor 網路但有些許技術上差異。Kovri 是獨立於門羅幣的專案，但它將得以在門羅幣與一些其他專案上運作。Kovri
-    隱藏交易廣播時的資訊，所以其他節點將會無法得知是誰創建了該筆交易。若能一如預期的運作，Kovri 可以透過 I2P 隱藏所有的門羅幣網路流量，讓人們無從得知門羅幣的使用情形。Kovri
-    目前正在 alpha 階段，尚未完全整合至門羅幣中，若要獲得更多關於 Kovri 的資訊，請造訪其<a href="https://kovri.io">專案網站。</a>
   q11: 什麼是貨幣替代性與為什麼這是重要的特性？
   a11: 貨幣替代性 (Fungibility) 是錢幣的基本特性，代表兩個相同單位的錢幣之間沒有差異。如果兩個人交換了一個 10 與兩個 5，沒有人會有所損失。但是，若假設所有人都知道那筆
     10 曾被用在一場勒索軟體的攻擊事件中，那其他人還會願意接受這筆交易嗎？很可能不會。即使該持有者與該勒索攻擊事件無關。這就產生了一個問題，接收錢幣的那方將必須持續檢查是否不小心收到了贓款。門羅幣是滿足貨幣替代性的，因此人們再也不需要擔心這個問題。
@@ -382,7 +268,6 @@ mining:
   support: 技術支援
   support_para1: 詳見
   support_para2: 聊天室，
-  support_para3: /r/moneromining (英文)
   support_para4: 和
   pools: 礦池
   pools_para1: 一些可信任的門羅幣礦池列表在
@@ -393,41 +278,7 @@ mining:
   software: 挖礦軟體
   software_para: 請注意有些挖礦工具可能會收取開發者手續費。
 
-using:
-  intro: 用門羅幣交易可以很簡單，本頁面將會引導使用者進行。
-  learn: 1. 學習
-  learn_para1: 門羅幣是安全、保護隱私且完全匿蹤的加密或幣。開發者與社群都致力於保護這些核心價值，欲瞭解更多請詳見
-  learn_para2: 什麼是門羅幣
-  learn_para3: 的頁面。
-  learn_para4: 程式原始碼
-  learn_para5: 也是完全開放審查與討論。
-  support: 2. 請求技術支援
-  support_para1: 如果你遇到困難，廣大熱心的社群將會提供你協助。詳見
-  support_para2: 聊天室
-  support_para3: 頁面以獲得更多資訊。
-  generate: 3. 建立錢包
-  generate_para1: 你將需要一個門羅幣錢包以保護你的資金。詳見
-  generate_para2: 下載頁面
-  generate_para3: 已獲得可用錢包的列表。
-  generate_para4: 若要運作一個門羅幣節點，最簡單亦不會占用你的網路頻寬的方式是購買一個 VPS (Virtual Private Server)
-    服務。我們推薦
-  generate_para5: 並使用
-  generate_para6: 折扣碼以獲得比原本就很便宜的 6美金/每月 更優惠的 VPS 方案PS。使用這個折扣碼與/或
-  generate_para7: 我們的推薦連結
-  generate_para8: 將會同時幫助門羅幣的開發工作獲得資助。
-  acquire: 4. 取得門羅幣
-  acquire_para1: 門羅幣的取得可以在
-  acquire_para2: 交易所
-  acquire_para3: 用法幣或其他加密或幣兌換而得。另一個方式是藉由
-  acquire_para4: 挖礦，
-  acquire_para5: 取得，透過一些複雜的計算工作來確保在區塊鏈上紀錄的交易不會被竄改。
-  send-receive: 5. 發送與接收門羅幣
-  send-receive_para1: 學習如何發送與接收門羅幣，詳見
-  send-receive_para2: 教學。
-  transact: 6. 使用門羅幣交易
-  transact_para1: 門羅幣可以用來購買許多商品與服務，列表詳見
-  transact_para2: 商家頁面。
-
+using: {}
 what-is-monero:
   need-to-know: 你需要知道的事情
   leading: 門羅幣是專注在保護隱私與對抗審查交易的領導加密貨幣。
@@ -437,9 +288,6 @@ what-is-monero:
   confidential_para1: 每一筆門羅幣的交易，在預設的狀況下，發送與接收的地址與交易金額都是被混淆過的資訊。這項永遠啟用的隱私保護代表著門羅幣的每個使用活動都是在提升其他人的隱私保護，這與其他選擇性透明的加密貨幣
     (例如 Zcash) 不同。
   confidential_para2: 門羅幣是滿足貨幣替代性的。由於資訊都是被混淆過的，門羅幣無法被先前的交易汙染，這代表門羅幣永遠不會有被審查而拒絕收取的風險。
-  confidential_para3: Kovri 專案，
-  confidential_para4: 目前正在開發中
-  confidential_para5: ，將會使用 I2P 將交易使用的網路連線在隱藏的網路節點進行加密，這將會隱藏交易者的 IP 位址，提供在網路審查環境中更好的保護效果。
   grassroots: 門羅幣是草根型的社群，吸引了全世界頂尖的加密貨幣研究員與工程師
   grassroots_para1: 已有超過
   grassroots_para2: 500 位開發者
@@ -473,8 +321,6 @@ developer-guides:
   rpc: RPC 說明文件
   daemonrpc: 節點 RPC 說明文件
   walletrpc: 錢包 RPC 說明文件
-  soon: 更多文件即將發布...
-
 user-guides:
   general: 一般
   mining: 挖礦
@@ -489,7 +335,6 @@ user-guides:
   verify-windows: 在 windows 系統上驗證執行檔 (入門)
   mine-on-pool: 如何使用 XMRig 在礦池挖礦
   solo-mine: 如何使用 GUI 錢包進行 solo 挖礦
-  mine-docker: 使用 Docker 與 XMRig 進行挖礦
   locked-funds: 如何修復被鎖定的資金
   restore-account: 如何回復你的帳戶
   qubes: 使用 Qubes 與 Whonix 隔離你的 CLI 錢包 / 節點
@@ -498,7 +343,6 @@ user-guides:
   view-only: 如何製作唯讀錢包
   prove-payment: 如何證明付款
   restore-from-keys: 從金鑰回復錢包
-  nicehash: 如何在不使用挖礦裝置的情況下挖取門羅幣
   ledger-wallet-cli: 如何使用 CLI 錢包產生 Ledger 錢包 (monero-wallet-cli)
   multisig-messaging-system: 如何使用 MMS 與 CLI 錢包進行多重簽名交易
   tor_wallet: Connecting your local wallet to your own daemon over Tor
@@ -750,41 +594,11 @@ research-lab:
 
 
 specs:
-  fair_title: 沒有預挖、沒有瞬挖、沒有代幣
-  fair_premine: 門羅幣從未進行預挖或瞬挖
-  fair_token: 門羅幣從未販售過任何代幣
-  fair_presale: 門羅幣從未有任何形式的預售
   pow_title: 工作量證明
-  pow_name: CryptoNight
-  pow_disclaimer: 此機制在未來可能會調整
-  diff_title: 難度重新調整
-  diff_freq: 每個區塊
-  diff_base: 基於最近 720 區塊，並排除 20% 的時間戳記離群值
-  block_time_title: 區塊時間
-  block_time_duration: 2 分鐘
-  block_time_disclaimer: 此參數在未來可能因應保護發行曲線而調整
-  block_reward_title: 區塊獎勵
-  block_reward_amount: 緩慢的下降，並對容量超過最近 100 區塊容量中位數 (M100) 的區塊進行獎勵懲罰
-  block_reward_example1: 觀看
-  block_reward_example_link: 最新區塊
-  block_reward_example2: 的 coinbase 交易即可了解目前的獎勵金額
-  block_size_title: 區塊容量
-  block_size: 動態的，最大值限制為 2 * M100
   block_emission_title: 發行曲線
   block_emission_main: "起始，主要發行曲線： 到 2022 年底將發行大約 1813.2 萬的門羅幣"
   block_emission_tail: "接著，尾發行曲線： 當主要發行曲線結束後，每 2 分鐘區塊固定產生 0.6 XMR 的機制將會啟動，長時間的運作下相當於\
     \ <1% 的通膨"
-  block_emission_disclaimer1: 詳見
-  block_emission_disclaimer_link: 圖表與細節
-  supply_title: 最大發行量
-  supply_amount: 無限制
-  sender_privacy_title: 付款者隱私
-  sender_privacy_mode: 環狀簽名
-  recipient_privacy_title: 收款者隱私
-  recipient_privacy_mode: 隱匿性地址
-  amount_hidden_title: 金額混淆
-  amount_hidden_mode: 環狀保密交易
-
 library:
   description: "以下是一些出版物、書籍或雜誌提供下載。"
   books: 書籍
@@ -826,18 +640,14 @@ library:
     Hardware, and Monerujo.
 
 moneropedia:
-  add_new_button: 新增條目
   add_new_text1: 如果你有條目想要修改或新增，請
   add_new_link: 在本網站的 GitLab repository 新開一個 issue
   add_new_text2: 或是發送 pull request 以提交條目更動
   entries:
     account: Account
-    address-book: Address Book
     address: Address
     airgap: Airgap
     atomic-units: Atomic Units
-    base32-address: Base32 address
-    base64-address: Base64 address
     blockchain: Blockchain
     block: Block
     bootstrap-node: Bootstrap-node
@@ -849,32 +659,15 @@ moneropedia:
     consensus: Consensus
     cryptocurrency: Cryptocurrency
     daemon: Daemon
-    data-directory: Data Directory
     denominations: Denominations
-    destination: Destination
-    eepsite: Eepsite
     encryption: Encryption
-    floodfill: Floodfill
     fluffyblocks: Fluffy Blocks
     fungibility: Fungibility
-    garlic-encryption: Garlic-Encryption
-    garlic-routing: Garlic Routing
-    i2np: I2NP
-    i2pcontrol: I2PControl
-    i2p: I2P
-    in-net: In-net
-    java-i2p: Java I2P
-    jump-service: Jump Service
     kovri: Kovri
-    lease: Lease
-    lease-set: Lease-Set
     locally-unique-host: Locally-unique host
-    message: Message
     mining: Mining
     mnemonicseed: Mnemonic Seed
-    network-database: Network Database
     node: Node
-    ntcp: NTCP
     openalias: OpenAlias
     paperwallet: Paper Wallet
     paymentid: Payment ID
@@ -882,34 +675,23 @@ moneropedia:
     pruning: Pruning
     randomx: RandomX
     remote-node: Remote Node
-    reseed: Reseed
     ringCT: Ring CT
     ringsignatures: Ring Signature
     ring-size: Ring Size
-    router-info: Router-Info
     scalability: Scalability
     signature: Cryptographic Signature
     smartmining: Smart Mining
     spendkey: Spend Key
-    ssu: SSU
     stealthaddress: Stealth Address
-    subscription: Subscription
     tail-emission: Tail Emission
     transaction: Transactions
-    transports: Transports
-    tunnel: Tunnel
     unlocktime: Transaction Unlock Time
     viewkey: View Key
     wallet: Wallet
+    clsag: CLSAG
 
 blog:
-  title_1: 全部
-  title_2: 部落格
-  title_3: 文章
-  tagged: 標籤
   author: 作者
   date: 發表時間於
-  forum: 點這裡以加入關於此項條目的討論
-
 tags:
   notags: 此標籤下沒有找到文章。
