@@ -406,8 +406,6 @@
   merchants:
     - name: Crypto Games
       url: https://www.crypto-games.net/
-    - name: Minko.to - The Monero Plinko. Provably fair on-chain game.
-      url: https://minko.to
     - name: Monero Betting
       url: http://moneroeetsad6quaq4weauz5ndsx5jf6y3z5zwtckhudciapom26byid.onion/
     - name: Monero.win - Bet on the Monero Blockchain
