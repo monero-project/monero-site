@@ -1,11 +1,11 @@
 ---
-terms: ["scalability"]
-summary: "How Monero scaling is flexible and can accommodate many transactions as demand changes"
+terms: ["scalability", "Skalierbarkeit"]
+summary: "Beschreibt Moneros flexible Skalierung, die dem wechselnden Bedarf entsprechend viele Transaktionen unterbringen kann"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-The size of Monero @blocks (which contain @transactions) is flexible and can accommodate many transactions as demand changes. Formulas determine how the reward miners receive interacts with the number of transactions they choose to include in blocks. The @blockchain can therefore scale to meet changes in transaction volume.
+Die Größe von Moneros @Blöcken (welche @Transaktionen enthalten) ist flexibel, was es ermöglicht, je nach Bedarf mehr oder weniger große Mengen von Transaktionen in Blöcken aufzunehmen. Formeln ermitteln, wie die an Miner gehenden Belohnungen und die Anzahl der in Blöcken aufgenommenen Transaktionen einander beeinflussen. Um etwaigen Veränderungen im Transaktionsvolumen zu entsprechen, kann sich die @Blockchain daher an ebendieses anpassen.
 
-Scaling may also refer to the ability to conduct certain types of intermediate transactions safely without interacting with a blockchain. Monero does not currently support native off-chain solutions like atomic swaps, since its privacy features do not permit the use of required functionality like non-interactive refund transactions or complex scripting. However, academic and industry research is ongoing and promising in this area.
+Skalieren könnte auch auf die Fähigkeit verweisen, bestimmte Arten zwischenzeitlicher Transaktionen sicher und ohne Interaktion mit einer Blockchain durchzuführen. Monero unterstützt derzeit keine nativen "Off-Chain"-Lösungen wie etwa Atomic Swaps, da deren Privatsphärefunktionen es nicht erlauben, benötigte Funktionen wie nicht interaktive Rückzahlungstransaktionen oder komplexe Skripterstellung zu verwenden. Die akademische wie industrielle Forschung ist auf diesem Gebiet allerdings fortlaufend und vielversprechend.

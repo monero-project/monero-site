@@ -1,56 +1,59 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Шаг 1
+### Purpose and Warning
 
-Скачать последнюю программу самозагрузки по ссылке: https://downloads.getmonero.org/blockchain.raw. Этот шаг можно пропустить, если блокчейн импортируется из другого источника.
+Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
 
-### Шаг 2
+This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
 
-Найти путь к вашему кошельку Monero (папке, в которую он был извлечён). Например, в моём случае путь выглядит так:
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+
+### Step 1
+
+Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
+
+### Step 2
+
+Find the path where the Monero software is installed. For example mine is:
 
 `D:\monero-gui-0.10.3.1`
 
-Путь может отличаться, в зависимости от того, куда был загружен кошелёк, или же от версии кошелька Monero.
+Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
 
-### Шаг 3
+### Step 3
 
-Найти путь к загруженному блокчейну. Например, у меня он был следующим:
+Find the path of your downloaded blockchain for example mine was:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Как и в случае с кошельком, путь может быть другим, в зависимости от того, куда был загружен блокчейн.
+Yours might be different depending on where you chose to save the downloaded blockchain.
 
-### Шаг 4
+### Step 4
 
-Открыть окно ввода команды (это можно сделать, нажав клавиши Windows+R). Теперь ввод данных будет происходить во всплывающем диалоговом командном окне `CMD`
+Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
 
-### Шаг 5
+### Step 5
 
-В окне CMD следует указать путь к вашему кошельку Monero. Это можно сделать, введя путь:
+Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
 
-`cd C:\ПУТЬ\К\КОШЕЛЬКУ\УКАЗЫВАЕТСЯ\ЗДЕСЬ`
+`cd C:\YOUR\MONERO\PATH\HERE`
 
-Он должен выглядеть примерно так:
+It should look something like:
 
 `cd D:\monero-gui-0.10.3.1`
 
-Если кошелёк находится на другом диске, можно просто использовать `DriveLetter`. Если кошелёк Monero находится на диске D, перед использованием команды cd следует указать `D:`
+If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
 
-### Шаг 6
+### Step 6
 
-Теперь в окне ввода команды следует указать следующее:
+Now type in your command prompt window:
 
-`monero-blockchain-import --input-file C:\ПУТЬ\К\ФАЙЛУ\БЛОКЧЕЙНА`
+`monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
-Например, я мог бы ввести:
+For example I would type :
 
 `monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Если блокчейн загружается из проверенного и надёжного источника, то можно задать значение `verify 0`, что ускорит синхронизацию блокчейна.
+### Step 7
 
-### Шаг 7
-
-По завершении синхронизации блокчейна, как правило, кошелёк Monero открывается без каких-либо проблем, а загруженный файл blockchain.raw может быть удален.
-
-
-Автор: Ки Джеффрис (Kee Jefferys)
+After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.

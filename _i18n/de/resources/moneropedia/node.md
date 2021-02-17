@@ -1,24 +1,24 @@
 ---
-terms: ["node", "nodes", "full-node", "full-nodes"]
-summary: "a device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network"
+terms: ["node", "nodes", "full-node", "full-nodes", "Node", "Nodes", "Full-Node", "Full-Nodes"]
+summary: "Ein mit dem Internet verbundenes Gerät, welches die Monero-Software ausführt, über eine vollständige Kopie der Monero-Blockchain verfügt, und damit das Monero-Netzwerk aktiv unterstützt"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network.
+Ein Node ist ein mit dem Internet verbundenes Gerät mit einer Kopie der Monero-Blockchain, welches die Monero-Software ausführt und damit das Monero-Netzwerk aktiv unterstützt. Ein Node, der nicht auf deinem lokalen Gerät läuft, nennt sich @Remote-Node. Remote-Nodes können privat (bei ausschließlichem Privatgebrauch) oder offen sein, wenn sie für andere zugänglich sind.
 
-### More Information
+### Weitere Informationen
 
-Nodes participate in the Monero network and secure @transactions by enforcing the rules of the network. Nodes download the entire @blockchain to know what transactions have taken place. Nodes assist the network by relaying transactions to other nodes on the network. Nodes may also choose to contribute to the Monero network by participating in crafting @blocks (this is called @mining).
+Nodes beteiligen sich innerhalb des Monero-Netzwerks, setzen dessen Regeln durch und sichern damit @Transaktionen. Nodes laden die gesamte @Blockchain herunter, damit sie Kenntnis über die stattgefundenen Transaktionen haben. Sie unterstützen das Netzwerk, indem sie Transaktionen an andere Nodes innerhalb des Netzwerks weitergeben. Nodes können außerdem zum Monero-Netzwerk beitragen, indem sie an der Erstellung von @Blöcken mitwirken (dies wird @Mining genannt).
 
-Mining is the process by which nodes create a block from the previously accepted block, transactions that are waiting to be processed in the transaction pool, and the @coinbase-transaction. When a node believes it has crafted a valid block it will transmit the completed block to other nodes on the network and those nodes signal agreement by working on the next block in the chain.
+Mining ist der Prozess, durch welchen Nodes unter Bezugnahme auf den vorherigen Block (meist mittels seines Hashwerts) aus den Transaktionen, die im Transaktionspool auf ihre Verarbeitung warten, und aus der @Coinbase-Transaktion einen neuen Block erstellen. Wenn ein Node denkt, er habe einen validen Block erstellt, überträgt er diesen an andere Nodes innerhalb des Netzwerks. Diese wiederum signalisieren ihr Einverständnis durch das Arbeiten am nächsten Block der Blockchain.
 
-The rules that nodes follow are built into the Monero software; When all nodes agree about the rules to follow this is called @consensus. Consensus is necessary for a cryptocurrency because it is how the blockchain is built; If nodes don't agree about which blocks are valid, for example people who have not updated their Monero software, those nodes that don't agree will no longer be able to participate in the Monero network.
+Die Regeln, welche Nodes befolgen, sind in die Monero-Software eingebaut. Wenn alle Nodes darin übereinstimmen, diese Regeln zu befolgen, nennt man dies @Konsens. Konsens ist deshalb notwendig für eine Kryptowährung, da so die Blockchain aufgebaut wird. Nodes, die nicht darin übereinstimmen, welche Blöcke valide sind (etwa, weil ein Node-Betreiber seine Monero-Software nicht aktualisiert hat), können nicht mehr am Monero-Netzwerk mitwirken.
 
-The Monero Core Team plans for a network upgrade every 6 months, to occur in October and April of each year. At that time, if you are running a node it must be updated to the most recent version of the Monero software or it will no longer be able to participate in the network.
+Das Monero-Core-Team plant alle sechs Monate eine Netzwerkaktualisierung, stattfindend im April und Oktober eines jeden Jahres. Wenn du zu diesen Zeitpunkten einen Node betreibst, muss dieser mit der neuesten Version der Monero-Software aktualisiert sein, ansonsten wird er nicht mehr am Netzwerk teilhaben können.
 
 ---
 
-##### Other Resources
-<sub>1. *Fluffypony gives a great explanation of why mandatory network upgrades are good for Monero.* ([Monero Missives for the Week of 2016-06-20](https://getmonero.org/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
+##### Weitere Quellen
+<sub>1. *Fluffypony erklärt, warum obligatorische Netzwerkaktualisierungen gut für Monero sind.* ([Monero Missives for the Week of 2016-06-20]({{ site.baseurl_root }}/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>

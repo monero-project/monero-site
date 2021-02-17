@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-# monero-wallet-cli
-
 `monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program,
 and manages an account. While a bitcoin wallet manages both an account and the blockchain,
 Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.

@@ -12,7 +12,7 @@
 - [How to make a blog post](#how-to-make-a-blog-post)
 - [How to make a User Guide](#how-to-make-a-user-guide)
 - [How to make a Moneropedia Entry](#how-to-make-a-moneropedia-entry)
-- [How to update the Team page](#how-to-update-the-team-page)
+- [How to update the Workgroups page](#how-to-update-the-workgroups-page)
 - [How to update the Roadmap](#how-to-update-the-roadmap)
 - [How to add a new Merchant](#how-to-add-a-new-merchant)
 - [How to add a question to the FAQ](#how-to-add-a-question-to-the-faq)
@@ -22,7 +22,7 @@
 This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in.
 Feel free to skip down to a relevant section if you already know what you need.
 
-If you need support about something related to the website, plese join `#monero-site` [Freenode/IRC](irc://chat.freenode.net/#monero-site), [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org) and MatterMost. For general info about Monero join `#monero`. We'll do whatever we can to help you.
+If you need support about something related to the website, please join `#monero-site` [Freenode/IRC](irc://chat.freenode.net/#monero-site), [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org) and MatterMost. For general info about Monero join `#monero`. We'll do whatever we can to help you.
 
 ## What you'll need
 
@@ -61,7 +61,7 @@ A few random points of note:
 ## Translation
 In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. For live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost).
 
-The bulk of the website and the roadmap are translatable on Weblate, an easy to use localization platform that provide contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
+The entire website, except for user guides and Moneropedia entries, is translatable on Weblate, an easy to use localization platform that provide contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
 
 We are trying to move most of the localization work on Weblate, but some parts of the website still need to be manually translated on the repository. The following instructions will tell you which files to translate and how to proceed.
 
@@ -83,7 +83,7 @@ Here you can do your translation. Depending on the page, you may have to maneuve
 Moneropedia entries have two specificities:
 
 * The Front Matter:  
-Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extanded with their translation, leaving the English words **untouched**.
+Moneropedia Fron should be translated for both *entry:* and *summary:* elements. However, *terms:* should be extended with their translation, leaving the English words **untouched**.
 This is really important for compatibility purposes. With this, if a new guide is added to the site, an English term on the untranslated version of the guide in another language could be linked to the moneropedia article (of the same language).
 
 * The snippet keeping track of the status of the translation must be updated (`{% include disclaimer.html translated="no" translationOutdated="no" %}`). If the document is translated, change `translated="no"` to `translated="yes"`. If the document is translated, but the original file (in English) was updated, change `translationOutdated="no"` to `translationOutdated="yes`.
@@ -117,7 +117,7 @@ For example, if the user guide `How to solo mine with the GUI` is translated int
 2. If this is the first localized screenshot for that language, you'll need to create a dedicate folder with the code of that language. In this example we'll use `fr`.
 3. Copy the folder containing the screenshots of the guide you are working on from inside the `en` folder. In this example you have to copy `solo_mine_GUI` into `fr`
 4. Now take a look at the screenshots inside `solo_mine_GUI` and replace them with screenshots of the GUI in French.
-5. Edit the path of the images in the markdown file which contains the guide. Remember that by default all guides point to the english version, so everything you'll have to do is to change the path of the screenshot and replace `en` with your language code. In ouur example, we need to navigate to `/_i18n/fr/resources/user-guides/solo_mine_GUI.md` and change the path of all screenshots from `/img/resources/user-guides/en/remote_node/SCREENSHOT.png` to `/img/resources/user-guides/fr/remote_node/SCREENSHOT.png`.
+5. Edit the path of the images in the markdown file which contains the guide. Remember that by default all guides point to the English version, so everything you'll have to do is to change the path of the screenshot and replace `en` with your language code. In our example, we need to navigate to `/_i18n/fr/resources/user-guides/solo_mine_GUI.md` and change the path of all screenshots from `/img/resources/user-guides/en/remote_node/SCREENSHOT.png` to `/img/resources/user-guides/fr/remote_node/SCREENSHOT.png`.
 
 ### 4. set the 'translated' snippet to true
 Somewhere on the page (usually the top) should be a snippet that says `{% include disclaimer.html translated="false" version=page.version %}`. Simply change this to `{% include disclaimer.html translated="true" version=page.version %}`. This will remove the orange bar from the bottom saying the page is untranslated.
@@ -174,7 +174,7 @@ If the guide is outdated, simply change `False` into `True`.
 
 When you update a guide, you are responsible for updating this version tracking in every file involved in your update. Don't be afraid to ask for help if the process is not clear to you.
 
-The screenshots of all user guides are in `/img/user-guides/LANG`. Where `LANG` cna be any of the languages supported by Getmonero. By default, all localized versions of the website will use the english version of the screenshots, see the [translations](#translation) section for info about translating screenshots.
+The screenshots of all user guides are in `/img/user-guides/LANG`. Where `LANG` can be any of the languages supported by Getmonero. By default, all localized versions of the website will use the English version of the screenshots, see the [translations](#translation) section for info about translating screenshots.
 
 ## How to make a blog post
 
@@ -263,10 +263,12 @@ Repeat the above process for each language version of this index page.
 
 ### 1. Make a Global file
 Navigate to the /resources/moneropedia folder and make a new file. Be sure the file name has no spaces and the ending is .md
-Fil this file with this exact content:
+Fill this file with this exact content:
 ```
 ---
 layout: moneropedia
+title: titles.moneropedia
+entry: moneropedia.entries.ENTRY
 ---
 
 @moneropedia_article
@@ -275,6 +277,8 @@ layout: moneropedia
 {% tf resources/moneropedia/account.md %}
 
 ```
+
+Where `ENTRY` is a one word identifier for the title/name of your Moneropedia entry. For example, if you are adding a new Moneropedia entry called "Daemon", it can be `moneropedia.entries.daemon`.
 
 ### 2. Make the localized File
 Navigate to the /\_i18n/en/resources/moneropedia folder and make a new file. give it the same <name>.md than in previous step.
@@ -303,56 +307,43 @@ terms: ["PUT", "TERMS", "HERE", "EXPLAINED", "BELOW"]
 summary: "PUT SUMMARY OF YOUR ENTRY HERE IN QUOTES"
 ---
 
-{% include untranslated.html %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 ```
 
-## How to update the Team page
+### 5. Add the title to _i18n/en.yml
+Now you need to add the title of the page to the `_18n/en.yml` file. It *must* be in the `moneropedia` section and must be the same as the `ENTRY` you added early in the `/resources/moneropedia` folder (moneropedia.entries.ENTRY). Keeping as example a Moneropedia called "Daemon", you have to add in the `moneropedia` block `daemon: Daemon`.
 
-If you are acting on behalf of another individual, please make sure you get their permission first before adding them onto the Team page.
+## How to update the Workgroups page
 
-### 1. Change the .yml file
-Navigate to the `/_data/` folder and open `team.yml`. You will notice a long list separated by main `-area:` tags.
+The page is composed by boxes, each containing a workgroup. Just make sure to copy the structure from the preceeding box and paste it right after it.
 
-**DO NOT MESS WITH THE FORMATTING OR INDENTATION OF ANYTHING OR JEKYLL WILL NOT BUILD PROPERLY!**
-
-Find the area that you want to update and copy the code below:
-```
-- name:
-  url:
-```
-Put the name or handle of the person in the `name` section and in the  `url:` section put the link to their GitHub or GitLab URL (it must have https:// at the beginning). If they have no GitHub, then you may leave it blank, it won't mess anything up.
-
-**Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
-
-Save the file.
+Note that the class of the `div` which forms the box is `right/left half col-lg-6 col-md-6 col-sm-12 col-xs-12`. Make sure to choose `left` or `right` according to the position you want the box to appear in.
 
 ## How to update the Roadmap
 
-### 1. Edit the .yml file
-Navigate to the `/_data/` folder and open `lang/en/roadmap.yml`. You will notice this structure:
+The file containing the structure of the roadmap is in `/resources/roadmap/index.md`.
+
+If you want to update the roadmap, you'll probably want to add a new entry (under an existing year+month) or a new entry under a new month.
+
+A new entry can be added using HTML lists:
 
 ```
-year_2014:
-- month:
-  STATUS:
-    - name:
+<li class="STATUS">{% t roadmap.KEY %}</li>
 ```
-Where STATUS can be either `completed`, `ongoing` or `upcoming`.
 
-Look for the year and month related to the entry you want to add, if the month and status are already present, simply add `- name: NAME OF YOUR ENTRY` in the correct position.
+Where `STATUS` can be:
 
-For example, there was a new release on March 2020 and you would like to add it to the roadmap as "completed":
+- `completed` for completed milestones
+- `ongoing` for milestones currently being worked on
+- `upcoming` for milestones not yet completed or in progress
 
-- Scroll the `roadmap.yml` file until you arrive to `year_2020`
-- The milestone happened in March so you need to look for that month (`- month: March`)
-- Since the milestione has been already achieved, look for the `completed:` status.
-- Under it add `-name: NAME OF YOUR ACHIEVED MULESTONE`. Which in our case would be `-name: release wallet WHATEVER`
+If an entry is `completed`, a green tick simble will be displayed on its left. if it's `ongoing` a roadwork sign and `upcoming` a compass.
 
-If a year, month or status is missing, simpluy adding by following the structure you see in the page.
+`KEY` is the key used in the `_i18n/LANG.yml` file, in the `roadmap` section. If you are adding a new entry, you only need to add the key and its contained text in the `_i18n/en.yml` file. Weblate, the localization platform, will deal with making the string available for translators and then add it to all languages.
 
-**Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
+If you need to add a month, add `<h3 id="months">{% t roadmap.MONTH %}</h3>` above your roadmap entry. `MONTH` is one of the 12 months, you'll find the list in the `_18n/en.yml` file. In the `roadmap` section.
 
-The translation of the roadmap happens [on Weblate](https://translate.getmonero.org/projects/getmonero/roadmap/).
+The roadmap can be translated on Weblate [on Weblate](https://translate.getmonero.org/projects/getmonero/monero-site/).
 
 ## How to add a new Merchant
 

@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Herstellen met sleutels
-
 Je kunt een portemonnee makkelijk herstellen met je privésleutels. Als je de benodigde gegevens hebt, kun je met deze handleiding je portemonnee volledig herstellen. Je hebt je wachtwoord NIET nodig voor herstellen met sleutels.
 
 Wat je nodig hebt zijn ofwel 3 gegevens uit je portemonnee, ofwel het bestand met de extensie .keys waarin deze gegevens staan, plus het wachtwoord waarmee dit bestand is versleuteld. Je hebt deze 3 onderdelen van je portemonnee nodig:

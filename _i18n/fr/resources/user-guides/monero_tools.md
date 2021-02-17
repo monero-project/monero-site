@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# Outils Monero
-
 Ces outils peuvent être utilisés pour obtenir des informations concernant le réseau Monero ou les données de vos transactions dans la chaîne de blocs.
 
 ### [Vérifier qu'un destinataire à reçu vos fonds](http://xmrtests.llcoins.net/checktx.html)

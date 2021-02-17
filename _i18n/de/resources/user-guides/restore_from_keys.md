@@ -1,54 +1,52 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Restoring from keys
+Die Wiederherstellung eines Wallets durch private Schlüssel ist ziemlich einfach. Wenn du die notwendigen Angaben hast, kannst du dein Wallet mit dieser Anleitung komplett wiederherstellen. Zur Info: Du benötigst NICHT dein Passwort, um dein Wallet durch die Schlüssel wiederherzustellen.
 
-Restoring a wallet from private keys is pretty simple. If you have the necessary information, with this guide you can completely restore your wallet. Note: you do NOT have to have your password to restore from keys.
+Du brauchst drei Angaben deines Wallets oder alternativ deine ".keys"-Dateien, welche sowohl diese Infos wie auch das Passwort zum Entschlüsseln enthalten. Die drei benötigten Bestandteile des Wallets sind:
 
-You need to have 3 pieces of data from your wallet, or your .keys file which holds this info and the password to decrypt it. The 3 wallet components that you need are:
-
-1. **Address**
-2. **Secret Spendkey**
-3. **Secret Viewkey**
+1. **Adresse**
+2. **Geheimer Spend-Key**
+3. **Geheimer View-Key**
 
 
 #### CLI
 
-Then run the wallet command:
+Führe dann den Wallet-Befehl aus:
 
 `./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`
 
-Next, you'll be asked for the Address, the spendkey, the viewkey, and finally the new password for the re-generated wallet.
+Als Nächstes wirst du nach der Adresse, dem Spend- und dem View-Key und schließlich nach einem neuen Passwort für das wiederhergestellte Wallet gefragt.
 
-Running this with the correct parameters will re-generate your wallet files for you and allow you to set a new password.
+Führst du dies mit den richtigen Parametern aus, werden deine Wallet-Dateien neu generiert und dir wird ermöglicht, ein neues Passwort festzulegen.
 
-If you run into any trouble, running `./monero-wallet-cli --help` will show you the options available to you at wallet startup. Once you're inside your wallet, running the `help` command will list the help for the commands available to you within the wallet.
+Solltest du in irgendwelche Schwierigkeiten geraten, wird dir `./monero-wallet-cli --help` die bei Inbetriebnahme deines Wallets verfügbaren Optionen aufzeigen. Sobald du "in" deinem Wallet bist, kannst du dir durch den `help`-Befehl eine Liste von Hilfestellungen für die dir verfügbaren Befehle innerhalb des Wallets anzeigen lassen.
 
 #### GUI
 
-Launch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:
+Starte `monero-wallet-gui`. Wenn du das Programm zum ersten Mal startest, gehe über zum nächsten Schritt, ansonsten wähle `Abbrechen`:
 
 ![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
 
-Select your appropriate language `English(US)`:
+Wähle die für dich passende Sprache `Deutsch`:
 
 ![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
 
-Click on `Restore wallet from keys or mnemonic seed`:
+Klicke auf `Stelle Wallet mit Schlüsseln oder mnemonischem Seed wieder her`:
 
 ![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
 
-Select `Restore from keys`, give your wallet a name & storage location, and complete the `Account address (public)`, `View key (private)` & `Spend key (private)`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:
+Wähle `Mit Schlüsseln wiederherstellen`, lege Namen und Speicherstelle deines Wallets fest und vervollständige deine `Wallet-Adresse (öffentlich)`, den `View-Key (privat)` und `Spend-Key (privat)`. Um das Scannen der ältesten Blöcke zu umgehen, kannst du eine optionale `Wiederherstellungshöhe` festlegen. Klicke dann auf den `rechten` Pfeil:
 
 ![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
 
-On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:
+Auf der nächsten Seite gibst du deinem Wallet ein starkes Passwort. Bestätige dieses, bevor du abermals auf den `rechten` Pfeil klickst:
 
 ![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
 
-Specify your daemon settings and click the `Right` arrow:
+Lege die Einstellungen deines Hintergrunddienstes fest und klicke dann erneut auf den `rechten` Pfeil:
 
 ![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
 
-Click on `USE MONERO` to enjoy your restored wallet:
+Klicke auf `USE MONERO` und hab Spaß mit deinem wiederhergestellten Wallet:
 
 ![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)

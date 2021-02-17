@@ -642,6 +642,7 @@ Outputs:
 * *block_size_limit* - unsigned int; Maximum allowed block size
 * *block_size_median* - unsigned int; Median block size of latest 100 blocks
 * *bootstrap_daemon_address* - string; @Bootstrap-node to give immediate usability to wallets while syncing by proxying RPC to it. (Note: the replies may be untrustworthy).
+* *busy_syncing* - boolean; States if new blocks are being added (`true`) or not (`false`).
 * *cumulative_difficulty* - unsigned int; Cumulative difficulty of all blocks in the blockchain.
 * *difficulty* - unsigned int; Network difficulty (analogous to the strength of the network)
 * *free_space* - unsigned int; Available disk space on the node.
@@ -656,6 +657,7 @@ Outputs:
 * *stagenet* - boolean; States if the node is on the stagenet (`true`) or not (`false`).
 * *start_time* - unsigned int; Start time of the daemon, as UNIX time.
 * *status* - string; General RPC error code. "OK" means everything looks good.
+* *synchronized* - boolean; States if the node is synchronized (`true`) or not (`false`).
 * *target* - unsigned int; Current target for next proof of work.
 * *target_height* - unsigned int; The height of the next block in the chain.
 * *testnet* - boolean; States if the node is on the testnet (`true`) or not (`false`).
@@ -679,6 +681,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     "block_size_limit": 600000,
     "block_size_median": 129017,
     "bootstrap_daemon_address": "",
+    "busy_syncing": "false",
     "cumulative_difficulty": 14121125493385685,
     "difficulty": 60580751777,
     "free_space": 138758750208,
@@ -693,6 +696,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     "stagenet": false,
     "start_time": 1524751757,
     "status": "OK",
+    "synchronized": true,
     "target": 120,
     "target_height": 1562063,
     "testnet": false,
@@ -1104,7 +1108,7 @@ Outputs:
   * *speed* - unsigned int; connection speed
   * *start_block_height* - unsigned int; block height of the first block in that span
 * *status* - string; General RPC error code. "OK" means everything looks good.
-* *target_height* - unsigned int; target height the node is syncing from (optional, absent if node is fully synced)
+* *target_height* - unsigned int; target height the node is syncing from (will be undefined if node is fully synced)
 
 Example:
 

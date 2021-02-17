@@ -16,4 +16,4 @@ Dans sa forme la plus simple, OpenAlias est une entrée DNS TXT sur un FQDN (ful
 
 Un standard qui permet d'utiliser une syntaxe d'adresse e-mail ou de nom de domaine pour payer quelqu'un au lieu d'une adresse, p.ex. donate@getmonero.org ou donate.getmonero.org
 
-Plus d'information sont disponibles sur la [page OpenAlias](/fr/the-monero-project/) ou sur le [site web d'OpenAlias](https://openalias.org)
+Plus d'information sont disponibles sur le [site web d'OpenAlias](https://openalias.org)

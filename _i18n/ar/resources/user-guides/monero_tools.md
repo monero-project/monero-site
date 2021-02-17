@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# أدوات مونيرو
-
 هذه الأدوات يُمكن إستخدامها لجمع المعلومات حول شبكه مونيرو أو بيانات مُعاملاتك في سلسله الكتل.
 
 ### [تحقق من إستلام المُستلم للأموال](http://xmrtests.llcoins.net/checktx.html)

@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# monero-wallet-cli
-
 `monero-wallet-cli` est une application de portefeuille qui est incluse dans la suite Monero. C'est un
 programme en ligne de commandes qui permet de gérer un compte. Tandis que le portefeuille Bitcoin
 gère à la fois un compte et la chaîne de bloc, Monero sépare ces deux composants : `monerod`

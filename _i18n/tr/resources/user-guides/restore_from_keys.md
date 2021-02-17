@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Restoring from keys
-
 Restoring a wallet from private keys is pretty simple. If you have the necessary information, with this guide you can completely restore your wallet. Note: you do NOT have to have your password to restore from keys.
 
 You need to have 3 pieces of data from your wallet, or your .keys file which holds this info and the password to decrypt it. The 3 wallet components that you need are:

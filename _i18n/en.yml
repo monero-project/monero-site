@@ -16,10 +16,6 @@ global:
   outdated: The content of this page is outdated and the might be not valid anymore. Contact the community if you need support.
   outdatedMin: This page has been updated since the translation. You can use this version, but it may be incomplete. Please use the
   outdatedVersion: English version
-  upgradoct: Make sure your software is up-to-date with the
-  upgradeoctlink: "October 17th network upgrade."
-  upgrdecont: To continue using Monero after that date,
-  dwlsoftware: Download Monero "Oxygen Orion" (0.17).
   lang_tag: "@lang_tag_en"
 
 titles:
@@ -31,7 +27,7 @@ titles:
   faq: FAQ
   downloads: Downloads
   allposts: All Blog Posts
-  team: Monero Team
+  workgroups: Workgroups
   hangouts: Hangouts
   sponsorships: Sponsorships
   merchants: Merchants & Services
@@ -55,7 +51,6 @@ navigation:
   contributing: Contributing
   mining: Mining
   community: Community
-  team: Team
   merchants: Merchants
   resources: Resources
   about: About
@@ -65,7 +60,9 @@ footer:
   feed: RSS Feed
   legal: Legal
   source: Source Code
-  channels: IRC channels
+  ml: Mailing List
+  ccs: Community Crowdfunding System
+  reachout: Reach Out
 
 index:
   page_title: "Monero - secure, private, untraceable"
@@ -141,14 +138,45 @@ sponsorships:
   macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
 
 team:
-  core: Core
-  developers: Developers
-  developers_para1: The Monero Project has had well over 500 contributors over the life of the project. For a complete list, please see the
-  developers_para2: OpenHub contributors page.
-  developers_para3: Below you'll find some individuals that have gone above and beyond for Monero.
-  community: Community
+  introduction: Workgroups are formed by community members who join forces to achieve a common goal. They have different structures and goals. On this page we list some of the more active workgroups and some tips to get you started, if you wish to contribute to any of them.
+  core: Core Team
+  community: Community Workgroup
   mrl: Research Lab
-  thanks: Special Thanks
+  descr: Description
+  start: Where to start
+  contacts: Chatrooms and Contacts
+  chat: "Chat:"
+  website: "Website:"
+  core_descr: As stewards of the project, the Core Team manages and maintains infrastructure where centralization cannot be avoided (domains, website, github repositories...). Its members act as mediators as they see fit and aim to weigh consensus in the community, perpetuating the quality interactions that made Monero the successful project it is today. The Core Team does not and has never received any financial compensation.
+  core_start: The Core Team is a closed workgroup; it's not possible to join unless invited.
+  community_descr: This workgroup is used by the community to organize and coordinate. Start here if you are a non-coder who wants to contribute to Monero.
+  community_start: The best way to start contributing to this workgroup is to join the chatrooms and introduce yourself, stating your interests and the skills you would like to offer to the community.
+  devworkgroup: Development Workgroup
+  devworkgroup_descr: "This workgroup unites Monero developers working on the wallets and daemon maintained by the Core Team. It consists of two main parts: the CLI team and the GUI team. These teams coordinate using two different chatrooms."
+  devworkgroup_start: It's a good idea to take a look at open issues on both repositories to have an idea of what could be fixed or improved. Both codebases, but especially the core repository, can be quite challenging, so it's suggested to first write in the chatroom introducing yourself, your skills, and to what you wish to contribute.
+  chatgeneral: "Chat (general):"
+  chatgui: "Chat (GUI):"
+  webworkgroup: Website Workgroup
+  web_descr: This dev-focused workgroup coordinates the development of the website. Most members are also part of the Development Workgroup. The Website Workgroup was mostly created to have discussions related to the website all in one place.
+  web_start: It's always a good idea to join the chatroom and talk directly with the members of the workgroup, but if you prefer to get started by yourself, take a look at the readme in the GitHub repository. It contains step by step instructions to edit every single part of this website.
+  localization: Localization Workgroup
+  localization_descr: One of the oldest Monero Workgroups, it's formed by contributors working on translating Monero-related software and documentation. It's strongly suggested to contact the workgroup before working on translations.
+  localization_start: Contact the workgroup on the chatroom or open an issue on the GitHub repository. You can also start translating immediately using the Weblate platform. Just make sure to read the guide for translators first.
+  locplatform: "Localization platform:"
+  outreach_descr: This workgroup is focused on getting Monero out there, gathering artists, writers, and anyone who wishes to make Monero known to the world.
+  outreach_start: The members of the Outreach Workgroup heavily use Telegram for coordination and matrix/freenode in minor part. If you want to help, you can contact the workgroup on one of these channels. It is quite structured, so you'll probably be directed to a coordinator.
+  telegram: "Telegram chat:"
+  mrl_descr: As the name suggests, the Monero Research Lab is the workgroup focused on Monero-related research. It's formed by scientists finding ways to improve Monero's protocol and features. Most of the protocol improvements that make Monero amazing, like CLSAG and @Bulletproofs, are the result of the efforts of this workgroup.
+  mrl_start: Join the chatroom below and state your interests and your skills. Research is always ongoing, and somebody will point you in the right direction.
+  space: Monero Space
+  space_descr: Monero Space is an active, project-focused Monero workgroup that provides services to the Monero community. It hosts popular resources and organizes events such as Monero Meet.
+  space_start: The workgroup can be contacted by writing to their chatroom on Freenode.
+  mrw: Malware Response Workgroup
+  mrw_descr: The Malware Response Workgroup provides resources and live support for multiple types of Monero-related malware.
+  mrw_start: Most of the activity of this workgroup happens on the IRC chat. If you wish to contribute, just join the channel to ask questions or provide support.
+  mpwg: Monero Policy Working Group
+  mpwg_descr: Monero Policy Working Group is a loosely formed quorum of individuals with an interest in interacting with regulators, policy makers, and the wider financial services sector to ensure broad understanding of Monero’s component technologies, especially with regards to its compatibility with evolving regulatory and compliance requirements.
+  mpwg_start: If you would like to take part or follow policy discussions, join matrix/freenode chatroom.
 
 downloads:
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
@@ -216,6 +244,10 @@ downloads:
   moreinfofaq: More info in the FAQ
   packages: There are also packages available for multiple Linux distributions.
   packages_link: See the list on GitHub
+  releasenotes: release notes
+  wallet: Wallet
+  mobile: Mobile
+  desktop: Desktop
 
 press-kit:
   intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself.
@@ -302,30 +334,42 @@ contributing:
   intro: Monero is an open-source, community-driven project. Described below are several ways to support the project.
   network: Support the Network
   develop: Develop
-  develop_para1: Monero is primarily written in C++. As it is a decentralized project, anyone is welcome to add or make changes to existing code. Pull requests are merged based on community consensus. See the
-  develop_para2: repositories
-  develop_para3: and outstanding
-  develop_para4: issues.
-  full-node: Run a Full Node
-  full-node_para: Run monerod with port 18080 open. Running a full node ensures maximum privacy when transacting with Monero. It also improves distribution of the blockchain to new users.
+  developp: "Monero is open source and permissionless; contributors are welcome and encouraged. A developer may contribute in numerous way to different projects:"
+  cli: "CLI wallet and Daemon: "
+  cli_p: The core wallet, mostly written in C++.
+  gui: "GUI Wallet: "
+  gui_p: Mostly QML and C++.
+  website: "This website: "
+  website_p: Built with Jekyll. No Javascript.
+  bug: "Bug and vulnerability hunting: Monero is listed on Hackerone and developers are asked to responsibly disclose bugs and vulnerabilities. See"
+  discl: The Monero Project Vulnerability Response Process.
+  develop_descr: >
+    This list only includes the tools stewarded by the core team, but the Monero ecosystem is much more vaste. People can contribute to the development of libraries, services, documentation, graphics, etc. The list is virtually infinite. Contact or join the workgroup more affine to your way of contributing.
+  develop_wg: See the Monero Workgroups.
+  full-node: Run a Node
+  full-node_p: An easy and effective way to help the Monero network is to run a @node. Nodes ensure the network keeps running safe and decentralized. A simple fully synchronized node is enough to help the network, but if you want to go out of your way, you could run an open @remote-node, to allow other people to connect to it.
+  full-node_p2: "We have several guides to help you run and configure your node:"
+  allguides: See all User Guides.
   mine: Mine
-  mine_para1: Mining ensures the Monero network remains decentralized and secure. In the Monero graphical user interface and command-line interface, background mining may be activated. Additional resources for mining may be viewed
-  mine_para2: here.
-  ffs: View the Community Crowdfunding System
-  ffs_para1: Monero utilizes a
-  ffs_para2: community crowdfunding system
-  ffs_para3: whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
+  mine_p: >
+    Mining ensures the safety of the network. Monero uses @randomx, an ASIC-resistant algorithm developed by Monero contributors, which aims to remain mineable by common consumer-grade hardware. For more info about mining see the
+  mine_link: dedicated Mining page.
+  ffs: Community Crowdfunding System
+  ccs_p: Monero utilizes a community crowdfunding system whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
+  ccsbutton: Go the the CCS
   donate: Donate
-  donate_para1: Ongoing development is supported by donations and
-  donate_para2: sponsorships.
-  donate-xmr: Donating Monero
-  donate-xmr_para: Donations may be sent to
-  or: or
-  donate-btc: Donating Bitcoin
-  donate-btc_para: Donations may be sent to
+  donate_p: Donation to the general fund are used to pay the salary of core's assistant Rehrar and in case of emergencies or need. Infrastructure costs are currently covered by sponsors.
+  genfund: General Fund
+  genfund_p: "You can donate both Monero and Bitcoin:"
   donate-other: Other
   donate-other_para1: E-mail
   donate-other_para2: for alternative means of donating or if you would like to become a sponsor for the Monero Project.
+  supportdev: Support the developers
+  supportdev_p: The developers working on Monero are mostly indepentent volunteers, but some of them may be funded through CCS proposals. If you wish to support their efforts by donating some XMRs, consider contacting them personally or using tipping services.
+  sponsor: Sponsorships
+  sponsor_p: You can also support Monero through a sponsorship program. See the dedicated 
+  sponsor_link: Sponsorships page
+  sponsor_p2: for more info.
 
 faq:
   intro: List of common questions with relative answers and resources
@@ -352,7 +396,7 @@ faq:
   q1: How does Monero have value?
   a1: Monero has value because people are willing to buy it. If no one is willing to buy Monero, then it will not have any value. Monero’s price increases if demand exceeds supply, and it decreases if supply exceeds demand.
   q2: How can I get Monero?
-  a2: You can buy Monero from an exchange or from an individual. Alternatively, you can try mining Monero to get coins from the @block reward.
+  a2: You can buy Monero from an exchange or from an individual. Exchanges are the most common way to buy Monero; there are compliant exchanges in most jurisdictions. Some wallets include functionality to easily buy Monero with fiat or other cryptocurrencies. Alternatively, you can try mining Monero to get coins from the @block reward.
   a2exchanges: "In past, you needed Bitcoin to buy Monero, but that's not the case anymore. You can directly trade Monero for national currencies (USD, EUR, GBP, etc) or other cryptocurrencies on many exchanges. Some require KYC (proof of identification); others do not, like decentralized exchanges. On this website is available a list of exchanges where it's possible to buy/sell Monero (XMR):"
   q3: Why is the Mnemonic Seed important?
   a3: A @mnemonic-seed is a set of 25 words that can be used to restore your account anywhere. Keep these words safe and do not share them with someone else. You can use this seed to restore your account, even if your computer crashes.
@@ -386,6 +430,8 @@ faq:
   anodetor: Support for Tor is still in its infancies, but it's already possible to natively send transactions through the network and to run a Monero @daemon on the Tor network. Better Tor and I2P integrations are in progress.
   qfullpruned: How do I decide if I should run a full node or a pruned node?
   afullpruned: "A full @node requires a considerable amount of storage and could take a long time to download and verify the entire blockchain, especially on older hardware. If you have limited storage, a pruned node is recommended. It only stores 1/8th of unnecessary blockchain data while keeping the full transaction history. If plenty of storage is available, a full node is recommended but a pruned node still greatly contributes to the network and improves your privacy."
+  qblocksize: How big is the Monero blockchain?
+  ablocksize: "The Monero @blockchain is always growing so there is no fixed size. As of 2021, the full blockchain is around 95-100GB. A pruned blockchain is about 30GB. Check out Moneropedia entry @pruning to learn the difference between a full and a pruned blockchain."
   qblockspace: Why does the blockchain need so much space?
   ablockspace: "When you download the @blockchain, you are downloading the entire history of the @transactions that happened in the Monero network since it was created. The transactions and the related data are heavy and the entire history must be kept by every node to ensure it's the same for everybody. @pruning a blockchain allows to run a node which keeps only 1/8 of not strictly necessary blockchain data. This results in a blockchain 2/3 smaller than a full one. Convenient for people with limited disk space. Check out the Moneropedia entries @node and @remote-node for more details."
   qavoidbc: Can I avoid downloading the entire blockchain?
@@ -404,6 +450,21 @@ faq:
   qimporting: Can I manually import the blockchain?
   aimporting: >
     Yes, you can, but you probably shouldn't. Importing an external @blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain. It's usually faster to download it the normal way: running a node and letting it synchronize with the other @nodes in the network. If you really need to import an external blockchain, you can download one in the 'Downloads' page of this website. Follow the guide below if you are using Windows. If you are a linux user, you can use the tool "monero-blockchain-import", which is included in the archive when you download the GUI or CLI wallets. Start syncing the imported blockchain with this command: "monero-blockchain-import --input-file blockchain.raw".
+  qhf: Is it true that Monero has a hard fork every 6 months?
+  ahf: Monero used to have 2 network upgrades (hard forks) a year, but this is not the case anymore. The choice of the biannual hard forks was taken in order to be able to introduce important consensus changes, which added privacy features and network-wide improvements (For example @bulletproofs and CLSAG both required a hard fork) and avoid the ossification of the protocol. Recently, the biannual hard forks included changes to the PoW algorithm, to preserve ASIC-resistance.
+  ahf1: The dev community and the Core Team agree that the protocol is stable and mature enough and biannual hard forks are not necessary anymore. Furthermore, the ecosystem around Monero has grown exponentially during the years and frequent protocol changes would be increasingly hard to coordinate, could be detrimental to the growth of the ecosystem and to the user experience. Cherry on the top, the new algorithm @randomx is ensuring long term ASIC-resistance, so regular changes are not needed anymore. Network upgrades will still be used to add important protocol improvements and consensus changes, but at a lower and less strict frequency (every 9-12 months).
+  qvideos: Are there videos I can watch to learn about Monero?
+  avideos: >
+    During the years the community has created a vast amount of informative content like articles and videos. Most of these videos are publicly available on platforms like YouTube. On this website we host a few videos that explain the fundamentals of Monero. To optimize their effectiveness, they should be viewed in sequence:
+  video_intro: Introduction to Monero
+  video_essentials: "Monero: The Essentials"
+  video_sa: Stealth Addresses
+  video_ringsig: Ring Signatures
+  mvideos: "More info on the Moneropedia entry:"
+  aavailable: also available in
+  and: and
+  qlongtimemove: I haven't touched my Monero in a long time, did I lose my coins as a consequence of a hard fork (network upgrade)?
+  alongtimemove: Don't worry, your coins are safe. To be able to spend them you only have to download and run the latest Monero software. You can use the @mnemonic-seed you previously saved to restore your wallet at any time. Note that hard forks in Monero are scheduled and non-contentious. Which means no new coin is created.
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
@@ -483,6 +544,7 @@ developer-guides:
   vanity-monero: Generate vanity address for CryptoNote currency (Monero etc.).
   go-monero-rpc-client: A go client for the Monero wallet and daemon RPC.
   monero-rs: Library with support for (de)serialization on block data structures and key/address generation and scanning related to Monero cryptocurrency.
+  csharp-monero: A wallet and daemon client to interface with Monero's JSON-RPC API, built on .netstandard2.1
 
 user-guides:
   general: General
@@ -512,6 +574,7 @@ user-guides:
   node-i2pzero: Run a Monero node through I2P with I2P-zero
   guiguide: Guide for the Monero GUI wallet
   tailsguide: Set up a wallet (using a remote node) on Tails
+  back: Back to the list
 
 roadmap:
   completed: Completed task
@@ -544,19 +607,19 @@ roadmap:
 
   released-0-9-0: 0.9.0 Hydrogen Helix released
   paper5: Monero Research Lab Paper 5 published
-  ringsize-3: Network Upgrade to require minimum ringsize of 3 on all transactions
+  ringsize-3: Network Upgrade to require minimum @ringsize of 3 on all @transactions
   released-0-10-0: 0.10.0 Wolfram Warptangent released
-  splitcoinbase: Network Upgrade to split coinbase into denominations
+  splitcoinbase: Network Upgrade to split coinbase into @denominations
   released-0-10-1: 0.10.1 Wolfram Warptangent released
   guibeta1: Official GUI Beta 1 released
 
-  enableringct: Network Upgrade to enable RingCT transactions
+  enableringct: Network Upgrade to enable @RingCT transactions
   released-0-10-2: 0.10.2 released; critical vulnerability patched
   released-0-10-3-1: 0.10.3.1 Wolfram Warptangent released
   hfminblock: Network Upgrade to adjust minimum blocksize and dynamic fee algorithm
   webredesign: Website redesigned
   released-0-11-0: 0.11.0.0 Helium Hydra released
-  fluffyblocks: Fluffy blocks
+  fluffyblocks: '@fluffy blocks'
   guioutbeta: GUI out of beta
   minringsize5: Network Upgrade to increase minimum ringsize to 5 and require RingCT transactions
   releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra released
@@ -583,8 +646,8 @@ roadmap:
   released-0-13-0-2: 0.13.0.2 Beryllium Bullet released
   releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet released
   cryptonightv3: New Proof of Work CryptoNightV3
-  bulletproofs: Implementation of Bulletproofs to reduce transaction sizes
-  ringsize11: Network upgrade to increase minimal ringsize to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
+  bulletproofs: Implementation of @Bulletproofs to reduce transaction sizes
+  ringsize11: Network upgrade to increase minimal @ring-size to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
   released-0-13-0-4: 0.13.0.4 Beryllium Bullet released
   paper8-9: Monero Research Lab Papers 8 and 9 published
   releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet released
@@ -600,7 +663,7 @@ roadmap:
   cryptonightr: New Proof of Work CryptoNightR
   getmonero-pt_br: Getmonero.org Localization in Brazilian-Portuguese and Dutch
   dlsag: "DLSAG: Non-Interactive Refund Transactions For Interoperable Payment Channels in Monero"
-  pruning: Blockchain pruning
+  pruning: Blockchain @pruning
   trezort: Trezor model T support
   nanox: Ledger Nano X support
   tori2p: Tor & I2P CLI wallet integration
@@ -608,9 +671,9 @@ roadmap:
   weblate: "Localization platform change: from Pootle to Weblate"
   rpcpay: Pay for service system using mining (RPC-Pay)
   ipv6: IPv6 support
-  removedpid: Standalone (long) payment ID support removed
-  nodediscovery: GUI automatic remote nodes discovering and switching option
-  randomx: New Proof of Work RandomX
+  removedpid: Standalone (long) @payment-ID support removed
+  nodediscovery: GUI automatic @remote-nodes discovering and switching option
+  randomx: New Proof of Work @RandomX
 
   getmoneroweblate: Getmonero translatable on Weblate
   releasedgui-0-15-0-4: GUI 0.15.0.4 released
@@ -626,11 +689,13 @@ roadmap:
   released-0-17: CLI and GUI 0.17 'Oxygen Orion' released
   
   returnaddr: Return addresses
+  atomicswaps: Monero <-> Bitcoin atomic swaps
+  bplus: Bulletproofs+
 
 
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
-  mrl_papers: Monero Research Lab Papers (English)
+  mrl_papers: Monero Research Lab Papers
   abstract: Abstract
   introduction: Introduction
   read-paper: Read Paper
@@ -670,6 +735,8 @@ research-lab:
   annotated_para: The Monero Research Lab released an annotated version of the cryptonote whitepaper. This is sort of like an informal review of the claims that are made line-by-line of the whitepaper. It also explains some of the harder concepts in relatively easy to understand terms.
   brandon: Brandon Goodell's Whitepaper Review
   brandon_para: This paper is a formal review of the original cryptonote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented in the cryptonote paper.
+  libraryp: "The library contains useful documents like 'Zero to Monero' and 'Mastering Monero', which explore and explain Monero in detail."
+  librarybutton: Explore the Library
 
 
 specs:
@@ -714,6 +781,9 @@ library:
     <li>Introductions to technical foundations of Monero, intended for developers, engineers, software architects, and curious users.</li>
     <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc.</li></ul>
     See <a href="https://masteringmonero.com/">Mastering Monero</a> website for information.
+  moneroaddressescheatsheet20201206: "Monero Addresses Cheatsheet (version 20201206)"
+  moneroaddressescheatsheet20201206p: >
+    Between the ‘big picture’ and the mathematical details, a single-page recap of various keys, addresses, scopes (private/public, spend/view, on-chain/off-chain, payer’s/payee’s) and their relations.
   magazines: Magazines
   revuoq4p: >
     Quarterly Monero magazine, Q4 2017 edition.<br>
@@ -725,7 +795,7 @@ library:
 moneropedia:
   description: >
     The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order. If you wish to edit an existing voice or to add a new one, click the button at the bottom of the page.
-  add_new_button: Add New Entry
+  instructions: Instructions for adding a Moneropedia entry are in the
   add_new_text1: If there is an entry you'd like to modify or be added, please
   add_new_link: open an issue on this website's GitHub repository
   add_new_text2: or submit changes via pull request
@@ -775,6 +845,7 @@ moneropedia:
     unlocktime: Transaction Unlock Time
     viewkey: View Key
     wallet: Wallet
+    clsag: CLSAG
 
 blog:
   allposts: All Posts
@@ -792,6 +863,7 @@ tags:
 
 accessibility:
   arrowup: Go back to the top of the page
+  gotop: Go to top
   guiscreen: A screenshot of the Monero GUI wallet. It shows the wallet's balance and a navigation menu on the left, and a form for sending XMR on the right.
   cliscreen: CLI wallet screenshot
 

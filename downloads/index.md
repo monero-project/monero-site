@@ -63,7 +63,7 @@ permalink: /downloads/index.html
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
               <h3>{% t titles.downloads %}</h3>
-                <p><i>{% t downloads.currentversion %}:</i> {{ item.version }}</p>
+                <p><i>{% t downloads.currentversion %}:</i> {{ item.version }} (<a href="{{ site.baseurl_root }}/blog/tags/releases.html">{% t downloads.releasenotes %}</a>)</p>
                 <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
@@ -91,9 +91,6 @@ permalink: /downloads/index.html
                     {% endfor %}
                     </ul>
                   </div>
-                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package">{% t downloads.packages_link %}</a>.</p>
-                  <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
-                  <div class="col-md-12 col-sm-12 col-xs-12">
                   {% for entry in item.downloads %}
                     {% if entry.vers != nil %}
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -104,11 +101,14 @@ permalink: /downloads/index.html
                     </div>
                     {% endif %}
                   {% endfor %}
+                  <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero-gui#installing-the-monero-gui-from-a-package">{% t downloads.packages_link %}</a>.</p>
+                  <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                   <h3>{% t downloads.verify %}</h3>
                     <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                     <details>
                     <summary>{% t downloads.showhash %}</summary>
-                     <p>{% t downloads.showhash1 %} <a href="https://getmonero.org/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
+                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
                      <p>{% t downloads.showhash4 %} <a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a> - <a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a>.</p>
                      <dl>
                     {% for entry in item.downloads %}
@@ -152,7 +152,7 @@ permalink: /downloads/index.html
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
               <h3>{% t titles.downloads %}</h3>
-                <p><i>{% t downloads.currentversion %}:</i> {{ item.version }}</p>
+                <p><i>{% t downloads.currentversion %}:</i> {{ item.version }} (<a href="{{ site.baseurl_root }}/blog/tags/releases.html">{% t downloads.releasenotes %}</a>)</p>
                 <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
@@ -182,25 +182,25 @@ permalink: /downloads/index.html
                       {% endfor %}
                     </ul>
                 </div>
+                {% for entry in item.downloads %}
+                  {% if entry.vers != nil %}
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
+                    <ul>
+                      <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                    </ul>
+                  </div>
+                  {% endif %}
+                {% endfor %}
                 <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package">{% t downloads.packages_link %}</a>.</p>
                 <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
                 </div>
-                {% for entry in item.downloads %}
-                    {% if entry.vers != nil %}
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                      <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
-                      <ul>
-                        <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
-                      </ul>
-                    </div>
-                    {% endif %}
-                  {% endfor %}
                 <div class="col-md-12 col-sm-12 col-xs-12">
                 <h3>{% t downloads.verify %}</h3>
                 <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                   <details>
                     <summary>{% t downloads.showhash %}</summary>
-                     <p>{% t downloads.showhash1 %} <a href="https://getmonero.org/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
+                     <p>{% t downloads.showhash1 %} <a href="{{ site.baseurl_root }}/downloads/hashes.txt">getmonero.org/downloads/hashes.txt</a> {% t downloads.showhash2 %} <a href="https://github.com/monero-project/monero/blob/master/utils/gpg_keys/binaryfate.asc">{% t downloads.showhash3 %}</a>.</p>
                      <p>{% t downloads.showhash4 %} <a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a> - <a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a>.</p>
                       <dl>
                      {% for entry in item.downloads %}
@@ -230,10 +230,10 @@ permalink: /downloads/index.html
                     </div>
                         <table class="desktop-only">
                         <tr>
-                            <th>Wallet</th>
-                            <th>Mobile</th>
-                            <th>Desktop</th>
-                            <th>Source Code</th>
+                            <th>{% t downloads.wallet %}</th>
+                            <th>{% t downloads.mobile %}</th>
+                            <th>{% t downloads.desktop %}</th>
+                            <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
                             <td><img src="/img/cakewallet.png" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
@@ -308,5 +308,5 @@ permalink: /downloads/index.html
                 <!-- End 'Hardware Wallets' -->
             </section>
     </div>
-    <a href="#" class="arrow-up" aria-label="{% t accessibility.arrowup %}"><i></i></a>
+    <a href="#" class="arrow-up" aria-label="{% t accessibility.arrowup %}" title="{% t accessibility.gotop %}"><i></i></a>
 </div>

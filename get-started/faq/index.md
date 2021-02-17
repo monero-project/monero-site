@@ -31,6 +31,8 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-anonymous">{% t faq.q14 %}</a></li>
                         <li><a href="#antivirus">{% t faq.qantivirus %}</a></li>
                         <li><a href="#monero-meaning">{% t faq.qmoneromeaning %}</a></li>
+                        <li><a href="#hardforks">{% t faq.qhf %}</a></li>
+                        <li><a href="#videos">{% t faq.qvideos %}</a></li>
                     </ul>
                     <li class="category">{% t faq.advanced %}</li>
                     <ul class="logo">
@@ -44,9 +46,11 @@ permalink: /get-started/faq/index.html
                     <ul class="logo">
                         <li><a href="#anchor-wallet">{% t faq.qwallet %}</a></li>
                         <li><a href="#anchor-lost-funds">{% t faq.qnofunds %}</a></li>
+                        <li><a href="#long-time-move">{% t faq.qlongtimemove %}</a></li>
                         <li><a href="#anchor-tor-node">{% t faq.qnodetor %}</a></li>
                         <li><a href="#anchor-long-sync">{% t faq.q5 %}</a></li>
                         <li><a href="#anchor-full-pruned">{% t faq.qfullpruned %}</a></li>
+                        <li><a href="#anchor-block-size">{% t faq.qblocksize %}</a></li>
                         <li><a href="#anchor-block-space">{% t faq.qblockspace %}</a></li>
                         <li><a href="#anchor-avoid-bc">{% t faq.qavoidbc %}</a></li>
                         <li><a href="#anchor-scanned-wallet">{% t faq.qscanned %}</a></li>
@@ -166,6 +170,27 @@ permalink: /get-started/faq/index.html
                         <p>{% t faq.amoneromeaning %}</p>
                     </div>
                 </div>
+                <div class="tab" id="hardforks">
+                    <h3><a class="anchor" href="#monero-meaning"></a>{% t faq.qhf %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.ahf %}</p>
+                        <p>{% t faq.ahf1 %}</p>
+                        <p>{% t faq.additional %} <a href="{{ site.baseurl_root }}/2020/09/01/note-scheduled-upgrades.html">A note on scheduled protocol upgrades</a></p>
+                    </div>
+                </div>
+                <div class="tab" id="videos">
+                    <h3><a class="anchor" href="#videos"></a>{% t faq.qvideos %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.avideos %}</p>
+                        <ol>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero_Promo.m4v">{% t faq.video_intro %}</a> ({% t faq.aavailable %} <a href="{{ site.baseurl_root }}/media/ru/Monero_Promo.m4v">Russian</a> {% t faq.and %} <a href="{{ site.baseurl_root }}/media/pt-br/Monero_Promo.m4v">Brazilian Portuguese</a>)</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20The%20Essentials.m4v">{% t faq.video_essentials %}</a></li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Stealth%20Addresses.m4v">{% t faq.video_sa %}</a> - {% t faq.mvideos %} @stealth-addresses</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Ring%20Signatures.m4v">{% t faq.video_ringsig %}</a> - {% t faq.mvideos %} @ring-signatures</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">RingCT</a> - {% t faq.mvideos %} @ring-ct</li>
+                        </ol>
+                    </div>
+                </div>
                 <div class="row center-xs">
                     <!-- 'Advanced' section-->
                     <div class="col"><h2>{% t faq.advanced %}</h2></div>
@@ -221,6 +246,12 @@ permalink: /get-started/faq/index.html
                         <p>{% t faq.anofunds %}</p>
                     </div>
                 </div>
+                <div class="tab" id="long-time-move">
+                    <h3><a class="anchor" href="#long-time-move"></a>{% t faq.qlongtimemove %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.alongtimemove %}</p>
+                    </div>
+                </div>
                 <div class="tab" id="anchor-tor-node">
                     <h3><a class="anchor" href="#anchor-tor-node"></a>{% t faq.qnodetor %}</h3>
                     <div class="tab-answer">
@@ -238,6 +269,12 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-full-pruned"></a>{% t faq.qfullpruned %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.afullpruned %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="anchor-block-size">
+                    <h3><a class="anchor" href="#anchor-block-size"></a>{% t faq.qblocksize %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.ablocksize %}</p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-block-space">

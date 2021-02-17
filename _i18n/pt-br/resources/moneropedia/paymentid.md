@@ -4,7 +4,7 @@ summary: "an optional flag that is added to identify transactions to merchants, 
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
-*Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post](https://getmonero.org/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.
+*Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post]({{ site.baseurl_root }}/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics

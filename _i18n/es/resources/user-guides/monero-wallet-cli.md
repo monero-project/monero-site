@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# monero-wallet-cli
-
 `monero-wallet-cli` es el software de monedero que viene con el árbol de Monero. Es un programa de consola,
 y administra una cuenta. Mientras que un monedero de Bitcoin administra ambos, cuenta y blockchain,
 Monero separa estos: `monerod` maneja la blockchain, y `monero-wallet-cli` la cuenta.

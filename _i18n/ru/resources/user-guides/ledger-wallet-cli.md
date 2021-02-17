@@ -158,6 +158,3 @@
    Если файлы кошелька Ledger находятся не в том же каталоге, где располагается `monero-wallet-cli`, вы должны открыть файл `monero-wallet-cli` с флагом `-wallet-file /path/to/wallet.keys/file`. Вы можете скопировать файлы кошелька Ledger в тот же каталог, что и `monero-wallet-cli`.
 
 5. Если у вас есть дополнительные вопросы или вам нужна помощь, пожалуйста, оставьте комментарий к оригинальному ответу на [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli).
-
-Автор: dEBRUYNE
-Редактор: el00ruobuob

@@ -3,12 +3,14 @@
   merchants:
     - name: "#monero-otc (OTC)"
       url: https://webchat.freenode.net?channels=%23monero-otc
+    - name: 1Bit.Group - Anonymous Monero exchanger
+      url: https://1bit.group/
+    - name: Actio-fast-pay.net - Automatic exchanger 24x7
+      url: https://actio-fast-pay.net/
     - name: AgoraDesk - P2P OTC trading platform, includes Monero options
       url: https://agoradesk.com
     - name: Alfacashier
       url: https://www.alfacashier.com/
-    - name: Anycoin Direct
-      url: https://anycoindirect.eu/buy/monero
     - name: BestChange
       url: https://www.bestchange.com
     - name: Bitci (XMR/BTCI, XMR/TRY, XMR/CHFT)
@@ -25,8 +27,6 @@
       url: https://bitqist.com/
     - name: Bisq; decentralized exchange (previously Bitsquare)
       url: https://bisq.network/
-    - name: Bittrex
-      url: https://www.bittrex.com/Market/Index?MarketName=BTC-XMR
     - name: ChangeHero - Instant exchange
       url: https://changehero.io/
     - name: ChangeNOW
@@ -119,8 +119,6 @@
 - category: Payment Gateways
   id: payment-gateways
   merchants:
-    - name: Bidali
-      url: https://www.bidali.com/
     - name: CDPay
       url: https://www.cdpay.eu/
     - name: CoinPayments
@@ -191,6 +189,8 @@
 - category: Tools
   id: tools
   merchants:
+    - name: Backtestking - Build or buy your own trading strategy/bot.
+      url: https://www.backtestking.com/
     - name: Cryptoradar (Marketplace comparison website)
       url: https://cryptoradar.co/buy-monero
     - name: MoneroBase Price Charts and Tools
@@ -256,6 +256,8 @@
       url: https://itwrx.org/
     - name: Ink Rebels
       url: https://ink-rebels.com
+    - name: IVPN - Open-source, audited, privacy focused VPN service
+      url: https://www.ivpn.net/
     - name: Keyring  Creative - Web design
       url: https://keyringcreative.com
     - name: KoDDoS.net - DDoS Protection
@@ -268,6 +270,8 @@
       url: mailto:monerodev+sitesvcs@encambio.com?subject=Monero%20Services%20Hardware%20Design%20Request
     - name: Miller Technical Services - Discreet Product Development Services
       url: https://www.miller-technical.com/
+    - name: Monerojobs - Find and list jobs that pay Monero
+      url: https://www.monerojobs.com/
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
     - name: Seymour Locksmiths
@@ -280,27 +284,19 @@
       url: https://www.travala.com/
     - name: Vpn.surf
       url: https://vpn.surf/blog/buy-vpn-with-monero/
-    - name: XMR.to Monero to Bitcoin Payment Service
-      url: https://xmr.to/
 - category: Goods
   id: goods
   merchants:
     - name: Airport Decor - Decor for Aviation Lovers
       url: https://AirportDecor.com/
-    - name: Alagoria - Crypto Retail Shopping
-      url: https://alagoria.com/
     - name: AUGET - French brand of scented candles
       url: https://auget.paris/en/
     - name: BitDials - Luxury Boutique
       url: https://www.bitdials.eu
     - name: Bitgear Australia - Australian hardware wallet retailer
       url: https://www.bitgear.com.au/
-    - name: Bitvape - Australia's top rated JUUL store
-      url: https://bitvape.com.au
     - name: Cellphone and laptop repair online store in Sweden
       url: https://www.LagaiPhone.se
-    - name: Copy Corner - Full Service Printing & Graphics
-      url: https://www.mycopycorner.com
     - name: City Map Decor - City map themed home decor
       url: https://www.citymapdecor.com/
     - name: Coincards - Gift Cards, Mobile Top-ups and Prepaid Vouchers
@@ -319,10 +315,6 @@
       url: https://www.cryptocurrencyposters.com/
     - name: CryptoFlooring - plank flooring (U.S.)
       url: https://www.cryptoflooring.com
-    - name: Cryptonic Physical Monero & Bitcoin coins
-      url: https://cryptonic.net
-    - name: Digital gift cards
-      url: https://giftoff.com/
     - name: Direct Depot - Trucking Products And Power Inverters
       url: https://www.directdepot.net/
     - name: Directvoltage
@@ -331,8 +323,6 @@
       url: https://drippinjunkies.co.uk/
     - name: Ecosystems retail - new & refurbished IT equipment
       url: https://store.ecosystems-group.co.uk
-    - name: FastTech
-      url: https://www.fasttech.com/
     - name: Fierce Edge
       url: https://fierceedge.com/
     - name: Fine Art from Jeanine King ~ Artwork of Home/Archtecture, Pets, Potraits, Caricatures ~ International Shipping
@@ -393,6 +383,8 @@
       url: https://revolutionmicro.com/
     - name: SecPoint IT Security Products
       url: https://shop.secpoint.com/shop/frontpage.html
+    - name: SphinxLogic - Maker of Alternative Password Manager Gadgets
+      url: https://sphinxgadgets.com/
     - name: ShopinBit - Baked Goods, 16k Pet Supplies, 80k Electronics + Concierge Service
       url: https://shopinbit.com
     - name: Symbolika - Psychedelic Apparel and accessories Brand
@@ -403,6 +395,8 @@
       url: https://kavasociety.nz/
     - name: Toys4sex - Adult toys
       url: https://toys4sex.com.au/
+    - name: Veldt Gold - Buy and sell gold and silver bullion with Monero
+      url: https://veldtgold.com/
     - name: Judit Mátyus - Jewelry
       url: https://www.juditmatyus.com/
     - name: XenPods - E-cigarette supplier

@@ -1,56 +1,59 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Paso 1
+### Purpose and Warning
 
-Descarga la blockchain actual de https://downloads.getmonero.org/blockchain.raw; puedes saltar este paso si estás importando la blockchain de otra fuente.
+Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
 
-### Paso 2
+This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
 
-Busca la dirección de tu monedero de Monero (la carpeta donde has extraído tu monedero). Por ejemplo:
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+
+### Step 1
+
+Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
+
+### Step 2
+
+Find the path where the Monero software is installed. For example mine is:
 
 `D:\monero-gui-0.10.3.1`
 
-Tu dirección puede ser distinta dependiendo en dónde decidiste descargar tu monedero y con qué versión de monedero cuentas.
+Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
 
-### Paso 3
+### Step 3
 
-Busca la dirección del archivo de la Blockchain que descargaste, por ejemplo:
+Find the path of your downloaded blockchain for example mine was:
 
-`C:\Usuarios\KeeJef\Descargas\blockchain.raw`
+`C:\Users\KeeJef\Downloads\blockchain.raw`
 
-El tuyo puede ser distinto dependiendo de en dónde descargaste la blockchain.
+Yours might be different depending on where you chose to save the downloaded blockchain.
 
-### Paso 4
+### Step 4
 
-Abre una consola de comandos. Puedes hacerlo presionando Windows+R y escribiendo en la ventana emergente "cmd".
+Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
 
-### Paso 5
+### Step 5
 
-Ahora necesitas ir desde la consola a la dirección de tu monedero de Monero. Puedes hacer esto escribiendo:
+Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
 
-`cd C:\DIRECCIÓN\DEL\ARCHIVO\DE\TU\MONEDERO`
+`cd C:\YOUR\MONERO\PATH\HERE`
 
-Se debería ver como:
+It should look something like:
 
 `cd D:\monero-gui-0.10.3.1`
 
-Si tu monedero de Monero está en otro disco, puedes utilizar `DriveLetter:`. Por ejemplo, si tu monedero está en el disco D, entones antes de utilizar el comando `cd` debes escribir `D:`.
+If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
 
-### Paso 6
+### Step 6
 
-Ahora escribe en la consola:
+Now type in your command prompt window:
 
-`monero-blockchain-import --verify 1 --input-file C:\DIRECCIÓN\DEL\ARCHIVO\DE\TU\BLOCKCHAIN`
+`monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
 
-Por ejemplo:
+For example I would type :
 
-`monero-blockchain-import --verify 1 --input-file C:\Usuarios\KeeJef\Descargas\blockchain.raw`
+`monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Si descargaste la blockchain de una fuente confiable y de reputación, puedes configurar el comando a `verify 0`. Esto reducirá la cantidad de tiempo de sincronización de la blockchain.
+### Step 7
 
-### Paso 7
-
-Después de que la Blockchain haya terminado de sincronizarse podrás abrir tu monedero normalmente. El archivo blockchain.raw puede ser eliminado.
-
-
-Autor: Kee Jefferys
+After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.

@@ -33,6 +33,4 @@
 
 Je nieuwe account is in RAM gemaakt en de digitale bestanden zijn nu verdwenen. Zelfs een aanvaller die op een of andere manier deze gegevens zou krijgen, zou het lange wachtwoord missen om de portemonnee te openen. Voor het ontvangen van betalingen heb je je openbare adres, en je alleen-lezen sleutel om ze te bekijken. Voor toegang tot je portemonnee heb je je hersteltekst (@mnemonic-seed) van 25 woorden. Je kunt nu meerdere exemplaren hiervan opschrijven, waaronder een om elders te bewaren (bijvoorbeeld in een bankkluis).
 
-Geschreven door:  Riccardo Spagni
-
 Gerelateerd:  [Offline account-generator](http://moneroaddress.org/)

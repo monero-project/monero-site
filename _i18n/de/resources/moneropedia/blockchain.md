@@ -1,12 +1,13 @@
 ---
-terms: ["blockchain", "blockchains"]
-summary: "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
-
+terms: ["blockchain", "blockchains", "Blockchain", "Blockchains"]
+summary: "Ein verteiltes Kassenbuch aller vergangenen und gegenwärtigen Transaktionen, ohne Sender oder Empfänger der Gelder aufzudecken"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
-A @blockchain is a distributed database that continuously grows with a record of all of the transactions that have occurred with a given cryptocurrency.  This database is often referred to as a ledger because the data contains a large list of transactions that have taken place.  In Monero, these transactions are packaged together into 'blocks' every 2 minutes (on average), and all miners and nodes on the network have copies of these blocks.  
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-### Monero's @Blockchain
-Unlike Bitcoin and other cryptocurrencies, transactions in the Monero @blockchain do not reveal where funds came from or went to, providing anonymity and making the currency completely @fungible. Additionally, the amounts of all transactions are hidden by @RingCT, a feature of Monero. For auditing or other transparency purposes a user can share a @view-key to prove they control certain amounts of Moneroj.
+Eine Blockchain ist eine verteilte Datenbank, welche durch die Aufzeichnung aller Transaktionen einer bestimmten Kryptowährung kontinuierlich wächst. Diese Datenbank wird häufig als Kassenbuch (engl.: Ledger) bezeichnet, da das Datenmaterial eine lange Liste bereits geschehener Transaktionen enthält. Bei Monero werden diese Transaktionen im Durchschnitt alle zwei Minuten zu sogenannten "Blöcken" zusammengepackt, von welchen alle Miner und Nodes auf dem Netzwerk Kopien besitzen.
+
+### Moneros Blockchain
+
+Im Gegensatz zu Bitcoin und anderen Kryptowährungen offenbaren Transaktionen innerhalb der Monero-Blockchain nicht, woher Gelder kommen oder wohin diese gehen. Dies bietet Anonymität und macht die Währung zudem gänzlich @fungibel. Zusätzlich werden die Beträge aller Transaktionen durch @Ring-CTs, einer Besonderheit von Monero, verdeckt. Für eine etwaige Betriebsprüfung oder zu anderen Zwecken der Nachvollziehbarkeit/Transparenz kann ein Nutzer durch das Teilen eines @View-Keys belegen, dass er einen bestimmten Betrag von Monero bewirtschaftet.

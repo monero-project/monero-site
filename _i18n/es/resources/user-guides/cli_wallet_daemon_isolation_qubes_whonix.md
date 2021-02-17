@@ -1,6 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
-
-# Aislamiento de Monedero CLI/Daemon con Qubes + Whonix
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Con [Qubes](https://qubes-os.org) más [Whonix](https://whonix.org) puedes tener un monedero de Monero sin conexión a la red y en ejecución en un sistema virtualmente aislado del daemon de Monero que tiene todo su tráfico sobre [Tor](https://torproject.org).
 
@@ -15,32 +13,14 @@ Esto es más seguro que otros enfoques que trazan el rpc del monedero a un servi
 
   - La primera estación de trabajo se usará para tu monedero, se referirá a ella como  `monero-wallet-ws`. Tendrás `NetVM` ajustado como `none`.
 
-  - La segunda estación de trabajo será para el daemon `monerod`, se referirá a ella como `monerod-ws`. Tendrás `NetVM` ajustado como la puerta Whonix `sys-whonix`.
+  - La segunda estación de trabajo será para el daemon `monerod`, se referirá a ella como `monerod-ws`. Tendrás `NetVM` ajustado como la puerta Whonix `sys-whonix`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain]({{ site.baseurl }}/downloads/#blockchain). Keep in mind that the blockchain will take up more space with time.
 
 ## 2. En la AppVM `monerod-ws`:
 
-+ Descarga, verifica e instala el software de Monero.
-
-```
-user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "{{ site.baseurl }}/downloads/hashes.txt"
-user@host:~$ gpg --recv-keys BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9
-user@host:~$ gpg --verify hashes.txt
-gpg: Signature made Wed 01 Nov 2017 10:01:41 AM UTC
-gpg:                using RSA key 0x55432DF31CCD4FCD
-gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-     Subkey fingerprint: 94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD
-user@host:~$ echo '6581506f8a030d8d50b38744ba7144f2765c9028d18d990beb316e13655ab248  monero-linux-x64-v0.11.1.0.tar.bz2' | shasum -c
-monero-linux-x64-v0.11.1.0.tar.bz2: OK
-user@host:~$ tar xf monero-linux-x64-v0.11.1.0.tar.bz2
-user@host:~$ sudo cp monero-v0.11.1.0/monerod /usr/local/bin/
-```
 + Crea un archivo `systemd`.
 
 ```
-user@host:~$ sudo gedit /home/user/monerod.service
+user@host:~$ sudo nano /home/user/monerod.service
 ```
 
 Pega el siguiente contenido:
@@ -68,16 +48,10 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Copia el ejecutable `monero-wallet-cli` al VM `monero-wallet-ws`.
-
-```
-user@host:~$ qvm-copy-to-vm monero-wallet-ws monero-v0.11.1.0/monero-wallet-cli
-```
-
 + Hacer ejecutable a `monerod` en arranque editando el archivo `/rw/config/rc.local`.
 
 ```
-user@host:~$ sudo gedit /rw/config/rc.local
+user@host:~$ sudo nano /rw/config/rc.local
 ```
 
 Agrega estas líneas al final:
@@ -97,7 +71,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Agrega esta línea:
@@ -110,16 +84,10 @@ socat STDIO TCP:localhost:18081
 
 ## 3. En la AppVM `monero-wallet-ws`:
 
-+ Mueve el ejecutable `monero-wallet-cli`.
-
-```
-user@host:~$ sudo mv QubesIncoming/monerod-ws/monero-wallet-cli /usr/local/bin/
-```
-
 + Edita el archivo `/rw/config/rc.local`.
 
 ```
-user@host:~$ sudo gedit /rw/config/rc.local
+user@host:~$ sudo nano /rw/config/rc.local
 ```
 
 Agrega la siguiente línea al final:

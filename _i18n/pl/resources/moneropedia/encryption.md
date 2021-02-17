@@ -32,4 +32,4 @@ Celem szyfrowania jest zapewnienie, że jedynie osoba upoważniona do dostępu d
 - szyfrowanie @tunelowe: wiadomości "czosnkowe" są przesyłane przez @tunel i szyfrowane przez furtkę @tunelu aż do punktu końcowego @tunelu
 - szyfrowanie warstwy @transportowej zapobiega rozszyfrowaniu wiadomości w [warstwie medialnej](https://en.wikipedia.org/wiki/OSI_model)
 
-Aby dowiedzieć się więcej na temat rodzajów szyfrowania oraz @podpisów kryptograficznych używanych w @Kovri i @I2P, odwiedź stronę o  [kryptografii] @Java-I2P (https://geti2p.net/spec/cryptography).
+Aby dowiedzieć się więcej na temat rodzajów szyfrowania oraz @podpisów kryptograficznych używanych w @Kovri i I2P, odwiedź stronę o  [kryptografii] @Java-I2P (https://geti2p.net/spec/cryptography).

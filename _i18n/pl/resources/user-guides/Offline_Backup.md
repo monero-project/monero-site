@@ -33,6 +33,4 @@
 
  Konto, które założyłeś, zostało zapisane w pamięci RAM i pliki cyfrowe są teraz niedostępne. Jeśli ktoś niepożądany w jakikolwiek sposób wejdzie w posiadanie tych danych, nie będzie posiadał długiego hasła niezbędnego do ich otworzenia. Aby otrzymać płatność, użyj swojego publicznego adresu lub klucza widoczności. Jeżeli potrzebujesz dostępu do swoich danych, użyj swojego 25-słownego kodu mnemonicznego, którego kopie możesz teraz zapisać w różnych miejscach, na przykład w skrytce bankowej.
 
-Zasługa:  Riccardo Spagni
-
 Powiązane:  [Generator Konta Offline](http://moneroaddress.org/)

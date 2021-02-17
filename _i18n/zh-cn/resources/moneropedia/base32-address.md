@@ -6,7 +6,7 @@ summary: "Base32 encoded hash of a Base64 address"
 
 ### 基础知识
 
-Base32地址是一个@I2P地址的截短编码版本，Base32地址是 `.b32.i2p` 主机名的第一部分。
+Base32地址是一个I2P地址的截短编码版本，Base32地址是 `.b32.i2p` 主机名的第一部分。
 
 例如:
 
@@ -18,7 +18,7 @@ Base32地址是一个@I2P地址的截短编码版本，Base32地址是 `.b32.i2p
 
 ### 深度信息
 
-基本上，Base32地址是52个字符长的，@I2P网络@Base64地址的完整SHA-256哈希的 [Base32编码表示](https://en.wikipedia.org/wiki/Base32)。
+基本上，Base32地址是52个字符长的，I2P网络@Base64地址的完整SHA-256哈希的 [Base32编码表示](https://en.wikipedia.org/wiki/Base32)。
 
 ### 备注
 

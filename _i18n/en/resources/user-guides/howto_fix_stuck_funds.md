@@ -8,7 +8,7 @@ Sometimes, your funds will become stuck - you will have some locked funds that n
 
 > seed
 
-into the command prompt. Write down your 25 word seed, if you haven't already. This is the best way to make sure you don't loose access to your funds.
+into the command prompt. Write down your 25 word seed, if you haven't already. This is the best way to make sure you don't lose access to your funds.
 
 - Close monero-wallet-cli by typing
 

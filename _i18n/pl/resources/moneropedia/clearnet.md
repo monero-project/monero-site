@@ -25,8 +25,8 @@ Ponieważ tradycyjna [VPN](https://en.wikipedia.org/wiki/VPN) nie uchroni cię o
 
 Powyższe technologie chronią przed clearnetem poprzez tworzenie anonimowej sieci **ponad** clearnetem, aby twoje transmisje były zaszyfrowane **i** anonimowe.
 
-Tutaj znajdziesz dokładny, [interaktywny diagram](https://www.eff.org/pages/tor-and-https) stworzony przez [EFF](https://www.eff.org/), który opisuje *clearnet* w porównaniu z siecią **Tor**. Pojęcie to odnosi się po części do sieci @Kovri i @I2P pod względem anonimowości, z poniższymi różnicami:
+Tutaj znajdziesz dokładny, [interaktywny diagram](https://www.eff.org/pages/tor-and-https) stworzony przez [EFF](https://www.eff.org/), który opisuje *clearnet* w porównaniu z siecią **Tor**. Pojęcie to odnosi się po części do sieci @Kovri i I2P pod względem anonimowości, z poniższymi różnicami:
 
-- @Kovri nie korzysta z węzłów wyjściowych przy połączeniu z @eepsite
+- @Kovri nie korzysta z węzłów wyjściowych przy połączeniu z eepsite
 - twoje obciążenie nigdy nie musi opuszczać sieć I2P
-- nie potrzebujesz HTTPS, aby używać Kovri (za wyjątkiem @reseeda).
+- nie potrzebujesz HTTPS, aby używać Kovri (za wyjątkiem reseeda).

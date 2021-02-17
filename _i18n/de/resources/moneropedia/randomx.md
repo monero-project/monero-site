@@ -1,11 +1,11 @@
 ---
-terms: ["randomx", "random-x"]
-summary: "ASIC-resistant POW algoritm currenctly used by Monero"
+terms: ["randomx", "random-x", "RandomX"]
+summary: "Derzeit von Monero genutzter ASIC-resistenter PoW-Algorithmus"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-RandomX is a Proof Of Work algorithm developed by Monero contributors and adopted by Monero from release 0.15.
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+RandomX ist ein von Monero-Mitwirkenden entwickelter und seit Moneros 0.15-Version eingeführter Proof-of-Work-Algorithmus.
 
-This innovative POW is optimized for CPUs and it's based on execution of random code and other memory-heavy techniques. The goal is to discourage the use of specialized hardware (like ASICs) for mining Monero. RandomX was created with the intent of keeping mining decentralized and to create a more egalitarian distribution of the block rewards.
+Dieser innovative PoW wurde für CPUs optimiert und basiert auf der Ausführung zufälligen Codes und anderer speicherintensiven Methoden. Ziel ist es, Nutzer vom Gebrauch von auf das Minen von Monero spezialisierter Hardware (wie etwa ASICs) abzubringen. RandomX wurde mit der Intention erstellt, den dezentralisierten Charakter des Minings zu bewahren und eine egalitärere Verteilung von Blockbelohnungen zu schaffen.
 
-RandomX specifications and development can be found [on the GitHub repository](https://github.com/tevador/RandomX), while [an article dedicated to RandomX](https://www.monerooutreach.org/stories/RandomX.html) made by the Outreach workgroup contains more information about the history of RandomX and its relation with Monero.
+Spezifikationen von RandomX und dessen Entwicklung finden sich im [GitHub-Repository](https://github.com/tevador/RandomX). Ein von der Outreach-Workgroup erstellter [dezidierter Artikel über RandomX](https://www.monerooutreach.org/stories/RandomX.html) enthält noch mehr Informationen über die Geschichte und den Zusammenhang von RandomX und Monero.

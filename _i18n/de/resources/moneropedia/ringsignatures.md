@@ -1,17 +1,17 @@
 ---
-terms: ["ring-signature", "ring-signatures"]
-summary: "a group of cryptographic signatures with at least one real participant, but no way to tell which in the group is the real one as they all appear valid"
+terms: ["ring-signature", "ring-signatures", "Ringsignatur", "Ringsignaturen"]
+summary: "Eine Gruppe kryptografischer Signaturen mit mindestens einem realen Beteiligten, aber keiner Möglichkeit, auszumachen, wer in der Gruppe real ist, da alle gleichwertig scheinen"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-In cryptography, a ring signature is a type of digital signature that can be performed by any member of a group of users that each have keys. Therefore, a message signed with a ring signature is endorsed by someone in a particular group of people. One of the security properties of a ring signature is that it should be computationally infeasible to determine *which* of the group members' keys was used to produce the signature.
+In der Kryptografie ist eine Ringsignatur eine Art digitaler Signatur, die durch ein beliebiges Mitglied einer Nutzergruppe, in der jeder einen Schlüssel hat, erbracht werden kann. Das heißt, eine mit Ringsignatur signierte Nachricht wird von irgendjemandem aus einer bestimmten Gruppe gesendet. Eines der Sicherheitsmerkmale von Ringsignaturen ist, dass es rechnerisch unmöglich sein sollte zu bestimmen, *welches* der Gruppenmitglieder seine Schlüssel zum Erstellen der Signatur verwendet hat.
 
-For instance, a ring signature could be used to provide an anonymous signature from "a high-ranking White House official", without revealing which official signed the message. Ring signatures are right for this application because the anonymity of a ring signature cannot be revoked, and because the group for a ring signature can be improvised (requires no prior setup).
+Eine Ringsignatur könnte beispielsweise genutzt werden, um eine anonyme Signatur "eines hochrangigen Offiziellen des Weißen Hauses" bereitzustellen, ohne offenzulegen, welcher Offizielle die Nachricht signiert hat. Für diese Verwendung sind Ringsignaturen geeignet, da ihre Anonymität nicht aufgehoben werden und die Gruppe für eine Ringsignatur spontan (ohne vorherige Abstimmung bzw. Einrichtung) gebildet werden kann.
 
-### Application to Monero
+### Anwendung auf Monero
 
-A ring signature makes use of your @account keys and a number of public keys (also known as outputs) pulled from the @blockchain using a triangular distribution method. Over the course of time, past outputs could be used multiple times to form possible signer participants. In a "ring" of possible signers, all ring members are equal and valid. There is no way an outside observer can tell which of the possible signers in a signature group belongs to your @account. So, ring signatures ensure that transaction outputs are untraceable. Moreover, there are no @fungibility issues with Monero given that every transaction output has plausible deniability (e.g. the network can not tell which outputs are spent or unspent).
+Eine Ringsignatur nutzt die Schlüssel deines @Kontos und eine Anzahl von der @Blockchain gezogener öffentlicher Schlüssel (auch bekannt als Outputs) mithilfe einer Methode der Dreiecksverteilung. Im Laufe der Zeit könnten vergangene Outputs mehrmals genutzt worden sein, um Gruppen möglicher Unterzeichner zu bilden. Innerhalb des "Rings" potenzieller Unterzeichner sind alle Ringmitglieder gleichwertig und gleichberechtigt. Es besteht keine Möglichkeit für einen Außenstehenden, auszumachen, welcher der möglichen Unterzeichner in einer solchen Gruppe zu deinem @Konto gehören. Ringsignaturen stellen also sicher, dass Transaktionsoutputs nicht zurückverfolgbar sind. Außerdem bestehen bei Monero keine Schwierigkeiten mit @Fungibilität, da jeder Transaktionsoutput glaubwürdige Bestreitbarkeit hat (z.B. kann das Netzwerk nicht ausmachen, welche Outputs ausgegeben oder nicht ausgegeben sind).
 
-To read how Monero gives you privacy by default (unlinkability), see @stealth-addresses.
+Wie Monero standardmäßig Privatsphäre bietet, kann im Eintrag über @Schattenadressen nachgelesen werden.

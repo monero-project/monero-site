@@ -1,19 +1,19 @@
 ---
-terms: ["mnemonic-seed", "mnemonic"]
-summary: "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
+terms: ["mnemonic-seed", "mnemonic", "mnemonischer-Seed", "mnemonischen-Seed", "mnemonischen-Seeds"]
+summary: "Eine 13- oder 25-teilige Wortfolge, um ein Monero-Konto zu sichern; verfügbar in mehreren Sprachen"
 ---
 
-{% include disclaimer.html translated="no" translationOutdated="no" %}
-### The Basics
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
+### Grundlagen
 
-A 13 or 25 word phrase used to backup a Monero account, available in a number of languages. This 25-word phrase (13 words in the case of MyMonero) has all the information needed to view and spend funds from a Monero @account.
+Eine aus 13 oder 25 Wörtern bestehende Wortfolge, welche zur Sicherung eines Monero-Kontos genutzt wird und in mehreren Sprachen verfügbar ist. Diese 25-teilige Wortfolge (im Fall von MyMonero 13-teilig) enthält alle benötigten Informationen, um Gelder eines Monero-@Kontos ansehen und ausgeben zu können.
 
-### In-depth Information
+### Ausführliche Informationen
 
-In the official wallet, the mnemonic seed comprises 25 words with the last word being used as a checksum. Those words correspond to a 256-bit integer, which is the account's *private* @spend-key. The *private* @view-key is derived by hashing the private spend key with Keccak-256, producing a second 256-bit integer. The corresponding *public* keys are then derived from the private keys.
+Beim offiziellen Wallet enthält der mnemonische Seed 25 Wörter, von welchen das letzte als Prüfsumme genutzt wird. Diese Wörter entsprechen einem 256-Bit-Integer, welcher der *private* @Spend-Key des Kontos ist. Der *private* @View-Key entsteht aus der Berechnung des privaten Spend-Keys mit Keccak-256, wodurch ein zweiter 256-Bit-Integer generiert wird. Die entsprechenden *öffentlichen* Schlüssel leiten sich von den privaten Schlüsseln ab.
 
-By storing the 25 word mnemonic key in a secure location, you have a backup of your private keys and hence all of your Moneroj.  Sharing this 25 word key is the equivalent of allowing another person complete access to your funds.  
+Bewahrst du den mnemonischen Schlüssel (die 25 Wörter) an einem sicheren Ort auf, so verfügst du über eine Sicherung deiner privaten Schlüssel und damit deiner Monero. Das Teilen dieser Wortfolge ist das Gleiche, als würdest du einer anderen Person den Vollzugriff auf dein Geld gewähren.
 
-It's not a good idea to store more than you want to lose in a "hot wallet" aka a wallet which is currently or has ever been connected to the internet or loaded onto any device that has or may in the future be connected to the internet or any untrusted source!
+Es ist keine gute Idee, mehr als das, was du bereit bist zu verlieren, in einem Zahlungs-Wallet ("Hot-Wallet") aufzubewahren - also einem Wallet, welches auf einem Gerät liegt, das mit dem Internet oder anderen nicht vertrauenswürdigen Quellen verbunden ist, war, oder jemals sein könnte.
 
-By creating a cold, or @paper-wallet you can safely store Moneroj.  
+Durch das Erstellen eines Spar-Wallets ("Cold-Wallet") beziehungsweise @Paper-Wallets kannst du deine Monero sicher aufbewahren.
