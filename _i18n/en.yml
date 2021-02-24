@@ -484,20 +484,23 @@ mining:
 
 what-is-monero:
   need-to-know: What you need to know
-  leading: Monero is the leading cryptocurrency with a focus on private and censorship-resistant transactions.
-  leading_para1: Most existing cryptocurrencies, including Bitcoin and Ethereum, have transparent blockchains, meaning that transactions are openly verifiable and traceable by anyone in the world. Furthermore, sending and receiving addresses for these transactions may potentially be linkable to a person's real-world identity.
-  leading_para2: Monero uses cryptography to shield sending and receiving addresses, as well as transacted amounts.
+  leading: Monero is the leading cryptocurrency focused on private and censorship-resistant transactions.
+  leading_para1: The majority of existing @cryptocurrencies, including Bitcoin and Ethereum, have transparent @blockchains. Transactions can be verified and/or traced by anyone in the world. This means that the sending and receiving @addresses of these @transactions could potentially be linked to real-world identities.
+  leading_para2: Monero, on the other hand, uses various privacy-enhancing technologies to ensure the anonymity of its users. 
   confidential: Monero transactions are confidential and untraceable.
-  confidential_para1: Every Monero transaction, by default, obfuscates sending and receiving addresses as well as transacted amounts. This always-on privacy means that every Monero user's activity enhances the privacy of all other users, unlike selectively transparent cryptocurrencies (e.g. Zcash).
-  confidential_para2: Monero is fungible. By virtue of obfuscation, Monero cannot become tainted through participation in previous transactions. This means Monero will always be accepted without the risk of censorship.
+  confidential_para1: "Unlike selectively transparent alternatives (e.g. Zcash), Monero is the only cryptocurrency where every user is anonymous by default. The sender, receiver, and amount of every single transaction are hidden through the use of three important technologies: @Stealth-Addresses, @Ring-Signatures, and @RingCT."
+  confidential_para2: Because every transaction is private, Monero cannot be traced. This makes it a true, @fungible currency. Merchants and individuals accepting Monero do not need to worry about blacklisted or tainted coins.
   grassroots: Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.
-  grassroots_para1: Over
-  grassroots_para2: 500 developers
-  grassroots_para3: have contributed to the Monero project, including 30 core developers. Forums and chat channels are welcoming and active.
-  grassroots_para4: Monero's Research Lab, Core Development Team and Community Developers are constantly pushing the frontier of what is possible with cryptocurrency privacy and security.
-  grassroots_para5: Monero is not a corporation. It is developed by cryptography and distributed systems experts from all over the world that donate their time or are funded by community donations. This means that Monero can't be shut down by any one country and is not constrained by any particular legal jurisdiction.
+  grassroots_p1: The Monero Project is at the forefront of cryptocurrency privacy and security. Its 
+  grassroots_p2: Research Lab
+  grassroots_p3: and Development Team are constantly working on new, innovative technologies. Since its launch, the project has received contributions from over
+  grassroots_p4: 500 developers
+  grassroots_p5: located all around the world.
+  grassroots_p6: Numerous 
+  grassroots_p7: forums and chat channels
+  grassroots_p8: are available for anyone to join, and the community is always welcoming new members.
   electronic: Monero is electronic cash that allows fast, inexpensive payments to and from anywhere in the world.
-  electronic_para1: There are no multi-day holding periods and no risk of fraudulent chargebacks. It is safe from ‘capital controls’ - these are measures that restrict the flow of traditional currencies, sometimes to an extreme degree, in countries experiencing economic instability.
+  electronic_para1: With Monero, there are no wire transfer or check clearing fees, no multi-day holding periods, and no fraudulent chargebacks. Because Monero is decentralized, it is not constrained by any particular legal jurisdiction and provides safety from capital control. 
   videos: Monero Videos (English)
 
 about:

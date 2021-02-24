@@ -34,21 +34,21 @@ permalink: /get-started/what-is-monero/index.html
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>{% t what-is-monero.grassroots %}</h3>
-                            <p>{% t what-is-monero.grassroots_para1 %} <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer noopener">{% t what-is-monero.grassroots_para2 %}</a> {% t what-is-monero.grassroots_para3 %}</p>
-                            <p>{% t what-is-monero.grassroots_para4 %}</p>
+                            <h3>{% t what-is-monero.electronic %}</h3>
+                            <p>{% t what-is-monero.electronic_para1 %}</p>
                         </div>
                         <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/academic-growth.png" alt="Academic growth" class="main-icon">
+                            <img src="/img/monero-electronic-cash.png" alt="Electronic cash" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/monero-electronic-cash.png" alt="Electronic cash" class="main-icon">
+                            <img src="/img/academic-growth.png" alt="Academic growth" class="main-icon">
                         </div>
                         <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>{% t what-is-monero.electronic %}</h3>
-                            <p>{% t what-is-monero.electronic_para1 %}</p>
+                            <h3>{% t what-is-monero.grassroots %}</h3>
+                            <p>{% t what-is-monero.grassroots_p1 %} <a href="/resources/research-lab">{% t what-is-monero.grassroots_p2 %}</a> {% t what-is-monero.grassroots_p3 %} <a href="https://www.openhub.net/p/monero" target="_blank" rel="noreferrer noopener">{% t what-is-monero.grassroots_p4 %}</a> {% t what-is-monero.grassroots_p5 %}</p>
+                            <p>{% t what-is-monero.grassroots_p6 %} <a href="/community/hangouts">{% t what-is-monero.grassroots_p7 %}</a> {% t what-is-monero.grassroots_p8 %}</p>
                         </div>
                     </div>
                 </div>
