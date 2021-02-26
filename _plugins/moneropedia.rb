@@ -120,14 +120,14 @@ module Jekyll
           if lang != "en"
             @@moneropedia[lang].each do |entry|
               entry[:terms].each do |term|
-                content = content.gsub(/(\@#{term})((?=-#{lookahead})|(?![\w-]))/i, '<a class="info-tooltip" data-tooltip="' + entry[:summary] + '" href="/' + lang + '/resources/moneropedia/' + entry[:file] + '.html" >' + term.gsub('-',' ') + '</a>')
+                content = content.gsub(/(\@#{term})((?=-#{lookahead})|(?![\w-]))/i) { |match_term| '<a class="info-tooltip" data-tooltip="' + entry[:summary] + '" href="/' + lang + '/resources/moneropedia/' + entry[:file] + '.html" >' + match_term.gsub(/[@-]/, '@' => '', '-' => ' ') + '</a>' }
               end
             end
           end
           # For English and as a default (in case an entry has been forgotten in a non-English moneropedia folder)
           @@moneropedia["en"].each do |entry|
             entry[:terms].each do |term|
-              content = content.gsub(/(\@#{term})((?=-#{lookahead})|(?![\w-]))/i, '<a class="info-tooltip" data-tooltip="' + entry[:summary] + '" href="/resources/moneropedia/' + entry[:file] + '.html" >' + term.gsub('-',' ') + '</a>')
+              content = content.gsub(/(\@#{term})((?=-#{lookahead})|(?![\w-]))/i) { |match_term| '<a class="info-tooltip" data-tooltip="' + entry[:summary] + '" href="/resources/moneropedia/' + entry[:file] + '.html" >' + match_term.gsub(/[@-]/, '@' => '', '-' => ' ') + '</a>' }
             end
           end
         end
