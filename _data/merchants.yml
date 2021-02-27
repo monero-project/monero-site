@@ -145,7 +145,7 @@
       url: https://swirlpay.io/
     - name: Vigla
       url: https://vigla.biz/
-- category: Web hosting
+- category: Web Hosting
   id: hosting
   merchants:
     - name: 1Gbits
