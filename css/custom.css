@@ -4063,6 +4063,10 @@ h3.months {
 }
 
 @media only screen and (max-width: 62rem) {
+.blog-nav {
+    display: none;
+}
+
 .page-numbers {
     margin-top: 1.7rem;
     margin-bottom: 1.7rem;
