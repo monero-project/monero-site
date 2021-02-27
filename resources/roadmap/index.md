@@ -193,8 +193,9 @@ permalink: /resources/roadmap/index.html
                     <div class="tabPanel-content info-block">
                         <h2>2021</h2>
                             <ul>
+                                <h3 class="months">{% t roadmap.feb %}</h3>
+                                    <li class="completed">{% t roadmap.onionaddress %}</li>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
-                                    <li class="ongoing">{% t roadmap.onionaddress %}</li>
                                     <li class="ongoing">{% t roadmap.tryptych %}</li>
                                     <li class="ongoing">{% t roadmap.kastelo %}</li>
                                     <li class="upcoming">{% t roadmap.layer2 %}</li>
