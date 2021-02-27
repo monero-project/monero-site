@@ -515,7 +515,7 @@ about:
   privacy: Privacy
   privacy_para: Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
   decentralization: Decentralization
-  decentralization_para: Monero is committed to providing the maximum amount of decentralization. With Monero, you do not have to trust anyone else on the network, and it is not run by any large group. An accessible “Proof of Work” algorithm makes it easy to mine Monero on normal computers, which makes it more difficult for someone to purchase a large amount of mining power. Nodes connect to each other with I2P to lower the risks of revealing sensitive transaction information and censorship (tba). Development decisions are extremely clear and open to public discussion. Developer meeting logs are published online in their entirety and visible by all.
+  decentralization_para: Monero is committed to providing the highest degree of decentralization in both network security and code development. Its Proof of Work algorithm prevents specialized mining hardware from dominating the network and allows for fair distribution of block rewards. Additionally, Monero's development and research are conducted via global collaboration, and the project is carried out with utmost transparency. Each development decision is open to public discussion, and every major developer meeting is published online. 
 
 
 developer-guides:
