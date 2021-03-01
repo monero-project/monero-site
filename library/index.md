@@ -20,6 +20,8 @@ permalink: /library/index.html
                     <p>{% t library.masteringmonerop %}</p> 
                 <h3><a href="MoneroAddressesCheatsheet20201206.pdf">{% t library.moneroaddressescheatsheet20201206 %}</a></h3>
                     <p>{% t library.moneroaddressescheatsheet20201206p %}</p>
+                <h3><a href="RingsCheatsheet20210301.pdf">{% t library.ringscheatsheet20210301 %}</a></h3>
+                    <p>{% t library.ringscheatsheet20210301p %}</p>
             </div>
         </div>
     </section>
