@@ -20,7 +20,7 @@
   - [Manuell konfigurering av signerere](#manually-configuring-signers)
   - [Auto-Config](#auto-config)
   - [Sending av signererkonfigurasjon](#sending-signer-configuration)
-- [Establering av Multisig-adresse](#establishing-the-multisig-address)
+- [Etablering av Multisig-adresse](#establishing-the-multisig-address)
 - [Finansiering av Multisig-lommeboken](#funding-the-multisig-wallet)
 - [Synkronisering av lommebøker](#syncing-wallets)
 - [Å foreta Multisig-transaksjoner](#making-multisig-transactions)
@@ -81,18 +81,18 @@ Den vanlige betegnelsen som brukes her er *M/N*, der *M* står for antallet nød
 
 For teknisk «enkle» mynter som bitcoin og deres forker, består multisig-transaksjoner av følgende trinn:
 
-* Konfigure multisig-lommebøkene og etablere multisig-adressen
-* Finansiere multisig-lommebøkene/-addressene slik at det er noe å bruke til å begynne med
+* Konfigurasjon av multisig-lommebøkene og etablering av multisig-adressen
+* Finansiere multisig-lommebøkene/-adressene slik at det er noe å bruke til å begynne med
 * Foreta så mange multisig-transaksjoner man vil
 
-Monero legger også til enda et steg som er nødvendig for intern «bokføring». Enkelt forklart er alle mekanismene som gjør Monero-transaksjonene private komplisert av natur og fører til et behov for å utveksle informasjon mellom lommebøker slik at man kan nehandle transaksjoner på en riktig måte – både innkommende og utgående.
+Monero legger også til enda et steg som er nødvendig for intern «bokføring». Enkelt forklart er alle mekanismene som gjør Monero-transaksjonene private komplisert av natur og fører til et behov for å utveksle informasjon mellom lommebøker slik at man kan behandle transaksjoner på en riktig måte – både innkommende og utgående.
 
 MMS-en bruker uttrykket *synkronisering* for prosessen som gjør lommebøkene klare til å foreta transaksjoner igjen etter å ha sendt eller mottatt transaksjoner, og *multisig synkroniseringsdata* eller bare «*sync data*» for informasjonen som må utveksles for å oppnå dette.
 
 Så stegene for Monero multisig ser slik ut:
 
-* Konfigure multisig-lommebøkene og etablere multisig-adressen
-* Finansiere multisig-lommebøkene/-addressene slik at det er noe å bruke til å begynne med
+* Konfigurasjon av multisig-lommebøkene og etablering av multisig-adressen
+* Finansiere multisig-lommebøkene/-adressene slik at det er noe å bruke til å begynne med
 * Synkronisere lommebøkene for første gang
 * Foreta én multisig-transaksjon
 * Synkronisere lommebøkene på nytt
@@ -100,13 +100,13 @@ Så stegene for Monero multisig ser slik ut:
 * Synkronisere lommebøkene igjen
 * ...
 
-«Verdien» av MMS-en gjør det lett og smertefritt å utveksle alle disse datapakkene mellom lommebøkene og å fortelle signererne ved hvilket stadie av «arbeidsflyten» de for tiden er på og hva som er det neste steget for å fortsette.
+«Verdien» av MMS-en gjør det lett og smertefritt å utveksle alle disse datapakkene mellom lommebøkene og å fortelle signererne ved hvilket stadium av «arbeidsflyten» de for tiden er på og hva som er det neste steget for å fortsette.
 
-## MME-ens arkitektur
+## MMS-ens arkitektur
 
 MMS-en består i hovedsak av tre deler:
 
-* Et sett med ny kommandoer i CLI-lommeboken
+* Et sett med nye kommandoer i CLI-lommeboken
 * En lastet instans av PyBitmessage som kan nås fra PC-en som kjører CLI-lommeboken, og som gjør transport av meldinger på vegne av lommeboken.
 * Interne kodeutvidelser til lommebokkoden som håndterer en ny `.mms`-fil per lommebok med meldinger i den og som er koblet til med PyBitmessage
 
@@ -116,7 +116,7 @@ Forfatteren av MMS-en håper at du vil gi den et forsøk: PyBitmessage har åpen
 
 En fremtidig MMS vil forhåpentligvis bli bygget på [Kovri](https://kovri.io/), Moneros «opprinnelige», private kommunikasjonssystem, men det gjenstår sannsynligvis fremdeles litt tid før en Kovri-utgivelse er klar for omfattende bruk.
 
-MMS-kommunikasjon bør være **trygt**: Bitmessage-systemet er betraktet som trygt, i og med at det ikke er synlig hvem som sender en melding til hvem, og all trafikk er kryptert. For ytterligere sikkerhet, krypterer MMS-en også all meldingsinnhold: Ingen bortsett fra mottakeren av en MMS-melding kan avkode og bruke innholdet, og meldingene er signerte, noe som betyr at mottakeren kan være sikker på at det har kommet fra riktig sender.
+MMS-kommunikasjon bør være **trygt**: Bitmessage-systemet er betraktet som trygt, i og med at det ikke er synlig hvem som sender en melding til hvem, og all trafikk er kryptert. For ytterligere sikkerhet, krypterer MMS-en også alt meldingsinnhold: Ingen bortsett fra mottakeren av en MMS-melding kan avkode og bruke innholdet, og meldingene er signerte, noe som betyr at mottakeren kan være sikker på at det har kommet fra riktig sender.
 
 ## Brukeropplevelsen til MMS
 
@@ -146,7 +146,7 @@ Så der en «normal» Monero-lommebok uten MMS kun håndterer tre typer data (ad
 
 MMS-en håndterer, for hver separate multisig-lommebok, en liste over *autoriserte signerere*. Med 2/3 multisig, består den listen av **tre** oppføringer. På et teknisk nivå representerer hver oppføring en Monero-lommebok som inneholder nøkler som kan brukes til å signere multisig-transaksjoner. På et konseptuelt nivå er det lettere å forestille seg en gruppe med tre personer, f.eks. deg selv og to partnere, som de «autoriserte signererne». (Det vil ofte være spesielt tre personer som kontrollerer de tre lommebøkene, men ikke alltid, selvfølgelig.)
 
-MMS-en håndterer også en enkel liste med *meldinger* per lommebok: Alle meldingene du sender pluss alle meldingene du motta. Mens listen over autoriserte signerere er den samme i alle de involverte lommebøkene, skiller meldingene seg sevfølgelig fra hverandre. Jo flere autoriserte signerere det er som kan sende deg en melding, og jo lengre du foretar transaksjoner, jo flere meldinger vil samle seg opp.
+MMS-en håndterer også en enkel liste med *meldinger* per lommebok: Alle meldingene du sender pluss alle meldingene du motta. Mens listen over autoriserte signerere er den samme i alle de involverte lommebøkene, skiller meldingene seg selvfølgelig fra hverandre. Jo flere autoriserte signerere det er som kan sende deg en melding, og jo lengre du foretar transaksjoner, jo flere meldinger vil samle seg opp.
 
 ## Å få tak i MMS-en
 
@@ -162,7 +162,7 @@ Men en liten advarsel: Å bruke den siste Monero-versjonen fører per dags dato 
 
 Etter du har installert programmet, installer og konfigurer en Bitmessage-adresse for deg selv og noter den ned, fordi du vil senere trenge den for å konfigurere multisig-lommeboken din.
 
-Ikke bekymre deg om det virker som PyBitmessage ikke kobler seg til Bitmessage-nettverket når du kjører det for føste gang. Grunnet den desentraliserte naturen til det nettverket, kan det ta litt tid før du kan koble til. Det virker som dette ofte tar en **halvtime**.
+Ikke bekymre deg om det virker som PyBitmessage ikke kobler seg til Bitmessage-nettverket når du kjører det for første gang. Grunnet den desentraliserte naturen til det nettverket, kan det ta litt tid før du kan koble til. Det virker som dette ofte tar en **halvtime**.
 
 Å sende den alle første meldingen til en ny Bitmessage-adresse, kan på tilsvarende måte ta enda en halvtime fordi det involverer en viktig utveksling. Når den viktige utvekslingen er ferdig, leveres meldinger typisk innen noen minutter, og i andre tilfeller sekunder.
 
@@ -199,7 +199,7 @@ Det finnes kun **én** ny kommando som gir tilgang til MMS-en, kalt `mms`. Den k
     delete      Sletter en enkel melding ved å oppgi ID-en, eller sletter alle meldinger ved å bruke 'all'
     send        Sender en enkel melding ved å oppgi ID-en, eller sender alle ventende meldinger
     receive     Sjekker umiddelbart etter nye, innkommende meldinger
-    note        Sender et beskjed på én linje til en signerer, identifisert av merkelappen, eller viser alle uleste beskjeder
+    note        Sender en beskjed på én linje til en signerer, identifisert av merkelappen, eller viser alle uleste beskjeder
     show        Viser detaljert informasjon om en enkel melding
     export      Eksporterer innholdet av en melding til en fil
     set         Angir valg, der 'auto-send' så langt er den eneste
@@ -221,13 +221,13 @@ Hvis du oppretter en ny lommebok, blir den (så klart) en egen en, med en unik M
 
 MMS-en bruker den første, «originale» offentlige Monero-adressen over hele livsløpet til lommeboken for adressering før **og** etter den «går over til» multisig. Det kan være litt forvirrende at en lommebok bør ha **to** offentlige adresser, men når du har fått den opprinnelige adressen i signererkonfigurasjonen din, kan du mer eller mindre glemme den.
 
-MMS-en bruker *merkelapper* som lar deg navngi deg selv og andre signerere, og at MMS-kommandoen brukes når det referreres til signerere. (Å bruke Monero-adresser eller Bitmessage-adresser i slike kommandoer hadde vært ganske så ubeleilig.)
+MMS-en bruker merkelapper som lar deg navngi deg selv og andre signerere, og MMS-kommandoen brukes når det refereres til signerere. (Å bruke Monero-adresser eller Bitmessage-adresser i slike kommandoer hadde vært ganske så ubeleilig.)
 
-Merkelapper bør være på ett ord, og de må være unike innad i én enkel lommebok. Eksempelet som følger senere i denne veiledningen bruker merkelappene `alice`og `bob` ved 2/2 multisig.
+Merkelapper bør være på ett ord, og de må være unike innad i én enkel lommebok. Eksempelet som følger senere i denne veiledningen bruker merkelappene `alice` og `bob` ved 2/2 multisig.
 
 ### Å kjøre CLI-lommeboken
 
-Når du starter CLI-lommeboken for bruk med MMS-en, finnes følgende to nye (valgfrie) kommandolinjerparametere for å koble til PyBitmessage:
+Når du starter CLI-lommeboken for bruk med MMS-en, finnes følgende to nye (valgfrie) kommandolinjeparametere for å koble til PyBitmessage:
 
     --bitmessage-address	Use PyBitmessage instance at URL <arg>
     --bitmessage-login		Specify <arg> as username:password for PyBitmessage API
@@ -250,7 +250,7 @@ Etter å ha opprettet en ny lommebok, må du initialisere den for bruk med MMS-e
 
     mms init 2/2 alice BM-2cUVEbbb3H6ojddYQziK3RafJ5GPcFQv7e
 
-Bruk kun denne `init`-kommanden **én gang**: Å eksekvere den én gang til reinitialiserer MMS-en fullstendig ved å slette eventuell signererinformasjon og meldinger, noe du ikke ønsker, bortsett fra i spesielle tilfeller.
+Bruk kun denne `init`-kommandoen **én gang**: Å eksekvere den én gang til reinitialiserer MMS-en fullstendig ved å slette eventuell signererinformasjon og meldinger, noe du ikke ønsker, bortsett fra i spesielle tilfeller.
 
 Hvis du vil gjennomgå en MMS-test så raskt som mulig, kan du instruere lommeboken om å be om passordet kun når det er strengt nødvendig av tekniske årsaker og be MMS-en om å sende eventuelle genererte meldinger umiddelbart i stedet for å spørre om det i forkant:
 
@@ -269,7 +269,7 @@ For hver signerer, er det tre ting MMS-en trenger å vite:
 
 (Se også kapittelet over som heter *Adresser og merkelapper*.)
 
-Du trenger ikke å opprette signerere; de er allerede «der» etter `mms init`-kommandoen, men det ikke finnes informasjon om dem ennå, bortsett fra om deg. Kommandoene for å sette signererinformasjonen går etter nummer: 1 opptil det totalte antallet autoriserte signerere, altså 1 og 2 i følgende 2/2 multisig-eksempelet der signererne heter *Alice* og *Bob*, og altså med merkelappene *alice* og *bob*.
+Du trenger ikke å opprette signerere; de er allerede «der» etter `mms init`-kommandoen, men det ikke finnes informasjon om dem ennå, bortsett fra om deg. Kommandoene for å sette signererinformasjonen går etter nummer: 1 opptil det totale antallet autoriserte signerere, altså 1 og 2 i følgende 2/2 multisig-eksempel der signererne heter *Alice* og *Bob*, og altså med merkelappene *alice* og *bob*.
 
 Etter eksempelet over, skal `init`-kommandoen gi en liste over signerere og se slik ut:
 
@@ -340,7 +340,7 @@ Arbeidsflyten er som følger – Det er enklere enn det ser ut til. Gjennomgå d
 
 Flere punkter er viktige å merke seg. Manuell konfigurasjon med f.eks. 5 signerere kan innebære at 5 ganger 4 = 20 opprinnelige, manuelle informasjonsoverføringer dersom hver av de 5 signererne sender adresser til 4 andre. Selv en lurere tilnærming med noen som først samler alle adressene og sender den komplette listen til alle andre, ville tatt 4 pluss 4 = 8 informasjonsoverføringer. Med auto-config finnes det kun **4** slike manuelle overføringer – 4 tokens fra lederen ut til de andre signererne; etter det stadiet sendes meldingene allerede over PyBitmessage.
 
-Du lurer kanskje på hvordan lommebøkene til andre signerere kan sende sine Bitmessage-meldinger tilbake til lederen ved å bruke PyBitmessage. Biter ikke slangen sin egen hale? Løsningen: En midlertidig, «éngangs»-Bitmessage-adresse utledes av hver token og brukes kun for denne overføringen, og midlertidige nøkler utledes i tillegg for å kryptere meldingsinnholdet.
+Du lurer kanskje på hvordan lommebøkene til andre signerere kan sende sine Bitmessage-meldinger tilbake til lederen ved å bruke PyBitmessage. Biter ikke slangen sin egen hale? Løsningen: En midlertidig, «engangs»-Bitmessage-adresse utledes av hver token og brukes kun for denne overføringen, og midlertidige nøkler utledes i tillegg for å kryptere meldingsinnholdet.
 
 En del av den økte sikkerheten til auto-config-prosessen er at hver signerer får sin egen, distinkte token. I 2/3 multisig må man bare sørge for at Bob ikke kan få tak i Trents egen token, og Bob har allerede ingen måte å «etterlikne» Trent og sette opp en ytterligere lommebok for å kunne signere transaksjoner på egenhånd.
 
@@ -356,7 +356,7 @@ Her er arbeidsflyten som følger:
 * Lederen bruker `mms send_signer_config`-kommandoen for å send den komplette informasjonen til alle de andre signererne
 * De andre signererne behandler de meldingene for å fullføre sin signererinformasjon med `mms next`
 
-For alle signerere, bortsett fra lederen, er dette omtrent så beleilig som auto-config. Merk at sikkerheten til systemet imidlertid avhenger av å sikre å sende informasjon til lederen: Hvis en signerer kan fremstille seg ikke som seg selv, men som andre signerere også, vil de kunne kontrollere flere lommebøker ogvundergrave hele signeringsprosessen. (Se også kapittelet *Manuell konfigurering av signerere* for mer om slike farer.)
+For alle signerere, bortsett fra lederen, er dette omtrent så beleilig som auto-config. Merk at sikkerheten til systemet imidlertid avhenger av å sikre å sende informasjon til lederen: Hvis en signerer kan fremstille seg ikke som seg selv, men som andre signerere også, vil de kunne kontrollere flere lommebøker og undergrave hele signeringsprosessen. (Se også kapittelet *Manuell konfigurering av signerere* for mer om slike farer.)
 
 ## Etablering av Multisig-adressen
 
@@ -385,17 +385,17 @@ Etter Alice mottar Bobs nøkkelsett, vil en ytterligere `mms next`-kommando beha
 
 Lommeboken kan være usynkronisert etter dette steget; hvis den er det, gjør en rask `refresh`.
 
-I tilfelle av ikke-symmetrisk M/N multisig, der M er ulik N (f.eks. som i 2/3), er det ikke tilstrekkelig at hver signerer sender ett nøkkelsett til de andre signererne: Det vil være flere *runder* med utveksling av nøkkelsett. MMS-en vet imidlertid om dette og vil automatisk ta hånd om nesten alt: For en bestemt lommeboken venter den til nøkkelsettene til alle andre signerere har ankommet før den fortsetter. Hvis det er nødvendig med enda en runde med nøkkelutvekslinger, vil `mms next` sette i gang en ny en. Hvis ikke, vil kommandoen behande det siste nøkkelsettet/-settene og etablere multisig-adressen.
+I tilfelle av ikke-symmetrisk M/N multisig, der M er ulik N (f.eks. som i 2/3), er det ikke tilstrekkelig at hver signerer sender ett nøkkelsett til de andre signererne: Det vil være flere *runder* med utveksling av nøkkelsett. MMS-en vet imidlertid om dette og vil automatisk ta hånd om nesten alt: For en bestemt lommeboken venter den til nøkkelsettene til alle andre signerere har ankommet før den fortsetter. Hvis det er nødvendig med enda en runde med nøkkelutvekslinger, vil `mms next` sette i gang en ny en. Hvis ikke, vil kommandoen behandle det siste nøkkelsettet/-settene og etablere multisig-adressen.
 
 Det er mulig at en fremtidig forbedret versjon av MMS-en vil gjøre dette på en helautomatisk måte, f.eks. ved å sende alle nødvendige nøkkelsett rundt uten ytterligere innvending frem til multisig-adressen er konfigurert. Inntil videre må du imidlertid fremskynde ting ved å eksekvere `mms next`-kommandoene.
 
 ## Finansiering av Multisig-lommeboken
 
-Når multisig-adressen er etablert, er lommeboken nå klar til å motta midler. Her spiller ikke MMS-en noen rolle, ei heller multisig: Bare overfør noen mynter til adressen slik at du har noe å øverføre ut av den senere, og vent til de ankommer.
+Når multisig-adressen er etablert, er lommeboken nå klar til å motta midler. Her spiller ikke MMS-en noen rolle, ei heller multisig: Bare overfør noen mynter til adressen slik at du har noe å overføre ut av den senere, og vent til de ankommer.
 
 ## Synkronisering av lommebøker
 
-Hver gang etter å ha mottatt eller sendt mynter, må multisig-lomebøkene utveksle informasjon med hverandre for å «bli synkronisert» igjen. Dette er tilfellet når enn CLI-lommeboken forteller deg om *delvise nøkkelbilder* som i denne `balance`-kommandoutdataen:
+Hver gang etter å ha mottatt eller sendt mynter, må multisig-lommebøkene utveksle informasjon med hverandre for å «bli synkronisert» igjen. Dette er tilfellet når enn CLI-lommeboken forteller deg om *delvise nøkkelbilder* som i denne `balance`-kommandoutdataen:
 
     [wallet 9uWY5K]: balance
     Currently selected account: [0] Primary account
@@ -487,7 +487,7 @@ En annen `mms next` resulterer ikke i et valg for Bob, fordi han kan enten sende
 
 Etter transaksjonen er sendt inn til nettverket og behandlet, må du synkronisere lommebøkene før du kan foreta en ny overføring. Merk også at det er en begrensning av Monero multisig, uavhengig av eventuelle synkroniseringsbehov, at du må gjøre **én transaksjon etter den andre i rekkefølge**. Du kan for eksempel ikke legge bort fullt signerte transaksjoner for å sende dem inn senere og allerede starte en ny en for å sende den først. (MMS-en er i enkelte scenarioer ikke smart nok til å hindre at du prøver det. Se *Feilsøking*-kapittelet om hvordan du kan rette opp i det ved å slette meldinger som inneholder transaksjoner som ikke kan behandles og deretter tvinge synkronisering.)
 
-Du kan, som allerede nevnt, holde transaksjonsdataene dine utenfor `.mms`-filen i form av lagret meldingsinnhold og bruke den normale `transfer`-kommandoen, men da er det selvfølgelig ditt ansvar å sende den delvis signerte transaksjonen til den neste signereren. Merk også at MMS-en ikke støtter kald signering; det er også en grunn til å bruke `transfer`direkte, istedenfor `mms transfer`. Du kan imidlertid eksportere transaksjonsdata som er inneholdt i en melding med `mms export`-kommandoen.
+Du kan, som allerede nevnt, holde transaksjonsdataene dine utenfor `.mms`-filen i form av lagret meldingsinnhold og bruke den normale `transfer`-kommandoen, men da er det selvfølgelig ditt ansvar å sende den delvis signerte transaksjonen til den neste signereren. Merk også at MMS-en ikke støtter kald signering; det er også en grunn til å bruke `transfer` direkte, istedenfor `mms transfer`. Du kan imidlertid eksportere transaksjonsdata som er inneholdt i en melding med `mms export`-kommandoen.
 
 ## Kommandoene i detalj
 
@@ -589,7 +589,7 @@ Argumentene til `mms transfer`-kommandoen er nøyaktig de samme som de av den st
 
 Mer at MMS-en generelt ikke bryr seg om adresser, underadresser og kontoer. Uavhengig av hva du spesifiserer, vil det alltid være en enkel, ny melding som inneholder den delvis signerte transaksjonen.
 
-Selv med MMS-en aktiv, kan du fremdeles bruke den standard `transfer`-kommandoen; da må du rett og slett håndtere transaksjonen på egenhånd. Prøv å bruke den riktige kommandovarianten; `transfer` vil ikke be om bekeftelse, enten du tiltenker å bruke den i stedet for `mms transfer`. Hvis du eksekverte `transfer`, men egentlig ønsket MMS-varianten, kan du ignorere den skriftlige transaksjonen og bare fortsette med `mms transfer`.
+Selv med MMS-en aktiv, kan du fremdeles bruke den standard `transfer`-kommandoen; da må du rett og slett håndtere transaksjonen på egenhånd. Prøv å bruke den riktige kommandovarianten; `transfer` vil ikke be om bekreftelse, enten du planlegger å bruke den i stedet for `mms transfer`. Hvis du eksekverte `transfer`, men egentlig ønsket MMS-varianten, kan du ignorere den skriftlige transaksjonen og bare fortsette med `mms transfer`.
 
 MMS-en holder ikke, i hvert fall ikke enda, tritt med hvor mange signaturer en transaksjon faktisk har, og hvor mange som allerede har signert og ikke. På grunn av denne svakheten kan den inkludere valg som ikke gir mening, f.eks. et valg om å sende en delvis signert transaksjon til noen som allerede har signert.
 
@@ -599,7 +599,7 @@ Dette betyr lite med multisig-typer som 2/2 eller 2/3, men jo høyere antallet a
 
     mms delete (<message_id> | all)
 
-Sletter en enkel melding gitt dens meldings-ID eller sletter alle meldinger ved å bruke `all`-parameteren. Enkle meldinger vil slettes uten bekreftelse, selv om den ikke enda er sendt eller behandlet. En slettet melding er borte for alltid, og det går an ikke å angre dette, og den er også borte fra PyBitmessages lagring. (Hvis du mister en melding, kan du spørre senderen om sende den til deg på nytt.)
+Sletter en enkel melding gitt dens meldings-ID eller sletter alle meldinger ved å bruke `all`-parameteren. Enkle meldinger vil slettes uten bekreftelse, selv om den ikke enda er sendt eller behandlet. En slettet melding er borte for alltid, og det går an ikke å angre dette, og den er også borte fra PyBitmessages lagring. (Hvis du mister en melding, kan du be senderen om å sende den til deg på nytt.)
 
 Det er situasjoner der du må tømme ved å slette meldinger som ikke ble behandlet, som ble ubehandlbare og som nå «forstyrrer arbeidsflyten»; Se kapittel *Feilsøking* for mer. Å slette er også nyttig når noen sender deg en melding på nytt og den opprinnelige meldingen endelig når deg på et senere tidspunkt.
 
@@ -739,11 +739,11 @@ Kortversjon: Hvis du er i tvil, begynn kun å bruke MMS-en etter du har konfigur
 
 ### Bruk av kryptering og signaturer
 
-All meldingsinnhold krypteres ved å enten bruke Monero-visningsnøklene til signerernes Monero-lommebøker eller med tilfeldig genererte nøkler av samme styrke i tilfelle auto-config-meldingsinnhold. Dette kan virke litt overdrevent med tanke på at PyBitmessage allerede krypterer alle meldingene selv, men PyBitmessage er for det første en tredjepartsprogramvare som du kanskje ikke vil stole på, og for det andre er MMS-en med denne funksjonen til en viss grad allerede forberedt på mindre sikre kommunikasjonssystemer som ikke krypterer seg selv.
+Alt meldingsinnhold krypteres ved å enten bruke Monero-visningsnøklene til signerernes Monero-lommebøker eller med tilfeldig genererte nøkler av samme styrke i tilfelle av auto-config-meldingsinnhold. Dette kan virke litt overdrevent med tanke på at PyBitmessage allerede krypterer alle meldingene selv, men PyBitmessage er for det første en tredjepartsprogramvare som du kanskje ikke vil stole på, og for det andre er MMS-en med denne funksjonen til en viss grad allerede forberedt på mindre sikre kommunikasjonssystemer som ikke krypterer seg selv.
 
 Meldinger signeres av senderen ved å bruke sine private nøkler. Dette brukes for autentisering: MMS-en vil avvise en melding fra en signerer som ikke bærer en gyldig signatur som kun den signereren, og ingen andre kunne ha laget. En hash sikrer dessuten meldingsinnholdet mot eventuelle endringer. Avslutningsvis er det kun meldinger fra signerere som godtas: En melding fra en Monero-adresse som ikke er oppført i signererkonfigurasjonen blir avvist, selv om den bærer en gyldig signatur.
 
-Visningsnøkkelen brukes også til å kryptere innholdes av `.mms`-filen som inneholder signererkonfigurasjon og alle sendte og mottatte meldinger.
+Visningsnøkkelen brukes også til å kryptere innholdet av `.mms`-filen som inneholder signererkonfigurasjon og alle sendte og mottatte meldinger.
 
 Hva gjelder dataoverføringssikkerhetskrav, bør man fremdeles sannsynligvis holde seg realistisk: Du ønsker selvfølgelig ikke at de ulike datapakkene som blir stokket frem og tilbake mellom signerernes lommebøker ender opp i feil hender, men det hadde ikke vært lett å påføre ordentlig skade for en angriper som har kontroll på noen av disse dataene. Hele poenget med multisig er tross alt at kun en gruppe mennesker som **samarbeider** kan signere og sende inn en transaksjon. En angriper som får tak i en delvis signert transaksjon, vil ikke kunne gjøre mye med den.
 
@@ -771,7 +771,7 @@ Hvor stor denne faren ved å etterlikne er, avhenger av hvor sikker den opprinne
 
 Hvis du bruker alle kapabilitetene til MMS-en, bruker du den ikke bare til å foreta transaksjoner med, men allerede før for å utveksle nøkkelsett mellom alle signerere. Spesielt for høyere former for multisig som 2/4 med flere runder med nøkkelutveksling, er dette svært hjelpsomt og innehar en mindre fare for å begå feil enn noen manuelle prosesser. Så oppgaven med å forebygge etterlikning går over fra å sikre utvekslingen av nøkler til å sette opp en signerer-adresse i MMS-en på en sikker måte: Hvis Bob noen måte kan lure Alice til å godta én av **hans** Monero- og Bitmessage-adresser i stedet for Trent sine, har han vunnet.
 
-De tre måtene å sette opp signereradresser som MMS-en støtter, manuelt konfigurering av signerere, auto-config og «semiautomatisk» sending av fullført signererinformasjon, har alle forskjellige risikoer knyttet til dem hva gjelder etterlikning. Sjekk de respektive kapitlene *Manuell konfigurering av signerere*, *Auto-Config* og *Sending av signererinformasjon* for mer informasjon om dette.
+De tre måtene å sette opp signereradresser som MMS-en støtter, manuell konfigurering av signerere, auto-config og «semiautomatisk» sending av fullført signererinformasjon, har alle forskjellige risikoer knyttet til dem hva gjelder etterlikning. Sjekk de respektive kapitlene *Manuell konfigurering av signerere*, *Auto-Config* og *Sending av signererinformasjon* for mer informasjon om dette.
 
 Auto-config er utvilsomt det enkleste å sikre: Du trenger bare en liten del med informasjon og en auto-config-token på 11 tegn for å sende sikkert til hver signerer, og hvis du kan gjøre det, har du allerede vunnet. («Config-lederen» antar selvsagt å være pålitelig.)
 
@@ -781,7 +781,7 @@ Hvis alt dette høres for komplisert og derfor upålitelig ut for deg, har du mu
 
 Det er to situasjoner der lommeboken din som bruker MMS mottar data fra en annen signerer, der den andre signereren, hvis vedkommende handler med onde hensikter, kan prøve å bedra deg eller lure deg til å gjøre noe skadelig:
 
-Notater som sendes med `mms note`-kommandoen kan brukes for «sosialteknikk». En angriper kunne f.eks. ha prøvd å formulere et notat som ser ut som en feilmelding i et forsøk på å svindle. De tekniske mulighetene her er imidlertid ganske begrensende: Notater begrenser seg strengt til tekst, og når de vises filterer MMS-en ut tegn med ASCII-koder på mindre enn 32 og de to tegnene < og > som kan brukes til å bygge HTML eller XML som på en eller annen måte kan tolkes (veldig usannsynlig i CLI-lommeboken, men noe mer sannsynlig i GUI-baserte lommebøker). Notatene har også en grense på maksimal lengde.
+Notater som sendes med `mms note`-kommandoen kan brukes for «sosialteknikk». En angriper kunne f.eks. ha prøvd å formulere et notat som ser ut som en feilmelding i et forsøk på å svindle. De tekniske mulighetene her er imidlertid ganske begrensende: Notater begrenser seg strengt til tekst, og når de vises, filtrerer MMS-en ut tegn som inneholder ASCII-koder som har en lengde på under 32 tegn og de to tegnene < og > som kan brukes til å bygge HTML eller XML som på en eller annen måte kan tolkes (veldig usannsynlig i CLI-lommeboken, men noe mer sannsynlig i GUI-baserte lommebøker). Notatene har også en grense på maksimal lengde.
 
 Den andre måten er et forsøk på å svindle med merkelapper som sendes gjennom `mms send_signer_config`. Bob kan merke Alice som *trent* og Trent som *alice*, sende den signererkonfigurasjonen til Alice og slik overtale henne til å bruke den. Dette er grunnen til at en melding av typen `signer config`, hvis den sendes utenfor auto-config med en tydelig `mms send_signer_config`, ikke behandles med en gang, men først vises sammen med en bekreftelsesmelding.
 
