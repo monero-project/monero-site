@@ -6,7 +6,7 @@ De fleste trenger ikke dette. For å bruke Monero, kan du bare starte programvar
 
 Dette valget er mest nyttig for utviklere, eller muligens dersom et uvanlig problem hindrer deg fra å synkronisere på en normal måte.
 
-**Aldri** bruk uverifiserte importeringsvalg da dette kun er for eksperter. Du bør spesielt ikke bruke det med en blokkjede du laster ned fra internett, inkludert den offisielel nettsiden. Det er kun trygt å bruke dersom du a) importerer en fil som du eksporterer lokalt på egenhånd *og* b) er helt sikker på at den allerede var fullt og skikkelig verifisert før den ble eksportert.
+**Aldri** bruk uverifiserte importeringsvalg da dette kun er for eksperter. Du bør spesielt ikke bruke det med en blokkjede du laster ned fra internett, inkludert den offisielle nettsiden. Det er kun trygt å bruke dersom du a) importerer en fil som du eksporterer lokalt på egenhånd *og* b) er helt sikker på at den allerede var fullt og skikkelig verifisert før den ble eksportert.
 
 ### Trinn 1
 
@@ -42,7 +42,7 @@ Det bør se ut noe som dette:
 
 `cd D:\monero-gui-0.10.3.1`
 
-Dersom Monero-pregramvaren din er på en annen disk, kan du bruke `DriveLetter:` Hvis Monero-programvaren din for eksempel var på D-disken din, må du, før du bruker cd-kommandoen, bruke `D:`
+Hvis Monero-programvaren din ligger på en annen disk, kan du bruke `DriveLetter`: Hvis Monero-programvaren din for eksempel lå på D-disken din, må du, før du bruker cd-kommandoen, bruke `D:`
 
 ### Trinn 6
 
