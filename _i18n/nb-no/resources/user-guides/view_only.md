@@ -14,7 +14,7 @@ Du kan også opprette en visningslommebok til en maskinvarelommebok, men denne t
 
 For å opprette en visningslommebok, må du enten ha tilgang til en lommebok eller kjenne til hovedadressen og den private visningsnøkkelen fra en lommebok.
 
-### CLI: Å opprette en visningslommebok fra en private visningsnøkkel
+### CLI: Å opprette en visningslommebok fra en privat visningsnøkkel
 
 Åpne en eksisterende lommebok og tast inn kommandoene `address` og `viewkey` for å vise lommebokens adresse og dens private (hemmelige) visningsnøkkel. Tast inn `exit` for å lukke lommeboken.
 
