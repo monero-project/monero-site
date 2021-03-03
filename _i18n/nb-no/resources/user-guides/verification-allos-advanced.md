@@ -4,7 +4,7 @@ Verifisering av Monero-binærfilene bør gjøres i forkant av utpakking, install
 
 For å beskytte integriteten til binærfilene, gir Monero-teamet en kryptografisk signert liste over alle [SHA256](https://en.wikipedia.org/wiki/SHA-2)-hashene. Hvis din nedlastede binærfil har blitt tuklet med, produserer den en [forskjellig hash](https://en.wikipedia.org/wiki/File_verification) enn den i filen.
 
-Dette er en avansert veiledning for Linux, Mac, eller Windows som gjør bruk at kommandolinjen. Den leder deg gjennom prosessen av å installere den nødvendige programvaren, importering av signaturnøkkelen, nedlasting av de nødvendig filene, og til slutt verifisering av at binærfilene dine er autentiske.
+Dette er en avansert veiledning for Linux, Mac, eller Windows som gjør bruk at kommandolinjen. Den leder deg gjennom prosessen av å installere den nødvendige programvaren, importering av signaturnøkkelen, nedlasting av de nødvendige filene, og til slutt verifisering av at binærfilene dine er autentiske.
 
 ## Innholdsfortegnelse:
 
@@ -18,7 +18,7 @@ Dette er en avansert veiledning for Linux, Mac, eller Windows som gjør bruk at 
   + [3.2. Verifisering av hashfil](#32-verify-hash-file)
 ### [4. Nedlasting og verifisering av binærfiler](#4-download-and-verify-binary)
   + [4.1. Å få tak i Monero-binærfiler](#41-get-monero-binary)
-  + [4.2. Verifisering av binærfiler på Linux or Mac](#42-binary-verification-on-linux-or-mac)
+  + [4.2. Verifisering av binærfiler på Linux eller Mac](#42-binary-verification-on-linux-or-mac)
   + [4.3. Verifisering av binærfiler på Windows](#43-binary-verification-on-windows)
 
 ## 1. Installering av GnuPG
@@ -43,7 +43,7 @@ På Linux kan du laste ned binaryFates signaturnøkkel ved å eksekvere følgend
 wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
-### 2.2. Verifsering av signaturnøkkel
+### 2.2. Verifisering av signaturnøkkel
 
 På alle operativsystemer, kan du sjekke fingeravtrykket til `binaryfate.asc` ved å eksekvere følgende kommando i en terminal:
 
