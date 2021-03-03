@@ -28,7 +28,7 @@ Hvis alt ser bra ut, kan du lage et notat av navnet på den skjulte tjenesten (o
 ```
 sudo cat /var/lib/tor/monero-service/hostname
 ```
-Den vil være noe 4dcj312uxag2r6ye.onion -- bruk denne for `HIDDEN_SERVICE` under.
+Den vil se ut som dette: 4dcj312uxag2r6ye.onion -- bruk denne for `HIDDEN_SERVICE` under.
 
 ### Å konfigurere Daemon til å tillate RPC
 
@@ -75,7 +75,7 @@ Hvis du er interessert i å eksperimentere med GUI-en over Tor, kan du prøve `t
 torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui
 ```
 
-Dette lar GUI-en kommunisere med Tor-nettverket. Når GUI-en er åpen og lommeboken lastet inn, må du konfigurere den til å koble til Tor-nettverket ditt ved å legge til onion-adressen din i:  "Innstillinger > Node > Ekstern node > Adresse".
+Dette lar GUI-en kommunisere med Tor-nettverket. Når GUI-en er åpen og lommeboken lastet inn, må du konfigurere den til å koble til Tor-nettverket ditt ved å legge til onion-adressen din i: "Innstillinger > Node > Ekstern node > Adresse".
 
 I fremtidige versjoner av GUI-en forventer vi å legge til direkte støtte for Tor/I2P slik at `torsocks` + kommandolinjen ikke trengs.
 
