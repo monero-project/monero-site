@@ -2,7 +2,7 @@
 
 Å gjenopprette en lommebok fra pivate nøkler er ganske enkelt. Hvis du har den nødvendige informasjonen, kan du med denne guiden gjenopprette lommeboken din fullstendig. Merk: du trenger IKKE passordet ditt for å gjenopprette fra nøkler.
 
-Du trenger tre stykker data fra lommeboken din eller din .keys-fil som bevarer denne informasjonen og passordet for å avkryptere det. De tre lommebokkomponentene du trenger er:
+Du trenger tre stykker data fra lommeboken din eller din .keys-fil som bevarer denne informasjonen og passordet for å avkode det. De tre lommebokkomponentene du trenger er:
 
 1. **Adresse**
 2. **Hemmelig forbruksnøkkel**
