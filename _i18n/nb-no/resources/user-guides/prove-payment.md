@@ -8,7 +8,7 @@ Med bitcoin gjøres dette som regel ved å slå opp transaksjons-ID-en, der den 
 
 Monero er imidlertid privat. Disse opplysningene er ikke offentlig tilgjengelig på blokkjeden. Trinnene er derfor litt mer innviklet.
 
-For å bevise til Charlie at hun har gjennomført en betaling til Bob, må Alive forsyne Charlie med tre opplysninger:
+For å bevise til Charlie at hun har gjennomført en betaling til Bob, må Alice forsyne Charlie med tre opplysninger:
 
 - Transaksjons-ID-en (som i bitcoin)
 - Bobs adresse (som i bitcoin)
