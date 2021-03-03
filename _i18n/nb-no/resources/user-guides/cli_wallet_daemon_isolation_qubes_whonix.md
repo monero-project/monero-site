@@ -11,7 +11,7 @@ Dette er tryggere enn andre tilnærminger som ruter lommebokens rpc over en skju
 
 + Opprett følgende to arbeidsstasjoner ved å bruke en Whonix-arbeidsstasjonmal:
 
-  - Den første arbeidssstasjonen vil brukes for lommeboken din, og vil refereres til som `monero-wallet-ws`. Du må sette din `NetVM` til `none`.
+  - Den første arbeidsstasjonen vil brukes for lommeboken din, og vil refereres til som `monero-wallet-ws`. Du må sette din `NetVM` til `none`.
 
   - Den andre arbeidsstasjonen vil være for `monerod`-daemonen, og vil refereres til som `monerod-ws`. Din `NetVM` må være satt til Whonix-porten `sys-whonix`.
 
