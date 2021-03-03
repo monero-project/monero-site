@@ -44,7 +44,7 @@ Betalings-ID-en inngår i dette tilfellet i den integrerte adressen.
 Bytt ut `RINGSIZE` med antallet utdata du vil bruke. **Hvis dette ikke angis, velges 11 som standard.** Det er en god idé å bruke standarden, men du kan øke antallet dersom du vil inkludere flere utdata. Jo høyere antallet, jo større er transaksjonen, og jo høyere gebyr trengs for transaksjonen.
 
 
-## Receiving monero
+## Å motta monero
 
 Hvis du har din egen Monero-adresse, trenger du bare å gi din standardadresse til noen.
 
