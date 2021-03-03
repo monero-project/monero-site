@@ -8,7 +8,7 @@
 
 - Åpne en ledetekst og naviger til disken og katalogen som inneholder monero-wallet-cli
 
-- I ledeteksten taster du inn:  `monero-wallet-cli --restore-deterministic-wallet`
+- I ledeteksten taster du inn: `monero-wallet-cli --restore-deterministic-wallet`
 
 - Når du trykker på enter, blir du bedt om et lommebokfilnavn. Gi lommeboken ditt et navn – et hvilket som helst navn holder
 
@@ -18,7 +18,7 @@
 
 - Trykk på enter igjen, så blir du bedt om å legge inn det mnemoniske electrum-frøet på 25 ord som du fant fram tidligere
 
--  Du blir deretter tilskyndet med «Gjenopprett fra en spesifikk blokkjedehøyde (valgfritt, standard 0):» Standard-valget starter gjenopprettingsprosessen fra begynnelsen av Monero-blokkjeden. Hvis du ikke kjenner til den spesifikke blokkjedehøyden, trykker du bare på enter. (Å spesifisere en spesifikk blokkkjedehøyde starter gjenopprettingsprosessen fra den spesifikke høyden. Hvis du vet ved hvilken blokkjedehøyde midlene dine har gjennomgått en transaksjon, sparer dette litt tid hva gjelder skanning.)
+-  Du blir deretter tilskyndet med «Gjenopprett fra en spesifikk blokkjedehøyde (valgfritt, standard 0):» Standard-valget starter gjenopprettingsprosessen fra begynnelsen av Monero-blokkjeden. Hvis du ikke kjenner til den spesifikke blokkjedehøyden, trykker du bare på enter. (Å spesifisere en spesifikk blokkjedehøyde starter gjenopprettingsprosessen fra den spesifikke høyden. Hvis du vet ved hvilken blokkjedehøyde midlene dine har gjennomgått en transaksjon, sparer dette litt tid hva gjelder skanning.)
 
 Etter du har tastet inn det mnemoniske frøet på 25 ord og har spesifisert blokkjedehøyden din, vil monero-wallet-cli generere den samme offentlige adressen og visningsnøkkelen som din gamle lommebok og begynne oppdateringsprosessen automatisk. (Vennligst vær tålmodig i og med at oppdateringsprosessen kan ta en stund.)
 
