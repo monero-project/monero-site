@@ -92,7 +92,7 @@ Trykk på `Ferdig`.
 
 ## 2. Monero-signeringsnøkkel
 
-Denne seksjonen tar for seg nedlasting av Monero-signeringsnøkkelen, verifisering av at nøkkelen er riktig, og deretter import av nøkkelen til nøkkelringen din. Hash-filen som brukes til å verifisere binærfilene dine er kryptografisk signert med Monero-signeringsnøkkelen. For å kontrollere gyldigheten av denne filen, trenger du den offentlig versjonen av signeringsnøkkelen.
+Denne seksjonen tar for seg nedlasting av Monero-signeringsnøkkelen, verifisering av at nøkkelen er riktig, og deretter import av nøkkelen til nøkkelringen din. Hash-filen som brukes til å verifisere binærfilene dine er kryptografisk signert med Monero-signeringsnøkkelen. For å kontrollere gyldigheten av denne filen, trenger du den offentlige versjonen av signeringsnøkkelen.
 
 ### 2.1. Nedlasting av signeringsnøkkel
 
