@@ -5,7 +5,7 @@ Det er flere måter å oppdrive Monero på. Du kan utvinne det, veksle varer ell
 
 Det finnes flere børser som støtter Monero. Noen er sentraliserte, som vanligvis har mye likviditet og rask service, men som krever at du sender inn personlige opplysninger (KYC) før du kan begynne å handle der. Andre er desentraliserte og krever ikke identifikasjon, men har vanligvis mindre volum og kan være vanskeligere å bruke. Det finnes også tjenester som lar mennesker møte og handle uten at en tredjepart er involvert.
 
-En ufullstendig liste over børser som støtter Monero finnes på vår [Forhandler-side ]({{ site.baseurl }}/community/merchants/#exchanges).
+En ufullstendig liste over børser som støtter Monero finnes på vår [Forhandler-side]({{ site.baseurl }}/community/merchants/#exchanges).
 
 ## Steg 2: Last ned og opprett en papirlommebok på en sikker PC som ikke er koblet til internett.
 Last ned @papirlommebokgeneratoren på: [moneroaddress.org](https://moneroaddress.org) og kopier den til en USB-minnepinne (direktelenke: [https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip)).
@@ -16,7 +16,7 @@ Papirlommeboken din vil inneholde fire viktige elementer:
 
 - Offentlig Monero-@adresse: Den offentlige adressen brukes til å motta midler til @lommeboken. Du gir denne til de som vil sende midler til lommeboken din.
 
-- @Mnemonisk Monero-frø: Det mnemoniske frøet er en metode å lagre hele lommeboken på som er enkelt gjenkjenbart for mennesker. Dette er alt du trenger for å gjenopprette lommeboken din senere.
+- @Mnemonisk Monero-frø: Det mnemoniske frøet er en metode å lagre hele lommeboken på som er enkelt gjenkjennelig for mennesker. Dette er alt du trenger for å gjenopprette lommeboken din senere.
 
 - Monero-@forbruksnøkkel: Den private forbruksnøkkelen brukes til å sende midler fra lommebøkene.
 
@@ -30,7 +30,7 @@ Uansett hvilken metode du velger, må du sørge for at det ikke finnes en kopi a
 
 #### Sidemerknad
 Mulighet for å kryptere et XMR-mnemonisk frø: https://xmr.llcoins.net/
-Last ned html-siden og sett den på PC-en din som ikke er koblet til internett. Se delen om «Kryptering/avkryptering av mnemonisk frø» og sørg for at du bruker «CN Add» med et godt passord. Takk til manicminer5.
+Last ned html-siden og sett den på PC-en din som ikke er koblet til internett. Se delen om «Kryptering/avkoding av mnemoniske frø» og sørg for at du bruker «CN Add» med et godt passord. Takk til manicminer5.
 
 ## Steg 3: Send dine Moneroj til papirlommeboken
 Nå som du har alt du trenger, er du klar til å sende dine XMR til papirlommeboken din. Bare send myntene til lommebok-adressen du skrev ned tidligere. Sørg for at adressen er riktig, selv om du har kopiert og limt den! Husk at hvis du sender myntene til en feil adresse, er det ingen måte å få dem tilbake på!
