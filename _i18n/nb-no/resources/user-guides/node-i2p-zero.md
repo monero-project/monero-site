@@ -7,15 +7,15 @@
 4. (valgfritt) Finn din tilfeldig tildelte I2P-port ved å taste inn: `router/bin/tunnel-control.sh router.externalPort`. Av personvernhensyn avdekker vi ikke dette portnummeret til andre personer. Få brannmuren din til å videreføre trafikk gjennom denne porten slik at I2P-noden din er offentlig tilgjengelig. Hvis du ikke har mulighet til å tillate innkommende transaksjoner, vil alt fremdeles fungere, men I2P-noden din vil ikke hjelpe I2P-nettverket like mye som det hadde kunnet.
 5. Opprett en socks-tunnel for utgående I2P-tilkoblinger ved å taste inn: `router/bin/tunnel-control.sh socks.create 8060`
 6. Opprett en server-tunnel for innkommende I2P-tilkoblinger ved å taste inn: `router/bin/tunnel-control.sh server.create 127.0.0.1 8061`.
-7. Komandoen over vil resultere i en I2P-adresse som skrives ut til kommandolinjen, som ender med `.b32.i2p`. Dette er din nye I2P-adresse.
-8. Kjør monerod ved å taste inn følgende og erstatt `XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p` med din egen I2P-adresse som ble skrevet ut fra steg 6: `monerod --tx-proxy i2p,127.0.0.1:8060 --add-peer core5hzivg4v5ttxbor4a3haja6dssksqsmiootlptnsrfsgwqqa.b32.i2p --add-peer dsc7fyzzultm7y6pmx2avu6tze3usc7d27nkbzs5qwuujplxcmzq.b32.i2p --add-peer sel36x6fibfzujwvt4hf5gxolz6kd3jpvbjqg6o3ud2xtionyl2q.b32.i2p --add-peer yht4tm2slhyue42zy5p2dn3sft2ffjjrpuy7oc2lpbhifcidml4q.b32.i2p --anonymous-inbound XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p,127.0.0.1:8061 --detach`
+7. Kommandoen over vil resultere i en I2P-adresse som skrives ut til kommandolinjen, som ender med `.b32.i2p`. Dette er din nye I2P-adresse.
+8. Kjør monerod ved å taste inn følgende kommando, og erstatt `XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p` med din egen I2P-adresse som ble skrevet ut i steg 6: `monerod --tx-proxy i2p,127.0.0.1:8060 --add-peer core5hzivg4v5ttxbor4a3haja6dssksqsmiootlptnsrfsgwqqa.b32.i2p --add-peer dsc7fyzzultm7y6pmx2avu6tze3usc7d27nkbzs5qwuujplxcmzq.b32.i2p --add-peer sel36x6fibfzujwvt4hf5gxolz6kd3jpvbjqg6o3ud2xtionyl2q.b32.i2p --add-peer yht4tm2slhyue42zy5p2dn3sft2ffjjrpuy7oc2lpbhifcidml4q.b32.i2p --anonymous-inbound XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p,127.0.0.1:8061 --detach`
 
 Det var alt! Ikke bytt ut dsc****.b32.i2p-adressen med din egen, bare bytt ut XXXXXXX.b32.i2p. dsc****.b32.i2p-en er en frønode som hjelper deg med å oppdage andre I2P-tilgjengelige Monero-noder.
 
 ## Oppsett av Linux-tjenester slik at monerod og I2P-zero startes automatisk
 Hvis du kjører Linux, er det nyttig å sette opp dette til å kjøre automatisk dersom maskinen noen gang startes på nytt. Du kan gjøre dette ved å opprette systemd-servicefiler:
 
-Merk: sørg for å bytte ut versjonummerne i filene under med versjonnummerne til monero og i2p-zero som du laster ned. Bytt også ut `<username>` og `<usergroup>` med din Linux-bruker og gruppenavn (bruk `whoami`- og `groups`-kommandoene hvis du ikke kjenner til dem).
+Merk: sørg for å bytte ut versjonnumrene i filene under med versjonnumrene til monero og i2p-zero som du laster ned. Bytt også ut `<username>` og `<usergroup>` med din Linux-bruker og gruppenavn (bruk `whoami`- og `groups`-kommandoene hvis du ikke kjenner til dem).
 
 ### /etc/systemd/system/i2pzero.service
 ````                                                
