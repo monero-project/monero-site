@@ -128,7 +128,7 @@ Etter disse endringene har blitt gjort, bør konfigurasjonen din se ut noe som d
 
 ## Å starte utvinneren
 
-Windows-brukere kan dobbeltklikke på xmrig.exe. Brukere til andre operativsystemer bør bruke `cd`-kommandoen til de kommer i mappeen som inneholder XMRig, og deretter taste inn `./xmrig` etterfulgt av enter.
+Windows-brukere kan dobbeltklikke på xmrig.exe. Brukere til andre operativsystemer bør bruke `cd`-kommandoen til de ender opp i mappen som inneholder XMRig, og deretter taste inn `./xmrig` etterfulgt av enter.
 
 Hvis du ser grønne meldinger som sier at andelene har blitt godkjent – gratulerer, alt funker!
 
@@ -154,7 +154,7 @@ Tatt fra [MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-w
 
 1. Gå til Start-menyen og trykk «Kjør». Tast inn `gpedit.msc` i den åpne boksen.
 2. I redigeringskonsollen for lokale grupperetningslinjer, må du utvide datakonfigurasjonen og deretter utvide Windows-instillingene.
-3. Utvid sikkerhetsinstillingene og utvid deretter lokale retningslinjer.
+3. Utvid sikkerhetsinnstillingene og utvid deretter lokale retningslinjer.
 4. Velg den tildelte mappen for brukerrettigheter.
 5. Retningslinjene vil vises i detaljruta.
 6. I ruten dobbeltklikker du på «Lock pages in Memory» (Lås sider i minnet).
