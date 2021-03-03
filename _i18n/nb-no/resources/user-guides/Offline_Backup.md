@@ -14,9 +14,9 @@
 
 - Koble fra nettverket og/eller internettkablene fra PC-en din og fysisk fjern WiFi-kortet eller skru om mulig av Wifi/Bluetooth
 
-- Start opp i ditt oppstartsbare operativsystem og installer avhengighetsfiler om nødvendig
+- Start opp i ditt oppstartbare operativsystem og installer avhengighetsfiler om nødvendig
 
-- Kopier Monero-binærfilene til en RAM-disk (/dev/shm i Linux. Oppstartsbare ISO-er i Windows har normalt en Z:-stasjon eller noe)
+- Kopier Monero-binærfilene til en RAM-disk (/dev/shm i Linux. Oppstartbare ISO-er i Windows har normalt en Z:-stasjon eller noe)
 
 - Ikke kjør Monero @daemon. Bruk i stedet kommandolinjen, og bruk monero-wallet-cli for å opprette en ny Monero @konto
 
