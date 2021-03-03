@@ -14,7 +14,7 @@ i ledeteksten. Skriv ned frøet ditt på 25 ord dersom du ikke allerede har gjor
 
 > exit
 
-- Sikkerhetskopier alle dine lommeboksrelaterte filer. Disse inkluderer:
+- Sikkerhetskopier alle de lommebokrelaterte filene dine. Disse inkluderer:
 
 > yourwalletname.bin
 > yourwalletname.bin.keys
