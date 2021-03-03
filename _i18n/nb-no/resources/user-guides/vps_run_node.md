@@ -4,7 +4,7 @@
 
 `monerod` er @daemon-programvaren som kommer med Monero-treet. Den er et konsollprogram og håndterer blokkjeden. Mens en bitcoin-lommebok håndterer både en konto og blokkjeden, separerer Monero disse: `monerod` håndterer blokkjeden og `monero-wallet-cli` håndterer kontoen.
 
-Denne guiden antar at du allerede har satt opp VPS-konto og at du bruker SSH til å tunnellere til serverkonsollen.
+Denne guiden antar at du allerede har satt opp VPS-konto og at du bruker SSH-en til å tunnelere til serverkonsollen.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
