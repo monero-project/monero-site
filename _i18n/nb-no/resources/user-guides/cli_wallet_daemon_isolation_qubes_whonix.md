@@ -13,32 +13,14 @@ Dette er tryggere enn andre tilnærminger som ruter lommebokens rpc over en skju
 
   - Den første arbeidsstasjonen vil brukes for lommeboken din, og vil refereres til som `monero-wallet-ws`. Du må sette din `NetVM` til `none`.
 
-  - Den andre arbeidsstasjonen vil være for `monerod`-daemonen, og vil refereres til som `monerod-ws`. Din `NetVM` må være satt til Whonix-porten `sys-whonix`.
+  - Den andre arbeidsstasjonen vil være for `monerod`-daemonen, og vil refereres til som `monerod-ws`. Din `NetVM` må være satt til Whonix-porten `sys-whonix`. Før du går videre må du sørge for at denne arbeidsstasjonen har nok privat lagringsplass. Du kan anslå hvor mye lagringsplass du trenger ved å sjekke størrelsen på den [rå blokkjeden]({{ site.baseurl }}/downloads/#blockchain). Husk at blokkjeden over tid vil bruke oppta lagringsplass.
 
 ## 2. I AppVM-en `monerod-ws`:
 
-+ Last ned, verifiser og installer Monero-programvare.
-
-```
-user@host:~$ curl -O "https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2" -O "{{ site.baseurl_root }}/downloads/hashes.txt"
-user@host:~$ gpg --recv-keys BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9
-user@host:~$ gpg --verify hashes.txt
-gpg: Signature made Wed 01 Nov 2017 10:01:41 AM UTC
-gpg:                using RSA key 0x55432DF31CCD4FCD
-gpg: Good signature from "Riccardo Spagni <ric@spagni.net>" [unknown]
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: BDA6 BD70 42B7 21C4 67A9  759D 7455 C5E3 C0CD CEB9
-     Subkey fingerprint: 94B7 38DD 3501 32F5 ACBE  EA1D 5543 2DF3 1CCD 4FCD
-user@host:~$ echo '6581506f8a030d8d50b38744ba7144f2765c9028d18d990beb316e13655ab248  monero-linux-x64-v0.11.1.0.tar.bz2' | shasum -c
-monero-linux-x64-v0.11.1.0.tar.bz2: OK
-user@host:~$ tar xf monero-linux-x64-v0.11.1.0.tar.bz2
-user@host:~$ sudo cp monero-v0.11.1.0/monerod /usr/local/bin/
-```
 + Opprett en `systemd`-fil.
 
 ```
-user@host:~$ sudo gedit /home/user/monerod.service
+user@host:~$ sudo nano /home/user/monerod.service
 ```
 
 Lim inn følgende innhold:
@@ -55,7 +37,7 @@ Group=user
 Type=forking
 PIDFile=/home/user/.bitmonero/monerod.pid
 
-ExecStart=/usr/local/bin/monerod --detach --data-dir=/home/user/.bitmonero \
+ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \
     --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \
     --log-file=/home/user/.bitmonero/bitmonero.log --p2p-bind-ip=127.0.0.1
 
@@ -66,16 +48,10 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Kopier `monero-wallet-cli` som er kjørbar til `monero-wallet-ws`-VM-en.
-
-```
-user@host:~$ qvm-copy-to-vm monero-wallet-ws monero-v0.11.1.0/monero-wallet-cli
-```
-
 + Få `monerod` daemon til å kjøre på oppstart ved å redigere filen `/rw/config/rc.local`.
 
 ```
-user@host:~$ sudo gedit /rw/config/rc.local
+user@host:~$ sudo nano /rw/config/rc.local
 ```
 
 Legg til disse linjene nederst:
@@ -95,7 +71,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubesp-rpc
-user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod
+user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Legg til denne linjen:
@@ -108,16 +84,10 @@ socat STDIO TCP:localhost:18081
 
 ## 3. I AppVM-en `monero-wallet-ws`:
 
-+ Flytt den eksekverbare `monero-wallet-cli`.
-
-```
-user@host:~$ sudo mv QubesIncoming/monerod-ws/monero-wallet-cli /usr/local/bin/
-```
-
 + Rediger filen `/rw/config/rc.local`.
 
 ```
-user@host:~$ sudo gedit /rw/config/rc.local
+user@host:~$ sudo nano /rw/config/rc.local
 ```
 
 Legg til følgende linje nederst:
