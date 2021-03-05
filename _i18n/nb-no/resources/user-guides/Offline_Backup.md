@@ -33,6 +33,4 @@
 
 Kontoen du har opprettet ble opprettet i RAM, og de digitale filene er nå utilgjengelige. Hvis en uvedkommende på en eller annen måte klarer å få tilgang til dataene, vil de mangle det lange passordet for å åpne det. Hvis du må motta betalinger, har du din offentlige adresse, og du har visningsnøkkelen om det blir behov for den. Hvis du trenger tilgang til den, har du ditt @mnemoniske frø på 25 ord, og du kan nå skrive ut flere kopier av den, inkludert en kopi som befinner seg på et annet område (f.eks. i en bankboks).
 
-Takk til:  Riccardo Spagni
-
 Relatert innhold:  [Offline kontogenerator](http://moneroaddress.org/)
