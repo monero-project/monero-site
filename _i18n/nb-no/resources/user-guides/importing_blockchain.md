@@ -57,6 +57,3 @@ Jeg hadde for eksempel tastet inn:
 ### Trinn 7
 
 Etter blokkjeden er ferdig med å synkronisere, kan du åpne Monero-lommeboken din som normalt. Din nedlastede blockchain.raw kan slettes.
-
-
-Forfatter: Kee Jefferys
