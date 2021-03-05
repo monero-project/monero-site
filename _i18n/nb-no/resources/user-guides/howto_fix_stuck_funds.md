@@ -16,15 +16,15 @@ i ledeteksten. Skriv ned frøet ditt på 25 ord dersom du ikke allerede har gjor
 
 - Sikkerhetskopier alle de lommebokrelaterte filene dine. Disse inkluderer:
 
-> yourwalletname.bin
-> yourwalletname.bin.keys
-> yourwalletname.bin.address.txt
+> dinlommebok.bin
+> dinlommebok.bin.keys
+> dinlommebok.bin.address.txt
 
 Dette kan gjøres ved å kopiere filene til en ny mappe.
 
-Av og til, når du oppretter lommeboken din, må du gi den et navn uten .bin-delen. I dette tilfellet vil lommebokfilen kalles for yourwalletname uten .bin på slutten.
+Av og til, når du oppretter lommeboken din, må du gi den et navn uten .bin-delen. I dette tilfellet vil lommebokfilen kalles for dinlommebok uten .bin på slutten.
 
-- Slett yourwallet.bin
+- Slett dinlommebok.bin
 
 - Last inn monero-wallet-cli, og tast inn navnet på lommeboken du nettopp slettet.
 
