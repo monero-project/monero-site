@@ -1,7 +1,5 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-# monero-wallet-cli
-
 `monero-wallet-cli` er lommebokprogramvaren som kommer sammen med Monero tree. Det er et konsollprogram og administrerer en konto. Mens en bitcoin-lommebok håndterer både en konto og blokkjeden, separerer Monero disse: `monerod` håndterer blokkjeden, og `monero-wallet-cli` håndterer kontoen.
 
 Denne veiledningen viser deg hvordan man utfører ulike operasjoner fra `monero-wallet-cli`-UI-en. Veiledningen antar at du bruker den siste versjonen av Monero og allerede har opprettet en konto i henhold til de andre veiledningene.
