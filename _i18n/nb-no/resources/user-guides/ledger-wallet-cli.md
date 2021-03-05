@@ -158,6 +158,3 @@ Gratulerer. Du kan nå bruke Ledger Monero-lommeboken din sammen med CLI-en.
    Dersom lommebokfilene til Ledgeren ikke befinner seg i samme katalog som `monero-wallet-cli`, bør du åpne `monero-wallet-cli` med `--wallet-file /path/to/wallet.keys/file`-flagget. Alternativt kan du kopiere Ledger-lommebokfilene til samme katalog som `monero-wallet-cli`.
 
 5. Hvis du har flere spørsmål eller trenger hjelp, kan du legge igjen en kommentar på det opprinnelige [StackExchange](https://monero.stackexchange.com/questions/8503/how-do-i-generate-a-ledger-monero-wallet-with-the-cli-monero-wallet-cli)-svaret.
-
-Forfatter: dEBRUYNE
-Sekundærforfatter: el00ruobuob
