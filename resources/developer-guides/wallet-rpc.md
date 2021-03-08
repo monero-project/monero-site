@@ -2068,11 +2068,13 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"v
 
 ### **export_outputs**
 
-Export all outputs in hex format.
+Export outputs in hex format.
 
 Alias: *None*.
 
-Inputs: *None*.
+Inputs:
+
+* *all* - boolean (optional); If true, export all outputs. Otherwise, export outputs since the last export. (default = false)
 
 Outputs:
 
@@ -2126,7 +2128,9 @@ Export a signed set of key images.
 
 Alias: *None*.
 
-Inputs: *None*.
+Inputs:
+
+* *all* - boolean (optional); If true, export all key images. Otherwise, export key images since the last export. (default = false)
 
 Outputs:
 
