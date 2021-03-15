@@ -187,7 +187,7 @@ permalink: /get-started/faq/index.html
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20The%20Essentials.m4v">{% t faq.video_essentials %}</a></li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Stealth%20Addresses.m4v">{% t faq.video_sa %}</a> - {% t faq.mvideos %} @stealth-addresses</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Ring%20Signatures.m4v">{% t faq.video_ringsig %}</a> - {% t faq.mvideos %} @ring-signatures</li>
-                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">RingCT</a> - {% t faq.mvideos %} @ring-ct</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">{% t faq.video_ringct %}</a> - {% t faq.mvideos %} @ring-ct</li>
                         </ol>
                     </div>
                 </div>

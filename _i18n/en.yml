@@ -459,9 +459,10 @@ faq:
   avideos: >
     During the years the community has created a vast amount of informative content like articles and videos. Most of these videos are publicly available on platforms like YouTube. On this website we host a few videos that explain the fundamentals of Monero. To optimize their effectiveness, they should be viewed in sequence:
   video_intro: Introduction to Monero
-  video_essentials: "Monero: The Essentials"
+  video_essentials: The Essentials
   video_sa: Stealth Addresses
   video_ringsig: Ring Signatures
+  video_ringct: Ring Confidential Transactions
   mvideos: "More info on the Moneropedia entry:"
   aavailable: also available in
   and: and
