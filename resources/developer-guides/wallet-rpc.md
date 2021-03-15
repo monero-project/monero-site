@@ -1129,14 +1129,13 @@ Inputs:
 * *transfer_type* - string; "all": all the transfers, "available": only transfers which are not yet spent, OR "unavailable": only transfers which are already spent.
 * *account_index* - unsigned int; (Optional) Return transfers for this account. (defaults to 0)
 * *subaddr_indices* - array of unsigned int; (Optional) Return transfers sent to these subaddresses.
-* *verbose* - boolean; (Optional) Enable verbose output, return key image if true.
 
 Outputs:
 
 * *transfers* - list of:
   * *amount* - unsigned int; Amount of this transfer.
   * *global_index* - unsigned int; Mostly internal use, can be ignored by most users.
-  * *key_image* - string; Key image for the incoming transfer's unspent output (empty unless verbose is true).
+  * *key_image* - string; Key image for the incoming transfer's unspent output.
   * *spent* - boolean; Indicates if this transfer has been spent.
   * *subaddr_index* - unsigned int; Subaddress index for incoming transfer.
   * *tx_hash* - string; Several incoming transfers may share the same hash if they were in the same transaction.
@@ -1145,7 +1144,7 @@ Outputs:
 Example, get all transfers:
 
 ```
-$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"all","account_index":0,"subaddr_indices":[3],"verbose":true}}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"all","account_index":0,"subaddr_indices":[3]}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1182,7 +1181,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"i
 Example, get available transfers:
 
 ```
-$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"available","account_index":0,"subaddr_indices":[3],"verbose":true}}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"available","account_index":0,"subaddr_indices":[3]}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1211,7 +1210,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"i
 Example, get unavailable transfers:
 
 ```
-$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"unavailable","account_index":0,"subaddr_indices":[3],"verbose":true}}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"incoming_transfers","params":{"transfer_type":"unavailable","account_index":0,"subaddr_indices":[3]}}' -H 'Content-Type: application/json'
 {
 "id": "0",
 "jsonrpc": "2.0",
