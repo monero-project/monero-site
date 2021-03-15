@@ -3557,7 +3557,13 @@ span.icon-browser {
   height: 3rem;
   padding: 1rem 0;
 }
+}
 
+@media only screen and (max-width: 62rem) {
+
+.tabPanel-merchant {
+	display: none;
+}
 }
 
 /***************************ROADMAP STYLING*********************************/

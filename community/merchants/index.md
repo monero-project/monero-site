@@ -7,13 +7,13 @@ permalink: /community/merchants/index.html
 <div class="merchants text-center container description">
     <p>{% t merchants.intro1 %}<a href="https://github.com/monero-project/monero-site/issues" target="_blank" rel="noreferrer noopener"> {% t merchants.intro2 %}</a> {% t merchants.intro3 %}</p>
 </div>
-<div class="merchants">
 
 {% assign itemCount = site.data.merchants | size %}
 {% assign headerRow = itemCount | divided_by: 5.0 | ceil | times: 1.0 %}
 {% assign itemInRow = itemCount | divided_by: headerRow | ceil %}
 
 {% assign Item_processed = 0 %}
+<!-- Merchants menu: desktop -->
 <div class="container full">
   {% for toplevel in site.data.merchants %}
     {% assign isHeader = Item_processed | modulo: itemInRow %}
@@ -32,7 +32,24 @@ permalink: /community/merchants/index.html
     {% endif %}
   {% endfor %}
 </div>
+<!-- End merchants menu: desktop -->
+<!-- Merchants menu: mobile -->
+<div class="container full">
+    <div class ="info-block row center-xs" id="pick-platform">
+        <div class="mob dropdowndrop">
+            <input id="filter" type="checkbox" name="category-filter"/>
+            <label for="filter">{% t blog.filter %}</label>
+            <ul id="menu">
+                {% for toplevel in site.data.merchants %}
+                    <li><a href="#{{ toplevel.id }}">{{ toplevel.category }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End merchants menu: mobile -->
 
+<div class="merchants">
 {% for toplevel in site.data.merchants %}
 <div class="container full" id="{{toplevel.id}}">
        <div class="info-block">
@@ -56,3 +73,5 @@ permalink: /community/merchants/index.html
         <em>{% t merchants.disclaimer %}</em>
     </p>
 </div>
+
+<a class="arrow-up" href="#" aria-label="{% t accessibility.arrowup %}" title="{% t accessibility.gotop %}"><i></i></a>
