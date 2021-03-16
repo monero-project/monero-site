@@ -17,10 +17,10 @@ permalink: /get-started/accepting/index.html
             <h3 id="gui">{% t accepting.title_gui %}</h3>
               <p>{% t accepting.gui1 %}</p>
               <p>{% t accepting.gui2 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md#receive-monero">{% t accepting.guilinkguide %}</a></p>
-                <img class="top-margin" src="/img/receive.png" loading="lazy" alt="receive page">
+                <img class="top-margin" src="/img/receive.png" width="980" height="800" loading="lazy" alt="receive page">
               <p>{% t accepting.guiinstructions %}</p>
               <p>{% t accepting.guimerchant %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md#merchant-view">{% t accepting.guilinkguide1 %}</a>.</p>
-                <img class="top-margin" src="/img/merchant_page.png" loading="lazy" alt="merchant view">
+                <img class="top-margin" src="/img/merchant_page.png" width="980" height="800" loading="lazy" alt="merchant view">
               <p>{% t accepting.guimerchant1 %}</p>
               <p>{% t accepting.guisteps %}</p>
               <ol>
@@ -36,9 +36,9 @@ permalink: /get-started/accepting/index.html
               <p>{% t accepting.clicreateaccount %}</p>
               <p><code>account new [label text with white spaces allowed]</code></p>
               <p>{% t accepting.clicreateaccount1 %}</p>
-                <img class="top-margin" src="/img/account_cli.png" loading="lazy" alt="accounts">
+                <img class="top-margin" src="/img/account_cli.png" width="755" height="142" loading="lazy" alt="accounts">
               <p>{% t accepting.cliindex %}</p>
-                <img class="top-margin" src="/img/account_switch.png" loading="lazy" alt="accounts switch">
+                <img class="top-margin" src="/img/account_switch.png" width="752" height="216" loading="lazy" alt="accounts switch">
               <p>{% t accepting.cliindex1 %}</p>
               <p><code>address new [label text with white spaces allowed]</code></p>
               <p><i>{% t accepting.clinotes %}</i></p>
