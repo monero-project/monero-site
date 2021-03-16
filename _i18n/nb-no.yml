@@ -1,7 +1,10 @@
 global:
   date: '%Y/%m/%d'
   tagsmeta: Alle Monero-bloggartikler som er emneknagget
-  lang_tag: '@lang_tag_no'
+  lang_tag: '@lang_tag_nb-no'
+  moreinfo: Mer informasjon
+  upgrade: For å fortsette å bruke Monero, må du sørge for at programvaren din er
+    oppdatert med nettverksoppgraderingen datert 30. november.
   outdatedVersion: den engelske versjonen
   outdatedMin: Denne siden har blitt oppdatert etter den ble oversatt. Du kan bruke
     denne versjonen, men den kan være ufullstendig. Bruk

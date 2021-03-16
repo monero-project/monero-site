@@ -3,7 +3,7 @@ terms: ["unlock-time", "opplåsningstid"]
 summary: "en spesiell transaksjon der mottakeren bare kan bruke midlene etter en fremtidig dato, som satt av senderen"
 ---
 
-{% include disclaimer.html translated=yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 ### Det grunleggende
 
 En spesiell transaksjon der mottakeren bare kan bruke midlene etter en fremtidig dato, som satt av senderen.
