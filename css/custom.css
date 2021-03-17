@@ -1026,7 +1026,10 @@ a, button, input, select, textarea, label, label:checked, label:focus {
 
 h1, h2, h3, h4, h5, h6, p {margin: 0; padding: 0;}
 
-img, video {max-width: 100%;}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
 
 img.top-margin {
   margin-top: 1.2rem;
@@ -3265,6 +3268,7 @@ span.icon-browser {
   padding: 0;
   padding-right: 0.5rem;
   height: 20px;
+  width: auto;
   vertical-align: middle;
 }
 
