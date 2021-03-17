@@ -48,7 +48,7 @@ permalink: /downloads/index.html
                 <i>{% t downloads.gui_intro %}</i>
             </div>
             <div class="col-md-7 col-sm-12 align-blocks">
-                <img class="screen" alt="{% t accessibility.guiscreen %}" src={% if site.lang == "en" %}"/img/downloads/gui.png"{% else %}"/img/downloads/{{site.lang}}/gui.png"{% endif %}>
+                <img class="screen" loading="lazy" alt="{% t accessibility.guiscreen %}" src={% if site.lang == "en" %}"/img/downloads/gui.png"{% else %}"/img/downloads/{{site.lang}}/gui.png"{% endif %}>
             </div>
             <div class="col-md-5 col-sm-12 align-blocks">
               <ul class="logo">
@@ -138,7 +138,7 @@ permalink: /downloads/index.html
                 <i>{% t downloads.cli_intro %}</i>
             </div>
             <div class="col-md-7 col-sm-12 align-blocks">
-                <img class="screen"  alt="{% t accessibility.cliscreen %}" src={% if site.lang == "en" %}"/img/downloads/cli.png"{% else %}"/img/downloads/{{site.lang}}/cli.png"{% endif %}>
+                <img class="screen" loading="lazy" alt="{% t accessibility.cliscreen %}" src={% if site.lang == "en" %}"/img/downloads/cli.png"{% else %}"/img/downloads/{{site.lang}}/cli.png"{% endif %}>
             </div>
             <div class="col-md-5 col-sm-12 align-blocks">
               <ul class="logo">
@@ -238,25 +238,25 @@ permalink: /downloads/index.html
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img src="/img/cakewallet.png" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><img src="/img/cakewallet.png" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img src="/img/Monerujo-wallet.png" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
+                            <td><img src="/img/Monerujo-wallet.png" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
                             <td><span class="icon-android"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img src="/img/mymonero.png" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
+                            <td><img src="/img/mymonero.png" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
                             <td><span class="icon-apple"></span></td>
                             <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/mymonero" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img src="/img/edge-wallet.png" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
+                            <td><img src="/img/edge-wallet.png" loading="lazy" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
@@ -264,10 +264,10 @@ permalink: /downloads/index.html
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <ul>
-                                <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon"><img style="width: 50px" src="/img/cakewallet.png" alt="Cake Wallet Logo">Cake Wallet</a></li>
-                                <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img src="/img/Monerujo-wallet.png" alt="Monerujo Logo">Monerujo</a></li>
-                                <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon"><img src="/img/mymonero.png" alt="MyMonero Logo">MyMonero</a></li>
-                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon"><img src="/img/edge-wallet.png" alt="Edge Logo">Edge</a></li>
+                                <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon"><img style="width: 50px" src="/img/cakewallet.png" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img src="/img/Monerujo-wallet.png" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon"><img src="/img/mymonero.png" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
+                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon"><img src="/img/edge-wallet.png" loading="lazy" alt="Edge Logo">Edge</a></li>
                             </ul>
                         </div>
             </div>
@@ -300,11 +300,11 @@ permalink: /downloads/index.html
                             </div>
                         </div>
                         <div class="row mob-wallets center-xs">
-                            <a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img src="/img/ledger.png" alt="ledger logo"></a>
-                            <a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" alt="Trezor logo"></a>
+                            <a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img src="/img/ledger.png" loading="lazy" alt="ledger logo"></a>
+                            <a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a>
                         </div>
                         <div class="row mob-wallets center-xs">
-                            <a class="ext-noicon" href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png" alt="Kastelo logo"></a>
+                            <a class="ext-noicon" href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png" loading="lazy" alt="Kastelo logo"></a>
                         </div>                    
                 </div>
                 <!-- End 'Hardware Wallets' -->

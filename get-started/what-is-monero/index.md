@@ -19,12 +19,12 @@ permalink: /get-started/what-is-monero/index.html
                             <p>{% t what-is-monero.leading_para2 %}</p>
                         </div>
                         <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/crypto-lock.png" alt="Encrypted lock" class="main-icon">
+                            <img src="/img/crypto-lock.png" loading="lazy" alt="Encrypted lock" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/monero-classified.png" alt="Classified document" class="main-icon">
+                            <img src="/img/monero-classified.png" loading="lazy" alt="Classified document" class="main-icon">
                         </div>
                         <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>{% t what-is-monero.confidential %}</h3>
@@ -38,12 +38,12 @@ permalink: /get-started/what-is-monero/index.html
                             <p>{% t what-is-monero.electronic_para1 %}</p>
                         </div>
                         <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/monero-electronic-cash.png" alt="Electronic cash" class="main-icon">
+                            <img src="/img/monero-electronic-cash.png" loading="lazy" alt="Electronic cash" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-5 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/academic-growth.png" alt="Academic growth" class="main-icon">
+                            <img src="/img/academic-growth.png" loading="lazy" alt="Academic growth" class="main-icon">
                         </div>
                         <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>{% t what-is-monero.grassroots %}</h3>
