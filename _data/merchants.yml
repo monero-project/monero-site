@@ -3,8 +3,6 @@
   merchants:
     - name: "#monero-otc (OTC)"
       url: https://webchat.freenode.net?channels=%23monero-otc
-    - name: 1Bit.Group - Anonymous Monero exchanger
-      url: https://1bit.group/
     - name: AgoraDesk - P2P OTC trading platform, includes Monero options
       url: https://agoradesk.com
     - name: Alfacashier
