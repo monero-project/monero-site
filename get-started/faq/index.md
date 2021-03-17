@@ -185,9 +185,9 @@ permalink: /get-started/faq/index.html
                         <ol>
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Promo.m4v">{% t faq.video_intro %}</a> ({% t faq.aavailable %} <a href="{{ site.baseurl_root }}/media/ru/Monero_Promo.m4v">Russian</a> {% t faq.and %} <a href="{{ site.baseurl_root }}/media/pt-br/Monero_Promo.m4v">Brazilian Portuguese</a>)</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20The%20Essentials.m4v">{% t faq.video_essentials %}</a></li>
-                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Stealth%20Addresses.m4v">{% t faq.video_sa %}</a> - {% t faq.mvideos %} @stealth-addresses</li>
-                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Ring%20Signatures.m4v">{% t faq.video_ringsig %}</a> - {% t faq.mvideos %} @ring-signatures</li>
-                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">{% t faq.video_ringct %}</a> - {% t faq.mvideos %} @ring-ct</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Stealth%20Addresses.m4v">{% t faq.video_sa %}</a> - {% t faq.mvideos %} @Stealth-Addresses</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Ring%20Signatures.m4v">{% t faq.video_ringsig %}</a> - {% t faq.mvideos %} @Ring-Signatures</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">{% t faq.video_ringct %}</a> - {% t faq.mvideos %} @RingCT</li>
                         </ol>
                     </div>
                 </div>
