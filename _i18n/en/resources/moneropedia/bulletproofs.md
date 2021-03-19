@@ -23,7 +23,7 @@ As bulletproofs were really new, and the initial implementation made by the grou
 The code has been written and rewritten to follow the new version of bulletproofs which was still being developed, but once this Monero implementation was finalized, the resulting deployment should be taken with extreme care.  
 Therefore, the community started an auditing process. Researchers reached out to Benedikt Bünz, lead author of the Bulletproofs paper, and to [OSTIF](https://ostif.org/) an organization which helps open source technologies to improve and secure themselves.  
 OSTIF directed the group to several organizations with the skills required to perform the audit. While one of them asked to be kept unnamed and was therefore put away from the process that needed to be public, two others (QuarksLab & Kudelski Security) were choosen to conduct the audit.  
-Our 3 auditors were funded by the community to check out the if the implementation did not did not contain critical bugs, and if it did not have any exploits.  
+Our 3 auditors were funded by the community to ensure that the implementation did not contain any critical bugs or exploits.
 The final reports were released during the summer of 2018, with several useful corrections and fixes suggested, and the final bulletproof implementation has been added first to Monero Stagenet, and then to the main Monero network during the October 2018 network upgrade.
 
 Since the bulletproofs deployment, the size of an average transaction has dropped by at least 80%, as well as the transaction fees.
