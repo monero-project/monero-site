@@ -1,0 +1,460 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-26 12:19+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:2
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:6
+msgid ""
+"`monero-wallet-cli` is the wallet software that ships with the Monero "
+"tree. It is a console program, and manages an account. While a bitcoin "
+"wallet manages both an account and the blockchain, Monero separates these: "
+"`monerod` handles the blockchain, and `monero-wallet-cli` handles the "
+"account."
+msgstr ""
+"`monero-wallet-cli` est une application de portefeuille qui est incluse dans "
+"la suite Monero. C'est un programme en ligne de commandes qui permet de "
+"gérer un compte. Tandis que le portefeuille Bitcoin gère à la fois un compte "
+"et la chaîne de bloc, Monero sépare ces deux composants : `monerod` s'occupe "
+"de la chaîne de blocs, et `monero-wallet-cli` gère le compte."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:8
+msgid ""
+"This guide will show how to perform various operations from the "
+"`monero-wallet-cli` UI. The guide assumes you are using the most recent "
+"version of Monero and have already created an account according to the other "
+"guides."
+msgstr ""
+"Ce guide montrera comment effectuer diverses opération depuis l'interface de "
+"`monero-wallet-cli`. Ce guide suppose que vous utilisiez la version la plus "
+"récenter de Monero et que vous ayez déjà créé un compte comme exposé dans "
+"l'autre guide."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:11
+msgid "## Checking your balance"
+msgstr "## Vérifier votre solde"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:15
+msgid ""
+"Since the blockchain handling and the wallet are separate programs, many "
+"uses of `monero-wallet-cli` need to work with the @daemon. This includes "
+"looking for incoming transactions to your address.  Once you are running "
+"both `monero-wallet-cli` and `monerod`, enter `balance`."
+msgstr ""
+"Dans la mesure ou la gestion de la chaîne de blocs et le portefeuille sont "
+"des applications séparées, de nombreux usages de `monero-wallet-cli` "
+"implique de fonctionner avec le démon. Incluant la vérifications des "
+"transactions entrantes sur votre adresse. Une fois que `monero-wallet-cli` "
+"et `monerod` sont tous deux en cours d'exécution, entrez `balance`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:17
+msgid "Example:"
+msgstr "Exemple :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:21
+msgid ""
+"This will pull blocks from the daemon the wallet did not yet see, and update "
+"your balance to match. This process will normally be done in the background "
+"every minute or so. To see the balance without refreshing:"
+msgstr ""
+"Ceci récupèrera depuis le démon les blocs que le portefeuille n'a pas encore "
+"vu, et mettra à jour votre solde. Ce processus est normalement réalisé en "
+"tache de fond environ toutes les minutes.  Pour voir votre balance sans "
+"rafraichir :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:24
+msgid ""
+"    balance\n"
+"    Balance: 64.526198850000, unlocked balance: 44.526198850000, including "
+"unlocked dust: 0.006198850000\n"
+msgstr ""
+"    balance\n"
+"    Balance: 64.526198850000, unlocked balance: 44.526198850000, including "
+"unlocked dust: 0.006198850000\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:26
+msgid ""
+"In this example, `Balance` is your total balance. The `unlocked balance` is "
+"the amount currently available to spend. Newly received transactions require "
+"10 confirmations on the blockchain before being unlocked. `unlocked dust` "
+"refers to very small amounts of unspent outputs that may have accumulated in "
+"your account."
+msgstr ""
+"Dans cette exemple, `Balance` correspond à votre solde total. `unlocked "
+"balance` est le montant actuellement disponible pour être dépensé. Les "
+"nouvelles transactions reçues nécessitent 10 confirmations sur la chaîne de "
+"blocs avant d'être débloquées. `unlocked dust` corresponds à de très faible "
+"montants de sorties non dépensées qui ont pu s'accumuler sur votre compte."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:28
+msgid "## Sending monero"
+msgstr "## Envoyer des Moneroj"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:32
+msgid ""
+"You will need the standard address you want to send to (a long string "
+"starting with '4'), and possibly a payment ID, if the receiving party "
+"requires one. In that latter case, that party may instead give you an "
+"integrated address, which is both of these packed into a single address."
+msgstr ""
+"Vous aurez besoin de l'adresse standard à laquelle vous comptez envoyer (une "
+"longue chaine de caractères commençant par '4') et potentiellement un ID de "
+"paiement, si le destinataire vous en demande un. Dans ce dernier cas, "
+"celui-ci pourrait vous donner une adresse intégrée, qui contient les deux "
+"dans une seule et même adresse."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:34
+msgid "### Sending to a standard address:"
+msgstr "### Envoyer à une adresse standard :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:36
+msgid "    transfer ADDRESS AMOUNT PAYMENTID\n"
+msgstr "    transfer ADRESSE MONTANT IDdePAIEMENT\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:40
+msgid ""
+"Replace `ADDRESS` with the address you want to send to, `AMOUNT` with how "
+"many monero you want to send, and `PAYMENTID` with the payment ID you were "
+"given. Payment ID's are optional. If the receiving party doesn't need one, "
+"just omit it."
+msgstr ""
+"Remplacez `ADRESSE` avec l'adresse à laquelle vous souhaitez envoyer, "
+"`MONTANT` avec le montant que vous souhaitez envoyer et `IDdePAIEMENT` avec "
+"l'ID de paiement qui vous a été fournit. L'ID de paiement est optionnel. Si "
+"le destinataire ne vous en a pas fournit, n'en indiquez pas."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:42
+msgid "### Sending to an integrated address:"
+msgstr "### Envoyer à une adresse intégrée :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:44
+msgid "    transfer ADDRESS AMOUNT\n"
+msgstr "    transfer ADRESSE MONTANT\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:46
+msgid "The payment ID is implicit in the integrated address in that case."
+msgstr ""
+"Dans ce cas, l'ID de paiement est implicitement inclus dans l'adresse "
+"intégrée."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:48
+msgid "### Specify the number of outputs for a transaction:"
+msgstr "### Indiquer le nombre de sorties pour une transaction :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:50
+msgid "    transfer RINGSIZE ADDRESS AMOUNT\n"
+msgstr "    transfer RINGSIZE ADRESSE MONTANT\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:52
+msgid ""
+"Replace `RINGSIZE` with the number of outputs you wish to use. **If not "
+"specified, the default is 11.** It's a good idea to use the default, but you "
+"can increase the number if you want to include more outputs. The higher the "
+"number, the larger the transaction, and higher fees are needed."
+msgstr ""
+"Remplacez `RINGSIZE` avec le nombre de sorties que vous souhaitez "
+"utiliser. **S'il n'est pas spécifié, la valeur par défaut est 11.** C'est "
+"une bonne idée d'utiliser la valeur par défaut, mais vous pouvez augmenter "
+"celle-ci pour inclure plus de sorties. Plus grand est le nombre, plus grosse "
+"sera la transaction, nécessitant des frais plus importants."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:55
+msgid "## Receiving monero"
+msgstr "## Recevoir des moneroj"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:57
+msgid ""
+"If you have your own Monero address, you just need to give your standard "
+"address to someone."
+msgstr ""
+"Si vous avez votre propre adresse Monero, vous devez simplement communiquer "
+"à quelqu'un votre adresse standard."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:59
+msgid "You can find out your address with:"
+msgstr "Vous pouvez trouver votre adresse standard avec :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:61
+msgid "    address\n"
+msgstr "    address\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:66
+msgid ""
+"Since Monero is anonymous, you won't see the origin address the funds you "
+"receive came from. If you want to know, for instance to credit a particular "
+"customer, you'll have to tell the sender to use a payment ID, which is an "
+"arbitrary optional tag which gets attached to a transaction. To make life "
+"easier, you can generate an address that already includes a random payment "
+"ID:"
+msgstr ""
+"Comme Monero est anonyme, vous ne verrez pas l'adresse à partir de laquelle "
+"les fonds vous sont envoyés.  Si vous voulez le savoir, par exemple pour "
+"créditer un client particulier, vous devrez indiquer à l'émetteur d'utiliser "
+"un ID de paiement, qui est une étiquette optionnelle et arbitraire qui sera "
+"associé à la transaction. Pour vous faciliter la vie, vous pouvez générer "
+"une adresse qui inclus déjà un ID de paiement aléatoire."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:68
+msgid "    integrated_address\n"
+msgstr "    integrated_address\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:71
+msgid ""
+"This will generate a random payment ID, and give you the address that "
+"includes your own account and that payment ID. If you want to select a "
+"particular payment ID, you can do that too:"
+msgstr ""
+"Cela va générer un ID de paiement aléatoire et vous fournir l'adresse qui "
+"inclus votre propre compte et cet ID de paiement. Si vous voulez "
+"sélectionner un ID de paiement particulier, vous pouvez aussi faire :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:73
+msgid "    integrated_address 12346780abcdef00\n"
+msgstr "    integrated_address 12346780abcdef00\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:76
+msgid ""
+"Payments made to an integrated address generated from your account will go "
+"to your account, with that payment id attached, so you can tell payments "
+"apart."
+msgstr ""
+"Les paiements effectués sur une adresse intégrée générée depuis votre compte "
+"iront sur votre compte, avec cet ID de paiement associé, vous permettant de "
+"distinguer les paiements."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:79
+msgid "## Proving to a third party you paid someone"
+msgstr "## Prouver à un tiers que vous avez payé quelqu'un"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:87
+msgid ""
+"If you pay a merchant, and the merchant claims to not have received the "
+"funds, you may need to prove to a third party you did send the funds - or "
+"even to the merchant, if it is a honest mistake. Monero is private, so you "
+"can't just point to your transaction in the blockchain, as you can't tell "
+"who sent it, and who received it. However, by supplying the per-transaction "
+"private key to a party, that party can tell whether that transaction sent "
+"monero to that particular address. Note that storing these per-transaction "
+"keys is disabled by default, and you will have to enable it before sending, "
+"if you think you may need it:"
+msgstr ""
+"Si vous payez un commerçants, et que celui-ci prétends qu'il n'a pas reçu "
+"les fonds, vous pourriez avoir besoin de prouver à un tiers que vous avez "
+"bien envoyé les fonds (ou même au commerçants, s'il s'agit d'une erreur "
+"honnête). Monero est confidentiel, de sorte que vous ne pouvez pas "
+"simplement indiquer votre transaction dans la chaîne de blocs, dans la "
+"mesure où vous ne pouvez ni dire qui l'a envoyé, ni qui l'a reçu. Cependant, "
+"en fournissant la clef privée propre à la transaction à un tiers, celui-ci "
+"peut dire si la transaction à envoyé des moneroj à cette adresse "
+"particulière. Notez que la conservation des clefs privées propres aux "
+"transactions est désactivé par défaut, et que vous aurez à l'activer avant "
+"l'envoie, si vous pensez que vous pourriez en avoir besoin :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:89
+msgid "    set store-tx-info 1\n"
+msgstr "    set store-tx-info 1\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:91
+msgid "You can retrieve the tx key from an earlier transaction:"
+msgstr "Vous pouvez récupérer la clef tx d'une précédente transaction :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:93
+msgid ""
+"    get_tx_key "
+"1234567890123456789012345678901212345678901234567890123456789012\n"
+msgstr ""
+"    get_tx_key "
+"1234567890123456789012345678901212345678901234567890123456789012\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:99
+msgid ""
+"Pass in the transaction ID you want the key for. Remember that a payment "
+"might have been split in more than one transaction, so you may need several "
+"keys. You can then send that key, or these keys, to whoever you want to "
+"provide proof of your transaction, along with the transaction id and the "
+"address you sent to. Note that this third party, if knowing your own "
+"address, will be able to see how much change was returned to you as well."
+msgstr ""
+"Indiquez l'ID de transaction dont vous voulez la clef. Souvenez vous qu'un "
+"paiement peut avoir été scindé en plusieurs transactions, donc vous pourriez "
+"avoir besoin de plusieurs clefs. Vous pourrez alors envoyer cette clef, ou "
+"ces clefs, à quiconque vous fournira la preuve de votre transaction, "
+"accompagné de l'ID de transaction et de l'adresse à laquelle vous avez "
+"envoyé les fonds. Notez que ce tiers, s'il connaît votre propre adresse, "
+"sera également en mesure de voir quelle quantité de monnaie vous aurait été "
+"rendue."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:102
+msgid ""
+"If you are the third party (that is, someone wants to prove to you that they "
+"sent monero to an address), then you can check this way:"
+msgstr ""
+"Si vous êtes le tiers (c'est à dire que quelqu'un veut vous prouver qu'il a "
+"effectivement envoyé des moneroj à une adresse), vous pouvez le vérifier "
+"comme suit :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:104
+msgid "    check_tx_key TXID TXKEY ADDRESS\n"
+msgstr "    check_tx_key IDTX CLEFTX ADRESSE\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:108
+msgid ""
+"Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, "
+"per-transaction key, and destination address which were supplied to you, "
+"respectively. monero-wallet-cli will check that transaction and let you know "
+"how much monero this transaction paid to the given address."
+msgstr ""
+"Remplacez `IDTX`, `CLEFTX` et `ADRESSE` respectivement par l'ID de "
+"transaction, la clef propre à la transaction et l'adresse de destination qui "
+"vous ont été communiqués. monero-wallet-cli va vérifier cette transaction et "
+"vous indiquera combien de moneroj ont été payés à l'adresse fournie."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:111
+msgid "## Getting a chance to confirm/cancel payments"
+msgstr "## Pouvoir confirmer ou annuler des paiements"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:113
+msgid "If you want to get a last chance confirmation when sending a payment:"
+msgstr "Si vous souhaitez devoir confirmer les paiements que vous envoyez :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:115
+msgid "    set always-confirm-transfers 1\n"
+msgstr "    set always-confirm-transfers 1\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:118
+msgid "## How to find a payment to you"
+msgstr "## Comment retrouver un paiement qui vous a été fait"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:120
+msgid "If you received a payment using a particular payment ID, you can look it up:"
+msgstr ""
+"Si vous recevez un paiement utilisant un ID de paiement précis, vous pouvez "
+"le rechercher :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:122
+msgid "    payments PAYMENTID\n"
+msgstr "    payments PAYMENTID\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:124
+msgid "You can give more than one payment ID too."
+msgstr "Vous pouvez également fournir plus d'un ID de paiement."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:126
+msgid "More generally, you can review incoming and outgoing payments:"
+msgstr "Plus généralement, vous pouvez examiner les paiements reçus et envoyés :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:128
+msgid "    show_transfers\n"
+msgstr "    show_transfers\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:131
+msgid ""
+"You can give an optional height to list only recent transactions, and "
+"request only incoming or outgoing transactions. For example,"
+msgstr ""
+"Vous pouvez indiquer une hauteur de bloc optionnelle pour ne lister que les "
+"transactions récentes, et ne demander que les transactions entrantes ou "
+"sortantes. Par exemple,"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:133
+msgid "    show_transfers in 650000\n"
+msgstr "    show_transfers in 650000\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:136
+msgid ""
+"will only show incoming transfers after block 650000. You can also give a "
+"height range."
+msgstr ""
+"ne vous montrera que les transferts reçus après le block 650000. Vous pouvez "
+"également fournir une plage de hauteur de bloc."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:138
+msgid "If you want to mine, you can do so from the wallet:"
+msgstr "Si vous voulez miner, vous pouvez le faire depuis le portefeuille :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:140
+msgid "    start_mining 2\n"
+msgstr "    start_mining 2\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:143
+msgid ""
+"This will start mining on the daemon usin two threads. Note that this is "
+"solo mining, and may take a while before you find a block. To stop mining:"
+msgstr ""
+"Cela va démarrer l'extraction minière sur le démon en utilisant deux "
+"threads. Notez qu'il s'agit d'extraction minière en solo, et qu'il pourrait "
+"falloir un moment avant que vous ne trouviez un bloc. Pour arrêter "
+"l'extraction minière :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:145
+msgid "    stop_mining\n"
+msgstr "    stop_mining\n"
