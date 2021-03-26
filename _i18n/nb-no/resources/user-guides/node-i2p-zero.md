@@ -1,6 +1,7 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 ## Steg:
+
 1. Last ned [Monero CLI]({{  site.baseurl }}/downloads/#cli).
 2. Last ned og pakk ut den siste (ikke-GUI)-versjonen av I2P-zero: https://github.com/i2p-zero/i2p-zero/releases
 3. Kjør I2P-zero ved å taste inn den i2p-zero-utpakkede katalogen og tast inn: `router/bin/i2p-zero`
@@ -13,11 +14,13 @@
 Det var alt! Ikke bytt ut dsc****.b32.i2p-adressen med din egen, bare bytt ut XXXXXXX.b32.i2p. dsc****.b32.i2p-en er en frønode som hjelper deg med å oppdage andre I2P-tilgjengelige Monero-noder.
 
 ## Oppsett av Linux-tjenester slik at monerod og I2P-zero startes automatisk
+
 Hvis du kjører Linux, er det nyttig å sette opp dette til å kjøre automatisk dersom maskinen noen gang startes på nytt. Du kan gjøre dette ved å opprette systemd-servicefiler:
 
 Merk: sørg for å bytte ut versjonnumrene i filene under med versjonnumrene til monero og i2p-zero som du laster ned. Bytt også ut `<username>` og `<usergroup>` med din Linux-bruker og gruppenavn (bruk `whoami`- og `groups`-kommandoene hvis du ikke kjenner til dem).
 
 ### /etc/systemd/system/i2pzero.service
+
 ````                                                
 [Unit]
 Description=i2pzero
@@ -34,6 +37,7 @@ WantedBy=multi-user.target
 ````
 
 ### /etc/systemd/system/monerod.service
+
 ````
 [Unit]
 Description=monerod
@@ -60,6 +64,7 @@ service monerod start
 For å se utdataene til disse tjenestene, kan du bruke `journalctl -u i2pzero` og `journalctl -u monerod`
 
 ## Å kjøre din egen frønode (mipseed)
+
 Hvis du vil kjøre din egen frønode (kjent som en 'mipseed') for å hjelpe andre med å oppdage I2P-tilgjengelige Monero-noder, kan du følge instruksjonene i [i2p-zero-arkivet](https://github.com/i2p-zero/i2p-zero/blob/master/mipseed.md).
 
 *Den opprinnelige versjonen av denne guiden ble opprinnelig lastet opp i [i2p-zero-arkivet](https://github.com/i2p-zero/i2p-zero/blob/master/monerod-with-i2p-zero.md).*
