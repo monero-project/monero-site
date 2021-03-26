@@ -152,7 +152,7 @@ systems.
 
 Взято из [MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
 
->1. В меню Start (Запуск) выбрать Run (Запустить). В окошке Open (Открыть) набрать gpedit.msc.
+1. В меню Start (Запуск) выбрать Run (Запустить). В окошке Open (Открыть) набрать gpedit.msc.
 2. В консоли Local Group Policy Editor (Редактор локальной групповой политики) перейти в Computer Configuration (Конфигурация компьютера), а затем в Windows Settings (Конфигурация Windows).
 3. Перейти в Security Settings (Параметры безопасности), а затем в Local Policies (Локальные политики).
 4. Выбрать папку User Rights Assignment (Назначение прав пользователя).

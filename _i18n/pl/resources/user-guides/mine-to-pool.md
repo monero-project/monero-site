@@ -189,7 +189,7 @@ hashing algorithm to use.
 
 Taken from [the MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
 
->1. On the Start menu, click Run. In the Open box, type gpedit.msc.
+1. On the Start menu, click Run. In the Open box, type gpedit.msc.
 2. On the Local Group Policy Editor console, expand Computer Configuration, and then expand Windows Settings.
 3. Expand Security Settings, and then expand Local Policies.
 4. Select the User Rights Assignment folder.
