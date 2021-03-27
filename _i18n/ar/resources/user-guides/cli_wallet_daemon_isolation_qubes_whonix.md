@@ -11,7 +11,7 @@
 
 + بإستخدام قالب مكن وونكس الإفتراضي , إنشيء مكنتين كما التالي :
 
-  -أول مكنه سيتم إستخدامها للمحفظه, سيُشار إليها بـ`monero-wallet-ws`. قم بإختيار`none` في `NetVM`.
+  - أول مكنه سيتم إستخدامها للمحفظه, سيُشار إليها بـ`monero-wallet-ws`. قم بإختيار`none` في `NetVM`.
 
   - المكنه الأخري سوف تُستخدم للخادم, سيُشار إليها بـ`monerod-ws`. سيتم إختيار `sys-whonix` ل `NetVM`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain]({{ site.baseurl }}/downloads/#blockchain). Keep in mind that the blockchain will take up more space with time.
 

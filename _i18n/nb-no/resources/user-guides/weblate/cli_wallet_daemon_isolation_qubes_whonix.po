@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-22 10:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:2
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:4
+msgid ""
+"With [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) you can "
+"have a Monero wallet that is without networking and running on a virtually "
+"isolated system from the Monero daemon which has all of its traffic forced "
+"over [Tor](https://torproject.org)."
+msgstr ""
+"Med [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) kan du ha "
+"en Monero-lommebok som er uten nettverking og som kjører på et virtuelt, "
+"isolert system fra Monero daemonen som har all sin trafikk tvunget over "
+"[Tor](https://torproject.org)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:6
+msgid ""
+"Qubes gives the flexibility to easily create separate VMs for different "
+"purposes. First you will create a Whonix workstation for the wallet with no "
+"networking. Next, another Whonix workstation for the @daemon which will use "
+"your Whonix gateway as it's NetVM. For communication between the wallet and "
+"daemon you can make use of Qubes "
+"[qrexec](https://www.qubes-os.org/doc/qrexec3/)."
+msgstr ""
+"Qubes gir fleksibiliteten til å enkelt opprette VM-er for ulike formål. Du "
+"må først opprette en Whonix-arbeidsstasjon for lommeboken uten "
+"nettverking. Deretter en annen Whonix-arbeidsstasjon for daemonen som bruker "
+"din Whonix-port i og med at den er NetVM. For kommunikasjon mellom "
+"lommebøkene og daemon, kan du bruke Qubes "
+"[qrexec](https://www.qubes-os.org/doc/qrexec3/)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:8
+msgid ""
+"This is safer than other approaches which route the wallets rpc over a Tor "
+"hidden service, or that use physical isolation but still have networking to "
+"connect to the daemon. In this way you don't need any network connection on "
+"the wallet, you preserve resources of the Tor network, and there is less "
+"latency."
+msgstr ""
+"Dette er tryggere enn andre tilnærminger som ruter lommebokens rpc over en "
+"skjult Tor-service, eller en som bruker fysisk isolasjon men som fremdeles "
+"trenger nettverking for å koble seg til daemonen. På denne måten trenger du "
+"ikke en nettverksforbindelse til lommeboken. Du bevarer ressursene til "
+"Tor-nettverket, og det er også mindre latens."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:10
+msgid "## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):"
+msgstr "## 1. [Opprett Whonix AppVM-er](https://www.whonix.org/wiki/Qubes/Install):"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:12
+msgid "+ Using a Whonix workstation template, create two workstations as follows:"
+msgstr ""
+"+ Opprett følgende to arbeidsstasjoner ved å bruke en "
+"Whonix-arbeidsstasjonmal:"
+
+#. type: Bullet: '  - '
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:14
+msgid ""
+"The first workstation will be used for your wallet, it will referred to as "
+"`monero-wallet-ws`. You will have `NetVM` set to `none`."
+msgstr ""
+"Den første arbeidsstasjonen vil brukes for lommeboken din, og vil refereres "
+"til som `monero-wallet-ws`. Du må sette din `NetVM` til `none`."
+
+#. type: Bullet: '  - '
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:16
+msgid ""
+"The second workstation will be for the `monerod` daemon, it will be referred "
+"to as `monerod-ws`. You will have `NetVM` set to the Whonix gateway "
+"`sys-whonix`. Before moving on, make sure this workstation has enough "
+"private storage. You can estimate how much space you need by checking the "
+"size of the [raw blockchain]({{ site.baseurl }}/downloads/#blockchain). Keep "
+"in mind that the blockchain will take up more space with time."
+msgstr ""
+"Den andre arbeidsstasjonen vil være for `monerod`-daemonen, og vil refereres "
+"til som `monerod-ws`. Din `NetVM` må være satt til Whonix-porten "
+"`sys-whonix`. Før du går videre må du sørge for at denne arbeidsstasjonen "
+"har nok privat lagringsplass. Du kan anslå hvor mye lagringsplass du trenger "
+"ved å sjekke størrelsen på den [rå blokkjeden]({{ site.baseurl "
+"}}/downloads/#blockchain). Husk at blokkjeden over tid vil bruke oppta "
+"lagringsplass."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:18
+msgid "## 2. In the AppVM `monerod-ws`:"
+msgstr "## 2. I AppVM-en `monerod-ws`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:20
+msgid "+ Create a `systemd` file."
+msgstr "+ Opprett en `systemd`-fil."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:24
+msgid "``` user@host:~$ sudo nano /home/user/monerod.service ```"
+msgstr "``` user@host:~$ sudo nano /home/user/monerod.service ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:26
+msgid "Paste the following contents:"
+msgstr "Lim inn følgende innhold:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:31
+msgid "``` [Unit] Description=Monero Full Node After=network.target"
+msgstr "``` [Unit] Description=Monero Full Node After=network.target"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:35
+msgid "[Service] User=user Group=user"
+msgstr "[Service] User=user Group=user"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:38
+msgid "Type=forking PIDFile=/home/user/.bitmonero/monerod.pid"
+msgstr "Type=forking PIDFile=/home/user/.bitmonero/monerod.pid"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:42
+msgid ""
+"ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \\\n"
+"    --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \\\n"
+"    --log-file=/home/user/.bitmonero/bitmonero.log --p2p-bind-ip=127.0.0.1\n"
+msgstr ""
+"ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \\\n"
+"    --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \\\n"
+"    --log-file=/home/user/.bitmonero/bitmonero.log --p2p-bind-ip=127.0.0.1\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:45
+msgid "Restart=always PrivateTmp=true"
+msgstr "Restart=always PrivateTmp=true"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:49
+msgid "[Install] WantedBy=multi-user.target ```"
+msgstr "[Install] WantedBy=multi-user.target ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:51
+msgid ""
+"+ Make `monerod` daemon run on startup by editing the file "
+"`/rw/config/rc.local`."
+msgstr ""
+"+ Få `monerod` daemon til å kjøre på oppstart ved å redigere filen "
+"`/rw/config/rc.local`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:55
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:91
+msgid "``` user@host:~$ sudo nano /rw/config/rc.local ```"
+msgstr "``` user@host:~$ sudo nano /rw/config/rc.local ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:57
+msgid "Add these lines to the bottom:"
+msgstr "Legg til disse linjene nederst:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:62
+msgid ""
+"``` cp /home/user/monerod.service /lib/systemd/system/ systemctl start "
+"monerod.service ```"
+msgstr ""
+"``` cp /home/user/monerod.service /lib/systemd/system/ systemctl start "
+"monerod.service ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:64
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:99
+msgid "Make file executable."
+msgstr "Gjør filen kjørbar."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:68
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:103
+msgid "``` user@host:~$ sudo chmod +x /rw/config/rc.local ```"
+msgstr "``` user@host:~$ sudo chmod +x /rw/config/rc.local ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:70
+msgid "+ Create rpc action file."
+msgstr "+ Opprett en rpc-handlingsfil."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:75
+msgid ""
+"``` user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc user@host:~$ sudo "
+"nano /rw/usrlocal/etc/qubes-rpc/user.monerod ```"
+msgstr ""
+"``` user@host:~$ sudo mkdir /rw/usrlocal/etc/qubesp-rpc user@host:~$ sudo "
+"nano /rw/usrlocal/etc/qubes-rpc/user.monerod ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:77
+msgid "Add this line:"
+msgstr "Legg til denne linjen:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:81
+msgid "``` socat STDIO TCP:localhost:18081 ```"
+msgstr "``` socat STDIO TCP:localhost:18081 ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:83
+msgid "+ Shutdown `monerod-ws`."
+msgstr "+ Skru av `monerod-ws`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:85
+msgid "## 3. In the AppVM `monero-wallet-ws`:"
+msgstr "## 3. I AppVM-en `monero-wallet-ws`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:87
+msgid "+ Edit the file `/rw/config/rc.local`."
+msgstr "+ Rediger filen `/rw/config/rc.local`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:93
+msgid "Add the following line to the bottom:"
+msgstr "Legg til følgende linje nederst:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:97
+msgid ""
+"``` socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:\"qrexec-client-vm "
+"monerod-ws user.monerod\" ```"
+msgstr ""
+"``` socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:\"qrexec-client-vm "
+"monerod-ws user.monerod\" ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:105
+msgid "+ Shutdown `monero-wallet-ws`."
+msgstr "+ Slå av `monero-wallet-ws`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:107
+msgid "## 4. In `dom0`:"
+msgstr "## 4. I `dom0`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:109
+msgid "+ Create the file `/etc/qubes-rpc/policy/user.monerod`:"
+msgstr "+ Opprett filen `/etc/qubes-rpc/policy/user.monerod`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:113
+msgid "``` [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod ```"
+msgstr "``` [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:115
+msgid "Add the following line:"
+msgstr "Legg til følgende linje:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.md:118
+msgid "``` monero-wallet-ws monerod-ws allow ```"
+msgstr "``` monero-wallet-ws monerod-ws allow ```"

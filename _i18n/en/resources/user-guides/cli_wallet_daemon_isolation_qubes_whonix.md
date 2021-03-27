@@ -6,7 +6,6 @@ Qubes gives the flexibility to easily create separate VMs for different purposes
 
 This is safer than other approaches which route the wallets rpc over a Tor hidden service, or that use physical isolation but still have networking to connect to the daemon. In this way you don't need any network connection on the wallet, you preserve resources of the Tor network, and there is less latency.
 
-
 ## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
 
 + Using a Whonix workstation template, create two workstations as follows:
