@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-23 12:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:2
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:4
+msgid ""
+"Sometimes, your funds will become stuck - you will have some locked funds "
+"that never become unlocked. This is how you fix it."
+msgstr ""
+"Algunas veces, tus fondos estarán estancados - tendrás fondos bloqueados que "
+"nunca se podrán desbloquear. Esta es la forma de arreglarlo."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:6
+msgid "- Load your wallet in monero-wallet-cli."
+msgstr "- Carga tu monedero en monero-wallet-cli."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:8
+msgid "- Type"
+msgstr "- Escribe"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
+msgid "> seed"
+msgstr "> seed"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:12
+msgid ""
+"into the command prompt. Write down your 25 word seed, if you haven't "
+"already. This is the best way to make sure you don't lose access to your "
+"funds."
+msgstr ""
+"en la consola. Escribe tu semilla de 25 palabras si aún no lo has "
+"hecho. Esta es la mejor forma de asegurar que no pierdas acceso a tus "
+"fondos."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:14
+msgid "- Close monero-wallet-cli by typing"
+msgstr "- Cierra monero-wallet-cli escribiendo"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:16
+msgid "> exit"
+msgstr "> exit"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:18
+msgid "- Backup all of your wallet related files. These include:"
+msgstr "- Respalda todos los archivos relacionados con tu monedero. Estos incluyen:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
+msgid ""
+"> yourwalletname.bin > yourwalletname.bin.keys > "
+"yourwalletname.bin.address.txt"
+msgstr ""
+"> nombredetumonedero.bin > nombredetumonedero.bin.keys > "
+"nombredetumonedero.bin.address.txt"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:24
+msgid "This can be done by copying the files to a new folder."
+msgstr "Esto se logra copiando los archivos a una nueva carpeta."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:26
+msgid ""
+"Sometimes, when creating your wallet, you might have named it something "
+"without the .bin part. In that case, the wallet file will be called "
+"yourwalletname without the .bin at the end."
+msgstr ""
+"Algunas veces, cuando creas un monedero, la pudiste haber llamado de alguna "
+"forma sin el final como .bin. En ese caso, el archivo del monedero será "
+"llamado nombredetumonedero sin .bin al final."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:28
+msgid "- Delete yourwallet.bin"
+msgstr "- Elimina tumonedero.bin"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:30
+msgid "- Load monero-wallet-cli, type in the name of the wallet you just deleted"
+msgstr ""
+"- Abre monero-wallet-cli, escribe el nombre del monedero que acabas de "
+"eliminar."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:32
+msgid ""
+"- Enter password. The wallet will now refresh and hopefully your locked "
+"funds will now become unlocked."
+msgstr ""
+"- Ingresa la contraseña. El monedero se actualizará y posiblemente tus "
+"fondos bloqueados estarán ahora desbloqueados."
