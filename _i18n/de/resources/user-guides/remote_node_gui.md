@@ -1,6 +1,7 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 ## Den erweiterten Modus des Wallets überprüfen
+
 Um einen benutzerdefinierten Remote-Node zu nutzen, muss sich dein Wallet im erweiterten Modus befinden. Weder der einfache Modus noch der einfache Modus (Bootstrap) unterstützen diese Funktion. 
 
 Um zu überprüfen, ob sich dein Wallet im erweiterten Modus befindet, gehe zu `Einstellungen` > `Info` und sieh den `Wallet-Modus` ein.
@@ -12,6 +13,7 @@ Wenn dein Wallet bereits im erweiterten Modus ist, kannst du den nächsten Schri
 ![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
 
 ## In den erweiterten Modus wechseln
+
 Wenn dein Wallet geöffnet ist, musst du es zunächst schließen. Gehe zu `Einstellungen` > `Wallet` > `Dieses Wallet schließen`.
 
 ![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
@@ -23,6 +25,7 @@ Das Hauptmenü (`Willkommen bei Monero`-Maske) öffnet sich. Unten links klickst
 ![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
 
 ## Einen öffentlichen Remote-Node finden
+
 Als Erstes musst du einen öffentlichen Remote-Node finden, zu dem du dich verbinden kannst. Einige gute Ressourcen zum Auffinden von Nodes sind auf der [moneroworld.com](https://moneroworld.com/#nodes)-Seite gelistet. Eine der einfachsten Methoden wäre es wohl, einen von Moneroworld betriebenen öffentlichen Remote-Node zu nutzen; dort gibt es aber auch ein Tool zum Aufspüren zufälliger Nodes.
 
 ## Das Wallet zwecks Verbindung zu einem benutzerdefinierten Remote-Node konfigurieren

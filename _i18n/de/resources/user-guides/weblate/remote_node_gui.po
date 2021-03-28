@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-28 11:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:4
+#
+msgid "## Check if your wallet is in advanced mode"
+msgstr "## Den erweiterten Modus des Wallets überprüfen"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:6
+#
+msgid ""
+"To use a custom remote node, your wallet must be in advanced mode. Simple "
+"mode and Simple mode (bootstrap) don't support this feature."
+msgstr ""
+"Um einen benutzerdefinierten Remote-Node zu nutzen, muss sich dein Wallet im "
+"erweiterten Modus befinden. Weder der einfache Modus noch der einfache Modus "
+"(Bootstrap) unterstützen diese Funktion."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:8
+#
+msgid ""
+"To check if your wallet is in advanced mode, go to `Settings` > `Info` and "
+"see `Wallet mode`."
+msgstr ""
+"Um zu überprüfen, ob sich dein Wallet im erweiterten Modus befindet, gehe zu "
+"`Einstellungen` > `Info` und sieh den `Wallet-Modus` ein."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:10
+#
+msgid ""
+"If your wallet is not in Advanced mode, you will have to change it to "
+"Advanced mode (see next step)."
+msgstr ""
+"Sollte dein Wallet noch nicht im erweiterten Modus sein, musst du zu diesem "
+"wechseln (siehe nächster Schritt)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:12
+#
+msgid "If your wallet is already in Advanced mode, you can skip the next step."
+msgstr ""
+"Wenn dein Wallet bereits im erweiterten Modus ist, kannst du den nächsten "
+"Schritt überspringen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:14
+#
+msgid ""
+"![Wallet "
+"mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width=\"600px\"}"
+msgstr ""
+"![Wallet "
+"mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width=\"600px\"}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:16
+#
+msgid "## Change your wallet to advanced mode"
+msgstr "## In den erweiterten Modus wechseln"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:18
+#
+msgid ""
+"If your wallet is open, you need to close it first. Go to `Settings` > "
+"`Wallet` > `Close this wallet`"
+msgstr ""
+"Wenn dein Wallet geöffnet ist, musst du es zunächst schließen. Gehe zu "
+"`Einstellungen` > `Wallet` > `Dieses Wallet schließen`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:20
+#
+msgid ""
+"![Close "
+"Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width=\"600px\"}"
+msgstr ""
+"![Close "
+"Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width=\"600px\"}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:22
+#
+msgid ""
+"The main menu (`Welcome to Monero` screen) will open. At the bottom left, "
+"click on `Change wallet mode` button, and on the next page select `Advanced "
+"mode`. Next, open your wallet file again."
+msgstr ""
+"Das Hauptmenü (`Willkommen bei Monero`-Maske) öffnet sich. Unten links "
+"klickst du zunächst auf den `Walletmodus ändern`-Button und wählst auf der "
+"nächsten Seite die Option `Erweiterter Modus` aus. Anschließend öffnest du "
+"deine Wallet-Datei erneut."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:24
+#
+msgid ""
+"![Change Wallet "
+"Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width=\"600px\"}"
+msgstr ""
+"![Change Wallet "
+"Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width=\"600px\"}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:26
+#
+msgid ""
+"![Advanced "
+"Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width=\"600px\"}"
+msgstr ""
+"![Advanced "
+"Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width=\"600px\"}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:28
+#
+msgid "## Finding a public remote node"
+msgstr "## Einen öffentlichen Remote-Node finden"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:30
+#
+msgid ""
+"First, you will need to find a public remote node to connect to. The website "
+"[moneroworld.com](https://moneroworld.com/#nodes) has some great resources "
+"for finding nodes. One of the easiest methods would be to use a public "
+"remote node run by moneroworld, but they have a tool for finding random "
+"nodes too."
+msgstr ""
+"Als Erstes musst du einen öffentlichen Remote-Node finden, zu dem du dich "
+"verbinden kannst. Einige gute Ressourcen zum Auffinden von Nodes sind auf "
+"der [moneroworld.com](https://moneroworld.com/#nodes)-Seite gelistet. Eine "
+"der einfachsten Methoden wäre es wohl, einen von Moneroworld betriebenen "
+"öffentlichen Remote-Node zu nutzen; dort gibt es aber auch ein Tool zum "
+"Aufspüren zufälliger Nodes."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:32
+#
+msgid "## Configuring your wallet to connect to a custom public remote node"
+msgstr ""
+"## Das Wallet zwecks Verbindung zu einem benutzerdefinierten Remote-Node "
+"konfigurieren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:34
+#
+msgid ""
+"When opening your wallet, a pop up will appear with the option `Use custom "
+"settings`. Click on it, and you will be sent to `Settings` > `Node` page."
+msgstr ""
+"Beim Öffnen deines Wallets erscheint ein Fenster mit der Option "
+"`Benutzerdefinierte Einstellungen verwenden`. Wenn du diese auswählst, wirst "
+"du über `Einstellungen` zu `Node` geleitet."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:36
+#
+msgid "If you don't see this pop up, go to `Settings` > `Node` page."
+msgstr ""
+"Wenn dieses Pop-up nicht erscheint, gehe direkt über `Einstellungen` zur "
+"`Node`-Seite."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:38
+#
+msgid ""
+"![Configure Remote "
+"Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width=\"600px\"}"
+msgstr ""
+"![Configure Remote "
+"Node](png/remote_node/remote_node_config.png){:width=\"600px\"}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:40
+#
+msgid "On this page select `Remote Node`."
+msgstr "Wähle auf dieser Seite `Remote-Node`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:42
+#
+msgid ""
+"In `Address` you should fill the address of the remote node that you want to "
+"connect to. This address might look like `node.moneroworld.com` or it could "
+"look like any IP address."
+msgstr ""
+"Bei `Adresse` trägst du die Adresse des Remote-Nodes, zu welchem du dich "
+"verbinden möchtest, ein. Diese kann in etwa wie `node.moneroworld.com` oder "
+"jedwede IP-Adresse aussehen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:44
+#
+msgid ""
+"In `Port` you should fill the port of the remote node. If a remote node is "
+"listed as `node.moneroworld.com:18089`, the address is "
+"`node.moneroworld.com` and the port is `18089`. The default port is `18081`, "
+"but it can vary depending on the node you are connecting to."
+msgstr ""
+"Bei `Port` trägst du den Port des Remote-Nodes ein. Wenn ein Node unter "
+"`node.moneroworld.com:18089` gelistet ist, ist die Adresse "
+"`node.moneroworld.com` und der Port ist `18089`. Der standardmäßig "
+"voreingestellte Port ist `18081`, er kann aber je nach gewähltem Node "
+"variieren."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:46
+#
+msgid ""
+"If your remote node requires authentication, you can enter a username in "
+"`Daemon username` and a password in `Daemon password`."
+msgstr ""
+"Sollte dein Remote-Node einer Authentifizierung bedürfen, kannst du einen "
+"Nutzernamen in `Benutzername des Hintergrunddienstes` und ein Passwort in "
+"`Passwort des Hintergrunddienstes` eingeben."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/remote_node_gui.md:47
+#
+msgid "Finally, click on `Connect` button and wait for your wallet to connect."
+msgstr ""
+"Abschließend klickst du auf den `Verbinden`-Button und wartest darauf, dass "
+"sich dein Wallet verbindet."

@@ -1,6 +1,7 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 ## Sjekk om lommeboken din er i avansert modus
+
 For å bruke en tilpasset ekstern node, må lommeboken din være i avansert modus. Enkel modus og Enkel modus (oppstartmodus) støtter ikke denne funksjonen.
 
 For å sjekke om lommeboken din er i avansert modus, kan du gå til `Innstillinger` > `Informasjon` og se `Lommebokmodus`. 
@@ -12,6 +13,7 @@ Hvis lommeboken din allerede er i avansert modus, kan du hoppe over neste steg.
 ![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
 
 ## Endre lommeboken din til avansert modus
+
 Hvis lommeboken din er åpen, må du først lukke den. Gå til `Innstillinger` > `Lommebok` > `Lukk denne lommeboken`
 
 ![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
@@ -23,9 +25,11 @@ Hovedmenyen (`Velkommen til Monero`-skjermen) vil åpnes. Nederst til venstre ka
 ![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
 
 ## Å finne en offentlig, ekstern node
+
 Først må du finne en offentlig, ekstern node å koble til. Nettsiden [moneroworld.com](https://moneroworld.com/#nodes) har noen flotte ressurser for å finne noder. Én av de letteste metodene er å bruke offentlige noder som kjøres av moneroworld, men de har også et verktøy for å finne tilfeldige noder.
 
 ## Å konfigurere lommeboken din til å koble til en tilpasset, offentlig ekstern node
+
 Når du åpner lommeboken din, dukker en popup opp med alternativet `Bruk tilpassede innstillinger`. Trykk på den, så blir du videresendt til siden `Innstilliger` > `Node`. 
 
 Hvis du ikke ser denne popupen, kan du gå til siden `Innstillinger` > `Node`.
