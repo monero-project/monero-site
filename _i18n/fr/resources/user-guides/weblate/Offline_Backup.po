@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-28 10:35+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:4
+#
+msgid "## Operating Systems: Various versions of Linux and Windows 7, 8"
+msgstr "## Système d'exploitations : Différentes versions de Linux et Windows 7, 8"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:6
+#
+msgid "### Wallet Software: Simplewallet"
+msgstr "### Application de portefeuille : Simplewallet"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:8
+#, no-wrap
+msgid ""
+"#### Resource for Creating Bootable Disks:  "
+"[Linux](http://www.pendrivelinux.com/),       "
+"[Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)\n"
+msgstr ""
+"#### Ressource pour la création d'un disque bootable : "
+"[Linux](http://www.pendrivelinux.com/), "
+"[Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:10
+#
+msgid ""
+"#### Resource for Monero Binaries: [Monero Binaries]({{ site.baseurl_root "
+"}}/downloads/)"
+msgstr ""
+"#### Ressource pour les binaires Monero : [Binaires Monero]({{ site.baseurl "
+"}}/downloads/)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:12
+#
+msgid ""
+"- Take any computer you have lying around, even your normal workstation. You "
+"may find it easier to use an older computer that has no wifi or bluetooth if "
+"you're particularly paranoid"
+msgstr ""
+"- Prenez n'importe quel ordinateur se trouvant à votre disposition, aussi "
+"bien votre station de travail habituelle. Vous pourriez trouver plus simple "
+"d'utiliser un vieil ordinateur qui n'ait ni wifi ni bluetooth si vous êtes "
+"particulièrement paranoiac."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:14
+#
+msgid ""
+"- Create a Linux or Windows bootable disk, and make sure you have the Monero "
+"binaries on the same disk or on a second disk (for Linux make sure you have "
+"also downloaded copies of the dependencies you will need, libboost1.55 and "
+"miniupnpc for instance)"
+msgstr ""
+"- Créez un disque bootable Linux ou Windows, et assurez-vous d'avoir les "
+"binaires Monero sur le même disque ou sur un second disque (pour linux, "
+"assurez-vous d'avoir également copié les dépendances dont vous aurez besoin, "
+"libboost1.55 et miniupnpc notament)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:16
+#
+msgid ""
+"- Disconnect the network and/or Internet cables from your computer, "
+"physically remove the wifi card or switch the wifi/bluetooth off on a laptop "
+"if possible"
+msgstr ""
+"- Déconnectez le réseau et/ou la connexion internet de votre ordinateur, "
+"enlever physiquement la carte wifi ou désactivez le wifi/bluetooth si "
+"possible sur un portable."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:18
+#
+msgid "- Boot into your bootable OS, install the dependencies if necessary"
+msgstr "- Démarrez sur le disque bootable, installez les dépendances si nécessaire."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:20
+#
+msgid ""
+"- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows "
+"bootable ISOs normally have a Z: drive or something)"
+msgstr ""
+"- Copiez les binaires Monero sur un disque en RAM (/dev/shm sur Linux, une "
+"ISO bootable Windows devrait normalement avoir un disque comme Z:)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:22
+#
+msgid ""
+"- Don't run the Monero @daemon. Instead, using the command line, use "
+"monero-wallet-cli to create a new Monero @account"
+msgstr ""
+"- Ne lancez pas le démon Monero. A la place, lancez monero-wallet-cli depuis "
+"un terminal en ligne de commande pour créer un nouveau @account Monero."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:24
+#
+msgid "- When prompted for a name, give it any name, it doesn't really matter"
+msgstr ""
+"- Lorsqu'un nom vous est demandé, donnez n'importe lequel, cela n'a aucune "
+"importance."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:26
+#
+msgid ""
+"- When prompted for a password, type in like 50 - 100 random "
+"characters. Don't worry that you don't know the password, just make it LONG"
+msgstr ""
+"- Lorsqu'on vous demande un mot de passe, saisissez de 50 à 100 caractères "
+"aléatoires. Ne vous souciez pas de devoir connaître le mot de passe, "
+"saisissez-en juste un long."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:29
+#
+msgid ""
+"- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed "
+"**WARNING**: If you forget to write down this information your funds may be "
+"lost forever"
+msgstr ""
+"- **ÉTAPE CRITIQUE** : Notez (sur un papier) votre @mnemonic-seed de 25 "
+"mots.  **ATTENTION**: Si vous oubliez de notez cette information, vos fonds "
+"pourraient être perdus pour toujours."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:31
+#
+msgid ""
+"- Write down (on your phone, on paper, on another computer, wherever you "
+"want) your address and view key"
+msgstr ""
+"- Notez (sur votre smartphone, un papier, un autre ordinateur, n'importe où) "
+"votre adresse et votre clef d'audit."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:33
+#
+msgid ""
+"- Switch off the computer, remove the battery if there is one, and leave it "
+"physically off for a few hours"
+msgstr ""
+"- Éteignez votre ordinateur, enlevez la batterie s'il y en a une, et laissez "
+"le physiquement arrêté pendant quelques heures."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:35
+#
+msgid ""
+"The account you've created was created in RAM, and the digital files are now "
+"inaccessible. If some adversary manages to somehow obtain the data, they "
+"will lack the long password to open it. If you need to receive payments, you "
+"have your public address, and you have the view key if needed. If you need "
+"access to it, you have your 25 word @mnemonic-seed, and you can now write "
+"out several copies of it, including an offsite copy (e.g. a bank deposit "
+"box)."
+msgstr ""
+"Le compte que vous avez créé se trouvait en mémoire vive, et les fichiers "
+"sont maintenant inaccessible. Si un ennemi parvenait d'une quelconque "
+"manière à obtenir ces données, il lui manquerait le long mot de passe pour "
+"pouvoir l'ouvrir. Si vous avez besoin de recevoir des paiements, vous avez "
+"votre adresse publique, et vous avez votre clef d'audit si nécessaire. Si "
+"vous avez besoin d'y accéder, vous avez votre @mnemonic-seed de 25 mots, et "
+"vous pouvez maintenant en faire quelques copies, dont une copie externe (par "
+"exemple, dans le coffre d'une banque)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/Offline_Backup.md:36
+#
+msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
+msgstr "Lié : [Générateur de Compte Hors-Ligne](http://moneroaddress.org/)"
