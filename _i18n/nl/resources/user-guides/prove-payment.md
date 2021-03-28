@@ -65,8 +65,9 @@ Charlie typt het volgende in monero-wallet-cli:
 > check_tx_key TXID SLEUTEL ADRES
 
 Daarbij vult hij de door Alice verstrekte gegevens in plaats van de variabelen in. monero-wallet-cli gebruikt de transactiesleutel
-om de transactie te ontsleutelen en geeft weer hoeveel in deze transactie naar dit adres is verzonden. Uiteraard
-zal Charlie bij Bob willen navragen of het adres inderdaad van hem is, net als bij Bitcoin.
+om de transactie te ontsleutelen en geeft weer hoeveel in deze transactie naar dit adres is verzonden.
+
+Uiteraard zal Charlie bij Bob willen navragen of het adres inderdaad van hem is, net als bij Bitcoin.
 
 #### Grafische interface
 

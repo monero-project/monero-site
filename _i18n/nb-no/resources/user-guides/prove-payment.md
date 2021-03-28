@@ -60,7 +60,9 @@ taster Charlie inn i monero-wallet-cli:
 
 > check_tx_key TXID TXKEY ADDRESS
 
-Opplysningene som Alice har oppgitt innsettes på en ryddig måte istedenfor plassholderne. monero-wallet-cli-en vil bruke transaksjonsnøkkelen til å avkode transaksjonen og viser hvor mye akkurat denne transaksjonen har sendt til denne adressen. Charlie ønsker åpenbart å dobbeltsjekke med Bob at adressen virkelig er hans – på samme måte som med bitcoin.
+Opplysningene som Alice har oppgitt innsettes på en ryddig måte istedenfor plassholderne. monero-wallet-cli-en vil bruke transaksjonsnøkkelen til å avkode transaksjonen og viser hvor mye akkurat denne transaksjonen har sendt til denne adressen.
+
+Charlie ønsker åpenbart å dobbeltsjekke med Bob at adressen virkelig er hans – på samme måte som med bitcoin.
 
 
 #### GUI
@@ -78,4 +80,4 @@ Charlie vil åpne sin monero-wallet-gui og gå til Avansert > Bevis/Sjekk-siden 
 
 Charlie ønsker åpenbart å dobbeltsjekke med Bob at adressen virkelig er hans – på samme måte som med bitcoin.
 
-Merk: Hvis flere transaksjoner har blitt gjort, må dette repeteres for hver slik transaksjon.
+Merk: Hvis flere transaksjoner har blitt gjort, må dette gjentas for hver transaksjon.

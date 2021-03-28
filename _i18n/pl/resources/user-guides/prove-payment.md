@@ -62,6 +62,8 @@ Paweł wpisuje w wierszu poleceń:
 
 Paweł zamienił symbole na informacje dostarczone przez Ewę. monero-wallet-cli użyje klucza transakcji do odszyfrowania jej i wyświetli kwotę przesłaną na ten konkretny adres.
 
+Oczywiście, Paweł będzie chciał się upewnić, czy adres Jacka rzeczywiście do niego należy - tak samo jak w przypadku Bitcoina.
+
 #### GUI
 
 Paweł otworzy swój Graficzny Interfejs Użytkownika i przejdzie do strony Advanced > Prove/Check, aby wypełnić pole Check informacjami dostarczonymi przez Ewę.

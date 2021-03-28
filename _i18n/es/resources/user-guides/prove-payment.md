@@ -65,8 +65,9 @@ Charlie escribe en monero-wallet-cli:
 > check_tx_key TXID TXKEY ADDRESS
 
 La información provista por Alicia se coloca limpiamente en lugar de los marcadores. monero-wallet-cli usará la llave de transacción
-para decodificar la transacción, y mostrar cuánto envió la transacción a la dirección. Obviamente,
-Charlie querrá volver a revisar con Bob que la dirección es realmente de él - al igual que con Bitcoin.
+para decodificar la transacción, y mostrar cuánto envió la transacción a la dirección.
+
+Obviamente, Charlie querrá volver a revisar con Bob que la dirección es realmente de él - al igual que con Bitcoin.
 
 #### GUI
 

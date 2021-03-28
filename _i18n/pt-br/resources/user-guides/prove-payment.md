@@ -60,7 +60,9 @@ Charlie digita na monero-wallet-cli:
 
 > check_tx_key ID_DA_TRANSAÇÃO CHAVE_DA_TRANSAÇÃO ENDEREÇO
 
-As informações que a Alice forneceu devem ser substituídas nos campos ID_DA_TRANSAÇÃO, CHAVE_DA_TRANSAÇÃO e ENDEREÇO. A monero-wallet-cli irá usar a chave da transação para decodificar a transação, exibindo quantos XMR essa transação enviou para o endereço. Logicamente, Charlie deverá verificar com Bob se o endereço realmente é dele, assim como seria necessário com Bitcoin.
+As informações que a Alice forneceu devem ser substituídas nos campos ID_DA_TRANSAÇÃO, CHAVE_DA_TRANSAÇÃO e ENDEREÇO. A monero-wallet-cli irá usar a chave da transação para decodificar a transação, exibindo quantos XMR essa transação enviou para o endereço.
+
+Logicamente, Charlie deverá verificar com Bob se o endereço realmente é dele, assim como seria necessário com Bitcoin.
 
 #### GUI
 
@@ -75,6 +77,6 @@ Ao clicar em Verificar, Charlie ficará sabendo quantos XMR essa transação env
 
 ---
 
-Logicamente, Charlie deverá checar com Bob se o endereço realmente é dele, assim como seria necessário com Bitcoin.
+Logicamente, Charlie deverá verificar com Bob se o endereço realmente é dele, assim como seria necessário com Bitcoin.
 
 Nota: se várias transações forem feitas, o procedimento precisa ser repetido para cada transação.
