@@ -122,7 +122,7 @@ hangouts:
     monero-site: Where the development of this website is coordinated
 
 merchants:
-  intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. These merchants are not endorsed by the community, see disclaimer at the bottom of this page. If a company no longer accepts Monero or you would like your business to be listed, please
+  intro1: Merchants of all kinds have come to value the financial privacy that Monero brings. Below is a list of the merchants that we know of that currently accept Monero for their goods and services. <b>These merchants are not vetted by the Getmonero team, see the disclaimer at the bottom of this page</b>. If a company no longer accepts Monero or you would like your business to be listed, please
   intro2:  open a GitHub issue and let us know
   intro3: (select the "Merchant" template and fill up all sections).
   disclaimer: |
