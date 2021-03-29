@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-29 14:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:4
+#
+msgid ""
+"Restoring a wallet from private keys is pretty simple. If you have the "
+"necessary information, with this guide you can completely restore your "
+"wallet. Note: you do NOT have to have your password to restore from keys."
+msgstr ""
+"Restaurar un monedero desde las claves privadas es muy simple. Si cuentas "
+"con la información necesaria, con esta guía puedes restaurar tu monedero "
+"completamente. Nota: no necesitas tener tu contraseña para restaurar desde "
+"claves privadas."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:6
+#
+msgid ""
+"You need to have 3 pieces of data from your wallet, or your .keys file which "
+"holds this info and the password to decrypt it. The 3 wallet components that "
+"you need are:"
+msgstr ""
+"Necesitas tener 3 piezas de información de tu monedero, o tu archivo .keys "
+"el cual guarda esta información y la contraseña para des-encriptar. Los 3 "
+"componentes de tu monedero que necesitas son:"
+
+#. type: Bullet: '1. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Address**"
+msgstr "**Dirección**"
+
+#. type: Bullet: '2. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Secret Spendkey**"
+msgstr "**Clave secreta de compra**"
+
+#. type: Bullet: '3. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Secret Viewkey**"
+msgstr "**Clave secreta de visualización**"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:13
+#
+msgid "#### CLI"
+msgstr "#### CLI"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:15
+#
+msgid "Then run the wallet command:"
+msgstr "Ejecuta el comando de monedero:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:17
+#
+msgid "`./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`"
+msgstr "`./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:19
+#
+msgid ""
+"Next, you'll be asked for the Address, the spendkey, the viewkey, and "
+"finally the new password for the re-generated wallet."
+msgstr ""
+"A continuación, se te preguntará por la dirección, la clave de utilización y "
+"de visualización, y finalmente una nueva contraseña para el monedero "
+"restaurado."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:21
+#
+msgid ""
+"Running this with the correct parameters will re-generate your wallet files "
+"for you and allow you to set a new password."
+msgstr ""
+"Ejecutar esto con los parámetros correctos volverá a generar tus archivos de "
+"monedero y te permitirá dar una nueva contraseña."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:23
+#
+msgid ""
+"If you run into any trouble, running `./monero-wallet-cli --help` will show "
+"you the options available to you at wallet startup. Once you're inside your "
+"wallet, running the `help` command will list the help for the commands "
+"available to you within the wallet."
+msgstr ""
+"Si te ocurre algún problema, ejecutar `./monero-wallet-cli --help` mostrará "
+"las opciones disponibles en tu monedero. Una vez dentro de tu monedero, "
+"ejecuta el comando `help` listará los comandos de ayuda disponibles para ti "
+"en tu monedero."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:25
+#
+msgid "#### GUI"
+msgstr "#### GUI"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:27
+#
+msgid ""
+"Launch `monero-wallet-gui`. If this is the first time you launched it go to "
+"the next step, otherwise click `Cancel`:"
+msgstr ""
+"Abre `monero-wallet-gui`. Si es la primera vez que lo abres ve al siguiente "
+"paso, de otro modo haz clic en `Cancel`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:29
+#
+msgid ""
+"![cancel "
+"opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+msgstr ""
+"![cancel "
+"opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:31
+#
+msgid "Select your appropriate language `English(US)`:"
+msgstr "Selecciona el lenguaje apropiado `Español`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:33
+#
+msgid ""
+"![choose "
+"language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+msgstr ""
+"![choose "
+"language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:35
+#
+msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgstr "Haz clic en `Restaurar monedero de claves o semilla mnemónica`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:37
+#
+msgid ""
+"![choose "
+"restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+msgstr ""
+"![choose "
+"restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:39
+#
+msgid ""
+"Select `Restore from keys`, give your wallet a name & storage location, and "
+"complete the `Account address (public)`, `View key (private)` & `Spend key "
+"(private)`. Optionaly, specify a `Restore height (optional)` to avoid "
+"scanning of oldest blocks. Then click the `Right` arrow:"
+msgstr ""
+"Selecciona `Restaurar desde claves`, da a tu monedero un nombre y la "
+"ubicación de guardado, y llena `Dirección de cuenta (pública)`, `Clave de "
+"visualización (privada)` & `Clave de utilizacicón (privada)`. Opcionalmente, "
+"especifica la `Altura de restauración (opcional)` para evitar escaneo de "
+"bloques viejos. Ahora haz clic en la flecha de `Siguiente`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:41
+#
+msgid ""
+"![restore "
+"wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
+"![restore "
+"wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:43
+#
+msgid ""
+"On the next page, give your wallet a strong password and confirm it before "
+"clicking the `Right` arrow:"
+msgstr ""
+"En la página siguiente, da a tu monedero una contraseña fuerte y confírmala "
+"antes de hacer clic en la flecha de `Siguiente`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:45
+#
+msgid ""
+"![wallet "
+"password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+msgstr ""
+"![wallet "
+"password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:47
+#
+msgid "Specify your daemon settings and click the `Right` arrow:"
+msgstr ""
+"Especifica las configuraciones del daemon y haz clic en la flecha de "
+"`Siguiente`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:49
+#
+msgid ""
+"![daemon "
+"settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+msgstr ""
+"![daemon "
+"settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:51
+#
+msgid "Click on `USE MONERO` to enjoy your restored wallet:"
+msgstr "Haz clic en `USAR MONERO` para disfrutar de tu monedero restaurado:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:52
+#
+msgid ""
+"![all set "
+"up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
+msgstr ""
+"![all set "
+"up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"

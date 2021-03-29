@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-29 14:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:4
+#
+msgid ""
+"Restoring a wallet from private keys is pretty simple. If you have the "
+"necessary information, with this guide you can completely restore your "
+"wallet. Note: you do NOT have to have your password to restore from keys."
+msgstr ""
+"Je kunt een portemonnee makkelijk herstellen met je privésleutels. Als je de "
+"benodigde gegevens hebt, kun je met deze handleiding je portemonnee volledig "
+"herstellen. Je hebt je wachtwoord NIET nodig voor herstellen met sleutels."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:6
+#
+msgid ""
+"You need to have 3 pieces of data from your wallet, or your .keys file which "
+"holds this info and the password to decrypt it. The 3 wallet components that "
+"you need are:"
+msgstr ""
+"Wat je nodig hebt zijn ofwel 3 gegevens uit je portemonnee, ofwel het "
+"bestand met de extensie .keys waarin deze gegevens staan, plus het "
+"wachtwoord waarmee dit bestand is versleuteld. Je hebt deze 3 onderdelen van "
+"je portemonnee nodig:"
+
+#. type: Bullet: '1. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Address**"
+msgstr "**Adres**"
+
+#. type: Bullet: '2. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Secret Spendkey**"
+msgstr "**Geheime bestedingssleutel**"
+
+#. type: Bullet: '3. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Secret Viewkey**"
+msgstr "**Geheime alleen-lezen sleutel**"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:13
+#
+msgid "#### CLI"
+msgstr "#### Opdrachtregel"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:15
+#
+msgid "Then run the wallet command:"
+msgstr "Voer vervolgens deze opdracht uit:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:17
+#
+msgid "`./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`"
+msgstr "`./monero-wallet-cli --generate-from-keys Nieuwe_Portemonnee.abc`"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:19
+#
+msgid ""
+"Next, you'll be asked for the Address, the spendkey, the viewkey, and "
+"finally the new password for the re-generated wallet."
+msgstr ""
+"Vervolgens wordt er gevraagd gegevens in te voeren: het adres, de "
+"bestedingssleutel, de alleen-lezen sleutel en het nieuwe wachtwoord voor de "
+"opnieuw gegenereerde portemonnee."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:21
+#
+msgid ""
+"Running this with the correct parameters will re-generate your wallet files "
+"for you and allow you to set a new password."
+msgstr ""
+"Als je dit uitvoert met de juiste parameters, worden je portemonneebestanden "
+"opnieuw voor je gegenereerd en kun je een nieuw wachtwoord instellen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:23
+#
+msgid ""
+"If you run into any trouble, running `./monero-wallet-cli --help` will show "
+"you the options available to you at wallet startup. Once you're inside your "
+"wallet, running the `help` command will list the help for the commands "
+"available to you within the wallet."
+msgstr ""
+"Als je problemen tegenkomt, kun je `./monero-wallet-cli --help` uitvoeren om "
+"te zien welke opties beschikbaar zijn bij het starten van een "
+"portemonnee. Nadat je de portemonnee hebt geopend, kun je de opdracht `help` "
+"uitvoeren om de opdrachten weer te geven die beschikbaar zijn in de "
+"portemonnee."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:25
+#
+msgid "#### GUI"
+msgstr "#### Grafische interface"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:27
+#
+msgid ""
+"Launch `monero-wallet-gui`. If this is the first time you launched it go to "
+"the next step, otherwise click `Cancel`:"
+msgstr ""
+"Start `monero-wallet-gui`. Als dit de eerste keer is dat je het start, ga "
+"dan naar de volgende stap. Zo niet, klik dan op `Annuleren`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:29
+#
+msgid ""
+"![cancel "
+"opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+msgstr ""
+"![openen "
+"annuleren](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:31
+#
+msgid "Select your appropriate language `English(US)`:"
+msgstr "Selecteer de gewenste taal `Nederlands`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:33
+#
+msgid ""
+"![choose "
+"language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+msgstr ""
+"![taal "
+"kiezen](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:35
+#
+msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:37
+#
+msgid ""
+"![choose "
+"restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+msgstr ""
+"![herstellen "
+"kiezen](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:39
+#
+msgid ""
+"Select `Restore from keys`, give your wallet a name & storage location, and "
+"complete the `Account address (public)`, `View key (private)` & `Spend key "
+"(private)`. Optionaly, specify a `Restore height (optional)` to avoid "
+"scanning of oldest blocks. Then click the `Right` arrow:"
+msgstr ""
+"Selecteer `Herstel met sleutels`, geef een name en opslaglocatie op voor de "
+"portemonnee en vul de velden `Adres van account (openbaar)`, `Alleen-lezen "
+"sleutel (privé)` en `Bestedingssleutel (privé)` in. Eventueel kun je een "
+"`Herstelpunt (optioneel)` opgeven, zodat er niet hoeft te worden gezocht in "
+"oudere blokken. Klik vervolgens op de pijl naar rechts:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:41
+#
+msgid ""
+"![restore "
+"wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
+"![portemonnee "
+"herstellen](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:43
+#
+msgid ""
+"On the next page, give your wallet a strong password and confirm it before "
+"clicking the `Right` arrow:"
+msgstr ""
+"Geef je portemonnee op de volgende pagina een sterk wachtwoord en bevestig "
+"dit voordat je op de pijl naar rechts klikt:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:45
+#
+msgid ""
+"![wallet "
+"password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+msgstr ""
+"![wachtwoord "
+"portemonnee](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:47
+#
+msgid "Specify your daemon settings and click the `Right` arrow:"
+msgstr "Geef de instellingen voor je node op en klik op de pijl naar rechts:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:49
+#
+msgid ""
+"![daemon "
+"settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+msgstr ""
+"![instellingen "
+"node](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:51
+#
+msgid "Click on `USE MONERO` to enjoy your restored wallet:"
+msgstr "Klik op `GEBRUIK MONERO` om je herstelde portemonnee te gebruiken:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:52
+#
+msgid ""
+"![all set "
+"up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
+msgstr ""
+"![klaar is "
+"kees](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
