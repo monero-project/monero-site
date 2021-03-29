@@ -1251,8 +1251,15 @@ a.arrow-up {
   z-index: 5;
 }
 
-a.arrow-up:hover, a.arrow-up:focus {
-  border: none;
+a.arrow-up:hover, a.arrow-up:active, a.arrow-up:focus {
+  background-color: #d26e2b;
+}
+
+a.arrow-up:focus:not(:focus-visible):not(:hover) {
+  background-color: #ffffff;
+}
+
+a.arrow-up:focus-visible {
   background-color: #d26e2b;
 }
 
@@ -1271,7 +1278,15 @@ a.arrow-up i {
   transition: all ease-out .2s;
 }
 
-a.arrow-up:hover i, a.arrow-up:focus i {
+a.arrow-up:hover i, a.arrow-up:active i, a.arrow-up:focus i {
+  border-color: #ffffff;
+}
+
+a.arrow-up:focus:not(:focus-visible):not(:hover) i {
+  border-color: #d26e2b;
+}
+
+a.arrow-up:focus-visible i {
   border-color: #ffffff;
 }
 
