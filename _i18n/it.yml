@@ -14,28 +14,22 @@ global:
   privacy: Privacy
   untranslated: Questa pagina non è ancora stata tradotta. Se vuoi aiutare a tradurla
     vedi il
-  outdatedMax: Questa pagina è obsoleta. Suggeriamo di non utilizzarla. Invece, per
-    favore guarda
   outdatedVersion: versione in inglese
   outdatedMin: Questa pagina è stata aggiornata successivamente all'ultima traduzione.
     Puoi utilizzare questa versione, ma potrebbe essere incompleta.
-  upgrade: Per continuare ad usare Monero, assicurati che il tuo software sia pronto
-    per l'aggiornamento del network del 30 Novembre.
-  moreinfo: Più info
   lang_tag: '@lang_tag_it'
+  outdated: Il contenuto di questa pagina non è aggiornato e potrebbe non essere più
+    valido. Contatta la community se hai bisogno di assistenza.
 titles:
   index: Home
   whatismonero: Cos'è Monero (XMR)?
-  using: Usare Monero
   accepting: Accettare Monero
   contributing: Migliorare Monero
   mining: Minare Monero
   faq: FAQ
   downloads: Downloads
   allposts: Tutti i post del blog
-  team: Il team Monero
   hangouts: Canali di comunicazione
-  events: Eventi
   sponsorships: Sponsorizzazioni
   merchants: Commercianti & Servizi
   about: Riguardo Monero
@@ -48,12 +42,6 @@ titles:
   themoneroproject: Il Progetto Monero
   presskit: Monero Press Kit
   legal: Legale
-  ffs: Sistema di Raccolta Fondi
-  ffs-cp: Proposte Completate
-  ffs-fr: Fondi Richiesti
-  ffs-ideas: Idee
-  ffs-ot: Task Aperti
-  ffs-wip: Lavori in Corso
   blogbytag: Blog
   library: Libreria
 
@@ -64,7 +52,6 @@ navigation:
   contributing: Contribuire
   mining: Mining
   community: Comunità
-  team: Team
   merchants: Commercianti
   resources: Risorse
   about: Riguardo Monero
@@ -79,53 +66,23 @@ home:
     e sei responsabile dei tuoi fondi. I tuoi conti e le tue transazioni vengono mantenuti
     privati e lontani da occhi indiscreti.
   get_started: Inizia da qui
-  why_monero_is_different: Perché Monero è diverso
-  monero_is_secure: Monero è sicuro
-  monero_is_secure_para: Monero è una criptovaluta decentralizzata, ovvero una valuta
-    digitale sicura basata sulla crittografia, operata da una rete di utilizzatori.
-    Le transazioni vengono confermate attraverso consenso distribuito ed immutabilmente
-    registrate nella blockchain. Non devi fidarti di alcun servizio di terze parti
-    per tenere i tuoi Monero al sicuro.
-  monero_is_private: Monero è privato
-  monero_is_private_para: Monero usa le tecniche crittografiche "ring signatures"
-    (firme ad anello), "ring confidential transactions" (transazioni confidenziali
-    ad anello) e "stealth addresses" (indirizzi stealth) per offuscare l'origine,
-    l'ammontare e la destinazione di tutte le transazioni. Monero ha tutti i vantaggi
-    di una criptovaluta decentralizzata senza concedere niente in fatto di privacy.
-  monero_is_untraceable: Monero non è tracciabile
-  monero_is_untraceable_para: Gli indirizzi di invio e ricezione, così come l'ammontare
-    della transazione, sono offuscati di default. Le transazioni sulla blockchain
-    di Monero non possono essere collegate ad alcuna identità nel mondo reale.
-  monero_is_fungible: Monero è fungibile
-  monero_is_fungible_para1: Monero è
-  monero_is_fungible_para2: fungible
-  monero_is_fungible_para3: poiché è privato di default. Nessuna unità monetaria può
-    essere inserita in una lista nera da venditori o exchange perché associata a transazioni
-    precedenti.
   downloads: Download
-  downloads_windows: Monero per Windows
-  downloads_mac: Monero per Mac
-  downloads_linux: Monero per Linux
-  downloads_blockchain: Ultima blockchain
-  different_system: Ti serve per un diverso sistema operativo?
-  view_all_downloads: Controlla tutti i download disponibili qui
-  latest_news: Ultime Notizie
-  more_news: Più notizie
-  moneropedia: Moneropedia
   moneropedia_para: Vorresti dare un'occhiata al significato dei termini e dei concetti
     usati in Monero? Qui puoi trovare una guida indicizzata ai termini usati nei progetti
     Kovri e Monero e al loro significato.
   moneropedia_button: Leggi Moneropedia
-  user_guides: Guide utente
-  user_guides_para: Guide passo passo su tutto ciò che riguarda Monero, da come creare
-    un portafogli a come supportare la rete e perfino a come modificare questo sito
-    web, separate per categoria.
-  user_guides_button: Leggi le guide utente
   faq: FAQ
   faq_para: Ci sono state poste tante domande durante questi anni, perciò abbiamo
     compilato, per tua convenienza, delle FAQ estese e dettagliate. Non ti preoccupare,
     se la tua domanda non trova risposta qui, puoi sempre chiedere alla comunità.
-  faq_button: Leggi le risposte
+  guides: Guide e Risorse
+  answers: Trova Risposte alle Tue Domande
+  choosewallet: Scegli un Portafoglio
+  whatis: Scopri di più su Monero
+  contributing: Contribuire
+  joincommunity: Unisciti alla Comunità
+  merchants: Commercianti
+  useit: 'È una valuta: Usala!'
 hangouts:
   intro: La comunità Monero è diversa e variegata. Veniamo da ogni parte del mondo,
     ma abbiamo alcuni posti nei quali ci piace riunirci. Qui sotto ne puoi trovare
@@ -159,10 +116,6 @@ hangouts:
     monero-research-lab: Ricerche sulla privacy finanziaria con le criptovalute.
     monero-translations: Localizzazione di Monero in altre lingue.
     monero-hardware: Costruire portafogli hardware per tenere al sicuro i tuoi Moneroj.
-    monero-italia: Canale in italiano per appassionati di Monero
-    kovri: Questo canale è usato per discutere tutto ciò che riguarda Kovri.
-    kovri-dev: I molti collaboratori e sviluppatori si trovano qui per discutere di
-      questioni di sviluppo di Kovri.
 merchants:
   intro1: I commercianti hanno imparato a valutare la privacy finanziaria di Monero.
     Di seguito è riportato un elenco dei commercianti che sappiamo accettare Monero
@@ -173,21 +126,17 @@ merchants:
   disclaimer: |
     "Nota: questi link vengono forniti per comodità e solo a scopo informativo; non costituiscono un'approvazione da parte della comunità Monero di alcun prodotto, servizio o opinione delle società o organizzazioni o individui elencati. La comunità Monero non si assume alcuna responsabilità per l'accuratezza, la legalità o il contenuto di questi siti esterni. Contatta il sito esterno per le risposte alle domande riguardanti il suo contenuto. Come sempre, caveat emptor ('l'acquirente stia attento'); sei totalmente responsabile della tua ricerca. Usa sempre il giudizio quando fai acquisti online."
 sponsorships:
-  intro: Le seguenti aziende hanno sostenuto il progetto Monero nel suo obiettivo
-    di portare la privacy finanziaria nel mondo. Non potremmo essere più grati per
-    i loro contributi. Se volete sponsorizzare il progetto Monero ed essere elencati
-    in questa pagina, inviateci una email a dev@getmonero.org.i
+  intro: Le seguenti aziende sostengono il progetto Monero nel suo obiettivo di portare
+    la privacy finanziaria nel mondo. Non potremmo essere più grati per i loro contributi.
+    Se volete sponsorizzare il progetto Monero ed essere elencati in questa pagina,
+    inviateci una email a dev@getmonero.org.
+  macstadium: MacStadium sponsorizza un Mac Mini dedicato che viene utilizzato per
+    lo sviluppo legato al Mac.
+  tari: Tari Labs sponsorizza il CDN utilizzato da questo sito web.
 team:
   core: Core
-  developers: Sviluppatori
-  developers_para1: Il progetto Monero ha avuto ben oltre 500 collaboratori in tutta
-    la vita del progetto. Per una lista completa, controlla la
-  developers_para2: pagina dei collaboratori OpenHub.
-  developers_para3: Qui sotto troverai alcune persone che si sono date da fare per
-    Monero.
   community: Comunità
   mrl: Research Lab
-  thanks: Ringraziamenti Speciali
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.
@@ -228,11 +177,6 @@ downloads:
     HTTP RPC and 0MQ interface.
   currentversion: Current Version
   sourcecode: Source Code
-  showissues: Show known issues for this release
-  noissues: This release has no known major issues
-  yesissues: >
-    This release has the following known issues:<br>
-    - Initial sync of the blockchain very slow. Will be fixed with a point release
   helpsupport: Help and Support
   helpsupport1: 'A guide with an explanation of every section of the wallet is available:'
   helpsupport2: See latest release
@@ -281,23 +225,7 @@ downloads:
   mobilelight2: Hangouts
   mobilelight3: page to see where we are.
   installer: Installer
-  yesissuesgui: La versione 0.15.0.4 (Linux) è stata compilata per errore senza il
-    supporto Trezor. Pertanto, si consiglia agli utenti Trezor Monero su Linux di
-    attendere fino alla prossima versione (0.15.0.5) oppure di compilare la GUI da
-    soli
-monero-project:
-  kovri: Il progetto Kovri usa la crittografia end-to-end, in modo tale che né il
-    mittente né il ricevente di una transazione Monero debba rivelare il proprio indirizzo
-    IP all'altra parte o a terze parti (come la blockchain). Questo risultato si ottiene
-    utilizzando la stessa tecnologia adottata nella darknet I2P (Invisible Internet
-    Protocol). Il progetto è attualmente in attivo e costante sviluppo e non è ancora
-    integrato con Monero.
-  kovri_button: Visita il sito
-  openalias: Il progetto OpenAlias semplifica il pagamento tramite criptovalute fornendo
-    FQDNs (Fully Qualified Domain Names, Domini Autoesplicativi, es. esempio.openalias.org)
-    per i portafogli Monero, mantenendo inalterato il livello di privacy. Il progetto
-    è attualmente attivo ed è già stato implementato in numerosi portafogli Monero.
-  openalias_button: Visita il sito OpenAlias
+monero-project: {}
 press-kit:
   intro1: Qui troverai il simbolo di Monero ed il suo logo. Puoi scegliere la dimensione
     che preferisci, o scaricare il file .ai ed editare tu stesso/a il logo.
@@ -330,6 +258,7 @@ press-kit:
   guerrillakit: Guerrilla Toolkit
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
+  othersymbols: Altri simboli e loghi
 accepting:
   title_gui: Istruzioni per la GUI
   gui1: 'Accettare un pagamento con la GUI è molto semplice. Non importa se sei un
@@ -356,44 +285,36 @@ accepting:
     desideri ricevere monete. Probabilmente potresti preferire l'utilizzo del più
     intuitivo codice QR.
   merchdevguides: guide per sviluppatori
+  merchantstitle: Istruzioni per i commercianti
+  clicreateaccount1: Ora possiedi un altro account separato da quello principale.
+    Puoi passare da un account all'altro in qualsiasi momento.
+  clicreateaccount: 'Per creare un account, esegui semplicemente questo comando:'
+  merchantsintlink: l'organizzazione GitHub
+  merchantsint: Se preferisci non gestire direttamente i portafogli, puoi utilizzare
+    un sistema di pagamento di terze parti. I membri della comunità monero hanno creato
+    una serie di integrazioni per varie piattaforme e lingue. Puoi trovare maggiori
+    informazioni su
+  guiol3: Inserisci l'importo da ricevere, quindi condividi con il pagante l'URL di
+    pagamento o il codice QR. Se desideri monitorare il pagamento in tempo reale,
+    seleziona l'opzione "abilita tracker vendite".
+  guiol2: Se desideri specificare l'importo da ricevere, accedi alla pagina "Commerciante"
+    (dopo aver selezionato nella pagina "Ricevi" l'@account che verrà utilizzato per
+    ricevere XMR).
+  merchantsthirdp: Se stai cercando un altro sistema di integrazione da terze parti,
+    puoi trovare un elenco di gateway di pagamento attivi
+  cliinstructions: Istruzioni per la versione CLI
+  guiol4: Attendi l'arrivo del pagamento e delle conferme necessarie (Maggiori sono
+    le conferme, più sicura sarà la transazione. Hai bisogno di almeno 10 conferme
+    prima di poter spendere i fondi.).
 contributing:
   intro: Monero è un progetto open-source e guidato dalla comunità. Qui sotto sono
     descritti diversi modi in cui aiutare il progetto a crescere.
   network: Supporta la rete
   develop: Sviluppa
-  develop_para1: Monero è scritto principalmente in C++. Essendo un progetto decentralizzato,
-    chiunque è il/la benvenuto/a e può fare aggiunte o modifiche al codice esistente.
-    Le "Pull request" vengono accettate secondo il consenso della comunità. Vedi i
-  develop_para2: repositori
-  develop_para3: e i
-  develop_para4: problemi in sospeso.
   full-node: Esegui un nodo locale
-  full-node_para: Esegui monerod con la porta 18080 aperta. Tenere attivo un nodo
-    locale assicura la massima privacy nelle transazioni Monero. La presenza del tuo
-    nodo locale sulla rete migliora inoltre la distribuzione della blockchain ai nuovi
-    utenti.
   mine: Mina
-  mine_para1: Il mining assicura che la rete Monero resti decentralizzata e sicura.
-    Il mining in background può essere attivato usando sia l'interfaccia grafica sia
-    quella a riga di comando di Monero. Ulteriori informazioni sul mining (in lingua
-    inglese) possono essere trovate
-  mine_para2: qui.
   ffs: Guarda il Sistema di Raccolta Fondi
-  ffs_para1: Monero utilizza un
-  ffs_para2: Sistema di Raccolta Fondi
-  ffs_para3: (Community Crowdfunding System, CCS) in cui vengono proposti progetti
-    legati allo sviluppo e successivamente finanziati dalla comunità. Il finanziamento
-    viene depositato in garanzia e liquidato agli sviluppatori solo a seguito del
-    raggiungimento delle milestone di sviluppo. Chiunque può avanzare nuove proposte
-    o finanziare le proposte già presenti.
   donate: Dona
-  donate_para1: Lo sviluppo del progetto è supportato dalle donazioni e dalle
-  donate_para2: sponsorizzazioni.
-  donate-xmr: Donare Monero
-  donate-xmr_para: Le donazioni possono essere inviate a
-  or: o all'indirizzo
-  donate-btc: Donare Bitcoin
-  donate-btc_para: Le donazioni possono essere inviate a
   donate-other: Altro
   donate-other_para1: Manda un'email a
   donate-other_para2: per avere informazioni su metodi di donazione alternativi o
@@ -447,22 +368,6 @@ faq:
     dei blocchi può aumentare o diminuire nel tempo a seconda del numero di transazioni
     da validare. Esiste un limite sulla velocità di crescita della dimensione del
     blocco al fine di evitare tassi di crescita eccessivi.
-  q9: Cos'è la blockchain?
-  a9: La "blockchain" (catena di blocchi) è un sistema grazie al quale è possibile
-    mantenere una copia di tutta la storia delle transazioni sulla rete Monero. Ogni
-    due minuti, viene aggiunto alla blockchain un nuovo blocco contenente le informazioni
-    sulle ultime transazioni. Questa catena consente alla rete di verificare la quantità
-    di denaro in circolazione e di essere resiliente ad attacchi e tentativi di centralizzazione.
-  q10: Cos'è Kovri?
-  a10: Kovri è un router I2P sviluppato in C++. I2P è un network anonimo, come Tor,
-    ma presenta parecchie differenze tecnologiche. Kovri è un progetto indipendente
-    da Monero, ma funzionerà con Monero così come con altri progetti. Kovri offusca
-    la trasmissione delle transazioni in modo tale che gli altri nodi non possano
-    risalire a chi ha iniziato la transazione. In scenari ostili, Kovri può essere
-    usato per offuscare tutto il traffico Monero attraverso I2P, in modo tale che
-    non possa essere dimostrato l'utilizzo di Monero. Kovri è al momento in versione
-    alpha e non è ancora pienamente integrato con Monero. Maggiori informazioni su
-    Kovri sul <a href="https://kovri.io">sito di progetto.</a>
   q11: Cosa è la fungibilità? E perché è così importante?
   a11: La fungibilità è una semplice proprietà di una moneta secondo cui non esistono
     differenze fra due unità monetarie. Se due persone si scambiano una moneta da
@@ -513,6 +418,15 @@ faq:
     e se non ora magari in futuro. Gli attacchi sono sempre più sofisticati. Anche
     se indossi la cintura di sicurezza, questo non esclude che tu possa morire in
     un incidente stradale. Usa sempre il buon senso e la prudenza.
+  qmoneromeaning: Perchè Monero si chiama 'Monero'?
+  qscanned: Perchè il mio portafoglio deve essere sincronizzato ogni volta che lo
+    apro?
+  qblockspace: Perchè la blockchain necessita di così tanto spazio?
+  qnodetor: Come posso connettere il mio nodo tramite Tor?
+  qnofunds: Non riesco a vedere i miei fondi. Ho appena perso tutti i miei Monero?
+  qwallet: Quale portafoglio dovrei usare?
+  qcontribute: Come posso contribuire?
+  toc: Tabella Dei Contenuti
 mining:
   intro1: Monero è una criptovaluta che utilizza mining proof-of-work per raggiungere
     un consensus distribuito. Qui sotto trovi alcune informazioni e risorse su come
@@ -522,7 +436,6 @@ mining:
   support: Supporto
   support_para1: Vedi
   support_para2: Canali,
-  support_para3: /r/moneromining (English)
   support_para4: and
   pools: Pools
   pools_para1: Una lista di pool "fidate" è disponibile
@@ -533,50 +446,7 @@ mining:
   software: Software per Minare
   software_para: Nota che alcuni miner potrebbero prevedere una commissione per lo
     sviluppatore.
-using:
-  intro: Effettuare transazioni con Monero è molto semplice. Questa pagina serve a
-    guidare l'utente in questo processo.
-  learn: 1. Impara
-  learn_para1: Monero è una criptovaluta sicura, privata e non tracciabile. Gli sviluppatori
-    e la comunità sono impegnati a proteggere questi valori. Scopri di più leggendo
-    la pagina
-  learn_para2: Cos'è Monero
-  learn_para3: Il
-  learn_para4: codice sorgente
-  learn_para5: è disponibile per revisioni e suggerimenti.
-  support: 2. Chiedi Supporto
-  support_para1: C'è una comunità grande e amichevole che ti assisterà se dovessi
-    incontrare qualche difficoltà. Consulta la pagina
-  support_para2: Canali
-  support_para3: per maggiori informazioni.
-  generate: 3. Genera un portafoglio
-  generate_para1: È necessario un portafoglio per tenere al sicuro i tuoi fondi. Vedi
-    la pagina
-  generate_para2: Downloads
-  generate_para3: per una lista di portafogli disponibili.
-  generate_para4: Il modo più semplice per eseguire un nodo Monero senza effetti sulla
-    tua banda domestica è quello di acquistare una VPS (Virtual Private Server). Raccomandiamo
-    fortemente
-  generate_para5: e vi invitiamo ad inserire il codice coupon
-  generate_para6: per ricevere uno sconto sulle loro già economiche VPS da $6/mese.
-    usando il codice e/o
-  generate_para7: il nostro link di affiliazione
-  generate_para8: aiuterai a finanziare lo sviluppo di Monero.
-  acquire: 4. Acquisire Monero
-  acquire_para1: Monero può essere acquistato su un
-  acquire_para2: exchange
-  acquire_para3: (cambiavalute) con denaro 'fiat' o altre criptovalute. Alternativamente,
-    è possibile acquisire Monero tramite
-  acquire_para4: mining,
-  acquire_para5: il processo computazionale che assicura che le transazioni siano
-    immutabilmente registrate sulla blockchain.
-  send-receive: 5. Invia e ricevi Monero
-  send-receive_para1: Impara come inviare e ricevere Monero leggendo la nostra
-  send-receive_para2: guida.
-  transact: 6. Effettua una transazione
-  transact_para1: Monero può essere usato per acquistare vari beni e servizi. Per
-    una lista, vedi la pagina
-  transact_para2: Venditori
+using: {}
 what-is-monero:
   need-to-know: Quello che devi sapere
   leading: Monero è la criptovaluta di riferimento tra quelle focalizzate sulla privacy
@@ -596,12 +466,6 @@ what-is-monero:
   confidential_para2: Grazie all'offuscamento di default, Monero è fungibile, nessuna
     unità monetaria può essere collegata ad una precedente transazione. Questo significa
     che Monero verrà sempre accettato senza rischio di censura.
-  confidential_para3: Il progetto Kovri,
-  confidential_para4: attualmente in fase di sviluppo
-  confidential_para5: ", reindirizzerà e cripterà le transazioni attraverso nodi I2P\
-    \ (Invisible Internet Project). Questa tecnologia nasconde l'indirizzo IP di chi\
-    \ effettua una transazione e fornisce ulteriore protezione verso un eventuale\
-    \ indesiderato monitoraggio della rete."
   grassroots: Monero è una community orizzontale che attrare i migliori ricercatori
     ed ingegneri del mondo.
   grassroots_para1: Più di
@@ -676,7 +540,6 @@ developer-guides:
   rpc: Documentazione RPC
   daemonrpc: Documentazione Daemon RPC
   walletrpc: Documentazione Portafoglio RPC
-  soon: Altro in arrivo...
 user-guides:
   general: Generale
   mining: Mining
@@ -691,7 +554,6 @@ user-guides:
   verify-windows: Verificare i binari su Windows (neofita)
   mine-on-pool: Come minare su un pool con XMRig
   solo-mine: Solo-mine con la GUI
-  mine-docker: Minare con Docker and XMRig
   locked-funds: Come sbloccare fondi bloccati
   restore-account: Come ripristinare il tuo account
   qubes: Isolamento portafoglio CLI/daemon mediante Qubes + Whonix
@@ -700,7 +562,6 @@ user-guides:
   view-only: Come creare un portafoglio solo-visualizzazione
   prove-payment: Come dar prova di un pagamento effettuato
   restore-from-keys: Ripristinare un portafoglio dalle chiavi
-  nicehash: Come minare Monero XMR senza equipaggimento per minatori
   ledger-wallet-cli: Come generare un portafoglio Leger Monero con la CLI (monero-wallet-cli)
   multisig-messaging-system: Transazione multifirma con MMS e portafoglio CLI
   tor_wallet: Connecting your local wallet to your own daemon over Tor
@@ -936,45 +797,13 @@ research-lab:
     Cryptonote effettuata dal ricercatore MRL Brandon Goodell. Viene effettuata un'analisi
     approfondita sui concetti e la matematica spiegati nell'articolo Cryptonote.
 specs:
-  fair_title: Nessun premine, nessun instamine, nessun token
-  fair_premine: Monero non è stato preminato o instaminato
-  fair_token: Monero non ha venduto nessun token
-  fair_presale: Monero non ha avuto prevendite di alcun tipo
   pow_title: Proof of Work
-  pow_name: CryptoNight
-  pow_disclaimer: potrebbe cambiare in futuro
-  diff_title: Ritracciamento difficoltà
-  diff_freq: ogni blocco
-  diff_base: basato sugli ultimi 720 blocchi, escludendo il 20% dei timestamp anomali
-  block_time_title: Tempo per blocco
-  block_time_duration: un blocco viene creato ogni 2 minuti
-  block_time_disclaimer: potrebbe cambiare in futuro a patto che la curva di emissione
-    venga rispettata
-  block_reward_title: Ricompensa per blocco
-  block_reward_amount: in costante decrescita e soggetta a penalità per blocchi più
-    grandi della media degli ultimi 100 blocchi (M100)
-  block_reward_example1: vedi
-  block_reward_example_link: l'ultimo blocco
-  block_reward_example2: nella transazione coinbase per la ricompensa corrente
-  block_size_title: Dimensione blocco
-  block_size: dinamica, massimo di 2 * M100
   block_emission_title: Curva di emissione
   block_emission_main: 'prima fase, curva principale: ~18.132 milioni di monete entro
     la fine di Maggio 2022'
   block_emission_tail: "seconda fase, curva di emissione: 0.6 XMR per blocco (se generato\
     \ ogni 2 minuti), subentra alla prima fase quando l'emissione principale è terminata;\
     \ questo si traduce in un tasso di inflazione <1% e decrescente nel tempo"
-  block_emission_disclaimer1: vedi
-  block_emission_disclaimer_link: grafici e dettagli
-  supply_title: Fornitura massima
-  supply_amount: infinita
-  sender_privacy_title: Privacy del mittente
-  sender_privacy_mode: Ring signatures (firme ad anello)
-  recipient_privacy_title: Privacy del destinatario
-  recipient_privacy_mode: Stealth addresses (indirizzi stealth)
-  amount_hidden_title: Offuscamento ammontare
-  amount_hidden_mode: Ring confidential transactions (transazioni confidenziali ad
-    anello)
 library:
   description: 'Qui sotto sono elencate alcuni fra pubblicazioni, riviste e libri
     per il download:'
@@ -1016,18 +845,14 @@ library:
     In questo numero, aggiornamenti su: sviluppo, Monero Research Lab, Kovri, comunità,
     Hardware e Monerujo.
 moneropedia:
-  add_new_button: Aggiungi nuova voce
   add_new_text1: Se c'è una voce che vorresti modificare o aggiungere,
   add_new_link: apri una issue sul repositorio GitLab di questo sito
   add_new_text2: o sottoponi cambiamenti con una pull request
   entries:
     account: Account
-    address-book: Rubrica
     address: Indirizzo
     airgap: Airgap
     atomic-units: Unità atomiche
-    base32-address: Indirizzo Base32
-    base64-address: Indirizzo Base64
     blockchain: Blockchain
     block: Blocco
     bootstrap-node: Nodo di bootstrap
@@ -1039,32 +864,15 @@ moneropedia:
     consensus: Consensus
     cryptocurrency: Cryptovaluta
     daemon: Daemon
-    data-directory: Directory Dati
     denominations: Denominazioni
-    destination: Destinazione
-    eepsite: Eepsite
     encryption: Cifratura
-    floodfill: Floodfill
     fluffyblocks: Fluffy Blocks
     fungibility: Fungibilità
-    garlic-encryption: Cifratura ad aglio
-    garlic-routing: Routing ad aglio
-    i2np: I2NP
-    i2pcontrol: I2PControl
-    i2p: I2P
-    in-net: In-net
-    java-i2p: Java I2P
-    jump-service: Jump Service
     kovri: Kovri
-    lease: Lease
-    lease-set: Lease-Set
     locally-unique-host: Host univoco localmente
-    message: Messaggio
     mining: Mining
     mnemonicseed: Seed Mnemonico
-    network-database: Database di rete
     node: Nodo
-    ntcp: NTCP
     openalias: OpenAlias
     paperwallet: Portafoglio cartaceo
     paymentid: ID Pagamento
@@ -1072,32 +880,23 @@ moneropedia:
     pruning: Pruning
     randomx: RandomX
     remote-node: Remote Node
-    reseed: Reseed
     ringCT: Ring CT
     ringsignatures: Firma ad anello
     ring-size: Dimensione dell'anello
-    router-info: Router-Info
     scalability: Scalabilità
     signature: Firma crittografica
     smartmining: Mining Intelligente
     spendkey: Chiave di spesa
-    ssu: SSU
     stealthaddress: Indirizzo stealth
-    subscription: Sottoscrizione
     tail-emission: Emissione di coda
     transaction: Transazioni
-    transports: Trasporti
-    tunnel: Tunnel
     unlocktime: Tempo di sblocco transazione
     viewkey: Chiave di visualizzazione
     wallet: Portafoglio
 blog:
-  title_1: Tutti
-  title_2: Blog
-  title_3: Posts
-  tagged: Taggato come
   author: Postato da
   date: Postato su
-  forum: Clicca qui per unirti alla discussione per questa voce sul Forum Monero
 tags:
   notags: Non ci sono post con questo tag.
+footer:
+  source: Codice Sorgente

@@ -1,14 +1,4 @@
 home:
-  monero_is_fungible_para2: 代替可能
-  monero_is_fungible_para1: モネロは
-  monero_is_fungible: モネロは代替可能
-  monero_is_untraceable_para: 送付先アドレスと送付元アドレスは送付金額と同様に初期設定で難読化され保護されています。モネロブロックチェーン上のトランザクションは現実世界の個人情報や特定のユーザに紐付けられることはありません。
-  monero_is_untraceable: モネロはトレースされない
-  monero_is_private_para: モネロはリング署名を利用しています。リング署名による機密トランザクション、すべてのトランザクションの送付先や送付元も難読化されて保護されています。モネロはプライバシーの懸念なしで、非中央集権仮想通貨のすべての恩恵を提供します。
-  monero_is_private: モネロはプライベート
-  monero_is_secure_para: モネロは非中央集権型の仮想通貨です。安全でユーザの元で運営されている得じたる通貨です。トランザクションは分散化されて合意形成され、改ざんのできない形でブロックチェーンに記録されます。サードパーティはモネロが安全かどうかを信頼する必要もありません。
-  monero_is_secure: モネロは安全
-  why_monero_is_different: なぜモネロは違うのか
   get_started: はじめる
   monero_is_cash: モネロは世界につながっているお金です。速くて、プライベート、そして安全。モネロなら、あなたの銀行になる。誰も残高や取引利益を見ることができません。
   heading2: 合理的でプライベートな仮想通貨
@@ -27,23 +17,18 @@ titles:
   researchlab: モネロリサーチラボ
   roadmap: ロードマップ
   about: モネロについて
-  events: イベント
   hangouts: ハングアウト
-  team: モネロチーム
   allposts: すべてのブログ記事
   downloads: ダウンロード
   faq: よくある質問
   mining: モネロをマイニングする
   contributing: モネロを改善する
-  using: モネロを使う
   whatismonero: モネロ（XMR）とは？
   index: ホーム
 global:
   lang_tag: '@lang_tag_ja'
-  upgrade: モネロを使い続けるためには、あなたのソフトウェアが11月30日のアップデートに対応しているか確認してください。
   outdatedMin: このページは翻訳によって更新されています。あなたはこのバージョンを使えますが、完全な状態ではないかもしれません。
   outdatedVersion: 英語版
-  outdatedMax: このページの有効期限は過ぎています。それを使うことを推奨しません。詳しくはこちらを
   untranslated: このページはまだ翻訳されていません。もし翻訳をご希望の方はこちらを
   privacy: プライバシー
   terms: 規約
@@ -57,3 +42,4 @@ global:
   getting_started: はじめる
   monero_project: モネロプロジェクト
   monero: モネロ
+  copyright: 著作権
