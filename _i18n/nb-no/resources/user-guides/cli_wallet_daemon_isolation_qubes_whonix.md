@@ -96,7 +96,7 @@ Legg til følgende linje nederst:
 socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:"qrexec-client-vm monerod-ws user.monerod"
 ```
 
-Gjør filen eksekverbar.
+Gjør filen kjørbar.
 
 ```
 user@host:~$ sudo chmod +x /rw/config/rc.local
