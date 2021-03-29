@@ -54,6 +54,7 @@ Every section from here on out will talk about how to make a specific type of we
 A few random points of note:
 
 - After [a discussion](https://repo.getmonero.org/monero-project/monero-site/issues/982), the community decided to include only open source wallets in the 'Downloads' section of the website. Requests to add closed source wallets to that page will be rejected.
+- Listing merchants on the 'Merchants' page is at our discretion and acceptance shouldn't be assumed.
 - All external links must have `https://` in front of them or they will not redirect properly.
 - If you want to add a new page to the navigation, you should go to ALL LANGUAGES in the `_data/lang` folder and add the page.
 - It is strongly strongly STRONGLY encouraged that if you make a change, you - at the minimum - test it on your local machine before submitting a PR. Sometimes unexpected things may happen due to a change. If you change a page, check the whole page on multiple screen sizes and browsers to make sure there wasn't any collateral damage.
