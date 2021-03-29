@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-29 14:35+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:4
+#
+msgid "## Operating Systems: Windows, Linux, Mac"
+msgstr "## Systemy operacyjne: Windows, Linux, Mac"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:6
+#
+msgid ""
+"- Retrieve your 25 word @mnemonic-seed that you saved when creating your old "
+"Monero @wallet"
+msgstr ""
+"- Przygotuj swój 25-słowny kod mnemoniczny, który zachowałeś przy zakładaniu "
+"swojego starego portfela Monero"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:8
+#
+msgid "### Account Software: monero-wallet-cli"
+msgstr "### Oprogramowanie konta: monero-wallet-cli"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:10
+#
+msgid ""
+"- Open a command prompt and navigate to the drive and directory that "
+"contains monero-wallet-cli"
+msgstr ""
+"- Otwórz wiersz polecenia i przejdź do dysku i folderu zawierającego "
+"monero-wallet-cli"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:12
+#
+msgid ""
+"- At the command prompt type: `monero-wallet-cli "
+"--restore-deterministic-wallet`"
+msgstr ""
+"- W wierszu poleceń wpisz: `monero-wallet-cli "
+"--restore-deterministic-wallet`"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:14
+#
+msgid ""
+"- Once you press enter you will be prompted for a wallet file name.  Give "
+"your wallet a new name, any name will do"
+msgstr ""
+"- Po wciśnięciu Enter zostaniesz poproszony o podanie nowej nazwy pliku "
+"portfela. Nazwij go jakkolwiek"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:16
+#
+msgid ""
+"- Press enter again and you will be prompted for a password.  Give your "
+"wallet a new and long password"
+msgstr ""
+"- Naciśnij Enter ponownie i zostaniesz poproszony o hasło. Nadaj swojemu "
+"portfelowi nowe, długie hasło"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:18
+#
+msgid "- Press enter again you will be prompted to repeat the password"
+msgstr "- Naciśnij Enter ponownie i zostaniesz poproszony o powtórzenie hasła"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:20
+#
+msgid ""
+"- Press enter again and you will be prompted for the 25 word electrum style "
+"mnemonic seed that you retrieved earlier"
+msgstr ""
+"- Naciśnij Enter ponownie i zostaniesz poproszony o 25-słowny kod "
+"mnemoniczny, który przygotowałeś wcześniej"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:22
+#
+msgid ""
+"- You will then be prompted with \"Restore from specific blockchain height "
+"(optional, default 0):\" Default will start the restore process from the "
+"beginning of the Monero blockchain. If you don't know the specific "
+"blockchain height, just hit enter. (Specifying a specific blockchain height "
+"will start the restore process from that specific height. This will save a "
+"bit of time in scanning, if you know what starting blockchain height your "
+"initial funds were transacted for this specific account.)"
+msgstr ""
+"- Następnie pojawi się wiadomość \"Przywróć z określonej wysokości łańcucha "
+"bloków (opcjonalne, domyślnie 0)\". Domyślnie proces przywracania zacznie "
+"się od początku łańcucha bloków monero. Jeśli nie znasz dokładnej wysokości "
+"łańcucha, naciśnij Enter. Uściślenie wysokości łańcucha rozpocznie proces "
+"przywracania od tej konkretnej wysokości. Oszczędzi to trochę czasu przy "
+"skanowaniu, jeśli wiesz, na jakiej wysokości łańcucha twoje pierwsze "
+"fundusze zostały przesłane dla tego konta."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:24
+#
+msgid ""
+"After you have entered the 25 word mnemonic seed and have chosen your "
+"specific blockchain height, monero-wallet-cli will generate the same public "
+"address and view key as your old wallet and begin the refresh process "
+"automatically. (Please be patient as the refresh process may take a while.)"
+msgstr ""
+"Po wpisaniu 25-słownego kodu mnemonicznego i wybraniu wysokości łańcucha "
+"bloków, monero-wallet-cli wygeneruje taki sam adres publiczny i klucz "
+"widoczności jak w twoim starym portfelu i automatycznie rozpocznie proces "
+"aktualizacji. Bądź cierpliwy, aktualizacja może zająć chwilę."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:26
+#
+msgid "### Account Software: monero-wallet-gui"
+msgstr "### Oprogramowanie konta: monero-wallet-gui"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:28
+#
+msgid ""
+"Lauch `monero-wallet-gui`. If this is the first time you launched it go to "
+"the next step, otherwise click `Cancel`:"
+msgstr ""
+"Uruchom Graficzny Interfejs Użytkownika Monero. Jeśli uruchamiasz go po raz "
+"pierwszy, przejdź do następnego kroku, jeśli nie - kliknij `Anuluj`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:30
+#
+msgid ""
+"![cancel "
+"opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
+msgstr ""
+"![cancel "
+"opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:32
+#
+msgid "Select your appropriate language `English(US)`:"
+msgstr "Wybierz odpowiedni język `Polski`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:34
+#
+msgid ""
+"![choose "
+"language](/img/resources/user-guides/en/restore_account/choose-language.png)"
+msgstr ""
+"![choose "
+"language](/img/resources/user-guides/en/restore_account/choose-language.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:36
+#
+msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgstr "Kliknij w `Odzyskaj portfel z kluczy lub mnemonicznego seeda`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:38
+#
+msgid ""
+"![choose "
+"restore](/img/resources/user-guides/en/restore_account/choose-restore.png)"
+msgstr ""
+"![choose "
+"restore](/img/resources/user-guides/en/restore_account/choose-restore.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:40
+#
+msgid ""
+"Keep `Restore from seed` selected, give your wallet a name & storage "
+"location, and complete the `Enter your 25 (or 24) word mnemonic "
+"seed`. Optionaly, specify a `Restore height (optional)` to avoid scanning of "
+"oldest blocks. Then click the `Right` arrow:"
+msgstr ""
+"Zaznacz opcję `Przywróć portfel z seeda`, nazwij swój portfel i wybierz jego "
+"lokalizację i wpisz swój kod mnemoniczny w polu `Enter your 25 (or 24) word "
+"mnemonic seed`. Możesz opcjonalnie uściślić wysokość bloku w polu `Wysokość "
+"początkowa przywracania portfela (opcjonalne)`, aby uniknąć skanowania "
+"starszych bloków. Następniej kliknij w strzałkę w `prawo`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:42
+#
+msgid ""
+"![restore "
+"wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgstr ""
+"![restore "
+"wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:44
+#
+msgid ""
+"On the next page, give your wallet a strong password and confirm it before "
+"clicking the `Right` arrow:"
+msgstr ""
+"Na następnej stronie ustaw silne hasło i potwierdź je, zanim ponownie "
+"klikniesz w strzałkę w `prawo`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:46
+#
+msgid ""
+"![wallet "
+"password](/img/resources/user-guides/en/restore_account/wallet-password.png)"
+msgstr ""
+"![wallet "
+"password](/img/resources/user-guides/en/restore_account/wallet-password.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:48
+#
+msgid "Specify your @daemon settings and click the `Right` arrow:"
+msgstr "Sprecyzuj ustawienia swojego demona i kliknij w strzałkę w `prawo`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:50
+#
+msgid ""
+"![daemon "
+"settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
+msgstr ""
+"![daemon "
+"settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:52
+#
+msgid "Click on `USE MONERO` to enjoy your restored wallet:"
+msgstr "Kliknij w `UŻYJ MONERO`, aby skorzystać ze swojego przywróconego portfela:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_account.md:53
+#
+msgid "![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)"
+msgstr "![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)"
