@@ -1,0 +1,315 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-30 14:50+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:4
+#
+msgid "## Step 1: Acquire Monero"
+msgstr "## Schritt 1: Monero beschaffen"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:6
+#
+msgid ""
+"There are multiple ways to acquire Monero: You can mine it, you can exchange "
+"services or goods for it, or you can convert other cryptocurrencies and fiat "
+"money to XMR. If you choose the latter, the most convenient way to do it is "
+"to use an exchange."
+msgstr ""
+"Es gibt verschiedene Möglichkeiten, mit welchen du du Monero bekommen "
+"kannst. Du kannst Coins minen, sie gegen Güter oder Dienstleistungen "
+"eintauschen oder andere Kryptowährungen und Fiatgeld gegen XMR "
+"tauschen. Wenn du dich für Letzteres entscheidest, ist es wohl am "
+"praktischsten, dies an einer Börse zu machen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:8
+#
+msgid ""
+"There are multiple exchanges supporting Monero. Some are centralized, which "
+"usually have great liquidity and fast service, but requires you to provide "
+"personal information before starting the trade (KYC). Some are decentralized "
+"and don't require any identification, but usually have less volume and can "
+"be harder to use. There are also services that allow people to meet and "
+"perform a trade without third parties involved."
+msgstr ""
+"Viele Börsen unterstützen Monero. Manche sind zentralisiert und haben in der "
+"Regel eine gute Liquidität und schnellen Service, benötigen von dir aber "
+"Angaben persönlicher Informationen, bevor der Handel stattfinden kann (KYC, "
+"zu deutsch: \"Kenne deinen Kunden\"). Einige Börsen sind dezentralisiert und "
+"benötigen keinerlei Identifikation, haben allerdings im Regelfall ein "
+"kleineres Volumen und können komplizierter zu nutzen sein. Es gibt außerdem "
+"Services, die es Personen erlauben, sich ohne Einbindung Dritter zur "
+"Abwicklung eines Handels zu treffen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:10
+#
+msgid ""
+"An incomplete list of Exchanges that support Monero is on our [Merchants "
+"page]({{ site.baseurl }}/community/merchants/#exchanges)."
+msgstr ""
+"Eine unvollständige Liste von Börsen, die Monero unterstützen, findet sich "
+"auf unserer [Händlerseite]({{ site.baseurl "
+"}}/community/merchants/#exchanges)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:12
+#
+msgid ""
+"## Step 2: Download and create a Paper Wallet on a secure and air-gapped "
+"computer."
+msgstr ""
+"## Schritt 2: Ein Paper-Wallet auf einem sicheren, mittels Airgap isolierten "
+"Computer herunterladen und erstellen"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:14
+#
+msgid ""
+"Download the @paper-wallet generator at: "
+"[moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick "
+"(Direct link: "
+"[https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip))."
+msgstr ""
+"Lade einen Generator für @Paper-Wallets auf "
+"[moneroaddress.org](https://moneroaddress.org) herunter und kopiere ihn auf "
+"einen USB-Stick (direkter Link: "
+"[https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip))."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:16
+#
+msgid ""
+"Unzip and open the paper wallet generator (monero-wallet-generator.html) "
+"into a web browser on an air-gapped (@airgap) computer that hasn't been used "
+"before, or has had a clean installation of the operative system."
+msgstr ""
+"Entpacke den Paper-Wallet-Generator (monero-wallet-generator.html) und öffne "
+"ihn in einem Webbrowser auf einem mittels @Airgap isolierten Computer, der "
+"zuvor nicht verwendet worden ist oder auf welchem das Betriebssystem sauber "
+"neuinstalliert wurde."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:18
+#
+msgid "Your paper wallet will have four important items:"
+msgstr "Dein Paper-Wallet hat vier wichtige Dinge:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:20
+#
+msgid ""
+"- Monero Public @Address: The public address is used to receive funds to the "
+"@wallet. You give this to anyone who will be sending funds to your wallet."
+msgstr ""
+"- Eine öffentliche Monero-@Adresse: Die öffentliche Adresse wird zum "
+"Empfangen von Geldern im @Wallet genutzt. Du gibst diese Adresse jedem, der "
+"Gelder auf dein Wallet senden wird."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:22
+#
+msgid ""
+"- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire "
+"wallet that is easily recognizable to humans.  This is all you need to "
+"restore your wallet at a later date."
+msgstr ""
+"- Moneros @mnemonischer-Seed: Der mnemonische Seed ist eine klar erkennbare "
+"Methode, mit welcher du dein Wallet sicherst. Mit diesem Seed hast du alles, "
+"was du brauchst, um dein Wallet zu einem späteren Zeitpunkt "
+"wiederherzustellen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:24
+#
+msgid ""
+"- Monero @Spend-Key: The private spend key is used to send funds from the "
+"wallet."
+msgstr ""
+"- Moneros @Spend-Key: Der private Spend-Key wird zum Senden von Geldern aus "
+"dem Wallet genutzt."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:26
+#
+msgid ""
+"- Monero @View-Key: The private view key is to view transactions entering "
+"the wallet. Commonly this is used to setup a view-only wallet which can see "
+"incoming transactions live on the blockchain as they are sent to a cold "
+"storage wallet."
+msgstr ""
+"- Moneros @View-Key: Zum Anzeigen von auf dem Wallet eingehenden "
+"Transaktionen dient der private View-Key, welcher häufig zur Einrichtung "
+"eines View-Only-Wallets genutzt wird. Dieses kann eingehende Transaktionen "
+"live auf der Blockchain, während diese an ein Spar-Wallet (\"Cold-Wallet\") "
+"gesendet werden, einsehen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:28
+#
+msgid ""
+"At this point you have many options. You can print the wallet on paper, save "
+"it as a PDF or text on a USB stick, burn it to CD/DVD, etc. Most likely you "
+"will want at least two or three copies, stored securely in different "
+"locations. If storing digitally, encrypt everything with a strong password.  "
+"If storing on paper, do not show the wallet to anyone else who can memorize "
+"your 25 word key, or take a picture of the wallet without your permission.  "
+"Sending someone a picture of the wallet is the same as giving away all of "
+"your funds."
+msgstr ""
+"An dieser Stelle hast du einige Möglichkeiten: Du kannst das Wallet auf "
+"Papier ausdrucken, es als PDF oder im Textdateiformat auf einem USB-Stick "
+"sichern, es auf eine CD oder DVD brennen etc. Sehr wahrscheinlich wirst du "
+"mindestens zwei oder drei Ausfertigungen an verschiedenen Orten aufbewahren "
+"wollen. Solltest du es in digitaler Form sichern, verschlüssele alles mit "
+"einem starken Passwort. Wenn du dein Wallet in Papierform aufbewahrst, zeige "
+"es niemandem, der sich die 25 Wörter - also deinen Seed - merken oder ohne "
+"dein Einverständnis ein Foto davon machen könnte. Jemandem ein Foto deines "
+"Wallets zu schicken ist das Gleiche, als würdest du dein gesamtes Guthaben "
+"verschenken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:30
+#
+msgid ""
+"Whichever method you chose, be sure there's no copy of the Monero wallet "
+"left over on the device you used. You may need to securely delete the Monero "
+"wallet if you saved it to a disk, or make sure your printer does not save a "
+"copy in memory."
+msgstr ""
+"Egal, welche Methode du wählst: Stelle sicher, dass keine Kopie deines "
+"Monero-Wallets auf dem von dir genutzten Gerät verbleibt. Eventuell musst du "
+"das Wallet sicher löschen, solltest du es auf einer Festplatte oder einem "
+"anderen Speichermedium gespeichert haben; auch solltest du sichergehen, dass "
+"dein Drucker keine Kopie in seinem Speicher sichert."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:32
+#, no-wrap
+msgid ""
+"*If you lose access to your Monero paper wallet the Monero will not be "
+"available to you or anyone else, ever. You wont be able to recover them!*\n"
+msgstr ""
+"*Wenn du den Zugriff auf dein Monero-Paper-Wallet verlierst, werden die in "
+"ihm liegenden Monero niemals wieder dir oder irgendjemandem sonst zur "
+"Verfügung stehen.*\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:34
+#
+msgid "#### Side Note"
+msgstr "#### Randbemerkung"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:37
+#
+msgid ""
+"Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/ Download "
+"the html page and place it on your airgapped computer. Check the part "
+"\"Encrypt/Decrypt Mnemonic Seed\" and make sure you use \"CN Add\" with a "
+"decent password. Thanks manicminer5."
+msgstr ""
+"Möglichkeit zur Verschlüsselung eines mnemonischen Seeds von Monero: "
+"https://xmr.llcoins.net/ Lade die HTML-Seite und lege es auf deinen mittels "
+"Airgap isolierten Rechner. Überprüfe den Teil \"Encrypt/Decrypt Mnemonic "
+"Seed\" und stelle sicher, dass du \"CN Add\" mit einem geeigneten Passwort "
+"nutzt. Dank an manicminer5."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:39
+#
+msgid "## Step 3: Send your Moneroj to the paper wallet"
+msgstr "## Schritt 3: Sende deine Monero an dein Paper-Wallet"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:41
+#
+msgid ""
+"Now that you have everything you need, you are ready to send your XMR to "
+"your paper wallet. Simply send the coins to the wallet address you noted "
+"earlier. Make sure the address is correct, even if you copy-pasted it! "
+"Remember that if you send the coins to a wrong address, there is no way to "
+"have them back!"
+msgstr ""
+"Jetzt, da du all das hast, was du brauchst, bist du bereit, deine XMR an "
+"dein Paper-Wallet zu senden. Schicke die Coins einfach an die von dir zuvor "
+"notierte Wallet-Adresse. Stelle sicher, dass die Adresse richtig ist - "
+"selbst, wenn du sie kopiert und eingefügt hast! Vergiss nicht, dass es "
+"keinen Weg zurück gibt, wenn du die Coins versehentlich an eine falsche "
+"Adresse schickst!"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:43
+#
+msgid "#### Notes and How to Verify Funds"
+msgstr "#### Anmerkungen und die Verifizierung von Guthaben"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:45
+#
+msgid ""
+"Because the Monero blockchain is private and untraceable, you won't be able "
+"to lookup your Monero Public Address and confirm that the funds have arrived "
+"like you might with Bitcoin. This is good for privacy, but bad for "
+"convenience."
+msgstr ""
+"Weil Moneros Blockchain privat und nicht nachverfolgbar ist, wirst du nicht "
+"in der Lage sein, deine öffentliche Monero-Adresse darin ausfindig zu machen "
+"und zu bestätigen, dass etwaige Gelder eingegangen sind, so wie es dir bei "
+"Bitcoin möglich ist. Das ist zwar gut für deine Privatsphäre, aber schlecht "
+"für den Bedienkomfort."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:47
+#
+msgid ""
+"To securely verify the funds have arrived at your wallet, you will need to "
+"setup a View Only wallet. This is where that view-key comes in. To create a "
+"view-only wallet see the entry: [View Only "
+"Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)"
+msgstr ""
+"Damit du deine empfangenen Gelder sicher verifizieren kannst, musst du ein "
+"View-Only-Wallet einrichten. Hier kommt der View-Key ins Spiel. Im Eintrag "
+"über "
+"[View-Only-Wallets]({{site.baseurl}}/resources/user-guides/view_only.html) "
+"finden sich mehr Informationen zu ihrer Erstellung."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:48
+#
+msgid ""
+"To verify the funds are *still in* your wallet and have not been spent you "
+"need to create a Cold Wallet with your mnemonic key (all your funds) on an "
+"airgapped computer with an up-to-date copy of the Monero Blockchain. When "
+"finished you will have to securely erase the wallet or connect it to the "
+"internet and it becomes a Hot Wallet."
+msgstr ""
+"Um diejenigen Gelder zu überprüfen, welche sich *noch immer in* deinem "
+"Wallet befinden und nicht ausgegeben wurden, musst du mit deinem "
+"mnemonischen Seed (mit deinem gesamten Guthaben) auf deinem Airgap-Computer "
+"(mit aktueller Kopie der Monero-Blockchain) ein Spar-Wallet erstellen. Wenn "
+"du fertig bist, musst du dieses Wallet sicher entfernen. Du kannst es "
+"stattdessen aber auch mit dem Internet verbinden und so zu einem "
+"Zahlungs-Wallet (\"Hot-Wallet\") werden lassen."
