@@ -28,7 +28,7 @@ feed:
   posts_limit: 20
 
 # jekyll-multiple-languages-plugin settings:
-languages: ["en", "es", "it", "pl", "fr", "ar", "ru", "de", "nl", "pt-br", "tr", "zh-cn", "zh-tw"]
+languages: ["en", "es", "it", "pl", "fr", "ar", "ru", "de", "nl", "pt-br", "tr", "zh-cn", "zh-tw", "nb-no"]
 
 
 exclude_from_localizations: ["img", "css", "fonts", "media", "404.html", "feed.xml", "meta", "_posts", "legal", "blog"]
