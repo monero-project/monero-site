@@ -167,6 +167,7 @@ Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet binærfile
 ```
 certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256
 ```
+
 Utdataen vil se slik ut, men den vil være forskjellige for hver binærfil. Din `SHA256`-hash bør matche den som er oppført i `hashes.txt`-filen for din binærfil.
 
 ```
