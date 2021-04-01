@@ -174,7 +174,7 @@ Denne seksjonen tar for seg nedlasting av den signerte filen med et kjent antall
 
 ![hashes right click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
-La standardplasseringen være som den er, og trykk på `Lagre`.
+La standardplasseringen være som den er og trykk på `Lagre`.
 
 ![hashes save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 

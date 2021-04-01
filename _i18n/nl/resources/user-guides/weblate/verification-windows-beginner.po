@@ -1,0 +1,1036 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-04-01 14:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"yes\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:4
+#
+msgid ""
+"Verification of the Monero binary files should be done prior to extracting, "
+"installing, or using the Monero software. This is the only way to ensure "
+"that you are using the official Monero binary. If you receive a fake binary "
+"(eg. phishing, MITM, etc.), following this guide will protect you from being "
+"tricked into using it."
+msgstr ""
+"Voordat je de Monero-software uitpakt, installeert en gebruikt, moet je de "
+"binaire bestanden van Monero verifiëren. Dit is de enige manier om er zeker "
+"van te zijn dat je de officiële Monero-binaries gebruikt. Als je een onecht "
+"binair bestand ontvangt (bijvoorbeeld via phishing of een *man-in-the-middle "
+"attack*), voorkomt deze methode dat je er gebruik van maakt."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:6
+#
+msgid ""
+"To protect the integrity of the binaries the Monero team provides a "
+"cryptographically signed list of all the "
+"[SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded "
+"binary has been tampered with it will be produce a [different "
+"hash](https://en.wikipedia.org/wiki/File_verification) than the one in the "
+"file."
+msgstr ""
+"Het Monero-team stelt een cryptografisch ondertekende lijst beschikbaar met "
+"alle [SHA256](https://en.wikipedia.org/wiki/SHA-2)-hashes, om de integriteit "
+"van de binaries te garanderen. Als er met het gedownloade binaire bestand is "
+"geknoeid, levert het een [andere "
+"hash](https://nl.wikipedia.org/wiki/Hashfunctie) op dan in de lijst."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:8
+#
+msgid ""
+"This is a beginners guide for the Windows operating system and will make use "
+"of GUIs almost exclusively. It will walk you through the process of "
+"installing the required software, importing the signing key, downloading the "
+"necessary files, and finally verifying that your binary is authentic."
+msgstr ""
+"Dit is een handleiding voor beginners die Windows als besturingssysteem "
+"gebruiken. Bijna alle gebruikte software heeft een grafische interface. We "
+"leggen stap voor stap uit hoe je de vereiste software installeert, de "
+"ondertekeningssleutel importeert, de benodigde bestanden downloadt en "
+"uiteindelijk verifieert dat je binaire bestand authentiek is."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:10
+#
+msgid "## Table of Contents"
+msgstr "## Inhoud"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:28
+#, no-wrap
+msgid ""
+"### [1. Gpg4win Installer](#1-using-gpg4win-installer)\n"
+"  - [1.1. Getting Gpg4win Installer](#11-getting-gpg4win-installer)\n"
+"    + [1.1.1. Download Gpg4win](#111-download-gpg4win)\n"
+"    + [1.1.2. Launch Gpg4win](#112-launch-gpg4win)\n"
+"  - [1.2. Use Gpg4win Installer](#12-use-gpg4win-installer)\n"
+"### [2. Import Signing Key](#2-monero-signing-key)\n"
+"  - [2.1. Download Signing Key](#21-download-signing-key)\n"
+"  - [2.2. Initialize Kleopatra](#22-initialize-kleopatra)\n"
+"    + [2.2.1. Import Signing Key](#221-import-signing-key)\n"
+"    + [2.2.2. Create Key Pair](#222-create-key-pair)\n"
+"  - [2.3. Verify Signing Key](#23-verify-signing-key)\n"
+"### [3. Verify Hash File](#3-hash-file-verification)\n"
+"  - [3.1. Download Hash File](#31-download-hash-file)\n"
+"  - [3.2. Verify Hash File](#32-verify-hash-file)\n"
+"### [4. Verify Binary File](#4-binary-file-verification)\n"
+"  - [4.1. Download Binary](#41-download-binary)\n"
+"  - [4.2. Verify Binary](#42-verify-binary)\n"
+msgstr ""
+"### [1. Gpg4win-installatieprogramma](#1-using-gpg4win-installer)\n"
+"  - [1.1. Gpg4win-installatieprogramma "
+"ophalen](#11-getting-gpg4win-installer)\n"
+"    + [1.1.1. Gpg4win downloaden](#111-download-gpg4win)\n"
+"    + [1.1.2. Gpg4win starten](#112-launch-gpg4win)\n"
+"  - [1.2. Gpg4win-installatieprogramma "
+"gebruiken](#12-use-gpg4win-installer)\n"
+"### [2. Ondertekeningssleutel importeren](#2-monero-signing-key)\n"
+"  - [2.1. Ondertekeningssleutel downloaden](#21-download-signing-key)\n"
+"  - [2.2. Kleopatra initialiseren](#22-initialize-kleopatra)\n"
+"    + [2.2.1. Ondertekeningssleutel importeren](#221-import-signing-key)\n"
+"    + [2.2.2. Sleutelpaar aanmaken](#222-create-key-pair)\n"
+"  - [2.3. Ondertekeningssleutel verifiëren](#23-verify-signing-key)\n"
+"### [3. Hashbestand verifiëren](#3-hash-file-verification)\n"
+"  - [3.1. Hashbestand downloaden](#31-download-hash-file)\n"
+"  - [3.2. Hashbestand verifiëren](#32-verify-hash-file)\n"
+"### [4. Binair bestand verifiëren](#4-binary-file-verification)\n"
+"  - [4.1. Binary downloaden](#41-download-binary)\n"
+"  - [4.2. Binary verifiëren](#42-verify-binary)\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:30
+#
+msgid "## 1. Using Gpg4win Installer"
+msgstr "## 1. Gpg4win-installatieprogramma gebruiken"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:32
+#
+msgid ""
+"This section will cover installing the cryptography software. Windows does "
+"not come with the tools required to verify your binary. To install these "
+"tools you can use the Gpg4win installer."
+msgstr ""
+"In dit gedeelte leggen we uit hoe je de cryptografische software "
+"gebruikt. De hulpmiddelen die je nodig hebt om binaries te verifiëren worden "
+"niet meegeleverd met Windows. Met het Gpg4win-installatieprogramma kun je "
+"deze tools installeren."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:34
+#
+msgid "### 1.1. Getting Gpg4win Installer"
+msgstr "### 1.1. Gpg4win-installatieprogramma ophalen"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:36
+#
+msgid "#### 1.1.1. Download Gpg4win"
+msgstr "#### 1.1.1. Gpg4win downloaden"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:38
+#
+msgid ""
+"In a web browser, go to [gpg4win.org](https://gpg4win.org) and download the "
+"installer by clicking the green button."
+msgstr ""
+"Ga in een browser naar [gpg4win.org](https://gpg4win.org) en download het "
+"installatieprogramma door op de groene knop te klikken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:40
+#
+msgid ""
+"![gpg4win download "
+"button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)"
+msgstr ""
+"![downloadknop "
+"gpg4win](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:42
+#
+msgid ""
+"You will be taken to a donation page. If you do not wish to donate select "
+"`$0`, then you will be able to click `Download`."
+msgstr ""
+"Er wordt een donatiepagina geopend. Als je niets wilt doneren, selecteer je "
+"`$0`. Daarna kun je op `Download` klikken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:44
+#
+msgid ""
+"![gpg4win site "
+"donation](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)"
+msgstr ""
+"![gpg4win site "
+"donatie](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:46
+#
+msgid "Click `Save File`."
+msgstr "Klik op `Bestand opslaan`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:48
+#
+msgid ""
+"![gpg4win site save "
+"file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)"
+msgstr ""
+"![gpg4win site bestand "
+"opslaan](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:50
+#
+msgid "Choose a download location, click `Save`."
+msgstr "Kies een opslaglocatie en klik op `Opslaan`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:52
+#
+msgid ""
+"![gpg4win site download "
+"location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)"
+msgstr ""
+"![gpg4win site locatie "
+"download](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:54
+#
+msgid "#### 1.1.2. Launch Gpg4win"
+msgstr "#### 1.1.2. Gpg4win starten"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:56
+#
+msgid "When the download is finished, open the containing folder."
+msgstr "Open de map met het bestand wanneer het downloaden klaar is."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:58
+#
+msgid ""
+"![gpg4win site open "
+"folder](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)"
+msgstr ""
+"![gpg4win site map "
+"openen](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:60
+#
+msgid "Double click the downloaded gpg4win executable to launch."
+msgstr "Dubbelklik op het uitvoerbare bestand gpg4win.exe om het te starten."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:62
+#
+msgid ""
+"![gpg4win "
+"launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)"
+msgstr ""
+"![gpg4win "
+"starten](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:64
+#
+msgid "### 1.2. Use Gpg4win Installer"
+msgstr "### 1.2. Gpg4win-installatieprogramma gebruiken"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:66
+#
+msgid "You will be presented with a security verification screen, click `Run`."
+msgstr ""
+"Er wordt een scherm met een beveiligingswaarschuwing weergegeven. Klik hier "
+"op `Uitvoeren`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:68
+#
+msgid ""
+"![gpg4win installer "
+"security](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)"
+msgstr ""
+"![gpg4win installatie "
+"beveiliging](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:70
+#
+msgid "Select your language, click `OK`."
+msgstr "Selecteer je taal en klik op `OK`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:72
+#
+msgid ""
+"![gpg4win installer "
+"language](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)"
+msgstr ""
+"![gpg4win installatie "
+"taal](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:74
+#
+msgid "A welcome screen will appear, click `Next`."
+msgstr "Er wordt een welkomstscherm weergegeven. Klik op `Volgende`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:76
+#
+msgid ""
+"![gpg4win installer "
+"welcome](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)"
+msgstr ""
+"![gpg4win installatie "
+"welkom](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:78
+#
+msgid ""
+"Now you will see the component selection screen, you must at least leave "
+"`Kleopatra` checked for this guide. Make your selections, click `Next`."
+msgstr ""
+"Nu krijg je een scherm te zien voor het selecteren van onderdelen. Laat in "
+"ieder geval `Kleopatra` aangevinkt staan voor deze handleiding. Geef je "
+"keuze aan en klik op `Volgende`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:80
+#
+msgid ""
+"![gpg4win installer "
+"components](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-components.png)"
+msgstr ""
+"![gpg4win installatie "
+"onderdelen](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-components.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:82
+#
+msgid ""
+"It is best to leave the default installation location unless you know what "
+"you are doing. Make your selections, click `Install`."
+msgstr ""
+"Je kunt het beste de standaard-installatielocatie laten staan, tenzij je "
+"weet wat je doet. Geef je keuze aan en klik op `Installeren`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:84
+#
+msgid ""
+"![gpg4win installer "
+"location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install.png)"
+msgstr ""
+"![gpg4win installatie "
+"locatie](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:86
+#
+msgid "Installation has completed, click `Next`."
+msgstr "De installatie is voltooid. Klik op `Volgende`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:88
+#
+msgid ""
+"![gpg4win installer "
+"complete](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)"
+msgstr ""
+"![gpg4win installatie "
+"voltooid](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:90
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:148
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:166
+#
+msgid "Click `Finish`."
+msgstr "Klik op `Finish`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:92
+#
+msgid ""
+"![gpg4win installer "
+"finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)"
+msgstr ""
+"![gpg4win installatie "
+"voltooien](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:94
+#
+msgid "## 2. Monero Signing Key"
+msgstr "## 2. Monero-ondertekeningssleutel"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:96
+#
+msgid ""
+"This section will cover downloading the Monero signing key, verifying that "
+"the key is correct, and then importing the key to your keyring. The hash "
+"file that will be used to verify your binary is cryptographically signed "
+"with the Monero signing key. In order to check the validity of this file you "
+"must have the public version of the signing key."
+msgstr ""
+"In dit gedeelte leggen we uit hoe je de Monero-ondertekeningssleutel "
+"downloadt, verifieert dat de sleutel correct is en de sleutel importeert in "
+"je sleutelring. Het hashbestand wordt gebruikt om te verifiëren dat je "
+"binaire bestand cryptografisch is ondertekend met de "
+"Monero-ondertekeningssleutel. Om de geldigheid van dit hashbestand te "
+"controleren heb je de openbare versie van de ondertekeningssleutel nodig."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:98
+#
+msgid "### 2.1. Download Signing Key"
+msgstr "### 2.1. Ondertekeningssleutel downloaden"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:100
+#
+msgid ""
+"In a web browser, go to [binaryFate's GPG "
+"key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), "
+"which he uses for signing the Monero binaries. Right click on the page, "
+"choose `Save Page As`."
+msgstr ""
+"Ga in een browser naar de [de GPG-sleutel van "
+"Fluffypony](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc), "
+"waarmee hij de Monero-binaries ondertekent. Klik met de rechtermuisknop op "
+"de pagina en klik vervolgens op `Pagina opslaan als`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:102
+#
+msgid ""
+"![getkey right "
+"click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)"
+msgstr ""
+"![sleutel ophalen "
+"contextmenu](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:104
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:178
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:220
+#
+msgid "Leave the default location, click `Save`."
+msgstr "Laat de standaardlocatie staan en klik op `Opslaan`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:106
+#
+msgid ""
+"![getkey save "
+"file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)"
+msgstr ""
+"![sleutel ophalen bestand "
+"opslaan](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:108
+#
+msgid "### 2.2. Initialize Kleopatra"
+msgstr "### 2.2. Kleopatra initialiseren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:110
+#
+msgid ""
+"If this is your first time using Kleopatra you will have to create a key "
+"pair for yourself."
+msgstr ""
+"Als dit de eerste keer is dat je Kleopatra gebruikt, moet je een sleutelpaar "
+"voor jezelf maken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:112
+#
+msgid "Launch Kleopatra."
+msgstr "Start Kleopatra."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:114
+#
+msgid ""
+"![kleo "
+"launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)"
+msgstr ""
+"![kleo "
+"starten](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:116
+#
+msgid "#### 2.2.1. Import Signing Key"
+msgstr "#### 2.2.1. Ondertekeningssleutel importeren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:118
+#
+msgid "Click `Import`."
+msgstr "Klik op `Importeren`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:120
+#
+msgid ""
+"![kleo firstrun "
+"import](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)"
+msgstr ""
+"![kleo eerste keer "
+"importeren](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:122
+#
+msgid "Enter the directory `Downloads`, select `binaryfate`, and click `Open`."
+msgstr "Open de map `Downloads`, selecteer `fluffypony` en klik op `Openen`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:124
+#
+msgid ""
+"![kleo firstrun key "
+"location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)"
+msgstr ""
+"![kleo eerste keer locatie "
+"sleutel](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:126
+#
+msgid "Start the process of certifying the key by clicking `Yes`."
+msgstr "Start het certificeren van de sleutel door op `Ja` te klikken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:128
+#
+msgid ""
+"![kleo firstrun start "
+"process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)"
+msgstr ""
+"![kleo eerste keer proces "
+"starten](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:130
+#
+msgid "#### 2.2.2. Create Key Pair"
+msgstr "#### 2.2.2. Sleutelpaar aanmaken"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:132
+#
+msgid "Start the process of key creation by clicking `Yes`."
+msgstr "Start het aanmaken van de sleutel door op `Ja` te klikken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:134
+#
+msgid ""
+"![kleo firstrun start key "
+"create](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)"
+msgstr ""
+"![kleo eerste keer sleutel aanmaken "
+"starten](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:136
+#
+msgid "Fill in some details for `Name` and `Email`, click `Next`."
+msgstr "Vul iets in voor `Naam` en `E-mail` en klik op `Volgende`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:138
+#
+msgid ""
+"![kleo firstrun key "
+"details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)"
+msgstr ""
+"![kleo eerste keer gegevens "
+"sleutel](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:140
+#
+msgid "Verify details, click `Create`."
+msgstr "Verifieer de details en klik op `Aanmaken`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:142
+#
+msgid ""
+"![kleo firstrun verify key "
+"details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)"
+msgstr ""
+"![kleo eerste keer gegevens sleutel "
+"verifiëren](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:144
+#
+msgid "Set a password, click `OK`."
+msgstr "Stel een wachtwoord in en klik op `OK`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:146
+#
+msgid ""
+"![kleo firstrun set key "
+"pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)"
+msgstr ""
+"![kleo eerste keer wachtwoord sleutel "
+"instellen](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:150
+#
+msgid ""
+"![kleo firstrun finish create "
+"key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)"
+msgstr ""
+"![kleo eerste keer sleutel aanmaken "
+"voltooien](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:152
+#
+msgid "### 2.3. Verify Signing Key"
+msgstr "### 2.3. Ondertekeningssleutel verifiëren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:154
+#
+msgid ""
+"Visually check that the fingerprint of the key belonging to binaryFate is "
+"`81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`."
+msgstr ""
+"Controleer visueel dat de sleutel van Riccardo Spagni de vingerafdruk "
+"`BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9` heeft."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:156
+#
+msgid ""
+"![kleo certify "
+"fingerprint](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)"
+msgstr ""
+"![kleo vingerafdruk "
+"certificeren](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:158
+#
+msgid "If the fingerprint **DOES** match, click `Certify`."
+msgstr "Klik op `Certify` als de vingerafdruk **WEL** overeenkomt."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:160
+#
+msgid ""
+"If the fingerprint of this key **DOES NOT** match, **DO NOT "
+"CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` "
+"directory and go back to [section 2.1](#21-download-signing-key)."
+msgstr ""
+"**GA NIET VERDER** als de vingerafdruk van deze sleutel **NIET** "
+"overeenkomt. Verwijder dan het bestand `fluffypony` uit de map `Downloads` "
+"en ga terug naar [paragraaf 2.1](#21-download-signing-key).\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:162
+#
+msgid "Enter your password, click `OK`."
+msgstr "Voer je wachtwoord in en klik op `OK`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:164
+#
+msgid ""
+"![kleo certify "
+"pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)"
+msgstr ""
+"![kleo certificeren "
+"wachtwoord](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:168
+#
+msgid "## 3. Hash File Verification"
+msgstr "## 3. Hashbestand verifiëren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:170
+#
+msgid ""
+"This section will cover downloading the signed file of known good hashes and "
+"verifying its authenticity."
+msgstr ""
+"In dit gedeelte leggen we uit hoe je het ondertekende bestand met bekende "
+"goede hashes downloadt en de authenticiteit verifieert."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:172
+#
+msgid "### 3.1. Download Hash File"
+msgstr "### 3.1. Hashbestand downloaden"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:174
+#
+msgid ""
+"In a web browser, go to the [getmonero.org hash page]({{ site.baseurl_root "
+"}}/downloads/hashes.txt). Right click the page, select `Save Page As`."
+msgstr ""
+"Ga in een browser naar de [hashpagina op getmonero.org]({{ site.baseurl "
+"}}/downloads/hashes.txt). Klik met de rechtermuisknop op de pagina en klik "
+"vervolgens op `Pagina opslaan als`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:176
+#
+msgid ""
+"![hashes right "
+"click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)"
+msgstr ""
+"![hashes "
+"contextmenu](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:180
+#
+msgid ""
+"![hashes save "
+"file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)"
+msgstr ""
+"![hashes bestand "
+"opslaan](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:182
+#
+msgid "### 3.2. Verify Hash File"
+msgstr "### 3.2. Hashbestand verifiëren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:184
+#
+msgid "In Kleopatra, click the `Decrypt/Verify` button."
+msgstr "Klik in Kleopatra op de knop `Ontcijferen/verifiëren`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:186
+#
+msgid ""
+"![hashes kleo verify "
+"button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)"
+msgstr ""
+"![hashes kleo knop "
+"verifiëren](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:188
+#
+msgid "Navigate to `Downloads` directory. Select `hashes` file, click `Open`."
+msgstr ""
+"Ga naar de map `Downloads`. Selecteer het bestand `hashes` en klik op "
+"`Openen`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:190
+#
+msgid ""
+"![hashes kleo open "
+"file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)"
+msgstr ""
+"![hashes kleo bestand "
+"openen](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:192
+#
+msgid "Kleopatra will inform you if the files signature is valid."
+msgstr "Kleopatra geeft nu aan of de ondertekening van de bestanden geldig is."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:194
+#
+msgid "If the signature is **VALID** you will see this:"
+msgstr "Als de ondertekening **GELDIG** is, zie je het volgende:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:196
+#
+msgid ""
+"![hashes kleo "
+"goodsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)"
+msgstr ""
+"![hashes kleo goede "
+"handtekening](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:198
+#
+msgid "If the signature is **INVALID** you will see this:"
+msgstr "Als de ondertekening **ONGELDIG** is, zie je het volgende:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:200
+#
+msgid ""
+"![hashes kleo "
+"badsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)"
+msgstr ""
+"![hashes kleo foute "
+"handtekening](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:202
+#
+msgid "If you receive a **VALID** signature, click `Discard` and move on."
+msgstr ""
+"Als je een **GELDIGE** ondertekening hebt ontvangen, klik je op `Discard` en "
+"ga je verder."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:204
+#
+msgid ""
+"If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete "
+"the file `hashes` from the `Downloads` directory and go back to [section "
+"3.1](#31-download-hash-file)."
+msgstr ""
+"**GA NIET VERDER** als je een **ONGELDIGE** ondertekening hebt "
+"ontvangen. Verwijder dan het bestand `hashes` uit de map `Downloads` en ga "
+"terug naar [paragraaf 3.1](#31-download-hash-file).\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:206
+#
+msgid "## 4. Binary File Verification"
+msgstr "## 4. Binair bestand verifiëren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:208
+#
+msgid ""
+"This section will cover downloading the Monero binary and verifying its "
+"authenticity."
+msgstr ""
+"In dit gedeelte leggen we uit hoe je de Monero-binary downloadt en de "
+"authenticiteit verifieert."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:210
+#
+msgid "### 4.1. Download Binary"
+msgstr "### 4.1. Binary downloaden"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:212
+#
+msgid ""
+"In a web browser, go to the [getmonero.org downloads page]({{ "
+"site.baseurl_root }}/downloads/#windows). Select the correct binary for your "
+"system."
+msgstr ""
+"Ga in een browser naar de [downloadpagina op getmonero.org]({{ site.baseurl "
+"}}/downloads/#windows). Selecteer het juiste binaire bestand voor je "
+"systeem."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:214
+#
+msgid ""
+"![binary "
+"getmonero](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)"
+msgstr ""
+"![binary "
+"getmonero](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:216
+#
+msgid "Leave `Save File` selected, click `OK`."
+msgstr "Laat `Bestand opslaan` ingeschakeld en klik op `OK`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:218
+#
+msgid ""
+"![binary getmonero "
+"save](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)"
+msgstr ""
+"![binary getmonero "
+"opslaan](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:222
+#
+msgid ""
+"![binary getmonero save "
+"location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)"
+msgstr ""
+"![binary getmonero opslaan "
+"locatie](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:224
+#
+msgid "### 4.2. Verify Binary"
+msgstr "### 4.2. Binary verifiëren"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:226
+#
+msgid ""
+"In a file manager, navigate to `Downloads` directory. Open the file `hashes` "
+"with a word processor."
+msgstr ""
+"Ga in een bestandenverkenner naar de map `Downloads`. Open het bestand "
+"`hashes` in een tekstverwerker."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:228
+#
+msgid ""
+"![binary open "
+"hashes.txt](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)"
+msgstr ""
+"![binary hashes.txt "
+"openen](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:230
+#
+msgid "Open a terminal (`cmd.exe`)."
+msgstr "Open een opdrachtregel (`cmd.exe`)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:232
+#
+msgid ""
+"![binary launch "
+"term](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)"
+msgstr ""
+"![binary opdrachtregel "
+"openen](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:234
+#
+msgid "Change to the `Downloads` directory with the command: `cd Downloads`."
+msgstr "Ga naar de map `Downloads` met de opdracht: `cd Downloads`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:236
+#
+msgid ""
+"![binary cmd "
+"cd](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)"
+msgstr ""
+"![binary cmd "
+"cd](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:238
+#
+msgid ""
+"Calculate the hash of the Monero binary with the command: `certUtil "
+"-hashfile monero-gui-win-x64-v0.16.0.2.zip SHA256` (if you downloaded a "
+"command-line only version, replace `monero-gui-win-x64-v0.16.0.2.zip` "
+"accordingly)."
+msgstr ""
+"Bereken de hash van de Monero-binary met de opdracht: `certUtil -hashfile "
+"monero-gui-win-x64-v0.11.1.0.zip SHA256` (of vervang "
+"`monero-gui-win-x64-v0.11.1.0.zip` door een andere bestandsnaam als je de "
+"opdrachtregelversie hebt gedownload)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:240
+#
+msgid ""
+"![binary cmd "
+"certutil](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)"
+msgstr ""
+"![binary cmd "
+"certutil](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:242
+#
+msgid ""
+"Compare the hash from the terminal with the one in the hash file. They "
+"should be the same (spaces can be ignored)."
+msgstr ""
+"Vergelijk de hash in de opdrachtregel met de hash in het hashbestand. De "
+"hashes horen hetzelfde te zijn. De spaties kun je negeren."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:244
+#
+msgid ""
+"![binary compare "
+"hashes](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)"
+msgstr ""
+"![binary hashes "
+"vergelijken](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:246
+#
+msgid ""
+"If your hash **DOES** match then you are finished with verification! You can "
+"be sure the Monero files you have are authentic. You may extract and "
+"install/use the files normally."
+msgstr ""
+"Als de hash **WEL** overeenkomt, ben je klaar met de verificatie! Dan ben je "
+"er zeker van dat de Monero-bestanden die je hebt ontvangen authentiek "
+"zijn. Je kunt de bestanden verder op de normale manier uitpakken, "
+"installeren en gebruiken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-windows-beginner.md:247
+#
+msgid ""
+"If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the "
+"Monero binary from the `Downloads` directory and go back to [section "
+"4.1](#41-download-binary)."
+msgstr ""
+"**GA NIET VERDER** als de hash **NIET** overeenkomt. Verwijder dan de "
+"Monero-binary uit de map `Downloads` en ga terug naar [paragraaf "
+"4.1](#41-download-binary).\n"
