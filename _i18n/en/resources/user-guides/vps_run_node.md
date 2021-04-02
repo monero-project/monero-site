@@ -9,6 +9,7 @@ This guide assumes you have already set up your VPS account and are using SSH to
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
 ### Make sure that port 18080 is open
+
 `monerod` uses this port to communicate with other nodes on the Monero network.
 
 Example if using `ufw`: `sudo ufw allow 18080`

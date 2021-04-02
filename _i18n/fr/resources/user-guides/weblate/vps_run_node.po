@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-04-02 09:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:4
+#
+msgid "# monerod"
+msgstr "# monerod"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:6
+#
+msgid ""
+"`monerod` is the @daemon software that ships with the Monero tree. It is a "
+"console program, and manages the blockchain. While a bitcoin wallet manages "
+"both an account and the blockchain, Monero separates these: `monerod` "
+"handles the blockchain, and `monero-wallet-cli` handles the account."
+msgstr ""
+"`monerod` est le démon est une application incluse dans la suite "
+"Monero. C'est un programme en ligne de commande qui gère la chaîne de "
+"blocs. Tandis que le portefeuille Bitcoin gère à la fois un compte et la "
+"chaîne de blocs, Monero sépare ces composants : `monerod` gère la chaîne de "
+"blocs, et `monero-wallet-cli` gère le compte."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:8
+#
+msgid ""
+"This guide assumes you have already set up your VPS account and are using "
+"SSH to tunnel into the server console."
+msgstr ""
+"Ce guide suppose que vous avez déjà créé un compte VPS et que vous utilisez "
+"SSH pour accéder à la console du serveur."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:10
+#
+msgid "## Linux, 64-bit (Ubuntu 16.04 LTS)"
+msgstr "## Linux, 64-bit (Ubuntu 16.04 LTS)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:12
+#
+msgid "### Make sure that port 18080 is open"
+msgstr "### Assurez-vous que le port 18080 soit ouvert"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:14
+#
+msgid ""
+"`monerod` uses this port to communicate with other nodes on the Monero "
+"network."
+msgstr ""
+"`monerod` utilise ce port pour communiquer avec d'autres nœuds sur le réseau "
+"Monero."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:17
+#
+msgid ""
+"Example if using `ufw`: `sudo ufw allow 18080` Example if using `iptables`: "
+"`sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`"
+msgstr ""
+"Exemple en utilisant `ufw`: `sudo ufw allow 18080` Exemple en utilisant "
+"`iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:19
+#
+msgid "### Download the current Monero Core binaries"
+msgstr "### Téléchargez les binaires Monero actuels"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:21
+#, no-wrap
+msgid "    wget https://downloads.getmonero.org/linux64\n"
+msgstr "    wget https://downloads.getmonero.org/linux64\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:23
+#
+msgid "### Make a directory and extract the files."
+msgstr "### Créez un répertoire et décompressez les fichiers"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:26
+#, no-wrap
+msgid ""
+"    mkdir monero\n"
+"    tar -xjvf linux64 -C monero\n"
+msgstr ""
+"    mkdir monero\n"
+"    tar -xjvf linux64 -C monero\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:28
+#
+msgid "### Launch the daemon"
+msgstr "### Lancez le démon"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:31
+#, no-wrap
+msgid ""
+"    cd monero\n"
+"    ./monerod\n"
+msgstr ""
+"    cd monero\n"
+"    ./monerod\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:33
+#
+msgid "### Options:"
+msgstr "### Options"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:35
+#
+msgid "Show list of all options and settings:"
+msgstr "Affichez une liste de toutes les options et paramètres :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:37
+#, no-wrap
+msgid "    ./monerod --help\n"
+msgstr "    ./monerod --help\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:39
+#
+msgid "Launch the daemon as a background process:"
+msgstr "Lancez le démon en tâche de fond :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:41
+#, no-wrap
+msgid "    ./monerod --detach\n"
+msgstr "    ./monerod --detach\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:43
+#
+msgid "Monitor the output of `monerod` if running as daemon:"
+msgstr "Surveillez la sortie de `monerod` lancé en tâche de fond :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:45
+#, no-wrap
+msgid "    tail -f ~/.bitmonero/bitmonero.log\n"
+msgstr "    tail -f ~/.bitmonero/bitmonero.log\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:47
+#
+msgid "Keep the VPS secure with autoupdate:"
+msgstr "Gardez le VPS à jour avec autoupdate :"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/vps_run_node.md:49
+#
+msgid "https://help.ubuntu.com/community/AutomaticSecurityUpdates"
+msgstr "https://help.ubuntu.com/community/AutomaticSecurityUpdates"
