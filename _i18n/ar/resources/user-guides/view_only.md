@@ -1,28 +1,55 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-محفظه الرؤيه فقط يمكنها رؤيه المعاملات الوارده إلي المحفظه ولا يمكنها القيام بإنفاق الأموال, في الواقع لا يُمكنها حتي رؤيه المعاملات الصادره من هذه المحفظه. وهذا يجعلها مثيره للإهتمام لكل من 
+A view-only wallet is a special type of wallet that can only see incoming transactions. Since it doesn't hold your mnemonic seed and private spend key, it can't sign transactions and it can't see outgoing transactions. This makes them particularly interesting for
 
-* المُطورين القائمين بكتابه مكتبات للتحقق من المدفوعات
-* المستخدم النهائي الذي يريد التحقق من المدفوعات إلي محفظه مجمده
+* Validate incoming transactions to cold wallets or hardware wallets
+* Monitor incoming donations to a fundraising campaign
+* Developers writing libraries to validate payments
 
-### إنشاء محفظه رؤيه فقط
+View-only wallets cannot sign transactions, therefore they can't spend a balance alone. However, they can be used as part of an offline transaction signing, by creating unsigned transactions to be signed offline in a cold device, and later by sending the signed transaction to the network.
 
-يُمكنك إنشاء محفظه رؤيه فقط من أي محفظه موجوده.
+If your wallet has outgoing transactions, the balance displayed will not be correct. To get a correct balance in a view-only wallet, you have to import the accompanying key images of each output of the wallet.
 
-#### واجهه سطر الأوامر
+You can also create a view-only wallet of a hardware wallet, however this kind of view-only wallet doesn't support offline transaction signing and importing of key images.
 
-إفتح محفظه موجوده بالفعل أو إنشيء واحده جديده بإستخدام واجهه سطر الأوامر `monero-wallet-cli`. في المحفظه قم بكتابه `address` و `viewkey` لعرض عنوان المحفظه ومفتاح الرؤيه السري. إكتب `exit` لإغلاق المحفظه.
+In order to create a view-only wallet, you must either have access to a wallet or know the main address and the private view key from a wallet.
 
-بعد ذلك إنشيء محفظه رؤيه فقط بكتابه `monero-wallet-cli --generate-from-view-key wallet-name`.  قم بتبديل wallet-name بإسم المحفظه الذي تريده. بعدها سيتم سؤاك عن عنوان المحفظه ومفتاح الرؤيه السري قم بلصق البيانات اللازمه التي حفظتها سابقاً. بعد ذلك سيتم سؤالك لتعيين كلمه سر جديده وتأكيدها ومبروك تم إنشاء محفظه الرؤيه بنجاح.
+### CLI: Creating a View-Only Wallet from a Private View Key
 
-#### GUI
+Open an existing wallet and type `address` and `viewkey` commands to display the wallet's address and its private (secret) view key. Type `exit` to close the wallet.
 
-إفتح محفظه موجوده بالفعل أو أنشيء محفظه جديده بإستخدام واجهه المستخدم الرسوميه `monero-wallet-gui`. وإذهب إلي صفحه الإعدادات.
+Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and private (secret) view key. Next, enter and confirm a password for your new wallet.
+
+### GUI: Creating a View-Only Wallet from an Existing Wallet File
+
+If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
 
 ![settings](/img/resources/user-guides/en/view-only/settings.png)
 
-Click on `Create a view only wallet` > `Create wallet`, the wallet will be created within the same directory and using your current password.
+The view-only wallet file will be created within the same directory and using your current password.
 
-يُمكنك إختيارياً النقر علي كلمه 'نجح' لنسخ الرساله , وبعد ذلك إنقر علي 'تم' لإغلاقها:
+Optionally, double-click the `Success` window to copy the message, then click `OK` to close it:
 
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
+
+### GUI: Creating a View-only Wallet from a Private View Key
+
+If you don't have access to the existing wallet, you can create a view-only wallet by knowing the wallet's main address and its private view key.
+
+In order to do that, go to the main Menu and click on `Restore wallet from keys or mnemonic seed`:
+
+![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)
+
+Enter a name for you view-only wallet file. Optionally, you can change the file location.
+
+Select `Restore from keys`.
+
+In `Account address (public)` field, enter your wallet's main address, which starts with 4.
+
+In `View key (private)` field, enter the private view key of your wallet.
+
+Leave the `Spend key (private)` field blank.
+
+Enter a `Wallet creation date` or a `Restore height` if you have one (optional).
+
+Click on `Next` to create your view-only wallet file.

@@ -21,6 +21,7 @@ For å opprette en visningslommebok, må du enten ha tilgang til en lommebok ell
 Etterpå kan du opprette en visningslommebok ved å taste inn `monero-wallet-cli --generate-from-view-key wallet-name`. Det siste argumentet blir filnavnet på den nye lommeboken din. Du vil bli bedt om `Standard address` og `View key` av lommeboken. Lim inn den opprinnelige adressen og private (hemmelige) visningsnøkkelen til lommeboken din. Etter det trykker du på enter og bekrefter et passord for den nye lommeboken din.
 
 ### GUI: Å opprette en visningslommebok fra en eksisterende lommebokfil
+
 Hvis du har tilgang til den eksisterende lommeboken, kan du åpne lommeboken din og gå til `Innstillinger` > `Lommebok` > `Opprett en visningslommebok`:
 
 ![Settings](/img/resources/user-guides/en/view-only/settings.png)
@@ -32,6 +33,7 @@ Alternativt kan du dobbeltklikke på `Vellykket`-vinduet for å kopiere meldinge
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
 
 ### GUI: Å opprette en visningslommebok fra en privat visningsnøkkel
+
 Hvis du ikke har tilgang til den eksisterende lommeboken, kan du opprette en visningslommebok ved å vite lommebokens hovedadresse og private visningsnøkkel.
 
 For å gjøre dette, kan du gå til hovedmenyen og trykke på `Gjenopprett lommebok fra nøkler eller mnemonisk frø`:
