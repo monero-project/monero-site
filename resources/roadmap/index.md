@@ -210,7 +210,6 @@ permalink: /resources/roadmap/index.html
                                     <li class="upcoming">{% t roadmap.returnaddr %}</li>
                                     <li class="ongoing">{% t roadmap.atomicswaps %}</li>
                                     <li class="ongoing">{% t roadmap.bplus %}</li>
-                                    <li class="upcoming">{% t roadmap.kastelo %}</li>
                             </ul>
                     </div>
                 </div>
