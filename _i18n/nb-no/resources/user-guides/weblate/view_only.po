@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-04-02 09:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:4
+#
+msgid ""
+"A view-only wallet is a special type of wallet that can only see incoming "
+"transactions. Since it doesn't hold your mnemonic seed and private spend "
+"key, it can't sign transactions and it can't see outgoing transactions. This "
+"makes them particularly interesting for"
+msgstr ""
+"En visningslommebok er en spesiell type lommebok som kun kan se innkommende "
+"transaksjoner. Siden den ikke holder på det mnemoniske frøet og private "
+"forbruksnøkkelen din, kan den ikke signere transaksjoner, og den kan ikke se "
+"utgående transaksjoner. Dette gjør dem spesielt interessante for"
+
+#. type: Bullet: '* '
+#: _i18n/en/resources/user-guides/view_only.md:8
+#, markdown-text
+msgid "Validate incoming transactions to cold wallets or hardware wallets"
+msgstr ""
+"å validere innkommende transaksjoner til kalde lommebøker eller "
+"maskinvarelommebøker"
+
+#. type: Bullet: '* '
+#: _i18n/en/resources/user-guides/view_only.md:8
+#, markdown-text
+msgid "Monitor incoming donations to a fundraising campaign"
+msgstr "å overvåke innkommende donasjoner til en innsamlingsaksjon"
+
+#. type: Bullet: '* '
+#: _i18n/en/resources/user-guides/view_only.md:8
+#, markdown-text
+msgid "Developers writing libraries to validate payments"
+msgstr "utviklere som skriver programvarebibliotek for å validere betalinger"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:10
+#
+msgid ""
+"View-only wallets cannot sign transactions, therefore they can't spend a "
+"balance alone. However, they can be used as part of an offline transaction "
+"signing, by creating unsigned transactions to be signed offline in a cold "
+"device, and later by sending the signed transaction to the network."
+msgstr ""
+"Visningslommebøker kan ikke signere transaksjoner, og de kan derfor ikke "
+"forbruke en saldo i seg selv. De kan imidlertid brukes som del av en "
+"frakoblet signering av en transaksjon ved å opprette usignerte transaksjoner "
+"som skal signeres i frakoblet tilstand i en kald enhet, og senere ved å "
+"sende den signerte transaksjonen til nettverket."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:12
+#
+msgid ""
+"If your wallet has outgoing transactions, the balance displayed will not be "
+"correct. To get a correct balance in a view-only wallet, you have to import "
+"the accompanying key images of each output of the wallet."
+msgstr ""
+"Hvis lommeboken din har utgående transaksjoner, vil den viste saldoen ikke "
+"være riktig. For å få en riktig saldo i en visningslommebok, må du importere "
+"de medfølgende nøkkelbildene til hver av lommebokens utdata."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:14
+#
+msgid ""
+"You can also create a view-only wallet of a hardware wallet, however this "
+"kind of view-only wallet doesn't support offline transaction signing and "
+"importing of key images."
+msgstr ""
+"Du kan også opprette en visningslommebok til en maskinvarelommebok, men "
+"denne typen visningslommebok støtter imidlertid ikke frakoblet signering av "
+"transaksjoner og import av nøkkelbilder."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:16
+#
+msgid ""
+"In order to create a view-only wallet, you must either have access to a "
+"wallet or know the main address and the private view key from a wallet."
+msgstr ""
+"For å opprette en visningslommebok, må du enten ha tilgang til en lommebok "
+"eller kjenne til hovedadressen og den private visningsnøkkelen fra en "
+"lommebok."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:18
+#
+msgid "### CLI: Creating a View-Only Wallet from a Private View Key"
+msgstr "### CLI: Å opprette en visningslommebok fra en privat visningsnøkkel"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:20
+#
+msgid ""
+"Open an existing wallet and type `address` and `viewkey` commands to display "
+"the wallet's address and its private (secret) view key. Type `exit` to close "
+"the wallet."
+msgstr ""
+"Åpne en eksisterende lommebok og tast inn kommandoene `address` og `viewkey` "
+"for å vise lommebokens adresse og dens private (hemmelige) "
+"visningsnøkkel. Tast inn `exit` for å lukke lommeboken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:22
+#
+msgid ""
+"Next, create your view-only wallet by typing `monero-wallet-cli "
+"--generate-from-view-key wallet-name`. The last argument will be your new "
+"wallet's file name. You will be prompted for `Standard address` and `View "
+"key` by the wallet. Paste in your original wallet's address and private "
+"(secret) view key. Next, enter and confirm a password for your new wallet."
+msgstr ""
+"Etterpå kan du opprette en visningslommebok ved å taste inn "
+"`monero-wallet-cli --generate-from-view-key wallet-name`. Det siste "
+"argumentet blir filnavnet på den nye lommeboken din. Du vil bli bedt om "
+"`Standard address` og `View key` av lommeboken. Lim inn den opprinnelige "
+"adressen og private (hemmelige) visningsnøkkelen til lommeboken din. Etter "
+"det trykker du på enter og bekrefter et passord for den nye lommeboken din."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:24
+#
+msgid "### GUI: Creating a View-Only Wallet from an Existing Wallet File"
+msgstr "### GUI: Å opprette en visningslommebok fra en eksisterende lommebokfil"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:26
+#
+msgid ""
+"If you have access to the existing wallet, open your wallet and go to "
+"`Settings` > `Wallet` > `Create a view-only wallet`:"
+msgstr ""
+"Hvis du har tilgang til den eksisterende lommeboken, kan du åpne lommeboken "
+"din og gå til `Innstillinger` > `Lommebok` > `Opprett en visningslommebok`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:28
+#
+msgid "![settings](/img/resources/user-guides/en/view-only/settings.png)"
+msgstr "![Settings](/img/resources/user-guides/en/view-only/settings.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:30
+#
+msgid ""
+"The view-only wallet file will be created within the same directory and "
+"using your current password."
+msgstr ""
+"Visningslommebokfilen vil opprettes i den samme katalogen, og bruker ditt "
+"gjeldende passord."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:32
+#
+msgid ""
+"Optionally, double-click the `Success` window to copy the message, then "
+"click `OK` to close it:"
+msgstr ""
+"Alternativt kan du dobbeltklikke på `Vellykket`-vinduet for å kopiere "
+"meldingen, og deretter trykke på `OK` for å lukke det:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:34
+#
+msgid "![Success](/img/resources/user-guides/en/view-only/Success.png)"
+msgstr "![Success](/img/resources/user-guides/en/view-only/Success.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:36
+#
+msgid "### GUI: Creating a View-only Wallet from a Private View Key"
+msgstr "### GUI: Å opprette en visningslommebok fra en privat visningsnøkkel"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:38
+#
+msgid ""
+"If you don't have access to the existing wallet, you can create a view-only "
+"wallet by knowing the wallet's main address and its private view key."
+msgstr ""
+"Hvis du ikke har tilgang til den eksisterende lommeboken, kan du opprette en "
+"visningslommebok ved å vite lommebokens hovedadresse og private "
+"visningsnøkkel."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:40
+#
+msgid ""
+"In order to do that, go to the main Menu and click on `Restore wallet from "
+"keys or mnemonic seed`:"
+msgstr ""
+"For å gjøre dette, kan du gå til hovedmenyen og trykke på `Gjenopprett "
+"lommebok fra nøkler eller mnemonisk frø`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:42
+#
+msgid "![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)"
+msgstr "![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:44
+#
+msgid ""
+"Enter a name for you view-only wallet file. Optionally, you can change the "
+"file location."
+msgstr ""
+"Legg inn et navn for visningslommebokfilen din. Alternativt kan du endre "
+"filplasseringen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:46
+#
+msgid "Select `Restore from keys`."
+msgstr "Velg `Gjenopprett fra nøkler`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:48
+#
+msgid ""
+"In `Account address (public)` field, enter your wallet's main address, which "
+"starts with 4."
+msgstr ""
+"I feltet `Kontoadresse (offentlig)` legger du inn lommebokens hovedadresse "
+"som starter med en 4."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:50
+#
+msgid "In `View key (private)` field, enter the private view key of your wallet."
+msgstr ""
+"I feltet `Visningsnøkkel (privat)` legger du inn lommebokens private "
+"visningsnøkkel."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:52
+#
+msgid "Leave the `Spend key (private)` field blank."
+msgstr "La `Forbruksnøkkel (privat)`-feltet være blankt."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:54
+#
+msgid ""
+"Enter a `Wallet creation date` or a `Restore height` if you have one "
+"(optional)."
+msgstr ""
+"Legg inn en `Dato for opprettelse av lommebok` eller `Gjenopprettingshøyde` "
+"hvis du har en (valgfritt)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/view_only.md:55
+#
+msgid "Click on `Next` to create your view-only wallet file."
+msgstr "Trykk på `Neste` for å opprette visningslommebokfilen din."

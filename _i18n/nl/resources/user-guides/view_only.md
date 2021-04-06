@@ -1,28 +1,55 @@
-{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-Met een alleen-lezen portemonnee kun je alleen zien welke binnenkomende transacties van jou zijn. Je kunt er geen Monero mee uitgeven. Sterker nog, je kunt zelfs uitgaande transacties vanuit deze portemonnee niet zien. Alleen-lezen portemonnees zijn daarom interessant voor:
+A view-only wallet is a special type of wallet that can only see incoming transactions. Since it doesn't hold your mnemonic seed and private spend key, it can't sign transactions and it can't see outgoing transactions. This makes them particularly interesting for
 
-* Ontwikkelaars die libraries voor het valideren van betalingen programmeren
-* Eindgebruikers die binnenkomende transacties van een offline portemonnee (*cold wallet*) willen valideren
+* Validate incoming transactions to cold wallets or hardware wallets
+* Monitor incoming donations to a fundraising campaign
+* Developers writing libraries to validate payments
 
-### Een alleen-lezen portemonnee maken
+View-only wallets cannot sign transactions, therefore they can't spend a balance alone. However, they can be used as part of an offline transaction signing, by creating unsigned transactions to be signed offline in a cold device, and later by sending the signed transaction to the network.
 
-Je kunt in elke bestaande portemonnee een alleen-lezen portemonnee maken.
+If your wallet has outgoing transactions, the balance displayed will not be correct. To get a correct balance in a view-only wallet, you have to import the accompanying key images of each output of the wallet.
 
-#### Opdrachtregel
+You can also create a view-only wallet of a hardware wallet, however this kind of view-only wallet doesn't support offline transaction signing and importing of key images.
 
-Open een bestaande portemonnee of maak een nieuwe met `monero-wallet-cli`. Typ in de portemonnee `address` en `viewkey` om het adres en de geheime alleen-lezen sleutel weer te geven. Typ `exit` om de portemonnee af te sluiten.
+In order to create a view-only wallet, you must either have access to a wallet or know the main address and the private view key from a wallet.
 
-Vervolgens kun je je alleen-lezen portemonnee aanmaken door het volgende te typen: `monero-wallet-cli --generate-from-view-key wallet-name`. Het laatste argument is de bestandsnaam van je nieuwe portemonnee. Het programma vraagt naar een `Standard address` (standaardadres) en `View key` (alleen-lezen sleutel). Voer het adres en de geheime alleen-lezen sleutel van je oorspronkelijke portemonnee in. Voer daarna een wachtwoord in voor je nieuwe portemonnee, en klaar is Kees.
+### CLI: Creating a View-Only Wallet from a Private View Key
 
-#### Grafische interface
+Open an existing wallet and type `address` and `viewkey` commands to display the wallet's address and its private (secret) view key. Type `exit` to close the wallet.
 
-Open een bestaande portemonnee of maak een nieuwe met `monero-wallet-gui`. Ga in de portemonnee naar de pagina `Instellingen` > `Portemonnee`:
+Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and private (secret) view key. Next, enter and confirm a password for your new wallet.
+
+### GUI: Creating a View-Only Wallet from an Existing Wallet File
+
+If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
 
 ![settings](/img/resources/user-guides/en/view-only/settings.png)
 
-Klik op `Maak een alleen-lezen portemonnee aan` > `Portemonnee maken`, the wallet will be created within the same directory and using your current password.
+The view-only wallet file will be created within the same directory and using your current password.
 
-Dubbelklik eventueel op het scherm `Geslaagd` om het bericht te kopiëren en klik vervolgens op `OK` om het te sluiten:
+Optionally, double-click the `Success` window to copy the message, then click `OK` to close it:
 
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
+
+### GUI: Creating a View-only Wallet from a Private View Key
+
+If you don't have access to the existing wallet, you can create a view-only wallet by knowing the wallet's main address and its private view key.
+
+In order to do that, go to the main Menu and click on `Restore wallet from keys or mnemonic seed`:
+
+![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)
+
+Enter a name for you view-only wallet file. Optionally, you can change the file location.
+
+Select `Restore from keys`.
+
+In `Account address (public)` field, enter your wallet's main address, which starts with 4.
+
+In `View key (private)` field, enter the private view key of your wallet.
+
+Leave the `Spend key (private)` field blank.
+
+Enter a `Wallet creation date` or a `Restore height` if you have one (optional).
+
+Click on `Next` to create your view-only wallet file.

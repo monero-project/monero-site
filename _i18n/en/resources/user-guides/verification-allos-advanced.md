@@ -167,6 +167,7 @@ From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an e
 ```
 certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256
 ```
+
 The output will look like this, but will be different for each binary file. Your `SHA256` hash should match the one listed in the `hashes.txt` file for your binary file.
 
 ```

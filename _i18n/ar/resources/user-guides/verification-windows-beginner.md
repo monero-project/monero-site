@@ -87,7 +87,7 @@
 
 ![gpg4win installer complete](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)
 
-أنقر علي `Finish`.
+إنقر `Finish`.
 
 ![gpg4win installer finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
@@ -175,7 +175,7 @@
 
 ![hashes right click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)
 
-اترك الموقع الافتراضي ، انقر فوق `Save`.
+أترك المكان الإفتراضي وإنقر `Save`.
 
 ![hashes save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
@@ -217,7 +217,7 @@
 
 ![binary getmonero save](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)
 
-اترك الموقع الافتراضي ، انقر فوق `Save`.
+أترك المكان الإفتراضي وإنقر `Save`.
 
 ![binary getmonero save location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
