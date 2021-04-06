@@ -4432,12 +4432,19 @@ p.hangouts-social {
   margin-top: 5%;
 }
 
+@media only screen and (max-width: 62rem) {          
+
+#fourofour {
+  margin-top: 25%;
+}
+
+}
+
 @media only screen and (max-width: 48rem) {
 
 #fourofour {
   font-weight: bold;
   font-size: 8rem;
-  margin-top: 25%;
 }
 }
 
