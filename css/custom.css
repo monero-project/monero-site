@@ -3058,11 +3058,6 @@ footer {
     line-height: 1.7;
 }
 
-.moneropedia-desc p {
-    padding-top: 0;
-    padding-bottom: 2rem;
-}
-
 @media only screen and (max-width: 48rem) {
 
 .moneropedia h4.text-center {
