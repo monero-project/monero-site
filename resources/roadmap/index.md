@@ -197,7 +197,6 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.onionaddress %}</li>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
                                     <li class="ongoing">{% t roadmap.tryptych %}</li>
-                                    <li class="ongoing">{% t roadmap.kastelo %}</li>
                                     <li class="upcoming">{% t roadmap.layer2 %}</li>
                             </ul>
                     </div>
