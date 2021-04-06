@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-30 14:51+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:4
+#
+msgid "## Step 1: Acquire Monero"
+msgstr "## Steg 1: Å oppdrive Monero"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:6
+#
+msgid ""
+"There are multiple ways to acquire Monero: You can mine it, you can exchange "
+"services or goods for it, or you can convert other cryptocurrencies and fiat "
+"money to XMR. If you choose the latter, the most convenient way to do it is "
+"to use an exchange."
+msgstr ""
+"Det er flere måter å oppdrive Monero på. Du kan utvinne det, veksle varer "
+"eller tjenester for det, eller du kan veksle andre kryptovalutaer og "
+"fiat-penger til XMR. Hvis du velger det siste, er den enkleste måten å gjøre "
+"det på å bruke en børs."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:8
+#
+msgid ""
+"There are multiple exchanges supporting Monero. Some are centralized, which "
+"usually have great liquidity and fast service, but requires you to provide "
+"personal information before starting the trade (KYC). Some are decentralized "
+"and don't require any identification, but usually have less volume and can "
+"be harder to use. There are also services that allow people to meet and "
+"perform a trade without third parties involved."
+msgstr ""
+"Det finnes flere børser som støtter Monero. Noen er sentraliserte, som "
+"vanligvis har mye likviditet og rask service, men som krever at du sender "
+"inn personlige opplysninger (KYC) før du kan begynne å handle der. Andre er "
+"desentraliserte og krever ikke identifikasjon, men har vanligvis mindre "
+"volum og kan være vanskeligere å bruke. Det finnes også tjenester som lar "
+"mennesker møte og handle uten at en tredjepart er involvert."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:10
+#
+msgid ""
+"An incomplete list of Exchanges that support Monero is on our [Merchants "
+"page]({{ site.baseurl }}/community/merchants/#exchanges)."
+msgstr ""
+"En ufullstendig liste over børser som støtter Monero finnes på vår "
+"[Forhandler-side]({{ site.baseurl }}/community/merchants/#exchanges)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:12
+#
+msgid ""
+"## Step 2: Download and create a Paper Wallet on a secure and air-gapped "
+"computer."
+msgstr ""
+"## Steg 2: Last ned og opprett en papirlommebok på en sikker PC som ikke er "
+"koblet til internett."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:14
+#
+msgid ""
+"Download the @paper-wallet generator at: "
+"[moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick "
+"(Direct link: "
+"[https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip))."
+msgstr ""
+"Last ned @papirlommebokgeneratoren på: "
+"[moneroaddress.org](https://moneroaddress.org) og kopier den til en "
+"USB-minnepinne (direktelenke: "
+"[https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip))."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:16
+#
+msgid ""
+"Unzip and open the paper wallet generator (monero-wallet-generator.html) "
+"into a web browser on an air-gapped (@airgap) computer that hasn't been used "
+"before, or has had a clean installation of the operative system."
+msgstr ""
+"Pakk opp og åpne papirlommebokgeneratoren (monero-wallet-generator.html) i "
+"en nettleser på en (@airgap)-PC som ikke er koblet til internett som ikke "
+"tidligere har blitt brukt eller som har en ren installasjon av "
+"operativsystemet."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:18
+#
+msgid "Your paper wallet will have four important items:"
+msgstr "Papirlommeboken din vil inneholde fire viktige elementer:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:20
+#
+msgid ""
+"- Monero Public @Address: The public address is used to receive funds to the "
+"@wallet. You give this to anyone who will be sending funds to your wallet."
+msgstr ""
+"- Offentlig Monero-@adresse: Den offentlige adressen brukes til å motta "
+"midler til @lommeboken. Du gir denne til de som vil sende midler til "
+"lommeboken din."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:22
+#
+msgid ""
+"- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire "
+"wallet that is easily recognizable to humans.  This is all you need to "
+"restore your wallet at a later date."
+msgstr ""
+"- @Mnemonisk Monero-frø: Det mnemoniske frøet er en metode å lagre hele "
+"lommeboken på som er enkelt gjenkjennelig for mennesker. Dette er alt du "
+"trenger for å gjenopprette lommeboken din senere."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:24
+#
+msgid ""
+"- Monero @Spend-Key: The private spend key is used to send funds from the "
+"wallet."
+msgstr ""
+"- Monero-@forbruksnøkkel: Den private forbruksnøkkelen brukes til å sende "
+"midler fra lommebøkene."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:26
+#
+msgid ""
+"- Monero @View-Key: The private view key is to view transactions entering "
+"the wallet. Commonly this is used to setup a view-only wallet which can see "
+"incoming transactions live on the blockchain as they are sent to a cold "
+"storage wallet."
+msgstr ""
+"- Monero-@visningsnøkkel: Den private visningsnøkkelen brukes til å se "
+"transaksjoner som går inn i lommeboken. Den brukes vanligvis til å sette opp "
+"en visningslommebok som kan se innkommende transaksjoner på blokkjeden i "
+"sanntid mens de sendes til en kald lommebok."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:28
+#
+msgid ""
+"At this point you have many options. You can print the wallet on paper, save "
+"it as a PDF or text on a USB stick, burn it to CD/DVD, etc. Most likely you "
+"will want at least two or three copies, stored securely in different "
+"locations. If storing digitally, encrypt everything with a strong password.  "
+"If storing on paper, do not show the wallet to anyone else who can memorize "
+"your 25 word key, or take a picture of the wallet without your permission.  "
+"Sending someone a picture of the wallet is the same as giving away all of "
+"your funds."
+msgstr ""
+"På dette stadiet har du mange valg. Du kan skrive ut lommeboken på papir, "
+"lagre den som PDF eller tekst på en USB-minnepinne, brenne den til CD/DVD "
+"osv. Du vil sannsynligvis ha minst to eller tre kopier som lagres sikkert på "
+"ulike steder. Hvis det lagres digitalt, bør alt krypteres med et sterkt "
+"passord. Hvis det lagres på papir, må lommeboken ikke vises til noen andre "
+"som kan lære seg de 25 ordene utenat eller ta bilde av lommeboken uten din "
+"tillatelse. Å sende noen et bilde av lommeboken er det samme som å gi bort "
+"alle pengene dine."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:30
+#
+msgid ""
+"Whichever method you chose, be sure there's no copy of the Monero wallet "
+"left over on the device you used. You may need to securely delete the Monero "
+"wallet if you saved it to a disk, or make sure your printer does not save a "
+"copy in memory."
+msgstr ""
+"Uansett hvilken metode du velger, må du sørge for at det ikke finnes en kopi "
+"av Monero-lommeboken din på enheten du har brukt. Du må kanskje slette "
+"Monero-lommeboken på en trygg måte hvis du lagret den til en disk eller "
+"sørge for at printeren din ikke lagrer kopier av utskrifter."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:32
+#, no-wrap
+msgid ""
+"*If you lose access to your Monero paper wallet the Monero will not be "
+"available to you or anyone else, ever. You wont be able to recover them!*\n"
+msgstr ""
+"*Hvis du mister tilgangen til Monero-papirlommeboken din, vil ikke Moneroene "
+"bli tilgjengelig for deg eller noen andre. Du vil ikke kunne gjenvinne "
+"dem!*\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:34
+#
+msgid "#### Side Note"
+msgstr "#### Sidemerknad"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:37
+#
+msgid ""
+"Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/ Download "
+"the html page and place it on your airgapped computer. Check the part "
+"\"Encrypt/Decrypt Mnemonic Seed\" and make sure you use \"CN Add\" with a "
+"decent password. Thanks manicminer5."
+msgstr ""
+"Mulighet for å kryptere et XMR-mnemonisk frø: https://xmr.llcoins.net/ Last "
+"ned html-siden og sett den på PC-en din som ikke er koblet til internett. Se "
+"delen om «Kryptering/avkoding av mnemoniske frø» og sørg for at du bruker "
+"«CN Add» med et godt passord. Takk til manicminer5."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:39
+#
+msgid "## Step 3: Send your Moneroj to the paper wallet"
+msgstr "## Steg 3: Send dine Moneroj til papirlommeboken"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:41
+#
+msgid ""
+"Now that you have everything you need, you are ready to send your XMR to "
+"your paper wallet. Simply send the coins to the wallet address you noted "
+"earlier. Make sure the address is correct, even if you copy-pasted it! "
+"Remember that if you send the coins to a wrong address, there is no way to "
+"have them back!"
+msgstr ""
+"Nå som du har alt du trenger, er du klar til å sende dine XMR til "
+"papirlommeboken din. Bare send myntene til lommebok-adressen du skrev ned "
+"tidligere. Sørg for at adressen er riktig, selv om du har kopiert og limt "
+"den! Husk at hvis du sender myntene til en feil adresse, er det ingen måte å "
+"få dem tilbake på!"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:43
+#
+msgid "#### Notes and How to Verify Funds"
+msgstr "#### Merknader og hvordan å verifisere midler"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:45
+#
+msgid ""
+"Because the Monero blockchain is private and untraceable, you won't be able "
+"to lookup your Monero Public Address and confirm that the funds have arrived "
+"like you might with Bitcoin. This is good for privacy, but bad for "
+"convenience."
+msgstr ""
+"Fordi Monero-blokkjeden er privat og usporbar, vil du ikke kunne sjekke din "
+"offentlige Monero-adresse og bekrefte at midlene har ankommet slik som med "
+"bitcoin. Dette er bra for personvern, men uheldig med tanke på "
+"bekvemmelighet."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:47
+#
+msgid ""
+"To securely verify the funds have arrived at your wallet, you will need to "
+"setup a View Only wallet. This is where that view-key comes in. To create a "
+"view-only wallet see the entry: [View Only "
+"Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)"
+msgstr ""
+"For å sikkert verifisere midlene i lommeboken din, må du sette opp en "
+"visningslommebok. Dette er hvor visningsnøkkelen kommer inn i spill. For å "
+"opprette en visningslommebok, kan du se oppføringen: "
+"[Visningslommebok]({{site.baseurl}}/resources/user-guides/view_only.html)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/securely_purchase.md:48
+#
+msgid ""
+"To verify the funds are *still in* your wallet and have not been spent you "
+"need to create a Cold Wallet with your mnemonic key (all your funds) on an "
+"airgapped computer with an up-to-date copy of the Monero Blockchain. When "
+"finished you will have to securely erase the wallet or connect it to the "
+"internet and it becomes a Hot Wallet."
+msgstr ""
+"For å verifisere at midlene *fremdeles* er i lommeboken din og ikke har "
+"blitt brukt, må du opprette en kald lommebok med den mnemoniske nøkkelen din "
+"(alle midlene dine) på en PC som ikke er koblet til internett og som har en "
+"oppdatert kopi av Monero-blokkjeden. Når du er ferdig, må du på en sikker "
+"måte slette lommeboken eller koble den til internett, og da blir det en "
+"«varm» lommebok."

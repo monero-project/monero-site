@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-29 14:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:4
+#
+msgid ""
+"Restoring a wallet from private keys is pretty simple. If you have the "
+"necessary information, with this guide you can completely restore your "
+"wallet. Note: you do NOT have to have your password to restore from keys."
+msgstr ""
+"Å gjenopprette en lommebok fra pivate nøkler er ganske enkelt. Hvis du har "
+"den nødvendige informasjonen, kan du med denne guiden gjenopprette "
+"lommeboken din fullstendig. Merk: du trenger IKKE passordet ditt for å "
+"gjenopprette fra nøkler."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:6
+#
+msgid ""
+"You need to have 3 pieces of data from your wallet, or your .keys file which "
+"holds this info and the password to decrypt it. The 3 wallet components that "
+"you need are:"
+msgstr ""
+"Du trenger tre stykker data fra lommeboken din eller din .keys-fil som "
+"bevarer denne informasjonen og passordet for å avkode det. De tre "
+"lommebokkomponentene du trenger er:"
+
+#. type: Bullet: '1. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Address**"
+msgstr "**Adresse**"
+
+#. type: Bullet: '2. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Secret Spendkey**"
+msgstr "**Hemmelig forbruksnøkkel**"
+
+#. type: Bullet: '3. '
+#: _i18n/en/resources/user-guides/restore_from_keys.md:10
+#, markdown-text
+msgid "**Secret Viewkey**"
+msgstr "**Hemmelig visningsnøkkel**"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:13
+#
+msgid "#### CLI"
+msgstr "#### CLI"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:15
+#
+msgid "Then run the wallet command:"
+msgstr "Kjør deretter lommebokkommandoen:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:17
+#
+msgid "`./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`"
+msgstr "`./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:19
+#
+msgid ""
+"Next, you'll be asked for the Address, the spendkey, the viewkey, and "
+"finally the new password for the re-generated wallet."
+msgstr ""
+"Etter det blir du spurt om adressen, forbruksnøkkelen, visningsnøkkelen og "
+"til slutt det nye passordet for den regenererte lommeboken."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:21
+#
+msgid ""
+"Running this with the correct parameters will re-generate your wallet files "
+"for you and allow you to set a new password."
+msgstr ""
+"Å kjøre denne kommandoen med de riktige parameterne vil generere "
+"lommebokfilene dine på nytt for deg og la deg sette et nytt passord."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:23
+#
+msgid ""
+"If you run into any trouble, running `./monero-wallet-cli --help` will show "
+"you the options available to you at wallet startup. Once you're inside your "
+"wallet, running the `help` command will list the help for the commands "
+"available to you within the wallet."
+msgstr ""
+"Hvis du møter på problemer, vil kommandoen `./monero-wallet-cli --help` vise "
+"deg dine tilgjengelige valge ved oppstart av lommeboken. Når du er inni "
+"lommeboken din, kan du kjøre `help`-kommandoen som vil gi deg en liste over "
+"de tilgjengelige hjelpekommandoene i lommeboken din."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:25
+#
+msgid "#### GUI"
+msgstr "#### GUI"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:27
+#
+msgid ""
+"Launch `monero-wallet-gui`. If this is the first time you launched it go to "
+"the next step, otherwise click `Cancel`:"
+msgstr ""
+"Start `monero-wallet-gui`. Hvis dette er første gang du har startet den, kan "
+"du gå til neste trinn. Ellers kan du trykke på `Avbryt`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:29
+#
+msgid ""
+"![cancel "
+"opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+msgstr ""
+"![cancel "
+"opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:31
+#
+msgid "Select your appropriate language `English(US)`:"
+msgstr "Velg språket ditt (`Norsk`):"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:33
+#
+msgid ""
+"![choose "
+"language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+msgstr ""
+"![choose "
+"language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:35
+#
+msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgstr "Trykk på `Gjenopprett lommeboken fra nøkler eller mnemoniske frø`:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:37
+#
+msgid ""
+"![choose "
+"restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+msgstr ""
+"![choose "
+"restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:39
+#
+msgid ""
+"Select `Restore from keys`, give your wallet a name & storage location, and "
+"complete the `Account address (public)`, `View key (private)` & `Spend key "
+"(private)`. Optionaly, specify a `Restore height (optional)` to avoid "
+"scanning of oldest blocks. Then click the `Right` arrow:"
+msgstr ""
+"Velg `Gjenopprett fra nøkler`, gi lommeboken din et navn og lagringssted, og "
+"fullfør `Kontoadresse (offentlig)`, `Visningsnøkkel (privat)` og "
+"`Forbruksnøkkel (privat)`. Alternativt kan du angi en `Gjenopprettingshøyde "
+"(valgfritt)` for å unngå skanning av de eldste blokkene. Deretter trykker du "
+"på `Høyre`-piltasten:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:41
+#
+msgid ""
+"![restore "
+"wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
+"![restore "
+"wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:43
+#
+msgid ""
+"On the next page, give your wallet a strong password and confirm it before "
+"clicking the `Right` arrow:"
+msgstr ""
+"På neste side kan du gi lommeboken din et sterkt passord og bekrefte det før "
+"du trykker på `Høyre`-piltasten:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:45
+#
+msgid ""
+"![wallet "
+"password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+msgstr ""
+"![wallet "
+"password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:47
+#
+msgid "Specify your daemon settings and click the `Right` arrow:"
+msgstr "Spesifiser dine daemon-innstillinger og trykk på `Høyre`-piltasten:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:49
+#
+msgid ""
+"![daemon "
+"settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+msgstr ""
+"![daemon "
+"settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:51
+#
+msgid "Click on `USE MONERO` to enjoy your restored wallet:"
+msgstr "Trykk på `BRUK MONERO` for å glede deg over din gjenopprettede lommebok:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/restore_from_keys.md:52
+#
+msgid ""
+"![all set "
+"up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
+msgstr ""
+"![all set "
+"up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)"
