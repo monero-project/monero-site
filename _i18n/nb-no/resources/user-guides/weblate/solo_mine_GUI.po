@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-31 10:19+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:4
+#
+msgid ""
+"It is very easy to solo mine with the official GUI. If you have not done so "
+"already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads "
+"page</a> and download the official GUI for your operating system. Then, run "
+"the setup and be patient as Monero synchronizes with the network. You should "
+"see that it displays \"Connected\" in the lower left corner."
+msgstr ""
+"Det er veldig enkelt å solo-utvinne med den offisielle GUI-en. Hvis du ikke "
+"allerede har gjort det, kan du gå til <a "
+"href=\"{{site.baseurl}}/downloads/\">Monero-nedlastingssiden</a> og laste "
+"ned denne offisielle GUI-en for operativsystemet ditt. Deretter kan du kjøre "
+"oppsettet og smøre deg med tålmodighet mens Monero synkroniseres med "
+"nettverket. Du bør se at den viser «Tilkoblet» nederst til venstre."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:6
+#
+msgid ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" "
+"style=\"width: 600px;\"/>"
+msgstr ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" "
+"style=\"width: 600px;\"/>"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:8
+#
+msgid ""
+"Click on the \"Advanced\" tab. You should see that several other options "
+"appear. Now click on the \"Mining\" sub-tab."
+msgstr ""
+"Trykk på «Avansert»-fanen. Du bør se at flere andre valg dukker opp. Trykk "
+"deretter på underfanen som heter «Utvinning»."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:10
+#
+msgid ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" "
+"style=\"width: 600px;\"/>"
+msgstr ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" "
+"style=\"width: 600px;\"/>"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:12
+#
+msgid ""
+"You should now have an option to start mining. You can optionally change the "
+"number of threads to mine with. For optimal efficiency, you should mine with "
+"your CPU's cache divided by 2. You will need to look up your CPU's specs on "
+"the manufacturer's website. If you are unsure, leave the number of threads "
+"at 1. Click the \"Start mining\" button."
+msgstr ""
+"Nå bør du ha valget om å begynne å utvinne. Du kan som alternativ endre "
+"antallet tråder å utvinne med. For optimal effektivitet, bør du utvinne med "
+"cachen til CPU-en din, delt på 2. Du må slå opp CPU-spesifikasjonene dine på "
+"produsentens nettside. Hvis du er usikker, kan du la antallet tråder stå som "
+"1. Trykk på «Start utvinning»-knappen."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:14
+#
+msgid ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" "
+"style=\"width: 600px;\"/>"
+msgstr ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" "
+"style=\"width: 600px;\"/>"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:16
+#
+msgid ""
+"You are now mining with the network, as you can see on the bottom of the "
+"image. In this example, the computer is contributing 23 H/s to the Monero "
+"network. Mining helps keep the network secure, and you may get lucky and "
+"receive a reward for protecting the network."
+msgstr ""
+"Du utvinner nå med nettverket, som du også kan se nederst på bildet. I dette "
+"eksempelet bidrar PC-en med 23 H/s til Monero-nettverket. Utvinning hjelper "
+"med å holde nettverket sikkert, og du kan bli heldig og motta en belønning "
+"for å beskytte nettverket."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:17
+#
+msgid "To stop mining, simply click the \"Stop mining\" button."
+msgstr "For å avslutte utvinningen, trykker du på «Stopp utvinning»-knappen."

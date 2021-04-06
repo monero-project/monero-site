@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-31 10:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:4
+#
+msgid ""
+"It is very easy to solo mine with the official GUI. If you have not done so "
+"already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads "
+"page</a> and download the official GUI for your operating system. Then, run "
+"the setup and be patient as Monero synchronizes with the network. You should "
+"see that it displays \"Connected\" in the lower left corner."
+msgstr ""
+"Het is heel makkelijk om solo te minen met de officiële grafische interface "
+"(GUI). Als je het nog niet gedaan hebt, ga dan naar de pagina <a "
+"href=\"{{site.baseurl}}/downloads/\">Monero-downloads</a> en download de "
+"officiële GUI voor je besturingssysteem. Voer de installatie uit en wacht "
+"terwijl Monero wordt gesynchroniseerd met het netwerk. Als het goed is, "
+"staat er \"Verbonden\" in de linkerbenedenhoek."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:6
+#
+msgid ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" "
+"style=\"width: 600px;\"/>"
+msgstr ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" "
+"style=\"width: 600px;\"/>"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:8
+#
+msgid ""
+"Click on the \"Advanced\" tab. You should see that several other options "
+"appear. Now click on the \"Mining\" sub-tab."
+msgstr ""
+"Klik op het tabblad \"Geavanceerd\". Dan verschijnen er verschillende "
+"opties. Klik hier op het subtabblad \"Minen\"."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:10
+#
+msgid ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" "
+"style=\"width: 600px;\"/>"
+msgstr ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" "
+"style=\"width: 600px;\"/>"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:12
+#
+msgid ""
+"You should now have an option to start mining. You can optionally change the "
+"number of threads to mine with. For optimal efficiency, you should mine with "
+"your CPU's cache divided by 2. You will need to look up your CPU's specs on "
+"the manufacturer's website. If you are unsure, leave the number of threads "
+"at 1. Click the \"Start mining\" button."
+msgstr ""
+"Daar vind je een optie om te beginnen met minen. Eventueel kun je aanpassen "
+"met hoeveel threads je minet. De meest effectieve instelling is de cache van "
+"je CPU gedeeld door 2. Hiervoor moet je de specificaties van je CPU opzoeken "
+"op de website van de fabrikant. Laat het aantal threads op 1 staan als je "
+"het niet zeker weet. Klik op de knop \"Start het minen\"."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:14
+#
+msgid ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" "
+"style=\"width: 600px;\"/>"
+msgstr ""
+"<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" "
+"style=\"width: 600px;\"/>"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:16
+#
+msgid ""
+"You are now mining with the network, as you can see on the bottom of the "
+"image. In this example, the computer is contributing 23 H/s to the Monero "
+"network. Mining helps keep the network secure, and you may get lucky and "
+"receive a reward for protecting the network."
+msgstr ""
+"Je bent nu aan het minen voor het netwerk, zoals je onderaan de afbeelding "
+"kunt zien. In dit voorbeeld draagt je computer 23 H/s (hashes per seconde) "
+"bij aan het Monero-netwerk. Minen helpt het netwerk te beveiligen, en "
+"misschien heb je zoveel geluk dat je een beloning voor het beschermen van "
+"het netwerk krijgt."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/solo_mine_GUI.md:17
+#
+msgid "To stop mining, simply click the \"Stop mining\" button."
+msgstr "Als je wilt stoppen met minen, klik je gewoon op de knop \"Stop het minen\"."
