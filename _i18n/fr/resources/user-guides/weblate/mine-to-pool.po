@@ -1,0 +1,524 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-26 11:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:2
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:4
+msgid "## Wallet"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:9
+msgid ""
+"Before starting, you already need to have a wallet configured and "
+"working. The pool needs to know your wallet address to be able to send "
+"payments there. See the [Accepting Monero guide]({{ site.baseurl "
+"}}/get-started/accepting) for more information."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:11
+msgid "## Profitability"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:18
+msgid ""
+"Before mining, you should decide if it is worth it or not for you. You have "
+"to decide this for yourself, based on your power costs and the hardware that "
+"you have available. There are many sites, such as "
+"[CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr)  that "
+"allow you to enter your miner's speed and power draw, and it will show you "
+"the profit (or loss) per week/month."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:20
+msgid "## Download Miner"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:22
+msgid "The first step is to download mining software onto your computer."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:24
+msgid "### Windows"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:28
+msgid ""
+"The XMRig developer provides pre-built binaries for Windows users. They are "
+"available on the [GitHub release "
+"page](https://github.com/xmrig/xmrig/releases/latest)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:31
+msgid ""
+"Scroll down until you see `xmrig-VERSION-msvc-win64.zip`. Download this file "
+"and extract the archive somewhere memorable, like your desktop."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:33
+msgid "### Ubuntu Linux"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:37
+msgid ""
+"The XMRig developer provides pre-built binaries for Ubuntu Xenial Xerus "
+"(16.04). They may work on other Ubuntu versions, and on other distributions, "
+"but this is not guaranteed."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:40
+msgid ""
+"These binaries are available on the [GitHub release "
+"page](https://github.com/xmrig/xmrig/releases/latest)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:43
+msgid ""
+"Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download this "
+"file, extract the archive somewhere memorable, like your desktop."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:45
+msgid "### Other Linux"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:48
+msgid ""
+"Users of other Linux distributions can compile XMRig from source. Firstly, "
+"install the dependencies:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:59
+#, no-wrap
+msgid ""
+"```\n"
+"# For Debian-based distros\n"
+"sudo apt install \\\n"
+"\tbuild-essential \\\n"
+"\tcmake \\\n"
+"\tgit \\\n"
+"\tlibhwloc-dev \\\n"
+"\tlibssl-dev \\\n"
+"\tlibuv1-dev\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:61
+msgid "Download the XMRig source code:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:66
+#: _i18n/en/resources/user-guides/mine-to-pool.md:102
+msgid "``` git clone https://github.com/xmrig/xmrig.git cd xmrig ```"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:68
+#: _i18n/en/resources/user-guides/mine-to-pool.md:104
+msgid "Configure and compile XMRig:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:73
+msgid "``` cmake -Bbuild make -Cbuild -j$(nproc)  ```"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:75
+#: _i18n/en/resources/user-guides/mine-to-pool.md:111
+msgid "Copy binary and example configuration to your home directory:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:80
+#: _i18n/en/resources/user-guides/mine-to-pool.md:116
+msgid "``` cp build/xmrig ~/ cp src/config.json ~/ ```"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:82
+msgid "### macOS Build"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:84
+msgid "Firstly, install XCode and [Homebrew](https://brew.sh)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:86
+msgid "Use Homebrew to install dependencies:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:95
+#, no-wrap
+msgid ""
+"```\n"
+"brew install \\\n"
+"\tcmake \\\n"
+"\thwloc \\\n"
+"\tlibmicrohttpd \\\n"
+"\tlibuv \\\n"
+"\topenssl\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:97
+msgid "Download XMRig sources:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:109
+msgid ""
+"``` cmake -Bbuild -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl make -Cbuild "
+"-j$(nproc)  ```"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:118
+msgid "## Selecting a pool"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:121
+msgid ""
+"There are lots of pools to choose from. You can find a list at "
+"[miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:126
+msgid ""
+"Choosing a larger pool means that you will see more frequent (but smaller) "
+"payouts, but choosing a smaller pools helps keep the network "
+"decentralised. [Miners will not lose any revenue by mining on a smaller "
+"pool](https://redd.it/g6uh2l)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:128
+msgid "## Configuring the miner"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:132
+msgid ""
+"Navigate to your chosen pool's webpage and read their documentation. They "
+"should mention an address and port for you to enter into your miner. For "
+"example, `pool.xmr.pt:3333`."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:138
+msgid ""
+"Next, open up the config.json you copied or extracted earlier in your "
+"favourite text editor. Scroll down to the line that says "
+"`donate.v2.xmrig.com:3333` and change the text inside the quotes to the "
+"address of your pool. The line below should contain "
+"`YOUR_WALLET_ADDRESS`. Change that to your actual wallet address."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:140
+msgid ""
+"After these modifications, your configuration should look something like "
+"this:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:153
+#, no-wrap
+msgid ""
+"```\n"
+"{\n"
+"\t// [...]\n"
+"\t\"pools\": [\n"
+"\t\t{\n"
+"\t\t\t\"url\": \"pool.xmr.pt:3333\",\n"
+"\t\t\t\"user\": \"43YjW8SZov...\"\n"
+"\t\t}\n"
+"\t],\n"
+"\t// [...]\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:155
+msgid "## Starting the miner"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:159
+msgid ""
+"Windows users can double click on xmrig.exe. Users of other operating "
+"systems should `cd` into the directory that contains XMRig and then type "
+"`./xmrig` and press return."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:162
+msgid ""
+"If you see green messages saying that shares have been accepted, "
+"congratulations, everything is working!"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:164
+msgid "## Troubleshooting"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:166
+msgid "### Anti-virus keeps removing XMRig"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:171
+msgid ""
+"Some anti-viruses flag XMRig as malware because it is often deployed to "
+"infected computers to mine without the owner's consent. As it is your "
+"computer and you are configuring the miner to mine for you, it is safe to "
+"add XMRig to your anti-virus whitelist."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:173
+msgid "### Cannot read/set MSR"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:179
+msgid ""
+"On some CPUs, XMRig tries to increase performance by disabling certain "
+"features like your CPU's instruction prefetcher. These operations require "
+"root/administrator, so try right clicking xmrig.exe and running it as "
+"administrator, or running `sudo ./xmrig` on other systems."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:181
+msgid "### Algo not known"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:185
+msgid ""
+"Find the line in config.json that says `algo: null` and change it to `algo: "
+"\"rx/0\"`. By default, XMRig expects the pool to tell it which hashing "
+"algorithm to use."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:187
+msgid "### Huge Pages 0%"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:189
+msgid "#### Allowing large pages on Windows"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:191
+msgid ""
+"Taken from [the "
+"MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid "On the Start menu, click Run. In the Open box, type gpedit.msc."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid ""
+"On the Local Group Policy Editor console, expand Computer Configuration, and "
+"then expand Windows Settings."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid "Expand Security Settings, and then expand Local Policies."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid "Select the User Rights Assignment folder."
+msgstr ""
+
+#. type: Bullet: '5. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid "The policies will be displayed in the details pane."
+msgstr ""
+
+#. type: Bullet: '6. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid "In the pane, double-click Lock pages in memory."
+msgstr ""
+
+#. type: Bullet: '7. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid ""
+"In the Local Security Setting â Lock pages in memory dialog box, click Add "
+"User or Group."
+msgstr ""
+
+#. type: Bullet: '8. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid ""
+"In the Select Users, Service Accounts, or Groups dialog box, add an account "
+"that you will run the miner on"
+msgstr ""
+
+#. type: Bullet: '9. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+#, markdown-text
+msgid "Reboot for change to take effect."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:203
+msgid "You may also need to launch the miner as administrator."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:205
+msgid "#### Allowing large pages on Linux"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:208
+msgid ""
+"Firstly stop the miner (if it's running), run the following commands to "
+"enable large pages and then start the miner as root:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:211
+#, no-wrap
+msgid ""
+"\tsudo sysctl -w vm.nr_hugepages=1168\n"
+"\tsudo ./xmrig\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:214
+msgid ""
+"You may have to increase 1168 depending on how many NUMA nodes your CPU(s) "
+"have."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:216
+msgid "#### Allowing large pages on macOS"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:218
+msgid "Huge pages are not supported on macOS."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:220
+msgid "### Balance Not Increasing"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:225
+msgid ""
+"Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools, "
+"which means that you only get paid when a miner on the pool finds a "
+"block. If the pool you are mining on is small, this can take a few days to "
+"weeks."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:228
+msgid ""
+"Additionally, any blocks found must mature before they can be paid out. This "
+"takes 60 blocks (approx. 2 hours)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:230
+msgid "## Getting Help"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:235
+msgid ""
+"An active Monero mining community on Reddit is "
+"[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also "
+"join [#monero-pools on "
+"freenode](https://webchat.freenode.net/?channel=#monero-pools)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:237
+msgid "## Going Futher"
+msgstr ""
+
+#. type: Bullet: '* '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:244
+#, markdown-text
+msgid ""
+"Consider using a subaddress just for mining, to prevent your address being "
+"linked to different services."
+msgstr ""
+
+#. type: Bullet: '* '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:244
+#, markdown-text
+msgid ""
+"[Consider using Tor to connect to the "
+"pool](https://xmrig.com/docs/miner/tor) (or to a hidden service pool like "
+"HashVault, RespectXMR and MoneroOcean). This hides mining activity from your "
+"ISP, and prevents the pool from knowing who you are."
+msgstr ""

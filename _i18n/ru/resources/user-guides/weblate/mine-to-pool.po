@@ -1,0 +1,652 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-26 11:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:2
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:4
+msgid "## Wallet"
+msgstr "## Кошелёк"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:9
+msgid ""
+"Before starting, you already need to have a wallet configured and "
+"working. The pool needs to know your wallet address to be able to send "
+"payments there. See the [Accepting Monero guide]({{ site.baseurl "
+"}}/get-started/accepting) for more information."
+msgstr ""
+"Перед тем как начать, вам необходимо иметь уже сконфигурированный и готовый "
+"к работе кошелёк. Пулу нужно знать адрес вашего кошелька, чтобы он смог "
+"направлять на него платежи. Дополнительную информацию можно найти в "
+"[Руководстве по приёму Monero]({{ site.baseurl}}/get-started/accepting)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:11
+msgid "## Profitability"
+msgstr "## Прибыльность"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:18
+msgid ""
+"Before mining, you should decide if it is worth it or not for you. You have "
+"to decide this for yourself, based on your power costs and the hardware that "
+"you have available. There are many sites, such as "
+"[CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr)  that "
+"allow you to enter your miner's speed and power draw, and it will show you "
+"the profit (or loss) per week/month."
+msgstr ""
+"Перед тем как начать майнинг, вы должны решить, стоит ли вам вообще этим "
+"заниматься. Решение необходимо принять, исходя из ваших затрат на "
+"электроэнергию и доступного вам оборудования. Существует множество сайтов, "
+"таких как "
+"[CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr), "
+"которые позволяют ввести значения параметров скорости и мощности вашего "
+"майнера и на основе этих данных вычисляют возможную прибыль (или убыток) за "
+"неделю/месяц."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:20
+msgid "## Download Miner"
+msgstr "## Скачивание майнера"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:22
+msgid "The first step is to download mining software onto your computer."
+msgstr ""
+"Первым шагом является скачивание на ваш компьютер программного обеспечения, "
+"необходимого для майнинга."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:24
+msgid "### Windows"
+msgstr "### Windows"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:28
+msgid ""
+"The XMRig developer provides pre-built binaries for Windows users. They are "
+"available on the [GitHub release "
+"page](https://github.com/xmrig/xmrig/releases/latest)."
+msgstr ""
+"Разработчик XMRig предоставляет готовые двоичные файлы, которые потребуются "
+"пользователям Windows. Их можно скачать со [страницы релизов на "
+"GitHub](https://github.com/xmrig/xmrig/releases/latest)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:31
+msgid ""
+"Scroll down until you see `xmrig-VERSION-msvc-win64.zip`. Download this file "
+"and extract the archive somewhere memorable, like your desktop."
+msgstr ""
+"Там вы сможете найти архив `xmrig-VERSION-msvc-win64.zip`. Скачайте этот "
+"файл и извлеките его содержимое в какое-нибудь место, например, на рабочий "
+"стол."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:33
+msgid "### Ubuntu Linux"
+msgstr "### Ubuntu Linux"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:37
+msgid ""
+"The XMRig developer provides pre-built binaries for Ubuntu Xenial Xerus "
+"(16.04). They may work on other Ubuntu versions, and on other distributions, "
+"but this is not guaranteed."
+msgstr ""
+"Разработчик XMRig предоставляет готовые двоичные файлы для Ubuntu Xenial "
+"Xerus (16.04). Они могут работать и с другими версиями Ubuntu, и с другими "
+"дистрибутивами, но это не гарантируется."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:40
+msgid ""
+"These binaries are available on the [GitHub release "
+"page](https://github.com/xmrig/xmrig/releases/latest)."
+msgstr ""
+"Эти двоичные файлы также можно скачать на [странице релизов на "
+"GitHub](https://github.com/xmrig/xmrig/releases/latest)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:43
+msgid ""
+"Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download this "
+"file, extract the archive somewhere memorable, like your desktop."
+msgstr ""
+"На ней выложен соответствующий архив "
+"`xmrig-VERSION-xenial-x64.tar.gz`. Скачайте этот файл и извлеките его "
+"содержимое в какое-нибудь место, например, на рабочий стол."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:45
+msgid "### Other Linux"
+msgstr "### Другие дистрибутивы Linux"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:48
+msgid ""
+"Users of other Linux distributions can compile XMRig from source. Firstly, "
+"install the dependencies:"
+msgstr ""
+"Пользователи других дистрибутивов Linux могут скомпилировать XMRig из "
+"исходного кода. Во-первых, следует установить зависимости:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:59
+msgid ""
+"```\n"
+"# For Debian-based distros\n"
+"sudo apt install \\\n"
+"\tbuild-essential \\\n"
+"\tcmake \\\n"
+"\tgit \\\n"
+"\tlibhwloc-dev \\\n"
+"\tlibssl-dev \\\n"
+"\tlibuv1-dev\n"
+"```\n"
+msgstr ""
+"```\n"
+"# For Debian-based distros\n"
+"sudo apt install \\\n"
+"\tbuild-essential \\\n"
+"\tcmake \\\n"
+"\tgit \\\n"
+"\tlibhwloc-dev \\\n"
+"\tlibssl-dev \\\n"
+"\tlibuv1-dev\n"
+"```\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:61
+msgid "Download the XMRig source code:"
+msgstr "Скачивание исходного кода XMRig:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:66
+#: _i18n/en/resources/user-guides/mine-to-pool.md:102
+msgid "``` git clone https://github.com/xmrig/xmrig.git cd xmrig ```"
+msgstr "``` git clone https://github.com/xmrig/xmrig.git cd xmrig ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:68
+#: _i18n/en/resources/user-guides/mine-to-pool.md:104
+msgid "Configure and compile XMRig:"
+msgstr "Конфигурирование и компиляция XMRig:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:73
+msgid "``` cmake -Bbuild make -Cbuild -j$(nproc)  ```"
+msgstr "``` cmake -Bbuild make -Cbuild -j$(nproc)  ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:75
+#: _i18n/en/resources/user-guides/mine-to-pool.md:111
+msgid "Copy binary and example configuration to your home directory:"
+msgstr ""
+"Затем необходимо скопировать двоичный файл и пример конфигурации в свою "
+"домашнюю директорию:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:80
+#: _i18n/en/resources/user-guides/mine-to-pool.md:116
+msgid "``` cp build/xmrig ~/ cp src/config.json ~/ ```"
+msgstr "``` cp build/xmrig ~/ cp src/config.json ~/ ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:82
+msgid "### macOS Build"
+msgstr "### Сборка для macOS"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:84
+msgid "Firstly, install XCode and [Homebrew](https://brew.sh)."
+msgstr "Во-первых, следует установить XCode и [Homebrew](https://brew.sh)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:86
+msgid "Use Homebrew to install dependencies:"
+msgstr "Homebrew используется для установки зависимостей:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:95
+msgid ""
+"```\n"
+"brew install \\\n"
+"\tcmake \\\n"
+"\thwloc \\\n"
+"\tlibmicrohttpd \\\n"
+"\tlibuv \\\n"
+"\topenssl\n"
+"```\n"
+msgstr ""
+"```\n"
+"brew install \\\n"
+"\tcmake \\\n"
+"\thwloc \\\n"
+"\tlibmicrohttpd \\\n"
+"\tlibuv \\\n"
+"\topenssl\n"
+"```\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:97
+msgid "Download XMRig sources:"
+msgstr "Скачивание исходного кода XMRig:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:109
+msgid ""
+"``` cmake -Bbuild -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl make -Cbuild "
+"-j$(nproc)  ```"
+msgstr ""
+"``` cmake -Bbuild -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl make -Cbuild "
+"-j$(nproc)  ```"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:118
+msgid "## Selecting a pool"
+msgstr "## Выбор пула"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:121
+msgid ""
+"There are lots of pools to choose from. You can find a list at "
+"[miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
+msgstr ""
+"Существует огромное количество пулов. Список пулов можно найти на "
+"[miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:126
+msgid ""
+"Choosing a larger pool means that you will see more frequent (but smaller) "
+"payouts, but choosing a smaller pools helps keep the network "
+"decentralised. [Miners will not lose any revenue by mining on a smaller "
+"pool](https://redd.it/g6uh2l)."
+msgstr ""
+"Выбор большего пула означает, что вы будете получать более частые (но "
+"меньшие) выплаты, а выбор меньших пулов поможет обеспечить "
+"децентрализованность сети. [Майнеры не теряют доходность при работе в "
+"меньших пулах](https://redd.it/g6uh2l)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:128
+msgid "## Configuring the miner"
+msgstr "## Конфигурирование майнера"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:132
+msgid ""
+"Navigate to your chosen pool's webpage and read their documentation. They "
+"should mention an address and port for you to enter into your miner. For "
+"example, `pool.xmr.pt:3333`."
+msgstr ""
+"Необходимо перейти на веб-страницу выбранного пула и ознакомиться с их "
+"документацией. Там должен быть указан адрес и порт, которые следует "
+"использовать для подключения вашего майнера. Например, `pool.xmr.pt:3333`."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:138
+msgid ""
+"Next, open up the config.json you copied or extracted earlier in your "
+"favourite text editor. Scroll down to the line that says "
+"`donate.v2.xmrig.com:3333` and change the text inside the quotes to the "
+"address of your pool. The line below should contain "
+"`YOUR_WALLET_ADDRESS`. Change that to your actual wallet address."
+msgstr ""
+"Затем при помощи используемого вами текстового редактора необходимо открыть "
+"файл config.json, который был скопирован или извлечён ранее. Следует "
+"прокрутить вниз до строки, в которой будет написано "
+"`donate.v2.xmrig.com:3333`, и изменить текст в кавычках на адрес вашего "
+"пула. Строка ниже должна содержать `YOUR_WALLET_ADDRESS`. Следует изменить "
+"этот текст на фактический адрес вашего кошелька."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:140
+msgid ""
+"After these modifications, your configuration should look something like "
+"this:"
+msgstr ""
+"После внесения этих изменений полученная конфигурация должна выглядеть "
+"примерно так:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:153
+msgid ""
+"```\n"
+"{\n"
+"\t// [...]\n"
+"\t\"pools\": [\n"
+"\t\t{\n"
+"\t\t\t\"url\": \"pool.xmr.pt:3333\",\n"
+"\t\t\t\"user\": \"43YjW8SZov...\"\n"
+"\t\t}\n"
+"\t],\n"
+"\t// [...]\n"
+"}\n"
+"```\n"
+msgstr ""
+"```\n"
+"{\n"
+"\t// [...]\n"
+"\t\"pools\": [\n"
+"\t\t{\n"
+"\t\t\t\"url\": \"pool.xmr.pt:3333\",\n"
+"\t\t\t\"user\": \"43YjW8SZov...\"\n"
+"\t\t}\n"
+"\t],\n"
+"\t// [...]\n"
+"}\n"
+"```\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:155
+msgid "## Starting the miner"
+msgstr "## Запуск майнера"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:159
+msgid ""
+"Windows users can double click on xmrig.exe. Users of other operating "
+"systems should `cd` into the directory that contains XMRig and then type "
+"`./xmrig` and press return."
+msgstr ""
+"Пользователи Windows могут сделать это двойным кликом по файлу "
+"xmrig.exe. Пользователям других операционных систем следует воспользоваться "
+"командой `cd` и перейти в директорию, содержащую XMRig, затем ввести "
+"`./xmrig` и дождаться ответа на команду."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:162
+msgid ""
+"If you see green messages saying that shares have been accepted, "
+"congratulations, everything is working!"
+msgstr ""
+"Если вы видите зелёные сообщения о том, что данные были приняты, поздравляем "
+"- всё работает!"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:164
+msgid "## Troubleshooting"
+msgstr "## Диагностика и устранение неисправностей"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:166
+msgid "### Anti-virus keeps removing XMRig"
+msgstr "### Антивирус удаляет XMRig"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:171
+msgid ""
+"Some anti-viruses flag XMRig as malware because it is often deployed to "
+"infected computers to mine without the owner's consent. As it is your "
+"computer and you are configuring the miner to mine for you, it is safe to "
+"add XMRig to your anti-virus whitelist."
+msgstr ""
+"Некоторые антивирусы помечают XMRig как вредоносное программное обеспечение, "
+"поскольку XMRig часто устанавливается на заражённые компьютеры без согласия "
+"их владельцев в целях недобросовестного майнинга. Так как это ваш компьютер "
+"и вы настраиваете майнер для себя, можно уверенно добавить XMRig в список "
+"исключений вашего антивируса."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:173
+msgid "### Cannot read/set MSR"
+msgstr "### Не удаётся прочитать/настроить MSR"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:179
+msgid ""
+"On some CPUs, XMRig tries to increase performance by disabling certain "
+"features like your CPU's instruction prefetcher. These operations require "
+"root/administrator, so try right clicking xmrig.exe and running it as "
+"administrator, or running `sudo ./xmrig` on other systems."
+msgstr ""
+"В случае с некоторыми CPU XMRig пытается повысить производительность, "
+"отключая определённые функции, такие как буфер предварительной выборки "
+"команд CPU. Для этих операций требуются права администратора, поэтому "
+"попробуйте правой кнопкой мыши кликнуть по файлу xmrig.exe и запустить его "
+"от имени администратора или же запустить `sudo ./xmrig` в других системах.  "
+"systems."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:181
+msgid "### Algo not known"
+msgstr "### Алгоритм не известен"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:185
+msgid ""
+"Find the line in config.json that says `algo: null` and change it to `algo: "
+"\"rx/0\"`. By default, XMRig expects the pool to tell it which hashing "
+"algorithm to use."
+msgstr ""
+"Следует найти строку в config.json, в которой будет написано `algo: null`, и "
+"изменить текст на `algo: \"rx/0\"`. По умолчанию XMRig ожидает, что именно "
+"пул укажет ему, какой алгоритм использовать при майнинге."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:187
+msgid "### Huge Pages 0%"
+msgstr "### Большие страницы не загружаются (0%)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:189
+msgid "#### Allowing large pages on Windows"
+msgstr "#### Как разрешить загрузку больших страниц в Windows"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:191
+msgid ""
+"Taken from [the "
+"MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):"
+msgstr ""
+"Взято из "
+"[MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):"
+
+#. type: Bullet: '1. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid "On the Start menu, click Run. In the Open box, type gpedit.msc."
+msgstr ""
+"В меню Start (Запуск) выбрать Run (Запустить). В окошке Open (Открыть) "
+"набрать gpedit.msc."
+
+#. type: Bullet: '2. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid ""
+"On the Local Group Policy Editor console, expand Computer Configuration, and "
+"then expand Windows Settings."
+msgstr ""
+"В консоли Local Group Policy Editor (Редактор локальной групповой политики) "
+"перейти в Computer Configuration (Конфигурация компьютера), а затем в "
+"Windows Settings (Конфигурация Windows)."
+
+#. type: Bullet: '3. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid "Expand Security Settings, and then expand Local Policies."
+msgstr ""
+"Перейти в Security Settings (Параметры безопасности), а затем в Local "
+"Policies (Локальные политики)."
+
+#. type: Bullet: '4. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid "Select the User Rights Assignment folder."
+msgstr "Выбрать папку User Rights Assignment (Назначение прав пользователя)."
+
+#. type: Bullet: '5. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid "The policies will be displayed in the details pane."
+msgstr "Политика будет отображаться в окошке подробной информации."
+
+#. type: Bullet: '6. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid "In the pane, double-click Lock pages in memory."
+msgstr ""
+"В этом окошке двойным кликом выберите Lock pages in memory (Блокировка "
+"страниц в памяти)."
+
+#. type: Bullet: '7. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid ""
+"In the Local Security Setting â Lock pages in memory dialog box, click Add "
+"User or Group."
+msgstr ""
+"В диалоговом окне Local Security Setting — Lock pages in memory (Параметр "
+"локальной безопасности — Блокировка страниц в памяти) выберите Add User or "
+"Group (Добавить пользователя или группу)."
+
+#. type: Bullet: '8. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid ""
+"In the Select Users, Service Accounts, or Groups dialog box, add an account "
+"that you will run the miner on"
+msgstr ""
+"В диалоговом окне Select Users, Service Accounts, or Groups (Выбор: "
+"«Пользователи» или «Группы») добавить пользователя, под которым вы будете "
+"запускать майнер."
+
+#. type: Bullet: '9. '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:201
+msgid "Reboot for change to take effect."
+msgstr "Перезагрузите компьютер, чтобы изменения вступили в силу."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:203
+msgid "You may also need to launch the miner as administrator."
+msgstr "Также может понадобиться запустить майнер от имени администратора."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:205
+msgid "#### Allowing large pages on Linux"
+msgstr "#### Как разрешить загрузку больших страниц в Linux"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:208
+msgid ""
+"Firstly stop the miner (if it's running), run the following commands to "
+"enable large pages and then start the miner as root:"
+msgstr ""
+"Сначала необходимо остановить майнер (если он работает) и ввести следующие "
+"команды, чтобы включить возможность загрузки больших страниц, а затем "
+"запустить майнер от имени root:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:211
+msgid ""
+"\tsudo sysctl -w vm.nr_hugepages=1168\n"
+"\tsudo ./xmrig\n"
+msgstr ""
+"\tsudo sysctl -w vm.nr_hugepages=1168\n"
+"\tsudo ./xmrig\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:214
+msgid ""
+"You may have to increase 1168 depending on how many NUMA nodes your CPU(s) "
+"have."
+msgstr ""
+"Возможно, придётся увеличить значение 1168 в зависимости от того, сколько "
+"узлов NUMA поддерживает ваш CPU."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:216
+msgid "#### Allowing large pages on macOS"
+msgstr "#### Как разрешить загрузку больших страниц в macOS"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:218
+msgid "Huge pages are not supported on macOS."
+msgstr "Большие страницы не поддерживаются macOS."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:220
+msgid "### Balance Not Increasing"
+msgstr "### Баланс не увеличивается"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:225
+msgid ""
+"Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools, "
+"which means that you only get paid when a miner on the pool finds a "
+"block. If the pool you are mining on is small, this can take a few days to "
+"weeks."
+msgstr ""
+"Большинство пулов является <abbr title=\"Оплата за N последних шар\">пулами "
+"PPLNS</abbr>, а это означает, что вам платят только тогда, когда майнер, "
+"находящийся в пуле, находит блок. Если пул, в котором вы занимаетесь "
+"майнингом, небольшой, то это может занять от нескольких дней до нескольких "
+"недель."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:228
+msgid ""
+"Additionally, any blocks found must mature before they can be paid out. This "
+"takes 60 blocks (approx. 2 hours)."
+msgstr ""
+"Кроме того, все вычисленные блоки должны стать достаточно «зрелыми», прежде "
+"чем за них можно будет получить вознаграждение. На это уходит еще порядка 60 "
+"блоков (примерно 2 часа)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:230
+msgid "## Getting Help"
+msgstr "## Помощь"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:235
+msgid ""
+"An active Monero mining community on Reddit is "
+"[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also "
+"join [#monero-pools on "
+"freenode](https://webchat.freenode.net/?channel=#monero-pools)."
+msgstr ""
+"Активное майнинг-сообщество Monero на Reddit можно найти здесь: "
+"[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Вы также можете "
+"присоединиться к [#monero-pools на "
+"freenode](https://webchat.freenode.net/?channel=#monero-pools)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/mine-to-pool.md:237
+msgid "## Going Futher"
+msgstr "## Дальнейшие действия"
+
+#. type: Bullet: '* '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:244
+msgid ""
+"Consider using a subaddress just for mining, to prevent your address being "
+"linked to different services."
+msgstr ""
+"Подумайте об использовании отдельного подадреса для майнинга, чтобы ваш "
+"основной адрес нельзя было связать с различными сервисами."
+
+#. type: Bullet: '* '
+#: _i18n/en/resources/user-guides/mine-to-pool.md:244
+msgid ""
+"[Consider using Tor to connect to the "
+"pool](https://xmrig.com/docs/miner/tor) (or to a hidden service pool like "
+"HashVault, RespectXMR and MoneroOcean). This hides mining activity from your "
+"ISP, and prevents the pool from knowing who you are."
+msgstr ""
+"[Рассмотрите возможность использования Tor для подключения к "
+"пулу](https://xmrig.com/docs/miner/tor) (или к скрытым пулам, таким как "
+"HashVault, RespectXMR и MoneroOcean). Это позволит скрыть то, что вы "
+"занимаетесь майнингом, от вашего интернет-провайдера и не позволит самому "
+"пулу узнать, кто вы."
