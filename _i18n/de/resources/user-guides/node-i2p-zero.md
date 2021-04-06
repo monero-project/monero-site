@@ -1,6 +1,7 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 ## Schritte:
+
 1. Lade das [Monero-CLI-Wallet]({{  site.baseurl }}/downloads/#cli) herunter.
 2. Lade und entpacke die letzte (nicht-GUI-)Version von I2P-zero: https://github.com/i2p-zero/i2p-zero/releases
 3. Starte I2P-zero, indem du in das entpackte I2P-zero-Verzeichnis navigierst und `router/bin/i2p-zero` eingibst.
@@ -13,11 +14,13 @@
 Das war's! Ersetze nicht die dsc.b32.i2p-Adresse mit der deinen, sondern ausschließlich die XXXXXXX.b32.i2p-Adresse. Die dsc.b32.i2p-Adresse ist ein Seed-Node, der dir dabei hilft, andere via I2P zugängliche Monero-Nodes zu finden.
 
 ## Linux-Dienste so einrichten, dass Monerod und I2P-zero automatisch gestartet werden
+
 Bei Verwendung von Linux kann es nützlich sein, es so einzurichten, dass bei einem Neustart des Geräts alles automatisch gestartet und betrieben wird. Dies erreichst du durch die Erstellung von systemd-Servicedateien:
 
 Info: Stelle sicher, dass du die Versionsnummern in den untenstehenden Dateien mit den Versionsnummern der von dir heruntergeladenen Monero- und I2P-zero-Dateien ersetzt. Tausche ebenso den `<username>` und die `<usergroup>` mit deinen Linux-Benutzer- und Gruppennamen (falls du diese nicht kennst, kannst du sie mit den Befehlen `whoami` und `groups` herausfinden).
 
 ### /etc/systemd/system/i2pzero.service
+
 ````                                                
 [Unit]
 Description=i2pzero
@@ -34,6 +37,7 @@ WantedBy=multi-user.target
 ````
 
 ### /etc/systemd/system/monerod.service
+
 ````
 [Unit]
 Description=monerod
@@ -60,6 +64,7 @@ service monerod start
 Um den Output dieser Dienste anzusehen, kannst du `journalctl -u i2pzero` und `journalctl -u monerod` verwenden.
 
 ## Betreiben deines eigenen Seed-Nodes (Mipseed)
+
 Solltest du deinen eigenen Seed-Node (auch bekannt als "Mipseed") betreiben und damit anderen helfen wollen, via I2P zugängliche Monero-Nodes zu finden, folge den Anweisungen im [I2P-zero-Repository](https://github.com/i2p-zero/i2p-zero/blob/master/mipseed.md).
 
 *Die Originalversion dieser Anleitung wurde ursprünglich im [I2P-zero-Repository](https://github.com/i2p-zero/i2p-zero/blob/master/monerod-with-i2p-zero.md) hochgeladen.*

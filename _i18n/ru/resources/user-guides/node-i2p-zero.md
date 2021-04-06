@@ -1,6 +1,7 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 ## Шаги:
+
 1. Скачать [Monero CLI]({{  site.baseurl }}/downloads/#cli).
 2. Скачать и разархивировать последнюю версию I2P-zero (не для GUI): https://github.com/i2p-zero/i2p-zero/releases
 3. Запустить I2P-zero. Для этого войти в распакованную директорию I2P-zero и набрать: `router/bin/i2p-zero`
@@ -13,11 +14,13 @@
 Готово! Не следует менять адрес dsc****.b32.i2p на ваш собственный. Заменяется только XXXXXXX.b32.i2p. dsc****.b32.i2p является сид-узлом, который поможет вам открыть другие доступные через I2P узлы Monero.
 
 ## Настройка служб Linux для автоматического запуска monerod и I2P-zero
+
 Если вы работаете под Linux, было бы полезно настроить систему так, чтобы всё запускалось автоматически, на тот случай, если машина когда-либо будет перезагружена. Для этого необходимо создать файлы службы systemd:
 
 Примечание: следует позаботиться о замене номера версий в файлах, указанных ниже, на номера соответствующих загружаемых вами версий Monero и I2P-zero. Также необходимо заменить`<username>` и `<usergroup>` на используемые вами в Linux имя пользователя и имя пользовательской группы (при этом следует пользоваться командами `whoami` и `groups`, если вы их не знаете).
 
 ### /etc/systemd/system/i2pzero.service
+
 ````                                                
 [Unit]
 Description=i2pzero
@@ -34,6 +37,7 @@ WantedBy=multi-user.target
 ````
 
 ### /etc/systemd/system/monerod.service
+
 ````
 [Unit]
 Description=monerod
@@ -58,6 +62,8 @@ service monerod start
 ````
 
 Чтобы увидеть, как работают эти службы, следует использовать команды `journalctl -u i2pzero` и `journalctl -u monerod`
+
+## Running your own seed node (mipseed)
 
 Запуск собственного сид-узла (mipseed)
 Если вы хотите запустить собственный сид-узел (известный как 'mipseed'), чтобы помочь другим людям находить доступные через I2P узлы Monero, воспользуйтесь инструкциям, расположенными [в репозитории I2P-zero](https://github.com/i2p-zero/i2p-zero/blob/master/mipseed.md).

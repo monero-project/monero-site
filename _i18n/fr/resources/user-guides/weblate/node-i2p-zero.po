@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-26 13:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:2
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:4
+msgid "## Steps:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid "Download the [Monero CLI]({{ site.baseurl }}/downloads/#cli)."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid ""
+"Download and unzip the latest (non-GUI) version of I2P-zero: "
+"https://github.com/i2p-zero/i2p-zero/releases"
+msgstr ""
+
+#. type: Bullet: '3. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid ""
+"Run I2P-zero by entering the i2p-zero unzipped directory and typing: "
+"`router/bin/i2p-zero`"
+msgstr ""
+
+#. type: Bullet: '4. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid ""
+"(optional) Find out your randomly assigned I2P port by typing: "
+"`router/bin/tunnel-control.sh router.externalPort`. For privacy reasons, do "
+"not disclose this port number to other people. Tell your firewall to forward "
+"traffic through to this port so that your I2P node is publicly reachable. If "
+"you have no ability to allow incoming connections, everything will still "
+"work, but your I2P node will not be helping the I2P network as much as it "
+"could."
+msgstr ""
+
+#. type: Bullet: '5. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid ""
+"Create a socks tunnel for outgoing I2P connections by typing: "
+"`router/bin/tunnel-control.sh socks.create 8060`"
+msgstr ""
+
+#. type: Bullet: '6. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid ""
+"Create a server tunnel for incoming I2P connections by typing: "
+"`router/bin/tunnel-control.sh server.create 127.0.0.1 8061`."
+msgstr ""
+
+#. type: Bullet: '7. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid ""
+"The command above will result in an I2P address being printed to the command "
+"line, which will end with `.b32.i2p`. This is your new I2P address."
+msgstr ""
+
+#. type: Bullet: '8. '
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:13
+#, markdown-text
+msgid ""
+"Run monerod by typing the following, replacing "
+"`XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p` with your own I2P address that was "
+"printed from step 6: `monerod --tx-proxy i2p,127.0.0.1:8060 --add-peer "
+"core5hzivg4v5ttxbor4a3haja6dssksqsmiootlptnsrfsgwqqa.b32.i2p --add-peer "
+"dsc7fyzzultm7y6pmx2avu6tze3usc7d27nkbzs5qwuujplxcmzq.b32.i2p --add-peer "
+"sel36x6fibfzujwvt4hf5gxolz6kd3jpvbjqg6o3ud2xtionyl2q.b32.i2p --add-peer "
+"yht4tm2slhyue42zy5p2dn3sft2ffjjrpuy7oc2lpbhifcidml4q.b32.i2p "
+"--anonymous-inbound XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p,127.0.0.1:8061 "
+"--detach`"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:15
+msgid ""
+"That's it! Do not replace the dsc****.b32.i2p address with yours, only "
+"replace the XXXXXXX.b32.i2p one. The dsc****.b32.i2p is a seed node that "
+"will help you discover other I2P-accessible monero nodes."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:17
+msgid ""
+"## Setting up Linux services so that monerod and I2P-zero are automatically "
+"started"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:19
+msgid ""
+"If you are running Linux, it would be useful to set this all up to run "
+"automatically if the machine is ever rebooted. You can do this by creating "
+"systemd service files:"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:21
+msgid ""
+"Note: take care to replace version numbers in the files below with the "
+"version numbers of monero and i2p-zero that you download. Also replace "
+"`<username>` and `<usergroup>` with your Linux user and group names (use "
+"`whoami` and `groups` commands if you don't know them)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:23
+msgid "### /etc/systemd/system/i2pzero.service"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:28
+#, no-wrap
+msgid ""
+"````                                                \n"
+"[Unit]\n"
+"Description=i2pzero\n"
+"After=network.target\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:34
+msgid ""
+"[Service] Type=simple "
+"ExecStart=/home/<username>/i2p-zero-linux.v1.17/router/bin/i2p-zero "
+"User=<username> Group=<usergroup>"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:38
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:56
+msgid "[Install] WantedBy=multi-user.target ````"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:40
+msgid "### /etc/systemd/system/monerod.service"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:45
+msgid "```` [Unit] Description=monerod After=network.target"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:52
+msgid ""
+"[Service] Type=forking PIDFile=/home/<username>/monerod.pid "
+"ExecStart=/home/<username>/monero-x86_64-linux-gnu-v0.16.0.0/monerod "
+"--tx-proxy i2p,127.0.0.1:8060 --add-peer "
+"core5hzivg4v5ttxbor4a3haja6dssksqsmiootlptnsrfsgwqqa.b32.i2p --add-peer "
+"dsc7fyzzultm7y6pmx2avu6tze3usc7d27nkbzs5qwuujplxcmzq.b32.i2p --add-peer "
+"sel36x6fibfzujwvt4hf5gxolz6kd3jpvbjqg6o3ud2xtionyl2q.b32.i2p --add-peer "
+"yht4tm2slhyue42zy5p2dn3sft2ffjjrpuy7oc2lpbhifcidml4q.b32.i2p "
+"--anonymous-inbound XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.b32.i2p,127.0.0.1:8061 "
+"--detach --pidfile /home/<username>/monerod.pid User=<username> "
+"Group=<usergroup>"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:63
+msgid ""
+"After creating these two files, run: ```` systemctl daemon-reload service "
+"i2pzero start service monerod start ````"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:65
+msgid ""
+"To see the output of these services, use `journalctl -u i2pzero` and "
+"`journalctl -u monerod`"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:67
+msgid "## Running your own seed node (mipseed)"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:69
+msgid ""
+"If you want to run your own seed node (known as a 'mipseed') to help other "
+"people discover I2P-accessible Monero nodes, follow instructions [in the "
+"i2p-zero repo](https://github.com/i2p-zero/i2p-zero/blob/master/mipseed.md)."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/node-i2p-zero.md:70
+#, no-wrap
+msgid ""
+"*The original version of this guide was originally uploaded on the [i2p-zero "
+"repository](https://github.com/i2p-zero/i2p-zero/blob/master/monerod-with-i2p-zero.md).*\n"
+msgstr ""
