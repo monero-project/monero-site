@@ -25,7 +25,7 @@ permalink: /resources/developer-guides/index.html
                         <p>{% t developer-guides.walletrpc_descr %}</p>
                 </div>
             </div>
-            <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
