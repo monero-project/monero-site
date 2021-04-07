@@ -197,7 +197,6 @@ permalink: /downloads/index.html
                 <p>{% t downloads.packages %} <a href="https://github.com/monero-project/monero#installing-monero-from-a-package">{% t downloads.packages_link %}</a>.</p>
                 <h3>{% t downloads.antivirus %}</h3>
                 <p>{% t downloads.avwarning %} <a href="{{ site.baseurl }}/get-started/faq/#antivirus">{% t downloads.moreinfofaq %}</a>.</p>
-                </div>
                 <h3>{% t downloads.verify %}</h3>
                 <p>{% t downloads.verify1 %} <i>{% t downloads.verify2 %}</i></p><br>
                   <details>
@@ -214,6 +213,7 @@ permalink: /downloads/index.html
                   </details>
                 <h3>{% t downloads.helpsupport %}</h3>
                   <p>{% t downloads.cli_helpsupport %}.</p>
+                </div>
                 </div>
             </div>
           </div>
