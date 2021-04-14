@@ -2929,6 +2929,8 @@ footer a.white:hover, a.white:focus {
 .site-wrap {
     padding-bottom: 470px;
     padding-bottom: 29.375rem;
+    margin-bottom: -470px;
+    margin-bottom: -29.375rem;
 }
 
 footer {
@@ -2953,6 +2955,7 @@ footer {
 
 .site-wrap {
     padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 footer {
@@ -3366,20 +3369,19 @@ span.icon-browser {
 }
 
 .mob.dropdowndrop input:checked ~ ul#menu {
-    display: block;
-    transition:max-height 0.5s ease-in;
+    max-height: 30rem;
 }
 
 .mob.dropdowndrop label{
-  position: relative;
-  font-size: 1.125rem;
-  font-weight: 500;
-  cursor: pointer;
-  color: #4c4c4c;
-  -webkit-transition: all ease-out .2s;
-  -moz-transition: all ease-out .2s;
-  -o-transition: all ease-out .2s;
-  transition: all ease-out .2s;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #4c4c4c;
+    -webkit-transition: all ease-out .2s;
+    -moz-transition: all ease-out .2s;
+    -o-transition: all ease-out .2s;
+    transition: all ease-out .2s;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -3388,22 +3390,22 @@ span.icon-browser {
 }
 
 .mob.dropdowndrop label:after{
-  content: "";
-  position: absolute;
-  display: block;
-  top: 50%;
-  right: 1rem;
-  width: 0;
-  height: 0;
-  border-top: 4px solid #4c4c4c;
-  border-bottom: 0 solid #4c4c4c;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  transition: border-bottom .1s, border-top .1s .1s;
-  }
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 1rem;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #4c4c4c;
+    border-bottom: 0 solid #4c4c4c;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transition: border-bottom .1s, border-top .1s .1s;
+}
 
 .mob.dropdowndrop input:checked ~ label {
-  color: #d26e2b;
+    color: #d26e2b;
 }
 
 .mob.dropdowndrop input:hover ~ .mob.dropdowndrop label:after {
@@ -3419,19 +3421,19 @@ span.icon-browser {
 }
 
 .mob.dropdowndrop ul#menu {
-    display:none;
+    max-height: 0;
     padding:0;
-    overflow:hidden;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
     list-style-type:none;
+    -webkit-transition: max-height 0.3s;
+    -o-transition: max-height 0.3s;
+    transition: max-height 0.3s;
     -moz-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
     box-shadow: 0 2px 4px rgba(50,50,93,.1);
-    transition:max-height 0.5s ease-out;
-    min-width:100%;
-    text-align: left;
-    background: #ffffff;
-    width: 100%;
-    margin: 0;
 }
 
 .mob.dropdowndrop ul#menu li a {
@@ -4064,6 +4066,10 @@ h3.months {
   margin-top: 0;
 }
 
+.feed {
+    position: relative;
+}
+
 .feed span {
   height: 30px;
   width: 30px;
@@ -4073,7 +4079,8 @@ h3.months {
 
 .feed span.feed-pic {
   background: url(../img/feed.svg) no-repeat;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 @media only screen and (max-width: 75rem) {
@@ -4091,14 +4098,6 @@ h3.months {
     margin-top: 1.7rem;
     margin-bottom: 1.7rem;
 }
-}
-
-@media only screen and (max-width: 48rem) {
-
-}
-
-@media only screen and (max-width: 30rem) {
-
 }
 
 
@@ -4208,10 +4207,6 @@ p.hangouts-social {
   display: inline-block;
   vertical-align: middle;
   width: 3rem;
-}
-
-@media only screen and (max-width: 75rem) {
-
 }
 
 @media only screen and (max-width: 62rem) {
@@ -4499,7 +4494,6 @@ label.accordion {
 
 .tab-content {
   max-height: 0;
-  border-radius: 3px;
   -webkit-transition: max-height 0.3s;
   -o-transition: max-height 0.3s;
   transition: max-height 0.3s;
@@ -4511,7 +4505,7 @@ label.accordion {
 }
 
 input.accordion:checked ~ .tab-content {
-  max-height: 100rem;
+  max-height: 85rem;
 }
 
 label.accordion::after {
