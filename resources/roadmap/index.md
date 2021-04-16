@@ -75,7 +75,7 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.hfminblock %}</li>
                                 <h3 class="months">{% t roadmap.jul %}</h3>
                                     <li class="completed">{% t roadmap.webredesign %}</li>
-                                <h3 class="months">{% t roadmap.sept %}</h3>
+                                <h3 class="months">{% t roadmap.sep %}</h3>
                                     <li class="completed"><a href="{{ site.baseurl_root }}/2017/09/07/monero-0.11.0.0-released.html" target="_blank" rel="noreferrer noopener">{% t roadmap.released-0-11-0 %}</a></li>
                                     <li class="completed">{% t roadmap.fluffyblocks %}</li>
                                     <li class="completed">{% t roadmap.guioutbeta %}</li>
