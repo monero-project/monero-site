@@ -3891,6 +3891,10 @@ h3.months {
 
 @media only screen and (max-width: 30rem) {
 
+.roadmap ul {
+    padding-inline-start: 0;
+}
+
 .pre-roadmap .col-xs-4 {
     -ms-flex-preferred-size: 90%;
     flex-basis: 90%;
