@@ -48,7 +48,7 @@ permalink: /community/sponsorships/index.html
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <img src="/img/sponsors/forked_logo.png" alt="Fork Networking logo">
+                            <a class="ext-noicon" href="https://www.forked.net" target="_blank" rel="noreferrer"><img src="/img/sponsors/forked_logo.png" alt="Fork Networking logo"></a>
                             <p>{% t sponsorships.forknetworking %}</p>
                         </div>
                     </div>
