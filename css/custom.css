@@ -1666,6 +1666,7 @@ h2, .info-block h2 {
     -ms-flex: 1;
     padding: 4rem 2.5rem;
     word-wrap: break-word;
+    overflow: hidden;
 }
 
 .full>.info-block.text-adapt {
@@ -2640,11 +2641,19 @@ img.monero-logo {
     display: block;
 }
 
+.main-info #btn-primary-box {
+    display: flex;
+    justify-content: center;
+}
+
 .main-info p a.btn-auto, a.btn-primary {
     background-color: #d26e2b;
     border: 2px solid #d26e2b;
     color: #ffffff;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
 }
 
 .main-info p a.btn-auto:hover, a.btn-primary:hover, .main-info p a.btn-auto:focus, a.btn-primary:focus, .main-info p a.btn-auto:active, a.btn-primary:active {
