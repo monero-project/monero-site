@@ -40,17 +40,17 @@ permalink: /community/hangouts/index.html
                                     <h2>{% t hangouts.resources %}</h2>
                                 </div>
                             </div>
-                            <div class="row center-xs">
-                                <p>{% t hangouts.resources_para %}</p>
-                            </div>
-                            <div class="row relays center-xs">
-                                <div class="col-md-4 col-sm-4 col-xs-4">
+                            <div class="row around-xs">
+                                <div class="center-xs">
+                                    <p>{% t hangouts.resources_para %}</p>
+                                </div>
+                                <div class="col">
                                     <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>
                                 </div>
-                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="col">
                                     <p><a href="https://mattermost.getmonero.org/" class="btn-link btn-fixed">Mattermost</a></p>
                                 </div>
-                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="col">
                                     <p><a href="https://taiga.getmonero.org/" class="btn-link btn-fixed">Taiga</a></p>
                                 </div>
                             </div>
