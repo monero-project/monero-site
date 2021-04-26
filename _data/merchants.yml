@@ -19,8 +19,6 @@
       url: https://bitexbook.com/
     - name: Bitfinex (XMRUSD, XMRBTC)
       url: https://www.bitfinex.com/
-    - name: Bitqist - Instant exchange
-      url: https://bitqist.com/
     - name: Bisq; decentralized exchange (previously Bitsquare)
       url: https://bisq.network/
     - name: ChangeHero - Instant exchange
