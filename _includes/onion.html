@@ -1,1 +1,7 @@
-http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion/
+{% capture onion_url %}
+  {% if site.lang == "en" %}
+    http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion{{ page.url }}
+  {% else %}
+    http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion/{{ site.lang }}{{ page.url }}
+  {% endif %}
+{% endcapture %}{{ onion_url | strip }}
