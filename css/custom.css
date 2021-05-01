@@ -3277,6 +3277,11 @@ span.icon-browser {
   background-position: 0 -355px;
 }
 
+span.icon-git {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: -94px -140px;
+}
+
 .downloads a.ext-noicon {
   border-bottom: none;
 }
