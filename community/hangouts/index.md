@@ -83,9 +83,6 @@ permalink: /community/hangouts/index.html
                  {% for rooms_list in site.data.chats.chats %}
                    {% for room in rooms_list %}
                      {% if room[0] == channel[0] %}
-                       {% if rooms_list.mattermost %}
-                         <a class="chats-img" href="{{ rooms_list.mattermost }}"><img class="mattermost" src="/img/mattermost.png" title="MatterMost" alt="Mattermost logo"></a>
-                       {% endif %}
                        {% if rooms_list.matrix %}
                          <a class="chats-img" href="{{ rooms_list.matrix }}"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a>
                        {% endif %}
