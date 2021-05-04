@@ -1,42 +1,32 @@
 chats:
 - monero:
   matrix: https://matrix.to/#/!psOvWRiQkyosOPKvaO:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero
 
 - monero-community:
   matrix: https://matrix.to/#/!WzzKmkfUkXPHFERgvm:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-community
 
 - monero-dev: 
   matrix: https://matrix.to/#/!VDQXWJoFsesLtbGdTT:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-dev
 
 - monero-markets:
   matrix: https://matrix.to/#/!TlVgUtVNZychNpMzKW:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-markets
 
 - monero-offtopic:
   matrix: https://matrix.to/#/!qqRhJzAUfTJRpMHqIP:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-offtopic
 
 - monero-otc:
 
 - monero-pools:
   matrix: https://matrix.to/#/!ELYTQCXXdbEHObdtNR:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-pools
 
 - monero-research-lab:
   matrix: https://matrix.to/#/!toFcRZtpaiwiyapgVO:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-research-lab
 
 - monero-translations:
   matrix: https://matrix.to/#/!gOsXdgyxhvIygdtBpS:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-translations
 
 - monero-hardware:
   matrix: https://matrix.to/#/!HoCZRUWeTZDNBfUcDr:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-hardware
 
 - monero-site:
   matrix: https://matrix.to/#/!txpwSzQzkuUaVbtsIx:monero.social
-  mattermost: https://mattermost.getmonero.org/monero/channels/monero-site
