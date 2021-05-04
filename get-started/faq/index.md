@@ -69,12 +69,12 @@ permalink: /get-started/faq/index.html
                         <h2>{% t faq.resandhelp %}</h2>
                     </div>
                 </div>
-                <h3><a href="https://monero.stackexchange.com/">StackExchange</a></h3>
-                    <p>{% t faq.stackexchange %}</p>
                 <h3><a href="{{ site.baseurl }}/resources/user-guides/">{% t titles.userguides %}</a></h3>
                     <p>{% t faq.userguides %}</p>
                 <h3><a href="{{ site.baseurl }}/resources/developer-guides/">{% t titles.developerguides %}</a></h3>
                     <p>{% t faq.devguides %}</p>
+                <h3><a href="https://monero.stackexchange.com/">StackExchange</a></h3>
+                    <p>{% t faq.stackexchange %}</p>
                 <h3><a href="https://www.reddit.com/r/monerosupport/">r/monerosupport</a></h3>
                     <p>{% t faq.monerosupport %}</p>
                 <h3><a href="https://www.monero.how/">Monero.how</a></h3>
