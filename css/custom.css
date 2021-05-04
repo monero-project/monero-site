@@ -965,7 +965,7 @@ body {
     background-color: #edeef0;
 }
 
-body p, body blockquote, body ul {
+body p, body blockquote, body ol, body ul {
     line-height: 1.7;
     font-size: 1.0625rem;
 }
