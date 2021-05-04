@@ -33,7 +33,7 @@ titles:
   merchants: Merchants & Services
   about: About Monero
   roadmap: Roadmap
-  researchlab: Monero Research Lab
+  researchlab: Monero Research Lab (MRL)
   moneropedia: Moneropedia
   userguides: User Guides
   developerguides: Developer Guides
@@ -705,7 +705,7 @@ roadmap:
 
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
-  mrl_papers: Monero Research Lab Papers
+  mrl_papers: Published Papers
   abstract: Abstract
   introduction: Introduction
   read-paper: Read Paper
