@@ -1,12 +1,12 @@
 ---
 terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments"]
-summary: "Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it"
+summary: "Pedersen commitments are cryptographic algorithms that allow a prover to commit to a certain value without revealing it or being able to change it"
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 ### The Basics
 
-Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it.
+Pedersen commitments are cryptographic algorithms that allow a prover to commit to a certain value without revealing it or being able to change it.
 
 When you spend Monero, the value of the inputs that you are spending and the value of the outputs you are sending are encrypted and opaque to everyone except the recipient of each of those outputs. Pedersen commitments allow you to send Monero without revealing the value of the transactions. Pedersen commitments also make it possible for people to verify that transactions on the blockchain are valid and not creating Monero out of thin air.
 
