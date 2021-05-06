@@ -19,6 +19,7 @@ permalink: /resources/research-lab/index.html
                     <input id="tab-2020312" type="checkbox" name="tabs" class="accordion">
                     <label for="tab-2020312" class="accordion">IACR 2020/312: {% t research-lab.iacr2020312 %}</label>
                     <div class="tab-content">
+                        <p>{% t research-lab.iacr2020312_note %}</p>
                         <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.iacr2020312_abstract %}</p>
                         <div class="center-xs">
                             <p><a class="btn-link btn-auto btn-primary" target="_blank" rel="noreferrer noopener" href="https://eprint.iacr.org/2020/312">{% t research-lab.read-paper %}</a></p>
