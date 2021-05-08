@@ -24,6 +24,9 @@ permalink: /community/hangouts/index.html
             <li>
                 <a class="ext-noicon" href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener" aria-label="Gitlab logo"><div class="social-icon gitlab"></div></a>
             </li>
+            <li>
+                <a class="ext-noicon" href="https://telegram.me/monero" target="_blank" rel="noreferrer noopener" aria-label="Telegram logo"><div class="social-icon telegram"></div></a>
+            </li>
         </ul>
     </section>
 </div>

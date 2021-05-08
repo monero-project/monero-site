@@ -4191,6 +4191,16 @@ p.hangouts-social {
   background-position: -176px -190px;
 }
 
+.social-icon.telegram {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: -128px -239px;
+}
+
+.social-icon.telegram:hover {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: -176px -238px;
+}
+
 .hangouts .irc .col-md-4 {
     padding: 1rem 0.5rem;
 }
