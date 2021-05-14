@@ -1,25 +1,25 @@
 # 'vers' is meant to be used in case of a platform-specific release (e.g. vers: "0.18.2.0 - Mumbling Potato")
 
 gui:
-- version: "0.17.2.1 - Oxygen Orion"
+- version: "0.17.2.2 - Oxygen Orion"
   downloads:
    - platform: Windows 64-bit (Installer)
-     hash: 8761082c8fd907c59effd30156a98bcb9c01a48b14eafde1e9a8463fc5f81d16
+     hash: ff2826a4437080470ceeaac43d0cede89798caf4a864a9cd13430ed2c63aca14
      link: https://downloads.getmonero.org/gui/win64install
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: ac12efea2f99e8ac0f77f3ba73ea333b4f44d8a08149f6c2ab5b7662e2f9b8f3
+     hash: 5d20829f43c431135455ec9bd788889e59dda4c6f74b6eaa92eec5411d9246e2
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
    - platform: Mac OS X 64-bit
-     hash: f8c2b2eefb8b25ac2e2beb54c1814c947da5239192a1a2873b7c89ed14761215
+     hash: 3ee4e9145b0545ba4e5c47b89b64bc558c8eeb7887d260b3bd30f6a215029964
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: 72dfca40797201604a6b2fb97935037f62d3153360695cf732dee3d12e167da3
+     hash: 0088b133febdb151a3753393b4dc8b06111b844c0fca14e512f3c8d56a2a5b97
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 

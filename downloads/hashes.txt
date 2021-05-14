@@ -21,27 +21,27 @@ c772070ebdfe9e0d6abda5073808e648e69f8c35f8010e66b80f45a6bdb01792  monero-win-x86
 7801945b040f39db5497335d5219768773aa28bef7c5e88a61c1c8b639ccb412  monero-source-v0.17.2.0.tar.bz2
 #
 ## GUI
-8761082c8fd907c59effd30156a98bcb9c01a48b14eafde1e9a8463fc5f81d16  monero-gui-install-win-x64-v0.17.2.1.exe
-72dfca40797201604a6b2fb97935037f62d3153360695cf732dee3d12e167da3  monero-gui-linux-x64-v0.17.2.1.tar.bz2
-f8c2b2eefb8b25ac2e2beb54c1814c947da5239192a1a2873b7c89ed14761215  monero-gui-mac-x64-v0.17.2.1.dmg
-ac12efea2f99e8ac0f77f3ba73ea333b4f44d8a08149f6c2ab5b7662e2f9b8f3  monero-gui-win-x64-v0.17.2.1.zip
-6a3b41a13e991267fd262f5024545bf1d1fc1ec0f0445c19b07a60a118dc0fdb  monero-gui-source-v0.17.2.1.tar.bz2
+ff2826a4437080470ceeaac43d0cede89798caf4a864a9cd13430ed2c63aca14  monero-gui-install-win-x64-v0.17.2.2.exe
+0088b133febdb151a3753393b4dc8b06111b844c0fca14e512f3c8d56a2a5b97  monero-gui-linux-x64-v0.17.2.2.tar.bz2
+3ee4e9145b0545ba4e5c47b89b64bc558c8eeb7887d260b3bd30f6a215029964  monero-gui-mac-x64-v0.17.2.2.dmg
+5d20829f43c431135455ec9bd788889e59dda4c6f74b6eaa92eec5411d9246e2  monero-gui-win-x64-v0.17.2.2.zip
+8d6770bb3a8840eac9ce48b1a598ef83a5f5ec677e6edb6b7ad8e87b26e9d404  monero-gui-source-v0.17.2.2.tar.bz2
 #
 #
 # ~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmB21cIACgkQ8K9NRioL
-35KcOw/9GzBGzUrfuGYkXRvZg7x8Gutw4ZFaMf9CaoJGvg3RpwK9vBRR2/uogAIc
-s7kD5iowPBtB5v2jM4gSuimYSIrI1jte2DdSHgLiNXh1hzcNh7zjZaA1z3j4tR2r
-Uck/it/YcvoH8rnnCmWNbgLL95DppSD+bRVtUk0huMdmObvg2hnBBHALSIab6Z3V
-wzc2drupIeHsrgcu+qW2clB1m0GHIUFIXzfrhCYfRwfgJcZfDC4vb7Rv5kHruXnU
-irwDtSvGFVND0EJo9+1eFfjqNearSa9WJhC5DkmY9obGEVZ3UAaPOiT381jrd5wE
-xvFLzsTf2RNzPJlW+wOnlDOHFLlaSjUAUGYAdfHplfTunFq/5tFlIgZx5zUcK810
-70Ihe3wrQGM+kI3kpg0KfSsTDDGk5MVmwZqPmX3e8jqMFA82H7Q3Snqh0HhDVLLO
-Dakq93gW0DBA265BLrtxDT15zC31psMk51zN79hT1mMAZbPn/itAIKmEcL+iyL8i
-bVBMyLrwLwO7F+dyidDYvCIRob/ceCO4Ym5z6udl6UvB9pbAGwci41lge6lcsjG/
-zrO/raKo+ShUnC64heQ4r5c4lyWDsGVs5R4WUy+5WfK3BxUgRUqoisGDSUM45eqc
-5KB1vQn26MBpH/tsmdVd5eUI4mD0ZmkMhVSq82T/balyVhkc7C0=
-=1+lJ
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmCeUbgACgkQ8K9NRioL
+35J7HQ//ZY+qXKuNscOc6e1jReK/m7eZj/+FIrCnhc56vpXEll0EUlqj//SObE71
+uil/vEhrJiAwXi2YpAMxIV6WsF//yrcUBzNQC/1EEm3kaAidoG3CSdZ10klp4eB5
+Sp7yTtYIl5vcQBR2lVIoUnw72+K0rKLU4MFzA5xavf4in8UNwCu1+horsEaPQ3hS
+UeP0JURJDdE2F3ajpgA28KlcMVRltPCr9QlOMNgxC6lHOy3a4z3ybkLIaiEkgYuJ
+HBZnG7dAY1GFy+Sz2S6ywK6Qv8cti8OdMsuki0xRv/IK9SZJerie0Galm+Uyvujs
+wFYul+uNJRwYWhr/Yga1yBc+lq3ybSEsvmeZ1VwFyfbz/+dIoA9r757mxg2nUUUY
+yvwSEQXzzTywAuJCofSNoUFyqESpIMlfEKLEcenTujE5YiQhXgQanUQeoVt2TiR2
+p+ileV0y3XWba8tA2MXQo3T/wVRfnMCzv9dvxLW980awzUUr72lpTbREdUtAEfHl
+lP4vQeeJun2lGAnd5MBvNuPsqh+DEC+AmjIrBUZecnpHcA9Me2wLh9xOUlZ7vSgM
+H+VF74YUB6AYPK5ebPYz8TuN7+ko2gjc8vv2mavM1CoGM3txMx4lsWQFC1p5Cj0b
+Bfz3OBUK0Kyx/hgA3Xjp8wx7Sudt3/qoFbel5XVApuBy/qRoxEg=
+=BSge
 -----END PGP SIGNATURE-----
