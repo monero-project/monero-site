@@ -8,13 +8,13 @@ permalink: /resources/roadmap/index.html
     <div class="pre-roadmap container">
         <div class="row center-xs">
             <div class="col-sm-3 col-xs-4">
-                <p class="pre-completed">{% t roadmap.completed %}</p>
+                <p><img class="emoji" src="/img/emojis/2714.svg">{% t roadmap.completed %}</p>
             </div>
             <div class="col-sm-3 col-xs-4">
-                <p class="pre-ongoing">{% t roadmap.ongoing %}</p>
+                <p><img class="emoji" src="/img/emojis/1F6A7.svg">{% t roadmap.ongoing %}</p>
             </div>
             <div class="col-sm-3 col-xs-4">
-                <p class="pre-upcoming">{% t roadmap.upcoming %}</p>
+                <p><img class="emoji" src="/img/emojis/1F9ED.svg">{% t roadmap.upcoming %}</p>
             </div>
         </div>
     </div>

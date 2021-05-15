@@ -1495,38 +1495,6 @@ h2#main-h2 {
     border-bottom: 2px solid #a1aabb;
 }
 
-.pre-roadmap {
-    margin-bottom: 2rem;
-}
-
-.pre-roadmap p {
-    margin-bottom: 2.5rem;
-    display: inline;
-    padding: 0;
-}
-
-.pre-roadmap p.pre-completed:before {
-  content: "\02714";
-  color: green;
-  font-size: 2.5rem;
-  padding-right: 4%;
-  vertical-align: middle;
-}
-
-.pre-roadmap p.pre-ongoing:before {
-  content: "\01F6A7";
-  font-size: 2rem;
-  padding-right: 4%;
-  vertical-align: middle;
-}
-
-.pre-roadmap p.pre-upcoming:before {
-  content: "\01F9ED";
-  font-size: 2rem;
-  padding-right: 4%;
-  vertical-align: middle;
-}
-
 .hangouts ul {
     margin-bottom: 2.5rem;
 }
@@ -1564,10 +1532,6 @@ h3 {
 
 h1 {
     margin: 1rem 0 0.7rem 0;
-}
-
-.pre-roadmap p, .container.description p {
-    margin-bottom: 1.5rem;
 }
 
 .container.description p {
@@ -1627,11 +1591,6 @@ h1 {
 
 .container.description p {
     padding: 0 1rem;
-}
-
-.pre-roadmap p, .container.description p {
-    margin-bottom: 1rem;
-    margin-top: -0.5rem;
 }
 
 .about-main h3, .about-monero h3 {
@@ -3600,34 +3559,38 @@ h3.months {
   margin-bottom: 0.5rem
 }
 
+.pre-roadmap {
+  margin-bottom: 2rem;
+}
+
+img.emoji {
+  width: 2.5rem;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
 .roadmap ul {
   list-style: none ;
   margin-left: 2rem;
   line-height: 1.3;
 }
 
+.roadmap li:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3rem;
+}
+
 .roadmap li.completed:before {
-  content: "\02714";
-  color: green;
-  font-size: 2rem;
-  padding-right: 2%;
-  vertical-align: -8%;
+  content: url("/img/emojis/2714.svg");
 }
 
 .roadmap li.ongoing:before {
-  content: "\01F6A7";
-  font-size:2rem;
-  padding-right: 2%;
-  vertical-align: middle;
-  line-height: 1.6;
+  content: url("/img/emojis/1F6A7.svg");
 }
 
 .roadmap li.upcoming:before {
-  content: "\01F9ED";
-  font-size:2rem;
-  padding-right: 2%;
-  vertical-align: middle;
-  line-height: 1.6;
+  content: url("/img/emojis/1F9ED.svg");
 }
 
 .roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming {
