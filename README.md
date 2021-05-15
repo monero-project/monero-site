@@ -384,3 +384,8 @@ Where `LINK-TO-PUBLICATION` is the URL of the actual publication. If it's a reso
 After you found the `library` category, add your placeholder and value after the last entry of the list. For example: `mypublication: "This is the description of my publication"`. In this example `mypublication` is the placeholder and needs to be also added to the entry in `index.md`, the result will be `<p>{% t library.mypublication %}</p>` and the value contained in the placeholder will be correctly displayed.
 
 Save the changes.
+
+## License
+This repository is licensed under the [BSD 3-Clause "New" or "Revised" License](LICENSE).
+
+All emojis designed by [OpenMoji](https://openmoji.org/) – the open-source emoji and icon project. License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#)
