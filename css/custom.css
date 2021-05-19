@@ -1434,8 +1434,7 @@ p, h4 {
 h1#main-h1 {
     font-family: 'Hind', 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 3.4375rem;
-    text-transform: uppercase;
+    font-size: 2.6rem;
     margin: 0;
     line-height: 1;
     padding: 0;
@@ -1576,7 +1575,6 @@ h1 {
 
 h1#main-h1 {
     font-size: 3rem;
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -2641,9 +2639,9 @@ img.monero-logo {
     display: block;
 }
 
-.main-info #btn-primary-box {
+.main-info #btn-top-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .main-info p a.btn-auto, a.btn-primary {
@@ -2654,6 +2652,12 @@ img.monero-logo {
     justify-content: center;
     width: 100%;
     padding: 0;
+}
+
+a.btn-primary-top {
+  background-color: #d26e2b;
+  border: 2px solid #d26e2b;
+  color: #ffffff;
 }
 
 .main-info p a.btn-auto:hover, a.btn-primary:hover, .main-info p a.btn-auto:focus, a.btn-primary:focus, .main-info p a.btn-auto:active, a.btn-primary:active {
@@ -2742,6 +2746,11 @@ p.main-downloads {
     padding-left: 0.5rem;
 }
 
+a.btn-primary-top {
+  margin-top: 1rem;
+  padding: 0;
+}
+
 }
 
 @media only screen and (max-width: 62rem) {
@@ -2793,6 +2802,12 @@ p.main-downloads {
 
 p.main-downloads {
     padding-left: 0;
+}
+
+.main-info #btn-top-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 }

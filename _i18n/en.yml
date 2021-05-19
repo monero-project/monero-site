@@ -68,10 +68,11 @@ index:
   page_title: "Monero - secure, private, untraceable"
 
 home:
-  heading2: A Private Digital Currency
-  monero_is_cash: Monero is cash for a connected world. It’s fast, private, and secure. With Monero, you are your own bank. You can spend safely, knowing that others cannot see your balances or track your activity.
+  heading: Monero Means Money
+  heading2: Private, decentralized cryptocurrency that keeps your finances confidential and secure.
   whatis: Learn more about Monero
-  get_started: Get Started
+  about: About Monero
+  joincommunity: Join Community
   choosewallet: Choose a Wallet
   choosewallet_para: To use Monero, the first thing you are going to need is a wallet. Visit our Downloads page and get the right wallet for you. The Monero wallets are available for a variety of platforms and contain everything you need to use Monero immediately.
   downloads: Downloads
