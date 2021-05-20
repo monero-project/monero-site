@@ -5,7 +5,7 @@ permalink: /resources/research-lab/index.html
 ---
 {% t global.lang_tag %}
 <div class="container description">
-    <p>{% t research-lab.intro %}</p>
+    <p>{% t research-lab.intro %} {% t research-lab.intro_email %}</p>
 </div>
 <section class="container">
     <div class="row">
