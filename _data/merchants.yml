@@ -203,6 +203,8 @@
       url: https://cryptoradar.co/buy-monero
     - name: GetBlock - Blockchain Nodes Provider
       url: https://getblock.io
+    - name: KryptoCheck (German marketplace comparison website)
+      url: https://kryptocheck.de
     - name: MoneroBase Price Charts and Tools
       url: https://monerobase.com
     - name: MoneroNotify - Transaction Notification Service
