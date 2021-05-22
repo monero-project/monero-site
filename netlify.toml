@@ -3,7 +3,7 @@
   command = "jekyll build --trace --limit-posts 10"
 
 [build.environment]
-  RUBY_VERSION = "2.6"
+  RUBY_VERSION = "2.7"
 
 [build.processing]
   skip_processing = true
