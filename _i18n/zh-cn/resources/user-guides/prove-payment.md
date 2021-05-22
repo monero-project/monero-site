@@ -65,8 +65,9 @@ Charlie types in monero-wallet-cli:
 > check_tx_key TXID TXKEY ADDRESS
 
 The information supplied by Alice plugs neatly instead of the placeholders. monero-wallet-cli will use the transaction
-key to decode the transaction, and display how much this particular transaction sent to this address. Obviously,
-Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
+key to decode the transaction, and display how much this particular transaction sent to this address.
+
+Obviously, Charlie will want to double check with Bob the address is really his - same as with Bitcoin.
 
 #### GUI
 

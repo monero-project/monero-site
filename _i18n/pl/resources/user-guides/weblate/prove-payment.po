@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-03-28 11:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:2
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:4
+#
+msgid "### Prove payments"
+msgstr "### Udowodnij płatności"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:6
+#
+msgid ""
+"When you send money to a party who then disputes the payment was made, you "
+"need to be able to prove the payment was made."
+msgstr ""
+"Jeżeli dokonasz płatności osobie, która później ją zakwestionuje, musisz być "
+"w stanie udowodnić, że pieniądze zostały przesłane."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:9
+#
+msgid ""
+"With Bitcoin, this is typically done by looking up the transaction ID, where "
+"the origin and destination addresses are shown, along with the amount "
+"transacted."
+msgstr ""
+"W przypadku Bitcoina zazwyczaj dokonuje się tego, wyszukując numer "
+"identyfikacyjny transakcji, gdzie adres nadawcy i odbiorcy oraz przesłana "
+"kwota są ujawnione."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:12
+#
+msgid ""
+"Monero, however, is private: that information is not available publicly on "
+"the blockchain. The steps are therefore a bit more involved."
+msgstr ""
+"Jednak Monero jest prywatne - te informacje nie są publicznie dostępne w "
+"łańcuchu bloków. W związku z tym, kroki są trochę bardziej skomplikowane."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:14
+#
+msgid ""
+"To prove to Charlie that she made a payment to Bob, Alice must supply "
+"Charlie three pieces of information:"
+msgstr ""
+"Aby udowodnić Pawłowi, że Ewa przesłała pieniądze Jackowi, musi ona "
+"przekazać Pawłowi trzy informacje:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:18
+#
+msgid ""
+"- the transaction ID, as is done in Bitcoin - Bob's address, as is done with "
+"Bitcoin - the transaction's key, which is new with Monero and other "
+"CryptoNote currencies"
+msgstr ""
+"- numer identyfikacyjny transakcji, tak jak się to dzieje w przypadku "
+"Bitcoina - adres Jacka, tak jak się to dzieje w przypadku Bitcoina - klucz "
+"transakcji, który jest wyłącznością Monero i innych walut CryptoNote."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:20
+#
+msgid ""
+"When Alice made the transaction, a one time key was automatically generated "
+"just for this transaction."
+msgstr ""
+"Gdy Ewa dokonywała transakcji, jendorazowy klucz został wygenerowany tylko "
+"dla tej płatności."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:22
+#: _i18n/en/resources/user-guides/prove-payment.md:62
+#
+msgid "#### CLI"
+msgstr "#### CLI"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:24
+#
+msgid ""
+"Alice can query it thus in monero-wallet-cli (new name for the old "
+"simplewallet):"
+msgstr ""
+"Ewa może więc odnaleźć go w monero-wallet-cli (nowa nazwa dawnego "
+"simplewallet):"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:26
+#
+msgid "> get_tx_key TXID"
+msgstr "> get_tx_key TXID"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:29
+#
+msgid ""
+"Alice would plug in her actual transaction ID instead of this TXID "
+"placeholder. All being well, the one time transaction key will be displayed."
+msgstr ""
+"Ewa zamieni TXID na swój numer identyfikacyjny transakcji. W wyniku tego, "
+"wyświetlony zostanie jednorazowy klucz transakcji."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:31
+#
+msgid ""
+"Note that this will only work if monero-wallet-cli is set to save "
+"transaction keys. To double check:"
+msgstr ""
+"Zauważ, że to zadziała tylko wtedy, gdy monero-wallet-cli zostanie ustawiony "
+"na zapisywanie kluczy transakcji. Aby się upewnić, że tak jest, wpisz:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:33
+#
+msgid "> set"
+msgstr "> set"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:35
+#
+msgid "If it's set to 0, set it to 1:"
+msgstr "Jeśli ustawione jest na 0, zmień na 1:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:37
+#
+msgid "> set store-tx-info 1"
+msgstr "> set store-tx-info 1"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:39
+#: _i18n/en/resources/user-guides/prove-payment.md:73
+#
+msgid "#### GUI"
+msgstr "#### GUI"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:41
+#
+msgid ""
+"Alice can open her monero-wallet-gui and go to the history page to see her "
+"transaction detail:"
+msgstr ""
+"Ewa może otworzyć swój Graficzny Interfejs Użytkownika i przejść do "
+"Historii, gdzie wyszuka szczegóły transakcji:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:43
+#
+msgid "![History](/img/resources/user-guides/en/prove-payment/history.png)"
+msgstr "![History](/img/resources/user-guides/en/prove-payment/history.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:46
+#
+msgid ""
+"Here, she can copy the transaction ID and Bob's address by clicking on each "
+"of them.  Then she can click on `P` to get a payment proof (transaction "
+"key):"
+msgstr ""
+"Stąd może ona skopiować numer identyfikacyjny transakcji oraz adres Jacka, "
+"klikając na nie.  Następnie po kliknięciu `P`, Ewa wygeneruje dowód "
+"płatności (klucz transakcji)."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:48
+#
+msgid ""
+"![Payment "
+"proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)"
+msgstr ""
+"![Payment "
+"proof](/img/resources/user-guides/en/prove-payment/payment-proof.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:50
+#: _i18n/en/resources/user-guides/prove-payment.md:83
+#, no-wrap
+msgid "---\n"
+msgstr "---\n"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:53
+#
+msgid ""
+"Alice can now send Charlie the transaction key along with transaction ID and "
+"Bob's address."
+msgstr ""
+"Ewa może teraz przesłać Pawłowi klucz transakcji razem z numerem "
+"identyfikacyjnym transakcji oraz adresem Jacka."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:55
+#: _i18n/en/resources/user-guides/prove-payment.md:87
+#
+msgid ""
+"Note: if several transactions were made, this needs repeating for each such "
+"transaction."
+msgstr ""
+"Zauważ, że jeśli zostało dokonanych wiele transakcji, cały proces musi "
+"zostać powtórzony dla każdej transakcji."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:57
+#
+msgid "### Check payments"
+msgstr "### Sprawdź płatności"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:60
+#
+msgid ""
+"Charlie now received those three pieces of information, and wants to check "
+"Alice is telling the truth: on an up to date blockchain,"
+msgstr ""
+"Paweł otrzymał trzy informacje i chce sprawdzić, czy Ewa mówi prawdę - w "
+"aktualnym łańcuchu bloków"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:64
+#
+msgid "Charlie types in monero-wallet-cli:"
+msgstr "Paweł wpisuje w wierszu poleceń:"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:66
+#
+msgid "> check_tx_key TXID TXKEY ADDRESS"
+msgstr "> check_tx_key TXID TXKEY ADDRESS"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:69
+#
+msgid ""
+"The information supplied by Alice plugs neatly instead of the "
+"placeholders. monero-wallet-cli will use the transaction key to decode the "
+"transaction, and display how much this particular transaction sent to this "
+"address."
+msgstr ""
+"Paweł zamienił symbole na informacje dostarczone przez "
+"Ewę. monero-wallet-cli użyje klucza transakcji do odszyfrowania jej i "
+"wyświetli kwotę przesłaną na ten konkretny adres."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:71
+#: _i18n/en/resources/user-guides/prove-payment.md:86
+#
+msgid ""
+"Obviously, Charlie will want to double check with Bob the address is really "
+"his - same as with Bitcoin."
+msgstr ""
+"Oczywiście, Paweł będzie chciał się upewnić, czy adres Jacka rzeczywiście do "
+"niego należy - tak samo jak w przypadku Bitcoina."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:75
+#
+msgid ""
+"Charlie will open his monero-wallet-gui and go to the Advanced > Prove/Check "
+"page to fill the Check section with the informations provided by Alice:"
+msgstr ""
+"Paweł otworzy swój Graficzny Interfejs Użytkownika i przejdzie do strony "
+"Advanced > Prove/Check, aby wypełnić pole Check informacjami dostarczonymi "
+"przez Ewę."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:77
+#
+msgid ""
+"![Check "
+"payment](/img/resources/user-guides/en/prove-payment/check-payment.png)"
+msgstr ""
+"![Check "
+"payment](/img/resources/user-guides/en/prove-payment/check-payment.png)"
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:79
+#
+msgid ""
+"Then clicking on Check will tell Charlie how much this particular "
+"transaction sent to this address, and how much confirmation the transaction "
+"had:"
+msgstr ""
+"Po kliknięciu \"Check\" Paweł dowie się, jaka kwota została przelana na ten "
+"adres w tej konkretnej transakcji oraz ile potwierdzeń miała transakcja."
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/prove-payment.md:81
+#
+msgid ""
+"![Payment "
+"checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)"
+msgstr ""
+"![Payment "
+"checked](/img/resources/user-guides/en/prove-payment/payment-checked.png)"

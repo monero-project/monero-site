@@ -65,8 +65,9 @@ Charlie entre dans monero-wallet-cli :
 > check_tx_key IDTX CLEFTX ADRESSE
 
 Les données fournies par Alice entrées en lieux et place de leurs identifiants respectifs. monero-wallet-clu va se servir
-de la clef de transaction pour décoder la transaction et afficher quel montant a été envoyé à cette adresse pour cette
-transaction spécifique.
+de la clef de transaction pour décoder la transaction et afficher quel montant a été envoyé à cette adresse pour cette transaction spécifique.
+
+Évidemment, Charlie voudra vérifier si l'adresse de Bob est bien la sienne, comme avec Bitcoin.
 
 #### GUI
 

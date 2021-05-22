@@ -60,7 +60,9 @@ Im monero-wallet-cli gibt er also Folgendes ein:
 
 > check_tx_key TXID TXKEY ADDRESS
 
-Anstelle der Platzhalter werden die von Alice bereitgestellten Informationen passend eingefügt. monero-wallet-cli nutzt nun den Transaktionsschlüssel, um die Transaktion zu entschlüsseln und anzuzeigen, wie viel mit genau dieser Transaktion an die Adresse gesendet wurde. Natürlich wird Charlie - ebenso wie er es bei Bitcoin tun würde - nochmal mit Bob gegenprüfen, ob es sich tatsächlich um dessen Adresse handelt.
+Anstelle der Platzhalter werden die von Alice bereitgestellten Informationen passend eingefügt. monero-wallet-cli nutzt nun den Transaktionsschlüssel, um die Transaktion zu entschlüsseln und anzuzeigen, wie viel mit genau dieser Transaktion an die Adresse gesendet wurde.
+
+Natürlich wird Charlie - ebenso wie er es bei Bitcoin tun würde - nochmal mit Bob gegenprüfen, ob es sich tatsächlich um dessen Adresse handelt.
 
 #### GUI
 
