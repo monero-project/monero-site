@@ -8,20 +8,12 @@ This is an advanced guide for Linux, Mac, or Windows operating systems and will 
 
 ## Table of Contents:
 
-### [1. Install GnuPG](#1-installing-gnupg)
-### [2. Verify & Import Signing Key](#2-verify-and-import-signing-key)
-  + [2.1. Get Signing Key](#21-get-signing-key)
-  + [2.2. Verify Signing key](#22-verify-signing-key)
-  + [2.3. Import Signing key](#23-import-signing-key)
-### [3. Download & Verify Hash File](#3-download-and-verify-hash-file)
-  + [3.1. Get Hash File](#31-get-hash-file)
-  + [3.2. Verify Hash File](#32-verify-hash-file)
-### [4. Download & Verify Binary](#4-download-and-verify-binary)
-  + [4.1. Get Monero Binary](#41-get-monero-binary)
-  + [4.2. Binary Verification on Linux or Mac](#42-binary-verification-on-linux-or-mac)
-  + [4.3. Binary Verification on Windows](#43-binary-verification-on-windows)
+### [Install GnuPG](#installing-gnupg)
+### [Verify & Import Signing Key](#verify-and-import-signing-key)
+### [Download & Verify Hash File](#download-and-verify-hash-file)
+### [Download & Verify Binary](#download-and-verify-binary)
 
-## 1. Installing GnuPG
+## Installing GnuPG
 
 + On Windows, go to the [Gpg4win download page](https://gpg4win.org/download.html) and follow the instructions for installation.
 
@@ -29,11 +21,11 @@ This is an advanced guide for Linux, Mac, or Windows operating systems and will 
 
 + On Linux, GnuPG is installed by default.
 
-## 2. Verify and Import Signing Key
+## Verify and Import Signing Key
 
 This section will cover getting the Monero signing key, making sure it is correct, and importing the key to GnuPG.
 
-### 2.1. Get Signing Key
+### Get Signing Key
 
 On Windows or Mac, go to [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), which he uses to sign the Monero binaries, and save the page as `binaryfate.asc` to your home directory.
 
@@ -43,7 +35,7 @@ On Linux, you can download binaryFate's signing key by issuing the following com
 wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
-### 2.2. Verify Signing Key
+### Verify Signing Key
 
 On all operating systems, check the fingerprint of `binaryfate.asc` by issuing the following command in a terminal:
 
@@ -64,7 +56,7 @@ If the fingerprint **DOES** match, then you may proceed.
 
 If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section 2.1](#21-get-signing-key).
 
-### 2.3. Import Signing Key
+### Import Signing Key
 
 From a terminal, import the signing key:
 
@@ -90,11 +82,11 @@ gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
 
-## 3. Download and Verify Hash File
+## Download and Verify Hash File
 
 This section will cover downloading the hash file and verifying its authenticity.
 
-### 3.1. Get Hash File
+### Get Hash File
 
 On Windows or Mac, go to the [hashes file on getmonero.org]({{ site.baseurl_root }}/downloads/hashes.txt) and save the page as `hashes.txt` to your home directory.
 
@@ -104,7 +96,7 @@ On Linux, you can download the signed hashes file by issuing the following comma
 wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt
 ```
 
-### 3.2. Verify Hash File
+### Verify Hash File
 
 The hash file is signed with key `81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92`, as reflected in the output below.
 
@@ -128,11 +120,11 @@ If your output shows **Good signature**, as in the example, then you may proceed
 
 If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section 3.1](#31-get-hash-file).
 
-## 4. Download and Verify Binary
+## Download and Verify Binary
 
 This section will cover downloading the Monero binary for your operating system, getting the `SHA256` hash of your download, and verifying that it is correct.
 
-### 4.1. Get Monero binary
+### Get Monero binary
 
 On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/) and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**
 
@@ -142,7 +134,7 @@ On Linux, you can download the command line tools by issuing the following comma
 wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
-### 4.2. Binary Verification on Linux or Mac
+### Binary Verification on Linux or Mac
 
 The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary).
 
@@ -160,7 +152,7 @@ If your hash **DOES** match, then you are finished with the guide! You can extra
 
 If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section 4.1](#41-get-monero-binary).
 
-### 4.3. Binary Verification on Windows
+### Binary Verification on Windows
 
 From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary).
 
