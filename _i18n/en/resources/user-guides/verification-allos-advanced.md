@@ -54,7 +54,8 @@ which he uses to sign the Monero binaries, and save the page as
 On Linux, you can download binaryFate's signing key by issuing the following
 command:
 
-``` wget -O binaryfate.asc
+```
+wget -O binaryfate.asc
 https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 

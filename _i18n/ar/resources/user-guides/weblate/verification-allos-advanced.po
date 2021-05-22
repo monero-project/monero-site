@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-31 10:56+0200\n"
+"POT-Creation-Date: 2021-06-29 12:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,222 +16,171 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:2
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:4
 #
-msgid ""
-"Verification of the Monero binary files should be done prior to extracting, "
-"installing, or using the Monero software. This is the only way to ensure "
-"that you are using the official Monero software. If you receive a fake "
-"Monero binary (eg. phishing, MITM, etc.), following this guide will protect "
-"you from being tricked into using it."
-msgstr ""
-"التأكد من صحه ملفات التثبيت يجب أن يكون قبل فك الضغط أو التثبيت أو إستخدام "
-"البرامج. هذه هي الطريقه الوحيده للتأكد من حصولك علي البرامج الرسميه. إذا "
-"حصلت علي ملفات تثبيت مزيفه ( مثال هجمات التصيد و إختراق الإتصال وخلافه) "
-"بمتابعه هذا لدليل سوف تحمي نفسك من الوقوع ضحيه لهذه الملفات."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:6
-#
-msgid ""
-"To protect the integrity of the binaries the Monero team provides a "
-"cryptographically signed list of all the "
-"[SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded "
-"binary has been tampered with it will be produce a [different "
-"hash](https://en.wikipedia.org/wiki/File_verification) than the one in the "
-"file."
-msgstr ""
-"لحماية تكامل الثنائيات ، يوفر فريق مونيرو قائمة موقعة مشفرة لكل الملفات "
-"[SHA256] (https://en.wikipedia.org/wiki/SHA-2). إذا تم العبث بالملف الذي تم "
-"تنزيله ، فسيتم إنتاجه [هاش مختلف] "
-"(https://en.wikipedia.org/wiki/File_verification) عن الموجود في الملف."
-
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:8
-#
-msgid ""
-"This is an advanced guide for Linux, Mac, or Windows operating systems and "
-"will make use of the command line. It will walk you through the process of "
-"installing the required software, importing the signing key, downloading the "
-"necessary files, and finally verifying that your binary is authentic."
-msgstr ""
-"هذا دليل متقدم يستخدم سطر الأوامر لنُظم تشغيل لينُكس وويندوز وماك سيوجهك "
-"خلال عملية تثبيت البرامج المطلوبه واستيراد مفتاح التوقيع وتنزيل الملفات "
-"الضرورية وأخيرًا التحقق من صحة ملفات التثبيت."
+msgid "Verification of the Monero binary files should be done prior to extracting, installing, or using the Monero software. This is the only way to ensure that you are using the official Monero software. If you receive a fake Monero binary (eg. phishing, MITM, etc.), following this guide will protect you from being tricked into using it."
+msgstr "التأكد من صحه ملفات التثبيت يجب أن يكون قبل فك الضغط أو التثبيت أو إستخدام البرامج. هذه هي الطريقه الوحيده للتأكد من حصولك علي البرامج الرسميه. إذا حصلت علي ملفات تثبيت مزيفه ( مثال هجمات التصيد و إختراق الإتصال وخلافه) بمتابعه هذا لدليل سوف تحمي نفسك من الوقوع ضحيه لهذه الملفات."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:10
 #
-msgid "## Table of Contents:"
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:15
+msgid "To protect the integrity of the binaries the Monero team provides a cryptographically signed list of all the [SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded binary has been tampered with it will be produce a [different hash](https://en.wikipedia.org/wiki/File_verification) than the one in the file."
+msgstr "لحماية تكامل الثنائيات ، يوفر فريق مونيرو قائمة موقعة مشفرة لكل الملفات [SHA256] (https://en.wikipedia.org/wiki/SHA-2). إذا تم العبث بالملف الذي تم تنزيله ، فسيتم إنتاجه [هاش مختلف] (https://en.wikipedia.org/wiki/File_verification) عن الموجود في الملف."
+
+#
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:20
+msgid "This is an advanced guide for Linux, Mac, or Windows operating systems and will make use of the command line. It will walk you through the process of installing the required software, importing the signing key, downloading the necessary files, and finally verifying that your binary is authentic."
+msgstr "هذا دليل متقدم يستخدم سطر الأوامر لنُظم تشغيل لينُكس وويندوز وماك سيوجهك خلال عملية تثبيت البرامج المطلوبه واستيراد مفتاح التوقيع وتنزيل الملفات الضرورية وأخيرًا التحقق من صحة ملفات التثبيت."
+
+#
+#. type: Title ##
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:21
+#, fuzzy, no-wrap
+#| msgid "## Table of Contents:"
+msgid "Table of Contents:"
 msgstr "## قائمه المحتوي:"
 
-#. type: Plain text
+#. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:23
 #, no-wrap
-msgid ""
-"### [1. Install GnuPG](#1-installing-gnupg)\n"
-"### [2. Verify & Import Signing Key](#2-verify-and-import-signing-key)\n"
-"  + [2.1. Get Signing Key](#21-get-signing-key)\n"
-"  + [2.2. Verify Signing key](#22-verify-signing-key)\n"
-"  + [2.3. Import Signing key](#23-import-signing-key)\n"
-"### [3. Download & Verify Hash File](#3-download-and-verify-hash-file)\n"
-"  + [3.1. Get Hash File](#31-get-hash-file)\n"
-"  + [3.2. Verify Hash File](#32-verify-hash-file)\n"
-"### [4. Download & Verify Binary](#4-download-and-verify-binary)\n"
-"  + [4.1. Get Monero Binary](#41-get-monero-binary)\n"
-"  + [4.2. Binary Verification on Linux or "
-"Mac](#42-binary-verification-on-linux-or-mac)\n"
-"  + [4.3. Binary Verification on "
-"Windows](#43-binary-verification-on-windows)\n"
+msgid "- [Install GnuPG](#installing-gnupg)"
 msgstr ""
-"### [1. تثبيت GnuPG](#1-installing-gnupg)\n"
-"### [2. تأكيد & إستيراد ملف مفتاح "
-"التوقيع](#2-verify-and-import-signing-key)\n"
-"  + [2.1. إحصل علي مفتاح التوقيع ](#21-get-signing-key)\n"
-"  + [2.2. تأكد من مفتاح التوقيع ](#22-verify-signing-key)\n"
-"  + [2.3. إستيراد مفتاح التوقيع ](#23-import-signing-key)\n"
-"### [3. تنزيل & تأكد من ملف الهاش](#3-download-and-verify-hash-file)\n"
-"  + [3.1. إحصل علي ملف الهاش ](#31-get-hash-file)\n"
-"  + [3.2. تأكد من ملف الهاش ](#32-verify-hash-file)\n"
-"### [4. تحميل & تأكد من ملفات التسطيب ](#4-download-and-verify-binary)\n"
-"  + [4.1. الحصول علي ملفات التسطيب](#41-get-monero-binary)\n"
-"  + [4.2. تأكد من الملفات علي ليُنكس اوماك "
-"](#42-binary-verification-on-linux-or-mac)\n"
-"  + [4.3. تأكد من الملفات علي ويندوز](#43-binary-verification-on-windows)\n"
 
-#. type: Plain text
+#. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:25
+#, no-wrap
+msgid "- [Verify & Import Signing Key](#verify-and-import-signing-key)"
+msgstr ""
+
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:27
+#, no-wrap
+msgid "- [Download & Verify Hash File](#download-and-verify-hash-file)"
+msgstr ""
+
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:29
+#, no-wrap
+msgid "- [Download & Verify Binary](#download-and-verify-binary)"
+msgstr ""
+
 #
-msgid "## 1. Installing GnuPG"
+#. type: Title ##
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:31
+#, fuzzy, no-wrap
+#| msgid "## 1. Installing GnuPG"
+msgid "Installing GnuPG"
 msgstr "## 1. تثبيت GnuPG"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:27
 #
-msgid ""
-"+ On Windows, go to the [Gpg4win download "
-"page](https://gpg4win.org/download.html) and follow the instructions for "
-"installation."
-msgstr ""
-"+ في ويندوز انتقل إلى صفحة التنزيل [Gpg4win] "
-"(https://gpg4win.org/download.html) واتبع الإرشادات الخاصة بالتثبيت."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:36
+msgid "+ On Windows, go to the [Gpg4win download page](https://gpg4win.org/download.html) and follow the instructions for installation."
+msgstr "+ في ويندوز انتقل إلى صفحة التنزيل [Gpg4win] (https://gpg4win.org/download.html) واتبع الإرشادات الخاصة بالتثبيت."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:29
 #
-msgid ""
-"+ On Mac, go to the [Gpgtools download page](https://gpgtools.org/) and "
-"follow the instructions for installation."
-msgstr ""
-"+ في ماك انتقل إلى صفحة تنزيل [Gpgtools] (https://gpgtools.org/) واتبع "
-"الإرشادات الخاصة بالتثبيت."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:39
+msgid "+ On Mac, go to the [Gpgtools download page](https://gpgtools.org/) and follow the instructions for installation."
+msgstr "+ في ماك انتقل إلى صفحة تنزيل [Gpgtools] (https://gpgtools.org/) واتبع الإرشادات الخاصة بالتثبيت."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:31
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:41
 msgid "+ On Linux, GnuPG is installed by default."
 msgstr "+ في ليُنكس ، GnuPG مُثبّت افتراضيًا."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:33
 #
-msgid "## 2. Verify and Import Signing Key"
+#. type: Title ##
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:42
+#, fuzzy, no-wrap
+#| msgid "## 2. Verify and Import Signing Key"
+msgid "Verify and Import Signing Key"
 msgstr "## 2. تأكيد & إستيراد ملف مفتاح التوقيع"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:35
 #
-msgid ""
-"This section will cover getting the Monero signing key, making sure it is "
-"correct, and importing the key to GnuPG."
-msgstr ""
-"سيغطي هذا القسم الحصول على مفتاح توقيع مونيرو والتأكد من صحته واستيراد "
-"المفتاح إلى GnuPG."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:46
+msgid "This section will cover getting the Monero signing key, making sure it is correct, and importing the key to GnuPG."
+msgstr "سيغطي هذا القسم الحصول على مفتاح توقيع مونيرو والتأكد من صحته واستيراد المفتاح إلى GnuPG."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:37
 #
-msgid "### 2.1. Get Signing Key"
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:47
+#, fuzzy, no-wrap
+#| msgid "### 2.1. Get Signing Key"
+msgid "Get Signing Key"
 msgstr "### 2.1. إحصل علي مفتاح التوقيع"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:39
 #
-msgid ""
-"On Windows or Mac, go to [binaryFate's GPG "
-"key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), "
-"which he uses to sign the Monero binaries, and save the page as "
-"`binaryfate.asc` to your home directory."
-msgstr ""
-"علي ويندوز أو ماك إذهب إلي [binaryFate's GPG "
-"key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc) "
-"لتحميل المُفتاح المُستخدم في توقيع الملفات وقم بحفظه بإسم `binaryfate.asc` "
-"في مجلدك الرئيسي."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:41
-#
-msgid ""
-"On Linux, you can download binaryFate's signing key by issuing the following "
-"command:"
-msgstr "في ليُنكس يمكنك تحميل ملف مفتاح التوقيع من خلال الأمر التالي :"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:45
-#
-msgid ""
-"``` wget -O binaryfate.asc "
-"https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc "
-"```"
-msgstr ""
-"``` wget -O binaryfate.asc "
-"https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc "
-"```"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:47
-#
-msgid "### 2.2. Verify Signing Key"
-msgstr "### 2.2. تأكد من مفتاح التوقيع"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:49
-#
-msgid ""
-"On all operating systems, check the fingerprint of `binaryfate.asc` by "
-"issuing the following command in a terminal:"
-msgstr ""
-"في جميع أنظمة التشغيل ، تحقق من بصمة `binaryfate.asc` بإصدار الأمر التالي في "
-"سطر الأوامر :"
-
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:53
+msgid "On Windows or Mac, go to [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), which he uses to sign the Monero binaries, and save the page as `binaryfate.asc` to your home directory."
+msgstr "علي ويندوز أو ماك إذهب إلي [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc) لتحميل المُفتاح المُستخدم في توقيع الملفات وقم بحفظه بإسم `binaryfate.asc` في مجلدك الرئيسي."
+
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:56
+msgid "On Linux, you can download binaryFate's signing key by issuing the following command:"
+msgstr "في ليُنكس يمكنك تحميل ملف مفتاح التوقيع من خلال الأمر التالي :"
+
+#
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:57
+#, fuzzy, no-wrap
+#| msgid "``` wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc ```"
+msgid ""
+"wget -O binaryfate.asc\n"
+"https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc\n"
+msgstr "``` wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc ```"
+
+#
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:62
+#, fuzzy, no-wrap
+#| msgid "### 2.2. Verify Signing Key"
+msgid "Verify Signing Key"
+msgstr "### 2.2. تأكد من مفتاح التوقيع"
+
+#
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:66
+msgid "On all operating systems, check the fingerprint of `binaryfate.asc` by issuing the following command in a terminal:"
+msgstr "في جميع أنظمة التشغيل ، تحقق من بصمة `binaryfate.asc` بإصدار الأمر التالي في سطر الأوامر :"
+
+#
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:68
 msgid "``` gpg --keyid-format long --with-fingerprint binaryfate.asc ```"
 msgstr "``` gpg --keyid-format long --with-fingerprint binaryfate.asc ```"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:56
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:71
 msgid "Verify the fingerprint matches:"
 msgstr "تحقق من تطابق البصمه بالتالي :"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:62
-#, no-wrap
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:72
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```\n"
+#| "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
+#| "      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
+#| "uid                           binaryFate <binaryfate@getmonero.org>\n"
+#| "```\n"
 msgid ""
-"```\n"
 "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
 "      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
 "uid                           binaryFate <binaryfate@getmonero.org>\n"
-"```\n"
 msgstr ""
 "```\n"
 "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
@@ -239,383 +188,358 @@ msgstr ""
 "uid                           binaryFate <binaryfate@getmonero.org>\n"
 "```\n"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:64
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:79
 msgid "If the fingerprint **DOES** match, then you may proceed."
 msgstr "إذا كانت البصمه **صحيحه** يمكنك المُتابعه."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:66
 #
-msgid ""
-"If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete "
-"the file `binaryfate.asc` and go back to [section 2.1](#21-get-signing-key)."
-msgstr ""
-"إذا كانت البصمه ** غير متطابقه ** **لا تُكمل** بل قم بحذف ملف "
-"`binaryfate.asc` وإذهب إلي [فصل 2.1](#21-get-signing-key)."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:82
+msgid "If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the file `binaryfate.asc` and go back to [section 2.1](#21-get-signing-key)."
+msgstr "إذا كانت البصمه ** غير متطابقه ** **لا تُكمل** بل قم بحذف ملف `binaryfate.asc` وإذهب إلي [فصل 2.1](#21-get-signing-key)."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:68
 #
-msgid "### 2.3. Import Signing Key"
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:83
+#, fuzzy, no-wrap
+#| msgid "### 2.3. Import Signing Key"
+msgid "Import Signing Key"
 msgstr "### 2.3. إستيراد مفتاح التوقيع"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:70
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:86
 msgid "From a terminal, import the signing key:"
 msgstr "من سطر الأوامر ، قم باستيراد مفتاح التوقيع:"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:74
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:88
 msgid "``` gpg --import binaryfate.asc ```"
 msgstr "``` gpg --import binaryfate.asc ```"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:76
 #
-msgid ""
-"If this is the first time you have imported the key, the output will look "
-"like this:"
-msgstr ""
-"إذا كانت هذه هي المرة الأولى التي تستورد فيها المفتاح ، فسيبدو الناتج كما "
-"يلي:"
-
 #. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:84
-#, no-wrap
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:91
+msgid "If this is the first time you have imported the key, the output will look like this:"
+msgstr "إذا كانت هذه هي المرة الأولى التي تستورد فيها المفتاح ، فسيبدو الناتج كما يلي:"
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:92
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```\n"
+#| "gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
+#| "gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
+#| "gpg: Total number processed: 1\n"
+#| "gpg:               imported: 1\n"
+#| "gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
+#| "```\n"
 msgid ""
+"gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
+"gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
+"gpg: Total number processed: 1\n"
+"gpg:               imported: 1\n"
+"gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
+msgstr ""
 "```\n"
 "gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
-"gpg: key F0AF4D462A0BDF92: public key \"binaryFate "
-"<binaryfate@getmonero.org>\" imported\n"
+"gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
 "gpg: Total number processed: 1\n"
 "gpg:               imported: 1\n"
 "gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
 "```\n"
-msgstr ""
-"```\n"
-"gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
-"gpg: key F0AF4D462A0BDF92: public key \"binaryFate "
-"<binaryfate@getmonero.org>\" imported\n"
-"gpg: Total number processed: 1\n"
-"gpg:               imported: 1\n"
-"gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
-"```\n"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:86
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:101
 msgid "If you have imported the key previously, the output will look like this:"
 msgstr "إذا قمت باستيراد المفتاح مسبقًا ، فسيبدو الناتج كما يلي:"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:92
-#, no-wrap
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:102
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```\n"
+#| "gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
+#| "gpg: Total number processed: 1\n"
+#| "gpg:              unchanged: 1\n"
+#| "```\n"
 msgid ""
-"```\n"
-"gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not "
-"changed\n"
+"gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
 "gpg: Total number processed: 1\n"
 "gpg:              unchanged: 1\n"
-"```\n"
 msgstr ""
 "```\n"
-"gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not "
-"changed\n"
+"gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
 "gpg: Total number processed: 1\n"
 "gpg:              unchanged: 1\n"
 "```\n"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:94
 #
-msgid "## 3. Download and Verify Hash File"
+#. type: Title ##
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:108
+#, fuzzy, no-wrap
+#| msgid "## 3. Download and Verify Hash File"
+msgid "Download and Verify Hash File"
 msgstr "## 3. تنزيل & تأكد من ملف الهاش"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:96
 #
-msgid ""
-"This section will cover downloading the hash file and verifying its "
-"authenticity."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:112
+msgid "This section will cover downloading the hash file and verifying its authenticity."
 msgstr "سيغطي هذا القسم تنزيل ملف الهاش والتحقق من صحته."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:98
 #
-msgid "### 3.1. Get Hash File"
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:113
+#, fuzzy, no-wrap
+#| msgid "### 3.1. Get Hash File"
+msgid "Get Hash File"
 msgstr "### 3.1. إحصل علي ملف الهاش"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:100
 #
-msgid ""
-"On Windows or Mac, go to the [hashes file on getmonero.org]({{ "
-"site.baseurl_root }}/downloads/hashes.txt) and save the page as `hashes.txt` "
-"to your home directory."
-msgstr ""
-"على نظام ويندوز أو ماك انتقل إلى [ملف الهاشات على getmonero.org] ({{ "
-"site.baseurl }}/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` إلى مجلدك "
-"الرئيسي."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:118
+msgid "On Windows or Mac, go to the [hashes file on getmonero.org]({{ site.baseurl_root }}/downloads/hashes.txt) and save the page as `hashes.txt` to your home directory."
+msgstr "على نظام ويندوز أو ماك انتقل إلى [ملف الهاشات على getmonero.org] ({{ site.baseurl }}/downloads/hashes.txt) واحفظ الصفحة كـ `hashes.txt` إلى مجلدك الرئيسي."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:102
 #
-msgid ""
-"On Linux, you can download the signed hashes file by issuing the following "
-"command:"
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:121
+msgid "On Linux, you can download the signed hashes file by issuing the following command:"
 msgstr "في ليُنكس يمكنك تنزيل ملف الهاشات الموقّع عن طريق إصدار الأمر التالي:"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:106
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:123
 msgid "``` wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt ```"
 msgstr "``` wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt ```"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:108
 #
-msgid "### 3.2. Verify Hash File"
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:124
+#, fuzzy, no-wrap
+#| msgid "### 3.2. Verify Hash File"
+msgid "Verify Hash File"
 msgstr "### 3.2. تأكد من ملف الهاش"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:110
 #
-msgid ""
-"The hash file is signed with key `81AC 591F E9C4 B65C 5806 AFC3 F0AF 4D46 "
-"2A0B DF92`, as reflected in the output below."
-msgstr ""
-"ملف الهاش موقع بمفتاح `81AC 591F E9C4 B65C 5806 AFC3 F0AF 4D46 2A0B DF92`, "
-"كما هو موضح في الناتج أدناه."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:128
+msgid "The hash file is signed with key `81AC 591F E9C4 B65C 5806 AFC3 F0AF 4D46 2A0B DF92`, as reflected in the output below."
+msgstr "ملف الهاش موقع بمفتاح `81AC 591F E9C4 B65C 5806 AFC3 F0AF 4D46 2A0B DF92`, كما هو موضح في الناتج أدناه."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:112
 #
-msgid ""
-"On all operating systems, verify the signature of the hash file by issuing "
-"the following command in a terminal:"
-msgstr ""
-"في جميع أنظمة التشغيل ، تحقق من توقيع ملف التجزئة عن طريق إصدار الأمر التالي "
-"في سطر الأوامر:"
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:131
+msgid "On all operating systems, verify the signature of the hash file by issuing the following command in a terminal:"
+msgstr "في جميع أنظمة التشغيل ، تحقق من توقيع ملف التجزئة عن طريق إصدار الأمر التالي في سطر الأوامر:"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:116
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:133
 msgid "``` gpg --verify hashes.txt ```"
 msgstr "``` gpg --verify hashes.txt ```"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:118
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:135
 msgid "If the file is authentic, the output will look like this:"
 msgstr "إذا كان الملف صحيح ، سيبدو الناتج كما يلي:"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:126
-#, no-wrap
-msgid ""
-"```\n"
-"gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
-"gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" "
-"[unknown]\n"
-"gpg: WARNING: This key is not certified with a trusted signature!\n"
-"gpg:          There is no indication that the signature belongs to the "
-"owner.\n"
-"Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B "
-"DF92\n"
-"```\n"
-msgstr ""
-"```\n"
-"gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
-"gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" "
-"[unknown]\n"
-"gpg: WARNING: This key is not certified with a trusted signature!\n"
-"gpg:          There is no indication that the signature belongs to the "
-"owner.\n"
-"Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B "
-"DF92\n"
-"```\n"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:128
-#
-msgid ""
-"If your output shows **Good signature**, as in the example, then you may "
-"proceed."
-msgstr ""
-"إذا كان الناتج يُظهر ** Good signature ** كما هو موضح في المثال فيمكنك "
-"المتابعة."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:130
-#
-msgid ""
-"If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead "
-"delete the file `hashes.txt` and go back to [section "
-"3.1](#31-get-hash-file)."
-msgstr ""
-"إذا كان الناتج **BAD signature** **لا تُكمل** بل قم بحذف ملف `hashes.txt` "
-"وإرجع إلي [القسم 3.1](#31-get-hash-file)."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:132
-#
-msgid "## 4. Download and Verify Binary"
-msgstr "## 4. تحميل & تأكد من ملفات التسطيب"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:134
-#
-msgid ""
-"This section will cover downloading the Monero binary for your operating "
-"system, getting the `SHA256` hash of your download, and verifying that it is "
-"correct."
-msgstr ""
-"سيغطي هذا القسم تنزيل برنامج مونيرو لنظام التشغيل الخاص بك ، والحصول على هاش "
-"`SHA256` من التنزيل الخاص بك ، والتحقق من صحته."
-
-#. type: Plain text
+#. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:136
-#
-msgid "### 4.1. Get Monero binary"
-msgstr "### 4.1. الحصول علي ملفات التسطيب"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:138
-#
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```\n"
+#| "gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
+#| "gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
+#| "gpg: WARNING: This key is not certified with a trusted signature!\n"
+#| "gpg:          There is no indication that the signature belongs to the owner.\n"
+#| "Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
+#| "```\n"
 msgid ""
-"On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/) "
-"and download the correct file for your operating system. Save the file to "
-"your home directory. **Do not extract the files yet.**"
+"gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
+"gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
+"gpg: WARNING: This key is not certified with a trusted signature!\n"
+"gpg:          There is no indication that the signature belongs to the owner.\n"
+"Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
 msgstr ""
-"علي ويندوز أو ماك توجه إلي [getmonero.org]({{ site.baseurl }}/downloads/) "
-"وقم بتنزيل الملف الخاص بنظام التشغيل الخاص بك. قم بحفظ الملف لمجلدك "
-"الرئيسي. **لا تقم بفك الضغط **"
+"```\n"
+"gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
+"gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
+"gpg: WARNING: This key is not certified with a trusted signature!\n"
+"gpg:          There is no indication that the signature belongs to the owner.\n"
+"Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
+"```\n"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:140
 #
-msgid ""
-"On Linux, you can download the command line tools by issuing the following "
-"command:"
-msgstr "في Linux ، يمكنك تنزيل واجهه سطر الأوامر عن طريق إصدار الأمر التالي:"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:144
-#
-msgid ""
-"``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 "
-"https://downloads.getmonero.org/cli/linux64 ```"
-msgstr ""
-"``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 "
-"https://downloads.getmonero.org/cli/linux64 ```"
-
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:146
-#
-msgid "### 4.2. Binary Verification on Linux or Mac"
-msgstr "### 4.2. تأكد من الملفات علي ليُنكس اوماك"
+msgid "If your output shows **Good signature**, as in the example, then you may proceed."
+msgstr "إذا كان الناتج يُظهر ** Good signature ** كما هو موضح في المثال فيمكنك المتابعة."
 
+#
 #. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:148
-#
-msgid ""
-"The steps for both Linux and Mac are the same. From a terminal, get the "
-"`SHA256` hash of your downloaded Monero binary. As an example this guide "
-"will use the `Linux, 64bit` GUI binary. Substitute "
-"`monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that "
-"you downloaded in [section 4.1](#41-get-monero-binary)."
-msgstr ""
-"هذه الخطوات لنظامي تشغيل لينُكس وماك. من سطر الأوامر إحصل علي هاش `SHA256` "
-"لملف التثبيت. كمثال سيستخدم هذا الدليل واجهه المستخدم الرسوميه علي ليُنكس , "
-"إستبدل `monero-gui-linux-x64-v0.15.0.1.tar.bz2` بإسم ملف التثبيت الذي قمت "
-"بتنزيله في [الفصل 4.1](#41-get-monero-binary)."
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:150
+msgid "If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead delete the file `hashes.txt` and go back to [section 3.1](#31-get-hash-file)."
+msgstr "إذا كان الناتج **BAD signature** **لا تُكمل** بل قم بحذف ملف `hashes.txt` وإرجع إلي [القسم 3.1](#31-get-hash-file)."
 
+#
+#. type: Title ##
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:151
+#, fuzzy, no-wrap
+#| msgid "## 4. Download and Verify Binary"
+msgid "Download and Verify Binary"
+msgstr "## 4. تحميل & تأكد من ملفات التسطيب"
+
+#
 #. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:152
-#
-msgid "``` shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2 ```"
-msgstr "``` shasum -a 256 monero-gui-linux-x64-v0.15.0.1.tar.bz2 ```"
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:156
+msgid "This section will cover downloading the Monero binary for your operating system, getting the `SHA256` hash of your download, and verifying that it is correct."
+msgstr "سيغطي هذا القسم تنزيل برنامج مونيرو لنظام التشغيل الخاص بك ، والحصول على هاش `SHA256` من التنزيل الخاص بك ، والتحقق من صحته."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:154
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:172
 #
-msgid ""
-"The output will look like this, but will be different for each binary "
-"file. Your `SHA256` hash should match the one listed in the `hashes.txt` "
-"file for your binary file."
-msgstr ""
-"سيبدو الناتج كهذا ، ولكن سيكون مختلفًا لكل ملف. يجب أن يتطابق هاش `SHA256` "
-"الخاصة بك مع الهاش في القائمة المدرجة في ملف` hashes.txt` لملف التثبيت."
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:157
+#, fuzzy, no-wrap
+#| msgid "### 4.1. Get Monero binary"
+msgid "Get Monero binary"
+msgstr "### 4.1. الحصول علي ملفات التسطيب"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:158
 #
-msgid ""
-"``` 8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad "
-"monero-linux-x64-v0.15.0.1.tar.bz2 ```"
-msgstr ""
-"``` fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388 "
-"monero-gui-linux-x64-v0.15.0.1.tar.bz2 ```"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:160
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:180
-#
-msgid ""
-"If your hash **DOES** match, then you are finished with the guide! You can "
-"extract the files and install."
-msgstr "إذا كان الهاش **مُتطابق** يمكنك الأن فك الضفط والتثبيت."
-
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:162
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:181
-#
-msgid ""
-"If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the "
-"binary you downloaded and go back to [section 4.1](#41-get-monero-binary)."
-msgstr ""
-"إذا كان الهاش **غير مُتطابق** , ** لا تُكمل ** بل إحذف ملف التثبيت وإرجع إلي "
-"[القسم 4.1](#41-get-monero-binary)."
+#, fuzzy
+#| msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/) and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
+msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)  and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
+msgstr "علي ويندوز أو ماك توجه إلي [getmonero.org]({{ site.baseurl }}/downloads/) وقم بتنزيل الملف الخاص بنظام التشغيل الخاص بك. قم بحفظ الملف لمجلدك الرئيسي. **لا تقم بفك الضغط **"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:164
 #
-msgid "### 4.3. Binary Verification on Windows"
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:165
+msgid "On Linux, you can download the command line tools by issuing the following command:"
+msgstr "في Linux ، يمكنك تنزيل واجهه سطر الأوامر عن طريق إصدار الأمر التالي:"
+
+#
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:166
+#, fuzzy, no-wrap
+#| msgid "``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64 ```"
+msgid "wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64\n"
+msgstr "``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64 ```"
+
+#
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:170
+#, fuzzy, no-wrap
+#| msgid "### 4.2. Binary Verification on Linux or Mac"
+msgid "Binary Verification on Linux or Mac"
+msgstr "### 4.2. تأكد من الملفات علي ليُنكس اوماك"
+
+#
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:177
+msgid "The steps for both Linux and Mac are the same. From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Linux, 64bit` GUI binary. Substitute `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
+msgstr "هذه الخطوات لنظامي تشغيل لينُكس وماك. من سطر الأوامر إحصل علي هاش `SHA256` لملف التثبيت. كمثال سيستخدم هذا الدليل واجهه المستخدم الرسوميه علي ليُنكس , إستبدل `monero-gui-linux-x64-v0.15.0.1.tar.bz2` بإسم ملف التثبيت الذي قمت بتنزيله في [الفصل 4.1](#41-get-monero-binary)."
+
+#
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:178
+#, fuzzy, no-wrap
+#| msgid "``` shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2 ```"
+msgid "shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2\n"
+msgstr "``` shasum -a 256 monero-gui-linux-x64-v0.15.0.1.tar.bz2 ```"
+
+#
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:185
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:209
+msgid "The output will look like this, but will be different for each binary file. Your `SHA256` hash should match the one listed in the `hashes.txt` file for your binary file."
+msgstr "سيبدو الناتج كهذا ، ولكن سيكون مختلفًا لكل ملف. يجب أن يتطابق هاش `SHA256` الخاصة بك مع الهاش في القائمة المدرجة في ملف` hashes.txt` لملف التثبيت."
+
+#
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:186
+#, fuzzy, no-wrap
+#| msgid "``` 8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad monero-linux-x64-v0.15.0.1.tar.bz2 ```"
+msgid ""
+"8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad \n"
+"monero-linux-x64-v0.15.0.1.tar.bz2\n"
+msgstr "``` fb0f43387b31202f381c918660d9bc32a3d28a4733d391b1625a0e15737c5388 monero-gui-linux-x64-v0.15.0.1.tar.bz2 ```"
+
+#
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:193
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:218
+msgid "If your hash **DOES** match, then you are finished with the guide! You can extract the files and install."
+msgstr "إذا كان الهاش **مُتطابق** يمكنك الأن فك الضفط والتثبيت."
+
+#
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:196
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:220
+msgid "If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the binary you downloaded and go back to [section 4.1](#41-get-monero-binary)."
+msgstr "إذا كان الهاش **غير مُتطابق** , ** لا تُكمل ** بل إحذف ملف التثبيت وإرجع إلي [القسم 4.1](#41-get-monero-binary)."
+
+#
+#. type: Title ###
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:197
+#, fuzzy, no-wrap
+#| msgid "### 4.3. Binary Verification on Windows"
+msgid "Binary Verification on Windows"
 msgstr "### 4.3. تأكد من الملفات علي ويندوز"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:166
 #
-msgid ""
-"From a terminal, get the `SHA256` hash of your downloaded Monero binary. As "
-"an example this guide will use the `Windows, 64bit` GUI binary. Substitute "
-"`monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you "
-"downloaded in [section 4.1](#41-get-monero-binary)."
-msgstr ""
-"من سطر الأوامر احصل على هاش `SHA256` من ملف التثبيت الذي تم تنزيله. على سبيل "
-"المثال ، سيستخدم هذا الدليل ثنائي واجهة المستخدم الرسومية لنظام ويندوز ، 64 "
-"بت. استبدل `monero-gui-win-x64-v0.15.0.1.zip` باسم الملف الذي قمت بتنزيله في "
-"[القسم 4.1](#41-get-monero-binary)."
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:203
+msgid "From a terminal, get the `SHA256` hash of your downloaded Monero binary. As an example this guide will use the `Windows, 64bit` GUI binary. Substitute `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you downloaded in [section 4.1](#41-get-monero-binary)."
+msgstr "من سطر الأوامر احصل على هاش `SHA256` من ملف التثبيت الذي تم تنزيله. على سبيل المثال ، سيستخدم هذا الدليل ثنائي واجهة المستخدم الرسومية لنظام ويندوز ، 64 بت. استبدل `monero-gui-win-x64-v0.15.0.1.zip` باسم الملف الذي قمت بتنزيله في [القسم 4.1](#41-get-monero-binary)."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:170
 #
+#. type: Plain text
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:205
 msgid "``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```"
 msgstr "``` certUtil -hashfile monero-gui-win-x64-v0.12.0.0.zip SHA256 ```"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/verification-allos-advanced.md:178
 #
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/verification-allos-advanced.md:210
+#, fuzzy, no-wrap
+#| msgid "``` SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18 64 CertUtil: -hashfile command completed successfully.  ```"
 msgid ""
-"``` SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca "
-"ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18 "
-"64 CertUtil: -hashfile command completed successfully.  ```"
-msgstr ""
-"``` SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca "
-"ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18 "
-"64 CertUtil: -hashfile command completed successfully.  ```"
+"SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca\n"
+"ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18\n"
+"64 CertUtil: -hashfile command completed successfully. \n"
+msgstr "``` SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18 64 CertUtil: -hashfile command completed successfully.  ```"
+
+#, no-wrap
+#~ msgid ""
+#~ "### [1. Install GnuPG](#1-installing-gnupg)\n"
+#~ "### [2. Verify & Import Signing Key](#2-verify-and-import-signing-key)\n"
+#~ "  + [2.1. Get Signing Key](#21-get-signing-key)\n"
+#~ "  + [2.2. Verify Signing key](#22-verify-signing-key)\n"
+#~ "  + [2.3. Import Signing key](#23-import-signing-key)\n"
+#~ "### [3. Download & Verify Hash File](#3-download-and-verify-hash-file)\n"
+#~ "  + [3.1. Get Hash File](#31-get-hash-file)\n"
+#~ "  + [3.2. Verify Hash File](#32-verify-hash-file)\n"
+#~ "### [4. Download & Verify Binary](#4-download-and-verify-binary)\n"
+#~ "  + [4.1. Get Monero Binary](#41-get-monero-binary)\n"
+#~ "  + [4.2. Binary Verification on Linux or Mac](#42-binary-verification-on-linux-or-mac)\n"
+#~ "  + [4.3. Binary Verification on Windows](#43-binary-verification-on-windows)\n"
+#~ msgstr ""
+#~ "### [1. تثبيت GnuPG](#1-installing-gnupg)\n"
+#~ "### [2. تأكيد & إستيراد ملف مفتاح التوقيع](#2-verify-and-import-signing-key)\n"
+#~ "  + [2.1. إحصل علي مفتاح التوقيع ](#21-get-signing-key)\n"
+#~ "  + [2.2. تأكد من مفتاح التوقيع ](#22-verify-signing-key)\n"
+#~ "  + [2.3. إستيراد مفتاح التوقيع ](#23-import-signing-key)\n"
+#~ "### [3. تنزيل & تأكد من ملف الهاش](#3-download-and-verify-hash-file)\n"
+#~ "  + [3.1. إحصل علي ملف الهاش ](#31-get-hash-file)\n"
+#~ "  + [3.2. تأكد من ملف الهاش ](#32-verify-hash-file)\n"
+#~ "### [4. تحميل & تأكد من ملفات التسطيب ](#4-download-and-verify-binary)\n"
+#~ "  + [4.1. الحصول علي ملفات التسطيب](#41-get-monero-binary)\n"
+#~ "  + [4.2. تأكد من الملفات علي ليُنكس اوماك ](#42-binary-verification-on-linux-or-mac)\n"
+#~ "  + [4.3. تأكد من الملفات علي ويندوز](#43-binary-verification-on-windows)\n"
