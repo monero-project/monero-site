@@ -4,6 +4,7 @@
   font-family: 'Hind';
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
   src: url('../fonts/Hind-500.eot');
   src: url('../fonts/Hind-500.eot?#iefix') format('embedded-opentype'),
        local('Hind Medium'),
@@ -18,6 +19,7 @@
   font-family: 'Hind';
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
   src: url('../fonts/Hind-700.eot');
   src: url('../fonts/Hind-700.eot?#iefix') format('embedded-opentype'),
        local('Hind Bold'),
@@ -2864,7 +2866,7 @@ footer a.white:hover, a.white:focus {
 }
 
 .footer-wrapper ul {
-    line-height: 1.7;
+    line-height: 3;
 }
 
 .footer-link {
