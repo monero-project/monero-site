@@ -220,6 +220,8 @@
       url: https://airvpn.org/
     - name: altcoinpostage - Buy US Postage with Monero
       url: https://www.altcoinpostage.com
+    - name: Andes Web Design - Custom software, low prices, expert quality
+      url: https://www.andeswebdesign.com
     - name: AnonAddy - Anonymous email forwarding service
       url: https://anonaddy.com/
     - name: Azur Samui - Luxury Apartment and Villa Development, Koh, Samui, Thailand
@@ -288,8 +290,12 @@
       url: https://torguard.net
     - name: Travala - Cryptocurrency Friendly Travel Booking
       url: https://www.travala.com/
+    - name: Venom X Security Ltd. - Penetration testing, vulnerability assessment and OSINT
+      url: https://www.venomxsecurity.com/crypto-currency/
     - name: Vpn.surf
       url: https://vpn.surf/blog/buy-vpn-with-monero/
+    - name: WBN324 Talk Radio - WBN324 is offering cheap advertising paid with Monero
+      url:  https://www.wbn324.com
 - category: Goods
   id: goods
   merchants:
@@ -325,6 +331,8 @@
       url: https://www.cryptocurrencyposters.com/
     - name: CryptoFlooring - plank flooring (U.S.)
       url: https://www.cryptoflooring.com
+    - name: CryptoStop - General store with over 1,000 brand-name items
+      url: https://cryptostop.org/
     - name: Declic CBD - CBD products online shop
       url: https://declic-cbd.fr/
     - name: digitalgoods by ProxyStore
