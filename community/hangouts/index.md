@@ -82,7 +82,7 @@ permalink: /community/hangouts/index.html
              <div class="row irc">
              {% for channel in site.translations[site.lang].hangouts.irc_channels %}
                <div class="col-md-4 col-xs-12">
-                 <a href="irc://chat.freenode.net/#{{ channel[0] }}">#{{ channel[0] }}</a> 
+                 <a href="irc://irc.libera.chat/#{{ channel[0] }}">#{{ channel[0] }}</a> 
                  {% for rooms_list in site.data.chats.chats %}
                    {% for room in rooms_list %}
                      {% if room[0] == channel[0] %}
