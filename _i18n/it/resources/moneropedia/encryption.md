@@ -1,5 +1,4 @@
 ---
-tags: ["kovri"]
 terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting"]
 summary: "The process of encoding messages or information in a way that only authorized parties can decode and read"
 ---
@@ -21,14 +20,3 @@ From [Encryption](https://en.wikipedia.org/wiki/Encryption):
 
 >
 The purpose of encryption is to ensure that only somebody who is authorized to access data (e.g. a text message or a file), will be able to read it, using the decryption key. Somebody who is not authorized can be excluded, because he or she does not have the required key, without which it is impossible to read the encrypted information.
-
-### Kovri
-
-@Kovri implements various types of encryption in *at least* 4 essential capacities:
-
-- @Reseed for bootstrapping
-- @Garlic-routing: three layers of encryption (@garlic-encryption) are used to verify the secure delivery of messages to the recipient/peer/destination
-- @Tunnel encryption: garlic messages are passed through a tunnel and encrypted by the tunnel gateway to the tunnel endpoint
-- @Transport layer encryption prevents the ability to decrypt messages at the [media layer](https://en.wikipedia.org/wiki/OSI_model)
-
-For details on the types of encryption and cryptographic @signatures used in @Kovri and I2P, visit @Java-I2P's [Cryptography](https://geti2p.net/spec/cryptography)
