@@ -29,6 +29,8 @@ permalink: /library/index.html
                     <p>{% t library.moneroaddressescheatsheet20201206p %}</p>
                 <h3><a href="RingsCheatsheet20210301.pdf">{% t library.ringscheatsheet20210301 %}</a></h3>
                     <p>{% t library.ringscheatsheet20210301p %}</p>
+                <h3><a href="RctCheatsheet20210604.pdf">{% t library.rctcheatsheet20210604 %}</a></h3>
+                    <p>{% t library.rctcheatsheet20210604p %}</p>
             </div>
         </div>
     </section>
