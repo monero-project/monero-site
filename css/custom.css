@@ -1689,7 +1689,10 @@ h2, .info-block h2 {
 }
 
 .center.one-fourth, .right.three-fourths, .left.three-fourths, .left.one-fourth.no-pad-sm, .right.one-fourth.no-pad-sm, .right.half, .left.half, .right.one-third, .left.two-thirds, .left.one-third, .right.two-thirds, .center.one-third {
-    padding-left: 0; padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    flex-basis: 100%;
+    max-width: 100%;
 }
 
 .center-1.one-fourth {padding-left: 0.5rem; padding-right: 0;}
