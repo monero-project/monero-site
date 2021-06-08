@@ -51,7 +51,7 @@ permalink: /community/hangouts/index.html
                                     <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="https://mattermost.getmonero.org/" class="btn-link btn-fixed">Mattermost</a></p>
+                                    <p><a href="https://matrix.to/#/#monero:monero.social" class="btn-link btn-fixed">Matrix</a></p>
                                 </div>
                                 <div class="col">
                                     <p><a href="https://taiga.getmonero.org/" class="btn-link btn-fixed">Taiga</a></p>
