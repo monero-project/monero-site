@@ -46,6 +46,7 @@ titles:
   blogbytag: Blog
   library: Librairie
 
+  workgroups: Groupes de travail
 navigation:
   getstarted: Commencer
   whatis: Qu'est-ce que Monero ?
@@ -106,6 +107,13 @@ home:
     systèmes d'exploitation et contiennent tout ce dont vous avez besoin pour utiliser
     Monero immédiatement.
   whatis: En savoir plus sur Monero
+  contributing: Contribuer
+  visitmrl: Visiter le MRL
+  researchlab_para: Le MRL (Monero Research Lab) est la pierre angulaire du projet
+    Monero. Chercheurs et cryptographes du monde entier se rencontrent et échangent
+    pour continuellement améliorer Monero. Lisez leur publications et rejoignez-les!
+  joincommunity: Rejoignez la communauté
+  choosewallet: Choix d'un portefeuille
 hangouts:
   intro: La communauté Monero est diverse et variée. Nous venons de toutes parts,
     mais nous avons certainement nos lieux de rencontres favoris. Vous trouverez la
@@ -127,13 +135,12 @@ hangouts:
       cryptomonnaies.
     monero-offtopic: Pour discuter avec d'autres utilisateurs de Monero d'autre choses
       que Monero.
-    monero-otc: Monero sous le comptoir. Venez pour acheter des Moneroj auprès d'autres
-      Moneron.
     monero-pools: Le lieux des questions et discussion d'extraction minière.
     monero-research-lab: Recherche sur la confidentialité financière de cryptomonnaies.
     monero-translations: Traduire Monero dans d'autres langues.
     monero-hardware: Construction de matériel pour garder vos moneroj en toute sécurité.
     monero-site: Où le développement de ce site web est coordonné
+  mailing_list: Liste de diffusion
 merchants:
   intro1: Toute sorte de commerçants ont fini par apprécier la confidentialité financière
     qu'apporte Monero. Vous trouverez ci-dessous une liste de commerçants dont nous
@@ -159,6 +166,8 @@ sponsorships:
     fiers de leurs contributions. Si vous souhaitez sponsoriser Monero et être cité
     sur cette page, merci de nous contacter par e-mail à dev@getmonero.org.
 
+  symas: Symas sponsorise son Directeur Technique Howard Chu (hyc) pour son travail
+    sur le code base de Monero.
 team:
   core: Noyau
   community: Communauté
@@ -379,17 +388,16 @@ accepting:
     \ vous pouvez en créer autant que vous le souhaitez et les utiliser pour recevoir\
     \ des XMR sur le compte auquel elles sont liées. Pour créer une nouvelle sous-adresse\
     \ pour un compte, tapez la commande :\n"
+  index: Index
 contributing:
   intro: Monero est un projet open-source, emmené par sa communauté. Ci-dessous se
     trouvent différents moyens pour soutenir le projet.
   network: Soutenir le Réseau
   develop: Développer
-  develop_para4: problèmes en suspens.
   full-node: Faire fonctionner un nœud complet
   mine: Miner
   ffs: Voir le Community Crowdfunding System
   donate: Faire un don
-  donate-xmr_para: Les dons peuvent être envoyées à
   donate-other: Autre
   donate-other_para1: Envoyez un courriel à
   donate-other_para2: pour un autre moyen de don ou si vous souhaitez devenir un sponsor
@@ -671,17 +679,6 @@ what-is-monero:
     que Monero sera toujours accepté sans risque de censure.
   grassroots: Monero est une communauté populaire qui attire les meilleurs chercheurs
     en cryptomonnaie et les meilleurs talents en ingénierie au monde.
-  grassroots_para1: Plus de
-  grassroots_para2: 500 développeurs
-  grassroots_para3: ont contribués au projet Monero, dont 30 développeurs principaux.
-    Les Forums et canaux de discussion sont actifs et accueillant.
-  grassroots_para4: Le Laboratoire de Recherche de Monero, l'équipe de dévelopement
-    Principale et les développeurs de la communauté repoussent en permanence les limites
-    du possible dans la confidentialité et la sécurité des cryptomonnaies.
-  grassroots_para5: Monero n'est pas une société. Il est développé par des experts
-    en cryptographie et en systèmes distribués du monde entier qui donnent de leur
-    temps ou sont financés par des dons communautaires. Cela signifie que Monero ne
-    peut être fermé par un pays et n'est soumis à aucune juridiction légale particulière
   electronic: Monero est de l'argent électronique qui permet des paiements rapides
     et peu couteux dans le monde entier.
   electronic_para1: Il n'y a pas de frais de garde et aucun risque de rétrofacturation
@@ -1245,3 +1242,9 @@ blog:
   date: Publiés à
 tags:
   notags: Il n'y a aucun post pour ce tag.
+footer:
+  source: Code source
+  legal: Mentions légales
+  ccs: Système de financement participatif
+  ml: Liste de diffusion
+  feed: Flux RSS

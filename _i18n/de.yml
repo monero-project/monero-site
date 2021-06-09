@@ -14,7 +14,7 @@ global:
   privacy: Datenschutz
   untranslated: Diese Seite ist noch nicht übersetzt. Wenn du uns mit Übersetzungen
     unterstützen möchtest, schau bitte hier
-  outdatedVersion: englischen Version
+  outdatedVersion: englische Version
   outdatedMin: Seit der Übersetzung dieser Seite wurden Aktualisierungen vorgenommen.
     Du kannst auf dieser Seite bleiben, aber sie könnte unvollständig sein. Bitte
     nutze die
@@ -138,8 +138,6 @@ hangouts:
       Kryptowährungen diskutiert.
     monero-offtopic: Mit anderen Monero-Nutzern über Dinge sprechen, die mit Monero
       nichts zu tun haben.
-    monero-otc: OTC-Handel (Over The Counter) von Monero. Komm' hierher, wenn du Monero
-      außerhalb von Börsen und Mittelsmännern erwerben oder verkaufen möchtest.
     monero-pools: Hier wird über alles rund ums Mining gesprochen.
     monero-research-lab: Forschung rund um die finanzielle Privatsphäre im Bereich
       von Kryptowährungen
@@ -151,7 +149,7 @@ hangouts:
   mailing_list: Mail-Verteiler
   bridges: Diese Kanäle schlagen eine Brücke zu einigen anderen Plattformen, was der
     Community erlaubt, mithilfe ihres favorisierten Chats/Protokolls zu kommunizieren.
-  subscribe: Subscribe
+  subscribe: Abonnieren
 merchants:
   intro1: Händler aller Art haben die Privatsphäre, die Monero bietet, zu schätzen
     gelernt. Weiter unten findest du eine Liste von Firmen, die ihre Waren und Dienstleistungen
@@ -176,7 +174,7 @@ sponsorships:
   globee: GloBee sponsert die primäre Infrastruktur der Monero-Webseite.
   tari: Tari Labs sponsert den von dieser Webseite genutzten CDN.
 team:
-  core: Core
+  core: Kernteam
   community: Community
   mrl: Research Lab
   community_start: Der beste Weg deinen Beitrag zu leisten ist, dich in den Chaträumen
@@ -187,6 +185,50 @@ team:
   descr: Beschreibung
   telegram: 'Telegram Chat:'
   chatgui: 'Chat (GUI):'
+  devworkgroup_descr: 'Diese Arbeitsgruppe vereinigt Monero-Entwickler, die an den
+    Wallets und dem Hintergrunddienst arbeiten, die vom Core Team gepflegt werden.
+    Sie besteht aus zwei Hauptteilen: dem CLI-Team und dem GUI-Team. Diese Teams koordinieren
+    sich über zwei verschiedene Chaträume.'
+  mrw_start: Der größte Teil der Aktivität dieser Arbeitsgruppe findet im IRC statt.
+    Wenn Sie etwas beitragen möchten, treten Sie einfach dem Kanal bei, um Fragen
+    zu stellen oder Unterstützung zu leisten.
+  space_start: Die Arbeitsgruppe kann über ihren Chatraum auf Freenode kontaktiert
+    werden.
+  mrl_start: Treten Sie dem Chatraum unten bei und geben Sie Ihre Interessen und Fähigkeiten
+    an. Die Forschung ist immer im Gange und jemand wird Sie in die richtige Richtung
+    weisen.
+  locplatform: 'Plattform für die Lokalisierung:'
+  localization_descr: Eine der ältesten Monero-Arbeitsgruppen. Sie besteht aus Mitarbeitern,
+    die an der Übersetzung von Monero-bezogener Software und Dokumentation arbeiten.
+    Es wird dringend empfohlen, die Arbeitsgruppe zu kontaktieren, bevor Sie an Übersetzungen
+    arbeiten.
+  localization: Arbeitsgruppe Lokalisierung
+  web_start: Es ist immer eine gute Idee, dem Chatroom beizutreten und direkt mit
+    den Mitgliedern der Arbeitsgruppe zu sprechen, aber wenn Sie es vorziehen, selbst
+    loszulegen, werfen Sie einen Blick in die Readme-Datei im GitHub-Repository. Sie
+    enthält eine Schritt-für-Schritt-Anleitung, um jeden einzelnen Teil dieser Website
+    zu bearbeiten.
+  web_descr: Diese entwicklerorientierte Arbeitsgruppe koordiniert die Entwicklung
+    der Website. Die meisten Mitglieder sind auch Teil der Arbeitsgruppe Entwicklung.
+    Die Arbeitsgruppe Webseite wurde hauptsächlich eingerichtet, um Diskussionen über
+    die Webseite an einem Ort zu führen.
+  webworkgroup: Arbeitsgruppe Webseite
+  devworkgroup_start: Es ist eine gute Idee, einen Blick auf offene Probleme in beiden
+    Repositories zu werfen, um eine Vorstellung davon zu bekommen, was behoben oder
+    verbessert werden könnte. Beide Codebasen, aber vor allem das Core-Repository,
+    können recht anspruchsvoll sein, daher wird empfohlen, zuerst im Chatroom zu schreiben
+    und sich und seine Fähigkeiten vorzustellen und was Sie beitragen möchten.
+  devworkgroup: Arbeitsgruppe Entwicklung
+  core_start: Das Kernteam ist eine geschlossene Arbeitsgruppe, der man ohne Einladung
+    nicht beitreten kann.
+  core_descr: Als Verwalter des Projekts verwaltet und pflegt das Kernteam die Infrastruktur,
+    wo eine Zentralisierung nicht zu vermeiden ist (Domains, Website, Github Repositories...).
+    Seine Mitglieder agieren als Vermittler, wie sie es für richtig halten und zielen
+    darauf ab, den Konsens in der Community zu gewichten und die Qualität der Interaktionen
+    aufrecht zu erhalten, die Monero zu dem erfolgreichen Projekt gemacht haben, das
+    es heute ist. Das Kernteam erhält und erhielt noch nie eine finanzielle Entschädigung.
+  contacts: Chaträume und Kontakte
+  chatgeneral: 'Chat (Allgemein):'
 downloads:
   intro: Auf dieser Seite kannst du die letztgültige Version der Monero-Software,
     ebenso wie Hardware-, Light- und Mobil-Wallets, finden und herunterladen.
@@ -286,6 +328,8 @@ downloads:
   blockchain3: Importiere die Monero-Blockchain
   blockchain2: Wenn du dennoch fortfahren möchtest, schaue dir die Benutzeranleitung
     an
+  releasenotes: Versionshinweise
+  desktop: Desktop
 monero-project: {}
 press-kit:
   intro1: Hier findest du das Monero-Symbol und -Logo. Du kannst eine beliebige Größe
@@ -428,6 +472,7 @@ contributing:
   donate-other_para1: Schreibe eine E-Mail an
   donate-other_para2: für andere Möglichkeiten zu spenden, oder wenn du ein Sponsor
     für das Monero-Projekt werden möchtest.
+  sponsor_p2: für mehr Informationen.
 faq:
   q1: Wie erhält Monero einen Wert?
   a1: Monero hat einen Wert, weil es Menschen gibt, die es kaufen wollen. Gäbe es
@@ -685,6 +730,14 @@ faq:
   and: und
   aavailable: auch verfügbar in
   video_intro: Einführung in Monero
+  video_ringsig: Ringsignaturen
+  avideos: "Im Laufe der Jahre hat die Community eine große Menge an informativen\
+    \ Inhalten wie Artikel und Videos erstellt. Die meisten dieser Videos sind auf\
+    \ Plattformen wie YouTube öffentlich zugänglich. Auf dieser Website hosten wir\
+    \ ein paar Videos, die die Grundlagen von Monero erklären. Um ihre Wirksamkeit\
+    \ zu optimieren, sollten sie nacheinander angesehen werden:\n"
+  qvideos: Gibt es Videos, die ich mir ansehen kann, um mehr über Monero zu erfahren?
+  qhf: Stimmt es, dass Monero alle 6 Monate einen Hard Fork hat?
 mining:
   intro1: Monero ist eine Kryptowährung, die auf Proof-of-Work-Mining zurückgreift,
     um einen dezentralen Konsens zu erreichen. Weiter unten findest du weitere Informationen
@@ -728,19 +781,6 @@ what-is-monero:
     ohne die Möglichkeit, einzelne Monero zu zensieren und auszuschließen.
   grassroots: Monero ist eine unabhängige Community, die die besten Forscher und Entwickler
     der Kryptowährungsszene anzieht.
-  grassroots_para1: Über
-  grassroots_para2: 420 Entwickler
-  grassroots_para3: ', darunter 30 Hauptentwickler, haben etwas zum Monero-Projekt
-    beigetragen. Die Foren und Chats sind aufgeschlossen und aktiv.'
-  grassroots_para4: Moneros „Research Lab“, sein Hauptentwicklungsteam und Entwickler
-    der Community erweitern ständig die Möglichkeiten des Datenschutzes und der Sicherheit
-    von Kryptowährungen.
-  grassroots_para5: Monero ist keine Firma. Es wird von Experten der Kryptographie
-    und dezentralen Systemen entwickelt, die aus der ganzen Welt stammen und ihre
-    Zeit dem Projekt widmen. Einige Entwickler werden durch Spenden der Community
-    unterstützt. Beides zusammen bedeutet, dass kein Land und keine Regierung in der
-    Lage ist, Monero zu unterbinden und dass Monero keiner spezifischen Gesetzgebung
-    unterliegt.
   electronic: Monero ist elektronisches Bargeld, das schnelle und günstige Bezahlungen
     von jedem und an jeden weltweit ermöglicht.
   electronic_para1: Es gibt keine mehrtägigen Verzögerungen zur Bestätigung und kein
@@ -871,6 +911,7 @@ user-guides:
   tailsguide: Einrichtung eines Wallets (unter Gebrauch eines Remote-Nodes) auf Tails
   guiguide: Anleitung für das Monero-GUI-Wallet
   node-i2pzero: Betreiben eines Monero-Nodes via I2P mit I2P-zero
+  back: Zurück zur Liste
 roadmap:
   completed: Abgeschlossene Aufgabe
   ongoing: Laufende Aufgabe
@@ -1184,6 +1225,9 @@ research-lab:
     is hard. We remark on some applications in signer-ambiguous confidential transaction
     models without trusted setup.
   iacr2019654: Concise Linkable Ring Signatures and Forgery Against Adversarial Keys
+  librarybutton: Erkunden Sie die Bibliothek
+  libraryp: Die Bibliothek enthält nützliche Dokumente wie "Zero to Monero" und "Mastering
+    Monero", die Monero im Detail untersuchen und erklären.
 specs:
   pow_title: Proof of Work
   block_emission_title: Verteilungskurve
@@ -1338,3 +1382,5 @@ footer:
   legal: Rechtliches
   feed: RSS Feed
   ml: Mailingliste
+  reachout: Kontaktiere uns
+  ccs: Gemeinschaftliches Crowdfunding-System

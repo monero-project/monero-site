@@ -96,7 +96,6 @@ hangouts:
     monero-markets: Hier wordt de prijs van Monero en andere coins besproken.
     monero-offtopic: Hier kun je met andere Monero-gebruikers chatten over dingen
       die niet met Monero te maken hebben.
-    monero-otc: OTC = over the counter. Hier kun je onderhands XMR kopen of verkopen.
     monero-pools: Dit is de plek voor vragen en discussie over minen.
     monero-research-lab: Onderzoek naar financiële privacy met cryptovaluta.
     monero-translations: Over het lokaliseren van Monero in andere talen.
@@ -245,12 +244,10 @@ contributing:
     verschillende manier om het project te steunen.
   network: Bijdragen aan het netwerk
   develop: Programmeren
-  develop_para4: issues.
   full-node: Een volledige node draaien
   mine: Minen
   ffs: Bekijk het Forum Funding System
   donate: Doneren
-  donate-xmr_para: Giften kun je verzenden naar
   donate-other: Overig
   donate-other_para1: E-mail
   donate-other_para2: voor andere manieren om geld te geven of als je een sponsor
@@ -389,17 +386,6 @@ what-is-monero:
     is.
   grassroots: Monero is een community van vrijwilligers waar de beste onderzoekers
     en programmeurs van cryptovaluta op af komen.
-  grassroots_para1: Meer dan
-  grassroots_para2: 500 ontwikkelaars
-  grassroots_para3: hebben bijgedragen aan het Monero-project, waaronder 30 *core
-    developers*. Forums en chatkanalen zijn gastvrij en actief.
-  grassroots_para4: Het Monero Research Lab, het Core Development Team en de andere
-    ontwikkelaars verleggen steeds de grenzen van wat mogelijk is met privacy en beveiliging
-    van cryptovaluta.
-  grassroots_para5: Monero is geen bedrijf. Het wordt ontwikkeld door experts in cryptografie
-    en gedistribueerde systemen van over de hele wereld, die zonder vergoeding werken
-    of worden gefinancierd door giften van de community. Hierdoor kan Monero niet
-    worden verboden door een bepaald land of beperkt in een bepaald rechtsgebied.
   electronic: Monero is elektronisch geld voor wereldwijde snelle, goedkope betalingen.
   electronic_para1: "Er zijn geen 'valutadagen' en er is geen risico van frauduleuze\
     \ terugboekingen. Er zijn geen kapitaalrestricties mogelijk: maatregelen die het\

@@ -138,8 +138,6 @@ hangouts:
       monedas.
     monero-offtopic: Para hablar con otros usuarios acerca de cosas no relacionadas
       a Monero.
-    monero-otc: Monero extrabursátil (Over The Counter). Entra aquí para comprar XMR
-      de tu compañeros de Monero.
     monero-pools: Este es el lugar para preguntas y discusiones de minería.
     monero-research-lab: Investiga sobre privacidad financiera con criptomonedas.
     monero-translations: Localizar Monero en otros idiomas.
@@ -183,6 +181,13 @@ team:
     que unen fuerzas para lograr un objetivo común. Tienen diferentes estructuras
     y objetivos. Aquí enumeramos algunos de los grupos de trabajo más activos y algunos
     consejos para comenzar, si quiere contribuir a alguno de ellos.
+  webworkgroup: Grupo de trabajo de la página web
+  contacts: Salas de chat y contactos
+  chatgui: 'Chat (GUI):'
+  chatgeneral: 'Chat (general):'
+  devworkgroup: Grupo de trabajo de desarrollo
+  chat: 'Chat:'
+  descr: Descripción
 downloads:
   intro: En esta página puedes encontrar y descargar las últimas versiones disponibles
     del software de Monero, así como monederos de hardware, ligeros y móviles.
@@ -711,17 +716,6 @@ what-is-monero:
     siempre será aceptado sin riesgo de censura o rechazo.
   grassroots: Monero es una comunidad sólida que ha logrado atraer a los mejores ingenieros
     e investigadores del mundo en criptomonedas.
-  grassroots_para1: Más de
-  grassroots_para2: 500 desarrolladores
-  grassroots_para3: han contribuido al proyecto de Monero, incluyendo 30 desarrolladores
-    centrales. Los foros y los canales de comunicación son muy acogedores y activos.
-  grassroots_para4: El Laboratorio de Investigación de Monero, el Equipo de Desarrollo
-    Central y la Comunidad de Desarrolladores están constantemente rompiendo la barrera
-    de lo que es posible con privacidad y seguridad de criptomonedas.
-  grassroots_para5: Monero no es una corporación. Es desarrollado por expertos en
-    criptografía y sistemas distribución de todo el mundo que donan su tiempo o son
-    patrocinados por donaciones de la comunidad. Esto significa que Monero no puede
-    ser cerrado por ningún país y no está restringido por ninguna jurisdicción legal.
   electronic: Monero es dinero electrónico que permite pagos rápidos y de bajo costo
     hacia cualquier parte del mundo y desde cualquier parte del mundo.
   electronic_para1: No existen periodos de retención ni riesgo de cargos fraudulentos.

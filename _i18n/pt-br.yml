@@ -45,6 +45,7 @@ titles:
   blogbytag: Blog
   library: Biblioteca
 
+  workgroups: Grupos de trabalho
 navigation:
   getstarted: Início
   whatis: O que é o Monero?
@@ -72,9 +73,9 @@ home:
     projetos Monero e Kovri.
   moneropedia_button: Leia a Moneropédia
   faq: Perguntas Frequentes
-  faq_para: Recebemos muitas perguntas ao longo dos anos e compilamos, para sua conveniência,
-    um FAQ completo e bem variado. Se sua pergunta não estiver aqui, não se preocupe,
-    você sempre pode recorrer à comunidade.
+  faq_para: Recebemos muitas perguntas ao longo do tempo e compilamos um FAQ completo
+    e diverso. Se sua pergunta não estiver aqui, não se preocupe, pois você pode perguntar
+    à comunidade a qualquer momento.
   answers: Encontre respostas para suas perguntas
   exchanges: Corretoras
   choosewallet: Escolha uma Carteira
@@ -101,6 +102,17 @@ home:
     ou recebê-las em troca de algum serviço, mas a maneira mais fácil é usar uma corretora
     para trocar o seu dinheiro por XMR. Diversas corretoras (centralizadas e descentralizadas)
     listam Monero (XMR).
+  useit: 'É uma moeda: use-a!'
+  getcoins: Obter Algumas Moedas
+  guides_para: "A comunidade Monero disponibiliza diversos recursos e manuais. Na\
+    \ seção 'Guias do Usuário', os usuários podem achar informações, dicas e guias\
+    \ úteis sobre as configurações mais comuns. Na seção 'Guias do Desenvolvedor',\
+    \ desenvolvedores podem encontrar tudo o que eles precisam saber para desenvolver\
+    \ um serviço com Monero ou para se comunicarem com a rede. A seção Biblioteca\
+    \ proporciona downloads gratuitos de publicações e livros, incluindo os livros\
+    \ 'Mastering Monero' e 'Zero a Monero'.\n"
+  contributing: Contribuindo
+  joincommunity: Junte-se à Comunidade
 hangouts:
   intro: A comunidade Monero é bem diversa. Viemos de todos os cantos, mas certamente
     temos alguns lugares onde nos reunimos para conversar. Você encontrará a maioria
@@ -126,15 +138,15 @@ hangouts:
       criptos.
     monero-offtopic: Bate-papo com outros membros da comunidade sobre assuntos não
       relacionados ao Monero.
-    monero-otc: Venda livre de Monero. Canal para comprar XMR diretamente de outros
-      membros da comunidade.
     monero-pools: Canal para perguntas e discussões sobre mineração.
     monero-research-lab: Pesquisas de alto nível sobre privacidade financeira com
       criptomoedas.
     monero-translations: Traduzindo o Monero para outros idiomas.
     monero-hardware: Construindo carteiras de hardware para manter seu Monero seguro.
-    monero-site: Onde o desenvolvimento deste website é coordenado
+    monero-site: Onde o desenvolvimento deste website é coordenado.
   mailing_list: Lista de e-mail
+  bridges: Estes canais estão interligados a uma série de outras plataformas, permitindo
+    a comunidade escolher o seu serviço de chat ou protocolo favoritos.
 merchants:
   intro1: Comerciantes de todos os tipos passaram a valorizar a privacidade financeira
     que o Monero proporciona. Abaixo está uma lista de comerciantes que sabemos que
@@ -148,10 +160,11 @@ merchants:
     "Favor notar que os links presentes são listados por conveniência e para fins informativos; eles não constituem endosso da comunidade Monero de quaisquer produtos, serviços ou opiniões das corporações, organizações e indivíduos aqui listados. A comunidade Monero não se responsabiliza pela exatidão, legalidade ou conteúdo destes websites externos. Entre em contato com o serviço em questão para obter respostas sobre seu conteúdo. Seja prudente, você é responsável por fazer sua própria pesquisa. Sempre use o bom senso ao realizar compras online."
   onion: Endereço onion (requer Tor)
 sponsorships:
-  intro: As seguintes empresas apoiam o Projeto Monero em sua meta de trazer privacidade
-    financeira ao mundo. Nós não poderíamos ser mais gratos por suas contribuições.
+  intro: As seguintes empresas apoiam ativamente o Projeto Monero em sua meta de trazer
+    privacidade financeira ao mundo. Nós não poderíamos ser mais gratos por suas contribuições.
     Se você gostaria de patrocinar o Projeto Monero e ser listado nesta página, por
     favor nos envie um e-mail para dev@getmonero.org.
+  tari: Tari Labs patrocina o CDN utilizado neste website
 team:
   core: Core
   community: Comunidade
@@ -252,6 +265,8 @@ downloads:
   moreinfofaq: Mais informações nas Perguntas Frequentes
   avwarning: Alguns programas de antivírus e firewall podem sinalizar os arquivos
     e os executáveis do Monero como malware.
+  packages_link: Confira a lista no Github
+  packages: Estão também disponíveis pacotes para diversas distribuições de Linux.
 monero-project: {}
 press-kit:
   intro1: Aqui se encontram o símbolo e logotipo do Monero. Você pode escolher qualquer
@@ -284,6 +299,7 @@ press-kit:
   guerrillakit: Guerrilla Toolkit
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
+  promographics: Gráficos promocionais do Monero - Logos e adesivos para websites
 accepting:
   title_gui: Instruções para a carteira GUI
   gui2: A página de recebimento (mostrada abaixo) é explicada em todos os detalhes
@@ -372,17 +388,16 @@ accepting:
     \ com uma @wallet Monero em seu celular e receba os XMR em minutos. Lembre-se\
     \ que você pode gerar quantos endereços (e subendereços) quiser. Isto é útil caso\
     \ queira manter seus fundos separados por qualquer motivo.\n"
+  index: Índice
 contributing:
   intro: O Monero é um projeto de código aberto e dirigido pela comunidade. Confira
     abaixo as diferentes maneiras que você pode apoiar e suportar o projeto.
   network: Suporte a Rede
   develop: Desenvolva
-  develop_para4: problemas (issues).
   full-node: Execute um nó local
   mine: Minere
   ffs: Veja o Sistema de Financeiamento via Fórum
   donate: Faça uma Doação
-  donate-xmr_para: Envie sua doação para
   donate-other: Outros meios
   donate-other_para1: Envie um e-mail para
   donate-other_para2: caso você queira doar usando outro meio de pagamento, ou se
@@ -591,6 +606,22 @@ faq:
     Se não sabe o significado de uma palavra ou gostaria de ter mais informações sobre
     ela, visite a Moneropédia. Alguns exemplos de termos pesquisados com frequência
     são: nó, fungibilidade, chave de visualização e poda.'
+  and: e
+  aavailable: também disponível em
+  video_ringsig: Assinaturas em anel
+  video_sa: Endereços Sigilosos (stealth)
+  video_essentials: O Essencial
+  video_intro: Introdução ao Monero
+  qvideos: Existem vídeos que eu possa assistir para aprender sobre Monero?
+  qhf: É verdade que o Monero passa por um hard fork a cada 6 meses?
+  qantivirus: Porque meu antivirus/firewall está indicando o software de Monero (que
+    eu acabei de baixar) como malware?
+  a2exchanges: 'Anteriormente, precisava-se de Bitcoin para comprar Monero, mas isso
+    já não é necessário. Em muitas corretoras, pode trocar diretamente moedas nacionais
+    (USD, EUR, GBP, BRL, etc) ou outras criptomoedas por Monero. Algumas corretoras
+    exigem uma prova de identificação (KYC); outras não, como é o caso de corretoras
+    descentralizadas. Neste website está disponível uma lista de corretoras, onde
+    você pode comprar/vender Monero(XMR):'
 mining:
   intro1: O Monero é uma criptomoeda que depende da mineração através do algoritmo
     de prova de trabalho para alcançar o consenso distribuído. Abaixo você verá algumas
@@ -632,19 +663,6 @@ what-is-monero:
     o Monero sempre será aceito sem o risco de ser censurado.
   grassroots: O Monero é uma comunidade de base que atrai os melhores pesquisadores
     de criptomoedas e talentos de engenharia do mundo.
-  grassroots_para1: Mais de
-  grassroots_para2: 420 desenvolvedores
-  grassroots_para3: contribuíram ao Projeto Monero, incluindo 30 desenvolvedores core.
-    Fóruns e outros canais de comunicação são ativos e receptivos.
-  grassroots_para4: O Laboratório de Pesquisa Monero, a Equipe de Desenvolvimento
-    Core, e os Desenvolvedores da Comunidade estão constantemente ultrapassando as
-    fronteiras do que é possível ser feito em relação à segurança e à privacidade
-    das criptomoedas.
-  grassroots_para5: O Monero não é uma corporação. Ele é desenvolvido por especialistas
-    em criptografia e sistemas distribuídos do mundo todo, que são financiados pela
-    comunidade ou simplesmente doam seu tempo ao projeto. Isso significa que o Monero
-    não pode ser fechado por nenhum país e não é restringido por nenhuma jurisdição
-    legal específica.
   electronic: O Monero é dinheiro eletrônico que permite pagamentos rápidos e baratos
     para qualquer lugar do mundo.
   electronic_para1: Não há períodos de retenção de vários dias, e não há riscos de
@@ -652,6 +670,13 @@ what-is-monero:
     que restringem o fluxo de moedas tradicionais, às vezes em níveis extremos, como
     em países que sofrem grande instabilidade econômica.
   videos: Vídeos sobre o Monero (Inglês)
+  getb: Obtenha Monero
+  walletb: Obtenha uma Carteira
+  aboutb: Sobre
+  grassroots_p7: fóruns e canais de chat
+  grassroots_p6: Vários
+  grassroots_p5: localizados ao redor do mundo.
+  grassroots_p4: 500 desenvolvedores
 about:
   history: Uma Breve História
   history_para1: O Monero foi lançado em Abril de 2014. Foi um lançamento justo e
@@ -719,6 +744,8 @@ developer-guides:
   walletrpc_descr: chamadas monero-wallet-rpc. Incluindo entradas, saídas e exemplos.
   daemonrpc_descr: Chamadas RPC para o daemon. Incluindo entradas, saídas e exemplos.
   head: Coleção de guias, documentação e recursos úteis para desenvolvedores (em inglês).
+  monero-javascript: Uma biblioteca Node.js para utilizar Monero.
+  libraries: Bibliotecas e auxiliares
 user-guides:
   general: Geral
   mining: Mineração
@@ -1123,3 +1150,12 @@ blog:
   date: Publicado em
 tags:
   notags: Não há posts com esta tag.
+footer:
+  feed: Feed RSS
+  reachout: Alcançar
+  ccs: Sistema de financiamento coletivo da comunidade
+  ml: Lista de e-mail
+  source: Código-fonte
+  legal: Legal
+error:
+  button: Ir para Página Inicial

@@ -1,2 +1,8 @@
 global:
   lang_tag: '@lang_tag_vi'
+  sitename: getmonero.org, Dự án Monero
+  monero_project: Dự án Monero
+  copyright: Bản quyền
+  getting_started: Bắt đầu
+  monero: Monero
+  date: '%Y/%m/%d'

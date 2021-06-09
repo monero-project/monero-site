@@ -79,7 +79,6 @@ hangouts:
     monero-dev: 許多貢獻者與開發者會在這裡討論開發相關的事情。
     monero-markets: 我們用這頻道來討論門羅幣或其他幣種的價格資訊。
     monero-offtopic: 在這裡可以與其他門羅幣使用者聊聊與門羅幣無關的事情。
-    monero-otc: 門羅幣的場外交易。可以來這裡與其他的門羅幣愛好者交易門羅幣。
     monero-pools: 這是用來討論門羅幣挖礦與礦池的頻道。
     monero-research-lab: 這頻道的主題是研究金融與加密貨幣的隱私。
     monero-translations: 將門羅幣專案翻譯至當地語言的工作溝通頻道。
@@ -217,12 +216,10 @@ contributing:
   intro: 門羅幣是一個開放原始碼、由社群推動的專案。以下列出了一些可以支持本專案的方法。
   network: 支持交易網路
   develop: 開發工作
-  develop_para4: 議題 (issues)。
   full-node: 運行全節點
   mine: 挖礦
   ffs: 造訪論壇募資系統
   donate: 贊助
-  donate-xmr_para: 贊助款項可以發送至
   donate-other: 其他
   donate-other_para1: 發送電子郵件至
   donate-other_para2: 若你想要以其他的方式贊助或是想要成為門羅幣的贊助單位。
@@ -289,11 +286,6 @@ what-is-monero:
     (例如 Zcash) 不同。
   confidential_para2: 門羅幣是滿足貨幣替代性的。由於資訊都是被混淆過的，門羅幣無法被先前的交易汙染，這代表門羅幣永遠不會有被審查而拒絕收取的風險。
   grassroots: 門羅幣是草根型的社群，吸引了全世界頂尖的加密貨幣研究員與工程師
-  grassroots_para1: 已有超過
-  grassroots_para2: 500 位開發者
-  grassroots_para3: 在門羅幣專案中貢獻，包括 30 位核心開發者。論壇與聊天頻道都很開放且活躍。
-  grassroots_para4: 門羅幣的研究實驗室成員、核心開發者、與社群開發者持續致力於將加密貨幣的隱私保護與安全性推向極限。
-  grassroots_para5: 門羅幣不是一家公司。它是由世界各地的密碼學與分散式系統專家所發展，貢獻他們的時間或是由社群資助而進行的工作。這代表門羅幣無法被某個國家或執法機構所關閉。
   electronic: 門羅幣提供全世界一個交易快速，低負擔的電子現金。
   electronic_para1: 不存在著需時數日的等待期或是詐騙退款風險，不會有所謂的「資金管控」- 這些都是限制傳統貨幣流通的因素，時常發生於一些在極端狀況下，經濟狀況不穩定的國家。
   videos: 門羅幣影片 (英文)
