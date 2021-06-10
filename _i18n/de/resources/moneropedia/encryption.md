@@ -1,5 +1,4 @@
 ---
-tags: ["kovri"]
 terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting", "Verschlüsselung", "Entschlüsselung", "verschlüsseln", "entschlüsseln", "verschlüsselt", "entschlüsselt"]
 summary: "Der Prozess des Verschlüsselns von Nachrichten oder Informationen, sodass ausschließlich autorisierte Instanzen diese entschlüsseln und lesen können"
 ---
@@ -21,14 +20,3 @@ Mit einem Verschlüsselungssystem wird die ursprüngliche Information oder Nachr
 Der Zweck von Verschlüsselung ist es, sicherzustellen, dass nur jemand, der zum Abruf von Daten (bspw. einer Textnachricht oder einer Datei) autorisiert ist, ebendiese unter Verwendung des Entschlüsselungscodes lesen kann. Jemand, der nicht autorisiert ist, kann ausgeschlossen werden, da der- oder diejenige nicht über den benötigten Code verfügt, ohne welchen es unmöglich ist, die verschlüsselte Information zu lesen.
 
 (Frei übersetzt von [Encryption](https://en.wikipedia.org/wiki/Encryption))
-
-### Kovri
-
-@Kovri realisiert verschiedene Arten von Verschlüsselung durch *mindestens* vier erforderliche Funktionen:
-
-- Reseed zwecks Bootstrapping
-- Garlic-Routing: Verwendung dreier Verschlüsselungsschichten, um die sichere Überlieferung von Nachrichten an Empfänger/Peers/Ziele zu verifizieren
-- "Tunnel Encryption": Garlic-Nachrichten durchaufen eine Art Tunnel und werden ab Eingang bis zum Endpunkt verschlüsselt
-- Transportschicht-Verschlüsselung verhindert die Möglichkeit der Nachrichtenentschlüsselung auf der [Medienschicht](https://de.wikipedia.org/wiki/OSI-Modell)
-
-Für Details zu den Arten von Verschlüsselung und kryptografischen @Signaturen, die bei @Kovri und I2P verwendet werden, besuche Java-I2Ps [Kryptografie](https://geti2p.net/spec/cryptography).

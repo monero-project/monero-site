@@ -1,5 +1,4 @@
 ---
-tags: ["kovri"]
 terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting", "chiffrement", "chiffré", "chiffrée", "chiffrés", "chiffrées", "chiffrer", "chiffrant", "déchiffrement", "déchiffré", "déchiffrée", "déchiffrés", "déchiffrées", "déchiffrer", "déchiffrant"]
 summary: "Le processus d'encodage de messages ou d'informations de sorte que seule les parties autorisés puissent les décoder et les lire."
 ---
@@ -21,14 +20,3 @@ Extrait de [Chiffrement](https://fr.wikipedia.org/wiki/Chiffrement) :
 
 >
 La sécurité d'un système de chiffrement doit reposer sur le secret de la clé de chiffrement et non sur celui de l'algorithme. Le principe de Kerckhoffs suppose en effet que l'ennemi (ou la personne qui veut déchiffrer le message codé) connaisse l'algorithme utilisé.
-
-### Kovri
-
-@Kovri implémente différents types de chiffrements pour *au moins* 4 capacités essentielles :
-
-- @réensemencement pour amorce
-- @Routage-en-ail : trois niveau de chiffrement (@chiffrement-en-ail) sont utilisé pour vérifier la distribution sécurisée des messages au destinataire ou homologue de destination
-- Chiffrement de @Tunnel : les messages en ail sont envoyés à travers un tunnel et chiffrés par la passerelle de ce tunnel vers le point de terminaison du tunnel
-- Une couche de @Transport chiffrée empêche la capacité à déchiffrer un messages sur la [couche liaison](https://fr.wikipedia.org/wiki/Mod%C3%A8le_OSI)
-
-Pour plus de détails sur les types de chiffrement et les @signatures cryptographiques utilisez dans @Kovri et I2P, consultez la page [Cryptographie](https://geti2p.net/spec/cryptography) d'I2P-Java.

@@ -1,5 +1,4 @@
 ---
-tags: ["kovri"]
 terms: ["encryption", "encrypted", "encrypting", "decryption", "decrypted", "decrypting"]
 summary: "The process of encoding messages or information in a way that only authorized parties can decode and read"
 ---
@@ -21,16 +20,3 @@ summary: "The process of encoding messages or information in a way that only aut
 
 >
 加密的目的是确保只有被授权访问数据的人（例如文本消息或文件）才能使用解密密钥读取数据。未经授权的人可以被排除在外，因为他或她没有所需的密钥，没有密钥就不可能读取加密的信息。
-
-
-
-### Kovri
-
-@Kovri实施了多种类型的加密在*至少* 4种基本性能中：
-
-- @补种的引导
-- @大蒜路由：三层加密(@大蒜加密)用于验证@消息是否安全传递到收件人/对等节点/@目标
-- @隧道加密：大蒜消息通过@隧道传递，并由@隧道网关加密到@隧道端点
-- @传输层加密防止在[媒体层](https://en.wikipedia.org/wiki/OSI_model)解密@消息
-
-有关@Kovri和I2P中使用的各类型的加密和加密@签名的详细信息，请访问@Java-I2P的[密码学](https://geti2p.net/spec/cryptography)。
