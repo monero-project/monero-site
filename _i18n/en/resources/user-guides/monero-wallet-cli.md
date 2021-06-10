@@ -100,7 +100,7 @@ address new
 This will generate a subaddress, which you can share to receive payment on the account it's linked to. To view all generated addresses, run:
 
 ```
-address list
+address all
 ```
 
 ## Proving to a third party you paid someone
