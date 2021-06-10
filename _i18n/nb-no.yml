@@ -2,9 +2,6 @@ global:
   date: '%Y/%m/%d'
   tagsmeta: Alle Monero-bloggartikler som er emneknagget
   lang_tag: '@lang_tag_nb-no'
-  moreinfo: Mer informasjon
-  upgrade: For å fortsette å bruke Monero, må du sørge for at programvaren din er
-    oppdatert med nettverksoppgraderingen datert 30. november.
   outdatedVersion: den engelske versjonen
   outdatedMin: Denne siden har blitt oppdatert etter den ble oversatt. Du kan bruke
     denne versjonen, men den kan være ufullstendig. Bruk
@@ -505,7 +502,6 @@ user-guides:
   node-i2pzero: Kjør en Monero-node via I2P eller I2P-zero
   tailsguide: Sett opp en lommebok (ved å bruke en ekstern node) på Tails
 what-is-monero:
-  grassroots_para1: Over
   videos: Monero-videoer (engelsk)
   electronic_para1: Det er ingen holdeperioder som går over flere dager og ingen risiko
     for uredelige tilbakeføring. Det er trygt fra «kapitalkontroller». Disse er tiltak
@@ -513,16 +509,6 @@ what-is-monero:
     land som opplever økonomisk ustabilitet.
   electronic: Monero er elektroniske penger som tillater raske, rimelige betalinger
     til eller fra hvor som helst i verden.
-  grassroots_para5: Monero er ikke et selskap. Det er utviklet av eksperter innen
-    kryptografi og distribuerte systemer fra rundt om i verden som donerer tiden sin
-    eller som er finansiert av samfunnsdonasjoner. Dette betyr at Monero ikke kan
-    stenges av noe som helst land, og det er ikke begrenset av bestemte juridiske
-    jurisdiksjoner.
-  grassroots_para4: Moneros forskningslab, kjerneutviklingsteam og samfunnsutviklere
-    presser stadig grensene for hva som er mulig med personvern og sikkerhet i kryptovaluta.
-  grassroots_para3: har bidratt til Monero-prosjektet, inkludert 30 kjerneutviklere.
-    Fora og chattekanaler er gjestfrie og aktive.
-  grassroots_para2: 500 utviklere
   grassroots: Monero er et grasrot-samfunn som tiltrekker de beste forsker- og ingeniørtalentene
     innen kryptovaluta.
   confidential_para2: Monero er fungibelt. Monero kan, i kraft av tåkelegging, ikke
@@ -803,13 +789,8 @@ contributing:
     for Monero-prosjektet.
   donate-other_para1: Send en e-post til
   donate-other: Annet
-  donate-xmr_para: Donasjoner kan sendes til
-  mine_para2: her.
   mine: Utvinn
   full-node: Kjør en fullstendig node
-  develop_para1: Monero er i hovedsak skrevet i C++. I og med at det er et desentralisert
-    prosjekt, er alle velkomne til å legge til eller foreta endringer til eksisterende
-    kode. Trekkforespørsler flettes på grunnlag av konsensus fra samfunnet. Se
   develop: Utvikl
   network: Støtt nettverket
   intro: Monero er et samfunnsdrevet prosjekt med åpen kildekode. Nedenfor er det
@@ -1045,7 +1026,6 @@ hangouts:
     monero-translations: Lokalisering av Monero til andre språk.
     monero-research-lab: Undersøk økonomisk personvern med kryptovaluta nærmere.
     monero-pools: Dette er stedet for spørsmål og diskusjon knyttet til utvinning.
-    monero-otc: Monero over disken. Kom hit for å kjøpe XMR fra din med-Moneron.
     monero-offtopic: Prat med andre Monero-brukere om ting som ikke har med Monero
       å gjøre.
     monero-markets: Vi bruker denne kanalen til å snakke om prisen på Monero og andre

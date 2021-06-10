@@ -97,8 +97,6 @@ hangouts:
       için kullanıyoruz.
     monero-offtopic: Monero'ya ilişkin olmayan şeyler hakkında diğer Monero kullanıcıyla
       sohbet.
-    monero-otc: Borsa dışı Monero. Akran Monerodaşlarınızdan XMR almak için buraya
-      gelin.
     monero-pools: Madencilik sorularının ve tartışmalarının yeri burasıdır.
     monero-research-lab: Kriptoparalarla finansal mahremiyet araştırmaları.
     monero-translations: Monero'nun diğer dillere yerelleştirilmesi.
@@ -246,12 +244,10 @@ contributing:
     desteklemenin birçok yolu tarif edilmiştir.
   network: Ağı Destekleyin
   develop: Geliştirin
-  develop_para4: sorunlar.
   full-node: Tam Düğüm Çalıştırın
   mine: Madencilik Yapın
   ffs: Forum Fonlama Sistemini Görüntüleyin
   donate: Bağışla
-  donate-xmr_para: "Bağış gönderebileceğiniz adresler şunlardır:"
   donate-other: Diğer
   donate-other_para1: Alternatif bağış yolları için veya Monero Projesine sponsor
     olmak istiyorsanız
@@ -380,17 +376,6 @@ what-is-monero:
     olmadan her zaman kabul edileceği anlamına gelir.
   grassroots: Monero Dünya’nın en iyi kriptopara araştırmacılarını ve mühendislik
     yeteneklerini çeken kökleşmiş bir topluluktur.
-  grassroots_para1: 30 çekirdek geliştirici dahil,
-  grassroots_para2: 500 geliştirici
-  grassroots_para3: den fazlası Monero projesine katkıda bulunmuştur. Forumlar ve
-    sohbet kanalları misafirperver ve aktiftir.
-  grassroots_para4: Monero'nun Araştırma Laboratuvarı, Çekirdek Geliştirme Ekibi ve
-    Topluluk Geliştiricileri kriptopara gizliliği ve güvenliğinde mümkün olanın sınırını
-    sürekli şekilde ileriye taşımaktadır.
-  grassroots_para5: Monero bir şirket değildir. Dünyanın dört bir yanından zamanlarını
-    bağışlayan veya topluluk bağışlarıyla fonlanan kriptografi ve dağıtık sistemler
-    uzmanlarınca geliştirilmektedir. Bu Monero’nun hiçbir ülke tarafından kapatılamayacağı
-    ve hiçbir adli yargılama tarafından kısıtlanamayacağı anlamına gelir.
   electronic: Monero Dünya'nın her yerinden başka bir yerine hızlı, ucuz ödemelere
     olanak sağlayan elektronik paradır.
   electronic_para1: Çok sayıda bekletme günü ve sahtekâr ters ibraz riski yoktur.

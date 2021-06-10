@@ -121,7 +121,6 @@ hangouts:
     monero-markets: Ovaj kanal koristimo da pričamo o ceni Monera i ostalih valuta.
     monero-offtopic: Dopisivanje sa drugim Monero korisnicima o stvarima nevezanim
       za Monero.
-    monero-otc: (OTC) Over The Counter Monero. Ovde kupite XMR od vašeg druga Monerona.
     monero-pools: Ovo je mesto za pitanja i diskusiju o rudarenju.
     monero-research-lab: Istraživanje finansijke privatnosti kroz upotrebu kriptovaluta.
     monero-translations: Lokalizovanje Monera u druge jezike.
@@ -772,17 +771,6 @@ what-is-monero:
     bez rizika od cenzure.
   grassroots: Monero je nezavisna zajednica koja privlači najbolje svetske istraživače
     kriptovaluta i inženjerske talente.
-  grassroots_para1: Preko
-  grassroots_para2: 500 programera
-  grassroots_para3: je doprinelo projektu Monero, uključujući 30 glavnih programera.
-    Forumi i kanali za ćaskanje su uvek aktivni i pozivaju nove korisnike da se pridruže.
-  grassroots_para4: Monerova „Istraživačka laboratorija“, glavni razvojni tim i programeri
-    zajednice neprestano pomeraju granice u pogledu privatnosti i sigurnosti kriptovaluta.
-  grassroots_para5: Monero nije korporacija. Razvijaju ga stručnjaci za kriptografiju
-    i distribuirane sisteme iz celog sveta koji doniraju svoje vreme ili se finansiraju
-    iz donacija zajednice. To znači da nijedna država ili vlada ne može da zabrani
-    ili u bilo kom pogledu ugasi Monero, niti ga bilo kakva pravna nadležnost može
-    ograničiti.
   electronic: Monero je elektronska gotovina koja omogućava brza i jeftina plaćanja
     bilo gde u svetu.
   electronic_para1: Ne postoje višednevni periodi zadržavanja transakcije i ne postoji

@@ -45,6 +45,7 @@ titles:
   blogbytag: Blog
   library: Libreria
 
+  workgroups: Gruppi di lavoro
 navigation:
   getstarted: Inizia da qui
   whatis: "Cos'è Monero?"
@@ -60,7 +61,7 @@ navigation:
 index:
   page_title: Monero - sicuro, privato, non tracciabile
 home:
-  heading2: Valuta Digitale Privata
+  heading2: Una Valuta Digitale Privata
   monero_is_cash: Monero è una criptovaluta sicura, privata e non tracciabile. E'
     open-source ed accessibile a tutti. Con Monero, sei tu la tua banca, solo tu controlli
     e sei responsabile dei tuoi fondi. I tuoi conti e le tue transazioni vengono mantenuti
@@ -83,6 +84,36 @@ home:
   joincommunity: Unisciti alla Comunità
   merchants: Commercianti
   useit: 'È una valuta: Usala!'
+  visitmrl: Visita il MRL
+  researchlab_para: L'MRL (Monero Research Lab) è una parte molto importante di Monero.
+    Ricercatori e crittografi di tutto il mondo si incontrano per trovare nuovi modi
+    per migliorare Monero. Leggi i loro documenti e unisciti a loro!
+  contributecommunity_para: Monero non è semplicemente una moneta, è una comunità
+    decentralizzata ed esiste solo grazie alle centinaia di volontari che dedicano
+    il loro tempo al progetto. Unitsciti a noi!
+  contributecommunity: 'Abbiamo Bisogno Delle Tue Capacità: Contribuisci!'
+  guides_para: "La community ha messo insieme una grande quantità di risorse e documentazione.\
+    \ Gli utenti possono trovare informazioni e guide utili su configurazioni e suggerimenti\
+    \ comuni nella sezione \"Guide per l'utente\". Gli sviluppatori possono trovare\
+    \ tutto ciò di cui hanno bisogno per creare un servizio basato su Monero o semplicemente\
+    \ comunicare con la rete nelle \"Guide per sviluppatori\". La Libreria offre pubblicazioni\
+    \ e libri scaricabili gratuitamente, inclusi i libri completi \"Mastering Monero\"\
+    \ e \"Zero to Monero\".\n"
+  useit_para: Monero è una valuta e può essere scambiata con beni e servizi, privatamente
+    e con commissioni molto basse. Molte entità accetteranno volentieri XMR per i
+    pagamenti; dai un'occhiata al nostro elenco di commercianti che attualmente accettano
+    Monero.
+  exchanges: Exchanges
+  getcoins_para: Dopo aver installato un wallet, devi procurarti un po' di Monero.
+    Esistono diversi modi per acquisire monete, come il mining o il lavoro in cambio
+    di Monero, ma il modo più semplice è utilizzare un exchange e scambiare il tuo
+    denaro fiat con XMR. Molti exchange, centralizzati e decentralizzati, listano
+    Monero (XMR).
+  getcoins: Prendi delle monete
+  choosewallet_para: Per utilizzare Monero, la prima cosa di cui avrai bisogno è un
+    wallet. Visita la pagina Downloads e scarica il wallet giusto per te. I wallet
+    Monero sono disponibili per diverse piattaforme e contengono tutto il necessario
+    per utilizzare subito Monero.
 hangouts:
   intro: La comunità Monero è diversa e variegata. Veniamo da ogni parte del mondo,
     ma abbiamo alcuni posti nei quali ci piace riunirci. Qui sotto ne puoi trovare
@@ -110,21 +141,25 @@ hangouts:
       criptovalute.
     monero-offtopic: Si chatta con altri utenti Monero di cose che non riguardano
       Monero.
-    monero-otc: Over the counter Monero. Vieni qui per acquistare XMR da altri appassionati
-      di Monero.
     monero-pools: Questo è il luogo per domande e discussioni sul mining.
     monero-research-lab: Ricerche sulla privacy finanziaria con le criptovalute.
     monero-translations: Localizzazione di Monero in altre lingue.
     monero-hardware: Costruire portafogli hardware per tenere al sicuro i tuoi Moneroj.
+    monero-site: Dove è coordinato lo sviluppo di questo sito web.
+  bridges: Questi canali sono collegati ad una serie di altre piattaforme, consentendo
+    alla comunità di comunicare utilizzando il loro servizio/protocollo di chat preferito.
 merchants:
-  intro1: I commercianti hanno imparato a valutare la privacy finanziaria di Monero.
+  intro1: I commercianti hanno imparato ad apprezzare la privacy finanziaria di Monero.
     Di seguito è riportato un elenco dei commercianti che sappiamo accettare Monero
-    per i loro beni e servizi. Se una società non accetta più Monero o desideri che
-    la tua attività sia elencata,
+    per i loro beni e servizi. Questi commercianti non sono avvallati dalla comunità,
+    controlla la dichiarazione di non responsabilità in fondo a questa pagina. Se
+    una società non accetta più Monero o desideri che la tua attività sia elencata,
+    per favore
   intro2: apri una issue GitLab e facci sapere
   intro3: (seleziona il template "Merchant" e completa tutte le sezioni).
   disclaimer: |
     "Nota: questi link vengono forniti per comodità e solo a scopo informativo; non costituiscono un'approvazione da parte della comunità Monero di alcun prodotto, servizio o opinione delle società o organizzazioni o individui elencati. La comunità Monero non si assume alcuna responsabilità per l'accuratezza, la legalità o il contenuto di questi siti esterni. Contatta il sito esterno per le risposte alle domande riguardanti il suo contenuto. Come sempre, caveat emptor ('l'acquirente stia attento'); sei totalmente responsabile della tua ricerca. Usa sempre il giudizio quando fai acquisti online."
+  onion: Indirizzo Onion (necessita di Tor)
 sponsorships:
   intro: Le seguenti aziende sostengono il progetto Monero nel suo obiettivo di portare
     la privacy finanziaria nel mondo. Non potremmo essere più grati per i loro contributi.
@@ -133,10 +168,58 @@ sponsorships:
   macstadium: MacStadium sponsorizza un Mac Mini dedicato che viene utilizzato per
     lo sviluppo legato al Mac.
   tari: Tari Labs sponsorizza il CDN utilizzato da questo sito web.
+  forknetworking: Fork Networking fornisce un server che viene utilizzato per lo sviluppo.
+  symas: Symas sponsorizza il suo CTO Howard Chu (hyc) per il suo lavoro sul codebase
+    Monero.
+  globee: GloBee sponsorizza la principale infrastruttura del sito web di Monero.
 team:
   core: Core
-  community: Comunità
+  community: Community Workgroup
   mrl: Research Lab
+  localization_descr: Uno dei più antichi gruppi di lavoro Monero, è formato da collaboratori
+    che lavorano alla traduzione di software e documentazione relativi a Monero. Si
+    consiglia vivamente di contattare il gruppo di lavoro prima di lavorare sulle
+    traduzioni.
+  localization: Localization Workgroup
+  web_start: È sempre una buona idea entrare nella chatroom e parlare direttamente
+    con i membri del gruppo di lavoro, ma se preferisci iniziare da solo, dai un'occhiata
+    al file readme nel repository GitHub. Contiene istruzioni passo passo per modificare
+    ogni singola parte di questo sito web.
+  web_descr: Questo gruppo di lavoro coordina lo sviluppo del sito web. La maggior
+    parte dei membri fa anche parte del Development Workgroup. Il Website Workgroup
+    è stato creato principalmente per tenere discussioni relative al sito web in un
+    unico posto.
+  webworkgroup: Website Workgroup
+  chatgui: 'Chat (GUI):'
+  chatgeneral: 'Chat (generale):'
+  devworkgroup_descr: 'Questo gruppo di lavoro riunisce gli sviluppatori Monero che
+    lavorano sui wallet e sul daemon gestiti dal Core Team. Consiste di due parti
+    principali: il team della CLI e il team della GUI. Questi team si coordinano utilizzando
+    due diverse chat.'
+  devworkgroup: Development Workgroup
+  community_start: Il modo migliore per iniziare a contribuire a questo gruppo di
+    lavoro è entrare nelle chat e presentarti, esponendo i tuoi interessi e le competenze
+    che vorresti offrire alla community.
+  community_descr: Questo gruppo di lavoro viene utilizzato dalla community per organizzare
+    e coordinare. Inizia da qui se sei un non-programmatore che vuole contribuire
+    a Monero.
+  core_start: Il Core Team è un gruppo di lavoro chiuso; non è possibile partecipare
+    se non invitati.
+  core_descr: In qualità di amministratori del progetto, il Core Team gestisce e mantiene
+    l'infrastruttura dove la centralizzazione non può essere evitata (domini, sito
+    web, repository GitHub...). I suoi membri agiscono come mediatori come ritengono
+    opportuno e mirano a valutare il consenso nella community, perpetuando le interazioni
+    di qualità che hanno reso Monero il progetto di successo che è oggi. Il Core Team
+    non riceve e non ha mai ricevuto alcun compenso finanziario.
+  website: 'Sito web:'
+  chat: 'Chat:'
+  contacts: Chat e Contatti
+  start: Dove iniziare
+  descr: Descrizione
+  introduction: I gruppi di lavoro sono formati da membri della community che uniscono
+    le forze per raggiungere un obiettivo comune. Hanno strutture e obiettivi diversi.
+    In questa pagina elenchiamo alcuni dei gruppi di lavoro più attivi e alcuni suggerimenti
+    per iniziare, se desideri contribuire.
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.
@@ -273,9 +356,9 @@ accepting:
     il codice QR con Monero @wallet sul telefono e ricevi i tuoi XMR in pochi minuti.  Ricorda
     che puoi generare tutti gli indirizzi (indirizzi secondari) che desideri. Ciò
     è utile se si desidera mantenere separati i fondi per qualsiasi motivo.
-  guimerchant: Merchants will probably find more convenient to use the 'Merchant'
-    page (screenshot below), which is explained in detail in the 'Merchant view' section
-    of
+  guimerchant: I commercianti troveranno probabilmente più conveniente utilizzare
+    la pagina "Commerciante" (schermata seguente), che è spiegata in dettaglio nella
+    sezione "Visualizzazione commerciante" di
   guilinkguide1: la guida linkata sopra
   guisteps: 'Queste due pagine offrono a tutti la possibilità di ricevere facilmente
     XMR seguendo questi passaggi:'
@@ -468,18 +551,6 @@ what-is-monero:
     che Monero verrà sempre accettato senza rischio di censura.
   grassroots: Monero è una community orizzontale che attrare i migliori ricercatori
     ed ingegneri del mondo.
-  grassroots_para1: Più di
-  grassroots_para2: 500 sviluppatori
-  grassroots_para3: hanno contribuito al progetto Monero, inclusi 30 'core developers'.
-    I forum e le chat sono amichevoli e attivi.
-  grassroots_para4: Il Monero Research Lab, il Core Development Team e gli sviluppatori/sviluppatrici
-    della comunità spingono ogni giorno sempre più in là i limiti di cosa è possibile
-    fare in materia di privacy e sicurezza nelle criptovalute.
-  grassroots_para5: Monero non è un'azienda, né tanto meno una corporazione. E' sviluppato
-    da esperti in crittografia e sistemi distribuiti provenienti da tutto il mondo,
-    che donano il loro tempo e talvolta vengono finanziati dalla comunità. Questo
-    vuol dire che Monero non può essere bloccato da nessuna nazione e non è costretto
-    in nessuna particolare giurisdizione.
   electronic: Monero è denaro elettronico che permette pagamenti veloci, non dispendiosi,
     da e verso tutto il mondo.
   electronic_para1: Non ci sono lunghi tempi di attesa per l'accredito e non c'è alcun
@@ -896,7 +967,14 @@ moneropedia:
 blog:
   author: Postato da
   date: Postato su
+  meetinglogs: Diari delle riunioni
+  urgent: Urgente
 tags:
   notags: Non ci sono post con questo tag.
 footer:
   source: Codice Sorgente
+  legal: Legale
+  feed: RSS Feed
+  reachout: Mettiti in contatto
+  ccs: Community Crowdfunding System
+  ml: Mailing List

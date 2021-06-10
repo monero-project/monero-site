@@ -41,6 +41,7 @@ titles:
   blogbytag: Blog
   library: 资料
 
+  workgroups: 工作组
 navigation:
   getstarted: 始
   whatis: 什么是门罗币？
@@ -75,7 +76,6 @@ hangouts:
     monero-dev: 很多代码贡献者和开发组人员在这里讨论问题。
     monero-markets: 这个频道专门讨论门罗币价和其他币的价格。
     monero-offtopic: 和门罗币社区的朋友们聊天胡侃的专用频道。
-    monero-otc: 来和你的门罗币伙伴（Moneron）交易门罗币。
     monero-pools: 为挖矿问题相关提供的频道。
     monero-research-lab: 研究使用加密货币的金融隐私问题。
     monero-translations: 把门罗项目本土化成其他语言。
@@ -213,12 +213,10 @@ contributing:
   intro: 门罗是一个开源的，社区主导的项目。下面列出了您可以为社区贡献力量的几种方式。
   network: 为网络提供支持
   develop: 开发
-  develop_para4: 问题。
   full-node: 运行全节点
   mine: 挖矿
   ffs: 门罗资助论坛
   donate: 捐助社区
-  donate-xmr_para: 捐款参见
   donate-other: 其他
   donate-other_para1: 如果您希望成为门罗项目的赞助商，请给
   donate-other_para2: 发送电子邮件以获取其他捐助方式。
@@ -278,11 +276,6 @@ what-is-monero:
     (比如ZEC).
   confidential_para2: 门罗币具有可互换性。因为交易互相混淆且保密，任何特定的几个门罗币不会因为过去的历史记录而受到针对性的追踪。这也意味着门罗始终具有抗审查性。
   grassroots: 门罗是一个吸引了全世界最棒的加密货币研究者和工程天才的草根社区。
-  grassroots_para1: 超过
-  grassroots_para2: 500名开发者
-  grassroots_para3: 已经为门罗社区贡献自己的力量，其中包括30名核心开发人员。我们的论坛和聊天群始终充满活力。
-  grassroots_para4: 门罗的研究组，核心开发组和社区开发人员始终在保持加密货币隐私和安全领域的最前沿探索。
-  grassroots_para5: 门罗不是一个固定的组织， 它由来自世界各地的加密技术专家和开发人员自发建设或接受捐助来建设社区，这意味着门罗社区不可能被任一国家关闭或被任何形式的法律审查。
   electronic: 门罗作为电子现金可以快速且廉价地在世界各地转移价值和财富。
   electronic_para1: 没有必须持有多少天的要求，也没有欺诈性退款的风险，更不受“外汇管制“的限制————这些措施是在那些经济不稳定甚至极端不稳定的国家才采用的限制货币流动的措施。
   videos: 门罗币视频（英文）
