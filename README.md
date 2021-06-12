@@ -338,25 +338,37 @@ If you need to add a month, add `<h3 id="months">{% t roadmap.MONTH %}</h3>` abo
 
 The roadmap can be translated on Weblate [on Weblate](https://translate.getmonero.org/projects/getmonero/monero-site/).
 
-## How to add a new Merchant
+## How to add or remove a merchant
 
-### 1. Edit the .yml file
+### Add a merchant
+
+If you want to add a merchant you should first open an issue using the ['New Merchant' template](https://github.com/monero-project/monero-site/issues/new?assignees=&labels=%F0%9F%8F%AA+merchant:+removal%2C+%F0%9F%94%8D+Needs+investigation&template=new-merchant.md&title=Remove+%3CNAME_OF_THE_MECHANT%3E+from+the+list+of+merchants). Fill upp all sections and wait for somebody to investigate it.
+
+After the issue has been accepted, the merchant can be added to the page.
+
+To add a merchant (after it has been approved) follow these steps:
+
 Navigate to the `/_data/` folder and open `merchants.yml`. You will notice a list separated by hyphenated `-category` tags.
 
 Find the category that best describes your business/service and copy the code below, making sure you are keeping the alphabetic order consistent:
+
 ```
 - name:
   url:
 ```
-and paste it in the correct category under the `merchants:` section.
+
+and paste it in the correct category under the `merchants:` section. Make sure to respect the alphabetical order of the entries.
 
 Fill in the data as follows:
-* `name:` The name of the business/service.
-* `url:` The external url of the business/service. This link must have http:// (or https://) at the beginning if it is an external link.
 
-**Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.**
+- `name:` The name of the business/service.
+- `url:` The external url of the business/service. This link must have http:// (or https://) at the beginning if it is an external link.
 
-Save the file.
+Make sure the indentation is EXACTLY the same as the other proposals in the area. If it's not the jekyll build WILL fail.
+
+### Remove a merchant
+
+Open an issue using the ['Remove Merchant' template](https://github.com/monero-project/monero-site/issues/new?assignees=&labels=%F0%9F%8F%AA+merchant%3A+removal%2C+%F0%9F%94%8D+Needs+investigation&template=remove-merchant.md&title=Remove+%3CNAME_OF_THE_MECHANT%3E+from+the+list+of+merchants) and fill up all sections.
 
 ## How to add a question to the FAQ
 The structure of the FAQ is a bit more complex than it used to be and contains anchors, variables and a TOC. A step by step guide would be too complex to follow. A basic knowledge of HTML is necessary to edit the page. If you wish to add a new FAQ please open an issue in the repository or/and contact the Website workgroup.
