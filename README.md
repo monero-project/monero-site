@@ -4,7 +4,7 @@
 This README here to walk you through everything you need to know to make changes, edits, or even completely new pages for the new [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in.
 Feel free to skip down to a relevant section if you already know what you need.
 
-If you need support about something related to the website, please join `#monero-site` [Freenode/IRC](irc://chat.freenode.net/#monero-site) or [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org). For general info about Monero join `#monero`. We'll do whatever we can to help you.
+If you need support about something related to the website, please join `#monero-site` [Libera/IRC](irc://irc.libera.chat/#monero-site) or [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org). For general info about Monero join `#monero`. We'll do whatever we can to help you.
 
 ## What you'll need
 
@@ -27,7 +27,7 @@ Once you have the above list of things, it's typically a good idea to build the 
 ## General change recommendations
 The average Monero user that will want to contribute to the website should probably start looking for issues labelled [⛑️ contributor needed](https://github.com/monero-project/monero-site/issues?q=is%3Aissue+is%3Aopen+label%3A%22%E2%9B%91%EF%B8%8F+contributor+needed%22) or making blog posts, user guides or Moneropedia entries; all of which are covered in this document. If this is all you want to do, don't worry, it's actually not a daunting task at all.
 
-If you are a web developer and would like to make large macro-level changes, it would be best to open an issue first or to get in contact with the developers on `#monero-site` (IRC/Freenode, Matrix).
+If you are a web developer and would like to make large macro-level changes, it would be best to open an issue first or to get in contact with the developers on `#monero-site` (IRC/Libera, Matrix).
 
 This website is completely open-source however and anything and everything is available for changing should the community deem it necessary.
 
