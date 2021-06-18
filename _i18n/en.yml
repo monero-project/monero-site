@@ -472,6 +472,10 @@ faq:
   and: and
   qlongtimemove: I haven't touched my Monero in a long time, did I lose my coins as a consequence of a hard fork (network upgrade)?
   alongtimemove: Don't worry, your coins are safe. To be able to spend them you only have to download and run the latest Monero software. You can use the @mnemonic-seed you previously saved to restore your wallet at any time. Note that hard forks in Monero are scheduled and non-contentious. Which means no new coin is created.
+  qvuln: Are there known vulnerabilities in Monero?
+  avuln: >
+    The Monero community has created a series of videos called "Breaking Monero", where potential Monero vulnerabilities are explored and discussed. There are 14 videos, with each exploring a different subject. Check out <a href="https://www.monerooutreach.org/breaking-monero/">the videos on monerooutreach.org</a>.
+  vulnspotify: Available on Spotify as podcast
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.

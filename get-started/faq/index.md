@@ -29,6 +29,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-fungibility">{% t faq.q11 %}</a></li>
                         <li><a href="#anchor-magic">{% t faq.q13 %}</a></li>
                         <li><a href="#anchor-anonymous">{% t faq.q14 %}</a></li>
+                        <li><a href="#vulnerabilities">{% t faq.qvuln %}</a></li>
                         <li><a href="#antivirus">{% t faq.qantivirus %}</a></li>
                         <li><a href="#monero-meaning">{% t faq.qmoneromeaning %}</a></li>
                         <li><a href="#hardforks">{% t faq.qhf %}</a></li>
@@ -154,6 +155,13 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-anonymous"></a>{% t faq.q14 %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.a14 %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="vulnerabilities">
+                    <h3><a class="anchor" href="#vulnerabilities"></a>{% t faq.qvuln %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.avuln %}</p>
+                        <p>{% t faq.additional %} <a href="https://open.spotify.com/episode/77xsCeuy02Aztv0bgs3Drt?si=hyIGHD5TQjyV44b46fkhoQ&dl_branch=1">{% t faq.vulnspotify %}</a></p>
                     </div>
                 </div>
                 <div class="tab" id="antivirus">
