@@ -1,8 +1,6 @@
 - category: Exchanges
   id: exchanges
   merchants:
-    - name: 24bestex.com - cryptocurrency exchanger
-      url: https://24bestex.com/
     - name: AgoraDesk - P2P OTC trading platform, includes Monero options
       url: https://agoradesk.com
     - name: Alfacashier
