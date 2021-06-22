@@ -993,6 +993,7 @@ a {
 a[href^="https:"]:not([href*="getmonero.org"]):not([class*="btn-link"]):not([class="chats-img"]):not([class*="ext-noicon"]):not([class*="white"]) {
   background: url(/img/external.svg) no-repeat right;
   padding-right: 0.7em;
+  margin-right: 0.3rem;
   background-size: 0.6em;
 }
 
