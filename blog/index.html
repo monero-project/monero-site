@@ -65,7 +65,7 @@ title: titles.blogbytag
     {% if paginator.total_pages > 1 %}
     <div class="page-numbers"><p>
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
+        <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; {% t blog.prev %}</a>
       {% else %}
         <span>&laquo; Prev</span>
       {% endif %}
@@ -81,7 +81,7 @@ title: titles.blogbytag
       {% endfor %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
+        <a href="{{ paginator.next_page_path | replace: '//', '/' }}">{% t blog.next %} &raquo;</a>
       {% else %}
         <span>Next &raquo;</span>
       {% endif %}
