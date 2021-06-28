@@ -101,10 +101,9 @@ This will generate a subaddress and its optional label, which addess you can sha
 For example, 
 
 ```
-
 address new github_donations
-
 ```
+
 will generate a subaddress and its label 'github_donations'. 
 
 To view all generated addresses, run:
