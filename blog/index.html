@@ -62,32 +62,31 @@ title: titles.blogbytag
           {% endfor %}
         </div>
       <!-- End full block-->
+    {% if paginator.total_pages > 1 %}
+    <div class="page-numbers"><p>
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; {% t blog.prev %}</a>
+      {% else %}
+        <span>&laquo; Prev</span>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <em>{{ page }}</em>
+        {% elsif page == 1 %}
+          <a href="{{ site.baseurl }}/blog">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | prepend: '/' | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | replace: '//', '/' }}">{% t blog.next %} &raquo;</a>
+      {% else %}
+        <span>Next &raquo;</span>
+      {% endif %}
+    </p></div>
+    {% endif %}
   </section>
   <a href="#" class="arrow-up" aria-label="{% t accessibility.arrowup %}" title="{% t accessibility.gotop %}"><i></i></a>
 </div>
-
-{% if paginator.total_pages > 1 %}
-<div class="text-center page-numbers"><p>
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ site.baseurl }}/blog">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: '/' | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</p></div>
-{% endif %}

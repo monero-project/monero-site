@@ -897,6 +897,8 @@ blog:
   author: Posted by
   date: Posted at
   filter: "Filter by category:"
+  next: Next
+  previous: Prev
 
 
 tags:
