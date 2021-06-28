@@ -23,6 +23,10 @@ gui:
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
+   - platform: Source Code (archive)
+     hash: 8d6770bb3a8840eac9ce48b1a598ef83a5f5ec677e6edb6b7ad8e87b26e9d404
+     link: https://downloads.getmonero.org/gui/source
+     icon: icon-github
    - platform: Source Code
      link: https://github.com/monero-project/monero-gui
      icon: icon-github
@@ -81,6 +85,10 @@ cli:
      link: https://downloads.getmonero.org/cli/freebsd64
      icon: icon-freebsd
      vers:
-   - platform: Source Code
+   - platform: Source Code (archive)
+     hash: 7801945b040f39db5497335d5219768773aa28bef7c5e88a61c1c8b639ccb412
+     link: https://downloads.getmonero.org/cli/source
+     icon: icon-github
+   - platform: Source Code 
      link: https://github.com/monero-project/monero
      icon: icon-github
