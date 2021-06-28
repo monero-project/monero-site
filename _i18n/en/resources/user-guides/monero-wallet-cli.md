@@ -99,8 +99,11 @@ address new [<label text with white spaces allowed>]
 
 This will generate a subaddress and its optional label, which addess you can share to receive payment on the account it's linked to.
 For example, 
+
 ```
+
 address new github_donations
+
 ```
 will generate a subaddress and its label 'github_donations'. 
 
