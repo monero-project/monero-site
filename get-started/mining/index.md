@@ -9,73 +9,70 @@ permalink: /get-started/mining/index.html
         <p>{% t mining.intro1 %} {% t mining.intro2 %}</p>
     </div>
     <section class="container">
-        <div class="row">      
-            <!-- full block-->
-            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="info-block">
-                    <div class="row center-xs">
-                        <div class="col">
-                            <h2>{% t mining.support %}</h2>
-                        </div>
-                    </div>
-                    <div class="row center-xs">
-                        <p>{% t mining.support_para1 %} {% t mining.support_para2 %} {% t mining.support_para4 %} <a href="irc://chat.freenode.net/#monero-pools" target="_blank" rel="noreferrer noopener">#monero-pools</a>.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end full block -->
-        </div>
-    </section>
-    <section class="container">
         <div class="row">
-            <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="info-block">
-                    <div class="row center-xs">
-                        <div class="col">
-                            <h2>{% t mining.pools %}</h2>
+            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="info-block text-adapt">
+                    <h2>{% t mining.pow %}</h2>
+                        <p>{% t mining.philosophy %}</p>
+                        <p>{% t mining.efficiency %}</p>
+                    <h2>{% t mining.miningset %}</h2>
+                        <p>{% t mining.miningsetp %}</p>
+                        <p>{% t mining.procons %}</p>
+                        <div class="comp">
+                            <div>
+                                <div class="center-xs">
+                                    <h3>{% t mining.solo %}</h3>
+                                </div>
+                                <ul class="comparison">
+                                    <li class="pro">{% t mining.prosecure %}</li>
+                                    <li class="pro">{% t mining.prowallet %}</li>
+                                    <li class="cons">{% t mining.conlong %}</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="center-xs">
+                                    <h3>{% t mining.pool %}</h3>
+                                </div>
+                                <ul class="comparison">
+                                    <li class="pro">{% t mining.propay %}</li>
+                                    <li class="cons">{% t mining.conopfee %}</li>
+                                    <li class="cons">{% t mining.conminfee %}</li>
+                                    <li class="cons">{% t mining.conpolcent %}</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row center-xs">
-                       <p>{% t mining.pools_para1 %} <a href="https://miningpoolstats.stream/monero"> {% t mining.pools_para2 %}</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="right half col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="info-block">
-                    <div class="row center-xs">
-                        <div class="col">
-                            <h2>{% t mining.benchmarking %}</h2>
-                        </div>
-                    </div>
-                    <div class="row center-xs">
-                       <p><a href="http://monerobenchmarks.info/">{% t mining.benchmarking_para1 %}</a> {% t mining.benchmarking_para2 %}</p>
-                    </div>
+                        <p>{% t mining.choosepol %}
+                        <ul>
+                            <li><a href="https://miningpoolstats.stream/monero">miningpoolstats.stream</a></li>
+                            <li><a href="https://pools.xmr.wiki">pools.xmr.wiki</a></li>
+                        </ul>
+                        </p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container">
-        <div class="row">      
-            <!-- full block-->
+        <div class="row">
             <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="info-block">
-                    <div class="row center-xs">
-                        <div class="col">
-                            <h2>{% t mining.software %}</h2>
-                        </div>
-                    </div>
-                    <div class="row center-xs">
-                       <p>{% t mining.software_para %}</p>
-                    </div>
-                    <div class="row center-xs">
-                        <p><a href="https://github.com/xmrig/xmrig" target="_blank" rel="noreferrer noopener">XMRig</a></p>
-                    </div>
-                    <div class="row center-xs">
-                        <p><a href="https://github.com/xmrig/xmrig-cuda" target="_blank" rel="noreferrer noopener">XMRig NVIDIA CUDA plugin</a></p>
-                    </div>
+                <div class="info-block text-adapt">
+                    <h2>{% t mining.hardware %}</h2>
+                        <p>{% t mining.hardwarep %}</p>
+                    <h2>{% t mining.software %}</h2>
+                        <p>{% t mining.softwarep %}
+                        <ul>
+                            <li><a href="https://github.com/xmrig/xmrig">XMRig</a></li>
+                            <li><a href="https://cryptonote.social/tools/csminer">CSminer</a></li>
+                        </ul>
+                        {% t mining.software_para %}
+                        </p>
                 </div>
             </div>
-            <!-- end full block -->
+        </div>
+        <div class="row">
+            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="info-block text-adapt">
+                    <h2>{% t mining.support %}</h2>
+                        <p>{% t mining.supportp %}</p>
+                </div>
+            </div>
         </div>
     </section>
 </div>

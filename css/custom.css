@@ -2837,6 +2837,44 @@ p.main-downloads {
 
 }
 
+/****************************MINING***************************/
+
+.mining .comp {
+  display: flex;
+}
+
+.mining ul.comparison {
+  list-style: none;
+  padding: 0;
+  list-style-position: outside;
+}
+
+.mining li {
+  padding-bottom: 1rem;
+}
+
+.mining li:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+}
+
+.mining li.pro {
+  color: green;
+}
+
+.mining li.pro:before {
+  content: url("/img/emojis/2714.svg");
+}
+
+.mining li.cons {
+  color: red;
+}
+
+.mining li.cons:before {
+  content: url("/img/emojis/274C.svg");
+}
+
 /****************************FOOTER***************************/
 
 

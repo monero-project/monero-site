@@ -480,18 +480,32 @@ faq:
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
   intro2: The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.
-  support: Support
-  support_para1: See
-  support_para2: Hangouts
-  support_para4: and
-  pools: Pools
-  pools_para1: A listing of Monero pools is found
-  pools_para2: here.
-  benchmarking: Hardware Benchmarking
-  benchmarking_para1: See here
-  benchmarking_para2: for a listing of GPUs/CPUs and their respective hashrates.
-  software: Mining Software
+  pow: Proof of Work
+  philosophy: >
+    One of Monero's philosophies is to maintain egalitarian mining, so that everyone can have the possibility to mine. To achieve this, Monero uses a particular algorithm ideated and developed by members of the Monero community: @RandomX. This PoW algorithm is ASIC resistant, which means it's impossible to build specialized hardware to mine Monero. Miners must use consumer-grade hardware and compete fairly.
+  efficiency: Monero can be mined by both CPUs and GPUs, but the former is much more efficient.
+  miningset: Solo or pool mining
+  miningsetp: >
+    Miners can decide if they prefer to solo mine or to mine in a pool. Each method has its benefits and drawbacks, but the Monero Project encourages individuals to solo mine using the Monero software (<a href="https://www.getmonero.org/downloads/#gui">GUI</a> and <a href="https://www.getmonero.org/downloads/#cli">CLI</a>), as this type of independent mining is the most effective way to increase the robustness of the Monero network.
+  procons: "Pro and cons of solo and pool mining:"
+  solo: Solo
+  prosecure: Makes the network more secure than if mining in a pool
+  prowallet: You can mine using your Monero wallet. No need for additional software
+  conlong: "Depending on your hashrate, it might take months before you find a block. This is often referred to as a 'lottery'"
+  pool: Pool
+  propay: Frequent payouts. You will receive XMR according to how much you are participating in the pool of your choice.
+  conopfee: You have to pay a fee to the pool operator
+  conminfee: You can only use third party software to pool mine, which might take a small percentage of your shares
+  conpolcent: Too many people mining on a single pool might lead on the pool having >50% of the total hashrate, which is dangerous
+  choosepol: "If you need help choosing a pool or you just want more information about them, use:"
+  hardware: Hardware
+  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://monerobenchmarks.info/">monerobanchmarks</a> (some results might be out of date).
+  software: Software
+  softwarep: >
+    There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
   software_para: Note that some miners may have developer fees.
+  support: Support
+  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
 
 what-is-monero:
   need-to-know: What you need to know
