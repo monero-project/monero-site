@@ -808,6 +808,9 @@ library:
   ringscheatsheet20210301: "Rings Cheatsheet"
   ringscheatsheet20210301p: >
     From generic legacy signature to CLSAG, a visual-holic journey through Rings flavours, presenting their core properties step-by-step in a poster-size infographic.
+  rctcheatsheet20210604: "RingCT Cheatsheet"
+  rctcheatsheet20210604p: >
+    The recipe of a delicious RingCT Type 5 transaction: one CLSAG every eleven UTXOs, Moneroj amounts to taste; thicken everything with Pedersen Commitments whose overall equilibrium will be evident to waiters as well, and protect last ones with a BulletProof glaze; serve on chosen Stealth Addresses and consume not before ten blocks later. Cheers!
   magazines: Magazines
   revuoq4p: >
     Quarterly Monero magazine, Q4 2017 edition.<br>
