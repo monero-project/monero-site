@@ -148,6 +148,8 @@
       url: https://capsul.org
     - name: ClientVPS - Offshore Hosting
       url: https://www.clientvps.com/
+    - name: Cloud Matrix - Shared Hosting, Virtual Servers, Linux Server Administration
+      url: https://my.cloudmatrix.ie/
     - name: Cockbox - Tor-friendly, privacy-oriented VPS provider.
       url: https://cockbox.org/
     - name: Cryptoho.st - VPS hosting
@@ -224,6 +226,8 @@
       url: https://bunkervpn.com
     - name: Caliston Design - Design and web development agency
       url: https://calistondesign.com/
+    - name: Canada Virtual Office - Corporate address service
+      url: https://canadavirtualoffice.com
     - name: cloakVPN.com
       url: https://cloakVPN.com
     - name: Codify Global - AWS consulting and technology stack modernization
@@ -272,6 +276,10 @@
       url: https://www.monerojobs.com/
     - name: MyMonero Web-based Wallet
       url: https://mymonero.com
+    - name: Premier Environmental Services - Environmental services, specialised in Pest Management
+      url: https://www.premierenvironmentalservices.co.uk/
+    - name: Private Phone Shop - De-googled phones with LineageOS and GrapheneOS
+      url: https://www.privatephoneshop.com
     - name: Seymour Locksmiths
       url: https://seymour-locksmiths.co.uk/
     - name: Social Media LTD - Digital marketing agency
@@ -430,6 +438,8 @@
 - category: Entertainment
   id: entertainment
   merchants:
+    - name: B Bros Studio - Film production company & Music recording studio
+      url: https://www.bbrosstudio.com
     - name: Crypto Games
       url: https://www.crypto-games.net/
     - name: Monero Betting
