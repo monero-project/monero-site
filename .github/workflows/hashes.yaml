@@ -52,6 +52,7 @@ jobs:
                       *gui/win64) filename=monero-gui-win-x64 ;;
                       *gui/mac64) filename=monero-gui-mac-x64 ;;
                       *gui/linux64) filename=monero-gui-linux-x64 ;;
+                      *gui/source) filename=monero-gui-source ;;
                       *cli/win64) filename=monero-win-x64 ;;
                       *cli/win32) filename=monero-win-x86 ;;
                       *cli/mac64) filename=monero-mac-x64 ;;
@@ -62,6 +63,7 @@ jobs:
                       *cli/androidarm8) filename=monero-android-armv8 ;;
                       *cli/androidarm7) filename=monero-android-armv7 ;;
                       *cli/freebsd64) filename=monero-freebsd-x64 ;;
+                      *cli/source) filename=monero-source ;;
                       *)
                           echo "Unknown url $url" >&2
                           exit 1
