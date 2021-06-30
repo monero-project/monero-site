@@ -47,8 +47,7 @@ This website is available natively on Tor. The onion address is in `_includes/on
 If you want to post getmonero's onion address somewhere on the website, don't simply write it, instead include it using `{% include onion.html %}`. This avoids problems with typos and allow us top change the address only in one file if necessary.
 
 ## Translation
-In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. For live support/request of infos, come chat on `#monero-translations` (Freenode/IRC, matrix).
-
+In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. For live support/request of information, come chat on `#monero-translations` on Matrix or IRC (Libera.chat)
 The entire website, except for the Moneropedia entries, is translatable on Weblate, an easy to use localization platform that provide contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
 
 Translators are required to have:
