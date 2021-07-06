@@ -39,6 +39,7 @@ titles:
   developerguides: Developer Guides
   technicalspecs: Technical Specs
   themoneroproject: The Monero Project
+  tools: Tools
   presskit: Press Kit
   legal: Legal
   blogbytag: Blog
@@ -887,6 +888,28 @@ moneropedia:
     viewkey: View Key
     wallet: Wallet
     clsag: CLSAG
+
+tools:
+  intro1: Below is a list of third-party tools for interacting with the Monero ecosystem. <b>These tools are not vetted by the Getmonero team, see the disclaimer at the bottom of this page.</b> If a tool no longer supports Monero or you would like a Monero tool to be listed, please
+  intro2: open a GitHub issue and let us know
+  block-explorers: Block Explorers
+  address-generators: Address Generators
+
+  network: Network
+  monerohash-nodes: Monero node map
+  localmonero-blocks: Explorer and Statistics
+  nownodes: node APIs
+  getblockio: Blockchain nodes provider
+
+  market: Market
+  backtestking: Build or buy your own trading strategy/bot.
+  cryptofacile: Compare crypto prices from the best crypto exchanges
+  cryptoradar: Marketplace comparison website
+  kryptocheck: German marketplace comparison website
+
+  misc: Miscellaneous
+  monerohow-stats: Statistics
+  monerobase: Archive of some older meeting logs
 
 blog:
   allposts: All Posts

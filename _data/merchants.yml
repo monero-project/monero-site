@@ -91,17 +91,6 @@
       url: https://swaplab.cc/
     - name: xChange.me - Fully anonymous cryptocurrency exchanger
       url: https://xchange.me
-- category: Block Explorers
-  id: block-explorers
-  merchants:
-    - name: MoneroBlocks
-      url: https://moneroblocks.info
-    - name: Explore Monero
-      url: https://www.exploremonero.com/
-    - name: MoneroVision
-      url: https://monerovision.com
-    - name: xmrchain.net
-      url: https://xmrchain.net/
 - category: Payment Gateways
   id: payment-gateways
   merchants:
@@ -180,31 +169,6 @@
       url: https://www.webbdo.se/webbhotell/
     - name: Whattheserver - Web hosting
       url: https://Whattheserver.me
-- category: Tools
-  id: tools
-  merchants:
-    - name: Backtestking - Build or buy your own trading strategy/bot.
-      url: https://www.backtestking.com/
-    - name: cryptoFacile - Compare crypto prices from the best crypto exchanges
-      url: https://cryptofacile.io
-    - name: Cryptoradar (Marketplace comparison website)
-      url: https://cryptoradar.co/buy-monero
-    - name: GetBlock - Blockchain Nodes Provider
-      url: https://getblock.io
-    - name: KryptoCheck (German marketplace comparison website)
-      url: https://kryptocheck.de
-    - name: MoneroBase Price Charts and Tools
-      url: https://monerobase.com
-    - name: MoneroNotify - Transaction Notification Service
-      url: https://xmrnotify.com
-    - name: nestorgames
-      url: https://www.nestorgames.com
-    - name: Offline Monero address generator
-      url: https://moneroaddress.org/
-    - name: Ownbit
-      url: https://ownbit.io
-    - name: NOWNodes - Explorer & Node APIs
-      url: https://nownodes.io/connect-xmr-node
 - category: Services
   id: services
   merchants:
@@ -450,3 +414,5 @@
       url: https://safedice.com
     - name: pandaCD - Peer-to-peer for musicians
       url: https://pandacd.io/
+    - name: nestorgames
+      url: https://www.nestorgames.com/
