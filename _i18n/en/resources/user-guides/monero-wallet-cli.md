@@ -21,7 +21,7 @@ Important commands:
 "wallet_info" - Show wallet main address and other info.
 "balance" - Show balance.
 "address all" - Show all addresses.
-"address new" - Create new subaddress.
+"address new [<label text with white spaces allowed>]" - Create new subaddress.
 "transfer <address> <amount>" - Send XMR to an address.
 "show_transfers [in|out|pending|failed|pool]" - Show transactions.
 "sweep_all <address>" - Send whole balance to another wallet.
@@ -94,10 +94,19 @@ with that payment ID attached, so you can tell payments apart.
 It's suggested to use subaddresses (starting with `8`) instead of your main address (starting with `4`) to receive funds. Run:
 
 ```
-address new
+address new [<label text with white spaces allowed>]
 ```
 
-This will generate a subaddress, which you can share to receive payment on the account it's linked to. To view all generated addresses, run:
+This will generate a subaddress and its optional label, which addess you can share to receive payment on the account it's linked to.
+For example, 
+
+```
+address new github_donations
+```
+
+will generate a subaddress and its label 'github_donations'. 
+
+To view all generated addresses, run:
 
 ```
 address all
