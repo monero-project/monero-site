@@ -27,8 +27,6 @@
       url: https://www.coincut.com
     - name: CoinSwitch.co
       url: https://www.coinswitch.co
-    - name: CRYPTODIGGERS.EU
-      url: https://cryptodiggers.eu/
     - name: DV Chain (OTC) - Cryptocurrency OTC desk that offers buying and selling of Monero
       url: https://dvchain.co
     - name: ExchangeD.I2P - Darknet exchange (I2P)
@@ -196,6 +194,8 @@
       url: https://codify.global/
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
+    - name: CRYPTODIGGERS.EU
+      url: https://cryptodiggers.eu/
     - name: cryptwerk - online directory with companies, websites, shops, services accepting cryptocurrencies
       url: https://cryptwerk.com/pay-with/xmr/
     - name: DeepWebVPN
@@ -299,6 +299,8 @@
       url: https://cryptostop.org/
     - name: Declic CBD - CBD products online shop
       url: https://declic-cbd.fr/
+    - name: De-Googled.com - De-googled phones
+      url: https://de-googled.com/
     - name: digitalgoods by ProxyStore
       url: https://digitalgoods.proxysto.re/
     - name: Direct Depot - Trucking Products And Power Inverters
