@@ -1,114 +1,208 @@
 ﻿{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-واجهه سطر الأوامر `monero-wallet-cli` هو برنامج المحفظه الذي يأتي مع مونيرو. إنه برنامج وحده تحكم ويُدير الحساب. بينما في البتكوين تُدير المحفظه كلاً من الحساب وسلسله الكُتل. يقوم مونيرو بفصلهم : الخادم `monerod` يُدير سلسله الكُتل و واجهه سطر الأوامر `monero-wallet-cli` تُدير الحساب.
+`monero-wallet-cli` is the wallet software shipped in the Monero
+archives. It is a console program, and manages an account. While a bitcoin
+wallet manages both an account and the blockchain, Monero separates these:
+`monerod` handles the blockchain, and `monero-wallet-cli` handles the
+account.
 
-سيقوم هذا الدليل بإطلاعك علي كيفيه القيام بالعديد من العمليات من واجهه سطر الأوامر . يفترض هذا الدليل أنك تستخدم أحدث نسخه من برامج مونيرو وقمت بالفعل بإنشاء حساب كما هو موضح بالدلائل الأخري.
+This guide will show how to perform various operations with
+`monero-wallet-cli`. The guide assumes you are using the most recent version
+of Monero and have already created an account according to the other guides.
 
+## Overview
 
-## التحقق من رصيدك
+You can have a list of the most important commands by running `help`:
 
-مُنذ أنه هناك برامج مختلفه لمُعالجه كلاً من سلسله الكتل والمحفظه , العديد من إستخدامات واجهه سطر الأوامر تحتاج العمل مع الخادم. من ذلك التحقق من المعاملات القادمه إلي عنوانك. بمجرد تشغيلك الخادم وواجهه سطر الأوامر إكتب `balance` لعرض رصيدك .
+```
+Important commands:
 
-مثال:
+"welcome" - Show welcome message.
+"help all" - Show the list of all available commands.
+"help <command>" - Show a command's documentation.
+"apropos <keyword>" - Show commands related to a keyword.
 
-يقوم ذلك بسحب الكتل التي لم تراها المحفظه بعد من الخادم وتحديث رصيدك, تجري هذه العمليه عاده في الخلفيه كل دقيقه او نحو ذلك . لرؤيه الرصيد بدون تحديث :
+"wallet_info" - Show wallet main address and other info.
+"balance" - Show balance.
+"address all" - Show all addresses.
+"address new [<label text with white spaces allowed>]" - Create new subaddress.
+"transfer <address> <amount>" - Send XMR to an address.
+"show_transfers [in|out|pending|failed|pool]" - Show transactions.
+"sweep_all <address>" - Send whole balance to another wallet.
+"seed" - Show secret 25 words that can be used to recover this wallet.
+"refresh" - Synchronize wallet with the Monero network.
+"status" - Check current status of wallet.
+"version" - Check software version.
+"exit" - Exit wallet.
 
-    balance
-    Balance: 64.526198850000, unlocked balance: 44.526198850000, including unlocked dust: 0.006198850000
+"donate <amount>" - Donate XMR to the development team.
+```
 
-في هذا المثال, `Balance`  هو رصيدك الكلي. `unlocked balance` هو الرصيد المُتاح للإنفاق. تحتاج المعاملات الحديثه 10 تأكيدات علي سلسله الكتل قبلما تكون متاحه للإنفاق.`unlocked dust` يشير إلى كميات صغيرة جدًا من النواتج غير المنفقة التي قد تكون تراكمت في حسابك.
+## Checking your balance
 
-## إرسال مونيرو
+مُنذ أنه هناك برامج مختلفه لمُعالجه كلاً من سلسله الكتل والمحفظه , العديد من
+إستخدامات واجهه سطر الأوامر تحتاج العمل مع الخادم. من ذلك التحقق من
+المعاملات القادمه إلي عنوانك. بمجرد تشغيلك الخادم وواجهه سطر الأوامر إكتب
+`balance` لعرض رصيدك .
 
-سوف تحتاج إلي عنوان اساسي ترسل إليه ( سلسله طويله تبدأ بـ'4'), وربما تحتاج إلي هويه المعامله إذا كان المُستَلِم يتطلب واحداً, في هذه الحاله ربما يرسل لك المُستلم عنوان مُدمج وهو عباره عن العنوان الأساسي مدمج مع هويه المعامله في عنوان واحد.
+Output:
 
-### الإرسال إلي عنوان أساسي:
+```
+Currently selected account: [0] Primary account
+Tag: (No tag assigned)
+Balance: 7.499942880000, unlocked balance: 7.499942880000
+```
 
-    transfer ADDRESS AMOUNT PAYMENTID
+In this example you're viewing the balance of your primary account (with
+index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
+amount currently available to spend. Newly received transactions require 10
+confirmations on the blockchain before being unlocked.
 
-إستبدل  `ADDRESS` بعنوان المُرسل إليه , و `AMOUNT`  بالكميه المراد إرسالها, و `PAYMENTID` بهويه المعامله إذا ووجدت. هويه المعامله هي إختياريه إذا لم يتطلبها المُرسل إيه قم بتجاهلها.
+## Sending monero
 
-### الإرسال إلي عنوان مُدمج:
+You will need the standard address you want to send to (a long string
+starting with '4' or a '8'). The command structure is:
 
-    transfer ADDRESS AMOUNT
+```
+transfer ADDRESS AMOUNT
+```
 
-في هذه الحاله هويه المعامله مدمجه في العنوان الأساسي.
+Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
+many monero you want to send.
 
-### حدد عدد المخرجات الخاصة بالمعامله:
+## Receiving monero
 
-    transfer RINGSIZE ADDRESS AMOUNT
+If you have your own Monero address, you just need to give your address to
+someone.
 
-إستبدل `RINGSIZE` بعدد المُخرجات المُراد إستخدامه ** إذا لم يتم التحدد فالعدد الإفتراضي هو 11 **. من الجيد إستخدام العدد الإفتراضي, لكن بإمكانك تزويد العدد لمزيد من المُخرجات. كلما كان العدد كبيراً كلما كان حجم المعامله اكبر وكلما زادت رسوم التحويل.
+You can find out your primary address with:
 
+```
+address
+```
 
-## إستلام مونيرو
+Since Monero is anonymous, you won't see the origin address the funds you
+receive came from. If you want to know, for instance to credit a particular
+customer, you'll have to tell the sender to use a payment ID, which is an
+arbitrary optional tag which gets attached to a transaction. It's not
+possible to use standalone payment addresses, but you can generate an
+address that already includes a random payment ID (integrated addresss)
+using `integrated_address`:
 
-إذا كان لديك عنوان مونيرو خاص بك, كل ما عليك فعله هو إعطاء هذا العنوان إلي المُرسل.
+```
+Random payment ID: <82d79055f3b27f56>
+Matching integrated address: 4KHQkZ4MmVePC2yau6Mb8vhuGGy8LVdsZD8CFcQJvr4BSTfC5AQX3aXCn5RiDPjvsEHiJu1TC1ybR8pRTCbZM5bhTrAD3HDwWMtAn1K7nV
+```
 
-يُمكنك إيجاد عنوانك عن طريق:
+This will generate a random payment ID, and give you the address that
+includes your own account and that payment ID. If you want to select a
+particular payment ID, you can do that too. Use:
 
-    address
+```
+integrated_address 82d79055f3b27f56
+```
 
-نظراً لأن مونيرو سري لن تري عنوان المصدر الذي أتت منه الأموال. إذا كنت تريد تحديد هويه الراسل سيتحتم عليك إخبار الراسل بإستخدام هويه للمعامله, وهو عباره عن علامه عشوائيه يتم إرفاقها بالمعامله. لسهوله الإستخدام يمكنك إنشاء عنوان مع هويه للمعامله من خلال :
+Payments made to an integrated address generated from your account will go
+to your account, with that payment ID attached, so you can tell payments
+apart.
 
-    integrated_address
+### Using subaddresses
 
-سيقوم هذا بإنشاء هويه معامله عشوائيه ويُعطيك العنوان الذي يتضمن حسابك وهويه المعامله تلك. إذا كنت تريد إستخدام هويه معامله معينه يمكنك فعل ذلك من خلال :
+It's suggested to use subaddresses (starting with `8`) instead of your main
+address (starting with `4`) to receive funds. Run:
 
-    integrated_address 12346780abcdef00
+```
+address new [<label text with white spaces allowed>]
+```
 
-الدفعات القادمه لعنوان مدمج تم إنشائه من حسابك سيتم إضافتها إلي حسابك مربوطه بهويه المعامله تلك حتي يمكنك التفريق بين المعاملات.
+This will generate a subaddress and its optional label, which addess you can
+share to receive payment on the account it's linked to.  For example,
 
+```
+address new github_donations
+```
 
-## إثبات لطرف ثالث أنك قد دفعت لشخص ما
+will generate a subaddress and its label 'github_donations'.
 
-إذا دفعت لتاجر ويدّعي التاجر أنه لم يستلم الأموال ربما يجب عليك إثبات الدفع لطرف تالت - أو ربما للتاجر نفسه إذا كان خطأ غير مقصود. مونيرو خاص ولذلك لا يُمكنك الإشاره للمعامله في سلسله الكتل لأنه لا يُمكن معرفه الراسل أو المُستلم منها. مع ذلك يُمكنك توفير المفتاح الخاص بالمعامله . وبالمفتاح الخاص بالمعامله يمكن معرفه إذا تم إرسال الأموال لهذا العنوان أم لا. لاحظ أن تخزين المفاتيح الخاصه بالمعاملات غير متاح إفتراضياً ويجب عليك إتاحته قبل الإرسال إذا كنت تعتقد أنه ربما تحتاجه :
+To view all generated addresses, run:
 
-    set store-tx-info 1
+```
+address all
+```
+
+## Proving to a third party you paid someone
+
+إذا دفعت لتاجر ويدّعي التاجر أنه لم يستلم الأموال ربما يجب عليك إثبات الدفع
+لطرف تالت - أو ربما للتاجر نفسه إذا كان خطأ غير مقصود. مونيرو خاص ولذلك لا
+يُمكنك الإشاره للمعامله في سلسله الكتل لأنه لا يُمكن معرفه الراسل أو
+المُستلم منها. مع ذلك يُمكنك توفير المفتاح الخاص بالمعامله . وبالمفتاح الخاص
+بالمعامله يمكن معرفه إذا تم إرسال الأموال لهذا العنوان أم لا. لاحظ أن تخزين
+المفاتيح الخاصه بالمعاملات غير متاح إفتراضياً ويجب عليك إتاحته قبل الإرسال
+إذا كنت تعتقد أنه ربما تحتاجه :
+
+```
+set store-tx-info 1
+```
 
 يُمكنك استرداد مفتاح معامله سابقه :
 
-    get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
+```
+get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
+```
 
-إدخل هويه المعامله التي تريد الحصول علي مفتاحها. تذكر أنه ربما إنقسم الدفع إلي عده معاملات وسوف تحتاج إلي عده مفاتيح. بعد ذلك يُمكن إرسال هذا المفتاح او المفاتيح مع هويه المعامله والعنوان المرسل إليه لإثبات الدفع. لاحظ أن الطرف التالت إذا كان يعلم عنوان حسابك سيتمكن من معرفه الباقي العائد إليك من هذه المعامله.
+إدخل هويه المعامله التي تريد الحصول علي مفتاحها. تذكر أنه ربما إنقسم الدفع
+إلي عده معاملات وسوف تحتاج إلي عده مفاتيح. بعد ذلك يُمكن إرسال هذا المفتاح
+او المفاتيح مع هويه المعامله والعنوان المرسل إليه لإثبات الدفع. لاحظ أن
+الطرف التالت إذا كان يعلم عنوان حسابك سيتمكن من معرفه الباقي العائد إليك من
+هذه المعامله.
 
-إذا كنت أنت الطرف التالت ( إذا كان هُناك شخص يريد إثبات لك أنه قد أرسل الأموال لحساب معين) , يمكنك التحقق من ذلك عن طريق:
+إذا كنت أنت الطرف التالت ( إذا كان هُناك شخص يريد إثبات لك أنه قد أرسل
+الأموال لحساب معين) , يمكنك التحقق من ذلك عن طريق:
 
-    check_tx_key TXID TXKEY ADDRESS
+```
+check_tx_key TXID TXKEY ADDRESS
+```
 
-قم بتبديل `TXID`و `TXKEY` و `ADDRESS` بهويه المعامله و مفتاح المعامله و عنوان حساب المُستلِم. ستقوم واجهه سطر الأوامر بالبحث عن المعامله وإخبارك كم تم دفعه إلي ذلك الحساب.
+Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID,
+per-transaction key, and destination address which were supplied to you,
+respectively. `monero-wallet-cli` will check that transaction and let you
+know how much monero this transaction paid to the given address.
 
-
-## الحصول على فرصة لتأكيد / إلغاء المدفوعات
-
-إذا كنت ترغب في الحصول على فرصة تأكيد أخيرة عند إرسال دفعة:
-
-    set always-confirm-transfers 1
-
-
-## كيفية العثور على دفعة لك
+## How to find a payment to you
 
 إذا تلقيت دفعة باستخدام هويه معامله محدده ، فيمكنك البحث عنها:
 
-    payments PAYMENTID
+```
+payments PAYMENTID
+```
 
 يُمكنك تحديد أكثر من هويه معامله واحده.
 
 بشكل عام ، يمكنك مراجعة المدفوعات الواردة والصادرة:
 
-    show_transfers
+```
+show_transfers
+```
 
-يُمكنك تحديد طول معين لسرد المعاملات وطلب المعاملات الصادره أو الوارده فقط , مثال:
+يُمكنك تحديد طول معين لسرد المعاملات وطلب المعاملات الصادره أو الوارده فقط ,
+مثال:
 
-    show_transfers in 650000
+```
+show_transfers in 650000
+```
 
-سوف يعرض فقط الدفعات الوارده بعد الكتله 650000 . يمكنك أيضاً تحديد نطاق للكتل.
+سوف يعرض فقط الدفعات الوارده بعد الكتله 650000 . يمكنك أيضاً تحديد نطاق
+للكتل.
 
 إذا كنت ترغب في التعدين يمكنك القيام بذلك من المحفظة:
 
-    start_mining 2
+```
+start_mining 2
+```
 
-سيقوم ذلك ببدأ التعدين في الخادم . لاحظ أن هذا تعدين فردي وربما يأخذ وقت طويلاً لإيجاد كتله, لإيقاف التعدين:
+سيقوم ذلك ببدأ التعدين في الخادم . لاحظ أن هذا تعدين فردي وربما يأخذ وقت
+طويلاً لإيجاد كتله, لإيقاف التعدين:
 
-    stop_mining
-
+```
+stop_mining
+```
