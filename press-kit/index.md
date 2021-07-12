@@ -5,8 +5,43 @@ permalink: /press-kit/index.html
 ---
 
 <div class="text-center container description">
-    <p>{% t press-kit.intro1 %} <strong>{% t press-kit.intro2 %}</strong> {% t press-kit.intro3 %} <a href="/press-kit/monero-press-kit.zip">{% t press-kit.intro4 %}</a></p>
+    <p>{% t press-kit.intro %} {% t press-kit.intro2 %} {% t press-kit.intro3 %} <a href="/press-kit/monero-press-kit.zip">{% t press-kit.intro4 %}</a></p>
 </div>
+<section class="container full col-xs-12">
+    <div class="info-block">
+        <div class="row center-xs">
+            <h2>{% t press-kit.contacts %}</h2>
+        </div>
+        <p>{% t press-kit.contactsp %}</p>
+        <p>{% t press-kit.contactgen %} press[at]getmonero[dot]org</p>
+        <p>{% t press-kit.contactwg %} <a href="{{ site.baseurl }}/community/workgroups/">{% t titles.workgroups %}</a></p>
+        <p>{% t press-kit.contactcomm %} <a href="{{ site.baseurl }}/community/hangouts/">{% t titles.hangouts %}</a></p>
+    </div>
+    <div class="info-block">
+        <div class="row center-xs no-p">
+            <h2>{% t press-kit.whymonero %}</h2>
+        </div>
+        <div class="row middle-xs">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <img src="/img/press-kit/pk-1.jpg" alt="{% t press-kit.altpk-1 %}" loading="lazy">
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 box-text-right">
+                <p>{% t press-kit.whycommunity %}</p>
+                <p><b>{% t press-kit.whycommunity1 %}</b></p>
+            </div>
+        </div>
+        <div class="row middle-xs second-row">
+            <div class="col-lg-6 col-md-6 col-xs-12 box-text-left order-2-mob">
+                <p>{% t press-kit.whyconf %}</p>
+                <p><b>{% t press-kit.whyconf1 %}</b></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 order-1-mob">
+                <img src="/img/press-kit/pk-2.jpg" alt="{% t press-kit.altpk-2 %}" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="container">
     <div class="row">
         <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
