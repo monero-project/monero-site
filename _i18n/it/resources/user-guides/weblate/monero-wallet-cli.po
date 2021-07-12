@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-26 12:12+0100\n"
+"POT-Creation-Date: 2021-07-12 16:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,360 +22,315 @@ msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:6
-msgid ""
-"`monero-wallet-cli` is the wallet software that ships with the Monero "
-"tree. It is a console program, and manages an account. While a bitcoin "
-"wallet manages both an account and the blockchain, Monero separates these: "
-"`monerod` handles the blockchain, and `monero-wallet-cli` handles the "
-"account."
+msgid "`monero-wallet-cli` is the wallet software shipped in the Monero archives. It is a console program, and manages an account. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account."
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:8
-msgid ""
-"This guide will show how to perform various operations from the "
-"`monero-wallet-cli` UI. The guide assumes you are using the most recent "
-"version of Monero and have already created an account according to the other "
-"guides."
+msgid "This guide will show how to perform various operations with `monero-wallet-cli`. The guide assumes you are using the most recent version of Monero and have already created an account according to the other guides."
+msgstr ""
+
+#. type: Title ##
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:9
+#, no-wrap
+msgid "Overview"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:11
-msgid "## Checking your balance"
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:12
+msgid "You can have a list of the most important commands by running `help`:"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:15
-msgid ""
-"Since the blockchain handling and the wallet are separate programs, many "
-"uses of `monero-wallet-cli` need to work with the @daemon. This includes "
-"looking for incoming transactions to your address.  Once you are running "
-"both `monero-wallet-cli` and `monerod`, enter `balance`."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:17
-msgid "Example:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:21
-msgid ""
-"This will pull blocks from the daemon the wallet did not yet see, and update "
-"your balance to match. This process will normally be done in the background "
-"every minute or so. To see the balance without refreshing:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:24
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:13
 #, no-wrap
 msgid ""
-"    balance\n"
-"    Balance: 64.526198850000, unlocked balance: 44.526198850000, including "
-"unlocked dust: 0.006198850000\n"
+"Important commands:\n"
+"\n"
+"\"welcome\" - Show welcome message.\n"
+"\"help all\" - Show the list of all available commands.\n"
+"\"help <command>\" - Show a command's documentation.\n"
+"\"apropos <keyword>\" - Show commands related to a keyword.\n"
+"\n"
+"\"wallet_info\" - Show wallet main address and other info.\n"
+"\"balance\" - Show balance.\n"
+"\"address all\" - Show all addresses.\n"
+"\"address new [<label text with white spaces allowed>]\" - Create new subaddress.\n"
+"\"transfer <address> <amount>\" - Send XMR to an address.\n"
+"\"show_transfers [in|out|pending|failed|pool]\" - Show transactions.\n"
+"\"sweep_all <address>\" - Send whole balance to another wallet.\n"
+"\"seed\" - Show secret 25 words that can be used to recover this wallet.\n"
+"\"refresh\" - Synchronize wallet with the Monero network.\n"
+"\"status\" - Check current status of wallet.\n"
+"\"version\" - Check software version.\n"
+"\"exit\" - Exit wallet.\n"
+"\n"
+"\"donate <amount>\" - Donate XMR to the development team.\n"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:26
-msgid ""
-"In this example, `Balance` is your total balance. The `unlocked balance` is "
-"the amount currently available to spend. Newly received transactions require "
-"10 confirmations on the blockchain before being unlocked. `unlocked dust` "
-"refers to very small amounts of unspent outputs that may have accumulated in "
-"your account."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:28
-msgid "## Sending monero"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:32
-msgid ""
-"You will need the standard address you want to send to (a long string "
-"starting with '4'), and possibly a payment ID, if the receiving party "
-"requires one. In that latter case, that party may instead give you an "
-"integrated address, which is both of these packed into a single address."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:34
-msgid "### Sending to a standard address:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:36
+#. type: Title ##
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:37
 #, no-wrap
-msgid "    transfer ADDRESS AMOUNT PAYMENTID\n"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:40
-msgid ""
-"Replace `ADDRESS` with the address you want to send to, `AMOUNT` with how "
-"many monero you want to send, and `PAYMENTID` with the payment ID you were "
-"given. Payment ID's are optional. If the receiving party doesn't need one, "
-"just omit it."
+msgid "Checking your balance"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:42
-msgid "### Sending to an integrated address:"
+msgid "Since the blockchain handling and the wallet are separate programs, many uses of `monero-wallet-cli` need to work with the @daemon. This includes looking for incoming transactions to your address.  Once you are running both `monero-wallet-cli` and `monerod`, enter `balance`."
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:44
+msgid "Output:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:45
 #, no-wrap
-msgid "    transfer ADDRESS AMOUNT\n"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:46
-msgid "The payment ID is implicit in the integrated address in that case."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:48
-msgid "### Specify the number of outputs for a transaction:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:50
-#, no-wrap
-msgid "    transfer RINGSIZE ADDRESS AMOUNT\n"
+msgid ""
+"Currently selected account: [0] Primary account\n"
+"Tag: (No tag assigned)\n"
+"Balance: 7.499942880000, unlocked balance: 7.499942880000\n"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:52
-msgid ""
-"Replace `RINGSIZE` with the number of outputs you wish to use. **If not "
-"specified, the default is 11.** It's a good idea to use the default, but you "
-"can increase the number if you want to include more outputs. The higher the "
-"number, the larger the transaction, and higher fees are needed."
+msgid "In this example you're viewing the balance of your primary account (with index `[0]`). `Balance` is your total balance. The `unlocked balance` is the amount currently available to spend. Newly received transactions require 10 confirmations on the blockchain before being unlocked."
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:55
-msgid "## Receiving monero"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:57
-msgid ""
-"If you have your own Monero address, you just need to give your standard "
-"address to someone."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:59
-msgid "You can find out your address with:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:61
+#. type: Title ##
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:53
 #, no-wrap
-msgid "    address\n"
+msgid "Sending monero"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:56
+msgid "You will need the standard address you want to send to (a long string starting with '4' or a '8'). The command structure is:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:57
+#, no-wrap
+msgid "transfer ADDRESS AMOUNT\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:62
+msgid "Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how many monero you want to send."
+msgstr ""
+
+#. type: Title ##
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:63
+#, no-wrap
+msgid "Receiving monero"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:66
-msgid ""
-"Since Monero is anonymous, you won't see the origin address the funds you "
-"receive came from. If you want to know, for instance to credit a particular "
-"customer, you'll have to tell the sender to use a payment ID, which is an "
-"arbitrary optional tag which gets attached to a transaction. To make life "
-"easier, you can generate an address that already includes a random payment "
-"ID:"
+msgid "If you have your own Monero address, you just need to give your address to someone."
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:68
-#, no-wrap
-msgid "    integrated_address\n"
+msgid "You can find out your primary address with:"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:71
-msgid ""
-"This will generate a random payment ID, and give you the address that "
-"includes your own account and that payment ID. If you want to select a "
-"particular payment ID, you can do that too:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:73
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:69
 #, no-wrap
-msgid "    integrated_address 12346780abcdef00\n"
+msgid "address\n"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:76
-msgid ""
-"Payments made to an integrated address generated from your account will go "
-"to your account, with that payment id attached, so you can tell payments "
-"apart."
+msgid "Since Monero is anonymous, you won't see the origin address the funds you receive came from. If you want to know, for instance to credit a particular customer, you'll have to tell the sender to use a payment ID, which is an arbitrary optional tag which gets attached to a transaction. It's not possible to use standalone payment addresses, but you can generate an address that already includes a random payment ID (integrated addresss) using `integrated_address`:"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:79
-msgid "## Proving to a third party you paid someone"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:87
-msgid ""
-"If you pay a merchant, and the merchant claims to not have received the "
-"funds, you may need to prove to a third party you did send the funds - or "
-"even to the merchant, if it is a honest mistake. Monero is private, so you "
-"can't just point to your transaction in the blockchain, as you can't tell "
-"who sent it, and who received it. However, by supplying the per-transaction "
-"private key to a party, that party can tell whether that transaction sent "
-"monero to that particular address. Note that storing these per-transaction "
-"keys is disabled by default, and you will have to enable it before sending, "
-"if you think you may need it:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:89
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:77
 #, no-wrap
-msgid "    set store-tx-info 1\n"
+msgid ""
+"Random payment ID: <82d79055f3b27f56>\n"
+"Matching integrated address: 4KHQkZ4MmVePC2yau6Mb8vhuGGy8LVdsZD8CFcQJvr4BSTfC5AQX3aXCn5RiDPjvsEHiJu1TC1ybR8pRTCbZM5bhTrAD3HDwWMtAn1K7nV\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:84
+msgid "This will generate a random payment ID, and give you the address that includes your own account and that payment ID. If you want to select a particular payment ID, you can do that too. Use:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:85
+#, no-wrap
+msgid "integrated_address 82d79055f3b27f56\n"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:91
-msgid "You can retrieve the tx key from an earlier transaction:"
+msgid "Payments made to an integrated address generated from your account will go to your account, with that payment ID attached, so you can tell payments apart."
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:93
+#. type: Title ###
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:92
 #, no-wrap
-msgid ""
-"    get_tx_key "
-"1234567890123456789012345678901212345678901234567890123456789012\n"
+msgid "Using subaddresses"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:99
-msgid ""
-"Pass in the transaction ID you want the key for. Remember that a payment "
-"might have been split in more than one transaction, so you may need several "
-"keys. You can then send that key, or these keys, to whoever you want to "
-"provide proof of your transaction, along with the transaction id and the "
-"address you sent to. Note that this third party, if knowing your own "
-"address, will be able to see how much change was returned to you as well."
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:95
+msgid "It's suggested to use subaddresses (starting with `8`) instead of your main address (starting with `4`) to receive funds. Run:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:96
+#, no-wrap
+msgid "address new [<label text with white spaces allowed>]\n"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:102
-msgid ""
-"If you are the third party (that is, someone wants to prove to you that they "
-"sent monero to an address), then you can check this way:"
+msgid "This will generate a subaddress and its optional label, which addess you can share to receive payment on the account it's linked to.  For example,"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:104
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:103
 #, no-wrap
-msgid "    check_tx_key TXID TXKEY ADDRESS\n"
+msgid "address new github_donations\n"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:108
-msgid ""
-"Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, "
-"per-transaction key, and destination address which were supplied to you, "
-"respectively. monero-wallet-cli will check that transaction and let you know "
-"how much monero this transaction paid to the given address."
+msgid "will generate a subaddress and its label 'github_donations'."
 msgstr ""
 
 #. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:110
+msgid "To view all generated addresses, run:"
+msgstr ""
+
+#. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:111
-msgid "## Getting a chance to confirm/cancel payments"
+#, no-wrap
+msgid "address all\n"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:113
-msgid "If you want to get a last chance confirmation when sending a payment:"
-msgstr ""
-
-#. type: Plain text
+#. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:115
 #, no-wrap
-msgid "    set always-confirm-transfers 1\n"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:118
-msgid "## How to find a payment to you"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:120
-msgid "If you received a payment using a particular payment ID, you can look it up:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:122
-#, no-wrap
-msgid "    payments PAYMENTID\n"
+msgid "Proving to a third party you paid someone"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:124
-msgid "You can give more than one payment ID too."
+msgid "If you pay a merchant, and the merchant claims to not have received the funds, you may need to prove to a third party you did send the funds - or even to the merchant, if it is a honest mistake. Monero is private, so you can't just point to your transaction in the blockchain, as you can't tell who sent it, and who received it. However, by supplying the per-transaction private key to a party, that party can tell whether that transaction sent monero to that particular address. Note that storing these per-transaction keys is disabled by default, and you will have to enable it before sending, if you think you may need it:"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:126
-msgid "More generally, you can review incoming and outgoing payments:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:128
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:125
 #, no-wrap
-msgid "    show_transfers\n"
+msgid "set store-tx-info 1\n"
 msgstr ""
 
 #. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:130
+msgid "You can retrieve the tx key from an earlier transaction:"
+msgstr ""
+
+#. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:131
-msgid ""
-"You can give an optional height to list only recent transactions, and "
-"request only incoming or outgoing transactions. For example,"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:133
 #, no-wrap
-msgid "    show_transfers in 650000\n"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:136
-msgid ""
-"will only show incoming transfers after block 650000. You can also give a "
-"height range."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:138
-msgid "If you want to mine, you can do so from the wallet:"
+msgid "get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:140
-#, no-wrap
-msgid "    start_mining 2\n"
+msgid "Pass in the transaction ID you want the key for. Remember that a payment might have been split in more than one transaction, so you may need several keys. You can then send that key, or these keys, to whoever you want to provide proof of your transaction, along with the transaction id and the address you sent to. Note that this third party, if knowing your own address, will be able to see how much change was returned to you as well."
 msgstr ""
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:143
-msgid ""
-"This will start mining on the daemon usin two threads. Note that this is "
-"solo mining, and may take a while before you find a block. To stop mining:"
+msgid "If you are the third party (that is, someone wants to prove to you that they sent monero to an address), then you can check this way:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:144
+#, no-wrap
+msgid "check_tx_key TXID TXKEY ADDRESS\n"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/monero-wallet-cli.md:145
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:151
+msgid "Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination address which were supplied to you, respectively. `monero-wallet-cli` will check that transaction and let you know how much monero this transaction paid to the given address."
+msgstr ""
+
+#. type: Title ##
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:152
 #, no-wrap
-msgid "    stop_mining\n"
+msgid "How to find a payment to you"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:155
+msgid "If you received a payment using a particular payment ID, you can look it up:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:156
+#, no-wrap
+msgid "payments PAYMENTID\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:161
+msgid "You can give more than one payment ID too."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:163
+msgid "More generally, you can review incoming and outgoing payments:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:164
+#, no-wrap
+msgid "show_transfers\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:170
+msgid "You can give an optional height to list only recent transactions, and request only incoming or outgoing transactions. For example,"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:171
+#, no-wrap
+msgid "show_transfers in 650000\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:177
+msgid "will only show incoming transfers after block 650000. You can also give a height range."
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:179
+msgid "If you want to mine, you can do so from the wallet:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:180
+#, no-wrap
+msgid "start_mining 2\n"
+msgstr ""
+
+#. type: Plain text
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:186
+msgid "This will start mining on the daemon usin two threads. Note that this is solo mining, and may take a while before you find a block. To stop mining:"
+msgstr ""
+
+#. type: Fenced code block
+#: _i18n/en/resources/user-guides/monero-wallet-cli.md:187
+#, no-wrap
+msgid "stop_mining\n"
 msgstr ""
