@@ -263,6 +263,12 @@ permalink: /downloads/index.html
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
+                        <tr>
+                            <td><img src="/img/coin-wallet.png" width="142" height="142" loading="lazy" alt="Coin Wallet Logo"><a href="https://coin.space/">Coin Wallet</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://github.com/CoinSpace" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                        </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <ul>
@@ -270,6 +276,7 @@ permalink: /downloads/index.html
                                 <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                                 <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon"><img src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
                                 <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon"><img src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
+                                <li><a class="ext-noicon" href="https://coin.space/" aria-label="GitHub icon"><img src="/img/coin-wallet.png" width="142" height="142" loading="lazy" alt="Coin Wallet Logo">Coin Wallet</a></li>
                             </ul>
                         </div>
             </div>
