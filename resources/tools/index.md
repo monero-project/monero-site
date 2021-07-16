@@ -73,6 +73,7 @@ permalink: /resources/tools/index.html
                     <div class="col">
                         <h2>{% t tools.misc %}</h2>
                         <p><a href="https://www.monero.how/">Monero.how - {% t tools.monerohow-stats %}</a></p>
+                        <p><a href="https://moneroj.net/sfmodel/">Monero Pro - {% t tools.moneropro %}</a></p>
                         <p><a href="https://monerobase.com">MoneroBase - {% t tools.monerobase %}</a></p>
                     </div>
                 </div>
