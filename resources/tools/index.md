@@ -48,6 +48,7 @@ permalink: /resources/tools/index.html
                         <p><a href="https://localmonero.co/blocks/">LocalMonero.co blocks - {% t tools.localmonero-blocks %}</a></p>
                         <p><a href="https://nownodes.io/connect-xmr-node">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
+                        <p><a href="https://monero.fail/">Monero.fail - {% t tools.monerofail %}</a></p>
                     </div>
                 </div>
             </div>
