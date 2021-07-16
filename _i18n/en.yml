@@ -926,6 +926,7 @@ tools:
   misc: Miscellaneous
   monerohow-stats: Statistics
   moneropro: Charts and metrics
+  monerologs: Archive of Monero IRC channels
   monerobase: Archive of some older meeting logs
 
 blog:
