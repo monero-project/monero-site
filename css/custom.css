@@ -3200,12 +3200,6 @@ footer {
     border-bottom: none;
 }
 
-.downloads a img {
-    margin-top: 2rem;
-    border: 2px dotted #ffffff;
-    padding: 0.5rem;
-}
-
 .downloads .full>.info-block {
     padding: 4rem 5rem;
 }
@@ -3305,12 +3299,23 @@ span.icon-git {
   border-bottom: none;
 }
 
-.downloads td img {
+
+.downloads td img.small {
   display: inline-block;
   padding: 0;
   padding-right: 0.5rem;
   height: 20px;
   width: auto;
+  vertical-align: middle;
+}
+
+.downloads .hw ul {
+  padding-left: 0;
+}
+
+.downloads .hw td img {
+  display: inline-block;
+  width: 50%;
   vertical-align: middle;
 }
 
@@ -3328,15 +3333,33 @@ span.icon-git {
   text-align: left;
 }
 
+.downloads li a img {
+	margin-top: 2rem;
+	border: 2px dotted #ffffff;
+	padding: 0.5rem;
+}
+
 .downloads .mobile-only ul {
   padding-left: 0;
 }
 
+.downloads .mobile-only li {
+  padding-left: 1rem;
+}
+
 .downloads .mobile-only img {
-  width: 60px;
   display: inline-block;
   vertical-align: middle;
   margin-top: 0;
+}
+
+.downloads .mobile-only img.mob {
+  width: 60px;
+}
+
+.downloads .hw .mobile-only img {
+  max-width: 100%;
+  margin-top: inherit;
 }
 
 .mobile-only {

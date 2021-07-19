@@ -240,25 +240,25 @@ permalink: /downloads/index.html
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
+                            <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
                             <td><span class="icon-android"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
+                            <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/mymonero" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
+                            <td><img class="small" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
@@ -266,10 +266,10 @@ permalink: /downloads/index.html
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <ul>
-                                <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon"><img style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
-                                <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
-                                <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon"><img src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
-                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon"><img src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
+                                <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon"><img class="mob" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
+                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
                             </ul>
                         </div>
             </div>
@@ -295,19 +295,90 @@ permalink: /downloads/index.html
                 <!-- 'Hardware Wallets' -->
                   <h2 id="hardware">{% t downloads.hardware %}</h2>
                         <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p>{% t downloads.hardware1 %} <a href="https://forum.getmonero.org/9/work-in-progress/88149/dedicated-monero-hardware-wallet" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware2 %}</a> {% t downloads.hardware3 %}</p>
-                                <p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware4 %}</a></p>
-                                <p><a href="https://wiki.trezor.io/Monero_(XMR)" target="_blank" rel="noreferrer, noopener">{% t downloads.hardware5 %}</a></p>
+                            <div class="col-md-12 col-sm-12 col-xs-12 hw">
+                            <p>{% t downloads.hwdesc %}</p>
+                                <table class="desktop-only">
+                                <tr>
+                                    <th>{% t downloads.hwth %}</th>
+                                    <th>{% t downloads.hwthmodel %}</th>
+                                    <th>{% t downloads.hwthsupported %}</th>
+                                    <th>{% t downloads.hwthfirm %}</th>
+                                </tr>
+                                <tr>
+                                    <td><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a></td>
+                                    <td>
+                                        <ul>
+                                            <li>Nano S</li>
+                                            <li>Nano X</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Monero GUI</li>
+                                            <li>Monero CLI</li>
+                                            <li>Monerujo</li>
+                                            <li>Feather (beta)</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>{% t downloads.hwnanos %}</li>
+                                            <li>{% t downloads.hwnanox %}</li>
+                                        </ul>     
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a></td>
+                                    <td>
+                                        <ul>
+                                            <li>Model T</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Monero GUI</li>
+                                            <li>Monero CLI</li>
+                                            <li>Feather (beta)</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>{% t downloads.hwtrezor %}</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </table>
+                                <div class="mobile-only">
+                                    <div>
+                                    <h3><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a></h3>
+                                    <ul>
+                                        <b>{% t downloads.hwmobmodels %}</b>
+                                            <li>Nano S</li>
+                                            <li>Nano X</li>
+                                        <b>{% t downloads.hwthsupported %}:</b>
+                                            <li>Monero GUI</li>
+                                            <li>Monero CLI</li>
+                                            <li>Monerujo</li>
+                                            <li>Feather (beta)</li>
+                                        <b>{% t downloads.hwthfirm %}:</b> 
+                                            <li>{% t downloads.hwnanos %}</li>
+                                            <li>{% t downloads.hwnanox %}</li>
+                                    </ul>
+                                    <h3><a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a></h3>
+                                    <ul>
+                                        <b>{% t downloads.hwmobmodels %}</b>
+                                            <li>Model T</li>
+                                        <b>{% t downloads.hwthsupported %}:</b>
+                                            <li>Monero GUI</li>
+                                            <li>Monero CLI</li>
+                                            <li>Feather (beta)</li>
+                                        <b>{% t downloads.hwthfirm %}:</b> 
+                                            <li>{% t downloads.hwtrezor %}</li>
+                                    </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mob-wallets center-xs">
-                            <a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img src="/img/ledger.png" width="318" height="99" loading="lazy" alt="ledger logo"></a>
-                            <a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" width="318" height="99" loading="lazy" alt="Trezor logo"></a>
-                        </div>
-                        <div class="row mob-wallets center-xs">
-                            <a class="ext-noicon" href="https://github.com/monero-project/kastelo"><img src="/img/kastelo.png" width="318" height="85" loading="lazy" alt="Kastelo logo"></a>
-                        </div>                    
+                        </div>        
                 </div>
                 <!-- End 'Hardware Wallets' -->
             </section>
