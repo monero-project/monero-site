@@ -49,6 +49,7 @@ permalink: /resources/tools/index.html
                         <p><a href="https://nownodes.io/connect-xmr-node">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
                         <p><a href="https://monero.fail/">Monero.fail - {% t tools.monerofail %}</a></p>
+                        <p><a href="https://txstreet.com/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
                     </div>
                 </div>
             </div>
