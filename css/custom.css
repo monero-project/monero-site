@@ -3532,119 +3532,27 @@ span.icon-git {
 
 /***************************MERCHANTS STYLING***********************************/
 
-.merchants .col-md-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.merchants img.merch {
+  max-height: 85px;
 }
 
-.merchants a {
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-    display: inline;
+.merchants span {
+  height: 1.8rem;
+  width: 1.8rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.tabPanel-merchant {
-  position: relative;
-  margin-bottom: 1rem;
+.merchants span.check {
+  background-image: url("/img/emojis/2714.svg");
 }
 
-.tabPanel-merchant + .tabPanel-merchant {
-  margin-top: -1rem;
+.merchants span.cross {
+  background-image: url("/img/emojis/274C.svg");
 }
 
-.tabPanel-merchant > h2 {
-  font-size: 1.1rem;
-  height: 2rem;
-  line-height: 2rem;
-  padding: 1rem 0;
-}
-
-.tabPanel-merchant > h2 {
-  position: relative;
-  margin: 0;
-  text-align: center;
-  background: #ffffff;
-  color: #000;
-  -moz-box-shadow: 0 1px 0px rgba(50,50,93,.1);
-  -webkit-box-shadow: 0 1px 0px rgba(50,50,93,.1);
-  box-shadow: 0 1px 0px rgba(50,50,93,.1);
-}
-
-.tabPanel-merchant > h2 ~ h2 {
-  position: absolute;
-  top: 0;
-}
-
-.tabPanel-merchant a:hover, .tabPanel-merchant a:focus, .tabPanel-merchant a:active {
-  color: #d26e2b;
-}
-
-.tabPanel-merchant h2:nth-child(1) {
-  left: 0;
-}
-
-.tabPanel-merchant3 > h2 {
-  width: calc(100% / 3);
-}
-
-.tabPanel-merchant3 h2:nth-child(2) {
-  left: calc(1 * (100% / 3));
-}
-
-.tabPanel-merchant3 h2:nth-child(3) {
-  left: calc(2 * (100% / 3));
-}
-
-.tabPanel-merchant4 > h2 {
-  width: calc(100% / 4);
-}
-
-.tabPanel-merchant4 h2:nth-child(2) {
-  left: calc(1 * (100% / 4));
-}
-
-.tabPanel-merchant4 h2:nth-child(3) {
-  left: calc(2 * (100% / 4));
-}
-
-.tabPanel-merchant4 h2:nth-child(4) {
-  left: calc(3 * (100% / 4));
-}
-
-.tabPanel-merchant5 > h2 {
-  width: calc(100% / 5);
-}
-
-.tabPanel-merchant5 h2:nth-child(2) {
-  left: calc(1 * (100% / 5));
-}
-
-.tabPanel-merchant5 h2:nth-child(3) {
-  left: calc(2 * (100% / 5));
-}
-
-.tabPanel-merchant5 h2:nth-child(4) {
-  left: calc(3 * (100% / 5));
-}
-
-.tabPanel-merchant5 h2:nth-child(5) {
-  left: calc(3 * (100% / 5));
-}
-
-@media only screen and (max-width: 50rem) {
-
-.tabPanel-merchant > h2 {
-  font-size: 1.1rem;
-  height: 3rem;
-  padding: 1rem 0;
-}
-}
-
-@media only screen and (max-width: 62rem) {
-
-.tabPanel-merchant {
-	display: none;
-}
+.merchants a.btn-fixed {
+  margin-top: 1rem;
 }
 
 /***************************ROADMAP STYLING*********************************/
