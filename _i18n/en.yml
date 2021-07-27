@@ -915,6 +915,7 @@ tools:
   localmonero-blocks: Explorer and Statistics
   nownodes: node APIs
   getblockio: Blockchain nodes provider
+  monerofail: Monero node list and node map
 
   market: Market
   backtestking: Build or buy your own trading strategy/bot.
