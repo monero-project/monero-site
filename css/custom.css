@@ -4401,6 +4401,61 @@ p.hangouts-social {
     margin-top: 1.5rem;
 }
 
+.second-row {
+  padding-top: 2rem;
+}
+
+.box-text-left p {
+  padding-right: 2rem;
+}
+
+.box-text-right {
+  padding-left: 2rem;
+}
+
+.no-p {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 75rem) {
+
+  .box-text-left p {
+    padding-right: 0;
+  }
+  
+  .box-text-right {
+    padding-left: 0;
+  }
+
+  .order-2-mob {
+    order: 2;
+  }
+
+  .order-1-mob {
+    order: 1;
+  }
+  
+}
+  
+@media only screen and (max-width: 62rem) {
+
+  .box-text-left p {
+    padding-right: 0;
+  }
+  
+  .box-text-right {
+    padding-left: 0;
+  }
+
+  .order-2-mob {
+    order: 2;
+  }
+
+  .order-1-mob {
+    order: 1;
+  }
+  
+}
 
 /**************************WHAT IS MONERO*************************/
 
