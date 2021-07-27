@@ -3,8 +3,6 @@
   merchants:
     - name: AgoraDesk - P2P OTC trading platform, includes Monero options
       url: https://agoradesk.com
-    - name: Alfacashier
-      url: https://www.alfacashier.com/
     - name: BestChange
       url: https://www.bestchange.com
     - name: Bitci (XMR/BTCI, XMR/TRY, XMR/CHFT)
@@ -23,12 +21,8 @@
       url: https://changehero.io/
     - name: ChangeNOW
       url: https://changenow.io
-    - name: CoinCut (OTC)
-      url: https://www.coincut.com
     - name: CoinSwitch.co
       url: https://www.coinswitch.co
-    - name: CRYPTODIGGERS.EU
-      url: https://cryptodiggers.eu/
     - name: DV Chain (OTC) - Cryptocurrency OTC desk that offers buying and selling of Monero
       url: https://dvchain.co
     - name: ExchangeD.I2P - Darknet exchange (I2P)
@@ -53,10 +47,6 @@
       url: https://karsha.biz/
     - name: Kraken (XMRUSD, XMREUR, XMRBTC)
       url: https://www.kraken.com/
-    - name: Liberalcoins
-      url: https://liberalcoins.com/
-    - name: LocalCoin.is - LLC/XMR
-      url: https://localcoin.is/
     - name: LocalMonero (P2P exchange)
       url: https://localmonero.co/
     - name: Magnetic Exchange
@@ -83,10 +73,6 @@
       url: https://swapzone.io/
     - name: Tux Exchange
       url: https://www.tuxexchange.com/trade?coin=XMR&market=BTC
-    - name: Trovemat.com (ATM)
-      url: https://trovemat.com/
-    - name: Swaplab
-      url: https://swaplab.cc/
     - name: xChange.me - Fully anonymous cryptocurrency exchanger
       url: https://xchange.me
 - category: Payment Gateways
@@ -196,6 +182,8 @@
       url: https://codify.global/
     - name: Cryptostorm VPN
       url: https://cryptostorm.is/
+    - name: CRYPTODIGGERS.EU
+      url: https://cryptodiggers.eu/
     - name: cryptwerk - online directory with companies, websites, shops, services accepting cryptocurrencies
       url: https://cryptwerk.com/pay-with/xmr/
     - name: DeepWebVPN
@@ -299,6 +287,8 @@
       url: https://cryptostop.org/
     - name: Declic CBD - CBD products online shop
       url: https://declic-cbd.fr/
+    - name: De-Googled.com - De-googled phones
+      url: https://de-googled.com/
     - name: digitalgoods by ProxyStore
       url: https://digitalgoods.proxysto.re/
     - name: Direct Depot - Trucking Products And Power Inverters
