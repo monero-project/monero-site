@@ -235,11 +235,6 @@ downloads:
   showhash2: and should be treated as canonical, with the signature checked against the appropriate GPG key
   showhash3: in the source code
   showhash4: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress.
-  hardware4: Ledger Nano S and Nano X are supported in Monero CLI, Monero GUI, and Monerujo wallets.
-  hardware5: Trezor Model T is supported in Monero CLI and Monero GUI wallets.
   mobilelight1: The following are mobile or light wallets that are deemed safe by respected members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our
   mobilelight2: Hangouts
   mobilelight3:  page to see where we are.
@@ -254,6 +249,15 @@ downloads:
   desktop: Desktop
   antivirus: Antivirus
   sourcearchive: Source Code (archive)
+  hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano S/X and Trezor Model T."
+  hwth: Hardware Wallet
+  hwthmodel: Model(s)
+  hwthsupported: Wallets
+  hwthfirm: Min. firmware version
+  hwnanos: "Nano S: 1.6.1"
+  hwnanox: "Nano X: 1.2.4-4"
+  hwtrezor: "2.3.4"
+  hwmobmodels: "Models that support Monero:"
 
 press-kit:
   intro1: Here you'll find the Monero symbol and logo below. You can choose any size that you want, or download the .ai file to mess with the logo yourself.
