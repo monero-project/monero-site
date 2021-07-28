@@ -31,88 +31,18 @@ this file and extract the archive somewhere memorable, like your desktop.
 
 ### Ubuntu Linux
 
-The XMRig developer provides pre-built binaries for Ubuntu Xenial
-Xerus (16.04). They may work on other Ubuntu versions, and on other
+The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04) and Focal (20.04). They may work on other Ubuntu versions, and on other
 distributions, but this is not guaranteed.
 
 These binaries are available on the [GitHub release
 page](https://github.com/xmrig/xmrig/releases/latest).
 
-Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download
+Scroll down to 'Assets' until you see the correct version for your system. Download
 this file, extract the archive somewhere memorable, like your desktop.
 
-### Other Linux
+### Other distributions and operative systems
 
-Users of other Linux distributions can compile XMRig from
-source. Firstly, install the dependencies:
-
-```
-# For Debian-based distros
-sudo apt install \
-	build-essential \
-	cmake \
-	git \
-	libhwloc-dev \
-	libssl-dev \
-	libuv1-dev
-```
-
-Download the XMRig source code:
-
-```
-git clone https://github.com/xmrig/xmrig.git
-cd xmrig
-```
-
-Configure and compile XMRig:
-
-```
-cmake -Bbuild
-make -Cbuild -j$(nproc)
-```
-
-Copy binary and example configuration to your home directory:
-
-```
-cp build/xmrig ~/
-cp src/config.json ~/
-```
-
-### macOS Build
-
-Firstly, install XCode and [Homebrew](https://brew.sh).
-
-Use Homebrew to install dependencies:
-
-```
-brew install \
-	cmake \
-	hwloc \
-	libmicrohttpd \
-	libuv \
-	openssl
-```
-
-Download XMRig sources:
-
-```
-git clone https://github.com/xmrig/xmrig.git
-cd xmrig
-```
-
-Configure and compile XMRig:
-
-```
-cmake -Bbuild -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
-make -Cbuild -j$(nproc)
-```
-
-Copy binary and example configuration to your home directory:
-
-```
-cp build/xmrig ~/
-cp src/config.json ~/
-```
+Binaries are available for multiple distributions and operative systems, but you can also build the miner by yourself. Take a loot at [XMrig's docs](https://xmrig.com/docs/miner)
 
 ## Selecting a pool
 
@@ -126,30 +56,7 @@ smaller pool](https://redd.it/g6uh2l).
 
 ## Configuring the miner
 
-Navigate to your chosen pool's webpage and read their
-documentation. They should mention an address and port for you to
-enter into your miner. For example, `pool.xmr.pt:3333`.
-
-Next, open up the config.json you copied or extracted earlier in your
-favourite text editor. Scroll down to the line that says
-`donate.v2.xmrig.com:3333` and change the text inside the quotes to
-the address of your pool. The line below should contain
-`YOUR_WALLET_ADDRESS`. Change that to your actual wallet address.
-
-After these modifications, your configuration should look something like this:
-
-```
-{
-	// [...]
-	"pools": [
-		{
-			"url": "pool.xmr.pt:3333",
-			"user": "43YjW8SZov..."
-		}
-	],
-	// [...]
-}
-```
+See the [official docs](https://xmrig.com/docs/miner/config), for instructions and suggestions.
 
 ## Starting the miner
 
