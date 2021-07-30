@@ -927,6 +927,7 @@ tools:
   monerohow-stats: Statistics
   moneropro: Charts and metrics
   monerobase: Archive of some older meeting logs
+  gateways: Payment Gateways
 
 blog:
   allposts: All Posts

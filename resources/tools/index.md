@@ -80,6 +80,23 @@ permalink: /resources/tools/index.html
                 </div>
             </div>
         </div>
+        <div class="right half col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="info-block">
+                <div class="row">
+                    <div class="col">
+                        <h2>{% t tools.gateways %}</h2>
+                        <p><a href="https://www.cdpay.eu/">CDPay</a></p>
+                        <p><a href="https://www.coinpayments.net/">CoinPayments</a></p>
+                        <p><a href="https://globee.com/">GloBee</a></p>
+                        <p><a href="https://www.cryptowoo.com/">CryptoWoo Monero Plugin (WooCommerce)</a></p>
+                        <p><a href="https://github.com/monero-integrations/monerowp">Monero WooCommerce Extension (PHP)</a></p>
+                        <p><a href="https://nowpayments.io/">NOWPayments</a></p>
+                        <p><a href="https://swirlpay.io/">SwirlPay</a></p>
+                        <p><a href="https://vigla.biz/">Vigla</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
