@@ -2711,7 +2711,7 @@ p.main-downloads {
 
 a.btn-primary-top {
   margin-top: 1rem;
-  padding: 0;
+  padding: 0rem 0.4rem 0rem 0.4rem;
 }
 
 }
