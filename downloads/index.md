@@ -136,7 +136,7 @@ permalink: /downloads/index.html
           <div class="row start-md">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <h2 id="cli">{% t downloads.cli %}</h2>
-                <i>{% t downloads.cli_intro %}</i>
+                <i>{% t downloads.cli_intro0 %} {% t downloads.cli_intro %}</i>
             </div>
             <div class="col-md-7 col-sm-12 align-blocks">
                 <img class="screen" width="882" height="882" loading="lazy" alt="{% t accessibility.cliscreen %}" src={% if site.lang == "en" %}"/img/downloads/cli.png"{% else %}"/img/downloads/{{site.lang}}/cli.png"{% endif %}>

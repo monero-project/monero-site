@@ -185,8 +185,8 @@ team:
 downloads:
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
   choose: Choose your download
-  gui: GUI Wallet
-  cli: CLI Wallet
+  gui: Monero GUI Wallet
+  cli: Monero CLI Wallet
   blockchain: Import Blockchain
   blockchain1: If you'd prefer to use a raw blockchain instead of syncing from scratch, you can use the most current bootstrap. It is typically much faster to sync from scratch, however, and it also takes a lot less RAM.
   blockchain2: If you wish to proceed anyway, take a look at the user guide
@@ -195,7 +195,7 @@ downloads:
   blockchainbutton: Download Blockchain
   mobilelight: Mobile & Light Wallets
   hardware: Hardware Wallets
-  gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds of users, but it is especially recommended for less technical people who want to quickly send and receive XMR.
+  gui_intro: An open-source graphical user interface (GUI) wallet developed by the Monero community, completely free to use, suitable for both beginners and advanced users.
   simplemode: Simple mode
   simplemode1: Created for less technical users who only want to use Monero in the easiest and quickest way possible. Open the wallet, automatically connect to a @remote-node, send/receive XMR, done!
   advancedmode: Advanced mode
@@ -209,6 +209,7 @@ downloads:
   pruning: Blockchain pruning
   pruning1: Not enough disk space? Just use @pruning to download only 1/3 of the blockchain
   langs: "<b>30+ languages</b> available"
+  cli_intro0: An open-source command line interface (CLI) wallet developed by the Monero community, completely free to use, best suited for developers, intermediate, and advanced users.
   cli_intro: The CLI wallet gives you the total control over your Monero node and funds. Highly customizable and includes various analysis tools, as well as an HTTP RPC and 0MQ interface.
   currentversion: Current Version
   sourcecode: Source Code
