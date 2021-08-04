@@ -3113,22 +3113,22 @@ footer {
   width: 2rem;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 .guides span.icon-github {
   background-image: url(../img/monero-spritesheet.png);
   background-position: 0 -240px;
   float: left;
-  margin-right: 0.5rem;
 }
 
-.guides span.icon-page:before {
-  content: "\01F4C4";
+.guides span.icon-page {
+  background-image: url(../img/emojis/1F4C4.svg);
   float: left;
 }
 
-.guides span.icon-globe:before {
-  content: "\01F310";
+.guides span.icon-globe {
+  background-image: url(../img/emojis/1F310.svg);
   float: left;
 }
 
