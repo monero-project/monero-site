@@ -305,7 +305,7 @@ permalink: /downloads/index.html
                                     <th>{% t downloads.hwthfirm %}</th>
                                 </tr>
                                 <tr>
-                                    <td><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a></td>
+                                    <td><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-">{% t downloads.instructions %}</a></p></td>
                                     <td>
                                         <ul>
                                             <li>Nano S</li>
@@ -328,7 +328,7 @@ permalink: /downloads/index.html
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a></td>
+                                    <td><a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://wiki.trezor.io/Monero_(XMR)">{% t downloads.instructions %}</a></p></td>
                                     <td>
                                         <ul>
                                             <li>Model T</li>
@@ -350,7 +350,7 @@ permalink: /downloads/index.html
                                 </table>
                                 <div class="mobile-only">
                                     <div>
-                                    <h3><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a></h3>
+                                    <h3><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-">{% t downloads.instructions %}</a></p></h3>
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Nano S</li>
@@ -364,7 +364,7 @@ permalink: /downloads/index.html
                                             <li>{% t downloads.hwnanos %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
                                     </ul>
-                                    <h3><a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a></h3>
+                                    <h3><a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://wiki.trezor.io/Monero_(XMR)">{% t downloads.instructions %}</a></p></h3>
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Model T</li>
