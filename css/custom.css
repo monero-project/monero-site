@@ -4719,7 +4719,6 @@ input.accordion[type=radio]:checked + label::after {
   border-top: 5px solid hsla(0, 0%, 20%, 0.9);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
-  content: " ";
   font-size: 0;
   line-height: 0;
 }
