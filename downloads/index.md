@@ -14,7 +14,7 @@ permalink: /downloads/index.html
         <div class="info-block download-nav row middle-xs between-xs" id="selections">
             <div class="col"><a href="#gui">{% t downloads.gui %}</a></div>
             <div class="col"><a href="#cli">{% t downloads.cli %}</a></div>
-            <div class="col"><a href="#mobilelight">{% t downloads.mobilelight %}</a></div>
+            <div class="col"><a href="#mobilelight">{% t downloads.mobilelight0 %}</a></div>
             <div class="col"><a href="#blockchain">{% t downloads.blockchain %}</a></div>
             <div class="col"><a href="#hardware">{% t downloads.hardware %}</a></div>
         </div>

@@ -193,6 +193,7 @@ downloads:
   blockchain3: Importing the Monero blockchain
   blockchain4: for step-by-step instructions for Windows.
   blockchainbutton: Download Blockchain
+  mobilelight0: Mobile & Light
   mobilelight: Mobile & Light Wallets
   hardware: Hardware Wallets
   gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds of users, but it is especially recommended for less technical people who want to quickly send and receive XMR.

@@ -3138,6 +3138,10 @@ footer {
   text-align: center;
 }
 
+.downloads .col {
+  width: 20%;
+}
+
 .downloads img.screen {
     margin: 1rem auto;
 }
@@ -3182,6 +3186,7 @@ footer {
     display: flex;
     padding: 1rem 2rem;
     font-weight: bold;
+    justify-content: center;
     -webkit-transition: all ease-out .2s;
     -moz-transition: all ease-out .2s;
     -o-transition: all ease-out .2s;
