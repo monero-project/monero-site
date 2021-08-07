@@ -232,6 +232,8 @@ permalink: /downloads/index.html
                             <p>{% t downloads.mobilelight1 %} <a href="/community/hangouts/"> {% t downloads.mobilelight2 %}</a> {% t downloads.mobilelight3 %}</p>
                         </div>
                     </div>
+                        <h3 class="desktop-only">{% t downloads.localsync %}</h3>
+                        <p class="desktop-only">{% t downloads.localsyncinfo %}</p>
                         <table class="desktop-only">
                         <tr>
                             <th>{% t downloads.wallet %}</th>
@@ -251,6 +253,16 @@ permalink: /downloads/index.html
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
+                        </table>
+                        <h3 class="desktop-only">{% t downloads.remotesync %}</h3>
+                        <p class="desktop-only">{% t downloads.remotesyncinfo %}</p>
+                        <table class="desktop-only">
+                        <tr>
+                            <th>{% t downloads.wallet %}</th>
+                            <th>{% t downloads.mobile %}</th>
+                            <th>{% t downloads.desktop %}</th>
+                            <th>{% t downloads.sourcecode %}</th>
+                        </tr>
                         <tr>
                             <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
@@ -265,9 +277,15 @@ permalink: /downloads/index.html
                         </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
+                            <h3>{% t downloads.localsync %}</h3>
+                            <p>{% t downloads.localsyncinfo %}</p>
                             <ul>
                                 <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                            </ul>
+                            <h3>{% t downloads.remotesync %}</h3>
+                            <p>{% t downloads.remotesyncinfo %}</p>
+                            <ul>
                                 <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon"><img class="mob" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
                                 <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
                             </ul>

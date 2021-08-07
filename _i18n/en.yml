@@ -251,6 +251,10 @@ downloads:
   desktop: Desktop
   antivirus: Antivirus
   sourcearchive: Source Code (archive)
+  localsync: Local synchronization
+  localsyncinfo: These wallets connect to @remote-nodes and scan the @blockchain on your device, without sharing any key with the nodes. They provide higher privacy, but require more time synchronizing, since missing @blocks will be scanned only when the wallet is opened.
+  remotesync: Remote synchronization (lightweight)
+  remotesyncinfo: These wallets share your private @view-key with a remote server, which continuously scans the blockchain looking for your transactions. They are faster to use, but your privacy can be lessened if you don't control the remote server.
   hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano S/X and Trezor Model T."
   hwth: Hardware Wallet
   instructions: Usage instructions
