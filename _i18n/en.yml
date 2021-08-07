@@ -432,7 +432,7 @@ faq:
   q6: What is the difference between a lightweight and a normal wallet?
   a6: For a lightweight wallet, you give your view key to a node, who scans the blockchain and looks for incoming transactions to your account on your behalf. This node will know when you receive money, but it will not know how much you receive, who you received it from, or who you are sending money to. Depending on your wallet software, you may be able to use a node you control to avoid privacy leaks. For more privacy, use a normal wallet, which can be used with your own node.
   q7: How is Monero different from Bitcoin?
-  a7: Monero is not based on Bitcoin. It is based on the CryptoNote protocol. Bitcoin is a completely transparent system, where people can see exactly how much money is being sent from one user to another. Monero hides this information to protect user privacy in all transactions. It also has a dynamic @block size and dynamic fees, an ASIC-resistant proof of work (RandomX), and a @tail-emission, among several other changes.
+  a7: Monero is not based on Bitcoin. It is based on the CryptoNote protocol. Bitcoin is a completely transparent system, where people can see exactly how much money is being sent from one user to another. Monero hides this information to protect user privacy in all transactions. It also has a dynamic @block size and dynamic fees, an ASIC-resistant proof of work (@randomx), and a @tail-emission, among several other changes.
   q8: Does Monero have a block size limit?
   a8: No, Monero does not have a hard @block size limit. Instead, the block size can increase or decrease over time based on demand. It is capped at a certain growth rate to prevent outrageous growth (@scalability).
   q11: What is fungibility, and why is it important?
@@ -798,7 +798,7 @@ specs:
   intro_link: the library
   intro1: or get in touch with the community
   pow_title: Proof of Work
-  pow: Monero uses RandomX, an ASIC-resistant and CPU-friendly POW algorithm created by Monero community members, designed to make the use of mining-specific hardware unfeasible. Monero previously used CryptoNight and variations of this algorithm
+  pow: Monero uses @randomx, an ASIC-resistant and CPU-friendly POW algorithm created by Monero community members, designed to make the use of mining-specific hardware unfeasible. Monero previously used CryptoNight and variations of this algorithm
   pow_link: More info in the GitHub repo
   block_emission_title: Emission curve
   block_emission_pre: "To make sure there will always be an incentive to mine Monero and keep it safe, the emission is infinite. There are two main emissions:"
