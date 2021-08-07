@@ -253,6 +253,7 @@ downloads:
   sourcearchive: Source Code (archive)
   hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano S/X and Trezor Model T."
   hwth: Hardware Wallet
+  instructions: Usage instructions
   hwthmodel: Model(s)
   hwthsupported: Wallets
   hwthfirm: Min. firmware version
