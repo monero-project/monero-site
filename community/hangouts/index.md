@@ -45,7 +45,7 @@ permalink: /community/hangouts/index.html
                             </div>
                             <div class="row around-xs">
                                 <div class="center-xs">
-                                    <p>{% t hangouts.resources_para %}</p>
+                                    <p>{% t hangouts.resources_para %} {% t hangouts.resources_para1 %}</p>
                                 </div>
                                 <div class="col">
                                     <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>

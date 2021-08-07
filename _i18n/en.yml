@@ -106,7 +106,8 @@ home:
 hangouts:
   intro: The Monero community is diverse and varied. We come from all over, but we definitely have some places we like to hang out together. You'll find most of them below. Join us!
   resources: Workgroup Resources
-  resources_para: In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects.
+  resources_para: In an effort to support organic workgroups, Monero has several resources that the community can use to meet and plan projects,
+  resources_para1: like a Matrix server, a Taiga board and the translation platform Weblate.
   irc: IRC Channels
   irc_para: The Monero community utilizes a lot of IRC channels that each serve different purposes. Some to work, and some just to hang out. You'll find the more popular ones below.
   bridges: These channels are bridged to a number of other platforms, allowing the community to communicate using their favourite chat service/protocol.
