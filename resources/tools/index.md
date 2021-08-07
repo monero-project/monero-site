@@ -44,7 +44,7 @@ permalink: /resources/tools/index.html
                 <div class="row">
                     <div class="col">
                         <h2>{% t tools.network %}</h2>
-                        <p><a href="https://monerohash.com/nodes-distribution.html">monerohsah.com - {% t tools.monerohash-nodes %}</a></p>
+                        <p><a href="https://monerohash.com/nodes-distribution.html">monerohash.com - {% t tools.monerohash-nodes %}</a></p>
                         <p><a href="https://localmonero.co/blocks/">LocalMonero.co blocks - {% t tools.localmonero-blocks %}</a></p>
                         <p><a href="https://nownodes.io/connect-xmr-node">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
