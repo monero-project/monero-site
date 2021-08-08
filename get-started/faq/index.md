@@ -26,6 +26,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-buy">{% t faq.q2 %}</a></li>
                         <li><a href="#anchor-different">{% t faq.q4 %}</a></li>
                         <li><a href="#anchor-btc-difference">{% t faq.q7 %}</a></li>
+                        <li><a href="#asic-resistance">{% t faq.qasicresistance %}</a></li>
                         <li><a href="#anchor-fungibility">{% t faq.q11 %}</a></li>
                         <li><a href="#anchor-magic">{% t faq.q13 %}</a></li>
                         <li><a href="#anchor-anonymous">{% t faq.q14 %}</a></li>
@@ -137,6 +138,14 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#anchor-btc-difference"></a>{% t faq.q7 %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.a7 %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="asic-resistance">
+                    <h3><a class="anchor" href="#asic-resistance"></a>{% t faq.qasicresistance %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.aasicresistance %}</p>
+                        <p>{% t faq.aasicresistance1 %}</p>
+                        <p>{% t faq.aasicresistance2 %}</p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-fungibility">

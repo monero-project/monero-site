@@ -501,6 +501,11 @@ faq:
   avuln: >
     The Monero community has created a series of videos called "Breaking Monero", where potential Monero vulnerabilities are explored and discussed. There are 14 videos, with each exploring a different subject. Check out <a href="https://www.monerooutreach.org/breaking-monero/">the videos on monerooutreach.org</a>.
   vulnspotify: Available on Spotify as podcast
+  qasicresistance: "What is ASIC resistance? Why is it important?"
+  aasicresistance: ASICs are basically special computers created to do only one job, contrary to normal computers, which are made for general purpose. This characteristic makes ASICs very efficient for @mining.
+  aasicresistance1: The problem is that these devices are very expensive and can be afforded by few. This leads to few entities owning a big amount of the hashrate of the network, which is a serious threat to the security of the network itself. For example, if big ASIC operators collude and manage to gain the majority of the hashrate of the network, they could arbitrarily reject transactions.
+  aasicresistance2: >
+    Monero fixes this problem by being ASIC-resistant: it uses an algorithm (@randomx) that strongly reduces the efficiency of ASICs, making them not profitable to build. Miners can use common consumer hardware, which allows them to compete fairly. The Monero network is currently protected by thousands of miners using 'regular' computers. This results in a network much harder to attack, no miner having significant advantage over other miners (they all use more or less the same hardware).
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
