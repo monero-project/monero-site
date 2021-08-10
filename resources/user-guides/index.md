@@ -12,6 +12,7 @@ title: titles.userguides
                         <div class="col">
                             <h2>{% t user-guides.general %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/securely_purchase.html">{% t user-guides.purchasing-storing %}</a></p>
+							<p><a href="{{site.baseurl}}/resources/user-guides/receive-payment.html">{% t user-guides.receive-payment %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/prove-payment.html">{% t user-guides.prove-payment %}</a></p>
                         </div>
                     </div>

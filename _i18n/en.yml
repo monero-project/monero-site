@@ -636,6 +636,7 @@ user-guides:
   guiguide: Guide for the Monero GUI wallet
   tailsguide: Set up a wallet (using a remote node) on Tails
   back: Back to the list
+  receive-payment: How to receive a payment
 
 roadmap:
   completed: Completed task
