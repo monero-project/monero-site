@@ -606,8 +606,12 @@ developer-guides:
 user-guides:
   general: General
   mining: Mining
+  backup: Backup
+  nodesync: Node & Synchronization
   recovery: Recovery
   wallets: Wallets
+  hardwarewallet: Hardware Wallets
+  anonimizationnetworks: Anonymizing Networks
   offline-backup: How to make an offline backup
   vps-node: How to run a node on VPS
   import-blockchain: Importing the Monero blockchain
