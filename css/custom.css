@@ -2443,6 +2443,14 @@ label[for="mobile-burger"] {
     background-color: #f5f5f5;
 }
 
+/*Avoid fixed page header overlapping in-page anchors on mobile*/
+:target::before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin: -60px 0 0;
+}
+
 #drop1:checked ~ .dropdown-content, #drop2:checked ~ .dropdown-content, #drop3:checked ~ .dropdown-content, #drop4:checked ~ .dropdown-content {
     background-color: #fcfcfc;
 }
