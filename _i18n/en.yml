@@ -387,7 +387,7 @@ contributing:
   ccs_p: Monero utilizes a community crowdfunding system whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
   ccsbutton: Go the the CCS
   donate: Donate
-  donate_p: Donations to the general fund are used to pay the salary of core's assistant Rehrar and in case of emergencies or need. Infrastructure costs are currently covered by sponsors.
+  donate_p: Donations to the general fund are used in case of emergencies or need. Infrastructure costs are currently covered by sponsors.
   genfund: General Fund
   genfund_p: "You can donate both Monero and Bitcoin:"
   donate-other: Other
