@@ -2447,7 +2447,7 @@ label[for="mobile-burger"] {
 :target::before {
   content: "";
   display: block;
-  height: 80px;
+  height: 110px;
   margin: -60px 0 0;
 }
 
