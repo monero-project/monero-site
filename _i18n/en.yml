@@ -501,6 +501,11 @@ faq:
   avuln: >
     The Monero community has created a series of videos called "Breaking Monero", where potential Monero vulnerabilities are explored and discussed. There are 14 videos, with each exploring a different subject. Check out <a href="https://www.monerooutreach.org/breaking-monero/">the videos on monerooutreach.org</a>.
   vulnspotify: Available on Spotify as podcast
+  qcriminals: Is Monero for criminals?
+  acriminals: No, Monero is for everyone who values privacy, and not everyone who values privacy is a criminal. Monero is a permissionless, peer-to-peer, decentralized currency. This means anyone can participate on the network, and there is not a central authority to control how it is used and who uses the technology. Monero is a neutral tool in the hands of the public, very much like a kitchen knife, which can be used to slice a loaf of bread or stab an innocent person, or the US dollar, which can be used to donate do charity projects or fund terrorist attacks.
+  acriminals1: >
+    Monero, like every other currency, is money and can be used with good intentions (like funding charities) or bad intentions (like criminal activities). We cannot decide who uses Monero, but that doesn't mean we support criminal activities. Exactly like the Dollar is not considered 'for criminals', even if it's the preferred currency of terrorists, drug cartels and countless other criminal organizations.
+  acriminals2: Banning Monero would be a minor annoyance for criminals, but a major problem for those who use this currency to escape war, mass surveillance or sexual/political discrimination by tyrannical regimes or organizations.
 
 mining:
   intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.

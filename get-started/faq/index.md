@@ -34,6 +34,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#monero-meaning">{% t faq.qmoneromeaning %}</a></li>
                         <li><a href="#hardforks">{% t faq.qhf %}</a></li>
                         <li><a href="#videos">{% t faq.qvideos %}</a></li>
+                        <li><a href="#criminals">{% t faq.qcriminals %}</a></li>
                     </ul>
                     <li class="category">{% t faq.advanced %}</li>
                     <ul class="logo">
@@ -197,6 +198,14 @@ permalink: /get-started/faq/index.html
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Ring%20Signatures.m4v">{% t faq.video_ringsig %}</a> - {% t faq.mvideos %} @Ring-Signatures</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">{% t faq.video_ringct %}</a> - {% t faq.mvideos %} @RingCT</li>
                         </ol>
+                    </div>
+                </div>
+                <div class="tab" id="criminals">
+                    <h3><a class="anchor" href="#criminals"></a>{% t faq.qcriminals %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.acriminals %}</p>
+                        <p>{% t faq.acriminals1 %}</p>
+                        <p>{% t faq.acriminals2 %}</p>
                     </div>
                 </div>
                 <div class="row center-xs">
