@@ -195,8 +195,8 @@ permalink: /resources/roadmap/index.html
                             <ul>
                                 <h3 class="months">{% t roadmap.feb %}</h3>
                                     <li class="completed">{% t roadmap.onionaddress %}</li>
-                                <h3 class="months">{% t roadmap.comingsoon %}</h3>
-                                    <li class="ongoing">{% t roadmap.atomicswaps %}</li>
+                                <h3 class="months">{% t roadmap.aug %}</h3>
+                                    <li class="completed">{% t roadmap.atomicswaps %}</li>
                             </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>
