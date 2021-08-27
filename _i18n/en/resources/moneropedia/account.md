@@ -4,6 +4,7 @@ summary: "similar in function to a bank account, contains all of your sent and r
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 Those familiar with Monero's predecessors will be more familiar with the term *wallet* to describe this. In Monero we call this an account, and it is a private account owned and operated by a Monero user.
@@ -65,7 +66,6 @@ Refresh done, blocks received: 21939
 Balance: 0.000000000000, unlocked balance: 0.000000000000
 Background refresh thread started
 [wallet 4B15Zj]: █
-
 ```
 
 As the example above indicates, it is incredibly important to store these words in safe locations. If you are concerned about the risk of critical loss at your home, for instance, you may want to store a second copy of your seed with your attorney or in a safety deposit box. It is also recommended that it is stored in a way that does not make it obvious that it is your seed, so writing it into a letter or as part of other notes is advisable.
