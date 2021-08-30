@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-08-30 12:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/airgap.md:1
+#, no-wrap
+msgid "An airgap is a security measure to physically separate a computer or device from all other networks, such as the Internet."
+msgstr "Airgap jest środkiem bezpieczeństwa, który fizycznie oddziela komputer lub inne urządzenie od wszystkich sieci, takich jak internet."
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/airgap.md:1
+#, no-wrap
+msgid "[\"airgap\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/airgap.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/airgap.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Podstawy"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/airgap.md:11
+#
+msgid "\"An air gap, air wall or air gapping is a network security measure employed on one or more computers to ensure that a secure computer network is physically isolated from unsecured networks, such as the public Internet or an unsecured local area network.[2] The name arises from the technique of creating a network that is physically separated (with a conceptual air gap) from all other networks. The air gap may not be completely literal, as networks employing the use of dedicated cryptographic devices that can tunnel packets over untrusted networks while avoiding packet rate or size variation can be considered air gapped, as there is no ability for computers on opposite sides of the gap to communicate.\""
+msgstr "Air gap, air wall lub air gapping jest środkiem bezpieczeństwa sieci podejmowanym na jednym lub więcej komputerach w celu zapewnienia, że bezpieczne sieci komputerowe są fizycznie oddzielone od niebezpiecznych sieci, takich jak internet publiczny lub niezabezpieczone lokalne sieci. Nazwa pochodzi od techniki tworzenia sieci fizycznie oddzielonej (z konceptualistyczną \"szczeliną powietrzną\") od pozostałych sieci. \"Szczelina powietrzna\" może nie być zupełnie dosłowna, biorąc pod uwagę, że sieci używające urządzeć kryptograficznych, które mogą tunelować pakiety przez niezaufane sieci, jednocześnie unikając szybkości pakietów lub zmian rozmiarów, mogą być także nazywane air gapped, ponieważ komputery po dwóch różnych stronach szczeliny nie mają możliwości się komunikować.\""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/airgap.md:12
+#
+msgid "Taken from https://en.wikipedia.org/wiki/Air_gap_(networking)"
+msgstr "Zaczerpnięte z https://en.wikipedia.org/wiki/Air_gap_(networking)."
