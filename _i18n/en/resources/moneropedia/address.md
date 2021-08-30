@@ -4,11 +4,12 @@ summary: "either an alias, such as donate.getmonero.org, or a set of 95 characte
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
-When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is <span class="long-term">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</span>.
+When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
-Because those addresses are long and complex, you will often encounter an @OpenAlias address instead. For example, Monero donations can be sent to <span class="long-term">donate@getmonero.org</span> or <span class="long-term">donate.getmonero.org</span>.
+Because those addresses are long and complex, you will often encounter an @OpenAlias address instead. For example, Monero donations can be sent to donate@getmonero.org or donate.getmonero.org.
 
 If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](https://openalias.org/).
 
