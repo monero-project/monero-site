@@ -612,29 +612,29 @@ user-guides:
   wallets: Wallets
   hardwarewallet: Hardware Wallets
   anonimizationnetworks: Anonymizing Networks
-  offline-backup: How to make an offline backup
+  offline-backup: How to make an offline backup (advanced)
   vps-node: How to run a node on VPS
-  import-blockchain: Importing the Monero blockchain
+  import-blockchain: How to import the Monero blockchain (advanced)
   monero-tools: Monero Tools
-  purchasing-storing: Securely purchasing and storing Monero
-  verify-allos: Verify binaries on Linux, Mac, or Windows command line (advanced)
-  verify-windows: Verify binaries on Windows (beginner)
+  purchasing-storing: How to create a Monero paper wallet
+  verify-allos: How to use the command line to verify your Monero CLI/GUI software is safe (advanced)
+  verify-windows: How to verify your Monero CLI/GUI software is safe on Windows (beginner)
   mine-on-pool: How to mine on a pool with XMRig
-  solo-mine: How to solo mine with the GUI
+  solo-mine: How to solo mine with Monero GUI
   locked-funds: How to fix locked up funds
-  restore-account: How to restore your account
-  qubes: CLI wallet/daemon isolation with Qubes + Whonix
-  cli-wallet: Getting started with the CLI wallet
+  restore-account: How to restore a wallet from mnemonic seed
+  qubes: How to use Monero CLI/daemon with Qubes + Whonix
+  cli-wallet: Guide for the Monero CLI wallet
   remote-node-gui: How to connect to a remote node within GUI wallet
   view-only: How to make a view-only wallet
-  prove-payment: How to prove payment
-  restore-from-keys: Restoring wallet from keys
-  ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
+  prove-payment: How to prove a payment was made
+  restore-from-keys:  How to restore a wallet from keys
+  ledger-wallet-cli: How to use a Ledger wallet on Monero CLI
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
-  tor_wallet: Connecting your local wallet to your own daemon over Tor
-  node-i2pzero: Run a Monero node through I2P with I2P-zero
+  tor_wallet: How to connect your wallet to your own node over Tor
+  node-i2pzero: How to run a node through I2P with I2P-zero
   guiguide: Guide for the Monero GUI wallet
-  tailsguide: Set up a wallet (using a remote node) on Tails
+  tailsguide: How to use Monero on Tails
   back: Back to the list
 
 roadmap:
