@@ -33,7 +33,7 @@ checkpo() {
 }
 
 updatelangs() {
-  for guide in *.config; do
+  for guide in user-guides/*.config; do
     echo "-> Running po4a on ${guide}"
     po4a $guide || echo "ERROR: something went wrong, po4a didn't run succesfully on ${guide}"
   done
