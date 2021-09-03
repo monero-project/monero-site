@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-08-27 12:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/account.md:1
+#, no-wrap
+msgid "similar in function to a bank account, contains all of your sent and received transactions"
+msgstr "Podobnie jak konto bankowe, konto Monero zawiera wszystkie twoje płatności wychodzące i przychodzące"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/account.md:1
+#, no-wrap
+msgid "[\"account\", \"accounts\", \"wallet\", \"wallets\"]"
+msgstr "[\"account\", \"accounts\", \"wallet\", \"wallets\", \"konto\", \"konta\", \"portfel\", \"portfela\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/account.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Podstawy"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:11
+#
+msgid "Those familiar with Monero's predecessors will be more familiar with the term *wallet* to describe this. In Monero we call this an account, and it is a private account owned and operated by a Monero user."
+msgstr "Dla bardziej zaznajomionych z poprzednikami Monero bliższe będzie określenie *portfel*. Jest to prywatne konto w posiadaniu i obsłudze użytkownika Monero."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:13
+#
+msgid "Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time."
+msgstr "Konto zawiera wszystkie twoje wychodzące i przychodzące @transakcje Monero. Saldo jest sumą wszystkich Monero, jakie otrzymałeś, minus Monero, które wysłałeś. Zauważ, że konto posiada dwa salda: zablokowane i odblokowane. Saldo odblokowane zawiera fundusze możliwe do natychmiastowego wydania, a w skład salda zablokowanego wchodzą środki, których nie możesz w danym momencie wydać. Może się zdarzyć, że otrzymasz wpłatę z ustawionym @czasem-na-odblokowanie lub że wyślesz Monero i będziesz oczekiwał aż @reszta zostanie zwrócona do twojego portfela. W obu sytuacjach twoje środki mogą zostać tymczasowo zablokowane."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:15
+#
+msgid "A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security)."
+msgstr "Kluczowa różnica między tradycyjną walutą elektroniczną a Monero polega na tym, że twoje konto Monero podlega jedynie twojej kontroli, przeważnie na twoim komputerze, i nikt nie ma do niego dostępu, jeśli tylko praktukujesz [zasady bezpieczeństwa](#prkatykowanie-zasad-bezpieczeństwa)."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/account.md:16
+#, no-wrap
+msgid "Multiple Accounts"
+msgstr "Wiele kont"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:19
+#
+msgid "There are no costs attached to creating a Monero account, and there are no fees charged except for individual @transaction fees that go to @miners."
+msgstr "Nie istnieją żadne koszta związane z założeniem konta Monero ani żadne opłaty, z wyjątkiem opłat za pojedyncze @transakcje, które trafiają do @górników."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:21
+#
+msgid "This means that individuals can easily create a Monero account for themselves as well as a joint account to share with their partner, and individual accounts for their children. Similarly, a business could create separate accounts for each division or group. Since Monero's @transaction fees are quite low, moving funds between accounts is not an expensive exercise."
+msgstr "Oznacza to, że każdy może w łatwy sposób założyć konto Monero dla siebie, jak i konto łączone z partnerem lub indywidualne dla dziecka. Podobnie firma może założyć osobne konta dla każdego oddziału lub grupy pracowniczej. Ponieważ opłaty za @transakcje są dość niskie, przekazywanie środków między kontami nie jest drogie."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/account.md:22
+#, no-wrap
+msgid "Cryptographic Keys"
+msgstr "Klucze kryptograficzne"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:25
+#
+msgid "Monero relies heavily on a cryptography principle known as *public/private key cryptography* or *asymmetric cryptography*, which is thoroughly detailed in [this Wikipedia article](https://en.wikipedia.org/wiki/Public-key_cryptography)."
+msgstr "Monero opiera się głównie na zasadzie kryptograficznej znanej jako *kryptografia kluczy publicznych i prywatnych* lub *kryptografia asymetryczna*, która została dokładnie opisana w [tym artykule Wikipedii](https://en.wikipedia.org/wiki/Public-key_cryptography)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:27
+#
+msgid "Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy."
+msgstr "Twoje konto bazuje na dwóch kluczach: kluczu wydawania i kluczu widoczności. @Klucz-wydawania jest jedynym kluczem wymaganym do wydawania twoich środków Monero, podczas gdy @klucz-widoczności pozwala na ujawnienie twoich @transakcji osobom trzecim, na przykład dla celów kontrolnych czy rachunkowych. Klucze te pełnią również istotną rolę w prywatności @transakcji."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:29
+#
+msgid "The private keys for both of these must be protected by you in order to retain your account privacy. On the other hand, the public keys are obviously public (they are part of your Monero account address). For normal public/private key cryptography someone could send you a private message by encrypting it with either of your public keys, and you would then be the only one able to decrypt it with your private keys."
+msgstr "Klucze prywatne w obu przypadkach muszą być chronione przez ciebie, aby utrzymać prywatność twojego konta. Z drugiej storny, klucze publiczne, jak sama nazwa wskazuje, mogą zostać ujawnione i tworzą część twojego adresu konta Monero. Różnica pomiędzy kluczem prywatnym a publicznym polega na tym, że ktoś może wysłać ci wiadomość zaszyfrowaną jednym z twoich publicznych kluczy, a jedynie ty możesz ją odszyfrować przy użyciu twoich kluczy prywatnych."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/account.md:30
+#, no-wrap
+msgid "Backing Up Your Account"
+msgstr "Tworzenie kopii zapasowej konta"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:33
+#
+msgid "When you manage your own Monero Account with the private @spend-key, you are solely responsible for the security of your funds. Thankfully, Monero makes it very easy to backup your account. When creating a Monero account for the first time you will be given a unique @mnemonic-seed for your account that consists of 13 or 25 words in the language of your choosing. **This seed is the only thing you need to backup for your account**, and so it is imperative that it is written down and stored securely.  Never store this seed in a form or location that would allow someone else to see it!"
+msgstr "Po założeniu własnego konta Monero z prywatnym @kluczem-wydawania, jesteś jedyną osobą odpowiedzialną za bezpieczeństwo twoich środków. Na szczęście Monero ułatwia proces tworzenia kopii zapasowej konta. Przy zakładaniu konta po raz pierwszy otrzymałeś unikalny @kod-mnemoniczny składający się z 13 lub 25 słów w wybranym języku. **Ten kod jest jedyną rzeczą potrzebną do stworzenia kopii zapasowej konta** i konieczne jest jego zapisanie i bezpieczne przechowanie. Nigdy nie chowaj swojego zapisanego kodu w miejscu, w którym ktoś mógłby go zobaczyć!"
+
+#. type: Fenced code block
+#: ../_i18n/en/resources/moneropedia/account.md:34
+#, no-wrap
+msgid ""
+"List of available languages for your wallet's seed:\n"
+"0 : Deutsch\n"
+"1 : English\n"
+"2 : Español\n"
+"3 : Français\n"
+"4 : Italiano\n"
+"5 : Nederlands\n"
+"6 : Português\n"
+"7 : русский язык\n"
+"8 : 日本語\n"
+"9 : 简体中文 (中国)\n"
+"10 : Esperanto\n"
+"Enter the number corresponding to the language of your choice: 1\n"
+"Generated new wallet: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmhZEWD6XoFDGz55bgzisT9Dnv61sbsA6Sa47TYu\n"
+"view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903\n"
+"**********************************************************************\n"
+"Your wallet has been generated.\n"
+"To start synchronizing with the @daemon, use \"refresh\" command.\n"
+"Use \"help\" command to see the list of available commands.\n"
+"Always use \"exit\" command when closing monero-wallet-cli to save your\n"
+"current session's state. Otherwise, you might need to synchronize\n"
+"your wallet again (your wallet keys are NOT at risk in any case).\n"
+"\n"
+"PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.\n"
+"\n"
+"aunt knuckle italics moisture hawk thorn iris abort\n"
+"chlorine smog uphill glass aptitude nowhere sewage plywood\n"
+"dual relic fierce divers anvil nodes bubble cabin abort\n"
+"**********************************************************************\n"
+"Starting refresh...\n"
+"Refresh done, blocks received: 21939                            \n"
+"Balance: 0.000000000000, unlocked balance: 0.000000000000\n"
+"Background refresh thread started\n"
+"[wallet 4B15Zj]: █\n"
+msgstr ""
+"List of available languages for your wallet's seed:\n"
+"0 : Deutsch\n"
+"1 : English\n"
+"2 : Español\n"
+"3 : Français\n"
+"4 : Italiano\n"
+"5 : Nederlands\n"
+"6 : Português\n"
+"7 : русский язык\n"
+"8 : 日本語\n"
+"9 : 简体中文 (中国)\n"
+"10 : Esperanto\n"
+"Enter the number corresponding to the language of your choice: 1\n"
+"Generated new wallet: 4B15ZjveuttEaTmfZjLVioPVw7bfSmRLpSgB33CJbuC6BoGtZrug9TDAmhZEWD6XoFDGz55bgzisT9Dnv61sbsA6Sa47TYu\n"
+"view key: 4130fa26463d9451781771a8baa5d0b8085c47c4500cefe4746bab48f1d15903\n"
+"**********************************************************************\n"
+"Your wallet has been generated.\n"
+"To start synchronizing with the @daemon, use \"refresh\" command.\n"
+"Use \"help\" command to see the list of available commands.\n"
+"Always use \"exit\" command when closing monero-wallet-cli to save your\n"
+"current session's state. Otherwise, you might need to synchronize\n"
+"your wallet again (your wallet keys are NOT at risk in any case).\n"
+"\n"
+"PLEASE NOTE: the following 25 words can be used to recover access to your wallet. Please write them down and store them somewhere safe and secure. Please do not store them in your email or on file storage services outside of your immediate control.\n"
+"\n"
+"aunt knuckle italics moisture hawk thorn iris abort\n"
+"chlorine smog uphill glass aptitude nowhere sewage plywood\n"
+"dual relic fierce divers anvil nodes bubble cabin abort\n"
+"**********************************************************************\n"
+"Starting refresh...\n"
+"Refresh done, blocks received: 21939                            \n"
+"Balance: 0.000000000000, unlocked balance: 0.000000000000\n"
+"Background refresh thread started\n"
+"[wallet 4B15Zj]: █\n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:72
+#
+msgid "As the example above indicates, it is incredibly important to store these words in safe locations. If you are concerned about the risk of critical loss at your home, for instance, you may want to store a second copy of your seed with your attorney or in a safety deposit box. It is also recommended that it is stored in a way that does not make it obvious that it is your seed, so writing it into a letter or as part of other notes is advisable."
+msgstr "Jak wspomniamo w powyższym przykładzie, bardzo ważne jest przechowywanie tych słów w bezpiecznym miejscu. Jeśli obawiasz się ryzyka straty w swoim domu, możesz przekazać kopię swojego kodu adwokatowi lub w skrzynce depozytowej. Zalecane jest także zapisanie kodu w formie listu lub jako część innych notatek tak, aby nie było oczywiste, że słowa są twoim kodem mnemonicznym."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/account.md:73
+#, no-wrap
+msgid "Practicing Good Security"
+msgstr "Praktykowanie zasad bezpieczeństwa"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:76
+#
+msgid "Over and above backing up your @mnemonic-seed so that you have access to your account in the event of critical data loss, it is also important to practice good security. Use a secure password when creating a local Monero account (not used on [MyMonero](https://mymonero.com) or other web-based account systems)."
+msgstr "Poza stworzenie kopii twojego kodu mnemonicznego, aby mieć dostęp do konta w przypadku utraty danych, ważne jest także praktykowanie zasad bezpieczeństwa. Użyj bezpiecznego hasła przy zakładaniu lokalnego konta Monero (innego niż użyte na stronie [MyMonero] (https://mymonero.com) czy innych systemach kont internetowych)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:78
+#
+msgid "Don't ever give your Monero account password to anyone, as this can be used to access the Monero on your computer without knowing your @mnemonic-seed. Similarly, make sure you have running and up-to-date antivirus, especially on Windows computers. Finally, be careful when clicking links in emails or on unknown and untrusted websites, as malware installed on your computer can sit and wait for you to access your Monero account before taking the funds from it."
+msgstr "Nie ujawniaj swojego hasła do konta Monero nikomu, bo może ono zostać użyte do uzyskania dostępu do Monero z twojego komputera bez wymagania kodu mnemonicznego. Upewnij się, że twój antywirus jest włączony i zaktualizowany, zwłaszcza na komputerze z systemem Windows. Uważaj przy otwieraniu linków z e-maili lub na nieznanych i niezaufanych stronach internetowych, ponieważ raz zainstalowane złośliwe oprogramowanie może czekać z podebraniem twoich pieniędzy aż wejdziesz na swoje konto Monero."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/account.md:79
+#, no-wrap
+msgid "Leaving Your Account to Next of Kin"
+msgstr "Przekazywanie konta najbliższym"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/account.md:81
+#
+msgid "Providing access to your Monero account to your next of kin is just as easy as it is to backup your Monero account. Simply leave your @mnemonic-seed to them in your will, or store it somewhere safe where it will be given to them upon the execution of your will. A key advantage to this is that your next of kin won't have to wait for months for a third party to release the funds to them."
+msgstr "Przekazanie dostępu do konta Monero twoim najbliższym jest tak proste, jak stworzenie jego kopii zapasowej. Po prostu zapisz swój @kod-mnemoniczny w testamencie lub zostaw w bezpiecznym miejscu, które zostanie im ujawnione przy realizacji twojego testamentu. Kluczową zaletą takiego rozwiązania jest fakt, że twoi najbliżsi nie będą musieli czekać miesiącami na udostępnienie funduszy przez osoby trzecie."
