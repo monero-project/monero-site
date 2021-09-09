@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-09 11:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:1
+#, no-wrap
+msgid "A host that is canonically resolved to an address or set of addresses"
+msgstr "Хост, который канонически разрешен к адресу или группе адресов"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:1
+#, no-wrap
+msgid "[\"Canonically-unique-host\"]"
+msgstr "[\"Canonically-unique-host\", \"канонически-уникальное-хост\", \"канонически-уникальный-хост\", \"канонически-уникальному-хосту\", \"канонически-уникальным-хостом\", \"канонически-уникального-хоста\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:11
+#
+msgid "A Canonically-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) that will canonically resolve to a designated address or set of addresses. Not to be confused with a @locally-unique-host."
+msgstr "Канонически уникальным хостом является [FQDN](https://en.wikipedia.org/wiki/FQDN), который будет канонически принимать решения по указанным адресам или набору адресов. Не следует путать с @локально-уникальным-хостом."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:12
+#, no-wrap
+msgid "In-depth information"
+msgstr "Углублённая информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:15
+#
+msgid "A Canonically-unique host is defined by remote authoritative sources; usually through [DNS](https://en.wikipedia.org/wiki/DNS). When resolving a peer's hostname, you will most likely use an external source for resolution unless you have the following implemented:"
+msgstr "Канонически уникальный хост определяется удалёнными авторитетными источниками, обычно через [DNS](https://en.wikipedia.org/wiki/DNS). При принятии решения по одноранговому имени хоста наиболее вероятно вы будете использовать внешний источник принятия решения, если только у вас нет следующего:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:18
+#
+msgid "- a database file similar to a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file))  - an internal-network resolver (which eventually pulls from external sources)"
+msgstr "- файла базы данных, схожего с [файлом хоста](https://en.wikipedia.org/wiki/Hosts_(file))  - внутрисетевого решающего блока (который в конечном счёте опирается на внешние источники)."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:19
+#, no-wrap
+msgid "Notes"
+msgstr "Примечания"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/canonically-unique-host.md:22
+#
+msgid "- Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution.  - I2P's and @Kovri's self-assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
+msgstr "- Monero в первую очередь использует принятие решение по @канонически-уникальному-хосту, в то время как I2P использует только решение по @локально-уникальному-хосту.  - Назначившим самого себя доменом I2P и @Kovri верхнего уровня на данный момент является `.i2p`, @Kovri отвечает только за обработку / использование [домена верхнего уровня](https://en.wikipedia.org/wiki/Top_level_domain) `.i2p`."
