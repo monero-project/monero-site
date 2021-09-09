@@ -656,6 +656,7 @@ user-guides:
   node-i2pzero: How to run a node through I2P with I2P-zero
   guiguide: Guide for the Monero GUI wallet
   tailsguide: How to use Monero on Tails
+  make-payment: How to make a payment
   back: Back to the list
 
 roadmap:
