@@ -4,6 +4,7 @@ summary: "Atomic Units refer to the smallest fraction of 1 XMR."
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 Atomic Units refer to the smallest fraction of 1 XMR.
