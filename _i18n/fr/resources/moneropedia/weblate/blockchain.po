@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-04 11:56+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/blockchain.md:1
+#, no-wrap
+msgid "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
+msgstr "Un registre distribué de toutes les transactions passées et présentes, ne révélant ni l'origine, ni la destination des fonds"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/blockchain.md:1
+#, no-wrap
+msgid "[\"blockchain\", \"blockchains\"]"
+msgstr "[\"blockchain\", \"blockchains\", \"chaîne-de-blocs\", \"chaînes-de-blocs\", \"chaine-de-blocs\", \"chaines-de-blocs\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/blockchain.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/blockchain.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Les Bases"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/blockchain.md:11
+#
+msgid "A @blockchain is a distributed database that continuously grows with a record of all of the transactions that have occurred with a given cryptocurrency.  This database is often referred to as a ledger because the data contains a large list of transactions that have taken place.  In Monero, these transactions are packaged together into 'blocks' every 2 minutes (on average), and all miners and nodes on the network have copies of these blocks."
+msgstr "Une chaîne de @blocs est une base de données distribuée qui s'agrandit continuellement en enregistrant toutes les @transactions qui se sont produites pour une @cryptomonnaies donnée. Cette base de données est souvent considérée comme un registre car les données contiennent une longue liste de transactions qui ont eu lieu. Dans Monero, ces transactions sont regroupés ensemble dans des \"blocs\" toutes les 2 minutes (en moyenne), et tous les mineurs et nœuds du réseau disposent de copies de ces blocs."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/blockchain.md:12
+#, no-wrap
+msgid "Monero's @Blockchain"
+msgstr "Chaîne de blocs de Monero"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/blockchain.md:14
+#
+msgid "Unlike Bitcoin and other cryptocurrencies, transactions in the Monero @blockchain do not reveal where funds came from or went to, providing anonymity and making the currency completely @fungible. Additionally, the amounts of all transactions are hidden by @RingCT, a feature of Monero. For auditing or other transparency purposes a user can share a @view-key to prove they control certain amounts of Moneroj."
+msgstr "Contrairement à Bitcoin et aux autres @cryptomonnaies, les @transactions de la chaîne de blocs de Monero ne révèlent pas l'origine et la destination des fonds, fournissant un anonymat et rendant la @cryptomonnaie totalement @fongible. De plus, les montants de toutes les transaction sont masqués par les @transactions-confidentielles-de-cercle, une fonctionnalité de Monero. Pour de l'audit ou d'autres besoin de transparence, un utilisateur peut partager une @clef-d'audit pour prouver qu'il contrôle une certaine quantité de Moneroj."
