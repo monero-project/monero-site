@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-02 10:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/block.md:1
+#, no-wrap
+msgid "a container of transactions, a sequence of which forms a blockchain"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/block.md:1
+#, no-wrap
+msgid "[\"block\", \"blocks\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/block.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:11
+#
+msgid "A block is a container of @transactions, with a new block being added to the @blockchain once every 2 minutes (see constant `DIFFICULTY_TARGET_V2` defined as 120 seconds), on average."
+msgstr "区块是@交易的容器，平均每2分钟就有一个新的区块被添加到@区块链当中(请参见定义为120秒的常量 `DIFFICULTY_TARGET_V2` )。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:13
+#
+msgid "Blocks also contain a special type of transaction, the @coinbase-transaction, which add newly created Monero to the network."
+msgstr "区块还包含一种特殊类型的交易@coinbase交易，它会将新创建的门罗币添加到网络中。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:15
+#
+msgid "Blocks are created through the process of @mining, and the @node that successfully mines the block then broadcasts it to each of the @nodes connected to it, who subsequently re-broadcast the block until the entire Monero network has received it."
+msgstr "区块是通过@挖矿过程创建的，成功挖到区块的@节点，将它广播给连接到它的每个@节点们，每个@节点随后重新广播给连接它们的节点，直到整个门罗币网络接收到它。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:16
+#
+msgid "Fake or bad blocks generally cannot be created, as @nodes that receive blocks always verify the @transactions they contain against a set of consensus rules that all nodes adhere to, including validating the cryptographic @signatures on each transaction."
+msgstr "假区块或坏区块通常不能被创建，因为接收区块的@节点们总是根据一组所有节点都遵守的一致规则来验证它们包含的@交易，包括验证每个交易上的加密@签名。"

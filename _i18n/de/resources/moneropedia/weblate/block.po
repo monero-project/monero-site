@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-02 10:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/block.md:1
+#, no-wrap
+msgid "a container of transactions, a sequence of which forms a blockchain"
+msgstr "Eine Zusammenfassung von Transaktionen; eine Reihung dieser formt eine Blockchain"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/block.md:1
+#, no-wrap
+msgid "[\"block\", \"blocks\"]"
+msgstr "[\"block\", \"blocks\", \"Block\", \"Blöcke\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/block.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Grundlagen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:11
+#
+msgid "A block is a container of @transactions, with a new block being added to the @blockchain once every 2 minutes (see constant `DIFFICULTY_TARGET_V2` defined as 120 seconds), on average."
+msgstr "Ein Block enthält @Transaktionen (ein Block ist sozusagen eine Zusammenfassung ebendieser). Durchschnittlich wird alle zwei Minuten ein neuer Block zur @Blockchain hinzugefügt (siehe das konstant als 120 Sekunden definierte `DIFFICULTY_TARGET_V2`)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:13
+#
+msgid "Blocks also contain a special type of transaction, the @coinbase-transaction, which add newly created Monero to the network."
+msgstr "Blöcke enthalten zudem eine besondere Art von Transaktion: die @Coinbase-Transaktion, welche neu erschaffene Monero zum Netzwerk hinzufügt."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:15
+#
+msgid "Blocks are created through the process of @mining, and the @node that successfully mines the block then broadcasts it to each of the @nodes connected to it, who subsequently re-broadcast the block until the entire Monero network has received it."
+msgstr "Blöcke werden durch den Prozess des @Minings erschaffen. Der @Node, der einen Block erfolgreich geminet (\"geschürft\") hat, sendet diesen dann zu allen verbundenen @Nodes, welche den Block wiederum weitersenden, bis ihn das ganze Monero-Netzwerk empfangen hat."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/block.md:16
+#
+msgid "Fake or bad blocks generally cannot be created, as @nodes that receive blocks always verify the @transactions they contain against a set of consensus rules that all nodes adhere to, including validating the cryptographic @signatures on each transaction."
+msgstr "Falsche oder fehlerhafte, schlechte Blöcke können grundsätzlich nicht erstellt werden. @Nodes, welche Blöcke empfangen, verifizieren die in diesen enthaltenen @Transaktionen durch eine Reihe allgemeingültiger Regeln, die von allen Nodes eingehalten werden. Dazu gehört auch die Validierung der kryptografischen @Signaturen jeder einzelnen Transaktion."
