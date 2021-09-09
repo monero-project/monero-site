@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-06 10:59+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:1
+#, no-wrap
+msgid "a new kind of range proofs replacing RingCT in transactions to obfuscate the amounts sent"
+msgstr "Eine neue Art von 'Range-Proofs', welche Ring-CT in Transaktionen ersetzen, um die gesendeten Beträge zu verschleiern"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:1
+#, no-wrap
+msgid "[\"bulletproofs\", \"bulletproof\"]"
+msgstr ""
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:7
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Grundlagen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:10
+#, no-wrap
+msgid "@RingCT was introduced to obfuscate transaction amounts. One goal of @RingCT was to prove the sum of inputs - outputs in the @transaction was equal to 0, and all outputs were positive numbers.  \n"
+msgstr "@Ring-CT wurde und wird eingesetzt, um Transaktionsbeträge zu verschleiern. Ein Ziel von @Ring-CT ist es, nachzuweisen, dass der Endbetrag von Inputs zu Outputs gleich null ist, und alle Outputs positive Zahlen sind.  \n"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:11
+#, no-wrap
+msgid "To accomplish this, two kind of ring signatures were constructed: One ring signature for the whole transaction (to prove the sum is 0), and a set of ring signatures for the subsets of transaction bits (to prove the outputs are positive numbers), then combined together using originally Schnorr signatures (and later replaced by Borromean ring signature).  \n"
+msgstr "Um dies zu erreichen, werden zwei Arten von Ringsignaturen konstruiert: eine Ringsignatur für die gesamte Transaktion (um nachzuweisen, dass die Endsumme null ergibt) und eine Reihe von Ringsignaturen für die Teilmengen von Transaktionsstücken (um nachzuweisen, dass die Outputs positive Zahlen sind). Diese werden anschließend kombiniert (zu Beginn passierte das durch Schnorr-Signaturen, welche später von Borromäischen Ringsignaturen abgelöst wurden). \n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:13
+msgid "While it was doing the job, a big drawback was the huge size of such a ringCT transaction."
+msgstr "Während dies grundsätzlich funktioniert, gibt es einen großen Haken an der Sache: die immense Größe einer solchen Ring-CT-Transaktion."
+
+#
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:14
+#, no-wrap
+msgid "Where it comes to bulletproofs"
+msgstr "Wo Bulletproofs ins Spiel kommen"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:16
+#, no-wrap
+msgid "Back in 2017, a [Standford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
+msgstr "Im Jahr 2017 veröffentlichte die [Applied Crypto Group der Stanford University](https://crypto.stanford.edu/bulletproofs/) ein [Paper](https://eprint.iacr.org/2017/1066.pdf), in welchem sie eine neue Art von \"Range-Proofs\" vorstellte: sogenannte Bulletproofs. \n"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:19
+#, no-wrap
+msgid "> Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted setup.\n"
+msgstr "> Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted setup. \n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:20
+#, no-wrap
+msgid "Bulletproofs, unlike Borromean or Schnorr signatures, are very efficient as range proofs. Proving a big set of data only generates a small proof, and the size of this proofs grows logarithmically with the size of the data being proved.  \n"
+msgstr "Bulletproofs sind, im Gegensatz zu Borromäischen oder Schnorr-Signaturen, eine sehr effiziente Art von 'Range-Proofs'. Die Bereitstellung eines großen Datensatzes generiert lediglich einen kleinen Proof (Nachweis), und die Größe dessen wächst logarithmisch mit der Größe der überprüften/nachgewiesenen Daten. \n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:21
+#, no-wrap
+msgid "It means that increasing the number of outputs in a transaction will, with bulletproofs only slightly increase the size of the proof.  \n"
+msgstr "Die Nutzung von Bulletproofs bedeutet also, dass eine zunehmende Anzahl von Outputs die Größe des Proofs selbst nur leicht erhöht.  \n"
+
+#
+#
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:23
+msgid "Bulletproofs also have the advantage to allow to prove that multiple committed amounts are in the desired range at once. No need to prove each output to each destination in separate proofs; the whole transaction amounts could be proven in one bigger (but still very small) bulletproof."
+msgstr "Bulletproofs haben außerdem den Vorteil, dass sie es erlauben, nachzuweisen, dass sich mehrere überwiesene Beträge gleichzeitig im gewünschten Bereich befinden. Es gibt keinen Grund dazu, jeden einzelnen Output zu jedem Ziel in separaten Proofs zu überprüfen - die kompletten Transaktionsbeträge können in einem umfassenderen (und dennoch sehr kleinen) Bulletproof überprüft/nachgewiesen werden."
+
+#
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:24
+#, no-wrap
+msgid "Thorough audit process and implementation"
+msgstr "Ein umfassender Prüfungsablauf und Implementierung"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:26
+#, no-wrap
+msgid "As bulletproofs were really new, and the initial implementation made by the group, while thoroughly done, needed a rewrite focused on our specific use-case, implementing bulletproof in Monero was not a simple thing.  \n"
+msgstr "Bulletproofs waren ziemlich neu, und obwohl die ursprüngliche Implementierung durch die Gruppe sehr ausführlich und umfassend war, benötigte es eine Neufassung, die sich auf unseren speziellen Anwendungsfall bezog. Dies machte es nicht gerade einfach, Bulletproofs innerhalb Moneros zu implementieren.  \n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:27
+#, no-wrap
+msgid "The code has been written and rewritten to follow the new version of bulletproofs which was still being developed, but once this Monero implementation was finalized, the resulting deployment should be taken with extreme care.  \n"
+msgstr "Der Code wurde mehrfach umgeschrieben, um der (noch immer in Entwicklung befindlichen) neuen Version der Bulletproofs zu entsprechen. Nachdem die finale Umsetzung zum Abschluss gebracht wurde, durfte sie nur unter hoher Sorgfalt zum Einsatz kommen.  \n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:28
+#, no-wrap
+msgid "Therefore, the community started an auditing process. Researchers reached out to Benedikt Bünz, lead author of the Bulletproofs paper, and to [OSTIF](https://ostif.org/) an organization which helps open source technologies to improve and secure themselves.  \n"
+msgstr "Aus diesem Grund initiierte die Community einen Prüfungssprozess: Forscher traten in Kontakt mit Benedikt Bünz, dem leitenden Autor des Bulletproofs-Papers, und darüber hinaus mit [OSTIF](https://ostif.org/), einer Organisation, die Open-Source-Technologien dabei hilft, sich zu verbessern und abzusichern.  \n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:29
+#, no-wrap
+msgid "OSTIF directed the group to several organizations with the skills required to perform the audit. While one of them asked to be kept unnamed and was therefore put away from the process that needed to be public, two others (QuarksLab & Kudelski Security) were choosen to conduct the audit.  \n"
+msgstr "OSTIF verwies die Gruppe an etliche Organisationen, welche über die für die Überprüfung benötigten Kompetenzen verfügten. Während eine davon darum bat, nicht namentlich erwähnt zu werden und damit vom öffentlich stattfindenden Prozess ausgeschlossen werden musste, wurden zwei andere (QuarksLab und Kudelski Security) ausgewählt, um die Prüfung durchzuführen.  \n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:32
+msgid "Our 3 auditors were funded by the community to ensure that the implementation did not contain any critical bugs or exploits.  The final reports were released during the summer of 2018, with several useful corrections and fixes suggested, and the final bulletproof implementation has been added first to Monero Stagenet, and then to the main Monero network during the October 2018 network upgrade."
+msgstr "Unsere (schlussendlich drei) Prüfer wurden durch die Community finanziert und sollten testen, ob die Implementation der Bulletproofs kritische Bugs oder andere Probleme (wie Malware) enthielt.  Die abschließenden Berichte wurden im Sommer 2018 veröffentlicht und enthielten einige nützliche Anregungen zu Fehlerbehebungen und anderen Nachbesserungen. Die finale Bulletproof-Implementation ist zunächst zum Monero-Stagenet und während des Netzwerkupgrades im Oktober 2018 schließlich auch zum Hauptnetzwerk hinzugefügt worden."
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:34
+msgid "Since the bulletproofs deployment, the size of an average transaction has dropped by at least 80%, as well as the transaction fees."
+msgstr "Seit der Bereitstellung von Bulletproofs ist die Größe einer durchschnittlichen Transaktion um mindestens 80 Prozent gesunken; das Gleiche gilt für die Transaktionsgebühren."
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bulletproofs.md:35
+msgid "More explanations on Monero's implementation of bulletproofs could be found on youtube fondajo channel in a [conversation with Sarang Noether](https://www.youtube.com/watch?v=6lEWqIMLzUU)."
+msgstr "Weitere Erläuterungen zu Moneros Implementierung von Bulletproofs finden sich auf dem Youtube-Kanal der Monero Community Workgroup in einem [Gespräch mit Sarang Noether](https://www.youtube.com/watch?v=6lEWqIMLzUU)."
