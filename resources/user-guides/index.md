@@ -77,6 +77,7 @@ title: titles.userguides
                         <div class="col">
                             <h2>{% t user-guides.wallets %}</h2>
                             <p><a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md">{% t user-guides.guiguide %}</a></p>
+                            <p><a href="{{site.baseurl}}/resources/user-guides/change-restore-height.html">{% t user-guides.change-restore-height %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/verification-windows-beginner.html">{% t user-guides.verify-windows %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/monero-wallet-cli.html">{% t user-guides.cli-wallet %}</a></p>

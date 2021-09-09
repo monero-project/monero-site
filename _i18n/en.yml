@@ -662,6 +662,7 @@ user-guides:
   guiguide: Guide for the Monero GUI wallet
   tailsguide: How to use Monero on Tails
   make-payment: How to make a payment
+  change-restore-height: How to change the wallet restore height
   back: Back to the list
 
 roadmap:
