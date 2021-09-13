@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-13 10:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/clearnet.md:1
+#, no-wrap
+msgid "The Internet in which anonymous overlay networks are built upon"
+msgstr "Das Internet, auf welchem anonyme, überlagernde Netzwerke aufbauen"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/clearnet.md:1
+#, no-wrap
+msgid "[\"Clearnet\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/clearnet.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Grundlagen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:11
+#
+msgid "When you use the Internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:"
+msgstr "Wenn du das Internet für Dinge wie das Abrufen der Nachrichten, E-Mails, soziale Medien oder auch Monero nutzt, nutzt du sehr wahrscheinlich eine Clearnet-Verbindung. Dies bedeutet, dass deine *gesamten* Verbindungen aufgespürt, verfolgt und überwacht werden können, und das von:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:13
+#
+msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
+msgstr "- deinem [Internetprovider](https://de.wikipedia.org/wiki/Internetdienstanbieter)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:15
+#
+msgid "- the website/service/person you're communicating with"
+msgstr "- der Webseite/der Person/dem Service, mit der/dem du in Verbindung stehst"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:17
+#
+msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
+msgstr "- eventuell einer mit den Möglichkeiten der [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) befähigten Instanz"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:19
+#
+msgid "and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (which *encrypts* your transmission), your route is not hidden nor is it anonymous, thus; it is in the *clear*."
+msgstr "Selbst wenn du [HTTPS](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure) oder Ähnliches nutzt, sind die übertragenen Inhalte zwar verschlüsselt (vor dem \"Abhören\" durch Dritte geschützt), jedoch ist die Verbindung weder verborgen, noch anonym (Dritte können feststellen, dass die Verbindung existiert und zwischen wem). Daher werden auch HTTPs und ähnliche Technologien dem Clearnet zugeordnet."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/clearnet.md:20
+#, no-wrap
+msgid "In-depth information"
+msgstr "Ausführliche Informationen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:23
+#
+msgid "Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:"
+msgstr "Da dich ein klassisches [VPN](https://de.wikipedia.org/wiki/Virtual_Private_Network) nicht vor dem Clearnet schützen kann - du nutzt schließlich nach wie vor das *Clearnet* (wobei deine Daten zumindest besser umgeleitet werden, als ohne die Verwendung eines VPNs) - solltest du ein sogenanntes Overlay-Netzwerk, also ein anonymes, überlagerndes Netzwerk nutzen, um den direkten Gebrauch des Clearnets zu vermeiden:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:25
+#
+msgid "- Java-I2P"
+msgstr "- Java-I2P"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:27
+#
+msgid "- [Tor](https://torproject.org/)"
+msgstr "- [Tor](https://torproject.org/de/)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:29
+#
+msgid "These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous."
+msgstr "Diese Technologien schützen dich vor dem Clearnet, indem sie ein anonymes Netz **über** ebendiesem errichten und deine Verbindungen somit verschlüsselt **und** anonym bleiben."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:30
+#
+msgid "Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to I2P in terms of anonymity with the exception that your traffic never need to leave the I2P network"
+msgstr "Ein [interaktives Diagramm](https://www.eff.org/pages/tor-and-https) des [EFF](https://www.eff.org/) zeigt den Zusammenhang des *Clearnets* und **Tor**. Dieses Konzept trifft in puncto Anonymität (in gewisser Hinsicht) auch auf @Kovri und I2P zu, mit der Ausnahme, dass dein Datenverkehr niemals das I2P-Netzwerk verlassen muss"

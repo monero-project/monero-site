@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-13 10:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/clearnet.md:1
+#, no-wrap
+msgid "The Internet in which anonymous overlay networks are built upon"
+msgstr "Internettet som anonyme overleggsnettverk er bygget på"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/clearnet.md:1
+#, no-wrap
+msgid "[\"Clearnet\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/clearnet.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Det grunnleggende"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:11
+#
+msgid "When you use the Internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:"
+msgstr "Når du bruker internettet for ting som nyheter, e-post, sosiale medier og til og med Monero, bruker du sannsynligvis en clearnet-tilkobling. Dette betyr at *alle* tilkoblingene dine kan spores og overvåkes av:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:13
+#
+msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
+msgstr "- din [ISP](https://en.wikipedia.org/wiki/ISP)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:15
+#
+msgid "- the website/service/person you're communicating with"
+msgstr "- nettsiden/tjenesten/personen du kommuniserer med"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:17
+#
+msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
+msgstr "- muligens en [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes)-kapabel enhet"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:19
+#
+msgid "and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (which *encrypts* your transmission), your route is not hidden nor is it anonymous, thus; it is in the *clear*."
+msgstr "Og selv om du bruker [HTTPS](https://en.wikipedia.org/wiki/HTTPS) eller liknende (som *krypterer* overføringen din), er ruten din verken skjult eller anonym. Den er altså «in the *clear*» (skjult og utenfor fare)."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/clearnet.md:20
+#, no-wrap
+msgid "In-depth information"
+msgstr "Inngående informasjon"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:23
+#
+msgid "Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:"
+msgstr "Fordi en tradisjonell [VPN](https://en.wikipedia.org/wiki/VPN) ikke kan redde deg fra clearnet (i og med at du fremdeles bruker *clearnet* (selv om du er mer sikret enn uten en VPN)), bør du bruke et *anonymt overleggsnettverk* for å unngå å bruke clearnet direkte:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:25
+#
+msgid "- Java-I2P"
+msgstr "- Java-I2P"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:27
+#
+msgid "- [Tor](https://torproject.org/)"
+msgstr "- [Tor](https://torproject.org/)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:29
+#
+msgid "These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous."
+msgstr "Disse teknologiene beskytter deg fra clearnet ved å bygge et anonymt nettverk **over** clearnet med hensikt å holde overføringene dine både krypterte **og** anonyme."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:30
+#
+msgid "Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to I2P in terms of anonymity with the exception that your traffic never need to leave the I2P network"
+msgstr "Her er et nøyaktig, [interaktivt diagram](https://www.eff.org/pages/tor-and-https) gitt av [EFF](https://www.eff.org/) som beskriver *clearnet* i sammenheng med **Tor**. Konseptet gjelder også (til en viss grad) for @Kovri og @I2P hva gjelder anonymitet, med unntaket av at trafikken din trenger aldri å forlate @I2P-nettverket"
