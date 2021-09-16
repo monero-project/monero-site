@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-16 12:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:1
+#, no-wrap
+msgid "a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank"
+msgstr "Цифровая валюта, использующая технологии шифрования для регулировки генерирования единиц валюты и верификации перевода средств. Как правило, не зависит от центрального банка"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:1
+#, no-wrap
+msgid "[\"cryptocurrency\", \"cryptocurrencies\", \"altcoin\", \"altcoins\"]"
+msgstr "[\"cryptocurrency\", \"cryptocurrencies\", \"altcoin\", \"altcoins\", \"криптовалюты\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:11
+#
+msgid "A digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank."
+msgstr "Цифровая валюта, использующая технологии шифрования для регулировки генерирования единиц валюты и верификации перевода средств. Как правило, не зависит от центрального банка."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:12
+#, no-wrap
+msgid "More Information"
+msgstr "Дополнительная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:15
+#
+msgid "Cryptocurrency is the generic term for a large set of digital assets that use encryption techniques to generate units of currency, verify the transactions, and transfer value. Generally, cryptocurrencies are considered to be decentralized. Cryptocurrency should not be confused with virtual currency which is a type of digital money that is usually controlled by its creators or developers. Some examples of virtual currency are gametime in World of Warcraft, ROBUX in Roblox, reward points programs, or Ripple, all of which can be exchanged for currency or cash value, but are not considered cryptocurrency because they are centalized and controlled/issued by a single entity."
+msgstr "Криптовалюта — это общий термин, который применяется в отношении большого количества цифровых активов, использующих технологии шифрования для генерирования единиц валюты, верификации транзакций и передачи ценностей. В целом криптовалюты считаются децентрализованными. Криптовалюту не следует путать с виртуальной валютой, которая является разновидностью цифровых денег и обычно контролируется её создателями и разработчиками. Вот несколько примеров виртуальной валюты: gametime в World of Warcraft, ROBUX в Roblox, программы начисления бонусных баллов или Ripple. Все эти валюты можно обменять на реальную валюту или ценности, но их нельзя считать криптовалютами, поскольку они централизованы и / или контролируются одной организацией."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:17
+#
+msgid "Monero is one of many cryptocurrencies currently available. Other examples are Bitcoin, Litecoin, Dogecoin, Dash, Zcash, etc, but nearly all other cryptocurrencies lack features that make them a true money (most importantly @fungibility which is a requirement for it to be a store-of-value)."
+msgstr "Monero является одной из многих криптовалют, существующих на данный момент, среди которых Bitcoin, Litecoin, Dogecoin, Dash, Zcash и т д. Но практически все другие криптовалюты не обладают свойствами, которые позволили бы называть их настоящими деньгами (в том числе и наиболее важным - @взаимозаменяемостью, которое является обязательным требованием для любого средства сохранения стоимости)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:19
+#
+msgid "Not all cryptocurrencies operate the same, but they usually share the properties of decentralization, encryption, and the ability to send and receive transactions. Most are irreversible, pseudonymous, global, and permissionless. Most aim to be a store-of-value or be digital cash that allows you to transact."
+msgstr "Не все валюты работают одинаково, но, как правило, они обладают общими свойствами децентрализации, шифрования, а также обеспечивают возможность организации и приёма транзакций. Большинство из них выпускается под псевдонимом, является безвозвратным, глобальным и не требующим специальных разрешений. Большинство криптовалют задумано как средство сохранения стоимости или цифровая наличность, которая позволит совершать транзакции."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:21
+#
+msgid "Most cryptocurrencies (including Monero) use a distributed ledger (called a @blockchain) to keep track of previous transactions. The blockchain serves to tell other users on the network that transactions have happened. There are many different ways for cryptocurrencies to create their blockchain, and not all are the same. Monero uses proof-of-work to craft blocks, where other cryptocurrencies may use proof-of-stake or other consolidated methods."
+msgstr "Большинство криптовалют (включая Monero) использует распределённый журнал (называемый @блoкчейном), чтобы отслеживать предшествующие транзакции. Блокчейн нужен для того, чтобы другие пользователи сети знали о том, что была совершена транзакция. Криптовалюты создают свои блокчейны различными, часто совершенно непохожими способами. Monero для создания блоков использует доказательство работы (proof-of-work), в то время как другие криптовалюты могут использовать доказательство ставки (proof-of-stake) или другие консолидированные методы."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:22
+#
+msgid "Ultimately, cryptocurrency is an attempt to create trustless value; that is free from borders, governments, and banks. Whether that be to transact or to be digital gold is up to the users of each."
+msgstr "В конечном счёте криптовалюта является попыткой создать ценность, не требующую доверия, то есть не зависящую от границ, правительств и банков. Будет ли это компромиссное решение или цифровое золото — решать пользователям."

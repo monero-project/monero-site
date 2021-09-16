@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-16 12:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:1
+#, no-wrap
+msgid "a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank"
+msgstr "一种数字货币，使用加密技术来规范货币单位的产生和验证资金的转移，通常独立于中央银行进行操作"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:1
+#, no-wrap
+msgid "[\"cryptocurrency\", \"cryptocurrencies\", \"altcoin\", \"altcoins\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:11
+#
+msgid "A digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank."
+msgstr "一种数字货币，使用加密技术来规范货币单位的产生和验证资金的转移，通常独立于中央银行进行操作。"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:12
+#, no-wrap
+msgid "More Information"
+msgstr "深度信息"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:15
+#
+msgid "Cryptocurrency is the generic term for a large set of digital assets that use encryption techniques to generate units of currency, verify the transactions, and transfer value. Generally, cryptocurrencies are considered to be decentralized. Cryptocurrency should not be confused with virtual currency which is a type of digital money that is usually controlled by its creators or developers. Some examples of virtual currency are gametime in World of Warcraft, ROBUX in Roblox, reward points programs, or Ripple, all of which can be exchanged for currency or cash value, but are not considered cryptocurrency because they are centalized and controlled/issued by a single entity."
+msgstr "加密货币是一大组数字资产的通用术语，这些资产使用加密技术生成货币单位、验证交易和传输价值。一般来说，加密货币被认为是去中心化的。加密货币不应该与虚拟货币混淆，虚拟货币是一种通常由其创造者或开发者控制的数字货币。虚拟货币的一些例子是《魔兽世界》中的游戏时间、《Roblox》中的ROBUX、奖励积分计划或瑞波币，所有这些都可以兑换成货币或现金价值，但不被视为加密货币，因为它们是中心化的，并由一个实体控制/发行的。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:17
+#
+msgid "Monero is one of many cryptocurrencies currently available. Other examples are Bitcoin, Litecoin, Dogecoin, Dash, Zcash, etc, but nearly all other cryptocurrencies lack features that make them a true money (most importantly @fungibility which is a requirement for it to be a store-of-value)."
+msgstr "门罗币是目前存在的许多加密货币之一。其他例子还有比特币、莱特币、狗狗币、达世币、大零币等，但几乎所有其他加密货币都缺乏使它们成为真正货币的特性（最重要的特性：@可替换性，这是它成为价值存储的必要条件）。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:19
+#
+msgid "Not all cryptocurrencies operate the same, but they usually share the properties of decentralization, encryption, and the ability to send and receive transactions. Most are irreversible, pseudonymous, global, and permissionless. Most aim to be a store-of-value or be digital cash that allows you to transact."
+msgstr "并非所有加密货币的运作机理都相同，但它们通常具有去中心化、加密以及发送和接收交易的能力。大多具备不可逆转的、假名化的、全球性的、不需要许可的特性。大多目标是实现价值储存或成为允许交易的数字化现金。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:21
+#
+msgid "Most cryptocurrencies (including Monero) use a distributed ledger (called a @blockchain) to keep track of previous transactions. The blockchain serves to tell other users on the network that transactions have happened. There are many different ways for cryptocurrencies to create their blockchain, and not all are the same. Monero uses proof-of-work to craft blocks, where other cryptocurrencies may use proof-of-stake or other consolidated methods."
+msgstr "大多数加密货币（包括门罗币）使用分布式账簿（称为@区块链）来追溯以前的交易。区块链服务器告诉网络上的其他用户发生的交易。加密货币创建区块链有许多不同的方法，但并非所有方法都相同。门罗币使用工作量证明来生成区块，一些其他加密货币使用权益证明或其他合并方法。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/cryptocurrency.md:22
+#
+msgid "Ultimately, cryptocurrency is an attempt to create trustless value; that is free from borders, governments, and banks. Whether that be to transact or to be digital gold is up to the users of each."
+msgstr "从根本上说，加密货币是一种创造去信任（无需基于信任）价值的尝试;它不受国界、政府和银行的限制。无论是交易还是当成数字黄金，都取决于每一个用户。"
