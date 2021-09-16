@@ -1,21 +1,47 @@
 ---
-terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins", "kryptovaluta", "kryptovalutaer", "altcoin", "altcoins"]
-summary: "en digital valuta som bruker krypteringsteknikker for å regulere genereringen av valutaenheter og verifisere overføringen av midler, som vanligvis opererer uavhengig av en sentralbank"
+summary: 'a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank'
+terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins"]
 ---
 
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
-### Det grunnleggende
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-En digital valuta som bruker krypteringsteknikker for å regulere genereringen av valutaenheter og verifisere overføringen av midler, som vanligvis opererer uavhengig av en sentralbank.
+### The Basics
 
-### Mer informasjon
+A digital currency in which encryption techniques are used to regulate the
+generation of units of currency and verify the transfer of funds, usually
+operating independently of a central bank.
 
-Kryptovaluta er et generisk begrep for et stort sett med digitale eiendeler som bruker krypteringsteknikker for å generere valutaenheter, verifisere transaksjoner og overføre verdi. Kryptovalutaer betraktes generelt som å være desentraliserte og bør ikke forveksles med virtuell valuta som er en form for digitale penger som vanligvis kontrolleres av sine skapere eller utviklere. Noen eksempler på virtuell valuta er gametime i World of Warcraft, ROBUX i Roblox, bonuspoengprogram eller Ripple, der alle kan veksles inn mot valuta eller kontanter, men ikke betraktes som kryptovaluta fordi de er sentraliserte og kontrollert/utstedet av en enkel entitet.
+### More Information
 
-Monero er én av mange kryptovalutaer som er tilgjengelig. Andre eksempler er Bitcoin, Litecoin, Dogecoin, Dash, Zcash, osv, men nesten alle andre kryptovaluta mangler funksjoner som gjør dem til ekte penger (og viktigst av alt @fungibilitet, som er et krav for at det kan kalles for et verdioppbevaringsmiddel).
+Cryptocurrency is the generic term for a large set of digital assets that
+use encryption techniques to generate units of currency, verify the
+transactions, and transfer value. Generally, cryptocurrencies are considered
+to be decentralized. Cryptocurrency should not be confused with virtual
+currency which is a type of digital money that is usually controlled by its
+creators or developers. Some examples of virtual currency are gametime in
+World of Warcraft, ROBUX in Roblox, reward points programs, or Ripple, all
+of which can be exchanged for currency or cash value, but are not considered
+cryptocurrency because they are centalized and controlled/issued by a single
+entity.
 
-Ikke alle kryptovalutaer opererer på samme måte, men de deler vanligvis de samme egenskapene om desentralisering, kryptering og evnen til å sende og motta transaksjoner. De fleste er irreversible, pseudonyme, globale og tillatelsesfrie. De fleste har som mål å være et verdioppbevaringsmiddel eller digitale penger som man kan foreta transaksjoner med.
+Monero is one of many cryptocurrencies currently available. Other examples
+are Bitcoin, Litecoin, Dogecoin, Dash, Zcash, etc, but nearly all other
+cryptocurrencies lack features that make them a true money (most importantly
+@fungibility which is a requirement for it to be a store-of-value).
 
-De fleste kryptovalutaer (inkludert Monero) bruker en distribuert hovedbok (kalt en @blokkjede) for å holde oversikt over tidligere transakjoner. Blokkjeden forteller andre brukere på nettverket om transaksjoner som har funnet sted. Det finnes mange forskjellige måter som kryptovalutaer kan opprette sine egne blokkjeder på, og ikke alle er like. Monero bruker «proof-of-work» for å lage blokker, mens andre kryptovalutaer kan bruke «proof-of-stake» eller andre konsoliderte metoder.
+Not all cryptocurrencies operate the same, but they usually share the
+properties of decentralization, encryption, and the ability to send and
+receive transactions. Most are irreversible, pseudonymous, global, and
+permissionless. Most aim to be a store-of-value or be digital cash that
+allows you to transact.
 
-Kryptovaluta er til syvende og sist et forsøk på å opprette pålitelig verdi som er fri fra landegrenser, myndigheter og banker. Enten det er å foreta transaksjoner eller å fungere som digitalt gull, er opp til hver enkelt bruker.
+Most cryptocurrencies (including Monero) use a distributed ledger (called a
+@blockchain) to keep track of previous transactions. The blockchain serves
+to tell other users on the network that transactions have happened. There
+are many different ways for cryptocurrencies to create their blockchain, and
+not all are the same. Monero uses proof-of-work to craft blocks, where other
+cryptocurrencies may use proof-of-stake or other consolidated methods.
+
+Ultimately, cryptocurrency is an attempt to create trustless value; that is
+free from borders, governments, and banks. Whether that be to transact or to
+be digital gold is up to the users of each.
