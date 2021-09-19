@@ -1,14 +1,19 @@
 ---
-terms: ["denominations", "subunits", "tacoshi", "piconero", "nanonero", "micronero", "millinero", "centinero", "decinero","decanero","hectonero","kilonero","meganero","giganero", "dénominations", "coupures", "sous-unités"]
 summary: "Une dénomination ou coupure est une description exacte d'un montant d'une monnaie. Il s'agit souvent d'une sous-unité de la monnaie. Par exemple, traditionnellement, un centime est 1/100ème d'une unité de monnaie précise."
+terms: ["denominations", "subunits", "tacoshi", "piconero", "nanonero", "micronero", "millinero", "centinero", "decinero","decanero","hectonero","kilonero","meganero","giganero", "dénominations", "coupures", "sous-unités"]
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### The Basics
 
-Une dénomination ou coupure est une description exacte d'un montant d'une monnaie. Il s'agit souvent d'une sous-unité de la monnaie. Par exemple, traditionnellement, un centime est 1/100ème d'une unité de monnaie précise.
+Une dénomination ou coupure est une description exacte d'un montant d'une
+monnaie. Il s'agit souvent d'une sous-unité de la monnaie. Par exemple,
+traditionnellement, un centime est 1/100ème d'une unité de monnaie précise.
 
-Les noms des coupures de Monero ajoutent le préfixe SI après suppression du "mo" initial pour simplifier l'utilisation. Actuellement, la plus petite unité de Monero est 1 piconero (0.000000000001 XMR).
+Les noms des coupures de Monero ajoutent le préfixe SI après suppression du
+"mo" initial pour simplifier l'utilisation. Actuellement, la plus petite
+unité de Monero est 1 piconero (0.000000000001 XMR).
 
 ### Coupures de Monero
 
@@ -32,8 +37,17 @@ Les noms des coupures de Monero ajoutent le préfixe SI après suppression du "m
 
 ### Informations détaillées
 
-Le support des entrées utilisant le préfixe SI à [été ajouté au code de Monero](https://github.com/monero-project/monero/pull/1826) le 3 Mars 2017 par [Moneromooo](https://github.com/moneromooo-monero). La plus petite unité de Monero (10^-12 XMR) était initialement appelée un tacoshi en l'honeur de l'utilisateur [Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270), un contributeur de Monero de la première heure et fut plus tard renommé pour simplicité d'usage et uniformité.
+Le support des entrées utilisant le préfixe SI à [été ajouté au code de
+Monero](https://github.com/monero-project/monero/pull/1826) le 3 Mars 2017
+par [Moneromooo](https://github.com/moneromooo-monero). La plus petite unité
+de Monero (10^-12 XMR) était initialement appelée un tacoshi en l'honeur de
+l'utilisateur
+[Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270), un
+contributeur de Monero de la première heure et fut plus tard renommé pour
+simplicité d'usage et uniformité.
 
 ### Implementation dans monerod
 
-La plus petite fraction d'un Monero dans l'actuelle implémentation de monerod est également connu sous le nom d'@unité-atomique, qui est actuellement un piconero.
+La plus petite fraction d'un Monero dans l'actuelle implémentation de
+monerod est également connu sous le nom d'@unité-atomique, qui est
+actuellement un piconero.
