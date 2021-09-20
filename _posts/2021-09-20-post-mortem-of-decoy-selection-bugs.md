@@ -6,6 +6,8 @@ tags:  [core, crypto, dev, community]
 author: Justin Berman (j-berman)
 ---
 
+{% t global.lang_tag %}
+
 When constructing a new @transaction, a Monero wallet references a past output a user received in a prior transaction, and uses it as an input to the new transaction. Today, the wallet mixes this output with a set of 10 decoy outputs selected from other people's transactions from across the blockchain (@ring-signature). Thus, an observer cannot tell which among the 11 total outputs is the real one a user spends in a transaction, obfuscating the link from the user's new transaction to their prior transaction. The decoy selection algorithm specifically handles the selection process for choosing which decoys to mix real outputs with when constructing a transaction.
 
 Between Monero versions v0.14.1.0 and v0.17.2.2, the core wallet code had two bugs in the decoy selection algorithm that impacted Monero users' privacy:
