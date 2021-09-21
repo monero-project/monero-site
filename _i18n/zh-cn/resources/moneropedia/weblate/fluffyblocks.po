@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-21 13:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:1
+#, no-wrap
+msgid "a way of saving bandwidth when sending new blocks around the network"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:1
+#, no-wrap
+msgid "[\"fluffy blocks\", \"fluffyblocks\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:15
+#
+msgid "A @block is made up of a header and @transactions. Fluffy Blocks only contain a header, a list of transaction indices, and any transactions that the node recieving the block may be missing. This saves bandwidth because nodes might already know about most or all of the transactions in the block and they don't need to be sent them again."
+msgstr "@区块由区块头和@交易组成。蓬松区块只包含一个区块头、一个交易索引列表以及接收该块的节点可能丢失的任何交易。这节省了带宽，因为节点可能已经知道区块中的大部分或所有交易，并且不需要再次发送它们。"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:16
+#, no-wrap
+msgid "See Also"
+msgstr "另请参阅"
+
+#. type: Bullet: '* '
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:19
+#
+msgid "[BIP152 \"Compact Block Relay\"](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki)"
+msgstr "[BIP152 “紧密区块传播”](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki)"
+
+#. type: Bullet: '* '
+#: ../_i18n/en/resources/moneropedia/fluffyblocks.md:20
+#
+msgid "[Xthin](https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/release/doc/bu-xthin-protocol.md)"
+msgstr "[Xthin](https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/release/doc/bu-xthin-protocol.md)"
