@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-23 15:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:1
+#, no-wrap
+msgid "A host defined by you and resolved only by you"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:1
+#, no-wrap
+msgid "[\"Locally-unique-host\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:11
+#
+msgid "A locally-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) defined by **you** and resolved only by you; similar to how a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) is implemented. Not to be confused with @canonically-unique-host."
+msgstr "本地唯一主机是由**您**定义并仅由您解析的[完全限定域名](https://en.wikipedia.org/wiki/FQDN); 类似一个[域名解析文件](https://en.wikipedia.org/wiki/Hosts_(file))是如何执行的。不要与@标准唯一主机混淆。"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:12
+#, no-wrap
+msgid "In-depth information"
+msgstr "深度信息"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:15
+#
+msgid "You have the option to share your interpretation of how the host is resolved (e.g., `localhost` always resolves to `127.0.0.1`) but the resolution is not canonically enforced (e.g., someone else can map `localhost` to any arbitrary IP address)."
+msgstr "您可以选择共享您对主机解析方式的诠释（例如，“本地主机”总是解析为“127.0.0.1”），但是解析被不正规的执行（例如，其他人可以将“本地主机”映射到任意IP地址）。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:17
+#
+msgid "Hosts in a public subscription can be considered @canonically-unique-host's within the I2P network but, ultimately, you are free to re-define them as you wish."
+msgstr "在I2P网络中，公共订阅中的主机可以被认为是@标准唯一主机，但最终，您可以自由地重新定义它们。"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:18
+#, no-wrap
+msgid "Notes"
+msgstr "备注"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:21
+#
+msgid "- Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution."
+msgstr "- 门罗币主要使用@标准唯一主机解析，而I2P只使用@本地唯一主机解析。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/locally-unique-host.md:22
+#
+msgid "- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
+msgstr "- I2P和@Kovri的自定义顶级域名当前为 `.i2p` ，@Kovri只打算处理/使用 `.i2p` [顶级域名](https://en.wikipedia.org/wiki/Top_level_domain)"
