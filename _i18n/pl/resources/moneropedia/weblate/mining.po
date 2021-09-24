@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-24 13:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/mining.md:1
+#, no-wrap
+msgid "the process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain"
+msgstr "Proces kryptograficznego obliczania matematycznego dowodu do bloku zawierającego wiele transakcji, który następnie jest dodawany do łańcucha bloków"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/mining.md:1
+#, no-wrap
+msgid "[\"mining\", \"miner\", \"miners\"]"
+msgstr "[\"mining\", \"miner\", \"miners\", \"wydobycie\", \"wydobywanie\", \"wydobywania\", \"wydobycia\", \"górnik\", \"górnicy\", \"górnika\", \"górnikowi\", \"górnikom\", \"górnikami\", \"górników\", \"wydobyciem\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mining.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/mining.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Podstawy"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mining.md:11
+#
+msgid "The process of cryptographically computing a mathematical proof for a block, containing a number of transactions, which is then added to the blockchain."
+msgstr "Proces kryptograficznego obliczania matematycznego dowodu do bloku zawierającego wiele transakcji, który następnie jest dodawany do łańcucha bloków."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mining.md:13
+#
+msgid "Mining is the distributed process of confirming transactions on the public ledger of all transactions, aka @blockchain.  Monero nodes use the blockchain to distinguish legitimate transactions from attempts to re-spend coins that have already been spent elsewhere."
+msgstr "Wydobycie jest rozproszonym procesem potwierdzania transakcji w publicznej zapisie wszystkich transakcji, zwanym @łańcuchem-bloków. Węzły Monero używają łańcucha bloków, aby rozróżnić prawowite transakcje od prób ponownego wydania monet, które już raz zostały wydane."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mining.md:15
+#
+msgid "Monero is powered strictly by Proof of Work. It employs a mining algorithm that has the potential to be efficiently tasked to billions of existing devices (any modern x86 CPU and many GPUs). Monero uses a variant of CryptoNight Proof of Work (PoW) algorithm, which is designed for use in ordinary CPUs and GPUs."
+msgstr "Monero napędzane jest ściśle przez Dowód Pracy. Wykorzystuje on algorytm wydobycia, który potencjalnie może zostać skutecznie przypisany miliardom istniejących urządzeń (wszystkim nowoczesnym CPU x86 i wielu GPU). Monero korzysta z algorytmu dowodu pracy CryptoNight, który został zaprojektowany do użycia na zwykłych CPU i GPU."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mining.md:16
+#
+msgid "The smart mining feature allows transparent CPU mining on the user's computer, far from the de facto centralization of mining farms and pool mining, pursuing Satoshi Nakamoto's original vision of a true P2P currency."
+msgstr "Inteligentna funkcja wydobywania pozwala na transparentne wydobycie na komputerze użytkownika, z dala od centralizacji farm wydobywczych oraz stowarzyszeń wydobywczych, dążąc do oryginalnej wizji Satoshi Nakamoto o prawdziwej walucie peer-to-peer."
