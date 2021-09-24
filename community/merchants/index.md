@@ -99,6 +99,7 @@ permalink: /community/merchants/index.html
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
+            <li><a href="https://swapswop.oi/">SwapSwop</a></li>
             <li><a href="https://sideshift.ai/">Sideshift.ai</a></li>
             <li><a href="https://www.morphtoken.com/">Morphtoken</a></li>
             <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
