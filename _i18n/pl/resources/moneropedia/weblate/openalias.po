@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-28 09:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/openalias.md:1
+#, no-wrap
+msgid "a standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org"
+msgstr "Standard pozwalający na korzystanie z adresu e-mail lub domeny internetowej, np. donate@getmonero.org lub donate.getmonero.org, w celu płatności, zamiast adresu numerycznego"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/openalias.md:1
+#, no-wrap
+msgid "[\"OpenAlias\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/openalias.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/openalias.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Podstawy"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/openalias.md:11
+#
+msgid "The Monero Core Team released a standard called OpenAlias which permits much more human-readable addresses and \"squares\" the Zooko's triangle. OpenAlias can be used for any cryptocurrency and is already implemented in Monero, Bitcoin (in latest Electrum versions) and HyperStake."
+msgstr "Centralny Zespół Monero uruchomił standard zwany OpenAlias, który pozwala na korzystanie z adresów znacznie łatwiejszych do odczytu, rówmocześnie zapewnieniając decentralizację i bezpieczeństwo (Zooko's triangle). OpenAlias może być użyty w każdej kryptowalucie i jest już wdrożony do Monero, Bitcoina (w najnowszej wersji Electrum) i HyperStake."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/openalias.md:13
+#
+msgid "OpenAlias seeks to provide a way to simplify aliasing amidst a rapidly shifting technology climate. Users are trying to cross the bridge to private and cryptographically secure infrastructure and systems, but many of them have just barely started remembering the email addresses of their friends and family."
+msgstr "Celem OpenAlias jest ułatwienie tworzenia aliasów pośród szybko zmieniającego się klimatu technologicznego. Użytkownicy próbują przekroczyć barierę prywatnych i kryptograficznie bezpiecznych infrastruktur i systemów, jednak wielu z nich ciągle ma problem z zapamiętaniem adresów e-mail swoich znajomych."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/openalias.md:15
+#, no-wrap
+msgid "As part of the ongoing development of the Monero cryptocurrency project, we asked ourselves: how can we simplify payments for users unfamiliar with cryptocurrency? Monero stealth addresses are at least 95 characters long - memorizing them is not an option, and asking someone to send a payment to <95-character-string> is only going to lead to confusion.\n"
+msgstr "W ramach ciągle rozwijanego projektu Monero, zadaliśmy sobie pytanie, jak możemy ułatwić sposób płatności użytkownikom nieobeznanym z kryptowalutami. Jednorazowe adresy Monero składają się z co najmniej 95 znaków - niemożliwe jest ich zapamiętanie, a poproszenie kogoś o przesłanie pieniędzy na 95-znakowy ciąg tylko spowoduje zamieszanie.\n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/openalias.md:17
+#
+msgid "At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralized and decentralized domain systems."
+msgstr "Zasadniczo OpenAlias jest zapisem TXT DNS w Pełnej, Jednoznacznej Nazwie Domenowej. Po połączeniu go z technologiami związanymi z systemem nazw domenowych, stowrzyliśmy standard aliasowania, który służy deweloperom i jest intuicyjny oraz współpracuje zarówno z scentralizowanymi, jak i zdecentralizowanymi systemami domen."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/openalias.md:19
+#
+msgid "A standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org."
+msgstr "Standard pozwalający na korzystanie z adresu e-mail lub domeny internetowej, np. donate@getmonero.org lub donate.getmonero.org, w celu płatności, zamiast adresu numerycznego."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/openalias.md:20
+#
+msgid "More information can be found on the [OpenAlias website](https://openalias.org)"
+msgstr "Więcej informacji znajdziesz w artykule na temat [stronie OpenAlias](https://openalias.org)."
