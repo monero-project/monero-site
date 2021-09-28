@@ -4,6 +4,7 @@ summary: "a standard that allows you to use an email or domain syntax to pay som
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 The Monero Core Team released a standard called OpenAlias which permits much more human-readable addresses and "squares" the Zooko's triangle. OpenAlias can be used for any cryptocurrency and is already implemented in Monero, Bitcoin (in latest Electrum versions) and HyperStake.
