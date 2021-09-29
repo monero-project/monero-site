@@ -4,13 +4,14 @@ summary: "a digital currency in which encryption techniques are used to regulate
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 A digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank.
 
 ### More Information
 
-Cryptocurrency is the generic term for a large set of digital assets that use encryption techniques to generate units of currency, verify the transactions, and transfer value. Generally, cryptocurrencies are considered to be decentralized. Cryptocurrency should not be confused with virtual currency which is a type of digital money that is usually controlled by its creators or developers. Some examples of virtual currency are gametime in World of Warcraft, ROBUX in Roblox, reward points programs, or Ripple, all of which can be exchanged for currency or cash value, but are not considered cryptocurrency because they are centalized and controlled/issued by a single entity.  
+Cryptocurrency is the generic term for a large set of digital assets that use encryption techniques to generate units of currency, verify the transactions, and transfer value. Generally, cryptocurrencies are considered to be decentralized. Cryptocurrency should not be confused with virtual currency which is a type of digital money that is usually controlled by its creators or developers. Some examples of virtual currency are gametime in World of Warcraft, ROBUX in Roblox, reward points programs, or Ripple, all of which can be exchanged for currency or cash value, but are not considered cryptocurrency because they are centalized and controlled/issued by a single entity.
 
 Monero is one of many cryptocurrencies currently available. Other examples are Bitcoin, Litecoin, Dogecoin, Dash, Zcash, etc, but nearly all other cryptocurrencies lack features that make them a true money (most importantly @fungibility which is a requirement for it to be a store-of-value).
 
