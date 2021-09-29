@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-14 10:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/coinbase.md:1
+#, no-wrap
+msgid "a special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work"
+msgstr "每个区块中包含的一种特殊类型的交易，其中包含少量的门罗币，作为对矿工挖矿工作的奖励发送给他们"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/coinbase.md:1
+#, no-wrap
+msgid "[\"coinbase-transaction\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/coinbase.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/coinbase.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/coinbase.md:10
+#
+msgid "A special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work."
+msgstr "每个区块中包含的一种特殊类型的交易，其中包含少量的门罗币，作为对矿工挖矿工作的奖励发送给他们。"
