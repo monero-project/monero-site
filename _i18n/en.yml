@@ -971,6 +971,7 @@ tools:
   moneropro: Charts and metrics
   monerologs: Archive of Monero IRC channels
   monerobase: Archive of some older meeting logs
+  gateways: Payment Gateways
 
 blog:
   allposts: All Posts
