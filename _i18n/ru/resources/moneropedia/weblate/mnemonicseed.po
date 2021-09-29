@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-25 15:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:1
+#, no-wrap
+msgid "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:1
+#, no-wrap
+msgid "[\"mnemonic-seed\", \"mnemonic\"]"
+msgstr "[\"mnemonic-seed\", \"mnemonic\", \"мнемоническую-фразу\", \"мнемонической-фразы\", \"Мнемоническая-фраза\", \"мнемоническая-фраза\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:11
+#
+msgid "A 13 or 25 word phrase used to backup a Monero account, available in a number of languages. This 25-word phrase (13 words in the case of MyMonero) has all the information needed to view and spend funds from a Monero @account."
+msgstr "Фраза, состоящая из 13 или 25 слов и используемая для создания резервной копии счёта Monero. Может быть написана на ряде языков. Эта фраза из 25 слов (13 слов используется в случае с MyMonero) представляет собой информацию, достаточную для того, чтобы просмотреть и потратить средства, имеющиеся на @счёте Monero."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:12
+#, no-wrap
+msgid "In-depth Information"
+msgstr "Углублённая информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:15
+#
+msgid "In the official wallet, the mnemonic seed comprises 25 words with the last word being used as a checksum. Those words correspond to a 256-bit integer, which is the account's *private* @spend-key. The *private* @view-key is derived by hashing the private spend key with Keccak-256, producing a second 256-bit integer. The corresponding *public* keys are then derived from the private keys."
+msgstr "В случае с официальным кошельком мнемоническая фраза состоит из 25 слов. При этом последнее слово фразы используется в качестве контрольной суммы. Эти слова соответствуют 256-битному целому числу, которое является *приватным* @ключом-траты счёта. *Приватный* @ключ-просмотра вычисляется путём хеширования приватного ключа траты при помощи функции Keccak-256, в результате чего получается второе 256-битное целое число. Затем на основе приватных ключей выводятся соответствующие публичные ключи."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:17
+#
+msgid "By storing the 25 word mnemonic key in a secure location, you have a backup of your private keys and hence all of your Moneroj. Sharing this 25 word key is the equivalent of allowing another person complete access to your funds."
+msgstr "Хранение мнемонической фразы из 25 слов в безопасном месте означает хранение резервной копии ваших приватных ключей, а значит, и всех ваших Monero. Если вы откроете кому-либо эту фразу из 25 слов, это будет означать, что вы открыли этому человеку доступ к вашим средствам."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:19
+#
+msgid "It's not a good idea to store more than you want to lose in a \"hot wallet\" aka a wallet which is currently or has ever been connected to the internet or loaded onto any device that has or may in the future be connected to the internet or any untrusted source!"
+msgstr "Не самой хорошей идеей представляется хранение в \"горячем кошельке\" большего количества средств, чем вы могли бы потерять. Горячим кошельком называют кошелёк, который в настоящее время или когда-либо был подключён к сети интернет или загружен на какое-либо устройство, которое имеет или имело подключение к сети интернет или любому другому ненадёжному источнику!"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/mnemonicseed.md:20
+#
+msgid "By creating a cold, or @paper-wallet you can safely store Moneroj."
+msgstr "Создавая холодный или @бумажный-кошелёк, вы обеспечиваете безопасность хранения ваших Monero."
