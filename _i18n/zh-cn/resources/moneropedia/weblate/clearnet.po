@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-13 10:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/clearnet.md:1
+#, no-wrap
+msgid "The Internet in which anonymous overlay networks are built upon"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/clearnet.md:1
+#, no-wrap
+msgid "[\"Clearnet\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/clearnet.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:11
+#
+msgid "When you use the Internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:"
+msgstr "当你为了看新闻、电子邮件、社交媒体，甚至是门罗币而使用互联网时，你最有可能使用明网连接。这意味着您的*所有*连接都可以通过以下方式进行跟踪、追溯和监视:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:13
+#
+msgid "- your [ISP](https://en.wikipedia.org/wiki/ISP)"
+msgstr "- 你的 [ISP](https://en.wikipedia.org/wiki/ISP)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:15
+#
+msgid "- the website/service/person you're communicating with"
+msgstr "- 你正在进行通讯的网站/服务/人"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:17
+#
+msgid "- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable entity"
+msgstr "- 可能是一个像 [五眼联盟](https://en.wikipedia.org/wiki/5_Eyes) 之类的，有能力的实体"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:19
+#
+msgid "and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar (which *encrypts* your transmission), your route is not hidden nor is it anonymous, thus; it is in the *clear*."
+msgstr "即使您使用[HTTPS](https://en.wikipedia.org/wiki/HTTPS)或类似的协议(它*加密*您的传输)，您的路由也不是隐藏的，也不是匿名的，因此；这是*明面上的*。"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/clearnet.md:20
+#, no-wrap
+msgid "In-depth information"
+msgstr "深度信息"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:23
+#
+msgid "Since a traditional [VPN](https://en.wikipedia.org/wiki/VPN) cannot save you from clearnet (as you are still using *clearnet* (though you are more proxied than without a VPN)), you should use an *anonymous overlay network* to avoid using clearnet directly:"
+msgstr "由于传统的[VPN](https://en.wikipedia.org/wiki/VPN)不能让您免于明网(因为您仍然在使用*明网*(尽管比没有VPN要隐蔽))，您应该使用*匿名覆盖网络*来避免直接使用明网:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:25
+#
+msgid "- Java-I2P"
+msgstr "- Java-I2P"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:27
+#
+msgid "- [Tor](https://torproject.org/)"
+msgstr "- [Tor](https://torproject.org/)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:29
+#
+msgid "These technologies protect you from clearnet by building an anonymous network **over** clearnet to keep your transmissions both encrypted **and** anonymous."
+msgstr "这些技术通过在明网上建立一个匿名网络，从而使您的传输经过加密**并**匿名，以从明网中保护你，"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/clearnet.md:30
+#
+msgid "Here is an accurate, [interactive diagram](https://www.eff.org/pages/tor-and-https) provided by the [EFF](https://www.eff.org/) which describes *clearnet* as it relates to **Tor**. The concept also (somewhat) applies to I2P in terms of anonymity with the exception that your traffic never need to leave the I2P network"
+msgstr "这是一个由[EFF](https://www.eff.org/pages/tor&https)提供的准确的[交互式图表](https://www.eff.org/)，它描述了*明网*与**洋葱路由器**的关系。这个概念也(在一定程度上)适用于@Kovri和I2P的匿名性，除了 您的流量永远不需要离开I2P网络"
