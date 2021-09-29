@@ -1,16 +1,31 @@
 ---
-terms: ["fungibilidade", "fungível"]
-summary: "propriedade de uma moeda na qual duas unidades podem ser substituídas entre si"
+summary: 'property of a currency whereby two units can be substituted in place of one another'
+terms: ["fungibility", "fungible"]
 ---
 
-### Conceitos Básicos
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-Propriedade de uma moeda que significa que duas unidades da mesma moeda podem ser substituídas entre si.
+### The Basics
 
-Fungibilidade significa que duas unidades com o mesmo valor podem ser livremente substituídas entre si. Por exemplo, duas notas de R$10 podem ser trocadas entre si, pois elas são funcionalmente idênticas a qualquer outra nota de R$10 em circulação (apesar de possuírem números de série distintos e desta forma não serem completamente fungíveis). O ouro provavelmente é o exemplo mais próximo de uma moeda física fungível, pois uma barra de 100g de ouro tem o mesmo valor que outra barra de 100g de ouro com a mesma pureza. O Monero é fungível devido à natureza privada de sua moeda, que não fornece nenhuma maneira de vincular as transações, nem de rastrear o histórico de nenhuma moeda em particular. Uma unidade de Monero (1 XMR) é funcionalmente idêntica a qualquer outra unidade de Monero.
+Property of a currency whereby two units can be substituted in place of one
+another.
 
-A fungibilidade é uma grande vantagem que o Monero possui em relação ao Bitcoin e a quase qualquer outra criptomoeda, devido à privacidade inerente da @blockchain do Monero e à natureza rastreável da blockchain do Bitcoin. No Bitcoin, o passado de qualquer unidade da moeda (BTC) pode ser rastreada, por qualquer pessoa, desde o momento em que ela foi criada por um minerador (numa transação @coinbase) até os dias atuais. Portanto, se uma moeda de Bitcoin for usada para uma transação ilegal no passado, esse histórico ficará registrado na @blockchain por toda a eternidade. E isso significa que algumas pessoas não aceitarão ou estarão dispostas a pagar menos por uma unidade de Bitcoin que tenha um passado "sujo". Além disso, algumas empresas (como exchanges) são obrigadas a recusar o recebimento de bitcoins que já foram usados para atividades que são ilegais ou que violam os Termos de Serviço da empresa. Atualmente diversas empresas que aceitam Bitcoin já estão bloqueando, suspendendo ou até mesmo encerrando contas de usuários que recebem Bitcoins provenientes de sites de apostas online ou de outras atividades ilícitas.
+Fungibility means that two units of a currency can be mutually substituted
+and the substituted currency is equal to another unit of the same size.  For
+example, two $10 bills can be exchanged and they are functionally identical
+to any other $10 bill in circulation (although $10 bills have unique ID
+numbers and are therefore not completely fungible).  Gold is probably a
+closer example of true fungibility, where any 1 oz. of gold of the same
+grade is worth the same as another 1 oz. of gold.  Monero is fungible due to
+the nature of the currency which provides no way to link transactions
+together nor trace the history of any particular XMR.  1 XMR is functionally
+identical to any other 1 XMR.
 
-Desde a sua concepção, o Monero foi cuidadosamente projetado para resolver os problemas de rastreabilidade e de ausência de fungibilidade que existem no Bitcoin e em outras criptomoedas. Por ter transações completamente confidenciais, não é possível criar uma lista negra de certas unidades de XMR ou de endereços de Monero. O Monero fornece fungibilidade de verdade, além de todos os benefícios de uma blockchain permanente, segura e descentralizada.
+Fungibility is an advantage Monero has over Bitcoin and almost every other cryptocurrency, due to the privacy inherent in the Monero @blockchain and the permanently traceable nature of the Bitcoin blockchain.  With Bitcoin, any BTC can be tracked by anyone back to its creation @coinbase-transaction.  Therefore, if a coin has been used for an illegal purpose in the past, this history will be contained in the @blockchain in perpetuity.  This lack of fungibility means that certain businesses will be obligated to avoid accepting BTC that have been previously used for purposes which are illegal, or simply run afoul of their Terms of Service.  Currently some large Bitcoin companies are blocking, suspending, or closing accounts that have received Bitcoin used in online gambling or other purposes deemed unsavory by said companies.  
 
+Monero has been built specifically to address the problem of traceability
+and non-fungibility inherent in other cryptocurrencies.  By having
+completely private transactions Monero is truly fungible and there can be no
+blacklisting of certain XMR, while at the same time providing all the
+benefits of a secure, decentralized, permanent blockchain.
 
