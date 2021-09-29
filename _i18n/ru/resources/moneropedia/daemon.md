@@ -1,16 +1,30 @@
 ---
-terms: ["daemon", "демон"]
-summary: "Фоновый процесс, который запускает и управляет узлом Monero"
+summary: 'Background process which runs and controls a Monero node'
+terms: ["daemon"]
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
-'Daemon' is the general term for a piece of software running in the background. In Monero, the Daemon is started through the 'monerod' program. If you run the Daemon locally, you are running a local @node. If the Daemon is running on another device it's a @remote-node. A @wallet, like the CLI or the GUI, needs to connect to a Daemon (local or remote) to relay @transactions to the network.
 
-Также, существует возможность отправлять команды демону напрямую или через интерфейс RPC. Ознакомьтесь с [Руководством по демону RPC]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), которое содержит подробное руководство (с примерами) с доступными вызовами RPC. Для получения подробной технической информации о демоне перейдите по ссылке на Monerodocs внизу этой страницы.
+'Daemon' is the general term for a piece of software running in the
+background. In Monero, the Daemon is started through the 'monerod'
+program. If you run the Daemon locally, you are running a local @node. If
+the Daemon is running on another device it's a @remote-node. A @wallet, like
+the CLI or the GUI, needs to connect to a Daemon (local or remote) to relay
+@transactions to the network.
+
+It's possible to send commands to the Daemon directly or through the RPC
+interface. See the [Daemon RPC guide]({{ site.baseurl_root
+}}/resources/developer-guides/daemon-rpc.html), which contains a detailed
+explanation (with examples) of the available RPC calls. For more detailed
+and technical information about the Daemon, see the Monerodocs reference at
+the bottom of this page.
 
 ---
 
-##### Прочие ресурсы
-<sub>1. [monerod на Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>
-<sub>2. Статья 'демон' на [Wikipedia](https://ru.wikipedia.org/wiki/Демон_(программа))</sub><br>
-<sub>3. Вопросы с тегом monerod [на StackExchange](https://monero.stackexchange.com/?tags=monerod)</sub>
+##### Other Resources
+
+<sub>1. The [monerod reference on Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>
+
+<sub>2. 'Daemon' entry [on Wikipedia](https://en.wikipedia.org/wiki/Daemon_(computing))</sub><br>
+
+<sub>3. Monerod-tagged questions [on StackExchange](https://monero.stackexchange.com/?tags=monerod)</sub>
