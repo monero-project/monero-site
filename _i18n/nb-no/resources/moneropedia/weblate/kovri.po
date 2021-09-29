@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-22 11:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/kovri.md:1
+#, no-wrap
+msgid "C++ router implementation of the I2P network"
+msgstr "C++-ruterimplementering av I2P-nettverket"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/kovri.md:1
+#, no-wrap
+msgid "[\"Kovri\"]"
+msgstr "[\"Kovri\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/kovri.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/kovri.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Det grunnleggende"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/kovri.md:11
+#
+msgid "[Kovri](https://gitlab.com/kovri-project/kovri/) is a C++ implementation of the I2P network which was proposed to be integrated in Monero. At the moment the future of this I2P router is unclear and an integration with Monero is not planned."
+msgstr "[Kovri](https://gitlab.com/kovri-project/kovri/) er en C++-implementering av I2P-nettverket som ble foreslått integrert i Monero. Per i dag er fremtiden til denne I2P-ruteren uklar, og en integrasjon med Monero er ikke planlagt."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/kovri.md:12
+#
+msgid "Read [anonimal's FFS proposal](https://forum.getmonero.org/9/work-in-progress/86967/anonimal-s-kovri-full-time-development-funding-thread) for more details and for reasoning behind the project. Also read the FAQ and User Guide in the [Kovri repository](https://gitlab.com/kovri-project/kovri/)."
+msgstr "Les [anonimals FFS-forslag](https://forum.getmonero.org/9/work-in-progress/86967/anonimal-s-kovri-full-time-development-funding-thread) for flere detaljer og for resonnementet bak prosjektet. Les også OSS-siden og brukerveiledningen i [Kovri-arkivet](https://gitlab.com/kovri-project/kovri/)."
