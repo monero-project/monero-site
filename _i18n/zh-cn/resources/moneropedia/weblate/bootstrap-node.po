@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-04 13:09+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:1
+#, no-wrap
+msgid "A node to which a daemon connects to give immediate usability to wallets while syncing"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:1
+#, no-wrap
+msgid "[\"bootstrap-node\", \"bootstrap-nodes\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:11
+#
+msgid "The @daemon running on a local @node has to sync with other @remote-nodes. While it is not fully synced, @wallet may still be connected to the local node. Therefore, the @wallet cannot access the @blocks that are not yet synced on the local @node."
+msgstr "运行在本地@节点上的守护进程必须与其他(远程)@节点们同步。当没有完全同步时，@钱包可能仍然连接到本地节点。但是，@钱包无法访问本地@节点上尚未同步的@区块。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:13
+#
+msgid "To allow the @wallet to be immediately usable, the daemon on the local @node uses a bootstrap node to which the RPC request are proxying to, giving access to the missing @blocks."
+msgstr "为了允许@钱包立即可用，本地@节点上的守护进程使用RPC请求代理到的引导节点，从而访问丢失的@区块。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:14
+#
+msgid "Note: the replies from the bootstrap node may be untrustworthy."
+msgstr "注意:来自引导节点的响应可能不可信。"

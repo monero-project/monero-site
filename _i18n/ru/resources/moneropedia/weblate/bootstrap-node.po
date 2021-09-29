@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-04 13:09+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:1
+#, no-wrap
+msgid "A node to which a daemon connects to give immediate usability to wallets while syncing"
+msgstr "Узел, к которому подключается демон для немедленного использования кошельков во время основной синхронизации блоков"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:1
+#, no-wrap
+msgid "[\"bootstrap-node\", \"bootstrap-nodes\"]"
+msgstr "[\"bootstrap-node\", \"bootstrap-nodes\", \"узел-начальной-загрузки\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:11
+#
+msgid "The @daemon running on a local @node has to sync with other @remote-nodes. While it is not fully synced, @wallet may still be connected to the local node. Therefore, the @wallet cannot access the @blocks that are not yet synced on the local @node."
+msgstr "Демон-программа, запущенная на локальном @узле, должна синхронизироваться с другими (удалёнными) @узлами. Будучи не до конца синхронизированным, @кошелёк может быть подсоединён к локальному @узлу. Следовательно, кошелёк не сможет получить доступ к @блокам, которые загружаются, пока он остаётся синхронизированным с локальным узлом."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:13
+#
+msgid "To allow the @wallet to be immediately usable, the daemon on the local @node uses a bootstrap node to which the RPC request are proxying to, giving access to the missing @blocks."
+msgstr "Для того чтобы можно было немедленно использовать @кошелёк, демон-программа, запущенная на локальном @узле, использует узел начальной загрузки, на который поступает доверенный запрос RPC, в результате чего обеспечивается доступ к отсутствующим @блокам."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/bootstrap-node.md:14
+#
+msgid "Note: the replies from the bootstrap node may be untrustworthy."
+msgstr "Примечание:\tОтветы, получаемые от узла начальной загрузки, могут быть ненадёжными."
