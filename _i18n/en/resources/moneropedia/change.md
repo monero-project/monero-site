@@ -4,6 +4,7 @@ summary: "Monero sent as part of a transaction, that returns to your account ins
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 Monero sent as part of a transaction, that returns to your account instead of going to another recipient.

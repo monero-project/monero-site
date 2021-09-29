@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-12 11:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/change.md:1
+#, no-wrap
+msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient"
+msgstr "Monero som sendes som del av en transaksjon som tilbakeføres til kontoen din i stedet for å gå til en annen mottaker."
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/change.md:1
+#, no-wrap
+msgid "[\"change\"]"
+msgstr "[\"change\", \"veksel\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/change.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Det grunnleggende"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:11
+#
+msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient."
+msgstr "Monero som sendes som del av en transaksjon som tilbakeføres til kontoen din i stedet for å gå til en annen mottaker."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/change.md:12
+#, no-wrap
+msgid "More Information"
+msgstr "Mer informasjon"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:15
+#
+msgid "The @wallet in the Monero software makes change automatically, but when you send a transaction, you are taking an input that you control and telling the Monero network what to do with it. The input is a \"deposit\" to your account that you are able to spend. Outputs are the part of the transaction that tells the Monero network where to send the funds."
+msgstr "@Lommeboken i Monero-programvaren lager veksel automatisk, men når du sender en transaksjon, tar du en inndata som du kontrollerer og forteller Monero-nettverket hva som skal gjøres med det. Inndataen er et «innskudd» til kontoen din som du kan forbruke. Utdataene er delen av transaksjonen som forteller Monero-nettverket hvor midlene skal sendes til."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:16
+#
+msgid "You might have multiple inputs in your account, in many different denominations (For example: you deposited 0.5 XMR on Friday, and 0.75 XMR on Saturday). So, when have a transaction with an input of 0.5 XMR, but you only want to send 0.1 XMR, your transaction will include a fee to pay the @miner, an output for 0.1 XMR to send to the recipient, and the rest that you want to send back to yourself will be an output back to you (this is called \"change\"). Once the transaction is completed, the change becomes available to you as an input that you can again split and send with a new transaction."
+msgstr "Du har kanskje flere inndata i kontoen din, og i forskjellige benevnelser (for eksempel: du har satt inn 0,5 XMR på fredag, og 0,75 XMR på lørdag). Så når du har en transaksjon med en inndata på 0,5 XMR, men bare vil sende 0,1 XMR, vil transaksjonen din inkludere et gebyr som betales til @utvinneren og en utdata på 0,1 XMR som går til mottakeren, og resten som du vil sende tilbake til deg selv blir en utdata tilbake til deg (dette kalles for «veksel»). Når transaksjonen er fullført, blir vekselet tilgjengelig for deg som en inndata som du kan dele opp på nytt og sende med en ny transaksjon."

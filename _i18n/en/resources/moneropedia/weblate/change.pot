@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-12 11:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/change.md:1
+#, no-wrap
+msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/change.md:1
+#, no-wrap
+msgid "[\"change\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:7
+#, markdown-text
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/change.md:8
+#, markdown-text, no-wrap
+msgid "The Basics"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:11
+#, markdown-text
+msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/change.md:12
+#, markdown-text, no-wrap
+msgid "More Information"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:15
+#, markdown-text
+msgid "The @wallet in the Monero software makes change automatically, but when you send a transaction, you are taking an input that you control and telling the Monero network what to do with it. The input is a \"deposit\" to your account that you are able to spend. Outputs are the part of the transaction that tells the Monero network where to send the funds."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:16
+#, markdown-text
+msgid "You might have multiple inputs in your account, in many different denominations (For example: you deposited 0.5 XMR on Friday, and 0.75 XMR on Saturday). So, when have a transaction with an input of 0.5 XMR, but you only want to send 0.1 XMR, your transaction will include a fee to pay the @miner, an output for 0.1 XMR to send to the recipient, and the rest that you want to send back to yourself will be an output back to you (this is called \"change\"). Once the transaction is completed, the change becomes available to you as an input that you can again split and send with a new transaction."
+msgstr ""

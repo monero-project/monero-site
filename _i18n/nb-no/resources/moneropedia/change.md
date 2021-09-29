@@ -1,15 +1,29 @@
 ---
-terms: ["change", "veksel"]
-summary: "Monero som sendes som del av en transaksjon som tilbakeføres til kontoen din i stedet for å gå til en annen mottaker"
+summary: 'Monero sent as part of a transaction, that returns to your account instead of going to another recipient'
+terms: ["change"]
 ---
 
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
-### Det grunnleggende
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-Monero som sendes som del av en transaksjon som tilbakeføres til kontoen din i stedet for å gå til en annen mottaker.
+### The Basics
 
-### Mer informasjon
+Monero sent as part of a transaction, that returns to your account instead
+of going to another recipient.
 
-@Lommeboken i Monero-programvaren lager veksel automatisk, men når du sender en transaksjon, tar du en inndata som du kontrollerer og forteller Monero-nettverket hva som skal gjøres med det. Inndataen er et «innskudd» til kontoen din som du kan forbruke. Utdataene er delen av transaksjonen som forteller Monero-nettverket hvor midlene skal sendes til.
+### More Information
 
-Du har kanskje flere inndata i kontoen din, og i forskjellige benevnelser (for eksempel: du har satt inn 0,5 XMR på fredag, og 0,75 XMR på lørdag). Så når du har en transaksjon med en inndata på 0,5 XMR, men bare vil sende 0,1 XMR, vil transaksjonen din inkludere et gebyr som betales til @utvinneren og en utdata på 0,1 XMR som går til mottakeren, og resten som du vil sende tilbake til deg selv blir en utdata tilbake til deg (dette kalles for «veksel»). Når transaksjonen er fullført, blir vekselet tilgjengelig for deg som en inndata som du kan dele opp på nytt og sende med en ny transaksjon.
+The @wallet in the Monero software makes change automatically, but when you
+send a transaction, you are taking an input that you control and telling the
+Monero network what to do with it. The input is a "deposit" to your account
+that you are able to spend. Outputs are the part of the transaction that
+tells the Monero network where to send the funds.
+
+You might have multiple inputs in your account, in many different
+denominations (For example: you deposited 0.5 XMR on Friday, and 0.75 XMR on
+Saturday). So, when have a transaction with an input of 0.5 XMR, but you
+only want to send 0.1 XMR, your transaction will include a fee to pay the
+@miner, an output for 0.1 XMR to send to the recipient, and the rest that
+you want to send back to yourself will be an output back to you (this is
+called "change"). Once the transaction is completed, the change becomes
+available to you as an input that you can again split and send with a new
+transaction.

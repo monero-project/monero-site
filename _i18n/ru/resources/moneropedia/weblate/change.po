@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-12 11:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/change.md:1
+#, no-wrap
+msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient"
+msgstr "Monero, отправляемые как часть транзакции и возвращающиеся к вам на счёт вместо того, чтобы уйти другому получателю."
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/change.md:1
+#, no-wrap
+msgid "[\"change\"]"
+msgstr "[\"change\", \"сдача\", \"сдачи\", \"сдачу\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/change.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:11
+#
+msgid "Monero sent as part of a transaction, that returns to your account instead of going to another recipient."
+msgstr "Monero, отправляемые как часть транзакции и возвращающиеся к вам на счёт вместо того, чтобы уйти другому получателю."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/change.md:12
+#, no-wrap
+msgid "More Information"
+msgstr "Дополнительная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:15
+#
+msgid "The @wallet in the Monero software makes change automatically, but when you send a transaction, you are taking an input that you control and telling the Monero network what to do with it. The input is a \"deposit\" to your account that you are able to spend. Outputs are the part of the transaction that tells the Monero network where to send the funds."
+msgstr "Программное обеспечение @кошелька Monero автоматически генерирует сдачу, но когда вы инициируете транзакцию, вы берёте вход, который контролируете, и говорите сети Monero, что делать с ним. Вход является \"депозитом\" на вашем счёте, который вы можете потратить. Выходы являются частью транзакции, которая указывает сети Monero, куда должны быть отправлены средства."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/change.md:16
+#
+msgid "You might have multiple inputs in your account, in many different denominations (For example: you deposited 0.5 XMR on Friday, and 0.75 XMR on Saturday). So, when have a transaction with an input of 0.5 XMR, but you only want to send 0.1 XMR, your transaction will include a fee to pay the @miner, an output for 0.1 XMR to send to the recipient, and the rest that you want to send back to yourself will be an output back to you (this is called \"change\"). Once the transaction is completed, the change becomes available to you as an input that you can again split and send with a new transaction."
+msgstr "На вашем счёте может находиться множество входов самого разного достоинства (например, вы положили 0,5 XMR в пятницу и 0,75 XMR в субботу). Таким образом, когда вы проводите транзакцию со входом 0,5 XMR, но вы хотите отправить всего 0,1 XMR, ваша транзакция будет включать в себя комиссию для @майнера, выход 0,1 XMR для отправки получателю и остаток, который вы хотите получить обратно, и который будет выходом, который вернётся к вам (он и называется \"сдача\"). Как только транзакция будет завершена, вы сможете использовать сдачу в качестве входа, который вы точно так же сможете снова разбить и отправить с новой транзакцией."
