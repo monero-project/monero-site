@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-29 14:35+0200\n"
+"POT-Creation-Date: 2021-09-10 09:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,256 +16,417 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:2
 #
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:4
-#
-msgid "## Operating Systems: Windows, Linux, Mac"
-msgstr "## Besturingssystemen: Windows, Linux, Mac"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:6
-#
-msgid ""
-"- Retrieve your 25 word @mnemonic-seed that you saved when creating your old "
-"Monero @wallet"
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:3
+#, no-wrap
+msgid "Table of contents"
 msgstr ""
-"- Neem je hersteltekst (zie @mnemonic-seed) erbij die je hebt opgeslagen bij "
-"het maken van je oude Monero-portemonnee (zie @wallet)."
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:8
-#
-msgid "### Account Software: monero-wallet-cli"
-msgstr "### Software: monero-wallet-cli"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:10
-#
-msgid ""
-"- Open a command prompt and navigate to the drive and directory that "
-"contains monero-wallet-cli"
+#: ../_i18n/en/resources/user-guides/restore_account.md:6
+msgid "- [When should I restore a wallet?](#when-should-i-restore-a-wallet)"
 msgstr ""
-"- Open een opdrachtregel en ga naar het station en de directory waar "
-"monero-wallet-cli staat"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:12
 #
-msgid ""
-"- At the command prompt type: `monero-wallet-cli "
-"--restore-deterministic-wallet`"
-msgstr ""
-"- Typ het volgende op de opdrachtregel: `monero-wallet-cli "
-"--restore-deterministic-wallet`"
-
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:14
-#
-msgid ""
-"- Once you press enter you will be prompted for a wallet file name.  Give "
-"your wallet a new name, any name will do"
-msgstr ""
-"- Nadat je op Enter hebt gedrukt, wordt er gevraagd een bestandsnaam voor je "
-"portemonnee op te geven.  Geef je portemonnee een nieuwe naam. Het maakt "
-"niet uit welke naam."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:16
-#
-msgid ""
-"- Press enter again and you will be prompted for a password.  Give your "
-"wallet a new and long password"
-msgstr ""
-"- Druk opnieuw op Enter. Er wordt gevraagd naar een wachtwoord.  Geef je "
-"portemonnee een nieuw, lang wachtwoord."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:18
-#
-msgid "- Press enter again you will be prompted to repeat the password"
-msgstr "- Druk opnieuw op Enter. Er wordt gevraagd het wachtwoord te herhalen."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:20
-#
-msgid ""
-"- Press enter again and you will be prompted for the 25 word electrum style "
-"mnemonic seed that you retrieved earlier"
-msgstr ""
-"- Druk opnieuw op Enter. Je wordt gevraagd de hersteltekst van 25 woorden "
-"die je eerder hebt opgezocht in te voeren."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:22
-#
-msgid ""
-"- You will then be prompted with \"Restore from specific blockchain height "
-"(optional, default 0):\" Default will start the restore process from the "
-"beginning of the Monero blockchain. If you don't know the specific "
-"blockchain height, just hit enter. (Specifying a specific blockchain height "
-"will start the restore process from that specific height. This will save a "
-"bit of time in scanning, if you know what starting blockchain height your "
-"initial funds were transacted for this specific account.)"
-msgstr ""
-"- Vervolgens wordt er gevraagd of je een herstelpunt wilt opgeven: \"Restore "
-"from specific blockchain height (optional, default 0):\" Het herstelproces "
-"begint standaard bij het begin van de Monero-blockchain. Als je geen "
-"specifieke hoogte van de blockchain weet, druk je gewoon op Enter. (Als je "
-"een herstelpunt opgeeft, wordt het herstelproces gestart vanaf die "
-"specifieke hoogte. Hiermee bespaar je tijd bij het opzoeken, als je weet op "
-"welke hoogte van de blockchain er voor het eerst geld is overgemaakt naar "
-"dit specifieke account.)"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:24
-#
-msgid ""
-"After you have entered the 25 word mnemonic seed and have chosen your "
-"specific blockchain height, monero-wallet-cli will generate the same public "
-"address and view key as your old wallet and begin the refresh process "
-"automatically. (Please be patient as the refresh process may take a while.)"
-msgstr ""
-"Nadat je de hersteltekst van 25 woorden hebt ingevoerd en een specifieke "
-"hoogte van de blockchain hebt opgegeven, wordt het openbare adres van je "
-"oude portemonnee gegenereerd en begint het vernieuwingsproces "
-"automatisch. (Even geduld alsjeblieft, want het vernieuwen kan een tijdje "
-"duren.)"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:26
-#
-msgid "### Account Software: monero-wallet-gui"
-msgstr "### Software: monero-wallet-gui"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:28
-#
-msgid ""
-"Lauch `monero-wallet-gui`. If this is the first time you launched it go to "
-"the next step, otherwise click `Cancel`:"
-msgstr ""
-"Start `monero-wallet-gui`. Als dit de eerste keer is dat je het start, ga "
-"dan naar de volgende stap. Zo niet, klik dan op `Annuleren`:"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:30
-#
-msgid ""
-"![cancel "
-"opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
-msgstr ""
-"![openen "
-"annuleren](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:32
-#
-msgid "Select your appropriate language `English(US)`:"
-msgstr "Selecteer de gewenste taal `Nederlands`:"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:34
-#
-msgid ""
-"![choose "
-"language](/img/resources/user-guides/en/restore_account/choose-language.png)"
-msgstr ""
-"![taal "
-"kiezen](/img/resources/user-guides/en/restore_account/choose-language.png)"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:36
-#
-msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+#: ../_i18n/en/resources/user-guides/restore_account.md:8
+#, fuzzy
+#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgid "- [What is needed to restore a wallet from mnemonic seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)"
 msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:38
-#
-msgid ""
-"![choose "
-"restore](/img/resources/user-guides/en/restore_account/choose-restore.png)"
+#: ../_i18n/en/resources/user-guides/restore_account.md:10
+msgid "- [What is the wallet restore height?](#what-is-the-wallet-restore-height)"
 msgstr ""
-"![herstellen "
-"kiezen](/img/resources/user-guides/en/restore_account/choose-restore.png)"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:12
+#, fuzzy
+#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgid "- [How to restore a wallet from mnemonic seed on Monero GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)"
+msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:14
+#, fuzzy
+#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgid "- [How to restore a wallet from mnemonic seed on Monero CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)"
+msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:40
-#
-msgid ""
-"Keep `Restore from seed` selected, give your wallet a name & storage "
-"location, and complete the `Enter your 25 (or 24) word mnemonic "
-"seed`. Optionaly, specify a `Restore height (optional)` to avoid scanning of "
-"oldest blocks. Then click the `Right` arrow:"
+#: ../_i18n/en/resources/user-guides/restore_account.md:16
+msgid "- [My restored wallet is showing a wrong balance](#my-restored-wallet-is-showing-a-wrong-balance)"
 msgstr ""
-"Zorg dat `Herstel met hersteltekst` is ingeschakeld, geef een name en "
-"opslaglocatie op voor de portemonnee en vul het veld `Voer uw hersteltekst "
-"van 25 (of 24) woorden in` in. Eventueel kun je een `Herstelpunt "
-"(optioneel)` opgeven, zodat er niet hoeft te worden gezocht in oudere "
-"blokken. Klik vervolgens op de pijl naar rechts:"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:42
-#
-msgid ""
-"![restore "
-"wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:17
+#, no-wrap
+msgid "When should I restore a wallet?"
 msgstr ""
-"![portemonnee "
-"herstellen](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:44
-#
-msgid ""
-"On the next page, give your wallet a strong password and confirm it before "
-"clicking the `Right` arrow:"
+#: ../_i18n/en/resources/user-guides/restore_account.md:22
+msgid "You should restore your @wallet in the following situations: - You lost access to your wallet (you forgot its password, your wallet file is corrupted or your device stopped working/is lost).  - You want to create a copy of your wallet on another device."
 msgstr ""
-"Geef je portemonnee op de volgende pagina een sterk wachtwoord en bevestig "
-"dit voordat je op de pijl naar rechts klikt:"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:46
-#
-msgid ""
-"![wallet "
-"password](/img/resources/user-guides/en/restore_account/wallet-password.png)"
+#: ../_i18n/en/resources/user-guides/restore_account.md:24
+msgid "This guide will teach you how to restore a Monero wallet from its @mnemonic-seed."
 msgstr ""
-"![wachtwoord "
-"portemonnee](/img/resources/user-guides/en/restore_account/wallet-password.png)"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:48
-#
-msgid "Specify your @daemon settings and click the `Right` arrow:"
-msgstr "Geef de instellingen voor je node op en klik op de pijl naar rechts:"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:50
-#
-msgid ""
-"![daemon "
-"settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
+#: ../_i18n/en/resources/user-guides/restore_account.md:26
+msgid "If you want to restore a wallet from its private keys, please read [this guide]({{site.baseurl}}/resources/user-guides/restore_from_keys.html)."
 msgstr ""
-"![instellingen "
-"node](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
+
+#
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:27
+#, fuzzy, no-wrap
+#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgid "What is needed to restore a wallet from mnemonic seed?"
+msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:52
-#
-msgid "Click on `USE MONERO` to enjoy your restored wallet:"
-msgstr "Klik op `GEBRUIK MONERO` om je herstelde portemonnee te gebruiken:"
+#: ../_i18n/en/resources/user-guides/restore_account.md:30
+msgid "A valid Monero mnemonic seed is a phrase with 13, 14, or 25 random words (multiple languages are supported). Your mnemonic seed has all the information needed to restore your wallet."
+msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/restore_account.md:53
+#: ../_i18n/en/resources/user-guides/restore_account.md:32
+msgid "It is also useful to know your wallet restore height or the creation date of your wallet, since it makes your wallet synchronization faster."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:33
+#, no-wrap
+msgid "Where can I find my mnemonic seed?"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:36
+msgid "Most Monero wallets ask the user to write down a mnemonic seed on a paper backup when a wallet is being created. So it's up to you to remember where and how you stored your mnemonic seed."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:38
+msgid "Alternatively, if you still have access to the wallet being restored, you can usually find your mnemonic seed in a menu with some name like `Seed`, `Keys`, `Secrets`, or `Master Private Key`."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:39
+#, no-wrap
+msgid "What is the wallet restore height?"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:42
+msgid "The wallet restore height is a setting that tells your wallet software at which block height it should start scanning the blockchain looking for transactions. Ideally it should be the number of the block which included the first incoming transaction to your wallet."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:44
+msgid "If you set a restore height higher than the block height of your first incoming transaction, your wallet software will not detect all transactions of your wallet. In consequence, your balance will be wrong and your wallet software will not work properly."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:46
+msgid "If you set a restore height lower than the block height of your first incoming transaction, your wallet software will scan unnecessary blocks. In consequence, your initial wallet synchronization will take longer than necessary, but your wallet software will still work."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:48
+msgid "Therefore, if you're unsure about the block height of your first incoming transaction, it's always better to set a lower restore height instead of a higher one."
+msgstr ""
+
 #
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:50
+#, fuzzy
+#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid "![restore-height](/img/resources/user-guides/en/restore_account/restore-height.png)"
+msgstr "![portemonnee herstellen](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+
+#
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:51
+#, fuzzy, no-wrap
+#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgid "How to restore a wallet from mnemonic seed on Monero GUI"
+msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
+
+#
+#. type: Bullet: '1) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:54
+#, fuzzy
+#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgid "On the main menu, click on `Restore wallet from keys or mnemonic seed`."
+msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:56
+#, fuzzy
+#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid "![main-menu-restore-wallet](/img/resources/user-guides/en/restore_account/main-menu-restore-wallet.png)"
+msgstr "![portemonnee herstellen](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+
+#. type: Bullet: '2) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:58
+msgid "The `Restore wallet` page will be displayed:"
+msgstr ""
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:60
+#, fuzzy
+#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid "![restore-from-seed](/img/resources/user-guides/en/restore_account/restore-from-seed.png)"
+msgstr "![portemonnee herstellen](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+
+#. type: Bullet: '3) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:62
+msgid "On `Wallet name`, enter the name of the wallet you want to create. You don't need to use the same name of the wallet being restored."
+msgstr ""
+
+#. type: Bullet: '4) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:64
+msgid "On `Wallet location`, choose where you want the wallet file to be saved."
+msgstr ""
+
+#. type: Bullet: '5) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:66
+msgid "Keep `Restore from seed` selected."
+msgstr ""
+
+#. type: Bullet: '6) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:68
+msgid "On the next field, type your 25 word `mnemonic seed`. It is expected that some mnemonic seeds have repeated words, as they work as a verification for errors (checksum)."
+msgstr ""
+
+#. type: Bullet: '7) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:70
+msgid "Use the field `Seed offset passphrase` to enter your passphrase, if you have one. When you enter a passphrase, Monero GUI will use your mnemonic seed together with your passphrase to compute a new wallet."
+msgstr ""
+
+#. type: Bullet: '8) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:72
+msgid "The next field allows you to enter a `Restore height`. Even though this field is optional, it's not recommended to leave it blank, since setting a restore height makes your wallet synchronization faster. Ideally it should be the number of the block which included the first incoming transaction to your wallet:"
+msgstr ""
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:74
+#, fuzzy
+#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid "![restore-height-field](/img/resources/user-guides/en/restore_account/restore-height-field.png)"
+msgstr "![portemonnee herstellen](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:76
+msgid "Alternatively, you can also enter the date or an estimated date (YYYY-MM-DD format) of the first incoming transaction:"
+msgstr ""
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:78
+#, fuzzy
+#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid "![restore-height-field-date](/img/resources/user-guides/en/restore_account/restore-height-field-date.png)"
+msgstr "![portemonnee herstellen](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:80
+msgid "After entering your restore height, click on `Next` button."
+msgstr ""
+
+#
+#. type: Bullet: '9) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:82
+#, fuzzy
+#| msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:"
+msgid "On the next page, give your wallet a strong password and confirm it. Since your wallet will hold your private keys and seed, it is really important to enter a strong password."
+msgstr "Geef je portemonnee op de volgende pagina een sterk wachtwoord en bevestig dit voordat je op de pijl naar rechts klikt:"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:84
+msgid "![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)"
+msgstr "![wachtwoord portemonnee](/img/resources/user-guides/en/restore_account/wallet-password.png)"
+
+#. type: Bullet: '10) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:86
+msgid "If your wallet is in `Advanced mode`, the `Daemon settings` page will be displayed. Here you can choose whether you want to start a local node or connect to a remote node. Choose your desired option and click on `Next` button."
+msgstr ""
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:88
+msgid "![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
+msgstr "![instellingen node](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
+
+#. type: Bullet: '11) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:90
+msgid "The next page will display a summary of the wallet you are going to restore. Click on `Create wallet` button to restore your wallet:"
+msgstr ""
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:92
 msgid "![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)"
+msgstr "![klaar is kees](/img/resources/user-guides/en/restore_account/all-set-up.png)"
+
+#
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:93
+#, fuzzy, no-wrap
+#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+msgid "How to restore a wallet from mnemonic seed on Monero CLI"
+msgstr "Klik op `Een portemonnee herstellen met uw hersteltekst of sleutels`:"
+
+#. type: Bullet: '1) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:96
+msgid "Open the terminal on your Monero CLI directory and run the following command:"
 msgstr ""
-"![klaar is "
-"kees](/img/resources/user-guides/en/restore_account/all-set-up.png)"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:98
+#, fuzzy
+#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
+msgid "- Linux: `./monero-wallet-cli --restore-deterministic-wallet`"
+msgstr "- Typ het volgende op de opdrachtregel: `monero-wallet-cli --restore-deterministic-wallet`"
+
+#
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:100
+#, fuzzy
+#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
+msgid "- Windows: `monero-wallet-cli --restore-deterministic-wallet`"
+msgstr "- Typ het volgende op de opdrachtregel: `monero-wallet-cli --restore-deterministic-wallet`"
+
+#. type: Bullet: '2) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:102
+msgid "Next, you will be asked for a wallet file name. Enter the name of the wallet you want to create and press `Enter`."
+msgstr ""
+
+#. type: Bullet: '3) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:104
+msgid "Monero CLI will then ask you to give your wallet a password and confirm it. Since your wallet will hold your private keys and seed, it is really important to enter a strong password."
+msgstr ""
+
+#. type: Bullet: '4) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:106
+msgid "Next, enter your 25 word mnemonic seed."
+msgstr ""
+
+#. type: Bullet: '5) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:108
+msgid "Next, Monero CLI will ask for a `Restore height`. Even though it is optional, it's not recommended to leave it blank, since setting a restore height makes your wallet synchronization faster. Ideally it should be the number of the block which included the first incoming transaction to your wallet. Alternatively, you can also enter the date or an estimated date (YYYY-MM-DD format) of the first incoming transaction."
+msgstr ""
+
+#. type: Bullet: '6) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:110
+msgid "After you have entered restore height, Monero CLI will then restore your wallet and start the wallet synchronization. Please be patient as this process may take a while. You will need to wait for it to finish before start using your wallet."
+msgstr ""
+
+#. type: Bullet: '7) '
+#: ../_i18n/en/resources/user-guides/restore_account.md:112
+msgid "If you run into any trouble, running `./monero-wallet-cli --help` will show you the options available to you at wallet startup. Once you're inside your wallet, running the `help` command will list the help for the commands available to you within the wallet."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/restore_account.md:113
+#, no-wrap
+msgid "My restored wallet is showing a wrong balance"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/restore_account.md:115
+msgid "This problem usually occurs when you set a restore height that is higher than the block height of the first incoming transaction to your wallet. To solve this issue, you will have to change the wallet restore height. Please read [this guide]({{site.baseurl}}/resources/user-guides/change-restore-height.html) for detailed instructions on how to do this."
+msgstr ""
+
+#
+#~ msgid "## Operating Systems: Windows, Linux, Mac"
+#~ msgstr "## Besturingssystemen: Windows, Linux, Mac"
+
+#
+#~ msgid "- Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @wallet"
+#~ msgstr "- Neem je hersteltekst (zie @mnemonic-seed) erbij die je hebt opgeslagen bij het maken van je oude Monero-portemonnee (zie @wallet)."
+
+#
+#~ msgid "### Account Software: monero-wallet-cli"
+#~ msgstr "### Software: monero-wallet-cli"
+
+#
+#~ msgid "- Open a command prompt and navigate to the drive and directory that contains monero-wallet-cli"
+#~ msgstr "- Open een opdrachtregel en ga naar het station en de directory waar monero-wallet-cli staat"
+
+#
+#~ msgid "- Once you press enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do"
+#~ msgstr "- Nadat je op Enter hebt gedrukt, wordt er gevraagd een bestandsnaam voor je portemonnee op te geven.  Geef je portemonnee een nieuwe naam. Het maakt niet uit welke naam."
+
+#
+#~ msgid "- Press enter again and you will be prompted for a password.  Give your wallet a new and long password"
+#~ msgstr "- Druk opnieuw op Enter. Er wordt gevraagd naar een wachtwoord.  Geef je portemonnee een nieuw, lang wachtwoord."
+
+#
+#~ msgid "- Press enter again you will be prompted to repeat the password"
+#~ msgstr "- Druk opnieuw op Enter. Er wordt gevraagd het wachtwoord te herhalen."
+
+#
+#~ msgid "- Press enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier"
+#~ msgstr "- Druk opnieuw op Enter. Je wordt gevraagd de hersteltekst van 25 woorden die je eerder hebt opgezocht in te voeren."
+
+#
+#~ msgid "- You will then be prompted with \"Restore from specific blockchain height (optional, default 0):\" Default will start the restore process from the beginning of the Monero blockchain. If you don't know the specific blockchain height, just hit enter. (Specifying a specific blockchain height will start the restore process from that specific height. This will save a bit of time in scanning, if you know what starting blockchain height your initial funds were transacted for this specific account.)"
+#~ msgstr "- Vervolgens wordt er gevraagd of je een herstelpunt wilt opgeven: \"Restore from specific blockchain height (optional, default 0):\" Het herstelproces begint standaard bij het begin van de Monero-blockchain. Als je geen specifieke hoogte van de blockchain weet, druk je gewoon op Enter. (Als je een herstelpunt opgeeft, wordt het herstelproces gestart vanaf die specifieke hoogte. Hiermee bespaar je tijd bij het opzoeken, als je weet op welke hoogte van de blockchain er voor het eerst geld is overgemaakt naar dit specifieke account.)"
+
+#
+#~ msgid "After you have entered the 25 word mnemonic seed and have chosen your specific blockchain height, monero-wallet-cli will generate the same public address and view key as your old wallet and begin the refresh process automatically. (Please be patient as the refresh process may take a while.)"
+#~ msgstr "Nadat je de hersteltekst van 25 woorden hebt ingevoerd en een specifieke hoogte van de blockchain hebt opgegeven, wordt het openbare adres van je oude portemonnee gegenereerd en begint het vernieuwingsproces automatisch. (Even geduld alsjeblieft, want het vernieuwen kan een tijdje duren.)"
+
+#
+#~ msgid "### Account Software: monero-wallet-gui"
+#~ msgstr "### Software: monero-wallet-gui"
+
+#
+#~ msgid "Lauch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:"
+#~ msgstr "Start `monero-wallet-gui`. Als dit de eerste keer is dat je het start, ga dan naar de volgende stap. Zo niet, klik dan op `Annuleren`:"
+
+#
+#~ msgid "![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
+#~ msgstr "![openen annuleren](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
+
+#
+#~ msgid "Select your appropriate language `English(US)`:"
+#~ msgstr "Selecteer de gewenste taal `Nederlands`:"
+
+#
+#~ msgid "![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)"
+#~ msgstr "![taal kiezen](/img/resources/user-guides/en/restore_account/choose-language.png)"
+
+#
+#~ msgid "![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)"
+#~ msgstr "![herstellen kiezen](/img/resources/user-guides/en/restore_account/choose-restore.png)"
+
+#
+#~ msgid "Keep `Restore from seed` selected, give your wallet a name & storage location, and complete the `Enter your 25 (or 24) word mnemonic seed`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:"
+#~ msgstr "Zorg dat `Herstel met hersteltekst` is ingeschakeld, geef een name en opslaglocatie op voor de portemonnee en vul het veld `Voer uw hersteltekst van 25 (of 24) woorden in` in. Eventueel kun je een `Herstelpunt (optioneel)` opgeven, zodat er niet hoeft te worden gezocht in oudere blokken. Klik vervolgens op de pijl naar rechts:"
+
+#
+#~ msgid "Specify your @daemon settings and click the `Right` arrow:"
+#~ msgstr "Geef de instellingen voor je node op en klik op de pijl naar rechts:"
+
+#
+#~ msgid "Click on `USE MONERO` to enjoy your restored wallet:"
+#~ msgstr "Klik op `GEBRUIK MONERO` om je herstelde portemonnee te gebruiken:"

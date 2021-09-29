@@ -3,10 +3,15 @@
 ### Table of contents
 
 - [When should I restore a wallet?](#when-should-i-restore-a-wallet)
+
 - [What is needed to restore a wallet from mnemonic seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)
+
 - [What is the wallet restore height?](#what-is-the-wallet-restore-height)
+
 - [How to restore a wallet from mnemonic seed on Monero GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)
+
 - [How to restore a wallet from mnemonic seed on Monero CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)
+
 - [My restored wallet is showing a wrong balance](#my-restored-wallet-is-showing-a-wrong-balance)
 
 ### When should I restore a wallet?
