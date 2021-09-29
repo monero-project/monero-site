@@ -1,10 +1,10 @@
 ---
-tags: ["kovri"]
 terms: ["Locally-unique-host"]
 summary: "A host defined by you and resolved only by you"
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 A locally-unique host is a [FQDN](https://en.wikipedia.org/wiki/FQDN) defined by **you** and resolved only by you; similar to how a [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) is implemented. Not to be confused with @canonically-unique-host.
@@ -18,4 +18,5 @@ Hosts in a public subscription can be considered @canonically-unique-host's with
 ### Notes
 
 - Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution.
+
 - I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)
