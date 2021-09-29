@@ -4,6 +4,7 @@ summary: "A device on the Internet running the Monero software, with a full copy
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 A device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network. A node that is not running on your local machine is called @remote-node. Remote nodes can be private, if they are for personal use only, or open, if they are accessible by other people.
@@ -21,4 +22,5 @@ The Monero Core Team plans for a network upgrade roughly every 6 months. At that
 ---
 
 ##### Other Resources
+
 <sub>1. *Fluffypony gives a great explanation of why mandatory network upgrades are good for Monero.* ([Monero Missives for the Week of 2016-06-20]({{ site.baseurl_root }}/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>

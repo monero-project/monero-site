@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-26 14:01+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/node.md:1
+#, no-wrap
+msgid "A device on the Internet running the Monero software, with a full copy of the Monero blockchain. It can be local or remote"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/node.md:1
+#, no-wrap
+msgid "[\"node\", \"nodes\", \"full-node\", \"full-nodes\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/node.md:7
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/node.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/node.md:11
+msgid "A device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network. A node that is not running on your local machine is called @remote-node. Remote nodes can be private, if they are for personal use only, or open, if they are accessible by other people."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/node.md:12
+#, no-wrap
+msgid "More Information"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/node.md:15
+msgid "Nodes participate in the Monero network and secure @transactions by enforcing the rules of the network. Nodes download the entire @blockchain to know what transactions have taken place. Nodes assist the network by relaying transactions to other nodes on the network. Nodes may also choose to contribute to the Monero network by participating in crafting @blocks (this is called @mining)."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/node.md:17
+msgid "Mining is the process by which nodes create a block from the previously accepted block, transactions that are waiting to be processed in the transaction pool, and the @coinbase-transaction. When a node believes it has crafted a valid block it will transmit the completed block to other nodes on the network and those nodes signal agreement by working on the next block in the chain."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/node.md:19
+msgid "The rules that nodes follow are built into the Monero software; When all nodes agree about the rules to follow this is called @consensus. Consensus is necessary for a cryptocurrency because it is how the blockchain is built; If nodes don't agree about which blocks are valid, for example people who have not updated their Monero software, those nodes that don't agree will no longer be able to participate in the Monero network."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/node.md:21
+msgid "The Monero Core Team plans for a network upgrade roughly every 6 months. At that time, if you are running a node it must be updated to the most recent version of the Monero software or it will no longer be able to participate in the network."
+msgstr ""
+
+#. type: Title #####
+#: ../_i18n/en/resources/moneropedia/node.md:24
+#, no-wrap
+msgid "Other Resources"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/node.md:26
+#, no-wrap
+msgid "<sub>1. *Fluffypony gives a great explanation of why mandatory network upgrades are good for Monero.* ([Monero Missives for the Week of 2016-06-20]({{ site.baseurl_root }}/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>\n"
+msgstr ""

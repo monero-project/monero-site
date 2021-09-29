@@ -1,9 +1,10 @@
 ---
+summary: 'A device on the Internet running the Monero software, with a full copy of the Monero blockchain. It can be local or remote'
 terms: ["node", "nodes", "full-node", "full-nodes"]
-summary: "a device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network"
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### 基础知识
 
 一种在互联网上运行门罗币软件的设备，带有完整的门罗币区块链备份，积极协助门罗币网络。不在本地运行的节点叫做@远程节点。如果只是私人使用的话，远程节点可以是私有的，如果其他人也使用的话，就是开放的。
@@ -12,11 +13,9 @@ summary: "a device on the Internet running the Monero software, with a full copy
 
 节点参与门罗币网络，并通过执行网络规则来保护@交易。节点下载整个@区块链以了解发生了什么交易。节点通过将交易转播到网络上的其他节点来辅助网络。节点也可以通过参与创造@区块（这被称为@挖矿）来为门罗币网络做出贡献。
 
-
 挖矿是节点从以前接受的区块，在交易池中等待被处理的交易，以及@coinbase交易，创建一个新区块的过程。当一个节点认为它创建了一个有效的区块时，它将把完成的区块传输到网络上的其他节点，这些节点通过处理链中的下一个区块来发出同意信号。
 
 节点遵循的规则内置在门罗币软件中;当所有节点都同意遵循的规则时，被称为@共识。共识对于加密货币是必要的，因为它是区块链的构建方式;如果节点不同意哪些区块是有效的，例如没有更新门罗币软件的人，那些不同意的节点将不能再参与到门罗币网络当中。
-
 
 门罗币核心团队计划每6个月进行一次网络升级。升级期间，如果您正在运行一个节点，那么它必须更新到门罗币软件的最新版本，否则它将不能再参与到网络当中。
 
@@ -25,4 +24,3 @@ summary: "a device on the Internet running the Monero software, with a full copy
 ##### 其它资源
 
 <sub>1. *Fluffypony很好地解释了为什么强制的网络升级对门罗币很有好处。* （[门罗币公函_周：2016-06-20]({{ site.baseurl_root }}/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html)）</sub>
-
