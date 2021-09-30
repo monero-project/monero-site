@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-30 16:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:1
+#, no-wrap
+msgid "Pedersen commitments are cryptographic algorithms that allow a prover to commit to a certain value without revealing it or being able to change it"
+msgstr "Pedersen-forpliktelser er kryptografiske algoritmer som lar en beviser forplikte seg til en viss verdi uten å avsløre den eller kunne endre den"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:1
+#, no-wrap
+msgid "[\"commitments\", \"commitment\", \"pedersen\", \"pedersen-commitment\", \"pedersen-commitments\"]"
+msgstr "[\"commitments\", \"commitment\", \"pedersen\", \"pedersen-commitment\", \"pedersen-commitments\", forpliktelse\", \"forpliktelser\", \"pedersen-forpliktelse\", \"pedersen-forpliktelser\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Det grunnleggende"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:11
+#
+msgid "Pedersen commitments are cryptographic algorithms that allow a prover to commit to a certain value without revealing it or being able to change it."
+msgstr "Pedersen-forpliktelser er kryptografiske algoritmer som lar en beviser forplikte seg til en viss verdi uten å avsløre den eller kunne endre den."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:13
+#
+msgid "When you spend Monero, the value of the inputs that you are spending and the value of the outputs you are sending are encrypted and opaque to everyone except the recipient of each of those outputs. Pedersen commitments allow you to send Monero without revealing the value of the transactions. Pedersen commitments also make it possible for people to verify that transactions on the blockchain are valid and not creating Monero out of thin air."
+msgstr "Når du forbruker Monero, er verdien på inndataene du bruker og verdien på utdataene du sender kryptert og ugjennomsiktig for alle, bortsett fra mottakeren av hver av utdataene. Pedersen-forpliktelser lar deg sende Monero uten å avsløre verdien på transaksjonene. Pedersen-forpliktelser gjør det også mulig for folk å verifisere at transaksjoner på blokkjeden er gyldige og at de ikke oppretter Monero ut av ingenting."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:14
+#, no-wrap
+msgid "What It Means"
+msgstr "Hva det innebærer"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:17
+#
+msgid "As long as the encrypted output amounts created, which include an output for the recipient and a change output back to the sender, and the unencrypted transaction fee is equal to the sum of the inputs that are being spent, it is a legitimate transaction and can be confirmed to not be creating Monero out of thin air."
+msgstr "Så lenge de krypterte utdatabeløpene opprettes, som inkluderer en utdata for mottakeren og en veksel-utdata tilbake til senderen, og det ukrypterte transaksjonsgebyret er lik summen av inndataene som brukes, er det en legitim transaksjon, og det kan bekreftes at det ikke opprettes Monero ut av ingenting."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:19
+#
+msgid "Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable. Pedersen commitments also mean that even the ratio of one input to another, or one output to another is undeterminable."
+msgstr "Pedersen-forpliktelser innebærer at summene kan verifiseres som like, men Monero-verdien av hver av summene og Monero-verdien av inndataene og utdataene hver for seg er ubestemte. Pedersen-forpliktelser innebærer også at til og med forholdet mellom én inndata og en annen, eller én utdata og en annen, er ubestemt."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:21
+#
+msgid "It is unclear which inputs are really being spent as the ring signature lists both the real inputs being spent and decoy inputs, therefore you don't actually know which input Pedersen commitments need to be summed. That's okay, because the @RingCT ring signature only has to prove that for one combination of the inputs the outputs are equal to the sum of the inputs. For mathematical reasons, this is impossible to forge."
+msgstr "Det er uklart hvilke inndata som virkelig forbrukes i og med at ringsignaturen lister opp både ekte inndata som forbrukes og avledningsinndata, og derfor kan du ikke vite for hvilke inndata Pedersen-forpliktelsene må summeres. Men det er greit, fordi @RingCT-ringsignaturen må bare bevise at utdataene er like for summen av inndataene for én kombinasjon. Dette er, av matematiske årsaker, umulig å forfalske."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:22
+#, no-wrap
+msgid "In-depth Information"
+msgstr "Inngående informasjon"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:24
+#
+msgid "See information in [Ring Confidential Transactions paper](https://eprint.iacr.org/2015/1098.pdf) by Shen Noether of the Monero Research Lab."
+msgstr "Se mer informasjon i [Ring Confidential Transactions-dokumentet](https://eprint.iacr.org/2015/1098.pdf), skrevet av Shen Noether i Monero Forskningslaben."
