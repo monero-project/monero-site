@@ -1,9 +1,10 @@
 ---
+summary: 佩德森承诺是一种密码算法，它允许验证者在不暴露或无法更改某个值的情况下提交该值。
 terms: ["commitments", "commitment", "pedersen", "pedersen-commitment", "pedersen-commitments"]
-summary: "Pedersen commitments are cryptographic algorythms that allow a prover to commit to a certain value without revealing it or being able to change it"
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### 基础知识
 
 佩德森承诺是一种密码算法，它允许验证者在不暴露或无法更改某个值的情况下提交该值。
@@ -20,4 +21,5 @@ summary: "Pedersen commitments are cryptographic algorythms that allow a prover 
 
 ### 深度信息
 
-参见，门罗币研究实验室的 Shen Noether 撰写的[环机密交易论文](https://eprint.iacr.org/2015/1098.pdf)。
+参见，门罗币研究实验室的 Shen Noether
+撰写的[环机密交易论文](https://eprint.iacr.org/2015/1098.pdf)。
