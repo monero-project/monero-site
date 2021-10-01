@@ -61,10 +61,6 @@ index:
 
 home:
   heading2: عمله رقميه سريه
-  monero_is_cash: مونيرو هو النقد في العالم المُتصل , إنه سريع وسري وآمن. مع مونيرو
-    أنت مصرفك الخاص. يمكنك الإنفاق بأمان بإيقان أن الأخرين لا يمكنهم معرفه رصيدك أو
-    تتبع نشاطك .
-  get_started: إبدأ
   downloads: التنزيلات
   moneropedia_para: هل تريد البحث في معني المصلطحات والمفاهيم المستخدمه في مونيرو
     ؟ هُنا سوف تجد دليل مرتب هجائياً للمصطلحات ومعناها في مشروع مونيرو وأيضاً مشروع
@@ -188,12 +184,7 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
-    has
   hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -203,8 +194,6 @@ downloads:
 
 monero-project: {}
 press-kit:
-  intro1: هنا ستجد رمز وشعار مونيرو بالأسفل. يمكنك إختيار أي حجم تريده أو تنزيل الملف
-    والتعديل علي الشعار كما تريد.
   intro2: لاحظ أن إختيار الخلفيه البيضاء يجعل الخلفيه بيضاء خلف رمز مونيرو فقط, وليست
     خلفيه للصوره كامله.
   intro3: أخيراً, يمكنك تحميل كل شيء في هذه الصفحه في ملف مضغوط واحد بالضغط
@@ -329,15 +318,8 @@ mining:
   intro2: مشروع مونيرو لا يُرجّح حقل (تجمّع للتعدين) أو برامج أو مُعدات معينه والمعلومات
     أدناه لأغراض معرفيه فقط.
   support: الدعم
-  support_para1: إنظر
-  support_para2: المُلتقي,
-  support_para4: و
   pools: الحقول
-  pools_para1: قائمه بالحقول الموثوقه من قبل مونيرو
-  pools_para2: هُنا.
-  benchmarking: مقارنه للمُعدات
   benchmarking_para1: إنظُر هنا
-  benchmarking_para2: قائمه بأنواع الـ CPU/GPU ومُعدل التعدين الخاص بهم.
   software: برامج التعدين
   software_para: لاحظ أن بعض البرامج تحوي رُسوم للمُطور
 

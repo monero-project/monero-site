@@ -62,10 +62,6 @@ index:
 
 home:
   heading2: Vertrouwelijke digitale valuta
-  monero_is_cash: Monero is contant geld voor een verbonden wereld. Het is snel, vertrouwelijk
-    en veilig. Met Monero ben je je eigen bank. Je kunt het veilig uitgeven, want
-    niemand anders kan je saldo bekijken of je activiteit volgen.
-  get_started: Aan de slag
   downloads: Downloads
   moneropedia_para: Wil je de betekenissen van termen en begrippen die in Monero worden
     gebruikt opzoeken? Hier vind je een uitleg in alfabetische volgorde van termen
@@ -192,12 +188,7 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
-    has
   hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -207,8 +198,6 @@ downloads:
 
 monero-project: {}
 press-kit:
-  intro1: Hieronder vind je het symbool en logo van Monero. Je kunt de gewenste grootte
-    kiezen of het .ai-bestand downloaden om het logo zelf te bewerken.
   intro2: "Let op: de opties met een witte achtergrond hebben ALLEEN een witte achtergrond\
     \ onder het Monero-symbool, niet als achtergrond voor de hele afbeelding."
   intro3: Tenslotte kun je alles op deze pagina in een zip downloaden door
@@ -351,15 +340,8 @@ mining:
   intro2: Het Monero-project ondersteunt niet een bepaalde pool, software of hardware.
     De onderstaande gegevens worden alleen ter informatie aangeboden.
   support: Ondersteuning
-  support_para1: Zie
-  support_para2: Ontmoetingsplekken
-  support_para4: en
   pools: Pools
-  pools_para1: Een lijst van betrouwbare Monero-pools vind je
-  pools_para2: hier.
-  benchmarking: Benchmarks voor hardware
   benchmarking_para1: Kijk hier
-  benchmarking_para2: voor een lijst met videokaarten/CPU's en de bijbehorende hashrate.
   software: Miningsoftware
   software_para: "Let op: bij sommige miningprogramma's krijgen de ontwikkelaars een\
     \ vergoeding."

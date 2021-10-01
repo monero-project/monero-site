@@ -58,8 +58,6 @@ index:
   page_title: "门罗币-安全、隐私、无法追踪"
 home:
   heading2: 隐私数字货币
-  monero_is_cash: 门罗币是互联网世界的电子现金。使用门罗币交易快速，保护隐私且安全。有了门罗币，您就是自己的银行。您可以安全地进行交易，不用担心别人会看到你的余额和跟踪你的金融活动。
-  get_started: 开始
   downloads: 下载
   moneropedia_para: 想了解和门罗币相关的词汇和概念？您可以在此处找到门罗币和科维匿名网络（Kovri)相关的知识。
   moneropedia_button: 阅读门罗百科
@@ -166,12 +164,7 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
-    has
   hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -181,7 +174,6 @@ downloads:
 
 monero-project: {}
 press-kit:
-  intro1: 您可以在这里下载门罗币各种大小的图标文件。您可以直接下载图片文件，或者下载.ai格式文件自己编辑。
   intro2: 白色背景填充仅限于门罗币图案内部，而非整个图片。
   intro3: 您可以点击这里把所有的文件下载到一个
   intro4: ZIP中。
@@ -253,15 +245,8 @@ mining:
   intro1: 门罗币是一种使用工作量证明（POW）来实现去中心化共识的加密货币。我们在下方为您列出了一些用于挖矿的信息和工具。
   intro2: 门罗项目并不支持任何特定的矿池、软件、硬件，以下内容仅供参考，是否使用请您自行决定。
   support: 帮助
-  support_para1: 请浏览
-  support_para2: 社区，
-  support_para4: 和
   pools: 矿池
-  pools_para1: 受信任的矿池请参见
-  pools_para2: 这里。
-  benchmarking: 挖矿设备测试
   benchmarking_para1: 此处
-  benchmarking_para2: 提供了各类CPU/GPU的哈希值。
   software: 挖矿软件
   software_para: 注意：一些挖矿软件会收取手续费。
 

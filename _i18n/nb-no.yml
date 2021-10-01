@@ -531,13 +531,7 @@ what-is-monero:
   need-to-know: Hva du trenger å vite
 mining:
   software: Utvinningsprogramvare
-  benchmarking_para2: for en liste over GPU-er/CPU-er og hashratene deres.
-  benchmarking_para1: Se her
-  benchmarking: Maskinvare-benchmark
   pools_para2: her.
-  pools_para1: En liste over pålitelige Monero-pools kan bli funnet
-  support_para4: og
-  support_para2: Treffsteder
   support_para1: Se
   support: Støtte
   intro2: Monero-prosjektet gir ikke tilslutning til en spesifikk pool, programvare
@@ -545,7 +539,6 @@ mining:
   intro1: Monero er en kryptovaluta som avhenger av «proof-of-work» («bevis på arbeid»)-utvinning
     for å oppnå distribuert konsensus. Nedenfor vil du finne informasjon og ressurser
     på hvordan du kan begynne å utvinne.
-  pools: Pools
   software_para: Merk at noen utvinnere kan ta utviklergebyrer.
 faq:
   adangerrnode: 'Det tilrådes alltid, spesielt for brukere som verdsetter personvern,
@@ -913,8 +906,6 @@ press-kit:
   intro3: Avslutningsvis kan du laste ned alt på denne siden i én zip-fil ved å trykke
   intro2: Merk at de hvite bakgrunnsvalgene KUN har en hvit bakgrunn under Monero-symbolet,
     ikke som bakgrunn i hele bildet.
-  intro1: Her vil du finne Monero-symbolet og -logoen nedenfor. Du kan velge den størrelsen
-    du ønsker eller laste ned .ai-filen for å leke med logoen på egenhånd.
   mrllogo_para: Monero Forskningslabs logo i SVG-format.
   othersymbols: Andre symboler og logoer
 downloads:
@@ -925,12 +916,7 @@ downloads:
   mobilelight1: Følgende er mobil- eller light-lommebøker som anses som trygge av
     respekterende medlemmer av samfunnet. Hvis det finnes en lommebok som ikke står
     oppført her, kan du be samfunnet om å ta en titt på den. Gå til
-  hardware5: Det er støtte for Trezor modell T i Monero CLI- og Monero GUI-lommebøkene.
-  hardware4: Det er støtte for Ledger Nano S og Nano X i Monero CLI-, Monero GUI-
-    og Monerujo-lommebøkene.
-  hardware3: som for øyeblikket pågår.
   hardware2: dedikert maskinvarelommebok (Kastelo)
-  hardware1: Monero-samfunnet har finansiert en
   showhash4: 'To veiledninger er tilgjengelige for å veilede deg gjennom verifiseringsprosessen:'
   showhash3: i kildekoden
   showhash2: og bør behandles som kanonisk, der signaturen kontrolleres opp mot den
@@ -1133,10 +1119,6 @@ home:
     spørsmålene dine ikke er der – du kan alltid spørre Monero-samfunnet.
   faq: Ofte stilte spørsmål
   downloads: Nedlastinger
-  get_started: Kom i gang
-  monero_is_cash: Monero er kontanter for en sammenkoblet verden. Det er raskt, privat
-    og sikkert. Med Monero er du din egen bank. Du kan forbruke på en trygg måte i
-    visshet om at andre ikke kan se saldoene dine eller spore aktiviteten din.
   heading2: En privat, digital valuta
   contributing: Å bidra
   visitmrl: Besøk Monero Forskningslaben
