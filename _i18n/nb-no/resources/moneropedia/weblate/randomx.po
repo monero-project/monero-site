@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-03 10:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/randomx.md:1
+#, no-wrap
+msgid "ASIC-resistant POW algoritm currently used by Monero"
+msgstr "ASIC-resistent POW-algoritme som for tiden brukes av Monero"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/randomx.md:1
+#, no-wrap
+msgid "[\"randomx\", \"random-x\"]"
+msgstr "[\"randomx\", \"random-x\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/randomx.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/randomx.md:9
+#
+msgid "RandomX is a Proof Of Work algorithm developed by Monero contributors and adopted by Monero from release 0.15."
+msgstr "RandomX er en «Proof Of Work»-algoritme, utviklet av Monero-bidragsytere, og ble tatt i bruk av Monero fra og med 0.15-utgivelsen."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/randomx.md:11
+#
+msgid "This innovative POW is optimized for CPUs and it's based on execution of random code and other memory-heavy techniques. The goal is to discourage the use of specialized hardware (like ASICs) for @mining Monero. RandomX was created with the intent of keeping mining decentralized and to create a more egalitarian distribution of the @block rewards."
+msgstr "Denne innovative POW-en er optimalisert for CPU-er og er basert på utførelsen av tilfeldig kode og andre teknikker som krever mye minne. Målet er å fraråde bruken av spesialisert maskinvare (som ASIC-er) for å @utvinne Monero. RandomX ble opprettet med hensikt å holde utvinning desentralisert og å opprette en mer egalitær distribusjon av @blokk-belønningene."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/randomx.md:12
+#
+msgid "RandomX specifications and development can be found [on the GitHub repository](https://github.com/tevador/RandomX), while [an article dedicated to RandomX](https://www.monerooutreach.org/stories/RandomX.html) made by the Outreach workgroup contains more information about the history of RandomX and its relation with Monero."
+msgstr "Spesifikasjonene og utviklingen til Random X kan bli funnet [i GitHub-arkivet](https://github.com/tevador/RandomX), mens [en artikkel dedikert til RandomX](https://www.monerooutreach.org/stories/RandomX.html) som er laget av Outreach-arbeidsgruppen inneholder mer informasjon om historikken til RandomX og dets tilknytning til Monero."
