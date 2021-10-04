@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-04 11:57+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/ring-size.md:1
+#, no-wrap
+msgid "total number of possible signers in a ring signature"
+msgstr "totalt antall mulige underskrivere i en ringsignatur"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/ring-size.md:1
+#, no-wrap
+msgid "[\"ring-size\"]"
+msgstr "[\"ring-size\", \"ringstørrelse\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ring-size.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/ring-size.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Det grunnleggende"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ring-size.md:11
+#
+msgid "Ring size refers to the total number of signers in a @ring-signature. Before release [0.13.0 \"Beryllium Bullet\"]({{ site.baseurl }}/2018/10/11/monero-0.13.0-released.html), it was possible to select an arbitrary number of signers. With release 0.13, it was decided to set this number to 11 to enforce transaction uniformity."
+msgstr "Ringstørrelse refererer til det totale antallet underskrivere i en @ring-signatur. Før utgivelsen av [0.13.0 \"Beryllium Bullet\"]({{ site.baseurl }}/2018/10/11/monero-0.13.0-released.html), var det mulig å velge et vilkårlig antall underskrivere (av og til med minstegrenser). Med 0.13-utgivelsen, ble det bestemt å sette dette tallet til 11 for å tvinge gjennom transaksjonsensartethet."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ring-size.md:13
+#
+msgid "`Ring size (11) = foreign outputs (10) + your output (1)`"
+msgstr "`Ring size (11) = foreign outputs (10) + your output (1)`"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ring-size.md:14
+#
+msgid "Foreign outputs are typically called \"decoys,\" and the number of decoys was previously called the \"mixin\" size."
+msgstr "Fremmede utdata (foreign outputs) kalles som regel for «avledninger» (decoys), og antallet avledninger ble tidligere kalt for «mixin»-størrelsen."
