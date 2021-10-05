@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-05 10:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:1
+#, no-wrap
+msgid "a group of cryptographic signatures with at least one real participant, but no way to tell which in the group is the real one as they all appear valid"
+msgstr "en gruppe kryptografiske signaturer med minst én ekte deltaker, men ingen måte å fastslå hvem i gruppen som er den ekte i og med at alle fremstår som gyldige"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:1
+#, no-wrap
+msgid "[\"ring-signature\", \"ring-signatures\"]"
+msgstr "[\"ring-signature\", \"ring-signatures\", \"ringsignatur\", \"ringsignaturer\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Det grunnleggende"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:11
+#
+msgid "In cryptography, a ring signature is a type of digital signature that can be performed by any member of a group of users that each have keys. Therefore, a message signed with a ring signature is endorsed by someone in a particular group of people. One of the security properties of a ring signature is that it should be computationally infeasible to determine *which* of the group members' keys was used to produce the signature."
+msgstr "I kryptografi er en ringsignatur en slags digital signatur som kan utføres av et hvilket som helst medlem av en gruppe brukere der hver har nøkler. En melding som er signert med en ringsignatur er derfor støttet av noen i en bestemt gruppe mennesker. Én av sikkerhetsegenskapene av en ringsignatur er at det er ulønnsomt å bruke regnekraft til å fastslå *hvilke* av gruppemedlemmenes nøkler som ble brukt for å produsere signaturen."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:13
+#
+msgid "For instance, a ring signature could be used to provide an anonymous signature from \"a high-ranking White House official\", without revealing which official signed the message. Ring signatures are right for this application because the anonymity of a ring signature cannot be revoked, and because the group for a ring signature can be improvised (requires no prior setup)."
+msgstr "En ringsignatur kan for eksempel brukes til å oppgi en anonym signatur fra en «høytstående tjenestemann i Det hvite hus» uten å avsløre hvilken tjenestemann som signerte meldingen. Ringsignaturer er et egnet bruksområde for dette fordi anonymiteten til en ringsignatur ikke kan tilbakekalles, og fordi gruppen tilknyttet en ringsignatur kan improviseres (som ikke krever noe tidligere oppsett)."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:14
+#, no-wrap
+msgid "Application to Monero"
+msgstr "Anvendelde for Monero"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:17
+#
+msgid "A ring signature makes use of your @account keys and a number of public keys (also known as outputs) pulled from the @blockchain using a triangular distribution method. Over the course of time, past outputs could be used multiple times to form possible signer participants. In a \"ring\" of possible signers, all ring members are equal and valid. There is no way an outside observer can tell which of the possible signers in a signature group belongs to your @account. So, ring signatures ensure that transaction outputs are untraceable. Moreover, there are no @fungibility issues with Monero given that every transaction output has plausible deniability (e.g. the network can not tell which outputs are spent or unspent)."
+msgstr "En ringsignatur benytter @kontonøklene dine og en rekke offentlige nøkler (også kjent som utdata) som trekkes fra @blokkjeden ved å bruke en triangulær fordelingsmetode. Tidligere utdata kan over tid brukes flere ganger for å danne mulige signaturdeltakere. I en «ring» av mulige underskrivere, er alle ringmedlemmer like og gyldige. En utenforstående kan ikke fortelle hvilke av de mulige underskriverne i en signaturgruppe som tilhører din @konto. Ringsignaturer sikrer med andre ord at transaksjonsutdata er usporbare. Det er dessuten ingen @fungibilitetsproblemer med Monero fordi hver transaksjonsutdata har en plausibel benektelse (nettverket kan for eksempel ikke skille hvilke utdata som er brukt eller ubrukt)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringsignatures.md:18
+#
+msgid "To read how Monero gives you privacy by default (unlinkability), see @stealth-addresses."
+msgstr "For å lese om hvordan Monero gir deg personvern som standard («unlinkability»), kan du lese i seksjonen om @stealth-adresser."
