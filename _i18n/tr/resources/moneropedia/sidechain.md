@@ -10,7 +10,7 @@ summary: "a blockchain that is merge mined with a primary blockchain"
 
 A sidechain (also known as an auxillary chain) is a @blockchain that is @merge-mined with Monero or other cryptocurrency. In most cases the sidechain will have a lower difficulty than the primary blockchain.
 
-A sidechain that that allows you to transfer assets between different blockchains is called a "pegged blockchain". It works by setting the value of one asset equal to the value of another asset on an alternate blockchain, otherwise known as pegging. Currently there are no pegged sidechains that exist for Monero.
+A sidechain that allows you to transfer assets between different blockchains is called a "pegged blockchain". It works by setting the value of one asset equal to the value of another asset on an alternate blockchain, otherwise known as pegging. Currently there are no pegged sidechains that exist for Monero.
 
 ### More Information
 
