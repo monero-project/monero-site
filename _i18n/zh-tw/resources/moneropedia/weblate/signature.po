@@ -1,0 +1,48 @@
+# Language zh-tw translations for PACKAGE package
+# Copyright (C) 2021 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-07 09:48+0100\n"
+"PO-Revision-Date: 2021-10-07 09:48+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh-tw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/signature.md:1
+#, no-wrap
+msgid "a cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/signature.md:1
+#, no-wrap
+msgid "[\"signature\", \"signatures\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/signature.md:7
+msgid ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/signature.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/signature.md:10
+msgid ""
+"A cryptographic method for proving ownership of a piece of information, as "
+"well as proving that the information has not been modified after being "
+"signed."
+msgstr ""
