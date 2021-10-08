@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-08 08:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/smartmining.md:1
+#, no-wrap
+msgid "a process of having a throttled miner mine when it otherwise does not cause drawbacks"
+msgstr "Смарт-майнинг - это процесс безошибочного майнинга при помощи регулируемого майнера"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/smartmining.md:1
+#, no-wrap
+msgid "[\"smart-mining\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/smartmining.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:12
+#
+msgid "Smart mining is the process of having a throttled @miner mine when it otherwise does not cause drawbacks.  Drawbacks include increases heat, slower machine, depleting battery, etc. The intent of smart mining is to increase network security by allowing as many people as possible to let the smart miner on all the time. For this to work, the miner must prove unobtrusive, or it will be turned off, depriving the Monero network from a little bit of security. As such, it is likely that a smart miner will mine slower than a normal miner on the same hardware."
+msgstr "Смарт-майнинг - это процесс безошибочного @майнинга при помощи регулируемого майнера. Ошибками считаются перегрев, замедление работы машины, разрядка батареи и т. д. Задача смарт-майнинга состоит в повышении уровня безопасности сети, чтобы максимальное количество людей смогло использовать смарт-майнер на постоянной основе. Для этого майнер не должен выделяться, иначе он будет отключён, лишая сеть Monero некой малой толики безопасности. Как таковой смарт-майнер, вероятнее всего, будет работать медленнее, чем обычный майнер на том же оборудовании."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:14
+#
+msgid "Smart mining is available in the official CLI and GUI wallet, which are available in the [downloads page]({{ site.baseurl_root }}/downloads/)."
+msgstr "Смарт-майнинг возможен с официальным CLI и GUI кошельком, которые можно скачать на [странице загрузок]({{ site.baseurl }}/downloads/)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:15
+#
+msgid "It is hoped that the relative slowness of a smart miner (especially on low-power machines) will be offset by the large amount of people running a miner for a possible \"lottery win\", and thus increase the Monero network security by a non trivial amount. The increased hash rate from many different sources helps keep the Monero network decentralized."
+msgstr "Есть надежда, что относительная медлительность смарт-майнера (особенно на маломощных машинах) будет компенсироваться большим количеством людей, использующим майнер для возможного \"выигрыша в лотерею\", что повысит безопасность сети Monero за счёт нетривиальной суммы. Повышение хешрейта за счёт различных источников способствует децентрализации сети Monero."

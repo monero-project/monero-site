@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-08 08:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/smartmining.md:1
+#, no-wrap
+msgid "a process of having a throttled miner mine when it otherwise does not cause drawbacks"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/smartmining.md:1
+#, no-wrap
+msgid "[\"smart-mining\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/smartmining.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:12
+#
+msgid "Smart mining is the process of having a throttled @miner mine when it otherwise does not cause drawbacks.  Drawbacks include increases heat, slower machine, depleting battery, etc. The intent of smart mining is to increase network security by allowing as many people as possible to let the smart miner on all the time. For this to work, the miner must prove unobtrusive, or it will be turned off, depriving the Monero network from a little bit of security. As such, it is likely that a smart miner will mine slower than a normal miner on the same hardware."
+msgstr "智能挖矿是一种在不造成损害的情况下，使用降频@矿工程序挖矿的过程。 损害包括增加发热量，使机器变慢，耗尽电池等。智能挖矿的目的是通过允许尽可能多的人让智能矿工程序一直工作来提高网络安全。要使这一功能发挥作用，矿工程序必须证明不引人注目，否则它将被关闭，进而剥夺了门罗币的一些网络安全。因此，在相同的硬件上，智能矿工程序的挖矿速度可能比普通矿工程序要慢。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:14
+#
+msgid "Smart mining is available in the official CLI and GUI wallet, which are available in the [downloads page]({{ site.baseurl_root }}/downloads/)."
+msgstr "智能挖矿功能可以在官方的 CLI 和 GUI 钱包中找到，钱包可以在[下载页面](https://getmonero.org/downloads/)中进行下载。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:15
+#
+msgid "It is hoped that the relative slowness of a smart miner (especially on low-power machines) will be offset by the large amount of people running a miner for a possible \"lottery win\", and thus increase the Monero network security by a non trivial amount. The increased hash rate from many different sources helps keep the Monero network decentralized."
+msgstr "希望智能矿工（尤其是在低功耗机器上）的相对慢速，能够被大量的人运行矿工程序所弥补，这些人的目标是中个大奖，从而使门罗币网络安全获得不小的提高。从许多不同来源增加的算力有助于维护门罗币网络的去中心化。"
