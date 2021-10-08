@@ -4,6 +4,7 @@ summary: "a process of having a throttled miner mine when it otherwise does not 
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 Smart mining is the process of having a throttled @miner mine when it otherwise does not cause drawbacks.
