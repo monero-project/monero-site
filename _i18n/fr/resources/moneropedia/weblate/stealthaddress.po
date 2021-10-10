@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-10 09:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:1
+#, no-wrap
+msgid "automatic one-time addresses for every transaction"
+msgstr "Adresses à usage unique automatiques pour chaque transaction"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:1
+#, no-wrap
+msgid "[\"stealth-address\", \"stealth-addresses\"]"
+msgstr "[\"stealth-address\", \"stealth-addresses\", \"adresse-furtive\", \"adresses-furtives\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Les Bases"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:11
+#
+msgid "Stealth addresses are an important part of Monero's inherent privacy. They allow and require the sender to create random one-time addresses for every @transaction on behalf of the recipient. The recipient can publish just one address, yet have all of his/her incoming payments go to unique addresses on the @blockchain, where they cannot be linked back to either the recipient's published address or any other transactions' addresses. By using stealth addresses, only the sender and receiver can determine where a payment was sent."
+msgstr "Les adresses furtives constitue une part importante de la confidentialité inhérente à Monero. Elle permettent et imposent à l'émetteur de créer une adresse à usage unique aléatoire pour chaque @transaction pour le compte du destinataire. Le destinataire peut publier une seule adresse tout en recevant ses paiements à destinations d'adresses uniques sur la @chaîne-de-blocs, ou elles ne peuvent pas être reliées ni à l'adresse publiée du destinataire, ni à aucune autre adresse de transaction. En utilisant les adresses furtives, seule l'émetteur et le destinataire peuvent déterminer où un paiement à été envoyé."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:13
+#
+msgid "When you create a Monero account you’ll have a private @view-key, a private @spend-key, and a Public Address. The @spend-key is used to send payments, the @view-key is used to display incoming transactions destined for your account, and the Public Address is for receiving payments. Both the @spend-key and @view-key are used to build your Monero address. You can have a “watch only” wallet that only uses the @view-key. This feature can be used for accounting or auditing purposes but is currently unreliable due to the inability to track outgoing transactions. You can decide who can see your Monero balance by sharing your @view-key. Monero is private by default and optionally semi-transparent!"
+msgstr "Lorsque vous créez un compte Monero, vous obtenez une @clef-d'audit privée, une @clef-de-dépense privée et une adresse publique. La @clef-de-dépense est utilisée pour envoyer de paiements, la @clef-d'audit permet d'afficher les transactions entrantes à destination de votre compte et l'adresse publique sert à recevoir des paiements. Les deux @clef-de-dépense et @clef-d'audit servent à construire votre adresse Monero. Vous pouvez disposez d'un portefeuille \"lecture seule\" qui n'utilise que la @clef-d'audit. Cette fonctionnalité peut être utilisée pour des besoins de comptabilité et de contrôle, mais est actuellement peu fiable à cause de l'impossibilité de suivre les transactions sortantes. Vous pouvez décider qui peut voir votre solde de Moneroj en partageant votre @clef-d'audit. Monero est privé par défaut, et optionnellement semi-transparent !"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:15
+#
+msgid "When using the Monero Wallet all this is handled by the software.  Sending Monero is as easy as entering the destination address, the amount, and pressing Send.  To recieve Monero, simply provide the sender your Public Address."
+msgstr "Lorsque vous utilisez votre portefeuille Monero, tout ceci est géré par le logiciel. Envoyer des Moneroj est aussi simple qu'entrer une adresse de destination, un montant, et d'appuyer sur Envoyer. Pour recevoir des Moneroj, communiquez simplement votre adresse publique à l'émetteur."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:16
+#
+msgid "To learn how Monero prevents tracking history (untraceability), see @ring-signatures."
+msgstr "Pour en savoir plus sur la prévention du traçage d'historique de Monero (intraçabilité), voir les @signatures-de-cercle."

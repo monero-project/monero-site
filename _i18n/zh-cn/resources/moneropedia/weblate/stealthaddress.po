@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-10 09:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:1
+#, no-wrap
+msgid "automatic one-time addresses for every transaction"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:1
+#, no-wrap
+msgid "[\"stealth-address\", \"stealth-addresses\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:11
+#
+msgid "Stealth addresses are an important part of Monero's inherent privacy. They allow and require the sender to create random one-time addresses for every @transaction on behalf of the recipient. The recipient can publish just one address, yet have all of his/her incoming payments go to unique addresses on the @blockchain, where they cannot be linked back to either the recipient's published address or any other transactions' addresses. By using stealth addresses, only the sender and receiver can determine where a payment was sent."
+msgstr "混淆地址是门罗币固有隐私性的重要组成部分。它们允许并要求发送方代表接收方为每个@交易创建随机的一次性地址。接收方只能发布一个地址，但他/她的所有收入支付都被转到@区块链上的唯一地址，该地址无法链接回接收方发布的地址或任何其他交易的地址。通过使用混淆地址，只有发送方和接收方可以确定付款被发送到何处。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:13
+#
+msgid "When you create a Monero account you’ll have a private @view-key, a private @spend-key, and a Public Address. The @spend-key is used to send payments, the @view-key is used to display incoming transactions destined for your account, and the Public Address is for receiving payments. Both the @spend-key and @view-key are used to build your Monero address. You can have a “watch only” wallet that only uses the @view-key. This feature can be used for accounting or auditing purposes but is currently unreliable due to the inability to track outgoing transactions. You can decide who can see your Monero balance by sharing your @view-key. Monero is private by default and optionally semi-transparent!"
+msgstr "当您创建门罗币帐户时，您将拥有一个私有@查看密钥、一个私有@支付密钥和一个公共地址。@支付密钥用于付款，@查看密钥用于显示发送到您的帐户的收入交易，公共地址用于接收付款。@支付密钥和@查看密钥都用于构建门罗币地址。您可以拥有一个只使用@查看密钥的“仅查看”钱包。此功能可以用于会计或审计目的，但由于无法跟踪转出的交易，目前是不太可靠的。你可以通过分享你的@查看密钥来决定谁可以看到你的门罗币余额。门罗币具有默认的隐私性，以及可选择的半透明性。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:15
+#
+msgid "When using the Monero Wallet all this is handled by the software.  Sending Monero is as easy as entering the destination address, the amount, and pressing Send.  To recieve Monero, simply provide the sender your Public Address."
+msgstr "当使用门罗币钱包时，所有这些都是由软件处理的。发送门罗币简单到只需要输入目标地址、金额并按下发送即可。要接收门罗币，只需向发送者提供您的公共地址。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/stealthaddress.md:16
+#
+msgid "To learn how Monero prevents tracking history (untraceability), see @ring-signatures."
+msgstr "要了解门罗币是如何防止追溯交易历史（不可跟踪性），请参见@环签名。"
