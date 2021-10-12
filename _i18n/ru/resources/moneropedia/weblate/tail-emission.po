@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-12 12:56+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:1
+#, no-wrap
+msgid "the block reward at the end of the emission curve"
+msgstr "Вознаграждение за блок в конце кривой эмиссии"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:1
+#, no-wrap
+msgid "[\"Tail-Emission\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:11
+#
+msgid "Monero block rewards will never drop to zero. Block rewards will gradually drop until tail emission commences at the end of May 2022. At this point, rewards will be fixed at 0.6 XMR per block."
+msgstr "Вознаграждение за блок Monero никогда не станет нулевым. Размер вознаграждения будет постепенно снижаться вплоть до начала хвостовой эмиссии, которое состоится в конце мая 2022. С этого момента размер вознаграждения за блок станет фиксированным и будет составлять 0,6 XMR за блок."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:12
+#, no-wrap
+msgid "Why"
+msgstr "Почему так"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:15
+#
+msgid "Miners need an incentive to mine. Because of the dynamic blocksize, competition between @miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network."
+msgstr "Майнерам требуется стимул для того, чтобы заниматься майнингом. Из-за динамической природы размера блока, соревнование между @майнерами приведёт к снижению комиссий. Если майнинг не приносит прибыли из-за высоких затрат на него и низкого вознаграждения, майнеры теряют стимул и прекращают заниматься майнингом, что снижает безопасность сети."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:16
+#
+msgid "Tail emission ensures that a dynamic block size and fee market can develop."
+msgstr "Хвостовая эмиссия гарантирует, что динамический размер блока и конкуренция комиссий будут развиваться."
