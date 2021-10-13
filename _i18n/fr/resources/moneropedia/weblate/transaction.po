@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-13 11:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/transaction.md:1
+#, no-wrap
+msgid "a cryptographically signed container that details the transfer of Monero to a recipient (or recipients)"
+msgstr "Un conteneur signé cryptographiquement qui détaille le transfert de Moneroj à un destinataire (ou des destinataires)."
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/transaction.md:1
+#, no-wrap
+msgid "[\"transaction\", \"transactions\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/transaction.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Les Bases"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:11
+#
+msgid "A cryptographically signed container that details the transfer of Monero to a recipient (or recipients)."
+msgstr "Un conteneur signé cryptographiquement qui détaille le transfert de Moneroj à un destinataire (ou des destinataires)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:13
+#
+msgid "The parameters of a transaction contain one or more recipient addresses with corresponding amounts of funds and a @ring-size parameter that specifies the number outputs bound to the transaction. The more outputs that are used, a higher degree of obfuscation is possible, but that comes with a cost. Since a transaction gets larger with more outputs, the transaction fee will be higher."
+msgstr "Les paramètres d'une transaction contiennent une ou plusieurs adresses de destinataires avec le montant des fonds correspondants et un paramètre de @taille-de-cercle qui spécifie le nombre de sorties attachées à la transaction. Plus le nombre de sorties est important, plus grand est le degré d'obscurcissement possible, mais cela a un coût. Comme une transaction devient plus grande avec plus de sorties, les frais de transaction seront plus élevés."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:15
+#
+msgid "It is possible to form a transaction offline, which offers additional privacy benefits."
+msgstr "Il est possible de concevoir une transaction hors-ligne, ce qui permet une confidentialité supplémentaire."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:17
+#
+msgid "A transaction can be uniquely identified with the use of an optional Transaction ID, which is usually represented by a 32-byte string (64 hexadecimal characters)."
+msgstr "Une transaction peut être identifiée de façon unique en utilisant un ID de transaction optionnel, qui est habituellement représenté par une chaîne de caractères de 32 octets (64 caractères hexadécimaux)."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/transaction.md:18
+#, no-wrap
+msgid "In-depth Information"
+msgstr "Informations détaillées"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:21
+#
+msgid "Every transaction involves two keys: a public @spend-key, and a public @view-key. The destination for an output in a transaction is actually a one-time public key computed from these two keys."
+msgstr "Chaque transaction nécessite deux clefs : une @clef-de-dépense publique et une @clef-d'audit publique. La destination d'une sortie de transaction est en réalité une clef publique à usage unique calculée à partir de ces deux clefs."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:23
+#
+msgid "When a wallet is scanning for incoming transactions, every transaction is scanned to see if it is for \"you\". This only requires your private view key and your public spend key, and this check is immutable and cannot be faked. You cannot receive transactions and identify them without a corresponding private view key."
+msgstr "Lorsqu'un portefeuille est à la recherche de transactions entrantes, chaque transaction est scannée pour voir si elle est pour \"vous\". Cela ne nécessite que votre clef privée d'autit et votre clef de dépense publique, et cette vérification est immuable et ne peut pas être falsifiée. Vous ne pouvez pas recevoir de transactions et les identifier sans la clef privée d'audit correspondante."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/transaction.md:24
+#
+msgid "In order to spend the funds you have to compute a one-time private spend key for that output.  This is almost always done automatically by the Monero Wallet software."
+msgstr "Afin de dépenser les fonds que vous avez, vous devez calculer une clef de dépense privée à usage unique pour cette sortie. Ce qui est la plupart du temps fait automatiquement par le logiciel de portefeuille Monero."
