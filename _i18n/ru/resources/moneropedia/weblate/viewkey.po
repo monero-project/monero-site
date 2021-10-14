@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-14 12:19+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/viewkey.md:1
+#, no-wrap
+msgid "one of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account"
+msgstr "Один из двух наборов приватных и публичных криптографических ключей, которые есть у каждого счёта. При этом приватный ключ просмотра необходим для просмотра всех транзакций, связанных со счётом."
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/viewkey.md:1
+#, no-wrap
+msgid "[\"view-key\", \"view-keys\"]"
+msgstr "[\"view-key\", \"view-keys\", \"ключ-просмотра\", \"ключа-просмотра\", \"ключом-просмотра\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/viewkey.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Основная информация"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:11
+#
+msgid "One of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account."
+msgstr "Один из двух наборов приватных и публичных криптографических ключей, которые есть у каждого счёта. При этом приватный ключ просмотра необходим для просмотра всех транзакций, связанных со счётом."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:13
+#
+msgid "Monero features an opaque blockchain (with an explicit allowance system called the @view-key), in sharp contrast with transparent blockchains used by any other cryptocurrency not based on CryptoNote. Thus, Monero is said to be \"private, optionally transparent\"."
+msgstr "Monero использует скрытый блокчейн (с системой допуска, называемой @ключом-просмотра), что отличает эту криптовалюту от других, использующих прозрачный блокчейн, не основанный на протоколе CryptoNote. Поэтому Monero называют анонимной криптовалютой с опциональной прозрачностью."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:14
+#
+msgid "Every Monero address has a private viewkey which can be shared.  By sharing a viewkey, a person is allowing access to view every incoming transaction for that address.  However, outgoing transactions cannot be reliably viewed as of June 2017. Therefore, the balance of a Monero address as shown via a viewkey should not be relied upon."
+msgstr "Каждый адрес Monero имеет приватный ключ просмотра, которым можно поделиться. Раскрывая ключ просмотра, пользователь предоставляет доступ к просмотру каждой входящей транзакции для соответствующего адреса. Тем не менее по состоянию на июнь 2017 исходящие транзакции не могут быть просмотрены надлежащим образом. Следовательно, баланс по адресу Monero, который можно увидеть посредством ключа просмотра, не является надёжным."
