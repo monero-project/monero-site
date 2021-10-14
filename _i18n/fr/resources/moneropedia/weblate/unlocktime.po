@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-14 10:41+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:1
+#, no-wrap
+msgid "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
+msgstr "Une transaction spécifique où le destinataire ne peut dépenser les fonds qu'à une date ultérieure, définie par l'émetteur."
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:1
+#, no-wrap
+msgid "[\"unlock-time\"]"
+msgstr "[\"unlock-time\", \"durée-de-déverrouillage\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Les Bases"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:11
+#
+msgid "A special transaction where the recipient can only spend the funds after a future date, as set by the sender."
+msgstr "Une transaction spécifique où le destinataire ne peut dépenser les fonds qu'à une date ultérieure, définie par l'émetteur."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:13
+#
+msgid "Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time."
+msgstr "La durée de déverrouillage vous autorise à envoyer une transaction à quelqu'un de sorte qu'il ne pourra dépenser le montant reçu qu'après un certain nombre de blocs, ou après un certain temps."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:14
+#
+msgid "Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.it/wiki/NLockTime), in which the transaction is not valid until the given time."
+msgstr "Remarquez que cela fonctionne différemment du [nLockTime](https://en.bitcoin.it/wiki/NLockTime) de Bitcoin dans lequel une transaction n'est pas valide avant le temps indiqué."
