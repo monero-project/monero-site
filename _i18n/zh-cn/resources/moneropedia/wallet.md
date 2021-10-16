@@ -1,9 +1,10 @@
 ---
+summary: 'A wallet stores the information necessary to send and receive Monero'
 terms: ["wallet", "wallets"]
-summary: "A wallet stores the information necessary to send and receive Monero"
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### 基础知识
 
 门罗币帐户或钱包存储了发送和接收门罗币所需的信息。除了发送和接收之外，门罗币钱包软件还保存了您交易的私人历史记录，并允许您对消息进行加密签名。它还包括门罗币的挖矿软件和地址薄。
@@ -12,6 +13,7 @@ summary: "A wallet stores the information necessary to send and receive Monero"
 
 冷钱包是通过@网闸在可信任的设备或计算机上生成的。如果这个设备是被再次使用，应该安全地覆盖数据存储。只要一个冷钱包被连接到互联网，又或许是它的助记词或@支付密钥被输入到一个联网的设备上，那么该设备就不再是“冷的”，而应该被认为是“热的”。
 
-可以通过下载 https://moneroaddress.org/ 的源代码生成一个门罗币的@纸钱包。在可信的被网闸隔绝的设备上验证代码的签名。创建钱包并打印或存储在您所选择的媒体上。
+可以通过下载 https://moneroaddress.org/
+的源代码生成一个门罗币的@纸钱包。在可信的被网闸隔绝的设备上验证代码的签名。创建钱包并打印或存储在您所选择的媒体上。
 
 门罗币账户和纸钱包可以存储在任何媒体上——纸张、U盘、CD/DVD或硬件钱包设备（例如：Ledger 钱包于2018年6月开始支持门罗币）。
