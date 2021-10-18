@@ -60,6 +60,7 @@ permalink: /get-started/mining/index.html
                         <ul>
                             <li><a href="https://github.com/xmrig/xmrig">XMRig</a></li>
                             <li><a href="https://cryptonote.social/tools/csminer">CSminer</a></li>
+                            <li><a href="https://xmr-online.github.io/#">XMROnline</a></li>
                         </ul>
                         {% t mining.software_para %}
                         </p>
