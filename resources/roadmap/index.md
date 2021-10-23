@@ -197,6 +197,8 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.onionaddress %}</li>
                                 <h3 class="months">{% t roadmap.aug %}</h3>
                                     <li class="completed">{% t roadmap.atomicswaps %}</li>
+                                <h3 class="months">{% t roadmap.oct %}</h3>
+                                    <li class="completed"><a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">{% t roadmap.p2pool %}</a></li>
                             </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>

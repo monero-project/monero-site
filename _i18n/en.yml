@@ -782,6 +782,7 @@ roadmap:
   returnaddr: Return addresses
   atomicswaps: Monero <-> Bitcoin atomic swaps
   bplus: Bulletproofs+
+  p2pool: P2Pool released
 
 
 research-lab:
