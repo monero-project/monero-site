@@ -53,6 +53,26 @@ permalink: /get-started/mining/index.html
         <div class="row">
             <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="info-block text-adapt">
+                    <h2>{% t mining.p2poolh %}</h2>
+                        <p>{% t mining.p2poolnew %}</a></p>
+                        <p>{% t mining.p2poolp %}</p>
+                        <h3>{% t mining.p2poolfeatures %}</h3>
+                            <ul class="logo">
+                                <li>{% t mining.p2pdecentralized %}</li>
+                                <li>{% t mining.p2ppermissionless %}</li>
+                                <li>{% t mining.p2ptrustless %}</li>
+                                <li>{% t mining.p2pplns %}</li>
+                                <li><b>{% t mining.p2pzerofee %}</b></li>
+                                <li>{% t mining.p2pzeropayout %}</li>
+                                <li>{% t mining.p2pminpayout %}</li>
+                            </ul>
+                            <p>{% t mining.p2pmoreinfo %} <a href="https://github.com/SChernykh/p2pool">github.com/SChernykh/p2pool</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="info-block text-adapt">
                     <h2>{% t mining.hardware %}</h2>
                         <p>{% t mining.hardwarep %}</p>
                     <h2>{% t mining.software %}</h2>
