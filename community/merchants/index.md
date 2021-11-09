@@ -99,10 +99,11 @@ permalink: /community/merchants/index.html
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
+            <li><a href="https://https://swapspace.co/">SwapSpace.co</a> - instant cryptocurrency exchange aggregator</li>
             <li><a href="https://sideshift.ai/">Sideshift.ai</a></li>
             <li><a href="https://www.morphtoken.com/">Morphtoken</a></li>
             <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
-            <li><a href="https://changenow.io/">ChangeNow</a></li>
+            <li><a href="https://changenow.io/">ChangeNow</a> and <a href="https://https://xmrexchange.io/">Monero Instant Exchange</a> (powered by ChangeNow)</li>
             <li><a href="https://godex.io/">Godex</a></li>
           </ul>
       </div>
