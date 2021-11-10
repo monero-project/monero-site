@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-14 10:41+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:1
+#, no-wrap
+msgid "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
+msgstr "一种特殊的交易，在这种交易中，收件人只能在将来某个日期之后才可以使用资金，这是由发送者设定的。"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:1
+#, no-wrap
+msgid "[\"unlock-time\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:11
+#
+msgid "A special transaction where the recipient can only spend the funds after a future date, as set by the sender."
+msgstr "一种特殊的交易，在这种交易中，收件人只能在将来某个日期之后才可以使用资金，这是由发送者设定的。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:13
+#
+msgid "Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time."
+msgstr "解锁时间允许您向某人发送一笔交易，而接收者就必须在一定数量的区块后，或者直到某一时间才能使用该笔资金。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:14
+#
+msgid "Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.it/wiki/NLockTime), in which the transaction is not valid until the given time."
+msgstr "注意，这与比特币的 [nLockTime](https://en.bitcoin.it/wiki/NLockTime) 不同，在比特币的网络当中，交易直到给定的时间才有效。"

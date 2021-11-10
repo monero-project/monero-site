@@ -4,6 +4,7 @@ summary: "a special transaction where the recipient can only spend the funds aft
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
 
 A special transaction where the recipient can only spend the funds after a future date, as set by the sender.
