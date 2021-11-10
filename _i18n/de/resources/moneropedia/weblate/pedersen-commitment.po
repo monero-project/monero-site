@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-30 16:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:1
+#, no-wrap
+msgid "Pedersen commitments are cryptographic algorithms that allow a prover to commit to a certain value without revealing it or being able to change it"
+msgstr "Pedersen-Commitments sind kryptografische Algorithmen, die es einer beweisenden Partei erlauben, sich auf einen bestimmten Wert festzulegen, ohne diesen zu offenbaren oder ändern zu können"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:1
+#, no-wrap
+msgid "[\"commitments\", \"commitment\", \"pedersen\", \"pedersen-commitment\", \"pedersen-commitments\"]"
+msgstr "[\"commitments\", \"commitment\", \"pedersen\", \"pedersen-commitment\", \"pedersen-commitments\", \"Pedersen-Commitment\", \"Pedersen-Commitments\", \"Commitment\", \"Commitments\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Grundlagen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:11
+#
+msgid "Pedersen commitments are cryptographic algorithms that allow a prover to commit to a certain value without revealing it or being able to change it."
+msgstr "Pedersen-Commitments sind kryptografische Algorithmen, die es einer beweisenden Partei erlauben, sich auf einen bestimmten Wert festzulegen, ohne diesen zu offenbaren oder ändern zu können."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:13
+#
+msgid "When you spend Monero, the value of the inputs that you are spending and the value of the outputs you are sending are encrypted and opaque to everyone except the recipient of each of those outputs. Pedersen commitments allow you to send Monero without revealing the value of the transactions. Pedersen commitments also make it possible for people to verify that transactions on the blockchain are valid and not creating Monero out of thin air."
+msgstr "Wenn Monero ausgegeben werden, sind der Wert der ausgegebenen Inputs und der Wert der gesendeten Outputs verschlüsselt und, außer für die Empfänger dieser Outputs, für jeden verschleiert. Pedersen-Commitments erlauben das Senden von Monero, ohne den Wert der Transaktionen zu offenbaren. Zudem ermöglichen sie es Personen, zu verifizieren, dass Transaktionen auf der Blockchain valide sind und nicht etwa aus dem Nichts heraus Monero erschaffen."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:14
+#, no-wrap
+msgid "What It Means"
+msgstr "Was dies bedeutet"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:17
+#
+msgid "As long as the encrypted output amounts created, which include an output for the recipient and a change output back to the sender, and the unencrypted transaction fee is equal to the sum of the inputs that are being spent, it is a legitimate transaction and can be confirmed to not be creating Monero out of thin air."
+msgstr "Solange die erstellten (verschlüsselten) Output-Beträge (welche einen Output für den Empfänger und einen an den Sender zurückgehenden Wechselgeld-Output umfassen) und die (unverschlüsselte) Transaktionsgebühr mit der Summe der ausgegebenen Inputs übereinstimmen, handelt es sich um eine legitime Transaktion; es kann bestätigt werden, dass keine Monero aus dem Nichts heraus erschaffen werden."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:19
+#
+msgid "Pedersen commitments mean that the sums can be verified as being equal, but the Monero value of each of the sums and the Monero value of the inputs and outputs individually are undeterminable. Pedersen commitments also mean that even the ratio of one input to another, or one output to another is undeterminable."
+msgstr "Pedersen-Commitments bedeuten, dass zwar die Summen als übereinstimmend verifiziert werden können, die einzelnen Monero-Werte jeder Summe und der Inputs und Outputs jedoch unbestimmbar sind. Pedersen-Commitments bedeuten außerdem, dass selbst das Verhältnis eines Inputs zu einem anderen, oder eines Outputs zu einem anderen, nicht bestimmbar ist."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:21
+#
+msgid "It is unclear which inputs are really being spent as the ring signature lists both the real inputs being spent and decoy inputs, therefore you don't actually know which input Pedersen commitments need to be summed. That's okay, because the @RingCT ring signature only has to prove that for one combination of the inputs the outputs are equal to the sum of the inputs. For mathematical reasons, this is impossible to forge."
+msgstr "Welche Inputs tatsächlich ausgegeben werden ist unklar, da die Ringsignatur sowohl die in echt ausgegebenen Inputs, als auch Input-Attrappen auflistet, und demnach nicht genau klar ist, welche Inputs zusammengezählt werden müssen. Dies ist aber okay, weil die Ringsignatur der @Ring-CT lediglich nachweisen muss, dass bei einer bestimmten Kombination der Inputs die Outputs mit der Summe dieser Inputs übereinstimmen. Aus mathematschen Gründen ist es unmöglich, das Ergebnis zu fälschen."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:22
+#, no-wrap
+msgid "In-depth Information"
+msgstr "Ausführliche Informationen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pedersen-commitment.md:24
+#
+msgid "See information in [Ring Confidential Transactions paper](https://eprint.iacr.org/2015/1098.pdf) by Shen Noether of the Monero Research Lab."
+msgstr "Weitere Informationen finden sich im [\"Ring Confidential Transactions\"-Paper](https://eprint.iacr.org/2015/1098.pdf) von Shen Noether vom Monero-Research-Lab."
