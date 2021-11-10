@@ -248,6 +248,12 @@ permalink: /downloads/index.html
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
+                            <td><img class="small" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather logo"><a href="https://featherwallet.org/">Feather</a></td>
+                            <td>X</td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://git.featherwallet.org/feather/feather" aria-label="Git icon"><span class="icon-git"></span></a></td>
+                        </tr>
+                        <tr>
                             <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
                             <td><span class="icon-android"></span></td>
                             <td>X</td>
@@ -281,6 +287,7 @@ permalink: /downloads/index.html
                             <p>{% t downloads.localsyncinfo %}</p>
                             <ul>
                                 <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
@@ -334,8 +341,8 @@ permalink: /downloads/index.html
                                         <ul>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
+                                            <li>Feather</li>
                                             <li>Monerujo</li>
-                                            <li>Feather (beta)</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -356,7 +363,7 @@ permalink: /downloads/index.html
                                         <ul>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
-                                            <li>Feather (beta)</li>
+                                            <li>Feather</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -376,8 +383,8 @@ permalink: /downloads/index.html
                                         <b>{% t downloads.hwthsupported %}:</b>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
+                                            <li>Feather</li>
                                             <li>Monerujo</li>
-                                            <li>Feather (beta)</li>
                                         <b>{% t downloads.hwthfirm %}:</b> 
                                             <li>{% t downloads.hwnanos %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
@@ -389,7 +396,7 @@ permalink: /downloads/index.html
                                         <b>{% t downloads.hwthsupported %}:</b>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
-                                            <li>Feather (beta)</li>
+                                            <li>Feather</li>
                                         <b>{% t downloads.hwthfirm %}:</b> 
                                             <li>{% t downloads.hwtrezor %}</li>
                                     </ul>
