@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-30 12:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/paymentid.md:1
+#, no-wrap
+msgid "an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/paymentid.md:1
+#, no-wrap
+msgid "[\"payment-ID\", \"payment-IDs\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:7
+#, markdown-text
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:9
+#, markdown-text, no-wrap
+msgid "*Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post]({{ site.baseurl_root }}/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.\n"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/paymentid.md:10
+#, markdown-text, no-wrap
+msgid "The Basics"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:13
+#, markdown-text
+msgid "Payment ID is an **arbitrary** and **optional** transaction attachment that consists of 32 bytes (64 hexadecimal characters) or 8 bytes (in the case of integrated addresses)."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:15
+#, markdown-text
+msgid "The Payment ID is usually used to identify transactions to merchants and exchanges: Given the intrinsic privacy features built into Monero, where a single public address is usually used for incoming transactions, the Payment ID is especially useful to tie incoming payments with user accounts."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/paymentid.md:16
+#, markdown-text, no-wrap
+msgid "Compact Payment IDs and Integrated Addresses"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:19
+#, markdown-text
+msgid "Since the 0.9 Hydrogen Helix version, Payment IDs can be encrypted and embedded in a payment address. The Payment IDs of this type should be 64-bits and are encrypted with a random one-time key known only to the sender and receiver."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/paymentid.md:20
+#, markdown-text, no-wrap
+msgid "Creating a Payment ID"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:23
+#, markdown-text
+msgid "It is recommended to use the official wallet's `integrated_address` command to automatically generate Integrated Addresses that contain Compact Payment IDs. If you want to use the command line, you can generate Payment IDs as follows:"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:25
+#, markdown-text
+msgid "Creating a compact Payment ID for an Integrated Address:"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:27
+#, markdown-text
+msgid "```# openssl rand -hex 8```"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:29
+#, markdown-text
+msgid "Creating an old-style Payment ID:"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/paymentid.md:30
+#, markdown-text
+msgid "```# openssl rand -hex 32```"
+msgstr ""

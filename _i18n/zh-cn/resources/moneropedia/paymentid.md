@@ -1,9 +1,12 @@
 ---
+summary: 'an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters'
 terms: ["payment-ID", "payment-IDs"]
-summary: "an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters"
 ---
 
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+
+*Note:* Long Payment IDs have been removed since release 0.15; it's not possible to use them anymore. More info in the [blog post]({{ site.baseurl_root }}/2019/06/04/Long-Payment-ID-Deprecation.html) that announced their deprecation.
+
 ### 基础知识
 
 支付ID是一个**任意**和**可选**交易附件，包含32字节（64个十六进制字符）或8字节（在集成地址的情况下）。
@@ -12,7 +15,8 @@ summary: "an optional flag that is added to identify transactions to merchants, 
 
 ### 紧凑的支付ID和集成地址
 
-自0.9 Hydrogen Helix 版本以来，支付ID可以加密并嵌入到一个支付地址中。这种类型的支付ID应该是64位的，并且使用只有发送方和接收方知道的随机一次性密钥进行加密。
+自0.9 Hydrogen Helix
+版本以来，支付ID可以加密并嵌入到一个支付地址中。这种类型的支付ID应该是64位的，并且使用只有发送方和接收方知道的随机一次性密钥进行加密。
 
 ### 创建一个支付ID
 
