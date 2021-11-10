@@ -1,9 +1,10 @@
 ---
+summary: 'the block reward at the end of the emission curve'
 terms: ["Tail-Emission"]
-summary: "the block reward at the end of the emission curve"
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
+
 ### 基础知识
 
 门罗币的区块奖励永远不会降到零。区块奖励将逐渐下降，直到2022年5月底开始尾部释放。此时，奖励将固定在每个区块 0.6 XMR。
