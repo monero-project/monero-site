@@ -9,7 +9,7 @@ global:
   tags: 以標籤列出文章
   wikimeta: 門羅幣百科，開放的門羅幣知識百科全書
   tagsmeta: 被標籤標註的所有文章
-  titlemeta: 門羅幣專案，安全、保護隱私且完全匿蹤的數位貨幣
+  titlemeta: 門羅幣，安全、保護隱私且完全匿蹤的數位貨幣
   terms: 條款
   privacy: 隱私
   untranslated: 這個頁面尚未被翻譯，如果您願意協助翻譯，請見
@@ -59,8 +59,6 @@ index:
 
 home:
   heading2: 保護隱私的數位貨幣
-  monero_is_cash: 門羅幣是網路世界的現金，快速、保護隱私且安全。使用門羅幣時，你就是你自己的銀行，你可以安全的交易，不用擔心別人會看到你的帳戶餘額或追蹤你的金融活動。
-  get_started: 開始使用
   downloads: 下載
   moneropedia_para: 你想要找門羅幣的各種用詞和概念的解釋嗎？在這裡你可以找到用字母排序的字詞與其意義解釋，範圍包括門羅幣與 Kovri 專案。
   moneropedia_button: 閱讀門羅幣百科
@@ -85,7 +83,6 @@ hangouts:
     monero-hardware: 打造硬體錢包以保護你的門羅幣安全。
     monero-site:
 merchants:
-  intro1: 使用門羅幣的各類商家都可以獲得門羅幣帶來的金融隱私保護價值，以下是一些我們知道目前接受使用門羅幣購買商品或服務的商家。如果其中有商家已停止接受使用門羅幣，或是你想讓你所經營的事業被列在此表
   intro2: 請在 GitLab 上開一個新 issue 通知我們
   intro3:
   disclaimer: |
@@ -169,12 +166,6 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
-    has
-  hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -184,7 +175,6 @@ downloads:
 
 monero-project: {}
 press-kit:
-  intro1: 你可以在這邊取得一些門羅幣的代表性圖案與標誌。你可以選擇想要的尺寸或是下載 .ai 檔案以自行編輯你想要的標示圖案。
   intro2: 請注意白色背景選項是只有在門羅幣圖案底下的白色背景，而非整張圖片的背景。
   intro3: 最後，你可以在這裡下載一個包含所有檔案的 zip 壓縮檔，請點擊
   intro4: 這裡。
@@ -263,15 +253,7 @@ mining:
   intro1: 門羅幣是一種透過工作量證明達到分散式共識的加密貨幣。你可以在下面找到一些關於如何開始挖礦的資訊。
   intro2: 門羅幣專案並不為任何礦池、軟體、硬體做背書，以下提供之內容僅為教學使用的資訊分享。
   support: 技術支援
-  support_para1: 詳見
-  support_para2: 聊天室，
-  support_para4: 和
-  pools: 礦池
-  pools_para1: 一些可信任的門羅幣礦池列表在
-  pools_para2: 這裡。
-  benchmarking: 硬體表現測試
   benchmarking_para1: 此處
-  benchmarking_para2: 列出了一些 GPU/CPU 與它們的雜湊運算 (挖礦) 速度。
   software: 挖礦軟體
   software_para: 請注意有些挖礦工具可能會收取開發者手續費。
 

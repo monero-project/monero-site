@@ -64,11 +64,6 @@ index:
 
 home:
   heading2: Monnaie Digitale Confidentielle
-  monero_is_cash: Monero est une monnaie pour un monde connecté. C'est rapide, confidentiel
-    et sécurisé. Avec Monero, vous êtes votre propre banque. Vous pouvez le dépenser
-    en toute sécurité, en sachant que personne ne peut voir votre solde ni suivre
-    votre activité.
-  get_started: Commencer
   downloads: Downloads
   moneropedia_para: Souhaitez-vous rechercher les significations des termes et concepts
     utilisés dans Monero ? Vous trouverez ici un guide par ordre alphabétique des
@@ -243,12 +238,7 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
-    has
   hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -263,9 +253,6 @@ downloads:
   blockchain2: Si vous voulez tout de même vous lancer, lisez le guide utilisateur.
 monero-project: {}
 press-kit:
-  intro1: Vous trouverez ci-dessous tous les symboles et logos Monero. Vous pouvez
-    choisir la taille qui vous convient, ou télécharger le fichier au format .ai pour
-    jouer avec le logo vous-même.
   intro2: Notez que seul l'option fond blanc dispose d'un fond blanc derrière le symbole
     Monero UNIQUEMENT, et non derrière l'image entière.
   intro3: Enfin, vous pouvez télécharger tous les éléments de cette page dans un seul
@@ -643,15 +630,8 @@ mining:
   intro2: Le projet Monero ne plébiscite aucun pool, logiciel ou matériel particulier.
     Le contenu suivant n'est fournit qu'à titre purement informatif.
   support: Assistance
-  support_para1: Parcourrez
-  support_para2: les Rencontres,
-  support_para4: et
   pools: Pools
-  pools_para1: Une liste de pools Monero de confiance est disponible
-  pools_para2: ici.
-  benchmarking: Capacités du matériel
   benchmarking_para1: Vous trouverez ici
-  benchmarking_para2: une liste de GPUs/CPUs et leurs taux de hachage respectifs.
   software: Mineur
   software_para: Veuillez noter que certains mineurs pourraient soustraire des frais
     de développement.

@@ -8,29 +8,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-28 10:34+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-08-08 18:31+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/offline_backup/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.5.3\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:2
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:4
-#
 msgid "## Operating Systems: Various versions of Linux and Windows 7, 8"
 msgstr "## Операционные системы: разные версии для Linux и Windows 7, 8"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:6
-#
 msgid "### Wallet Software: Simplewallet"
 msgstr "### Кошелёк: Simplewallet"
 
@@ -46,9 +51,9 @@ msgstr ""
 "[Linux](http://www.pendrivelinux.com/),       "
 "[Windows](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:10
-#
 msgid ""
 "#### Resource for Monero Binaries: [Monero Binaries]({{ site.baseurl_root "
 "}}/downloads/)"
@@ -56,9 +61,9 @@ msgstr ""
 "#### Источник двоичных файлов Monero: [Monero "
 "Binaries](https://getmonero.org/downloads/)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:12
-#
 msgid ""
 "- Take any computer you have lying around, even your normal workstation. You "
 "may find it easier to use an older computer that has no wifi or bluetooth if "
@@ -68,9 +73,9 @@ msgstr ""
 "машина. Если вы склонны к паранойе, возможно, вам будет лучше использовать "
 "более старый компьютер без Wi-Fi или Bluetooth."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:14
-#
 msgid ""
 "- Create a Linux or Windows bootable disk, and make sure you have the Monero "
 "binaries on the same disk or on a second disk (for Linux make sure you have "
@@ -82,9 +87,9 @@ msgstr ""
 "убедиться в наличии загруженных копий необходимых зависимостей, таких как "
 "libboost1.55 или miniupnpc, например)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:16
-#
 msgid ""
 "- Disconnect the network and/or Internet cables from your computer, "
 "physically remove the wifi card or switch the wifi/bluetooth off on a laptop "
@@ -94,17 +99,17 @@ msgstr ""
 "снять сетевую Wi-Fi карту или, если это возможно, отключить Wi-Fi/Bluetooth "
 "на ноутбуке."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:18
-#
 msgid "- Boot into your bootable OS, install the dependencies if necessary"
 msgstr ""
 "- Запустить ОС с загрузочного диска и, при необходимости, установить "
 "зависимости."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:20
-#
 msgid ""
 "- Copy the Monero binaries to a RAM disk (/dev/shm in Linux, Windows "
 "bootable ISOs normally have a Z: drive or something)"
@@ -112,9 +117,9 @@ msgstr ""
 "- Скопировать двоичные файлы Monero на RAM диск (для Linux в /dev/shm; "
 "Windows обычно создаёт ISO как «диск Z:» или как-то так)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:22
-#
 msgid ""
 "- Don't run the Monero @daemon. Instead, using the command line, use "
 "monero-wallet-cli to create a new Monero @account"
@@ -122,15 +127,15 @@ msgstr ""
 "- Не запускайте демон-программу Monero. Вместо этого при помощи командной "
 "строки используйте monero-wallet-cli для создания нового @аккаунта Monero."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:24
-#
 msgid "- When prompted for a name, give it any name, it doesn't really matter"
 msgstr "- При запросе имени — введите любое, оно не имеет значения."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:26
-#
 msgid ""
 "- When prompted for a password, type in like 50 - 100 random "
 "characters. Don't worry that you don't know the password, just make it LONG"
@@ -138,9 +143,9 @@ msgstr ""
 "- При запросе пароля введите примерно 50–100 случайных символов. Не следует "
 "беспокоиться, что вы не знаете пароль, просто сделайте его ДЛИННЫМ."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:29
-#
 msgid ""
 "- **CRITICAL STEP**: Write down (on paper) your 25 word @mnemonic-seed "
 "**WARNING**: If you forget to write down this information your funds may be "
@@ -150,9 +155,9 @@ msgstr ""
 "из 25 слов.  **ВНИМАНИЕ!**: Если вы не запишите эту информацию, ваши "
 "средства могут оказаться утрачены навсегда."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:31
-#
 msgid ""
 "- Write down (on your phone, on paper, on another computer, wherever you "
 "want) your address and view key"
@@ -160,9 +165,9 @@ msgstr ""
 "- Запишите (в телефон, на бумаге, на другом компьютере, как вам будет "
 "угодно) ваш адрес и ключ просмотра."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:33
-#
 msgid ""
 "- Switch off the computer, remove the battery if there is one, and leave it "
 "physically off for a few hours"
@@ -170,9 +175,9 @@ msgstr ""
 "- Выключите компьютер, снимите батарею (если таковая имеется) и оставьте его "
 "в таком физически отключённом состоянии на несколько часов."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:35
-#
 msgid ""
 "The account you've created was created in RAM, and the digital files are now "
 "inaccessible. If some adversary manages to somehow obtain the data, they "
@@ -191,8 +196,8 @@ msgstr ""
 "копий, включая копию для хранения в каком-нибудь удалённом месте (например, "
 "в банковской ячейке)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:36
-#
 msgid "Related: [Offline Account Generator](http://moneroaddress.org/)"
 msgstr "Связанная тема: [Offline Account Generator](http://moneroaddress.org/)"

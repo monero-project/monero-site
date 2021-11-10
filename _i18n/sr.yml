@@ -50,11 +50,6 @@ index:
   page_title: Monero - siguran, privatan, nemoguć za praćenje
 home:
   heading2: Privatna Digitalna Valuta
-  monero_is_cash: Monero je keš za moderan i povezan svet. Monero je brz, privatan
-    i siguran. Sa Monerom, vi ste sami sebi banka. Zbog toga, možete sigurno i slobodno
-    da trošite, znajući da drugi ne mogu da vide vaše stanje ili da bilo ko prati
-    vaše aktivnosti.
-  get_started: Počnite
   downloads: Preuzimanja
   moneropedia_para: Da li biste hteli da pogledate značenje termina i koncepta korišćenih
     u Moneru? Ovde ćete naći abecedni vodič do termina i njihovih značenja od Monero
@@ -308,12 +303,8 @@ downloads:
     odgovorajućem GPG ključu
   showhash3: u izvornom kodu
   showhash4: 'Dva vodiča su dostupna da vas sprovedu kroz verifikacioni proces:'
-  hardware1: Monero zajednica je finansirala
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: koji je sada u toku.
   hardware4: Ledger Nano S i Nano X su podržani u Monero CLI, Monero GUI i Monerujo
     novčanicima.
-  hardware5: Trezor Model T je podržan u Monero CLI i Monero GUI novčanicima.
   mobilelight1: Ovo su mobilni i lagani novčanici koje ugledni članovi zajednice smatraju
     bezbednim. Ako postoji novčanik koji se ne nalazi ovde, možete zatražiti od zajednice
     da ga pogleda i proveri. Idite na našu
@@ -327,8 +318,6 @@ downloads:
     i arhive kao sadržaj štetan po računar.
 monero-project: {}
 press-kit:
-  intro1: Ovde možete pronaći simbol i logo Monera. Možete izabrati bilo koju veličinu,
-    ili preuzmite .ai file da sami uredite logo.
   intro2: Imajte u vidu da opcije za belu pozadinu imaju belu pozadinu samo ispod
     Monero simbola, a ne kao pozadina cele slike.
   intro3: Na kraju, možete sve preuzeti sa ove stranice u jednom zip fajlu klikom
@@ -737,15 +726,8 @@ mining:
   intro2: Monero Projekat ne preporučuje bilo koje određeno rudarsko udruženje, softver
     ili hardver, a dole navedeni sadržaj je čisto za informativne svrhe.
   support: Podrška
-  support_para1: Pogledajte
-  support_para2: Mesta za druženje
-  support_para4: i
   pools: Rudarska udruženja
-  pools_para1: Spisak pouzdanih Monero udruženja za rudarenje se nalazi
-  pools_para2: ovde.
-  benchmarking: Benčmark Hardvera
   benchmarking_para1: Pogledajte ovde
-  benchmarking_para2: za spisak GPU-a / CPU-a i njihov odgovarajući hashrate.
   software: Softver za Rudarenje
   software_para: Imajte na umu da neki softveri za rudarenje dolaze sa ugrađenom provizijom
     za developera datog softvera.

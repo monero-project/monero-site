@@ -63,11 +63,6 @@ index:
   page_title: Monero – sicher, privat, nicht nachverfolgbar
 home:
   heading2: Eine private, digitale Währung
-  monero_is_cash: Monero ist digitales Bargeld einer verbundenen Welt. Es ist schnell,
-    privat und sicher. Mit Monero bist du deine eigene Bank – du kannst dein Geld
-    ausgeben, ohne befürchten zu müssen, dass andere herausfinden, wie viel du besitzt
-    und was du mit deinem Geld machst.
-  get_started: Einstieg
   downloads: Downloads
   moneropedia_para: Interessierst du dich für die Terminologie und die Konzepte hinter
     Monero? Hier findest du eine alphabetisch geordnete Anleitung über die in Monero
@@ -116,6 +111,7 @@ home:
     unsere Downloads-Seite und wähle das für dich passende Wallet. Die Monero-Wallets
     sind für eine Vielzahl von Plattformen erhältlich und beinhalten all das, was
     du brauchst, um Monero unmittelbar nutzen zu können.
+  hangouts: Treffpunkte
 hangouts:
   intro: Die Monero-Community ist wild zusammengewürfelt. Wir kommen von überall her,
     aber es gibt gewisse Plätze, an denen wir uns gerne treffen. Einen Großteil findest
@@ -151,15 +147,9 @@ hangouts:
     Community erlaubt, mithilfe ihres favorisierten Chats/Protokolls zu kommunizieren.
   subscribe: Abonnieren
 merchants:
-  intro1: Händler aller Art haben die Privatsphäre, die Monero bietet, zu schätzen
-    gelernt. Weiter unten findest du eine Liste von Firmen, die ihre Waren und Dienstleistungen
-    im Tausch gegen Monero anbieten. Diese Händler sind nicht durch die Community
-    bestätigt; beachte dazu den Hinweis am Fuße dieser Seite. Falls eine Firma Monero
-    nicht mehr akzeptiert oder du hier aufgeführt sein möchtest,
   intro2: erstelle eine Meldung („Issue“) auf GitLab
   disclaimer: |
     "Beachte bitte: Die folgenden Links werden auf einer rein informativen Basis bereit gestellt; sie stellen keine Befürwortung der Monero-Community für Produkte, Dienstleistungen oder Meinungen der aufgelisteten Firmen, Organisationen oder Personen dar. Die Monero-Community übernimmt keine Verantwortung für die Richtigkeit, Legalität, oder den Inhalt der verlinkten Seiten. Bei Fragen sind die Betreiber der jeweiligen Seite zu kontaktieren. Wie immer wird eine Gewährleistung ausgeschlossen. Es ist an dir, dich selbst zu informieren. Benutze immer deinen gesunden Menschenverstand, wenn du online einkaufst."
-  onion: Onion-Adresse (benötigt Tor)
   intro3: (wähle die Vorlage "Händler" und fülle alle Abschnitte aus).
 sponsorships:
   intro: Die folgenden Organisationen und Firmen unterstützen das Monero-Projekt aktiv
@@ -229,6 +219,20 @@ team:
     es heute ist. Das Kernteam erhält und erhielt noch nie eine finanzielle Entschädigung.
   contacts: Chaträume und Kontakte
   chatgeneral: 'Chat (Allgemein):'
+  space_descr: Monero Space ist eine aktive, projektbezogene Monero-Arbeitsgruppe,
+    die Dienste für die Monero-Community bereitstellt. Sie hostet beliebte Ressourcen
+    und organisiert Veranstaltungen wie das Monero Meet.
+  outreach_descr: Diese Arbeitsgruppe konzentriert sich darauf Monero bekannt zu machen
+    und versammelt Künstler, Schriftsteller und jeden der Monero in der Welt bekannt
+    machen möchte.
+  community_descr: Diese Arbeitsgruppe wird von der Community genutzt, um sich zu
+    organisieren und zu koordinieren. Fange hier an, wenn Du kein Programmierer bist,
+    aber etwas zu Monero beitragen möchtest.
+  introduction: Arbeitsgruppen werden durch Mitglieder der Community gebildet, die
+    sich zusammenschließen, um ein gemeinsames Ziel zu erreichen. Sie haben unterschiedliche
+    Strukturen und Ziele. Auf dieser Seite listen wir einige der aktiveren Arbeitsgruppen
+    auf sowie einige Tipps, um Dir beim Anfangen zu helfen, falls Du zu einer von
+    ihnen etwas beitragen möchtest.
 downloads:
   intro: Auf dieser Seite kannst du die letztgültige Version der Monero-Software,
     ebenso wie Hardware-, Light- und Mobil-Wallets, finden und herunterladen.
@@ -305,12 +309,6 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: 'Two guides are available to guide you through the verification process:'
-  hardware1: Die Monero-Community hat ein
-  hardware2: zweckbestimmtes Hardware-Wallet (Kastelo) finanziert,
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
-    has
-  hardware4: integrated Monero into their hardware wallets.
-  hardware5: Das Trezor-Modell T wird im CLI- und GUI-Wallet unterstützt.
   mobilelight1: Die folgenden mobilen oder Light-Wallets werden von geachteten Mitgliedern
     der Community als sicher erachtet. Wenn es ein Wallet gibt, das nicht hier gelistet
     ist, kannst du die Community darum bitten, dies zu prüfen. Besuche die Seite unserer
@@ -330,10 +328,10 @@ downloads:
     an
   releasenotes: Versionshinweise
   desktop: Desktop
+  wallet: Wallet
+  mobile: Mobil
 monero-project: {}
 press-kit:
-  intro1: Hier findest du das Monero-Symbol und -Logo. Du kannst eine beliebige Größe
-    auswählen oder die .ai-Datei herunterladen, um selbst etwas mit dem Logo anzustellen.
   intro2: Beachte, dass die Versionen für einen weißen Hintergrund NUR unter dem Monero
     Symbol einen weißen Hintergrund haben und nicht für das gesamte Bild.
   intro3: Oder du kannst einfach alles auf dieser Seite in einem .zip-Archiv herunterladen.
@@ -473,6 +471,10 @@ contributing:
   donate-other_para2: für andere Möglichkeiten zu spenden, oder wenn du ein Sponsor
     für das Monero-Projekt werden möchtest.
   sponsor_p2: für mehr Informationen.
+  supportdev: Unterstütze die Entwickler
+  website: 'Diese Webseite: '
+  website_p: Mit Jekyll gebaut. Kein Javascript.
+  gui_p: Hauptsächlich QML und C++.
 faq:
   q1: Wie erhält Monero einen Wert?
   a1: Monero hat einen Wert, weil es Menschen gibt, die es kaufen wollen. Gäbe es
@@ -738,6 +740,9 @@ faq:
     \ zu optimieren, sollten sie nacheinander angesehen werden:\n"
   qvideos: Gibt es Videos, die ich mir ansehen kann, um mehr über Monero zu erfahren?
   qhf: Stimmt es, dass Monero alle 6 Monate einen Hard Fork hat?
+  mvideos: 'Mehr Informationen im Moneropedia-Eintrag:'
+  video_essentials: Die Grundlagen
+  qblocksize: Wie groß ist die Monero-Blockchain?
 mining:
   intro1: Monero ist eine Kryptowährung, die auf Proof-of-Work-Mining zurückgreift,
     um einen dezentralen Konsens zu erreichen. Weiter unten findest du weitere Informationen
@@ -745,16 +750,6 @@ mining:
   intro2: Das Monero-Projekt empfiehlt keinen speziellen Pool, keine bestimmte Software
     oder Hardware und die nachfolgenden Informationen sind rein informativ.
   support: Support
-  support_para1: Siehe
-  support_para2: Hangouts,
-  support_para4: und
-  pools: Pools
-  pools_para1: Eine Auflistung bisher ehrlich agierender Mining-Pools findest du
-  pools_para2: hier.
-  benchmarking: Hardware-Leistungsvergleich
-  benchmarking_para1: Hier
-  benchmarking_para2: findest du eine Zusammenstellung verschiedener Grafikkarten
-    und CPUs und deren Hashraten.
   software: Mining-Software
   software_para: Beachte, dass einige Miningprogramme Gebühren für deren Entwickler
     abführen können.
@@ -1029,6 +1024,7 @@ roadmap:
   mar: März
   feb: Februar
   jan: Januar
+  bplus: Bulletproofs+
 research-lab:
   intro: Monero widmet sich nicht nur einer fungiblen Währung, sondern auch einer
     kontinuierlichen Forschung im Bereich des finanziellen Datenschutzes, da dies

@@ -62,11 +62,6 @@ index:
   page_title: Monero - seguro, privado, não rastreável
 home:
   heading2: Uma Moeda Digital Privada
-  monero_is_cash: Monero é o dinheiro para um mundo conectado. Ele é rápido, privado
-    e seguro. Com o Monero, você é o seu próprio banco. Você pode usá-lo com segurança,
-    sabendo que outras pessoas não poderão ver seu saldo ou rastrear suas atividades
-    financeiras.
-  get_started: Começar a usar
   downloads: Downloads
   moneropedia_para: Quer conhecer o significado dos termos e conceitos usados no Monero?
     Aqui você encontrará um guia alfabético com os termos e seus significados dos
@@ -249,12 +244,7 @@ downloads:
     a chave GPG apropriada
   showhash3: no código-fonte
   showhash4: 'Dois guias estão disponíveis para guiá-lo no processo de verificação:'
-  hardware1: A comunidade Monero financiou uma
-  hardware2: Carteira Hardware Dedicada (Kastelo)
-  hardware3: que está sendo desenvolvida. Além disso, desde as versões CLI 0.12.1
-    e GUI 0.12.3 a Ledger tem
   hardware4: integrado Monero em suas carteiras hardware.
-  hardware5: Trezor modelo T suporta Monero desde a versão 0.14.1.
   mobilelight1: As carteiras móveis e light listadas abaixo são consideradas seguras
     por membros respeitados da comunidade. Se você quer usar uma carteira que não
     está listada aqui, você pode pedir para a comunidade avaliá-la. Visite nossa página
@@ -269,8 +259,6 @@ downloads:
   packages: Estão também disponíveis pacotes para diversas distribuições de Linux.
 monero-project: {}
 press-kit:
-  intro1: Aqui se encontram o símbolo e logotipo do Monero. Você pode escolher qualquer
-    tamanho que desejar ou baixar o arquivo .ai para modificar o logotipo você mesmo.
   intro2: Observe que as opções de fundo branco têm um fundo branco APENAS por trás
     do símbolo Monero, e não como plano de fundo da imagem.
   intro3: Para finalizar, você pode baixar toda a mídia desta página num arquivo zip
@@ -629,15 +617,8 @@ mining:
   intro2: O Projeto Monero não endossa nenhuma pool, software ou hardware específicos.
     O conteúdo abaixo é fornecido apenas para fins informativos.
   support: Suporte
-  support_para1: Veja o
-  support_para2: Fóruns & Grupos,
-  support_para4: e
   pools: Pools
-  pools_para1: Uma lista de pools confiáveis de Monero pode ser encontrada
-  pools_para2: aqui.
-  benchmarking: Comparação de Hardware
   benchmarking_para1: Veja aqui
-  benchmarking_para2: uma lista de GPUs/CPUs e seus respectivos hashrates.
   software: Software de Mineração
   software_para: Note que alguns mineradores podem ter taxas do desenvolvedor.
 using: {}

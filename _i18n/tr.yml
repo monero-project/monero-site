@@ -34,7 +34,7 @@ titles:
   merchants: Satıcılar & Hizmetler
   about: Monero Hakkında
   roadmap: Yol Haritası
-  researchlab: Monero Araştırma Laboratuvarı
+  researchlab: Monero Araştırma Laboratuvarı (MRL)
   moneropedia: Moneropedi
   userguides: Kullanıcı Rehberleri
   developerguides: Geliştirici Rehberleri
@@ -45,6 +45,7 @@ titles:
   blogbytag: Blog
   library: Kütüphane
 
+  workgroups: Çalışma Grupları
 navigation:
   getstarted: Başlangıç
   whatis: Monero Nedir?
@@ -62,19 +63,22 @@ index:
 
 home:
   heading2: Gizli Dijital Para
-  monero_is_cash: Monero bağlı bir dünya için paradır. Hızlı, gizli ve güvenlidir.
-    Monero'yla kendi bankanız siz olursunuz. Başkalarının bakiyenizi göremeyeceğini
-    veya aktivitelerinizi takip edemeyeceğini bilerek güvenli şekilde harcayabilirsiniz.
-  get_started: Başlangıç
   downloads: İndirmeler
   moneropedia_para: Monero'da kullanılan terimlerin ve kavramların anlamlarına bakmak
     ister misiniz? Burada hem Monero hem de Kovri projelerinden terimlerin ve onların
     anlamlarının alfabetik bir rehberini bulacaksınız.
   moneropedia_button: Moneropedi'yi Oku
   faq: SSS
-  faq_para: Yıllar boyunca pek çok soruyla karşılaştık ve kolaylığınız için ayrıntılı
-    ve çeşitlendirilmiş bir SSS derledik. Merak etmeyin, eğer sorularınız burada değilse
-    her zaman topluluğumuza sorabilirsiniz.
+  faq_para: Yıllar boyunca pek çok soruyla karşılaştık ve ayrıntılı ve çeşitlendirilmiş
+    bir SSS derledik. Merak etmeyin, eğer sorularınız burada değilse her zaman topluluğumuza
+    sorabilirsiniz.
+  about: Monero Hakkında
+  whatis: Monero hakkında daha fazla öğren
+  choosewallet: Cüzdan Seçin
+  merchants: Satıcılar
+  guides: Rehberler ve Kaynaklar
+  joincommunity: Topluluğa Katıl
+  exchanges: Borsalar
 hangouts:
   intro: Monero topluluğu çeşitli ve farklı bireylerden oluşur. Dünya'nın her yerinden
     geliyor olsak da birlikte takılmaktan hoşlandığımız bazı yerler de yok değildir.
@@ -102,11 +106,8 @@ hangouts:
     monero-translations: Monero'nun diğer dillere yerelleştirilmesi.
     monero-hardware: Monero'nuzu güvende tutmak için donanım cüzdanları yapımı.
     monero-site:
+  mailing_list: E-Posta Listesi
 merchants:
-  intro1: Her türden satıcı Monero'nun getirdiği finansal gizliliğe değer vermeye
-    başlamıştır. Aşağıda malları ve hizmetleri için şu anda Monero kabul ettiğini
-    bildiğimiz satıcıların bir listesi bulunmaktadır. Eğer bir şirket artık Monero
-    kabul etmiyorsa veya işletmenizin listelenmesini istiyorsanız lütfen
   intro2: bir GitLab sorunu açın ve bize haber verin
   intro3:
   disclaimer: |
@@ -119,9 +120,10 @@ sponsorships:
     bir e-posta gönderin.
 
 team:
-  core: Çekirdek
+  core: Çekirdek Ekip
   community: Topluluk
   mrl: Araştırma Laboratuvarı
+  descr: Açıklama
 downloads:
   intro: On this page you can find and download the latest version available of the
     Monero software, as well as hardware, light and mobile wallets.
@@ -193,12 +195,6 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware1: The Monero community has funded a
-  hardware2: Dedicated Hardware Wallet (Kastelo)
-  hardware3: which is now in progress. Moreover, since CLI 0.12.1 and GUI 0.12.3 Ledger
-    has
-  hardware4: integrated Monero into their hardware wallets.
-  hardware5: Trezor model T supports Monero since version 0.14.1.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -208,8 +204,6 @@ downloads:
 
 monero-project: {}
 press-kit:
-  intro1: Burada, aşağıda Monero sembolünü ve logosunu bulacaksınız. Dilediğiniz boyutu
-    seçebilir veya logoyla kendiniz oynamak için .ai dosyasını indirebilirsiniz.
   intro2: Beyaz arka plan seçeneklerinin SADECE Monero sembolü altında beyaz bir arka
     planı olduğuna, tüm imgeye arka plan olmadığına dikkat edin.
   intro3: Son olarak bu sayfadaki her şeyi tek bir zip dosyası olarak indirmek için
@@ -343,15 +337,6 @@ mining:
   intro2: Monero Projesi herhangi bir havuzu, yazılımı veya donanımı benimsememektedir
     ve aşağıdaki içerik sadece bilgilendirme amaçlı olarak sunulmuştur.
   support: Destek
-  support_para1: "Şunları görüntüleyin:"
-  support_para2: Buluşmalar,
-  support_para4: ve
-  pools: Havuzlar
-  pools_para1: Güvenilen Monero havuzlarının bir listesi
-  pools_para2: buradadır.
-  benchmarking: Donanım Karşılaştırma
-  benchmarking_para1: Buraya tıklayarak
-  benchmarking_para2: GPU/CPU'ların bir listesine ve sağlama oranlarına ulaşabilirsiniz.
   software: Madencilik Yazılımları
   software_para: Bazı madencilerin geliştirici ücreti olabileceğine dikkate alın.
 
@@ -818,3 +803,9 @@ blog:
   date: Gönderim tarihi
 tags:
   notags: Bu etiket için gönderi yok.
+footer:
+  legal: Yasal Bilgiler
+  source: Kaynak Kodu
+  ml: E-Posta Listesi
+  ccs: Topluluk Kitle Fonlaması Sistemi
+  reachout: Ulaşın
