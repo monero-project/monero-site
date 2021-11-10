@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-14 12:19+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/viewkey.md:1
+#, no-wrap
+msgid "one of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account"
+msgstr "每个帐户拥有的两组私有和公开的加密密钥中的一组，要查看与该帐户相关的所有交易要使用私有的查看密钥。"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/viewkey.md:1
+#, no-wrap
+msgid "[\"view-key\", \"view-keys\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/viewkey.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "基础知识"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:11
+#
+msgid "One of two sets of private and public cryptographic keys that each account has, with the private view key required to view all transactions related to the account."
+msgstr "每个帐户拥有的两组私有和公开的加密密钥中的一组，要查看与该帐户相关的所有交易要使用私有的查看密钥。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:13
+#
+msgid "Monero features an opaque blockchain (with an explicit allowance system called the @view-key), in sharp contrast with transparent blockchains used by any other cryptocurrency not based on CryptoNote. Thus, Monero is said to be \"private, optionally transparent\"."
+msgstr "门罗币提供了一个不透明的区块链（并具备一个显式保障系统，称之为@查看密钥），与任何其他不基于 CryptoNote 底层的加密货币所使用的透明区块链，形成了鲜明的对比。因此，门罗币被称为是 “默认隐私性的同时，具有可选透明性”。"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/viewkey.md:14
+#
+msgid "Every Monero address has a private viewkey which can be shared.  By sharing a viewkey, a person is allowing access to view every incoming transaction for that address.  However, outgoing transactions cannot be reliably viewed as of June 2017. Therefore, the balance of a Monero address as shown via a viewkey should not be relied upon."
+msgstr "每个门罗币地址都有一个可以共享的私有的查看密钥。通过共享一个查看私钥，用户可以查看该地址的每一笔转入的交易。然而，截至2017年6月，转出交易无法被查看。因此，不应该依赖于通过查看私钥显示的门罗币地址的余额。"
