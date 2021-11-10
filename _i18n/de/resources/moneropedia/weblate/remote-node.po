@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-04 12:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/remote-node.md:1
+#, no-wrap
+msgid "Nodes which are not running in the same machine as the wallet. Open remote nodes allow to use the Monero network immediately"
+msgstr "Nodes, die nicht im gleichen Gerät wie das Wallet laufen. Offene Remote-Nodes erlauben die direkte Nutzung des Monero-Netzwerks"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/remote-node.md:1
+#, no-wrap
+msgid "[\"remote-node\", \"remote-nodes\"]"
+msgstr "[\"remote-node\", \"remote-nodes\", \"Remote-Node\", \"Remote-Nodes\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:9
+#
+msgid "A @node that doesn't run on the same local machine where the Monero @wallet is located is called \"Remote Node\" and can be private or open."
+msgstr "Ein @Node, der nicht auf demselben Gerät wie das Monero-@Wallet läuft, wird \"Remote-Node\" genannt und kann sowohl privat als auch offen sein."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:11
+#
+msgid "A **private remote node** doesn't run on your local machine, but you have full control over it. A classic example is a node running on a VPS or a server. That node is not on your local machine, but you have full control over it. You can even decide to make it become an open node, allowing people to connect to it."
+msgstr "Ein **privater Remote-Node** läuft zwar nicht auf deinem Gerät, du hast jedoch die volle Kontrolle darüber. Ein klassisches Beispiel ist ein auf einem VPS oder einem Server laufender Node: Dieser Node ist nicht auf deinem Gerät, du kannst ihn aber komplett eigenhändig steuern. Du kannst dich sogar dazu entschließen, ihn zu einem offenen Node werden zu lassen, damit andere sich zu ihm verbinden können."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:13
+#
+msgid "An **Open remote node** can be used by people who, for their own reasons (usually because of hardware requirements, disk space, or technical abilities), cannot/don't want to run their own node and prefer to relay on one publicly available on the Monero network. Open remote nodes are often simply referred as \"remote nodes\"."
+msgstr "Ein **öffentlicher Remote-Node** kann von Leuten genutzt werden, die aus persönlichen Gründen (im Regelfall aufgrund von Hardware-Voraussetzungen, Speicherplatz oder auch technischem Können) keinen eigenen Node betreiben möchten/können und es vorziehen, einen im Monero-Netzwerk öffentlich verfügbaren Node zu verwenden. Offene Remote-Nodes werden oft einfach nur \"Remote-Nodes\" genannt."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:15
+#
+msgid "Using an open node will allow to make a @transaction instantaneously, without the need to download the @blockchain and sync to the Monero network first, but at the cost of the control over your privacy. the Monero community suggests to always run your own node to obtain the maximum privacy possible and to help decentralize the network."
+msgstr "Das Nutzen eines offenen Nodes erlaubt es, @Transaktionen augenblicklich zu senden, ohne dass zunächst die @Blockchain heruntergeladen und mit dem Monero-Netzwerk synchronisiert werden muss - dies geht jedoch auf Kosten deiner Privatsphäre. Die Monero-Community empfiehlt dir, immer deinen eigenen Node zu betreiben, damit du das Maximum an möglicher Privatsphäre erlangst und dabei hilfst, das Netzwerk zu dezentralisieren."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/remote-node.md:16
+#, no-wrap
+msgid "Public Nodes"
+msgstr "Öffentliche Nodes"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:19
+#
+msgid "Open nodes are cool because, as we said above, allow people who are not running their own node to immediately join the Monero network. There are 2 main ways to connect to an open node: Simply get somebody to share with you their node, by asking them to \"open it\" and provide you with IP address and port, or use a public one."
+msgstr "Offene Nodes sind super, weil sie es Leuten, die keinen eigenen Node betreiben, erlauben, direkt dem Monero-Netzwerk beizutreten. Es gibt zwei Hauptmöglichkeiten, zu einem offenen Node zu verbinden: Finde jemanden, der seinen Node mit dir teilt, oder nutze schlicht einen öffentlichen Node."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:21
+#
+msgid "Public nodes are reachable in the network using two systems:"
+msgstr "Öffentliche Nodes sind durch zwei Systeme im Netzwerk erreichbar:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:23
+#
+msgid "- **Node aggregators**, which are basically lists of open remote nodes. The operators of those nodes decided to add them to the aggregator so that other people can use them. The aggregator will provide to the person who want to use a remote node a simple URL. This URL connects to one of the nodes in the list and will need to be inserted in the Monero wallet (GUI or CLI). The wallet will then contact one of the nodes provided by the URL and will allow the end user to immediately receive and send transactions. One of the most famous node aggregators is [MoneroWorld](https://moneroworld.com/#nodes)."
+msgstr "- **Node-Sammlungen**, im Grunde Auflistungen offener Remote-Nodes. Die Betreiber dieser Nodes haben sich dazu entschieden, diese zur Sammlung hinzuzufügen, sodass andere sie nutzen können. Die Sammlung versorgt denjenigen, der einen Remote-Node nutzen möchte, mit einer simplen URL. Diese verbindet zu einem der gelisteten Nodes und muss dazu im Monero-Wallet (GUI oder CLI) eingefügt werden. Das Wallet kontaktiert daraufhin einen der durch die URL vermittelten Nodes und erlaubt dem Endnutzer das sofortige Empfangen und Senden von Transaktionen. Eine der bekanntesten Node-Sammlungen ist [MoneroWorld](https://moneroworld.com/#nodes)."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:25
+#
+msgid "- **Native public nodes**. This is one of the new coolest features the Monero devs came up with to improve the user experience and to make easier to connect to the network. The @daemon allows to make a node public by simply adding the flag `--public-node`. Doing so, it will be advertised on the P2P network and people will be able to connect to it (or to another public node advertising itself in the same way) using the related option in the GUI and CLI wallets."
+msgstr "- **Native offene Nodes**, eine der neuen coolen Funktionen, die die Monero-Entwickler zur Verbesserung des Nutzererlebnisses und Vereinfachung des Verbindens zum Netzwerk eingebracht haben. Das CLI-Wallet erlaubt die Veröffentlichung eines Nodes durch das einfach Hinzufügen des Flags `--public-node`. Dadurch wird dieser Node auf dem P2P-Netzwerk angezeigt und Nutzer können sich zu diesem (oder jedem anderen öffentlichen Node, der so angezeigt wird) verbinden, indem sie die zugehörige Einstellung in den GUI- und CLI-Wallets vornehmen."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/remote-node.md:26
+#
+msgid "Be aware that using public remote nodes can be risky. Node operators can link transactions to IP addresses. These risks can be mitigated, but you should always avoid using them if you have the possibility. Run your own node!"
+msgstr "Sei dir darüber bewusst, dass die Nutzung von Remote-Nodes riskant sein kann. Node-Betreiber können Transaktionen mit IP-Adressen in Verbindung bringen. Diese Risiken können zwar minimiert werden, wenn möglich solltest du dennoch vermeiden, einen solchen Node zu nutzen. Betreibe deinen eigenen Node!"

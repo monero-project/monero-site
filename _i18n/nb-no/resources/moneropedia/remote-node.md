@@ -1,24 +1,59 @@
 ---
-terms: ["remote-node", "remote-nodes", "ekstern node", "eksterne noder"]
-summary: "Noder som ikke kjører i samme maskin som lommeboken. Med åpne, eksterne noder kan man bruke Monero-nettverket med en gang"
+summary: 'Nodes which are not running in the same machine as the wallet. Open remote nodes allow to use the Monero network immediately'
+terms: ["remote-node", "remote-nodes"]
 ---
 
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
-En @node som ikke kjører på samme lokale maskin hvor Monero-@lommeboken befinner seg, kalles for en «ekstern node», og kan være privat eller åpen.
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
-En **privat, ekstern node** kjører ikke på den lokale maskinen din, men du har full kontroll over den. Et klassisk eksempel er en node som kjører på en VPS eller server. Den noden befinner seg ikke på den lokale maskinen din, men du har full kontroll over den. Du kan til og med beslutte å gjøre den om til en offentlig node og la folk koble seg til den.
+A @node that doesn't run on the same local machine where the Monero @wallet
+is located is called "Remote Node" and can be private or open.
 
-En **Åpen, ekstern node** kan brukes av folk som av personlige grunner (vanligvis på grunn av maskinvarekrav, diskplass eller tekniske ferdigheter), ikke kan eller vil kjøre sin egen node og foretrekker å stole på en offentlig tilgjengelig en på Monero-nettverket. Åpne, eksterne noder refereres ofte til som «eksterne noder».
+A **private remote node** doesn't run on your local machine, but you have
+full control over it. A classic example is a node running on a VPS or a
+server. That node is not on your local machine, but you have full control
+over it. You can even decide to make it become an open node, allowing people
+to connect to it.
 
-Å bruke en åpen node lar deg foreta umiddelbare @transaksjoner uten behov for å laste ned @blokkjeden og synkronisere til Monero-nettverket først, men på bekostning av kontrollen over personvernet ditt. Monero-samfunnet foreslår å alltid at du kjører din egen node for å oppnå den største graden av personvern og for å hjelpe med å desentralisere nettverket.
+An **Open remote node** can be used by people who, for their own reasons
+(usually because of hardware requirements, disk space, or technical
+abilities), cannot/don't want to run their own node and prefer to relay on
+one publicly available on the Monero network. Open remote nodes are often
+simply referred as "remote nodes".
 
-### Offentlige noder
+Using an open node will allow to make a @transaction instantaneously,
+without the need to download the @blockchain and sync to the Monero network
+first, but at the cost of the control over your privacy. the Monero
+community suggests to always run your own node to obtain the maximum privacy
+possible and to help decentralize the network.
 
-Åpne noder er fine fordi de, som nevnt over, lar folk som ikke kjører sin egen node umiddelbart delta i Monero-nettverket. Det er to hovedmåter å koble til en åpen node: Enten få noen til å dele sin offentlige node med deg ved å be dem om å «åpne den» og gi deg IP-adressen og porten sin, eller ved å bruke en offentlig node.
+### Public Nodes
 
-Offentlige noder kan nås i nettverket via to systemer:
+Open nodes are cool because, as we said above, allow people who are not
+running their own node to immediately join the Monero network. There are 2
+main ways to connect to an open node: Simply get somebody to share with you
+their node, by asking them to "open it" and provide you with IP address and
+port, or use a public one.
 
-- **Nodeaggregatorer**, som i bunn og grunn er lister over åpne, eksterne noder. Operatørene av disse nodene bestemte seg for å legge dem til aggregatoren slik at folk kan bruke dem. Aggregatoren gir en enkel nettadresse til personen som vil bruke en ekstern node. Denne nettadressen kobles til en av nodene i listen og må settes inn i Monero-lommeboken (GUI eller CLI). Lommeboken kontakter deretter én av nodene som avledes av nettadressen og lar sluttbrukeren umiddelbart motta og sende transaksjoner. Én av de mest kjent nodeaggregatorene er [MoneroWorld](https://moneroworld.com/#nodes).
-- **Opprinnelige offentlige noder**. Dette er ett av de kuleste nye funksjonene som Monero-utviklerne har funnet på for å forbedre brukeropplevelsen og for å gjøre det lettere å koble til nettverket. @Daemon lar en gjøre en node offentlig ved å legge til `--public-node`-flagget. På denne måten vil det annonseres på P2P-nettverket, og folk vil kunne koble til den (eller til en annen offentlig node som annonserer seg selv på samme måte) ved å bruke det tilhørende valget i GUI- og CLI-lommebøkene.
+Public nodes are reachable in the network using two systems:
 
-Vær oppmerksom på at det kan være risikabelt å bruke offentlige, eksterne noder. Nodeoperatører kan lenke transaksjoner til IP-adresser. Disse risikoene kan reduseres, men du bør alltid unngå å bruke dem hvis du har mulighet. Kjør din egen node!
+- **Node aggregators**, which are basically lists of open remote nodes. The
+operators of those nodes decided to add them to the aggregator so that other
+people can use them. The aggregator will provide to the person who want to
+use a remote node a simple URL. This URL connects to one of the nodes in the
+list and will need to be inserted in the Monero wallet (GUI or CLI). The
+wallet will then contact one of the nodes provided by the URL and will allow
+the end user to immediately receive and send transactions. One of the most
+famous node aggregators is [MoneroWorld](https://moneroworld.com/#nodes).
+
+- **Native public nodes**. This is one of the new coolest features the
+Monero devs came up with to improve the user experience and to make easier
+to connect to the network. The @daemon allows to make a node public by
+simply adding the flag `--public-node`. Doing so, it will be advertised on
+the P2P network and people will be able to connect to it (or to another
+public node advertising itself in the same way) using the related option in
+the GUI and CLI wallets.
+
+Be aware that using public remote nodes can be risky. Node operators can
+link transactions to IP addresses. These risks can be mitigated, but you
+should always avoid using them if you have the possibility. Run your own
+node!
