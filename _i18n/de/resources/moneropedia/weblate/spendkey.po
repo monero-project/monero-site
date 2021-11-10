@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-08 13:32+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/spendkey.md:1
+#, no-wrap
+msgid "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
+msgstr "Eines der zwei Paare privater und öffentlicher kryptografischer Schlüssel, über welche jedes Konto verfügt. Der *private* Spend-Key wird genutzt, um jegliches Guthaben auf dem Konto auszugeben"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/spendkey.md:1
+#, no-wrap
+msgid "[\"spend-key\", \"spend-keys\"]"
+msgstr "[\"spend-key\", \"spend-keys\", \"Spend-Key\", \"Spend-Keys\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/spendkey.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/spendkey.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Grundlagen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/spendkey.md:11
+#
+msgid "One of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account."
+msgstr "Eines der zwei Paare privater und öffentlicher kryptografischer Schlüssel, über welche jedes Konto verfügt. Der *private* Spend-Key wird genutzt, um jegliches Guthaben auf dem Konto auszugeben."
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/spendkey.md:12
+#, no-wrap
+msgid "In-depth Information"
+msgstr "Ausführliche Informationen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/spendkey.md:14
+#
+msgid "The *private* spend key is a 256-bit integer that is used to sign Monero transactions. With the current deterministic key derivation method of the official wallet, the private spend key is also an alternate representation of the @mnemonic-seed. It can be used to derive all other account keys."
+msgstr "Der *private* Spend-Key ist ein 256-Bit-Integer, der zum Signieren von Monero-Transaktionen verwendet wird. Durch das aktuelle, deterministische Verfahren des offiziellen Wallets, durch welches eine Ableitung der Schlüssel erfolgt, ist der private Spend-Key zusätzlich eine alternative Schreibweise des @mnemonischen-Seeds. Er kann zum Ableiten aller anderen Konto-Schlüssel genutzt werden."
