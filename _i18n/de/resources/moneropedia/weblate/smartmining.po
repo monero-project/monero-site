@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-08 08:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/smartmining.md:1
+#, no-wrap
+msgid "a process of having a throttled miner mine when it otherwise does not cause drawbacks"
+msgstr "Intelligentes Mining ist der Prozess, in welchem ein gedrosselter Miner genutzt wird, sofern dies keine Nachteile mit sich zieht"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/smartmining.md:1
+#, no-wrap
+msgid "[\"smart-mining\"]"
+msgstr "[\"smart-mining\", \"Intelligentes-Mining\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/smartmining.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Grundlagen"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:12
+#
+msgid "Smart mining is the process of having a throttled @miner mine when it otherwise does not cause drawbacks.  Drawbacks include increases heat, slower machine, depleting battery, etc. The intent of smart mining is to increase network security by allowing as many people as possible to let the smart miner on all the time. For this to work, the miner must prove unobtrusive, or it will be turned off, depriving the Monero network from a little bit of security. As such, it is likely that a smart miner will mine slower than a normal miner on the same hardware."
+msgstr "Intelligentes Mining ist der Prozess, in welchem ein gedrosselter Miner genutzt wird, sofern dies keine Nachteile mit sich zieht.  Die Nachteile umfassen eine erhöhte Hitzeentwicklung, ein verlangsamtes Gerät, sich schnell entleerende Akkus etc. Die Intention des intelligenten Minings ist eine Erhöhung der Netzwerksicherheit dadurch, dass so vielen Leuten wie möglich gewährt wird, ihren intelligenten Miner dauerhaft laufen zu lassen. Damit dies funktioniert, muss sich der Miner als zurückhaltend erweisen, anderenfalls wird er abgeschaltet und dem Monero-Netzwerk dadurch ein kleines bisschen seiner Sicherheit entzogen. Es ist wahrscheinlich, dass das Mining eines intelligenten Miners langsamer ist als das eines regulären Miners auf demselben Gerät."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:14
+#
+msgid "Smart mining is available in the official CLI and GUI wallet, which are available in the [downloads page]({{ site.baseurl_root }}/downloads/)."
+msgstr "Intelligentes Mining steht in den offiziellen CLI- und GUI-Wallets, welche auf der [Downloads-Seite]({{ site.baseurl }}/downloads/) erhältlich sind, zur Verfügung."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/smartmining.md:15
+#
+msgid "It is hoped that the relative slowness of a smart miner (especially on low-power machines) will be offset by the large amount of people running a miner for a possible \"lottery win\", and thus increase the Monero network security by a non trivial amount. The increased hash rate from many different sources helps keep the Monero network decentralized."
+msgstr "Es ist zu hoffen, dass die verhältnismäßige Langsamkeit eines intelligenten Miners (besonders auf Geräten mit niedriger Leistung) durch eine große Anzahl von Menschen, die für einen potenziellen \"Lotteriegewinn\" einen Miner betreiben, kompensiert wird und dadurch die Netzwerksicherheit bedeutend erhöht wird. Eine durch viele verschiedene Ursprünge gesteigerte Hashrate hilft dabei, die Dezentralisierung des Monero-Netzwerks zu erhalten."
