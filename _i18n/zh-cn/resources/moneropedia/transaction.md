@@ -1,14 +1,23 @@
 ---
+summary: 交易的参数包含一个或多个具有相应资金数额的收件人地址和一个@环尺寸参数，该参数指定绑定到交易的输出数量。使用的输出越多，混淆的程度就越高，但这是有代价的。因为交易越大输出越多，交易费也就越高。
 terms: ["transaction", "transactions"]
-summary: "a cryptographically signed container that details the transfer of Monero to a recipient (or recipients)"
 ---
 
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
+
 ### 基础知识
 
 交易的参数包含一个或多个具有相应资金数额的收件人地址和一个@环尺寸参数，该参数指定绑定到交易的输出数量。使用的输出越多，混淆的程度就越高，但这是有代价的。因为交易越大输出越多，交易费也就越高。
 
-可以离线产生交易，这提供了额外的隐私性效益。
+The parameters of a transaction contain one or more recipient addresses with
+corresponding amounts of funds and a @ring-size parameter that specifies the
+number outputs bound to the transaction. The more outputs that are used, a
+higher degree of obfuscation is possible, but that comes with a cost. Since
+a transaction gets larger with more outputs, the transaction fee will be
+higher.
+
+It is possible to form a transaction offline, which offers additional
+privacy benefits.
 
 惟一识别交易的方法是使用可选的支付ID，该ID通常由32字节字符串（64个十六进制字符）。
 
