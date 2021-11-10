@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-16 09:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/consensus.md:1
+#, no-wrap
+msgid "consensus describes a property of distributed networks like Monero where most of the participants follow the rules, and thus reject bad participants"
+msgstr "Konsensus beskriver en egenskap som distribuerte nettverk som Monero har der de fleste deltakerne følger regler og således avviser dårlige deltakere"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/consensus.md:1
+#, no-wrap
+msgid "[\"consensus\", \"consensus-network\"]"
+msgstr "[\"consensus\", \"consensus-network\", \"konsensus\", \"konsensusnettverk\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/consensus.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/consensus.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Det grunnleggende"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/consensus.md:10
+#
+msgid "Consensus describes a property of distributed networks like Monero where most of the participants follow the rules, and thus reject bad participants."
+msgstr "Konsensus beskriver en egenskap som distribuerte nettverk som Monero har der de fleste deltakerne følger regler og således avviser dårlige deltakere."
