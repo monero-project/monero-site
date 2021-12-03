@@ -13,7 +13,7 @@ permalink: /press-kit/index.html
             <h2>{% t press-kit.contacts %}</h2>
         </div>
         <p>{% t press-kit.contactsp %}</p>
-        <p>{% t press-kit.contactgen %} press[at]getmonero[dot]org</p>
+        <p>{% t press-kit.contactgen %} press@getmonero.org</p>
         <p>{% t press-kit.contactwg %} <a href="{{ site.baseurl }}/community/workgroups/">{% t titles.workgroups %}</a></p>
         <p>{% t press-kit.contactcomm %} <a href="{{ site.baseurl }}/community/hangouts/">{% t titles.hangouts %}</a></p>
     </div>
