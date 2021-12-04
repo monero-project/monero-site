@@ -615,7 +615,7 @@ developer-guides:
   moneroecosystem: Community of Monero developers. Contains libraries and resources and guides of some Monero Workgroups, like the Localization Workgroup and the Outreach Workgroup.
   monerose: One of the most complete resources for both users and developers.
   libraries: Libraries and helpers
-  libraries_para: Monero libraries created and maintained by the community. They are not vetted by the core team and are listed here only for convenience. Make your own researches before using them. If you want to add a library to this list, please open an issue on
+  libraries_para: Monero libraries are created and maintained by the community. The following repositories are not vetted by the core team and are only listed here for convenience. Please conduct your own research before using them, and if you want to add a library to this list, please open an issue on
   monero-javascript: A Node.js library for using Monero.
   monero-nodejs: Wallet manager for interacting with monero-wallet-rpc.
   monerophp: A Monero library written in PHP by the Monero Integrations team.
