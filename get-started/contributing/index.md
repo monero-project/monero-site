@@ -76,10 +76,10 @@ permalink: /get-started/contributing/index.html
                     </div><br>
                     <div class="row center-xs">
                         <div class="col-lg-6">
-                            <img src="/img/donate-monero.png" alt=""/>
+                            <img class="qr" src="/img/donate-monero.png" alt="{% t contributing.altqrmonero %}"/>
                         </div>
                         <div class="col-lg-6">
-                            <img src="/img/donate-bitcoin.png" alt=""/>
+                            <img class="qr" src="/img/donate-bitcoin.png" alt="{% t contributing.altqrbitcoin %}"/>
                         </div>
                     </div>
                     <div class="row start-xs">

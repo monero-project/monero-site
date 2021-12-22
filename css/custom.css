@@ -4280,6 +4280,10 @@ p.hangouts-social {
     margin: 0;
 }
 
+.contribute img.qr {
+    max-width: 15rem;
+}
+
 /**************************MONERO PROJECT***********************/
 
 .monero-project p {

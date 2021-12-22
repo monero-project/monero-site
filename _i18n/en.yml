@@ -421,6 +421,8 @@ contributing:
   sponsor_p: You can also support Monero through a sponsorship program. See the dedicated 
   sponsor_link: Sponsorships page
   sponsor_p2: for more info.
+  altqrmonero: Monero QR code
+  altqrbitcoin: Bitcoin QR code
 
 faq:
   intro: Find answers to recurring questions and concerns about Monero.
