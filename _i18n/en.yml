@@ -195,13 +195,13 @@ team:
   mrl_start: Join the chatroom below and state your interests and your skills. Research is always ongoing, and somebody will point you in the right direction.
   space: Monero Space
   space_descr: Monero Space is an active, project-focused Monero workgroup that provides services to the Monero community. It hosts popular resources and organizes events such as Monero Meet.
-  space_start: The workgroup can be contacted by writing to their chatroom on Freenode.
+  space_start: The workgroup can be contacted by writing to their chatroom on Matrix/Libera.
   mrw: Malware Response Workgroup
   mrw_descr: The Malware Response Workgroup provides resources and live support for multiple types of Monero-related malware.
   mrw_start: Most of the activity of this workgroup happens on the IRC chat. If you wish to contribute, just join the channel to ask questions or provide support.
   mpwg: Monero Policy Working Group
   mpwg_descr: Monero Policy Working Group is a loosely formed quorum of individuals with an interest in interacting with regulators, policy makers, and the wider financial services sector to ensure broad understanding of Monero’s component technologies, especially with regards to its compatibility with evolving regulatory and compliance requirements.
-  mpwg_start: If you would like to take part or follow policy discussions, join matrix/freenode chatroom.
+  mpwg_start: If you would like to take part or follow policy discussions, join Matrix/Libera chatroom.
 
 downloads:
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
