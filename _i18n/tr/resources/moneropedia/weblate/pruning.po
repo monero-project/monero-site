@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-02 10:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/pruning.md:1
+#, no-wrap
+msgid "Feature that allows node operators to download and sync only 1/3 of the blockchain"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/pruning.md:1
+#, no-wrap
+msgid "[\"pruning\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:7
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:9
+msgid "'Pruning' allows node operators to save 2/3 of storage space while keeping the full transaction history. Pruning works by removing 7/8 of unnecessary ring signature data. The 1/8 remaining data will be available to the other nodes and will be used to sync with the network. Other pruned nodes will have a random 1/8 of the data, which they will also make available to the network. There are no privacy or security downsides when using a pruned node."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:11
+msgid "There are three ways to prune:"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:13
+msgid "- *Synchronize a pruned node from scratch:* You will download and sync only 1/3 of the full blockchain."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:15
+msgid "- *Prune an existing node:* The already existing blockchain will be pruned, but this will not result in a smaller blockchain. Instead, it will mark parts of the file as free, so that future data will use that free space, causing the file to not grow until free space grows scarce."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:17
+msgid "- *Create a new pruned blockchain from a full one:* A full blockchain that you already have will be used to create a new, pruned blockchain."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:19
+msgid "Pruned nodes are very useful and preferable to @remote-nodes, but if possible, users should run a full node and opt for pruning only in case if necessary."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/pruning.md:20
+msgid "The 'database pruning' feature [was added](https://github.com/monero-project/monero/pull/4843) on January 2019. See the [blog post]({{ site.baseurl }}/2019/02/01/pruning.html) for more information."
+msgstr ""
