@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-10-05 09:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/ringCT.md:1
+#, no-wrap
+msgid "a way to hide the amount sent in a Monero transaction"
+msgstr "Un moyen de masquer le montant envoyé dans une transaction Monero"
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/ringCT.md:1
+#, no-wrap
+msgid "[\"ringCT\", \"ring-CT\"]"
+msgstr "[\"ringCT\", \"ring-CT\", \"transactions-confidentielles-de-cercle\", \"transaction-confidentielle-de-cercle\"]"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringCT.md:7
+#
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/ringCT.md:8
+#, no-wrap
+msgid "The Basics"
+msgstr "Les Bases"
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringCT.md:11
+#
+msgid "RingCT, short for Ring Confidential Transactions, is how transaction amounts are hidden in Monero."
+msgstr "RingCT, abréviation de Transactions confidentielles de cercle (*Ring Confidential Transactions*), est la méthode grâce à laquelle les montants sont cachés dans Monero."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringCT.md:13
+#
+msgid "Ring CT was implemented in block #1220516 in January 2017.  After September 2017, this feature became mandatory for all transactions on the network."
+msgstr "Les transactions confidentielles de cercle ont été implémentées dans le block #1220516 en Janvier 2017. Après Septembre 2017, cette fonctionnalité est devenue obligatoire pour toutes les transactions sur le réseau."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringCT.md:15
+#
+msgid "RingCT introduces an improved version of @ring-signatures called \"A Multi-layered Linkable Spontaneous Anonymous Group signature\", which allows for hidden amounts, origins and destinations of transactions with reasonable efficiency and verifiable, trustless coin generation."
+msgstr "Les transactions confidentielles de cercle introduisent une version améliorée des @signatures-de-cercle appelées \"Une signature de groupe anonyme Spontanée multi-couches liable\" (*A Multi-layered Linkable Spontaneous Anonymous Group signature*), qui permet de masquer les montants, les origines et les destinations des transactions avec une efficacité suffisante et une génération de pièces contrôlable et sans nécessité de confiance."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/ringCT.md:16
+#
+msgid "For more information, please read the creator Shen Noether's paper [here](https://eprint.iacr.org/2015/1098)."
+msgstr "Pour plus d'informations, lisez le document du créateur Shen Noether [ici](https://eprint.iacr.org/2015/1098)."

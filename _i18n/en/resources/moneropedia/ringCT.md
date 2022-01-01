@@ -4,7 +4,9 @@ summary: "a way to hide the amount sent in a Monero transaction"
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
+
 ### The Basics
+
 RingCT, short for Ring Confidential Transactions, is how transaction amounts are hidden in Monero.
 
 Ring CT was implemented in block #1220516 in January 2017.  After September 2017, this feature became mandatory for all transactions on the network.
