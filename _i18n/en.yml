@@ -540,7 +540,7 @@ mining:
   efficiency: Monero can be mined by both CPUs and GPUs, but the former is much more efficient.
   miningset: Solo or pool mining
   miningsetp: >
-    Miners can decide if they prefer to solo mine or to mine in a pool. Each method has its benefits and drawbacks, but the Monero Project encourages individuals to solo mine using the Monero software (<a href="https://www.getmonero.org/downloads/#gui">GUI</a> and <a href="https://www.getmonero.org/downloads/#cli">CLI</a>), as this type of independent mining is the most effective way to increase the robustness of the Monero network.
+    Miners can decide if they prefer to solo mine or to mine in a pool. Each method has its benefits and drawbacks, but the Monero Project encourages individuals to solo mine using the Monero software (<a href="https://www.getmonero.org/downloads/#gui">GUI</a> and <a href="https://www.getmonero.org/downloads/#cli">CLI</a>), as this type of independent mining is the most effective way to increase the robustness of the Monero network. Mining using P2Pool is also encouraged.
   procons: "Pro and cons of solo and pool mining:"
   solo: Solo
   prosecure: Makes the network more secure than if mining in a pool
@@ -560,6 +560,20 @@ mining:
   software_para: Note that some miners may have developer fees.
   support: Support
   supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+  p2poolh: "P2Pool: The best of both solo and pool mining"
+  p2poolnew: >
+    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">the announcement post</a>.
+  p2poolp: >
+    P2Pool is a sidechain to Monero, and P2Pool blocks are potentially Monero blocks. Each miner submits block templates that include payouts to all of the miners that are mining at the same time (those that currently have shares in the PPLNS window). High quality block templates are added to the P2Pool blockchain as blocks; these count as "shares" for the miner who found them.
+  p2poolfeatures: Main features
+  p2pdecentralized: <b>Decentralized:</b> no central server that can be shutdown/blocked/malicious.
+  p2ppermissionless: <b>Permissionless:</b> anyone can join the sidechain, and it's effectively impossible to censor individual miners.
+  p2ptrustless: <b>Trustless:</b> there is no pool wallet; funds are never in custody. All pool blocks pay out to miners immediately.
+  p2pplns: <b>PPLNS</b> payout scheme
+  p2pzerofee: 0% fee
+  p2pzeropayout: <b>0 XMR</b> payout fee
+  p2pminpayout: Less than 0.0004 XMR minimum payout
+  p2pmoreinfo: "More information and details on the GitHub repository of the project:"
 
 what-is-monero:
   need-to-know: What you need to know
