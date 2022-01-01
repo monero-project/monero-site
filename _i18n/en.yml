@@ -258,7 +258,7 @@ downloads:
   showhash2: and should be treated as canonical, with the signature checked against the appropriate GPG key
   showhash3: in the source code
   showhash4: "Two guides are available to guide you through the verification process:"
-  mobilelight1: The following are mobile or light wallets that are deemed safe by respected members of the community. If there is a wallet that is not on here, you can request the community check it out. Go to our
+  mobilelight1: The wallets listed below are mobile or light wallets that are deemed safe by respected members of the community. If you want to use a wallet that is not listed on this page, it is strongly recommended that you consult the community to find out if the wallet is safe and what are the risks in using it. Go to our
   mobilelight2: Hangouts
   mobilelight3:  page to see where we are.
   installer: Installer
