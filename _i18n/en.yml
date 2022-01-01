@@ -292,8 +292,8 @@ press-kit:
   intro2: Note that the white background options have a white background under the Monero symbol only, not as a background to the whole image.
   intro3: Lastly, you can download everything on this page in one zip file by clicking
   intro4: here.
-  noback: No background
-  whiteback: White background
+  noback: Transparent M
+  whiteback: White M (Suggested)
   symbol: Monero Symbol
   logo: Monero Logo
   small: Small
