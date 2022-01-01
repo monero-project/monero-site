@@ -2636,7 +2636,7 @@ Alias: *None*.
 
 Inputs:
 
-* *name* - string; Name of the wallet.
+* *filename* - string; Name of the wallet.
 * *password* - string; Password of the wallet.
 * *seed* - string; Mnemonic phrase of the wallet to restore.
 * *restore_height* - integer; (Optional) Block height to restore the wallet from (default = 0).
