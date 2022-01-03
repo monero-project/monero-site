@@ -56,4 +56,22 @@ permalink: /community/sponsorships/index.html
             </div>
         </div>
     </section>
+    <section class="container">
+        <div class="row">
+            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="info-block">
+                    <h2>{% t sponsorships.pastsponsors %}</h2>
+                    <ul>
+                        <li><a href="https://globee.com">Globee</a></li>
+                        <li><a href="https://www.navicat.com">Navicat</a></li>
+                        <li><a href="https://www.forked.net">Forked</a></li>
+                        <li><a href="https://www.kitware.com/">Kitware</a></li>
+                        <li><a href="https://dome9.com/">Dome9 Security</a></li>
+                        <li><a href="https://www.jetbrains.com/">JetBrains</a></li>
+                        <li><a href="https://mymonero.com/">My Monero</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
