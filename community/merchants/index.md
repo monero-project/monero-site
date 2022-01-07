@@ -104,6 +104,7 @@ permalink: /community/merchants/index.html
             <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
             <li><a href="https://changenow.io/">ChangeNow</a></li>
             <li><a href="https://godex.io/">Godex</a></li>
+            <li><a href="https://karsha.biz/">Karsha</a></li>
           </ul>
       </div>
     </div>
