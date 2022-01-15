@@ -1859,6 +1859,9 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 }
 
+.btn-link.btn-fixed {
+  margin-bottom: 2rem;
+}
 /************************NAVIGATION*************************/
 
 /*DESKTOP NAVIGATION*/
