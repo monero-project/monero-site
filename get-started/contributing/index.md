@@ -21,18 +21,18 @@ permalink: /get-started/contributing/index.html
                     <div class="row start-xs">
                         <h3>{% t contributing.full-node %}</h3>
                         <p>{% t contributing.full-node_p %}</p>
-                        <p>{% t contributing.full-node_p2 %} <a href="{{ site.baseurl }}/resources/user-guides/vps_run_node.html">{% t user-guides.vps-node %}</a>, <a href="{{ site.baseurl }}/resources/user-guides/node-i2p-zero.html">{% t user-guides.node-i2pzero %}</a>, <a href="http://xmrguide42y34onq.onion/tails">{% t user-guides.tailsguide %}</a>. <a href="{{ site.baseurl }}/resources/user-guides/">{% t contributing.allguides %}</a></p>
+                        <p>{% t contributing.full-node_p2 %} <a href="{{ site.baseurl }}/resources/user-guides/vps_run_node.html" target="_blank">{% t user-guides.vps-node %}</a>, <a href="{{ site.baseurl }}/resources/user-guides/node-i2p-zero.html" target="_blank">{% t user-guides.node-i2pzero %}</a>, <a href="http://xmrguide42y34onq.onion/tails" target="_blank">{% t user-guides.tailsguide %}</a>. <a href="{{ site.baseurl }}/resources/user-guides/" target="_blank">{% t contributing.allguides %}</a></p>
                         <h3>{% t contributing.develop %}</h3>
                         <p>{% t contributing.developp %}</p>
                             <ul class="logo">
-                                <li><a href="https://github.com/monero-project/monero">{% t contributing.cli %}</a> {% t contributing.cli_p %}</li>
-                                <li><a href="https://github.com/monero-project/monero-gui">{% t contributing.gui %}</a> {% t contributing.gui_p %}</li>
-                                <li><a href="https://github.com/monero-project/monero-site">{% t contributing.website %}</a> {% t contributing.website_p %}</li>
-                                <li>{% t contributing.bug %} <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">{% t contributing.discl %}</a></li>
+                                <li><a href="https://github.com/monero-project/monero" target="_blank">{% t contributing.cli %}</a> {% t contributing.cli_p %}</li>
+                                <li><a href="https://github.com/monero-project/monero-gui" target="_blank">{% t contributing.gui %}</a> {% t contributing.gui_p %}</li>
+                                <li><a href="https://github.com/monero-project/monero-site" target="_blank">{% t contributing.website %}</a> {% t contributing.website_p %}</li>
+                                <li>{% t contributing.bug %} <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank">{% t contributing.discl %}</a></li>
                             </ul>
-                        <p>{% t contributing.develop_descr %} <a href="{{ site.baseurl }}/community/workgroups/">{% t contributing.develop_wg %}</a></p>
+                        <p>{% t contributing.develop_descr %} <a href="{{ site.baseurl }}/community/workgroups/" target="_blank">{% t contributing.develop_wg %}</a></p>
                         <h3>{% t contributing.mine %}</h3>
-                        <p>{% t contributing.mine_p %} <a href="{{ site.baseurl }}/get-started/mining/">{% t contributing.mine_link %}</a></p>
+                        <p>{% t contributing.mine_p %} <a href="{{ site.baseurl }}/get-started/mining/" target="_blank">{% t contributing.mine_link %}</a></p>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ permalink: /get-started/contributing/index.html
                         <p>{% t contributing.ccs_p %}</p>
                     </div><br>
                     <div class="row center-xs">
-                        <a class="btn-link btn-auto btn-primary" href="https://ccs.getmonero.org">{% t contributing.ccsbutton %}</a>
+                        <a class="btn-link btn-auto btn-primary" href="https://ccs.getmonero.org" target="_blank">{% t contributing.ccsbutton %}</a>
                     </div>
                 </div>
             </div>
@@ -91,13 +91,13 @@ permalink: /get-started/contributing/index.html
                         <div class="col-xs-12">
                             <h3>{% t contributing.supportdev %}</h3>
                             <p>{% t contributing.supportdev_p %}</p>
-                            <p>{% t contributing.supportdev_p2 %} <a href="https://www.openhub.net/p/monero/contributors/summary">{% t contributing.supportdev_link %}</a>.</p>
+                            <p>{% t contributing.supportdev_p2 %} <a href="https://www.openhub.net/p/monero/contributors/summary" target="_blank">{% t contributing.supportdev_link %}</a>.</p>
                         </div>
                     </div>
                     <div class="row start-xs">
                         <div class="col-xs-12">
                             <h3>{% t contributing.sponsor %}</h3>
-                            <p>{% t contributing.sponsor_p %} <a href="{{ site.baseurl }}/community/sponsorships/">{% t contributing.sponsor_link %}</a> {% t contributing.sponsor_p2 %}</p>
+                            <p>{% t contributing.sponsor_p %} <a href="{{ site.baseurl }}/community/sponsorships/" target="_blank">{% t contributing.sponsor_link %}</a> {% t contributing.sponsor_p2 %}</p>
                         </div>
                     </div>
                 </div>
