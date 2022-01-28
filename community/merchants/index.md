@@ -15,8 +15,8 @@ permalink: /community/merchants/index.html
         <p>{% t merchants.use %}</p>
         <p>{% t merchants.dirdescr %}</p>
         <ul class="logo">
-          <li><a href="https://cryptwerk.com/pay-with/xmr/">cryptwerk.com</a></li>
-          <li><a href="https://www.acceptedhere.io/catalog/currency/xmr/">acceptedhere.io</a></li>
+          <li><a href="https://cryptwerk.com/pay-with/xmr/" target="_blank">cryptwerk.com</a></li>
+          <li><a href="https://www.acceptedhere.io/catalog/currency/xmr/" target="_blank">acceptedhere.io</a></li>
         </ul>
       </div>
     </div>
@@ -24,7 +24,7 @@ permalink: /community/merchants/index.html
       <div class="info-block">
         <h2>P2P exchanges and Atomic Swaps</h2>
         <p>{% t merchants.descrp2p %}</p>
-        <p>{% t merchants.swapsdescr %} <a href="https://unstoppableswap.net/">unstoppableswap.net</a>.</p>
+        <p>{% t merchants.swapsdescr %} <a href="https://unstoppableswap.net/" target="_blank">unstoppableswap.net</a>.</p>
       </div>
     </div>
     <div class="row">
@@ -42,7 +42,7 @@ permalink: /community/merchants/index.html
             <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
-          <p><a href="https://bisq.network/" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitbisq %}</a></p>
+          <p><a href="https://bisq.network/" target="_blank" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitbisq %}</a></p>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ permalink: /community/merchants/index.html
             <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
           </div>
           <div class="center-xs">
-            <p><a href="https://localmonero.co" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitlocalmonero %}</a></p>
+            <p><a href="https://localmonero.co" target="_blank" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitlocalmonero %}</a></p>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ permalink: /community/merchants/index.html
             <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
-            <p><a href="https://hodlhodl.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithodlhodl %}</a></p>
+            <p><a href="https://hodlhodl.com" target="_blank" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithodlhodl %}</a></p>
           </div>
         </div>
       </div>
@@ -90,20 +90,20 @@ permalink: /community/merchants/index.html
         <h3>CEXes</h3>
         <p>{% t merchants.cexp %}</p>
         <ul class="logo">
-            <li><a href="https://www.kraken.com/">Kraken</a> (EUR*, USD*, CAD, GBP, JPY, AUD, CHF)</li>
-            <li><a href="https://www.binance.com/trade.html?symbol=XMR_BTC">Binance</a> (USD, EUR, RUB, TRY, NGN, UAH, KZT, INR, ...)</li>
-            <li><a href="https://dvchain.co/">DV Chain (OTC)</a> (USD*, CAD*, GBP*, EUR*, JPY*, ...)</li>
-            <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD*)</li>
+            <li><a href="https://www.kraken.com/" target="_blank">Kraken</a> (EUR*, USD*, CAD, GBP, JPY, AUD, CHF)</li>
+            <li><a href="https://www.binance.com/trade.html?symbol=XMR_BTC" target="_blank">Binance</a> (USD, EUR, RUB, TRY, NGN, UAH, KZT, INR, ...)</li>
+            <li><a href="https://dvchain.co/" target="_blank">DV Chain (OTC)</a> (USD*, CAD*, GBP*, EUR*, JPY*, ...)</li>
+            <li><a href="https://www.bitfinex.com/" target="_blank">Bitfinex</a> (USD*)</li>
           </ul>
           <p>*Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
-            <li><a href="https://sideshift.ai/">Sideshift.ai</a></li>
-            <li><a href="https://www.morphtoken.com/">Morphtoken</a></li>
-            <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
-            <li><a href="https://changenow.io/">ChangeNow</a></li>
-            <li><a href="https://godex.io/">Godex</a></li>
+            <li><a href="https://sideshift.ai/" target="_blank">Sideshift.ai</a></li>
+            <li><a href="https://www.morphtoken.com/" target="_blank">Morphtoken</a></li>
+            <li><a href="https://simpleswap.io/" target="_blank">SimpleSwap</a></li>
+            <li><a href="https://changenow.io/" target="_blank">ChangeNow</a></li>
+            <li><a href="https://godex.io/" target="_blank">Godex</a></li>
           </ul>
       </div>
     </div>
