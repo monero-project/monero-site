@@ -43,8 +43,8 @@ permalink: /get-started/mining/index.html
                         </div>
                         <p>{% t mining.choosepol %}
                         <ul>
-                            <li><a href="https://miningpoolstats.stream/monero">miningpoolstats.stream</a></li>
-                            <li><a href="https://pools.xmr.wiki">pools.xmr.wiki</a></li>
+                            <li><a href="https://miningpoolstats.stream/monero" target="_blank">miningpoolstats.stream</a></li>
+                            <li><a href="https://pools.xmr.wiki" target="_blank">pools.xmr.wiki</a></li>
                         </ul>
                         </p>
                 </div>
@@ -66,7 +66,7 @@ permalink: /get-started/mining/index.html
                                 <li>{% t mining.p2pzeropayout %}</li>
                                 <li>{% t mining.p2pminpayout %}</li>
                             </ul>
-                            <p>{% t mining.p2pmoreinfo %} <a href="https://github.com/SChernykh/p2pool">github.com/SChernykh/p2pool</a></p>
+                            <p>{% t mining.p2pmoreinfo %} <a href="https://github.com/SChernykh/p2pool" target="_blank">github.com/SChernykh/p2pool</a></p>
                 </div>
             </div>
         </div>
@@ -78,8 +78,8 @@ permalink: /get-started/mining/index.html
                     <h2>{% t mining.software %}</h2>
                         <p>{% t mining.softwarep %}
                         <ul>
-                            <li><a href="https://github.com/xmrig/xmrig">XMRig</a></li>
-                            <li><a href="https://cryptonote.social/tools/csminer">CSminer</a></li>
+                            <li><a href="https://github.com/xmrig/xmrig" target="_blank">XMRig</a></li>
+                            <li><a href="https://cryptonote.social/tools/csminer" target="_blank">CSminer</a></li>
                         </ul>
                         {% t mining.software_para %}
                         </p>
