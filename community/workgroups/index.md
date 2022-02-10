@@ -83,7 +83,7 @@ permalink: /community/workgroups/index.html
             <li>{% t team.chat %} <code>#monero-site</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-site"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-site:haveno.network?via=matrix.org&via=monero.social&via=haveno.network"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a> <a class="chats-img" href="https://mattermost.getmonero.org/monero/channels/monero-site"></a></li>
           </ul>
           <div class="row center-xs icons">
-            <a class="ext-noicon" href="#" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo"><div class="col social-icon github"></div></a>
+            <a class="ext-noicon" href="https://github.com/monero-project/monero-site" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo"><div class="col social-icon github"></div></a>
           </div>
         </div>
       </div>
