@@ -134,6 +134,7 @@ merchants:
   descrp2p: The best way to exchange Monero for other currencies (or the other way round) is using P2P exchanges, because they allow traders to directly interact with each other, without the need of trusted third parties (except maybe for providing an escrow service). These exchanges are more private than their centralized counterparts and allow people to be in complete control of their coins if they are non-custodial, but they usually have less volume than 'traditional' exchanges. In the section below, we offer a list of P2P exchanges that support Monero.
   swapsdescr: A new exciting way to exchange Monero is Atomic Swaps, which <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">we announced</a> on August 2021. Atomic Swaps are a completely decentralized way to swap Bitcoin <-> Monero (more info in the blog post). The technology is brand new, so there aren't many swap providers yet, but you can already sell XMR for BTC using this protocol at
   bisqdescr: Decentralized P2P exchange based on Bitcoin and Tor.
+  monetorydescr: The aggregator of P2P exchange offers. Collects offers from exchange platforms and independent traders.
   cardfoss: "Open source:"
   cardkyc: "<b>No KYC</b> (Know Your Customer):"
   cardbtcfiat: (BTC &#8596; fiat possible)
@@ -149,6 +150,7 @@ merchants:
   visitbisq: Visit Bisq
   visitlocalmonero: Visit LocalMonero
   visithodlhodl: Visit HodlHodl
+  visitmonetory: Visit Monetory
   centrexchanges: Centralized exchanges (CEXs) & Swappers
   centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.
@@ -326,7 +328,7 @@ press-kit:
   whyconf1: We encourage everyone to include community members from the largest privacy project in related news articles and events.
   altpk-1: Picture of a woman standing in front of a 'Monero Talk' banner
   altpk-2: Picture of fluffypony making a presentation in front of a crowd at DEFCON
-  
+
 accepting:
   title_gui: Instructions for the GUI
   index: Index
@@ -418,7 +420,7 @@ contributing:
   supportdev_p2: You can find an overview of the people who directly contribute, or have contributed, to the Monero repositories (along with other useful statistics) on
   supportdev_link: Monero's OpenHub page
   sponsor: Sponsorships
-  sponsor_p: You can also support Monero through a sponsorship program. See the dedicated 
+  sponsor_p: You can also support Monero through a sponsorship program. See the dedicated
   sponsor_link: Sponsorships page
   sponsor_p2: for more info.
   altqrmonero: Monero QR code
@@ -579,21 +581,21 @@ what-is-monero:
   need-to-know: What you need to know
   leading: Monero is the leading cryptocurrency focused on private and censorship-resistant transactions.
   leading_para1: The majority of existing @cryptocurrencies, including Bitcoin and Ethereum, have transparent @blockchains. Transactions can be verified and/or traced by anyone in the world. This means that the sending and receiving @addresses of these @transactions could potentially be linked to real-world identities.
-  leading_para2: Monero, on the other hand, uses various privacy-enhancing technologies to ensure the anonymity of its users. 
+  leading_para2: Monero, on the other hand, uses various privacy-enhancing technologies to ensure the anonymity of its users.
   confidential: Monero transactions are confidential and untraceable.
   confidential_para1: "Unlike selectively transparent alternatives (e.g. Zcash), Monero is the only cryptocurrency where every user is anonymous by default. The sender, receiver, and amount of every single transaction are hidden through the use of three important technologies: @Stealth-Addresses, @Ring-Signatures, and @RingCT."
   confidential_para2: Because every transaction is private, Monero cannot be traced. This makes it a true, @fungible currency. Merchants and individuals accepting Monero do not need to worry about blacklisted or tainted coins.
   grassroots: Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.
-  grassroots_p1: The Monero Project is at the forefront of cryptocurrency privacy and security. Its 
+  grassroots_p1: The Monero Project is at the forefront of cryptocurrency privacy and security. Its
   grassroots_p2: Research Lab
   grassroots_p3: and Development Team are constantly working on new, innovative technologies. Since its launch, the project has received contributions from over
   grassroots_p4: 500 developers
   grassroots_p5: located all around the world.
-  grassroots_p6: Numerous 
+  grassroots_p6: Numerous
   grassroots_p7: forums and chat channels
   grassroots_p8: are available for anyone to join, and the community is always welcoming new members.
   electronic: Monero is electronic cash that allows fast, inexpensive payments to and from anywhere in the world.
-  electronic_para1: With Monero, there are no wire transfer or check clearing fees, no multi-day holding periods, and no fraudulent chargebacks. Because Monero is decentralized, it is not constrained by any particular legal jurisdiction and provides safety from capital control. 
+  electronic_para1: With Monero, there are no wire transfer or check clearing fees, no multi-day holding periods, and no fraudulent chargebacks. Because Monero is decentralized, it is not constrained by any particular legal jurisdiction and provides safety from capital control.
   videos: Monero Videos (English)
   aboutb: About
   walletb: Get a Wallet
@@ -613,7 +615,7 @@ about:
   privacy: Privacy
   privacy_para: Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
   decentralization: Decentralization
-  decentralization_para: Monero is committed to providing the highest degree of decentralization in both network security and code development. Its Proof of Work algorithm prevents specialized mining hardware from dominating the network and allows for fair distribution of block rewards. Additionally, Monero's development and research are conducted via global collaboration, and the project is carried out with utmost transparency. Each development decision is open to public discussion, and every major developer meeting is published online. 
+  decentralization_para: Monero is committed to providing the highest degree of decentralization in both network security and code development. Its Proof of Work algorithm prevents specialized mining hardware from dominating the network and allows for fair distribution of block rewards. Additionally, Monero's development and research are conducted via global collaboration, and the project is carried out with utmost transparency. Each development decision is open to public discussion, and every major developer meeting is published online.
 
 
 developer-guides:
@@ -784,7 +786,7 @@ roadmap:
   getmoneroweblate: Getmonero translatable on Weblate
   releasedgui-0-15-0-4: GUI 0.15.0.4 released
   released-0-15-0-5: CLI 0.15.0.5 released
-  dandelion: Implementation of the Dandelion++ protocol 
+  dandelion: Implementation of the Dandelion++ protocol
   onionaddress: Onion address for Getmonero.org
   supercop: Wallet scanning speedups (support for supercop ASM)
   clsag: Concise linkable spontaneous anonymous group (CLSAG) signatures
@@ -793,7 +795,7 @@ roadmap:
   layer2: Second-layer solutions for speed and scalability
   released-0-16-0-0: CLI and GUI 0.16.0.0 released
   released-0-17: CLI and GUI 0.17 'Oxygen Orion' released
-  
+
   returnaddr: Return addresses
   atomicswaps: Monero <-> Bitcoin atomic swaps
   bplus: Bulletproofs+

@@ -82,6 +82,24 @@ permalink: /community/merchants/index.html
           </div>
         </div>
       </div>
+      <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="info-block">
+          <div class="center-xs">
+            <img class="merch" src="/img/merchants/monetory.svg" alt="Monetory Logo" title="Monetory">
+            <p>{% t merchants.monetorydescr %}</p>
+          </div>
+          <div>
+            <p><b>{% t merchants.cardfoss %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.noncustodial %}</b> {% t merchants.depsell %}</p>
+            <p>{% t merchants.cardkyc %} {% t merchants.depsell %}</p>
+            <p><b>XMR &#8596; fiat:</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
+          </div>
+          <div class="center-xs">
+            <p><a href="https://monetory.io" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitmonetory %}</a></p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="info-block">
