@@ -208,6 +208,7 @@ permalink: /resources/roadmap/index.html
                         <h2>{% t roadmap.future %}</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
+                                    <li class="ongoing"><a href="https://haveno.exchange">{% t roadmap.haveno %}</a></li>
                                     <li class="ongoing">{% t roadmap.bplus %}</li>
                                     <li class="ongoing">{% t roadmap.tryptych %}</li>
                                     <li class="upcoming">{% t roadmap.returnaddr %}</li>
