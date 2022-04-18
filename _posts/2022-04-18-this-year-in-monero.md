@@ -4,9 +4,12 @@ title: "This Year in Monero - 2022"
 summary: A snapshot of statistics and social media posts to highlight Monero's growth in its 8th year.
 tags: [community]
 author: reemuru
+image: /blog/assets/2022-04-01-this-year-in-monero/8years.png
 ---
 
-# Introduction
+<div align="center">
+    <img src="{{ page.image }}" width="350px">
+</div>
 
 As a way to celebrate and show the growth that has happened for Monero across the past year on this, the 8th anniversary of the Monero project, I wanted to take a snapshot of statistics and social media posts to highlight this growth.
 
@@ -190,3 +193,4 @@ Here is a quick list of the sources and tools I used to gather these statistics:
 - <https://miningpoolstats.stream/monero> for hashrate graph and current miner count
 - <https://subredditstats.com/r/monero> for subreddit-related statistics and graphs
 - <https://github.com/oduwsdl/FollowerCountHistory> for Twitter follower count history for @monero
+- 8 years logo by u/Wataru_Watanabe
