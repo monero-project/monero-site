@@ -22,27 +22,19 @@ permalink: /community/sponsorships/index.html
                     </div>
                 </div>
             </div>
-			<div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://majesticbank.sc/" target="_blank" rel="noreferrer"><img src="/img/sponsors/mblogo.png" alt="Majestic Bank logo" style="max-width: 80%;"></a>
+                            <a class="ext-noicon" href="https://majesticbank.sc/" target="_blank" rel="noreferrer"><img src="/img/sponsors/mblogo.png" alt="Majestic Bank logo"></a>
                             <p id="tari">{% t sponsorships.mbank %}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="info-block">
-                    <div class="row center-xs">
-                        <div class="col">
-                            <a class="ext-noicon" href="https://symas.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
-                            <p>{% t sponsorships.symas %}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+		
         <div class="row">
             <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
@@ -65,6 +57,19 @@ permalink: /community/sponsorships/index.html
                 </div>
             </div>
         </div>
+		<div class="row">
+					
+			<div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="info-block">
+                    <div class="row center-xs">
+                        <div class="col">
+                            <a class="ext-noicon" href="https://symas.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
+                            <p>{% t sponsorships.symas %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
     </section>
     <section class="container">
         <div class="row">
