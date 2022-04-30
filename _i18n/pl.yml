@@ -957,7 +957,7 @@ mining:
   software_para: Niektóre programy mogą wymagać opłat.
 
   supportp: Jeśli masz pytania lub po prostu chcesz się skonsultować z innymi kopaczami,
-    wejdź na czat Monero Pools. Na <a href="#monero-pools:monero.social">Matrix</a>
+    wejdź na czat Monero Pools. Na <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a>
     i <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   softwarep: "Istnieje kilka opcji, jeśli chodzi o oprogramowanie do kopania. Jak\
     \ już zostało wspomniane, do kopania pojedynczo można użyć portfeli CLI lub GUI\
