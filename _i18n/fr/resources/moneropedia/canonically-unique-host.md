@@ -1,6 +1,6 @@
 ---
 summary: "Un hôte qui est résolu canoniquement en une adresse ou un groupe d'adresses"
-terms: ["Canonically-unique-host", "hôte-canonique-unique", "hôtes-canoniques-uniques"]
+terms: ["Canonically-unique-host", ["hôte-canonique-unique"], ["hôtes-canoniques-uniques"]
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}

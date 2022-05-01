@@ -155,7 +155,6 @@ hangouts:
 
   resources_para1: jak serwer Matrix, tablicę Taiga i platformę tłumaczeniową Weblate.
 merchants:
-  intro2: załóż wątek na GitHub i daj nam znać
   disclaimer: "Uwaga: powyższe linki są jedynie udogodnieniem i służą tylko do celów\
     \ informacyjnych; nie reprezentują one wsparcia społeczności Monero dla żadnego\
     \ z produktów, usług ani opinii wymienionych organizacji lub osób. Społeczność\
@@ -213,11 +212,11 @@ sponsorships:
 
   macstadium: MacStadium sponsoruje dedykowany komputer Mac Mini, który jest używany
     do rozwoju oprogramowania związanego z komputerami Mac.
-  globee: GloBee sponsoruje główną infrastrukturę strony Monero.
   tari: Tari Labs sponsoruje CDN z którego korzysta ta witryna.
   forknetworking: Fork Networking zapewnia serwer, który jest używany do rozwoju oprogramowania.
   symas: Symas sponsoruje swojego CTO Howarda Chu (hyc) za jego pracę nad bazą kodu
     Monero.
+  pastsponsors: Dotychczasowi sponsorzy
 team:
   core: Główny zespół
   community: Grupa robocza ds. społeczności
@@ -256,7 +255,7 @@ team:
     zasoby i wsparcie na żywo dla wielu rodzaji złośliwego oprogramowania związanego
     z Monero.
   mrw: Grupa robocza ds. odpowiedzi na złośliwe oprogramowanie
-  space_start: Z grupą roboczą można się skontaktować pisząc na jej czacie na Freenode.
+  space_start: Z grupą roboczą można się skontaktować pisząc na jej czacie na Matrix/Libera.
   space_descr: Monero Space to aktywna, skupiona na projektach grupa robocza Monero,
     która świadczy usługi społeczności Monero. Obsługuje popularne zasoby i organizuje
     wydarzenia, takie jak Monero Meet.
@@ -280,7 +279,7 @@ team:
     readme w repozytorium GitHub. Zawiera instrukcje krok po kroku dotyczące edycji
     każdej części tej witryny.
   mpwg_start: Jeśli chcesz wziąć udział lub śledzić dyskusje na temat polityk, dołącz
-    do czatu matrix/freenode.
+    do czatu Matrix/Freenode.
   mpwg_descr: Grupa robocza Monero ds. polityki to luźno uformowane kworum osób zainteresowanych
     interakcją z organami regulacyjnymi, decydentami politycznymi i szerszym sektorem
     usług finansowych w celu zapewnienia szerokiego zrozumienia technologii Monero,
@@ -381,10 +380,12 @@ downloads:
   showhash2: i powinna być traktowana jako kanoniczne, z podpisem sprawdzanym odpowiednim
     kluczem GPG
   showhash3: "w kodzie źródłowym"
-  mobilelight1: Poniżej znajdują się portfele mobilne lub lekkie, uważane za bezpieczne
-    przez szanowanych członków społeczności. Jeśli nie ma tu jakiegoś portfela, możesz
-    poprosić społeczność o jego sprawdzenie. Przejdź do naszych
-  mobilelight2: Hangoutów
+  mobilelight1: Portfele wymienione poniżej są mobilnymi lub lekkimi portfelami, które
+    są uważane za bezpieczne przez szanowanych członków społeczności. Jeśli chcesz
+    korzystać z portfela, który nie jest wymieniony na tej stronie, zaleca się, aby
+    skonsultować się ze społecznością, aby dowiedzieć się, czy portfel jest bezpieczny
+    i jakie są zagrożenia w jego użyciu. Przejdź do naszych
+  mobilelight2: miejsc spotkań
   mobilelight3: aby sprawdzić gdzie nas znajdziesz.
   installer: Instalator
 
@@ -436,8 +437,8 @@ press-kit:
     Monero, a nie jako tło całego obrazu.
   intro3: Ostatecznie możesz ściągnąć zawartość całej strony jako plik .zip, klikając
   intro4: tutaj.
-  noback: Bez tła
-  whiteback: Białe tło
+  noback: Przezroczyste M
+  whiteback: Białe M (zalecane)
   symbol: Symbol Monero
   logo: Logo Monero
   small: Mały
@@ -644,6 +645,8 @@ contributing:
     Wystarczy prosty, w pełni zsynchronizowany węzeł, aby pomóc sieci, jeśli chcesz
     pójść swoim sposobem, możesz uruchomić otwarty @węzęł-zdalny, aby umożliwić innym
     osobom łączenie się z nim.
+  altqrmonero: Kod QR Monero
+  altqrbitcoin: Kod QR Bitcoin
 faq:
   q1: W jaki sposób Monero ma wartość?
   a1: Monero ma wartość, ponieważ ludzie chcą go kupować. Jeśli nikt nie chce kupić
@@ -946,6 +949,13 @@ faq:
     \ Dzięki temu sieć jest o wiele ciężej zaatakować, żaden kopacz nie ma znaczącej\
     \ przewagi nad innymi kopaczami (wszyscy korzystają z mniej więcej takiego samego\
     \ sprzętu).\n"
+  qmaxsupply: Jaka jest maksymalna podaż Monero?
+  amaxsupply: Monero ma stały stopień emisji, a nie ustaloną maksymalną podaż. Około
+    maja 2022 roku, emisja Monero spadnie do i na stałe pozostanie na poziomie 0,3
+    XMR na minutę (0,6 XMR na @blok). Jest to około 1% inflacji w pierwszym roku i
+    zbliży się do 0% inflacji w kolejnych latach. Ta @emisja-ogonowa zapewnia stałe
+    zachęty do zabezpieczenia Monero, nawet w dalekiej przyszłości, utrzymując inflację
+    na bardzo niskim poziomie.
 mining:
   intro1: Monero jest kryptowalutą, która opiera się na wydobywaniu z dowodem pracy,
     aby osiągnąć powszechny konsensus. Poniżej znajdziesz informacje i materiały dotyczące
@@ -957,7 +967,7 @@ mining:
   software_para: Niektóre programy mogą wymagać opłat.
 
   supportp: Jeśli masz pytania lub po prostu chcesz się skonsultować z innymi kopaczami,
-    wejdź na czat Monero Pools. Na <a href="#monero-pools:monero.social">Matrix</a>
+    wejdź na czat Monero Pools. Na <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a>
     i <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   softwarep: "Istnieje kilka opcji, jeśli chodzi o oprogramowanie do kopania. Jak\
     \ już zostało wspomniane, do kopania pojedynczo można użyć portfeli CLI lub GUI\
@@ -990,7 +1000,7 @@ mining:
     \ kopania przy użyciu oprogramowania Monero (<a href=\"https://www.getmonero.org/downloads/#gui\"\
     >GUI</a> i <a href=\"https://www.getmonero.org/downloads/#cli\">CLI</a>), ponieważ\
     \ ten rodzaj niezależnego kopania jest najbardziej skutecznym sposobem na zwiększenie\
-    \ odporności sieci Monero.\n"
+    \ odporności sieci Monero. Zachęcamy również do kopania za pomocą P2Pool.\n"
   miningset: Kopanie pojedynczo czy w puli
   efficiency: Monero może być wydobywane zarówno przez CPU jak i GPU, ale te pierwsze
     są znacznie bardziej wydajne.
@@ -1000,7 +1010,31 @@ mining:
     \ Ten algorytm PoW jest odporny na układy ASIC, co oznacza, że nie jest możliwe\
     \ zbudowanie specjalistycznego sprzętu do kopania Monero. Kopacze muszą używać\
     \ sprzętu klasy konsumenckiej i uczciwie rywalizować.\n"
-  pow: Proof of Work
+  pow: Dowód pracy
+  p2poolh: 'P2Pool: To, co najlepsze w kopaniu w pojedynkę i w puli'
+  p2poolfeatures: Główne właściwości
+  p2poolp: "P2Pool jest bocznym łańcuchem (sidechain) Monero, a bloki P2Pool są potencjalnie\
+    \ blokami Monero. Każdy kopacz przesyła szablony bloków, które zawierają wypłaty\
+    \ dla wszystkich kopaczy wydobywających w tym samym czasie (tych, którzy aktualnie\
+    \ mają udziały w oknie PPLNS). Wysokiej jakości szablony bloków są dodawane do\
+    \ blockchainu P2Pool jako bloki, które liczą się jako \"udziały\" dla kopacza,\
+    \ który je znalazł.\n"
+  p2poolnew: "P2Pool jest nowym, sprytnym sposobem kopania Monero, który pozwala kopaczom\
+    \ na otrzymywanie częstych wypłat oferowanych przez pule bez konieczności ufania\
+    \ scentralizowanej puli. P2Pool jest pulą kopania typu Peer-To-Peer, która daje\
+    \ kopaczom pełną kontrolę nad ich węzłem Monero i tym, co kopią. Więcej szczegółów\
+    \ w <a href=\"{{ site.baseurl }}/2021/10/05/p2pool-released.html\">ogłoszeniu</a>.\n"
+  p2pminpayout: Mniej niż 0.0004 XMR minimalnej wypłaty
+  p2pzeropayout: <b>0 XMR</b> kosztu za wypłatę
+  p2pzerofee: 0% opłaty
+  p2pplns: System wypłat <b>PPLNS</b>
+  p2ppermissionless: <b>Bez ograniczeń:</b> każdy może dołączyć do sidechaina, a cenzurowanie
+    poszczególnych kopaczy jest praktycznie niemożliwe.
+  p2pdecentralized: <b>Zdecentralizowany:</b> brak centralnego serwera, który może
+    zostać wyłączony/zablokowany/złośliwy.
+  p2pmoreinfo: 'Więcej informacji i szczegółów w repozytorium GitHub projektu:'
+  p2ptrustless: <b>Bez zaufania:</b> nie ma portfela puli; fundusze nigdy nie są pod
+    kontrolą. Wszystkie bloki puli wypłacają kopaczom natychmiast.
 using: {}
 what-is-monero:
   need-to-know: Co musisz wiedzieć
@@ -1111,10 +1145,10 @@ developer-guides:
   monerophp: Biblioteka Monero napisana w PHP przez zespół Monero Integrations.
   monero-nodejs: Menedżer portfela do interakcji z monero-wallet-rpc.
   monero-javascript: Biblioteka Node.js do korzystania z Monero.
-  libraries_para: Biblioteki Monero stworzone i utrzymywane przez społeczność. Nie
-    są weryfikowane przez główny zespół i są tutaj wymienione tylko dla wygody. Wykonaj
-    własne badania przed ich użyciem. Jeśli chcesz dodać bibliotekę do tej listy,
-    otwórz problem na
+  libraries_para: Biblioteki Monero są tworzone i pielęgnowane przez społeczność.
+    Poniższe repozytoria nie są weryfikowane przez zespół główny i są wymienione tutaj
+    tylko dla wygody. Prosimy o przeprowadzenie własnych badań przed ich użyciem,
+    a jeśli chcesz dodać bibliotekę do tej listy, prosimy o otwarcie sprawy na
   libraries: Biblioteki i pomocnicy
   monerose: Jeden z najbardziej kompletnych zasobów zarówno dla użytkowników, jak
     i programistów.
@@ -1266,7 +1300,7 @@ roadmap:
   trezort: Wsparcie Trezor model T
   nanox: Wsparcie Ledger Nano X
   tori2p: Integracja Tor i I2P w portfelu CLI
-  multisigms: Multisig Messaging System
+  multisigms: Wielopodpisowy system komunikacji
   weblate: 'Zmiana platformy lokalizacyjnej: z Pootle na Weblate'
   rpcpay: Płać za usługę za pomocą kopania (RPC-Pay)
   ipv6: Wsparcie IPv6
@@ -1290,6 +1324,8 @@ roadmap:
   released-0-17: Wydano CLI i GUI 0.17 „Oxygen Orion”
   released-0-16-0-0: Wydano CLI i GUI 0.16.0.0
 
+  p2pool: Wydano P2Pool
+  haveno: Haveno
 research-lab:
   intro: Monero jest zobowiązane nie tylko do produkcji zamiennej waluty, ale także
     do ciągłego badania w zakresie prywatności finansowej, która dotyczy kryptowalut.
@@ -1663,6 +1699,7 @@ tools:
     zrzeczenie się odpowiedzialności na dole tej strony.</b> Jeśli narzędzie nie wspiera
     już Monero lub chciałbyś, aby narzędzie Monero znalazło się na liście, proszę
   monerologs: Archiwum kanałów IRC Monero
+  gateways: Systemy płatności
 error:
   button: Do strony głównej
   title: Nie znaleziono strony (być może ceni sobie prywatność)

@@ -8,23 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-30 14:50+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-04-04 21:34+0000\n"
+"Last-Translator: Fabio Risso <fabiorissok@gmail.com>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/securely_purchase/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:4
 msgid "## Step 1: Acquire Monero"
-msgstr ""
+msgstr "## Paso 1: Adquiere Monero"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:6
@@ -45,6 +49,13 @@ msgid ""
 "be harder to use. There are also services that allow people to meet and "
 "perform a trade without third parties involved."
 msgstr ""
+"Hay múltiples servicios de intercambio donde puedes comprar o vender Monero. "
+"Algunos son centralizados, los cuales usualmente tienen mucha liquidez y un "
+"servicio rápido, pero requieren que proveas de información personal antes de "
+"empezar a comerciar (KYC). Otros son descentralizados y no requieren ninguna "
+"identificación, pero usualmente tienen menos volumen y pueden ser más "
+"difíciles de usar. También hay servicios que permiten que las personas "
+"concerten encuentros y realicen intercambios sin la intervención de terceros."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:10
@@ -59,6 +70,8 @@ msgid ""
 "## Step 2: Download and create a Paper Wallet on a secure and air-gapped "
 "computer."
 msgstr ""
+"## Paso 2: Descarga y crea un Monedero en Papel en un ordenador aislado y "
+"seguro."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:14
@@ -76,11 +89,14 @@ msgid ""
 "into a web browser on an air-gapped (@airgap) computer that hasn't been used "
 "before, or has had a clean installation of the operative system."
 msgstr ""
+"Extra y abre el generador de monedero en papel (monero-wallet-generator.html)"
+" en un navegador en una computadora aislada (@airgap) que no haya sido usada "
+"antes, o que haya tenido una instalación limpia del sistema operativo."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:18
 msgid "Your paper wallet will have four important items:"
-msgstr ""
+msgstr "Tu monedero en papel tendrá cuatro puntos importantes:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:20
@@ -146,7 +162,7 @@ msgstr ""
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:34
 msgid "#### Side Note"
-msgstr ""
+msgstr "#### Nota Aparte"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:37

@@ -1,178 +1,194 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Table of contents
+### Содержание
 
-- [When should I restore a wallet?](#when-should-i-restore-a-wallet)
+- [Когда следует восстанавливать кошелёк?](#when-should-i-restore-a-wallet)
 
-- [What is needed to restore a wallet from mnemonic
-seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)
+- [Что необходимо, чтобы восстановить кошелёк на основе мнемонической
+фразы?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)
 
-- [What is the wallet restore height?](#what-is-the-wallet-restore-height)
+- [Что такое высота восстановления
+кошелька?](#what-is-the-wallet-restore-height)
 
-- [How to restore a wallet from mnemonic seed on Monero
+- [Как восстановить кошелёк на основе мнемонической фразы в случае с Monero
 GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)
 
-- [How to restore a wallet from mnemonic seed on Monero
+- [Как восстановить кошелёк на основе мнемонической фразы в случае с Monero
 CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)
 
-- [My restored wallet is showing a wrong
-balance](#my-restored-wallet-is-showing-a-wrong-balance)
+- [Что делать, если восстановленный кошелёк неверно отображает
+баланс](#my-restored-wallet-is-showing-a-wrong-balance)
 
-### When should I restore a wallet?
+### Когда следует восстанавливать кошелёк?
 
-You should restore your @wallet in the following situations: - You lost
-access to your wallet (you forgot its password, your wallet file is
-corrupted or your device stopped working/is lost).  - You want to create a
-copy of your wallet on another device.
+@Кошелёк следует восстанавливать в следующих случаях: - Невозможность
+получения доступа к собственному кошельку (если вы забыли пароль, файл
+кошелька был повреждён или же устройство, на которое был установлен кошелёк,
+перестало работать / было потеряно).  - При создании копии кошелька на
+другом устройстве.
 
-This guide will teach you how to restore a Monero wallet from its
-@mnemonic-seed.
+В данном руководстве содержится информация, которая поможет вам восстановить
+кошелёк Monero на основе его @мнемонической-фразы.
 
-If you want to restore a wallet from its private keys, please read [this
-guide]({{site.baseurl}}/resources/user-guides/restore_from_keys.html).
+Если же вы хотите восстановить кошелёк на основе его приватных ключей,
+пожалуйста, ознакомьтесь с [данным
+руководством]({{site.baseurl}}/resources/user-guides/restore_from_keys.html).
 
-### What is needed to restore a wallet from mnemonic seed?
+### Что необходимо, чтобы восстановить кошелёк на основе мнемонической фразы?
 
-A valid Monero mnemonic seed is a phrase with 13, 14, or 25 random words
-(multiple languages are supported). Your mnemonic seed has all the
-information needed to restore your wallet.
+Действительная мнемоническая фраза Monero состоит из 13, 14 или 25 случайных
+слов (при этом кошельками поддерживается множество языков). Мнемоническая
+фраза — это всё, что нужно, чтобы восстановить ваш кошелёк.
 
-It is also useful to know your wallet restore height or the creation date of
-your wallet, since it makes your wallet synchronization faster.
+Также полезно знать высоту восстановления вашего кошелька или дату его
+создания, поскольку это ускорит процесс синхронизации.
 
-### Where can I find my mnemonic seed?
+### Где можно найти мою мнемоническую фразу?
 
-Most Monero wallets ask the user to write down a mnemonic seed on a paper
-backup when a wallet is being created. So it's up to you to remember where
-and how you stored your mnemonic seed.
+Большинство кошельков Monero при создании кошелька рекомендует пользователям
+записать мнемоническую фразу на бумаге. Так что решайте сами, где и как
+сохранить вашу мнемоническую фразу.
 
-Alternatively, if you still have access to the wallet being restored, you
-can usually find your mnemonic seed in a menu with some name like `Seed`,
-`Keys`, `Secrets`, or `Master Private Key`.
+Как вариант, если у вас по-прежнему есть доступ к восстанавливаемому
+кошельку, вы найдёте мнемоническую фразу в меню с таким заголовком, как
+`Seed` (мнемоническая фраза), `Keys` (ключи), `Secrets` (секретные данные)
+или `Master Private Key` (основной приватный ключ).
 
-### What is the wallet restore height?
+### Что такое высота восстановления кошелька?
 
-The wallet restore height is a setting that tells your wallet software at
-which block height it should start scanning the blockchain looking for
-transactions. Ideally it should be the number of the block which included
-the first incoming transaction to your wallet.
+Высота восстановления кошелька — это параметр, который указывает
+программному обеспечению вашего кошелька, с какой высоты блока необходимо
+начать сканирование блокчейна с целью поиска транзакций. В идеале это должен
+быть номер блока, в который была включена первая входящая для вашего
+кошелька транзакция.
 
-If you set a restore height higher than the block height of your first
-incoming transaction, your wallet software will not detect all transactions
-of your wallet. In consequence, your balance will be wrong and your wallet
-software will not work properly.
+Если высота восстановления будет задана выше, чем высота блока с первой
+входящей транзакцией, программное обеспечение вашего кошелька не сможет
+обнаружить все транзакции, связанные с вашим кошельком. Как следствие,
+баланс кошелька будет неверным, а программное обеспечение не будет работать
+надлежащим образом.
 
-If you set a restore height lower than the block height of your first
-incoming transaction, your wallet software will scan unnecessary blocks. In
-consequence, your initial wallet synchronization will take longer than
-necessary, but your wallet software will still work.
+Если высота восстановления будет ниже, чем высота блока вашей первой
+входящей транзакции, программное обеспечение кошелька будет сканировать
+ненужные блоки. В результате начальная синхронизация кошелька займёт больше
+времени, чем нужно, но программное обеспечение по-прежнему будет работать
+так, как нужно.
 
-Therefore, if you're unsure about the block height of your first incoming
-transaction, it's always better to set a lower restore height instead of a
-higher one.
+Следовательно, если вы не уверены в отношении высоты блока вашей первой
+входящей транзакции, лучше задать более низкую высоту.
 
 ![restore-height](/img/resources/user-guides/en/restore_account/restore-height.png)
 
-### How to restore a wallet from mnemonic seed on Monero GUI
+### Как восстановить кошелёк на основе мнемонической фразы в случае с Monero GUI
 
-1) On the main menu, click on `Restore wallet from keys or mnemonic seed`.
+1) В главном меню выберите `Restore wallet from keys or mnemonic seed`
+   (Восстановить кошелёк на основе ключей или мнемонической фразы).
 
 ![main-menu-restore-wallet](/img/resources/user-guides/en/restore_account/main-menu-restore-wallet.png)
 
-2) The `Restore wallet` page will be displayed:
+2) Появится страница `Restore wallet` (Восстановление кошелька):
 
 ![restore-from-seed](/img/resources/user-guides/en/restore_account/restore-from-seed.png)
 
-3) On `Wallet name`, enter the name of the wallet you want to create. You
-   don't need to use the same name of the wallet being restored.
+3) В поле `Wallet name` (Имя кошелька) введите имя кошелька, который хотите
+   создать. Необязательно использовать имя того кошелька, который вы
+   восстанавливаете.
 
-4) On `Wallet location`, choose where you want the wallet file to be saved.
+4) В поле `Wallet location` (Куда сохранить файлы кошелька) выберите, куда
+   вы хотите сохранить файлы кошелька.
 
-5) Keep `Restore from seed` selected.
+5) Выберите вариант `Restore from seed` (Восстановить на основе
+   мнемонической фразы).
 
-6) On the next field, type your 25 word `mnemonic seed`. It is expected that
-   some mnemonic seeds have repeated words, as they work as a verification
-   for errors (checksum).
+6) В следующем поле введите вашу `мнемоническую фразу`, состоящую из 25
+   слов. Предполагается, что в некоторых мнемонических фразах слова
+   повторяются. Это необходимо для защиты от ошибок (функция контрольной
+   суммы).
 
-7) Use the field `Seed offset passphrase` to enter your passphrase, if you
-   have one. When you enter a passphrase, Monero GUI will use your mnemonic
-   seed together with your passphrase to compute a new wallet.
+7) В поле `Seed offset passphrase` (Фраза-пароль к мнемонической фразе)
+   введите фразу-пароль, если таковая у вас имеется. После ввода
+   фразы-пароля Monero GUI использует вашу мнемоническую фразу вместе с
+   фразой-паролем для вычисления нового кошелька.
 
-8) The next field allows you to enter a `Restore height`. Even though this
-   field is optional, it's not recommended to leave it blank, since setting
-   a restore height makes your wallet synchronization faster. Ideally it
-   should be the number of the block which included the first incoming
-   transaction to your wallet:
+8) В следующем поле вводится `Restore height` (Высота восстановления). Даже
+   если заполнение этого поля является необязательным, не рекомендуется
+   оставлять его пустым, поскольку указание высоты восстановления делает
+   синхронизацию кошелька быстрее. В идеале это должен быть номер блока, в
+   который была включена первая входящая транзакция вашего кошелька:
 
 ![restore-height-field](/img/resources/user-guides/en/restore_account/restore-height-field.png)
 
-Alternatively, you can also enter the date or an estimated date (YYYY-MM-DD
-format) of the first incoming transaction:
+Как вариант, вы можете ввести точную или приблизительную дату (в формате
+ГГ-ММ-ДД) первой входящей транзакции:
 
 ![restore-height-field-date](/img/resources/user-guides/en/restore_account/restore-height-field-date.png)
 
-After entering your restore height, click on `Next` button.
+После ввода высоты восстановления нажмите `Next` (Далее).
 
-9) On the next page, give your wallet a strong password and confirm
-   it. Since your wallet will hold your private keys and seed, it is really
-   important to enter a strong password.
+9) На следующей странице введите надёжный пароль для вашего кошелька и
+   подтвердите его. Поскольку в вашем кошельке будут храниться приватные
+   ключи и мнемоническая фраза, пароль действительно должен быть надёжным.
 
 ![wallet
 password](/img/resources/user-guides/en/restore_account/wallet-password.png)
 
-10) If your wallet is in `Advanced mode`, the `Daemon settings` page will be
-    displayed. Here you can choose whether you want to start a local node or
-    connect to a remote node. Choose your desired option and click on `Next`
-    button.
+10) Если ваш кошелёк используется в `Advanced mode` (Продвинутый режим),
+    будет отображаться страница `Daemon settings` (Настройки демона). Здесь
+    можно выбрать и либо запустить собственный узел, либо подсоединиться к
+    удалённому. Следует выбрать подходящий вариант и нажать кнопку `Next`
+    (Далее).
 
 ![daemon
 settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 
-11) The next page will display a summary of the wallet you are going to
-    restore. Click on `Create wallet` button to restore your wallet:
+11) На следующей странице отображается краткое описание кошелька, который вы
+    собираетесь создать. Чтобы восстановить кошелёк, следует нажать кнопку
+    `Create wallet` (Создать кошелёк):
 
 ![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)
 
-### How to restore a wallet from mnemonic seed on Monero CLI
+### Как восстановить кошелёк на основе мнемонической фразы в случае с Monero CLI
 
-1) Open the terminal on your Monero CLI directory and run the following
-   command:
+1) Следует открыть панель командной строки в директории Monero CLI и ввести
+   следующую команду:
 
 - Linux: `./monero-wallet-cli --restore-deterministic-wallet`
 
 - Windows: `monero-wallet-cli --restore-deterministic-wallet`
 
-2) Next, you will be asked for a wallet file name. Enter the name of the
-   wallet you want to create and press `Enter`.
+2) Затем вас попросят указать имя файла кошелька. Введите имя кошелька,
+   который вы хотите создать, и нажмите `Enter`.
 
-3) Monero CLI will then ask you to give your wallet a password and confirm
-   it. Since your wallet will hold your private keys and seed, it is really
-   important to enter a strong password.
+3) Затем Monero CLI попросит ввести пароль и подтвердить его. Поскольку в
+   вашем кошельке будут храниться приватные ключи и мнемоническая фраза,
+   пароль действительно должен быть надёжным.
 
-4) Next, enter your 25 word mnemonic seed.
+4) Затем следует ввести мнемоническую фразу, состоящую из 25 слов.
 
-5) Next, Monero CLI will ask for a `Restore height`. Even though it is
-   optional, it's not recommended to leave it blank, since setting a restore
-   height makes your wallet synchronization faster. Ideally it should be the
-   number of the block which included the first incoming transaction to your
-   wallet. Alternatively, you can also enter the date or an estimated date
-   (YYYY-MM-DD format) of the first incoming transaction.
+5) После этого Monero CLI запросит у вас `Restore height` (Высоту
+   восстановления). Даже если заполнение этого поля является необязательным,
+   не рекомендуется оставлять его пустым, поскольку указание высоты
+   восстановления делает синхронизацию кошелька быстрее. В идеале это должен
+   быть номер блока, в который была включена первая входящая транзакция
+   вашего кошелька. Как вариант, вы можете ввести точную или приблизительную
+   дату (в формате ГГ-ММ-ДД) первой входящей транзакции.
 
-6) After you have entered restore height, Monero CLI will then restore your
-   wallet and start the wallet synchronization. Please be patient as this
-   process may take a while. You will need to wait for it to finish before
-   start using your wallet.
+6) После ввода высоты восстановления Monero CLI восстановит ваш кошелёк и
+   начнёт его синхронизацию. Пожалуйста, будьте терпеливы, поскольку этот
+   процесс может занять какое-то время. Необходимо дождаться его окончания,
+   и только после этого вы сможете пользоваться вашим кошельком.
 
-7) If you run into any trouble, running `./monero-wallet-cli --help` will
-   show you the options available to you at wallet startup. Once you're
-   inside your wallet, running the `help` command will list the help for the
-   commands available to you within the wallet.
+7) Если у вас возникнут затруднения, то после ввода команды
+   `./monero-wallet-cli --help` вы увидите опции, которые будут доступны при
+   запуске кошелька. После того как вы войдёте в кошелёк, введите команду
+   `help`, чтобы ознакомиться с руководством по командам, которыми вы
+   сможете воспользоваться внутри кошелька.
 
-### My restored wallet is showing a wrong balance
+### Что делать, если восстановленный кошелёк неверно отображает баланс
 
-This problem usually occurs when you set a restore height that is higher
-than the block height of the first incoming transaction to your wallet. To
-solve this issue, you will have to change the wallet restore height. Please
-read [this
-guide]({{site.baseurl}}/resources/user-guides/change-restore-height.html)
-for detailed instructions on how to do this.
+Такая проблема, как правило, возникает, если вы указываете высоту
+восстановления сверх высоты блока, содержащего первую входящую транзакцию
+вашего кошелька. Чтобы этого не случилось, измените высоту восстановления
+кошелька. В [данном
+руководстве]({{site.baseurl}}/resources/user-guides/change-restore-height.html)
+содержатся соответствующие подробные инструкции.

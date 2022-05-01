@@ -8,13 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-06-29 12:06+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-12-13 15:33+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/verification-allos-advanced/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #
 #. type: Plain text
@@ -43,42 +47,40 @@ msgstr "Это руководство для продвинутых пользо
 #
 #. type: Title ##
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:21
-#, fuzzy, no-wrap
-#| msgid "## Table of Contents:"
+#, no-wrap
 msgid "Table of Contents:"
-msgstr "## Содержание:"
+msgstr "Содержание:"
 
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:23
 #, no-wrap
 msgid "- [Install GnuPG](#installing-gnupg)"
-msgstr ""
+msgstr "- [Установка GnuPG](#installing-gnupg)"
 
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:25
 #, no-wrap
 msgid "- [Verify & Import Signing Key](#verify-and-import-signing-key)"
-msgstr ""
+msgstr "- [Проверка и импорт ключа подписи](#verify-and-import-signing-key)"
 
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:27
 #, no-wrap
 msgid "- [Download & Verify Hash File](#download-and-verify-hash-file)"
-msgstr ""
+msgstr "- [Загрузка и проверка хешей файла](#download-and-verify-hash-file)"
 
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:29
 #, no-wrap
 msgid "- [Download & Verify Binary](#download-and-verify-binary)"
-msgstr ""
+msgstr "- [Загрузка и проверка бинарных файлов](#download-and-verify-binary)"
 
 #
 #. type: Title ##
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:31
-#, fuzzy, no-wrap
-#| msgid "## 1. Installing GnuPG"
+#, no-wrap
 msgid "Installing GnuPG"
-msgstr "## 1. Установка GnuPG"
+msgstr "Установка GnuPG"
 
 #
 #. type: Plain text
@@ -101,10 +103,9 @@ msgstr "+ Для Linux: GnuPG устанавливается по умолчан
 #
 #. type: Title ##
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:42
-#, fuzzy, no-wrap
-#| msgid "## 2. Verify and Import Signing Key"
+#, no-wrap
 msgid "Verify and Import Signing Key"
-msgstr "## 2. Верификация и импорт ключа подписи"
+msgstr "Верификация и импорт ключа подписи"
 
 #
 #. type: Plain text
@@ -115,10 +116,9 @@ msgstr "В данном разделе будет рассмотрен вопр�
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:47
-#, fuzzy, no-wrap
-#| msgid "### 2.1. Get Signing Key"
+#, no-wrap
 msgid "Get Signing Key"
-msgstr "### 2.1. Получение ключа подписи"
+msgstr "Получение ключа подписи"
 
 #
 #. type: Plain text
@@ -135,20 +135,21 @@ msgstr "Для Linux можно загрузить ключ подписи binar
 #
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:57
-#, fuzzy, no-wrap
-#| msgid "``` wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc ```"
+#, no-wrap
 msgid ""
 "wget -O binaryfate.asc\n"
 "https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc\n"
-msgstr "``` wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc ```"
+msgstr ""
+"wget -O binaryfate.asc\n"
+"https://raw.githubusercontent.com/monero-project/monero/master/utils/"
+"gpg_keys/binaryfate.asc\n"
 
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:62
-#, fuzzy, no-wrap
-#| msgid "### 2.2. Verify Signing Key"
+#, no-wrap
 msgid "Verify Signing Key"
-msgstr "### 2.2. Верификация ключа подписи"
+msgstr "Верификация ключа подписи"
 
 #
 #. type: Plain text
@@ -170,23 +171,15 @@ msgstr "Следует проверить совпадение отпечатк�
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:72
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```\n"
-#| "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
-#| "      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
-#| "uid                           binaryFate <binaryfate@getmonero.org>\n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
 "      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
 "uid                           binaryFate <binaryfate@getmonero.org>\n"
 msgstr ""
-"```\n"
 "pub   rsa4096/F0AF4D462A0BDF92 2019-12-12 [SCEA]\n"
 "      Key fingerprint = 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
 "uid                           binaryFate <binaryfate@getmonero.org>\n"
-"```\n"
 
 #
 #. type: Plain text
@@ -203,10 +196,9 @@ msgstr "В случае **НЕСОВПАДЕНИЯ** отпечатка, **ПР�
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:83
-#, fuzzy, no-wrap
-#| msgid "### 2.3. Import Signing Key"
+#, no-wrap
 msgid "Import Signing Key"
-msgstr "### 2.3. Импорт ключа подписи"
+msgstr "Импорт ключа подписи"
 
 #
 #. type: Plain text
@@ -228,15 +220,7 @@ msgstr "Если ключ импортируется впервые, выход 
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:92
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```\n"
-#| "gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
-#| "gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
-#| "gpg: Total number processed: 1\n"
-#| "gpg:               imported: 1\n"
-#| "gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
 "gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
@@ -244,13 +228,12 @@ msgid ""
 "gpg:               imported: 1\n"
 "gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
 msgstr ""
-"```\n"
 "gpg: key F0AF4D462A0BDF92: 2 signatures not checked due to missing keys\n"
-"gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>\" imported\n"
+"gpg: key F0AF4D462A0BDF92: public key \"binaryFate <binaryfate@getmonero.org>"
+"\" imported\n"
 "gpg: Total number processed: 1\n"
 "gpg:               imported: 1\n"
 "gpg: marginals needed: 3  completes needed: 1  trust model: pgp\n"
-"```\n"
 
 #
 #. type: Plain text
@@ -260,31 +243,23 @@ msgstr "Если же ключ импортировался до этого, т�
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:102
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```\n"
-#| "gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
-#| "gpg: Total number processed: 1\n"
-#| "gpg:              unchanged: 1\n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
 "gpg: Total number processed: 1\n"
 "gpg:              unchanged: 1\n"
 msgstr ""
-"```\n"
-"gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not changed\n"
+"gpg: key F0AF4D462A0BDF92: \"binaryFate <binaryfate@getmonero.org>\" not "
+"changed\n"
 "gpg: Total number processed: 1\n"
 "gpg:              unchanged: 1\n"
-"```\n"
 
 #
 #. type: Title ##
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:108
-#, fuzzy, no-wrap
-#| msgid "## 3. Download and Verify Hash File"
+#, no-wrap
 msgid "Download and Verify Hash File"
-msgstr "## 3. Загрузка и верификация хеш-файла"
+msgstr "Загрузка и верификация хеш-файла"
 
 #
 #. type: Plain text
@@ -295,10 +270,9 @@ msgstr "В данном разделе рассматривается вопро
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:113
-#, fuzzy, no-wrap
-#| msgid "### 3.1. Get Hash File"
+#, no-wrap
 msgid "Get Hash File"
-msgstr "### 3.1. Получение хеш-файла"
+msgstr "Получение хеш-файла"
 
 #
 #. type: Plain text
@@ -321,10 +295,9 @@ msgstr "``` wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt ``
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:124
-#, fuzzy, no-wrap
-#| msgid "### 3.2. Verify Hash File"
+#, no-wrap
 msgid "Verify Hash File"
-msgstr "### 3.2. Верификация хеш-файла"
+msgstr "Верификация хеш-файла"
 
 #
 #. type: Plain text
@@ -352,15 +325,7 @@ msgstr "Если файл является аутентичным (подлин�
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:136
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```\n"
-#| "gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
-#| "gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
-#| "gpg: WARNING: This key is not certified with a trusted signature!\n"
-#| "gpg:          There is no indication that the signature belongs to the owner.\n"
-#| "Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
 "gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
@@ -368,13 +333,13 @@ msgid ""
 "gpg:          There is no indication that the signature belongs to the owner.\n"
 "Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
 msgstr ""
-"```\n"
 "gpg:                using RSA key 81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92\n"
-"gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]\n"
+"gpg: Good signature from \"binaryFate <binaryfate@getmonero.org>\" [unknown]"
+"\n"
 "gpg: WARNING: This key is not certified with a trusted signature!\n"
-"gpg:          There is no indication that the signature belongs to the owner.\n"
+"gpg:          There is no indication that the signature belongs to the owner."
+"\n"
 "Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92\n"
-"```\n"
 
 #
 #. type: Plain text
@@ -391,10 +356,9 @@ msgstr "Если подпись в выходе является **НЕПРАВ�
 #
 #. type: Title ##
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:151
-#, fuzzy, no-wrap
-#| msgid "## 4. Download and Verify Binary"
+#, no-wrap
 msgid "Download and Verify Binary"
-msgstr "## 4. Загрузка и верификация двоичного файла"
+msgstr "Загрузка и верификация двоичного файла"
 
 #
 #. type: Plain text
@@ -405,18 +369,19 @@ msgstr "Этот раздел посвящён загрузке подходящ
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:157
-#, fuzzy, no-wrap
-#| msgid "### 4.1. Get Monero binary"
+#, no-wrap
 msgid "Get Monero binary"
-msgstr "### 4.1. Получение двоичного файла Monero"
+msgstr "Получение двоичного файла Monero"
 
 #
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:162
-#, fuzzy
-#| msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/) and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
 msgid "On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)  and download the correct file for your operating system. Save the file to your home directory. **Do not extract the files yet.**"
-msgstr "Если установлена операционная система Windows или Mac, необходимо перейти на [getmonero.org]({{ site.baseurl_root }}/downloads/) и загрузить соответствующий используемой операционной системе файл, после чего сохранить его в домашней директории. **На данном этапе файлы извлекать не следует.**"
+msgstr ""
+"Если установлена операционная система Windows или Mac, необходимо перейти на "
+"[getmonero.org]({{ site.baseurl_root }}/downloads/)  и загрузить "
+"соответствующий используемой операционной системе файл, после чего сохранить "
+"его в домашней директории. **На данном этапе файлы извлекать не следует.**"
 
 #
 #. type: Plain text
@@ -427,18 +392,18 @@ msgstr "Для Linux можно загрузить инструменты ком
 #
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:166
-#, fuzzy, no-wrap
-#| msgid "``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64 ```"
+#, no-wrap
 msgid "wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64\n"
-msgstr "``` wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64 ```"
+msgstr ""
+"wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/"
+"cli/linux64\n"
 
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:170
-#, fuzzy, no-wrap
-#| msgid "### 4.2. Binary Verification on Linux or Mac"
+#, no-wrap
 msgid "Binary Verification on Linux or Mac"
-msgstr "### 4.2. Верификация двоичного файла под Linux и Mac"
+msgstr "Верификация двоичного файла в Linux и Mac"
 
 #
 #. type: Plain text
@@ -449,10 +414,9 @@ msgstr "Этапы проверки для Linux и Mac ничем не отли
 #
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:178
-#, fuzzy, no-wrap
-#| msgid "``` shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2 ```"
+#, no-wrap
 msgid "shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2\n"
-msgstr "``` shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2 ```"
+msgstr "shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2\n"
 
 #
 #. type: Plain text
@@ -464,12 +428,13 @@ msgstr "Выход должен выглядеть так, как показан
 #
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:186
-#, fuzzy, no-wrap
-#| msgid "``` 8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad monero-linux-x64-v0.15.0.1.tar.bz2 ```"
+#, no-wrap
 msgid ""
 "8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad \n"
 "monero-linux-x64-v0.15.0.1.tar.bz2\n"
-msgstr "``` 8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad monero-linux-x64-v0.15.0.1.tar.bz2 ```"
+msgstr ""
+"8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad \n"
+"monero-linux-x64-v0.15.0.1.tar.bz2\n"
 
 #
 #. type: Plain text
@@ -488,10 +453,9 @@ msgstr "В случае **НЕСОВПАДЕНИЯ** хеша, **ПРОДОЛЖ�
 #
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:197
-#, fuzzy, no-wrap
-#| msgid "### 4.3. Binary Verification on Windows"
+#, no-wrap
 msgid "Binary Verification on Windows"
-msgstr "### 4.3. Верификация двоичного файла под Windows"
+msgstr "Верификация двоичного файла под Windows"
 
 #
 #. type: Plain text
@@ -508,13 +472,15 @@ msgstr "``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```"
 #
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:210
-#, fuzzy, no-wrap
-#| msgid "``` SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18 64 CertUtil: -hashfile command completed successfully.  ```"
+#, no-wrap
 msgid ""
 "SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca\n"
 "ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18\n"
 "64 CertUtil: -hashfile command completed successfully. \n"
-msgstr "``` SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18 64 CertUtil: -hashfile command completed successfully.  ```"
+msgstr ""
+"SHA256 hash of file monero-gui-win-x64-v0.12.0.0.zip: 4b 9f 31 68 6e ca\n"
+"ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18\n"
+"64 CertUtil: -hashfile command completed successfully. \n"
 
 #, no-wrap
 #~ msgid ""

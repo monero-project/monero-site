@@ -137,13 +137,6 @@ hangouts:
     monero-site: Où le développement de ce site web est coordonné
   mailing_list: Liste de diffusion
 merchants:
-  intro1: Toute sorte de commerçants ont fini par apprécier la confidentialité financière
-    qu'apporte Monero. Vous trouverez ci-dessous une liste de commerçants dont nous
-    savons qu'ils acceptent Monero comme moyen de paiement pour leurs biens ou leurs
-    services. Si une société a cessé d'accepter Monero, ou bien si vous souhaitez
-    y faire figurer votre affaire, merci
-  intro2: d'ouvrir un problème sur GitLab pour nous le faire savoir
-  intro3: (sélectionnez le modèle "Commerçant" et remplissez tous les champs).
   disclaimer: Notez que les liens sont fournis à titre informatif uniquement. Aucun
     des produits, services ou opinions des compagnies, sociétés et individus cités
     ne sont approuvés par la communauté en raison de leur présence dans cette liste.
@@ -154,7 +147,6 @@ merchants:
     recherches. Faites toujours preuve de bon sens lorsque vous effectuez des achats
     en ligne.
 
-  onion: Adresse Onion (nécessite Tor)
 sponsorships:
   intro: Les entreprises suivantes ont soutenues le projet Monero et son objectif
     d'apporter au monde la confidentialité financière. Nous ne pourrions être plus
@@ -238,7 +230,6 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware4: integrated Monero into their hardware wallets.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -630,8 +621,6 @@ mining:
   intro2: Le projet Monero ne plébiscite aucun pool, logiciel ou matériel particulier.
     Le contenu suivant n'est fournit qu'à titre purement informatif.
   support: Assistance
-  pools: Pools
-  benchmarking_para1: Vous trouverez ici
   software: Mineur
   software_para: Veuillez noter que certains mineurs pourraient soustraire des frais
     de développement.

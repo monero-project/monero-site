@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
 A verificação dos arquivos binários deve sempre ser feita antes de se
 extrair, instalar e usar o software do Monero. Essa é a única maneira de

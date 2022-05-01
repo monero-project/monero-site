@@ -1,180 +1,279 @@
 global:
-  date: ''
-  monero: ''
+  date: '%a/%l/%z'
+  monero: 'Monero'
   getting_started: ''
   copyright: ''
-  monero_project: ''
-  sitename: ''
+  monero_project: 'Proiectul Monero'
+  sitename: 'getmonero.org, proiectul Monero'
   wiki: ''
-  tags: ''
-  wikimeta: ''
-  tagsmeta: ''
-  titlemeta: ''
-  terms: ''
-  privacy: ''
-  untranslated: ''
-  outdated: ''
-  outdatedMin: ''
-  outdatedVersion: ''
-  lang_tag: ""
+  tags: 'Articole după etichetă'
+  wikimeta: 'pe Moneropedia, enciclopedia deschisă a cunoștințelor despre Monero'
+  tagsmeta: 'Toate articolele de pe blogul Monero care sunt etichetate'
+  titlemeta: 'Monero, o monedă virtuală care este securizată, privată și neurmăribilă'
+  terms: 'Termeni'
+  privacy: 'Confidențialitate'
+  untranslated: 'Această pagină nu este tradusă încă. Dacă vrei să ajuți la traducerea
+    ei, mergi la'
+  outdated: 'Conținutul acestei pagini este ieșit din uz și este posibil să nu mai
+    fie valabil. Contactează comunitatea dacă ai nevoie de suport.'
+  outdatedMin: 'Această pagină a fost revizuită de la ultima traducere. Poți folosi
+    această versiune, dar poate fi incompletă. Te rugăm să folosești'
+  outdatedVersion: 'Versiunea în limba engleză'
+  lang_tag: "@lang_tag_ro"
 
 titles:
-  index: ''
-  whatismonero: ''
-  accepting: ''
-  contributing: ''
-  mining: ''
-  faq: ''
-  downloads: ''
-  allposts: ''
-  workgroups: ''
+  index: 'Acasă'
+  whatismonero: 'Ce este Monero (XMR)?'
+  accepting: 'Acceptă Monero'
+  contributing: 'Îmbunătățește Monero'
+  mining: 'Minează Monero'
+  faq: 'FAQ'
+  downloads: 'Descărcări'
+  allposts: 'Toate postările de pe blog'
+  workgroups: 'Grupuri de lucru'
   hangouts: ''
-  sponsorships: ''
-  merchants: ''
-  about: ''
-  roadmap: ''
-  researchlab: ''
-  moneropedia: ''
-  userguides: ''
-  developerguides: ''
-  technicalspecs: ''
-  themoneroproject: ''
-  tools: ''
-  presskit: ''
-  legal: ''
-  blogbytag: ''
-  library: ''
+  sponsorships: 'Sponsorizări'
+  merchants: 'Comercianți și servicii'
+  about: 'Despre Monero'
+  roadmap: 'Foaie de parcurs'
+  researchlab: 'Laboratorul de cercetare Monero'
+  moneropedia: 'Moneropedia'
+  userguides: 'Ghiduri pentru utilizatori'
+  developerguides: 'Ghiduri pentru programatori'
+  technicalspecs: 'Specificații tehnice'
+  themoneroproject: 'Proiectul Monero'
+  tools: 'Instrumente'
+  presskit: 'Kitul de presă'
+  legal: 'Legal'
+  blogbytag: 'Blog'
+  library: 'Librărie'
 
 navigation:
-  getstarted: ''
-  whatis: ''
-  accepting: ''
-  contributing: ''
-  mining: ''
-  community: ''
-  merchants: ''
-  resources: ''
-  about: ''
-  mrl: ''
+  getstarted: 'Începe'
+  whatis: 'Ce este Monero?'
+  accepting: 'Acceptă'
+  contributing: 'Contribuie'
+  mining: 'Minează'
+  community: 'Comunitate'
+  merchants: 'Comercianți'
+  resources: 'Resurse'
+  about: 'Despre'
+  mrl: 'Laboratorul de cercetare'
 
 footer:
-  feed: ''
-  legal: ''
-  source: ''
-  ml: ''
-  ccs: ''
-  reachout: ''
+  feed: 'RSS Feed'
+  legal: 'Legal'
+  source: 'Codul sursă'
+  ml: 'Listă cu adrese de e-mail'
+  ccs: 'Suport financiar din partea comunității'
+  reachout: 'Implică-te'
 
 index:
-  page_title: ""
+  page_title: "Monero - securizat, privat, neurmăribil"
 
 home:
-  heading: ''
-  heading2: ''
-  whatis: ''
-  about: ''
-  joincommunity: ''
-  choosewallet: ''
+  heading: 'Monero înseamnă bani'
+  heading2: 'Monedă virtuală privată și descentralizată care îți păstrează fondurile
+    confidențiale și sigure.'
+  whatis: 'Studiază mai mult despre Monero'
+  about: 'Despre Monero'
+  joincommunity: 'Alătură-te comunității'
+  choosewallet: 'Alege un portofel virtual'
   choosewallet_para: ''
-  downloads: ''
-  getcoins: ''
+  downloads: 'Descărcări'
+  getcoins: 'Ia niște monede'
   getcoins_para: ''
-  exchanges: ''
-  useit: ""
-  useit_para: ''
-  merchants: ''
-  answers: ''
-  faq: ''
-  faq_para: ''
-  guides: ''
+  exchanges: 'Schimburi valutare'
+  useit: "Este o monedă: Folosește-o!"
+  useit_para: 'Monero este o monedă și poate fi schimbată pentru bunuri și servicii,
+    în mod privat și cu taxe mai mici. Multe entități vor accepta XMR pentru plăți;
+    aruncă o privire peste lista de comercianți care acceptă Monero.'
+  merchants: 'Comercianți'
+  answers: 'Găsește răspunsuri la întrebările tale'
+  faq: 'FAQ'
+  faq_para: 'Am auzit multe întrebări de-a lungul anilor și am compilat o listă FAQ
+    aprofundată și variată. Nu-ți fă griji, dacă întrebările tale nu se regăsesc aici,
+    te poți adresa comunității.'
+  guides: 'Ghiduri și resurse'
   guides_para: >
-  moneropedia_para: ''
-  moneropedia_button: ''
-  contributecommunity: ""
-  contributecommunity_para: ''
-  researchlab_para: ''
-  visitmrl: ''
-  contributing: ''
-  meetcommunity: ""
-  meetus: ""
-  hangouts: ''
+  moneropedia_para: 'Ai vrea să cauți semnificațiile termenilor și conceptelor folosite
+    în Monero? Aici vei găsi un ghid alfabetic al termenilor și semnificațiilor acestora.'
+  moneropedia_button: 'Citește Moneropedia'
+  contributecommunity: "Avem nevoie de abilitățile tale: Contribuie!"
+  contributecommunity_para: 'Monero nu este o simplă monedă, reprezintă o comunitate
+    descentralizată și există mulțumită sutelor de voluntari care își dedică timpul
+    acestui proiect. Alatură-ni-te!'
+  researchlab_para: 'MRL(Laboratorul de cercetare Monero) este o parte foarte importantă
+    a proiectului Monero. Cercetători și criptografi din toată lumea s-au întâlnit
+    pentru a găsi noi modalități de a îmbunătăți Monero. Citește-le documentele și
+    alatură-te!'
+  visitmrl: 'Vizitează MRL'
+  contributing: 'Contribuie'
+  meetcommunity: "Fă cunoștință cu comunitatea!"
+  meetus: "Membrii comunității Monero sunt peste tot în lume. Ne poți găsi pe mai\
+    \ multe platforme. Vino să ne cunoști!"
+  hangouts: 'Hangouts'
 
+  morevideos: Cauți mai multe videoclipuri explicative?
 hangouts:
-  intro: ''
-  resources: ''
+  intro: 'Comunitatea Monero este una diversă și variată. Venim de peste tot, dar
+    avem cu siguranță niște locuri în care ne place să stăm împreună. Majoritatea
+    le vei găsi mai jos. Alătură-ni-te!'
+  resources: 'Resursele grupurilor de lucru'
   resources_para: ''
-  resources_para1: ''
-  irc: ''
-  irc_para: ''
-  bridges: ''
-  mailing_list: ''
-  mailing_list1: ''
-  subscribe: ''
+  resources_para1: 'precum un server Matrix, un bord Taiga și platforma de traduceri
+    Weblate.'
+  irc: 'Canalele IRC'
+  irc_para: 'Comunitatea Monero utilizează o serie de canale IRC, fiecare servind
+    unor scopuri diferite. Unele pentru muncă și altele doar pentru a ne întalni.
+    Le găsești pe cele mai populare mai jos.'
+  bridges: 'Aceste canale sunt legate de o serie de alte platforme, permițând comunității
+    să comunice folosind serviciul/protocolul de chat favorit.'
+  mailing_list: 'Listă cu adrese de e-mail'
+  mailing_list1: 'Vrei să primești anunțuri importante direct pe adresa ta de e-mail?
+    Alătură-te listei noastre cu adrese de e-mail!'
+  subscribe: 'Abonează-te'
   irc_channels:
-    monero: ''
-    monero-community: ''
-    monero-dev: ''
-    monero-markets: ''
-    monero-offtopic: ''
-    monero-pools: ''
-    monero-research-lab: ''
-    monero-translations: ''
-    monero-hardware: ''
-    monero-site: ''
+    monero: 'Acest canal este folosit pentru a discuta toate activitățile legate de
+      Monero.'
+    monero-community: 'Acest canal este pentru comunitatea Monero să adune și să discute
+      idei.'
+    monero-dev: 'Cei mai mulți contributori și developeri vin aici pentru a discuta
+      lucruri dev-y.'
+    monero-markets: 'Folosim acest canal pentru a discuta atât prețul Monero, cât
+      și al altor monede.'
+    monero-offtopic: 'Discuții cu alți utilizatori Monero despre lucruri ce nu sunt
+      legate de Monero.'
+    monero-pools: 'Acesta este un loc pentru întrebări și discuții despre minat.'
+    monero-research-lab: 'Cercetare în domeniul confidențialității finaciare cu ajutorul
+      cryptomonedelor.'
+    monero-translations: 'Localizarea Monero în alte limbi.'
+    monero-hardware: 'Construirea portofelelor hardware pentru a păstra Monero în
+      siguranță.'
+    monero-site: 'Locul în care developmentul acestui site este coordonat.'
 
 merchants:
-  intro1: ''
-  intro2: ''
-  intro3: ''
   disclaimer: |
-  onion: ''
-
+    "Reține: aceste linkuri sunt furnizate ca o comoditate și doar pentru scopuri informaționale; ele nu constituie o aprobare a comunității Monero a vreunui produs, serviciilor sau opiniilor corporațiilor, organizațiilor sau persoanelor listate. Comunitatea Monero nu se face responsabilă pentru acuratețea, legalitatea sau conținutul acestor site-uri externe. Contactează site-ul extern pentru răspunsuri la întrebările ce țin de conținutul său. Ca întotdeauna, caveat emptor ('atenționare pentru cumpărător'); ești responsabil pentru propria ta analiză. Întotdeauna folosește-ți judecata atunci când faci achiziții online."
+  descrp2p: Cea mai bună modalitate de a schimba Monero cu alte valute (sau invers)
+    este utilizarea schimburilor P2P, deoarece acestea permit comercianților să interacționeze
+    direct între ei, fără a fi nevoie de terțe părți de încredere (cu excepția poate
+    pentru furnizarea unui serviciu de escrow). Aceste schimburi de valută sunt mai
+    private decât omoloagele lor centralizate și permit oamenilor să dețină controlul
+    complet asupra monedelor lor dacă nu sunt custodiale, dar de obicei au un volum
+    mai mic decât schimburile de valută „tradiționale”. În secțiunea de mai jos, oferim
+    o listă de schimburi de valută P2P care acceptă Monero.
+  descr: Pe această pagină vei găsi magazine și comercianți care acceptă Monero ca
+    plată, precum și schimburi valutare care tranzacționează Monero cu alte valute.
+  useit: Comercianți care acceptă Monero
+  use: De-a lungul anilor, comercianți de tot felul au ajuns să aprecieze intimitatea
+    financiară pe care Monero o aduce. De fapt, adopția comercianților este în continuă
+    creștere.
+  dirdescr: 'Dacă ești în căutarea de locuri unde să cheltui Monero, directoarele
+    de mai jos au câteva opțiuni. Te rugăm să nu uiți să faci propriile cercetări
+    înainte de le încredința banii:'
+  swapsdescr: Un nou mod interesant de a schimba Monero este Atomic Swaps, pe care
+    <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html"> l-am anunțat
+    </a> în august 2021. Swap-urile atomice sunt o modalitate complet descentralizată
+    de a schimba Bitcoin <-> Monero (mai multe informații în postarea de pe blog).
+    Tehnologia este nouă, deci nu există încă mulți furnizori de swap, dar puteți
+    vinde deja XMR pentru BTC folosind acest protocol la
+  bisqdescr: Schimb valutar P2P descentralizat bazat pe Bitcoin și Tor.
+  cardbtcfiat: (BTC &#8596; fiat posibil)
+  hodlhodldescr: Platformă de tranzacționare P2P cu escrow noncustodial.
+  locmondescr: Schimb valutar online P2P care oferă tranzacții de la persoană la persoană.
+  locnojs: (dar este disponibilă versiunea fără JS)
+  simpleswapdescr: Schimb valutar instantaneu fără custodie.
+  visitbisq: Vizitează Bisq
+  visitlocalmonero: Vizitează LocalMonero
+  visithodlhodl: Vizitează HodlHodl
+  centrexchanges: Schimburi de valută centralizate (CEX) și Swappers
+  centrexchangesp: Dacă preferi să utilizezi schimburi valutare centralizate, iată
+    o listă de CEX-uri și swappere renumite. Mai multe schimburi valutare acceptă
+    Monero, listăm aici doar câteva reputabile.
+  cexp: Schimburi valutare centralizate care oferă schimbul Monero pentru valute naționale
+    și criptomonede.
+  swappersp: Swapp-urile permit utilizatorilor să schimbe XMR pentru alte criptomonede.
 sponsorships:
-  intro: ''
-  tari: ''
-  globee: ''
-  symas: ''
-  forknetworking: ''
-  macstadium: ''
+  intro: 'Următoarele afaceri susțin în mod activ Proiectul Monero în demersul de
+    a aduce confidențialitate financiară în lume. Suntem mai mult decât recunoscători
+    pentru contribuțiile lor. Dacă vrei să sponsorizezi Proiectul Monero și să fii
+    listat pe această pagină, te rog trimite un e-mail la dev@getmonero.org.'
+  tari: 'Tari Labs sponsorizează CDN-urile folosite de către acest site.'
+  symas: 'Symas sponsorizează CTO-ul Howard Chu (hyc) pentru munca lui pe bază de
+    cod la Monero.'
+  forknetworking: 'Fork Networking oferă un server care este folosit pentru development.'
+  macstadium: 'MacStadium sponsorizează un Mac Mini dedicat care este utilizat pentru
+    developmentul legat de Mac.'
 
 team:
-  introduction: ''
-  core: ''
-  community: ''
-  mrl: ''
-  descr: ''
-  start: ''
-  contacts: ''
-  chat: ""
-  website: ""
-  core_descr: ''
-  core_start: ''
-  community_descr: ''
-  community_start: ''
-  devworkgroup: ''
-  devworkgroup_descr: ""
+  introduction: 'Grupurile de lucru sunt formate din membri ai comunității care și-au
+    unit forțele pentru atingerea unui țel comun. Acestea au structuri și țeluri diferite.
+    Pe această pagină vom lista unele dintre cele mai active grupuri de lucru și câteva
+    sfaturi pentru a începe, dacă vrei să te implici în vreunul dintre ele.'
+  core: 'Echipa centrală'
+  community: 'Grupurile de lucru ale comunității'
+  mrl: 'Laboratorul de cercetare'
+  descr: 'Descriere'
+  start: 'De unde să începi'
+  contacts: 'Sală de chat și Contacte'
+  chat: "Chat:"
+  website: "Site:"
+  core_descr: 'În calitate de administratori ai proiectului, Echipa centrală(Core
+    Team) menajează și menține infrastructura în care centralizarea nu poate fi evitată
+    (domenii, site, repozitorii github...). Membrii săi acționează ca mediatori așa
+    cum consideră de cuviință și au ca scop cântărirea consensului din comunitate,
+    perpetuând calitatea interacțiunilor care au dus la succesul pe care Monero îl
+    are astăzi. Echipa centrală(Core Team) nu a primit absolut niciodată vreo compensație
+    financiară pentru asta.'
+  core_start: 'Echipa centrală(Core Team) este un grup de lucru închis; nu este posibil
+    să te alături decât dacă ești invitat.'
+  community_descr: 'Acest grup de lucru este folosit de către comunitate pentru organizare
+    și coordonare. Începe aici dacă ești un non-coder care vrea să contribuie la Monero.'
+  community_start: 'Cea mai bună cale de a începe să contribui la acest grup de lucru
+    este să te alături sălilor de chat și să te prezinți, afirmîndu-ți interesele
+    și abilitățile pe care ai vrea să le prezinți comunității.'
+  devworkgroup: 'Grupul de lucru pentru development'
+  devworkgroup_descr: "Acest grup de lucru unește developerii Monero care lucrează\
+    \ la portofele și daemoni menținuți de către Echipa Centrală (Core Team). Se compune\
+    \ din două părți principale: echipa CLI și echipa GUI. Aceste echipe coordonează\
+    \ utilizând două săli de chat diferite."
   devworkgroup_start: ''
-  chatgeneral: ""
-  chatgui: ""
-  webworkgroup: ''
-  web_descr: ''
+  chatgeneral: "Chat (general):"
+  chatgui: "Chat (GUI):"
+  webworkgroup: 'Grupul de lucru al site-ului'
+  web_descr: 'Acest grup de lucru axat pe development coordonează developmentul site-ului.
+    Majoritatea membrilor fac parte deasemenea și din Grupul de lucru pentru Development.
+    Grupul de lucru al site-ului a fost creat în principal pentru a purta discuții
+    legate de site într-un singur loc.'
   web_start: ''
-  localization: ''
-  localization_descr: ''
+  localization: 'Grupul de lucru de Localizare'
+  localization_descr: 'Unul dintre cele mai vechi Grupuri de lucru Monero este fondat
+    de contributorii care lucrează la traducerea software-ului și a documentației
+    Monero. Este recomandat să contactezi grupul de lucru înainte de a lucra la traduceri.'
   localization_start: ''
-  locplatform: ""
-  outreach_descr: ''
-  outreach_start: ''
-  telegram: ""
+  locplatform: "Platforma de localizare:"
+  outreach_descr: 'Grupul de lucru este focusat pe promovarea Monero, colectarea de
+    artiști, scriitori și oricine își dorește să facă Monero mai cunoscut lumii.'
+  outreach_start: 'Membrii Grupului de lucru Outreach folosesc Telegramul pentru coordonare
+    și matrix/freenode în mică parte. Dacă vrei să ajuți, poți contacta grupul de
+    lucru pe unul dintre aceste canale. Este destul de structurat, deci probabil vei
+    fi direcționat către un coordonator.'
+  telegram: "Chatul Telegram:"
   mrl_descr: ''
-  mrl_start: ''
-  space: ''
+  mrl_start: 'Alătură-te sălii de chat de mai jos și menționează-ți interesele și
+    abilitățile. Cercetarea este întotdeauna în curs de desfășurare și cineva îți
+    va indica direcția corectă.'
+  space: 'Monero Space'
   space_descr: ''
-  space_start: ''
-  mrw: ''
-  mrw_descr: ''
-  mrw_start: ''
-  mpwg: ''
+  space_start: 'Grupul de lucru poate fi contactat scriind sălii de chat de pe Freenode.'
+  mrw: 'Grupul de lucru de răspuns la malware'
+  mrw_descr: 'Grupul de lucru de răspuns la malware oferă resurse și suport live pentru
+    multiple tipuri de malware legate de Monero.'
+  mrw_start: 'Mare parte din activitatea acestui grup de lucru se petrece pe chat-ul
+    IRC. Dacă vrei să contribui, doar alătură-te canalului pentru a pune întrebări
+    sau a pentru a oferi suport.'
+  mpwg: 'Grupul de lucru pentru politici Monero'
   mpwg_descr: ''
   mpwg_start: ''
 
@@ -184,70 +283,91 @@ downloads:
   gui: ''
   cli: ''
   blockchain: ''
-  blockchain1: ''
-  blockchain2: ''
+  blockchain1: 'Dacă preferi să folosești un blockchain brut în locul sincronizării
+    de la zero, poți utiliza cel mai recent bootstrap. Oricum e mai rapid să sincronizezi
+    de la zero de obicei și consumul de RAM este mai mic, de asemenea.'
+  blockchain2: 'Dacă vrei să continui oricum, aruncă o privire peste ghidul utilizatorului'
   blockchain3: ''
   blockchain4: ''
-  blockchainbutton: ''
+  blockchainbutton: 'Descarcă Blockchain'
   mobilelight0: ''
-  mobilelight: ''
-  hardware: ''
-  gui_intro: ''
-  simplemode: ''
+  mobilelight: 'Portofele mobile și ușoare'
+  hardware: 'Portofele hardware'
+  gui_intro: 'O interfață grafică (GUI) pentru un portofel open-source dezvoltat de
+    către comunitatea Monero, complet gratuit, potrivit atât pentru utilizatorii începători
+    cât și pentru cei avansați.'
+  simplemode: 'Modul simplu'
   simplemode1: ''
-  advancedmode: ''
-  advancedmode1: ''
-  merchantpage: ''
-  merchantpage1: ''
-  hwcompatible: ''
-  hwcompatible1: ''
-  fiatconv: ''
-  fiatconv1: ''
+  advancedmode: 'Modul avansat'
+  advancedmode1: 'Cu toate proprietățile avansate de care ai putea avea nevoie. Ideal
+    pentru acei utilizatorii Monero care preferă să aibă control absolut asupra portofelului
+    și nodului lor'
+  merchantpage: 'Pagina de comercianți'
+  merchantpage1: 'Primește XMR pentru afacerea ta, cu ușurință'
+  hwcompatible: 'Compatibil cu portofelele hardware'
+  hwcompatible1: 'precum Trezor și Ledger'
+  fiatconv: 'conversie fiat în aplicație'
+  fiatconv1: 'Nu mai este nevoie să verifici valoarea XMR-ului tău online'
   pruning: ''
   pruning1: ''
-  langs: ""
+  langs: "<b>30+ limbi</b> disponibile"
   cli_intro0: ''
-  cli_intro: ''
-  currentversion: ''
-  sourcecode: ''
-  helpsupport: ''
-  helpsupport1: ""
-  helpsupport2: ""
-  gui_helpsupport: ""
-  cli_helpsupport: ""
-  localremote: ''
-  localremote1: ''
+  cli_intro: 'Portofelul CLI îți oferă controlul total asupra nodului Monero și a
+    fondurilor. Foarte personalizabil și include diferite instrumente de analiză,
+    precum și o interfață HTTP RPC și 0MQ.'
+  currentversion: 'Versiunea curentă'
+  sourcecode: 'Cod sursă'
+  helpsupport: 'Ajutor și Suport'
+  helpsupport1: "Este disponibil un ghid cu o explicație a fiecărei secțiuni a portofelului:"
+  helpsupport2: "Vezi ultima versiune"
+  gui_helpsupport: "Dacă întâmpini probleme sau ai nevoie de mai multe informații,\
+    \ nu ezita să te adresezi comunității. Poți găsi echipa GUI la #monero-gui, sau\
+    \ altfel verifică pagina de hangouts pentru o listă mai completă de contacte și\
+    \ camere de chat"
+  cli_helpsupport: "Dacă întâmpini probleme sau ai nevoie de mai multe informații,\
+    \ nu ezita să te adresezi comunității. Poți găsi echipa CLI la #monero sau #monero-dev,\
+    \ sau altfel verifică pagina de hangouts pentru o listă mai completă de contacte\
+    \ și camere de chat"
+  localremote: 'Nod local sau la distanță'
+  localremote1: 'Utilizează propria copie a blockchain-ului sau una disponibilă public'
   transacttor: ''
-  transacttor1: ''
-  bootstrapnode: ''
-  bootstrapnode1: ''
-  rpc: ''
-  rpc1: ''
+  transacttor1: 'Pentru un nivel suplimentar de confidențialitate'
+  bootstrapnode: 'Nod bootstrap'
+  bootstrapnode1: 'Utilizează un @nod-la-distanță în timp ce descarci blockchain-ul
+    local, acest lucru îți va permite să utilizezi imediat Monero și să te comuți
+    la nodul local după ce este complet sincronizat'
+  rpc: 'Portofel RPC și Daemon'
+  rpc1: 'incluse in arhivă'
   payforrpc: ''
-  payforrpc1: ''
-  verify: ''
+  payforrpc1: 'O nouă caracteristică care permite operatorilor de noduri să fie recompensați
+    când este utilizat nodul lor'
+  verify: 'Verifică'
   verify1: ''
-  verify2: ''
-  showhash: ''
-  showhash1: ''
+  verify2: 'Verifică-ți întotdeauna descărcările!'
+  showhash: 'Afișează hash-urile pentru a verifica descărcarea'
+  showhash1: 'Aceste hash-uri SHA256 sunt enumerate pentru comoditate, dar o listă
+    semnată cu GPG o găsești pe'
   showhash2: ''
-  showhash3: ''
-  showhash4: ""
-  mobilelight1: ''
-  mobilelight2: ''
+  showhash3: 'în codul sursă'
+  showhash4: "Sunt disponibile două ghiduri pentru a te ghida prin procesul de verificare:"
+  mobilelight1: 'Următoarele sunt portofele mobile sau ușoare care sunt considerate
+    sigure de membrii respectați ai comunității. Dacă există un portofel care nu este
+    aici, poți solicita comunității să îl verifice. Du-te la'
+  mobilelight2: 'Hangouts'
   mobilelight3: ''
   installer: ''
   avwarning: ''
-  moreinfofaq: ''
-  packages: ''
-  packages_link: ''
+  moreinfofaq: 'Mai multe informații în FAQ'
+  packages: 'Există, de asemenea, pachete disponibile pentru mai multe distribuții
+    Linux.'
+  packages_link: 'Vezi lista pe GitHub'
   releasenotes: ''
-  wallet: ''
-  mobile: ''
-  desktop: ''
-  antivirus: ''
-  sourcearchive: ''
-  localsync: ''
+  wallet: 'Portofel'
+  mobile: 'Mobil'
+  desktop: 'Desktop'
+  antivirus: 'Antivirus'
+  sourcearchive: 'Cod sursă (arhivă)'
+  localsync: 'Sincronizare locală'
   localsyncinfo: ''
   remotesync: ''
   remotesyncinfo: ''

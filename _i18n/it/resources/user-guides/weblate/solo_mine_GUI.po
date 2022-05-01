@@ -8,23 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-31 10:19+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-12-18 09:33+0000\n"
+"Last-Translator: netrik182 <netrik@tuta.io>\n"
+"Language-Team: Italian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/solo_mine_gui/it/>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:2
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
+msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:4
-#
 msgid ""
 "It is very easy to solo mine with the official GUI. If you have not done so "
 "already, go to the <a href=\"{{site.baseurl}}/downloads/\">Monero downloads "
@@ -38,9 +42,9 @@ msgstr ""
 "GUI e attendi che Monero si sincronizzi con la rete. Dovresti vedere "
 "\"Connesso\" nell'angolo in basso a sinistra."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:6
-#
 msgid ""
 "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" "
 "style=\"width: 600px;\"/>"
@@ -48,9 +52,9 @@ msgstr ""
 "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/01.PNG\" "
 "style=\"width: 600px;\"/>"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:8
-#
 msgid ""
 "Click on the \"Advanced\" tab. You should see that several other options "
 "appear. Now click on the \"Mining\" sub-tab."
@@ -58,9 +62,9 @@ msgstr ""
 "Clicca sulla categoria \"Avanzate\". Dovresti veder comparire alcune "
 "opzioni. Clicca sulla sottocategoria \"Mining\"."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:10
-#
 msgid ""
 "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" "
 "style=\"width: 600px;\"/>"
@@ -68,9 +72,9 @@ msgstr ""
 "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/02.PNG\" "
 "style=\"width: 600px;\"/>"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:12
-#
 msgid ""
 "You should now have an option to start mining. You can optionally change the "
 "number of threads to mine with. For optimal efficiency, you should mine with "
@@ -85,9 +89,9 @@ msgstr ""
 "tecnica del tuo microprocessore sul sito del produttore. Se non sei sicuro, "
 "lascia il numero di thread a 1. Premi il pulsante \"Avvia mining\"."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:14
-#
 msgid ""
 "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" "
 "style=\"width: 600px;\"/>"
@@ -95,9 +99,9 @@ msgstr ""
 "<img src=\"/img/resources/user-guides/en/solo_mine_GUI/03.PNG\" "
 "style=\"width: 600px;\"/>"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:16
-#
 msgid ""
 "You are now mining with the network, as you can see on the bottom of the "
 "image. In this example, the computer is contributing 23 H/s to the Monero "
@@ -110,8 +114,8 @@ msgstr ""
 "inoltre con un po' di fortuna potresti ricevere una ricompensa per aver "
 "aiutato a proteggere la rete."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/solo_mine_GUI.md:17
-#
 msgid "To stop mining, simply click the \"Stop mining\" button."
 msgstr "Per smettere di minare è sufficiente cliccare il pulsante \"Ferma mining\""

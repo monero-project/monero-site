@@ -8,19 +8,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-08 13:32+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-02-25 14:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-moneropedia/spendkey/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/spendkey.md:1
 #, no-wrap
 msgid "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
-msgstr "Одна из двух пар приватных и публичных криптографических ключей, которые есть у каждого счёта. При этом *приватный* ключ траты используется для траты любых средств, имеющихся на таком счёте."
+msgstr ""
+"Одна из двух пар приватных и публичных криптографических ключей, которые "
+"есть у каждого счёта. При этом *приватный* ключ траты используется для траты "
+"любых средств, имеющихся на таком счёте"
 
 #. type: YAML Front Matter: terms
 #: ../_i18n/en/resources/moneropedia/spendkey.md:1
@@ -28,9 +35,9 @@ msgstr "Одна из двух пар приватных и публичных �
 msgid "[\"spend-key\", \"spend-keys\"]"
 msgstr "[\"spend-key\", \"spend-keys\", \"ключа-траты\", \"ключ-траты\", \"ключом-траты\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,9 +47,9 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:11
-#
 msgid "One of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account."
 msgstr "Одна из двух пар приватных и публичных криптографических ключей, которые есть у каждого счёта. При этом *приватный* ключ траты используется для траты любых средств, имеющихся на таком счёте."
 
@@ -52,8 +59,8 @@ msgstr "Одна из двух пар приватных и публичных �
 msgid "In-depth Information"
 msgstr "Углублённая информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:14
-#
 msgid "The *private* spend key is a 256-bit integer that is used to sign Monero transactions. With the current deterministic key derivation method of the official wallet, the private spend key is also an alternate representation of the @mnemonic-seed. It can be used to derive all other account keys."
 msgstr "*Приватный* ключ траты является 256-битным целым числом, используемым для подписания транзакций Monero. Учитывая детерминированный метод выведения ключа, который используется официальным кошельком, приватный ключ траты также является альтернативным представлением @мнемонической-фразы. Он может использоваться в качестве основы для выведения других ключей счёта."

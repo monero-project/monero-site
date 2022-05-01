@@ -7,23 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-24 13:02+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-04-22 14:34+0000\n"
+"Last-Translator: Patix0331 <patix0331@gmail.com>\n"
+"Language-Team: Polish <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/importing_blockchain/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:4
 msgid "### Purpose and Warning"
-msgstr ""
+msgstr "### Cel i Ostrzeżenie"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:6
@@ -35,6 +40,13 @@ msgid ""
 "just a single server, and the Monero @daemon will verify each block as it's "
 "received, instead of verifying separately after downloading."
 msgstr ""
+"Większość ludzi tego nie potrzebuje. Aby korzystać z Monero, wystarczy "
+"uruchomić oprogramowanie, a ono samo zsynchronizuje się z siecią peer-to-"
+"peer. Zazwyczaj jest to znacznie szybsze niż pobieranie i importowanie "
+"blockchaina, jak wyszczególniono w tym przewodniku. Dzieje się tak dlatego, "
+"że będziesz pobierać z wielu serwerów peer-to-peer zamiast z jednego, a "
+"Monero @daemon zweryfikuje każdy blok w momencie jego otrzymania, zamiast "
+"weryfikować go osobno po pobraniu."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:8
@@ -42,6 +54,8 @@ msgid ""
 "This option is mostly useful for development, or possibly if some unusual "
 "problem is preventing you from syncing the normal way."
 msgstr ""
+"Ta opcja jest przydatna głównie podczas programowania, lub jeśli jakiś "
+"nietypowy problem uniemożliwia synchronizację w normalny sposób."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:10
@@ -54,11 +68,17 @@ msgid ""
 "absolutely sure it was already fully and properly verified before "
 "exporting.\n"
 msgstr ""
+"**Nigdy** nie używaj niebezpiecznej opcji niezweryfikowanego importu, jest "
+"ona przeznaczona wyłącznie dla ekspertów. W szczególności nie używaj jej z "
+"żadnym blockchainem, który pobierasz z Internetu, w tym z oficjalnej strony. "
+"Jest ona bezpieczna tylko wtedy, gdy a) importujesz plik, który sam "
+"wyeksportowałeś lokalnie *i* b) jesteś absolutnie pewien, że został on już w "
+"pełni i prawidłowo zweryfikowany przed eksportem.\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:12
 msgid "### Step 1"
-msgstr ""
+msgstr "### Krok 1"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:14
@@ -67,21 +87,25 @@ msgid ""
 "https://downloads.getmonero.org/blockchain.raw; you can skip this step if "
 "you are importing the blockchain from another source."
 msgstr ""
+"Pobierz aktualny bootstrap z https://downloads.getmonero.org/blockchain.raw; "
+"możesz pominąć ten krok, jeśli importujesz blockchain z innego źródła."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:16
 msgid "### Step 2"
-msgstr ""
+msgstr "### Krok 2"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:18
 msgid "Find the path where the Monero software is installed. For example mine is:"
 msgstr ""
+"Znajdź ścieżkę, gdzie zainstalowane jest oprogramowanie Monero. Na przykład "
+"moja to:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:20
 msgid "`D:\\monero-gui-0.10.3.1`"
-msgstr ""
+msgstr "`D:\\monero-gui-0.10.3.1`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:22
@@ -89,21 +113,23 @@ msgid ""
 "Your path may be different depending on where you decided to install the "
 "Monero software, and what version of the software you have."
 msgstr ""
+"Twoja ścieżka może być inna w zależności od tego, gdzie zdecydowałeś się "
+"zainstalować oprogramowanie Monero i jaką wersję oprogramowania posiadasz."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:24
 msgid "### Step 3"
-msgstr ""
+msgstr "### Krok 3"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:26
 msgid "Find the path of your downloaded blockchain for example mine was:"
-msgstr ""
+msgstr "Znajdź ścieżkę do swojego pobranego blockchaina, na przykład moją była:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:28
 msgid "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
-msgstr ""
+msgstr "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:30
@@ -111,11 +137,13 @@ msgid ""
 "Yours might be different depending on where you chose to save the downloaded "
 "blockchain."
 msgstr ""
+"Twoja może być inna w zależności od tego, gdzie zdecydowałeś się zapisać "
+"pobrany blockchain."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:32
 msgid "### Step 4"
-msgstr ""
+msgstr "### Krok 4"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:34
@@ -123,11 +151,13 @@ msgid ""
 "Open a Command Prompt window. You can do this by pressing the Windows key + "
 "R, and then typing in the popup box `CMD` and pressing Enter."
 msgstr ""
+"Otwórz okno Wiersza Poleceń. Możesz to zrobić naciskając klawisz Windows + "
+"R, a następnie wpisując w oknie, które wyskoczy - `CMD` i nacisnąć Enter."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:36
 msgid "### Step 5"
-msgstr ""
+msgstr "### Krok 5"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:38
@@ -135,21 +165,23 @@ msgid ""
 "Now you need to navigate using the CMD window to the path of your Monero "
 "software. You can do this by typing:"
 msgstr ""
+"Teraz musisz wejść za pomocą okna CMD do miejsca gdzie znajduję się "
+"zainstalowane oprogramowanie Monero. Możesz to zrobić wpisując:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:40
 msgid "`cd C:\\YOUR\\MONERO\\PATH\\HERE`"
-msgstr ""
+msgstr "`cd C:\\TUTAJ\\TWOJA\\ŚCIEŻKA\\MONERO`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:42
 msgid "It should look something like:"
-msgstr ""
+msgstr "Powinno to wyglądać mniej więcej tak:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:44
 msgid "`cd D:\\monero-gui-0.10.3.1`"
-msgstr ""
+msgstr "`cd D:\\monero-gui-0.10.3.1`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:46
@@ -158,16 +190,19 @@ msgid ""
 "example if your Monero software was on your D drive then before using the cd "
 "command you would do `D:`"
 msgstr ""
+"Jeśli Twoje oprogramowanie Monero jest na innym dysku możesz użyć "
+"`LiteraDysku:` na przykład jeśli Twoje oprogramowanie Monero było na dysku D "
+"to przed użyciem komendy `cd` napisałbyś `D:`."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:48
 msgid "### Step 6"
-msgstr ""
+msgstr "### Krok 6"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:50
 msgid "Now type in your command prompt window:"
-msgstr ""
+msgstr "Teraz wpisz w oknie wiersza poleceń:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:52
@@ -175,11 +210,13 @@ msgid ""
 "`monero-blockchain-import --input-file "
 "C:\\YOUR\\BLOCKCHAIN\\FILE\\PATH\\HERE`"
 msgstr ""
+"`monero-blockchain-import --input-file C:\\TUTAJ\\TWOJA\\ŚCIEŻKA\\DO"
+"\\BLOCKCHAIN`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:54
 msgid "For example I would type :"
-msgstr ""
+msgstr "Na przykład ja wpisałbym:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:56
@@ -187,11 +224,13 @@ msgid ""
 "`monero-blockchain-import --input-file "
 "C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
 msgstr ""
+"`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads"
+"\\blockchain.raw`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:58
 msgid "### Step 7"
-msgstr ""
+msgstr "### Krok 7"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:59
@@ -199,3 +238,5 @@ msgid ""
 "After the the blockchain has finished syncing up you can open your Monero "
 "wallet normally. Your downloaded blockchain.raw can be deleted."
 msgstr ""
+"Po zakończeniu synchronizacji blockchain możesz normalnie otworzyć swój "
+"portfel Monero. Pobrany blockchain.raw może zostać usunięty."

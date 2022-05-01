@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-23 12:26+0100\n"
-"PO-Revision-Date: 2021-04-12 10:56+0000\n"
-"Last-Translator: gabriel <redstonenoob2005@gmail.com>\n"
+"PO-Revision-Date: 2021-12-02 08:42+0000\n"
+"Last-Translator: netrik182 <netrik@tuta.io>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.getmonero.org/projects/"
 "getmonero-user-guides/howto_fix_stuck_funds/pt_BR/>\n"
 "Language: pt-br\n"
@@ -16,12 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:4

@@ -1,13 +1,13 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Wallet
+## Кошелёк
 
 Перед тем как начать, вам необходимо иметь уже сконфигурированный и готовый
 к работе кошелёк. Пулу нужно знать адрес вашего кошелька, чтобы он смог
 направлять на него платежи. Дополнительную информацию можно найти в
-[Руководстве по приёму Monero]({{ site.baseurl}}/get-started/accepting)
+[Руководстве по приёму Monero]({{ site.baseurl }}/get-started/accepting).
 
-## Profitability
+## Прибыльность
 
 Перед тем как начать майнинг, вы должны решить, стоит ли вам вообще этим
 заниматься. Решение необходимо принять, исходя из ваших затрат на
@@ -18,7 +18,7 @@
 майнера и на основе этих данных вычисляют возможную прибыль (или убыток) за
 неделю/месяц.
 
-## Download Miner
+## Скачивание майнера
 
 Первым шагом является скачивание на ваш компьютер программного обеспечения,
 необходимого для майнинга.
@@ -35,24 +35,24 @@ GitHub](https://github.com/xmrig/xmrig/releases/latest).
 
 ### Ubuntu Linux
 
-The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04)
-and Focal (20.04). They may work on other Ubuntu versions, and on other
-distributions, but this is not guaranteed.
+Разработчик XMRig предоставляет готовые двоичные файлы для Ubuntu Bionic
+(18.04). Они могут работать и с другими версиями Ubuntu, и с другими
+дистрибутивами, но это не гарантируется.
 
 Эти двоичные файлы также можно скачать на [странице релизов на
 GitHub](https://github.com/xmrig/xmrig/releases/latest).
 
-Scroll down to 'Assets' until you see the correct version for your
-system. Download this file, extract the archive somewhere memorable, like
-your desktop.
+Прокрутите вниз до 'Assets', пока не увидите версию, подходящую для вашей
+операционной системы. Скачайте этот файл и извлеките его содержимое в
+какое-нибудь место, например, на рабочий стол.
 
-### Other distributions and operative systems
+### Другие дистрибутивы и операционные системы
 
-Binaries are available for multiple distributions and operative systems, but
-you can also build the miner by yourself. Take a loot at [XMrig's
-docs](https://xmrig.com/docs/miner)
+Бинарные файлы доступны для нескольких дистрибутивов и операционных систем,
+но вы также можете собрать майнер самостоятельно. Воспользуйтесь
+[документацией на веб-сайте XMrig](https://xmrig.com/docs/miner)
 
-## Selecting a pool
+## Выбор пула
 
 Существует огромное количество пулов. Список пулов можно найти на
 [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero).
@@ -62,12 +62,12 @@ docs](https://xmrig.com/docs/miner)
 децентрализованность сети. [Майнеры не теряют доходность при работе в
 меньших пулах](https://redd.it/g6uh2l).
 
-## Configuring the miner
+## Конфигурирование майнера
 
-See the [official docs](https://xmrig.com/docs/miner/config), for
-instructions and suggestions.
+Для получения дополнительных инструкций посетите раздел [официальной
+документации](https://xmrig.com/docs/miner/config).
 
-## Starting the miner
+## Запуск майнера
 
 Пользователи Windows могут сделать это двойным кликом по файлу
 xmrig.exe. Пользователям других операционных систем следует воспользоваться
@@ -77,9 +77,9 @@ xmrig.exe. Пользователям других операционных си
 Если вы видите зелёные сообщения о том, что данные были приняты, поздравляем
 - всё работает!
 
-## Troubleshooting
+## Диагностика и устранение неисправностей
 
-### Anti-virus keeps removing XMRig
+### Антивирус удаляет XMRig
 
 Некоторые антивирусы помечают XMRig как вредоносное программное обеспечение,
 поскольку XMRig часто устанавливается на заражённые компьютеры без согласия
@@ -87,24 +87,23 @@ xmrig.exe. Пользователям других операционных си
 и вы настраиваете майнер для себя, можно уверенно добавить XMRig в список
 исключений вашего антивируса.
 
-### Cannot read/set MSR
+### Не удаётся прочитать/настроить MSR
 
 В случае с некоторыми CPU XMRig пытается повысить производительность,
 отключая определённые функции, такие как буфер предварительной выборки
 команд CPU. Для этих операций требуются права администратора, поэтому
 попробуйте правой кнопкой мыши кликнуть по файлу xmrig.exe и запустить его
 от имени администратора или же запустить `sudo ./xmrig` в других системах.
-systems.
 
-### Algo not known
+### Алгоритм не известен
 
 Следует найти строку в config.json, в которой будет написано `algo: null`, и
 изменить текст на `algo: "rx/0"`. По умолчанию XMRig ожидает, что именно пул
 укажет ему, какой алгоритм использовать при майнинге.
 
-### Huge Pages 0%
+### Большие страницы не загружаются (0%)
 
-#### Allowing large pages on Windows
+#### Как разрешить загрузку больших страниц в Windows
 
 Взято из
 [MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
@@ -120,16 +119,17 @@ systems.
 5. Политика будет отображаться в окошке подробной информации.
 6. В этом окошке двойным кликом выберите Lock pages in memory (Блокировка
    страниц в памяти).
-7. In the Local Security Setting – Lock pages in memory dialog box, click
-   Add User or Group.
+7. В диалоговом окне Local Security Setting - Lock pages in memory (Параметр
+   локальной безопасности — Блокировка страниц в памяти) выберите Add User
+   or Group (Добавить пользователя или группу).
 8. В диалоговом окне Select Users, Service Accounts, or Groups (Выбор:
    «Пользователи» или «Группы») добавить пользователя, под которым вы будете
-   запускать майнер.
+   запускать майнер
 9. Перезагрузите компьютер, чтобы изменения вступили в силу.
 
 Также может понадобиться запустить майнер от имени администратора.
 
-#### Allowing large pages on Linux
+#### Как разрешить загрузку больших страниц в Linux
 
 Сначала необходимо остановить майнер (если он работает) и ввести следующие
 команды, чтобы включить возможность загрузки больших страниц, а затем
@@ -141,30 +141,30 @@ systems.
 Возможно, придётся увеличить значение 1168 в зависимости от того, сколько
 узлов NUMA поддерживает ваш CPU.
 
-#### Allowing large pages on macOS
+#### Как разрешить загрузку больших страниц в macOS
 
 Большие страницы не поддерживаются macOS.
 
-### Balance Not Increasing
+### Баланс не увеличивается
 
-Most pools are <abbr title="Pay Per Last N Shares">PPLNS</abbr> pools,
-which means that you only get paid when a miner on the pool finds a
-block. If the pool you are mining on is small, this can take a few
-days to weeks.
+Большинство пулов является <abbr title="Оплата за N последних шар">PPLNS</abbr> пулами,
+а это означает, что вам платят только тогда, когда майнер, находящийся в пуле, находит
+блок. Если пул, в котором вы занимаетесь майнингом, небольшой, то это может занять от
+нескольких дней до нескольких недель.
 
 Кроме того, все вычисленные блоки должны стать достаточно «зрелыми», прежде
 чем за них можно будет получить вознаграждение. На это уходит еще порядка 60
 блоков (примерно 2 часа).
 
-## Getting Help
+## Помощь
 
-An active Monero mining community on Reddit is
-[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also
-join [#monero-pools on
-Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix
+Активное майнинг-сообщество Monero на Reddit можно найти здесь:
+[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Вы также можете
+присоединиться к [#monero-pools на
+Libera](https://web.libera.chat/?channel=#monero-pools) или Matrix
 (#monero-pools:monero.social).
 
-## Going Futher
+## Дальнейшие действия
 
 * Подумайте об использовании отдельного подадреса для майнинга, чтобы ваш
   основной адрес нельзя было связать с различными сервисами.

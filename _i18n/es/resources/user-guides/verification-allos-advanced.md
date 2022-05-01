@@ -18,7 +18,7 @@ hace uso de la consola de comandos. Te llevará por el proceso de instalar
 software requerido, importar la clave de firma, descargar los archivos
 necesarios, y finalmente verificar que tu binario es auténtico.
 
-## Table of Contents:
+## Tabla de Contenidos:
 
 ### - [Install GnuPG](#installing-gnupg)
 
