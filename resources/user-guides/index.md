@@ -15,6 +15,7 @@ meta_descr: meta_descr.userguides
                             <p><a href="{{site.baseurl}}/resources/user-guides/securely_purchase.html">{% t user-guides.purchasing-storing %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/make-payment.html">{% t user-guides.make-payment %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/prove-payment.html">{% t user-guides.prove-payment %}</a></p>
+                            <p><a href="{{site.baseurl}}/resources/user-guides/join-monero-matrix.html">{% t user-guides.join-monero-matrix %}</a></p>
                         </div>
                     </div>
                 </div>

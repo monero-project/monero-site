@@ -706,6 +706,7 @@ user-guides:
   change-restore-height: How to change the wallet restore height
   back: Back to the list
   scan-txid: How to scan for a missing transaction CLI/GUI
+  join-monero-matrix: How to join the Monero Core Team Matrix server
 
 roadmap:
   completed: Completed task
