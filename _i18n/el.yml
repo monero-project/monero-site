@@ -1509,6 +1509,7 @@ user-guides:
   hardwarewallet: Υλικά Πορτοφόλια
   make-payment: Πώς να πραγματοποιήσετε μια πληρωμή
   change-restore-height: Πώς να αλλάξετε το ύψος επαναφοράς του πορτοφολιού
+  join-monero-matrix: How to join the Monero Core Team Matrix server
 research-lab:
   mrlhtp_summary: Το Monero χρησιμοποιεί μια μοναδική συνάρτηση hash που μετατρέπει
     τα scalars σε ελλειπτικά σημεία καμπύλης. Είναι χρήσιμο για τη δημιουργία εικόνων

@@ -320,7 +320,7 @@ user-guides:
   ledger-wallet-cli: 如何使用 CLI 錢包產生 Ledger 錢包 (monero-wallet-cli)
   multisig-messaging-system: 如何使用 MMS 與 CLI 錢包進行多重簽名交易
   tor_wallet: Connecting your local wallet to your own daemon over Tor
-
+  join-monero-matrix: How to join the Monero Core Team Matrix server
 roadmap:
   completed: 已完成的工作
   ongoing: 進行中的工作

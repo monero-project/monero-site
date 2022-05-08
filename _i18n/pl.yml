@@ -1160,7 +1160,7 @@ user-guides:
   ledger-wallet-cli: Jak korzystać z portfela Ledger w Monero CLI
   multisig-messaging-system: Transakcje wielopodpisowe z portfelem MMS i CLI
   tor_wallet: Jak połączyć swój portfel z własnym węzłem przez Tor
-
+  join-monero-matrix: How to join the Monero Core Team Matrix server
   back: Powrót do listy
   tailsguide: Jak korzystać z Monero na Tails
   guiguide: Przewodnik dla portfela Monero GUI

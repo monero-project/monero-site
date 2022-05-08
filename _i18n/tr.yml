@@ -444,7 +444,7 @@ user-guides:
   ledger-wallet-cli: CLI (monero-wallet-cli) ile Ledger Monero cüzdanı üretimi
   multisig-messaging-system: MMS ve CLI cüzdanla çoklu-imza işlemleri
   tor_wallet: Connecting your local wallet to your own daemon over Tor
-
+  join-monero-matrix: How to join the Monero Core Team Matrix server
 roadmap:
   completed: Tamamlanmış görev
   ongoing: Devam eden görev

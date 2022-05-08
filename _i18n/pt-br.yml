@@ -754,6 +754,7 @@ user-guides:
   multisig-messaging-system: Transações multisig com MMS e a carteira CLI
   tor_wallet: Conectando a sua carteira local com o seu próprio daemon através do
     Tor
+  join-monero-matrix: How to join the Monero Core Team Matrix server
 roadmap:
   completed: Tarefas concluídas
   ongoing: Tarefas em andamento
