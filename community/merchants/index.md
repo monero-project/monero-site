@@ -94,6 +94,7 @@ permalink: /community/merchants/index.html
             <li><a href="https://www.binance.com/trade.html?symbol=XMR_BTC">Binance</a> (USD, EUR, RUB, TRY, NGN, UAH, KZT, INR, ...)</li>
             <li><a href="https://dvchain.co/">DV Chain (OTC)</a> (USD*, CAD*, GBP*, EUR*, JPY*, ...)</li>
             <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD*)</li>
+            <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr">BitcoinVN</a> (VND)</li>
           </ul>
           <p>*Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
         <h3>Swappers</h3>
