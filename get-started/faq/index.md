@@ -44,6 +44,7 @@ permalink: /get-started/faq/index.html
                         <li><a href="#anchor-mixing">{% t faq.q15 %}</a></li>
                         <li><a href="#import-blockchain">{% t faq.qimporting %}</a></li>
                         <li><a href="#max-supply">{% t faq.qmaxsupply %}</a></li>
+                        <li><a href="#tail-emission">{% t faq.qtailemission %}</a></li>
                     </ul>
                     <li class="category">{% t faq.nodeandwallet %}</li>
                     <ul class="logo">
@@ -251,6 +252,12 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#max-supply"></a>{% t faq.qmaxsupply %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.amaxsupply %}</p>
+                    </div>
+                </div>
+                <div class="tab" id="tail-emission">
+                    <h3><a class="anchor" href="#tail-emission"></a>{% t faq.qtailemission %}</h3>
+                    <div class="tab-answer">
+                        <p>{% t faq.atailemission %}</p>
                     </div>
                 </div>
                 <div class="row center-xs">
