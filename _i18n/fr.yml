@@ -771,7 +771,7 @@ user-guides:
   multisig-messaging-system: Transactions multi-signatures avec MMS et le portefeuille
     CLI
   tor_wallet: Connecting your local wallet to your own daemon over Tor
-  join-monero-matrix: How to join the Monero Core Team Matrix server
+
 roadmap:
   completed: Tâches terminées
   ongoing: Tâches en cours

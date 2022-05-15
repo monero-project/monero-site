@@ -872,7 +872,6 @@ user-guides:
   tailsguide: Napravite novčanik (koristeći udaljeni čvor) na Tails-u
   guiguide: Vodič za Monero GUI novčanik
   node-i2pzero: Pokreni Monero čvor kroz I2P sa I2P-zero
-  join-monero-matrix: How to join the Monero Core Team Matrix server
 roadmap:
   completed: Završen zadatak
   ongoing: Zadatak u toku

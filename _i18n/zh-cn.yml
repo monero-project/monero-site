@@ -311,7 +311,7 @@ user-guides:
   ledger-wallet-cli: 如何用命令行钱包（CLI）制作一个Ledger硬件钱包的门罗币钱包
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
-  join-monero-matrix: How to join the Monero Core Team Matrix server
+
 roadmap:
   completed: 已经完成的事情
   ongoing: 着手实现的目标

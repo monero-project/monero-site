@@ -1236,7 +1236,6 @@ user-guides:
   backup: Резервная копия
   make-payment: Как произвести платёж
   change-restore-height: Как изменить высоту восстановления кошелька
-  join-monero-matrix: How to join the Monero Core Team Matrix server
 roadmap:
   completed: Завершенные задачи
   ongoing: Актуальные задачи

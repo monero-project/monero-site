@@ -605,7 +605,6 @@ user-guides:
   ledger-wallet-cli: Come generare un portafoglio Leger Monero con la CLI (monero-wallet-cli)
   multisig-messaging-system: Transazione multifirma con MMS e portafoglio CLI
   tor_wallet: Connecting your local wallet to your own daemon over Tor
-  join-monero-matrix: How to join the Monero Core Team Matrix server
 roadmap:
   completed: Task completati
   ongoing: Task in corso

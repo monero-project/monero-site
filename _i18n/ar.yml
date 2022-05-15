@@ -423,7 +423,6 @@ user-guides:
   ledger-wallet-cli: How to generate a Ledger Monero wallet with the CLI (monero-wallet-cli)
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: Connecting your local wallet to your own daemon over Tor
-  join-monero-matrix: How to join the Monero Core Team Matrix server
 
 roadmap:
   completed: المهات المكتمله

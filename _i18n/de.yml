@@ -907,7 +907,6 @@ user-guides:
   guiguide: Anleitung für das Monero-GUI-Wallet
   node-i2pzero: Betreiben eines Monero-Nodes via I2P mit I2P-zero
   back: Zurück zur Liste
-  join-monero-matrix: How to join the Monero Core Team Matrix server
 roadmap:
   completed: Abgeschlossene Aufgabe
   ongoing: Laufende Aufgabe
