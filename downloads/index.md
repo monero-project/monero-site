@@ -81,6 +81,7 @@ permalink: /downloads/index.html
                     <ul>
                       <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero-gui" target="_blank">{% t downloads.sourcecode %}</a></li>
                       <li class="downloads"><span class="icon-git"></span><a class="orange" href="https://downloads.getmonero.org/gui/source">{% t downloads.sourcearchive %}</a></li>
+                      <li class="downloads"><a class="orange" href="magnet:?xt=urn:btih:706beb780e3e8a4e1c7a3a76328a37bb125e1ae1&dn=MoneroGUI-0.17.3.1-Oxygen-Orion&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fopen.tracker.cl%3a1337%2fannounce&tr=udp%3a%2f%2fwww.torrent.eu.org%3a451%2fannounce">Torrent (magnet)</a></li>
                     </ul>
                   </div>
                   <div class="mobile-only">
@@ -174,6 +175,7 @@ permalink: /downloads/index.html
                     <ul>
                       <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero" target="_blank">{% t downloads.sourcecode %}</a></li>
                       <li class="downloads"><span class="icon-git"></span><a class="orange" href="https://downloads.getmonero.org/cli/source">{% t downloads.sourcearchive %}</a></li>
+                      <li class="downloads"><a class="orange" href="magnet:?xt=urn:btih:ebe3bb8119d02ed05fa8c699fd11c964f6aab32f&dn=MoneroCLI-0.17.3.0-Oxygen%20Orion&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fopen.tracker.cl%3a1337%2fannounce&tr=udp%3a%2f%2fwww.torrent.eu.org%3a451%2fannounce">Torrent (magnet)</a></li>
                     </ul>
                   </div>
                   <div class="mobile-only">
