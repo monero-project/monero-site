@@ -258,6 +258,7 @@ permalink: /get-started/faq/index.html
                     <h3><a class="anchor" href="#tail-emission"></a>{% t faq.qtailemission %}</h3>
                     <div class="tab-answer">
                         <p>{% t faq.atailemission %}</p>
+                        <p>{% t faq.atailemission1 %}</p>
                     </div>
                 </div>
                 <div class="row center-xs">
