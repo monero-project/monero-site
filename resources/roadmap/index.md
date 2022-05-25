@@ -24,7 +24,7 @@ permalink: /resources/roadmap/index.html
                 <div class="tabPanel-widget">
                     <label for="tab-1" tabindex="0"></label>
                     <input id="tab-1" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2014-2016</h2>
+                    <h2>2014-2017</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2014</h2>
                             <ul>
@@ -58,11 +58,6 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed"><a href="{{ site.baseurl_root }}/2016/12/14/monero-0.10.1-released.html" target="_blank" rel="noreferrer noopener">{% t roadmap.released-0-10-1 %}</a></li>
                                     <li class="completed"><a href="{{ site.baseurl_root }}/2016/12/22/monero-core-gui-beta-released.html" target="_blank" rel="noreferrer noopener">{% t roadmap.guibeta1 %}</a></li>
                             </ul>
-                    </div>
-                    <label for="tab-2" tabindex="0"></label>
-                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2017</h2>
-                    <div class="tabPanel-content info-block">
                         <h2>2017</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.jan %}</h3>
@@ -91,8 +86,8 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.multisig %}</li>
                             </ul>
                     </div>
-                    <label for="tab-3" tabindex="0"></label>
-                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
+                    <label for="tab-2" tabindex="0"></label>
+                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                     <h2>2018</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2018</h2>
@@ -132,8 +127,8 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.mms %}</li>
                             </ul>
                     </div>
-                    <label for="tab-4" tabindex="0"></label>
-                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true">
+                    <label for="tab-3" tabindex="0"></label>
+                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
                     <h2>2019</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2019</h2>
@@ -165,8 +160,8 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.randomx %}</li>
                             </ul>
                     </div>
-                    <label for="tab-5" tabindex="0"></label>
-                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
+                    <label for="tab-4" tabindex="0"></label>
+                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true">
                     <h2>2020</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2020</h2>
@@ -187,8 +182,8 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.released-0-17 %}</li>
                             </ul>
                     </div>
-                    <label for="tab-6" tabindex="0"></label>
-                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-5" tabindex="0"></label>
+                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2021</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2021</h2>
@@ -199,6 +194,31 @@ permalink: /resources/roadmap/index.html
                                     <li class="completed">{% t roadmap.atomicswaps %}</li>
                                 <h3 class="months">{% t roadmap.oct %}</h3>
                                     <li class="completed"><a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">{% t roadmap.p2pool %}</a></li>
+                                <h3 class="months">{% t roadmap.dec %}</h3>
+                                    <li class="completed"><a href="{{ site.baseurl }}/2021/12/04/monero-0.17.3.0-released.html">{% t roadmap.released-0-17-3-0-cli %}</a></li>
+                                    <li class="completed"><a href="{{ site.baseurl }}/2021/12/04/monero-GUI-0.17.3.0-released.html">{% t roadmap.released-0-17-3-0-gui %}</a></li>
+                            </ul>
+                    </div>
+                    <label for="tab-6" tabindex="0"></label>
+                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <h2>2022</h2>
+                    <div class="tabPanel-content info-block">
+                        <h2>2022</h2>
+                            <ul>
+                                <h3 class="months">{% t roadmap.jan %}</h3>
+                                    <li class="completed"><a href="{{ site.baseurl }}/2022/01/06/monero-GUI-0.17.3.1-released.html">{% t roadmap.released-0-17-3-1-gui %}</a></li>
+                                <h3 class="months">{% t roadmap.apr %}</h3>
+                                    <li class="completed"><a href="{{ site.baseurl }}/2022/04/29/monero-0.17.3.2-released.html">{% t roadmap.released-0-17-3-2-cli %}</a></li>
+                                    <li class="completed"><a href="{{ site.baseurl }}/2022/04/29/monero-GUI-0.17.3.2-released.html">{% t roadmap.released-0-17-3-2-gui %}</a></li>
+                                <h3 class="months">{% t roadmap.jul %}</h3>
+                                    <li class="completed">{% t roadmap.released-0-18 %}</li>
+                                <h3 class="months">{% t roadmap.aug %}</h3>
+                                    <li class="completed"><a href="{{ site.baseurl }}/2022/04/20/network-upgrade-july-2022.html">{% t roadmap.hardfork-v15 %}</a></li>
+                                    <li class="completed">{% t roadmap.ringsize-11-16 %}</li>
+                                    <li class="completed">{% t roadmap.bplus %}</li>
+                                    <li class="completed">{% t roadmap.viewtags %}</li>
+                                    <li class="completed">{% t roadmap.feechanges %}</li>
+                                    <li class="completed">{% t roadmap.released-0-18-1 %}</li>
                             </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>
@@ -209,10 +229,15 @@ permalink: /resources/roadmap/index.html
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
                                     <li class="ongoing"><a href="https://haveno.exchange">{% t roadmap.haveno %}</a></li>
-                                    <li class="ongoing">{% t roadmap.bplus %}</li>
+                                    <li class="ongoing">{% t roadmap.seraphis-jamtis %}</li>
+                                    <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD">{% t roadmap.ospead %}</a></li>
+                                    <li class="ongoing">{% t roadmap.ringsize-sera-tryp %}</li>
                                     <li class="ongoing">{% t roadmap.tryptych %}</li>
                                     <li class="upcoming">{% t roadmap.returnaddr %}</li>
+                                    <li class="ongoing">{% t roadmap.xmr-eth-atomicswaps %}</li>
                                     <li class="upcoming">{% t roadmap.layer2 %}</li>
+                                    <li class="ongoing">{% t roadmap.bp++ %}</li>
+
                             </ul>
                     </div>
                 </div>

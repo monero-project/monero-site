@@ -74,7 +74,7 @@ permalink: /downloads/index.html
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-linux"></span><a class="orange" href="https://downloads.getmonero.org/gui/linux64">Linux 64-bit</a></li>
-                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">Mac OS X 64-bit</a></li>
+                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">macOS Intel</a></li>
                     </ul>
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
@@ -159,7 +159,7 @@ permalink: /downloads/index.html
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-windows"></span><a class="orange" href="https://downloads.getmonero.org/cli/win64">Windows 64-bit</a> | <a class="orange" href="https://downloads.getmonero.org/cli/win32">32-bit</a></li>
-                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/cli/mac64">Mac OS X 64-bit</a></li>
+                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/cli/mac64">macOS Intel</a> | <a class="orange" href="https://downloads.getmonero.org/cli/macarm8">macOS ARM</a></li>
                       <li class="downloads"><span class="icon-android"></span><a class="orange" href="https://downloads.getmonero.org/cli/androidarm8">Android ARMv8</a> | <a class="orange" href="https://downloads.getmonero.org/cli/androidarm7">Android ARMv7</a></li>
                     </ul>
                   </div>
@@ -251,7 +251,7 @@ permalink: /downloads/index.html
                             <td><img class="small" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather logo"><a href="https://featherwallet.org/">Feather</a></td>
                             <td>X</td>
                             <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://git.featherwallet.org/feather/feather" aria-label="Git icon"><span class="icon-git"></span></a></td>
+                            <td><a class="ext-noicon" href="https://github.com/feather-wallet/feather" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
                             <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
@@ -260,6 +260,7 @@ permalink: /downloads/index.html
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         </table>
+                        <!-- 
                         <h3 class="desktop-only">{% t downloads.remotesync %}</h3>
                         <p class="desktop-only">{% t downloads.remotesyncinfo %}</p>
                         <table class="desktop-only">
@@ -282,6 +283,7 @@ permalink: /downloads/index.html
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         </table>
+                        -->
                         <div class="row between-xs mob-wallets mobile-only">
                             <h3>{% t downloads.localsync %}</h3>
                             <p>{% t downloads.localsyncinfo %}</p>
@@ -290,12 +292,14 @@ permalink: /downloads/index.html
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                             </ul>
+                            <!--
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
                             <ul>
                                 <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
                                 <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
                             </ul>
+                            -->
                         </div>
             </div>
             <!-- End 'Mobile & Light Wallets' -->

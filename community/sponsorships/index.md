@@ -26,8 +26,8 @@ permalink: /community/sponsorships/index.html
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://symas.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
-                            <p>{% t sponsorships.symas %}</p>
+                            <a class="ext-noicon" href="https://majesticbank.sc/" target="_blank" rel="noreferrer"><img src="/img/sponsors/mblogo.png" alt="Majestic Bank logo"></a>
+                            <p id="mbank">{% t sponsorships.mbank %}</p>
                         </div>
                     </div>
                 </div>
@@ -50,6 +50,18 @@ permalink: /community/sponsorships/index.html
                         <div class="col">
                             <a class="ext-noicon" href="https://www.macstadium.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/macstadium.png" alt="Macstadium logo"></a>
                             <p>{% t sponsorships.macstadium %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="info-block">
+                    <div class="row center-xs">
+                        <div class="col">
+                            <a class="ext-noicon" href="https://symas.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
+                            <p>{% t sponsorships.symas %}</p>
                         </div>
                     </div>
                 </div>
