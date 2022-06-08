@@ -106,15 +106,15 @@ After you've done all the above, you'll need to [open an issue on the repository
 
 ### GitHub Issues
 
-We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
+We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but if your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
 ### Reviewing Process
 
-When a pull request suggesting changes is opened, it will be merged only once it will be reviewed (with some exceptions, like binaries and hashes updates). The process to review a PR is simple:
+When a pull request suggesting changes is opened, it will be merged only once it is reviewed (with some exceptions, like binaries and hashes updates). The process to review a PR is simple:
 
 1. Go through the suggested changes and check that everything is fine and nothing is broken. We have multiple tools that make this process easier: Netlify's previews, which will show a preview of how the website will look like once the PR is merged; GitHub's checks, which will try to build the PR and will say if there were errors during the process.
 2. if you think something should be changed, comment on the interested lines, stating clearly what changes you suggest and why. GitHub gives [a set of useful tools](https://github.com/features/code-review/) to make code review easier for both authors and reviewers.
-3. When you think the PR is ready to be merged, use GitHub's native "Approve" option, or write a comment explicitly stating your approval. Some common ways to approve a PR is by writing: *ACK/uTACK*, *Reviewed* and *LGTM (Let's Get This Merged)*. Doesn't matter what wording you use, just make your approval clear.
+3. When you think the PR is ready to be merged, use GitHub's native "Approve" option, or write a comment explicitly stating your approval. Some common ways to approve a PR are by writing: *ACK/uTACK*, *Reviewed* and *LGTM (Let's Get This Merged)*. Doesn't matter what wording you use, just make your approval clear.
 4. In the case you wish a PR doesn't get merged for some reason, make it known by using clear wording. A common way to show disapproval is by writing *NACK (Not Acknowledged)*. NACKing a PR should be accompanied by a detailed explanation of why that PR should be refused.
 
 ## Updates on User Guides
@@ -127,9 +127,9 @@ To keep track of those changes, the user guides (but not the developer guides) a
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 ```
 
-This snippet is responsible for keeping track of the language version. If the guide is translated, change `translated="no"` to `translated="yes"`. if the page is translated, but something changed in the original guide in English, change `translationOutdated="no"` to `translationOutdated="yes"`.
+This snippet is responsible for keeping track of the language version. If the guide is translated, change `translated="no"` to `translated="yes"`. If the page is translated, but something changed in the original guide in English, change `translationOutdated="no"` to `translationOutdated="yes"`.
 
-The based version (English version) is however also tracked in the `Front Matter` from the /resources/user-guides/ directory file:
+However, the based version (English version) is tracked in the `Front Matter` from the `/resources/user-guides/` directory file:
 
 ```
 outdated: False
@@ -139,13 +139,13 @@ If the guide is outdated, simply change `False` into `True`.
 
 When you update a guide, you are responsible for updating this version tracking in every file involved in your update. Don't be afraid to ask for help if the process is not clear to you.
 
-The screenshots of all user guides are in `/img/user-guides/LANG`. Where `LANG` can be any of the languages supported by Getmonero. By default, all localized versions of the website will use the English version of the screenshots, see the [translations](#translation) section for info about translating screenshots.
+The screenshots of all user guides are in `/img/user-guides/LANG`, where `LANG` can be any of the languages supported by Getmonero. By default, all localized versions of the website will use the English version of the screenshots. See the [translations](#translation) section for info about translating screenshots.
 
 ## How to make a blog post
 
 ### 1. Make a file
 
-Navigate to the \_posts folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md. Take a look at the other posts to get an idea of how to name yours
+Navigate to the `_posts` folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md. Take a look at the other posts to get an idea of how to name yours
 
 ### 2. Front Matter
 
@@ -171,17 +171,17 @@ After the front matter is finished you are free to write the remainder of your b
 
 ### 1. Quick Start
 
-* Create file in /resources/user-guides with an .md ending and no spaces in filename.
-* Create file in /\_i18n/en/resources/user-guides with the exact same filename as above ending in .md
+* Create file in `/resources/user-guides` with an .md ending and no spaces in filename.
+* Create file in `/_i18n/en/resources/user-guides` with the exact same filename as above ending in .md
 * Write User Guide
 * Add versioning snippet
-* Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to /\_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
+* Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to `/_i18n/[ALL LANGUAGES]/resources/user-guides/index.md` being careful not to mess with any indentation
 * Test/Build
 * Submit PR
 
 ### 2. Make a file
 
-Navigate to the /resources/user-guides folder and make a new file. Be sure the file name has no spaces and the ending is `.md`
+Navigate to the `/resources/user-guides` folder and make a new file. Be sure the file name has no spaces and the ending is `.md`
 
 ### 3. Content of file
 
@@ -212,7 +212,7 @@ If you are copying the structure of another guide, the snippet will be already t
 
 ### 5. Add Guide to the 'User Guide' landing page of EACH LANGUAGE
 
-In the /\_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it.
+In the `/_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides` folder, find the file labeled index.md and open it.
 
 DO NOT CHANGE ANYTHING IN THIS DOCUMENT BESIDES WHAT YOU ARE INSTRUCTED TO.
 
@@ -226,7 +226,7 @@ In the event that you think your User Guide should be in a new Category that doe
 
 ### 1. Make a Global file
 
-Navigate to the /resources/moneropedia folder and make a new file. Be sure the file name has no spaces and the ending is .md
+Navigate to the `/resources/moneropedia` folder and make a new file. Be sure the file name has no spaces and the ending is .md
 Fill this file with this exact content:
 
 ```
@@ -247,7 +247,7 @@ Where `ENTRY` is a one word identifier for the title/name of your Moneropedia en
 
 ### 2. Make the localized File
 
-Navigate to the /\_i18n/en/resources/moneropedia folder and make a new file. give it the same <name>.md than in previous step.
+Navigate to the `/_i18n/en/resources/moneropedia` folder and make a new file. give it the same <name>.md than in previous step.
 Start the file with the front Matter:
 
 ```
