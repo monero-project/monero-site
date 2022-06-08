@@ -111,11 +111,11 @@ We ask that if you open an issue on the site that you remain available for clari
 
 ### Reviewing Process
 
-When a pull request suggesting changes is opened, it will be merged only once it will be reviewed (with some exceptions, like binaries and hashes updates). The process to review a PR is simple:
+When a pull request suggesting changes is opened, it will be merged only once it is reviewed (with some exceptions, like binaries and hashes updates). The process to review a PR is simple:
 
 1. Go through the suggested changes and check that everything is fine and nothing is broken. We have multiple tools that make this process easier: Netlify's previews, which will show a preview of how the website will look like once the PR is merged; GitHub's checks, which will try to build the PR and will say if there were errors during the process.
 2. if you think something should be changed, comment on the interested lines, stating clearly what changes you suggest and why. GitHub gives [a set of useful tools](https://github.com/features/code-review/) to make code review easier for both authors and reviewers.
-3. When you think the PR is ready to be merged, use GitHub's native "Approve" option, or write a comment explicitly stating your approval. Some common ways to approve a PR is by writing: *ACK/uTACK*, *Reviewed* and *LGTM (Let's Get This Merged)*. Doesn't matter what wording you use, just make your approval clear.
+3. When you think the PR is ready to be merged, use GitHub's native "Approve" option, or write a comment explicitly stating your approval. Some common ways to approve a PR are by writing: *ACK/uTACK*, *Reviewed* and *LGTM (Let's Get This Merged)*. Doesn't matter what wording you use, just make your approval clear.
 4. In the case you wish a PR doesn't get merged for some reason, make it known by using clear wording. A common way to show disapproval is by writing *NACK (Not Acknowledged)*. NACKing a PR should be accompanied by a detailed explanation of why that PR should be refused.
 
 ## Updates on User Guides
@@ -130,7 +130,7 @@ To keep track of those changes, the user guides (but not the developer guides) a
 
 This snippet is responsible for keeping track of the language version. If the guide is translated, change `translated="no"` to `translated="yes"`. If the page is translated, but something changed in the original guide in English, change `translationOutdated="no"` to `translationOutdated="yes"`.
 
-The based version (English version) is however also tracked in the `Front Matter` from the /resources/user-guides/ directory file:
+However, the based version (English version) is tracked in the `Front Matter` from the `/resources/user-guides/` directory file:
 
 ```
 outdated: False
@@ -140,7 +140,7 @@ If the guide is outdated, simply change `False` into `True`.
 
 When you update a guide, you are responsible for updating this version tracking in every file involved in your update. Don't be afraid to ask for help if the process is not clear to you.
 
-The screenshots of all user guides are in `/img/user-guides/LANG`. Where `LANG` can be any of the languages supported by Getmonero. By default, all localized versions of the website will use the English version of the screenshots, see the [translations](#translation) section for info about translating screenshots.
+The screenshots of all user guides are in `/img/user-guides/LANG`, where `LANG` can be any of the languages supported by Getmonero. By default, all localized versions of the website will use the English version of the screenshots. See the [translations](#translation) section for info about translating screenshots.
 
 ## How to make a blog post
 
