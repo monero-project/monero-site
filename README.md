@@ -1,5 +1,29 @@
 ![gh-actions/site](https://github.com/monero-project/monero-site/workflows/gh-actions/site/badge.svg?branch=master)
 
+## Table of Contents
+
+  - [Introduction](#introduction)
+  - [What you'll need](#what-youll-need)
+  - [General change recommendations](#general-change-recommendations)
+    - [Tor](#tor)
+  - [PR workflow](#pr-workflow)
+  - [Translation](#translation)
+    - [Notes for Moneropedia Entries](#notes-for-moneropedia-entries)
+    - [Notes for user guides screenshots](#notes-for-user-guides-screenshots)
+  - [How to add a new language](#how-to-add-a-new-language)
+  - [Housekeeping](#housekeeping)
+    - [GitHub Issues](#github-issues)
+    - [Reviewing Process](#reviewing-process)
+  - [Updates on User Guides](#updates-on-user-guides)
+  - [How to make a blog post](#how-to-make-a-blog-post)
+  - [How to make a User Guide](#how-to-make-a-user-guide)
+  - [How to make a Moneropedia Entry](#how-to-make-a-moneropedia-entry)
+  - [How to update the Workgroups page](#how-to-update-the-workgroups-page)
+  - [How to update the Roadmap](#how-to-update-the-roadmap)
+  - [How to add a question to the FAQ](#how-to-add-a-question-to-the-faq)
+  - [How to add a publication to the Library](#how-to-add-a-publication-to-the-library)
+  - [License](#license)
+
 ## Introduction
 
 This README will walk you through everything you need to know to make changes, edits, or even completely new pages for the [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Feel free to skip down to a relevant section if you already know what you need.
