@@ -111,7 +111,7 @@ permalink: /get-started/faq/index.html
                         <p>{% t faq.acontribute2 %} <a href="{{ site.baseurl }}/community/hangouts/">Hangouts</a>.</p>
                         <p>{% t faq.acontribute3 %}</p>
                         <p>{% t faq.acontribute4 %} <a href="https://www.monerooutreach.org/stories/getting-started-helping-monero.html">Getting started with Monero</a>.</p>
-                        <p>{% t faq.additional %} <a href="{{ site.baseurl }}/get-started/accepting/">{% t titles.contributing %}</a></p>
+                        <p>{% t faq.additional %} <a href="{{ site.baseurl }}/get-started/contributing/">{% t titles.contributing %}</a></p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-value">
