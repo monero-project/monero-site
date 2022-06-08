@@ -107,7 +107,7 @@ After you've done all the above, you'll need to [open an issue on the repository
 
 ### GitHub Issues
 
-We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but If your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
+We ask that if you open an issue on the site that you remain available for clarifying questions or corrections. We do our best to close issues that are resolved when we make changes to the site, but if your issue is resolved by a contributor and the issue is not closed we ask that you close it in a timely manner. A contributor may ask you to close an issue after it's confirmed fixed. Please review the changes to the site and close your issue if you can verify that it's fixed.
 
 ### Reviewing Process
 
@@ -128,7 +128,7 @@ To keep track of those changes, the user guides (but not the developer guides) a
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 ```
 
-This snippet is responsible for keeping track of the language version. If the guide is translated, change `translated="no"` to `translated="yes"`. if the page is translated, but something changed in the original guide in English, change `translationOutdated="no"` to `translationOutdated="yes"`.
+This snippet is responsible for keeping track of the language version. If the guide is translated, change `translated="no"` to `translated="yes"`. If the page is translated, but something changed in the original guide in English, change `translationOutdated="no"` to `translationOutdated="yes"`.
 
 The based version (English version) is however also tracked in the `Front Matter` from the /resources/user-guides/ directory file:
 
