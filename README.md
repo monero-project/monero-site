@@ -146,7 +146,7 @@ The screenshots of all user guides are in `/img/user-guides/LANG`, where `LANG` 
 
 ### 1. Make a file
 
-Navigate to the \_posts folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md. Take a look at the other posts to get an idea of how to name yours
+Navigate to the `_posts` folder of the website and make a new file. Be sure the file name has no spaces and the ending is .md. Take a look at the other posts to get an idea of how to name yours
 
 ### 2. Front Matter
 
@@ -172,17 +172,17 @@ After the front matter is finished you are free to write the remainder of your b
 
 ### 1. Quick Start
 
-* Create file in /resources/user-guides with an .md ending and no spaces in filename.
-* Create file in /\_i18n/en/resources/user-guides with the exact same filename as above ending in .md
+* Create file in `/resources/user-guides` with an .md ending and no spaces in filename.
+* Create file in `/_i18n/en/resources/user-guides` with the exact same filename as above ending in .md
 * Write User Guide
 * Add versioning snippet
-* Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to /\_i18n/[ALL LANGUAGES]/resources/user-guides/index.md being careful not to mess with any indentation
+* Add guide using markdown in the correct category, and in alphabetic order, in ALL LANGUAGES to `/_i18n/[ALL LANGUAGES]/resources/user-guides/index.md` being careful not to mess with any indentation
 * Test/Build
 * Submit PR
 
 ### 2. Make a file
 
-Navigate to the /resources/user-guides folder and make a new file. Be sure the file name has no spaces and the ending is `.md`
+Navigate to the `/resources/user-guides` folder and make a new file. Be sure the file name has no spaces and the ending is `.md`
 
 ### 3. Content of file
 
@@ -213,7 +213,7 @@ If you are copying the structure of another guide, the snippet will be already t
 
 ### 5. Add Guide to the 'User Guide' landing page of EACH LANGUAGE
 
-In the /\_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides folder, find the file labeled index.md and open it.
+In the `/_i18n/[ORIGINAL LANGUAGE OF USER GUIDE]/resources/user-guides` folder, find the file labeled index.md and open it.
 
 DO NOT CHANGE ANYTHING IN THIS DOCUMENT BESIDES WHAT YOU ARE INSTRUCTED TO.
 
@@ -227,7 +227,7 @@ In the event that you think your User Guide should be in a new Category that doe
 
 ### 1. Make a Global file
 
-Navigate to the /resources/moneropedia folder and make a new file. Be sure the file name has no spaces and the ending is .md
+Navigate to the `/resources/moneropedia` folder and make a new file. Be sure the file name has no spaces and the ending is .md
 Fill this file with this exact content:
 
 ```
@@ -248,7 +248,7 @@ Where `ENTRY` is a one word identifier for the title/name of your Moneropedia en
 
 ### 2. Make the localized File
 
-Navigate to the /\_i18n/en/resources/moneropedia folder and make a new file. give it the same <name>.md than in previous step.
+Navigate to the `/_i18n/en/resources/moneropedia` folder and make a new file. give it the same <name>.md than in previous step.
 Start the file with the front Matter:
 
 ```
