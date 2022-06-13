@@ -37,6 +37,10 @@ updatelangs() {
     echo "-> Running po4a on ${guide}"
     po4a $guide || echo "ERROR: something went wrong, po4a didn't run succesfully on ${guide}"
   done
+  for entry in moneropedia/*.config; do
+    echo "-> Running po4a on ${entry}"
+    po4a $entry || echo "ERROR: something went wrong, po4a didn't run succesfully on ${entry}"
+  done
 }
 
 while true; do
