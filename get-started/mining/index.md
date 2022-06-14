@@ -54,7 +54,7 @@ permalink: /get-started/mining/index.html
             <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="info-block text-adapt">
                     <h2>{% t mining.p2poolh %}</h2>
-                        <p>{% t mining.p2poolnew %}</p>
+                        <p>{% t mining.p2poolnew %} <a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">{% t mining.p2poolnew_post%}</a></p>
                         <p>{% t mining.p2poolp %}</p>
                         <h3>{% t mining.p2poolfeatures %}</h3>
                             <ul class="logo">

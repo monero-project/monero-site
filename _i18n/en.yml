@@ -344,10 +344,10 @@ accepting:
     you will see the payments while they arrive in real time in your wallet, along with the number of confirmations.
   guisteps: "These two pages give everybody the possibility to easily receive XMR following these steps:"
   guiol: "Go to the 'Receive' page and create/select the address where you want to receive your coins."
-  guiol1: Share the address composed by letters and numbers to the person you want to receive coins from. You probably prefer to use the more user friendly QR code.
+  guiol1: Share the address composed by letters and numbers to the person you want to receive coins from. You'll probably prefer to use the more user friendly QR code.
   guiol2: "If you want to specify the amount to receive, go to the 'Merchant' page (after you selected in the 'Receive' page the @account that will be used to receive XMR)."
   guiol3: "Insert the amount to receive, then share with the payer the payment URL or the QR code. If you want to track the payment in real time, tick the 'enable sales tracker' option."
-  guiol4: Wait until the payment has arrived and has enough confirmations (The more confirmations, the safer the transaction is. You need at least 10 confirmations before you can spend the funds.).
+  guiol4: Wait until the payment has arrived and has enough confirmations (the more confirmations, the safer the transaction is). You need at least 10 confirmations before you can spend the funds.
   cliinstructions: Instructions for the CLI
   clicreatewallet: >
     When you create your wallet for the first time, an @address will be automatically shown to you. That's your primary address.
@@ -562,7 +562,8 @@ mining:
   supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   p2poolh: "P2Pool: The best of both solo and pool mining"
   p2poolnew: >
-    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">the announcement post</a>.
+    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in
+  p2poolnew_post: the announcement post.
   p2poolp: >
     P2Pool is a sidechain to Monero, and P2Pool blocks are potentially Monero blocks. Each miner submits block templates that include payouts to all of the miners that are mining at the same time (those that currently have shares in the PPLNS window). High quality block templates are added to the P2Pool blockchain as blocks; these count as "shares" for the miner who found them.
   p2poolfeatures: Main features
