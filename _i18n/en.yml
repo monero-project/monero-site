@@ -562,7 +562,8 @@ mining:
   supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   p2poolh: "P2Pool: The best of both solo and pool mining"
   p2poolnew: >
-    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">the announcement post</a>.
+    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in
+  p2poolnew_post: the announcement post.
   p2poolp: >
     P2Pool is a sidechain to Monero, and P2Pool blocks are potentially Monero blocks. Each miner submits block templates that include payouts to all of the miners that are mining at the same time (those that currently have shares in the PPLNS window). High quality block templates are added to the P2Pool blockchain as blocks; these count as "shares" for the miner who found them.
   p2poolfeatures: Main features
