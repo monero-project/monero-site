@@ -25,12 +25,19 @@ permalink: /library/index.html
         <div class="info-block text-adapt">
             <h2>{% t library.cheatsheets %}</h2>
             <div>
-                <h3><a href="MoneroAddressesCheatsheet20201206.pdf">{% t library.moneroaddressescheatsheet20201206 %}</a></h3>
-                    <p>{% t library.moneroaddressescheatsheet20201206p %}</p>
-                <h3><a href="RingsCheatsheet20210301.pdf">{% t library.ringscheatsheet20210301 %}</a></h3>
-                    <p>{% t library.ringscheatsheet20210301p %}</p>
-                <h3><a href="RctCheatsheet20210604.pdf">{% t library.rctcheatsheet20210604 %}</a></h3>
-                    <p>{% t library.rctcheatsheet20210604p %}</p>
+                <h3>{% t library.thesalmonseries %}</h3>
+                    <p>
+                    {% t library.thesalmonseriesp %}
+                    <ul><li>
+                    <a href="MoneroAddressesCheatsheet20201206.pdf">{% t library.moneroaddressescheatsheet20201206 %}</a> - {% t library.moneroaddressescheatsheet20201206p %}
+                    </li><li>
+                    <a href="RingsCheatsheet20210301.pdf">{% t library.ringscheatsheet20210301 %}</a> - {% t library.ringscheatsheet20210301p %}
+                    </li><li>
+                    <a href="RctCheatsheet20210604.pdf">{% t library.rctcheatsheet20210604 %}</a> - {% t library.rctcheatsheet20210604p %}
+                    </li><li>
+                    <a href="ZKbasicsCheatsheet20220621.pdf">{% t library.zkbasicscheatsheet20220621 %}</a> - {% t library.zkbasicscheatsheet20220621p %}
+                    </li></ul>
+                    </p>
             </div>
         </div>
     </section>
