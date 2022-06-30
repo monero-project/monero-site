@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Monero will undergo a network upgrade on 16th July, 2022"
-summary: Announcement of the upcoming network upgrade (16th July, 2022)
+title: "Monero will undergo a network upgrade on 13th August, 2022"
+summary: Announcement of the upcoming network upgrade (13th August, 2022)
 tags: [community, protocol upgrade, core, crypto]
 author: sethforprivacy
 image: /blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png
@@ -11,7 +11,9 @@ image: /blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png
     <img src="{{ page.image }}" width="350px">
 </div>
 
-The next network upgrade will take place on **16th July, 2022** (block 2,668,888). Network upgrades are technically hard-forks and require all participants in the Monero network to update their software. The new software (**v0.18 "Fluorine Fermi"**) will be released one month before the network upgrade, on the **~16th of June**.
+***Note: This blog post has been updated to reflect the new hard-fork date of the 13th of August, 2022, as the release was delayed due to required multi-sig security fixes and hardware wallet firmware delays.***
+
+The next network upgrade will take place on **~13th August, 2022** (block 2,688,888). Network upgrades are technically hard-forks and require all participants in the Monero network to update their software. The new software (**v0.18 "Fluorine Fermi"**) will be released one month before the network upgrade, on the **~13th of July**.
 
 This network upgrade will introduce important new features like:
 
@@ -19,6 +21,7 @@ This network upgrade will introduce important new features like:
 - [Upgraded Bulletproofs algorithm, "Bulletproofs+"](https://www.getmonero.org/2020/12/24/Bulletproofs+-in-Monero.html), which will **reduce the typical transaction size by ~5-7%** and **improve typical verification performance by ~5-7%**, making every transaction lighter and faster
 - [View tags, a brilliant way to **reduce wallet sync times by 30-40%**](https://localmonero.co/knowledge/view-tags-reduce-monero-sync-time)
 - Fee changes, **improving the security and resilience of the network** to rapid changes in the fee market or attacks by malicious entities
+- Major multi-sig fixes and improvements, including critical security patches
 
 The complete list of changes and improvements will be released along with the new binaries.
 
@@ -32,7 +35,7 @@ To learn more about how Monero uses hard-forks to upgrade the network, you can r
 **A:** *No. Hard-forks in Monero are made to improve the base protocol, and are non-contentious. There will be no split and no new coin will be created.*
 
 **Q:** What do I have to do to be prepared for this upgrade?  
-**A:** *A new release will be announced before the network upgrade (around the 16th of June). You will only have to be using the updated software by the time the network upgrade occurs (16th July). To the end user, it will be like a simple software update.*
+**A:** *A new release will be announced before the network upgrade (around the 13th of July). You will only have to be using the updated software by the time the network upgrade occurs (13th August). To the end user, it will be like a simple software update.*
 
 **Q:** How do I update my wallet/node?  
 **A:** *Detailed instructions will be posted along with the software update, but basically users will need to simply replace their previous software (monerod, monero-wallet-cli, monero-wallet-gui) with the new version. That's it.*
