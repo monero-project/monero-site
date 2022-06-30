@@ -35,7 +35,6 @@ A few random points of note:
 - After [a discussion](https://repo.getmonero.org/monero-project/monero-site/issues/982), the community decided to include only open source wallets in the 'Downloads' section of the website. Requests to add closed source wallets to that page will be rejected.
 - Adding and removing exchanges from the 'Merchants & Exchanges' page is at our discretion.
 - All external links must have `https://` in front of them or they will not redirect properly.
-- If you want to add a new page to the navigation, you should go to ALL LANGUAGES in the `_data/lang` folder and add the page.
 
 ### Tor
 
