@@ -11,7 +11,7 @@ image: /blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png
     <img src="{{ page.image }}" width="350px">
 </div>
 
-***Note: This blog post has been updated to reflect the new hard-fork date of the 13th of August, 2022, as the release was delayed due to required multi-sig security fixes and hardware wallet firmware delays.***
+***Note: This blog post has been updated to reflect the new hard-fork date of the 13th of August, 2022, as the release was delayed due to required multi-sig security fixes and hardware wallet-related delays.***
 
 The next network upgrade will take place on **~13th August, 2022** (block 2,688,888). Network upgrades are technically hard-forks and require all participants in the Monero network to update their software. The new software (**v0.18 "Fluorine Fermi"**) will be released one month before the network upgrade, on the **~13th of July**.
 
