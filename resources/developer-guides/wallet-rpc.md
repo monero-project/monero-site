@@ -123,6 +123,13 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 * [sign_multisig](#sign_multisig)
 * [submit_multisig](#submit_multisig)
 * [get_version](#get_version)
+* [freeze](#freeze)
+* [frozen](#frozen)
+* [thaw](#thaw)
+* [sweep_unmixable](#sweep_unmixable)
+* [scan_tx](#scan_tx)
+* [exchange_multisig_keys](#exchange_multisig_keys)
+* [estimate_tx_size_and_weight](#estimate_tx_size_and_weight)
 
 ---
 
@@ -2998,6 +3005,190 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
   "jsonrpc": "2.0",
   "result": {
     "version": 65539
+  }
+}
+```
+
+
+### **freeze**
+
+Freeze a single output by key image so it will not be used
+
+Alias: *None*.
+
+Inputs:
+
+* *key_image* - string;
+
+Outputs:
+
+* *None*
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"freeze","params":{"key_image":"d0071ab34ab7f567f9b54303ed684de6cd5ed969a6b6c4bf352d25242f0b3da9"}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+
+### **frozen**
+
+Checks whether a given output is currently frozen by key image
+
+Alias: *None*.
+
+Inputs:
+
+* *key_image* - string;
+
+Outputs:
+
+* *frozen* - bool;
+
+Example:
+
+```
+curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"frozen","params":{"key_image":"d0071ab34ab7f567f9b54303ed684de6cd5ed969a6b6c4bf352d25242f0b3da9"}}' -H 'Contentt-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "frozen": true
+  }
+}
+```
+
+
+### **thaw**
+
+Thaw a single output by key image so it may be used again
+
+Alias: *None*.
+
+Inputs:
+
+* *key_image* - string;
+
+Outputs:
+
+* *None*
+
+Example:
+
+```
+curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"thaw","params":{"key_image":"d0071ab34ab7f567f9b54303ed684de6cd5ed969a6b6c4bf352d25242f0b3da9"}}' -H 'Contentt-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+  }
+}
+```
+
+### **sweep_unmixable**
+
+Send all unmixable outputs to yourself with ring_size 1
+
+Alias: *sweep_dust*.
+
+Inputs:
+
+* *get_tx_keys* - bool;
+* *do_not_relay* - bool;
+* *get_tx_hex* - bool;
+* *get_tx_metadata* - bool;
+
+Outputs:
+
+* *tx_hash_list* - list;
+* *tx_key_list* - list;
+* *amount_list* - list;
+* *fee_list* - list;
+* *weight_list* - list;
+* *tx_blob_list* - list;
+* *tx_metadata_list* - list;
+* *multisig_txset* - string;
+* *unsigned_txset* - string;
+* *spent_key_images_list* - list;
+
+Example:
+
+```
+curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sweep_unmixable","params":{"get_tx_keys":true,"do_not_relay":false,"get_tx_hex":true,"get_tx_metadata":true}}' -H 'Contentt-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "multisig_txset": "",
+    "unsigned_txset": ""
+  }
+}
+```
+
+
+### **exchange_multisig_keys**
+
+Performs extra multisig keys exchange rounds. Needed for arbitrary M/N multisig wallets
+
+Alias: *None*.
+
+Inputs:
+
+* *password* - string;
+* *multisig_info* - string;
+
+Outputs:
+
+* *address* - string;
+* *multisig_info* - string;
+
+Example:
+
+```
+curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"exchange_multisig_keys","params":{"password":"","multisig_info":"MultisigxV2R1hSyd7Zdx5A92zWF7E9487XQg8zZRDYM6c9aNfEShmCKoUx9ftccXZvH9cRcadd5veh6mwk9sXuGzWZRo57MdvSkJi3ABLt8wZPv8FTkBqVDVcgUdXm4tS81HdJ5WQXboQJJQQd5JKoySKJ4S9xHGojL2i3VUvbWAyduaWGjMK4hrLQA1"}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "address": "55TZyExQSnbiTrJCrgZZucFAmvfyaKK9vMca7tNmzP3NLdykxBrYvdsWPQbM7aw52HQ4VsvBxJDKuKGuuaTZw8DqFdhsJrL",
+    "multisig_info": "MultisigxV2Rn1LVZfU8ySEo1APrEQz2G5jYLLyEabZ8a2KK7C4uak9KT7wCdTjztLy8A9XUiregzXU5STWvNJwuDURA7zuw7wLQxcYaJctpXt1pCUmPQnciHoNd8NcxvYKUCbeAnER2UGcrQFYwrX9ftXLb5mSrfRQ6ieL1PUSfvcw5kV8LCTQvpc5FqMaX5LHU196NDTwEmD9UkYnjgsmgFpGR5ZPpMUr6ky56vHyH"
+  }
+}
+```
+
+
+### **estimate_tx_size_and_weight**
+
+Alias: *None*.
+
+Inputs:
+
+* *n_inputs* - unsigned int;
+* *n_outputs* - unsigned int;
+* *ring_size* - unsigned int;
+* *rct* - bool; Is this a Ring Confidential Transaction (post blockheight 1220516)
+
+Outputs:
+
+* *size* - int;
+* *weight* - int;
+
+Example:
+
+```
+curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"estimate_tx_size_and_weight","params":{"n_inputs":1,"n_outputs":2,"ring_size":16,"rct":true}}' -H 'Contentt-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "size": 1630,
+    "weight": 1630
   }
 }
 ```
