@@ -681,6 +681,7 @@ user-guides:
   make-payment: How to make a payment
   change-restore-height: How to change the wallet restore height
   back: Back to the list
+  scan-txid: How to scan for a missing transaction CLI/GUI
 
 roadmap:
   completed: Completed task
