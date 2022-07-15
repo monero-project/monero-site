@@ -17,6 +17,7 @@ permalink: /community/merchants/index.html
         <ul class="logo">
           <li><a href="https://cryptwerk.com/pay-with/xmr/">cryptwerk.com</a></li>
           <li><a href="https://www.acceptedhere.io/catalog/currency/xmr/">acceptedhere.io</a></li>
+          <li><a href="https://spendabit.co/">spendabit.co</a></li>
         </ul>
       </div>
     </div>
