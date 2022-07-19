@@ -56,6 +56,7 @@ jobs:
                       *cli/win64) filename=monero-win-x64 ;;
                       *cli/win32) filename=monero-win-x86 ;;
                       *cli/mac64) filename=monero-mac-x64 ;;
+                      *cli/macarm8) filename=monero-mac-armv8 ;;
                       *cli/linux64) filename=monero-linux-x64 ;;
                       *cli/linux32) filename=monero-linux-x86 ;;
                       *cli/linuxarm8) filename=monero-linux-armv8 ;;
