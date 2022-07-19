@@ -74,7 +74,7 @@ permalink: /downloads/index.html
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-linux"></span><a class="orange" href="https://downloads.getmonero.org/gui/linux64">Linux 64-bit</a></li>
-                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">Mac OS X 64-bit</a></li>
+                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">macOS Intel</a></li>
                     </ul>
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
@@ -159,7 +159,7 @@ permalink: /downloads/index.html
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-windows"></span><a class="orange" href="https://downloads.getmonero.org/cli/win64">Windows 64-bit</a> | <a class="orange" href="https://downloads.getmonero.org/cli/win32">32-bit</a></li>
-                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/cli/mac64">Mac OS X 64-bit</a></li>
+                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/cli/mac64">macOS Intel</a> | <a class="orange" href="https://downloads.getmonero.org/cli/macarm8">macOS ARM</a></li>
                       <li class="downloads"><span class="icon-android"></span><a class="orange" href="https://downloads.getmonero.org/cli/androidarm8">Android ARMv8</a> | <a class="orange" href="https://downloads.getmonero.org/cli/androidarm7">Android ARMv7</a></li>
                     </ul>
                   </div>

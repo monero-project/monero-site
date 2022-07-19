@@ -405,7 +405,7 @@ contributing:
   mine_link: dedicated Mining page.
   ffs: Community Crowdfunding System
   ccs_p: Monero utilizes a community crowdfunding system whereby projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.
-  ccsbutton: Go the the CCS
+  ccsbutton: Go to the CCS
   donate: Donate
   donate_p: Donations to the general fund are used in case of emergencies or need. Infrastructure costs are currently covered by sponsors.
   genfund: General Fund
@@ -559,10 +559,10 @@ mining:
     There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
   software_para: Note that some miners may have developer fees.
   support: Support
-  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   p2poolh: "P2Pool: The best of both solo and pool mining"
   p2poolnew: >
-    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">the announcement post</a>.
+    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="/2021/10/05/p2pool-released.html">the announcement post</a>.
   p2poolp: >
     P2Pool is a sidechain to Monero, and P2Pool blocks are potentially Monero blocks. Each miner submits block templates that include payouts to all of the miners that are mining at the same time (those that currently have shares in the PPLNS window). High quality block templates are added to the P2Pool blockchain as blocks; these count as "shares" for the miner who found them.
   p2poolfeatures: Main features
@@ -581,7 +581,7 @@ what-is-monero:
   leading_para1: The majority of existing @cryptocurrencies, including Bitcoin and Ethereum, have transparent @blockchains. Transactions can be verified and/or traced by anyone in the world. This means that the sending and receiving @addresses of these @transactions could potentially be linked to real-world identities.
   leading_para2: Monero, on the other hand, uses various privacy-enhancing technologies to ensure the anonymity of its users. 
   confidential: Monero transactions are confidential and untraceable.
-  confidential_para1: "Unlike selectively transparent alternatives (e.g. Zcash), Monero is the only cryptocurrency where every user is anonymous by default. The sender, receiver, and amount of every single transaction are hidden through the use of three important technologies: @Stealth-Addresses, @Ring-Signatures, and @RingCT."
+  confidential_para1: "Unlike selectively transparent alternatives (e.g. Zcash), Monero is the only major cryptocurrency where every user is anonymous by default. The sender, receiver, and amount of every single transaction are hidden through the use of three important technologies: @Stealth-Addresses, @Ring-Signatures, and @RingCT."
   confidential_para2: Because every transaction is private, Monero cannot be traced. This makes it a true, @fungible currency. Merchants and individuals accepting Monero do not need to worry about blacklisted or tainted coins.
   grassroots: Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.
   grassroots_p1: The Monero Project is at the forefront of cryptocurrency privacy and security. Its 

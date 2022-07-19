@@ -13,7 +13,7 @@ gui:
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
-   - platform: Mac OS X 64-bit
+   - platform: macOS Intel
      hash: acaabe36002ae66bee4d4ded1fbcca4b34688cb702231aea26afe49f3f284fbe
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
@@ -45,9 +45,14 @@ cli:
      link: https://downloads.getmonero.org/cli/win32
      icon: icon-windows
      vers:
-   - platform: Mac OS X 64-bit
+   - platform: macOS Intel
      hash: 3631f84739ef73d0105d902639c75d66921da6c8dff5487e01a11bf523dd0cae
      link: https://downloads.getmonero.org/cli/mac64
+     icon: icon-apple
+     vers:
+   - platform: macOS ARM
+     hash:
+     link: https://downloads.getmonero.org/cli/macarm8
      icon: icon-apple
      vers:
    - platform: Linux 64-bit

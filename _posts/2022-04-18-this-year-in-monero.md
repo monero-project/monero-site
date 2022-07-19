@@ -87,7 +87,7 @@ Monero's blockchain size grew ***144%*** faster YoY.
 
 ### Year over Year Change
 
-Monero's inflation decreased ***34.3%*** YoY and is steadily approaching the [tail emission](https://localmonero.co/knowledge/monero-tail-emission) of ***0.6XMR*** per block!
+Monero's annual inflation decreased ***34.3%*** YoY while daily emission dropped ***42.96%*** and is rapidly approaching the [tail emission](https://localmonero.co/knowledge/monero-tail-emission) of ***0.6XMR*** per block!
 
 ## Fees
 
