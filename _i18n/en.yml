@@ -150,7 +150,7 @@ merchants:
   visitlocalmonero: Visit LocalMonero
   visithodlhodl: Visit HodlHodl
   centrexchanges: Centralized exchanges (CEXs) & Swappers
-  centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
+  centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones. You can see the full list of exchanges trading XMR on <a href="https://www.coingecko.com/en/coins/monero#markets">CoinGecko</a>.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.
   swappersp: Swappers let users exchange XMR for other cryptocurrencies.
 
