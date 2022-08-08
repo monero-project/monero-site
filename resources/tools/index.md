@@ -46,7 +46,7 @@ permalink: /resources/tools/index.html
                         <h2>{% t tools.network %}</h2>
                         <p><a href="https://monerohash.com/nodes-distribution.html">monerohash.com - {% t tools.monerohash-nodes %}</a></p>
                         <p><a href="https://localmonero.co/blocks/">LocalMonero.co blocks - {% t tools.localmonero-blocks %}</a></p>
-                        <p><a href="https://nownodes.io/connect-xmr-node">NOWNodes - {% t tools.nownodes %}</a></p>
+                        <p><a href="https://nownodes.io/nodes/monero-xmr">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
                         <p><a href="https://monero.fail/">Monero.fail - {% t tools.monerofail %}</a></p>
                         <p><a href="https://txstreet.com/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
@@ -59,7 +59,6 @@ permalink: /resources/tools/index.html
                 <div class="row">
                     <div class="col">
                         <h2>{% t tools.market %}</h2>
-                        <p><a href="https://www.backtestking.com/">Backtestking - {% t tools.backtestking %}</a></p>
                         <p><a href="https://cryptofacile.io">cryptoFacile - {% t tools.cryptofacile %}</a></p>
                         <p><a href="https://cryptoradar.co/buy-monero">Cryptoradar - {% t tools.cryptoradar %}</a></p>
                         <p><a href="https://kryptocheck.de">KryptoCheck - {% t tools.kryptocheck %}</a></p>
@@ -76,7 +75,6 @@ permalink: /resources/tools/index.html
                         <h2>{% t tools.misc %}</h2>
                         <p><a href="https://www.monero.how/">Monero.how - {% t tools.monerohow-stats %}</a></p>
                         <p><a href="https://moneroj.net/sfmodel/">Monero Pro - {% t tools.moneropro %}</a></p>
-                        <p><a href="https://monerobase.com">MoneroBase - {% t tools.monerobase %}</a></p>
                         <p><a href="https://libera.monerologs.net/">MoneroLogs - {% t tools.monerologs %}</a></p>
                     </div>
                 </div>
@@ -94,7 +92,6 @@ permalink: /resources/tools/index.html
                         <p><a href="https://github.com/monero-integrations/monerowp">Monero WooCommerce Extension (PHP)</a></p>
                         <p><a href="https://nowpayments.io/">NOWPayments</a></p>
                         <p><a href="https://swirlpay.io/">SwirlPay</a></p>
-                        <p><a href="https://vigla.biz/">Vigla</a></p>
                     </div>
                 </div>
             </div>
