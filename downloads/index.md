@@ -124,10 +124,10 @@ permalink: /downloads/index.html
                   <p>{% t downloads.helpsupport1 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/releases" target="_blank">{% t downloads.helpsupport2 %}</a>.</p>
                   <p>{% t downloads.gui_helpsupport %}.</p>
                   </div>
-                </div>    
+                </div>
             </div>
           </div>
-        {% endfor %}  
+        {% endfor %}
         </div>
         <!-- End 'GUI Wallet' -->
         <!-- 'CLI Wallet' -->
@@ -219,7 +219,7 @@ permalink: /downloads/index.html
                 </div>
             </div>
           </div>
-        {% endfor %}  
+        {% endfor %}
         </div>
       </section>
       <!-- End 'CLI Wallet' -->
@@ -240,6 +240,12 @@ permalink: /downloads/index.html
                             <th>{% t downloads.mobile %}</th>
                             <th>{% t downloads.desktop %}</th>
                             <th>{% t downloads.sourcecode %}</th>
+                        </tr>
+                        <tr>
+                            <td><img class="small" src="/img/guarda.png" width="389" height="500" loading="lazy" alt="Guarda Wallet Logo"><a href="https://guarda.com/coins/monero-wallet/">Guarda</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://github.com/guardaco" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
                             <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
@@ -349,7 +355,7 @@ permalink: /downloads/index.html
                                         <ul>
                                             <li>{% t downloads.hwnanos %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
-                                        </ul>     
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
@@ -385,7 +391,7 @@ permalink: /downloads/index.html
                                             <li>Monero CLI</li>
                                             <li>Feather</li>
                                             <li>Monerujo</li>
-                                        <b>{% t downloads.hwthfirm %}:</b> 
+                                        <b>{% t downloads.hwthfirm %}:</b>
                                             <li>{% t downloads.hwnanos %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
                                     </ul>
@@ -397,13 +403,13 @@ permalink: /downloads/index.html
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
                                             <li>Feather</li>
-                                        <b>{% t downloads.hwthfirm %}:</b> 
+                                        <b>{% t downloads.hwthfirm %}:</b>
                                             <li>{% t downloads.hwtrezor %}</li>
                                     </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>        
+                        </div>
                 </div>
                 <!-- End 'Hardware Wallets' -->
             </section>
