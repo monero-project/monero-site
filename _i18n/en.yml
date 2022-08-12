@@ -286,6 +286,7 @@ downloads:
   hwnanox: "Nano X: 1.2.4-4"
   hwtrezor: "2.3.4"
   hwmobmodels: "Models that support Monero:"
+  noteleak: "* These wallets might ping their servers by default, potentially leaking the IP address of the user and other sensitive data."
 
 press-kit:
   intro: On this page you'll find press contacts, symbols and logos.
