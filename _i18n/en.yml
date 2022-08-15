@@ -283,6 +283,7 @@ downloads:
   hwthsupported: Wallets
   hwthfirm: Min. firmware version
   hwnanos: "Nano S: 1.6.1"
+  hwnanosp: "Nano S Plus: 1.0.3"
   hwnanox: "Nano X: 1.2.4-4"
   hwtrezor: "2.3.4"
   hwmobmodels: "Models that support Monero:"
