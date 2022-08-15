@@ -1,0 +1,29 @@
+---
+name: Validate Auto Updater
+on:
+  push:
+    paths:
+      - 'downloads/hashes.txt.sig'
+  pull_request:
+    paths:
+      - 'downloads/hashes.txt.sig'
+jobs:
+  validate-auto-updater:
+    name: Validate Auto Updater
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: |
+          sudo apt -y install xvfb libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xkb1 libxcb-shape0 libxkbcommon-x11-0
+          wget -nv https://dlsrc.getmonero.org/gui/monero-gui-linux-x64-v0.18.0.0.tar.bz2
+          tar -xf monero-gui-linux-x64-v0.18.0.0.tar.bz2
+          mv monero-gui-v0.18.0.0/monero-wallet-gui .
+          rm -rf monero-gui-linux-x64-v0.18.0.0.tar.bz2 monero-gui-v0.18.0.0
+      - name: Verify update
+        run: |
+          version_gui=$(awk '/monero-gui-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
+          wget -nv https://dlsrc.getmonero.org/gui/monero-gui-linux-x64-$version_gui.tar.bz2
+          cp downloads/hashes.txt .
+          cp downloads/hashes.txt.sig .
+          xvfb-run -a ./monero-wallet-gui --verify-update monero-gui-linux-x64-$version_gui.tar.bz2
