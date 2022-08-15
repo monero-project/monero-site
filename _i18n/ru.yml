@@ -425,7 +425,7 @@ downloads:
   wallet: Кошелёк
   releasenotes: примечания к выпуску
   hwmobmodels: 'Модели, поддерживающие Monero:'
-  hwtrezor: 2.3.4
+  hwtrezor: "2.5.2"
   hwnanox: 'Nano X: 1.2.4-4'
   hwnanos: 'Nano S: 1.6.1'
   hwthfirm: Минимальная версия прошивки

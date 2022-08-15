@@ -375,7 +375,7 @@ downloads:
   hwthfirm: Versión de firmware mínima
   hwnanos: 'Nano S: 1.6.1'
   hwnanox: 'Nano X: 1.2.4-4'
-  hwtrezor: 2.3.4
+  hwtrezor: "2.5.2"
   hwmobmodels: 'Modelos que soportan Monero:'
   cli_intro0: Un monedero de interfaz de linea de comandos (CLI) de código abierto
     desarrollado por la comunidad de Monero, completamente libre de usar, adecuado

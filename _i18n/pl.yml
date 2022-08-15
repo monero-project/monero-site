@@ -404,7 +404,7 @@ downloads:
   releasenotes: informacje do wersji
   showhash4: 'Dwa poradniki są dostępne, by poprowadzić cię przez proces weryfikacji:'
   hwmobmodels: 'Modele, które obsługują Monero:'
-  hwtrezor: 2.3.4
+  hwtrezor: "2.5.2"
   hwnanox: 'Nano X: 1.2.4-4'
   hwnanos: 'Nano S: 1.6.1'
   hwthfirm: Minimalna wersja firmware

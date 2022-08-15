@@ -284,7 +284,7 @@ downloads:
   hwthfirm: Min. firmware version
   hwnanos: "Nano S: 1.6.1"
   hwnanox: "Nano X: 1.2.4-4"
-  hwtrezor: "2.3.4"
+  hwtrezor: "2.5.2"
   hwmobmodels: "Models that support Monero:"
 
 press-kit:
