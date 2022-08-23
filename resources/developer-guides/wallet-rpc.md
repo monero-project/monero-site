@@ -1714,9 +1714,9 @@ Alias: *None*.
 Inputs:
 
 * *all* - boolean; Proves all wallet balance to be disposable.
-* *account_index* - unsigned int; Specify the account from witch to prove reserve. (ignored if `all` is set to true)
-* *amount* - unsigned int; Amount (in @atomic-units) to prove the account has for reserve. (ignored if `all` is set to true)
-* *message* - string; (Optional) add a message to the signature to further authenticate the prooving process.
+* *account_index* - unsigned int; Specify the account from which to prove reserve. (ignored if `all` is set to true)
+* *amount* - unsigned int; Amount (in @atomic-units) to prove the account has in reserve. (ignored if `all` is set to true)
+* *message* - string; (Optional) add a message to the signature to further authenticate the proving process. If a _message_ is added to `get_reserve_proof` (optional), this message will be required when using `check_reserve_proof`
 
 Outputs:
 
@@ -1745,7 +1745,7 @@ Alias: *None*.
 Inputs:
 
 * *address* - string; Public address of the wallet.
-* *message* - string; (Optional) Should be the same message used in `get_reserve_proof`.
+* *message* - string; If a _message_ was added to `get_reserve_proof` (optional), this message will be required when using `check_reserve_proof`
 * *signature* - string; reserve signature to confirm.
 
 Outputs:
