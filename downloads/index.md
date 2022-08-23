@@ -251,7 +251,7 @@ permalink: /downloads/index.html
                             <td><img class="small" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather logo"><a href="https://featherwallet.org/">Feather</a></td>
                             <td>X</td>
                             <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://git.featherwallet.org/feather/feather" aria-label="Git icon"><span class="icon-git"></span></a></td>
+                            <td><a class="ext-noicon" href="https://github.com/feather-wallet/feather" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
                             <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
