@@ -157,6 +157,7 @@ merchants:
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
   tari: Tari Labs sponsors the CDN used by this website.
+  mbank: MajesticBank sponsors the hosting used by this website.
   symas: Symas sponsors its CTO Howard Chu (hyc) for his work on the Monero codebase.
   forknetworking: Fork Networking provides a server which is used for development.
   macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
