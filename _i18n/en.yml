@@ -277,15 +277,14 @@ downloads:
   localsyncinfo: These wallets connect to @remote-nodes and scan the @blockchain on your device, without sharing any key with the nodes. They provide higher privacy, but require more time synchronizing, since missing @blocks will be scanned only when the wallet is opened.
   remotesync: Remote synchronization (lightweight)
   remotesyncinfo: These wallets share your private @view-key with a remote server, which continuously scans the blockchain looking for your transactions. They are faster to use, but your privacy can be lessened if you don't control the remote server.
-  hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano S/X and Trezor Model T."
+  hwdesc: "Hardware wallets are cryptographically secure devices that help keep your coins safe. Monero is currently supported by Ledger Nano and Trezor Model T."
   hwth: Hardware Wallet
   instructions: Usage instructions
   hwthmodel: Model(s)
   hwthsupported: Wallets
   hwthfirm: Min. firmware version
-  hwnanos: "Nano S: 1.6.1"
-  hwnanox: "Nano X: 1.2.4-4"
-  hwtrezor: "2.3.4"
+  hwledger: "1.8.0"
+  hwtrezor: "2.5.2"
   hwmobmodels: "Models that support Monero:"
 
 press-kit:
