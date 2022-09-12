@@ -96,6 +96,12 @@ permalink: /community/merchants/index.html
             <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD*)</li>
           </ul>
           <p>*Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
+        <h3>Aggregators</h3>
+        <p>{% t merchants.aggregatorsp %}</p>
+        <ul class="logo">
+            <li><a href="https://swapzone.io/">Swapzone.io</a></li>
+            <li><a href="https://orangefren.com/">Orangefren</a></li>
+          </ul>
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
