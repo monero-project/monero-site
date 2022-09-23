@@ -11,7 +11,7 @@ Hash: SHA256
 696db3a95d541569375c3dab331bbd08e8c6acd30cb1c74f2ebae8c377cba6fd  monero-android-armv7-v0.18.1.1.tar.bz2
 e521a881e146530b4c2af35153e49c755cb31139c06bfa62e3f5b0dd91cc9602  monero-android-armv8-v0.18.1.1.tar.bz2
 5372efd08180485ce24cd69d036365b43d1c2f4bd2b506d5e51c5795cffd6d26  monero-freebsd-x64-v0.18.1.1.tar.bz2
-c8cbf9cdfb89f1b2c5f6599ceb715ece69bd99f9ce669953d6768d7c7aa6963b  monero-linux-armv7-v0.18.1.1.tar.bz2gs
+c8cbf9cdfb89f1b2c5f6599ceb715ece69bd99f9ce669953d6768d7c7aa6963b  monero-linux-armv7-v0.18.1.1.tar.bz2
 e9b7e1dd0e70309d52be66240a43bddadc64eac1ed3a5aad17cfa1609ea424c1  monero-linux-armv8-v0.18.1.1.tar.bz2
 937dfcc48d91748dd2e8f58714dfc45d17a0959dff33fc7385bbe06344ff2c16  monero-linux-x64-v0.18.1.1.tar.bz2
 43fe3a76f1fa13d1ac57095d4e32fe2b31bf20dde67ba1de7335a7c0fcdd03b1  monero-linux-x86-v0.18.1.1.tar.bz2
@@ -32,17 +32,17 @@ ed2a74739e2a01185712af5f898a3341f09d58195e22f03a6e4630e8e1e17fc0  monero-gui-mac
 # ~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmMoyvYACgkQ8K9NRioL
-35JYzRAAtLhrsUw9tsiyYN0vBrSt0FdRwqe+13HckwgbEM/rjOPdj85rcHXzYwQ6
-ob7ttZizfAspmtN8Zx6jpG1MWGdBT2NAAJs3Q3wJzV+41H2N5JWRTru/1eOxkE5T
-J/kwH956/ADyoLM/FmAvPw02Guz9psL7vUXmVgetheeb98B0ld9okW5DR87ru833
-hfy6FqnjcdshZpVExsoop89D470ew7s3NJ9q/mEnix8g6r5six8zPGWVgrqsdQDb
-wDkWkzZWWqQpryDpsj9+3vIAMyf2hIbJDz8Li6GAo5+BEdngMXNfhLMbkm4TFP2o
-nKLL3o/CBw+8GGrfOpshTMzEvX6+ry20Vvc+lvZ5tROJLrO/qNdaP7EzDcDY0HkY
-4gIaKQ5wqhXA+cQ4cJcRXtOj+UtpyX8HBdaYREl9H2uFAC4uspF2C4p5JwkxJGgx
-JOWchqc493ogPOpaQOz2pNh6eQCMIfscojWdKeRGZpmkeCiRDh1ereV2kTgkMHaq
-ynhHaIHHzDyoN6Kx6T7DQEvgchNfYvrpY6dgPw7U+q1tvzheKAmOVFQGEByFJuCP
-3tpKpEkAIvbLR6eDfQ9px4pOwW1/z1dKBWwCb9uTwFLS/yXrObuaEUUuW6Dqec+f
-RRZ8zdI6zHPuM5jx2A+wQxQX7FDTsqu8mPXPZq17Qzy4nTk/6yY=
-=8U9F
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmMtuhIACgkQ8K9NRioL
+35Kx4hAAtRMOIbd7u96AjNoTwlZcf/lTDtKUpRiGJxXA4gQVAbAWbmgH6luDXFwQ
+Wn+grbIJryz+h82EwXSP1QO57h7D5qs6guoGl5jUUGTmlxkgKYjIRl8af58rI3QE
+3sjg6a9DP1d9w2q9JtOY6ZQFahdKpzCbwMCCMHsi/plZAHhWvrFRD5ECH3kGQ7S8
+vchJDn0C8qDhA9cQQRf5+XmfaZmm3rs5SS3q+bCDw/MWZ33g7V1BNfyqPNYzWdSk
+Eo0dhK/YPHB66r16ySTTh7RDeTWSXYyzARo/zgAolItLpUeWsAukgGDWGdQa4xI2
+2cDDBtOzUtrdDM65pIm5SaNkUlCBqgLzD0Y0Gx2jkJyuAPyWiontB3Dwn63Q/oTt
+hqkVlaxzKBqdGhYckO6gSVx8tBkD1lNUCCMUI9f2a0f29vpHyQOEjmghKtnqh01a
+od1rl0pQcLm8jkg3nAy4Go9jTFspA1e+N9GVTFI6xFMUEDwFSMwEBgliXl6lr5YF
+iRr8mueXfhZD1ZrCWRvlHU9yPlRjRGZLNTBwkFlBOSoXKBI/Zitf5zeEKbWI9aHT
+E/kRvuoOf+qM7m0ssi1Zfm1dE+YJcZFdt3DjuHrbxcJVDlpzI9fuTQEDvub2IVXR
+3lXRw8EoJlFPNqdGuAJr4Ukdw7wVlVNJepbAbS/SZ7CXnHuVFks=
+=l5Yd
 -----END PGP SIGNATURE-----
