@@ -31,7 +31,6 @@ permalink: /resources/tools/index.html
                 <div class="row">
                     <div class="col">
                         <h2>{% t tools.address-generators %}</h2>
-                        <p><a href="https://moneroaddress.org/">moneroaddress.org</a></p>
                         <p><a href="https://xmr.llcoins.net/">xmr.llcoins.net</a></p>
                     </div>
                 </div>
