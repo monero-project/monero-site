@@ -801,7 +801,15 @@ roadmap:
   p2pool: P2Pool released
   haveno: Haveno
 
-
+  ringsize-sera-tryp: increase ring size to >100
+  seraphis-jamtis: Seraphis & jamtis
+  ospead: OSPEAD
+  released-0-18: CLI and GUI 0.18 "Flourine Fermi" released
+  hardfork-v15: Network upgrade v15 Hardfork
+  xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
+  bp++: Bulletproofs++
+  lws-subaddress: Light Wallet Server subaddress support
+   
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
   intro_email: "To contact the Monero Research Lab, please email lab@getmonero.org."
