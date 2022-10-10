@@ -169,19 +169,26 @@ Inputs:
 
 * *account_index* - unsigned int; Return balance for this account.
 * *address_indices* - array of unsigned int; (Optional) Return balance detail for those subaddresses.
+* *all_accounts* - boolean; (Defaults to false)
+* *strict* - boolean; (Defaults to false) all changes go to 0-th subaddress (in the current subaddress account)
 
 Outputs:
 
 * *balance* - unsigned int; The total balance of the current monero-wallet-rpc in session.
 * *unlocked_balance* - unsigned int; Unlocked funds are those funds that are sufficiently deep enough in the Monero blockchain to be considered safe to spend.
 * *multisig_import_needed* - boolean; True if importing multisig data is needed for returning a correct balance.
+* *time_to_unlock* - unsigned int; Time (in seconds) before balance is safe to spend.
+* *blocks_to_unlock* - unsigned int; Number of blocks before balance is safe to spend.
 * *per_subaddress* - array of subaddress information; Balance information for each subaddress in an account.
+  * *account_index* - unsigned int;
   * *address_index* - unsigned int; Index of the subaddress in the account.
   * *address* - string; Address at this index. Base58 representation of the public keys.
   * *balance* - unsigned int; Balance for the subaddress (locked or unlocked).
   * *unlocked_balance* - unsigned int; Unlocked balance for the subaddress.
   * *label* - string; Label for the subaddress.
   * *num_unspent_outputs* - unsigned int; Number of unspent outputs available for the subaddress.
+  * *time_to_unlock* - unsigned int;
+  * *blocks_to_unlock* - unsigned int;
 
 Example:
 
@@ -192,22 +199,30 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
   "jsonrpc": "2.0",
   "result": {
     "balance": 157443303037455077,
+    "blocks_to_unlock": 0,
     "multisig_import_needed": false,
     "per_subaddress": [{
+      "account_index": 0,
       "address": "55LTR8KniP4LQGJSPtbYDacR7dz8RBFnsfAKMaMuwUNYX6aQbBcovzDPyrQF9KXF9tVU6Xk3K8no1BywnJX6GvZX8yJsXvt",
       "address_index": 0,
       "balance": 157360317826255077,
+      "blocks_to_unlock": 0,
       "label": "Primary account",
       "num_unspent_outputs": 5281,
+      "time_to_unlock": 0,
       "unlocked_balance": 157360317826255077
     },{
+      "account_index": 0,
       "address": "7BnERTpvL5MbCLtj5n9No7J5oE5hHiB3tVCK5cjSvCsYWD2WRJLFuWeKTLiXo5QJqt2ZwUaLy2Vh1Ad51K7FNgqcHgjW85o",
       "address_index": 1,
       "balance": 59985211200000,
+      "blocks_to_unlock": 0,
       "label": "",
       "num_unspent_outputs": 1,
+      "time_to_unlock": 0,
       "unlocked_balance": 59985211200000
     }],
+    "time_to_unlock": 0,
     "unlocked_balance": 157443303037455077
   }
 }
