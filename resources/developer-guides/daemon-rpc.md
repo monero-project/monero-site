@@ -40,6 +40,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [sync_info](#sync_info)
 * [get_txpool_backlog](#get_txpool_backlog)
 * [get_output_distribution](#get_output_distribution)
+* [get_miner_data](#get_miner_data)
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -1423,6 +1424,59 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     }],
     "status": "OK"
   }
+}
+```
+
+
+### **get_miner_data**
+
+Provide the necessary data to create a custom block template. They are used by p2pool.
+
+Inputs: *None*.
+
+Outputs:
+
+* *major_version* - unsigned int; major fork version.
+* *height* - unsigned int; current blockheight.
+* *prev_id* - string; previous block id.
+* *seed_hash* - string; RandomX seed hash.
+* *difficulty* - unsigned int; network. difficulty.
+* *median_weight* - unsigned int; median block weight.
+* *already_generated_coins* - unsigned int; coins mined by the network so far
+mineable mempool transactions.
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *tx_backlog* - array of mineable mempool transactions.
+  * *id* - string;
+  * *weight* - unsigned int; 
+  * *fee* - unsigned int;
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_miner_data"}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "already_generated_coins": 18186022843595960691,
+    "difficulty": "0x48afae42de",
+    "height": 2731375,
+    "major_version": 16,
+    "median_weight": 300000,
+    "prev_id": "78d50c5894d187c4946d54410990ca59a75017628174a9e8c7055fa4ca5c7c6d",
+    "seed_hash": "a6b869d50eca3a43ec26fe4c369859cf36ae37ce6ecb76457d31ffeb8a6ca8a6",
+    "status": "OK",
+    "tx_backlog": [{
+      "fee": 30700000,
+      "id": "9868490d6bb9207fdd9cf17ca1f6c791b92ca97de0365855ea5c089f67c22208",
+      "weight": 1535
+    },{
+      "fee": 44280000,
+      "id": "b6000b02bbec71e18ad704bcae09fb6e5ae86d897ced14a718753e76e86c0a0a",
+      "weight": 2214
+    }],
+    "untrusted": false
 }
 ```
 
