@@ -21,6 +21,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [on_get_block_hash](#on_get_block_hash)
 * [get_block_template](#get_block_template)
 * [submit_block](#submit_block)
+* [generateblocks](#generateblocks)
 * [get_last_block_header](#get_last_block_header)
 * [get_block_header_by_hash](#get_block_header_by_hash)
 * [get_block_header_by_height](#get_block_header_by_height)
@@ -247,6 +248,38 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"s
 }
 ```
 
+### **generateblocks**
+
+Generate a block and specify the address to receive the coinbase reward.
+
+Inputs:
+* *amount_of_blocks* - unsigned int; number of blocks to be generated.
+* *wallet_address* - string; address to receive the coinbase reward.
+* *prev_block* - string;
+* *starting_nonce* - unsigned int; Increased by miner untill it finds a matching result that solves a block.
+
+Outputs:
+* *blocks* - list of string;
+* *height* - unsigned int;
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+The example below uses monerod with the start flags `--regtest --offline --fixed-difficulty 1`. `--offline` ensures that the node does not connect to the main network and learn of its latest chaintip and `--fixed-difficulty` keeps the difficulty constant, allowing a large number of blocks to be generated quickly.
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"generateblocks","params":{"amount_of_blocks":1,"wallet_address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","starting_nonce": 0}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "blocks": ["49b712db7760e3728586f8434ee8bc8d7b3d410dac6bb6e98bf5845c83b917e4"],
+    "height": 9783,
+    "status": "OK",
+    "untrusted": false
+  }
+}
+```
 
 ### **get_last_block_header**
 
