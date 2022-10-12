@@ -40,6 +40,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [sync_info](#sync_info)
 * [get_txpool_backlog](#get_txpool_backlog)
 * [get_output_distribution](#get_output_distribution)
+* [calc_pow](#calc_pow)
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -1423,6 +1424,36 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     }],
     "status": "OK"
   }
+}
+```
+
+
+### **calc_pow**
+
+Calculate PoW hash for a block candidate.
+
+Alias: *None*.
+
+Inputs:
+
+* *major_version* - unsigned int; The major version of the monero protocol at this block height.
+* *height* - unsigned int;
+* *block_blob* - blobdata;
+* *seed_hash* - string;
+
+Outputs:
+
+* *result* - string; PoW hash.
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"calc_pow","params":{"major_version":14,"height":2286447,"block_blob":"0e0ed286da8006ecdc1aab3033cf1716c52f13f9d8ae0051615a2453643de94643b550d543becd0000000002abc78b0101ffefc68b0101fcfcf0d4b422025014bb4a1eade6622fd781cb1063381cad396efa69719b41aa28b4fce8c7ad4b5f019ce1dc670456b24a5e03c2d9058a2df10fec779e2579753b1847b74ee644f16b023c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051399a1bc46a846474f5b33db24eae173a26393b976054ee14f9feefe99925233802867097564c9db7a36af5bb5ed33ab46e63092bd8d32cef121608c3258edd55562812e21cc7e3ac73045745a72f7d74581d9a0849d6f30e8b2923171253e864f4e9ddea3acb5bc755f1c4a878130a70c26297540bc0b7a57affb6b35c1f03d8dbd54ece8457531f8cba15bb74516779c01193e212050423020e45aa2c15dcb","seed_hash":"d432f499205150873b2572b5f033c9c6e4b7c6f3394bd2dd93822cd7085e7307"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": "d0402d6834e26fb94a9ce38c6424d27d2069896a9b8b1ce685d79936bca6e0a8"
 }
 ```
 
