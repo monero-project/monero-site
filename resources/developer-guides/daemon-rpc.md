@@ -40,6 +40,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [sync_info](#sync_info)
 * [get_txpool_backlog](#get_txpool_backlog)
 * [get_output_distribution](#get_output_distribution)
+* [flush_cache](#flush_cache)
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -1422,6 +1423,38 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
       "start_height": 1462078
     }],
     "status": "OK"
+  }
+}
+```
+
+
+### **flush_cache**
+
+Flush bad transactions / blocks from the cache.
+
+Alias: *None*.
+
+Inputs:
+
+* *bad_txs* - boolean; Optional (`false` by default).
+* *bad_blocks* - boolean; Optional (`false` by default).
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_cache","params":{"bad_txs":true,"bad_blocks":true}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "status": "OK",
+    "untrusted": false
   }
 }
 ```
