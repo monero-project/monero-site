@@ -74,6 +74,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/stop_save_graph](#stop_save_graph)
 * [/get_outs](#get_outs)
 * [/update](#update)
+* [/pop_blocks](#pop_blocks)
 
 
 ---
@@ -2661,5 +2662,32 @@ $ curl http://127.0.0.1:18081/update -d '{"command":"check"}' -H 'Content-Type: 
   "update": false,
   "user_uri": "",
   "version": ""
+}
+```
+
+
+### **pop_blocks**
+
+Alias: *None*.
+
+Inputs:
+
+* *nblocks* - unsigned int;
+
+Outputs:
+
+* *height* - unsigned int; New blockheight after popping blocks
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/pop_blocks -d '{"nblocks":6}' -H 'Content-Type: application/json''
+
+{
+  "height": 76482,
+  "status": "OK",
+  "untrusted": false
 }
 ```
