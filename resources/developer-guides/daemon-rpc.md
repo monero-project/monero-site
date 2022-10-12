@@ -40,6 +40,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [sync_info](#sync_info)
 * [get_txpool_backlog](#get_txpool_backlog)
 * [get_output_distribution](#get_output_distribution)
+* [banned](#banned)
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -1421,6 +1422,39 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
       "distribution": "",
       "start_height": 1462078
     }],
+    "status": "OK"
+  }
+}
+```
+
+
+### **banned**
+
+Check if an IP address is banned and for how long.
+
+Alias: *None*
+
+Inputs:
+
+* *address* - string;
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *banned* - boolean;
+* *seconds* - unsigned int;
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"banned","params":{"address":"95.216.203.255"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "banned": true,
+    "seconds": 690413,
     "status": "OK"
   }
 }
