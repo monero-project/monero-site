@@ -61,6 +61,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/set_log_hash_rate](#set_log_hash_rate)
 * [/set_log_level](#set_log_level)
 * [/set_log_categories](#set_log_categories)
+* [/set_bootstrap_daemon](#set_bootstrap_daemon)
 * [/get_transaction_pool](#get_transaction_pool)
 * [/get_transaction_pool_hashes.bin](#get_transaction_pool_hashesbin)
 * [/get_transaction_pool_stats](#get_transaction_pool_stats)
@@ -2213,6 +2214,36 @@ $ curl http://127.0.0.1:18081/set_log_categories -H 'Content-Type: application/j
   "categories": "*:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO",
   "status": "OK"
   "untrusted": false
+}
+```
+
+
+### **/set_bootstrap_daemon**
+
+Give immediate usability to wallets while syncing by proxying RPC requests.
+
+Alias: *None*.
+
+Inputs:
+
+* *address* - string; host:port
+* *username* - string;
+* *password* - string;
+* *proxy* - string; 
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+
+Example:
+
+Once set, the address will appear in `get_info` as `bootstrap_daemon_address`
+
+```
+$ curl http://127.0.0.1:18081/set_bootstrap_daemon -d '{"address": "http://getmonero.org:18081"}' -H 'Content-Type: application/json'
+
+{
+  "status": "OK"
 }
 ```
 
