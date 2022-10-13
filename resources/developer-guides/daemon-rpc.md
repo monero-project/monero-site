@@ -31,6 +31,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [hard_fork_info](#hard_fork_info)
 * [set_bans](#set_bans)
 * [get_bans](#get_bans)
+* [flush_txpool](#flush_txpool)
 * [get_output_histogram](#get_output_histogram)
 * [get_version](#get_version)
 * [get_coinbase_tx_sum](#get_coinbase_tx_sum)
