@@ -70,6 +70,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/set_limit](#set_limit)
 * [/out_peers](#out_peers)
 * [/in_peers](#in_peers)
+* [/get_net_stats](#get_net_stats)
 * [/start_save_graph](#start_save_graph)
 * [/stop_save_graph](#stop_save_graph)
 * [/get_outs](#get_outs)
@@ -2549,6 +2550,39 @@ $ curl http://127.0.0.1:18081/out_peers -d '{"in_peers": 3232235535}' -H 'Conten
 {
   "in_peers": 3232235535,
   "status": "OK",
+  "untrusted": false
+}
+```
+
+
+### **/get_net_stats**
+
+Alias: *None*.
+
+Inputs: *None*.
+
+Outputs:
+
+* *start_time* - unsigned int; Unix start time.
+* *total_packets_in* - unsigned int;
+* *total_bytes_in* - unsigned int;
+* *total_packets_out* - unsigned int;
+* *total_bytes_out* - unsigned int;
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`).
+
+Example: 
+
+```
+$ curl http://127.0.0.1:18081/get_net_stats -H 'Content-Type: application/json'
+
+{
+  "start_time": 1665147355,
+  "status": "OK",
+  "total_bytes_in": 3743474809,
+  "total_bytes_out": 5932012405,
+  "total_packets_in": 2130592,
+  "total_packets_out": 1010674,
   "untrusted": false
 }
 ```
