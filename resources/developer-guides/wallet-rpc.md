@@ -132,6 +132,8 @@ This list has been updated on a frozen code on 2018-09-14 after merged commit bb
 
 Connect the RPC server to a Monero daemon.
 
+Alias: *None*.
+
 Inputs:
 
 * *address* - string; (Optional; Default: "") The URL of the daemon to connect to.
@@ -142,8 +144,11 @@ Inputs:
 * *ssl_ca_file* - string; (Optional) The file path location of the certificate authority file.
 * *ssl_allowed_fingerprints* - array of string; (Optional) The SHA1 fingerprints accepted by the SSL certificate.
 * *ssl_allow_any_cert* - boolean; (Optional; Default: false) If false, the certificate must be signed by a trusted certificate authority.
+* *username* - string; (Optional) 
+* *password* - string; (Optional)
 
 Outputs:
+
 * *None*
 
 Example:
