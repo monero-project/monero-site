@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-16 02:54+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: entry
+#: ../_i18n/en/resources/moneropedia/p2pool.md:1
+#, no-wrap
+msgid "P2Pool"
+msgstr ""
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/p2pool.md:1
+#, no-wrap
+msgid "Peer to peer mining pool for Monero"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/p2pool.md:1
+#, no-wrap
+msgid "[\"P2Pool\", \"monero-p2pool\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:8
+#, markdown-text
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/p2pool.md:9
+#, markdown-text, no-wrap
+msgid "The Basics"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:12
+#, markdown-text
+msgid "Monero P2Pool is a peer-to-peer Monero @mining pool developed by SChernykh (also known as sech1). P2Pool was a concept was first developed for the Bitcoin blockchain but was never fully realized due to certain limitations, mainly because it had a problem with orphaned @blocks which is solved in Monero P2Pool with uncle blocks."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:14
+#, markdown-text
+msgid "Unlike a traditional mining pool, P2Pool allows it's users to fully control their own @node and what it mines. P2Pool has no central server that can be shutdown/blocked because it uses a separate blockchain to @merge-mine with Monero. It is designed so that all blocks found by the pool pay out to the miners immediately which means that funds are never in custody of a single party."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:16
+#, markdown-text
+msgid "To accomplish this P2Pool uses PPLNS payout scheme which rewards miners only once the block has been found by the pool; miners with a share in the PPLNS window are rewarded directly via the @coinbase-transaction reward for the block."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/p2pool.md:17
+#, markdown-text, no-wrap
+msgid "More Information"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:20
+#, markdown-text
+msgid "P2Pool is a @sidechain to Monero, and P2Pool blocks are potentially Monero @blocks. Each miner submits block templates that include a payout for all of the miners that currently have shares in the PPLNS window. High quality block templates are added to the P2Pool blockchain as blocks which count as \"shares\" for the miner who found them."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:22
+#, markdown-text
+msgid "If a block is good enough to be a Monero block it is also submitted to the Monero network to be included in its blockchain. Once the Monero block is confirmed by the network, those miners are directly paid in the @coinbase-transaction because they were included already in the block template."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:24
+#, markdown-text
+msgid "If P2Pool \"shares\" are found at the same block height as an existing share, it is included as an uncle block (worth 20% less than a normal share) so miners still get paid for it (uncle blocks can be submitted up to 3 blocks behind the current height and still be included)."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/p2pool.md:25
+#, markdown-text, no-wrap
+msgid "Technical Details"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:28
+#, markdown-text
+msgid "Monero P2Pool is written from scratch in C++. It uses the high-performance libuv library so each node is able to handle thousands of concurrent miner connections. There are 2160 blocks in the PPLNS window with a block time of 10 seconds (approximately 6 hours)."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/p2pool.md:30
+#, markdown-text
+msgid "The number of blocks was chosen so that the minimum payout would be approximately 0.0004 XMR (this amount was considered high enough that it could be transferred with minimal fees). Each individual miner payout takes only 38 bytes on the Monero blockchain."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/p2pool.md:31
+#, markdown-text, no-wrap
+msgid "External Links"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/moneropedia/p2pool.md:35
+#, markdown-text
+msgid "[P2Pool source](https://github.com/SChernykh/p2pool)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/moneropedia/p2pool.md:35
+#, markdown-text
+msgid "[P2Pool pool stats](https://p2pool.io)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/moneropedia/p2pool.md:35
+#, markdown-text
+msgid "[P2Pool Observer (mining data)](https://p2pool.observer)"
+msgstr ""
