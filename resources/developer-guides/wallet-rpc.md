@@ -1831,7 +1831,7 @@ Outputs:
   * *subaddr_index* - JSON object containing the major & minor subaddress index:
     * *major* - unsigned int; Account index for the subaddress.
     * *minor* - unsigned int; Index of the subaddress under the account.
-  * *suggested_confirmations_threshold* - unsigned int; Estimation of the confirmations needed for the transaction to be included in a block.
+  * *suggested_confirmations_threshold* - unsigned int; Number of confirmations needed for the amount received to be lower than the accumulated block reward (or close to that).
   * *timestamp* - unsigned int; POSIX timestamp for when this transfer was first confirmed in a block (or timestamp submission if not mined yet).
   * *txid* - string; Transaction ID for this transfer.
   * *type* - string; Transfer type: "in"
@@ -1903,7 +1903,7 @@ Outputs:
   * *subaddr_index* - JSON object containing the major & minor subaddress index:
     * *major* - unsigned int; Account index for the subaddress.
     * *minor* - unsigned int; Index of the subaddress under the account.
-  * *suggested_confirmations_threshold* - unsigned int; Estimation of the confirmations needed for the transaction to be included in a block.
+  * *suggested_confirmations_threshold* - unsigned int; Number of confirmations needed for the amount received to be lower than the accumulated block reward (or close to that).
   * *timestamp* - unsigned int; POSIX timestamp for the block that confirmed this transfer (or timestamp submission if not mined yet).
   * *txid* - string; Transaction ID of this transfer (same as input TXID).
   * *type* - string; Type of transfer, one of the following: "in", "out", "pending", "failed", "pool"
