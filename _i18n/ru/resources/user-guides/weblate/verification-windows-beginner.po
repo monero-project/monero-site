@@ -8,23 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-01 14:00+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-18 16:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/verification-windows-beginner/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:2
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:4
-#
 msgid ""
 "Verification of the Monero binary files should be done prior to extracting, "
 "installing, or using the Monero software. This is the only way to ensure "
@@ -39,9 +43,9 @@ msgstr ""
 "(фишинговый, MITM и т. д.), лучше воспользоваться этим руководством, чтобы "
 "такой файл не навредил вам."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:6
-#
 msgid ""
 "To protect the integrity of the binaries the Monero team provides a "
 "cryptographically signed list of all the "
@@ -57,9 +61,9 @@ msgstr ""
 "отличатся](https://en.wikipedia.org/wiki/File_verification) от того, что "
 "указан в файле."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:8
-#
 msgid ""
 "This is a beginners guide for the Windows operating system and will make use "
 "of GUIs almost exclusively. It will walk you through the process of "
@@ -72,9 +76,9 @@ msgstr ""
 "подписывающих ключей, скачивания необходимых файлов и, наконец, верификации "
 "аутентичности вашего двоичного файла."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:10
-#
 msgid "## Table of Contents"
 msgstr "## Содержание"
 
@@ -120,15 +124,15 @@ msgstr ""
 "  - [4.1. Загрузка двоичного файла](#41-download-binary)\n"
 "  - [4.2. Верификация двоичного файла](#42-verify-binary)\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:30
-#
 msgid "## 1. Using Gpg4win Installer"
 msgstr "## 1. Программа установки Gpg4win"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:32
-#
 msgid ""
 "This section will cover installing the cryptography software. Windows does "
 "not come with the tools required to verify your binary. To install these "
@@ -139,21 +143,21 @@ msgstr ""
 "верификации вашего двоичного файла. Чтобы установить эти инструменты можно "
 "воспользоваться программой установки Gpg4win."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:34
-#
 msgid "### 1.1. Getting Gpg4win Installer"
 msgstr "### 1.1. Где взять программу установки Gpg4win"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:36
-#
 msgid "#### 1.1.1. Download Gpg4win"
 msgstr "#### 1.1.1. Загрузка Gpg4win"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:38
-#
 msgid ""
 "In a web browser, go to [gpg4win.org](https://gpg4win.org) and download the "
 "installer by clicking the green button."
@@ -161,9 +165,9 @@ msgstr ""
 "В веб-браузере следует зайти на сайт [gpg4win.org](https://gpg4win.org) и "
 "нажатием зелёной кнопки скачать программу установки."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:40
-#
 msgid ""
 "![gpg4win download "
 "button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)"
@@ -171,20 +175,20 @@ msgstr ""
 "![gpg4win download "
 "button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:42
-#
 msgid ""
 "You will be taken to a donation page. If you do not wish to donate select "
 "`$0`, then you will be able to click `Download`."
 msgstr ""
 "Вы попадёте на страницу пожертвований. Если вы не собираетесь делать "
 "пожертвование, следует выбрать `$0`, после чего можно будет нажать на кнопку "
-"`Download` (Загрузить)"
+"`Download` (Загрузить)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:44
-#
 msgid ""
 "![gpg4win site "
 "donation](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)"
@@ -192,15 +196,15 @@ msgstr ""
 "![gpg4win site "
 "donation](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:46
-#
 msgid "Click `Save File`."
 msgstr "Нажмите `Save File` (Сохранить файл)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:48
-#
 msgid ""
 "![gpg4win site save "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)"
@@ -208,15 +212,15 @@ msgstr ""
 "![gpg4win site save "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:50
-#
 msgid "Choose a download location, click `Save`."
 msgstr "Выберите место для сохранения файла и нажмите `Save` (Сохранить)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:52
-#
 msgid ""
 "![gpg4win site download "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)"
@@ -224,23 +228,23 @@ msgstr ""
 "![gpg4win site download "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:54
-#
 msgid "#### 1.1.2. Launch Gpg4win"
 msgstr "#### 1.1.2. Запуск Gpg4win"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:56
-#
 msgid "When the download is finished, open the containing folder."
 msgstr ""
 "Как только загрузка файла будет завершена, откройте папку, в которую он был "
 "сохранён."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:58
-#
 msgid ""
 "![gpg4win site open "
 "folder](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)"
@@ -248,15 +252,15 @@ msgstr ""
 "![gpg4win site open "
 "folder](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:60
-#
 msgid "Double click the downloaded gpg4win executable to launch."
 msgstr "Двойным кликом запустите исполняемый файл gpg4win."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:62
-#
 msgid ""
 "![gpg4win "
 "launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)"
@@ -264,23 +268,23 @@ msgstr ""
 "![gpg4win "
 "launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:64
-#
 msgid "### 1.2. Use Gpg4win Installer"
 msgstr "### 1.2. Работа с программой установки Gpg4win"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:66
-#
 msgid "You will be presented with a security verification screen, click `Run`."
 msgstr ""
 "Должен появиться экрана проверки безопасности, в нём следует нажать `Run` "
 "(Запустить)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:68
-#
 msgid ""
 "![gpg4win installer "
 "security](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)"
@@ -288,15 +292,15 @@ msgstr ""
 "![gpg4win installer "
 "security](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:70
-#
 msgid "Select your language, click `OK`."
 msgstr "Выберите язык и нажмите `ОК`."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:72
-#
 msgid ""
 "![gpg4win installer "
 "language](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)"
@@ -304,15 +308,15 @@ msgstr ""
 "![gpg4win installer "
 "language](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:74
-#
 msgid "A welcome screen will appear, click `Next`."
 msgstr "Появится экран приветствия. Нажмите `Next` (Далее)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:76
-#
 msgid ""
 "![gpg4win installer "
 "welcome](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)"
@@ -320,9 +324,9 @@ msgstr ""
 "![gpg4win installer "
 "welcome](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:78
-#
 msgid ""
 "Now you will see the component selection screen, you must at least leave "
 "`Kleopatra` checked for this guide. Make your selections, click `Next`."
@@ -331,9 +335,9 @@ msgstr ""
 "соответствии с данным руководством необходимо выбрать хотя бы `Kleopatra`, а "
 "затем нажать `Next` (Далее)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:80
-#
 msgid ""
 "![gpg4win installer "
 "components](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-components.png)"
@@ -341,9 +345,9 @@ msgstr ""
 "![gpg4win installer "
 "components](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-components.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:82
-#
 msgid ""
 "It is best to leave the default installation location unless you know what "
 "you are doing. Make your selections, click `Install`."
@@ -352,9 +356,9 @@ msgstr ""
 "изменений (используемое по умолчанию). После того, как место установки будет "
 "выбрано, нажать `Install` (Установить)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:84
-#
 msgid ""
 "![gpg4win installer "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install.png)"
@@ -362,15 +366,15 @@ msgstr ""
 "![gpg4win installer "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:86
-#
 msgid "Installation has completed, click `Next`."
 msgstr "После того, как установка будет завершена, нажмите `Next` (Далее)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:88
-#
 msgid ""
 "![gpg4win installer "
 "complete](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)"
@@ -378,17 +382,17 @@ msgstr ""
 "![gpg4win installer "
 "complete](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:90
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:148
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:166
-#
 msgid "Click `Finish`."
 msgstr "Нажмите `Finish` (Завершить)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:92
-#
 msgid ""
 "![gpg4win installer "
 "finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)"
@@ -396,15 +400,15 @@ msgstr ""
 "![gpg4win installer "
 "finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:94
-#
 msgid "## 2. Monero Signing Key"
 msgstr "## 2. Импорт подписывающего ключа Monero"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:96
-#
 msgid ""
 "This section will cover downloading the Monero signing key, verifying that "
 "the key is correct, and then importing the key to your keyring. The hash "
@@ -419,15 +423,15 @@ msgstr ""
 "проверить правильность этого файла вам понадобится публичная версия "
 "подписывающего ключа."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:98
-#
 msgid "### 2.1. Download Signing Key"
 msgstr "### 2.1. Загрузка подписывающего ключа"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:100
-#
 msgid ""
 "In a web browser, go to [binaryFate's GPG "
 "key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), "
@@ -439,9 +443,9 @@ msgstr ""
 "который используется для подписи двоичных файлов Monero. Кликом правой "
 "кнопки мыши необходимо выбрать `Save Page As` (Сохранить страницу как)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:102
-#
 msgid ""
 "![getkey right "
 "click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)"
@@ -449,19 +453,19 @@ msgstr ""
 "![getkey right "
 "click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-rightclick.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:104
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:178
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:220
-#
 msgid "Leave the default location, click `Save`."
 msgstr ""
 "Оставьте место для загрузки, используемое по умолчанию, без изменений и "
 "нажмите `Save` (Сохранить)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:106
-#
 msgid ""
 "![getkey save "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)"
@@ -469,15 +473,15 @@ msgstr ""
 "![getkey save "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:108
-#
 msgid "### 2.2. Initialize Kleopatra"
 msgstr "### 2.2. Запуск утилиты Kleopatra"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:110
-#
 msgid ""
 "If this is your first time using Kleopatra you will have to create a key "
 "pair for yourself."
@@ -485,15 +489,15 @@ msgstr ""
 "Если вы впервые пользуетесь Kleopatra, вам придётся создать для себя пару "
 "ключей."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:112
-#
 msgid "Launch Kleopatra."
 msgstr "Запустите Kleopatra."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:114
-#
 msgid ""
 "![kleo "
 "launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)"
@@ -501,21 +505,21 @@ msgstr ""
 "![kleo "
 "launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:116
-#
 msgid "#### 2.2.1. Import Signing Key"
 msgstr "#### 2.2.1. Импорт подписывающего ключа"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:118
-#
 msgid "Click `Import`."
 msgstr "Нажмите `Import` (Импортировать)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:120
-#
 msgid ""
 "![kleo firstrun "
 "import](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)"
@@ -523,17 +527,17 @@ msgstr ""
 "![kleo firstrun "
 "import](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:122
-#
 msgid "Enter the directory `Downloads`, select `binaryfate`, and click `Open`."
 msgstr ""
 "Перейдите в директорию `Downloads` (Загрузки), выберите `binaryfate` и "
 "нажмите `Open` (Открыть)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:124
-#
 msgid ""
 "![kleo firstrun key "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)"
@@ -541,15 +545,15 @@ msgstr ""
 "![kleo firstrun key "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:126
-#
 msgid "Start the process of certifying the key by clicking `Yes`."
 msgstr "Запустите процесс сертификации ключа нажатием `Yes` (Да)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:128
-#
 msgid ""
 "![kleo firstrun start "
 "process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)"
@@ -557,21 +561,21 @@ msgstr ""
 "![kleo firstrun start "
 "process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:130
-#
 msgid "#### 2.2.2. Create Key Pair"
 msgstr "#### 2.2.2. Создание пары ключей"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:132
-#
 msgid "Start the process of key creation by clicking `Yes`."
 msgstr "Запустите процесс создания ключа нажатием `Yes` (Да)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:134
-#
 msgid ""
 "![kleo firstrun start key "
 "create](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)"
@@ -579,17 +583,17 @@ msgstr ""
 "![kleo firstrun start key "
 "create](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:136
-#
 msgid "Fill in some details for `Name` and `Email`, click `Next`."
 msgstr ""
 "Введите информацию, заполнив поля `Name` (Имя) и `Email` (Электронная "
 "почта), нажмите `Next` (Далее)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:138
-#
 msgid ""
 "![kleo firstrun key "
 "details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)"
@@ -597,15 +601,15 @@ msgstr ""
 "![kleo firstrun key "
 "details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:140
-#
 msgid "Verify details, click `Create`."
 msgstr "Проверить указанную информацию и нажмите `Create` (Создать)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:142
-#
 msgid ""
 "![kleo firstrun verify key "
 "details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)"
@@ -613,15 +617,15 @@ msgstr ""
 "![kleo firstrun verify key "
 "details](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:144
-#
 msgid "Set a password, click `OK`."
 msgstr "Введите пароль и нажмите `OK`."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:146
-#
 msgid ""
 "![kleo firstrun set key "
 "pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)"
@@ -629,9 +633,9 @@ msgstr ""
 "![kleo firstrun set key "
 "pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:150
-#
 msgid ""
 "![kleo firstrun finish create "
 "key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)"
@@ -639,15 +643,15 @@ msgstr ""
 "![kleo firstrun finish create "
 "key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:152
-#
 msgid "### 2.3. Verify Signing Key"
 msgstr "### 2.3. Верификация подписывающего ключа"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:154
-#
 msgid ""
 "Visually check that the fingerprint of the key belonging to binaryFate is "
 "`81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`."
@@ -655,9 +659,9 @@ msgstr ""
 "Визуально проверить, соответствует ли отпечаток ключа, принадлежащего "
 "binaryFate, `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:156
-#
 msgid ""
 "![kleo certify "
 "fingerprint](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)"
@@ -665,15 +669,15 @@ msgstr ""
 "![kleo certify "
 "fingerprint](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:158
-#
 msgid "If the fingerprint **DOES** match, click `Certify`."
 msgstr "Если отпечаток **СООТВЕТСТВУЕТ** отпечатку, нажать `Certify` (Далее)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:160
-#
 msgid ""
 "If the fingerprint of this key **DOES NOT** match, **DO NOT "
 "CONTINUE**. Instead delete the file `binaryfate` from the `Downloads` "
@@ -684,15 +688,15 @@ msgstr ""
 "директории `Downloads` и повторить действия, описанные в [пункте "
 "2.1](#21-download-signing-key)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:162
-#
 msgid "Enter your password, click `OK`."
 msgstr "Введите свой пароль и нажмите `OK`."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:164
-#
 msgid ""
 "![kleo certify "
 "pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)"
@@ -700,15 +704,15 @@ msgstr ""
 "![kleo certify "
 "pass](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:168
-#
 msgid "## 3. Hash File Verification"
 msgstr "## 3. Верификация хеш-файла"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:170
-#
 msgid ""
 "This section will cover downloading the signed file of known good hashes and "
 "verifying its authenticity."
@@ -716,26 +720,26 @@ msgstr ""
 "В этом разделе рассматривается процесс загрузки подписанного файла с "
 "гарантировано правильными хешами и проверка его подлинности."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:172
-#
 msgid "### 3.1. Download Hash File"
 msgstr "### 3.1. Загрузка хеш-файла"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:174
-#
 msgid ""
 "In a web browser, go to the [getmonero.org hash page]({{ site.baseurl_root "
 "}}/downloads/hashes.txt). Right click the page, select `Save Page As`."
 msgstr ""
-"В веб-браузере следует перейти на [страницу хешей на "
-"getmonero.org](https://getmonero.org/downloads/hashes.txt). Кликом правой "
-"кнопки мыши выбрать `Save Page As` (Сохранить страницу как)."
+"В веб-браузере следует перейти на [страницу хешей на getmonero.org]({{ "
+"site.baseurl_root }}/downloads/hashes.txt). Кликом правой кнопки мыши "
+"выбрать `Save Page As` (Сохранить страницу как)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:176
-#
 msgid ""
 "![hashes right "
 "click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)"
@@ -743,9 +747,9 @@ msgstr ""
 "![hashes right "
 "click](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:180
-#
 msgid ""
 "![hashes save "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)"
@@ -753,21 +757,21 @@ msgstr ""
 "![hashes save "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:182
-#
 msgid "### 3.2. Verify Hash File"
 msgstr "### 3.2. Верификация хеш-файла"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:184
-#
 msgid "In Kleopatra, click the `Decrypt/Verify` button."
 msgstr "В утилите Kleopatra нажать кнопку `Decrypt/Verify` (Расшифровать/проверить)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:186
-#
 msgid ""
 "![hashes kleo verify "
 "button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)"
@@ -775,17 +779,17 @@ msgstr ""
 "![hashes kleo verify "
 "button](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:188
-#
 msgid "Navigate to `Downloads` directory. Select `hashes` file, click `Open`."
 msgstr ""
 "Указать путь к директории `Downloads`, выбрать файл `hashes` и нажать `Open` "
 "(Открыть)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:190
-#
 msgid ""
 "![hashes kleo open "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)"
@@ -793,21 +797,21 @@ msgstr ""
 "![hashes kleo open "
 "file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:192
-#
 msgid "Kleopatra will inform you if the files signature is valid."
 msgstr "Kleopatra сообщит, является ли подпись файла действительной."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:194
-#
 msgid "If the signature is **VALID** you will see this:"
 msgstr "Если подпись **ЯВЛЯЕТСЯ** действительной, вы увидите следующее:"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:196
-#
 msgid ""
 "![hashes kleo "
 "goodsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)"
@@ -815,15 +819,15 @@ msgstr ""
 "![hashes kleo "
 "goodsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:198
-#
 msgid "If the signature is **INVALID** you will see this:"
 msgstr "Если же подпись **НЕ ЯВЛЯЕТСЯ** действительной, вы увидите это:"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:200
-#
 msgid ""
 "![hashes kleo "
 "badsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)"
@@ -831,17 +835,17 @@ msgstr ""
 "![hashes kleo "
 "badsig](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:202
-#
 msgid "If you receive a **VALID** signature, click `Discard` and move on."
 msgstr ""
 "Если вами была получена **ДЕЙСТВИТЕЛЬНА** подпись, нажмите `Discard` (Не "
 "учитывать) и продолжайте."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:204
-#
 msgid ""
 "If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete "
 "the file `hashes` from the `Downloads` directory and go back to [section "
@@ -852,15 +856,15 @@ msgstr ""
 "`Downloads` и вернуться к действиям, описанным в [пункте "
 "3.1](#31-download-hash-file)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:206
-#
 msgid "## 4. Binary File Verification"
 msgstr "## 4. Верификация двоичного файла"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:208
-#
 msgid ""
 "This section will cover downloading the Monero binary and verifying its "
 "authenticity."
@@ -868,27 +872,27 @@ msgstr ""
 "В этом разделе описан процесс загрузки двоичного файла Monero и верификации "
 "его аутентичности."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:210
-#
 msgid "### 4.1. Download Binary"
 msgstr "### 4.1. Загрузка двоичного файла"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:212
-#
 msgid ""
 "In a web browser, go to the [getmonero.org downloads page]({{ "
 "site.baseurl_root }}/downloads/#windows). Select the correct binary for your "
 "system."
 msgstr ""
-"В веб-браузере следует перейти на [страницу загрузки файлов "
-"getmonero.org](https://getmonero.org/downloads/#windows) и выбрать "
-"правильный файл для вашей системы."
+"В веб-браузере следует перейти на [страницу загрузки файлов getmonero.org]({{"
+" site.baseurl_root }}/downloads/#windows) и выбрать правильный файл для "
+"вашей системы."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:214
-#
 msgid ""
 "![binary "
 "getmonero](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)"
@@ -896,15 +900,15 @@ msgstr ""
 "![binary "
 "getmonero](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:216
-#
 msgid "Leave `Save File` selected, click `OK`."
 msgstr "Выберите `Save File` (Сохранить файл) и нажмите `OK`."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:218
-#
 msgid ""
 "![binary getmonero "
 "save](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)"
@@ -912,9 +916,9 @@ msgstr ""
 "![binary getmonero "
 "save](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:222
-#
 msgid ""
 "![binary getmonero save "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)"
@@ -922,15 +926,15 @@ msgstr ""
 "![binary getmonero save "
 "location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:224
-#
 msgid "### 4.2. Verify Binary"
 msgstr "### 4.2. Верификация двоичного файла"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:226
-#
 msgid ""
 "In a file manager, navigate to `Downloads` directory. Open the file `hashes` "
 "with a word processor."
@@ -938,9 +942,9 @@ msgstr ""
 "В файловом менеджере выберите директорию `Downloads` и откройте файл "
 "`hashes` при помощи текстового редактора."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:228
-#
 msgid ""
 "![binary open "
 "hashes.txt](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)"
@@ -948,15 +952,15 @@ msgstr ""
 "![binary open "
 "hashes.txt](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:230
-#
 msgid "Open a terminal (`cmd.exe`)."
 msgstr "Откройте консоль (`cmd.exe`)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:232
-#
 msgid ""
 "![binary launch "
 "term](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)"
@@ -964,17 +968,17 @@ msgstr ""
 "![binary launch "
 "term](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:234
-#
 msgid "Change to the `Downloads` directory with the command: `cd Downloads`."
 msgstr ""
 "Изменить путь на директорию `cd Downloads`, измените директорию на "
-"`Downloads`"
+"`Downloads`."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:236
-#
 msgid ""
 "![binary cmd "
 "cd](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)"
@@ -982,9 +986,9 @@ msgstr ""
 "![binary cmd "
 "cd](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:238
-#
 msgid ""
 "Calculate the hash of the Monero binary with the command: `certUtil "
 "-hashfile monero-gui-win-x64-v0.16.0.2.zip SHA256` (if you downloaded a "
@@ -996,9 +1000,9 @@ msgstr ""
 "предполагающую только использование командной строки, замените "
 "`monero-gui-win-x64-v0.16.0.2.zip`, именем скачанного файла кошелька)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:240
-#
 msgid ""
 "![binary cmd "
 "certutil](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)"
@@ -1006,9 +1010,9 @@ msgstr ""
 "![binary cmd "
 "certutil](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:242
-#
 msgid ""
 "Compare the hash from the terminal with the one in the hash file. They "
 "should be the same (spaces can be ignored)."
@@ -1016,9 +1020,9 @@ msgstr ""
 "Сравните хеш, полученный при помощи командной строки, с хешем из файла "
 "хешей. Они должны совпадать (пробелы можно не учитывать)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:244
-#
 msgid ""
 "![binary compare "
 "hashes](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)"
@@ -1026,9 +1030,9 @@ msgstr ""
 "![binary compare "
 "hashes](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:246
-#
 msgid ""
 "If your hash **DOES** match then you are finished with verification! You can "
 "be sure the Monero files you have are authentic. You may extract and "
@@ -1038,9 +1042,9 @@ msgstr ""
 "быть уверены в том, что имеющиеся у вас двоичные файлы Monero аутентичны. Вы "
 "спокойно можете извлекать/устанавливать и пользоваться ими."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/verification-windows-beginner.md:247
-#
 msgid ""
 "If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the "
 "Monero binary from the `Downloads` directory and go back to [section "

@@ -1,13 +1,14 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-### Table of contents
+### Tabla de contenidos
 
 - [When should I restore a wallet?](#when-should-i-restore-a-wallet)
 
 - [What is needed to restore a wallet from mnemonic
   seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)
 
-- [What is the wallet restore height?](#what-is-the-wallet-restore-height)
+- - [¿Cuál es la altura de recuperación de el
+  monedero?](#cuál-es-la-altura-de-recuperación-del-monedero)
 
 - [How to restore a wallet from mnemonic seed on Monero
   GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)
@@ -171,11 +172,11 @@ settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
    inside your wallet, running the `help` command will list the help for the
    commands available to you within the wallet.
 
-### My restored wallet is showing a wrong balance
+### Mi monedero restaurado muestra un balance erróneo
 
-This problem usually occurs when you set a restore height that is higher
-than the block height of the first incoming transaction to your wallet. To
-solve this issue, you will have to change the wallet restore height. Please
-read [this
-guide]({{site.baseurl}}/resources/user-guides/change-restore-height.html)
-for detailed instructions on how to do this.
+Este problema usualmente ocurre cuando seleccionas una altura de
+restauración que es mayor que la altura del bloque de la primera transacción
+entrante a tu monedero. Para resolver este problema, tendrás que cambiar la
+altura de restauración del monedero. Por favor, lee [esta
+guía]({{site.baseurl}}/resources/user-guides/change-restore-height.html)
+para ver instrucciones detalladas sobre como hacer esto.

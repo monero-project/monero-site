@@ -1,0 +1,1039 @@
+global:
+  date: '%Y/%m/%d'
+  monero: 'Monero'
+  getting_started: 'Mulai'
+  copyright: 'Hak cipta'
+  monero_project: 'Proyek Monero'
+  sitename: 'getmonero.org, Proyek Monero'
+  wiki: 'Moneropedia'
+  tags: 'Artikel Berdasarkan Tag'
+  wikimeta: 'di Moneropedia, ensiklopedia terbuka pengetahuan Monero'
+  tagsmeta: 'Semua artikel blog Monero yang di tag'
+  titlemeta: 'Monero, mata uang digital yang aman, privat, dan tidak terlacak'
+  terms: 'Ketentuan'
+  privacy: 'Privasi'
+  untranslated: 'Halaman ini belum diterjemahkan. Jika Anda ingin membantu menterjemahkannya,
+    silahkan lihat'
+  outdated: 'Isi dari halaman ini sudah ketinggalan dan mungkin sudah tidak valid
+    lagi. Hubungi komunitas jika Anda membutuhkan bantuan.'
+  outdatedMin: 'Halaman ini telah diperbarui sejak diterjemahkan. Anda dapat menggunakan
+    versi ini, tetapi mungkin tidak lengkap. Silahkan gunakan'
+  outdatedVersion: 'Versi Bahasa Inggris'
+  lang_tag: "@lang_tag_id"
+
+titles:
+  index: 'Depan'
+  whatismonero: 'Apa itu Monero (XMR)?'
+  accepting: 'Menerima Monero'
+  contributing: 'Menyempurnakan Monero'
+  mining: 'Menambang Monero'
+  faq: 'FAQ'
+  downloads: 'Unduh'
+  allposts: 'Seluruh Postingan Blog'
+  workgroups: 'Kelompok Kerja'
+  hangouts: 'Tempat Ngumpul'
+  sponsorships: 'Sponsor'
+  merchants: 'Merchant & Bursa'
+  about: 'Tentang Monero'
+  roadmap: 'Peta Jalan'
+  researchlab: 'Lab Penelitian Monero (MRL)'
+  moneropedia: 'Moneropedia'
+  userguides: 'Petunjuk Pengguna'
+  developerguides: 'Petunjuk Pengembang'
+  technicalspecs: 'Spesifikasi Teknis'
+  themoneroproject: 'Proyek Monero'
+  tools: 'Alat-alat'
+  presskit: 'Paket Pers'
+  legal: 'Legal'
+  blogbytag: 'Blog'
+  library: 'Perpustakaan'
+
+navigation:
+  getstarted: 'Mulai'
+  whatis: 'Apa itu Monero?'
+  accepting: 'Menerima'
+  contributing: 'Kontribusi'
+  mining: 'Menambang'
+  community: 'Komunitas'
+  merchants: 'Merchant & Bursa'
+  resources: 'Sumberdaya'
+  about: 'Tentang'
+  mrl: 'Lab Penelitian'
+
+footer:
+  feed: 'Umpan RSS'
+  legal: 'Legal'
+  source: 'Kode Sumber'
+  ml: 'Milis'
+  ccs: 'Sistem Urun Dana Komunitas'
+  reachout: 'Kontak'
+
+index:
+  page_title: "Monero - aman, privat, tak terlacak"
+
+home:
+  heading: 'Monero Berarti Uang'
+  heading2: 'Privat, mata uang kripto terdesentralisasi yang menjaga keuangan Anda
+    rahasia dan aman.'
+  whatis: 'Belajar Monero lebih banyak'
+  about: 'Tentang Monero'
+  joincommunity: 'Gabung Komunitas'
+  choosewallet: 'Pilih Dompet'
+  choosewallet_para: 'Untuk menggunakan Monero, hal pertama yang diperlukan adalah
+    dompet. Kunjungi halaman Unduh kami dan dapatkan dompet yang sesuai dengan Anda.
+    Dompet Monero tersedia dalam beragam platform dan berisi segala macam yang Anda
+    butuhkan untuk menggunakan Monero langsung.'
+  downloads: 'Unduh'
+  getcoins: 'Dapatkan Beberapa Koin'
+  getcoins_para: 'Sesudah menginstal dompet, Anda perlu mendapatkan beberapa Monero.
+    Ada beragam cara untuk mendapatkan koin untuk digunakan, seperti menambang atau
+    bekerja untuk ditukarkan dengan Monero, tetapi cara yang paling mudah adalah dengan
+    menggunakan bursa pertukaran dan mengubah uang fiat Anda ke dalam XMR. Banyak
+    bursa pertukaran, tersentral dan terdesentral, menyediakan Monero (XMR).'
+  exchanges: 'Bursa Pertukaran'
+  useit: "Ini adalah mata uang: Pakai ini!"
+  useit_para: 'Monero adalah mata uang dan dapat ditukarkan dengan barang, jasa dan
+    mata uang lainnya, secara privat dan dengan biaya yang sangat rendah. Banyak pihak
+    yang dengan senang hati menerima pembayaran menggunakan XMR; silahkan lihat pada
+    halaman''Merchant'' kami.'
+  merchants: 'Merchant'
+  answers: 'Temukan Jawaban atas Pertanyaan Anda'
+  faq: 'FAQ'
+  faq_para: 'Kami mendengar begitu banyak pertanyaan selama bertahun-tahun dan merangkumnya
+    di FAQ. Jangan khawatir, jika pertanyaan Anda tidak ada disini, Anda dapat selalu
+    bertanya pada komunitas.'
+  guides: 'Petunjuk dan Sumberdaya'
+  guides_para: >
+    Komunitas bersama-sama telah meletakkan sejumlah besar sumberdaya dan dokumentasi.
+    Pengguna dapat menemukan informasi dan petunjuk yang berguna tentang konfigurasi
+    umum dan tip di bagian 'Petunjuk Pengguna'. Pengembang dapat menemukan segala
+    yang mereka butuhkan untuk membangun layanan berbasis Monero atau hanya sekedar
+    berkomunikasi dengan jaringan di 'Petunjuk Pengembang'. Perpustakaan menawarkan
+    publikasi dan buku yang bisa di unduh gratis, termasuk buku lengkap 'Mastering
+    Monero' dan 'Zero to Monero'.
+  moneropedia_para: 'Apakah Anda ingin mencari arti dari istilah dan konsep yang digunakan
+    dalam Monero? Di sini Anda akan menemukan petunjuk yang disusun sesuai abjad untuk
+    istilah dan artinya.'
+  moneropedia_button: 'Baca Moneropedia'
+  contributecommunity: "Kami Membutuhkan Keahlian Anda: Ayo Berkontribusi!"
+  contributecommunity_para: 'Monero bukan hanya sekedar mata uang, ini adalah komunitas
+    terdesentralisasi dan bisa ada hanya karena terimakasih pada ratusan sukarelawan
+    yang mendedikasikan waktu mereka untuk proyek ini. Bergabunglah bersama kami!'
+  researchlab_para: 'MRL (Monero Research Lab / Lab Penelitian Monero) adalah bagian
+    yang sangat penting dari Monero. Peneliti dan kriptografer dari seluruh penjuru
+    dunia bertemu untuk menemukan cara baru menyempurnakan Monero. Baca paper mereka
+    dan bergabunglah!'
+  visitmrl: 'Kunjungi MRL'
+  contributing: 'Kontribusi'
+  meetcommunity: "Bertemu komunitas!"
+  meetus: "Anggota komunitas Monero berasal dari seluruh dunia. Anda dapat menemukan\
+    \ kami di berbagai platform. Datang jumpai kami!"
+  hangouts: 'Tempat Ngumpul'
+  morevideos: 'Mencari lebih banyak video penjelasan?'
+
+hangouts:
+  intro: 'Komunitas Monero beragam dan bervariasi. Kami datang dari mana-mana, tetapi
+    kami pasti memiliki beberapa tempat yang kami sukai untuk berkumpul bersama. Anda
+    akan menemukan sebagian besar dari mereka di bawah ini. Bergabunglah dengan kami!'
+  resources: 'Sumber Daya Kelompok Kerja'
+  resources_para: 'Dalam upaya mendukung kelompok kerja organik, Monero memiliki berbagai
+    sumberdaya yang komunitas dapat pakai untuk bertemu dan merencanakan proyek,'
+  resources_para1: 'seperti server Matrix, papan Taiga dan platform penterjemahan
+    Weblate.'
+  irc: 'Kanal IRC'
+  irc_para: 'Komunitas Monero menggunakan banyak kanal IRC yang masing - masing melayani
+    tujuan yang berbeda. Beberapa untuk bekerja, dan beberapa hanya sebagai tempat
+    kumpul - kumpul. Anda dapat menemukan beberapa yang populer dibawah.'
+  bridges: 'Kanal ini adalah jembatan ke beberapa platform lainnya, memungkinkan komunitas
+    untuk saling berkomunikasi menggunakan layanan/protokol kesukaan mereka.'
+  mailing_list: 'Milis'
+  mailing_list1: 'Apakah Anda ingin menerima informasi penting langsung ke alamat
+    email? bergabunglah dengan milis kami!'
+  subscribe: 'Langganan'
+  irc_channels:
+    monero: 'Kanal ini dipakai untuk mendiskusikan segala hal yang berkaitan dengan
+      Monero.'
+    monero-community: 'Kanal ini untuk komunitas Monero berkumpul dan mendiskusikan
+      ide-ide.'
+    monero-dev: 'Banyak kontributor dan pengembang datang kesini untuk mendiskusikan
+      berbagai hal pengembangan (dev).'
+    monero-markets: 'Kami menggunakan kanal ini untuk ngobrolin tentang harga Monero
+      dan koin lain.'
+    monero-offtopic: 'Ngobrol dengan pengguna Monero lain tentang hal - hal yang tidak
+      berhubungan dengan Monero.'
+    monero-pools: 'Disini adalah tempat untuk pertanyaan dan diskusi tentang mining
+      / penambangan.'
+    monero-research-lab: 'Penelitian dalam privasi finansial dengan mata uang kripto.'
+    monero-translations: 'Melokalkan Monero dalam berbagai bahasa lain.'
+    monero-hardware: 'Membangun dompet hardware untuk menjaga Monero Anda aman.'
+    monero-site: 'Tempat pengembangan website ini dikoordinasikan.'
+
+merchants:
+  descr: 'Di halaman ini Anda akan menemukan toko dan merchant yang menerima Monero
+    sebagai pembayaran, sama seperti bursa pertukaran yang memperdagangkan Monero
+    untuk mata uang lainnya.'
+  useit: "Merchant yang menerima Monero"
+  use: 'Selama bertahun-tahun, merchant dari segala jenis menghargai privasi finansial
+    yang dibawa Monero. Faktanya, adopsi merchant terus meningkat.'
+  dirdescr: "Jika Anda mencari tempat untuk membelanjakan Monero, direktori di bawah\
+    \ ini memiliki beberapa pilihan. Harap ingat untuk melakukan penelitian Anda sendiri\
+    \ sebelum mempercayakan mereka dengan uang Anda:"
+  descrp2p: 'Cara terbaik untuk menukar Monero ke mata uang lainnya (atau sebaliknya)
+    adalah menggunakan bursa pertukaran P2P (peer to peer), karena mereka memungkinkan
+    penjual untuk saling berinteraksi langsung satu sama lain, tanpa perlu percaya
+    pada pihak ketiga (kecuali mungkin untuk menyediakan layanan eskrow). Bursa ini
+    lebih privat daripada rekanan mereka yang tersentralisasi, dan memungkinkan orang-orang
+    untuk mengkontrol penuh koin mereka jika mereka bukan kustodian, tetapi mereka
+    biasanya memiliki volume yang lebih kecil dibandingkan bursa ''tradisional''.
+    Pada bagian dibawah, kami menawarkan daftar bursa pertukaran P2P yang mendukung
+    Monero.'
+  swapsdescr: 'Cara baru yang menarik untuk menukarkan Monero adalah Swap Atomik (Atomic
+    Swap) yang <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">kami
+    umumkan</a> pada Agustus 2021. Pertukaran Atomik adalah cara terdesentralisasi
+    penuh untuk menukarkan Bitcoin <-> Monero (informasi lebih lengkap ada di postingan
+    blog). Teknologinya masih baru, sehingga penyedia layanan swap belum banyak, tetapi
+    Anda sudah dapat menjual XMR untuk BTC menggunakan protokol ini di'
+  bisqdescr: 'bursa pertukaran P2P Terdesentralisasi berbasis Bitcoin dan Tor.'
+  cardfoss: "Sumber terbuka:"
+  cardkyc: "<b>Tanpa KYC</b> (Know Your Customer):"
+  cardbtcfiat: '(BTC &#8596; fiat dimungkinkan)'
+  cardonion: "Alamat Onion:"
+  noncustodial: "Non-kustodial:"
+  hodlhodldescr: 'Platform perdagangan P2P dengan eskrow non-kustodial.'
+  locmondescr: 'Bursa pertukaran P2P Online menawarkan perdagangan pribadi-ke-pribadi.'
+  depsell: 'Tergantung oleh penjual'
+  locnojs: '(tetapi tidak tersedia versi tanpa-JS / tanpa-javascript)'
+  simpleswapdescr: 'Bursa pertukaran instan non-kustodial.'
+  disclaimer: |
+  visitbisq: ''
+  visitlocalmonero: ''
+  visithodlhodl: ''
+  centrexchanges: ''
+  centrexchangesp: ''
+  cexp: ''
+  swappersp: ''
+
+sponsorships:
+  intro: ''
+  tari: ''
+  mbank: ''
+  symas: ''
+  forknetworking: ''
+  macstadium: ''
+  pastsponsors: ''
+
+team:
+  introduction: ''
+  core: ''
+  community: ''
+  mrl: ''
+  descr: ''
+  start: ''
+  contacts: ''
+  chat: ""
+  website: ""
+  core_descr: ''
+  core_start: ''
+  community_descr: ''
+  community_start: ''
+  devworkgroup: ''
+  devworkgroup_descr: ""
+  devworkgroup_start: ''
+  chatgeneral: ""
+  chatgui: ""
+  webworkgroup: ''
+  web_descr: ''
+  web_start: ''
+  localization: ''
+  localization_descr: ''
+  localization_start: ''
+  locplatform: ""
+  outreach_descr: ''
+  outreach_start: ''
+  telegram: ""
+  mrl_descr: ''
+  mrl_start: ''
+  space: ''
+  space_descr: ''
+  space_start: ''
+  mrw: ''
+  mrw_descr: ''
+  mrw_start: ''
+  mpwg: ''
+  mpwg_descr: ''
+  mpwg_start: ''
+
+downloads:
+  intro: ''
+  choose: ''
+  gui: ''
+  cli: ''
+  blockchain: ''
+  blockchain1: ''
+  blockchain2: ''
+  blockchain3: ''
+  blockchain4: ''
+  blockchainbutton: ''
+  mobilelight0: ''
+  mobilelight: ''
+  hardware: ''
+  gui_intro: ''
+  simplemode: ''
+  simplemode1: ''
+  advancedmode: ''
+  advancedmode1: ''
+  merchantpage: ''
+  merchantpage1: ''
+  hwcompatible: ''
+  hwcompatible1: ''
+  fiatconv: ''
+  fiatconv1: ''
+  pruning: ''
+  pruning1: ''
+  langs: ""
+  cli_intro0: ''
+  cli_intro: ''
+  currentversion: ''
+  sourcecode: ''
+  helpsupport: ''
+  helpsupport1: ""
+  helpsupport2: ""
+  gui_helpsupport: ""
+  cli_helpsupport: ""
+  localremote: ''
+  localremote1: ''
+  transacttor: ''
+  transacttor1: ''
+  bootstrapnode: ''
+  bootstrapnode1: ''
+  rpc: ''
+  rpc1: ''
+  payforrpc: ''
+  payforrpc1: ''
+  verify: ''
+  verify1: ''
+  verify2: ''
+  showhash: ''
+  showhash1: ''
+  showhash2: ''
+  showhash3: ''
+  showhash4: ""
+  mobilelight1: ''
+  mobilelight2: ''
+  mobilelight3: ''
+  installer: ''
+  avwarning: ''
+  moreinfofaq: ''
+  packages: ''
+  packages_link: ''
+  releasenotes: ''
+  wallet: ''
+  mobile: ''
+  desktop: ''
+  antivirus: ''
+  sourcearchive: ''
+  localsync: ''
+  localsyncinfo: ''
+  remotesync: ''
+  remotesyncinfo: ''
+  hwdesc: ""
+  hwth: ''
+  instructions: ''
+  hwthmodel: ''
+  hwthsupported: ''
+  hwthfirm: ''
+  hwnanos: ""
+  hwnanox: ""
+  hwtrezor: ""
+  hwmobmodels: ""
+
+press-kit:
+  intro: ''
+  intro2: ''
+  intro3: ''
+  intro4: ''
+  noback: ''
+  whiteback: ''
+  symbol: ''
+  logo: ''
+  small: ''
+  medium: ''
+  large: ''
+  symbol_file: ''
+  logo_file: ''
+  pressdoc: ''
+  quickfacts: ""
+  quickfactsp: >
+  marketing: ''
+  dontbuysticker: ""
+  dontbuystickerp: ''
+  guerrillakit: ''
+  guerrillakitp: ''
+  promographics: ""
+  promographicsp: ''
+  othersymbols: ''
+  mrllogo_para: ''
+  contacts: ''
+  contactsp: ''
+  contactgen: ""
+  contactwg: ""
+  contactcomm: ""
+  whymonero: ''
+  whycommunity: ''
+  whycommunity1: ''
+  whyconf: ''
+  whyconf1: ''
+  altpk-1: ''
+  altpk-2: ''
+
+accepting:
+  title_gui: ''
+  index: ''
+  gui1: ""
+  gui2: ''
+  guilinkguide: ''
+  guiinstructions: >
+  guimerchant: ''
+  guilinkguide1: ''
+  guimerchant1: >
+  guisteps: ""
+  guiol: ""
+  guiol1: ''
+  guiol2: ""
+  guiol3: ""
+  guiol4: ''
+  cliinstructions: ''
+  clicreatewallet: >
+  cliaccounts: >
+  clicreateaccount: ""
+  clicreateaccount1: ''
+  cliindex: >
+  cliindex1: >
+  clinotes: >
+  merchantstitle: ''
+  merchantsreceive: ''
+  merchdevguides: ''
+  merchantsreceive1: ""
+  merchantsint: ""
+  merchantsintlink: ''
+  merchantsthirdp: ''
+  merchthirdlink: ''
+  merchantsthirdp1: ''
+
+contributing:
+  intro: ''
+  network: ''
+  develop: ''
+  developp: ""
+  cli: ""
+  cli_p: ''
+  gui: ""
+  gui_p: ''
+  website: ""
+  website_p: ''
+  bug: ""
+  discl: ''
+  develop_descr: >
+  develop_wg: ''
+  full-node: ''
+  full-node_p: ''
+  full-node_p2: ""
+  allguides: ''
+  mine: ''
+  mine_p: >
+  mine_link: ''
+  ffs: ''
+  ccs_p: ''
+  ccsbutton: ''
+  donate: ''
+  donate_p: ''
+  genfund: ''
+  genfund_p: ""
+  donate-other: ''
+  donate-other_para1: ''
+  donate-other_para2: ''
+  supportdev: ''
+  supportdev_p: ''
+  supportdev_p2: ''
+  supportdev_link: ''
+  sponsor: ''
+  sponsor_p: ''
+  sponsor_link: ''
+  sponsor_p2: ''
+  altqrmonero: ''
+  altqrbitcoin: ''
+
+faq:
+  intro: ''
+  toc: ''
+  general: ''
+  advanced: ''
+  nodeandwallet: ''
+  additional: ""
+  resandhelp: ''
+  stackexchange: ''
+  userguides: ''
+  devguides: ''
+  monerosupport: ''
+  monerohow: ""
+  qword: ""
+  aword: ""
+  aword1: ""
+  qcontribute: ''
+  acontribute: ""
+  acontribute1: ''
+  acontribute2: ""
+  acontribute3: ''
+  acontribute4: ""
+  q1: ''
+  a1: ''
+  q2: ''
+  a2: ''
+  a2exchanges: ""
+  q3: ''
+  a3: ''
+  q4: ''
+  a4: ""
+  q5: ''
+  a5: ''
+  q6: ''
+  a6: ''
+  q7: ''
+  a7: ''
+  q8: ''
+  a8: ''
+  q11: ''
+  a11: ""
+  q12: ''
+  a12-1: ''
+  a12-2: ''
+  a12-3: ''
+  q13: ''
+  a13: ''
+  q14: ''
+  a14: ''
+  q15: ''
+  a15: ''
+  qwallet: ''
+  awallet: ''
+  qnofunds: ''
+  anofunds: ""
+  qnodetor: ''
+  anodetor: ''
+  qfullpruned: ''
+  afullpruned: ""
+  qblocksize: ''
+  ablocksize: ""
+  qblockspace: ''
+  ablockspace: ""
+  qavoidbc: ''
+  aavoidbc: ""
+  qscanned: ''
+  ascanned: ''
+  qdangernode: ''
+  adangernode: ""
+  qdangerrnode: ''
+  adangerrnode: ""
+  qantivirus: ''
+  aantivirus: ''
+  aantivirus1: ''
+  qmoneromeaning: ""
+  amoneromeaning: ""
+  qimporting: ''
+  aimporting: >
+  qhf: ''
+  ahf: ''
+  ahf1: ''
+  qvideos: ''
+  avideos: >
+  video_intro: ''
+  video_essentials: ''
+  video_sa: ''
+  video_ringsig: ''
+  video_ringct: ''
+  mvideos: ""
+  aavailable: ''
+  and: ''
+  qlongtimemove: ''
+  alongtimemove: ''
+  qvuln: ''
+  avuln: >
+  vulnspotify: ''
+  qasicresistance: ""
+  aasicresistance: ''
+  aasicresistance1: ''
+  aasicresistance2: >
+  qmaxsupply: ''
+  amaxsupply: ''
+
+mining:
+  intro1: ''
+  intro2: ''
+  pow: ''
+  philosophy: >
+  efficiency: ''
+  miningset: ''
+  miningsetp: >
+  procons: ""
+  solo: ''
+  prosecure: ''
+  prowallet: ''
+  conlong: ""
+  pool: ''
+  propay: ''
+  conopfee: ''
+  conminfee: ''
+  conpolcent: ''
+  choosepol: ""
+  hardware: ''
+  hardwarep: ''
+  software: ''
+  softwarep: >
+  software_para: ''
+  support: ''
+  supportp: ''
+  p2poolh: ""
+  p2poolnew: >
+  p2poolp: >
+  p2poolfeatures: ''
+  p2pdecentralized: ''
+  p2ppermissionless: ''
+  p2ptrustless: ''
+  p2pplns: ''
+  p2pzerofee: ''
+  p2pzeropayout: ''
+  p2pminpayout: ''
+  p2pmoreinfo: ""
+
+what-is-monero:
+  need-to-know: ''
+  leading: ''
+  leading_para1: ''
+  leading_para2: ''
+  confidential: ''
+  confidential_para1: ""
+  confidential_para2: ''
+  grassroots: ''
+  grassroots_p1: ''
+  grassroots_p2: ''
+  grassroots_p3: ''
+  grassroots_p4: ''
+  grassroots_p5: ''
+  grassroots_p6: ''
+  grassroots_p7: ''
+  grassroots_p8: ''
+  electronic: ''
+  electronic_para1: ''
+  videos: ''
+  aboutb: ''
+  walletb: ''
+  getb: ''
+  joinb: ''
+
+about:
+  history: ''
+  history_para1: ''
+  history_para2: ''
+  history_para3: ''
+  history_para4: ''
+  values: ''
+  values_para: ''
+  security: ''
+  security_para: ''
+  privacy: ''
+  privacy_para: ''
+  decentralization: ''
+  decentralization_para: ''
+
+
+developer-guides:
+  head: ''
+  outdated: ""
+  rpc: ''
+  daemonrpc: ''
+  daemonrpc_descr: ''
+  walletrpc: ''
+  walletrpc_descr: ''
+  external: ''
+  external_head: ''
+  monerodocs: ''
+  moneroexamples: ''
+  moneroecosystem: ''
+  monerose: ''
+  libraries: ''
+  libraries_para: ''
+  monero-javascript: ''
+  monero-nodejs: ''
+  monerophp: ''
+  monerowp: ''
+  monero-python: ''
+  moneriote-python: ''
+  monerorpc: ''
+  monero-java: ''
+  monero-cpp: ''
+  vanity-monero: ''
+  go-monero-rpc-client: ''
+  monero-rs: ''
+  csharp-monero: ''
+
+user-guides:
+  general: ''
+  mining: ''
+  backup: ''
+  nodesync: ''
+  recovery: ''
+  wallets: ''
+  hardwarewallet: ''
+  anonimizationnetworks: ''
+  offline-backup: ''
+  vps-node: ''
+  import-blockchain: ''
+  monero-tools: ''
+  purchasing-storing: ''
+  verify-allos: ''
+  verify-windows: ''
+  mine-on-pool: ''
+  solo-mine: ''
+  locked-funds: ''
+  restore-account: ''
+  qubes: ''
+  cli-wallet: ''
+  remote-node-gui: ''
+  view-only: ''
+  prove-payment: ''
+  restore-from-keys: ''
+  ledger-wallet-cli: ''
+  multisig-messaging-system: ''
+  tor_wallet: ''
+  node-i2pzero: ''
+  guiguide: ''
+  tailsguide: ''
+  make-payment: ''
+  change-restore-height: ''
+  back: ''
+
+roadmap:
+  completed: ''
+  ongoing: ''
+  upcoming: ''
+  future: ''
+
+  jan: ''
+  feb: ''
+  mar: ''
+  apr: ''
+  may: ''
+  jun: ''
+  jul: ''
+  aug: ''
+  sep: ''
+  oct: ''
+  nov: ''
+  dec: ''
+  comingsoon: ''
+
+  launched: ''
+  renamed: ''
+  recovered: ''
+  paper1-2: ''
+  paper3: ''
+  released-0-8-8-6: ''
+
+  paper4: ''
+
+  released-0-9-0: ''
+  paper5: ''
+  ringsize-3: ''
+  released-0-10-0: ''
+  splitcoinbase: ''
+  released-0-10-1: ''
+  guibeta1: ''
+
+  enableringct: ''
+  released-0-10-2: ''
+  released-0-10-3-1: ''
+  hfminblock: ''
+  webredesign: ''
+  released-0-11-0: ''
+  fluffyblocks: ''
+  guioutbeta: ''
+  minringsize5: ''
+  releasedgui-0-11-0: ''
+  zeromq: ''
+  subaddress: ''
+  paper6: ''
+  release-0-11-1: ''
+  releasedgui-0-11-1: ''
+  multisig: ''
+
+  released-0-12-0: ''
+  releasedgui-0-12-0: ''
+  cryptonightv2: ''
+  hfring7: ''
+  getmonero-fr-pl: ''
+  released-0-12-1: ''
+  ledger: ''
+  released-0-12-2: ''
+  released-0-12-3: ''
+  releasedgui-0-12-3: ''
+  kovrialpha: ''
+  moneropedialoc: ''
+  getmonero-ar: ''
+  released-0-13-0-2: ''
+  releasedgui-0-13-3: ''
+  cryptonightv3: ''
+  bulletproofs: ''
+  ringsize11: ''
+  released-0-13-0-4: ''
+  paper8-9: ''
+  releasedgui-0-13-0-4: ''
+  paper7: ''
+  paper10: ''
+  mms: ''
+
+  getmonero-de: ''
+  released-0-14-0: ''
+  releasedgui-0-14-0: ''
+  ccs: ''
+  released-0-14-0-2: ''
+  cryptonightr: ''
+  getmonero-pt_br: ''
+  dlsag: ""
+  pruning: ''
+  trezort: ''
+  nanox: ''
+  tori2p: ''
+  multisigms: ''
+  weblate: ""
+  rpcpay: ''
+  ipv6: ''
+  removedpid: ''
+  nodediscovery: ''
+  randomx: ''
+
+  getmoneroweblate: ''
+  releasedgui-0-15-0-4: ''
+  released-0-15-0-5: ''
+  dandelion: ''
+  onionaddress: ''
+  supercop: ''
+  clsag: ''
+  tryptych: ""
+  kastelo: ""
+  layer2: ''
+  released-0-16-0-0: ''
+  released-0-17: ''
+
+  returnaddr: ''
+  atomicswaps: ''
+  bplus: ''
+  p2pool: ''
+  haveno: ''
+
+  ringsize-sera-tryp: ''
+  seraphis-jamtis: ''
+  ospead: ''
+  released-0-18: ''
+  hardfork-v15: ''
+  xmr-eth-atomicswaps: ''
+  bp++: ''
+  lws-subaddress: ''
+
+research-lab:
+  intro: ''
+  intro_email: ""
+  mrl_papers: ''
+  abstract: ''
+  introduction: ''
+  read-paper: ''
+  summary: ''
+  mrlhtp: ''
+  mrlhtp_summary: ''
+  mrl1: ''
+  mrl1_abstract: ''
+  mrl2: ''
+  mrl2_abstract: ''
+  mrl3: ''
+  mrl3_abstract: ''
+  mrl4: ''
+  mrl4_abstract: ''
+  mrl5: ''
+  mrl5_abstract: ''
+  mrl6: ''
+  mrl6_abstract: ''
+  mrl7: ''
+  mrl7_abstract: ''
+  mrl8: ''
+  mrl8_abstract: ''
+  mrl9: ''
+  mrl9_abstract: ''
+  mrl10: ''
+  mrl10_abstract: ''
+  iacr2019654: ''
+  iacr2019654_abstract: ''
+  iacr2020018: ""
+  iacr2020018_abstract: ''
+  iacr2020312: ""
+  iacr2020312_note: ""
+  iacr2020312_abstract: ''
+  cryptonote: ''
+  cryptonote-whitepaper: ''
+  cryptonote-whitepaper_para: ''
+  annotated: ''
+  annotated_para: ''
+  brandon: ''
+  brandon_para: ''
+  libraryp: ""
+  librarybutton: ''
+
+
+specs:
+  title: ''
+  intro: ''
+  intro_link: ''
+  intro1: ''
+  pow_title: ''
+  pow: ''
+  pow_link: ''
+  block_emission_title: ''
+  block_emission_pre: ""
+  block_emission_main: ""
+  block_emission_tail: ""
+  blocks_title: ''
+  blocks: ''
+  privacytech_title: ''
+  privacytech_ringct: ""
+  privacytech_sh: ""
+  privacytech_rs: ''
+  privacytech_tor-i2p: ''
+  privacytech_dandelion: ''
+
+library:
+  description: ""
+  books: ''
+  zerotomonerov2: ""
+  zerotomonerov2p: >
+  zerotomonerov1: ""
+  zerotomonerov1p: >
+  masteringmonerop: >
+  cheatsheets: ''
+  thesalmonseries: ""
+  thesalmonseriesp: >
+  moneroaddressescheatsheet20201206: ""
+  moneroaddressescheatsheet20201206p: >
+  ringscheatsheet20210301: ""
+  ringscheatsheet20210301p: >
+  rctcheatsheet20210604: ""
+  rctcheatsheet20210604p: >
+  zkbasicscheatsheet20220621: ""
+  zkbasicscheatsheet20220621p: >
+  magazines: ''
+  revuoq4p: >
+  revuoq3p: >
+
+moneropedia:
+  description: >
+  instructions: ''
+  add_new_text1: ''
+  add_new_link: ''
+  add_new_text2: ''
+  back: ''
+  entries:
+    account: ''
+    address: ''
+    airgap: ''
+    atomic-units: ''
+    blockchain: ''
+    block: ''
+    bootstrap-node: ''
+    bulletproofs: ''
+    canonically-unique-host: ''
+    change: ''
+    clearnet: ''
+    coinbase: ''
+    consensus: ''
+    cryptocurrency: ''
+    daemon: ''
+    denominations: ''
+    encryption: ''
+    fluffyblocks: ''
+    fungibility: ''
+    kovri: ''
+    locally-unique-host: ''
+    mining: ''
+    mnemonicseed: ''
+    node: ''
+    openalias: ''
+    paperwallet: ''
+    paymentid: ''
+    pedersen-commitment: ''
+    pruning: ''
+    randomx: ''
+    remote-node: ''
+    ringCT: ''
+    ringsignatures: ''
+    ring-size: ''
+    scalability: ''
+    signature: ''
+    smartmining: ''
+    spendkey: ''
+    stealthaddress: ''
+    tail-emission: ''
+    transaction: ''
+    unlocktime: ''
+    viewkey: ''
+    wallet: ''
+    clsag: ''
+
+tools:
+  intro1: ''
+  intro2: ''
+  block-explorers: ''
+  address-generators: ''
+
+  network: ''
+  monerohash-nodes: ''
+  localmonero-blocks: ''
+  nownodes: ''
+  getblockio: ''
+  monerofail: ''
+  txstreet: ''
+
+  market: ''
+  backtestking: ''
+  cryptofacile: ''
+  cryptoradar: ''
+  kryptocheck: ''
+
+  misc: ''
+  monerohow-stats: ''
+  moneropro: ''
+  monerologs: ''
+  monerobase: ''
+  gateways: ''
+
+blog:
+  allposts: ''
+  urgent: ''
+  releases: ''
+  community: ''
+  meetinglogs: ''
+  author: ''
+  date: ''
+  filter: ""
+  next: ''
+  previous: ''
+
+
+tags:
+  notags: ''
+
+accessibility:
+  arrowup: ''
+  gotop: ''
+  guiscreen: ''
+  cliscreen: ''
+
+error:
+  title: ''
+  button: ''

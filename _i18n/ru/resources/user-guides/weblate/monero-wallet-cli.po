@@ -7,13 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-07-12 16:43+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-27 09:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/monero-wallet-cli/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:2
@@ -22,28 +26,35 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:6
-#, fuzzy
-#| msgid "`monero-wallet-cli` is the wallet software that ships with the Monero tree. It is a console program, and manages an account. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account."
 msgid "`monero-wallet-cli` is the wallet software shipped in the Monero archives. It is a console program, and manages an account. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account."
-msgstr "`monero-wallet-cli` - это программное обеспечение кошелька, которое поставляется вместе с Monero. Оно представляет собой консольную программу, которая управляет учетными записями пользователей Monero. В то время как кошелек Bitcoin управляет как учетными записями, так и блокчейном, в Monero эти функции разделены: `monerod` обрабатывает блокчейн, а `monero-wallet-cli` обрабатывает учетные записи пользователей."
+msgstr ""
+"`monero-wallet-cli` - это программное обеспечение кошелька, которое "
+"поставляется в архиве Monero. Оно представляет собой консольную программу, "
+"которая управляет учетными записями пользователей Monero. В то время как "
+"кошелек Bitcoin управляет как учетными записями, так и блокчейном, в Monero "
+"эти функции разделены: `monerod` обрабатывает блокчейн, а `monero-wallet-cli`"
+" обрабатывает учетные записи пользователей."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:8
-#, fuzzy
-#| msgid "This guide will show how to perform various operations from the `monero-wallet-cli` UI. The guide assumes you are using the most recent version of Monero and have already created an account according to the other guides."
 msgid "This guide will show how to perform various operations with `monero-wallet-cli`. The guide assumes you are using the most recent version of Monero and have already created an account according to the other guides."
-msgstr "В этом руководстве будет показано, как выполнять различные операции из пользовательского интерфейса `monero-wallet-cli`. В руководстве предполагается, что вы используете самую последнюю версию Monero и уже создали учетную запись."
+msgstr ""
+"В этом руководстве будет показано, как выполнять различные операции из "
+"интерфейса `monero-wallet-cli`. В руководстве предполагается, что вы "
+"используете самую последнюю версию Monero и уже создали учетную запись."
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:9
 #, no-wrap
 msgid "Overview"
-msgstr ""
+msgstr "Обзор"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:12
 msgid "You can have a list of the most important commands by running `help`:"
 msgstr ""
+"Вы можете вывести список наиболее важных команд, воспользовавшись командой "
+"`help`:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:13
@@ -71,13 +82,37 @@ msgid ""
 "\n"
 "\"donate <amount>\" - Donate XMR to the development team.\n"
 msgstr ""
+"Наиболее важные команды:\n"
+"\n"
+"\"welcome\" - Показать приветственное сообщение.\n"
+"\"help all\" - Показать список всех доступных команд.\n"
+"\"help <command>\" - Показать документацию по команде.\n"
+"\"apropos <keyword>\" - Показывать команды, связанные с ключевым словом.\n"
+"\n"
+"\"wallet_info\" - Показатьосновной адрес и дополнительную информацию о "
+"кошельке.\n"
+"\"balance\" - Показать баланс\n"
+"\"address all\" - Показать все адреса кошелька\n"
+"\"address new [<label допускается использование пробелов>]\" - Создать новый "
+"подадрес.\n"
+"\"transfer <address> <amount>\" - Отправить XMR на адрес.\n"
+"\"show_transfers [in|out|pending|failed|pool]\" - Показать транзакции.\n"
+"\"sweep_all <address>\" - Отправить весь доступный баланс на другой кошелек."
+"\n"
+"\"seed\" - Показать мнемоническую фразу, состоящую из 25 слов, которую "
+"впоследствии можно использовать для восстановления этого кошелька.\n"
+"\"refresh\" - Синхронизировать кошелек с сетью Monero.\n"
+"\"status\" - Показать текущее состояние кошелька.\n"
+"\"version\" - Показать текущую версию программного обеспечения.\n"
+"\"exit\" - Закрыть кошелёк.\n"
+"\n"
+"\"donate <amount>\" - Пожертвовать XMR команде разработчиков.\n"
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:37
-#, fuzzy, no-wrap
-#| msgid "## Checking your balance"
+#, no-wrap
 msgid "Checking your balance"
-msgstr "## Проверяем свой баланс"
+msgstr "Проверяем свой баланс"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:42
@@ -87,7 +122,7 @@ msgstr "Поскольку обработка данных в блокчейне
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:44
 msgid "Output:"
-msgstr ""
+msgstr "Вывод:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:45
@@ -97,72 +132,83 @@ msgid ""
 "Tag: (No tag assigned)\n"
 "Balance: 7.499942880000, unlocked balance: 7.499942880000\n"
 msgstr ""
+"Выбранная в данный момент учетная запись: [0] Основная учетная запись\n"
+"Тег: (тег не присвоен)\n"
+"Баланс: 7.499942880000, разблокированный баланс: 7.499942880000\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:52
-#, fuzzy
-#| msgid "In this example, `Balance` is your total balance. The `unlocked balance` is the amount currently available to spend. Newly received transactions require 10 confirmations on the blockchain before being unlocked. `unlocked dust` refers to very small amounts of unspent outputs that may have accumulated in your account."
 msgid "In this example you're viewing the balance of your primary account (with index `[0]`). `Balance` is your total balance. The `unlocked balance` is the amount currently available to spend. Newly received transactions require 10 confirmations on the blockchain before being unlocked."
-msgstr "В этом примере `Balance` (Баланс) - это ваш текущий общий баланс. `Unlocked balance` (Разблокированный баланс) - это сумма, которую в настоящее время можно потратить. Недавно совершенные транзакции требуют 10 подтверждений в блокчейне перед разблокировкой. Разблокированная пыль (unlocked dust) относится к очень небольшим количествам неизрасходованных выходов, которые могут быть накоплены в процессе работы вашей учетной записи."
+msgstr ""
+"В этом примере вы видите баланс своей основной учётной записи (с индексом "
+"`[0]`). `Balance` (Баланс) - это ваш текущий общий баланс. `Unlocked balance`"
+" (Разблокированный баланс) - это сумма, которую в настоящее время можно "
+"потратить. Недавно совершенные транзакции требуют 10 подтверждений в "
+"блокчейне перед разблокировкой."
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:53
-#, fuzzy, no-wrap
-#| msgid "## Sending monero"
+#, no-wrap
 msgid "Sending monero"
-msgstr "## Отправка Monero"
+msgstr "Отправка Monero"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:56
 msgid "You will need the standard address you want to send to (a long string starting with '4' or a '8'). The command structure is:"
 msgstr ""
+"Вам понадобится стандартный адрес, на который вы хотите отправить средства ("
+"длинная строка, которая начинается с '4' или '8'). Структура команды:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:57
-#, fuzzy, no-wrap
-#| msgid "    transfer ADDRESS AMOUNT\n"
+#, no-wrap
 msgid "transfer ADDRESS AMOUNT\n"
-msgstr "    transfer ADDRESS AMOUNT\n"
+msgstr "transfer АДРЕС СУММА\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:62
 msgid "Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how many monero you want to send."
 msgstr ""
+"Замените `АДРЕС` адресом, на который вы хотите отправить средства, а `СУММУ` "
+"количеством monero, которые вы хотите отправить."
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:63
-#, fuzzy, no-wrap
-#| msgid "## Receiving monero"
+#, no-wrap
 msgid "Receiving monero"
-msgstr "## Получение Monero"
+msgstr "Получение Monero"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:66
-#, fuzzy
-#| msgid "If you have your own Monero address, you just need to give your standard address to someone."
 msgid "If you have your own Monero address, you just need to give your address to someone."
-msgstr "Если у вас есть собственный кошелек Monero, для получения средств на него вам просто нужно предоставить кому-то свой стандартный адрес."
+msgstr ""
+"Если у вас есть собственный кошелек Monero, для получения средств на него "
+"вам просто нужно предоставить кому-то свой адрес."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:68
-#, fuzzy
-#| msgid "You can find out your address with:"
 msgid "You can find out your primary address with:"
-msgstr "Вы можете узнать свой стандартный адрес, если введете команду:"
+msgstr "Вы можете узнать свой основной адрес, если введете команду:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:69
-#, fuzzy, no-wrap
-#| msgid "    address\n"
+#, no-wrap
 msgid "address\n"
-msgstr "    address\n"
+msgstr "address\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:76
-#, fuzzy
-#| msgid "Since Monero is anonymous, you won't see the origin address the funds you receive came from. If you want to know, for instance to credit a particular customer, you'll have to tell the sender to use a payment ID, which is an arbitrary optional tag which gets attached to a transaction. To make life easier, you can generate an address that already includes a random payment ID:"
 msgid "Since Monero is anonymous, you won't see the origin address the funds you receive came from. If you want to know, for instance to credit a particular customer, you'll have to tell the sender to use a payment ID, which is an arbitrary optional tag which gets attached to a transaction. It's not possible to use standalone payment addresses, but you can generate an address that already includes a random payment ID (integrated addresss) using `integrated_address`:"
-msgstr "Поскольку Monero анонимная криптовалюта, вы не увидите адрес источника, из которого вы получили свои средства. Если вам нужно знать эти данные, например, для кредитования конкретного клиента, вам нужно будет договориться с отправителем, чтобы он использовал идентификатор платежа, который является произвольным необязательным тегом, который привязывается к транзакции. Чтобы упростить себе жизнь, вы можете создать интегрированный адрес, который уже содержит этот случайный идентификатор платежа:"
+msgstr ""
+"Поскольку Monero анонимная криптовалюта, вы не увидите адрес источника, от "
+"которого вы получили свои средства. Если вам нужно узнать эти данные, "
+"например, для кредитования конкретного клиента, вам нужно будет договориться "
+"с отправителем, чтобы он использовал идентификатор платежа, который является "
+"произвольным необязательным тегом, который привязывается к транзакции. На "
+"данный момент нет возможности использовать автономные адреса, однако, чтобы "
+"упростить себе жизнь, вы можете создать адрес, который уже содержит этот "
+"случайный идентификатор платежа (интегрированный адрес) используя "
+"`integrated_address`:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:77
@@ -171,103 +217,122 @@ msgid ""
 "Random payment ID: <82d79055f3b27f56>\n"
 "Matching integrated address: 4KHQkZ4MmVePC2yau6Mb8vhuGGy8LVdsZD8CFcQJvr4BSTfC5AQX3aXCn5RiDPjvsEHiJu1TC1ybR8pRTCbZM5bhTrAD3HDwWMtAn1K7nV\n"
 msgstr ""
+"Случайный идентификатор платежа: <82d79055f3b27f56>\n"
+"Соответствующий интегрированный адрес: 4KHQkZ4MmVePC2yau6Mb8vhuGGy8LVdsZD8CFc"
+"QJvr4BSTfC5AQX3aXCn5RiDPjvsEHiJu1TC1ybR8pRTCbZM5bhTrAD3HDwWMtAn1K7nV\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:84
-#, fuzzy
-#| msgid "This will generate a random payment ID, and give you the address that includes your own account and that payment ID. If you want to select a particular payment ID, you can do that too:"
 msgid "This will generate a random payment ID, and give you the address that includes your own account and that payment ID. If you want to select a particular payment ID, you can do that too. Use:"
-msgstr "Это создаст случайный идентификатор платежа и предоставит вам адрес, который будет включать ваш стандартный адрес и этот идентификатор платежа. Если вы хотите выбрать конкретный идентификатор платежа, вы также можете это сделать с помощью команды:"
+msgstr ""
+"Это создаст случайный идентификатор платежа и предоставит вам адрес, который "
+"будет включать ваш стандартный адрес и этот идентификатор платежа. Если вы "
+"хотите выбрать конкретный идентификатор платежа, вы также можете это сделать "
+"с помощью команды. Используйте:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:85
-#, fuzzy, no-wrap
-#| msgid "    integrated_address 12346780abcdef00\n"
+#, no-wrap
 msgid "integrated_address 82d79055f3b27f56\n"
-msgstr "    integrated_address 12346780abcdef00\n"
+msgstr "integrated_address 82d79055f3b27f56\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:91
-#, fuzzy
-#| msgid "Payments made to an integrated address generated from your account will go to your account, with that payment id attached, so you can tell payments apart."
 msgid "Payments made to an integrated address generated from your account will go to your account, with that payment ID attached, so you can tell payments apart."
-msgstr "Платежи, внесенные в интегрированный адрес, созданный в вашей учетной записи, будут отправляться вам с прикрепленным идентификатором платежа, чтобы вы могли вести их учет отдельно."
+msgstr ""
+"Платежи, внесенные в интегрированный адрес, созданный в вашей учетной "
+"записи, будут отправляться вам с прикрепленным идентификатором платежа, "
+"чтобы вы могли вести их учет отдельно."
 
 #. type: Title ###
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:92
 #, no-wrap
 msgid "Using subaddresses"
-msgstr ""
+msgstr "Использование подадресов"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:95
 msgid "It's suggested to use subaddresses (starting with `8`) instead of your main address (starting with `4`) to receive funds. Run:"
 msgstr ""
+"Для получения средств рекомендуется использовать именно подадреса ("
+"начинающиеся с `8`), вместо вашего основного адреса (начинающегося с `4`). "
+"Используйте:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:96
 #, no-wrap
 msgid "address new [<label text with white spaces allowed>]\n"
-msgstr ""
+msgstr "address new [<label допускается использование пробелов>]\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:102
 msgid "This will generate a subaddress and its optional label, which addess you can share to receive payment on the account it's linked to.  For example,"
 msgstr ""
+"Это приведет к созданию подадреса и соответствующей метки адреса, которой вы "
+"можете поделиться, чтобы получить платеж на учетную запись, с которой он "
+"связан.  Например,"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:103
 #, no-wrap
 msgid "address new github_donations\n"
-msgstr ""
+msgstr "address new github_donations\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:108
 msgid "will generate a subaddress and its label 'github_donations'."
-msgstr ""
+msgstr "будет сгенирован подадрес с меткой 'github_donations'."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:110
 msgid "To view all generated addresses, run:"
-msgstr ""
+msgstr "Чтобы посмотреть все сгенерированные адреса, выполните:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:111
-#, fuzzy, no-wrap
-#| msgid "    address\n"
+#, no-wrap
 msgid "address all\n"
-msgstr "    address\n"
+msgstr "address all\n"
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:115
-#, fuzzy, no-wrap
-#| msgid "## Proving to a third party you paid someone"
+#, no-wrap
 msgid "Proving to a third party you paid someone"
-msgstr "## Как доказать третьей стороне, что вы заплатили кому-то"
+msgstr "Как доказать третьей стороне, что вы заплатили кому-то"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:124
 msgid "If you pay a merchant, and the merchant claims to not have received the funds, you may need to prove to a third party you did send the funds - or even to the merchant, if it is a honest mistake. Monero is private, so you can't just point to your transaction in the blockchain, as you can't tell who sent it, and who received it. However, by supplying the per-transaction private key to a party, that party can tell whether that transaction sent monero to that particular address. Note that storing these per-transaction keys is disabled by default, and you will have to enable it before sending, if you think you may need it:"
-msgstr "Если вы платите субъекту, а он заявляет, что не получил средств, вам может потребоваться доказать третьему лицу, которому вы отправляли средства, или даже самому субъекту, что платеж был действительно отправлен. Monero является конфиденциальной сетью, поэтому вы не можете просто указать на свою транзакцию в блокчейне, так как вы не можете сказать, кто ее отправил, и кто ее получил. Однако существует возможность предоставлять `tx key` (Ключ транзакций) третьей стороне, а эта сторона уже сможет определить, была ли отправлена эта транзакция Monero этому конкретному адресу. Обратите внимание, что сохранение этих ключей для каждой транзакции отключено по умолчанию, и вам нужно будет включить его перед отправкой, если вы считаете, что вам может понадобиться данная функция. Делается это с помощью команды:"
+msgstr ""
+"Если вы платите субъекту, а он заявляет, что не получил средств, вам может "
+"потребоваться доказать третьему лицу, которому вы отправляли средства, или "
+"даже самому субъекту, что платеж был действительно отправлен. Monero "
+"является конфиденциальной сетью, поэтому вы не можете просто указать на свою "
+"транзакцию в блокчейне, так как вы не можете сказать, кто ее отправил и кто "
+"ее получил. Однако существует возможность предоставить третьей стороне "
+"приватный ключ, а эта сторона уже сможет определить, была ли отправлена эта "
+"транзакция Monero конкретному адресу. Обратите внимание, что сохранение этих "
+"ключей для каждой транзакции выключено по умолчанию, и вам нужно будет "
+"включить его перед отправкой, если вы считаете, что вам может понадобиться "
+"данная функция. Это делается это с помощью команды:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:125
-#, fuzzy, no-wrap
-#| msgid "    set store-tx-info 1\n"
+#, no-wrap
 msgid "set store-tx-info 1\n"
-msgstr "    set store-tx-info 1\n"
+msgstr "set store-tx-info 1\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:130
 msgid "You can retrieve the tx key from an earlier transaction:"
-msgstr "Вы можете извлечь `tx key` (Ключ транзакций) из более ранней транзакции:"
+msgstr "Вы можете извлечь tx key (Ключ транзакций) из более ранней транзакции:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:131
-#, fuzzy, no-wrap
-#| msgid "    get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
+#, no-wrap
 msgid "get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
-msgstr "    get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
+msgstr ""
+"get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:140
@@ -281,36 +346,38 @@ msgstr "Если вы являетесь третьей стороной (то �
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:144
-#, fuzzy, no-wrap
-#| msgid "    check_tx_key TXID TXKEY ADDRESS\n"
+#, no-wrap
 msgid "check_tx_key TXID TXKEY ADDRESS\n"
-msgstr "    check_tx_key TXID TXKEY ADDRESS\n"
+msgstr "check_tx_key TXID TXKEY ADDRESS\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:151
-#, fuzzy
-#| msgid "Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination address which were supplied to you, respectively. monero-wallet-cli will check that transaction and let you know how much monero this transaction paid to the given address."
 msgid "Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination address which were supplied to you, respectively. `monero-wallet-cli` will check that transaction and let you know how much monero this transaction paid to the given address."
-msgstr "Укажите вместо `TXID`, `TXKEY` и `ADDRESS` соответственно идентификатор транзакции, ключ транзакции и адрес получателя, которые были предоставлен вам. monero-wallet-cli проверит эту транзакцию и сообщит вам, сколько денег было оплачено этой транзакцией по указанному адресу."
+msgstr ""
+"Укажите вместо `TXID`, `TXKEY` и `ADDRESS` соответственно идентификатор "
+"транзакции, ключ транзакции и адрес получателя, которые были предоставлен "
+"вам. `monero-wallet-cli` проверит эту транзакцию и сообщит вам, сколько "
+"денег было оплачено этой транзакцией по указанному адресу."
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:152
-#, fuzzy, no-wrap
-#| msgid "## How to find a payment to you"
+#, no-wrap
 msgid "How to find a payment to you"
-msgstr "## Как найти отправленный вам платеж"
+msgstr "Как найти отправленный вам платеж"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:155
 msgid "If you received a payment using a particular payment ID, you can look it up:"
-msgstr "Если вы получили платеж с использованием определенного `payment id` (Идентификатор платежа), вы можете посмотреть информацию об этом с помощью команды:"
+msgstr ""
+"Если вы получили платеж с использованием определенного payment ID ("
+"Идентификатор платежа), вы можете посмотреть информацию об этом с помощью "
+"команды:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:156
-#, fuzzy, no-wrap
-#| msgid "    payments PAYMENTID\n"
+#, no-wrap
 msgid "payments PAYMENTID\n"
-msgstr "    payments PAYMENTID\n"
+msgstr "payments PAYMENTID\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:161
@@ -324,10 +391,9 @@ msgstr "В более общем плане вы можете просматри
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:164
-#, fuzzy, no-wrap
-#| msgid "    show_transfers\n"
+#, no-wrap
 msgid "show_transfers\n"
-msgstr "    show_transfers\n"
+msgstr "show_transfers\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:170
@@ -336,10 +402,9 @@ msgstr "Вы можете дополнительно указать высоту
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:171
-#, fuzzy, no-wrap
-#| msgid "    show_transfers in 650000\n"
+#, no-wrap
 msgid "show_transfers in 650000\n"
-msgstr "    show_transfers in 650000\n"
+msgstr "show_transfers в 650000\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:177
@@ -353,10 +418,9 @@ msgstr "Если вы хотите запустить фоновый майни�
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:180
-#, fuzzy, no-wrap
-#| msgid "    start_mining 2\n"
+#, no-wrap
 msgid "start_mining 2\n"
-msgstr "    start_mining 2\n"
+msgstr "start_mining 2\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:186
@@ -365,10 +429,9 @@ msgstr "Это запустит майнинг на демоне в 2 поток
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:187
-#, fuzzy, no-wrap
-#| msgid "    stop_mining\n"
+#, no-wrap
 msgid "stop_mining\n"
-msgstr "    stop_mining\n"
+msgstr "stop_mining\n"
 
 #~ msgid "Example:"
 #~ msgstr "Пример:"

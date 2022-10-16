@@ -8,18 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-02 09:17+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-10-28 18:33+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/view_only/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:4
@@ -29,24 +34,33 @@ msgid ""
 "key, it can't sign transactions and it can't see outgoing transactions. This "
 "makes them particularly interesting for"
 msgstr ""
+"Кошелёк, предназначенный только для просмотра, представляет собой "
+"специальный тип кошелька, позволяющий только просматривать входящие "
+"транзакции. Поскольку в нём не хранится вашей мнемонической фразы и "
+"приватного ключа траты, с его помощью нельзя подписывать транзакции и "
+"просматривать исходящие транзакции. Это делает такой кошелёк интересным с "
+"точки зрения"
 
 #. type: Bullet: '* '
 #: _i18n/en/resources/user-guides/view_only.md:8
 #, markdown-text
 msgid "Validate incoming transactions to cold wallets or hardware wallets"
-msgstr ""
+msgstr "валидации входящих на холодные или аппаратные кошельки транзакций"
 
 #. type: Bullet: '* '
 #: _i18n/en/resources/user-guides/view_only.md:8
 #, markdown-text
 msgid "Monitor incoming donations to a fundraising campaign"
 msgstr ""
+"отслеживания поступающих пожертвований при проведении кампании по сбору "
+"средств"
 
 #. type: Bullet: '* '
 #: _i18n/en/resources/user-guides/view_only.md:8
 #, markdown-text
 msgid "Developers writing libraries to validate payments"
 msgstr ""
+"разработчиков, которые занимаются написанием библиотек для валидации платежей"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:10
@@ -56,6 +70,12 @@ msgid ""
 "signing, by creating unsigned transactions to be signed offline in a cold "
 "device, and later by sending the signed transaction to the network."
 msgstr ""
+"Кошельки, предназначенные для просмотра, не позволяют подписывать "
+"транзакции, а следовательно, вы не сможете тратить средства исключительно с "
+"их помощью. Тем не менее, их можно использовать при подписании транзакций "
+"оффлайн, создавая неподписанные транзакции, которые затем будут подписаны "
+"оффлайн в холодном кошельке. После этого уже подписанная транзакция будет "
+"передана в сеть."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:12
@@ -64,6 +84,10 @@ msgid ""
 "correct. To get a correct balance in a view-only wallet, you have to import "
 "the accompanying key images of each output of the wallet."
 msgstr ""
+"Если в вашем кошельке имеются исходящие транзакции, отображаемый баланс "
+"будет неправильным. Чтобы узнать правильный баланс посредством кошелька, "
+"предназначенного для просмотра, необходимо импортировать соответствующие "
+"образы ключей к каждому выходу, принадлежащему кошельку."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:14
@@ -72,6 +96,9 @@ msgid ""
 "kind of view-only wallet doesn't support offline transaction signing and "
 "importing of key images."
 msgstr ""
+"Также можно создать кошелёк, предназначенный для просмотра, соответствующий "
+"аппаратному кошельку. Однако, такой тип кошелька не позволит подписывать "
+"транзакции оффлайн и импортировать образы ключей."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:16
@@ -79,11 +106,16 @@ msgid ""
 "In order to create a view-only wallet, you must either have access to a "
 "wallet or know the main address and the private view key from a wallet."
 msgstr ""
+"Чтобы создать кошелёк, предназначенный исключительно для просмотра, "
+"необходимо либо иметь доступ к кошельку, либо знать основной адрес и "
+"приватный ключ просмотра для этого кошелька."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:18
 msgid "### CLI: Creating a View-Only Wallet from a Private View Key"
 msgstr ""
+"### CLI: создание кошелька, предназначенного только для просмотра, на основе "
+"приватного ключа просмотра"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:20
@@ -92,6 +124,9 @@ msgid ""
 "the wallet's address and its private (secret) view key. Type `exit` to close "
 "the wallet."
 msgstr ""
+"Откройте существующий кошелёк и введите команды `address` и `viewkey`, чтобы "
+"вывести на экран адрес кошелька и его приватный (секретный) ключ просмотра. "
+"Введите `exit`, чтобы закрыть кошелёк."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:22
@@ -102,11 +137,19 @@ msgid ""
 "key` by the wallet. Paste in your original wallet's address and private "
 "(secret) view key. Next, enter and confirm a password for your new wallet."
 msgstr ""
+"После этого введите `monero-wallet-cli --generate-from-view-key wallet-name` "
+"и создайте кошелёк, предназначенный только для просмотра. Последним "
+"аргументом будет название вашего нового кошелька. Кошелёк выдаст вам "
+"подсказки `Standard address` и `View key`. Введите адрес и приватный "
+"(секретный) ключ вашего оригинального кошелька. Затем введите и подтвердите "
+"пароль для вашего нового кошелька."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:24
 msgid "### GUI: Creating a View-Only Wallet from an Existing Wallet File"
 msgstr ""
+"### GUI: создание кошелька, предназначенного только для просмотра, на основе "
+"файла существующего кошелька"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:26
@@ -114,11 +157,13 @@ msgid ""
 "If you have access to the existing wallet, open your wallet and go to "
 "`Settings` > `Wallet` > `Create a view-only wallet`:"
 msgstr ""
+"Если у вас есть доступ к существующему кошельку, откройте его и в настройках "
+"выберите: `Settings` > `Wallet` > `Create a view-only wallet`:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:28
 msgid "![settings](/img/resources/user-guides/en/view-only/settings.png)"
-msgstr ""
+msgstr "![settings](/img/resources/user-guides/en/view-only/settings.png)"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:30
@@ -126,6 +171,8 @@ msgid ""
 "The view-only wallet file will be created within the same directory and "
 "using your current password."
 msgstr ""
+"Файл кошелька, предназначенного для просмотра, будет создан в той же самой "
+"директории и будет использовать тот же пароль."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:32
@@ -133,16 +180,20 @@ msgid ""
 "Optionally, double-click the `Success` window to copy the message, then "
 "click `OK` to close it:"
 msgstr ""
+"Как вариант, дважды кликните по окну `Success`, чтобы скопировать сообщение, "
+"а затем кликните `OK`, чтобы закрыть его:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:34
 msgid "![Success](/img/resources/user-guides/en/view-only/Success.png)"
-msgstr ""
+msgstr "![Success](/img/resources/user-guides/en/view-only/Success.png)"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:36
 msgid "### GUI: Creating a View-only Wallet from a Private View Key"
 msgstr ""
+"### GUI: создание кошелька, предназначенного только для просмотра, на основе "
+"приватного ключа просмотра"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:38
@@ -150,6 +201,9 @@ msgid ""
 "If you don't have access to the existing wallet, you can create a view-only "
 "wallet by knowing the wallet's main address and its private view key."
 msgstr ""
+"Если у вас нет доступа к существующему кошельку, вы можете создать кошелёк, "
+"предназначенный для просмотра, зная основной адрес и приватный ключ "
+"просмотра этого кошелька."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:40
@@ -157,11 +211,15 @@ msgid ""
 "In order to do that, go to the main Menu and click on `Restore wallet from "
 "keys or mnemonic seed`:"
 msgstr ""
+"Чтобы сделать это, войдите в основное меню и выберите `Restore wallet from "
+"keys or mnemonic seed`:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:42
 msgid "![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)"
 msgstr ""
+"![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-"
+"only.png)"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:44
@@ -169,11 +227,13 @@ msgid ""
 "Enter a name for you view-only wallet file. Optionally, you can change the "
 "file location."
 msgstr ""
+"Введите имя файла вашего кошелька, предназначенного для просмотра. "
+"Опционально вы можете изменить местонахождение файла."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:46
 msgid "Select `Restore from keys`."
-msgstr ""
+msgstr "Выберите `Restore from keys`."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:48
@@ -181,16 +241,18 @@ msgid ""
 "In `Account address (public)` field, enter your wallet's main address, which "
 "starts with 4."
 msgstr ""
+"Введите основной адрес вашего кошелька, начинающийся с 4, в поле `Account "
+"address (public)`."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:50
 msgid "In `View key (private)` field, enter the private view key of your wallet."
-msgstr ""
+msgstr "Введите приватный ключ вашего кошелька в поле `View key (private)`."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:52
 msgid "Leave the `Spend key (private)` field blank."
-msgstr ""
+msgstr "Оставьте поле `Spend key (private)` пустым."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:54
@@ -198,8 +260,12 @@ msgid ""
 "Enter a `Wallet creation date` or a `Restore height` if you have one "
 "(optional)."
 msgstr ""
+"Введите `Wallet creation date` (дату создания кошелька) или `Restore height` "
+"(высоту восстановления), если у вас есть такая возможность."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/view_only.md:55
 msgid "Click on `Next` to create your view-only wallet file."
 msgstr ""
+"Выберите `Next`, чтобы создать файл кошелька, предназначенного только для "
+"просмотра."

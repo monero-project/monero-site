@@ -124,16 +124,8 @@ hangouts:
   bridges: Ovi kanali su povezani sa velikim brojem platformi, dopuštajući zajednici
     da komunicira koristeći njihove omiljene aplikacije za dopisivanje ili protokole.
 merchants:
-  intro1: Trgovci svih vrsta cene finansijsku privatnost koju Monero donosi. Ispod
-    je lista trgovaca za koje znamo da trenutno prihvataju Monero za njihove usluge
-    i proizvode. Ovi trgovci nisu sponzorisani od strane Monero zajednice.. Ako kompanija
-    više ne prihvata Monero, ili biste želeli da se na listi nalazi Vaš posao, molimo
-    Vas
-  intro2: otvorite problem na GitLab-u i obavestite nas
-  intro3: (odaberite "Trgovac" obrazac i ispunite sva polja).
   disclaimer: |
     "Molimo, imajte na umu: ovo linkovi su dostupini kao pogodnost i sluze samo za informativne svrhe; ne predstavljaju podršku Monero zajednice ni prema jednom proizvodu, usluzi ili stavu izlistane korporacije ili organizacije. Monero zajednica ne snosi ikakvu odgovornost za tačnost, legalnost ili sadržaj ovih spoljnih sajtova. Kontaktirajte spoljne sajtove za odgovore u vezi sa njihovim sadržajem. Kao i uvek, Vi ste odgovorni za sprovođenje spostvenih istraživanja. Uvek koristite zdrav razum pri online kupovini."
-  onion: Onion adresa (potreban Tor pretraživač)
 sponsorships:
   intro: Ova preduzeća su podržala Monero Projekat u svom cilju donošenja finansijske
     privatnosti svetu. Ne možemo biti zahvalniji za njihov doprinos. Ukoliko biste
@@ -144,7 +136,6 @@ sponsorships:
   forknetworking: Fork Networking obezbeđuje server koji se koristi za programiranje
     i razvoj.
   symas: Symas sponzoriše CTO Hauard Ču (hyc) za njegov rad na Monero bazi kodova.
-  globee: GloBee sponzoriše glavnu infrastrukturu Monero veb-sajta.
   tari: Tari Labs sponzorišu CDN koji se koristi na ovom veb-sajtu.
 team:
   core: Glavni tim
@@ -303,8 +294,6 @@ downloads:
     odgovorajućem GPG ključu
   showhash3: u izvornom kodu
   showhash4: 'Dva vodiča su dostupna da vas sprovedu kroz verifikacioni proces:'
-  hardware4: Ledger Nano S i Nano X su podržani u Monero CLI, Monero GUI i Monerujo
-    novčanicima.
   mobilelight1: Ovo su mobilni i lagani novčanici koje ugledni članovi zajednice smatraju
     bezbednim. Ako postoji novčanik koji se ne nalazi ovde, možete zatražiti od zajednice
     da ga pogleda i proveri. Idite na našu
@@ -726,8 +715,6 @@ mining:
   intro2: Monero Projekat ne preporučuje bilo koje određeno rudarsko udruženje, softver
     ili hardver, a dole navedeni sadržaj je čisto za informativne svrhe.
   support: Podrška
-  pools: Rudarska udruženja
-  benchmarking_para1: Pogledajte ovde
   software: Softver za Rudarenje
   software_para: Imajte na umu da neki softveri za rudarenje dolaze sa ugrađenom provizijom
     za developera datog softvera.

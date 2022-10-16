@@ -8,13 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-06-29 12:06+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-04-07 12:07+0000\n"
+"Last-Translator: Fabio Risso <fabiorissok@gmail.com>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/verification-allos-advanced/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #
 #. type: Plain text
@@ -43,10 +46,9 @@ msgstr "Esta es una guía avanzada para sistemas operativos Linux, Mac o Windows
 #
 #. type: Title ##
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:21
-#, fuzzy, no-wrap
-#| msgid "## Table of Contents:"
+#, no-wrap
 msgid "Table of Contents:"
-msgstr "## Tabla de Contenidos:"
+msgstr "Tabla de Contenidos:"
 
 #. type: Title ###
 #: _i18n/en/resources/user-guides/verification-allos-advanced.md:23

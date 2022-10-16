@@ -8,43 +8,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-05 14:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-02-25 14:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-moneropedia/scalability/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/scalability.md:1
 #, no-wrap
 msgid "How Monero scaling is flexible and can accommodate many transactions as demand changes"
 msgstr ""
+"Возможность Monero к масштабированию в целях размещения в блоке большего "
+"количества транзакций по мере увеличения общего количества транзакций в сети"
 
 #. type: YAML Front Matter: terms
 #: ../_i18n/en/resources/moneropedia/scalability.md:1
 #, no-wrap
 msgid "[\"scalability\"]"
-msgstr ""
+msgstr "[\"scalability\", \"масштабируемость\"]"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/scalability.md:7
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/scalability.md:8
 #, no-wrap
 msgid "The Basics"
-msgstr ""
+msgstr "Основная информация"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/scalability.md:11
 msgid "The size of Monero @blocks (which contain @transactions) is flexible and can accommodate many transactions as demand changes. Formulas determine how the reward miners receive interacts with the number of transactions they choose to include in blocks. The @blockchain can therefore scale to meet changes in transaction volume."
 msgstr ""
+"Размер @блоков Monero (содержащих @транзакции) является гибким и позволяет "
+"по необходимости вместить множество транзакций. Соразмерность размера "
+"вознаграждений, получаемых майнерами, количеству транзакций, включаемых ими "
+"в блоки, определяется формулами. Таким образом, @блокчейн может "
+"масштабироваться в соответствии с изменением объёма транзакций."
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/scalability.md:12
 msgid "Scaling may also refer to the ability to conduct certain types of intermediate transactions safely without interacting with a blockchain. Monero does not currently support native off-chain solutions like atomic swaps, since its privacy features do not permit the use of required functionality like non-interactive refund transactions or complex scripting. However, academic and industry research is ongoing and promising in this area."
 msgstr ""
+"Масштабирование также может быть связано с возможностью безопасного "
+"проведения определённого типа посреднических транзакций без какого-либо "
+"взаимодействия с блокчейном. В настоящее время Monero не поддерживает "
+"решения, связанные с совершением сделок вне блокчейна, такие как атомные "
+"свопы, поскольку механизмы обеспечения приватности Monero не позволяют "
+"использовать такие необходимые функции, как неинтерактивные транзакции "
+"возмещения или сложные сценарии. Тем не менее академические и отраслевые "
+"исследования в этой области продолжаются и имеют хорошие перспективы."

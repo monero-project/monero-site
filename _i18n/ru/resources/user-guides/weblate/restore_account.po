@@ -1,22 +1,23 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
+# Russian translations for PACKAGE package
+# Copyright (C) 2023 Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Automatically generated, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-11-30 22:17+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-11-30 22:17+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
@@ -26,412 +27,507 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #: ../_i18n/en/resources/user-guides/restore_account.md:3
 #, no-wrap
 msgid "Table of contents"
-msgstr ""
+msgstr "Содержание"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:6
 msgid "[When should I restore a wallet?](#when-should-i-restore-a-wallet)"
 msgstr ""
+"[Когда следует восстанавливать кошелёк?](#when-should-i-restore-a-wallet)"
 
-#
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:8
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
-msgid "[What is needed to restore a wallet from mnemonic seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)"
-msgstr "Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):"
+msgid ""
+"[What is needed to restore a wallet from mnemonic seed?](#what-is-needed-to-"
+"restore-a-wallet-from-mnemonic-seed)"
+msgstr ""
+"[Что необходимо, чтобы восстановить кошелёк на основе мнемонической фразы"
+"?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:10
-msgid "[What is the wallet restore height?](#what-is-the-wallet-restore-height)"
+msgid ""
+"[What is the wallet restore height?](#what-is-the-wallet-restore-height)"
 msgstr ""
+"[Что такое высота восстановления кошелька?](#what-is-the-wallet-restore-"
+"height)"
 
-#
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:12
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
-msgid "[How to restore a wallet from mnemonic seed on Monero GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)"
-msgstr "Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):"
+msgid ""
+"[How to restore a wallet from mnemonic seed on Monero GUI](#how-to-restore-a-"
+"wallet-from-mnemonic-seed-on-monero-gui)"
+msgstr ""
+"[Как восстановить кошелёк на основе мнемонической фразы в случае с Monero "
+"GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)"
 
-#
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:14
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
-msgid "[How to restore a wallet from mnemonic seed on Monero CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)"
-msgstr "Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):"
+msgid ""
+"[How to restore a wallet from mnemonic seed on Monero CLI](#how-to-restore-a-"
+"wallet-from-mnemonic-seed-on-monero-cli)"
+msgstr ""
+"[Как восстановить кошелёк на основе мнемонической фразы в случае с Monero "
+"CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)"
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:16
-msgid "[My restored wallet is showing a wrong balance](#my-restored-wallet-is-showing-a-wrong-balance)"
+msgid ""
+"[My restored wallet is showing a wrong balance](#my-restored-wallet-is-"
+"showing-a-wrong-balance)"
 msgstr ""
+"[Что делать, если восстановленный кошелёк неверно отображает баланс](#my-"
+"restored-wallet-is-showing-a-wrong-balance)"
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:17
 #, no-wrap
 msgid "When should I restore a wallet?"
-msgstr ""
+msgstr "Когда следует восстанавливать кошелёк?"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:22
-msgid "You should restore your @wallet in the following situations: - You lost access to your wallet (you forgot its password, your wallet file is corrupted or your device stopped working/is lost).  - You want to create a copy of your wallet on another device."
+msgid ""
+"You should restore your @wallet in the following situations: - You lost "
+"access to your wallet (you forgot its password, your wallet file is "
+"corrupted or your device stopped working/is lost).  - You want to create a "
+"copy of your wallet on another device."
 msgstr ""
+"@Кошелёк следует восстанавливать в следующих случаях: - Невозможность "
+"получения доступа к собственному кошельку (если вы забыли пароль, файл "
+"кошелька был повреждён или же устройство, на которое был установлен кошелёк, "
+"перестало работать / было потеряно).  - При создании копии кошелька на "
+"другом устройстве."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:24
-msgid "This guide will teach you how to restore a Monero wallet from its @mnemonic-seed."
+msgid ""
+"This guide will teach you how to restore a Monero wallet from its @mnemonic-"
+"seed."
 msgstr ""
+"В данном руководстве содержится информация, которая поможет вам восстановить "
+"кошелёк Monero на основе его @мнемонической-фразы."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:26
-msgid "If you want to restore a wallet from its private keys, please read [this guide]({{site.baseurl}}/resources/user-guides/restore_from_keys.html)."
+msgid ""
+"If you want to restore a wallet from its private keys, please read [this "
+"guide]({{site.baseurl}}/resources/user-guides/restore_from_keys.html)."
 msgstr ""
+"Если же вы хотите восстановить кошелёк на основе его приватных ключей, "
+"пожалуйста, ознакомьтесь с [данным руководством]({{site.baseurl}}/resources/"
+"user-guides/restore_from_keys.html)."
 
-#
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:27
-#, fuzzy, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+#, no-wrap
 msgid "What is needed to restore a wallet from mnemonic seed?"
-msgstr "Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):"
+msgstr ""
+"Что необходимо, чтобы восстановить кошелёк на основе мнемонической фразы?"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:30
-msgid "A valid Monero mnemonic seed is a phrase with 13, 14, or 25 random words (multiple languages are supported). Your mnemonic seed has all the information needed to restore your wallet."
+msgid ""
+"A valid Monero mnemonic seed is a phrase with 13, 14, or 25 random words "
+"(multiple languages are supported). Your mnemonic seed has all the "
+"information needed to restore your wallet."
 msgstr ""
+"Действительная мнемоническая фраза Monero состоит из 13, 14 или 25 случайных "
+"слов (при этом кошельками поддерживается множество языков). Мнемоническая "
+"фраза — это всё, что нужно, чтобы восстановить ваш кошелёк."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:32
-msgid "It is also useful to know your wallet restore height or the creation date of your wallet, since it makes your wallet synchronization faster."
+msgid ""
+"It is also useful to know your wallet restore height or the creation date of "
+"your wallet, since it makes your wallet synchronization faster."
 msgstr ""
+"Также полезно знать высоту восстановления вашего кошелька или дату его "
+"создания, поскольку это ускорит процесс синхронизации."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:33
 #, no-wrap
 msgid "Where can I find my mnemonic seed?"
-msgstr ""
+msgstr "Где можно найти мою мнемоническую фразу?"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:36
-msgid "Most Monero wallets ask the user to write down a mnemonic seed on a paper backup when a wallet is being created. So it's up to you to remember where and how you stored your mnemonic seed."
+msgid ""
+"Most Monero wallets ask the user to write down a mnemonic seed on a paper "
+"backup when a wallet is being created. So it's up to you to remember where "
+"and how you stored your mnemonic seed."
 msgstr ""
+"Большинство кошельков Monero при создании кошелька рекомендует пользователям "
+"записать мнемоническую фразу на бумаге. Так что решайте сами, где и как "
+"сохранить вашу мнемоническую фразу."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:38
-msgid "Alternatively, if you still have access to the wallet being restored, you can usually find your mnemonic seed in a menu with some name like `Seed`, `Keys`, `Secrets`, or `Master Private Key`."
+msgid ""
+"Alternatively, if you still have access to the wallet being restored, you "
+"can usually find your mnemonic seed in a menu with some name like `Seed`, "
+"`Keys`, `Secrets`, or `Master Private Key`."
 msgstr ""
+"Как вариант, если у вас по-прежнему есть доступ к восстанавливаемому "
+"кошельку, вы найдёте мнемоническую фразу в меню с таким заголовком, как "
+"`Seed` (мнемоническая фраза), `Keys` (ключи), `Secrets` (секретные данные) "
+"или `Master Private Key` (основной приватный ключ)."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:39
 #, no-wrap
 msgid "What is the wallet restore height?"
-msgstr ""
+msgstr "Что такое высота восстановления кошелька?"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:42
-msgid "The wallet restore height is a setting that tells your wallet software at which block height it should start scanning the blockchain looking for transactions. Ideally it should be the number of the block which included the first incoming transaction to your wallet."
+msgid ""
+"The wallet restore height is a setting that tells your wallet software at "
+"which block height it should start scanning the blockchain looking for "
+"transactions. Ideally it should be the number of the block which included "
+"the first incoming transaction to your wallet."
 msgstr ""
+"Высота восстановления кошелька — это параметр, который указывает "
+"программному обеспечению вашего кошелька, с какой высоты блока необходимо "
+"начать сканирование блокчейна с целью поиска транзакций. В идеале это должен "
+"быть номер блока, в который была включена первая входящая для вашего "
+"кошелька транзакция."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:44
-msgid "If you set a restore height higher than the block height of your first incoming transaction, your wallet software will not detect all transactions of your wallet. In consequence, your balance will be wrong and your wallet software will not work properly."
+msgid ""
+"If you set a restore height higher than the block height of your first "
+"incoming transaction, your wallet software will not detect all transactions "
+"of your wallet. In consequence, your balance will be wrong and your wallet "
+"software will not work properly."
 msgstr ""
+"Если высота восстановления будет задана выше, чем высота блока с первой "
+"входящей транзакцией, программное обеспечение вашего кошелька не сможет "
+"обнаружить все транзакции, связанные с вашим кошельком. Как следствие, "
+"баланс кошелька будет неверным, а программное обеспечение не будет работать "
+"надлежащим образом."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:46
-msgid "If you set a restore height lower than the block height of your first incoming transaction, your wallet software will scan unnecessary blocks. In consequence, your initial wallet synchronization will take longer than necessary, but your wallet software will still work."
+msgid ""
+"If you set a restore height lower than the block height of your first "
+"incoming transaction, your wallet software will scan unnecessary blocks. In "
+"consequence, your initial wallet synchronization will take longer than "
+"necessary, but your wallet software will still work."
 msgstr ""
+"Если высота восстановления будет ниже, чем высота блока вашей первой "
+"входящей транзакции, программное обеспечение кошелька будет сканировать "
+"ненужные блоки. В результате начальная синхронизация кошелька займёт больше "
+"времени, чем нужно, но программное обеспечение по-прежнему будет работать "
+"так, как нужно."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:48
-msgid "Therefore, if you're unsure about the block height of your first incoming transaction, it's always better to set a lower restore height instead of a higher one."
+msgid ""
+"Therefore, if you're unsure about the block height of your first incoming "
+"transaction, it's always better to set a lower restore height instead of a "
+"higher one."
 msgstr ""
+"Следовательно, если вы не уверены в отношении высоты блока вашей первой "
+"входящей транзакции, лучше задать более низкую высоту."
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:50
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
-msgid "![restore-height](/img/resources/user-guides/en/restore_account/restore-height.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid ""
+"![restore-height](/img/resources/user-guides/en/restore_account/restore-"
+"height.png)"
+msgstr "![restore-height](/img/resources/user-guides/en/restore_account/restore-"
+"height.png)"
 
-#
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:51
-#, fuzzy, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+#, no-wrap
 msgid "How to restore a wallet from mnemonic seed on Monero GUI"
-msgstr "Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):"
+msgstr ""
+"Как восстановить кошелёк на основе мнемонической фразы в случае с Monero GUI"
 
-#
 #. type: Bullet: '1) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:54
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "On the main menu, click on `Restore wallet from keys or mnemonic seed`."
-msgstr "Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):"
+msgstr ""
+"В главном меню выберите `Restore wallet from keys or mnemonic seed` ("
+"Восстановить кошелёк на основе ключей или мнемонической фразы)."
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:56
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
-msgid "![main-menu-restore-wallet](/img/resources/user-guides/en/restore_account/main-menu-restore-wallet.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid ""
+"![main-menu-restore-wallet](/img/resources/user-guides/en/restore_account/"
+"main-menu-restore-wallet.png)"
+msgstr "![main-menu-restore-wallet](/img/resources/user-guides/en/restore_account/"
+"main-menu-restore-wallet.png)"
 
 #. type: Bullet: '2) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:58
 msgid "The `Restore wallet` page will be displayed:"
-msgstr ""
+msgstr "Появится страница `Restore wallet` (Восстановление кошелька):"
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:60
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
-msgid "![restore-from-seed](/img/resources/user-guides/en/restore_account/restore-from-seed.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid ""
+"![restore-from-seed](/img/resources/user-guides/en/restore_account/restore-"
+"from-seed.png)"
+msgstr "![restore-from-seed](/img/resources/user-guides/en/restore_account/restore-"
+"from-seed.png)"
 
 #. type: Bullet: '3) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:62
-msgid "On `Wallet name`, enter the name of the wallet you want to create. You don't need to use the same name of the wallet being restored."
+msgid ""
+"On `Wallet name`, enter the name of the wallet you want to create. You don't "
+"need to use the same name of the wallet being restored."
 msgstr ""
+"В поле `Wallet name` (Имя кошелька) введите имя кошелька, который хотите "
+"создать. Необязательно использовать имя того кошелька, который вы "
+"восстанавливаете."
 
 #. type: Bullet: '4) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:64
-msgid "On `Wallet location`, choose where you want the wallet file to be saved."
+msgid ""
+"On `Wallet location`, choose where you want the wallet file to be saved."
 msgstr ""
+"В поле `Wallet location` (Куда сохранить файлы кошелька) выберите, куда вы "
+"хотите сохранить файлы кошелька."
 
 #. type: Bullet: '5) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:66
 msgid "Keep `Restore from seed` selected."
 msgstr ""
+"Выберите вариант `Restore from seed` (Восстановить на основе мнемонической "
+"фразы)."
 
 #. type: Bullet: '6) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:68
-msgid "On the next field, type your 25 word `mnemonic seed`. It is expected that some mnemonic seeds have repeated words, as they work as a verification for errors (checksum)."
+msgid ""
+"On the next field, type your 25 word `mnemonic seed`. It is expected that "
+"some mnemonic seeds have repeated words, as they work as a verification for "
+"errors (checksum)."
 msgstr ""
+"В следующем поле введите вашу `мнемоническую фразу`, состоящую из 25 слов. "
+"Предполагается, что в некоторых мнемонических фразах слова повторяются. Это "
+"необходимо для защиты от ошибок (функция контрольной суммы)."
 
 #. type: Bullet: '7) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:70
-msgid "Use the field `Seed offset passphrase` to enter your passphrase, if you have one. When you enter a passphrase, Monero GUI will use your mnemonic seed together with your passphrase to compute a new wallet."
+msgid ""
+"Use the field `Seed offset passphrase` to enter your passphrase, if you have "
+"one. When you enter a passphrase, Monero GUI will use your mnemonic seed "
+"together with your passphrase to compute a new wallet."
 msgstr ""
+"В поле `Seed offset passphrase` (Фраза-пароль к мнемонической фразе) введите "
+"фразу-пароль, если таковая у вас имеется. После ввода фразы-пароля Monero "
+"GUI использует вашу мнемоническую фразу вместе с фразой-паролем для "
+"вычисления нового кошелька."
 
 #. type: Bullet: '8) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:72
-msgid "The next field allows you to enter a `Restore height`. Even though this field is optional, it's not recommended to leave it blank, since setting a restore height makes your wallet synchronization faster. Ideally it should be the number of the block which included the first incoming transaction to your wallet:"
+msgid ""
+"The next field allows you to enter a `Restore height`. Even though this "
+"field is optional, it's not recommended to leave it blank, since setting a "
+"restore height makes your wallet synchronization faster. Ideally it should "
+"be the number of the block which included the first incoming transaction to "
+"your wallet:"
 msgstr ""
+"В следующем поле вводится `Restore height` (Высота восстановления). Даже "
+"если заполнение этого поля является необязательным, не рекомендуется "
+"оставлять его пустым, поскольку указание высоты восстановления делает "
+"синхронизацию кошелька быстрее. В идеале это должен быть номер блока, в "
+"который была включена первая входящая транзакция вашего кошелька:"
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:74
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
-msgid "![restore-height-field](/img/resources/user-guides/en/restore_account/restore-height-field.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid ""
+"![restore-height-field](/img/resources/user-guides/en/restore_account/"
+"restore-height-field.png)"
+msgstr "![restore-height-field](/img/resources/user-guides/en/restore_account/"
+"restore-height-field.png)"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:76
-msgid "Alternatively, you can also enter the date or an estimated date (YYYY-MM-DD format) of the first incoming transaction:"
+msgid ""
+"Alternatively, you can also enter the date or an estimated date (YYYY-MM-DD "
+"format) of the first incoming transaction:"
 msgstr ""
+"Как вариант, вы можете ввести точную или приблизительную дату (в формате "
+"ГГ-ММ-ДД) первой входящей транзакции:"
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:78
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
-msgid "![restore-height-field-date](/img/resources/user-guides/en/restore_account/restore-height-field-date.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
+msgid ""
+"![restore-height-field-date](/img/resources/user-guides/en/restore_account/"
+"restore-height-field-date.png)"
+msgstr "![restore-height-field-date](/img/resources/user-guides/en/restore_account/"
+"restore-height-field-date.png)"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:80
 msgid "After entering your restore height, click on `Next` button."
-msgstr ""
+msgstr "После ввода высоты восстановления нажмите `Next` (Далее)."
 
-#
 #. type: Bullet: '9) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:82
-#, fuzzy
-#| msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:"
-msgid "On the next page, give your wallet a strong password and confirm it. Since your wallet will hold your private keys and seed, it is really important to enter a strong password."
-msgstr "На следующей странице ввести сложный пароль для вашего кошелька и подтвердить его перед нажатием стрелки `Right` (Вправо):"
+msgid ""
+"On the next page, give your wallet a strong password and confirm it. Since "
+"your wallet will hold your private keys and seed, it is really important to "
+"enter a strong password."
+msgstr ""
+"На следующей странице введите надёжный пароль для вашего кошелька и "
+"подтвердите его. Поскольку в вашем кошельке будут храниться приватные ключи "
+"и мнемоническая фраза, пароль действительно должен быть надёжным."
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:84
-msgid "![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)"
-msgstr "![wallet password](/img/resources/user-guides/en/restore_account/wallet-password.png)"
+msgid ""
+"![wallet password](/img/resources/user-guides/en/restore_account/wallet-"
+"password.png)"
+msgstr "![wallet password](/img/resources/user-guides/en/restore_account/wallet-"
+"password.png)"
 
 #. type: Bullet: '10) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:86
-msgid "If your wallet is in `Advanced mode`, the `Daemon settings` page will be displayed. Here you can choose whether you want to start a local node or connect to a remote node. Choose your desired option and click on `Next` button."
+msgid ""
+"If your wallet is in `Advanced mode`, the `Daemon settings` page will be "
+"displayed. Here you can choose whether you want to start a local node or "
+"connect to a remote node. Choose your desired option and click on `Next` "
+"button."
 msgstr ""
+"Если ваш кошелёк используется в `Advanced mode` (Продвинутый режим), будет "
+"отображаться страница `Daemon settings` (Настройки демона). Здесь можно "
+"выбрать и либо запустить собственный узел, либо подсоединиться к удалённому. "
+"Следует выбрать подходящий вариант и нажать кнопку `Next` (Далее)."
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:88
-msgid "![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
-msgstr "![daemon settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)"
+msgid ""
+"![daemon settings](/img/resources/user-guides/en/restore_account/daemon-"
+"settings.png)"
+msgstr "![daemon settings](/img/resources/user-guides/en/restore_account/daemon-"
+"settings.png)"
 
 #. type: Bullet: '11) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:90
-msgid "The next page will display a summary of the wallet you are going to restore. Click on `Create wallet` button to restore your wallet:"
+msgid ""
+"The next page will display a summary of the wallet you are going to restore. "
+"Click on `Create wallet` button to restore your wallet:"
 msgstr ""
+"На следующей странице отображается краткое описание кошелька, который вы "
+"собираетесь создать. Чтобы восстановить кошелёк, следует нажать кнопку `"
+"Create wallet` (Создать кошелёк):"
 
-#
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:92
-msgid "![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)"
-msgstr "![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)"
+msgid ""
+"![all set up](/img/resources/user-guides/en/restore_account/all-set-up.png)"
+msgstr ""
 
-#
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:93
-#, fuzzy, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+#, no-wrap
 msgid "How to restore a wallet from mnemonic seed on Monero CLI"
-msgstr "Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):"
+msgstr ""
+"Как восстановить кошелёк на основе мнемонической фразы в случае с Monero CLI"
 
 #. type: Bullet: '1) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:96
-msgid "Open the terminal on your Monero CLI directory and run the following command:"
+msgid ""
+"Open the terminal on your Monero CLI directory and run the following command:"
 msgstr ""
+"Следует открыть панель командной строки в директории Monero CLI и ввести "
+"следующую команду:"
 
-#
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:98
-#, fuzzy
-#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
 msgid "Linux: `./monero-wallet-cli --restore-deterministic-wallet`"
-msgstr "- В окне ввода команды напечатать: `monero-wallet-cli --restore-deterministic-wallet`"
+msgstr "Linux: `./monero-wallet-cli --restore-deterministic-wallet`"
 
-#
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:100
-#, fuzzy
-#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
 msgid "Windows: `monero-wallet-cli --restore-deterministic-wallet`"
-msgstr "- В окне ввода команды напечатать: `monero-wallet-cli --restore-deterministic-wallet`"
+msgstr "Windows: `monero-wallet-cli --restore-deterministic-wallet`"
 
 #. type: Bullet: '2) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:102
-msgid "Next, you will be asked for a wallet file name. Enter the name of the wallet you want to create and press `Enter`."
+msgid ""
+"Next, you will be asked for a wallet file name. Enter the name of the wallet "
+"you want to create and press `Enter`."
 msgstr ""
+"Затем вас попросят указать имя файла кошелька. Введите имя кошелька, который "
+"вы хотите создать, и нажмите `Enter`."
 
 #. type: Bullet: '3) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:104
 msgid "Next, enter your 25 word mnemonic seed."
-msgstr ""
+msgstr "Затем следует ввести мнемоническую фразу, состоящую из 25 слов."
 
 #. type: Bullet: '4) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:106
-msgid "Next, you will be asked to enter a seed offset passphrase if you have one (this is NOT your wallet password)."
+msgid ""
+"Next, you will be asked to enter a seed offset passphrase if you have one "
+"(this is NOT your wallet password)."
 msgstr ""
 
 #. type: Bullet: '5) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:108
-msgid "Monero CLI will then ask you to give your wallet a password and confirm it. Since your wallet will hold your private keys and seed, it is really important to enter a strong password."
+msgid ""
+"Monero CLI will then ask you to give your wallet a password and confirm it. "
+"Since your wallet will hold your private keys and seed, it is really "
+"important to enter a strong password."
 msgstr ""
 
 #. type: Bullet: '6) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:110
-msgid "Next, Monero CLI will ask for a `Restore height`. Even though it is optional, it's not recommended to leave it blank, since setting a restore height makes your wallet synchronization faster. Ideally it should be the number of the block which included the first incoming transaction to your wallet. Alternatively, you can also enter the date or an estimated date (YYYY-MM-DD format) of the first incoming transaction."
+msgid ""
+"Next, Monero CLI will ask for a `Restore height`. Even though it is "
+"optional, it's not recommended to leave it blank, since setting a restore "
+"height makes your wallet synchronization faster. Ideally it should be the "
+"number of the block which included the first incoming transaction to your "
+"wallet. Alternatively, you can also enter the date or an estimated date "
+"(YYYY-MM-DD format) of the first incoming transaction."
 msgstr ""
 
 #. type: Bullet: '7) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:112
-msgid "After you have entered restore height, Monero CLI will then restore your wallet and start the wallet synchronization. Please be patient as this process may take a while. You will need to wait for it to finish before start using your wallet."
+msgid ""
+"After you have entered restore height, Monero CLI will then restore your "
+"wallet and start the wallet synchronization. Please be patient as this "
+"process may take a while. You will need to wait for it to finish before "
+"start using your wallet."
 msgstr ""
 
 #. type: Bullet: '8) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:114
-msgid "If you run into any trouble, running `./monero-wallet-cli --help` will show you the options available to you at wallet startup. Once you're inside your wallet, running the `help` command will list the help for the commands available to you within the wallet."
+msgid ""
+"If you run into any trouble, running `./monero-wallet-cli --help` will show "
+"you the options available to you at wallet startup. Once you're inside your "
+"wallet, running the `help` command will list the help for the commands "
+"available to you within the wallet."
 msgstr ""
+"Если у вас возникнут затруднения, то после ввода команды `./monero-wallet-"
+"cli --help` вы увидите опции, которые будут доступны при запуске кошелька. "
+"После того как вы войдёте в кошелёк, введите команду `help`, чтобы "
+"ознакомиться с руководством по командам, которыми вы сможете воспользоваться "
+"внутри кошелька."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:115
 #, no-wrap
 msgid "My restored wallet is showing a wrong balance"
-msgstr ""
+msgstr "Что делать, если восстановленный кошелёк неверно отображает баланс"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:117
-msgid "This problem usually occurs when you set a restore height that is higher than the block height of the first incoming transaction to your wallet. To solve this issue, you will have to change the wallet restore height. Please read [this guide]({{site.baseurl}}/resources/user-guides/change-restore-height.html) for detailed instructions on how to do this."
-msgstr ""
-
-#
-#~ msgid "## Operating Systems: Windows, Linux, Mac"
-#~ msgstr "## Операционные системы: Windows, Linux, Mac"
-
-#
-#~ msgid "- Retrieve your 25 word @mnemonic-seed that you saved when creating your old Monero @wallet"
-#~ msgstr "- Найти состоящую из 25 слов @мнемоническую-фразу, которую вы сохранили, когда создавали @кошелёк Monero."
-
-#
-#~ msgid "### Account Software: monero-wallet-cli"
-#~ msgstr "### Программное обеспечение учётной записи: monero-wallet-cli"
-
-#
-#~ msgid "- Open a command prompt and navigate to the drive and directory that contains monero-wallet-cli"
-#~ msgstr "- Открыть окно ввода команды, указать диск и директорию, в которой содержится monero-wallet-cli"
-
-#
-#~ msgid "- Once you press enter you will be prompted for a wallet file name.  Give your wallet a new name, any name will do"
-#~ msgstr "- После нажатия Enter программа запросит имя кошелька. Ввести новое имя для вашего кошелька — подойдёт любое."
-
-#
-#~ msgid "- Press enter again and you will be prompted for a password.  Give your wallet a new and long password"
-#~ msgstr "- После повторного нажатия Enter программа запросит пароль. Необходимо ввести новый и длинный пароль для вашего кошелька."
-
-#
-#~ msgid "- Press enter again you will be prompted to repeat the password"
-#~ msgstr "- После следующего нажатия Enter программа попросит повторить пароль."
-
-#
-#~ msgid "- Press enter again and you will be prompted for the 25 word electrum style mnemonic seed that you retrieved earlier"
-#~ msgstr "- Снова нажать Enter, после этого программа запросит ввести мнемоническую фразу, состоящую из 25 произвольных слов, которую вы извлекли ранее."
-
-#
-#~ msgid "- You will then be prompted with \"Restore from specific blockchain height (optional, default 0):\" Default will start the restore process from the beginning of the Monero blockchain. If you don't know the specific blockchain height, just hit enter. (Specifying a specific blockchain height will start the restore process from that specific height. This will save a bit of time in scanning, if you know what starting blockchain height your initial funds were transacted for this specific account.)"
-#~ msgstr "- Затем программа выведет следующее сообщение: Restore from specific blockchain height (optional, default 0): (Восстановить, начиная с определённой высоты блокчейна (опционально, 0 по умолчанию)). По умолчанию процесс восстановления начинается с самого начала блокчейна Monero. Если вам не известно необходимое значение высоты блокчейна, следует просто нажать Enter. (Если указать определённую высоту блокчейна, восстановление начнётся именно с этой указанной высоты. Это сэкономит какое-то время при сканировании, если вы точно знаете ту высоту блокчейна, на которой была проведена транзакция с изначальными средствами под этой конкретной учётной записью)."
-
-#
-#~ msgid "After you have entered the 25 word mnemonic seed and have chosen your specific blockchain height, monero-wallet-cli will generate the same public address and view key as your old wallet and begin the refresh process automatically. (Please be patient as the refresh process may take a while.)"
-#~ msgstr "После ввода состоящей из 25 слов мнемонической фразы и выбранной вами определённой высоты блокчейна, monero-wallet-cli сгенерирует тот же публичный адрес и ключ просмотра, которые были у вашего старого кошелька, и автоматически начнёт процесс обновления. (Пожалуйста, наберитесь терпения, так как процесс восстановления может занять некоторое время)."
-
-#
-#~ msgid "### Account Software: monero-wallet-gui"
-#~ msgstr "### Программное обеспечение учётной записи: monero-wallet-gui"
-
-#
-#~ msgid "Lauch `monero-wallet-gui`. If this is the first time you launched it go to the next step, otherwise click `Cancel`:"
-#~ msgstr "Запустить `monero-wallet-gui`. Если вы запускаете его впервые, переходите к следующему шагу, в противном случае нажмите `Cancel` (Отменить):"
-
-#
-#~ msgid "![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
-#~ msgstr "![cancel opening](/img/resources/user-guides/en/restore_account/cancel-opening.png)"
-
-#
-#~ msgid "Select your appropriate language `English(US)`:"
-#~ msgstr "Выберите нужный вам язык, например, `English(US)`:"
-
-#
-#~ msgid "![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)"
-#~ msgstr "![choose language](/img/resources/user-guides/en/restore_account/choose-language.png)"
-
-#
-#~ msgid "![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)"
-#~ msgstr "![choose restore](/img/resources/user-guides/en/restore_account/choose-restore.png)"
-
-#
-#~ msgid "Keep `Restore from seed` selected, give your wallet a name & storage location, and complete the `Enter your 25 (or 24) word mnemonic seed`. Optionaly, specify a `Restore height (optional)` to avoid scanning of oldest blocks. Then click the `Right` arrow:"
-#~ msgstr "Выберите `Restore from seed` (Восстановить на основе мнемонической фразы), укажите имя вашего кошелька и место, где он будет находиться, и заполните поле укажите `Enter your 25 (or 24) word mnemonic seed` (Введите вашу мнемоническую фразу из 25 (или 24) слов). Дополнительно указать `Restore height (optional)` (Высоту восстановления (опционально)) во избежание сканирования старых блоков. Затем нажать стрелку вправо:"
-
-#
-#~ msgid "Specify your @daemon settings and click the `Right` arrow:"
-#~ msgstr "Указать настройки демон-программы и нажать стрелку `Right` (Вправо):"
-
-#
-#~ msgid "Click on `USE MONERO` to enjoy your restored wallet:"
-#~ msgstr "Щёлкнуть `USE MONERO` (пользоваться Monero) и наслаждаться восстановленным кошельком:"
+msgid ""
+"This problem usually occurs when you set a restore height that is higher "
+"than the block height of the first incoming transaction to your wallet. To "
+"solve this issue, you will have to change the wallet restore height. Please "
+"read [this guide]({{site.baseurl}}/resources/user-guides/change-restore-"
+"height.html) for detailed instructions on how to do this."
+msgstr "Такая проблема, как правило, возникает, если вы указываете высоту "
+"восстановления сверх высоты блока, содержащего первую входящую транзакцию "
+"вашего кошелька. Чтобы этого не случилось, измените высоту восстановления "
+"кошелька. В [данном руководстве]({{site.baseurl}}/resources/user-guides/"
+"change-restore-height.html) содержатся соответствующие подробные инструкции."

@@ -8,18 +8,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-31 10:24+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-04-07 12:07+0000\n"
+"Last-Translator: Fabio Risso <fabiorissok@gmail.com>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/tor_wallet/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:4
@@ -54,6 +58,8 @@ msgid ""
 "installed](https://community.torproject.org/relay/setup/bridge/debian-ubuntu/) "
 "and running correctly, then proceed."
 msgstr ""
+"Asegúrate de que [Tor está instalado](https://community.torproject.org/relay/"
+"setup/bridge/debian-ubuntu/) y funcionando correctamente, luego procede."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:10
@@ -65,7 +71,7 @@ msgstr ""
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:12
 msgid "File: `/etc/torrc`"
-msgstr ""
+msgstr "Archivo: `/etc/torrc`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:21
@@ -80,6 +86,8 @@ msgid ""
 "Make sure Tor started correctly: ``` sudo systemctl status "
 "tor@default.service ```"
 msgstr ""
+"Asegúrate de que Tor se inició correctamente: ``` sudo systemctl status tor@"
+"default.service ```"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:32
@@ -93,7 +101,7 @@ msgstr ""
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:34
 msgid "### Configure Daemon to allow RPC"
-msgstr ""
+msgstr "### Configurar Daemon para permitir RPC"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:36
@@ -101,6 +109,9 @@ msgid ""
 "In this example, we don't use Tor for interacting with the p2p network, just "
 "to connect to the monero node, so only RPC hidden service is needed."
 msgstr ""
+"En este ejemplo, no usamos Tor para interactuar con la red p2p, solo para "
+"conectar con el nodo de monero, así que solo se necesita el servicio oculto "
+"RPC."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:38
@@ -108,6 +119,8 @@ msgid ""
 "File: `~/.bitmonero/bitmonero.conf` (in the home directory of the Monero "
 "user)"
 msgstr ""
+"Archivo: `~/.bitmonero/bitmonero.conf` (en el directorio de inicio del "
+"usuario de Monero)"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:45
@@ -119,7 +132,7 @@ msgstr ""
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:47
 msgid "Restart the Daemon: `monerod stop_daemon; sleep 10; monerod --detach`"
-msgstr ""
+msgstr "Reinicia el Daemon: `monerod stop_daemon; sleep 10; monerod --detach`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:52
@@ -127,11 +140,13 @@ msgid ""
 "Make sure the daemon started correctly: ``` tail -f "
 "~/.bitmonero/bitmonero.log ```"
 msgstr ""
+"Asegúrate de que el daemon se inició correctamente: ``` tail -f ~/.bitmonero/"
+"bitmonero.log ```"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:54
 msgid "## Connecting to your node from a local wallet"
-msgstr ""
+msgstr "## Conectando a tu nodo desde un monedero local"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:56
@@ -170,11 +185,16 @@ msgid ""
 "HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD "
 "--wallet-file ~/PATH/TO/YOUR/WALLET ``` Replace values above as needed."
 msgstr ""
+"Una vez que esté funcionando, puedes conectarte usando tu monedero cli: ``` "
+"./monero-wallet-cli --proxy 127.0.0.1:9150 --daemon-host "
+"HIDDEN_SERVICE.onion --trusted-daemon --daemon-login USERNAME:PASSWORD "
+"--wallet-file ~/PATH/TO/YOUR/WALLET ``` Reemplaza los valores de arriba como "
+"sea necesario."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:72
 msgid "## GUI"
-msgstr ""
+msgstr "## GUI"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:77
@@ -205,7 +225,7 @@ msgstr ""
 #. type: Plain text
 #: _i18n/en/resources/user-guides/tor_wallet.md:83
 msgid "# Additional resources"
-msgstr ""
+msgstr "# Recursos adicionales"
 
 #. type: Bullet: '* '
 #: _i18n/en/resources/user-guides/tor_wallet.md:85
