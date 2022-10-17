@@ -14,7 +14,7 @@ Anzahl von Unterzeichnern auszuwählen. Im Zuge der Version 0.13 wurde
 entschieden, diese Zahl auf 11 festzusetzen, um eine
 Transaktionseinheitlichkeit zu schaffen.
 
-`Ringgröße (11) = fremde Outputs (10) + dein Output (1)`
+`Ringgröße (16) = fremde Outputs (15) + dein Output (1)`
 
 Fremde Outputs werden in der Regel "Decoys" (dt.: Köder) genannt; die Anzahl
 dieser Köder wurde zuvor als "Mixin"-Größe bezeichnet.

@@ -14,7 +14,7 @@ velge et vilkårlig antall underskrivere (av og til med minstegrenser). Med
 0.13-utgivelsen, ble det bestemt å sette dette tallet til 11 for å tvinge
 gjennom transaksjonsensartethet.
 
-`Ring size (11) = foreign outputs (10) + your output (1)`
+`Ring size (16) = foreign outputs (15) + your output (1)`
 
 Fremmede utdata (foreign outputs) kalles som regel for «avledninger»
 (decoys), og antallet avledninger ble tidligere kalt for «mixin»-størrelsen.

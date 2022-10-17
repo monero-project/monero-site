@@ -13,7 +13,7 @@ release [0.13.0 "Beryllium Bullet"]({{ site.baseurl
 arbitrary number of signers. With release 0.13, it was decided to set this
 number to 11 to enforce transaction uniformity.
 
-`Ring size (11) = foreign outputs (10) + your output (1)`
+`Ring size (16) = foreign outputs (15) + your output (1)`
 
 Foreign outputs are typically called "decoys," and the number of decoys was
 previously called the "mixin" size.
