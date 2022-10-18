@@ -259,6 +259,12 @@ permalink: /downloads/index.html
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
+                        <tr>
+                            <td><img class="small" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet logo"><a href="https://stackwallet.com/">Stack Wallet</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td>X</td>
+                            <td><a class="ext-noicon" href="https://github.com/cypherstack/stack_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                        </tr>
                         </table>
                         <h3 class="desktop-only">{% t downloads.remotesync %}</h3>
                         <p class="desktop-only">{% t downloads.remotesyncinfo %}</p>
