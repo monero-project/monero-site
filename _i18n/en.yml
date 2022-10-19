@@ -157,6 +157,7 @@ merchants:
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
   tari: Tari Labs sponsors the CDN used by this website.
+  mbank: MajesticBank sponsors the hosting used by this website.
   symas: Symas sponsors its CTO Howard Chu (hyc) for his work on the Monero codebase.
   forknetworking: Fork Networking provides a server which is used for development.
   macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
@@ -800,7 +801,15 @@ roadmap:
   p2pool: P2Pool released
   haveno: Haveno
 
-
+  ringsize-sera-tryp: increase ring size to >100
+  seraphis-jamtis: Seraphis & jamtis
+  ospead: OSPEAD
+  released-0-18: CLI and GUI 0.18 "Flourine Fermi" released
+  hardfork-v15: Network upgrade v15 Hardfork
+  xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
+  bp++: Bulletproofs++
+  lws-subaddress: Light Wallet Server subaddress support
+   
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
   intro_email: "To contact the Monero Research Lab, please email lab@getmonero.org."
@@ -891,6 +900,9 @@ library:
     <li>Introductions to technical foundations of Monero, intended for developers, engineers, software architects, and curious users.</li>
     <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc.</li></ul>
   cheatsheets: Cheatsheets
+  thesalmonseries: "The Salmon Series"
+  thesalmonseriesp: >
+    Infographics dealing with Monero's inner workings. The name comes from employed colours, having semantic meanings (even if weak) but also a unifying function as a recurring theme, and resembling salmon browning (from raw to well-done) to the author's eyes :)
   moneroaddressescheatsheet20201206: "Monero Addresses Cheatsheet"
   moneroaddressescheatsheet20201206p: >
     Between the ‘big picture’ and the mathematical details, a single-page recap of various keys, addresses, scopes (private/public, spend/view, on-chain/off-chain, payer’s/payee’s) and their relations.
@@ -900,6 +912,9 @@ library:
   rctcheatsheet20210604: "RingCT Cheatsheet"
   rctcheatsheet20210604p: >
     The recipe of a delicious RingCT Type 5 transaction: one CLSAG every eleven UTXOs, Moneroj amounts to taste; thicken everything with Pedersen Commitments whose overall equilibrium will be evident to waiters as well, and protect last ones with a BulletProof glaze; serve on chosen Stealth Addresses and consume not before ten blocks later. Cheers!
+  zkbasicscheatsheet20220621: "ZK Basics Cheatsheet"
+  zkbasicscheatsheet20220621p: >
+    A lightly theoretical interlude (hopefully still gentle, trying to stress concepts more than formalism and selecting the approached topics) to lay the foundations for Bulletproof and other future Zero-Knowledge-related features, if any.
   magazines: Magazines
   revuoq4p: >
     Quarterly Monero magazine, Q4 2017 edition.<br>

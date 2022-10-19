@@ -24,6 +24,83 @@ jobs:
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
           gpg --verify downloads/hashes.txt
+      - name: Verify filenames
+        run: |
+          lines="$(grep -v ^# downloads/hashes.txt)"
+          SAVEIFS=$IFS
+          IFS=$'\n'
+          lines=($lines)
+          IFS=$SAVEIFS
+          
+          version_gui=$(awk '/monero-gui-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
+          version_cli=$(awk '/monero-source-v/ {print $2}' downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
+
+          filenames_cli=()
+          filenames_gui=()
+
+          get_filename(){
+              line=$1
+              the_line=($line)
+              length="${#the_line[@]}"
+              ((length-=1))
+              filename="${the_line[$length]}"
+              echo "${filename}"
+          }
+          # expects cli files between lines 2-13 and gui 14-18 (comments do not count, 1st line = 0)
+          # to add a new file to the cli, $num must be -gt 1 and -lt 15.
+          # gui $num is now -gt 14 and -lt 20 (new line has been added above)
+          # a new gui file will only increase the -lt number by 1
+          # changes to extensions / new files must be reflected in the cli_files / gui_files lists below
+          num=0
+          for line in "${lines[@]}"; do
+              if [ $num -gt 1 ] && [ $num -lt 14 ] ; then
+                  #CLI
+                  filename=$(get_filename "${line}")
+                  filenames_cli+=("${filename}")
+              elif [ $num -gt 13 ] && [ $num -lt 19 ] ; then
+                 #GUI
+                  filename=$(get_filename "${line}")
+                  filenames_gui+=("${filename}")
+              fi
+              ((num+=1))
+          done
+          # edit/add/remove filenames below
+          cli_files=(\
+          "monero-android-armv7-${version_cli}.tar.bz2" \
+          "monero-android-armv8-${version_cli}.tar.bz2" \
+          "monero-freebsd-x64-${version_cli}.tar.bz2" \
+          "monero-linux-armv7-${version_cli}.tar.bz2" \
+          "monero-linux-armv8-${version_cli}.tar.bz2" \
+          "monero-linux-x64-${version_cli}.tar.bz2" \
+          "monero-linux-x86-${version_cli}.tar.bz2" \
+          "monero-mac-armv8-${version_cli}.tar.bz2" \
+          "monero-mac-x64-${version_cli}.tar.bz2" \
+          "monero-win-x64-${version_cli}.zip" \
+          "monero-win-x86-${version_cli}.zip" \
+          "monero-source-${version_cli}.tar.bz2")
+
+          gui_files=(\
+          "monero-gui-install-win-x64-${version_gui}.exe" \
+          "monero-gui-linux-x64-${version_gui}.tar.bz2" \
+          "monero-gui-mac-x64-${version_gui}.dmg" \
+          "monero-gui-win-x64-${version_gui}.zip" \
+          "monero-gui-source-${version_gui}.tar.bz2")
+
+          check_filenames(){
+              local -n file_list=$1
+              local -n hardcoded=$2
+              for f in "${file_list[@]}"; do
+                if [[ "${hardcoded[*]}" =~ "${f}" ]]; then
+                    echo "Filename OK: ${f}"
+                else
+                    echo "Filename BAD: ${f}"
+                    exit 1
+                fi
+              done
+          }
+
+          check_filenames filenames_cli cli_files
+          check_filenames filenames_gui gui_files
       - name: Download releases
         run: |
           for file in $(awk '/monero-/ {print $2}' downloads/hashes.txt); do
