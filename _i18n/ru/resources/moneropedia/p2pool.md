@@ -9,7 +9,7 @@ terms: ["P2Pool", "monero-p2pool"]
 ### The Basics
 
 Monero P2Pool is a peer-to-peer Monero @mining pool developed by SChernykh
-(also known as sech1). P2Pool was a concept was first developed for the
+(also known as sech1). P2Pool was a concept first developed for the
 Bitcoin blockchain but was never fully realized due to certain limitations,
 mainly because it had a problem with orphaned @blocks which is solved in
 Monero P2Pool with uncle blocks.

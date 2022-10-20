@@ -1,0 +1,79 @@
+# Language pt-br translations for PACKAGE package
+# Copyright (C) 2022 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-20 11:52+0100\n"
+"PO-Revision-Date: 2022-10-20 11:52+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt-br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: entry
+#: ../_i18n/en/resources/moneropedia/sidechain.md:1
+#, no-wrap
+msgid "sidechain"
+msgstr ""
+
+#. type: YAML Front Matter: summary
+#: ../_i18n/en/resources/moneropedia/sidechain.md:1
+#, no-wrap
+msgid "A blockchain that is merge mined with a primary blockchain"
+msgstr ""
+
+#. type: YAML Front Matter: terms
+#: ../_i18n/en/resources/moneropedia/sidechain.md:1
+#, no-wrap
+msgid "[\"sidechain\", \"side-chain\", \"auxillary-chain\"]"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/sidechain.md:8
+msgid ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/sidechain.md:9
+#, no-wrap
+msgid "The Basics"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/sidechain.md:12
+msgid ""
+"A sidechain (also known as an auxillary chain) is a @blockchain that is "
+"@merge-mined with Monero or other cryptocurrencies. In most cases the "
+"sidechain will have a lower difficulty than the primary blockchain."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/sidechain.md:14
+msgid ""
+"A sidechain that allows you to transfer assets between different blockchains "
+"is called a \"pegged blockchain\". It works by setting the value of one "
+"asset equal to the value of another asset on an alternate blockchain, "
+"otherwise known as pegging."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/sidechain.md:16
+msgid "Currently there are no pegged sidechains that exist for Monero."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/sidechain.md:17
+#, no-wrap
+msgid "More Information"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/sidechain.md:19
+msgid "For more information see the @merge-mining article on Moneropedia."
+msgstr ""
