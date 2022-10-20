@@ -334,6 +334,7 @@ permalink: /downloads/index.html
                                     <td>
                                         <ul>
                                             <li>Nano S</li>
+                                            <li>Nano S Plus</li>
                                             <li>Nano X</li>
                                         </ul>
                                     </td>
@@ -348,6 +349,7 @@ permalink: /downloads/index.html
                                     <td>
                                         <ul>
                                             <li>{% t downloads.hwnanos %}</li>
+                                            <li>{% t downloads.hwnanosplus %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
                                         </ul>     
                                     </td>
@@ -379,6 +381,7 @@ permalink: /downloads/index.html
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Nano S</li>
+                                            <li>Nano S Plus</li>
                                             <li>Nano X</li>
                                         <b>{% t downloads.hwthsupported %}:</b>
                                             <li>Monero GUI</li>
@@ -387,6 +390,7 @@ permalink: /downloads/index.html
                                             <li>Monerujo</li>
                                         <b>{% t downloads.hwthfirm %}:</b> 
                                             <li>{% t downloads.hwnanos %}</li>
+                                            <li>{% t downloads.hwnanosplus %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
                                     </ul>
                                     <h3><a class="ext-noicon" href="https://wiki.trezor.io/Monero_(XMR)" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://wiki.trezor.io/Monero_(XMR)" target="_blank">{% t downloads.instructions %}</a></p></h3>
