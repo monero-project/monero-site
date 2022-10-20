@@ -46,7 +46,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/ring-size.md:13
-msgid "`Ring size (11) = foreign outputs (10) + your output (1)`"
+msgid "`Ring size (16) = foreign outputs (15) + your output (1)`"
 msgstr ""
 
 #. type: Plain text
