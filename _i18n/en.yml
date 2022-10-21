@@ -153,7 +153,7 @@ merchants:
   centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.
   swappersp: Swappers let users exchange XMR for other cryptocurrencies.
-  aggregatorsp: Aggregators compare all exchanges at once and find cheapest, fastest or best rated exchanges.
+  aggregatorsp: Aggregators compare all swappers at once and find cheapest, fastest or best rated swappers.
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
