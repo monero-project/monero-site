@@ -683,7 +683,7 @@ Inputs:
 * *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to empty - all indices)
 * *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
-* *ring_size* - unsigned int; Number of outputs to mix in the transaction (this output + N decoys from the blockchain).
+* *ring_size* - unsigned int; Number of outputs to mix in the transaction (this output + N decoys from the blockchain). (Unless dealing with pre rct outputs, this field is ignored on mainnet).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *get_tx_key* - boolean; (Optional) Return the transaction key after sending.
 * *do_not_relay* - boolean; (Optional) If true, the newly created transaction will not be relayed to the monero network. (Defaults to false)
@@ -736,7 +736,7 @@ Inputs:
   * *address* - string; Destination public address.
 * *account_index* - unsigned int; (Optional) Transfer from this account index. (Defaults to 0)
 * *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to empty - all indices)
-* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
+* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1). (Unless dealing with pre rct outputs, this field is ignored on mainnet).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional, defaults to a random ID) 16 characters hex encoded.
 * *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
@@ -918,8 +918,8 @@ Inputs:
 * *subaddr_indices* - array of unsigned int; (Optional) Sweep from this set of subaddresses in the account.
 * *subaddr_indices_all* - boolean; (Optional) use outputs in all subaddresses within an account (Defaults to false).
 * *priority* - unsigned int; (Optional) Priority for sending the sweep transfer, partially determines fee.
-* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
 * *outputs* - unsigned int; specify the number of separate outputs of smaller denomination that will be created by sweep operation.
+* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1). (Unless dealing with pre rct outputs, this field is ignored on mainnet).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional, defaults to a random ID) 16 characters hex encoded.
 * *get_tx_keys* - boolean; (Optional) Return the transaction keys after sending.
@@ -978,8 +978,8 @@ Inputs:
 
 * *address* - string; Destination public address.
 * *priority* - unsigned int; (Optional) Priority for sending the sweep transfer, partially determines fee.
-* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1).
 * *outputs* - unsigned int; specify the number of separate outputs of smaller denomination that will be created by sweep operation.
+* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1). (Unless dealing with pre rct outputs, this field is ignored on mainnet).
 * *unlock_time* - unsigned int; Number of blocks before the monero can be spent (0 to not add a lock).
 * *payment_id* - string; (Optional, defaults to a random ID) 16 characters hex encoded.
 * *get_tx_key* - boolean; (Optional) Return the transaction keys after sending.
@@ -1418,7 +1418,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"s
 
 ### **stop_wallet**
 
-Stops the wallet, storing the current state.
+Store the current state of any open wallet and exit the monero-wallet-rpc process.
 
 Alias: *None*.
 
@@ -2190,7 +2190,7 @@ Outputs:
   * *change_amount* - unsigned int; The amount sent to the change address in @atomic-units.
   * *fee* - unsigned int; The fee charged for the transaction in @atomic-units.
   * *payment_id* - string; payment ID for this transfer.
-  * *ring_size* - unsigned int; The number of inputs in the ring (1 real output + the number of decoys from the blockchain).
+  * *ring_size* - unsigned int; The number of inputs in the ring (1 real output + the number of decoys from the blockchain) (Unless dealing with pre rct outputs, this field is ignored on mainnet).
   * *unlock_time* - unsigned int; The number of blocks before the monero can be spent (0 for no lock).
   * *dummy_outputs* - unsigned int; The number of fake outputs added to single-output transactions.  Fake outputs have 0 amount and are sent to a random address.
   * *extra* - string; Arbitrary transaction data in hexadecimal format.
@@ -2617,7 +2617,7 @@ Alias: *None*.
 
 Inputs:
 
-* *start_height* - unsigned int; (Optional) The block height from which to start refreshing.
+* *start_height* - unsigned int; (Optional) The block height from which to start refreshing. Passing no value or a value less than the last block scanned by the wallet refreshes from the last block scanned.
 
 Outputs:
 
@@ -3344,7 +3344,7 @@ Inputs:
 
 * *n_inputs* - unsigned int;
 * *n_outputs* - unsigned int;
-* *ring_size* - unsigned int;
+* *ring_size* - unsigned int; Sets ringsize to n (mixin + 1). (Unless dealing with pre rct outputs, this field is ignored on mainnet).
 * *rct* - bool; Is this a Ring Confidential Transaction (post blockheight 1220516)
 
 Outputs:
