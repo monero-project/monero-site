@@ -1,0 +1,253 @@
+# Language nb-no translations for PACKAGE package
+# Copyright (C) 2022 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-24 04:09+0100\n"
+"PO-Revision-Date: 2022-10-24 04:09+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: nb-no\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:2
+msgid ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:3
+#, no-wrap
+msgid "Table of contents"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:10
+msgid ""
+"[What is the wallet restore height?](#what-is-the-wallet-restore-height)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:10
+msgid ""
+"[Why Monero wallets have a restore height?](#why-monero-wallets-have-a-"
+"restore-height)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:10
+msgid ""
+"[What happens if I set a wrong restore height?](#what-happens-if-i-set-a-"
+"wrong-restore-height)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:10
+msgid ""
+"[How to change the wallet restore height on Monero GUI](#how-to-change-the-"
+"wallet-restore-height-on-monero-gui)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:10
+msgid ""
+"[My wallet is showing a wrong balance after changing the restore height](#my-"
+"wallet-balance-is-wrong-after-changing-the-restore-height)"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:11
+#, no-wrap
+msgid "What is the wallet restore height?"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:14
+msgid ""
+"The wallet restore height is a setting that tells the wallet software from "
+"which block it should start scanning the @blockchain when looking for "
+"@transactions, a process that is known as wallet synchronization. Ideally it "
+"should be the number of the block which included the first incoming "
+"transaction to your wallet."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:15
+#, no-wrap
+msgid "Why Monero wallets have a restore height?"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:18
+msgid ""
+"Unlike most @cryptocurrencies, all transactions included in the Monero "
+"blockchain are encrypted. Therefore, your wallet software has to use its "
+"private @view-key to locate the transactions destined for you on the "
+"blockchain. The process of scanning the Monero blockchain looking for "
+"transactions is known as wallet synchronization and it demands a lot of "
+"computing resources."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:20
+msgid ""
+"Setting a restore height makes your wallet synchronization faster, because "
+"the wallet software will not start the blockchain scanning at the beginning "
+"of Monero (April 2014), but at the time of the restore height."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:22
+msgid ""
+"![restore-height](/img/resources/user-guides/en/change_restore_height/"
+"restore-height.png)"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:23
+#, no-wrap
+msgid "What happens if I set a wrong restore height?"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:26
+msgid ""
+"If you set a restore height higher than the block height of your first "
+"incoming transaction, your wallet software will not detect all transactions "
+"of your wallet. In consequence, your balance will be wrong and your wallet "
+"software will not work properly."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:28
+msgid ""
+"If you set a restore height lower than the block height of your first "
+"incoming transaction, your wallet software will scan unnecessary blocks. In "
+"consequence, your initial wallet synchronization will take longer than "
+"necessary, but your wallet software will still work."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:30
+msgid ""
+"Therefore, if you're unsure about the block height of your first incoming "
+"transaction, it's always better to set a lower restore height instead of a "
+"higher one."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:31
+#, no-wrap
+msgid "How to change the wallet restore height on Monero GUI"
+msgstr ""
+
+#. type: Bullet: '1) '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:34
+msgid ""
+"Go to `Settings` > `Info` page. On `Wallet restore height:`, click on "
+"`(Change)`."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:36
+#, no-wrap
+msgid "<img src=\"/img/resources/user-guides/en/change_restore_height/change_wallet_restore_height.png\" style=\"width: 593px;\"/>\n"
+msgstr ""
+
+#. type: Bullet: '2) '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:38
+msgid ""
+"Next, enter your new restore height, which should be the number of the block "
+"in which your first incoming transaction was included. If you have the "
+"transaction ID (txid) of the first incoming transaction, you can enter it in "
+"a [block explorer]({{site.baseurl}}/resources/tools/) to check in which "
+"block it was included."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:40
+#, no-wrap
+msgid "<img src=\"/img/resources/user-guides/en/change_restore_height/set_new_restore_height-height.png\" style=\"width: 417px;\"/>\n"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:42
+msgid ""
+"If you don't know the block number of the first incoming transaction to your "
+"wallet, you can enter its date or an estimated date (YYYY-MM-DD format)."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:44
+#, no-wrap
+msgid "<img src=\"/img/resources/user-guides/en/change_restore_height/set_new_restore_height-date.png\" style=\"width: 417px;\"/>\n"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:46
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:52
+msgid "Click on `Ok` button to continue."
+msgstr ""
+
+#. type: Bullet: '3) '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:48
+msgid ""
+"Next, a dialog window will appear informing that your current wallet cache "
+"will clear all information stored about recipient addresses, transaction "
+"keys, and transaction descriptions."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:50
+msgid ""
+"But don't worry, you will not lose any important information. Your current "
+"wallet cache will be stored as a backup file in the same folder of your "
+"wallet and can be restored later."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:54
+#, no-wrap
+msgid "<img src=\"/img/resources/user-guides/en/change_restore_height/rescan_wallet_cache.png\" style=\"width: 600px;\"/>\n"
+msgstr ""
+
+#. type: Bullet: '4) '
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:56
+msgid ""
+"Your wallet will now start a new wallet synchronization, rescanning the "
+"blockchain starting from the new restore height*."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:58
+msgid ""
+"Your wallet balance should be correct after the wallet synchronization is "
+"completed."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:60
+#, no-wrap
+msgid "*If your wallet is connected to a local node that is not yet synchronized, you will have to wait for the node synchronization to finish.\n"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:61
+#, no-wrap
+msgid "My wallet balance is wrong after changing the restore height"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/change-restore-height.md:63
+msgid ""
+"This problem usually occurs when you set a restore height that is higher "
+"than the block height of the first incoming transaction to your wallet. To "
+"solve this issue, change the wallet restore height again using a lower "
+"restore height."
+msgstr ""
