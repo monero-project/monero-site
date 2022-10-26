@@ -31,6 +31,7 @@ titles:
   downloads: 'Descărcări'
   allposts: 'Toate postările de pe blog'
   workgroups: 'Grupuri de lucru'
+  builtonmonero:
   hangouts: ''
   sponsorships: 'Sponsorizări'
   merchants: 'Comercianți și servicii'
@@ -59,6 +60,7 @@ navigation:
   resources: 'Resurse'
   about: 'Despre'
   mrl: 'Laboratorul de cercetare'
+  builtonmonero:
 
 footer:
   feed: 'RSS Feed'
@@ -194,6 +196,11 @@ merchants:
   cexp: Schimburi valutare centralizate care oferă schimbul Monero pentru valute naționale
     și criptomonede.
   swappersp: Swapp-urile permit utilizatorilor să schimbe XMR pentru alte criptomonede.
+
+builtonmonero:
+  townforge:
+  intro:
+
 sponsorships:
   intro: 'Următoarele afaceri susțin în mod activ Proiectul Monero în demersul de
     a aduce confidențialitate financiară în lume. Suntem mai mult decât recunoscători

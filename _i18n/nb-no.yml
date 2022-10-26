@@ -1077,6 +1077,9 @@ about:
     av forhåndsutvinning eller insta-utvinning, og ingen porsjon av blokkbelønningen
     går til utvikling. Se den opprinnelige Bitcointalk-tråden
   history: En kort historie
+builtonmonero:
+  townforge:
+  intro:
 sponsorships:
   intro: Følgende selskaper støtter Monero-prosjektet i dets mål om å bringe økonomisk
     personvern til verden. Vi kunne ikke ha vært mer takknemlige for bidragene deres.
@@ -1146,6 +1149,7 @@ home:
 index:
   page_title: Monero – sikker, privat og usporbar
 titles:
+  builtonmonero:
   library: Bibliotek
   blogbytag: Blogg
   legal: Juridisk
@@ -1170,6 +1174,7 @@ titles:
   whatismonero: Hva er Monero (XMR)?
   index: Hjem
 navigation:
+  builtonmonero:
   getstarted: Kom i gang
   whatis: Hva er Monero?
   accepting: Godkjenning

@@ -1293,6 +1293,9 @@ team:
     όσον αφορά τη συμβατότητά του με τις εξελισσόμενες απαιτήσεις κανονιστικών ρυθμίσεων
     και συμμόρφωσης.
   mpwg: Ομάδα Εργασίας Πολιτικής του Monero
+builtonmonero:
+  townforge:
+  intro:
 sponsorships:
   macstadium: Η MacStadium χορηγεί ένα ειδικό Mac Mini που χρησιμοποιείται για ανάπτυξη
     σχετική με τα Mac.
@@ -1460,6 +1463,7 @@ home:
   hangouts: Hangouts
   morevideos: Ψάχνετε για περισσότερα επεξηγηματικά βίντεο;
 titles:
+  builtonmonero:
   researchlab: Ερευνητικό Εργαστήριο του Monero (MRL)
   index: Αρχική
   library: Βιβλιοθήκη
@@ -1518,6 +1522,7 @@ footer:
   reachout: Επικοινωνήστε
   ml: Λίστα αλληλογραφίας
 navigation:
+  builtonmonero:
   mrl: Ερευνητικό Εργαστήριο
   about: Σχετικά με
   resources: Πόροι

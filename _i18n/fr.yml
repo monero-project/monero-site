@@ -22,6 +22,7 @@ global:
   outdated: Le contenu de cette page est périmé, et peut ne plus être valide. Contactez
     la communauté si vous avez besoin d'aide.
 titles:
+  builtonmonero:
   index: Accueil
   whatismonero: Qu'est-ce que Monero ?
   accepting: Accepter Monero
@@ -49,6 +50,7 @@ titles:
   workgroups: Groupes de travail
   tools: Outils
 navigation:
+  builtonmonero:
   getstarted: Commencer
   whatis: Qu'est-ce que Monero ?
   accepting: Accepter
@@ -149,6 +151,9 @@ merchants:
     recherches. Faites toujours preuve de bon sens lorsque vous effectuez des achats
     en ligne.
 
+builtonmonero:
+  townforge:
+  intro:
 sponsorships:
   intro: Les entreprises suivantes ont soutenues le projet Monero et son objectif
     d'apporter au monde la confidentialité financière. Nous ne pourrions être plus

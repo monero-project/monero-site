@@ -44,6 +44,7 @@ titles:
   legal: Legal
   blogbytag: Blog
   library: Library
+  builtonmonero: Built On Monero
 
 meta_descr:
   whatismonero: A thorough explanation of what is Monero and how to get started
@@ -71,6 +72,7 @@ navigation:
   resources: Resources
   about: About
   mrl: Research Lab
+  builtonmonero: Built On Monero
 
 footer:
   feed: RSS Feed
@@ -178,6 +180,11 @@ sponsorships:
   macstadium: MacStadium sponsors a dedicated Mac Mini that is used for Mac-related development.
   cakewallet: Cake Wallet sponsors the "tools" server with the mailing list, GitLab, Matrix, Taiga, and Weblate.
   pastsponsors: Past sponsors
+
+builtonmonero:
+  intro: The following technologies/services/tools are all built on Monero.
+  townforge: Game based on a slightly edited version of Monero, developed by Monero dev moneromooo. Even if the underlying technology is a fork of Monero, it shows the potentiality of the technology.
+  haveno: Haveno is an exchange built on and powered by Monero multisig. (Currently a Work In Progress)
 
 team:
   introduction: Workgroups are formed by community members who join forces to achieve a common goal. They have different structures and goals. On this page we list some of the more active workgroups and some tips to get you started, if you wish to contribute to any of them.

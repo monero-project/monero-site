@@ -22,6 +22,7 @@ global:
   outdated: Zawartość tej strony jest nieaktualna i prawdopodobnie już nieprawidłowa.
     Skontaktuj się ze społecznością w razie potrzeby wsparcia.
 titles:
+  builtonmonero:
   index: Start
   whatismonero: Czym jest Monero (XMR)?
   accepting: Akceptowanie Monero
@@ -49,6 +50,7 @@ titles:
   workgroups: Grupy robocze
   tools: Narzędzia
 navigation:
+  builtonmonero:
   getstarted: Wstęp
   whatis: Czym jest Monero?
   accepting: Akceptowanie
@@ -205,6 +207,9 @@ merchants:
   cexp: Scentralizowane giełdy, które oferują wymianę Monero na waluty krajowe i kryptowaluty.
   swappersp: Wymieniacze natychmiastowi pozwalają użytkownikom wymieniać XMR na inne
     kryptowaluty.
+builtonmonero:
+  townforge:
+  intro:
 sponsorships:
   intro: Poniższe organizacje aktywnie wspierają Projekt Monero w niesieniu światu
     finansowej prywatności. Jesteśmy bardzo wdzięczni za ich wkład. Jeśli chcesz zasponsorować

@@ -21,6 +21,7 @@ global:
   outdated: 'El contenido de esta página está desactualizado y puede que ya no sea
     válida. Contacta con la comunidad si necesitas apoyo.'
 titles:
+  builtonmonero:
   index: Inicio
   whatismonero: ¿Qué es Monero (XMR)?
   accepting: Aceptar Monero
@@ -48,6 +49,7 @@ titles:
   workgroups: Grupos de trabajo
   tools: Herramientas
 navigation:
+  builtonmonero:
   getstarted: Comenzar
   whatis: ¿Qué es Monero?
   accepting: Aceptar Monero
@@ -206,6 +208,9 @@ merchants:
     de intercambiar Bitcoin <-> Monero (más información en la publicación del blog).
     La tecnología es nueva, por lo que aún no hay muchos proveedores de intercambios,
     pero ya puedes vender XMR por BTC usando este protocolo en
+builtonmonero:
+  townforge:
+  intro:
 sponsorships:
   intro: Los siguientes negocios dan soporte al proyecto de Monero en su objetivo
     de brindar privacidad financiera al mundo. No podríamos estar más agradecidos

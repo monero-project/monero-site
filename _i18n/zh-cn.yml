@@ -18,6 +18,7 @@ global:
   lang_tag: "@lang_tag_zh-cn"
   outdated: 此页面内容已过期，可能不再有效。如果您需要帮助，请联系社区。
 titles:
+  builtonmonero:
   index: 索引
   whatismonero: 什么是门罗币 (XMR)?
   accepting: 接收门罗币
@@ -45,6 +46,7 @@ titles:
   workgroups: 工作组
   tools: 工具
 navigation:
+  builtonmonero:
   getstarted: 始
   whatis: 什么是门罗币？
   accepting: 接收
@@ -112,6 +114,7 @@ merchants:
   disclaimer: |
     "温馨提示：这些链接仅为浏览方便而列出，仅供参考；这并不代表门罗社区对这些商家/服务的认可！门罗社区不对这些外部网站的安全性、真实性、合法性承担责任。如有疑问请您自行联系这些网站。请您在网络购物时始终保持警惕和独立思考。"
 
+<<<<<<< HEAD
   useit: 接受门罗币的商家
   cardfoss: 开源：
   cardonion: '暗网地址:'
@@ -120,6 +123,9 @@ merchants:
   locmondescr: 线上提供点对点交易的去中心化交易所
   centrexchangesp: 如果你喜欢中心化交易所，下面有一个主流交易所与互换商的列表。很多交易所都支持门罗币，我们在这里只列出一些比较有声誉的。
   cexp: 提供门罗币与其他加密货币或法币的交易的中心化交易所。
+builtonmonero:
+  townforge:
+  intro:
 sponsorships:
   intro: 以下企业支持门罗币将金融隐私带给全世界的愿景。我们对他们的帮助和贡献感激不尽。如果您也想赞助门罗项目并被添加到此列表，请给dev@getmonero.org发送电子邮件。
 

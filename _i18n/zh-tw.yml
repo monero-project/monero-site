@@ -19,6 +19,7 @@ global:
 
   outdated: 此頁面之內容可能為老舊資訊且不符合目前狀況. 請聯繫社群如您需要任何幫助.
 titles:
+  builtonmonero:
   index: 首頁
   whatismonero: 什麼是門羅幣 (XMR)?
   accepting: 收取門羅幣
@@ -45,6 +46,7 @@ titles:
 
   workgroups: 工作社群
 navigation:
+  builtonmonero:
   getstarted: 開始使用
   whatis: 什麼是門羅幣？
   accepting: 接受支付
@@ -110,6 +112,11 @@ merchants:
   visitbisq: 造訪 Bisq
   visitlocalmonero: 造訪 LocalMonero
   visithodlhodl: 造訪 HodlHodl
+
+builtonmonero:
+  townforge:
+  intro:
+
 sponsorships:
   intro: 下列商家支持門羅幣專案設立將達成世界金融隱私的目標，我們由衷地感激他們的貢獻。如果你也想要贊助門羅幣專案並被列在本頁清單，請電郵至 dev@getmonero.org。
 

@@ -21,6 +21,7 @@ global:
   lang_tag: "@lang_tag_nl"
 
 titles:
+  builtonmonero:
   index: Start
   whatismonero: Wat is Monero (XMR)?
   accepting: Monero accepteren
@@ -46,6 +47,7 @@ titles:
   library: Bibliotheek
 
 navigation:
+  builtonmonero:
   getstarted: Aan de slag
   whatis: Wat is Monero?
   accepting: Accepteren
@@ -102,6 +104,9 @@ merchants:
   disclaimer: |
     "Disclaimer: deze links worden uitsluitend aangeboden ter informatie en voor het gemak van de lezer; ze vormen geen goedkeuring door de Monero-community van enige producten, diensten of standpunten van de vermelde bedrijven, organisaties en personen. De Monero-community is niet aansprakelijk voor de juistheid, de wettigheid of de inhoud van deze externe websites. Neem contact op met de beheerder van een externe website voor vragen over de inhoud ervan. Volg altijd het principe *caveat emptor* (let op, koper): je bent zelf verantwoordelijk voor het controleren van verkopers. Wees altijd voorzichtig bij het doen van aankopen op internet."
 
+builtonmonero:
+  townforge:
+  intro:
 sponsorships:
   intro: De volgende bedrijven ondersteunen het Monero-project om ons te helpen financiële
     privacy voor iedereen mogelijk te maken. We zijn dankbaar voor hun bijdragen.
