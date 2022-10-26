@@ -1241,6 +1241,7 @@ Outputs:
 
 * *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 * *fee* - unsigned int; Amount of fees estimated per byte in @atomic-units
+* *fees* - array of unsigned int; Represents the base fees at different priorities [slow, normal, fast, fastest].
 * *quantization_mask* - unsigned int; Final fee should be rounded up to an even multiple of this value
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
@@ -1257,6 +1258,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
   "result": {
     "credits": 0,
     "fee": 7874,
+    "fees": [20000,80000,320000,4000000],
     "quantization_mask": 10000,
     "status": "OK",
     "top_hash": "",
