@@ -398,21 +398,21 @@ Outputs:
 * *integrated* - boolean; True if the given address is an [integrated address]({{ site.baseurl }}/resources/moneropedia/address.html).
 * *subaddress* - boolean; True if the given address is a [subaddress](https://github.com/monero-project/monero/pull/2056)
 * *nettype* - string; Specifies which of the three Monero networks (mainnet, stagenet, and testnet) the address belongs to.
-* *openalias_address* - boolean; True if the address is [OpenAlias-formatted]({{ site.baseurl }}/resources/moneropedia/openalias.html).
+* *openalias_address* - string; Address which the [OpenAlias-formatted address]({{ site.baseurl }}/resources/moneropedia/openalias.html) points to, if given.
 
 Example:
 
 ```
-$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"validate_address", params:{"address":"42go2d3XqA9Mx4HjZoqr93BHspcMxwAUBivs3yJKV1FyTycEcbgjNyEaGNEcgnUE9DDDAXNanzB16YgMt88Sa8cFSm2QcHK","any_net_type":true,"allow_openalias":true},' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"validate_address","params":{"address":"42go2d3XqA9Mx4HjZoqr93BHspcMxwAUBivs3yJKV1FyTycEcbgjNyEaGNEcgnUE9DDDAXNanzB16YgMt88Sa8cFSm2QcHK","any_net_type":true,"allow_openalias":true},' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "valid": true,
     "integrated": false,
-    "subaddress": false,
     "nettype": "mainnet",
-    "openalias_address": false
+    "openalias_address": "",
+    "subaddress": false,
+    "valid": true
   }
 }
 ```
