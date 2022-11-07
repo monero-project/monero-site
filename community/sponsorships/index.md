@@ -56,6 +56,16 @@ permalink: /community/sponsorships/index.html
             </div>
         </div>
         <div class="row">   
+            <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="info-block">
+                    <div class="row center-xs">
+                        <div class="col">
+                            <a class="ext-noicon" href="https://cakewallet.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/cakewallet.png" alt="Cake Wallet logo"></a>
+                            <p>{% t sponsorships.cakewallet %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
