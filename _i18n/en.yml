@@ -1009,6 +1009,8 @@ tools:
   monerobase: Archive of some older meeting logs
   gateways: Payment Gateways
 
+  onion-service: Tor Onion service
+
 blog:
   allposts: All Posts
   urgent: Urgent

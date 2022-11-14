@@ -22,6 +22,7 @@ permalink: /resources/tools/index.html
                         <p><a href="https://moneroblocks.info">MoneroBlocks</a></p>
                         <p><a href="https://www.exploremonero.com/">Explore Monero</a></p>
                         <p><a href="https://monerovision.com">MoneroVision</a></p>
+                        <p><a href="https://p2pool.io/explorer/">P2Pool</a> (<a href="http://yucmgsbw7nknw7oi3bkuwudvc657g2xcqahhbjyewazusyytapqo4xid.onion/explorer/">{% t tools.onion-service %}</a>)</p>
                     </div>
                 </div>
             </div>
