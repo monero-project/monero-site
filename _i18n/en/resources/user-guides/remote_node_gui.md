@@ -4,7 +4,7 @@
 
 To use a custom remote node, your wallet must be in advanced mode. Simple mode and Simple mode (bootstrap) don't support this feature.
 
-To check if your wallet is in advanced mode, go to `Settings` > `Info` and see `Wallet mode`. 
+To check if your wallet is in advanced mode, go to `Settings` > `Info` and see `Wallet mode`.
 
 If your wallet is not in Advanced mode, you will have to change it to Advanced mode (see next step).
 
