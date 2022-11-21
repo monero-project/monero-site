@@ -1,30 +1,30 @@
 chats:
 - monero:
-  matrix: https://matrix.to/#/!psOvWRiQkyosOPKvaO:monero.social
+  matrix: https://matrix.to/#/#monero:monero.social
 
 - monero-community:
-  matrix: https://matrix.to/#/!WzzKmkfUkXPHFERgvm:monero.social
+  matrix: https://matrix.to/#/#monero-community:monero.social
 
 - monero-dev: 
-  matrix: https://matrix.to/#/!VDQXWJoFsesLtbGdTT:monero.social
+  matrix: https://matrix.to/#/#monero-dev:monero.social
 
 - monero-markets:
-  matrix: https://matrix.to/#/!TlVgUtVNZychNpMzKW:monero.social
+  matrix: https://matrix.to/#/#monero-markets:monero.social
 
 - monero-offtopic:
-  matrix: https://matrix.to/#/!qqRhJzAUfTJRpMHqIP:monero.social
+  matrix: https://matrix.to/#/#monero-offtopic:monero.social
 
 - monero-pools:
-  matrix: https://matrix.to/#/!ELYTQCXXdbEHObdtNR:monero.social
+  matrix: https://matrix.to/#/#monero-pools:monero.social
 
 - monero-research-lab:
-  matrix: https://matrix.to/#/!toFcRZtpaiwiyapgVO:monero.social
+  matrix: https://matrix.to/#/#monero-research-lab:matrix.org
 
 - monero-translations:
-  matrix: https://matrix.to/#/!gOsXdgyxhvIygdtBpS:monero.social
+  matrix: https://matrix.to/#/#monero-translations:monero.social
 
 - monero-hardware:
-  matrix: https://matrix.to/#/!HoCZRUWeTZDNBfUcDr:monero.social
+  matrix: https://matrix.to/#/#monero-hardware:matrix.org
 
 - monero-site:
-  matrix: https://matrix.to/#/!txpwSzQzkuUaVbtsIx:monero.social
+  matrix: https://matrix.to/#/#monero-site:haveno.network
