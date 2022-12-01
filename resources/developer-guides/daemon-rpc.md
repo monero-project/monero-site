@@ -21,6 +21,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [on_get_block_hash](#on_get_block_hash)
 * [get_block_template](#get_block_template)
 * [submit_block](#submit_block)
+* [generateblocks](#generateblocks)
 * [get_last_block_header](#get_last_block_header)
 * [get_block_header_by_hash](#get_block_header_by_hash)
 * [get_block_header_by_height](#get_block_header_by_height)
@@ -31,6 +32,8 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [hard_fork_info](#hard_fork_info)
 * [set_bans](#set_bans)
 * [get_bans](#get_bans)
+* [banned](#banned)
+* [flush_txpool](#flush_txpool)
 * [get_output_histogram](#get_output_histogram)
 * [get_version](#get_version)
 * [get_coinbase_tx_sum](#get_coinbase_tx_sum)
@@ -40,6 +43,10 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [sync_info](#sync_info)
 * [get_txpool_backlog](#get_txpool_backlog)
 * [get_output_distribution](#get_output_distribution)
+* [get_miner_data](#get_miner_data)
+* [prune_blockchain](#prune_blockchain)
+* [calc_pow](#calc_pow)
+* [flush_cache](#flush_cache)
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -61,6 +68,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/set_log_hash_rate](#set_log_hash_rate)
 * [/set_log_level](#set_log_level)
 * [/set_log_categories](#set_log_categories)
+* [/set_bootstrap_daemon](#set_bootstrap_daemon)
 * [/get_transaction_pool](#get_transaction_pool)
 * [/get_transaction_pool_hashes.bin](#get_transaction_pool_hashesbin)
 * [/get_transaction_pool_stats](#get_transaction_pool_stats)
@@ -70,10 +78,12 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/set_limit](#set_limit)
 * [/out_peers](#out_peers)
 * [/in_peers](#in_peers)
+* [/get_net_stats](#get_net_stats)
 * [/start_save_graph](#start_save_graph)
 * [/stop_save_graph](#stop_save_graph)
 * [/get_outs](#get_outs)
 * [/update](#update)
+* [/pop_blocks](#pop_blocks)
 
 
 ---
@@ -238,6 +248,38 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"s
 }
 ```
 
+### **generateblocks**
+
+Generate a block and specify the address to receive the coinbase reward.
+
+Inputs:
+* *amount_of_blocks* - unsigned int; number of blocks to be generated.
+* *wallet_address* - string; address to receive the coinbase reward.
+* *prev_block* - string;
+* *starting_nonce* - unsigned int; Increased by miner untill it finds a matching result that solves a block.
+
+Outputs:
+* *blocks* - list of string;
+* *height* - unsigned int;
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+The example below uses monerod with the start flags `--regtest --offline --fixed-difficulty 1`. `--offline` ensures that the node does not connect to the main network and learn of its latest chaintip and `--fixed-difficulty` keeps the difficulty constant, allowing a large number of blocks to be generated quickly.
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"generateblocks","params":{"amount_of_blocks":1,"wallet_address":"44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A","starting_nonce": 0}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "blocks": ["49b712db7760e3728586f8434ee8bc8d7b3d410dac6bb6e98bf5845c83b917e4"],
+    "height": 9783,
+    "status": "OK",
+    "untrusted": false
+  }
+}
+```
 
 ### **get_last_block_header**
 
@@ -245,7 +287,9 @@ Block header information for the most recent block is easily retrieved with this
 
 Alias: *getlastblockheader*.
 
-Inputs: *None*.
+Inputs:
+
+* *fill_pow_hash* - boolean; (Optional; defaults to `false`) Add PoW hash to block_header response.
 
 Outputs:
 
@@ -256,6 +300,7 @@ Outputs:
   * *cumulative_difficulty_top64* - unsigned int; Most-significant 64 bits of the 128-bit cumulative difficulty.
   * *depth* -  unsigned int; The number of blocks succeeding this block on the blockchain. A larger number means an older block.
   * *difficulty* - unsigned int; The strength of the Monero network based on mining power.
+  * *difficulty_top64* - unsigned int; Most-significant 64 bits of the 128-bit network difficulty.
   * *hash* - string; The hash of this block.
   * *height* - unsigned int; The number of blocks preceding this block on the blockchain.
   * *long_term_weight* - unsigned int; The long term block weight, based on the median weight of the preceding 100000 blocks.
@@ -327,6 +372,7 @@ Alias: *getblockheaderbyhash*.
 Inputs:
 
 * *hash* - string; The block's sha256 hash.
+* *fill_pow_hash* - boolean; (Optional; defaults to `false`) Add PoW hash to block_header response.
 
 Outputs:
 
@@ -385,6 +431,7 @@ Alias: *getblockheaderbyheight*.
 Inputs:
 
 * *height* - unsigned int; The block's height.
+* *fill_pow_hash* - boolean; (Optional; defaults to `false`) Add PoW hash to block_header response.
 
 Outputs:
 
@@ -443,6 +490,7 @@ Inputs:
 
 * *start_height* - unsigned int; The starting block's height.
 * *end_height* - unsigned int; The ending block's height.
+* *fill_pow_hash* - boolean; (Optional; defaults to `false`) Add PoW hash to block_header response.
 
 Outputs:
 
@@ -523,10 +571,11 @@ Full block information can be retrieved by either block height or hash, like wit
 
 Alias: *getblock*.
 
-Inputs (pick one of the following):
+Inputs (pick height or hash):
 
 * *height* - unsigned int; The block's height.
 * *hash* - string; The block's hash.
+* *fill_pow_hash* - bool; (Optional; Default false) Add PoW hash to block_header response.
 
 Outputs:
 
@@ -546,11 +595,13 @@ Outputs:
       * *gen* - Miner txs are coinbase txs, or "gen".
         * *height* - This block height, a.k.a. when the coinbase is generated.
     * *vout* - List of transaction outputs. Each output contains:
-      * *amount* - The amount of the output, in @atomic-units.
+      * *amount* - The amount of the coinbase output, in @atomic-units.
       * *target* -
-        * *key* -
+        * *tagged_key* -
+          * *key* - the public key of the output
+          * *view_tag* - The 1st byte of a shared secret (used for reducing synchronization time)
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 byte/64 character hex string.
-    * *signatures* - Contain signatures of tx signers. Coinbased txs do not have signatures.
+    * *rct_signatures* - Contain signatures of tx signers. Coinbased txs do not have signatures.
   * *tx_hashes* - List of hashes of non-coinbase transactions in the block. If there are no other transactions, this will be an empty list.
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
@@ -558,43 +609,42 @@ Outputs:
 
 **Look up by height:**
 
-In the following example, block 912345 is looked up by its height. Note that block 912345 does not have any non-coinbase transactions. (See the next example for a block with extra transactions):
+In the following example, block 2751506 is looked up by its height. Note that block 2751506 does not have any non-coinbase transactions. (See the next example for a block with extra transactions):
 
 ```
-$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"height":912345}}' -H 'Content-Type: application/json'
-
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"height":2751506}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "blob": "0102f4bedfb405b61c58b2e0be53fad5ef9d9731a55e8a81d972b8d90ed07c04fd37ca6403ff786e0600000195d83701ffd9d73704ee84ddb42102378b043c1724c92c69d923d266fe86477d3a5ddd21145062e148c64c5767700880c0fc82aa020273733cbd6e6218bda671596462a4b062f95cfe5e1dbb5b990dacb30e827d02f280f092cbdd080247a5dab669770da69a860acde21616a119818e1a489bb3c4b1b6b3c50547bc0c80e08d84ddcb01021f7e4762b8b755e3e3c72b8610cc87b9bc25d1f0a87c0c816ebb952e4f8aff3d2b01fd0a778957f4f3103a838afda488c3cdadf2697b3d34ad71234282b2fad9100e02080000000bdfc2c16c00",
+    "blob": "1010c58bab9b06b27bdecfc6cd0a46172d136c08831cf67660377ba992332363228b1b722781e7807e07f502cef8a70101ff92f8a7010180e0a596bb1103d7cbf826b665d7a532c316982dc8dbc24f285cbc18bbcc27c7164cd9b3277a85d034019f629d8b36bd16a2bfce3ea80c31dc4d8762c67165aec21845494e32b7582fe00211000000297a787a000000000000000000000000",
     "block_header": {
-      "block_size": 210,
-      "block_weight": 210,
-      "cumulative_difficulty": 754734824984346,
+      "block_size": 106,
+      "block_weight": 106,
+      "cumulative_difficulty": 236046001376524168,
       "cumulative_difficulty_top64": 0,
-      "depth": 1374119,
-      "difficulty": 815625611,
+      "depth": 40,
+      "difficulty": 313732272488,
       "difficulty_top64": 0,
-      "hash": "e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6",
-      "height": 912345,
-      "long_term_weight": 210,
-      "major_version": 1,
-      "miner_tx_hash": "c7da3965f25c19b8eb7dd8db48dcd4e7c885e2491db77e289f0609bf8e08ec30",
-      "minor_version": 2,
-      "nonce": 1646,
+      "hash": "43bd1f2b6556dcafa413d8372974af59e4e8f37dbf74dc6b2a9b7212d0577428",
+      "height": 2751506,
+      "long_term_weight": 176470,
+      "major_version": 16,
+      "miner_tx_hash": "e49b854c5f339d7410a77f2a137281d8042a0ffc7ef9ab24cd670b67139b24cd",
+      "minor_version": 16,
+      "nonce": 4110909056,
       "num_txes": 0,
       "orphan_status": false,
       "pow_hash": "",
-      "prev_hash": "b61c58b2e0be53fad5ef9d9731a55e8a81d972b8d90ed07c04fd37ca6403ff78",
-      "reward": 7388968946286,
-      "timestamp": 1452793716,
-      "wide_cumulative_difficulty": "0x2ae6d65248f1a",
-      "wide_difficulty": "0x309d758b"
+      "prev_hash": "b27bdecfc6cd0a46172d136c08831cf67660377ba992332363228b1b722781e7",
+      "reward": 600000000000,
+      "timestamp": 1667941829,
+      "wide_cumulative_difficulty": "0x3469a966eb2f788",
+      "wide_difficulty": "0x490be69168"
     },
     "credits": 0,
-    "json": "{\n  \"major_version\": 1, \n  \"minor_version\": 2, \n  \"timestamp\": 1452793716, \n  \"prev_id\": \"b61c58b2e0be53fad5ef9d9731a55e8a81d972b8d90ed07c04fd37ca6403ff78\", \n  \"nonce\": 1646, \n  \"miner_tx\": {\n    \"version\": 1, \n    \"unlock_time\": 912405, \n    \"vin\": [ {\n        \"gen\": {\n          \"height\": 912345\n        }\n      }\n    ], \n    \"vout\": [ {\n        \"amount\": 8968946286, \n        \"target\": {\n          \"key\": \"378b043c1724c92c69d923d266fe86477d3a5ddd21145062e148c64c57677008\"\n        }\n      }, {\n        \"amount\": 80000000000, \n        \"target\": {\n          \"key\": \"73733cbd6e6218bda671596462a4b062f95cfe5e1dbb5b990dacb30e827d02f2\"\n        }\n      }, {\n        \"amount\": 300000000000, \n        \"target\": {\n          \"key\": \"47a5dab669770da69a860acde21616a119818e1a489bb3c4b1b6b3c50547bc0c\"\n        }\n      }, {\n        \"amount\": 7000000000000, \n        \"target\": {\n          \"key\": \"1f7e4762b8b755e3e3c72b8610cc87b9bc25d1f0a87c0c816ebb952e4f8aff3d\"\n        }\n      }\n    ], \n    \"extra\": [ 1, 253, 10, 119, 137, 87, 244, 243, 16, 58, 131, 138, 253, 164, 136, 195, 205, 173, 242, 105, 123, 61, 52, 173, 113, 35, 66, 130, 178, 250, 217, 16, 14, 2, 8, 0, 0, 0, 11, 223, 194, 193, 108\n    ], \n    \"signatures\": [ ]\n  }, \n  \"tx_hashes\": [ ]\n}",
-    "miner_tx_hash": "c7da3965f25c19b8eb7dd8db48dcd4e7c885e2491db77e289f0609bf8e08ec30",
+    "json": "{\n  \"major_version\": 16, \n  \"minor_version\": 16, \n  \"timestamp\": 1667941829, \n  \"prev_id\": \"b27bdecfc6cd0a46172d136c08831cf67660377ba992332363228b1b722781e7\", \n  \"nonce\": 4110909056, \n  \"miner_tx\": {\n    \"version\": 2, \n    \"unlock_time\": 2751566, \n    \"vin\": [ {\n        \"gen\": {\n          \"height\": 2751506\n        }\n      }\n    ], \n    \"vout\": [ {\n        \"amount\": 600000000000, \n        \"target\": {\n          \"tagged_key\": {\n            \"key\": \"d7cbf826b665d7a532c316982dc8dbc24f285cbc18bbcc27c7164cd9b3277a85\", \n            \"view_tag\": \"d0\"\n          }\n        }\n      }\n    ], \n    \"extra\": [ 1, 159, 98, 157, 139, 54, 189, 22, 162, 191, 206, 62, 168, 12, 49, 220, 77, 135, 98, 198, 113, 101, 174, 194, 24, 69, 73, 78, 50, 183, 88, 47, 224, 2, 17, 0, 0, 0, 41, 122, 120, 122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\n    ], \n    \"rct_signatures\": {\n      \"type\": 0\n    }\n  }, \n  \"tx_hashes\": [ ]\n}",
+    "miner_tx_hash": "e49b854c5f339d7410a77f2a137281d8042a0ffc7ef9ab24cd670b67139b24cd",
     "status": "OK",
     "top_hash": "",
     "untrusted": false
@@ -604,46 +654,45 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
 
 **Look up by hash:**
 
-In the following example, block 993056 is looked up by its hash. Note that block 993056 has 3 non-coinbase transactions:
+In the following example, block 2751210 is looked up by its hash. Note that block 2751210 has 2 non-coinbase transactions:
 
 ```
-$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"hash":"510ee3c4e14330a7b96e883c323a60ebd1b5556ac1262d0bc03c24a3b785516f"}}' -H 'Content-Type: application/json'
-
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"hash":"86d421322b700166dde2d7eba1cc8600925ef640abf6c0a2cc8ce0d6dd90abfd"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
-    "blob": "0102a3978cb7050ea4af6547c05c965afc8df6d31509ff3105dc7ae6b10172521d77e09711fd6df407000001dcce3c01ffa0ce3c049da8bece070259e9d685b3484886bc7b47c133e6099ecdf212d5eaa16ce19cd58e8c3c1e590a80d88ee16f024c5e2f542d25513c46b9e3b7d40140a22d0ae5314bfcae492ad9f56fff8185f080d0b8e1981a0213dd8ffdac9e6a2f71e327dad65328198dc879a492d145eae72677c0703a351580c0f9decfae010262bda00341681dccbc066757862da593734395745bdfe1fdc89b5948c86a5d4c2b01b691851cf057b9c302a3dbca879e1cba4cc45061ca55aaa6e03cdc67ab9e455002080000000c617fdf160379c6b9f00db027bde151705aafe85c495883aae2597d5cb8e1adb2e0f3ae1d07d715db73331abc3ec588ef07c7bb195786a4724b08dff431b51ffa32a4ce899bb197066426c0ed89f0b431fe171f7fd62bc95dd29943daa7cf3585cf1fdfc99d",
+    "blob": "1010d8faa89b06f8a36d0dbe4d27d2f52160000563896048d71067c31e99a3869bf9b7142227bb5328010b02a6f6a70101ffeaf5a70101a08bc8b3bb11036d6713f5aa552a1aaf33baed7591f795b86daf339e51029a9062dfe09f0f909b312b0124d6023d591c4d434000e5e31c6db718a1e96e865939930e90a7042a1cd4cbd202083786a78452fdfc000002a89e380a44d8dfc64b551baa171447a0f9c9262255be6e8f8ef10896e36e2bf90c4d343e416e394ad9cc10b7d2df7b2f39370a554730f75dfcb04944bd62c299",
     "block_header": {
-      "block_size": 3981,
-      "block_weight": 3981,
-      "cumulative_difficulty": 818657025727349,
+      "block_size": 3166,
+      "block_weight": 3166,
+      "cumulative_difficulty": 235954020187853162,
       "cumulative_difficulty_top64": 0,
-      "depth": 1293410,
-      "difficulty": 964985344,
+      "depth": 26,
+      "difficulty": 312527777859,
       "difficulty_top64": 0,
-      "hash": "510ee3c4e14330a7b96e883c323a60ebd1b5556ac1262d0bc03c24a3b785516f",
-      "height": 993056,
-      "long_term_weight": 3981,
-      "major_version": 1,
-      "miner_tx_hash": "372395aeac5e5ad2c40b4c546b0bad00c4242fb2bd88e2e25f4e43231876f81e",
-      "minor_version": 2,
-      "nonce": 2036,
-      "num_txes": 3,
+      "hash": "86d421322b700166dde2d7eba1cc8600925ef640abf6c0a2cc8ce0d6dd90abfd",
+      "height": 2751210,
+      "long_term_weight": 176470,
+      "major_version": 16,
+      "miner_tx_hash": "dabe07900d3123ed895612f4a151adb3e39681b145f0f85bfee23ea1fe47acf2",
+      "minor_version": 16,
+      "nonce": 184625235,
+      "num_txes": 2,
       "orphan_status": false,
       "pow_hash": "",
-      "prev_hash": "0ea4af6547c05c965afc8df6d31509ff3105dc7ae6b10172521d77e09711fd6d",
-      "reward": 6932043647005,
-      "timestamp": 1457720227,
-      "wide_cumulative_difficulty": "0x2e89071361b75",
-      "wide_difficulty": "0x39848200"
+      "prev_hash": "f8a36d0dbe4d27d2f52160000563896048d71067c31e99a3869bf9b7142227bb",
+      "reward": 600061380000,
+      "timestamp": 1667906904,
+      "wide_cumulative_difficulty": "0x34646ee649f516a",
+      "wide_difficulty": "0x48c41b7043"
     },
     "credits": 0,
-    "json": "{\n  \"major_version\": 1, \n  \"minor_version\": 2, \n  \"timestamp\": 1457720227, \n  \"prev_id\": \"0ea4af6547c05c965afc8df6d31509ff3105dc7ae6b10172521d77e09711fd6d\", \n  \"nonce\": 2036, \n  \"miner_tx\": {\n    \"version\": 1, \n    \"unlock_time\": 993116, \n    \"vin\": [ {\n        \"gen\": {\n          \"height\": 993056\n        }\n      }\n    ], \n    \"vout\": [ {\n        \"amount\": 2043647005, \n        \"target\": {\n          \"key\": \"59e9d685b3484886bc7b47c133e6099ecdf212d5eaa16ce19cd58e8c3c1e590a\"\n        }\n      }, {\n        \"amount\": 30000000000, \n        \"target\": {\n          \"key\": \"4c5e2f542d25513c46b9e3b7d40140a22d0ae5314bfcae492ad9f56fff8185f0\"\n        }\n      }, {\n        \"amount\": 900000000000, \n        \"target\": {\n          \"key\": \"13dd8ffdac9e6a2f71e327dad65328198dc879a492d145eae72677c0703a3515\"\n        }\n      }, {\n        \"amount\": 6000000000000, \n        \"target\": {\n          \"key\": \"62bda00341681dccbc066757862da593734395745bdfe1fdc89b5948c86a5d4c\"\n        }\n      }\n    ], \n    \"extra\": [ 1, 182, 145, 133, 28, 240, 87, 185, 195, 2, 163, 219, 202, 135, 158, 28, 186, 76, 196, 80, 97, 202, 85, 170, 166, 224, 60, 220, 103, 171, 158, 69, 80, 2, 8, 0, 0, 0, 12, 97, 127, 223, 22\n    ], \n    \"signatures\": [ ]\n  }, \n  \"tx_hashes\": [ \"79c6b9f00db027bde151705aafe85c495883aae2597d5cb8e1adb2e0f3ae1d07\", \"d715db73331abc3ec588ef07c7bb195786a4724b08dff431b51ffa32a4ce899b\", \"b197066426c0ed89f0b431fe171f7fd62bc95dd29943daa7cf3585cf1fdfc99d\"\n  ]\n}",
-    "miner_tx_hash": "372395aeac5e5ad2c40b4c546b0bad00c4242fb2bd88e2e25f4e43231876f81e",
+    "json": "{\n  \"major_version\": 16, \n  \"minor_version\": 16, \n  \"timestamp\": 1667906904, \n  \"prev_id\": \"f8a36d0dbe4d27d2f52160000563896048d71067c31e99a3869bf9b7142227bb\", \n  \"nonce\": 184625235, \n  \"miner_tx\": {\n    \"version\": 2, \n    \"unlock_time\": 2751270, \n    \"vin\": [ {\n        \"gen\": {\n          \"height\": 2751210\n        }\n      }\n    ], \n    \"vout\": [ {\n        \"amount\": 600061380000, \n        \"target\": {\n          \"tagged_key\": {\n            \"key\": \"6d6713f5aa552a1aaf33baed7591f795b86daf339e51029a9062dfe09f0f909b\", \n            \"view_tag\": \"31\"\n          }\n        }\n      }\n    ], \n    \"extra\": [ 1, 36, 214, 2, 61, 89, 28, 77, 67, 64, 0, 229, 227, 28, 109, 183, 24, 161, 233, 110, 134, 89, 57, 147, 14, 144, 167, 4, 42, 28, 212, 203, 210, 2, 8, 55, 134, 167, 132, 82, 253, 252, 0\n    ], \n    \"rct_signatures\": {\n      \"type\": 0\n    }\n  }, \n  \"tx_hashes\": [ \"a89e380a44d8dfc64b551baa171447a0f9c9262255be6e8f8ef10896e36e2bf9\", \"0c4d343e416e394ad9cc10b7d2df7b2f39370a554730f75dfcb04944bd62c299\"\n  ]\n}",
+    "miner_tx_hash": "dabe07900d3123ed895612f4a151adb3e39681b145f0f85bfee23ea1fe47acf2",
     "status": "OK",
     "top_hash": "",
-    "tx_hashes": ["79c6b9f00db027bde151705aafe85c495883aae2597d5cb8e1adb2e0f3ae1d07","d715db73331abc3ec588ef07c7bb195786a4724b08dff431b51ffa32a4ce899b","b197066426c0ed89f0b431fe171f7fd62bc95dd29943daa7cf3585cf1fdfc99d"],
+    "tx_hashes": ["a89e380a44d8dfc64b551baa171447a0f9c9262255be6e8f8ef10896e36e2bf9","0c4d343e416e394ad9cc10b7d2df7b2f39370a554730f75dfcb04944bd62c299"],
     "untrusted": false
   }
 }
@@ -989,6 +1038,39 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
 }
 ```
 
+
+### **banned**
+
+Check if an IP address is banned and for how long.
+
+Alias: *None*
+
+Inputs:
+
+* *address* - string;
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *banned* - boolean;
+* *seconds* - unsigned int;
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"banned","params":{"address":"95.216.203.255"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "banned": true,
+    "seconds": 690413,
+    "status": "OK"
+  }
+}
+```
+
 ### **flush_txpool**
 
 Flush tx ids from transaction pool
@@ -1159,6 +1241,7 @@ Outputs:
 
 * *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 * *fee* - unsigned int; Amount of fees estimated per byte in @atomic-units
+* *fees* - array of unsigned int; Represents the base fees at different priorities [slow, normal, fast, fastest].
 * *quantization_mask* - unsigned int; Final fee should be rounded up to an even multiple of this value
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
@@ -1175,6 +1258,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
   "result": {
     "credits": 0,
     "fee": 7874,
+    "fees": [20000,80000,320000,4000000],
     "quantization_mask": 10000,
     "status": "OK",
     "top_hash": "",
@@ -1427,6 +1511,154 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
 ```
 
 
+### **get_miner_data**
+
+Provide the necessary data to create a custom block template. They are used by p2pool.
+
+Inputs: *None*.
+
+Outputs:
+
+* *major_version* - unsigned int; major fork version.
+* *height* - unsigned int; current blockheight.
+* *prev_id* - string; previous block id.
+* *seed_hash* - string; RandomX seed hash.
+* *difficulty* - unsigned int; network. difficulty.
+* *median_weight* - unsigned int; median block weight.
+* *already_generated_coins* - unsigned int; coins mined by the network so far.
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *tx_backlog* - array of mineable mempool transactions.
+  * *id* - string;
+  * *weight* - unsigned int; 
+  * *fee* - unsigned int;
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_miner_data"}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "already_generated_coins": 18186022843595960691,
+    "difficulty": "0x48afae42de",
+    "height": 2731375,
+    "major_version": 16,
+    "median_weight": 300000,
+    "prev_id": "78d50c5894d187c4946d54410990ca59a75017628174a9e8c7055fa4ca5c7c6d",
+    "seed_hash": "a6b869d50eca3a43ec26fe4c369859cf36ae37ce6ecb76457d31ffeb8a6ca8a6",
+    "status": "OK",
+    "tx_backlog": [{
+      "fee": 30700000,
+      "id": "9868490d6bb9207fdd9cf17ca1f6c791b92ca97de0365855ea5c089f67c22208",
+      "weight": 1535
+    },{
+      "fee": 44280000,
+      "id": "b6000b02bbec71e18ad704bcae09fb6e5ae86d897ced14a718753e76e86c0a0a",
+      "weight": 2214
+    }],
+    "untrusted": false
+  }
+}
+```
+
+
+### **prune_blockchain** 
+
+Alias: *None*.
+
+Inputs:
+
+* *check* - boolean; Optional (`false` by default) - If set to `true` then pruning status is checked instead of initiating pruning.
+
+Outputs:
+
+* *pruned* - boolean;
+* *pruning_seed* - unsigned int; Blockheight at which pruning began.
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"prune_blockchain","params":{"check":true}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "pruned": true,
+    "pruning_seed": 387,
+    "status": "OK",
+    "untrusted": false
+  }
+}
+```
+
+
+### **calc_pow**
+
+Calculate PoW hash for a block candidate.
+
+Alias: *None*.
+
+Inputs:
+
+* *major_version* - unsigned int; The major version of the monero protocol at this block height.
+* *height* - unsigned int;
+* *block_blob* - blobdata;
+* *seed_hash* - string;
+
+Outputs:
+
+* *result* - string; PoW hash.
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"calc_pow","params":{"major_version":14,"height":2286447,"block_blob":"0e0ed286da8006ecdc1aab3033cf1716c52f13f9d8ae0051615a2453643de94643b550d543becd0000000002abc78b0101ffefc68b0101fcfcf0d4b422025014bb4a1eade6622fd781cb1063381cad396efa69719b41aa28b4fce8c7ad4b5f019ce1dc670456b24a5e03c2d9058a2df10fec779e2579753b1847b74ee644f16b023c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051399a1bc46a846474f5b33db24eae173a26393b976054ee14f9feefe99925233802867097564c9db7a36af5bb5ed33ab46e63092bd8d32cef121608c3258edd55562812e21cc7e3ac73045745a72f7d74581d9a0849d6f30e8b2923171253e864f4e9ddea3acb5bc755f1c4a878130a70c26297540bc0b7a57affb6b35c1f03d8dbd54ece8457531f8cba15bb74516779c01193e212050423020e45aa2c15dcb","seed_hash":"d432f499205150873b2572b5f033c9c6e4b7c6f3394bd2dd93822cd7085e7307"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": "d0402d6834e26fb94a9ce38c6424d27d2069896a9b8b1ce685d79936bca6e0a8"
+}
+```
+
+
+### **flush_cache**
+
+Flush bad transactions / blocks from the cache.
+
+Alias: *None*.
+
+Inputs:
+
+* *bad_txs* - boolean; Optional (`false` by default).
+* *bad_blocks* - boolean; Optional (`false` by default).
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_cache","params":{"bad_txs":true,"bad_blocks":true}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "status": "OK",
+    "untrusted": false
+  }
+}
+```
+
+
 ---
 
 ## Other Daemon RPC Calls
@@ -1637,6 +1869,7 @@ Inputs:
 * *txs_hashes* - string list; List of transaction hashes to look up.
 * *decode_as_json* - boolean; Optional (`false` by default). If set `true`, the returned transaction information will be decoded rather than binary.
 * *prune* - boolean; Optional (`false` by default).
+* *split* - boolean; Optional (`false` by default).
 
 Outputs:
 
@@ -1654,11 +1887,35 @@ Outputs:
         * *key_offsets* - A list of integer offets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
-      * *amount* - Amount of transaction output, in @atomic-units.
+      * *amount* - Amount of transaction output (if coinbase output, otherwise 0), in @atomic-units.
       * *target* - Output destination information:
-        * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
+        * *tagged_key*
+          * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
+          * *view_tag* - The 1st byte of a shared secret (used for reducing synchronization time).
     * *extra* - Usually called the "payment ID" but can be used to include any random 32 bytes.
-    * *signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
+    * *rct_signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
+      * *ecdhInfo* - array of Diffie Helman Elipctic curves structures as follows:
+        * *mask* - String;
+        * *amount* - String;
+      * *outPk* - List
+      * *txnFee* -
+      * *type* -
+    * *rctsig_prunable* -
+      * *CLSAGs* - List
+        * *D* -
+        * *c1* -
+        * *s* - List
+      * *bpp* - List
+        * *A* -
+        * *A1* -
+        * *B* -
+        * *L* - List
+        * *R* - List
+        * *d1* -
+        * *r1* -
+        * *s1* -
+      * *npb* -
+      * *pseudoOuts* -
   * *block_height* - unsigned int; block height including the transaction
   * *block_timestamp* - unsigned int; Unix time at chich the block has been added to the blockchain
   * *double_spend_seen* - boolean; States if the transaction is a double-spend (`true`) or not (`false`)
@@ -1699,28 +1956,31 @@ $ curl http://127.0.0.1:18081/get_transactions -d '{"txs_hashes":["d6e4815847284
 }
 ```
 
-Example 2: Decode returned transaction information in JSON format. Note: the "vin", "vout" and "signatures" list have been truncated in the displayed return for space considerations.
+Example 2: Decode returned transaction information in JSON format. Note: the "vin", "vout", "rct_signatures", "rctsig_prunable" list have been truncated in the displayed return for space considerations.
 
 ```
-$ curl http://127.0.0.1:18081/get_transactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"],"decode_as_json":true}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18081/get_transactions -d '{"txs_hashes":["a9c71fe27ccf978a56ef96e50b680a3d569754cd4d070e51d10fa9f6f658b8e3"],"decode_as_json":true}' -H 'Content-Type: application/json'
 
 {
   "credits": 0,
   "status": "OK",
   "top_hash": "",
   "txs": [{
-
     "as_hex": "...",
-    "as_json": "{\n  \"version\": 1, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 9999999999, \n        \"key_offsets\": [ 691\n        ], \n        \"k_image\": \"6ebee1b651a8da723462b4891d471b990ddc226049a0866d3029b8e2f75b7012\"\n      }\n    }, {\n      \"key\": {\n        \"amount\": 9000000000000, \n        \"key_offsets\": [ 175760\n        ], \n        \"k_image\": \"200bd02b70ee707441a8863c5279b4e4d9f376dc97a140b1e5bc7d72bc508069\"\n      }\n    }, ... \n  ], \n  \"vout\": [ {\n      \"amount\": 60000000000, \n      \"target\": {\n        \"key\": \"8c792dea94dab48160e067fb681edd6247ba375281fbcfedc03cb970f3b98e2d\"\n      }\n    }, {\n      \"amount\": 700000000000, \n      \"target\": {\n        \"key\": \"1ab33e69737e157d23e33274c42793be06a8711670e73fa10ecebc604f87cc71\"\n      }\n    }, ... \n  ], \n  \"extra\": [ 1, 3, 140, 109, 156, 205, 47, 148, 153, 9, 17, 93, 83, 33, 162, 110, 152, 1, 139, 70, 121, 19, 138, 10, 44, 6, 55, 140, 242, 124, 143, 219, 172\n  ], \n  \"signatures\": [ \"fd82214a59c99d9251fa00126d353f9cf502a80d8993a6c223e3c802a40ab405555637f495903d3ba558312881e586d452e6e95826d8e128345f6c0a8f9f350e\", \"8c04ef50cf34afa3a9ec19c457143496f8cf7045ed869b581f9efa2f1d65e30f1cec5272b00e9c61a34bdd3c78cf82ae8ef4df3132f70861391069b9c255cd08\", ... ]\n}",
-    "block_height": 993442,
-    "block_timestamp": 1457749396,
+    "as_json": "{\n  \"version\": 2, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 0, \n        \"key_offsets\": [ 10077101, 34287013, 18015596, 907866, 44197, 192564, 52932, 325, 253684, 12715, 11997, 53334, 1265, 38895, 2549, 4459\n        ], \n        \"k_image\": \"0931bae7689a009d7ab3eb9e3f2a1bb22f3ca1951ff68a271506c12f619c23f7\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 0, \n      \"target\": {\n        \"tagged_key\": {\n          \"key\": \"b49eda305377eb6bd14107e38b0e444219c57a34b47ed75b82bf616b4bcc0de2\", \n          \"view_tag\": \"44\"\n        }\n      }\n    }, ... \n      }\n    }\n  ], \n  \"extra\": [ 1, 128, 11, 79, 9, 245, 251, 172, 229, 55, 56, 18, 217, 12, 137, 129, 115, 245, 29, 99, 20, 152, 197, 212, 113, 41, 183, 252, 160, 202, 147, 176, 12, 2, 9, 1, 252, 7, 158, 153, 11, 223, 205, 97\n  ], \n ... }\n}",
+    "block_height": 2751288,
+    "block_timestamp": 1667916404,
+    "confirmations": 44,
     "double_spend_seen": false,
     "in_pool": false,
-    "output_indices": [198769,418598,176616,50345,509],
-    "tx_hash": "d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"
+    "output_indices": [63958274,63958275],
+    "prunable_as_hex": "",
+    "prunable_hash": "cdc54f848f991f48cbb64d76617570ebbe9787bd9eff71b9e36af3d409686650",
+    "pruned_as_hex": "",
+    "tx_hash": "a9c71fe27ccf978a56ef96e50b680a3d569754cd4d070e51d10fa9f6f658b8e3"
   }],
   "txs_as_hex": ["..."],
-  "txs_as_json": ["{\n  \"version\": 1, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 9999999999, \n        \"key_offsets\": [ 691\n        ], \n        \"k_image\": \"6ebee1b651a8da723462b4891d471b990ddc226049a0866d3029b8e2f75b7012\"\n      }\n    }, {\n      \"key\": {\n        \"amount\": 9000000000000, \n        \"key_offsets\": [ 175760\n        ], \n        \"k_image\": \"200bd02b70ee707441a8863c5279b4e4d9f376dc97a140b1e5bc7d72bc508069\"\n      }\n    }, ... \n  ], \n  \"vout\": [ {\n      \"amount\": 60000000000, \n      \"target\": {\n        \"key\": \"8c792dea94dab48160e067fb681edd6247ba375281fbcfedc03cb970f3b98e2d\"\n      }\n    }, {\n      \"amount\": 700000000000, \n      \"target\": {\n        \"key\": \"1ab33e69737e157d23e33274c42793be06a8711670e73fa10ecebc604f87cc71\"\n      }\n    }, ... \n  ], \n  \"extra\": [ 1, 3, 140, 109, 156, 205, 47, 148, 153, 9, 17, 93, 83, 33, 162, 110, 152, 1, 139, 70, 121, 19, 138, 10, 44, 6, 55, 140, 242, 124, 143, 219, 172\n  ], \n  \"signatures\": [ \"fd82214a59c99d9251fa00126d353f9cf502a80d8993a6c223e3c802a40ab405555637f495903d3ba558312881e586d452e6e95826d8e128345f6c0a8f9f350e\", \"8c04ef50cf34afa3a9ec19c457143496f8cf7045ed869b581f9efa2f1d65e30f1cec5272b00e9c61a34bdd3c78cf82ae8ef4df3132f70861391069b9c255cd08\", ... ]\n}"],
+  "txs_as_json": ["{\n  \"version\": 2, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 0, \n        \"key_offsets\": [ 10077101, 34287013, 18015596, 907866, 44197, 192564, 52932, 325, 253684, 12715, 11997, 53334, 1265, 38895, 2549, 4459\n        ], \n        \"k_image\": \"0931bae7689a009d7ab3eb9e3f2a1bb22f3ca1951ff68a271506c12f619c23f7\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 0, \n      \"target\": {\n        \"tagged_key\": {\n          \"key\": \"b49eda305377eb6bd14107e38b0e444219c57a34b47ed75b82bf616b4bcc0de2\", \n          \"view_tag\": \"44\"\n        }\n      }\n    }, ... \n      }\n    }\n  ], \n  \"extra\": [ 1, 128, 11, 79, 9, 245, 251, 172, 229, 55, 56, 18, 217, 12, 137, 129, 115, 245, 29, 99, 20, 152, 197, 212, 113, 41, 183, 252, 160, 202, 147, 176, 12, 2, 9, 1, 252, 7, 158, 153, 11, 223, 205, 97\n  ], \n ... }\n}"],
   "untrusted": false
 }
 ```
@@ -2217,6 +2477,36 @@ $ curl http://127.0.0.1:18081/set_log_categories -H 'Content-Type: application/j
 ```
 
 
+### **/set_bootstrap_daemon**
+
+Give immediate usability to wallets while syncing by proxying RPC requests.
+
+Alias: *None*.
+
+Inputs:
+
+* *address* - string; host:port
+* *username* - string;
+* *password* - string;
+* *proxy* - string; 
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+
+Example:
+
+Once set, the address will appear in `get_info` as `bootstrap_daemon_address`
+
+```
+$ curl http://127.0.0.1:18081/set_bootstrap_daemon -d '{"address": "http://getmonero.org:18081"}' -H 'Content-Type: application/json'
+
+{
+  "status": "OK"
+}
+```
+
+
 ### **/get_transaction_pool**
 
 Show information about valid transactions seen by the node but not yet mined into a block, as well as spent key image information for the txpool in the node's memory.
@@ -2243,7 +2533,7 @@ Outputs:
   * *last_failed_id_hash* - string; Like the previous, this tells the previous transaction ID hash.
   * *last_relayed_time* - unsigned int; Last unix time at which the transaction has been relayed.
   * *max_used_block_height* - unsigned int; Tells the height of the most recent block with an output used in this transaction.
-  * *max_used_block_hash* - string; Tells the hash of the most recent block with an output used in this transaction.
+  * *max_used_block_id_hash* - string; Tells the hash of the most recent block with an output used in this transaction.
   * *receive_time* - unsigned int; The Unix time that the transaction was first seen on the network by the node.
   * *relayed* - boolean; States if this transaction has been relayed
   * *tx_blob* - unsigned int; Hexadecimal blob represnting the transaction.
@@ -2256,24 +2546,36 @@ Outputs:
         * *key_offsets* - A list of integer offets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
-      * *amount* - Amount of transaction output, in @atomic-units.
+      * *amount* - Amount of transaction output (if coinbase output, otherwise 0), in @atomic-units.
       * *target* - Output destination information:
-        * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
+        * *tagged_key*
+          * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
+          * *view_tag* - The 1st byte of a shared secret (used for reducing synchronization time).
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
-    * *rct_signatures* - Ring signatures:
-      * *type*
-      * *txnFee*
+    * *rct_signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
       * *ecdhInfo* - array of Diffie Helman Elipctic curves structures as follows:
-        * *mask* - String
-        * *amount* - String
-      * *outPk*
-    * *rctsig_prunable*
-      * *rangeSigs* - array of structures as follows:
-        * *asig*
-        * *Ci*
-      * *MGs* - array of structures as follows:
-        * *ss* - array of arrays of two strings.
-        * *cc* - String
+        * *mask* - String;
+        * *amount* - String;
+      * *outPk* - List
+      * *txnFee* -
+      * *type* -
+    * *rctsig_prunable* -
+      * *CLSAGs* - List
+        * *D* -
+        * *c1* -
+        * *s* - List
+      * *bpp* - List
+        * *A* -
+        * *A1* -
+        * *B* -
+        * *L* - List
+        * *R* - List
+        * *d1* -
+        * *r1* -
+        * *s1* -
+      * *npb* -
+      * *pseudoOuts* -
+  * *weight* -
 
 Example (Note: Some lists in the returned information have been truncated for display reasons):
 
@@ -2282,31 +2584,31 @@ $ curl http://127.0.0.1:18081/get_transaction_pool -H 'Content-Type: application
 
 {
   "spent_key_images": [{
-    "id_hash": "a2af919609db4ff5ab8d4ba18502e647d521760e1cbc30288f06fa87bf9a0c1c",
-    "txs_hashes": ["1ee6a4873b638711795fc3b0b73fc7146505a09a7f4749534fd408d571a273cf"]
+    "id_hash": "5b5d68e7eb5ddfc7dd30d9a91f1db6835563b0214b66dc0b791909fb46c9cbb4",
+    "txs_hashes": ["0b1839626bd7a609d5b16966396a51eb5fda9c55b9b2fc314a916459a7532e02"]
   },{
-    "id_hash": "02d5f6559e9bca5ae5a335130aeeb05df2db518ab9837fa64ebbab276c100792",
-    "txs_hashes": ["531aacc0ceb8514cdde5f104285202ccc3e969c77584e3c6fa614c987c583965"]
+    "id_hash": "b583a134ccd6fd48697f02f530e82604f746b97ce26de103fa756d91274ac60e",
+    "txs_hashes": ["0b1839626bd7a609d5b16966396a51eb5fda9c55b9b2fc314a916459a7532e02"]
   },
   ...],
   "status": "OK",
   "transactions": [{
-    "blob_size": 13193,
+    "blob_size": 2217,
     "do_not_relay": false,
     "double_spend_seen": false,
-    "fee": 9694360000,
-    "id_hash": "f8fb875cfc9e2e59bcf96a42474c79e01d50b69e6548d445d45984f7db66e50f",
+    "fee": 44340000,
+    "id_hash": "0b1839626bd7a609d5b16966396a51eb5fda9c55b9b2fc314a916459a7532e02",
     "kept_by_block": false,
     "last_failed_height": 0,
     "last_failed_id_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-    "last_relayed_time": 1525615049,
-    "max_used_block_height": 1564924,
-    "max_used_block_id_hash": "4bae7856979f46c7de31f3fb58cac36d4dfd2765bf33f876edf33d0e05ebb4a7",
-    "receive_time": 1525615049,
+    "last_relayed_time": 1667929927,
+    "max_used_block_height": 2751399,
+    "max_used_block_id_hash": "52d2ac5230146c4d8003c8fb1d8e54aea91d2536c72884bd6e126b7def4ed9c6",
+    "receive_time": 1667929927,
     "relayed": true,
     "tx_blob": " ... ",
-    "tx_json": "{\n  \"version\": 2, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 0, \n        \"key_offsets\": [ 2630347, 594429, 1047509, 758973, 464501, 61971, 22268\n        ], \n        \"k_image\": \"0731363c58dd4492f031fa20c82fe6ddcb9cc070d73938afe8a5f7f77897f8b4\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 0, \n      \"target\": {\n        \"key\": \"f3b3dd09483616e343b9866eed50a0ce01d5c0d0f2612ce2c4d0e9cce5c218cd\"\n      }\n    }, {\n      \"amount\": 0, \n      \"target\": {\n        \"key\": \"9796f2d477a696b6282bf3cb1a41cefba0c4604eedcc2e7a44904d7033643e0e\"\n      }\n    }\n  ], \n  \"extra\": [ 1, 25, 228, 80, 5, 214, 117, 150, 9, 125, 98, 17, 113, 208, 89, 223, 242, 227, 188, 197, 141, 190, 135, 140, 152, 117, 240, 150, 21, 93, 62, 108, 124\n  ], \n  \"rct_signatures\": {\n    \"type\": 1, \n    \"txnFee\": 9694360000, \n    \"ecdhInfo\": [ {\n        \"mask\": \"645f06a2816aecf83d5041c3320eb31092b994fb2733bb74c8c47e288d452c04\", \n        \"amount\": \"3908f14d39dcb3831331cb255eeadc5b0aea0143645b9cd3034abf613995740d\"\n      }, {\n        \"mask\": \"0785b5df0a994b14d59da810503a022721d8f629720f526e15bd848ad3c2c509\", \n        \"amount\": \"fbd81cf2368dcd742905ded5287457030467aaf5bc9939e13f1d6bf8d4c8ca09\"\n      }], \n    \"outPk\": [ \"c19f5fa052859126e0eed0e3c860aadab049677b2b3dd14cc74d02f92f1d013f\", \"1581ef6368de1608ea366566b88272db220479cf215f6d88d7b60ec221d11e0a\"]\n  }, \n  \"rctsig_prunable\": {\n    \"rangeSigs\": [ {\n        \"asig\": \" ... \", \n        \"Ci\": \" .. \"\n      }, {\n        \"asig\": \" ... \", \n        \"Ci\": \" ... \"\n      }], \n    \"MGs\": [ {\n        \"ss\": [ [ \"218a10a29e0f66e5a324af67b7734708a8a4cc8f16b28acd8cda538aaa495a02\", \"b368b4e956df5808c5c257f0dc3f7eff8c28463d0bb20759d19977fa02d6f205\"], [ \"f741d2c96bc23b362b4155a03fb6f1351ab5bf4445a43b3e52ba776f526af305\", \"a10ad1ee80dce3f311dd3dc141803daeecaa4d2a25a390cd9c35e4161b7c9e0c\"],
-    ...], \n        \"cc\": \"e93801b707261ca76e146fdf2085abae71ad9203a00edc843c74f4ead8a39601\"\n      }]\n  }\n}"
+    "tx_json": "{\n  \"version\": 2, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 0, \n        \"key_offsets\": [ 54937085, 875767, 6217742, 360564, 431709, 807289, 138472, 6221, 111408, 42881, 145, 12396, 20911, 899, 3546, 112\n        ], \n        \"k_image\": \"b583a134ccd6fd48697f02f530e82604f746b97ce26de103fa756d91274ac60e\"\n      }\n    }, {\n      \"key\": {\n        \"amount\": 0, \n        \"key_offsets\": [ 28132301, 33525919, 17414, 2042026, 73478, 73012, 54330, 8150, 5725, 10740, 4581, 7687, 9290, 592, 994, 725\n        ], \n        \"k_image\": \"5b5d68e7eb5ddfc7dd30d9a91f1db6835563b0214b66dc0b791909fb46c9cbb4\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 0, \n      \"target\": {\n        \"tagged_key\": {\n          \"key\": \"2849325ea3410c1378ab631c4e008028a99843a767c1d11019631cad8e083b53\", \n          \"view_tag\": \"1f\"\n        }\n      }\n    }, {\n      \"amount\": 0, \n      \"target\": {\n        \"tagged_key\": {\n          \"key\": \"9677c3568218bab3dc1a6eee5b486eeb372c9b2c7d552d8f9c6c84bd4051bab8\", \n          \"view_tag\": \"ee\"\n        }\n      }\n    }\n  ], \n  \"extra\": [ 1, 110, 21, 19, 40, 178, 62, 51, 216, 134, 71, 171, 159, 249, 160, 206, 100, 247, 190, 162, 177, 0, 35, 237, 165, 157, 42, 84, 52, 25, 151, 202, 231, 2, 9, 1, 195, 62, 127, 79, 4, 67, 161, 64\n  ], \n  ... }\n}",
+    "weight": 2217
   },
   ...]
 }
@@ -2554,6 +2856,39 @@ $ curl http://127.0.0.1:18081/out_peers -d '{"in_peers": 3232235535}' -H 'Conten
 ```
 
 
+### **/get_net_stats**
+
+Alias: *None*.
+
+Inputs: *None*.
+
+Outputs:
+
+* *start_time* - unsigned int; Unix start time.
+* *total_packets_in* - unsigned int;
+* *total_bytes_in* - unsigned int;
+* *total_packets_out* - unsigned int;
+* *total_bytes_out* - unsigned int;
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`).
+
+Example: 
+
+```
+$ curl http://127.0.0.1:18081/get_net_stats -H 'Content-Type: application/json'
+
+{
+  "start_time": 1665147355,
+  "status": "OK",
+  "total_bytes_in": 3743474809,
+  "total_bytes_out": 5932012405,
+  "total_packets_in": 2130592,
+  "total_packets_out": 1010674,
+  "untrusted": false
+}
+```
+
+
 ### **/start_save_graph**
 
 Obsolete. Conserved here for reference.
@@ -2661,5 +2996,32 @@ $ curl http://127.0.0.1:18081/update -d '{"command":"check"}' -H 'Content-Type: 
   "update": false,
   "user_uri": "",
   "version": ""
+}
+```
+
+
+### **/pop_blocks**
+
+Alias: *None*.
+
+Inputs:
+
+* *nblocks* - unsigned int;
+
+Outputs:
+
+* *height* - unsigned int; New blockheight after popping blocks
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/pop_blocks -d '{"nblocks":6}' -H 'Content-Type: application/json''
+
+{
+  "height": 76482,
+  "status": "OK",
+  "untrusted": false
 }
 ```
