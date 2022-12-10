@@ -32,6 +32,7 @@ permalink: /resources/tools/index.html
                     <div class="col">
                         <h2>{% t tools.address-generators %}</h2>
                         <p><a href="https://xmr.llcoins.net/">xmr.llcoins.net</a></p>
+                        <p><a href="https://monerotech.info/">monerotech.info</a></p>
                     </div>
                 </div>
             </div>
@@ -91,7 +92,6 @@ permalink: /resources/tools/index.html
                         <p><a href="https://www.cryptowoo.com/">CryptoWoo Monero Plugin (WooCommerce)</a></p>
                         <p><a href="https://github.com/monero-integrations/monerowp">Monero WooCommerce Extension (PHP)</a></p>
                         <p><a href="https://nowpayments.io/">NOWPayments</a></p>
-                        <p><a href="https://swirlpay.io/">SwirlPay</a></p>
                     </div>
                 </div>
             </div>
