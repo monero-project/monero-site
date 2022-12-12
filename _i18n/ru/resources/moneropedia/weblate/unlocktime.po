@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-14 10:41+0100\n"
+"POT-Creation-Date: 2022-12-12 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/unlocktime.md:1
-#, no-wrap
-msgid "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
+#, fuzzy, no-wrap
+#| msgid "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
+msgid "a special transaction where the recipient(s) can only spend the funds after a future date, as set by the sender"
 msgstr "Особый случай транзакции, когда получатель может потратить средства только после какой-то определённой даты в будущем, которая устанавливается отправителем."
 
 #. type: YAML Front Matter: terms
@@ -28,9 +29,9 @@ msgstr "Особый случай транзакции, когда получа�
 msgid "[\"unlock-time\"]"
 msgstr "[\"unlock-time\", \"временем-разблокировки\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/unlocktime.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,20 +41,65 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/unlocktime.md:11
-#
-msgid "A special transaction where the recipient can only spend the funds after a future date, as set by the sender."
+#, fuzzy
+#| msgid "A special transaction where the recipient can only spend the funds after a future date, as set by the sender."
+msgid "A special transaction where the recipient(s) can only spend the funds after a future date, as set by the sender."
 msgstr "Особый случай транзакции, когда получатель может потратить средства только после какой-то определённой даты в будущем, которая устанавливается отправителем."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/unlocktime.md:13
-#
-msgid "Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time."
+#, fuzzy
+#| msgid "Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain number of blocks, or until a certain time."
+msgid "Unlock time allows you to send a transaction to someone, such that they can not spend it until after a certain block height, or until a certain time. These locks are per transaction, not per output. This means any returning change will be locked too. ***Do not unintentionally lock your change outputs.***"
 msgstr "Время разблокировки позволяет вам направить кому-то транзакцию, и этот кто-то сможет потратить средства только спустя некоторое количество блоков или спустя определённое время."
 
-#. type: Plain text
-#: ../_i18n/en/resources/moneropedia/unlocktime.md:14
 #
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:15
 msgid "Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.it/wiki/NLockTime), in which the transaction is not valid until the given time."
 msgstr "Следует отметить, что этот механизм работает не так, как [nLockTime](https://en.bitcoin.it/wiki/NLockTime) у Bitcoin, где транзакция не считается действительной до какого-то указанного момента времени."
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:17
+msgid "Using `unlock_time` has privacy consequences for the user(s) (and the wider Monero network if it is flooded with these). The value is public on the blockchain, so be aware of potential clustering. The feature is rarely used and may be removed in a future Monero release, so the Monero developers advise against building critical infrastructure that depends on this feature."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:19
+msgid "Decoy outputs may be selected from these locked outputs, thus identifying them as provable decoy outputs. At the moment, this has little impact on wider network privacy since this unlock time feature is so rarely used."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:21
+msgid "Further, true spends after a reasonably long lock time (more than several days) may be heuristically identified as the true spend, since there will be fewer other transactions using those outputs as decoys around that time period."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:23
+msgid "Users should verify that the outputs they receive from others are not encumbered by an unexpected unlock time. Users may want to hold off acting upon such a transaction until the unlock time lapses. The `show_transfers` command includes the unlock time."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:24
+#, no-wrap
+msgid "Technical Use"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:27
+msgid "Usage when using the `transfer` command: `unlock_time` + unsigned int"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:29
+msgid "Integer values less than 500,000,000 are interpreted as absolute block height. Values greater than or equal to 500,000,000 are interpreted as an absolute Unix epoch timestamp. The Monero CLI wallet only supports values less than 500,000,000; Unix timestamps must be submitted via RPC or another custom software."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/moneropedia/unlocktime.md:30
+msgid "The integer value will be interpreted by the protocol as an ***absolute*** block height value or Unix epoch timestamp, not a relative value. Using an integer value less than the current block height or a Unix epoch timestamp less than the current Unix epoch timestamp makes no sense. For example, if you want the Monero transaction to unlock 100 blocks from now, add 100 to the current block height."
+msgstr ""
