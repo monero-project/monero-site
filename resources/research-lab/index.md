@@ -180,7 +180,7 @@ permalink: /resources/research-lab/index.html
                         <div class="col">
                             <h2>{% t research-lab.cryptonote %}</h2>
                             <div class="whitepaper">
-                                <a href="https://cryptonote.org/whitepaper.pdf">{% t research-lab.cryptonote-whitepaper %}</a>
+                                <a href="https://web.archive.org/web/20201028121818/https://cryptonote.org/whitepaper.pdf">{% t research-lab.cryptonote-whitepaper %}</a>
                                 <p>{% t research-lab.cryptonote-whitepaper_para %}</p>
                             </div>
                             <div class="whitepaper">
