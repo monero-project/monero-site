@@ -26,7 +26,7 @@ The main menu (`Welcome to Monero` screen) will open. At the bottom left, click 
 
 ## Finding a public remote node
 
-First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources about remote nodes, and the website [monero.fail](https://monero.fail) has an actively maintained list of functioning remote nodes. 
+First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources about remote nodes, and the website [monero.fail](https://monero.fail) has a list of functioning remote nodes. 
 
 ## Configuring your wallet to connect to a custom public remote node
 
