@@ -85,13 +85,13 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <h2>{% t sponsorships.pastsponsors %}</h2>
                     <ul>
-                        <li><a href="https://globee.com">Globee</a></li>
-                        <li><a href="https://www.navicat.com">Navicat</a></li>
-                        <li><a href="https://www.forked.net">Forked</a></li>
-                        <li><a href="https://www.kitware.com/">Kitware</a></li>
-                        <li><a href="https://dome9.com/">Dome9 Security</a></li>
-                        <li><a href="https://www.jetbrains.com/">JetBrains</a></li>
-                        <li><a href="https://mymonero.com/">My Monero</a></li>
+                        <li><a href="https://globee.com" target="_blank">Globee</a></li>
+                        <li><a href="https://www.navicat.com" target="_blank">Navicat</a></li>
+                        <li><a href="https://www.forked.net" target="_blank">Forked</a></li>
+                        <li><a href="https://www.kitware.com/" target="_blank">Kitware</a></li>
+                        <li><a href="https://dome9.com/" target="_blank">Dome9 Security</a></li>
+                        <li><a href="https://www.jetbrains.com/" target="_blank">JetBrains</a></li>
+                        <li><a href="https://mymonero.com/" target="_blank">My Monero</a></li>
                     </ul>
                 </div>
             </div>

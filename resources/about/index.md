@@ -18,7 +18,7 @@ meta_descr: meta_descr.about
                         </div>
                     </div>
                     <div>
-                        <p>{% t about.history_para1 %} <a href="https://bitcointalk.org/index.php?topic=563821.0">{% t about.history_para2 %}</a> {% t about.history_para3 %}</p>
+                        <p>{% t about.history_para1 %} <a href="https://bitcointalk.org/index.php?topic=563821.0" target="_blank">{% t about.history_para2 %}</a> {% t about.history_para3 %}</p>
                         <p>{% t about.history_para4 %}</p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ meta_descr: meta_descr.about
                     <div>
                         <p>{% t specs.intro %} <a href="{{ site.baseurl }}/library/">{% t specs.intro_link %}</a> {% t specs.intro1 %}.</p>
                             <h3>{% t specs.pow_title %}</h3>
-                                <p>{% t specs.pow %}. <a href="https://github.com/tevador/randomx">{% t specs.pow_link %}</a>.</p>
+                                <p>{% t specs.pow %}. <a href="https://github.com/tevador/randomx" target="_blank">{% t specs.pow_link %}</a>.</p>
                             <h3>{% t specs.block_emission_title %}</h3>
                                 <p>{% t specs.block_emission_pre %} {% t specs.block_emission_main %}, {% t specs.block_emission_tail %} (@Tail-Emission).</p>
                             <h3>{% t specs.blocks_title %}</h3>
