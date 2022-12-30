@@ -542,7 +542,7 @@ faq:
   alongtimemove: Don't worry, your coins are safe. To be able to spend them you only have to download and run the latest Monero software. You can use the @mnemonic-seed you previously saved to restore your wallet at any time. Note that hard forks in Monero are scheduled and non-contentious. Which means no new coin is created.
   qvuln: Are there known vulnerabilities in Monero?
   avuln: >
-    The Monero community has created a series of videos called "Breaking Monero", where potential Monero vulnerabilities are explored and discussed. There are 14 videos, with each exploring a different subject. Check out <a href="https://www.monerooutreach.org/breaking-monero/">the videos on monerooutreach.org</a>.
+    The Monero community has created a series of videos called "Breaking Monero", where potential Monero vulnerabilities are explored and discussed. There are 14 videos, with each exploring a different subject. Check out <a href="https://www.monerooutreach.org/breaking-monero/" target="_blank">the videos on monerooutreach.org</a>.
   vulnspotify: Available on Spotify as podcast
   qasicresistance: "What is ASIC resistance? Why is it important?"
   aasicresistance: ASICs are basically special computers created to do only one job, contrary to normal computers, which are made for general purpose. This characteristic makes ASICs very efficient for @mining.
@@ -576,13 +576,13 @@ mining:
   conpolcent: Too many people mining on a single pool might lead on the pool having >50% of the total hashrate, which is dangerous
   choosepol: "If you need help choosing a pool or you just want more information about them, use:"
   hardware: Hardware
-  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://xmrig.com/benchmark">xmrig benchmarks page</a> (some results might be out of date).
+  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://xmrig.com/benchmark" target="_blank">xmrig benchmarks page</a> (some results might be out of date).
   software: Software
   softwarep: >
     There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
   software_para: Note that some miners may have developer fees.
   support: Support
-  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="https://matrix.to/#/#monero-pools:monero.social" target="_blank">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   p2poolh: "P2Pool: The best of both solo and pool mining"
   p2poolnew: >
     P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="/2021/10/05/p2pool-released.html">the announcement post</a>.
@@ -906,12 +906,12 @@ library:
   books: Books
   zerotomonerov2: "Zero to Monero: Second Edition"
   zerotomonerov2p: >
-    Published: 4 April 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
+    Published: 4 April 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">LaTeX source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
     We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
-    Published: 26 June 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
+    Published: 26 June 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report" target="_blank">LaTeX source code here</a>
   masteringmonerop: >
     A guide through the seemingly complex world of Monero.<br>
     It includes:

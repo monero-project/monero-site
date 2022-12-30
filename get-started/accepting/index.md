@@ -17,10 +17,10 @@ meta_descr: meta_descr.accepting
             </ul>
             <h3 id="gui">{% t accepting.title_gui %}</h3>
               <p>{% t accepting.gui1 %}</p>
-              <p>{% t accepting.gui2 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md#receive-monero">{% t accepting.guilinkguide %}</a></p>
+              <p>{% t accepting.gui2 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md#receive-monero" target="_blank">{% t accepting.guilinkguide %}</a></p>
                 <img class="top-margin" src="/img/receive.png" width="980" height="800" loading="lazy" alt="receive page">
               <p>{% t accepting.guiinstructions %}</p>
-              <p>{% t accepting.guimerchant %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md#merchant-view">{% t accepting.guilinkguide1 %}</a>.</p>
+              <p>{% t accepting.guimerchant %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md#merchant-view" target="_blank">{% t accepting.guilinkguide1 %}</a>.</p>
                 <img class="top-margin" src="/img/merchant_page.png" width="980" height="800" loading="lazy" alt="merchant view">
               <p>{% t accepting.guimerchant1 %}</p>
               <p>{% t accepting.guisteps %}</p>
@@ -45,7 +45,7 @@ meta_descr: meta_descr.accepting
               <p><i>{% t accepting.clinotes %}</i></p>
             <h3 id="merchants">{% t accepting.merchantstitle %}</h3>
               <p>{% t accepting.merchantsreceive %} <a href="{{ site.baseurl }}/resources/developer-guides/">{% t accepting.merchdevguides %}</a>. {% t accepting.merchantsreceive1 %}</p>
-              <p>{% t accepting.merchantsint %} <a href="https://github.com/monero-integrations">{% t accepting.merchantsintlink %}</a>.</p>
+              <p>{% t accepting.merchantsint %} <a href="https://github.com/monero-integrations" target="_blank">{% t accepting.merchantsintlink %}</a>.</p>
               <p>{% t accepting.merchantsthirdp %} <a href="{{ site.baseurl }}/resources/tools/#payment-gateways">{% t accepting.merchthirdlink %}</a>. {% t accepting.merchantsthirdp1 %}</p>
           </div>
         </div>                
