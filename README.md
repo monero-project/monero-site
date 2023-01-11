@@ -75,7 +75,7 @@ Screenshots cannot be translated as text obviously, so the only viable solution 
 For example, if the user guide `How to solo mine with the GUI` is translated into French and you want to have the screenshot translated, follow these steps:
 
 1. Go to `/img/resources/user-guides`
-2. If this is the first localized screenshot for that language, you'll need to create a dedicate folder with the code of that language. In this example we'll use `fr`.
+2. If this is the first localized screenshot for that language, you'll need to create a dedicated folder with the code of that language. In this example we'll use `fr`.
 3. Copy the folder containing the screenshots of the guide you are working on from inside the `en` folder. In this example you have to copy `solo_mine_GUI` into `fr`
 4. Now take a look at the screenshots inside `solo_mine_GUI` and replace them with screenshots of the GUI in French.
 5. Edit the path of the images in the markdown file which contains the guide. Remember that by default all guides point to the English version, so everything you'll have to do is to change the path of the screenshot and replace `en` with your language code. In our example, we need to navigate to `/_i18n/fr/resources/user-guides/solo_mine_GUI.md` and change the path of all screenshots from `/img/resources/user-guides/en/remote_node/SCREENSHOT.png` to `/img/resources/user-guides/fr/remote_node/SCREENSHOT.png`.
@@ -294,7 +294,7 @@ Where `STATUS` can be:
 - `ongoing` for milestones currently being worked on
 - `upcoming` for milestones not yet completed or in progress
 
-If an entry is `completed`, a green tick simble will be displayed on its left. if it's `ongoing` a roadwork sign and `upcoming` a compass.
+If an entry is `completed`, a green tick symbol will be displayed on its left. if it's `ongoing` a roadwork sign and `upcoming` a compass.
 
 `KEY` is the key used in the `_i18n/LANG.yml` file, in the `roadmap` section. If you are adding a new entry, you only need to add the key and its contained text in the `_i18n/en.yml` file. Weblate, the localization platform, will deal with making the string available for translators and then add it to all languages.
 
@@ -304,7 +304,7 @@ The roadmap can be translated on Weblate [on Weblate](https://translate.getmoner
 
 ## How to add a question to the FAQ
 
-The structure of the FAQ is a bit more complex than it used to be and contains anchors, variables and a TOC. A step by step guide would be too complex to follow. A basic knowledge of HTML is necessary to edit the page. If you wish to add a new FAQ please open an issue in the repository or/and contact the Website workgroup.
+The structure of the FAQ is a bit more complex than it used to be and contains anchors, variables and a TOC. A step by step guide would be too complex to follow. Basic knowledge of HTML is necessary to edit the page. If you wish to add a new FAQ please open an issue in the repository or/and contact the Website workgroup.
 
 ## How to add a publication to the Library
 
