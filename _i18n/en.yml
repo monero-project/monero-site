@@ -982,6 +982,8 @@ moneropedia:
     wallet: Wallet
     clsag: CLSAG
     merge-mining: Merge Mining
+    p2pool: P2Pool
+    sidechain: Sidechain
 
 tools:
   intro1: Below is a list of third-party tools for interacting with the Monero ecosystem. <b>These tools are not vetted by the Getmonero team, see the disclaimer at the bottom of this page.</b> If a tool no longer supports Monero or you would like a Monero tool to be listed, please
