@@ -5,18 +5,18 @@
 - [When should I restore a wallet?](#when-should-i-restore-a-wallet)
 
 - [What is needed to restore a wallet from mnemonic
-seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)
+  seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)
 
 - [What is the wallet restore height?](#what-is-the-wallet-restore-height)
 
 - [How to restore a wallet from mnemonic seed on Monero
-GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)
+  GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)
 
 - [How to restore a wallet from mnemonic seed on Monero
-CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)
+  CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)
 
 - [My restored wallet is showing a wrong
-balance](#my-restored-wallet-is-showing-a-wrong-balance)
+  balance](#my-restored-wallet-is-showing-a-wrong-balance)
 
 ### When should I restore a wallet?
 
@@ -145,25 +145,28 @@ settings](/img/resources/user-guides/en/restore_account/daemon-settings.png)
 2) Next, you will be asked for a wallet file name. Enter the name of the
    wallet you want to create and press `Enter`.
 
-3) Monero CLI will then ask you to give your wallet a password and confirm
+3) Next, enter your 25 word mnemonic seed.
+
+4) Next, you will be asked to enter a seed offset passphrase if you have one
+   (this is NOT your wallet password).
+
+5) Monero CLI will then ask you to give your wallet a password and confirm
    it. Since your wallet will hold your private keys and seed, it is really
    important to enter a strong password.
 
-4) Next, enter your 25 word mnemonic seed.
-
-5) Next, Monero CLI will ask for a `Restore height`. Even though it is
+6) Next, Monero CLI will ask for a `Restore height`. Even though it is
    optional, it's not recommended to leave it blank, since setting a restore
    height makes your wallet synchronization faster. Ideally it should be the
    number of the block which included the first incoming transaction to your
    wallet. Alternatively, you can also enter the date or an estimated date
    (YYYY-MM-DD format) of the first incoming transaction.
 
-6) After you have entered restore height, Monero CLI will then restore your
+7) After you have entered restore height, Monero CLI will then restore your
    wallet and start the wallet synchronization. Please be patient as this
    process may take a while. You will need to wait for it to finish before
    start using your wallet.
 
-7) If you run into any trouble, running `./monero-wallet-cli --help` will
+8) If you run into any trouble, running `./monero-wallet-cli --help` will
    show you the options available to you at wallet startup. Once you're
    inside your wallet, running the `help` command will list the help for the
    commands available to you within the wallet.
