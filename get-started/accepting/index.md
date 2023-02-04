@@ -45,7 +45,7 @@ permalink: /get-started/accepting/index.html
             <h3 id="merchants">{% t accepting.merchantstitle %}</h3>
               <p>{% t accepting.merchantsreceive %} <a href="{{ site.baseurl }}/resources/developer-guides/">{% t accepting.merchdevguides %}</a>. {% t accepting.merchantsreceive1 %}</p>
               <p>{% t accepting.merchantsint %} <a href="https://github.com/monero-integrations">{% t accepting.merchantsintlink %}</a>.</p>
-              <p>{% t accepting.merchantsthirdp %} <a href="{{ site.baseurl }}/community/merchants/#payment-gateways">{% t accepting.merchthirdlink %}</a>. {% t accepting.merchantsthirdp1 %}</p>
+              <p>{% t accepting.merchantsthirdp %} <a href="{{ site.baseurl }}/resources/tools/#payment-gateways">{% t accepting.merchthirdlink %}</a>. {% t accepting.merchantsthirdp1 %}</p>
           </div>
         </div>                
     </div>
