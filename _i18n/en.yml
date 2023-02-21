@@ -138,6 +138,7 @@ merchants:
   cardkyc: "<b>No KYC</b> (Know Your Customer):"
   cardbtcfiat: (BTC &#8596; fiat possible)
   cardonion: "Onion address:"
+  cardi2p: "I2P address:"
   noncustodial: "Non-custodial:"
   hodlhodldescr: P2P trading platform with non-custodial escrow.
   locmondescr: Online P2P exchange offering person-to-person trades.
