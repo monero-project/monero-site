@@ -101,6 +101,7 @@ permalink: /community/merchants/index.html
         <ul class="logo">
             <li><a href="https://swapzone.io/">Swapzone.io</a></li>
             <li><a href="https://orangefren.com/">Orangefren</a></li>
+            <li><a href="https://trocador.app/">Trocador</a></li>
           </ul>
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
