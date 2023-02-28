@@ -66,7 +66,7 @@ cli:
      icon: icon-linux
      vers:
    - platform: Linux ARMv8
-     hash: 46e793b1401e3b3b1d7308bacede021ec45af7df70e277530079386abb3915da
+     hash: fb20eaf9b04020abdf883eb339258814742a1452653c1f5d8705d16e90413f35
      link: https://downloads.getmonero.org/cli/linuxarm8
      icon: icon-linux
      vers:
