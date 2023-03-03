@@ -10,7 +10,7 @@ An incomplete list of Exchanges that support Monero is on our [Merchants page]({
 
 ## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
 
-Download the @paper-wallet generator at: [moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick (Direct link: [https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip)).
+Download the @paper-wallet generator at: [getmonero.org/generator]({{ site.baseurl}}/generator) and copy it to a USB stick (direct link: [monero-wallet-generator.zip]({{ site.baseurl }}/resources/wallet-generator/monero-wallet-generator.zip)).
 
 Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system.
 
