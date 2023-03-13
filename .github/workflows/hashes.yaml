@@ -22,13 +22,16 @@ jobs:
         run: |
           sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip zbar-tools
           sudo pip3 install yq
-      - name: Verify hashes.txt + contributing.yml signature
+      - name: Verify hashes.txt + contributing.yml + wallet-generator signature
         run: |
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
           gpg --verify downloads/hashes.txt
           gpg --verify _data/contributing.yml.asc
-
+          gpg --verify resources/wallet-generator/wallet-generator.html.asc
+          mkdir resources/wallet-generator/validate_sig
+          unzip resources/wallet-generator/wallet-generator.zip -d resources/wallet-generator/validate_sig
+          gpg --verify resources/wallet-generator/validate_sig/wallet-generator.html.asc
       - name: Verify General Fund donation QR's
         run: |
           yaml="_data/contributing.yml"
