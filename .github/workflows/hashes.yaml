@@ -24,6 +24,12 @@ jobs:
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
           gpg --verify downloads/hashes.txt
+      - name: Verify monero-wallet-generator.html signature
+        run: |
+          gpg --verify resources/wallet-generator/wallet-generator.html.asc
+          mkdir resources/wallet-generator/validate_sig
+          unzip resources/wallet-generator/wallet-generator.zip -d resources/wallet-generator/validate_sig
+          gpg --verify resources/wallet-generator/validate_sig/wallet-generator.html.asc
       - name: Verify filenames
         run: |
           lines="$(grep -v ^# downloads/hashes.txt)"
