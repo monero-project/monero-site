@@ -334,22 +334,28 @@ Inputs:
 
 * *account_index* - unsigned int; Create a new address for this account.
 * *label* - string; (Optional) Label for the new address.
+* *count* - unsigned int; (Optional) Number of addresses to create (Defaults to 1).
 
 Outputs:
 
 * *address* - string; Newly created address. Base58 representation of the public keys.
 * *address_index* - unsigned int; Index of the new address under the input account.
+* *address_indices* - array of unsigned int; List of address indices.
+* *addresses* - array of string; list of addresses.
 
 Example:
 
 ```
-$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_address","params":{"account_index":0,"label":"new-sub"}}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"create_address","params":{"account_index":0,"label":"new-subs","count":2}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
     "address": "7BG5jr9QS5sGMdpbBrZEwVLZjSKJGJBsXdZLt8wiXyhhLjy7x2LZxsrAnHTgD8oG46ZtLjUGic2pWc96GFkGNPQQDA3Dt7Q",
-    "address_index": 5
+    "address_index": 5,
+    "address_indices": [5,6],
+    "addresses": ["7BG5jr9QS5sGMdpbBrZEwVLZjSKJGJBsXdZLt8wiXyhhLjy7x2LZxsrAnHTgD8oG46ZtLjUGic2pWc96GFkGNPQQDA3Dt7Q","72sRxcVHmxV9RSpEJoSyukj4z2zjk3AhmRJabPSonGHZepYfyFDiKKtPvreg7kYiFHMHFG9Wi4Hqg9uKzP44aieQJVccLnc"]
+
   }
 }
 ```
@@ -1320,7 +1326,7 @@ Alias: *None*.
 
 Inputs:
 
-* *key_type* - string; Which key to retrieve: "mnemonic" - the mnemonic seed (older wallets do not have one) OR "view_key" - the view key
+* *key_type* - string; Which key to retrieve: "mnemonic" - the mnemonic seed (older wallets do not have one) OR "view_key" - the view key OR "spend_key".
 
 Outputs:
 
@@ -2810,7 +2816,7 @@ Outputs:
 Example:
 
 ```
-$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"generate_from_keys", "params"={"restore_height":0,"filename":"wallet_name","address":"42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM","spendkey":"11d3fd247672c4cb29b6e38791dcf07629cd2d68d868f0b78811ce584a6b0d01","viewkey":"97cf64f2cd6c930242e9bed5f14f8f16a33047229aca3eababf4af7e8d113209","password":"pass","autosave_current":true}},' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"generate_from_keys", "params":{"restore_height":0,"filename":"wallet_name","address":"42gt8cXJSHAL4up8XoZh7fikVuswDU7itAoaCjSQyo6fFoeTQpAcAwrQ1cs8KvFynLFSBdabhmk7HEe3HS7UsAz4LYnVPYM","spendkey":"11d3fd247672c4cb29b6e38791dcf07629cd2d68d868f0b78811ce584a6b0d01","viewkey":"97cf64f2cd6c930242e9bed5f14f8f16a33047229aca3eababf4af7e8d113209","password":"pass","autosave_current":true}},' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
