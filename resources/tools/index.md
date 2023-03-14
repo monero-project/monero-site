@@ -85,7 +85,7 @@ permalink: /resources/tools/index.html
             <div class="info-block">
                 <div class="row">
                     <div class="col">
-                        <h2>{% t tools.gateways %}</h2>
+                        <h2 id="payment-gateways">{% t tools.gateways %}</h2>
                         <p><a href="https://btcpayserver.org">BTCPay Server</a></p>
                         <p><a href="https://www.cdpay.eu/">CDPay</a></p>
                         <p><a href="https://www.coinpayments.net/">CoinPayments</a></p>

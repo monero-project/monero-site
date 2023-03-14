@@ -379,7 +379,7 @@ accepting:
   merchantsint: "If you prefer to not directly deal with the wallets, you can use a third party payment system. Members of the Monero community have created a set of integrations for various platforms and languages. You can find more info on"
   merchantsintlink: the GitHub organization
   merchantsthirdp: If you are looking for other third party integration system, there is a list of payment gateways on
-  merchthirdlink: the merchant page
+  merchthirdlink: the tools page
   merchantsthirdp1: Some of those offer nice features like the possibility to automatically convert part of your income in fiat money or to accept other cryptocurrencies along with Monero.
 
 contributing:

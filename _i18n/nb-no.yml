@@ -799,7 +799,7 @@ accepting:
     \ å gi CLI-en din denne kommandoen: «kontobytte 1». Nå sitter du på din «Donasjoner»-konto,\
     \ og du kan begynne å bruke den med én gang.\n"
   merchdevguides: utviklerguider
-  merchthirdlink: forhandlersiden
+  merchthirdlink: the tools page
   merchantsthirdp: Hvis du er på utkikk etter et annet tredjeparts integrasjonssystem,
     finnes en liste over betalingsporter på
   merchantsintlink: GitHub-organisasjonen
