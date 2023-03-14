@@ -944,7 +944,6 @@ moneropedia:
     block: Block
     bootstrap-node: Bootstrap-node
     bulletproofs: Bulletproofs
-    canonically-unique-host: Canonically-unique host
     change: Change
     clearnet: Clearnet
     coinbase: Coinbase Transaction
