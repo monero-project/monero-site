@@ -281,6 +281,12 @@ permalink: /downloads/index.html
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
+                        <tr>
+                            <td><img class="small" src="/img/coin-wallet.png" width="142" height="142" loading="lazy" alt="Coin Wallet Logo"><a href="https://coin.space/">Coin Wallet</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://github.com/CoinSpace" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                        </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <h3>{% t downloads.localsync %}</h3>
