@@ -260,9 +260,9 @@ downloads:
   showhash2: and should be treated as canonical, with the signature checked against the appropriate GPG key
   showhash3: in the source code
   showhash4: "Two guides are available to guide you through the verification process:"
-  mobilelight1: The wallets listed below are mobile or light wallets that are deemed safe by respected members of the community. If you want to use a wallet that is not listed on this page, it is strongly recommended that you consult the community to find out if the wallet is safe and what are the risks in using it. Go to our
+  mobilelight1: The wallets listed below are non-custodial mobile or light wallets not managed by the Monero core team that have been around for some time. It is strongly recommended that you do your own research to find out if the wallets are safe and what are the risks of using them. Go to our
   mobilelight2: Hangouts
-  mobilelight3:  page to see where we are.
+  mobilelight3:  page to see where the Monero communities meet.
   installer: Installer
   avwarning: Be aware that some antiviruses and firewalls may flag the Monero executables and archives as malware.
   moreinfofaq: More info in the FAQ
