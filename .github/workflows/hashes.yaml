@@ -17,8 +17,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          sudo apt-get install -y --no-install-recommends curl gpg jq python-pip
-          sudo pip install yq
+          sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip
+          sudo pip3 install yq
       - name: Verify hashes.txt signature
         run: |
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
