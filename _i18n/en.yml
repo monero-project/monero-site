@@ -680,7 +680,6 @@ user-guides:
   ledger-wallet-cli: How to use a Ledger wallet on Monero CLI
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
   tor_wallet: How to connect your wallet to your own node over Tor
-  node-i2pzero: How to run a node through I2P with I2P-zero
   guiguide: Guide for the Monero GUI wallet
   tailsguide: How to use Monero on Tails
   make-payment: How to make a payment
