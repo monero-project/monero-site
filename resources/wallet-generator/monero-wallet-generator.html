@@ -1,8 +1,24 @@
-<html>
+<html lang="en">
 <head>
   <title>Monero offline wallet generator</title>
   <meta charset="UTF-8">
 
+  <meta name="description" content="Offline Monero wallet generator">
+  <meta name="keywords" content="{{ site.keywords }}">
+  <meta property="og:title" content="Monero wallet generator">
+  <meta property="og:description" content="Offline Monero wallet generator">
+  <meta property="og:image" content="{{ site.url }}/press-kit/symbols monero-symbol-on-white-480.png">
+  <meta property="og:site_name" content="{% t global.sitename %}">
+  <meta property="og:url" content="{{ site.url }}/generator">
+  <meta property="og:type" content="website">
+  <meta http-equiv="onion-location" content="{% include onion.html %}/generator"/>
+  <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+  <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiIiwiaWNvbnMiOlt7InNyYyI6Ii9tZXRhL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwic2l6ZXMiOiIxOTJ4MTkyIiwidHlwZSI6ImltYWdlL3BuZyJ9LHsic3JjIjoiL21ldGEvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0K">
+  <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
 <!--
 
 /*
@@ -2283,6 +2299,156 @@
             color: transparent !important;
         }
 
+    <style type="text/css">
+        html {
+            line-height: 1.3;
+            width: 100%;
+        }
+
+        .private {
+            background-color: #FF8080
+        }
+
+        .public {
+            background-color: #80FF80
+        }
+
+        .card {
+            margin: 0.5rem 0px 0.5rem !important;
+        }
+
+        .card .card-content {
+            padding: 10px !important;
+        }
+
+        .row {
+            margin-bottom: 10px !important;
+        }
+
+        pre { margin:0px;}
+    </style>
+
+<style>
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    width: 71rem;
+    max-width: 100%;
+}
+
+.row-new {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.btn-monero {
+    max-width: 60%
+}
+
+.wrapper-generator {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.generator-box {
+    width: 30%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+form.languages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; #row but column on mobile
+}
+
+form.languages > * {
+    margin: 0.5rem;
+    width: 15rem;
+
+}
+
+.container-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.grey.lighten-3 {
+    background-color: #eeeeee !important;
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .wrapper-generator {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .generator-box {
+    width: 100%;
+    text-align: left;
+    }
+}
+
+</style>
+
+    <style>
+
+    .light-green.lighten-5 {
+        background-color: #f1f8e9 !important;
+    }
+
+
+    .light-green-text.text-darken-4 {
+        color: #33691e !important;
+    }
+            
+    .pink.lighten-5 {
+        background-color: #fce4ec !important;
+    }
+            
+    
+    .pink-text {
+        color: #e91e63 !important;
+    }
+    
+    .pink-text.text-darken-4 {
+        color: #880e4f !important;
+    }
+
+    .grey-text.text-darken-4 {
+        color: #212121 !important;
+    }
+
+    .deep-orange {
+        background-color: #ff5722 !important;
+    }
+
+    .grey.lighten-3 {
+        background-color: #eeeeee !important;
+    }
+
         /*** Colors ***/
         /*** Badges ***/
         /*** Buttons ***/
@@ -2943,6 +3109,18 @@
             margin-top: 20px;
             padding-top: 20px;
             background-color: #ee6e73;
+        }
+
+        @media only screen and (min-width: 601px) {
+            .container {
+                width: 85%;
+            }
+        }
+
+        @media only screen and (min-width: 993px) {
+            .container {
+                width: 70%;
+            }
         }
 
         footer.page-footer .footer-copyright {
@@ -3834,7 +4012,6 @@
 
         nav {
             color: #fff;
-            background-color: #ee6e73;
             width: 100%;
             height: 56px;
             line-height: 56px;
@@ -3872,6 +4049,19 @@
             height: 56px;
             line-height: 56px;
         }
+        nav a {
+            color: #fff;
+        }
+
+        nav .nav-wrapper {
+            position: relative;
+            height: 100%;
+        }
+
+        nav .nav-wrapper i {
+            display: block;
+            font-size: 2rem;
+        }
 
         nav .brand-logo {
             position: absolute;
@@ -3888,6 +4078,20 @@
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
             transform: translateX(-50%);
+        }
+
+        nav a {
+            color: #fff;
+        }
+
+        nav .nav-wrapper {
+            position: relative;
+            height: 100%;
+        }
+
+        nav .nav-wrapper i {
+            display: block;
+            font-size: 2rem;
         }
 
         @media only screen and (max-width: 992px) {
@@ -4361,6 +4565,7 @@
             margin: 0.5rem 0 1rem 0;
             background-color: #fff;
             border-radius: 2px;
+            max-width: 100%;
         }
 
         .card .card-title {
@@ -4675,8 +4880,7 @@
             border: none;
             border-radius: 2px;
             display: inline-block;
-            height: 36px;
-            line-height: 36px;
+            height: 2.2rem;
             outline: 0;
             padding: 0 2rem;
             text-transform: uppercase;
@@ -6658,13 +6862,15 @@
         .btn-qr {
             line-height: 25px;
             height: 25px;
-            font-size: 60%;
+            font-size: 1rem;
             padding: 0px 1.5rem;
+            margin-top: 0.5rem;
         }
         #address_widget, #spend_key_widget, #view_key_widget,
         #mnemonic_address, #privatekeys_address {
             font-family: monospace;
             overflow-wrap: break-word;
+            font-size: 1rem;
         }
 
 
@@ -6696,6 +6902,9 @@
         input { display: none !important; }
         .noprint { display: none; }
         .print-only { display: block; }
+    }
+    #offline-message {
+      display: none;
     }
     </style>
 </head>
@@ -10924,7 +11133,7 @@ html { font-family: sans-serif }
 
 <nav class="grey lighten-3">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">
+        <a href="https://www.getmonero.org" class="brand-logo center">
             <img style="height:60px;" src="data:image/svg+xml;base64,
 PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFk
 b2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246
@@ -10979,58 +11188,51 @@ bC0zLjUsMjAuNGgtNkwyNDQuOCwzMTAuNkwyNDQuOCwzMTAuNnoiLz4KPC9nPgo8L3N2Zz4K">
     </div>
 </nav>
 
-<div class="row noprint">&nbsp;</div>
 <div class="row center-align noprint">
     <div class="col s12">
-        <h4 style="color: #555;">Offline wallet generator</h4>
+        <h4>Offline wallet generator</h4>
     </div>
 </div>
 <div class="row center-align print-only">
     <div class="col s12">
-        <h4 style="color: #555;">Offline wallet</h4>
+        <h4>Offline wallet</h4>
         <p id="date"></p>
     </div>
 </div>
-
-
-    <div class="row noprint">
-        <div class="col s12">
+<div class="container-flex">
+    <div class="row-new noprint">
+        <p>
+            This page generates Monero, <a href="http://www.aeon.cash/" target="_blank">Aeon</a> or <a href="https://www.townforge.net/" target="_blank">Townforge</a> wallet. It is self contained and does all the necessary calculations locally, so is suitable for generating a new wallet on a machine that is not connected to the network, and may even never be (see <a href="#usage">Usage</a>).</br> This way, you can create a wallet without risking the keys. </br>This file is GPG signed, see <a href="#gpg-instructions">GPG instructions</a>.
+        </p>
+        <noscript>
             <p>
-                This page generates a new
-                <select id="currencyDropDownList" onchange="js:setCoin(this.selectedIndex);genwallet();restore_old_selection_index();" class="waves-effect waves-light btn" style="max-width: 20%">
-                  <option>Monero</option>
-                  <option>Aeon</option>
-                  <option>Townforge</option>
-                </select>
-                wallet. It is self contained and
-                does all the necessary calculations locally, so is suitable for generating a new wallet on a machine
-                that is not connected to the network, and may even never be. This way, you can create
-                a Monero/Aeon/Townforge wallet without risking the keys. This file is GPG signed, see <a href="#gpg-instructions">GPG instructions</a>.
-                You can check for up to date versions of this page
-                <a href="https://github.com/moneromooo-monero/monero-wallet-generator/blob/master/monero-wallet-generator.html">here</a>.
+                <b>Note: Javascript needs to be activated.</b>
             </p>
-        </div>
-    </div>
-    <div class="row valign-wrapper noprint">
-        <div class="col s4 right-align ">
-                <input class="btn orange" type="button" onclick="js:genwallet(null);"
-                       value="Generate wallet" id="gen_with_custom_entropy_button" action=""/>
-                <p>Custom entropy for deterministic wallet (leave empty to use the browser's PRNG)</p>
-                <input type="text" value="" id="user_entropy_widget" oninput="js:checkEntropy();" onKeyPress="if (event.keyCode == 13) js:genwallet(null);" />
-                <div style="color: red; display: none" id="user_entropy_warning_widget">WARNING: entropy is way too low for the wallet to be secure: aim for 256 bits (about a hundred dice throws)</div>
-        </div>
-        <div class="col s1 offset-s1"><h4>or</h4></div>
-        <div class="col s5 offset-s1">
-            <form>
-                <input class="btn deep-orange" type="button" onclick="js:genwallet_prefix();" value="Generate wallet with prefix" action="" id="gen_prefix_widget"/>
-                <p>(very slow for more than a few characters)</p>
-                <input type="text" value="4" id="prefix_widget" oninput="js:check_prefix_validity()"; onKeyPress="if (event.keyCode == 13){ js:genwallet_prefix(); return false;}" />
-            </form>
-        </div>
-    </div>
-    <div class="row center-align noprint">
-        <div class="col s12">
-            <form>
+        </noscript>
+        <p>
+            <b id="offline-message">Note: It is strongly advised to generate your wallet offline.</b>
+        </p>
+        <script>
+            if (window.location.href.startsWith('http')) {
+                document.getElementById('offline-message').style.setProperty('display', 'block');
+            } else {
+                document.getElementById('offline-message').style.setProperty('display', 'none');
+            }
+        </script>
+        <h5>1. Choose a cryptocurrency</h5>
+        <p>
+            I'm creating a wallet for <select id="currencyDropDownList" onchange="js:setCoin(this.selectedIndex);genwallet();restore_old_selection_index();" class="waves-effect waves-light btn btn-monero">
+                <option>Monero</option>
+                <option>Aeon</option>
+                <option>Townforge</option>
+                </select>
+        </p>
+        <h5>2. Generate wallet</h5>
+        <p>
+            In which language would you like your Mnemonic seed to be displayed?
+        </p>
+        <div class="row-new center-align noprint">
+            <form class="languages">
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('english');" value="English" action=""/ id=lang_en>
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('spanish');" value="Spanish" action=""/ id=lang_es>
                 <!-- portuguese word list has a few prefix collisions
@@ -11039,219 +11241,169 @@ bC0zLjUsMjAuNGgtNkwyNDQuOCwzMTAuNkwyNDQuOCwzMTAuNnoiLz4KPC9nPgo8L3N2Zz4K">
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('japanese');" value="Japanese" action=""/ id=lang_jp>
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('esperanto');" value="Esperanto" action=""/ id=lang_eo>
                 <br>
-                <font size="-1">(restoring non English language seeds needs a recent simplewallet)</font>
             </form>
         </div>
+        <div>
+            You are almost done! Now you have two options:
+            <ul>
+                <li><b>Generate wallet:</b> Just click on the button to create your wallet. you have also the possibility to add custom entropy (regular users can ignore it)</li>
+                <li><b>Generate wallet with prefix:</b> Same as using the "Generate wallet" option, but you can generate a custom primary address.</li>
+            </ul>
+        </div>
     </div>
-    <div class="row">
-        <div class="col s12">
+        <div class="row-new noprint">
+            <div class="wrapper-generator">
+                <div class="generator-box">
+                    <input class="btn orange" type="button" onclick="js:genwallet(null);"
+                            value="Generate wallet" id="gen_with_custom_entropy_button" action=""/>
+                    <p>Custom entropy for deterministic wallet (leave empty to use the browser's PRNG)</p>
+                    <input type="text" value="" id="user_entropy_widget" oninput="js:checkEntropy();" onKeyPress="if (event.keyCode == 13) js:genwallet(null);" />
+                    <div style="color: red; display: none" id="user_entropy_warning_widget">WARNING: entropy is way too low for the wallet to be secure: aim for 256 bits (about a hundred dice throws)</div>
+                </div>
+                <div class="generator-box"><h4>or</h4></div>
+                </br>
+                <div class="generator-box">
+                <form>
+                    <input class="btn deep-orange" type="button" onclick="js:genwallet_prefix();" value="Generate wallet with prefix" action="" id="gen_prefix_widget"/>
+                    <p>(Very slow for more than a few characters. The address must start with 4)</p>
+                    <input type="text" value="4" id="prefix_widget" oninput="js:check_prefix_validity()"; onKeyPress="if (event.keyCode == 13){ js:genwallet_prefix(); return false;}" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="row-new noprint">
+            <h5>3. Save generated wallet</h5>
+            <p>
+                Below are the details of your generated wallet. <b>Make sure to note down at least the mnemonic seed to maintain access to the wallet</b>. A QR code pointing to your wallet's address is also generated.
+            </p>
+        </div>
+        <div class="container-output">
             <div class="card light-green lighten-5">
                 <div class="card-content light-green-text text-darken-4">
                     <span class="card-title light-green-text text-darken-4">
                       Public address
-                      <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_address_qr();" value="Show QR code" action=""id="show_qr_code"/>
                     </span>
-
-                    <p class="noprint">This is the address you give to third parties to send aeon/monero to you.
-                        <br><b>It is the only information here that's meant to be public.</b>
+                    <p class="noprint">This is the address you give to third parties to send coins to you. It can be safely shared publicly.
                     </p>
                 </div>
                 <div class="card-action center-align">
-                    <span class="center-align" id="address_widget">generating...</span>
-                </div>
-                <div class="card-action center-align">
+                    <span class="center-align" id="address_widget">Generating...</span><br>
+                    <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_address_qr();" value="Show QR code" action=""id="show_qr_code"/>
                     <span class="qrcode" id="address_qr_widget" onclick="js:toggle_address_qr();"></span>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row print-only">
-        <div class="col l12">
-            <p><b>Credits:</b>
-            Made by moneromooo, based on code from <a href="https://mymonero.com/">MyMonero</a>. Copyright notices in the source.
-            </p>
-        </div>
-    </div>
-    <div class="row print_break_before">
-        <div class="col s12">
-            <div class="card pink lighten-5">
-                <div class="card-content pink-text text-darken-5">
-                    <span class="card-title pink-text text-darken-5">Private Mnemonic seed
-                     <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_mnemonic_qr();" value="Show QR code" action="" id="show_priv_mnemonic_qr_code"/>
-                    </span>
-                    <p class="noprint">
-                        The mnemonic seed is a string that comprises 25 words and allows you to recreate your
-                        private keys. <b>Keep it secure!</b>
-                    </p>
-                    <p class="print-only" id="mnemonic_address">Generating...</p>
-                </div>
-                <div class="card-action center-align">
-                    <h5 class="grey-text text-darken-4" id="mnemonic_widget">Generating... </h5>
-                    <span class="qrcode" id="priv_mnemonic_qr_widget" onclick="js:toggle_priv_mnemonic_qr();"></span>
-                </div>
+            <div class="row-new print_break_before">
+                    <div class="card pink lighten-5">
+                        <div class="card-content pink-text text-darken-4">
+                            <span class="card-title pink-text text-darken-4">Private Mnemonic seed
+                            </span>
+                            <p class="noprint">
+                                The mnemonic seed is a string that comprises 25 words and allows you to recreate and backup your wallet. <b>Keep it secure and don't share it.</b>
+                            </p>
+                            <p class="print-only" id="mnemonic_address">Generating...</p>
+                        </div>
+                        <div class="card-action center-align">
+                            <h5 class="grey-text text-darken-4" id="mnemonic_widget">Generating... </h5>
+                            <span class="qrcode" id="priv_mnemonic_qr_widget" onclick="js:toggle_priv_mnemonic_qr();"></span>
+                            <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_mnemonic_qr();" value="Show QR code" action="" id="show_priv_mnemonic_qr_code"/>
+
+                        </div>
+                    </div>
             </div>
-        </div>
-    </div>
-    <div class="row print_break_before">
-        <div class="col s12">
-            <div class="card indigo lighten-5">
-                <div class="card-content indigo-text text-darken-4">
-                    <span class="card-title indigo-text text-darken-4">Private keys <span class="noprint">(optional)</span></span>
+            <div class="row-new print_break_before">
+                    <div class="card pink lighten-5">
+                        <div class="card-content pink-text text-darken-4">
+                            <span class="card-title pink-text text-darken-4">Private keys <span class="noprint">(optional)</span></span>
 
-                    <p class="noprint">
-                        The spend key and view key are the raw private keys for the
-                        new wallet.
-                        <b>They are here for your information, since they can be recovered using the mnemonic
-                        seed in the above box</b>.
-                        If you decide to keep them, keep them secure.
-                    </p>
-                    <p class="print-only" id="privatekeys_address">Generating...</p>
-                </div>
-                <div class="card-action center-align">
-                    <div class="row">
-                        <div class="col s3">
-                            <span class="label">Spend key:</span>
+                            <p class="noprint">
+                                The spend key and view key are the raw private keys for the
+                                new wallet.
+                                <b>They are here for your information, since they can be recovered using the mnemonic
+                                seed in the above box</b>.
+                                If you decide to keep them, keep them secure and don't share them.
+                            </p>
+                            <p class="print-only" id="privatekeys_address">Generating...</p>
                         </div>
-                        <div class="col s9">
-                            <span id="spend_key_widget">Generating...</span>
-                            <span class="qrcode" id="priv_spend_qr_widget" onclick="js:toggle_priv_spend_qr();"></span>
+                        <div class="card-action center-align">
+                            <div class="row">
+                                <div class="col s3">
+                                    <span class="label">Spend key:</span>
+                                </div>
+                                <div class="col s9">
+                                    <span id="spend_key_widget">Generating...</span><br>
+                                    <span class="qrcode" id="priv_spend_qr_widget" onclick="js:toggle_priv_spend_qr();"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3">
+                                    <span class="label">View key:</span>
+                                </div>
+                                <div class="col s9">
+                                    <span id="view_key_widget">Generating...</span><br>
+                                    <span class="qrcode" id="priv_view_qr_widget" onclick="js:toggle_priv_view_qr();"></span>
+                                </div>
+                            </div>
+                            <div class="row-new noprint">
+                                <div class="col s6">
+                                    <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_spend_qr();" value="Show Spend Key as QR code" action="" id="show_priv_spend_qr_code"/>
+                                </div>
+                                <div class="col s6">
+                                    <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_view_qr();" value="Show View Key as QR code" action="" id="show_priv_view_qr_code"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col s3">
-                            <span class="label">View key:</span>
-                        </div>
-                        <div class="col s9">
-                            <span id="view_key_widget">Generating...</span>
-                            <span class="qrcode" id="priv_view_qr_widget" onclick="js:toggle_priv_view_qr();"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s6">
-                            <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_spend_qr();" value="Show Spend Key as QR code" action="" id="show_priv_spend_qr_code"/>
-                        </div>
-                        <div class="col s6">
-                            <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_view_qr();" value="Show View Key as QR code" action="" id="show_priv_view_qr_code"/>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
+            <div class="row-new print_break_before noprint">
+                    <div class="card grey lighten-3">
+                        <div class="page-footer grey-text text-darken-4">
+<h5 id="usage">Usage</h5>
+<div>
+    <ol>
+        <li><a href="https://www.getmonero.org/resources/wallet-generator/monero-wallet-generator.zip" target="_blank">Download the zip file</a> and extract it locally.</li> 
+        <li>Verify the GPG signature (see below).</li>
+        <li>Open the "monero-wallet-generator.html" page and follow the instructions.</li>
+    </ol>
+    <p>
+    Once you have created your wallet, make sure to write the mnemonic seed on multiple sheets of paper by hand and store them securely. It's possible to print the wallet to a file or paper, but  be sure to use an air-gapped printer that only you can access, as printed files may be retrievable from memory.
+    </p>
 
-<div class="row noprint">&nbsp;</div>
-<footer class="page-footer grey lighten-3 grey-text text-darken-4 noprint">
-    <div class="container">
-        <div class="row">
-            <div class="col l12">
-                <h5>Credits</h5>
-                <p>
-                    Made by moneromooo, based on code from <a href="https://mymonero.com/">MyMonero</a>. Copyright notices in the source.
-                    <br>
-                    Thanks to antanst for the CSS, and to luigi1111 for crypto fixes and improvements.
-                    <br>
-                    If you found this useful, a donation would be appreciated:
-                    <br>
-                <pre>Monero: 4AfUP827TeRZ1cck3tZThgZbRCEwBrpcJTkA1LCiyFVuMH4b5y59bKMZHGb9y58K3gSjWDCBsB4RkGsGDhsmMG5R2qmbLeW</pre>
-                    <br>
-                <pre>Aeon: WmtXcFZj5iGY21JxAtFsJVQmQQyo7jgoJP8V4zLWVzDeeTfvbP8Mzb5gbNpQEc6BkeUYUqjGntHDSDyA6LKjdGBQ1w9iEpfVw</pre>
-                    <br>
-                <pre>Townforge: TF1MMDuPzx7CVoCDSjxEHGLQPvdRy5Mjjyg4KG8QY3qkZZVtBobvGkvv4JLbycx1UQrosqEyqZT9ye7zrZR3ucZp6iBp1YaRzLK</pre>
-
-                <br>
-                Thanks, and welcome to Monero!
-                </p>
+    <p>
+    For further information, read the guide <a href="https://www.getmonero.org/resources/user-guides/securely_purchase.html" target="_blank">How to create a Monero paper wallet</a>.
+    </p>
+</div>
 <h5 id="gpg-instructions">How to verify GPG signatures</h5>
 
 <p>
-All released versions of this page will be GPG signed by moneromooo, to avoid trojaned versions
-being passed around. It is in your interest to check the signature.
+All released versions of this page will be GPG signed by binaryFate, to avoid trojaned versions
+being passed around. It is in your interest to check the signature. To verify the generator after extracting the zip file:
 </p>
-<p>
-This page is maintained as a
-<a href="https://github.com/moneromooo-monero/monero-wallet-generator/">git repository</a>.
-All commits are signed. In addition, released versions of the page are signed separately.
-In order to check either, you first need to import
-<a href="https://raw.githubusercontent.com/monero-project/bitmonero/master/utils/gpg_keys/moneromooo.asc">moneromooo's GPG key</a>
-from the Monero source tree:
-</p>
+    <ol>
+        <li>Download <a href="https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc" target="_blank">binaryFate's key</a> and import it (e.g. gpg --import binaryfate.asc)</li>
+        <li>Now verify the signature of the generator. With GPG:  gpg --verify wallet-generator.html.asc </li>
+    </ol>
+    <p>If everything went ok you'll see a message like "gpg: Good signature[...]"</p>
+            <h5>Credits</h5>
+                <p>
+                    Made by moneromooo, based on code from <a href="https://mymonero.com/">MyMonero</a>. Copyright notices in the source.
+                    <br>
+                    Thanks to antanst for the CSS, and to luigi1111 for crypto fixes and improvements.<br>Modified for Getmonero.org. (<a href="https://github.com/monero-project/monero-site/resources/wallet-generator">source</a>)<br>You can find the original wallet Generator on moneromooo's GitHub repository. (<a href="https://github.com/moneromooo-monero/monero-wallet-generator">source</a>)
+                    <br>
+                    If you found this useful, the addresses below belong to moneromooo but you must confirm they are up to date before donating by obtaining them from the repository linked above.
+                    <br>
+                <pre>Monero: 4AfUP827TeRZ1cck3tZThgZbRCEwBrpcJTkA1LCiyFVuMH4b5y59bKMZHGb9y58K3gSjWDCBsB4RkGsGDhsmMG5R2qmbLeW</pre>
+                    
+                <pre>Aeon: WmtXcFZj5iGY21JxAtFsJVQmQQyo7jgoJP8V4zLWVzDeeTfvbP8Mzb5gbNpQEc6BkeUYUqjGntHDSDyA6LKjdGBQ1w9iEpfVw</pre>
+                    
+                <pre>Townforge: TF1MMDuPzx7CVoCDSjxEHGLQPvdRy5Mjjyg4KG8QY3qkZZVtBobvGkvv4JLbycx1UQrosqEyqZT9ye7zrZR3ucZp6iBp1YaRzLK</pre>
 
-<code>
-gpg --import moneromooo.asc
-</code>
-
-<h5>Checking a standalone signature</h5>
-
-<p>
-You need to get the signature file corresponding to the version of the page you're using.
-Original signature files are
-<a href="https://raw.githubusercontent.com/moneromooo-monero/monero-wallet-generator/master/monero-wallet-generator.html.asc">in the git repository</a>
-as well. Save it as monero-wallet-generator.html.asc, then:
-</p>
-
-<code>
-gpg --verify monero-wallet-generator.html.asc
-</code>
-
-<p>
-You should see a message similar to:
-</p>
-
-<code>
-gpg: Good signature from "moneromooo-monero &lt;moneromooo-monero@users.noreply.github.com&gt;"
-</code>
-
-<p>
-Check the signature is from the key you imported previously! If not, you may be checking
-that file was properly signed by an attacker instead of moneromooo. Beware that anyone can
-place any email address in a new GPG key, so the right email being shown is no guarantee.
-</p>
-
-<p>
-NOTE: you will probably also see a warning like this:
-</p>
-
-<code>
-gpg: WARNING: This key is not certified with a trusted signature!
-</code>
-
-<p>
-That is expected, as you only told GPG to import the signature in the steps above, but not
-to trust it. Look for tutorials on GPG if you want to do this, but it is not necessary here.
-</p>
-
-<p>
-If you want to verify an old version of the file, you will have to retrieve the matching
-signature file from git.
-</p>
-
-<h5>Checking a git commit's signature</h5>
-
-<p>
-If you're using git to get the latest and greatest, it's even simpler:
-</p>
-
-<code>
-git show --show-signature
-</code>
-
-<p>
-You should see a message similar to:
-</p>
-
-<code>
-gpg: Good signature from "moneromooo-monero &lt;moneromooo-monero@users.noreply.github.com&gt;"
-</code>
-
-<p>
-Check the signature is from the key you imported previously! If not, you may be checking
-that file was properly signed by an attacker instead of moneromooo. Beware that anyone can
-place any email address in a new GPG key, so the right email being shown is no guarantee.
-</p>
+                
+                Thanks, and welcome to Monero!
+                </p>
 </div>
             </div>
     </div>
-</footer>
+</div>
 
 <script>
 window.onbeforeunload = function(e) {

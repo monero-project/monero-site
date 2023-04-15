@@ -53,3 +53,7 @@ sitemap:
         - "/ietemplates/poll5.xml"
         - "/feed.xml"
         - "/404.html"
+
+collections:
+    aliases:
+        output: true
