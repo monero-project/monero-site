@@ -190,8 +190,6 @@ team:
   localization_descr: One of the oldest Monero Workgroups, it's formed by contributors working on translating Monero-related software and documentation. It's strongly suggested to contact the workgroup before working on translations.
   localization_start: Contact the workgroup on the chatroom or open an issue on the GitHub repository. You can also start translating immediately using the Weblate platform. Just make sure to read the guide for translators first.
   locplatform: "Localization platform:"
-  outreach_descr: This workgroup is focused on getting Monero out there, gathering artists, writers, and anyone who wishes to make Monero known to the world.
-  outreach_start: The members of the Outreach Workgroup heavily use Telegram for coordination and matrix/freenode in minor part. If you want to help, you can contact the workgroup on one of these channels. It is quite structured, so you'll probably be directed to a coordinator.
   telegram: "Telegram chat:"
   mrl_descr: As the name suggests, the Monero Research Lab is the workgroup focused on Monero-related research. It's formed by scientists finding ways to improve Monero's protocol and features. Most of the protocol improvements that make Monero amazing, like CLSAG and @Bulletproofs, are the result of the efforts of this workgroup.
   mrl_start: Join the chatroom below and state your interests and your skills. Research is always ongoing, and somebody will point you in the right direction.
@@ -204,6 +202,8 @@ team:
   mpwg: Monero Policy Working Group
   mpwg_descr: Monero Policy Working Group is a loosely formed quorum of individuals with an interest in interacting with regulators, policy makers, and the wider financial services sector to ensure broad understanding of Monero’s component technologies, especially with regards to its compatibility with evolving regulatory and compliance requirements.
   mpwg_start: If you would like to take part or follow policy discussions, join Matrix/Libera chatroom.
+  nwlb_descr: The Seraphis wallet workgroup is a group of developers working on implementing Seraphis and Jamtis in Monero, through developing a completely new type of wallet that will imrpove drastically Monero's privacy capabilities and usability.
+  nwlb_start: The workgroup meets frequently and coordinate in the Matrix room (relayed to IRC). They are always looking for contributors willing to help.
 
 downloads:
   intro: On this page you can find and download the latest version available of the Monero software, as well as hardware, light and mobile wallets.
