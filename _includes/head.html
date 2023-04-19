@@ -12,6 +12,7 @@
   <meta name="description" content="
   {% if page.layout == 'moneropedia' %}{% t global.wikimeta %}
   {% elsif page.summary %}{{ page.summary }}
+  {% elsif page.meta_descr %}{% t page.meta_descr %}
   {% else %}{% t global.titlemeta %}
   {% endif %}">
 	<meta name="keywords" content="{{ site.keywords }}">
@@ -26,6 +27,7 @@
     <meta property="og:description" content="
     {% if page.layout == 'moneropedia' %}{% t global.wikimeta %}
     {% elsif page.summary %}{{ page.summary }}
+    {% elsif page.meta_descr %}{% t page.meta_descr %}
     {% else %}{% t global.titlemeta %}
     {% endif %}">
     <!-- If the page specifies a dedicated image which is not an SVG file, we use that one. Otherwise we use the classic Monero logo -->

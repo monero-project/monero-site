@@ -2,6 +2,7 @@
 layout: custom
 title: titles.hangouts
 permalink: /community/hangouts/index.html
+meta_descr: hangouts.intro
 ---
 
 {% t global.lang_tag %}

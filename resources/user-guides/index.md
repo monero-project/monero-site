@@ -1,6 +1,7 @@
 ---
 layout: custom
 title: titles.userguides
+meta_descr: meta_descr.userguides
 ---
 {% t global.lang_tag %}
 <div class="guides">

@@ -1,6 +1,7 @@
 ---
 layout: custom
 title: titles.moneropedia
+meta_descr: moneropedia.description
 ---
 
 <div class="container description">

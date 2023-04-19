@@ -2,6 +2,7 @@
 layout: custom
 title: titles.developerguides
 permalink: /resources/developer-guides/index.html
+meta_descr: developer-guides.head
 ---
 
 {% t global.lang_tag %}

@@ -2,6 +2,7 @@
 layout: custom
 title: titles.tools
 permalink: /resources/tools/index.html
+meta_descr: meta_descr.tools
 ---
 
 <div class="text-center container description">

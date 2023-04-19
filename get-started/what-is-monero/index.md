@@ -2,6 +2,7 @@
 layout: default
 title: titles.whatismonero
 permalink: /get-started/what-is-monero/index.html
+meta_descr: meta_descr.whatismonero
 ---
 {% t global.lang_tag %}
 <div class="site-wrap">

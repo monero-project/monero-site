@@ -2,6 +2,7 @@
 layout: custom
 title: titles.roadmap
 permalink: /resources/roadmap/index.html
+meta_descr: meta_descr.roadmap
 ---
 {% t global.lang_tag %}
 <div class="roadmap">

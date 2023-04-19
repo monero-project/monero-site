@@ -2,6 +2,7 @@
 layout: custom
 title: titles.accepting
 permalink: /get-started/accepting/index.html
+meta_descr: meta_descr.accepting
 ---
 {% t global.lang_tag %}
 <section class="container">
