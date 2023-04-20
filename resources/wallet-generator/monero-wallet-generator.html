@@ -1,11 +1,26 @@
-<html>
+<html lang="en">
 <head>
-  <title>Monero offline wallet generator</title>
+  <title>Monero wallet generator</title>
   <meta charset="UTF-8">
+  <meta name="description" content="Online/offline Monero wallet generator">
+  <meta name="keywords" content="{{ site.keywords }}">
+  <meta property="og:title" content="Monero wallet generator">
+  <meta property="og:description" content="Online/offline Monero wallet generator">
+  <meta property="og:image" content="{{ site.url }}/press-kit/symbols monero-symbol-on-white-480.png">
+  <meta property="og:site_name" content="{% t global.sitename %}">
+  <meta property="og:url" content="{{ site.url }}/generator">
+  <meta property="og:type" content="website">
+  <meta http-equiv="onion-location" content="{% include onion.html %}/generator"/>
+  <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
 
 <!--
-
-/*
  JavaScript BigInteger library version 0.9
  http://silentmatt.com/biginteger/
 
@@ -93,11 +108,13 @@
  */
 
 /* Wallet generator modifications: Copyright 2015 moneromooo */
+/* Restyle and adaptation to getmonero.org: Copyright from 2023 The Monero Project */
 
 -->
     <style type="text/css">
         html {
             line-height: 1.3;
+            width: 100%;
         }
 
         .private {
@@ -122,2166 +139,119 @@
 
         pre { margin:0px;}
     </style>
+
+<style>
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    width: 71rem;
+    max-width: 100%;
+}
+
+.row-new {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.btn-monero {
+    max-width: 60%
+}
+
+.wrapper-generator {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.generator-box {
+    width: 30%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+form.languages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; #row but column on mobile
+}
+
+form.languages > * {
+    margin: 0.5rem;
+    width: 15rem;
+
+}
+
+.container-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.grey.lighten-3 {
+    background-color: #eeeeee !important;
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .wrapper-generator {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .generator-box {
+    width: 100%;
+    text-align: left;
+    }
+}
+
+</style>
+
     <style>
-        .materialize-red.lighten-5 {
-            background-color: #fdeaeb !important;
-        }
 
-        .materialize-red-text.text-lighten-5 {
-            color: #fdeaeb !important;
-        }
-
-        .materialize-red.lighten-4 {
-            background-color: #f8c1c3 !important;
-        }
-
-        .materialize-red-text.text-lighten-4 {
-            color: #f8c1c3 !important;
-        }
-
-        .materialize-red.lighten-3 {
-            background-color: #f3989b !important;
-        }
-
-        .materialize-red-text.text-lighten-3 {
-            color: #f3989b !important;
-        }
-
-        .materialize-red.lighten-2 {
-            background-color: #ee6e73 !important;
-        }
-
-        .materialize-red-text.text-lighten-2 {
-            color: #ee6e73 !important;
-        }
-
-        .materialize-red.lighten-1 {
-            background-color: #ea454b !important;
-        }
-
-        .materialize-red-text.text-lighten-1 {
-            color: #ea454b !important;
-        }
-
-        .materialize-red {
-            background-color: #e51c23 !important;
-        }
-
-        .materialize-red-text {
-            color: #e51c23 !important;
-        }
-
-        .materialize-red.darken-1 {
-            background-color: #d0181e !important;
-        }
-
-        .materialize-red-text.text-darken-1 {
-            color: #d0181e !important;
-        }
-
-        .materialize-red.darken-2 {
-            background-color: #b9151b !important;
-        }
-
-        .materialize-red-text.text-darken-2 {
-            color: #b9151b !important;
-        }
-
-        .materialize-red.darken-3 {
-            background-color: #a21318 !important;
-        }
-
-        .materialize-red-text.text-darken-3 {
-            color: #a21318 !important;
-        }
-
-        .materialize-red.darken-4 {
-            background-color: #8b1014 !important;
-        }
-
-        .materialize-red-text.text-darken-4 {
-            color: #8b1014 !important;
-        }
-
-        .red.lighten-5 {
-            background-color: #FFEBEE !important;
-        }
-
-        .red-text.text-lighten-5 {
-            color: #FFEBEE !important;
-        }
-
-        .red.lighten-4 {
-            background-color: #FFCDD2 !important;
-        }
-
-        .red-text.text-lighten-4 {
-            color: #FFCDD2 !important;
-        }
-
-        .red.lighten-3 {
-            background-color: #EF9A9A !important;
-        }
-
-        .red-text.text-lighten-3 {
-            color: #EF9A9A !important;
-        }
-
-        .red.lighten-2 {
-            background-color: #E57373 !important;
-        }
-
-        .red-text.text-lighten-2 {
-            color: #E57373 !important;
-        }
-
-        .red.lighten-1 {
-            background-color: #EF5350 !important;
-        }
-
-        .red-text.text-lighten-1 {
-            color: #EF5350 !important;
-        }
-
-        .red {
-            background-color: #F44336 !important;
-        }
-
-        .red-text {
-            color: #F44336 !important;
-        }
-
-        .red.darken-1 {
-            background-color: #E53935 !important;
-        }
-
-        .red-text.text-darken-1 {
-            color: #E53935 !important;
-        }
-
-        .red.darken-2 {
-            background-color: #D32F2F !important;
-        }
-
-        .red-text.text-darken-2 {
-            color: #D32F2F !important;
-        }
-
-        .red.darken-3 {
-            background-color: #C62828 !important;
-        }
-
-        .red-text.text-darken-3 {
-            color: #C62828 !important;
-        }
-
-        .red.darken-4 {
-            background-color: #B71C1C !important;
-        }
-
-        .red-text.text-darken-4 {
-            color: #B71C1C !important;
-        }
-
-        .red.accent-1 {
-            background-color: #FF8A80 !important;
-        }
-
-        .red-text.text-accent-1 {
-            color: #FF8A80 !important;
-        }
-
-        .red.accent-2 {
-            background-color: #FF5252 !important;
-        }
-
-        .red-text.text-accent-2 {
-            color: #FF5252 !important;
-        }
-
-        .red.accent-3 {
-            background-color: #FF1744 !important;
-        }
-
-        .red-text.text-accent-3 {
-            color: #FF1744 !important;
-        }
-
-        .red.accent-4 {
-            background-color: #D50000 !important;
-        }
-
-        .red-text.text-accent-4 {
-            color: #D50000 !important;
-        }
-
-        .pink.lighten-5 {
-            background-color: #fce4ec !important;
-        }
-
-        .pink-text.text-lighten-5 {
-            color: #fce4ec !important;
-        }
-
-        .pink.lighten-4 {
-            background-color: #f8bbd0 !important;
-        }
-
-        .pink-text.text-lighten-4 {
-            color: #f8bbd0 !important;
-        }
-
-        .pink.lighten-3 {
-            background-color: #f48fb1 !important;
-        }
-
-        .pink-text.text-lighten-3 {
-            color: #f48fb1 !important;
-        }
-
-        .pink.lighten-2 {
-            background-color: #f06292 !important;
-        }
-
-        .pink-text.text-lighten-2 {
-            color: #f06292 !important;
-        }
-
-        .pink.lighten-1 {
-            background-color: #ec407a !important;
-        }
-
-        .pink-text.text-lighten-1 {
-            color: #ec407a !important;
-        }
-
-        .pink {
-            background-color: #e91e63 !important;
-        }
-
-        .pink-text {
-            color: #e91e63 !important;
-        }
-
-        .pink.darken-1 {
-            background-color: #d81b60 !important;
-        }
-
-        .pink-text.text-darken-1 {
-            color: #d81b60 !important;
-        }
-
-        .pink.darken-2 {
-            background-color: #c2185b !important;
-        }
-
-        .pink-text.text-darken-2 {
-            color: #c2185b !important;
-        }
-
-        .pink.darken-3 {
-            background-color: #ad1457 !important;
-        }
-
-        .pink-text.text-darken-3 {
-            color: #ad1457 !important;
-        }
-
-        .pink.darken-4 {
-            background-color: #880e4f !important;
-        }
-
-        .pink-text.text-darken-4 {
-            color: #880e4f !important;
-        }
-
-        .pink.accent-1 {
-            background-color: #ff80ab !important;
-        }
-
-        .pink-text.text-accent-1 {
-            color: #ff80ab !important;
-        }
-
-        .pink.accent-2 {
-            background-color: #ff4081 !important;
-        }
-
-        .pink-text.text-accent-2 {
-            color: #ff4081 !important;
-        }
-
-        .pink.accent-3 {
-            background-color: #f50057 !important;
-        }
-
-        .pink-text.text-accent-3 {
-            color: #f50057 !important;
-        }
-
-        .pink.accent-4 {
-            background-color: #c51162 !important;
-        }
-
-        .pink-text.text-accent-4 {
-            color: #c51162 !important;
-        }
-
-        .purple.lighten-5 {
-            background-color: #f3e5f5 !important;
-        }
-
-        .purple-text.text-lighten-5 {
-            color: #f3e5f5 !important;
-        }
-
-        .purple.lighten-4 {
-            background-color: #e1bee7 !important;
-        }
-
-        .purple-text.text-lighten-4 {
-            color: #e1bee7 !important;
-        }
-
-        .purple.lighten-3 {
-            background-color: #ce93d8 !important;
-        }
-
-        .purple-text.text-lighten-3 {
-            color: #ce93d8 !important;
-        }
-
-        .purple.lighten-2 {
-            background-color: #ba68c8 !important;
-        }
-
-        .purple-text.text-lighten-2 {
-            color: #ba68c8 !important;
-        }
-
-        .purple.lighten-1 {
-            background-color: #ab47bc !important;
-        }
-
-        .purple-text.text-lighten-1 {
-            color: #ab47bc !important;
-        }
-
-        .purple {
-            background-color: #9c27b0 !important;
-        }
-
-        .purple-text {
-            color: #9c27b0 !important;
-        }
-
-        .purple.darken-1 {
-            background-color: #8e24aa !important;
-        }
-
-        .purple-text.text-darken-1 {
-            color: #8e24aa !important;
-        }
-
-        .purple.darken-2 {
-            background-color: #7b1fa2 !important;
-        }
-
-        .purple-text.text-darken-2 {
-            color: #7b1fa2 !important;
-        }
-
-        .purple.darken-3 {
-            background-color: #6a1b9a !important;
-        }
-
-        .purple-text.text-darken-3 {
-            color: #6a1b9a !important;
-        }
-
-        .purple.darken-4 {
-            background-color: #4a148c !important;
-        }
-
-        .purple-text.text-darken-4 {
-            color: #4a148c !important;
-        }
-
-        .purple.accent-1 {
-            background-color: #ea80fc !important;
-        }
-
-        .purple-text.text-accent-1 {
-            color: #ea80fc !important;
-        }
-
-        .purple.accent-2 {
-            background-color: #e040fb !important;
-        }
-
-        .purple-text.text-accent-2 {
-            color: #e040fb !important;
-        }
-
-        .purple.accent-3 {
-            background-color: #d500f9 !important;
-        }
-
-        .purple-text.text-accent-3 {
-            color: #d500f9 !important;
-        }
-
-        .purple.accent-4 {
-            background-color: #aa00ff !important;
-        }
-
-        .purple-text.text-accent-4 {
-            color: #aa00ff !important;
-        }
-
-        .deep-purple.lighten-5 {
-            background-color: #ede7f6 !important;
-        }
-
-        .deep-purple-text.text-lighten-5 {
-            color: #ede7f6 !important;
-        }
-
-        .deep-purple.lighten-4 {
-            background-color: #d1c4e9 !important;
-        }
-
-        .deep-purple-text.text-lighten-4 {
-            color: #d1c4e9 !important;
-        }
-
-        .deep-purple.lighten-3 {
-            background-color: #b39ddb !important;
-        }
-
-        .deep-purple-text.text-lighten-3 {
-            color: #b39ddb !important;
-        }
-
-        .deep-purple.lighten-2 {
-            background-color: #9575cd !important;
-        }
-
-        .deep-purple-text.text-lighten-2 {
-            color: #9575cd !important;
-        }
-
-        .deep-purple.lighten-1 {
-            background-color: #7e57c2 !important;
-        }
-
-        .deep-purple-text.text-lighten-1 {
-            color: #7e57c2 !important;
-        }
-
-        .deep-purple {
-            background-color: #673ab7 !important;
-        }
-
-        .deep-purple-text {
-            color: #673ab7 !important;
-        }
-
-        .deep-purple.darken-1 {
-            background-color: #5e35b1 !important;
-        }
-
-        .deep-purple-text.text-darken-1 {
-            color: #5e35b1 !important;
-        }
-
-        .deep-purple.darken-2 {
-            background-color: #512da8 !important;
-        }
-
-        .deep-purple-text.text-darken-2 {
-            color: #512da8 !important;
-        }
-
-        .deep-purple.darken-3 {
-            background-color: #4527a0 !important;
-        }
-
-        .deep-purple-text.text-darken-3 {
-            color: #4527a0 !important;
-        }
-
-        .deep-purple.darken-4 {
-            background-color: #311b92 !important;
-        }
-
-        .deep-purple-text.text-darken-4 {
-            color: #311b92 !important;
-        }
-
-        .deep-purple.accent-1 {
-            background-color: #b388ff !important;
-        }
-
-        .deep-purple-text.text-accent-1 {
-            color: #b388ff !important;
-        }
-
-        .deep-purple.accent-2 {
-            background-color: #7c4dff !important;
-        }
-
-        .deep-purple-text.text-accent-2 {
-            color: #7c4dff !important;
-        }
-
-        .deep-purple.accent-3 {
-            background-color: #651fff !important;
-        }
-
-        .deep-purple-text.text-accent-3 {
-            color: #651fff !important;
-        }
-
-        .deep-purple.accent-4 {
-            background-color: #6200ea !important;
-        }
-
-        .deep-purple-text.text-accent-4 {
-            color: #6200ea !important;
-        }
-
-        .indigo.lighten-5 {
-            background-color: #e8eaf6 !important;
-        }
-
-        .indigo-text.text-lighten-5 {
-            color: #e8eaf6 !important;
-        }
-
-        .indigo.lighten-4 {
-            background-color: #c5cae9 !important;
-        }
-
-        .indigo-text.text-lighten-4 {
-            color: #c5cae9 !important;
-        }
-
-        .indigo.lighten-3 {
-            background-color: #9fa8da !important;
-        }
-
-        .indigo-text.text-lighten-3 {
-            color: #9fa8da !important;
-        }
-
-        .indigo.lighten-2 {
-            background-color: #7986cb !important;
-        }
-
-        .indigo-text.text-lighten-2 {
-            color: #7986cb !important;
-        }
-
-        .indigo.lighten-1 {
-            background-color: #5c6bc0 !important;
-        }
-
-        .indigo-text.text-lighten-1 {
-            color: #5c6bc0 !important;
-        }
-
-        .indigo {
-            background-color: #3f51b5 !important;
-        }
-
-        .indigo-text {
-            color: #3f51b5 !important;
-        }
-
-        .indigo.darken-1 {
-            background-color: #3949ab !important;
-        }
-
-        .indigo-text.text-darken-1 {
-            color: #3949ab !important;
-        }
-
-        .indigo.darken-2 {
-            background-color: #303f9f !important;
-        }
-
-        .indigo-text.text-darken-2 {
-            color: #303f9f !important;
-        }
-
-        .indigo.darken-3 {
-            background-color: #283593 !important;
-        }
-
-        .indigo-text.text-darken-3 {
-            color: #283593 !important;
-        }
-
-        .indigo.darken-4 {
-            background-color: #1a237e !important;
-        }
-
-        .indigo-text.text-darken-4 {
-            color: #1a237e !important;
-        }
-
-        .indigo.accent-1 {
-            background-color: #8c9eff !important;
-        }
-
-        .indigo-text.text-accent-1 {
-            color: #8c9eff !important;
-        }
-
-        .indigo.accent-2 {
-            background-color: #536dfe !important;
-        }
-
-        .indigo-text.text-accent-2 {
-            color: #536dfe !important;
-        }
-
-        .indigo.accent-3 {
-            background-color: #3d5afe !important;
-        }
-
-        .indigo-text.text-accent-3 {
-            color: #3d5afe !important;
-        }
-
-        .indigo.accent-4 {
-            background-color: #304ffe !important;
-        }
-
-        .indigo-text.text-accent-4 {
-            color: #304ffe !important;
-        }
-
-        .blue.lighten-5 {
-            background-color: #E3F2FD !important;
-        }
-
-        .blue-text.text-lighten-5 {
-            color: #E3F2FD !important;
-        }
-
-        .blue.lighten-4 {
-            background-color: #BBDEFB !important;
-        }
-
-        .blue-text.text-lighten-4 {
-            color: #BBDEFB !important;
-        }
-
-        .blue.lighten-3 {
-            background-color: #90CAF9 !important;
-        }
-
-        .blue-text.text-lighten-3 {
-            color: #90CAF9 !important;
-        }
-
-        .blue.lighten-2 {
-            background-color: #64B5F6 !important;
-        }
-
-        .blue-text.text-lighten-2 {
-            color: #64B5F6 !important;
-        }
-
-        .blue.lighten-1 {
-            background-color: #42A5F5 !important;
-        }
-
-        .blue-text.text-lighten-1 {
-            color: #42A5F5 !important;
-        }
-
-        .blue {
-            background-color: #2196F3 !important;
-        }
-
-        .blue-text {
-            color: #2196F3 !important;
-        }
-
-        .blue.darken-1 {
-            background-color: #1E88E5 !important;
-        }
-
-        .blue-text.text-darken-1 {
-            color: #1E88E5 !important;
-        }
-
-        .blue.darken-2 {
-            background-color: #1976D2 !important;
-        }
-
-        .blue-text.text-darken-2 {
-            color: #1976D2 !important;
-        }
-
-        .blue.darken-3 {
-            background-color: #1565C0 !important;
-        }
-
-        .blue-text.text-darken-3 {
-            color: #1565C0 !important;
-        }
-
-        .blue.darken-4 {
-            background-color: #0D47A1 !important;
-        }
-
-        .blue-text.text-darken-4 {
-            color: #0D47A1 !important;
-        }
-
-        .blue.accent-1 {
-            background-color: #82B1FF !important;
-        }
-
-        .blue-text.text-accent-1 {
-            color: #82B1FF !important;
-        }
-
-        .blue.accent-2 {
-            background-color: #448AFF !important;
-        }
-
-        .blue-text.text-accent-2 {
-            color: #448AFF !important;
-        }
-
-        .blue.accent-3 {
-            background-color: #2979FF !important;
-        }
-
-        .blue-text.text-accent-3 {
-            color: #2979FF !important;
-        }
-
-        .blue.accent-4 {
-            background-color: #2962FF !important;
-        }
-
-        .blue-text.text-accent-4 {
-            color: #2962FF !important;
-        }
-
-        .light-blue.lighten-5 {
-            background-color: #e1f5fe !important;
-        }
-
-        .light-blue-text.text-lighten-5 {
-            color: #e1f5fe !important;
-        }
-
-        .light-blue.lighten-4 {
-            background-color: #b3e5fc !important;
-        }
-
-        .light-blue-text.text-lighten-4 {
-            color: #b3e5fc !important;
-        }
-
-        .light-blue.lighten-3 {
-            background-color: #81d4fa !important;
-        }
-
-        .light-blue-text.text-lighten-3 {
-            color: #81d4fa !important;
-        }
-
-        .light-blue.lighten-2 {
-            background-color: #4fc3f7 !important;
-        }
-
-        .light-blue-text.text-lighten-2 {
-            color: #4fc3f7 !important;
-        }
-
-        .light-blue.lighten-1 {
-            background-color: #29b6f6 !important;
-        }
-
-        .light-blue-text.text-lighten-1 {
-            color: #29b6f6 !important;
-        }
-
-        .light-blue {
-            background-color: #03a9f4 !important;
-        }
-
-        .light-blue-text {
-            color: #03a9f4 !important;
-        }
-
-        .light-blue.darken-1 {
-            background-color: #039be5 !important;
-        }
-
-        .light-blue-text.text-darken-1 {
-            color: #039be5 !important;
-        }
-
-        .light-blue.darken-2 {
-            background-color: #0288d1 !important;
-        }
-
-        .light-blue-text.text-darken-2 {
-            color: #0288d1 !important;
-        }
-
-        .light-blue.darken-3 {
-            background-color: #0277bd !important;
-        }
-
-        .light-blue-text.text-darken-3 {
-            color: #0277bd !important;
-        }
-
-        .light-blue.darken-4 {
-            background-color: #01579b !important;
-        }
-
-        .light-blue-text.text-darken-4 {
-            color: #01579b !important;
-        }
-
-        .light-blue.accent-1 {
-            background-color: #80d8ff !important;
-        }
-
-        .light-blue-text.text-accent-1 {
-            color: #80d8ff !important;
-        }
-
-        .light-blue.accent-2 {
-            background-color: #40c4ff !important;
-        }
-
-        .light-blue-text.text-accent-2 {
-            color: #40c4ff !important;
-        }
-
-        .light-blue.accent-3 {
-            background-color: #00b0ff !important;
-        }
-
-        .light-blue-text.text-accent-3 {
-            color: #00b0ff !important;
-        }
-
-        .light-blue.accent-4 {
-            background-color: #0091ea !important;
-        }
-
-        .light-blue-text.text-accent-4 {
-            color: #0091ea !important;
-        }
-
-        .cyan.lighten-5 {
-            background-color: #e0f7fa !important;
-        }
-
-        .cyan-text.text-lighten-5 {
-            color: #e0f7fa !important;
-        }
-
-        .cyan.lighten-4 {
-            background-color: #b2ebf2 !important;
-        }
-
-        .cyan-text.text-lighten-4 {
-            color: #b2ebf2 !important;
-        }
-
-        .cyan.lighten-3 {
-            background-color: #80deea !important;
-        }
-
-        .cyan-text.text-lighten-3 {
-            color: #80deea !important;
-        }
-
-        .cyan.lighten-2 {
-            background-color: #4dd0e1 !important;
-        }
-
-        .cyan-text.text-lighten-2 {
-            color: #4dd0e1 !important;
-        }
-
-        .cyan.lighten-1 {
-            background-color: #26c6da !important;
-        }
-
-        .cyan-text.text-lighten-1 {
-            color: #26c6da !important;
-        }
-
-        .cyan {
-            background-color: #00bcd4 !important;
-        }
-
-        .cyan-text {
-            color: #00bcd4 !important;
-        }
-
-        .cyan.darken-1 {
-            background-color: #00acc1 !important;
-        }
-
-        .cyan-text.text-darken-1 {
-            color: #00acc1 !important;
-        }
-
-        .cyan.darken-2 {
-            background-color: #0097a7 !important;
-        }
-
-        .cyan-text.text-darken-2 {
-            color: #0097a7 !important;
-        }
-
-        .cyan.darken-3 {
-            background-color: #00838f !important;
-        }
-
-        .cyan-text.text-darken-3 {
-            color: #00838f !important;
-        }
-
-        .cyan.darken-4 {
-            background-color: #006064 !important;
-        }
-
-        .cyan-text.text-darken-4 {
-            color: #006064 !important;
-        }
-
-        .cyan.accent-1 {
-            background-color: #84ffff !important;
-        }
-
-        .cyan-text.text-accent-1 {
-            color: #84ffff !important;
-        }
-
-        .cyan.accent-2 {
-            background-color: #18ffff !important;
-        }
-
-        .cyan-text.text-accent-2 {
-            color: #18ffff !important;
-        }
-
-        .cyan.accent-3 {
-            background-color: #00e5ff !important;
-        }
-
-        .cyan-text.text-accent-3 {
-            color: #00e5ff !important;
-        }
-
-        .cyan.accent-4 {
-            background-color: #00b8d4 !important;
-        }
-
-        .cyan-text.text-accent-4 {
-            color: #00b8d4 !important;
-        }
-
-        .teal.lighten-5 {
-            background-color: #e0f2f1 !important;
-        }
-
-        .teal-text.text-lighten-5 {
-            color: #e0f2f1 !important;
-        }
-
-        .teal.lighten-4 {
-            background-color: #b2dfdb !important;
-        }
-
-        .teal-text.text-lighten-4 {
-            color: #b2dfdb !important;
-        }
-
-        .teal.lighten-3 {
-            background-color: #80cbc4 !important;
-        }
-
-        .teal-text.text-lighten-3 {
-            color: #80cbc4 !important;
-        }
-
-        .teal.lighten-2 {
-            background-color: #4db6ac !important;
-        }
-
-        .teal-text.text-lighten-2 {
-            color: #4db6ac !important;
-        }
-
-        .teal.lighten-1 {
-            background-color: #26a69a !important;
-        }
-
-        .teal-text.text-lighten-1 {
-            color: #26a69a !important;
-        }
-
-        .teal {
-            background-color: #009688 !important;
-        }
-
-        .teal-text {
-            color: #009688 !important;
-        }
-
-        .teal.darken-1 {
-            background-color: #00897b !important;
-        }
-
-        .teal-text.text-darken-1 {
-            color: #00897b !important;
-        }
-
-        .teal.darken-2 {
-            background-color: #00796b !important;
-        }
-
-        .teal-text.text-darken-2 {
-            color: #00796b !important;
-        }
-
-        .teal.darken-3 {
-            background-color: #00695c !important;
-        }
-
-        .teal-text.text-darken-3 {
-            color: #00695c !important;
-        }
-
-        .teal.darken-4 {
-            background-color: #004d40 !important;
-        }
-
-        .teal-text.text-darken-4 {
-            color: #004d40 !important;
-        }
-
-        .teal.accent-1 {
-            background-color: #a7ffeb !important;
-        }
-
-        .teal-text.text-accent-1 {
-            color: #a7ffeb !important;
-        }
-
-        .teal.accent-2 {
-            background-color: #64ffda !important;
-        }
-
-        .teal-text.text-accent-2 {
-            color: #64ffda !important;
-        }
-
-        .teal.accent-3 {
-            background-color: #1de9b6 !important;
-        }
-
-        .teal-text.text-accent-3 {
-            color: #1de9b6 !important;
-        }
-
-        .teal.accent-4 {
-            background-color: #00bfa5 !important;
-        }
-
-        .teal-text.text-accent-4 {
-            color: #00bfa5 !important;
-        }
-
-        .green.lighten-5 {
-            background-color: #E8F5E9 !important;
-        }
-
-        .green-text.text-lighten-5 {
-            color: #E8F5E9 !important;
-        }
-
-        .green.lighten-4 {
-            background-color: #C8E6C9 !important;
-        }
-
-        .green-text.text-lighten-4 {
-            color: #C8E6C9 !important;
-        }
-
-        .green.lighten-3 {
-            background-color: #A5D6A7 !important;
-        }
-
-        .green-text.text-lighten-3 {
-            color: #A5D6A7 !important;
-        }
-
-        .green.lighten-2 {
-            background-color: #81C784 !important;
-        }
-
-        .green-text.text-lighten-2 {
-            color: #81C784 !important;
-        }
-
-        .green.lighten-1 {
-            background-color: #66BB6A !important;
-        }
-
-        .green-text.text-lighten-1 {
-            color: #66BB6A !important;
-        }
-
-        .green {
-            background-color: #4CAF50 !important;
-        }
-
-        .green-text {
-            color: #4CAF50 !important;
-        }
-
-        .green.darken-1 {
-            background-color: #43A047 !important;
-        }
-
-        .green-text.text-darken-1 {
-            color: #43A047 !important;
-        }
-
-        .green.darken-2 {
-            background-color: #388E3C !important;
-        }
-
-        .green-text.text-darken-2 {
-            color: #388E3C !important;
-        }
-
-        .green.darken-3 {
-            background-color: #2E7D32 !important;
-        }
-
-        .green-text.text-darken-3 {
-            color: #2E7D32 !important;
-        }
-
-        .green.darken-4 {
-            background-color: #1B5E20 !important;
-        }
-
-        .green-text.text-darken-4 {
-            color: #1B5E20 !important;
-        }
-
-        .green.accent-1 {
-            background-color: #B9F6CA !important;
-        }
-
-        .green-text.text-accent-1 {
-            color: #B9F6CA !important;
-        }
-
-        .green.accent-2 {
-            background-color: #69F0AE !important;
-        }
-
-        .green-text.text-accent-2 {
-            color: #69F0AE !important;
-        }
-
-        .green.accent-3 {
-            background-color: #00E676 !important;
-        }
-
-        .green-text.text-accent-3 {
-            color: #00E676 !important;
-        }
-
-        .green.accent-4 {
-            background-color: #00C853 !important;
-        }
-
-        .green-text.text-accent-4 {
-            color: #00C853 !important;
-        }
-
-        .light-green.lighten-5 {
-            background-color: #f1f8e9 !important;
-        }
-
-        .light-green-text.text-lighten-5 {
-            color: #f1f8e9 !important;
-        }
-
-        .light-green.lighten-4 {
-            background-color: #dcedc8 !important;
-        }
-
-        .light-green-text.text-lighten-4 {
-            color: #dcedc8 !important;
-        }
-
-        .light-green.lighten-3 {
-            background-color: #c5e1a5 !important;
-        }
-
-        .light-green-text.text-lighten-3 {
-            color: #c5e1a5 !important;
-        }
-
-        .light-green.lighten-2 {
-            background-color: #aed581 !important;
-        }
-
-        .light-green-text.text-lighten-2 {
-            color: #aed581 !important;
-        }
-
-        .light-green.lighten-1 {
-            background-color: #9ccc65 !important;
-        }
-
-        .light-green-text.text-lighten-1 {
-            color: #9ccc65 !important;
-        }
-
-        .light-green {
-            background-color: #8bc34a !important;
-        }
-
-        .light-green-text {
-            color: #8bc34a !important;
-        }
-
-        .light-green.darken-1 {
-            background-color: #7cb342 !important;
-        }
-
-        .light-green-text.text-darken-1 {
-            color: #7cb342 !important;
-        }
-
-        .light-green.darken-2 {
-            background-color: #689f38 !important;
-        }
-
-        .light-green-text.text-darken-2 {
-            color: #689f38 !important;
-        }
-
-        .light-green.darken-3 {
-            background-color: #558b2f !important;
-        }
-
-        .light-green-text.text-darken-3 {
-            color: #558b2f !important;
-        }
-
-        .light-green.darken-4 {
-            background-color: #33691e !important;
-        }
-
-        .light-green-text.text-darken-4 {
-            color: #33691e !important;
-        }
-
-        .light-green.accent-1 {
-            background-color: #ccff90 !important;
-        }
-
-        .light-green-text.text-accent-1 {
-            color: #ccff90 !important;
-        }
-
-        .light-green.accent-2 {
-            background-color: #b2ff59 !important;
-        }
-
-        .light-green-text.text-accent-2 {
-            color: #b2ff59 !important;
-        }
-
-        .light-green.accent-3 {
-            background-color: #76ff03 !important;
-        }
-
-        .light-green-text.text-accent-3 {
-            color: #76ff03 !important;
-        }
-
-        .light-green.accent-4 {
-            background-color: #64dd17 !important;
-        }
-
-        .light-green-text.text-accent-4 {
-            color: #64dd17 !important;
-        }
-
-        .lime.lighten-5 {
-            background-color: #f9fbe7 !important;
-        }
-
-        .lime-text.text-lighten-5 {
-            color: #f9fbe7 !important;
-        }
-
-        .lime.lighten-4 {
-            background-color: #f0f4c3 !important;
-        }
-
-        .lime-text.text-lighten-4 {
-            color: #f0f4c3 !important;
-        }
-
-        .lime.lighten-3 {
-            background-color: #e6ee9c !important;
-        }
-
-        .lime-text.text-lighten-3 {
-            color: #e6ee9c !important;
-        }
-
-        .lime.lighten-2 {
-            background-color: #dce775 !important;
-        }
-
-        .lime-text.text-lighten-2 {
-            color: #dce775 !important;
-        }
-
-        .lime.lighten-1 {
-            background-color: #d4e157 !important;
-        }
-
-        .lime-text.text-lighten-1 {
-            color: #d4e157 !important;
-        }
-
-        .lime {
-            background-color: #cddc39 !important;
-        }
-
-        .lime-text {
-            color: #cddc39 !important;
-        }
-
-        .lime.darken-1 {
-            background-color: #c0ca33 !important;
-        }
-
-        .lime-text.text-darken-1 {
-            color: #c0ca33 !important;
-        }
-
-        .lime.darken-2 {
-            background-color: #afb42b !important;
-        }
-
-        .lime-text.text-darken-2 {
-            color: #afb42b !important;
-        }
-
-        .lime.darken-3 {
-            background-color: #9e9d24 !important;
-        }
-
-        .lime-text.text-darken-3 {
-            color: #9e9d24 !important;
-        }
-
-        .lime.darken-4 {
-            background-color: #827717 !important;
-        }
-
-        .lime-text.text-darken-4 {
-            color: #827717 !important;
-        }
-
-        .lime.accent-1 {
-            background-color: #f4ff81 !important;
-        }
-
-        .lime-text.text-accent-1 {
-            color: #f4ff81 !important;
-        }
-
-        .lime.accent-2 {
-            background-color: #eeff41 !important;
-        }
-
-        .lime-text.text-accent-2 {
-            color: #eeff41 !important;
-        }
-
-        .lime.accent-3 {
-            background-color: #c6ff00 !important;
-        }
-
-        .lime-text.text-accent-3 {
-            color: #c6ff00 !important;
-        }
-
-        .lime.accent-4 {
-            background-color: #aeea00 !important;
-        }
-
-        .lime-text.text-accent-4 {
-            color: #aeea00 !important;
-        }
-
-        .yellow.lighten-5 {
-            background-color: #fffde7 !important;
-        }
-
-        .yellow-text.text-lighten-5 {
-            color: #fffde7 !important;
-        }
-
-        .yellow.lighten-4 {
-            background-color: #fff9c4 !important;
-        }
-
-        .yellow-text.text-lighten-4 {
-            color: #fff9c4 !important;
-        }
-
-        .yellow.lighten-3 {
-            background-color: #fff59d !important;
-        }
-
-        .yellow-text.text-lighten-3 {
-            color: #fff59d !important;
-        }
-
-        .yellow.lighten-2 {
-            background-color: #fff176 !important;
-        }
-
-        .yellow-text.text-lighten-2 {
-            color: #fff176 !important;
-        }
-
-        .yellow.lighten-1 {
-            background-color: #ffee58 !important;
-        }
-
-        .yellow-text.text-lighten-1 {
-            color: #ffee58 !important;
-        }
-
-        .yellow {
-            background-color: #ffeb3b !important;
-        }
-
-        .yellow-text {
-            color: #ffeb3b !important;
-        }
-
-        .yellow.darken-1 {
-            background-color: #fdd835 !important;
-        }
-
-        .yellow-text.text-darken-1 {
-            color: #fdd835 !important;
-        }
-
-        .yellow.darken-2 {
-            background-color: #fbc02d !important;
-        }
-
-        .yellow-text.text-darken-2 {
-            color: #fbc02d !important;
-        }
-
-        .yellow.darken-3 {
-            background-color: #f9a825 !important;
-        }
-
-        .yellow-text.text-darken-3 {
-            color: #f9a825 !important;
-        }
-
-        .yellow.darken-4 {
-            background-color: #f57f17 !important;
-        }
-
-        .yellow-text.text-darken-4 {
-            color: #f57f17 !important;
-        }
-
-        .yellow.accent-1 {
-            background-color: #ffff8d !important;
-        }
-
-        .yellow-text.text-accent-1 {
-            color: #ffff8d !important;
-        }
-
-        .yellow.accent-2 {
-            background-color: #ffff00 !important;
-        }
-
-        .yellow-text.text-accent-2 {
-            color: #ffff00 !important;
-        }
-
-        .yellow.accent-3 {
-            background-color: #ffea00 !important;
-        }
-
-        .yellow-text.text-accent-3 {
-            color: #ffea00 !important;
-        }
-
-        .yellow.accent-4 {
-            background-color: #ffd600 !important;
-        }
-
-        .yellow-text.text-accent-4 {
-            color: #ffd600 !important;
-        }
-
-        .amber.lighten-5 {
-            background-color: #fff8e1 !important;
-        }
-
-        .amber-text.text-lighten-5 {
-            color: #fff8e1 !important;
-        }
-
-        .amber.lighten-4 {
-            background-color: #ffecb3 !important;
-        }
-
-        .amber-text.text-lighten-4 {
-            color: #ffecb3 !important;
-        }
-
-        .amber.lighten-3 {
-            background-color: #ffe082 !important;
-        }
-
-        .amber-text.text-lighten-3 {
-            color: #ffe082 !important;
-        }
-
-        .amber.lighten-2 {
-            background-color: #ffd54f !important;
-        }
-
-        .amber-text.text-lighten-2 {
-            color: #ffd54f !important;
-        }
-
-        .amber.lighten-1 {
-            background-color: #ffca28 !important;
-        }
-
-        .amber-text.text-lighten-1 {
-            color: #ffca28 !important;
-        }
-
-        .amber {
-            background-color: #ffc107 !important;
-        }
-
-        .amber-text {
-            color: #ffc107 !important;
-        }
-
-        .amber.darken-1 {
-            background-color: #ffb300 !important;
-        }
-
-        .amber-text.text-darken-1 {
-            color: #ffb300 !important;
-        }
-
-        .amber.darken-2 {
-            background-color: #ffa000 !important;
-        }
-
-        .amber-text.text-darken-2 {
-            color: #ffa000 !important;
-        }
-
-        .amber.darken-3 {
-            background-color: #ff8f00 !important;
-        }
-
-        .amber-text.text-darken-3 {
-            color: #ff8f00 !important;
-        }
-
-        .amber.darken-4 {
-            background-color: #ff6f00 !important;
-        }
-
-        .amber-text.text-darken-4 {
-            color: #ff6f00 !important;
-        }
-
-        .amber.accent-1 {
-            background-color: #ffe57f !important;
-        }
-
-        .amber-text.text-accent-1 {
-            color: #ffe57f !important;
-        }
-
-        .amber.accent-2 {
-            background-color: #ffd740 !important;
-        }
-
-        .amber-text.text-accent-2 {
-            color: #ffd740 !important;
-        }
-
-        .amber.accent-3 {
-            background-color: #ffc400 !important;
-        }
-
-        .amber-text.text-accent-3 {
-            color: #ffc400 !important;
-        }
-
-        .amber.accent-4 {
-            background-color: #ffab00 !important;
-        }
-
-        .amber-text.text-accent-4 {
-            color: #ffab00 !important;
-        }
-
-        .orange.lighten-5 {
-            background-color: #fff3e0 !important;
-        }
-
-        .orange-text.text-lighten-5 {
-            color: #fff3e0 !important;
-        }
-
-        .orange.lighten-4 {
-            background-color: #ffe0b2 !important;
-        }
-
-        .orange-text.text-lighten-4 {
-            color: #ffe0b2 !important;
-        }
-
-        .orange.lighten-3 {
-            background-color: #ffcc80 !important;
-        }
-
-        .orange-text.text-lighten-3 {
-            color: #ffcc80 !important;
-        }
-
-        .orange.lighten-2 {
-            background-color: #ffb74d !important;
-        }
-
-        .orange-text.text-lighten-2 {
-            color: #ffb74d !important;
-        }
-
-        .orange.lighten-1 {
-            background-color: #ffa726 !important;
-        }
-
-        .orange-text.text-lighten-1 {
-            color: #ffa726 !important;
-        }
-
-        .orange {
-            background-color: #ff9800 !important;
-        }
-
-        .orange-text {
-            color: #ff9800 !important;
-        }
-
-        .orange.darken-1 {
-            background-color: #fb8c00 !important;
-        }
-
-        .orange-text.text-darken-1 {
-            color: #fb8c00 !important;
-        }
-
-        .orange.darken-2 {
-            background-color: #f57c00 !important;
-        }
-
-        .orange-text.text-darken-2 {
-            color: #f57c00 !important;
-        }
-
-        .orange.darken-3 {
-            background-color: #ef6c00 !important;
-        }
-
-        .orange-text.text-darken-3 {
-            color: #ef6c00 !important;
-        }
-
-        .orange.darken-4 {
-            background-color: #e65100 !important;
-        }
-
-        .orange-text.text-darken-4 {
-            color: #e65100 !important;
-        }
-
-        .orange.accent-1 {
-            background-color: #ffd180 !important;
-        }
-
-        .orange-text.text-accent-1 {
-            color: #ffd180 !important;
-        }
-
-        .orange.accent-2 {
-            background-color: #ffab40 !important;
-        }
-
-        .orange-text.text-accent-2 {
-            color: #ffab40 !important;
-        }
-
-        .orange.accent-3 {
-            background-color: #ff9100 !important;
-        }
-
-        .orange-text.text-accent-3 {
-            color: #ff9100 !important;
-        }
-
-        .orange.accent-4 {
-            background-color: #ff6d00 !important;
-        }
-
-        .orange-text.text-accent-4 {
-            color: #ff6d00 !important;
-        }
-
-        .deep-orange.lighten-5 {
-            background-color: #fbe9e7 !important;
-        }
-
-        .deep-orange-text.text-lighten-5 {
-            color: #fbe9e7 !important;
-        }
-
-        .deep-orange.lighten-4 {
-            background-color: #ffccbc !important;
-        }
-
-        .deep-orange-text.text-lighten-4 {
-            color: #ffccbc !important;
-        }
-
-        .deep-orange.lighten-3 {
-            background-color: #ffab91 !important;
-        }
-
-        .deep-orange-text.text-lighten-3 {
-            color: #ffab91 !important;
-        }
-
-        .deep-orange.lighten-2 {
-            background-color: #ff8a65 !important;
-        }
-
-        .deep-orange-text.text-lighten-2 {
-            color: #ff8a65 !important;
-        }
-
-        .deep-orange.lighten-1 {
-            background-color: #ff7043 !important;
-        }
-
-        .deep-orange-text.text-lighten-1 {
-            color: #ff7043 !important;
-        }
-
-        .deep-orange {
-            background-color: #ff5722 !important;
-        }
-
-        .deep-orange-text {
-            color: #ff5722 !important;
-        }
-
-        .deep-orange.darken-1 {
-            background-color: #f4511e !important;
-        }
-
-        .deep-orange-text.text-darken-1 {
-            color: #f4511e !important;
-        }
-
-        .deep-orange.darken-2 {
-            background-color: #e64a19 !important;
-        }
-
-        .deep-orange-text.text-darken-2 {
-            color: #e64a19 !important;
-        }
-
-        .deep-orange.darken-3 {
-            background-color: #d84315 !important;
-        }
-
-        .deep-orange-text.text-darken-3 {
-            color: #d84315 !important;
-        }
-
-        .deep-orange.darken-4 {
-            background-color: #bf360c !important;
-        }
-
-        .deep-orange-text.text-darken-4 {
-            color: #bf360c !important;
-        }
-
-        .deep-orange.accent-1 {
-            background-color: #ff9e80 !important;
-        }
-
-        .deep-orange-text.text-accent-1 {
-            color: #ff9e80 !important;
-        }
-
-        .deep-orange.accent-2 {
-            background-color: #ff6e40 !important;
-        }
-
-        .deep-orange-text.text-accent-2 {
-            color: #ff6e40 !important;
-        }
-
-        .deep-orange.accent-3 {
-            background-color: #ff3d00 !important;
-        }
-
-        .deep-orange-text.text-accent-3 {
-            color: #ff3d00 !important;
-        }
-
-        .deep-orange.accent-4 {
-            background-color: #dd2c00 !important;
-        }
-
-        .deep-orange-text.text-accent-4 {
-            color: #dd2c00 !important;
-        }
-
-        .brown.lighten-5 {
-            background-color: #efebe9 !important;
-        }
-
-        .brown-text.text-lighten-5 {
-            color: #efebe9 !important;
-        }
-
-        .brown.lighten-4 {
-            background-color: #d7ccc8 !important;
-        }
-
-        .brown-text.text-lighten-4 {
-            color: #d7ccc8 !important;
-        }
-
-        .brown.lighten-3 {
-            background-color: #bcaaa4 !important;
-        }
-
-        .brown-text.text-lighten-3 {
-            color: #bcaaa4 !important;
-        }
-
-        .brown.lighten-2 {
-            background-color: #a1887f !important;
-        }
-
-        .brown-text.text-lighten-2 {
-            color: #a1887f !important;
-        }
-
-        .brown.lighten-1 {
-            background-color: #8d6e63 !important;
-        }
-
-        .brown-text.text-lighten-1 {
-            color: #8d6e63 !important;
-        }
-
-        .brown {
-            background-color: #795548 !important;
-        }
-
-        .brown-text {
-            color: #795548 !important;
-        }
-
-        .brown.darken-1 {
-            background-color: #6d4c41 !important;
-        }
-
-        .brown-text.text-darken-1 {
-            color: #6d4c41 !important;
-        }
-
-        .brown.darken-2 {
-            background-color: #5d4037 !important;
-        }
-
-        .brown-text.text-darken-2 {
-            color: #5d4037 !important;
-        }
-
-        .brown.darken-3 {
-            background-color: #4e342e !important;
-        }
-
-        .brown-text.text-darken-3 {
-            color: #4e342e !important;
-        }
-
-        .brown.darken-4 {
-            background-color: #3e2723 !important;
-        }
-
-        .brown-text.text-darken-4 {
-            color: #3e2723 !important;
-        }
-
-        .blue-grey.lighten-5 {
-            background-color: #eceff1 !important;
-        }
-
-        .blue-grey-text.text-lighten-5 {
-            color: #eceff1 !important;
-        }
-
-        .blue-grey.lighten-4 {
-            background-color: #cfd8dc !important;
-        }
-
-        .blue-grey-text.text-lighten-4 {
-            color: #cfd8dc !important;
-        }
-
-        .blue-grey.lighten-3 {
-            background-color: #b0bec5 !important;
-        }
-
-        .blue-grey-text.text-lighten-3 {
-            color: #b0bec5 !important;
-        }
-
-        .blue-grey.lighten-2 {
-            background-color: #90a4ae !important;
-        }
-
-        .blue-grey-text.text-lighten-2 {
-            color: #90a4ae !important;
-        }
-
-        .blue-grey.lighten-1 {
-            background-color: #78909c !important;
-        }
-
-        .blue-grey-text.text-lighten-1 {
-            color: #78909c !important;
-        }
-
-        .blue-grey {
-            background-color: #607d8b !important;
-        }
-
-        .blue-grey-text {
-            color: #607d8b !important;
-        }
-
-        .blue-grey.darken-1 {
-            background-color: #546e7a !important;
-        }
-
-        .blue-grey-text.text-darken-1 {
-            color: #546e7a !important;
-        }
-
-        .blue-grey.darken-2 {
-            background-color: #455a64 !important;
-        }
-
-        .blue-grey-text.text-darken-2 {
-            color: #455a64 !important;
-        }
-
-        .blue-grey.darken-3 {
-            background-color: #37474f !important;
-        }
-
-        .blue-grey-text.text-darken-3 {
-            color: #37474f !important;
-        }
-
-        .blue-grey.darken-4 {
-            background-color: #263238 !important;
-        }
-
-        .blue-grey-text.text-darken-4 {
-            color: #263238 !important;
-        }
-
-        .grey.lighten-5 {
-            background-color: #fafafa !important;
-        }
-
-        .grey-text.text-lighten-5 {
-            color: #fafafa !important;
-        }
-
-        .grey.lighten-4 {
-            background-color: #f5f5f5 !important;
-        }
-
-        .grey-text.text-lighten-4 {
-            color: #f5f5f5 !important;
-        }
-
-        .grey.lighten-3 {
-            background-color: #eeeeee !important;
-        }
-
-        .grey-text.text-lighten-3 {
-            color: #eeeeee !important;
-        }
-
-        .grey.lighten-2 {
-            background-color: #e0e0e0 !important;
-        }
-
-        .grey-text.text-lighten-2 {
-            color: #e0e0e0 !important;
-        }
-
-        .grey.lighten-1 {
-            background-color: #bdbdbd !important;
-        }
-
-        .grey-text.text-lighten-1 {
-            color: #bdbdbd !important;
-        }
-
-        .grey {
-            background-color: #9e9e9e !important;
-        }
-
-        .grey-text {
-            color: #9e9e9e !important;
-        }
-
-        .grey.darken-1 {
-            background-color: #757575 !important;
-        }
-
-        .grey-text.text-darken-1 {
-            color: #757575 !important;
-        }
-
-        .grey.darken-2 {
-            background-color: #616161 !important;
-        }
-
-        .grey-text.text-darken-2 {
-            color: #616161 !important;
-        }
-
-        .grey.darken-3 {
-            background-color: #424242 !important;
-        }
-
-        .grey-text.text-darken-3 {
-            color: #424242 !important;
-        }
-
-        .grey.darken-4 {
-            background-color: #212121 !important;
-        }
-
-        .grey-text.text-darken-4 {
-            color: #212121 !important;
-        }
-
-        .shades.black {
-            background-color: #000000 !important;
-        }
-
-        .shades-text.text-black {
-            color: #000000 !important;
-        }
-
-        .shades.white {
-            background-color: #FFFFFF !important;
-        }
-
-        .shades-text.text-white {
-            color: #FFFFFF !important;
-        }
-
-        .shades.transparent {
-            background-color: transparent !important;
-        }
-
-        .shades-text.text-transparent {
-            color: transparent !important;
-        }
-
-        .black {
-            background-color: #000000 !important;
-        }
-
-        .black-text {
-            color: #000000 !important;
-        }
-
-        .white {
-            background-color: #FFFFFF !important;
-        }
-
-        .white-text {
-            color: #FFFFFF !important;
-        }
-
-        .transparent {
-            background-color: transparent !important;
-        }
-
-        .transparent-text {
-            color: transparent !important;
-        }
+    .light-green.lighten-5 {
+        background-color: #f1f8e9 !important;
+    }
+
+
+    .light-green-text.text-darken-4 {
+        color: #33691e !important;
+    }
+            
+    .pink.lighten-5 {
+        background-color: #fce4ec !important;
+    }
+            
+    
+    .pink-text {
+        color: #e91e63 !important;
+    }
+    
+    .pink-text.text-darken-4 {
+        color: #880e4f !important;
+    }
+            
+    .deep-orange {
+        background-color: #ff5722 !important;
+    }
 
         /*** Colors ***/
         /*** Badges ***/
@@ -2671,10 +641,6 @@
             box-sizing: inherit;
         }
 
-        ul {
-            list-style-type: none;
-        }
-
         a {
             color: #039be5;
             text-decoration: none;
@@ -2695,14 +661,6 @@
 
         .valign-wrapper .valign {
             display: block;
-        }
-
-        ul {
-            padding: 0;
-        }
-
-        ul li {
-            list-style-type: none;
         }
 
         .clearfix {
@@ -2873,71 +831,6 @@
         /*********************
   Media Query Classes
 **********************/
-        @media only screen and (max-width: 600px) {
-            .hide-on-small-only, .hide-on-small-and-down {
-                display: none !important;
-            }
-        }
-
-        @media only screen and (max-width: 992px) {
-            .hide-on-med-and-down {
-                display: none !important;
-            }
-        }
-
-        @media only screen and (min-width: 601px) {
-            .hide-on-med-and-up {
-                display: none !important;
-            }
-        }
-
-        @media only screen and (min-width: 600px) and (max-width: 992px) {
-            .hide-on-med-only {
-                display: none !important;
-            }
-        }
-
-        @media only screen and (min-width: 993px) {
-            .hide-on-large-only {
-                display: none !important;
-            }
-        }
-
-        @media only screen and (min-width: 993px) {
-            .show-on-large {
-                display: initial !important;
-            }
-        }
-
-        @media only screen and (min-width: 600px) and (max-width: 992px) {
-            .show-on-medium {
-                display: initial !important;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            .show-on-small {
-                display: initial !important;
-            }
-        }
-
-        @media only screen and (min-width: 601px) {
-            .show-on-medium-and-up {
-                display: initial !important;
-            }
-        }
-
-        @media only screen and (max-width: 992px) {
-            .show-on-medium-and-down {
-                display: initial !important;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            .center-on-small-only {
-                text-align: center;
-            }
-        }
 
         footer.page-footer {
             margin-top: 20px;
@@ -3450,18 +1343,6 @@
             width: 90%;
         }
 
-        @media only screen and (min-width: 601px) {
-            .container {
-                width: 85%;
-            }
-        }
-
-        @media only screen and (min-width: 993px) {
-            .container {
-                width: 70%;
-            }
-        }
-
         .container .row {
             margin-left: -0.75rem;
             margin-right: -0.75rem;
@@ -3612,229 +1493,8 @@
             margin-left: 100%;
         }
 
-        @media only screen and (min-width: 601px) {
-            .row .col.m1 {
-                width: 8.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.m2 {
-                width: 16.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.m3 {
-                width: 25%;
-                margin-left: 0;
-            }
-
-            .row .col.m4 {
-                width: 33.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.m5 {
-                width: 41.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.m6 {
-                width: 50%;
-                margin-left: 0;
-            }
-
-            .row .col.m7 {
-                width: 58.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.m8 {
-                width: 66.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.m9 {
-                width: 75%;
-                margin-left: 0;
-            }
-
-            .row .col.m10 {
-                width: 83.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.m11 {
-                width: 91.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.m12 {
-                width: 100%;
-                margin-left: 0;
-            }
-
-            .row .col.offset-m1 {
-                margin-left: 8.33333%;
-            }
-
-            .row .col.offset-m2 {
-                margin-left: 16.66667%;
-            }
-
-            .row .col.offset-m3 {
-                margin-left: 25%;
-            }
-
-            .row .col.offset-m4 {
-                margin-left: 33.33333%;
-            }
-
-            .row .col.offset-m5 {
-                margin-left: 41.66667%;
-            }
-
-            .row .col.offset-m6 {
-                margin-left: 50%;
-            }
-
-            .row .col.offset-m7 {
-                margin-left: 58.33333%;
-            }
-
-            .row .col.offset-m8 {
-                margin-left: 66.66667%;
-            }
-
-            .row .col.offset-m9 {
-                margin-left: 75%;
-            }
-
-            .row .col.offset-m10 {
-                margin-left: 83.33333%;
-            }
-
-            .row .col.offset-m11 {
-                margin-left: 91.66667%;
-            }
-
-            .row .col.offset-m12 {
-                margin-left: 100%;
-            }
-        }
-
-        @media only screen and (min-width: 993px) {
-            .row .col.l1 {
-                width: 8.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.l2 {
-                width: 16.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.l3 {
-                width: 25%;
-                margin-left: 0;
-            }
-
-            .row .col.l4 {
-                width: 33.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.l5 {
-                width: 41.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.l6 {
-                width: 50%;
-                margin-left: 0;
-            }
-
-            .row .col.l7 {
-                width: 58.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.l8 {
-                width: 66.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.l9 {
-                width: 75%;
-                margin-left: 0;
-            }
-
-            .row .col.l10 {
-                width: 83.33333%;
-                margin-left: 0;
-            }
-
-            .row .col.l11 {
-                width: 91.66667%;
-                margin-left: 0;
-            }
-
-            .row .col.l12 {
-                width: 100%;
-                margin-left: 0;
-            }
-
-            .row .col.offset-l1 {
-                margin-left: 8.33333%;
-            }
-
-            .row .col.offset-l2 {
-                margin-left: 16.66667%;
-            }
-
-            .row .col.offset-l3 {
-                margin-left: 25%;
-            }
-
-            .row .col.offset-l4 {
-                margin-left: 33.33333%;
-            }
-
-            .row .col.offset-l5 {
-                margin-left: 41.66667%;
-            }
-
-            .row .col.offset-l6 {
-                margin-left: 50%;
-            }
-
-            .row .col.offset-l7 {
-                margin-left: 58.33333%;
-            }
-
-            .row .col.offset-l8 {
-                margin-left: 66.66667%;
-            }
-
-            .row .col.offset-l9 {
-                margin-left: 75%;
-            }
-
-            .row .col.offset-l10 {
-                margin-left: 83.33333%;
-            }
-
-            .row .col.offset-l11 {
-                margin-left: 91.66667%;
-            }
-
-            .row .col.offset-l12 {
-                margin-left: 100%;
-            }
-        }
-
         nav {
             color: #fff;
-            background-color: #ee6e73;
             width: 100%;
             height: 56px;
             line-height: 56px;
@@ -3852,25 +1512,6 @@
         nav .nav-wrapper i {
             display: block;
             font-size: 2rem;
-        }
-
-        @media only screen and (min-width: 993px) {
-            nav a.button-collapse {
-                display: none;
-            }
-        }
-
-        nav .button-collapse {
-            float: left;
-            position: relative;
-            z-index: 1;
-            height: 56px;
-        }
-
-        nav .button-collapse i {
-            font-size: 2.7rem;
-            height: 56px;
-            line-height: 56px;
         }
 
         nav .brand-logo {
@@ -3987,17 +1628,6 @@
             position: fixed;
         }
 
-        @media only screen and (min-width: 601px) {
-            nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-                height: 64px;
-                line-height: 64px;
-            }
-
-            .navbar-fixed {
-                height: 64px;
-            }
-        }
-
 
         a {
             text-decoration: none;
@@ -4008,24 +1638,6 @@
             font-family: "Helvetica Neue","Helvetica","Arial", sans-serif;
             font-weight: normal;
             color: rgba(0, 0, 0, 0.87);
-        }
-
-        @media only screen and (min-width: 0) {
-            html {
-                font-size: 14px;
-            }
-        }
-
-        @media only screen and (min-width: 992px) {
-            html {
-                font-size: 14.5px;
-            }
-        }
-
-        @media only screen and (min-width: 1200px) {
-            html {
-                font-size: 15px;
-            }
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -4096,258 +1708,6 @@
             font-weight: 300;
         }
 
-        @media only screen and (min-width: 360px) {
-            .flow-text {
-                font-size: 1.2rem;
-            }
-        }
-
-        @media only screen and (min-width: 0px) {
-            .flow-text {
-                line-height: .8rem;
-            }
-        }
-
-        @media only screen and (min-width: 390px) {
-            .flow-text {
-                font-size: 1.224rem;
-            }
-        }
-
-        @media only screen and (min-width: 30px) {
-            .flow-text {
-                line-height: .904rem;
-            }
-        }
-
-        @media only screen and (min-width: 420px) {
-            .flow-text {
-                font-size: 1.248rem;
-            }
-        }
-
-        @media only screen and (min-width: 60px) {
-            .flow-text {
-                line-height: 1.008rem;
-            }
-        }
-
-        @media only screen and (min-width: 450px) {
-            .flow-text {
-                font-size: 1.272rem;
-            }
-        }
-
-        @media only screen and (min-width: 90px) {
-            .flow-text {
-                line-height: 1.112rem;
-            }
-        }
-
-        @media only screen and (min-width: 480px) {
-            .flow-text {
-                font-size: 1.296rem;
-            }
-        }
-
-        @media only screen and (min-width: 120px) {
-            .flow-text {
-                line-height: 1.216rem;
-            }
-        }
-
-        @media only screen and (min-width: 510px) {
-            .flow-text {
-                font-size: 1.32rem;
-            }
-        }
-
-        @media only screen and (min-width: 150px) {
-            .flow-text {
-                line-height: 1.32rem;
-            }
-        }
-
-        @media only screen and (min-width: 540px) {
-            .flow-text {
-                font-size: 1.344rem;
-            }
-        }
-
-        @media only screen and (min-width: 180px) {
-            .flow-text {
-                line-height: 1.424rem;
-            }
-        }
-
-        @media only screen and (min-width: 570px) {
-            .flow-text {
-                font-size: 1.368rem;
-            }
-        }
-
-        @media only screen and (min-width: 210px) {
-            .flow-text {
-                line-height: 1.528rem;
-            }
-        }
-
-        @media only screen and (min-width: 600px) {
-            .flow-text {
-                font-size: 1.392rem;
-            }
-        }
-
-        @media only screen and (min-width: 240px) {
-            .flow-text {
-                line-height: 1.632rem;
-            }
-        }
-
-        @media only screen and (min-width: 630px) {
-            .flow-text {
-                font-size: 1.416rem;
-            }
-        }
-
-        @media only screen and (min-width: 270px) {
-            .flow-text {
-                line-height: 1.736rem;
-            }
-        }
-
-        @media only screen and (min-width: 660px) {
-            .flow-text {
-                font-size: 1.44rem;
-            }
-        }
-
-        @media only screen and (min-width: 300px) {
-            .flow-text {
-                line-height: 1.84rem;
-            }
-        }
-
-        @media only screen and (min-width: 690px) {
-            .flow-text {
-                font-size: 1.464rem;
-            }
-        }
-
-        @media only screen and (min-width: 330px) {
-            .flow-text {
-                line-height: 1.944rem;
-            }
-        }
-
-        @media only screen and (min-width: 720px) {
-            .flow-text {
-                font-size: 1.488rem;
-            }
-        }
-
-        @media only screen and (min-width: 360px) {
-            .flow-text {
-                line-height: 2.048rem;
-            }
-        }
-
-        @media only screen and (min-width: 750px) {
-            .flow-text {
-                font-size: 1.512rem;
-            }
-        }
-
-        @media only screen and (min-width: 390px) {
-            .flow-text {
-                line-height: 2.152rem;
-            }
-        }
-
-        @media only screen and (min-width: 780px) {
-            .flow-text {
-                font-size: 1.536rem;
-            }
-        }
-
-        @media only screen and (min-width: 420px) {
-            .flow-text {
-                line-height: 2.256rem;
-            }
-        }
-
-        @media only screen and (min-width: 810px) {
-            .flow-text {
-                font-size: 1.56rem;
-            }
-        }
-
-        @media only screen and (min-width: 450px) {
-            .flow-text {
-                line-height: 2.36rem;
-            }
-        }
-
-        @media only screen and (min-width: 840px) {
-            .flow-text {
-                font-size: 1.584rem;
-            }
-        }
-
-        @media only screen and (min-width: 480px) {
-            .flow-text {
-                line-height: 2.464rem;
-            }
-        }
-
-        @media only screen and (min-width: 870px) {
-            .flow-text {
-                font-size: 1.608rem;
-            }
-        }
-
-        @media only screen and (min-width: 510px) {
-            .flow-text {
-                line-height: 2.568rem;
-            }
-        }
-
-        @media only screen and (min-width: 900px) {
-            .flow-text {
-                font-size: 1.632rem;
-            }
-        }
-
-        @media only screen and (min-width: 540px) {
-            .flow-text {
-                line-height: 2.672rem;
-            }
-        }
-
-        @media only screen and (min-width: 930px) {
-            .flow-text {
-                font-size: 1.656rem;
-            }
-        }
-
-        @media only screen and (min-width: 570px) {
-            .flow-text {
-                line-height: 2.776rem;
-            }
-        }
-
-        @media only screen and (min-width: 960px) {
-            .flow-text {
-                font-size: 1.68rem;
-            }
-        }
-
-        @media only screen and (min-width: 600px) {
-            .flow-text {
-                line-height: 2.88rem;
-            }
-        }
-
         .card-panel {
             padding: 20px;
             margin: 0.5rem 0 1rem 0;
@@ -4361,6 +1721,7 @@
             margin: 0.5rem 0 1rem 0;
             background-color: #fff;
             border-radius: 2px;
+            max-width: 100%;
         }
 
         .card .card-title {
@@ -4500,91 +1861,6 @@
             display: block;
         }
 
-        #toast-container {
-            display: block;
-            position: fixed;
-            z-index: 1001;
-        }
-
-        @media only screen and (max-width: 600px) {
-            #toast-container {
-                min-width: 100%;
-                bottom: 0%;
-            }
-        }
-
-        @media only screen and (min-width: 601px) and (max-width: 992px) {
-            #toast-container {
-                min-width: 30%;
-                left: 5%;
-                bottom: 7%;
-            }
-        }
-
-        @media only screen and (min-width: 993px) {
-            #toast-container {
-                min-width: 8%;
-                top: 10%;
-                right: 7%;
-            }
-        }
-
-        .toast {
-            border-radius: 2px;
-            top: 0;
-            width: auto;
-            clear: both;
-            margin-top: 10px;
-            position: relative;
-            max-width: 100%;
-            height: 48px;
-            line-height: 48px;
-            background-color: #323232;
-            padding: 0 25px;
-            font-size: 1.1rem;
-            font-weight: 300;
-            color: #fff;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            -webkit-justify-content: space-between;
-            justify-content: space-between;
-        }
-
-        .toast .btn, .toast .btn-large, .toast .btn-flat {
-            margin: 0;
-            margin-left: 3rem;
-        }
-
-        .toast.rounded {
-            border-radius: 24px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .toast {
-                width: 100%;
-                border-radius: 0;
-            }
-        }
-
-        @media only screen and (min-width: 601px) and (max-width: 992px) {
-            .toast {
-                float: left;
-            }
-        }
-
-        @media only screen and (min-width: 993px) {
-            .toast {
-                float: right;
-            }
-        }
-
         .tabs {
             position: relative;
             height: 48px;
@@ -4675,8 +1951,7 @@
             border: none;
             border-radius: 2px;
             display: inline-block;
-            height: 36px;
-            line-height: 36px;
+            height: 2.2rem;
             outline: 0;
             padding: 0 2rem;
             text-transform: uppercase;
@@ -5990,16 +3265,6 @@
             left: auto;
         }
 
-        @media only screen and (max-width: 992px) {
-            .side-nav.fixed {
-                left: -105%;
-            }
-
-            .side-nav.fixed.right-aligned {
-                right: -105%;
-                left: auto;
-            }
-        }
 
         .side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
             background-color: #ee6e73;
@@ -6658,13 +3923,16 @@
         .btn-qr {
             line-height: 25px;
             height: 25px;
-            font-size: 60%;
+            font-size: 1rem;
             padding: 0px 1.5rem;
+            margin-top: 0.5rem;
+            display: inline-block;
         }
         #address_widget, #spend_key_widget, #view_key_widget,
         #mnemonic_address, #privatekeys_address {
             font-family: monospace;
             overflow-wrap: break-word;
+            font-size: 1rem;
         }
 
 
@@ -10922,9 +8190,11 @@ html { font-family: sans-serif }
 }
 </style>
 
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
 <nav class="grey lighten-3">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">
+        <a href="." class="brand-logo center">
             <img style="height:60px;" src="data:image/svg+xml;base64,
 PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFk
 b2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246
@@ -10979,81 +8249,112 @@ bC0zLjUsMjAuNGgtNkwyNDQuOCwzMTAuNkwyNDQuOCwzMTAuNnoiLz4KPC9nPgo8L3N2Zz4K">
     </div>
 </nav>
 
-<div class="row noprint">&nbsp;</div>
 <div class="row center-align noprint">
     <div class="col s12">
-        <h4 style="color: #555;">Offline wallet generator</h4>
+        <h4>Monero wallet generator</h4>
     </div>
 </div>
 <div class="row center-align print-only">
     <div class="col s12">
-        <h4 style="color: #555;">Offline wallet</h4>
+        <h4>Offline wallet</h4>
         <p id="date"></p>
     </div>
 </div>
-
-
-    <div class="row noprint">
-        <div class="col s12">
+<div class="container-flex">
+    <div class="row-new noprint">
+        <p>
+            This page generates a new Monero (or Aeon, Townforge) wallet. It is self-contained and does all the necessary calculations locally. You can download this page, open the HTML file on your computer and use it to generate a wallet offline.
+        </p>
+        <noscript>
+            <p><b>Note: Javascript needs to be activated</b></p>
+        </noscript>
+        <div>
+            There are two ways to use this page:
+            <ul>
+                <li><b>Online:</b> browse this page at getmonero.org/generator and generate a new wallet</li>
+                <li><b>Offline:</b> <a href="https://www.getmonero.org/resources/wallet-generator/wallet-generator.zip" target="_blank">Download the zip file</a> and extract it locally. Open the "wallet-generator.html" page and follow the instructions. You can also use the <a href="https://www.getmonero.org/resources/user-guides/securely_purchase.html" target="_blank">dedicated guide on Getmonero</a></li>
+            </ul>
             <p>
-                This page generates a new
-                <select id="currencyDropDownList" onchange="js:setCoin(this.selectedIndex);genwallet();restore_old_selection_index();" class="waves-effect waves-light btn" style="max-width: 20%">
-                  <option>Monero</option>
-                  <option>Aeon</option>
-                  <option>Townforge</option>
-                </select>
-                wallet. It is self contained and
-                does all the necessary calculations locally, so is suitable for generating a new wallet on a machine
-                that is not connected to the network, and may even never be. This way, you can create
-                a Monero/Aeon/Townforge wallet without risking the keys. This file is GPG signed, see <a href="#gpg-instructions">GPG instructions</a>.
-                You can check for up to date versions of this page
-                <a href="https://github.com/moneromooo-monero/monero-wallet-generator/blob/master/monero-wallet-generator.html">here</a>.
+                After you have generated the wallet and keys, print the info displayed on the page to a file or physical paper. Keep this information safe!
+            </p>
+
+            <p>
+            To generate a new wallet, follow the steps in this page and read the guide <a href="https://www.getmonero.org/resources/user-guides/securely_purchase.html" target="_blank">How to create a Monero paper wallet</a> on Getmonero.
             </p>
         </div>
-    </div>
-    <div class="row valign-wrapper noprint">
-        <div class="col s4 right-align ">
-                <input class="btn orange" type="button" onclick="js:genwallet(null);"
-                       value="Generate wallet" id="gen_with_custom_entropy_button" action=""/>
-                <p>Custom entropy for deterministic wallet (leave empty to use the browser's PRNG)</p>
-                <input type="text" value="" id="user_entropy_widget" oninput="js:checkEntropy();" onKeyPress="if (event.keyCode == 13) js:genwallet(null);" />
-                <div style="color: red; display: none" id="user_entropy_warning_widget">WARNING: entropy is way too low for the wallet to be secure: aim for 256 bits (about a hundred dice throws)</div>
-        </div>
-        <div class="col s1 offset-s1"><h4>or</h4></div>
-        <div class="col s5 offset-s1">
-            <form>
-                <input class="btn deep-orange" type="button" onclick="js:genwallet_prefix();" value="Generate wallet with prefix" action="" id="gen_prefix_widget"/>
-                <p>(very slow for more than a few characters)</p>
-                <input type="text" value="4" id="prefix_widget" oninput="js:check_prefix_validity()"; onKeyPress="if (event.keyCode == 13){ js:genwallet_prefix(); return false;}" />
-            </form>
-        </div>
-    </div>
-    <div class="row center-align noprint">
-        <div class="col s12">
-            <form>
+        <h5>1. Choose a cryptocurrency</h5>
+        <p>
+            Besides Monero, you can also create offline wallets for <a href="http://www.aeon.cash/" target="_blank">Aeon</a> and <a href="https://www.townforge.net/" target="_blank">Townforge</a>. For what cryptocurrency are you creating a wallet?
+        </p>
+        <p>
+            I'm  creating a wallet for <select id="currencyDropDownList" onchange="js:setCoin(this.selectedIndex);genwallet();restore_old_selection_index();" class="waves-effect waves-light btn btn-monero">
+                <option>Monero</option>
+                <option>Aeon</option>
+                <option>Townforge</option>
+                </select>
+        </p>
+        <h5>2. Generate wallet</h5>
+        <p>
+            In what language would you like your Mnemonic seed to be displayed?
+        </p>
+        <div class="row-new center-align noprint">
+            <form class="languages">
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('english');" value="English" action=""/ id=lang_en>
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('spanish');" value="Spanish" action=""/ id=lang_es>
                 <!-- portuguese word list has a few prefix collisions
-                      <input type="button" onclick="js:genwallet('portuguese');" value="Portuguese" action=""/ id=lang_pt>
+                        <input type="button" onclick="js:genwallet('portuguese');" value="Portuguese" action=""/ id=lang_pt>
                 -->
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('japanese');" value="Japanese" action=""/ id=lang_jp>
                 <input class="waves-effect waves-light btn" type="button" onclick="js:genwallet('esperanto');" value="Esperanto" action=""/ id=lang_eo>
                 <br>
-                <font size="-1">(restoring non English language seeds needs a recent simplewallet)</font>
             </form>
         </div>
+        <div>
+            You are almost done! Now you have two options:
+            <ul>
+                <li><b>Generate wallet:</b> Just click on the button to create your wallet. You also have the possibility to add custom entropy (regular users can ignore it)</li>
+                <li><b>Generate wallet with prefix:</b> Same as using the "Generate wallet" option, but you can generate a custom primary address.</li>
+            </ul>
+        </div>
     </div>
-    <div class="row">
-        <div class="col s12">
+        <div class="row-new noprint">
+            <div class="wrapper-generator">
+                <div class="generator-box">
+                    <input class="btn orange" type="button" onclick="js:genwallet(null);"
+                            value="Generate wallet" id="gen_with_custom_entropy_button" action=""/>
+                    <p>Custom entropy for deterministic wallet (leave empty to use the browser's PRNG)</p>
+                    <input type="text" value="" id="user_entropy_widget" oninput="js:checkEntropy();" onKeyPress="if (event.keyCode == 13) js:genwallet(null);" />
+                    <div style="color: red; display: none" id="user_entropy_warning_widget">WARNING: entropy is way too low for the wallet to be secure: aim for 256 bits (about a hundred dice throws)</div>
+                </div>
+                <div class="generator-box"><h4>or</h4></div>
+                </br>
+                <div class="generator-box">
+                <form>
+                    <input class="btn deep-orange" type="button" onclick="js:genwallet_prefix();" value="Generate wallet with prefix" action="" id="gen_prefix_widget"/>
+                    <p>(very slow for more than a few characters. The address must start with 4)</p>
+                    <input type="text" value="4" id="prefix_widget" oninput="js:check_prefix_validity()"; onKeyPress="if (event.keyCode == 13){ js:genwallet_prefix(); return false;}" />
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="row-new noprint">
+            <h5>3. Save generated wallet</h5>
+            <p>
+                Below are the details of your generated wallet. Make sure to note down at least the mnemonic seed to maintain access to the wallet. A QR code pointing to your wallet's address is also generated.
+            </p>
+            <p>
+                This page can be printed to file or paper in a print-friendly format which will contain all the info below.
+            </p>
+        </div>
+        <div class="container-output">
             <div class="card light-green lighten-5">
                 <div class="card-content light-green-text text-darken-4">
                     <span class="card-title light-green-text text-darken-4">
-                      Public address
-                      <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_address_qr();" value="Show QR code" action=""id="show_qr_code"/>
+                    Public address
+                    <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_address_qr();" value="Show QR code" action=""id="show_qr_code"/>
                     </span>
 
-                    <p class="noprint">This is the address you give to third parties to send aeon/monero to you.
-                        <br><b>It is the only information here that's meant to be public.</b>
+                    <p class="noprint">This is the address you give to third parties to send coins to you. It can be safely shared publicly.
                     </p>
                 </div>
                 <div class="card-action center-align">
@@ -11063,195 +8364,94 @@ bC0zLjUsMjAuNGgtNkwyNDQuOCwzMTAuNkwyNDQuOCwzMTAuNnoiLz4KPC9nPgo8L3N2Zz4K">
                     <span class="qrcode" id="address_qr_widget" onclick="js:toggle_address_qr();"></span>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row print-only">
-        <div class="col l12">
-            <p><b>Credits:</b>
-            Made by moneromooo, based on code from <a href="https://mymonero.com/">MyMonero</a>. Copyright notices in the source.
+        
+
+            <div class="row-new print_break_before">
+                    <div class="card pink lighten-5">
+                        <div class="card-content pink-text text-darken-4">
+                            <span class="card-title pink-text text-darken-4">Private Mnemonic seed
+                            <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_mnemonic_qr();" value="Show QR code" action="" id="show_priv_mnemonic_qr_code"/>
+                            </span>
+                            <p class="noprint">
+                                The mnemonic seed is a string that comprises 25 words and allows you to recreate and backup your wallet. <b>Keep it secure and don't share it.</b>
+                            </p>
+                            <p class="print-only" id="mnemonic_address">Generating...</p>
+                        </div>
+                        <div class="card-action center-align">
+                            <h5 class="grey-text text-darken-4" id="mnemonic_widget">Generating... </h5>
+                            <span class="qrcode" id="priv_mnemonic_qr_widget" onclick="js:toggle_priv_mnemonic_qr();"></span>
+                        </div>
+                    </div>
+            </div>
+            <div class="row-new print_break_before">
+                    <div class="card pink lighten-5">
+                        <div class="card-content pink-text text-darken-4">
+                            <span class="card-title pink-text text-darken-4">Private keys <span class="noprint">(optional)</span></span>
+
+                            <p class="noprint">
+                                The spend key and view key are the raw private keys for the
+                                new wallet.
+                                <b>They are here for your information, since they can be recovered using the mnemonic
+                                seed in the above box</b>.
+                                If you decide to keep them, keep them secure and don't share them.
+                            </p>
+                            <p class="print-only" id="privatekeys_address">Generating...</p>
+                        </div>
+                        <div class="card-action center-align">
+                            <div class="row">
+                                <div class="col s3">
+                                    <span class="label">Spend key:</span>
+                                </div>
+                                <div class="col s9">
+                                    <span id="spend_key_widget">Generating...</span>
+                                    <span class="qrcode" id="priv_spend_qr_widget" onclick="js:toggle_priv_spend_qr();"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3">
+                                    <span class="label">View key:</span>
+                                </div>
+                                <div class="col s9">
+                                    <span id="view_key_widget">Generating...</span>
+                                    <span class="qrcode" id="priv_view_qr_widget" onclick="js:toggle_priv_view_qr();"></span>
+                                </div>
+                            </div>
+                            <div class="row-new">
+                                <div class="col s6">
+                                    <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_spend_qr();" value="Show Spend Key as QR code" action="" id="show_priv_spend_qr_code"/>
+                                </div>
+                                <div class="col s6">
+                                    <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_view_qr();" value="Show View Key as QR code" action="" id="show_priv_view_qr_code"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        <div class="row-new noprint">
+            <h5>4. Verify</h5>
+            <p>
+                This step is optional but highly recommended, as it will allow you to verify that this wallet generator hasn't been tampered in any way.
             </p>
+            <p>
+                Follow these steps:
+            </p>
+            <ol>
+                <li>Download the signature file: <a href="https://raw.githubusercontent.com/monero-project/monero-site/master/resources/wallet-generator/wallet-generator.html.asc" target="_blank">wallet-generator.html.asc</a></li>
+                <li>Download <a href="https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc" target="_blank">binaryFate's key</a> and import it (e.g. gpg --import binaryfate.asc)</li>
+                <li>Now verify the signature of the generator. With GPG:  gpg --verify wallet-generator.html.asc </li>
+            </ol>
+            <p>If everything went ok you'll see a message like "gpg: Good signature[...]"</p>
         </div>
     </div>
-    <div class="row print_break_before">
-        <div class="col s12">
-            <div class="card pink lighten-5">
-                <div class="card-content pink-text text-darken-5">
-                    <span class="card-title pink-text text-darken-5">Private Mnemonic seed
-                     <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_mnemonic_qr();" value="Show QR code" action="" id="show_priv_mnemonic_qr_code"/>
-                    </span>
-                    <p class="noprint">
-                        The mnemonic seed is a string that comprises 25 words and allows you to recreate your
-                        private keys. <b>Keep it secure!</b>
-                    </p>
-                    <p class="print-only" id="mnemonic_address">Generating...</p>
-                </div>
-                <div class="card-action center-align">
-                    <h5 class="grey-text text-darken-4" id="mnemonic_widget">Generating... </h5>
-                    <span class="qrcode" id="priv_mnemonic_qr_widget" onclick="js:toggle_priv_mnemonic_qr();"></span>
-                </div>
-            </div>
-        </div>
+    <div class="row-new noprint">
+        <h5>Credits</h5>
+        <p>
+            Made by moneromooo. Original CSS by antanst, crypto fixes by luigi111. Based on code from <a href="https://mymonero.com/" target="_blank">MyMonero</a>. Updated and adapted for Getmonero.org by ErCiccione. Copyright notices in the source.
+            The original generator is in <a href="https://github.com/moneromooo-monero/monero-wallet-generator" target="_blank">moneromooo's repository</a>.
+        </p>
     </div>
-    <div class="row print_break_before">
-        <div class="col s12">
-            <div class="card indigo lighten-5">
-                <div class="card-content indigo-text text-darken-4">
-                    <span class="card-title indigo-text text-darken-4">Private keys <span class="noprint">(optional)</span></span>
-
-                    <p class="noprint">
-                        The spend key and view key are the raw private keys for the
-                        new wallet.
-                        <b>They are here for your information, since they can be recovered using the mnemonic
-                        seed in the above box</b>.
-                        If you decide to keep them, keep them secure.
-                    </p>
-                    <p class="print-only" id="privatekeys_address">Generating...</p>
-                </div>
-                <div class="card-action center-align">
-                    <div class="row">
-                        <div class="col s3">
-                            <span class="label">Spend key:</span>
-                        </div>
-                        <div class="col s9">
-                            <span id="spend_key_widget">Generating...</span>
-                            <span class="qrcode" id="priv_spend_qr_widget" onclick="js:toggle_priv_spend_qr();"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s3">
-                            <span class="label">View key:</span>
-                        </div>
-                        <div class="col s9">
-                            <span id="view_key_widget">Generating...</span>
-                            <span class="qrcode" id="priv_view_qr_widget" onclick="js:toggle_priv_view_qr();"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s6">
-                            <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_spend_qr();" value="Show Spend Key as QR code" action="" id="show_priv_spend_qr_code"/>
-                        </div>
-                        <div class="col s6">
-                            <input type="button" class="waves-effect waves-light btn btn-qr" onclick="js:toggle_priv_view_qr();" value="Show View Key as QR code" action="" id="show_priv_view_qr_code"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<div class="row noprint">&nbsp;</div>
-<footer class="page-footer grey lighten-3 grey-text text-darken-4 noprint">
-    <div class="container">
-        <div class="row">
-            <div class="col l12">
-                <h5>Credits</h5>
-                <p>
-                    Made by moneromooo, based on code from <a href="https://mymonero.com/">MyMonero</a>. Copyright notices in the source.
-                    <br>
-                    Thanks to antanst for the CSS, and to luigi1111 for crypto fixes and improvements.
-                    <br>
-                    If you found this useful, a donation would be appreciated:
-                    <br>
-                <pre>Monero: 4AfUP827TeRZ1cck3tZThgZbRCEwBrpcJTkA1LCiyFVuMH4b5y59bKMZHGb9y58K3gSjWDCBsB4RkGsGDhsmMG5R2qmbLeW</pre>
-                    <br>
-                <pre>Aeon: WmtXcFZj5iGY21JxAtFsJVQmQQyo7jgoJP8V4zLWVzDeeTfvbP8Mzb5gbNpQEc6BkeUYUqjGntHDSDyA6LKjdGBQ1w9iEpfVw</pre>
-                    <br>
-                <pre>Townforge: TF1MMDuPzx7CVoCDSjxEHGLQPvdRy5Mjjyg4KG8QY3qkZZVtBobvGkvv4JLbycx1UQrosqEyqZT9ye7zrZR3ucZp6iBp1YaRzLK</pre>
-
-                <br>
-                Thanks, and welcome to Monero!
-                </p>
-<h5 id="gpg-instructions">How to verify GPG signatures</h5>
-
-<p>
-All released versions of this page will be GPG signed by moneromooo, to avoid trojaned versions
-being passed around. It is in your interest to check the signature.
-</p>
-<p>
-This page is maintained as a
-<a href="https://github.com/moneromooo-monero/monero-wallet-generator/">git repository</a>.
-All commits are signed. In addition, released versions of the page are signed separately.
-In order to check either, you first need to import
-<a href="https://raw.githubusercontent.com/monero-project/bitmonero/master/utils/gpg_keys/moneromooo.asc">moneromooo's GPG key</a>
-from the Monero source tree:
-</p>
-
-<code>
-gpg --import moneromooo.asc
-</code>
-
-<h5>Checking a standalone signature</h5>
-
-<p>
-You need to get the signature file corresponding to the version of the page you're using.
-Original signature files are
-<a href="https://raw.githubusercontent.com/moneromooo-monero/monero-wallet-generator/master/monero-wallet-generator.html.asc">in the git repository</a>
-as well. Save it as monero-wallet-generator.html.asc, then:
-</p>
-
-<code>
-gpg --verify monero-wallet-generator.html.asc
-</code>
-
-<p>
-You should see a message similar to:
-</p>
-
-<code>
-gpg: Good signature from "moneromooo-monero &lt;moneromooo-monero@users.noreply.github.com&gt;"
-</code>
-
-<p>
-Check the signature is from the key you imported previously! If not, you may be checking
-that file was properly signed by an attacker instead of moneromooo. Beware that anyone can
-place any email address in a new GPG key, so the right email being shown is no guarantee.
-</p>
-
-<p>
-NOTE: you will probably also see a warning like this:
-</p>
-
-<code>
-gpg: WARNING: This key is not certified with a trusted signature!
-</code>
-
-<p>
-That is expected, as you only told GPG to import the signature in the steps above, but not
-to trust it. Look for tutorials on GPG if you want to do this, but it is not necessary here.
-</p>
-
-<p>
-If you want to verify an old version of the file, you will have to retrieve the matching
-signature file from git.
-</p>
-
-<h5>Checking a git commit's signature</h5>
-
-<p>
-If you're using git to get the latest and greatest, it's even simpler:
-</p>
-
-<code>
-git show --show-signature
-</code>
-
-<p>
-You should see a message similar to:
-</p>
-
-<code>
-gpg: Good signature from "moneromooo-monero &lt;moneromooo-monero@users.noreply.github.com&gt;"
-</code>
-
-<p>
-Check the signature is from the key you imported previously! If not, you may be checking
-that file was properly signed by an attacker instead of moneromooo. Beware that anyone can
-place any email address in a new GPG key, so the right email being shown is no guarantee.
-</p>
 </div>
-            </div>
-    </div>
-</footer>
+
 
 <script>
 window.onbeforeunload = function(e) {
