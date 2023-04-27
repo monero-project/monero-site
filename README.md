@@ -1,5 +1,7 @@
 ![gh-actions/site](https://github.com/monero-project/monero-site/workflows/gh-actions/site/badge.svg?branch=master)
 
+build test
+
 ## Introduction
 
 This README will walk you through everything you need to know to make changes, edits, or even completely new pages for the [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Feel free to skip down to a relevant section if you already know what you need.
