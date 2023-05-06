@@ -80,7 +80,7 @@ home:
   getcoins: Get Some Coins
   getcoins_para: After you install a wallet, you need to get some Monero. There are multiple ways to acquire some coins to spend, like mining or working in exchange for Monero, but the easiest way is to use an exchange and convert your fiat money into XMR. Many exchanges, centralized and decentralized, list Monero (XMR).
   exchanges: Exchanges
-  useit: "It's a Currency: Use It!"
+  useit: "It's a Currency; Use It!"
   useit_para: Monero is a currency and can be exchanged for goods, services and other currencies, privately and with very low fees. Many entities will gladly accept XMR for payments; take a look at our 'Merchants' page.
   merchants: Merchants
   answers: Find Answers to Your Questions
