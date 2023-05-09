@@ -584,7 +584,7 @@ what-is-monero:
   need-to-know: What you need to know
   leading: Monero is the leading cryptocurrency focused on private and censorship-resistant transactions.
   leading_para1: The majority of existing @cryptocurrencies, including Bitcoin and Ethereum, have transparent @blockchains. Transactions can be verified and/or traced by anyone in the world. This means that the sending and receiving @addresses of these @transactions could potentially be linked to real-world identities.
-  leading_para2: Monero, on the other hand, uses various privacy-enhancing technologies to ensure the anonymity of its users. 
+  leading_para2: Monero, on the other hand, uses various technologies to ensure the privacy of its users. 
   confidential: Monero transactions are confidential and untraceable.
   confidential_para1: "Unlike selectively transparent alternatives (e.g. Zcash), Monero is the only major cryptocurrency where every user is anonymous by default. The sender, receiver, and amount of every single transaction are hidden through the use of three important technologies: @Stealth-Addresses, @Ring-Signatures, and @RingCT."
   confidential_para2: Because every transaction is private, Monero cannot be traced. This makes it a true, @fungible currency. Merchants and individuals accepting Monero do not need to worry about blacklisted or tainted coins.
