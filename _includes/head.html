@@ -41,7 +41,7 @@
     {% endif %}
     {% endcapture %}{{ og_image | strip }}">
     <meta property="og:site_name" content="{% t global.sitename %}">
-    <meta property="og:url" content="{{ site.url }}/{{ page.url }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:type" content="website">
     <meta http-equiv="onion-location" content="{% include onion.html %}" />
 
