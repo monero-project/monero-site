@@ -18,7 +18,7 @@ chats:
   matrix: https://matrix.to/#/#monero-pools:monero.social
 
 - monero-research-lab:
-  matrix: https://matrix.to/#/#monero-research-lab:matrix.org
+  matrix: https://matrix.to/#/#monero-research-lab:monero.social
 
 - monero-translations:
   matrix: https://matrix.to/#/#monero-translations:monero.social
@@ -27,4 +27,4 @@ chats:
   matrix: https://matrix.to/#/#monero-hardware:matrix.org
 
 - monero-site:
-  matrix: https://matrix.to/#/#monero-site:haveno.network
+  matrix: https://matrix.to/#/#monero-site:monero.social
