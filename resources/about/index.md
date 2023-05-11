@@ -2,6 +2,7 @@
 layout: custom
 title: titles.about
 permalink: /resources/about/index.html
+meta_descr: meta_descr.about
 ---
 
 {% t global.lang_tag %}

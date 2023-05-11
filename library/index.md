@@ -2,6 +2,7 @@
 layout: custom
 title: titles.library
 permalink: /library/index.html
+meta_descr: library.description
 ---
 {% t global.lang_tag %}
 <div class="about-monero">

@@ -2,6 +2,7 @@
 layout: custom
 title: titles.presskit
 permalink: /press-kit/index.html
+meta_descr: meta_descr.presskit
 ---
 
 <div class="text-center container description">

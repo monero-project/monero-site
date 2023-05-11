@@ -2,6 +2,7 @@
 layout: custom
 title: titles.contributing
 permalink: /get-started/contributing/index.html
+meta_descr: meta_descr.contributing
 ---
 {% t global.lang_tag %}
 <div class="text-center container description">

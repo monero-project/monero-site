@@ -2,6 +2,7 @@
 layout: custom
 title: titles.sponsorships
 permalink: /community/sponsorships/index.html
+meta_descr: meta_descr.sponsorships
 ---
 
 {% t global.lang_tag %}

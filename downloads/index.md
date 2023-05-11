@@ -2,6 +2,7 @@
 layout: custom
 title: titles.downloads
 permalink: /downloads/index.html
+meta_descr: downloads.intro
 ---
 
 {% t global.lang_tag %}

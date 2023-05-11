@@ -2,6 +2,7 @@
 layout: custom
 title: titles.workgroups
 permalink: /community/workgroups/index.html
+meta_descr: meta_descr.workgroups
 ---
 
 {% t global.lang_tag %}

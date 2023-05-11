@@ -2,6 +2,7 @@
 layout: custom
 title: titles.faq
 permalink: /get-started/faq/index.html
+meta_descr: faq.intro
 ---
 {% t global.lang_tag %}
 <div class="container description">

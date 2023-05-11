@@ -2,6 +2,7 @@
 layout: custom
 title: titles.researchlab
 permalink: /resources/research-lab/index.html
+meta_descr: meta_descr.mrl
 ---
 {% t global.lang_tag %}
 <div class="container description">

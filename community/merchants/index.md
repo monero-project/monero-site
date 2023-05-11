@@ -2,6 +2,7 @@
 layout: custom
 title: titles.merchants
 permalink: /community/merchants/index.html
+meta_descr: merchants.descr
 ---
 {% t global.lang_tag %}
 <section class="container">
