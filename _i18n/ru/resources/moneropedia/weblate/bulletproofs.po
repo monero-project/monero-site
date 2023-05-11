@@ -8,13 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-09-06 10:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-02-25 14:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-moneropedia/bulletproofs/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:1
@@ -26,11 +30,11 @@ msgstr "новый вид доказательства диапазона, за�
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:1
 #, no-wrap
 msgid "[\"bulletproofs\", \"bulletproof\"]"
-msgstr ""
+msgstr "[\"bulletproofs\", \"bulletproof\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -38,7 +42,7 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:8
 #, no-wrap
 msgid "The Basics"
-msgstr "Основы"
+msgstr "Основная информация"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:10
@@ -73,7 +77,10 @@ msgstr "В 2017 году [группой исследователей](https://c
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:19
 #, no-wrap
 msgid "> Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted setup.\n"
-msgstr "> Bulletproofs являются короткими неинтерактивными доказательствами с нулевым раскрытием конфиденциальной информации, не требующими доверенных настроек.  \n"
+msgstr ""
+"> Bulletproofs являются короткими неинтерактивными доказательствами с "
+"нулевым раскрытием конфиденциальной информации, не требующими доверенных "
+"настроек.\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:20
@@ -87,9 +94,9 @@ msgstr "Bulletproofs, в отличие от подписей Борромео �
 msgid "It means that increasing the number of outputs in a transaction will, with bulletproofs only slightly increase the size of the proof.  \n"
 msgstr "Это означает, что увеличение количества выходов в транзакции при использовании Bulletproofs лишь незначительно увеличит размер доказательства.  Другим преимуществом также является то, что они позволяют одновременно доказать, что множество подтверждённых сумм находится в пределах желаемого диапазона.  \n"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:23
-#
 msgid "Bulletproofs also have the advantage to allow to prove that multiple committed amounts are in the desired range at once. No need to prove each output to each destination in separate proofs; the whole transaction amounts could be proven in one bigger (but still very small) bulletproof."
 msgstr "Необходимость в доказательстве каждого выхода, передаваемого в любом направлении, отдельным доказательством отсутствует; все суммы транзакций могут быть доказаны одним большим (но всё же небольшим) доказательством Bulletproof."
 
@@ -128,14 +135,14 @@ msgstr "OSTIF была направлена группа специалисто�
 msgid "Our 3 auditors were funded by the community to ensure that the implementation did not contain any critical bugs or exploits.  The final reports were released during the summer of 2018, with several useful corrections and fixes suggested, and the final bulletproof implementation has been added first to Monero Stagenet, and then to the main Monero network during the October 2018 network upgrade."
 msgstr "Работа трёх аудиторов финансировалась сообществом и была направлена на то, чтобы гарантировать отсутствие в реализации критических багов, а также эксплоитов.  Окончательные отчёты были выпущены летом 2018 года. При этом было предложено внести несколько полезных исправлений. Окончательный вариант реализации Bulletproofs сначала был добавлен в стендовую сеть Monero, а затем, в октябре 2018, в основную сеть в рамках её обновления."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:34
-#
 msgid "Since the bulletproofs deployment, the size of an average transaction has dropped by at least 80%, as well as the transaction fees."
 msgstr "После введения Bulletproofs в эксплуатацию средний размер транзакций сократился, по крайней мере, на 80%, равно как и размер комиссий за проведение транзакций."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:35
-#
 msgid "More explanations on Monero's implementation of bulletproofs could be found on youtube fondajo channel in a [conversation with Sarang Noether](https://www.youtube.com/watch?v=6lEWqIMLzUU)."
 msgstr "Более подробную информацию по реализации Bulletproofs Monero можно найти на YouTube канале fondajo [в интервью с Сарангом Ноезером (Sarang Noether)](https://www.youtube.com/watch?v=6lEWqIMLzUU)."

@@ -8,23 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-31 09:34+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-18 16:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/ledger-wallet-cli/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:2
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:4
-#
 msgid "### Table of Content"
 msgstr "### Содержание"
 
@@ -52,17 +56,17 @@ msgstr "[Linux](#linux)"
 msgid "[Final notes](#a-few-final-notes)"
 msgstr "[Final notes](#a-few-final-notes)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:11
-#
 msgid "### Windows"
 msgstr "### Windows"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:13
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:57
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:109
-#
 msgid ""
 "We first have to ensure that we're sufficiently prepared. This entails the "
 "following:"
@@ -70,11 +74,11 @@ msgstr ""
 "Сначала мы должны убедиться, что мы достаточно подготовлены. Это влечет за "
 "собой следующее:"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:15
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:59
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:111
-#
 msgid ""
 "- This guide assumes you have already initialized your Ledger wallet and "
 "thus generated a 24 word mnemonic seed."
@@ -82,11 +86,11 @@ msgstr ""
 "- В этом руководстве предполагается, что вы уже инициализировали свой Ledger "
 "кошелек и, таким образом, создали мнемоническую seed-фразу из 24 слов."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:17
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:61
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:113
-#
 msgid ""
 "- You need to run / use CLI v0.12.2.0, which can be found <a "
 "href=\"{{site.baseurl}}/downloads/\">here</a>."
@@ -94,9 +98,9 @@ msgstr ""
 "- Вам нужно запустить / использовать клиент CLI версии v0.12.2.0 или новее, "
 "который можно скачать <a href=\"{{site.baseurl}}/downloads/\">здесь</a>."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:19
-#
 msgid ""
 "- You need to install the Ledger Monero app and configure your "
 "system. Instructions can be found "
@@ -110,11 +114,11 @@ msgstr ""
 "в частности, разделы 3.1.1 и 3.2.3). Кроме того, убедитесь, что сеть "
 "переключена в `Mainnet`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:21
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:67
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:117
-#
 msgid ""
 "- Your Ledger needs to be plugged in and the Ledger Monero app should be "
 "running."
@@ -122,9 +126,9 @@ msgstr ""
 "- Ваш Ledger должен быть подключен, и приложение Ledger Monero должно "
 "работать."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:23
-#
 msgid ""
 "- Either your @daemon (`monerod.exe`) should be running and preferably be "
 "fully synced or you should connect to a remote node."
@@ -132,17 +136,17 @@ msgstr ""
 "- Ваш демон (`monerod.exe`) должен корректно работать и быть полностью "
 "синхронизированным, либо вы должны подключиться к удаленной ноде."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:25
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:71
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:121
-#
 msgid "Now that we're sufficiently prepared, let's start!"
 msgstr "Теперь, когда мы подготовлены, давайте начинать!"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:27
-#
 msgid ""
 "- Go to the directory / folder monerod.exe and monero-wallet-cli.exe are "
 "located."
@@ -150,9 +154,9 @@ msgstr ""
 "- Перейдите в каталог / папку где находятся файлы monerod.exe и "
 "monero-wallet-cli.exe."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:29
-#
 msgid ""
 "- Open a new command prompt / powershell. This is done by first making sure "
 "your cursor isn't located on any of the files and subsequently doing SHIFT + "
@@ -167,17 +171,17 @@ msgstr ""
 "возможность \"open the PowerShell window here\" (Открыть окно PowerShell "
 "здесь)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:31
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:81
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:127
-#
 msgid "- Now type:"
 msgstr "- Введите:"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:33
-#
 msgid ""
 "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200` (Win 7 + 8)"
@@ -185,9 +189,9 @@ msgstr ""
 "`monero-wallet-cli.exe --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200` (Win 7 + 8)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:35
-#
 msgid ""
 "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200` (Win 10)"
@@ -195,11 +199,11 @@ msgstr ""
 "`.\\monero-wallet-cli.exe --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200` (Win 10)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:37
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:85
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:131
-#
 msgid ""
 "Note that is simply a placeholder for the actual wallet name. If you, for "
 "instance, want to name your wallet `MoneroWallet`, the command would be as "
@@ -209,9 +213,9 @@ msgstr ""
 "кошелька. Если вы, например, хотите назвать свой кошелек `MoneroWallet`, то "
 "команда будет следующей:"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:39
-#
 msgid ""
 "`monero-wallet-cli.exe --generate-from-device MoneroWallet "
 "--subaddress-lookahead 3:200` (Win 7 + 8)"
@@ -219,9 +223,9 @@ msgstr ""
 "`monero-wallet-cli.exe --generate-from-device MoneroWallet "
 "--subaddress-lookahead 3:200` (Win 7 + 8)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:41
-#
 msgid ""
 "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet "
 "--subaddress-lookahead 3:200` (Win 10)"
@@ -229,10 +233,10 @@ msgstr ""
 "`.\\monero-wallet-cli.exe --generate-from-device MoneroWallet "
 "--subaddress-lookahead 3:200` (Win 10)"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:43
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:135
-#
 msgid ""
 "- The CLI will, after executing aforementioned command, prompt your for a "
 "password. Make sure to set a strong password and confirm it thereafter."
@@ -240,11 +244,11 @@ msgstr ""
 "- CLI после выполнения вышеупомянутой команды запросит пароль. Обязательно "
 "установите надежный пароль и подтвердите его."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:45
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:97
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:137
-#
 msgid ""
 "- The Ledger will ask whether you want to export the private view key or "
 "not. First and foremost, your funds cannot be compromised with merely the "
@@ -269,21 +273,21 @@ msgstr ""
 "конфиденциальности. Это практически невозможно, если ключ приватного "
 "просмотра не экспортируется в Ledger."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:47
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:99
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:139
-#
 msgid "- You may have to hit confirm twice before it proceeds."
 msgstr ""
 "- Возможно, вам потребуется дважды подтвердить операцию, прежде чем начнется "
 "процесс."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:49
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:101
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:141
-#
 msgid ""
 "- Your Ledger Monero wallet will now be generated. Note that this may take "
 "up to 5-10 minutes. Furthermore, there will be no immediate feedback in the "
@@ -293,11 +297,11 @@ msgstr ""
 "может занять до 5-10 минут. Кроме того, следует понимать, что немедленной "
 "синхронизации с CLI и с Ledger не будет."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:51
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:103
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:143
-#
 msgid ""
 "- `monero-wallet-cli` will start refreshing. Wait until it has fully "
 "refreshed."
@@ -305,10 +309,10 @@ msgstr ""
 "- `monero-wallet-cli` начнет обновлять данные. Подождите, пока он полностью "
 "не закончит."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:53
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:145
-#
 msgid ""
 "Congratulations, you can now use your Ledger Monero wallet in conjunction "
 "with the CLI."
@@ -316,15 +320,15 @@ msgstr ""
 "Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно с "
 "CLI."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:55
-#
 msgid "### Mac OS X"
 msgstr "### Mac OS X"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:63
-#
 msgid ""
 "- You need to install the Ledger Monero app and configure your "
 "system. Instructions can be found "
@@ -338,9 +342,9 @@ msgstr ""
 "в частности, разделы 3.1.1 и 3.2.3). Кроме того, убедитесь, что сеть "
 "переключена в `Mainnet`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:65
-#
 msgid ""
 "- Note that the instructions for system configuration (section 3.2.2) on Mac "
 "OS X are quite elaborate and can be perceived as slightly "
@@ -355,10 +359,10 @@ msgstr ""
 "[здесь](https://monero.stackexchange.com/questions/8438/how-do-i-make-my-macos-detect-my-ledger-nano-s-when-plugged-in). "
 "Вы можете воспользоваться им, если у вас возникнут проблемы."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:69
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:119
-#
 msgid ""
 "- Either your daemon (`monerod`) should be running and preferably be fully "
 "synced or you should connect to a remote node."
@@ -366,9 +370,9 @@ msgstr ""
 "- Ваш демон (`monerod.exe`) должен корректно работать и быть полностью "
 "синхронизированным, либо вы должны подключиться к удаленной ноде."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:73
-#
 msgid ""
 "- Use Finder to browse to the directory / folder `monero-wallet-cli` (CLI "
 "v0.12.2.0) is located."
@@ -376,15 +380,15 @@ msgstr ""
 "- Используйте Finder для перехода в каталог / папку где находится "
 "`monero-wallet-cli` (CLI v0.12.2.0)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:75
-#
 msgid "- Go to your desktop."
 msgstr "- Перейдите на рабочий стол."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:77
-#
 msgid ""
 "- Open a new terminal (if don't know how to open a terminal, see "
 "[here](https://apple.stackexchange.com/a/256263))."
@@ -393,9 +397,9 @@ msgstr ""
 "ознакомьтесь со следующим руководством "
 "[здесь](https://apple.stackexchange.com/a/256263))."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:79
-#
 msgid ""
 "- Drag `monero-wallet-cli` in the terminal. It should add the full path to "
 "the terminal. Do not hit enter."
@@ -403,21 +407,21 @@ msgstr ""
 "- Перетащите папку с `monero-wallet-cli` в терминал. Он должен добавить "
 "полный путь к окне терминала. Не нажимайте enter."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:83
-#
 msgid "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 msgstr "`--generate-from-device <new-wallet-name> --subaddress-lookahead 3:200`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:87
-#
 msgid "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
 msgstr "`--generate-from-device MoneroWallet --subaddress-lookahead 3:200`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:89
-#
 msgid ""
 "Note that aforementioned text will be appended to the path of "
 "`monero-wallet-cli`. Thus, before you hit enter, your terminal should look "
@@ -427,9 +431,9 @@ msgstr ""
 "`monero-wallet-cli`. Таким образом, прежде чем вы нажмете enter, ваш текст в "
 "окне терминала должен выглядеть следующим образом:"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:91
-#
 msgid ""
 "`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200`"
@@ -437,15 +441,15 @@ msgstr ""
 "`/full/path/to/monero-wallet-cli --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:93
-#
 msgid "Where the full path is, intuitively, the actual path on your Mac OS X."
 msgstr "Где полный путь - это фактически путь к каталогу на вашем Mac OS X."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:95
-#
 msgid ""
 "- The CLI will, after executing aforementioned command, prompt you for a "
 "password. Make sure to set a strong password and confirm it thereafter."
@@ -453,9 +457,9 @@ msgstr ""
 "- CLI после выполнения вышеупомянутой команды запросит пароль. Обязательно "
 "установите надежный пароль и подтвердите его."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:105
-#
 msgid ""
 "- Congratulations, you can now use your Ledger Monero wallet in conjunction "
 "with the CLI."
@@ -463,15 +467,15 @@ msgstr ""
 "- Поздравляем, теперь вы можете использовать Ledger Monero кошелек совместно "
 "с CLI."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:107
-#
 msgid "### Linux"
 msgstr "### Linux"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:115
-#
 msgid ""
 "- You need to install the Ledger Monero app and configure your "
 "system. Instructions can be found "
@@ -485,23 +489,23 @@ msgstr ""
 "в частности, разделы 3.1.1 и 3.2.3). Кроме того, убедитесь, что сеть "
 "переключена в `Mainnet`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:123
-#
 msgid "- Go to the directory / folder monero-wallet-cli and monerod are located."
 msgstr ""
 "- Перейдите в каталог / папку где находятся файлы monerod.exe и "
 "monero-wallet-cli.exe."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:125
-#
 msgid "- Open a new terminal"
 msgstr "- Откройте новое окно терминала"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:129
-#
 msgid ""
 "`./monero-wallet-cli --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200`"
@@ -509,9 +513,9 @@ msgstr ""
 "`./monero-wallet-cli --generate-from-device <new-wallet-name> "
 "--subaddress-lookahead 3:200`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:133
-#
 msgid ""
 "`./monero-wallet-cli --generate-from-device MoneroWallet "
 "--subaddress-lookahead 3:200`"
@@ -519,15 +523,15 @@ msgstr ""
 "`./monero-wallet-cli --generate-from-device MoneroWallet "
 "--subaddress-lookahead 3:200`"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:147
-#
 msgid "### A few final notes"
 msgstr "### Несколько заключительных замечаний"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:149
-#
 msgid ""
 "- We'd strongly advise to test the full process first. That is, send a small "
 "amount to the wallet and subsequently restore it (using aforementioned "
@@ -548,9 +552,9 @@ msgstr ""
 "информацию о высоте восстановления и порядке ее масштабирования можно найти "
 "[здесь](https://monero.stackexchange.com/questions/7581/what-is-the-relevance-of-the-restore-height)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:151
-#
 msgid ""
 "- If you use a remote node, append the `--daemon-address host:port` flag to "
 "the command in step 3 (Windows), step 5 (Mac OS X), or step 3 (Linux)."
@@ -559,9 +563,9 @@ msgstr ""
 "host:port` к команде на шаге 3 (Windows), шаге 5 (Mac OS X) или шаге 3 "
 "(Linux)."
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:153
-#
 msgid ""
 "- If desired, you can manually tweak the `--subaddress-lookahead` value. The "
 "first value is the number of accounts and the second value is the number of "
@@ -586,9 +590,9 @@ msgid ""
 "wallet creation). Thereafter, you'd basically use it similar to how you "
 "normally use the CLI. That is:"
 msgstr ""
-"Вам нужно только один раз использовать флаг -generate-from-device (т. е. при "
-"создании кошелька). После этого вы можете воспользоваться им точно так же, "
-"как в CLI. То есть:"
+"Вам нужно только один раз использовать флаг `--generate-from-device` (т. е. "
+"при создании кошелька). После этого вы можете воспользоваться им точно так "
+"же, как в CLI. То есть:"
 
 #. type: Bullet: '   - '
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:159
@@ -629,9 +633,9 @@ msgstr ""
 "можете скопировать файлы кошелька Ledger в тот же каталог, что и "
 "`monero-wallet-cli`.\n"
 
+#
 #. type: Plain text
 #: _i18n/en/resources/user-guides/ledger-wallet-cli.md:162
-#
 msgid ""
 "- If you have any further questions or need assistance, please leave a "
 "comment to the original "

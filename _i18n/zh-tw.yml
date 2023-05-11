@@ -9,7 +9,7 @@ global:
   tags: 以標籤列出文章
   wikimeta: 門羅幣百科，開放的門羅幣知識百科全書
   tagsmeta: 被標籤標註的所有文章
-  titlemeta: 門羅幣，安全、保護隱私且完全匿蹤的數位貨幣
+  titlemeta: 門羅幣為一安全、保護隱私且完全匿蹤的數位貨幣
   terms: 條款
   privacy: 隱私
   untranslated: 這個頁面尚未被翻譯，如果您願意協助翻譯，請見
@@ -17,6 +17,7 @@ global:
   outdatedMin: 這個頁面資訊因未更新翻譯，資訊已過時。您仍可繼續使用這個頁面，但資料可能不完整。
   lang_tag: "@lang_tag_zh-tw"
 
+  outdated: 此頁面之內容可能為老舊資訊且不符合目前狀況. 請聯繫社群如您需要任何幫助.
 titles:
   index: 首頁
   whatismonero: 什麼是門羅幣 (XMR)?
@@ -42,6 +43,7 @@ titles:
   blogbytag: Blog
   library: 圖書出版品
 
+  workgroups: 工作社群
 navigation:
   getstarted: 開始使用
   whatis: 什麼是門羅幣？
@@ -63,7 +65,18 @@ home:
   moneropedia_para: 你想要找門羅幣的各種用詞和概念的解釋嗎？在這裡你可以找到用字母排序的字詞與其意義解釋，範圍包括門羅幣與 Kovri 專案。
   moneropedia_button: 閱讀門羅幣百科
   faq: 常見問題
-  faq_para: 在過去數年常常聽到的許多疑問，我們把它編列成了一份方便閱讀的常見問題集。別擔心，如果你的問題不在這邊，永遠歡迎直接到社群發問。
+  faq_para: 過去數年我們聽到了不少疑問，我們把它編列成一份方便閱讀的常見問題集。別擔心，如果你的問題不在裡面，歡迎直接到社群發問。
+  getcoins: 取得些許門羅幣
+  heading: 門羅幣意旨錢
+  about: 關於門羅幣
+  choosewallet: 選擇錢包
+  choosewallet_para: "以使用門羅幣, 您先必須擁有一錢包. 請造訪我們了下載頁面並選擇最適合您的錢包. \n門羅幣錢包適用於多方平台並具有完整素材供您立即使用門羅幣."
+  morevideos: 在找更多解釋影片嗎？
+  merchants: 商家
+  useit_para: 門羅幣是一種貨幣。它可以不公開地用來換來貨物，服務和其他貨幣，並只需非常少的費用。不少實體都樂意地接受門羅幣，看看 “商家” 的頁面。
+  answers: 解答你的疑問
+  contributing: 貢獻
+  exchanges: 交易平台
 hangouts:
   intro: 門羅幣的社群具有高度的多樣性，我們雖然來自世界各地，但還是常常會在幾個地方聚在一起交流，你可以在以下幾個地方找到我們，加入我們吧！
   resources: 協作群組資源
@@ -82,97 +95,94 @@ hangouts:
     monero-translations: 將門羅幣專案翻譯至當地語言的工作溝通頻道。
     monero-hardware: 打造硬體錢包以保護你的門羅幣安全。
     monero-site:
+  mailing_list1: 想要直接用電子郵件收到重大的消息宣佈嗎？加入我們的郵件名單吧！
+  mailing_list: 郵件名單
+  subscribe: 訂閱
 merchants:
-  intro2: 請在 GitLab 上開一個新 issue 通知我們
   intro3:
   disclaimer: |
     "請注意：這些連結只是提供便利的資訊，並不代表是由門羅幣社群認可的產品、服務或該單位所發表之個人或單位的意見。門羅幣社群不對其準確性，合法性或其網站內容負擔任何責任。請聯絡該單位以獲得與其內容相關的問題解答。 請謹記貨物售出概不退換的原則，你必須自己做功課並為其負責，永遠要在線上購物時發揮你的判斷力。
 
+  descr: 你可以在這個頁面找到接受門羅幣的店鋪和商店，也有兌換門羅幣去其他貨幣的交易平台。
+  useit: 接受門羅幣的商家
+  cardfoss: '開放源碼:'
+  depsell: 取決於賣家
+  visitbisq: 造訪 Bisq
+  visitlocalmonero: 造訪 LocalMonero
+  visithodlhodl: 造訪 HodlHodl
 sponsorships:
-  intro: 下列商家已用行動支持門羅幣專案其欲達成世界金融隱私的目標，我們由衷的感激他們的貢獻。如果你也想要贊助門羅幣專案並被列在本頁清單，請電郵至 dev@getmonero.org。
+  intro: 下列商家支持門羅幣專案設立將達成世界金融隱私的目標，我們由衷地感激他們的貢獻。如果你也想要贊助門羅幣專案並被列在本頁清單，請電郵至 dev@getmonero.org。
 
 team:
   core: 核心開發團隊
   community: 社群
   mrl: 研究實驗室
 downloads:
-  intro: On this page you can find and download the latest version available of the
-    Monero software, as well as hardware, light and mobile wallets.
-  choose: Choose your download
-  gui: GUI Wallet
-  cli: CLI Wallet
-  blockchain: Blockchain Bootstrap
-  blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from
-    scratch, you can use the most current bootstrap. It is typically much faster to
-    sync from scratch, however, and it also takes a lot less RAM.
-  blockchainbutton: Download Blockchain
-  mobilelight: Mobile & Light Wallets
-  hardware: Hardware Wallets
-  gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds
-    of users, but it is especially recommended for less technical people who want
-    to quickly send and receive XMR.
-  simplemode: Simple mode
-  simplemode1: Created for less technical users who only want to use Monero in the
-    easiest and quickest way possible. Open the wallet, automatically connect to a
-    remote node, send/receive XMR, done!
-  advancedmode: Advanced mode
-  advancedmode1: With all the advanced features you could need. Ideal for seasoned
-    Monero users who prefer to have full control of their wallet and node
-  merchantpage: Merchant page
-  merchantpage1: Receive XMR for your business, easily
-  hwcompatible: Compatible with hardware wallets
-  hwcompatible1: such Trezor and Ledger
-  fiatconv: in-app fiat conversion
-  fiatconv1: No longer a need to check the value of your XMR online
-  pruning: Blockchain pruning
-  pruning1: Not enough disk space? Just use pruning to download only 1/3 of the blockchain
-  langs: "<b>30+ languages</b> available"
-  cli_intro: The CLI wallet gives you the total control over your Monero node and
-    funds. Highly customizable and includes various analysis tools, as well as an
-    HTTP RPC and 0MQ interface.
-  currentversion: Current Version
+  intro: 在這個頁面你可以下載到最新版本的門羅幣軟體，包括硬體錢包、輕錢包與行動錢包。
+  choose: 選擇你的下載
+  gui: GUI 錢包
+  cli: CLI 錢包
+  blockchain: 匯入區塊鏈檔案
+  blockchain1: 如果你想要使用原始區塊鏈檔案而不要自行從頭同步的話，你可以使用最近的檔案。這通常會比從頭同步來得更快，但它也會需要使用大量的記憶體空間。
+  blockchainbutton: 下載區塊鏈
+  mobilelight: 行動 ＆輕錢包
+  hardware: 硬體錢包
+  gui_intro: GUI 錢包提供了不錯的使用者界面，以符合大多數使用者的需求，最適合想要快速收發 XMR 的入門使用者。
+  simplemode: 簡易模式
+  simplemode1: 設計給入門的使用者，只想要用最快最簡單的方式使用門羅幣。建立錢包，自動連接至@遠端節點，發送/接收 XMR，搞定！
+  advancedmode: 進階模式
+  advancedmode1: 提供完整的進階功能，適合給希望完全掌控錢包與節點的進階門羅幣使用者
+  merchantpage: 收銀台模式
+  merchantpage1: 輕鬆地接受你的客戶付款
+  hwcompatible: 與硬體錢包相容
+  hwcompatible1: 如 Trezor 與 Ledger
+  fiatconv: APP 內匯率轉換
+  fiatconv1: 不再需要上網去換算你的 XMR 餘額
+  pruning: 區塊鏈修剪
+  pruning1: 硬碟空間不足嗎？使用 @pruning 後就可以只需要下載 1/3 的區塊鏈
+  langs: "支援<b>30+ 種語言</b>"
+  cli_intro: CLI 錢包提供你完整的節點與資金控制，高度可客製化且附帶許多分析工具，包括 HTTP RPC 與 0MQ 界面。
+  currentversion: 目前版本
   sourcecode: Source Code
-  helpsupport: Help and Support
+  helpsupport: 幫助與支援
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
-  helpsupport2: "See latest release"
-  gui_helpsupport: "If you are experiencing issues or you need more info, feel free\
-    \ to reach out to the community. You can find the GUI team at #monero-gui, or\
-    \ else check out the Hangouts page for a more complete list of contacts and chatrooms"
+  helpsupport2: "查看最新的釋出"
+  gui_helpsupport: "如果您遇到問題或是需要更多的資料，請向社群求助。您可以在 #monero-gui 聯繫GUI開發者，或是在聊天室頁面找到完整的聯絡方式及聊天室列表。"
   cli_helpsupport: "If you are experiencing issues or you need more info, feel free\
     \ to reach out to the community. You can find the CLI team at #monero or #monero-dev,\
     \ or else check out the Hangouts page for a more complete list of contacts and\
     \ chatrooms"
-  localremote: Local or remote node
-  localremote1: Use your own copy of the blockchain or a publicly available one
-  transacttor: Transactions over Tor/I2P
-  transacttor1: For an additional layer of privacy
-  bootstrapnode: Bootstrap node
-  bootstrapnode1: Use a remote node while downloading the blockchain locally, this
-    will allow you to use Monero immediately and switch to your local node once it's
-    completely synced
-  rpc: RPC Wallet and Daemon
-  rpc1: included in the archive
+  localremote: 本地或遠端節點
+  localremote1: 使用本地或遠端伺服器的區塊鏈數據
+  transacttor: 以 Tor 或 I2P 廣播交易資料
+  transacttor1: 獲得額外的隱私保護
+  bootstrapnode: 引導節點
+  bootstrapnode1: 在本機同步區塊鏈時暫時使用@遠端節點，這樣可以讓你立即開始使用門羅幣，待同步完成後即會切換回你自己的節點
+  rpc: RPC 錢包與節點
+  rpc1: 附帶在下載檔案中
   payforrpc: Pay-for-RPC
-  payforrpc1: A new feature that allows node operators to get rewarded when their
-    node is used
-  verify: Verify
+  payforrpc1: 讓節點管理者可以在節點被使用時收取獎勵的新功能
+  verify: 驗證
   verify1: You are strongly advised to verify the hashes of the archive you downloaded.
     This will confirm that the files you downloaded perfectly match the files uploaded
     by the Monero development workgroup. Please don't underestimate this step, a corrupted
     archive could result in lost funds. Always verify your downloads!
-  showhash: Show hashes to verify your download
+  showhash: 顯示下載檔案的雜湊碼
   showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list
     of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  mobilelight1: The following are mobile or light wallets that are deemed safe by
-    respected members of the community. If there is a wallet that is not on here,
-    you can request the community check it out. Go to our
-  mobilelight2: Hangouts
+  mobilelight1: 以下是被社群視為安全的行動錢包或輕錢包，如果你喜歡的錢包沒有被列在這裡，你可以找社群來試看看。到我們的
+  mobilelight2: 聊天室
   mobilelight3: page to see where we are.
-  installer: Installer
+  installer: 安裝檔
 
+  blockchain2: 如果你仍然想要繼續，請詳閱使用說明
+  showhash4: 有兩個教學可以引導你進行驗證的步驟：
+  blockchain3: 匯入門羅幣區塊鏈
+  blockchain4: 給 Windows 作業系統的操作步驟。
+  verify2: 務必驗證你的下載檔案！
 monero-project: {}
 press-kit:
   intro2: 請注意白色背景選項是只有在門羅幣圖案底下的白色背景，而非整張圖片的背景。
@@ -201,7 +211,11 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
 
-accepting: {}
+accepting:
+  title_gui: GUI 錢包的操作說明
+  gui1: 用 GUI 錢包來接受付款非常簡單，不論你是商家或個人皆適用，會有兩種收款頁面供你使選擇：收款與收銀台模式。
+  gui2: 收款頁面（下圖文）詳細介紹
+  guilinkguide: 在 GUI 的教學中。
 contributing:
   intro: 門羅幣是一個開放原始碼、由社群推動的專案。以下列出了一些可以支持本專案的方法。
   network: 支持交易網路
@@ -218,30 +232,32 @@ faq:
   q1: 門羅幣的價值是怎麼產生的？
   a1: 門羅幣之所以會有價值是因為人們願意購買它，若是沒有人願意購買門羅幣，他將不會有任何價值。而若是市場需求量提升，門羅幣的價格亦隨著上升，若是供過於求則會使價格下降。
   q2: 我要如何取得門羅幣？
-  a2: 你可以從交易所或其他持有者購買門羅幣。此外，你也可以試著透過挖礦取得區塊中獎勵的門羅幣。
-  q3: 什麼是助記種子碼？
-  a3: 助記種子碼是可以用來回復錢包用的一組 25 個字詞，請保護好這些字詞，並不要與其他人透漏這些字詞，即使你的電腦損壞而無法使用，你還是可以 (在其他電腦)
-    回復你的帳戶。
+  a2: 你可以從交易所或其他持有者購買門羅幣。此外，你也可以試著透過挖礦取得@區塊獎勵的門羅幣。
+  q3: 為什麽助記種子碼非常重要？
+  a3: '@助記種子碼 是可以用來回復錢包用的一組 25 個字詞，請保護好這些字詞，並不要與其他人透漏這些字詞，即使你的電腦損壞而無法使用，你還是可以 (在其他電腦)
+    回復你的帳戶。'
   q4: 門羅幣的隱私保護與其他幣種有什麼差異？
-  a4: |
-    門羅幣使用三種不同的技術來保護隱私：環狀簽名、環簽保密交易 (RingCT) 與隱匿性地址。這些技術可以隱藏發送者與接收者在交易中的資訊。所有的交易在網路上都是強制保護的，你無法意外地發送一筆透明的交易，這是門羅幣獨特的功能，你不需要信任任何人來保護你的隱私。
+  a4: |-
+    門羅幣使用三種不同的技術來保護隱私： @環狀簽名 、 @環簽保密交易 (RingCT) 與 @隱匿性地址 。這些技術可以隱藏發送者與接收者在 @交易 中的資訊。所有的交易在網路上都是強制保護的，你無法意外地發送一筆透明的交易，這是門羅幣獨特的功能，你不需要信任任何人來保護你的隱私。
   q5: 為什麼我的錢包要花這麼久的時間來完成同步？
-  a5: 如果你是在本地端運作全節點，你需要將整個區塊鏈複製到你的電腦中。這可以花上不少時間，尤其是當你是使用舊硬碟或是較慢的網路速度更是如此。如果你是用遠端節點，你電腦將會需要請求獲得一份交易輸出，這過程有可能會需要數個小時完成。請保持耐心，若你為了較快地同步速度而改用輕錢包，將有可能犧牲一些隱私。
+  a5: 如果你是在本地端運作全 @節點 ，你需要將整個 @區塊鏈 複製到你的電腦中。這可以花上不少時間，尤其是當你是使用舊硬碟或是較慢的網路速度更是如此。如果你是用
+    @遠端節點 ，你電腦將會需要請求獲得一份交易輸出，這過程有可能會需要數個小時完成。請保持耐心，若你為了較快地同步速度而改用遠端節點或輕 @錢包 ，將有可能犧牲一些隱私。
   q6: 普通錢包與輕錢包有什麼差異？
   a6: 以輕錢包來說，你將提供查看金鑰給節點以掃描你的帳戶在區塊鏈上的交易，節點會得知你在什麼時候接收到資金，但無法得知你接收到的金額或來源。根據你使用的錢包軟體差異，你可能可以使用你自己控制的節點以避免這類的隱私資訊洩漏。若需要完整的隱私保護，請使用普通錢包搭配你自己的節點。
   q7: 門羅幣與比特幣有什麼差異？
-  a7: 門羅幣並不是基於比特幣所開發，它是基於 CryptoNote 協定所開發。比特幣是完全透明的系統，人們可以完整看見資金與金額是如何從一個使用者發送至另一個使用者。門羅幣在所有交易中都對這些隱私資訊提供了保護。它也擁有動態區塊與手續費系統、抵抗
-    ASIC 礦機的工作量證明 (proof of work) 演算法、尾發行與一些其他的改變。
+  a7: 門羅幣並不是基於比特幣所開發，它是基於 CryptoNote 協定所開發。比特幣是完全透明的系統，人們可以完整看見資金與金額是如何從一個使用者發送至另一個使用者。門羅幣在所有交易中都對這些隱私資訊提供了保護。它也擁有動態
+    @區塊 與手續費系統、抵抗 ASIC 礦機的工作量證明 (RandomX) 演算法、 @尾發行 與一些其他的改變。
   q8: 門羅幣有區塊容量限制嗎？
-  a8: 沒有，門羅幣並沒有硬性固定的區塊容量限制。取而代之的是，區塊容量會隨著需求量增加或減少區塊容量。但區塊的成長速率有設定上限以避免沒有節制的暴增。
+  a8: 沒有，門羅幣並沒有硬性固定的 @區塊容量 限制。取而代之的是，區塊容量會隨著需求量增加或減少區塊容量。但區塊的成長速率有設定上限以避免沒有節制的暴增 （
+    @可擴展性 ）。
   q11: 什麼是貨幣替代性與為什麼這是重要的特性？
-  a11: 貨幣替代性 (Fungibility) 是錢幣的基本特性，代表兩個相同單位的錢幣之間沒有差異。如果兩個人交換了一個 10 與兩個 5，沒有人會有所損失。但是，若假設所有人都知道那筆
-    10 曾被用在一場勒索軟體的攻擊事件中，那其他人還會願意接受這筆交易嗎？很可能不會。即使該持有者與該勒索攻擊事件無關。這就產生了一個問題，接收錢幣的那方將必須持續檢查是否不小心收到了贓款。門羅幣是滿足貨幣替代性的，因此人們再也不需要擔心這個問題。
+  a11: '@貨幣替代性 (Fungibility) 是錢幣的基本特性，代表兩個相同單位的錢幣之間沒有差異。如果兩個人交換了一個 10 與兩個 5，沒有人會有所損失。但是，若假設所有人都知道那筆
+    10 曾被用在一場勒索軟體的攻擊事件中，那其他人還會願意接受這筆交易嗎？很可能不會。即使該持有者與該勒索攻擊事件無關。這就產生了一個問題，接收錢幣的那方將必須持續檢查是否不小心收到了贓款。門羅幣是滿足貨幣替代性的，因此人們再也不需要擔心這個問題。'
   q12: 如果門羅幣這麼保護隱私，那我們要如何知道這些錢幣不是從無中生有的？
-  a12-1: 在門羅幣中，每一筆交易輸出都會帶有一個金鑰映像 (key image)，每個映像只能被該筆交易輸出組合所產生。重複出現的金鑰映像將會使得該筆交易被礦工視為雙重花費
-    (double-spends) 而拒絕加入區塊中，當每筆新的交易出現時，礦工將會驗證其金鑰映像不得出現在先前的交易中以確保該筆交易不是雙重花費。
+  a12-1: 在門羅幣中，每一筆 @交易 輸出都會帶有一個金鑰映像 (key image)，每個映像只能被該筆交易輸出組合所產生。重複出現的金鑰映像將會使得該筆交易被礦工視為雙重花費
+    (double-spends) 而拒絕加入 @區塊 中，當每筆新的交易出現時，礦工將會驗證其金鑰映像不得出現在先前的交易中以確保該筆交易不是雙重花費。
   a12-2: 即使在交易中的金額是被加密隱藏 (僅有接收方能得知交易金額)，我們也可以驗證每筆交易金額是否有效，因為金額是透過 Pedersen commitments
-    進行加密表示，意思是沒有外部觀察者可以得知交易輸入與輸出的金額，但是他們可以透過計算 Pedersen commitments 以確認沒有門羅幣是被無中生有的產生。
+    進行加密表示，意思是沒有外部觀察者可以得知交易輸入與輸出的金額，但是他們可以透過計算 @Pedersen-commitments 以確認沒有門羅幣是被無中生有的產生。
   a12-3: 只要加密後的輸出金額相等於輸入金額總和 (包括發送給接收者的輸出、回到自己錢包的找零輸出、未加密的交易手續費)，那你就可以確認這是一筆有效的交易，沒有門羅幣在這之中被無中生有，Pedersen
     commitments 使得金額總和可以被驗證是否相等，但每筆交易輸出個別的金額仍然得以維持在未知的狀態。
   q13: 不論我怎麼做，門羅幣都可以很神奇的保護我的隱私嗎？
@@ -249,11 +265,17 @@ faq:
   q14: 門羅幣是百分之百匿名的嗎？
   a14: 沒有所謂的百分之百匿名。 正常情況下，門羅幣能提供的匿名程度就是相對於不使用門羅幣能提供的保護程度。門羅幣也有可能出現 bug，即使沒有，還是有可能存在著一些在門羅幣使用中推測出些許隱私資訊的方法，不論是現在或未來，對隱私的的攻擊力道只會越來越強。舉例來說，即使你有繫安全帶還是有可能在車禍中重傷致死。請使用常識思考，謹慎面對威脅並作出一定程度的防禦。
 
+  toc: 內容列表
+  general: 一般
+  advanced: 進階
+  nodeandwallet: 節點與錢包
+  additional: 更多資訊：
+  resandhelp: 資源＆幫助
+  intro: 一些常見問題與其相關的解答與資源
 mining:
   intro1: 門羅幣是一種透過工作量證明達到分散式共識的加密貨幣。你可以在下面找到一些關於如何開始挖礦的資訊。
   intro2: 門羅幣專案並不為任何礦池、軟體、硬體做背書，以下提供之內容僅為教學使用的資訊分享。
   support: 技術支援
-  benchmarking_para1: 此處
   software: 挖礦軟體
   software_para: 請注意有些挖礦工具可能會收取開發者手續費。
 
@@ -432,7 +454,7 @@ research-lab:
   abstract: 摘要
   introduction: 前言
   read-paper: 閱讀全文
-  summary: Summary
+  summary: 總結
   mrlhtp: Understanding ge_fromfe_frombytes_vartime
   mrlhtp_summary: Monero uses a unique hash function that transforms scalars into
     elliptic curve points. It is useful for creating key images, in particular. This
@@ -573,6 +595,9 @@ specs:
   block_emission_main: "起始，主要發行曲線： 到 2022 年底將發行大約 1813.2 萬的門羅幣"
   block_emission_tail: "接著，尾發行曲線： 當主要發行曲線結束後，每 2 分鐘區塊固定產生 0.6 XMR 的機制將會啟動，長時間的運作下相當於\
     \ <1% 的通膨"
+  privacytech_sh: '@隱匿性地址'
+  privacytech_rs: 環狀簽名
+  privacytech_dandelion: 蒲公英改進協議
 library:
   description: "以下是一些出版物、書籍或雜誌提供下載。"
   books: 書籍
@@ -669,3 +694,10 @@ blog:
   date: 發表時間於
 tags:
   notags: 此標籤下沒有找到文章。
+footer:
+  feed: RSS Feed
+  source: 程式原碼
+  legal: 法律相關
+  ml: 郵信列表
+  ccs: 社群集資系統
+  reachout: 聯繫

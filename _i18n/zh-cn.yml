@@ -1,6 +1,6 @@
 global:
   date: '%Y/%m/%d'
-  monero: Monero
+  monero: 门罗币
   getting_started: 入门
   copyright: 版权
   monero_project: 门罗币项目
@@ -9,13 +9,14 @@ global:
   tags: 标签
   wikimeta: meta维基
   tagsmeta: meta标签
-  titlemeta: 门罗币主页，门罗币是一种安全，隐私的，无法追踪的数字货币
+  titlemeta: 门罗币是一种安全，隐私的，无法追踪的数字货币
   terms: 条款
   privacy: 隐私
   untranslated: 这个页面尚未被翻译。 如果您愿意协助翻译，请参见
   outdatedVersion: 英文版本
-  outdatedMin: 这个页面自被翻译后又有更新。您可以继续使用，但是可能这个页面并不完整。
+  outdatedMin: 这个页面自被翻译后又有更新。您可以继续使用这个版本的页面，但是它有可能并不完整。请使用
   lang_tag: "@lang_tag_zh-cn"
+  outdated: 此页面内容已过期，可能不再有效。如果您需要帮助，请联系社区。
 titles:
   index: 索引
   whatismonero: 什么是门罗币 (XMR)?
@@ -27,10 +28,10 @@ titles:
   allposts: 所有文章
   hangouts: 社区
   sponsorships: 赞助
-  merchants: 商家和服务
+  merchants: 商户和交易所
   about: 关于门罗币
   roadmap: 路线图
-  researchlab: 门罗币研究实验室
+  researchlab: 门罗币研究实验室（MRL）
   moneropedia: 门罗币百科
   userguides: 用户指南
   developerguides: 开发者指南
@@ -42,6 +43,7 @@ titles:
   library: 资料
 
   workgroups: 工作组
+  tools: 工具
 navigation:
   getstarted: 始
   whatis: 什么是门罗币？
@@ -49,7 +51,7 @@ navigation:
   contributing: 贡献
   mining: 挖矿
   community: 社区
-  merchants: 商户
+  merchants: 商户和交易所
   resources: 资源
   about: 关于
   mrl: 研究实验室
@@ -57,16 +59,37 @@ navigation:
 index:
   page_title: "门罗币-安全、隐私、无法追踪"
 home:
-  heading2: 隐私数字货币
+  heading2: 集私密性与去中心化于己身，保证您财务隐私与安全的数字货币。
   downloads: 下载
-  moneropedia_para: 想了解和门罗币相关的词汇和概念？您可以在此处找到门罗币和科维匿名网络（Kovri)相关的知识。
+  moneropedia_para: 想了解和门罗币相关的词汇和概念？您可以在此处找到完整排序的门罗币的相关知识。
   moneropedia_button: 阅读门罗百科
   faq: 常见问题
-  faq_para: 门罗币社区一直以来收到了很多疑问，为了便于查询，我们把问题和回答列在这里。如果这里仍无法解决您的疑惑，您可以到门罗币社区询问。
+  faq_para: 门罗币社区一直以来收到了很多疑问，为了便于查询，我们把常见问题和回答列在这里。如果这里仍无法解决您的疑惑，您可以到门罗币社区询问。
+  about: 关于门罗币
+  getcoins: 获得门罗币
+  useit_para: 门罗币是一种货币，它可以被用来交换物品，服务和其他货币，它保护您的隐私并且拥有非常低的网络转账费用。有许多客户非常愿意使用门罗币来进行支付；查阅“商户”页面了解更多。
+  merchants: 商户
+  answers: 寻找答案
+  joincommunity: 加入社区
+  exchanges: 交易所
+  choosewallet: 选择钱包
+  choosewallet_para: 你需要选择一个钱包软件来使用门罗币。访问我们的下载页面并选择适合你的钱包软件。门罗币的钱包软件涵盖多个平台，表现优异。
+  getcoins_para: 在你安装了钱包软件之后，你需要获得一些门罗币。有许多种方式可以获得门罗币，比如挖矿或通过交易所，最简单的获取方式是通过交易所，将您的法定货币交换为门罗币。许多中心化和去中心化交易所都支持门罗币交易。
+  contributecommunity_para: 门罗币不仅是一种货币，它还是一个离不开大量志愿者辛勤付出的去中心化社区。现在就加入我们吧！
+  contributecommunity: 我们需要您的贡献！
+  guides: 指南和资源
+  researchlab_para: MRL（门罗币研究实验室）是门罗币非常重要的一部分，来自全世界的研究者和密码学家在一起让门罗币变得更好。阅读他们的论文，和他们并肩作战！
+  whatis: 了解更多关于门罗币的信息
+  useit: 这是一种货币，尽情的使用它吧！
+  morevideos: 想要更多解释性的视频？
+  contributing: 贡献
+  visitmrl: 访问MRL
+  heading: Monero 意为金钱
+  meetcommunity: 立即加入社群！
 hangouts:
   intro: 门罗币在各种社交媒体上都有许多社区。我们可能来自世界各处，但是总有一些地方是我们常去的。门罗社区的聚集处已经列在下面，加入我们吧！
   resources: 工作组
-  resources_para: 以下是门罗社区工作组经常谈论和规划项目的几个频道，你可以在这里找到开发组人员。 Mattermost甚至将被列为最受欢迎的门罗币交流频道。
+  resources_para: 以下是门罗社区工作组经常谈论和规划项目的几个频道，你可以在这里找到开发组人员，
   irc: IRC频道
   irc_para: 门罗社区采用了很多网络交流（IRC)频道，每个频道有各自针对的话题。有的频道用来谈论正式议题，有的只是闲聊。下面列出了最受欢迎的一些频道。
   irc_channels:
@@ -79,23 +102,40 @@ hangouts:
     monero-translations: 把门罗项目本土化成其他语言。
     monero-hardware: 构建硬件钱包来保障你的门罗币安全。
     monero-site:
+  mailing_list1: 你想直接通过邮箱地址接收到重要公告吗？加入我们的邮件列表吧！
+  subscribe: 订阅
+  mailing_list: 邮件列表
+  bridges: 这些频道也会桥接到其他的平台，让社群能够用他们最喜欢的聊天软件/协议来沟通。
+  resources_para1: 比如一个Matrix服务器，一个Taiga面板和我们的翻译平台Weblate。
 merchants:
-  intro1: 各类服务商都开始逐渐重视门罗币为我们带来的财务隐私。以下是目前接受门罗币作为支付手段的商家列表。如果这里有公司不再接受门罗币，或者您想被添加到这个列表，
-  intro2: 请打开GitLab issue并告知我们
   intro3:
   disclaimer: |
     "温馨提示：这些链接仅为浏览方便而列出，仅供参考；这并不代表门罗社区对这些商家/服务的认可！门罗社区不对这些外部网站的安全性、真实性、合法性承担责任。如有疑问请您自行联系这些网站。请您在网络购物时始终保持警惕和独立思考。"
 
+  useit: 接受门罗币的商家
+  cardfoss: 开源：
+  cardonion: '暗网地址:'
+  noncustodial: '非托管的:'
+  hodlhodldescr: 非托管式点对点交易所
+  locmondescr: 线上提供点对点交易的去中心化交易所
+  centrexchangesp: 如果你喜欢中心化交易所，下面有一个主流交易所与互换商的列表。很多交易所都支持门罗币，我们在这里只列出一些比较有声誉的。
+  cexp: 提供门罗币与其他加密货币或法币的交易的中心化交易所。
 sponsorships:
   intro: 以下企业支持门罗币将金融隐私带给全世界的愿景。我们对他们的帮助和贡献感激不尽。如果您也想赞助门罗项目并被添加到此列表，请给dev@getmonero.org发送电子邮件。
 
+  pastsponsors: 过去的捐赠者
 team:
   core: 核心开发组
-  community: 社区
+  community: 社区工作组
   mrl: 研究实验室
+  core_start: 核心开发组是一个封闭的工作组，除非被邀请否则无法加入。
+  descr: 描述
+  devworkgroup: 开发工作组
+  contacts: 聊天室和联系方式
+  chat: 会话：
+  website: 网站：
 downloads:
-  intro: On this page you can find and download the latest version available of the
-    Monero software, as well as hardware, light and mobile wallets.
+  intro: 在这里你可以下载到最新版本的门罗币应用，包括适用于硬件钱包、轻钱包和手机端钱包的软件。
   choose: Choose your download
   gui: GUI Wallet
   cli: CLI Wallet
@@ -103,36 +143,36 @@ downloads:
   blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from
     scratch, you can use the most current bootstrap. It is typically much faster to
     sync from scratch, however, and it also takes a lot less RAM.
-  blockchainbutton: Download Blockchain
-  mobilelight: Mobile & Light Wallets
-  hardware: Hardware Wallets
+  blockchainbutton: 下载区块链数据
+  mobilelight: 手机钱包和轻钱包
+  hardware: 硬件钱包
   gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds
     of users, but it is especially recommended for less technical people who want
     to quickly send and receive XMR.
-  simplemode: Simple mode
+  simplemode: 简易模式
   simplemode1: Created for less technical users who only want to use Monero in the
     easiest and quickest way possible. Open the wallet, automatically connect to a
     remote node, send/receive XMR, done!
-  advancedmode: Advanced mode
+  advancedmode: 进阶模式
   advancedmode1: With all the advanced features you could need. Ideal for seasoned
     Monero users who prefer to have full control of their wallet and node
-  merchantpage: Merchant page
-  merchantpage1: Receive XMR for your business, easily
+  merchantpage: 商户页面
+  merchantpage1: 方便地使用门罗币开展业务
   hwcompatible: Compatible with hardware wallets
-  hwcompatible1: such Trezor and Ledger
+  hwcompatible1: 比如 Trezor 和 Ledger 硬件钱包
   fiatconv: in-app fiat conversion
   fiatconv1: No longer a need to check the value of your XMR online
-  pruning: Blockchain pruning
+  pruning: 区块链数据修剪
   pruning1: Not enough disk space? Just use pruning to download only 1/3 of the blockchain
-  langs: "<b>30+ languages</b> available"
+  langs: "支持 <b>30多种语言</b>"
   cli_intro: The CLI wallet gives you the total control over your Monero node and
     funds. Highly customizable and includes various analysis tools, as well as an
     HTTP RPC and 0MQ interface.
-  currentversion: Current Version
+  currentversion: 当前版本
   sourcecode: Source Code
-  helpsupport: Help and Support
+  helpsupport: 帮助与支持
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
-  helpsupport2: "See latest release"
+  helpsupport2: "查看最新版本"
   gui_helpsupport: "If you are experiencing issues or you need more info, feel free\
     \ to reach out to the community. You can find the GUI team at #monero-gui, or\
     \ else check out the Hangouts page for a more complete list of contacts and chatrooms"
@@ -140,10 +180,10 @@ downloads:
     \ to reach out to the community. You can find the CLI team at #monero or #monero-dev,\
     \ or else check out the Hangouts page for a more complete list of contacts and\
     \ chatrooms"
-  localremote: Local or remote node
-  localremote1: Use your own copy of the blockchain or a publicly available one
-  transacttor: Transactions over Tor/I2P
-  transacttor1: For an additional layer of privacy
+  localremote: 本地或远程节点
+  localremote1: 使用本地或公有节点的区块链数据
+  transacttor: 通过 Tor 或 I2P 连接
+  transacttor1: 提供更进一步的隐私保障
   bootstrapnode: Bootstrap node
   bootstrapnode1: Use a remote node while downloading the blockchain locally, this
     will allow you to use Monero immediately and switch to your local node once it's
@@ -153,18 +193,14 @@ downloads:
   payforrpc: Pay-for-RPC
   payforrpc1: A new feature that allows node operators to get rewarded when their
     node is used
-  verify: Verify
-  verify1: You are strongly advised to verify the hashes of the archive you downloaded.
-    This will confirm that the files you downloaded perfectly match the files uploaded
-    by the Monero development workgroup. Please don't underestimate this step, a corrupted
-    archive could result in lost funds. Always verify your downloads!
+  verify: 校验
+  verify1: 强烈建议在下载完成后校验文件的哈希值。这能保证你下载的文件确实和门罗币开发组上传的文件一致。不要低估这个步骤的重要性，不匹配的文件可能会导致资金丢失。
   showhash: Show hashes to verify your download
   showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list
     of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware4: integrated Monero into their hardware wallets.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -172,6 +208,9 @@ downloads:
   mobilelight3: page to see where we are.
   installer: Installer
 
+  blockchain3: 导入门罗币区块链
+  verify2: 请校验你的下载内容！
+  showhash4: 有两篇有关校验流程的指南可供查看：
 monero-project: {}
 press-kit:
   intro2: 白色背景填充仅限于门罗币图案内部，而非整个图片。
@@ -200,7 +239,10 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials
     and tips for an effective guerrilla marketing campaign.
 
-accepting: {}
+accepting:
+  gui2: 接收页面（如下所示）的详细使用方法
+  gui1: 通过 GUI 钱包接受付款非常简单。不管你是一个商户还是一个普通用户，你可以使用两个页面：「接收」页面和「商户」页面。
+  title_gui: 关于 GUI 钱包的说明
 contributing:
   intro: 门罗是一个开源的，社区主导的项目。下面列出了您可以为社区贡献力量的几种方式。
   network: 为网络提供支持
@@ -220,8 +262,8 @@ faq:
   q3: 助记词是什么？
   a3: 助记词是一组有固定顺序的单词，一共有25个。您可以用助记词在任何地方恢复您的钱包。一定要保障助记词的安全，不要给任何人看到。即便您现在的计算机崩溃了，您也可以在其他地方使用助记词恢复钱包。
   q4: 门罗币的隐私性和其他币有什么区别？
-  a4: |
-    门罗币使用三种隐私技术：环签名，环机密交易(RingCT)和隐形地址。它们分别隐藏交易中的发送方，金额和接收方。按照规定网络上的所有交易都是私有的；无法发送透明的交易。这个特性是门罗币独有的。你不需要把你的隐私托付给任何人。
+  a4: |-
+    门罗币使用三种隐私技术：@环签名，@环机密交易(RingCT)和@隐形地址。它们分别隐藏交易中的发送方，金额和接收方。按照规定网络上的所有交易都是私有的；不可能发起透明的交易。这个特性是门罗币独有的。你不需要把你的隐私托付给任何人。
   q5: 为什么钱包同步区块链数据要这么久？
   a5: 如果您在电脑上运行全节点，则需要将整个区块链数据下载到计算机上。区块链数据较大，下载需要很长时间，尤其是在比较旧的硬盘或网速很慢的时候。如果您使用的是远程节点，则计算机仍需要下载所有输出的拷贝副本，这也可能需要几个小时。请耐心等待，如果您想牺牲一些隐私性以获得更快的同步时间，请考虑使用轻钱包。
   q6: 轻钱包和普通钱包有什么区别？
@@ -245,8 +287,6 @@ mining:
   intro1: 门罗币是一种使用工作量证明（POW）来实现去中心化共识的加密货币。我们在下方为您列出了一些用于挖矿的信息和工具。
   intro2: 门罗项目并不支持任何特定的矿池、软件、硬件，以下内容仅供参考，是否使用请您自行决定。
   support: 帮助
-  pools: 矿池
-  benchmarking_para1: 此处
   software: 挖矿软件
   software_para: 注意：一些挖矿软件会收取手续费。
 
@@ -647,5 +687,30 @@ moneropedia:
 blog:
   author: 来自
   date: 在
+  allposts: 所有文章
+  urgent: 紧急
+  community: 社区
+  filter: 按分类过滤：
+  next: 下一个
+  previous: 上一个
 tags:
   notags: 这个标签还没有文章。
+footer:
+  feed: RSS源
+  source: 源代码
+  ml: 邮件列表
+  ccs: 社区众筹系统
+  reachout: 联系我们
+  legal: 规则
+error:
+  button: 返回首页
+  title: 页面未找到 (也许它重视隐私)
+accessibility:
+  cliscreen: 命令行钱包截图
+  arrowup: 返回页面顶部
+  gotop: 返回页面顶部
+  guiscreen: 这是一张门罗币图形化钱包的截图。左侧显示有导航菜单和钱包余额，右侧是发送门罗币的表单。
+tools:
+  moneropro: 图表和指标
+  gateways: 支付网关
+  monerohow-stats: 统计

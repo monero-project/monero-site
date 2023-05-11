@@ -9,7 +9,7 @@ global:
   tags: Artigos por Tag
   wikimeta: em Moneropédia, a enciclopédia livre sobre o Monero
   tagsmeta: Todos os artigos do blog Monero que possuem tags
-  titlemeta: Monero, uma moeda digital segura, privada e não-rastreável
+  titlemeta: Monero, uma moeda digital segura, privada e não rastreável
   terms: Termos
   privacy: Privacidade
   untranslated: Esta página ainda não está traduzida. Se você gostaria de ajudar a
@@ -31,10 +31,10 @@ titles:
   allposts: Todos os Posts do Blog
   hangouts: Fóruns & Grupos
   sponsorships: Patrocínios
-  merchants: Comerciantes & Serviços
+  merchants: Comércios & Corretoras
   about: Sobre o Monero
   roadmap: Roadmap
-  researchlab: Laboratório de Pesquisa Monero
+  researchlab: Laboratório de Pesquisa Monero (MRL)
   moneropedia: Moneropédia
   userguides: Guias do Usuário
   developerguides: Guias do Desenvolvedor
@@ -46,6 +46,7 @@ titles:
   library: Biblioteca
 
   workgroups: Grupos de trabalho
+  tools: Ferramentas
 navigation:
   getstarted: Início
   whatis: O que é o Monero?
@@ -53,7 +54,7 @@ navigation:
   contributing: Contribuindo
   mining: Minerando
   community: Comunidade
-  merchants: Comerciantes
+  merchants: Comércios & Corretoras
   resources: Recursos
   about: Sobre
   mrl: Laboratório de Pesquisa
@@ -61,16 +62,16 @@ navigation:
 index:
   page_title: Monero - seguro, privado, não rastreável
 home:
-  heading2: Uma Moeda Digital Privada
+  heading2: Uma criptomoeda moeda digital privada e descentralizada para manter as
+    suas finanças confidenciais e seguras.
   downloads: Downloads
   moneropedia_para: Quer conhecer o significado dos termos e conceitos usados no Monero?
-    Aqui você encontrará um guia alfabético com os termos e seus significados dos
-    projetos Monero e Kovri.
+    Aqui você encontrará um guia alfabético com os termos e seus significados.
   moneropedia_button: Leia a Moneropédia
   faq: Perguntas Frequentes
-  faq_para: Recebemos muitas perguntas ao longo do tempo e compilamos um FAQ completo
-    e diverso. Se sua pergunta não estiver aqui, não se preocupe, pois você pode perguntar
-    à comunidade a qualquer momento.
+  faq_para: Recebemos muitas perguntas ao longo dos anos e compilamos um FAQ completo
+    e bem variado. Se sua pergunta não estiver aqui, não se preocupe, você sempre
+    pode recorrer à comunidade.
   answers: Encontre respostas para suas perguntas
   exchanges: Corretoras
   choosewallet: Escolha uma Carteira
@@ -89,9 +90,10 @@ home:
   choosewallet_para: Para usar Monero, você precisará de uma carteira. Visite nossa
     página de Downloads e escolha a que mais lhe agrada. Nossas carteiras estão disponíveis
     para diversas plataformas e são tudo o que você precisa para começar a fazer transações.
-  useit_para: Monero é uma moeda que pode ser trocada por bens e serviços, de maneira
-    privada e com taxas bem acessíveis. Muitas pessoas e empresas aceitam XMR como
-    pagamento. Confira nossa lista de comerciantes que atualmente aceitam Monero.
+  useit_para: Monero é uma moeda que pode ser trocada por bens, serviços e outras
+    moedas, de maneira privada e com taxas bem acessíveis. Muitas pessoas e empresas
+    aceitam XMR como pagamento. Confira nossa lista de comerciantes que atualmente
+    aceitam Monero.
   getcoins_para: Depois de instalar a carteira, você precisará obter algumas moedas
     de Monero. Existem diversas formas de se adquirir moedas, você pode tentar minerá-las
     ou recebê-las em troca de algum serviço, mas a maneira mais fácil é usar uma corretora
@@ -99,24 +101,29 @@ home:
     listam Monero (XMR).
   useit: 'É uma moeda: use-a!'
   getcoins: Obter Algumas Moedas
-  guides_para: "A comunidade Monero disponibiliza diversos recursos e manuais. Na\
-    \ seção 'Guias do Usuário', os usuários podem achar informações, dicas e guias\
-    \ úteis sobre as configurações mais comuns. Na seção 'Guias do Desenvolvedor',\
-    \ desenvolvedores podem encontrar tudo o que eles precisam saber para desenvolver\
-    \ um serviço com Monero ou para se comunicarem com a rede. A seção Biblioteca\
-    \ proporciona downloads gratuitos de publicações e livros, incluindo os livros\
-    \ 'Mastering Monero' e 'Zero a Monero'.\n"
+  guides_para: "A comunidade Monero produziu diversos recursos e manuais. Na seção\
+    \ 'Guias do Usuário', usuários comuns podem achar informações, dicas e guias úteis\
+    \ sobre as configurações mais comuns. Na seção 'Guias do Desenvolvedor', desenvolvedores\
+    \ podem encontrar tudo o que eles precisam saber para desenvolver um serviço com\
+    \ Monero ou para se comunicarem com a rede. A seção Biblioteca oferece downloads\
+    \ gratuitos de publicações e livros, incluindo os livros 'Mastering Monero' e\
+    \ 'Zero a Monero'.\n"
   contributing: Contribuindo
   joincommunity: Junte-se à Comunidade
+  meetus: Os membros da comunidade Monero estão no mundo todo. Você pode nos achar
+    em diversas plataformas. Junte-se a nós!
+  meetcommunity: Encontre a comunidade!
+  hangouts: Onde nos encontrar
+  morevideos: Procurando por mais vídeos explicativos?
+  heading: Monero Significa Dinheiro
+  about: Sobre Monero
 hangouts:
   intro: A comunidade Monero é bem diversa. Viemos de todos os cantos, mas certamente
     temos alguns lugares onde nos reunimos para conversar. Você encontrará a maioria
     abaixo. Participe com a gente!
   resources: Grupos de Trabalho
   resources_para: No objetivo de ajudar grupos de trabalho orgânicos, o Monero possui
-    várias ferramentas que a comunidade pode usar para se encontrar e planejar projetos
-    independentes. O software Mattermost possui integração com os principais canais
-    de IRC do Monero.
+    várias ferramentas que a comunidade pode usar para se encontrar e planejar projetos,
   irc: Canais no IRC
   irc_para: A comunidade internacional do Monero utiliza diferentes canais no IRC,
     cada um com propósitos diferentes. Alguns para trabalhar e outros somente para
@@ -142,28 +149,54 @@ hangouts:
   mailing_list: Lista de e-mail
   bridges: Estes canais estão interligados a uma série de outras plataformas, permitindo
     a comunidade escolher o seu serviço de chat ou protocolo favoritos.
+  resources_para1: Como um servidor Matrix, um quadro Taiga e a plataforma de tradução
+    Weblate.
 merchants:
-  intro1: Comerciantes de todos os tipos passaram a valorizar a privacidade financeira
-    que o Monero proporciona. Abaixo está uma lista de comerciantes que sabemos que
-    atualmente aceitam Monero como forma de pagamento pelos seus produtos e serviços.
-    Esses comerciantes não são endossados pela comunidade, veja a isenção de responsabilidade
-    ao final da página. Se uma empresa deixou de aceitar Monero, ou se você quer adicionar
-    seu negócio na lista, por favor
-  intro2: abra um ticket no GitHub nos informando
-  intro3: (selecione o modelo 'Comerciante' e preencha todas as seções).
   disclaimer: |
     "Favor notar que os links presentes são listados por conveniência e para fins informativos; eles não constituem endosso da comunidade Monero de quaisquer produtos, serviços ou opiniões das corporações, organizações e indivíduos aqui listados. A comunidade Monero não se responsabiliza pela exatidão, legalidade ou conteúdo destes websites externos. Entre em contato com o serviço em questão para obter respostas sobre seu conteúdo. Seja prudente, você é responsável por fazer sua própria pesquisa. Sempre use o bom senso ao realizar compras online."
-  onion: Endereço onion (requer Tor)
+  useit: Comerciantes que aceitam Monero
+  dirdescr: 'Se você está procurando lugares para gastar seu Monero, os diretórios
+    abaixo têm algumas opções. Por favor lembre-se de fazer sua própria pesquisa antes
+    de confiar-lhes com o seu dinheiro:'
+  descrp2p: A melhor maneira de trocar Monero por outras moedas (ou vice-versa) é
+    usando uma corretora P2P, pois elas permitem a interação direta entre as pessoas,
+    sem a necessidade de confiar em terceiros (exceto quando é oferecido um serviço
+    de custódia). Essas corretoras têm mais privacidade do que as centralizadas e
+    permitem as pessoas estarem no controle completo de suas moedas se as corretoras
+    forem não custodiais, mas elas geralmente têm menos volume que as corretoras "tradicionais".
+    Na seção abaixo, temos uma lista de corretoras P2P que listam Monero.
+  swapsdescr: Uma nova maneira de negociar Monero é através do Atomic Swaps, no qual
+    <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">anunciamos</a>
+    em Agosto de 2021. Atomic Swaps é uma nova maneira completamente descentralizada
+    de negociar Bitcoin <-> Monero (mais informações no post do blog). É uma tecnologia
+    nova, então não temos muitos provedores de negociação ainda, mas você já pode
+    vender XMR por BTC usando esse protocolo em
+  bisqdescr: uma corretora P2P descentralizada com base no Bitcoin e Tor.
+  cardfoss: 'Código-fonte:'
+  descr: Nessa página você encontra lojas e comerciantes que aceitam Monero como forma
+    de pagamento, além de corretoras que fazem troca de Monero por outras moedas.
+  use: Com o passar dos anos, comerciantes de todas as áreas passaram a valorizar
+    a privacidade financeira que o Monero traz, e sua adoção por parte dos comerciantes
+    está continuamente crescendo.
+  cardkyc: '<b>Sem KYC</b> (Conheça Seu Cliente):'
+  depsell: Depende do vendedor
+  locnojs: (mas não há versão JS disponível)
 sponsorships:
   intro: As seguintes empresas apoiam ativamente o Projeto Monero em sua meta de trazer
     privacidade financeira ao mundo. Nós não poderíamos ser mais gratos por suas contribuições.
     Se você gostaria de patrocinar o Projeto Monero e ser listado nesta página, por
     favor nos envie um e-mail para dev@getmonero.org.
-  tari: Tari Labs patrocina o CDN utilizado neste website
+  tari: Tari Labs patrocina o CDN utilizado neste website.
 team:
   core: Core
   community: Comunidade
   mrl: Laboratório de Pesquisa
+  locplatform: 'Plataforma de localização:'
+  start: Como começar
+  contacts: Salas de bate-papo e Contatos
+  chat: 'Bate-papo:'
+  descr: Descrição
+  website: 'Site:'
 downloads:
   intro: Nessa página você encontrará a última versão disponível do software Monero,
     assim como carteiras de hardware, leves e para dispositivos móveis.
@@ -244,7 +277,6 @@ downloads:
     a chave GPG apropriada
   showhash3: no código-fonte
   showhash4: 'Dois guias estão disponíveis para guiá-lo no processo de verificação:'
-  hardware4: integrado Monero em suas carteiras hardware.
   mobilelight1: As carteiras móveis e light listadas abaixo são consideradas seguras
     por membros respeitados da comunidade. Se você quer usar uma carteira que não
     está listada aqui, você pode pedir para a comunidade avaliá-la. Visite nossa página
@@ -617,8 +649,6 @@ mining:
   intro2: O Projeto Monero não endossa nenhuma pool, software ou hardware específicos.
     O conteúdo abaixo é fornecido apenas para fins informativos.
   support: Suporte
-  pools: Pools
-  benchmarking_para1: Veja aqui
   software: Software de Mineração
   software_para: Note que alguns mineradores podem ter taxas do desenvolvedor.
 using: {}
@@ -1136,7 +1166,7 @@ footer:
   reachout: Alcançar
   ccs: Sistema de financiamento coletivo da comunidade
   ml: Lista de e-mail
-  source: Código-fonte
+  source: Código Fonte
   legal: Legal
 error:
   button: Ir para Página Inicial

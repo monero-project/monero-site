@@ -9,16 +9,18 @@ global:
   tags: المواضيع بالوصف
   wikimeta: مونيروبيديا , موسوعه مونيرو المفتوحه للمعرفه
   tagsmeta: جميع مقالات مدونه مونيرو التي تحتوي علي وصف
-  titlemeta: رئيسيه مونيرو , عمله رقميه آمنه وخاصه ولا يمكن تعقبها
+  titlemeta: المونيرو، عملة رقمية آمنة وخصوصية ولا يمكن تعقبها
   terms: الشروط
   privacy: الخصوصيه
   untranslated: هذه الصفحه لم تترجم بعد , إذا أردت المساعده في الترجمه من فضلك تواصل
     معنا
   outdatedVersion: English version
-  outdatedMin: This page has been updated since the translation. You can use this
-    version, but it may be incomplete.
+  outdatedMin: تم تحديث هذه الصفحة منذ الترجمة. يمكنك استخدام هذا الإصدار ، لكنه قد
+    يكون غير مكتمل. الرجاء استخدام
   lang_tag: "@lang_tag_ar"
 
+  outdated: محتوى هذه الصفحة قديم وقد لا يكون صالحًا بعد الآن. اتصل بالمجتمع إذا كنت
+    بحاجة إلى الدعم.
 titles:
   index: الرئيسيه
   whatismonero: ما هو مونيرو (XMR)?
@@ -96,10 +98,6 @@ hangouts:
     kovri-dev:
 
 merchants:
-  intro1: التجار من جميع الأنواع يُقدرون قيمه السريه الماليه التي يوفرها مونيرو. بالأدني
-    قائمه للتجار الذين نعرف أنهم يقبلون مونيرو لمنتجاتهم او خدماتهم. إذا كان هناك
-    شركه لا تقبل مونيرو أدناه أو كنت تود إضافه شركتك للقائمه, من فضلك
-  intro2: إفتح مسأله في GitLab
   intro3:
   disclaimer: |
     "من فضلك لاحظ: هذه الروابط تم توفيرها هنا لسهوله الوصول ولإغراض تعريفيه فقط: ولا تشكل موافقه او دعم من مجتمع مونيرو لأي من المنتجات أو الخدمات أو رأي في الشركه أو المؤسسه المعروضه هنا. مجتمع مونيرو لا يتحمل أي مسئوليه لصحه أو قانونيه أو محتوي هذه المواقع. راسل هذه المواقع للحصول علي إجابات حول ما يحتويه موقعهم. ودائما تذكر مسئوليه المشتري " إحذر كمشتري " أنت مسئول عن القيام بالبحث الخاص بك والحكم قبل الشراء من أي موقع. "
@@ -184,7 +182,6 @@ downloads:
     canonical, with the signature checked against the appropriate GPG key
   showhash2: in the source code
   showhash3: "Two guides are available to guide you through the verification process:"
-  hardware4: integrated Monero into their hardware wallets.
   mobilelight1: The following are mobile or light wallets that are deemed safe by
     respected members of the community. If there is a wallet that is not on here,
     you can request the community check it out. Go to our
@@ -318,8 +315,6 @@ mining:
   intro2: مشروع مونيرو لا يُرجّح حقل (تجمّع للتعدين) أو برامج أو مُعدات معينه والمعلومات
     أدناه لأغراض معرفيه فقط.
   support: الدعم
-  pools: الحقول
-  benchmarking_para1: إنظُر هنا
   software: برامج التعدين
   software_para: لاحظ أن بعض البرامج تحوي رُسوم للمُطور
 

@@ -31,10 +31,10 @@ titles:
   allposts: Tutti i post del blog
   hangouts: Canali di comunicazione
   sponsorships: Sponsorizzazioni
-  merchants: Commercianti & Servizi
+  merchants: Commercianti & Exchange
   about: Riguardo Monero
   roadmap: Piano di Sviluppo
-  researchlab: Monero Research Lab
+  researchlab: Monero Research Lab (MRL)
   moneropedia: Moneropedia
   userguides: Guide Utente
   developerguides: Guide Sviluppatore
@@ -46,6 +46,7 @@ titles:
   library: Libreria
 
   workgroups: Gruppi di lavoro
+  tools: Strumenti
 navigation:
   getstarted: Inizia da qui
   whatis: "Cos'è Monero?"
@@ -53,7 +54,7 @@ navigation:
   contributing: Contribuire
   mining: Mining
   community: Comunità
-  merchants: Commercianti
+  merchants: Commercianti & Exchange
   resources: Risorse
   about: Riguardo Monero
   mrl: Research Lab
@@ -64,8 +65,8 @@ home:
   heading2: Una Valuta Digitale Privata
   downloads: Download
   moneropedia_para: Vorresti dare un'occhiata al significato dei termini e dei concetti
-    usati in Monero? Qui puoi trovare una guida indicizzata ai termini usati nei progetti
-    Kovri e Monero e al loro significato.
+    usati in Monero? Qui puoi trovare una guida alfabetica ai termini usati e al loro
+    significato.
   moneropedia_button: Leggi Moneropedia
   faq: FAQ
   faq_para: Ci sono state poste tante domande durante questi anni, perciò abbiamo
@@ -85,7 +86,7 @@ home:
     per migliorare Monero. Leggi i loro documenti e unisciti a loro!
   contributecommunity_para: Monero non è semplicemente una moneta, è una comunità
     decentralizzata ed esiste solo grazie alle centinaia di volontari che dedicano
-    il loro tempo al progetto. Unitsciti a noi!
+    il loro tempo al progetto. Unisciti a noi!
   contributecommunity: 'Abbiamo Bisogno Delle Tue Capacità: Contribuisci!'
   guides_para: "La community ha messo insieme una grande quantità di risorse e documentazione.\
     \ Gli utenti possono trovare informazioni e guide utili su configurazioni e suggerimenti\
@@ -109,6 +110,13 @@ home:
     wallet. Visita la pagina Downloads e scarica il wallet giusto per te. I wallet
     Monero sono disponibili per diverse piattaforme e contengono tutto il necessario
     per utilizzare subito Monero.
+  meetcommunity: Unisciti alla comunità!
+  hangouts: Canali di comunicazione
+  morevideos: Stai cercando altri video dimostrativi?
+  about: Cos'è Monero
+  meetus: I membri della comunità di Monero sono in tutto il mondo. Ci puoi trovare
+    su diverse piattaforme. Unisciti a noi!
+  heading: Monero È Denaro
 hangouts:
   intro: La comunità Monero è diversa e variegata. Veniamo da ogni parte del mondo,
     ma abbiamo alcuni posti nei quali ci piace riunirci. Qui sotto ne puoi trovare
@@ -143,9 +151,41 @@ hangouts:
     monero-site: Dove è coordinato lo sviluppo di questo sito web.
   bridges: Questi canali sono collegati ad una serie di altre piattaforme, consentendo
     alla comunità di comunicare utilizzando il loro servizio/protocollo di chat preferito.
+  resources_para1: come un server Matrix, una scheda Taiga e la piattaforma di traduzione
+    Weblate.
 merchants:
   disclaimer: |
     "Nota: questi link vengono forniti per comodità e solo a scopo informativo; non costituiscono un'approvazione da parte della comunità Monero di alcun prodotto, servizio o opinione delle società o organizzazioni o individui elencati. La comunità Monero non si assume alcuna responsabilità per l'accuratezza, la legalità o il contenuto di questi siti esterni. Contatta il sito esterno per le risposte alle domande riguardanti il suo contenuto. Come sempre, caveat emptor ('l'acquirente stia attento'); sei totalmente responsabile della tua ricerca. Usa sempre il giudizio quando fai acquisti online."
+  useit: Commercianti che accettano Monero
+  cardfoss: 'Open source:'
+  cardkyc: '<b>Nessun KYC</b> (Know Your Customer):'
+  descrp2p: Il miglior modo di cambiare Monero con altre valute (o viceversa) è usare
+    gli exchange P2P, perché permettono ai trader di interagire direttamente tra di
+    loro, senza il bisogno di enti di terze parti (eccetto forse per fornire servizi
+    di garanzia). Questi exchange sono più privati delle loro controparti centralizzate
+    e permettono alle persone di avere il completo controllo dei loro fondi se non
+    sono custodiali, ma di solito hanno meno volume degli exchange "tradizionali".
+    Nella sezione in basso, offriamo una lista degli exchange P2P che supportano Monero.
+  swapsdescr: Un nuovo eccitante modo di scambiare Monero è attraverso gli scambi
+    atomici, che <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">abbiamo
+    annunciato</a> ad Agosto 2021. Gli scambi atomici sono un modo completamente decentralizzato
+    di scambiare Bitcoin <-> Monero (più info nel blog). Questa tecnologia è nuova
+    di zecca, pertanto non ci sono molti fornitori di scambi al momento, ma puoi già
+    vendere XMR per BTC usando questo protocollo a
+  bisqdescr: Exchange P2P decentralizzato basato su Bitcoin e Tor.
+  cardbtcfiat: (BTC &#8596; fiat possibile)
+  cardonion: 'Indirizzo Onion:'
+  depsell: Dipende dal venditore
+  descr: In questa pagina puoi trovare i negozi e i commercianti che accettano Monero
+    insieme agli exchange che permettono lo scambio di Monero con altre valute.
+  use: Nel corso degli anni, commercianti di ogni tipo hanno realizzato l'importanza
+    della privacy finanziaria garantita da Monero. Infatti, la sua adozione commerciale
+    è in costante crescita.
+  dirdescr: 'Se stai cercando posti per spendere Monero, le cartelle in basso presentano
+    alcune opzioni. Ricorda sempre di applicare la massima cautela prima di affidare
+    loro i tuoi soldi:'
+  visitbisq: Visita Bisq
+  visitlocalmonero: Visita LocalMonero
 sponsorships:
   intro: Le seguenti aziende sostengono il progetto Monero nel suo obiettivo di portare
     la privacy finanziaria nel mondo. Non potremmo essere più grati per i loro contributi.
@@ -157,7 +197,6 @@ sponsorships:
   forknetworking: Fork Networking fornisce un server che viene utilizzato per lo sviluppo.
   symas: Symas sponsorizza il suo CTO Howard Chu (hyc) per il suo lavoro sul codebase
     Monero.
-  globee: GloBee sponsorizza la principale infrastruttura del sito web di Monero.
 team:
   core: Core
   community: Community Workgroup

@@ -7,13 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-24 13:03+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-12-13 16:36+0000\n"
+"Last-Translator: Winslow Hee <i@winsloweric.cn>\n"
+"Language-Team: Chinese (Simplified) <https://translate.getmonero.org/"
+"projects/getmonero-user-guides/importing_blockchain/zh_Hans/>\n"
+"Language: zh-cn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:2
@@ -23,7 +26,7 @@ msgstr ""
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:4
 msgid "### Purpose and Warning"
-msgstr ""
+msgstr "### 目的和警告"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:6
@@ -35,13 +38,15 @@ msgid ""
 "just a single server, and the Monero @daemon will verify each block as it's "
 "received, instead of verifying separately after downloading."
 msgstr ""
+"大多数人不需要这个。如果想要使用门罗币，打开软件它就会用点对点网络自我同步了。一般情况下，这比这篇文章中指导的下载与导入方法要快得多。因为你不只是从一个单"
+"独的服务器下载，而是通过很多中继，并且门罗币@节点进程会在接收到一个区块以后立刻对其进行验证，而不是下载完成以后单独验证。"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:8
 msgid ""
 "This option is mostly useful for development, or possibly if some unusual "
 "problem is preventing you from syncing the normal way."
-msgstr ""
+msgstr "这个选项对于开发者一般很有用，如果你遇见了一些不寻常的让你无法正常同步的问题它也能派上用场。"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:10
@@ -58,7 +63,7 @@ msgstr ""
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:12
 msgid "### Step 1"
-msgstr ""
+msgstr "### 第一步"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:14
@@ -67,89 +72,91 @@ msgid ""
 "https://downloads.getmonero.org/blockchain.raw; you can skip this step if "
 "you are importing the blockchain from another source."
 msgstr ""
+"从https://downloads.getmonero.org/blockchain."
+"raw下载目前的区块数据；如果你在从其他源导入区块链你可以跳过这一步。"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:16
 msgid "### Step 2"
-msgstr ""
+msgstr "### 第二步"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:18
 msgid "Find the path where the Monero software is installed. For example mine is:"
-msgstr ""
+msgstr "找到门罗币程序安装的路径。比如说笔者的是："
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:20
 msgid "`D:\\monero-gui-0.10.3.1`"
-msgstr ""
+msgstr "`D:\\monero-gui-0.10.3.1`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:22
 msgid ""
 "Your path may be different depending on where you decided to install the "
 "Monero software, and what version of the software you have."
-msgstr ""
+msgstr "根据你版本的不同和你安装位置的不同，你的路径可能会不同。"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:24
 msgid "### Step 3"
-msgstr ""
+msgstr "### 第三步"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:26
 msgid "Find the path of your downloaded blockchain for example mine was:"
-msgstr ""
+msgstr "找到你下载好的区块链文件的路径。比如说笔者的是："
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:28
 msgid "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
-msgstr ""
+msgstr "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:30
 msgid ""
 "Yours might be different depending on where you chose to save the downloaded "
 "blockchain."
-msgstr ""
+msgstr "因为你选择的下载位置可能不同，这个路径在你的设备也大概会不同。"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:32
 msgid "### Step 4"
-msgstr ""
+msgstr "### 第四步"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:34
 msgid ""
 "Open a Command Prompt window. You can do this by pressing the Windows key + "
 "R, and then typing in the popup box `CMD` and pressing Enter."
-msgstr ""
+msgstr "打开一个命令提示符（终端）窗口。你可以通过按下Windows徽标键+R字母键，然后在弹出的窗口中输入`CMD`并回车来打开它。"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:36
 msgid "### Step 5"
-msgstr ""
+msgstr "### 第五步"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:38
 msgid ""
 "Now you need to navigate using the CMD window to the path of your Monero "
 "software. You can do this by typing:"
-msgstr ""
+msgstr "现在你需要在CMD窗口定位你的门罗币软件的路径。你可以通过输入这个来做到这一点："
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:40
 msgid "`cd C:\\YOUR\\MONERO\\PATH\\HERE`"
-msgstr ""
+msgstr "`cd C:\\[你的门罗币软件路径]`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:42
 msgid "It should look something like:"
-msgstr ""
+msgstr "它应该看起来像是这样的："
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:44
 msgid "`cd D:\\monero-gui-0.10.3.1`"
-msgstr ""
+msgstr "`cd D:\\monero-gui-0.10.3.1`"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/importing_blockchain.md:46

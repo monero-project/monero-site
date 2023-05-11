@@ -8,23 +8,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-30 14:48+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-18 16:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/securely_purchase/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:4
 msgid "## Step 1: Acquire Monero"
-msgstr ""
+msgstr "## Шаг 1: получение Monero"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:6
@@ -34,6 +39,11 @@ msgid ""
 "money to XMR. If you choose the latter, the most convenient way to do it is "
 "to use an exchange."
 msgstr ""
+"Существует множество способов получить Monero: можно заняться майнингом, "
+"можно принимать оплату за оказание услуг или за товары в Monero, или же "
+"просто обменять другие криптовалюты или фиатные деньги на XMR. Если вы "
+"решите выбрать последний вариант, то удобнее всего будет сделать это, "
+"прибегнув к услугам какой-либо биржи."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:8
@@ -45,6 +55,14 @@ msgid ""
 "be harder to use. There are also services that allow people to meet and "
 "perform a trade without third parties involved."
 msgstr ""
+"Есть много бирж, поддерживающих торговлю Monero. Некоторые из них являются "
+"централизованными, и для них, как правило, характерна высокая ликвидность и "
+"скорость оказания услуг. Но в этом случае перед тем, как начать торговлю, "
+"вам придётся предоставить свою личную информацию (правило KYC (Знай своего "
+"клиента)). Некоторые биржи являются децентрализованными и не требуют никакой "
+"идентификации личности, но обычно объём торгов на них меньше, и ими сложнее "
+"пользоваться. Также существуют сервисы, позволяющие пользователям "
+"встречаться и торговать без посредничества третьих сторон."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:10
@@ -52,6 +70,8 @@ msgid ""
 "An incomplete list of Exchanges that support Monero is on our [Merchants "
 "page]({{ site.baseurl }}/community/merchants/#exchanges)."
 msgstr ""
+"Неполный список бирж, поддерживающих Monero, можно найти на нашей [Странице "
+"предпринимателей]({{ site.baseurl }}/community/merchants/#exchanges)."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:12
@@ -59,6 +79,8 @@ msgid ""
 "## Step 2: Download and create a Paper Wallet on a secure and air-gapped "
 "computer."
 msgstr ""
+"## Шаг 2: скачивание и создание бумажного кошелька на безопасном, "
+"изолированном компьютере."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:14
@@ -68,6 +90,11 @@ msgid ""
 "(Direct link: "
 "[https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip))."
 msgstr ""
+"Генератор @бумажного-кошелька можно скачать на сайте [moneroaddress."
+"org](https://moneroaddress.org), после чего его следует скопировать на USB-"
+"накопитель (прямая ссылка: [https://github.com/moneromooo-monero/"
+"monero-wallet-generator/archive/master.zip](https://github.com/"
+"moneromooo-monero/monero-wallet-generator/archive/master.zip))."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:16
@@ -76,11 +103,15 @@ msgid ""
 "into a web browser on an air-gapped (@airgap) computer that hasn't been used "
 "before, or has had a clean installation of the operative system."
 msgstr ""
+"Генератор бумажного кошелька (monero-wallet-generator.html) необходимо "
+"разархивировать и открыть в браузере на изолированном компьютере (@airgap), "
+"который не использовался ранее, или же на котором установлена исключительно "
+"операционная система."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:18
 msgid "Your paper wallet will have four important items:"
-msgstr ""
+msgstr "У бумажного кошелька есть четыре важных элемента:"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:20
@@ -88,6 +119,9 @@ msgid ""
 "- Monero Public @Address: The public address is used to receive funds to the "
 "@wallet. You give this to anyone who will be sending funds to your wallet."
 msgstr ""
+"- @Публичный-адрес Monero. Публичный адрес используется для получения "
+"средств в @кошелёк. Этот адрес можно давать любому, кто будет отправлять "
+"средства на ваш кошелёк."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:22
@@ -96,6 +130,9 @@ msgid ""
 "wallet that is easily recognizable to humans.  This is all you need to "
 "restore your wallet at a later date."
 msgstr ""
+"- @Мнемоническая-фраза Monero. Мнемоническая фраза является понятным для "
+"человека способом сохранения всего кошелька.  Она - это всё, что вам "
+"понадобится, чтобы восстановить кошелёк впоследствии."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:24
@@ -103,6 +140,8 @@ msgid ""
 "- Monero @Spend-Key: The private spend key is used to send funds from the "
 "wallet."
 msgstr ""
+"- @Ключ-траты Monero. Приватный ключ траты используется для отправки средств "
+"из кошелька."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:26
@@ -112,6 +151,11 @@ msgid ""
 "incoming transactions live on the blockchain as they are sent to a cold "
 "storage wallet."
 msgstr ""
+"- @Ключ-просмотра Monero. Приватный ключ просмотра используется для "
+"просмотра транзакций, поступающих на ваш кошелёк. Как правило, он "
+"используется для создания кошелька, предназначенного исключительно для "
+"просмотра и позволяющего просматривать поступающие в блокчейн транзакции «в "
+"живую» по мере их отправки в холодный кошелёк."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:28
@@ -125,6 +169,17 @@ msgid ""
 "Sending someone a picture of the wallet is the same as giving away all of "
 "your funds."
 msgstr ""
+"На этом этапе у вас есть множество опций. Вы можете распечатать кошелёк на "
+"бумаге, сохранить его в формате PDF или в текстовом формате на USB-"
+"накопителе, записать его на CD/DVD и так далее. Наиболее вероятно, вы "
+"захотите создать, по крайней мере, две или три копии, которые будут "
+"храниться по-отдельности в различных безопасных местах. Если вы решите "
+"хранить его в цифровом формате, следует зашифровать всё, используя надёжный "
+"пароль.  Если вы сделаете это на бумаге, не показывайте кошелёк кому-либо "
+"ещё, способному запомнить ваш ключ, состоящий из 25 слов, или просто "
+"сфотографировать кошелёк без вашего разрешения.  Отправить кому-то снимок "
+"вашего кошелька будет означать обеспечить получателю полный доступ к вашим "
+"средствам."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:30
@@ -134,6 +189,11 @@ msgid ""
 "wallet if you saved it to a disk, or make sure your printer does not save a "
 "copy in memory."
 msgstr ""
+"Какой бы из способов вы ни выбрали, обязательно убедитесь в том, что на "
+"устройстве, которые вы использовали не осталось ни одной копии кошелька "
+"Monero. Возможно, вам придётся удалить кошелёк Monero, если вы сохранили его "
+"на диск, или же убедиться в том, что принтер не сохранил копию в своей "
+"памяти."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:32
@@ -142,11 +202,14 @@ msgid ""
 "*If you lose access to your Monero paper wallet the Monero will not be "
 "available to you or anyone else, ever. You wont be able to recover them!*\n"
 msgstr ""
+"*Если вы потеряете доступ к своему бумажному кошельку, то ни вы, ни кто-либо "
+"другой уже никогда не сможет получить ваши monero. Вы никак не сможете "
+"восстановить их!*\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:34
 msgid "#### Side Note"
-msgstr ""
+msgstr "#### Заметка на полях"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:37
@@ -156,11 +219,17 @@ msgid ""
 "\"Encrypt/Decrypt Mnemonic Seed\" and make sure you use \"CN Add\" with a "
 "decent password. Thanks manicminer5."
 msgstr ""
+"Существует опция шифрования мнемонической фразы XMR: https://xmr.llcoins.net/"
+" . Скачайте страницу html и скопируйте её на свой изолированный компьютер. "
+"Зайдите в раздел Encrypt/Decrypt Mnemonic Seed (Зашифровать/расшифровать "
+"мнемоническую фразу) и убедитесь в том, что вы можете воспользоваться опцией "
+"CN Add (Добавить CN), задав надёжный пароль. Благодарим за эту возможность "
+"manicminer5."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:39
 msgid "## Step 3: Send your Moneroj to the paper wallet"
-msgstr ""
+msgstr "## Шаг 3. Перевод ваших Monero в бумажный кошелёк"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:41
@@ -171,11 +240,16 @@ msgid ""
 "Remember that if you send the coins to a wrong address, there is no way to "
 "have them back!"
 msgstr ""
+"Теперь, когда у вас есть всё, что нужно, вы готовы перевести ваши XMR в свой "
+"бумажный кошелёк. Просто отправьте монеты на адрес кошелька, который вы "
+"записали ранее. Убедитесь в правильности адреса, даже если вы скопировали и "
+"вставили его! Следует помнить о том, что если вы отправите монеты на "
+"неправильный адрес, вы уже не сможете вернуть их обратно!"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:43
 msgid "#### Notes and How to Verify Funds"
-msgstr ""
+msgstr "#### Примечания и способ проверки средств"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:45
@@ -185,6 +259,10 @@ msgid ""
 "like you might with Bitcoin. This is good for privacy, but bad for "
 "convenience."
 msgstr ""
+"Поскольку блокчейн Monero является анонимным и неотслеживаемым, вы не "
+"сможете найти свой публичный адрес Monero и убедиться в том, что вы "
+"действительно получили средства, как это можно было бы сделать в случае с "
+"Bitcoin. Это хорошо с точки зрения анонимности, но неудобно."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:47
@@ -194,6 +272,11 @@ msgid ""
 "view-only wallet see the entry: [View Only "
 "Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)"
 msgstr ""
+"Чтобы безопасным образом убедиться в том, что средства пришли на ваш "
+"кошелёк, вам понадобится создать специальный кошелёк для просмотра. Вот "
+"здесь нам и понадобится ключ просмотра. Как создать такой кошелёк написано в "
+"разделе [Кошельки для просмотра]({{site.baseurl}}/resources/user-guides/"
+"view_only.html)"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/securely_purchase.md:48
@@ -204,3 +287,9 @@ msgid ""
 "finished you will have to securely erase the wallet or connect it to the "
 "internet and it becomes a Hot Wallet."
 msgstr ""
+"Чтобы убедиться в том, что средства *по-прежнему* находятся в вашем кошельке "
+"и не были потрачены, необходимо, воспользовавшись вашей мнемонической "
+"фразой, создать на вашем изолированном компьютере холодный кошелёк (со всеми "
+"вашими средствами) с актуальной версией блокчейна Monero. После этого вам "
+"будет необходимо удалить этот кошелёк, или же вы можете подключить "
+"устройство к интернету, после чего кошелёк станет горячим."

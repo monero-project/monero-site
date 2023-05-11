@@ -8,24 +8,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-07-28 11:37+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-22 01:34+0000\n"
+"Last-Translator: Fabio Risso <fabiorissok@gmail.com>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/mine-to-pool/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:3
 #, no-wrap
 msgid "Wallet"
-msgstr ""
+msgstr "Monedero"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:9
@@ -36,7 +40,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:10
 #, no-wrap
 msgid "Profitability"
-msgstr ""
+msgstr "Rentabilidad"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:18
@@ -58,7 +62,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:23
 #, no-wrap
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:28
@@ -90,12 +94,15 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:42
 msgid "Scroll down to 'Assets' until you see the correct version for your system. Download this file, extract the archive somewhere memorable, like your desktop."
 msgstr ""
+"Baja hasta 'Assets' hasta que veas la versión correcta para tu sistema. "
+"Descarga este archivo y extráelo en algún lugar fácil de recordar, como tu "
+"escritorio."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
 #, no-wrap
 msgid "Other distributions and operative systems"
-msgstr ""
+msgstr "Otras distribuciones y sistemas operativos"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:46
@@ -106,12 +113,14 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:47
 #, no-wrap
 msgid "Selecting a pool"
-msgstr ""
+msgstr "Seleccionando una pool"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:51
 msgid "There are lots of pools to choose from. You can find a list at [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
 msgstr ""
+"Hay muchas pool de las cuales elegir. Puedes encontrar una lista en "
+"[miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:56
@@ -194,7 +203,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:95
 #, no-wrap
 msgid "Allowing large pages on Windows"
-msgstr ""
+msgstr "Permitiendo páginas grandes en Windows"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:98
@@ -224,7 +233,7 @@ msgstr ""
 #. type: Bullet: '5. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
 msgid "The policies will be displayed in the details pane."
-msgstr ""
+msgstr "Las políticas aparecerán en el panel de detalles."
 
 #. type: Bullet: '6. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
@@ -244,18 +253,18 @@ msgstr ""
 #. type: Bullet: '9. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
 msgid "Reboot for change to take effect."
-msgstr ""
+msgstr "Reinicia para que el cambio surta efecto."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:110
 msgid "You may also need to launch the miner as administrator."
-msgstr ""
+msgstr "Puede que tengas que iniciar el minador como administrador."
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:111
 #, no-wrap
 msgid "Allowing large pages on Linux"
-msgstr ""
+msgstr "Permitiendo páginas grandes en Linux"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:115
@@ -269,6 +278,8 @@ msgid ""
 "\tsudo sysctl -w vm.nr_hugepages=1168\n"
 "\tsudo ./xmrig\n"
 msgstr ""
+"\tsudo sysctl -w vm.nr_hugepages=1168\n"
+"\tsudo ./xmrig\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:121
@@ -279,7 +290,7 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:122
 #, no-wrap
 msgid "Allowing large pages on macOS"
-msgstr ""
+msgstr "Permitiendo páginas grandes en macOS"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:125
@@ -306,6 +317,8 @@ msgstr ""
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:135
 msgid "Additionally, any blocks found must mature before they can be paid out. This takes 60 blocks (approx. 2 hours)."
 msgstr ""
+"Adicionalmente, todos los bloques encontrados deben madurar antes de que "
+"puedan ser pagados. Esto toma 60 bloques (aprox. 2 horas)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:136

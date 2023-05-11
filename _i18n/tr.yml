@@ -16,10 +16,12 @@ global:
   untranslated: Bu sayfa henüz çevrilmedi. Çevrilmesine yardım etmek isterseniz şunu
     görüntüleyin
   outdatedVersion: İngilizce sürüm
-  outdatedMin: Bu sayfa çeviriden sonra güncellendi. Bu sürümü kullanabilirsiniz,
-    ancak eksik olabilir.
+  outdatedMin: Bu sayfa çeviriden sonra güncellenmiştir. Bu sürümü kullanabilirsiniz
+    ancak eksik olabilir. Buna göz atın
   lang_tag: "@lang_tag_tr"
 
+  outdated: Bu sayfanın içeriği eskimiş bu yüzden bilgiler geçerliliğini yitirmiş
+    olabilir. Yardıma ihtiyacınız varsa toplulukla iletişime geçin.
 titles:
   index: Ana Sayfa
   whatismonero: Monero (XMR) Nedir?
@@ -31,7 +33,7 @@ titles:
   allposts: Tüm Blog Gönderileri
   hangouts: Buluşmalar
   sponsorships: Sponsorluklar
-  merchants: Satıcılar & Hizmetler
+  merchants: Borsalar & Satıcılar
   about: Monero Hakkında
   roadmap: Yol Haritası
   researchlab: Monero Araştırma Laboratuvarı (MRL)
@@ -46,6 +48,7 @@ titles:
   library: Kütüphane
 
   workgroups: Çalışma Grupları
+  tools: Araçlar
 navigation:
   getstarted: Başlangıç
   whatis: Monero Nedir?
@@ -62,11 +65,11 @@ index:
   page_title: "Monero - güvenli, gizli, takip edilemez"
 
 home:
-  heading2: Gizli Dijital Para
+  heading2: Mali durumunuzu gizli ve güvende tutan özel, merkezisizleştirilmiş kripto
+    para birimidir.
   downloads: İndirmeler
-  moneropedia_para: Monero'da kullanılan terimlerin ve kavramların anlamlarına bakmak
-    ister misiniz? Burada hem Monero hem de Kovri projelerinden terimlerin ve onların
-    anlamlarının alfabetik bir rehberini bulacaksınız.
+  moneropedia_para: Monero'da kullanılan terimler ve kavramların anlamlarına bakmak
+    ister misiniz? Burada terimler ve anlamları için alfabetik bir sözlük bulacaksınız.
   moneropedia_button: Moneropedi'yi Oku
   faq: SSS
   faq_para: Yıllar boyunca pek çok soruyla karşılaştık ve ayrıntılı ve çeşitlendirilmiş
@@ -79,6 +82,40 @@ home:
   guides: Rehberler ve Kaynaklar
   joincommunity: Topluluğa Katıl
   exchanges: Borsalar
+  choosewallet_para: Monero'yu kullanmak için ihtiyacın olan ilk şey bir cüzdan. İndirilenler
+    sayfasını ziyaret edin ve sizin için uygun olan bir cüzdanı edinin. Monero cüzdanları
+    çeşitli platformlarda mevcuttur ve Monero'yu anında kullanmaya başlayabilmeniz
+    için her şeye sahiptirler.
+  getcoins_para: Cüzdanı indirdikten sonra Monero'ya sahip olmanız gerekecek. Sonradan
+    onları harcayabilmek için koin elde etmenin birkaç farklı yolu vardır. Bunlardan
+    bazıları madencilik veya Monero karşılığında çalışmaktır. Ancak, en kolayı bir
+    borsa kullanarak paranızı XMR'ye dönüştürmektir. Merkezi veya merkezi olmayan
+    çoğu borsa Monero'yu (XMR) listeler.
+  useit_para: Monero bir para birimidir ve başka para birimleri, servisler ve ürünlerle
+    gizlilik korunarak ve çok düşük ücretlerle takas edilebilir. Çoğu kuruluş ödemeler
+    için XMR'yi memnuniyetle kabul eder; "Satıcılar" sayfasına bir göz atın.
+  getcoins: Koin Elde Edin
+  useit: 'O bir para birimidir: Kullanın!'
+  answers: Sorularınıza Cevaplar Bulun
+  guides_para: "Topluluk, büyük miktarda kaynak ve dokümantasyonu bir araya getirdi.\
+    \ Kullanıcılar, genel yapılandırmalar hakkında yararlı bilgiler ve kılavuzlar\
+    \ bulabilir. Geliştiriciler, 'Geliştirici Rehberleri'nde Monero'nun üzerine kurulu\
+    \ bir hizmet oluşturmak için ihtiyaç duydukları her şeyi bulabilir veya sadece\
+    \ ağ ile iletişim kurabilirler. Kütüphane, 'Mastering Monero' ve 'Zero to Monero'\
+    \ kitapları dahil olmak üzere ücretsiz olarak indirilebilen yayınlar ve kitaplar\
+    \ sunar.\n"
+  contributecommunity: 'Yeteneklerinize ihtiyacımız var: Katkıda bulunun!'
+  contributecommunity_para: Monero sadece bir para birimi değildir, merkezi olmayan
+    bir topluluktur ve yalnızca zamanlarını projeye adayan yüzlerce gönüllü sayesinde
+    var. Bize katılın!
+  researchlab_para: MRL (Monero Araştırma Laboratuvarı) Monero'nun çok önemli bir
+    parçasıdır. Dünyanın her yerinden araştırmacılar ve kriptograflar, Monero'yu iyileştirmenin
+    yeni yollarını bulmak için bir araya geliyor. Onların araştırmalarını okuyun ve
+    onlara katılın!
+  contributing: Katkıda Bulun
+  visitmrl: MRL'yi ziyaret edin
+  heading: Monero Para Demektir
+  meetcommunity: Toplulukla tanışın!
 hangouts:
   intro: Monero topluluğu çeşitli ve farklı bireylerden oluşur. Dünya'nın her yerinden
     geliyor olsak da birlikte takılmaktan hoşlandığımız bazı yerler de yok değildir.
@@ -107,8 +144,8 @@ hangouts:
     monero-hardware: Monero'nuzu güvende tutmak için donanım cüzdanları yapımı.
     monero-site:
   mailing_list: E-Posta Listesi
+  subscribe: Abone Ol
 merchants:
-  intro2: bir GitLab sorunu açın ve bize haber verin
   intro3:
   disclaimer: |
     "Lütfen dikkate alınız: Bu bağlantılar kolaylık olması ve sadece bilgi verme amaçlı olarak sağlanmaktadır; listelenen şirketlerin veya organizasyonların veya bireylerin herhangi bir ürününün, hizmetinin veya düşüncesinin Monero topluluğunca kabulünü oluşturmazlar. Monero topluluğu bu harici sitelerin doğruluğu, yasallığı veya içeriği üzerinde hiçbir sorumluluk sahibi değildir. İçerikleri hakkındaki sorularınıza cevap için harici sayfaya ulaşın. Her zamanki gibi, caveat emptor ('alıcı sakınsın'); kendi araştırmanızı yapmaktan siz sorumlusunuz. Çevrimiçi satın alım yaparken her zaman sağduyu kullanın."
@@ -809,3 +846,4 @@ footer:
   ml: E-Posta Listesi
   ccs: Topluluk Kitle Fonlaması Sistemi
   reachout: Ulaşın
+  feed: RSS Akışı

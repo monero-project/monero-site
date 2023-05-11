@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-03-28 10:34+0200\n"
-"PO-Revision-Date: 2021-08-08 18:31+0000\n"
+"PO-Revision-Date: 2021-12-13 15:33+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
 "Language-Team: Russian <https://translate.getmonero.org/projects/"
 "getmonero-user-guides/offline_backup/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.8\n"
 
 #
 #. type: Plain text
@@ -71,7 +71,7 @@ msgid ""
 msgstr ""
 "- Используйте любой доступный компьютер. Подойдет даже ваша обычная рабочая "
 "машина. Если вы склонны к паранойе, возможно, вам будет лучше использовать "
-"более старый компьютер без Wi-Fi или Bluetooth."
+"более старый компьютер без Wi-Fi или Bluetooth"
 
 #
 #. type: Plain text
@@ -85,7 +85,7 @@ msgstr ""
 "- Создайте загрузочный диск Linux или Windows и убедитесь в наличии на нём "
 "или на втором диске двоичных файлов Monero (в случае с Linux также следует "
 "убедиться в наличии загруженных копий необходимых зависимостей, таких как "
-"libboost1.55 или miniupnpc, например)."
+"libboost1.55 или miniupnpc, например)"
 
 #
 #. type: Plain text
@@ -97,7 +97,7 @@ msgid ""
 msgstr ""
 "- Следует отсоединить от компьютера сетевые и/или интернет-кабели, физически "
 "снять сетевую Wi-Fi карту или, если это возможно, отключить Wi-Fi/Bluetooth "
-"на ноутбуке."
+"на ноутбуке"
 
 #
 #. type: Plain text
@@ -105,7 +105,7 @@ msgstr ""
 msgid "- Boot into your bootable OS, install the dependencies if necessary"
 msgstr ""
 "- Запустить ОС с загрузочного диска и, при необходимости, установить "
-"зависимости."
+"зависимости"
 
 #
 #. type: Plain text
@@ -115,7 +115,7 @@ msgid ""
 "bootable ISOs normally have a Z: drive or something)"
 msgstr ""
 "- Скопировать двоичные файлы Monero на RAM диск (для Linux в /dev/shm; "
-"Windows обычно создаёт ISO как «диск Z:» или как-то так)."
+"Windows обычно создаёт ISO как «диск Z:» или как-то так)"
 
 #
 #. type: Plain text
@@ -125,13 +125,13 @@ msgid ""
 "monero-wallet-cli to create a new Monero @account"
 msgstr ""
 "- Не запускайте демон-программу Monero. Вместо этого при помощи командной "
-"строки используйте monero-wallet-cli для создания нового @аккаунта Monero."
+"строки используйте monero-wallet-cli для создания нового @аккаунта Monero"
 
 #
 #. type: Plain text
 #: _i18n/en/resources/user-guides/Offline_Backup.md:24
 msgid "- When prompted for a name, give it any name, it doesn't really matter"
-msgstr "- При запросе имени — введите любое, оно не имеет значения."
+msgstr "- При запросе имени — введите любое, оно не имеет значения"
 
 #
 #. type: Plain text
@@ -141,7 +141,7 @@ msgid ""
 "characters. Don't worry that you don't know the password, just make it LONG"
 msgstr ""
 "- При запросе пароля введите примерно 50–100 случайных символов. Не следует "
-"беспокоиться, что вы не знаете пароль, просто сделайте его ДЛИННЫМ."
+"беспокоиться, что вы не знаете пароль, просто сделайте его ДЛИННЫМ"
 
 #
 #. type: Plain text
@@ -152,8 +152,8 @@ msgid ""
 "lost forever"
 msgstr ""
 "- **КРИТИЧЕСКИ ВАЖНЫЙ ЭТАП**: запишите (на бумаге) свою @мнемоническую-фразу "
-"из 25 слов.  **ВНИМАНИЕ!**: Если вы не запишите эту информацию, ваши "
-"средства могут оказаться утрачены навсегда."
+"из 25 слов. **ВНИМАНИЕ!**: Если вы не запишите эту информацию, ваши средства "
+"могут оказаться утрачены навсегда"
 
 #
 #. type: Plain text
@@ -162,8 +162,8 @@ msgid ""
 "- Write down (on your phone, on paper, on another computer, wherever you "
 "want) your address and view key"
 msgstr ""
-"- Запишите (в телефон, на бумаге, на другом компьютере, как вам будет "
-"угодно) ваш адрес и ключ просмотра."
+"- Запишите (в телефон, на бумаге, на другом компьютере, как вам будет угодно)"
+" ваш адрес и ключ просмотра"
 
 #
 #. type: Plain text
@@ -173,7 +173,7 @@ msgid ""
 "physically off for a few hours"
 msgstr ""
 "- Выключите компьютер, снимите батарею (если таковая имеется) и оставьте его "
-"в таком физически отключённом состоянии на несколько часов."
+"в таком физически отключённом состоянии на несколько часов"
 
 #
 #. type: Plain text

@@ -7,13 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-07-28 11:37+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-27 09:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-user-guides/mine-to-pool/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:2
@@ -22,22 +26,24 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:3
-#, fuzzy, no-wrap
-#| msgid "## Wallet"
+#, no-wrap
 msgid "Wallet"
-msgstr "## Кошелёк"
+msgstr "Кошелёк"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:9
 msgid "Before starting, you already need to have a wallet configured and working. The pool needs to know your wallet address to be able to send payments there. See the [Accepting Monero guide]({{ site.baseurl }}/get-started/accepting) for more information."
-msgstr "Перед тем как начать, вам необходимо иметь уже сконфигурированный и готовый к работе кошелёк. Пулу нужно знать адрес вашего кошелька, чтобы он смог направлять на него платежи. Дополнительную информацию можно найти в [Руководстве по приёму Monero]({{ site.baseurl}}/get-started/accepting)"
+msgstr ""
+"Перед тем как начать, вам необходимо иметь уже сконфигурированный и готовый "
+"к работе кошелёк. Пулу нужно знать адрес вашего кошелька, чтобы он смог "
+"направлять на него платежи. Дополнительную информацию можно найти в ["
+"Руководстве по приёму Monero]({{ site.baseurl }}/get-started/accepting)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:10
-#, fuzzy, no-wrap
-#| msgid "## Profitability"
+#, no-wrap
 msgid "Profitability"
-msgstr "## Прибыльность"
+msgstr "Прибыльность"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:18
@@ -46,10 +52,9 @@ msgstr "Перед тем как начать майнинг, вы должны 
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:19
-#, fuzzy, no-wrap
-#| msgid "## Download Miner"
+#, no-wrap
 msgid "Download Miner"
-msgstr "## Скачивание майнера"
+msgstr "Скачивание майнера"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:22
@@ -58,10 +63,9 @@ msgstr "Первым шагом является скачивание на ва�
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:23
-#, fuzzy, no-wrap
-#| msgid "### Windows"
+#, no-wrap
 msgid "Windows"
-msgstr "### Windows"
+msgstr "Windows"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:28
@@ -75,17 +79,17 @@ msgstr "Там вы сможете найти архив `xmrig-VERSION-msvc-win
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:32
-#, fuzzy, no-wrap
-#| msgid "### Ubuntu Linux"
+#, no-wrap
 msgid "Ubuntu Linux"
-msgstr "### Ubuntu Linux"
+msgstr "Ubuntu Linux"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:36
-#, fuzzy
-#| msgid "The XMRig developer provides pre-built binaries for Ubuntu Xenial Xerus (16.04). They may work on other Ubuntu versions, and on other distributions, but this is not guaranteed."
 msgid "The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04) and Focal (20.04). They may work on other Ubuntu versions, and on other distributions, but this is not guaranteed."
-msgstr "Разработчик XMRig предоставляет готовые двоичные файлы для Ubuntu Xenial Xerus (16.04). Они могут работать и с другими версиями Ubuntu, и с другими дистрибутивами, но это не гарантируется."
+msgstr ""
+"Разработчик XMRig предоставляет готовые двоичные файлы для Ubuntu Bionic (18."
+"04). Они могут работать и с другими версиями Ubuntu, и с другими "
+"дистрибутивами, но это не гарантируется."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:39
@@ -94,28 +98,31 @@ msgstr "Эти двоичные файлы также можно скачать 
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:42
-#, fuzzy
-#| msgid "Scroll down until you see `xmrig-VERSION-xenial-x64.tar.gz`. Download this file, extract the archive somewhere memorable, like your desktop."
 msgid "Scroll down to 'Assets' until you see the correct version for your system. Download this file, extract the archive somewhere memorable, like your desktop."
-msgstr "На ней выложен соответствующий архив `xmrig-VERSION-xenial-x64.tar.gz`. Скачайте этот файл и извлеките его содержимое в какое-нибудь место, например, на рабочий стол."
+msgstr ""
+"Прокрутите вниз до 'Assets', пока не увидите версию, подходящую для вашей "
+"операционной системы. Скачайте этот файл и извлеките его содержимое в какое-"
+"нибудь место, например, на рабочий стол."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
 #, no-wrap
 msgid "Other distributions and operative systems"
-msgstr ""
+msgstr "Другие дистрибутивы и операционные системы"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:46
 msgid "Binaries are available for multiple distributions and operative systems, but you can also build the miner by yourself. Take a loot at [XMrig's docs](https://xmrig.com/docs/miner)"
 msgstr ""
+"Бинарные файлы доступны для нескольких дистрибутивов и операционных систем, "
+"но вы также можете собрать майнер самостоятельно. Воспользуйтесь ["
+"документацией на веб-сайте XMrig](https://xmrig.com/docs/miner)"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:47
-#, fuzzy, no-wrap
-#| msgid "## Selecting a pool"
+#, no-wrap
 msgid "Selecting a pool"
-msgstr "## Выбор пула"
+msgstr "Выбор пула"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:51
@@ -129,22 +136,22 @@ msgstr "Выбор большего пула означает, что вы бу�
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:57
-#, fuzzy, no-wrap
-#| msgid "## Configuring the miner"
+#, no-wrap
 msgid "Configuring the miner"
-msgstr "## Конфигурирование майнера"
+msgstr "Конфигурирование майнера"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:60
 msgid "See the [official docs](https://xmrig.com/docs/miner/config), for instructions and suggestions."
 msgstr ""
+"Для получения дополнительных инструкций посетите раздел [официальной "
+"документации](https://xmrig.com/docs/miner/config)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:61
-#, fuzzy, no-wrap
-#| msgid "## Starting the miner"
+#, no-wrap
 msgid "Starting the miner"
-msgstr "## Запуск майнера"
+msgstr "Запуск майнера"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:66
@@ -158,17 +165,15 @@ msgstr "Если вы видите зелёные сообщения о том, 
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:70
-#, fuzzy, no-wrap
-#| msgid "## Troubleshooting"
+#, no-wrap
 msgid "Troubleshooting"
-msgstr "## Диагностика и устранение неисправностей"
+msgstr "Диагностика и устранение неисправностей"
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:72
-#, fuzzy, no-wrap
-#| msgid "### Anti-virus keeps removing XMRig"
+#, no-wrap
 msgid "Anti-virus keeps removing XMRig"
-msgstr "### Антивирус удаляет XMRig"
+msgstr "Антивирус удаляет XMRig"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:78
@@ -177,22 +182,25 @@ msgstr "Некоторые антивирусы помечают XMRig как в
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:79
-#, fuzzy, no-wrap
-#| msgid "### Cannot read/set MSR"
+#, no-wrap
 msgid "Cannot read/set MSR"
-msgstr "### Не удаётся прочитать/настроить MSR"
+msgstr "Не удаётся прочитать/настроить MSR"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:86
 msgid "On some CPUs, XMRig tries to increase performance by disabling certain features like your CPU's instruction prefetcher. These operations require root/administrator, so try right clicking xmrig.exe and running it as administrator, or running `sudo ./xmrig` on other systems."
-msgstr "В случае с некоторыми CPU XMRig пытается повысить производительность, отключая определённые функции, такие как буфер предварительной выборки команд CPU. Для этих операций требуются права администратора, поэтому попробуйте правой кнопкой мыши кликнуть по файлу xmrig.exe и запустить его от имени администратора или же запустить `sudo ./xmrig` в других системах.  systems."
+msgstr ""
+"В случае с некоторыми CPU XMRig пытается повысить производительность, "
+"отключая определённые функции, такие как буфер предварительной выборки "
+"команд CPU. Для этих операций требуются права администратора, поэтому "
+"попробуйте правой кнопкой мыши кликнуть по файлу xmrig.exe и запустить его "
+"от имени администратора или же запустить `sudo ./xmrig` в других системах."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:87
-#, fuzzy, no-wrap
-#| msgid "### Algo not known"
+#, no-wrap
 msgid "Algo not known"
-msgstr "### Алгоритм не известен"
+msgstr "Алгоритм не известен"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:92
@@ -201,17 +209,15 @@ msgstr "Следует найти строку в config.json, в которой
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:93
-#, fuzzy, no-wrap
-#| msgid "### Huge Pages 0%"
+#, no-wrap
 msgid "Huge Pages 0%"
-msgstr "### Большие страницы не загружаются (0%)"
+msgstr "Большие страницы не загружаются (0%)"
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:95
-#, fuzzy, no-wrap
-#| msgid "#### Allowing large pages on Windows"
+#, no-wrap
 msgid "Allowing large pages on Windows"
-msgstr "#### Как разрешить загрузку больших страниц в Windows"
+msgstr "Как разрешить загрузку больших страниц в Windows"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:98
@@ -250,15 +256,19 @@ msgstr "В этом окошке двойным кликом выберите Lo
 
 #. type: Bullet: '7. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
-#, fuzzy
-#| msgid "In the Local Security Setting â Lock pages in memory dialog box, click Add User or Group."
 msgid "In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group."
-msgstr "В диалоговом окне Local Security Setting — Lock pages in memory (Параметр локальной безопасности — Блокировка страниц в памяти) выберите Add User or Group (Добавить пользователя или группу)."
+msgstr ""
+"В диалоговом окне Local Security Setting - Lock pages in memory (Параметр "
+"локальной безопасности — Блокировка страниц в памяти) выберите Add User or "
+"Group (Добавить пользователя или группу)."
 
 #. type: Bullet: '8. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
 msgid "In the Select Users, Service Accounts, or Groups dialog box, add an account that you will run the miner on"
-msgstr "В диалоговом окне Select Users, Service Accounts, or Groups (Выбор: «Пользователи» или «Группы») добавить пользователя, под которым вы будете запускать майнер."
+msgstr ""
+"В диалоговом окне Select Users, Service Accounts, or Groups (Выбор: "
+"«Пользователи» или «Группы») добавить пользователя, под которым вы будете "
+"запускать майнер"
 
 #. type: Bullet: '9. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
@@ -272,10 +282,9 @@ msgstr "Также может понадобиться запустить май
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:111
-#, fuzzy, no-wrap
-#| msgid "#### Allowing large pages on Linux"
+#, no-wrap
 msgid "Allowing large pages on Linux"
-msgstr "#### Как разрешить загрузку больших страниц в Linux"
+msgstr "Как разрешить загрузку больших страниц в Linux"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:115
@@ -299,10 +308,9 @@ msgstr "Возможно, придётся увеличить значение 1
 
 #. type: Title ####
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:122
-#, fuzzy, no-wrap
-#| msgid "#### Allowing large pages on macOS"
+#, no-wrap
 msgid "Allowing large pages on macOS"
-msgstr "#### Как разрешить загрузку больших страниц в macOS"
+msgstr "Как разрешить загрузку больших страниц в macOS"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:125
@@ -311,21 +319,26 @@ msgstr "Большие страницы не поддерживаются macOS.
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:126
-#, fuzzy, no-wrap
-#| msgid "### Balance Not Increasing"
+#, no-wrap
 msgid "Balance Not Increasing"
-msgstr "### Баланс не увеличивается"
+msgstr "Баланс не увеличивается"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:132
-#, fuzzy, no-wrap
-#| msgid "Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools, which means that you only get paid when a miner on the pool finds a block. If the pool you are mining on is small, this can take a few days to weeks."
+#, no-wrap
 msgid ""
 "Most pools are <abbr title=\"Pay Per Last N Shares\">PPLNS</abbr> pools,\n"
 "which means that you only get paid when a miner on the pool finds a\n"
 "block. If the pool you are mining on is small, this can take a few\n"
 "days to weeks.\n"
-msgstr "Большинство пулов является <abbr title=\"Оплата за N последних шар\">пулами PPLNS</abbr>, а это означает, что вам платят только тогда, когда майнер, находящийся в пуле, находит блок. Если пул, в котором вы занимаетесь майнингом, небольшой, то это может занять от нескольких дней до нескольких недель."
+msgstr ""
+"Большинство пулов является <abbr title=\"Оплата за N последних шар\">PPLNS</"
+"abbr> пулами,\n"
+"а это означает, что вам платят только тогда, когда майнер, находящийся в "
+"пуле, находит\n"
+"блок. Если пул, в котором вы занимаетесь майнингом, небольшой, то это может "
+"занять от\n"
+"нескольких дней до нескольких недель.\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:135
@@ -334,24 +347,24 @@ msgstr "Кроме того, все вычисленные блоки должн
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:136
-#, fuzzy, no-wrap
-#| msgid "## Getting Help"
+#, no-wrap
 msgid "Getting Help"
-msgstr "## Помощь"
+msgstr "Помощь"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:142
-#, fuzzy
-#| msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on freenode](https://webchat.freenode.net/?channel=#monero-pools)."
 msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social)."
-msgstr "Активное майнинг-сообщество Monero на Reddit можно найти здесь: [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Вы также можете присоединиться к [#monero-pools на freenode](https://webchat.freenode.net/?channel=#monero-pools)."
+msgstr ""
+"Активное майнинг-сообщество Monero на Reddit можно найти здесь: [/r/"
+"MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Вы также можете "
+"присоединиться к [#monero-pools на Libera](https://web.libera.chat/?channel"
+"=#monero-pools) или Matrix (#monero-pools:monero.social)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:143
-#, fuzzy, no-wrap
-#| msgid "## Going Futher"
+#, no-wrap
 msgid "Going Futher"
-msgstr "## Дальнейшие действия"
+msgstr "Дальнейшие действия"
 
 #. type: Bullet: '* '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:151

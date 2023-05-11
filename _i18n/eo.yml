@@ -1,0 +1,1091 @@
+global:
+  date: '%Y/%m/%d'
+  monero: 'Monero'
+  getting_started: 'Komenci'
+  copyright: 'Aŭtorrajto'
+  monero_project: 'La Monero-Projekto'
+  sitename: 'getmonero.org, La Monero-Projekto'
+  wiki: 'Moneropedio'
+  tags: 'Artikoloj laŭ etikedoj'
+  wikimeta: 'en Moneropedio, la malfermita enciklopedio de Monera scio'
+  tagsmeta: 'Ĉiuj Moneraj blogaĵoj, kiuj estas etikeditaj'
+  titlemeta: 'Monero, cifereca valuto, kiu estas sekura, privata kaj nespurebla'
+  terms: 'Terminoj'
+  privacy: 'Privateco'
+  untranslated: 'Ĉi tiu paĝo ankoraŭ ne estas tradukita. Se vi ŝatus helpi traduki
+    ĝin, bonvolu vidi la'
+  outdated: 'La enhavo de ĉi tiu paĝo estas neĝisdata kaj ĝi eble ne validas plu.
+    Kontaktu la komunumon, se vi bezonas helpon.'
+  outdatedMin: 'Ĉi tiu paĝo estis ĝisdatigita post sia traduko. Vi povas uzi ĉi tiun
+    version, sed eble ĝi estas nekompleta. Bonvolu uzi la'
+  outdatedVersion: 'Angla versio'
+  lang_tag: "@lang_tag_eo"
+
+titles:
+  index: 'Ĉefpaĝo'
+  whatismonero: 'Kio estas Monero (XMR)?'
+  accepting: 'Akcepti Moneron'
+  contributing: 'Plibonigi Moneron'
+  mining: 'Mini Moneron'
+  faq: 'Oftaj demandoj'
+  downloads: 'Elŝutoj'
+  allposts: 'Ĉiuj blogaĵoj'
+  workgroups: 'Laborgrupoj'
+  hangouts: 'Babilejoj'
+  sponsorships: 'Sponsoradoj'
+  merchants: 'Komercistoj kaj monŝanĝejoj'
+  about: 'Pri Monero'
+  roadmap: 'Vojmapo'
+  researchlab: 'Esplorada Laboratorio de Monero (ELM)'
+  moneropedia: 'Moneropedio'
+  userguides: 'Gvidiloj por uzantoj'
+  developerguides: 'Gvidiloj por programistoj'
+  technicalspecs: 'Teknika Specifo'
+  themoneroproject: 'La Monero-Projekto'
+  tools: 'Iloj'
+  presskit: 'Aferoj por gazetaro'
+  legal: 'Leĝa'
+  blogbytag: 'Blogo'
+  library: 'Libraro'
+
+navigation:
+  getstarted: 'Komenci'
+  whatis: 'Kio estas Monero?'
+  accepting: 'Akcepti'
+  contributing: 'Kontribui'
+  mining: 'Mini'
+  community: 'Komunumo'
+  merchants: 'Komercistoj kaj monŝanĝejoj'
+  resources: 'Rimedoj'
+  about: 'Pri'
+  mrl: 'Esplorada Laboratorio'
+
+footer:
+  feed: 'RSS-fluo'
+  legal: 'Leĝa'
+  source: 'Fontkodo'
+  ml: 'Dissendolisto'
+  ccs: 'Komunuma amasfinancada sistemo'
+  reachout: 'Kontakti nin'
+
+index:
+  page_title: "Monero - sekura, privata, nespurebla"
+
+home:
+  heading: 'Monero signifas monon'
+  heading2: 'Privata, malcentra cifereca valuto, kiu konservas viajn financojn konfidencaj
+    kaj sekuraj.'
+  whatis: 'Lernu pli pri Monero'
+  about: 'Pri Monero'
+  joincommunity: 'Aliĝu al la komunumo'
+  choosewallet: 'Elektu monujon'
+  choosewallet_para: 'Por uzi Moneron, unue vi bezonos monujon. Vizitu nian Elŝutoj-pâgon
+    kaj elektu la ĝustan monujon por vi. La monujoj de Monero disponeblas por diversaj
+    platformoj kaj enhavas ĉion, kion vi bezonas por uzi Moneron tuj.'
+  downloads: 'Elŝutoj'
+  getcoins: 'Akiru iujn monerojn'
+  getcoins_para: 'Post kiam vi instalis monujon, vi bezonas akiri iujn Monerojn. Estas
+    diversaj manieroj akiri kelkajn monerojn por elspezi, kiel mini aŭ labori kontraŭ
+    Moneroj, sed la plej facila estas uzi monŝanĝejon kaj konverti vian fidatan monon
+    al XMR. Multaj monŝanĝejoj, centraj kaj malcentraj, listas Moneron (XMR).'
+  exchanges: 'Monŝanĝejoj'
+  useit: "Ĝi estas valuto: uzu ĝin!"
+  useit_para: 'Monero estas valuto kaj povas esti interŝanĝita kontraŭ varoj, servoj
+    kaj aliaj valutoj, private kaj per malgrandegaj kostoj. Multaj institucioj volonte
+    akceptos XMR-n por pagoj; rigardu nian ''Komercistoj''-pâgon.'
+  merchants: 'Komercistoj'
+  answers: 'Trovu respondojn al viaj demandoj'
+  faq: 'Oftaj demandoj'
+  faq_para: 'Ni aŭdis multajn demandojn dum jaroj kaj ni kompilis detalajn kaj diversajn
+    oftajn demandojn. Ne zorgu, se viaj demandoj ne estas tie, vi ĉiam povas demandi
+    al la komunumo.'
+  guides: 'Gvidiloj kaj rimedoj'
+  guides_para: >
+    La komunumo kunmetis grandan kvanton da rimedoj kaj dokumentoj. Uzantoj povas
+    trovi utilan informon kaj gvidilojn pri kutimaj agordoj kaj konsiletoj en la sekcio
+    «Uzantaj Gvidiloj». Programistoj povas trovi ĉion, kion ili bezonas por konstrui
+    servon bazitan sur Monero aŭ simple komuniki kun la reto en la «Programistaj Gvidiloj».
+    La Libraro senkoste provizas publikaĵojn kaj elŝuteblajn librojn, inkluzive de
+    la plenaj libroj «Mastering Monero» kaj «Zero to Monero».
+  moneropedia_para: 'Ĉu vi ŝatus konsulti la signifojn de la terminoj kaj konceptoj
+    uzitaj en Monero? Ĉi tie vi trovos laŭalfabetan gvidilon pri terminoj kaj iliaj
+    signifoj.'
+  moneropedia_button: 'Legu Moneropedion'
+  contributecommunity: "Ni bezonas viajn kapablojn: kontribuu!"
+  contributecommunity_para: 'Monero ne estas simple valuto, ĝi estas malcentra komunumo
+    kaj ekzistas nur danke al la centoj da volontuloj, kiuj dediĉas sian tempon al
+    la projekto. Aliĝu al ni!'
+  researchlab_para: 'La ELM (Esplorada Laboratorio de Monero) estas tre grava parto
+    de Monero. Esploristoj kaj kriptografistoj el la tuta mondo renkontiĝas por trovi
+    manierojn plibonigi Moneron. Legu iliajn studojn kaj aliĝu al ili!'
+  visitmrl: 'Vizitu la ELM'
+  contributing: 'Kontribui'
+  meetcommunity: "Renkontu la komunumon!"
+  meetus: "La anoj de la Monera komunumo estas ĉie en la mondo. Vi povas trovi nin\
+    \ en diversaj platformoj. Venu renkonti nin!"
+  hangouts: 'Babilejoj'
+  morevideos: 'Ĉu vi serĉas pli da klarigaj videoj?'
+
+hangouts:
+  intro: 'La Monera komunumo estas diversa kaj multespeca. Ni venas el ĉie, sed ni
+    certe havas kelkajn ejojn, kie ni ŝatas pasigi tempon kune. Vi trovos la plejparton
+    el ili sube. Aliĝu al ni!'
+  resources: 'Laborgrupaj rimedoj'
+  resources_para: 'Klopodante subteni koherajn laborgrupojn, Monero havas plurajn
+    rimedojn, kiujn la komunumo povas uzi por renkontiĝi kaj plani projektojn,'
+  resources_para1: 'kiel Matrix-servilon, Taiga-panelon kaj la tradukadan platformon
+    Weblate.'
+  irc: 'IRC-kanaloj'
+  irc_para: 'La Monera komunumo uzas multajn IRC-kanalojn, ĉiujn el ili servantajn
+    malsamajn celojn. Iuj por labori kaj iuj nur por babili. Vi trovos sube la plej
+    popularajn.'
+  bridges: 'Ĉi tiuj kanaloj estas ligitaj al kelkaj aliaj platformoj, ebligante al
+    la komunumo komuniki uzante ĝian preferatan babilan servon/protokolon.'
+  mailing_list: 'Dissendolisto'
+  mailing_list1: 'Ĉu vi volas ricevi gravajn anoncojn rekte en vian retadreson? Aliĝu
+    al niaj dissendolistoj!'
+  subscribe: 'Aboni'
+  irc_channels:
+    monero: 'Ĉi tiu kanalo estas uzita por diskuti ĉiujn aferojn rilatajn al Monero.'
+    monero-community: 'Ĉi tiu kanalo estas, por ke la Monero-komunumo kuniĝu kaj diskutu
+      ideojn.'
+    monero-dev: 'La multaj kontribuantoj kaj programistoj venas ĉi tien por diskuti
+      disvolvigajn aferojn.'
+    monero-markets: 'Ni uzas ĉi tiun kanalon por paroli pri la prezo de Monero kaj
+      aliaj valutoj.'
+    monero-offtopic: 'Babili kun aliaj uzantoj de Monero pri aferoj ne rilataj al
+      Monero.'
+    monero-pools: 'Ĉi tiu estas la ejo por diskutoj kaj demandoj pri minado.'
+    monero-research-lab: 'Esplori pri financa privateco per ĉifromono.'
+    monero-translations: 'Lokaligi Moneron al aliaj lingvoj.'
+    monero-hardware: 'Konstrui aparataran monujon por konservi viajn Monerojn sekuraj.'
+    monero-site: 'Kie la disvolvado de ĉi tiu retejo estas kunordigita.'
+
+merchants:
+  descr: 'En ĉi tiu paĝo vi trovos aĉetejojn kaj komercistojn, kiuj akceptas Moneron
+    kiel pagon, kaj ankaŭ monŝanĝejojn, kiuj interŝanĝas Moneron kontraŭ aliaj valutoj.'
+  useit: "Komercistoj, kiuj akceptas Moneron"
+  use: 'Dum jaroj ĉiuspecaj komercistoj komencis valori la financan privatecon, kiun
+    Monero donas. Fakte komercista adopto senĉese pliiĝas.'
+  dirdescr: "Se vi serĉas lokojn por elspezi viajn Monerojn, la jenaj dosierujoj havas\
+    \ kelkajn opciojn. Bonvolu memori esplori antaŭ konfidi al ili vian monon:"
+  descrp2p: 'La plej bona maniero interŝanĝi Moneron kontraŭ aliaj valutoj (aŭ inverse)
+    estas uzi P2P-ŝanĝejojn, ĉar ili lasas al komercistoj rekte interagi unu kun la
+    alia, sen la bezono de krompersono (escepte eble por havigi garantian servon).
+    Ĉi tiuj ŝanĝejoj estas pli privataj ol siaj centraj ekvivalentoj kaj lasas, ke
+    homoj havu tutan kontrolon sur siaj moneroj, se ili estas ne-gardaj, sed ili ofte
+    havas malpli da volumeno ol «tradiciaj» ŝanĝejoj. En la suba sekcio ni provizas
+    liston de P2P-ŝanĝejoj, kiuj subtenas Moneron.'
+  swapsdescr: 'Nova ekscita maniero interŝanĝi Moneron estas Atomaj Interŝanĝoj, kiujn
+    <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">ni anoncis</a>
+    en aŭgusto de 2021. Atomaj Interŝanĝoj estas tute malcentra maniero interŝanĝi
+    Bitcoin <-> Monero (pli da informo en la blogaĵo). La teknologio estas tute nova,
+    do ankoraŭ ne estas multe da interŝanĝaj provizantoj, sed vi jam povas vendi XMR
+    kontraŭ BTC uzante ĉi tiun protokolon en'
+  bisqdescr: 'Malcentra P2P-interŝanĝo bazita sur Bitcoin kaj Tor.'
+  cardfoss: "Malfermitkoda:"
+  cardkyc: "<b>Sen KVK</b> (Konu Vian Klienton):"
+  cardbtcfiat: '(BTC &#8596; fidmono eblas)'
+  cardonion: ".onion-a adreso:"
+  noncustodial: "Ne-garda:"
+  hodlhodldescr: 'P2P komercada platformo kun ne-garda depono.'
+  locmondescr: 'Reta P2P ŝanĝejo ofertanta interŝanĝojn inter homoj.'
+  depsell: 'Dependas de la vendisto'
+  locnojs: '(sed ne-JS versio disponebla)'
+  simpleswapdescr: 'Ne-garda tuja ŝanĝejo.'
+  disclaimer: |
+  visitbisq: 'Vizitu Bisq-n'
+  visitlocalmonero: 'Vizitu LocalMonero-n'
+  visithodlhodl: 'Vizitu HodlHodl-n'
+  centrexchanges: 'Centraj ŝanĝejoj (CEXs) kaj interŝanĝejoj'
+  centrexchangesp: 'Se vi preferas uzi centrajn ŝanĝejojn, jen estas listo de famaj
+    centraj ŝanĝejoj kaj interŝanĝistoj. Multaj pli ŝanĝejoj subtenas Moneron, ni
+    listigas ĉi tie nur iujn bonfamajn.'
+  cexp: 'Centraj ŝanĝejoj, kiuj ofertas ŝanĝi Monero kontraŭ naciaj valutoj kaj ĉifrovalutoj.'
+  swappersp: 'Interŝanĝistoj lasas al uzantoj sanĝi XMR-n en aliajn ciferecajn valutojn.'
+
+sponsorships:
+  intro: 'La sekvaj firmaoj aktive subtenas la Monero-Projekton en ĝia celo venigi
+    financan privatecon al la mondo. Ni ne povas esti pli dankemaj pro iliaj kontribuoj.
+    Se vi ŝatus sponsori la Monero-Projekton kaj esti listigita en ĉi tiu paĝo, bonvolu
+    sendi retmesaĝon al dev@getmonero.org.'
+  tari: 'Tari Labs sponsoras la CDN uzitan de ĉi tiu retejo.'
+  symas: 'Symas sponsoras ĝian ĉefan teknologiiston (hyc) por lia laboro pri la Monero-kodaro.'
+  forknetworking: 'Fork Networking provizas servilon, kiu estas uzita por disvolvigo.'
+  macstadium: 'MacStadium sponsoras dediĉitan Mac Mini, kiu estas uzita por Mac-rilata
+    disvolvigo.'
+
+  pastsponsors: Estintaj sponsoroj
+  mbank: MajesticBank sponsoras la gastigadon provizitan de ĉi tiu retejo.
+team:
+  introduction: 'La laborgrupoj konsistas el komunumaj membroj, kiuj kunigas fortojn
+    por atingi komunan celon. Ili havas malsamajn strukturojn kaj celojn. En ĉi tiu
+    paĝo ni listigas iujn el la plej aktivaj laborgrupoj kaj kelkajn konsilojn por
+    helpi vin komenci, se vi deziras kontribui al iu el ili.'
+  core: 'Kerna teamo'
+  community: 'Komunuma laborgrupo'
+  mrl: 'Esplorada Laboratorio'
+  descr: 'Priskribo'
+  start: 'Kie komenci'
+  contacts: 'Babilejoj kaj kontaktoj'
+  chat: "Babilo:"
+  website: "Retejo:"
+  core_descr: 'Kiel direktoroj de la projekto, la Kerna Teamo administras kaj konservas
+    infrastrukturojn, kie centrigo ne povas esti evitita (domajnoj, retejo, GitHub-deponejoj...).
+    Ĝiaj membroj agas kiel interhelpistoj laŭ ilia juĝo kaj klopodas mezuri konsenton
+    en la komunumo, daŭrigante la kvalitajn interagojn, kiuj igis Moneron la sukcesa
+    projekto, kiu hodiaŭ estas. La Kerna Teamo ne ricevas kaj neniam ricevis iun financan
+    kompenson.'
+  core_start: 'La Kerna Teamo estas malfermita laborgrupo; ne eblas aliĝi, krom se
+    invitita.'
+  community_descr: 'Ĉi tiu laborgrupo estas uzata de la komunumo por organizi kaj
+    kunordigi. Komencu ĉi tie, se vi estas ne-programisto, kiu volas kontribui al
+    Monero.'
+  community_start: 'La plej bona maniero komenci kontribui al ĉi tiu laborgrupo estas
+    aliĝi al la babilejoj kaj prezenti vin, dirante viajn interesojn kaj la kapablojn,
+    kiujn vi ŝatus oferi al la komunumo.'
+  devworkgroup: 'Disvolvada Laborgrupo'
+  devworkgroup_descr: "Ĉu tiu laborgrupo unuigas Monero-disvolvistojn, kiuj laboras\
+    \ pri la monujoj kaj demono subtenitaj de la Kerna Teamo. Ĝi konsistas el du ĉefaj\
+    \ partoj: la teamo pri la komandlinia interfaco kaj la teamo pri la grafika interfaco.\
+    \ Ĉi tiuj teamoj kunordigas sin uzante du malsamajn babilejojn."
+  devworkgroup_start: 'Estas bona ideo rigardeti la malfermitajn problemojn en ambaŭ
+    deponejoj por havi ideon pri kio povus esti riparita aŭ plibonigita. Ambaŭ kodaroj,
+    sed speciale la kerna deponejo, povas esti tre defiaj, do oni sugestas unue skribi
+    en la babilejo prezentante vin, viajn kapablojn kaj tion, kion vi deziras kontribui.'
+  chatgeneral: "Babilejo (ĝenerala):"
+  chatgui: "Babilejo (grafika interfaco):"
+  webworkgroup: 'Reteja laborgrupo'
+  web_descr: 'Ĉi tiu laborgrupo fokusita pri disvolvado kunordigas la disvolvadon
+    de la retejo. Plejparto de ĝiaj anoj ankaŭ estas parto de la Disvolvada Laborgrupo.
+    La Reteja Laborgrupo estis precipe kreita por havi ĉiujn diskutojn rilatajn al
+    la retejo en unu loko.'
+  web_start: 'Ĉiam estas bona ideo aliĝi al la babilejo kaj rekte paroli kun la membroj
+    de la laborgrupo, sed se vi preferas komenciĝi sen akompano, rigardetu la «readme»-dosieron
+    en la GitHub-deponejo. Ĝi enhavas plendetalajn instrukciojn por redakti ĉiun parton
+    de ĉi tiu retejo.'
+  localization: 'Lokaliga laborgrupo'
+  localization_descr: 'Unu el la plej malnovaj Monero-Laborgrupoj, ĝi konsistas el
+    kontribuantoj, kiuj laboras tradukante Monero-rilatajn programojn kaj dokumentarojn.
+    Oni tre sugestas kontakti la laborgrupon antaŭ ol labori pri tradukoj.'
+  localization_start: 'Kontaktu la laborgrupon en la babilejo aŭ malfermu problemon
+    en la GitHub-deponejo. Vi ankaŭ povas ektraduki uzante la Weblate-platformon.
+    Nur certigu legi la gvidilon por tradukistoj antaŭe.'
+  locplatform: "Lokaliga platformo:"
+  outreach_descr: 'Ĉi tiu laborgrupo fokusiĝas pri disvastigi Moneron, arigante artistojn,
+    skribistojn kaj ĉiun ajn, kiu deziras igi Moneron konata por la mondo.'
+  outreach_start: 'La anoj de la Disvastiga Laborgrupo multe uzas Telegramon por kunordigado
+    kaj malpli uzas matrix/freenode. Se vi volas helpi, vi povas kontakti la laborgrupon
+    per unu el ĉi tiuj kanaloj. Ĝi estas tre strukturita, do vi eble estos kondukita
+    al kunordigisto.'
+  telegram: "Telegram-babilejo:"
+  mrl_descr: 'Kiel la nomo sugestas, la Esplorada Laboratorio de Monero estas la laborgrupo
+    fokusita pri Monero-rilataj esploroj. Ĝi konsistas el scienculoj, kiuj serĉas
+    manierojn plibonigi Monerajn protokolon kaj funkciojn. Plejparto de la protokolajn
+    plibonigojn, kiuj igas Moneron mirinda, kiel CLSAG kaj @Bulletproofs, estas la
+    rezulto de la klopodoj de ĉi tiu laborgrupo.'
+  mrl_start: 'Aliĝu al la jena babilejo kaj esprimu viajn interesojn kaj kapablojn.
+    Esplorado ĉiam okazas kaj iu ĝuste gvidos vin.'
+  space: 'Monerejo'
+  space_descr: 'Monerejo estas aktiva, Monera laborgrupo fokusita pri projektoj, kiu
+    donas servojn al la Monera komunumo. Ĝi gastigas popularajn rimedojn kaj organizas
+    eventojn kiel Monero Meet.'
+  space_start: 'La laborgrupo povas esti kontaktita skribante al ilia babilejo en
+    Matrix/Libera.'
+  mrw: 'Laborgrupo kontraŭ Fiprogramoj'
+  mrw_descr: 'La Laborgrupo kontraŭ Fiprogramoj donas rimedojn kaj realtempan subtenon
+    kontraŭ multaj specoj de fiprogramoj rilataj al Monero.'
+  mrw_start: 'Plejparto de la agado de ĉi tiu laborgrupo okazas en la IRC-babilejo.
+    Se vi volas kontribui, nur aliĝu al la kanalo por fari demandojn aŭ helpi.'
+  mpwg: 'Laborgrupo pri Monera Regularo'
+  mpwg_descr: 'La Laborgrupo pri Monera Regularo estas malfirme formita kvorumo de
+    individuoj kun intereso pri interagi kun regulistoj, farantoj de politikoj kaj
+    la pli granda sektoro de financaj servoj por certigi grandan komprenon de la teknologioj,
+    el kiuj Monero konsistas, speciale rilate al ĝia kongruo kun la ŝanĝantaj regularaj
+    kaj observadaj postuloj.'
+  mpwg_start: 'Se vi ŝatus partopreni aŭ sekvi diskutojn pri la regularo, aliĝu al
+    la Matrix/Libera laborgrupo.'
+
+downloads:
+  intro: 'En ĉi tiu paĝo vi povas trovi kaj elŝuti la lastan disponeblan version de
+    la Monero-programo kaj ankaŭ la aparatan, malpezan kaj saĝtelefonan monujojn.'
+  choose: 'Elektu vian elŝuton'
+  gui: 'Monujo kun grafika interfaco'
+  cli: 'Komandlinia Monujo'
+  blockchain: 'Importi blokĉenon'
+  blockchain1: 'Se vi preferas uzi krudan blokĉenon anstataŭ sinkronigi el nenio,
+    vi povas uzi la plej aktualan praŝarĝon. Kutime estas multe pli rapide sinkronigi
+    el nenio; tamen ĝi ankaŭ prenas multe malpli da ĉefmemoro.'
+  blockchain2: 'Se vi deziras daŭrigi ĉiuokaze, rigardu la uzantan gvidilon'
+  blockchain3: 'Importi la Monero-blokĉenon'
+  blockchain4: 'por detalaj instrukcioj por Windows.'
+  blockchainbutton: 'Elŝuti blokĉenon'
+  mobilelight0: 'Saĝtelefona kaj malpeza'
+  mobilelight: 'Saĝtelefona kaj malpeza monujoj'
+  hardware: 'Aparataj monujoj'
+  gui_intro: 'Malfermitkoda uzula grafika interfaco disvolvita de la Monero-komunumo,
+    tute senkoste uzebla, taŭga kaj por komencantoj kaj por spertuloj.'
+  simplemode: 'Simpla reĝimo'
+  simplemode1: 'Kreita por malpli teknikaj uzantoj, kiuj nur volas uzi Moneron plej
+    simple kaj rapide kiel eblas. Malfermu la monujon, aŭtomate konekti al foran nodon,
+    sendu/ricevu XMR, farita!'
+  advancedmode: 'Progresinta reĝimo'
+  advancedmode1: ''
+  merchantpage: 'Komercista paĝo'
+  merchantpage1: 'Ricevi XMR por via entrepreno, facile'
+  hwcompatible: 'Kongrua kun aparataj monujoj'
+  hwcompatible1: 'kiel Trezor kaj Ledger'
+  fiatconv: 'Konverto de fidata mono en la programo'
+  fiatconv1: 'Ne plu vi devas kontroli la valoron de viaj XMR Interrete'
+  pruning: ''
+  pruning1: ''
+  langs: "<b>30+ lingvoj</b> disponeblaj"
+  cli_intro0: ''
+  cli_intro: ''
+  currentversion: 'Nuntempa versio'
+  sourcecode: 'Fontkodo'
+  helpsupport: 'Helpo kaj subteno'
+  helpsupport1: ""
+  helpsupport2: "Vidi plej novan eldonon"
+  gui_helpsupport: ""
+  cli_helpsupport: ""
+  localremote: ''
+  localremote1: ''
+  transacttor: ''
+  transacttor1: ''
+  bootstrapnode: ''
+  bootstrapnode1: ''
+  rpc: ''
+  rpc1: ''
+  payforrpc: ''
+  payforrpc1: ''
+  verify: ''
+  verify1: ''
+  verify2: 'Ĉiam kontrolu viajn elŝutojn!'
+  showhash: ''
+  showhash1: ''
+  showhash2: ''
+  showhash3: ''
+  showhash4: ""
+  mobilelight1: ''
+  mobilelight2: ''
+  mobilelight3: ''
+  installer: ''
+  avwarning: ''
+  moreinfofaq: ''
+  packages: ''
+  packages_link: ''
+  releasenotes: ''
+  wallet: ''
+  mobile: ''
+  desktop: ''
+  antivirus: ''
+  sourcearchive: ''
+  localsync: ''
+  localsyncinfo: ''
+  remotesync: ''
+  remotesyncinfo: ''
+  hwdesc: ""
+  hwth: ''
+  instructions: ''
+  hwthmodel: ''
+  hwthsupported: ''
+  hwthfirm: ''
+  hwnanos: ""
+  hwnanox: ""
+  hwtrezor: ""
+  hwmobmodels: ""
+
+press-kit:
+  intro: ''
+  intro2: ''
+  intro3: ''
+  intro4: ''
+  noback: ''
+  whiteback: ''
+  symbol: ''
+  logo: ''
+  small: ''
+  medium: ''
+  large: ''
+  symbol_file: ''
+  logo_file: ''
+  pressdoc: ''
+  quickfacts: ""
+  quickfactsp: >
+  marketing: ''
+  dontbuysticker: ""
+  dontbuystickerp: ''
+  guerrillakit: ''
+  guerrillakitp: ''
+  promographics: ""
+  promographicsp: ''
+  othersymbols: ''
+  mrllogo_para: ''
+  contacts: ''
+  contactsp: ''
+  contactgen: ""
+  contactwg: ""
+  contactcomm: ""
+  whymonero: ''
+  whycommunity: ''
+  whycommunity1: ''
+  whyconf: ''
+  whyconf1: ''
+  altpk-1: ''
+  altpk-2: ''
+
+accepting:
+  title_gui: ''
+  index: ''
+  gui1: ""
+  gui2: ''
+  guilinkguide: ''
+  guiinstructions: >
+  guimerchant: ''
+  guilinkguide1: ''
+  guimerchant1: >
+  guisteps: ""
+  guiol: ""
+  guiol1: ''
+  guiol2: ""
+  guiol3: ""
+  guiol4: ''
+  cliinstructions: ''
+  clicreatewallet: >
+  cliaccounts: >
+  clicreateaccount: ""
+  clicreateaccount1: ''
+  cliindex: >
+  cliindex1: >
+  clinotes: >
+  merchantstitle: ''
+  merchantsreceive: ''
+  merchdevguides: ''
+  merchantsreceive1: ""
+  merchantsint: ""
+  merchantsintlink: ''
+  merchantsthirdp: ''
+  merchthirdlink: ''
+  merchantsthirdp1: ''
+
+contributing:
+  intro: ''
+  network: ''
+  develop: ''
+  developp: ""
+  cli: ""
+  cli_p: ''
+  gui: ""
+  gui_p: ''
+  website: ""
+  website_p: ''
+  bug: ""
+  discl: 'La procezo de respondo al vundebloj de la Monero-Projekto.'
+  develop_descr: >
+  develop_wg: ''
+  full-node: ''
+  full-node_p: ''
+  full-node_p2: ""
+  allguides: ''
+  mine: ''
+  mine_p: >
+  mine_link: ''
+  ffs: ''
+  ccs_p: ''
+  ccsbutton: ''
+  donate: ''
+  donate_p: ''
+  genfund: ''
+  genfund_p: ""
+  donate-other: ''
+  donate-other_para1: ''
+  donate-other_para2: ''
+  supportdev: ''
+  supportdev_p: ''
+  supportdev_p2: ''
+  supportdev_link: ''
+  sponsor: ''
+  sponsor_p: ''
+  sponsor_link: ''
+  sponsor_p2: ''
+  altqrmonero: ''
+  altqrbitcoin: ''
+
+faq:
+  intro: ''
+  toc: ''
+  general: ''
+  advanced: ''
+  nodeandwallet: ''
+  additional: ""
+  resandhelp: ''
+  stackexchange: ''
+  userguides: ''
+  devguides: ''
+  monerosupport: ''
+  monerohow: ""
+  qword: ""
+  aword: ""
+  aword1: ""
+  qcontribute: ''
+  acontribute: ""
+  acontribute1: ''
+  acontribute2: "Kontaku Laborgrupon. Preskaŭ ĉio en Monero estas administrita per\
+    \ laborgrupoj, kiuj estas grupoj de kontribuantoj (ofte gviditaj de kunordiganto)\
+    \ laborantaj pri specifa flanko de la evoluigo. Jen kelkaj ekzemploj: la lokaliga\
+    \ laborgrupo (tradukoj), la komunuma laborgrupo, la laborgrupo pri grafika fasado,\
+    \ la Outreach-laborgrupo kaj tiel plu. Laborgrupoj estas plejparte sendependaj\
+    \ kaj havas sian propran strukturon. Kontaktu la laborgrupon, kiu interesas vin,\
+    \ kaj demandu kiel vi povas helpi. Liston de kontaktoj vi povas trovi en"
+  acontribute3: ''
+  acontribute4: ""
+  q1: ''
+  a1: ''
+  q2: ''
+  a2: ''
+  a2exchanges: ""
+  q3: ''
+  a3: ''
+  q4: ''
+  a4: ""
+  q5: ''
+  a5: ''
+  q6: ''
+  a6: ''
+  q7: ''
+  a7: ''
+  q8: ''
+  a8: ''
+  q11: ''
+  a11: ""
+  q12: ''
+  a12-1: ''
+  a12-2: ''
+  a12-3: ''
+  q13: ''
+  a13: ''
+  q14: ''
+  a14: ''
+  q15: ''
+  a15: ''
+  qwallet: ''
+  awallet: ''
+  qnofunds: ''
+  anofunds: ""
+  qnodetor: ''
+  anodetor: ''
+  qfullpruned: ''
+  afullpruned: ""
+  qblocksize: ''
+  ablocksize: ""
+  qblockspace: ''
+  ablockspace: ""
+  qavoidbc: ''
+  aavoidbc: ""
+  qscanned: ''
+  ascanned: ''
+  qdangernode: ''
+  adangernode: ""
+  qdangerrnode: ''
+  adangerrnode: ""
+  qantivirus: ''
+  aantivirus: ''
+  aantivirus1: ''
+  qmoneromeaning: ""
+  amoneromeaning: ""
+  qimporting: ''
+  aimporting: >
+  qhf: ''
+  ahf: ''
+  ahf1: ''
+  qvideos: ''
+  avideos: >
+  video_intro: ''
+  video_essentials: ''
+  video_sa: ''
+  video_ringsig: ''
+  video_ringct: ''
+  mvideos: ""
+  aavailable: ''
+  and: ''
+  qlongtimemove: ''
+  alongtimemove: ''
+  qvuln: ''
+  avuln: >
+  vulnspotify: ''
+  qasicresistance: ""
+  aasicresistance: ''
+  aasicresistance1: ''
+  aasicresistance2: >
+  qmaxsupply: ''
+  amaxsupply: ''
+
+mining:
+  intro1: ''
+  intro2: ''
+  pow: ''
+  philosophy: >
+  efficiency: ''
+  miningset: ''
+  miningsetp: >
+  procons: ""
+  solo: ''
+  prosecure: ''
+  prowallet: ''
+  conlong: ""
+  pool: ''
+  propay: ''
+  conopfee: ''
+  conminfee: ''
+  conpolcent: ''
+  choosepol: ""
+  hardware: ''
+  hardwarep: ''
+  software: ''
+  softwarep: >
+  software_para: ''
+  support: ''
+  supportp: ''
+  p2poolh: ""
+  p2poolnew: >
+  p2poolp: >
+  p2poolfeatures: ''
+  p2pdecentralized: ''
+  p2ppermissionless: ''
+  p2ptrustless: ''
+  p2pplns: ''
+  p2pzerofee: ''
+  p2pzeropayout: ''
+  p2pminpayout: ''
+  p2pmoreinfo: ""
+
+what-is-monero:
+  need-to-know: ''
+  leading: ''
+  leading_para1: ''
+  leading_para2: ''
+  confidential: ''
+  confidential_para1: ""
+  confidential_para2: ''
+  grassroots: ''
+  grassroots_p1: ''
+  grassroots_p2: 'Esplorada Laboratorio'
+  grassroots_p3: ''
+  grassroots_p4: '500 disvolvistoj'
+  grassroots_p5: 'ĉie en la mondo.'
+  grassroots_p6: 'Multaj'
+  grassroots_p7: 'diskutejoj kaj babilejoj'
+  grassroots_p8: 'estas disponeblaj, por ke ĉiuj aliĝu, kaj la komunumo ĉiam pretas
+    bonvenigi novajn anojn.'
+  electronic: 'Monero estas elektra kontanta mono, kiu ebligas rapidajn malmultekostajn
+    pagojn al kaj el ĉie en la mondo.'
+  electronic_para1: ''
+  videos: 'Monero-videoj (angle)'
+  aboutb: 'Pri'
+  walletb: 'Akiru monujon'
+  getb: 'Akiru Monerojn'
+  joinb: 'Aliĝu al laborgrupo'
+
+about:
+  history: 'Mallonga historio'
+  history_para1: 'Monero estis eldonita en aprilo de 2014. Ĝi estis justa antaŭe anoncita
+    eldono de la referenca kodo de CryptoNote. Ne estis antaŭminado aŭ tujminado,
+    kaj neniu parto de la rekompenco iras al la disvolvado. Vidu la originalan Bitcointalk-fadenon'
+  history_para2: 'ĉi tie.'
+  history_para3: ''
+  history_para4: ''
+  values: 'Niaj valoroj'
+  values_para: ''
+  security: 'Sekureco'
+  security_para: ''
+  privacy: 'Privateco'
+  privacy_para: ''
+  decentralization: ''
+  decentralization_para: ''
+
+
+developer-guides:
+  head: ''
+  outdated: ""
+  rpc: ''
+  daemonrpc: ''
+  daemonrpc_descr: ''
+  walletrpc: ''
+  walletrpc_descr: ''
+  external: ''
+  external_head: ''
+  monerodocs: ''
+  moneroexamples: ''
+  moneroecosystem: 'Komunumo de disvolvistoj de Monero. Ĝi enhavas kaj bibliotekojn
+    kaj rimedojn kaj gvidilojn de kelkaj Laborgrupoj de Monero, kiel la Lokaliga Laborgrupo
+    kaj la Outreach-Laborgrupo.'
+  monerose: ''
+  libraries: ''
+  libraries_para: ''
+  monero-javascript: ''
+  monero-nodejs: ''
+  monerophp: ''
+  monerowp: ''
+  monero-python: ''
+  moneriote-python: ''
+  monerorpc: ''
+  monero-java: ''
+  monero-cpp: ''
+  vanity-monero: ''
+  go-monero-rpc-client: ''
+  monero-rs: ''
+  csharp-monero: ''
+
+user-guides:
+  general: ''
+  mining: ''
+  backup: ''
+  nodesync: ''
+  recovery: ''
+  wallets: ''
+  hardwarewallet: ''
+  anonimizationnetworks: ''
+  offline-backup: ''
+  vps-node: ''
+  import-blockchain: ''
+  monero-tools: ''
+  purchasing-storing: ''
+  verify-allos: ''
+  verify-windows: ''
+  mine-on-pool: ''
+  solo-mine: ''
+  locked-funds: ''
+  restore-account: ''
+  qubes: ''
+  cli-wallet: ''
+  remote-node-gui: ''
+  view-only: ''
+  prove-payment: ''
+  restore-from-keys: ''
+  ledger-wallet-cli: ''
+  multisig-messaging-system: ''
+  tor_wallet: 'Kiel konekti vian monujon al via propra nodo per Tor'
+  node-i2pzero: ''
+  guiguide: ''
+  tailsguide: 'Kiel uzi Moneron en Tails'
+  make-payment: 'Kiel fari pagon'
+  change-restore-height: ''
+  back: ''
+
+roadmap:
+  completed: ''
+  ongoing: ''
+  upcoming: ''
+  future: ''
+
+  jan: 'Januaro'
+  feb: 'Februaro'
+  mar: 'Marto'
+  apr: 'Aprilo'
+  may: 'Majo'
+  jun: 'Junio'
+  jul: 'Julio'
+  aug: 'Aŭgusto'
+  sep: 'Septembro'
+  oct: 'Oktobro'
+  nov: 'Novembro'
+  dec: 'Decembro'
+  comingsoon: ''
+
+  launched: ''
+  renamed: ''
+  recovered: ''
+  paper1-2: ''
+  paper3: ''
+  released-0-8-8-6: ''
+
+  paper4: ''
+
+  released-0-9-0: ''
+  paper5: ''
+  ringsize-3: ''
+  released-0-10-0: ''
+  splitcoinbase: ''
+  released-0-10-1: ''
+  guibeta1: ''
+
+  enableringct: ''
+  released-0-10-2: ''
+  released-0-10-3-1: ''
+  hfminblock: ''
+  webredesign: ''
+  released-0-11-0: ''
+  fluffyblocks: ''
+  guioutbeta: ''
+  minringsize5: ''
+  releasedgui-0-11-0: ''
+  zeromq: ''
+  subaddress: ''
+  paper6: ''
+  release-0-11-1: ''
+  releasedgui-0-11-1: ''
+  multisig: ''
+
+  released-0-12-0: ''
+  releasedgui-0-12-0: ''
+  cryptonightv2: ''
+  hfring7: ''
+  getmonero-fr-pl: 'Lokaligo de Getmonero.org al la franca kaj pola'
+  released-0-12-1: ''
+  ledger: ''
+  released-0-12-2: ''
+  released-0-12-3: ''
+  releasedgui-0-12-3: ''
+  kovrialpha: ''
+  moneropedialoc: 'Moneropedio de Getmonero.org malferma por lokaligo'
+  getmonero-ar: 'lokaligo de Getmonero.org al la araba'
+  released-0-13-0-2: ''
+  releasedgui-0-13-3: ''
+  cryptonightv3: ''
+  bulletproofs: ''
+  ringsize11: ''
+  released-0-13-0-4: ''
+  paper8-9: ''
+  releasedgui-0-13-0-4: ''
+  paper7: ''
+  paper10: ''
+  mms: ''
+
+  getmonero-de: 'Lokaligo de Getmonero.org al la germana'
+  released-0-14-0: ''
+  releasedgui-0-14-0: ''
+  ccs: ''
+  released-0-14-0-2: ''
+  cryptonightr: ''
+  getmonero-pt_br: 'Lokaligo de Getmonero.org al la brazila portugala kaj nederlanda'
+  dlsag: ""
+  pruning: ''
+  trezort: ''
+  nanox: ''
+  tori2p: ''
+  multisigms: ''
+  weblate: "Ŝanĝo de lokaliga platformo: el Pootle al Weblate"
+  rpcpay: ''
+  ipv6: 'IPv6-subteno'
+  removedpid: ''
+  nodediscovery: ''
+  randomx: ''
+
+  getmoneroweblate: 'Getmonero tradukebla en Weblate'
+  releasedgui-0-15-0-4: 'Grafika interfaco 0.15.0.4 eldonita'
+  released-0-15-0-5: 'Komandlinia interfaco 0.15.0.5 eldonita'
+  dandelion: ''
+  onionaddress: '.onion-a adreso de Getmonero.org'
+  supercop: ''
+  clsag: ''
+  tryptych: ""
+  kastelo: "Kastelo: malfermitkoda aparata monujo"
+  layer2: ''
+  released-0-16-0-0: 'Komandlinia kaj grafika interfacoj 0.16.0.0 eldonitaj'
+  released-0-17: 'Komandlinia kaj grafika interfacoj 0.17 ''Oxygen Orion'' eldonitaj'
+
+  returnaddr: 'Revenaj adresoj'
+  atomicswaps: ''
+  bplus: ''
+  p2pool: ''
+
+
+  haveno: Haveno
+  ringsize-sera-tryp: pliigi ringan grandecon al >100
+  released-0-18: komandlinia kaj grafika interfacoj "Flourine Fermi" eldonitaj
+research-lab:
+  intro: ''
+  intro_email: "Por kontakti la Esploradan Laboratorion de Monero, bonvolu retpoŝti\
+    \ al lab@getmonero.org."
+  mrl_papers: 'Eldonitaj artikoloj'
+  abstract: 'Resumo'
+  introduction: 'Enkonduko'
+  read-paper: 'Legi artikolon'
+  summary: ''
+  mrlhtp: ''
+  mrlhtp_summary: ''
+  mrl1: ''
+  mrl1_abstract: ''
+  mrl2: ''
+  mrl2_abstract: ''
+  mrl3: 'Monero ne estas tiom mistera'
+  mrl3_abstract: ''
+  mrl4: ''
+  mrl4_abstract: ''
+  mrl5: ''
+  mrl5_abstract: ''
+  mrl6: ''
+  mrl6_abstract: ''
+  mrl7: ''
+  mrl7_abstract: ''
+  mrl8: ''
+  mrl8_abstract: ''
+  mrl9: ''
+  mrl9_abstract: ''
+  mrl10: ''
+  mrl10_abstract: ''
+  iacr2019654: ''
+  iacr2019654_abstract: ''
+  iacr2020018: ""
+  iacr2020018_abstract: ''
+  iacr2020312: ""
+  iacr2020312_note: ""
+  iacr2020312_abstract: ''
+  cryptonote: ''
+  cryptonote-whitepaper: ''
+  cryptonote-whitepaper_para: ''
+  annotated: ''
+  annotated_para: ''
+  brandon: ''
+  brandon_para: ''
+  libraryp: ""
+  librarybutton: ''
+
+
+specs:
+  title: ''
+  intro: ''
+  intro_link: ''
+  intro1: ''
+  pow_title: ''
+  pow: ''
+  pow_link: ''
+  block_emission_title: ''
+  block_emission_pre: ""
+  block_emission_main: ""
+  block_emission_tail: ""
+  blocks_title: ''
+  blocks: ''
+  privacytech_title: ''
+  privacytech_ringct: ""
+  privacytech_sh: ""
+  privacytech_rs: ''
+  privacytech_tor-i2p: ''
+  privacytech_dandelion: ''
+
+library:
+  description: ""
+  books: ''
+  zerotomonerov2: ""
+  zerotomonerov2p: >
+  zerotomonerov1: ""
+  zerotomonerov1p: >
+  masteringmonerop: >
+  cheatsheets: ''
+  moneroaddressescheatsheet20201206: ""
+  moneroaddressescheatsheet20201206p: >
+  ringscheatsheet20210301: ""
+  ringscheatsheet20210301p: >
+  rctcheatsheet20210604: ""
+  rctcheatsheet20210604p: >
+  magazines: ''
+  revuoq4p: >
+  revuoq3p: >
+
+moneropedia:
+  description: >
+  instructions: ''
+  add_new_text1: ''
+  add_new_link: ''
+  add_new_text2: ''
+  back: ''
+  entries:
+    account: ''
+    address: ''
+    airgap: ''
+    atomic-units: ''
+    blockchain: ''
+    block: ''
+    bootstrap-node: ''
+    bulletproofs: ''
+    canonically-unique-host: ''
+    change: ''
+    clearnet: ''
+    coinbase: ''
+    consensus: ''
+    cryptocurrency: ''
+    daemon: ''
+    denominations: ''
+    encryption: ''
+    fluffyblocks: ''
+    fungibility: ''
+    kovri: ''
+    locally-unique-host: ''
+    mining: ''
+    mnemonicseed: ''
+    node: ''
+    openalias: ''
+    paperwallet: ''
+    paymentid: ''
+    pedersen-commitment: ''
+    pruning: ''
+    randomx: ''
+    remote-node: ''
+    ringCT: ''
+    ringsignatures: ''
+    ring-size: ''
+    scalability: ''
+    signature: ''
+    smartmining: ''
+    spendkey: ''
+    stealthaddress: ''
+    tail-emission: ''
+    transaction: ''
+    unlocktime: ''
+    viewkey: ''
+    wallet: ''
+    clsag: ''
+
+tools:
+  intro1: ''
+  intro2: ''
+  block-explorers: ''
+  address-generators: ''
+
+  network: ''
+  monerohash-nodes: ''
+  localmonero-blocks: ''
+  nownodes: ''
+  getblockio: ''
+  monerofail: ''
+  txstreet: ''
+
+  market: ''
+  backtestking: ''
+  cryptofacile: ''
+  cryptoradar: ''
+  kryptocheck: ''
+
+  misc: ''
+  monerohow-stats: ''
+  moneropro: ''
+  monerologs: ''
+  monerobase: ''
+  gateways: ''
+
+blog:
+  allposts: ''
+  urgent: ''
+  releases: ''
+  community: ''
+  meetinglogs: ''
+  author: ''
+  date: ''
+  filter: ""
+  next: 'Sekva'
+  previous: 'Antaŭa'
+
+
+tags:
+  notags: ''
+
+accessibility:
+  arrowup: ''
+  gotop: 'Iri supren'
+  guiscreen: ''
+  cliscreen: ''
+
+error:
+  title: ''
+  button: 'Hejmpaĝen'

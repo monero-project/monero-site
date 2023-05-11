@@ -8,48 +8,62 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-04 11:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-02-25 14:34+0000\n"
+"Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/"
+"getmonero-moneropedia/ring-size/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: YAML Front Matter: summary
 #: ../_i18n/en/resources/moneropedia/ring-size.md:1
 #, no-wrap
 msgid "total number of possible signers in a ring signature"
 msgstr ""
+"общее количество подписантов участвующих в формировании кольцевой подписи"
 
 #. type: YAML Front Matter: terms
 #: ../_i18n/en/resources/moneropedia/ring-size.md:1
 #, no-wrap
 msgid "[\"ring-size\"]"
-msgstr ""
+msgstr "[\"ring-size\", \"размер-кольца\"]"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/ring-size.md:7
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
+"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/ring-size.md:8
 #, no-wrap
 msgid "The Basics"
-msgstr ""
+msgstr "Основная информация"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/ring-size.md:11
 msgid "Ring size refers to the total number of signers in a @ring-signature. Before release [0.13.0 \"Beryllium Bullet\"]({{ site.baseurl }}/2018/10/11/monero-0.13.0-released.html), it was possible to select an arbitrary number of signers. With release 0.13, it was decided to set this number to 11 to enforce transaction uniformity."
 msgstr ""
+"Размером кольца называется общее количество подписантов, присутствующих в "
+"@кольцевой-подписи. До выхода версии [0.13.0 \"Beryllium Bullet\"]({{ "
+"site.baseurl }}/2018/10/11/monero-0.13.0-released.html) можно было выбрать "
+"любое произвольное количество подписантов. При реализации этой версии "
+"протокола было решено сделать данный параметр фиксированным и равным 11, что "
+"обеспечивало бы единообразие транзакций."
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/ring-size.md:13
-msgid "`Ring size (16) = foreign outputs (15) + your output (1)`"
-msgstr ""
+msgid "`Ring size (11) = foreign outputs (10) + your output (1)`"
+msgstr "`Размер кольца (11) = чужие выходы (10) + ваш выход (1)`"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/ring-size.md:14
 msgid "Foreign outputs are typically called \"decoys,\" and the number of decoys was previously called the \"mixin\" size."
 msgstr ""
+"Чужие выходы, как правило, называют «ложными», а количество ложных выходов "
+"ранее называли размером «миксина»."

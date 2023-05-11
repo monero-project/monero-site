@@ -1,1 +1,5 @@
-{}
+global:
+  getting_started: Kom i gang
+  monero: Monero
+  date: '%Y/%m/%d'
+  copyright: Ophavsret
