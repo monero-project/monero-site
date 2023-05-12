@@ -245,7 +245,7 @@ meta_descr: downloads.intro
                         <tr>
                             <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
-                            <td>X</td>
+                            <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
