@@ -443,11 +443,14 @@ contributing:
   altqrbitcoin: Bitcoin QR code
 
 faq:
+  basics: Basics
+  privacy: Privacy
+  security: Security
+  economics: Economics
+  wallets: Wallets
+  node: Node
   intro: Find answers to recurring questions and concerns about Monero.
   toc: Table Of Contents
-  general: General
-  advanced: Advanced
-  nodeandwallet: Node and Wallet
   additional: "More Info:"
   resandhelp: Resources & Help
   stackexchange: One of the most complete resources about Monero. If you have a question which is not in this FAQ, you will likely find the answer on the Monero StackExchange.
