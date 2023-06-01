@@ -573,7 +573,7 @@ mining:
   conpolcent: Too many people mining on a single pool might lead on the pool having >50% of the total hashrate, which is dangerous
   choosepol: "If you need help choosing a pool or you just want more information about them, use:"
   hardware: Hardware
-  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://monerobenchmarks.info/">monerobanchmarks</a> (some results might be out of date).
+  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://xmrig.com/benchmark">xmrig benchmarks page</a> (some results might be out of date).
   software: Software
   softwarep: >
     There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
