@@ -934,14 +934,13 @@ library:
   zkbasicscheatsheet20220621: "ZK Basics Cheatsheet"
   zkbasicscheatsheet20220621p: >
     A lightly theoretical interlude (hopefully still gentle, trying to stress concepts more than formalism and selecting the approached topics) to lay the foundations for Bulletproof and other future Zero-Knowledge-related features, if any.
-  magazines: Magazines
-  revuoq4p: >
-    Quarterly Monero magazine, Q4 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, and community.
-  revuoq3p: >
-    Quarterly Monero magazine, Q3 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, community, Hardware, and Monerujo.
-
+  newsletters: Newsletters
+  themonerostandard: >
+    Monero Standard is a weekly publication by recanman, providing up-to-date news and information on the Monero protocol.
+    In addition to covering the latest developments in the Monero community, The Monero Standard also includes a weekly price chart, mining pool chart, blockchain statistics, and even a Meme of the Week.
+  moneroobserverblitz: >
+    Monero Observer Blitz provides monthly updates on the latest developments in the Monero community and protocol.
+    Written by escapethe3RA, this publication covers news related to Monero's ongoing development, community events, and notable achievements within the space.
 moneropedia:
   description: >
     The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order.
