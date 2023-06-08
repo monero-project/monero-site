@@ -926,9 +926,6 @@ faq:
     Monero StackExchange.
   resandhelp: Zasoby i Pomoc
   additional: 'Więcej informacji:'
-  nodeandwallet: Węzeł i Portfel
-  advanced: Zaawansowane
-  general: Ogólne
   toc: Spis treści
   intro: Znajdź odpowiedzi na powtarzające się pytania i wątpliwości dotyczące Monero.
   aasicresistance: Układy ASIC są w zasadzie specjalnymi komputerami stworzonymi do
@@ -1573,14 +1570,6 @@ library:
     przeznaczone dla programistów, inżynierów, architektów oprogramowania i zainteresowanych
     użytkowników.</li> <li>Nowe osiągnięcia, takie jak Kovri, Bulletproofy, Wielopodpisowość,
     Portfele sprzętowe, itp.</li></ul>.
-  magazines: Magazines
-  revuoq4p: >
-    Kwartalnik Monero, wydanie Q4 2017.<br> W tym numerze aktualizacje na temat: rozwoju,
-    Monero Research Lab, Kovri i społeczności.
-  revuoq3p: >
-    Kwartalnik Monero, wydanie Q3 2017.<br> W tym numerze aktualizacje na temat: rozwoju,
-    Monero Research Lab, Kovri, społeczności, sprzętu i Monerujo.
-
   rctcheatsheet20210604p: "Przepis na wyśmienitą transakcję RingCT typu 5: jeden CLSAG\
     \ na jedenaście UTXO, ilość Moneroj według gustu; zagęścić wszystko Pedersen Commitments,\
     \ których ogólna równowaga będzie widoczna również dla kelnerów, a ostatnie zabezpieczyć\
@@ -1609,7 +1598,6 @@ moneropedia:
     block: Blok
     bootstrap-node: Węzeł rozruchowy
     bulletproofs: Bulletproofy
-    canonically-unique-host: Zasadniczy unikalny host
     change: Reszta
     clearnet: Clearnet
     coinbase: Transakcja coinbase

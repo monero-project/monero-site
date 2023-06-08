@@ -450,9 +450,6 @@ contributing:
 faq:
   intro: Spisak čestih pitanja sa odgovorima i resursima
   toc: Sadržaj
-  general: Opšte
-  advanced: Napredno
-  nodeandwallet: Čvor i Novčanik
   additional: 'Više Informacija:'
   resandhelp: Resursi i Pomoć
   stackexchange: Jedan od najkompletnijih resursa u vezi Monera. Ako imate pitanje
@@ -1179,12 +1176,6 @@ specs:
 library:
   description: Ispod su neke publikacije, knjige ili časopisi dostupni za preuzimanje.
   books: Knjige
-  revuoq3p: "Kvartalni časopis Monero, izdanje za K3 2017. <br> U ovom broju, novosti\
-    \ o: razvoju, Monero Istraživačkoj Laboratoriji, Kovri, zajednici, hardveru i\
-    \ Monerujo novčaniku.\n"
-  revuoq4p: "Kvartalni Monero časopis, izdanje za K4 2017. <br> U ovom broju, novosti\
-    \ o: razvoju, Monero Istraživačkoj Laboratoriji, Kovri i zajednici.\n"
-  magazines: Časopisi
   masteringmonerop: "Vodič kroz naizgled složen svet Monera. <br> Sadrži: <ul> <li>\
     \ Širok uvod u blokčejn i važnost privatnosti - idealno za netehničke korisnike.\
     \ </li> <li> Diskusija o nedostacima Bitcoin-a i specifična rešenja koja pruža\
@@ -1225,7 +1216,6 @@ moneropedia:
     block: Block
     bootstrap-node: Bootstrap čvor
     bulletproofs: Bulletproofs
-    canonically-unique-host: Kanonski jedinstveni host
     change: Promena
     clearnet: Clearnet
     coinbase: Coinbase Transakcija
