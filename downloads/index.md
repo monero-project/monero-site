@@ -243,19 +243,19 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/" target="_blank">Cake Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather logo"><a href="https://featherwallet.org/">Feather</a></td>
+                            <td><img class="small" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather logo"><a href="https://featherwallet.org/" target="_blank">Feather</a></td>
                             <td>X</td>
                             <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://github.com/feather-wallet/feather" aria-label="GitHub icon"><span class="icon-github"></span></a></td>
+                            <td><a class="ext-noicon" href="https://github.com/feather-wallet/feather" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/">Monerujo</a></td>
+                            <td><img class="small" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo logo"><a href="https://monerujo.io/" target="_blank">Monerujo</a></td>
                             <td><span class="icon-android"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
@@ -271,13 +271,13 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
+                            <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/" target="_blank">MyMonero</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/mymonero" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
+                            <td><img class="small" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/" target="_blank">Edge</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>

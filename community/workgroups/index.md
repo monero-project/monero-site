@@ -43,7 +43,7 @@ meta_descr: meta_descr.workgroups
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
             <li>{% t team.chat %} <code>#monero-community</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-community"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-community:monero.social?via=matrix.org&via=monero.social"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a> <a class="chats-img" href="https://mattermost.getmonero.org/monero/channels/monero-community"></a></li>
-            <li>{% t team.website %} <a href="https://www.communityworkgroup.org/">www.communityworkgroup.org</a></li>
+            <li>{% t team.website %} <a href="https://www.communityworkgroup.org/" target="_blank">www.communityworkgroup.org</a></li>
           </ul>
           <div class="row center-xs icons">
             <a class="ext-noicon" href="https://repo.getmonero.org/monero-project/" target="_blank" rel="noreferrer, noopener" aria-label="Gitlab logo"><div class="col social-icon gitlab"></div></a><a class="ext-noicon" href="https://www.reddit.com/r/MoneroCommunity/" target="_blank" rel="noreferrer, noopener" aria-label="Reddit logo"><div class="col social-icon reddit"></div></a>
@@ -118,7 +118,7 @@ meta_descr: meta_descr.workgroups
           <p>{% t team.outreach_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.telegram %} <a href="https://t.me/monerooutreach">monerooutreach</a></li>
+            <li>{% t team.telegram %} <a href="https://t.me/monerooutreach" target="_blank">monerooutreach</a></li>
             <li>{% t team.chat %} <code>#monero-outreach</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-outreach"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-outreach:monero.social?via=matrix.org&via=monero.social&via=haveno.network"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a> <a class="chats-img" href="https://mattermost.getmonero.org/monero/channels/monero-outreach"></a></li>
           </ul>
           <div class="row center-xs icons">
@@ -178,7 +178,7 @@ meta_descr: meta_descr.workgroups
           <ul class="logo">
             <li>{% t team.chat %} <code>#monero-policy</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-policy"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-policy:matrix.org?via=matrix.org&via=monero.social"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
             <li>Email: <code>policy[at]getmonero[dot]org</code></li>
-            <li>{% t team.website %} <a href="https://moneropolicy.org">moneropolicy.org</a></li>
+            <li>{% t team.website %} <a href="https://moneropolicy.org" target="_blank">moneropolicy.org</a></li>
           </ul>
         </div>
       </div>

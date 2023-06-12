@@ -78,7 +78,7 @@ meta_descr: meta_descr.userguides
                         <div class="col">
                             <h2>{% t user-guides.wallets %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/monero-wallet-cli.html">{% t user-guides.cli-wallet %}</a></p>
-                            <p><a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md">{% t user-guides.guiguide %}</a></p>
+                            <p><a href="https://github.com/monero-ecosystem/monero-GUI-guide/blob/master/monero-GUI-guide.md" target="_blank">{% t user-guides.guiguide %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/change-restore-height.html">{% t user-guides.change-restore-height %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/view_only.html">{% t user-guides.view-only %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/verification-allos-advanced.html">{% t user-guides.verify-allos %}</a></p>
@@ -110,7 +110,7 @@ meta_descr: meta_descr.userguides
                             <p><a href="{{site.baseurl}}/resources/user-guides/tor_wallet.html">{% t user-guides.tor_wallet %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/node-i2p-zero.html">{% t user-guides.node-i2pzero %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.html">{% t user-guides.qubes %}</a></p>
-                            <p><a href="http://xmrguide25ibknxgaray5rqksrclddxqku3ggdcnzg4ogdi5qkdkd2yd.onion">{% t user-guides.tailsguide %}</a><img alt="onion logo" class="onion-mid" src="/img/onion-tor.svg" title="Onion link"/></p>
+                            <p><a href="http://xmrguide25ibknxgaray5rqksrclddxqku3ggdcnzg4ogdi5qkdkd2yd.onion" target="_blank">{% t user-guides.tailsguide %}</a><img alt="onion logo" class="onion-mid" src="/img/onion-tor.svg" title="Onion link"/></p>
                         </div>
                     </div>
                 </div>
