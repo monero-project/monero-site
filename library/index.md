@@ -15,6 +15,7 @@ meta_descr: library.description
             <div>
                 <h3><a href="Zero-to-Monero-2-0-0.pdf">{% t library.zerotomonerov2 %}</a></h3>
                     <p>{% t library.zerotomonerov2p %}</p>
+                    <p>{% t library.zerotomonerov2langs %}</p>
                 <h3><a href="Zero-to-Monero-1-0-0.pdf">{% t library.zerotomonerov1 %}</a></h3>
                     <p>{% t library.zerotomonerov1p %}</p>
                 <h3><a href="https://masteringmonero.com/free-download.html">Mastering Monero</a></h3>
