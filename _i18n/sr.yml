@@ -22,7 +22,6 @@ global:
   outdated: Sadržaj ove stranice je zastareo i možda više nije validan. Kontaktirajte
     zajednicu ako vam treba podrška.
 titles:
-  builtonmonero:
   index: Početna
   whatismonero: Šta je Monero (XMR)?
   accepting: Primanje Monera
@@ -127,9 +126,6 @@ hangouts:
 merchants:
   disclaimer: |
     "Molimo, imajte na umu: ovo linkovi su dostupini kao pogodnost i sluze samo za informativne svrhe; ne predstavljaju podršku Monero zajednice ni prema jednom proizvodu, usluzi ili stavu izlistane korporacije ili organizacije. Monero zajednica ne snosi ikakvu odgovornost za tačnost, legalnost ili sadržaj ovih spoljnih sajtova. Kontaktirajte spoljne sajtove za odgovore u vezi sa njihovim sadržajem. Kao i uvek, Vi ste odgovorni za sprovođenje spostvenih istraživanja. Uvek koristite zdrav razum pri online kupovini."
-builtonmonero:
-  townforge:
-  intro:
 sponsorships:
   intro: Ova preduzeća su podržala Monero Projekat u svom cilju donošenja finansijske
     privatnosti svetu. Ne možemo biti zahvalniji za njihov doprinos. Ukoliko biste
@@ -1297,7 +1293,6 @@ footer:
   ccs: Sistem Kolektivnog Finansiranja
   ml: Mejling Lista
 navigation:
-  builtonmonero:
   mrl: Istraživačka Laboratorija
   about: O
   resources: Resursi

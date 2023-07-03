@@ -21,7 +21,6 @@ global:
   outdated: O conteúdo dessa página está desatualizado e pode não ser mais válido.
     Entre em contato com a comunidade se você precisa de suporte.
 titles:
-  builtonmonero:
   index: Início
   whatismonero: O que é o Monero (XMR)?
   accepting: Aceitando Monero
@@ -49,7 +48,6 @@ titles:
   workgroups: Grupos de trabalho
   tools: Ferramentas
 navigation:
-  builtonmonero:
   getstarted: Início
   whatis: O que é o Monero?
   accepting: Aceitando
@@ -183,9 +181,6 @@ merchants:
   cardkyc: '<b>Sem KYC</b> (Conheça Seu Cliente):'
   depsell: Depende do vendedor
   locnojs: (mas não há versão JS disponível)
-builtonmonero:
-  townforge:
-  intro:
 sponsorships:
   intro: As seguintes empresas apoiam ativamente o Projeto Monero em sua meta de trazer
     privacidade financeira ao mundo. Nós não poderíamos ser mais gratos por suas contribuições.

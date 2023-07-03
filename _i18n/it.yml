@@ -21,7 +21,6 @@ global:
   outdated: Il contenuto di questa pagina non è aggiornato e potrebbe non essere più
     valido. Contatta la community se hai bisogno di assistenza.
 titles:
-  builtonmonero:
   index: Home
   whatismonero: Cos'è Monero (XMR)?
   accepting: Accettare Monero
@@ -49,7 +48,6 @@ titles:
   workgroups: Gruppi di lavoro
   tools: Strumenti
 navigation:
-  builtonmonero:
   getstarted: Inizia da qui
   whatis: "Cos'è Monero?"
   accepting: Adozione
@@ -188,9 +186,6 @@ merchants:
     loro i tuoi soldi:'
   visitbisq: Visita Bisq
   visitlocalmonero: Visita LocalMonero
-builtonmonero:
-  townforge:
-  intro:
 sponsorships:
   intro: Le seguenti aziende sostengono il progetto Monero nel suo obiettivo di portare
     la privacy finanziaria nel mondo. Non potremmo essere più grati per i loro contributi.

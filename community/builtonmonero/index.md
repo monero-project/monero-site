@@ -5,10 +5,6 @@ permalink: /community/builtonmonero/index.html
 ---
 
 {% t global.lang_tag %}
-<div class="text-center container description">
-    <p>{% t builtonmonero.intro %}</p>
-</div>
-
 <div>
     <section class="container builtonmonero">
         <div class="row">
@@ -16,8 +12,8 @@ permalink: /community/builtonmonero/index.html
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://townforge.net/" target="_blank" rel="noreferrer"><img src="/img/builtonmonero/townforge.png" alt="Townforge logo" style="max-width: 80%;"></a>
-                            <p id="tari">{% t builtonmonero.townforge %}</p>
+                            <a class="ext-noicon" href="https://townforge.net/" target="_blank" rel="noreferrer"><img src="/img/builtonmonero/townforge.png" alt="Townforge logo"></a>
+                            <p>{% t builtonmonero.townforge %}</p>
                         </div>
                     </div>
                 </div>
@@ -27,7 +23,7 @@ permalink: /community/builtonmonero/index.html
                     <div class="row center-xs">
                         <div class="col">
                             <a class="ext-noicon" href="https://haveno.exchange/" target="_blank" rel="noreferrer"><img src="/img/builtonmonero/haveno.png" alt="Haveno exchange logo"></a>
-                            <p id="mbank">{% t builtonmonero.haveno %}</p>
+                            <p>{% t builtonmonero.haveno %}</p>
                         </div>
                     </div>
                 </div>
@@ -35,3 +31,4 @@ permalink: /community/builtonmonero/index.html
         </div>
     </section>
 </div>
+s

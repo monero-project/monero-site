@@ -23,7 +23,6 @@ global:
   outdated: Bu sayfanın içeriği eskimiş bu yüzden bilgiler geçerliliğini yitirmiş
     olabilir. Yardıma ihtiyacınız varsa toplulukla iletişime geçin.
 titles:
-  builtonmonero:
   index: Ana Sayfa
   whatismonero: Monero (XMR) Nedir?
   accepting: Monero Kabulü
@@ -51,7 +50,6 @@ titles:
   workgroups: Çalışma Grupları
   tools: Araçlar
 navigation:
-  builtonmonero:
   getstarted: Başlangıç
   whatis: Monero Nedir?
   accepting: Kabulü
@@ -152,9 +150,6 @@ merchants:
   disclaimer: |
     "Lütfen dikkate alınız: Bu bağlantılar kolaylık olması ve sadece bilgi verme amaçlı olarak sağlanmaktadır; listelenen şirketlerin veya organizasyonların veya bireylerin herhangi bir ürününün, hizmetinin veya düşüncesinin Monero topluluğunca kabulünü oluşturmazlar. Monero topluluğu bu harici sitelerin doğruluğu, yasallığı veya içeriği üzerinde hiçbir sorumluluk sahibi değildir. İçerikleri hakkındaki sorularınıza cevap için harici sayfaya ulaşın. Her zamanki gibi, caveat emptor ('alıcı sakınsın'); kendi araştırmanızı yapmaktan siz sorumlusunuz. Çevrimiçi satın alım yaparken her zaman sağduyu kullanın."
 
-builtonmonero:
-  townforge:
-  intro:
 sponsorships:
   intro: Aşağıdaki işletmeler Dünyaya finansal gizlilik getirme hedefinde Monero Projesini
     desteklemektedir. Katkıları için ne kadar minnettar olsak az. Eğer Monero Projesine

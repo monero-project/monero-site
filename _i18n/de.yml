@@ -22,7 +22,6 @@ global:
   outdated: Der Inhalt dieser Seite ist abgelaufen und ist eventuell nicht mehr gültig.
     Kontaktiere die Community, wenn du Hilfe benötigst.
 titles:
-  builtonmonero:
   index: Start
   whatismonero: Was ist Monero (XMR)?
   accepting: Monero akzeptieren
@@ -50,7 +49,6 @@ titles:
   workgroups: Arbeitsgruppen
   tools: Tools
 navigation:
-  builtonmonero:
   getstarted: Einstieg
   whatis: Was ist Monero?
   accepting: Akzeptieren
@@ -205,9 +203,6 @@ merchants:
   centrexchangesp: Wenn du lieber zentralisierte Börsen verwendest, findest du hier
     eine Liste renommierter CEXs und Swapper. Viele weitere Börsen unterstützen Monero,
     wir listen hier nur einige seriöse auf.
-builtonmonero:
-  townforge:
-  intro:
 sponsorships:
   intro: Die folgenden Organisationen und Firmen unterstützen das Monero-Projekt aktiv
     dabei, finanziellen Datenschutz und Freiheit in die Welt zu bringen. Wir sind
