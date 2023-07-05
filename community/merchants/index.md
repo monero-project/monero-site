@@ -17,7 +17,6 @@ meta_descr: merchants.descr
         <p>{% t merchants.dirdescr %}</p>
         <ul class="logo">
           <li><a href="https://cryptwerk.com/pay-with/xmr/">cryptwerk.com</a></li>
-          <li><a href="https://www.acceptedhere.io/catalog/currency/xmr/">acceptedhere.io</a></li>
         </ul>
       </div>
     </div>
