@@ -16,7 +16,7 @@ All monero-wallet-rpc methods use the same JSON RPC interface. For example:
 IP=127.0.0.1
 PORT=18082
 METHOD="make_integrated_address"
-PARAMS="{\"payment_id\":\"1234567890123456789012345678900012345678901234567890123456789000\"}"
+PARAMS="{\"payment_id\":\"1234567890123456\"}"
 curl \
     http://$IP:$PORT/json_rpc \
     -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'"$PARAMS"'}' \
@@ -29,7 +29,7 @@ If the monero-wallet-rpc was executed with the `--rpc-login` argument as `userna
 IP=127.0.0.1
 PORT=18082
 METHOD="make_integrated_address"
-PARAMS="{\"payment_id\":\"1234567890123456789012345678900012345678901234567890123456789000\"}"
+PARAMS="{\"payment_id\":\"1234567890123456\"}"
 curl \
     -u username:password --digest \
     http://$IP:$PORT/json_rpc \
@@ -2217,7 +2217,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"d
       "dummy_outputs": 0,
       "extra": 01b998f16459bcbac9c92074d3128d10724f10b74f5a7b1ec8e5a1e7f1150544020209010000000000000000",
       "fee": 33686583468, 
-      "payment_id": "0000000000000000000000000000000000000000000000000000000000000000",
+      "payment_id": "0000000000000000",
       "recipients": [{
         "address": "0b057f69acc1552014cb157138e5c4dd495347d333f68ff0af70494b979aed10",
         "amount": 881479064964081
@@ -2517,12 +2517,12 @@ $ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
       "address": "77Vx9cs1VPicFndSVgYUvTdLCJEZw9h81hXLMYsjBCXSJfUehLa9TDW3Ffh45SQa7xb6dUs18mpNxfUhQGqfwXPSMrvKhVp",
       "description": "Second account",
       "index": 0,
-      "payment_id": "0000000000000000000000000000000000000000000000000000000000000000"
+      "payment_id": "0000000000000000"
     },{
       "address": "78P16M3XmFRGcWFCcsgt1WcTntA1jzcq31seQX1Eg92j8VQ99NPivmdKam4J5CKNAD7KuNWcq5xUPgoWczChzdba5WLwQ4j",
       "description": "Third account",
       "index": 1,
-      "payment_id": "0000000000000000000000000000000000000000000000000000000000000000"
+      "payment_id": "0000000000000000"
     }]
   }
 }
