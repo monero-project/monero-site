@@ -22,7 +22,7 @@ permalink: /community/workgroups/index.html
           <p>{% t team.core_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-dev</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-dev"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-dev:monero.social?via=matrix.org&via=monero.social&via=haveno.network"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chat %} <code>#monero-dev</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-dev"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-dev:monero.social?via=matrix.org&via=monero.social"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
             <li>Email: <code>dev[at]getmonero[dot]org</code></li>
           </ul>
           <div class="row center-xs icons">
@@ -60,8 +60,8 @@ permalink: /community/workgroups/index.html
           <p>{% t team.devworkgroup_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chatgeneral %} <code>#monero-dev</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-dev"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-dev:matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
-            <li>{% t team.chatgui %} <code>#monero-gui</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-gui"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-gui:matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chatgeneral %} <code>#monero-dev</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-dev"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-dev:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chatgui %} <code>#monero-gui</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-gui"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-gui:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
           </ul>
           <div class="row center-xs icons">
             <a class="ext-noicon" href="https://github.com/monero-project/monero" target="_blank" rel="noreferrer, noopener" aria-label="Github monero logo"><div class="col social-icon github"></div></a>
@@ -80,7 +80,7 @@ permalink: /community/workgroups/index.html
           <p>{% t team.web_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-site</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-site"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-site:haveno.network?via=matrix.org&via=monero.social&via=haveno.network"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chat %} <code>#monero-site</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-site"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-site:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
           </ul>
           <div class="row center-xs icons">
             <a class="ext-noicon" href="https://github.com/monero-project/monero-site" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo"><div class="col social-icon github"></div></a>
@@ -98,7 +98,7 @@ permalink: /community/workgroups/index.html
           <p>{% t team.localization_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-translations</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-translations"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-translations:monero.social?via=matrix.org&via=monero.social&via=haveno.network"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a> <a class="chats-img" href="https://mattermost.getmonero.org/monero/channels/monero-translations"></a></li>
+            <li>{% t team.chat %} <code>#monero-translations</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-translations"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-translations:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
             <li>{% t team.locplatform %} <a href="https://translate.getmonero.org">Weblate</a></li>
           </ul>
           <div class="row center-xs icons">
@@ -135,7 +135,7 @@ permalink: /community/workgroups/index.html
           <p>{% t team.mrl_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-research-lab</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-research-lab"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-research-lab:matrix.org?via=matrix.org&via=monero.social&via=privacytools.io"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chat %} <code>#monero-research-lab</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-research-lab"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-research-lab:monero.social?via=matrix.org&via=privacytools.io"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
           </ul>
           <div class="row center-xs icons">
             <a class="ext-noicon" href="https://github.com/monero-project/research-lab" target="_blank" rel="noreferrer, noopener" aria-label="GitHub logo"><div class="col social-icon github"></div></a>
@@ -153,7 +153,7 @@ permalink: /community/workgroups/index.html
           <p>{% t team.space_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-space</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-space"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-space:monero.social?via=matrix.org&via=monero.social"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chat %} <code>#monero-space</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-space"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-space:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
             <li>{% t team.website %} <a href="https://monero.space" target="_blank" rel="noreferrer, noopener">monero.space</a></li>
             <li>Flarum: <a href="https://forum.monero.space" target="_blank" rel="noreferrer, noopener">forum.monero.space</a></li>
           </ul>
@@ -173,7 +173,7 @@ permalink: /community/workgroups/index.html
           <p>{% t team.mpwg_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-policy</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-policy"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-policy:matrix.org?via=matrix.org&via=monero.social"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.chat %} <code>#monero-policy</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-policy"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-policy:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
             <li>Email: <code>policy[at]getmonero[dot]org</code></li>
             <li>{% t team.website %} <a href="https://moneropolicy.org">moneropolicy.org</a></li>
           </ul>
