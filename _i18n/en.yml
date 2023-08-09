@@ -322,12 +322,10 @@ press-kit:
   pressdoc: Press Documentation
   quickfacts: "Quick-Facts Sheet"
   quickfactsp: >
-    A quick and easy to read document to know everything about Monero: history, key differentiating factors, technical fundamentals, and features in development.
+    A quick and easy to read document to know everything about Monero: history, key differentiating factors, technical fundamentals, and features in development (outdated).
   marketing: Marketing Material
   dontbuysticker: "The 'Don't buy Monero' sticker"
   dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available in multiple languages and formats (vectors included).
-  guerrillakit: Guerrilla Toolkit
-  guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
   promographics: "Monero Promotional graphics - Badges and stickers for websites"
   promographicsp: Various graphics and Badges created by TheMonera, for both merchants and simple enthusiasts.
   othersymbols: Other symbols and logos
@@ -466,7 +464,6 @@ faq:
   acontribute1: Translations. It's easy and anybody speaking a language beside English can help. Translations happen mostly on
   acontribute2: "Contact a Workgroup. Almost everything in Monero is managed by workgroups, which are groups of contributors (often lead by a coordinator) working on some specific aspect of the development. Some examples are: the localization workgroup (translations), the community workgroup, the GUI workgroup, the Outreach workgroup and so on. Workgroups are mostly independent and have their own structure. Contact the workgroup that interests you and ask how you can help. For a list of contacts see the"
   acontribute3: Do what you can do best. Are you a designer? Create Monero related images and spread them around. Are you a writer? Write about Monero. The only limit is your imagination. Find what you like to do and do it for Monero!
-  acontribute4: "The Outreach workgroup wrote a useful article to help newcomers:"
   q1: How does Monero have value?
   a1: Monero has value because people are willing to buy it. If no one is willing to buy Monero, then it will not have any value. Monero’s price increases if demand exceeds supply, and it decreases if supply exceeds demand.
   q2: How can I get Monero?
