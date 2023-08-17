@@ -47,6 +47,8 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [prune_blockchain](#prune_blockchain)
 * [calc_pow](#calc_pow)
 * [flush_cache](#flush_cache)
+* [add_aux_pow](#add_aux_pow)
+
 
 ### [Other RPC Methods](#other-daemon-rpc-calls):
 
@@ -1652,6 +1654,52 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"f
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
+    "status": "OK",
+    "untrusted": false
+  }
+}
+```
+
+
+### **add_aux_pow**
+
+Easily enable merge mining with Monero without requiring software that manually alters the extra field in the coinbase tx to include the merkle root of the aux blocks.
+
+Alias: *None*.
+
+Inputs:
+
+* *blocktemplate_blob* - string;
+* *aux_pow* - array;
+  * *id* - string;
+  * *hash* - string;
+
+Outputs:
+
+* *blocktemplate_blob* - string;
+* *blockhashing_blob* - string;
+* *merkle_root* - string;
+* *merkle_tree_depth* - unsigned int;
+* *aux_pow* - array;
+  * *id* - string;
+  * *hash* - string;
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"add_aux_pow","params":{"blocktemplate_blob":" ... ","aux_pow":[{"id":"3200b4ea97c3b2081cd4190b58e49572b2319fed00d030ad51809dff06b5d8c8","hash":"7b35762de164b20885e15dbe656b1138db06bb402fa1796f5765a23933d8859a"}]}}' -H 'Content-Type: application/json''
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "aux_pow": [{
+      "hash": "7b35762de164b20885e15dbe656b1138db06bb402fa1796f5765a23933d8859a",
+      "id": "3200b4ea97c3b2081cd4190b58e49572b2319fed00d030ad51809dff06b5d8c8"
+    }],
+    "blockhashing_blob": "1010ee97e2a106e9f8ebe8887e5b609949ac8ea6143e560ed13552b110cb009b21f0cfca1eaccf00000000b2685c1283a646bc9020c758daa443be145b7370ce5a6efacb3e614117032e2c22",
+    "blocktemplate_blob": " ... ",
+    "merkle_root": "7b35762de164b20885e15dbe656b1138db06bb402fa1796f5765a23933d8859a",
+    "merkle_tree_depth": 0,
     "status": "OK",
     "untrusted": false
   }
