@@ -1,47 +1,70 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Check if your wallet is in advanced mode
+## Убедитесь в том, что ваш кошелёк работает в продвинутом режиме
 
-To use a custom remote node, your wallet must be in advanced mode. Simple mode and Simple mode (bootstrap) don't support this feature.
+Чтобы использовать специализированный удалённый узел, ваш кошелек должен
+находиться в продвинутом режиме. Простой режим (Simple mode) и Простой режим
+с использованием узла начальной загрузки (bootstrap) не поддерживают эту
+возможность.
 
-To check if your wallet is in advanced mode, go to `Settings` > `Info` and see `Wallet mode`. 
+Чтобы проверить, работает ли ваш кошелёк в продвинутом режиме, зайдите в `Настройки ` > `Информация` и проверьте `Режим кошелька`.
 
-If your wallet is not in Advanced mode, you will have to change it to Advanced mode (see next step).
+Если ваш кошелёк не находится в продвинутом режиме, вам нужно будет изменить
+его (см. следующий шаг).
 
-If your wallet is already in Advanced mode, you can skip the next step.
+Если ваш кошелёк уже работает в продвинутом режиме, вы можете пропустить
+следующий шаг.
 
-![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
+![Режим
+кошелька](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
 
-## Change your wallet to advanced mode
+## Переключение вашего кошелька в продвинутый режим
 
-If your wallet is open, you need to close it first. Go to `Settings` > `Wallet` > `Close this wallet`
+Если ваш кошелёк открыт, вам нужно сначала закрыть его. Чтобы сделать это, перейдите в `Настройки` > `Кошёлек` > `Закрыть текущий кошелек`
 
-![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
+![Закрыть текущий
+кошелек](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
 
-The main menu (`Welcome to Monero` screen) will open. At the bottom left, click on `Change wallet mode` button, and on the next page select `Advanced mode`. Next, open your wallet file again.
+Откроется главное меню: экран `Добро пожаловать в Monero`. В левом нижнем
+углу нажмите кнопку `Изменить режим кошелька`, а на следующей странице
+выберите `Расширенный режим`. Затем снова откройте файл кошелька.
 
-![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
+![Изменить режим
+кошелька](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
 
-![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
+![Продвинутый
+режим](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
 
-## Finding a public remote node
+## Поиск публичного удаленного узла
 
-First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources for finding nodes. One of the easiest methods would be to use a public remote node run by moneroworld, but they have a tool for finding random nodes too.
+First, you will need to find a public remote node to connect to. The website
+[moneroworld.com](https://moneroworld.com/#nodes) has some great resources
+about remote nodes, and the website [monero.fail](https://monero.fail) has
+a list of functioning remote nodes.
 
-## Configuring your wallet to connect to a custom public remote node
+## Настройка вашего кошелька перед подключением к пубчичному удаленному узлу
 
-When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. 
+При открытии вашего кошелька появится всплывающее окно с опцией `Использовать собственные настройки`. Нажмите на него, и вы будете перенаправлены на страницу `Настройки` > `Узел`.
 
-If you don't see this pop up, go to `Settings` > `Node` page.
+Если вы не видите этого всплывающего окна, то перейдите на страницу `Настройки` > `Узел`.
 
-![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
+![Настройка удаленного
+узла](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
 
-On this page select `Remote Node`.
+На этой странице выберите `Удаленный узел`.
 
-In `Address` you should fill the address of the remote node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any IP address. 
+В поле `Адрес` следует ввести адрес удалённого узла, к которому вы хотите
+подключиться. Этот адрес может выглядеть, как `node.moneroworld.com`, или
+же, как любой IP-адрес.
 
-In `Port` you should fill the port of the remote node. If a remote node is listed as `node.moneroworld.com:18089`, the address is `node.moneroworld.com` and the port is `18089`. The default port is `18081`, but it can vary depending on the node you are connecting to.
+В поле `Порт` следует указать номер порта удалённого узла. Если удалённый
+узел будет указан, как `node.moneroworld.com:18089`, адресом будет
+`node.moneroworld.com`, а номером порта - `18089`. По умолчанию номер порта
+указывается, как `18089`, но он может варьироваться в зависимости от узла, к
+которому вы пытаетесь подключиться.
 
-If your remote node requires authentication, you can enter a username in `Daemon username` and a password in `Daemon password`.
+Если ваш удаленный узел требует аутентификации, вы можете ввести имя
+пользователя в поле `Имя пользователя демона` и пароль в `Пароль демона`.
 
-Finally, click on `Connect` button and wait for your wallet to connect.
+Наконец, нажмите кнопку `Подключиться` и дождитесь, пока ваш кошелёк не
+подсоединится к удалённому узлу.
