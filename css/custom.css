@@ -1851,6 +1851,10 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
     font-size: 1rem;
 }
 
+.btn-fixed#btn-404 {
+  margin-bottom: 1rem;
+}
+
 }
 
 @media only screen and (max-width: 30rem) {
