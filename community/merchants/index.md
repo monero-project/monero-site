@@ -41,6 +41,7 @@ meta_descr: merchants.descr
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
             <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
             <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
           <p><a href="https://bisq.network/" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitbisq %}</a></p>
@@ -59,6 +60,7 @@ meta_descr: merchants.descr
             <p>{% t merchants.cardkyc %} {% t merchants.depsell %}</p>
             <p><b>XMR &#8596; fiat:</b> <span class="check"></span></p>
             <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="check"></span></p>
           </div>
           <div class="center-xs">
             <p><a href="https://localmonero.co" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitlocalmonero %}</a></p>
@@ -77,6 +79,7 @@ meta_descr: merchants.descr
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
             <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
             <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
             <p><a href="https://hodlhodl.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithodlhodl %}</a></p>
