@@ -100,6 +100,7 @@ meta_descr: merchants.descr
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
+            <li><a href="https://fixedfloat.com/">Fixedfloat</a></li>
             <li><a href="https://sideshift.ai/">Sideshift.ai</a></li>
             <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
             <li><a href="https://changenow.io/">ChangeNow</a></li>
