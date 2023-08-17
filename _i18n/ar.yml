@@ -705,15 +705,6 @@ library:
     <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets,
     etc.</li></ul>
     See <a href="https://masteringmonero.com/">Mastering Monero</a> website for information.
-  magazines: Magazines
-  revuoq4p: >
-    Quarterly Monero magazine, Q4 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, and community.
-  revuoq3p: >
-    Quarterly Monero magazine, Q3 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, community,
-    Hardware, and Monerujo.
-
 moneropedia:
   add_new_text1: If there is an entry you'd like to modify or be added, please
   add_new_link: open an issue on this website's GitLab repository
@@ -727,7 +718,6 @@ moneropedia:
     block: Block
     bootstrap-node: Bootstrap-node
     bulletproofs: Bulletproofs
-    canonically-unique-host: Canonically-unique host
     change: Change
     clearnet: Clearnet
     coinbase: Coinbase Transaction

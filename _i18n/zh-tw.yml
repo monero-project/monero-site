@@ -266,9 +266,6 @@ faq:
   a14: 沒有所謂的百分之百匿名。 正常情況下，門羅幣能提供的匿名程度就是相對於不使用門羅幣能提供的保護程度。門羅幣也有可能出現 bug，即使沒有，還是有可能存在著一些在門羅幣使用中推測出些許隱私資訊的方法，不論是現在或未來，對隱私的的攻擊力道只會越來越強。舉例來說，即使你有繫安全帶還是有可能在車禍中重傷致死。請使用常識思考，謹慎面對威脅並作出一定程度的防禦。
 
   toc: 內容列表
-  general: 一般
-  advanced: 進階
-  nodeandwallet: 節點與錢包
   additional: 更多資訊：
   resandhelp: 資源＆幫助
   intro: 一些常見問題與其相關的解答與資源
@@ -629,15 +626,6 @@ library:
     <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets,
     etc.</li></ul>
     See <a href="https://masteringmonero.com/">Mastering Monero</a> website for information.
-  magazines: 雜誌
-  revuoq4p: >
-    Quarterly Monero magazine, Q4 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, and community.
-  revuoq3p: >
-    Quarterly Monero magazine, Q3 2017 edition.<br>
-    In this issue, updates about: development, Monero Research Lab, Kovri, community,
-    Hardware, and Monerujo.
-
 moneropedia:
   add_new_text1: 如果你有條目想要修改或新增，請
   add_new_link: 在本網站的 GitLab repository 新開一個 issue
@@ -651,7 +639,6 @@ moneropedia:
     block: Block
     bootstrap-node: Bootstrap-node
     bulletproofs: Bulletproofs
-    canonically-unique-host: Canonically-unique host
     change: Change
     clearnet: Clearnet
     coinbase: Coinbase Transaction

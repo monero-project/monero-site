@@ -466,9 +466,6 @@ contributing:
 faq:
   intro: ''
   toc: ''
-  general: ''
-  advanced: ''
-  nodeandwallet: ''
   additional: ""
   resandhelp: ''
   stackexchange: ''
@@ -927,10 +924,6 @@ library:
   rctcheatsheet20210604p: >
   zkbasicscheatsheet20220621: ""
   zkbasicscheatsheet20220621p: >
-  magazines: ''
-  revuoq4p: >
-  revuoq3p: >
-
 moneropedia:
   description: >
   instructions: ''
@@ -947,7 +940,6 @@ moneropedia:
     block: ''
     bootstrap-node: ''
     bulletproofs: ''
-    canonically-unique-host: ''
     change: ''
     clearnet: ''
     coinbase: ''

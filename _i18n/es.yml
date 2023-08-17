@@ -765,9 +765,6 @@ faq:
     que no está en estas preguntas frecuentes, es probable que encuentres la respuesta
     en Monero StackExchange.
   resandhelp: Recursos y ayuda
-  nodeandwallet: Nodo y Monedero
-  advanced: Avanzado
-  general: General
   toc: Tabla de contenidos
   qdangernode: ¿Es peligroso ejecutar un nodo personal?
   qnodetor: ¿Cómo puedo conectar mi nodo a través de Tor?
@@ -1629,15 +1626,6 @@ library:
     <li>Introducciones a los fundamentos técnicos de Monero, destinadas a desarrolladores,
     ingenieros, arquitectos de software y usuarios curiosos.</li> <li>Nuevos desarrollos
     como Kovri, Bulletproofs, Multifirmas, Monederos físicos, etc.</li></ul>.
-  magazines: Revistas
-  revuoq4p: >
-    Revista trimestral de Monero, edición 4T, 2017.<br>
-    En esta publicación, actualizaciones acerca de: desarrollo, el Laboratorio de
-    Investigación de Monero, Kovri y la comunidad.
-  revuoq3p: >
-    Revista trimestral de Monero, edición 3T, 2017.<br>
-    En esta publicación, actualizaciones acerca de: desarrollo, el Laboratorio de
-    Investigación de Monero, Kovri, la comunidad, Hardware y Monerujo.
   ringscheatsheet20210301: Hoja de ayuda de los anillos
   cheatsheets: Hojas de ayuda
   rctcheatsheet20210604: Hoja de ayuda de RingCT
@@ -1657,7 +1645,6 @@ moneropedia:
     block: Bloque
     bootstrap-node: Nodo Bootstrap
     bulletproofs: Bulletproofs
-    canonically-unique-host: Host único canónico
     change: Cambio
     clearnet: Clearnet
     coinbase: Transacción de Coinbase

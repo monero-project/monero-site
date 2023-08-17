@@ -769,15 +769,6 @@ library:
     wallets etc.</li></ul>
     Zie de website <a href="https://masteringmonero.com/">Mastering Monero</a> voor
     informatie over de volledige versie.
-  magazines: Tijdschriften
-  revuoq4p: >
-    Kwartaalblad over Monero, vierde kwartaal 2017.<br>
-    In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri en de community.
-  revuoq3p: >
-    Kwartaalblad over Monero, derde kwartaal 2017.<br>
-    In dit nummer nieuws over: ontwikkeling, Monero Research Lab, Kovri, community,
-    hardware en Monerujo.
-
 moneropedia:
   add_new_text1: Wil je een trefwoord bewerken of een nieuw trefwoord toevoegen?
   add_new_link: Open dan een issue op de GitLab-repository van deze website
@@ -791,7 +782,6 @@ moneropedia:
     block: Block
     bootstrap-node: Bootstrap-node
     bulletproofs: Bulletproofs
-    canonically-unique-host: Canonically-unique host
     change: Change
     clearnet: Clearnet
     coinbase: Coinbase Transaction

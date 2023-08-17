@@ -892,8 +892,6 @@ faq:
     haben, die nicht in diesem FAQ beantwortet ist, wirst du die Antwort mit großer
     Wahrscheinlichkeit auf dem Monero StackExchange finden.
   additional: 'Weitere Infos:'
-  nodeandwallet: Node und Wallet
-  advanced: Erweitert
   intro: Liste häufiger Fragen mit entsprechenden Antworten und Ressourcen
   qdangerrnode: Ist es gefährlich, einen Remote-Node zu verwenden? Welche Daten kann
     der Betreiber des Nodes von mir bekommen?
@@ -910,7 +908,6 @@ faq:
     auf der du nützliche Quellen findest, die dir bei der Identifikation und Lösung
     deines Problems helfen.
   resandhelp: Ressourcen & Hilfe
-  general: Allgemein
   toc: Inhaltsverzeichnis
   and: und
   aavailable: auch verfügbar in
@@ -1498,15 +1495,6 @@ library:
     Hardware-Wallets etc.</li></ul>
     Auf der Webseite von <a href="https://masteringmonero.com/">Mastering Monero</a>
     gibt es Informationen zur vollen Version.
-  magazines: Magazines
-  revuoq4p: >
-    Quartalsweise erscheinendes Monero-Magazin, Ausgabe Q4 2017<br>
-    In dieser Ausgabe: Neuigkeiten zur Entwicklung, dem Monero Research Lab, Kovri
-    und der Community
-  revuoq3p: >
-    Quartalsweise erscheinendes Monero-Magazin, Ausgabe Q3 2017<br>
-    In dieser Ausgabe: Neuigkeiten zur Entwicklung, dem Monero Research Lab, Kovri,
-    der Community, Hardware und Monerujo
 moneropedia:
   add_new_text1: Wenn es einen Eintrag gibt, den du hinzufügen oder ändern möchtest,
   add_new_link: eröffne bitte ein neues Issue im Repository dieser Webseite auf GitHub
@@ -1520,7 +1508,6 @@ moneropedia:
     block: Block
     bootstrap-node: Bootstrap-Node
     bulletproofs: Bulletproofs
-    canonically-unique-host: Eindeutig zuordenbarer Host
     change: Wechselgeld
     clearnet: Clearnet
     coinbase: Coinbase-Transaktion

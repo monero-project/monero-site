@@ -549,9 +549,6 @@ faq:
     Monero StackExchange.
   resandhelp: Recursos e Ajuda
   additional: 'Mais Informações:'
-  nodeandwallet: Nó e Carteira
-  advanced: Avançado
-  general: Geral
   toc: Sumário
   intro: Lista de perguntas e respostas comuns e recursos relacionados
   qfullpruned: Como decido se devo rodar um nó completo ou um nó podado?
@@ -1097,15 +1094,6 @@ library:
     carteiras hardware, etc.</li></ul>
     Veja o website do <a href="https://masteringmonero.com/">Mastering Monero</a>
     para mais informações da versão completa.
-  magazines: Revistas
-  revuoq4p: >
-    Revista trimestral sobre o Monero, edição Q4 2017.<br>
-    Nesta edição, atualizações sobre: desenvolvimento, Laboratório de Pesquisa Monero,
-    Kovri, e comunidade.
-  revuoq3p: >
-    Revista trimestral sobre o Monero, edição Q4 2017.<br>
-    Nesta edição, atualizações sobre: desenvolvimento, Laboratório de Pesquisa Monero,
-    Kovri, comunidade, hardware e Monerujo.
 moneropedia:
   add_new_text1: Se houver um item que você gostaria de modificar ou adicionar, por
     favor
@@ -1120,7 +1108,6 @@ moneropedia:
     block: Bloco
     bootstrap-node: Nó-bootstrap
     bulletproofs: Bulletproofs
-    canonically-unique-host: Host canonicamente único
     change: Troco
     clearnet: Clearnet
     coinbase: Transação coinbase

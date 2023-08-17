@@ -57,7 +57,6 @@ moneropedia:
     coinbase: Coinbase-transaksjon
     clearnet: Clearnet
     change: Endre
-    canonically-unique-host: Kanonisk-unik vert
     bootstrap-node: Oppstartsprogram-node
     block: Blokk
     blockchain: Blokkjede
@@ -118,12 +117,6 @@ blog:
   urgent: Hastende
   allposts: Alle innlegg
 library:
-  revuoq3p: "Quarterly Monero magazine, Q3 2017-utgave.<br> I denne utgaven finnes\
-    \ oppdateringer om: utvikling, Moneros forskningslab, Kovri, samfunnet, maskinvare\
-    \ og Monerujo.\n"
-  revuoq4p: "Quarterly Monero magazine, Q4 2017-utgave.<br> I denne utgaven finnes\
-    \ oppdateringer om: utvikling, Moneros forskningslab, Kovri og samfunnet.\n"
-  magazines: Tidsskrifter
   masteringmonerop: "En veiledning til den tilsynelatende komplekse verden bak Monero.<br>\
     \ Det inkluderer: <ul><li>En bred introduksjon til blokkjeder og viktigheten av\
     \ personvern – ideelt for brukere med lite teknisk kunnskap.</li> <li>Drøfting\
@@ -733,9 +726,6 @@ faq:
     på Monero StackExchange.
   resandhelp: Ressurser og hjelp
   additional: 'Mer informasjon:'
-  nodeandwallet: Node og lommebok
-  advanced: Avansert
-  general: Generelt
   toc: Innholdsfortegnelse
   intro: Liste over typiske spørsmål med tilhørende svar og ressurser
   amoneromeaning: Monero er et esperanto-ord som betyr «mynt». Monero ble opprinnelig

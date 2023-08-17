@@ -9,7 +9,7 @@ global:
   tags: 标签
   wikimeta: meta维基
   tagsmeta: meta标签
-  titlemeta: 门罗币是一种安全，隐私的，无法追踪的数字货币
+  titlemeta: 门罗币，一种安全，隐私的，且无法追踪的数字货币
   terms: 条款
   privacy: 隐私
   untranslated: 这个页面尚未被翻译。 如果您愿意协助翻译，请参见
@@ -626,14 +626,6 @@ library:
     <li>针对开发人员，工程师，软件架构师等人的对门罗技术基础的介绍</li>
     <li>新项目介绍：防弹证明，科维，多重签名和硬件钱包</li></ul>
     有关完整版，请参见 <a href="https://masteringmonero.com/">Mastering Monero</a> 网站
-  magazines: 杂志
-  revuoq4p: >
-    门罗季刊，2017年冬<br>
-    在本期中谈到了: 最新进展，门罗研究组，科维和社区
-  revuoq3p: >
-    门罗季刊，2017年秋<br>
-    在本期中谈到了: 最新进展，门罗研究组，科维，社区，硬件和Monerujo。
-
 moneropedia:
   add_new_text1: 如果有您想添加或修改的条目，请在
   add_new_link: 这个网页的GitLab存储库中开启一个新问题
@@ -647,7 +639,6 @@ moneropedia:
     block: 区块
     bootstrap-node: 引导节点
     bulletproofs: Bulletproofs
-    canonically-unique-host: Canonically-unique主机
     change: 找零
     clearnet: Clearnet
     coinbase: 区块奖励
