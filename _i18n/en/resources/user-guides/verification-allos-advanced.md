@@ -78,7 +78,7 @@ uid                           binaryFate <binaryfate@getmonero.org>
 If the fingerprint **DOES** match, then you may proceed.
 
 If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete
-the file `binaryfate.asc` and go back to [section 2.1](#21-get-signing-key).
+the file `binaryfate.asc` and go back to [section Get Signing Key](#get-signing-key).
 
 ### Import Signing Key
 
@@ -146,7 +146,7 @@ proceed.
 
 If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead
 delete the file `hashes.txt` and go back to [section
-3.1](#31-get-hash-file).
+Get Hash File](#get-hash-file).
 
 ## Download and Verify Binary
 
@@ -173,7 +173,7 @@ The steps for both Linux and Mac are the same. From a terminal, get the
 `SHA256` hash of your downloaded Monero binary. As an example this guide
 will use the `Linux, 64bit` GUI binary. Substitute
 `monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that
-you downloaded in [section 4.1](#41-get-monero-binary).
+you downloaded in [section Get Monero binary](#get-monero-binary).
 
 ```
 shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
@@ -192,14 +192,14 @@ If your hash **DOES** match, then you are finished with the guide! You can
 extract the files and install.
 
 If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
-binary you downloaded and go back to [section 4.1](#41-get-monero-binary).
+binary you downloaded and go back to [section Get Monero binary](#get-monero-binary).
 
 ### Binary Verification on Windows
 
 From a terminal, get the `SHA256` hash of your downloaded Monero binary. As
 an example this guide will use the `Windows, 64bit` GUI binary. Substitute
 `monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you
-downloaded in [section 4.1](#41-get-monero-binary).
+downloaded in [section Get Monero binary](#get-monero-binary).
 
 ``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```
 
@@ -217,4 +217,4 @@ If your hash **DOES** match, then you are finished with the guide! You can
 extract the files and install.
 
 If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
-binary you downloaded and go back to [section 4.1](#41-get-monero-binary).
+binary you downloaded and go back to [section Get Monero binary](#get-monero-binary).
