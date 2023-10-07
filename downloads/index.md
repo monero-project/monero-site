@@ -75,7 +75,7 @@ meta_descr: downloads.intro
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-linux"></span><a class="orange" href="https://downloads.getmonero.org/gui/linux64">Linux 64-bit</a></li>
-                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">macOS Intel</a></li>
+                      <li class="downloads"><span class="icon-apple"></span><a class="orange" href="https://downloads.getmonero.org/gui/mac64">macOS Intel</a> | <a class="orange" href="https://downloads.getmonero.org/gui/macarm8">macOS ARM</a></li>
                     </ul>
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">

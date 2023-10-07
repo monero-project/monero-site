@@ -57,7 +57,7 @@ jobs:
                   #CLI
                   filename=$(get_filename "${line}")
                   filenames_cli+=("${filename}")
-              elif [ $num -gt 13 ] && [ $num -lt 19 ] ; then
+              elif [ $num -gt 13 ] && [ $num -lt 20 ] ; then
                  #GUI
                   filename=$(get_filename "${line}")
                   filenames_gui+=("${filename}")
@@ -83,6 +83,7 @@ jobs:
           "monero-gui-install-win-x64-${version_gui}.exe" \
           "monero-gui-linux-x64-${version_gui}.tar.bz2" \
           "monero-gui-mac-x64-${version_gui}.dmg" \
+          "monero-gui-mac-armv8-${version_gui}.dmg" \
           "monero-gui-win-x64-${version_gui}.zip" \
           "monero-gui-source-${version_gui}.tar.bz2")
 
@@ -128,6 +129,7 @@ jobs:
                       *gui/win64install) filename=monero-gui-install-win-x64 ;;
                       *gui/win64) filename=monero-gui-win-x64 ;;
                       *gui/mac64) filename=monero-gui-mac-x64 ;;
+                      *gui/macarm8) filename=monero-gui-mac-armv8 ;;
                       *gui/linux64) filename=monero-gui-linux-x64 ;;
                       *gui/source) filename=monero-gui-source ;;
                       *cli/win64) filename=monero-win-x64 ;;
