@@ -18,6 +18,11 @@ gui:
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
+   - platform: macOS ARM
+     hash: 
+     link: https://downloads.getmonero.org/gui/macarm8
+     icon: icon-apple
+     vers: 
    - platform: Linux 64-bit
      hash: 027707b0ad740908c26895e3bf569ca284a813263129fe2635049313c5129230
      link: https://downloads.getmonero.org/gui/linux64
