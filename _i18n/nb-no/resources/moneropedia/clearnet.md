@@ -11,12 +11,12 @@ Når du bruker internettet for ting som nyheter, e-post, sosiale medier og
 til og med Monero, bruker du sannsynligvis en clearnet-tilkobling. Dette
 betyr at *alle* tilkoblingene dine kan spores og overvåkes av:
 
-- din [ISP](https://en.wikipedia.org/wiki/ISP)
+- your [ISP](https://en.wikipedia.org/wiki/ISP)
 
-- nettsiden/tjenesten/personen du kommuniserer med
+- the website/service/person you're communicating with
 
-- muligens en [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes)-kapabel
-enhet
+- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable
+  entity
 
 Og selv om du bruker [HTTPS](https://en.wikipedia.org/wiki/HTTPS) eller
 liknende (som *krypterer* overføringen din), er ruten din verken skjult

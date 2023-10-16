@@ -20,13 +20,13 @@ autentiske.
 
 ## Table of Contents:
 
-### - [Install GnuPG](#installing-gnupg)
+1. [Install GnuPG](#installing-gnupg)
 
-### - [Verify & Import Signing Key](#verify-and-import-signing-key)
+2. [Verify & Import Signing Key](#verify-and-import-signing-key)
 
-### - [Download & Verify Hash File](#download-and-verify-hash-file)
+3. [Download & Verify Hash File](#download-and-verify-hash-file)
 
-### - [Download & Verify Binary](#download-and-verify-binary)
+4. [Download & Verify Binary](#download-and-verify-binary)
 
 ## Installing GnuPG
 
@@ -37,7 +37,7 @@ anvisningene for installasjon.
 + På Mac, gå til [Gpgtools-nedlastingssiden](https://gpgtools.org/) og følg
 anvisningene for installasjon.
 
-+ GnuPG installert som standard på Linux.
++ On Linux, GnuPG is installed by default.
 
 ## Verify and Import Signing Key
 
@@ -78,8 +78,9 @@ uid                           binaryFate <binaryfate@getmonero.org>
 
 Dersom fingeravtrykket **MATCHER**, kan du fortsette.
 
-Dersom fingeravtrykket **IKKE MATCHER**, **IKKE FORTSETT.** Slett istedenfor
-`binaryfate.asc`-filen og gå tilbake til [seksjon 2.1](#21-get-signing-key).
+If the fingerprint **DOES NOT** match, **DO NOT CONTINUE.** Instead delete
+the file `binaryfate.asc` and go back to [section Get Signing
+Key](#get-signing-key).
 
 ### Import Signing Key
 
@@ -145,9 +146,9 @@ Primary key fingerprint: 81AC 591F E9C4 B65C 5806  AFC3 F0AF 4D46 2A0B DF92
 Dersom utdataen viser **Good signature**, som i eksempelet, kan du
 fortsette.
 
-Dersom du ser **BAD signature** i utdataen, **IKKE FORTSETT.** Slett
-istedenfor `hashes.txt`-filen og gå tilbake til [seksjon
-3.1](#31-get-hash-file).
+If you see **BAD signature** in the output, **DO NOT CONTINUE.** Instead
+delete the file `hashes.txt` and go back to [section Get Hash
+File](#get-hash-file).
 
 ## Download and Verify Binary
 
@@ -170,11 +171,11 @@ wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/l
 
 ### Binary Verification on Linux or Mac
 
-Trinnene for både Linux og Mac er de samme. Fra en terminal, få
-`SHA256`-hashen til den nedlastede Monero-binærfilen din. Som et eksempel
-vil denne veiledningen bruke `Linux, 64bit`-GUI-binærfilen. Bytt ut
-`monero-gui-linux-x64-v0.15.0.1.tar.bz2` med navnet på binærfilen som du
-lastet ned i [seksjon 4.1](#41-get-monero-binary).
+The steps for both Linux and Mac are the same. From a terminal, get the
+`SHA256` hash of your downloaded Monero binary. As an example this guide
+will use the `Linux, 64bit` GUI binary. Substitute
+`monero-gui-linux-x64-v0.15.0.1.tar.bz2` with the name of the binary that
+you downloaded in [section Get Monero binary](#get-monero-binary).
 
 ```
 shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
@@ -192,16 +193,16 @@ monero-linux-x64-v0.15.0.1.tar.bz2
 Dersom hashen din **MATCHER**, er du ferdig med veiledningen! Du kan pakke
 ut filene og installere.
 
-Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet
-binærfilen du lastet ned og gå tilbake til [seksjon
-4.1](#41-get-monero-binary).
+If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
+binary you downloaded and go back to [section Get Monero
+binary](#get-monero-binary).
 
 ### Binary Verification on Windows
 
-Åpne en terminal og få `SHA256`-hash til din nedlastede Monero-binærfil. Som
-et eksempel, vil denne veiledningen bruke `Windows,
-64bit`-GUI-binærfilen. Bytt ut `monero-gui-win-x64-v0.15.0.1.zip` med navnet
-på binæren som du lastet ned i [seksjon 4.1](#41-get-monero-binary).
+From a terminal, get the `SHA256` hash of your downloaded Monero binary. As
+an example this guide will use the `Windows, 64bit` GUI binary. Substitute
+`monero-gui-win-x64-v0.15.0.1.zip` with the name of the binary that you
+downloaded in [section Get Monero binary](#get-monero-binary).
 
 ``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```
 
@@ -218,6 +219,6 @@ ad 97 cd b1 75 e6 57 4b f3 07 f8 d1 c4 10 42 78 25 f4 30 4c 21 da 8a ac 18
 Dersom hashen din **MATCHER**, er du ferdig med veiledningen! Du kan pakke
 ut filene og installere.
 
-Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet
-binærfilen du lastet ned og gå tilbake til [seksjon
-4.1](#41-get-monero-binary).
+If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
+binary you downloaded and go back to [section Get Monero
+binary](#get-monero-binary).

@@ -18,7 +18,9 @@ terms: ["Locally-unique-host"]
 
 ### 备注
 
-- 门罗币主要使用@标准唯一主机解析，而I2P只使用@本地唯一主机解析。
+- Monero primarily uses @canonically-unique-host resolution while I2P only
+  uses @locally-unique-host resolution.
 
-- I2P和@Kovri的自定义顶级域名当前为 `.i2p` ，@Kovri只打算处理/使用 `.i2p`
-[顶级域名](https://en.wikipedia.org/wiki/Top_level_domain)
+- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and
+  @Kovri intends to only process/use the `.i2p` [top-level
+  domain](https://en.wikipedia.org/wiki/Top_level_domain)

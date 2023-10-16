@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-08 13:32+0100\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/spendkey.md:1
 #, no-wrap
 msgid "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
 msgstr "Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, które posiada każde konto. *Prywatny* klucz wydawania służy do wydawania środków na koncie"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/spendkey.md:1
 #, no-wrap
 msgid "[\"spend-key\", \"spend-keys\"]"
 msgstr "[\"spend-key\", \"spend-keys\", \"klucz-wydawania\", \"klucza-wydawania\", \"kluczem-wydawania\", \"kluczowi-wydawania\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,9 +40,9 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Podstawy"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:11
-#
 msgid "One of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account."
 msgstr "Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, które posiada każde konto. *Prywatny* klucz wydawania służy do wydawania środków na koncie."
 
@@ -52,8 +52,8 @@ msgstr "Jedna z dwóch par prywatnych i publicznych kluczy kryptograficznych, kt
 msgid "In-depth Information"
 msgstr "Szczegółowe informacje"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:14
-#
 msgid "The *private* spend key is a 256-bit integer that is used to sign Monero transactions. With the current deterministic key derivation method of the official wallet, the private spend key is also an alternate representation of the @mnemonic-seed. It can be used to derive all other account keys."
 msgstr "*Prywatny* klucz wydawania jest 256-bitową liczbą całkowitą używaną do podpisywania transakcji Monero. Poprzez obecną deterministyczną metodę pochodnej klucza w oficjalnym portfelu, prywatny klucz wydawania jest także zastępczą reprezentacją @kodu-mnemonicznego. Może zostać użyty do pobrania wszystkich pozostałych kluczy do konta."

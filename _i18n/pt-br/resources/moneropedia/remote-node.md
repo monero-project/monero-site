@@ -37,21 +37,22 @@ port, or use a public one.
 Public nodes are reachable in the network using two systems:
 
 - **Node aggregators**, which are basically lists of open remote nodes. The
-operators of those nodes decided to add them to the aggregator so that other
-people can use them. The aggregator will provide to the person who want to
-use a remote node a simple URL. This URL connects to one of the nodes in the
-list and will need to be inserted in the Monero wallet (GUI or CLI). The
-wallet will then contact one of the nodes provided by the URL and will allow
-the end user to immediately receive and send transactions. One of the most
-famous node aggregators is [MoneroWorld](https://moneroworld.com/#nodes).
+  operators of those nodes decided to add them to the aggregator so that
+  other people can use them. The aggregator will provide to the person who
+  want to use a remote node a simple URL. This URL connects to one of the
+  nodes in the list and will need to be inserted in the Monero wallet (GUI
+  or CLI). The wallet will then contact one of the nodes provided by the URL
+  and will allow the end user to immediately receive and send
+  transactions. One of the most famous node aggregators is
+  [MoneroWorld](https://moneroworld.com/#nodes).
 
 - **Native public nodes**. This is one of the new coolest features the
-Monero devs came up with to improve the user experience and to make easier
-to connect to the network. The @daemon allows to make a node public by
-simply adding the flag `--public-node`. Doing so, it will be advertised on
-the P2P network and people will be able to connect to it (or to another
-public node advertising itself in the same way) using the related option in
-the GUI and CLI wallets.
+  Monero devs came up with to improve the user experience and to make easier
+  to connect to the network. The @daemon allows to make a node public by
+  simply adding the flag `--public-node`. Doing so, it will be advertised on
+  the P2P network and people will be able to connect to it (or to another
+  public node advertising itself in the same way) using the related option
+  in the GUI and CLI wallets.
 
 Be aware that using public remote nodes can be risky. Node operators can
 link transactions to IP addresses. These risks can be mitigated, but you

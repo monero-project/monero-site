@@ -1,6 +1,6 @@
 ---
 summary: 'Смарт-майнинг - это процесс безошибочного майнинга при помощи регулируемого майнера'
-terms: ["smart-mining"]
+terms: ["smart-mining", "смарт-майнинг"]
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}

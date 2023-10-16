@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-28 10:24+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/paperwallet.md:1
 #, no-wrap
 msgid "A paper wallet stores the information necessary to send and receive Monero"
 msgstr "纸钱包储存着发送和接收门罗币的必要信息。"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/paperwallet.md:1
 #, no-wrap
 msgid "[\"paperwallet\", \"paperwallets\", \"paper-wallet\", \"paper-wallets\"]"
 msgstr ""
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/paperwallet.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,8 +40,8 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "基础知识"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/paperwallet.md:10
-#
 msgid "A paper wallet stores the information necessary to send and receive Monero."
 msgstr "纸钱包储存着发送和接收门罗币的必要信息。"

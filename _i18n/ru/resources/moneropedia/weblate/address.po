@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-30 11:19+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/address.md:1
 #, no-wrap
 msgid "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
 msgstr "Место отправления либо назначения платежа, например, donate.getmonero.org или набор из 95 символов, начинающийся с 4"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/address.md:1
 #, no-wrap
 msgid "[\"address\", \"addresses\"]"
 msgstr "[\"address\", \"addresses\", \"адресата\", \"адрес\", \"адреса\", \"адресом\", \"публичный-адрес\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,21 +40,23 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:11
-#
-msgid "When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
+#, fuzzy
+#| msgid "When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4'. The Monero donation address, for instance, is 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
+msgid "When you send Monero to someone you only need one piece of information, and that is their Monero address. A *raw* Monero address is a set of 95 characters starting with a '4' or an '8'. The Monero donation address, for instance, is 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
 msgstr "Если вы хотите отправить кому-нибудь Monero, то вам для этого понадобится знать только адрес Monero этого человека. *Необработанный* адрес Monero представляет собой ряд из 95 символов, начинающийся с 4. Адрес для сбора пожертвований Monero, например, выглядит так: 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:13
-#
 msgid "Because those addresses are long and complex, you will often encounter an @OpenAlias address instead. For example, Monero donations can be sent to donate@getmonero.org or donate.getmonero.org."
 msgstr "Поскольку такие адреса являются длинными и сложными, вы часто будете сталкиваться с адресами @OpenAlias, используемыми вместо них. Например, пожертвования Monero можно отправлять на адрес donate@getmonero.org или donate.getmonero.org."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:15
-#
 msgid "If you would like to get an @OpenAlias address of your own then there is some information on the [OpenAlias page](https://openalias.org/)."
 msgstr "Если же вам захочется завести свой собственный адрес @OpenAlias, то всю необходимую для этого информацию вы сможете найти непосредственно на странице [OpenAlias](https://openalias.org/)."
 
@@ -64,9 +66,9 @@ msgstr "Если же вам захочется завести свой собс
 msgid "Integrated address"
 msgstr "Интегрированный адрес"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:19
-#
 msgid "An integrated address is an address combined with an encrypted 64-bit @payment-ID. A raw integrated address is 106 characters long."
 msgstr "Интегрированным адресом называется адрес в сочетании с зашифрованным 64-битным @идентификатором-платежа. Длина необработанного интегрированного адреса составляет 106 символов."
 
@@ -76,8 +78,8 @@ msgstr "Интегрированным адресом называется ад�
 msgid "In-depth Information"
 msgstr "Углублённая информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/address.md:22
-#
 msgid "The address is actually the concatenation, in Base58 format, of the *public* @spend-key and the *public* @view-key, prefixed with the network byte (the number 18 for Monero) and suffixed with the first four bytes of the Keccac-256 hash of the whole string (used as a checksum)."
 msgstr "Адрес, по сути, является соединением (в формате Base58) *публичного* @ключа-траты и *публичного* @ключа-просмотра, с префиксом сетевого байта (в случае с Monero это число 18) и суффиксом из первых четырёх байтов хеша Keccac-256 всей строки (используется в качестве контрольной суммы)."

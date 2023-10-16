@@ -1,7 +1,6 @@
 ---
 summary: 'How Monero scaling is flexible and can accommodate many transactions as demand changes'
 terms: ["scalability"]
-
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}

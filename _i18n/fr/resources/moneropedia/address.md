@@ -7,10 +7,10 @@ terms: ["address", "addresses", "adresse", "adresses"]
 
 ### Les Bases
 
-Lorsque vous envoyez des Moneroj à quelqu'un, vous n'avez besoin que de
-cette information, et c'est son adresse Monero. Une adresse Monero *brut*
-est un lot de 95 caractères commençant par un '4'. L'adresse de dons de
-Monero, par exemple, est
+When you send Monero to someone you only need one piece of information, and
+that is their Monero address. A *raw* Monero address is a set of 95
+characters starting with a '4' or an '8'. The Monero donation address, for
+instance, is
 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
 Comme ces adresses sont longues et complexes, vous rencontrerez souvent une

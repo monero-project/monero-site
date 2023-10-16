@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-22 09:49+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/fungibility.md:1
 #, no-wrap
 msgid "property of a currency whereby two units can be substituted in place of one another"
 msgstr "Свойство валюты, благодаря которому две единицы могут свободно заменять друг друга"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/fungibility.md:1
 #, no-wrap
 msgid "[\"fungibility\", \"fungible\"]"
 msgstr "[\"fungibility\", \"fungible\", \"взаимозаменяемой\", \"взаимозаменяемостью\", \"Взаимозаменяемость\", \"взаимозаменяемость\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/fungibility.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,15 +40,15 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/fungibility.md:11
-#
 msgid "Property of a currency whereby two units can be substituted in place of one another."
 msgstr "Свойство валюты, благодаря которому две единицы могут свободно заменять друг друга."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/fungibility.md:13
-#
 msgid "Fungibility means that two units of a currency can be mutually substituted and the substituted currency is equal to another unit of the same size.  For example, two $10 bills can be exchanged and they are functionally identical to any other $10 bill in circulation (although $10 bills have unique ID numbers and are therefore not completely fungible).  Gold is probably a closer example of true fungibility, where any 1 oz. of gold of the same grade is worth the same as another 1 oz. of gold.  Monero is fungible due to the nature of the currency which provides no way to link transactions together nor trace the history of any particular XMR.  1 XMR is functionally identical to any other 1 XMR."
 msgstr "Взаимозаменяемость означает, что две единицы валюты могут заменять друг друга, и заменённая валюта будет равна другой единице того же достоинства. Например, две банкноты достоинством $10 можно обменять, если они будут функционально идентичными любой другой банкноте $10, находящейся в обороте (однако у банкнот достоинством $10 есть уникальный идентификационный номер, а значит, они не являются полноценно взаимозаменяемыми). Золото, пожалуй, является наиболее близким примером истинной взаимозаменяемости, так как 1 унция золота определённой пробы стоит так же, сколько и другая 1 унция такого же золота. Monero является взаимозаменяемой в силу природы валюты, которая не позволяет связать транзакции, а также отследить историю какой-либо отдельно взятой 1 XMR. 1 XMR функционально идентична любой другой 1 XMR."
 
@@ -58,8 +58,8 @@ msgstr "Взаимозаменяемость означает, что две е�
 msgid "Fungibility is an advantage Monero has over Bitcoin and almost every other cryptocurrency, due to the privacy inherent in the Monero @blockchain and the permanently traceable nature of the Bitcoin blockchain.  With Bitcoin, any BTC can be tracked by anyone back to its creation @coinbase-transaction.  Therefore, if a coin has been used for an illegal purpose in the past, this history will be contained in the @blockchain in perpetuity.  This lack of fungibility means that certain businesses will be obligated to avoid accepting BTC that have been previously used for purposes which are illegal, or simply run afoul of their Terms of Service.  Currently some large Bitcoin companies are blocking, suspending, or closing accounts that have received Bitcoin used in online gambling or other purposes deemed unsavory by said companies.  \n"
 msgstr "Взаимозаменяемость является преимуществом Monero, которого нет у Bitcoin и практически у всех остальных криптовалют. Причиной этого является анонимность, присущая @блoкчейну Monero, и возможность постоянного отслеживания блокчейна Bitcoin. В случае с Bitcoin любой может отследить каждый BTC вплоть до момента его создания в @coinbase-транзакции. Следовательно, если монета использовалась в незаконных целях в прошлом, то это будет навсегда отражено в @блoкчейне. Такое отсутствие взаимозаменяемости означает, что каким-то коммерческим предприятиям придётся отказаться от приёма BTC в качестве оплаты, если эта монета ранее использовалась в незаконных целях или же попросту не соответствует условиям предоставления услуг такого предприятия. В настоящее время некоторые большие компании, принимающие Bitcoin, блокируют, удерживают или закрывают счета, на которые были получены монеты, которые использовались при онлайн мошенничестве или каким-либо другим образом, который компания может счесть опасным для себя.  \n"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/fungibility.md:17
-#
 msgid "Monero has been built specifically to address the problem of traceability and non-fungibility inherent in other cryptocurrencies.  By having completely private transactions Monero is truly fungible and there can be no blacklisting of certain XMR, while at the same time providing all the benefits of a secure, decentralized, permanent blockchain."
 msgstr "Monero была разработана специально для того, чтобы решить проблему отслеживаемости и отсутствия взаимозаменяемости, присущей другим криптовалютам. Благодаря возможности проведения абсолютно анонимных транзакций Monero является действительно взаимозаменяемой, поэтому определённые XMR никогда не попадут в чёрные списки. В то же время обеспечиваются все преимущества, которыми обладает безопасный, децентрализованный и постоянный блокчейн."
