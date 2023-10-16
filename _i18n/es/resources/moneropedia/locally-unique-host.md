@@ -26,8 +26,8 @@ you wish.
 ### Notes
 
 - Monero primarily uses @canonically-unique-host resolution while I2P only
-uses @locally-unique-host resolution.
+  uses @locally-unique-host resolution.
 
 - I2P's and @Kovri's assigned top-level domain is currently `.i2p` and
-@Kovri intends to only process/use the `.i2p` [top-level
-domain](https://en.wikipedia.org/wiki/Top_level_domain)
+  @Kovri intends to only process/use the `.i2p` [top-level
+  domain](https://en.wikipedia.org/wiki/Top_level_domain)

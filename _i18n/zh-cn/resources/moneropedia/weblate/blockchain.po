@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-04 11:56+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/blockchain.md:1
 #, no-wrap
 msgid "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/blockchain.md:1
 #, no-wrap
 msgid "[\"blockchain\", \"blockchains\"]"
 msgstr ""
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/blockchain.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,9 +40,9 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "基础知识"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/blockchain.md:11
-#
 msgid "A @blockchain is a distributed database that continuously grows with a record of all of the transactions that have occurred with a given cryptocurrency.  This database is often referred to as a ledger because the data contains a large list of transactions that have taken place.  In Monero, these transactions are packaged together into 'blocks' every 2 minutes (on average), and all miners and nodes on the network have copies of these blocks."
 msgstr "@区块链是一个分布式数据库，它持续增长，记录使用指定加密货币发生的所有交易。这个数据库通常被称为账簿，因为数据包含一个大列表，上面记录着已发生的交易。在门罗币的区块链之中，这些交易平均每2分钟被打包成一个“区块”，网络上的所有矿工和节点都有这些区块的副本。"
 
@@ -52,8 +52,8 @@ msgstr "@区块链是一个分布式数据库，它持续增长，记录使用�
 msgid "Monero's @Blockchain"
 msgstr "门罗币的 @区块链"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/blockchain.md:14
-#
 msgid "Unlike Bitcoin and other cryptocurrencies, transactions in the Monero @blockchain do not reveal where funds came from or went to, providing anonymity and making the currency completely @fungible. Additionally, the amounts of all transactions are hidden by @RingCT, a feature of Monero. For auditing or other transparency purposes a user can share a @view-key to prove they control certain amounts of Moneroj."
 msgstr "与比特币或其他加密货币不同，那些在门罗币的@区块链上发生的交易，不会透露资金的来源或去向，提供匿名性，让货币完全具有@可替代性。此外，所有交易的金额都由@环机密交易隐藏，这是门罗币的一个特征。出于审计或其他透明度目的，用户可以通过共享@查看密钥，来证明他们管理了一定数量的门罗币。"

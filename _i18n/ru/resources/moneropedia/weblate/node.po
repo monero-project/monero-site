@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-26 14:01+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/node.md:1
 #, no-wrap
 msgid "A device on the Internet running the Monero software, with a full copy of the Monero blockchain. It can be local or remote"
 msgstr "Устройство в сети интернет с установленным программным обеспечением Monero, полной копией блокчейна Monero, активно поддерживающее сеть Monero"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/node.md:1
 #, no-wrap
 msgid "[\"node\", \"nodes\", \"full-node\", \"full-nodes\"]"
 msgstr "[\"node\", \"nodes\", \"full-node\", \"full-nodes\", \"узле\", \"узлами\", \"узлу\", \"узлы\", \"узел\", \"узла\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/node.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,9 +40,9 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/node.md:11
-#
 msgid "A device on the Internet running the Monero software, with a full copy of the Monero blockchain, actively assisting the Monero network. A node that is not running on your local machine is called @remote-node. Remote nodes can be private, if they are for personal use only, or open, if they are accessible by other people."
 msgstr "Устройство в сети интернет с установленным программным обеспечением Monero, полной копией @блoкчейна Monero, активно поддерживающее сеть Monero."
 
@@ -52,27 +52,27 @@ msgstr "Устройство в сети интернет с установле�
 msgid "More Information"
 msgstr "Дополнительная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/node.md:15
-#
 msgid "Nodes participate in the Monero network and secure @transactions by enforcing the rules of the network. Nodes download the entire @blockchain to know what transactions have taken place. Nodes assist the network by relaying transactions to other nodes on the network. Nodes may also choose to contribute to the Monero network by participating in crafting @blocks (this is called @mining)."
 msgstr "Большинство узлов, входящих в сеть Monero и соблюдающих правила сети, принимают участие в проведении безопасных @транзакций. Узлы полностью загружают @блoкчейн, чтобы знать, какие транзакций уже были проведены. Узлы поддерживают сеть путём ретрансляции транзакций на другие узлы, подключённые к сети. Узлы также могут поддерживать сеть Monero, участвуя в добыче @блоков (это называется @майнингом)."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/node.md:17
-#
 msgid "Mining is the process by which nodes create a block from the previously accepted block, transactions that are waiting to be processed in the transaction pool, and the @coinbase-transaction. When a node believes it has crafted a valid block it will transmit the completed block to other nodes on the network and those nodes signal agreement by working on the next block in the chain."
 msgstr "Майнинг является процессом, используя который узлы создают блок на основе ранее принятого блока транзакций, ожидающих обработки в пуле транзакций, а также @coinbase-транзакции. Если узел уверен в том, что он вычислил действительный блок, он должен передать законченный блок другим узлам сети, и эти узлы должны выразить своё согласие, начав работать над следующим блоком в цепочке."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/node.md:19
-#
 msgid "The rules that nodes follow are built into the Monero software; When all nodes agree about the rules to follow this is called @consensus. Consensus is necessary for a cryptocurrency because it is how the blockchain is built; If nodes don't agree about which blocks are valid, for example people who have not updated their Monero software, those nodes that don't agree will no longer be able to participate in the Monero network."
 msgstr "Правила, которым следуют узлы, содержатся в самом программном обеспечении Monero. Согласие всех узлов следовать этим правилам называется @консенсусом. Консенсус необходим криптовалюте, поскольку является принципом построения блокчейна. Если узлы не смогут прийти к соглашению, какие блоки считать действительными, например, у тех людей, которые не обновили своё программное обеспечение Monero, то те узлы, которые будут не согласны, более не смогут участвовать в работе сети Monero."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/node.md:21
-#
 msgid "The Monero Core Team plans for a network upgrade roughly every 6 months. At that time, if you are running a node it must be updated to the most recent version of the Monero software or it will no longer be able to participate in the network."
 msgstr "Monero Core Team планирует обновлять сеть каждые 6 месяцев: в октябре и апреле каждого года. На этот момент, если у вас есть рабочий узел, то он должен иметь самую последнюю версию обновлённого программного обеспечения Monero, или же он не сможет работать в сети."
 

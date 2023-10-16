@@ -1,6 +1,6 @@
 ---
 summary: 'Podobnie jak konto bankowe, konto Monero zawiera wszystkie twoje płatności wychodzące i przychodzące'
-terms: ["account", "accounts", "wallet", "wallets", "konto", "konta", "portfel", "portfela"]
+terms: ["account", "accounts", "wallet", "wallets", "konto", "konta", "portfel", "portfele"]
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
@@ -24,13 +24,13 @@ mogą zostać tymczasowo zablokowane.
 Kluczowa różnica między tradycyjną walutą elektroniczną a Monero polega na
 tym, że twoje konto Monero podlega jedynie twojej kontroli, przeważnie na
 twoim komputerze, i nikt nie ma do niego dostępu, jeśli tylko praktukujesz
-[zasady bezpieczeństwa](#prkatykowanie-zasad-bezpieczeństwa).
+[zasady bezpieczeństwa](#pratykowanie-zasad-bezpieczeństwa).
 
 ### Wiele kont
 
 Nie istnieją żadne koszta związane z założeniem konta Monero ani żadne
 opłaty, z wyjątkiem opłat za pojedyncze @transakcje, które trafiają do
-@górników.
+@kopaczy.
 
 Oznacza to, że każdy może w łatwy sposób założyć konto Monero dla siebie,
 jak i konto łączone z partnerem lub indywidualne dla dziecka. Podobnie firma
@@ -43,17 +43,17 @@ pracowniczej. Ponieważ opłaty za @transakcje są dość niskie, przekazywanie
 Monero opiera się głównie na zasadzie kryptograficznej znanej jako
 *kryptografia kluczy publicznych i prywatnych* lub *kryptografia
 asymetryczna*, która została dokładnie opisana w [tym artykule
-Wikipedii](https://en.wikipedia.org/wiki/Public-key_cryptography).
+Wikipedii](https://pl.wikipedia.org/wiki/Kryptografia_klucza_publicznego).
 
-Twoje konto bazuje na dwóch kluczach: kluczu wydawania i kluczu
-widoczności. @Klucz-wydawania jest jedynym kluczem wymaganym do wydawania
-twoich środków Monero, podczas gdy @klucz-widoczności pozwala na ujawnienie
+Twoje konto bazuje na dwóch kluczach: @kluczu-wydawania i
+@kluczu-wglądu. @Klucz-wydawania jest jedynym kluczem wymaganym do wydawania
+twoich środków Monero, podczas gdy @klucz-wglądu pozwala na ujawnienie
 twoich @transakcji osobom trzecim, na przykład dla celów kontrolnych czy
 rachunkowych. Klucze te pełnią również istotną rolę w prywatności
 @transakcji.
 
 Klucze prywatne w obu przypadkach muszą być chronione przez ciebie, aby
-utrzymać prywatność twojego konta. Z drugiej storny, klucze publiczne, jak
+utrzymać prywatność twojego konta. Z drugiej strony, klucze publiczne, jak
 sama nazwa wskazuje, mogą zostać ujawnione i tworzą część twojego adresu
 konta Monero. Różnica pomiędzy kluczem prywatnym a publicznym polega na tym,
 że ktoś może wysłać ci wiadomość zaszyfrowaną jednym z twoich publicznych
@@ -117,10 +117,10 @@ mnemonicznym.
 
 ### Praktykowanie zasad bezpieczeństwa
 
-Poza stworzenie kopii twojego kodu mnemonicznego, aby mieć dostęp do konta w
-przypadku utraty danych, ważne jest także praktykowanie zasad
+Poza stworzenie kopii twojego @seeda-mnemonicznego, aby mieć dostęp do konta
+w przypadku utraty danych, ważne jest także praktykowanie zasad
 bezpieczeństwa. Użyj bezpiecznego hasła przy zakładaniu lokalnego konta
-Monero (innego niż użyte na stronie [MyMonero] (https://mymonero.com) czy
+Monero (innego niż użyte na stronie [MyMonero](https://mymonero.com) czy
 innych systemach kont internetowych).
 
 Nie ujawniaj swojego hasła do konta Monero nikomu, bo może ono zostać użyte
@@ -134,7 +134,7 @@ czekać z podebraniem twoich pieniędzy aż wejdziesz na swoje konto Monero.
 ### Przekazywanie konta najbliższym
 
 Przekazanie dostępu do konta Monero twoim najbliższym jest tak proste, jak
-stworzenie jego kopii zapasowej. Po prostu zapisz swój @kod-mnemoniczny w
+stworzenie jego kopii zapasowej. Po prostu zapisz swój @seed-mnemoniczny w
 testamencie lub zostaw w bezpiecznym miejscu, które zostanie im ujawnione
 przy realizacji twojego testamentu. Kluczową zaletą takiego rozwiązania jest
 fakt, że twoi najbliżsi nie będą musieli czekać miesiącami na udostępnienie

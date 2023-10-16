@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-14 10:40+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/coinbase.md:1
 #, no-wrap
 msgid "a special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work"
 msgstr "Специальный тип транзакции, который включается в каждый блок и содержит небольшое количество Monero, отправляемых майнеру в качестве вознаграждения за майнинг"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/coinbase.md:1
 #, no-wrap
 msgid "[\"coinbase-transaction\"]"
 msgstr "[\"coinbase-transaction\", \"coinbase-транзакции\", \"coinbase-транзакцию\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/coinbase.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,8 +40,8 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/coinbase.md:10
-#
 msgid "A special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work."
 msgstr "Специальный тип транзакции, который включается в каждый блок и содержит небольшое количество Monero, отправляемых майнеру в качестве вознаграждения за майнинг."

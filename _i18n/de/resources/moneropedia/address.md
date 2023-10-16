@@ -7,10 +7,10 @@ terms: ["address", "addresses", "Adresse" , "Adressen"]
 
 ### Grundlagen
 
-Wenn du Monero an jemanden versenden möchtest, benötigst du nur eine einzige
-Information, und das ist die Monero-Adresse des jeweiligen Empfängers. Eine
-Monero-Adresse ist eine Reihe von 95 Schriftzeichen, beginnend mit einer
-"4". Die Spendenadresse von Monero ist beispielsweise
+When you send Monero to someone you only need one piece of information, and
+that is their Monero address. A *raw* Monero address is a set of 95
+characters starting with a '4' or an '8'. The Monero donation address, for
+instance, is
 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
 Da diese Adressen lang und komplex sind, wird dir stattdessen häufig eine
