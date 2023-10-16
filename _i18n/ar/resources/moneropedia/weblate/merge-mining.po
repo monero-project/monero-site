@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-20 13:06+0100\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: 2022-10-20 13:06+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,19 +15,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: entry
+#. type: Yaml Front Matter Hash Value: entry
 #: ../_i18n/en/resources/moneropedia/merge-mining.md:1
 #, no-wrap
 msgid "Merge Mining"
 msgstr ""
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/merge-mining.md:1
 #, no-wrap
 msgid "The process of mining two or more blockchains at the same time"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/merge-mining.md:1
 #, no-wrap
 msgid "[\"merge-mine\", \"merge-mining\", \"merged-mining\",\"merge-mined\"]"
@@ -35,8 +35,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/merge-mining.md:8
-msgid ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
 
 #. type: Title ###
@@ -47,25 +46,15 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/merge-mining.md:12
-msgid ""
-"Merge mining is the process of @mining two or more @blockchains at the same "
-"time. Generally there is a parent @blockchain and an auxillary blockchain "
-"both of which use the same proof of work algorithm. In most cases the "
-"auxillary chain will have a lower difficulty than the parent block chain."
+msgid "Merge mining is the process of @mining two or more @blockchains at the same time. Generally there is a parent @blockchain and an auxillary blockchain both of which use the same proof of work algorithm. In most cases the auxillary chain will have a lower difficulty than the parent block chain."
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/merge-mining.md:14
-msgid ""
-"Merge mining can be used for securing a lower hashrate blockchain or "
-"developing a @sidechain that does something different than the primary chain."
+msgid "Merge mining can be used for securing a lower hashrate blockchain or developing a @sidechain that does something different than the primary chain."
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/merge-mining.md:15
-msgid ""
-"Some examples that currently exist or are in development are: a blockchain "
-"game [TownForge](https://townforge.net/about), digital assets platform [Tari]"
-"(https://www.tari.com/#what-is-tari), and a decentralized mining pool "
-"(@P2Pool)."
+msgid "Some examples that currently exist or are in development are: a blockchain game [TownForge](https://townforge.net/about), digital assets platform [Tari](https://www.tari.com/#what-is-tari), and a decentralized mining pool (@P2Pool)."
 msgstr ""

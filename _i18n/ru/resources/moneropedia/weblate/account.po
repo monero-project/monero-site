@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 12:18+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/account.md:1
 #, no-wrap
 msgid "similar in function to a bank account, contains all of your sent and received transactions"
 msgstr "Аналогичный по функционалу банковского счета, содержит все ваши отправленные и полученные транзакции"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/account.md:1
 #, no-wrap
 msgid "[\"account\", \"accounts\", \"wallet\", \"wallets\"]"
 msgstr "[\"account\", \"accounts\", \"wallet\", \"wallets\", \"кошелек\", \"кошельки\", \"счет\", \"учетная-запись\", \"счёте\", \"счёту\", \"счёта\", \"счёт\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,21 +40,21 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:11
-#
 msgid "Those familiar with Monero's predecessors will be more familiar with the term *wallet* to describe this. In Monero we call this an account, and it is a private account owned and operated by a Monero user."
 msgstr "Тем, кто знаком с предшественниками Monero, будет более близко понятие *кошелёк*. В случае с Monero мы называем это счётом. То есть это приватный счёт, которым владеет и управляет пользователь."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:13
-#
 msgid "Your account contains all of the Monero @transactions you have sent and received. Your account balance is a sum of all the Monero you've received, less the Monero you've sent. When using Monero you may notice that your account has two balances, a locked and an unlocked balance. The unlocked balance contains funds that can be spent immediately, and the locked balance contains funds that you can't spend right now. You may receive a transaction that has an @unlock-time set, or you may have sent some Monero and are waiting for the @change to come back to your wallet, both situations that could lead to those funds being locked for a time."
 msgstr "Все @транзакции, которые вы проводили или получали, сохраняются на вашем счёте. Баланс вашего счёта является суммой всех полученных вами Monero минус Monero, которые вы потратили. Когда вы используете свои Monero, вы можете заметить, что у вашего счёта есть два баланса: заблокированный и открытый. На открытом балансе лежат средства, которые могут быть потрачены немедленно, а со средствами, которые лежат на заблокированном балансе, вы так поступить не можете. Вы можете принять транзакцию с заданным @временем-разблокировки, или же вы можете отправить некоторое количество Monero и ожидать, пока на ваш кошелёк не придёт @сдача. В обеих ситуациях средства могут быть заблокированы на какое-то время."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:15
-#
 msgid "A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security)."
 msgstr "Ключевое отличие Monero от традиционной электронной валюты заключается в том, что ваш счёт контролируется исключительно вами обычно посредством вашего компьютера, и никто кроме вас не может получить доступ к нему, если вы используете правильные меры по [обеспечению безопасности](#practicing-good-security)."
 
@@ -64,15 +64,15 @@ msgstr "Ключевое отличие Monero от традиционной э�
 msgid "Multiple Accounts"
 msgstr "Множество счетов"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:19
-#
 msgid "There are no costs attached to creating a Monero account, and there are no fees charged except for individual @transaction fees that go to @miners."
 msgstr "Создание счёта Monero не предполагает каких-либо затрат или комиссий, за исключением тех комиссий, которые взимаются за проведение отдельных @транзакций в пользу @майнеров."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:21
-#
 msgid "This means that individuals can easily create a Monero account for themselves as well as a joint account to share with their partner, and individual accounts for their children. Similarly, a business could create separate accounts for each division or group. Since Monero's @transaction fees are quite low, moving funds between accounts is not an expensive exercise."
 msgstr "Это означает, что человек (физическое лицо) может создать счёт Monero для себя, равно как и общий счёт для совместного использования со своим партнёром, а также счета для своих детей. Подобным образом предприятие (юридическое лицо) может открыть отдельные счета для каждого подразделения или группы. Так как комиссии за проведение @транзакций Monero невелики, перевод средств со счёта на счёт не влечёт за собой каких-либо значимых затрат."
 
@@ -82,21 +82,21 @@ msgstr "Это означает, что человек (физическое л�
 msgid "Cryptographic Keys"
 msgstr "Криптографические ключи"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:25
-#
 msgid "Monero relies heavily on a cryptography principle known as *public/private key cryptography* or *asymmetric cryptography*, which is thoroughly detailed in [this Wikipedia article](https://en.wikipedia.org/wiki/Public-key_cryptography)."
 msgstr "Monero во многом опирается на криптографический принцип, известный как *шифрование публичным / приватным ключом* или *асимметричное шифрование*, подробно описанный в этой статье на [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography)."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:27
-#
 msgid "Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy."
 msgstr "В основе вашего счёта лежат два ключа: @ключ-траты и @ключ-просмотра. Особенность @ключа-траты заключается в том, что это единственный ключ, необходимый для того, чтобы потратить ваши средства, в то время как @ключ-просмотра позволяет открыть ваши @транзакции третьей стороне, например, с целью проведения аудита бухгалтерии. Эти ключи, привязанные к вашему счёту, также играют важную роль с точки зрения обеспечения анонимности @транзакций Monero."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:29
-#
 msgid "The private keys for both of these must be protected by you in order to retain your account privacy. On the other hand, the public keys are obviously public (they are part of your Monero account address). For normal public/private key cryptography someone could send you a private message by encrypting it with either of your public keys, and you would then be the only one able to decrypt it with your private keys."
 msgstr "Приватные ключи, предназначенные для обеих этих целей, должны быть защищены, чтобы ваш счёт оставался анонимным. С другой стороны, публичные ключи являются явно публичными (они составляют часть адреса вашего счёта Monero). При нормальной реализации принципов шифрования публичным/приватным ключом кто-то сможет отправить вам приватное сообщение, зашифровав его при помощи любого из ваших публичных ключей, а вы сможете затем его расшифровать, используя ваши приватные ключи."
 
@@ -106,9 +106,9 @@ msgstr "Приватные ключи, предназначенные для о�
 msgid "Backing Up Your Account"
 msgstr "Резервная копия счёта"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:33
-#
 msgid "When you manage your own Monero Account with the private @spend-key, you are solely responsible for the security of your funds. Thankfully, Monero makes it very easy to backup your account. When creating a Monero account for the first time you will be given a unique @mnemonic-seed for your account that consists of 13 or 25 words in the language of your choosing. **This seed is the only thing you need to backup for your account**, and so it is imperative that it is written down and stored securely.  Never store this seed in a form or location that would allow someone else to see it!"
 msgstr "Если вы управляете вашим собственным счётом Monero при помощи @ключа-траты, вы и только вы отвечаете за безопасность ваших средств. К счастью, Monero позволяет без каких-либо усилий создать резервную копию вашего счёта. Когда вы впервые создаёте счёт Monero, вы получаете для него уникальную @мнемоническую-фразу, состоящую из 13 или 25 слов на выбранном вами языке. **Эта фраза — всё, что вам нужно для создания резервной копии вашего счёта**, поэтому важно записать её и хранить в безопасном месте. Никогда не следует хранить эту фразу в месте, в котором кто-то посторонний сможет увидеть её!"
 
@@ -186,9 +186,9 @@ msgstr ""
 "Background refresh thread started\n"
 "[wallet 4B15Zj]: █\n"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:72
-#
 msgid "As the example above indicates, it is incredibly important to store these words in safe locations. If you are concerned about the risk of critical loss at your home, for instance, you may want to store a second copy of your seed with your attorney or in a safety deposit box. It is also recommended that it is stored in a way that does not make it obvious that it is your seed, so writing it into a letter or as part of other notes is advisable."
 msgstr "Вышеприведённый пример указывает на крайнюю важность хранения слов в безопасном месте. Если вас беспокоит риск потери этой критической информации, например, у вас дома, вы можете сохранить вторую копию фразы у вашего адвоката или в банковской ячейке. Также рекомендуется хранить её таким образом, чтобы не было понятно, что это ваша мнемоническая фраза. Рекомендуется вписать её в письмо или как часть каких-нибудь других заметок."
 
@@ -198,15 +198,15 @@ msgstr "Вышеприведённый пример указывает на кр
 msgid "Practicing Good Security"
 msgstr "Надёжные средства защиты"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:76
-#
 msgid "Over and above backing up your @mnemonic-seed so that you have access to your account in the event of critical data loss, it is also important to practice good security. Use a secure password when creating a local Monero account (not used on [MyMonero](https://mymonero.com) or other web-based account systems)."
 msgstr "Вдобавок к резервированию @мнемонической-фразы, которое позволит вам получить доступ к счёту в случае потери критических данных, также важно использовать надёжные меры защиты. При создании локального счёта Monero следует использовать безопасный пароль (который не используется с [MyMonero](https://mymonero.com) или другими сетевыми системами, связанными со счетами)."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:78
-#
 msgid "Don't ever give your Monero account password to anyone, as this can be used to access the Monero on your computer without knowing your @mnemonic-seed. Similarly, make sure you have running and up-to-date antivirus, especially on Windows computers. Finally, be careful when clicking links in emails or on unknown and untrusted websites, as malware installed on your computer can sit and wait for you to access your Monero account before taking the funds from it."
 msgstr "Никогда не давайте кому-либо свой пароль от счёта Monero, так как он может быть использован для получения доступа к Monero через ваш компьютер, для чего не требуется знания @мнемонической-фразы. Подобным образом следует убедиться в том, что вы используете актуальную версию антивирусной программы, особенно это касается компьютеров, на которых установлена операционная система Windows. Наконец, будьте осторожны, когда переходите по ссылкам, которые вам присылают по электронной почте или же которые вам предлагаются на неизвестных и непроверенных веб-сайтах. Вредоносное программное обеспечение, установленное на ваш компьютер, может просто выжидать момента, когда вы зайдёте на свой счёт Monero, чтобы потом увести с него средства."
 
@@ -216,8 +216,8 @@ msgstr "Никогда не давайте кому-либо свой парол
 msgid "Leaving Your Account to Next of Kin"
 msgstr "Доверьте ваш счёт ближайшим родственникам"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:81
-#
 msgid "Providing access to your Monero account to your next of kin is just as easy as it is to backup your Monero account. Simply leave your @mnemonic-seed to them in your will, or store it somewhere safe where it will be given to them upon the execution of your will. A key advantage to this is that your next of kin won't have to wait for months for a third party to release the funds to them."
 msgstr "Обеспечить доступ к вашему счёту Monero кому-либо из близких родственников также просто, как создать резервную копию вашего аккаунта Monero. Просто укажите вашу @мнемоническую-фразу в завещании или же сохраните её где-нибудь в безопасности, чтобы потом они смогли получить к ней доступ. Ключевым преимуществом в данном случае является то, что вашему ближайшему родственнику не придётся ждать месяцы, пока третья сторона не предоставит ему доступ к средствам."

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-19 10:35+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,22 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/denominations.md:1
 #, no-wrap
 msgid "A denomination is a proper description of a currency amount. It is oftentimes a sub-unit of the currency. For example, traditionally a cent is 1/100th of a particular unit of currency."
 msgstr "Nominał jest prawidłowym opisem ilości waluty. Często jest on podjednostką waluty, na przykład cent jest 1/100 danej jednostki waluty."
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/denominations.md:1
 #, no-wrap
 msgid "[\"denominations\", \"subunits\", \"tacoshi\", \"piconero\", \"nanonero\", \"micronero\", \"millinero\", \"centinero\", \"decinero\",\"decanero\",\"hectonero\",\"kilonero\",\"meganero\",\"giganero\"]"
-msgstr ""
-"[\"denominations\", \"subunits\", \"nominał\", \"nominały\", \"nominałem\", \"nominałom\", \"nominałowi\", \"podjednostki\", \"podjednostkom\", \"podjednostka\", \"podjednostce\", \"podjednostką\", \"tacoshi\", \"piconero\", \"nanonero\", \"micronero\", \"millinero\", \"centinero\", \"decinero\",\"decanero\",\"hectonero\",\"kilonero\",\"meganero\",\"giganero\"]"
+msgstr "[\"denominations\", \"subunits\", \"nominał\", \"nominały\", \"nominałem\", \"nominałom\", \"nominałowi\", \"podjednostki\", \"podjednostkom\", \"podjednostka\", \"podjednostce\", \"podjednostką\", \"tacoshi\", \"piconero\", \"nanonero\", \"micronero\", \"millinero\", \"centinero\", \"decinero\",\"decanero\",\"hectonero\",\"kilonero\",\"meganero\",\"giganero\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/denominations.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -41,15 +40,15 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Podstawy"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/denominations.md:11
-#
 msgid "A denomination is a proper description of a currency amount. It is oftentimes a sub-unit of the currency. For example, traditionally a cent is 1/100th of a particular unit of currency.)."
 msgstr "Nominał jest prawidłowym opisem ilości waluty. Często jest on podjednostką waluty, na przykład cent jest 1/100 danej jednostki waluty."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/denominations.md:13
-#
 msgid "Monero denomination names add SI prefixes after dropping the initial \"mo\" for ease of use. Actually, the smallest unit of Monero is 1 piconero (0.000000000001 XMR)."
 msgstr "Nominał jest prawidłowym opisem ilości waluty. Często jest on podjednostką waluty, na przykład cent jest 1/100 danej jednostki waluty. Nazwy nominałów Monero tworzone są poprzez dodanie przedrostka jednostek SI w miejsce początkowego \"mo\". Najmniejszą jednostką Monero jest 1 piconero (0.000000000001 XMR)."
 
@@ -105,9 +104,9 @@ msgstr ""
 msgid "In-depth Information"
 msgstr "Szczegółowe informacje"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/denominations.md:37
-#
 msgid "Support for input using SI prefixes was [added to the Monero codebase](https://github.com/monero-project/monero/pull/1826) on March 3, 2017 by [Moneromooo](https://github.com/moneromooo-monero). The smallest unit of Monero (10^-12 XMR) was originally called a tacoshi in honor of user [Tacotime](https://bitcointalk.org/index.php?action=profile;u=19270), an early Monero contributor and was later renamed for ease of use and consistancy."
 msgstr "Pomoc w zakresie wkładów z użyciem przedrostków SI została [dodana do bazy kodów Monero](https://github.com/monero-project/monero/pull/1826) 3 marca 2017 roku przez [Moneromooo](https://github.com/moneromooo-monero). Najmniejsza jednostka Monero (10^-12 XMR) została pierwotnie nazwana tacoshi na cześć użytkownika [Tacotime] (https://bitcointalk.org/index.php?action=profile;u=19270), współautora Monero we wczesnej fazie, i następnie przemianowana dla łatwiejszego użycia i konsekwencji."
 
@@ -117,8 +116,8 @@ msgstr "Pomoc w zakresie wkładów z użyciem przedrostków SI została [dodana 
 msgid "Monerod Implementation"
 msgstr "Monerod Implementation"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/denominations.md:40
-#
 msgid "The smallest fraction of Monero in the current monerod implementation is also known as the @atomic-unit, which is currently one piconero."
 msgstr "The smallest fraction of Monero in the current monerod implementation is also known as the @atomic-unit, which is currently one piconero."

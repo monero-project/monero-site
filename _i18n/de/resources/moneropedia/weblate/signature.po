@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-07 09:48+0100\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/signature.md:1
 #, no-wrap
 msgid "a cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed"
 msgstr "Eine kryptografische Methode zum Beweisen des Besitzes einer Information wie auch zum Nachweis dessen, dass diese Information nach dem Signieren nicht abgeändert worden ist"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/signature.md:1
 #, no-wrap
 msgid "[\"signature\", \"signatures\"]"
 msgstr "[\"signature\", \"signatures\", \"Signatur\", \"Signaturen\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/signature.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,8 +40,8 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Grundlagen"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/signature.md:10
-#
 msgid "A cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed."
 msgstr "Eine kryptografische Methode zum Beweisen des Besitzes einer Information wie auch zum Nachweis dessen, dass diese Information nach dem Signieren nicht abgeändert worden ist."

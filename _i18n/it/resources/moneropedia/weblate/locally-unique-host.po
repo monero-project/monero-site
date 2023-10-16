@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-23 15:38+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:1
 #, no-wrap
 msgid "A host defined by you and resolved only by you"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:1
 #, no-wrap
 msgid "[\"Locally-unique-host\"]"
@@ -66,12 +66,12 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:21
-msgid "- Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution."
+msgid "Monero primarily uses @canonically-unique-host resolution while I2P only uses @locally-unique-host resolution."
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../_i18n/en/resources/moneropedia/locally-unique-host.md:22
-msgid "- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
+msgid "I2P's and @Kovri's assigned top-level domain is currently `.i2p` and @Kovri intends to only process/use the `.i2p` [top-level domain](https://en.wikipedia.org/wiki/Top_level_domain)"
 msgstr ""

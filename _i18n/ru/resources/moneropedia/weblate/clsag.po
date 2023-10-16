@@ -7,26 +7,24 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-13 11:19+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: 2022-03-31 18:48+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
-"Language-Team: Russian <https://translate.getmonero.org/projects/"
-"getmonero-moneropedia/cslag/ru/>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-moneropedia/cslag/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/clsag.md:1
 #, no-wrap
 msgid "Monero's efficient way of building ring signatures"
 msgstr "Эффективный способ создания кольцевых подписей Monero"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/clsag.md:1
 #, no-wrap
 msgid "[\"CLSAG\"]"
@@ -35,34 +33,17 @@ msgstr "[\"CLSAG\"]"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/clsag.md:7
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/clsag.md:9
 msgid "CLSAG (Concise Linkable Spontaneous Anonymous Group) signature are the new way Monero builds @ring-signatures, which replaces MLSAG (multilayered Linkable Spontaneous Anonymous Group Signature). CLSAG will go live and mandatory with the [Monero network upgrade of October 2020]({{ site.baseurl }}/2020/08/18/network-upgrade-october-2020.html). CLSAG maintains the same functionalities as MLSAG, but with the advantage of considerable size savings for @transactions and improvements in verification speed. This new technology was developed by contributors of the [Monero Research Lab]({{ site.baseurl }}/resources/research-lab/) and [audited by external researchers]({{ site.baseurl_root }}/resources/research-lab/audits/clsag.pdf)."
-msgstr ""
-"Подпись CLSAG (краткая подпись связанной спонтанной анонимной группы) - это "
-"новый способ создания @кольцевых-подписей Monero, который должен прийти на "
-"смену MLSAG (многоуровневая связываемая спонтанная анонимная группа ). "
-"Планируемая дата начала работы над интеграцией CLSAG в основную сеть Monero, "
-"[октябрь 2020 года]({{ site.baseurl }}/2020/08/18/network-upgrade-"
-"october-2020.html). CLSAG поддерживает те же функциональные возможности, что "
-"и MLSAG, но с преимуществом к экономии объема размеров @транзакции и "
-"повышению скорости проверки. Эта технология была разработана контрибьюторами "
-"из [Исследовательской лаборатории Monero]({{ site.baseurl }}/resources/"
-"research-lab/) и [проверена сторонними аудиторами]({{ site.baseurl_root }}/"
-"resources/research-lab/audits/clsag.pdf)."
+msgstr "Подпись CLSAG (краткая подпись связанной спонтанной анонимной группы) - это новый способ создания @кольцевых-подписей Monero, который должен прийти на смену MLSAG (многоуровневая связываемая спонтанная анонимная группа ). Планируемая дата начала работы над интеграцией CLSAG в основную сеть Monero, [октябрь 2020 года]({{ site.baseurl }}/2020/08/18/network-upgrade-october-2020.html). CLSAG поддерживает те же функциональные возможности, что и MLSAG, но с преимуществом к экономии объема размеров @транзакции и повышению скорости проверки. Эта технология была разработана контрибьюторами из [Исследовательской лаборатории Monero]({{ site.baseurl }}/resources/research-lab/) и [проверена сторонними аудиторами]({{ site.baseurl_root }}/resources/research-lab/audits/clsag.pdf)."
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/clsag.md:11
 msgid "With CLSAG, users see a 20% improvement in signature verification, and at least a 10% overall improvement for typical transactions. For example, a typical Monero transaction (2 inputs and 2 outputs) which usually weighs 2.5kB, takes only 1.9kB of blockchain space with CLSAG, a ~25% improvement."
-msgstr ""
-"С добавлением CLSAG пользователи получат повышение скорости проверки "
-"подписей на 20% и общее ускорение проверки всех новых транзакций как минимум "
-"на 10%. Например, с добавлением CLSAG стандартная транзакция Monero (2 входа "
-"и 2 выхода), которая составляет 2.5 КБ, теперь потребует всего 1.9 КБ в "
-"блокчейне, что на 25% меньше, чем при текущей реализации."
+msgstr "С добавлением CLSAG пользователи получат повышение скорости проверки подписей на 20% и общее ускорение проверки всех новых транзакций как минимум на 10%. Например, с добавлением CLSAG стандартная транзакция Monero (2 входа и 2 выхода), которая составляет 2.5 КБ, теперь потребует всего 1.9 КБ в блокчейне, что на 25% меньше, чем при текущей реализации."
 
 #. type: Title #####
 #: ../_i18n/en/resources/moneropedia/clsag.md:14
@@ -74,9 +55,7 @@ msgstr "Другие источники"
 #: ../_i18n/en/resources/moneropedia/clsag.md:17
 #, no-wrap
 msgid "<sub>1. [Announcement of CLSAG audit's result and overview of the technology]({{ site.baseurl }}/2020/07/31/clsag-audit.html)</sub><br>\n"
-msgstr ""
-"<sub>1. [Результаты аудита и обзор применяемых технологий в CLSAG]({{ "
-"site.baseurl }}/2020/07/31/clsag-audit.html)</sub><br>\n"
+msgstr "<sub>1. [Результаты аудита и обзор применяемых технологий в CLSAG]({{ site.baseurl }}/2020/07/31/clsag-audit.html)</sub><br>\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/clsag.md:18

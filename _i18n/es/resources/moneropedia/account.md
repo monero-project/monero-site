@@ -1,11 +1,11 @@
 ---
 summary: 'similar in function to a bank account, contains all of your sent and received transactions'
-terms: ["account", "accounts", "wallet", "wallets"]
+terms: ["account", "accounts", "wallet", "wallets", "cuenta", "cuentas", "monedero", "monederos"]
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### The Basics
+### Lo Basico
 
 Those familiar with Monero's predecessors will be more familiar with the
 term *wallet* to describe this. In Monero we call this an account, and it is
@@ -59,7 +59,7 @@ public/private key cryptography someone could send you a private message by
 encrypting it with either of your public keys, and you would then be the
 only one able to decrypt it with your private keys.
 
-### Backing Up Your Account
+### Respaldando Tu Cuenta
 
 When you manage your own Monero Account with the private @spend-key, you are
 solely responsible for the security of your funds. Thankfully, Monero makes

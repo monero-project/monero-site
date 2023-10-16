@@ -26,11 +26,9 @@ terms: ["Locally-unique-host", "локально-уникальным-хосто
 
 ### Примечания
 
-- Monero в первую очередь использует разрешение
-@канонически-уникального-хоста, в то время как I2P использует только
-разрешение @локально-уникального-хоста.
+- Monero primarily uses @canonically-unique-host resolution while I2P only
+  uses @locally-unique-host resolution.
 
-- В настоящее время доменом верхнего уровня для I2P's и @Kovri является
-`.i2p`, и @Kovri в перспективе будет только обрабатывать данные/использовать
-только [домена верхнего
-уровня](https://en.wikipedia.org/wiki/Top_level_domain) `.i2p`
+- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and
+  @Kovri intends to only process/use the `.i2p` [top-level
+  domain](https://en.wikipedia.org/wiki/Top_level_domain)

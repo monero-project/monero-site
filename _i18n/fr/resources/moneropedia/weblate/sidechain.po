@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-20 11:52+0100\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: 2022-10-20 11:52+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#. type: YAML Front Matter: entry
+#. type: Yaml Front Matter Hash Value: entry
 #: ../_i18n/en/resources/moneropedia/sidechain.md:1
 #, no-wrap
 msgid "sidechain"
 msgstr ""
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/sidechain.md:1
 #, no-wrap
 msgid "A blockchain that is merge mined with a primary blockchain"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/sidechain.md:1
 #, no-wrap
 msgid "[\"sidechain\", \"side-chain\", \"auxillary-chain\"]"
@@ -36,8 +36,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/sidechain.md:8
-msgid ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
 
 #. type: Title ###
@@ -48,19 +47,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/sidechain.md:12
-msgid ""
-"A sidechain (also known as an auxillary chain) is a @blockchain that is "
-"@merge-mined with Monero or other cryptocurrencies. In most cases the "
-"sidechain will have a lower difficulty than the primary blockchain."
+msgid "A sidechain (also known as an auxillary chain) is a @blockchain that is @merge-mined with Monero or other cryptocurrencies. In most cases the sidechain will have a lower difficulty than the primary blockchain."
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/sidechain.md:14
-msgid ""
-"A sidechain that allows you to transfer assets between different blockchains "
-"is called a \"pegged blockchain\". It works by setting the value of one "
-"asset equal to the value of another asset on an alternate blockchain, "
-"otherwise known as pegging."
+msgid "A sidechain that allows you to transfer assets between different blockchains is called a \"pegged blockchain\". It works by setting the value of one asset equal to the value of another asset on an alternate blockchain, otherwise known as pegging."
 msgstr ""
 
 #. type: Plain text

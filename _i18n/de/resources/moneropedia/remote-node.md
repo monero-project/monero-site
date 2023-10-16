@@ -38,25 +38,23 @@ seinen Node mit dir teilt, oder nutze schlicht einen öffentlichen Node.
 
 Öffentliche Nodes sind durch zwei Systeme im Netzwerk erreichbar:
 
-- **Node-Sammlungen**, im Grunde Auflistungen offener Remote-Nodes. Die
-Betreiber dieser Nodes haben sich dazu entschieden, diese zur Sammlung
-hinzuzufügen, sodass andere sie nutzen können. Die Sammlung versorgt
-denjenigen, der einen Remote-Node nutzen möchte, mit einer simplen
-URL. Diese verbindet zu einem der gelisteten Nodes und muss dazu im
-Monero-Wallet (GUI oder CLI) eingefügt werden. Das Wallet kontaktiert
-daraufhin einen der durch die URL vermittelten Nodes und erlaubt dem
-Endnutzer das sofortige Empfangen und Senden von Transaktionen. Eine der
-bekanntesten Node-Sammlungen ist
-[MoneroWorld](https://moneroworld.com/#nodes).
+- **Node aggregators**, which are basically lists of open remote nodes. The
+  operators of those nodes decided to add them to the aggregator so that
+  other people can use them. The aggregator will provide to the person who
+  want to use a remote node a simple URL. This URL connects to one of the
+  nodes in the list and will need to be inserted in the Monero wallet (GUI
+  or CLI). The wallet will then contact one of the nodes provided by the URL
+  and will allow the end user to immediately receive and send
+  transactions. One of the most famous node aggregators is
+  [MoneroWorld](https://moneroworld.com/#nodes).
 
-- **Native offene Nodes**, eine der neuen coolen Funktionen, die die
-Monero-Entwickler zur Verbesserung des Nutzererlebnisses und Vereinfachung
-des Verbindens zum Netzwerk eingebracht haben. Das CLI-Wallet erlaubt die
-Veröffentlichung eines Nodes durch das einfach Hinzufügen des Flags
-`--public-node`. Dadurch wird dieser Node auf dem P2P-Netzwerk angezeigt und
-Nutzer können sich zu diesem (oder jedem anderen öffentlichen Node, der so
-angezeigt wird) verbinden, indem sie die zugehörige Einstellung in den GUI-
-und CLI-Wallets vornehmen.
+- **Native public nodes**. This is one of the new coolest features the
+  Monero devs came up with to improve the user experience and to make easier
+  to connect to the network. The @daemon allows to make a node public by
+  simply adding the flag `--public-node`. Doing so, it will be advertised on
+  the P2P network and people will be able to connect to it (or to another
+  public node advertising itself in the same way) using the related option
+  in the GUI and CLI wallets.
 
 Sei dir darüber bewusst, dass die Nutzung von Remote-Nodes riskant sein
 kann. Node-Betreiber können Transaktionen mit IP-Adressen in Verbindung
