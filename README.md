@@ -38,9 +38,9 @@ A few random points of note:
 
 ### Tor
 
-This website is available natively on Tor. The onion address is in `_includes/onion.html` and a signed document containing the same address is in `/onion.txt`. The address in these 2 files must *always* match. The `onion.txt` files also includes the onion address of the 'downloads' subdomain.
+This website is available natively on Tor. The onion address is in `_includes/onion.html` and a signed document containing the same address is in `/onion.txt`. The address in these 2 files must *always* match. The `onion.txt` file also includes the onion address of the 'downloads' subdomain.
 
-If you want to post getmonero's onion address somewhere on the website, don't simply write it, instead include it using `{% include onion.html %}`. This avoids problems with typos and allow us top change the address only in one file if necessary.
+If you want to post getmonero's onion address somewhere on the website, don't simply write it, instead include it using `{% include onion.html %}`. This avoids problems with typos and allows us to change the address only in one file if necessary.
 
 ## PR workflow
 
@@ -48,8 +48,8 @@ To simplify the process of drafting, reviewing and merging pull requests, we use
 
 ## Translation
 
-In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinate and give support to translators-volunteers. For live support/request of information, come chat on `#monero-translations` on Matrix or IRC (Libera.chat)
-The entire website is translatable on Weblate, an easy to use localization platform that provide contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
+In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinates and gives support to translators-volunteers. For live support/request of information, come chat on `#monero-translations` on Matrix or IRC (Libera.chat)
+The entire website is translatable on Weblate, an easy to use localization platform that provides contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
 
 Translators are required to have:
 
@@ -247,7 +247,7 @@ Where `ENTRY` is a one word identifier for the title/name of your Moneropedia en
 
 ### 2. Make the localized File
 
-Navigate to the /\_i18n/en/resources/moneropedia folder and make a new file. give it the same <name>.md than in previous step.
+Navigate to the /\_i18n/en/resources/moneropedia folder and make a new file. give it the same <name>.md as in the previous step.
 Start the file with the front Matter:
 
 ```
@@ -272,7 +272,7 @@ Now you need to add the title of the page to the `_18n/en.yml` file. It *must* b
 
 ## How to update the Workgroups page
 
-The page is composed by boxes, each containing a workgroup. Just make sure to copy the structure from the preceding box and paste it right after it.
+The page is composed of boxes, each containing a workgroup. Just make sure to copy the structure from the preceding box and paste it right after it.
 
 Note that the class of the `div` which forms the box is `right/left half col-lg-6 col-md-6 col-sm-12 col-xs-12`. Make sure to choose `left` or `right` according to the position you want the box to appear in.
 
