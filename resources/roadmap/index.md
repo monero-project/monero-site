@@ -25,7 +25,7 @@ meta_descr: meta_descr.roadmap
                 <div class="tabPanel-widget">
                     <label for="tab-1" tabindex="0"></label>
                     <input id="tab-1" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2014-2017</h2>
+                    <h2>2014-2018</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2014</h2>
                             <ul>
@@ -86,11 +86,6 @@ meta_descr: meta_descr.roadmap
                                 <h3 class="months">{% t roadmap.dec %}</h3>
                                     <li class="completed">{% t roadmap.multisig %}</li>
                             </ul>
-                    </div>
-                    <label for="tab-2" tabindex="0"></label>
-                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2018</h2>
-                    <div class="tabPanel-content info-block">
                         <h2>2018</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.mar %}</h3>
@@ -128,8 +123,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.mms %}</li>
                             </ul>
                     </div>
-                    <label for="tab-3" tabindex="0"></label>
-                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
+                    <label for="tab-2" tabindex="0"></label>
+                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                     <h2>2019</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2019</h2>
@@ -161,8 +156,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.randomx %}</li>
                             </ul>
                     </div>
-                    <label for="tab-4" tabindex="0"></label>
-                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true">
+                    <label for="tab-3" tabindex="0"></label>
+                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
                     <h2>2020</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2020</h2>
@@ -183,8 +178,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.released-0-17 %}</li>
                             </ul>
                     </div>
-                    <label for="tab-5" tabindex="0"></label>
-                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-4" tabindex="0"></label>
+                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2021</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2021</h2>
@@ -197,8 +192,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed"><a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">{% t roadmap.p2pool %}</a></li>
                             </ul>
                     </div>
-                    <label for="tab-6" tabindex="0"></label>
-                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-5" tabindex="0"></label>
+                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2022</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2022</h2>
@@ -207,6 +202,16 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/07/19/monero-0.18.0.0-released.html">{% t roadmap.released-0-18 %}</a></li>
                                 <h3 class="months">{% t roadmap.aug %}</h3>
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/04/20/network-upgrade-july-2022.html">{% t roadmap.hardfork-v15 %}</a></li>
+                            </ul>
+                    </div>
+                    <label for="tab-6" tabindex="0"></label>
+                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <h2>2023</h2>
+                    <div class="tabPanel-content info-block">
+                        <h2>2023</h2>
+                            <ul>
+                                <h3 class="months"></h3>
+                                    <li class="completed">{% t roadmap.genimprov %}</li>
                             </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>
