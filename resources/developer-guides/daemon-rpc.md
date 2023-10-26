@@ -2894,7 +2894,7 @@ Outputs:
 Example:
 
 ```
-$ curl http://127.0.0.1:18081/out_peers -d '{"in_peers": 3232235535}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18081/in_peers -d '{"in_peers": 3232235535}' -H 'Content-Type: application/json'
 
 {
   "in_peers": 3232235535,
