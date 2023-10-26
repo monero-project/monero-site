@@ -248,17 +248,17 @@ Alias: *getaddress*.
 
 Inputs:
 
-* *account_index* - unsigned int; Return subaddresses for this account.
-* *address_index* - array of unsigned int; (Optional) List of subaddresses to return from an account.
+* *account_index* - unsigned int; Return the addresses for this account.
+* *address_index* - array of unsigned int; (Optional, defaults to all) List of address indices to return for the account. Index 0 of account 0 is the primary address, all others are subaddresses.
 
 Outputs:
 
-* *address* - string; The 95-character hex address string of the monero-wallet-rpc in session.
-* *addresses* array of addresses informations
-  * *address* string; The 95-character hex (sub)address string.
-  * *label* string; Label of the (sub)address
-  * *address_index* unsigned int; index of the subaddress
-  * *used* boolean; states if the (sub)address has already received funds
+* *address* - string; The first address, in base58, of the requested account index. For account index 0, this is the primary address.
+* *addresses* - array of address information entries
+  * *address* - string; The (sub)address represented in base58.
+  * *label* - string; Label of the (sub)address
+  * *address_index* - unsigned int; index of the (sub)address.
+  * *used* - boolean; states if the (sub)address has already received funds
 
 Example:
 
