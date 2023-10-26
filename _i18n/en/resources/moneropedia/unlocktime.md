@@ -15,8 +15,6 @@ Note that this works differently than Bitcoin's [nLockTime](https://en.bitcoin.i
 
 Using `unlock_time` has privacy consequences for the user(s) (and the wider Monero network if it is flooded with these). The value is public on the blockchain, so be aware of potential clustering. The feature is rarely used and may be removed in a future Monero release, so the Monero developers advise against building critical infrastructure that depends on this feature. 
 
-Decoy outputs may be selected from these locked outputs, thus identifying them as provable decoy outputs. At the moment, this has little impact on wider network privacy since this unlock time feature is so rarely used. 
-
 Further, true spends after a reasonably long lock time (more than several days) may be heuristically identified as the true spend, since there will be fewer other transactions using those outputs as decoys around that time period.
 
 Users should verify that the outputs they receive from others are not encumbered by an unexpected unlock time. Users may want to hold off acting upon such a transaction until the unlock time lapses. The `show_transfers` command includes the unlock time.
