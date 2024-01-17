@@ -100,6 +100,13 @@ meta_descr: merchants.descr
             <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr">BitcoinVN</a> (VND)</li>
           </ul>
           <p>*Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
+        <h3>Aggregators</h3>
+        <p>{% t merchants.aggregatorsp %}</p>
+        <ul class="logo">
+            <li><a href="https://swapzone.io/">Swapzone.io</a></li>
+            <li><a href="https://orangefren.com/">Orangefren</a></li>
+            <li><a href="https://trocador.app/">Trocador</a></li>
+          </ul>
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
