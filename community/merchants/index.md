@@ -108,6 +108,7 @@ meta_descr: merchants.descr
             <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
             <li><a href="https://changenow.io/">ChangeNow</a></li>
             <li><a href="https://godex.io/">Godex</a></li>
+            <li><a href="https://exolix.com/">Exolix</a></li>
           </ul>
       </div>
     </div>
