@@ -132,7 +132,7 @@ meta_descr: meta_descr.presskit
       <p>{% t press-kit.dontbuystickerp %}</p>
     </div>
     <div>
-      <h3><a href="https://www.monerooutreach.org/guerrilla-toolkit.html">{% t press-kit.guerrillakit %}</a></h3>
+      <h3><a href="https://github.com/monero-ecosystem/outreach-docs/blob/9358e5e10da539e82fbf204d3d78dbd9b99d68f9/monero-outreach-docs/en/website-sections/guerrila_toolkit_en.md">{% t press-kit.guerrillakit %}</a></h3>
       <p>{% t press-kit.guerrillakitp %}</p>
     </div>
     <div>
