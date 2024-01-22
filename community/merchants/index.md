@@ -85,6 +85,25 @@ meta_descr: merchants.descr
           </div>
         </div>
       </div>
+      <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="info-block">
+          <div class="center-xs">
+            <img class="merch" src="/img/merchants/basicswapdex.png" alt="BasicSwapDEX Logo" title="BasicSwapDEX">
+            <p>{% t merchants.basicswapdexdesc %}</p>
+          </div>
+          <div>
+            <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
+            <p>{% t merchants.cardkyc %} <span class="check"></span></p>
+            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardonion %}</b> {% t merchants.setreq %} </p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
+          </div>
+          <div class="center-xs">
+            <p><a href="https://basicswapdex.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitbasicswapdex %}</a></p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="info-block">
