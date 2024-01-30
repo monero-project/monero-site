@@ -216,9 +216,9 @@ meta_descr: meta_descr.roadmap
                         <h2>{% t roadmap.future %}</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
-                                    <li class="ongoing"><a href="https://haveno.exchange">{% t roadmap.haveno %}</a></li>
-                                    <li class="ongoing"><a href="https://github.com/seraphis-migration/strategy/wiki">{% t roadmap.seraphis-jamtis %}</a></li>
-                                    <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD">{% t roadmap.ospead %}</a></li>
+                                    <li class="ongoing"><a href="https://haveno.exchange" target="_blank">{% t roadmap.haveno %}</a></li>
+                                    <li class="ongoing"><a href="https://github.com/seraphis-migration/strategy/wiki" target="_blank">{% t roadmap.seraphis-jamtis %}</a></li>
+                                    <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD" target="_blank">{% t roadmap.ospead %}</a></li>
                                     <li class="ongoing">{% t roadmap.ringsize-sera-tryp %}</li>
                                     <li class="ongoing">{% t roadmap.tryptych %}</li>
                                     <li class="ongoing">{% t roadmap.xmr-eth-atomicswaps %}</li>

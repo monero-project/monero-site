@@ -87,11 +87,11 @@ meta_descr: faq.intro
                     <p>{% t faq.userguides %}</p>
                 <h3><a href="{{ site.baseurl }}/resources/developer-guides/">{% t titles.developerguides %}</a></h3>
                     <p>{% t faq.devguides %}</p>
-                <h3><a href="https://monero.stackexchange.com/">StackExchange</a></h3>
+                <h3><a href="https://monero.stackexchange.com/" target="_blank">StackExchange</a></h3>
                     <p>{% t faq.stackexchange %}</p>
-                <h3><a href="https://www.reddit.com/r/monerosupport/">r/monerosupport</a></h3>
+                <h3><a href="https://www.reddit.com/r/monerosupport/" target="_blank">r/monerosupport</a></h3>
                     <p>{% t faq.monerosupport %}</p>
-                <h3><a href="https://www.monero.how/">Monero.how</a></h3>
+                <h3><a href="https://www.monero.how/" target="_blank">Monero.how</a></h3>
                     <p>{% t faq.monerohow %}</p>
             </div>
         </div>
@@ -121,7 +121,7 @@ meta_descr: faq.intro
                         <p>{% t faq.acontribute1 %} <a href="https://translate.getmonero.org">Weblate</a>.</p>
                         <p>{% t faq.acontribute2 %} <a href="{{ site.baseurl }}/community/hangouts/">Hangouts</a>.</p>
                         <p>{% t faq.acontribute3 %}</p>
-                        <p>{% t faq.acontribute4 %} <a href="https://www.monerooutreach.org/stories/getting-started-helping-monero.html">Getting started with Monero</a>.</p>
+                        <p>{% t faq.acontribute4 %} <a href="https://www.monerooutreach.org/stories/getting-started-helping-monero.html" target="_blank">Getting started with Monero</a>.</p>
                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/get-started/contributing/">{% t titles.contributing %}</a></p>
                     </div>
                 </div>

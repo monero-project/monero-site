@@ -16,7 +16,7 @@ meta_descr: merchants.descr
         <p>{% t merchants.use %}</p>
         <p>{% t merchants.dirdescr %}</p>
         <ul class="logo">
-          <li><a href="https://cryptwerk.com/pay-with/xmr/">cryptwerk.com</a></li>
+          <li><a href="https://cryptwerk.com/pay-with/xmr/" target="_blank">cryptwerk.com</a></li>
         </ul>
       </div>
     </div>
@@ -24,7 +24,7 @@ meta_descr: merchants.descr
       <div class="info-block">
         <h2>P2P exchanges and Atomic Swaps</h2>
         <p>{% t merchants.descrp2p %}</p>
-        <p>{% t merchants.swapsdescr %} <a href="https://unstoppableswap.net/">unstoppableswap.net</a>.</p>
+        <p>{% t merchants.swapsdescr %} <a href="https://unstoppableswap.net/" target="_blank">unstoppableswap.net</a>.</p>
       </div>
     </div>
     <div class="row">
@@ -93,21 +93,21 @@ meta_descr: merchants.descr
         <h3>CEXes</h3>
         <p>{% t merchants.cexp %}</p>
         <ul class="logo">
-            <li><a href="https://www.kraken.com/">Kraken</a> (EUR*, USD*, CAD, GBP, JPY, AUD, CHF)</li>
-            <li><a href="https://www.binance.com/trade.html?symbol=XMR_BTC">Binance</a> (USD, EUR, RUB, TRY, NGN, UAH, KZT, INR, ...)</li>
-            <li><a href="https://dvchain.co/">DV Chain (OTC)</a> (USD*, CAD*, GBP*, EUR*, JPY*, ...)</li>
-            <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD*)</li>
-            <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr">BitcoinVN</a> (VND)</li>
+            <li><a href="https://www.kraken.com/" target="_blank">Kraken</a> (EUR*, USD*, CAD, GBP, JPY, AUD, CHF)</li>
+            <li><a href="https://www.binance.com/trade.html?symbol=XMR_BTC" target="_blank">Binance</a> (USD, EUR, RUB, TRY, NGN, UAH, KZT, INR, ...)</li>
+            <li><a href="https://dvchain.co/" target="_blank">DV Chain (OTC)</a> (USD*, CAD*, GBP*, EUR*, JPY*, ...)</li>
+            <li><a href="https://www.bitfinex.com/" target="_blank">Bitfinex</a> (USD*)</li>
+            <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr" target="_blank">BitcoinVN</a> (VND)</li>
           </ul>
           <p>*Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
         <h3>Swappers</h3>
         <p>{% t merchants.swappersp %}</p>
         <ul class="logo">
-            <li><a href="https://fixedfloat.com/">Fixedfloat</a></li>
-            <li><a href="https://sideshift.ai/">Sideshift.ai</a></li>
-            <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
-            <li><a href="https://changenow.io/">ChangeNow</a></li>
-            <li><a href="https://godex.io/">Godex</a></li>
+            <li><a href="https://fixedfloat.com/" target="_blank">Fixedfloat</a></li>
+            <li><a href="https://sideshift.ai/" target="_blank">Sideshift.ai</a></li>
+            <li><a href="https://simpleswap.io/" target="_blank">SimpleSwap</a></li>
+            <li><a href="https://changenow.io/" target="_blank">ChangeNow</a></li>
+            <li><a href="https://godex.io/" target="_blank">Godex</a></li>
           </ul>
       </div>
     </div>

@@ -26,10 +26,10 @@ meta_descr: meta_descr.contributing
                         <h3>{% t contributing.develop %}</h3>
                         <p>{% t contributing.developp %}</p>
                             <ul class="logo">
-                                <li><a href="https://github.com/monero-project/monero">{% t contributing.cli %}</a> {% t contributing.cli_p %}</li>
-                                <li><a href="https://github.com/monero-project/monero-gui">{% t contributing.gui %}</a> {% t contributing.gui_p %}</li>
-                                <li><a href="https://github.com/monero-project/monero-site">{% t contributing.website %}</a> {% t contributing.website_p %}</li>
-                                <li>{% t contributing.bug %} <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">{% t contributing.discl %}</a></li>
+                                <li><a href="https://github.com/monero-project/monero" target="_blank">{% t contributing.cli %}</a> {% t contributing.cli_p %}</li>
+                                <li><a href="https://github.com/monero-project/monero-gui" target="_blank">{% t contributing.gui %}</a> {% t contributing.gui_p %}</li>
+                                <li><a href="https://github.com/monero-project/monero-site" target="_blank">{% t contributing.website %}</a> {% t contributing.website_p %}</li>
+                                <li>{% t contributing.bug %} <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" target="_blank">{% t contributing.discl %}</a></li>
                             </ul>
                         <p>{% t contributing.develop_descr %} <a href="{{ site.baseurl }}/community/workgroups/">{% t contributing.develop_wg %}</a></p>
                         <h3>{% t contributing.mine %}</h3>
@@ -92,7 +92,7 @@ meta_descr: meta_descr.contributing
                         <div class="col-xs-12">
                             <h3>{% t contributing.supportdev %}</h3>
                             <p>{% t contributing.supportdev_p %}</p>
-                            <p>{% t contributing.supportdev_p2 %} <a href="https://www.openhub.net/p/monero/contributors/summary">{% t contributing.supportdev_link %}</a>.</p>
+                            <p>{% t contributing.supportdev_p2 %} <a href="https://www.openhub.net/p/monero/contributors/summary" target="_blank">{% t contributing.supportdev_link %}</a>.</p>
                         </div>
                     </div>
                     <div class="row start-xs">
