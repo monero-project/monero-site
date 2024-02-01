@@ -23,6 +23,7 @@ plugins:
   - jekyll-paginate
   - jekyll-multiple-languages-plugin
   - jekyll-feed
+  - jekyll-target-blank
 
 feed:
   posts_limit: 20
