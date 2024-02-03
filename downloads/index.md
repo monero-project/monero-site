@@ -16,7 +16,6 @@ meta_descr: downloads.intro
             <div class="col"><a href="#gui">{% t downloads.gui %}</a></div>
             <div class="col"><a href="#cli">{% t downloads.cli %}</a></div>
             <div class="col"><a href="#mobilelight">{% t downloads.mobilelight0 %}</a></div>
-            <div class="col"><a href="#blockchain">{% t downloads.blockchain %}</a></div>
             <div class="col"><a href="#hardware">{% t downloads.hardware %}</a></div>
         </div>
     </div>
@@ -300,21 +299,6 @@ meta_descr: downloads.intro
                         </div>
             </div>
             <!-- End 'Mobile & Light Wallets' -->
-            </section>
-            <section class="container full">
-                <!-- 'Import Blockchain' -->
-                <div class="info-block">
-                    <h2 id="blockchain">{% t downloads.blockchain %}</h2>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p>{% t downloads.blockchain1 %} {% t downloads.blockchain2 %} <a href="{{site.baseurl}}/resources/user-guides/importing_blockchain.html">"{% t downloads.blockchain3 %}"</a> {% t downloads.blockchain4 %}</p><br>
-                                <div class="center-xs"><a class="btn-link btn-auto btn-primary-top" href="https://downloads.getmonero.org/blockchain.raw">{% t downloads.blockchainbutton %}</a></div>
-                            </div>
-                        </div>
-                </div>
-                <!-- End 'Import Blockchain' -->
             </section>
             <section class="container full">
                 <div class="info-block">
