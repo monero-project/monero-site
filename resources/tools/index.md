@@ -24,6 +24,7 @@ meta_descr: meta_descr.tools
                         <p><a href="https://www.exploremonero.com/">Explore Monero</a></p>
                         <p><a href="https://monerovision.com">MoneroVision</a></p>
                         <p><a href="https://p2pool.io/explorer/">P2Pool</a> (<a href="http://yucmgsbw7nknw7oi3bkuwudvc657g2xcqahhbjyewazusyytapqo4xid.onion/explorer/">{% t tools.onion-service %}</a>)</p>
+                        <p><a href="https://3xpl.com/monero">3xpl</a> (<a href="http://3xplor3rzajysy4j5fi3g3k27vivfcw75zjxdb2tg2wpz3i4cdiyhxyd.onion/monero">{% t tools.onion-service %}</a>)</p>
                     </div>
                 </div>
             </div>
