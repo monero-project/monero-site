@@ -81,5 +81,5 @@ In future versions of the GUI, we expect to add direct Tor / I2P support so that
 
 # Additional resources
 
-* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)
+* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
 * [Using Tor](https://github.com/monero-project/monero#using-tor) (Monero README)

@@ -311,8 +311,8 @@ msgstr "# Дополнительные ссылки"
 #. type: Bullet: '* '
 #: _i18n/en/resources/user-guides/tor_wallet.md:85
 #, markdown-text
-msgid "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)"
-msgstr "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)"
+msgid "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)"
+msgstr "[ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)"
 
 #. type: Bullet: '* '
 #: _i18n/en/resources/user-guides/tor_wallet.md:85

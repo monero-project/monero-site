@@ -81,5 +81,5 @@ Wir rechnen damit, dass in zukünftigen Versionen des GUI eine direkte Tor/I2P-U
 
 # Zusätzliche Quellen
 
-* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)
+* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
 * [Using Tor](https://github.com/monero-project/monero#using-tor) (Monero README)
