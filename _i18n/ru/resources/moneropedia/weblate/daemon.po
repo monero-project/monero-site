@@ -51,13 +51,13 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:11
-msgid "It's possible to send commands to the Daemon directly or through the RPC interface. See the [Daemon RPC guide]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), which contains a detailed explanation (with examples) of the available RPC calls. For more detailed and technical information about the Daemon, see the Monerodocs reference at the bottom of this page."
+msgid "It's possible to send commands to the Daemon directly or through the RPC interface. See the [Daemon RPC guide]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), which contains a detailed explanation (with examples) of the available RPC calls. For more detailed and technical information about the Daemon, see the GetMonero.dev reference at the bottom of this page."
 msgstr ""
 "Команды демону можно отправлять напрямую или через интерфейс RPC. См. ["
 "руководство по интерфейсу RPC демона]({{ site.baseurl_root }}/resources/"
 "developer-guides/daemon-rpc.html), в котором подробно разъясняются, а также "
 "приводятся примеры доступных команд RPC. Более подробную и техническую "
-"информацию по демону можно найти по ссылке Monerodocs внизу этой страницы."
+"информацию по демону можно найти по ссылке GetMonero.dev внизу этой страницы."
 
 #. type: Title #####
 #: ../_i18n/en/resources/moneropedia/daemon.md:14
@@ -68,10 +68,10 @@ msgstr "Другие источники"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:17
 #, no-wrap
-msgid "<sub>1. The [monerod reference on Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>\n"
+msgid "<sub>1. The [monerod reference on GetMonero.dev](https://getmonero.dev/docs/interacting/monerod-reference)</sub><br>\n"
 msgstr ""
-"<sub>1. [Ссылка на страницу monerod на веб-сайте Monerodocs."
-"org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>\n"
+"<sub>1. [Ссылка на страницу monerod на веб-сайте GetMonero."
+"dev](https://getmonero.dev/docs/interacting/monerod-reference)</sub><br>\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:19

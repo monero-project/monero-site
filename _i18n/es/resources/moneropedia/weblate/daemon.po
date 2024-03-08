@@ -40,7 +40,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:11
-msgid "It's possible to send commands to the Daemon directly or through the RPC interface. See the [Daemon RPC guide]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), which contains a detailed explanation (with examples) of the available RPC calls. For more detailed and technical information about the Daemon, see the Monerodocs reference at the bottom of this page."
+msgid "It's possible to send commands to the Daemon directly or through the RPC interface. See the [Daemon RPC guide]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), which contains a detailed explanation (with examples) of the available RPC calls. For more detailed and technical information about the Daemon, see the GetMonero.dev reference at the bottom of this page."
 msgstr ""
 
 #. type: Title #####
@@ -52,7 +52,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:17
 #, no-wrap
-msgid "<sub>1. The [monerod reference on Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>\n"
+msgid "<sub>1. The [monerod reference on GetMonero.dev](https://getmonero.dev/docs/interacting/monerod-reference)</sub><br>\n"
 msgstr ""
 
 #. type: Plain text
