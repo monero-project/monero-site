@@ -1482,6 +1482,8 @@ Inputs:
 * *cumulative* - boolean; (optional, default is `false`) States if the result should be cumulative (`true`) or not (`false`)
 * *from_height* - unsigned int; (optional, default is 0) starting height to check from
 * *to_height* - unsigned int; (optional, default is 0) ending height to check up to
+* *binary* - boolean; for disabling epee encoding
+* *compress* - boolean; ignored if `binary` set to `false`
 
 Outputs:
 
@@ -1504,7 +1506,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
     "distributions": [{
       "amount": 2628780000,
       "base": 0,
-      "distribution": "",
+      "distribution": [ ... ],
       "start_height": 1462078
     }],
     "status": "OK"
