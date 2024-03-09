@@ -57,7 +57,7 @@ jobs:
                   #CLI
                   filename=$(get_filename "${line}")
                   filenames_cli+=("${filename}")
-              elif [ $num -gt 13 ] && [ $num -lt 20 ] ; then
+              elif [ $num -gt 13 ] && [ $num -lt 21 ] ; then
                  #GUI
                   filename=$(get_filename "${line}")
                   filenames_gui+=("${filename}")
@@ -71,6 +71,7 @@ jobs:
           "monero-freebsd-x64-${version_cli}.tar.bz2" \
           "monero-linux-armv7-${version_cli}.tar.bz2" \
           "monero-linux-armv8-${version_cli}.tar.bz2" \
+          "monero-linux-riscv64-${version_cli}.tar.bz2" \
           "monero-linux-x64-${version_cli}.tar.bz2" \
           "monero-linux-x86-${version_cli}.tar.bz2" \
           "monero-mac-armv8-${version_cli}.tar.bz2" \
@@ -140,6 +141,7 @@ jobs:
                       *cli/linux32) filename=monero-linux-x86 ;;
                       *cli/linuxarm8) filename=monero-linux-armv8 ;;
                       *cli/linuxarm7) filename=monero-linux-armv7 ;;
+                      *cli/linuxrisc64) filename=monero-linux-riscv64 ;;
                       *cli/androidarm8) filename=monero-android-armv8 ;;
                       *cli/androidarm7) filename=monero-android-armv7 ;;
                       *cli/freebsd64) filename=monero-freebsd-x64 ;;
