@@ -1207,6 +1207,10 @@ Inputs: *None*.
 
 Outputs:
 
+* *current_height* - unsigned int; blockheight.
+* *hard_forks* - array of unsigned int.
+  * *height* - unsigned int;
+  * *hf_version* - unsigned int; hard fork version.
 * *release* - boolean; States if the daemon software version corresponds to an official tagged release (`true`), or not (`false`)
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
@@ -1221,11 +1225,20 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
   "id": "0",
   "jsonrpc": "2.0",
   "result": {
+    "current_height": 3019446,
+    "hard_forks": [{
+      "height": 1,
+      "hf_version": 1
+    } ... {
+      "height": 2689608,
+      "hf_version": 16
+    }],
     "release": true,
     "status": "OK",
     "untrusted": false,
     "version": 196613
   }
+}
 ```
 
 
