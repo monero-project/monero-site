@@ -12,13 +12,12 @@ soziale Medien oder auch Monero nutzt, nutzt du sehr wahrscheinlich eine
 Clearnet-Verbindung. Dies bedeutet, dass deine *gesamten* Verbindungen
 aufgespürt, verfolgt und überwacht werden können, und das von:
 
-- deinem
-[Internetprovider](https://de.wikipedia.org/wiki/Internetdienstanbieter)
+- your [ISP](https://en.wikipedia.org/wiki/ISP)
 
-- der Webseite/der Person/dem Service, mit der/dem du in Verbindung stehst
+- the website/service/person you're communicating with
 
-- eventuell einer mit den Möglichkeiten der [Five
-Eyes](https://en.wikipedia.org/wiki/5_Eyes) befähigten Instanz
+- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable
+  entity
 
 Selbst wenn du
 [HTTPS](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure)
@@ -40,7 +39,7 @@ Clearnets zu vermeiden:
 
 - Java-I2P
 
-- [Tor](https://torproject.org/de/)
+- [Tor](https://torproject.org/)
 
 Diese Technologien schützen dich vor dem Clearnet, indem sie ein anonymes
 Netz **über** ebendiesem errichten und deine Verbindungen somit

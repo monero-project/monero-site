@@ -15,17 +15,16 @@ terms: ["pruning", "обрезанием", "Обрезание", "обрезан
 
 Существует три способа обрезания:
 
-- *Синхронизация обрезанного узла с нуля.* Загружается и синхронизируется
-только 1/3 всего блокчейна.
+- *Synchronize a pruned node from scratch:* You will download and sync only
+  1/3 of the full blockchain.
 
-- *Обрезание существующего узла.* Обрезается уже существующий блокчейн, но в
-результате блокчейн не становится меньше. Вместо этого части файла
-помечаются как свободные, после чего данные будут использовать это свободное
-место, и файл не будет разрастаться до тех пор, пока свободного место будет
-достаточно.
+- *Prune an existing node:* The already existing blockchain will be pruned,
+  but this will not result in a smaller blockchain. Instead, it will mark
+  parts of the file as free, so that future data will use that free space,
+  causing the file to not grow until free space grows scarce.
 
-- *Создание нового обрезанного блокчейна на основе полного.* Имеющийся
-полный блокчейн будет использован для нового обрезанного блокчейна.
+- *Create a new pruned blockchain from a full one:* A full blockchain that
+  you already have will be used to create a new, pruned blockchain.
 
 Обрезанные узлы довольно полезны, и в качестве @удалённых-узлов лучше
 использовать именно их, но, по возможности, пользователям рекомендуется

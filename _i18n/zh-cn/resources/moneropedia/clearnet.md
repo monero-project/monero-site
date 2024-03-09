@@ -9,11 +9,12 @@ terms: ["Clearnet"]
 
 当你为了看新闻、电子邮件、社交媒体，甚至是门罗币而使用互联网时，你最有可能使用明网连接。这意味着您的*所有*连接都可以通过以下方式进行跟踪、追溯和监视:
 
-- 你的 [ISP](https://en.wikipedia.org/wiki/ISP)
+- your [ISP](https://en.wikipedia.org/wiki/ISP)
 
-- 你正在进行通讯的网站/服务/人
+- the website/service/person you're communicating with
 
-- 可能是一个像 [五眼联盟](https://en.wikipedia.org/wiki/5_Eyes) 之类的，有能力的实体
+- possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable
+  entity
 
 即使您使用[HTTPS](https://en.wikipedia.org/wiki/HTTPS)或类似的协议(它*加密*您的传输)，您的路由也不是隐藏的，也不是匿名的，因此；这是*明面上的*。
 

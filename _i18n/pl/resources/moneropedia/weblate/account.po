@@ -7,32 +7,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 12:18+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: 2022-01-12 12:33+0000\n"
 "Last-Translator: Paul Janowitz <janowitz@gmail.com>\n"
-"Language-Team: Polish <https://translate.getmonero.org/projects/"
-"getmonero-moneropedia/account/pl/>\n"
+"Language-Team: Polish <https://translate.getmonero.org/projects/getmonero-moneropedia/account/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/account.md:1
 #, no-wrap
 msgid "similar in function to a bank account, contains all of your sent and received transactions"
 msgstr "Podobnie jak konto bankowe, konto Monero zawiera wszystkie twoje płatności wychodzące i przychodzące"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/account.md:1
 #, no-wrap
 msgid "[\"account\", \"accounts\", \"wallet\", \"wallets\"]"
-msgstr ""
-"[\"account\", \"accounts\", \"wallet\", \"wallets\", \"konto\", \"konta\", "
-"\"portfel\", \"portfele\"]"
+msgstr "[\"account\", \"accounts\", \"wallet\", \"wallets\", \"konto\", \"konta\", \"portfel\", \"portfele\"]"
 
 #
 #. type: Plain text
@@ -62,11 +58,7 @@ msgstr "Konto zawiera wszystkie twoje wychodzące i przychodzące @transakcje Mo
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:15
 msgid "A key difference between traditional electronic currency and Monero is that your account resides only under your control, normally on your computer, and cannot be accessed by anyone else if you [practice good security](#practicing-good-security)."
-msgstr ""
-"Kluczowa różnica między tradycyjną walutą elektroniczną a Monero polega na "
-"tym, że twoje konto Monero podlega jedynie twojej kontroli, przeważnie na "
-"twoim komputerze, i nikt nie ma do niego dostępu, jeśli tylko praktukujesz ["
-"zasady bezpieczeństwa](#pratykowanie-zasad-bezpieczeństwa)."
+msgstr "Kluczowa różnica między tradycyjną walutą elektroniczną a Monero polega na tym, że twoje konto Monero podlega jedynie twojej kontroli, przeważnie na twoim komputerze, i nikt nie ma do niego dostępu, jeśli tylko praktukujesz [zasady bezpieczeństwa](#pratykowanie-zasad-bezpieczeństwa)."
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/account.md:16
@@ -78,10 +70,7 @@ msgstr "Wiele kont"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:19
 msgid "There are no costs attached to creating a Monero account, and there are no fees charged except for individual @transaction fees that go to @miners."
-msgstr ""
-"Nie istnieją żadne koszta związane z założeniem konta Monero ani żadne "
-"opłaty, z wyjątkiem opłat za pojedyncze @transakcje, które trafiają do "
-"@kopaczy."
+msgstr "Nie istnieją żadne koszta związane z założeniem konta Monero ani żadne opłaty, z wyjątkiem opłat za pojedyncze @transakcje, które trafiają do @kopaczy."
 
 #
 #. type: Plain text
@@ -99,35 +88,19 @@ msgstr "Klucze kryptograficzne"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:25
 msgid "Monero relies heavily on a cryptography principle known as *public/private key cryptography* or *asymmetric cryptography*, which is thoroughly detailed in [this Wikipedia article](https://en.wikipedia.org/wiki/Public-key_cryptography)."
-msgstr ""
-"Monero opiera się głównie na zasadzie kryptograficznej znanej jako *"
-"kryptografia kluczy publicznych i prywatnych* lub *kryptografia asymetryczna*"
-", która została dokładnie opisana w [tym artykule Wikipedii](https://pl."
-"wikipedia.org/wiki/Kryptografia_klucza_publicznego)."
+msgstr "Monero opiera się głównie na zasadzie kryptograficznej znanej jako *kryptografia kluczy publicznych i prywatnych* lub *kryptografia asymetryczna*, która została dokładnie opisana w [tym artykule Wikipedii](https://pl.wikipedia.org/wiki/Kryptografia_klucza_publicznego)."
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:27
 msgid "Your account is based on two keys, a @spend-key and a @view-key. The @spend-key is special in that it is the single key required to spend your Monero funds, whereas the @view-key allows you to reveal your @transactions to a third party, for example for auditing or accounting purposes. These keys in your account also play an important role in Monero's @transaction's privacy."
-msgstr ""
-"Twoje konto bazuje na dwóch kluczach: @kluczu-wydawania i @kluczu-wglądu. "
-"@Klucz-wydawania jest jedynym kluczem wymaganym do wydawania twoich środków "
-"Monero, podczas gdy @klucz-wglądu pozwala na ujawnienie twoich @transakcji "
-"osobom trzecim, na przykład dla celów kontrolnych czy rachunkowych. Klucze "
-"te pełnią również istotną rolę w prywatności @transakcji."
+msgstr "Twoje konto bazuje na dwóch kluczach: @kluczu-wydawania i @kluczu-wglądu. @Klucz-wydawania jest jedynym kluczem wymaganym do wydawania twoich środków Monero, podczas gdy @klucz-wglądu pozwala na ujawnienie twoich @transakcji osobom trzecim, na przykład dla celów kontrolnych czy rachunkowych. Klucze te pełnią również istotną rolę w prywatności @transakcji."
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:29
 msgid "The private keys for both of these must be protected by you in order to retain your account privacy. On the other hand, the public keys are obviously public (they are part of your Monero account address). For normal public/private key cryptography someone could send you a private message by encrypting it with either of your public keys, and you would then be the only one able to decrypt it with your private keys."
-msgstr ""
-"Klucze prywatne w obu przypadkach muszą być chronione przez ciebie, aby "
-"utrzymać prywatność twojego konta. Z drugiej strony, klucze publiczne, jak "
-"sama nazwa wskazuje, mogą zostać ujawnione i tworzą część twojego adresu "
-"konta Monero. Różnica pomiędzy kluczem prywatnym a publicznym polega na tym, "
-"że ktoś może wysłać ci wiadomość zaszyfrowaną jednym z twoich publicznych "
-"kluczy, a jedynie ty możesz ją odszyfrować przy użyciu twoich kluczy "
-"prywatnych."
+msgstr "Klucze prywatne w obu przypadkach muszą być chronione przez ciebie, aby utrzymać prywatność twojego konta. Z drugiej strony, klucze publiczne, jak sama nazwa wskazuje, mogą zostać ujawnione i tworzą część twojego adresu konta Monero. Różnica pomiędzy kluczem prywatnym a publicznym polega na tym, że ktoś może wysłać ci wiadomość zaszyfrowaną jednym z twoich publicznych kluczy, a jedynie ty możesz ją odszyfrować przy użyciu twoich kluczy prywatnych."
 
 #. type: Title ###
 #: ../_i18n/en/resources/moneropedia/account.md:30
@@ -231,12 +204,7 @@ msgstr "Praktykowanie zasad bezpieczeństwa"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:76
 msgid "Over and above backing up your @mnemonic-seed so that you have access to your account in the event of critical data loss, it is also important to practice good security. Use a secure password when creating a local Monero account (not used on [MyMonero](https://mymonero.com) or other web-based account systems)."
-msgstr ""
-"Poza stworzenie kopii twojego @seeda-mnemonicznego, aby mieć dostęp do konta "
-"w przypadku utraty danych, ważne jest także praktykowanie zasad "
-"bezpieczeństwa. Użyj bezpiecznego hasła przy zakładaniu lokalnego konta "
-"Monero (innego niż użyte na stronie [MyMonero](https://mymonero.com) czy "
-"innych systemach kont internetowych)."
+msgstr "Poza stworzenie kopii twojego @seeda-mnemonicznego, aby mieć dostęp do konta w przypadku utraty danych, ważne jest także praktykowanie zasad bezpieczeństwa. Użyj bezpiecznego hasła przy zakładaniu lokalnego konta Monero (innego niż użyte na stronie [MyMonero](https://mymonero.com) czy innych systemach kont internetowych)."
 
 #
 #. type: Plain text
@@ -254,10 +222,4 @@ msgstr "Przekazywanie konta najbliższym"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/account.md:81
 msgid "Providing access to your Monero account to your next of kin is just as easy as it is to backup your Monero account. Simply leave your @mnemonic-seed to them in your will, or store it somewhere safe where it will be given to them upon the execution of your will. A key advantage to this is that your next of kin won't have to wait for months for a third party to release the funds to them."
-msgstr ""
-"Przekazanie dostępu do konta Monero twoim najbliższym jest tak proste, jak "
-"stworzenie jego kopii zapasowej. Po prostu zapisz swój @seed-mnemoniczny w "
-"testamencie lub zostaw w bezpiecznym miejscu, które zostanie im ujawnione "
-"przy realizacji twojego testamentu. Kluczową zaletą takiego rozwiązania jest "
-"fakt, że twoi najbliżsi nie będą musieli czekać miesiącami na udostępnienie "
-"funduszy przez osoby trzecie."
+msgstr "Przekazanie dostępu do konta Monero twoim najbliższym jest tak proste, jak stworzenie jego kopii zapasowej. Po prostu zapisz swój @seed-mnemoniczny w testamencie lub zostaw w bezpiecznym miejscu, które zostanie im ujawnione przy realizacji twojego testamentu. Kluczową zaletą takiego rozwiązania jest fakt, że twoi najbliżsi nie będą musieli czekać miesiącami na udostępnienie funduszy przez osoby trzecie."

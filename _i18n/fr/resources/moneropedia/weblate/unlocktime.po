@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-12 10:09+0000\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,14 +16,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/unlocktime.md:1
 #, fuzzy, no-wrap
 #| msgid "a special transaction where the recipient can only spend the funds after a future date, as set by the sender"
 msgid "a special transaction where the recipient(s) can only spend the funds after a future date, as set by the sender"
 msgstr "Une transaction spécifique où le destinataire ne peut dépenser les fonds qu'à une date ultérieure, définie par l'émetteur."
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/unlocktime.md:1
 #, no-wrap
 msgid "[\"unlock-time\"]"

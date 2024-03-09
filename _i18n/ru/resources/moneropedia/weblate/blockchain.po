@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-04 11:56+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/blockchain.md:1
 #, no-wrap
 msgid "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
 msgstr "Распределенная книга всех транзакций как прошлых, так и настоящих, без раскрытия того, из каких источников поступали или кто отправлял средства"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/blockchain.md:1
 #, no-wrap
 msgid "[\"blockchain\", \"blockchains\"]"
 msgstr "[\"blockchain\", \"blockchains\", \"Блoкчейне\", \"Блoкчейном\", \"блoкчейна\", \"блoкчейну\", \"Блoкчейн\", \"блoкчейн\", \"блoкчейне\", \"блoкчейном\", \"блокчейн\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/blockchain.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,9 +40,9 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Основная информация"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/blockchain.md:11
-#
 msgid "A @blockchain is a distributed database that continuously grows with a record of all of the transactions that have occurred with a given cryptocurrency.  This database is often referred to as a ledger because the data contains a large list of transactions that have taken place.  In Monero, these transactions are packaged together into 'blocks' every 2 minutes (on average), and all miners and nodes on the network have copies of these blocks."
 msgstr "@Блoкчейн является распределённой базой данных, которая непрерывно разрастается за счёт добавления в неё транзакций, которые проводились с использованием определённой криптовалюты. Эту базу данных часто называют Ledger (журналом), поскольку она содержит данные, представляющие собой длинный список проведённых транзакций. В случае с Monero эти транзакции упаковываются в \"блоки\" каждые две минуты (в среднем), и у всех майнеров и узлов сети есть копии этих блоков."
 
@@ -52,8 +52,8 @@ msgstr "@Блoкчейн является распределённой базо�
 msgid "Monero's @Blockchain"
 msgstr "@Блoкчейн Monero"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/blockchain.md:14
-#
 msgid "Unlike Bitcoin and other cryptocurrencies, transactions in the Monero @blockchain do not reveal where funds came from or went to, providing anonymity and making the currency completely @fungible. Additionally, the amounts of all transactions are hidden by @RingCT, a feature of Monero. For auditing or other transparency purposes a user can share a @view-key to prove they control certain amounts of Moneroj."
 msgstr "В отличие от Bitcoin и других криптовалют транзакции в @блoкчейне Monero не позволяют увидеть, откуда пришли или куда были направлены средства, что обеспечивает анонимность и делает валюту полностью @взаимозаменяемой. Кроме того, суммы всех транзакций скрываются за счёт использования протокола @RingCT, являющегося отличительной характеристикой Monero. В случае необходимости проведения аудита или в целях обеспечения прозрачности пользователь может поделиться @ключом-просмотра, чтобы доказать, что он контролирует определённую сумму Monero."

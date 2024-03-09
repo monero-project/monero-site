@@ -1,159 +1,163 @@
-{% include disclaimer.html translated="no" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-## Wallet
+## Portfel
 
-Before starting, you already need to have a wallet configured and
-working. The pool needs to know your wallet address to be able to send
-payments there. See the [Accepting Monero guide]({{ site.baseurl
-}}/get-started/accepting) for more information.
+Zanim zaczniesz, musisz mieć już skonfigurowany i działający portfel. Pool
+musi znać adres Twojego portfela, aby móc wysyłać tam płatności. Zobacz
+[Przewodnik przyjmowania Monero]({{ site.baseurl }}/get-started/accepting)
+po więcej informacji.
 
-## Profitability
+## Rentowność
 
-Before mining, you should decide if it is worth it or not for you. You have
-to decide this for yourself, based on your power costs and the hardware that
-you have available. There are many sites, such as
-[CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr)  that
-allow you to enter your miner's speed and power draw, and it will show you
-the profit (or loss) per week/month.
+Przed rozpoczęciem kopania powinieneś zdecydować, czy jest to dla Ciebie
+opłacalne, czy nie. Musisz zdecydować to dla siebie, w oparciu o koszty
+energii i sprzętu, który masz dostępny. Istnieje wiele stron, takich jak
+[CryptoCompare](https://www.cryptocompare.com/mining/calculator/xmr)  które
+pozwalają wprowadzić prędkość koparki i pobór prądu, a ona pokaże ci zysk
+(lub stratę) na tydzień/miesiąc.
 
-## Download Miner
+## Pobierz koparkę
 
-The first step is to download mining software onto your computer.
+Pierwszym krokiem jest pobranie oprogramowania do kopania na swój komputer.
 
 ### Windows
 
-The XMRig developer provides pre-built binaries for Windows users. They are
-available on the [GitHub release
-page](https://github.com/xmrig/xmrig/releases/latest).
+Twórca XMRig dostarcza gotowe binarki dla użytkowników Windows. Są one
+dostępne na [stronie publikacji na
+GitHubie](https://github.com/xmrig/xmrig/releases/latest).
 
-Scroll down until you see `xmrig-VERSION-msvc-win64.zip`. Download this file
-and extract the archive somewhere memorable, like your desktop.
+Przewiń w dół, aż zobaczysz `xmrig-WERSJA-msvc-win64.zip`. Pobierz ten plik
+i rozpakuj archiwum gdzieś łatwo do zapamiętania, na przykład na pulpit.
 
-### Ubuntu Linux
+### Linux Ubuntu
 
-The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04)
-and Focal (20.04). They may work on other Ubuntu versions, and on other
-distributions, but this is not guaranteed.
+Twórca XMRig dostarcza gotowe binarki dla Ubuntu Bionic (18.04) i Focal
+(20.04). Mogą one działać na innych wersjach Ubuntu, a także na innych
+dystrybucjach, ale nie jest to pewne.
 
-These binaries are available on the [GitHub release
-page](https://github.com/xmrig/xmrig/releases/latest).
+Te binarki są one dostępne na [stronie publikacji na
+GitHubie](https://github.com/xmrig/xmrig/releases/latest).
 
-Scroll down to 'Assets' until you see the correct version for your
-system. Download this file, extract the archive somewhere memorable, like
-your desktop.
+Przewiń w dół do 'Assets' aż zobaczysz odpowiednią wersję dla Twojego
+systemu. Pobierz ten plik i rozpakuj archiwum gdzieś łatwo do zapamiętania,
+na przykład na pulpit.
 
-### Other distributions and operative systems
+### Inne dystrybucje i systemy operacyjne
 
-Binaries are available for multiple distributions and operative systems, but
-you can also build the miner by yourself. Take a loot at [XMrig's
-docs](https://xmrig.com/docs/miner)
+Binarki są dostępne dla wielu dystrybucji i systemów operacyjnych, ale
+możesz również zbudować koparkę samodzielnie. Zajrzyj do [dokumentacji
+XMrig](https://xmrig.com/docs/miner)
 
-## Selecting a pool
+## Wybór puli
 
-There are lots of pools to choose from. You can find a list at
+Jest wiele puli do wyboru. Znajdziesz listę pod adresem
 [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero).
 
-Choosing a larger pool means that you will see more frequent (but smaller)
-payouts, but choosing a smaller pools helps keep the network
-decentralised. [Miners will not lose any revenue by mining on a smaller
-pool](https://redd.it/g6uh2l).
+Wybór większej puli oznacza, że będziesz mieć do czynienia z częstszymi (ale
+mniejszymi) wypłatami, ale wybór mniejszej puli pomaga utrzymać sieć w
+stanie decentralizacji. [Kopacze nie stracą żadnych przychodów, wydobywając
+w mniejszej puli](https://redd.it/g6uh2l).
 
-## Configuring the miner
+## Konfiguracja koparki
 
-See the [official docs](https://xmrig.com/docs/miner/config), for
-instructions and suggestions.
+Zobacz [oficjalną dokumentację](https://xmrig.com/docs/miner/config), aby
+uzyskać instrukcje i sugestie.
 
-## Starting the miner
+## Uruchomienie koparki
 
-Windows users can double click on xmrig.exe. Users of other operating
-systems should `cd` into the directory that contains XMRig and then type
-`./xmrig` and press return.
+Użytkownicy Windows mogą kliknąć dwukrotnie na xmrig.exe. Użytkownicy innych
+systemów operacyjnych powinni przejść `cd` do katalogu zawierającego XMRig,
+a następnie wpisać `./xmrig` i nacisnąć enter.
 
-If you see green messages saying that shares have been accepted,
-congratulations, everything is working!
+Jeśli widzisz zielone komunikaty informujące o zaakceptowaniu udziałów,
+gratulacje, wszystko działa!
 
-## Troubleshooting
+## Rozwiązywanie problemów
 
-### Anti-virus keeps removing XMRig
+### Antywirus ciągle usuwa XMRig
 
-Some anti-viruses flag XMRig as malware because it is often deployed to
-infected computers to mine without the owner's consent. As it is your
-computer and you are configuring the miner to mine for you, it is safe to
-add XMRig to your anti-virus whitelist.
+Niektóre antywirusy oznaczają XMRig jako złośliwe oprogramowanie, ponieważ
+jest on często instalowany na zainfekowanych komputerach w celu kopania bez
+zgody właściciela. Ponieważ jest to twój komputer i to ty konfigurujesz
+koparkę, aby kopała dla ciebie, możesz bezpiecznie dodać XMRig do swojej
+białej listy antywirusowej.
 
-### Cannot read/set MSR
+### Nie można odczytać/ustawić MSR
 
-On some CPUs, XMRig tries to increase performance by disabling certain
-features like your CPU's instruction prefetcher. These operations require
-root/administrator, so try right clicking xmrig.exe and running it as
-administrator, or running `sudo ./xmrig` on other systems.
+Na niektórych procesorach, XMRig próbuje zwiększyć wydajność poprzez
+wyłączenie pewnych funkcji, takich jak prefetcher instrukcji procesora. Te
+operacje wymagają roota/administratora, więc spróbuj kliknąć prawym
+przyciskiem myszy na plik xmrig.exe i uruchomić go jako administrator, lub
+uruchomić `sudo ./xmrig` na innych systemach.
 
-### Algo not known
+### Nieznany algorytm
 
-Find the line in config.json that says `algo: null` and change it to `algo:
-"rx/0"`. By default, XMRig expects the pool to tell it which hashing
-algorithm to use.
+Znajdź linię w config.json, zawierającą `algo: null` i zmień ją na `algo:
+"rx/0"`. Domyślnie XMRig oczekuje, że pula powie mu, który algorytm
+haszowania ma być użyty.
 
 ### Huge Pages 0%
 
-#### Allowing large pages on Windows
+#### Zezwalanie na duże strony w systemie Windows
 
-Taken from [the
-MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
+Pobrane z
+[MSDN](https://docs.microsoft.com/pl-pl/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
 
-1. On the Start menu, click Run. In the Open box, type gpedit.msc.
-2. On the Local Group Policy Editor console, expand Computer Configuration,
-   and then expand Windows Settings.
-3. Expand Security Settings, and then expand Local Policies.
-4. Select the User Rights Assignment folder.
-5. The policies will be displayed in the details pane.
-6. In the pane, double-click Lock pages in memory.
-7. In the Local Security Setting – Lock pages in memory dialog box, click
-   Add User or Group.
-8. In the Select Users, Service Accounts, or Groups dialog box, add an
-   account that you will run the miner on
-9. Reboot for change to take effect.
+1. W menu Start kliknij przycisk Uruchom. W otwartym oknie wpisz gpedit.msc.
+2. W panelu edytora lokalnych zasad grupy rozwiń pozycję konfiguracja
+   komputera, a następnie rozwiń pozycję ustawienia systemu Windows.
+3. Rozwiń ustawienia zabezpieczeń, a następnie rozwiń reguły lokalne.
+4. Wybierz folder Uprawnienia użytkownika.
+5. Zasady będą widoczne w okienku szczegółów.
+6. W okienku kliknij dwukrotnie Blokowanie stron w pamięci.
+7. W oknie dialogowym Lokalne ustawienia zabezpieczeń - Zablokuj strony w
+   pamięci kliknij przycisk Dodaj użytkownika lub grupę.
+8. W oknie dialogowym wyboru użytkowników, kont usług lub grup dodaj konto,
+   na którym będziesz uruchamiał koparkę
+9. Uruchom ponownie komputer, aby zmiany zadziałały.
 
-You may also need to launch the miner as administrator.
+Może być również konieczne uruchomienie koparki jako administrator.
 
-#### Allowing large pages on Linux
+#### Zezwalanie na duże strony w Linuksie
 
-Firstly stop the miner (if it's running), run the following commands to
-enable large pages and then start the miner as root:
+Najpierw zatrzymaj koparkę (jeśli jest uruchomiona), wykonaj następujące
+polecenia, aby włączyć duże strony, a następnie uruchom koparkę jako
+użytkownik root:
 
 	sudo sysctl -w vm.nr_hugepages=1168
 	sudo ./xmrig
 
-You may have to increase 1168 depending on how many NUMA nodes your CPU(s)
-have.
+Być może trzeba będzie zwiększyć 1168 w zależności od tego, ile węzłów NUMA
+ma(ją) twój(e) procesor(y).
 
-#### Allowing large pages on macOS
+#### Zezwalanie na duże strony na macOS
 
-Huge pages are not supported on macOS.
+Wielkie strony nie są obsługiwane w systemie macOS.
 
-### Balance Not Increasing
+### Saldo nie wzrasta
 
-Most pools are <abbr title="Pay Per Last N Shares">PPLNS</abbr> pools,
-which means that you only get paid when a miner on the pool finds a
-block. If the pool you are mining on is small, this can take a few
-days to weeks.
+Większość pul to pule <abbr title="Pay Per Last N Shares">PPLNS</abbr>,
+co oznacza, że otrzymujesz zapłatę tylko wtedy, gdy jeden z kopaczy z puli znajdzie
+blok. Jeśli pula, na której kopiesz jest mała, może to potrwać od kilku
+dni do tygodni.
 
-Additionally, any blocks found must mature before they can be paid out. This
-takes 60 blocks (approx. 2 hours).
+Dodatkowo, wszystkie znalezione bloki muszą dojrzeć zanim można je
+wypłacić. Zajmuje to 60 bloków (ok. 2 godziny).
 
-## Getting Help
+## Uzyskanie pomocy
 
-An active Monero mining community on Reddit is
-[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also
-join [#monero-pools on
-Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix
+Aktywna społeczność kopania Monero na Reddicie to
+[/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Możesz również
+dołączyć do [#monero-pools na
+Libera](https://web.libera.chat/?channel=#monero-pools) lub Matrix
 (#monero-pools:monero.social).
 
-## Going Futher
+## Idąc dalej
 
-* Consider using a subaddress just for mining, to prevent your address being
-  linked to different services.
-* [Consider using Tor to connect to the
-  pool](https://xmrig.com/docs/miner/tor) (or to a hidden service pool like
-  HashVault, RespectXMR and MoneroOcean). This hides mining activity from
-  your ISP, and prevents the pool from knowing who you are.
+* Rozważ użycie podadresu tylko do celów kopania, aby zapobiec łączeniu
+  Twojego adresu z różnymi usługami.
+* [Rozważ użycie sieci Tor do połączenia się z
+  pulą](https://xmrig.com/docs/miner/tor) (lub z ukrytym serwisem puli,
+  takim jak HashVault, RespectXMR i MoneroOcean). Ukrywa to aktywność
+  kopania przed Twoim dostawcą usług internetowych i uniemożliwia puli
+  dowiedzenie się, kim jesteś.

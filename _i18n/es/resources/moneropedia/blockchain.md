@@ -15,7 +15,7 @@ Monero, these transactions are packaged together into 'blocks' every 2
 minutes (on average), and all miners and nodes on the network have copies of
 these blocks.
 
-### Monero's @Blockchain
+### La @Blockchain de Monero
 
 Unlike Bitcoin and other cryptocurrencies, transactions in the Monero
 @blockchain do not reveal where funds came from or went to, providing
