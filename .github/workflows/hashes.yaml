@@ -141,7 +141,7 @@ jobs:
                       *cli/linux32) filename=monero-linux-x86 ;;
                       *cli/linuxarm8) filename=monero-linux-armv8 ;;
                       *cli/linuxarm7) filename=monero-linux-armv7 ;;
-                      *cli/linuxrisc64) filename=monero-linux-riscv64 ;;
+                      *cli/linuxriscv64) filename=monero-linux-riscv64 ;;
                       *cli/androidarm8) filename=monero-android-armv8 ;;
                       *cli/androidarm7) filename=monero-android-armv7 ;;
                       *cli/freebsd64) filename=monero-freebsd-x64 ;;
