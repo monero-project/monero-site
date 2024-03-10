@@ -80,6 +80,11 @@ cli:
      link: https://downloads.getmonero.org/cli/linuxarm7
      icon: icon-linux
      vers:
+   - platform: Linux RISC-V 64-bit 
+     hash: 
+     link: https://downloads.getmonero.org/cli/linuxrisc64
+     icon: icon-linux
+     vers:
    - platform: Android ARMv8
      hash: 6d9c7d31942dde86ce39757fd55027448ceb260b60b3c8d32ed018211eb4f1e4
      link: https://downloads.getmonero.org/cli/androidarm8
