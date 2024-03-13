@@ -120,7 +120,7 @@ meta_descr: meta_descr.presskit
   <div class="info-block">
     <h2>{% t press-kit.pressdoc %}</h2>
     <div>
-        <h3><a href="https://www.monerooutreach.org/quick-facts.html">{% t press-kit.quickfacts %}</a></h3>
+        <h3><a href="Monero Quick Facts_May2019.pdf">{% t press-kit.quickfacts %}</a></h3>
         <p>{% t press-kit.quickfactsp %}</p>
     </div>
   </div>
