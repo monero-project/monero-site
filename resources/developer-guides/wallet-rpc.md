@@ -687,6 +687,7 @@ Inputs:
   * *address* - string; Destination public address.
 * *account_index* - unsigned int; (Optional) Transfer from this account index. (Defaults to 0)
 * *subaddr_indices* - array of unsigned int; (Optional) Transfer from this set of subaddresses. (Defaults to empty - all indices)
+* *subtract_fee_from_outputs* - array of unsigned int; (Optional) Choose which destinations to fund the tx fee from instead of the change output. The fee will be split across the chosen destinations proportionally equally.
 * *priority* - unsigned int; Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
 * *mixin* - unsigned int; Number of outputs from the blockchain to mix with (0 means no mixing).
 * *ring_size* - unsigned int; Number of outputs to mix in the transaction (this output + N decoys from the blockchain). (Unless dealing with pre rct outputs, this field is ignored on mainnet).
@@ -728,6 +729,32 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"t
 }
 ```
 
+In the example below, we use `subtract_fee_from_outputs` to deduct the transaction fee from the 1st and 2nd destinations. 
+
+```
+$ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"transfer","params":{"destinations":[{"amount":10000000000,"address":"5AVBTfFcsVjfxN4VqGqykY69M2bDd6a8F6ZMt27qFbAHJX6VKzkcH5XW9d6VGQVk7mD4H11q6GDeA3v8aRdzGZrnBqdMxpB"},{"amount":30000000000,"address":"73a4nWuvkYoYoksGurDjKZQcZkmaxLaKbbeiKzHnMmqKivrCzq5Q2JtJG1UZNZFqLPbQ3MiXCk2Q5bdwdUNSr7X9QrPubkn"}],"subtract_fee_from_outputs":[0,1]}}' -H 'Content-Type: application/json'
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "amount": 39824160000,
+    "amounts_by_dest": {
+      "amounts": [9912080000,29912080000]
+    },
+    "fee": 175840000,
+    "multisig_txset": "",
+    "spent_key_images": {
+      "key_images": ["f37c0a375f09c0098d8320496fd74f387bc0992faebaae85be87f4431f66fcc1","7356f719e6537e39f2bf1f1c7088c8d1b76b3b62a30b19a564b9d3e1deb3b0f3"]
+    },
+    "tx_blob": "",
+    "tx_hash": "27d3821ab89b001b24de2e9468d032820a64752afe929c8cfeb084f28fb30dd3",
+    "tx_key": "",
+    "tx_metadata": "",
+    "unsigned_txset": "",
+    "weight": 2791
+  }
+
+```
 
 ### **transfer_split**
 
