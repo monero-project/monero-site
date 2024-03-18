@@ -18,13 +18,13 @@ senden. Die [Anleitung des Hintergrunddienst-RPCs]({{ site.baseurl_root
 }}/resources/developer-guides/daemon-rpc.html) enthält eine ausführliche
 (und mit Beispielen versehene) Erläuterung der verfügbaren RPC-Aufrufe. Für
 detailliertere und fachspezifische Informationen über den Hintergrunddienst
-findet sich unten ein Verweis auf Monerodocs.
+findet sich unten ein Verweis auf GetMonero.dev.
 
 ---
 
 ##### Zusätzliche Quellen
 
-<sub>1. Der [Monerod-Beitrag auf Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>
+<sub>1. Der [Monerod-Beitrag auf GetMonero.dev](https://getmonero.dev/docs/interacting/monerod-reference)</sub><br>
 
 <sub>2. "Hintergrunddienst"-Artikel [auf Wikipedia](https://de.wikipedia.org/wiki/Daemon)</sub><br>
 
