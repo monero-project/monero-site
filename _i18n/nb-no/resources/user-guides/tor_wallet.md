@@ -81,5 +81,5 @@ I fremtidige versjoner av GUI-en forventer vi å legge til direkte støtte for T
 
 # Flere ressurser
 
-* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)
+* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
 * [Hvordan bruke Tor](https://github.com/monero-project/monero#using-tor) (Monero README)

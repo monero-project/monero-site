@@ -81,5 +81,5 @@ torsocks --port 9150 /Applications/monero-wallet-gui.app/Contents/MacOS/monero-w
 
 # Дополнительные ссылки
 
-* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/ANONYMITY_NETWORKS.md)
+* [ANONYMITY_NETWORKS.md](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md)
 * [Используем Tor](https://github.com/monero-project/monero#using-tor) (Monero README)
