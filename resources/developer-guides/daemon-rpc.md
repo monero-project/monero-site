@@ -713,6 +713,7 @@ Outputs:
 
 * *connections* - List of all connections and their info:
   * *address* - string; The peer's address, actually IPv4 & port
+  * *address_type* - unsigned int; 0 = invalid, 1 = ipv4 and 2 = ipv6.
   * *avg_download* - unsigned int; Average bytes of data downloaded by node.
   * *avg_upload* - unsigned int; Average bytes of data uploaded by node.
   * *connection_id* - string; The connection ID
@@ -729,6 +730,8 @@ Outputs:
   * *port* - string; The port that the node is using to connect to the network.
   * *recv_count* - unsigned int
   * *recv_idle_time* - unsigned int
+  * *rpc_credits_per_hash* - unsigned int; clients will be awarded credits/difficulty credits for every hash they calculate.
+  * *rpc_port* - unsigned int
   * *send_count* - unsigned int
   * *send_idle_time* - unsigned int
   * *state* - string
