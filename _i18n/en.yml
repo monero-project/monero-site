@@ -905,7 +905,7 @@ specs:
   privacytech_title: Main privacy enhancing technologies
   privacytech_ringct: "@RingCT"
   privacytech_sh: "@Stealth-Addresses"
-  privacytech_rs: "@ringsignatures"
+  privacytech_rs: "@ring-signatures"
   privacytech_tor-i2p: Transactions over Tor/I2P
   privacytech_dandelion: Dandelion++
 
