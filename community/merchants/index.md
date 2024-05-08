@@ -116,6 +116,7 @@ meta_descr: merchants.descr
             <li><a href="https://dvchain.co/">DV Chain (OTC)</a> (USD*, CAD*, GBP*, EUR*, JPY*, ...)</li>
             <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD*)</li>
             <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr">BitcoinVN</a> (VND*)</li>
+            <li><a href="https://tradeogre.com/">TradeOgre</a></li>
           </ul>
           <p>*Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
         <h3>Swappers</h3>
