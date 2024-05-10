@@ -202,7 +202,6 @@ merchants:
   depsell: Зависит от продавца
   locnojs: (доступна версия без JS)
   visitbisq: Посетить Bisq
-  visitlocalmonero: Посетить LocalMonero
   visithodlhodl: Посетить HodlHodl
   centrexchanges: Централизованные биржи (CEX) и обменники
   cexp: Централизованные биржи, предлагающие обмен Monero на национальные валюты и
