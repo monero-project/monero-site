@@ -39,25 +39,13 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://www.forked.net" target="_blank" rel="noreferrer"><img src="/img/sponsors/forked_logo.png" alt="Fork Networking logo"></a>
-                            <p>{% t sponsorships.forknetworking %}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="info-block">
-                    <div class="row center-xs">
-                        <div class="col">
                             <a class="ext-noicon" href="https://www.macstadium.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/macstadium.png" alt="Macstadium logo"></a>
                             <p>{% t sponsorships.macstadium %}</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">   
-            <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
@@ -67,7 +55,9 @@ meta_descr: meta_descr.sponsorships
                     </div>
                 </div>
             </div>
-            <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        </div>
+        <div class="row">   
+            <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
