@@ -36,8 +36,8 @@ Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px
 
 First, you will need to find a public remote node to connect to. The website
 [moneroworld.com](https://moneroworld.com/#nodes) has some great resources
-about remote nodes, and the website [monero.fail](https://monero.fail) has
-a list of functioning remote nodes.
+about remote nodes, and the website [monero.fail](https://monero.fail) has a
+list of functioning remote nodes.
 
 ## Configuring your wallet to connect to a custom public remote node
 
