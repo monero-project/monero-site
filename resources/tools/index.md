@@ -61,7 +61,6 @@ meta_descr: meta_descr.tools
                 <div class="row">
                     <div class="col">
                         <h2>{% t tools.market %}</h2>
-                        <p><a href="https://cryptofacile.io">cryptoFacile - {% t tools.cryptofacile %}</a></p>
                         <p><a href="https://cryptoradar.co/buy-monero">Cryptoradar - {% t tools.cryptoradar %}</a></p>
                         <p><a href="https://kryptocheck.de">KryptoCheck - {% t tools.kryptocheck %}</a></p>
                     </div>
