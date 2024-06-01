@@ -189,13 +189,11 @@ merchants:
   cardonion: ".onion-a adreso:"
   noncustodial: "Ne-garda:"
   hodlhodldescr: 'P2P komercada platformo kun ne-garda depono.'
-  locmondescr: 'Reta P2P ŝanĝejo ofertanta interŝanĝojn inter homoj.'
   depsell: 'Dependas de la vendisto'
   locnojs: '(sed ne-JS versio disponebla)'
   simpleswapdescr: 'Ne-garda tuja ŝanĝejo.'
   disclaimer: |
   visitbisq: 'Vizitu Bisq-n'
-  visitlocalmonero: 'Vizitu LocalMonero-n'
   visithodlhodl: 'Vizitu HodlHodl-n'
   centrexchanges: 'Centraj ŝanĝejoj (CEXs) kaj interŝanĝejoj'
   centrexchangesp: 'Se vi preferas uzi centrajn ŝanĝejojn, jen estas listo de famaj

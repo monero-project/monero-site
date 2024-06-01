@@ -181,11 +181,9 @@ merchants:
   bisqdescr: Schimb valutar P2P descentralizat bazat pe Bitcoin și Tor.
   cardbtcfiat: (BTC &#8596; fiat posibil)
   hodlhodldescr: Platformă de tranzacționare P2P cu escrow noncustodial.
-  locmondescr: Schimb valutar online P2P care oferă tranzacții de la persoană la persoană.
   locnojs: (dar este disponibilă versiunea fără JS)
   simpleswapdescr: Schimb valutar instantaneu fără custodie.
   visitbisq: Vizitează Bisq
-  visitlocalmonero: Vizitează LocalMonero
   visithodlhodl: Vizitează HodlHodl
   centrexchanges: Schimburi de valută centralizate (CEX) și Swappers
   centrexchangesp: Dacă preferi să utilizezi schimburi valutare centralizate, iată

@@ -50,19 +50,19 @@ meta_descr: merchants.descr
       <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="center-xs">
-            <img class="merch" src="/img/merchants/localmonero.png" alt="LocalMonero logo" title="LocalMonero">
-            <p>{% t merchants.locmondescr %}</p>
+            <img class="merch" src="/img/merchants/haveno.png" alt="Haveno logo" title="Haveno">
+            <p>{% t merchants.havenodescr %}</p>
           </div>
           <div>
-            <p><b>{% t merchants.cardfoss %}</b> <span class="cross"></span></p>
-            <p><b>{% t merchants.noncustodial %}</b> <span class="cross"></span></p>
-            <p>{% t merchants.cardkyc %} {% t merchants.depsell %}</p>
+            <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
+            <p>{% t merchants.cardkyc %} <span class="check"></span></p>
             <p><b>XMR &#8596; fiat:</b> <span class="check"></span></p>
             <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
-            <p><b>{% t merchants.cardi2p %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
-            <p><a href="https://localmonero.co" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitlocalmonero %}</a></p>
+            <p><a href="https://haveno.exchange" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithaveno %}</a></p>
           </div>
         </div>
       </div>

@@ -198,11 +198,9 @@ merchants:
   cardonion: 'Onion адрес:'
   noncustodial: 'Некастодиальные:'
   hodlhodldescr: P2P торговая платформа с условно-некастодиальным депонированием.
-  locmondescr: P2P онлайн-обменник, предлагающий проведение индивидуальных сделок.
   depsell: Зависит от продавца
   locnojs: (доступна версия без JS)
   visitbisq: Посетить Bisq
-  visitlocalmonero: Посетить LocalMonero
   visithodlhodl: Посетить HodlHodl
   centrexchanges: Централизованные биржи (CEX) и обменники
   cexp: Централизованные биржи, предлагающие обмен Monero на национальные валюты и

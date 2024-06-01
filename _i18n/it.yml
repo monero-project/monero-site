@@ -175,6 +175,7 @@ merchants:
   bisqdescr: Exchange P2P decentralizzato basato su Bitcoin e Tor.
   cardbtcfiat: (BTC &#8596; fiat possibile)
   cardonion: 'Indirizzo Onion:'
+  havenodescr: Exchange decentralizzato per cypto e fiat
   depsell: Dipende dal venditore
   descr: In questa pagina puoi trovare i negozi e i commercianti che accettano Monero
     insieme agli exchange che permettono lo scambio di Monero con altre valute.
@@ -185,7 +186,7 @@ merchants:
     alcune opzioni. Ricorda sempre di applicare la massima cautela prima di affidare
     loro i tuoi soldi:'
   visitbisq: Visita Bisq
-  visitlocalmonero: Visita LocalMonero
+  visithaveno: Visita Haveno
 sponsorships:
   intro: Le seguenti aziende sostengono il progetto Monero nel suo obiettivo di portare
     la privacy finanziaria nel mondo. Non potremmo essere più grati per i loro contributi.
