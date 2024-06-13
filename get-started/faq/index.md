@@ -121,7 +121,6 @@ meta_descr: faq.intro
                         <p>{% t faq.acontribute1 %} <a href="https://translate.getmonero.org">Weblate</a>.</p>
                         <p>{% t faq.acontribute2 %} <a href="{{ site.baseurl }}/community/hangouts/">Hangouts</a>.</p>
                         <p>{% t faq.acontribute3 %}</p>
-                        <p>{% t faq.acontribute4 %} <a href="https://www.monerooutreach.org/stories/getting-started-helping-monero.html">Getting started with Monero</a>.</p>
                         <p>{% t faq.additional %} <a href="{{ site.baseurl }}/get-started/contributing/">{% t titles.contributing %}</a></p>
                     </div>
                 </div>
@@ -130,7 +129,6 @@ meta_descr: faq.intro
                     <div class="tab-answer">
                         <p>{% t faq.a2 %}</p>
                         <p>{% t faq.a2exchanges %} <a href="{{ site.baseurl }}/community/merchants/#exchanges">{% t titles.merchants %}</a>.</p>
-                        <p>{% t faq.additional %} <a href="https://www.monerooutreach.org/how-to-buy-monero.html">How to Buy Monero (Monero Outreach)</a></p>
                     </div>
                 </div>
                 <div class="tab" id="anchor-btc-difference">
