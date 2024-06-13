@@ -23,7 +23,6 @@ meta_descr: meta_descr.workgroups
           <p>{% t team.core_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-dev</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-dev"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/#monero-dev:monero.social?via=matrix.org&via=monero.social"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
             <li>Email: <code>dev[at]getmonero[dot]org</code></li>
           </ul>
           <div class="row center-xs icons">
