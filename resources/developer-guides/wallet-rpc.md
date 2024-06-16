@@ -1892,6 +1892,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"c
 Returns a list of transfers.
 
 <p style="color:red;"><b>WARNING</b> Verify that the transfer has a sane <code>unlock_time</code> otherwise the funds might be inaccessible.</p>
+<p style="color:red;"><b>WARNING</b> <code>destinations</code>, only available for outgoing transactions, will be <b>UNDEFINED</b> if not in the wallet cache.</p>
 
 Alias: *None*.
 
@@ -1984,6 +1985,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
 Show information about a transfer to/from this address.
 
 <p style="color:red;"><b>WARNING</b> Verify that the transfer has a sane <code>unlock_time</code> otherwise the funds might be inaccessible.</p>
+<p style="color:red;"><b>WARNING</b> <code>destinations</code>, only available for outgoing transactions, will be <b>UNDEFINED</b> if not in the wallet cache.</p>
 
 Alias: *None*.
 
