@@ -1920,9 +1920,9 @@ Outputs:
   * *fee* - unsigned int; Transaction fee for this transfer.
   * *height* - unsigned int; Height of the first block that confirmed this transfer (0 if not mined yet).
   * *note* - string; Note about this transfer.
-  * *destinations* - array;
-    *amount* - unsigned int;
-    *address* - string;
+  * *destinations* - array of JSON objects containing transfer destinations: (only for outgoing transactions)
+    * *amount* - unsigned int; Amount transferred to this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
   * *payment_id* - string; Payment ID for this transfer.
   * *subaddr_index* - JSON object containing the major & minor subaddress index:
     * *major* - unsigned int; Account index for the subaddress.
