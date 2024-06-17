@@ -1892,6 +1892,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"c
 Returns a list of transfers.
 
 <p style="color:red;"><b>WARNING</b> Verify that the transfer has a sane <code>unlock_time</code> otherwise the funds might be inaccessible.</p>
+<p style="color:red;"><b>WARNING</b> The <code>destinations</code> fields are only available when this wallet cache was the one to construct the transaction. If you restore your wallet from scratch, you will lose this information. </p>
 
 Alias: *None*.
 
@@ -1920,9 +1921,9 @@ Outputs:
   * *fee* - unsigned int; Transaction fee for this transfer.
   * *height* - unsigned int; Height of the first block that confirmed this transfer (0 if not mined yet).
   * *note* - string; Note about this transfer.
-  * *destinations* - array;
-    *amount* - unsigned int;
-    *address* - string;
+  * *destinations* - array of JSON objects containing transfer destinations: (only for outgoing transactions)
+    * *amount* - unsigned int; Amount transferred to this destination.
+    * *address* - string; Address for this destination. Base58 representation of the public keys.
   * *payment_id* - string; Payment ID for this transfer.
   * *subaddr_index* - JSON object containing the major & minor subaddress index:
     * *major* - unsigned int; Account index for the subaddress.
@@ -1984,6 +1985,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
 Show information about a transfer to/from this address.
 
 <p style="color:red;"><b>WARNING</b> Verify that the transfer has a sane <code>unlock_time</code> otherwise the funds might be inaccessible.</p>
+<p style="color:red;"><b>WARNING</b> <code>destinations</code>, only available for outgoing transactions, will be <b>UNDEFINED</b> if not in the wallet cache.</p>
 
 Alias: *None*.
 
