@@ -1892,7 +1892,7 @@ $ curl http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"c
 Returns a list of transfers.
 
 <p style="color:red;"><b>WARNING</b> Verify that the transfer has a sane <code>unlock_time</code> otherwise the funds might be inaccessible.</p>
-<p style="color:red;"><b>WARNING</b> <code>destinations</code>, only available for outgoing transactions, will be <b>UNDEFINED</b> if not in the wallet cache.</p>
+<p style="color:red;"><b>WARNING</b> The <code>destinations</code> fields are only available when this wallet cache was the one to construct the transaction. If you restore your wallet from scratch, you will lose this information. </p>
 
 Alias: *None*.
 
