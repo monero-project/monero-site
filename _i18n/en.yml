@@ -268,8 +268,6 @@ downloads:
   bootstrapnode1: Use a @remote-node while downloading the blockchain locally, this will allow you to use Monero immediately and switch to your local node once it's completely synced
   rpc: RPC Wallet and Daemon
   rpc1: included in the archive
-  payforrpc: Pay-for-RPC
-  payforrpc1: A new feature that allows node operators to get rewarded when their node is used
   verify: Verify
   verify1: You are strongly advised to verify the hashes of the archive you downloaded. This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds.
   verify2: Always verify your downloads!
