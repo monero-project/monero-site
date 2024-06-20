@@ -52,10 +52,15 @@ meta_descr: hangouts.intro
                                     <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="https://matrix.to/#/#monerospace:monero.social" class="btn-link btn-fixed">Matrix</a></p>
+                                    <p><a href="https://matrix.to/#/#monerospace:monero.social" class="btn-link btn-fixed">Matrix*</a></p>
                                 </div>
                                 <div class="col">
                                     <p><a href="https://taiga.getmonero.org/" class="btn-link btn-fixed">Taiga</a></p>
+                                </div>
+                                <div>
+                                  <p class="matrixorg-warning">* Currently Matrix.org homeserver is blocking monero.social users, 
+                                  which means you won't able communicate with majority of the community if you use matrix.org as your homeserver.
+                                  Using different homeserver is strongly advised.</p>
                                 </div>
                             </div>
                         </div>
