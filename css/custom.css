@@ -4685,3 +4685,7 @@ input.accordion[type=radio]:checked + label::after {
 .tools h2 {
     text-align: left;
 }
+
+.matrixorg-warning {
+  font-size: 0.8rem;
+}
