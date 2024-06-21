@@ -28,6 +28,9 @@ meta_descr: hangouts.intro
             <li>
                 <a class="ext-noicon" href="https://telegram.me/monero" target="_blank" rel="noreferrer noopener" aria-label="Telegram logo"><div class="social-icon telegram"></div></a>
             </li>
+            <li>
+                <a class="ext-noicon" href="https://discord.gg/SyGUMWBqvF" target="_blank" rel="noreferrer noopener" aria-label="Discord logo"><div class="social-icon discord"></div></a>
+            </li>
         </ul>
     </section>
 </div>
