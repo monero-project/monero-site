@@ -3600,6 +3600,10 @@ img.emoji {
   content: url("/img/emojis/1F9ED.svg");
 }
 
+.roadmap li.proposed:before {
+  content: url("/img/emojis/1F310.svg");
+}
+
 .roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming {
   width: 1rem;
   height: 1rem;
