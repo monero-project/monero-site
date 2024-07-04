@@ -141,5 +141,9 @@ meta_descr: meta_descr.presskit
       <h3><a href="https://www.themonera.art/2017/09/22/monero-promotional-graphics-badges-and-stickers-for-websites/">{% t press-kit.promographics %}</a></h3>
       <p>{% t press-kit.promographicsp %}</p>
     </div>
+    <div>
+      <h3><a href="https://monero.graphics/">{% t press-kit.xmrgraphics %}</a></h3>
+      <p>{% t press-kit.xmrgraphicsp %}</p>
+    </div>
   </div>
 </section>
