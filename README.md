@@ -293,6 +293,7 @@ Where `STATUS` can be:
 - `completed` for completed milestones
 - `ongoing` for milestones currently being worked on
 - `upcoming` for milestones not yet completed or in progress
+- `proposed` for milestones open to research and consideration
 
 If an entry is `completed`, a green tick symbol will be displayed on its left. if it's `ongoing` a roadwork sign and `upcoming` a compass.
 
