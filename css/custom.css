@@ -4115,7 +4115,7 @@ p.hangouts-social {
 
 .social-icon.twitter:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -47px;
+    background-position: -176px -48px;
 }
 
 .social-icon.reddit {
@@ -4125,7 +4125,7 @@ p.hangouts-social {
 
 .social-icon.reddit:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -95px;
+    background-position: -176px -96px;
 }
 
 .social-icon.facebook {
@@ -4135,47 +4135,47 @@ p.hangouts-social {
 
 .social-icon.facebook:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px 1px;
+    background-position: -176px 0px;
 }
 
 .social-icon.github {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -127px -144px;
+    background-position: -128px -144px;
 }
 
 .social-icon.github:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -143px;
+    background-position: -176px -144px;
 }
 
 .social-icon.gitlab {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -128px -190px;
+  background-position: -128px -192px;
 }
 
 .social-icon.gitlab:hover {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -176px -190px;
+  background-position: -176px -192px;
 }
 
 .social-icon.telegram {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -128px -239px;
+  background-position: -128px -240px;
 }
 
 .social-icon.telegram:hover {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -176px -238px;
+  background-position: -176px -240px;
 }
 
 .social-icon.discord {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -128px -286px;
+  background-position: -128px -288px;
 }
 
 .social-icon.discord:hover {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -176px -286px;
+  background-position: -176px -288px;
 }
 
 .hangouts .irc .col-md-4 {
