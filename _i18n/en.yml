@@ -671,6 +671,7 @@ developer-guides:
   monero-cpp: A C++ library for using Monero.
   vanity-monero: Generate vanity address for CryptoNote currency (Monero etc.).
   go-monero-rpc-client: A Go client for the Monero wallet and daemon RPC.
+  go-monero: A Go library that includes the Monero Wallet/Daemon RPC clients and the set of methods for seed/key/address generation and transaction output decryption.
   monero-rs: Library with support for (de)serialization on block data structures and key/address generation and scanning related to Monero cryptocurrency.
   csharp-monero: A wallet and daemon client to interface with Monero's JSON-RPC API, built on .netstandard2.1
 
