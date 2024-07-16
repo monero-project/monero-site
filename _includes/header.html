@@ -86,15 +86,15 @@
             <div class="topnav">
               <div class="row middle-xs">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <a href="{% if site.lang == 'en' %}
+                    <a href="{% if site.lang == 'en' -%}
                     
                     {{ site.baseurl_root }}/
                     
-                    {% else %}
+                    {%- else -%}
                     
                     {{ site.baseurl_root }}/{{site.lang}}
                     
-                    {% endif %}"><img src="/img/monero-logo.png" width="500" height="135" alt="Monero Logo" class="monero-logo"></a>
+                    {%- endif %}"><img src="/img/monero-logo.png" width="500" height="135" alt="Monero Logo" class="monero-logo"></a>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
                       <div class="row end-xs middle-xs">
@@ -175,15 +175,15 @@
         <div class="mob bot-nav white-nav">
             <div class="row center-xs middle-xs">
                 <div class="col-xs-6">
-                    <a href="{% if site.lang == 'en' %}
+                    <a href="{% if site.lang == 'en' -%}
                     
                     {{ site.baseurl_root }}/
                     
-                    {% else %}
+                    {%- else -%}
                     
                     {{ site.baseurl_root }}/{{site.lang}}
                     
-                    {% endif %}"><img src="/img/monero-logo.png" width="500" height="135" alt="Monero Logo" class="monero-logo"></a>
+                    {%- endif %}"><img src="/img/monero-logo.png" width="500" height="135" alt="Monero Logo" class="monero-logo"></a>
                 </div>
                 <div class="dropdown col-xs-6 text-center mob-language-change">
                 <input class="burger-checkdropdown" id="moblangdrop" type="checkbox" tabindex="0">
