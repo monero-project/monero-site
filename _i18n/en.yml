@@ -716,6 +716,7 @@ roadmap:
   completed: Completed task
   ongoing: Ongoing task
   upcoming: Upcoming task
+  proposed: Proposed task
   future: Future
 
   jan: January
@@ -818,29 +819,32 @@ roadmap:
   onionaddress: Onion address for Getmonero.org
   supercop: Wallet scanning speedups (support for supercop ASM)
   clsag: Concise linkable spontaneous anonymous group (CLSAG) signatures
-  tryptych: "Triptych: logarithmic-sized linkable ring signatures with applications"
   kastelo: "Kastelo: open source hardware wallet"
-  layer2: Second-layer solutions for speed and scalability
   released-0-16-0-0: CLI and GUI 0.16.0.0 released
   released-0-17: CLI and GUI 0.17 'Oxygen Orion' released
   
-  returnaddr: Return addresses
   atomicswaps: Monero <-> Bitcoin atomic swaps
   bplus: Bulletproofs+
   p2pool: P2Pool released
   haveno: Haveno
 
-  ringsize-sera-tryp: increase ring size to >100
-  seraphis-jamtis: Seraphis & Jamtis
+  seraphis-jamtis: Seraphis codebase & Jamtis
   ospead: OSPEAD
   released-0-18: CLI and GUI 0.18 "Flourine Fermi" released
   hardfork-v15: Network upgrade v15 Hardfork
   xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
   bp++: Bulletproofs++
   lws-subaddress: Light Wallet Server subaddress support
+  view-tags: Wallet synchronization speed improved by +40% with one-byte view tags
 
   genimprov: "Multiple improvements like: block propagation delay reduced, tx_extra limited, wallet refresh and startup speedups"
-   
+
+  xmrbch-atomicswap: XMR-BCH atomic swap is completed
+  haveno-mainnet: HavenoDEX released
+  fcmp-plus: Full-Chain Membership Proofs
+  mrl-tasks: Proposed tasks from Monero Research Lab
+  cuprate: Monerod Rust implementation - Cuprate
+
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
   intro_email: "To contact the Monero Research Lab, please email lab@getmonero.org."
