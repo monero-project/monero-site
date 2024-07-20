@@ -150,7 +150,6 @@ meta_descr: downloads.intro
                 <li><b>{% t downloads.hwcompatible %}</b> {% t downloads.hwcompatible1 %}</li>
                 <li><b>{% t downloads.rpc %}</b> {% t downloads.rpc1 %}</li>
                 <li><b>{% t downloads.pruning %}.</b> {% t downloads.pruning1 %}</li>
-                <li><b>{% t downloads.payforrpc %}</b> {% t downloads.payforrpc1 %}</li>
               </ul>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
