@@ -694,7 +694,7 @@ user-guides:
   solo-mine: How to solo mine with Monero GUI
   locked-funds: How to fix locked up funds
   restore-account: How to restore a wallet from mnemonic seed
-  qubes: How to use Monero CLI/daemon with Qubes + Whonix
+  qubes: How to use Monero over Tor on Qubes + Whonix with wallet isolation
   cli-wallet: Guide for the Monero CLI wallet
   remote-node-gui: How to connect to a remote node within GUI wallet
   view-only: How to make a view-only wallet
