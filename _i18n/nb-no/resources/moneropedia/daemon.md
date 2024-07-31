@@ -16,14 +16,14 @@ Det er mulig å sende kommandoer til Daemon direkte eller gjennom
 RPC-grensesnittet. Se [Daemon RPC-guiden]({{ site.baseurl_root
 }}/resources/developer-guides/daemon-rpc.html), som inneholder en detaljert
 forklaring (med eksempler) på de tilgjengelige RPC-anropene. For mer
-detaljert og teknisk informasjon om Daemon, kan du se Monerodocs henvisning
+detaljert og teknisk informasjon om Daemon, kan du se GetMonero.dev henvisning
 nederst på denne siden.
 
 ---
 
 ##### Andre ressurser
 
-<sub>1. [monerods henvisning på Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>
+<sub>1. [monerods henvisning på GetMonero.dev](https://getmonero.dev/docs/interacting/monerod-reference)</sub><br>
 
 <sub>2. 'Daemon'-oppføring [på Wikipedia](https://en.wikipedia.org/wiki/Daemon_(computing))</sub><br>
 
