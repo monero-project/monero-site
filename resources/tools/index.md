@@ -90,7 +90,6 @@ meta_descr: meta_descr.tools
                         <p><a href="https://bitcart.ai">Bitcart</a></p>
                         <p><a href="https://www.cdpay.eu/">CDPay</a></p>
                         <p><a href="https://www.coinpayments.net/">CoinPayments</a></p>
-                        <p><a href="https://globee.com/">GloBee</a></p>
                         <p><a href="https://www.cryptowoo.com/">CryptoWoo Monero Plugin (WooCommerce)</a></p>
                         <p><a href="https://github.com/monero-integrations/monerowp">Monero WooCommerce Extension (PHP)</a></p>
                         <p><a href="https://nowpayments.io/">NOWPayments</a></p>
