@@ -28,7 +28,7 @@ meta_descr: meta_descr.roadmap
                 <div class="tabPanel-widget">
                     <label for="tab-1" tabindex="0"></label>
                     <input id="tab-1" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2014-2019</h2>
+                    <h2>2014-'19</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2014</h2>
                             <ul>
@@ -156,7 +156,7 @@ meta_descr: meta_descr.roadmap
                     </div>
                     <label for="tab-2" tabindex="0"></label>
                     <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2020</h2>
+                    <h2>'20</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2020</h2>
                             <ul>
@@ -178,7 +178,7 @@ meta_descr: meta_descr.roadmap
                     </div>
                     <label for="tab-3" tabindex="0"></label>
                     <input id="tab-3" type="radio" name="tabs" aria-hidden="true" checked>
-                    <h2>2021</h2>
+                    <h2>'21</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2021</h2>
                             <ul>
@@ -192,7 +192,7 @@ meta_descr: meta_descr.roadmap
                     </div>
                     <label for="tab-4" tabindex="0"></label>
                     <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
-                    <h2>2022</h2>
+                    <h2>'22</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2022</h2>
                             <ul>
@@ -206,7 +206,7 @@ meta_descr: meta_descr.roadmap
                     </div>
                     <label for="tab-5" tabindex="0"></label>
                     <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
-                    <h2>2023</h2>
+                    <h2>'23</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2023</h2>
                             <ul>
@@ -220,7 +220,7 @@ meta_descr: meta_descr.roadmap
                     </div>
                     <label for="tab-6" tabindex="0"></label>
                     <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
-                    <h2>2024</h2>
+                    <h2>'24</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2024</h2>
                             <ul>
