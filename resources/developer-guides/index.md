@@ -24,6 +24,8 @@ meta_descr: developer-guides.head
                         <p>{% t developer-guides.daemonrpc_descr %}</p>
                     <h3><span class="icon-page"></span><a href="{{ site.baseurl_root }}/resources/developer-guides/wallet-rpc.html">{% t developer-guides.walletrpc %}</a></h3>
                         <p>{% t developer-guides.walletrpc_descr %}</p>
+                    <h3><span class="icon-page"></span><a href="{{ site.baseurl_root }}/resources/developer-guides/zmq.html">{% t developer-guides.zmq %}</a></h3>
+                        <p>{% t developer-guides.zmq_descr %}</p>
                 </div>
             </div>
             <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
