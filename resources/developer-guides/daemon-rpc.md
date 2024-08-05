@@ -58,6 +58,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/get_hashes.bin](#get_hashesbin)
 * [/get_o_indexes.bin](#get_o_indexesbin)
 * [/get_outs.bin](#get_outsbin)
+* [/get_output_distribution.bin](#get_output_distributionbin)
 * [/get_transactions](#get_transactions)
 * [/get_alt_blocks_hashes](#get_alt_blocks_hashes)
 * [/is_key_image_spent](#is_key_image_spent)
@@ -86,6 +87,8 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/get_outs](#get_outs)
 * [/update](#update)
 * [/pop_blocks](#pop_blocks)
+* [/get_transaction_pool_hashes](#get_transaction_pool_hashes)
+* [/get_public_nodes](#get_public_nodes)
 
 
 ---
@@ -1906,6 +1909,39 @@ $ curl http://127.0.0.1:18081/get_o_indexes.bin --data-binary '{"txid":"d6e48158
 --->
 
 
+### **/get_output_distribution.bin**
+
+Get outputs. Binary request version of [get_output_distribution](#get_output_distribution).
+
+Alias: *None*.
+
+Inputs:
+
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *amounts* - array of unsigned int; amounts to look for
+* *cumulative* - boolean; (optional, default is `false`) States if the result should be cumulative (`true`) or not (`false`)
+* *from_height* - unsigned int; (optional, default is 0) starting height to check from
+* *to_height* - unsigned int; (optional, default is 0) ending height to check up to
+* *binary* - boolean; (optional, default is `true`); Must be `true`.
+* *compress* - unsigned int; (optional, default is `false`) Respond with compressed data.
+
+Outputs:
+
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
+* *distributions* - array of structure distribution as follows:
+  * *amount* - unsigned int
+  * *base* - unsigned int
+  * *binary* - boolean; Always `true`.
+  * *compress* - unsigned int; `true` if compressed data, `false` otherwise.
+  * *distribution* - array of unsigned int; This field exists instead of *compressed_data* if the *compress* option was not used.
+  * *compressed_data* - array of unsigned int; This field exists instead of *distribution* if the *compress* option was used.
+  * *start_height* - unsigned int
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+
 ### **/get_transactions**
 
 Look up one or more transactions by hash.
@@ -3071,5 +3107,98 @@ $ curl http://127.0.0.1:18081/pop_blocks -d '{"nblocks":6}' -H 'Content-Type: ap
   "height": 76482,
   "status": "OK",
   "untrusted": false
+}
+```
+
+
+### **/get_transaction_pool_hashes**
+
+Get hashes from transaction pool.
+
+Alias: *None*.
+
+Inputs: *None*.
+
+Outputs:
+
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *tx_hashes* - array of strings; This is an array of transaction hashes in hexadecimal string form.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/get_transaction_pool_hashes -H 'Content-Type: application/json'
+
+{
+  "credits": 0,
+  "status": "OK",
+  "top_hash": "",
+  "tx_hashes": ["e27bb84f1cf1f47a79578d3bb1f47a81745a4c5a5551622b4e924eb0b83f960d","b9f76e686f389e126ada5caf47034c57adeef671d8b899cba1ead606c868f819"],
+  "untrusted": false
+}
+```
+
+
+### **/get_public_nodes**
+
+Get public peer information.
+
+Alias: *None*.
+
+Inputs:
+
+* *gray* - boolean; (Optional; defaults to `false`) Include gray peers.
+* *white* - boolean; (Optional; defaults to `true`) Include white peers.
+* *include_blocked* - boolean; (Optional; defaults to `false`) Include blocked peers.
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *whites* - array of `public_node` structures defined as follows:
+  * *host* - string; The node's IP address. This includes IPv4, IPv6, Onion, and i2p addresses.
+  * *last_seen* - unsigned int; UNIX timestamp of the last time the node was seen.
+  * *rpc_credits_per_hash* - unsigned int; If payment for RPC is enabled, the number of credits the node is requesting per hash. Otherwise, 0.
+  * *rpc_port* - unsigned int; RPC port number of the node.
+* *gray* - array of `public_node` structures; This is an array structures containing node information on gray peers. See *white* above.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/get_public_nodes -d '{"gray":true}' -H 'Content-Type: application/json'
+
+{
+  "gray": [{
+    "host": "142.93.132.1",
+    "last_seen": 0,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18089
+  },{
+    "host": "193.142.4.2",
+    "last_seen": 0,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 19084
+  }],
+  "status": "OK",
+  "untrusted": false,
+  "white": [{
+    "host": "70.52.75.3",
+    "last_seen": 1722812577,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18081
+  },{
+    "host": "::ffff:207.180.221.220",
+    "last_seen": 1722872337,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18089
+  },{
+    "host": "zbjkbsxc5munw3qusl7j2hpcmikhqocdf4pqhnhtpzw5nt5jrmofptid.onion:18083",
+    "last_seen": 1720186288,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18089
+  }]
 }
 ```
