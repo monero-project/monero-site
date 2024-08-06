@@ -604,7 +604,7 @@ Outputs:
           * *view_tag* - The 1st byte of a shared secret (used for reducing synchronization time)
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 byte/64 character hex string.
     * *rct_signatures* - Contain signatures of tx signers. Coinbased txs do not have signatures.
-  * *tx_hashes* - List of hashes of non-coinbase transactions in the block. If there are no other transactions, this will be an empty list.
+  * *tx_hashes* - List of hashes of non-coinbase transactions in the block. If there are no transactions, this field not not be present.
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
@@ -1090,7 +1090,7 @@ Outputs:
 Example:
 
 ```
-$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_txpool","params":{"txids":["dc16fa8eaffe1484ca9014ea050e13131d3acf23b419f33bb4cc0b32b6c49308",""]}}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_txpool","params":{"txids":["dc16fa8eaffe1484ca9014ea050e13131d3acf23b419f33bb4cc0b32b6c49308"]}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1525,7 +1525,7 @@ Outputs:
 * *height* - unsigned int; current blockheight.
 * *prev_id* - string; previous block id.
 * *seed_hash* - string; RandomX seed hash.
-* *difficulty* - unsigned int; network. difficulty.
+* *difficulty* - string; Network difficulty. This is an unsigned int in hexadecimal string form.
 * *median_weight* - unsigned int; median block weight.
 * *already_generated_coins* - unsigned int; coins mined by the network so far.
 * *status* - string; General RPC error code. "OK" means everything looks good.
@@ -1610,7 +1610,7 @@ Inputs:
 
 * *major_version* - unsigned int; The major version of the monero protocol at this block height.
 * *height* - unsigned int;
-* *block_blob* - blobdata;
+* *block_blob* - string; Block bytes in hexadecimal string form.
 * *seed_hash* - string;
 
 Outputs:
@@ -1887,7 +1887,6 @@ Inputs:
 Outputs:
 
 * *outs* - array of structure *outkey* as follows:
-  * *amount* - unsigned int;
   * *height* - unsigned int; block height of the output
   * *key* - the public key of the output
   * *mask*
@@ -2130,7 +2129,6 @@ Outputs:
 * *invalid_input* - boolean; Input is invalid (`true`) or valid (`false`).
 * *invalid_output* - boolean; Output is invalid (`true`) or valid (`false`).
 * *low_mixin* - boolean; Mixin count is too low (`true`) or OK (`false`).
-* *not_rct* - boolean; Transaction is a standard ring transaction (`true`) or a ring confidential transaction (`false`).
 * *not_relayed* - boolean; Transaction was not relayed (`true`) or relayed (`false`).
 * *overspend* - boolean; Transaction uses more money than available (`true`) or not (`false`).
 * *reason* - string; Additional information. Currently empty or "Not relayed" if transaction was accepted but not relayed.
@@ -2214,12 +2212,12 @@ Outputs:
 
 * *active* - boolean; States if mining is enabled (`true`) or disabled (`false`).
 * *address* - string; Account address daemon is mining to. Empty if not mining.
-* *bg_idle_threshold* - int; Minimum average idle percentage over lookback interval.
+* *bg_idle_threshold* - unsigned int; Minimum average idle percentage over lookback interval.
 * *bg_ignore_battery* - boolean; If false, the device will stop mining when battery is low.
-* *bg_min_idle_seconds* - int; Minimum lookback interval in seconds for determining whether the device is idle or not.
-* *bg_target* - int; Maximum percentage cpu use by miner.
-* *block_reward* - int; Base block reward for the next block to be mined.
-* *block_target* - int; The target number of seconds between blocks.
+* *bg_min_idle_seconds* - unsigned int; Minimum lookback interval in seconds for determining whether the device is idle or not.
+* *bg_target* - unsigned int; Maximum percentage cpu use by miner.
+* *block_reward* - unsigned int; Base block reward for the next block to be mined.
+* *block_target* - unsigned int; The target number of seconds between blocks.
 * *difficulty* - unsigned int; Network difficulty (analogous to the strength of the network)
 * *difficulty_top64* - unsigned int; Most-significant 64 bits of the 128-bit network difficulty.
 * *is_background_mining_enabled* - boolean; States if the mining is running in background (`true`) or foreground (`false`).
@@ -2623,7 +2621,7 @@ Outputs:
         * *s1* -
       * *npb* -
       * *pseudoOuts* -
-  * *weight* -
+  * *weight* - unsigned int; The transaction's weight.
 
 Example (Note: Some lists in the returned information have been truncated for display reasons):
 
