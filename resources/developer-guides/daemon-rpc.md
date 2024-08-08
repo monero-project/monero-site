@@ -197,7 +197,7 @@ Outputs:
 Example:
 
 ```
-$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_template","params":{"wallet_address":"44GBHzv6ZyQdJkjqZje6KLZ3xSyN1hBSFAnLP6EAqJtCRVzMzZmeXTC2AHKDS9aEDTRKmo6a6o9r9j86pYfhCWDkKjbtcns","reserve_size":60}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_template","params":{"wallet_address":"44GBHzv6ZyQdJkjqZje6KLZ3xSyN1hBSFAnLP6EAqJtCRVzMzZmeXTC2AHKDS9aEDTRKmo6a6o9r9j86pYfhCWDkKjbtcns","reserve_size":60}}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
@@ -238,7 +238,7 @@ Outputs:
 In this example, a block blob which has not been mined is submitted:
 
 ```
-$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_block","params":["0707e6bdfedc053771512f1bc27c62731ae9e8f2443db64ce742f4e57f5cf8d393de28551e441a0000000002fb830a01ffbf830a018cfe88bee283060274c0aae2ef5730e680308d9c00b6da59187ad0352efe3c71d36eeeb28782f29f2501bd56b952c3ddc3e350c2631d3a5086cac172c56893831228b17de296ff4669de020200000000"]' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_block","params":["0707e6bdfedc053771512f1bc27c62731ae9e8f2443db64ce742f4e57f5cf8d393de28551e441a0000000002fb830a01ffbf830a018cfe88bee283060274c0aae2ef5730e680308d9c00b6da59187ad0352efe3c71d36eeeb28782f29f2501bd56b952c3ddc3e350c2631d3a5086cac172c56893831228b17de296ff4669de020200000000"]}' -H 'Content-Type: application/json'
 
 {
   "error": {
@@ -258,7 +258,7 @@ Inputs:
 * *amount_of_blocks* - unsigned int; number of blocks to be generated.
 * *wallet_address* - string; address to receive the coinbase reward.
 * *prev_block* - string;
-* *starting_nonce* - unsigned int; Increased by miner untill it finds a matching result that solves a block.
+* *starting_nonce* - unsigned int; Increased by miner until it finds a matching result that solves a block.
 
 Outputs:
 * *blocks* - list of string;
@@ -502,7 +502,7 @@ Outputs:
 * *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
-In this example, blocks range from height 1545999 to 1546000 is looked up (notice that the returned informations are ascending order and that it is at the April 2018 network upgrade time):
+In this example, blocks range from height 1545999 to 1546000 is looked up (notice that the returned information are ascending order and that it is at the April 2018 network upgrade time):
 
 ```
 $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_headers_range","params":{"start_height":1545999,"end_height":1546000}}' -H 'Content-Type: application/json'
@@ -1349,7 +1349,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"r
 
 ### **sync_info**
 
-Get synchronisation informations
+Get synchronization information
 
 Alias: *None*.
 
@@ -1538,7 +1538,7 @@ Outputs:
 Example:
 
 ```
-$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_miner_data"}' -H 'Content-Type: application/json'
+$ curl http://localhost:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_miner_data"}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
@@ -1650,6 +1650,7 @@ Example:
 
 ```
 $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_cache","params":{"bad_txs":true,"bad_blocks":true}}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1688,6 +1689,7 @@ Example:
 
 ```
 $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"add_aux_pow","params":{"blocktemplate_blob":" ... ","aux_pow":[{"id":"3200b4ea97c3b2081cd4190b58e49572b2319fed00d030ad51809dff06b5d8c8","hash":"7b35762de164b20885e15dbe656b1138db06bb402fa1796f5765a23933d8859a"}]}}' -H 'Content-Type: application/json''
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1932,7 +1934,7 @@ Outputs:
     * *vin* - List of inputs into transaction:
       * *key* - The public key of the previous output spent in this transaction.
         * *amount* - The amount of the input, in @atomic-units.
-        * *key_offsets* - A list of integer offets to the input.
+        * *key_offsets* - A list of integer offsets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
       * *amount* - Amount of transaction output (if coinbase output, otherwise 0), in @atomic-units.
@@ -2120,7 +2122,7 @@ Alias: */sendrawtransaction*.
 
 Inputs:
 
-* *tx_as_hex* - string; Full transaction information as hexidecimal string.
+* *tx_as_hex* - string; Full transaction information as hexadecimal string.
 * *do_not_relay* - boolean; Stop relaying transaction to other nodes (default is `false`).
 
 Outputs:
@@ -2156,7 +2158,7 @@ Alias: *None*.
 Inputs:
 
 * *do_background_mining* - boolean; States if the mining should run in background (`true`) or foreground (`false`).
-* *ignore_battery* - boolean; States if batery state (on laptop) should be ignored (`true`) or not (`false`).
+* *ignore_battery* - boolean; States if battery state (on laptop) should be ignored (`true`) or not (`false`).
 * *miner_address* - string; Account address to mine to.
 * *threads_count* - unsigned int; Number of mining thread to run.
 
@@ -2486,7 +2488,7 @@ Categories are represented as a comma separated list of `<Category>:<level>` (si
   * *TRACE* - lower level
 A level automatically includes higher level.
 By default, categories are set to `*:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO`.
-Setting the categories to "" prevent any logs to be outputed.
+Setting the categories to "" prevents any logs from being outputted.
 
 Alias: *None*.
 
@@ -2577,21 +2579,21 @@ Outputs:
   * *fee* - unsigned int; The amount of the mining fee included in the transaction, in @atomic-units.
   * *id_hash* - string; The transaction ID hash.
   * *kept_by_block* - boolean; States if the tx was included in a block at least once (`true`) or not (`false`).
-  * *last_failed_height* - unsigned int; If the transaction validation has previously failed, this tells at what height that occured.
+  * *last_failed_height* - unsigned int; If the transaction validation has previously failed, this tells at what height that occurred.
   * *last_failed_id_hash* - string; Like the previous, this tells the previous transaction ID hash.
   * *last_relayed_time* - unsigned int; Last unix time at which the transaction has been relayed.
   * *max_used_block_height* - unsigned int; Tells the height of the most recent block with an output used in this transaction.
   * *max_used_block_id_hash* - string; Tells the hash of the most recent block with an output used in this transaction.
   * *receive_time* - unsigned int; The Unix time that the transaction was first seen on the network by the node.
   * *relayed* - boolean; States if this transaction has been relayed
-  * *tx_blob* - unsigned int; Hexadecimal blob represnting the transaction.
+  * *tx_blob* - unsigned int; Hexadecimal blob representing the transaction.
   * *tx_json* - json string; JSON structure of all information in the transaction:
     * *version* - Transaction version
     * *unlock_time* - If not 0, this tells when a transaction output is spendable.
     * *vin* - List of inputs into transaction:
       * *key* - The public key of the previous output spent in this transaction.
         * *amount* - The amount of the input, in @atomic-units.
-        * *key_offsets* - A list of integer offets to the input.
+        * *key_offsets* - A list of integer offsets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
       * *amount* - Amount of transaction output (if coinbase output, otherwise 0), in @atomic-units.
