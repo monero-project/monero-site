@@ -279,7 +279,7 @@ Yea, I'm sorry
 
 #### Riccardo
 
-But, I think the other thing that's come out of this, that's been quite cool is that rznag's written a little test system in Python that uses the the Tippero Python Library, and that's great for system automators, or merchants, or developers that are using Monero. The whole ecosystem's starting to build up now, where there are a lot of libraries with tools to test them, and so, I think the more that stuff happens over time, the easier it's going to be for integrators to just like say, “ok, I'm going to take this library and use it”, rather than sitting in #Monero-dev IRC channel and asking for help.
+But, I think the other thing that's come out of this, that's been quite cool is that rznag's written a little test system in Python that uses the Tippero Python Library, and that's great for system automators, or merchants, or developers that are using Monero. The whole ecosystem's starting to build up now, where there are a lot of libraries with tools to test them, and so, I think the more that stuff happens over time, the easier it's going to be for integrators to just like say, “ok, I'm going to take this library and use it”, rather than sitting in #Monero-dev IRC channel and asking for help.
 
 #### Gingeropolous
 

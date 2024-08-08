@@ -475,7 +475,7 @@ author: asymptotically / SamsungGalaxyPlayer
 **\<asymptotically\>** ok nvm that answered my question :p  
 **\<M5M400\>** though it begs the question what makes the DR host more secure than the comped box at this point in time  
 **\<needmonero90\>** Nothing left on my end  
-**\<ArticMine\>** Yes that is the case, but for example hardening the the binary verification process  
+**\<ArticMine\>** Yes that is the case, but for example hardening the binary verification process  
 **\<ArticMine\>** Such as rehrar suggested but going further  
 **\<ArticMine\>** binary verification for android  
 **\<ArticMine\>** Free BSD etc  

@@ -609,7 +609,7 @@ Location Freenode | OFTC | Slack | Irc2P #monero Time Use this timezone calculat
 **\<rehrar>** One thing I want to say about the next meeting  
 **\<bgmrkbtc>** do we have people that aren't the devs managing the community?  
 **\<rehrar>** there was a person or two that was disappointed about the time, which is very late for people across the world  
-**\<rehrar>** this does not have to the the only Monero Community meeting  
+**\<rehrar>** this does not have to the only Monero Community meeting  
 **\<pumppp>** MONTERO rocks  
 **\<gym7rjm>** @SGP I had an actual big idea I @wanted to discuss... got no attention and was not discussed... if you want these meetings to be useful you need to keep stuff on track otherwise Reddit is the better venue for focused community discussion  
 **\<rehrar>** if there is a person in Asia that wants to run a meeting in parallel with this one  
