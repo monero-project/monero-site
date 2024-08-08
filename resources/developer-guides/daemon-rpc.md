@@ -233,7 +233,9 @@ Inputs:
 
 Outputs:
 
+* *block_id* - string;
 * *status* - string; Block submit status.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
 In this example, a block blob which has not been mined is submitted:
 
@@ -367,18 +369,22 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"g
 
 ### **get_block_header_by_hash**
 
-Block header information can be retrieved using either a block's hash or height. This method includes a block's hash as an input parameter to retrieve basic information about the block.
+Block header information can be retrieved using a block's hash.
+
+This method includes a block's hash as an input parameter to retrieve basic information about the block. Retrieving multiple blocks at a time is also supported.
 
 Alias: *getblockheaderbyhash*.
 
 Inputs:
 
 * *hash* - string; The block's sha256 hash.
+* *hashes* - array of strings; Multiple block hashes.
 * *fill_pow_hash* - boolean; (Optional; defaults to `false`) Add PoW hash to block_header response.
 
 Outputs:
 
 * *block_header* - A structure containing block header information. See [get_last_block_header](#get_last_block_header).
+* *block_headers* - An array of structures containing block header information. See [get_last_block_header](#get_last_block_header). This field will not exist if *hashes* was not provided.
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
@@ -440,6 +446,8 @@ Outputs:
 * *block_header* - A structure containing block header information. See [get_last_block_header](#get_last_block_header).
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 
 In this example, block 912345 is looked up by its height (notice that the returned information is the same as in the previous example):
 
@@ -713,6 +721,7 @@ Outputs:
 
 * *connections* - List of all connections and their info:
   * *address* - string; The peer's address, actually IPv4 & port
+  * *address_type* - unsigned int;
   * *avg_download* - unsigned int; Average bytes of data downloaded by node.
   * *avg_upload* - unsigned int; Average bytes of data uploaded by node.
   * *connection_id* - string; The connection ID
@@ -727,8 +736,11 @@ Outputs:
   * *localhost* - boolean
   * *peer_id* - string; The node's ID on the network.
   * *port* - string; The port that the node is using to connect to the network.
+  * *pruning_seed* - unsigned int
   * *recv_count* - unsigned int
   * *recv_idle_time* - unsigned int
+  * *rpc_port* - unsigned int
+  * *rpc_credits_per_hash* - unsigned int
   * *send_count* - unsigned int
   * *send_idle_time* - unsigned int
   * *state* - string
@@ -902,7 +914,9 @@ Look up information regarding hard fork voting and readiness.
 
 Alias: *None*.
 
-Inputs: *None*.
+Inputs:
+
+* *version* - unsigned int; (Optional; default is the current hard fork version) Specify a hard fork version.
 
 Outputs:
 
@@ -962,6 +976,7 @@ Inputs:
 Outputs:
 
 * *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
 Examples:
 
@@ -1207,6 +1222,10 @@ Inputs: *None*.
 
 Outputs:
 
+* *current_height* - unsigned int; Current block height of the daemon.
+* *hard_forks* - array of `hard_fork` structure, defined as follows:
+  * *height* - unsigned int
+  * *hf_version* - unsigned int
 * *release* - boolean; States if the daemon software version corresponds to an official tagged release (`true`), or not (`false`)
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
@@ -1373,6 +1392,7 @@ Outputs:
   * *start_block_height* - unsigned int; block height of the first block in that span
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *target_height* - unsigned int; target height the node is syncing from (will be 0 if node is fully synced)
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
 Example:
 
@@ -1447,7 +1467,7 @@ Inputs: *None*.
 Outputs:
 
 * *backlog*: array of structures *tx_backlog_entry* (in binary form):
-  * *blob_size* - unsigned int (in binary form)
+  * *weight* - unsigned int (in binary form)
   * *fee* - unsigned int (in binary form)
   * *time_in_pool* - unsigned int (in binary form)
 * *status* - string; General RPC error code. "OK" means everything looks good.
@@ -1487,10 +1507,13 @@ Outputs:
 
 * *distributions* - array of structure distribution as follows:
   * *amount* - unsigned int
+  * *cumulative* - boolean
   * *base* - unsigned int
   * *distribution* - array of unsigned int
   * *start_height* - unsigned int
 * *status* - string; General RPC error code. "OK" means everything looks good.
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 
 Example:
 
@@ -1683,6 +1706,7 @@ Outputs:
 * *aux_pow* - array;
   * *id* - string;
   * *hash* - string;
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
 Example:
 
@@ -1766,8 +1790,14 @@ Alias: */getblocks.bin*.
 Inputs:
 
 * *block_ids* - binary array of hashes; first 10 blocks id goes sequential, next goes in pow(2,n) offset, like 2, 4, 8, 16, 32, 64 and so on, and the last one is always genesis block
+* *daemon_time* - unsigned int
 * *start_height* - unsigned int
 * *prune* - boolean
+* *requested_info* - unsigned int; (Optional; default is `0`)
+* *no_miner_tx* - boolean; (Optional; default is `false`)
+* *pool_info_since* - unsigned int; (Optional; default is `0`)
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 
 Outputs:
 
@@ -1804,6 +1834,8 @@ Outputs:
 * *blocks* - array of block complete entries
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 
 <!-- Cannot get this working
 Example:
@@ -1861,6 +1893,8 @@ Outputs:
 * *o_indexes* - array of unsigned int; List of output indexes
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 
 <!-- Cannot get this working
 Example:
@@ -1975,6 +2009,8 @@ Outputs:
   * *tx_hash* - string; transaction hash
 * *txs_as_hex* - string; Full transaction information as a hex string (old compatibility parameter)
 * *txs_as_json* - json string; (Optional - returned if set in inputs. Old compatibility parameter) List of transaction as in *as_json* above:
+* *confirmations* - unsigned int
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
 
 Example 1: Return transaction information in binary format.
 
@@ -2121,7 +2157,8 @@ Alias: */sendrawtransaction*.
 Inputs:
 
 * *tx_as_hex* - string; Full transaction information as hexidecimal string.
-* *do_not_relay* - boolean; Stop relaying transaction to other nodes (default is `false`).
+* *do_not_relay* - boolean; (Optional; default is `false`) Stop relaying transaction to other nodes.
+* *do_sanity_checks* - boolean; (Optional; default is `true`)
 
 Outputs:
 
@@ -2136,6 +2173,10 @@ Outputs:
 * *reason* - string; Additional information. Currently empty or "Not relayed" if transaction was accepted but not relayed.
 * *status* - string; General RPC error code. "OK" means everything looks good. Any other value means that something went wrong.
 * *too_big* - boolean; Transaction size is too big (`true`) or OK (`false`).
+* *nonzero_unlock_time* - boolean
+* *sanity_check_failed* - boolean
+* *too_few_outputs* - boolean
+* *tx_extra_too_big* - boolean
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
 
@@ -2314,7 +2355,9 @@ Get the known peers list.
 
 Alias: *None*.
 
-Inputs: *None*.
+Inputs:
+* *public_only* - boolean; (Optional; default is `true`)
+* *include_blocked* - boolean; (Optional; default is `false`)
 
 Outputs:
 
@@ -2326,6 +2369,7 @@ Outputs:
   * *port* - unsigned int; TCP port the peer is using to connect to monero network.
 * *status* - string; General RPC error code. "OK" means everything looks good. Any other value means that something went wrong.
 * *white_list* - array of online *peer* structure, as above.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
 Example (truncated lists):
 
@@ -2763,6 +2807,7 @@ Inputs: *None*.
 Outputs:
 
 * *status* - string; General RPC error code. "OK" means everything looks good.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
 Example:
 
@@ -2855,6 +2900,7 @@ Alias: *None*.
 Inputs:
 
 * *out_peers* - unsigned int; Max number of outgoing peers
+* *set* - boolean; (Optional; default is `true`)
 
 Outputs:
 
