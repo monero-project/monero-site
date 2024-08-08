@@ -181,7 +181,7 @@ author: dEBRUYNE / fluffypony
 **\<anonimal>** Lots of good input. I'll need to give this more thought too.  
 **\<anonimal>** Anything else on this point?  
 **\* anonimal** will add to the next meeting agenda  
-**\<rehrar>** Nah, but it may be a good thing to add the the next #monero-dev agenda also  
+**\<rehrar>** Nah, but it may be a good thing to add the next #monero-dev agenda also  
 **\<anonimal>** ^ fluffypony  
 **\<anonimal>** 6. Code + ticket discussion / Q & A  
 **\<anonimal>** 6 minutes left. Any questions/comments?  

@@ -102,7 +102,7 @@ An overview [can be found on Hello Monero](https://hellomonero.com/article/moner
 **\<fluffypony>** this sorta bounces back to the MRL, so we wait for feedback  
 **\<fluffypony>** hyc: are you doing anything interesting at the moment?  
 **\<hyc>** not really. I still need to come up with a fix for txn_full on 32bit  
-**\<hyc>** I'm traveling most of the the rest of this month  
+**\<hyc>** I'm traveling most of the rest of this month  
 **\<hyc>** so not much hacking time  
 **\<fluffypony>** cool beans  
 **\<fluffypony>** ok - anything else from anyone else?  

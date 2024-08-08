@@ -286,7 +286,7 @@ An overview [can be found on Hello Monero](https://hellomonero.com/article/moner
 **\<meeting-bot> [i2p-relay] {-moneromooo}** Well, I'm not very much acquainted with the way CN P2P works in the first place...  
 **\<meeting-bot> [EinMByte]** e.g. do you want to use streaming, I2NP directly, datagrams...?  
 **\<meeting-bot> [i2p-relay] {-moneromooo}** It's all TCP, with a simple HTTP server at hte moment.  
-**\<meeting-bot> [Zenified]** LMDB is the the real deal  
+**\<meeting-bot> [Zenified]** LMDB is the real deal  
 **\<meeting-bot> [i2p-relay] {-moneromooo}** Doesn't mean it has to stay that way though.  
 **\<meeting-bot> [EinMByte]** So you need connections? Probably streaming then  
 **\<meeting-bot> [anonimal]** Question: how is monero-core currently talking with monerod?  

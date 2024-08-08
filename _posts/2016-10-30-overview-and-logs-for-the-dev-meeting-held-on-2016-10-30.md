@@ -90,7 +90,7 @@ An overview [can be found on Hello Monero](https://hellomonero.com/article/moner
 **\<Slack> \<nanoakron>** @revler1082 you should contact the original devs of XThin and ask them about those issues :slightly_smiling_face:  
 **\<moneromooo>** I don't know how the bitcoin ones work, but given what you wrote, I'd send the index of the tx you don't have. Possibly differential encoded.  
 **\<Slack> \<nanoakron>** @hyc is your db guy  
-**\<Slack> \<malmen>** Instead of the block on the the database save the full tx, can it be save the reference to other block with tx? It will use more disk io and cpu,  but can save space  
+**\<Slack> \<malmen>** Instead of the block on the database save the full tx, can it be save the reference to other block with tx? It will use more disk io and cpu,  but can save space  
 **\<revler1082>** thanks @moneromooo that's a good one  
 **\<moneromooo>** I'm guessing there might be a good reason why they don't do that though.  
 **\<Slack> \<nanoakron>** Well that’s an interesting point - if you’re pulling in other transactions to build your ring signature, do you do that from the mempool or from historic data stored in the local db? I’m not sure myself  
