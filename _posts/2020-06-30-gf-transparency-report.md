@@ -39,7 +39,7 @@ The Core Team decided, on February 14th, to exchange all BTC (and fork derivativ
  
 ## LocalMonero
  
-LocalMonero pays an equivalent of $100 a month to the general fund to sponsor the Revuo Monero, a weekly Monero newsletter put out by the Core Team. In exchange their logo is given space at the bottom of the newsletter, as well as taking advantage of the search engine optimization the Revuo gives by putting it on their site https://localmonero.co and having the Revuo site (https://revuo-monero.com) give a canonical link to their site.
+LocalMonero pays an equivalent of $100 a month to the general fund to sponsor the Revuo Monero, a weekly Monero newsletter put out by the Core Team. In exchange their logo is given space at the bottom of the newsletter, as well as taking advantage of the search engine optimization the Revuo gives by putting it on their site [https://localmonero.co] (https://localmonero.co) and having the Revuo site (https://revuo-monero.com) give a canonical link to their site.
  
 ## Further comments on the state of the general fund
  
