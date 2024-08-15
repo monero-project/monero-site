@@ -4128,16 +4128,6 @@ p.hangouts-social {
     background-position: -176px -95px;
 }
 
-.social-icon.facebook {
-    background-image: url(../img/monero-spritesheet.png);
-    background-position: -128px 0;
-}
-
-.social-icon.facebook:hover {
-    background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px 1px;
-}
-
 .social-icon.github {
     background-image: url(../img/monero-spritesheet.png);
     background-position: -127px -144px;

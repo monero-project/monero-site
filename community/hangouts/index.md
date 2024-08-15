@@ -17,9 +17,6 @@ meta_descr: hangouts.intro
                 <a class="ext-noicon" href="https://reddit.com/r/Monero" target="_blank" rel="noreferrer noopener" aria-label="Reddit logo"><div class="social-icon reddit"></div></a>
             </li>
             <li>
-                <a class="ext-noicon" href="https://www.facebook.com/monerocurrency/" target="_blank" rel="noreferrer noopener" aria-label="Facebook logo"><div class="social-icon facebook"></div></a>
-            </li>
-            <li>
                 <a class="ext-noicon" href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener" aria-label="GitHub logo"><div class="social-icon github"></div></a>
             </li>
             <li>
