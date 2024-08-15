@@ -70,9 +70,9 @@ meta_descr: meta_descr.contributing
                         <div class="col-xs-12">
                             <h3>{% t contributing.genfund %}</h3>
                             <p>{% t contributing.genfund_p %}</p>
-                            <p>Monero:<br><code>888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</code></p>
-                            <p>Bitcoin:<br><code>1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</code></p>
-                            <p>@openalias: <code>donate.getmonero.org</code></p>
+                            <p>Monero:<br><code class="donation-field">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</code></p>
+                            <p>Bitcoin:<br><code class="donation-field">1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</code></p>
+                            <p>@openalias: <code class="donation-field">donate.getmonero.org</code></p>
                         </div>
                     </div><br>
                     <div class="row center-xs">
