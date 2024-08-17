@@ -4218,6 +4218,17 @@ p.hangouts-social {
   width: 3rem;
 }
 
+.social-icon.lemmy {
+  background-image: url(../img/lemmy.avif);
+  background-color: white;
+  background-size: 100%;
+}
+
+.social-icon.lemmy:hover {
+  background-image: url(../img/lemmy-hover.avif);
+  background-color: #ff6500;
+}
+
 @media only screen and (max-width: 62rem) {
 
 .hangouts .irc .col-md-4 {
