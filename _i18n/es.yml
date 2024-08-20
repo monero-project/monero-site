@@ -1038,7 +1038,7 @@ mining:
     \ GUI (sólo para CPU). Si quieres minar en una pool o minar con una GPU, necesitarás\
     \ un software dedicado. Mineros que soportan Monero:\n"
   supportp: Si tienes preguntas o simplemente quieres charlar con otros mineros, ven
-    a chatear en Monero Pools. En <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a>
+    a chatear en Monero Pools. En <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a>
     y <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   conminfee: Sólo puedes utilizar software de terceros para minar en un pool, lo que
     puede quitarte un pequeño porcentaje de tus valores de hash.

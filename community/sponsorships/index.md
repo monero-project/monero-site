@@ -75,7 +75,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <h2>{% t sponsorships.pastsponsors %}</h2>
                     <ul>
-                        <li><a href="https://globee.com">Globee</a></li>
+                        <li>Globee</li>
                         <li><a href="https://www.navicat.com">Navicat</a></li>
                         <li><a href="https://www.forked.net">Forked</a></li>
                         <li><a href="https://www.kitware.com/">Kitware</a></li>

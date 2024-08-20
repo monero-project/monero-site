@@ -17,6 +17,9 @@ meta_descr: meta_descr.roadmap
             <div class="col-sm-3 col-xs-4">
                 <p><img class="emoji" src="/img/emojis/1F9ED.svg">{% t roadmap.upcoming %}</p>
             </div>
+            <div class="col-sm-3 col-xs-4">
+                <p><img class="emoji" src="/img/emojis/1F310.svg">{% t roadmap.proposed %}</p>
+            </div>
         </div>
     </div>
     <section class="container">
@@ -25,7 +28,7 @@ meta_descr: meta_descr.roadmap
                 <div class="tabPanel-widget">
                     <label for="tab-1" tabindex="0"></label>
                     <input id="tab-1" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2014-2018</h2>
+                    <h2>2014-2019</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2014</h2>
                             <ul>
@@ -122,11 +125,6 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.paper10 %}</li>
                                     <li class="completed">{% t roadmap.mms %}</li>
                             </ul>
-                    </div>
-                    <label for="tab-2" tabindex="0"></label>
-                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2019</h2>
-                    <div class="tabPanel-content info-block">
                         <h2>2019</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.feb %}</h3>
@@ -156,8 +154,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.randomx %}</li>
                             </ul>
                     </div>
-                    <label for="tab-3" tabindex="0"></label>
-                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true">
+                    <label for="tab-2" tabindex="0"></label>
+                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
                     <h2>2020</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2020</h2>
@@ -178,8 +176,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.released-0-17 %}</li>
                             </ul>
                     </div>
-                    <label for="tab-4" tabindex="0"></label>
-                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-3" tabindex="0"></label>
+                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2021</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2021</h2>
@@ -192,26 +190,44 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed"><a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">{% t roadmap.p2pool %}</a></li>
                             </ul>
                     </div>
-                    <label for="tab-5" tabindex="0"></label>
-                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-4" tabindex="0"></label>
+                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2022</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2022</h2>
                             <ul>
+                                <h3 class="months">{% t roadmap.apr %}</h3>
+                                    <li class="completed">{% t roadmap.view-tags %}</li>
                                 <h3 class="months">{% t roadmap.jul %}</h3>
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/07/19/monero-0.18.0.0-released.html">{% t roadmap.released-0-18 %}</a></li>
                                 <h3 class="months">{% t roadmap.aug %}</h3>
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/04/20/network-upgrade-july-2022.html">{% t roadmap.hardfork-v15 %}</a></li>
                             </ul>
                     </div>
-                    <label for="tab-6" tabindex="0"></label>
-                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-5" tabindex="0"></label>
+                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>2023</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2023</h2>
                             <ul>
                                 <h3 class="months"></h3>
                                     <li class="completed">{% t roadmap.genimprov %}</li>
+                                <h3 class="months">{% t roadmap.may %}</h3>
+                                    <li class="completed">{% t roadmap.xmr-eth-atomicswaps %}</li>
+                                <h3 class="months">{% t roadmap.dec %}</h3>
+                                    <li class="completed">{% t roadmap.lws-subaddress %}</li>
+                            </ul>
+                    </div>
+                    <label for="tab-6" tabindex="0"></label>
+                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <h2>2024</h2>
+                    <div class="tabPanel-content info-block">
+                        <h2>2024</h2>
+                            <ul>
+                                <h3 class="months">{% t roadmap.jan %}</h3>
+                                    <li class="completed">{% t roadmap.xmrbch-atomicswap %}</li>
+                                <h3 class="months">{% t roadmap.may %}</h3>
+                                    <li class="completed"><a href="https://haveno.exchange">{% t roadmap.haveno-mainnet %}</a></li>
                             </ul>
                     </div>
                     <label for="tab-7" tabindex="0"></label>
@@ -221,16 +237,12 @@ meta_descr: meta_descr.roadmap
                         <h2>{% t roadmap.future %}</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
-                                    <li class="ongoing"><a href="https://haveno.exchange">{% t roadmap.haveno %}</a></li>
-                                    <li class="ongoing"><a href="https://github.com/seraphis-migration/strategy/wiki">{% t roadmap.seraphis-jamtis %}</a></li>
                                     <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD">{% t roadmap.ospead %}</a></li>
-                                    <li class="ongoing">{% t roadmap.ringsize-sera-tryp %}</li>
-                                    <li class="ongoing">{% t roadmap.tryptych %}</li>
-                                    <li class="ongoing">{% t roadmap.xmr-eth-atomicswaps %}</li>
                                     <li class="ongoing">{% t roadmap.bp++ %}</li>
-                                    <li class="ongoing">{% t roadmap.lws-subaddress %}</li>
-                                    <li class="upcoming">{% t roadmap.returnaddr %}</li>
-                                    <li class="upcoming">{% t roadmap.layer2 %}</li>
+                                    <li class="ongoing">{% t roadmap.cuprate %}</li>
+                                    <li class="upcoming">{% t roadmap.seraphis-jamtis %}</li>
+                                    <li class="upcoming"><a href="https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs">{% t roadmap.fcmp-plus %}</a></li>
+                                    <li class="proposed"><a href="https://github.com/monero-project/research-lab/issues/94">{% t roadmap.mrl-tasks %}</a></li>
                             </ul>
                     </div>
                 </div>

@@ -268,8 +268,6 @@ downloads:
   bootstrapnode1: Use a @remote-node while downloading the blockchain locally, this will allow you to use Monero immediately and switch to your local node once it's completely synced
   rpc: RPC Wallet and Daemon
   rpc1: included in the archive
-  payforrpc: Pay-for-RPC
-  payforrpc1: A new feature that allows node operators to get rewarded when their node is used
   verify: Verify
   verify1: You are strongly advised to verify the hashes of the archive you downloaded. This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds.
   verify2: Always verify your downloads!
@@ -278,9 +276,9 @@ downloads:
   showhash2: and should be treated as canonical, with the signature checked against the appropriate GPG key
   showhash3: in the source code
   showhash4: "Two guides are available to guide you through the verification process:"
-  mobilelight1: The wallets listed below are mobile or light wallets that are deemed safe by respected members of the community. If you want to use a wallet that is not listed on this page, it is strongly recommended that you consult the community to find out if the wallet is safe and what are the risks in using it. Go to our
+  mobilelight1: The wallets listed below are non-custodial mobile or light wallets not managed by the Monero core team that have been around for some time. It is strongly recommended that you do your own research to find out if the wallets are safe and what are the risks of using them. Go to our
   mobilelight2: Hangouts
-  mobilelight3:  page to see where we are.
+  mobilelight3:  page to see where the Monero communities meet.
   installer: Installer
   avwarning: Be aware that some antiviruses and firewalls may flag the Monero executables and archives as malware.
   moreinfofaq: More info in the FAQ
@@ -333,6 +331,8 @@ press-kit:
   guerrillakitp: A document created by the Monero Outreach workgroup containing materials and tips for an effective guerrilla marketing campaign.
   promographics: "Monero Promotional graphics - Badges and stickers for websites"
   promographicsp: Various graphics and Badges created by TheMonera, for both merchants and simple enthusiasts.
+  xmrgraphics: Monero Graphics
+  xmrgraphicsp: Monero posters, illustrations, edits, wallpapers, stickers that can be used by everyone. 
   othersymbols: Other symbols and logos
   mrllogo_para: The logo of the Monero Research Lab in SVG format.
   contacts: Contacts
@@ -587,7 +587,7 @@ mining:
     There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
   software_para: Note that some miners may have developer fees.
   support: Support
-  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   p2poolh: "P2Pool: The best of both solo and pool mining"
   p2poolnew: >
     P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="/2021/10/05/p2pool-released.html">the announcement post</a>.
@@ -716,6 +716,7 @@ roadmap:
   completed: Completed task
   ongoing: Ongoing task
   upcoming: Upcoming task
+  proposed: Proposed task
   future: Future
 
   jan: January
@@ -818,29 +819,32 @@ roadmap:
   onionaddress: Onion address for Getmonero.org
   supercop: Wallet scanning speedups (support for supercop ASM)
   clsag: Concise linkable spontaneous anonymous group (CLSAG) signatures
-  tryptych: "Triptych: logarithmic-sized linkable ring signatures with applications"
   kastelo: "Kastelo: open source hardware wallet"
-  layer2: Second-layer solutions for speed and scalability
   released-0-16-0-0: CLI and GUI 0.16.0.0 released
   released-0-17: CLI and GUI 0.17 'Oxygen Orion' released
   
-  returnaddr: Return addresses
   atomicswaps: Monero <-> Bitcoin atomic swaps
   bplus: Bulletproofs+
   p2pool: P2Pool released
   haveno: Haveno
 
-  ringsize-sera-tryp: increase ring size to >100
-  seraphis-jamtis: Seraphis & Jamtis
+  seraphis-jamtis: Seraphis codebase & Jamtis
   ospead: OSPEAD
   released-0-18: CLI and GUI 0.18 "Flourine Fermi" released
   hardfork-v15: Network upgrade v15 Hardfork
   xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
   bp++: Bulletproofs++
   lws-subaddress: Light Wallet Server subaddress support
+  view-tags: Wallet synchronization speed improved by +40% with one-byte view tags
 
   genimprov: "Multiple improvements like: block propagation delay reduced, tx_extra limited, wallet refresh and startup speedups"
-   
+
+  xmrbch-atomicswap: XMR-BCH atomic swap is completed
+  haveno-mainnet: HavenoDEX released
+  fcmp-plus: Full-Chain Membership Proofs
+  mrl-tasks: Proposed tasks from Monero Research Lab
+  cuprate: Monerod Rust implementation - Cuprate
+
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
   intro_email: "To contact the Monero Research Lab, please email lab@getmonero.org."
@@ -1029,7 +1033,6 @@ tools:
 
   market: Market
   backtestking: Build or buy your own trading strategy/bot.
-  cryptofacile: Compare crypto prices from the best crypto exchanges
   cryptoradar: Marketplace comparison website
   kryptocheck: German marketplace comparison website
 
