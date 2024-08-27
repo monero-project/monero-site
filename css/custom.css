@@ -4699,3 +4699,9 @@ input.accordion[type=radio]:checked + label::after {
 .tools h2 {
     text-align: left;
 }
+
+/* /get-started/contributing/ */
+
+.donation-field {
+  user-select: all; /* Select donation addresses with one click */
+}
