@@ -547,7 +547,7 @@ faq:
   alongtimemove: Don't worry, your coins are safe. To be able to spend them you only have to download and run the latest Monero software. You can use the @mnemonic-seed you previously saved to restore your wallet at any time. Note that hard forks in Monero are scheduled and non-contentious. Which means no new coin is created.
   qvuln: Are there known vulnerabilities in Monero?
   avuln: >
-    The Monero community has created a series of videos called "Breaking Monero", where potential Monero vulnerabilities are explored and discussed. There are 14 videos, with each exploring a different subject. Check out <a href="https://www.monerooutreach.org/breaking-monero/">the videos on monerooutreach.org</a>.
+    The Monero community has created a series of videos called "Breaking Monero", where potential Monero vulnerabilities are explored and discussed. There are 14 videos, with each exploring a different subject. Check out <a href="https://www.youtube.com/playlist?list=PLsSYUeVwrHBnAUre2G_LYDsdo-tD0ov-y">the playlist on YouTube</a>.
   vulnspotify: Available on Spotify as podcast
   qasicresistance: "What is ASIC resistance? Why is it important?"
   aasicresistance: ASICs are basically special computers created to do only one job, contrary to normal computers, which are made for general purpose. This characteristic makes ASICs very efficient for @mining.
