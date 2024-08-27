@@ -12,13 +12,13 @@ meta_descr: meta_descr.roadmap
                 <p><img class="emoji" src="/img/emojis/2714.png">{% t roadmap.completed %}</p>
             </div>
             <div class="col-sm-3 col-xs-4">
-                <p><img class="emoji" src="/img/emojis/1F6A7.png">{% t roadmap.ongoing %}</p>
+                <p><img class="emoji" src="/img/emojis/1F6A7.avif">{% t roadmap.ongoing %}</p>
             </div>
             <div class="col-sm-3 col-xs-4">
-                <p><img class="emoji" src="/img/emojis/1F9ED.png">{% t roadmap.upcoming %}</p>
+                <p><img class="emoji" src="/img/emojis/1F9ED.avif">{% t roadmap.upcoming %}</p>
             </div>
             <div class="col-sm-3 col-xs-4">
-                <p><img class="emoji" src="/img/emojis/1F310.png">{% t roadmap.proposed %}</p>
+                <p><img class="emoji" src="/img/emojis/1F310.avif">{% t roadmap.proposed %}</p>
             </div>
         </div>
     </div>
