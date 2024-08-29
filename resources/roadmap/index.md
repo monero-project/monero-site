@@ -239,9 +239,9 @@ meta_descr: meta_descr.roadmap
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
                                     <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD">{% t roadmap.ospead %}</a></li>
                                     <li class="ongoing">{% t roadmap.bp++ %}</li>
-                                    <li class="ongoing">{% t roadmap.cuprate %}</li>
+                                    <li class="ongoing"><a href="https://cuprate.org/">{% t roadmap.cuprate %}</a></li>
+                                    <li class="ongoing"><a href="https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs">{% t roadmap.fcmp-plus %}</a></li>
                                     <li class="upcoming">{% t roadmap.seraphis-jamtis %}</li>
-                                    <li class="upcoming"><a href="https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs">{% t roadmap.fcmp-plus %}</a></li>
                                     <li class="proposed"><a href="https://github.com/monero-project/research-lab/issues/94">{% t roadmap.mrl-tasks %}</a></li>
                             </ul>
                     </div>
