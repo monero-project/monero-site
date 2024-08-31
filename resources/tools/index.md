@@ -20,10 +20,10 @@ meta_descr: meta_descr.tools
                     <div class="col">
                         <h2>{% t tools.block-explorers %}</h2>
                         <p><a href="https://xmrchain.net/">xmrchain.net</a></p>
-                        <p><a href="https://moneroblocks.info">MoneroBlocks</a></p>
                         <p><a href="https://www.exploremonero.com/">Explore Monero</a></p>
                         <p><a href="https://monerovision.com">MoneroVision</a></p>
                         <p><a href="https://p2pool.io/explorer/">P2Pool</a> (<a href="http://yucmgsbw7nknw7oi3bkuwudvc657g2xcqahhbjyewazusyytapqo4xid.onion/explorer/">{% t tools.onion-service %}</a>)</p>
+                        <p><a href="https://localmonero.co/blocks/">LocalMonero.co blocks</a> (<a href="http://nehdddktmhvqklsnkjqcbpmb63htee2iznpcbs5tgzctipxykpj6yrid.onion/blocks">{% t tools.onion-service %}</a>)</p>
                     </div>
                 </div>
             </div>
@@ -47,11 +47,10 @@ meta_descr: meta_descr.tools
                     <div class="col">
                         <h2>{% t tools.network %}</h2>
                         <p><a href="https://monerohash.com/nodes-distribution.html">monerohash.com - {% t tools.monerohash-nodes %}</a></p>
-                        <p><a href="https://localmonero.co/blocks/">LocalMonero.co blocks - {% t tools.localmonero-blocks %}</a></p>
                         <p><a href="https://nownodes.io/nodes/monero-xmr">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
                         <p><a href="https://monero.fail/">Monero.fail - {% t tools.monerofail %}</a></p>
-                        <p><a href="https://txstreet.com/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
+                        <p><a href="https://tx.town/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
                     </div>
                 </div>
             </div>
@@ -61,7 +60,6 @@ meta_descr: meta_descr.tools
                 <div class="row">
                     <div class="col">
                         <h2>{% t tools.market %}</h2>
-                        <p><a href="https://cryptofacile.io">cryptoFacile - {% t tools.cryptofacile %}</a></p>
                         <p><a href="https://cryptoradar.co/buy-monero">Cryptoradar - {% t tools.cryptoradar %}</a></p>
                         <p><a href="https://kryptocheck.de">KryptoCheck - {% t tools.kryptocheck %}</a></p>
                     </div>
@@ -91,7 +89,6 @@ meta_descr: meta_descr.tools
                         <p><a href="https://bitcart.ai">Bitcart</a></p>
                         <p><a href="https://www.cdpay.eu/">CDPay</a></p>
                         <p><a href="https://www.coinpayments.net/">CoinPayments</a></p>
-                        <p><a href="https://globee.com/">GloBee</a></p>
                         <p><a href="https://www.cryptowoo.com/">CryptoWoo Monero Plugin (WooCommerce)</a></p>
                         <p><a href="https://github.com/monero-integrations/monerowp">Monero WooCommerce Extension (PHP)</a></p>
                         <p><a href="https://nowpayments.io/">NOWPayments</a></p>

@@ -120,7 +120,7 @@ meta_descr: meta_descr.presskit
   <div class="info-block">
     <h2>{% t press-kit.pressdoc %}</h2>
     <div>
-        <h3><a href="https://www.monerooutreach.org/quick-facts.html">{% t press-kit.quickfacts %}</a></h3>
+        <h3><a href="https://resilience365.com/monero-quick-facts">{% t press-kit.quickfacts %}</a></h3>
         <p>{% t press-kit.quickfactsp %}</p>
         <h3><a href="https://resilience365.com/monero-timeline">{% t press-kit.johnr365timeline %}</a></h3>
         <p>{% t press-kit.johnr365timelinep %}</p>
@@ -140,6 +140,10 @@ meta_descr: meta_descr.presskit
     <div>
       <h3><a href="https://www.themonera.art/2017/09/22/monero-promotional-graphics-badges-and-stickers-for-websites/">{% t press-kit.promographics %}</a></h3>
       <p>{% t press-kit.promographicsp %}</p>
+    </div>
+    <div>
+      <h3><a href="https://monero.graphics/">{% t press-kit.xmrgraphics %}</a></h3>
+      <p>{% t press-kit.xmrgraphicsp %}</p>
     </div>
   </div>
 </section>

@@ -4,7 +4,7 @@
 
 This README will walk you through everything you need to know to make changes, edits, or even completely new pages for the [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Feel free to skip down to a relevant section if you already know what you need.
 
-If you need support about something related to the website, please join `#monero-site` [Libera/IRC](irc://irc.libera.chat/#monero-site) or [Matrix](https://matrix.to/#/!txpwSzQzkuUaVbtsIx:matrix.org). For general info about Monero join `#monero`. We'll do whatever we can to help you.
+If you need support about something related to the website, please join `#monero-site` [Libera/IRC](irc://irc.libera.chat/#monero-site) or [Matrix](https://matrix.to/#/%23monero-site:monero.social). For general info about Monero join `#monero`. We'll do whatever we can to help you.
 
 ## What you'll need
 
@@ -293,6 +293,7 @@ Where `STATUS` can be:
 - `completed` for completed milestones
 - `ongoing` for milestones currently being worked on
 - `upcoming` for milestones not yet completed or in progress
+- `proposed` for milestones open to research and consideration
 
 If an entry is `completed`, a green tick symbol will be displayed on its left. if it's `ongoing` a roadwork sign and `upcoming` a compass.
 

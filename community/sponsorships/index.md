@@ -67,6 +67,16 @@ meta_descr: meta_descr.sponsorships
                     </div>
                 </div>
             </div>
+            <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="info-block">
+                    <div class="row center-xs">
+                        <div class="col">
+                            <a class="ext-noicon" href="https://cypherstack.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/cypherstack.png" alt="Cypher Stack logo"></a>
+                            <p>{% t sponsorships.cypherstack %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="container">
@@ -75,7 +85,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <h2>{% t sponsorships.pastsponsors %}</h2>
                     <ul>
-                        <li><a href="https://globee.com">Globee</a></li>
+                        <li>Globee</li>
                         <li><a href="https://www.navicat.com">Navicat</a></li>
                         <li><a href="https://www.forked.net">Forked</a></li>
                         <li><a href="https://www.kitware.com/">Kitware</a></li>
