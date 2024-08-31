@@ -4249,6 +4249,10 @@ p.hangouts-social {
 
 }
 
+.builtonmonero a, .builtonmonero a:hover, .builtonmonero a:active, .builtonmonero a:focus {
+    border: none;
+}
+
 /***************************SPONSORS*****************************/
 
 .sponsors .info-block {
