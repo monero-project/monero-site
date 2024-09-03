@@ -39,8 +39,8 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://www.forked.net" target="_blank" rel="noreferrer"><img src="/img/sponsors/forked_logo.png" alt="Fork Networking logo"></a>
-                            <p>{% t sponsorships.forknetworking %}</p>
+                            <a class="ext-noicon" href="https://www.macstadium.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/macstadium.png" alt="Macstadium logo"></a>
+                            <p>{% t sponsorships.macstadium %}</p>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://www.macstadium.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/macstadium.png" alt="Macstadium logo"></a>
-                            <p>{% t sponsorships.macstadium %}</p>
+                            <a class="ext-noicon" href="https://cakewallet.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/cakewallet.png" alt="Cake Wallet logo"></a>
+                            <p>{% t sponsorships.cakewallet %}</p>
                         </div>
                     </div>
                 </div>
@@ -61,8 +61,8 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://cakewallet.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/cakewallet.png" alt="Cake Wallet logo"></a>
-                            <p>{% t sponsorships.cakewallet %}</p>
+                            <a class="ext-noicon" href="https://symas.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
+                            <p>{% t sponsorships.symas %}</p>
                         </div>
                     </div>
                 </div>
@@ -71,8 +71,8 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <a class="ext-noicon" href="https://symas.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/symas.png" alt="Symas logo"></a>
-                            <p>{% t sponsorships.symas %}</p>
+                            <a class="ext-noicon" href="https://cypherstack.com/" target="_blank" rel="noreferrer"><img src="/img/sponsors/cypherstack.png" alt="Cypher Stack logo"></a>
+                            <p>{% t sponsorships.cypherstack %}</p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ meta_descr: meta_descr.sponsorships
                 <div class="info-block">
                     <h2>{% t sponsorships.pastsponsors %}</h2>
                     <ul>
-                        <li><a href="https://globee.com">Globee</a></li>
+                        <li>Globee</li>
                         <li><a href="https://www.navicat.com">Navicat</a></li>
                         <li><a href="https://www.forked.net">Forked</a></li>
                         <li><a href="https://www.kitware.com/">Kitware</a></li>

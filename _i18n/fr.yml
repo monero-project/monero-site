@@ -1068,7 +1068,7 @@ mining:
     \ une pool ou miner avec un GPU, vous aurez besoin d'un logiciel dédié. Mineurs\
     \ supportant Monero :\n"
   supportp: Si vous avez des questions ou si vous voulez simplement vous confronter
-    à d'autres mineurs, venez discuter sur Monero Pools. Sur <a href="https://matrix.to/#/#monero-pools:monero.social">Matrix</a>
+    à d'autres mineurs, venez discuter sur Monero Pools. Sur <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a>
     and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
   efficiency: Monero peut être miné à la fois par des CPU et des GPU, mais le premier
     est beaucoup plus efficace.

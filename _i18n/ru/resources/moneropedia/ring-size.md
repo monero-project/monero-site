@@ -1,19 +1,20 @@
 ---
-summary: 'total number of possible signers in a ring signature'
-terms: ["ring-size"]
+summary: 'общее количество подписантов участвующих в формировании кольцевой подписи'
+terms: ["ring-size", "размер-кольца"]
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### The Basics
+### Основная информация
 
-Ring size refers to the total number of signers in a @ring-signature. Before
-release [0.13.0 "Beryllium Bullet"]({{ site.baseurl
-}}/2018/10/11/monero-0.13.0-released.html), it was possible to select an
-arbitrary number of signers. With release 0.13, it was decided to set this
-number to 11 to enforce transaction uniformity.
+Размером кольца называется общее количество подписантов, присутствующих в
+@кольцевой-подписи. До выхода версии [0.13.0 "Beryllium Bullet"]({{
+site.baseurl }}/2018/10/11/monero-0.13.0-released.html) можно было выбрать
+любое произвольное количество подписантов. При реализации этой версии
+протокола было решено сделать данный параметр фиксированным и равным 11, что
+обеспечивало бы единообразие транзакций.
 
-`Ring size (16) = foreign outputs (15) + your output (1)`
+`Размер кольца (16) = чужие выходы (15) + ваш выход (1)`
 
-Foreign outputs are typically called "decoys," and the number of decoys was
-previously called the "mixin" size.
+Чужие выходы, как правило, называют «ложными», а количество ложных выходов
+ранее называли размером «миксина».

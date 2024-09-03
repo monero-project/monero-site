@@ -163,6 +163,9 @@ meta_descr: faq.intro
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Stealth%20Addresses.m4v">{% t faq.video_sa %}</a> - {% t faq.mvideos %} @Stealth-Addresses</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20Ring%20Signatures.m4v">{% t faq.video_ringsig %}</a> - {% t faq.mvideos %} @Ring-Signatures</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero%20-%20RingCT.m4v">{% t faq.video_ringct %}</a> - {% t faq.mvideos %} @RingCT</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero_Tail_Emission_VOSTO_EMISIO.webm">{% t moneropedia.entries.tail-emission %}</a> - {% t faq.mvideos %} @Tail-Emission</li>
+                            <li><a href="{{ site.baseurl_root }}/media/Monero_Nodes_VOSTO_EMISIO.webm">{% t moneropedia.entries.node %}</a> - {% t faq.mvideos %} @Nodes</li>
+                            <li><a href="{{ site.baseurl_root }}/media/RandomX_VOSTO_EMISIO.webm">{% t moneropedia.entries.randomx %}</a> - {% t faq.mvideos %} @RandomX</li>
                         </ol>
                     </div>
                 </div>

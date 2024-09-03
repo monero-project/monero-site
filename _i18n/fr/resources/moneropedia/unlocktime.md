@@ -27,10 +27,6 @@ and may be removed in a future Monero release, so the Monero developers
 advise against building critical infrastructure that depends on this
 feature.
 
-Decoy outputs may be selected from these locked outputs, thus identifying
-them as provable decoy outputs. At the moment, this has little impact on
-wider network privacy since this unlock time feature is so rarely used.
-
 Further, true spends after a reasonably long lock time (more than several
 days) may be heuristically identified as the true spend, since there will be
 fewer other transactions using those outputs as decoys around that time

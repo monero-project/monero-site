@@ -80,7 +80,7 @@ meta_descr: meta_descr.mining
                         <p>{% t mining.softwarep %}
                         <ul>
                             <li><a href="https://github.com/xmrig/xmrig">XMRig</a></li>
-                            <li><a href="https://cryptonote.social/tools/csminer">CSminer</a></li>
+                            <li><a href="https://github.com/cryptonote-social/csminer">CSminer</a></li>
                         </ul>
                         {% t mining.software_para %}
                         </p>

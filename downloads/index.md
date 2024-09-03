@@ -150,7 +150,6 @@ meta_descr: downloads.intro
                 <li><b>{% t downloads.hwcompatible %}</b> {% t downloads.hwcompatible1 %}</li>
                 <li><b>{% t downloads.rpc %}</b> {% t downloads.rpc1 %}</li>
                 <li><b>{% t downloads.pruning %}.</b> {% t downloads.pruning1 %}</li>
-                <li><b>{% t downloads.payforrpc %}</b> {% t downloads.payforrpc1 %}</li>
               </ul>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -168,11 +167,12 @@ meta_descr: downloads.intro
                     <ul>
                       <li class="downloads"><span class="icon-linux"></span><a class="orange" href="https://downloads.getmonero.org/cli/linux64">Linux 64-bit</a> | <a class="orange" href="https://downloads.getmonero.org/cli/linux32">32-bit</a></li>
                       <li class="downloads"><span class="icon-linux"></span><a class="orange" href="https://downloads.getmonero.org/cli/linuxarm8">Linux ARMv8</a> | <a class="orange" href="https://downloads.getmonero.org/cli/linuxarm7">Linux ARMv7</a></li>
-                      <li class="downloads"><span class="icon-freebsd"></span><a class="orange" href="https://downloads.getmonero.org/cli/freebsd64">FreeBSD 64-bit</a></li>
+                      <li class="downloads"><span class="icon-linux"></span><a class="orange" href="https://downloads.getmonero.org/cli/linuxriscv64">Linux RISC-V 64-bit</a></li>
                     </ul>
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
+                      <li class="downloads"><span class="icon-freebsd"></span><a class="orange" href="https://downloads.getmonero.org/cli/freebsd64">FreeBSD 64-bit</a></li>
                       <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero" target="_blank">{% t downloads.sourcecode %}</a></li>
                       <li class="downloads"><span class="icon-git"></span><a class="orange" href="https://downloads.getmonero.org/cli/source">{% t downloads.sourcearchive %}</a></li>
                     </ul>
@@ -260,6 +260,12 @@ meta_descr: downloads.intro
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/m2049r/xmrwallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
+                        <tr>
+                            <td><img class="small" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet logo"><a href="https://stackwallet.com/">Stack Wallet</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://github.com/cypherstack/stack_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                        </tr>
                         </table>
                         <h3 class="desktop-only">{% t downloads.remotesync %}</h3>
                         <p class="desktop-only">{% t downloads.remotesyncinfo %}</p>
@@ -287,9 +293,10 @@ meta_descr: downloads.intro
                             <h3>{% t downloads.localsync %}</h3>
                             <p>{% t downloads.localsyncinfo %}</p>
                             <ul>
-                                <li><a class="ext-noicon" href="https://cakewallet.io" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.io" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
@@ -360,6 +367,7 @@ meta_descr: downloads.intro
                                     <td>
                                         <ul>
                                             <li>Model T</li>
+                                            <li>Safe 3</li>
                                         </ul>
                                     </td>
                                     <td>

@@ -58,6 +58,7 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/get_hashes.bin](#get_hashesbin)
 * [/get_o_indexes.bin](#get_o_indexesbin)
 * [/get_outs.bin](#get_outsbin)
+* [/get_output_distribution.bin](#get_output_distributionbin)
 * [/get_transactions](#get_transactions)
 * [/get_alt_blocks_hashes](#get_alt_blocks_hashes)
 * [/is_key_image_spent](#is_key_image_spent)
@@ -86,6 +87,8 @@ Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the m
 * [/get_outs](#get_outs)
 * [/update](#update)
 * [/pop_blocks](#pop_blocks)
+* [/get_transaction_pool_hashes](#get_transaction_pool_hashes)
+* [/get_public_nodes](#get_public_nodes)
 
 
 ---
@@ -197,7 +200,7 @@ Outputs:
 Example:
 
 ```
-$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_template","params":{"wallet_address":"44GBHzv6ZyQdJkjqZje6KLZ3xSyN1hBSFAnLP6EAqJtCRVzMzZmeXTC2AHKDS9aEDTRKmo6a6o9r9j86pYfhCWDkKjbtcns","reserve_size":60}' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_template","params":{"wallet_address":"44GBHzv6ZyQdJkjqZje6KLZ3xSyN1hBSFAnLP6EAqJtCRVzMzZmeXTC2AHKDS9aEDTRKmo6a6o9r9j86pYfhCWDkKjbtcns","reserve_size":60}}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
@@ -238,7 +241,7 @@ Outputs:
 In this example, a block blob which has not been mined is submitted:
 
 ```
-$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_block","params":["0707e6bdfedc053771512f1bc27c62731ae9e8f2443db64ce742f4e57f5cf8d393de28551e441a0000000002fb830a01ffbf830a018cfe88bee283060274c0aae2ef5730e680308d9c00b6da59187ad0352efe3c71d36eeeb28782f29f2501bd56b952c3ddc3e350c2631d3a5086cac172c56893831228b17de296ff4669de020200000000"]' -H 'Content-Type: application/json'
+$ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_block","params":["0707e6bdfedc053771512f1bc27c62731ae9e8f2443db64ce742f4e57f5cf8d393de28551e441a0000000002fb830a01ffbf830a018cfe88bee283060274c0aae2ef5730e680308d9c00b6da59187ad0352efe3c71d36eeeb28782f29f2501bd56b952c3ddc3e350c2631d3a5086cac172c56893831228b17de296ff4669de020200000000"]}' -H 'Content-Type: application/json'
 
 {
   "error": {
@@ -258,7 +261,7 @@ Inputs:
 * *amount_of_blocks* - unsigned int; number of blocks to be generated.
 * *wallet_address* - string; address to receive the coinbase reward.
 * *prev_block* - string;
-* *starting_nonce* - unsigned int; Increased by miner untill it finds a matching result that solves a block.
+* *starting_nonce* - unsigned int; Increased by miner until it finds a matching result that solves a block.
 
 Outputs:
 * *blocks* - list of string;
@@ -502,7 +505,7 @@ Outputs:
 * *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
 * *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
 
-In this example, blocks range from height 1545999 to 1546000 is looked up (notice that the returned informations are ascending order and that it is at the April 2018 network upgrade time):
+In this example, blocks range from height 1545999 to 1546000 is looked up (notice that the returned information are ascending order and that it is at the April 2018 network upgrade time):
 
 ```
 $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_headers_range","params":{"start_height":1545999,"end_height":1546000}}' -H 'Content-Type: application/json'
@@ -1349,7 +1352,7 @@ $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"r
 
 ### **sync_info**
 
-Get synchronisation informations
+Get synchronization information
 
 Alias: *None*.
 
@@ -1538,7 +1541,7 @@ Outputs:
 Example:
 
 ```
-$ curl http://localhost:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_miner_data"}' -H 'Content-Type: application/json'
+$ curl http://localhost:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_miner_data"}' -H 'Content-Type: application/json'
 
 {
   "id": "0",
@@ -1650,6 +1653,7 @@ Example:
 
 ```
 $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_cache","params":{"bad_txs":true,"bad_blocks":true}}' -H 'Content-Type: application/json'
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1688,6 +1692,7 @@ Example:
 
 ```
 $ curl http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"add_aux_pow","params":{"blocktemplate_blob":" ... ","aux_pow":[{"id":"3200b4ea97c3b2081cd4190b58e49572b2319fed00d030ad51809dff06b5d8c8","hash":"7b35762de164b20885e15dbe656b1138db06bb402fa1796f5765a23933d8859a"}]}}' -H 'Content-Type: application/json''
+
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -1906,6 +1911,39 @@ $ curl http://127.0.0.1:18081/get_o_indexes.bin --data-binary '{"txid":"d6e48158
 --->
 
 
+### **/get_output_distribution.bin**
+
+Get outputs. Binary request version of [get_output_distribution](#get_output_distribution).
+
+Alias: *None*.
+
+Inputs:
+
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *amounts* - array of unsigned int; amounts to look for
+* *cumulative* - boolean; (optional, default is `false`) States if the result should be cumulative (`true`) or not (`false`)
+* *from_height* - unsigned int; (optional, default is 0) starting height to check from
+* *to_height* - unsigned int; (optional, default is 0) ending height to check up to
+* *binary* - boolean; (optional, default is `true`); Must be `true`.
+* *compress* - unsigned int; (optional, default is `false`) Respond with compressed data.
+
+Outputs:
+
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
+* *distributions* - array of structure distribution as follows:
+  * *amount* - unsigned int
+  * *base* - unsigned int
+  * *binary* - boolean; Always `true`.
+  * *compress* - unsigned int; `true` if compressed data, `false` otherwise.
+  * *distribution* - array of unsigned int; This field exists instead of *compressed_data* if the *compress* option was not used.
+  * *compressed_data* - array of unsigned int; This field exists instead of *distribution* if the *compress* option was used.
+  * *start_height* - unsigned int
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+
 ### **/get_transactions**
 
 Look up one or more transactions by hash.
@@ -1932,7 +1970,7 @@ Outputs:
     * *vin* - List of inputs into transaction:
       * *key* - The public key of the previous output spent in this transaction.
         * *amount* - The amount of the input, in @atomic-units.
-        * *key_offsets* - A list of integer offets to the input.
+        * *key_offsets* - A list of integer offsets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
       * *amount* - Amount of transaction output (if coinbase output, otherwise 0), in @atomic-units.
@@ -2120,7 +2158,7 @@ Alias: */sendrawtransaction*.
 
 Inputs:
 
-* *tx_as_hex* - string; Full transaction information as hexidecimal string.
+* *tx_as_hex* - string; Full transaction information as hexadecimal string.
 * *do_not_relay* - boolean; Stop relaying transaction to other nodes (default is `false`).
 
 Outputs:
@@ -2156,7 +2194,7 @@ Alias: *None*.
 Inputs:
 
 * *do_background_mining* - boolean; States if the mining should run in background (`true`) or foreground (`false`).
-* *ignore_battery* - boolean; States if batery state (on laptop) should be ignored (`true`) or not (`false`).
+* *ignore_battery* - boolean; States if battery state (on laptop) should be ignored (`true`) or not (`false`).
 * *miner_address* - string; Account address to mine to.
 * *threads_count* - unsigned int; Number of mining thread to run.
 
@@ -2486,7 +2524,7 @@ Categories are represented as a comma separated list of `<Category>:<level>` (si
   * *TRACE* - lower level
 A level automatically includes higher level.
 By default, categories are set to `*:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO`.
-Setting the categories to "" prevent any logs to be outputed.
+Setting the categories to "" prevents any logs from being outputted.
 
 Alias: *None*.
 
@@ -2577,21 +2615,21 @@ Outputs:
   * *fee* - unsigned int; The amount of the mining fee included in the transaction, in @atomic-units.
   * *id_hash* - string; The transaction ID hash.
   * *kept_by_block* - boolean; States if the tx was included in a block at least once (`true`) or not (`false`).
-  * *last_failed_height* - unsigned int; If the transaction validation has previously failed, this tells at what height that occured.
+  * *last_failed_height* - unsigned int; If the transaction validation has previously failed, this tells at what height that occurred.
   * *last_failed_id_hash* - string; Like the previous, this tells the previous transaction ID hash.
   * *last_relayed_time* - unsigned int; Last unix time at which the transaction has been relayed.
   * *max_used_block_height* - unsigned int; Tells the height of the most recent block with an output used in this transaction.
   * *max_used_block_id_hash* - string; Tells the hash of the most recent block with an output used in this transaction.
   * *receive_time* - unsigned int; The Unix time that the transaction was first seen on the network by the node.
   * *relayed* - boolean; States if this transaction has been relayed
-  * *tx_blob* - unsigned int; Hexadecimal blob represnting the transaction.
+  * *tx_blob* - unsigned int; Hexadecimal blob representing the transaction.
   * *tx_json* - json string; JSON structure of all information in the transaction:
     * *version* - Transaction version
     * *unlock_time* - If not 0, this tells when a transaction output is spendable.
     * *vin* - List of inputs into transaction:
       * *key* - The public key of the previous output spent in this transaction.
         * *amount* - The amount of the input, in @atomic-units.
-        * *key_offsets* - A list of integer offets to the input.
+        * *key_offsets* - A list of integer offsets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
       * *amount* - Amount of transaction output (if coinbase output, otherwise 0), in @atomic-units.
@@ -3071,5 +3109,98 @@ $ curl http://127.0.0.1:18081/pop_blocks -d '{"nblocks":6}' -H 'Content-Type: ap
   "height": 76482,
   "status": "OK",
   "untrusted": false
+}
+```
+
+
+### **/get_transaction_pool_hashes**
+
+Get hashes from transaction pool.
+
+Alias: *None*.
+
+Inputs: *None*.
+
+Outputs:
+
+* *credits* - unsigned int; If payment for RPC is enabled, the number of credits available to the requesting client. Otherwise, 0.
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *top_hash* - string; If payment for RPC is enabled, the hash of the highest block in the chain. Otherwise, empty.
+* *tx_hashes* - array of strings; This is an array of transaction hashes in hexadecimal string form.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/get_transaction_pool_hashes -H 'Content-Type: application/json'
+
+{
+  "credits": 0,
+  "status": "OK",
+  "top_hash": "",
+  "tx_hashes": ["e27bb84f1cf1f47a79578d3bb1f47a81745a4c5a5551622b4e924eb0b83f960d","b9f76e686f389e126ada5caf47034c57adeef671d8b899cba1ead606c868f819"],
+  "untrusted": false
+}
+```
+
+
+### **/get_public_nodes**
+
+Get public peer information.
+
+Alias: *None*.
+
+Inputs:
+
+* *gray* - boolean; (Optional; defaults to `false`) Include gray peers.
+* *white* - boolean; (Optional; defaults to `true`) Include white peers.
+* *include_blocked* - boolean; (Optional; defaults to `false`) Include blocked peers.
+
+Outputs:
+
+* *status* - string; General RPC error code. "OK" means everything looks good.
+* *whites* - array of `public_node` structures defined as follows:
+  * *host* - string; The node's IP address. This includes IPv4, IPv6, Onion, and i2p addresses.
+  * *last_seen* - unsigned int; UNIX timestamp of the last time the node was seen.
+  * *rpc_credits_per_hash* - unsigned int; If payment for RPC is enabled, the number of credits the node is requesting per hash. Otherwise, 0.
+  * *rpc_port* - unsigned int; RPC port number of the node.
+* *gray* - array of `public_node` structures; This is an array structures containing node information on gray peers. See *white* above.
+* *untrusted* - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted (`true`), or when the daemon is fully synced and thus handles the RPC locally (`false`)
+
+Example:
+
+```
+$ curl http://127.0.0.1:18081/get_public_nodes -d '{"gray":true}' -H 'Content-Type: application/json'
+
+{
+  "gray": [{
+    "host": "142.93.132.1",
+    "last_seen": 0,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18089
+  },{
+    "host": "193.142.4.2",
+    "last_seen": 0,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 19084
+  }],
+  "status": "OK",
+  "untrusted": false,
+  "white": [{
+    "host": "70.52.75.3",
+    "last_seen": 1722812577,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18081
+  },{
+    "host": "::ffff:207.180.221.220",
+    "last_seen": 1722872337,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18089
+  },{
+    "host": "zbjkbsxc5munw3qusl7j2hpcmikhqocdf4pqhnhtpzw5nt5jrmofptid.onion:18083",
+    "last_seen": 1720186288,
+    "rpc_credits_per_hash": 0,
+    "rpc_port": 18089
+  }]
 }
 ```

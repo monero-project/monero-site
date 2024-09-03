@@ -3600,6 +3600,10 @@ img.emoji {
   content: url("/img/emojis/1F9ED.svg");
 }
 
+.roadmap li.proposed:before {
+  content: url("/img/emojis/1F310.svg");
+}
+
 .roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming {
   width: 1rem;
   height: 1rem;
@@ -3635,10 +3639,10 @@ img.emoji {
 
 .tabPanel-widget > label,
 .tabPanel-widget > h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: calc(100% / 7);
-  height: 2rem;
-  line-height: 2rem;
+  height: 1rem;
+  line-height: 1rem;
   padding: 1rem 0;
 }
 
@@ -3801,7 +3805,7 @@ img.emoji {
 
 }
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 24rem) {
     .roadmap .mobile-roadmap {
     height: 2rem;
 }
@@ -3890,7 +3894,7 @@ img.emoji {
 }
 
 .tabPanel-widget h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .roadmap .tabPanel-widget > input + h2 + div.tabPanel-content {
@@ -4115,7 +4119,7 @@ p.hangouts-social {
 
 .social-icon.twitter:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -47px;
+    background-position: -176px -48px;
 }
 
 .social-icon.reddit {
@@ -4125,7 +4129,7 @@ p.hangouts-social {
 
 .social-icon.reddit:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -95px;
+    background-position: -176px -96px;
 }
 
 .social-icon.facebook {
@@ -4135,37 +4139,47 @@ p.hangouts-social {
 
 .social-icon.facebook:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px 1px;
+    background-position: -176px 0px;
 }
 
 .social-icon.github {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -127px -144px;
+    background-position: -128px -144px;
 }
 
 .social-icon.github:hover {
     background-image: url(../img/monero-spritesheet.png);
-    background-position: -176px -143px;
+    background-position: -176px -144px;
 }
 
 .social-icon.gitlab {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -128px -190px;
+  background-position: -128px -192px;
 }
 
 .social-icon.gitlab:hover {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -176px -190px;
+  background-position: -176px -192px;
 }
 
 .social-icon.telegram {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -128px -239px;
+  background-position: -128px -240px;
 }
 
 .social-icon.telegram:hover {
   background-image: url(../img/monero-spritesheet.png);
-  background-position: -176px -238px;
+  background-position: -176px -240px;
+}
+
+.social-icon.discord {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: -128px -288px;
+}
+
+.social-icon.discord:hover {
+  background-image: url(../img/monero-spritesheet.png);
+  background-position: -176px -288px;
 }
 
 .hangouts .irc .col-md-4 {
@@ -4684,4 +4698,10 @@ input.accordion[type=radio]:checked + label::after {
 
 .tools h2 {
     text-align: left;
+}
+
+/* /get-started/contributing/ */
+
+.donation-field {
+  user-select: all; /* Select donation addresses with one click */
 }

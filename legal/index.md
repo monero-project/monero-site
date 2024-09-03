@@ -21,15 +21,15 @@ title: titles.legal
                     </div>
 <div class="row">
 <div class="col" markdown="1">
-This website is operated by The Monero Project, a loose collective of individuals behind Monero. By visiting and using this website you will be accepting these Terms of Use ("TOU"). Please read them carefully and if you disagree with the TOU in any way, then do not use this website. The Monero Project reserves the right to post changes to the TOU on this website at any time, and by your continuing to use the website thereafter, you agree to be bound by the new version of the TOU. If any TOU changes are not acceptable, you must stop your use of this website. In these TOU, "The Monero Project" and "we" refers to The Monero Project, and "User" or "you" refers to each visitor to this website. "Monero" refers to the digital currency that can be used by the software available on this website.
+This website is operated by The Monero Project, a loose collective of individuals behind Monero. By visiting and using this website you will be accepting these Terms of Use ("TOU"). Please read them carefully, and if you disagree with the TOU in any way, then do not use this website. The Monero Project reserves the right to post changes to the TOU on this website at any time, and by your continuing to use the website thereafter, you agree to be bound by the new version of the TOU. If any TOU changes are not acceptable, you must stop your use of this website. In these TOU, "The Monero Project" or "we" refers to The Monero Project, and "User" or "you" refers to each visitor to this website. "Monero" refers to the digital currency that can be used by the software available on this website.
 
 ### Sites and Services
 
-We do not guarantee that access to or use of this website or any services will be uninterrupted or error free, and The Monero Project shall not be liable for any feature not being accessible or for any unavailability of its website and services. The website and its features may be expanded, limited or modified at any time by The Monero Project to meet the needs of its Users, or for technical or other reasons, without advance notice or reason. We may also in our sole discretion, and at any time, discontinue providing, temporarily or permanently, any or all of the website, without notice. To access some of the content or features of the website or its services, Users may need to enhance or update the hardware or software in their computer systems. The Monero Project assumes no responsibility for any failure to access the website or any services, partially or fully, whether due to the User's system, the Internet network or any other cause.
+We do not guarantee that access to or use of this website or any services will be uninterrupted or error-free, and The Monero Project shall not be liable for any feature not being accessible or for any unavailability of its website and services. The website and its features may be expanded, limited or modified at any time by The Monero Project to meet the needs of its Users, or for technical or other reasons, without advance notice or reason. We may also, at our sole discretion, and at any time, discontinue providing any or all of the website, temporarily or permanently, with or without notice. To access some of the content or features of the website or its services, Users may need to enhance or update the hardware or software in their computer systems. The Monero Project assumes no responsibility for any failure to access the website or any services, partially or fully, whether due to the User's system, the Internet network or any other cause.
 
 ### Minors
 
-We do not provide information or services to minors, and if you are under 18 you may only use this site with the active involvement of a parent, guardian or other supervising adult.
+We do not provide information or services to minors, and if you are under 18, you may only use this site with the active involvement of a parent, guardian or other supervising adult.
 
 ### No Investment Advice
 
@@ -37,11 +37,11 @@ This website does not provide individual or customized legal, tax, financial, or
 
 ### Content Limitations
 
-We make no guarantees as to the accuracy, thoroughness or quality of the information on this website, which is provided only on an "AS-IS" and "AS AVAILABLE" basis at User's sole risk. This information may be provided by third parties and The Monero Project shall not be responsible or liable for any errors, omissions or inaccuracies in the website content. The information provided at this site are neither comprehensive nor appropriate for every individual. Some of the information is relevant only in certain parts of the world, and may not be relevant to or compliant with the laws, regulations or other legal requirements of other countries. It is your responsibility to determine whether, how and to what extent your intended use of the information and services will be technically and legally possible in the areas of the world where you intend to use them. You are advised to verify any information before using it for any personal, financial or business purpose. In addition, the opinions and views expressed in any forum post on this website are solely those of the author(s) of the article and do not reflect the opinions of The Monero Project. The website content and services may be modified at any time by us, without advance notice or reason, and The Monero Project shall have no obligation to notify you of any corrections or changes to any website content.
+We make no guarantees as to the accuracy, thoroughness or quality of the information on this website, which is provided only on an "AS-IS" and "AS AVAILABLE" basis at User's sole risk. Information may be provided by third parties, and The Monero Project shall not be responsible or liable for any errors, omissions or inaccuracies in the website content. The information provided at this site is neither comprehensive nor appropriate for every individual. Some of the information is relevant only in certain parts of the world, and may not be relevant to or compliant with the laws, regulations or other legal requirements of other countries. It is your responsibility to determine whether, how, and to what extent your intended use of the information and services will be technically and legally possible in the areas of the world where you intend to use them. You are advised to verify any information before using it for any personal, financial or business purpose. In addition, the opinions and views expressed in any forum post on this website are solely those of the author(s) of the article and do not reflect the opinions of The Monero Project. The website content and services may be modified at any time by us, without advance notice or reason, and The Monero Project shall have no obligation to notify you of any corrections or changes to any website content.
 
 ### Proprietary Rights and License
 
-This website and its content are protected by copyright, trademark and other proprietary laws. For details please refer to our [Copyright section](#copyright).
+This website and its content are protected by copyright, trademark and other proprietary laws. For details, please refer to our [Copyright section](#copyright).
 
 ### Third Party Content
 
@@ -53,7 +53,7 @@ By posting or submitting any material to this website, including on the forum, y
 
 ### Viruses and Malware
 
-The Monero Project takes many precautions to ensure the files available for downloading through this website are not tampered with, and where appropriate SHA hashes are provided for end users to confirm they have downloaded the correct file. Nonetheless, The Monero Project does not guarantee that files available for downloading through this website will be free of infection or viruses or other code that may have contaminating or destructive properties. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for integrity, security and accuracy of data input and output, and for maintaining a means external to the site for the reconstruction of any lost data. It is almost always advisable to check the SHA hashes of the files you have downloaded, and if in any doubt consider [compiling Monero from the source code](https://github.com/monero-project/bitmonero).
+The Monero Project takes many precautions to ensure the files available for downloading through this website are not tampered with, and where appropriate, [SHA hashes](https://www.getmonero.org/downloads/hashes.txt) are provided for end users to confirm they have downloaded the correct file. Nonetheless, The Monero Project does not guarantee that files available for downloading through this website will be free of infection, viruses or other code that may have contaminating or destructive properties. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for integrity, security and accuracy of data input and output, and for maintaining a means external to the site for the reconstruction of any lost data. It is almost always advisable to check the SHA hashes of the files you have downloaded, and if in any doubt, consider [compiling Monero from the source code](https://github.com/monero-project/monero#compiling-monero-from-source).
 
 ### Sponsors and Advertisers are Not Endorsed
 
@@ -61,7 +61,7 @@ Though we seek to partner with quality companies, we are not responsible for the
 
 ### Offsite Links
 
-As a convenience to Users, the The Monero Project website and services may provide links to other sites or resources. Because we do not review or have no control over such sites and resources, The Monero Project shall not be responsible or liable for use of or reliance on any content, products, services or information at such sites or resources. Inclusion of any links does not imply any endorsement, affiliation, approval, association or sponsorship by The Monero Project of the linked websites, resources, their operators or owners. When you select a link, you may be leaving our website. The information available on Third Parties' websites may have certain restrictions on its use or distribution which differ from these TOU.
+As a convenience to Users, the The Monero Project website and services may provide links to other sites or resources. Because we do not review or have no control over such sites and resources, The Monero Project shall not be responsible or liable for the use of, or reliance on any content, products, services or information at such sites or resources. Inclusion of any links does not imply any endorsement, affiliation, approval, association or sponsorship by The Monero Project of the linked websites, resources, their operators or owners. When you select a link, you may be leaving our website. The information available on Third Parties' websites may have certain restrictions on its use or distribution which differ from these TOU.
 
 ### Password Protected Areas
 
@@ -86,7 +86,7 @@ This website may collect personal information from some Users. Because The Moner
 
 ### Communications
 
-When you visit our website or send us email, our responses to your communications will be by e-mail. All agreements, notices and communications that we provide to you by email will satisfy all legal requirements that they be in writing and delivered to you. The Monero Project will have the right to disclose any email sent by a User, or any objectionable material, to comply with legal process or to protect the rights or property of The Monero Project, its customers, suppliers and Users.
+When you send us an email, our responses to your communications will be by email. All agreements, notices and communications that we provide to you by email will satisfy all legal requirements that they be in writing and delivered to you. The Monero Project will have the right to disclose any email sent by a User, or any objectionable material, to comply with legal process or to protect the rights or property of The Monero Project, its customers, suppliers and Users.
 
 ### No Monero Financial Services
 
@@ -133,11 +133,11 @@ These TOU, and any applicable TOS, constitute the entire agreement between each 
 <div class="col" markdown="1">
 ### The Monero Project
 
-The majority of the content on this website, including the Monero logo and our Monero Missive podcast, is released under the  CC BY-SA 4.0 license (the [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)). This means that you can copy and redistribute the material in any medium or format, and remix, transform, and build upon the material for any purpose, even commercially. However, when doing so you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests The Monero Project endorses you or your use.
+The majority of the content on this website, including the Monero logo and our Monero Missive podcast, is released under the  CC BY-SA 4.0 license (the [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)). This means that you can copy and redistribute the material in any medium or format, and remix, transform, and build upon the material for any purpose, even commercially. However, when doing so, you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests The Monero Project endorses you or your use.
 
 ### Other Attributed Items
 
-Certain logos, such as those for the operating systems and platforms we support as well as those of our sponsors, are copyrighted by their owners. The Monero Project does not own these copyrights, and use these logos either with permission or in an unambiguous and unharmful way.
+Certain logos, such as those for the operating systems and platforms we support as well as those of our sponsors, are copyrighted by their owners. The Monero Project does not own these copyrights, and uses these logos either with permission or in an unambiguous and unharmful way.
 </div>
 </div>
             </div>

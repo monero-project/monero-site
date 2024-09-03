@@ -46,18 +46,18 @@ jobs:
               filename="${the_line[$length]}"
               echo "${filename}"
           }
-          # expects cli files between lines 2-13 and gui 14-18 (comments do not count, 1st line = 0)
-          # to add a new file to the cli, $num must be -gt 1 and -lt 15.
-          # gui $num is now -gt 14 and -lt 20 (new line has been added above)
+          # expects cli files between lines 2-14 and gui 15-19 (comments do not count, 1st line = 0)
+          # to add a new file to the cli, $num must be -gt 1 and -lt 16.
+          # gui $num is now -gt 15 and -lt 21 (new line has been added above)
           # a new gui file will only increase the -lt number by 1
           # changes to extensions / new files must be reflected in the cli_files / gui_files lists below
           num=0
           for line in "${lines[@]}"; do
-              if [ $num -gt 1 ] && [ $num -lt 14 ] ; then
+              if [ $num -gt 1 ] && [ $num -lt 15 ] ; then
                   #CLI
                   filename=$(get_filename "${line}")
                   filenames_cli+=("${filename}")
-              elif [ $num -gt 13 ] && [ $num -lt 20 ] ; then
+              elif [ $num -gt 14 ] && [ $num -lt 21 ] ; then
                  #GUI
                   filename=$(get_filename "${line}")
                   filenames_gui+=("${filename}")
@@ -71,6 +71,7 @@ jobs:
           "monero-freebsd-x64-${version_cli}.tar.bz2" \
           "monero-linux-armv7-${version_cli}.tar.bz2" \
           "monero-linux-armv8-${version_cli}.tar.bz2" \
+          "monero-linux-riscv64-${version_cli}.tar.bz2" \
           "monero-linux-x64-${version_cli}.tar.bz2" \
           "monero-linux-x86-${version_cli}.tar.bz2" \
           "monero-mac-armv8-${version_cli}.tar.bz2" \
@@ -140,6 +141,7 @@ jobs:
                       *cli/linux32) filename=monero-linux-x86 ;;
                       *cli/linuxarm8) filename=monero-linux-armv8 ;;
                       *cli/linuxarm7) filename=monero-linux-armv7 ;;
+                      *cli/linuxriscv64) filename=monero-linux-riscv64 ;;
                       *cli/androidarm8) filename=monero-android-armv8 ;;
                       *cli/androidarm7) filename=monero-android-armv7 ;;
                       *cli/freebsd64) filename=monero-freebsd-x64 ;;
