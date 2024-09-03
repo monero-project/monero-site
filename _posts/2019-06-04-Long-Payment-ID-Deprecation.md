@@ -36,7 +36,7 @@ In sum, payment IDs have serveral salient drawbacks and will therefore
 be phased out. Services are recommended to upgrade to subaddresses as
 soon as possible. Subaddresses essentially function similar to Bitcoin
 HD wallets and should thus be relatively straightforward to implement.
-Furthermore, subaddresses are managable from a resource point point of
+Furthermore, subaddresses are managable from a resource point of
 view.
 
 Yours sincerely,
