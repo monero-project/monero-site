@@ -107,7 +107,7 @@ author: asymptotically / Sarang
 **\<sarang\>** Well, the current one takes block density into account, and that's not relevant for coinbase-only  
 **\<sgp\_\>** keeping in mind most public pools publish this data openly anyway  
 **\<sgp\_\>** so frankly the coinbase rings would be susceptible to a lot of public data causing a high proportion of heuristically dead outputs  
-**\<sgp\_\>** in the worst of cases I say ~90% of of the hashrate accounted for by public pools sharing coinbase data, so ringsize 11 doesn't really help with that in the best of cases  
+**\<sgp\_\>** in the worst of cases I say ~90% of the hashrate accounted for by public pools sharing coinbase data, so ringsize 11 doesn't really help with that in the best of cases  
 **\<sgp\_\>** \*I saw ~90%  
 **\<sarang\>** Well, at that point you could \_almost\_ suggest removing the requirement for nontrivial rings in coinbase-only at all  
 **\<sarang\>** \*altogether  
