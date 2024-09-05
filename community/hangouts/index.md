@@ -11,19 +11,13 @@ meta_descr: hangouts.intro
     <section class="hangouts-social container">   
         <ul class="row center-xs">
             <li>
-                <a class="ext-noicon" href="https://twitter.com/monero" target="_blank" rel="noreferrer noopener" aria-label="Twitter logo"><div class="social-icon twitter"></div></a>
+                <a class="ext-noicon" href="https://x.com/monero" target="_blank" rel="noreferrer noopener" aria-label="Twitter logo"><div class="social-icon twitter"></div></a>
             </li>
             <li>
                 <a class="ext-noicon" href="https://reddit.com/r/Monero" target="_blank" rel="noreferrer noopener" aria-label="Reddit logo"><div class="social-icon reddit"></div></a>
             </li>
             <li>
                 <a class="ext-noicon" href="https://www.facebook.com/monerocurrency/" target="_blank" rel="noreferrer noopener" aria-label="Facebook logo"><div class="social-icon facebook"></div></a>
-            </li>
-            <li>
-                <a class="ext-noicon" href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener" aria-label="GitHub logo"><div class="social-icon github"></div></a>
-            </li>
-            <li>
-                <a class="ext-noicon" href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener" aria-label="Gitlab logo"><div class="social-icon gitlab"></div></a>
             </li>
             <li>
                 <a class="ext-noicon" href="https://telegram.me/monero" target="_blank" rel="noreferrer noopener" aria-label="Telegram logo"><div class="social-icon telegram"></div></a>
@@ -81,7 +75,7 @@ meta_descr: hangouts.intro
                  <h2>{% t hangouts.irc %}</h2>
               </div>
               <div class="row start-xs">
-                <p>{% t hangouts.irc_para %} {% t hangouts.bridges %}</p>
+                <p>{% t hangouts.irc-matrix %} {% t hangouts.bridges %}</p>
              </div>
              <div class="row irc">
              {% for channel in site.translations[site.lang].hangouts.irc_channels %}
