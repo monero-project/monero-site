@@ -10,19 +10,19 @@ If your wallet is not in Advanced mode, you will have to change it to Advanced m
 
 If your wallet is already in Advanced mode, you can skip the next step.
 
-![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
+![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.avif){:width="600px"}
 
 ## Change your wallet to advanced mode
 
 If your wallet is open, you need to close it first. Go to `Settings` > `Wallet` > `Close this wallet`
 
-![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
+![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.avif){:width="600px"}
 
 The main menu (`Welcome to Monero` screen) will open. At the bottom left, click on `Change wallet mode` button, and on the next page select `Advanced mode`. Next, open your wallet file again.
 
-![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
+![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.avif){:width="600px"}
 
-![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
+![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width="600px"}
 
 ## Finding a public remote node
 
@@ -34,7 +34,8 @@ When opening your wallet, a pop up will appear with the option `Use custom setti
 
 If you don't see this pop up, go to `Settings` > `Node` page.
 
-![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
+![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width="600px"}
+![Configure Remote Node 2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width="600px"}
 
 On this page select `Remote Node`.
 
