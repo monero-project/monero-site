@@ -338,7 +338,7 @@ meta_descr: downloads.intro
                                     <th>{% t downloads.hwthfirm %}</th>
                                 </tr>
                                 <tr>
-                                    <td><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank">{% t downloads.instructions %}</a></p></td>
+                                    <td><a class="ext-noicon" href="https://support.ledger.com/article/360006352934-zd" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/article/360006352934-zd" target="_blank">{% t downloads.instructions %}</a></p></td>
                                     <td>
                                         <ul>
                                             <li>Nano S</li>
@@ -386,7 +386,7 @@ meta_descr: downloads.intro
                                 </table>
                                 <div class="mobile-only">
                                     <div>
-                                    <h3><a class="ext-noicon" href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/hc/en-us/articles/360006352934-Monero-XMR-" target="_blank">{% t downloads.instructions %}</a></p></h3>
+                                    <h3><a class="ext-noicon" href="https://support.ledger.com/article/360006352934-zd" target="_blank"><img class="hw" src="/img/ledger.png" loading="lazy" alt="ledger logo"></a><p><a href="https://support.ledger.com/article/360006352934-zd" target="_blank">{% t downloads.instructions %}</a></p></h3>
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Nano S</li>
