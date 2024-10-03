@@ -243,7 +243,7 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/cakewallet.png" width="172" height="202" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com/">Cake Wallet</a></td>
+                            <td><img class="small" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo"><a href="https://cakewallet.com">Monero.com Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
