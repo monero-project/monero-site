@@ -43,8 +43,8 @@ msgstr "'Daemon' er det generelle begrepet for programvare som kjører i bakgrun
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:11
 #
-msgid "It's possible to send commands to the Daemon directly or through the RPC interface. See the [Daemon RPC guide]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), which contains a detailed explanation (with examples) of the available RPC calls. For more detailed and technical information about the Daemon, see the Monerodocs reference at the bottom of this page."
-msgstr "Det er mulig å sende kommandoer til Daemon direkte eller gjennom RPC-grensesnittet. Se [Daemon RPC-guiden]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), som inneholder en detaljert forklaring (med eksempler) på de tilgjengelige RPC-anropene. For mer detaljert og teknisk informasjon om Daemon, kan du se Monerodocs henvisning nederst på denne siden."
+msgid "It's possible to send commands to the Daemon directly or through the RPC interface. See the [Daemon RPC guide]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), which contains a detailed explanation (with examples) of the available RPC calls. For more detailed and technical information about the Daemon, see the GetMonero.dev reference at the bottom of this page."
+msgstr "Det er mulig å sende kommandoer til Daemon direkte eller gjennom RPC-grensesnittet. Se [Daemon RPC-guiden]({{ site.baseurl_root }}/resources/developer-guides/daemon-rpc.html), som inneholder en detaljert forklaring (med eksempler) på de tilgjengelige RPC-anropene. For mer detaljert og teknisk informasjon om Daemon, kan du se GetMonero.dev henvisning nederst på denne siden."
 
 #. type: Title #####
 #: ../_i18n/en/resources/moneropedia/daemon.md:14
@@ -55,8 +55,8 @@ msgstr "Andre ressurser"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:17
 #, no-wrap
-msgid "<sub>1. The [monerod reference on Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>\n"
-msgstr "<sub>1. [monerods henvisning på Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>\n"
+msgid "<sub>1. The [monerod reference on GetMonero.dev](https://getmonero.dev/docs/interacting/monerod-reference)</sub><br>\n"
+msgstr "<sub>1. [monerods henvisning på GetMonero.dev](https://getmonero.dev/docs/interacting/monerod-reference)</sub><br>\n"
 
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/daemon.md:19
