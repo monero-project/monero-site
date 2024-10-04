@@ -14,7 +14,7 @@ Download links are at the bottom of this post, and please take note of the known
 
 ### Known Issues
 
-- Due to several important updates, 0.10.1 wallet binaries will not work with with wallets created by the GUI. Please use the binaries included in the package instead. Note: you can definitely use the 0.10.1 daemon:)
+- Due to several important updates, 0.10.1 wallet binaries will not work with wallets created by the GUI. Please use the binaries included in the package instead. Note: you can definitely use the 0.10.1 daemon:)
 - If you have been testing earlier builds you may have to delete your configs. There is [a guide describing how to do this on this StackExchange post](http://monero.stackexchange.com/questions/2866/where-are-the-monero-core-configuration-parameters-stored/2870#2870).
 - Older computers may have an issue with the QT renderer, and will either crash or display a white / black window. You can change the rendering mode [as described on this StackExchange post](http://monero.stackexchange.com/questions/2928/how-to-change-the-monero-core-rendering-mode-for-older-computers/2929#2929).
 
