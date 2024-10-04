@@ -11,6 +11,9 @@ meta_descr: developer-guides.head
         <p class="text-center">{% t developer-guides.head %}</p>
     </div>
     <section class="container full">
+        <div class="info-block center-xs">
+            <h3 style="padding: 0;">⚠️ This page is deprecated</h3> <p>Guides are migrating to <a href="https://docs.getmonero.org">docs.getmonero.org</a>. For the up-to-date information refer to the new site.</p>
+        </div>
         <div class="row">
             <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="info-block">
