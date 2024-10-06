@@ -9,6 +9,16 @@ meta_descr: meta_descr.workgroups
 <div class="team">
   <div class="container description">
     <p>{% t team.introduction %}</p>
+    <section class="workgroups container">   
+        <ul class="row center-xs">
+            <li>
+                <a class="ext-noicon" href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener" aria-label="GitHub logo"><div class="social-icon github"></div></a>
+            </li>
+            <li>
+                <a class="ext-noicon" href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener" aria-label="Gitlab logo"><div class="social-icon gitlab"></div></a>
+            </li>
+        </ul>
+    </section>
   </div>
   <section class="container">
     <div class="row">
@@ -23,7 +33,6 @@ meta_descr: meta_descr.workgroups
           <p>{% t team.core_start %}</p>
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
-            <li>{% t team.chat %} <code>#monero-dev</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-dev"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/%23monero-dev:monero.social?via=matrix.org&via=monero.social"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
             <li>Email: <code>dev[at]getmonero[dot]org</code></li>
           </ul>
           <div class="row center-xs icons">
@@ -196,6 +205,23 @@ meta_descr: meta_descr.workgroups
           </ul>
         </div>
       </div>
+      <div class="right half col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="info-block">
+          <div class="row center-xs">
+            <h2>{% t team.docs %}</h2>
+          </div>
+          <h4>{% t team.descr %}</h4>
+          <p>{% t team.docs_descr %}</p>
+          <h4>{% t team.start %}</h4>
+          <p>{% t team.docs_start %}</p>
+          <h4>{% t team.contacts %}</h4>
+          <ul class="logo">
+            <li>{% t team.chat %} <code>#monero-docs</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-docs"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a><a class="chats-img" href="https://matrix.to/#/%23monero-docs:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
+            <li>{% t team.website %} <a href="https://docs.getmonero.org">docs.getmonero.org</a></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 </div>
