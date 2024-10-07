@@ -991,20 +991,20 @@ a {
 /* External link icon */
 
 a[href^="https:"]:not([href*="getmonero.org"]):not([class*="btn-link"]):not([class="chats-img"]):not([class*="ext-noicon"]):not([class*="white"]) {
-  background: url(/img/external.svg) no-repeat right;
+  background: url(/img/external.avif) no-repeat right;
   padding-right: 0.7em;
   margin-right: 0.3rem;
   background-size: 0.6em;
 }
 
 a[href^="https:"]:not([href*="getmonero.org"]).white {
-  background: url(/img/external-white.svg) no-repeat right;
+  background: url(/img/external-white.avif) no-repeat right;
   padding-right: 0.7em;
   background-size: 0.6em;
 }
 
 a[href^="https:"]:not([href*="getmonero.org"]).orange {
-  background: url(/img/external.svg) no-repeat right;
+  background: url(/img/external.avif) no-repeat right;
   padding-right: 0.7em;
   padding-top: 0.5em;
   background-size: 0.6em;
@@ -1237,7 +1237,7 @@ label.upgrade-x:after {
 }
 
 ul.logo {
-  list-style-image: url('/img/logo-list.svg');
+  list-style-image: url('/img/logo-list.avif');
 }
 
 a.arrow-up {
@@ -2877,7 +2877,7 @@ p.main-downloads {
 }
 
 .mining li.pro:before {
-  content: url("/img/emojis/2714.svg");
+  content: url("/img/emojis/2714.png");
 }
 
 .mining li.cons {
@@ -2885,7 +2885,7 @@ p.main-downloads {
 }
 
 .mining li.cons:before {
-  content: url("/img/emojis/274C.svg");
+  content: url("/img/emojis/274C.avif");
 }
 
 /****************************FOOTER***************************/
@@ -3135,12 +3135,12 @@ footer {
 }
 
 .guides span.icon-page {
-  background-image: url(../img/emojis/1F4C4.svg);
+  background-image: url(../img/emojis/1F4C4.avif);
   float: left;
 }
 
 .guides span.icon-globe {
-  background-image: url(../img/emojis/1F310.svg);
+  background-image: url(../img/emojis/1F310.avif);
   float: left;
 }
 
@@ -3179,7 +3179,7 @@ footer {
 }
 
 .downloads ul.logo {
-  list-style-image: url('/img/logo-list.svg');
+  list-style-image: url('/img/logo-list.avif');
 }
 
 .download-nav.info-block {
@@ -3548,11 +3548,11 @@ span.icon-git {
 }
 
 .merchants span.check {
-  background-image: url("/img/emojis/2714.svg");
+  background-image: url("/img/emojis/2714.png");
 }
 
 .merchants span.cross {
-  background-image: url("/img/emojis/274C.svg");
+  background-image: url("/img/emojis/274C.avif");
 }
 
 .merchants a.btn-fixed {
@@ -3589,19 +3589,20 @@ img.emoji {
 }
 
 .roadmap li.completed:before {
-  content: url("/img/emojis/2714.svg");
+  content: url("/img/emojis/2714.png");
+  width: fit-content;
 }
 
 .roadmap li.ongoing:before {
-  content: url("/img/emojis/1F6A7.svg");
+  content: url("/img/emojis/1F6A7.avif");
 }
 
 .roadmap li.upcoming:before {
-  content: url("/img/emojis/1F9ED.svg");
+  content: url("/img/emojis/1F9ED.avif");
 }
 
 .roadmap li.proposed:before {
-  content: url("/img/emojis/1F310.svg");
+  content: url("/img/emojis/1F310.avif");
 }
 
 .roadmap .tabPanel-content span, .roadmap .ms-completed, .roadmap .ms-upcoming {
@@ -4067,7 +4068,7 @@ img.emoji {
 }
 
 .feed span.feed-pic {
-  background: url(../img/feed.svg) no-repeat;
+  background: url(../img/feed.avif) no-repeat;
   position: absolute;
   right: 0;
 }
@@ -4441,7 +4442,7 @@ p.hangouts-social {
 }
 
 .faq ul.logo {
-  list-style-image: url('/img/logo-list.svg');
+  list-style-image: url('/img/logo-list.avif');
 }
 
 .faq li.category {
@@ -4475,7 +4476,7 @@ p.hangouts-social {
 }
 
 .tab .anchor:before {
-  content: url('/img/link.svg');
+  content: url('/img/link.avif');
 }
 
 .tab:hover .anchor {
@@ -4612,7 +4613,7 @@ input.accordion[type=radio]:checked + label::after {
 }
 
 .info-tooltip {
-  background: url("/img/circled-i.svg") no-repeat right top;
+  background: url("/img/circled-i.avif") no-repeat right top;
   padding-right: 0.7rem;
   background-size: 0.7rem;
 }

@@ -91,7 +91,7 @@ meta_descr: hangouts.intro
                    {% for room in rooms_list %}
                      {% if room[0] == channel[0] %}
                        {% if rooms_list.matrix %}
-                         <a class="chats-img" href="{{ rooms_list.matrix }}"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a>
+                         <a class="chats-img" href="{{ rooms_list.matrix }}"><img class="matrix" src="/img/matrix-logo.avif" title="Matrix" alt="Matrix logo"></a>
                        {% endif %}
                      {% endif %}
                    {% endfor %}

@@ -4,7 +4,7 @@ title: CLSAG audit results
 summary: Results of an external security audit of the CLSAG signature construction
 tags: [community]
 author: Sarang Noether, Ph.D.
-image: /blog/assets/clsag/clsag.svg
+image: /blog/assets/clsag/clsag.avif
 ---
 
 

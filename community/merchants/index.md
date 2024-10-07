@@ -31,7 +31,7 @@ meta_descr: merchants.descr
       <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="center-xs">
-            <img class="merch" src="/img/merchants/bisq.svg" alt="Bisq Logo" title="Bisq">
+            <img class="merch" src="/img/merchants/bisq.avif" alt="Bisq Logo" title="Bisq">
             <p>{% t merchants.bisqdescr %}</p>
           </div>
           <div>
