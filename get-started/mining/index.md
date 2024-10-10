@@ -45,7 +45,6 @@ meta_descr: meta_descr.mining
                         <p>{% t mining.choosepol %}
                         <ul>
                             <li><a href="https://miningpoolstats.stream/monero">miningpoolstats.stream</a></li>
-                            <li><a href="https://pools.xmr.wiki">pools.xmr.wiki</a></li>
                         </ul>
                         </p>
                 </div>
