@@ -24,7 +24,7 @@ meta_descr: merchants.descr
       <div class="info-block">
         <h2>P2P exchanges and Atomic Swaps</h2>
         <p>{% t merchants.descrp2p %}</p>
-        <p>{% t merchants.swapsdescr %} <a href="https://unstoppableswap.net/">unstoppableswap.net</a>.</p>
+        <p>{% t merchants.swapsdescr %}</p>
       </div>
     </div>
     <div class="row">
