@@ -24,25 +24,32 @@ The main menu (`Welcome to Monero` screen) will open. At the bottom left, click 
 
 ![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width="600px"}
 
-## Finding a public remote node
+## Finding a remote node
 
-First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources about remote nodes, and the website [monero.fail](https://monero.fail) has a list of functioning remote nodes. 
+First, you will need to find a node to connect to.
 
-## Configuring your wallet to connect to a custom public remote node
+It is important to note that there are publicly advertised remote nodes which are run by malicious actors with the sole purpose of deanonymizing users.
+
+It is highly recommended that you either A) Run your own node, or B) Use a Trusted remote node - one that is controlled by someone that you trust.
+
+Though highly discouraged, you may opt to use an untrusted remote node. To maximize privacy, Tor or I2P nodes are preferred. The website [monero.fail](https://monero.fail) has a list of such nodes.
+
+## Configuring your wallet to connect to a custom remote node
 
 When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. 
 
 If you don't see this pop up, go to `Settings` > `Node` page.
 
 ![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width="600px"}
+
+On the following page, select `Remote Node`.
+
+In the `Address` field you will enter the address (or IP) of the node that you want to connect to, and in `Port` field you will enter the port of the node.
+
+Example: If a node is listed as `node.getmonero.org:18089`, the address is `node.getmonero.org` and the port is `18089`. Note: `node.getmonero.org:18089` is for illustration purposes only. It is not a real node address.
+
 ![Configure Remote Node 2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width="600px"}
 
-On this page select `Remote Node`.
+If the node requires authentication, you can enter the username in `Daemon username` and the password in `Daemon password`.
 
-In `Address` you should fill the address of the remote node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any IP address. 
-
-In `Port` you should fill the port of the remote node. If a remote node is listed as `node.moneroworld.com:18089`, the address is `node.moneroworld.com` and the port is `18089`. The default port is `18081`, but it can vary depending on the node you are connecting to.
-
-If your remote node requires authentication, you can enter a username in `Daemon username` and a password in `Daemon password`.
-
-Finally, click on `Connect` button and wait for your wallet to connect.
+Finally, click on the `Connect` button and wait for your wallet to connect.
