@@ -93,12 +93,12 @@ languages: ["en", "es", "NEW LANG HERE"]
 ```
 Save and exit the file.
 
-### 3. \_i18n folder
+### 2. \_i18n folder
 
 Navigate to the \_i18n folder and duplicate the en.yml file. Rename the duplicate to the two letter language code of your language with a `.yml`. Now duplicate the `en` folder and rename it with the correct language code.
 **The original folder and yml file themselves should still be there. They should not be renamed. There should be a new folder and yml file in addition to the ones that were already there.**
 
-### 4. Open an issue on the repo where the website is hosted
+### 3. Open an issue on the repo where the website is hosted
 
 After you've done all the above, you'll need to [open an issue on the repository](https://github.com/monero-project/monero-site/issues) asking to add the language you are working on to Weblate, where the core of the website is translated.
 
