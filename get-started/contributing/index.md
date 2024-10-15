@@ -56,7 +56,7 @@ meta_descr: meta_descr.contributing
             </div>
             <!-- end full block-->
             <!-- full block-->
-            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="donate" class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
