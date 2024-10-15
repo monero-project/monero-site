@@ -821,7 +821,7 @@ The normal MMS wallet syncing process assumes that all signers are cooperative a
 
 However, with *M* being smaller than *N* in configurations like 2/3 multisig you can successfully sync with only (number of required signers minus 1) sync messages. `mms next` will tell you when you have reached this lower threshold and give a hint how to override and go ahead early: Use `mms next sync`.
 
-If later you receive more sync data messages nevertheless just delete them with `mms delete`: They are unneeded, unprocessable for you and worst case will mess up the the next sync round.
+If later you receive more sync data messages nevertheless just delete them with `mms delete`: They are unneeded, unprocessable for you and worst case will mess up the next sync round.
 
 Usually if you initiate sync the MMS will create messages to *all* other signers. If you want to prevent that to make it as hard as possible for other signers to transact further, make sure to set `auto-send` to false, answer "No" when first being asked to send, and manually delete any unwanted messages before sending the rest out with `mms send`.
 

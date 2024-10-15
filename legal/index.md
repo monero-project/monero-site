@@ -65,7 +65,7 @@ As a convenience to Users, the The Monero Project website and services may provi
 
 ### Password Protected Areas
 
-Some areas of the The Monero Project site ("Password Protected Areas"), primarily the Monero forum, are password protected and available only to Users who are registered on the Monero forum. Registration requires Users to fully complete the account registration process. The Monero Project reserves the right to deny or revoke registration or access to Password Protected Areas for any User. The Monero Project takes reasonable measures to ensure the security of the Password Protected Areas but cannot guarantee the absolute security of information or communications in such Password Protected Areas. Users are responsible for maintaining the security of the password they set and must notify us if they believe that the security of their password or account has been breached or subject to unauthorized use. Additional account security is available through the use of GPG authentication, and all users of any Password Protected Areas are encouraged to take advantage of this layer of protection. The Monero Project will not be liable for any loss or liability incurred as a result of an unauthorized person using a User's password.
+Some areas of The Monero Project site ("Password Protected Areas"), primarily the Monero forum, are password protected and available only to Users who are registered on the Monero forum. Registration requires Users to fully complete the account registration process. The Monero Project reserves the right to deny or revoke registration or access to Password Protected Areas for any User. The Monero Project takes reasonable measures to ensure the security of the Password Protected Areas but cannot guarantee the absolute security of information or communications in such Password Protected Areas. Users are responsible for maintaining the security of the password they set and must notify us if they believe that the security of their password or account has been breached or subject to unauthorized use. Additional account security is available through the use of GPG authentication, and all users of any Password Protected Areas are encouraged to take advantage of this layer of protection. The Monero Project will not be liable for any loss or liability incurred as a result of an unauthorized person using a User's password.
 
 ### Prohibited Conduct
 
@@ -102,7 +102,7 @@ THE MONERO PROJECT DISCLAIMS ALL WARRANTIES, REPRESENTATIONS AND CONDITIONS OF A
 
 ### EXCLUSION OF CONSEQUENTIAL DAMAGES
 
-IN NO EVENT WILL THE MONERO PROJECT BE LIABLE FOR ANY INCIDENTAL, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR INDIRECT DAMAGES ARISING OUT OF THE USE OF OR INABILITY TO USE THIS WEBSITE OR ANY OF ITS SERVICES OR CONTENT, OR LOSS OF DATA, EVEN IF THE MONERO PROJECT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, PRODUCT LIABILITY, STRICT LIABILITY OR OTHERWISE.
+IN NO EVENT WILL THE MONERO PROJECT BE LIABLE FOR ANY INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR INDIRECT DAMAGES ARISING OUT OF THE USE OF OR INABILITY TO USE THIS WEBSITE OR ANY OF ITS SERVICES OR CONTENT, OR LOSS OF DATA, EVEN IF THE MONERO PROJECT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, PRODUCT LIABILITY, STRICT LIABILITY OR OTHERWISE.
 
 ### EXCLUSION OF LIMITATIONS AND DISCLAIMERS
 

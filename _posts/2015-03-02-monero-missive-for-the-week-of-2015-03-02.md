@@ -119,7 +119,7 @@ You know, we use Google Maps, he uses MMAP!
 
 Ok, so that really should give all our listeners an indication as to what the current state of the database is, the painpoints we've faced and have had to overcome, and what we're going to be doing in future...not only to make Monero run on multiple platforms, but to make it run smoothly and efficiently on the smallest of devices.
 
-So that's the database, I think that's the bulk of what we wanted to chat about about the database, unless there's anything else you'd like to add.
+So that's the database, I think that's the bulk of what we wanted to chat about the database, unless there's anything else you'd like to add.
 
 #### Gingeropolous
 
