@@ -253,7 +253,8 @@ meta_descr: faq.intro
                         <p>{% t faq.a12-1 %}</p>
                         <p>{% t faq.a12-2 %}</p>
                         <p>{% t faq.a12-3 %}</p>
-                        <p>{% t faq.additional %} <a href="{{ site.baseurl_root }}/2020/01/17/auditability.html">About supply auditability</a></p>
+                        <p>{% t faq.additional %} <a href="{{ site.baseurl_root }}/2020/01/17/auditability.html">{% t faq.aabout-auditability %}</a></p>
+                        <p>{% t faq.additional %} <a href="https://moneroinflation.com">{% t faq.adetailed-auditability %}</a></p>
                     </div>
                 </div>
                 <div class="tab" id="max-supply">
