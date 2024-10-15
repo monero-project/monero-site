@@ -1,6 +1,6 @@
 ---
 layout: user-guide
-title: How to join the Monero Core Team Matrix server
+title: Joining the Monero Community Matrix Server via Element
 permalink: /resources/user-guides/join-monero-matrix.html
 outdated: False
 ---
