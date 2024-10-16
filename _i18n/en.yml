@@ -446,6 +446,7 @@ contributing:
   sponsor_p2: for more info.
   altqrmonero: Monero QR code
   altqrbitcoin: Bitcoin QR code
+  primary_address: Primary address
 
 faq:
   basics: Basics
