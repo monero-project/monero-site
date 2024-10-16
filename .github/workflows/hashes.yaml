@@ -5,10 +5,12 @@ on:
     paths:
       - 'downloads/hashes.txt'
       - '_data/downloads.yml'
+      - '_data/contributing.yml'
   pull_request:
     paths:
       - 'downloads/hashes.txt'
       - '_data/downloads.yml'
+      - '_data/contributing.yml'
 jobs:
   validate-hashes:
     name: Validate Hashes
@@ -19,11 +21,23 @@ jobs:
         run: |
           sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip
           sudo pip3 install yq
-      - name: Verify hashes.txt signature
+      - name: Verify hashes.txt + contributing.yml signature
         run: |
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
           gpg --verify downloads/hashes.txt
+          # signed by myself for testing purposes only
+          curl -sL https://raw.githubusercontent.com/plowsof/pgp/refs/heads/main/plowsofsmol.asc | gpg --import
+          gpg --verify _data/contributing.yml.asc
+      - name: Verify General Fund donation QR's
+        run: |
+          yaml="_data/contributing.yml"
+          for type in xmr btc; do
+              checksum=$(awk "/qr_${type}_checksum:/ {print \$2}" "$yaml")
+              file=$(awk "/qr_${type}_filename:/ {print \$2}" "$yaml")
+              echo "DEBUG: $checksum $file"
+              echo "$checksum $file" | sha256sum -c
+          done
       - name: Verify filenames
         run: |
           lines="$(grep -v ^# downloads/hashes.txt)"
