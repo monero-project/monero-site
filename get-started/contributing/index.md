@@ -71,6 +71,13 @@ meta_descr: meta_descr.contributing
                             <h3>{% t contributing.genfund %}</h3>
                             <p>{% t contributing.genfund_p %}</p>
                             <p>Monero:<br><code class="donation-field">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</code></p>
+                            <details>
+                                <summary>{% t contributing.donation_viewkeys %}:</summary>
+                                <ul>
+                                    <li>{% t contributing.primary_address %}: <code class="donation-field">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</code></li>
+                                    <li>{% t moneropedia.entries.viewkey %}: <code class="donation-field">f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501</code></li>
+                                </ul>
+                            </details>
                             <p>Bitcoin:<br><code class="donation-field">1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</code></p>
                             <p>@openalias: <code class="donation-field">donate.getmonero.org</code></p>
                         </div>
