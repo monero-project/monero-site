@@ -85,10 +85,14 @@ meta_descr: meta_descr.contributing
                     </div><br>
                     <div class="row center-xs">
                         <div class="col-lg-6">
-                            <img class="qr" src="/{{ site.data.contributing.qr_xmr_filename }}" alt="{% t contributing.altqrmonero %}"/>
+                            <a id="qr-link" href="{{ site.data.contributing.qr_xmr_content }}">
+                                <img class="qr" src="/{{ site.data.contributing.qr_xmr_filename }}" alt="{% t contributing.altqrmonero %}"/>
+                            </a>
                         </div>
                         <div class="col-lg-6">
-                            <img class="qr" src="/{{ site.data.contributing.qr_btc_filename }}" alt="{% t contributing.altqrbitcoin %}"/>
+                            <a id="qr-link" href="{{ site.data.contributing.qr_btc_content }}">
+                                <img class="qr" src="/{{ site.data.contributing.qr_btc_filename }}" alt="{% t contributing.altqrbitcoin %}"/>
+                            </a>
                         </div>
                     </div>
                     <div class="row start-xs">
