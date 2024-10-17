@@ -70,17 +70,29 @@ meta_descr: meta_descr.contributing
                         <div class="col-xs-12">
                             <h3>{% t contributing.genfund %}</h3>
                             <p>{% t contributing.genfund_p %}</p>
-                            <p>Monero:<br><code class="donation-field">888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H</code></p>
-                            <p>Bitcoin:<br><code class="donation-field">1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H</code></p>
-                            <p>@openalias: <code class="donation-field">donate.getmonero.org</code></p>
+                            <p>Monero:<br><code class="donation-field">{{ site.data.contributing.address_xmr }}</code></p>
+                            <details>
+                                <summary>{% t contributing.primary_address %}:</summary>
+                                <code class="donation-field">{{ site.data.contributing.view_address }}</code>
+                            </details>
+                            <details>
+                                <summary>{% t moneropedia.entries.viewkey %}:</summary>
+                                <code class="donation-field">{{ site.data.contributing.view_key }}</code>
+                            </details>
+                            <p>Bitcoin:<br><code class="donation-field">{{ site.data.contributing.address_btc }}</code></p>
+                            <p>@openalias: <code class="donation-field">{{ site.data.contributing.address_openalias }}</code></p>
                         </div>
                     </div><br>
                     <div class="row center-xs">
                         <div class="col-lg-6">
-                            <img class="qr" src="/img/donate-monero.png" alt="{% t contributing.altqrmonero %}"/>
+                            <a id="qr-link" href="{{ site.data.contributing.qr_xmr_content }}">
+                                <img class="qr" src="/{{ site.data.contributing.qr_xmr_filename }}" alt="{% t contributing.altqrmonero %}"/>
+                            </a>
                         </div>
                         <div class="col-lg-6">
-                            <img class="qr" src="/img/donate-bitcoin.png" alt="{% t contributing.altqrbitcoin %}"/>
+                            <a id="qr-link" href="{{ site.data.contributing.qr_btc_content }}">
+                                <img class="qr" src="/{{ site.data.contributing.qr_btc_filename }}" alt="{% t contributing.altqrbitcoin %}"/>
+                            </a>
                         </div>
                     </div>
                     <div class="row start-xs">
