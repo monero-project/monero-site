@@ -1,13 +1,10 @@
 ---
 layout: user-guide
 title: "Daemon RPC documentation"
+deprecated_url: https://docs.getmonero.org/rpc-library/monerod-rpc/"
 ---
 
 {% t global.lang_tag %}
-
-<div class="info-block center-xs">
-    <h3 style="padding: 0;">⚠️ This page is deprecated</h3> <p>The latest version of this document is available at <a href="https://docs.getmonero.org/rpc-library/monerod-rpc/">docs.getmonero.org</a>.</p>
-</div>
 
 # Daemon RPC
 
