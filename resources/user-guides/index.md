@@ -110,7 +110,7 @@ meta_descr: meta_descr.userguides
                         <div class="col">
                             <h2>{% t user-guides.anonimizationnetworks %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/tor_wallet.html">{% t user-guides.tor_wallet %}</a></p>
-                            <p><a href="{{site.baseurl}}/resources/user-guides/node-i2p-zero.html">{% t user-guides.node-i2pzero %}</a></p>
+                            <p><a href="https://docs.getmonero.org/running-node/monerod-tori2p">{% t user-guides.node-tori2p %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.html">{% t user-guides.qubes %}</a></p>
                             <p><a href="http://xmrguide25ibknxgaray5rqksrclddxqku3ggdcnzg4ogdi5qkdkd2yd.onion">{% t user-guides.tailsguide %}</a><img alt="onion logo" class="onion-mid" src="/img/onion-tor.svg" title="Onion link"/></p>
                         </div>
