@@ -412,7 +412,7 @@ contributing:
   gui: "GUI Wallet: "
   gui_p: Mostly QML and C++.
   website: "This website: "
-  website_p: Built with Jekyll. No Javascript.
+  website_p: Built with Astro. No Javascript.
   bug: "Bug and vulnerability hunting: Monero is listed on Hackerone and developers are asked to responsibly disclose bugs and vulnerabilities. See"
   discl: The Monero Project Vulnerability Response Process.
   develop_descr: >
