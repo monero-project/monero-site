@@ -17,6 +17,7 @@ meta_descr: merchants.descr
         <p>{% t merchants.dirdescr %}</p>
         <ul class="logo">
           <li><a href="https://cryptwerk.com/pay-with/xmr/">cryptwerk.com</a></li>
+          <li><a href="https://kycnot.me/?t=service&q=&xmr=on">kycnot.me</a></li>
         </ul>
       </div>
     </div>
