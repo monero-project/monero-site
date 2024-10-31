@@ -22,7 +22,7 @@ meta_descr: meta_descr.contributing
                     <div class="row start-xs">
                         <h3>{% t contributing.full-node %}</h3>
                         <p>{% t contributing.full-node_p %}</p>
-                        <p>{% t contributing.full-node_p2 %} <a href="{{ site.baseurl }}/resources/user-guides/vps_run_node.html">{% t user-guides.vps-node %}</a>, <a href="{{ site.baseurl }}/resources/user-guides/node-i2p-zero.html">{% t user-guides.node-i2pzero %}</a>, <a href="http://xmrguide25ibknxgaray5rqksrclddxqku3ggdcnzg4ogdi5qkdkd2yd.onion">{% t user-guides.tailsguide %}</a>. <a href="{{ site.baseurl }}/resources/user-guides/">{% t contributing.allguides %}</a></p>
+                        <p>{% t contributing.full-node_p2 %} <a href="{{ site.baseurl }}/resources/user-guides/vps_run_node.html">{% t user-guides.vps-node %}</a>, <a href="https://docs.getmonero.org/running-node/monerod-tori2p">{% t user-guides.node-tori2p %}</a>. <a href="{{ site.baseurl }}/resources/user-guides/">{% t contributing.allguides %}</a></p>
                         <h3>{% t contributing.develop %}</h3>
                         <p>{% t contributing.developp %}</p>
                             <ul class="logo">
