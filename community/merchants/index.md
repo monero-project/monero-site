@@ -38,8 +38,9 @@ meta_descr: merchants.descr
             <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
             <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
-            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
-            <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardxmrfiat %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardxmrnative %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
             <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
@@ -57,7 +58,8 @@ meta_descr: merchants.descr
             <p><b>{% t merchants.cardfoss %}</b> <span class="cross"></span></p>
             <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
-            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
+            <p><b>{% t merchants.cardxmrfiat %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardxmrnative %}</b> <span class="cross"></span></p>
             <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
             <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
@@ -76,7 +78,8 @@ meta_descr: merchants.descr
             <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
             <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
-            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardxmrfiat %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardxmrnative %}</b> <span class="check"></span></p>
             <p><b>{% t merchants.cardonion %}</b> {% t merchants.setreq %} </p>
             <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
