@@ -150,8 +150,9 @@ merchants:
   swapsdescr: A new exciting way to exchange Monero is Atomic Swaps, which <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">we announced</a> on August 2021. Atomic Swaps are a completely decentralized way to swap Bitcoin <-> Monero (more info in the blog post). The technology is brand new, so there aren't many swap providers yet, but you can already sell XMR for BTC using this protocol at
   bisqdescr: Decentralized P2P exchange based on Bitcoin and Tor.
   cardfoss: "Open source:"
+  cardxmrfiat: "XMR &#8596; fiat:"
+  cardxmrnative: "Native XMR implementation:"
   cardkyc: "<b>No KYC</b> (Know Your Customer):"
-  cardbtcfiat: (BTC &#8596; fiat possible)
   cardonion: "Onion address:"
   cardi2p: "I2P address:"
   noncustodial: "Non-custodial:"
