@@ -676,6 +676,7 @@ developer-guides:
   vanity-monero: Generate vanity address for CryptoNote currency (Monero etc.).
   go-monero-rpc-client: A Go client for the Monero wallet and daemon RPC.
   monero-rs: Library with support for (de)serialization on block data structures and key/address generation and scanning related to Monero cryptocurrency.
+  cuprate: Monero node implementation in Rust.
   csharp-monero: A wallet and daemon client to interface with Monero's JSON-RPC API, built on .netstandard2.1
 
 user-guides:
