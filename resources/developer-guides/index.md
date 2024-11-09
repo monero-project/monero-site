@@ -34,7 +34,7 @@ meta_descr: developer-guides.head
                         </div>
                     </div>
                     <p><i>{% t developer-guides.external_head %}</i></p>
-                    <h3><span class="icon-globe"></span><a href="https://monerodocs.org/">Monerodocs.org</a></h3>
+                    <h3><span class="icon-globe"></span><a href="https://docs.getmonero.org">Monero Docs</a></h3>
                         <p>{% t developer-guides.monerodocs %}</p>
                     <h3><a href="https://github.com/moneroexamples"><span class="icon-github"></span>Moneroexamples</a></h3>
                         <p>{% t developer-guides.moneroexamples %}</p>
@@ -68,8 +68,10 @@ meta_descr: developer-guides.head
                     <h3>Golang</h3>
                         <li><a href="https://github.com/monero-ecosystem/vanity-monero">vanity-monero (Monero Ecosystem)</a> - {% t developer-guides.vanity-monero %}</li>
                         <li><a href="https://github.com/monero-ecosystem/go-monero-rpc-client">go-monero-rpc-client (Monero Ecosystem)</a> - {% t developer-guides.go-monero-rpc-client %}</li>
+                        <li><a href="https://atm.monero.is/">The Monero ATM Project</a> - {% t developer-guides.themoneroatmproject %}</li>
                     <h3>Rust</h3>
                         <li><a href="https://github.com/monero-rs/monero-rs">monero-rs</a> - {% t developer-guides.monero-rs %}</li>
+                        <li><a href="https://cuprate.org/">Cuprate</a> - {% t developer-guides.cuprate %}</li>
                     <h3>C#</h3>
                         <li><a href="https://github.com/monero-ecosystem/csharp-monero-rpc-client">csharp-monero-rpc-client (Monero Ecosystem)</a> - {% t developer-guides.csharp-monero %}</li>
                 </ul>
