@@ -68,6 +68,7 @@ meta_descr: developer-guides.head
                     <h3>Golang</h3>
                         <li><a href="https://github.com/monero-ecosystem/vanity-monero">vanity-monero (Monero Ecosystem)</a> - {% t developer-guides.vanity-monero %}</li>
                         <li><a href="https://github.com/monero-ecosystem/go-monero-rpc-client">go-monero-rpc-client (Monero Ecosystem)</a> - {% t developer-guides.go-monero-rpc-client %}</li>
+                        <li><a href="https://atm.monero.is/">The Monero ATM Project</a> - {% t developer-guides.themoneroatmproject %}</li>
                     <h3>Rust</h3>
                         <li><a href="https://github.com/monero-rs/monero-rs">monero-rs</a> - {% t developer-guides.monero-rs %}</li>
                         <li><a href="https://cuprate.org/">Cuprate</a> - {% t developer-guides.cuprate %}</li>
