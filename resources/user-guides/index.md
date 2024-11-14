@@ -52,7 +52,7 @@ meta_descr: meta_descr.userguides
                             <h2>{% t user-guides.nodesync %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/remote_node_gui.html">{% t user-guides.remote-node-gui %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/importing_blockchain.html">{% t user-guides.import-blockchain %}</a></p>
-                            <p><a href="{{site.baseurl}}/resources/user-guides/vps_run_node.html">{% t user-guides.vps-node %}</a></p>
+                            <p><a href="https://docs.getmonero.org/running-node/monerod-systemd/" target="_blank">{% t user-guides.vps-node %}</a></p>
                         </div>
                     </div>
                 </div>
