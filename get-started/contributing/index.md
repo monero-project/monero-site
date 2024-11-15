@@ -20,6 +20,8 @@ meta_descr: meta_descr.contributing
                         </div>
                     </div>
                     <div class="row start-xs">
+                        <h3>{% t navigation.accepting %}</h3>
+                        <p>{% t contributing.accepting_p %} %}</p>
                         <h3>{% t contributing.full-node %}</h3>
                         <p>{% t contributing.full-node_p %}</p>
                         <p>{% t contributing.full-node_p2 %} <a href="{{ site.baseurl }}/resources/user-guides/vps_run_node.html">{% t user-guides.vps-node %}</a>, <a href="https://docs.getmonero.org/running-node/monerod-tori2p">{% t user-guides.node-tori2p %}</a>. <a href="{{ site.baseurl }}/resources/user-guides/">{% t contributing.allguides %}</a></p>
