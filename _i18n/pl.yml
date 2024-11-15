@@ -138,7 +138,7 @@ hangouts:
       walut.
     monero-offtopic: Rozmowy z innymi użytkownikami Monero na tematy niezwiązane z
       Monero.
-    monero-pools: To jest miejsce na pytania i dyskusje dotyczące kopania.
+    monero-mining: To jest miejsce na pytania i dyskusje dotyczące kopania.
     monero-research-lab: Badania dotyczące prywatności finansów w kryptowalutach.
     monero-translations: Lokalizacja Monero na inne języki.
     monero-hardware: Budowanie portfeli sprzętowych, aby zapewnić bezpieczeństwo twoich
@@ -964,8 +964,8 @@ mining:
   software_para: Niektóre programy mogą wymagać opłat.
 
   supportp: Jeśli masz pytania lub po prostu chcesz się skonsultować z innymi kopaczami,
-    wejdź na czat Monero Pools. Na <a href="#monero-pools:monero.social">Matrix</a>
-    i <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+    wejdź na czat Monero Mining. Na <a href="#monero-mining:monero.social">Matrix</a>
+    i <a href="irc://irc.libera.chat/#monero-mining">Libera</a>.
   softwarep: "Istnieje kilka opcji, jeśli chodzi o oprogramowanie do kopania. Jak\
     \ już zostało wspomniane, do kopania pojedynczo można użyć portfeli CLI lub GUI\
     \ (tylko na CPU). Jeśli chcesz kopać do puli lub kopać za pomocą GPU, będziesz\
