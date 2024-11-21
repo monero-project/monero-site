@@ -146,8 +146,8 @@ merchants:
   useit: "Merchants that accept Monero"
   use: Over the years, merchants of all kinds have come to value the financial privacy that Monero brings. In fact, merchant adoption is continuously rising.
   dirdescr: "If you are looking for places to spend your Monero, the directories below have some options. Please remember to do your own research before trusting them with your money:"
-  descrp2p: The best way to exchange Monero for other currencies (or the other way round) is using P2P exchanges, because they allow traders to directly interact with each other, without the need of trusted third parties (except maybe for providing an escrow service). These exchanges are more private than their centralized counterparts and allow people to be in complete control of their coins if they are non-custodial, but they usually have less volume than 'traditional' exchanges. In the section below, we offer a list of P2P exchanges that support Monero.
-  swapsdescr: A new exciting way to exchange Monero is Atomic Swaps, which <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">we announced</a> on August 2021. Atomic Swaps are a completely decentralized way to swap Bitcoin <-> Monero (more info in the blog post). The technology is brand new, so there aren't many swap providers yet, but you can already sell XMR for BTC using this protocol at
+  descrp2p: A great way to exchange Monero for other currencies is to use a Peer to Peer [P2P] exchange. P2P exchanges allow traders to directly interact with one another, and (in some cases) without the need of trusted third party (except for providing an escrow service). These exchanges are typically more private than their centralized and/or custodial counterparts.
+  swapsdescr: "A trustless method to exchange Monero with other cryptocurrencies is to use Atomic Swaps. See the blog post for more info:"
   bisqdescr: Decentralized P2P exchange based on Bitcoin and Tor.
   cardfoss: "Open source:"
   cardkyc: "<b>No KYC</b> (Know Your Customer):"
@@ -155,7 +155,6 @@ merchants:
   cardonion: "Onion address:"
   cardi2p: "I2P address:"
   noncustodial: "Non-custodial:"
-  hodlhodldescr: P2P trading platform with non-custodial escrow.
   locmondescr: Online P2P exchange offering person-to-person trades.
   depsell: Depends by the seller
   locnojs: (but no-JS version available)
@@ -163,7 +162,6 @@ merchants:
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
   visitbisq: Visit Bisq
-  visithodlhodl: Visit HodlHodl
   centrexchanges: Centralized exchanges (CEXs) & Swappers
   centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.
@@ -171,6 +169,8 @@ merchants:
   basicswapdexdesc: Decentralized P2P atomic swaps with a strong focus on the user experience.
   visitbasicswapdex: Visit BasicSwapDEX
   setreq: Setup required
+  unstoppableswapdesc: Exchange Bitcoin for Monero using Atomic Swaps.
+  visitunstoppableswap: Visit UnstoppableSwap
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.

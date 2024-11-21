@@ -24,7 +24,7 @@ meta_descr: merchants.descr
       <div class="info-block">
         <h2>P2P exchanges and Atomic Swaps</h2>
         <p>{% t merchants.descrp2p %}</p>
-        <p>{% t merchants.swapsdescr %} <a href="https://unstoppableswap.net/">unstoppableswap.net</a>.</p>
+        <p>{% t merchants.swapsdescr %} <a href="{{ site.baseurl_root }}/2021/08/20/atomic-swaps.html">Atomic Swaps</a></p>
       </div>
     </div>
     <div class="row">
@@ -50,19 +50,19 @@ meta_descr: merchants.descr
       <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="center-xs">
-            <img class="merch" src="/img/merchants/hodlhodl.jpg" alt="HodlHodl Logo" title="HodlHodl">
-            <p>{% t merchants.hodlhodldescr %}</p>
+            <img class="merch" src="/img/merchants/unstoppableswap.png" alt="UnstoppableSwap GUI Logo" title="UnstoppableSwap GUI">
+            <p>{% t merchants.unstoppableswapdesc %}</p>
           </div>
           <div>
-            <p><b>{% t merchants.cardfoss %}</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
             <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
             <p>{% t merchants.cardkyc %} <span class="check"></span></p>
-            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span> {% t merchants.cardbtcfiat %}</p>
-            <p><b>{% t merchants.cardonion %}</b> <span class="cross"></span></p>
+            <p><b>XMR &#8596; fiat:</b> <span class="cross"></span></p>
+            <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
             <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
-            <p><a href="https://hodlhodl.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithodlhodl %}</a></p>
+            <p><a href="https://unstoppableswap.net" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitunstoppableswap %}</a></p>
           </div>
         </div>
       </div>
