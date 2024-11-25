@@ -4096,7 +4096,7 @@ p.hangouts-social {
     margin-bottom: 1rem!important;
 }
 
-.hangouts-social ul {
+.hangouts-social ul, .workgroups ul {
     list-style: none;
     padding: 0;
     margin-bottom: 2.5rem;
