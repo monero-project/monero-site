@@ -42,10 +42,6 @@ This website is available natively on Tor. The onion address is in `_includes/on
 
 If you want to post getmonero's onion address somewhere on the website, don't simply write it, instead include it using `{% include onion.html %}`. This avoids problems with typos and allows us to change the address only in one file if necessary.
 
-## PR workflow
-
-To simplify the process of drafting, reviewing and merging pull requests, we use a GitHub Project board. This Kanban board makes easier for people to see and participate to the pull request workflow: [monero-site: PR workflow](https://github.com/orgs/monero-project/projects/1).
-
 ## Translation
 
 In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinates and gives support to translators-volunteers. For live support/request of information, come chat on `#monero-translations` on Matrix or IRC (Libera.chat)
