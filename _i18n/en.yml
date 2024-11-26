@@ -169,7 +169,7 @@ merchants:
   basicswapdexdesc: Decentralized P2P atomic swaps with a strong focus on the user experience.
   visitbasicswapdex: Visit BasicSwapDEX
   setreq: Setup required
-  unstoppableswapdesc: Exchange Bitcoin for Monero using Atomic Swaps with our desktop software. No registration or middleman required. Over the Tor network. Accessible to everyone. Community funded.
+  unstoppableswapdesc: Exchange Bitcoin for Monero using Atomic Swaps.
   visitunstoppableswap: Visit UnstoppableSwap
 
 sponsorships:
