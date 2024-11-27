@@ -89,7 +89,7 @@ meta_descr: meta_descr.mining
             <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="info-block text-adapt">
                     <h2>{% t mining.support %}</h2>
-                        <p>{% t mining.supportp %}</p>
+                        <p>{% t downloads.helpsupport3 %}</p>
                 </div>
             </div>
         </div>
