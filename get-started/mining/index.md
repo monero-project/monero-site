@@ -78,7 +78,12 @@ meta_descr: meta_descr.mining
                     <h2>{% t mining.software %}</h2>
                         <p>{% t mining.softwarep %}
                         <ul>
-                            <li><a href="https://github.com/xmrig/xmrig">XMRig</a></li>
+                            <li><a href="https://github.com/Cyrix126/gupaxx/">Gupaxx</a>
+                            <ul>
+                              <li><a href="https://xmrig.com/">XMRig</a></li>
+                              <li><a href="https://p2pool.io/#help">P2Pool</a></li>
+                            </ul>
+                            </li>
                         </ul>
                         {% t mining.software_para %}
                         </p>
