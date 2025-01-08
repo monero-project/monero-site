@@ -35,7 +35,7 @@ Whichever method you chose, be sure there's no copy of the Monero wallet left ov
 Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
 Download the html page and place it on your airgapped computer. Check the part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a decent password. Thanks manicminer5.
 
-## Step 3: Send your Moneroj to the paper wallet
+## Step 3: Send your Monero to the paper wallet
 
 Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
 
