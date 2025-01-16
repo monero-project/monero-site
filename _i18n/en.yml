@@ -514,7 +514,7 @@ faq:
   qfullpruned: How do I decide if I should run a full node or a pruned node?
   afullpruned: "A full @node requires a considerable amount of storage and could take a long time to download and verify the entire blockchain, especially on older hardware. If you have limited storage, a pruned node is recommended. It only stores 1/8th of unnecessary blockchain data while keeping the full transaction history. If plenty of storage is available, a full node is recommended but a pruned node still greatly contributes to the network and improves your privacy."
   qblocksize: How big is the Monero blockchain?
-  ablocksize: "The Monero @blockchain is always growing so there is no fixed size. As of 2022, the full blockchain is around 140-150GB. A pruned blockchain is about 50GB. Check out Moneropedia entry @pruning to learn the difference between a full and a pruned blockchain."
+  ablocksize: "The Monero @blockchain is always growing so there is no fixed size. As of 2024, the full blockchain is around ~225GB. A pruned blockchain is about ~86GB. Check out Moneropedia entry @pruning to learn the difference between a full and a pruned blockchain."
   qblockspace: Why does the blockchain need so much space?
   ablockspace: "When you download the @blockchain, you are downloading the entire history of the @transactions that happened in the Monero network since it was created. The transactions and the related data are heavy and the entire history must be kept by every node to ensure it's the same for everybody. @Pruning a blockchain allows to run a node which keeps only 1/8 of not strictly necessary blockchain data. This results in a blockchain 2/3 smaller than a full one. Convenient for people with limited disk space. Check out the Moneropedia entries @node and @remote-node for more details."
   qavoidbc: Can I avoid downloading the entire blockchain?
@@ -559,7 +559,7 @@ faq:
   aasicresistance2: >
     Monero fixes this problem by being ASIC-resistant: it uses an algorithm (@randomx) that strongly reduces the efficiency of ASICs, making them not profitable to build. Miners can use common consumer hardware, which allows them to compete fairly. The Monero network is currently protected by thousands of miners using 'regular' computers. This results in a network much harder to attack, no miner having significant advantage over other miners (they all use more or less the same hardware).
   qmaxsupply: What is Monero's maximum supply?
-  amaxsupply: Monero has a fixed emission rate, not a set maximum supply. Around May 2022, Monero's emission will drop to and permanently remain at 0.3 XMR per minute (0.6 XMR per @block). This is approximately 1% inflation for the first year and will approach 0% inflation in future years. This @tail-emission allows for permanent incentives to secure Monero, even in the far future, while keeping inflation at a very low percent.
+  amaxsupply: Monero has a fixed emission rate, not a set maximum supply. Monero tail emission started at block 2641623, on 2022-06-09 at 00:29 UTC, and will permanently remain at 0.3 XMR per minute (0.6 XMR per @block). This is approximately 1% inflation for the first year and will approach 0% inflation in future years. This @tail-emission allows for permanent incentives to secure Monero, even in the far future, while keeping inflation at a very low percent.
   qtailemission: Why does Monero not have a maximum supply?
   atailemission: Miners process transactions on the Monero network by @mining blocks. The miner of a @block is paid the constant block reward of .6 XMR, and the @transaction fees of the users who have transactions in that block. Monero has the block reward rather than relying solely on the transaction fees to give the miners incentive to keep securing the network with their hashrate, and keep transaction fees low. 
   atailemission1: The @tail-emission caused by this constant block reward creates an inflation rate of less than 1% which trends towards 0% over time. The fixed emission of the currency ensures human corruption cannot over inflate the supply. Keeping the network predictable, decentralized, and secure.
@@ -907,7 +907,7 @@ specs:
   block_emission_title: Emission curve
   block_emission_pre: "To make sure there will always be an incentive to mine Monero and keep it safe, the emission is infinite. There are two main emissions:"
   block_emission_main: "first, main curve: ~18.132 million coins by the end of May 2022"
-  block_emission_tail: "then, tail curve: 0.6 XMR per 2-minute block, kicks in once main emission is done, translates to <1% inflation decreasing over time"
+  block_emission_tail: "then, tail emission (0.6 XMR per 2-minute block) kicked in after the main emission was completed. This translates to <1% inflation, with the percentage trending towards 0 over time"
   blocks_title: Blocks
   blocks: A new @block is created every ~2 minutes. There is no maximum block size, but instead a block reward penalty and a dynamic block size, to ensure a dynamic @scalability
   privacytech_title: Main privacy enhancing technologies
