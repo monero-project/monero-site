@@ -89,7 +89,7 @@ meta_descr: meta_descr.sponsorships
                         <li><a href="https://www.navicat.com">Navicat</a></li>
                         <li><a href="https://www.forked.net">Forked</a></li>
                         <li><a href="https://www.kitware.com/">Kitware</a></li>
-                        <li><a href="https://dome9.com/">Dome9 Security</a></li>
+                        <li>Dome9 Security</li>
                         <li><a href="https://www.jetbrains.com/">JetBrains</a></li>
                         <li><a href="https://mymonero.com/">My Monero</a></li>
                     </ul>
