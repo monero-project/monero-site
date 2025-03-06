@@ -544,6 +544,7 @@ faq:
   video_sa: Stealth Addresses
   video_ringsig: Ring Signatures
   video_ringct: Ring Confidential Transactions
+  video_fcmp: Full Chain Membership Proofs
   mvideos: "More info on the Moneropedia entry:"
   aavailable: also available in
   and: and
