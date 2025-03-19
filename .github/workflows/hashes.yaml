@@ -5,10 +5,13 @@ on:
     paths:
       - 'downloads/hashes.txt'
       - '_data/downloads.yml'
+      - '_data/contributing.yml'
   pull_request:
     paths:
       - 'downloads/hashes.txt'
       - '_data/downloads.yml'
+      - '_data/contributing.yml'
+  workflow_dispatch:
 jobs:
   validate-hashes:
     name: Validate Hashes
@@ -17,13 +20,41 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip
+          sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip zbar-tools
           sudo pip3 install yq
-      - name: Verify hashes.txt signature
+      - name: Verify hashes.txt + contributing.yml signature
         run: |
           curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
             gpg --import
           gpg --verify downloads/hashes.txt
+          gpg --verify _data/contributing.yml.asc
+
+      - name: Verify General Fund donation QR's
+        run: |
+          yaml="_data/contributing.yml"
+          get_yaml_value() {
+              awk -v key="$1:" '$1 == key {print $2}' "$yaml"
+          }
+          for coin in xmr btc; do
+              qr_checksum=$(get_yaml_value "qr_${coin}_checksum")
+              qr_filename=$(get_yaml_value "qr_${coin}_filename")
+              qr_content=$(get_yaml_value "qr_${coin}_content")
+              echo "DEBUG: $qr_checksum $qr_filename"
+              echo "DEBUG: $qr_content"
+              # Confirm hashes match
+              echo "$qr_checksum $qr_filename" | sha256sum -c
+              # Scan QR content 
+              qr_scanned=$(zbarimg -q --raw "$qr_filename")
+              # Compare scanned content with expected content
+              if [ "$qr_scanned" = "$qr_content" ]; then
+                  echo "${coin^^} QR code content matches exactly"
+              else
+                  echo "${coin^^} QR code content does not match"
+                  echo "Scanned: $qr_scanned"
+                  echo "Expected: $qr_content"
+                  exit 1
+              fi
+          done
       - name: Verify filenames
         run: |
           lines="$(grep -v ^# downloads/hashes.txt)"

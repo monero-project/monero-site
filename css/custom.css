@@ -4705,3 +4705,11 @@ input.accordion[type=radio]:checked + label::after {
 .donation-field {
   user-select: all; /* Select donation addresses with one click */
 }
+
+#qr-link {
+    all: unset;
+}
+
+#qr-link:hover {
+    cursor: pointer;
+}
