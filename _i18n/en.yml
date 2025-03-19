@@ -683,7 +683,7 @@ user-guides:
   hardwarewallet: Hardware Wallets
   anonimizationnetworks: Anonymizing Networks
   offline-backup: How to make an offline backup (advanced)
-  vps-node: How to run a node on VPS
+  vps-node: How to run a node (systemd)
   import-blockchain: How to import the Monero blockchain (advanced)
   monero-tools: Monero Tools
   purchasing-storing: How to create a Monero paper wallet
