@@ -137,8 +137,8 @@ out. This takes 60 blocks (approx. 2 hours).
 
 An active Monero mining community on Reddit is
 [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can
-also join [#monero-pools on
-Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social).
+also join [#monero-mining on
+Libera](https://web.libera.chat/?channel=#monero-mining) or Matrix (#monero-mining:monero.social).
 
 ## Going Futher
 
