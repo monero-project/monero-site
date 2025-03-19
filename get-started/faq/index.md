@@ -166,6 +166,7 @@ meta_descr: faq.intro
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Tail_Emission_VOSTO_EMISIO.webm">{% t moneropedia.entries.tail-emission %}</a> - {% t faq.mvideos %} @Tail-Emission</li>
                             <li><a href="{{ site.baseurl_root }}/media/Monero_Nodes_VOSTO_EMISIO.webm">{% t moneropedia.entries.node %}</a> - {% t faq.mvideos %} @Nodes</li>
                             <li><a href="{{ site.baseurl_root }}/media/RandomX_VOSTO_EMISIO.webm">{% t moneropedia.entries.randomx %}</a> - {% t faq.mvideos %} @RandomX</li>
+                            <li><a href="{{ site.baseurl_root }}/media/FCMP_VOSTO_EMISIO.webm">{% t faq.video_fcmp %}</a></li>
                         </ol>
                     </div>
                 </div>
