@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-20 16:18+0000\n"
+"POT-Creation-Date: 2025-03-11 00:16+0000\n"
 "PO-Revision-Date: 2021-08-09 10:31+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
 "Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-user-guides/remote_node_gui/ru/>\n"
@@ -52,7 +52,9 @@ msgstr "Если ваш кошелёк уже работает в продвин
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:14
-msgid "![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width=\"600px\"}"
+#, fuzzy
+#| msgid "![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width=\"600px\"}"
+msgid "![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.avif){:width=\"600px\"}"
 msgstr "![Режим кошелька](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width=\"600px\"}"
 
 #. type: Title ##
@@ -69,7 +71,9 @@ msgstr "Если ваш кошелёк открыт, вам нужно снач�
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:20
-msgid "![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width=\"600px\"}"
+#, fuzzy
+#| msgid "![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width=\"600px\"}"
+msgid "![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.avif){:width=\"600px\"}"
 msgstr "![Закрыть текущий кошелек](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width=\"600px\"}"
 
 #. type: Plain text
@@ -79,12 +83,16 @@ msgstr "Откроется главное меню: экран `Добро по�
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:24
-msgid "![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width=\"600px\"}"
+#, fuzzy
+#| msgid "![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width=\"600px\"}"
+msgid "![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.avif){:width=\"600px\"}"
 msgstr "![Изменить режим кошелька](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width=\"600px\"}"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:26
-msgid "![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width=\"600px\"}"
+#, fuzzy
+#| msgid "![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width=\"600px\"}"
+msgid "![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width=\"600px\"}"
 msgstr "![Продвинутый режим](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width=\"600px\"}"
 
 #. type: Title ##
@@ -119,31 +127,33 @@ msgid "If you don't see this pop up, go to `Settings` > `Node` page.\n"
 msgstr "Если вы не видите этого всплывающего окна, то перейдите на страницу `Настройки` > `Узел`.\n"
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:38
-msgid "![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width=\"600px\"}"
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:39
+#, fuzzy
+#| msgid "![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width=\"600px\"}"
+msgid "![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width=\"600px\"} ![Configure Remote Node 2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width=\"600px\"}"
 msgstr "![Настройка удаленного узла](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width=\"600px\"}"
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:40
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:41
 msgid "On this page select `Remote Node`."
 msgstr "На этой странице выберите `Удаленный узел`."
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:42
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:43
 msgid "In `Address` you should fill the address of the remote node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any IP address."
 msgstr "В поле `Адрес` следует ввести адрес удалённого узла, к которому вы хотите подключиться. Этот адрес может выглядеть, как `node.moneroworld.com`, или же, как любой IP-адрес."
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:44
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:45
 msgid "In `Port` you should fill the port of the remote node. If a remote node is listed as `node.moneroworld.com:18089`, the address is `node.moneroworld.com` and the port is `18089`. The default port is `18081`, but it can vary depending on the node you are connecting to."
 msgstr "В поле `Порт` следует указать номер порта удалённого узла. Если удалённый узел будет указан, как `node.moneroworld.com:18089`, адресом будет `node.moneroworld.com`, а номером порта - `18089`. По умолчанию номер порта указывается, как `18089`, но он может варьироваться в зависимости от узла, к которому вы пытаетесь подключиться."
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:46
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:47
 msgid "If your remote node requires authentication, you can enter a username in `Daemon username` and a password in `Daemon password`."
 msgstr "Если ваш удаленный узел требует аутентификации, вы можете ввести имя пользователя в поле `Имя пользователя демона` и пароль в `Пароль демона`."
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:47
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:48
 msgid "Finally, click on `Connect` button and wait for your wallet to connect."
 msgstr "Наконец, нажмите кнопку `Подключиться` и дождитесь, пока ваш кошелёк не подсоединится к удалённому узлу."

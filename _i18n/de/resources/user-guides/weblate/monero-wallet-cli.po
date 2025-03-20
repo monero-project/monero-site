@@ -74,10 +74,9 @@ msgstr ""
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:37
-#, fuzzy, no-wrap
-#| msgid "## Checking your balance"
+#, no-wrap
 msgid "Checking your balance"
-msgstr "## Guthaben überprüfen"
+msgstr "Guthaben überprüfen"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:42
@@ -107,10 +106,9 @@ msgstr "In diesem Beispiel ist `Balance` dein gesamtes Guthaben. `unlocked balan
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:53
-#, fuzzy, no-wrap
-#| msgid "## Sending monero"
+#, no-wrap
 msgid "Sending monero"
-msgstr "## Monero versenden"
+msgstr "Monero versenden"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:56
@@ -119,10 +117,9 @@ msgstr ""
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:57
-#, fuzzy, no-wrap
-#| msgid "    transfer ADDRESS AMOUNT\n"
+#, no-wrap
 msgid "transfer ADDRESS AMOUNT\n"
-msgstr "    transfer ADDRESS AMOUNT\n"
+msgstr "transfer ADDRESS AMOUNT\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:62
@@ -131,17 +128,14 @@ msgstr ""
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:63
-#, fuzzy, no-wrap
-#| msgid "## Receiving monero"
+#, no-wrap
 msgid "Receiving monero"
-msgstr "## Monero empfangen"
+msgstr "Monero empfangen"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:66
-#, fuzzy
-#| msgid "If you have your own Monero address, you just need to give your standard address to someone."
 msgid "If you have your own Monero address, you just need to give your address to someone."
-msgstr "Wenn du eine eigene Monero-Adresse hast, kannst du jemandem ganz einfach deine Standardadresse geben."
+msgstr "Wenn du eine eigene Monero-Adresse hast, kannst du jemandem ganz einfach deine adresse geben."
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:68
@@ -152,10 +146,9 @@ msgstr "Diese findest du heraus mit:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:69
-#, fuzzy, no-wrap
-#| msgid "    address\n"
+#, no-wrap
 msgid "address\n"
-msgstr "    address\n"
+msgstr "address\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:76
@@ -181,15 +174,12 @@ msgstr "Dies generiert eine zufällige Zahlungs-ID und gibt eine Adresse aus, we
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:85
-#, fuzzy, no-wrap
-#| msgid "    integrated_address 12346780abcdef00\n"
+#, no-wrap
 msgid "integrated_address 82d79055f3b27f56\n"
-msgstr "    integrated_address 12346780abcdef00\n"
+msgstr "integrated_address 12346780abcdef00\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:91
-#, fuzzy
-#| msgid "Payments made to an integrated address generated from your account will go to your account, with that payment id attached, so you can tell payments apart."
 msgid "Payments made to an integrated address generated from your account will go to your account, with that payment ID attached, so you can tell payments apart."
 msgstr "An eine von deinem Konto aus generierte integrierte Adresse gesendete Zahlungen gehen mit der Zahlungs-ID markiert auf dein Konto. Auf diese Weise kannst du Zahlungen unterscheiden."
 
@@ -233,17 +223,15 @@ msgstr ""
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:111
-#, fuzzy, no-wrap
-#| msgid "    address\n"
+#, no-wrap
 msgid "address all\n"
-msgstr "    address\n"
+msgstr "address all\n"
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:115
-#, fuzzy, no-wrap
-#| msgid "## Proving to a third party you paid someone"
+#, no-wrap
 msgid "Proving to a third party you paid someone"
-msgstr "## Getätigte Zahlungen gegenüber Dritten nachweisen"
+msgstr "Getätigte Zahlungen gegenüber Dritten nachweisen"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:124
@@ -252,10 +240,9 @@ msgstr "Solltest du einen Händler bezahlt haben, dieser aber bestreiten, das Ge
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:125
-#, fuzzy, no-wrap
-#| msgid "    set store-tx-info 1\n"
+#, no-wrap
 msgid "set store-tx-info 1\n"
-msgstr "    set store-tx-info 1\n"
+msgstr "set store-tx-info 1\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:130
@@ -264,10 +251,9 @@ msgstr "Du kannst den Transaktionsschlüssel einer früheren Transaktion abrufen
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:131
-#, fuzzy, no-wrap
-#| msgid "    get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
+#, no-wrap
 msgid "get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
-msgstr "    get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
+msgstr "get_tx_key 1234567890123456789012345678901212345678901234567890123456789012\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:140
@@ -281,24 +267,20 @@ msgstr "Wenn du dieser Dritte bist (weil dir jemand beweisen möchte, dass er Mo
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:144
-#, fuzzy, no-wrap
-#| msgid "    check_tx_key TXID TXKEY ADDRESS\n"
+#, no-wrap
 msgid "check_tx_key TXID TXKEY ADDRESS\n"
-msgstr "    check_tx_key TXID TXKEY ADDRESS\n"
+msgstr "check_tx_key TXID TXKEY ADDRESS\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:151
-#, fuzzy
-#| msgid "Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination address which were supplied to you, respectively. monero-wallet-cli will check that transaction and let you know how much monero this transaction paid to the given address."
 msgid "Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID, per-transaction key, and destination address which were supplied to you, respectively. `monero-wallet-cli` will check that transaction and let you know how much monero this transaction paid to the given address."
-msgstr "Ersetze `TXID`, `TXKEY` und `ADDRESS` mit der dir bereitgestellten Transaktions-ID, dem jeweiligen Transaktionsschlüssel und der Zieladresse. monero-wallet-cli überprüft nun diese Transaktion und teilt dir mit, wie viele Monero in dieser Transaktion an die vorgegebene Adresse gesendet wurden."
+msgstr "Ersetze `TXID`, `TXKEY` und `ADDRESS` mit der dir bereitgestellten Transaktions-ID, dem jeweiligen Transaktionsschlüssel und der Zieladresse. `monero-wallet-cli` überprüft nun diese Transaktion und teilt dir mit, wie viele Monero in dieser Transaktion an die vorgegebene Adresse gesendet wurden."
 
 #. type: Title ##
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:152
-#, fuzzy, no-wrap
-#| msgid "## How to find a payment to you"
+#, no-wrap
 msgid "How to find a payment to you"
-msgstr "## Eine an dich gehende Zahlung finden"
+msgstr "Eine an dich gehende Zahlung finden"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:155
@@ -307,10 +289,9 @@ msgstr "Hast du eine Zahlung mit einer bestimmten Zahlungs-ID erhalten, kannst d
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:156
-#, fuzzy, no-wrap
-#| msgid "    payments PAYMENTID\n"
+#, no-wrap
 msgid "payments PAYMENTID\n"
-msgstr "    payments PAYMENTID\n"
+msgstr "payments PAYMENTID\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:161
@@ -324,10 +305,9 @@ msgstr "Grundsätzlich kannst du ein- und ausgehende Zahlungen wie folgt prüfen
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:164
-#, fuzzy, no-wrap
-#| msgid "    show_transfers\n"
+#, no-wrap
 msgid "show_transfers\n"
-msgstr "    show_transfers\n"
+msgstr "show_transfers\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:170
@@ -336,10 +316,9 @@ msgstr "Du kannst zur Anzeige jüngerer Transaktionen eine bestimmte Höhe setze
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:171
-#, fuzzy, no-wrap
-#| msgid "    show_transfers in 650000\n"
+#, no-wrap
 msgid "show_transfers in 650000\n"
-msgstr "    show_transfers in 650000\n"
+msgstr "show_transfers in 650000\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:177
@@ -353,10 +332,9 @@ msgstr "Falls du minen möchtest, kannst du dies vom Wallet aus tun:"
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:180
-#, fuzzy, no-wrap
-#| msgid "    start_mining 2\n"
+#, no-wrap
 msgid "start_mining 2\n"
-msgstr "    start_mining 2\n"
+msgstr "start_mining 2\n"
 
 #. type: Plain text
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:186
@@ -365,10 +343,9 @@ msgstr "Hierdurch startet das Mining mit dem Hintergrunddienst unter Gebrauch zw
 
 #. type: Fenced code block
 #: _i18n/en/resources/user-guides/monero-wallet-cli.md:187
-#, fuzzy, no-wrap
-#| msgid "    stop_mining\n"
+#, no-wrap
 msgid "stop_mining\n"
-msgstr "    stop_mining\n"
+msgstr "stop_mining\n"
 
 #~ msgid "Example:"
 #~ msgstr "Beispiel:"

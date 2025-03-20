@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="no" translationOutdated="no" %}
 
 ## Убедитесь в том, что ваш кошелёк работает в продвинутом режиме
 
@@ -15,32 +15,32 @@
 Если ваш кошелёк уже работает в продвинутом режиме, вы можете пропустить
 следующий шаг.
 
-![Режим
-кошелька](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
+![Wallet
+mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.avif){:width="600px"}
 
 ## Переключение вашего кошелька в продвинутый режим
 
 Если ваш кошелёк открыт, вам нужно сначала закрыть его. Чтобы сделать это, перейдите в `Настройки` > `Кошёлек` > `Закрыть текущий кошелек`
 
-![Закрыть текущий
-кошелек](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
+![Close
+Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.avif){:width="600px"}
 
 Откроется главное меню: экран `Добро пожаловать в Monero`. В левом нижнем
 углу нажмите кнопку `Изменить режим кошелька`, а на следующей странице
 выберите `Расширенный режим`. Затем снова откройте файл кошелька.
 
-![Изменить режим
-кошелька](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
+![Change Wallet
+Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.avif){:width="600px"}
 
-![Продвинутый
-режим](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
+![Advanced
+Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width="600px"}
 
 ## Поиск публичного удаленного узла
 
 First, you will need to find a public remote node to connect to. The website
 [moneroworld.com](https://moneroworld.com/#nodes) has some great resources
-about remote nodes, and the website [monero.fail](https://monero.fail) has
-a list of functioning remote nodes.
+about remote nodes, and the website [monero.fail](https://monero.fail) has a
+list of functioning remote nodes.
 
 ## Настройка вашего кошелька перед подключением к пубчичному удаленному узлу
 
@@ -48,8 +48,10 @@ a list of functioning remote nodes.
 
 Если вы не видите этого всплывающего окна, то перейдите на страницу `Настройки` > `Узел`.
 
-![Настройка удаленного
-узла](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
+![Configure Remote
+Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width="600px"}
+![Configure Remote Node
+2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width="600px"}
 
 На этой странице выберите `Удаленный узел`.
 

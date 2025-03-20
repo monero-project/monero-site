@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-06-23 08:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/scan-txid.md:2
+#, markdown-text
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/scan-txid.md:5
+#, markdown-text
+msgid "If you have sent or received Monero and it is not appearing in your wallet, you can scan for the specific transaction using its ID.  After scanning is complete, Monero should be removed or added to your balance. WARNING: this operation may reveal the txids to the remote node and affect your privacy"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/scan-txid.md:6
+#, markdown-text, no-wrap
+msgid "Monero GUI"
+msgstr ""
+
+#. type: Bullet: '1) '
+#: ../_i18n/en/resources/user-guides/scan-txid.md:9
+#, markdown-text
+msgid "With your wallet open, click on `Settings` -> `Wallet` -> `Scan transaction`"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/scan-txid.md:11
+#, markdown-text
+msgid "![Scan TXID GUI](/img/resources/user-guides/en/scan-txid/scan_tx_1.png){:width=\"600px\"}"
+msgstr ""
+
+#. type: Bullet: '2) '
+#: ../_i18n/en/resources/user-guides/scan-txid.md:13
+#, markdown-text
+msgid "Enter the transaction ID you want to scan and click OK."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/scan-txid.md:15
+#, markdown-text
+msgid "![Enter TXID GUI](/img/resources/user-guides/en/scan-txid/scan_tx_2.png)"
+msgstr ""
+
+#. type: Bullet: '3) '
+#: ../_i18n/en/resources/user-guides/scan-txid.md:17
+#, markdown-text
+msgid "If anything was found, your balance will update, and the transaction will appear in your history."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/scan-txid.md:19
+#, markdown-text
+msgid "![Updated Balance GUI](/img/resources/user-guides/en/scan-txid/scan_tx_3.png){:width=\"600px\"}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/scan-txid.md:20
+#, markdown-text, no-wrap
+msgid "Monero CLI"
+msgstr ""
+
+#. type: Bullet: '1) '
+#: ../_i18n/en/resources/user-guides/scan-txid.md:23
+#, markdown-text
+msgid "With your wallet open, simply enter `scan_tx` followed by the transaction ID."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/scan-txid.md:24
+#, markdown-text
+msgid "![Scan TXID CLI](/img/resources/user-guides/en/scan-txid/scan_tx_4.png){:width=\"600px\"}"
+msgstr ""

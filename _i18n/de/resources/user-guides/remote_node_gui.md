@@ -15,14 +15,14 @@ Wenn dein Wallet bereits im erweiterten Modus ist, kannst du den nächsten
 Schritt überspringen.
 
 ![Wallet
-mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
+mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.avif){:width="600px"}
 
 ## In den erweiterten Modus wechseln
 
 Wenn dein Wallet geöffnet ist, musst du es zunächst schließen. Gehe zu `Einstellungen` > `Wallet` > `Dieses Wallet schließen`.
 
 ![Close
-Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
+Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.avif){:width="600px"}
 
 Das Hauptmenü (`Willkommen bei Monero`-Maske) öffnet sich. Unten links
 klickst du zunächst auf den `Walletmodus ändern`-Button und wählst auf der
@@ -30,17 +30,17 @@ nächsten Seite die Option `Erweiterter Modus` aus. Anschließend öffnest du
 deine Wallet-Datei erneut.
 
 ![Change Wallet
-Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
+Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.avif){:width="600px"}
 
 ![Advanced
-Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
+Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width="600px"}
 
 ## Einen öffentlichen Remote-Node finden
 
 First, you will need to find a public remote node to connect to. The website
 [moneroworld.com](https://moneroworld.com/#nodes) has some great resources
-about remote nodes, and the website [monero.fail](https://monero.fail) has
-a list of functioning remote nodes.
+about remote nodes, and the website [monero.fail](https://monero.fail) has a
+list of functioning remote nodes.
 
 ## Das Wallet zwecks Verbindung zu einem benutzerdefinierten Remote-Node konfigurieren
 
@@ -49,7 +49,9 @@ Beim Öffnen deines Wallets erscheint ein Fenster mit der Option `Benutzerdefini
 Wenn dieses Pop-up nicht erscheint, gehe direkt über `Einstellungen` zur `Node`-Seite.
 
 ![Configure Remote
-Node](png/remote_node/remote_node_config.png){:width="600px"}
+Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width="600px"}
+![Configure Remote Node
+2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width="600px"}
 
 Wähle auf dieser Seite `Remote-Node`.
 

@@ -15,31 +15,31 @@ Hvis lommeboken din allerede er i avansert modus, kan du hoppe over neste
 steg.
 
 ![Wallet
-mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
+mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.avif){:width="600px"}
 
 ## Endre lommeboken din til avansert modus
 
 Hvis lommeboken din er åpen, må du først lukke den. Gå til `Innstillinger` > `Lommebok` > `Lukk denne lommeboken`
 
 ![Close
-Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
+Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.avif){:width="600px"}
 
 Hovedmenyen (`Velkommen til Monero`-skjermen) vil åpnes. Nederst til venstre
 kan du trykke på `Endre lommebokmodus`-knappen, og på neste side velge
 `Avansert modus`. Etter det åpner du lommebokfilen din igjen.
 
 ![Change Wallet
-Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
+Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.avif){:width="600px"}
 
 ![Advanced
-Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
+Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width="600px"}
 
 ## Å finne en offentlig, ekstern node
 
 First, you will need to find a public remote node to connect to. The website
 [moneroworld.com](https://moneroworld.com/#nodes) has some great resources
-about remote nodes, and the website [monero.fail](https://monero.fail) has
-a list of functioning remote nodes.
+about remote nodes, and the website [monero.fail](https://monero.fail) has a
+list of functioning remote nodes.
 
 ## Å konfigurere lommeboken din til å koble til en tilpasset, offentlig ekstern node
 
@@ -48,7 +48,9 @@ Når du åpner lommeboken din, dukker en popup opp med alternativet `Bruk tilpas
 Hvis du ikke ser denne popupen, kan du gå til siden `Innstillinger` > `Node`.
 
 ![Configure Remote
-Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
+Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width="600px"}
+![Configure Remote Node
+2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width="600px"}
 
 På denne siden velger du `Ekstern node`.
 

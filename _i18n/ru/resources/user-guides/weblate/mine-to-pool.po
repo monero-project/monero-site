@@ -6,17 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-28 11:37+0200\n"
+"POT-Creation-Date: 2024-06-23 08:33+0000\n"
 "PO-Revision-Date: 2022-01-27 09:34+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
-"Language-Team: Russian <https://translate.getmonero.org/projects/"
-"getmonero-user-guides/mine-to-pool/ru/>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-user-guides/mine-to-pool/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
@@ -33,11 +31,7 @@ msgstr "Кошелёк"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:9
 msgid "Before starting, you already need to have a wallet configured and working. The pool needs to know your wallet address to be able to send payments there. See the [Accepting Monero guide]({{ site.baseurl }}/get-started/accepting) for more information."
-msgstr ""
-"Перед тем как начать, вам необходимо иметь уже сконфигурированный и готовый "
-"к работе кошелёк. Пулу нужно знать адрес вашего кошелька, чтобы он смог "
-"направлять на него платежи. Дополнительную информацию можно найти в ["
-"Руководстве по приёму Monero]({{ site.baseurl }}/get-started/accepting)."
+msgstr "Перед тем как начать, вам необходимо иметь уже сконфигурированный и готовый к работе кошелёк. Пулу нужно знать адрес вашего кошелька, чтобы он смог направлять на него платежи. Дополнительную информацию можно найти в [Руководстве по приёму Monero]({{ site.baseurl }}/get-started/accepting)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:10
@@ -86,10 +80,7 @@ msgstr "Ubuntu Linux"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:36
 msgid "The XMRig developer provides pre-built binaries for Ubuntu Bionic (18.04) and Focal (20.04). They may work on other Ubuntu versions, and on other distributions, but this is not guaranteed."
-msgstr ""
-"Разработчик XMRig предоставляет готовые двоичные файлы для Ubuntu Bionic (18."
-"04). Они могут работать и с другими версиями Ubuntu, и с другими "
-"дистрибутивами, но это не гарантируется."
+msgstr "Разработчик XMRig предоставляет готовые двоичные файлы для Ubuntu Bionic (18.04). Они могут работать и с другими версиями Ubuntu, и с другими дистрибутивами, но это не гарантируется."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:39
@@ -99,24 +90,18 @@ msgstr "Эти двоичные файлы также можно скачать 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:42
 msgid "Scroll down to 'Assets' until you see the correct version for your system. Download this file, extract the archive somewhere memorable, like your desktop."
-msgstr ""
-"Прокрутите вниз до 'Assets', пока не увидите версию, подходящую для вашей "
-"операционной системы. Скачайте этот файл и извлеките его содержимое в какое-"
-"нибудь место, например, на рабочий стол."
+msgstr "Прокрутите вниз до 'Assets', пока не увидите версию, подходящую для вашей операционной системы. Скачайте этот файл и извлеките его содержимое в какое-нибудь место, например, на рабочий стол."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
 #, no-wrap
-msgid "Other distributions and operative systems"
+msgid "Other distributions and operating systems"
 msgstr "Другие дистрибутивы и операционные системы"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:46
-msgid "Binaries are available for multiple distributions and operative systems, but you can also build the miner by yourself. Take a loot at [XMrig's docs](https://xmrig.com/docs/miner)"
-msgstr ""
-"Бинарные файлы доступны для нескольких дистрибутивов и операционных систем, "
-"но вы также можете собрать майнер самостоятельно. Воспользуйтесь ["
-"документацией на веб-сайте XMrig](https://xmrig.com/docs/miner)"
+msgid "Binaries are available for various distributions and operating systems, but you can also build the miner by yourself. Take a look at [XMrig's docs](https://xmrig.com/docs/miner)"
+msgstr "Бинарные файлы доступны для нескольких дистрибутивов и операционных систем, но вы также можете собрать майнер самостоятельно. Воспользуйтесь [документацией на веб-сайте XMrig](https://xmrig.com/docs/miner)"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:47
@@ -143,9 +128,7 @@ msgstr "Конфигурирование майнера"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:60
 msgid "See the [official docs](https://xmrig.com/docs/miner/config), for instructions and suggestions."
-msgstr ""
-"Для получения дополнительных инструкций посетите раздел [официальной "
-"документации](https://xmrig.com/docs/miner/config)."
+msgstr "Для получения дополнительных инструкций посетите раздел [официальной документации](https://xmrig.com/docs/miner/config)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:61
@@ -189,12 +172,7 @@ msgstr "Не удаётся прочитать/настроить MSR"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:86
 msgid "On some CPUs, XMRig tries to increase performance by disabling certain features like your CPU's instruction prefetcher. These operations require root/administrator, so try right clicking xmrig.exe and running it as administrator, or running `sudo ./xmrig` on other systems."
-msgstr ""
-"В случае с некоторыми CPU XMRig пытается повысить производительность, "
-"отключая определённые функции, такие как буфер предварительной выборки "
-"команд CPU. Для этих операций требуются права администратора, поэтому "
-"попробуйте правой кнопкой мыши кликнуть по файлу xmrig.exe и запустить его "
-"от имени администратора или же запустить `sudo ./xmrig` в других системах."
+msgstr "В случае с некоторыми CPU XMRig пытается повысить производительность, отключая определённые функции, такие как буфер предварительной выборки команд CPU. Для этих операций требуются права администратора, поэтому попробуйте правой кнопкой мыши кликнуть по файлу xmrig.exe и запустить его от имени администратора или же запустить `sudo ./xmrig` в других системах."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:87
@@ -257,18 +235,12 @@ msgstr "В этом окошке двойным кликом выберите Lo
 #. type: Bullet: '7. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
 msgid "In the Local Security Setting – Lock pages in memory dialog box, click Add User or Group."
-msgstr ""
-"В диалоговом окне Local Security Setting - Lock pages in memory (Параметр "
-"локальной безопасности — Блокировка страниц в памяти) выберите Add User or "
-"Group (Добавить пользователя или группу)."
+msgstr "В диалоговом окне Local Security Setting - Lock pages in memory (Параметр локальной безопасности — Блокировка страниц в памяти) выберите Add User or Group (Добавить пользователя или группу)."
 
 #. type: Bullet: '8. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
 msgid "In the Select Users, Service Accounts, or Groups dialog box, add an account that you will run the miner on"
-msgstr ""
-"В диалоговом окне Select Users, Service Accounts, or Groups (Выбор: "
-"«Пользователи» или «Группы») добавить пользователя, под которым вы будете "
-"запускать майнер"
+msgstr "В диалоговом окне Select Users, Service Accounts, or Groups (Выбор: «Пользователи» или «Группы») добавить пользователя, под которым вы будете запускать майнер"
 
 #. type: Bullet: '9. '
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:108
@@ -332,12 +304,9 @@ msgid ""
 "block. If the pool you are mining on is small, this can take a few\n"
 "days to weeks.\n"
 msgstr ""
-"Большинство пулов является <abbr title=\"Оплата за N последних шар\">PPLNS</"
-"abbr> пулами,\n"
-"а это означает, что вам платят только тогда, когда майнер, находящийся в "
-"пуле, находит\n"
-"блок. Если пул, в котором вы занимаетесь майнингом, небольшой, то это может "
-"занять от\n"
+"Большинство пулов является <abbr title=\"Оплата за N последних шар\">PPLNS</abbr> пулами,\n"
+"а это означает, что вам платят только тогда, когда майнер, находящийся в пуле, находит\n"
+"блок. Если пул, в котором вы занимаетесь майнингом, небольшой, то это может занять от\n"
 "нескольких дней до нескольких недель.\n"
 
 #. type: Plain text
@@ -354,11 +323,7 @@ msgstr "Помощь"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:142
 msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social)."
-msgstr ""
-"Активное майнинг-сообщество Monero на Reddit можно найти здесь: [/r/"
-"MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Вы также можете "
-"присоединиться к [#monero-pools на Libera](https://web.libera.chat/?channel"
-"=#monero-pools) или Matrix (#monero-pools:monero.social)."
+msgstr "Активное майнинг-сообщество Monero на Reddit можно найти здесь: [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Вы также можете присоединиться к [#monero-pools на Libera](https://web.libera.chat/?channel=#monero-pools) или Matrix (#monero-pools:monero.social)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:143

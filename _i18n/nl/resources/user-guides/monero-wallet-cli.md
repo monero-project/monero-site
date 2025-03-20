@@ -1,10 +1,10 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-`monero-wallet-cli` is the wallet software shipped in the Monero
-archives. It is a console program, and manages an account. While a bitcoin
-wallet manages both an account and the blockchain, Monero separates these:
-`monerod` handles the blockchain, and `monero-wallet-cli` handles the
-account.
+`monero-wallet-cli` is de portemonnee-software die onderdeel uitmaakt van de
+Monero-code. Het is een consoleprogramma waarmee je een account
+beheert. Terwijl een Bitcoin-portemonnee zowel een account als de blockchain
+beheert, worden deze functies in Monero gescheiden: `monerod` beheert de
+blockchain en `monero-wallet-cli` beheert het account.
 
 This guide will show how to perform various operations with
 `monero-wallet-cli`. The guide assumes you are using the most recent version
@@ -38,7 +38,7 @@ Important commands:
 "donate <amount>" - Donate XMR to the development team.
 ```
 
-## Checking your balance
+## Je saldo bekijken
 
 Omdat we een ander programma dan de portemonnee gebruiken om met de
 blockchain te werken, moet `monero-wallet-cli` voor veel toepassingen
@@ -59,24 +59,23 @@ index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
 amount currently available to spend. Newly received transactions require 10
 confirmations on the blockchain before being unlocked.
 
-## Sending monero
+## Monero verzenden
 
 You will need the standard address you want to send to (a long string
 starting with '4' or a '8'). The command structure is:
 
 ```
-transfer ADDRESS AMOUNT
+transfer ADRES BEDRAG
 ```
 
 Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
 many monero you want to send.
 
-## Receiving monero
+## Monero ontvangen
 
-If you have your own Monero address, you just need to give your address to
-someone.
+Als je zelf een Monero-adres hebt, kun je gewoon adres aan iemand doorgeven.
 
-You can find out your primary address with:
+Met de volgende opdracht krijg je je primary adres te zien:
 
 ```
 address
@@ -100,12 +99,12 @@ includes your own account and that payment ID. If you want to select a
 particular payment ID, you can do that too. Use:
 
 ```
-integrated_address 82d79055f3b27f56
+integrated_address 12346780abcdef00
 ```
 
-Payments made to an integrated address generated from your account will go
-to your account, with that payment ID attached, so you can tell payments
-apart.
+Betalingen aan een geïntegreerd adres dat jij hebt gegenereerd gaan naar
+jouw account met vermelding van die betalings-ID, zodat je betalingen kunt
+onderscheiden.
 
 ### Using subaddresses
 
@@ -131,7 +130,7 @@ To view all generated addresses, run:
 address all
 ```
 
-## Proving to a third party you paid someone
+## Aan een derde bewijzen dat je iemand hebt betaald
 
 Als je een verkoper betaalt, en de verkoper beweert dat hij/zij het geld
 niet heeft ontvangen, wil je misschien aan een derde bewijzen dat je het
@@ -168,21 +167,21 @@ hij/zij Monero naar een bepaald adres heeft verzonden), kun je dat op deze
 manier controleren:
 
 ```
-check_tx_key TXID TXKEY ADDRESS
+check_tx_key TXID SLEUTEL ADRES
 ```
 
-Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID,
-per-transaction key, and destination address which were supplied to you,
-respectively. `monero-wallet-cli` will check that transaction and let you
-know how much monero this transaction paid to the given address.
+Vervang `TXID` door de transactie-ID, `SLEUTEL` door de transactiesleutel en
+`ADRES` door het doeladres dat je hebt ontvangen. Vervolgens controleert
+`monero-wallet-cli` die transactie en laat het weten hoeveel door deze
+transactie aan het opgegeven adres is betaald.
 
-## How to find a payment to you
+## Een betaling aan jou vinden
 
 Als je een betaling met een bepaalde betalings-ID hebt ontvangen, kun je
 deze opzoeken:
 
 ```
-payments PAYMENTID
+payments BETALINGSID
 ```
 
 Je kunt ook meer dan één betalings-ID opgeven.

@@ -7,9 +7,11 @@ terms: ["Tail-Emission", "Haleemisjon"]
 
 ### Det grunnleggende
 
-Moneros blokkbelønninger vil aldri gå til null. Blokkbelønninger vil gradvis
-falle helt til haleemisjonen settes i gang ved slutten av mai 2022. På dette
-tidspunktet vil belønninger settes til 0,6 XMR per blokk.
+Monero block rewards will never drop to zero. Block rewards gradually
+dropped until tail emission commenced at the end of May 2022. At this point,
+rewards will stay fixed at 0.6 XMR or less* per block.
+
+* Due to block size penalties.
 
 ### Hvorfor
 

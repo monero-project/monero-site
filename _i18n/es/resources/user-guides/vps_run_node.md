@@ -2,18 +2,23 @@
 
 # monerod
 
-`monerod` es el software daemon que viene con el árbol de Monero. Es un programa de consola, y administra la blockchain. Mientras bitcoin administra tanto cuenta como blockchain, Monero lo separa en: `monerod` se encarga de la blockchain, y `monero-wallet-cli` de la cuenta.
+`monerod` es el software daemon que viene con el árbol de Monero. Es un
+programa de consola, y administra la blockchain. Mientras bitcoin administra
+tanto cuenta como blockchain, Monero lo separa en: `monerod` se encarga de
+la blockchain, y `monero-wallet-cli` de la cuenta.
 
-Esta guía asume que ya has preparado una cuenta VPS y que estás utilizando SSH para dirigirte a la consola del servidor.
+Esta guía asume que ya has preparado una cuenta VPS y que estás utilizando
+SSH para dirigirte a la consola del servidor.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
 ### Asegúrate de que el puerto 18080 está abierto
 
-`monerod` usa este puerto para comunicarse con otros nodos en la red de Monero.
+`monerod` usa este puerto para comunicarse con otros nodos en la red de
+Monero.
 
-Ejemplo si se usa `ufw`: `sudo ufw allow 18080`
-Ejemplo si se usa `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
+Ejemplo si se usa `ufw`: `sudo ufw allow 18080` Ejemplo si se usa
+`iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
 ### Descarga los binarios actuales Monero
 

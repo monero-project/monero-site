@@ -13,40 +13,42 @@ Advanced mode (see next step).
 If your wallet is already in Advanced mode, you can skip the next step.
 
 ![Wallet
-mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width="600px"}
+mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.avif){:width="600px"}
 
 ## Change your wallet to advanced mode
 
 If your wallet is open, you need to close it first. Go to `Settings` > `Wallet` > `Close this wallet`
 
 ![Close
-Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width="600px"}
+Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.avif){:width="600px"}
 
 The main menu (`Welcome to Monero` screen) will open. At the bottom left,
 click on `Change wallet mode` button, and on the next page select `Advanced
 mode`. Next, open your wallet file again.
 
 ![Change Wallet
-Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width="600px"}
+Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.avif){:width="600px"}
 
 ![Advanced
-Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width="600px"}
+Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width="600px"}
 
-## Finding a public remote node
+## Encontrando un nodo remoto público
 
 First, you will need to find a public remote node to connect to. The website
 [moneroworld.com](https://moneroworld.com/#nodes) has some great resources
-about remote nodes, and the website [monero.fail](https://monero.fail) has
-a list of functioning remote nodes.
+about remote nodes, and the website [monero.fail](https://monero.fail) has a
+list of functioning remote nodes.
 
-## Configuring your wallet to connect to a custom public remote node
+## Configurando tu monedero para conectar a un nodo remoto público personalizado
 
 When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. 
 
 If you don't see this pop up, go to `Settings` > `Node` page.
 
 ![Configure Remote
-Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width="600px"}
+Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width="600px"}
+![Configure Remote Node
+2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width="600px"}
 
 On this page select `Remote Node`.
 

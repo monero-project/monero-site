@@ -1,31 +1,33 @@
 ---
-summary: "Monero's efficient way of building ring signatures"
+summary: 'Эффективный способ создания кольцевых подписей Monero'
 terms: ["CLSAG"]
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-CLSAG (Concise Linkable Spontaneous Anonymous Group) signature are the new
-way Monero builds @ring-signatures, which replaces MLSAG (multilayered
-Linkable Spontaneous Anonymous Group Signature). CLSAG will go live and
-mandatory with the [Monero network upgrade of October 2020]({{ site.baseurl
-}}/2020/08/18/network-upgrade-october-2020.html). CLSAG maintains the same
-functionalities as MLSAG, but with the advantage of considerable size
-savings for @transactions and improvements in verification speed. This new
-technology was developed by contributors of the [Monero Research Lab]({{
-site.baseurl }}/resources/research-lab/) and [audited by external
-researchers]({{ site.baseurl_root
+Подпись CLSAG (краткая подпись связанной спонтанной анонимной группы) - это
+новый способ создания @кольцевых-подписей Monero, который должен прийти на
+смену MLSAG (многоуровневая связываемая спонтанная анонимная группа
+). Планируемая дата начала работы над интеграцией CLSAG в основную сеть
+Monero, [октябрь 2020 года]({{ site.baseurl
+}}/2020/08/18/network-upgrade-october-2020.html). CLSAG поддерживает те же
+функциональные возможности, что и MLSAG, но с преимуществом к экономии
+объема размеров @транзакции и повышению скорости проверки. Эта технология
+была разработана контрибьюторами из [Исследовательской лаборатории
+Monero]({{ site.baseurl }}/resources/research-lab/) и [проверена сторонними
+аудиторами]({{ site.baseurl_root
 }}/resources/research-lab/audits/clsag.pdf).
 
-With CLSAG, users see a 20% improvement in signature verification, and at
-least a 10% overall improvement for typical transactions. For example, a
-typical Monero transaction (2 inputs and 2 outputs) which usually weighs
-2.5kB, takes only 1.9kB of blockchain space with CLSAG, a ~25% improvement.
+С добавлением CLSAG пользователи получат повышение скорости проверки
+подписей на 20% и общее ускорение проверки всех новых транзакций как минимум
+на 10%. Например, с добавлением CLSAG стандартная транзакция Monero (2 входа
+и 2 выхода), которая составляет 2.5 КБ, теперь потребует всего 1.9 КБ в
+блокчейне, что на 25% меньше, чем при текущей реализации.
 
 ---
 
-##### Other Resources
+##### Другие источники
 
-<sub>1. [Announcement of CLSAG audit's result and overview of the technology]({{ site.baseurl }}/2020/07/31/clsag-audit.html)</sub><br>
+<sub>1. [Результаты аудита и обзор применяемых технологий в CLSAG]({{ site.baseurl }}/2020/07/31/clsag-audit.html)</sub><br>
 
-<sub>1. [CLSAG preprint](https://eprint.iacr.org/2019/654)</sub>
+<sub>1. [Препринт CLSAG](https://eprint.iacr.org/2019/654)</sub>
