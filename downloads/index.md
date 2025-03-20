@@ -122,7 +122,7 @@ meta_descr: downloads.intro
                   </details>
                   <h3>{% t downloads.helpsupport %}</h3>
                   <p>{% t downloads.helpsupport1 %} <a href="https://github.com/monero-ecosystem/monero-GUI-guide/releases" target="_blank">{% t downloads.helpsupport2 %}</a>.</p>
-                  <p>{% t downloads.gui_helpsupport %}.</p>
+                  <p>{% t downloads.helpsupport3 %}.</p>
                   </div>
                 </div>    
             </div>
@@ -214,7 +214,7 @@ meta_descr: downloads.intro
                       </dl>
                   </details>
                 <h3>{% t downloads.helpsupport %}</h3>
-                  <p>{% t downloads.cli_helpsupport %}.</p>
+                  <p>{% t downloads.helpsupport3 %}.</p>
                 </div>
                 </div>
             </div>
