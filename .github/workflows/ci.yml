@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: [ '2.7', '3.0.1' ]
+        ruby: [ '3.0.1' ]
     name: Ruby ${{ matrix.ruby }}
     steps:
       - uses: actions/checkout@v3
@@ -21,3 +21,51 @@ jobs:
         run: bundle install --jobs 4 --retry 3
       - name: build site
         run: bundle exec jekyll build --limit-posts 10
+  docker-build:
+    runs-on: ubuntu-22.04
+    name: Dockerised Jekyll Build
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get changed files
+        id: changes
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            rebuild:
+              - 'Dockerfile'
+              - 'Gemfile'
+              - 'Gemfile.lock'
+              - '.github/workflows/ci.yml'
+            diff_gemfile:
+              - 'Gemfile.lock'
+      - name: ghcr login
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: monero-site ruby build env (pull or build)
+        run: |
+          tag_name="ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby:latest"
+          case "${{ steps.changes.outputs.rebuild }}" in
+            true)
+              docker build -t "$tag_name" .
+              ;;
+            *)
+              docker pull "$tag_name" || docker build -t "$tag_name" .
+              ;;
+          esac
+      - name: Build Jekyll site with Docker
+        run: docker run -v $(pwd):/srv/jekyll ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby bundle exec jekyll build --limit-posts 10
+      - name: Push new image to ghcr
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: docker push -a ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby
+      - name: Confirm Gemfile update
+        if: steps.changes.outputs.diff_gemfile
+        run: |
+          cp Gemfile.lock Gemfile.lock.update
+          docker run -v $(pwd):/srv/jekyll ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby bundle update
+          if ! diff Gemfile.lock Gemfile.lock.update; then
+            echo "Gemfile.lock updates do not match"
+            exit 1
+          fi
