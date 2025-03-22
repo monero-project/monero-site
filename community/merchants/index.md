@@ -110,6 +110,7 @@ meta_descr: merchants.descr
             <li><a href="https://majesticbank.sc/">MajesticBank</a></li>
             <li><a href="https://godex.io/">Godex</a></li>
             <li><a href="https://stealthex.io/">StealthEX</a></li>
+          <li><a href="https://chainswap.io/">ChainSwap</a></li>
           </ul>
       </div>
     </div>
