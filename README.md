@@ -12,21 +12,21 @@ To maintain our own sanity we are moving to local deployments requiring Docker.
 
 1. Navigate to your local `monero-site` repository.
 2. build the Docker container with `docker build --no-cache -t getmonero-container .`
-3. Serve the website: `docker run --rm -p 4000:4000 -v $(pwd):/srv/jekyll getmonero-container`. If you want, you can speedup this process by loading only the last blog post instead of all of them. Add `bundle exec jekyll serve --limit_posts 1` to the command above.
+3. Serve the website: `docker run --rm -p 4000:4000 -v $(pwd):/srv/jekyll getmonero-container`. If you want, you can speedup this process by loading only the last blog post instead of all of them. Add `bundle exec jekyll serve --limit_posts 1 --host 0.0.0.0` to the command above.
 4. Open a browser and go to [http://127.0.0.1:4000](http://127.0.0.1:4000).
 5. If all went well, you should see the Monero website and you're ready to make changes.
 
-To deploy site in production, the host machine is only used to generate the raw HTML files in `_site`. These are then moved to the production server. Begin with fetching and pulling current master branch, then:
+To deploy site in production, the container is used to generate the static site files in `_site`. The host OS does not require Ruby or any Gems to be installed. Begin with fetching and pulling current master branch and then:
 
 1. Rebuild the Docker container with `docker build --no-cache -t getmonero-container .` (only required if Gemfile* has been modified)
 2. `docker run --rm -v $(pwd):/srv/jekyll -v $(pwd)/_site:/srv/jekyll/_site getmonero-container bundle exec jekyll build`
-3. If successful, `_site` will contain the generated HTML files. You may need to give your user permission to access this folder with `sudo chown $(USER):$(USER) _site`.
+3. If successful, `_site` will contain the generated HTML files. To access this folder, you may need to set folder permissions with `sudo chown -R $(USER):$(USER) _site`.
 
 To update the gems:
 
 1. `docker run --rm -v $(pwd):/srv/jekyll getmonero-container bundle update`
 2. Confirm compatibility by rebuilding the container with the new gems using `docker build --no-cache -t getmonero-container .`
-3. If successful, the new `Gemfile.lock` can be pushed to this repo. 
+3. If updates are found, the resulting `Gemfile.lock` can be pushed to this repo. 
 
 ## General change recommendations
 
