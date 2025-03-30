@@ -7,28 +7,24 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-25 15:40+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: 2022-02-25 14:34+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
-"Language-Team: Russian <https://translate.getmonero.org/projects/"
-"getmonero-moneropedia/mnemonicseed/ru/>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-moneropedia/mnemonicseed/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/mnemonicseed.md:1
 #, no-wrap
 msgid "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
-msgstr ""
-"фраза, состоящая из 13 или 25 слов и используемая для создания резервной "
-"копии счёта Monero"
+msgstr "фраза, состоящая из 13 или 25 слов и используемая для создания резервной копии счёта Monero"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/mnemonicseed.md:1
 #, no-wrap
 msgid "[\"mnemonic-seed\", \"mnemonic\"]"

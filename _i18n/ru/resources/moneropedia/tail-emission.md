@@ -1,6 +1,6 @@
 ---
 summary: 'Вознаграждение за блок в конце кривой эмиссии'
-terms: ["Tail-Emission"]
+terms: ["Tail-Emission", "Хвостовая-эмиссия"]
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}

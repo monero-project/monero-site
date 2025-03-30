@@ -7,10 +7,10 @@ terms: ["address", "addresses", "адресата", "адрес", "адреса"
 
 ### Основная информация
 
-Если вы хотите отправить кому-нибудь Monero, то вам для этого понадобится
-знать только адрес Monero этого человека. *Необработанный* адрес Monero
-представляет собой ряд из 95 символов, начинающийся с 4. Адрес для сбора
-пожертвований Monero, например, выглядит так:
+When you send Monero to someone you only need one piece of information, and
+that is their Monero address. A *raw* Monero address is a set of 95
+characters starting with a '4' or an '8'. The Monero donation address, for
+instance, is
 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
 Поскольку такие адреса являются длинными и сложными, вы часто будете

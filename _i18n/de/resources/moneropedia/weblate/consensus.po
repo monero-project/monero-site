@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-16 09:55+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/consensus.md:1
 #, no-wrap
 msgid "consensus describes a property of distributed networks like Monero where most of the participants follow the rules, and thus reject bad participants"
 msgstr "Konsens beschreibt eine Eigenschaft dezentraler Netzwerke wie Monero, in denen der Großteil der Mitwirkenden die Regeln befolgt und dementsprechend schädliche Beteiligte abgewiesen werden"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/consensus.md:1
 #, no-wrap
 msgid "[\"consensus\", \"consensus-network\"]"
 msgstr "[\"consensus\", \"consensus-network\", \"Konsens\", \"Konsens-Netzwerk\"]"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/consensus.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,8 +40,8 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "Grundlagen"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/consensus.md:10
-#
 msgid "Consensus describes a property of distributed networks like Monero where most of the participants follow the rules, and thus reject bad participants."
 msgstr "Konsens beschreibt eine Eigenschaft dezentraler Netzwerke wie Monero, in denen der Großteil der Mitwirkenden die Regeln befolgt und dementsprechend schädliche Beteiligte abgewiesen werden."
