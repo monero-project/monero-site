@@ -1,4 +1,4 @@
-![gh-actions/site](https://github.com/monero-project/monero-site/workflows/gh-actions/site/badge.svg?branch=master)
+[![gh-actions/site](https://github.com/monero-project/monero-site/actions/workflows/ci.yml/badge.svg)](https://github.com/monero-project/monero-site/actions/workflows/ci.yml)
 
 ## Introduction
 
