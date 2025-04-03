@@ -30,7 +30,6 @@ meta_descr: downloads.intro
               <li><a href="#gui">{% t downloads.gui %}</a></li>
               <li><a href="#cli">{% t downloads.cli %}</a></li>
               <li><a href="#mobilelight">{% t downloads.mobilelight %}</a></li>
-              <li><a href="#blockchain">{% t downloads.blockchain %}</a></li>
               <li><a href="#hardware">{% t downloads.hardware %}</a></li>
             </ul>
           </div>
