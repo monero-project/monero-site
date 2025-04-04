@@ -336,6 +336,7 @@ meta_descr: downloads.intro
                                             <li>Monero CLI</li>
                                             <li>Feather</li>
                                             <li>Monerujo</li>
+                                            <li>Monero.com</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -382,6 +383,7 @@ meta_descr: downloads.intro
                                             <li>Monero CLI</li>
                                             <li>Feather</li>
                                             <li>Monerujo</li>
+                                            <li>Monero.com</li>
                                         <b>{% t downloads.hwthfirm %}:</b> 
                                             <li>{% t downloads.hwnanos %}</li>
                                             <li>{% t downloads.hwnanosplus %}</li>
