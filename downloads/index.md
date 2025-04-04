@@ -352,6 +352,7 @@ meta_descr: downloads.intro
                                         <ul>
                                             <li>Model T</li>
                                             <li>Safe 3</li>
+                                            <li>Safe 5</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -390,6 +391,8 @@ meta_descr: downloads.intro
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Model T</li>
+                                            <li>Safe 3</li>
+                                            <li>Safe 5</li>
                                         <b>{% t downloads.hwthsupported %}:</b>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
