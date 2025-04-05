@@ -934,6 +934,15 @@ library:
     <li>Details of the Monero decentralized network, peer-to-peer architecture, transaction lifecycle, and security principles.</li>
     <li>Introductions to technical foundations of Monero, intended for developers, engineers, software architects, and curious users.</li>
     <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc.</li></ul>
+  masteringmonerop1: "A guide through the seemingly complex world of Monero."
+  masteringmonerop2: "It includes:"
+  masteringmoneroul1: "A broad introduction to blockchains and the importance of privacy - ideal for non-technical users."
+  masteringmoneroul2: "Discussion of Bitcoin’s shortcomings and specific solutions provided by Monero."
+  masteringmoneroul3: "User stories (illustrating how Monero protects your privacy), analogies, examples, legal/ethical discussions, and code snippets illustrating key technical concepts."
+  masteringmoneroul4: "Details of the Monero decentralized network, peer-to-peer architecture, transaction lifecycle, and security principles."
+  masteringmoneroul5: "Introductions to technical foundations of Monero, intended for developers, engineers, software architects, and curious users."
+  masteringmoneroul6: "New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc."
+  masteringmoneroinfo: "See <a href=\"https://masteringmonero.com/\">Mastering Monero</a> website for information."
   cheatsheets: Cheatsheets
   thesalmonseries: "The Salmon Series"
   thesalmonseriesp: >

@@ -769,6 +769,15 @@ library:
     wallets etc.</li></ul>
     Zie de website <a href="https://masteringmonero.com/">Mastering Monero</a> voor
     informatie over de volledige versie.
+  masteringmonerop1: "Een handleiding tot de schijnbaar ingewikkelde wereld van Monero."
+  masteringmonerop2: "Met onder meer:"
+  masteringmoneroul1: "Een algemene inleiding tot blockchains en het belang van privacy, geschikt voor niet-technische lezers."
+  masteringmoneroul2: "Bespreking van de tekortkomingen van Bitcoin en specifieke oplossingen die worden geboden door Monero."
+  masteringmoneroul3: "User stories (scenario's waarin wordt geïllustreerd hoe Monero je privacy beschermt), vergelijkingen, voorbeelden, juridische en ethische discussies, en codefragmenten om technische kernbegrippen te demonstreren."
+  masteringmoneroul4: "Details over het gedecentraliseerde netwerk van Monero, de architectuur van het peer-to-peernetwerk, de levenscyclus van een transactie en beveilingsprincipes."
+  masteringmoneroul5: "Inleiding tot de technische grondslagen van Monero, bedoeld voor ontwikkelaars, programmeurs, software-architecten en nieuwsgierige gebruikers."
+  masteringmoneroul6: "Nieuwe ontwikkelingen zoals Kovri, Bulletproofs, multisignature, hardware wallets etc."
+  masteringmoneroinfo: "Zie de website <a href=\"https://masteringmonero.com/\">Mastering Monero</a> voor informatie over de volledige versie."
 moneropedia:
   add_new_text1: Wil je een trefwoord bewerken of een nieuw trefwoord toevoegen?
   add_new_link: Open dan een issue op de GitLab-repository van deze website

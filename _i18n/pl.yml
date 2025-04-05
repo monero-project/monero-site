@@ -1570,6 +1570,15 @@ library:
     przeznaczone dla programistów, inżynierów, architektów oprogramowania i zainteresowanych
     użytkowników.</li> <li>Nowe osiągnięcia, takie jak Kovri, Bulletproofy, Wielopodpisowość,
     Portfele sprzętowe, itp.</li></ul>.
+  masteringmonerop1: "Przewodnik po pozornie skomplikowanym świecie Monero."
+  masteringmonerop2: "Zawiera:"
+  masteringmoneroul1: "Szerokie wprowadzenie do blockchainów i znaczenia prywatności - idealne dla użytkowników nietechnicznych."
+  masteringmoneroul2: "Dyskusję na temat wad Bitcoina i konkretnych rozwiązań dostarczanych przez Monero."
+  masteringmoneroul3: "Powieści użytkowników (ilustrujące, w jaki sposób Monero chroni Twoją prywatność), analogie, przykłady, dyskusje prawne/etyczne oraz wycinki kodu ilustrujące kluczowe koncepcje techniczne."
+  masteringmoneroul4: "Szczegóły zdecentralizowanej sieci Monero, architektury peer-to-peer, cyklu życia transakcji i zasad bezpieczeństwa."
+  masteringmoneroul5: "Wprowadzenie do technicznych podstaw Monero, przeznaczone dla programistów, inżynierów, architektów oprogramowania i zainteresowanych użytkowników."
+  masteringmoneroul6: "Nowe osiągnięcia, takie jak Kovri, Bulletproofy, Wielopodpisowość, Portfele sprzętowe, itp."
+  masteringmoneroinfo:
   rctcheatsheet20210604p: "Przepis na wyśmienitą transakcję RingCT typu 5: jeden CLSAG\
     \ na jedenaście UTXO, ilość Moneroj według gustu; zagęścić wszystko Pedersen Commitments,\
     \ których ogólna równowaga będzie widoczna również dla kelnerów, a ostatnie zabezpieczyć\
