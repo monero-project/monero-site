@@ -1,6 +1,12 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
+# This GPG-signed message exists to confirm the SHA256 sums of Monero binaries.
+#
+# Please verify the signature against the key for binaryFate in the
+# source code repository (/utils/gpg_keys).
+#
+#
 ## CLI
 70ded1197db3fffa150e9f5c4eee0129026be8ea24190bad43a42f4748b5e5bd  monero-android-armv7-v0.18.4.0.tar.bz2
 0b976b241c45a75a9c428a531e8259e0e67c237f980ac46e19a3180b5c1dbf91  monero-android-armv8-v0.18.4.0.tar.bz2
@@ -28,17 +34,17 @@ ae5cf12ba8c608e32ea8d59181f032666840e034031a95406b6771d7709984b8  monero-gui-mac
 # ~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmfxfHEACgkQ8K9NRioL
-35IqgQ/+P5cA7KRAQvd3Amozn9W3EqfRlUh2aXLGuOycKeFVecyN9Qj3h/0pS8Br
-v/khIVjnOlWJxtCAa4yFIlApGe+IPEyztHqJB9QNlOVVfBsSe+Tu3UCp00BYHhSA
-v40VOSL68LmHD/h05O8Tmtjxsm+h+Mm0ZXIQ3xWUG0KYEcBdac2xiF337OZfuUao
-/IbSVpIV3YfXl47grag0rQ62LZodRrHaNTXzlrMyX0feZ4haVruGfEAH/iUnxN1C
-ONlPi1Z4I4VYaifr9OtV3jqVyTwP75+cPnfwBPlHR0Yh+7u9HQFyKdcE21oy4PaT
-RThQkCOYtyXnqqgM6bpGM2SzFDl+pwFsluPElqWRlPcss2d/Zp0bxzBJ/v81DIbK
-W5qmKhHMSZQsYtv+bujv0iF4u5K6dBSosuZ/4srNsikppD2s7KK1Z+IKABBnHpSq
-U7rm8yu8UVHuIltzyp7YoFXuL0ZPJaTHvSwCnJUCuDj9KH9v3g/4HFt7yfbsKdBB
-ZAybttCRfXhONBWxhM97hlU5MCC0Ds5pELqQGVA4ifEWZ+ixkmNLx+SbgPDiDF88
-VnpHuMhyzsnQZpmXRZaQHTYTVgpwUIwo9tRY7bcnys80Kj2mn5Lmxuoa3rTbLa2n
-dXwkPR1CJMO85dosJblBAg1ottFW55IqvzFtdrb64BbFvP9C+OY=
-=iidv
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmfxhEsACgkQ8K9NRioL
+35Knug/+LXI4CwWsZOm64wvWI1qTO12SA0+Cv8PuhPiwnzmiuOVARiGS2jlYJlwq
+tnx1zQ6X7oH205fO7Vbe25mwRgJ2c8gg6qfE2TOlP5pQaNKLtMG/YWPneGE+VjDB
+Sr37bIxX2qwG9o9rdaXuiPHs8GGAX0rJw7W29B3kWiu/n+ck++jJ/BLRo7MI1mAA
+fseWZ/VxD49Ly1RCKTNBoqxroeJOB/d4ZG1rWmteup9DdTl0VDzS94VCLmcP2/Ed
+BO1bkyoxRjpAH3A+qXREKnmzq2ZXS4x1l6ELjFIrQb5JvRFtnkbG7+lvpar8v7cY
+BFFpEJRC+mGvY5wIS4X9AtrChNVYXo9WjJnXiArNNGc356YNNXBGM9O1otz6nyue
+gFpdgs64AAFVBdJqbGklsFn3sLyQ9qK2p2EwSwSyOvX/Uvrf0MfGgMSq4kymwdbF
+5254isLv3gDe4EJ/S/bL5Isq0NXr47UEYGQ4qikt/Hcbfj/Jn+guuem9SSRh/HaV
+w0xcTzFNBK+1VadMuz1g1EeyR8j4a8cY0+fqeD9l8DLuV4knqTMFRXgj7RfF2OS2
+8XS6UQpSTOEge8nmXZVQK4w1VO1iFbftaO14/GQw9bBadcbQWW8QpaATDJRLkeZL
+suE+hl9ClB84wisMQWxvGKFNR5VJZR3SOzrkkgo+Mys3139PcDo=
+=s814
 -----END PGP SIGNATURE-----
