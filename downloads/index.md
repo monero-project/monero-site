@@ -275,12 +275,6 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
-                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
-                            <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://github.com/mymonero" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
-                        </tr>
-                        <tr>
                             <td><img class="small" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
