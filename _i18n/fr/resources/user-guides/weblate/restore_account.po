@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-30 22:17+0000\n"
+"POT-Creation-Date: 2022-11-30 22:17+0001\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,10 +36,8 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:8
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "[What is needed to restore a wallet from mnemonic seed?](#what-is-needed-to-restore-a-wallet-from-mnemonic-seed)"
-msgstr "Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:"
+msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:10
@@ -49,18 +47,14 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:12
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "[How to restore a wallet from mnemonic seed on Monero GUI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-gui)"
-msgstr "Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:"
+msgstr ""
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:14
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "[How to restore a wallet from mnemonic seed on Monero CLI](#how-to-restore-a-wallet-from-mnemonic-seed-on-monero-cli)"
-msgstr "Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:"
+msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:16
@@ -91,10 +85,9 @@ msgstr ""
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:27
-#, fuzzy, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+#, no-wrap
 msgid "What is needed to restore a wallet from mnemonic seed?"
-msgstr "Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:"
+msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:30
@@ -151,34 +144,27 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:50
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-height](/img/resources/user-guides/en/restore_account/restore-height.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
 
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:51
-#, fuzzy, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+#, no-wrap
 msgid "How to restore a wallet from mnemonic seed on Monero GUI"
-msgstr "Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:"
+msgstr ""
 
 #
 #. type: Bullet: '1) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:54
-#, fuzzy
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
 msgid "On the main menu, click on `Restore wallet from keys or mnemonic seed`."
-msgstr "Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:"
+msgstr ""
 
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:56
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![main-menu-restore-wallet](/img/resources/user-guides/en/restore_account/main-menu-restore-wallet.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
 
 #. type: Bullet: '2) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:58
@@ -188,10 +174,8 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:60
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-from-seed](/img/resources/user-guides/en/restore_account/restore-from-seed.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
 
 #. type: Bullet: '3) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:62
@@ -226,10 +210,8 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:74
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-height-field](/img/resources/user-guides/en/restore_account/restore-height-field.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:76
@@ -239,10 +221,8 @@ msgstr ""
 #
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:78
-#, fuzzy
-#| msgid "![restore wallet](/img/resources/user-guides/en/restore_account/restore-wallet.png)"
 msgid "![restore-height-field-date](/img/resources/user-guides/en/restore_account/restore-height-field-date.png)"
-msgstr "![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)"
+msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/restore_account.md:80
@@ -252,10 +232,8 @@ msgstr ""
 #
 #. type: Bullet: '9) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:82
-#, fuzzy
-#| msgid "On the next page, give your wallet a strong password and confirm it before clicking the `Right` arrow:"
 msgid "On the next page, give your wallet a strong password and confirm it. Since your wallet will hold your private keys and seed, it is really important to enter a strong password."
-msgstr "Sur la page suivante, donnez un mot de passe fort à votre portefeuille avant de cliquer sur la flèche `Droite` :"
+msgstr ""
 
 #
 #. type: Plain text
@@ -288,10 +266,9 @@ msgstr "![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up
 #
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/restore_account.md:93
-#, fuzzy, no-wrap
-#| msgid "Click on `Restore wallet from keys or mnemonic seed`:"
+#, no-wrap
 msgid "How to restore a wallet from mnemonic seed on Monero CLI"
-msgstr "Cliquez sur `Restaurer un portefeuille à partir des clés ou de la phrase mnémonique`:"
+msgstr ""
 
 #. type: Bullet: '1) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:96
@@ -301,18 +278,14 @@ msgstr ""
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:98
-#, fuzzy
-#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
 msgid "Linux: `./monero-wallet-cli --restore-deterministic-wallet`"
-msgstr "- Dans l'invite de commande, tapez : `monero-wallet-cli --restore-deterministic-wallet` ;"
+msgstr ""
 
 #
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/restore_account.md:100
-#, fuzzy
-#| msgid "- At the command prompt type: `monero-wallet-cli --restore-deterministic-wallet`"
 msgid "Windows: `monero-wallet-cli --restore-deterministic-wallet`"
-msgstr "- Dans l'invite de commande, tapez : `monero-wallet-cli --restore-deterministic-wallet` ;"
+msgstr ""
 
 #. type: Bullet: '2) '
 #: ../_i18n/en/resources/user-guides/restore_account.md:102

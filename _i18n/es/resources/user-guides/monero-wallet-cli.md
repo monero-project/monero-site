@@ -38,7 +38,7 @@ Important commands:
 "donate <amount>" - Donate XMR to the development team.
 ```
 
-## Checking your balance
+## Revisando tu balance
 
 Ya que el manejo de la blockchain y del monedero son programas separados,
 varios usos de `monero-wallet-cli` necesitan trabajar con el daemon. Esto
@@ -58,7 +58,7 @@ index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
 amount currently available to spend. Newly received transactions require 10
 confirmations on the blockchain before being unlocked.
 
-## Sending monero
+## Enviando Monero
 
 You will need the standard address you want to send to (a long string
 starting with '4' or a '8'). The command structure is:
@@ -70,7 +70,7 @@ transfer ADDRESS AMOUNT
 Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
 many monero you want to send.
 
-## Receiving monero
+## Recibiendo Monero
 
 If you have your own Monero address, you just need to give your address to
 someone.
@@ -99,7 +99,7 @@ includes your own account and that payment ID. If you want to select a
 particular payment ID, you can do that too. Use:
 
 ```
-integrated_address 82d79055f3b27f56
+integrated_address 12346780abcdef00
 ```
 
 Payments made to an integrated address generated from your account will go
@@ -130,7 +130,7 @@ To view all generated addresses, run:
 address all
 ```
 
-## Proving to a third party you paid someone
+## Probando a un tercero que pagaste a alguien
 
 Si pagas a un comerciante, y el comerciante reclama que no ha recibido el
 pago, puedes necesitar probar a un tercero que sí enviaste los fondos, o
@@ -172,7 +172,7 @@ per-transaction key, and destination address which were supplied to you,
 respectively. `monero-wallet-cli` will check that transaction and let you
 know how much monero this transaction paid to the given address.
 
-## How to find a payment to you
+## Cómo encontrar un pago
 
 Si recibiste un pago utilizando un ID de pago en particular, puedes verlo
 con:

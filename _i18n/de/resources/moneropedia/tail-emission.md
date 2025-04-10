@@ -7,10 +7,11 @@ terms: ["Tail-Emission", "Anschlussverteilung"]
 
 ### Grundlagen
 
-Monero-Blockbelohnungen werden niemals bis auf Null fallen. Sie werden
-schrittweise sinken, bis Ende Mai 2022 die Anschlussverteilung startet. Zu
-diesem Zeitpunkt werden die Belohnungen auf 0,6 XMR pro Block festgesetzt
-sein.
+Monero block rewards will never drop to zero. Block rewards gradually
+dropped until tail emission commenced at the end of May 2022. At this point,
+rewards will stay fixed at 0.6 XMR or less* per block.
+
+* Due to block size penalties.
 
 ### Warum
 

@@ -1,19 +1,39 @@
 {% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
-Met [Qubes](https://qubes-os.org) en [Whonix](https://whonix.org) kun je een Monero-portemonnee zonder netwerkverbinding uitvoeren op een virtueel systeem, geïsoleerd van de Monero-node, waarvan al het verkeer verplicht via [Tor](https://torproject.org) loopt.
+Met [Qubes](https://qubes-os.org) en [Whonix](https://whonix.org) kun je een
+Monero-portemonnee zonder netwerkverbinding uitvoeren op een virtueel
+systeem, geïsoleerd van de Monero-node, waarvan al het verkeer verplicht via
+[Tor](https://torproject.org) loopt.
 
-Qubes biedt de flexibiliteit om eenvoudig afzonderlijke virtual machines voor verschillende doeleinden te maken. Eerst maak je een Whonix-werkstation voor de portemonnee, zonder netwerkverbinding. Vervolgens maak je een ander Whonix-werkstation dat je Whonix-gateway gebruikt als NetVM. Voor communicatie tussen de portemonnee en de node kun je gebruik maken van Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
+Qubes biedt de flexibiliteit om eenvoudig afzonderlijke virtual machines
+voor verschillende doeleinden te maken. Eerst maak je een Whonix-werkstation
+voor de portemonnee, zonder netwerkverbinding. Vervolgens maak je een ander
+Whonix-werkstation dat je Whonix-gateway gebruikt als NetVM. Voor
+communicatie tussen de portemonnee en de node kun je gebruik maken van Qubes
+[qrexec](https://www.qubes-os.org/doc/qrexec3/).
 
-Dit is veiliger dan andere benaderingen, waarbij de RPC van de portemonnee via een verborgen Tor-service wordt geleid, of fysieke isolatie wordt gebruikt, maar er nog steeds een netwerkverbinding nodig is voor communicatie met de node. Met deze methode is er helemaal geen netwerkverbinding nodig voor de portemonnee, ga je zuiniger om met het Tor-netwerk en is er minder vertraging.
-
+Dit is veiliger dan andere benaderingen, waarbij de RPC van de portemonnee
+via een verborgen Tor-service wordt geleid, of fysieke isolatie wordt
+gebruikt, maar er nog steeds een netwerkverbinding nodig is voor
+communicatie met de node. Met deze methode is er helemaal geen
+netwerkverbinding nodig voor de portemonnee, ga je zuiniger om met het
+Tor-netwerk en is er minder vertraging.
 
 ## 1. [Maak Whonix AppVM's](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Met een sjabloon voor Whonix-werkstations maak je op de volgende manier twee werkstations:
++ Met een sjabloon voor Whonix-werkstations maak je op de volgende manier
+  twee werkstations:
 
-  - Het eerste werkstation wordt gebruikt voor je portemonnee. We noemen het `monero-wallet-ws`. Hier stel je `NetVM` in op `none`.
+  - Het eerste werkstation wordt gebruikt voor je portemonnee. We noemen het
+    `monero-wallet-ws`. Hier stel je `NetVM` in op `none`.
 
-  - Het tweede werkstation wordt gebruikt voor `monerod`, de daemon voor de node. We noemen het `monerod-ws`. Hier stel je `NetVM` in op de Whonix-gateway `sys-whonix`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain]({{ site.baseurl }}/downloads/#blockchain). Keep in mind that the blockchain will take up more space with time.
+  - Het tweede werkstation wordt gebruikt voor `monerod`, de daemon voor de
+    node. We noemen het `monerod-ws`. Hier stel je `NetVM` in op de
+    Whonix-gateway `sys-whonix`. Before moving on, make sure this
+    workstation has enough private storage. You can estimate how much space
+    you need by checking the size of the [raw blockchain]({{ site.baseurl
+    }}/downloads/#blockchain). Keep in mind that the blockchain will take up
+    more space with time.
 
 ## 2. In de AppVM `monerod-ws`:
 
@@ -37,7 +57,7 @@ Group=user
 Type=forking
 PIDFile=/home/user/.bitmonero/monerod.pid
 
-ExecStart=/usr/local/bin/monerod --detach --data-dir=/home/user/.bitmonero \
+ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \
     --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \
     --log-file=/home/user/.bitmonero/bitmonero.log --p2p-bind-ip=127.0.0.1
 
@@ -48,7 +68,8 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Zorg dat de daemon `monerod` wordt uitgevoerd bij het opstarten door het bestand `/rw/config/rc.local` te bewerken.
++ Zorg dat de daemon `monerod` wordt uitgevoerd bij het opstarten door het
+  bestand `/rw/config/rc.local` te bewerken.
 
 ```
 user@host:~$ sudo gedit /rw/config/rc.local
@@ -71,7 +92,7 @@ user@host:~$ sudo chmod +x /rw/config/rc.local
 
 ```
 user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
-user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod
+ user@host:~$ sudo gedit /rw/usrlocal/etc/qubes-rpc/user.monerod
 ```
 
 Voeg deze regel toe:

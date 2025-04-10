@@ -13,12 +13,12 @@ Clearnet-Verbindung. Dies bedeutet, dass deine *gesamten* Verbindungen
 aufgespürt, verfolgt und überwacht werden können, und das von:
 
 - deinem
-[Internetprovider](https://de.wikipedia.org/wiki/Internetdienstanbieter)
+  [Internetprovider](https://de.wikipedia.org/wiki/Internetdienstanbieter)
 
 - der Webseite/der Person/dem Service, mit der/dem du in Verbindung stehst
 
 - eventuell einer mit den Möglichkeiten der [Five
-Eyes](https://en.wikipedia.org/wiki/5_Eyes) befähigten Instanz
+  Eyes](https://en.wikipedia.org/wiki/5_Eyes) befähigten Instanz
 
 Selbst wenn du
 [HTTPS](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure)
