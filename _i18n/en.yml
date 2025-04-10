@@ -253,8 +253,7 @@ downloads:
   helpsupport: Help and Support
   helpsupport1: "A guide with an explanation of every section of the wallet is available:"
   helpsupport2: "See latest release"
-  gui_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the GUI team at #monero-gui, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
-  cli_helpsupport: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can find the CLI team at #monero or #monero-dev, or else check out the Hangouts page for a more complete list of contacts and chatrooms"
+  helpsupport3: "If you are experiencing issues or you need more info, feel free to reach out to the community. You can join to <code>#monero-support</code> or check out the <a href=\"/community/hangouts/\">Hangouts</a> page for a more complete and detailed list of contacts and chatrooms"
   localremote: Local or remote node
   localremote1: Use your own copy of the blockchain or a publicly available one
   transacttor: Transactions over Tor/I2P
