@@ -12,11 +12,13 @@ meta_descr: meta_descr.contributing
     <section class="container">
         <div class="row">         
             <!-- full block-->
-            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="support-the-network" class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>{% t contributing.network %}</h2>
+                            <a href="#support-the-network">
+                                <h2>{% t contributing.network %}</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="row start-xs">
@@ -39,11 +41,13 @@ meta_descr: meta_descr.contributing
             </div>
             <!-- end full block-->
             <!-- full block-->
-            <div class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="community-crowdfunding-system" class="full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>{% t contributing.ffs %}</h2>
+                            <a href="#community-crowdfunding-system">
+                                <h2>{% t contributing.ffs %}</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="row start-xs">
@@ -60,7 +64,9 @@ meta_descr: meta_descr.contributing
                 <div class="info-block text-adapt">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>{% t contributing.donate %}</h2>
+                            <a href="#donate">
+                                <h2>{% t contributing.donate %}</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="row start-xs">
