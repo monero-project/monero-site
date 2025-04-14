@@ -160,9 +160,9 @@ days to weeks.
 
 An active Monero mining community on Reddit is
 [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also
-join [#monero-pools on
-Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix
-(#monero-pools:monero.social).
+join [#monero-mining on
+Libera](https://web.libera.chat/?channel=#monero-mining) or Matrix
+(#monero-mining:monero.social).
 
 ## Going Futher
 
