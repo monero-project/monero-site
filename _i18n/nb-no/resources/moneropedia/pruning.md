@@ -17,16 +17,16 @@ node.
 Det er tre måter å utrenske på:
 
 - *Synkronisere en utrensket node fra bunn:* Da laster du ned og
-synkroniserer kun 1/3 av hele blokkjeden.
+  synkroniserer kun 1/3 av hele blokkjeden.
 
 - *Utrenske en eksisterende node:* Blokkjeden som allerede eksisterer vil
-utrenskes, men dette vil ikke resultere i en mindre blokkjede. Den vil
-istedenfor markere deler av filen som ledig, slik at fremtidig data benytter
-den ledige lagringsplassen, noe som medfører at filen ikke vokser før den
-ledige lagringsplassen blir knapp.
+  utrenskes, men dette vil ikke resultere i en mindre blokkjede. Den vil
+  istedenfor markere deler av filen som ledig, slik at fremtidig data
+  benytter den ledige lagringsplassen, noe som medfører at filen ikke vokser
+  før den ledige lagringsplassen blir knapp.
 
 - *Opprette en ny, utrensket blokkjede fra en full en:* En full blokkjede
-som du allerede har vil brukes for å opprette en ny, utrensket blokkjede.
+  som du allerede har vil brukes for å opprette en ny, utrensket blokkjede.
 
 Utrenskede noder er svært nyttige, og foretrekkes fremfor @eksterne noder,
 men brukere bør, hvis mulig, kjøre en fullstendig node og kun velge å

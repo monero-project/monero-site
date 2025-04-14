@@ -38,7 +38,7 @@ Important commands:
 "donate <amount>" - Donate XMR to the development team.
 ```
 
-## Checking your balance
+## Sprawdzanie salda
 
 Ponieważ zarządzanie łańcuchem bloków i portfelem odbywa się za pomocą
 różnych programów, wielokrotnie użycie `monero-wallet-cli` wymaga współpracy
@@ -59,7 +59,7 @@ index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
 amount currently available to spend. Newly received transactions require 10
 confirmations on the blockchain before being unlocked.
 
-## Sending monero
+## Wysyłanie monero
 
 You will need the standard address you want to send to (a long string
 starting with '4' or a '8'). The command structure is:
@@ -71,7 +71,7 @@ transfer ADDRESS AMOUNT
 Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
 many monero you want to send.
 
-## Receiving monero
+## Otrzymywanie Monero:
 
 If you have your own Monero address, you just need to give your address to
 someone.
@@ -100,7 +100,7 @@ includes your own account and that payment ID. If you want to select a
 particular payment ID, you can do that too. Use:
 
 ```
-integrated_address 82d79055f3b27f56
+integrated_address 12346780abcdef00
 ```
 
 Payments made to an integrated address generated from your account will go
@@ -131,7 +131,7 @@ To view all generated addresses, run:
 address all
 ```
 
-## Proving to a third party you paid someone
+## Udowadnianie płatności osobom trzecim:
 
 Gdy dokonasz zapłaty, a odbiorca stwierdzi, że jej nie otrzymał, możesz
 udowodnić swoją płatność osobom trzecim lub samemu odbiorcy, jeśli po prostu
@@ -168,12 +168,12 @@ przelał Monero na dany adres), sprawdź w ten sposób:
 check_tx_key TXID TXKEY ADDRESS
 ```
 
-Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID,
-per-transaction key, and destination address which were supplied to you,
-respectively. `monero-wallet-cli` will check that transaction and let you
-know how much monero this transaction paid to the given address.
+Zamień `TXID`, `TXKEY` i `ADDRESS` na, odpowiednio, numer identyfikacyjny
+transakcji, klucz transakcji oraz przekazany ci adres
+odbiorcy. `monero-wallet-cli` sprawdzi tę transakcję i poinformuje cię, ile
+Monero zostało przesłane na dany adres.
 
-## How to find a payment to you
+## Jak odnaleźć płatność przychodzącą:
 
 Jeśli otrzymałeś płatność z użyciem określonego numeru identyfikacyjnego,
 wyszukaj go, wpisując:
