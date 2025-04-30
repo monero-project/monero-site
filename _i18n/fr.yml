@@ -1712,6 +1712,15 @@ library:
     de Monero, à destination des développeurs, ingénieurs, architectes logiciel et
     utilisateurs curieux.</li> <li>Les nouveaux développements, tel que Kovri, les
     Bulletproofs, les Multisignature, les Portefeuilles Materiel, etc.</li></ul>
+  masteringmonerop1: "Un guide à travers le monde apparemment complexe de Monero."
+  masteringmonerop2: "Il contient :"
+  masteringmoneroul1: "Une vaste introduction aux chaînes de blocs et à l'importance de la confidentialité, idéale pour les utilisateurs non-techniques."
+  masteringmoneroul2: "La discussion des lacunes de Bitcoin et les solutions spécifiques apportées par Monero."
+  masteringmoneroul3: "Des scénarios utilisateurs (illustrant de quelle manière Monero protège votre confidentialité), des analogies, des exemples, des discussions juridiques/éthiques et des bribes de code illustrant les concepts techniques clef."
+  masteringmoneroul4: "Des détails sur le réseau décentralisé de Monero, l'architecture pair à pair, le cycle de vie des transactions et les principes de sécurité."
+  masteringmoneroul5: "Une introduction aux fondations techniques de Monero, à destination des développeurs, ingénieurs, architectes logiciel et utilisateurs curieux."
+  masteringmoneroul6: "Les nouveaux développements, tel que Kovri, les Bulletproofs, les Multisignature, les Portefeuilles Materiel, etc."
+  masteringmoneroinfo:
   cheatsheets: Aide-mémoire
   thesalmonseries: The Salmon Series
   ringscheatsheet20210301: Aide-mémoire des anneaux
