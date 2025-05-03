@@ -18,17 +18,20 @@ nødvendige programvaren, importering av signaturnøkkelen, nedlasting av de
 nødvendige filene, og til slutt verifisering av at binærfilene dine er
 autentiske.
 
-## Table of Contents:
+## Innholdsfortegnelse:
 
-### - [Install GnuPG](#installing-gnupg)
+1. [Installering av GnuPG](#installering-av-gnupg)
 
-### - [Verify & Import Signing Key](#verify-and-import-signing-key)
+2. [Verifisering og import av
+   signaturnøkkel](#verifisering-og-import-av-signaturnøkkel)
 
-### - [Download & Verify Hash File](#download-and-verify-hash-file)
+3. [Nedlasting og verifisering av
+   hash-fil](#nedlasting-og-verifisering-av-hashfil)
 
-### - [Download & Verify Binary](#download-and-verify-binary)
+4. [Nedlasting og verifisering av
+   binærfiler](#nedlasting-og-verifisering-av-binærfiler)
 
-## Installing GnuPG
+## Installering av GnuPG
 
 + På Windows, gå til
 [Gpg4win-nedlastingssiden](https://gpg4win.org/download.html) og følg
@@ -39,13 +42,13 @@ anvisningene for installasjon.
 
 + GnuPG installert som standard på Linux.
 
-## Verify and Import Signing Key
+## Verifisering og import av signaturnøkkel
 
 Denne delen tar for seg hvordan man får tak i Monero-signaturnøkkelen,
 hvordan man sikrer at den er riktig og hvordan man importerer nøkkelen til
 GnuPG.
 
-### Get Signing Key
+### Å få tak i signaturnøkkelen
 
 På Windows eller Mac, gå til [binaryFates GPG
 key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc),
@@ -60,7 +63,7 @@ wget -O binaryfate.asc
 https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
-### Verify Signing Key
+### Verifisering av signaturnøkkel
 
 På alle operativsystemer, kan du sjekke fingeravtrykket til `binaryfate.asc`
 ved å eksekvere følgende kommando i en terminal:
@@ -79,9 +82,10 @@ uid                           binaryFate <binaryfate@getmonero.org>
 Dersom fingeravtrykket **MATCHER**, kan du fortsette.
 
 Dersom fingeravtrykket **IKKE MATCHER**, **IKKE FORTSETT.** Slett istedenfor
-`binaryfate.asc`-filen og gå tilbake til [seksjon 2.1](#21-get-signing-key).
+`binaryfate.asc`-filen og gå tilbake til [seksjon Å få tak i
+signaturnøkkel](#å-få-tak-i-signaturnøkkelen).
 
-### Import Signing Key
+### Import av signaturnøkkel
 
 Fra en terminal, importer signaturnøkkel:
 
@@ -106,12 +110,12 @@ gpg: Total number processed: 1
 gpg:              unchanged: 1
 ```
 
-## Download and Verify Hash File
+## Nedlasting og verifisering av hashfil
 
 Denne delen tar for seg nedlasting av hash-filen og å verifisere at den er
 autentisk.
 
-### Get Hash File
+### Å få ta i hashfilen
 
 På Windows eller Mac, gå til [hashes-filen på getmonero.org]({{
 site.baseurl_root }}/downloads/hashes.txt) og lagre siden som `hashes.txt`
@@ -122,7 +126,7 @@ følgende kommando:
 
 ``` wget -O hashes.txt https://www.getmonero.org/downloads/hashes.txt ```
 
-### Verify Hash File
+### Verifsering av hashfilen
 
 Hashfilen signeres med nøkkelen `81AC 591F E9C4 B65C 5806 AFC3 F0AF 4D46
 2A0B DF92`, som det framgår i utdataen under.
@@ -146,20 +150,20 @@ Dersom utdataen viser **Good signature**, som i eksempelet, kan du
 fortsette.
 
 Dersom du ser **BAD signature** i utdataen, **IKKE FORTSETT.** Slett
-istedenfor `hashes.txt`-filen og gå tilbake til [seksjon
-3.1](#31-get-hash-file).
+istedenfor `hashes.txt`-filen og gå tilbake til [seksjon Å få tak i
+hashfilen](#å-få-ta-i-hashfilen).
 
-## Download and Verify Binary
+## Nedlasting og verifisering av binærfiler
 
 Denne delen tar for seg nedlasting av Monero-binærfilen for operativsystemet
 ditt, å få `SHA256`-hashen til nedlastingen din, og å verifisere at den er
 autentisk.
 
-### Get Monero binary
+### Å få tak i Monero-binærfilene
 
-On Windows or Mac, go to [getmonero.org]({{ site.baseurl_root }}/downloads/)
-and download the correct file for your operating system. Save the file to
-your home directory. **Do not extract the files yet.**
+På Windows eller Mac, gå til [getmonero.org]({{ site.baseurl_root
+}}/downloads/) og last ned den riktige filen for operativsystemet
+ditt. Lagre filen til hjemkatalogen din. **Ikke pakk ut filene enda.**
 
 På Linux kan du laste ned kommandolinjeverktøyene ved å eksekvere følgende
 kommando:
@@ -168,13 +172,14 @@ kommando:
 wget -O monero-linux-x64-v0.15.0.1.tar.bz2 https://downloads.getmonero.org/cli/linux64
 ```
 
-### Binary Verification on Linux or Mac
+### Verifisering av binærfiler på Linux eller Mac
 
 Trinnene for både Linux og Mac er de samme. Fra en terminal, få
 `SHA256`-hashen til den nedlastede Monero-binærfilen din. Som et eksempel
 vil denne veiledningen bruke `Linux, 64bit`-GUI-binærfilen. Bytt ut
 `monero-gui-linux-x64-v0.15.0.1.tar.bz2` med navnet på binærfilen som du
-lastet ned i [seksjon 4.1](#41-get-monero-binary).
+lastet ned i [seksjon Å få tak i
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).
 
 ```
 shasum -a 256 monero-linux-x64-v0.15.0.1.tar.bz2
@@ -185,7 +190,7 @@ binærfil. Din `SHA256`-hash bør matche den som er oppført i
 `hashes.txt`-filen for din binærfil.
 
 ```
-8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad 
+8d61f992a7e2dbc3d753470b4928b5bb9134ea14cf6f2973ba11d1600c0ce9ad
 monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
@@ -193,15 +198,16 @@ Dersom hashen din **MATCHER**, er du ferdig med veiledningen! Du kan pakke
 ut filene og installere.
 
 Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet
-binærfilen du lastet ned og gå tilbake til [seksjon
-4.1](#41-get-monero-binary).
+binærfilen du lastet ned og gå tilbake til [seksjon Å få tak i
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).
 
-### Binary Verification on Windows
+### Verifisering av binærfiler på Windows
 
 Åpne en terminal og få `SHA256`-hash til din nedlastede Monero-binærfil. Som
 et eksempel, vil denne veiledningen bruke `Windows,
 64bit`-GUI-binærfilen. Bytt ut `monero-gui-win-x64-v0.15.0.1.zip` med navnet
-på binæren som du lastet ned i [seksjon 4.1](#41-get-monero-binary).
+på binæren som du lastet ned i [seksjon Å få tak i
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).
 
 ``` certUtil -hashfile monero-gui-win-x64-v0.15.0.1.zip SHA256 ```
 
@@ -219,5 +225,5 @@ Dersom hashen din **MATCHER**, er du ferdig med veiledningen! Du kan pakke
 ut filene og installere.
 
 Dersom hashen din **IKKE MATCHER**, **IKKE FORTSETT.** Slett i stedet
-binærfilen du lastet ned og gå tilbake til [seksjon
-4.1](#41-get-monero-binary).
+binærfilen du lastet ned og gå tilbake til [seksjon Å få tak i
+Monero-binærfiler](#å-få-tak-i-monero-binærfilene).

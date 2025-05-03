@@ -26,8 +26,8 @@ slik du ønsker.
 ### Merknader
 
 - Monero bruker i hovedsak @kanonisk unik vert-oppløsning, mens @I2P kun
-bruker @lokal unik vert-oppløsning.
+  bruker @lokal unik vert-oppløsning.
 
 - @I2P-er og @Kovrier som er tilordnet toppnivådomener er for tiden `.i2p`,
-og @Kovri har kun til hensikt å behandle/bruke
-`.i2p`-[toppnivådomenet](https://en.wikipedia.org/wiki/Top_level_domain)
+  og @Kovri har kun til hensikt å behandle/bruke
+  `.i2p`-[toppnivådomenet](https://en.wikipedia.org/wiki/Top_level_domain)
