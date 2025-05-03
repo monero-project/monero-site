@@ -7,8 +7,11 @@ terms: ["address", "addresses"]
 
 ### 基础
 
-当你发送门罗币给某人时，你只需要一条信息，那就是他们的门罗币地址。一个*原始* 门罗币地址由95个字符组成，以“4”开头。例如，门罗币的捐款地址是
-44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A.
+When you send Monero to someone you only need one piece of information, and
+that is their Monero address. A *raw* Monero address is a set of 95
+characters starting with a '4' or an '8'. The Monero donation address, for
+instance, is
+888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
 因为这些地址又长又复杂，所以您经常会遇到@OpenAlias地址。例如，Monero捐款可以发送到donate@getmonero.org或donate.getmonero.org。
 

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-08 13:32+0100\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/spendkey.md:1
 #, no-wrap
 msgid "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
 msgstr "每个帐户拥有的两对私钥和公钥中的一对，其中*私有的*支付密钥(私钥)，用于花费帐户中的任何资金。"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/spendkey.md:1
 #, no-wrap
 msgid "[\"spend-key\", \"spend-keys\"]"
 msgstr ""
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,9 +40,9 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "基础知识"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:11
-#
 msgid "One of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account."
 msgstr "每个帐户拥有的两对私钥和公钥中的一对，其中*私有的*支付密钥(私钥)，用于花费帐户中的任何资金。"
 
@@ -52,8 +52,8 @@ msgstr "每个帐户拥有的两对私钥和公钥中的一对，其中*私有�
 msgid "In-depth Information"
 msgstr "深度信息"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/spendkey.md:14
-#
 msgid "The *private* spend key is a 256-bit integer that is used to sign Monero transactions. With the current deterministic key derivation method of the official wallet, the private spend key is also an alternate representation of the @mnemonic-seed. It can be used to derive all other account keys."
 msgstr "*私有的*支付密钥是一个256位的整数，用于对门罗币的交易进行签名。使用当前官方钱包的确定性密钥推导方法，私有的支付密钥也是@助记词种子的另一种表示形式。它可以用来派生账户中所有的其它密钥。"

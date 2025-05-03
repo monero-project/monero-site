@@ -1,29 +1,7 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-28 11:29+0200\n"
-"PO-Revision-Date: 2022-03-30 15:44+0000\n"
-"Last-Translator: Diego Anaya <redcpp@gmail.com>\n"
-"Language-Team: Spanish <https://translate.getmonero.org/projects/"
-"getmonero-user-guides/remote_node_gui/es/>\n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
-
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:3
@@ -107,34 +85,21 @@ msgid "Configuring your wallet to connect to a custom public remote node"
 msgstr ""
 
 #. type: Plain text
-<<<<<<< HEAD
-#: _i18n/en/resources/user-guides/remote_node_gui.md:28
-msgid "## Finding a public remote node"
-msgstr "## Encontrando un nodo remoto público"
-=======
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:34
 #, no-wrap
 msgid "When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. \n"
 msgstr ""
->>>>>>> 6ebd58f2 (localization: po/pot files for remote_node_gui guide)
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:36
 #, no-wrap
 msgid "If you don't see this pop up, go to `Settings` > `Node` page.\n"
 msgstr ""
-"Primero, necesitarás encontrar un nodo remoto público al cual conectar. El "
-"sitio web [moneroworld.com](https://moneroworld.com/#nodes) contiene algunos "
-"recursos excelentes para encontrar nodos. Uno de los métodos más fáciles "
-"sería usar un nodo remoto público ejecutado por moneroworld, pero también "
-"tienen una herramienta para encontrar nodos aleatorios."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:38
 msgid "![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width=\"600px\"}"
 msgstr ""
-"## Configurando tu monedero para conectar a un nodo remoto público "
-"personalizado"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:40
