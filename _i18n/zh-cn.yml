@@ -2,68 +2,68 @@ global:
   date: '%Y/%m/%d'
   monero: 门罗币
   getting_started: 入门指南
-  copyright: 版权所有
-  monero_project: 门罗币项目
-  sitename: getmonero.org，门罗币项目
-  wiki: 门罗百科
-  tags: 按标签分类的文章
-  wikimeta: 在门罗百科，这一开放的门罗币知识百科全书上
-  tagsmeta: 所有标记了标签的门罗币博客文章
-  titlemeta: 门罗币，一种安全、私密且不可追踪的数字货币
-  terms: 术语
+  copyright: 版权
+  monero_project: 门罗项目
+  sitename: getmonero.org，门罗项目
+  wiki: 门罗百科(Moneropedia)
+  tags: 按标签查看文章
+  wikimeta: 在门罗百科上，开放的门罗知识百科全书
+  tagsmeta: 所有带有该标签的门罗博客文章
+  titlemeta: 门罗币：安全、私密且不可追踪的数字货币
+  terms: 条款
   privacy: 隐私
-  untranslated: 此页面尚未翻译。如果您想帮助翻译，请查看
-  outdated: 此页面内容已过时，可能不再有效。如果需要支持，请联系社区。
-  outdatedMin: 此页面自翻译后已更新。您可以使用此版本，但它可能不完整。请使用
-  outdatedVersion: 英文版本
-  lang_tag: "@lang_tag_zh"
+  untranslated: 此页面尚未翻译。如果您愿意帮助翻译，请参阅
+  outdated: 此页面内容已过时，可能不再有效。如需支持请联系社区
+  outdatedMin: 自翻译后此页面已更新。您可以使用此版本，但它可能不完整。请使用
+  outdatedVersion: 英文原版
+  lang_tag: "@lang_tag_cn"
 
 titles:
   index: 首页
-  whatismonero: 什么是门罗币（XMR）？
-  accepting: 接受门罗币
-  contributing: 改进门罗币
-  mining: 门罗币挖矿
+  whatismonero: 什么是门罗币(XMR)？
+  accepting: 接收门罗币
+  contributing: 贡献门罗币
+  mining: 挖矿
   faq: 常见问题
   downloads: 下载
   allposts: 所有博客文章
   workgroups: 工作组
-  hangouts: 社区交流
+  hangouts: 交流场所
   sponsorships: 赞助
   merchants: 商家与交易所
   about: 关于门罗币
   roadmap: 路线图
-  researchlab: 门罗币研究实验室（MRL）
+  researchlab: 门罗研究实验室(MRL)
   moneropedia: 门罗百科
   userguides: 用户指南
   developerguides: 开发者指南
-  technicalspecs: 技术规格
-  themoneroproject: 门罗币项目
+  technicalspecs: 技术规范
+  themoneroproject: 门罗项目
   tools: 工具
   presskit: 新闻资料包
   legal: 法律
   blogbytag: 博客
-  library: 图书馆
+  library: 资源库
 
 meta_descr:
-  whatismonero: 对什么是门罗币以及如何入门的详尽解释
-  accepting: 使用图形界面钱包接受门罗币支付的指南
-  contributing: 有多种方式可以为门罗币做出贡献，适合各种技能水平
+  whatismonero: 全面解释什么是门罗币及如何入门
+  accepting: 使用GUI钱包接收门罗币付款的指南
+  contributing: 有多种方式可为门罗币做贡献，适合各种技能的人
   mining: 关于门罗币挖矿的信息、软件和资源
-  blog: 来自门罗币项目及其社区的新闻、发布通知和通讯
-  workgroups: 了解数百名致力于门罗币的志愿者在哪里开会和协调
-  sponsorships: 门罗币项目的当前和过去赞助商。
-  about: 门罗币项目和技术的历史、价值观和基本结构
-  roadmap: 可浏览的概述，介绍门罗币自创建以来取得的成就、当前正在开发的内容以及未来计划
-  mrl: 门罗币的研究角落，包含研究论文、白皮书和其他与研究相关的信息
-  userguides: 指南和手册的集合，指导您使用门罗币并解决常见问题
-  tools: 第三方工具的链接，如区块浏览器、支付网关和生成器，用于与门罗币生态系统交互
-  presskit: 关于门罗币的徽标、营销材料、联系人及新闻文档
+  blog: 来自门罗项目及其社区的新闻、发布通知和通讯
+  workgroups: 了解数百名为门罗币工作的志愿者在何处会面和协作
+  sponsorships: 门罗项目当前和过去的赞助商
+  about: 门罗项目和技术的历史、价值观和基本结构
+  roadmap: 可浏览门罗币自创建以来的成就、当前开发内容和未来计划
+  mrl: 门罗的研究角落，包含研究论文、白皮书和其他研究相关信息
+  userguides: 指导您使用门罗币并解决常见问题的指南和手册集合
+  tools: 与门罗生态系统交互的第三方工具链接，如区块浏览器、支付网关等
+  presskit: 关于门罗币的标志、营销材料、联系方式和新闻文档
 
 navigation:
   getstarted: 开始使用
   whatis: 什么是门罗币？
-  accepting: 接受支付
+  accepting: 接收
   contributing: 贡献
   mining: 挖矿
   community: 社区
@@ -73,7 +73,7 @@ navigation:
   mrl: 研究实验室
 
 footer:
-  feed: RSS 订阅
+  feed: RSS订阅
   legal: 法律
   source: 源代码
   ml: 邮件列表
@@ -84,386 +84,808 @@ index:
   page_title: "门罗币 - 安全、私密、不可追踪"
 
 home:
-  heading: 门罗币即金钱
-  heading2: 让您的财务保持私密和安全的去中心化加密货币。
-  whatis: 了解更多关于门罗币的信息
+  heading: 门罗币就是货币
+  heading2: 私密、去中心化的加密货币，保障您的财务机密和安全。
+  whatis: 了解更多关于门罗币
   about: 关于门罗币
   joincommunity: 加入社区
   choosewallet: 选择钱包
-  choosewallet_para: 要使用门罗币，您首先需要一个钱包。访问我们的下载页面，找到适合您的钱包。门罗币钱包可用于多种平台，并包含您立即使用门罗币所需的一切。
+  choosewallet_para: 要使用门罗币，首先需要一个钱包。访问我们的下载页面获取适合您的钱包。门罗币钱包支持多种平台，包含立即使用门罗币所需的一切
   downloads: 下载
-  getcoins: 获取一些门罗币
-  getcoins_para: 安装钱包后，您需要获取一些门罗币。有多种获取硬币的方法，如挖矿或以门罗币作为报酬工作，但最简单的方法是使用交易所将法定货币转换为XMR。许多中心化和去中心化交易所都列出了门罗币（XMR）。
+  getcoins: 获取币
+  getcoins_para: 安装钱包后，您需要获取一些门罗币。有多种获取方式，如挖矿或通过工作换取门罗币，但最简单的方式是使用交易所将法币兑换为XMR。许多中心化和去中心化交易所都上线了门罗币(XMR)
   exchanges: 交易所
-  useit: "这是一种货币；使用它！"
-  useit_para: 门罗币是一种货币，可以私下且费用极低地兑换商品、服务和其他货币。许多实体将很乐意接受XMR作为支付方式；看看我们的"商家"页面。
+  useit: "这是货币；使用它！"
+  useit_para: 门罗币是一种货币，可以私密地、以极低费用交换商品、服务和其他货币。许多实体乐意接受XMR付款；请查看我们的'商家'页面
   merchants: 商家
-  answers: 查找您问题的答案
+  answers: 找到问题答案
   faq: 常见问题
-  faq_para: 多年来我们收到了很多问题，并汇编了详尽多样的常见问题解答。别担心，如果您的问题不在其中，您可以随时询问社区。
+  faq_para: 多年来我们收集了大量问题并整理了全面的FAQ。即使您的问题不在其中，也随时可以向社区提问
   guides: 指南和资源
   guides_para: >
-    社区汇集了大量资源和文档。用户可以在"用户指南"部分找到有关常见配置和提示的有用信息和指南。开发人员可以在"开发者指南"中找到构建基于门罗币的服务或简单地与网络通信所需的一切。图书馆提供可免费下载的出版物和书籍，包括完整的《精通门罗币》和《从零到门罗币》书籍。
-  moneropedia_para: 您想查找门罗币中使用的术语和概念的含义吗？在这里，您将找到按字母顺序排列的术语及其含义指南。
+    社区整理了大量的资源和文档。用户可在'用户指南'部分找到常见配置和技巧的有用信息。
+    开发者可在'开发者指南'中找到构建基于门罗的服务或与网络通信所需的一切。
+    资源库提供可免费下载的出版物和书籍，包括完整的《精通门罗币》和《从零开始学门罗币》
+  moneropedia_para: 想了解门罗币中术语和概念的含义？这里提供按字母顺序排列的术语及其解释指南
   moneropedia_button: 阅读门罗百科
-  contributecommunity: "我们需要您的技能：贡献！"
-  contributecommunity_para: 门罗币不仅仅是一种货币，它是一个去中心化的社区，仅因数百名志愿者将时间投入到项目中而存在。加入我们！
-  researchlab_para: MRL（门罗币研究实验室）是门罗币非常重要的一部分。来自世界各地的研究人员和密码学家聚集在一起，寻找改进门罗币的新方法。阅读他们的论文并加入他们！
-  visitmrl: 访问 MRL
-  contributing: 贡献
+  contributecommunity: "我们需要您的技能：做出贡献！"
+  contributecommunity_para: 门罗币不仅是货币，更是一个去中心化社区，其存在完全依赖数百名献身于项目的志愿者。加入我们！
+  researchlab_para: MRL(门罗研究实验室)是门罗币非常重要的组成部分。来自世界各地的研究人员和密码学家齐聚一堂，寻找改进门罗币的新方法。阅读他们的论文并加入他们！
+  visitmrl: 访问MRL
+  contributing: 贡献力量
   meetcommunity: "认识社区！"
-  meetus: "门罗币社区的成员遍布世界各地。您可以在多个平台上找到我们。来认识我们吧！"
-  hangouts: 社区交流
-  morevideos: 寻找更多解释性视频？
-
-whatismonero:
-  title: 什么是门罗币？
-  para1: 门罗币（XMR）是一种开源加密货币，于2014年4月发布。它基于CryptoNote协议，并具有良好的隐私保护功能。
-  para2: 与比特币等其他加密货币不同，门罗币旨在提供真正的财务隐私。虽然比特币和其他区块链在公共账本上记录所有交易细节，但门罗币使用先进的密码学技术来隐藏发送方、接收方和交易金额的信息。
-  para3: 门罗币通过以下技术实现隐私保护：
-  ring_signatures: 环签名
-  ringct: 环机密交易
-  stealth_addresses: 隐形地址
-  para4: 这些技术的组合确保门罗币交易在区块链上无法被追踪或关联到特定个人。
-  para5: 门罗币的供应是有限的，总量为1840万枚，与比特币类似。然而，门罗币的挖矿算法定期更新，以防止ASIC矿机主导网络，保持网络的去中心化特性。
-  para6: 门罗币社区非常重视隐私和去中心化，并致力于不断改进技术以应对新出现的挑战。
-
-accepting:
-  title: 接受门罗币支付
-  para1: 作为商家，接受门罗币支付可以为您的客户提供更多支付选择，同时保护他们的隐私。
-  para2: 以下是设置门罗币支付的基本步骤：
-  step1: 1. 获取一个门罗币钱包
-  step2: 2. 生成一个接收地址
-  step3: 3. 在您的网站或实体店显示该地址
-  step4: 4. 使用区块浏览器验证交易
-  para3: 您还可以使用专门的支付处理器来简化门罗币支付流程：
-  processor1: XMR.to - 提供门罗币到比特币的即时兑换服务
-  processor2: CoinPayments - 支持多种加密货币，包括门罗币
-  processor3: BTCPay Server - 自托管的加密货币支付处理器
-  para4: 接受门罗币支付的好处：
-  benefit1: 低交易费用
-  benefit2: 快速确认时间
-  benefit3: 增强的隐私保护
-  benefit4: 全球客户群
-  para5: 有关详细指南，请查看我们的"用户指南"部分。
-
-contributing:
-  title: 为门罗币做出贡献
-  para1: 门罗币是一个完全由社区驱动的项目，依赖于全球志愿者的贡献。无论您是开发者、设计师、翻译人员还是普通爱好者，都有多种方式可以为项目做出贡献。
-  para2: 以下是一些常见的贡献方式：
-  contribute1: 代码贡献
-  contribute2: 文档编写
-  contribute3: 翻译
-  contribute4: 社区支持
-  contribute5: 研究和开发
-  contribute6: 设计和品牌
-  contribute7: 资金支持
-  para3: 如何开始：
-  step1: 1. 加入门罗币社区
-  step2: 2. 了解项目需求
-  step3: 3. 选择您感兴趣的领域
-  step4: 4. 开始贡献
-  para4: 门罗币社区众筹系统（CCS）为项目提供资金支持：
-  ccs_info: 门罗币社区众筹系统允许社区成员提交提案并获得资金支持。这是为门罗币生态系统做出贡献的重要方式。
-  para5: 有关详细信息，请查看我们的"贡献指南"。
-
-mining:
-  title: 门罗币挖矿
-  para1: 门罗币挖矿是通过计算机处理能力来验证交易并将其添加到区块链的过程。作为回报，矿工获得新铸造的门罗币和交易费用。
-  para2: 门罗币使用CryptoNight算法，该算法设计为CPU友好型，旨在防止ASIC矿机主导网络，保持去中心化特性。
-  para3: 如何开始挖矿：
-  step1: 1. 安装挖矿软件
-  step2: 2. 选择一个矿池或单独挖矿
-  step3: 3. 配置您的挖矿设备
-  step4: 4. 开始挖矿
-  para4: 流行的门罗币挖矿软件：
-  software1: XMRig - 高性能、开源的门罗币挖矿软件
-  software2: xmrigCC - XMRig的集群版本，适用于矿池
-  software3: XMR-Stak - 多线程门罗币挖矿软件
-  para5: 矿池列表：
-  pool1: SupportXMR
-  pool2: MoneroOcean
-  pool3: MineXMR
-  pool4: XMRPool.net
-  para6: 挖矿注意事项：
-  note1: 挖矿盈利能力取决于您的设备性能和电力成本
-  note2: 考虑加入矿池以获得更稳定的收入
-  note3: 定期更新您的挖矿软件以获得最佳性能
-  para7: 有关详细指南，请查看我们的"挖矿指南"。
-
-faq:
-  title: 常见问题
-  general: 一般问题
-  question1: 什么是门罗币？
-  answer1: 门罗币是一种开源加密货币，专注于隐私和去中心化。它使用先进的密码学技术来隐藏交易细节，包括发送方、接收方和交易金额。
-  question2: 门罗币是如何工作的？
-  answer2: 门罗币基于CryptoNote协议，使用环签名、环机密交易和隐形地址等技术来保护隐私。这些技术确保交易在区块链上无法被追踪或关联到特定个人。
-  question3: 门罗币与比特币有什么区别？
-  answer3: 比特币交易是公开的，所有交易细节都记录在区块链上。而门罗币交易是私密的，使用密码学技术隐藏交易细节。此外，门罗币的挖矿算法定期更新，以防止ASIC矿机主导网络。
-  question4: 门罗币的总量是多少？
-  answer4: 门罗币的总量为1840万枚，与比特币类似。然而，门罗币采用不同的发行时间表，包括区块奖励递减和长尾发行。
-  question5: 如何获得门罗币？
-  answer5: 您可以通过交易所购买门罗币、参与挖矿或接受门罗币作为商品或服务的支付。
-  question6: 门罗币安全吗？
-  answer6: 是的，门罗币使用先进的密码学技术来确保交易安全。此外，门罗币社区不断审查和改进代码，以应对新出现的安全威胁。
-  question7: 门罗币合法吗？
-  answer7: 门罗币的合法性因国家而异。在大多数国家，持有和交易门罗币是合法的，但某些国家可能对加密货币有特定的法规。在使用门罗币之前，请了解您所在国家的相关法律法规。
-  question8: 如何存储门罗币？
-  answer8: 您可以使用门罗币官方钱包或第三方钱包来存储门罗币。门罗币官方提供多种钱包选项，包括桌面钱包、移动钱包和Web钱包。
-  question9: 如何开始使用门罗币？
-  answer9: 首先，下载并安装门罗币钱包。然后，您可以通过交易所购买门罗币或参与挖矿。最后，您可以使用门罗币进行交易或存储。
-  question10: 门罗币的交易费用是多少？
-  answer10: 门罗币的交易费用通常很低，取决于网络拥堵情况和交易规模。与传统银行转账相比，门罗币交易费用通常要低得多。
-  question11: 门罗币的交易确认需要多长时间？
-  answer11: 门罗币的区块时间为2分钟，这意味着平均每2分钟会产生一个新区块。然而，为了确保交易的安全性，通常建议等待几个区块确认。
-  question12: 门罗币的未来发展方向是什么？
-  answer12: 门罗币社区致力于不断改进隐私技术、提高性能和扩大采用。未来的发展方向包括改进环签名技术、增强可扩展性和开发新的隐私功能。
-  question13: 如何参与门罗币社区？
-  answer13: 您可以通过加入门罗币论坛、参与GitHub上的开发、提供翻译或参加线下活动来参与门罗币社区。
-  question14: 什么是门罗币研究实验室（MRL）？
-  answer14: 门罗币研究实验室（MRL）是门罗币的研究部门，由密码学家和研究人员组成，致力于开发新的隐私技术和改进门罗币的现有功能。
-  question15: 什么是社区众筹系统（CCS）？
-  answer15: 社区众筹系统（CCS）是门罗币社区的一种资金机制，允许社区成员提交项目提案并获得资金支持。这是为门罗币生态系统做出贡献的重要方式。
-
-downloads:
-  title: 下载
-  para1: 选择适合您的门罗币钱包：
-  wallet1: 图形界面钱包
-  wallet2: 命令行钱包
-  wallet3: 移动钱包
-  wallet4: Web钱包
-  wallet5: 硬件钱包集成
-  para2: 所有门罗币软件都是开源的，您可以在GitHub上查看源代码。
-  para3: 注意：始终从官方来源下载门罗币软件，以确保您获得的是正版且安全的版本。
-  para4: 图形界面钱包推荐：
-  gui1: Monero GUI - 官方图形界面钱包，适用于Windows、macOS和Linux
-  gui2: Feather Wallet - 轻量级图形界面钱包，注重隐私和安全性
-  gui3: Cake Wallet - 流行的移动钱包，适用于iOS和Android
-  para5: 命令行钱包推荐：
-  cli1: monero-wallet-cli - 官方命令行钱包，适用于高级用户
-  para6: 硬件钱包支持：
-  hw1: Ledger Nano S/X
-  hw2: Trezor Model T
-  para7: 有关每个钱包的详细信息和下载链接，请访问我们的"钱包指南"。
-
-allposts:
-  title: 所有博客文章
-  para1: 浏览门罗币项目及其社区的最新新闻、发布通知和通讯。
-  para2: 按日期排序的博客文章：
-
-workgroups:
-  title: 工作组
-  para1: 门罗币项目由多个工作组组成，每个工作组专注于不同的领域：
-  group1: 核心开发组
-  group2: 研究组
-  group3: 网站和文档组
-  group4: 社区支持组
-  group5: 市场营销组
-  group6: 翻译组
-  para2: 每个工作组都由志愿者领导和参与，共同推动门罗币项目的发展。
-  para3: 如何加入工作组：
-  step1: 1. 加入门罗币社区
-  step2: 2. 了解工作组的目标和需求
-  step3: 3. 联系工作组负责人表达您的兴趣
-  step4: 4. 开始贡献
-  para4: 有关每个工作组的详细信息，请查看我们的"工作组指南"。
+  meetus: "门罗社区成员遍布全球。您可以在多个平台上找到我们。欢迎来认识我们！"
+  hangouts: 交流场所
+  morevideos: 寻找更多讲解视频？
 
 hangouts:
-  title: 社区交流
-  para1: 门罗币社区是一个友好和活跃的社区，遍布世界各地。以下是您可以找到我们的地方：
-  social1: 论坛 - 讨论门罗币的技术和社区话题
-  social2: Discord - 实时聊天和讨论
-  social3: IRC - 传统的IRC频道
-  social4: Reddit - r/Monero
-  social5: Twitter - @monero_project
-  social6: GitHub - 源代码和开发讨论
-  social7: 翻译平台 - 帮助翻译门罗币文档
-  para2: 加入我们的社区，认识其他门罗币爱好者，分享您的想法和经验！
-
-sponsorships:
-  title: 赞助
-  para1: 门罗币项目感谢以下赞助商的支持：
-  para2: 如果您的组织有兴趣赞助门罗币项目，请联系我们。
-  para3: 有关赞助的详细信息，请查看我们的"赞助指南"。
+  intro: 门罗社区多元丰富。我们来自世界各地，但肯定有喜欢一起交流的地方。您可以在下面找到大部分常用场所。加入我们吧！
+  resources: 工作组资源
+  resources_para: 为支持自发形成的工作组，门罗提供了一些社区可用于会面和规划项目的资源，
+  resources_para1: 如Matrix服务器、Taiga看板和翻译平台Weblate
+  irc: IRC频道
+  irc_para: 门罗社区使用许多IRC频道，每个频道服务不同目的。有些用于工作，有些只是交流。下面列出了较受欢迎的频道
+  bridges: 这些频道桥接到多个其他平台，允许社区用户使用他们喜欢的聊天服务/协议进行交流
+  mailing_list: 邮件列表
+  mailing_list1: 想通过电子邮件直接接收重要公告？加入我们的邮件列表！
+  subscribe: 订阅
+  irc_channels:
+    monero: 此频道用于讨论所有与门罗币相关的事情
+    monero-community: 此频道供门罗社区成员聚集讨论想法
+    monero-dev: 许多贡献者和开发者在此讨论开发事宜
+    monero-markets: 我们在此频道讨论门罗币和其他币的价格
+    monero-offtopic: 与其他门罗用户聊无关门罗币的话题
+    monero-pools: 这是讨论挖矿问题和交流的地方
+    monero-research-lab: 加密货币金融隐私研究
+    monero-translations: 将门罗币本地化为其他语言
+    monero-hardware: 构建硬件钱包保护门罗币安全
+    monero-site: 此网站开发协调的地方
 
 merchants:
-  title: 商家与交易所
-  para1: 越来越多的商家和交易所接受门罗币作为支付方式或交易对。
-  para2: 商家列表：
-  merchant1: 列出接受门罗币的在线商家
-  merchant2: 列出接受门罗币的实体店
-  para3: 交易所列表：
-  exchange1: 列出支持门罗币交易的中心化交易所
-  exchange2: 列出支持门罗币交易的去中心化交易所
-  para4: 支付处理器：
-  processor1: 列出支持门罗币支付的支付处理器
-  para5: 有关最新的商家和交易所列表，请查看我们的"商家目录"。
+  descr: 此页面列出接受门罗币付款的商店和商家，以及交易门罗币与其他货币的交易所
+  useit: "接受门罗币的商家"
+  use: 多年来，各类商家逐渐重视门罗币带来的财务隐私。实际上，商家接受度持续上升
+  dirdescr: "如果您在寻找消费门罗币的地方，以下目录提供了一些选择。请记住：在信任任何实体前请自行研究："
+  descrp2p: 门罗币兑换其他货币的好方法是使用点对点[P2P]交易所。P2P交易所让交易者直接互动，某些情况下无需受信任第三方(仅提供托管服务)。这类交易所通常比中心化或托管型交易所更私密
+  swapsdescr: "一种无需信任的兑换方式是使用原子交换。详见博客文章："
+  bisqdescr: 基于比特币和Tor的去中心化P2P交易所
+  cardfoss: "开源："
+  cardkyc: "<b>无KYC</b>（了解你的客户）："
+  cardbtcfiat: (支持BTC ↔ 法币交易)
+  cardonion: "洋葱地址："
+  cardi2p: "I2P地址："
+  noncustodial: "非托管："
+  locmondescr: 在线P2P交易所，提供个人对个人交易
+  depsell: 取决于卖家
+  locnojs: (但提供无JS版本)
+  simpleswapdescr: 非托管即时交易所
+  disclaimer: |
+    "免责声明：这些链接仅提供便利和信息；不表示门罗社区认可列出的公司、组织或个人及其产品、服务或观点。门罗社区对这些外部站点的准确性、合法性或内容不承担任何责任。内容相关问题请联系外部站点。请务必自行调研；进行在线交易时请始终保持判断力"
+  visitbisq: 访问Bisq
+  centrexchanges: 中心化交易所(CEXs)和兑换商
+  centrexchangesp: 若您偏好中心化交易所，以下是几家知名CEX和兑换商。更多交易所支持门罗币，我们仅列出部分信誉良好的
+  cexp: 提供门罗币与国家货币及加密货币兑换的中心化交易所
+  swappersp: 兑换商允许用户兑换XMR与其他加密货币
+  basicswapdexdesc: 去中心化P2P原子互换，注重用户体验
+  visitbasicswapdex: 访问BasicSwapDEX
+  setreq: 需要设置
+  unstoppableswapdesc: 使用原子互换将比特币兑换为门罗币
+  visitunstoppableswap: 访问UnstoppableSwap
+
+sponsorships:
+  intro: 以下企业积极支持门罗项目实现其为世界带来金融隐私的目标。我们对他们的贡献深表感激。如果您想赞助门罗项目并在此页面列出，请发送邮件至 dev@getmonero.org
+  tari: Tari Labs赞助此网站使用的CDN
+  mbank: MajesticBank赞助此网站的托管服务
+  symas: Symas赞助其CTO Howard Chu(hyc)参与门罗代码工作
+  macstadium: MacStadium赞助专用Mac Mini用于Mac相关开发
+  cakewallet: Cake Wallet赞助包含邮件列表、GitLab、Matrix、Taiga和Weblate的"工具"服务器
+  cypherstack: Cypher Stack赞助开发运维人员参与门罗基础设施工作
+  pastsponsors: 过往赞助商
+
+team:
+  introduction: 工作组由为实现共同目标而联合的社区成员组成。它们有不同结构和目标。此页面列出部分活跃工作组及入门指南，助您为门罗项目贡献力量
+  core: 核心团队
+  community: 社区工作组
+  mrl: 研究实验室
+  descr: 描述
+  start: 如何开始
+  contacts: 聊天室和联系方式
+  chat: "聊天："
+  website: "网站："
+  core_descr: 作为项目管理者，核心团队管理无法避免中心化的基础设施(域名、网站、GitHub仓库等)。成员在必要时担任调解者角色，衡量社区共识，延续使门罗成为成功项目的高质量互动。核心团队从未接受也从未接受任何财务补偿
+  core_start: 核心团队是封闭工作组；非受邀无法加入
+  community_descr: 此工作组供社区组织和协调使用。非技术背景贡献者可从此开始
+  community_start: 贡献此工作组的最佳方式是加入聊天室自我介绍，说明您的兴趣和可贡献的技能
+  devworkgroup: 开发工作组
+  devworkgroup_descr: "此工作组联合开发核心团队维护的钱包和守护程序。主要由两部分组成：CLI团队和GUI团队。这些团队通过两个不同聊天室协调"
+  devworkgroup_start: 建议先查看两个仓库的开放问题以了解可修复或改进之处。两个代码库(尤其是核心仓库)可能较复杂，建议先在聊天室介绍自己、技能及希望贡献的方面
+  chatgeneral: "聊天(通用)："
+  chatgui: "聊天(GUI)："
+  webworkgroup: 网站工作组
+  web_descr: 此开发工作组协调网站开发。多数成员也属于开发工作组。网站工作组的成立主要是将网站相关讨论集中在单一场所
+  web_start: 建议加入聊天室直接与工作组成员交流，但若想自己开始，请查看GitHub仓库的README文件。它包含编辑此网站每个部分的详细步骤说明
+  localization: 本地化工作组
+  localization_descr: 门罗最古老的工作组之一，由致力于翻译门罗相关软件和文档的贡献者组成。强烈建议在翻译前联系工作组
+  localization_start: 在聊天室联系工作组或在GitHub仓库提交问题。您也可立即使用Weblate平台开始翻译。开始前请务必阅读译者指南
+  locplatform: "本地化平台："
+  telegram: "Telegram聊天："
+  mrl_descr: 如名称所示，门罗研究实验室工作组专注于门罗相关研究。由寻求改进门罗协议和功能的科学家组成。CLSAG和@Bulletproofs等提升门罗隐私性的协议改进都来自此工作组
+  mrl_start: 加入下方聊天室说明兴趣和技能。研究工作持续进行，有人会为您指引方向
+  space: Monero Space
+  space_descr: Monero Space是活跃的、专注项目的门罗工作组，为门罗社区提供服务和活动组织如Monero Meet
+  space_start: 通过Matrix/Libera聊天室联系该工作组
+  mrw: 恶意软件响应工作组
+  mrw_descr: 为多种门罗相关恶意软件提供资源和实时支持
+  mrw_start: 此工作组主要在IRC聊天室活动。若想贡献，加入频道提问或提供支持即可
+  mpwg: 门罗政策工作组
+  mpwg_descr: 门罗政策工作组是由对监管机构、政策制定者和金融服务领域有参与兴趣的个人组成的团队，旨在确保广泛理解门罗技术及其与监管合规要求的兼容性
+  mpwg_start: 若想参与或关注政策讨论，请加入Matrix/Libera聊天室
+  nwlb_descr: Seraphis钱包工作组是一群开发全新钱包的开发者，通过Seraphis和Jamtis技术显著提升门罗的隐私能力和可用性
+  nwlb_start: 工作组定期在Matrix房间(桥接至IRC)会面协调。他们始终欢迎愿意帮助的贡献者
+
+downloads:
+  intro: 在此页面可找到并下载门罗软件最新版本，以及硬件、轻量和移动钱包
+  choose: 选择下载
+  gui: 门罗GUI钱包
+  cli: 门罗CLI钱包
+  blockchain3: 导入门罗区块链
+  mobilelight0: 移动端 & 轻量钱包
+  mobilelight: 移动端 & 轻量钱包
+  hardware: 硬件钱包
+  gui_intro: 门罗社区开发的开源图形界面(GUI)钱包，完全免费，适合初学者和高级用户
+  simplemode: 简单模式
+  simplemode1: 为只需简单快速使用门罗的用户设计。打开钱包自动连接@远程节点，发送/接收XMR，完成！
+  advancedmode: 高级模式
+  advancedmode1: 提供所需所有高级功能。适合经验丰富的门罗用户，希望完全控制钱包和节点
+  merchantpage: 商家页面
+  merchantpage1: 轻松为您的企业接收XMR
+  hwcompatible: 兼容硬件钱包
+  hwcompatible1: 如Trezor和Ledger
+  fiatconv: 应用内法币换算
+  fiatconv1: 无需在线查询XMR价值
+  pruning: 区块链修剪
+  pruning1: 磁盘空间不足？使用@修剪功能下载1/3区块链即可
+  langs: "<b>支持30多种语言</b>"
+  cli_intro0: 门罗社区开发的开源命令行界面(CLI)钱包，完全免费，最适合开发者、中级和高级用户
+  cli_intro: CLI钱包让您完全控制门罗节点和资金。高度可定制，包含多种分析工具，以及HTTP RPC和0MQ接口
+  currentversion: 当前版本
+  sourcecode: 源代码
+  helpsupport: 帮助与支持
+  helpsupport1: "提供钱包各部分的详细指南："
+  helpsupport2: "查看最新发布"
+  helpsupport3: "若遇问题或需要更多信息，请联系社区。可加入 <code>#monero-support</code> 或查看 <a href=\"/community/hangouts/\">交流场所</a> 页面获取完整联系方式列表"
+  localremote: 本地或远程节点
+  localremote1: 使用自己的区块链副本或公开可用节点
+  transacttor: 通过Tor/I2P交易
+  transacttor1: 增加隐私层
+  bootstrapnode: 引导节点
+  bootstrapnode1: 本地下载区块链时使用@远程节点，可立即使用门罗，同步完成后切换到本地节点
+  rpc: RPC钱包和守护程序
+  rpc1: 包含在压缩包中
+  verify: 验证
+  verify1: 强烈建议验证下载压缩包的哈希值。这确认下载文件与门罗开发组上传文件完全匹配。切勿忽略此步骤，损坏的压缩包可能导致资金损失
+  verify2: 请始终验证下载！
+  showhash: 显示验证下载的哈希值
+  showhash1: 这些SHA256哈希值仅供参考，规范的GPG签名哈希列表在
+  showhash2: ，应作为标准，签名需通过源代码中正确的GPG密钥验证
+  showhash3: 源代码中
+  showhash4: "提供两个指南协助验证过程："
+  mobilelight1: 下列钱包是长期存在的非托管移动端或轻量钱包，非门罗核心团队管理。强烈建议您自行研究钱包安全性及使用风险。前往"
+  mobilelight2: 交流场所"
+  mobilelight3: "页面查看门罗社区聚集地"
+  installer: 安装程序
+  avwarning: 请注意，某些杀毒软件和防火墙可能将门罗可执行文件和压缩包标记为恶意软件
+  moreinfofaq: 常见问题中有更多信息
+  packages: 也提供多种Linux发行版的软件包
+  packages_link: 查看GitHub列表
+  releasenotes: 发布说明
+  wallet: 钱包
+  mobile: 移动端
+  desktop: 桌面端
+  antivirus: 杀毒软件
+  sourcearchive: 源代码(压缩包)
+  localsync: 本地同步
+  localsyncinfo: 这些钱包连接@远程节点，在设备上扫描@区块链，不向节点共享任何密钥。隐私性更高，但同步更慢，因为仅打开钱包时才扫描缺失的@区块
+  remotesync: 远程同步(轻量)
+  remotesyncinfo: 这些钱包将私密@查看密钥分享给远程服务器，服务器持续扫描区块链查找您的交易。使用更快，但若不控制远程服务器，隐私性可能降低
+  hwdesc: "硬件钱包是加密安全设备，帮助保护您的币安全。门罗当前支持Ledger Nano(S, S Plus和X)和Trezor(Model T, Safe 3, Safe 5)"
+  hwth: 硬件钱包
+  instructions: 使用说明
+  hwthmodel: 型号
+  hwthsupported: 支持的钱包
+  hwthfirm: 最低固件版本
+  hwnanos: "Nano S: 2.1.0"
+  hwnanosplus: "Nano S Plus: 1.0.3"
+  hwnanox: "Nano X: 2.0.2"
+  hwtrezor: "2.5.2"
+  hwmobmodels: "支持门罗的型号："
+
+press-kit:
+  intro: 此页面包含新闻联系方式、符号和标志
+  intro2: 注意白色背景选项仅在门罗符号下是白色背景，并非整个图像
+  intro3: 最后，您可点击此处下载此页所有内容"
+  intro4: here.
+  noback: 透明M标志
+  whiteback: 白色M标志(推荐)
+  symbol: 门罗符号
+  logo: 门罗标志
+  small: 小
+  medium: 中
+  large: 大
+  symbol_file: 符号.ai文件
+  logo_file: 标志.ai文件
+  pressdoc: 新闻文档
+  quickfacts: "速查表"
+  quickfactsp: >
+    快速易读的文档，了解门罗币的一切：历史、关键差异化因素、技术基础和开发中特性
+  marketing: 营销材料
+  dontbuysticker: "‘别买门罗币’贴纸"
+  dontbuystickerp: 使用此贴纸传播门罗币。提供多语言和多格式(包含矢量图)
+  guerrillakit: 游击工具包
+  guerrillakitp: 门罗推广工作组创建的文件，包含有效游击营销活动的材料和技巧
+  promographics: "门罗推广素材 - 网站徽章和贴纸"
+  promographicsp: TheMonera创作的各种素材和徽章，适用于商家和爱好者
+  xmrgraphics: 门罗图形素材
+  xmrgraphicsp: 门罗海报、插图、编辑作品、壁纸、贴纸等
+  othersymbols: 其他符号和标志
+  mrllogo_para: MRL标志(SVG格式)
+  contacts: 联系方式
+  contactsp: 根据所需信息，可通过多种方式联系社区：工作组、社区成员或核心团队
+  contactgen: "新闻查询："
+  contactwg: "联系特定门罗工作组："
+  contactcomm: "联系多个子社区："
+  whymonero: 为什么选择门罗？
+  whycommunity: 门罗是最大的开源项目社区之一。门罗研究、审计并实现关键的安全和隐私技术，被全球数百万人使用
+  whycommunity1: 门罗处理的私密交易量超过所有其他加密货币之和
+  whyconf: 门罗社区在Defcon、Grayhat和CCC中广泛参与。每年举办学术会议门罗大会
+  whyconf1: 我们鼓励在相关新闻和活动中包含最大隐私项目的成员
+  altpk-1: 女士站在Monero Talk横幅前的照片
+  altpk-2: fluffypony在DEFCON演讲的照片
+  johnr365timeline: 门罗时间线
+  johnr365timelinep: 门罗历史关键发展时间轴
+
+accepting:
+  title_gui: GUI操作指南
+  index: 索引
+  gui1: "使用GUI接收付款很简单。无论您是商家还是用户，都有两个可用页面：接收和商家"
+  gui2: 接收页面(如下所示)的每个细节均在"
+  guilinkguide: GUI指南"
+  guilinkguide2: "中有说明"
+  guiinstructions: >
+    接收XMR只需向付款方提供可发送资金的@地址。通常共享二维码让付款方扫描比复制字母数字串更方便。
+    GUI生成的每个地址都有对应二维码。让对方用手机门罗@钱包扫码，几分钟内即可收到XMR。
+    您可生成任意数量的地址(子地址)，这在分离资金时很有用
+  guimerchant: "商家可便捷使用‘商家’页面(下方截图)，‘商家视图’部分的详细说明见"
+  guilinkguide1: "上方链接指南"
+  guimerchant1: >
+    类似POS的界面可轻松设置XMR收款金额。启用‘销售追踪器’后，
+    钱包将实时显示付款状态和确认数
+  guisteps: "通过两个页面即可轻松接收XMR："
+  guiol: "进入‘接收’页面创建/选择收款地址"
+  guiol1: 向对方提供由字母数字组成的地址。建议使用更友好的二维码
+  guiol2: "若要指定收款金额，请进入‘商家’页面(先在‘接收’页面选择用于接收XMR的@账户)"
+  guiol3: "输入金额后向付款方分享支付URL或二维码。如需实时追踪付款请勾选‘启用销售追踪器’"
+  guiol4: 等待付款到账并获得足够确认数(确认数越多交易越安全，至少需10个确认才能使用资金)
+  cliinstructions: CLI操作指南
+  clicreatewallet: >
+    首次创建钱包时会自动显示@地址。这是您的主地址。
+    可直接用它接收付款。虽然应注意谁知晓此地址(同一地址在不同场景可能关联)，但无需担心区块链观察者监视交易(如比特币)。朋友可向同一地址发送交易而不会降低隐私性
+  cliaccounts: >
+    若需更多控制，门罗允许创建多个账户，每个账户包含多个子地址，
+    便于管理多个账户(如收款账户和日常使用账户)
+  clicreateaccount: "创建账户命令："
+  clicreateaccount1: "现在您有了与主账户分离的新账户。可随时切换账户"
+  cliindex: >
+    如上图所示，每个账户有索引号，可用‘account switch [索引]’命令切换。例如根据上图，
+    切换到‘捐赠’账户监控使用命令‘account switch 1’
+  cliindex1: >
+    每个账户可有无限个子地址。它们与普通地址功能相同，
+    用于接收关联账户的XMR。为账户创建新子地址的命令：
+  clinotes: >
+    以上仅为创建和使用账户/子地址的基本步骤。
+    CLI提供更精细的操作方式。使用‘help’命令查看所有选项
+  merchantstitle: 商家指南
+  merchantsreceive: "企业用户如需以编程方式接收@交易或使用多重签名等高级功能，建议查阅"
+  merchdevguides: "开发者指南"
+  merchantsreceive1: "社区将乐意提供帮助。在#monero聊天室交流(Freenode/MatterMost/Matrix)"
+  merchantsint: "若不想直接操作钱包，可使用第三方支付系统。社区成员为多种平台语言创建了集成方案，详见"
+  merchantsintlink: GitHub组织
+  merchantsthirdp: "工具页面列出支付网关："
+  merchthirdlink: 工具页面
+  merchantsthirdp1: 部分网关提供将收入自动转换为法币等功能
+
+contributing:
+  intro: 门罗是开源社区驱动项目。以下是几种支持方式
+  network: 支持网络
+  develop: 开发
+  developp: "门罗开源无需许可；欢迎并鼓励贡献者。开发者可通过多种方式贡献："
+  cli: "CLI钱包和守护程序："
+  cli_p: 主要用C++编写的核心钱包
+  gui: "GUI钱包："
+  gui_p: 主要使用QML和C++
+  website: "此网站："
+  website_p: 使用Jekyll构建，无JavaScript
+  bug: "漏洞搜寻：门罗在Hackerone列出，开发者应负责任地披露漏洞。参见"
+  discl: 门罗项目漏洞响应流程
+  develop_descr: >
+    以上仅为核心团队管理工具，门罗生态更广泛。可贡献于库、服务、文档等。
+    联系或加入您想贡献的工作组
+  develop_wg: 查看门罗工作组
+  full-node: 运行节点
+  full-node_p: 运行@节点是帮助门罗网络的简单有效方式。节点保障网络安全去中心化。完全同步节点即可帮助网络，运行开放@远程节点允许他人连接则贡献更大
+  full-node_p2: "提供多个指南助您运行配置节点："
+  allguides: 查看所有用户指南
+  mine: 挖矿
+  mine_p: >
+    挖矿保障网络安全。门罗使用@randomx(社区开发的ASIC抗性算法)，使消费级硬件可挖矿。更多挖矿信息见
+  mine_link: 专用挖矿页面
+  ffs: 社区众筹系统
+  ccs_p: 开发者提出项目并由社区资助。资金由托管人保管，完成里程碑后支付开发者。任何人都可提出新提案或资助现有提案
+  ccsbutton: 访问CCS
+  donate: 捐赠
+  donate_p: 普通基金用于紧急需求，基础设施费用由赞助商承担
+  genfund: 普通基金
+  genfund_p: "可捐赠门罗币或比特币："
+  donate-other: 其他方式
+  donate-other_para1: 电子邮件
+  donate-other_para2: 获取其他捐赠方式，或成为项目赞助商
+  supportdev: 支持开发者
+  supportdev_p: 开发门罗的开发者多为独立志愿者，部分通过CCS提案获得资助。若希望通过捐赠XMR支持，可联系本人或使用打赏服务
+  supportdev_p2: 可在OpenHub页面找到贡献者概览：
+  supportdev_link: 门罗的OpenHub页面
+  sponsor: 赞助
+  sponsor_p: 也可通过赞助计划支持门罗币，详见
+  sponsor_link: 赞助页面
+  sponsor_p2: 
+  altqrmonero: 门罗二维码
+  altqrbitcoin: 比特币二维码
+  primary_address: 主地址
+  donation_viewkeys: 仅查看钱包详情
+
+faq:
+  basics: 基础
+  privacy: 隐私
+  security: 安全
+  economics: 经济学
+  wallets: 钱包
+  node: 节点
+  intro: 查找关于门罗币的常见问题和疑虑解答
+  toc: 目录
+  additional: "更多信息："
+  resandhelp: 资源与帮助
+  stackexchange: 最全面的门罗资源之一。若此FAQ未包含您的问题，可在门罗StackExchange找到答案
+  userguides: 帮助用户与门罗网络交互的文档集合
+  devguides: 开发者的指南和资源
+  monerosupport: 社区互助的subreddit，使用搜索功能
+  monerohow: "含大量指南教程的老牌资源"
+  qword: "[技术词]的含义？"
+  aword: "门罗术语较复杂，因此我们提供"
+  aword1: "包含术语解释的列表。若对某词不理解或想了解更多，请访问门罗百科。如@节点、@可互换性、@查看密钥、@修剪等常用术语"
+  qcontribute: 如何做贡献？
+  acontribute: "门罗是开源社区项目，一切由志愿者或社区资助贡献者构建。有多种贡献方式："
+  acontribute1: 翻译(任何懂英语以外语言者均可帮助)，主要在"
+  acontribute2: "联系工作组(如本地化组、社区组、GUI组等)，查看"
+  acontribute3: "发挥专长：设计师创作门罗素材；作者撰写门罗文章等"
+  acontribute4: "推广工作组为新成员撰写实用文章："
+  q1: 门罗币为何有价值？
+  a1: 门罗有价值是因为人们愿意购买。若无人购买则无价值。需求>供应时价格上涨；供应>需求时价格下跌
+  q2: 如何获取门罗币？
+  a2: 可通过交易所或个人购买。部分钱包支持用法币或其他加密货币购买，或通过@区块奖励挖矿获取
+  a2exchanges: "过去需先买比特币再买门罗，现在多国交易所支持门罗币与国家货币(美元/欧元等)或其他加密货币直接交易。部分需KYC，去中心化交易所无需。本网站提供交易所列表："
+  q3: 助记词为何重要？
+  a3: @助记词是25个单词组合，可在任何地方恢复账户。妥善保管勿共享。即使电脑崩溃也可用此词恢复账户
+  q4: 门罗的隐私性如何不同？
+  a4: "门罗采用三种隐私技术：@环签名隐藏发送方、@环机密交易隐藏金额、@隐形地址隐藏接收方。所有交易强制私密；不会误发透明交易。这是门罗独有特性；您无需信任任何人保护隐私"
+  q5: 为何钱包同步很慢？
+  a5: 本地运行完整@节点需下载整个@区块链，在旧硬盘或慢速网络下耗时较长。使用@远程节点时钱包仍需请求所有输出副本，可能耗时数小时。建议耐心等待，或牺牲部分隐私使用远程节点/轻量@钱包加快速度
+  q6: 轻量钱包与普通钱包的区别？
+  a6: 轻量钱包向节点提供查看密钥，节点扫描区块链查找您的交易。节点知道收款时间但不知金额/对方信息。若使用自己控制的节点则隐私性更高。普通钱包配合自建节点提供最佳隐私
+  q7: 门罗与比特币的不同？
+  a7: 门罗非基于比特币，而基于CryptoNote协议。比特币完全透明(可查看交易细节)，门罗则隐藏信息保护隐私。门罗还有动态@区块大小/费用、抗ASIC工作量证明(@randomx)和@尾随发行等特点
+  q8: 门罗有区块大小限制吗？
+  a8: 否，门罗无硬性@区块大小限制。区块大小可根据需求增减，设增长率上限防止异常膨胀(@可扩展性)
+  q11: 什么是可互换性？为何重要？
+  a11: "@可互换性指等值货币无差别。若10元和两张5元互换，双方无损。但如果10元曾被用于勒索攻击，即使持有人无辜，对方可能拒绝交易。这迫使收款方持续核查资金。门罗币可互换，用户无需担忧污点币问题"
+  q12: 门罗若私密，如何确定币非凭空产生？
+  a12-1: 每笔@交易输出关联唯一密钥映像(仅持有者能生成)。节点拒绝重复密钥映像作为双花，阻止其加入有效@区块
+  a12-2: 通过@Pedersen承诺加密金额，使观察者无法知悉输入输出金额，但可验证总和相等确保无门罗币凭空产生
+  a12-3: 加密输出总和等于花费输入时，交易合法。Pedersen承诺确保可验证总和相等，但无法确定各输入输出具体值
+  aabout-auditability: 供应可审计性详情
+  adetailed-auditability: 供应可审计性深入分析
+  q13: 门罗是否100%保护隐私？
+  a13: 门罗不是魔法。若使用门罗却提供姓名地址，对方不会忘记这些信息。若泄露私钥、被入侵、密码弱或在云端备份助记词都会导致隐私泄露或资金损失
+  q14: 门罗是否100%匿名？
+  a14: 不存在100%匿名。即使协议完美，现或未来或有方法通过隐私层推断信息。匿名集即使用门罗的人群。请保持常识与深度防御
+  q15: 门罗是混币器或混币服务吗？
+  a15: 否。门罗通过非交互、非托管、自动流程创建私密交易，而混币服务需用户主动参与
+  qwallet: 应使用什么钱包？
+  awallet: 多种平台有多个可用钱包。本网站提供核心团队的钱包(GUI/CLI)及广泛信任的开源第三方钱包
+  qnofunds: 看不到资金。是否丢失门罗币？
+  anofunds: "可能性极低。技术上门罗币‘存在’区块链上，通过密码学保护的密钥对关联账户。看不到资金多为技术问题，请查看‘资源与帮助’找解决方案"
+  qnodetor: 如何通过Tor连接节点？
+  anodetor: Tor支持仍在早期，但已原生支持Tor网络发送交易和运行守护程序。更好的Tor/I2P集成开发中
+  qfullpruned: 选择完整节点还是修剪节点？
+  afullpruned: "完整@节点需较大存储空间，在旧硬件上同步较慢。存储有限建议用修剪节点(仅存1/8不必要数据但保留完整历史)。存储充足建议完整节点，但修剪节点仍贡献网络并提升隐私"
+  qblocksize: 门罗区块链多大？
+  ablocksize: "门罗@区块链持续增长无固定大小。截至2024年完整链约225GB，修剪链约86GB。完整与修剪区别详见门罗百科@修剪条目"
+  qblockspace: 为何区块链需大空间？
+  ablockspace: "下载@区块链即下载网络创建至今的全部@交易历史。交易数据庞大，每个节点需保存完整历史以确保一致。@修剪功能将区块链缩减至完整链1/3大小，适合存储空间有限用户。详情见门罗百科@节点和@远程节点条目"
+  qavoidbc: 能否避免下载整个区块链？
+  aavoidbc: "能。无需下载@区块链即可交易。可连接@远程节点(为您存储区块链)。所有常见@钱包(含GUI/CLI)均支持远程节点交易。GUI/CLI提供‘引导节点’功能，可边下载区块链边用远程节点交易"
+  qscanned: 为何每次打开钱包需扫描？
+  ascanned: 因上次打开后@区块链新增@交易记录，钱包需扫描所有交易检查是否有您的交易。类似mymonero的钱包中无需此过程，由服务器完成扫描
+  qdangernode: 运行个人节点危险吗？
+  adangernode: "运行个人@节点是最安全的交互方式，完全掌控且无第三方依赖。一般无危险，但请注意ISP可看到您在运行门罗节点"
+  qdangerrnode: 使用远程节点危险吗？节点运营者可见哪些信息？
+  adangerrnode: "隐私敏感用户建议用个人节点获得最高隐私。为便利使用非自控的@远程节点(公共节点)会降低隐私。节点运营者可见交易来源IP(但不见接收方/金额)，某些攻击可能降低隐私。使用Tor/I2P网络或VPN可缓解风险"
+  qantivirus: 为何杀软将门罗软件标记为恶意？
+  aantivirus: 某些杀软/防火墙会将门罗软件标记为恶意，主要因内置矿工(用于挖矿和@区块验证)，部分产品误将其识别为危险
+  aantivirus1: 问题正在解决中。若遇警告请确认软件合法性(见下方指南)，然后在杀软中添加例外。需要帮助请联系社区
+  qmoneromeaning: "为何叫‘Monero’？"
+  amoneromeaning: "Monero是西班牙语词汇，意为‘硬币’。最初名为‘Bitmonero’(西班牙语的‘比特币’)，社区分叉后改为‘Monero’"
+  qimporting: 能手动导入区块链吗？
+  aimporting: >
+    能，但不建议。导入外部@区块链非常耗时且需信任数据源。通常通过节点正常同步更快。Windows用户请按下方指南操作。Linux用户可用"monero-blockchain-import"工具(含于GUI/CLI压缩包)，启动同步命令："monero-blockchain-import --input-file blockchain.raw"
+  qhf: 门罗每6个月硬分叉一次？
+  ahf: 门罗曾每年2次网络升级(硬分叉)引入重要共识变更(如@防弹证明和CLSAG)。目前协议已成熟稳定，调整为9-12个月升级一次。最新升级于2022年8月13日
+  ahf1: 生态系统增长使频繁变更难以协调，@RandomX算法确保长期ASIC抗性不再需定期变更
+  qvideos: 有学习视频吗？
+  avideos: >
+    社区创作了大量信息内容。本网站托管讲解门罗基础的视频。建议按序观看：
+  video_intro: 门罗介绍
+  video_essentials: 核心要素
+  video_sa: 隐形地址
+  video_ringsig: 环签名
+  video_ringct: 环机密交易
+  video_fcmp: 全链成员证明
+  mvideos: "门罗百科条目有更多信息："
+  aavailable: 另有版本
+  and: 和
+  qlongtimemove: 长期未动门罗币，是否因硬分叉丢失？
+  alongtimemove: "请放心，您的币很安全。只需下载最新门罗软件，用保存的@助记词随时恢复钱包。门罗硬分叉是计划性无争议的，不会产生新币"
+  qvuln: 门罗是否有已知漏洞？
+  avuln: >
+    社区制作了《破解门罗》视频系列，探讨潜在漏洞。共14集各主题，查看 <a href="https://www.youtube.com/playlist?list=PLsSYUeVwrHBnAUre2G_LYDsdo-tD0ov-y">YouTube播放列表</a>
+  vulnspotify: Spotify播客也可用
+  qasicresistance: "什么是ASIC抗性？为何重要？"
+  aasicresistance: "ASIC是专用计算机，用于@挖矿效率极高但昂贵，被少数实体掌握可能导致网络攻击(如联合拒接交易)"
+  aasicresistance1: "门罗通过@randomx算法使ASIC挖矿无利可图，普通消费级硬件可公平竞争"
+  aasicresistance2: >
+    当前数千矿工使用"普通"计算机保护网络，使攻击更困难
+  qmaxsupply: 门罗最大供应量？
+  amaxsupply: 门罗有固定发行率非最大供应量。2022年6月9日启动@尾随发行，永久保持0.6 XMR/区块(约0.3 XMR/分钟)，首年通胀<1%并趋近0%
+  qtailemission: 门罗为何无最大供应量？
+  atailemission: 矿工通过@挖矿@区块获得区块奖励和交易费。门罗选择固定奖励激励矿工保护网络，使费用保持低位
+  atailemission1: >
+    @尾随发行创造<1%的通胀率(随时间趋近0%)。固定发行确保人为通胀不可行，使网络安全可预测
+
+mining:
+  intro1: 门罗币是依赖工作量证明挖矿达成分布式共识的加密货币。以下信息助您开始挖矿
+  intro2: 门罗项目不认可特定矿池、软件或硬件，以下内容仅供参考
+  pow: 工作量证明 (Proof of Work)
+  philosophy: >
+    门罗理念之一是平等挖矿，@RandomX算法抗ASIC确保普通消费级硬件可公平挖矿
+  efficiency: 门罗可用CPU/GPU开采，但前者效率高得多
+  miningset: 独立或矿池挖矿
+  miningsetp: >
+    矿工可选择独立挖矿或加入矿池。门罗项目鼓励个人使用官方软件独立挖矿，这对网络稳健性最有利。也鼓励使用P2Pool挖矿
+  procons: "独立/矿池挖矿优缺点："
+  solo: 独立
+  prosecure: 比矿池挖矿使网络更安全
+  prowallet: 可用门罗钱包挖矿，无需额外软件
+  conlong: 根据算力可能需要数月才能出块("彩票机制")
+  pool: 矿池
+  propay: 支付频率高，按贡献获得XMR
+  conopfee: 需支付矿池手续费
+  conminfee: 需使用第三方矿池软件(可能抽成)
+  conpolcent: 过多矿工聚集同一矿池可能导致算力>50%的危险
+  choosepol: "若需矿池选择帮助或信息，请用："
+  hardware: 硬件
+  hardwarep: "通过 <a href="https://xmrig.com/benchmark">xmrig基准测试页面</a> 可比较硬件性能(部分结果可能过时)"
+  software: 软件
+  softwarep: >
+    挖矿软件有多种选择。独立挖矿可用CLI/GUI钱包(仅CPU)。矿池/GPU挖矿需专用软件：
+  software_para: 注意部分矿工软件收取开发者费
+  support: 支持
+  supportp: "若有疑问，请到门罗矿池频道交流：<a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a> 或 <a href="irc://irc.libera.chat/#monero-pools">Libera</a>"
+  p2poolh: "P2Pool：独立与矿池挖矿的最佳结合"
+  p2poolnew: >
+    P2Pool是创新的挖矿方式，允许矿工获得高频支付而无需信任中心矿池。<a href="/2021/10/05/p2pool-released.html">发布公告</a>含更多详情
+  p2poolp: >
+    P2Pool是门罗的侧链，P2Pool区块可能是门罗区块。矿工提交包含所有矿工支付的区块模板。优质模板作为区块加入P2Pool区块链，算作矿工"份额"
+  p2poolfeatures: 主要特性
+  p2pdecentralized: "<b>去中心化</b>：无可关闭/阻止/恶意的中心服务器"
+  p2ppermissionless: "<b>无许可</b>：任何人都可加入，几乎无法审查个体矿工"
+  p2ptrustless: "<b>无信任</b>：无矿池钱包，资金即时支付给矿工"
+  p2pplns: "<b>PPLNS</b> 支付方案"
+  p2pzerofee: "0% 手续费"
+  p2pzeropayout: "<b>0 XMR</b> 支付费"
+  p2pminpayout: "最低支付额 <0.0004 XMR"
+  p2pmoreinfo: "更多信息见项目GitHub仓库："
+
+what-is-monero:
+  need-to-know: 您需要了解的
+  leading: 门罗币是专注私密和抗审查交易的领先加密货币
+  leading_para1: 多数加密货币(含比特币、以太坊)有透明@区块链，交易可被任何人验证追踪
+  leading_para2: 门罗币使用多种技术确保用户隐私
+  confidential: 门罗交易保密且不可追踪
+  confidential_para1: "与选择性透明方案(如Zcash)不同，门罗是唯一默认所有用户匿名的加密货币。@隐形地址、@环签名和@环机密交易分别隐藏接收方、发送方和金额"
+  confidential_para2: 每笔交易私密使门罗成为真正的@可互换货币。商家和个人接受门罗币无需担忧黑名单或污点币
+  grassroots: 门罗是吸引全球顶尖加密货币人才的草根社区
+  grassroots_p1: 门罗项目处于加密货币隐私安全前沿，其
+  grassroots_p2: 研究实验室
+  grassroots_p3: "和开发团队持续创新。项目启动以来收到全球"
+  grassroots_p4: "500多位开发者"
+  grassroots_p5: "贡献"
+  grassroots_p6: "提供众多"
+  grassroots_p7: "论坛和聊天频道"
+  grassroots_p8: "欢迎任何人加入"
+  electronic: 门罗电子现金支持全球快速低成本支付
+  electronic_para1: 无电汇/支票清算费，无冻结期，无欺诈退单。去中心化特性使其免受特定司法管辖区限制和资本管制
+  videos: 门罗视频(英语)
+  aboutb: 关于
+  walletb: 获取钱包
+  getb: 获取门罗币
+  joinb: 加入工作组
 
 about:
-  title: 关于门罗币
-  para1: 门罗币是一个开源项目，由全球志愿者社区维护和开发。
-  para2: 历史：
-  history1: 门罗币于2014年4月作为Bitmonero项目启动
-  history2: 2014年12月更名为门罗币（Monero）
-  history3: 自成立以来，门罗币不断改进其隐私技术和性能
-  para3: 价值观：
-  value1: 隐私 - 保护用户的财务隐私
-  value2: 去中心化 - 确保网络不受任何单一实体控制
-  value3: 安全 - 使用先进的密码学技术确保交易安全
-  value4: 创新 - 不断探索和实现新的隐私技术
-  para4: 组织结构：
-  structure1: 门罗币是一个去中心化的项目，没有中央领导
-  structure2: 决策通过社区讨论和共识达成
-  structure3: 开发工作由多个工作组和个人贡献者完成
-  para5: 有关门罗币的更多历史和背景信息，请查看我们的"历史页面"。
+  history: 简史
+  history_para1: "门罗于2014年4月启动，是CryptoNote参考代码的公平预发布。无预挖/立即挖矿，区块奖励不用于开发。原始Bitcointalk帖："
+  history_para2: "此处"
+  history_para3: 创始人的争议修改导致社区分叉，新核心团队持续监督至今
+  history_para4: "门罗进行了多项重大改进：迁移数据结构、设置最小环签名强制隐私交易、实施RingCT隐藏金额等。所有改进以隐私安全为首，易用效率次之"
+  values: 我们的价值观
+  values_para: 门罗不仅是技术，更代表其所坚守的理念：
+  security: 安全
+  security_para: 用户必须能信任门罗处理交易。将全额区块奖励给保障网络安全的矿工，使用最强加密工具保护交易
+  privacy: 隐私
+  privacy_para: 门罗视隐私为基本权利，需在法庭甚至死刑案例中保护用户。无论技术背景，所有用户都应能实现完全隐私保护，不必因隐私担忧改变消费习惯
+  decentralization: 去中心化
+  decentralization_para: 网络安全和代码开发均追求最高去中心化。抗ASIC的工作量证明确保矿工公平竞争。开发研究通过全球协作透明进行，重要会议均在线公开
+
+developer-guides:
+  head: 开发者指南、文档和资源合集(英文)
+  outdated: "方法常被添加/移除/更新，描述可能不精确"
+  rpc: RPC文档
+  daemonrpc: 守护程序RPC
+  daemonrpc_descr: @守护程序的RPC调用(含输入输出和示例)
+  walletrpc: 钱包RPC
+  walletrpc_descr: monero-wallet-rpc调用(含输入输出和示例)
+  external: 外部资源
+  external_head: 社区成员维护的有用文档和资源
+  monerodocs: 组织门罗技术知识的综合资源(部分可能过时)
+  moneroexamples: 门罗开发示例文档的丰富列表
+  moneroecosystem: 门罗开发生态系统(含库、资源和工作组指南)
+  monerose: 对用户开发者最全面的资源之一
+  libraries: 库和工具
+  libraries_para: 门罗库由社区创建维护(未经核心团队审核)。添加库请向
+  monero-javascript: 使用门罗的Node.js库
+  monero-nodejs: monero-wallet-rpc的钱包管理器
+  monerophp: 门罗集成团队用PHP编写的库
+  monerowp: Wordpress的Monero WooCommerce插件
+  monero-python: 处理门罗的完整Python模块
+  moneriote-python: 维护门罗开放节点DNS记录的Python脚本
+  monerorpc: 门罗钱包和守护程序RPC的Java接口
+  monero-java: 使用门罗的Java库
+  monero-cpp: 使用门罗的C++库
+  vanity-monero: 为CryptoNote货币生成虚荣地址
+  go-monero-rpc-client: monero钱包和守护程序RPC的Go客户端
+  monero-rs: 支持门罗区块数据序列化和密钥地址操作的库
+  csharp-monero: 基于.netstandard2.1的门罗JSON-RPC API客户端
+
+user-guides:
+  general: 通用
+  mining: 挖矿
+  backup: 备份
+  nodesync: 节点与同步
+  recovery: 恢复
+  wallets: 钱包
+  hardwarewallet: 硬件钱包
+  anonimizationnetworks: 匿名化网络
+  offline-backup: 如何制作离线备份(高级)
+  vps-node: 如何运行节点(systemd)
+  import-blockchain: 如何导入门罗区块链(高级)
+  monero-tools: 门罗工具
+  purchasing-storing: 如何创建门罗纸钱包
+  verify-allos: 如何用命令行验证门罗软件安全(高级)
+  verify-windows: 如何在Windows验证门罗软件安全(初级)
+  mine-on-pool: 如何用XMRig在矿池挖矿
+  solo-mine: 如何用门罗GUI单独挖矿
+  locked-funds: 如何修复被锁资金
+  restore-account: 如何用助记词恢复钱包
+  qubes: 如何在Qubes+Whonix中使用门罗CLI/守护程序
+  cli-wallet: 门罗CLI钱包指南
+  remote-node-gui: 如何在GUI钱包连接远程节点
+  view-only: 如何创建仅查看钱包
+  prove-payment: 如何证明已完成付款
+  restore-from-keys: 如何用密钥恢复钱包
+  ledger-wallet-cli: 如何在门罗CLI使用Ledger钱包
+  multisig-messaging-system: 用MMS和CLI钱包进行多签交易
+  tor_wallet: 如何通过Tor连接钱包至自己的节点
+  node-tori2p: 如何为节点添加Tor和I2P支持
+  guiguide: 门罗GUI钱包指南
+  make-payment: 如何付款
+  change-restore-height: 如何修改钱包恢复高度
+  back: 返回列表
+  scan-txid: 如何扫描缺失的交易CLI/GUI
+  join-monero-matrix: 通过Element加入门罗社区Matrix服务器
 
 roadmap:
-  title: 路线图
-  para1: 门罗币的路线图展示了项目的发展方向和未来计划。
-  para2: 路线图包括：
-  item1: 已完成的里程碑
-  item2: 当前正在开发的功能
-  item3: 未来计划的改进
-  para3: 有关详细的路线图和时间表，请查看我们的"路线图页面"。
+  completed: 已完成
+  ongoing: 进行中
+  upcoming: 待完成
+  proposed: 提议中
+  future: 未来计划
 
-researchlab:
-  title: 门罗币研究实验室（MRL）
-  para1: 门罗币研究实验室（MRL）是门罗币的研究部门，由密码学家和研究人员组成，致力于开发新的隐私技术和改进门罗币的现有功能。
-  para2: MRL的研究领域包括：
-  research1: 密码学研究
-  research2: 隐私增强技术
-  research3: 区块链扩展性
-  research4: 安全分析
-  para3: MRL的研究成果直接影响门罗币的技术发展和改进。
-  para4: 如何参与MRL的研究：
-  step1: 1. 了解MRL的研究方向和当前项目
-  step2: 2. 参与相关的讨论和研究
-  step3: 3. 提交您的研究成果或想法
-  para5: 有关MRL的更多信息和研究论文，请查看我们的"研究实验室页面"。
+  jan: 1月
+  feb: 2月
+  mar: 3月
+  apr: 4月
+  may: 5月
+  jun: 6月
+  jul: 7月
+  aug: 8月
+  sep: 9月
+  oct: 10月
+  nov: 11月
+  dec: 12月
+  comingsoon: 即将推出
 
-moneropedia:
-  title: 门罗百科
-  para1: 门罗百科是一个开放的门罗币知识百科全书，包含门罗币相关的术语、概念和技术解释。
-  para2: 浏览门罗百科的条目：
-  entry1: 按字母顺序列出的术语
-  entry2: 按类别组织的条目
-  para3: 如何贡献：
-  step1: 1. 注册门罗百科账户
-  step2: 2. 查找需要改进或添加的条目
-  step3: 3. 编辑或创建新条目
-  step4: 4. 提交您的更改以供审核
-  para4: 有关门罗百科的更多信息和指南，请查看我们的"门罗百科页面"。
+  launched: Bitcointalk发布
+  renamed: 从Bitmonero更名为Monero
+  recovered: 从垃圾邮件攻击恢复
+  paper1-2: MRL论文1和2发布
+  paper3: MRL论文3发布
+  released-0-8-8-6: 0.8.8.6发布
 
-userguides:
-  title: 用户指南
-  para1: 门罗币社区创建了许多指南和教程，帮助用户了解如何使用门罗币并解决常见问题。
-  para2: 指南分类：
-  guide1: 入门指南
-  guide2: 钱包使用指南
-  guide3: 挖矿指南
-  guide4: 交易指南
-  guide5: 隐私增强指南
-  guide6: 故障排除指南
-  para3: 如何贡献：
-  step1: 1. 找到需要改进或添加的指南
-  step2: 2. 编辑或创建新指南
-  step3: 3. 提交您的更改以供审核
-  para4: 有关最新的用户指南，请查看我们的"用户指南页面"。
+  paper4: MRL论文4发布
 
-developerguides:
-  title: 开发者指南
-  para1: 门罗币社区创建了许多资源和文档，帮助开发者构建基于门罗币的应用程序和服务。
-  para2: 开发者资源：
-  resource1: API文档
-  resource2: 代码示例
-  resource3: 库和工具
-  resource4: 最佳实践
-  para3: 开发主题：
-  topic1: 钱包开发
-  topic2: 支付集成
-  topic3: 区块浏览器开发
-  topic4: 门罗币网络交互
-  para4: 如何贡献：
-  step1: 1. 了解门罗币的技术架构
-  step2: 2. 参与相关的开发讨论
-  step3: 3. 提交您的代码或文档贡献
-  para5: 有关最新的开发者指南，请查看我们的"开发者指南页面"。
+  released-0-9-0: 0.9.0氢氦结发布
+  paper5: MRL论文5发布
+  ringsize-3: 网络升级要求最小环大小3
+  released-0-10-0: 0.10.0 Wolfram Warptangent发布
+  splitcoinbase: 币基拆分为面额
+  released-0-10-1: 0.10.1 Wolfram Warptangent发布
+  guibeta1: 官方GUI测试版1发布
 
-technicalspecs:
-  title: 技术规格
-  para1: 门罗币的技术规格包括：
-  spec1: 共识算法：工作量证明（PoW）
-  spec2: 挖矿算法：CryptoNight（定期更新）
-  spec3: 区块时间：2分钟
-  spec4: 最大供应量：1840万枚
-  spec5: 隐私技术：环签名、环机密交易、隐形地址
-  spec6: 区块奖励：递减，最终为0.6 XMR/区块
-  para2: 有关门罗币技术规格的详细信息，请查看我们的"技术文档"。
+  enableringct: 网络升级启用环机密交易
+  released-0-10-2: 0.10.2发布(修复漏洞)
+  released-0-10-3-1: 0.10.3.1 Wolfram Warptangent发布
+  hfminblock: 调整最小区块大小和动态费用
+  webredesign: 网站重新设计
+  released-0-11-0: 0.11.0.0氦海怪发布
+  fluffyblocks: "蓬松区块"
+  guioutbeta: GUI结束测试
+  minringsize5: 最小环大小5并强制环机密交易
+  releasedgui-0-11-0: GUI 0.11.0.0氦海怪发布
+  zeromq: 0MQ
+  subaddress: 子地址
+  paper6: MRL论文6发布
+  release-0-11-1: 0.11.1.0氦海怪发布
+  releasedgui-0-11-1: GUI 0.11.1.0氦海怪发布
+  multisig: 多重签名
 
-themoneroproject:
-  title: 门罗币项目
-  para1: 门罗币项目是一个致力于开发和推广门罗币的社区组织。
-  para2: 项目目标：
-  goal1: 开发和维护门罗币软件
-  goal2: 推广门罗币的使用和理解
-  goal3: 教育公众关于财务隐私的重要性
-  goal4: 与其他隐私相关项目合作
-  para3: 项目结构：
-  structure1: 核心开发组
-  structure2: 研究组
-  structure3: 社区支持组
-  structure4: 市场营销组
-  para4: 如何支持项目：
-  support1: 贡献代码或文档
-  support2: 提供翻译
-  support3: 参与社区讨论
-  support4: 捐赠门罗币
-  para5: 有关门罗币项目的更多信息，请查看我们的"关于页面"。
+  released-0-12-0: 0.12.0.0锂月神发布
+  releasedgui-0-12-0: GUI 0.12.0.0锂月神发布
+  cryptonightv2: 新PoW算法CryptoNightV2
+  hfring7: 最小环大小7，集成多签/子地址，更改PoW算法
+  getmonero-fr-pl: getmonero.org法语/波兰语本地化
+  released-0-12-1: 0.12.1.0锂月神发布
+  ledger: Ledger硬件钱包支持
+  released-0-12-2: 0.12.2.0锂月神发布
+  released-0-12-3: 0.12.3.0锂月神发布
+  releasedgui-0-12-3: GUI 0.12.3.0锂月神发布
+  kovrialpha: Kovri测试版发布
+  moneropedialoc: getmonero.org 门罗百科开放本地化
+  getmonero-ar: getmonero.org阿拉伯语本地化
+  released-0-13-0-2: 0.13.0.2铍子弹发布
+  releasedgui-0-13-3: GUI 0.13.0.3铍子弹发布
+  cryptonightv3: 新PoW算法CryptoNightV3
+  bulletproofs: 防弹证明减少交易大小
+  ringsize11: 最小环大小11，集成防弹证明，更新费用计算和PoW算法
+  released-0-13-0-4: 0.13.0.4铍子弹发布
+  paper8-9: MRL论文8和9发布
+  releasedgui-0-13-0-4: GUI 0.13.0.4铍子弹发布
+  paper7: MRL论文7发布
+  paper10: MRL论文10发布
+  mms: 门罗消息系统实现多签钱包自动化
 
-tools:
-  title: 工具
-  para1: 门罗币社区开发了许多工具和服务，帮助用户与门罗币生态系统交互。
-  para2: 工具分类：
-  tool1: 区块浏览器
-  tool2: 钱包生成器
-  tool3: 支付处理器
-  tool4: 价格追踪器
-  tool5: 挖矿计算器
-  tool6: 隐私增强工具
-  para3: 有关最新的工具列表，请查看我们的"工具页面"。
+  getmonero-de: getmonero.org德语本地化
+  released-0-14-0: 0.14.0.0硼蝶化发布
+  releasedgui-0-14-0: GUI 0.14.0.0硼蝶化发布
+  ccs: 新社区众筹系统(CCS)取代论坛资助系统(FFS)
+  released-0-14-0-2: 0.14.0.2硼蝶化发布
+  cryptonightr: 新PoW算法CryptoNightR
+  getmonero-pt_br: getmonero.org巴西葡语和荷兰语本地化
+  dlsag: "DLSAG：门罗可互操作支付通道的非交互式退款交易"
+  pruning: 区块链修剪
+  trezort: Trezor model T支持
+  nanox: Ledger Nano X支持
+  tori2p: Tor & I2P CLI钱包集成
+  multisigms: 多签消息系统
+  weblate: 本地化平台从Pootle迁移到Weblate
+  rpcpay: 通过挖矿支付服务系统
+  ipv6: IPv6支持
+  removedpid: 移除长支付ID支持
+  nodediscovery: GUI自动发现和切换远程节点选项
+  randomx: 新PoW算法RandomX
 
-presskit:
-  title: 新闻资料包
-  para1: 门罗币新闻资料包包含：
-  item1: 徽标和品牌资源
-  item2: 新闻稿和官方声明
-  item3: 项目概述和背景信息
-  item4: 技术规格和白皮书
-  item5: 联系方式
-  para2: 如何使用新闻资料包：
-  step1: 1. 下载所需的资源
-  step2: 2. 在您的文章或报道中使用
-  step3: 3. 如有需要，联系我们获取更多信息
-  para3: 有关最新的新闻资料包，请查看我们的"新闻资料包页面"。
+  getmoneroweblate: getmonero.org支持Weblate翻译
+  releasedgui-0-15-0-4: GUI 0.15.0.4发布
+  released-0-15-0-5: CLI 0.15.0.5发布
+  dandelion: Dandelion++协议实现
+  onionaddress: getmonero.org洋葱地址
+  supercop: 钱包扫描加速
+  clsag: 简洁可链接自发匿名群(CLSAG)签名
+  kastelo: "Kastelo开源硬件钱包"
+  released-0-16-0-0: CLI和GUI 0.16.0.0发布
+  released-0-17: CLI和GUI 0.17 "氧猎户"发布
+  
+  atomicswaps: 门罗<->比特币原子交换
+  bplus: 防弹证明+
+  p2pool: P2Pool发布
+  haveno: Haveno
 
-legal:
-  title: 法律
-  para1: 门罗币项目的法律信息：
-  item1: 隐私政策
-  item2: 服务条款
-  item3: 免责声明
-  item4: 许可证信息
-  para2: 有关门罗币项目的法律信息，请查看我们的"法律页面"。
+  seraphis-jamtis: Seraphis代码库和Jamtis
+  ospead: OSPEAD
+  released-0-18: CLI和GUI 0.18 "氟费米"发布
+  hardfork-v15: 网络升级v15硬分叉
+  xmr-eth-atomicswaps: 门罗<->以太坊原子交换
+  bp++: 防弹证明++
+  lws-subaddress: 轻钱包服务器子地址支持
+  view-tags: 单字节视图标签使钱包同步速度提高40%
 
-blogbytag:
-  title: 博客
-  para1: 浏览按标签分类的博客文章：
+  genimprov: "多项改进：减少区块传播延迟，限制tx_extra，加速钱包刷新/启动"
 
-library:
-  title: 图书馆
-  para1: 门罗币图书馆包含：
-  item1: 书籍和出版物
-  item2: 研究论文
-  item3: 白皮书
-  item4: 演示文稿
-  para2: 有关最新的图书馆资源，请查看我们的"图书馆页面"。
+  xmrbch-atomicswap: XMR-BCH原子交换完成
+  haveno-mainnet: HavenoDEX发布
+  fcmp-plus: 完整链成员证明+
+  mrl-tasks: MRL提议任务
+  cuprate: Monerod Rust实现 - Cuprate
+
+research-lab:
+  intro: 门罗币不仅致力于创建可互换货币，还通过门罗研究实验室持续探索金融隐私领域。以下是实验室成果，更多论文敬请期待
+  intro_email: "联系MRL请邮件 lab@getmonero.org"
+  mrl_papers: 已发表论文
+  abstract: 摘要
+  introduction: 引言
+  read-paper: 阅读论文
+  summary: 概要
+  mrlhtp: 理解 ge_fromfe_frombytes_vartime
+  mrlhtp_summary: 门罗使用独特哈希函数将标量转为椭圆曲线点，对创建密钥映像特别有用。此文档将ge_fromfe_frombytes_vartime()函数实现转化为数学表达式
+  mrl1: CryptoNote 2.0追溯链反应说明
+  mrl1_abstract: 探讨环签名匿名系统的潜在攻击。结果表明若参数选择不当且攻击者掌控足够网络比例，可能导致全网追溯性临界损失
+  mrl2: 使用Merkle树漏洞伪造加密货币
+  mrl2_abstract: 分析2014年9月针对门罗网络的特殊攻击。描述解决方案及当前修复措施
+  mrl3: 门罗并非神秘
+  mrl3_abstract: 澄清围绕门罗环签名的误解，将其数学原理与代码实现相关联
+  mrl4: 改进CryptoNote协议混淆
+  mrl4_abstract: 识别区块链分析攻击并推荐改进方案(最小混合策略、种子风格发送方法等)，讨论其影响
+  mrl5: 环签名保密交易
+  mrl5_abstract: 介绍隐藏交易金额的方法，描述多层可链接自发匿名群签名方案及其扩展应用
+  mrl6: 门罗子地址高效实现
+  mrl6_abstract: 文档化允许单个主地址生成无限不可链接子地址的方案，提升用户隐私和便利
+  mrl7: 已用输出集合
+  mrl7_abstract: 使用基本集合理论泛化已用输出概念，量化区块链分析影响并提供缓解措施
+  mrl8: 双可链接环签名
+  mrl8_abstract: 描述支持双密钥输出的修改方案及其在非交互退款交易的应用
+  mrl9: 门限环签名及其在支付模糊数字货币的应用
+  mrl9_abstract: 提出门限环多重签名及其在跨链原子交换的应用
+  mrl10: 跨群离散对数等价
+  mrl10_abstract: 描述证明离散对数跨群等价算法
+  iacr2019654: 简洁可链接环签名及反密钥伪造
+  iacr2019654_abstract: 证明非诽谤性是可链接环签名的自然不可伪造定义。提出具有可证明安全性的签名方案
+  iacr2020018: Triptych：应用中的对数级可链接环签名
+  iacr2020018_abstract: 无信任设置的可链接环签名，签名大小对数级，验证线性但有批量优化
+  iacr2020312: Arcturus：保密交易的高效证明
+  iacr2020312_note: "注：此论文已撤回，但可查看'此报告所有版本'"
+  iacr2020312_abstract: 扩展Triptych构建Arcturus证明系统，支持更复杂的保密交易模型
+  cryptonote: Cryptonote白皮书
+  cryptonote-whitepaper: Cryptonote白皮书
+  cryptonote-whitepaper_para: CryptoNote协议的原始技术文档
+  annotated: 注解版白皮书
+  annotated_para: MRL发布的带注释版本，以通俗语言解释复杂概念
+  brandon: Brandon Goodell的白皮书评审
+  brandon_para: 对原始cryptonote白皮书的正式评审
+  libraryp: "资源库包含《从零开始学门罗币》和《精通门罗币》等深度解析门罗的文档"
+  librarybutton: 探索资源库
