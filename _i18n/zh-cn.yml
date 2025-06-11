@@ -7,8 +7,8 @@ global:
   sitename: getmonero.org, 门罗币项目
   wiki: 门罗币百科
   tags: 标签
-  wikimeta: meta维基
-  tagsmeta: meta标签
+  wikimeta: 元维基
+  tagsmeta: 元标签
   titlemeta: 门罗币，一种安全，隐私的，且无法追踪的数字货币
   terms: 条款
   privacy: 隐私
@@ -39,13 +39,13 @@ titles:
   themoneroproject: 门罗币项目
   presskit: 门罗币资料
   legal: 规则
-  blogbytag: Blog
+  blogbytag: 博客
   library: 资料
 
   workgroups: 工作组
   tools: 工具
 navigation:
-  getstarted: 始
+  getstarted: 开始
   whatis: 什么是门罗币？
   accepting: 接收
   contributing: 贡献
@@ -99,7 +99,7 @@ hangouts:
     monero-offtopic: 和门罗币社区的朋友们聊天胡侃的专用频道。
     monero-pools: 为挖矿问题相关提供的频道。
     monero-research-lab: 研究使用加密货币的金融隐私问题。
-    monero-translations: 把门罗项目本土化成其他语言。
+    monero-translations: 把门罗项目翻译成其他语言。
     monero-hardware: 构建硬件钱包来保障你的门罗币安全。
     monero-site:
   mailing_list1: 你想直接通过邮箱地址接收到重要公告吗？加入我们的邮件列表吧！
@@ -136,9 +136,9 @@ team:
   website: 网站：
 downloads:
   intro: 在这里你可以下载到最新版本的门罗币应用，包括适用于硬件钱包、轻钱包和手机端钱包的软件。
-  choose: Choose your download
-  gui: GUI Wallet
-  cli: CLI Wallet
+  choose: 选择你要下载的版本
+  gui: 带有图形化界面的官方钱包
+  cli: 命令行官方钱包
   blockchain: Blockchain Bootstrap
   blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from
     scratch, you can use the most current bootstrap. It is typically much faster to
