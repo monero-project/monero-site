@@ -6,17 +6,18 @@ global:
   monero_project: 门罗币项目
   sitename: getmonero.org, 门罗币项目
   wiki: 门罗币百科
-  tags: 标签
-  wikimeta: 元维基
-  tagsmeta: 元标签
+  tags: 按标签分类的文章
+  wikimeta: 门罗币知识的开放百科全书
+  tagsmeta: 门罗币社区的博客文章
   titlemeta: 门罗币，一种安全，隐私的，且无法追踪的数字货币
   terms: 条款
   privacy: 隐私
-  untranslated: 这个页面尚未被翻译。 如果您愿意协助翻译，请参见
-  outdatedVersion: 英文版本
-  outdatedMin: 这个页面自被翻译后又有更新。您可以继续使用这个版本的页面，但是它有可能并不完整。请使用
-  lang_tag: "@lang_tag_zh-cn"
-  outdated: 此页面内容已过期，可能不再有效。如果您需要帮助，请联系社区。
+  untranslated: 此页面尚未翻译。若您想协助翻译，请参阅
+  outdated: 此页面内容已过时，可能不再有效。如需支持，请联系社区。
+  outdatedMin: 此页面内容已更新，当前翻译版本可能不完整。您可使用本版本，但建议参考
+  outdatedVersion: 英语版本
+  lang_tag: "@lang_tag_en"
+
 titles:
   index: 索引
   whatismonero: 什么是门罗币 (XMR)?
@@ -25,22 +26,24 @@ titles:
   mining: 门罗币挖矿
   faq: 常见问题
   downloads: 下载
-  allposts: 所有文章
+  allposts: 所有博客文章
+  workgroups: 工作组
   hangouts: 社区
   sponsorships: 赞助
-  merchants: 商户和交易所
+  merchants: 商户&交易所
   about: 关于门罗币
   roadmap: 路线图
-  researchlab: 门罗币研究实验室（MRL）
+  researchlab: 门罗币研究实验室 (MRL)
   moneropedia: 门罗币百科
   userguides: 用户指南
   developerguides: 开发者指南
-  technicalspecs: 技术说明
+  technicalspecs: 技术规格
   themoneroproject: 门罗币项目
-  presskit: 门罗币资料
-  legal: 规则
-  blogbytag: Blog
-  library: 资料
+  tools: 工具
+  presskit: 新闻
+  legal: Legal
+  blogbytag: 博客
+  library: 资源
 
   workgroups: 工作组
   tools: 工具
@@ -605,7 +608,7 @@ library:
   books: 书籍
   zerotomonerov2: "Zero to Monero: Second Edition"
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://hgithub.xyz/UkoeHB/Monero-RCT-report">LaTeX
+    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
     source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
     We endeavor to teach anyone who knows basic algebra and simple computer science
@@ -614,7 +617,7 @@ library:
     can be.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://hgithub.xyz/UkoeHB/Monero-RCT-report">LaTeX
+    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
     source code here</a>
   masteringmonerop: >
     一本能让你在看似复杂的门罗世界里畅游无阻的指南。<br>
