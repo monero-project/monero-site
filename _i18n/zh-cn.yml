@@ -6,17 +6,18 @@ global:
   monero_project: 门罗币项目
   sitename: getmonero.org, 门罗币项目
   wiki: 门罗币百科
-  tags: 标签
-  wikimeta: meta维基
-  tagsmeta: meta标签
+  tags: 按标签分类的文章
+  wikimeta: 门罗币知识的开放百科全书
+  tagsmeta: 门罗币社区的博客文章
   titlemeta: 门罗币，一种安全，隐私的，且无法追踪的数字货币
   terms: 条款
   privacy: 隐私
-  untranslated: 这个页面尚未被翻译。 如果您愿意协助翻译，请参见
-  outdatedVersion: 英文版本
-  outdatedMin: 这个页面自被翻译后又有更新。您可以继续使用这个版本的页面，但是它有可能并不完整。请使用
-  lang_tag: "@lang_tag_zh-cn"
-  outdated: 此页面内容已过期，可能不再有效。如果您需要帮助，请联系社区。
+  untranslated: 此页面尚未翻译。若您想协助翻译，请参阅
+  outdated: 此页面内容已过时，可能不再有效。如需支持，请联系社区。
+  outdatedMin: 此页面内容已更新，当前翻译版本可能不完整。您可使用本版本，但建议参考
+  outdatedVersion: 英语版本
+  lang_tag: "@lang_tag_en"
+
 titles:
   index: 索引
   whatismonero: 什么是门罗币 (XMR)?
@@ -25,7 +26,8 @@ titles:
   mining: 门罗币挖矿
   faq: 常见问题
   downloads: 下载
-  allposts: 所有文章
+  allposts: 所有博客文章
+  workgroups: 工作组
   hangouts: 社区
   sponsorships: 赞助
   merchants: 商户和交易所
@@ -35,17 +37,31 @@ titles:
   moneropedia: 门罗币百科
   userguides: 用户指南
   developerguides: 开发者指南
-  technicalspecs: 技术说明
+  technicalspecs: 技术规格
   themoneroproject: 门罗币项目
-  presskit: 门罗币资料
-  legal: 规则
-  blogbytag: Blog
-  library: 资料
-
-  workgroups: 工作组
   tools: 工具
+  presskit: 门罗币资料
+  legal: 法规
+  blogbytag: 博客
+  library: 资源
+
+meta_descr:
+  whatismonero: 全面解释什么是门罗币以及如何开始使用它
+  accepting: 使用GUI钱包进行接收门罗币的指南
+  contributing: 有许多方法和技能可以为门罗币做出贡献
+  mining: 关于门罗币挖矿的信息、软件与资源
+  blog: 门罗币项目及其社区新闻、发布通知和联系（通信）
+  workgroups: 了解数百名参与门罗币项目的志愿者在哪里会面与协调
+  sponsorships: 门罗币项目的现任与历史赞助商
+  about: 门罗币项目与技术历史、意义价值和基本结构
+  roadmap: 门罗币自创建以来所取得的成就、现在进行中的开发内容以及未来计划的概述
+  mrl: 门罗币的研究区，提供研究论文、白皮书和其它与研究相关的信息
+  userguides: 一些指南与手册，指导您使用门罗币并解决常见问题
+  tools: 第三方工具的链接，例如区块链浏览器、支付网关与生成器，以此与门罗币生态系统进行交互
+  presskit: 门罗币的标志、营销材料、联系方式以及新闻文档
+
 navigation:
-  getstarted: 始
+  getstarted: 开始
   whatis: 什么是门罗币？
   accepting: 接收
   contributing: 贡献
@@ -56,36 +72,53 @@ navigation:
   about: 关于
   mrl: 研究实验室
 
+footer:
+  feed: RSS源
+  legal: 法规
+  source: 源代码
+  ml: 邮箱列表
+  ccs: 社区众筹系统
+  reachout: 伸出援手
+
 index:
-  page_title: "门罗币-安全、隐私、无法追踪"
+  page_title: "门罗币 - 安全、隐私、无法追踪"
+
 home:
+  heading: 门罗币意为金钱
   heading2: 集私密性与去中心化于己身，保证您财务隐私与安全的数字货币。
-  downloads: 下载
-  moneropedia_para: 想了解和门罗币相关的词汇和概念？您可以在此处找到完整排序的门罗币的相关知识。
-  moneropedia_button: 阅读门罗百科
-  faq: 常见问题
-  faq_para: 门罗币社区一直以来收到了很多疑问，为了便于查询，我们把常见问题和回答列在这里。如果这里仍无法解决您的疑惑，您可以到门罗币社区询问。
+  whatis: 了解更多关于门罗币的事
   about: 关于门罗币
-  getcoins: 获得门罗币
-  useit_para: 门罗币是一种货币，它可以被用来交换物品，服务和其他货币，它保护您的隐私并且拥有非常低的网络转账费用。有许多客户非常愿意使用门罗币来进行支付；查阅“商户”页面了解更多。
-  merchants: 商户
-  answers: 寻找答案
   joincommunity: 加入社区
-  exchanges: 交易所
   choosewallet: 选择钱包
   choosewallet_para: 你需要选择一个钱包软件来使用门罗币。访问我们的下载页面并选择适合你的钱包软件。门罗币的钱包软件涵盖多个平台，表现优异。
-  getcoins_para: 在你安装了钱包软件之后，你需要获得一些门罗币。有许多种方式可以获得门罗币，比如挖矿或通过交易所，最简单的获取方式是通过交易所，将您的法定货币交换为门罗币。许多中心化和去中心化交易所都支持门罗币交易。
+  downloads: 下载
+  getcoins: 获得门罗币
+  getcoins_para: 在你安装了钱包软件之后，你需要获得一些门罗币。有许多种方式可以获得门罗币，比如挖矿或通过交易所，最简单的获取方式是通过交易所，将您的法定货币交换为门罗币。许多中心化和去中心化交易所都支持门罗币（XMR）交易。
+  exchanges: 交易所
+  useit: "这是一种货币，尽情的使用它吧！"
+  useit_para: 门罗币是一种货币，它可以被用来交换物品，服务和其他货币，它保护您的隐私并且拥有非常低的网络转账费用。有许多客户非常愿意使用门罗币来进行支付；查阅“商户”页面了解更多。
+  merchants: 商户
+  answers: 寻求答案
+  faq: 常见问题
+  faq_para: 这些年来，我们收到了很多问题，并汇编了一份详尽多样的“常见问题”清单。别担心，如果你的问题不在那里，你可以随时向社区提问。
+  guides: 指南与资源
+  guides_para: >
+   社区有着大量的资源和文件资料，
+   用户可以找到有关常见配置和“用户指南”部分的提示；
+   开发人员可以找到基于门罗币构建服务所需的一切，也可以简单地与网络通信。
+   在“开发者指南”中，图书馆提供可免费下载的出版物和书籍，包括完整的《精通门罗币》和《从零到门罗币》书籍。
+  moneropedia_para: 你想看看门罗币项目及社区中使用的术语和概念的含义吗？在这里，你可以找到一份按字母顺序排列的百科。
+  moneropedia_button: 阅读门罗币百科
+  contributecommunity: "我们需要您的贡献！"
   contributecommunity_para: 门罗币不仅是一种货币，它还是一个离不开大量志愿者辛勤付出的去中心化社区。现在就加入我们吧！
-  contributecommunity: 我们需要您的贡献！
-  guides: 指南和资源
   researchlab_para: MRL（门罗币研究实验室）是门罗币非常重要的一部分，来自全世界的研究者和密码学家在一起让门罗币变得更好。阅读他们的论文，和他们并肩作战！
-  whatis: 了解更多关于门罗币的信息
-  useit: 这是一种货币，尽情的使用它吧！
-  morevideos: 想要更多解释性的视频？
+  visitmrl: 访问门罗币研究实验室（MRL）
   contributing: 贡献
-  visitmrl: 访问MRL
-  heading: Monero 意为金钱
-  meetcommunity: 立即加入社群！
+  meetcommunity: "立即加入社区！"
+  meetus: "门罗币社区的成员遍布世界各地，你可以在多个平台上找到我们，来见见我们！"
+  hangouts: 社区
+  morevideos: 想要更多能帮助你认识门罗币的视频？
+  
 hangouts:
   intro: 门罗币在各种社交媒体上都有许多社区。我们可能来自世界各处，但是总有一些地方是我们常去的。门罗社区的聚集处已经列在下面，加入我们吧！
   resources: 工作组
