@@ -45,6 +45,21 @@ titles:
   blogbytag: 博客
   library: 资源
 
+meta_descr:
+  whatismonero: 全面解释什么是门罗币以及如何开始使用它
+  accepting: 使用GUI钱包进行接收门罗币的指南
+  contributing: 有许多方法和技能可以为门罗币做出贡献
+  mining: 关于门罗币挖矿的信息、软件与资源
+  blog: 门罗币项目及其社区新闻、发布通知和联系（通信）
+  workgroups: 了解数百名参与门罗币项目的志愿者在哪里会面与协调
+  sponsorships: 门罗币项目的现任与历史赞助商
+  about: 门罗币项目与技术历史、意义价值和基本结构
+  roadmap: 门罗币自创建以来所取得的成就、现在进行中的开发内容以及未来计划的概述
+  mrl: 门罗币的研究区，提供研究论文、白皮书和其它与研究相关的信息
+  userguides: 一些指南与手册，指导您使用门罗币并解决常见问题
+  tools: 第三方工具的链接，例如区块链浏览器、支付网关与生成器，以此与门罗币生态系统进行交互
+  presskit: 门罗币的标志、营销材料、联系方式以及新闻文档
+
   workgroups: 工作组
   tools: 工具
 navigation:
