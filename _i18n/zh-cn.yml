@@ -7,7 +7,7 @@ global:
   sitename: getmonero.org, 门罗币项目
   wiki: 门罗币百科
   tags: 按标签分类的文章
-  wikimeta: 门罗币知识的开放百科全书
+  wikimeta: 门罗币的开放百科全书
   tagsmeta: 门罗币社区的博客文章
   titlemeta: 门罗币，一种安全，隐私的，且无法追踪的数字货币
   terms: 条款
@@ -117,7 +117,7 @@ home:
   meetcommunity: "立即加入社区！"
   meetus: "门罗币社区的成员遍布世界各地，你可以在多个平台上找到我们，来见见我们！"
   hangouts: 社区
-  morevideos: 想要更多能帮助你认识门罗币的视频？
+  morevideos: 想要更多引导及介绍视频？
   
 hangouts:
   intro: 门罗币在各种社交媒体上都有许多社区。我们可能来自世界各处，但是总有一些地方是我们常去的。门罗币社区成员们的一些聚集处已经列在下面，加入我们吧！
@@ -137,7 +137,7 @@ hangouts:
     monero-markets: 我们使用这个频道来谈论门罗币和其它加密货币的价格与市场。
     monero-offtopic: 与门罗币用户闲聊的频道。
     monero-pools: 这个频道用于讨论门罗币挖矿及其问题。
-    monero-research-lab: 这里是用于研究加密货币与金融隐私的频道。
+    monero-research-lab: 这个是用于研究加密货币与金融隐私的频道。
     monero-translations: 在这里我们协调将门罗币本地化（翻译）为其他语言。
     monero-hardware: 这个频道用于讨论如何构建硬件钱包以保护您的门罗币安全。
     monero-site: 这个频道用于协调本网站的开发。
