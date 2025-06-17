@@ -81,7 +81,7 @@ footer:
   reachout: 伸出援手
 
 index:
-  page_title: "门罗币 - 安全、隐私、无法追踪"
+  page_title: “门罗币 - 安全、隐私、无法追踪”
 
 home:
   heading: 门罗币意为金钱
@@ -95,7 +95,7 @@ home:
   getcoins: 获得门罗币
   getcoins_para: 在你安装了钱包软件之后，你需要获得一些门罗币。有许多种方式可以获得门罗币，比如挖矿或通过交易所，最简单的获取方式是通过交易所，将您的法定货币交换为门罗币。许多中心化和去中心化交易所都支持门罗币（XMR）交易。
   exchanges: 交易所
-  useit: "这是一种货币，尽情的使用它吧！"
+  useit: “这是一种货币，尽情的使用它吧！”
   useit_para: 门罗币是一种货币，它可以被用来交换物品，服务和其他货币，它保护您的隐私并且拥有非常低的网络转账费用。有许多客户非常愿意使用门罗币来进行支付；查阅“商户”页面了解更多。
   merchants: 商户
   answers: 寻求答案
@@ -109,13 +109,13 @@ home:
    在“开发者指南”中，图书馆提供可免费下载的出版物和书籍，包括完整的《精通门罗币》和《从零到门罗币》书籍。
   moneropedia_para: 你想看看门罗币项目及社区中使用的术语和概念的含义吗？在这里，你可以找到一份按字母顺序排列的百科。
   moneropedia_button: 阅读门罗币百科
-  contributecommunity: "我们需要您的贡献！"
+  contributecommunity: “我们需要您的贡献！”
   contributecommunity_para: 门罗币不仅是一种货币，它还是一个离不开大量志愿者辛勤付出的去中心化社区。现在就加入我们吧！
   researchlab_para: MRL（门罗币研究实验室）是门罗币非常重要的一部分，来自全世界的研究者和密码学家在一起让门罗币变得更好。阅读他们的论文，和他们并肩作战！
   visitmrl: 访问门罗币研究实验室（MRL）
   contributing: 贡献
-  meetcommunity: "立即加入社区！"
-  meetus: "门罗币社区的成员遍布世界各地，你可以在多个平台上找到我们，来见见我们！"
+  meetcommunity: “立即加入社区！”
+  meetus: “门罗币社区的成员遍布世界各地，你可以在多个平台上找到我们，来见见我们！”
   hangouts: 社区
   morevideos: 想要更多引导及介绍视频？
   
@@ -141,34 +141,89 @@ hangouts:
     monero-translations: 在这里我们协调将门罗币本地化（翻译）为其他语言。
     monero-hardware: 这个频道用于讨论如何构建硬件钱包以保护您的门罗币安全。
     monero-site: 这个频道用于协调本网站的开发。
-    
+
 merchants:
-  intro3:
+  descr: 本页面提供接受门罗币作为支付方式的商家信息，以及门罗币与其他货币的兑换渠道。
+  useit: “支持门罗币支付的商店与商户”
+  use: 随着金融隐私价值日益受到重视，越来越多商家开始接受门罗币。迄今为止，接受门罗币的商家数量仍在持续增长。
+  dirdescr: “若您需要门罗币消费渠道，以下目录提供参考选择。请谨记：资金交易前务必自行核实商家资质：”
+  descrp2p: 点对点 [P2P] 交易所是兑换门罗币的理想选择。这类平台让交易者直接互动，部分平台甚至通过第三方托管服务实现去信任化交易。相较于中心化/托管型交易所，P2P 交易所通常具备更强的隐私保护能力。
+  swapsdescr: “原子交换提供免信任的门罗币加密货币兑换方案。详细信息可参考博客文章：”
+  bisqdescr: 基于比特币和 Tor 网络的去中心化 P2P 交易所。
+  cardfoss: “开源性质：”
+  cardkyc: “<b>无需 KYC</b> (客户身份认证)：”
+  cardbtcfiat: (支持比特币 &#8596; 法币兑换)
+  cardonion: “.onion 洋葱地址：”
+  cardi2p: “I2P 地址：”
+  noncustodial: “非托管模式：”
+  locmondescr: 支持个人对个人交易的线上 P2P 交易所。
+  depsell: 视卖家而定
+  locnojs: (但提供无 JavaScript 版本)
+  simpleswapdescr: 非托管即时兑换平台。
   disclaimer: |
-    "温馨提示：这些链接仅为浏览方便而列出，仅供参考；这并不代表门罗社区对这些商家/服务的认可！门罗社区不对这些外部网站的安全性、真实性、合法性承担责任。如有疑问请您自行联系这些网站。请您在网络购物时始终保持警惕和独立思考。"
+    “友情提示：以下链接仅为信息参考之便，不代表门罗币社区对所列企业、服务或观点的认可。外部网站内容的准确性、合法性及表述立场均与门罗币社区无关。具体内容请咨询相关网站方。务必牢记「买家自负」原则，交易前请自主核实信息。线上交易时请始终保持审慎态度。”
+  visitbisq: 访问 Bisq
+  centrexchanges: 中心化交易所 (CEXs) 与兑换平台
+  centrexchangesp: 若您倾向使用中心化交易所，以下为部分知名CEX平台与兑换服务。支持门罗币的交易所远不止于此，此处仅列举部分信誉良好者。
+  cexp: 提供门罗币与法币/加密货币兑换服务的中心化交易所。
+  swappersp: 用户可通过兑换平台将门罗币交换为其他加密货币。
+  basicswapdexdesc: 专注用户体验的去中心化 P2P 原子交换平台。
+  visitbasicswapdex: 访问 BasicSwapDEX
+  setreq: 需设置账户
+  unstoppableswapdesc: 通过原子交换实现比特币与门罗币互兑。
+  visitunstoppableswap: 访问 UnstoppableSwap
 
-  useit: 接受门罗币的商家
-  cardfoss: 开源：
-  cardonion: '暗网地址:'
-  noncustodial: '非托管的:'
-  hodlhodldescr: 非托管式点对点交易所
-  locmondescr: 线上提供点对点交易的去中心化交易所
-  centrexchangesp: 如果你喜欢中心化交易所，下面有一个主流交易所与互换商的列表。很多交易所都支持门罗币，我们在这里只列出一些比较有声誉的。
-  cexp: 提供门罗币与其他加密货币或法币的交易的中心化交易所。
 sponsorships:
-  intro: 以下企业支持门罗币将金融隐私带给全世界的愿景。我们对他们的帮助和贡献感激不尽。如果您也想赞助门罗项目并被添加到此列表，请给dev@getmonero.org发送电子邮件。
+  intro: 以下企业全力支持门罗币项目实现全球金融隐私保护的使命，我们对其卓越贡献深表感激。若贵机构有意赞助门罗币项目并在此页展示，请发送邮件至 dev@getmonero.org。
+  tari: Tari Labs 赞助本网站使用的 CDN 服务。
+  mbank: MajesticBank 赞助本网站服务器托管服务。
+  symas: Symas 赞助其首席技术官 Howard Chu (hyc) 参与门罗币代码库开发。
+  macstadium: MacStadium 赞助专用 Mac Mini 设备支持苹果系统开发工作。
+  cakewallet: Cake Wallet 赞助包含邮件列表、GitLab、Matrix、Taiga 和 Weblate 的 “tools” 服务器。
+  cypherstack: Cypher Stack 赞助开发运维团队建设与维护门罗币基础设施。
+  pastsponsors: 历史赞助企业
 
-  pastsponsors: 过去的捐赠者
 team:
-  core: 核心开发组
+  introduction: 工作组由社区成员自发组成，旨在协作实现共同目标。各团队结构目标不一，此页面列出主要活跃团队及参与指引。
+  core: 核心团队
   community: 社区工作组
   mrl: 研究实验室
-  core_start: 核心开发组是一个封闭的工作组，除非被邀请否则无法加入。
-  descr: 描述
+  descr: 团队描述
+  start: 参与方式
+  contacts: 联络渠道
+  chat: “会话：”
+  website: “网站：”
+  core_descr: 作为项目管理者，核心团队维护不可避免需中心化的基础设施（域名、网站、代码库等）。成员必要时担任调解角色，凝聚社区共识，延续推动门罗币成功的协作精神。团队始终无偿工作。
+  core_start: 本团队为封闭工作组，仅限受邀加入。
+  community_descr: 社区协调枢纽，非技术背景贡献者的首要入口。
+  community_start: 加入聊天室自我介绍，说明兴趣领域及可提供的技能支持。
   devworkgroup: 开发工作组
-  contacts: 聊天室和联系方式
-  chat: 会话：
-  website: 网站：
+  devworkgroup_descr: “整合门罗开发者资源，共同维护核心团队管理的钱包与守护进程(daemon)。下设CLI与GUI团队，分属不同聊天室协作。”
+  devworkgroup_start: 建议先查阅GitHub的open issues。代码库（尤其核心部分）难度较高，入群请先说明技术专长与贡献意向。
+  chatgeneral: “综合讨论区：”
+  chatgui: “GUI开发区：”
+  webworkgroup: 网站工作组
+  web_descr: 专注getmonero.org开发的团队，多数成员参与开发工作组。独立工作组便于集中讨论网站事务。
+  web_start: 建议直接入群交流，或查阅GitHub仓库README，内含完整网站修改指南。
+  localization: 本地化（翻译）工作组
+  localization_descr: 历史最久的贡献团队之一，负责本地化软件及文档。开始翻译前请务必联系本组。
+  localization_start: 通过聊天室联系或在GitHub提交issue，亦可直接使用Weblate平台翻译（请先阅读译者指南）。
+  locplatform: “本地化平台：”
+  telegram: “Telegram群组：”
+  mrl_descr: 专注协议研究的工作组，CLSAG和Bulletproofs等核心升级均诞生于此。成员探索提升门罗币协议及功能的科学方案。
+  mrl_start: 加入聊天室说明研究兴趣与专长，持续进行的研究将指引参与方向。
+  space: Monero Space
+  space_descr: 活跃项目推进组，提供社区服务资源。主办Monero Meet等活动。
+  space_start: 通过Matrix/Libera聊天室联系。
+  mrw: 恶意软件响应工作组
+  mrw_descr: 提供门罗币相关恶意软件的应对支持。
+  mrw_start: 主要活动集中于IRC，加入频道即可提供支持。
+  mpwg: 门罗币政策工作组
+  mpwg_descr: 关注监管政策的灵活组织，主动对接监管方及金融界，阐明门罗币技术特性与合规兼容性。
+  mpwg_start: 参与政策讨论请加入Matrix/Libera聊天室。
+  nwlb_descr: Seraphis钱包开发组，通过实现Seraphis和Jamtis协议构建全新钱包架构，旨在增强隐私性与易用性。
+  nwlb_start: 工作组定期在Matrix会议室（同步至IRC）协调，持续招募开发者。
+
 downloads:
   intro: 在这里你可以下载到最新版本的门罗币应用，包括适用于硬件钱包、轻钱包和手机端钱包的软件。
   choose: Choose your download
