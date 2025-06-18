@@ -81,7 +81,7 @@ footer:
   reachout: 伸出援手
 
 index:
-  page_title: “门罗币 - 安全、隐私、无法追踪”
+  page_title: "门罗币 - 安全、隐私、无法追踪"
 
 home:
   heading: 门罗币意为金钱
@@ -95,27 +95,27 @@ home:
   getcoins: 获得门罗币
   getcoins_para: 在你安装了钱包软件之后，你需要获得一些门罗币。有许多种方式可以获得门罗币，比如挖矿或通过交易所，最简单的获取方式是通过交易所，将您的法定货币交换为门罗币。许多中心化和去中心化交易所都支持门罗币（XMR）交易。
   exchanges: 交易所
-  useit: “这是一种货币，尽情的使用它吧！”
-  useit_para: 门罗币是一种货币，它可以被用来交换物品，服务和其他货币，它保护您的隐私并且拥有非常低的网络转账费用。有许多客户非常愿意使用门罗币来进行支付；查阅“商户”页面了解更多。
+  useit: "这是一种货币，尽情的使用它吧！"
+  useit_para: 门罗币是一种货币，它可以被用来交换物品，服务和其他货币，它保护您的隐私并且拥有非常低的网络转账费用。有许多客户非常愿意使用门罗币来进行支付；查阅"商户"页面了解更多。
   merchants: 商户
   answers: 寻求答案
   faq: 常见问题
-  faq_para: 这些年来，我们收到了很多问题，并汇编了一份详尽多样的“常见问题”清单。别担心，如果你的问题不在那里，你可以随时向社区提问。
+  faq_para: 这些年来，我们收到了很多问题，并汇编了一份详尽多样的"常见问题"清单。别担心，如果你的问题不在那里，你可以随时向社区提问。
   guides: 指南与资源
   guides_para: >
    社区有着大量的资源和文件资料，
-   用户可以找到有关常见配置和“用户指南”部分的提示；
+   用户可以找到有关常见配置和"用户指南"部分的提示；
    开发人员可以找到基于门罗币构建服务所需的一切，也可以简单地与网络通信。
-   在“开发者指南”中，图书馆提供可免费下载的出版物和书籍，包括完整的《精通门罗币》和《从零到门罗币》书籍。
+   在"开发者指南"中，图书馆提供可免费下载的出版物和书籍，包括完整的《精通门罗币》和《从零到门罗币》书籍。
   moneropedia_para: 你想看看门罗币项目及社区中使用的术语和概念的含义吗？在这里，你可以找到一份按字母顺序排列的百科。
   moneropedia_button: 阅读门罗币百科
-  contributecommunity: “我们需要您的贡献！”
+  contributecommunity: "我们需要您的贡献！"
   contributecommunity_para: 门罗币不仅是一种货币，它还是一个离不开大量志愿者辛勤付出的去中心化社区。现在就加入我们吧！
   researchlab_para: MRL（门罗币研究实验室）是门罗币非常重要的一部分，来自全世界的研究者和密码学家在一起让门罗币变得更好。阅读他们的论文，和他们并肩作战！
   visitmrl: 访问门罗币研究实验室（MRL）
   contributing: 贡献
-  meetcommunity: “立即加入社区！”
-  meetus: “门罗币社区的成员遍布世界各地，你可以在多个平台上找到我们，来见见我们！”
+  meetcommunity: "立即加入社区！"
+  meetus: "门罗币社区的成员遍布世界各地，你可以在多个平台上找到我们，来见见我们！"
   hangouts: 社区
   morevideos: 想要更多引导及介绍视频？
   
@@ -144,24 +144,24 @@ hangouts:
 
 merchants:
   descr: 本页面提供接受门罗币作为支付方式的商家信息，以及门罗币与其他货币的兑换渠道。
-  useit: “支持门罗币支付的商店与商户”
+  useit: "支持门罗币支付的商店与商户"
   use: 随着金融隐私价值日益受到重视，越来越多商家开始接受门罗币。迄今为止，接受门罗币的商家数量仍在持续增长。
-  dirdescr: “若您需要门罗币消费渠道，以下目录提供参考选择。请谨记：资金交易前务必自行核实商家资质：”
+  dirdescr: "若您需要门罗币消费渠道，以下目录提供参考选择。请谨记：资金交易前务必自行核实商家资质："
   descrp2p: 点对点 [P2P] 交易所是兑换门罗币的理想选择。这类平台让交易者直接互动，部分平台甚至通过第三方托管服务实现去信任化交易。相较于中心化/托管型交易所，P2P 交易所通常具备更强的隐私保护能力。
-  swapsdescr: “原子交换提供免信任的门罗币加密货币兑换方案。详细信息可参考博客文章：”
+  swapsdescr: "原子交换提供免信任的门罗币加密货币兑换方案。详细信息可参考博客文章："
   bisqdescr: 基于比特币和 Tor 网络的去中心化 P2P 交易所。
-  cardfoss: “开源性质：”
-  cardkyc: “<b>无需 KYC</b> (客户身份认证)：”
+  cardfoss: "开源性质："
+  cardkyc: "<b>无需 KYC</b> (客户身份认证)："
   cardbtcfiat: (支持比特币 &#8596; 法币兑换)
-  cardonion: “.onion 洋葱地址：”
-  cardi2p: “I2P 地址：”
-  noncustodial: “非托管模式：”
+  cardonion: ".onion 洋葱地址："
+  cardi2p: "I2P 地址："
+  noncustodial: "非托管模式："
   locmondescr: 支持个人对个人交易的线上 P2P 交易所。
   depsell: 视卖家而定
   locnojs: (但提供无 JavaScript 版本)
   simpleswapdescr: 非托管即时兑换平台。
   disclaimer: |
-    “友情提示：以下链接仅为信息参考之便，不代表门罗币社区对所列企业、服务或观点的认可。外部网站内容的准确性、合法性及表述立场均与门罗币社区无关。具体内容请咨询相关网站方。务必牢记「买家自负」原则，交易前请自主核实信息。线上交易时请始终保持审慎态度。”
+    "友情提示：以下链接仅为信息参考之便，不代表门罗币社区对所列企业、服务或观点的认可。外部网站内容的准确性、合法性及表述立场均与门罗币社区无关。具体内容请咨询相关网站方。务必牢记「买家自负」原则，交易前请自主核实信息。线上交易时请始终保持审慎态度。"
   visitbisq: 访问 Bisq
   centrexchanges: 中心化交易所 (CEXs) 与兑换平台
   centrexchangesp: 若您倾向使用中心化交易所，以下为部分知名CEX平台与兑换服务。支持门罗币的交易所远不止于此，此处仅列举部分信誉良好者。
@@ -179,7 +179,7 @@ sponsorships:
   mbank: MajesticBank 赞助本网站服务器托管服务。
   symas: Symas 赞助其首席技术官 Howard Chu (hyc) 参与门罗币代码库开发。
   macstadium: MacStadium 赞助专用 Mac Mini 设备支持苹果系统开发工作。
-  cakewallet: Cake Wallet 赞助包含邮件列表、GitLab、Matrix、Taiga 和 Weblate 的 “tools” 服务器。
+  cakewallet: Cake Wallet 赞助包含邮件列表、GitLab、Matrix、Taiga 和 Weblate 的 "tools" 服务器。
   cypherstack: Cypher Stack 赞助开发运维团队建设与维护门罗币基础设施。
   pastsponsors: 历史赞助企业
 
@@ -191,25 +191,25 @@ team:
   descr: 团队描述
   start: 参与方式
   contacts: 联络渠道
-  chat: “会话：”
-  website: “网站：”
+  chat: "会话："
+  website: "网站："
   core_descr: 作为项目管理者，核心团队维护不可避免需中心化的基础设施（域名、网站、代码库等）。成员必要时担任调解角色，凝聚社区共识，延续推动门罗币成功的协作精神。团队始终无偿工作。
   core_start: 本团队为封闭工作组，仅限受邀加入。
   community_descr: 社区协调枢纽，非技术背景贡献者的首要入口。
   community_start: 加入聊天室自我介绍，说明兴趣领域及可提供的技能支持。
   devworkgroup: 开发工作组
-  devworkgroup_descr: “整合门罗开发者资源，共同维护核心团队管理的钱包与守护进程(daemon)。下设CLI与GUI团队，分属不同聊天室协作。”
+  devworkgroup_descr: "整合门罗开发者资源，共同维护核心团队管理的钱包与守护进程(daemon)。下设CLI与GUI团队，分属不同聊天室协作。"
   devworkgroup_start: 建议先查阅GitHub的open issues。代码库（尤其核心部分）难度较高，入群请先说明技术专长与贡献意向。
-  chatgeneral: “综合讨论区：”
-  chatgui: “GUI开发区：”
+  chatgeneral: "综合讨论区："
+  chatgui: "GUI开发区："
   webworkgroup: 网站工作组
   web_descr: 专注getmonero.org开发的团队，多数成员参与开发工作组。独立工作组便于集中讨论网站事务。
   web_start: 建议直接入群交流，或查阅GitHub仓库README，内含完整网站修改指南。
   localization: 本地化（翻译）工作组
   localization_descr: 历史最久的贡献团队之一，负责本地化软件及文档。开始翻译前请务必联系本组。
   localization_start: 通过聊天室联系或在GitHub提交issue，亦可直接使用Weblate平台翻译（请先阅读译者指南）。
-  locplatform: “本地化平台：”
-  telegram: “Telegram群组：”
+  locplatform: "本地化平台："
+  telegram: "Telegram群组："
   mrl_descr: 专注协议研究的工作组，CLSAG和Bulletproofs等核心升级均诞生于此。成员探索提升门罗币协议及功能的科学方案。
   mrl_start: 加入聊天室说明研究兴趣与专长，持续进行的研究将指引参与方向。
   space: Monero Space
@@ -225,82 +225,82 @@ team:
   nwlb_start: 工作组定期在Matrix会议室（同步至IRC）协调，持续招募开发者。
 
 downloads:
-  intro: 在这里你可以下载到最新版本的门罗币应用，包括适用于硬件钱包、轻钱包和手机端钱包的软件。
-  choose: Choose your download
-  gui: GUI Wallet
-  cli: CLI Wallet
-  blockchain: Blockchain Bootstrap
-  blockchain1: If you'd prefer to use a blockchain bootstrap, instead of syncing from
-    scratch, you can use the most current bootstrap. It is typically much faster to
-    sync from scratch, however, and it also takes a lot less RAM.
-  blockchainbutton: 下载区块链数据
-  mobilelight: 手机钱包和轻钱包
+  intro: 本页面提供最新门罗币软件下载，含硬件钱包、轻钱包及移动端钱包选项。
+  choose: 选择下载类型
+  gui: Monero GUI 钱包
+  cli: Monero CLI 钱包
+  blockchain3: 导入门罗币区块链数据
+  mobilelight0: 移动端与轻钱包
+  mobilelight: 移动端与轻钱包
   hardware: 硬件钱包
-  gui_intro: The GUI wallet provides a nice user interface, adaptable to all kinds
-    of users, but it is especially recommended for less technical people who want
-    to quickly send and receive XMR.
-  simplemode: 简易模式
-  simplemode1: Created for less technical users who only want to use Monero in the
-    easiest and quickest way possible. Open the wallet, automatically connect to a
-    remote node, send/receive XMR, done!
-  advancedmode: 进阶模式
-  advancedmode1: With all the advanced features you could need. Ideal for seasoned
-    Monero users who prefer to have full control of their wallet and node
-  merchantpage: 商户页面
-  merchantpage1: 方便地使用门罗币开展业务
-  hwcompatible: Compatible with hardware wallets
-  hwcompatible1: 比如 Trezor 和 Ledger 硬件钱包
-  fiatconv: in-app fiat conversion
-  fiatconv1: No longer a need to check the value of your XMR online
-  pruning: 区块链数据修剪
-  pruning1: Not enough disk space? Just use pruning to download only 1/3 of the blockchain
-  langs: "支持 <b>30多种语言</b>"
-  cli_intro: The CLI wallet gives you the total control over your Monero node and
-    funds. Highly customizable and includes various analysis tools, as well as an
-    HTTP RPC and 0MQ interface.
+  gui_intro: 由门罗币社区开发的开源图形界面（GUI）钱包，完全免费，适合初学者与高级用户。
+  simplemode: 简单模式（Simple）
+  simplemode1: 为技术背景较弱的用户设计，提供最简捷操作流程：打开钱包自动连接@remote-node，即可发送/接收XMR。
+  advancedmode: 高级模式（Advanced）
+  advancedmode1: 含所有高级功能，满足需要完全掌控钱包和节点的资深用户需求。
+  merchantpage: 商户收款页
+  merchantpage1: 轻松实现商业场景XMR收款
+  hwcompatible: 硬件钱包兼容
+  hwcompatible1: 支持Trezor及Ledger等设备
+  fiatconv: 内置法币兑换
+  fiatconv1: 无需另外查询XMR实时汇率
+  pruning: 区块链裁剪(pruning)
+  pruning1: 存储空间不足？启用@pruning功能仅需下载1/3区块链数据
+  langs: "支持<b>30+种语言</b>"
+  cli_intro0: 由门罗币社区开发的开源命令行(CLI)钱包，完全免费，专为开发者及中高级用户设计。
+  cli_intro: CLI钱包提供对门罗币节点和资金的完全控制，高度可定制，含多种分析工具及HTTP RPC、0MQ接口。
   currentversion: 当前版本
-  sourcecode: Source Code
+  sourcecode: 源代码
   helpsupport: 帮助与支持
-  helpsupport1: "A guide with an explanation of every section of the wallet is available:"
-  helpsupport2: "查看最新版本"
-  gui_helpsupport: "If you are experiencing issues or you need more info, feel free\
-    \ to reach out to the community. You can find the GUI team at #monero-gui, or\
-    \ else check out the Hangouts page for a more complete list of contacts and chatrooms"
-  cli_helpsupport: "If you are experiencing issues or you need more info, feel free\
-    \ to reach out to the community. You can find the CLI team at #monero or #monero-dev,\
-    \ or else check out the Hangouts page for a more complete list of contacts and\
-    \ chatrooms"
+  helpsupport1: "完整钱包使用指南："
+  helpsupport2: "查看最新发布"
+  helpsupport3: "若遇问题或需更多信息，请随时联系社区：加入<code>#monero-support</code>或访问<a href=\"/community/hangouts/\">Hangouts</a>页获取完整联络清单"
   localremote: 本地或远程节点
-  localremote1: 使用本地或公有节点的区块链数据
-  transacttor: 通过 Tor 或 I2P 连接
-  transacttor1: 提供更进一步的隐私保障
-  bootstrapnode: Bootstrap node
-  bootstrapnode1: Use a remote node while downloading the blockchain locally, this
-    will allow you to use Monero immediately and switch to your local node once it's
-    completely synced
-  rpc: RPC Wallet and Daemon
-  rpc1: included in the archive
-  payforrpc: Pay-for-RPC
-  payforrpc1: A new feature that allows node operators to get rewarded when their
-    node is used
-  verify: 校验
-  verify1: 强烈建议在下载完成后校验文件的哈希值。这能保证你下载的文件确实和门罗币开发组上传的文件一致。不要低估这个步骤的重要性，不匹配的文件可能会导致资金丢失。
-  showhash: Show hashes to verify your download
-  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list
-    of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as
-    canonical, with the signature checked against the appropriate GPG key
-  showhash2: in the source code
-  showhash3: "Two guides are available to guide you through the verification process:"
-  mobilelight1: The following are mobile or light wallets that are deemed safe by
-    respected members of the community. If there is a wallet that is not on here,
-    you can request the community check it out. Go to our
-  mobilelight2: Hangouts
-  mobilelight3: page to see where we are.
-  installer: Installer
-
-  blockchain3: 导入门罗币区块链
-  verify2: 请校验你的下载内容！
-  showhash4: 有两篇有关校验流程的指南可供查看：
+  localremote1: 使用自有区块链副本或公共节点
+  transacttor: Tor/I2P网络交易
+  transacttor1: 提供额外隐私层保护
+  bootstrapnode: 引导节点
+  bootstrapnode1: 本地同步区块链时使用@remote-node，可即时操作门罗币并在同步完成后无缝切换至本地节点
+  rpc: RPC钱包与守护进程
+  rpc1: 包含在压缩包内
+  verify: 文件验证
+  verify1: "强烈建议校验下载文件哈希值，确保与门罗币开发工作组发布文件完全一致。此步骤至关重要，损坏的文件包可能导致资金损失"
+  verify2: 请务必验证下载文件！
+  showhash: 校验哈希值
+  showhash1: "以下为便捷查阅的SHA256哈希值，规范版本请查阅GPG签名文件："
+  showhash2: 需验证GPG签名是否匹配源代码中的
+  showhash3: 对应密钥
+  showhash4: "验证操作指南："
+  mobilelight1: 以下非托管式移动/轻钱包非门罗币核心团队管理，建议自行调研安全性及使用风险
+  mobilelight2: 社区
+  mobilelight3: 页面可查询门罗币社区聚集地
+  installer: 安装程序
+  avwarning: 注意：部分杀毒软件及防火墙可能误报门罗币可执行文件为恶意软件
+  moreinfofaq: 详见常见问题
+  packages: 提供多Linux发行版安装包
+  packages_link: GitHub查看清单
+  releasenotes: 发布说明
+  wallet: 钱包
+  mobile: 移动端
+  desktop: 桌面端
+  antivirus: 杀毒软件
+  sourcearchive: 源代码(压缩包)
+  localsync: 本地同步模式
+  localsyncinfo: 此类钱包连接@remote-nodes但本地扫描@blockchain，不共享私钥。隐私性更强，但需更长时间同步（仅打开钱包时扫描缺失的@blocks）
+  remotesync: 远程同步（轻量级）
+  remotesyncinfo: 此类钱包共享私密@view-key给远程服务器，由服务器持续扫描区块链交易。操作更快捷，但若未掌控远程服务器将影响隐私性
+  hwdesc: "硬件钱包是通过密码学技术保障资产安全的物理设备，门罗币当前支持Ledger Nano（S, S Plus, X）和Trezor（Model T, Safe 3, Safe 5）"
+  hwth: 硬件钱包
+  instructions: 使用说明
+  hwthmodel: 设备型号
+  hwthsupported: 支持钱包
+  hwthfirm: 最低固件版本
+  hwnanos: "Nano S: 2.1.0"
+  hwnanosplus: "Nano S Plus: 1.0.3"
+  hwnanox: "Nano X: 2.0.2"
+  hwtrezor: "2.5.2"
+  hwmobmodels: "支持门罗币的型号："
+  
 monero-project: {}
 press-kit:
   intro2: 白色背景填充仅限于门罗币图案内部，而非整个图片。
