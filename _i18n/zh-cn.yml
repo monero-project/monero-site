@@ -443,564 +443,627 @@ contributing:
   donation_viewkeys: 观察钱包详情
 
 faq:
-  basics: 基础问题
-  privacy: 隐私相关
+  basics: 基础知识
+  privacy: 隐私性
   security: 安全性
-  economics: 经济模型
-  wallets: 钱包问题
-  node: 节点运行
-  intro: 门罗币常见问题解答
-  toc: 问题分类
-  additional: "扩展阅读："
+  economics: 经济学
+  wallets: 钱包
+  node: 节点
+  intro: 寻找关于门罗币常见问题的解答
+  toc: 目录
+  additional: "更多信息："
   resandhelp: 资源与帮助
-  stackexchange: 最全面的门罗币知识库，未解决问题可在此查询
-  userguides: 门罗币网络操作指南合集
-  devguides: 开发者资源与文档
-  monerosupport: 互助型Reddit子论坛，社区成员互相解答
-  monerohow: 经典教程资源库
-  qword: "[专业术语]是什么意思？"
-  aword: "门罗术语体系复杂，请查阅"
-  aword1: "术语词典提供完整解释。常见查询如：@node节点, @fungibility可互换性, @view-key查看密钥, @pruning裁剪模式。"
+  stackexchange: 最完整的门罗币资源库。如果您的疑问未包含在本FAQ中，很可能能在门罗币StackExchange找到答案。
+  userguides: 帮助用户使用门罗币网络及其功能的文档合集
+  devguides: 开发者指南与资源
+  monerosupport: 专门为门罗币用户提供帮助的子论坛，主要由社区成员互相协助。请善用搜索功能。
+  monerohow: "包含大量指南和教程的经典知名资源库"
+  qword: "[技术术语] 是什么意思？"
+  aword: "门罗币的专业术语可能较为复杂，因此我们提供了"
+  aword1: "全面收录常见术语及其解释的词汇表。若您不清楚某个术语的含义或想了解更多信息，请访问门罗币百科全书（Moneropedia）。部分高频查询术语示例：@节点（node）、@可替代性（fungibility）、@查看密钥（view-key）、@区块修剪（pruning）。"
   qcontribute: 如何参与贡献？
-  acontribute: "门罗币是开源社区项目，无公司化运营，开发者多为志愿者。贡献方式多样："
-  acontribute1: "翻译工作：非英语使用者均可参与，主平台："
-  acontribute2: "联系工作组：开发按专项分组（如本地化组/社区组），详见"
-  acontribute3: "发挥专长：设计师创作宣传图，作者撰写科普文章，创意无限！"
-  acontribute4: "新人指南："
-  q1: 门罗币的价值来源？
-  a1: 价值取决于市场供需。需求大于供给则价格上涨，反之则下跌。
+  acontribute: "门罗币是一个开源社区项目。这意味着没有公司运营它，也没有CEO雇佣员工。所有工作均由志愿者或社区资助的贡献者完成，他们为项目奉献时间。参与贡献的方式多种多样："
+  acontribute1: "翻译工作。操作简单，任何掌握英语以外语言的人均可参与。翻译主要在 Weblate 平台进行："
+  acontribute2: "联系工作组。门罗币几乎全部事务都由工作组管理，这些工作组由贡献者（通常由协调员领导）组成，专注于开发的特定领域。例如：本地化工作组（翻译）、社区工作组、GUI工作组、外展工作组等。工作组高度独立且自有组织结构。请联系您感兴趣的工作组并询问如何提供帮助。联系方式列表详见"
+  acontribute3: "发挥您的专长。您是设计师？创作门罗币相关图像并广泛传播。您是作家？撰写门罗币相关文章。唯一限制是您的想象力！找到您热爱的事情并为门罗币贡献力量吧！"
+  acontribute4: "外展工作组撰写了帮助新人的实用指南："
+  q1: 门罗币为何具有价值？
+  a1: 门罗币的价值源于人们愿意购买它。若无人愿意购买，门罗币便无价值。当需求大于供给时价格上涨，供给大于需求时价格下跌。
   q2: 如何获取门罗币？
-  a2: "交易所购买（多数支持法币直购）或挖矿（获取@block区块奖励）。详见："
-  a2exchanges: "支持XMR交易的平台列表："
+  a2: "您可通过交易所或个人购买门罗币。交易所是最常见渠道，多数司法管辖区均有合规交易所。部分钱包支持用法币或其他加密货币直接购买门罗币。此外，您也可尝试通过挖矿获取 @区块奖励（block reward） 中的门罗币。"
+  a2exchanges: "过去需用比特币兑换门罗币，现已不再受限。您可在众多交易所直接用法定货币（USD、EUR、GBP等）或其他加密货币交易门罗币。部分交易所需KYC（身份验证），去中心化交易所则无需。可交易门罗币(XMR)的交易所列表见此网站："
   q3: 助记词为何重要？
-  a3: 使用@mnemonic-seed助记词（25单词）恢复账户。请安全保管，避免泄露。
-  q4: 门罗币隐私技术有何不同？
-  a4: "三重隐私技术：@ring-signatures环签名隐藏发送方，@RingCT环机密交易隐藏金额，@stealth-addresses隐蔽地址隐藏接收方。所有交易强制隐私，无透明交易风险。"
-  q5: 钱包同步为何缓慢？
-  a5: "本地@node节点需下载完整@blockchain区块链（旧硬盘/慢网络更慢）。使用@remote-node远程节点或轻@wallet钱包可加速同步（但会降低隐私性）。"
-  q6: 轻钱包与普通钱包区别？
-  a6: "轻钱包需向节点提供@view-key（节点可知收款时间但不知详情）。普通钱包配合自控节点隐私性更强。"
-  q7: 与比特币有何差异？
-  a7: "基于CryptoNote协议：全交易隐私保护、动态@block区块大小/手续费、抗ASIC算法@randomx、@tail-emission尾排放等。"
-  q8: 是否有区块大小限制？
-  a8: "无硬性限制，@block区块大小按需动态调节，设置增长率上限确保@scalability可扩展性。"
-  q11: 可互换性为何重要？
-  a11: "@Fungibility可互换性指同价值货币无差异。若某货币被标记为‘污染币’，即使持有者无关也会被拒收。门罗币的隐私性天然保障了可互换性。"
-  q12: 如何验证没有凭空发送币？
-  a12-1: "每笔@transaction交易生成唯一密钥镜像，重复使用会被矿工拒绝"
-  a12-2: "@Pedersen-承诺加密金额，通过数学验证输入输出总额相等"
-  a12-3: "需付款金额+找零+手续费=支出总额，验证等式成立即可确认无增发"
-  aabout-auditability: 供应审计原理
-  adetailed-auditability: 深度审计分析
-  q13: 门罗币是否万能隐私保护？
-  a13: "门罗币不是万能的。若主动透露个人信息、泄露私钥、密码过弱或云端备份助记词，仍会导致隐私泄露。"
-  q14: 是否100%匿名？
-  a14: "不存在绝对匿名。匿名性与门罗币用户规模相关，且潜在漏洞风险始终存在。务必保持谨慎，采用深度防御策略。"
+  a3: "@助记词（mnemonic-seed） 是25个单词组成的密钥，用于在任何地方恢复账户。务必妥善保管且勿向他人泄露。即使电脑损坏，仍可通过助记词恢复账户。"
+  q4: 门罗币的隐私性与其他币种有何不同？
+  a4: "门罗币采用三项隐私技术：@环签名（ring-signatures） 隐藏发送者、@环机密交易（RingCT） 隐藏交易金额、@隐形地址（stealth-addresses） 隐藏接收者。网络强制所有交易默认隐私化，不可能误发透明交易。此特性为门罗币独有，您的隐私无需依赖他人保障。"
+  q5: 为何我的钱包同步耗时过长？
+  a5: "初次同步需下载完整区块链（约200GB），耗时取决于网络速度与硬件性能。后续同步仅需更新新区块。若使用远程节点（如轻钱包），同步速度取决于节点响应效率。"
+  q6: 轻量级钱包和完整钱包有何区别？
+  a6: 使用轻量级钱包时，您需将查看密钥提供给节点，该节点会扫描区块链并代您查找入账交易。该节点可知晓您收款时间，但无法获知收款金额、付款方身份或您的转账对象。某些钱包软件允许您使用自控节点以避免隐私泄露。为获得更高隐私性，建议使用完整钱包（可连接自有节点）。
+  q7: 门罗币与比特币有何差异？
+  a7: 门罗币不基于比特币技术，而是基于CryptoNote协议。比特币是完全透明系统，交易金额与双方地址公开可见；门罗币则通过隐私技术隐藏所有交易信息。其特点包括：动态@区块大小与动态手续费、抗ASIC的@RandomX工作量证明机制、可持续发行的@尾部排放（tail-emission）等。
+  q8: 门罗币是否设有区块大小限制？
+  a8: 不设硬性@区块大小限制。区块大小可根据需求动态调整（自动扩容/缩容），并通过增速上限机制防止异常增长（@可扩展性方案）。
+  q11: 什么是可替代性？为何它如此重要？
+  a11: "@可替代性（Fungibility）是货币的基本属性：等值货币应完全等同。例如10元钞票与两张5元钞票可自由互换。但若该10元钞票曾被用于勒索软件攻击（即使持有者无关），接收方可能拒绝接受——这就是非可替代货币的缺陷：接收方需持续核查资金是否被污染。门罗币具备完全可替代性，用户无需担忧资金溯源问题。"
+  q12: 门罗币如此私密，如何验证其非无中生有？
+  a12-1: 每笔@交易输出对应唯一的密钥镜像（key image），仅输出持有者可生成。若密钥镜像重复（双花攻击），矿工将拒绝该交易入块。
+  a12-2: 通过@佩德森承诺（Pedersen-commitments）技术：输入输出金额虽被加密隐藏（仅接收方可见），但矿工可验证加密金额的数学关系，确保不会凭空增发。
+  a12-3: 当输出加密金额总和等于消耗的输入金额（含收款金额、找零金额及公开手续费）时，即证明交易合法且无增发。
+  aabout-auditability: 了解更多供应可审计性
+  adetailed-auditability: 供应可审计性深度分析
+  q13: 门罗币是否万无一失地保障隐私？
+  a13: 门罗币并非魔法。若您主动透露姓名地址、泄露私钥、使用弱密码、或将助记词存于云端——隐私防护将失效。它提供强大的技术保障，但用户行为仍是关键防线。
+  q14: 门罗币是否100%匿名？
+  a14: 完全的100%匿名并不存在。您的匿名集合本质上是所有门罗币用户，且技术可能存在未知漏洞（当前或未来）。正如系安全带仍可能车祸，需配合常识判断、深度防御策略及渐进式隐私保护措施。
   q15: 门罗币是混币服务吗？
-  a15: "否。门罗币采用非托管式自动隐私交易机制，用户无需主动参与混币。"
-  qwallet: 钱包选择建议？
-  awallet: "核心团队提供GUI/CLI钱包，另有多款经社区验证的开源第三方钱包（详见下载页）。"
-  qnofunds: 余额未显示，是否丢币？
-  anofunds: "技术上不可能‘丢失’，资金始终在链上。余额不显示大多为技术问题，请查阅顶部「资源与帮助」。"
+  a15: 不是。门罗币采用完全非交互式、非托管、自动化的隐私交易技术；混币服务则需用户主动参与且依赖第三方。
+  qwallet: 我该选择哪种钱包？
+  awallet: 许多平台均有丰富钱包选择。本网站提供核心团队发布的钱包（GUI和CLI）及经广泛信任的开源第三方钱包清单（含桌面/移动端）。
+  qnofunds: 无法查看资金，是否意味着门罗币丢失？
+  anofunds: "几乎不可能。门罗币本质是区块链上的加密记录，只要私钥未泄露，资金就不会'消失'。当前不可见通常是技术故障所致。请查阅本页顶部'资源与帮助'章节获取解决方案。"
   qnodetor: 如何通过Tor连接节点？
-  anodetor: "原生支持Tor网络交易，@daemon守护进程可在Tor运行。I2P正在整合开发中。"
-  qfullpruned: 完整节点/裁剪节点如何选？
-  afullpruned: "完整@node节点需约225GB存储（2024年），裁剪节点仅需86GB（保留完整交易历史）。存储充足选完整节点，有限则用裁剪节点（仍贡献网络隐私）。"
-  qblocksize: 区块链大小？
-  ablocksize: "链持续增长，2024年完整链约225GB。裁剪模式@pruning约86GB。"
-  qblockspace: 为何需要大存储空间？
-  ablockspace: "@blockchain区块链存储全网历史@transactions交易数据。@Pruning裁剪模式可缩减至1/8非必要数据。"
-  qavoidbc: 能否避免下载完整区块链？
-  aavoidbc: "可连接@remote-node远程节点交易。GUI/CLI钱包均支持「引导节点」功能，同步同时即时使用网络。"
+  anodetor: Tor支持尚处早期阶段，但已可实现：1）原生通过Tor网络发送交易 2）在Tor网络运行门罗币@守护进程（daemon）。更完善的Tor/I2P集成方案正在开发中。
+  qfullpruned: 如何选择全节点与修剪节点？
+  afullpruned: "全节点@node需大量存储空间（约200GB+），硬件性能不足时同步耗时极长。存储受限时推荐修剪节点：仅保留1/8非必要区块链数据，但完整保存所有交易记录。存储充足则建议运行全节点，修剪节点同样能为网络作贡献并增强隐私性。"
+  qblocksize: 门罗币区块链有多大？
+  ablocksize: "区块链@blockchain持续增长，无固定大小。截至2024年：完整链约225GB，修剪链约86GB。详见Moneropedia词条@区块修剪（pruning）了解差异。"
+  qblockspace: 为何区块链需要如此大的空间？
+  ablockspace: "下载@blockchain即下载门罗币诞生至今的完整交易@transactions历史记录。节点必须保存完整历史数据以保证全网一致性。@区块修剪（Pruning）技术可使节点仅保留1/8非必要数据，将存储需求缩减至全节点的1/3。详见Moneropedia词条@节点（node）与@远程节点（remote-node）。"
+  qavoidbc: 能否避免下载整个区块链？
+  aavoidbc: "可以。通过连接@远程节点（remote-node）即可交易（无需本地存储区块链）。所有主流@wallets（含GUI/CLI）均支持此功能。例如“引导节点”特性：同步区块链时使用远程节点进行即时交易。门罗币正持续优化该方案的用户体验。"
   qscanned: 为何每次打开钱包都需扫描？
-  ascanned: "需扫描新区块中的@transactions交易确认归属。中心化钱包（如MyMonero）可代劳此过程。"
-  qdangernode: 运行节点是否危险？
-  adangernode: "自控@node节点是最安全方式（ISP可知晓您运行节点但无法干预操作）。"
-  qdangerrnode: 远程节点是否危险？节点运营者能获取什么？
-  adangerrnode: "@remote-node远程节点牺牲部分隐私（运营者可见交易IP），建议配合Tor/VPN使用。"
-  qantivirus: 为何杀毒软件报毒？
-  aantivirus: "因钱包含挖矿模块（用于@block区块验证），部分杀软误判。若验证文件合法后请添加白名单。"
-  qmoneromeaning: "门罗币名字含义？"
-  amoneromeaning: "世界语'硬币'之意。前身Bitmonero意为'比特币'，社区分叉后简化命名。"
+  ascanned: "因上次使用后有新@transactions写入@blockchain，钱包必须扫描这些交易以确认是否关联您的账户。采用MyMonero式（OpenMonero）钱包可免除此过程——由中心化服务器（可自建）代劳。"
+  qdangernode: 运行个人节点是否危险？
+  adangernode: "运行个人@node是与门罗币网络交互最安全的方式（完全自主控制，不依赖第三方）。从技术角度并无风险，但需注意：您的网络服务商（ISP）可检测到您正在运行门罗币节点。"
+  qdangerrnode: 使用远程节点是否危险？节点运营者能获取哪些数据？
+  adangerrnode: "隐私敏感用户强烈建议使用个人节点以获得最高保护级别。为便利使用非自控@远程节点时需承担隐私代价：1）节点运营者可见您的IP地址（无法获知收款方及金额）2）极端情况下可能遭受隐私削弱攻击。可通过Tor/I2P网络或VPN连接远程节点降低风险。"
+  qantivirus: 为何杀毒软件/防火墙将门罗币程序标记为病毒？
+  aantivirus: "门罗币程序（GUI/CLI）被误报的主要原因是内置矿工模块（用于挖矿及@区块验证）。部分杀毒软件仅发出警告，有些则会直接删除您的@钱包/@守护进程文件。"
+  aantivirus1: "目前正积极寻求解决方案。若遇此情况：1）确认下载程序来源合法 2）在杀毒软件中添加例外规则。需要帮助可随时联系社区。"
+  qmoneromeaning: "为何命名为'Monero'（门罗币）？"
+  amoneromeaning: "'Monero'（门罗币）是世界语（Esperanto）中的'硬币'。门罗币最初命名'Bitmonero'（世界语'比特币'），社区独立发展后简化为'Monero'。"
   qimporting: 能否手动导入区块链？
-  aimporting: "技术上可行但不推荐（需信任数据来源且资源消耗大）。Linux用户可用monero-blockchain-import工具。"
-  qhf: 是否每6个月硬分叉？
-  ahf: "门罗币曾为年两次升级（引入@bulletproofs等），现因生态成熟改为9-12个月一次。@RandomX算法确保长期抗ASIC无需频繁升级。"
-  qvideos: 学习视频资源？
-  avideos: "推荐核心原理系列视频（按序观看）："
-  video_intro: 门罗币简介
-  video_essentials: 核心机制
-  video_sa: 隐蔽地址
-  video_ringsig: 环签名
-  video_ringct: 环机密交易
-  video_fcmp: 全链成员证明
-  mvideos: "扩展阅读："
-  aavailable: 支持多语种
-  and: 与
-  qlongtimemove: 长期未动币会因硬分叉失效？
-  alongtimemove: "资金安全无虞，只需下载新版钱包并用@mnemonic-seed助记词恢复。门罗币硬分叉为计划性升级，不产生新币种。"
-  qvuln: 是否有已知漏洞？
-  avuln: "社区制作「攻破门罗」系列视频深入探讨潜在漏洞："
-  vulnspotify: Spotify播客同步更新
-  qasicresistance: "抗ASIC是什么？为何重要？"
-  aasicresistance: "ASIC矿机效率极高但成本昂贵，少数控制多数算力威胁网络安全。"
-  aasicresistance1: "门罗采用@randomx算法使ASIC无利可图，消费级硬件可公平参与挖矿@mining，实现去中心化安全防护。"
-  qmaxsupply: 最大供应量？
-  amaxsupply: "无上限供应。2022-06-09起开启@tail-emission链尾生产（尾排放）：每区块0.6XMR（每分钟0.3XMR），首年通胀率约1%并趋近于0。"
-  qtailemission: 为何不设供应上限？
-  atailemission: "恒定区块奖励保障矿工@mining挖矿收益，避免仅靠手续费导致网络风险。@tail-emission保持通胀低于1%，确保网络安全去中心化。"
-  
-mining:
-  intro1: 门罗币采用工作量证明机制达成共识。以下是挖矿入门指南。
-  intro2: "（注：门罗币项目不特定推荐矿池/软硬件，以下信息仅供参考）"
-  pow: 工作量证明
-  philosophy: "门罗币坚持平等挖矿理念，采用社区开发的@RandomX算法实现抗ASIC。消费级硬件均可参与。"
-  efficiency: "支持CPU/GPU挖矿，CPU效率显著更高。"
-  miningset: 独立挖矿(Solo)或矿池(Pool)
-  miningsetp: "鼓励独立挖矿（使用<a href='https://www.getmonero.org/downloads/#gui'>GUI</a>/<a href='https://www.getmonero.org/downloads/#cli'>CLI</a>钱包）或P2Pool模式，最能增强网络安全。"
-  procons: "独立/矿池挖矿优缺点："
-  solo: 独立挖矿
-  prosecure: 增强网络安全性
-  prowallet: 无需额外软件
-  conlong: 低算力需数月才可出块（类似彩票）
-  pool: 矿池挖矿
-  propay: 收益稳定周期短
-  conopfee: 需支付矿池手续费
-  conminfee: 第三方软件可能抽成
-  conpolcent: 大矿池可能导致算力集中（>50%攻击风险）
-  choosepol: "矿池选择指南："
-  hardware: 硬件选择
-  hardwarep: "测试硬件算力：<a href='https://xmrig.com/benchmark'>xmrig基准页</a>"
-  software: 软件选择
-  softwarep: "独立挖矿用官方钱包，矿池/GPU挖矿需第三方软件："
-  software_para: "（注：部分软件含开发者分成）"
-  support: 社区支持
-  supportp: "技术交流：<a href='https://matrix.to/#/%23monero-pools:monero.social'>Matrix</a>或<a href='irc://irc.libera.chat/#monero-pools'>Libera聊天室</a>"
-  p2poolh: "P2Pool：独立挖矿与矿池优势融合"
-  p2poolnew: "免信任点对点矿池，详见<a href='/2021/10/05/p2pool-released.html'>发布公告</a>"
-  p2poolp: "侧链结构，矿工提交含集体分红的区块模板，优质模板作为‘份额’计入链上。"
-  p2poolfeatures: 核心特性
-  p2pdecentralized: <b>去中心化</b>：无单点故障
-  p2ppermissionless: <b>无许可</b>：自由加入抗审查
-  p2ptrustless: <b>免信任</b>：资金实时到账
-  p2pplns: <b>PPLNS</b>分配机制
-  p2pzerofee: 0%手续费
-  p2pzeropayout: <b>0 XMR</b>提现费
-  p2pminpayout: 0.0004 XMR起付
-  p2pmoreinfo: "项目详情："
+  aimporting: >
+    可以手动导入@区块链，但通常不建议：1）需极大系统资源 2）必须信任区块链提供方。常规同步方式更快更安全（节点自动与全网@节点同步）。Windows用户请遵循下方指南。Linux用户可使用GUI/CLI钱包压缩包内的"monero-blockchain-import"工具，执行指令："monero-blockchain-import --input-file blockchain.raw"启动同步。
+  qhf: 门罗币是否每6个月进行一次硬分叉？
+  ahf: 过去确有两轮年度硬分叉升级，用于引入关键共识更新（如增强隐私的@防弹证明、CLSAG签名算法），避免协议僵化并维持抗ASIC特性。但现已调整策略：协议成熟稳定后，不再需要固定频率的硬分叉。
+  ahf1: 开发社区与核心团队共识：1）协议已足够稳定 2）生态系统规模指数级增长，频繁升级不利协调 3）@RandomX算法确保长期抗ASIC能力。未来硬分叉仅用于重大协议升级，周期调整为9-12个月（最近一次为2022年8月13日）。
+  qvideos: 是否有门罗币教学视频？
+  avideos: >
+    社区已创建海量视频教程（YouTube等平台可公开获取）。本网站精选基础教程系列，推荐按序观看：
+  video_intro: 门罗币基础介绍
+  video_essentials: 核心技术解析
+  video_sa: 隐形地址原理（RingSa：Ring Stealth Address）
+  video_ringsig: 环签名机制（RingSig：Ring Signature）
+  video_ringct: 环机密交易详解（RingCT：Ring Confidential Transactions）
+  video_fcmp: 全链成员证明系统（FCMP++：Full-Chain Membership Proofs）
+  mvideos: "更多视频资源详见Moneropedia（门罗币百科）词条："
+  aavailable: 支持多语言版本：
+  and: 和
+  qlongtimemove: 长期未动用的门罗币会因硬分叉丢失吗？
+  alongtimemove: 资金绝对安全。只需下载最新版钱包软件，使用此前保存的@助记词（mnemonic-seed）即可随时恢复钱包。注意：门罗币硬分叉均为预定的非争议性升级，不会产生新币种。
+  qvuln: 门罗币是否存在已知漏洞？
+  avuln: >
+    社区制作了《解密门罗币》系列视频（共14集），深度探讨潜在漏洞及防御方案。完整播放列表请访问：
+    <a href="https://www.youtube.com/playlist?list=PLsSYUeVwrHBnAUre2G_LYDsdo-tD0ov-y">YouTube专题页面</a>
+  vulnspotify: 同步提供Spotify播客版本
+  qasicresistance: "什么是抗ASIC？为何如此重要？"
+  aasicresistance: ASIC是专为特定任务设计的特殊计算机（对比通用计算机）。其超高效率对@挖矿极具优势，但导致中心化风险：
+  aasicresistance1: 1）ASIC设备价格昂贵，少数实体可能掌控大部分算力 2）算力垄断威胁网络安全（例如联合发动51%攻击可拒绝交易）。
+  aasicresistance2: >
+    门罗币通过@RandomX算法实现抗ASIC：大幅削弱ASIC效率，使其无利可图。普通用户可使用消费级硬件公平参与挖矿。当前网络由数千台常规电脑守护，形成去中心化防护——任何矿工均无显著硬件优势，极大提升攻击难度。
+  qmaxsupply: 门罗币最大供应量是多少？
+  amaxsupply: 采用固定发行机制（非总量上限）。自2022年6月9日（区块2641623）起，永久性@尾部排放（tail-emission）以每分钟0.3XMR（每@区块0.6XMR）速率释放。首年通胀率≈1%，随时间推移趋近于0%。该系统在保障极低通胀率的同时，为网络永久提供安全激励。
+  qtailemission: 为何不设定总量上限？
+  atailemission: 矿工通过@挖矿处理交易，其收益包含：固定区块奖励（0.6XMR）及该区块内@交易手续费。固定奖励机制具有双重价值：1）激励矿工持续保障网络安全 2）维持低手续费环境。
+  atailemission1: 由恒定区块奖励产生的@尾部排放（tail-emission）使通胀率长期低于1%并持续下降。此发行模式具备抗人性操纵特性，确保网络保持：可预测性、去中心化和安全性三位一体。
 
-using: {}
+mining:
+  intro1: Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.
+  intro2: The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.
+  pow: Proof of Work
+  philosophy: >
+    One of Monero's philosophies is to maintain egalitarian mining, so that everyone can have the possibility to mine. To achieve this, Monero uses a particular algorithm ideated and developed by members of the Monero community: @RandomX. This PoW algorithm is ASIC resistant, which means it's impossible to build specialized hardware to mine Monero. Miners must use consumer-grade hardware and compete fairly.
+  efficiency: Monero can be mined by both CPUs and GPUs, but the former is much more efficient.
+  miningset: Solo or pool mining
+  miningsetp: >
+    Miners can decide if they prefer to solo mine or to mine in a pool. Each method has its benefits and drawbacks, but the Monero Project encourages individuals to solo mine using the Monero software (<a href="https://www.getmonero.org/downloads/#gui">GUI</a> and <a href="https://www.getmonero.org/downloads/#cli">CLI</a>), as this type of independent mining is the most effective way to increase the robustness of the Monero network. Mining using P2Pool is also encouraged.
+  procons: "Pro and cons of solo and pool mining:"
+  solo: Solo
+  prosecure: Makes the network more secure than if mining in a pool
+  prowallet: You can mine using your Monero wallet. No need for additional software
+  conlong: "Depending on your hashrate, it might take months before you find a block. This is often referred to as a 'lottery'"
+  pool: Pool
+  propay: Frequent payouts. You will receive XMR according to how much you are participating in the pool of your choice.
+  conopfee: You have to pay a fee to the pool operator
+  conminfee: You can only use third party software to pool mine, which might take a small percentage of your shares
+  conpolcent: Too many people mining on a single pool might lead on the pool having >50% of the total hashrate, which is dangerous
+  choosepol: "If you need help choosing a pool or you just want more information about them, use:"
+  hardware: Hardware
+  hardwarep: Monero can be mined on both CPUs and GPUs, but the latter is much less efficient than the former. You can get an idea of how your hardware performs compared to others, using <a href="https://xmrig.com/benchmark">xmrig benchmarks page</a> (some results might be out of date).
+  software: Software
+  softwarep: >
+    There are several options when it comes to mining software. As already said, to solo mine, the CLI or GUI wallets can be used (CPU only). If you want to mine to a pool or mine with a GPU, you'll need dedicated software. Miners supporting Monero:
+  software_para: Note that some miners may have developer fees.
+  support: Support
+  supportp: If you have questions or just want to confront with fellow miners, come chat on Monero Pools. On <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a> and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+  p2poolh: "P2Pool: The best of both solo and pool mining"
+  p2poolnew: >
+    P2Pool is a clever new way of mining Monero, which allows miners to receive the frequent payouts offered by pools without needing to trust a centralized pool. P2Pool is a Peer-To-Peer mining pool that gives miners full control over their Monero node and what it mines. More details in <a href="/2021/10/05/p2pool-released.html">the announcement post</a>.
+  p2poolp: >
+    P2Pool is a sidechain to Monero, and P2Pool blocks are potentially Monero blocks. Each miner submits block templates that include payouts to all of the miners that are mining at the same time (those that currently have shares in the PPLNS window). High quality block templates are added to the P2Pool blockchain as blocks; these count as "shares" for the miner who found them.
+  p2poolfeatures: Main features
+  p2pdecentralized: <b>Decentralized:</b> no central server that can be shutdown/blocked/malicious.
+  p2ppermissionless: <b>Permissionless:</b> anyone can join the sidechain, and it's effectively impossible to censor individual miners.
+  p2ptrustless: <b>Trustless:</b> there is no pool wallet; funds are never in custody. All pool blocks pay out to miners immediately.
+  p2pplns: <b>PPLNS</b> payout scheme
+  p2pzerofee: 0% fee
+  p2pzeropayout: <b>0 XMR</b> payout fee
+  p2pminpayout: Less than 0.0004 XMR minimum payout
+  p2pmoreinfo: "More information and details on the GitHub repository of the project:"
+
 what-is-monero:
-  need-to-know: 你需要知道的：
-  leading: 门罗币是加密货币匿名和抗审查领域中的先锋。
-  leading_para1: 当下存在的大多数加密货币都拥有透明可查询的区块链，包括比特币和以太坊，这意味着世界上的任何人都可以查看任何一笔交易。而币的地址可以和实体世界的个人关联起来。
-  leading_para2: 门罗币使用加密技术来隐藏发送和接收地址以及交易金额。
-  confidential: 门罗币的交易是保密且无法被追踪的。
-  confidential_para1: 每个门罗币的交易都默认必须是混淆交易地址和金额的。让所有人必须保持匿名意味着每一个门罗币用户的活动都会增强其他所有人的隐私。这和其他可选匿名的加密货币在匿名效果上有着本质上的不同。
-    (比如ZEC).
-  confidential_para2: 门罗币具有可互换性。因为交易互相混淆且保密，任何特定的几个门罗币不会因为过去的历史记录而受到针对性的追踪。这也意味着门罗始终具有抗审查性。
-  grassroots: 门罗是一个吸引了全世界最棒的加密货币研究者和工程天才的草根社区。
-  electronic: 门罗作为电子现金可以快速且廉价地在世界各地转移价值和财富。
-  electronic_para1: 没有必须持有多少天的要求，也没有欺诈性退款的风险，更不受“外汇管制“的限制————这些措施是在那些经济不稳定甚至极端不稳定的国家才采用的限制货币流动的措施。
-  videos: 门罗币视频（英文）
+  need-to-know: What you need to know
+  leading: Monero is the leading cryptocurrency focused on private and censorship-resistant transactions.
+  leading_para1: The majority of existing @cryptocurrencies, including Bitcoin and Ethereum, have transparent @blockchains. Transactions can be verified and/or traced by anyone in the world. This means that the sending and receiving @addresses of these @transactions could potentially be linked to real-world identities.
+  leading_para2: Monero, on the other hand, uses various technologies to ensure the privacy of its users. 
+  confidential: Monero transactions are confidential and untraceable.
+  confidential_para1: "Unlike selectively transparent alternatives (e.g. Zcash), Monero is the only major cryptocurrency where every user is anonymous by default. The sender, receiver, and amount of every single transaction are hidden through the use of three important technologies: @Stealth-Addresses, @Ring-Signatures, and @RingCT."
+  confidential_para2: Because every transaction is private, Monero cannot be traced. This makes it a true, @fungible currency. Merchants and individuals accepting Monero do not need to worry about blacklisted or tainted coins.
+  grassroots: Monero is a grassroots community attracting the world's best cryptocurrency researchers and engineering talent.
+  grassroots_p1: The Monero Project is at the forefront of cryptocurrency privacy and security. Its 
+  grassroots_p2: Research Lab
+  grassroots_p3: and Development Team are constantly working on new, innovative technologies. Since its launch, the project has received contributions from over
+  grassroots_p4: 500 developers
+  grassroots_p5: located all around the world.
+  grassroots_p6: Numerous 
+  grassroots_p7: forums and chat channels
+  grassroots_p8: are available for anyone to join, and the community is always welcoming new members.
+  electronic: Monero is electronic cash that allows fast, inexpensive payments to and from anywhere in the world.
+  electronic_para1: With Monero, there are no wire transfer or check clearing fees, no multi-day holding periods, and no fraudulent chargebacks. Because Monero is decentralized, it is not constrained by any particular legal jurisdiction and provides safety from capital control. 
+  videos: Monero Videos (English)
+  aboutb: About
+  walletb: Get a Wallet
+  getb: Get Monero
+  joinb: Join a workgroup
 
 about:
-  history: 门罗币历史
-  history_para1: 门罗币项目在2014年4月正式发起。门罗项目非常公平，预先公布了CryptoNote参考代码。门罗没有预挖或者代挖等，并且没有任何的公司开发稅（比如从块奖励中抽成20%作为团队收入)。最开始在bitcointalk上面的发起帖请查看
-  history_para2: 这里。
-  history_para3: 门罗的发起人thankful_for_today提出了一些社区并不同意的更改和变化。之后，门罗核心团队分叉了这个项目，并且整个社区跟随这个新的核心团队一起运作。从那时起，这个核心团队一直在监督社区的运作。
-  history_para4: 自发起以来，门罗已经做出了很多项重大改进。区块链被转移到新的数据库结构以提供更高的效率和灵活性，添加了最小环签名，以保障所有交易都是匿名的，并且实施RingCT以隐藏交易金额。几乎所有的改进都提供了安全性或隐私性的改进，或者促进了门罗币的普及。门罗币将继续以隐私和安全为首要目标，易用性和效率为第二追求。
-  values: 我们的价值观
-  values_para: 门罗不仅仅是一项技术，它也是这个技术价值观的体现。我们列出了社区最根本的一些价值观：
-  security: 安全
-  security_para: 用户必须能够信任门罗及其交易，而不存在错误或攻击的风险。门罗为矿工提供全额奖励，他们是提供此安全保障的网络中最关键的成员。门罗网络的交易始终使用最先进的加密技术。
-  privacy: 隐私
-  privacy_para: 门罗非常重视隐私。门罗币需要做到甚至能在法庭上保护使用者，即使是死刑的罪名。所有的用户必须可以使用到这个级别的隐私功能，无论是他们在技术层面非常了解或是一无所知。门罗的目标是要让用户使用门罗币时百分之百的放心，不会担忧任何人有可能发现他的消费记录和习惯。
-  decentralization: 分权
-  decentralization_para: 门罗社区致力于提供最大程度的去中心化。使用门罗币，您无需信任网络上的任何人，门罗也不是由任何大型组织运行的。门罗币的工作量证明（POW）算法始终保持对家用电脑的友好度，您可以在普通电脑上进行门罗币挖掘。这也使得个体想获得大量垄断算力更加困难。节点通过I2P相互连接，以降低泄露敏感交易信息和被审查（tba）的风险。门罗币的发展决策非常明确且允许任何人发表评论和意见。开发人员会议日志完全在线发布，并且所有人都可以看到。
+  history: A Brief History
+  history_para1: Monero was launched in April 2014. It was a fair, pre-announced launch of the CryptoNote reference code. There was no premine or instamine, and no portion of the block reward goes to development. See the original Bitcointalk thread
+  history_para2: here.
+  history_para3: The founder, thankful_for_today, proposed some controversial changes that the community disagreed with. A fallout ensued, and the Monero Core Team forked the project with the community following this new Core Team. This Core Team has provided oversight since.
+  history_para4: Monero has made several large improvements since launch. The blockchain was migrated to a different database structure to provide greater efficiency and flexibility, minimum ring signature sizes were set so that all transactions were private by mandate, and RingCT was implemented to hide the transaction amounts. Nearly all improvements have provided improvements to security or privacy, or they have facilitated use. Monero continues to develop with goals of privacy and security first, ease of use and efficiency second.
+  values: Our Values
+  values_para: Monero is more than just a technology. It’s also what the technology stands for. Some of the important guiding philosophies are listed below.
+  security: Security
+  security_para: Users must be able to trust Monero with their transactions, without risk of error or attack. Monero gives the full block reward to the miners, who are the most critical members of the network who provide this security. Transactions are cryptographically secure using the latest and most resilient encryption tools available.
+  privacy: Privacy
+  privacy_para: Monero takes privacy seriously. Monero needs to be able to protect users in a court of law and, in extreme cases, from the death penalty. This level of privacy must be completely accessible to all users, whether they are technologically competent or have no idea how Monero works. A user needs to confidently trust Monero in a way that this person does not feel pressured into changing their spending habits for risk of others finding out.
+  decentralization: Decentralization
+  decentralization_para: Monero is committed to providing the highest degree of decentralization in both network security and code development. Its Proof of Work algorithm prevents specialized mining hardware from dominating the network and allows for fair distribution of block rewards. Additionally, Monero's development and research are conducted via global collaboration, and the project is carried out with utmost transparency. Each development decision is open to public discussion, and every major developer meeting is published online. 
 
 
 developer-guides:
-  outdated: "请注意：以下指南一直由社区进行着不断更新，但是具体的使用方法可能经常变更，其中变更的内容在此可能描述不准确。"
-  rpc: RPC文件
-  daemonrpc: 后台程序RPC文件
-  walletrpc: 钱包RPC文件
+  head: Collection of guides, documentation and useful resources for developers (in English).
+  outdated: "Methods are often added / removed / updated and may not be accurately described."
+  rpc: RPC Documentation
+  daemonrpc: Daemon RPC
+  daemonrpc_descr: RPC calls for the @daemon. Including input, outputs and examples. In English.
+  walletrpc: Wallet RPC
+  walletrpc_descr: monero-wallet-rpc calls. Including input, outputs and examples. In English.
+  external: External resources
+  external_head: Useful docs and resources maintained by community members.
+  monerodocs: Comprehensive resource which aims to organize the technical knowledge about Monero. Some sections might be outdated.
+  moneroexamples: Rich list of examples and docs related to Monero development.
+  moneroecosystem: Community of Monero developers. Contains libraries and resources and guides of some Monero Workgroups, like the Localization Workgroup and the Outreach Workgroup.
+  monerose: One of the most complete resources for both users and developers.
+  libraries: Libraries and helpers
+  libraries_para: Monero libraries are created and maintained by the community. The following repositories are not vetted by the core team and are only listed here for convenience. Please conduct your own research before using them, and if you want to add a library to this list, please open an issue on
+  monero-javascript: A Node.js library for using Monero.
+  monero-nodejs: Wallet manager for interacting with monero-wallet-rpc.
+  monerophp: A Monero library written in PHP by the Monero Integrations team.
+  monerowp: Monero WooCommerce Plugin for Wordpress.
+  monero-python: A comprehensive Python module for handling Monero cryptocurrency.
+  moneriote-python: Python scripts to maintain Monero opennodes DNS records.
+  monerorpc: A Java interface for Monero wallet and daemon RPC.
+  monero-java: A Java library for using Monero.
+  monero-cpp: A C++ library for using Monero.
+  vanity-monero: Generate vanity address for CryptoNote currency (Monero etc.).
+  go-monero-rpc-client: A Go client for the Monero wallet and daemon RPC.
+  monero-rs: Library with support for (de)serialization on block data structures and key/address generation and scanning related to Monero cryptocurrency.
+  csharp-monero: A wallet and daemon client to interface with Monero's JSON-RPC API, built on .netstandard2.1
+
 user-guides:
-  general: 常见问题
-  mining: 挖矿
-  recovery: 恢复
-  wallets: 钱包
-  offline-backup: 如何做好线下备份
-  vps-node: 如何在VPS上架设一个全节点
-  import-blockchain: 导入门罗区块链
-  monero-tools: 门罗工具
-  purchasing-storing: 安全地购买和存储门罗币
-  verify-allos: 在Linux，Mac，或者Windows命令行上验证二进制文件(专家)
-  verify-windows: 在Windows上验证二进制文件(新手)
-  mine-on-pool: 怎么用XMRig在矿池里挖矿
-  solo-mine: 怎么用GUI独立挖矿
-  locked-funds: 如何解锁被锁定的资金
-  restore-account: 如何恢复账户
-  qubes: 通过Qubes和Whonix实现CLI钱包/后台程序的隔离
-  cli-wallet: 如何使用命令行钱包
-  remote-node-gui: 怎么用图像化钱包（GUI）连接远程节点
-  view-only: 如何制作只读钱包
-  prove-payment: 如何证明已付款
-  restore-from-keys: 从私钥恢复钱包
-  ledger-wallet-cli: 如何用命令行钱包（CLI）制作一个Ledger硬件钱包的门罗币钱包
+  general: General
+  mining: Mining
+  backup: Backup
+  nodesync: Node & Synchronization
+  recovery: Recovery
+  wallets: Wallets
+  hardwarewallet: Hardware Wallets
+  anonimizationnetworks: Anonymizing Networks
+  offline-backup: How to make an offline backup (advanced)
+  vps-node: How to run a node (systemd)
+  import-blockchain: How to import the Monero blockchain (advanced)
+  monero-tools: Monero Tools
+  purchasing-storing: How to create a Monero paper wallet
+  verify-allos: How to use the command line to verify your Monero CLI/GUI software is safe (advanced)
+  verify-windows: How to verify your Monero CLI/GUI software is safe on Windows (beginner)
+  mine-on-pool: How to mine on a pool with XMRig
+  solo-mine: How to solo mine with Monero GUI
+  locked-funds: How to fix locked up funds
+  restore-account: How to restore a wallet from mnemonic seed
+  qubes: How to use Monero CLI/daemon with Qubes + Whonix
+  cli-wallet: Guide for the Monero CLI wallet
+  remote-node-gui: How to connect to a remote node within GUI wallet
+  view-only: How to make a view-only wallet
+  prove-payment: How to prove a payment was made
+  restore-from-keys:  How to restore a wallet from keys
+  ledger-wallet-cli: How to use a Ledger wallet on Monero CLI
   multisig-messaging-system: Multisig transactions with MMS and CLI wallet
-  tor_wallet: Connecting your local wallet to your own daemon over Tor
+  tor_wallet: How to connect your wallet to your own node over Tor
+  node-tori2p: How to add Tor and I2P to your node
+  guiguide: Guide for the Monero GUI wallet
+  make-payment: How to make a payment
+  change-restore-height: How to change the wallet restore height
+  back: Back to the list
+  scan-txid: How to scan for a missing transaction CLI/GUI
+  join-monero-matrix: Joining the Monero Community Matrix Server via Element
 
 roadmap:
-  completed: 已经完成的事情
-  ongoing: 着手实现的目标
-  upcoming: 计划实现的目标
-  future: 未来
+  completed: Completed task
+  ongoing: Ongoing task
+  upcoming: Upcoming task
+  proposed: Proposed task
+  future: Future
 
-  jan:
-  feb:
-  mar:
-  apr:
-  may:
-  jun:
-  jul:
-  aug:
-  sep:
-  oct:
-  nov:
-  dec:
-  comingsoon:
-  launched:
-  renamed:
-  recovered:
-  paper1-2:
-  paper3:
-  released-0-8-8-6:
-  paper4:
-  released-0-9-0:
-  paper5:
-  ringsize-3:
-  released-0-10-0:
-  splitcoinbase:
-  released-0-10-1:
-  guibeta1:
-  enableringct:
-  released-0-10-2:
-  released-0-10-3-1:
-  hfminblock:
-  webredesign:
-  released-0-11-0:
-  fluffyblocks:
-  guioutbeta:
-  minringsize5:
-  releasedgui-0-11-0:
-  zeromq:
-  subaddress:
-  paper6:
-  release-0-11-1:
-  releasedgui-0-11-1:
-  multisig:
-  released-0-12-0:
-  releasedgui-0-12-0:
-  cryptonightv2:
-  hfring7:
-  getmonero-fr-pl:
-  released-0-12-1:
-  ledger:
-  released-0-12-2:
-  released-0-12-3:
-  releasedgui-0-12-3:
-  kovrialpha:
-  moneropedialoc:
-  getmonero-ar:
-  released-0-13-0-2:
-  releasedgui-0-13-3:
-  cryptonightv3:
-  bulletproofs:
-  ringsize11:
-  released-0-13-0-4:
-  paper8-9:
-  releasedgui-0-13-0-4:
-  paper7:
-  paper10:
-  mms:
-  getmonero-de:
-  released-0-14-0:
-  releasedgui-0-14-0:
-  ccs:
-  released-0-14-0-2:
-  cryptonightr:
-  getmonero-pt_br:
-  dlsag:
-  pruning:
-  trezort:
-  nanox:
-  tori2p:
-  multisigms:
-  weblate:
-  rpcpay:
-  ipv6:
-  removedpid:
-  nodediscovery:
-  randomx:
-  getmoneroweblate:
-  releasedgui-0-15-0-4:
-  released-0-15-0-5:
-  dandelion:
-  onionaddress:
-  supercop:
-  clsag:
-  tryptych:
-  kastelo:
-  layer2:
-  returnaddr:
+  jan: January
+  feb: February
+  mar: March
+  apr: April
+  may: May
+  jun: June
+  jul: July
+  aug: August
+  sep: September
+  oct: October
+  nov: November
+  dec: December
+  comingsoon: Coming Soon
+
+  launched: Launched on Bitcointalk
+  renamed: Renamed from Bitmonero to Monero
+  recovered: Recovered from a spam attack
+  paper1-2: Monero Research Lab Papers 1 and 2 published
+  paper3: Monero Research Lab Paper 3 published
+  released-0-8-8-6: 0.8.8.6 released
+
+  paper4: Monero Research Lab Paper 4 published
+
+  released-0-9-0: 0.9.0 Hydrogen Helix released
+  paper5: Monero Research Lab Paper 5 published
+  ringsize-3: Network Upgrade to require minimum @ringsize of 3 on all @transactions
+  released-0-10-0: 0.10.0 Wolfram Warptangent released
+  splitcoinbase: Network Upgrade to split coinbase into @denominations
+  released-0-10-1: 0.10.1 Wolfram Warptangent released
+  guibeta1: Official GUI Beta 1 released
+
+  enableringct: Network Upgrade to enable @RingCT transactions
+  released-0-10-2: 0.10.2 released; critical vulnerability patched
+  released-0-10-3-1: 0.10.3.1 Wolfram Warptangent released
+  hfminblock: Network Upgrade to adjust minimum blocksize and dynamic fee algorithm
+  webredesign: Website redesigned
+  released-0-11-0: 0.11.0.0 Helium Hydra released
+  fluffyblocks: '@fluffy blocks'
+  guioutbeta: GUI out of beta
+  minringsize5: Network Upgrade to increase minimum ringsize to 5 and require RingCT transactions
+  releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra released
+  zeromq: 0MQ/ZeroMQ
+  subaddress: Subaddresses
+  paper6: Monero Research Lab Paper 6 published
+  release-0-11-1: 0.11.1.0 Helium Hydra released
+  releasedgui-0-11-1: GUI 0.11.1.0 Helium Hydra released
+  multisig: Multi-signatures (multisig)
+
+  released-0-12-0: 0.12.0.0 Lithium Luna released
+  releasedgui-0-12-0: GUI 0.12.0.0 Lithium Luna released
+  cryptonightv2: New Proof of Work CryptoNightV2
+  hfring7: Network upgrade to increase minimal ringsize to 7, integrate multisig, subaddresses, and change PoW algo
+  getmonero-fr-pl: Getmonero.org Localization in French and Polish
+  released-0-12-1: 0.12.1.0 Lithium Luna released
+  ledger: Ledger Hardware Wallets Support
+  released-0-12-2: 0.12.2.0 Lithium Luna released
+  released-0-12-3: 0.12.3.0 Lithium Luna released
+  releasedgui-0-12-3: GUI 0.12.3.0 Lithium Luna released
+  kovrialpha: Kovri alpha release
+  moneropedialoc: Getmonero.org Moneropedia open for Localization
+  getmonero-ar: Getmonero.org Localization in Arabic
+  released-0-13-0-2: 0.13.0.2 Beryllium Bullet released
+  releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet released
+  cryptonightv3: New Proof of Work CryptoNightV3
+  bulletproofs: Implementation of @Bulletproofs to reduce transaction sizes
+  ringsize11: Network upgrade to increase minimal @ring-size to 11, integrate Bulletproofs, update fees calculation algorithm, and change PoW algo
+  released-0-13-0-4: 0.13.0.4 Beryllium Bullet released
+  paper8-9: Monero Research Lab Papers 8 and 9 published
+  releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet released
+  paper7: Monero Research Lab Paper 7 published
+  paper10: Monero Research Lab Paper 10 published
+  mms: Implementation of Monero Messaging System (MMS) to automate multisig wallets information exchange
+
+  getmonero-de: Getmonero.org Localization in German
+  released-0-14-0: 0.14.0.0 Boron Butterfly released
+  releasedgui-0-14-0: GUI 0.14.0.0 Boron Butterfly released
+  ccs: New Community Crowdfunding System (CCS) to replace the Forum Funding System (FFS)
+  released-0-14-0-2: 0.14.0.2 Boron Butterfly released
+  cryptonightr: New Proof of Work CryptoNightR
+  getmonero-pt_br: Getmonero.org Localization in Brazilian-Portuguese and Dutch
+  dlsag: "DLSAG: Non-Interactive Refund Transactions For Interoperable Payment Channels in Monero"
+  pruning: Blockchain @pruning
+  trezort: Trezor model T support
+  nanox: Ledger Nano X support
+  tori2p: Tor & I2P CLI wallet integration
+  multisigms: Multisig Messaging System
+  weblate: "Localization platform change: from Pootle to Weblate"
+  rpcpay: Pay for service system using mining (RPC-Pay)
+  ipv6: IPv6 support
+  removedpid: Standalone (long) @payment-ID support removed
+  nodediscovery: GUI automatic @remote-nodes discovering and switching option
+  randomx: New Proof of Work @RandomX
+
+  getmoneroweblate: Getmonero translatable on Weblate
+  releasedgui-0-15-0-4: GUI 0.15.0.4 released
+  released-0-15-0-5: CLI 0.15.0.5 released
+  dandelion: Implementation of the Dandelion++ protocol 
+  onionaddress: Onion address for Getmonero.org
+  supercop: Wallet scanning speedups (support for supercop ASM)
+  clsag: Concise linkable spontaneous anonymous group (CLSAG) signatures
+  kastelo: "Kastelo: open source hardware wallet"
+  released-0-16-0-0: CLI and GUI 0.16.0.0 released
+  released-0-17: CLI and GUI 0.17 'Oxygen Orion' released
+  
+  atomicswaps: Monero <-> Bitcoin atomic swaps
+  bplus: Bulletproofs+
+  p2pool: P2Pool released
+  haveno: Haveno
+
+  seraphis-jamtis: Seraphis codebase & Jamtis
+  ospead: OSPEAD
+  released-0-18: CLI and GUI 0.18 "Flourine Fermi" released
+  hardfork-v15: Network upgrade v15 Hardfork
+  xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
+  bp++: Bulletproofs++
+  lws-subaddress: Light Wallet Server subaddress support
+  view-tags: Wallet synchronization speed improved by +40% with one-byte view tags
+
+  genimprov: "Multiple improvements like: block propagation delay reduced, tx_extra limited, wallet refresh and startup speedups"
+
+  xmrbch-atomicswap: XMR-BCH atomic swap is completed
+  haveno-mainnet: HavenoDEX released
+  fcmp-plus: Full-Chain Membership Proofs
+  mrl-tasks: Proposed tasks from Monero Research Lab
+  cuprate: Monerod Rust implementation - Cuprate
+
 research-lab:
-  intro: 门罗不仅致力于创造可互换性的货币，而且还致力于研究金融隐私领域，因为它也涉及加密货币。您可以在下面找到我们自己的门罗研究组的工作，以后还会有更多论文。
-  mrl_papers: 门罗研究组论文(英文)
-  abstract: 摘要
-  introduction: 介绍
-  read-paper: 阅读论文
+  intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
+  intro_email: "To contact the Monero Research Lab, please email lab@getmonero.org."
+  mrl_papers: Published Papers
+  abstract: Abstract
+  introduction: Introduction
+  read-paper: Read Paper
   summary: Summary
   mrlhtp: Understanding ge_fromfe_frombytes_vartime
-  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into
-    elliptic curve points. It is useful for creating key images, in particular. This
-    document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime()
-    function) into mathematical expressions.
+  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into elliptic curve points. It is useful for creating key images, in particular. This document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime() function) into mathematical expressions.
   mrl1: A Note on Chain Reactions in Traceability in CryptoNote 2.0
-  mrl1_abstract: This research bulletin describes a plausible attack on a ring-signature
-    based anonymity system. We use as motivation the cryptocurrency protocol CryptoNote
-    2.0 ostensibly published by Nicolas van Saberhagen in 2012. It has been previously
-    demonstrated that the untraceability obscuring a one-time key pair can be dependent
-    upon the untraceability of all of the keys used in composing that ring signature.
-    This allows for the possibility of chain reactions in traceability between ring
-    signatures, causing a critical loss in untraceability across the whole network
-    if parameters are poorly chosen and if an attacker owns a sufficient percentage
-    of the network. The signatures are still one-time, however, and any such attack
-    will still not necessarily violate the anonymity of users. However, such an attack
-    could plausibly weaken the resistance CryptoNote demonstrates against blockchain
-    analysis. This research bulletin has not undergone peer review, and reflects only
-    the results of internal investigation.
-  mrl2: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing
-    the CryptoNote Protocol
-  mrl2_abstract: On 4 September 2014, an unusual and novel attack was executed against
-    the Monero cryptocurrency network. This attack partitioned the network into two
-    distinct subsets which refused to accept the legitimacy of the other subset. This
-    had myriad effects, not all of which are yet known. The attacker had a short window
-    of time during which a sort of counterfeiting could occur, for example. This research
-    bulletin describes deficiencies in the CryptoNote reference code allowing for
-    this attack, describes the solution initially put forth by Rafal Freeman from
-    Tigusoft.pl and subsequently by the CryptoNote team, describes the current fix
-    in the Monero code base, and elaborates upon exactly what the offending block
-    did to the network. This research bulletin has not undergone peer review, and
-    reflects only the results of internal investigation.
+  mrl1_abstract: This research bulletin describes a plausible attack on a ring-signature based anonymity system. We use as motivation the cryptocurrency protocol CryptoNote 2.0 ostensibly published by Nicolas van Saberhagen in 2012. It has been previously demonstrated that the untraceability obscuring a one-time key pair can be dependent upon the untraceability of all of the keys used in composing that ring signature. This allows for the possibility of chain reactions in traceability between ring signatures, causing a critical loss in untraceability across the whole network if parameters are poorly chosen and if an attacker owns a sufficient percentage of the network. The signatures are still one-time, however, and any such attack will still not necessarily violate the anonymity of users. However, such an attack could plausibly weaken the resistance CryptoNote demonstrates against blockchain analysis. This research bulletin has not undergone peer review, and reflects only the results of internal investigation.
+  mrl2: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing the CryptoNote Protocol
+  mrl2_abstract: On 4 September 2014, an unusual and novel attack was executed against the Monero cryptocurrency network. This attack partitioned the network into two distinct subsets which refused to accept the legitimacy of the other subset. This had myriad effects, not all of which are yet known. The attacker had a short window of time during which a sort of counterfeiting could occur, for example. This research bulletin describes deficiencies in the CryptoNote reference code allowing for this attack, describes the solution initially put forth by Rafal Freeman from Tigusoft.pl and subsequently by the CryptoNote team, describes the current fix in the Monero code base, and elaborates upon exactly what the offending block did to the network. This research bulletin has not undergone peer review, and reflects only the results of internal investigation.
   mrl3: Monero is Not That Mysterious
-  mrl3_abstract: Recently, there have been some vague fears about the CryptoNote source
-    code and protocol floating around the internet based on the fact that it is a
-    more complicated protocol than, for instance, Bitcoin. The purpose of this note
-    is to try and clear up some misconceptions, and hopefully remove some of the mystery
-    surrounding Monero Ring Signatures. I will start by comparing the mathematics
-    involved in CryptoNote ring signatures (as described in [CN]) to the mathematics
-    in [FS], on which CryptoNote is based. After this, I will compare the mathematics
-    of the ring signature to what is actually in the CryptoNote codebase.
+  mrl3_abstract: Recently, there have been some vague fears about the CryptoNote source code and protocol floating around the internet based on the fact that it is a more complicated protocol than, for instance, Bitcoin. The purpose of this note is to try and clear up some misconceptions, and hopefully remove some of the mystery surrounding Monero Ring Signatures. I will start by comparing the mathematics involved in CryptoNote ring signatures (as described in [CN]) to the mathematics in [FS], on which CryptoNote is based. After this, I will compare the mathematics of the ring signature to what is actually in the CryptoNote codebase.
   mrl4: Improving Obfuscation in the CryptoNote Protocol
-  mrl4_abstract: We identify several blockchain analysis attacks available to degrade
-    the untraceability of the CryptoNote 2.0 protocol. We analyze possible solutions,
-    discuss the relative merits and drawbacks to those solutions, and recommend improvements
-    to the Monero protocol that will hopefully provide long-term resistance of the
-    cryptocurrency against blockchain analysis. Our recommended improvements to Monero
-    include a protocol-level network-wide minimum mix-in policy of n = 2 foreign outputs
-    per ring signature, a protocol-level increase of this value to n = 4 after two
-    years, and a wallet-level default value of n = 4 in the interim. We also recommend
-    a torrent-style method of sending Monero output. We also discuss a non-uniform,
-    age-dependent mix-in selection method to mitigate the other forms of blockchain
-    analysis identified herein, but we make no formal recommendations on implementation
-    for a variety of reasons. The ramifications following these improvements are also
-    discussed in some detail. This research bulletin has not undergone peer review,
-    and reflects only the results of internal investigation.
+  mrl4_abstract: We identify several blockchain analysis attacks available to degrade the untraceability of the CryptoNote 2.0 protocol. We analyze possible solutions, discuss the relative merits and drawbacks to those solutions, and recommend improvements to the Monero protocol that will hopefully provide long-term resistance of the cryptocurrency against blockchain analysis. Our recommended improvements to Monero include a protocol-level network-wide minimum mix-in policy of n = 2 foreign outputs per ring signature, a protocol-level increase of this value to n = 4 after two years, and a wallet-level default value of n = 4 in the interim. We also recommend a torrent-style method of sending Monero output. We also discuss a non-uniform, age-dependent mix-in selection method to mitigate the other forms of blockchain analysis identified herein, but we make no formal recommendations on implementation for a variety of reasons. The ramifications following these improvements are also discussed in some detail. This research bulletin has not undergone peer review, and reflects only the results of internal investigation.
   mrl5: Ring Signature Confidential Transactions
-  mrl5_abstract: This article introduces a method of hiding transaction amounts in
-    the strongly decentralized anonymous cryptocurrency Monero. Similar to Bitcoin,
-    Monero is a cryptocurrency which is distributed through a proof of work “mining”
-    process. The original Monero protocol was based on CryptoNote, which uses ring
-    signatures and one-time keys to hide the destination and origin of transactions.
-    Recently the technique of using a commitment scheme to hide the amount of a transaction
-    has been discussed and implemented by Bitcoin Core Developer Gregory Maxwell.
-    In this article, a new type of ring signature, A Multi-layered Linkable Spontaneous
-    Anonymous Group signature is described which allows for hidden amounts, origins
-    and destinations of transactions with reasonable efficiency and verifiable, trustless
-    coin generation. Some extensions of the protocol are provided, such as Aggregate
-    Schnorr Range Proofs, and Ring Multisignature. The author would like to note that
-    early drafts of this were publicized in the Monero Community and on the bitcoin
-    research irc channel. Blockchain hashed drafts are available in [14] showing that
-    this work was started in Summer 2015, and completed in early October 2015. An
-    eprint is also available at http://eprint.iacr.org/2015/1098.
-  mrl6: An Efficient Implementation of Monero Subadresses
-  mrl6_abstract: Users of the Monero cryptocurrency who wish to reuse wallet addresses
-    in an unlinkable way must maintain separate wallets, which necessitates scanning
-    incoming transactions for each one. We document a new address scheme that allows
-    a user to maintain a single master wallet address and generate an arbitary number
-    of unlinkable subaddresses. Each transaction needs to be scanned only once to
-    determine if it is destinated for any of the user’s subaddresses. The scheme additionally
-    supports multiple outputs to other subaddresses, and is as efficient as traditional
-    wallet transactions.
+  mrl5_abstract: This article introduces a method of hiding transaction amounts in the strongly decentralized anonymous cryptocurrency Monero. Similar to Bitcoin, Monero is a cryptocurrency which is distributed through a proof of work "mining" process. The original Monero protocol was based on CryptoNote, which uses ring signatures and one-time keys to hide the destination and origin of transactions. Recently the technique of using a commitment scheme to hide the amount of a transaction has been discussed and implemented by Bitcoin Core Developer Gregory Maxwell. In this article, a new type of ring signature, A Multi-layered Linkable Spontaneous Anonymous Group signature is described which allows for hidden amounts, origins and destinations of transactions with reasonable efficiency and verifiable, trustless coin generation. Some extensions of the protocol are provided, such as Aggregate Schnorr Range Proofs, and Ring Multisignature. The author would like to note that early drafts of this were publicized in the Monero Community and on the bitcoin research irc channel. Blockchain hashed drafts are available in [14] showing that this work was started in Summer 2015, and completed in early October 2015. An eprint is also available at http://eprint.iacr.org/2015/1098.
+  mrl6: An Efficient Implementation of Monero Subaddresses
+  mrl6_abstract: Users of the Monero cryptocurrency who wish to reuse wallet addresses in an unlinkable way must maintain separate wallets, which necessitates scanning incoming transactions for each one. We document a new address scheme that allows a user to maintain a single master wallet address and generate an arbitrary number of unlinkable subaddresses. Each transaction needs to be scanned only once to determine if it is destinated for any of the user’s subaddresses. The scheme additionally supports multiple outputs to other subaddresses, and is as efficient as traditional wallet transactions.
   mrl7: Sets of Spent Outputs
-  mrl7_abstract: This technical note generalizes the concept of spend outputs using
-    basic set theory. The definition captures a variety of earlier work on identifying
-    such outputs. We quantify the effects of this analysis on the Monero blockchain
-    and give a brief overview of mitigations.
+  mrl7_abstract: This technical note generalizes the concept of spend outputs using basic set theory. The definition captures a variety of earlier work on identifying such outputs. We quantify the effects of this analysis on the Monero blockchain and give a brief overview of mitigations.
   mrl8: Dual Linkable Ring Signatures
-  mrl8_abstract: This bulletin describes a modification to Monero's linkable ring
-    signature scheme that permits dual-key outputs as ring members. Key images are
-    tied to both output one-time public keys in a dual, preventing both keys in that
-    transaction from being spent separately. This method has applications to non-interactive
-    refund transactions. We discuss the security implications of the scheme.
+  mrl8_abstract: This bulletin describes a modification to Monero's linkable ring signature scheme that permits dual-key outputs as ring members. Key images are tied to both output one-time public keys in a dual, preventing both keys in that transaction from being spent separately. This method has applications to non-interactive refund transactions. We discuss the security implications of the scheme.
   mrl9: Thring Signatures and their Applications to Spender-Ambiguous Digital Currencies
-  mrl9_abstract: We present threshold ring multi-signatures (thring signatures) for
-    collaborative computation of ring signatures, present a game of existential forgery
-    for thring signatures, and discuss uses of thring signatures in digital currencies
-    that include spender-ambiguous cross-chain atomic swaps for confidential amounts
-    without a trusted setup. We present an implementation of thring signatures that
-    we call linkable spontaneous threshold anonymous group signatures, and prove the
-    implementation existentially unforgeable.
+  mrl9_abstract: We present threshold ring multi-signatures (thring signatures) for collaborative computation of ring signatures, present a game of existential forgery for thring signatures, and discuss uses of thring signatures in digital currencies that include spender-ambiguous cross-chain atomic swaps for confidential amounts without a trusted setup. We present an implementation of thring signatures that we call linkable spontaneous threshold anonymous group signatures, and prove the implementation existentially unforgeable.
   mrl10: Discrete Logarithm Equality Across Groups
-  mrl10_abstract: This technical note describes an algorithm used to prove knowledge
-    of the same discrete logarithm across different groups. The scheme expresses the
-    common value as a scalar representation of bits, and uses a set of ring signatures
-    to prove each bit is a valid value that is the same (up to an equivalence) across
-    both scalar groups.
+  mrl10_abstract: This technical note describes an algorithm used to prove knowledge of the same discrete logarithm across different groups. The scheme expresses the common value as a scalar representation of bits, and uses a set of ring signatures to prove each bit is a valid value that is the same (up to an equivalence) across both scalar groups.
+  iacr2019654: Concise Linkable Ring Signatures and Forgery Against Adversarial Keys
+  iacr2019654_abstract: We demonstrate that a version of non-slanderability is a natural definition of unforgeability for linkable ring signatures. We present a linkable ring signature construction with concise signatures and multi-dimensional keys that is linkably anonymous if a variation of the decisional Diffie-Hellman problem with random oracles is hard, linkable if key aggregation is a one-way function, and non-slanderable if a one-more variation of the discrete logarithm problem is hard. We remark on some applications in signer-ambiguous confidential transaction models without trusted setup.
   iacr2020018: "Triptych: logarithmic-sized linkable ring signatures with applications"
-  iacr2020018_abstract: Ring signatures are a common construction used to provide
-    signer ambiguity among a non-interactive set of public keys specified at the time
-    of signing. Unlike early approaches where signature size is linear in the size
-    of the signer anonymity set, current optimal solutions either require centralized
-    trusted setups or produce signatures logarithmic in size. However, few also provide
-    linkability, a property used to determine whether the signer of a message has
-    signed any previous message, possibly with restrictions on the anonymity set choice.
-    Here we introduce Triptych, a family of linkable ring signatures without trusted
-    setup that is based on generalizations of zero-knowledge proofs of knowledge of
-    commitment openings to zero. We demonstrate applications of Triptych in signer-ambiguous
-    transaction protocols by extending the construction to openings of parallel commitments
-    in independent anonymity sets. Signatures are logarithmic in the anonymity set
-    size and, while verification complexity is linear, collections of proofs can be
-    efficiently verified in batches. We show that for anonymity set sizes practical
-    for use in distributed protocols, Triptych offers competitive performance with
-    a straightforward construction.
-  cryptonote: Cryptonote 白皮书
-  cryptonote-whitepaper: Cryptonote 白皮书
-  cryptonote-whitepaper_para: 这是cryptonote团队编写的原始文件。您可以通过阅读来了解cryptonote算法的工作原理。
-  annotated: 带注释的白皮书
-  annotated_para: 门罗研究组发布了一个带注释版本的cryptonote白皮书，可以理解为门罗研究组对这份白皮书的注解。这份白皮书用一些简单词汇解释了一些较难的概念。
-  brandon: Brandon Goodell对白皮书的评论
-  brandon_para: 本文是MRL研究员Brandon Goodell对这份白皮书的正式评论。他深入研究了这份白皮书中的主张和数学模型。
+  iacr2020018_abstract: Ring signatures are a common construction used to provide signer ambiguity among a non-interactive set of public keys specified at the time of signing. Unlike early approaches where signature size is linear in the size of the signer anonymity set, current optimal solutions either require centralized trusted setups or produce signatures logarithmic in size. However, few also provide linkability, a property used to determine whether the signer of a message has signed any previous message, possibly with restrictions on the anonymity set choice. Here we introduce Triptych, a family of linkable ring signatures without trusted setup that is based on generalizations of zero-knowledge proofs of knowledge of commitment openings to zero. We demonstrate applications of Triptych in signer-ambiguous transaction protocols by extending the construction to openings of parallel commitments in independent anonymity sets. Signatures are logarithmic in the anonymity set size and, while verification complexity is linear, collections of proofs can be efficiently verified in batches. We show that for anonymity set sizes practical for use in distributed protocols, Triptych offers competitive performance with a straightforward construction.
+  iacr2020312: "Arcturus: efficient proofs for confidential transactions"
+  iacr2020312_note: "NOTE: this paper has been retracted, but it's possible to view it clicking on 'All versions of this report'."
+  iacr2020312_abstract: Confidential transactions are used in distributed digital assets to demonstrate the balance of values hidden in commitments, while retaining signer ambiguity. Previous work describes a signer-ambiguous proof of knowledge of the opening of commitments to zero at the same index across multiple public commitment sets and the evaluation of a verifiable random function used as a linking tag, and uses this to build a linkable ring signature called Triptych that can be used as a building block for a confidential transaction model. In this work, we extend Triptych to build Arcturus, a proving system that proves knowledge of openings of multiple commitments to zero within a single set, correct construction of a verifiable random function evaluated at each opening, and value balance across a separate list of commitments within a single proof. While soundness depends on a novel dual discrete-logarithm hardness assumption, we use data from the Monero blockchain to show that Arcturus can be used in a confidential transaction model to provide faster total batch verification time than other state-of-the-art constructions without a trusted setup.
+  cryptonote: Cryptonote Whitepapers
+  cryptonote-whitepaper: Cryptonote Whitepaper
+  cryptonote-whitepaper_para: This is the original cryptonote paper written by the cryptonote team. Reading it will give an understanding about how the cryptonote algorithm works in general.
+  annotated: Annotated Whitepaper
+  annotated_para: The Monero Research Lab released an annotated version of the cryptonote whitepaper. This is sort of like an informal review of the claims that are made line-by-line of the whitepaper. It also explains some of the harder concepts in relatively easy to understand terms.
+  brandon: Brandon Goodell's Whitepaper Review
+  brandon_para: This paper is a formal review of the original cryptonote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented in the cryptonote paper.
+  libraryp: "The library contains useful documents like 'Zero to Monero' and 'Mastering Monero', which explore and explain Monero in detail."
+  librarybutton: Explore the Library
 
 
 specs:
-  pow_title: 工作量证明
-  block_emission_title: 供应曲线
-  block_emission_main: "第一阶段：供应至2022年3月，一共发放约1813万2千门罗币"
-  block_emission_tail: "第二阶段：每个块0.6个门罗币奖励，从第一阶段结束后即刻开始。通货膨胀率届时将小于1%。"
+  title: Technical Info
+  intro: Here are listed some basic technical info about Monero. For more in-depth details, consult
+  intro_link: the library
+  intro1: or get in touch with the community
+  pow_title: Proof of Work
+  pow: Monero uses @randomx, an ASIC-resistant and CPU-friendly POW algorithm created by Monero community members, designed to make the use of mining-specific hardware unfeasible. Monero previously used CryptoNight and variations of this algorithm
+  pow_link: More info in the GitHub repo
+  block_emission_title: Emission curve
+  block_emission_pre: "To make sure there will always be an incentive to mine Monero and keep it safe, the emission is infinite. There are two main emissions:"
+  block_emission_main: "first, main curve: ~18.132 million coins by the end of May 2022"
+  block_emission_tail: "then, tail emission (0.6 XMR per 2-minute block) kicked in after the main emission was completed. This translates to <1% inflation, with the percentage trending towards 0 over time"
+  blocks_title: Blocks
+  blocks: A new @block is created every ~2 minutes. There is no maximum block size, but instead a block reward penalty and a dynamic block size, to ensure a dynamic @scalability
+  privacytech_title: Main privacy enhancing technologies
+  privacytech_ringct: "@RingCT"
+  privacytech_sh: "@Stealth-Addresses"
+  privacytech_rs: "@ring-signatures"
+  privacytech_tor-i2p: Transactions over Tor/I2P
+  privacytech_dandelion: Dandelion++
+
 library:
-  description: "以下是一些可供您下载的出版物，书籍和杂志。"
-  books: 书籍
+  description: "Below are some publications, books or magazines available for you to download."
+  books: Books
   zerotomonerov2: "Zero to Monero: Second Edition"
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
-    source code here</a><br>
+    Published: 4 April 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a><br>
     A comprehensive conceptual (and technical) explanation of Monero.<br>
-    We endeavor to teach anyone who knows basic algebra and simple computer science
-    concepts like the ‘bit representation’ of a number not only how Monero works at
-    a deep and comprehensive level, but also how useful and beautiful cryptography
-    can be.
+    We endeavor to teach anyone who knows basic algebra and simple computer science concepts like the ‘bit representation’ of a number not only how Monero works at a deep and comprehensive level, but also how useful and beautiful cryptography can be.
+  zerotomonerov2langs: Available in <a href="Zero-to-Monero-2-0-0-ru.pdf">Russian</a> and <a href="Zero-to-Monero-2-0-0-pt.pdf">Portuguese</a>.
   zerotomonerov1: "Zero to Monero: First Edition"
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
-    source code here</a>
+    Published: 26 June 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX source code here</a>
   masteringmonerop: >
-    一本能让你在看似复杂的门罗世界里畅游无阻的指南。<br>
-    其中包括:
-    <ul><li>区块链的广泛介绍和隐私的重要性——对不懂技术的用户来说，这是个好的入手点。</li>
-    <li>对比特币的缺点的讨论和门罗币为此提供的具体解决方案。</li>
-    <li>其他用户的小故事（以此来说名门罗是如何保护您的隐私），类比、事例、法律／道德层面的讨论和对于一些关键技术代码的讨论。</li>
-    <li>门罗币的去中心化网络、点对点结构、交易周期和安全原则的详细信息。</li>
-    <li>针对开发人员，工程师，软件架构师等人的对门罗技术基础的介绍</li>
-    <li>新项目介绍：防弹证明，科维，多重签名和硬件钱包</li></ul>
-    有关完整版，请参见 <a href="https://masteringmonero.com/">Mastering Monero</a> 网站
+    A guide through the seemingly complex world of Monero.<br>
+    It includes:
+    <ul><li>A broad introduction to blockchains and the importance of privacy - ideal for non-technical users.</li>
+    <li>Discussion of Bitcoin’s shortcomings and specific solutions provided by Monero.</li>
+    <li>User stories (illustrating how Monero protects your privacy), analogies, examples, legal/ethical discussions, and code snippets illustrating key technical concepts.</li>
+    <li>Details of the Monero decentralized network, peer-to-peer architecture, transaction lifecycle, and security principles.</li>
+    <li>Introductions to technical foundations of Monero, intended for developers, engineers, software architects, and curious users.</li>
+    <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets, etc.</li></ul>
+  cheatsheets: Cheatsheets
+  thesalmonseries: "The Salmon Series"
+  thesalmonseriesp: >
+    Infographics dealing with Monero's inner workings. The name comes from employed colours, having semantic meanings (even if weak) but also a unifying function as a recurring theme, and resembling salmon browning (from raw to well-done) to the author's eyes :)
+  moneroaddressescheatsheet20201206: "Monero Addresses Cheatsheet"
+  moneroaddressescheatsheet20201206p: >
+    Between the ‘big picture’ and the mathematical details, a single-page recap of various keys, addresses, scopes (private/public, spend/view, on-chain/off-chain, payer’s/payee’s) and their relations.
+  ringscheatsheet20210301: "Rings Cheatsheet"
+  ringscheatsheet20210301p: >
+    From generic legacy signature to CLSAG, a visual-holic journey through Rings flavours, presenting their core properties step-by-step in a poster-size infographic.
+  rctcheatsheet20210604: "RingCT Cheatsheet"
+  rctcheatsheet20210604p: >
+    The recipe of a delicious RingCT Type 5 transaction: one CLSAG every eleven UTXOs, Moneroj amounts to taste; thicken everything with Pedersen Commitments whose overall equilibrium will be evident to waiters as well, and protect last ones with a BulletProof glaze; serve on chosen Stealth Addresses and consume not before ten blocks later. Cheers!
+  zkbasicscheatsheet20220621: "ZK Basics Cheatsheet"
+  zkbasicscheatsheet20220621p: >
+    A lightly theoretical interlude (hopefully still gentle, trying to stress concepts more than formalism and selecting the approached topics) to lay the foundations for Bulletproof and other future Zero-Knowledge-related features, if any.
+  newsletters: Newsletters
+  revuomonero: >
+    Revuo Monero is a weekly newsletter where you can find the most recent Monero news.
+  themonerostandard: >
+    Monero Standard is a weekly publication by recanman, providing up-to-date news and information on the Monero protocol.
+    In addition to covering the latest developments in the Monero community, The Monero Standard also includes a weekly price chart, mining pool chart, blockchain statistics, and even a Meme of the Week.
+  moneroobserverblitz: >
+    Monero Observer Blitz provides monthly updates on the latest developments in the Monero community and protocol.
+    Written by escapethe3RA, this publication covers news related to Monero's ongoing development, community events, and notable achievements within the space.
 moneropedia:
-  add_new_text1: 如果有您想添加或修改的条目，请在
-  add_new_link: 这个网页的GitLab存储库中开启一个新问题
-  add_new_text2: 或者通过拉取请求来提交更新。
+  description: >
+    The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order.
+  instructions: Instructions for adding a Moneropedia entry are in the
+  add_new_text1: If there is an entry you'd like to modify or be added, please
+  add_new_link: open an issue on this website's GitHub repository
+  add_new_text2: or submit changes via pull request
+  back: Back to the Moneropedia
   entries:
-    account: 账户
-    address: 地址
-    airgap: 气墙
-    atomic-units: 原子单位
-    blockchain: 区块链
-    block: 区块
-    bootstrap-node: 引导节点
+    account: Account
+    address: Address
+    airgap: Airgap
+    atomic-units: Atomic Units
+    blockchain: Blockchain
+    block: Block
+    bootstrap-node: Bootstrap-node
     bulletproofs: Bulletproofs
-    change: 找零
+    change: Change
     clearnet: Clearnet
-    coinbase: 区块奖励
-    consensus: 共识
-    cryptocurrency: 加密货币
+    coinbase: Coinbase Transaction
+    consensus: Consensus
+    cryptocurrency: Cryptocurrency
     daemon: Daemon
-    denominations: 单位名称
-    encryption: 加密
-    fluffyblocks: 小型区块
-    fungibility: 可互换性
-    kovri: Kovri 科维
+    denominations: Denominations
+    encryption: Encryption
+    fluffyblocks: Fluffy Blocks
+    fungibility: Fungibility
+    kovri: Kovri
     locally-unique-host: Locally-unique host
-    mining: 挖矿
-    mnemonicseed: 助记词
-    node: 节点
-    openalias: 可读地址
-    paperwallet: 纸钱包
-    paymentid: 付款ID
+    mining: Mining
+    mnemonicseed: Mnemonic Seed
+    node: Node
+    openalias: OpenAlias
+    paperwallet: Paper Wallet
+    paymentid: Payment ID
     pedersen-commitment: Pedersen Commitment
     pruning: Pruning
     randomx: RandomX
     remote-node: Remote Node
-    ringCT: 环交易
-    ringsignatures: 环签名
-    ring-size: 环签大小
-    scalability: 可扩展性
-    signature: 加密签名
-    smartmining: 智能挖矿
-    spendkey: 花费秘钥
-    stealthaddress: 隐身地址
-    tail-emission: 后续供应
-    transaction: 交易
-    unlocktime: 交易解锁时间
-    viewkey: 查看秘钥
-    wallet: 钱包
+    ringCT: Ring CT
+    ringsignatures: Ring Signature
+    ring-size: Ring Size
+    scalability: Scalability
+    signature: Cryptographic Signature
+    smartmining: Smart Mining
+    spendkey: Spend Key
+    stealthaddress: Stealth Address
+    tail-emission: Tail Emission
+    transaction: Transactions
+    unlocktime: Transaction Unlock Time
+    viewkey: View Key
+    wallet: Wallet
+    clsag: CLSAG
+    merge-mining: Merge Mining
+    p2pool: P2Pool
+    sidechain: Sidechain
+
+tools:
+  intro1: Below is a list of third-party tools for interacting with the Monero ecosystem. <b>These tools are not vetted by the Getmonero team, see the disclaimer at the bottom of this page.</b> If a tool no longer supports Monero or you would like a Monero tool to be listed, please
+  intro2: open a GitHub issue and let us know
+  block-explorers: Block Explorers
+  address-generators: Address Generators
+
+  network: Network
+  monerohash-nodes: Monero node map
+  nownodes: node APIs
+  getblockio: Blockchain nodes provider
+  monerofail: Monero node list and node map
+  txstreet: Transaction and block visualizer
+
+  market: Market
+  backtestking: Build or buy your own trading strategy/bot.
+  cryptoradar: Marketplace comparison website
+
+  misc: Miscellaneous
+  monerohow-stats: Statistics
+  moneropro: Charts and metrics
+  monerologs: Archive of Monero IRC channels
+  monerobase: Archive of some older meeting logs
+  gateways: Payment Gateways
+
+  onion-service: Tor Onion service
 
 blog:
-  author: 来自
-  date: 在
-  allposts: 所有文章
-  urgent: 紧急
-  community: 社区
-  filter: 按分类过滤：
-  next: 下一个
-  previous: 上一个
+  allposts: All Posts
+  urgent: Urgent
+  releases: Releases
+  community: Community
+  meetinglogs: Meeting Logs
+  author: Posted by
+  date: Posted at
+  filter: "Filter by category:"
+  next: Next
+  previous: Prev
+
+
 tags:
-  notags: 这个标签还没有文章。
-footer:
-  feed: RSS源
-  source: 源代码
-  ml: 邮件列表
-  ccs: 社区众筹系统
-  reachout: 联系我们
-  legal: 规则
-error:
-  button: 返回首页
-  title: 页面未找到 (也许它重视隐私)
+  notags: There are no posts for this tag.
+
 accessibility:
-  cliscreen: 命令行钱包截图
-  arrowup: 返回页面顶部
-  gotop: 返回页面顶部
-  guiscreen: 这是一张门罗币图形化钱包的截图。左侧显示有导航菜单和钱包余额，右侧是发送门罗币的表单。
-tools:
-  moneropro: 图表和指标
-  gateways: 支付网关
-  monerohow-stats: 统计
+  arrowup: Go back to the top of the page
+  gotop: Go to top
+  guiscreen: A screenshot of the Monero GUI wallet. It shows the wallet's balance and a navigation menu on the left, and a form for sending XMR on the right.
+  cliscreen: CLI wallet screenshot
+
+error:
+  title: Page not found (perhaps it values privacy)
+  button: To the Homepage
