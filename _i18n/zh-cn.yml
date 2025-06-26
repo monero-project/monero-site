@@ -535,9 +535,9 @@ faq:
   video_intro: 门罗币基础介绍
   video_essentials: 核心技术解析
   video_sa: 隐形地址原理（RingSa：Ring Stealth Address）
-  video_ringsig: 环签名机制（RingSig：Ring Signature）
+  video_ringsig: 环签名机制（RingSig：Ring Signatures）
   video_ringct: 环机密交易详解（RingCT：Ring Confidential Transactions）
-  video_fcmp: 全链成员证明系统（FCMP++：Full-Chain Membership Proofs）
+  video_fcmp: 全链成员证明系统（FCMP：Full-Chain Membership Proofs）
   mvideos: "更多视频资源详见Moneropedia（门罗币百科）词条："
   aavailable: 支持多语言版本：
   and: 和
