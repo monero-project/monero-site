@@ -50,7 +50,7 @@ meta_descr: meta_descr.tools
                         <p><a href="https://nownodes.io/nodes/monero-xmr">NOWNodes - {% t tools.nownodes %}</a></p>
                         <p><a href="https://getblock.io">GetBlock - {% t tools.getblockio %}</a></p>
                         <p><a href="https://monero.fail/">Monero.fail - {% t tools.monerofail %}</a></p>
-                        <p><a href="https://tx.town/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
+                        <p><a href="https://txcity.io/v/xmr">TxStreet - {% t tools.txstreet %}</a></p>
                     </div>
                 </div>
             </div>
