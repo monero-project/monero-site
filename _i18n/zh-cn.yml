@@ -534,10 +534,10 @@ faq:
     社区已创建海量视频教程（YouTube等平台可公开获取）。本网站精选基础教程系列，推荐按序观看：
   video_intro: 门罗币基础介绍
   video_essentials: 核心技术解析
-  video_sa: 隐形地址原理（RingSa：Ring Stealth Address）
-  video_ringsig: 环签名机制（RingSig：Ring Signatures）
-  video_ringct: 环机密交易详解（RingCT：Ring Confidential Transactions）
-  video_fcmp: 全链成员证明系统（FCMP：Full-Chain Membership Proofs）
+  video_sa: 隐形地址（RingSa：Ring Stealth Address）
+  video_ringsig: 环签名（RingSig：Ring Signatures）
+  video_ringct: 环机密交易（RingCT：Ring Confidential Transactions）
+  fcmp: 全链成员证明（FCMP：Full-Chain Membership Proofs）
   mvideos: "更多视频资源详见Moneropedia（门罗币百科）词条："
   aavailable: 支持多语言版本：
   and: 和
@@ -840,7 +840,6 @@ roadmap:
 
   xmrbch-atomicswap: XMR-BCH atomic swap is completed
   haveno-mainnet: HavenoDEX released
-  fcmp-plus: Full-Chain Membership Proofs
   mrl-tasks: Proposed tasks from Monero Research Lab
   cuprate: Monerod Rust implementation - Cuprate
 
