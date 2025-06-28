@@ -844,8 +844,11 @@ roadmap:
 
 research-lab:
   intro: Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.
-  intro_email: "To contact the Monero Research Lab, please email lab@getmonero.org."
-  mrl_papers: Published Papers
+  intro_contact: "To contact the Monero Research Lab, please join our <a href='https://matrix.to/#/#monero-research-lab:monero.social'>Matrix</a>/<a href='irc://irc.libera.chat/#monero-research-lab'>IRC channel</a>"
+  mrl_papers: Papers Written by MRL Researchers
+  related_mrl_papers: Papers Related to Monero
+  papersbutton: Visit MoneroResearch.info
+  papersp: Explore a broad range of research papers related to Monero.
   abstract: Abstract
   introduction: Introduction
   read-paper: Read Paper
@@ -879,6 +882,8 @@ research-lab:
   iacr2020312: "Arcturus: efficient proofs for confidential transactions"
   iacr2020312_note: "NOTE: this paper has been retracted, but it's possible to view it clicking on 'All versions of this report'."
   iacr2020312_abstract: Confidential transactions are used in distributed digital assets to demonstrate the balance of values hidden in commitments, while retaining signer ambiguity. Previous work describes a signer-ambiguous proof of knowledge of the opening of commitments to zero at the same index across multiple public commitment sets and the evaluation of a verifiable random function used as a linking tag, and uses this to build a linkable ring signature called Triptych that can be used as a building block for a confidential transaction model. In this work, we extend Triptych to build Arcturus, a proving system that proves knowledge of openings of multiple commitments to zero within a single set, correct construction of a verifiable random function evaluated at each opening, and value balance across a separate list of commitments within a single proof. While soundness depends on a novel dual discrete-logarithm hardness assumption, we use data from the Monero blockchain to show that Arcturus can be used in a confidential transaction model to provide faster total batch verification time than other state-of-the-art constructions without a trusted setup.
+  cypherstack202410: Uniformly Most Powerful Tests For Ad Hoc Transactions In Monero
+  cypherstack202410_abstract: We introduce a general, low-cost, low-power statistical test for transactions in transaction protocols with small anonymity set authentication (TPSASAs), such as Monero. The test classifies transactions as ad hoc (spontaneously constructed to spend a deterministically selected key) or self-churned (constructed from a probability distribution very close to that of the default wallet software, and with the same sender and receiver). The test is a uniformly most powerful (UMP) likelihood ratio tests (LRT) from the Neyman-Pearson Lemma, and makes no assumptions about user behavior. We extend these tests to exploit prior information about user behavior. We discuss test parameterization, as well as how anonymity set cardinality and user behavior impact test performance. We also describe a maximum-likelihood de-anonymization attack on Monero based on our test.
   cryptonote: Cryptonote Whitepapers
   cryptonote-whitepaper: Cryptonote Whitepaper
   cryptonote-whitepaper_para: This is the original cryptonote paper written by the cryptonote team. Reading it will give an understanding about how the cryptonote algorithm works in general.
