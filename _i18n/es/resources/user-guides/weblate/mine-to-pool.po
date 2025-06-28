@@ -7,11 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-28 11:37+0200\n"
+"POT-Creation-Date: 2024-06-23 08:33+0000\n"
 "PO-Revision-Date: 2022-01-22 01:34+0000\n"
 "Last-Translator: Fabio Risso <fabiorissok@gmail.com>\n"
-"Language-Team: Spanish <https://translate.getmonero.org/projects/"
-"getmonero-user-guides/mine-to-pool/es/>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/getmonero-user-guides/mine-to-pool/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,8 +21,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:3
@@ -93,20 +91,17 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:42
 msgid "Scroll down to 'Assets' until you see the correct version for your system. Download this file, extract the archive somewhere memorable, like your desktop."
-msgstr ""
-"Baja hasta 'Assets' hasta que veas la versión correcta para tu sistema. "
-"Descarga este archivo y extráelo en algún lugar fácil de recordar, como tu "
-"escritorio."
+msgstr "Baja hasta 'Assets' hasta que veas la versión correcta para tu sistema. Descarga este archivo y extráelo en algún lugar fácil de recordar, como tu escritorio."
 
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
 #, no-wrap
-msgid "Other distributions and operative systems"
+msgid "Other distributions and operating systems"
 msgstr "Otras distribuciones y sistemas operativos"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:46
-msgid "Binaries are available for multiple distributions and operative systems, but you can also build the miner by yourself. Take a loot at [XMrig's docs](https://xmrig.com/docs/miner)"
+msgid "Binaries are available for various distributions and operating systems, but you can also build the miner by yourself. Take a look at [XMrig's docs](https://xmrig.com/docs/miner)"
 msgstr ""
 
 #. type: Title ##
@@ -118,9 +113,7 @@ msgstr "Seleccionando una pool"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:51
 msgid "There are lots of pools to choose from. You can find a list at [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
-msgstr ""
-"Hay muchas pool de las cuales elegir. Puedes encontrar una lista en "
-"[miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
+msgstr "Hay muchas pool de las cuales elegir. Puedes encontrar una lista en [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)."
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:56
@@ -316,9 +309,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:135
 msgid "Additionally, any blocks found must mature before they can be paid out. This takes 60 blocks (approx. 2 hours)."
-msgstr ""
-"Adicionalmente, todos los bloques encontrados deben madurar antes de que "
-"puedan ser pagados. Esto toma 60 bloques (aprox. 2 horas)."
+msgstr "Adicionalmente, todos los bloques encontrados deben madurar antes de que puedan ser pagados. Esto toma 60 bloques (aprox. 2 horas)."
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:136

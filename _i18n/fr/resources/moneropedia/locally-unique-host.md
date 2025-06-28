@@ -28,8 +28,8 @@ libre de les redéfinir selon vos désirs.
 ### Remarques
 
 - Monero utilise principalement la résolution d'@hôtes-canoniques-uniques
-alors que I2P utilise uniquement la résolution d'@hôte-unique-localement.
+  alors que I2P utilise uniquement la résolution d'@hôte-unique-localement.
 
 - Le domaine de premier niveau actuel d'I2P et @Kovri est `.i2p` et @Kovri
-se destine à traiter / utiliser uniquement le [domaine de premier
-niveau](https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau) `.i2p`.
+  se destine à traiter / utiliser uniquement le [domaine de premier
+  niveau](https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau) `.i2p`.

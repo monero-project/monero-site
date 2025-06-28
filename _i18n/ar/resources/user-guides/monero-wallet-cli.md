@@ -38,7 +38,7 @@ Important commands:
 "donate <amount>" - Donate XMR to the development team.
 ```
 
-## Checking your balance
+## التحقق من رصيدك
 
 مُنذ أنه هناك برامج مختلفه لمُعالجه كلاً من سلسله الكتل والمحفظه , العديد من
 إستخدامات واجهه سطر الأوامر تحتاج العمل مع الخادم. من ذلك التحقق من
@@ -58,7 +58,7 @@ index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
 amount currently available to spend. Newly received transactions require 10
 confirmations on the blockchain before being unlocked.
 
-## Sending monero
+## إرسال مونيرو
 
 You will need the standard address you want to send to (a long string
 starting with '4' or a '8'). The command structure is:
@@ -70,7 +70,7 @@ transfer ADDRESS AMOUNT
 Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
 many monero you want to send.
 
-## Receiving monero
+## إستلام مونيرو
 
 If you have your own Monero address, you just need to give your address to
 someone.
@@ -99,7 +99,7 @@ includes your own account and that payment ID. If you want to select a
 particular payment ID, you can do that too. Use:
 
 ```
-integrated_address 82d79055f3b27f56
+integrated_address 12346780abcdef00
 ```
 
 Payments made to an integrated address generated from your account will go
@@ -130,7 +130,7 @@ To view all generated addresses, run:
 address all
 ```
 
-## Proving to a third party you paid someone
+## إثبات لطرف ثالث أنك قد دفعت لشخص ما
 
 إذا دفعت لتاجر ويدّعي التاجر أنه لم يستلم الأموال ربما يجب عليك إثبات الدفع
 لطرف تالت - أو ربما للتاجر نفسه إذا كان خطأ غير مقصود. مونيرو خاص ولذلك لا
@@ -168,7 +168,7 @@ per-transaction key, and destination address which were supplied to you,
 respectively. `monero-wallet-cli` will check that transaction and let you
 know how much monero this transaction paid to the given address.
 
-## How to find a payment to you
+## كيفية العثور على دفعة لك
 
 إذا تلقيت دفعة باستخدام هويه معامله محدده ، فيمكنك البحث عنها:
 
