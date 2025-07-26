@@ -6,17 +6,40 @@ meta_descr: meta_descr.mrl
 ---
 {% t global.lang_tag %}
 <div class="container description">
-    <p>{% t research-lab.intro %} {% t research-lab.intro_email %}</p>
+    <p>{% t research-lab.intro %} {% t research-lab.intro_contact %}</p>
 </div>
 <section class="container">
     <div class="row">
         <!-- left two-thirds block-->
-        <div class="left two-thirds col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <div class="left col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div class="info-block related-research-paper">
+                <div class="row center-xs">
+                <div class="col">
+                    <h2>{% t research-lab.related_mrl_papers %}</h2>
+                        <div>
+                            <p>{% t research-lab.papersp %}</p><br>
+                            <div class="center-xs">
+                                <a class="btn-link btn-auto btn-primary" href="https://moneroresearch.info/">{% t research-lab.papersbutton %}</a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
             <div class="info-block research-paper">
                 <div class="row center-xs">
                     <div class="col"><h2>{% t research-lab.mrl_papers %}</h2></div>
                 </div>
                 <div class="tab">
+                <div class="tab">
+                    <input id="cypherstack202410" type="checkbox" name="tabs" class="accordion">
+                    <label for="cypherstack202410" class="accordion">{% t research-lab.cypherstack202410 %}</label>
+                    <div class="tab-content">
+                        <p><strong>{% t research-lab.abstract %}:</strong> {% t research-lab.cypherstack202410_abstract %}</p>
+                        <div class="center-xs">
+                            <p><a class="btn-link btn-auto btn-primary" target="_blank" rel="noreferrer noopener" href="https://github.com/cypherstack/churn/releases/download/final/Churn-final.pdf">{% t research-lab.read-paper %}</a></p>
+                        </div>
+                    </div>
+                </div>
                     <input id="tab-2020312" type="checkbox" name="tabs" class="accordion">
                     <label for="tab-2020312" class="accordion">IACR 2020/312: {% t research-lab.iacr2020312 %}</label>
                     <div class="tab-content">
