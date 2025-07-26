@@ -142,7 +142,7 @@ hangouts:
       cryptomonnaies.
     monero-offtopic: Pour discuter avec d'autres utilisateurs de Monero d'autre choses
       que Monero.
-    monero-pools: Le lieux des questions et discussion d'extraction minière.
+    monero-mining: Le lieux des questions et discussion d'extraction minière.
     monero-research-lab: Recherche sur la confidentialité financière de cryptomonnaies.
     monero-translations: Traduire Monero dans d'autres langues.
     monero-hardware: Construction de matériel pour garder vos moneroj en toute sécurité.
@@ -1068,8 +1068,8 @@ mining:
     \ une pool ou miner avec un GPU, vous aurez besoin d'un logiciel dédié. Mineurs\
     \ supportant Monero :\n"
   supportp: Si vous avez des questions ou si vous voulez simplement vous confronter
-    à d'autres mineurs, venez discuter sur Monero Pools. Sur <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a>
-    and <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+    à d'autres mineurs, venez discuter sur Monero Mining. Sur <a href="https://matrix.to/#/%23monero-mining:monero.social">Matrix</a>
+    and <a href="irc://irc.libera.chat/#monero-mining">Libera</a>.
   efficiency: Monero peut être miné à la fois par des CPU et des GPU, mais le premier
     est beaucoup plus efficace.
   miningsetp: "Les mineurs peuvent décider s'ils préfèrent miner en solo ou en pool.\
