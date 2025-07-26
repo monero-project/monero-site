@@ -52,9 +52,6 @@ meta_descr: hangouts.intro
                                     <p>{% t hangouts.resources_para %} {% t hangouts.resources_para1 %}</p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="https://translate.getmonero.org/" class="btn-link btn-fixed">Weblate</a></p>
-                                </div>
-                                <div class="col">
                                     <p><a href="https://matrix.to/#/%23monerospace:monero.social" class="btn-link btn-fixed">Matrix</a></p>
                                 </div>
                                 <div class="col">

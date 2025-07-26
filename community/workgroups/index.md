@@ -99,7 +99,6 @@ meta_descr: meta_descr.workgroups
           <h4>{% t team.contacts %}</h4>
           <ul class="logo">
             <li>{% t team.chat %} <code>#monero-translations</code> <a class="chats-img" href="irc://irc.libera.chat/#monero-translations"><img class="libera" src="/img/libera.svg" title="libera" alt="libera logo"></a> <a class="chats-img" href="https://matrix.to/#/%23monero-translations:monero.social?via=matrix.org"><img class="matrix" src="/img/matrix-logo.svg" title="Matrix" alt="Matrix logo"></a></li>
-            <li>{% t team.locplatform %} <a href="https://translate.getmonero.org">Weblate</a></li>
           </ul>
           <div class="row center-xs icons">
             <a class="ext-noicon" href="https://github.com/monero-ecosystem/monero-translations" target="_blank" rel="noreferrer, noopener" aria-label="Github logo"><div class="col social-icon github"></div></a>
