@@ -1,22 +1,23 @@
 ---
-summary: 'How Monero scaling is flexible and can accommodate many transactions as demand changes'
-terms: ["scalability"]
+summary: 'Возможность Monero к масштабированию в целях размещения в блоке большего количества транзакций по мере увеличения общего количества транзакций в сети'
+terms: ["scalability", "масштабируемость"]
 ---
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### The Basics
+### Основная информация
 
-The size of Monero @blocks (which contain @transactions) is flexible and can
-accommodate many transactions as demand changes. Formulas determine how the
-reward miners receive interacts with the number of transactions they choose
-to include in blocks. The @blockchain can therefore scale to meet changes in
-transaction volume.
+Размер @блоков Monero (содержащих @транзакции) является гибким и позволяет
+по необходимости вместить множество транзакций. Соразмерность размера
+вознаграждений, получаемых майнерами, количеству транзакций, включаемых ими
+в блоки, определяется формулами. Таким образом, @блокчейн может
+масштабироваться в соответствии с изменением объёма транзакций.
 
-Scaling may also refer to the ability to conduct certain types of
-intermediate transactions safely without interacting with a
-blockchain. Monero does not currently support native off-chain solutions
-like atomic swaps, since its privacy features do not permit the use of
-required functionality like non-interactive refund transactions or complex
-scripting. However, academic and industry research is ongoing and promising
-in this area.
+Масштабирование также может быть связано с возможностью безопасного
+проведения определённого типа посреднических транзакций без какого-либо
+взаимодействия с блокчейном. В настоящее время Monero не поддерживает
+решения, связанные с совершением сделок вне блокчейна, такие как атомные
+свопы, поскольку механизмы обеспечения приватности Monero не позволяют
+использовать такие необходимые функции, как неинтерактивные транзакции
+возмещения или сложные сценарии. Тем не менее академические и отраслевые
+исследования в этой области продолжаются и имеют хорошие перспективы.

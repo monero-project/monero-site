@@ -13,12 +13,12 @@ clearnet. Oznacza to, że *wszystkie* twoje połączenia mogą być śledzone i
 monitorowane przez:
 
 - przez twojego [dostawcę usług
-internetowych](https://en.wikipedia.org/wiki/ISP)
+  internetowych](https://en.wikipedia.org/wiki/ISP)
 
 - stronę, serwis lub osobę, z którą się komunikujesz
 
 - ewentualnie podmiot [Sojuszu Pięciorga Oczu]
-(https://en.wikipedia.org/wiki/5_Eyes).
+  (https://en.wikipedia.org/wiki/5_Eyes).
 
 I nawet jeśli korzystasz z [HTTPS](https://en.wikipedia.org/wiki/HTTPS) lub
 podobnego rozwiązania (które *szyfruje* twoją transmisję), twoja ścieżka nie

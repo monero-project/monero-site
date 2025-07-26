@@ -1,48 +1,106 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Step 1: Acquire Monero
+## Шаг 1: получение Monero
 
-There are multiple ways to acquire Monero: You can mine it, you can exchange services or goods for it, or you can convert other cryptocurrencies and fiat money to XMR. If you choose the latter, the most convenient way to do it is to use an exchange.
+Существует множество способов получить Monero: можно заняться майнингом,
+можно принимать оплату за оказание услуг или за товары в Monero, или же
+просто обменять другие криптовалюты или фиатные деньги на XMR. Если вы
+решите выбрать последний вариант, то удобнее всего будет сделать это,
+прибегнув к услугам какой-либо биржи.
 
-There are multiple exchanges supporting Monero. Some are centralized, which usually have great liquidity and fast service, but requires you to provide personal information before starting the trade (KYC). Some are decentralized and don't require any identification, but usually have less volume and can be harder to use. There are also services that allow people to meet and perform a trade without third parties involved.
+Есть много бирж, поддерживающих торговлю Monero. Некоторые из них являются
+централизованными, и для них, как правило, характерна высокая ликвидность и
+скорость оказания услуг. Но в этом случае перед тем, как начать торговлю,
+вам придётся предоставить свою личную информацию (правило KYC (Знай своего
+клиента)). Некоторые биржи являются децентрализованными и не требуют никакой
+идентификации личности, но обычно объём торгов на них меньше, и ими сложнее
+пользоваться. Также существуют сервисы, позволяющие пользователям
+встречаться и торговать без посредничества третьих сторон.
 
-An incomplete list of Exchanges that support Monero is on our [Merchants page]({{ site.baseurl }}/community/merchants/#exchanges).
+Неполный список бирж, поддерживающих Monero, можно найти на нашей [Странице
+предпринимателей]({{ site.baseurl }}/community/merchants/#exchanges).
 
-## Step 2: Download and create a Paper Wallet on a secure and air-gapped computer.
+## Шаг 2: скачивание и создание бумажного кошелька на безопасном, изолированном компьютере.
 
-Download the @paper-wallet generator at: [moneroaddress.org](https://moneroaddress.org) and copy it to a USB stick (Direct link: [https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip](https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip)).
+Генератор @бумажного-кошелька можно скачать на сайте
+[getmonero.org/generator]({{ site.baseurl}}/generator) , после чего его
+следует скопировать на USB-накопитель (прямая ссылка:
+[wallet-generator.zip]({{ site.baseurl
+}}/resources/wallet-generator/wallet-generator.zip)).
 
-Unzip and open the paper wallet generator (monero-wallet-generator.html) into a web browser on an air-gapped (@airgap) computer that hasn't been used before, or has had a clean installation of the operative system.
+Генератор бумажного кошелька (wallet-generator.html) необходимо
+разархивировать и открыть в браузере на изолированном компьютере (@airgap),
+который не использовался ранее, или же на котором установлена исключительно
+операционная система.
 
-Your paper wallet will have four important items:
+У бумажного кошелька есть четыре важных элемента:
 
-- Monero Public @Address: The public address is used to receive funds to the @wallet. You give this to anyone who will be sending funds to your wallet.
+- @Публичный-адрес Monero. Публичный адрес используется для получения
+  средств в @кошелёк. Этот адрес можно давать любому, кто будет отправлять
+  средства на ваш кошелёк.
 
-- Monero @Mnemonic-Seed: The mnemonic seed is a method of storing the entire wallet that is easily recognizable to humans.  This is all you need to restore your wallet at a later date.
+- @Мнемоническая-фраза Monero. Мнемоническая фраза является понятным для
+  человека способом сохранения всего кошелька.  Она - это всё, что вам
+  понадобится, чтобы восстановить кошелёк впоследствии.
 
-- Monero @Spend-Key: The private spend key is used to send funds from the wallet.
+- @Ключ-траты Monero. Приватный ключ траты используется для отправки средств
+  из кошелька.
 
-- Monero @View-Key: The private view key is to view transactions entering the wallet. Commonly this is used to setup a view-only wallet which can see incoming transactions live on the blockchain as they are sent to a cold storage wallet.
+- @Ключ-просмотра Monero. Приватный ключ просмотра используется для
+  просмотра транзакций, поступающих на ваш кошелёк. Как правило, он
+  используется для создания кошелька, предназначенного исключительно для
+  просмотра и позволяющего просматривать поступающие в блокчейн транзакции
+  «в живую» по мере их отправки в холодный кошелёк.
 
-At this point you have many options. You can print the wallet on paper, save it as a PDF or text on a USB stick, burn it to CD/DVD, etc. Most likely you will want at least two or three copies, stored securely in different locations. If storing digitally, encrypt everything with a strong password.  If storing on paper, do not show the wallet to anyone else who can memorize your 25 word key, or take a picture of the wallet without your permission.  Sending someone a picture of the wallet is the same as giving away all of your funds.
+На этом этапе у вас есть множество опций. Вы можете распечатать кошелёк на
+бумаге, сохранить его в формате PDF или в текстовом формате на
+USB-накопителе, записать его на CD/DVD и так далее. Наиболее вероятно, вы
+захотите создать, по крайней мере, две или три копии, которые будут
+храниться по-отдельности в различных безопасных местах. Если вы решите
+хранить его в цифровом формате, следует зашифровать всё, используя надёжный
+пароль.  Если вы сделаете это на бумаге, не показывайте кошелёк кому-либо
+ещё, способному запомнить ваш ключ, состоящий из 25 слов, или просто
+сфотографировать кошелёк без вашего разрешения.  Отправить кому-то снимок
+вашего кошелька будет означать обеспечить получателю полный доступ к вашим
+средствам.
 
-Whichever method you chose, be sure there's no copy of the Monero wallet left over on the device you used. You may need to securely delete the Monero wallet if you saved it to a disk, or make sure your printer does not save a copy in memory.
+Какой бы из способов вы ни выбрали, обязательно убедитесь в том, что на
+устройстве, которые вы использовали не осталось ни одной копии кошелька
+Monero. Возможно, вам придётся удалить кошелёк Monero, если вы сохранили его
+на диск, или же убедиться в том, что принтер не сохранил копию в своей
+памяти.
 
-*If you lose access to your Monero paper wallet the Monero will not be available to you or anyone else, ever. You wont be able to recover them!*
+*Если вы потеряете доступ к своему бумажному кошельку, то ни вы, ни кто-либо другой уже никогда не сможет получить ваши monero. Вы никак не сможете восстановить их!*
 
-#### Side Note
+#### Заметка на полях
 
-Option to encrypt an XMR mnemonic seed: https://xmr.llcoins.net/  
-Download the html page and place it on your airgapped computer. Check the part "Encrypt/Decrypt Mnemonic Seed" and make sure you use "CN Add" with a decent password. Thanks manicminer5.
+Существует опция шифрования мнемонической фразы XMR: https://xmr.llcoins.net/ 
+Скачайте страницу html и скопируйте её на свой изолированный
+компьютер. Зайдите в раздел Encrypt/Decrypt Mnemonic Seed
+(Зашифровать/расшифровать мнемоническую фразу) и убедитесь в том, что вы
+можете воспользоваться опцией CN Add (Добавить CN), задав надёжный
+пароль. Благодарим за эту возможность manicminer5.
 
-## Step 3: Send your Moneroj to the paper wallet
+## Шаг 3. Перевод ваших Monero в бумажный кошелёк
 
-Now that you have everything you need, you are ready to send your XMR to your paper wallet. Simply send the coins to the wallet address you noted earlier. Make sure the address is correct, even if you copy-pasted it! Remember that if you send the coins to a wrong address, there is no way to have them back!  
+Теперь, когда у вас есть всё, что нужно, вы готовы перевести ваши XMR в свой бумажный кошелёк. Просто отправьте монеты на адрес кошелька, который вы записали ранее. Убедитесь в правильности адреса, даже если вы скопировали и вставили его! Следует помнить о том, что если вы отправите монеты на неправильный адрес, вы уже не сможете вернуть их обратно!
 
-#### Notes and How to Verify Funds
+#### Примечания и способ проверки средств
 
-Because the Monero blockchain is private and untraceable, you won't be able to lookup your Monero Public Address and confirm that the funds have arrived like you might with Bitcoin. This is good for privacy, but bad for convenience.
+Поскольку блокчейн Monero является анонимным и неотслеживаемым, вы не
+сможете найти свой публичный адрес Monero и убедиться в том, что вы
+действительно получили средства, как это можно было бы сделать в случае с
+Bitcoin. Это хорошо с точки зрения анонимности, но неудобно.
 
-To securely verify the funds have arrived at your wallet, you will need to setup a View Only wallet. This is where that view-key comes in. To create a view-only wallet see the entry: [View Only Wallets]({{site.baseurl}}/resources/user-guides/view_only.html)
+Чтобы безопасным образом убедиться в том, что средства пришли на ваш
+кошелёк, вам понадобится создать специальный кошелёк для просмотра. Вот
+здесь нам и понадобится ключ просмотра. Как создать такой кошелёк написано в
+разделе [Кошельки для
+просмотра]({{site.baseurl}}/resources/user-guides/view_only.html)
 
-To verify the funds are *still in* your wallet and have not been spent you need to create a Cold Wallet with your mnemonic key (all your funds) on an airgapped computer with an up-to-date copy of the Monero Blockchain. When finished you will have to securely erase the wallet or connect it to the internet and it becomes a Hot Wallet.
+Чтобы убедиться в том, что средства *по-прежнему* находятся в вашем кошельке
+и не были потрачены, необходимо, воспользовавшись вашей мнемонической
+фразой, создать на вашем изолированном компьютере холодный кошелёк (со всеми
+вашими средствами) с актуальной версией блокчейна Monero. После этого вам
+будет необходимо удалить этот кошелёк, или же вы можете подключить
+устройство к интернету, после чего кошелёк станет горячим.

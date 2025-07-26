@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-24 12:59+0100\n"
+"POT-Creation-Date: 2025-03-20 03:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,186 +16,149 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:2
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr ""
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:4
-msgid "### Purpose and Warning"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:6
-msgid ""
-"Most people don't need this. To use Monero, just start the software and it "
-"will synchronize itself with the peer-to-peer network. Normally, this is "
-"much faster than downloading and importing the blockchain as detailed in "
-"this guide. This is because you'll be downloading from many peers instead of "
-"just a single server, and the Monero @daemon will verify each block as it's "
-"received, instead of verifying separately after downloading."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:8
-msgid ""
-"This option is mostly useful for development, or possibly if some unusual "
-"problem is preventing you from syncing the normal way."
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:10
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:3
 #, no-wrap
-msgid ""
-"**Never** use the dangerous unverified import option, it is strictly for "
-"experts only. Especially, don't use it with any blockchain you download from "
-"the Internet, including the official site. It is only safe to use if a) you "
-"are importing a file that you exported locally, yourself *and* b) you are "
-"absolutely sure it was already fully and properly verified before "
-"exporting.\n"
+msgid "Purpose and Warning"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:12
-msgid "### Step 1"
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:6
+msgid "Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading."
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:14
-msgid ""
-"Download the Current bootstrap from "
-"https://downloads.getmonero.org/blockchain.raw; you can skip this step if "
-"you are importing the blockchain from another source."
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:8
+msgid "This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way."
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:16
-msgid "### Step 2"
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:10
+#, no-wrap
+msgid "**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.\n"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:11
+#, no-wrap
+msgid "Step 1"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:18
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:14
 msgid "Find the path where the Monero software is installed. For example mine is:"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:20
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:16
 msgid "`D:\\monero-gui-0.10.3.1`"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:22
-msgid ""
-"Your path may be different depending on where you decided to install the "
-"Monero software, and what version of the software you have."
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:18
+msgid "Your path may be different depending on where you decided to install the Monero software, and what version of the software you have."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:19
+#, no-wrap
+msgid "Step 2"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:24
-msgid "### Step 3"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:26
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:22
 msgid "Find the path of your downloaded blockchain for example mine was:"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:28
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:24
 msgid "`C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:30
-msgid ""
-"Yours might be different depending on where you chose to save the downloaded "
-"blockchain."
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:26
+msgid "Yours might be different depending on where you chose to save the downloaded blockchain."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:27
+#, no-wrap
+msgid "Step 3"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:32
-msgid "### Step 4"
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:30
+msgid "Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:31
+#, no-wrap
+msgid "Step 4"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:34
-msgid ""
-"Open a Command Prompt window. You can do this by pressing the Windows key + "
-"R, and then typing in the popup box `CMD` and pressing Enter."
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:34
+msgid "Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:36
-msgid "### Step 5"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:38
-msgid ""
-"Now you need to navigate using the CMD window to the path of your Monero "
-"software. You can do this by typing:"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:40
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:36
 msgid "`cd C:\\YOUR\\MONERO\\PATH\\HERE`"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:42
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:38
 msgid "It should look something like:"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:44
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:40
 msgid "`cd D:\\monero-gui-0.10.3.1`"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:46
-msgid ""
-"If your Monero software is on another drive you can use `DriveLetter:` for "
-"example if your Monero software was on your D drive then before using the cd "
-"command you would do `D:`"
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:42
+msgid "If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:43
+#, no-wrap
+msgid "Step 5"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:48
-msgid "### Step 6"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:50
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:46
 msgid "Now type in your command prompt window:"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:52
-msgid ""
-"`monero-blockchain-import --input-file "
-"C:\\YOUR\\BLOCKCHAIN\\FILE\\PATH\\HERE`"
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:48
+msgid "`monero-blockchain-import --input-file C:\\YOUR\\BLOCKCHAIN\\FILE\\PATH\\HERE`"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:54
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:50
 msgid "For example I would type :"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:56
-msgid ""
-"`monero-blockchain-import --input-file "
-"C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:52
+msgid "`monero-blockchain-import --input-file C:\\Users\\KeeJef\\Downloads\\blockchain.raw`"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:53
+#, no-wrap
+msgid "Step 6"
 msgstr ""
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:58
-msgid "### Step 7"
-msgstr ""
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/importing_blockchain.md:59
-msgid ""
-"After the the blockchain has finished syncing up you can open your Monero "
-"wallet normally. Your downloaded blockchain.raw can be deleted."
+#: ../_i18n/en/resources/user-guides/importing_blockchain.md:55
+msgid "After the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted."
 msgstr ""
