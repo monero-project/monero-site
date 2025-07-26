@@ -411,6 +411,7 @@ contributing:
   develop_descr: >
     This list only includes the tools stewarded by the core team, but the Monero ecosystem is much more vast. People can contribute to the development of libraries, services, documentation, graphics, etc. The list is virtually infinite. Contact or join the workgroup(s) to which you'd like to contribute.
   develop_wg: See the Monero Workgroups.
+  accepting_p: Easiest way to help Monero is accepting; As more businesses and users transact in Monero, it gains real-world value and legitimacy. This drives demand and supports price stability.
   full-node: Run a Node
   full-node_p: An easy and effective way to help the Monero network is to run a @node. Nodes ensure the network keeps running safe and decentralized. A simple fully synchronized node is enough to help the network, but if you want to go out of your way, you could run an open @remote-node, to allow other people to connect to it.
   full-node_p2: "We have several guides to help you run and configure your node:"
