@@ -51,7 +51,7 @@ meta_descr: merchants.descr
       <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="center-xs">
-            <img class="merch" src="/img/merchants/eigenwallet.svg" alt="EigenWallet Logo" title="EigenWallet">
+            <img class="merch" src="/img/merchants/eigenwallet.png" alt="EigenWallet Logo" title="EigenWallet">
             <p>{% t merchants.eigenwalletdescr %}</p>
           </div>
           <div>
