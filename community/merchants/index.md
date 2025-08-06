@@ -51,8 +51,8 @@ meta_descr: merchants.descr
       <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="info-block">
           <div class="center-xs">
-            <img class="merch" src="/img/merchants/unstoppableswap.png" alt="UnstoppableSwap GUI Logo" title="UnstoppableSwap GUI">
-            <p>{% t merchants.unstoppableswapdesc %}</p>
+            <img class="merch" src="/img/merchants/eigenwallet.svg" alt="EigenWallet Logo" title="EigenWallet">
+            <p>{% t merchants.eigenwalletdescr %}</p>
           </div>
           <div>
             <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
@@ -63,7 +63,7 @@ meta_descr: merchants.descr
             <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
           </div>
           <div class="center-xs">
-            <p><a href="https://unstoppableswap.net" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitunstoppableswap %}</a></p>
+            <p><a href="https://eigenwallet.org"  class="btn-link btn-fixed btn-primary-top">{% t merchants.visiteigenwallet %}</a></p>
           </div>
         </div>
       </div>
