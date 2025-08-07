@@ -63,7 +63,7 @@ If you want to make rules about dependencies in the competition, make sure to sp
 
 ### Spend more time marketing competition in specific circles where people do code competitions
 
-There was a lot of good outreach for the FCMP++ competition, but some of the most fruitful outreach was to circles where there are already a lot of people doing coding/crypto competitions, who aren't necessarily involved in the Monero sphere. Ask xmrack about outreach here.
+There was a lot of good outreach for the FCMP++ competition, but some of the most fruitful outreach was to circles where there are already a lot of people doing coding/crypto competitions, who aren't necessarily involved in the Monero sphere.
 
 ### Make sure that submitters always license their code under a permissive license
 
