@@ -169,8 +169,8 @@ merchants:
   basicswapdexdesc: Decentralized P2P atomic swaps with a strong focus on the user experience.
   visitbasicswapdex: Visit BasicSwapDEX
   setreq: Setup required
-  unstoppableswapdesc: Exchange Bitcoin for Monero using Atomic Swaps.
-  visitunstoppableswap: Visit UnstoppableSwap
+  eigenwalletdesc: Exchange Bitcoin for Monero using Atomic Swaps.
+  visiteigenwallet: Visit Eigen Wallet
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
