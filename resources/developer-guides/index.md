@@ -20,9 +20,9 @@ meta_descr: developer-guides.head
                         </div>
                     </div>
                     <p><i>{% t developer-guides.outdated %}</i></p>
-                    <h3><span class="icon-page"></span><a href="https://docs.getmonero.org/rpc-library/monerod-rpc/">{% t developer-guides.daemonrpc %}</a></h3>
+                    <h3><span class="icon-page"></span><a href="{{ site.docsurl }}/rpc-library/monerod-rpc/">{% t developer-guides.daemonrpc %}</a></h3>
                         <p>{% t developer-guides.daemonrpc_descr %}</p>
-                    <h3><span class="icon-page"></span><a href="https://docs.getmonero.org/rpc-library/wallet-rpc/">{% t developer-guides.walletrpc %}</a></h3>
+                    <h3><span class="icon-page"></span><a href="{{ site.docsurl }}/rpc-library/wallet-rpc/">{% t developer-guides.walletrpc %}</a></h3>
                         <p>{% t developer-guides.walletrpc_descr %}</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ meta_descr: developer-guides.head
                         </div>
                     </div>
                     <p><i>{% t developer-guides.external_head %}</i></p>
-                    <h3><span class="icon-globe"></span><a href="https://monerodocs.org/">Monerodocs.org</a></h3>
+                    <h3><span class="icon-globe"></span><a href="{{ site.docsurl }}/">Monero Docs</a></h3>
                         <p>{% t developer-guides.monerodocs %}</p>
                     <h3><a href="https://github.com/moneroexamples"><span class="icon-github"></span>Moneroexamples</a></h3>
                         <p>{% t developer-guides.moneroexamples %}</p>
