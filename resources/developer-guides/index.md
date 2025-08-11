@@ -24,6 +24,8 @@ meta_descr: developer-guides.head
                         <p>{% t developer-guides.daemonrpc_descr %}</p>
                     <h3><span class="icon-page"></span><a href="https://docs.getmonero.org/rpc-library/wallet-rpc/">{% t developer-guides.walletrpc %}</a></h3>
                         <p>{% t developer-guides.walletrpc_descr %}</p>
+                    <h3><span class="icon-page"></span><a href="https://docs.getmonero.org/interacting/monerod-reference/">{% t developer-guides.monerodref %}</a></h3>
+                        <p>{% t developer-guides.monerodref_descr %}</p>
                 </div>
             </div>
             <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
