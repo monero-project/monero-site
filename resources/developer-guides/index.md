@@ -34,7 +34,7 @@ meta_descr: developer-guides.head
                         </div>
                     </div>
                     <p><i>{% t developer-guides.external_head %}</i></p>
-                    <h3><span class="icon-globe"></span><a href="https://monerodocs.org/">Monerodocs.org</a></h3>
+                    <h3><span class="icon-globe"></span><a href="https://docs.getmonero.org/">Monero Docs</a></h3>
                         <p>{% t developer-guides.monerodocs %}</p>
                     <h3><a href="https://github.com/moneroexamples"><span class="icon-github"></span>Moneroexamples</a></h3>
                         <p>{% t developer-guides.moneroexamples %}</p>

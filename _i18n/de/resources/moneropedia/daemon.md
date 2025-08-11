@@ -14,17 +14,16 @@ einem anderen Gerät läuft, handelt es sich um einen @Remote-Node. Ein
 Remote-) Node aufbauen, um dem Netzwerk Transaktionen zu übermitteln.
 
 Es ist möglich, dem Hintergrunddienst direkt oder via RPC Befehle zu
-senden. Die [Anleitung des Hintergrunddienst-RPCs]({{ site.baseurl_root
-}}/resources/developer-guides/daemon-rpc.html) enthält eine ausführliche
+senden. Die [Anleitung des Hintergrunddienst-RPCs](docs.getmonero.org/rpc-library/monerod-rpc/) enthält eine ausführliche
 (und mit Beispielen versehene) Erläuterung der verfügbaren RPC-Aufrufe. Für
 detailliertere und fachspezifische Informationen über den Hintergrunddienst
-findet sich unten ein Verweis auf Monerodocs.
+findet sich unten ein Verweis auf Monero Docs.
 
 ---
 
 ##### Zusätzliche Quellen
 
-<sub>1. Der [Monerod-Beitrag auf Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>
+<sub>1. Der [Monerod-Beitrag auf docs.getmonero.org](https://docs.getmonero.org/interacting/monerod-reference/)</sub><br>
 
 <sub>2. "Hintergrunddienst"-Artikel [auf Wikipedia](https://de.wikipedia.org/wiki/Daemon)</sub><br>
 
