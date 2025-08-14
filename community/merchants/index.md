@@ -98,7 +98,6 @@ meta_descr: merchants.descr
             <li><a href="https://dvchain.co/">DV Chain (OTC)</a> (USD¹, CAD¹, GBP¹, EUR¹, JPY¹, ...)</li>
             <li><a href="https://www.bitfinex.com/">Bitfinex</a> (USD¹)</li>
             <li><a href="https://bitcoinvn.io?deposit=vnd&settle=xmr">BitcoinVN</a> (VND¹)</li>
-            <li><a href="https://tradeogre.com/">TradeOgre</a></li>
           </ul>
           <p>¹ Fiat currency to Monero trading pair (e.g. XMR/USD, XMR/EUR)</p>
           <p>² XMR Unavailable for EEA Users</p>
