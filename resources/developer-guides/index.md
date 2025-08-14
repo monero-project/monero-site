@@ -61,7 +61,6 @@ meta_descr: developer-guides.head
                         <li><a href="https://github.com/monero-ecosystem/monero-python">monero-python (Monero Ecosystem)</a> - {% t developer-guides.monero-python %}</li>
                         <li><a href="https://github.com/monero-ecosystem/moneriote-python">moneriote-python (Monero Ecosystem)</a> - {% t developer-guides.moneriote-python %}</li>
                     <h3>Java</h3>
-                        <li><a href="https://github.com/00-matt/monerorpc">monerorpc</a> - {% t developer-guides.monerorpc %}</li>
                         <li><a href="https://github.com/monero-ecosystem/monero-java">monero-java (Monero Ecosystem)</a> - {% t developer-guides.monero-java %}</li>
                     <h3>C++</h3>
                         <li><a href="https://github.com/monero-ecosystem/monero-cpp">monero-cpp (Monero Ecosystem)</a> - {% t developer-guides.monero-cpp %}</li>
