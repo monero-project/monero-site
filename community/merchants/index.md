@@ -109,6 +109,7 @@ meta_descr: merchants.descr
             <li><a href="https://changenow.io/">ChangeNow</a></li>
             <li><a href="https://godex.io/">Godex</a></li>
             <li><a href="https://stealthex.io/">StealthEX</a></li>
+            <li><a href="https://letsexchange.io/?ref_id=TTPcmY47KXSuJ6oLcoin_from=BTC&coin_to=XMR/">LetsExchange</a></li>
           </ul>
       </div>
     </div>
