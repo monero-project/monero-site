@@ -1,44 +1,46 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-`monero-wallet-cli` is the wallet software shipped in the Monero
-archives. It is a console program, and manages an account. While a bitcoin
-wallet manages both an account and the blockchain, Monero separates these:
-`monerod` handles the blockchain, and `monero-wallet-cli` handles the
-account.
+`monero-wallet-cli` - это программное обеспечение кошелька, которое
+поставляется в архиве Monero. Оно представляет собой консольную программу,
+которая управляет учетными записями пользователей Monero. В то время как
+кошелек Bitcoin управляет как учетными записями, так и блокчейном, в Monero
+эти функции разделены: `monerod` обрабатывает блокчейн, а
+`monero-wallet-cli` обрабатывает учетные записи пользователей.
 
-This guide will show how to perform various operations with
-`monero-wallet-cli`. The guide assumes you are using the most recent version
-of Monero and have already created an account according to the other guides.
+В этом руководстве будет показано, как выполнять различные операции из
+интерфейса `monero-wallet-cli`. В руководстве предполагается, что вы
+используете самую последнюю версию Monero и уже создали учетную запись.
 
-## Overview
+## Обзор
 
-You can have a list of the most important commands by running `help`:
+Вы можете вывести список наиболее важных команд, воспользовавшись командой
+`help`:
 
 ```
-Important commands:
+Наиболее важные команды:
 
-"welcome" - Show welcome message.
-"help all" - Show the list of all available commands.
-"help <command>" - Show a command's documentation.
-"apropos <keyword>" - Show commands related to a keyword.
+"welcome" - Показать приветственное сообщение.
+"help all" - Показать список всех доступных команд.
+"help <command>" - Показать документацию по команде.
+"apropos <keyword>" - Показывать команды, связанные с ключевым словом.
 
-"wallet_info" - Show wallet main address and other info.
-"balance" - Show balance.
-"address all" - Show all addresses.
-"address new [<label text with white spaces allowed>]" - Create new subaddress.
-"transfer <address> <amount>" - Send XMR to an address.
-"show_transfers [in|out|pending|failed|pool]" - Show transactions.
-"sweep_all <address>" - Send whole balance to another wallet.
-"seed" - Show secret 25 words that can be used to recover this wallet.
-"refresh" - Synchronize wallet with the Monero network.
-"status" - Check current status of wallet.
-"version" - Check software version.
-"exit" - Exit wallet.
+"wallet_info" - Показатьосновной адрес и дополнительную информацию о кошельке.
+"balance" - Показать баланс
+"address all" - Показать все адреса кошелька
+"address new [<label допускается использование пробелов>]" - Создать новый подадрес.
+"transfer <address> <amount>" - Отправить XMR на адрес.
+"show_transfers [in|out|pending|failed|pool]" - Показать транзакции.
+"sweep_all <address>" - Отправить весь доступный баланс на другой кошелек.
+"seed" - Показать мнемоническую фразу, состоящую из 25 слов, которую впоследствии можно использовать для восстановления этого кошелька.
+"refresh" - Синхронизировать кошелек с сетью Monero.
+"status" - Показать текущее состояние кошелька.
+"version" - Показать текущую версию программного обеспечения.
+"exit" - Закрыть кошелёк.
 
-"donate <amount>" - Donate XMR to the development team.
+"donate <amount>" - Пожертвовать XMR команде разработчиков.
 ```
 
-## Checking your balance
+## Проверяем свой баланс
 
 Поскольку обработка данных в блокчейне и учетных записей кошельков
 пользователей совершаются отдельными программами, многие функции
@@ -48,110 +50,116 @@ Important commands:
 увидеть входящий баланс своего кошелька. Для этого введите команду
 `balance`.
 
-Output:
+Вывод:
 
 ```
-Currently selected account: [0] Primary account
-Tag: (No tag assigned)
-Balance: 7.499942880000, unlocked balance: 7.499942880000
+Выбранная в данный момент учетная запись: [0] Основная учетная запись
+Тег: (тег не присвоен)
+Баланс: 7.499942880000, разблокированный баланс: 7.499942880000
 ```
 
-In this example you're viewing the balance of your primary account (with
-index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
-amount currently available to spend. Newly received transactions require 10
-confirmations on the blockchain before being unlocked.
+В этом примере вы видите баланс своей основной учётной записи (с индексом
+`[0]`). `Balance` (Баланс) - это ваш текущий общий баланс. `Unlocked
+balance` (Разблокированный баланс) - это сумма, которую в настоящее время
+можно потратить. Недавно совершенные транзакции требуют 10 подтверждений в
+блокчейне перед разблокировкой.
 
-## Sending monero
+## Отправка Monero
 
-You will need the standard address you want to send to (a long string
-starting with '4' or a '8'). The command structure is:
+Вам понадобится стандартный адрес, на который вы хотите отправить средства
+(длинная строка, которая начинается с '4' или '8'). Структура команды:
 
 ```
-transfer ADDRESS AMOUNT
+transfer АДРЕС СУММА
 ```
 
-Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
-many monero you want to send.
+Замените `АДРЕС` адресом, на который вы хотите отправить средства, а `СУММУ`
+количеством monero, которые вы хотите отправить.
 
-## Receiving monero
+## Получение Monero
 
-If you have your own Monero address, you just need to give your address to
-someone.
+Если у вас есть собственный кошелек Monero, для получения средств на него
+вам просто нужно предоставить кому-то свой адрес.
 
-You can find out your primary address with:
+Вы можете узнать свой основной адрес, если введете команду:
 
 ```
 address
 ```
 
-Since Monero is anonymous, you won't see the origin address the funds you
-receive came from. If you want to know, for instance to credit a particular
-customer, you'll have to tell the sender to use a payment ID, which is an
-arbitrary optional tag which gets attached to a transaction. It's not
-possible to use standalone payment addresses, but you can generate an
-address that already includes a random payment ID (integrated addresss)
-using `integrated_address`:
+Поскольку Monero анонимная криптовалюта, вы не увидите адрес источника, от
+которого вы получили свои средства. Если вам нужно узнать эти данные,
+например, для кредитования конкретного клиента, вам нужно будет договориться
+с отправителем, чтобы он использовал идентификатор платежа, который является
+произвольным необязательным тегом, который привязывается к транзакции. На
+данный момент нет возможности использовать автономные адреса, однако, чтобы
+упростить себе жизнь, вы можете создать адрес, который уже содержит этот
+случайный идентификатор платежа (интегрированный адрес) используя
+`integrated_address`:
 
 ```
-Random payment ID: <82d79055f3b27f56>
-Matching integrated address: 4KHQkZ4MmVePC2yau6Mb8vhuGGy8LVdsZD8CFcQJvr4BSTfC5AQX3aXCn5RiDPjvsEHiJu1TC1ybR8pRTCbZM5bhTrAD3HDwWMtAn1K7nV
+Случайный идентификатор платежа: <82d79055f3b27f56>
+Соответствующий интегрированный адрес: 4KHQkZ4MmVePC2yau6Mb8vhuGGy8LVdsZD8CFcQJvr4BSTfC5AQX3aXCn5RiDPjvsEHiJu1TC1ybR8pRTCbZM5bhTrAD3HDwWMtAn1K7nV
 ```
 
-This will generate a random payment ID, and give you the address that
-includes your own account and that payment ID. If you want to select a
-particular payment ID, you can do that too. Use:
+Это создаст случайный идентификатор платежа и предоставит вам адрес, который
+будет включать ваш стандартный адрес и этот идентификатор платежа. Если вы
+хотите выбрать конкретный идентификатор платежа, вы также можете это сделать
+с помощью команды. Используйте:
 
 ```
 integrated_address 82d79055f3b27f56
 ```
 
-Payments made to an integrated address generated from your account will go
-to your account, with that payment ID attached, so you can tell payments
-apart.
+Платежи, внесенные в интегрированный адрес, созданный в вашей учетной
+записи, будут отправляться вам с прикрепленным идентификатором платежа,
+чтобы вы могли вести их учет отдельно.
 
-### Using subaddresses
+### Использование подадресов
 
-It's suggested to use subaddresses (starting with `8`) instead of your main
-address (starting with `4`) to receive funds. Run:
+Для получения средств рекомендуется использовать именно подадреса
+(начинающиеся с `8`), вместо вашего основного адреса (начинающегося с
+`4`). Используйте:
 
 ```
-address new [<label text with white spaces allowed>]
+address new [<label допускается использование пробелов>]
 ```
 
-This will generate a subaddress and its optional label, which addess you can
-share to receive payment on the account it's linked to.  For example,
+Это приведет к созданию подадреса и соответствующей метки адреса, которой вы
+можете поделиться, чтобы получить платеж на учетную запись, с которой он
+связан.  Например,
 
 ```
 address new github_donations
 ```
 
-will generate a subaddress and its label 'github_donations'.
+будет сгенирован подадрес с меткой 'github_donations'.
 
-To view all generated addresses, run:
+Чтобы посмотреть все сгенерированные адреса, выполните:
 
 ```
 address all
 ```
 
-## Proving to a third party you paid someone
+## Как доказать третьей стороне, что вы заплатили кому-то
 
 Если вы платите субъекту, а он заявляет, что не получил средств, вам может
 потребоваться доказать третьему лицу, которому вы отправляли средства, или
 даже самому субъекту, что платеж был действительно отправлен. Monero
 является конфиденциальной сетью, поэтому вы не можете просто указать на свою
-транзакцию в блокчейне, так как вы не можете сказать, кто ее отправил, и кто
-ее получил. Однако существует возможность предоставлять `tx key` (Ключ
-транзакций) третьей стороне, а эта сторона уже сможет определить, была ли
-отправлена эта транзакция Monero этому конкретному адресу. Обратите
-внимание, что сохранение этих ключей для каждой транзакции отключено по
-умолчанию, и вам нужно будет включить его перед отправкой, если вы считаете,
-что вам может понадобиться данная функция. Делается это с помощью команды:
+транзакцию в блокчейне, так как вы не можете сказать, кто ее отправил и кто
+ее получил. Однако существует возможность предоставить третьей стороне
+приватный ключ, а эта сторона уже сможет определить, была ли отправлена эта
+транзакция Monero конкретному адресу. Обратите внимание, что сохранение этих
+ключей для каждой транзакции выключено по умолчанию, и вам нужно будет
+включить его перед отправкой, если вы считаете, что вам может понадобиться
+данная функция. Это делается это с помощью команды:
 
 ```
 set store-tx-info 1
 ```
 
-Вы можете извлечь `tx key` (Ключ транзакций) из более ранней транзакции:
+Вы можете извлечь tx key (Ключ транзакций) из более ранней транзакции:
 
 ```
 get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
@@ -173,14 +181,14 @@ get_tx_key 1234567890123456789012345678901212345678901234567890123456789012
 check_tx_key TXID TXKEY ADDRESS
 ```
 
-Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID,
-per-transaction key, and destination address which were supplied to you,
-respectively. `monero-wallet-cli` will check that transaction and let you
-know how much monero this transaction paid to the given address.
+Укажите вместо `TXID`, `TXKEY` и `ADDRESS` соответственно идентификатор
+транзакции, ключ транзакции и адрес получателя, которые были предоставлен
+вам. `monero-wallet-cli` проверит эту транзакцию и сообщит вам, сколько
+денег было оплачено этой транзакцией по указанному адресу.
 
-## How to find a payment to you
+## Как найти отправленный вам платеж
 
-Если вы получили платеж с использованием определенного `payment id`
+Если вы получили платеж с использованием определенного payment ID
 (Идентификатор платежа), вы можете посмотреть информацию об этом с помощью
 команды:
 
@@ -202,7 +210,7 @@ show_transfers
 транзакции. Например, команда:
 
 ```
-show_transfers in 650000
+show_transfers в 650000
 ```
 
 покажет только входящие транзакции после блока 650000. Вы также можете

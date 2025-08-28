@@ -1,50 +1,48 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Purpose and Warning
+### 目的和警告
 
-Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
+大多数人不需要这个。如果想要使用门罗币，打开软件它就会用点对点网络自我同步了。一般情况下，这比这篇文章中指导的下载与导入方法要快得多。因为你不只是从一个单独的服务器下载，而是通过很多中继，并且门罗币@节点进程会在接收到一个区块以后立刻对其进行验证，而不是下载完成以后单独验证。
 
-This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
+这个选项对于开发者一般很有用，如果你遇见了一些不寻常的让你无法正常同步的问题它也能派上用场。
 
-**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
 
-### Step 1
+### 第一步
 
-Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
-
-### Step 2
-
-Find the path where the Monero software is installed. For example mine is:
+找到门罗币程序安装的路径。比如说笔者的是：
 
 `D:\monero-gui-0.10.3.1`
 
-Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
+根据你版本的不同和你安装位置的不同，你的路径可能会不同。
 
-### Step 3
+### 第二步
 
-Find the path of your downloaded blockchain for example mine was:
+找到你下载好的区块链文件的路径。比如说笔者的是：
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Yours might be different depending on where you chose to save the downloaded blockchain.
+因为你选择的下载位置可能不同，这个路径在你的设备也大概会不同。
 
-### Step 4
+### 第三步
 
-Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
+打开一个命令提示符（终端）窗口。你可以通过按下Windows徽标键+R字母键，然后在弹出的窗口中输入`CMD`并回车来打开它。
 
-### Step 5
+### 第四步
 
-Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
+现在你需要在CMD窗口定位你的门罗币软件的路径。你可以通过输入这个来做到这一点：
 
-`cd C:\YOUR\MONERO\PATH\HERE`
+`cd C:\[你的门罗币软件路径]`
 
-It should look something like:
+它应该看起来像是这样的：
 
 `cd D:\monero-gui-0.10.3.1`
 
-If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
+If your Monero software is on another drive you can use `DriveLetter:` for
+example if your Monero software was on your D drive then before using the cd
+command you would do `D:`
 
-### Step 6
+### 第五步
 
 Now type in your command prompt window:
 
@@ -52,8 +50,10 @@ Now type in your command prompt window:
 
 For example I would type :
 
-`monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
+`monero-blockchain-import --input-file
+C:\Users\KeeJef\Downloads\blockchain.raw`
 
-### Step 7
+### 第一步
 
-After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.
+After the blockchain has finished syncing up you can open your Monero wallet
+normally. Your downloaded blockchain.raw can be deleted.
