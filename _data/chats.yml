@@ -14,8 +14,8 @@ chats:
 - monero-offtopic:
   matrix: https://matrix.to/#/%23monero-offtopic:monero.social
 
-- monero-pools:
-  matrix: https://matrix.to/#/%23monero-pools:monero.social
+- monero-mining:
+  matrix: https://matrix.to/#/%23monero-mining:monero.social
 
 - monero-research-lab:
   matrix: https://matrix.to/#/%23monero-research-lab:monero.social
