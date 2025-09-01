@@ -24,6 +24,8 @@ meta_descr: developer-guides.head
                         <p>{% t developer-guides.daemonrpc_descr %}</p>
                     <h3><span class="icon-page"></span><a href="https://docs.getmonero.org/rpc-library/wallet-rpc/">{% t developer-guides.walletrpc %}</a></h3>
                         <p>{% t developer-guides.walletrpc_descr %}</p>
+                    <h3><span class="icon-page"></span><a href="https://docs.getmonero.org/interacting/monerod-reference/">{% t developer-guides.monerodref %}</a></h3>
+                        <p>{% t developer-guides.monerodref_descr %}</p>
                 </div>
             </div>
             <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -34,8 +36,6 @@ meta_descr: developer-guides.head
                         </div>
                     </div>
                     <p><i>{% t developer-guides.external_head %}</i></p>
-                    <h3><span class="icon-globe"></span><a href="https://monerodocs.org/">Monerodocs.org</a></h3>
-                        <p>{% t developer-guides.monerodocs %}</p>
                     <h3><a href="https://github.com/moneroexamples"><span class="icon-github"></span>Moneroexamples</a></h3>
                         <p>{% t developer-guides.moneroexamples %}</p>
                     <h3><a href="https://github.com/monero-ecosystem"><span class="icon-github"></span>Monero Ecosystem project</a></h3>

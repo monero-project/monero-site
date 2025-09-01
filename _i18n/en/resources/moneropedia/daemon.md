@@ -13,7 +13,7 @@ It's possible to send commands to the Daemon directly or through the RPC interfa
 
 ##### Other Resources
 
-<sub>1. The [monerod reference on Monerodocs.org](https://monerodocs.org/interacting/monerod-reference/)</sub><br>
+<sub>1. The [monerod reference](https://docs.getmonero.org/interacting/monerod-reference/)</sub><br>
 
 <sub>2. 'Daemon' entry [on Wikipedia](https://en.wikipedia.org/wiki/Daemon_(computing))</sub><br>
 
