@@ -264,6 +264,12 @@ meta_descr: downloads.intro
                             <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cypherstack/stack_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
+                               <tr>
+                            <td><img class="small" src="/img/unstoppable-wallet.png" width="100" height="100" loading="lazy" alt="Unstoppable logo"><a href="https://unstoppable.money/">Unstoppable</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td>X</td>
+                            <td><a class="ext-noicon" href="https://github.com/horizontalsystems" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                        </tr>
                         </table>
                         <h3 class="desktop-only">{% t downloads.remotesync %}</h3>
                         <p class="desktop-only">{% t downloads.remotesyncinfo %}</p>
@@ -295,6 +301,7 @@ meta_descr: downloads.intro
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.app" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                                 <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
+                                 <li><a class="ext-noicon" href="https://unstoppable.money" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/unstoppable-wallet.png" width="100" height="100" loading="lazy" alt="Unstoppable Wallet Logo">Unstoppable Wallet</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
