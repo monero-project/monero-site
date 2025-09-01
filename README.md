@@ -1,4 +1,5 @@
 [![gh-actions/site](https://github.com/monero-project/monero-site/actions/workflows/ci.yml/badge.svg)](https://github.com/monero-project/monero-site/actions/workflows/ci.yml)
+[![license](https://img.shields.io/github/license/monero-project/monero-site)](https://github.com/monero-project/monero-site/blob/master/LICENSE)
 
 ## Introduction
 
