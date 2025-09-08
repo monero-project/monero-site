@@ -1,5 +1,45 @@
 [![gh-actions/site](https://github.com/monero-project/monero-site/actions/workflows/ci.yml/badge.svg)](https://github.com/monero-project/monero-site/actions/workflows/ci.yml)
 
+## 🎨 Theme System Enhancement
+
+This fork introduces a comprehensive theme system for the Monero website with three beautiful theme options:
+
+### Light Theme (Default)
+![Light Theme](screenshots/light-theme.png)
+*Clean, professional design with white backgrounds and dark text*
+
+### Dark Theme
+![Dark Theme](screenshots/dark-theme.png)
+*Reduced eye strain with dark backgrounds and light text*
+
+### Cyberpunk Theme
+![Cyberpunk Theme](screenshots/cyberpunk-theme.png)
+*Futuristic design with neon green text, cyan accents, and glow effects*
+
+### 🔒 Privacy-First Implementation
+- **No localStorage or cookies** - themes persist via URL parameters
+- **Transparent system** - theme choice visible in URL (`?theme=dark` or `?theme=cyberpunk`)
+- **User controllable** - can be disabled by removing URL parameter
+- **Bookmarkable** - theme preferences can be saved and shared
+
+### ✨ Features
+- **Three theme options**: Light (default), Dark, Cyberpunk
+- **URL-based persistence** across all page navigation
+- **Integrated theme selector** in main navigation menu
+- **Mobile and desktop responsive** design
+- **CSS variables system** for maintainable theming
+- **Automatic link updating** to preserve theme choice
+- **High contrast ratios** for accessibility
+
+### 🛠️ Technical Details
+- **Hybrid CSS + JavaScript approach**: CSS handles visual switching, JS manages persistence
+- **Pure CSS fallback**: Themes work even if JavaScript is disabled
+- **Modern web standards**: Uses `:checked`, `:has()` selectors and CSS variables
+- **Performance optimized**: Minimal JavaScript footprint
+- **Cross-browser compatible**: Works on all modern browsers
+
+---
+
 ## Introduction
 
 This README will walk you through everything you need to know to make changes, edits, or even completely new pages for the [getmonero.org website](https://getmonero.org/). It'll definitely be a bit of a ride, so strap yourself in. Feel free to skip down to a relevant section if you already know what you need.
