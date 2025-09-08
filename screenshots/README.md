@@ -10,17 +10,17 @@ This directory contains screenshots demonstrating the three theme options availa
 - **Features**: Dark text on light backgrounds, standard Monero orange accents
 - **Status**: ✅ Added
 
-### 2. Dark Theme (`dark-theme.png`)
+### ✅ 2. Dark Theme (`dark-theme.png`)
 - **URL**: `http://localhost:4000/?theme=dark`
 - **Description**: Dark theme for reduced eye strain
 - **Features**: Light text on dark gray backgrounds, maintains Monero orange accents
-- **Status**: ⏳ Pending
+- **Status**: ✅ Added
 
-### 3. Cyberpunk Theme (`cyberpunk-theme.png`)
+### ✅ 3. Cyberpunk Theme (`cyberpunk-theme.png`)
 - **URL**: `http://localhost:4000/?theme=cyberpunk`
 - **Description**: Futuristic cyberpunk theme with neon effects
 - **Features**: Neon green text, cyan accents, black/purple backgrounds, glow effects
-- **Status**: ⏳ Pending
+- **Status**: ✅ Added
 
 ## Next Steps
 
