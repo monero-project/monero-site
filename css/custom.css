@@ -956,13 +956,132 @@
 
 /******************GENERAL**********************/
 
+/* CSS-only theme switching using radio buttons */
+.theme-radio {
+  display: none;
+}
+
+/* Default light theme */
+:root {
+  --bg-color: #edeef0;
+  --text-color: #4c4c4c;
+  --link-color: #000;
+  --header-bg: #ffffff;
+  --button-bg: #d26e2b;
+  --button-text: #ffffff;
+  --info-block-bg: #ffffff;
+  --border-color: #edeef0;
+  --shadow-color: rgba(50,50,93,.1);
+  --footer-bg: #4c4c4c;
+  --footer-text: #efefef;
+}
+
+/* Dark theme when dark radio is checked (desktop or mobile) */
+#theme-dark:checked ~ body,
+#theme-dark-mobile:checked ~ body,
+body:has(#theme-dark:checked),
+body:has(#theme-dark-mobile:checked) {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --link-color: #ffffff;
+  --header-bg: #2d2d2d;
+  --button-bg: #d26e2b;
+  --button-text: #ffffff;
+  --info-block-bg: #2d2d2d;
+  --border-color: #404040;
+  --shadow-color: rgba(0,0,0,.3);
+  --footer-bg: #1a1a1a;
+  --footer-text: #e0e0e0;
+}
+
+/* Cyberpunk theme when cyberpunk radio is checked (desktop or mobile) */
+#theme-cyberpunk:checked ~ body,
+#theme-cyberpunk-mobile:checked ~ body,
+body:has(#theme-cyberpunk:checked),
+body:has(#theme-cyberpunk-mobile:checked) {
+  --bg-color: #0a0a0a;
+  --text-color: #00ff41;
+  --link-color: #00ffff;
+  --header-bg: #0a0a1a;
+  --button-bg: #00ffff;
+  --button-text: #000000;
+  --info-block-bg: #0f0f23;
+  --border-color: #00ff41;
+  --shadow-color: rgba(0,255,255,.2);
+  --footer-bg: #0a0a0a;
+  --footer-text: #00ff41;
+}
+
+/* Cyberpunk special effects - CSS only */
+#theme-cyberpunk:checked ~ .page-wrapper .info-block {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+
+#theme-cyberpunk:checked ~ .page-wrapper h1,
+#theme-cyberpunk:checked ~ .page-wrapper h2,
+#theme-cyberpunk:checked ~ .page-wrapper h3 {
+  text-shadow: 0 0 10px var(--text-color);
+}
+
+#theme-cyberpunk:checked ~ .page-wrapper a {
+  text-shadow: 0 0 5px var(--link-color);
+  transition: all 0.3s ease;
+}
+
+#theme-cyberpunk:checked ~ .page-wrapper a:hover {
+  text-shadow: 0 0 15px var(--link-color);
+}
+
+.theme-light {
+  --bg-color: #edeef0;
+  --text-color: #4c4c4c;
+  --link-color: #000;
+  --header-bg: #ffffff;
+  --button-bg: #d26e2b;
+  --button-text: #ffffff;
+  --info-block-bg: #ffffff;
+  --border-color: #edeef0;
+  --shadow-color: rgba(50,50,93,.1);
+  --footer-bg: #4c4c4c;
+  --footer-text: #efefef;
+}
+
+.theme-dark {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --link-color: #ffffff;
+  --header-bg: #2d2d2d;
+  --button-bg: #d26e2b;
+  --button-text: #ffffff;
+  --info-block-bg: #2d2d2d;
+  --border-color: #404040;
+  --shadow-color: rgba(0,0,0,.3);
+  --footer-bg: #1a1a1a;
+  --footer-text: #e0e0e0;
+}
+
+.theme-cyberpunk {
+  --bg-color: #0a0a0a;
+  --text-color: #00ff41;
+  --link-color: #00ffff;
+  --header-bg: #0a0a1a;
+  --button-bg: #00ffff;
+  --button-text: #000000;
+  --info-block-bg: #0f0f23;
+  --border-color: #00ff41;
+  --shadow-color: rgba(0,255,255,.2);
+  --footer-bg: #0a0a0a;
+  --footer-text: #00ff41;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: #4c4c4c;
-    background-color: #edeef0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 body p, body blockquote, body ol, body ul {
@@ -971,7 +1090,7 @@ body p, body blockquote, body ol, body ul {
 }
 
 a {
-    color: #000;
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -1103,10 +1222,10 @@ img.onion-mid {
 }
 
 .info-block, .white-nav {
-    background-color: #ffffff;
-    -moz-box-shadow: 0 2px 4px rgba(50,50,93,.1);
-    -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
-    box-shadow: 0 2px 4px rgba(50,50,93,.1);
+    background-color: var(--header-bg);
+    -moz-box-shadow: 0 2px 4px var(--shadow-color);
+    -webkit-box-shadow: 0 2px 4px var(--shadow-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .info-block a {
@@ -1727,13 +1846,13 @@ h2, .info-block h2 {
 /*************************BUTTONS****************************/
 
 a.btn-fixed, a.btn-auto {
-    background: none;
-    border: 2px solid #d26e2b;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: 2px solid var(--button-bg);
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
     font-weight: 700;
-    color: #d26e2b;
     text-transform: uppercase;
     /*padding: 0.5rem 1rem 0.3rem 1rem;*/
     padding: 0 1rem;
@@ -1760,7 +1879,7 @@ a.btn-fixed, a.btn-auto {
     -moz-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
-    border: 2px solid #d26e2b;
+    border: 2px solid var(--button-bg);
 }
 
 .btn-fixed:active, .btn-auto:active {
@@ -1768,13 +1887,13 @@ a.btn-fixed, a.btn-auto {
     -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-    border: 1px solid #d26e2b;
+    border: 1px solid var(--button-bg);
 }
 
 a.btn-link:hover, a.btn-link.active, a.btn-link:focus {
     text-decoration: none;
     outline: 0;
-    border: 2px solid #d26e2b;
+    border: 2px solid var(--button-bg);
 }
 
 .btn-link span.icon-windows, .btn-link span.icon-linux, .btn-link span.icon-apple, .btn-link span.icon-blockchain {
@@ -1831,10 +1950,10 @@ a.btn-link:hover span.icon-blockchain, a.btn-link:focus span.icon-blockchain, a.
 }
 
 .btn-fixed:hover, .btn-fixed:active, .btn-fixed:focus, .btn-auto:hover, .btn-auto:active, .btn-auto:focus {
-    background-color: #d26e2b;
-    color: #fff!important;
+    background-color: var(--button-bg);
+    color: var(--button-text)!important;
     text-decoration: none;
-    border: 2px solid #d26e2b;
+    border: 2px solid var(--button-bg);
 }
 
 @media only screen and (max-width: 62rem) {
@@ -1881,7 +2000,7 @@ img.icon-language {
 }
 
 .topnav .topnav-list a, .topnav .topnav-list label {
-    color: #4c4c4c;
+    color: var(--text-color);
     text-decoration: none;
     -webkit-transition: all ease-out .1s;
     -moz-transition: all ease-out .1s;
@@ -1945,7 +2064,7 @@ img.icon-language {
     left: 0;
     top: 2.8rem;
     text-align: left;
-    background: #fcfcfc;
+    background: var(--header-bg);
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1956,9 +2075,9 @@ img.icon-language {
         -ms-transition: all .3s ease;
          -o-transition: all .3s ease;
             transition: all .3s ease;
-    -moz-box-shadow: 0 3px 5px rgba(50,50,93,.1);
-    -webkit-box-shadow: 0 3px 5px rgba(50,50,93,.1);
-    box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    -moz-box-shadow: 0 3px 5px var(--shadow-color);
+    -webkit-box-shadow: 0 3px 5px var(--shadow-color);
+    box-shadow: 0 3px 5px var(--shadow-color);
 }
 
 .topnav .topnav-list .language-change .dropdown-content a {
@@ -1995,7 +2114,7 @@ img.icon-language {
 .nav-items>.nav-item>label, .nav-items>.nav-item>a {
     padding: 1.5rem 2rem 1.5rem 3.5rem;
     display: block;
-    color: #4c4c4c;
+    color: var(--text-color);
     text-decoration: none;
     font-family: 'Hind', sans-serif;
     font-size: 1.35rem;
@@ -2025,12 +2144,12 @@ img.icon-language {
 }
 
 .nav-items>.nav-item>label:hover, .nav-items>.nav-item>a:hover, .nav-items>.nav-item>a:focus, .nav-items>.nav-item>a:active {
-    color: #d26e2b;
+    color: var(--button-bg);
     text-decoration: none;
 }
 
 .nav-items>.nav-item>label:hover .arrow-down, .nav-items>.nav-item>a:hover .arrow-down, .nav-items>.nav-item>a:focus .arrow-down, .nav-items>.nav-item>a:active .arrow-down {
-    border-top: 3px solid #d26e2b;
+    border-top: 3px solid var(--button-bg);
 }
 
 /*DROPDOWN MENU*/
@@ -2044,14 +2163,14 @@ img.icon-language {
     left: 0;
     top: 99.5%;
     text-align: left;
-    background: #ffffff;
+    background: var(--header-bg);
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -moz-box-shadow: 0 2px 4px rgba(50,50,93,.1);
-    -webkit-box-shadow: 0 2px 4px rgba(50,50,93,.1);
-    box-shadow: 0 2px 4px rgba(50,50,93,.1);
+    -moz-box-shadow: 0 2px 4px var(--shadow-color);
+    -webkit-box-shadow: 0 2px 4px var(--shadow-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
     opacity: 0;
     visibility: hidden;
     z-index: 5;
@@ -2072,7 +2191,7 @@ img.icon-language {
 }
 
 .nav-item>.dropdown-content>a {
-    color: #4c4c4c;
+    color: var(--text-color);
     text-decoration: none;
     font-family: 'Hind', sans-serif;
     font-weight: 500;
@@ -2086,8 +2205,8 @@ img.icon-language {
 }
 
 .nav-item>.dropdown-content>a:hover {
-    color: #d26e2b;
-    background-color: #fcfcfc;
+    color: var(--button-bg);
+    background-color: var(--info-block-bg);
 }
 
 .dropdown-content a {
@@ -2327,7 +2446,7 @@ img.monero-logo {
     top: 0;
     bottom: 0;
     width: 70vw;
-    background-color: #fff;
+    background-color: var(--header-bg);
     -moz-transition: right 0.5s, left 0.5s;
     -webkit-transition: right 0.5s, left 0.5s;
     transition: right 0.5s, left 0.5s;
@@ -2419,14 +2538,14 @@ label[for="mobile-burger"] {
 
 .mob-nav .nav-item label, .mob-nav .nav-item>a {
     text-decoration: none;
-    color: #393939;
+    color: var(--text-color);
     cursor: pointer;
     height: 1.9rem;
     line-height: 2.1rem;
 }
 
 .mob-nav .nav-item>a:hover, .mob-nav .nav-item>a:focus, .mob-nav .nav-item>a:active, .mob-nav .nav-item>a.active, .mob-nav .nav-item label:hover, .mob-nav .nav-item label:focus {
-    color: #d26e2b;
+    color: var(--button-bg);
 }
 
 
@@ -2437,14 +2556,14 @@ label[for="mobile-burger"] {
     line-height: 1.5rem;
     height: 1.5rem;
     text-decoration: none;
-    color: #393939;
+    color: var(--text-color);
     cursor: pointer;
 }
 
 
 .mob-nav .nav-item>.dropdown-content>a:hover, .mob-nav .nav-item .dropdown-content>a:focus, .mob-nav .nav-item .dropdown-content>a.active {
-    color: #d26e2b;
-    background-color: #f5f5f5;
+    color: var(--button-bg);
+    background-color: var(--info-block-bg);
 }
 
 /*Avoid fixed page header overlapping in-page anchors on mobile*/
@@ -2456,7 +2575,7 @@ label[for="mobile-burger"] {
 }
 
 #drop1:checked ~ .dropdown-content, #drop2:checked ~ .dropdown-content, #drop3:checked ~ .dropdown-content, #drop4:checked ~ .dropdown-content {
-    background-color: #fcfcfc;
+    background-color: var(--info-block-bg);
 }
 
 .mob-language-change, .mob-language-change label {
@@ -2479,7 +2598,7 @@ label[for="mobile-burger"] {
     text-align: center;
     width: inherit;
     margin-top: 0.5rem;
-    background-color: #fff;
+    background-color: var(--header-bg);
     max-height: calc(100% - 50px);
     overflow: auto;
 }
@@ -2910,8 +3029,8 @@ footer {
     /*position: absolute;*/
     bottom: 0;
     width: 100%;
-    background-color: #4c4c4c;
-    color: #efefef;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     z-index: 1;
 }
 
@@ -4712,4 +4831,91 @@ input.accordion[type=radio]:checked + label::after {
 
 #qr-link:hover {
     cursor: pointer;
+}
+
+#theme-selector {
+  background-color: var(--info-block-bg);
+  color: var(--text-color);
+  border: 2px solid var(--button-bg);
+  padding: 0.5rem 1rem;
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23d26e2b" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#theme-selector:hover {
+  border-color: var(--link-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+#theme-selector option {
+  background-color: var(--info-block-bg);
+  color: var(--text-color);
+}
+
+/* Theme option styling to match existing dropdown items */
+.theme-option {
+  display: block;
+  padding: 0.8rem 3rem 0.8rem 3.5rem;
+  cursor: pointer;
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 0.99rem;
+  line-height: 1.3;
+  color: var(--text-color);
+  text-decoration: none;
+  -webkit-transition: all ease-out .2s;
+  -moz-transition: all ease-out .2s;
+  -o-transition: all ease-out .2s;
+  transition: all ease-out .2s;
+}
+
+.theme-option:hover {
+  color: var(--button-bg);
+  background-color: var(--header-bg);
+}
+
+/* Hide radio button but keep functionality */
+.theme-radio {
+  display: none;
+}
+
+/* Style for checked theme option */
+.theme-radio:checked + .theme-option,
+input[type="radio"]:checked ~ .theme-option {
+  color: var(--button-bg);
+  font-weight: bold;
+}
+
+/* Cyberpunk theme special effects */
+.theme-cyberpunk .dropdown-content .theme-option {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  text-shadow: 0 0 10px var(--text-color);
+}
+
+.theme-cyberpunk .info-block {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.theme-cyberpunk h1, .theme-cyberpunk h2, .theme-cyberpunk h3 {
+  text-shadow: 0 0 10px var(--text-color);
+}
+
+.theme-cyberpunk a {
+  text-shadow: 0 0 5px var(--link-color);
+  transition: all 0.3s ease;
+}
+
+.theme-cyberpunk a:hover {
+  text-shadow: 0 0 15px var(--link-color);
 }
