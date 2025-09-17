@@ -4,7 +4,7 @@ description: Monero is a digital currency that is secure, private, and untraceab
 keywords: "monero, xmr, bitmonero, cryptocurrency"
 baseurl: ""
 url: "https://www.getmonero.org"
-
+docsurl: "https://docs.getmonero.org"
 markdown: kramdown
 
 # Kramdown was using smart quotes, which messes up CLI examples

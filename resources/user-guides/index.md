@@ -52,7 +52,7 @@ meta_descr: meta_descr.userguides
                             <h2>{% t user-guides.nodesync %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/remote_node_gui.html">{% t user-guides.remote-node-gui %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/importing_blockchain.html">{% t user-guides.import-blockchain %}</a></p>
-                            <p><a href="https://docs.getmonero.org/running-node/monerod-systemd/" target="_blank">{% t user-guides.vps-node %}</a></p>
+                            <p><a href="{{ site.docsurl }}/running-node/monerod-systemd/" target="_blank">{% t user-guides.vps-node %}</a></p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ meta_descr: meta_descr.userguides
                         <div class="col">
                             <h2>{% t user-guides.anonimizationnetworks %}</h2>
                             <p><a href="{{site.baseurl}}/resources/user-guides/tor_wallet.html">{% t user-guides.tor_wallet %}</a></p>
-                            <p><a href="https://docs.getmonero.org/running-node/monerod-tori2p">{% t user-guides.node-tori2p %}</a></p>
+                            <p><a href="{{ site.docsurl }}/running-node/monerod-tori2p">{% t user-guides.node-tori2p %}</a></p>
                             <p><a href="{{site.baseurl}}/resources/user-guides/cli_wallet_daemon_isolation_qubes_whonix.html">{% t user-guides.qubes %}</a></p>
                         </div>
                     </div>
