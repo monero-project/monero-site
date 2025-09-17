@@ -14,6 +14,8 @@ While matrix is a federated protocol and you could use any host server for your 
 
 When signing up choose to edit your host server and type in `monero.social` as shown.
 
+Note: Registration for the `monero.social` host server is temporarily disabled.
+
 Web/Desktop view
 
 ![Web-Desktop-View-1](/img/resources/user-guides/en/join-monero-matrix/desktop-web-1.avif){:width="100%"}
