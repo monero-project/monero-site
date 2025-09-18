@@ -1,17 +1,17 @@
 ---
 summary: 'Вознаграждение за блок в конце кривой эмиссии'
-terms: ["Tail-Emission"]
+terms: ["Tail-Emission", "Хвостовая-эмиссия"]
 ---
 
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
 ### Основная информация
 
-Вознаграждение за блок Monero никогда не станет нулевым. Размер
-вознаграждения будет постепенно снижаться вплоть до начала хвостовой
-эмиссии, которое состоится в конце мая 2022. С этого момента размер
-вознаграждения за блок станет фиксированным и будет составлять 0,6 XMR за
-блок.
+Monero block rewards will never drop to zero. Block rewards gradually
+dropped until tail emission commenced at the end of May 2022. At this point,
+rewards will stay fixed at 0.6 XMR or less* per block.
+
+* Due to block size penalties.
 
 ### Почему так
 

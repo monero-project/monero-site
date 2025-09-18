@@ -7,11 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-28 11:29+0200\n"
+"POT-Creation-Date: 2025-04-09 23:13+0000\n"
 "PO-Revision-Date: 2022-03-30 15:44+0000\n"
 "Last-Translator: Diego Anaya <redcpp@gmail.com>\n"
-"Language-Team: Spanish <https://translate.getmonero.org/projects/"
-"getmonero-user-guides/remote_node_gui/es/>\n"
+"Language-Team: Spanish <https://translate.getmonero.org/projects/getmonero-user-guides/remote_node_gui/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,8 +21,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:3
@@ -54,7 +52,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:14
-msgid "![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.png){:width=\"600px\"}"
+msgid "![Wallet mode](/img/resources/user-guides/en/remote_node/wallet_mode_info.avif){:width=\"600px\"}"
 msgstr ""
 
 #. type: Title ##
@@ -71,7 +69,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:20
-msgid "![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.png){:width=\"600px\"}"
+msgid "![Close Wallet](/img/resources/user-guides/en/remote_node/close_open_wallet.avif){:width=\"600px\"}"
 msgstr ""
 
 #. type: Plain text
@@ -81,82 +79,98 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:24
-msgid "![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.png){:width=\"600px\"}"
+msgid "![Change Wallet Mode](/img/resources/user-guides/en/remote_node/change_wallet_mode.avif){:width=\"600px\"}"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:26
-msgid "![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.png){:width=\"600px\"}"
+msgid "![Advanced Mode](/img/resources/user-guides/en/remote_node/advanced_mode.avif){:width=\"600px\"}"
 msgstr ""
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:27
-#, no-wrap
-msgid "Finding a public remote node"
-msgstr ""
+#, fuzzy, no-wrap
+#| msgid "Finding a public remote node"
+msgid "Finding a remote node"
+msgstr "Encontrando un nodo remoto público"
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:30
-msgid "First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources about remote nodes, and the website [monero.fail](https://monero.fail) has a list of functioning remote nodes."
+msgid "First, you will need to find a node to connect to."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:35
+msgid "It is important to note that there are publicly advertised remote nodes which are run by malicious actors with the sole purpose of deanonymizing users/outputs by, for example: - Linking @clearnet IP addresses to txid's.  - Providing bogus decoys to determine which output is the real spend.  - For more information see [YouTube - Breaking Monero Episode 07: Remote Nodes](https://www.youtube.com/watch?v=n6Bxp0k7Uqg)"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:37
+msgid "It is highly recommended that you either A) Run your own node, or B) Use a Trusted remote node - one that is controlled by someone that you trust."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:39
+msgid "Though highly discouraged, you may opt to use an untrusted remote node. To maximize privacy, Tor or I2P nodes are preferred. The website [monero.fail](https://monero.fail) has a list of such nodes."
 msgstr ""
 
 #. type: Title ##
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:31
-#, no-wrap
-msgid "Configuring your wallet to connect to a custom public remote node"
-msgstr ""
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:40
+#, fuzzy, no-wrap
+#| msgid "Configuring your wallet to connect to a custom public remote node"
+msgid "Configuring your wallet to connect to a custom remote node"
+msgstr "Configurando tu monedero para conectar a un nodo remoto público personalizado"
 
 #. type: Plain text
-<<<<<<< HEAD
-#: _i18n/en/resources/user-guides/remote_node_gui.md:28
-msgid "## Finding a public remote node"
-msgstr "## Encontrando un nodo remoto público"
-=======
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:34
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:43
 #, no-wrap
 msgid "When opening your wallet, a pop up will appear with the option `Use custom settings`. Click on it, and you will be sent to `Settings` > `Node` page. \n"
 msgstr ""
->>>>>>> 6ebd58f2 (localization: po/pot files for remote_node_gui guide)
 
 #. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:36
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:45
 #, no-wrap
 msgid "If you don't see this pop up, go to `Settings` > `Node` page.\n"
-msgstr ""
-"Primero, necesitarás encontrar un nodo remoto público al cual conectar. El "
-"sitio web [moneroworld.com](https://moneroworld.com/#nodes) contiene algunos "
-"recursos excelentes para encontrar nodos. Uno de los métodos más fáciles "
-"sería usar un nodo remoto público ejecutado por moneroworld, pero también "
-"tienen una herramienta para encontrar nodos aleatorios."
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:38
-msgid "![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.png){:width=\"600px\"}"
-msgstr ""
-"## Configurando tu monedero para conectar a un nodo remoto público "
-"personalizado"
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:40
-msgid "On this page select `Remote Node`."
-msgstr ""
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:42
-msgid "In `Address` you should fill the address of the remote node that you want to connect to. This address might look like `node.moneroworld.com` or it could look like any IP address."
-msgstr ""
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:44
-msgid "In `Port` you should fill the port of the remote node. If a remote node is listed as `node.moneroworld.com:18089`, the address is `node.moneroworld.com` and the port is `18089`. The default port is `18081`, but it can vary depending on the node you are connecting to."
-msgstr ""
-
-#. type: Plain text
-#: ../_i18n/en/resources/user-guides/remote_node_gui.md:46
-msgid "If your remote node requires authentication, you can enter a username in `Daemon username` and a password in `Daemon password`."
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/remote_node_gui.md:47
-msgid "Finally, click on `Connect` button and wait for your wallet to connect."
+msgid "![Configure Remote Node](/img/resources/user-guides/en/remote_node/remote_node_config.avif){:width=\"600px\"}"
 msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:49
+msgid "On the following page, select `Remote Node`."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:51
+msgid "In the `Address` field you will enter the address (or IP) of the node that you want to connect to, and in `Port` field you will enter the port of the node."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:53
+msgid "Example: If a node is listed as `node.getmonero.org:18089`, the address is `node.getmonero.org` and the port is `18089`. Note: `node.getmonero.org:18089` is for illustration purposes only. It is not a real node address."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:55
+msgid "![Configure Remote Node 2](/img/resources/user-guides/en/remote_node/remote_node_config-2.avif){:width=\"600px\"}"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:57
+msgid "If the node requires authentication, you can enter the username in `Daemon username` and the password in `Daemon password`."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/remote_node_gui.md:58
+msgid "Finally, click on the `Connect` button and wait for your wallet to connect."
+msgstr ""
+
+#, fuzzy
+#~ msgid "First, you will need to find a public remote node to connect to. The website [moneroworld.com](https://moneroworld.com/#nodes) has some great resources about remote nodes, and the website [monero.fail](https://monero.fail) has a list of functioning remote nodes."
+#~ msgstr "Primero, necesitarás encontrar un nodo remoto público al cual conectar. El sitio web [moneroworld.com](https://moneroworld.com/#nodes) contiene algunos recursos excelentes para encontrar nodos. Uno de los métodos más fáciles sería usar un nodo remoto público ejecutado por moneroworld, pero también tienen una herramienta para encontrar nodos aleatorios."
+
+#~ msgid "## Finding a public remote node"
+#~ msgstr "## Encontrando un nodo remoto público"

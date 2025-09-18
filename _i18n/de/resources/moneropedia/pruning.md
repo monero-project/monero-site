@@ -17,17 +17,17 @@ Pruned-Nodes keine Nachteile bezüglich der Privatsphäre oder Sicherheit.
 Es gibt drei Möglichkeiten des Prunings:
 
 - *Synchronisieren eines Pruned-Nodes von Grund auf:* Du synchronisierst und
-lädst lediglich 1/3 der gesamten Blockchain herunter.
+  lädst lediglich 1/3 der gesamten Blockchain herunter.
 
 - *Pruning eines bestehenden Nodes:* Die bereits bestehende Blockchain wird
-gestutzt. Dies resultiert nicht in einer kleineren Blockchain, sondern wird
-Teile der Datei als leer markieren. Zukünftige Daten werden diesen nun
-freien Platz nutzen, damit die Datei nicht wächst, bis der Speicherplatz
-knapp wird.
+  gestutzt. Dies resultiert nicht in einer kleineren Blockchain, sondern
+  wird Teile der Datei als leer markieren. Zukünftige Daten werden diesen
+  nun freien Platz nutzen, damit die Datei nicht wächst, bis der
+  Speicherplatz knapp wird.
 
 - *Erstellung einer neuen, gestutzten Blockchain aus einer kompletten
-Blockchain:* Eine komplette Blockchain, die du schon hast, wird zur
-Erstellung einer neuen, gestutzten Blockchain verwendet.
+  Blockchain:* Eine komplette Blockchain, die du schon hast, wird zur
+  Erstellung einer neuen, gestutzten Blockchain verwendet.
 
 Pruned-Nodes sind sehr nützlich und @Remote-Nodes vorzuziehen. Wenn es
 allerdings möglich ist, sollten Nutzer einen Full-Node betreiben und das

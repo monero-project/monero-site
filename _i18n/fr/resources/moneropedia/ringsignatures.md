@@ -24,19 +24,16 @@ nécessitant pas de mise en place préalable).
 
 ### Application à Monero
 
-Une signature de cercle se sert de la clef de votre @compte et d'un nombre
-de clefs publiques (également connues sous le nom de sorties) récupérées
-depuis la @chaîne-de-blocs en utilisant une méthode de distribution
-triangulaire. Au fil du temps, les anciennes sorties pourraient être
-utilisées plusieurs fois pour former les signataires participants
-possibles. Dans un "cercle" de signataires possibles, touts les membres du
-cercle sont égaux et valides. Il n'y a aucun moyen pour un observateur
-extérieur de dire lequel des signataires possibles d'un groupe de signature
-appartient à votre @compte. Donc, les signatures de cercle garantissent que
-les sorties des transactions sont intraçables. De plus, il n'y a pas de
-problème de @fongibilité avec Monero dans la mesure ou chaque sortie de
-transaction est vraisemblablement réfutable (p.ex. les réseau ne peut pas
-dire quelle transaction sont dépensées ou non dépensées).
+A ring signature makes use of your @account keys and a number of public keys
+(also known as outputs) pulled from the @blockchain using a gamma
+distribution method. Over the course of time, past outputs could be used
+multiple times to form possible signer participants. In a "ring" of possible
+signers, all ring members are equal and valid. There is no way an outside
+observer can tell which of the possible signers in a signature group belongs
+to your @account. So, ring signatures ensure that transaction outputs are
+untraceable. Moreover, there are no @fungibility issues with Monero given
+that every transaction output has plausible deniability (e.g. the network
+can not tell which outputs are spent or unspent).
 
 Pour comprendre comment Monero vous offre la confidentialité par défaut
 (non-associativité), voir @adresses-furtives.
