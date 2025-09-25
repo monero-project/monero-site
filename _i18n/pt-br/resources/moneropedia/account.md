@@ -5,7 +5,7 @@ terms: ["account", "accounts", "wallet", "wallets"]
 
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### The Basics
+### O básico
 
 Those familiar with Monero's predecessors will be more familiar with the
 term *wallet* to describe this. In Monero we call this an account, and it is

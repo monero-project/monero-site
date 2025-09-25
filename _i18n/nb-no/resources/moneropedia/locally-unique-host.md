@@ -25,9 +25,9 @@ slik du ønsker.
 
 ### Merknader
 
-- Monero bruker i hovedsak @kanonisk unik vert-oppløsning, mens @I2P kun
-bruker @lokal unik vert-oppløsning.
+- Monero primarily uses @canonically-unique-host resolution while I2P only
+  uses @locally-unique-host resolution.
 
-- @I2P-er og @Kovrier som er tilordnet toppnivådomener er for tiden `.i2p`,
-og @Kovri har kun til hensikt å behandle/bruke
-`.i2p`-[toppnivådomenet](https://en.wikipedia.org/wiki/Top_level_domain)
+- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and
+  @Kovri intends to only process/use the `.i2p` [top-level
+  domain](https://en.wikipedia.org/wiki/Top_level_domain)

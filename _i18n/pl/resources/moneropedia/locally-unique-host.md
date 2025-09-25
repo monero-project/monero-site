@@ -26,9 +26,9 @@ ciebie zależy, jak je zdefiniujesz.
 
 ### Adnotacje
 
-- Monero używa przede wszystkim zasadniczych unikalnych hostów, podczas gdy
-I2P korzysta jedynie z lokalnie unikalnych hostów.
+- Monero primarily uses @canonically-unique-host resolution while I2P only
+  uses @locally-unique-host resolution.
 
-- Przypisaną domeną najwyższego poziomu I2P jest obecnie `.i2p`, a Kovri
-zamierza używać jedynie [domeny najwyższego
-poziomu](https://en.wikipedia.org/wiki/Top_level_domain) `.i2p` .
+- I2P's and @Kovri's assigned top-level domain is currently `.i2p` and
+  @Kovri intends to only process/use the `.i2p` [top-level
+  domain](https://en.wikipedia.org/wiki/Top_level_domain)

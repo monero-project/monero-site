@@ -1,13 +1,13 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-## Wallet
+## Monedero
 
 Before starting, you already need to have a wallet configured and
 working. The pool needs to know your wallet address to be able to send
 payments there. See the [Accepting Monero guide]({{ site.baseurl
 }}/get-started/accepting) for more information.
 
-## Profitability
+## Rentabilidad
 
 Before mining, you should decide if it is worth it or not for you. You have
 to decide this for yourself, based on your power costs and the hardware that
@@ -38,19 +38,19 @@ distributions, but this is not guaranteed.
 These binaries are available on the [GitHub release
 page](https://github.com/xmrig/xmrig/releases/latest).
 
-Scroll down to 'Assets' until you see the correct version for your
-system. Download this file, extract the archive somewhere memorable, like
-your desktop.
+Baja hasta 'Assets' hasta que veas la versión correcta para tu
+sistema. Descarga este archivo y extráelo en algún lugar fácil de recordar,
+como tu escritorio.
 
-### Other distributions and operative systems
+### Otras distribuciones y sistemas operativos
 
 Binaries are available for multiple distributions and operative systems, but
 you can also build the miner by yourself. Take a loot at [XMrig's
 docs](https://xmrig.com/docs/miner)
 
-## Selecting a pool
+## Seleccionando una pool
 
-There are lots of pools to choose from. You can find a list at
+Hay muchas pool de las cuales elegir. Puedes encontrar una lista en
 [miningpoolstats.stream/monero](https://miningpoolstats.stream/monero).
 
 Choosing a larger pool means that you will see more frequent (but smaller)
@@ -96,7 +96,7 @@ algorithm to use.
 
 ### Huge Pages 0%
 
-#### Allowing large pages on Windows
+#### Permitiendo páginas grandes en Windows
 
 Taken from [the
 MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?view=sql-server-ver15):
@@ -106,17 +106,17 @@ MSDN](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/ena
    and then expand Windows Settings.
 3. Expand Security Settings, and then expand Local Policies.
 4. Select the User Rights Assignment folder.
-5. The policies will be displayed in the details pane.
+5. Las políticas aparecerán en el panel de detalles.
 6. In the pane, double-click Lock pages in memory.
 7. In the Local Security Setting – Lock pages in memory dialog box, click
    Add User or Group.
 8. In the Select Users, Service Accounts, or Groups dialog box, add an
    account that you will run the miner on
-9. Reboot for change to take effect.
+9. Reinicia para que el cambio surta efecto.
 
-You may also need to launch the miner as administrator.
+Puede que tengas que iniciar el minador como administrador.
 
-#### Allowing large pages on Linux
+#### Permitiendo páginas grandes en Linux
 
 Firstly stop the miner (if it's running), run the following commands to
 enable large pages and then start the miner as root:
@@ -127,7 +127,7 @@ enable large pages and then start the miner as root:
 You may have to increase 1168 depending on how many NUMA nodes your CPU(s)
 have.
 
-#### Allowing large pages on macOS
+#### Permitiendo páginas grandes en macOS
 
 Huge pages are not supported on macOS.
 
@@ -138,8 +138,8 @@ which means that you only get paid when a miner on the pool finds a
 block. If the pool you are mining on is small, this can take a few
 days to weeks.
 
-Additionally, any blocks found must mature before they can be paid out. This
-takes 60 blocks (approx. 2 hours).
+Adicionalmente, todos los bloques encontrados deben madurar antes de que
+puedan ser pagados. Esto toma 60 bloques (aprox. 2 horas).
 
 ## Getting Help
 

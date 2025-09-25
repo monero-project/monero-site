@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-06 10:59+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:1
 #, no-wrap
 msgid "a new kind of range proofs replacing RingCT in transactions to obfuscate the amounts sent"
 msgstr "en ny type rekkeviddebevis som tilslører det sendte beløpet ved å erstatte RingCT-er i transaksjoner"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:1
 #, no-wrap
 msgid "[\"bulletproofs\", \"bulletproof\"]"
 msgstr ""
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -87,9 +87,9 @@ msgstr "I motsetning til Borromean- eller Schnorr-signaturer, er bulletproofs ve
 msgid "It means that increasing the number of outputs in a transaction will, with bulletproofs only slightly increase the size of the proof.  \n"
 msgstr "Å øke antallet inndata i en transaksjon med bulletproofs, øker bare størrelsen på beviset litt.  \n"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:23
-#
 msgid "Bulletproofs also have the advantage to allow to prove that multiple committed amounts are in the desired range at once. No need to prove each output to each destination in separate proofs; the whole transaction amounts could be proven in one bigger (but still very small) bulletproof."
 msgstr "Bulletproofs har også fordelen ved at det kan bevise at flere dedikerte kontoer er i den ønskede rekkevidden på én gang. Det er ikke noe behov for å bevise hver utdata til hver destinasjon i separate bevis; hele transaksjonsbeløpet kan bevises i én større (men fremdeles veldig liten) bulletproof."
 
@@ -128,14 +128,14 @@ msgstr "OSTIF rettet gruppen til flere organisasjoner som innehadde ferdighetene
 msgid "Our 3 auditors were funded by the community to ensure that the implementation did not contain any critical bugs or exploits.  The final reports were released during the summer of 2018, with several useful corrections and fixes suggested, and the final bulletproof implementation has been added first to Monero Stagenet, and then to the main Monero network during the October 2018 network upgrade."
 msgstr "Våre tre revisorer ble finansiert av samfunnet til å undersøke om implementeringen ikke inneholdt kritiske progamvarefeil, og ikke hadde utnyttelsesområder.  De endelige rapportene ble utgitt sommeren 2018, med flere nyttige foreslåtte korrigeringer og reparasjoner, og den endelige bulletproof-implementeringen ble først lagt til Monero Stagenet og deretter til Moneros hovednettverk under nettverksoppdateringen i oktober 2018."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:34
-#
 msgid "Since the bulletproofs deployment, the size of an average transaction has dropped by at least 80%, as well as the transaction fees."
 msgstr "Siden utrullingen av bulletproofs, har størrelsen på en gjennomsnittlig transaksjon falt med minst 80 %, det samme gjelder transaksjonskostnadene."
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:35
-#
 msgid "More explanations on Monero's implementation of bulletproofs could be found on youtube fondajo channel in a [conversation with Sarang Noether](https://www.youtube.com/watch?v=6lEWqIMLzUU)."
 msgstr "Flere forklaringer på Moneros implementering av bulletproofs kan du finne på YouTube i en [samtale med Sarang Noether](https://www.youtube.com/watch?v=6lEWqIMLzUU)."

@@ -1,5 +1,5 @@
 ---
-summary: 'a 13 or 25 word phrase used to backup a Monero account, available in a number of languages'
+summary: 'фраза, состоящая из 13 или 25 слов и используемая для создания резервной копии счёта Monero'
 terms: ["mnemonic-seed", "mnemonic", "мнемоническую-фразу", "мнемонической-фразы", "Мнемоническая-фраза", "мнемоническая-фраза"]
 ---
 

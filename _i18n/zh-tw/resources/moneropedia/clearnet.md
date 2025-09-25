@@ -16,7 +16,7 @@ that *all* of your connections can be tracked, traced, and monitored by:
 - the website/service/person you're communicating with
 
 - possibly a [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes) capable
-entity
+  entity
 
 and even if you use [HTTPS](https://en.wikipedia.org/wiki/HTTPS) or similar
 (which *encrypts* your transmission), your route is not hidden nor is it

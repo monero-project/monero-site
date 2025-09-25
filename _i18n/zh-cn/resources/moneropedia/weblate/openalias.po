@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-09-28 09:57+0200\n"
+"POT-Creation-Date: 2023-10-16 15:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/openalias.md:1
 #, no-wrap
 msgid "a standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org"
 msgstr "该标准允许你使用电子邮件或域名语法而不是地址付款。 例如：donate@getmonero.org 或 donate.getmonero.org"
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/openalias.md:1
 #, no-wrap
 msgid "[\"OpenAlias\"]"
 msgstr ""
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/openalias.md:7
-#
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
@@ -40,15 +40,15 @@ msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\"
 msgid "The Basics"
 msgstr "基础知识"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/openalias.md:11
-#
 msgid "The Monero Core Team released a standard called OpenAlias which permits much more human-readable addresses and \"squares\" the Zooko's triangle. OpenAlias can be used for any cryptocurrency and is already implemented in Monero, Bitcoin (in latest Electrum versions) and HyperStake."
 msgstr "门罗币核心团队发布了一个名为 OpenAlias 的标准，该标准允许更多人类可读的地址，并“解决”了 Zooko 三角（人性化-去中心化-安全）。OpenAlias可以用于任何加密货币，并且已经在门罗币、比特币（在最新的 Electrum 版本中）和 HyperStake 中实现了。"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/openalias.md:13
-#
 msgid "OpenAlias seeks to provide a way to simplify aliasing amidst a rapidly shifting technology climate. Users are trying to cross the bridge to private and cryptographically secure infrastructure and systems, but many of them have just barely started remembering the email addresses of their friends and family."
 msgstr "OpenAlias 旨在为快速变化的技术环境提供一种简化别名的方法。用户努力尝试，进入私有的、加密的安全基础设施和系统，然而他们中的许多人才刚刚开始记住朋友和家人的电子邮件地址。"
 
@@ -58,20 +58,20 @@ msgstr "OpenAlias 旨在为快速变化的技术环境提供一种简化别名�
 msgid "As part of the ongoing development of the Monero cryptocurrency project, we asked ourselves: how can we simplify payments for users unfamiliar with cryptocurrency? Monero stealth addresses are at least 95 characters long - memorizing them is not an option, and asking someone to send a payment to <95-character-string> is only going to lead to confusion.\n"
 msgstr "作为正在进行的门罗币项目开发的一部分，我们问自己：如何为不熟悉加密货币的用户简化支付？门罗币的隐形地址至少有95个字符——长时间记忆它们是不现实的，并且要求某人向一个<95个字符长的字符串>发起付款只会导致混淆。\n"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/openalias.md:17
-#
 msgid "At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralized and decentralized domain systems."
 msgstr "在最基本的层面上，OpenAlias是 FQDN（完全限定域名）上的一个 DNS 文本记录。通过将它跟与 DNS 相关的技术相结合，我们创建了一个别名标准，该标准对开发人员可扩展，对用户来说直观且熟悉，并且可以与中心化和去中心化的域系统交互操作。"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/openalias.md:19
-#
 msgid "A standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org."
 msgstr "该标准允许你使用电子邮件或域名语法而不是地址付款。 例如：donate@getmonero.org 或 donate.getmonero.org"
 
+#
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/openalias.md:20
-#
 msgid "More information can be found on the [OpenAlias website](https://openalias.org)"
 msgstr "更多信息可以在 [OpenAlias 网站](https://openalias.org)上找到。"
