@@ -1,7 +1,7 @@
 ---
 layout: user-guide
 title: "Wallet RPC documentation"
-deprecated_url: https://docs.getmonero.org/rpc-library/wallet-rpc/"
+deprecated_url: /rpc-library/wallet-rpc/
 ---
 
 {% t global.lang_tag %}
