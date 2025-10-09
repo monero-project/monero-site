@@ -8,7 +8,7 @@ meta_descr: downloads.intro
 {% t global.lang_tag %}
 <div class="downloads">
     <div class="container description">
-    <p>{% t downloads.intro %}</p>
+    <p>{% t downloads.intro %} <a href="{{ site.baseurl_root }}/downloads/monero-v0.18.4.2.torrent">Download torrent</a> </p>
     </div>
     <!-- Downloads menu: desktop -->
     <div class="container full downdropdown">
