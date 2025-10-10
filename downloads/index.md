@@ -241,9 +241,15 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
+                            <td><img class="small" src="/img/cakewallet-icon.png" width="100" height="100" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com">Cake Wallet</a></td>
+                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
+                            <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
                             <td><img class="small" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo"><a href="https://cakewallet.com">Monero.com Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
-                            <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
@@ -275,12 +281,6 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="Mymonero logo" style="height: 15px;"><a href="https://mymonero.com/">MyMonero</a></td>
-                            <td><span class="icon-android"></span><span class="icon-apple"></span></td>
-                            <td><span title="Browser" class="icon-browser"></span><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
-                            <td><a class="ext-noicon" href="https://github.com/mymonero" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
-                        </tr>
-                        <tr>
                             <td><img class="small" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo"><a href="https://edge.app/">Edge</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
@@ -291,6 +291,7 @@ meta_descr: downloads.intro
                             <h3>{% t downloads.localsync %}</h3>
                             <p>{% t downloads.localsyncinfo %}</p>
                             <ul>
+                                <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/cakewallet-icon.png" width="100" height="100" loading="lazy" alt="Cake Wallet Logo">Cake Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo">Monero.com Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.app" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
@@ -299,7 +300,6 @@ meta_descr: downloads.intro
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
                             <ul>
-                                <li><a class="ext-noicon" href="https://mymonero.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/mymonero.png" width="141" height="95" loading="lazy" alt="MyMonero Logo">MyMonero</a></li>
                                 <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
                             </ul>
                         </div>
