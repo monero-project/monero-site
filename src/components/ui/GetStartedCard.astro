@@ -1,0 +1,104 @@
+---
+export interface Props {
+  step: string | number;
+  title: string;
+  description?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+  as?: keyof HTMLElementTagNameMap;
+}
+
+const {
+  step,
+  title,
+  description = "",
+  ctaHref = "#",
+  ctaLabel = "Get a wallet",
+  as = "section",
+} = Astro.props;
+
+const Tag = as as any;
+---
+
+<Tag class="gs" aria-labelledby="gs-title">
+  <div class="num" aria-hidden="true">{String(step).padStart(2, "0")}</div>
+
+  <div class="text">
+    <h3 id="gs-title" class="title">{title}</h3>
+    {description && <p class="desc">{description}</p>}
+    <a class="cta" href={ctaHref}>
+      {ctaLabel}
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</Tag>
+
+<style>
+  .gs {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 0;
+    color: #e8e8ee;
+  }
+
+  .num {
+    font-weight: 800;
+    font-size: 6.5rem;
+    line-height: 1;
+    color: #6d6c76;
+    opacity: 0.25;
+    width: 2ch;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .title {
+    margin: 0 0 8px;
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: #ffffff;
+  }
+
+  .desc {
+    margin: 0 0 16px;
+    color: #b7b7c3;
+    max-width: 60ch;
+    line-height: 1.6;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    color: #e06b2d;
+    text-decoration: none;
+  }
+
+  .cta:hover {
+    text-decoration: underline;
+  }
+
+  .arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: 640px) {
+    .gs {
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .num {
+      font-size: 4.5rem;
+    }
+    .title {
+      font-size: 1.4rem;
+    }
+  }
+</style>

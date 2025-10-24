@@ -1,0 +1,262 @@
+---
+import NavItem from "../ui/NavItem.astro";
+
+const leftNav = [
+  {
+    label: "Get started",
+    href: "#",
+    dropdown: [
+      {
+        label: "What is Monero?",
+        desc: "Everything you need to know about Monero in a nutshell.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Accept Monero",
+        desc: "Learn how to accept XMR as a merchant or individual.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Contribute",
+        desc: "Help the Monero project bring privacy to everyone.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Mining",
+        desc: "Learn how to mine Monero on your computer.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "FAQ",
+        desc: "Find answers to common questions about Monero.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+    ],
+  },
+  { label: "Downloads", href: "/downloads" },
+  { label: "Blog", href: "/blog" },
+  {
+    label: "Community",
+    href: "#",
+    dropdown: [
+      {
+        label: "Workgroups",
+        desc: "Everything you need to know about Monero in a nutshell.",
+        href: "/community/workgroups",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Sponsorships",
+        desc: "Discover the ways you can help the Monero project to bring privacy to everyone.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Hangouts",
+        desc: "Learn how to accept XMR as a merchant or individual with wallet software.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Merchants and exchanges.",
+        desc: "Everything you need to know about Monero in a nutshell.",
+        href: "#",
+        image: "/src/assets/placeholder.svg",
+      },
+    ],
+  },
+  { label: "Resources", href: "#", dropdown: [
+      {
+        label: "Knowledge Base",
+        desc: "Books, publications, magazines, Moneropedia.",
+        href: "/resources/knowledge-base",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Roadmap",
+        desc: "Stay up to date with the latest Monero development plans and progress.",
+        href: "/resources/knowledge-base",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Research Lab",
+        desc: "Discover the ways you can help the Monero project to bring privacy to everyone.",
+        href: "/resources/knowledge-base",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "User Guides",
+        desc: "Comprehensive guides to help you use Monero effectively and securely.",
+        href: "/resources/knowledge-base",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Developer Guides",
+        desc: "Find answers to recurring questions and concrns about Monero.",
+        href: "/resources/knowledge-base",
+        image: "/src/assets/placeholder.svg",
+      },  
+      {
+        label: "Monero Tools",
+        desc: "A curated list of tools and software for Monero users and developers.",
+        href: "/resources/knowledge-base",
+        image: "/src/assets/placeholder.svg",
+      },
+      {
+        label: "Press Kit",
+        desc: "Press contacts, logos, images, and other media resources.",
+        href: "/resources/knowledge-base",
+        image: "/src/assets/placeholder.svg",
+      }
+  ] },
+  { label: "Crowdfunding", href: "#" },
+];
+---
+
+<header class="header">
+  <div class="bar">
+    <a class="brand" href="/">
+      <span class="mark" aria-hidden="true">M</span>
+      <span class="word">MONERO</span>
+    </a>
+
+    <input
+      id="nav-toggle"
+      class="toggle"
+      type="checkbox"
+      aria-label="Open menu"
+    />
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">☰</label>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="list">
+        {leftNav.map((item) => <NavItem {...item} />)}
+      </ul>
+    </nav>
+
+    <a class="lang" href="#" aria-label="Change language">
+      <svg viewBox="0 0 24 24" class="globe" aria-hidden="true">
+        <circle
+          cx="12"
+          cy="12"
+          r="9"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"></circle>
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="4.5"
+          ry="9"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"></ellipse>
+        <path
+          d="M3 12h18M12 3v18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"></path>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<style>
+  .header {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 1em 5em;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #e8e8ee;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .mark {
+    display: inline-grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--monero-orange);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .nav {
+    margin-left: 8px;
+  }
+  .list {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .lang {
+    margin-left: auto;
+    color: #a9a9b4;
+    display: inline-flex;
+    align-items: center;
+  }
+  .globe {
+    width: 20px;
+    height: 20px;
+  }
+
+  .toggle {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 20px;
+    color: #cfcfd7;
+  }
+
+  @media (max-width: 900px) {
+    .nav {
+      order: 3;
+      width: 100%;
+    }
+    .hamburger {
+      display: inline-block;
+    }
+    .lang {
+      order: 2;
+      margin-left: 0;
+    }
+    .list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .toggle:checked ~ .nav .list {
+      display: flex;
+    }
+  }
+</style>

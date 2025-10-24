@@ -1,0 +1,245 @@
+---
+interface Link {
+    label: string;
+    href: string;
+}
+
+interface Column {
+    title: string;
+    links: Link[];
+}
+
+const isExternal = (href: string) =>
+    !href.startsWith("#") && !href.startsWith("/") && !href.includes("getmonero.org");
+
+const columns: Column[] = [
+    {
+        title: "Resources",
+        links: [
+            { label: "About Monero", href: "/resources/about" },
+            { label: "Moneropedia", href: "/resources/moneropedia" },
+            { label: "Developer guides", href: "/resources/developer-guides" },
+            { label: "User guides", href: "/resources/user-guides" },
+            { label: "Library", href: "/library" },
+            { label: "Downloads", href: "/downloads" },
+        ],
+    },
+    {
+        title: "Reach out",
+        links: [
+            { label: "Workgroups", href: "/community/team" },
+            { label: "Hangouts", href: "/community/hangouts" },
+            { label: "Mailing list", href: "/postorius/lists/monero-announce.lists.getmonero.org" },
+        ],
+    },
+    {
+        title: "Community",
+        links: [
+            { label: "Merchants & Exchanges", href: "/community/merchants" },
+            { label: "Stack Exchange", href: "https://monero.stackexchange.com/" },
+            { label: "Bitcoin Talk", href: "https://bitcointalk.org/index.php?topic=583449.0" },
+            { label: "Weblate", href: "https://translate.getmonero.org" },
+        ],
+    },
+    {
+        title: "The Monero Project",
+        links: [
+            { label: "Open Alias", href: "https://openalias.org" },
+            { label: "Monero Research Lab (MRL)", href: "/resources/research-lab" },
+            { label: "Press Kit", href: "/press-kit" },
+            { label: "Community Crowdfunding System", href: "https://ccs.getmonero.org" },
+        ],
+    },
+];
+
+const bottomLinks: Link[] = [
+    { label: "Tor Onion service", href: "#" },
+    { label: "Vulnerability response", href: "#" },
+    { label: "Legal", href: "#" },
+    { label: "Source code", href: "#" },
+    { label: "Site map", href: "#" },
+    { label: "RSS Feed", href: "#" },
+];
+---
+
+<footer class="footer" aria-labelledby="footer-heading">
+    <div class="items">
+        <nav class="grid" aria-label="Footer navigation">
+            {
+                columns.map((col) => (
+                    <section class="col">
+                        <h3 class="title">{col.title}</h3>
+                        <ul class="list">
+                            {col.links.map((l) => (
+                                <li>
+                                    <a
+                                        href={l.href}
+                                        target={
+                                            isExternal(l.href)
+                                                ? "_blank"
+                                                : undefined
+                                        }
+                                        rel={
+                                            isExternal(l.href)
+                                                ? "noopener noreferrer"
+                                                : undefined
+                                        }
+                                    >
+                                        {l.label}
+                                        {isExternal(l.href) ? (
+                                            <svg
+                                                class="external-icon"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            >
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                                <polyline points="15,3 21,3 21,9" />
+                                                <line
+                                                    x1="10"
+                                                    y1="14"
+                                                    x2="21"
+                                                    y2="3"
+                                                />
+                                            </svg>
+                                        ) : (
+                                            ""
+                                        )}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                ))
+            }
+        </nav>
+
+        <nav class="bottom" aria-label="Secondary footer navigation">
+            <ul class="inline-list">
+                {
+                    bottomLinks.map((l, i) => (
+                        <li class="inline-item">
+                            <a href={l.href}>{l.label}</a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<style>
+    :root {
+        --footer-bg: #f5f2fa;
+        --footer-text: #000000;
+        --footer-muted: #666666;
+        --footer-link: #333333;
+        --footer-link-hover: #000000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --footer-bg: #211F26;
+            --footer-text: #d8d8df;
+            --footer-muted: #9b9ba6;
+            --footer-link: #e3e3ea;
+            --footer-link-hover: #ffffff;
+        }
+    }
+
+    .footer {
+        background: var(--footer-bg);
+        color: var(--footer-text);
+        font-size: 0.95rem;
+    }
+
+    .items {
+        padding: 1em 5em;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .title {
+        margin: 0 0 2rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--footer-link-hover);
+    }
+
+    .list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .list li {
+        margin: 8px 0;
+    }
+
+    a {
+        color: var(--footer-link);
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+        color: var(--footer-link-hover);
+        outline: none;
+    }
+
+    .bottom {
+        margin-top: 5em;
+        font-size: 0.9rem;
+        color: var(--footer-muted);
+    }
+
+    .inline-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px 28px;
+        justify-content: center;
+    }
+
+    .inline-item a {
+        color: var(--footer-muted);
+    }
+
+    .inline-item a:hover,
+    .inline-item a:focus {
+        color: var(--footer-link-hover);
+    }
+
+    .external-icon {
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+        vertical-align: middle;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+        .grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+    @media (max-width: 560px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+        .wrap {
+            padding: 40px 16px 22px;
+        }
+    }
+</style>

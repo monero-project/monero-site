@@ -1,0 +1,131 @@
+---
+export interface Props {
+  icon?: any; // inline SVG
+  title: string;
+  description?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+}
+
+const {
+  icon = null,
+  title,
+  description = "",
+  ctaLabel = "Learn more",
+  ctaHref = "#",
+} = Astro.props;
+---
+
+<article class="resource-card">
+  {icon && <div class="icon">{icon}</div>}
+
+  <h3 class="title">{title}</h3>
+
+  {description && <p class="desc">{description}</p>}
+
+  <a class="cta" href={ctaHref}>
+    {ctaLabel}
+    <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M5 12h14M13 6l6 6-6 6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </a>
+</article>
+
+<style>
+  .resource-card {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2rem;
+    color: #e8e8ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .resource-card:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .icon {
+    width: 72px;
+    height: 72px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.6rem;
+    color: #e06b2d;
+    font-size: 1.8rem;
+  }
+
+  .title {
+    margin: 0 0 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .desc {
+    margin: 0 0 1.5rem;
+    color: #b7b7c3;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 45ch;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    color: #e06b2d;
+    text-decoration: none;
+    margin-top: auto;
+  }
+
+  .cta:hover {
+    text-decoration: underline;
+  }
+
+  .arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .resource-card {
+      padding: 1.5rem;
+    }
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .resource-card {
+      border-color: rgba(0, 0, 0, 0.08);
+      color: #222;
+    }
+    .title {
+      color: #000;
+    }
+    .desc {
+      color: #444;
+    }
+    .icon {
+      border-color: rgba(0, 0, 0, 0.1);
+      color: #e06b2d;
+    }
+  }
+</style>

@@ -1,0 +1,155 @@
+---
+export interface DropdownItem {
+  label: string;
+  href: string;
+  desc?: string;
+  image: string;
+}
+
+export interface Props {
+  label: string;
+  href: string;
+  dropdown?: DropdownItem[];
+}
+
+const { label, href, dropdown } = Astro.props;
+---
+
+<li class="nav-item">
+  <a href={href} class="link">
+    {label}
+    {dropdown && <span class="chev">▾</span>}
+  </a>
+
+  {dropdown && (
+    <div class="dropdown" role="menu">
+      {dropdown.map((item) => (
+        <a href={item.href} class="dropdown-item">
+          <img src={item.image} alt="" class="dropdown-icon" />
+          <div class="dropdown-content">
+            <div class="title">{item.label}</div>
+            {item.desc && <div class="desc">{item.desc}</div>}
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+</li>
+
+<style>
+  :root {
+    --dropdown-bg: #f5f2fa;
+    --dropdown-text: #000000;
+    --dropdown-muted: #666666;
+    --dropdown-link: #333333;
+    --dropdown-link-hover: #000000;
+    --nav-link: #000000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --dropdown-bg: #1c1b22;
+      --dropdown-text: #d6d6dc;
+      --dropdown-muted: #a0a0ad;
+      --dropdown-link: #d6d6dc;
+      --dropdown-link-hover: #ffffff;
+      --nav-link: #cfcfd7;
+    }
+  }
+
+  .nav-item {
+    position: relative;
+    display: inline-block;
+  }
+
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 12px;
+  }
+
+  .link {
+    color: var(--nav-link);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.25rem 0;
+  }
+  .link:hover, .link:focus { }
+  .chev { font-size: 0.8em; opacity: 0.8; }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    min-width: 600px;
+    padding: 1rem;
+    border-radius: 10px;
+    background: var(--dropdown-bg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 2rem;
+  }
+
+  .nav-item:hover .dropdown,
+  .dropdown:hover,
+  .nav-item:focus-within .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.15s ease;
+    pointer-events: auto;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: var(--dropdown-link);
+    padding: 1rem;
+  }
+  .dropdown-item:hover, .dropdown-item:focus { color: var(--dropdown-link-hover); }
+  .dropdown-item:hover .title, .dropdown-item:focus .title { color: var(--dropdown-link-hover); }
+
+  .dropdown-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.25rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .dropdown-content {
+    flex: 1;
+  }
+
+  .title { font-weight: 600; font-size: 1rem; color: var(--dropdown-text); }
+  .desc { font-size: 0.9rem; color: var(--dropdown-muted); margin-top: 0.2rem; line-height: 1.4; }
+
+  @media (max-width: 900px) {
+    .nav-item { display: block; }
+    .dropdown {
+      position: static;
+      margin: 0.5rem 0 0 0;
+      box-shadow: none;
+      background: none;
+      padding: 0;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      display: block;
+    }
+    .dropdown-item { margin-bottom: 1rem; }
+  }
+</style>

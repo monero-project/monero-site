@@ -1,0 +1,101 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <h1 id="hero-title" class="title">
+      <span class="accent">Monero</span>
+      <br />
+      <span class="plain">Means</span> <span class="accent">Money</span>
+    </h1>
+
+    <p class="lead">
+      Private, decentralized cryptocurrency that keeps your finances confidential and secure.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="#get-started">Get started</a>
+      <a class="btn ghost" href="#learn-more">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --plain-color: #000000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --plain-color: #ffffff;
+    }
+  }
+
+  .hero {
+    position: relative;
+    min-height: clamp(520px, 82vh, 700px);
+    display: grid;
+    place-items: center;
+    padding: 1em 5em;
+    overflow: hidden;
+  }
+
+  .wrap {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    z-index: 1;
+  }
+
+  .title {
+    margin: 0 0 18px;
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: 0.2px;
+  }
+  .accent { color: var(--monero-orange); }
+  .plain  { color: var(--plain-color); font-weight: 700; }
+
+  .lead {
+    margin: 0 auto 28px;
+    max-width: 720px;
+    font-size: clamp(16px, 1.8vw, 18px);
+    line-height: 1.7;
+  }
+
+  .actions {
+    display: inline-flex;
+    gap: 16px;
+    margin-top: 8px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1;
+    transition: transform .08s ease, opacity .12s ease;
+    will-change: transform;
+  }
+
+  .btn:hover, .btn:focus { opacity: .92; outline: none; }
+  .btn:active { transform: translateY(1px); }
+
+  .primary {
+    background: var(--monero-orange);
+    color: #fff;
+  }
+
+  .ghost {
+    background: #2f2f38;
+    color: #d9d9e1;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .actions { gap: 12px; }
+    .btn { padding: 11px 18px; font-size: 14px; }
+  }
+</style>

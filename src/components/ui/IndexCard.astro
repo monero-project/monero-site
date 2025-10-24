@@ -1,0 +1,63 @@
+---
+export interface Props {
+    title: string;
+    description?: string;
+    id?: string;
+    as?: keyof HTMLElementTagNameMap;
+}
+
+const {
+    title,
+    description = "",
+    id = "card-" + Math.random().toString(36).slice(2),
+    as = "section",
+} = Astro.props;
+const Tag = as as any;
+---
+
+<Tag class="card" aria-labelledby={id}>
+    <header class="head">
+        <h1 id={id} class="title">{title}</h1>
+        {description && <p class="desc">{description}</p>}
+    </header>
+
+    <div class="body">
+        <slot />
+    </div>
+</Tag>
+
+<style>
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+    }
+    .head {
+        margin-bottom: 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: start;
+        gap: 5rem;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .desc {
+        margin: 0;
+        color: #a1a1aa;
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+    .body {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 5rem;
+    }
+</style>

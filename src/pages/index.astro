@@ -1,11 +1,105 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
+import Hero from '../components/Hero.astro';
+import IndexCard from '../components/ui/IndexCard.astro';
+import GetStartedCard from '../components/ui/GetStartedCard.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<Hero/>
+	<IndexCard
+		title="About Monero"
+		description="Watch this video to understand the basics of how Monero works. For more in-depth understanding of the technology behind Monero, watch more explanatory videos."
+	>
+		<div id="card1">
+			<div>
+				<h2>Private</h2>
+				<p>Monero respects privacy by providing full anonimity and untraceable transactions for users.</p>
+			</div>
+			<div>
+				<h2>Decentralized</h2>
+				<p>With more than 2300 nodes, Monero is one of the most decentralized cryptocurrencies that exist</p>
+			</div>
+			<div>
+				<h2>Community-driven</h2>
+				<p>With more than 2300 nodes, Monero is one of the most decentralized cryptocurrencies that exist</p>
+			</div>
+		</div>
+		<div>
+			<iframe
+				width="100%"
+				height="100%"
+				src="https://www.youtube.com/embed/jc8Kc0WogAI"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			></iframe>
+		</div>
+	</IndexCard>
+	<hr/>
+	<IndexCard
+		title="Start using Monero"
+		description="Follow these steps to get started with Monero. If you are new to crypto, we recommend learning the basic security measures you can utake to keep your funds safe."
+	>
+		<div>
+			<img src="src/assets/placeholder.svg" alt="Get started illustration" width="100%" />
+		</div>
+		<div>
+			<GetStartedCard
+				step="01"
+				title="Choose a wallet"
+				description="To use Monero, the first thing you are going to need is a wallet. Visit our Downloads page and get the right wallet for you."
+				ctaHref="#"
+				ctaLabel="Get a wallet"
+			/>
+			<hr/>
+			<GetStartedCard
+				step="02"
+				title="Get coins"
+				description="To use Monero, the first thing you are going to need is a wallet. Visit our Downloads page and get the right wallet for you."
+				ctaHref="#"
+				ctaLabel="Find and exchange"
+			/>
+			<hr/>
+			<GetStartedCard
+				step="03"
+				title="Send Monero"
+				description="To use Monero, the first thing you are going to need is a wallet. Visit our Downloads page and get the right wallet for you."
+				ctaHref="#"
+				ctaLabel="Use Monero"
+			/>
+		</div>
+
+	</IndexCard>
+	<hr/>
+	<IndexCard
+		title="Monero Resources"
+		description="The community has put together a vast amount of resources and documentation."
+	>
+	<div>
+
+	</div>
+	</IndexCard>
 </Layout>
+
+<style>
+	p {
+		margin: 0;
+		color: #a1a1a1;
+	}
+
+	hr {
+		border: none;
+		border-top: 1px solid #2c2c2e;
+		margin: 1em 0;
+	}
+
+	#card1 {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+</style>
