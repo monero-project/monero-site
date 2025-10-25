@@ -1,0 +1,31 @@
+---
+export interface Props {
+    title: string;
+    subtitle?: string;
+}
+
+const {
+  title,
+  subtitle = "",
+} = Astro.props;
+---
+
+<div>
+    <div class="header-card">
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+    </div>
+</div>
+
+<style>
+    .header-card {
+        margin-top: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    h1 {
+        color: var(--monero-orange);
+        font-size: 400%;
+    }
+</style>

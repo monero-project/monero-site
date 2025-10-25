@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import IndexCard from '../components/ui/IndexCard.astro';
 import GetStartedCard from '../components/ui/GetStartedCard.astro';
+import ResourceCard from '../components/ui/ResourceCard.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -79,9 +80,29 @@ import GetStartedCard from '../components/ui/GetStartedCard.astro';
 		title="Monero Resources"
 		description="The community has put together a vast amount of resources and documentation."
 	>
-	<div>
-
-	</div>
+		<div id="resource-container">
+			<ResourceCard
+				title="FAQ"
+				description="We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community."
+				ctaLabel="Find your answer"
+				ctaHref="#"
+				icon="src/assets/placeholder.svg"
+			/>
+			<ResourceCard
+				title="User guides"
+				description="We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community."
+				ctaLabel="See the guides"
+				ctaHref="#"
+				icon="src/assets/placeholder.svg"
+			/>
+			<ResourceCard
+				title="Developer Guides"
+				description="We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community."
+				ctaLabel="See the guides"
+				ctaHref="#"
+				icon="src/assets/placeholder.svg"
+			/>
+		</div>
 	</IndexCard>
 </Layout>
 
@@ -101,5 +122,12 @@ import GetStartedCard from '../components/ui/GetStartedCard.astro';
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+	}
+
+	#resource-container {
+		display: flex;
+		flex-direction: row;
+		gap: 2em;
+		grid-column: span 2;
 	}
 </style>

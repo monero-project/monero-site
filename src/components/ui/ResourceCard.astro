@@ -17,7 +17,9 @@ const {
 ---
 
 <article class="resource-card">
-  {icon && <div class="icon">{icon}</div>}
+  {icon && <div class="icon">
+    <img src={icon} />
+  </div>}
 
   <h3 class="title">{title}</h3>
 
@@ -40,44 +42,44 @@ const {
 
 <style>
   .resource-card {
-    background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     padding: 2rem;
-    color: #e8e8ee;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    transition: border-color 0.15s ease, background 0.15s ease;
   }
 
   .resource-card:hover {
     border-color: rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.02);
   }
 
   .icon {
-    width: 72px;
-    height: 72px;
+    width: 4rem;
+    height: 4rem;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 50%;
-    display: grid;
+    display: gris;
     place-items: center;
-    margin-bottom: 1.6rem;
-    color: #e06b2d;
-    font-size: 1.8rem;
+    margin: 1rem 0 1.6rem 0;
+    padding: 1rem;
+    color: var(--monero-orange);
+  }
+
+  .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .title {
     margin: 0 0 0.8rem;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #fff;
   }
 
   .desc {
     margin: 0 0 1.5rem;
-    color: #b7b7c3;
     font-size: 1rem;
     line-height: 1.6;
     max-width: 45ch;
@@ -88,7 +90,7 @@ const {
     align-items: center;
     gap: 6px;
     font-weight: 700;
-    color: #e06b2d;
+    color: var(--monero-orange);
     text-decoration: none;
     margin-top: auto;
   }
@@ -100,32 +102,5 @@ const {
   .arrow {
     width: 16px;
     height: 16px;
-  }
-
-  @media (max-width: 600px) {
-    .resource-card {
-      padding: 1.5rem;
-    }
-    .icon {
-      width: 60px;
-      height: 60px;
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    .resource-card {
-      border-color: rgba(0, 0, 0, 0.08);
-      color: #222;
-    }
-    .title {
-      color: #000;
-    }
-    .desc {
-      color: #444;
-    }
-    .icon {
-      border-color: rgba(0, 0, 0, 0.1);
-      color: #e06b2d;
-    }
   }
 </style>
