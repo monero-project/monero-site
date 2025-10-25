@@ -1,0 +1,112 @@
+---
+export interface Props {
+  step: string | number;
+  title: string;
+  description?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+  as?: keyof HTMLElementTagNameMap;
+}
+
+const {
+  step,
+  title,
+  description = "",
+  ctaHref = "#",
+  ctaLabel = "Get a wallet",
+  as = "section",
+} = Astro.props;
+
+const Tag = as as any;
+---
+
+<Tag class="gs" aria-labelledby="gs-title">
+  <div class="num" aria-hidden="true">{String(step).padStart(2, "0")}</div>
+
+  <div class="text">
+    <h3 id="gs-title" class="title">{title}</h3>
+    {description && <p class="desc">{description}</p>}
+    <a class="cta" href={ctaHref}>
+      {ctaLabel}
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</Tag>
+
+<style>
+  :root {
+    --num-color: var(--monero-orange);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --num-color: var(--border-color);
+    }
+  }
+  .gs {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+
+  .num {
+    font-weight: 800;
+    font-size: 6.5rem;
+    line-height: 1;
+    color: var(--num-color);
+    width: 2ch;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .title {
+    margin: 0 0 0.5rem;
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--heading-color);
+  }
+
+  .desc {
+    margin: 0 0 1rem;
+    color: var(--paragraph-subtitle);
+    max-width: 60ch;
+    line-height: 1.6;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-weight: 700;
+    color: #e06b2d;
+    text-decoration: none;
+  }
+
+  .cta:hover {
+    text-decoration: underline;
+  }
+
+  .arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .gs {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+    .num {
+      font-size: 4.5rem;
+    }
+    .title {
+      font-size: 1.4rem;
+    }
+  }
+</style>

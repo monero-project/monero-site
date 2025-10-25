@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import IndexCard from '../components/ui/IndexCard.astro';
-import GetStartedCard from '../components/ui/GetStartedCard.astro';
-import ResourceCard from '../components/ui/ResourceCard.astro';
+import IndexCard from '../components/pages/index/IndexCard.astro';
+import GetStartedCard from '../components/pages/index/GetStartedCard.astro';
+import ResourceCard from '../components/pages/index/ResourceCard.astro';
 import placeholder from '../assets/placeholder.avif?url';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -139,9 +139,11 @@ import placeholder from '../assets/placeholder.avif?url';
 		width: 100%;
 		height: 0;
 		padding-bottom: 56.25%;
+		border-radius: 1rem;
+		overflow: hidden;
 	}
 
-	.video-container iframe {
+	.video-container video {
 		position: absolute;
 		top: 0;
 		left: 0;

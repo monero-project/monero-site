@@ -1,20 +1,20 @@
 :root {
-  --monero-orange: #E2611F;
-  --heading-color: #191B23;
-  --card-color: #F5F2FA;
-  --card-hover-color: #1E1B230D;
-  --paragraph-main: #44464E;
-  --paragraph-subtitle: #75767F;
-  --border-color: #E4E1E9;
+  --monero-orange: #e2611f;
+  --heading-color: #191b23;
+  --card-color: #f5f2fa;
+  --card-hover-color: #1e1b230d;
+  --paragraph-main: #44464e;
+  --paragraph-subtitle: #75767f;
+  --border-color: #e4e1e9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --heading-color: #ffffff;
-    --card-color: #211F26;
-    --card-hover-color: #E1E1EC0D;
-    --paragraph-main: #C6C6D0;
-    --paragraph-subtitle: #A9AAB4;
-    --border-color: #36343B;
+    --card-color: #211f26;
+    --card-hover-color: #e1e1ec0d;
+    --paragraph-main: #c6c6d0;
+    --paragraph-subtitle: #a9aab4;
+    --border-color: #36343b;
   }
 }
