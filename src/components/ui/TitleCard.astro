@@ -22,14 +22,14 @@ const { title, subtitle = "" } = Astro.props;
   .title {
     margin: 0;
     color: var(--monero-orange);
-    font-weight: 800;
-    line-height: 1.1;
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: var(--font-weight-extra-bold);
+    line-height: var(--line-height-heading);
+    font-size: var(--font-size-3xl);
   }
   .subtitle {
     max-width: 70ch;
-    line-height: 1.6;
-    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: var(--line-height-body);
+    font-size: var(--font-size-lg);
     color: var(--paragraph-main);
   }
 </style>

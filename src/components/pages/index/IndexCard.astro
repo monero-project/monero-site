@@ -42,16 +42,16 @@ const Tag = as as any;
     }
     .title {
         margin: 0;
-        font-weight: 700;
-        line-height: 1.2;
-        font-size: clamp(1.75rem, 2.4vw, 3rem);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-title);
+        font-size: var(--font-size-2xl);
         color: var(--heading-color);
     }
     .desc {
         margin: 0;
-        line-height: 1.6;
+        line-height: var(--line-height-body);
         color: var(--paragraph-main);
-        font-size: clamp(1rem, 1.2vw, 1.125rem);
+        font-size: var(--font-size-lg);
     }
     .body {
         display: grid;

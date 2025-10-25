@@ -1,4 +1,5 @@
 :root {
+  /** Colors **/
   --monero-orange: #e2611f;
   --heading-color: #191b23;
   --card-color: #f5f2fa;
@@ -6,6 +7,25 @@
   --paragraph-main: #44464e;
   --paragraph-subtitle: #75767f;
   --border-color: #e4e1e9;
+
+  /** Spacing **/
+  --default-padding: 1em 5em;
+  --mobile-padding: 1em 2em;
+
+  /** Typography **/
+  --line-height-body: 1.6;
+  --line-height-heading: 1.1;
+  --line-height-title: 1.2;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.9rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.4rem;
+  --font-size-2xl: clamp(1.75rem, 2.4vw, 3rem);
+  --font-size-3xl: clamp(2rem, 6vw, 4rem);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -151,11 +151,11 @@ const bottomLinks: Link[] = [
 <style>
     .footer {
         background: var(--card-color);
-        font-size: 0.95rem;
+        font-size: var(--font-size-sm);
     }
 
     .items {
-        padding: 1em 5em;
+        padding: var(--default-padding);
         padding-top: 5em;
         padding-bottom: 5em;
     }
@@ -168,8 +168,8 @@ const bottomLinks: Link[] = [
 
     .title {
         margin: 0 0 2rem;
-        font-size: 1.4rem;
-        font-weight: 700;
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
         color: var(--heading-color);
     }
 
@@ -199,7 +199,7 @@ const bottomLinks: Link[] = [
 
     .bottom {
         margin-top: 5em;
-        font-size: 0.9rem;
+        font-size: var(--font-size-sm);
         color: var(--paragraph-subtitle);
     }
 
@@ -225,7 +225,7 @@ const bottomLinks: Link[] = [
     /* Responsive */
     @media (max-width: 980px) {
         .items {
-            padding: 1em 2em;
+            padding: var(--mobile-padding);
             padding-top: 4em;
         }
         .grid {
