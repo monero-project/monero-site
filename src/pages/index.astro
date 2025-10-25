@@ -125,9 +125,9 @@ import ResourceCard from '../components/ui/ResourceCard.astro';
 	}
 
 	#resource-container {
-		display: flex;
-		flex-direction: row;
-		gap: 2em;
 		grid-column: span 2;
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	}
 </style>

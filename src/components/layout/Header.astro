@@ -4,7 +4,6 @@ import NavItem from "../ui/NavItem.astro";
 const leftNav = [
   {
     label: "Get started",
-    href: "#",
     dropdown: [
       {
         label: "What is Monero?",
@@ -42,7 +41,6 @@ const leftNav = [
   { label: "Blog", href: "/blog" },
   {
     label: "Community",
-    href: "#",
     dropdown: [
       {
         label: "Workgroups",
@@ -70,7 +68,9 @@ const leftNav = [
       },
     ],
   },
-  { label: "Resources", href: "#", dropdown: [
+  {
+    label: "Resources",
+    dropdown: [
       {
         label: "Knowledge Base",
         desc: "Books, publications, magazines, Moneropedia.",
@@ -100,7 +100,7 @@ const leftNav = [
         desc: "Find answers to recurring questions and concrns about Monero.",
         href: "/resources/knowledge-base",
         image: "/src/assets/placeholder.svg",
-      },  
+      },
       {
         label: "Monero Tools",
         desc: "A curated list of tools and software for Monero users and developers.",
@@ -112,8 +112,9 @@ const leftNav = [
         desc: "Press contacts, logos, images, and other media resources.",
         href: "/resources/knowledge-base",
         image: "/src/assets/placeholder.svg",
-      }
-  ] },
+      },
+    ],
+  },
   { label: "Crowdfunding", href: "#" },
 ];
 ---
@@ -125,19 +126,28 @@ const leftNav = [
       <span class="word">MONERO</span>
     </a>
 
+    <!-- Mobile toggle (no JS) -->
     <input
       id="nav-toggle"
-      class="toggle"
+      class="nav-toggle"
       type="checkbox"
       aria-label="Open menu"
     />
-    <label for="nav-toggle" class="hamburger" aria-hidden="true">☰</label>
+    <label
+      for="nav-toggle"
+      class="hamburger"
+      aria-hidden="true"
+      aria-controls="primary-nav">☰</label
+    >
 
-    <nav class="nav" aria-label="Primary">
+    <nav id="primary-nav" class="nav" aria-label="Primary">
       <ul class="list">
         {leftNav.map((item) => <NavItem {...item} />)}
       </ul>
     </nav>
+
+    <!-- Click outside to close -->
+    <label for="nav-toggle" class="scrim" aria-hidden="true"></label>
 
     <a class="lang" href="#" aria-label="Change language">
       <svg viewBox="0 0 24 24" class="globe" aria-hidden="true">
@@ -167,67 +177,78 @@ const leftNav = [
 </header>
 
 <style>
-  .header {
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+  /* ========== Compact tokens ========== */
+  :root {
+    --fg: #0b0b0f;
+    --muted: #7a7a86;
+    --on-dark: #cfcfd7;
+    --accent: #ff6b00;
+    --panel: rgba(18, 18, 24, 0.96);
   }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #e6e6eb;
+      --muted: #a9a9b4;
+      --on-dark: #e2e2ea;
+    }
+  }
+
+  /* ========== Header bar ========== */
   .bar {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 1em 5em;
+    gap: 0.75rem;
+    padding: 1rem clamp(1rem, 4vw, 4rem);
   }
 
   .brand {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
+    color: var(--on-dark);
     text-decoration: none;
-    color: #e8e8ee;
     font-weight: 700;
     letter-spacing: 0.02em;
   }
   .mark {
-    display: inline-grid;
+    display: grid;
     place-items: center;
     width: 26px;
     height: 26px;
     border-radius: 50%;
+    background: var(--accent);
     color: #fff;
-    background: var(--monero-orange);
     font-size: 14px;
     font-weight: 900;
-    line-height: 1;
   }
 
+  /* ========== Desktop nav ========== */
   .nav {
-    margin-left: 8px;
+    margin-left: 0.5rem;
   }
   .list {
     display: flex;
-    gap: 26px;
+    gap: 1.25rem;
     list-style: none;
     margin: 0;
     padding: 0;
     align-items: center;
   }
 
+  /* ========== Utilities ========== */
   .lang {
     margin-left: auto;
-    color: #a9a9b4;
+    color: var(--muted);
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
   }
   .globe {
     width: 20px;
     height: 20px;
   }
 
-  .toggle {
+  .nav-toggle {
     display: none;
   }
   .hamburger {
@@ -235,28 +256,82 @@ const leftNav = [
     margin-left: auto;
     cursor: pointer;
     font-size: 20px;
-    color: #cfcfd7;
+    color: var(--on-dark);
   }
 
+  .scrim {
+    display: none;
+  }
+
+  /* ========== Mobile (<=900px) ========== */
   @media (max-width: 900px) {
-    .nav {
-      order: 3;
-      width: 100%;
-    }
     .hamburger {
       display: inline-block;
     }
-    .lang {
-      order: 2;
-      margin-left: 0;
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: inherit;
+      border-bottom: 1px solid #0b0b0f;
     }
+
+    /* Right-side drawer */
+    .nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: auto;
+      width: clamp(260px, 82vw, 420px);
+      transform: translateX(100%);
+      transition: transform 0.25s ease;
+      background: var(--panel);
+      backdrop-filter: saturate(140%) blur(10px);
+      -webkit-backdrop-filter: saturate(140%) blur(10px);
+      padding: 1rem 1rem 2rem;
+      z-index: 1001; /* ABOVE scrim so it's clickable */
+    }
+
     .list {
       flex-direction: column;
-      align-items: flex-start;
-      gap: 14px;
+      align-items: stretch;
+      gap: 0.25rem;
+      margin-top: 2rem;
     }
-    .toggle:checked ~ .nav .list {
-      display: flex;
+    .lang {
+      order: 3;
+      margin-left: 0;
+    }
+
+    /* Click-outside scrim (UNDER drawer) */
+    .scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      display: block;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 1000;
+    }
+
+    /* Open state */
+    .nav-toggle:checked ~ .nav {
+      transform: translateX(0);
+    }
+    .nav-toggle:checked ~ .scrim {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav {
+      transition: none;
+    }
+    .scrim {
+      transition: none;
     }
   }
 </style>
