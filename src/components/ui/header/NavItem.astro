@@ -63,7 +63,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 /* Dropdown default (desktop baseline = hidden) */
 .dropdown{
-  position:absolute;top:100%;left:0;margin-top:.5rem;min-width:560px;padding:1rem;border-radius:.75rem;
+  position:absolute;top:100%;left:0;margin-top:.5rem;min-width:35rem;padding:1rem;border-radius:.75rem;
   background:var(--card-color);box-shadow:0 12px 30px rgba(0,0,0,.35);
   opacity:0;visibility:hidden;transition:opacity .15s ease,visibility .15s ease;
   display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.5rem;z-index:20
@@ -78,7 +78,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 /* === Desktop hover/focus === */
 @media (hover:hover) and (pointer:fine){
-  .has-dd::after{content:"";position:absolute;left:0;right:0;top:100%;height:10px}
+  .has-dd::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.625rem}
   .has-dd:is(:hover,:has(.dropdown :focus)) > .dropdown{opacity:1;visibility:visible}
   .has-dd:is(:hover,:has(.dropdown :focus)) > .row > .link{color:var(--heading-color)}
   /* prevent accidental clicks on desktop */

@@ -211,12 +211,12 @@ const leftNav = [
   .mark {
     display: grid;
     place-items: center;
-    width: 26px;
-    height: 26px;
+    width: 1.625rem;
+    height: 1.625rem;
     border-radius: 50%;
     background: var(--monero-orange);
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 900;
   }
 
@@ -242,8 +242,8 @@ const leftNav = [
     text-decoration: none;
   }
   .globe {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
   .nav-toggle {
@@ -253,7 +253,7 @@ const leftNav = [
     display: none;
     margin-left: auto;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--on-dark);
   }
 
@@ -265,7 +265,7 @@ const leftNav = [
   @media (max-width: 900px) {
     /* leave a tappable gap to close the drawer */
     :root {
-      --drawer-gap: clamp(40px, 10vw, 72px);
+      --drawer-gap: clamp(2.5rem, 10vw, 4.5rem);
     }
 
     .hamburger {
@@ -286,7 +286,7 @@ const leftNav = [
       right: 0;
       bottom: 0;
       left: auto;
-      width: min(420px, calc(100vw - var(--drawer-gap)));
+      width: min(26.25rem, calc(100vw - var(--drawer-gap)));
       transform: translateX(100%);
       transition: transform 0.25s ease;
 
