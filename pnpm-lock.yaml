@@ -11,6 +11,9 @@ importers:
       '@astrojs/sitemap':
         specifier: ^3.6.0
         version: 3.6.0
+      '@fontsource-variable/dm-sans':
+        specifier: ^5.2.8
+        version: 5.2.8
       astro:
         specifier: ^5.15.1
         version: 5.15.1(@types/node@24.9.1)(rollup@4.52.5)(typescript@5.9.3)
@@ -216,6 +219,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/dm-sans@5.2.8':
+    resolution: {integrity: sha512-AxkvMTvNWgfrmlyjiV05vlHYJa+nRQCf1EfvIrQAPBpFJW0O9VTz7oAFr9S3lvbWdmnFoBk7yFqQL86u64nl2g==}
 
   '@img/colour@1.0.0':
     resolution: {integrity: sha512-A5P/LfWGFSl6nsckYtjw9da+19jB8hkJ6ACTGcDfEJ0aE+l2n2El7dsVM7UVHZQ9s2lmYMWlrS21YLy2IR1LUw==}
@@ -1618,6 +1624,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.11':
     optional: true
+
+  '@fontsource-variable/dm-sans@5.2.8': {}
 
   '@img/colour@1.0.0':
     optional: true
