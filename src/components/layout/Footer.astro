@@ -176,22 +176,6 @@ const bottomLinks: Link[] = [
 </footer>
 
 <style>
-    :root {
-        --footer-text: #000000;
-        --footer-muted: #666666;
-        --footer-link: #333333;
-        --footer-link-hover: #000000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --footer-text: #d8d8df;
-            --footer-muted: #9b9ba6;
-            --footer-link: #e3e3ea;
-            --footer-link-hover: #ffffff;
-        }
-    }
-
     .footer {
         background: var(--card-color);
         font-size: 0.95rem;
@@ -213,7 +197,7 @@ const bottomLinks: Link[] = [
         margin: 0 0 2rem;
         font-size: 1.4rem;
         font-weight: 700;
-        color: var(--footer-link-hover);
+        color: var(--heading-color);
     }
 
     .list {
@@ -227,20 +211,20 @@ const bottomLinks: Link[] = [
     }
 
     a {
-        color: var(--footer-link);
+        color: var(--heading-color);
         text-decoration: none;
     }
 
     a:hover,
     a:focus {
-        color: var(--footer-link-hover);
+        color: var(--paragraph-subtitle);
         outline: none;
     }
 
     .bottom {
         margin-top: 5em;
         font-size: 0.9rem;
-        color: var(--footer-muted);
+        color: var(--paragraph-subtitle);
     }
 
     .inline-list {
@@ -259,7 +243,7 @@ const bottomLinks: Link[] = [
 
     .inline-item a:hover,
     .inline-item a:focus {
-        color: var(--footer-link-hover);
+        color: var(--heading-color);
     }
 
     .external-icon {
