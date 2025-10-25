@@ -15,7 +15,7 @@ import placeholder from '../assets/placeholder.avif?url';
 		title="About Monero"
 		description="Watch this video to understand the basics of how Monero works. For more in-depth understanding of the technology behind Monero, watch more explanatory videos."
 	>
-		<div id="card1">
+		<div style="display: flex; flex-direction: column; gap: 2rem;">
 			<div>
 				<h2>Private</h2>
 				<p>Monero respects privacy by providing full anonimity and untraceable transactions for users.</p>
@@ -120,13 +120,7 @@ import placeholder from '../assets/placeholder.avif?url';
 		border-top: 1px solid var(--border-color);
 		margin: 1em 0;
 	}
-
-	#card1 {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
-
+	
 	#resource-container {
 		grid-column: span 2;
 		display: grid;
