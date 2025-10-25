@@ -6,6 +6,7 @@ export interface Props {
 }
 
 const { src, size = "1em", class: className = "" } = Astro.props;
+// Uses monochrome mask to display icons SVGs or images, allowing color control via CSS
 ---
 
 <div class={`icon ${className}`} style={`--icon-src: url(${src}); width: ${size}; height: ${size};`}></div>
