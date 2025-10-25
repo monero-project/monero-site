@@ -25,7 +25,8 @@
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.4rem;
   --font-size-2xl: clamp(1.75rem, 2.4vw, 3rem);
-  --font-size-3xl: clamp(2rem, 6vw, 4rem);
+  --font-size-3xl: clamp(1.875rem, 4.2vw, 3.5rem);
+  --font-size-4xl: clamp(2rem, 6vw, 4rem);
 }
 
 @media (prefers-color-scheme: dark) {
