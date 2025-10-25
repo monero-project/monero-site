@@ -1,5 +1,5 @@
 ---
-import NavItem from "../ui/NavItem.astro";
+import NavItem from "../ui/header/NavItem.astro";
 
 const leftNav = [
   {
@@ -14,13 +14,13 @@ const leftNav = [
       {
         label: "Accept Monero",
         desc: "Learn how to accept XMR as a merchant or individual.",
-        href: "/get-started/accepting",
+        href: "/get-started/accept-monero",
         image: "/src/assets/placeholder.svg",
       },
       {
         label: "Contribute",
         desc: "Help the Monero project bring privacy to everyone.",
-        href: "/get-started/contributing",
+        href: "/get-started/contribute",
         image: "/src/assets/placeholder.svg",
       },
       {
@@ -51,19 +51,19 @@ const leftNav = [
       {
         label: "Sponsorships",
         desc: "Discover the ways you can help the Monero project to bring privacy to everyone.",
-        href: "#",
+        href: "/community/sponsorships",
         image: "/src/assets/placeholder.svg",
       },
       {
         label: "Hangouts",
         desc: "Learn how to accept XMR as a merchant or individual with wallet software.",
-        href: "#",
+        href: "/community/hangouts",
         image: "/src/assets/placeholder.svg",
       },
       {
-        label: "Merchants and exchanges.",
+        label: "Merchants and exchanges",
         desc: "Everything you need to know about Monero in a nutshell.",
-        href: "#",
+        href: "/community/merchants",
         image: "/src/assets/placeholder.svg",
       },
     ],
@@ -80,37 +80,37 @@ const leftNav = [
       {
         label: "Roadmap",
         desc: "Stay up to date with the latest Monero development plans and progress.",
-        href: "/resources/knowledge-base",
+        href: "/resources/roadmap",
         image: "/src/assets/placeholder.svg",
       },
       {
         label: "Research Lab",
         desc: "Discover the ways you can help the Monero project to bring privacy to everyone.",
-        href: "/resources/knowledge-base",
+        href: "/resources/research-lab",
         image: "/src/assets/placeholder.svg",
       },
       {
         label: "User Guides",
         desc: "Comprehensive guides to help you use Monero effectively and securely.",
-        href: "/resources/knowledge-base",
+        href: "/resources/user-guides",
         image: "/src/assets/placeholder.svg",
       },
       {
         label: "Developer Guides",
         desc: "Find answers to recurring questions and concrns about Monero.",
-        href: "/resources/knowledge-base",
+        href: "/resources/developer-guides",
         image: "/src/assets/placeholder.svg",
       },
       {
         label: "Monero Tools",
         desc: "A curated list of tools and software for Monero users and developers.",
-        href: "/resources/knowledge-base",
+        href: "/resources/monero-tools",
         image: "/src/assets/placeholder.svg",
       },
       {
         label: "Press Kit",
         desc: "Press contacts, logos, images, and other media resources.",
-        href: "/resources/knowledge-base",
+        href: "/resources/press-kit",
         image: "/src/assets/placeholder.svg",
       },
     ],
@@ -177,13 +177,12 @@ const leftNav = [
 </header>
 
 <style>
-  /* ========== Compact tokens ========== */
+  /* ===== Tokens ===== */
   :root {
     --fg: #0b0b0f;
     --muted: #7a7a86;
     --on-dark: #cfcfd7;
-    --accent: #ff6b00;
-    --panel: rgba(18, 18, 24, 0.96);
+    --panel: var(--card-color);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -193,14 +192,13 @@ const leftNav = [
     }
   }
 
-  /* ========== Header bar ========== */
+  /* ===== Header bar ===== */
   .bar {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     padding: 1rem clamp(1rem, 4vw, 4rem);
   }
-
   .brand {
     display: inline-flex;
     align-items: center;
@@ -216,13 +214,13 @@ const leftNav = [
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--monero-orange);
     color: #fff;
     font-size: 14px;
     font-weight: 900;
   }
 
-  /* ========== Desktop nav ========== */
+  /* ===== Desktop nav ===== */
   .nav {
     margin-left: 0.5rem;
   }
@@ -235,7 +233,7 @@ const leftNav = [
     align-items: center;
   }
 
-  /* ========== Utilities ========== */
+  /* ===== Right utilities ===== */
   .lang {
     margin-left: auto;
     color: var(--muted);
@@ -263,8 +261,13 @@ const leftNav = [
     display: none;
   }
 
-  /* ========== Mobile (<=900px) ========== */
+  /* ===== Mobile (<=900px) ===== */
   @media (max-width: 900px) {
+    /* leave a tappable gap to close the drawer */
+    :root {
+      --drawer-gap: clamp(40px, 10vw, 72px);
+    }
+
     .hamburger {
       display: inline-block;
     }
@@ -273,24 +276,29 @@ const leftNav = [
       top: 0;
       z-index: 50;
       background-color: inherit;
-      border-bottom: 1px solid #0b0b0f;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    /* Right-side drawer */
+    /* Drawer */
     .nav {
       position: fixed;
       top: 0;
       right: 0;
       bottom: 0;
       left: auto;
-      width: clamp(260px, 82vw, 420px);
+      width: min(420px, calc(100vw - var(--drawer-gap)));
       transform: translateX(100%);
       transition: transform 0.25s ease;
+
       background: var(--panel);
       backdrop-filter: saturate(140%) blur(10px);
       -webkit-backdrop-filter: saturate(140%) blur(10px);
-      padding: 1rem 1rem 2rem;
-      z-index: 1001; /* ABOVE scrim so it's clickable */
+
+      box-sizing: border-box;
+      padding: 1rem calc(1rem + env(safe-area-inset-right)) 2rem 1rem;
+
+      z-index: 1001;
+      overscroll-behavior: contain;
     }
 
     .list {
@@ -304,7 +312,7 @@ const leftNav = [
       margin-left: 0;
     }
 
-    /* Click-outside scrim (UNDER drawer) */
+    /* Scrim (under drawer) */
     .scrim {
       position: fixed;
       inset: 0;
@@ -326,10 +334,18 @@ const leftNav = [
     }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .nav {
-      transition: none;
+  /* Dynamic viewport height when supported */
+  @supports (height: 100dvh) {
+    @media (max-width: 900px) {
+      .nav {
+        height: 100dvh;
+      }
     }
+  }
+
+  /* Motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .nav,
     .scrim {
       transition: none;
     }

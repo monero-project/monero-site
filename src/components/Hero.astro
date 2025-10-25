@@ -1,8 +1,7 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <h1 id="hero-title" class="title">
-      <span class="accent">Monero</span>
-      <br />
+      <span class="accent">Monero</span><br />
       <span class="plain">Means</span> <span class="accent">Money</span>
     </h1>
 
@@ -18,84 +17,90 @@
 </section>
 
 <style>
-  :root {
-    --plain-color: #000000;
-  }
+/* Light/dark ink only; keep it simple */
+:root{ --ink:#0b0b0f; --ghost:#2f2f38; --ghostText:#d9d9e1; }
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#f5f5f7; }
+}
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --plain-color: #ffffff;
-    }
-  }
+/* ===== Hero ===== */
+.hero{
+  display:grid;
+  align-content:center;
+  min-height:clamp(520px, 86vh, 720px);
+  padding:clamp(2rem, 6vw, 6rem) clamp(1rem, 5vw, 5rem);
+  overflow:hidden;
+}
+.wrap{
+  text-align:center;
+  max-width:56rem;
+  margin-inline:auto;
+  color:var(--ink);
+}
 
-  .hero {
-    position: relative;
-    min-height: clamp(520px, 82vh, 700px);
-    display: grid;
-    place-items: center;
-    padding: 1em 5em;
-    overflow: hidden;
-  }
+/* Title scales smoothly from phones to desktop */
+.title{
+  margin:0 0 .75rem 0;
+  font-weight:800;
+  letter-spacing:-0.015em;
+  line-height:1.05;
+  font-size:clamp(2.5rem, 7vw, 4rem);
+}
+.accent{ color:var(--monero-orange); }
+.plain { color:var(--ink); }
 
-  .wrap {
-    position: relative;
-    text-align: center;
-    max-width: 800px;
-    z-index: 1;
-  }
+/* Lead copy stays readable and narrow */
+.lead{
+  margin:0 auto 1.5rem;
+  max-width:60ch;
+  line-height:1.6;
+  font-size:clamp(1rem, 1.6vw, 1.125rem);
+  opacity:.9;
+}
 
-  .title {
-    margin: 0 0 18px;
-    font-size: 64px;
-    line-height: 1.05;
-    letter-spacing: 0.2px;
-  }
-  .accent { color: var(--monero-orange); }
-  .plain  { color: var(--plain-color); font-weight: 700; }
+/* Actions: flex column on small, row on larger */
+.actions{
+  display:flex;
+  flex-direction:column;
+  gap:.75rem;
+  justify-content:center;
+  align-items:center;
+  margin-top:.5rem;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.75rem 1.25rem;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+  font-size:.95rem;
+  line-height:1;
+  transition:transform .08s ease, opacity .12s ease;
+  width:100%;                /* full-width on mobile for easy tapping */
+  max-width:22rem;           /* but not absurdly wide */
+}
+.btn:hover,.btn:focus{ opacity:.92; outline:none; }
+.btn:active{ transform:translateY(1px); }
+.primary{ background:var(--monero-orange); color:#fff; }
+.ghost{ background:var(--ghost); color:var(--ghostText); }
 
-  .lead {
-    margin: 0 auto 28px;
-    max-width: 720px;
-    font-size: clamp(16px, 1.8vw, 18px);
-    line-height: 1.7;
+/* Switch to horizontal buttons on wider screens */
+@media (min-width: 640px){
+  .actions{
+    flex-direction:row;
   }
+  .btn{ width:auto; max-width:none; }
+}
 
-  .actions {
-    display: inline-flex;
-    gap: 16px;
-    margin-top: 8px;
-  }
+/* Use dynamic viewport height if supported */
+@supports (height: 100dvh){
+  .hero{ min-height:clamp(520px, 86dvh, 720px); }
+}
 
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 22px;
-    border-radius: 999px;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 1;
-    transition: transform .08s ease, opacity .12s ease;
-    will-change: transform;
-  }
-
-  .btn:hover, .btn:focus { opacity: .92; outline: none; }
-  .btn:active { transform: translateY(1px); }
-
-  .primary {
-    background: var(--monero-orange);
-    color: #fff;
-  }
-
-  .ghost {
-    background: #2f2f38;
-    color: #d9d9e1;
-  }
-
-  /* Responsive tweaks */
-  @media (max-width: 600px) {
-    .actions { gap: 12px; }
-    .btn { padding: 11px 18px; font-size: 14px; }
-  }
+/* Respect motion prefs */
+@media (prefers-reduced-motion: reduce){
+  .btn{ transition:none; }
+}
 </style>

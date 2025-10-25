@@ -41,8 +41,14 @@ const {
 </article>
 
 <style>
+  @media (prefers-color-scheme: light) {
+    .icon {
+      background-color: var(--card-color);
+    }
+  }
+
   .resource-card {
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 2rem;
     display: flex;
@@ -50,14 +56,10 @@ const {
     justify-content: flex-start;
   }
 
-  .resource-card:hover {
-    border-color: rgba(255, 255, 255, 0.18);
-  }
-
   .icon {
     width: 4rem;
     height: 4rem;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border-color);
     border-radius: 50%;
     display: gris;
     place-items: center;
@@ -76,6 +78,7 @@ const {
     margin: 0 0 0.8rem;
     font-size: 1.4rem;
     font-weight: 700;
+    color: var(--heading-color);
   }
 
   .desc {
@@ -83,6 +86,7 @@ const {
     font-size: 1rem;
     line-height: 1.6;
     max-width: 45ch;
+    color: var(--paragraph-subtitle);
   }
 
   .cta {

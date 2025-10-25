@@ -1,0 +1,105 @@
+---
+export interface DropdownItem {
+  label: string;
+  href: string;
+  desc?: string;
+  image: string;
+}
+export interface Props {
+  label: string;
+  href?: string;
+  dropdown?: DropdownItem[];
+}
+const { label, href, dropdown } = Astro.props;
+const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+---
+
+<li class={`item${dropdown ? " has-dd" : ""}`}>
+  {dropdown && <input id={id} class="dd-toggle" type="checkbox" aria-hidden="true" />}
+
+  <div class="row">
+    {dropdown && !href ? (
+      <label for={id} class="link" aria-controls={id}>{label}</label>
+    ) : (
+      <a href={href} class="link">{label}</a>
+    )}
+
+    {dropdown && (
+      <label for={id} class="caret" aria-label={`Expand ${label}`} aria-controls={id}>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+    )}
+
+    {dropdown && <label for={id} class="mobile-cover" aria-hidden="true" />}
+  </div>
+
+  {dropdown && (
+    <div class="dropdown" role="menu" aria-label={`${label} menu`}>
+      {dropdown.map((item) => (
+        <a href={item.href} class="dropdown-item">
+          <img src={item.image} alt="" class="icon" />
+          <div class="content">
+            <div class="title">{item.label}</div>
+            {item.desc && <div class="desc">{item.desc}</div>}
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+</li>
+
+<style>
+/* === Base === */
+.item{position:relative}
+.row{position:relative;display:flex;align-items:center;gap:.35rem}
+.link{color:var(--paragraph-main);text-decoration:none;padding:.4rem 0;font-weight:500;flex:1}
+.link:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.caret{display:inline-flex;align-items:center;justify-content:center;width:1.1rem;height:1.1rem;margin-left:.15rem;border-radius:.2rem}
+.caret svg{width:1em;height:1em;transition:transform .2s ease}
+.mobile-cover{display:none} /* inert on desktop */
+.dd-toggle{display:none}
+
+/* Dropdown default (desktop baseline = hidden) */
+.dropdown{
+  position:absolute;top:100%;left:0;margin-top:.5rem;min-width:560px;padding:1rem;border-radius:.75rem;
+  background:var(--card-color);box-shadow:0 12px 30px rgba(0,0,0,.35);
+  opacity:0;visibility:hidden;transition:opacity .15s ease,visibility .15s ease;
+  display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.5rem;z-index:20
+}
+
+/* Items */
+.dropdown-item{display:flex;align-items:flex-start;gap:1rem;color:var(--heading-color);text-decoration:none;padding:.75rem;border-radius:.5rem}
+.dropdown-item:where(:hover,:focus){background:var(--card-hover-color)}
+.icon{width:2rem;height:2rem;flex:0 0 2rem}
+.title{font-weight:600}
+.desc{font-size:.9rem;color:var(--paragraph-subtitle);line-height:1.35;margin-top:.15rem}
+
+/* === Desktop hover/focus === */
+@media (hover:hover) and (pointer:fine){
+  .has-dd::after{content:"";position:absolute;left:0;right:0;top:100%;height:10px}
+  .has-dd:is(:hover,:has(.dropdown :focus)) > .dropdown{opacity:1;visibility:visible}
+  .has-dd:is(:hover,:has(.dropdown :focus)) > .row > .link{color:var(--heading-color)}
+  /* prevent accidental clicks on desktop */
+  .mobile-cover{pointer-events:none}
+}
+
+/* === Mobile (whole-row toggle) === */
+@media (max-width:900px){
+  .row{padding:.5rem 0}
+  .mobile-cover{display:block;position:absolute;inset:0;cursor:pointer;z-index:1}
+
+  .dropdown{
+    position:static;margin:.25rem 0 0;min-width:unset;padding:0;background:none;box-shadow:none;border-radius:0;
+    opacity:1;visibility:visible;display:block;max-height:0;overflow:hidden;transition:max-height .25s ease
+  }
+  .dd-toggle:checked ~ .dropdown{max-height:100vh}
+  .dd-toggle:checked + .row > .caret svg{transform:rotate(180deg)} /* rotate only on mobile */
+}
+
+/* === Reduce motion === */
+@media (prefers-reduced-motion:reduce){
+  .dropdown,.caret svg{transition:none}
+}
+</style>

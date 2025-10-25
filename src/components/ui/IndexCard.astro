@@ -12,6 +12,7 @@ const {
     id = "card-" + Math.random().toString(36).slice(2),
     as = "section",
 } = Astro.props;
+
 const Tag = as as any;
 ---
 
@@ -27,37 +28,48 @@ const Tag = as as any;
 </Tag>
 
 <style>
+    /* ---- minimal, responsive ---- */
     .card {
         display: flex;
         flex-direction: column;
-        gap: 5rem;
-        padding-top: 4rem;
-        padding-bottom: 8rem;
+        gap: 2rem;
+        padding-block: 3rem;
     }
     .head {
-        margin-bottom: 1.2rem;
         display: grid;
-        grid-template-columns: 1fr 1.5fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+        gap: 2rem;
         align-items: start;
-        gap: 5rem;
     }
-
     .title {
         margin: 0;
-        font-size: 3rem;
-        line-height: 1.2;
         font-weight: 700;
+        line-height: 1.2;
+        font-size: clamp(1.75rem, 2.4vw, 3rem);
+        color: var(--heading-color);
     }
-
     .desc {
         margin: 0;
-        color: #a1a1aa;
-        font-size: 1.25rem;
         line-height: 1.6;
+        color: var(--paragraph-main);
+        font-size: clamp(1rem, 1.2vw, 1.125rem);
     }
     .body {
         display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 5rem;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+        gap: 2rem;
+    }
+
+    /* stack on small screens */
+    @media (max-width: 900px) {
+        .card {
+            gap: 1.25rem;
+            padding-block: 2rem;
+        }
+        .head,
+        .body {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
     }
 </style>

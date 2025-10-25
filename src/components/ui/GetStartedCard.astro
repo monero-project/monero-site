@@ -36,20 +36,27 @@ const Tag = as as any;
 </Tag>
 
 <style>
+  :root {
+    --num-color: var(--monero-orange);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --num-color: var(--border-color);
+    }
+  }
   .gs {
     display: flex;
     align-items: center;
     gap: 32px;
     padding: 24px 0;
-    color: #e8e8ee;
   }
 
   .num {
     font-weight: 800;
     font-size: 6.5rem;
     line-height: 1;
-    color: #6d6c76;
-    opacity: 0.25;
+    color: var(--num-color);
     width: 2ch;
   }
 
@@ -61,12 +68,12 @@ const Tag = as as any;
     margin: 0 0 8px;
     font-weight: 800;
     font-size: 1.75rem;
-    color: #ffffff;
+    color: var(--heading-color);
   }
 
   .desc {
     margin: 0 0 16px;
-    color: #b7b7c3;
+    color: var(--paragraph-subtitle);
     max-width: 60ch;
     line-height: 1.6;
   }

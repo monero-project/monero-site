@@ -8,11 +8,11 @@ import '../styles/global.css';
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
-		<title>Astro Basics</title>
+		<title>Home | Monero - secure, private, untraceable cryptocurrency.</title>
 	</head>
 	<body>
 		<Header/>
@@ -24,6 +24,10 @@ import '../styles/global.css';
 </html>
 
 <style>
+	:root {
+		--bg-color: #ffffff;
+		--text-color: #000000;
+	}
 	@media (prefers-color-scheme: dark) {
 		:root {
 			--bg-color: #171717;
@@ -34,7 +38,7 @@ import '../styles/global.css';
 	html,
 	body {
 		margin: 0;
-		width: 100%;
+		width: 100vw;
 		min-height: 100vh;
 		font-family: 'DM Sans', sans-serif;
 		background-color: var(--bg-color);
@@ -46,5 +50,11 @@ import '../styles/global.css';
 	main {
 		padding: 1em 5em;
 		flex: 1;
+	}
+
+	@media (max-width: 600px) {
+		main {
+			padding: 1em 2em;
+		}
 	}
 </style>

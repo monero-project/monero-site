@@ -1,3 +1,20 @@
 :root {
   --monero-orange: #E2611F;
+  --heading-color: #191B23;
+  --card-color: #F5F2FA;
+  --card-hover-color: #1E1B230D;
+  --paragraph-main: #44464E;
+  --paragraph-subtitle: #75767F;
+  --border-color: #E4E1E9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --heading-color: #ffffff;
+    --card-color: #211F26;
+    --card-hover-color: #E1E1EC0D;
+    --paragraph-main: #C6C6D0;
+    --paragraph-subtitle: #A9AAB4;
+    --border-color: #36343B;
+  }
 }

@@ -1,31 +1,36 @@
 ---
 export interface Props {
-    title: string;
-    subtitle?: string;
+  title: string;
+  subtitle?: string;
 }
 
-const {
-  title,
-  subtitle = "",
-} = Astro.props;
+const { title, subtitle = "" } = Astro.props;
 ---
 
 <div>
-    <div class="header-card">
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
-    </div>
+  <header class="header-card">
+    <h1 class="title">{title}</h1>
+    {subtitle && <p class="subtitle">{subtitle}</p>}
+  </header>
 </div>
 
 <style>
-    .header-card {
-        margin-top: 4rem;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-
-    h1 {
-        color: var(--monero-orange);
-        font-size: 400%;
-    }
+/* minimal + responsive without media queries */
+.header-card{
+  margin-block:clamp(1.5rem,5vw,4rem);
+  padding-block:clamp(1.5rem,5vw,4rem);
+}
+.title{
+  margin:0;
+  color:var(--monero-orange);
+  font-weight:800;
+  line-height:1.1;
+  font-size:clamp(2rem, 6vw, 4rem);
+}
+.subtitle{
+  max-width:70ch;
+  line-height:1.6;
+  font-size:clamp(1rem, 1.2vw, 1.125rem);
+  color: var(--paragraph-main);
+}
 </style>
