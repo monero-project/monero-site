@@ -1,4 +1,6 @@
 ---
+import dropdownCaret from "../../../assets/icons/dropdown-caret.png?url";
+import Icon from "../Icon.astro";
 export interface DropdownItem {
   label: string;
   href: string;
@@ -42,16 +44,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
           aria-label={`Expand ${label}`}
           aria-controls={id}
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path
-              d="M6 9l6 6 6-6"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <Icon src={dropdownCaret} />
         </label>
       )
     }
@@ -102,14 +95,8 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.1rem;
-    height: 1.1rem;
     margin-left: 0.15rem;
     border-radius: 0.2rem;
-  }
-  .caret svg {
-    width: 1em;
-    height: 1em;
     transition: transform 0.2s ease;
   }
   .mobile-cover {
@@ -223,7 +210,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     .dd-toggle:checked ~ .dropdown {
       max-height: 100vh;
     }
-    .dd-toggle:checked + .row > .caret svg {
+    .dd-toggle:checked + .row > .caret {
       transform: rotate(180deg);
     } /* rotate only on mobile */
   }
@@ -231,7 +218,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   /* === Reduce motion === */
   @media (prefers-reduced-motion: reduce) {
     .dropdown,
-    .caret svg {
+    .caret {
       transition: none;
     }
   }

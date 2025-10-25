@@ -1,8 +1,8 @@
 ---
 import NavItem from "../ui/header/NavItem.astro";
+import Icon from "../ui/Icon.astro";
 import placeholder from '../../assets/placeholder.avif?url';
-import GlobeLight from '../../assets/globe-light.png?url';
-import GlobeDark from '../../assets/globe-dark.png?url';
+import Globe from '../../assets/icons/globe.png?url';
 
 const leftNav = [
   {
@@ -151,10 +151,7 @@ const leftNav = [
     <label for="nav-toggle" class="scrim" aria-hidden="true"></label>
 
     <a class="lang" href="#" aria-label="Change language">
-      <div 
-        class="globe" 
-        style={`--globe-light: url(${GlobeLight}); --globe-dark: url(${GlobeDark});`}
-      ></div>
+      <Icon src={Globe} size="1.25rem" />
     </a>
   </div>
 </header>
@@ -223,18 +220,6 @@ const leftNav = [
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-  }
-  .globe {
-    width: 1.25rem;
-    height: 1.25rem;
-    background-image: var(--globe-light);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  @media (prefers-color-scheme: dark) {
-    .globe {
-      background-image: var(--globe-dark);
-    }
   }
 
   .nav-toggle {

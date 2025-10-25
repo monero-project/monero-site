@@ -1,6 +1,6 @@
 ---
-import externalLinkDark from "../../assets/external-link-dark.png?url";
-import externalLinkLight from "../../assets/external-link-light.png?url";
+import Icon from "../ui/Icon.astro";
+import externalLink from "../../assets/icons/external-link.png?url";
 interface Link {
     label: string;
     href: string;
@@ -104,10 +104,7 @@ const bottomLinks: Link[] = [
                                     >
                                         {l.label}
                                         {isExternal(l.href) ? (
-                                            <div 
-                                                class="external-icon" 
-                                                style={`--icon-light: url(${externalLinkLight}); --icon-dark: url(${externalLinkDark});`}
-                                            ></div>
+                                            <Icon src={externalLink} size="12px" />
                                         ) : (
                                             ""
                                         )}
@@ -138,10 +135,7 @@ const bottomLinks: Link[] = [
                             >
                                 {l.label}
                                 {isExternal(l.href) ? (
-                                    <div 
-                                        class="external-icon" 
-                                        style={`--icon-light: url(${externalLinkLight}); --icon-dark: url(${externalLinkDark});`}
-                                    ></div>
+                                    <Icon src={externalLink} size="12px" />
                                 ) : (
                                     ""
                                 )}
@@ -226,20 +220,6 @@ const bottomLinks: Link[] = [
     .inline-item a:hover,
     .inline-item a:focus {
         color: var(--heading-color);
-    }
-
-    .external-icon {
-        width: 12px;
-        height: 12px;
-        background-image: var(--icon-light);
-        background-size: contain;
-        background-repeat: no-repeat;
-        flex-shrink: 0;
-    }
-    @media (prefers-color-scheme: dark) {
-        .external-icon {
-            background-image: var(--icon-dark);
-        }
     }
 
     /* Responsive */

@@ -1,0 +1,19 @@
+---
+export interface Props {
+  src: string;
+  size?: string;
+  class?: string;
+}
+
+const { src, size = "1em", class: className = "" } = Astro.props;
+---
+
+<div class={`icon ${className}`} style={`--icon-src: url(${src}); width: ${size}; height: ${size};`}></div>
+
+<style>
+  .icon {
+    background-color: currentColor;
+    mask: var(--icon-src) no-repeat center / contain;
+    -webkit-mask: var(--icon-src) no-repeat center / contain;
+  }
+</style>

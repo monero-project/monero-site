@@ -1,6 +1,8 @@
 ---
+import arrowLeft from "../../../assets/icons/arrow-left.png?url";
+import Icon from "../../ui/Icon.astro";
 export interface Props {
-  icon?: any; // inline SVG
+  icon?: any;
   title: string;
   description?: string;
   ctaLabel?: string;
@@ -27,16 +29,7 @@ const {
 
   <a class="cta" href={ctaHref}>
     {ctaLabel}
-    <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-      <path
-        d="M5 12h14M13 6l6 6-6 6"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+    <Icon src={arrowLeft} />
   </a>
 </article>
 
