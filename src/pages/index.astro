@@ -4,7 +4,7 @@ import Hero from '../components/Hero.astro';
 import IndexCard from '../components/ui/IndexCard.astro';
 import GetStartedCard from '../components/ui/GetStartedCard.astro';
 import ResourceCard from '../components/ui/ResourceCard.astro';
-import placeholder from '../assets/placeholder.svg?url';
+import placeholder from '../assets/placeholder.avif?url';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -30,15 +30,15 @@ import placeholder from '../assets/placeholder.svg?url';
 			</div>
 		</div>
 		<div class="video-container">
-			<iframe
+			<video
 				width="100%"
 				height="100%"
-				src="https://www.youtube.com/embed/jc8Kc0WogAI"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-			></iframe>
+				controls
+				preload="metadata"
+			>
+				<source src="/media/intro-video.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video>
 		</div>
 	</IndexCard>
 	<hr/>

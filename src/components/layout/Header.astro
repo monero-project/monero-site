@@ -1,6 +1,8 @@
 ---
 import NavItem from "../ui/header/NavItem.astro";
-import placeholder from '../../assets/placeholder.svg?url';
+import placeholder from '../../assets/placeholder.avif?url';
+import GlobeLight from '../../assets/globe-light.png?url';
+import GlobeDark from '../../assets/globe-dark.png?url';
 
 const leftNav = [
   {
@@ -149,28 +151,10 @@ const leftNav = [
     <label for="nav-toggle" class="scrim" aria-hidden="true"></label>
 
     <a class="lang" href="#" aria-label="Change language">
-      <svg viewBox="0 0 24 24" class="globe" aria-hidden="true">
-        <circle
-          cx="12"
-          cy="12"
-          r="9"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"></circle>
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="4.5"
-          ry="9"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"></ellipse>
-        <path
-          d="M3 12h18M12 3v18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"></path>
-      </svg>
+      <div 
+        class="globe" 
+        style={`--globe-light: url(${GlobeLight}); --globe-dark: url(${GlobeDark});`}
+      ></div>
     </a>
   </div>
 </header>
@@ -243,6 +227,14 @@ const leftNav = [
   .globe {
     width: 1.25rem;
     height: 1.25rem;
+    background-image: var(--globe-light);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  @media (prefers-color-scheme: dark) {
+    .globe {
+      background-image: var(--globe-dark);
+    }
   }
 
   .nav-toggle {

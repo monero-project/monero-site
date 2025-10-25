@@ -1,4 +1,6 @@
 ---
+import externalLinkDark from "../../assets/external-link-dark.png?url";
+import externalLinkLight from "../../assets/external-link-light.png?url";
 interface Link {
     label: string;
     href: string;
@@ -102,24 +104,10 @@ const bottomLinks: Link[] = [
                                     >
                                         {l.label}
                                         {isExternal(l.href) ? (
-                                            <svg
-                                                class="external-icon"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            >
-                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                                <polyline points="15,3 21,3 21,9" />
-                                                <line
-                                                    x1="10"
-                                                    y1="14"
-                                                    x2="21"
-                                                    y2="3"
-                                                />
-                                            </svg>
+                                            <div 
+                                                class="external-icon" 
+                                                style={`--icon-light: url(${externalLinkLight}); --icon-dark: url(${externalLinkDark});`}
+                                            ></div>
                                         ) : (
                                             ""
                                         )}
@@ -150,19 +138,10 @@ const bottomLinks: Link[] = [
                             >
                                 {l.label}
                                 {isExternal(l.href) ? (
-                                    <svg
-                                        class="external-icon"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                        <polyline points="15,3 21,3 21,9" />
-                                        <line x1="10" y1="14" x2="21" y2="3" />
-                                    </svg>
+                                    <div 
+                                        class="external-icon" 
+                                        style={`--icon-light: url(${externalLinkLight}); --icon-dark: url(${externalLinkDark});`}
+                                    ></div>
                                 ) : (
                                     ""
                                 )}
@@ -213,6 +192,9 @@ const bottomLinks: Link[] = [
     a {
         color: var(--heading-color);
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 4px;
     }
 
     a:hover,
@@ -249,8 +231,15 @@ const bottomLinks: Link[] = [
     .external-icon {
         width: 12px;
         height: 12px;
-        margin-left: 4px;
-        vertical-align: middle;
+        background-image: var(--icon-light);
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+    }
+    @media (prefers-color-scheme: dark) {
+        .external-icon {
+            background-image: var(--icon-dark);
+        }
     }
 
     /* Responsive */
