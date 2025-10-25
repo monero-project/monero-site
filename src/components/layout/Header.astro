@@ -115,7 +115,7 @@ const leftNav = [
       },
     ],
   },
-  { label: "Crowdfunding", href: "#" },
+  { label: "Crowdfunding", href: "https://ccs.getmonero.org" },
 ];
 ---
 
@@ -299,6 +299,14 @@ const leftNav = [
 
       z-index: 1001;
       overscroll-behavior: contain;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; /* smoother on iOS */
+    }
+
+    /* Prevent background from scrolling while the drawer is open */
+    body:has(#nav-toggle:checked) {
+      overflow: hidden;
+      overscroll-behavior: none;
     }
 
     .list {
@@ -322,6 +330,7 @@ const leftNav = [
       pointer-events: none;
       transition: opacity 0.2s ease;
       z-index: 1000;
+      touch-action: none;
     }
 
     /* Open state */
