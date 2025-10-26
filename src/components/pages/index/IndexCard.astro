@@ -3,20 +3,16 @@ export interface Props {
     title: string;
     description?: string;
     id?: string;
-    as?: keyof HTMLElementTagNameMap;
 }
 
 const {
     title,
     description = "",
     id = "card-" + Math.random().toString(36).slice(2),
-    as = "section",
 } = Astro.props;
-
-const Tag = as as any;
 ---
 
-<Tag class="card" aria-labelledby={id}>
+<div class="card" aria-labelledby={id}>
     <header class="head">
         <h1 id={id} class="title">{title}</h1>
         {description && <p class="desc">{description}</p>}
@@ -25,7 +21,7 @@ const Tag = as as any;
     <div class="body">
         <slot />
     </div>
-</Tag>
+</div>
 
 <style>
     .card {

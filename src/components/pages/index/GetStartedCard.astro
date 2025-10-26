@@ -19,14 +19,12 @@ const {
   description = "",
   ctaHref = "#",
   ctaLabel = "Get a wallet",
-  as = "section",
 } = Astro.props;
 
-const Tag = as as any;
 const locale = getLocale(Astro.url);
 ---
 
-<Tag class="gs" aria-labelledby="gs-title">
+<div class="gs" aria-labelledby="gs-title">
   <div class="num" aria-hidden="true">{String(step).padStart(2, "0")}</div>
 
   <div class="text">
@@ -37,7 +35,7 @@ const locale = getLocale(Astro.url);
       <Icon src={arrowLeft} />
     </a>
   </div>
-</Tag>
+</div>
 
 <style>
   :root {

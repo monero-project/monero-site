@@ -2,7 +2,7 @@
 const { t } = Astro.props;
 ---
 
-<section class="hero" aria-labelledby="hero-title">
+<div class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <h1 id="hero-title" class="title">
       <span class="accent">{t('index.hero.titleMonero')}</span><br />
@@ -18,7 +18,7 @@ const { t } = Astro.props;
       <a class="btn ghost" href="#learn-more">{t('index.hero.learnMore')}</a>
     </div>
   </div>
-</section>
+</div>
 
 <style>
 /* Light/dark ink only; keep it simple */
