@@ -184,6 +184,10 @@ const leftNav = [
     gap: 0.75rem;
     padding: 1rem clamp(1rem, 4vw, 4rem);
   }
+  .header {
+    position: relative;
+    z-index: 10;
+  }
   .brand {
     display: inline-flex;
     align-items: center;
@@ -255,7 +259,7 @@ const leftNav = [
     .header {
       position: sticky;
       top: 0;
-      z-index: 50;
+      z-index: 10;
       background-color: inherit;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
