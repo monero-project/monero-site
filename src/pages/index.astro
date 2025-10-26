@@ -1,147 +1,148 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import IndexCard from '../components/pages/index/IndexCard.astro';
-import GetStartedCard from '../components/pages/index/GetStartedCard.astro';
-import ResourceCard from '../components/pages/index/ResourceCard.astro';
-import placeholder from '../assets/placeholder.avif?url';
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "@/layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import IndexCard from "../components/pages/index/IndexCard.astro";
+import GetStartedCard from "../components/pages/index/GetStartedCard.astro";
+import ResourceCard from "../components/pages/index/ResourceCard.astro";
+import placeholder from "../assets/placeholder.avif?url";
+import { createTInstance, getLocale } from "@/i18n/utils";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
-
 <Layout>
-	<Hero/>
-	<IndexCard
-		title="About Monero"
-		description="Watch this video to understand the basics of how Monero works. For more in-depth understanding of the technology behind Monero, watch more explanatory videos."
-	>
-		<div style="display: flex; flex-direction: column; gap: 2rem;">
-			<div>
-				<h2>Private</h2>
-				<p>Monero respects privacy by providing full anonimity and untraceable transactions for users.</p>
-			</div>
-			<div>
-				<h2>Decentralized</h2>
-				<p>With more than 2300 nodes, Monero is one of the most decentralized cryptocurrencies that exist.</p>
-			</div>
-			<div>
-				<h2>Community-driven</h2>
-				<p>Monero is developed and evolved by its community, more than 500 developers have contributed to the project.</p>
-			</div>
-		</div>
-		<div class="video-container">
-			<video
-				width="100%"
-				height="100%"
-				controls
-				preload="metadata"
-			>
-				<source src="/media/intro-video.webm" type="video/webm">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-	</IndexCard>
-	<hr/>
-	<IndexCard
-		title="Start using Monero"
-		description="Follow these steps to get started with Monero. If you are new to crypto, we recommend learning the basic security measures you can take to keep your funds safe."
-	>
-		<img src={placeholder} alt="Get started illustration" width="100%"/>
-		<div>
-			<GetStartedCard
-				step="01"
-				title="Choose a wallet"
-				description="To use Monero, the first thing you are going to need is a wallet. Visit our Downloads page and get the right wallet for you."
-				ctaHref="/downloads"
-				ctaLabel="Get a wallet"
-			/>
-			<hr/>
-			<GetStartedCard
-				step="02"
-				title="Get coins"
-				description="You can acquire Monero by mining or working in exchange for Monero, but the easiest way is to use an exchange to convert your fiat money into XMR."
-				ctaHref="/community/merchants"
-				ctaLabel="Find and exchange"
-			/>
-			<hr/>
-			<GetStartedCard
-				step="03"
-				title="Send Monero"
-				description="Once Monero is in your wallet, you can exchange it for goods, services and other currencies, privately and with very low fees."
-				ctaHref="/resources/user-guides"
-				ctaLabel="Use Monero"
-			/>
-		</div>
-
-	</IndexCard>
-	<hr/>
-	<IndexCard
-		title="Monero Resources"
-		description="Explore the knowledge base to learn everything about Monero, from basic blockchain terms to advanced privacy mechanisms and technology."
-	>
-		<div id="resource-container">
-			<ResourceCard
-				title="FAQ"
-				description="We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community."
-				ctaLabel="Find your answer"
-				ctaHref="#"
-				icon={placeholder}
-			/>
-			<ResourceCard
-				title="User guides"
-				description="We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community."
-				ctaLabel="See the guides"
-				ctaHref="#"
-				icon={placeholder}
-			/>
-			<ResourceCard
-				title="Developer Guides"
-				description="We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community."
-				ctaLabel="See the guides"
-				ctaHref="#"
-				icon={placeholder}
-			/>
-		</div>
-	</IndexCard>
+  <Hero t={t} />
+  <IndexCard
+    title={t("index.aboutTitle")}
+    description={t("index.aboutDescription")}
+  >
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <div>
+        <h2>{t("index.main")}</h2>
+        <p>
+          {t("index.privacyText")}
+        </p>
+      </div>
+      <div>
+        <h2>{t("index.decentralized")}</h2>
+        <p>
+          {t("index.decentralizedText")}
+        </p>
+      </div>
+      <div>
+        <h2>{t("index.communityDriven")}</h2>
+        <p>
+          {t("index.communityText")}
+        </p>
+      </div>
+    </div>
+    <div class="video-container">
+      <video width="100%" height="100%" controls preload="metadata">
+        <source src="/media/intro-video.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </IndexCard>
+  <hr />
+  <IndexCard
+    title={t("index.startTitle")}
+    description={t("index.startDescription")}
+  >
+    <img src={placeholder} alt={t("index.getStartedAlt")} width="100%" />
+    <div>
+      <GetStartedCard
+        step="01"
+        title={t("index.step1Title")}
+        description={t("index.step1Desc")}
+        ctaHref="/downloads"
+        ctaLabel={t("index.step1Cta")}
+      />
+      <hr />
+      <GetStartedCard
+        step="02"
+        title={t("index.step2Title")}
+        description={t("index.step2Desc")}
+        ctaHref="/community/merchants"
+        ctaLabel={t("index.step2Cta")}
+      />
+      <hr />
+      <GetStartedCard
+        step="03"
+        title={t("index.step3Title")}
+        description={t("index.step3Desc")}
+        ctaHref="/resources/user-guides"
+        ctaLabel={t("index.step3Cta")}
+      />
+    </div>
+  </IndexCard>
+  <hr />
+  <IndexCard
+    title={t("index.resourcesTitle")}
+    description={t("index.resourcesDescription")}
+  >
+    <div id="resource-container">
+      <ResourceCard
+        title={t("index.faqTitle")}
+        description={t("index.faqDesc")}
+        ctaLabel={t("index.faqCta")}
+        ctaHref="#"
+        icon={placeholder}
+      />
+      <ResourceCard
+        title={t("index.userGuidesTitle")}
+        description={t("index.userGuidesDesc")}
+        ctaLabel={t("index.userGuidesCta")}
+        ctaHref="#"
+        icon={placeholder}
+      />
+      <ResourceCard
+        title={t("index.devGuidesTitle")}
+        description={t("index.devGuidesDesc")}
+        ctaLabel={t("index.devGuidesCta")}
+        ctaHref="#"
+        icon={placeholder}
+      />
+    </div>
+  </IndexCard>
 </Layout>
 
 <style>
-	h2 {
-		font-size: 200%;
-		color: var(--heading-color);
-	}
-	p {
-		margin: 0;
-		color: var(--paragraph-subtitle);
-	}
+  h2 {
+    font-size: 200%;
+    color: var(--heading-color);
+  }
+  p {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+  }
 
-	hr {
-		border: none;
-		border-top: 1px solid var(--border-color);
-		margin: 1em 0;
-	}
-	
-	#resource-container {
-		grid-column: span 2;
-		display: grid;
-		gap: 2rem;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	}
+  hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1em 0;
+  }
 
-	.video-container {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding-bottom: 56.25%;
-		border-radius: 1rem;
-		overflow: hidden;
-	}
+  #resource-container {
+    grid-column: span 2;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 
-	.video-container video {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>

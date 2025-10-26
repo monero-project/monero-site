@@ -1,0 +1,139 @@
+{
+  "header": {
+    "nav": {
+      "getStarted": "Get started",
+      "downloads": "Downloads",
+      "blog": "Blog",
+      "community": "Community",
+      "resources": "Resources",
+      "crowdfunding": "Crowdfunding"
+    },
+    "dropdowns": {
+      "getStarted": {
+        "whatIsMonero": {
+          "label": "What is Monero?",
+          "desc": "Everything you need to know about Monero in a nutshell."
+        },
+        "acceptMonero": {
+          "label": "Accept Monero",
+          "desc": "Learn how to accept XMR as a merchant or individual."
+        },
+        "contribute": {
+          "label": "Contribute",
+          "desc": "Help the Monero project bring privacy to everyone."
+        },
+        "mining": {
+          "label": "Mining",
+          "desc": "Learn how to mine Monero on your computer."
+        },
+        "faq": {
+          "label": "FAQ",
+          "desc": "Find answers to common questions about Monero."
+        }
+      },
+      "community": {
+        "workgroups": {
+          "label": "Workgroups",
+          "desc": "Everything you need to know about Monero in a nutshell."
+        },
+        "sponsorships": {
+          "label": "Sponsorships",
+          "desc": "Discover the ways you can help the Monero project to bring privacy to everyone."
+        },
+        "hangouts": {
+          "label": "Hangouts",
+          "desc": "Learn how to accept XMR as a merchant or individual with wallet software."
+        },
+        "merchants": {
+          "label": "Merchants and exchanges",
+          "desc": "Everything you need to know about Monero in a nutshell."
+        }
+      },
+      "resources": {
+        "knowledgeBase": {
+          "label": "Knowledge Base",
+          "desc": "Books, publications, magazines, Moneropedia."
+        },
+        "roadmap": {
+          "label": "Roadmap",
+          "desc": "Stay up to date with the latest Monero development plans and progress."
+        },
+        "researchLab": {
+          "label": "Research Lab",
+          "desc": "Discover the ways you can help the Monero project to bring privacy to everyone."
+        },
+        "userGuides": {
+          "label": "User Guides",
+          "desc": "Comprehensive guides to help you use Monero effectively and securely."
+        },
+        "developerGuides": {
+          "label": "Developer Guides",
+          "desc": "Find answers to recurring questions and concerns about Monero."
+        },
+        "moneroTools": {
+          "label": "Monero Tools",
+          "desc": "A curated list of tools and software for Monero users and developers."
+        },
+        "pressKit": {
+          "label": "Press Kit",
+          "desc": "Press contacts, logos, images, and other media resources."
+        }
+      }
+    }
+  },
+  "footer": {
+    "columns": {
+      "resources": {
+        "title": "Resources",
+        "links": {
+          "knowledgeBase": "Knowledge Base",
+          "developerGuides": "Developer guides",
+          "userGuides": "User guides",
+          "downloads": "Downloads"
+        }
+      },
+      "reachOut": {
+        "title": "Reach out",
+        "links": {
+          "workgroups": "Workgroups",
+          "hangouts": "Hangouts",
+          "mailingList": "Mailing list"
+        }
+      },
+      "community": {
+        "title": "Community",
+        "links": {
+          "merchants": "Merchants & Exchanges",
+          "stackExchange": "Stack Exchange",
+          "bitcoinTalk": "Bitcoin Talk",
+          "weblate": "Weblate"
+        }
+      },
+      "theMoneroProject": {
+        "title": "The Monero Project",
+        "links": {
+          "openAlias": "Open Alias",
+          "moneroResearchLab": "Monero Research Lab (MRL)",
+          "pressKit": "Press Kit",
+          "communityCrowdfundingSystem": "Community Crowdfunding System"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "privacyPolicy": "Privacy Policy",
+          "termsOfUse": "Terms of Use"
+        }
+      }
+    },
+    "bottomLinks": {
+      "torOnionService": "Tor Onion service",
+      "vulnerabilityResponse": "Vulnerability response",
+      "legal": "Legal",
+      "sourceCode": "Source code",
+      "sitemap": "Sitemap",
+      "rssFeed": "RSS Feed"
+    },
+    "copyright": "© 2025 Monero. All rights reserved."
+  }
+}

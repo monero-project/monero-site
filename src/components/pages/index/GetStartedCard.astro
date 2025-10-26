@@ -1,6 +1,8 @@
 ---
 import Icon from "../../ui/Icon.astro";
 import arrowLeft from "../../../assets/icons/arrow-left.avif?url";
+import { localizeHref } from "@/i18n/utils";
+import { getLocale } from "astro-i18n-aut";
 
 export interface Props {
   step: string | number;
@@ -21,6 +23,7 @@ const {
 } = Astro.props;
 
 const Tag = as as any;
+const locale = getLocale(Astro.url);
 ---
 
 <Tag class="gs" aria-labelledby="gs-title">
@@ -29,7 +32,7 @@ const Tag = as as any;
   <div class="text">
     <h3 id="gs-title" class="title">{title}</h3>
     {description && <p class="desc">{description}</p>}
-    <a class="cta" href={ctaHref}>
+    <a class="cta" href={localizeHref(locale, ctaHref)}>
       {ctaLabel}
       <Icon src={arrowLeft} />
     </a>

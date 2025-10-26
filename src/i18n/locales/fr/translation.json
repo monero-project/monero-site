@@ -1,0 +1,37 @@
+{
+  "index": {
+    "hero": {
+      "titleMonero": "Monero",
+      "titleMeans": "Signifie",
+      "titleMoney": "Argent",
+      "lead": "Cryptomonnaie privée et décentralisée qui garde vos finances confidentielles et sécurisées.",
+      "getStarted": "Commencer",
+      "learnMore": "En savoir plus"
+    },
+    "aboutTitle": "À propos de Monero",
+    "aboutDescription": "Regardez cette vidéo pour comprendre les bases du fonctionnement de Monero. Pour une compréhension plus approfondie de la technologie derrière Monero, regardez d'autres vidéos explicatives.",
+    "main": "Confidentialité",
+    "privacyText": "Monero respecte la confidentialité en offrant une anonymité totale et des transactions non traçables aux utilisateurs.",
+    "decentralized": "Décentralisé",
+    "decentralizedText": "Avec plus de 2300 nœuds, Monero est l'une des cryptomonnaies les plus décentralisées qui existent.",
+    "communityDriven": "Piloté par la communauté",
+    "communityText": "Monero est développé et évolué par sa communauté, plus de 500 développeurs ont contribué au projet.",
+    "startTitle": "Commencer à utiliser Monero",
+    "startDescription": "Suivez ces étapes pour commencer avec Monero. Si vous êtes nouveau dans la crypto, nous recommandons d'apprendre les mesures de sécurité de base que vous pouvez prendre pour garder vos fonds en sécurité.",
+    "getStartedAlt": "Illustration pour commencer",
+    "step1Title": "Choisir un portefeuille",
+    "step1Desc": "Pour utiliser Monero, la première chose dont vous aurez besoin est un portefeuille. Visitez notre page Téléchargements et obtenez le portefeuille qui vous convient.",
+    "step1Cta": "Obtenir un portefeuille",
+    "step2Title": "Obtenir des pièces",
+    "step2Desc": "Vous pouvez acquérir Monero en minant ou en travaillant en échange de Monero, mais le moyen le plus simple est d'utiliser un échange pour convertir votre argent fiduciaire en XMR.",
+    "step2Cta": "Trouver et échanger",
+    "step3Title": "Envoyer Monero",
+    "step3Desc": "Une fois Monero dans votre portefeuille, vous pouvez l'échanger contre des biens, des services et",
+    "userGuidesTitle": "Guides utilisateur",
+    "userGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions n'y sont pas, vous pouvez toujours demander à la communauté.",
+    "userGuidesCta": "Voir les guides",
+    "devGuidesTitle": "Guides développeur",
+    "devGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions n'y sont pas, vous pouvez toujours demander à la communauté.",
+    "devGuidesCta": "Voir les guides"
+  }
+}

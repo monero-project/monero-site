@@ -1,0 +1,43 @@
+{
+  "index": {
+    "hero": {
+      "titleMonero": "Monero",
+      "titleMeans": "Significa",
+      "titleMoney": "Dinero",
+      "lead": "Criptomoneda privada y descentralizada que mantiene tus finanzas confidenciales y seguras.",
+      "getStarted": "Comenzar",
+      "learnMore": "Saber más"
+    },
+    "aboutTitle": "Acerca de Monero",
+    "aboutDescription": "Mira este video para entender los conceptos básicos de cómo funciona Monero. Para una comprensión más profunda de la tecnología detrás de Monero, mira más videos explicativos.",
+    "main": "Privacidad",
+    "privacyText": "Monero respeta la privacidad al proporcionar anonimato total y transacciones no rastreables para los usuarios.",
+    "decentralized": "Descentralizado",
+    "decentralizedText": "Con más de 2300 nodos, Monero es una de las criptomonedas más descentralizadas que existen.",
+    "communityDriven": "Impulsado por la comunidad",
+    "communityText": "Monero es desarrollado y evolucionado por su comunidad, más de 500 desarrolladores han contribuido al proyecto.",
+    "startTitle": "Comienza a usar Monero",
+    "startDescription": "Sigue estos pasos para comenzar con Monero. Si eres nuevo en cripto, te recomendamos aprender las medidas básicas de seguridad que puedes tomar para mantener tus fondos seguros.",
+    "getStartedAlt": "Ilustración para comenzar",
+    "step1Title": "Elige una billetera",
+    "step1Desc": "Para usar Monero, lo primero que vas a necesitar es una billetera. Visita nuestra página de Descargas y obtén la billetera adecuada para ti.",
+    "step1Cta": "Obtén una billetera",
+    "step2Title": "Obtén monedas",
+    "step2Desc": "Puedes adquirir Monero minando o trabajando a cambio de Monero, pero la forma más fácil es usar un intercambio para convertir tu dinero fiduciario en XMR.",
+    "step2Cta": "Encuentra e intercambia",
+    "step3Title": "Envía Monero",
+    "step3Desc": "Una vez que Monero esté en tu billetera, puedes intercambiarlo por bienes, servicios y otras monedas, de forma privada y con tarifas muy bajas.",
+    "step3Cta": "Usa Monero",
+    "resourcesTitle": "Recursos de Monero",
+    "resourcesDescription": "Explora la base de conocimientos para aprender todo sobre Monero, desde términos básicos de blockchain hasta mecanismos de privacidad avanzados y tecnología.",
+    "faqTitle": "Preguntas frecuentes",
+    "faqDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntarle a la comunidad.",
+    "faqCta": "Encuentra tu respuesta",
+    "userGuidesTitle": "Guías de usuario",
+    "userGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntarle a la comunidad.",
+    "userGuidesCta": "Ver las guías",
+    "devGuidesTitle": "Guías para desarrolladores",
+    "devGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntarle a la comunidad.",
+    "devGuidesCta": "Ver las guías"
+  }
+}

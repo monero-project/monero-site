@@ -1,131 +1,136 @@
 ---
 import NavItem from "../ui/header/NavItem.astro";
-import Icon from "../ui/Icon.astro";
+import LanguageDropdown from "../ui/header/LanguageDropdown.astro";
 import placeholder from '../../assets/placeholder.avif?url';
-import Globe from '../../assets/icons/globe.avif?url';
+import MoneroLogo from "@/../public/meta/favicon-32x32.png?url"
+import { getLocale } from 'astro-i18n-aut';
+import { localizeHref } from '../../i18n/utils';
+
+const { t } = Astro.props;
+const locale = getLocale(Astro.url);
 
 const leftNav = [
   {
-    label: "Get started",
+    label: t('header.nav.getStarted', { ns: 'common' }),
     dropdown: [
       {
-        label: "What is Monero?",
-        desc: "Everything you need to know about Monero in a nutshell.",
-        href: "/get-started/what-is-monero",
+        label: t('header.dropdowns.getStarted.whatIsMonero.label', { ns: 'common' }),
+        desc: t('header.dropdowns.getStarted.whatIsMonero.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/get-started/what-is-monero"),
         image: placeholder,
       },
       {
-        label: "Accept Monero",
-        desc: "Learn how to accept XMR as a merchant or individual.",
-        href: "/get-started/accept-monero",
+        label: t('header.dropdowns.getStarted.acceptMonero.label', { ns: 'common' }),
+        desc: t('header.dropdowns.getStarted.acceptMonero.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/get-started/accept-monero"),
         image: placeholder,
       },
       {
-        label: "Contribute",
-        desc: "Help the Monero project bring privacy to everyone.",
-        href: "/get-started/contribute",
+        label: t('header.dropdowns.getStarted.contribute.label', { ns: 'common' }),
+        desc: t('header.dropdowns.getStarted.contribute.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/get-started/contribute"),
         image: placeholder,
       },
       {
-        label: "Mining",
-        desc: "Learn how to mine Monero on your computer.",
-        href: "/get-started/mining",
+        label: t('header.dropdowns.getStarted.mining.label', { ns: 'common' }),
+        desc: t('header.dropdowns.getStarted.mining.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/get-started/mining"),
         image: placeholder,
       },
       {
-        label: "FAQ",
-        desc: "Find answers to common questions about Monero.",
-        href: "/get-started/faq",
+        label: t('header.dropdowns.getStarted.faq.label', { ns: 'common' }),
+        desc: t('header.dropdowns.getStarted.faq.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/get-started/faq"),
         image: placeholder,
       },
     ],
   },
-  { label: "Downloads", href: "/downloads" },
-  { label: "Blog", href: "/blog" },
+  { label: t('header.nav.downloads', { ns: 'common' }), href: localizeHref(locale, "/downloads") },
+  { label: t('header.nav.blog', { ns: 'common' }), href: localizeHref(locale, "/blog") },
   {
-    label: "Community",
+    label: t('header.nav.community', { ns: 'common' }),
     dropdown: [
       {
-        label: "Workgroups",
-        desc: "Everything you need to know about Monero in a nutshell.",
-        href: "/community/workgroups",
+        label: t('header.dropdowns.community.workgroups.label', { ns: 'common' }),
+        desc: t('header.dropdowns.community.workgroups.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/community/workgroups"),
         image: placeholder,
       },
       {
-        label: "Sponsorships",
-        desc: "Discover the ways you can help the Monero project to bring privacy to everyone.",
-        href: "/community/sponsorships",
+        label: t('header.dropdowns.community.sponsorships.label', { ns: 'common' }),
+        desc: t('header.dropdowns.community.sponsorships.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/community/sponsorships"),
         image: placeholder,
       },
       {
-        label: "Hangouts",
-        desc: "Learn how to accept XMR as a merchant or individual with wallet software.",
-        href: "/community/hangouts",
+        label: t('header.dropdowns.community.hangouts.label', { ns: 'common' }),
+        desc: t('header.dropdowns.community.hangouts.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/community/hangouts"),
         image: placeholder,
       },
       {
-        label: "Merchants and exchanges",
-        desc: "Everything you need to know about Monero in a nutshell.",
-        href: "/community/merchants",
+        label: t('header.dropdowns.community.merchants.label', { ns: 'common' }),
+        desc: t('header.dropdowns.community.merchants.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/community/merchants"),
         image: placeholder,
       },
     ],
   },
   {
-    label: "Resources",
+    label: t('header.nav.resources', { ns: 'common' }),
     dropdown: [
       {
-        label: "Knowledge Base",
-        desc: "Books, publications, magazines, Moneropedia.",
-        href: "/resources/knowledge-base",
+        label: t('header.dropdowns.resources.knowledgeBase.label', { ns: 'common' }),
+        desc: t('header.dropdowns.resources.knowledgeBase.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/resources/knowledge-base"),
         image: placeholder,
       },
       {
-        label: "Roadmap",
-        desc: "Stay up to date with the latest Monero development plans and progress.",
-        href: "/resources/roadmap",
+        label: t('header.dropdowns.resources.roadmap.label', { ns: 'common' }),
+        desc: t('header.dropdowns.resources.roadmap.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/resources/roadmap"),
         image: placeholder,
       },
       {
-        label: "Research Lab",
-        desc: "Discover the ways you can help the Monero project to bring privacy to everyone.",
-        href: "/resources/research-lab",
+        label: t('header.dropdowns.resources.researchLab.label', { ns: 'common' }),
+        desc: t('header.dropdowns.resources.researchLab.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/resources/research-lab"),
         image: placeholder,
       },
       {
-        label: "User Guides",
-        desc: "Comprehensive guides to help you use Monero effectively and securely.",
-        href: "/resources/user-guides",
+        label: t('header.dropdowns.resources.userGuides.label', { ns: 'common' }),
+        desc: t('header.dropdowns.resources.userGuides.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/resources/user-guides"),
         image: placeholder,
       },
       {
-        label: "Developer Guides",
-        desc: "Find answers to recurring questions and concrns about Monero.",
-        href: "/resources/developer-guides",
+        label: t('header.dropdowns.resources.developerGuides.label', { ns: 'common' }),
+        desc: t('header.dropdowns.resources.developerGuides.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/resources/developer-guides"),
         image: placeholder,
       },
       {
-        label: "Monero Tools",
-        desc: "A curated list of tools and software for Monero users and developers.",
-        href: "/resources/monero-tools",
+        label: t('header.dropdowns.resources.moneroTools.label', { ns: 'common' }),
+        desc: t('header.dropdowns.resources.moneroTools.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/resources/monero-tools"),
         image: placeholder,
       },
       {
-        label: "Press Kit",
-        desc: "Press contacts, logos, images, and other media resources.",
-        href: "/resources/press-kit",
+        label: t('header.dropdowns.resources.pressKit.label', { ns: 'common' }),
+        desc: t('header.dropdowns.resources.pressKit.desc', { ns: 'common' }),
+        href: localizeHref(locale, "/resources/press-kit"),
         image: placeholder,
       },
     ],
   },
-  { label: "Crowdfunding", href: "https://ccs.getmonero.org" },
+  { label: t('header.nav.crowdfunding', { ns: 'common' }), href: "https://ccs.getmonero.org" },
 ];
 ---
 
 <header class="header">
   <div class="bar">
-    <a class="brand" href="/">
-      <span class="mark" aria-hidden="true">M</span>
+    <a class="brand" href={localizeHref(locale, "/")}>
+      <img class="mark" src="/meta/favicon-32x32.png" alt="Monero" />
       <span class="word">MONERO</span>
     </a>
 
@@ -149,10 +154,10 @@ const leftNav = [
     </nav>
 
     <label for="nav-toggle" class="scrim" aria-hidden="true"></label>
-
-    <a class="lang" href="#" aria-label="Change language">
-      <Icon src={Globe} size="1.25rem" />
-    </a>
+    <div class="lang">
+      <LanguageDropdown />
+    </div>
+    
   </div>
 </header>
 

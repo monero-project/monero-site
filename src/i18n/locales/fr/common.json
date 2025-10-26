@@ -1,0 +1,139 @@
+{
+  "header": {
+    "nav": {
+      "getStarted": "Commencer",
+      "downloads": "Téléchargements",
+      "blog": "Blog",
+      "community": "Communauté",
+      "resources": "Ressources",
+      "crowdfunding": "Financement participatif"
+    },
+    "dropdowns": {
+      "getStarted": {
+        "whatIsMonero": {
+          "label": "Qu'est-ce que Monero ?",
+          "desc": "Tout ce que vous devez savoir sur Monero en un mot."
+        },
+        "acceptMonero": {
+          "label": "Accepter Monero",
+          "desc": "Apprenez à accepter XMR en tant que commerçant ou individu."
+        },
+        "contribute": {
+          "label": "Contribuer",
+          "desc": "Aidez le projet Monero à apporter la confidentialité à tous."
+        },
+        "mining": {
+          "label": "Minage",
+          "desc": "Apprenez à miner Monero sur votre ordinateur."
+        },
+        "faq": {
+          "label": "FAQ",
+          "desc": "Trouvez des réponses aux questions courantes sur Monero."
+        }
+      },
+      "community": {
+        "workgroups": {
+          "label": "Groupes de travail",
+          "desc": "Tout ce que vous devez savoir sur Monero en un mot."
+        },
+        "sponsorships": {
+          "label": "Parrainages",
+          "desc": "Découvrez les moyens d'aider le projet Monero à apporter la confidentialité à tous."
+        },
+        "hangouts": {
+          "label": "Rencontres",
+          "desc": "Apprenez à accepter XMR en tant que commerçant ou individu avec un logiciel de portefeuille."
+        },
+        "merchants": {
+          "label": "Commerçants et échanges",
+          "desc": "Tout ce que vous devez savoir sur Monero en un mot."
+        }
+      },
+      "resources": {
+        "knowledgeBase": {
+          "label": "Base de connaissances",
+          "desc": "Livres, publications, magazines, Moneropedia."
+        },
+        "roadmap": {
+          "label": "Feuille de route",
+          "desc": "Restez à jour avec les derniers plans et progrès de développement de Monero."
+        },
+        "researchLab": {
+          "label": "Laboratoire de recherche",
+          "desc": "Découvrez les moyens d'aider le projet Monero à apporter la confidentialité à tous."
+        },
+        "userGuides": {
+          "label": "Guides utilisateur",
+          "desc": "Guides complets pour vous aider à utiliser Monero efficacement et en toute sécurité."
+        },
+        "developerGuides": {
+          "label": "Guides développeur",
+          "desc": "Trouvez des réponses aux questions et préoccupations récurrentes sur Monero."
+        },
+        "moneroTools": {
+          "label": "Outils Monero",
+          "desc": "Une liste organisée d'outils et de logiciels pour les utilisateurs et développeurs Monero."
+        },
+        "pressKit": {
+          "label": "Kit presse",
+          "desc": "Contacts presse, logos, images et autres ressources médias."
+        }
+      }
+    }
+  },
+  "footer": {
+    "columns": {
+      "resources": {
+        "title": "Ressources",
+        "links": {
+          "knowledgeBase": "Base de connaissances",
+          "developerGuides": "Guides développeur",
+          "userGuides": "Guides utilisateur",
+          "downloads": "Téléchargements"
+        }
+      },
+      "reachOut": {
+        "title": "Contactez-nous",
+        "links": {
+          "workgroups": "Groupes de travail",
+          "hangouts": "Rencontres",
+          "mailingList": "Liste de diffusion"
+        }
+      },
+      "community": {
+        "title": "Communauté",
+        "links": {
+          "merchants": "Commerçants & Échanges",
+          "stackExchange": "Stack Exchange",
+          "bitcoinTalk": "Bitcoin Talk",
+          "weblate": "Weblate"
+        }
+      },
+      "theMoneroProject": {
+        "title": "Le Projet Monero",
+        "links": {
+          "openAlias": "Open Alias",
+          "moneroResearchLab": "Laboratoire de Recherche Monero (MRL)",
+          "pressKit": "Kit presse",
+          "communityCrowdfundingSystem": "Système de Financement Participatif Communautaire"
+        }
+      },
+      "legal": {
+        "title": "Légal",
+        "links": {
+          "privacyPolicy": "Politique de confidentialité",
+          "termsOfUse": "Conditions d'utilisation"
+        }
+      }
+    },
+    "bottomLinks": {
+      "torOnionService": "Service Onion Tor",
+      "vulnerabilityResponse": "Réponse aux vulnérabilités",
+      "legal": "Légal",
+      "sourceCode": "Code source",
+      "sitemap": "Plan du site",
+      "rssFeed": "Flux RSS"
+    },
+    "copyright": "© 2025 Monero. Tous droits réservés."
+  }
+}

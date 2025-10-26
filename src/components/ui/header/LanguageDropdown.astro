@@ -1,0 +1,164 @@
+---
+// LanguageDropdown.astro (drop-in)
+import { getLocale } from 'astro-i18n-aut';
+import { locales } from '@/i18n/config';
+import { getLocaleInfo } from '@/i18n/utils';
+import Icon from '../Icon.astro';
+import Globe from '@/assets/icons/globe.avif?url';
+
+const currentLocale = getLocale(Astro.url);
+
+const localeList = Object.keys(locales).map(code => {
+  const { name = code, emoji = '' } = getLocaleInfo(code) ?? {};
+  return { code, name, emoji };
+});
+
+const codes = Object.keys(locales).join('|');
+
+const core = Astro.url.pathname
+  .replace(new RegExp(`^/(?:${codes})(?=/|$)`), '')
+  .replace(/^\/|\/$/g, '');
+
+const base = core ? `/${core}/` : '/';
+
+// Locale-aware href
+const hrefFor = (locale: string) => (locale === 'en' ? base : `/${locale}${base}`);
+---
+
+<div class="lang-container">
+  <input id="lang-dd" class="dd-toggle" type="checkbox" aria-hidden="true" />
+
+  <label for="lang-dd" class="lang" aria-label="Change language">
+    <Icon src={Globe} size="1.25rem" />
+  </label>
+
+  <!-- Click-away cover -->
+  <label for="lang-dd" class="mobile-cover" aria-hidden="true"></label>
+
+  <div class="lang-dropdown" role="menu" aria-label="Languages menu">
+    <ul class="lang-list" role="listbox">
+      {localeList.map((locale) => (
+        <li role="option" aria-selected={locale.code === currentLocale}>
+          <a
+            href={hrefFor(locale.code)}
+            class={locale.code === currentLocale ? 'active' : ''}
+            aria-current={locale.code === currentLocale ? 'true' : undefined}
+          >
+            {locale.emoji} {locale.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<style>
+/* ===== Base / Desktop ===== */
+.lang-container {
+  position: relative;
+  display: inline-block;
+}
+.dd-toggle { display: none; }
+
+/* Globe trigger */
+.lang {
+  margin-left: auto;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.lang:hover { color: var(--on-dark); }
+.lang:focus,
+.lang:focus-visible { outline: none; }
+
+/* Panel (hidden by default) */
+.lang-dropdown {
+  position: absolute;     /* desktop: anchored to button */
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--card-color);
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  z-index: 1100;
+  min-width: 140px;
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+}
+
+/* Items */
+.lang-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.lang-list li { margin: 0; }
+.lang-list a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: var(--heading-color);
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.lang-list a:hover,
+.lang-list a:focus { background: var(--card-hover-color); }
+.lang-list a.active { font-weight: 600; background: var(--card-hover-color); }
+
+/* Click-away cover */
+.mobile-cover {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: 1090; /* under dropdown */
+  cursor: default;
+}
+
+/* Open state */
+#lang-dd:checked ~ .lang-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+#lang-dd:checked ~ .mobile-cover { display: block; }
+#lang-dd:checked + .lang { color: var(--on-dark); }
+
+/* ===== Mobile: dock to sticky header, full-bleed, scrollable ===== */
+@media (max-width: 900px) {
+  /* ensure dropdown anchors to .header (sticky) instead of button */
+  .lang-container { position: static; }
+
+  .lang-dropdown {
+    position: absolute;
+    top: 100%;          /* directly below header bottom */
+    /* full-bleed across viewport regardless of header padding */
+    left: 50vw; right: 50vw; margin-left: -50vw; margin-right: -50vw; width: 100vw;
+
+    border-radius: 0;
+    margin-top: 0;
+    padding: 0.5rem 0;
+
+    max-height: 75dvh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .lang-list {
+    padding: 0.25rem max(0.75rem, env(safe-area-inset-left)) 0.5rem max(0.75rem, env(safe-area-inset-right));
+    gap: 0.25rem;
+  }
+
+  .lang-list a { padding: 0.75rem; } /* larger tap targets */
+  .lang { padding: 0.5rem 0; }
+}
+</style>

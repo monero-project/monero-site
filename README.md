@@ -1,36 +1,46 @@
-# Astro Starter Kit: Basics
+# Monero Site Redesign in Astro
 
-```sh
-pnpm create astro@latest -- --template basics
+This is a work-in-progress (WIP) implementation of the planned Monero page redesign, built with Astro.
+
+## Features
+
+- **Astro**: Static site generation for no JavaScript, optimal performance and SEO.
+- **Internationalization (i18n)**: Dynamically generated multi-language pages with namespace support. Weblate friendly (i18next)
+- **Responsive Design**: Modern CSS for a desktop and mobile-friendly experience.
+- **Component-Based Architecture**: Reusable Astro components for Hero, Header, Footer, and page sections.
+
+## Project Structure
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│   └── media/            # Videos, images
+├── src/
+│   ├── components/       # Reusable Astro components
+│   │   ├── layout/       # Header, Footer
+│   │   ├── pages/        # Page-specific components (something that is only used on one page)
+│   │   └── ui/           # UI components (buttons, cards, etc.)
+│   ├── i18n/             # Internationalization setup
+│   │   ├── locales/      # Translation JSON files
+│   │   ├── config.ts     # Locale configuration
+│   │   └── utils.ts      # i18n utilities
+│   ├── layouts/          # Astro layouts
+│   ├── pages/            # Route pages
+│   └── styles/           # Global CSS variables
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Next steps
 
-## 🧞 Commands
+- [ ] Set up Weblate for community translations
+- [ ] Add icons in place of placeholders
+- [ ] Add RSS feed generation
+- [ ] Create components for page content
+- [ ] Add localized blog content support
 
-All commands are run from the root of the project, from a terminal:
+## Commands
+
+All commands are run from the root of the project:
 
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
@@ -41,6 +51,15 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Tips
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+If you'd like to support my development effort, consider sending a tip to the Monero address below:
+```
+8A2z3j3zTU39vJSp1zCAnP2HuzyX31Zg8AtvcZp6GF2QXT1LMuoMyXqNXViMEqgVdcWHWGumB2buq2ZkNLiy4KFJMeLxPx5
+```
+
+## More
+
+- [Astro Documentation](https://docs.astro.build)
+- [Monero Project](https://www.getmonero.org)
+- [Diego's Figma](https://www.figma.com/design/OuY892nD4zD1CEQDvC2Kty/Monero-Website-Redesign-2024--Copy-?node-id=112-1178&t=Bfi1eK3wLkZeoNXG-0)

@@ -1,17 +1,21 @@
+---
+const { t } = Astro.props;
+---
+
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <h1 id="hero-title" class="title">
-      <span class="accent">Monero</span><br />
-      <span class="plain">Means</span> <span class="accent">Money</span>
+      <span class="accent">{t('index.hero.titleMonero')}</span><br />
+      <span class="plain">{t('index.hero.titleMeans')}</span> <span class="accent">{t('index.hero.titleMoney')}</span>
     </h1>
 
     <p class="lead">
-      Private, decentralized cryptocurrency that keeps your finances confidential and secure.
+      {t('index.hero.lead')}
     </p>
 
     <div class="actions">
-      <a class="btn primary" href="#get-started">Get started</a>
-      <a class="btn ghost" href="#learn-more">Learn more</a>
+      <a class="btn primary" href="#get-started">{t('index.hero.getStarted')}</a>
+      <a class="btn ghost" href="#learn-more">{t('index.hero.learnMore')}</a>
     </div>
   </div>
 </section>
