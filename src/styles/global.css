@@ -39,3 +39,11 @@
     --border-color: #36343b;
   }
 }
+
+body,
+div,
+article {
+  .__ns__pop2top {
+    z-index: unset !important;
+  }
+}

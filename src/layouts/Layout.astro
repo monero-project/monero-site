@@ -12,70 +12,56 @@ const t = await createTInstance(lang);
 
 <!doctype html>
 <html lang={lang}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
-    <title>Home | Monero - secure, private, untraceable cryptocurrency.</title>
-  </head>
-  <body>
-    <div class="page">
-      <Header t={t} />
-      <div class="content">
-        <main>
-          <slot />
-        </main>
-      </div>
-      <Footer t={t} />
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+		<title>Home | Monero - secure, private, untraceable cryptocurrency.</title>
+	</head>
+	<body>
+		<Header t={t}/>
+		<main>
+			<slot />
+		</main>
+		<Footer t={t}/>
+	</body>
 </html>
 
 <style>
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg-color: #171717;
-      --text-color: #ffffff;
-    }
-  }
+	:root {
+		--bg-color: #ffffff;
+		--text-color: #000000;
+	}
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--bg-color: #171717;
+			--text-color: #ffffff;
+		}
+	}
 
-  html, body {
-    margin: 0;
-    height: 100%;
-  }
+	html,
+	body {
+		margin: 0;
+		width: 100vw;
+		min-height: 100vh;
+		font-family: 'DM Sans Variable', sans-serif;
+		background-color: var(--bg-color);
+		color: var(--text-color);
+		display: flex;
+		flex-direction: column;
+	}
 
-  body {
-    width: 100%;
-    min-height: 100vh;
-    font-family: 'DM Sans Variable', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
+	main {
+		padding: var(--default-padding);
+		flex: 1;
+	}
 
-  .page {
-    min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content {
-    flex: 1;
-    display: block;
-  }
-
-  main {
-    padding: var(--default-padding);
-  }
-  @media (max-width: 600px) {
-    main {
-      padding: var(--mobile-padding);
-    }
-  }
+	@media (max-width: 600px) {
+		main {
+			padding: var(--mobile-padding);
+		}
+	}
 </style>
