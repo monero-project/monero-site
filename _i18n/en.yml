@@ -958,6 +958,8 @@ library:
     Written by escapethe3RA, this publication covers news related to Monero's ongoing development, community events, and notable achievements within the space.
   moneroobserver: >
     An independent resource created by escapethe3ra, Monero Observer delivers daily coverage of Monero’s latest developments. It also offers a wide range of resources, practical guides and weekly or monthly highlights to help the community stay up to date.
+  twim: >
+    Weekly insights and updates from the Monero ecosystem. Stay informed on the latest developments, news, and analysis in the world of private digital currency.
 moneropedia:
   description: >
     The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order.

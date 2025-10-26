@@ -51,6 +51,8 @@ meta_descr: library.description
                   <p>{% t library.moneroobserver %}</p>
                 <h3><a href="https://revuo-xmr.com/">Revuo Monero</a></h3>
                   <p>{% t library.revuomonero %}</p>
+                <h3><a href="https://cyphergoat.com/this-week-in-monero">This week in Monero</a></h3>
+                  <p>{% t library.twim %}</p>
                 <h3><a href="https://localmonero.co/the-monero-standard">The Monero Standard</a></h3>
                   <p>{% t library.themonerostandard %}</p>
             </div>
