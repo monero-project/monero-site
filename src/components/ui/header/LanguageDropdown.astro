@@ -2,15 +2,15 @@
 // LanguageDropdown.astro (drop-in)
 import { getLocale } from 'astro-i18n-aut';
 import { locales } from '@/i18n/config';
-import { getLocaleInfo } from '@/i18n/utils';
+import { getLocaleName } from '@/i18n/utils';
 import Icon from '../Icon.astro';
 import Globe from '@/assets/icons/globe.avif?url';
 
 const currentLocale = getLocale(Astro.url);
 
 const localeList = Object.keys(locales).map(code => {
-  const { name = code, emoji = '' } = getLocaleInfo(code) ?? {};
-  return { code, name, emoji };
+  const { name = code } = getLocaleName(code) ?? {};
+  return { code, name };
 });
 
 const codes = Object.keys(locales).join('|');
@@ -44,7 +44,7 @@ const hrefFor = (locale: string) => (locale === 'en' ? base : `/${locale}${base}
             class={locale.code === currentLocale ? 'active' : ''}
             aria-current={locale.code === currentLocale ? 'true' : undefined}
           >
-            {locale.emoji} {locale.name}
+            {locale.name}
           </a>
         </li>
       ))}
