@@ -31,11 +31,11 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
           <span class="link" role="link" tabindex="0">{label}</span>
         )}
 
-        <label for={id} class="caret" aria-label={`Toggle ${label} menu`}>
+        <span class="caret" aria-hidden="true">
           <Icon src={dropdownCaret} />
-        </label>
+        </span>
 
-        <label for={id} class="mobile-cover" aria-hidden="true" />
+        <label for={id} class="mobile-cover" aria-label={`Toggle ${label} menu`} />
       </div>
 
       <div class="dropdown" role="menu" aria-label={`${label} menu`}>
@@ -137,6 +137,10 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     }
     .has-dd:is(:hover, :has(.dropdown :focus)) > .row > .link {
       color: var(--heading-color);
+    }
+    /* rotate caret on hover open */
+    .has-dd:is(:hover, :has(.dropdown :focus)) > .row > .caret {
+      transform: rotate(180deg);
     }
     .mobile-cover { pointer-events: none; }
   }
