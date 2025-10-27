@@ -32,13 +32,12 @@ const hrefFor = (locale: string) => (locale === 'en' ? base : `/${locale}${base}
     <Icon src={Globe} size="1.25rem" />
   </label>
 
-  <!-- Click-away cover -->
   <label for="lang-dd" class="mobile-cover" aria-hidden="true"></label>
 
-  <div class="lang-dropdown" role="menu" aria-label="Languages menu">
-    <ul class="lang-list" role="listbox">
+  <div class="lang-dropdown" aria-label="Languages">
+    <ul class="lang-list">
       {localeList.map((locale) => (
-        <li role="option" aria-selected={locale.code === currentLocale}>
+        <li>
           <a
             href={hrefFor(locale.code)}
             class={locale.code === currentLocale ? 'active' : ''}
