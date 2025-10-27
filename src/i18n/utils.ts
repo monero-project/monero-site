@@ -30,8 +30,8 @@ export const createTInstance = (locale: string) => {
     ns: ['common', 'translation'],
     defaultNS: 'translation',
     backend: {
-      loadPath: './src/i18n/locales/{{lng}}/{{ns}}.json',
+      loadPath: './src/i18n/translations/{{lng}}/{{ns}}.json',
     },
   });
 }
-export { getLocale}
+export { getLocale }
