@@ -1,8 +1,8 @@
 ---
 import Header from "../components/layout/Header.astro"
 import Footer from "../components/layout/Footer.astro"
+import dmSansFont from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url';
 import '../styles/global.css';
-import '@fontsource-variable/dm-sans';
 import { getLocale } from 'astro-i18n-aut';
 import { createTInstance } from '../i18n/utils';
 
@@ -17,8 +17,9 @@ const t = await createTInstance(lang);
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png" />
-		<meta name="generator" content={Astro.generator} />
+		<link rel="preload" as="font" type="font/woff2" href={dmSansFont} crossorigin="anonymous" />
 		<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+		<meta name="generator" content={Astro.generator} />
 		<title>Home | Monero - secure, private, untraceable cryptocurrency.</title>
 	</head>
 	<body>
@@ -45,7 +46,6 @@ const t = await createTInstance(lang);
 	html,
 	body {
 		margin: 0;
-		width: 100vw;
 		min-height: 100vh;
 		font-family: 'DM Sans Variable', sans-serif;
 		background-color: var(--bg-color);
