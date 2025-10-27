@@ -28,7 +28,7 @@ const locale = getLocale(Astro.url);
   <div class="num" aria-hidden="true">{String(step).padStart(2, "0")}</div>
 
   <div class="text">
-    <h3 id="gs-title" class="title">{title}</h3>
+    <h2 id="gs-title" class="title">{title}</h2>
     {description && <p class="desc">{description}</p>}
     <a class="cta" href={localizeHref(locale, ctaHref)}>
       {ctaLabel}
