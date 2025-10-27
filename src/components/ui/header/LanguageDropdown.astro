@@ -1,5 +1,4 @@
 ---
-// LanguageDropdown.astro (drop-in)
 import { getLocale } from 'astro-i18n-aut';
 import { locales } from '@/i18n/config';
 import { getLocaleName } from '@/i18n/utils';
@@ -21,7 +20,6 @@ const core = Astro.url.pathname
 
 const base = core ? `/${core}/` : '/';
 
-// Locale-aware href
 const hrefFor = (locale: string) => (locale === 'en' ? base : `/${locale}${base}`);
 ---
 
@@ -31,8 +29,6 @@ const hrefFor = (locale: string) => (locale === 'en' ? base : `/${locale}${base}
   <label for="lang-dd" class="lang" aria-label="Change language">
     <Icon src={Globe} size="1.25rem" />
   </label>
-
-  <label for="lang-dd" class="mobile-cover" aria-hidden="true"></label>
 
   <div class="lang-dropdown" aria-label="Languages">
     <ul class="lang-list">
