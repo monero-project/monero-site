@@ -54,6 +54,7 @@ All commands are run from the root of the project:
 ## Tips
 
 If you'd like to support my development effort, consider sending a tip to the Monero address below:
+
 ```
 8A2z3j3zTU39vJSp1zCAnP2HuzyX31Zg8AtvcZp6GF2QXT1LMuoMyXqNXViMEqgVdcWHWGumB2buq2ZkNLiy4KFJMeLxPx5
 ```
