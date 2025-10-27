@@ -5,7 +5,7 @@ import IndexCard from "../components/pages/index/IndexCard.astro";
 import GetStartedCard from "../components/pages/index/GetStartedCard.astro";
 import ResourceCard from "../components/pages/index/ResourceCard.astro";
 import placeholder from "../assets/placeholder.avif?url";
-import { createTInstance, getLocale } from "@/i18n/utils";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
@@ -85,21 +85,21 @@ const t = await createTInstance(locale);
         title={t("index.faqTitle")}
         description={t("index.faqDesc")}
         ctaLabel={t("index.faqCta")}
-        ctaHref="#"
+        ctaHref={localizeHref(locale, "/get-started/faq")}
         icon={placeholder}
       />
       <ResourceCard
         title={t("index.userGuidesTitle")}
         description={t("index.userGuidesDesc")}
         ctaLabel={t("index.userGuidesCta")}
-        ctaHref="#"
+        ctaHref={localizeHref(locale, "/resources/user-guides")}
         icon={placeholder}
       />
       <ResourceCard
         title={t("index.devGuidesTitle")}
         description={t("index.devGuidesDesc")}
         ctaLabel={t("index.devGuidesCta")}
-        ctaHref="#"
+        ctaHref={localizeHref(locale, "/resources/developer-guides")}
         icon={placeholder}
       />
     </div>

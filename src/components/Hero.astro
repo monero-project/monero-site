@@ -1,5 +1,7 @@
 ---
+import { getLocale, localizeHref } from "@/i18n/utils";
 const { t } = Astro.props;
+const locale = getLocale(Astro.url);
 ---
 
 <div class="hero" aria-labelledby="hero-title">
@@ -14,8 +16,8 @@ const { t } = Astro.props;
     </p>
 
     <div class="actions">
-      <a class="btn primary" href="#get-started">{t('index.hero.getStarted')}</a>
-      <a class="btn ghost" href="#learn-more">{t('index.hero.learnMore')}</a>
+      <a class="btn primary" href={localizeHref(locale, "/get-started/what-is-monero")}>{t('index.hero.getStarted')}</a>
+      <a class="btn ghost" href={localizeHref(locale, "/resources/knowledge-base")}>{t('index.hero.learnMore')}</a>
     </div>
   </div>
 </div>
