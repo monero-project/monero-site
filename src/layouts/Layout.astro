@@ -9,6 +9,7 @@ import { createTInstance } from '../i18n/utils';
 
 const lang = getLocale(Astro.url) || 'en';
 const t = await createTInstance(lang);
+const title = Astro.props.title;
 ---
 
 <!doctype html>
@@ -21,7 +22,7 @@ const t = await createTInstance(lang);
 		<link rel="preload" as="font" type="font/woff2" href={dmSansFont} crossorigin="anonymous" />
 		<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Home | Monero - secure, private, untraceable cryptocurrency.</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<Header t={t}/>
