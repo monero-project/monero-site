@@ -1,75 +1,75 @@
 ---
 export interface Props {
-    title: string;
-    description?: string;
-    id?: string;
+  title: string;
+  description?: string;
+  id?: string;
 }
 
 const {
-    title,
-    description = "",
-    id = "card-" + Math.random().toString(36).slice(2),
+  title,
+  description = "",
+  id = "card-" + Math.random().toString(36).slice(2),
 } = Astro.props;
 ---
 
 <div class="card" aria-labelledby={id}>
-    <header class="head">
-        <h1 id={id} class="title">{title}</h1>
-        {description && <p class="desc">{description}</p>}
-    </header>
+  <header class="head">
+    <h1 id={id} class="title">{title}</h1>
+    {description && <p class="desc">{description}</p>}
+  </header>
 
-    <div class="body">
-        <slot />
-    </div>
+  <div class="body">
+    <slot />
+  </div>
 </div>
 
 <style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+  .head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 5rem;
+    align-items: start;
+  }
+  .title {
+    margin: 0;
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-title);
+    font-size: var(--font-size-3xl);
+    color: var(--heading-color);
+  }
+  .desc {
+    margin: 0;
+    line-height: var(--line-height-body);
+    color: var(--paragraph-main);
+    font-size: var(--font-size-lg);
+  }
+  .body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 5rem;
+    align-items: center;
+  }
+
+  /* stack on small screens */
+  @media (max-width: 900px) {
     .card {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding-block: 3rem;
+      gap: 1.25rem;
+      padding-block: 2rem;
     }
-    .head {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
-        gap: 5rem;
-        align-items: start;
-    }
-    .title {
-        margin: 0;
-        font-weight: var(--font-weight-bold);
-        line-height: var(--line-height-title);
-        font-size: var(--font-size-3xl);
-        color: var(--heading-color);
-    }
-    .desc {
-        margin: 0;
-        line-height: var(--line-height-body);
-        color: var(--paragraph-main);
-        font-size: var(--font-size-lg);
+    .head,
+    .body {
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
     .body {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
-        gap: 5rem;
-        align-items: center;
+      display: flex;
+      flex-direction: column-reverse;
     }
-
-    /* stack on small screens */
-    @media (max-width: 900px) {
-        .card {
-            gap: 1.25rem;
-            padding-block: 2rem;
-        }
-        .head,
-        .body {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-        .body {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-    }
+  }
 </style>

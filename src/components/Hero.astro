@@ -7,104 +7,144 @@ const locale = getLocale(Astro.url);
 <div class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <h1 id="hero-title" class="title">
-      <span class="accent">{t('index.hero.titleMonero')}</span><br />
-      <span class="plain">{t('index.hero.titleMeans')}</span> <span class="accent">{t('index.hero.titleMoney')}</span>
+      <span class="accent">{t("index.hero.titleMonero")}</span><br />
+      <span class="plain">{t("index.hero.titleMeans")}</span>
+      <span class="accent">{t("index.hero.titleMoney")}</span>
     </h1>
 
     <p class="lead">
-      {t('index.hero.lead')}
+      {t("index.hero.lead")}
     </p>
 
     <div class="actions">
-      <a class="btn primary" href={localizeHref(locale, "/get-started/what-is-monero")}>{t('index.hero.getStarted')}</a>
-      <a class="btn ghost" href={localizeHref(locale, "/resources/knowledge-base")}>{t('index.hero.learnMore')}</a>
+      <a
+        class="btn primary"
+        href={localizeHref(locale, "/get-started/what-is-monero")}
+        >{t("index.hero.getStarted")}</a
+      >
+      <a
+        class="btn ghost"
+        href={localizeHref(locale, "/resources/knowledge-base")}
+        >{t("index.hero.learnMore")}</a
+      >
     </div>
   </div>
 </div>
 
 <style>
-:root{ --ink:#0b0b0f; --ghost:#2f2f38; --ghostText:#d9d9e1; }
-@media (prefers-color-scheme: dark){
-  :root{ --ink:#f5f5f7; }
-}
-
-/* ===== Hero ===== */
-.hero{
-  display:grid;
-  align-content:center;
-  min-height:clamp(520px, 86vh, 720px);
-  padding:clamp(2rem, 6vw, 6rem) clamp(1rem, 5vw, 5rem);
-}
-.wrap{
-  text-align:center;
-  max-width:56rem;
-  margin-inline:auto;
-  color:var(--ink);
-}
-
-/* Title scales smoothly from phones to desktop */
-.title{
-  margin:0 0 .75rem 0;
-  font-weight: var(--font-weight-extra-bold);
-  letter-spacing:-0.015em;
-  line-height: var(--line-height-title);
-  font-size:clamp(2.5rem, 7vw, 4rem);
-}
-.accent{ color:var(--monero-orange); }
-.plain { color:var(--ink); }
-
-/* Lead copy stays readable and narrow */
-.lead{
-  margin:0 auto 1.5rem;
-  max-width:60ch;
-  line-height: var(--line-height-body);
-  font-size: var(--font-size-lg);
-  opacity:.9;
-}
-
-/* Actions: flex column on small, row on larger */
-.actions{
-  display:flex;
-  flex-direction:column;
-  gap:.75rem;
-  justify-content:center;
-  align-items:center;
-  margin-top:.5rem;
-}
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:.75rem 1.25rem;
-  border-radius:999px;
-  font-weight:700;
-  text-decoration:none;
-  font-size:.95rem;
-  line-height:1;
-  transition:transform .08s ease, opacity .12s ease;
-  width:100%;                /* full-width on mobile for easy tapping */
-  max-width:22rem;           /* but not absurdly wide */
-}
-.btn:hover,.btn:focus{ opacity:.92; outline:none; }
-.btn:active{ transform:translateY(1px); }
-.primary{ background:var(--monero-orange); color:#fff; }
-.ghost{ background:var(--ghost); color:var(--ghostText); }
-
-/* Switch to horizontal buttons on wider screens */
-@media (min-width: 640px){
-  .actions{
-    flex-direction:row;
+  :root {
+    --ink: #0b0b0f;
+    --ghost: #2f2f38;
+    --ghostText: #d9d9e1;
   }
-  .btn{ width:auto; max-width:none; }
-}
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f5f5f7;
+    }
+  }
 
-/* Use dynamic viewport height if supported */
-@supports (height: 100dvh){
-  .hero{ min-height:clamp(520px, 86dvh, 720px); }
-}
+  /* ===== Hero ===== */
+  .hero {
+    display: grid;
+    align-content: center;
+    min-height: clamp(520px, 86vh, 720px);
+    padding: clamp(2rem, 6vw, 6rem) clamp(1rem, 5vw, 5rem);
+  }
+  .wrap {
+    text-align: center;
+    max-width: 56rem;
+    margin-inline: auto;
+    color: var(--ink);
+  }
 
-/* Respect motion prefs */
-@media (prefers-reduced-motion: reduce){
-  .btn{ transition:none; }
-}
+  /* Title scales smoothly from phones to desktop */
+  .title {
+    margin: 0 0 0.75rem 0;
+    font-weight: var(--font-weight-extra-bold);
+    letter-spacing: -0.015em;
+    line-height: var(--line-height-title);
+    font-size: clamp(2.5rem, 7vw, 4rem);
+  }
+  .accent {
+    color: var(--monero-orange);
+  }
+  .plain {
+    color: var(--ink);
+  }
+
+  /* Lead copy stays readable and narrow */
+  .lead {
+    margin: 0 auto 1.5rem;
+    max-width: 60ch;
+    line-height: var(--line-height-body);
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+  }
+
+  /* Actions: flex column on small, row on larger */
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1;
+    transition:
+      transform 0.08s ease,
+      opacity 0.12s ease;
+    width: 100%; /* full-width on mobile for easy tapping */
+    max-width: 22rem; /* but not absurdly wide */
+  }
+  .btn:hover,
+  .btn:focus {
+    opacity: 0.92;
+    outline: none;
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .primary {
+    background: var(--monero-orange);
+    color: #fff;
+  }
+  .ghost {
+    background: var(--ghost);
+    color: var(--ghostText);
+  }
+
+  /* Switch to horizontal buttons on wider screens */
+  @media (min-width: 640px) {
+    .actions {
+      flex-direction: row;
+    }
+    .btn {
+      width: auto;
+      max-width: none;
+    }
+  }
+
+  /* Use dynamic viewport height if supported */
+  @supports (height: 100dvh) {
+    .hero {
+      min-height: clamp(520px, 86dvh, 720px);
+    }
+  }
+
+  /* Respect motion prefs */
+  @media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+  }
 </style>

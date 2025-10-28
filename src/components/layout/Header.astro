@@ -1,135 +1,189 @@
 ---
 import NavItem from "../ui/header/NavItem.astro";
 import LanguageDropdown from "../ui/header/LanguageDropdown.astro";
-import placeholder from '../../assets/placeholder.avif?url';
-import { getLocale } from 'astro-i18n-aut';
-import { localizeHref } from '../../i18n/utils';
+import placeholder from "../../assets/placeholder.avif?url";
+import hamburger from "../../assets/icons/hamburger.avif?url";
+import Icon from "../ui/Icon.astro";
+import { getLocale } from "astro-i18n-aut";
+import { localizeHref } from "../../i18n/utils";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
 
 const leftNav = [
   {
-    label: t('header.nav.getStarted', { ns: 'common' }),
+    label: t("header.nav.getStarted", { ns: "common" }),
     dropdown: [
       {
-        label: t('header.dropdowns.getStarted.whatIsMonero.label', { ns: 'common' }),
-        desc: t('header.dropdowns.getStarted.whatIsMonero.desc', { ns: 'common' }),
+        label: t("header.dropdowns.getStarted.whatIsMonero.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.getStarted.whatIsMonero.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/get-started/what-is-monero"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.getStarted.acceptMonero.label', { ns: 'common' }),
-        desc: t('header.dropdowns.getStarted.acceptMonero.desc', { ns: 'common' }),
+        label: t("header.dropdowns.getStarted.acceptMonero.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.getStarted.acceptMonero.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/get-started/accept-monero"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.getStarted.contribute.label', { ns: 'common' }),
-        desc: t('header.dropdowns.getStarted.contribute.desc', { ns: 'common' }),
+        label: t("header.dropdowns.getStarted.contribute.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.getStarted.contribute.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/get-started/contribute"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.getStarted.mining.label', { ns: 'common' }),
-        desc: t('header.dropdowns.getStarted.mining.desc', { ns: 'common' }),
+        label: t("header.dropdowns.getStarted.mining.label", { ns: "common" }),
+        desc: t("header.dropdowns.getStarted.mining.desc", { ns: "common" }),
         href: localizeHref(locale, "/get-started/mining"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.getStarted.faq.label', { ns: 'common' }),
-        desc: t('header.dropdowns.getStarted.faq.desc', { ns: 'common' }),
+        label: t("header.dropdowns.getStarted.faq.label", { ns: "common" }),
+        desc: t("header.dropdowns.getStarted.faq.desc", { ns: "common" }),
         href: localizeHref(locale, "/get-started/faq"),
         image: placeholder,
       },
     ],
   },
-  { label: t('header.nav.downloads', { ns: 'common' }), href: localizeHref(locale, "/downloads") },
-  { label: t('header.nav.blog', { ns: 'common' }), href: localizeHref(locale, "/blog") },
   {
-    label: t('header.nav.community', { ns: 'common' }),
+    label: t("header.nav.downloads", { ns: "common" }),
+    href: localizeHref(locale, "/downloads"),
+  },
+  {
+    label: t("header.nav.blog", { ns: "common" }),
+    href: localizeHref(locale, "/blog"),
+  },
+  {
+    label: t("header.nav.community", { ns: "common" }),
     dropdown: [
       {
-        label: t('header.dropdowns.community.workgroups.label', { ns: 'common' }),
-        desc: t('header.dropdowns.community.workgroups.desc', { ns: 'common' }),
+        label: t("header.dropdowns.community.workgroups.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.community.workgroups.desc", { ns: "common" }),
         href: localizeHref(locale, "/community/workgroups"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.community.sponsorships.label', { ns: 'common' }),
-        desc: t('header.dropdowns.community.sponsorships.desc', { ns: 'common' }),
+        label: t("header.dropdowns.community.sponsorships.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.community.sponsorships.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/community/sponsorships"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.community.hangouts.label', { ns: 'common' }),
-        desc: t('header.dropdowns.community.hangouts.desc', { ns: 'common' }),
+        label: t("header.dropdowns.community.hangouts.label", { ns: "common" }),
+        desc: t("header.dropdowns.community.hangouts.desc", { ns: "common" }),
         href: localizeHref(locale, "/community/hangouts"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.community.merchants.label', { ns: 'common' }),
-        desc: t('header.dropdowns.community.merchants.desc', { ns: 'common' }),
+        label: t("header.dropdowns.community.merchants.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.community.merchants.desc", { ns: "common" }),
         href: localizeHref(locale, "/community/merchants"),
         image: placeholder,
       },
     ],
   },
   {
-    label: t('header.nav.resources', { ns: 'common' }),
+    label: t("header.nav.resources", { ns: "common" }),
     dropdown: [
       {
-        label: t('header.dropdowns.resources.knowledgeBase.label', { ns: 'common' }),
-        desc: t('header.dropdowns.resources.knowledgeBase.desc', { ns: 'common' }),
+        label: t("header.dropdowns.resources.knowledgeBase.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.resources.knowledgeBase.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/resources/knowledge-base"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.resources.roadmap.label', { ns: 'common' }),
-        desc: t('header.dropdowns.resources.roadmap.desc', { ns: 'common' }),
+        label: t("header.dropdowns.resources.roadmap.label", { ns: "common" }),
+        desc: t("header.dropdowns.resources.roadmap.desc", { ns: "common" }),
         href: localizeHref(locale, "/resources/roadmap"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.resources.researchLab.label', { ns: 'common' }),
-        desc: t('header.dropdowns.resources.researchLab.desc', { ns: 'common' }),
+        label: t("header.dropdowns.resources.researchLab.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.resources.researchLab.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/resources/research-lab"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.resources.userGuides.label', { ns: 'common' }),
-        desc: t('header.dropdowns.resources.userGuides.desc', { ns: 'common' }),
+        label: t("header.dropdowns.resources.userGuides.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.resources.userGuides.desc", { ns: "common" }),
         href: localizeHref(locale, "/resources/user-guides"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.resources.developerGuides.label', { ns: 'common' }),
-        desc: t('header.dropdowns.resources.developerGuides.desc', { ns: 'common' }),
+        label: t("header.dropdowns.resources.developerGuides.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.resources.developerGuides.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/resources/developer-guides"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.resources.moneroTools.label', { ns: 'common' }),
-        desc: t('header.dropdowns.resources.moneroTools.desc', { ns: 'common' }),
+        label: t("header.dropdowns.resources.moneroTools.label", {
+          ns: "common",
+        }),
+        desc: t("header.dropdowns.resources.moneroTools.desc", {
+          ns: "common",
+        }),
         href: localizeHref(locale, "/resources/monero-tools"),
         image: placeholder,
       },
       {
-        label: t('header.dropdowns.resources.pressKit.label', { ns: 'common' }),
-        desc: t('header.dropdowns.resources.pressKit.desc', { ns: 'common' }),
+        label: t("header.dropdowns.resources.pressKit.label", { ns: "common" }),
+        desc: t("header.dropdowns.resources.pressKit.desc", { ns: "common" }),
         href: localizeHref(locale, "/resources/press-kit"),
         image: placeholder,
       },
     ],
   },
-  { label: t('header.nav.crowdfunding', { ns: 'common' }), href: "https://ccs.getmonero.org" },
+  {
+    label: t("header.nav.crowdfunding", { ns: "common" }),
+    href: "https://ccs.getmonero.org",
+  },
 ];
 ---
 
 <header class="header">
   <div class="bar">
     <a class="brand" href={localizeHref(locale, "/")}>
-      <img class="mark" src="/meta/favicon-32x32.png" alt="" aria-hidden="true" />
+      <img
+        class="mark"
+        src="/meta/favicon-32x32.png"
+        alt=""
+        aria-hidden="true"
+      />
       <span class="word">MONERO</span>
     </a>
 
@@ -139,12 +193,6 @@ const leftNav = [
       type="checkbox"
       aria-label="Open menu"
     />
-    <label
-      for="nav-toggle"
-      class="hamburger"
-      aria-hidden="true"
-      aria-controls="primary-nav">☰</label
-    >
 
     <nav id="primary-nav" class="nav" aria-label="Primary">
       <ul class="list">
@@ -153,32 +201,38 @@ const leftNav = [
     </nav>
 
     <label for="nav-toggle" class="scrim" aria-hidden="true"></label>
-    <div class="lang">
-      <LanguageDropdown />
+
+    <div class="utils" aria-label="Utilities">
+      <div class="lang">
+        <LanguageDropdown />
+      </div>
+      <label
+        for="nav-toggle"
+        class="hamburger"
+        aria-controls="primary-nav"
+        aria-hidden="true"
+      >
+        <Icon src={hamburger} size="1.25rem" />
+      </label>
     </div>
-    
   </div>
 </header>
 
 <style>
-  /* ===== Tokens ===== */
   :root {
-    --fg: #0b0b0f;
     --muted: #7a7a86;
     --on-dark: #cfcfd7;
-    --panel: var(--card-color);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --fg: #e6e6eb;
       --muted: #a9a9b4;
       --on-dark: #e2e2ea;
     }
   }
 
-  /* ===== Header bar ===== */
   .bar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* brand | centered nav | utils */
     align-items: center;
     gap: 0.75rem;
     padding: 1rem clamp(1rem, 4vw, 4rem);
@@ -187,7 +241,10 @@ const leftNav = [
     position: relative;
     z-index: 10;
   }
+
+  /* ===== Brand (left side) ===== */
   .brand {
+    grid-column: 1;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -208,9 +265,11 @@ const leftNav = [
     font-weight: 900;
   }
 
-  /* ===== Desktop nav ===== */
+  /* ===== Centered nav ===== */
   .nav {
-    margin-left: 0.5rem;
+    grid-column: 2;
+    margin-left: 0;
+    justify-self: center;
   }
   .list {
     display: flex;
@@ -219,42 +278,45 @@ const leftNav = [
     margin: 0;
     padding: 0;
     align-items: center;
+    justify-content: center;
   }
 
-  /* ===== Right utilities ===== */
+  /* ===== Utils (right side) ===== */
+  .utils {
+    grid-column: 3;
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
   .lang {
-    margin-left: auto;
     color: var(--muted);
     display: inline-flex;
     align-items: center;
-    text-decoration: none;
+  }
+  .hamburger {
+    color: var(--muted);
+    display: none;
+    cursor: pointer;
+    font-size: 1.25rem;
   }
 
   .nav-toggle {
     display: none;
   }
-  .hamburger {
-    display: none;
-    margin-left: auto;
-    cursor: pointer;
-    font-size: 1.25rem;
-    color: var(--on-dark);
-  }
-
   .scrim {
     display: none;
   }
 
   /* ===== Mobile (<=900px) ===== */
   @media (max-width: 900px) {
-    /* leave a tappable gap to close the drawer */
     :root {
       --drawer-gap: clamp(2.5rem, 10vw, 4.5rem);
     }
 
     .hamburger {
       display: inline-block;
-    }
+    } /* show burger in utils */
     .header {
       position: sticky;
       top: 0;
@@ -273,21 +335,17 @@ const leftNav = [
       width: min(26.25rem, calc(100vw - var(--drawer-gap)));
       transform: translateX(100%);
       transition: transform 0.25s ease;
-
-      background: var(--panel);
+      background: var(--card-color);
       backdrop-filter: saturate(140%) blur(10px);
       -webkit-backdrop-filter: saturate(140%) blur(10px);
-
       box-sizing: border-box;
       padding: 1rem calc(1rem + env(safe-area-inset-right)) 2rem 1rem;
-
       z-index: 1001;
       overscroll-behavior: contain;
       overflow-y: auto;
-      -webkit-overflow-scrolling: touch; /* smoother on iOS */
+      -webkit-overflow-scrolling: touch;
     }
 
-    /* Prevent background from scrolling while the drawer is open */
     body:has(#nav-toggle:checked) {
       overflow: hidden;
       overscroll-behavior: none;
@@ -298,10 +356,7 @@ const leftNav = [
       align-items: stretch;
       gap: 0.25rem;
       margin-top: 2rem;
-    }
-    .lang {
-      order: 3;
-      margin-left: 0;
+      justify-content: flex-start;
     }
 
     /* Scrim (under drawer) */
@@ -336,7 +391,6 @@ const leftNav = [
     }
   }
 
-  /* Motion preferences */
   @media (prefers-reduced-motion: reduce) {
     .nav,
     .scrim {

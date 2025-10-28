@@ -10,6 +10,7 @@ import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 ---
+
 <Layout title={t("index.pageTitle")}>
   <Hero t={t} />
   <IndexCard

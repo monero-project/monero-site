@@ -1,250 +1,301 @@
 ---
 import Icon from "../ui/Icon.astro";
 import externalLink from "../../assets/icons/external-link.avif?url";
-import { getLocale } from 'astro-i18n-aut';
-import { localizeHref } from '../../i18n/utils';
+import { getLocale } from "astro-i18n-aut";
+import { localizeHref } from "../../i18n/utils";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
 
 interface Link {
-    label: string;
-    href: string;
+  label: string;
+  href: string;
 }
 
 interface Column {
-    title: string;
-    links: Link[];
+  title: string;
+  links: Link[];
 }
 
 const isExternal = (href: string) =>
-    !href.startsWith("#") &&
-    !href.startsWith("/") &&
-    !href.includes("getmonero.org");
+  !href.startsWith("#") &&
+  !href.startsWith("/") &&
+  !href.includes("getmonero.org");
 
 const columns: Column[] = [
-    {
-        title: t('footer.columns.resources.title', { ns: 'common' }),
-        links: [
-            { label: t('footer.columns.resources.links.knowledgeBase', { ns: 'common' }), href: localizeHref(locale, "/resources/knowledge-base") },
-            { label: t('footer.columns.resources.links.developerGuides', { ns: 'common' }), href: localizeHref(locale, "/resources/developer-guides") },
-            { label: t('footer.columns.resources.links.userGuides', { ns: 'common' }), href: localizeHref(locale, "/resources/user-guides") },
-            { label: t('footer.columns.resources.links.downloads', { ns: 'common' }), href: localizeHref(locale, "/downloads") },
-        ],
-    },
-    {
-        title: t('footer.columns.reachOut.title', { ns: 'common' }),
-        links: [
-            { label: t('footer.columns.reachOut.links.workgroups', { ns: 'common' }), href: localizeHref(locale, "/community/workgroups") },
-            { label: t('footer.columns.reachOut.links.hangouts', { ns: 'common' }), href: localizeHref(locale, "/community/hangouts") },
-            {
-                label: t('footer.columns.reachOut.links.mailingList', { ns: 'common' }),
-                href: "/postorius/lists/monero-announce.lists.getmonero.org",
-            },
-        ],
-    },
-    {
-        title: t('footer.columns.community.title', { ns: 'common' }),
-        links: [
-            { label: t('footer.columns.community.links.merchants', { ns: 'common' }), href: localizeHref(locale, "/community/merchants") },
-            {
-                label: t('footer.columns.community.links.stackExchange', { ns: 'common' }),
-                href: "https://monero.stackexchange.com/",
-            },
-            {
-                label: t('footer.columns.community.links.bitcoinTalk', { ns: 'common' }),
-                href: "https://bitcointalk.org/index.php?topic=583449.0",
-            },
-            { label: t('footer.columns.community.links.weblate', { ns: 'common' }), href: "https://translate.getmonero.org" },
-        ],
-    },
-    {
-        title: t('footer.columns.theMoneroProject.title', { ns: 'common' }),
-        links: [
-            { label: t('footer.columns.theMoneroProject.links.openAlias', { ns: 'common' }), href: "https://openalias.org" },
-            {
-                label: t('footer.columns.theMoneroProject.links.moneroResearchLab', { ns: 'common' }),
-                href: localizeHref(locale, "/resources/research-lab"),
-            },
-            { label: t('footer.columns.theMoneroProject.links.pressKit', { ns: 'common' }), href: localizeHref(locale, "/resources/press-kit") },
-            {
-                label: t('footer.columns.theMoneroProject.links.communityCrowdfundingSystem', { ns: 'common' }),
-                href: "https://ccs.getmonero.org",
-            },
-        ],
-    },
+  {
+    title: t("footer.columns.resources.title", { ns: "common" }),
+    links: [
+      {
+        label: t("footer.columns.resources.links.knowledgeBase", {
+          ns: "common",
+        }),
+        href: localizeHref(locale, "/resources/knowledge-base"),
+      },
+      {
+        label: t("footer.columns.resources.links.developerGuides", {
+          ns: "common",
+        }),
+        href: localizeHref(locale, "/resources/developer-guides"),
+      },
+      {
+        label: t("footer.columns.resources.links.userGuides", { ns: "common" }),
+        href: localizeHref(locale, "/resources/user-guides"),
+      },
+      {
+        label: t("footer.columns.resources.links.downloads", { ns: "common" }),
+        href: localizeHref(locale, "/downloads"),
+      },
+    ],
+  },
+  {
+    title: t("footer.columns.reachOut.title", { ns: "common" }),
+    links: [
+      {
+        label: t("footer.columns.reachOut.links.workgroups", { ns: "common" }),
+        href: localizeHref(locale, "/community/workgroups"),
+      },
+      {
+        label: t("footer.columns.reachOut.links.hangouts", { ns: "common" }),
+        href: localizeHref(locale, "/community/hangouts"),
+      },
+      {
+        label: t("footer.columns.reachOut.links.mailingList", { ns: "common" }),
+        href: "/postorius/lists/monero-announce.lists.getmonero.org",
+      },
+    ],
+  },
+  {
+    title: t("footer.columns.community.title", { ns: "common" }),
+    links: [
+      {
+        label: t("footer.columns.community.links.merchants", { ns: "common" }),
+        href: localizeHref(locale, "/community/merchants"),
+      },
+      {
+        label: t("footer.columns.community.links.stackExchange", {
+          ns: "common",
+        }),
+        href: "https://monero.stackexchange.com/",
+      },
+      {
+        label: t("footer.columns.community.links.bitcoinTalk", {
+          ns: "common",
+        }),
+        href: "https://bitcointalk.org/index.php?topic=583449.0",
+      },
+      {
+        label: t("footer.columns.community.links.weblate", { ns: "common" }),
+        href: "https://translate.getmonero.org",
+      },
+    ],
+  },
+  {
+    title: t("footer.columns.theMoneroProject.title", { ns: "common" }),
+    links: [
+      {
+        label: t("footer.columns.theMoneroProject.links.openAlias", {
+          ns: "common",
+        }),
+        href: "https://openalias.org",
+      },
+      {
+        label: t("footer.columns.theMoneroProject.links.moneroResearchLab", {
+          ns: "common",
+        }),
+        href: localizeHref(locale, "/resources/research-lab"),
+      },
+      {
+        label: t("footer.columns.theMoneroProject.links.pressKit", {
+          ns: "common",
+        }),
+        href: localizeHref(locale, "/resources/press-kit"),
+      },
+      {
+        label: t(
+          "footer.columns.theMoneroProject.links.communityCrowdfundingSystem",
+          { ns: "common" },
+        ),
+        href: "https://ccs.getmonero.org",
+      },
+    ],
+  },
 ];
 
 const bottomLinks: Link[] = [
-    { label: t('footer.bottomLinks.torOnionService', { ns: 'common' }), href: "#" },
-    { label: t('footer.bottomLinks.vulnerabilityResponse', { ns: 'common' }), href: "https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" },
-    { label: t('footer.bottomLinks.legal', { ns: 'common' }), href: localizeHref(locale, "/legal") },
-    { label: t('footer.bottomLinks.sourceCode', { ns: 'common' }), href: "https://github.com/monero-project/monero-site" },
-    { label: t('footer.bottomLinks.sitemap', { ns: 'common' }), href: "/sitemap-index.xml" },
-    { label: t('footer.bottomLinks.rssFeed', { ns: 'common' }), href: "/feed.xml" },
+  {
+    label: t("footer.bottomLinks.torOnionService", { ns: "common" }),
+    href: "#",
+  },
+  {
+    label: t("footer.bottomLinks.vulnerabilityResponse", { ns: "common" }),
+    href: "https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md",
+  },
+  {
+    label: t("footer.bottomLinks.legal", { ns: "common" }),
+    href: localizeHref(locale, "/legal"),
+  },
+  {
+    label: t("footer.bottomLinks.sourceCode", { ns: "common" }),
+    href: "https://github.com/monero-project/monero-site",
+  },
+  {
+    label: t("footer.bottomLinks.sitemap", { ns: "common" }),
+    href: "/sitemap-index.xml",
+  },
+  {
+    label: t("footer.bottomLinks.rssFeed", { ns: "common" }),
+    href: "/feed.xml",
+  },
 ];
 ---
 
 <footer class="footer" aria-label="Footer">
-    <div class="items">
-        <nav class="grid" aria-label="Footer navigation">
-            {
-                columns.map((col) => (
-                    <section class="col">
-                        <h3 class="title">{col.title}</h3>
-                        <ul class="list">
-                            {col.links.map((l) => (
-                                <li>
-                                    <a
-                                        href={l.href}
-                                        target={
-                                            isExternal(l.href)
-                                                ? "_blank"
-                                                : undefined
-                                        }
-                                        rel={
-                                            isExternal(l.href)
-                                                ? "noopener noreferrer"
-                                                : undefined
-                                        }
-                                    >
-                                        {l.label}
-                                        {isExternal(l.href) ? (
-                                            <Icon src={externalLink} size="12px" />
-                                        ) : (
-                                            ""
-                                        )}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </section>
-                ))
-            }
-        </nav>
-
-        <nav class="bottom" aria-label="Secondary footer navigation">
-            <ul class="inline-list">
-                {
-                    bottomLinks.map((l) => (
-                        <li class="inline-item">
-                            <a
-                                href={l.href}
-                                target={
-                                    isExternal(l.href) ? "_blank" : undefined
-                                }
-                                rel={
-                                    isExternal(l.href)
-                                        ? "noopener noreferrer"
-                                        : undefined
-                                }
-                            >
-                                {l.label}
-                                {isExternal(l.href) ? (
-                                    <Icon src={externalLink} size="12px" />
-                                ) : (
-                                    ""
-                                )}
-                            </a>
-                        </li>
-                    ))
-                }
+  <div class="items">
+    <nav class="grid" aria-label="Footer navigation">
+      {
+        columns.map((col) => (
+          <section class="col">
+            <h3 class="title">{col.title}</h3>
+            <ul class="list">
+              {col.links.map((l) => (
+                <li>
+                  <a
+                    href={l.href}
+                    target={isExternal(l.href) ? "_blank" : undefined}
+                    rel={isExternal(l.href) ? "noopener noreferrer" : undefined}
+                  >
+                    {l.label}
+                    {isExternal(l.href) ? (
+                      <Icon src={externalLink} size="12px" />
+                    ) : (
+                      ""
+                    )}
+                  </a>
+                </li>
+              ))}
             </ul>
-        </nav>
-    </div>
+          </section>
+        ))
+      }
+    </nav>
+
+    <nav class="bottom" aria-label="Secondary footer navigation">
+      <ul class="inline-list">
+        {
+          bottomLinks.map((l) => (
+            <li class="inline-item">
+              <a
+                href={l.href}
+                target={isExternal(l.href) ? "_blank" : undefined}
+                rel={isExternal(l.href) ? "noopener noreferrer" : undefined}
+              >
+                {l.label}
+                {isExternal(l.href) ? (
+                  <Icon src={externalLink} size="12px" />
+                ) : (
+                  ""
+                )}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
 </footer>
 
 <style>
-    .footer {
-        background: var(--card-color);
-        font-size: var(--font-size-sm);
-    }
+  .footer {
+    background: var(--card-color);
+    font-size: var(--font-size-sm);
+  }
 
+  .items {
+    padding: var(--default-padding);
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .title {
+    margin: 0 0 2rem;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list li {
+    margin: 8px 0;
+  }
+
+  a {
+    color: var(--heading-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: fit-content;
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--paragraph-subtitle);
+    outline: none;
+  }
+
+  .bottom {
+    margin-top: 5em;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+  }
+
+  .inline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+    justify-content: center;
+  }
+
+  .inline-item a {
+    color: var(--footer-muted);
+  }
+
+  .inline-item a:hover,
+  .inline-item a:focus {
+    color: var(--heading-color);
+  }
+
+  /* Responsive */
+  @media (max-width: 980px) {
     .items {
-        padding: var(--default-padding);
-        padding-top: 5em;
-        padding-bottom: 5em;
+      padding: var(--mobile-padding);
+      padding-top: 4em;
     }
-
     .grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
-    .title {
-        margin: 0 0 2rem;
-        font-size: var(--font-size-xl);
-        font-weight: var(--font-weight-bold);
-        color: var(--heading-color);
+  }
+  @media (max-width: 560px) {
+    .grid {
+      grid-template-columns: 1fr;
     }
-
-    .list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    .wrap {
+      padding: 40px 16px 22px;
     }
-
-    .list li {
-        margin: 8px 0;
-    }
-
-    a {
-        color: var(--heading-color);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        width: fit-content;
-    }
-
-    a:hover,
-    a:focus {
-        color: var(--paragraph-subtitle);
-        outline: none;
-    }
-
-    .bottom {
-        margin-top: 5em;
-        font-size: var(--font-size-sm);
-        color: var(--paragraph-subtitle);
-    }
-
-    .inline-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px 28px;
-        justify-content: center;
-    }
-
-    .inline-item a {
-        color: var(--footer-muted);
-    }
-
-    .inline-item a:hover,
-    .inline-item a:focus {
-        color: var(--heading-color);
-    }
-
-    /* Responsive */
-    @media (max-width: 980px) {
-        .items {
-            padding: var(--mobile-padding);
-            padding-top: 4em;
-        }
-        .grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-    }
-    @media (max-width: 560px) {
-        .grid {
-            grid-template-columns: 1fr;
-        }
-        .wrap {
-            padding: 40px 16px 22px;
-        }
-    }
+  }
 </style>

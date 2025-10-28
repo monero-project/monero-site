@@ -19,9 +19,13 @@ const {
 ---
 
 <article class="resource-card">
-  {icon && <div class="icon">
-    <img src={icon} alt=""/>
-  </div>}
+  {
+    icon && (
+      <div class="icon">
+        <img src={icon} alt="" />
+      </div>
+    )
+  }
 
   <h2 class="title">{title}</h2>
 

@@ -9,7 +9,11 @@ const { src, size = "1em", class: className = "" } = Astro.props;
 // Uses monochrome mask to AVIF icons with current text color
 ---
 
-<div class={`icon ${className}`} style={`--icon-src: url(${src}); width: ${size}; height: ${size};`}></div>
+<div
+  class={`icon ${className}`}
+  style={`--icon-src: url(${src}); width: ${size}; height: ${size};`}
+>
+</div>
 
 <style>
   .icon {

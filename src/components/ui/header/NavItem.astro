@@ -20,44 +20,58 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 ---
 
 <li class={`item${isDropdown ? " has-dd" : ""}`}>
-  {isDropdown ? (
-    <>
-      <input id={id} class="dd-toggle" type="checkbox" aria-hidden="true" />
+  {
+    isDropdown ? (
+      <>
+        <input id={id} class="dd-toggle" type="checkbox" aria-hidden="true" />
 
-      <div class="row">
-        {href ? (
-          <a href={href} class="link">{label}</a>
-        ) : (
-          <span class="link" role="link" tabindex="0">{label}</span>
-        )}
+        <div class="row">
+          {href ? (
+            <a href={href} class="link">
+              {label}
+            </a>
+          ) : (
+            <span class="link" role="link" tabindex="0">
+              {label}
+            </span>
+          )}
 
-        <span class="caret" aria-hidden="true">
-          <Icon src={dropdownCaret} />
-        </span>
+          <span class="caret" aria-hidden="true">
+            <Icon src={dropdownCaret} />
+          </span>
 
-        <label for={id} class="mobile-cover" aria-label={`Toggle ${label} menu`} />
-      </div>
+          <label
+            for={id}
+            class="mobile-cover"
+            aria-label={`Toggle ${label} menu`}
+          />
+        </div>
 
-      <div class="dropdown" role="menu" aria-label={`${label} menu`}>
-        {dropdown.map((item) => (
-          <a href={item.href} class="dropdown-item" role="menuitem">
-            <img src={item.image} alt="" class="icon" />
-            <div class="content">
-              <div class="title">{item.label}</div>
-              {item.desc && <div class="desc">{item.desc}</div>}
-            </div>
-          </a>
-        ))}
-      </div>
-    </>
-  ) : (
-    <a href={href} class="link row">{label}</a>
-  )}
+        <div class="dropdown" role="menu" aria-label={`${label} menu`}>
+          {dropdown.map((item) => (
+            <a href={item.href} class="dropdown-item" role="menuitem">
+              <img src={item.image} alt="" class="icon" />
+              <div class="content">
+                <div class="title">{item.label}</div>
+                {item.desc && <div class="desc">{item.desc}</div>}
+              </div>
+            </a>
+          ))}
+        </div>
+      </>
+    ) : (
+      <a href={href} class="link row">
+        {label}
+      </a>
+    )
+  }
 </li>
 
 <style>
   /* === Base === */
-  .item { position: relative; }
+  .item {
+    position: relative;
+  }
   .row {
     position: relative;
     display: flex;
@@ -71,9 +85,15 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     font-weight: 500;
     flex: 1;
     user-select: none;
+    white-space: nowrap;
   }
-  .link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
-  .link:hover { color: var(--heading-color); }
+  .link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+  .link:hover {
+    color: var(--heading-color);
+  }
 
   .caret {
     display: inline-flex;
@@ -84,8 +104,12 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     transition: transform 0.2s ease;
   }
 
-  .mobile-cover { display: none; } /* inert on desktop */
-  .dd-toggle { display: none; }
+  .mobile-cover {
+    display: none;
+  } /* inert on desktop */
+  .dd-toggle {
+    display: none;
+  }
 
   .dropdown {
     position: absolute;
@@ -96,10 +120,12 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     padding: 1rem;
     border-radius: 0.75rem;
     background: var(--card-color);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     opacity: 0;
     visibility: hidden;
-    transition: opacity .15s ease, visibility .15s ease;
+    transition:
+      opacity 0.15s ease,
+      visibility 0.15s ease;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem 1.5rem;
@@ -116,9 +142,17 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     padding: 0.75rem;
     border-radius: 0.5rem;
   }
-  .dropdown-item:where(:hover, :focus) { background: var(--card-hover-color); }
-  .icon { width: 2rem; height: 2rem; flex: 0 0 2rem; }
-  .title { font-weight: 600; }
+  .dropdown-item:where(:hover, :focus) {
+    background: var(--card-hover-color);
+  }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 2rem;
+  }
+  .title {
+    font-weight: 600;
+  }
   .desc {
     font-size: 0.9rem;
     color: var(--paragraph-subtitle);
@@ -130,11 +164,16 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   @media (hover: hover) and (pointer: fine) {
     .has-dd::after {
       content: "";
-      position: absolute; left: 0; right: 0; top: 100%; height: 0.625rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      height: 0.625rem;
     }
     /* Show panel on hover OR when submenu is focused */
     .has-dd:is(:hover, :has(.dropdown :focus)) > .dropdown {
-      opacity: 1; visibility: visible;
+      opacity: 1;
+      visibility: visible;
     }
     .has-dd:is(:hover, :has(.dropdown :focus)) > .row > .link {
       color: var(--heading-color);
@@ -143,12 +182,16 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     .has-dd:is(:hover, :has(.dropdown :focus)) > .row > .caret {
       transform: rotate(180deg);
     }
-    .mobile-cover { pointer-events: none; }
+    .mobile-cover {
+      pointer-events: none;
+    }
   }
 
   /* === Mobile (whole-row toggle) === */
   @media (max-width: 900px) {
-    .row { padding: 0.5rem 0; }
+    .row {
+      padding: 0.5rem 0;
+    }
     .mobile-cover {
       display: block;
       position: absolute;
@@ -166,17 +209,26 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
       background: none;
       box-shadow: none;
       border-radius: 0;
-      opacity: 1; visibility: visible;
+      opacity: 1;
+      visibility: visible;
       display: block;
-      max-height: 0; overflow: hidden;
+      max-height: 0;
+      overflow: hidden;
       transition: max-height 0.25s ease;
     }
-    .dd-toggle:checked ~ .dropdown { max-height: 100vh; }
-    .dd-toggle:checked + .row > .caret { transform: rotate(180deg); }
+    .dd-toggle:checked ~ .dropdown {
+      max-height: 100vh;
+    }
+    .dd-toggle:checked + .row > .caret {
+      transform: rotate(180deg);
+    }
   }
 
   /* === Reduce motion === */
   @media (prefers-reduced-motion: reduce) {
-    .dropdown, .caret { transition: none; }
+    .dropdown,
+    .caret {
+      transition: none;
+    }
   }
 </style>
