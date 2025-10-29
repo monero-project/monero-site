@@ -169,7 +169,7 @@ merchants:
   basicswapdexdesc: Decentralized P2P atomic swaps with a strong focus on the user experience.
   visitbasicswapdex: Visit BasicSwapDEX
   setreq: Setup required
-  eigenwalletdesc: Exchange Bitcoin for Monero using Atomic Swaps.
+  eigenwalletdescr: Exchange Bitcoin for Monero using Atomic Swaps.
   visiteigenwallet: Visit Eigen Wallet
 
 sponsorships:
