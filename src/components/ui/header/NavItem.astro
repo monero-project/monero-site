@@ -52,7 +52,12 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
         <div class="dropdown" role="menu" aria-label={`${label} menu`}>
           {dropdown.map((item) => (
             <a href={item.href} class="dropdown-item" role="menuitem">
-              <ColorIcon src={item.icon} darkSrc={item.iconDark} size="2rem" class="icon" />
+              <ColorIcon
+                src={item.icon}
+                darkSrc={item.iconDark}
+                size="2rem"
+                class="icon"
+              />
               <div class="content">
                 <div class="title">{item.label}</div>
                 {item.desc && <div class="desc">{item.desc}</div>}
