@@ -956,6 +956,8 @@ library:
   moneroobserverblitz: >
     Monero Observer Blitz provides monthly updates on the latest developments in the Monero community and protocol.
     Written by escapethe3RA, this publication covers news related to Monero's ongoing development, community events, and notable achievements within the space.
+  twim: >
+    Weekly insights and updates from the Monero ecosystem. Stay informed on the latest developments, news, and analysis in the world of private digital currency.
 moneropedia:
   description: >
     The terminology around Monero can be very complex and technical. The Moneropedia is a tool created by the Monero community to provide an explanation of these terms in a simple way. Listed below you'll find all the Moneropedia entries in alphabetic order.
