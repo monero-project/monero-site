@@ -117,7 +117,6 @@ merchants:
   cardonion: '暗网地址:'
   noncustodial: '非托管的:'
   hodlhodldescr: 非托管式点对点交易所
-  locmondescr: 线上提供点对点交易的去中心化交易所
   centrexchangesp: 如果你喜欢中心化交易所，下面有一个主流交易所与互换商的列表。很多交易所都支持门罗币，我们在这里只列出一些比较有声誉的。
   cexp: 提供门罗币与其他加密货币或法币的交易的中心化交易所。
 sponsorships:

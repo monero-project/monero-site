@@ -155,7 +155,6 @@ merchants:
   cardonion: "Onion address:"
   cardi2p: "I2P address:"
   noncustodial: "Non-custodial:"
-  locmondescr: Online P2P exchange offering person-to-person trades.
   depsell: Depends by the seller
   locnojs: (but no-JS version available)
   simpleswapdescr: Non-custodial instant exchange.
