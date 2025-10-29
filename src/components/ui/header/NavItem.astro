@@ -1,12 +1,14 @@
 ---
-import dropdownCaret from "@/assets/icons/dropdown-caret.avif?url";
-import Icon from "../Icon.astro";
+import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import ColorIcon from "../ColorIcon.astro";
 
 export interface DropdownItem {
   label: string;
   href: string;
   desc?: string;
-  image: string;
+  icon: string;
+  iconDark?: string;
 }
 export interface Props {
   label: string;
@@ -37,7 +39,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
           )}
 
           <span class="caret" aria-hidden="true">
-            <Icon src={dropdownCaret} />
+            <MaskIcon src={dropdownCaret} />
           </span>
 
           <label
@@ -50,7 +52,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
         <div class="dropdown" role="menu" aria-label={`${label} menu`}>
           {dropdown.map((item) => (
             <a href={item.href} class="dropdown-item" role="menuitem">
-              <img src={item.image} alt="" class="icon" />
+              <ColorIcon src={item.icon} darkSrc={item.iconDark} size="2rem" class="icon" />
               <div class="content">
                 <div class="title">{item.label}</div>
                 {item.desc && <div class="desc">{item.desc}</div>}
@@ -214,7 +216,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
       display: block;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.25s ease;
+      transition: max-height 0.15s ease;
     }
     .dd-toggle:checked ~ .dropdown {
       max-height: 100vh;

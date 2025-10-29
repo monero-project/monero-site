@@ -1,6 +1,6 @@
 ---
-import Icon from "../ui/Icon.astro";
-import externalLink from "../../assets/icons/external-link.avif?url";
+import MaskIcon from "../ui/MaskIcon.astro";
+import externalLink from "../../assets/icons/mask/external-link.avif?url";
 import { getLocale } from "astro-i18n-aut";
 import { localizeHref } from "../../i18n/utils";
 
@@ -167,7 +167,7 @@ const bottomLinks: Link[] = [
                   >
                     {l.label}
                     {isExternal(l.href) ? (
-                      <Icon src={externalLink} size="12px" />
+                      <MaskIcon src={externalLink} size="12px" />
                     ) : (
                       ""
                     )}
@@ -192,7 +192,7 @@ const bottomLinks: Link[] = [
               >
                 {l.label}
                 {isExternal(l.href) ? (
-                  <Icon src={externalLink} size="12px" />
+                  <MaskIcon src={externalLink} size="12px" />
                 ) : (
                   ""
                 )}

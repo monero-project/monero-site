@@ -1,6 +1,6 @@
 ---
-import Icon from "../../ui/Icon.astro";
-import arrowLeft from "../../../assets/icons/arrow-left.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import arrowLeft from "@/assets/icons/mask/arrow-left.avif?url";
 import { localizeHref } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
 
@@ -32,7 +32,7 @@ const locale = getLocale(Astro.url);
     {description && <p class="desc">{description}</p>}
     <a class="cta" href={localizeHref(locale, ctaHref)}>
       {ctaLabel}
-      <Icon src={arrowLeft} />
+      <MaskIcon src={arrowLeft} />
     </a>
   </div>
 </div>

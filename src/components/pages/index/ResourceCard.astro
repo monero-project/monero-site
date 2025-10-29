@@ -1,6 +1,6 @@
 ---
-import arrowLeft from "../../../assets/icons/arrow-left.avif?url";
-import Icon from "../../ui/Icon.astro";
+import arrowLeft from "@/assets/icons/mask/arrow-left.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 export interface Props {
   icon?: any;
   title: string;
@@ -33,7 +33,7 @@ const {
 
   <a class="cta" href={ctaHref}>
     {ctaLabel}
-    <Icon src={arrowLeft} />
+    <MaskIcon src={arrowLeft} />
   </a>
 </article>
 

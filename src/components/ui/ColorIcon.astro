@@ -1,0 +1,51 @@
+---
+export interface Props {
+  src: any;
+  darkSrc?: any;   // optional dark icon
+  size?: string;
+  class?: string;
+}
+
+const {
+  src,
+  darkSrc,
+  size = "1em",
+  class: className = "",
+} = Astro.props;
+
+function norm(p: any): string {
+  if (typeof p === "string") return p;
+  if (p && typeof p === "object" && typeof p.src === "string") return p.src;
+  return String(p);
+}
+
+const lightUrl = `'${norm(src).replace(/'/g, "\\'")}'`;
+const darkUrl  = darkSrc ? `'${norm(darkSrc).replace(/'/g, "\\'")}'` : lightUrl;
+
+const style =
+  `--icon-url-light:url(${lightUrl});` +
+  `--icon-url-dark:url(${darkUrl});` +
+  `--icon-size:${size};`;
+---
+
+<div class={`icon ${className}`} style={style} aria-hidden="true"></div>
+
+<style>
+  .icon{
+    inline-size: var(--icon-size);
+    block-size: var(--icon-size);
+    aspect-ratio: 1 / 1;
+    display:inline-block;
+    vertical-align:middle;
+
+    --icon-url: var(--icon-url-light);
+    background-image: var(--icon-url);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .icon { --icon-url: var(--icon-url-dark); }
+  }
+</style>

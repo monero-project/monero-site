@@ -2,8 +2,8 @@
 import { getLocale } from "astro-i18n-aut";
 import { locales } from "@/i18n/config";
 import { getLocaleName } from "@/i18n/utils";
-import Icon from "../Icon.astro";
-import Globe from "@/assets/icons/globe.avif?url";
+import MaskIcon from "../MaskIcon.astro";
+import Globe from "@/assets/icons/mask/globe.avif?url";
 
 const currentLocale = getLocale(Astro.url);
 
@@ -28,7 +28,7 @@ const hrefFor = (locale: string) =>
   <input id="lang-dd" class="dd-toggle" type="checkbox" aria-hidden="true" />
 
   <label for="lang-dd" class="lang" aria-label="Change language">
-    <Icon src={Globe} size="1.25rem" />
+    <MaskIcon src={Globe} size="1.25rem" />
   </label>
 
   <div class="lang-dropdown" aria-label="Languages">

@@ -1,11 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
+import Hero from "@/components/pages/index/Hero.astro";
 import IndexCard from "../components/pages/index/IndexCard.astro";
 import GetStartedCard from "../components/pages/index/GetStartedCard.astro";
 import ResourceCard from "../components/pages/index/ResourceCard.astro";
-import placeholder from "../assets/placeholder.avif?url";
+import placeholder from "../assets/icons/mask/placeholder.avif?url";
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
@@ -13,101 +14,113 @@ const t = await createTInstance(locale);
 
 <Layout title={t("index.pageTitle")}>
   <Hero t={t} />
-  <IndexCard
-    title={t("index.aboutTitle")}
-    description={t("index.aboutDescription")}
-  >
-    <div style="display: flex; flex-direction: column; gap: 2rem;">
-      <div>
-        <h2>{t("index.main")}</h2>
-        <p>
-          {t("index.privacyText")}
-        </p>
+  <div class="main-content">
+    <IndexCard
+      title={t("index.aboutTitle")}
+      description={t("index.aboutDescription")}
+    >
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <div>
+          <h2>{t("index.main")}</h2>
+          <p>
+            {t("index.privacyText")}
+          </p>
+        </div>
+        <div>
+          <h2>{t("index.decentralized")}</h2>
+          <p>
+            {t("index.decentralizedText")}
+          </p>
+        </div>
+        <div>
+          <h2>{t("index.communityDriven")}</h2>
+          <p>
+            {t("index.communityText")}
+          </p>
+        </div>
       </div>
-      <div>
-        <h2>{t("index.decentralized")}</h2>
-        <p>
-          {t("index.decentralizedText")}
-        </p>
+      <div class="video-container">
+        <video width="100%" height="100%" controls preload="metadata">
+          <source src="/media/intro-video.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
       </div>
+    </IndexCard>
+    <hr />
+    <IndexCard
+      title={t("index.startTitle")}
+      description={t("index.startDescription")}
+    >
+      <MaskIcon src={placeholder} size="100%" />
       <div>
-        <h2>{t("index.communityDriven")}</h2>
-        <p>
-          {t("index.communityText")}
-        </p>
+        <GetStartedCard
+          step="01"
+          title={t("index.step1Title")}
+          description={t("index.step1Desc")}
+          ctaHref="/downloads"
+          ctaLabel={t("index.step1Cta")}
+        />
+        <hr />
+        <GetStartedCard
+          step="02"
+          title={t("index.step2Title")}
+          description={t("index.step2Desc")}
+          ctaHref="/community/merchants"
+          ctaLabel={t("index.step2Cta")}
+        />
+        <hr />
+        <GetStartedCard
+          step="03"
+          title={t("index.step3Title")}
+          description={t("index.step3Desc")}
+          ctaHref="/resources/user-guides"
+          ctaLabel={t("index.step3Cta")}
+        />
       </div>
-    </div>
-    <div class="video-container">
-      <video width="100%" height="100%" controls preload="metadata">
-        <source src="/media/intro-video.webm" type="video/webm" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </IndexCard>
-  <hr />
-  <IndexCard
-    title={t("index.startTitle")}
-    description={t("index.startDescription")}
-  >
-    <img src={placeholder} alt={t("index.getStartedAlt")} width="100%" />
-    <div>
-      <GetStartedCard
-        step="01"
-        title={t("index.step1Title")}
-        description={t("index.step1Desc")}
-        ctaHref="/downloads"
-        ctaLabel={t("index.step1Cta")}
-      />
-      <hr />
-      <GetStartedCard
-        step="02"
-        title={t("index.step2Title")}
-        description={t("index.step2Desc")}
-        ctaHref="/community/merchants"
-        ctaLabel={t("index.step2Cta")}
-      />
-      <hr />
-      <GetStartedCard
-        step="03"
-        title={t("index.step3Title")}
-        description={t("index.step3Desc")}
-        ctaHref="/resources/user-guides"
-        ctaLabel={t("index.step3Cta")}
-      />
-    </div>
-  </IndexCard>
-  <hr />
-  <IndexCard
-    title={t("index.resourcesTitle")}
-    description={t("index.resourcesDescription")}
-  >
-    <div id="resource-container">
-      <ResourceCard
-        title={t("index.faqTitle")}
-        description={t("index.faqDesc")}
-        ctaLabel={t("index.faqCta")}
-        ctaHref={localizeHref(locale, "/get-started/faq")}
-        icon={placeholder}
-      />
-      <ResourceCard
-        title={t("index.userGuidesTitle")}
-        description={t("index.userGuidesDesc")}
-        ctaLabel={t("index.userGuidesCta")}
-        ctaHref={localizeHref(locale, "/resources/user-guides")}
-        icon={placeholder}
-      />
-      <ResourceCard
-        title={t("index.devGuidesTitle")}
-        description={t("index.devGuidesDesc")}
-        ctaLabel={t("index.devGuidesCta")}
-        ctaHref={localizeHref(locale, "/resources/developer-guides")}
-        icon={placeholder}
-      />
-    </div>
-  </IndexCard>
+    </IndexCard>
+    <hr />
+    <IndexCard
+      title={t("index.resourcesTitle")}
+      description={t("index.resourcesDescription")}
+    >
+      <div id="resource-container">
+        <ResourceCard
+          title={t("index.faqTitle")}
+          description={t("index.faqDesc")}
+          ctaLabel={t("index.faqCta")}
+          ctaHref={localizeHref(locale, "/get-started/faq")}
+          icon={placeholder}
+        />
+        <ResourceCard
+          title={t("index.userGuidesTitle")}
+          description={t("index.userGuidesDesc")}
+          ctaLabel={t("index.userGuidesCta")}
+          ctaHref={localizeHref(locale, "/resources/user-guides")}
+          icon={placeholder}
+        />
+        <ResourceCard
+          title={t("index.devGuidesTitle")}
+          description={t("index.devGuidesDesc")}
+          ctaLabel={t("index.devGuidesCta")}
+          ctaHref={localizeHref(locale, "/resources/developer-guides")}
+          icon={placeholder}
+        />
+      </div>
+    </IndexCard>
+  </div>
 </Layout>
 
 <style>
+  :root {
+    --hero-min-height: calc(80vh + 3rem);
+  }
+
+  @supports (height: 100dvh) {
+    :root {
+      --hero-min-height: calc(80dvh + 3rem);
+    }
+  }
+
   h2 {
     font-size: var(--font-size-xl);
     color: var(--heading-color);
@@ -145,5 +158,26 @@ const t = await createTInstance(locale);
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .main-content {
+    position: relative;
+    margin-top: var(--hero-min-height) !important;
+  }
+
+  :global(.hero) {
+    position: absolute !important;
+    top: 3rem !important;
+    left: 5rem !important;
+    right: 5rem !important;
+    z-index: 5 !important;
+    min-height: var(--hero-min-height) !important;
+  }
+
+  @media (max-width: 600px) {
+    :global(.hero) {
+      left: 2rem !important;
+      right: 2rem !important;
+    }
   }
 </style>

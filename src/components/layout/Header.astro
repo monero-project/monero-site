@@ -1,11 +1,45 @@
 ---
 import NavItem from "../ui/header/NavItem.astro";
 import LanguageDropdown from "../ui/header/LanguageDropdown.astro";
-import placeholder from "../../assets/placeholder.avif?url";
-import hamburger from "../../assets/icons/hamburger.avif?url";
-import Icon from "../ui/Icon.astro";
+import MaskIcon from "../ui/MaskIcon.astro";
 import { getLocale } from "astro-i18n-aut";
 import { localizeHref } from "../../i18n/utils";
+
+import hamburger from "../../assets/icons/mask/hamburger.avif?url";
+
+import whatIsMonero from "@/assets/icons/color/light/what-is-monero.avif?url";
+import acceptMonero from "@/assets/icons/color/light/accept-monero.avif?url";
+import contribute from "@/assets/icons/color/light/contribute.avif?url";
+import mining from "@/assets/icons/color/light/mining.avif?url";
+import faq from "@/assets/icons/color/light/faq.avif?url";
+import workgroups from "@/assets/icons/color/light/workgroups.avif?url";
+import sponsorships from "@/assets/icons/color/light/sponsorships.avif?url";
+import hangouts from "@/assets/icons/color/light/hangouts.avif?url";
+import merchantsExchanges from "@/assets/icons/color/light/merchants-exchanges.avif?url";
+import moneropedia from "@/assets/icons/color/light/moneropedia.avif?url";
+import roadmap from "@/assets/icons/color/light/roadmap.avif?url";
+import researchLab from "@/assets/icons/color/light/research-lab.avif?url";
+import userGuides from "@/assets/icons/color/light/user-guides.avif?url"; 
+import developerGuides from "@/assets/icons/color/light/developer-guides.avif?url";
+import tools from "@/assets/icons/color/light/tools.avif?url";
+import pressKit from "@/assets/icons/color/light/press-kit.avif?url";
+
+import whatIsMoneroDark from "@/assets/icons/color/dark/what-is-monero.avif?url";
+import acceptMoneroDark from "@/assets/icons/color/dark/accept-monero.avif?url";
+import contributeDark from "@/assets/icons/color/dark/contribute.avif?url";
+import miningDark from "@/assets/icons/color/dark/mining.avif?url";
+import faqDark from "@/assets/icons/color/dark/faq.avif?url";
+import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif?url";
+import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif?url";
+import hangoutsDark from "@/assets/icons/color/dark/hangouts.avif?url";
+import merchantsExchangesDark from "@/assets/icons/color/dark/merchants-exchanges.avif?url";
+import moneropediaDark from "@/assets/icons/color/dark/moneropedia.avif?url";
+import roadmapDark from "@/assets/icons/color/dark/roadmap.avif?url";
+import researchLabDark from "@/assets/icons/color/dark/research-lab.avif?url";
+import userGuidesDark from "@/assets/icons/color/dark/user-guides.avif?url"; 
+import developerGuidesDark from "@/assets/icons/color/dark/developer-guides.avif?url";
+import toolsDark from "@/assets/icons/color/dark/tools.avif?url";
+import pressKitDark from "@/assets/icons/color/dark/press-kit.avif?url";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
@@ -22,7 +56,8 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/get-started/what-is-monero"),
-        image: placeholder,
+        icon: whatIsMonero,
+        iconDark: whatIsMoneroDark,
       },
       {
         label: t("header.dropdowns.getStarted.acceptMonero.label", {
@@ -32,7 +67,8 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/get-started/accept-monero"),
-        image: placeholder,
+        icon: acceptMonero,
+        iconDark: acceptMoneroDark,
       },
       {
         label: t("header.dropdowns.getStarted.contribute.label", {
@@ -42,19 +78,22 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/get-started/contribute"),
-        image: placeholder,
+        icon: contribute,
+        iconDark: contributeDark,
       },
       {
         label: t("header.dropdowns.getStarted.mining.label", { ns: "common" }),
         desc: t("header.dropdowns.getStarted.mining.desc", { ns: "common" }),
         href: localizeHref(locale, "/get-started/mining"),
-        image: placeholder,
+        icon: mining,
+        iconDark: miningDark,
       },
       {
         label: t("header.dropdowns.getStarted.faq.label", { ns: "common" }),
         desc: t("header.dropdowns.getStarted.faq.desc", { ns: "common" }),
         href: localizeHref(locale, "/get-started/faq"),
-        image: placeholder,
+        icon: faq,
+        iconDark: faqDark,
       },
     ],
   },
@@ -75,7 +114,8 @@ const leftNav = [
         }),
         desc: t("header.dropdowns.community.workgroups.desc", { ns: "common" }),
         href: localizeHref(locale, "/community/workgroups"),
-        image: placeholder,
+        icon: workgroups,
+        iconDark: workgroupsDark,
       },
       {
         label: t("header.dropdowns.community.sponsorships.label", {
@@ -85,13 +125,15 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/community/sponsorships"),
-        image: placeholder,
+        icon: sponsorships,
+        iconDark: sponsorshipsDark,
       },
       {
         label: t("header.dropdowns.community.hangouts.label", { ns: "common" }),
         desc: t("header.dropdowns.community.hangouts.desc", { ns: "common" }),
         href: localizeHref(locale, "/community/hangouts"),
-        image: placeholder,
+        icon: hangouts,
+        iconDark: hangoutsDark,
       },
       {
         label: t("header.dropdowns.community.merchants.label", {
@@ -99,7 +141,8 @@ const leftNav = [
         }),
         desc: t("header.dropdowns.community.merchants.desc", { ns: "common" }),
         href: localizeHref(locale, "/community/merchants"),
-        image: placeholder,
+        icon: merchantsExchanges,
+        iconDark: merchantsExchangesDark,
       },
     ],
   },
@@ -114,13 +157,15 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/resources/knowledge-base"),
-        image: placeholder,
+        icon: moneropedia,
+        iconDark: moneropediaDark,
       },
       {
         label: t("header.dropdowns.resources.roadmap.label", { ns: "common" }),
         desc: t("header.dropdowns.resources.roadmap.desc", { ns: "common" }),
         href: localizeHref(locale, "/resources/roadmap"),
-        image: placeholder,
+        icon: roadmap,
+        iconDark: roadmapDark,
       },
       {
         label: t("header.dropdowns.resources.researchLab.label", {
@@ -130,7 +175,8 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/resources/research-lab"),
-        image: placeholder,
+        icon: researchLab,
+        iconDark: researchLabDark,
       },
       {
         label: t("header.dropdowns.resources.userGuides.label", {
@@ -138,7 +184,8 @@ const leftNav = [
         }),
         desc: t("header.dropdowns.resources.userGuides.desc", { ns: "common" }),
         href: localizeHref(locale, "/resources/user-guides"),
-        image: placeholder,
+        icon: userGuides,
+        iconDark: userGuidesDark,
       },
       {
         label: t("header.dropdowns.resources.developerGuides.label", {
@@ -148,7 +195,8 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/resources/developer-guides"),
-        image: placeholder,
+        icon: developerGuides,
+        iconDark: developerGuidesDark,
       },
       {
         label: t("header.dropdowns.resources.moneroTools.label", {
@@ -158,13 +206,15 @@ const leftNav = [
           ns: "common",
         }),
         href: localizeHref(locale, "/resources/monero-tools"),
-        image: placeholder,
+        icon: tools,
+        iconDark: toolsDark,
       },
       {
         label: t("header.dropdowns.resources.pressKit.label", { ns: "common" }),
         desc: t("header.dropdowns.resources.pressKit.desc", { ns: "common" }),
         href: localizeHref(locale, "/resources/press-kit"),
-        image: placeholder,
+        icon: pressKit,
+        iconDark: pressKitDark,
       },
     ],
   },
@@ -212,22 +262,13 @@ const leftNav = [
         aria-controls="primary-nav"
         aria-hidden="true"
       >
-        <Icon src={hamburger} size="1.25rem" />
+        <MaskIcon src={hamburger} size="1.25rem" />
       </label>
     </div>
   </div>
 </header>
 
 <style>
-  :root {
-    --muted: #7a7a86;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --muted: #a9a9b4;
-    }
-  }
-
   .bar {
     display: grid;
     grid-template-columns: 1fr auto 1fr; /* brand | centered nav | utils */
@@ -246,7 +287,7 @@ const leftNav = [
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--muted);
+    color: var(--paragraph-main);
     text-decoration: none;
     font-weight: var(--font-weight-bold);
     letter-spacing: 0.02em;
@@ -271,7 +312,7 @@ const leftNav = [
   }
   .list {
     display: flex;
-    gap: 1.25rem;
+    gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -288,12 +329,12 @@ const leftNav = [
     gap: 0.75rem;
   }
   .lang {
-    color: var(--muted);
+    color: var(--paragraph-main);
     display: inline-flex;
     align-items: center;
   }
   .hamburger {
-    color: var(--muted);
+    color: var(--paragraph-main);
     display: none;
     cursor: pointer;
     font-size: 1.25rem;
