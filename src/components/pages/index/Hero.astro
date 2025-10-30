@@ -43,11 +43,12 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 <style>
   /* ===== Hero ===== */
   .hero {
-    display: grid;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     container-type: size;
-    block-size: 1em; /* patch for safari, replace later */
   }
 
   .wrap {
@@ -143,7 +144,7 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
   }
 
   .logo-box {
-    inline-size: min(100cqw, 100cqh); /* max square that fits hero */
+    inline-size: min(100cqw, 100cqh);
     aspect-ratio: 1 / 1;
     position: relative;
   }
