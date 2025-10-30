@@ -245,6 +245,16 @@ const leftNav = [
     />
 
     <nav id="primary-nav" class="nav" aria-label="Primary">
+      <div class="drawer-header">
+        <label
+          for="nav-toggle"
+          class="close"
+          aria-controls="primary-nav"
+          aria-label="Close menu"
+        >
+          <MaskIcon src={hamburger} size="1.25rem" />
+        </label>
+      </div>
       <ul class="list">
         {leftNav.map((item) => <NavItem {...item} />)}
       </ul>
@@ -341,6 +351,17 @@ const leftNav = [
   .scrim {
     display: none;
   }
+  .drawer-header {
+    display: none;
+  }
+  .close {
+    color: var(--paragraph-main);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 1;
+  }
 
   /* ===== Mobile (<=900px) ===== */
   @media (max-width: 900px) {
@@ -360,6 +381,15 @@ const leftNav = [
     }
 
     /* Drawer */
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
     .nav {
       position: fixed;
       top: 0;
@@ -369,7 +399,7 @@ const leftNav = [
       width: min(26.25rem, calc(100vw - var(--drawer-gap)));
       transform: translateX(100%);
       transition: transform 0.25s ease;
-      background: var(--card-color);
+      background: var(--bg-color);
       backdrop-filter: saturate(140%) blur(10px);
       -webkit-backdrop-filter: saturate(140%) blur(10px);
       box-sizing: border-box;
@@ -389,7 +419,7 @@ const leftNav = [
       flex-direction: column;
       align-items: stretch;
       gap: 0.25rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
       justify-content: flex-start;
     }
 
