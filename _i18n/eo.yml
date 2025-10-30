@@ -190,12 +190,19 @@ merchants:
   noncustodial: "Ne-garda:"
   hodlhodldescr: 'P2P komercada platformo kun ne-garda depono.'
   locmondescr: 'Reta P2P ŝanĝejo ofertanta interŝanĝojn inter homoj.'
+  havenodescr: 'Malcentralizita P2P-protokolo por interŝanĝi Moneron (XMR) per fiat-
+    kaj kriptovalutoj, komunikadoj estas senditaj per Tor. 
+    Ĝi mem ne povas esti uzata por interŝanĝi XMR kaj aliajn valutojn, vidu Retoswap.'
+  retoswapdescr: 'Malcentralizita publika instanco konstruita el Haveno, kiu provizas
+    funkciantan P2P-komercan reton, uzante Moneron kaj Tor.'
   depsell: 'Dependas de la vendisto'
   locnojs: '(sed ne-JS versio disponebla)'
   simpleswapdescr: 'Ne-garda tuja ŝanĝejo.'
   disclaimer: |
   visitbisq: 'Vizitu Bisq-n'
   visitlocalmonero: 'Vizitu LocalMonero-n'
+  visithaveno: 'Vizitu Haveno-n'
+  visitretoswap: 'Vizitu Retoswap-n'
   visithodlhodl: 'Vizitu HodlHodl-n'
   centrexchanges: 'Centraj ŝanĝejoj (CEXs) kaj interŝanĝejoj'
   centrexchangesp: 'Se vi preferas uzi centrajn ŝanĝejojn, jen estas listo de famaj

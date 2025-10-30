@@ -159,9 +159,13 @@ merchants:
   depsell: Depends by the seller
   locnojs: (but no-JS version available)
   simpleswapdescr: Non-custodial instant exchange.
+  havenodescr: Decentralized P2P protocol for trading Monero (XMR) with fiat and crypto, communications are routed with Tor. Cannot itself be used for exchanging XMR and other currencies, see Retoswap.
+  retoswapdescr: A decentralized public instance built from "Haveno" that provides a running P2P trading network, using Monero and Tor.
   disclaimer: |
     "Please note: these links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement by the Monero community of any products, services or opinions of the corporations or organizations or individuals listed. The Monero community bears no responsibility for the accuracy, legality, or content of these external sites. Contact the external site for answers to questions regarding its content. As always, caveat emptor ('buyer beware'); you are responsible for doing your own research. Always use judgement when making online purchases."
   visitbisq: Visit Bisq
+  visithaveno: Visit Haveno
+  visitretoswap: Visit Retoswap
   centrexchanges: Centralized exchanges (CEXs) & Swappers
   centrexchangesp: If you prefer to use centralized exchanges, here is a list of renowned CEXes and swappers. Many more exchanges support Monero, we list here only a few reputable ones.
   cexp: Centralized exchanges that offer exchanging Monero for national currencies and cryptocurrencies.

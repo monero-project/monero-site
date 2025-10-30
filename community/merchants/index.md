@@ -68,7 +68,7 @@ meta_descr: merchants.descr
         </div>
       </div>
       <div class="left half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <div class="info-block">
+        <div class="info-block" style="height:auto; min-height:0; align-self:flex-start;">
           <div class="center-xs">
             <img class="merch" src="/img/merchants/basicswapdex.png" alt="BasicSwapDEX Logo" title="BasicSwapDEX">
             <p>{% t merchants.basicswapdexdesc %}</p>
@@ -83,6 +83,33 @@ meta_descr: merchants.descr
           </div>
           <div class="center-xs">
             <p><a href="https://basicswapdex.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitbasicswapdex %}</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="right half no-pad-sm col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="info-block">
+          <div class="center-xs">
+            <img class="merch" src="/img/haveno.png" alt="Haveno Logo" title="Haveno">
+            <p>{% t merchants.havenodescr %}</p>
+          </div>
+          <div>
+            <p><b>{% t merchants.cardfoss %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.noncustodial %}</b> <span class="check"></span></p>
+            <p>{% t merchants.cardkyc %} <span class="check"></span></p>
+            <p><b>XMR &#8596; fiat:</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardonion %}</b> <span class="check"></span></p>
+            <p><b>{% t merchants.cardi2p %}</b> <span class="cross"></span></p>
+          </div>
+          <div class="center-xs">
+            <p><a href="https://haveno.exchange" class="btn-link btn-fixed btn-primary-top">{% t merchants.visithaveno %}</a></p>
+          </div>
+          <br>
+          <hr>
+          <div class="center-xs">
+            <img class="merch" src="/img/retoswap.png" alt="RetoSwap Logo" title="RetoSwap">
+            <h4>RetoSwap</h4>
+            <p>{% t merchants.retoswapdescr %}</p>
+            <p><a href="https://retoswap.com" class="btn-link btn-fixed btn-primary-top">{% t merchants.visitretoswap %}</a></p>
           </div>
         </div>
       </div>

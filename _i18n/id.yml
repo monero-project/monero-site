@@ -201,12 +201,19 @@ merchants:
   noncustodial: "Non-kustodial:"
   hodlhodldescr: 'Platform perdagangan P2P dengan eskrow non-kustodial.'
   locmondescr: 'Bursa pertukaran P2P Online menawarkan perdagangan pribadi-ke-pribadi.'
+  havenodescr: 'Protokol P2P terdesentralisasi untuk perdagangan Monero (XMR) dengan
+    mata uang fiat dan kripto, komunikasi diarahkan melalui Tor.
+    Tidak dapat digunakan sendiri untuk pertukaran XMR dan mata uang lain, lihat Retoswap.'
+  retoswapdescr: 'Instan publik terdesentralisasi yang dibangun dari Haveno yang 
+    menyediakan jaringan perdagangan P2P yang beroperasi, menggunakan Monero dan Tor. '
   depsell: 'Tergantung oleh penjual'
   locnojs: '(tetapi tidak tersedia versi tanpa-JS / tanpa-javascript)'
   simpleswapdescr: 'Bursa pertukaran instan non-kustodial.'
   disclaimer: |
   visitbisq: ''
   visitlocalmonero: ''
+  visithaveno: ''
+  visitretoswap: ''
   visithodlhodl: ''
   centrexchanges: ''
   centrexchangesp: ''

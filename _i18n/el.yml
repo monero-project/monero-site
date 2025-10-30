@@ -1334,11 +1334,18 @@ merchants:
   hodlhodldescr: Πλατφόρμα συναλλαγών P2P με non-custodial (χωρίς επιμέλεια) escrow.
   locmondescr: Διαδικτυακό ανταλλακτήριο P2P που προσφέρει συναλλαγές από άτομο σε
     άτομο.
+  havenodescr: Αποκεντρωμένο πρωτόκολλο P2P για την ανταλλαγή Monero (XMR) με fiat και κρυπτονομίσματα,
+    οι επικοινωνίες δρομολογούνται με Tor. Δεν μπορεί να χρησιμοποιηθεί από μόνο του για την ανταλλαγή XMR
+    και άλλων νομισμάτων, βλ. Retoswap.
+  retoswapdescr: Μια αποκεντρωμένη δημόσια εφαρμογή που έχει δημιουργηθεί από το Haveno και
+    παρέχει ένα λειτουργικό δίκτυο συναλλαγών P2P, χρησιμοποιώντας Monero και Tor.
   depsell: Εξαρτάται από τον πωλητή
   locnojs: (αλλά δεν υπάρχει διαθέσιμη έκδοση JS)
   simpleswapdescr: Άμεση non-custodial (χωρίς επιμέλεια) συναλλαγή.
   visitbisq: Επισκεφθείτε το Bisq
   visitlocalmonero: Επισκεφθείτε το LocalMonero
+  visithaveno: Επισκεφθείτε το Haveno
+  visitretoswap: Επισκεφθείτε το Retoswap
   visithodlhodl: Επισκεφθείτε το HodlHodl
   centrexchanges: Κεντροποιημένα ανταλλακτήρια (CEXs) & Swappers
   cexp: Κεντροποιημένα ανταλλακτήρια που προσφέρουν συναλλαγή Monero με εθνικά νομίσματα

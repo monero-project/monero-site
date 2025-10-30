@@ -184,8 +184,15 @@ merchants:
   dirdescr: 'Se stai cercando posti per spendere Monero, le cartelle in basso presentano
     alcune opzioni. Ricorda sempre di applicare la massima cautela prima di affidare
     loro i tuoi soldi:'
+  havenodescr: Protocollo P2P decentralizzato per il trading di Monero (XMR) con valute fiat 
+    e criptovalute, le comunicazioni vengono instradate con Tor. 
+    Non può essere utilizzato per lo scambio di XMR e altre valute, vedere Retoswap.
+  retoswapdescr: Un'istanza pubblica decentralizzata costruita da Haveno che fornisce 
+    una rete di trading P2P funzionante, utilizzando Monero e Tor.
   visitbisq: Visita Bisq
   visitlocalmonero: Visita LocalMonero
+  visithaveno: Visita Haveno
+  visitretoswap: Visita Retoswap
 sponsorships:
   intro: Le seguenti aziende sostengono il progetto Monero nel suo obiettivo di portare
     la privacy finanziaria nel mondo. Non potremmo essere più grati per i loro contributi.

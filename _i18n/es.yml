@@ -168,6 +168,8 @@ merchants:
   cardonion: 'Dirección Onion:'
   visitbisq: Visita Bisq
   visitlocalmonero: Visita LocalMonero
+  visithaveno: Visita Haveno
+  visitretoswap: Visita Retoswap
   centrexchanges: Plataformas de intercambio centralizadas (CEXs) e Intercambiadores
   swappersp: Los intercambiadores permiten a los usuarios intercambiar XMR por otras
     criptomonedas.
@@ -198,6 +200,11 @@ merchants:
   hodlhodldescr: Plataforma de intercambio Peer-to-Peer con fideicomiso sin custodia.
   locmondescr: Plataforma de intercambios Peer to Peer en línea que ofrece intercambios
     de persona a persona.
+  havenodescr: Protocolo P2P descentralizado para el intercambio de Monero (XMR)
+    con dinero fiduciario y criptomonedas, las comunicaciones se enrutan con Tor.
+    No se puede utilizar por sí mismo para intercambiar XMR y otras monedas, véase Retoswap.
+  retoswapscr: Una instancia pública descentralizada construida a partir de Haveno 
+    que proporciona una red de intercambio P2P en funcionamiento, utilizando Monero y Tor
   simpleswapdescr: Plataforma de intercambio instantánea sin custodia.
   cardbtcfiat: (es posible BTC &#8596; fiat)
   swapsdescr: Una nueva y emocionante forma de intercambiar Monero son los Intercambios

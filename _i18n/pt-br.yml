@@ -172,6 +172,11 @@ merchants:
     nova, então não temos muitos provedores de negociação ainda, mas você já pode
     vender XMR por BTC usando esse protocolo em
   bisqdescr: uma corretora P2P descentralizada com base no Bitcoin e Tor.
+  havenodescr: Protocolo P2P descentralizado para negociação de Monero (XMR) com moedas fiduciárias e
+    criptomoedas, as comunicações são encaminhadas com Tor. 
+    Não pode ser usado para troca de XMR e outras moedas, consulte Retoswap.
+  retoswapdescr: Uma instância pública descentralizada construída a partir do Haveno que fornece uma rede
+    de negociação P2P em funcionamento, usando Monero e Tor.
   cardfoss: 'Código-fonte:'
   descr: Nessa página você encontra lojas e comerciantes que aceitam Monero como forma
     de pagamento, além de corretoras que fazem troca de Monero por outras moedas.

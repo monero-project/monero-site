@@ -182,10 +182,17 @@ merchants:
   cardbtcfiat: (BTC &#8596; fiat posibil)
   hodlhodldescr: Platformă de tranzacționare P2P cu escrow noncustodial.
   locmondescr: Schimb valutar online P2P care oferă tranzacții de la persoană la persoană.
+  havenodescr: Protocol P2P descentralizat pentru tranzacționarea Monero (XMR) cu
+    monede fiduciare și criptomonede, comunicațiile fiind rutate prin Tor.
+    Nu poate fi utilizat pentru schimbul de XMR și alte monede, vezi Retoswap.
+  retoswapdescr: O instanță publică descentralizată construită din Haveno care oferă
+    o rețea de tranzacționare P2P funcțională, utilizând Monero și Tor.
   locnojs: (dar este disponibilă versiunea fără JS)
   simpleswapdescr: Schimb valutar instantaneu fără custodie.
   visitbisq: Vizitează Bisq
   visitlocalmonero: Vizitează LocalMonero
+  visithaveno: Vizitează Haveno
+  visitretoswap: Vizitează Retoswap
   visithodlhodl: Vizitează HodlHodl
   centrexchanges: Schimburi de valută centralizate (CEX) și Swappers
   centrexchangesp: Dacă preferi să utilizezi schimburi valutare centralizate, iată

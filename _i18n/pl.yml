@@ -196,10 +196,17 @@ merchants:
   noncustodial: 'Bez nadzoru:'
   hodlhodldescr: Platforma transakcyjna P2P z powiernictwem bez nadzoru.
   locmondescr: Internetowa giełda P2P oferująca transakcje między osobami.
+  havenodescr: Zdecentralizowany protokół P2P do handlu Monero (XMR) za pomocą walut 
+    fiducjarnych i kryptowalut, komunikacja jest kierowana przez Tor.
+    Nie może być używany do wymiany XMR i innych walut, zobacz Retoswap.
+  retoswapdescr: Zdecentralizowana instancja publiczna zbudowana na bazie Haveno,
+    która zapewnia działającą sieć handlową P2P, wykorzystującą Monero i Tor.
   depsell: Zależy od sprzedającego
   locnojs: (ale jest dostępna wersja bez JS)
   simpleswapdescr: Natychmiastowa giełda bez nadzoru.
   visitbisq: Odwiedź Bisq
+  visithaveno: Odwiedź Haveno
+  visitretoswap: Odwiedź Retoswap
   visithodlhodl: Odwiedź HodlHodl
   centrexchanges: Scentralizowane giełdy (CEXs) i natychmiastowi wymieniacze
   cexp: Scentralizowane giełdy, które oferują wymianę Monero na waluty krajowe i kryptowaluty.

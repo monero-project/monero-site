@@ -177,9 +177,16 @@ merchants:
   noncustodial: 'Nicht-Custodial (ohne Vormundschaft):'
   depsell: Es kommt auf den Verkäufer an
   locmondescr: Online-P2P-Börse für den Handel von Privat zu Privat.
+  havenodescr: Dezentrales P2P-Protokoll für den Handel mit Monero (XMR) mit Fiat- 
+    und Kryptowährungen, die Kommunikation wird über Tor geleitet. 
+    Kann selbst nicht für den Austausch von XMR und anderen Währungen verwendet werden, siehe Retoswap.
+  retoswapdescr: Eine dezentrale öffentliche Instanz, die auf Haveno basiert 
+    und ein laufendes P2P-Handelsnetzwerk unter Verwendung von Monero und Tor bereitstellt.
   hodlhodldescr: P2P-Handelsplattform mit unpfändbarer Treuhand.
   visitbisq: Besuche Bisq
   visitlocalmonero: Besuche LocalMonero
+  visithaveno: Besuche Haveno
+  visitretoswap: Besuche Retoswap
   visithodlhodl: Besuche HodlHodl
   cexp: Zentralisierte Börsen, die den Umtausch von Monero gegen nationale Währungen
     und Kryptowährungen anbieten.

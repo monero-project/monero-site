@@ -175,11 +175,18 @@ merchants:
   cardbtcfiat: (BTC &#8596; possibilité de fiat)
   cardonion: 'Adresse Onion :'
   locmondescr: Bourse en ligne P2P offrant des trades de personne-à-personne.
+  havenodescr: Protocole P2P décentralisé pour échanger des Monero (XMR) contre des 
+    monnaies fiduciaires et cryptographiques, les communications sont acheminées via Tor.
+    Ne peut pas être utilisé pour échanger des XMR et d'autres devises, voir Retoswap.
+  retoswapdescr: Une instance publique décentralisée construite à partir de Haveno qui fournit 
+    un réseau d'échange P2P fonctionnel, utilisant Monero et Tor.
   depsell: Dépend du vendeur
   locnojs: (Mais la version non-JS est disponible)
   simpleswapdescr: Plateforme d’échanges décentralisée.
   visitbisq: Visitez Bisq
   visitlocalmonero: Visitez LocalMonero
+  visithaveno: Visitez Haveno
+  visitretoswap: Visitez Retoswap
   visithodlhodl: Visitez HodlHodl
   centrexchanges: Exchanges centralisés (CEXs) & Swappers
   centrexchangesp: Si vous préférez utiliser des exchanges centralisés, voilà une
