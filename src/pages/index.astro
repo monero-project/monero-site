@@ -8,6 +8,9 @@ import placeholder from "../assets/icons/mask/placeholder.avif?url";
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
+import userGuidesIcon from "@/assets/icons/mask/user-guides.avif?url";
+import faqIcon from "@/assets/icons/mask/faq.avif?url";
+
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 ---
@@ -89,14 +92,14 @@ const t = await createTInstance(locale);
           description={t("index.faqDesc")}
           ctaLabel={t("index.faqCta")}
           ctaHref={localizeHref(locale, "/get-started/faq")}
-          icon={placeholder}
+          icon={faqIcon}
         />
         <ResourceCard
           title={t("index.userGuidesTitle")}
           description={t("index.userGuidesDesc")}
           ctaLabel={t("index.userGuidesCta")}
           ctaHref={localizeHref(locale, "/resources/user-guides")}
-          icon={placeholder}
+          icon={userGuidesIcon}
         />
         <ResourceCard
           title={t("index.devGuidesTitle")}
@@ -112,22 +115,23 @@ const t = await createTInstance(locale);
 
 <style>
   :root {
-    --hero-min-height: calc(80vh + 3rem);
+    --hero-min-height: calc(75vh + 3rem);
   }
 
   @supports (height: 100dvh) {
     :root {
-      --hero-min-height: calc(80dvh + 3rem);
+      --hero-min-height: calc(75dvh + 3rem);
     }
   }
 
   h2 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-3xl);
     color: var(--heading-color);
   }
   p {
     margin: 0;
     color: var(--paragraph-subtitle);
+    font-size: var(--font-size-lg);
   }
 
   hr {

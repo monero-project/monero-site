@@ -2,14 +2,13 @@
 export interface Props {
   src: string;
   size?: string;
-  class?: string;
 }
 
-const { src, size = "1em", class: className = "" } = Astro.props;
+const { src, size = "1em" } = Astro.props;
 ---
 
 <div
-  class={`icon ${className}`}
+  class={`icon`}
   style={`--icon-src: url(${src}); width: ${size}; height: ${size};`}
 >
 </div>

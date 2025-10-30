@@ -22,7 +22,7 @@ const {
   {
     icon && (
       <div class="icon">
-        <img src={icon} alt="" />
+        <MaskIcon src={icon} size="100%" />
       </div>
     )
   }
@@ -54,14 +54,14 @@ const {
   }
 
   .icon {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border: 1px solid var(--border-color);
     border-radius: 50%;
     display: gris;
     place-items: center;
     margin: 1rem 0 1.6rem 0;
-    padding: 1rem;
+    padding: 1.5rem;
     color: var(--monero-orange);
   }
 
@@ -73,7 +73,7 @@ const {
 
   .title {
     margin: 0 0 0.8rem;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     font-weight: 700;
     color: var(--heading-color);
   }
