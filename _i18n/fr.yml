@@ -174,12 +174,10 @@ merchants:
   cardkyc: '<b>Pas de KYC</b> (Connaissez votre client) :'
   cardbtcfiat: (BTC &#8596; possibilité de fiat)
   cardonion: 'Adresse Onion :'
-  locmondescr: Bourse en ligne P2P offrant des trades de personne-à-personne.
   depsell: Dépend du vendeur
   locnojs: (Mais la version non-JS est disponible)
   simpleswapdescr: Plateforme d’échanges décentralisée.
   visitbisq: Visitez Bisq
-  visitlocalmonero: Visitez LocalMonero
   visithodlhodl: Visitez HodlHodl
   centrexchanges: Exchanges centralisés (CEXs) & Swappers
   centrexchangesp: Si vous préférez utiliser des exchanges centralisés, voilà une

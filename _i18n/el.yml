@@ -1332,13 +1332,10 @@ merchants:
   cardonion: 'Διεύθυνση Onion:'
   noncustodial: 'Non-custodial (χωρίς επιμέλεια):'
   hodlhodldescr: Πλατφόρμα συναλλαγών P2P με non-custodial (χωρίς επιμέλεια) escrow.
-  locmondescr: Διαδικτυακό ανταλλακτήριο P2P που προσφέρει συναλλαγές από άτομο σε
-    άτομο.
   depsell: Εξαρτάται από τον πωλητή
   locnojs: (αλλά δεν υπάρχει διαθέσιμη έκδοση JS)
   simpleswapdescr: Άμεση non-custodial (χωρίς επιμέλεια) συναλλαγή.
   visitbisq: Επισκεφθείτε το Bisq
-  visitlocalmonero: Επισκεφθείτε το LocalMonero
   visithodlhodl: Επισκεφθείτε το HodlHodl
   centrexchanges: Κεντροποιημένα ανταλλακτήρια (CEXs) & Swappers
   cexp: Κεντροποιημένα ανταλλακτήρια που προσφέρουν συναλλαγή Monero με εθνικά νομίσματα

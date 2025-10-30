@@ -167,7 +167,6 @@ merchants:
   cardkyc: '<b>Sin KYC</b> (Conoce a tu cliente):'
   cardonion: 'Dirección Onion:'
   visitbisq: Visita Bisq
-  visitlocalmonero: Visita LocalMonero
   centrexchanges: Plataformas de intercambio centralizadas (CEXs) e Intercambiadores
   swappersp: Los intercambiadores permiten a los usuarios intercambiar XMR por otras
     criptomonedas.
@@ -196,8 +195,6 @@ merchants:
   locnojs: (pero no hay versión JS disponible)
   noncustodial: 'Sin custodia:'
   hodlhodldescr: Plataforma de intercambio Peer-to-Peer con fideicomiso sin custodia.
-  locmondescr: Plataforma de intercambios Peer to Peer en línea que ofrece intercambios
-    de persona a persona.
   simpleswapdescr: Plataforma de intercambio instantánea sin custodia.
   cardbtcfiat: (es posible BTC &#8596; fiat)
   swapsdescr: Una nueva y emocionante forma de intercambiar Monero son los Intercambios
