@@ -56,8 +56,7 @@ På Linux kan du laste ned binaryFates signaturnøkkel ved å eksekvere
 følgende kommando:
 
 ```
-wget -O binaryfate.asc
-https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
+wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
 ### Verify Signing Key
