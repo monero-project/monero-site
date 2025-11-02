@@ -2,10 +2,8 @@
 import Layout from "@/layouts/Layout.astro";
 import TitleCard from "../components/ui/TitleCard.astro";
 import Tabs from "../components/ui/Tabs.astro";
-import Dropdown from "@/components/ui/dropdown/Dropdown.astro";
-import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
-import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
 import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
+import CoreCard from "../components/pages/downloads/CoreCard.astro";
 ---
 
 <Layout>
@@ -14,177 +12,155 @@ import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
     <Fragment slot="panel-0" id="core-tab">
       <div class="downloads-grid">
         <!-- Monero GUI Card -->
-        <div class="download-card">
-          <div class="card-image">
-            <img src="/media/gui.png" alt="Monero GUI Wallet" />
-          </div>
-          <div class="card-content">
-            <h3 class="card-title">Monero GUI Wallet</h3>
-            <p class="card-subtitle">
-              Graphical wallet developed by the Monero community
-            </p>
-            <ul class="card-features">
-              <li>
-                <b>Simple mode</b> for beginners to easily send and receive XMR
-              </li>
-              <li>
-                <b>Advanced mode</b> with full control over wallet and node
-              </li>
-              <li><b>Merchant page</b> for easily accepting XMR payments</li>
-              <li>
-                Compatible with <b>Trezor</b> and <b>Ledger</b> hardware wallets
-              </li>
-              <li><b>In-app fiat conversion</b></li>
-              <li><b>Blockchain pruning</b> to save disk space</li>
-              <li>Available in <b>30+ languages</b></li>
-            </ul>
-            <div class="download-actions">
-              <Dropdown label="Download">
-                <DropdownItem href="https://downloads.getmonero.org/gui/win64install">
-                  <span>🪟 Windows (Installer)</span>
-                  <span slot="meta">50MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/gui/win64">
-                  <span>🪟 Windows (.zip)</span>
-                  <span slot="meta">45MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-
-                <DropdownItem href="https://downloads.getmonero.org/gui/mac64">
-                  <span>🍎 macOS (Intel)</span>
-                  <span slot="meta">55MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/gui/macarm8">
-                  <span>🍎 macOS (Apple Silicon)</span>
-                  <span slot="meta">52MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-
-                <DropdownItem href="https://downloads.getmonero.org/gui/linux64">
-                  <span>🐧 Linux (Tarball)</span>
-                  <span slot="meta">48MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-
-                <DropdownItem href="https://github.com/monero-project/monero-gui" target="_blank">
-                  <span>📦 Source Code</span>
-                </DropdownItem>
-              </Dropdown>
-            </div>
-            <div class="verification">
-              <h4>Verify Downloads</h4>
-              <p>
-                After downloading, verify the integrity using the provided
-                hashes:
-              </p>
-              <a href="#" class="verify-link">View Hashes & Signatures</a>
-            </div>
-          </div>
-        </div>
+        <CoreCard
+          image="/media/gui.png"
+          imageAlt="Monero GUI Wallet"
+          title="Monero GUI Wallet"
+          subtitle="Graphical wallet developed by the Monero community"
+          version="0.18.3.4"
+          releaseNotesUrl="https://github.com/monero-project/monero-gui/releases/tag/v0.18.3.4"
+          sourceCodeUrl="https://github.com/monero-project/monero-gui"
+          features={[
+            "<b>Simple mode</b> for beginners to easily send and receive XMR",
+            "<b>Advanced mode</b> with full control over wallet and node",
+            "<b>Merchant page</b> for easily accepting XMR payments",
+            "Compatible with <b>Trezor</b> and <b>Ledger</b> hardware wallets",
+            "<b>In-app fiat conversion</b>",
+            "<b>Blockchain pruning</b> to save disk space",
+            "Available in <b>30+ languages</b>",
+          ]}
+          downloads={[
+            {
+              href: "https://downloads.getmonero.org/gui/win64install",
+              label: "Windows (Installer)",
+              size: "50MB",
+              platform: "windows",
+            },
+            {
+              href: "https://downloads.getmonero.org/gui/win64",
+              label: "Windows (.zip)",
+              size: "45MB",
+              platform: "windows",
+            },
+            "separator",
+            {
+              href: "https://downloads.getmonero.org/gui/mac64",
+              label: "macOS (Intel)",
+              size: "55MB",
+              platform: "macos",
+            },
+            {
+              href: "https://downloads.getmonero.org/gui/macarm8",
+              label: "macOS (Apple Silicon)",
+              size: "52MB",
+              platform: "macos",
+            },
+            "separator",
+            {
+              href: "https://downloads.getmonero.org/gui/linux64",
+              label: "Linux (Tarball)",
+              size: "48MB",
+              platform: "linux",
+            },
+          ]}
+        />
 
         <!-- Monero CLI Card -->
-        <div class="download-card">
-          <div class="card-image">
-            <img src="/media/cli.png" alt="Monero CLI Tools" />
-          </div>
-          <div class="card-content">
-            <h3 class="card-title">Monero CLI Tools</h3>
-            <p class="card-subtitle">
-              Command-line interface for advanced users
-            </p>
-            <ul class="card-features">
-              <li>Choose between local or remote node for blockchain access</li>
-              <li>Send transactions over Tor or I2P for extra privacy</li>
-              <li>
-                Use bootstrap node for immediate access while syncing locally
-              </li>
-              <li>Compatible with Trezor and Ledger hardware wallets</li>
-              <li>Includes RPC wallet, ZMQ interface and daemon</li>
-              <li>Blockchain pruning saves disk space</li>
-            </ul>
-            <div class="download-actions">
-              <Dropdown label="Download">
-                <DropdownItem href="https://downloads.getmonero.org/cli/win64">
-                  <span>🪟 Windows (64-bit)</span>
-                  <span slot="meta">50MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/cli/win32">
-                  <span>🪟 Windows (32-bit)</span>
-                  <span slot="meta">45MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-
-                <DropdownItem href="https://downloads.getmonero.org/cli/mac64">
-                  <span>🍎 macOS (Intel)</span>
-                  <span slot="meta">55MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/cli/macarm8">
-                  <span>🍎 macOS (Apple Silicon)</span>
-                  <span slot="meta">52MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-
-                <DropdownItem href="https://downloads.getmonero.org/cli/linux64">
-                  <span>🐧 Linux (64-bit)</span>
-                  <span slot="meta">48MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/cli/linux32">
-                  <span>🐧 Linux (32-bit)</span>
-                  <span slot="meta">48MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/cli/linuxarm8">
-                  <span>🐧 Linux (ARMv8)</span>
-                  <span slot="meta">48MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/cli/linuxarm7">
-                  <span>🐧 Linux (ARMv7)</span>
-                  <span slot="meta">48MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/cli/linuxriscv64">
-                  <span>🐧 Linux (RISC-V 64-bit)</span>
-                  <span slot="meta">48MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-                
-                <DropdownItem href="https://downloads.getmonero.org/cli/androidarm8">
-                  <span>🤖 Android (ARMv8)</span>
-                  <span slot="meta">40MB</span>
-                </DropdownItem>
-                <DropdownItem href="https://downloads.getmonero.org/cli/androidarm7">
-                  <span>🤖 Android (ARMv7)</span>
-                  <span slot="meta">40MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-
-                <DropdownItem href="https://downloads.getmonero.org/cli/freebsd64">
-                  <span>👹 FreeBSD (64-bit)</span>
-                  <span slot="meta">46MB</span>
-                </DropdownItem>
-
-                <DropdownSeparator />
-
-                <DropdownItem href="https://github.com/monero-project/monero" target="_blank">
-                  <span>📦 Source Code</span>
-                </DropdownItem>
-              </Dropdown>
-            </div>
-            <div class="verification">
-              <h4>Verify Downloads</h4>
-              <p>
-                After downloading, verify the integrity using the provided
-                hashes:
-              </p>
-              <a href="#" class="verify-link">View Hashes & Signatures</a>
-            </div>
-          </div>
-        </div>
+        <CoreCard
+          image="/media/cli.png"
+          imageAlt="Monero CLI Tools"
+          title="Monero CLI Tools"
+          subtitle="Command-line interface for advanced users"
+          version="0.18.3.4"
+          releaseNotesUrl="https://github.com/monero-project/monero/releases/tag/v0.18.3.4"
+          sourceCodeUrl="https://github.com/monero-project/monero"
+          features={[
+            "Choose between local or remote node for blockchain access",
+            "Send transactions over Tor or I2P for extra privacy",
+            "Use bootstrap node for immediate access while syncing locally",
+            "Compatible with Trezor and Ledger hardware wallets",
+            "Includes RPC wallet, ZMQ interface and daemon",
+            "Blockchain pruning saves disk space",
+          ]}
+          downloads={[
+            {
+              href: "https://downloads.getmonero.org/cli/win64",
+              label: "Windows (64-bit)",
+              size: "50MB",
+              platform: "windows",
+            },
+            {
+              href: "https://downloads.getmonero.org/cli/win32",
+              label: "Windows (32-bit)",
+              size: "45MB",
+              platform: "windows",
+            },
+            "separator",
+            {
+              href: "https://downloads.getmonero.org/cli/mac64",
+              label: "macOS (Intel)",
+              size: "55MB",
+              platform: "macos",
+            },
+            {
+              href: "https://downloads.getmonero.org/cli/macarm8",
+              label: "macOS (Apple Silicon)",
+              size: "52MB",
+              platform: "macos",
+            },
+            "separator",
+            {
+              href: "https://downloads.getmonero.org/cli/linux64",
+              label: "Linux (64-bit)",
+              size: "48MB",
+              platform: "linux",
+            },
+            {
+              href: "https://downloads.getmonero.org/cli/linux32",
+              label: "Linux (32-bit)",
+              size: "48MB",
+              platform: "linux",
+            },
+            {
+              href: "https://downloads.getmonero.org/cli/linuxarm8",
+              label: "Linux (ARMv8)",
+              size: "48MB",
+              platform: "linux",
+            },
+            {
+              href: "https://downloads.getmonero.org/cli/linuxarm7",
+              label: "Linux (ARMv7)",
+              size: "48MB",
+              platform: "linux",
+            },
+            {
+              href: "https://downloads.getmonero.org/cli/linuxriscv64",
+              label: "Linux (RISC-V 64-bit)",
+              size: "48MB",
+              platform: "linux",
+            },
+            "separator",
+            {
+              href: "https://downloads.getmonero.org/cli/androidarm8",
+              label: "Android (ARMv8)",
+              size: "40MB",
+              platform: "android",
+            },
+            {
+              href: "https://downloads.getmonero.org/cli/androidarm7",
+              label: "Android (ARMv7)",
+              size: "40MB",
+              platform: "android",
+            },
+            "separator",
+            {
+              href: "https://downloads.getmonero.org/cli/freebsd64",
+              label: "FreeBSD (64-bit)",
+              size: "46MB",
+              platform: "freebsd",
+            },
+          ]}
+        />
       </div>
     </Fragment>
 
@@ -242,7 +218,10 @@ import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
             logo="/media/monerujo.png"
             name="Monerujo"
             description="A Monero wallet for Android with advanced features."
-            tags={{ mobile: ["android"], general: ["Apache 2.0", "QR Signing"] }}
+            tags={{
+              mobile: ["android"],
+              general: ["Apache 2.0", "QR Signing"],
+            }}
             link="https://monerujo.io"
           />
           <CommunityCard
@@ -365,132 +344,9 @@ import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
     margin: 2rem 0;
   }
 
-  .download-card {
-    display: flex;
-    flex-direction: column;
-    background: var(--card-color);
-    border-radius: 1rem;
-    padding: 1.25rem;
-    gap: 1.25rem;
-  }
-
-  .card-image {
-    position: relative;
-    border-radius: 0.75rem;
-    overflow: hidden;
-  }
-
-  .card-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .card-title {
-    font-size: var(--font-size-2xl);
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-    margin: 0;
-  }
-
-  .card-subtitle {
-    font-size: var(--font-size-lg);
-    color: var(--paragraph-subtitle);
-    margin: 0;
-  }
-
-  .card-features {
-    list-style-position: inside;
-    padding: 0;
-    margin: 0.25rem 0 0 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .card-features li {
-    font-size: var(--font-size-base);
-    color: var(--paragraph-main);
-    line-height: var(--line-height-body);
-  }
-  .card-features li::marker {
-    color: var(--monero-orange);
-  }
-
-  .download-actions {
-    margin-top: 0.5rem;
-  }
-
-  .verification {
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border-color);
-  }
-
-  .verification h4 {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-    margin: 0 0 0.5rem 0;
-  }
-
-  .verification p {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-main);
-    margin: 0 0 0.5rem 0;
-  }
-
-  .verify-link {
-    color: var(--monero-orange);
-    text-decoration: none;
-    font-weight: var(--font-weight-medium);
-  }
-
-  .verify-link:hover {
-    text-decoration: underline;
-  }
-
-  @media (min-width: 900px) {
-    .download-card {
-      flex-direction: row;
-      align-items: stretch;
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .card-image {
-      width: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* preserves aspect ratio */
-    }
-
-    .card-content {
-      flex: 1 1 0%;
-      min-width: 0; /* prevent overflow from long text */
-    }
-  }
-
   @media (min-width: 1024px) {
     .downloads-grid {
       gap: 3rem;
-    }
-
-    .download-card {
-      padding: 2.25rem;
-      border-radius: 1.25rem;
     }
   }
 </style>

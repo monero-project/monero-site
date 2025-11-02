@@ -1,0 +1,305 @@
+---
+import Dropdown from "@/components/ui/dropdown/Dropdown.astro";
+import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
+import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
+import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
+import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
+import freebsdIcon from "@/assets/icons/mask/brand/freebsd.avif?url";
+import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
+
+interface DownloadLink {
+  href: string;
+  label: string;
+  size?: string;
+  target?: string;
+  platform?: "windows" | "macos" | "linux" | "android" | "freebsd";
+}
+
+interface Props {
+  image: string;
+  imageAlt: string;
+  title: string;
+  subtitle: string;
+  features: string[];
+  downloads: (DownloadLink | "separator")[];
+  sourceCodeUrl?: string;
+  version?: string;
+  releaseNotesUrl?: string;
+  verifyLink?: string;
+}
+
+const {
+  image,
+  imageAlt,
+  title,
+  subtitle,
+  features,
+  downloads,
+  sourceCodeUrl,
+  version,
+  releaseNotesUrl,
+  verifyLink,
+} = Astro.props;
+
+const PLATFORM_ICONS: Record<string, string> = {
+  windows: windowsIcon,
+  macos: appleIcon,
+  linux: linuxIcon,
+  android: androidIcon,
+  freebsd: freebsdIcon,
+};
+---
+
+<div class="download-card">
+  <div class="card-image">
+    <img src={image} alt={imageAlt} />
+  </div>
+  <div class="card-content">
+    <h3 class="card-title">{title}</h3>
+    <p class="card-subtitle">
+      {subtitle}
+    </p>
+    <ul class="card-features">
+      {features.map((feature) => <li set:html={feature} />)}
+    </ul>
+    <div class="download-actions">
+      <Dropdown label="Download">
+        {
+          downloads.map((item) =>
+            item === "separator" ? (
+              <DropdownSeparator />
+            ) : (
+              <DropdownItem href={item.href} target={item.target}>
+                <span class="dropdown-label">
+                  {item.platform && (
+                    <span class="platform-icon">
+                      <MaskIcon
+                        src={PLATFORM_ICONS[item.platform]}
+                        size="1em"
+                      />
+                    </span>
+                  )}
+                  <span>{item.label}</span>
+                </span>
+                {item.size && <span slot="meta">{item.size}</span>}
+              </DropdownItem>
+            ),
+          )
+        }
+      </Dropdown>
+    </div>
+    <div class="metadata-links">
+      {version && <span class="version-text">v{version}</span>}
+      {
+        releaseNotesUrl && (
+          <>
+            {version && <span class="separator">·</span>}
+            <a
+              href={releaseNotesUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="metadata-link"
+            >
+              Release notes
+            </a>
+          </>
+        )
+      }
+      {
+        sourceCodeUrl && (
+          <>
+            {(version || releaseNotesUrl) && <span class="separator">·</span>}
+            <a
+              href={sourceCodeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="metadata-link"
+            >
+              Source code
+            </a>
+          </>
+        )
+      }
+    </div>
+    <div class="verification">
+      <h4>Verify Downloads</h4>
+      <p>After downloading, verify the integrity using the provided hashes:</p>
+      <a href={verifyLink ?? "#"} class="verify-link"
+        >View Hashes & Signatures</a
+      >
+    </div>
+  </div>
+</div>
+
+<style>
+  .download-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-color);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .card-image {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .card-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 0;
+  }
+
+  .card-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--paragraph-subtitle);
+    margin: 0;
+  }
+
+  .card-features {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0.25rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .card-features li {
+    font-size: var(--font-size-base);
+    color: var(--paragraph-main);
+    line-height: var(--line-height-body);
+  }
+  .card-features li::marker {
+    color: var(--monero-orange);
+  }
+
+  .download-actions {
+    margin-top: 0.5rem;
+  }
+
+  .metadata-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: var(--font-size-sm);
+    flex-wrap: wrap;
+  }
+
+  .version-text {
+    color: var(--paragraph-subtitle);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .separator {
+    color: var(--paragraph-subtitle);
+    opacity: 0.5;
+  }
+
+  .metadata-link {
+    color: var(--paragraph-main);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+
+  .metadata-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .verification {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .verification h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .verification p {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-main);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .verify-link {
+    color: var(--monero-orange);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+  }
+
+  .verify-link:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .platform-icon {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.6;
+  }
+
+  @media (min-width: 900px) {
+    .download-card {
+      flex-direction: row;
+      align-items: stretch;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card-image {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* preserves aspect ratio */
+    }
+
+    .card-content {
+      flex: 1 1 0%;
+      min-width: 0; /* prevent overflow from long text */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .download-card {
+      padding: 2.25rem;
+      border-radius: 1.25rem;
+    }
+  }
+</style>

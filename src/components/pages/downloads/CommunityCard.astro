@@ -2,6 +2,11 @@
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import externalLink from "@/assets/icons/mask/external-link.avif?url";
 
+import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
+import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
+import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
+import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
+
 interface Tags {
   desktop?: string[]; // windows | macos | linux (aliases: win, mac, osx)
   mobile?: string[]; // android | ios
@@ -30,19 +35,20 @@ const ALIAS: Record<string, string> = {
   osx: "macos",
 };
 
+const ICONS: Record<string, string> = {
+  windows: windowsIcon,
+  macos: appleIcon,
+  linux: linuxIcon,
+  android: androidIcon,
+  ios: appleIcon,
+};
+
 const LABEL: Record<string, string> = {
   windows: "Windows",
   macos: "macOS",
   linux: "Linux",
   android: "Android",
   ios: "iOS",
-};
-const EMOJI: Record<string, string> = {
-  windows: "🪟",
-  macos: "🍎",
-  linux: "🐧",
-  android: "🤖",
-  ios: "📱",
 };
 
 const VALID = {
@@ -106,9 +112,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
             <ul class="list" role="list">
               {desktop.map((key) => (
                 <li class="pill" title={LABEL[key]}>
-                  <span class="emoji" aria-hidden="true">
-                    {EMOJI[key]}
-                  </span>
+                  <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />
                 </li>
               ))}
             </ul>
@@ -120,9 +124,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
             <ul class="list" role="list">
               {mobile.map((key) => (
                 <li class="pill" title={LABEL[key]}>
-                  <span class="emoji" aria-hidden="true">
-                    {EMOJI[key]}
-                  </span>
+                  <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />
                 </li>
               ))}
             </ul>
@@ -204,9 +206,6 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
     font-size: var(--font-size-xs, 0.85rem);
     color: var(--paragraph-main);
     line-height: 1;
-  }
-  .emoji {
-    font-size: 1rem;
   }
   .tag-text {
     letter-spacing: 0.01em;
