@@ -4,13 +4,14 @@ const { t } = Astro.props;
 const locale = getLocale(Astro.url);
 import moneroOutline from "@/assets/icons/mask/monerooutline.avif?url";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+import Button from "@/components/ui/Button.astro";
 ---
 
 <div class="hero" aria-labelledby="hero-title">
   <div class="background-logo" aria-hidden="true">
     <div class="logo-box">
       <div class="mask-icon">
-        <MaskIcon src={moneroOutline} size="100%"  />
+        <MaskIcon src={moneroOutline} size="100%" />
       </div>
       <div class="inner-circle"></div>
     </div>
@@ -28,15 +29,17 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
     </p>
 
     <div class="actions">
-      <a
-        class="btn primary"
+      <Button
+        variant="primary"
+        class="hero-button"
         href={localizeHref(locale, "/get-started/what-is-monero")}
-        >{t("index.hero.getStarted")}</a
+        >{t("index.hero.getStarted")}</Button
       >
-      <a
-        class="btn ghost"
+      <Button
+        variant="secondary"
+        class="hero-button"
         href={localizeHref(locale, "/resources/knowledge-base")}
-        >{t("index.hero.learnMore")}</a
+        >{t("index.hero.learnMore")}</Button
       >
     </div>
   </div>
@@ -85,57 +88,20 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 
   .actions {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.75rem;
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
     max-width: 100%;
   }
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1.25rem;
-    border-radius: 999px;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition:
-      transform 0.08s ease,
-      opacity 0.12s ease;
-    width: 100%;
-    max-width: 20rem;
-    box-sizing: border-box;
-  }
-  .btn:hover,
-  .btn:focus {
-    opacity: 0.9;
-    outline: none;
-  }
-  .btn:active {
-    transform: translateY(1px);
-  }
-  .primary {
-    background: var(--monero-orange);
-    color: white;
-  }
-  .ghost {
-    background: var(--text-color);
-    color: var(--bg-color);
-  }
 
-  @media (min-width: 640px) {
+  @media (max-width: 640px) {
+    .hero-button {
+      width: 100%;
+    }
     .actions {
-      flex-direction: row;
-    }
-    .btn {
-      width: auto;
-    }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .btn {
-      transition: none;
+      flex-direction: column;
     }
   }
 
@@ -173,6 +139,6 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
     position: absolute;
     inset: 10%;
     border-radius: 50%;
-    box-shadow: inset 0px 0px 30px #DC4E2E80;
+    box-shadow: inset 0px 0px 30px #dc4e2e80;
   }
 </style>

@@ -1,11 +1,507 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import TitleCard from "../components/ui/TitleCard.astro";
+import Tabs from "../components/ui/Tabs.astro";
+import Dropdown from "@/components/ui/dropdown/Dropdown.astro";
+import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
+import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
+import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
 ---
 
 <Layout>
-  <TitleCard
-    title="Downloads"
-    subtitle="Get the official Monero wallet and software."
-  />
+  <TitleCard title="Downloads" subtitle="Get Monero wallets and software." />
+  <Tabs labels={["Core", "Community"]} initial={0} id="download-tabs">
+    <Fragment slot="panel-0" id="core-tab">
+      <div class="downloads-grid">
+        <!-- Monero GUI Card -->
+        <div class="download-card">
+          <div class="card-image">
+            <img src="/media/gui.png" alt="Monero GUI Wallet" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Monero GUI Wallet</h3>
+            <p class="card-subtitle">
+              Graphical wallet developed by the Monero community
+            </p>
+            <ul class="card-features">
+              <li>
+                <b>Simple mode</b> for beginners to easily send and receive XMR
+              </li>
+              <li>
+                <b>Advanced mode</b> with full control over wallet and node
+              </li>
+              <li><b>Merchant page</b> for easily accepting XMR payments</li>
+              <li>
+                Compatible with <b>Trezor</b> and <b>Ledger</b> hardware wallets
+              </li>
+              <li><b>In-app fiat conversion</b></li>
+              <li><b>Blockchain pruning</b> to save disk space</li>
+              <li>Available in <b>30+ languages</b></li>
+            </ul>
+            <div class="download-actions">
+              <Dropdown label="Download">
+                <DropdownItem href="#">
+                  <span>🪟 Windows (Installer)</span>
+                  <span slot="meta">50MB</span>
+                </DropdownItem>
+                <DropdownItem href="#">
+                  <span>🪟 Windows (.zip)</span>
+                  <span slot="meta">45MB</span>
+                </DropdownItem>
+
+                <DropdownSeparator />
+
+                <DropdownItem href="#">
+                  <span>🍎 macOS (Intel)</span>
+                  <span slot="meta">55MB</span>
+                </DropdownItem>
+                <DropdownItem href="#">
+                  <span>🍎 macOS (Apple Silicon)</span>
+                  <span slot="meta">52MB</span>
+                </DropdownItem>
+
+                <DropdownSeparator />
+
+                <DropdownItem href="#">
+                  <span>🐧 Linux (Tarball)</span>
+                  <span slot="meta">48MB</span>
+                </DropdownItem>
+
+                <DropdownSeparator />
+
+                <DropdownItem href="#">
+                  <span>📦 Source Code</span>
+                </DropdownItem>
+              </Dropdown>
+            </div>
+            <div class="verification">
+              <h4>Verify Downloads</h4>
+              <p>
+                After downloading, verify the integrity using the provided
+                hashes:
+              </p>
+              <a href="#" class="verify-link">View Hashes & Signatures</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monero CLI Card -->
+        <div class="download-card">
+          <div class="card-image">
+            <img src="/media/cli.png" alt="Monero CLI Tools" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Monero CLI Tools</h3>
+            <p class="card-subtitle">
+              Command-line interface for advanced users
+            </p>
+            <ul class="card-features">
+              <li>Choose between local or remote node for blockchain access</li>
+              <li>Send transactions over Tor or I2P for extra privacy</li>
+              <li>
+                Use bootstrap node for immediate access while syncing locally
+              </li>
+              <li>Compatible with Trezor and Ledger hardware wallets</li>
+              <li>Includes RPC wallet, ZMQ interface and daemon</li>
+              <li>Blockchain pruning saves disk space</li>
+            </ul>
+            <div class="download-actions">
+              <Dropdown label="Download">
+                <DropdownItem href="#">
+                  <span>🪟 Windows (Installer)</span>
+                  <span slot="meta">50MB</span>
+                </DropdownItem>
+                <DropdownItem href="#">
+                  <span>🪟 Windows (.zip)</span>
+                  <span slot="meta">45MB</span>
+                </DropdownItem>
+
+                <DropdownSeparator />
+
+                <DropdownItem href="#">
+                  <span>🍎 macOS (Intel)</span>
+                  <span slot="meta">55MB</span>
+                </DropdownItem>
+                <DropdownItem href="#">
+                  <span>🍎 macOS (Apple Silicon)</span>
+                  <span slot="meta">52MB</span>
+                </DropdownItem>
+
+                <DropdownSeparator />
+
+                <DropdownItem href="#">
+                  <span>🐧 Linux (Tarball)</span>
+                  <span slot="meta">48MB</span>
+                </DropdownItem>
+
+                <DropdownSeparator />
+
+                <DropdownItem href="#">
+                  <span>🤖 Android</span>
+                  <span slot="meta">40MB</span>
+                </DropdownItem>
+                <DropdownItem href="#">
+                  <span>👹 FreeBSD</span>
+                  <span slot="meta">46MB</span>
+                </DropdownItem>
+
+                <DropdownSeparator />
+
+                <DropdownItem href="#">
+                  <span>📦 Source Code</span>
+                </DropdownItem>
+              </Dropdown>
+            </div>
+            <div class="verification">
+              <h4>Verify Downloads</h4>
+              <p>
+                After downloading, verify the integrity using the provided
+                hashes:
+              </p>
+              <a href="#" class="verify-link">View Hashes & Signatures</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+
+    <Fragment slot="panel-1" id="community-tab">
+      <div class="community-section">
+        <h2 class="section-title">Local Wallets</h2>
+        <p class="section-subtitle">
+          Wallets that scan the blockchain locally on your device for maximum
+          privacy.
+        </p>
+        <div class="cards-grid">
+          <CommunityCard
+            logo="/media/anonero.png"
+            name="Anonero"
+            description="A privacy-maximalising Monero wallet. Can be used as a DIY offline wallet solution through a dual app architecture."
+            tags={{
+              desktop: ["android"],
+              general: ["GPL-3.0"],
+            }}
+            link="https://x.com/anoneroio"
+            linkText="Learn more"
+          />
+          <CommunityCard
+            logo="/media/eigenwallet.png"
+            name="Eigenwallet"
+            description="Monero and Bitcoin wallet with built-in atomic swap capabilities."
+            tags={{
+              desktop: ["windows", "macos", "linux"],
+              general: ["GPL-3.0"],
+            }}
+            link="https://eigenwallet.org"
+          />
+          <CommunityCard
+            logo="/media/feather.png"
+            name="Feather Wallet"
+            description="A lightweight, fast, and feature-rich Monero desktop wallet."
+            tags={{
+              desktop: ["windows", "macos", "linux"],
+              general: ["BSD-3"],
+            }}
+            link="https://featherwallet.org"
+          />
+          <CommunityCard
+            logo="/media/monerocom.jpg"
+            name="Monero.com"
+            description="A Monero wallet available for iOS and Android. Developed by Cake Labs."
+            tags={{
+              mobile: ["android", "ios"],
+              desktop: ["windows", "linux"],
+              general: ["MIT"],
+            }}
+            link="https://monero.com"
+          />
+          <CommunityCard
+            logo="/media/monerujo.png"
+            name="Monerujo"
+            description="A Monero wallet for Android with advanced features."
+            tags={{ mobile: ["android"], general: ["Apache 2.0"] }}
+            link="https://monerujo.io"
+          />
+          <CommunityCard
+            logo="/meta/favicon-32x32.png"
+            name="Monfluo"
+            description="A pure Monero wallet for Android."
+            tags={{ mobile: ["android"], general: ["GPL-3.0"] }}
+            link="https://codeberg.org/acx/monfluo/releases"
+          />
+          <CommunityCard
+            logo="/media/stack-wallet.webp"
+            name="Stack Wallet"
+            description="A multi-coin wallet with Monero support for desktop and mobile."
+            tags={{
+              desktop: ["windows", "macos", "linux"],
+              mobile: ["android", "ios"],
+              general: ["GPL-3.0"],
+            }}
+            link="https://stackwallet.com"
+          />
+          <CommunityCard
+            logo="/media/unstoppable.png"
+            name="Unstoppable Wallet"
+            description="A multi-coin wallet supporting Monero."
+            tags={{ mobile: ["android", "ios"], general: ["MIT"] }}
+            link="https://unstoppable.money"
+          />
+        </div>
+
+        <h2 class="section-title">Server Wallets</h2>
+        <p class="section-subtitle">
+          Wallets that use remote servers to scan the blockchain for
+          convenience. Require sharing your private view key with the service.
+        </p>
+        <div class="cards-grid">
+          <CommunityCard
+            logo="/media/edge.png"
+            name="Edge Wallet"
+            description="A multicoin wallet with server-side syncing."
+            tags={{
+              mobile: ["android", "ios"],
+              general: ["BSD-3", "Remote scanning"],
+            }}
+            link="https://edge.app/monero-wallet/"
+          />
+        </div>
+
+        <h2 class="section-title">Node Software</h2>
+        <p class="section-subtitle">Alternative Monero node implementations.</p>
+        <div class="cards-grid">
+          <CommunityCard
+            logo="/media/cuprate.png"
+            name="Cuprate"
+            description="A fast and efficient Monero node implementation written in Rust."
+            tags={{
+              desktop: ["windows", "macos", "linux"],
+              general: ["MIT", "AGPL-3.0", "Alpha software"],
+            }}
+            link="https://github.com/Cuprate/cuprate"
+          />
+        </div>
+
+        <h2 class="section-title">Offline Wallets</h2>
+        <p class="section-subtitle">
+          Solutions for securely storing your Monero private keys offline.
+        </p>
+        <div class="cards-grid">
+          <CommunityCard
+            logo="/media/keystone.jpg"
+            name="Keystone"
+            tags={{ general: ["3 Pro"] }}
+            description="Hardware wallet with Monero support via third-party apps."
+            link="https://guide.keyst.one/docs/feather"
+            linkText="Learn more"
+          />
+          <CommunityCard
+            logo="/media/ledger.jpg"
+            name="Ledger"
+            tags={{ general: ["Nano S", "Nano X", "Flex", "Stax"] }}
+            description="Hardware wallet with Monero support via third-party apps."
+            link="https://support.ledger.com/article/360006352934-zd"
+            linkText="Learn more"
+          />
+          <CommunityCard
+            logo="/media/trezor.png"
+            name="Trezor"
+            description="Hardware wallet with Monero support via third-party apps."
+            tags={{ general: ["Model T", "Safe 3", "Safe 5", "Safe 7"] }}
+            link="https://trezor.io/coins/wallet/monero"
+            linkText="Learn more"
+          />
+          <CommunityCard
+            logo="/media/cupcake.png"
+            name="Cupcake"
+            description="Offline signer app for use with Monero.com"
+            tags={{ general: ["DIY"], mobile: ["android", "ios"] }}
+            link="https://docs.cakewallet.com/cupcake/"
+            linkText="Learn more"
+          />
+          <CommunityCard
+            logo="/media/trezor.png"
+            name="Sidekick"
+            description="Offline signer app for use with Monerujo"
+            tags={{ general: ["DIY"], mobile: ["android"] }}
+            link="https://sidekick.monerujo.app/"
+            linkText="Learn more"
+          />
+        </div>
+      </div>
+    </Fragment>
+  </Tabs>
 </Layout>
+
+<style>
+  /* Core downloads */
+  .downloads-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 2rem 0;
+  }
+
+  .download-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-color);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .card-image {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .card-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 0;
+  }
+
+  .card-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--paragraph-subtitle);
+    margin: 0;
+  }
+
+  .card-features {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0.25rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .card-features li {
+    font-size: var(--font-size-base);
+    color: var(--paragraph-main);
+    line-height: var(--line-height-body);
+  }
+  .card-features li::marker {
+    color: var(--monero-orange);
+  }
+
+  .download-actions {
+    margin-top: 0.5rem;
+  }
+
+  .verification {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .verification h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .verification p {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-main);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .verify-link {
+    color: var(--monero-orange);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+  }
+
+  .verify-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 900px) {
+    .download-card {
+      flex-direction: row;
+      align-items: stretch;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card-image {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* preserves aspect ratio */
+    }
+
+    .card-content {
+      flex: 1 1 0%;
+      min-width: 0; /* prevent overflow from long text */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .downloads-grid {
+      gap: 3rem;
+    }
+
+    .download-card {
+      padding: 2.25rem;
+      border-radius: 1.25rem;
+    }
+  }
+</style>
+
+<style>
+  /* Community */
+  .community-section {
+    margin: 2rem 0;
+  }
+
+  .section-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 2rem 0 1rem 0;
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.25rem;
+    padding: 1rem 0;
+  }
+
+  @media (max-width: 900px) {
+    .cards-grid {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>

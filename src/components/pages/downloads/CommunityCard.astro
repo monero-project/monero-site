@@ -1,0 +1,248 @@
+---
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import externalLink from "@/assets/icons/mask/external-link.avif?url";
+
+interface Tags {
+  desktop?: string[]; // windows | macos | linux (aliases: win, mac, osx)
+  mobile?: string[]; // android | ios
+  general?: string[];
+}
+
+interface Props {
+  logo: string;
+  name: string;
+  description: string;
+  tags?: Tags;
+  link: string;
+  linkText?: string;
+}
+
+const { logo, name, description, link, linkText } = Astro.props;
+const tags =
+  typeof Astro.props.tags === "object" && Astro.props.tags
+    ? (Astro.props.tags as Tags)
+    : {};
+
+const norm = (s: string) => (s || "").toLowerCase().trim();
+const ALIAS: Record<string, string> = {
+  win: "windows",
+  mac: "macos",
+  osx: "macos",
+};
+
+const LABEL: Record<string, string> = {
+  windows: "Windows",
+  macos: "macOS",
+  linux: "Linux",
+  android: "Android",
+  ios: "iOS",
+};
+const EMOJI: Record<string, string> = {
+  windows: "🪟",
+  macos: "🍎",
+  linux: "🐧",
+  android: "🤖",
+  ios: "📱",
+};
+
+const VALID = {
+  desktop: new Set(["windows", "macos", "linux"]),
+  mobile: new Set(["android", "ios"]),
+};
+
+function normalizeKeys(arr: string[] | undefined, set: Set<string>) {
+  return Array.from(
+    new Set( // remove duplicates post-normalization
+      (arr ?? [])
+        .map((s) => ALIAS[norm(s)] ?? norm(s))
+        .filter((k) => set.has(k)),
+    ),
+  );
+}
+
+const desktop = normalizeKeys(tags.desktop, VALID.desktop);
+const mobile = normalizeKeys(tags.mobile, VALID.mobile);
+
+const general = Array.from(
+  new Map((tags.general ?? []).map((label) => [norm(label), label])).values(),
+);
+
+const showTags = general.length > 0;
+const showPlatforms = desktop.length > 0 || mobile.length > 0;
+---
+
+<div class="community-card">
+  <header class="card-header" aria-label="Project">
+    <div class="card-logo" aria-hidden="true">
+      <img src={logo} alt={`${name} logo`} loading="lazy" decoding="async" />
+    </div>
+    <h3 class="card-title">{name}</h3>
+  </header>
+
+  <div class="card-description">
+    <p class="card-description-text">{description}</p>
+
+    {
+      showTags && (
+        <div class="card-tags" aria-label="Tags">
+          <ul class="list" role="list">
+            {general.map((label) => (
+              <li class="pill" title={label}>
+                <span class="tag-text">{label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  </div>
+
+  {
+    showPlatforms && (
+      <div class="card-platforms" aria-label="Supported platforms">
+        {desktop.length > 0 && (
+          <div class="platform-row">
+            <span class="platforms-label">Desktop:</span>
+            <ul class="list" role="list">
+              {desktop.map((key) => (
+                <li class="pill" title={LABEL[key]}>
+                  <span class="emoji" aria-hidden="true">
+                    {EMOJI[key]}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {mobile.length > 0 && (
+          <div class="platform-row">
+            <span class="platforms-label">Mobile:</span>
+            <ul class="list" role="list">
+              {mobile.map((key) => (
+                <li class="pill" title={LABEL[key]}>
+                  <span class="emoji" aria-hidden="true">
+                    {EMOJI[key]}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  <a href={link} class="visit-link" target="_blank" rel="noopener noreferrer">
+    <span>{linkText ?? "Visit website"}</span>
+    <MaskIcon src={externalLink} size="1em" aria-hidden="true" />
+  </a>
+</div>
+
+<style>
+  .community-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: var(--card-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: background 0.3s ease;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .card-logo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  .card-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .card-title {
+    margin: 0;
+    line-height: 1.2;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+  }
+  .card-description-text {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-main);
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--card-color), black 10%);
+    font-size: var(--font-size-xs, 0.85rem);
+    color: var(--paragraph-main);
+    line-height: 1;
+  }
+  .emoji {
+    font-size: 1rem;
+  }
+  .tag-text {
+    letter-spacing: 0.01em;
+  }
+
+  .card-platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-top: 0.5rem;
+  }
+  .platform-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5rem;
+    align-items: start;
+  }
+  .platforms-label {
+    white-space: nowrap;
+    align-self: center;
+    font-size: var(--font-size-xs, 0.85rem);
+    color: var(--paragraph-main);
+    opacity: 0.9;
+  }
+
+  .visit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--monero-orange);
+    text-decoration: none;
+  }
+  .visit-link:hover {
+    text-decoration: underline;
+  }
+</style>

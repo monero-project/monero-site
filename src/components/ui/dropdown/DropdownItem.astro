@@ -1,0 +1,44 @@
+---
+interface Props {
+  href?: string;
+  target?: string;
+  rel?: string;
+}
+const { href = "#", target, rel } = Astro.props;
+---
+
+<a href={href} target={target} rel={rel} class={`dropdown-item`}>
+  <span class="label"><slot /></span>
+  {
+    Astro.slots.has("meta") && (
+      <span class="meta">
+        <slot name="meta" />
+      </span>
+    )
+  }
+</a>
+
+<style>
+  .dropdown-item {
+    padding: 0.75rem;
+    color: var(--heading-color);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+  }
+  .dropdown-item:hover {
+    background: var(--card-hover-color);
+  }
+
+  .meta {
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-normal);
+    margin-left: 3rem;
+  }
+</style>
