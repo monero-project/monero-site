@@ -63,4 +63,4 @@ If you'd like to support my development effort, consider sending a tip to the Mo
 
 - [Astro Documentation](https://docs.astro.build)
 - [Monero Project](https://www.getmonero.org)
-- [Diego's Figma](https://www.figma.com/design/OuY892nD4zD1CEQDvC2Kty/Monero-Website-Redesign-2024--Copy-?node-id=112-1178&t=Bfi1eK3wLkZeoNXG-0)
+- [Diego's Figma](https://www.figma.com/design/y53fDBe55sM1GvhxXXjQEp/Monero-Website-Redesign-2024--Copy-?node-id=140-1399&t=TThf0slioIblcNoq-0)
