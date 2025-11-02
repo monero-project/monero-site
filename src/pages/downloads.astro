@@ -272,7 +272,7 @@ import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
           />
         </div>
 
-        <h2 class="section-title">Server Wallets</h2>
+        <h2 class="section-title">Remote Sync Wallets</h2>
         <p class="section-subtitle">
           Wallets that use remote servers to scan the blockchain for
           convenience. Requires sharing your private view key with the service.
@@ -287,21 +287,6 @@ import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
               general: ["BSD-3", "Remote scanning"],
             }}
             link="https://edge.app/monero-wallet/"
-          />
-        </div>
-
-        <h2 class="section-title">Node Software</h2>
-        <p class="section-subtitle">Alternative Monero node implementations.</p>
-        <div class="cards-grid">
-          <CommunityCard
-            logo="/media/cuprate.png"
-            name="Cuprate"
-            description="A fast and efficient Monero node implementation written in Rust."
-            tags={{
-              desktop: ["windows", "macos", "linux"],
-              general: ["MIT", "AGPL-3.0", "Alpha software"],
-            }}
-            link="https://github.com/Cuprate/cuprate"
           />
         </div>
 
@@ -349,6 +334,21 @@ import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
             tags={{ general: ["DIY"], mobile: ["android"] }}
             link="https://sidekick.monerujo.app/"
             linkText="Learn more"
+          />
+        </div>
+
+        <h2 class="section-title">Node Software</h2>
+        <p class="section-subtitle">Alternative Monero node implementations.</p>
+        <div class="cards-grid">
+          <CommunityCard
+            logo="/media/cuprate.png"
+            name="Cuprate"
+            description="A fast and efficient Monero node implementation written in Rust."
+            tags={{
+              desktop: ["windows", "macos", "linux"],
+              general: ["MIT", "AGPL-3.0", "Alpha software"],
+            }}
+            link="https://github.com/Cuprate/cuprate"
           />
         </div>
       </div>
