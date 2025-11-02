@@ -1,6 +1,7 @@
 ---
 import Button from "../Button.astro";
 import MaskIcon from "../MaskIcon.astro";
+import dropdownCaretIcon from "@/assets/icons/ui/dropdown-caret.avif?url";
 
 interface Props {
   label: string;
@@ -13,7 +14,7 @@ const { label } = Astro.props;
     <Button variant="primary" as="span">
       {label}
       <span class="caret">
-        <MaskIcon src="/src/assets/icons/mask/dropdown-caret.avif" />
+        <MaskIcon src={dropdownCaretIcon} />
       </span>
     </Button>
   </summary>
