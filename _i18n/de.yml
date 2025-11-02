@@ -177,10 +177,8 @@ merchants:
   noncustodial: 'Nicht-Custodial (ohne Vormundschaft):'
   depsell: Es kommt auf den Verkäufer an
   locmondescr: Online-P2P-Börse für den Handel von Privat zu Privat.
-  hodlhodldescr: P2P-Handelsplattform mit unpfändbarer Treuhand.
   visitbisq: Besuche Bisq
   visitlocalmonero: Besuche LocalMonero
-  visithodlhodl: Besuche HodlHodl
   cexp: Zentralisierte Börsen, die den Umtausch von Monero gegen nationale Währungen
     und Kryptowährungen anbieten.
   descrp2p: Der beste Weg, Monero gegen andere Währungen zu tauschen (oder umgekehrt),
