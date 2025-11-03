@@ -171,27 +171,20 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
           Wallets that scan the blockchain locally on your device for maximum
           privacy.
         </p>
-        <div class="cards-grid">
+
+        <!-- Monero-only -->
+        <h3 class="subheading">Monero-only</h3>
+        <div class="cards-grid compact">
           <CommunityCard
             logo="/media/anonero.png"
             name="Anonero"
-            description="Privacy-focused wallet project supporting offline dual-app setup."
+            description="Privacy-focused wallet with all communications over Tor."
             tags={{
-              desktop: ["android"],
+              mobile: ["android"],
               general: ["GPL-3.0", "QR Signing"],
             }}
             link="https://anonero.io"
             linkText="Learn more"
-          />
-          <CommunityCard
-            logo="/media/eigenwallet.png"
-            name="Eigenwallet"
-            description="Monero and Bitcoin wallet with built-in atomic swap capabilities."
-            tags={{
-              desktop: ["windows", "macos", "linux"],
-              general: ["GPL-3.0"],
-            }}
-            link="https://eigenwallet.org"
           />
           <CommunityCard
             logo="/media/feather.png"
@@ -206,11 +199,11 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
           <CommunityCard
             logo="/media/monerocom.jpg"
             name="Monero.com"
-            description="A Monero wallet available for iOS and Android. Developed by Cake Labs."
+            description="A Monero-only wallet developed by Cake Labs."
             tags={{
               mobile: ["android", "ios"],
               desktop: ["windows", "linux"],
-              general: ["MIT", "QR Signing"],
+              general: ["MIT", "QR Signing", "Built-in exchange"],
             }}
             link="https://monero.com"
           />
@@ -220,7 +213,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
             description="A Monero wallet for Android with advanced features."
             tags={{
               mobile: ["android"],
-              general: ["Apache 2.0", "QR Signing"],
+              general: ["Apache 2.0"],
             }}
             link="https://monerujo.io"
           />
@@ -231,6 +224,32 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
             tags={{ mobile: ["android"], general: ["GPL-3.0"] }}
             link="https://codeberg.org/acx/monfluo/releases"
           />
+        </div>
+
+        <!-- Multi-coin -->
+        <h3 class="subheading">Multi-coin</h3>
+        <div class="cards-grid compact">
+          <CommunityCard
+            logo="/media/cakewallet.png"
+            name="Cake Wallet"
+            description="A multi-coin wallet with Monero and hardware wallet support."
+            tags={{
+              desktop: ["windows", "macos", "linux"],
+              mobile: ["android", "ios"],
+              general: ["GPL-3.0", "Built-in exchange"],
+            }}
+            link="https://cakewallet.com"
+          />
+          <CommunityCard
+            logo="/media/eigenwallet.png"
+            name="Eigenwallet"
+            description="Monero and Bitcoin wallet with built-in atomic swap capabilities."
+            tags={{
+              desktop: ["windows", "macos", "linux"],
+              general: ["GPL-3.0", "Built-in exchange"],
+            }}
+            link="https://eigenwallet.org"
+          />
           <CommunityCard
             logo="/media/stack-wallet.webp"
             name="Stack Wallet"
@@ -238,7 +257,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
             tags={{
               desktop: ["windows", "macos", "linux"],
               mobile: ["android", "ios"],
-              general: ["GPL-3.0"],
+              general: ["GPL-3.0", "Built-in exchange"],
             }}
             link="https://stackwallet.com"
           />
@@ -260,7 +279,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
           <CommunityCard
             logo="/media/edge.png"
             name="Edge Wallet"
-            description="A multicoin wallet with server-side syncing."
+            description="A multi-coin wallet with server-side syncing."
             tags={{
               mobile: ["android", "ios"],
               general: ["BSD-3", "Remote scanning"],
@@ -301,7 +320,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
           <CommunityCard
             logo="/media/cupcake.png"
             name="Cupcake"
-            description="Offline signer app for use with Monero.com."
+            description="Offline signer app for use with Cake Wallet/Monero.com."
             tags={{ general: ["DIY"], mobile: ["android", "ios"] }}
             link="https://docs.cakewallet.com/cupcake/"
             linkText="Learn more"
@@ -309,7 +328,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
           <CommunityCard
             logo="/media/sidekick.png"
             name="Sidekick"
-            description="Offline signer app for use with Monerujo."
+            description="Offline signer app for use with Monerujo. Connects via Bluetooth."
             tags={{ general: ["DIY"], mobile: ["android"] }}
             link="https://sidekick.monerujo.app/"
             linkText="Learn more"
@@ -370,17 +389,33 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
     line-height: var(--line-height-body);
   }
 
+  /* Compact h3 subheadings */
+  .subheading {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    margin: 1.25rem 0 0.25rem 0;
+  }
+
   .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.25rem;
     padding: 1rem 0;
   }
 
+  /* Tighter layout for sub-groups */
+  .cards-grid.compact {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 0.5rem 0 1rem 0;
+  }
+
   @media (max-width: 900px) {
-    .cards-grid {
+    .cards-grid,
+    .cards-grid.compact {
       display: flex;
       flex-direction: column;
+      gap: 0.75rem;
     }
   }
 </style>
