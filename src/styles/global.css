@@ -1,51 +1,78 @@
 :root {
-  /** Colors **/
+  /* Accent Colors */
   --monero-orange: #e2611f;
-  --heading-color: #191b23;
-  --card-color: #f5f2fa;
+
+  /* Surface Colors */
+  --card-color: #f9f7fc;
   --card-hover-color: #1e1b230d;
+  --footer-color: #f0ecf4;
+
+  /* Text Colors */
+  --heading-color: #191b23;
+  --text-primary: #2e3038;
+  --text-secondary: #5c5e67;
   --paragraph-main: #44464e;
   --paragraph-subtitle: #75767f;
+
+  /* Border Colors */
   --border-color: #e4e1e9;
 
-  /** Spacing **/
+  /* Spacing */
   --default-padding: 1em 5em;
   --mobile-padding: 1em 2em;
 
-  /** Typography **/
-  --line-height-body: 1.6;
-  --line-height-heading: 1.1;
-  --line-height-title: 1.2;
+  /* Typography - Font Sizes */
+  --font-size-base: 1rem; /* body-base */
+  --font-size-sm: 0.9rem; /* small text */
+  --font-size-lg: 1.125rem; /* body-lg */
+  --font-size-xl: clamp(1.2rem, 2vw, 1.5rem); /* subhead1 */
+  --font-size-2xl: clamp(1.5rem, 3vw, 2rem); /* 24px - 32px - h4 */
+  --font-size-3xl: clamp(1.8rem, 4vw, 2.25rem); /* 28.8px - 36px - h3 */
+  --font-size-4xl: clamp(2.5rem, 5vw, 3.5rem); /* 40px - 56px - h2 */
+  --font-size-5xl: clamp(2.5rem, 6vw, 4rem); /* 40px - 64px - h1 */
+
+  /* Typography - Font Weights */
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
-  --font-size-base: 1rem; /* body-base */
-  --font-size-sm: 0.9rem; /* small text */
-  --font-size-lg: 1.125rem; /* body-lg */
-  --font-size-xl: clamp(1.2rem, 2vw, 1.5rem); /* subhead1 */
-  --font-size-2xl: clamp(1.5rem, 3vw, 2rem); /* h4 */
-  --font-size-3xl: clamp(1.8rem, 4vw, 2.25rem); /* h3 */
-  --font-size-4xl: clamp(2.5rem, 5vw, 3.5rem); /* h2 */
-  --font-size-5xl: clamp(2.5rem, 6vw, 4rem); /* h1 */
+
+  /* Typography - Line Heights */
+  --line-height-body: 1.6;
+  --line-height-heading: 1.1;
+  --line-height-title: 1.2;
 }
+
+/* ========================================
+   Dark Mode
+   ======================================== */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --heading-color: #ffffff;
+    /* Surface Colors */
     --card-color: #211f26;
     --card-hover-color: #e1e1ec0d;
+    --footer-color: #211f26;
+
+    /* Text Colors */
+    --heading-color: #ffffff;
+    --text-primary: #ffffff;
+    --text-secondary: #9a9ba3;
     --paragraph-main: #c6c6d0;
     --paragraph-subtitle: #a9aab4;
+
+    /* Border Colors */
     --border-color: #36343b;
   }
 }
 
-body,
-div,
-article {
-  .__ns__pop2top {
-    z-index: unset !important;
-  }
+/* ========================================
+   Third-Party Overrides
+   ======================================== */
+
+body .__ns__pop2top,
+div .__ns__pop2top,
+article .__ns__pop2top {
+  z-index: unset !important;
 }

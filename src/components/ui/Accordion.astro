@@ -1,0 +1,117 @@
+---
+import "node:crypto";
+
+import MaskIcon from "./MaskIcon.astro";
+import dropdownIcon from "@/assets/icons/mask/dropdown-caret.avif?url";
+
+export interface AccordionItem {
+  title: string;
+  content: string;
+}
+
+export interface Props {
+  items: AccordionItem[];
+  multiExpand?: boolean;
+}
+
+const { items, multiExpand = false } = Astro.props;
+const accordionId = crypto.randomUUID();
+---
+
+<div class="accordion">
+  {
+    items.map((item) => (
+      <details class="accordion-item" name={multiExpand ? undefined : `accordion-${accordionId}`}>
+        <summary class="accordion-header">
+          <span class="accordion-title">{item.title}</span>
+          <div class="accordion-icon">
+            <MaskIcon src={dropdownIcon}/>
+          </div>
+        </summary>
+        <div class="accordion-content">
+          <p set:html={item.content} />
+        </div>
+      </details>
+    ))
+  }
+</div>
+
+<style>
+  .accordion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .accordion-item:first-child {
+    border-top: 1px solid var(--border-color);
+  }
+
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .accordion-header::-webkit-details-marker {
+    display: none;
+  }
+
+  .accordion-title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+  }
+
+  .accordion-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    color: var(--paragraph-main);
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+
+  .accordion-item[open] .accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    padding: 0 0 1.5rem 0;
+    color: var(--paragraph-main);
+    font-family: "Inter Variable", sans-serif;
+  }
+
+  .accordion-content p {
+    margin: 0;
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-normal);
+  }
+
+  @media (hover: hover) {
+    .accordion-header:hover .accordion-icon {
+      background-color: var(--card-hover-color);
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .accordion-header {
+      padding: 1rem 0;
+    }
+    .accordion-title {
+      font-size: var(--font-size-base);
+    }
+  }
+</style>

@@ -2,6 +2,7 @@
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import "@fontsource-variable/dm-sans";
+import "@fontsource-variable/inter";
 import dmSansFont from "@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url";
 import "../styles/global.css";
 import { getLocale } from "astro-i18n-aut";
@@ -52,12 +53,10 @@ const title = Astro.props.title;
 <style>
   :root {
     --bg-color: #ffffff;
-    --text-color: #2e3038;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg-color: #171717;
-      --text-color: #ffffff;
     }
   }
 
@@ -67,7 +66,7 @@ const title = Astro.props.title;
     min-height: 100vh;
     font-family: "DM Sans Variable", sans-serif;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
   }
