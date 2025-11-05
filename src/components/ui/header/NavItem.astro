@@ -1,5 +1,6 @@
 ---
 import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif?url";
+import arrowLeft from "@/assets/icons/mask/arrow-left.avif?url";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import ColorIcon from "../ColorIcon.astro";
 
@@ -61,6 +62,9 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
               <div class="content">
                 <div class="title">{item.label}</div>
                 {item.desc && <div class="desc">{item.desc}</div>}
+              </div>
+              <div class="arrow">
+                <MaskIcon src={arrowLeft} size="1rem" />
               </div>
             </a>
           ))}
@@ -141,6 +145,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
   /* Items */
   .dropdown-item {
+    position: relative;
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -165,6 +170,19 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     color: var(--paragraph-subtitle);
     line-height: 1.35;
     margin-top: 0.15rem;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: var(--paragraph-subtitle);
+  }
+
+  .dropdown-item:hover .arrow {
+    opacity: 1;
   }
 
   /* === Desktop hover/focus === */
