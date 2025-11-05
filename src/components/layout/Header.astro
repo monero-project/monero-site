@@ -364,8 +364,8 @@ const leftNav = [
     line-height: 1;
   }
 
-  /* ===== Mobile (<=900px) ===== */
-  @media (max-width: 900px) {
+  /* ===== Mobile/Tablet (<=1500px) ===== */
+  @media (max-width: 1500px) {
     :root {
       --drawer-gap: clamp(5rem, 20vw, 9rem);
     }
@@ -451,7 +451,7 @@ const leftNav = [
 
   /* Dynamic viewport height when supported */
   @supports (height: 100dvh) {
-    @media (max-width: 900px) {
+    @media (max-width: 1500px) {
       .nav {
         height: 100dvh;
       }

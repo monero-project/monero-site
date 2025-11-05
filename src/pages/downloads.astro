@@ -4,6 +4,8 @@ import TitleCard from "../components/ui/TitleCard.astro";
 import Tabs from "../components/ui/Tabs.astro";
 import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
 import CoreCard from "../components/pages/downloads/CoreCard.astro";
+import downloadsData from "../data/downloads.json";
+import type { DownloadLink } from "../components/pages/downloads/CoreCard.astro";
 ---
 
 <Layout>
@@ -17,8 +19,8 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
           imageAlt="Monero GUI Wallet"
           title="Monero GUI Wallet"
           subtitle="Graphical wallet developed by the Monero community"
-          version="0.18.3.4"
-          releaseNotesUrl="https://github.com/monero-project/monero-gui/releases/tag/v0.18.3.4"
+          version={downloadsData.gui.version}
+          releaseNotesUrl=`https://github.com/monero-project/monero-gui/releases/tag/v${downloadsData.gui.version}`
           sourceCodeUrl="https://github.com/monero-project/monero-gui"
           features={[
             "<b>Simple mode</b> for beginners to easily send and receive XMR",
@@ -29,40 +31,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
             "<b>Blockchain pruning</b> to save disk space",
             "Available in <b>30+ languages</b>",
           ]}
-          downloads={[
-            {
-              href: "https://downloads.getmonero.org/gui/win64install",
-              label: "Windows (Installer)",
-              size: "50MB",
-              platform: "windows",
-            },
-            {
-              href: "https://downloads.getmonero.org/gui/win64",
-              label: "Windows (.zip)",
-              size: "45MB",
-              platform: "windows",
-            },
-            "separator",
-            {
-              href: "https://downloads.getmonero.org/gui/mac64",
-              label: "macOS (Intel)",
-              size: "55MB",
-              platform: "macos",
-            },
-            {
-              href: "https://downloads.getmonero.org/gui/macarm8",
-              label: "macOS (Apple Silicon)",
-              size: "52MB",
-              platform: "macos",
-            },
-            "separator",
-            {
-              href: "https://downloads.getmonero.org/gui/linux64",
-              label: "Linux (Tarball)",
-              size: "48MB",
-              platform: "linux",
-            },
-          ]}
+          downloads={downloadsData.gui.downloads as DownloadLink[]}
         />
 
         <!-- Monero CLI Card -->
@@ -71,8 +40,8 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
           imageAlt="Monero CLI Tools"
           title="Monero CLI Tools"
           subtitle="Command-line interface for advanced users"
-          version="0.18.3.4"
-          releaseNotesUrl="https://github.com/monero-project/monero/releases/tag/v0.18.3.4"
+          version={downloadsData.cli.version}
+          releaseNotesUrl=`https://github.com/monero-project/monero/releases/tag/v${downloadsData.cli.version}`
           sourceCodeUrl="https://github.com/monero-project/monero"
           features={[
             "Choose between local or remote node for blockchain access",
@@ -82,84 +51,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
             "Includes RPC wallet, ZMQ interface and daemon",
             "Blockchain pruning saves disk space",
           ]}
-          downloads={[
-            {
-              href: "https://downloads.getmonero.org/cli/win64",
-              label: "Windows (64-bit)",
-              size: "50MB",
-              platform: "windows",
-            },
-            {
-              href: "https://downloads.getmonero.org/cli/win32",
-              label: "Windows (32-bit)",
-              size: "45MB",
-              platform: "windows",
-            },
-            "separator",
-            {
-              href: "https://downloads.getmonero.org/cli/mac64",
-              label: "macOS (Intel)",
-              size: "55MB",
-              platform: "macos",
-            },
-            {
-              href: "https://downloads.getmonero.org/cli/macarm8",
-              label: "macOS (Apple Silicon)",
-              size: "52MB",
-              platform: "macos",
-            },
-            "separator",
-            {
-              href: "https://downloads.getmonero.org/cli/linux64",
-              label: "Linux (64-bit)",
-              size: "48MB",
-              platform: "linux",
-            },
-            {
-              href: "https://downloads.getmonero.org/cli/linux32",
-              label: "Linux (32-bit)",
-              size: "48MB",
-              platform: "linux",
-            },
-            {
-              href: "https://downloads.getmonero.org/cli/linuxarm8",
-              label: "Linux (ARMv8)",
-              size: "48MB",
-              platform: "linux",
-            },
-            {
-              href: "https://downloads.getmonero.org/cli/linuxarm7",
-              label: "Linux (ARMv7)",
-              size: "48MB",
-              platform: "linux",
-            },
-            {
-              href: "https://downloads.getmonero.org/cli/linuxriscv64",
-              label: "Linux (RISC-V 64-bit)",
-              size: "48MB",
-              platform: "linux",
-            },
-            "separator",
-            {
-              href: "https://downloads.getmonero.org/cli/androidarm8",
-              label: "Android (ARMv8)",
-              size: "40MB",
-              platform: "android",
-            },
-            {
-              href: "https://downloads.getmonero.org/cli/androidarm7",
-              label: "Android (ARMv7)",
-              size: "40MB",
-              platform: "android",
-            },
-            "separator",
-            {
-              href: "https://downloads.getmonero.org/cli/freebsd64",
-              label: "FreeBSD (64-bit)",
-              size: "46MB",
-              platform: "freebsd",
-            },
-          ]}
+          downloads={downloadsData.cli.downloads as DownloadLink[]}
         />
       </div>
     </Fragment>
@@ -218,7 +110,7 @@ import CoreCard from "../components/pages/downloads/CoreCard.astro";
             link="https://monerujo.io"
           />
           <CommunityCard
-            logo="/meta/favicon-32x32.png"
+            logo="/media/monfluo.png"
             name="Monfluo"
             description="A pure Monero wallet for Android."
             tags={{ mobile: ["android"], general: ["GPL-3.0"] }}

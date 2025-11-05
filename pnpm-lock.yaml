@@ -19,10 +19,10 @@ importers:
         version: 5.2.8
       astro:
         specifier: ^5.15.1
-        version: 5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(typescript@5.9.3)
+        version: 5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(tsx@4.20.6)(typescript@5.9.3)
       astro-i18n-aut:
         specifier: ^0.7.3
-        version: 0.7.3(astro@5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(typescript@5.9.3))
+        version: 0.7.3(astro@5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(tsx@4.20.6)(typescript@5.9.3))
       i18next:
         specifier: ^25.6.0
         version: 25.6.0(typescript@5.9.3)
@@ -39,6 +39,9 @@ importers:
       sass:
         specifier: ^1.93.2
         version: 1.93.2
+      tsx:
+        specifier: ^4.19.2
+        version: 4.20.6
 
 packages:
 
@@ -936,6 +939,9 @@ packages:
     resolution: {integrity: sha512-QZjmEOC+IT1uk6Rx0sX22V6uHWVwbdbxf1faPqJ1QhLdGgsRGCZoyaQBm/piRdJy/D2um6hM1UP7ZEeQ4EkP+Q==}
     engines: {node: '>=18'}
 
+  get-tsconfig@4.13.0:
+    resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
+
   github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
 
@@ -1355,6 +1361,9 @@ packages:
   remark-stringify@11.0.0:
     resolution: {integrity: sha512-1OSmLd3awB/t8qdoEOMazZkNsfVTeY4fTsgzcQFdXNq8ToTN4ZGwrMnlda4K6smTFKD+GRV6O48i6Z4iKgPPpw==}
 
+  resolve-pkg-maps@1.0.0:
+    resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
+
   restructure@3.0.2:
     resolution: {integrity: sha512-gSfoiOEA0VPE6Tukkrr7I0RBdE0s7H1eFCDBk05l1KIQT1UIKNc5JZy6jdyW6eYH3aR3g5b3PuL77rq0hvwtAw==}
 
@@ -1488,6 +1497,11 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  tsx@4.20.6:
+    resolution: {integrity: sha512-ytQKuwgmrrkDTFP4LjR0ToE2nqgy886GpvRSpU0JAnrdBYppuY5rLkRUYPU1yCryb24SsKBTL/hlDQAEFVwtZg==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
 
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
@@ -2223,9 +2237,9 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro-i18n-aut@0.7.3(astro@5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(typescript@5.9.3)):
+  astro-i18n-aut@0.7.3(astro@5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(tsx@4.20.6)(typescript@5.9.3)):
     dependencies:
-      astro: 5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(typescript@5.9.3)
+      astro: 5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(tsx@4.20.6)(typescript@5.9.3)
       dedent: 1.7.0
       fast-glob: 3.3.3
       fs-extra: 11.3.2
@@ -2233,7 +2247,7 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  astro@5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(typescript@5.9.3):
+  astro@5.15.1(@types/node@24.9.1)(rollup@4.52.5)(sass@1.93.2)(tsx@4.20.6)(typescript@5.9.3):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.4
@@ -2289,8 +2303,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.17.1
       vfile: 6.0.3
-      vite: 6.4.1(@types/node@24.9.1)(sass@1.93.2)
-      vitefu: 1.1.1(vite@6.4.1(@types/node@24.9.1)(sass@1.93.2))
+      vite: 6.4.1(@types/node@24.9.1)(sass@1.93.2)(tsx@4.20.6)
+      vitefu: 1.1.1(vite@6.4.1(@types/node@24.9.1)(sass@1.93.2)(tsx@4.20.6))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -2544,6 +2558,10 @@ snapshots:
     optional: true
 
   get-east-asian-width@1.4.0: {}
+
+  get-tsconfig@4.13.0:
+    dependencies:
+      resolve-pkg-maps: 1.0.0
 
   github-slugger@2.0.0: {}
 
@@ -3220,6 +3238,8 @@ snapshots:
       mdast-util-to-markdown: 2.1.2
       unified: 11.0.5
 
+  resolve-pkg-maps@1.0.0: {}
+
   restructure@3.0.2: {}
 
   retext-latin@4.0.0:
@@ -3411,6 +3431,13 @@ snapshots:
 
   tslib@2.8.1: {}
 
+  tsx@4.20.6:
+    dependencies:
+      esbuild: 0.25.11
+      get-tsconfig: 4.13.0
+    optionalDependencies:
+      fsevents: 2.3.3
+
   type-fest@4.41.0: {}
 
   typescript@5.9.3: {}
@@ -3519,7 +3546,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@6.4.1(@types/node@24.9.1)(sass@1.93.2):
+  vite@6.4.1(@types/node@24.9.1)(sass@1.93.2)(tsx@4.20.6):
     dependencies:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
@@ -3531,10 +3558,11 @@ snapshots:
       '@types/node': 24.9.1
       fsevents: 2.3.3
       sass: 1.93.2
+      tsx: 4.20.6
 
-  vitefu@1.1.1(vite@6.4.1(@types/node@24.9.1)(sass@1.93.2)):
+  vitefu@1.1.1(vite@6.4.1(@types/node@24.9.1)(sass@1.93.2)(tsx@4.20.6)):
     optionalDependencies:
-      vite: 6.4.1(@types/node@24.9.1)(sass@1.93.2)
+      vite: 6.4.1(@types/node@24.9.1)(sass@1.93.2)(tsx@4.20.6)
 
   web-namespaces@2.0.1: {}
 
