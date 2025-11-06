@@ -78,15 +78,23 @@ meta_descr: downloads.intro
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
-                      <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero-gui" target="_blank">{% t downloads.sourcecode %}</a></li>
-                      <li class="downloads"><span class="icon-git"></span><a class="orange" href="https://downloads.getmonero.org/gui/source">{% t downloads.sourcearchive %}</a></li>
+                      <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero-gui" target="_blank">{% t downloads.sourcecode %}</a> | <a class="orange" href="https://downloads.getmonero.org/gui/source">{% t downloads.sourcearchive %}</a></li>
+                      <!-- do not draw torrent if version != latest release -->
+                      {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
+                      {% if torrent and torrent.vers == nil %}
+                        <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                      {% endif %}
                     </ul>
                   </div>
                   <div class="mobile-only">
                     <ul class="nopadding">
                     {% for entry in item.downloads %}
                       {% unless entry.vers != nil %}
-                      <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% if entry.platform == "Torrent" %}
+                          <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        {% else %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% endif %}
                       {% endunless %}
                     {% endfor %}
                     </ul>
@@ -96,7 +104,11 @@ meta_descr: downloads.intro
                     <div class="col-md-12 col-sm-12 col-xs-12">
                       <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
                       <ul>
-                        <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% if entry.platform == "Torrent" %}
+                          <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        {% else %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% endif %}
                       </ul>
                     </div>
                     {% endif %}
@@ -171,15 +183,23 @@ meta_descr: downloads.intro
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-freebsd"></span><a class="orange" href="https://downloads.getmonero.org/cli/freebsd64">FreeBSD 64-bit</a></li>
-                      <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero" target="_blank">{% t downloads.sourcecode %}</a></li>
-                      <li class="downloads"><span class="icon-git"></span><a class="orange" href="https://downloads.getmonero.org/cli/source">{% t downloads.sourcearchive %}</a></li>
+                      <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero-gui" target="_blank">{% t downloads.sourcecode %}</a> | <a class="orange" href="https://downloads.getmonero.org/gui/source">{% t downloads.sourcearchive %}</a></li>
+                      <!-- do not draw torrent if version != latest release -->
+                      {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
+                      {% if torrent and torrent.vers == nil %}
+                        <li class="downloads"><span class="{{ torrent.icon }}"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                      {% endif %}
                     </ul>
                   </div>
                   <div class="mobile-only">
                     <ul class="nopadding">
                       {% for entry in item.downloads %}
                         {% unless entry.vers != nil %}
-                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                          {% if entry.platform == "Torrent" %}
+                            <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                          {% else %}
+                            <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                          {% endif %}
                         {% endunless %}
                       {% endfor %}
                     </ul>
@@ -189,7 +209,11 @@ meta_descr: downloads.intro
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
                     <ul>
-                      <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                      {% if entry.platform == "Torrent" %}
+                          <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        {% else %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% endif %}
                     </ul>
                   </div>
                   {% endif %}
