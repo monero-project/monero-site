@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "update-download-sizes": "tsx scripts/update-download-sizes.ts"
+    "update-download-info": "tsx scripts/update-download-info.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",

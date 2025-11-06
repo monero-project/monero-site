@@ -1,6 +1,6 @@
 {
   "gui": {
-    "version": "0.18.4.3",
+    "version": "v0.18.4.3",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/gui/win64install",
@@ -37,7 +37,7 @@
     ]
   },
   "cli": {
-    "version": "0.18.4.3",
+    "version": "v0.18.4.3",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/cli/win64",

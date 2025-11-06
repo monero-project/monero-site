@@ -1,5 +1,18 @@
 import { readFileSync, writeFileSync } from 'fs';
 
+async function getLatestVersion(repo: string): Promise<string | null> {
+  try {
+    const url = `https://api.github.com/repos/monero-project/${repo}/releases/latest`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
+    const data = await response.json();
+    return data.tag_name;
+  } catch (error) {
+    console.error(`Error fetching latest version for ${repo}:`, error);
+    return null;
+  }
+}
+
 async function getFileSize(url: string): Promise<string> {
   try {
     const response = await fetch(url, { method: 'HEAD' });
@@ -12,15 +25,37 @@ async function getFileSize(url: string): Promise<string> {
   } catch (error) {
     console.error(`Error fetching ${url}`);
   }
-  return 'Unknown';
+  return '';
 }
 
 async function main() {
   const downloadsPath = './src/data/downloads.json';
   const data = JSON.parse(readFileSync(downloadsPath, 'utf-8'));
 
-  console.log('Updating download sizes...\n');
+  console.log('Updating versions and download sizes...\n');
 
+  // Update versions
+  console.log('Fetching latest versions...');
+  const guiVersion = await getLatestVersion('monero-gui');
+  const cliVersion = await getLatestVersion('monero');
+
+  if (guiVersion) {
+    data.gui.version = guiVersion;
+    console.log(`GUI version updated to: ${guiVersion}`);
+  } else {
+    console.log('GUI version update failed, keeping current version');
+  }
+
+  if (cliVersion) {
+    data.cli.version = cliVersion;
+    console.log(`CLI version updated to: ${cliVersion}`);
+  } else {
+    console.log('CLI version update failed, keeping current version');
+  }
+
+  console.log('');
+
+  // Update sizes
   for (const [sectionName, section] of Object.entries(data) as any[]) {
     if (!section.downloads) continue;
 
