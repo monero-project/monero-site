@@ -21,15 +21,21 @@ export const getLocaleName = (locale: string): { name: string } | null => {
   return { name: capitalizedName };
 };
 
-export const createTInstance = (locale: string) => {
+export const createTInstance = (locale: string, namespace?: string | string[]) => {
   const newInstance = createInstance();
+
+  const namespaces = namespace 
+    ? (Array.isArray(namespace) ? namespace : [namespace])
+    : ["common", "translation"];
+  
+  const defaultNamespace = Array.isArray(namespace) ? namespace[0] : namespace || "translation";
 
   return newInstance.use(Backend).init({
     lng: locale,
     fallbackLng: defaultLocale,
     supportedLngs: Object.keys(locales),
-    ns: ["common", "translation"],
-    defaultNS: "translation",
+    ns: namespaces,
+    defaultNS: defaultNamespace,
     backend: {
       loadPath: "./src/i18n/translations/{{lng}}/{{ns}}.json",
     },

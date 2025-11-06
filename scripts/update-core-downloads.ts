@@ -29,13 +29,14 @@ async function getFileSize(url: string): Promise<string> {
 }
 
 async function main() {
-  const downloadsPath = "./src/data/downloads.json";
+  const downloadsPath = "./src/data/downloads/core.json";
   const data = JSON.parse(readFileSync(downloadsPath, "utf-8"));
 
-  console.log("Updating versions and download sizes...\n");
+  console.log("Updating Core Downloads Data");
+  console.log("=================================\n");
 
   // Update versions
-  console.log("Fetching latest versions...");
+  console.log("Fetching latest versions from GitHub...");
   const guiVersion = await getLatestVersion("monero-gui");
   const cliVersion = await getLatestVersion("monero");
 
@@ -56,10 +57,11 @@ async function main() {
   console.log("");
 
   // Update sizes
+  console.log("Calculating download file sizes...");
   for (const [sectionName, section] of Object.entries(data) as any[]) {
     if (!section.downloads) continue;
 
-    console.log(`Processing ${sectionName}...`);
+    console.log(`\nProcessing ${sectionName}...`);
 
     for (const item of section.downloads) {
       if (item === "separator" || !item.href) continue;
@@ -68,9 +70,9 @@ async function main() {
       item.size = await getFileSize(item.href);
       console.log(`    → ${item.size}`);
 
+      // Rate limiting
       await new Promise((resolve) => setTimeout(resolve, 500));
     }
-    console.log("");
   }
 
   writeFileSync(downloadsPath, JSON.stringify(data, null, 2) + "\n");

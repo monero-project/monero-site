@@ -4,242 +4,176 @@ import TitleCard from "../components/ui/TitleCard.astro";
 import Tabs from "../components/ui/Tabs.astro";
 import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
 import CoreCard from "../components/pages/downloads/CoreCard.astro";
-import downloadsData from "../data/downloads.json";
+import { createTInstance, getLocale } from "@/i18n/utils";
+import coreDownloads from "../data/downloads/core.json";
+import communityWallets from "../data/downloads/community.json";
 import type { DownloadLink } from "../components/pages/downloads/CoreCard.astro";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale, "downloads");
 ---
 
-<Layout>
-  <TitleCard title="Downloads" subtitle="Get Monero wallets and software." />
-  <Tabs labels={["Core", "Community"]} initial={0} id="download-tabs">
+<Layout title={t("pageTitle")}>
+  <TitleCard 
+    title={t("heroTitle")} 
+    subtitle={t("heroSubtitle")} 
+  />
+  <Tabs 
+    labels={[t("tabs.core"), t("tabs.community")]} 
+    initial={0} 
+    id="download-tabs"
+  >
     <Fragment slot="panel-0" id="core-tab">
       <div class="downloads-grid">
         <!-- Monero GUI Card -->
         <CoreCard
           image="/media/gui.png"
-          imageAlt="Monero GUI Wallet"
-          title="Monero GUI Wallet"
-          subtitle="Graphical wallet developed by the Monero community"
-          version={downloadsData.gui.version}
-          releaseNotesUrl=`https://github.com/monero-project/monero-gui/releases/tag/${downloadsData.gui.version}`
+          imageAlt={t("core.gui.title")}
+          title={t("core.gui.title")}
+          subtitle={t("core.gui.subtitle")}
+          version={coreDownloads.gui.version}
+          releaseNotesUrl={`https://github.com/monero-project/monero-gui/releases/tag/${coreDownloads.gui.version}`}
           sourceCodeUrl="https://github.com/monero-project/monero-gui"
-          features={[
-            "<b>Simple mode</b> for beginners to easily send and receive XMR",
-            "<b>Advanced mode</b> with full control over wallet and node",
-            "<b>Merchant page</b> for easily accepting XMR payments",
-            "Compatible with <b>Trezor</b> and <b>Ledger</b> hardware wallets",
-            "<b>In-app fiat conversion</b>",
-            "<b>Blockchain pruning</b> to save disk space",
-            "Available in <b>30+ languages</b>",
-          ]}
-          downloads={downloadsData.gui.downloads as DownloadLink[]}
+          features={Object.values(t("core.gui.features", { returnObjects: true }) as Record<string, string>)}
+          downloads={coreDownloads.gui.downloads as DownloadLink[]}
+          labels={{
+            version: t("core.version"),
+            releaseNotes: t("core.releaseNotes"),
+            sourceCode: t("core.sourceCode"),
+            download: t("core.downloadButton"),
+            verifyDownloads: t("core.verifyDownload"),
+            verifyDescription: t("core.verifyDownload"),
+            viewHashes: t("core.verifyDownload"),
+          }}
         />
 
         <!-- Monero CLI Card -->
         <CoreCard
           image="/media/cli.png"
-          imageAlt="Monero CLI Tools"
-          title="Monero CLI Tools"
-          subtitle="Command-line interface for advanced users"
-          version={downloadsData.cli.version}
-          releaseNotesUrl=`https://github.com/monero-project/monero/releases/tag/${downloadsData.cli.version}`
+          imageAlt={t("core.cli.title")}
+          title={t("core.cli.title")}
+          subtitle={t("core.cli.subtitle")}
+          version={coreDownloads.cli.version}
+          releaseNotesUrl={`https://github.com/monero-project/monero/releases/tag/${coreDownloads.cli.version}`}
           sourceCodeUrl="https://github.com/monero-project/monero"
-          features={[
-            "Choose between local or remote node for blockchain access",
-            "Send transactions over Tor or I2P for extra privacy",
-            "Use bootstrap node for immediate access while syncing locally",
-            "Compatible with Trezor and Ledger hardware wallets",
-            "Includes RPC wallet, ZMQ interface and daemon",
-            "Blockchain pruning saves disk space",
-          ]}
-          downloads={downloadsData.cli.downloads as DownloadLink[]}
+          features={Object.values(t("core.cli.features", { returnObjects: true }) as Record<string, string>)}
+          downloads={coreDownloads.cli.downloads as DownloadLink[]}
+          labels={{
+            version: t("core.version"),
+            releaseNotes: t("core.releaseNotes"),
+            sourceCode: t("core.sourceCode"),
+            download: t("core.downloadButton"),
+            verifyDownloads: t("core.verifyDownload"),
+            verifyDescription: t("core.verifyDownload"),
+            viewHashes: t("core.verifyDownload"),
+          }}
         />
       </div>
     </Fragment>
 
     <Fragment slot="panel-1" id="community-tab">
       <div class="community-section">
-        <h2 class="section-title">Local Sync Wallets</h2>
+        <!-- Local Sync Wallets -->
+        <h2 class="section-title">
+          {t("community.sections.localSync.title")}
+        </h2>
         <p class="section-subtitle">
-          Wallets that scan the blockchain locally on your device for maximum
-          privacy.
+          {t("community.sections.localSync.subtitle")}
         </p>
 
         <!-- Monero-only -->
-        <h3 class="subheading">Monero-only</h3>
+        <h3 class="subheading">{t("community.categories.moneroOnly")}</h3>
         <div class="cards-grid compact">
-          <CommunityCard
-            logo="/media/anonero.png"
-            name="Anonero"
-            description="Privacy-focused wallet with all communications over Tor."
-            tags={{
-              mobile: ["android"],
-              general: ["GPL-3.0", "QR Signing"],
-            }}
-            link="https://anonero.io"
-            linkText="Learn more"
-          />
-          <CommunityCard
-            logo="/media/feather.png"
-            name="Feather Wallet"
-            description="A lightweight, fast, and feature-rich Monero desktop wallet."
-            tags={{
-              desktop: ["windows", "macos", "linux"],
-              general: ["BSD-3", "QR Signing"],
-            }}
-            link="https://featherwallet.org"
-          />
-          <CommunityCard
-            logo="/media/monerocom.jpg"
-            name="Monero.com"
-            description="A Monero-only wallet developed by Cake Labs."
-            tags={{
-              mobile: ["android", "ios"],
-              desktop: ["windows", "linux"],
-              general: ["MIT", "QR Signing", "Built-in exchange"],
-            }}
-            link="https://monero.com"
-          />
-          <CommunityCard
-            logo="/media/monerujo.png"
-            name="Monerujo"
-            description="A Monero wallet for Android with advanced features."
-            tags={{
-              mobile: ["android"],
-              general: ["Apache 2.0", "Built-in exchange"],
-            }}
-            link="https://monerujo.io"
-          />
-          <CommunityCard
-            logo="/media/monfluo.png"
-            name="Monfluo"
-            description="A pure Monero wallet for Android."
-            tags={{ mobile: ["android"], general: ["GPL-3.0"] }}
-            link="https://codeberg.org/acx/monfluo/releases"
-          />
+          {communityWallets.localSync.moneroOnly.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+            />
+          ))}
         </div>
 
         <!-- Multi-coin -->
-        <h3 class="subheading">Multi-coin</h3>
+        <h3 class="subheading">{t("community.categories.multiCoin")}</h3>
         <div class="cards-grid compact">
-          <CommunityCard
-            logo="/media/cakewallet.png"
-            name="Cake Wallet"
-            description="A multi-coin wallet with Monero and hardware wallet support."
-            tags={{
-              desktop: ["windows", "macos", "linux"],
-              mobile: ["android", "ios"],
-              general: ["GPL-3.0", "Built-in exchange"],
-            }}
-            link="https://cakewallet.com"
-          />
-          <CommunityCard
-            logo="/media/eigenwallet.png"
-            name="Eigenwallet"
-            description="Monero and Bitcoin wallet with built-in atomic swap capabilities."
-            tags={{
-              desktop: ["windows", "macos", "linux"],
-              general: ["GPL-3.0", "Built-in exchange"],
-            }}
-            link="https://eigenwallet.org"
-          />
-          <CommunityCard
-            logo="/media/stack-wallet.webp"
-            name="Stack Wallet"
-            description="A multi-coin wallet with Monero support for desktop and mobile."
-            tags={{
-              desktop: ["windows", "macos", "linux"],
-              mobile: ["android", "ios"],
-              general: ["GPL-3.0", "Built-in exchange"],
-            }}
-            link="https://stackwallet.com"
-          />
-          <CommunityCard
-            logo="/media/unstoppable.png"
-            name="Unstoppable Wallet"
-            description="A multi-coin wallet supporting Monero."
-            tags={{ mobile: ["android", "ios"], general: ["MIT"] }}
-            link="https://unstoppable.money"
-          />
+          {communityWallets.localSync.multiCoin.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+            />
+          ))}
         </div>
 
-        <h2 class="section-title">Remote Sync Wallets</h2>
+        <!-- Remote Sync Wallets -->
+        <h2 class="section-title">
+          {t("community.sections.remoteSync.title")}
+        </h2>
         <p class="section-subtitle">
-          Wallets that use remote servers to scan the blockchain for
-          convenience. Requires sharing your private view key with the service.
+          {t("community.sections.remoteSync.subtitle")}
         </p>
         <div class="cards-grid">
-          <CommunityCard
-            logo="/media/edge.png"
-            name="Edge Wallet"
-            description="A multi-coin wallet with server-side syncing."
-            tags={{
-              mobile: ["android", "ios"],
-              general: ["BSD-3", "Remote scanning", "Built-in exchange"],
-            }}
-            link="https://edge.app/monero-wallet/"
-          />
+          {communityWallets.remoteSync.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+            />
+          ))}
         </div>
 
-        <h2 class="section-title">Offline Wallets</h2>
+        <!-- Offline Wallets -->
+        <h2 class="section-title">
+          {t("community.sections.offline.title")}
+        </h2>
         <p class="section-subtitle">
-          Hardware wallets and offline transaction signing apps.
+          {t("community.sections.offline.subtitle")}
         </p>
         <div class="cards-grid">
-          <CommunityCard
-            logo="/media/keystone.jpg"
-            name="Keystone"
-            tags={{ general: ["3 Pro"] }}
-            description="Hardware wallet with Monero support via third-party apps."
-            link="https://guide.keyst.one/docs/feather"
-            linkText="Learn more"
-          />
-          <CommunityCard
-            logo="/media/ledger.jpg"
-            name="Ledger"
-            tags={{ general: ["Nano S", "Nano X", "Flex", "Stax"] }}
-            description="Hardware wallet with Monero support via third-party apps."
-            link="https://support.ledger.com/article/360006352934-zd"
-            linkText="Learn more"
-          />
-          <CommunityCard
-            logo="/media/trezor.png"
-            name="Trezor"
-            description="Hardware wallet with Monero support via third-party apps."
-            tags={{ general: ["Model T", "Safe 3", "Safe 5", "Safe 7"] }}
-            link="https://trezor.io/coins/wallet/monero"
-            linkText="Learn more"
-          />
-          <CommunityCard
-            logo="/media/cupcake.png"
-            name="Cupcake"
-            description="Offline signer app for use with Cake Wallet/Monero.com."
-            tags={{ general: ["DIY"], mobile: ["android", "ios"] }}
-            link="https://docs.cakewallet.com/cupcake/"
-            linkText="Learn more"
-          />
-          <CommunityCard
-            logo="/media/sidekick.png"
-            name="Sidekick"
-            description="Offline signer app for use with Monerujo. Connects via Bluetooth."
-            tags={{ general: ["DIY"], mobile: ["android"] }}
-            link="https://sidekick.monerujo.app/"
-            linkText="Learn more"
-          />
+          {communityWallets.offline.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+            />
+          ))}
         </div>
 
-        <h2 class="section-title">Node Software</h2>
-        <p class="section-subtitle">Alternative Monero node implementations.</p>
+        <!-- Node Software -->
+        <h2 class="section-title">
+          {t("community.sections.nodes.title")}
+        </h2>
+        <p class="section-subtitle">
+          {t("community.sections.nodes.subtitle")}
+        </p>
         <div class="cards-grid">
-          <CommunityCard
-            logo="/media/cuprate.png"
-            name="Cuprate"
-            description="A fast and efficient Monero node implementation written in Rust."
-            tags={{
-              desktop: ["windows", "macos", "linux"],
-              general: ["MIT", "AGPL-3.0", "Alpha software"],
-            }}
-            link="https://github.com/Cuprate/cuprate"
-          />
+          {communityWallets.nodes.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+            />
+          ))}
         </div>
       </div>
     </Fragment>

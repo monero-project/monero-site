@@ -18,6 +18,16 @@ export interface DownloadLink {
   platform?: "windows" | "macos" | "linux" | "android" | "freebsd";
 }
 
+interface Labels {
+  version?: string;
+  releaseNotes?: string;
+  sourceCode?: string;
+  download?: string;
+  verifyDownloads?: string;
+  verifyDescription?: string;
+  viewHashes?: string;
+}
+
 interface Props {
   image: string;
   imageAlt: string;
@@ -29,6 +39,7 @@ interface Props {
   version?: string;
   releaseNotesUrl?: string;
   verifyLink?: string;
+  labels?: Labels;
 }
 
 const {
@@ -42,6 +53,15 @@ const {
   version,
   releaseNotesUrl,
   verifyLink,
+  labels = {
+    version: "Version",
+    releaseNotes: "Release notes",
+    sourceCode: "Source code",
+    download: "Download",
+    verifyDownloads: "Verify Downloads",
+    verifyDescription: "After downloading, verify the integrity using the provided hashes:",
+    viewHashes: "View Hashes & Signatures",
+  },
 } = Astro.props;
 
 const PLATFORM_ICONS: Record<string, string> = {
@@ -66,7 +86,7 @@ const PLATFORM_ICONS: Record<string, string> = {
       {features.map((feature) => <li set:html={feature} />)}
     </ul>
     <div class="download-actions">
-      <Dropdown label="Download">
+      <Dropdown label={labels.download!}>
         {
           downloads.map((item) =>
             item === "separator" ? (
@@ -103,7 +123,7 @@ const PLATFORM_ICONS: Record<string, string> = {
               rel="noopener noreferrer"
               class="metadata-link"
             >
-              Release notes
+              {labels.releaseNotes}
             </a>
           </>
         )
@@ -118,17 +138,17 @@ const PLATFORM_ICONS: Record<string, string> = {
               rel="noopener noreferrer"
               class="metadata-link"
             >
-              Source code
+              {labels.sourceCode}
             </a>
           </>
         )
       }
     </div>
     <div class="verification">
-      <h4>Verify Downloads</h4>
-      <p>After downloading, verify the integrity using the provided hashes:</p>
+      <h4>{labels.verifyDownloads}</h4>
+      <p>{labels.verifyDescription}</p>
       <a href={verifyLink ?? "#"} class="verify-link"
-        >View Hashes & Signatures</a
+        >{labels.viewHashes}</a
       >
     </div>
   </div>

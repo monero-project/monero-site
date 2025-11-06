@@ -20,9 +20,10 @@ interface Props {
   tags?: Tags;
   link: string;
   linkText?: string;
+  translateTag?: (key: string) => string;
 }
 
-const { logo, name, description, link, linkText } = Astro.props;
+const { logo, name, description, link, linkText, translateTag } = Astro.props;
 const tags =
   typeof Astro.props.tags === "object" && Astro.props.tags
     ? (Astro.props.tags as Tags)
@@ -73,6 +74,18 @@ const general = Array.from(
   new Map((tags.general ?? []).map((label) => [norm(label), label])).values(),
 );
 
+// Helper to translate a tag
+const getTagLabel = (tag: string): string => {
+  // Check if tag has i18n: prefix
+  if (tag.startsWith('i18n:')) {
+    const key = tag.slice(5);
+    return translateTag ? translateTag(key) : tag;
+  }
+  
+  // Otherwise return as-is (licenses, model numbers, etc.)
+  return tag;
+};
+
 const showTags = general.length > 0;
 const showPlatforms = desktop.length > 0 || mobile.length > 0;
 ---
@@ -92,9 +105,9 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
       showTags && (
         <div class="card-tags" aria-label="Tags">
           <ul class="list" role="list">
-            {general.map((label) => (
-              <li class="pill" title={label}>
-                <span class="tag-text">{label}</span>
+            {general.map((tag) => (
+              <li class="pill" title={getTagLabel(tag)}>
+                <span class="tag-text">{getTagLabel(tag)}</span>
               </li>
             ))}
           </ul>

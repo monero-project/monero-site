@@ -1,0 +1,174 @@
+{
+  "localSync": {
+    "moneroOnly": [
+      {
+        "id": "anonero",
+        "name": "Anonero",
+        "logo": "/media/anonero.png",
+        "link": "https://anonero.io",
+        "tags": {
+          "mobile": ["android"],
+          "general": ["GPL-3.0", "i18n:qrSigning"]
+        }
+      },
+      {
+        "id": "feather",
+        "name": "Feather Wallet",
+        "logo": "/media/feather.png",
+        "link": "https://featherwallet.org",
+        "tags": {
+          "desktop": ["windows", "macos", "linux"],
+          "general": ["BSD-3", "i18n:qrSigning"]
+        }
+      },
+      {
+        "id": "monerocom",
+        "name": "Monero.com",
+        "logo": "/media/monerocom.jpg",
+        "link": "https://monero.com",
+        "tags": {
+          "mobile": ["android", "ios"],
+          "desktop": ["windows", "linux"],
+          "general": ["MIT", "i18n:qrSigning", "i18n:builtInExchange"]
+        }
+      },
+      {
+        "id": "monerujo",
+        "name": "Monerujo",
+        "logo": "/media/monerujo.png",
+        "link": "https://monerujo.io",
+        "tags": {
+          "mobile": ["android"],
+          "general": ["Apache 2.0", "i18n:builtInExchange"]
+        }
+      },
+      {
+        "id": "monfluo",
+        "name": "Monfluo",
+        "logo": "/media/monfluo.png",
+        "link": "https://codeberg.org/acx/monfluo/releases",
+        "tags": {
+          "mobile": ["android"],
+          "general": ["GPL-3.0"]
+        }
+      }
+    ],
+    "multiCoin": [
+      {
+        "id": "cakewallet",
+        "name": "Cake Wallet",
+        "logo": "/media/cakewallet.png",
+        "link": "https://cakewallet.com",
+        "tags": {
+          "desktop": ["windows", "macos", "linux"],
+          "mobile": ["android", "ios"],
+          "general": ["GPL-3.0", "i18n:builtInExchange"]
+        }
+      },
+      {
+        "id": "eigenwallet",
+        "name": "Eigenwallet",
+        "logo": "/media/eigenwallet.png",
+        "link": "https://eigenwallet.org",
+        "tags": {
+          "desktop": ["windows", "macos", "linux"],
+          "general": ["GPL-3.0", "i18n:builtInExchange"]
+        }
+      },
+      {
+        "id": "stackwallet",
+        "name": "Stack Wallet",
+        "logo": "/media/stack-wallet.webp",
+        "link": "https://stackwallet.com",
+        "tags": {
+          "desktop": ["windows", "macos", "linux"],
+          "mobile": ["android", "ios"],
+          "general": ["GPL-3.0", "i18n:builtInExchange"]
+        }
+      },
+      {
+        "id": "unstoppable",
+        "name": "Unstoppable Wallet",
+        "logo": "/media/unstoppable.png",
+        "link": "https://unstoppable.money",
+        "tags": {
+          "mobile": ["android", "ios"],
+          "general": ["MIT"]
+        }
+      }
+    ]
+  },
+  "remoteSync": [
+    {
+      "id": "edge",
+      "name": "Edge Wallet",
+      "logo": "/media/edge.png",
+      "link": "https://edge.app/monero-wallet/",
+      "tags": {
+        "mobile": ["android", "ios"],
+        "general": ["BSD-3", "i18n:remoteScanning", "i18n:builtInExchange"]
+      }
+    }
+  ],
+  "offline": [
+    {
+      "id": "keystone",
+      "name": "Keystone",
+      "logo": "/media/keystone.jpg",
+      "link": "https://guide.keyst.one/docs/feather",
+      "tags": {
+        "general": ["3 Pro"]
+      }
+    },
+    {
+      "id": "ledger",
+      "name": "Ledger",
+      "logo": "/media/ledger.jpg",
+      "link": "https://support.ledger.com/article/360006352934-zd",
+      "tags": {
+        "general": ["Nano S", "Nano X", "Flex", "Stax"]
+      }
+    },
+    {
+      "id": "trezor",
+      "name": "Trezor",
+      "logo": "/media/trezor.png",
+      "link": "https://trezor.io/coins/wallet/monero",
+      "tags": {
+        "general": ["Model T", "Safe 3", "Safe 5", "Safe 7"]
+      }
+    },
+    {
+      "id": "cupcake",
+      "name": "Cupcake",
+      "logo": "/media/cupcake.png",
+      "link": "https://docs.cakewallet.com/cupcake/",
+      "tags": {
+        "general": ["i18n:diy"],
+        "mobile": ["android", "ios"]
+      }
+    },
+    {
+      "id": "sidekick",
+      "name": "Sidekick",
+      "logo": "/media/sidekick.png",
+      "link": "https://sidekick.monerujo.app/",
+      "tags": {
+        "general": ["i18n:diy"],
+        "mobile": ["android"]
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cuprate",
+      "name": "Cuprate",
+      "logo": "/media/cuprate.png",
+      "link": "https://github.com/Cuprate/cuprate",
+      "tags": {
+        "desktop": ["windows", "macos", "linux"],
+        "general": ["MIT", "AGPL-3.0", "i18n:alphaSoftware"]
+      }
+    }
+  ]
+}

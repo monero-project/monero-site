@@ -1,0 +1,96 @@
+{
+  "pageTitle": "Descargas | Monero - criptomoneda segura, privada e imposible de rastrear.",
+  "heroTitle": "Descargas",
+  "heroSubtitle": "Obtén billeteras y software de Monero.",
+  
+  "tabs": {
+    "core": "Principal",
+    "community": "Comunidad"
+  },
+  
+  "core": {
+    "gui": {
+      "title": "Billetera GUI de Monero",
+      "subtitle": "Billetera gráfica desarrollada por la comunidad de Monero",
+      "features": {
+        "simpleMode": "<b>Modo simple</b> para principiantes que desean enviar y recibir XMR fácilmente",
+        "advancedMode": "<b>Modo avanzado</b> con control total sobre la billetera y el nodo",
+        "merchantPage": "<b>Página de comerciante</b> para aceptar pagos XMR fácilmente",
+        "hardwareWallet": "Compatible con billeteras de hardware <b>Trezor</b> y <b>Ledger</b>",
+        "fiatConversion": "<b>Conversión de moneda fiduciaria integrada</b>",
+        "pruning": "<b>Poda de blockchain</b> para ahorrar espacio en disco",
+        "languages": "Disponible en <b>más de 30 idiomas</b>"
+      }
+    },
+    "cli": {
+      "title": "Herramientas CLI de Monero",
+      "subtitle": "Interfaz de línea de comandos para usuarios avanzados",
+      "features": {
+        "nodeChoice": "Elige entre nodo local o remoto para acceso a blockchain",
+        "torI2p": "Envía transacciones a través de Tor o I2P para mayor privacidad",
+        "bootstrap": "Usa nodo de arranque para acceso inmediato mientras sincronizas localmente",
+        "hardwareWallet": "Compatible con billeteras de hardware Trezor y Ledger",
+        "rpc": "Incluye billetera RPC, interfaz ZMQ y daemon",
+        "pruning": "La poda de blockchain ahorra espacio en disco"
+      }
+    },
+    "version": "Versión",
+    "releaseNotes": "Notas de la versión",
+    "sourceCode": "Código fuente",
+    "verifyDownload": "Verificar descarga",
+    "downloadButton": "Descargar"
+  },
+  
+  "community": {
+    "sections": {
+      "localSync": {
+        "title": "Billeteras de Sincronización Local",
+        "subtitle": "Billeteras que escanean el blockchain localmente en tu dispositivo para máxima privacidad."
+      },
+      "remoteSync": {
+        "title": "Billeteras de Sincronización Remota",
+        "subtitle": "Billeteras que usan servidores remotos para escanear el blockchain por conveniencia. Requiere compartir tu clave de vista privada con el servicio."
+      },
+      "offline": {
+        "title": "Billeteras Offline",
+        "subtitle": "Billeteras de hardware y aplicaciones de firma de transacciones offline."
+      },
+      "nodes": {
+        "title": "Software de Nodos",
+        "subtitle": "Implementaciones alternativas de nodos Monero."
+      }
+    },
+    "categories": {
+      "moneroOnly": "Solo Monero",
+      "multiCoin": "Multi-moneda"
+    },
+    "learnMore": "Más información",
+    
+    "descriptions": {
+      "anonero": "Billetera enfocada en privacidad con todas las comunicaciones a través de Tor.",
+      "feather": "Una billetera de escritorio Monero ligera, rápida y rica en funciones.",
+      "monerocom": "Una billetera solo de Monero desarrollada por Cake Labs.",
+      "monerujo": "Una billetera Monero para Android con características avanzadas.",
+      "monfluo": "Una billetera pura de Monero para Android.",
+      "cakewallet": "Una billetera multi-moneda con soporte Monero y billetera de hardware.",
+      "eigenwallet": "Billetera de Monero y Bitcoin con capacidades de intercambio atómico integradas.",
+      "stackwallet": "Una billetera multi-moneda con soporte Monero para escritorio y móvil.",
+      "unstoppable": "Una billetera multi-moneda que soporta Monero.",
+      "edge": "Una billetera multi-moneda con sincronización del lado del servidor.",
+      "keystone": "Billetera de hardware con soporte Monero a través de aplicaciones de terceros.",
+      "ledger": "Billetera de hardware con soporte Monero a través de aplicaciones de terceros.",
+      "trezor": "Billetera de hardware con soporte Monero a través de aplicaciones de terceros.",
+      "cupcake": "Aplicación de firma offline para usar con Cake Wallet/Monero.com.",
+      "sidekick": "Aplicación de firma offline para usar con Monerujo. Conecta vía Bluetooth.",
+      "cuprate": "Una implementación de nodo Monero rápida y eficiente escrita en Rust."
+    },
+    
+    "tags": {
+      "qrSigning": "Firma por QR",
+      "builtInExchange": "Intercambio integrado",
+      "remoteScanning": "Escaneo remoto",
+      "diy": "Hazlo tú mismo",
+      "alphaSoftware": "Software en alfa"
+    }
+  }
+}
