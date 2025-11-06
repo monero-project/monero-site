@@ -256,6 +256,7 @@ const leftNav = [
           <MaskIcon src={close} size="1.25rem" />
         </label>
       </div>
+      <input id="nav-dd-none" type="radio" name="nav-dd" hidden checked />
       <ul class="list">
         {leftNav.map((item) => <NavItem {...item} />)}
       </ul>

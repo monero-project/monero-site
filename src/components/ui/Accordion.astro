@@ -21,11 +21,14 @@ const accordionId = crypto.randomUUID();
 <div class="accordion">
   {
     items.map((item) => (
-      <details class="accordion-item" name={multiExpand ? undefined : `accordion-${accordionId}`}>
+      <details
+        class="accordion-item"
+        name={multiExpand ? undefined : `accordion-${accordionId}`}
+      >
         <summary class="accordion-header">
           <span class="accordion-title">{item.title}</span>
           <div class="accordion-icon">
-            <MaskIcon src={dropdownIcon}/>
+            <MaskIcon src={dropdownIcon} />
           </div>
         </summary>
         <div class="accordion-content">

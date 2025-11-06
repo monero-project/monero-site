@@ -16,37 +16,59 @@ const t = await createTInstance(locale);
 ---
 
 <Layout title={t("faq.pageTitle")}>
-  <TitleCard
-    title={t("faq.heroTitle")}
-    subtitle={t("faq.heroSubtitle")}
-  />
+  <TitleCard title={t("faq.heroTitle")} subtitle={t("faq.heroSubtitle")} />
   <div class="accordion-grid">
     <div class="accordion-card">
       <h2 class="card-title">{t("faq.basics.title")}</h2>
-      <Accordion items={t("faq.basics.items", { returnObjects: true }) as AccordionItem[]} />
+      <Accordion
+        items={t("faq.basics.items", {
+          returnObjects: true,
+        }) as AccordionItem[]}
+      />
     </div>
     <div class="accordion-card">
       <h2 class="card-title">{t("faq.nodes.title")}</h2>
-      <Accordion items={t("faq.nodes.items", { returnObjects: true }) as AccordionItem[]} />
+      <Accordion
+        items={t("faq.nodes.items", { returnObjects: true }) as AccordionItem[]}
+      />
     </div>
     <div class="accordion-card">
       <h2 class="card-title">{t("faq.privacy.title")}</h2>
-      <Accordion items={t("faq.privacy.items", { returnObjects: true }) as AccordionItem[]} />
+      <Accordion
+        items={t("faq.privacy.items", {
+          returnObjects: true,
+        }) as AccordionItem[]}
+      />
     </div>
     <div class="accordion-card">
       <h2 class="card-title">{t("faq.security.title")}</h2>
-      <Accordion items={t("faq.security.items", { returnObjects: true }) as AccordionItem[]} />
+      <Accordion
+        items={t("faq.security.items", {
+          returnObjects: true,
+        }) as AccordionItem[]}
+      />
     </div>
     <div class="accordion-card">
       <h2 class="card-title">{t("faq.wallets.title")}</h2>
-      <Accordion items={t("faq.wallets.items", { returnObjects: true }) as AccordionItem[]} />
+      <Accordion
+        items={t("faq.wallets.items", {
+          returnObjects: true,
+        }) as AccordionItem[]}
+      />
     </div>
     <div class="accordion-card">
       <h2 class="card-title">{t("faq.economics.title")}</h2>
-      <Accordion items={t("faq.economics.items", { returnObjects: true }) as AccordionItem[]} />
+      <Accordion
+        items={t("faq.economics.items", {
+          returnObjects: true,
+        }) as AccordionItem[]}
+      />
     </div>
   </div>
-  <IndexCard title="Resources and Help" description="Explore the knowledge base to learn everything about Monero, from basic blockchain terms to advanced privacy mechanisms and technology.">
+  <IndexCard
+    title="Resources and Help"
+    description="Explore the knowledge base to learn everything about Monero, from basic blockchain terms to advanced privacy mechanisms and technology."
+  >
     <div id="resource-container">
       <ResourceCard
         icon={userGuidesIcon}

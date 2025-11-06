@@ -20,13 +20,27 @@ export interface Props {
 const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
 const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const closeId = id + "-close";
 ---
 
 <li class={`item${isDropdown ? " has-dd" : ""}`}>
   {
     isDropdown ? (
       <>
-        <input id={id} class="dd-toggle" type="checkbox" aria-hidden="true" />
+        <input
+          id={id}
+          class="dd-toggle"
+          type="radio"
+          name="nav-dd"
+          aria-hidden="true"
+        />
+        <input
+          id={closeId}
+          class="dd-close"
+          type="radio"
+          name="nav-dd"
+          aria-hidden="true"
+        />
 
         <div class="row">
           {href ? (
@@ -45,8 +59,13 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
           <label
             for={id}
-            class="mobile-cover"
-            aria-label={`Toggle ${label} menu`}
+            class="mobile-open"
+            aria-label={`Open ${label} menu`}
+          />
+          <label
+            for={closeId}
+            class="mobile-close"
+            aria-label={`Close ${label} menu`}
           />
         </div>
 
@@ -115,10 +134,12 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     transition: transform 0.2s ease;
   }
 
-  .mobile-cover {
+  .mobile-open,
+  .mobile-close {
     display: none;
-  } /* inert on desktop */
-  .dd-toggle {
+  }
+  .dd-toggle,
+  .dd-close {
     display: none;
   }
 
@@ -209,7 +230,8 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     .has-dd:is(:hover, :has(.dropdown :focus)) > .row > .caret {
       transform: rotate(180deg);
     }
-    .mobile-cover {
+    .mobile-open,
+    .mobile-close {
       pointer-events: none;
     }
   }
@@ -219,7 +241,23 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     .row {
       padding: 0.5rem 0;
     }
-    .mobile-cover {
+
+    /* Show open label by default, close label when expanded */
+    .mobile-open {
+      display: block;
+      position: absolute;
+      inset: 0;
+      pointer-events: auto;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .mobile-close {
+      display: none;
+    }
+    .dd-toggle:checked ~ .row .mobile-open {
+      display: none;
+    }
+    .dd-toggle:checked ~ .row .mobile-close {
       display: block;
       position: absolute;
       inset: 0;
@@ -246,7 +284,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     .dd-toggle:checked ~ .dropdown {
       max-height: 100vh;
     }
-    .dd-toggle:checked + .row > .caret {
+    .dd-toggle:checked ~ .row > .caret {
       transform: rotate(180deg);
     }
   }
