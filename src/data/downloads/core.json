@@ -34,7 +34,8 @@
         "platform": "linux",
         "size": "123.22 MB"
       }
-    ]
+    ],
+    "name": "Fluorine Fermi"
   },
   "cli": {
     "version": "v0.18.4.3",
@@ -115,6 +116,7 @@
         "platform": "freebsd",
         "size": "66.83 MB"
       }
-    ]
+    ],
+    "name": "Fluorine Fermi"
   }
 }

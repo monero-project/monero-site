@@ -37,7 +37,9 @@
     "version": "Version",
     "releaseNotes": "Release notes",
     "sourceCode": "Source code",
-    "verifyDownload": "Verify download",
+    "verifyDownload": "Verify",
+    "verifyDescription": "You are strongly advised to verify the hash of the file you downloaded.<br/><br/>This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup.<br/>Please don't underestimate this step, a corrupted archive could result in lost funds.<br/><br/><b>Always verify your downloads!</b>",
+    "viewHashes": "View hashes",
     "downloadButton": "Download"
   },
   

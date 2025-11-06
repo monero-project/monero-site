@@ -1,12 +1,12 @@
 import { readFileSync, writeFileSync } from "fs";
 
-async function getLatestVersion(repo: string): Promise<string | null> {
+async function getLatestVersion(repo: string): Promise<{ tag_name: string; name: string } | null> {
   try {
     const url = `https://api.github.com/repos/monero-project/${repo}/releases/latest`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
     const data = await response.json();
-    return data.tag_name;
+    return { tag_name: data.tag_name, name: data.name };
   } catch (error) {
     console.error(`Error fetching latest version for ${repo}:`, error);
     return null;
@@ -37,19 +37,23 @@ async function main() {
 
   // Update versions
   console.log("Fetching latest versions from GitHub...");
-  const guiVersion = await getLatestVersion("monero-gui");
-  const cliVersion = await getLatestVersion("monero");
+  const guiRelease = await getLatestVersion("monero-gui");
+  const cliRelease = await getLatestVersion("monero");
 
-  if (guiVersion) {
-    data.gui.version = guiVersion;
-    console.log(`GUI version updated to: ${guiVersion}`);
+  if (guiRelease) {
+    data.gui.version = guiRelease.tag_name;
+    data.gui.name = (guiRelease.name.match(/^[a-zA-Z ]+/) || [''])[0].trim();
+    console.log(`GUI version updated to: ${guiRelease.tag_name}`);
+    console.log(`GUI name set to: ${data.gui.name}`);
   } else {
     console.log("GUI version update failed, keeping current version");
   }
 
-  if (cliVersion) {
-    data.cli.version = cliVersion;
-    console.log(`CLI version updated to: ${cliVersion}`);
+  if (cliRelease) {
+    data.cli.version = cliRelease.tag_name;
+    data.cli.name = (cliRelease.name.match(/^[a-zA-Z ]+/) || [''])[0].trim();
+    console.log(`CLI version updated to: ${cliRelease.tag_name}`);
+    console.log(`CLI name set to: ${data.cli.name}`);
   } else {
     console.log("CLI version update failed, keeping current version");
   }

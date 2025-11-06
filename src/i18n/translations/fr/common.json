@@ -11,7 +11,7 @@
     "dropdowns": {
       "getStarted": {
         "whatIsMonero": {
-          "label": "Qu'est-ce que Monero ?",
+          "label": "Qu'est-ce que Monero?",
           "desc": "Tout ce que vous devez savoir sur Monero en un mot."
         },
         "acceptMonero": {

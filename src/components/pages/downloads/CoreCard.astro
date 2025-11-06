@@ -37,6 +37,7 @@ interface Props {
   downloads: (DownloadLink | "separator")[];
   sourceCodeUrl?: string;
   version?: string;
+  versionName?: string;
   releaseNotesUrl?: string;
   verifyLink?: string;
   labels?: Labels;
@@ -51,6 +52,7 @@ const {
   downloads,
   sourceCodeUrl,
   version,
+  versionName,
   releaseNotesUrl,
   verifyLink,
   labels = {
@@ -112,7 +114,7 @@ const PLATFORM_ICONS: Record<string, string> = {
       </Dropdown>
     </div>
     <div class="metadata-links">
-      {version && <span class="version-text">{version}</span>}
+      {version && <span class="version-text">{version} - {versionName}</span>}
       {
         releaseNotesUrl && (
           <>
@@ -146,7 +148,7 @@ const PLATFORM_ICONS: Record<string, string> = {
     </div>
     <div class="verification">
       <h4>{labels.verifyDownloads}</h4>
-      <p>{labels.verifyDescription}</p>
+      <p set:html={labels.verifyDescription}></p>
       <a href={verifyLink ?? "#"} class="verify-link"
         >{labels.viewHashes}</a
       >

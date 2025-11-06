@@ -168,6 +168,7 @@ const closeId = id + "-close";
   .dropdown-item {
     position: relative;
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     gap: 1rem;
     color: var(--heading-color);
@@ -194,14 +195,11 @@ const closeId = id + "-close";
   }
 
   .arrow {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
+    display: flex;
+    align-items: start;
     opacity: 0;
     transition: opacity 0.2s ease;
     color: var(--paragraph-subtitle);
-    display: flex;
-    align-items: start;
   }
 
   .dropdown-item:hover .arrow {
