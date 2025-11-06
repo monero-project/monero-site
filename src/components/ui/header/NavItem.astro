@@ -64,7 +64,7 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
                 {item.desc && <div class="desc">{item.desc}</div>}
               </div>
               <div class="arrow">
-                <MaskIcon src={arrowLeft} size="1rem" />
+                <MaskIcon src={arrowLeft} size="0.75rem" />
               </div>
             </a>
           ))}
@@ -179,6 +179,8 @@ const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     opacity: 0;
     transition: opacity 0.2s ease;
     color: var(--paragraph-subtitle);
+    display: flex;
+    align-items: start;
   }
 
   .dropdown-item:hover .arrow {
