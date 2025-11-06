@@ -282,7 +282,7 @@ downloads:
   mobile: Mobile
   desktop: Desktop
   antivirus: Antivirus
-  sourcearchive: Source Code (archive)
+  sourcearchive: Archive
   localsync: Local synchronization
   localsyncinfo: These wallets connect to @remote-nodes and scan the @blockchain on your device, without sharing any key with the nodes. They provide higher privacy, but require more time synchronizing, since missing @blocks will be scanned only when the wallet is opened.
   remotesync: Remote synchronization (lightweight)
