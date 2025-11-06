@@ -1012,6 +1012,18 @@ a[href^="https:"]:not([href*="getmonero.org"]).orange {
 
 /* END External link icon */
 
+/* Magnet link icon */
+
+a[href^="magnet:"]:not([class*="ext-noicon"]) {
+  display: inline-block;
+  background: url(/img/magnet.avif) no-repeat right top;
+  padding-right: 0.7em;
+  margin-right: 0.3rem;
+  background-size: 0.6em;
+}
+
+/* END Magnet link icon */
+
 a:hover, a:focus, a:active {
     outline: 0;
 }
@@ -3310,6 +3322,14 @@ span.icon-browser {
 span.icon-git {
   background-image: url(../img/monero-spritesheet.png);
   background-position: -94px -140px;
+}
+
+span.icon-torrent {
+  background-image: url(../img/download.avif);
+  width: 31px;
+  height: 29px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .downloads a.ext-noicon {
