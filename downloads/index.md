@@ -79,7 +79,11 @@ meta_descr: downloads.intro
                   <div class="col-md-4 col-sm-4 col-xs-4 desktop-only">
                     <ul>
                       <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero-gui" target="_blank">{% t downloads.sourcecode %}</a> | <a class="orange" href="https://downloads.getmonero.org/gui/source">{% t downloads.sourcearchive %}</a></li>
-                      <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="magnet:?xt=urn:btih:be7b55a5ade8a73c59dc5a981e23f7c06c15eea1&dn=monero-gui-v0.18.4.3&ws=https%3A%2F%2Fdownloads.getmonero.org">Torrent</a></li>
+                      <!-- do not draw torrent if version != latest release -->
+                      {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
+                      {% if torrent and torrent.vers == nil %}
+                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">Torrent</a></li>
+                      {% endif %}
                     </ul>
                   </div>
                   <div class="mobile-only">
@@ -172,7 +176,11 @@ meta_descr: downloads.intro
                     <ul>
                       <li class="downloads"><span class="icon-freebsd"></span><a class="orange" href="https://downloads.getmonero.org/cli/freebsd64">FreeBSD 64-bit</a></li>
                       <li class="downloads"><span class="icon-github"></span><a class="orange" href="https://github.com/monero-project/monero-gui" target="_blank">{% t downloads.sourcecode %}</a> | <a class="orange" href="https://downloads.getmonero.org/gui/source">{% t downloads.sourcearchive %}</a></li>
-                      <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="magnet:?xt=urn:btih:9286f2c3ed7ee2516c49ea4eecf02fa69025cef8&dn=monero-v0.18.4.3&ws=https%3A%2F%2Fdownloads.getmonero.org">Torrent</a></li>
+                      <!-- do not draw torrent if version != latest release -->
+                      {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
+                      {% if torrent and torrent.vers == nil %}
+                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">Torrent</a></li>
+                      {% endif %}
                     </ul>
                   </div>
                   <div class="mobile-only">
