@@ -117,4 +117,4 @@ cli:
      link: https://downloads.getmonero.org/cli/torrent
      magnet: magnet:?xt=urn:btih:9286f2c3ed7ee2516c49ea4eecf02fa69025cef8&dn=monero-v0.18.4.3&ws=https%3A%2F%2Fdownloads.getmonero.org
      icon: icon-magnet
-     vers: 0.18.4.older
+     vers:
