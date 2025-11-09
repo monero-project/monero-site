@@ -77,11 +77,11 @@ const general = Array.from(
 // Helper to translate a tag
 const getTagLabel = (tag: string): string => {
   // Check if tag has i18n: prefix
-  if (tag.startsWith('i18n:')) {
+  if (tag.startsWith("i18n:")) {
     const key = tag.slice(5);
     return translateTag ? translateTag(key) : tag;
   }
-  
+
   // Otherwise return as-is (licenses, model numbers, etc.)
   return tag;
 };

@@ -2,12 +2,12 @@
   "pageTitle": "Téléchargements | Monero - cryptomonnaie sécurisée, privée et intraçable.",
   "heroTitle": "Téléchargements",
   "heroSubtitle": "Obtenez des portefeuilles et des logiciels Monero.",
-  
+
   "tabs": {
     "core": "Principal",
     "community": "Communauté"
   },
-  
+
   "core": {
     "gui": {
       "title": "Portefeuille GUI Monero",
@@ -40,7 +40,7 @@
     "verifyDownload": "Vérifier le téléchargement",
     "downloadButton": "Télécharger"
   },
-  
+
   "community": {
     "sections": {
       "localSync": {
@@ -65,7 +65,7 @@
       "multiCoin": "Multi-monnaies"
     },
     "learnMore": "En savoir plus",
-    
+
     "descriptions": {
       "anonero": "Portefeuille axé sur la confidentialité avec toutes les communications via Tor.",
       "feather": "Un portefeuille de bureau Monero léger, rapide et riche en fonctionnalités.",
@@ -84,7 +84,7 @@
       "sidekick": "Application de signature hors ligne à utiliser avec Monerujo. Connexion via Bluetooth.",
       "cuprate": "Une implémentation de nœud Monero rapide et efficace écrite en Rust."
     },
-    
+
     "tags": {
       "qrSigning": "Signature QR",
       "builtInExchange": "Échange intégré",

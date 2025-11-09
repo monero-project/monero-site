@@ -61,7 +61,8 @@ const {
     sourceCode: "Source code",
     download: "Download",
     verifyDownloads: "Verify Downloads",
-    verifyDescription: "After downloading, verify the integrity using the provided hashes:",
+    verifyDescription:
+      "After downloading, verify the integrity using the provided hashes:",
     viewHashes: "View Hashes & Signatures",
   },
 } = Astro.props;
@@ -114,7 +115,13 @@ const PLATFORM_ICONS: Record<string, string> = {
       </Dropdown>
     </div>
     <div class="metadata-links">
-      {version && <span class="version-text">{version} - {versionName}</span>}
+      {
+        version && (
+          <span class="version-text">
+            {version} - {versionName}
+          </span>
+        )
+      }
       {
         releaseNotesUrl && (
           <>
@@ -148,10 +155,8 @@ const PLATFORM_ICONS: Record<string, string> = {
     </div>
     <div class="verification">
       <h4>{labels.verifyDownloads}</h4>
-      <p set:html={labels.verifyDescription}></p>
-      <a href={verifyLink ?? "#"} class="verify-link"
-        >{labels.viewHashes}</a
-      >
+      <p set:html={labels.verifyDescription} />
+      <a href={verifyLink ?? "#"} class="verify-link">{labels.viewHashes}</a>
     </div>
   </div>
 </div>

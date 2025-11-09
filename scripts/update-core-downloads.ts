@@ -1,6 +1,8 @@
 import { readFileSync, writeFileSync } from "fs";
 
-async function getLatestVersion(repo: string): Promise<{ tag_name: string; name: string } | null> {
+async function getLatestVersion(
+  repo: string,
+): Promise<{ tag_name: string; name: string } | null> {
   try {
     const url = `https://api.github.com/repos/monero-project/${repo}/releases/latest`;
     const response = await fetch(url);
@@ -42,7 +44,7 @@ async function main() {
 
   if (guiRelease) {
     data.gui.version = guiRelease.tag_name;
-    data.gui.name = (guiRelease.name.match(/^[a-zA-Z ]+/) || [''])[0].trim();
+    data.gui.name = (guiRelease.name.match(/^[a-zA-Z ]+/) || [""])[0].trim();
     console.log(`GUI version updated to: ${guiRelease.tag_name}`);
     console.log(`GUI name set to: ${data.gui.name}`);
   } else {
@@ -51,7 +53,7 @@ async function main() {
 
   if (cliRelease) {
     data.cli.version = cliRelease.tag_name;
-    data.cli.name = (cliRelease.name.match(/^[a-zA-Z ]+/) || [''])[0].trim();
+    data.cli.name = (cliRelease.name.match(/^[a-zA-Z ]+/) || [""])[0].trim();
     console.log(`CLI version updated to: ${cliRelease.tag_name}`);
     console.log(`CLI name set to: ${data.cli.name}`);
   } else {

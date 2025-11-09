@@ -14,13 +14,10 @@ const t = await createTInstance(locale, "downloads");
 ---
 
 <Layout title={t("pageTitle")}>
-  <TitleCard 
-    title={t("heroTitle")} 
-    subtitle={t("heroSubtitle")} 
-  />
-  <Tabs 
-    labels={[t("tabs.core"), t("tabs.community")]} 
-    initial={0} 
+  <TitleCard title={t("heroTitle")} subtitle={t("heroSubtitle")} />
+  <Tabs
+    labels={[t("tabs.core"), t("tabs.community")]}
+    initial={0}
     id="download-tabs"
   >
     <Fragment slot="panel-0" id="core-tab">
@@ -35,7 +32,12 @@ const t = await createTInstance(locale, "downloads");
           versionName={coreDownloads.gui.name}
           releaseNotesUrl={`https://github.com/monero-project/monero-gui/releases/tag/${coreDownloads.gui.version}`}
           sourceCodeUrl="https://github.com/monero-project/monero-gui"
-          features={Object.values(t("core.gui.features", { returnObjects: true }) as Record<string, string>)}
+          features={Object.values(
+            t("core.gui.features", { returnObjects: true }) as Record<
+              string,
+              string
+            >,
+          )}
           downloads={coreDownloads.gui.downloads as DownloadLink[]}
           labels={{
             version: t("core.version"),
@@ -58,7 +60,12 @@ const t = await createTInstance(locale, "downloads");
           versionName={coreDownloads.cli.name}
           releaseNotesUrl={`https://github.com/monero-project/monero/releases/tag/${coreDownloads.cli.version}`}
           sourceCodeUrl="https://github.com/monero-project/monero"
-          features={Object.values(t("core.cli.features", { returnObjects: true }) as Record<string, string>)}
+          features={Object.values(
+            t("core.cli.features", { returnObjects: true }) as Record<
+              string,
+              string
+            >,
+          )}
           downloads={coreDownloads.cli.downloads as DownloadLink[]}
           labels={{
             version: t("core.version"),
@@ -86,33 +93,37 @@ const t = await createTInstance(locale, "downloads");
         <!-- Monero-only -->
         <h3 class="subheading">{t("community.categories.moneroOnly")}</h3>
         <div class="cards-grid compact">
-          {communityWallets.localSync.moneroOnly.map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("community.learnMore")}
-              translateTag={(key: string) => t(`community.tags.${key}`)}
-            />
-          ))}
+          {
+            communityWallets.localSync.moneroOnly.map((wallet) => (
+              <CommunityCard
+                logo={wallet.logo}
+                name={wallet.name}
+                description={t(`community.descriptions.${wallet.id}`)}
+                tags={wallet.tags}
+                link={wallet.link}
+                linkText={t("community.learnMore")}
+                translateTag={(key: string) => t(`community.tags.${key}`)}
+              />
+            ))
+          }
         </div>
 
         <!-- Multi-coin -->
         <h3 class="subheading">{t("community.categories.multiCoin")}</h3>
         <div class="cards-grid compact">
-          {communityWallets.localSync.multiCoin.map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("community.learnMore")}
-              translateTag={(key: string) => t(`community.tags.${key}`)}
-            />
-          ))}
+          {
+            communityWallets.localSync.multiCoin.map((wallet) => (
+              <CommunityCard
+                logo={wallet.logo}
+                name={wallet.name}
+                description={t(`community.descriptions.${wallet.id}`)}
+                tags={wallet.tags}
+                link={wallet.link}
+                linkText={t("community.learnMore")}
+                translateTag={(key: string) => t(`community.tags.${key}`)}
+              />
+            ))
+          }
         </div>
 
         <!-- Remote Sync Wallets -->
@@ -123,17 +134,19 @@ const t = await createTInstance(locale, "downloads");
           {t("community.sections.remoteSync.subtitle")}
         </p>
         <div class="cards-grid">
-          {communityWallets.remoteSync.map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("community.learnMore")}
-              translateTag={(key: string) => t(`community.tags.${key}`)}
-            />
-          ))}
+          {
+            communityWallets.remoteSync.map((wallet) => (
+              <CommunityCard
+                logo={wallet.logo}
+                name={wallet.name}
+                description={t(`community.descriptions.${wallet.id}`)}
+                tags={wallet.tags}
+                link={wallet.link}
+                linkText={t("community.learnMore")}
+                translateTag={(key: string) => t(`community.tags.${key}`)}
+              />
+            ))
+          }
         </div>
 
         <!-- Offline Wallets -->
@@ -144,17 +157,19 @@ const t = await createTInstance(locale, "downloads");
           {t("community.sections.offline.subtitle")}
         </p>
         <div class="cards-grid">
-          {communityWallets.offline.map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("community.learnMore")}
-              translateTag={(key: string) => t(`community.tags.${key}`)}
-            />
-          ))}
+          {
+            communityWallets.offline.map((wallet) => (
+              <CommunityCard
+                logo={wallet.logo}
+                name={wallet.name}
+                description={t(`community.descriptions.${wallet.id}`)}
+                tags={wallet.tags}
+                link={wallet.link}
+                linkText={t("community.learnMore")}
+                translateTag={(key: string) => t(`community.tags.${key}`)}
+              />
+            ))
+          }
         </div>
 
         <!-- Node Software -->
@@ -165,17 +180,19 @@ const t = await createTInstance(locale, "downloads");
           {t("community.sections.nodes.subtitle")}
         </p>
         <div class="cards-grid">
-          {communityWallets.nodes.map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("community.learnMore")}
-              translateTag={(key: string) => t(`community.tags.${key}`)}
-            />
-          ))}
+          {
+            communityWallets.nodes.map((wallet) => (
+              <CommunityCard
+                logo={wallet.logo}
+                name={wallet.name}
+                description={t(`community.descriptions.${wallet.id}`)}
+                tags={wallet.tags}
+                link={wallet.link}
+                linkText={t("community.learnMore")}
+                translateTag={(key: string) => t(`community.tags.${key}`)}
+              />
+            ))
+          }
         </div>
       </div>
     </Fragment>

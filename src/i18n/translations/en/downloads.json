@@ -2,12 +2,12 @@
   "pageTitle": "Downloads | Monero - secure, private, untraceable cryptocurrency.",
   "heroTitle": "Downloads",
   "heroSubtitle": "Get Monero wallets and software.",
-  
+
   "tabs": {
     "core": "Core",
     "community": "Community"
   },
-  
+
   "core": {
     "gui": {
       "title": "Monero GUI Wallet",
@@ -42,7 +42,7 @@
     "viewHashes": "View hashes",
     "downloadButton": "Download"
   },
-  
+
   "community": {
     "sections": {
       "localSync": {
@@ -67,7 +67,7 @@
       "multiCoin": "Multi-coin"
     },
     "learnMore": "Learn more",
-    
+
     "descriptions": {
       "anonero": "Privacy-focused wallet with all communications over Tor.",
       "feather": "A lightweight, fast, and feature-rich Monero desktop wallet.",
@@ -86,7 +86,7 @@
       "sidekick": "Offline signer app for use with Monerujo. Connects via Bluetooth.",
       "cuprate": "A fast and efficient Monero node implementation written in Rust."
     },
-    
+
     "tags": {
       "qrSigning": "QR Signing",
       "builtInExchange": "Built-in exchange",

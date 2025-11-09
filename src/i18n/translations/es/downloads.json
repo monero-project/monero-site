@@ -2,12 +2,12 @@
   "pageTitle": "Descargas | Monero - criptomoneda segura, privada e imposible de rastrear.",
   "heroTitle": "Descargas",
   "heroSubtitle": "Obtén billeteras y software de Monero.",
-  
+
   "tabs": {
     "core": "Principal",
     "community": "Comunidad"
   },
-  
+
   "core": {
     "gui": {
       "title": "Billetera GUI de Monero",
@@ -40,7 +40,7 @@
     "verifyDownload": "Verificar descarga",
     "downloadButton": "Descargar"
   },
-  
+
   "community": {
     "sections": {
       "localSync": {
@@ -65,7 +65,7 @@
       "multiCoin": "Multi-moneda"
     },
     "learnMore": "Más información",
-    
+
     "descriptions": {
       "anonero": "Billetera enfocada en privacidad con todas las comunicaciones a través de Tor.",
       "feather": "Una billetera de escritorio Monero ligera, rápida y rica en funciones.",
@@ -84,7 +84,7 @@
       "sidekick": "Aplicación de firma offline para usar con Monerujo. Conecta vía Bluetooth.",
       "cuprate": "Una implementación de nodo Monero rápida y eficiente escrita en Rust."
     },
-    
+
     "tags": {
       "qrSigning": "Firma por QR",
       "builtInExchange": "Intercambio integrado",

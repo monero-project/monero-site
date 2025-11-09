@@ -45,58 +45,48 @@ import pressKitDark from "@/assets/icons/color/dark/press-kit.avif?url";
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
 
-const leftNav = [
+const dropdown = (
+  section: string,
+  items: Array<{ key: string; href: string; icon: string; iconDark: string }>,
+) =>
+  items.map(({ key, href, icon, iconDark }) => ({
+    label: t(`header.dropdowns.${section}.${key}.label`, { ns: "common" }),
+    desc: t(`header.dropdowns.${section}.${key}.desc`, { ns: "common" }),
+    href: localizeHref(locale, href),
+    icon,
+    iconDark,
+  }));
+
+const navItems = [
   {
     label: t("header.nav.getStarted", { ns: "common" }),
-    dropdown: [
+    dropdown: dropdown("getStarted", [
       {
-        label: t("header.dropdowns.getStarted.whatIsMonero.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.getStarted.whatIsMonero.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/get-started/what-is-monero"),
+        key: "whatIsMonero",
+        href: "/get-started/what-is-monero",
         icon: whatIsMonero,
         iconDark: whatIsMoneroDark,
       },
       {
-        label: t("header.dropdowns.getStarted.acceptMonero.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.getStarted.acceptMonero.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/get-started/accept-monero"),
+        key: "acceptMonero",
+        href: "/get-started/accept-monero",
         icon: acceptMonero,
         iconDark: acceptMoneroDark,
       },
       {
-        label: t("header.dropdowns.getStarted.contribute.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.getStarted.contribute.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/get-started/contribute"),
+        key: "contribute",
+        href: "/get-started/contribute",
         icon: contribute,
         iconDark: contributeDark,
       },
       {
-        label: t("header.dropdowns.getStarted.mining.label", { ns: "common" }),
-        desc: t("header.dropdowns.getStarted.mining.desc", { ns: "common" }),
-        href: localizeHref(locale, "/get-started/mining"),
+        key: "mining",
+        href: "/get-started/mining",
         icon: mining,
         iconDark: miningDark,
       },
-      {
-        label: t("header.dropdowns.getStarted.faq.label", { ns: "common" }),
-        desc: t("header.dropdowns.getStarted.faq.desc", { ns: "common" }),
-        href: localizeHref(locale, "/get-started/faq"),
-        icon: faq,
-        iconDark: faqDark,
-      },
-    ],
+      { key: "faq", href: "/get-started/faq", icon: faq, iconDark: faqDark },
+    ]),
   },
   {
     label: t("header.nav.downloads", { ns: "common" }),
@@ -108,116 +98,79 @@ const leftNav = [
   },
   {
     label: t("header.nav.community", { ns: "common" }),
-    dropdown: [
+    dropdown: dropdown("community", [
       {
-        label: t("header.dropdowns.community.workgroups.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.community.workgroups.desc", { ns: "common" }),
-        href: localizeHref(locale, "/community/workgroups"),
+        key: "workgroups",
+        href: "/community/workgroups",
         icon: workgroups,
         iconDark: workgroupsDark,
       },
       {
-        label: t("header.dropdowns.community.sponsorships.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.community.sponsorships.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/community/sponsorships"),
+        key: "sponsorships",
+        href: "/community/sponsorships",
         icon: sponsorships,
         iconDark: sponsorshipsDark,
       },
       {
-        label: t("header.dropdowns.community.hangouts.label", { ns: "common" }),
-        desc: t("header.dropdowns.community.hangouts.desc", { ns: "common" }),
-        href: localizeHref(locale, "/community/hangouts"),
+        key: "hangouts",
+        href: "/community/hangouts",
         icon: hangouts,
         iconDark: hangoutsDark,
       },
       {
-        label: t("header.dropdowns.community.merchants.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.community.merchants.desc", { ns: "common" }),
-        href: localizeHref(locale, "/community/merchants"),
+        key: "merchants",
+        href: "/community/merchants",
         icon: merchantsExchanges,
         iconDark: merchantsExchangesDark,
       },
-    ],
+    ]),
   },
   {
     label: t("header.nav.resources", { ns: "common" }),
-    dropdown: [
+    dropdown: dropdown("resources", [
       {
-        label: t("header.dropdowns.resources.knowledgeBase.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.resources.knowledgeBase.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/resources/knowledge-base"),
+        key: "knowledgeBase",
+        href: "/resources/knowledge-base",
         icon: moneropedia,
         iconDark: moneropediaDark,
       },
       {
-        label: t("header.dropdowns.resources.roadmap.label", { ns: "common" }),
-        desc: t("header.dropdowns.resources.roadmap.desc", { ns: "common" }),
-        href: localizeHref(locale, "/resources/roadmap"),
+        key: "roadmap",
+        href: "/resources/roadmap",
         icon: roadmap,
         iconDark: roadmapDark,
       },
       {
-        label: t("header.dropdowns.resources.researchLab.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.resources.researchLab.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/resources/research-lab"),
+        key: "researchLab",
+        href: "/resources/research-lab",
         icon: researchLab,
         iconDark: researchLabDark,
       },
       {
-        label: t("header.dropdowns.resources.userGuides.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.resources.userGuides.desc", { ns: "common" }),
-        href: localizeHref(locale, "/resources/user-guides"),
+        key: "userGuides",
+        href: "/resources/user-guides",
         icon: userGuides,
         iconDark: userGuidesDark,
       },
       {
-        label: t("header.dropdowns.resources.developerGuides.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.resources.developerGuides.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/resources/developer-guides"),
+        key: "developerGuides",
+        href: "/resources/developer-guides",
         icon: developerGuides,
         iconDark: developerGuidesDark,
       },
       {
-        label: t("header.dropdowns.resources.moneroTools.label", {
-          ns: "common",
-        }),
-        desc: t("header.dropdowns.resources.moneroTools.desc", {
-          ns: "common",
-        }),
-        href: localizeHref(locale, "/resources/monero-tools"),
+        key: "moneroTools",
+        href: "/resources/monero-tools",
         icon: tools,
         iconDark: toolsDark,
       },
       {
-        label: t("header.dropdowns.resources.pressKit.label", { ns: "common" }),
-        desc: t("header.dropdowns.resources.pressKit.desc", { ns: "common" }),
-        href: localizeHref(locale, "/resources/press-kit"),
+        key: "pressKit",
+        href: "/resources/press-kit",
         icon: pressKit,
         iconDark: pressKitDark,
       },
-    ],
+    ]),
   },
   {
     label: t("header.nav.crowdfunding", { ns: "common" }),
@@ -257,7 +210,7 @@ const leftNav = [
         </label>
       </div>
       <ul class="list">
-        {leftNav.map((item) => <NavItem {...item} />)}
+        {navItems.map((item) => <NavItem {...item} />)}
       </ul>
     </nav>
 

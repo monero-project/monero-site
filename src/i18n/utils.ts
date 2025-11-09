@@ -21,14 +21,21 @@ export const getLocaleName = (locale: string): { name: string } | null => {
   return { name: capitalizedName };
 };
 
-export const createTInstance = (locale: string, namespace?: string | string[]) => {
+export const createTInstance = (
+  locale: string,
+  namespace?: string | string[],
+) => {
   const newInstance = createInstance();
 
-  const namespaces = namespace 
-    ? (Array.isArray(namespace) ? namespace : [namespace])
+  const namespaces = namespace
+    ? Array.isArray(namespace)
+      ? namespace
+      : [namespace]
     : ["common", "translation"];
-  
-  const defaultNamespace = Array.isArray(namespace) ? namespace[0] : namespace || "translation";
+
+  const defaultNamespace = Array.isArray(namespace)
+    ? namespace[0]
+    : namespace || "translation";
 
   return newInstance.use(Backend).init({
     lng: locale,
