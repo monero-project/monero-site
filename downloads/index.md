@@ -82,7 +82,7 @@ meta_descr: downloads.intro
                       <!-- do not draw torrent if version != latest release -->
                       {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
                       {% if torrent and torrent.vers == nil %}
-                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">Torrent</a></li>
+                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
                       {% endif %}
                     </ul>
                   </div>
@@ -91,6 +91,9 @@ meta_descr: downloads.intro
                     {% for entry in item.downloads %}
                       {% unless entry.vers != nil %}
                       <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% if entry.platform == "Torrent" %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
+                        {% endif %}
                       {% endunless %}
                     {% endfor %}
                     </ul>
@@ -101,6 +104,9 @@ meta_descr: downloads.intro
                       <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
                       <ul>
                         <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% if entry.platform == "Torrent" %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
+                        {% endif %}
                       </ul>
                     </div>
                     {% endif %}
@@ -179,7 +185,7 @@ meta_descr: downloads.intro
                       <!-- do not draw torrent if version != latest release -->
                       {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
                       {% if torrent and torrent.vers == nil %}
-                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">Torrent</a></li>
+                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
                       {% endif %}
                     </ul>
                   </div>
@@ -188,6 +194,9 @@ meta_descr: downloads.intro
                       {% for entry in item.downloads %}
                         {% unless entry.vers != nil %}
                           <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                          {% if entry.platform == "Torrent" %}
+                            <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
+                          {% endif %}
                         {% endunless %}
                       {% endfor %}
                     </ul>
@@ -198,6 +207,9 @@ meta_descr: downloads.intro
                     <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
                     <ul>
                       <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
+                        {% if entry.platform == "Torrent" %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
+                        {% endif %}
                     </ul>
                   </div>
                   {% endif %}
