@@ -90,9 +90,10 @@ meta_descr: downloads.intro
                     <ul class="nopadding">
                     {% for entry in item.downloads %}
                       {% unless entry.vers != nil %}
-                      <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% if entry.platform == "Torrent" %}
-                          <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
+                          <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        {% else %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% endif %}
                       {% endunless %}
                     {% endfor %}
@@ -103,9 +104,10 @@ meta_descr: downloads.intro
                     <div class="col-md-12 col-sm-12 col-xs-12">
                       <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
                       <ul>
-                        <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% if entry.platform == "Torrent" %}
-                          <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
+                          <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        {% else %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% endif %}
                       </ul>
                     </div>
@@ -193,9 +195,10 @@ meta_descr: downloads.intro
                     <ul class="nopadding">
                       {% for entry in item.downloads %}
                         {% unless entry.vers != nil %}
-                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                           {% if entry.platform == "Torrent" %}
-                            <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
+                            <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                          {% else %}
+                            <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                           {% endif %}
                         {% endunless %}
                       {% endfor %}
@@ -206,9 +209,10 @@ meta_descr: downloads.intro
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <p><i>{% t downloads.currentversion %}:</i> {{ entry.vers }}</p>
                     <ul>
-                      <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
-                        {% if entry.platform == "Torrent" %}
-                          <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
+                      {% if entry.platform == "Torrent" %}
+                          <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        {% else %}
+                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% endif %}
                     </ul>
                   </div>

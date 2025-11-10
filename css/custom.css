@@ -3332,14 +3332,6 @@ span.icon-torrent {
   background-repeat: no-repeat;
 }
 
-span.icon-magnet {
-  background-image: url(../img/magnet.avif);
-  width: 31px;
-  height: 29px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .downloads a.ext-noicon {
   border-bottom: none;
 }
