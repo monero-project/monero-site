@@ -3324,6 +3324,14 @@ span.icon-git {
   background-position: -94px -140px;
 }
 
+span.icon-torrent {
+  background-image: url(../img/download.avif);
+  width: 31px;
+  height: 29px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 span.icon-magnet {
   background-image: url(../img/magnet.avif);
   width: 31px;

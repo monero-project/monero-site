@@ -82,7 +82,7 @@ meta_descr: downloads.intro
                       <!-- do not draw torrent if version != latest release -->
                       {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
                       {% if torrent and torrent.vers == nil %}
-                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        <li class="downloads"><span class="icon-torrent"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
                       {% endif %}
                     </ul>
                   </div>
@@ -92,7 +92,7 @@ meta_descr: downloads.intro
                       {% unless entry.vers != nil %}
                       <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% if entry.platform == "Torrent" %}
-                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
+                          <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
                         {% endif %}
                       {% endunless %}
                     {% endfor %}
@@ -105,7 +105,7 @@ meta_descr: downloads.intro
                       <ul>
                         <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% if entry.platform == "Torrent" %}
-                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
+                          <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a></li>
                         {% endif %}
                       </ul>
                     </div>
@@ -185,7 +185,7 @@ meta_descr: downloads.intro
                       <!-- do not draw torrent if version != latest release -->
                       {% assign torrent = item.downloads | where: "platform", "Torrent" | first %}
                       {% if torrent and torrent.vers == nil %}
-                        <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
+                        <li class="downloads"><span class="{{ torrent.icon }}"></span><a class="orange" href="{{ torrent.link }}">{{ torrent.platform }}</a> | <a class="orange" href="{{ torrent.magnet }}">Magnet</a></li>
                       {% endif %}
                     </ul>
                   </div>
@@ -195,7 +195,7 @@ meta_descr: downloads.intro
                         {% unless entry.vers != nil %}
                           <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                           {% if entry.platform == "Torrent" %}
-                            <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
+                            <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
                           {% endif %}
                         {% endunless %}
                       {% endfor %}
@@ -208,7 +208,7 @@ meta_descr: downloads.intro
                     <ul>
                       <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.link }}">{{ entry.platform }}</a></li>
                         {% if entry.platform == "Torrent" %}
-                          <li class="downloads"><span class="{{ entry.icon }}"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
+                          <li class="downloads"><span class="icon-magnet"></span><a class="orange" href="{{ entry.magnet }}">Magnet</a> </li>
                         {% endif %}
                     </ul>
                   </div>
