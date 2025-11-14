@@ -155,6 +155,7 @@ jobs:
               while read line; do
                   [ -z "$line" ] && continue
                   url=$(echo $line | cut -d'|' -f1)
+                  [[ "$url" == *torrent ]] && continue
                   hash=$(echo $line | cut -d'|' -f2)
                   filename=
                   case $url in
