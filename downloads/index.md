@@ -301,7 +301,7 @@ meta_descr: downloads.intro
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.app" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                                 <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
-                                 <li><a class="ext-noicon" href="https://unstoppable.money" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/unstoppable-wallet.png" width="100" height="100" loading="lazy" alt="Unstoppable Wallet Logo">Unstoppable Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://unstoppable.money" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/unstoppable-wallet.png" width="100" height="100" loading="lazy" alt="Unstoppable Wallet Logo">Unstoppable Wallet</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
