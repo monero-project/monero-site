@@ -264,7 +264,7 @@ meta_descr: downloads.intro
                             <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cypherstack/stack_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
-                               <tr>
+                        <tr>
                             <td><img class="small" src="/img/unstoppable-wallet.png" width="100" height="100" loading="lazy" alt="Unstoppable logo"><a href="https://unstoppable.money/">Unstoppable</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td>X</td>
