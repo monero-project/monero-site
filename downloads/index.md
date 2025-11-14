@@ -241,9 +241,9 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
-                            <td><img class="small" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo"><a href="https://cakewallet.com">Monero.com Wallet</a></td>
+                            <td><img class="small" src="/img/cakewallet-icon.png" width="100" height="100" loading="lazy" alt="Cake Wallet Logo"><a href="https://cakewallet.com">Cake Wallet / Monero.com</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
-                            <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
+                            <td><span class="icon-linux"></span><span class="icon-windows"></span><span class="icon-apple"></span></td>
                             <td><a class="ext-noicon" href="https://github.com/cake-tech/cake_wallet" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
                         <tr>
@@ -291,7 +291,7 @@ meta_descr: downloads.intro
                             <h3>{% t downloads.localsync %}</h3>
                             <p>{% t downloads.localsyncinfo %}</p>
                             <ul>
-                                <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo">Monero.com Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/cakewallet-icon.png" width="100" height="100" loading="lazy" alt="Cake Wallet Logo">Cake Wallet / Monero.com</a></li>
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.app" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                                 <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
@@ -333,9 +333,9 @@ meta_descr: downloads.intro
                                         <ul>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
+                                            <li>Cake Wallet / Monero.com</li>
                                             <li>Feather</li>
                                             <li>Monerujo</li>
-                                            <li>Monero.com</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -380,9 +380,9 @@ meta_descr: downloads.intro
                                         <b>{% t downloads.hwthsupported %}:</b>
                                             <li>Monero GUI</li>
                                             <li>Monero CLI</li>
+                                            <li>Cake Wallet / Monero.com</li>
                                             <li>Feather</li>
                                             <li>Monerujo</li>
-                                            <li>Monero.com</li>
                                         <b>{% t downloads.hwthfirm %}:</b> 
                                             <li>{% t downloads.hwnanos %}</li>
                                             <li>{% t downloads.hwnanosplus %}</li>
