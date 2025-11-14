@@ -57,8 +57,7 @@ No Linux, você pode baixar a chave de assinatura do binaryFate através do
 seguinte comando:
 
 ```
-wget -O binaryfate.asc
-https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
+wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
 ### Verify Signing Key
