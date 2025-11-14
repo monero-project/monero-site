@@ -10,6 +10,8 @@ Go to [element.io](https://element.io/get-started#download) to download the late
 
 ### Setting the custom host server
 
+### _Note: monero.social registration is temporarily disabled._
+
 While matrix is a federated protocol and you could use any host server for your account (including the default matrix.org server). We recommend changing your server to the one hosted, maintained and [sponsored]({{ site.baseurl }}/community/sponsorships/) by the Monero Community to support decentralization. If you do choose this option remember to set your custom server when logging in on a new device.
 
 When signing up choose to edit your host server and type in `monero.social` as shown.
