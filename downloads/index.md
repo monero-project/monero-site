@@ -241,6 +241,12 @@ meta_descr: downloads.intro
                             <th>{% t downloads.sourcecode %}</th>
                         </tr>
                         <tr>
+                            <td><img class="small" src="/img/ANONERO.png" width="100" height="100" loading="lazy" alt="ANONERO logo"><a href="https://anonero.io/">ANONERO</a></td>
+                            <td><span class="icon-android"></span></td>
+                            <td>X</td>
+                            <td><a class="ext-noicon" href="http://git.anonero5wmhraxqsvzq2ncgptq6gq45qoto6fnkfwughfl4gbt44swad.onion/ANONERO/ANONERO" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                        </tr>
+                        <tr>
                             <td><img class="small" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo"><a href="https://cakewallet.com">Monero.com Wallet</a></td>
                             <td><span class="icon-android"></span><span class="icon-apple"></span></td>
                             <td><span class="icon-linux"></span><span class="icon-apple"></span></td>
@@ -291,6 +297,7 @@ meta_descr: downloads.intro
                             <h3>{% t downloads.localsync %}</h3>
                             <p>{% t downloads.localsyncinfo %}</p>
                             <ul>
+                                <li><a class="ext-noicon" href="https://anonero.io" aria-label="ANONERO icon" target="_blank"><img class="mob" src="/img/ANONERO.png" width="100" height="100" loading="lazy" alt="ANONERO Logo">ANONERO</a></li>
                                 <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" style="width: 50px" src="/img/monerocom-wallet.png" width="172" height="202" loading="lazy" alt="Monero.com Wallet Logo">Monero.com Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
                                 <li><a class="ext-noicon" href="https://monerujo.app" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
