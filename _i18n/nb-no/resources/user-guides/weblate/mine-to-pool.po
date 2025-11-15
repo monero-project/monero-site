@@ -385,9 +385,9 @@ msgstr "## Å få hjelp"
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:142
 #, fuzzy
-#| msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on freenode](https://webchat.freenode.net/?channel=#monero-pools)."
-msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social)."
-msgstr "Det finnes et aktivt samfunn for Monero-utvinning på Reddit som du finner i underforumet [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du kan også bli med i [#monero-pools på freenode](https://webchat.freenode.net/?channel=#monero-pools)."
+#| msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-mining on freenode](https://webchat.freenode.net/?channel=#monero-mining)."
+msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-mining on Libera](https://web.libera.chat/?channel=#monero-mining) or Matrix (#monero-mining:monero.social)."
+msgstr "Det finnes et aktivt samfunn for Monero-utvinning på Reddit som du finner i underforumet [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). Du kan også bli med i [#monero-mining på freenode](https://webchat.freenode.net/?channel=#monero-mining)."
 
 #
 #. type: Title ##
