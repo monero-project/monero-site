@@ -156,7 +156,7 @@ const PLATFORM_ICONS: Record<string, string> = {
     </div>
     <div class="verification">
       <h4>{labels.verifyDownloads}</h4>
-      <p set:html={marked.parse(labels.verifyDescription ?? "")} />
+      <p set:html={marked.parseInline(labels.verifyDescription ?? "")} />
       <a href={verifyLink ?? "#"} class="verify-link">{labels.viewHashes}</a>
     </div>
   </div>
