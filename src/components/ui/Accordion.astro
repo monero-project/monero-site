@@ -3,6 +3,7 @@ import "node:crypto";
 
 import MaskIcon from "./MaskIcon.astro";
 import dropdownIcon from "@/assets/icons/mask/dropdown-caret.avif?url";
+import { marked } from "marked";
 
 export interface AccordionItem {
   title: string;
@@ -20,22 +21,22 @@ const accordionId = crypto.randomUUID();
 
 <div class="accordion">
   {
-    items.map((item) => (
-      <details
-        class="accordion-item"
-        name={multiExpand ? undefined : `accordion-${accordionId}`}
-      >
-        <summary class="accordion-header">
-          <span class="accordion-title">{item.title}</span>
-          <div class="accordion-icon">
-            <MaskIcon src={dropdownIcon} />
-          </div>
-        </summary>
-        <div class="accordion-content">
-          <p set:html={item.content} />
-        </div>
-      </details>
-    ))
+    items.map((item) => {
+      return (
+        <details
+          class="accordion-item"
+          name={multiExpand ? undefined : `accordion-${accordionId}`}
+        >
+          <summary class="accordion-header">
+            <span class="accordion-title">{item.title}</span>
+            <div class="accordion-icon">
+              <MaskIcon src={dropdownIcon} />
+            </div>
+          </summary>
+          <div class="accordion-content" set:html={marked.parse(item.content ?? "")} />
+        </details>
+      );
+    })
   }
 </div>
 

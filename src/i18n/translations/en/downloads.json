@@ -13,13 +13,13 @@
       "title": "Monero GUI Wallet",
       "subtitle": "Graphical wallet developed by the Monero community",
       "features": {
-        "simpleMode": "<b>Simple mode</b> for beginners to easily send and receive XMR",
-        "advancedMode": "<b>Advanced mode</b> with full control over wallet and node",
-        "merchantPage": "<b>Merchant page</b> for easily accepting XMR payments",
-        "hardwareWallet": "Compatible with <b>Trezor</b> and <b>Ledger</b> hardware wallets",
-        "fiatConversion": "<b>In-app fiat conversion</b>",
-        "pruning": "<b>Blockchain pruning</b> to save disk space",
-        "languages": "Available in <b>30+ languages</b>"
+        "simpleMode": "**Simple mode** for beginners to easily send and receive XMR",
+        "advancedMode": "**Advanced mode** with full control over wallet and node",
+        "merchantPage": "**Merchant page** for easily accepting XMR payments",
+        "hardwareWallet": "Compatible with **Trezor** and **Ledger** hardware wallets",
+        "fiatConversion": "**In-app fiat conversion**",
+        "pruning": "**Blockchain pruning** to save disk space",
+        "languages": "Available in **30+ languages**"
       }
     },
     "cli": {
@@ -37,9 +37,9 @@
     "version": "Version",
     "releaseNotes": "Release notes",
     "sourceCode": "Source code",
-    "verifyDownload": "Verify",
-    "verifyDescription": "You are strongly advised to verify the hash of the file you downloaded.<br/><br/>This will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup.<br/>Please don't underestimate this step, a corrupted archive could result in lost funds.<br/><br/><b>Always verify your downloads!</b>",
-    "viewHashes": "View hashes",
+  "verifyDownload": "Verify",
+  "verifyDescription": "You are strongly advised to verify the hash of the file you downloaded.\n\nThis will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds.\n\n**Always verify your downloads!**",
+  "viewHashes": "View hashes",
     "downloadButton": "Download"
   },
 

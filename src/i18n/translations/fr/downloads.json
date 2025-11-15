@@ -13,13 +13,13 @@
       "title": "Portefeuille GUI Monero",
       "subtitle": "Portefeuille graphique développé par la communauté Monero",
       "features": {
-        "simpleMode": "<b>Mode simple</b> pour les débutants pour envoyer et recevoir XMR facilement",
-        "advancedMode": "<b>Mode avancé</b> avec contrôle total sur le portefeuille et le nœud",
-        "merchantPage": "<b>Page marchand</b> pour accepter facilement les paiements XMR",
-        "hardwareWallet": "Compatible avec les portefeuilles matériels <b>Trezor</b> et <b>Ledger</b>",
-        "fiatConversion": "<b>Conversion de monnaie fiduciaire intégrée</b>",
-        "pruning": "<b>Élagage de la blockchain</b> pour économiser de l'espace disque",
-        "languages": "Disponible en <b>plus de 30 langues</b>"
+        "simpleMode": "**Mode simple** pour les débutants pour envoyer et recevoir XMR facilement",
+        "advancedMode": "**Mode avancé** avec contrôle total sur le portefeuille et le nœud",
+        "merchantPage": "**Page marchand** pour accepter facilement les paiements XMR",
+        "hardwareWallet": "Compatible avec les portefeuilles matériels **Trezor** et **Ledger**",
+        "fiatConversion": "**Conversion de monnaie fiduciaire intégrée**",
+        "pruning": "**Élagage de la blockchain** pour économiser de l'espace disque",
+        "languages": "Disponible en **plus de 30 langues**"
       }
     },
     "cli": {

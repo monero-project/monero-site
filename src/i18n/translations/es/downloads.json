@@ -13,13 +13,13 @@
       "title": "Billetera GUI de Monero",
       "subtitle": "Billetera gráfica desarrollada por la comunidad de Monero",
       "features": {
-        "simpleMode": "<b>Modo simple</b> para principiantes que desean enviar y recibir XMR fácilmente",
-        "advancedMode": "<b>Modo avanzado</b> con control total sobre la billetera y el nodo",
-        "merchantPage": "<b>Página de comerciante</b> para aceptar pagos XMR fácilmente",
-        "hardwareWallet": "Compatible con billeteras de hardware <b>Trezor</b> y <b>Ledger</b>",
-        "fiatConversion": "<b>Conversión de moneda fiduciaria integrada</b>",
-        "pruning": "<b>Poda de blockchain</b> para ahorrar espacio en disco",
-        "languages": "Disponible en <b>más de 30 idiomas</b>"
+        "simpleMode": "**Modo simple** para principiantes que desean enviar y recibir XMR fácilmente",
+        "advancedMode": "**Modo avanzado** con control total sobre la billetera y el nodo",
+        "merchantPage": "**Página de comerciante** para aceptar pagos XMR fácilmente",
+        "hardwareWallet": "Compatible con billeteras de hardware **Trezor** y **Ledger**",
+        "fiatConversion": "**Conversión de moneda fiduciaria integrada**",
+        "pruning": "**Poda de blockchain** para ahorrar espacio en disco",
+        "languages": "Disponible en **más de 30 idiomas**"
       }
     },
     "cli": {
