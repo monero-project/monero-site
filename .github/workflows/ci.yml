@@ -56,6 +56,7 @@ jobs:
             exit 1
           fi
           echo "All set:html usages are safe"
+
   build-and-validate:
     runs-on: ubuntu-latest
 
