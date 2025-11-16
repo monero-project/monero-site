@@ -87,7 +87,11 @@ const PLATFORM_ICONS: Record<string, string> = {
       {subtitle}
     </p>
     <ul class="card-features">
-      {features.map((feature) => <li set:html={safeMarkdown.parseInline(feature ?? "")} />)}
+      {
+        features.map((feature) => (
+          <li set:html={safeMarkdown.parseInline(feature ?? "")} />
+        ))
+      }
     </ul>
     <div class="download-actions">
       <Dropdown label={labels.download!}>

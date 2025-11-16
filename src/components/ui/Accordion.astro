@@ -33,7 +33,10 @@ const accordionId = crypto.randomUUID();
               <MaskIcon src={dropdownIcon} />
             </div>
           </summary>
-          <div class="accordion-content" set:html={safeMarkdown.parse(item.content)} />
+          <div
+            class="accordion-content"
+            set:html={safeMarkdown.parse(item.content)}
+          />
         </details>
       );
     })
