@@ -56,8 +56,7 @@ Sur Linux, vous pouvez télécharger la clef de signature de Fluffypony en
 tapant la commande suivante :
 
 ```
-wget -O binaryfate.asc
-https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
+wget -O binaryfate.asc https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc
 ```
 
 ### Verify Signing Key
