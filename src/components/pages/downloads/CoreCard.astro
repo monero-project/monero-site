@@ -3,7 +3,7 @@ import Dropdown from "@/components/ui/dropdown/Dropdown.astro";
 import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
 import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { marked } from "marked";
+import safeMarkdown from "@/utils/safeMarkdown.ts";
 
 import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
 import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
@@ -87,7 +87,7 @@ const PLATFORM_ICONS: Record<string, string> = {
       {subtitle}
     </p>
     <ul class="card-features">
-      {features.map((feature) => <li set:html={marked.parseInline(feature ?? "")} />)}
+      {features.map((feature) => <li set:html={safeMarkdown.parseInline(feature ?? "")} />)}
     </ul>
     <div class="download-actions">
       <Dropdown label={labels.download!}>
@@ -156,7 +156,7 @@ const PLATFORM_ICONS: Record<string, string> = {
     </div>
     <div class="verification">
       <h4>{labels.verifyDownloads}</h4>
-      <p set:html={marked.parseInline(labels.verifyDescription ?? "")} />
+      <p set:html={safeMarkdown.parseInline(labels.verifyDescription ?? "")} />
       <a href={verifyLink ?? "#"} class="verify-link">{labels.viewHashes}</a>
     </div>
   </div>
