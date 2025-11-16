@@ -49,9 +49,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Check HTML safety
-        run: pnpm exec tsx scripts/check-html-safety.ts
-
+      - name: Check set:html safety
+        run: |
+          if grep -r "set:html" src --include="*.astro" | grep -Ev "set:html=\{safeMarkdown\."; then
+            echo "Error: Found set:html usage without safeMarkdown"
+            exit 1
+          fi
+          echo "All set:html usages are safe"
   build-and-validate:
     runs-on: ubuntu-latest
 
