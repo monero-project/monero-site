@@ -19,7 +19,17 @@ meta_descr: library.description
                 <h3><a href="Zero-to-Monero-1-0-0.pdf">{% t library.zerotomonerov1 %}</a></h3>
                     <p>{% t library.zerotomonerov1p %}</p>
                 <h3><a href="https://masteringmonero.com/free-download.html">Mastering Monero</a></h3>
-                    <p>{% t library.masteringmonerop %}</p> 
+                    <p>{% t library.masteringmonerop1 %}</p>
+                    <p>{% t library.masteringmonerop2 %}</p>
+                    <ul>
+                        <li>{% t library.masteringmoneroul1 %}</li>
+                        <li>{% t library.masteringmoneroul2 %}</li>
+                        <li>{% t library.masteringmoneroul3 %}</li>
+                        <li>{% t library.masteringmoneroul4 %}</li>
+                        <li>{% t library.masteringmoneroul5 %}</li>
+                        <li>{% t library.masteringmoneroul6 %}</li>
+                    </ul>
+                    <p>{% t library.masteringmoneroinfo %}</p>
             </div>
         </div>
     </section>
