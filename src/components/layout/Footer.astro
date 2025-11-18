@@ -2,10 +2,11 @@
 import MaskIcon from "../ui/MaskIcon.astro";
 import externalLink from "../../assets/icons/mask/external-link.avif?url";
 import { getLocale } from "astro-i18n-aut";
-import { localizeHref } from "../../i18n/utils";
+import { localizeHref, getDirection } from "../../i18n/utils";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
 
 interface Link {
   label: string;
@@ -167,7 +168,7 @@ const bottomLinks: Link[] = [
                   >
                     {l.label}
                     {isExternal(l.href) ? (
-                      <MaskIcon src={externalLink} size="12px" />
+                      <MaskIcon src={externalLink} size="12px" rtl={dir == 'rtl'} />
                     ) : (
                       ""
                     )}
