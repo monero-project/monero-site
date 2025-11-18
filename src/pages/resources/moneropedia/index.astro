@@ -13,7 +13,7 @@ type MoneropediaItem = CollectionEntry<"moneropedia"> & {
   letter: string;
 };
 
-const locale = getLocale(Astro.url) ?? defaultLocale;
+const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
 const entries = (
