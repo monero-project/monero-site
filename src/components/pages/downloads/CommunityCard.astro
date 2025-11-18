@@ -7,6 +7,8 @@ import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
 import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
 import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
 
+import { getDirection, getLocale } from "@/i18n/utils";
+
 interface Tags {
   desktop?: string[]; // windows | macos | linux (aliases: win, mac, osx)
   mobile?: string[]; // android | ios
@@ -22,6 +24,8 @@ interface Props {
   linkText?: string;
   translateTag?: (key: string) => string;
 }
+
+const dir = getDirection(getLocale(Astro.url));
 
 const {
   logo,
@@ -153,7 +157,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
 
   <a href={link} class="visit-link" target="_blank" rel="noopener noreferrer">
     <span>{linkText ?? "Visit website"}</span>
-    <MaskIcon src={externalLink} size="1em" aria-hidden="true" />
+    <MaskIcon src={externalLink} size="1em" aria-hidden="true" rtl={dir == 'rtl'} />
   </a>
 </div>
 
