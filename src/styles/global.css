@@ -76,3 +76,11 @@ div .__ns__pop2top,
 article .__ns__pop2top {
   z-index: unset !important;
 }
+
+a {
+  color: var(--monero-orange);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

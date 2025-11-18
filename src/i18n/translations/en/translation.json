@@ -238,5 +238,12 @@
         "ctaLabel": "Visit"
       }
     }
+  },
+  "moneropedia": {
+    "pageTitle": "Moneropedia | Monero - secure, private, untraceable cryptocurrency.",
+    "heroTitle": "Moneropedia",
+    "heroSubtitle": "Comprehensive glossary of Monero and blockchain terms.",
+    "searchPlaceholder": "Search the Moneropedia...",
+    "readMore": "Read full article"
   }
 }

@@ -1,0 +1,137 @@
+---
+import { getCollection } from "astro:content";
+import { defaultLocale } from "@/i18n/config";
+import DOMPurify from "isomorphic-dompurify";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props as Props;
+
+// Fetch entries for current locale, with default locale as fallback
+const currentLocaleEntries = await getCollection("moneropedia", (entry) =>
+  entry.slug?.startsWith(`${locale}/`),
+);
+
+const fallbackEntries =
+  locale !== defaultLocale
+    ? await getCollection("moneropedia", (entry) =>
+        entry.slug?.startsWith(`${defaultLocale}/`),
+      )
+    : [];
+
+// CUse Map for deduplication
+const entryMap = new Map<
+  string,
+  { terms: string[]; summary: string; file: string }
+>();
+
+// Add fallback entries first (will be overwritten if current locale has same file)
+for (const entry of fallbackEntries) {
+  const file = entry.slug?.split("/").pop()!;
+  entryMap.set(file, {
+    terms: entry.data.terms,
+    summary: entry.data.summary,
+    file,
+  });
+}
+
+// Add/overwrite with current locale entries (takes priority)
+for (const entry of currentLocaleEntries) {
+  const file = entry.slug?.split("/").pop()!;
+  entryMap.set(file, {
+    terms: entry.data.terms,
+    summary: entry.data.summary,
+    file,
+  });
+}
+
+const entries = Array.from(entryMap.values());
+
+// Get slot content and process it
+let processedHtml = await Astro.slots.render("default");
+const LOOKAHEAD = "(based|like|form)";
+for (const entry of entries) {
+  for (const term of entry.terms) {
+    // Escape special regex characters
+    const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+    // Match @term with optional suffix (e.g., @account-based)
+    const pattern = `@(${escapedTerm})((?=-${LOOKAHEAD})|(?![\\w-]))`;
+    const regex = new RegExp(pattern, "gi");
+
+    processedHtml = processedHtml.replace(regex, (match) => {
+      // Build link path
+      const linkPath =
+        locale === defaultLocale
+          ? `/resources/moneropedia/${entry.file}/`
+          : `/${locale}/resources/moneropedia/${entry.file}/`;
+
+      // Clean display text: remove @ and replace hyphens with spaces
+      const displayText = match.slice(1).replace(/-/g, " ");
+
+      // Escape quotes for HTML attribute
+      const escapedSummary = entry.summary.replace(/"/g, "&quot;");
+
+      return `<a class="moneropedia-link" data-tooltip="${escapedSummary}" href="${linkPath}">${displayText}</a>`;
+    });
+  }
+}
+---
+
+<div class="moneropedia-content" set:html={DOMPurify.sanitize(processedHtml)} />
+
+<style>
+  .moneropedia-content {
+    position: relative;
+  }
+
+  .moneropedia-content :global(.moneropedia-link) {
+    position: relative;
+    color: var(--monero-orange);
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+    cursor: help;
+  }
+
+  .moneropedia-content :global(.moneropedia-link:hover),
+  .moneropedia-content :global(.moneropedia-link:focus) {
+    text-decoration: none;
+  }
+
+  /* Tooltip box - mobile / edge-safe default (no overflow to the left) */
+  .moneropedia-content :global(.moneropedia-link::before) {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 0; /* anchor to the link's left edge */
+    transform: translateX(0); /* no centering by default */
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    white-space: normal;
+    width: max-content;
+
+    /* Prevent viewport overflow */
+    max-width: min(20rem, calc(100vw - 2rem));
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .moneropedia-content :global(.moneropedia-link:hover::before),
+  .moneropedia-content :global(.moneropedia-link:focus::before) {
+    opacity: 1;
+  }
+</style>

@@ -1,6 +1,6 @@
 ---
 import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif?url";
-import arrowLeft from "@/assets/icons/mask/arrow-left.avif?url";
+import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import ColorIcon from "../ColorIcon.astro";
 
@@ -84,7 +84,7 @@ const closeId = id + "-close";
                 {item.desc && <div class="desc">{item.desc}</div>}
               </div>
               <div class="arrow">
-                <MaskIcon src={arrowLeft} size="0.75rem" />
+                <MaskIcon src={arrowRight} size="0.75rem" />
               </div>
             </a>
           ))}

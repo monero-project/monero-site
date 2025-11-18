@@ -23,7 +23,15 @@ interface Props {
   translateTag?: (key: string) => string;
 }
 
-const { logo, name, description, tags = {},link, linkText, translateTag } = Astro.props;
+const {
+  logo,
+  name,
+  description,
+  tags = {},
+  link,
+  linkText,
+  translateTag,
+} = Astro.props;
 
 const norm = (s: string) => (s || "").toLowerCase().trim();
 const ALIAS: Record<string, string> = {

@@ -1,0 +1,145 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import MoneropediaContent from "@/components/content/MoneropediaContent.astro";
+import { defaultLocale } from "@/i18n/config";
+import { localizeHref, getLocale, createTInstance } from "@/i18n/utils";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import backCaret from "@/assets/icons/mask/back-caret.avif?url";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("moneropedia", (entry) =>
+    entry.slug?.startsWith(defaultLocale + "/"),
+  );
+
+  return entries.map((entry) => ({
+    params: { slug: entry.slug?.replace(`${defaultLocale}/`, "") },
+  }));
+}
+
+type Props = CollectionEntry<"moneropedia">;
+
+const { slug } = Astro.params;
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+const entry = await getEntry("moneropedia", `${locale}/${slug}`);
+
+if (!entry) {
+  return new Response(null, {
+    status: 404,
+    statusText: "Not found",
+  });
+}
+
+const { Content } = await entry.render();
+const title = entry.data.title ?? entry.data.terms[0];
+---
+
+<Layout title={`${title} | ${t("moneropedia.pageTitle")}`}>
+  <div class="moneropedia-page container">
+    {/* Row 1, Col 1 */}
+    <aside class="moneropedia-sidebar">
+      <a
+        href={localizeHref(locale, "/resources/moneropedia/")}
+        class="moneropedia-back"
+      >
+        <span class="moneropedia-back-icon">
+          <MaskIcon src={backCaret} size="1.25rem" />
+        </span>
+        <span class="moneropedia-back-label">Moneropedia</span>
+      </a>
+    </aside>
+
+    {/* Row 1, Col 2 */}
+    <header class="moneropedia-header">
+      <h1>{title}</h1>
+    </header>
+
+    {/* Row 2, Col 2 (Row 2 Col 1 intentionally empty) */}
+    <article class="moneropedia-article">
+      <MoneropediaContent locale={locale}>
+        <Content />
+      </MoneropediaContent>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .moneropedia-page {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr); /* 1 : 2-ish ratio */
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "sidebar header"
+      ".       content";
+    gap: 1rem 5rem;
+    padding-top: clamp(1.5rem, 5vw, 2rem);
+    margin-top: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .moneropedia-sidebar {
+    align-self: center;
+    grid-area: sidebar;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .moneropedia-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    color: var(--monero-orange);
+    text-decoration: none;
+  }
+
+  .moneropedia-back-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--card-color);
+  }
+
+  .moneropedia-back-label {
+    white-space: nowrap;
+  }
+  .moneropedia-back:hover > .moneropedia-back-label {
+    opacity: 0.8;
+  }
+
+  .moneropedia-header {
+    align-self: center;
+    grid-area: header;
+  }
+
+  .moneropedia-header h1 {
+    margin: 0;
+    font-size: var(--font-size-3xl);
+  }
+
+  .moneropedia-article {
+    grid-area: content;
+    min-width: 0; /* prevent overflow inside the grid */
+  }
+
+  @media (max-width: 900px) {
+    .moneropedia-page {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "sidebar"
+        "header"
+        "content";
+      gap: 1.5rem;
+    }
+
+    .moneropedia-article {
+      max-width: 100%;
+    }
+  }
+</style>

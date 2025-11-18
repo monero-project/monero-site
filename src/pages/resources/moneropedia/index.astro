@@ -1,0 +1,164 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import Accordion from "@/components/ui/Accordion.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getLocale, createTInstance, localizeHref } from "@/i18n/utils";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import { defaultLocale } from "@/i18n/config";
+
+type MoneropediaItem = CollectionEntry<"moneropedia"> & {
+  href: string;
+  title: string;
+  letter: string;
+};
+
+const locale = getLocale(Astro.url) ?? defaultLocale;
+const t = await createTInstance(locale);
+
+const entries = (
+  await getCollection("moneropedia", (entry) =>
+    entry.slug?.startsWith(`${locale}/`),
+  )
+).map<MoneropediaItem>((entry) => {
+  const slug = entry.slug?.split("/").pop()!;
+  const title = entry.data.title ?? entry.data.terms[0];
+
+  // Capitalize the summary
+  entry.data.summary =
+    entry.data.summary.charAt(0).toUpperCase() + entry.data.summary.slice(1);
+
+  return {
+    ...entry,
+    href: localizeHref(locale, `/resources/moneropedia/${slug}/`),
+    title,
+    letter: title.charAt(0).toUpperCase(),
+  };
+});
+
+// Group by first letter
+const groups = new Map<string, MoneropediaItem[]>();
+for (const entry of entries) {
+  if (!groups.has(entry.letter)) groups.set(entry.letter, []);
+  groups.get(entry.letter)!.push(entry);
+}
+
+const sortedLetters = Array.from(groups.keys()).sort();
+for (const letter of sortedLetters) {
+  groups.get(letter)!.sort((a, b) => a.title.localeCompare(b.title));
+}
+---
+
+<Layout title={t("moneropedia.pageTitle") ?? "Moneropedia"}>
+  <TitleCard
+    title={t("moneropedia.heroTitle") ?? "Moneropedia"}
+    subtitle={t("moneropedia.heroSubtitle")}
+  />
+  <section class="moneropedia-index container">
+    <nav class="letter-nav" aria-label="Moneropedia navigation bar">
+      {
+        sortedLetters.map((letter) => (
+          <a class="letter-nav-link" href={`#${letter}`}>
+            {letter}
+          </a>
+        ))
+      }
+    </nav>
+    <div class="letter-groups">
+      {
+        sortedLetters.map((letter, idx) => {
+          const groupEntries = groups.get(letter)!;
+
+          const accordionItems = groupEntries.map((entry) => ({
+            title: entry.title,
+            content: `${entry.data.summary}\n\n[${t("moneropedia.readMore")} ](${entry.href})`,
+          }));
+
+          return (
+            <div class="letter-group" id={`${letter}`}>
+              <hr class="letter-separator" />
+              <div class="letter-layout">
+                <div class="letter-column">
+                  <h2 class="letter-heading">{letter}</h2>
+                </div>
+                <div class="items-column">
+                  <Accordion
+                    items={accordionItems}
+                    multiExpand={false}
+                    variant="card"
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </section>
+</Layout>
+
+<style>
+  html {
+    scroll-padding-top: 100%;
+  }
+
+  .moneropedia-index {
+    padding-block: 2rem 3rem;
+  }
+
+  .letter-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    font-weight: 600;
+    box-shadow: inset;
+  }
+
+  .letter-nav-link {
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+    color: var(--text-primary);
+    outline: none;
+    user-select: none;
+  }
+
+  .letter-nav-link:hover {
+    background-color: var(--card-color);
+  }
+
+  .letter-groups {
+    overflow-y: auto;
+    max-height: clamp(20rem, 70vh, 60rem);
+    padding-right: 0.5rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+  }
+
+  .letter-layout {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem 2rem;
+    align-items: flex-start;
+  }
+
+  .letter-heading {
+    font-size: var(--font-size-xl);
+    margin: 0.5rem 0 0.75rem;
+  }
+
+  .letter-separator {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0 2rem;
+  }
+  .letter-group:first-child .letter-separator {
+    margin-top: 0;
+    border-color: transparent;
+  }
+</style>

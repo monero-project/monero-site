@@ -5,10 +5,9 @@ import "@fontsource-variable/dm-sans";
 import "@fontsource-variable/inter";
 import dmSansFont from "@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url";
 import "../styles/global.css";
-import { getLocale } from "astro-i18n-aut";
-import { createTInstance } from "../i18n/utils";
+import { createTInstance, getLocale } from "../i18n/utils";
 
-const lang = getLocale(Astro.url) || "en";
+const lang = getLocale(Astro.url);
 const t = await createTInstance(lang);
 const title = Astro.props.title;
 ---

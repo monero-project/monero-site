@@ -51,8 +51,8 @@ jobs:
 
       - name: Check set:html safety
         run: |
-          if grep -r "set:html" src --include="*.astro" | grep -Ev "set:html=\{safeMarkdown\."; then
-            echo "Error: Found set:html usage without safeMarkdown"
+          if grep -r "set:html" src --include="*.astro" | grep -Ev "set:html=\{(safeMarkdown\.|DOMPurify\.sanitize)"; then
+            echo "Error: Found set:html usage without safeMarkdown or DOMPurify.sanitize"
             exit 1
           fi
           echo "All set:html usages are safe"
