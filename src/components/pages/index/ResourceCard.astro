@@ -8,6 +8,7 @@ export interface Props {
   ctaLabel?: string;
   ctaHref?: string;
 }
+import { getDirection, getLocale } from "@/i18n/utils";
 
 const {
   icon = null,
@@ -16,6 +17,7 @@ const {
   ctaLabel = "Learn more",
   ctaHref = "#",
 } = Astro.props;
+const dir = getDirection(getLocale(Astro.url));
 ---
 
 <article class="resource-card">
@@ -33,7 +35,7 @@ const {
 
   <a class="cta" href={ctaHref}>
     {ctaLabel}
-    <MaskIcon src={arrowRight} />
+    <MaskIcon src={arrowRight} rtl={dir == "rtl"} />
   </a>
 </article>
 

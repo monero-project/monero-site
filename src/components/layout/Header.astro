@@ -179,8 +179,8 @@ const navItems = [
 ];
 ---
 
-<header class="header">
-  <div class="bar">
+<header class="site-header">
+  <div class="header-bar">
     <a class="brand" href={localizeHref(locale, "/")}>
       <img
         class="mark"
@@ -209,7 +209,7 @@ const navItems = [
           <MaskIcon src={close} size="1.25rem" />
         </label>
       </div>
-      <ul class="list">
+      <ul class="nav-list">
         {navItems.map((item) => <NavItem {...item} />)}
       </ul>
     </nav>
@@ -233,21 +233,21 @@ const navItems = [
 </header>
 
 <style>
-  .bar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr; /* brand | centered nav | utils */
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem clamp(1rem, 4vw, 4rem);
-  }
-  .header {
+  .site-header {
     position: relative;
     z-index: 10;
   }
 
-  /* ===== Brand (left side) ===== */
+  /* ===== Desktop / base layout ===== */
+  .header-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-block: 1rem;
+    padding-inline: clamp(1rem, 4vw, 4rem);
+  }
+
   .brand {
-    grid-column: 1;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -255,21 +255,19 @@ const navItems = [
     text-decoration: none;
     font-weight: var(--font-weight-bold);
     letter-spacing: 0.02em;
+    flex: 0 0 auto;
   }
   .mark {
     display: grid;
     place-items: center;
-    width: 1.625rem;
-    height: 1.625rem;
+    inline-size: 1.625rem;
+    block-size: 1.625rem;
   }
 
-  /* ===== Centered nav ===== */
   .nav {
-    grid-column: 2;
-    margin-left: 0;
-    justify-self: center;
+    flex: 1 1 auto;
   }
-  .list {
+  .nav-list {
     display: flex;
     gap: 2rem;
     list-style: none;
@@ -279,19 +277,19 @@ const navItems = [
     justify-content: center;
   }
 
-  /* ===== Utils (right side) ===== */
   .utils {
-    grid-column: 3;
-    justify-self: end;
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
+    flex: 0 0 auto;
+    margin-inline-start: auto;
   }
   .lang {
     color: var(--paragraph-main);
     display: inline-flex;
     align-items: center;
   }
+
   .hamburger {
     color: var(--paragraph-main);
     display: none;
@@ -299,6 +297,7 @@ const navItems = [
     font-size: 1.25rem;
   }
 
+  /* Shared drawer bits */
   .nav-toggle {
     display: none;
   }
@@ -317,10 +316,18 @@ const navItems = [
     line-height: 1;
   }
 
-  /* ===== Mobile/Tablet (<=1500px) ===== */
+  /* ===== Mobile / Tablet (<= 1500px) ===== */
   @media (max-width: 1500px) {
     :root {
       --drawer-gap: clamp(5rem, 20vw, 9rem);
+    }
+
+    .site-header {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 10;
+      background-color: inherit;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .hamburger {
@@ -328,42 +335,41 @@ const navItems = [
       align-items: center;
       justify-content: center;
     }
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background-color: inherit;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
 
-    /* Drawer */
     .drawer-header {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding: 0.5rem 0;
+      padding-block: 0.5rem;
+      padding-inline: 0;
       position: sticky;
-      top: 0;
+      inset-block-start: 0;
       z-index: 1;
+      background: inherit;
     }
+
     .nav {
       position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: auto;
-      width: min(26.25rem, calc(100vw - var(--drawer-gap)));
-      transform: translateX(100%);
-      transition: transform 0.25s ease;
+      inset-block: 0;
+      inset-inline-end: 0;
+      inset-inline-start: auto;
+
+      inline-size: min(26.25rem, calc(100vw - var(--drawer-gap)));
+      box-sizing: border-box;
+
       background: var(--bg-color);
       backdrop-filter: saturate(140%) blur(10px);
       -webkit-backdrop-filter: saturate(140%) blur(10px);
-      box-sizing: border-box;
-      padding: 1rem calc(1rem + env(safe-area-inset-right)) 2rem 1rem;
+      padding-block: 1rem 2rem;
+      padding-inline: 1rem;
+
       z-index: 1001;
       overscroll-behavior: contain;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
+
+      margin-inline-end: -100vw;
+      transition: margin-inline-end 0.25s ease;
     }
 
     body:has(#nav-toggle:checked) {
@@ -371,15 +377,15 @@ const navItems = [
       overscroll-behavior: none;
     }
 
-    .list {
+    .nav-list {
       flex-direction: column;
       align-items: stretch;
       gap: 0.25rem;
-      margin-top: 1rem;
+      margin-block-start: 1rem;
       justify-content: flex-start;
     }
 
-    /* Scrim (under drawer) */
+    /* Scrim under drawer */
     .scrim {
       position: fixed;
       inset: 0;
@@ -394,7 +400,7 @@ const navItems = [
 
     /* Open state */
     .nav-toggle:checked ~ .nav {
-      transform: translateX(0);
+      margin-inline-end: 0; /* slides in from inline-end: right in LTR, left in RTL */
     }
     .nav-toggle:checked ~ .scrim {
       opacity: 1;
@@ -406,11 +412,12 @@ const navItems = [
   @supports (height: 100dvh) {
     @media (max-width: 1500px) {
       .nav {
-        height: 100dvh;
+        block-size: 100dvh;
       }
     }
   }
 
+  /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {
     .nav,
     .scrim {

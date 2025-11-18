@@ -62,7 +62,7 @@ const hrefFor = (locale: string) =>
 
   /* Globe trigger */
   .lang {
-    margin-left: auto;
+    margin-inline-start: auto;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -81,9 +81,10 @@ const hrefFor = (locale: string) =>
 
   /* Panel (hidden by default) */
   .lang-dropdown {
-    position: absolute; /* desktop: anchored to button */
-    top: 100%;
-    right: 0;
+    position: absolute;
+    inset-block-start: 100%;
+    inset-inline-end: 0;
+
     margin-top: 0.5rem;
     background: var(--card-color);
     border-radius: 0.75rem;

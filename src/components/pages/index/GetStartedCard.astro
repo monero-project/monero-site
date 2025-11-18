@@ -1,7 +1,7 @@
 ---
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
-import { localizeHref } from "@/i18n/utils";
+import { localizeHref, getDirection } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
 
 export interface Props {
@@ -22,6 +22,7 @@ const {
 } = Astro.props;
 
 const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
 ---
 
 <div class="gs" aria-labelledby="gs-title">
@@ -32,7 +33,7 @@ const locale = getLocale(Astro.url);
     {description && <p class="desc">{description}</p>}
     <a class="cta" href={localizeHref(locale, ctaHref)}>
       {ctaLabel}
-      <MaskIcon src={arrowRight} />
+      <MaskIcon src={arrowRight} rtl={dir == "rtl"} />
     </a>
   </div>
 </div>

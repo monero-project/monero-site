@@ -1,0 +1,139 @@
+{
+  "header": {
+    "nav": {
+      "getStarted": "ابدأ",
+      "downloads": "التحميلات",
+      "blog": "المدونة",
+      "community": "المجتمع",
+      "resources": "الموارد",
+      "crowdfunding": "التمويل الجماعي"
+    },
+    "dropdowns": {
+      "getStarted": {
+        "whatIsMonero": {
+          "label": "ما هو مونيرو؟",
+          "desc": "كل ما تحتاج لمعرفته عن مونيرو في لمحة."
+        },
+        "acceptMonero": {
+          "label": "قبول مونيرو",
+          "desc": "تعلم كيفية قبول XMR كتاجر أو فرد."
+        },
+        "contribute": {
+          "label": "المساهمة",
+          "desc": "ساعد مشروع مونيرو في جلب الخصوصية للجميع."
+        },
+        "mining": {
+          "label": "التعدين",
+          "desc": "تعلم كيفية تعدين مونيرو على جهازك."
+        },
+        "faq": {
+          "label": "الأسئلة الشائعة",
+          "desc": "اعثر على إجابات للأسئلة الشائعة حول مونيرو."
+        }
+      },
+      "community": {
+        "workgroups": {
+          "label": "مجموعات العمل",
+          "desc": "كل ما تحتاج لمعرفته عن مونيرو في لمحة."
+        },
+        "sponsorships": {
+          "label": "الرعايات",
+          "desc": "اكتشف الطرق التي يمكنك من خلالها مساعدة مشروع مونيرو في جلب الخصوصية للجميع."
+        },
+        "hangouts": {
+          "label": "اللقاءات",
+          "desc": "تعلم كيفية قبول XMR كتاجر أو فرد باستخدام برمجيات المحفظة."
+        },
+        "merchants": {
+          "label": "التجار والتبادلات",
+          "desc": "كل ما تحتاج لمعرفته عن مونيرو في لمحة."
+        }
+      },
+      "resources": {
+        "knowledgeBase": {
+          "label": "قاعدة المعرفة",
+          "desc": "الكتب، المنشورات، المجلات، مونيروبيديا."
+        },
+        "roadmap": {
+          "label": "خارطة الطريق",
+          "desc": "ابق على اطلاع بأحدث خطط وتقدم تطوير مونيرو."
+        },
+        "researchLab": {
+          "label": "مختبر البحث",
+          "desc": "اكتشف الطرق التي يمكنك من خلالها مساعدة مشروع مونيرو في جلب الخصوصية للجميع."
+        },
+        "userGuides": {
+          "label": "دليل المستخدم",
+          "desc": "أدلة شاملة لمساعدتك في استخدام مونيرو بفعالية وأمان."
+        },
+        "developerGuides": {
+          "label": "دليل المطور",
+          "desc": "اعثر على إجابات للأسئلة والمخاوف المتكررة حول مونيرو."
+        },
+        "moneroTools": {
+          "label": "أدوات مونيرو",
+          "desc": "قائمة منتقاة من الأدوات والبرمجيات لمستخدمي ومطوري مونيرو."
+        },
+        "pressKit": {
+          "label": "طقم الصحافة",
+          "desc": "جهات الاتصال الصحفية، الشعارات، الصور، وموارد إعلامية أخرى."
+        }
+      }
+    }
+  },
+  "footer": {
+    "columns": {
+      "resources": {
+        "title": "الموارد",
+        "links": {
+          "knowledgeBase": "قاعدة المعرفة",
+          "developerGuides": "أدلة المطور",
+          "userGuides": "أدلة المستخدم",
+          "downloads": "التحميلات"
+        }
+      },
+      "reachOut": {
+        "title": "تواصل",
+        "links": {
+          "workgroups": "مجموعات العمل",
+          "hangouts": "اللقاءات",
+          "mailingList": "قائمة البريد"
+        }
+      },
+      "community": {
+        "title": "المجتمع",
+        "links": {
+          "merchants": "التجار والتبادلات",
+          "stackExchange": "Stack Exchange",
+          "bitcoinTalk": "Bitcoin Talk",
+          "weblate": "Weblate"
+        }
+      },
+      "theMoneroProject": {
+        "title": "مشروع مونيرو",
+        "links": {
+          "openAlias": "Open Alias",
+          "moneroResearchLab": "مختبر بحث مونيرو (MRL)",
+          "pressKit": "طقم الصحافة",
+          "communityCrowdfundingSystem": "نظام التمويل الجماعي المجتمعي"
+        }
+      },
+      "legal": {
+        "title": "قانوني",
+        "links": {
+          "privacyPolicy": "سياسة الخصوصية",
+          "termsOfUse": "شروط الاستخدام"
+        }
+      }
+    },
+    "bottomLinks": {
+      "torOnionService": "خدمة Tor Onion",
+      "vulnerabilityResponse": "استجابة الثغرات",
+      "legal": "قانوني",
+      "sourceCode": "الكود المصدري",
+      "sitemap": "خريطة الموقع",
+      "rssFeed": "تغذية RSS"
+    },
+    "copyright": "© 2025 مونيرو. جميع الحقوق محفوظة."
+  }
+}

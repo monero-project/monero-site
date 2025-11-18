@@ -5,15 +5,17 @@ import "@fontsource-variable/dm-sans";
 import "@fontsource-variable/inter";
 import dmSansFont from "@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url";
 import "../styles/global.css";
-import { createTInstance, getLocale } from "../i18n/utils";
+import { getLocale } from "astro-i18n-aut";
+import { createTInstance, getDirection } from "../i18n/utils";
 
 const lang = getLocale(Astro.url);
 const t = await createTInstance(lang);
+const dir = getDirection(lang);
 const title = Astro.props.title;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} dir={dir}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

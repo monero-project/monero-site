@@ -2,14 +2,15 @@
 export interface Props {
   src: string;
   size?: string;
+  rtl?: boolean;
 }
 
-const { src, size = "1em" } = Astro.props;
+const { src, size = "1em", rtl } = Astro.props;
 ---
 
 <div
   class={`icon`}
-  style={`--icon-src: url(${src}); width: ${size}; height: ${size};`}
+  style={`--icon-src: url(${src}); width: ${size}; height: ${size}; --icon-scale-x: ${rtl ? "-1" : "1"}`}
 >
 </div>
 
@@ -19,5 +20,8 @@ const { src, size = "1em" } = Astro.props;
     background-color: currentColor;
     mask: var(--icon-src) no-repeat center / contain;
     -webkit-mask: var(--icon-src) no-repeat center / contain;
+
+    transform: scaleX(var(--icon-scale-x, 1));
+    transform-origin: center;
   }
 </style>

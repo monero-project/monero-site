@@ -1,4 +1,4 @@
-import { defaultLocale, locales } from "@/i18n/config";
+import { defaultLocale, locales, rtlLocales } from "@/i18n/config";
 import { getLocale } from "astro-i18n-aut";
 import { createInstance } from "i18next";
 import Backend from "i18next-fs-backend";
@@ -19,6 +19,10 @@ export const getLocaleName = (locale: string): { name: string } | null => {
   if (!name) return null;
   const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
   return { name: capitalizedName };
+};
+
+export const getDirection = (locale: string): "ltr" | "rtl" => {
+  return rtlLocales.includes(locale) ? "rtl" : "ltr";
 };
 
 export const createTInstance = (

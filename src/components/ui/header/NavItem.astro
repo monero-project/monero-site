@@ -3,6 +3,7 @@ import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif?url";
 import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import ColorIcon from "../ColorIcon.astro";
+import { getDirection, getLocale } from "@/i18n/utils";
 
 export interface DropdownItem {
   label: string;
@@ -20,8 +21,9 @@ export interface Props {
 
 const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
-const id = "dd-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const id = "dd-" + Math.random().toString(36).substr(2, 9);
 const closeId = id + "-close";
+const dir = getDirection(getLocale(Astro.url));
 ---
 
 <li class={`item${isDropdown ? " has-dd" : ""}`}>
@@ -84,7 +86,7 @@ const closeId = id + "-close";
                 {item.desc && <div class="desc">{item.desc}</div>}
               </div>
               <div class="arrow">
-                <MaskIcon src={arrowRight} size="0.75rem" />
+                <MaskIcon src={arrowRight} size="0.75rem" rtl={dir == "rtl"} />
               </div>
             </a>
           ))}
@@ -130,7 +132,7 @@ const closeId = id + "-close";
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0.15rem;
+    margin-inline-start: 0.15rem;
     border-radius: 0.2rem;
     transition: transform 0.2s ease;
   }
@@ -146,8 +148,8 @@ const closeId = id + "-close";
 
   .dropdown {
     position: absolute;
-    top: 100%;
-    left: 0;
+    inset-block-start: 100%;
+    inset-inline-start: 0;
     margin-top: 0.5rem;
     min-width: 35rem;
     padding: 1rem;
@@ -198,6 +200,7 @@ const closeId = id + "-close";
   .arrow {
     display: flex;
     align-items: start;
+    margin-inline-start: auto;
     opacity: 0;
     transition: opacity 0.2s ease;
     color: var(--paragraph-subtitle);
