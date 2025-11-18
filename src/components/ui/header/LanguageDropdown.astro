@@ -89,7 +89,7 @@ const hrefFor = (locale: string) =>
     background: var(--card-color);
     border-radius: 0.75rem;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-    z-index: 1001;
+    z-index: 999;
     min-width: 140px;
     padding: 0.5rem;
     opacity: 0;
@@ -134,7 +134,7 @@ const hrefFor = (locale: string) =>
     position: fixed;
     inset: 0;
     background: transparent;
-    z-index: 1000; /* under dropdown */
+    z-index: 998; /* under dropdown */
     cursor: default;
   }
 
