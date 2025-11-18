@@ -4,7 +4,7 @@ import { getCollection, getEntry } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import MoneropediaContent from "@/components/content/MoneropediaContent.astro";
 import { defaultLocale } from "@/i18n/config";
-import { localizeHref, getLocale, createTInstance } from "@/i18n/utils";
+import { localizeHref, getLocale, createTInstance, getDirection } from "@/i18n/utils";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import backCaret from "@/assets/icons/mask/back-caret.avif?url";
 
@@ -22,6 +22,7 @@ type Props = CollectionEntry<"moneropedia">;
 
 const { slug } = Astro.params;
 const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
 const t = await createTInstance(locale);
 const entry = await getEntry("moneropedia", `${locale}/${slug}`);
 
@@ -45,7 +46,7 @@ const title = entry.data.title ?? entry.data.terms[0];
         class="moneropedia-back"
       >
         <span class="moneropedia-back-icon">
-          <MaskIcon src={backCaret} size="1.25rem" />
+          <MaskIcon src={backCaret} size="1.25rem" rtl={dir == 'rtl'}/>
         </span>
         <span class="moneropedia-back-label">Moneropedia</span>
       </a>
