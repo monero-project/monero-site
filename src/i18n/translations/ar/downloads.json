@@ -67,6 +67,8 @@
       "multiCoin": "عملات متعددة"
     },
     "learnMore": "تعلم المزيد",
+    "desktopLabel": "سطح المكتب",
+    "mobileLabel": "المحمول",
 
     "descriptions": {
       "anonero": "محفظة تركز على الخصوصية مع جميع الاتصالات عبر Tor.",

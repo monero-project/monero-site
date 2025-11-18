@@ -65,6 +65,8 @@
       "multiCoin": "Multi-moneda"
     },
     "learnMore": "Más información",
+    "desktopLabel": "Escritorio",
+    "mobileLabel": "Móvil",
 
     "descriptions": {
       "anonero": "Billetera enfocada en privacidad con todas las comunicaciones a través de Tor.",

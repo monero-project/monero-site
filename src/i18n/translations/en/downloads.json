@@ -67,6 +67,8 @@
       "multiCoin": "Multi-coin"
     },
     "learnMore": "Learn more",
+    "desktopLabel": "Desktop",
+    "mobileLabel": "Mobile",
 
     "descriptions": {
       "anonero": "Privacy-focused wallet with all communications over Tor.",

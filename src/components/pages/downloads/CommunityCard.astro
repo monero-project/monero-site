@@ -23,9 +23,11 @@ interface Props {
   link: string;
   linkText?: string;
   translateTag?: (key: string) => string;
+  t: any;
 }
 
-const dir = getDirection(getLocale(Astro.url));
+const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
 
 const {
   logo,
@@ -35,6 +37,7 @@ const {
   link,
   linkText,
   translateTag,
+  t,
 } = Astro.props;
 
 const norm = (s: string) => (s || "").toLowerCase().trim();
@@ -129,7 +132,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
       <div class="card-platforms" aria-label="Supported platforms">
         {desktop.length > 0 && (
           <div class="platform-row">
-            <span class="platforms-label">Desktop:</span>
+            <span class="platforms-label">{t("community.desktopLabel")}:</span>
             <ul class="list" role="list">
               {desktop.map((key) => (
                 <li class="pill" title={LABEL[key]}>
@@ -141,7 +144,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
         )}
         {mobile.length > 0 && (
           <div class="platform-row">
-            <span class="platforms-label">Mobile:</span>
+            <span class="platforms-label">{t("community.mobileLabel")}:</span>
             <ul class="list" role="list">
               {mobile.map((key) => (
                 <li class="pill" title={LABEL[key]}>
@@ -157,7 +160,12 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
 
   <a href={link} class="visit-link" target="_blank" rel="noopener noreferrer">
     <span>{linkText ?? "Visit website"}</span>
-    <MaskIcon src={externalLink} size="1em" aria-hidden="true" rtl={dir == 'rtl'} />
+    <MaskIcon
+      src={externalLink}
+      size="1em"
+      aria-hidden="true"
+      rtl={dir == "rtl"}
+    />
   </a>
 </div>
 

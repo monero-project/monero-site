@@ -65,6 +65,8 @@
       "multiCoin": "Multi-monnaies"
     },
     "learnMore": "En savoir plus",
+    "desktopLabel": "Bureau",
+    "mobileLabel": "Mobile",
 
     "descriptions": {
       "anonero": "Portefeuille axé sur la confidentialité avec toutes les communications via Tor.",
