@@ -96,7 +96,7 @@ cli:
      icon: icon-android
      vers:
    - platform: FreeBSD 64-bit
-     hash: 7c2ad18ca3a1ad5bc603630ca935a753537a38a803e98d645edd6a3b94a5f036
+     hash: bc539178df23d1ae8b69569d9c328b5438ae585c0aacbebe12d8e7d387a745b0
      link: https://downloads.getmonero.org/cli/freebsd64
      icon: icon-freebsd
      vers:
