@@ -168,7 +168,11 @@ const bottomLinks: Link[] = [
                   >
                     {l.label}
                     {isExternal(l.href) ? (
-                      <MaskIcon src={externalLink} size="12px" rtl={dir == 'rtl'} />
+                      <MaskIcon
+                        src={externalLink}
+                        size="12px"
+                        rtl={dir == "rtl"}
+                      />
                     ) : (
                       ""
                     )}
