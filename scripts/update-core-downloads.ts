@@ -1,5 +1,23 @@
 import { readFileSync, writeFileSync } from "fs";
 
+interface DownloadItem {
+  href: string;
+  label: string;
+  platform: string;
+  size: string;
+}
+
+interface Section {
+  version: string;
+  downloads: (DownloadItem | "separator")[];
+  name: string;
+}
+
+interface CoreData {
+  gui: Section;
+  cli: Section;
+}
+
 async function getLatestVersion(
   repo: string,
 ): Promise<{ tag_name: string; name: string } | null> {
@@ -24,7 +42,7 @@ async function getFileSize(url: string): Promise<string> {
       const sizeInMB = (parseInt(contentLength) / (1024 * 1024)).toFixed(2);
       return `${sizeInMB} MB`;
     }
-  } catch (error) {
+  } catch {
     console.error(`Error fetching ${url}`);
   }
   return "";
@@ -32,7 +50,7 @@ async function getFileSize(url: string): Promise<string> {
 
 async function main() {
   const downloadsPath = "./src/data/downloads/core.json";
-  const data = JSON.parse(readFileSync(downloadsPath, "utf-8"));
+  const data: CoreData = JSON.parse(readFileSync(downloadsPath, "utf-8"));
 
   console.log("Updating Core Downloads Data");
   console.log("=================================\n");
@@ -64,7 +82,10 @@ async function main() {
 
   // Update sizes
   console.log("Calculating download file sizes...");
-  for (const [sectionName, section] of Object.entries(data) as any[]) {
+  for (const [sectionName, section] of Object.entries(data) as [
+    keyof CoreData,
+    Section,
+  ][]) {
     if (!section.downloads) continue;
 
     console.log(`\nProcessing ${sectionName}...`);

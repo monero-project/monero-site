@@ -23,7 +23,7 @@ interface Props {
   link: string;
   linkText?: string;
   translateTag?: (key: string) => string;
-  t: any;
+  t: (key: string) => string;
 }
 
 const locale = getLocale(Astro.url);
@@ -104,7 +104,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
 <div class="community-card">
   <header class="card-header" aria-label="Project">
     <div class="card-logo" aria-hidden="true">
-      <img src={logo} alt={`${name} logo`} loading="lazy" decoding="async" />
+      <img src={logo} alt={`${name} logo`} decoding="async" />
     </div>
     <h3 class="card-title">{name}</h3>
   </header>

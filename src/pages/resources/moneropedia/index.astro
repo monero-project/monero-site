@@ -20,7 +20,7 @@ const entries = (
     entry.slug?.startsWith(`${locale}/`),
   )
 ).map<MoneropediaItem>((entry) => {
-  const slug = entry.slug?.split("/").pop()!;
+  const slug = entry.slug.split("/").pop()!;
   const title = entry.data.title ?? entry.data.terms[0];
 
   // Capitalize the summary

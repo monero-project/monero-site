@@ -1,16 +1,17 @@
 ---
 export interface Props {
-  src: any;
-  darkSrc?: any; // optional dark icon
+  src: string | { src: string };
+  darkSrc?: string | { src: string };
   size?: string;
   class?: string;
 }
 
 const { src, darkSrc, size = "1em", class: className = "" } = Astro.props;
 
-function norm(p: any): string {
+function norm(p: string | { src: string } | unknown): string {
   if (typeof p === "string") return p;
-  if (p && typeof p === "object" && typeof p.src === "string") return p.src;
+  if (p && typeof p === "object" && "src" in p && typeof p.src === "string")
+    return p.src;
   return String(p);
 }
 

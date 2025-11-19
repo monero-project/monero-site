@@ -7,6 +7,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "update-core-downloads": "tsx scripts/update-core-downloads.ts"
   },
   "dependencies": {
@@ -19,15 +23,20 @@
     "i18next": "^25.6.0",
     "i18next-fs-backend": "^2.6.0",
     "isomorphic-dompurify": "^2.32.0",
-    "marked": "^15.0.0",
-    "typescript": "^5.9.3"
+    "marked": "^15.0.0"
   },
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.5.0",
     "htmlhint": "^1.7.1",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
     "sass": "^1.93.2",
-    "tsx": "^4.19.2"
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.47.0"
   }
 }

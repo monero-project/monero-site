@@ -29,7 +29,7 @@ const entryMap = new Map<
 
 // Add fallback entries first (will be overwritten if current locale has same file)
 for (const entry of fallbackEntries) {
-  const file = entry.slug?.split("/").pop()!;
+  const file = entry.slug.split("/").pop()!;
   entryMap.set(file, {
     terms: entry.data.terms,
     summary: entry.data.summary,
@@ -39,7 +39,7 @@ for (const entry of fallbackEntries) {
 
 // Add/overwrite with current locale entries (takes priority)
 for (const entry of currentLocaleEntries) {
-  const file = entry.slug?.split("/").pop()!;
+  const file = entry.slug.split("/").pop()!;
   entryMap.set(file, {
     terms: entry.data.terms,
     summary: entry.data.summary,
