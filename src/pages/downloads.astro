@@ -1,13 +1,13 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import TitleCard from "../components/ui/TitleCard.astro";
-import Tabs from "../components/ui/Tabs.astro";
-import CommunityCard from "../components/pages/downloads/CommunityCard.astro";
-import CoreCard from "../components/pages/downloads/CoreCard.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import Tabs from "@/components/ui/Tabs.astro";
+import CommunityCard from "@/components/pages/downloads/CommunityCard.astro";
+import CoreCard from "@/components/pages/downloads/CoreCard.astro";
 import { createTInstance, getLocale } from "@/i18n/utils";
-import coreDownloads from "../data/downloads/core.json";
-import communityWallets from "../data/downloads/community.json";
-import type { DownloadLink } from "../components/pages/downloads/CoreCard.astro";
+import coreDownloads from "@/data/downloads/core.json";
+import communityWallets from "@/data/downloads/community.json";
+import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale, "downloads");

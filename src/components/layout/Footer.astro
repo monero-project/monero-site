@@ -1,8 +1,8 @@
 ---
-import MaskIcon from "../ui/MaskIcon.astro";
-import externalLink from "../../assets/icons/mask/external-link.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import externalLink from "@/assets/icons/mask/external-link.avif?url";
 import { getLocale } from "astro-i18n-aut";
-import { localizeHref, getDirection } from "../../i18n/utils";
+import { localizeHref, getDirection } from "@/i18n/utils";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);

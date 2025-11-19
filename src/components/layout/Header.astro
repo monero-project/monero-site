@@ -1,12 +1,12 @@
 ---
-import NavItem from "../ui/header/NavItem.astro";
-import LanguageDropdown from "../ui/header/LanguageDropdown.astro";
-import MaskIcon from "../ui/MaskIcon.astro";
+import NavItem from "@/components/ui/header/NavItem.astro";
+import LanguageDropdown from "@/components/ui/header/LanguageDropdown.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 import { getLocale } from "astro-i18n-aut";
-import { localizeHref } from "../../i18n/utils";
+import { localizeHref } from "@/i18n/utils";
 
-import hamburger from "../../assets/icons/mask/hamburger.avif?url";
-import close from "../../assets/icons/mask/close.avif?url";
+import hamburger from "@/assets/icons/mask/hamburger.avif?url";
+import close from "@/assets/icons/mask/close.avif?url";
 
 import whatIsMonero from "@/assets/icons/color/light/what-is-monero.avif?url";
 import acceptMonero from "@/assets/icons/color/light/accept-monero.avif?url";
