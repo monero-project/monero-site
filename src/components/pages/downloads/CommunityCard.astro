@@ -115,7 +115,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
     {
       showTags && (
         <div class="card-tags" aria-label="Tags">
-          <ul class="list" role="list">
+          <ul class="list">
             {general.map((tag) => (
               <li class="pill" title={getTagLabel(tag)}>
                 <span class="tag-text">{getTagLabel(tag)}</span>
@@ -133,7 +133,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
         {desktop.length > 0 && (
           <div class="platform-row">
             <span class="platforms-label">{t("community.desktopLabel")}:</span>
-            <ul class="list" role="list">
+            <ul class="list">
               {desktop.map((key) => (
                 <li class="pill" title={LABEL[key]}>
                   <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />
@@ -145,7 +145,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
         {mobile.length > 0 && (
           <div class="platform-row">
             <span class="platforms-label">{t("community.mobileLabel")}:</span>
-            <ul class="list" role="list">
+            <ul class="list">
               {mobile.map((key) => (
                 <li class="pill" title={LABEL[key]}>
                   <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />

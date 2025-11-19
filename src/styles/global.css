@@ -68,6 +68,17 @@
 }
 
 /* ========================================
+   Global HTML Element Styles
+   ======================================== */
+a {
+  color: var(--monero-orange);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
    Third-Party Overrides
    ======================================== */
 
@@ -75,12 +86,4 @@ body .__ns__pop2top,
 div .__ns__pop2top,
 article .__ns__pop2top {
   z-index: unset !important;
-}
-
-a {
-  color: var(--monero-orange);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
