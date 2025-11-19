@@ -178,6 +178,10 @@ const t = await createTInstance(locale);
     margin-top: var(--hero-min-height) !important;
   }
 
+  :global(#start-using-monero) {
+    scroll-margin-top: 4rem;
+  }
+
   :global(.hero) {
     position: absolute !important;
     top: 3rem !important;
@@ -185,6 +189,12 @@ const t = await createTInstance(locale);
     right: 5rem !important;
     z-index: 5 !important;
     min-height: var(--hero-min-height) !important;
+  }
+
+  @media (max-width: 1500px) {
+    :global(#start-using-monero) {
+      scroll-margin-top: 6rem;
+    }
   }
 
   @media (max-width: 600px) {

@@ -16,17 +16,22 @@ This is a work-in-progress (WIP) implementation of the planned Monero page redes
 ├── public/
 │   └── media/            # Videos, images
 ├── src/
+│   ├── assets/           # Page assets (icons, artwork, etc.)
 │   ├── components/       # Reusable Astro components
 │   │   ├── layout/       # Header, Footer
 │   │   ├── pages/        # Page-specific components (something that is only used on one page)
 │   │   └── ui/           # UI components (buttons, cards, etc.)
+│   ├── content/          # Markdown or MDX content files
+│   ├── data/             # Static importable data (e.g., download info)
 │   ├── i18n/             # Internationalization setup
 │   │   ├── locales/      # Translation JSON files
 │   │   ├── config.ts     # Locale configuration
 │   │   └── utils.ts      # i18n utilities
 │   ├── layouts/          # Astro layouts
 │   ├── pages/            # Route pages
-│   └── styles/           # Global CSS variables
+│   ├── styles/           # Global styles
+│   └── utils/            # Utility scripts
+├── astro.config.mjs      # Astro configuration
 └── package.json
 ```
 
@@ -48,6 +53,8 @@ All commands are run from the root of the project:
 | `pnpm dev`                  | Starts local dev server at `localhost:4321`      |
 | `pnpm build`                | Build your production site to `./dist/`          |
 | `pnpm preview`              | Preview your build locally, before deploying     |
+| `pnpm lint`                 | Run ESLint to check for code issues              |
+| `pnpm format`               | Format code using Prettier                       |
 | `pnpm update-download-info` | Update information for Core downloads            |
 | `pnpm astro ...`            | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help`      | Get help using the Astro CLI                     |
