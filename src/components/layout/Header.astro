@@ -348,10 +348,8 @@ const navItems = [
       justify-content: flex-end;
       padding-block: 0.5rem;
       padding-inline: 0;
-      position: sticky;
-      inset-block-start: 0;
-      z-index: 1;
       background: inherit;
+      flex-shrink: 0;
     }
 
     .nav {
@@ -370,9 +368,10 @@ const navItems = [
       padding-inline: 1rem;
 
       z-index: 1001;
-      overscroll-behavior: contain;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
+
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
 
       margin-inline-end: -100vw;
       transition: margin-inline-end 0.25s ease;
@@ -384,11 +383,20 @@ const navItems = [
     }
 
     .nav-list {
+      display: flex;
       flex-direction: column;
       align-items: stretch;
       gap: 0.25rem;
-      margin-block-start: 1rem;
+      margin: 1rem 0 0;
+      padding: 0;
       justify-content: flex-start;
+
+      flex: 1 1 auto;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;      /* Firefox */
+      -ms-overflow-style: none;   /* old Edge / IE */
     }
 
     /* Scrim under drawer */
