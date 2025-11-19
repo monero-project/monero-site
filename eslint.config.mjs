@@ -16,7 +16,7 @@ export default defineConfig([
   ...tseslint.configs["recommended"],
 
   ...eslintPluginAstro.configs["recommended"],
-  ...eslintPluginAstro.configs["flat/jsx-a11y-recommended"],
+  ...eslintPluginAstro.configs["flat/jsx-a11y-strict"],
 
   eslintConfigPrettier,
 ]);
