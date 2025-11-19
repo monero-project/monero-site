@@ -14,9 +14,17 @@
           "label": "What is Monero?",
           "desc": "Everything you need to know about Monero in a nutshell."
         },
+        "buyMonero": {
+          "label": "Buy Monero",
+          "desc": "Cryptocurrency exchanges that let you buy or trade Monero."
+        },
         "acceptMonero": {
           "label": "Accept Monero",
           "desc": "Learn how to accept XMR as a merchant or individual."
+        },
+        "spendMonero": {
+          "label": "Spend Monero",
+          "desc": "Find places and services that accept Monero as payment."
         },
         "contribute": {
           "label": "Contribute",
@@ -43,10 +51,6 @@
         "hangouts": {
           "label": "Hangouts",
           "desc": "Learn how to accept XMR as a merchant or individual with wallet software."
-        },
-        "merchants": {
-          "label": "Merchants and exchanges",
-          "desc": "Everything you need to know about Monero in a nutshell."
         }
       },
       "resources": {

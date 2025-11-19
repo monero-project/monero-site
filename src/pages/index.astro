@@ -54,6 +54,7 @@ const t = await createTInstance(locale);
     <IndexCard
       title={t("index.startTitle")}
       description={t("index.startDescription")}
+      id="start-using-monero"
     >
       <MaskIcon src={placeholder} size="100%" />
       <div>
@@ -69,7 +70,7 @@ const t = await createTInstance(locale);
           step="02"
           title={t("index.step2Title")}
           description={t("index.step2Desc")}
-          ctaHref="/community/merchants"
+          ctaHref="/get-started/exchanges"
           ctaLabel={t("index.step2Cta")}
         />
         <hr />
@@ -77,7 +78,7 @@ const t = await createTInstance(locale);
           step="03"
           title={t("index.step3Title")}
           description={t("index.step3Desc")}
-          ctaHref="/resources/user-guides"
+          ctaHref="/get-started/merchants"
           ctaLabel={t("index.step3Cta")}
         />
       </div>
