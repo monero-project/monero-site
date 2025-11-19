@@ -25,11 +25,14 @@ const hrefFor = (locale: string) =>
 ---
 
 <div class="lang-container">
-  <input id="lang-dd" class="dd-toggle" type="checkbox" aria-hidden="true" />
-
-  <label for="lang-dd" class="lang" aria-label="Change language">
+  <button
+    class="lang"
+    type="button"
+    aria-label="Change language"
+    aria-haspopup="true"
+  >
     <MaskIcon src={Globe} size="1.25rem" />
-  </label>
+  </button>
 
   <div class="lang-dropdown" aria-label="Languages">
     <ul class="lang-list">
@@ -56,9 +59,6 @@ const hrefFor = (locale: string) =>
     position: relative;
     display: inline-block;
   }
-  .dd-toggle {
-    display: none;
-  }
 
   /* Globe trigger */
   .lang {
@@ -70,6 +70,7 @@ const hrefFor = (locale: string) =>
     border: 0;
     background: transparent;
     vertical-align: middle;
+    color: inherit;
   }
   .lang:hover {
     color: var(--on-dark);
@@ -92,6 +93,7 @@ const hrefFor = (locale: string) =>
     z-index: 999;
     min-width: 140px;
     padding: 0.5rem;
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -128,26 +130,13 @@ const hrefFor = (locale: string) =>
     background: var(--card-hover-color);
   }
 
-  /* Click-away cover */
-  .mobile-cover {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: transparent;
-    z-index: 998; /* under dropdown */
-    cursor: default;
-  }
-
-  /* Open state */
-  #lang-dd:checked ~ .lang-dropdown {
+  /* Open state: when button or any link inside has focus */
+  .lang-container:focus-within .lang-dropdown {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
-  #lang-dd:checked ~ .mobile-cover {
-    display: block;
-  }
-  #lang-dd:checked + .lang {
+  .lang-container:focus-within .lang {
     color: var(--on-dark);
   }
 
@@ -186,6 +175,7 @@ const hrefFor = (locale: string) =>
     .lang-list a {
       padding: 0.75rem;
     } /* larger tap targets */
+
     .lang {
       padding: 0.5rem 0;
     }
