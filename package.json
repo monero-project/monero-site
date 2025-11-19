@@ -18,12 +18,12 @@
     "@astrojs/sitemap": "^3.6.0",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource-variable/inter": "^5.2.8",
-    "astro": "^5.15.8",
+    "astro": "^5.15.9",
     "astro-i18n-aut": "^0.7.3",
-    "i18next": "^25.6.0",
-    "i18next-fs-backend": "^2.6.0",
+    "i18next": "^25.6.3",
+    "i18next-fs-backend": "^2.6.1",
     "isomorphic-dompurify": "^2.32.0",
-    "marked": "^15.0.0"
+    "marked": "^15.0.12"
   },
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
   "devDependencies": {
@@ -34,8 +34,8 @@
     "htmlhint": "^1.7.1",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
-    "sass": "^1.93.2",
-    "tsx": "^4.19.2",
+    "sass": "^1.94.1",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.47.0"
   }
