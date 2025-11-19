@@ -21,7 +21,7 @@ export interface Props {
 
 const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
-const id = "dd-" + Math.random().toString(36).substr(2, 9);
+const id = "dd-" + Math.random().toString(36).slice(2, 11);
 const closeId = id + "-close";
 const dir = getDirection(getLocale(Astro.url));
 ---

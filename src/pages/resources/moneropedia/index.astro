@@ -5,7 +5,6 @@ import Accordion from "@/components/ui/Accordion.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getLocale, createTInstance, localizeHref } from "@/i18n/utils";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { defaultLocale } from "@/i18n/config";
 
 type MoneropediaItem = CollectionEntry<"moneropedia"> & {
   href: string;
@@ -66,7 +65,7 @@ for (const letter of sortedLetters) {
     </nav>
     <div class="letter-groups">
       {
-        sortedLetters.map((letter, idx) => {
+        sortedLetters.map((letter) => {
           const groupEntries = groups.get(letter)!;
 
           const accordionItems = groupEntries.map((entry) => ({
