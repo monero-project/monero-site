@@ -284,7 +284,7 @@ const dir = getDirection(getLocale(Astro.url));
       transition: max-height 0.15s ease;
     }
     .dd-toggle:checked ~ .dropdown {
-      max-height: 100vh;
+      max-height: unset;
     }
     .dd-toggle:checked ~ .row > .caret {
       transform: rotate(180deg);
