@@ -199,7 +199,6 @@ merchants:
   cardbtcfiat: '(BTC &#8596; fiat dimungkinkan)'
   cardonion: "Alamat Onion:"
   noncustodial: "Non-kustodial:"
-  hodlhodldescr: 'Platform perdagangan P2P dengan eskrow non-kustodial.'
   locmondescr: 'Bursa pertukaran P2P Online menawarkan perdagangan pribadi-ke-pribadi.'
   depsell: 'Tergantung oleh penjual'
   locnojs: '(tetapi tidak tersedia versi tanpa-JS / tanpa-javascript)'
@@ -207,7 +206,6 @@ merchants:
   disclaimer: |
   visitbisq: ''
   visitlocalmonero: ''
-  visithodlhodl: ''
   centrexchanges: ''
   centrexchangesp: ''
   cexp: ''

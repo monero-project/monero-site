@@ -187,7 +187,6 @@ merchants:
     siguiente, ofrecemos una lista de plataformas de intercambio Peer-to-Peer que
     soportan Monero.
   depsell: Depende del vendedor
-  visithodlhodl: Visita HodlHodl
   centrexchangesp: Si prefieres utilizar plataformas de intercambio centralizadas,
     aquí está una lista de CEXes e intercambiadores de renombre. Muchas más plataformas
     de intercambio soportan Monero, aquí listamos solo unas cuantas de renombre.
@@ -195,7 +194,6 @@ merchants:
     y criptomonedas.
   locnojs: (pero no hay versión JS disponible)
   noncustodial: 'Sin custodia:'
-  hodlhodldescr: Plataforma de intercambio Peer-to-Peer con fideicomiso sin custodia.
   locmondescr: Plataforma de intercambios Peer to Peer en línea que ofrece intercambios
     de persona a persona.
   simpleswapdescr: Plataforma de intercambio instantánea sin custodia.
