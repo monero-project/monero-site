@@ -233,7 +233,7 @@ jobs:
 
           git clone --recurse-submodules https://github.com/plowsof/monero-torrent.git
           cd monero-torrent
-          git reset --hard 3d9227f2a2aeb25a90077d99b6a90f70052cabe5
+          git reset --hard e883850bf24811507e49cf4f4f16126ed2031295
           cd ..
 
           # move files for local build of torrent (requires files to be in a folder named cdn)
