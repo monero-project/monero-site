@@ -185,7 +185,7 @@ const navItems = [
 ];
 ---
 
-<header class="header-bar">
+<header class="header">
   <a class="brand" href={localizeHref(locale, "/")}>
     <img class="mark" src="/meta/favicon-32x32.png" alt="" aria-hidden="true" />
     <span class="word">MONERO</span>
@@ -237,7 +237,7 @@ const navItems = [
 
 <style>
   /* ===== Desktop / base layout ===== */
-  .header-bar {
+  .header {
     grid-template-columns: 1fr auto 1fr;
     display: grid;
     position: relative;
@@ -322,8 +322,8 @@ const navItems = [
       --drawer-gap: clamp(5rem, 20vw, 9rem);
     }
 
-    .header-bar {
-      grid-template-columns: auto 1fr auto;
+    .header {
+      grid-template-columns: auto 1fr;
       position: sticky;
       inset-block-start: 0;
       background-color: inherit;
@@ -377,7 +377,6 @@ const navItems = [
     }
 
     .nav-list {
-      display: flex;
       flex-direction: column;
       align-items: stretch;
       gap: 0.25rem;

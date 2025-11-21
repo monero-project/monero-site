@@ -91,9 +91,11 @@
         "title": "Resources",
         "links": {
           "knowledgeBase": "Knowledge Base",
-          "developerGuides": "Developer guides",
+          "downloads": "Downloads",
+          "exchanges": "Exchanges",
+          "merchants": "Merchants",
           "userGuides": "User guides",
-          "downloads": "Downloads"
+          "developerGuides": "Developer guides"
         }
       },
       "reachOut": {
@@ -107,7 +109,6 @@
       "community": {
         "title": "Community",
         "links": {
-          "merchants": "Merchants & Exchanges",
           "stackExchange": "Stack Exchange",
           "bitcoinTalk": "Bitcoin Talk",
           "weblate": "Weblate"

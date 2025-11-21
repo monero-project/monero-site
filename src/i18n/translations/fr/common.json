@@ -29,6 +29,14 @@
         "faq": {
           "label": "FAQ",
           "desc": "Trouvez des réponses aux questions courantes sur Monero."
+        },
+        "buyMonero": {
+          "label": "Acheter Monero",
+          "desc": "Échanges de cryptomonnaies qui vous permettent d'acheter ou d'échanger Monero."
+        },
+        "spendMonero": {
+          "label": "Dépenser Monero",
+          "desc": "Trouvez des endroits et des services qui acceptent Monero comme paiement."
         }
       },
       "community": {
@@ -87,9 +95,11 @@
         "title": "Ressources",
         "links": {
           "knowledgeBase": "Base de connaissances",
-          "developerGuides": "Guides développeur",
+          "downloads": "Téléchargements",
+          "exchanges": "Échanges",
+          "merchants": "Commerçants",
           "userGuides": "Guides utilisateur",
-          "downloads": "Téléchargements"
+          "developerGuides": "Guides développeur"
         }
       },
       "reachOut": {
@@ -103,7 +113,6 @@
       "community": {
         "title": "Communauté",
         "links": {
-          "merchants": "Commerçants & Échanges",
           "stackExchange": "Stack Exchange",
           "bitcoinTalk": "Bitcoin Talk",
           "weblate": "Weblate"

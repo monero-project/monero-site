@@ -29,6 +29,14 @@
         "faq": {
           "label": "الأسئلة الشائعة",
           "desc": "اعثر على إجابات للأسئلة الشائعة حول مونيرو."
+        },
+        "buyMonero": {
+          "label": "شراء مونيرو",
+          "desc": "تبادلات العملات المشفرة التي تسمح بشراء أو تداول مونيرو."
+        },
+        "spendMonero": {
+          "label": "إنفاق مونيرو",
+          "desc": "اعثر على الأماكن والخدمات التي تقبل مونيرو كدفع."
         }
       },
       "community": {
@@ -87,9 +95,11 @@
         "title": "الموارد",
         "links": {
           "knowledgeBase": "قاعدة المعرفة",
-          "developerGuides": "أدلة المطور",
+          "downloads": "التحميلات",
+          "exchanges": "التبادلات",
+          "merchants": "التجار",
           "userGuides": "أدلة المستخدم",
-          "downloads": "التحميلات"
+          "developerGuides": "أدلة المطور"
         }
       },
       "reachOut": {
@@ -103,7 +113,6 @@
       "community": {
         "title": "المجتمع",
         "links": {
-          "merchants": "التجار والتبادلات",
           "stackExchange": "Stack Exchange",
           "bitcoinTalk": "Bitcoin Talk",
           "weblate": "Weblate"
