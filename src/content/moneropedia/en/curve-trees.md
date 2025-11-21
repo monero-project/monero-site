@@ -1,7 +1,7 @@
 ---
-summary: "Monero's efficient way of building ring signatures"
-title: CLSAG
-terms: ["CLSAG"]
+summary: "A transparent zero-knowledge proof construction used in Monero transactions"
+title: Curve Trees
+terms: ["curve-trees"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

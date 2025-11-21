@@ -1,0 +1,48 @@
+/* Moneropedia Links */
+.moneropedia-link {
+  position: relative;
+  color: var(--monero-orange);
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+.moneropedia-link:hover,
+.moneropedia-link:focus {
+  text-decoration: none;
+}
+
+/* Tooltip box - mobile / edge-safe default (no overflow to the left) */
+.moneropedia-link::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 0; /* anchor to the link's left edge */
+  transform: translateX(0); /* no centering by default */
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  white-space: normal;
+  width: max-content;
+
+  /* Prevent viewport overflow */
+  max-width: min(20rem, calc(100vw - 2rem));
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.moneropedia-link:hover::before,
+.moneropedia-link:focus::before {
+  opacity: 1;
+}

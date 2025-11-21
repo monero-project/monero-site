@@ -6,83 +6,79 @@
       "titleMoney": "Dinero",
       "lead": "Criptomoneda privada y descentralizada que mantiene tus finanzas confidenciales y seguras.",
       "getStarted": "Comenzar",
-      "learnMore": "Saber más"
+      "learnMore": "Aprender más"
     },
-    "pageTitle": "Inicio | Monero - criptomoneda segura, privada e inrastreable.",
+    "pageTitle": "Inicio | Monero - criptomoneda segura, privada, no rastreable.",
     "aboutTitle": "Acerca de Monero",
     "aboutDescription": "Mira este video para entender los conceptos básicos de cómo funciona Monero. Para una comprensión más profunda de la tecnología detrás de Monero, mira más videos explicativos.",
     "main": "Privacidad",
-    "privacyText": "Monero respeta la privacidad al proporcionar anonimato total y transacciones no rastreables para los usuarios.",
+    "privacyText": "Monero respeta la privacidad al proporcionar anonimato completo y transacciones no rastreables para los usuarios.",
     "decentralized": "Descentralizado",
     "decentralizedText": "Con más de 3300 nodos, Monero es una de las criptomonedas más descentralizadas que existen.",
     "communityDriven": "Impulsado por la comunidad",
     "communityText": "Monero es desarrollado y evolucionado por su comunidad, más de 500 desarrolladores han contribuido al proyecto.",
     "startTitle": "Comienza a usar Monero",
-    "startDescription": "Sigue estos pasos para comenzar con Monero. Si eres nuevo en cripto, te recomendamos aprender las medidas básicas de seguridad que puedes tomar para mantener tus fondos seguros.",
-    "getStartedAlt": "Ilustración para comenzar",
+    "startDescription": "Sigue estos pasos para comenzar con Monero. Si eres nuevo en las cripto, te recomendamos aprender las medidas de seguridad básicas que puedes tomar para mantener tus fondos seguros.",
+    "getStartedAlt": "Ilustración de comenzar",
     "step1Title": "Elige una billetera",
-    "step1Desc": "Para usar Monero, lo primero que vas a necesitar es una billetera. Visita nuestra página de Descargas y obtén la billetera adecuada para ti.",
-    "step1Cta": "Obtén una billetera",
-    "step2Title": "Obtén monedas",
-    "step2Desc": "Puedes adquirir Monero minando o trabajando a cambio de Monero, pero la forma más fácil es usar un intercambio para convertir tu dinero fiduciario en XMR.",
-    "step2Cta": "Encuentra e intercambia",
-    "step3Title": "Envía Monero",
+    "step1Desc": "Para usar Monero, lo primero que necesitarás es una billetera. Visita nuestra página de Descargas y obtén la billetera adecuada para ti.",
+    "step1Cta": "Obtener una billetera",
+    "step2Title": "Obtener monedas",
+    "step2Desc": "Puedes adquirir Monero mediante minería o trabajando a cambio de Monero, pero la forma más fácil es usar un exchange para convertir tu dinero fiat en XMR.",
+    "step2Cta": "Encontrar un exchange",
+    "step3Title": "Enviar Monero",
     "step3Desc": "Una vez que Monero esté en tu billetera, puedes intercambiarlo por bienes, servicios y otras monedas, de forma privada y con tarifas muy bajas.",
-    "step3Cta": "Usa Monero",
+    "step3Cta": "Usar Monero",
     "resourcesTitle": "Recursos de Monero",
     "resourcesDescription": "Explora la base de conocimientos para aprender todo sobre Monero, desde términos básicos de blockchain hasta mecanismos de privacidad avanzados y tecnología.",
     "faqTitle": "Preguntas frecuentes",
-    "faqDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntarle a la comunidad.",
+    "faqDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntar a la comunidad.",
     "faqCta": "Encuentra tu respuesta",
     "userGuidesTitle": "Guías de usuario",
-    "userGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntarle a la comunidad.",
+    "userGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntar a la comunidad.",
     "userGuidesCta": "Ver las guías",
-    "devGuidesTitle": "Guías para desarrolladores",
-    "devGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntarle a la comunidad.",
+    "devGuidesTitle": "Guías de desarrollador",
+    "devGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntar a la comunidad.",
     "devGuidesCta": "Ver las guías"
   },
   "faq": {
-    "pageTitle": "FAQ | Monero - criptomoneda segura, privada e inrastreable.",
-    "heroTitle": "Preguntas Frecuentes",
+    "pageTitle": "Preguntas frecuentes | Monero - criptomoneda segura, privada, no rastreable.",
+    "heroTitle": "Preguntas frecuentes",
     "heroSubtitle": "Encuentra respuestas a algunas de las preguntas más comunes sobre Monero.",
     "basics": {
       "title": "Básicos",
       "items": [
         {
-          "title": "¿Cuál es el significado de [palabra técnica]?",
-          "content": "La terminología utilizada en Monero puede ser bastante compleja, por esta razón tenemos la Moneropedia, una lista completa de términos que ves a menudo y su explicación.\n\nSi no sabes lo que significa una palabra o te gustaría tener más información sobre ella, simplemente visita la Moneropedia.\n\nAlgunos ejemplos de términos frecuentemente buscados son:\n\n- Nodo\n- Fungibilidad\n- Clave de vista\n- Poda\n"
+          "title": "¿Qué es Monero?",
+          "content": "Monero es dinero digital inquebrantable. Puedes pagar y ser pagado sin convertir tu vida financiera en un registro público, mientras la red aún hace cumplir las reglas para todos."
         },
         {
-          "title": "¿Cómo puedo contribuir?",
-          "content": "Monero es un proyecto comunitario de código abierto. Todo es construido por voluntarios o colaboradores financiados por la comunidad.\n\n**Contacta a un Grupo de Trabajo:** Casi todo en Monero es gestionado por grupos de trabajo que trabajan en aspectos específicos del desarrollo.\n\n**Haz lo que mejor sabes hacer:**\n\n- ¿Eres diseñador? Crea imágenes relacionadas con Monero.\n- ¿Eres escritor? Escribe sobre Monero.\n\nEl único límite es tu imaginación.\n"
+          "title": "¿Es Monero un mezclador?",
+          "content": "No. Los mezcladores toman tus monedas, las retienen, luego intentan ocultar el rastro.\n\nMonero nunca toma custodia de tu dinero. La privacidad está integrada en el protocolo mismo para cada transacción, siempre."
         },
         {
-          "title": "¿Cómo puedo obtener Monero?",
-          "content": "Puedes comprar Monero en un intercambio o a un individuo.\n\n- **Intercambios:** La forma más común de comprar Monero; hay intercambios conformes en la mayoría de las jurisdicciones.\n- **Billeteras:** Algunas billeteras incluyen funcionalidad para comprar fácilmente Monero con dinero fiat u otras criptomonedas.\n- **Minería:** Alternativamente, puedes intentar minar Monero para obtener monedas de la recompensa de bloque.\n"
+          "title": "¿Usa Monero encriptación?",
+          "content": "Sí. Monero usa encriptación de clave pública fuerte y pruebas de conocimiento cero para que los datos de transacción nunca se publiquen en forma plana.\n\nEn cadena solo ves compromisos encriptados y pruebas de que se siguen las reglas, en lugar de un historial de pagos legible."
         },
         {
-          "title": "¿En qué se diferencia Monero de Bitcoin?",
-          "content": "Monero no está basado en Bitcoin. Está basado en el protocolo CryptoNote.\n\n**Bitcoin** es un sistema completamente transparente, donde las personas pueden ver exactamente cuánto dinero se está enviando de un usuario a otro.\n\n**Monero** oculta esta información para proteger la privacidad del usuario en todas las transacciones. También tiene:\n\n- Tamaño de bloque dinámico y tarifas dinámicas\n- Prueba de trabajo resistente a ASIC (RandomX)\n- Emisión de cola\n- Varios otros cambios enfocados en la privacidad\n"
+          "title": "¿Es legal usar Monero?",
+          "content": "En la mayoría de los lugares, usar herramientas de privacidad es legal. Monero es un activo neutral, como VPNs, cerraduras en las puertas o mensajes encriptados. Las empresas y los individuos deben seguir sus leyes locales, pero la privacidad en sí no es un crimen."
         },
         {
-          "title": "¿Por qué Monero se llama 'Monero'?",
-          "content": "Monero es una palabra en esperanto que significa 'moneda'.\n\nInicialmente Monero se llamaba 'Bitmonero', que se traduce a 'Bitcoin' en esperanto.\n\nDespués de que la comunidad decidiera separarse del mantenedor original, 'bit' fue eliminado en favor de simplemente 'Monero'.\n"
+          "title": "¿Es Monero para criminales?",
+          "content": "Monero es para todos. Es usado por personas ordinarias y negocios que no quieren que sus salarios, ahorros, donaciones o compras sean expuestos permanentemente en un ledger público.\n\nLos actores maliciosos abusan de todo sistema de dinero que existe, incluyendo billetes y blockchains transparentes."
         },
         {
-          "title": "¿Es cierto que Monero tiene un hard fork cada 6 meses?",
-          "content": "Monero solía tener 2 actualizaciones de red (hard forks) al año, pero ya no es el caso.\n\nLa comunidad de desarrolladores y el Equipo Central están de acuerdo en que el protocolo es lo suficientemente estable y maduro y los hard forks semestrales ya no son necesarios. El nuevo algoritmo RandomX está asegurando la resistencia a ASIC a largo plazo, por lo que ya no se necesitan cambios regulares.\n\nLas actualizaciones de red aún se utilizarán para agregar mejoras importantes al protocolo y cambios de consenso, pero con una frecuencia menor y menos estricta (cada 9-12 meses).\n\n**Nota:** El último hard fork fue el 13 de agosto de 2022.\n"
+          "title": "¿Puede Monero ser prohibido o cerrado?",
+          "content": "No. Monero es una red descentralizada de nodos y usuarios alrededor del mundo. Nadie puede apagar el protocolo Monero o prevenir que la gente lo use."
         },
         {
-          "title": "¿Hay videos que pueda ver para aprender sobre Monero?",
-          "content": "La comunidad ha creado una gran cantidad de contenido informativo como artículos y videos.\n\nEn el sitio web de Monero hay varios videos que explican los fundamentos:\n\n- Introducción a Monero\n- Los Esenciales\n- Direcciones Ocultas\n- Firmas de Anillo\n- Transacciones Confidenciales de Anillo\n- Emisión de Cola\n- Nodo\n- RandomX\n- Pruebas de Membresía de Cadena Completa\n"
+          "title": "¿Cómo escala Monero?",
+          "content": "Monero usa tamaños de bloque dinámicos y tarifas adaptativas para manejar cambios en la demanda. Cuando más gente usa Monero, los bloques crecen para acomodar más transacciones, y las tarifas se ajustan para mantener las cosas funcionando suavemente."
         },
         {
-          "title": "¿Monero tiene un límite de tamaño de bloque?",
-          "content": "No, Monero no tiene un límite fijo de tamaño de bloque. En cambio, el tamaño del bloque puede aumentar o disminuir con el tiempo según la demanda. Está limitado a una cierta tasa de crecimiento para prevenir un crecimiento desmesurado."
-        },
-        {
-          "title": "¿Es Monero un mezclador o servicio de mezcla?",
-          "content": "No. Monero utiliza un proceso completamente no interactivo, sin custodia y automático para crear transacciones privadas. Por el contrario, para los servicios de mezcla, los usuarios optan por participar."
+          "title": "¿Quién dirige Monero?",
+          "content": "Monero es un proyecto descentralizado, desarrollado por su comunidad global de criptógrafos y desarrolladores. No hay una compañía central o autoridad a cargo de Monero.\n\nEl Proyecto Monero es apoyado por donaciones de la comunidad, y muchos contribuyentes trabajan en él voluntariamente.\n\nSi quieres involucrarte, visita la página de Grupos de Trabajo para más información."
         }
       ]
     },
@@ -90,36 +86,24 @@
       "title": "Nodos",
       "items": [
         {
-          "title": "¿Puedo importar manualmente la blockchain?",
-          "content": "Sí, puedes, pero probablemente no deberías.\n\nImportar una blockchain externa consume muchos recursos y te obliga a confiar en la entidad que te proporciona la blockchain.\n\nGeneralmente es más rápido descargarla de forma normal: ejecutando un nodo y dejándolo sincronizar con los otros nodos de la red.\n\n**Nota:** Si eres usuario de Linux, puedes usar la herramienta `monero-blockchain-import`, que está incluida en el archivo cuando descargas las billeteras GUI o CLI.\n"
+          "title": "¿Necesito ejecutar mi propio nodo?",
+          "content": "Ejecutar tu propio nodo te da más control e independencia de terceros, mejora la privacidad del remitente, y ayuda a apoyar la red."
         },
         {
-          "title": "¿Cómo puedo conectar mi nodo a través de Tor?",
-          "content": "El soporte para Tor todavía está en sus inicios, pero ya es posible enviar transacciones de forma nativa a través de la red y ejecutar un daemon de Monero en la red Tor. Mejores integraciones de Tor e I2P están en progreso."
+          "title": "¿Puede ejecutar un nodo de Monero meterme en problemas?",
+          "content": "Ejecutar un nodo personal es la forma más segura de interactuar con la red Monero. Tu nodo verifica todas las reglas de forma independiente y no se basa en nadie más.\n\nTen en cuenta que tu ISP puede ver que estás ejecutando un nodo de Monero."
         },
         {
-          "title": "¿Cómo decido si debo ejecutar un nodo completo o un nodo podado?",
-          "content": "**Nodo Completo:**\n\n- Requiere una cantidad considerable de almacenamiento\n- Podría tomar mucho tiempo descargar y verificar toda la blockchain, especialmente en hardware antiguo\n- Recomendado si hay mucho almacenamiento disponible\n\n**Nodo Podado:**\n\n- Recomendado si tienes almacenamiento limitado\n- Solo almacena 1/8 de datos innecesarios de la blockchain mientras mantiene el historial completo de transacciones\n- Aún contribuye enormemente a la red y mejora tu privacidad\n"
+          "title": "¿Cuáles son los requisitos de hardware para ejecutar un nodo de Monero?",
+          "content": "Un nodo completo de Monero requiere al menos 2 GB de RAM, 500 GB de espacio libre en disco, y una conexión a internet de banda ancha con buenas velocidades de subida y bajada. Se recomienda un SSD para mejor rendimiento."
         },
         {
-          "title": "¿Qué tan grande es la blockchain de Monero?",
-          "content": "La blockchain de Monero está siempre creciendo, por lo que no hay un tamaño fijo.\n\nA partir de 2024:\n\n- **Blockchain completa:** ~225GB\n- **Blockchain podada:** ~86GB\n\nConsulta la entrada de Moneropedia sobre poda para conocer la diferencia entre una blockchain completa y una podada.\n"
+          "title": "¿Puedo ejecutar un nodo de Monero sin descargar la cadena completa?",
+          "content": "Sí. Puedes ejecutar un nodo pruned, que almacena solo una porción de los datos de la blockchain, reduciendo los requisitos de espacio en disco mientras aún valida transacciones y bloques."
         },
         {
-          "title": "¿Por qué la blockchain necesita tanto espacio?",
-          "content": "Cuando descargas la blockchain, estás descargando toda la historia de las transacciones que ocurrieron en la red de Monero desde que se creó.\n\nLas transacciones y los datos relacionados son pesados y toda la historia debe ser mantenida por cada nodo para asegurar que sea la misma para todos.\n\n**Podar una blockchain:**\n\n- Te permite ejecutar un nodo que mantiene solo 1/8 de los datos de blockchain no estrictamente necesarios\n- Resulta en una blockchain 2/3 más pequeña que una completa\n"
-        },
-        {
-          "title": "¿Puedo evitar descargar toda la blockchain?",
-          "content": "Sí. No necesitas descargar la blockchain para transaccionar en la red.\n\nPuedes conectarte a un **nodo remoto**, que almacena la blockchain por ti. Todas las billeteras más comunes (incluyendo GUI y CLI) te permiten usar nodos remotos para transaccionar en la red.\n\nHay múltiples formas de aprovechar esta funcionalidad. Por ejemplo, GUI y CLI ofrecen una función de `nodo de arranque`, que permite a las personas descargar su propia blockchain mientras usan un nodo remoto para usar inmediatamente la red.\n"
-        },
-        {
-          "title": "¿Es peligroso ejecutar un nodo personal?",
-          "content": "Ejecutar un nodo personal es la forma más segura de interactuar con la red de Monero, porque tienes el control total y no necesitas depender de terceros. Desde un punto de vista general, ejecutar un nodo no es peligroso, pero ten en cuenta que tu ISP puede ver que estás ejecutando un nodo de Monero."
-        },
-        {
-          "title": "¿Es peligroso usar un nodo remoto? ¿Qué datos puede obtener un operador de nodo de mí?",
-          "content": "Siempre es aconsejable, especialmente para usuarios conscientes de la privacidad, usar un nodo personal al transaccionar en la red para lograr la mayor tasa de privacidad.<br><br>Algunas personas por conveniencia prefieren usar nodos remotos. La conveniencia de no tener que lidiar con una copia personal de la blockchain tiene un costo: <strong>menor privacidad</strong>.<br><br><strong>Lo que un operador de nodo remoto puede ver:</strong><ul><li>Desde qué dirección IP proviene una transacción (aunque no puede ver el destinatario ni la cantidad)</li><li>En algunos casos extremos, puede realizar ataques capaces de reducir tu privacidad</li></ul><br><strong>Mitigación:</strong> Algunos peligros se pueden mitigar usando nodos remotos en las redes Tor o I2P o usando una VPN."
+          "title": "¿Cómo afecta usar un nodo de terceros a mi privacidad?",
+          "content": "Los nodos remotos pueden ver que estás haciendo alguna transacción de Monero desde tu dirección IP - pero no pueden observar los detalles de la transacción, ya que está encriptada en tu dispositivo.\n\nPara mejorar la privacidad, considera usar Tor o una VPN al conectarte a nodos remotos."
         }
       ]
     },
@@ -127,16 +111,32 @@
       "title": "Privacidad",
       "items": [
         {
-          "title": "¿En qué se diferencia la privacidad de Monero de otras monedas?",
-          "content": "Monero utiliza tres tecnologías de privacidad diferentes:\n\n- **Firmas de anillo:** Ocultan al remitente\n- **Transacciones confidenciales de anillo (RingCT):** Ocultan la cantidad\n- **Direcciones ocultas:** Ocultan al receptor\n\nTodas las transacciones en la red son privadas por mandato; no hay forma de enviar accidentalmente una transacción transparente.\n\nEsta característica es exclusiva de Monero. No necesitas confiar en nadie más con tu privacidad.\n"
+          "title": "¿Cómo mantiene Monero las transacciones privadas?",
+          "content": "Monero oculta tres cosas a la vez:\n\n1. **Montos:** Encriptados para que los extraños no puedan ver cuánto se está enviando.\n2. **Receptores:** Encriptados usando direcciones stealth de un solo uso que solo el receptor puede reconocer.\n3. **Remitentes:** Protegidos por pruebas de conocimiento cero que muestran que un gasto es válido, sin revelar qué moneda se gasta."
         },
         {
-          "title": "¿Es Monero mágico y protege mi privacidad sin importar lo que haga?",
-          "content": "**Monero no es mágico.**\n\nAún necesitas tener cuidado:\n\n- Si das tu nombre y dirección a otra parte, no lo olvidarán mágicamente\n- Si entregas tus claves secretas, otros sabrán lo que has hecho\n- Si te ves comprometido, otros podrán registrar tus pulsaciones\n- Si usas una contraseña débil, otros podrán forzar tu archivo de claves\n- Si haces una copia de seguridad de tu semilla en la nube, pronto serás más pobre\n"
+          "title": "¿Puede el análisis de cadena romper la privacidad de Monero hoy?",
+          "content": "Los análisis de blockchain pueden ver que ocurrió alguna transacción, pero es imposible vincular transacciones a usuarios o direcciones específicas."
         },
         {
-          "title": "¿Es Monero 100% anónimo?",
-          "content": "No existe tal cosa como 100% anónimo.\n\n**Limitaciones:**\n\n- Tu conjunto de anonimato es el conjunto de personas que usan Monero. Algunas personas no usan Monero.\n- Monero también puede tener errores\n- Pueden existir formas de inferir cierta información a través de las capas de privacidad de Monero, ya sea ahora o más tarde\n- Los ataques solo mejoran\n\nSi usas un cinturón de seguridad, aún puedes morir en un accidente de auto. Usa sentido común, prudencia y defensa en profundidad.\n"
+          "title": "¿Es Monero perfectamente anónimo?",
+          "content": "Ningún sistema es perfecto. Monero oculta lo que sucede en cadena. Tu seguridad operativa, hábitos de red, registros KYC, dispositivos, y tu propio comportamiento aún importan."
+        },
+        {
+          "title": "¿Puedo usar Monero y aún seguir reglas de impuestos y reportes?",
+          "content": "Sí. Puedes exportar el historial de tus transacciones desde tu billetera, o compartir datos selectos cuando sea necesario. La privacidad significa que controlas quién ve tus registros. Monero no te impide divulgarlos si eliges hacerlo."
+        },
+        {
+          "title": "¿Qué es una clave de vista y cómo ayuda con el cumplimiento?",
+          "content": "Una clave de vista permite a alguien ver las transacciones entrantes y salientes para una cuenta dada, sin que puedan gastar tus fondos.\n\n Puedes compartirla con un contador o auditor para reconciliar tus libros mientras mantienes el control sobre tu dinero."
+        },
+        {
+          "title": "¿Cómo pruebo que pagué a alguien sin exponer mi billetera completa?",
+          "content": "Tu billetera puede generar una prueba de que se hizo un pago específico a una dirección específica, o que controlas una salida específica, sin revelar tu historial de transacciones completo."
+        },
+        {
+          "title": "¿Qué pasa si ya no quiero que un servicio vea mi actividad después de compartir mi clave de vista?",
+          "content": "Puedes moverte a una cuenta fresca con nuevas claves de vista. Las claves viejas solo verán el historial que ya compartiste. La actividad futura vuelve a ser visible solo para ti a menos que decidas lo contrario."
         }
       ]
     },
@@ -144,16 +144,24 @@
       "title": "Seguridad",
       "items": [
         {
-          "title": "¿Qué es la resistencia a ASIC? ¿Por qué es importante?",
-          "content": "**Los ASIC** son computadoras especiales creadas para hacer solo un trabajo, contrario a las computadoras normales. Esto hace que los ASIC sean muy eficientes para minar pero muy costosos.\n\nEsto lleva a que pocas entidades posean una gran cantidad del hashrate, lo cual es una amenaza seria para la seguridad de la red.\n\n**Solución de Monero:**\n\nMonero soluciona esto siendo resistente a ASIC usando el algoritmo RandomX que reduce fuertemente la eficiencia de los ASIC.\n\nLos mineros pueden usar hardware de consumo común, lo que les permite competir de manera justa. La red de Monero actualmente está protegida por miles de mineros usando computadoras 'regulares'.\n"
+          "title": "¿Qué es la resistencia ASIC y por qué es importante?",
+          "content": "La resistencia ASIC significa que el hardware de minería especializado (ASICs) no tiene una gran ventaja sobre el hardware de consumo (CPUs/GPUs). Esto ayuda a mantener la minería más descentralizada y accesible para más personas.\n\nMonero logra resistencia ASIC a través del algoritmo de prueba de trabajo @RandomX, optimizado para CPUs de propósito general."
         },
         {
-          "title": "¿Hay vulnerabilidades conocidas en Monero?",
-          "content": "La comunidad de Monero ha creado una serie de videos llamada **'Breaking Monero'**, donde se exploran y discuten posibles vulnerabilidades de Monero.\n\nHay 14 videos, cada uno explorando un tema diferente.\n\nConsulta la lista de reproducción en:\n\n- YouTube\n- Spotify (como podcast)\n"
+          "title": "Si todo está encriptado, ¿cómo sabemos que las monedas no se crean de la nada?",
+          "content": "Los montos de monedas recién minadas son públicos. Cada transacción incluye pruebas de que sus entradas y salidas ocultas se equilibran, de acuerdo con las reglas. Si alguien intentara crear monedas extra, las ecuaciones no funcionarían y los nodos rechazarían el bloque."
         },
         {
-          "title": "¿Por qué mi antivirus/firewall marca el software de Monero como malware?",
-          "content": "Después de haber descargado el software de Monero (tanto GUI como CLI), tu antivirus o firewall puede marcar los ejecutables como malware.\n\n**¿Por qué sucede esto?**\n\nEsto probablemente sucede debido al minero integrado, que se usa para minar y para la verificación de bloques. Algunos antivirus pueden considerar erróneamente el minero como software peligroso.\n\n**Qué hacer:**\n\n1. Asegúrate de que el software que descargaste sea legítimo\n2. Agrega una excepción para él en tu antivirus, para que no sea eliminado o bloqueado\n"
+          "title": "¿Es Monero resistente a la computación cuántica?",
+          "content": "Parcialmente. La privacidad de transacciones en Monero es resistente a la computación cuántica, pero la criptografía de clave pública/privada que controla la propiedad no lo es.\n\nEsto es cierto para cualquier blockchain que use criptografía de curva elíptica. Las computadoras cuánticas futuras podrían potencialmente romper estas claves, por lo que se necesitarán actualizaciones a medida que se desarrollen estándares resistentes a la computación cuántica."
+        },
+        {
+          "title": "¿Es segura la criptografía de Monero?",
+          "content": "Monero siempre ha favorecido esquemas criptográficos establecidos, rigurosamente estudiados. El protocolo actualmente usa:\n 1. @Pedersen-Commitments + @Bulletproofs para montos de transacciones confidenciales\n 2. @Curve-Trees para probar que una salida gastada pertenece a un remitente sin revelarlo\n 3. @Stealth-addresses para encriptar y desvincular información del receptor en cadena"
+        },
+        {
+          "title": "¿Por qué mi antivirus/firewall piensa que Monero es malware?",
+          "content": "Después de descargar el software de Monero, tu antivirus o firewall pueden marcar los ejecutables como malware.\n\n**¿Por qué sucede esto?**\n\nEsto probablemente sucede debido al minero integrado, que se usa para minería y verificación de bloques. Algunos antivirus pueden erróneamente considerar el minero como software peligroso.\n\n**¿Qué hacer:**\n\n1. Asegúrate de que el software que descargaste es legítimo\n2. Agrega una excepción para él en tu antivirus, para que no sea removido o bloqueado"
         }
       ]
     },
@@ -161,28 +169,24 @@
       "title": "Billeteras",
       "items": [
         {
-          "title": "¿Cuál es la diferencia entre una billetera ligera y una normal?",
-          "content": "**Billetera ligera:**\n\nDas tu clave de vista a un nodo, que escanea la blockchain y busca transacciones entrantes a tu cuenta en tu nombre.\n\n**Lo que sabe el nodo:**\n\n- Cuándo recibes dinero\n\n**Lo que el nodo NO sabe:**\n\n- Cuánto recibes\n- De quién lo recibiste\n- A quién estás enviando dinero\n\nDependiendo de tu software de billetera, puedes usar un nodo que controles para evitar fugas de privacidad.\n\n**Para más privacidad:** Usa una billetera normal, que puede usarse con tu propio nodo.\n"
+          "title": "¿Qué tipos de billeteras de Monero hay?",
+          "content": "Billeteras de sincronización local: Estas escanean la blockchain en tu dispositivo, dándote la mejor privacidad, pero requieren más almacenamiento y ancho de banda.\n\nBilleteras de sincronización remota: Estas usan un servidor remoto para escanear la blockchain por ti, reduciendo necesidades de recursos, pero a costa de algo de privacidad."
         },
         {
-          "title": "¿Qué billetera debo usar?",
-          "content": "Hay múltiples billeteras disponibles para una gran cantidad de plataformas. En el sitio web de Monero encontrarás las billeteras lanzadas por el Equipo Central (GUI y CLI) y una lista de billeteras de terceros ampliamente confiables y de código abierto para escritorio y móvil."
+          "title": "¿Qué billetera debería usar?",
+          "content": "En la página de Descargas encontrarás las billeteras lanzadas por Monero Core, así como billeteras de código abierto de desarrolladores de la comunidad. Elige la que se ajuste a tus necesidades y comodidad técnica."
         },
         {
-          "title": "No puedo ver mis fondos. ¿Acabo de perder todo mi Monero?",
-          "content": "**Probablemente no.**\n\nEs muy difícil simplemente 'perder' tus monedas, ya que técnicamente no están en ningún lado. Tus monedas 'viven' en la blockchain y están vinculadas a tu cuenta a través de un sistema de claves públicas y privadas asegurado por criptografía.\n\nPor eso, si no ves tus fondos, probablemente sea debido a un problema técnico.\n\nEcha un vistazo a la sección **Recursos y Ayuda** para ver una lista de recursos útiles que te ayudarán a identificar y solucionar tu problema.\n"
+          "title": "¿Son seguras las billeteras de sincronización remota?",
+          "content": "Las billeteras de sincronización remota usan tu clave de vista privada para escanear la blockchain en tu nombre. Esto significa que el servicio de billetera puede ver tu historial de transacciones, pero no puede gastar tus fondos. Es conveniencia a costa de privacidad."
         },
         {
-          "title": "No he tocado mi Monero en mucho tiempo, ¿perdí mis monedas como consecuencia de un hard fork?",
-          "content": "**No te preocupes, tus monedas están seguras.**\n\nPara poder gastarlas solo tienes que:\n\n1. Descargar y ejecutar el software de Monero más reciente\n2. Usar la semilla mnemónica que guardaste previamente para restaurar tu billetera en cualquier momento\n\n**Importante:** Los hard forks en Monero son programados y no polémicos. Lo que significa que no se crea ninguna moneda nueva.\n"
+          "title": "¿Cuál es la cosa más importante para respaldar?",
+          "content": "Tu frase semilla. Es la raíz de tus direcciones y fondos. Los dispositivos pueden ser reemplazados. Si mantienes tu frase semilla segura y offline, mantienes tu dinero."
         },
         {
-          "title": "¿Por qué mi billetera tarda tanto en sincronizarse?",
-          "content": "**Nodo completo local:**\n\nNecesitas copiar toda la blockchain en tu computadora. Esto puede tomar mucho tiempo, especialmente en un disco duro antiguo o con una conexión a Internet lenta.\n\n**Nodo remoto:**\n\nTu computadora aún necesita solicitar una copia de todas las salidas, lo que puede tomar varias horas.\n\n**Ten paciencia.** Si deseas sacrificar algo de privacidad por tiempos de sincronización más rápidos, considera usar un nodo remoto o una billetera ligera en su lugar.\n"
-        },
-        {
-          "title": "¿Por qué mi billetera necesita ser escaneada cada vez que la abro?",
-          "content": "Porque se han registrado nuevas transacciones en la blockchain desde la última vez que abriste tu billetera, que necesita escanearlas todas para asegurarse de que ninguna de esas transacciones sea tuya.\n\n**Alternativa:** Este proceso no es necesario en una billetera estilo mymonero (openmonero), donde un servidor central (que podría ser gestionado por ti) hace este trabajo por ti.\n"
+          "title": "¿Qué pasa si mi teléfono o computadora se pierde o es robado?",
+          "content": "Si tu semilla está respaldada y tu dispositivo está bloqueado, puedes restaurar tu billetera en un dispositivo nuevo y mover tus fondos. Si un atacante obtiene tanto tu dispositivo desbloqueado como tu semilla, pueden gastar tus monedas. Trata tu semilla como las llaves de una bóveda."
         }
       ]
     },
@@ -190,35 +194,35 @@
       "title": "Economía",
       "items": [
         {
-          "title": "¿Cómo tiene valor Monero?",
-          "content": "Monero tiene valor porque las personas están dispuestas a comprarlo. Si nadie está dispuesto a comprar Monero, entonces no tendrá ningún valor. El precio de Monero aumenta si la demanda supera la oferta, y disminuye si la oferta supera la demanda."
+          "title": "¿Cuál es el suministro total de Monero?",
+          "content": "Monero tiene una fase de emisión principal y luego una emisión de cola pequeña continua de 0.6 XMR por bloque para recompensar mineros y asegurar la red. El resultado es un suministro predecible, aumentando suavemente hacia una tasa de crecimiento estable."
         },
         {
-          "title": "¿Qué es la fungibilidad y por qué es importante?",
-          "content": "**La fungibilidad** es una propiedad simple del dinero tal que no hay diferencias entre dos cantidades del mismo valor.\n\n**Ejemplo:**\n\nSi dos personas intercambiaran un billete de 10 y dos de 5, entonces nadie perdería.\n\n**El Problema:**\n\nSin embargo, supongamos que todos saben que el billete de 10 se usó anteriormente en un ataque de ransomware. ¿La otra persona aún hará el intercambio? Probablemente no.\n\nEsto es un problema, ya que el receptor del dinero necesita verificar constantemente el dinero que está recibiendo para no terminar con monedas contaminadas.\n\n**Monero es fungible**, lo que significa que las personas no necesitan hacer este esfuerzo.\n"
+          "title": "¿Qué es una emisión de cola y por qué se necesita?",
+          "content": "La emisión de cola es una recompensa de bloque constante que nunca llega a cero. Evita un futuro donde los mineros dependan solo de tarifas y sean tentados a favorecer pagadores grandes visibles o censurar usuarios pequeños. Una recompensa pequeña permanente ayuda a mantener la seguridad honesta y descentralizada."
         },
         {
-          "title": "Si Monero es tan privado, ¿cómo sabemos que no se están creando de la nada?",
-          "content": "En Monero, cada salida de transacción está asociada de manera única con una **imagen de clave** que solo puede ser generada por el titular de esa salida.\n\nLas imágenes de clave que se usan más de una vez son rechazadas por los mineros como gastos dobles.\n\nTambién podemos saber que las cantidades de las transacciones son válidas aunque los valores estén encriptados usando **compromisos de Pedersen**.\n\nEsto significa que los observadores pueden hacer cálculos sobre los compromisos para determinar que no se creó Monero de la nada, sin poder ver las cantidades reales.\n"
+          "title": "¿La emisión de cola = inflación interminable?",
+          "content": "La emisión de cola es fija en términos absolutos, por lo que con el tiempo se vuelve una porción cada vez más pequeña del suministro existente.\n\n A partir de 2025, la inflación anual de Monero es 0.85%, tendiendo a cero. \n\nEl objetivo no es cero monedas nuevas, sino una tasa de inflación baja estable que pueda apoyar la seguridad de la red a largo plazo."
         },
         {
-          "title": "¿Cuál es el suministro máximo de Monero?",
-          "content": "Monero tiene una **tasa de emisión fija**, no un suministro máximo establecido.\n\n**Detalles de la Emisión de Cola:**\n\n- Comenzó en el bloque 2641623, el 9 de junio de 2022 a las 00:29 UTC\n- Permanecerá permanentemente en 0.3 XMR por minuto (0.6 XMR por bloque)\n- Aproximadamente 1% de inflación para el primer año\n- Se acercará a 0% de inflación en años futuros\n\nEsta emisión de cola permite incentivos permanentes para asegurar Monero, incluso en el futuro lejano, mientras mantiene la inflación en un porcentaje muy bajo.\n"
+          "title": "¿Hubo un premine o recompensa especial para fundadores?",
+          "content": "No. Monero se lanzó de manera justa, sin premine, sin impuesto de fundador, y sin asignación para inversores tempranos. Cada unidad en circulación fue o será minada bajo las mismas reglas."
         },
         {
-          "title": "¿Por qué Monero no tiene un suministro máximo?",
-          "content": "Los mineros procesan transacciones en la red de Monero al minar bloques.\n\n**Recompensa de Bloque:**\n\n- El minero de un bloque recibe la recompensa de bloque constante de 0.6 XMR\n- Más las tarifas de transacción\n\n**¿Por qué tener una recompensa de bloque?**\n\nMonero tiene la recompensa de bloque en lugar de depender únicamente de las tarifas de transacción para:\n\n- Dar incentivo a los mineros para seguir asegurando la red con su hashrate\n- Mantener las tarifas de transacción bajas\n\nLa emisión de cola causada por esta recompensa de bloque constante crea una tasa de inflación de menos del 1% que tiende hacia 0% con el tiempo.\n"
+          "title": "¿Cómo se distribuyen las nuevas monedas de Monero?",
+          "content": "Las nuevas monedas son ganadas por mineros que invierten energía y hardware para asegurar la cadena. El diseño de prueba de trabajo apunta a limitar ventajas de hardware especializado y mantener la minería accesible para más personas."
         }
       ]
     },
     "additionalResources": {
       "userGuides": {
-        "title": "Guías de Usuario",
-        "description": "Encuentra guías detalladas sobre cómo usar Monero, desde configurar tu billetera hasta técnicas avanzadas de privacidad.",
+        "title": "Guías de usuario",
+        "description": "Encuentra guías detalladas sobre cómo usar Monero, desde configurar tu billetera hasta técnicas de privacidad avanzadas.",
         "ctaLabel": "Ver las guías"
       },
       "devGuides": {
-        "title": "Guías para Desarrolladores",
+        "title": "Guías de desarrollador",
         "description": "Explora documentación técnica y guías para desarrolladores interesados en contribuir a Monero o construir sobre su tecnología.",
         "ctaLabel": "Ver las guías"
       },
@@ -234,9 +238,16 @@
       },
       "monerohow": {
         "title": "Monero.how",
-        "description": "Recursos antiguos y conocidos con guías y tutoriales anteriores",
+        "description": "Recursos antiguos y conocidos con guías y howtos antiguos",
         "ctaLabel": "Visitar"
       }
     }
+  },
+  "moneropedia": {
+    "pageTitle": "Moneropedia | Monero - criptomoneda segura, privada, no rastreable.",
+    "heroTitle": "Moneropedia",
+    "heroSubtitle": "Glosario completo de términos de Monero y blockchain.",
+    "searchPlaceholder": "Buscar en Moneropedia...",
+    "readMore": "Leer artículo completo"
   }
 }

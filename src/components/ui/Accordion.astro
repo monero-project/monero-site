@@ -3,7 +3,7 @@ import "node:crypto";
 
 import MaskIcon from "./MaskIcon.astro";
 import dropdownIcon from "@/assets/icons/mask/dropdown-caret.avif?url";
-import safeMarkdown from "@/utils/safeMarkdown";
+import DOMPurify from "isomorphic-dompurify";
 
 export interface AccordionItem {
   title: string;
@@ -36,7 +36,7 @@ const accordionId = crypto.randomUUID();
           </summary>
           <div
             class="accordion-content"
-            set:html={safeMarkdown.parse(item.content)}
+            set:html={DOMPurify.sanitize(item.content)}
           />
         </details>
       );

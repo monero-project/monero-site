@@ -49,40 +49,36 @@
       "title": "Basics",
       "items": [
         {
-          "title": "What's the meaning of [technical word]?",
-          "content": "The terminology used in Monero can be quite complex, for this reason we have the Moneropedia, a comprehensive list of terms that you often see and their explanation.\n\nIf you don't know what a word means or you would like to have more info about it, just visit the Moneropedia.\n\nSome examples of often searched terms are:\n\n- Node\n- Fungibility\n- View key\n- Pruning\n"
+          "title": "What is Monero?",
+          "content": "Monero is uncompromising digital cash. You can pay and get paid without turning your financial life into a public record, while the network still enforces the rules for everyone."
         },
         {
-          "title": "How can I contribute?",
-          "content": "Monero is an open source community project. Everything is built by volunteers or community-funded contributors.\n\n**Contact a Workgroup:** Almost everything in Monero is managed by workgroups working on specific aspects of development.\n\n**Do what you can do best:**\n\n- Are you a designer? Create Monero related images.\n- Are you a writer? Write about Monero.\n\nThe only limit is your imagination.\n"
+          "title": "Is Monero a mixer?",
+          "content": "No. Mixers take your coins, hold them, then try to hide the trail.\n\nMonero never takes custody of your money. Privacy is built into the protocol itself for every transaction, all the time."
         },
         {
-          "title": "How can I get Monero?",
-          "content": "You can buy Monero from an exchange or from an individual.\n\n- **Exchanges:** The most common way to buy Monero; there are compliant exchanges in most jurisdictions.\n- **Wallets:** Some wallets include functionality to easily buy Monero with fiat or other cryptocurrencies.\n- **Mining:** Alternatively, you can try mining Monero to get coins from the block reward.\n"
+          "title": "Does Monero use encryption?",
+          "content": "Yes. Monero uses strong public key encryption and zero knowledge proofs so that transaction data is never published in plain form.\n\nOn chain you only see encrypted commitments and proofs that the rules are followed, instead of a readable payment history."
         },
         {
-          "title": "How is Monero different from Bitcoin?",
-          "content": "Monero is not based on Bitcoin. It is based on the CryptoNote protocol.\n\n**Bitcoin** is a completely transparent system, where people can see exactly how much money is being sent from one user to another.\n\n**Monero** hides this information to protect user privacy in all transactions. It also has:\n\n- Dynamic block size and dynamic fees\n- ASIC-resistant proof of work (RandomX)\n- Tail emission\n- Several other privacy-focused changes\n"
+          "title": "Is Monero legal to use?",
+          "content": "In most places, using privacy tools is legal. Monero is a neutral asset, like VPNs, locks on doors or encrypted messages. Businesses and individuals should follow their local laws, but privacy itself is not a crime."
         },
         {
-          "title": "Why is Monero called 'Monero'?",
-          "content": "Monero is an Esperanto word which means 'coin'.\n\nInitially Monero was called 'Bitmonero', which translates to 'Bitcoin' in Esperanto.\n\nAfter the community decided to fork from the original maintainer, 'bit' was dropped in favour of simply 'Monero'.\n"
+          "title": "Is Monero for criminals?",
+          "content": "Monero is for everyone. It is used by ordinary people and businesses who do not want their salaries, savings, donations or purchases permanently exposed on a public ledger.\n\nBad actors abuse every money system that exists, including banknotes and transparent blockchains."
         },
         {
-          "title": "Is it true that Monero has a hard fork every 6 months?",
-          "content": "Monero used to have 2 network upgrades (hard forks) a year, but this is not the case anymore.\n\nThe dev community and the Core Team agree that the protocol is stable and mature enough and biannual hard forks are not necessary anymore. The new algorithm RandomX is ensuring long term ASIC-resistance, so regular changes are not needed anymore.\n\nNetwork upgrades will still be used to add important protocol improvements and consensus changes, but at a lower and less strict frequency (every 9-12 months).\n\n**Note:** The last hard fork was on August 13th 2022.\n"
+          "title": "Can Monero be banned or shut down?",
+          "content": "No. Monero is a decentralized network of nodes and users around the world. Nobody can turn off the Monero protocol or prevent people from using it."
         },
         {
-          "title": "Are there videos I can watch to learn about Monero?",
-          "content": "The community has created a vast amount of informative content like articles and videos.\n\nOn the Monero website there are several videos that explain the fundamentals:\n\n- Introduction to Monero\n- The Essentials\n- Stealth Addresses\n- Ring Signatures\n- Ring Confidential Transactions\n- Tail Emission\n- Node\n- RandomX\n- Full-Chain Membership Proofs\n"
+          "title": "How does Monero scale?",
+          "content": "Monero uses dynamic block sizes and adaptive fees to handle changes in demand. When more people use Monero, blocks grow to accommodate more transactions, and fees adjust to keep things running smoothly."
         },
         {
-          "title": "Does Monero have a block size limit?",
-          "content": "No, Monero does not have a hard block size limit. Instead, the block size can increase or decrease over time based on demand. It is capped at a certain growth rate to prevent outrageous growth."
-        },
-        {
-          "title": "Is Monero a mixer or mixing service?",
-          "content": "No. Monero uses a completely non-interactive, non-custodial, and automatic process to create private transactions. By contrast for mixing services, users opt-in to participate."
+          "title": "Who runs Monero?",
+          "content": "Monero is a decentralized project, developed by it's global community of cryptographers and developers. There is no central company or authority in charge of Monero.\n\nThe Monero Project is supported by donations from the community, and many contributors work on it voluntarily.\n\nIf you want to get involved, visit the Workgroups page for more information."
         }
       ]
     },
@@ -90,36 +86,24 @@
       "title": "Nodes",
       "items": [
         {
-          "title": "Can I manually import the blockchain?",
-          "content": "Yes, you can, but you probably shouldn't.\n\nImporting an external blockchain is very resource intensive and forces you to trust the entity providing you with the blockchain.\n\nIt's usually faster to download it the normal way: running a node and letting it synchronize with the other nodes in the network.\n\n**Note:** If you are a Linux user, you can use the tool `monero-blockchain-import`, which is included in the archive when you download the GUI or CLI wallets.\n"
+          "title": "Do I need to run my own node?",
+          "content": "Running your own node gives you more control and independence from third parties, improves your sender privacy, and helps support the network."
         },
         {
-          "title": "How can I connect my node via Tor?",
-          "content": "Support for Tor is still in its infancies, but it's already possible to natively send transactions through the network and to run a Monero daemon on the Tor network. Better Tor and I2P integrations are in progress."
+          "title": "Can running a Monero node get me in trouble?",
+          "content": "Running a personal node is the safest way to interact with the Monero network. Your node verifies all the rules independently and does not rely on anyone else.\n\nKeep in mind that your ISP can see you are running a Monero node."
         },
         {
-          "title": "How do I decide if I should run a full node or a pruned node?",
-          "content": "**Full Node:**\n\n- Requires a considerable amount of storage\n- Could take a long time to download and verify the entire blockchain, especially on older hardware\n- Recommended if plenty of storage is available\n\n**Pruned Node:**\n\n- Recommended if you have limited storage\n- Only stores 1/8th of unnecessary blockchain data while keeping the full transaction history\n- Still greatly contributes to the network and improves your privacy\n"
+          "title": "What are the hardware requirements for running a Monero node?",
+          "content": "A Monero full node requires at least 2 GB of RAM, 500 GB of free disk space, and a broadband internet connection with good upload and download speeds. An SSD is recommended for better performance."
         },
         {
-          "title": "How big is the Monero blockchain?",
-          "content": "The Monero blockchain is always growing so there is no fixed size.\n\nAs of 2024:\n\n- **Full blockchain:** ~225GB\n- **Pruned blockchain:** ~86GB\n\nCheck out the Moneropedia entry on pruning to learn the difference between a full and a pruned blockchain.\n"
+          "title": "Can I run a Monero node without downloading the full chain?",
+          "content": "Yes. You can run a pruned node, which stores only a portion of the blockchain data, reducing disk space requirements while still validating transactions and blocks."
         },
         {
-          "title": "Why does the blockchain need so much space?",
-          "content": "When you download the blockchain, you are downloading the entire history of the transactions that happened in the Monero network since it was created.\n\nThe transactions and the related data are heavy and the entire history must be kept by every node to ensure it's the same for everybody.\n\n**Pruning a blockchain:**\n\n- Allows you to run a node which keeps only 1/8 of not strictly necessary blockchain data\n- Results in a blockchain 2/3 smaller than a full one\n"
-        },
-        {
-          "title": "Can I avoid downloading the entire blockchain?",
-          "content": "Yes. You don't need to download the blockchain to transact on the network.\n\nYou can connect to a **remote node**, which stores the blockchain for you. All the most common wallets (including GUI and CLI) allow you to use remote nodes to transact on the network.\n\nThere are multiple ways to take advantage of this functionality. For example, GUI and CLI offer a `bootstrap node` feature, which allows people to download their own blockchain while using a remote node to immediately use the network.\n"
-        },
-        {
-          "title": "Is it dangerous to run a personal node?",
-          "content": "Running a personal node is the safest way to interact with the Monero network, because you are in full control and you don't need to rely on third parties. From a general point of view running a node is not dangerous, but keep in mind that your ISP can see you are running a Monero node."
-        },
-        {
-          "title": "Is it dangerous to use a remote node? What data can a node operator get from me?",
-          "content": "It's always advisable, especially for privacy-conscious users, to use a personal node when transacting on the network to achieve the highest rate of privacy.<br><br>Some people for convenience prefer to use remote nodes. The convenience of not having to deal with a personal copy of the blockchain comes at a cost: <strong>lessened privacy</strong>.<br><br><strong>What a remote node operator can see:</strong><ul><li>From what IP address a transaction comes from (even if they cannot see the recipient nor the amount)</li><li>In some extreme cases, can make attacks able to reduce your privacy</li></ul><br><strong>Mitigation:</strong> Some dangers can be mitigated by using remote nodes on the Tor or I2P networks or using a VPN."
+          "title": "How does using a third-party node affect my privacy?",
+          "content": "Remote nodes can see that you are making some Monero transaction from your IP address - but they are unable to observe the transaction details, as it is encrypted on your device.\n\nTo improve privacy, consider using Tor or a VPN when connecting to remote nodes."
         }
       ]
     },
@@ -127,16 +111,32 @@
       "title": "Privacy",
       "items": [
         {
-          "title": "How is Monero's privacy different from other coins?",
-          "content": "Monero uses three different privacy technologies:\n\n- **Ring signatures:** Hide the sender\n- **Ring confidential transactions (RingCT):** Hide the amount\n- **Stealth addresses:** Hide the receiver\n\nAll transactions on the network are private by mandate; there is no way to accidentally send a transparent transaction.\n\nThis feature is exclusive to Monero. You do not need to trust anyone else with your privacy.\n"
+          "title": "How does Monero keep transactions private?",
+          "content": "Monero hides three things at once:\n\n1. **Amounts:** Encrypted so outsiders cannot see how much is being sent.\n2. **Receivers:** Encrypted using one-time stealth addresses that only the receiver can recognize.\n3. **Senders:** Protected by zero-knowledge proofs that show a spend is valid, without revealing which coin is spent."
         },
         {
-          "title": "Is Monero magic and protects my privacy no matter what I do?",
-          "content": "**Monero is not magic.**\n\nYou still need to be careful:\n\n- If you give your name and address to another party, they will not magically forget it\n- If you give out your secret keys, others will know what you've done\n- If you get compromised, others will be able to keylog you\n- If you use a weak password, others will be able to brute force your keys file\n- If you backup your seed in the cloud, you'll be poorer soon\n"
+          "title": "Can chain analysis break Monero's privacy today?",
+          "content": "Blockchain analytics can see that some transaction occured, but it is impossible to link transactions to specific users or addresses."
         },
         {
-          "title": "Is Monero 100% anonymous?",
-          "content": "There is no such thing as 100% anonymous.\n\n**Limitations:**\n\n- Your anonymity set is the set of people using Monero. Some people don't use Monero.\n- Monero may also have bugs\n- Ways may exist to infer some information through Monero's privacy layers, either now or later\n- Attacks only get better\n\nIf you wear a seatbelt, you can still die in a car crash. Use common sense, prudence and defense in depth.\n"
+          "title": "Is Monero perfectly anonymous?",
+          "content": "No system is perfect. Monero hides what happens on chain. Your operational security, network habits, KYC records, devices, and your own behavior still matter."
+        },
+        {
+          "title": "Can I use Monero and still follow tax and reporting rules?",
+          "content": "Yes. You can export your transaction history from your wallet, or share selected data when needed. Privacy means you control who sees your records. Monero does not stop you from disclosing them if you choose to."
+        },
+        {
+          "title": "What is a view key and how does it help with compliance?",
+          "content": "A view key lets someone see your incoming and outgoing transactions for a given account, without them being able to spend your funds.\n\n You can share it with an accountant or auditor to reconcile your books while keeping control over your money."
+        },
+        {
+          "title": "How do I prove that I paid someone without exposing my whole wallet?",
+          "content": "Your wallet can generate a proof that a specific payment was made to a specific address, or that you control a specific output, without revealing your full transaction history."
+        },
+        {
+          "title": "What if I no longer want a service to see my activity after sharing my view key?",
+          "content": "You can move to a fresh account with new view keys. Old keys will only see the history you already shared. Future activity returns to being visible only to you unless you decide otherwise."
         }
       ]
     },
@@ -144,16 +144,24 @@
       "title": "Security",
       "items": [
         {
-          "title": "What is ASIC resistance? Why is it important?",
-          "content": "**ASICs** are special computers created to do only one job, contrary to normal computers. This makes ASICs very efficient for mining but very expensive.\n\nThis leads to few entities owning a big amount of the hashrate, which is a serious threat to network security.\n\n**Monero's Solution:**\n\nMonero fixes this by being ASIC-resistant using the RandomX algorithm that strongly reduces the efficiency of ASICs.\n\nMiners can use common consumer hardware, which allows them to compete fairly. The Monero network is currently protected by thousands of miners using 'regular' computers.\n"
+          "title": "What is ASIC resistance and why is it important?",
+          "content": "ASIC resistance means that specialized mining hardware (ASICs) do not have a big advantage over consumer hardware (CPUs/GPUs). This helps keep mining more decentralized and accessible to more people.\n\nMonero achieves ASIC resistance through the @RandomX proof-of-work algorithm, which is optimized for general-purpose CPUs."
         },
         {
-          "title": "Are there known vulnerabilities in Monero?",
-          "content": "The Monero community has created a series of videos called **'Breaking Monero'**, where potential Monero vulnerabilities are explored and discussed.\n\nThere are 14 videos, with each exploring a different subject.\n\nCheck out the playlist on:\n\n- YouTube\n- Spotify (as a podcast)\n"
+          "title": "If everything is encrypted, how do we know coins are not created out of thin air?",
+          "content": "The amounts of newly mined coins are public. Every transaction includes proofs that its hidden inputs and outputs balance out, according to the rules. If someone tried to create extra coins, the equations would not work and nodes would reject the block."
         },
         {
-          "title": "Why is my antivirus/firewall flagging the Monero software as malware?",
-          "content": "After you have downloaded the Monero software (GUI and CLI alike), your antivirus or firewall may flag the executables as malware.\n\n**Why does this happen?**\n\nThis likely happens because of the integrated miner, which is used for mining and for block verification. Some antiviruses may erroneously consider the miner as dangerous software.\n\n**What to do:**\n\n1. Make sure the software you downloaded is legitimate\n2. Add an exception for it in your antivirus, so that it won't get removed or blocked\n"
+          "title": "Is Monero quantum proof?",
+          "content": "Partially. Transaction privacy in Monero is quantum resistant, but the public/private key cryptography that controls ownership is not.\n\nThis is true for any blockchain that uses elliptic curve cryptography. Future quantum computers could potentially break these keys, so upgrades will be needed as quantum-safe standards develop."
+        },
+        {
+          "title": "Is Monero's cryptography secure?",
+          "content": "Monero has always favored established, rigorously studied cryptographic schemes. The protocol currently uses:\n 1. @Pedersen-Commitments + @Bulletproofs for confidential transaction amounts\n 2. @Curve-Trees to prove that a spent output belongs to a sender without revealing it\n 3. @Stealth-addresses for encrypting and unlinking recipient information on-chain"
+        },
+        {
+          "title": "Why does my antivirus/firewall think Monero is malware?",
+          "content": "After you have downloaded the Monero software, your antivirus or firewall may flag the executables as malware.\n\n**Why does this happen?**\n\nThis likely happens because of the integrated miner, which is used for mining and for block verification. Some antiviruses may erroneously consider the miner as dangerous software.\n\n**What to do:**\n\n1. Make sure the software you downloaded is legitimate\n2. Add an exception for it in your antivirus, so that it won't get removed or blocked"
         }
       ]
     },
@@ -161,28 +169,24 @@
       "title": "Wallets",
       "items": [
         {
-          "title": "What is the difference between a lightweight and a normal wallet?",
-          "content": "**Lightweight wallet:**\n\nYou give your view key to a node, who scans the blockchain and looks for incoming transactions to your account on your behalf.\n\n**What the node knows:**\n\n- When you receive money\n\n**What the node does NOT know:**\n\n- How much you receive\n- Who you received it from\n- Who you are sending money to\n\nDepending on your wallet software, you may be able to use a node you control to avoid privacy leaks.\n\n**For more privacy:** Use a normal wallet, which can be used with your own node.\n"
+          "title": "What kinds of Monero wallets are there?",
+          "content": "Local sync wallets: These scan the blockchain on your device, giving you the best privacy, but require more storage and bandwidth.\n\nRemote sync wallets: These use a remote server to scan the blockchain for you, reducing resource needs, but at the cost of some privacy."
         },
         {
-          "title": "What wallet should I use?",
-          "content": "There are multiple wallets available for a vast number of platforms. On the Monero website you'll find the wallets released by the Core Team (GUI and CLI) and a list of widely trusted and open source third party wallets for desktop and mobile."
+          "title": "What wallet should i use?",
+          "content": "On the Downloads page you will find the wallets released by Monero Core, as well as open-source wallets from community developers. Choose the one that fits your needs and technical comfort level."
         },
         {
-          "title": "I can't see my funds. Did I just lose all my Monero?",
-          "content": "**You probably didn't.**\n\nIt's very hard to simply 'lose' your coins, since they are technically nowhere. Your coins 'live' on the blockchain and are linked to your account through a system of public and private keys secured by cryptography.\n\nThat's why if you don't see your funds, it's probably because of a technical issue.\n\nTake a look at the **Resources & Help** section for a list of useful resources that will help you identify and fix your problem.\n"
+          "title": "Are remote sync wallets safe?",
+          "content": "Remote sync wallets use your private view key to scan the blockchain on your behalf. This means the wallet service can see your transaction history, but not able to spend your funds. It is convenience at the cost of privacy."
         },
         {
-          "title": "I haven't touched my Monero in a long time, did I lose my coins as a consequence of a hard fork?",
-          "content": "**Don't worry, your coins are safe.**\n\nTo be able to spend them you only have to:\n\n1. Download and run the latest Monero software\n2. Use the mnemonic seed you previously saved to restore your wallet at any time\n\n**Important:** Hard forks in Monero are scheduled and non-contentious. Which means no new coin is created.\n"
+          "title": "What is the most important thing to back up?",
+          "content": "Your seed phrase. It is the root of your addresses and funds. Devices can be replaced. If you keep your seed phrase safe and offline, you keep your money."
         },
         {
-          "title": "Why is my wallet taking so long to sync?",
-          "content": "**Full node locally:**\n\nYou need to copy the entire blockchain to your computer. This can take a long time, especially on an old hard drive or slow internet connection.\n\n**Remote node:**\n\nYour computer still needs to request a copy of all the outputs, which can take several hours.\n\n**Be patient.** If you would like to sacrifice some privacy for faster sync times, consider using a remote node or lightweight wallet instead.\n"
-        },
-        {
-          "title": "Why does my wallet need to be scanned everytime I open it?",
-          "content": "Because new transactions have been recorded on the blockchain from the last time you opened your wallet, which needs to scan all of them to make sure none of those transactions is yours.\n\n**Alternative:** This process is not necessary in a mymonero-style (openmonero) wallet, where a central server (which could be managed by you) does this work for you.\n"
+          "title": "What happens if my phone or computer is lost or stolen?",
+          "content": "If your seed is backed up and your device is locked, you can restore your wallet on a new device and move your funds. If an attacker gets both your unlocked device and your seed, they can spend your coins. Treat your seed like the keys to a vault."
         }
       ]
     },
@@ -190,24 +194,24 @@
       "title": "Economics",
       "items": [
         {
-          "title": "How does Monero have value?",
-          "content": "Monero has value because people are willing to buy it. If no one is willing to buy Monero, then it will not have any value. Monero's price increases if demand exceeds supply, and it decreases if supply exceeds demand."
+          "title": "What is the total supply of Monero?",
+          "content": "Monero has a main emission phase and then a small ongoing tail emission of 0.6 XMR per block to reward miners and secure the network. The result is a predictable, gently increasing supply that trends toward a stable growth rate."
         },
         {
-          "title": "What is fungibility, and why is it important?",
-          "content": "**Fungibility** is a simple property of money such that there are no differences between two amounts of the same value.\n\n**Example:**\n\nIf two people exchanged a 10 and two 5's, then no one would lose out.\n\n**The Problem:**\n\nHowever, let's suppose that everyone knows the 10 was previously used in a ransomware attack. Is the other person still going to make the trade? Probably not.\n\nThis is a problem, since the receiver of money needs to constantly check the money they are receiving to not end up with tainted coins.\n\n**Monero is fungible**, which means people do not need to go through this effort.\n"
+          "title": "What is a tail emission and why is it needed?",
+          "content": "Tail emission is a constant block reward that never goes to zero. It avoids a future where miners rely only on fees and are tempted to favor large, visible payers or censor small users. A small, permanent reward helps keep security honest and decentralized."
         },
         {
-          "title": "If Monero is so private how do we know they're not being created out of thin air?",
-          "content": "In Monero, every transaction output is uniquely associated with a **key image** that can only be generated by the holder of that output.\n\nKey images that are used more than once are rejected by the miners as double-spends.\n\nWe can also know that transaction amounts are valid even though the values are encrypted using **Pedersen commitments**.\n\nThis means observers can do math on the commitments to determine that no Monero was created out of thin air, without being able to see the actual amounts.\n"
+          "title": "Does tail emission = endless inflation?",
+          "content": "Tail emission is fixed in absolute terms, so over time it becomes a smaller and smaller percentage of the existing supply.\n\n As of 2025, the annual inflation of Monero is 0.85%, trending toward zero. \n\nThe goal is not zero new coins, but a steady, low inflation rate that can support long-term network security."
         },
         {
-          "title": "What is Monero's maximum supply?",
-          "content": "Monero has a **fixed emission rate**, not a set maximum supply.\n\n**Tail Emission Details:**\n\n- Started at block 2641623, on 2022-06-09 at 00:29 UTC\n- Will permanently remain at 0.3 XMR per minute (0.6 XMR per block)\n- Approximately 1% inflation for the first year\n- Will approach 0% inflation in future years\n\nThis tail emission allows for permanent incentives to secure Monero, even in the far future, while keeping inflation at a very low percent.\n"
+          "title": "Was there a premine or special founder reward?",
+          "content": "No. Monero launched in a fair manner, with no premine, no founder tax, and no early investor carve-out. Every unit in circulation was or will be mined under the same rules."
         },
         {
-          "title": "Why does Monero not have a maximum supply?",
-          "content": "Miners process transactions on the Monero network by mining blocks.\n\n**Block Reward:**\n\n- The miner of a block is paid the constant block reward of 0.6 XMR\n- Plus transaction fees\n\n**Why have a block reward?**\n\nMonero has the block reward rather than relying solely on transaction fees to:\n\n- Give miners incentive to keep securing the network with their hashrate\n- Keep transaction fees low\n\nThe tail emission caused by this constant block reward creates an inflation rate of less than 1% which trends towards 0% over time.\n"
+          "title": "How are new Monero coins distributed?",
+          "content": "New coins are earned by miners who invest energy and hardware to secure the chain. The proof-of-work design aims to limit advantages from specialized hardware and keep mining accessible to more people."
         }
       ]
     },

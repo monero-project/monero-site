@@ -4,79 +4,81 @@
       "titleMonero": "Monero",
       "titleMeans": "Signifie",
       "titleMoney": "Argent",
-      "lead": "Cryptomonnaie privée et décentralisée qui garde vos finances confidentielles et sécurisées.",
+      "lead": "Cryptomonnaie privée et décentralisée qui maintient vos finances confidentielles et sécurisées.",
       "getStarted": "Commencer",
       "learnMore": "En savoir plus"
     },
-    "pageTitle": "Accueil | Monero - cryptomonnaie sécurisée, privée et intracable.",
+    "pageTitle": "Accueil | Monero - cryptomonnaie sécurisée, privée, non traçable.",
     "aboutTitle": "À propos de Monero",
-    "aboutDescription": "Regardez cette vidéo pour comprendre les bases du fonctionnement de Monero. Pour une compréhension plus approfondie de la technologie derrière Monero, regardez d'autres vidéos explicatives.",
+    "aboutDescription": "Regardez cette vidéo pour comprendre les bases du fonctionnement de Monero. Pour une compréhension plus approfondie de la technologie derrière Monero, regardez plus de vidéos explicatives.",
     "main": "Confidentialité",
-    "privacyText": "Monero respecte la confidentialité en offrant une anonymité totale et des transactions non traçables aux utilisateurs.",
+    "privacyText": "Monero respecte la confidentialité en fournissant un anonymat complet et des transactions non traçables pour les utilisateurs.",
     "decentralized": "Décentralisé",
     "decentralizedText": "Avec plus de 3300 nœuds, Monero est l'une des cryptomonnaies les plus décentralisées qui existent.",
     "communityDriven": "Piloté par la communauté",
     "communityText": "Monero est développé et évolué par sa communauté, plus de 500 développeurs ont contribué au projet.",
     "startTitle": "Commencer à utiliser Monero",
     "startDescription": "Suivez ces étapes pour commencer avec Monero. Si vous êtes nouveau dans la crypto, nous recommandons d'apprendre les mesures de sécurité de base que vous pouvez prendre pour garder vos fonds en sécurité.",
-    "getStartedAlt": "Illustration pour commencer",
+    "getStartedAlt": "Illustration de commencer",
     "step1Title": "Choisir un portefeuille",
     "step1Desc": "Pour utiliser Monero, la première chose dont vous aurez besoin est un portefeuille. Visitez notre page Téléchargements et obtenez le portefeuille qui vous convient.",
     "step1Cta": "Obtenir un portefeuille",
     "step2Title": "Obtenir des pièces",
-    "step2Desc": "Vous pouvez acquérir Monero en minant ou en travaillant en échange de Monero, mais le moyen le plus simple est d'utiliser un échange pour convertir votre argent fiduciaire en XMR.",
-    "step2Cta": "Trouver et échanger",
+    "step2Desc": "Vous pouvez acquérir Monero en minant ou en travaillant en échange de Monero, mais le moyen le plus facile est d'utiliser un exchange pour convertir votre argent fiat en XMR.",
+    "step2Cta": "Trouver un exchange",
     "step3Title": "Envoyer Monero",
-    "step3Desc": "Une fois Monero dans votre portefeuille, vous pouvez l'échanger contre des biens, des services et",
+    "step3Desc": "Une fois Monero dans votre portefeuille, vous pouvez l'échanger contre des biens, des services et d'autres monnaies, de manière privée et avec des frais très bas.",
+    "step3Cta": "Utiliser Monero",
+    "resourcesTitle": "Ressources Monero",
+    "resourcesDescription": "Explorez la base de connaissances pour tout apprendre sur Monero, des termes de base de blockchain aux mécanismes de confidentialité avancés et à la technologie.",
+    "faqTitle": "FAQ",
+    "faqDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions ne sont pas là, vous pouvez toujours demander à la communauté.",
+    "faqCta": "Trouvez votre réponse",
     "userGuidesTitle": "Guides utilisateur",
-    "userGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions n'y sont pas, vous pouvez toujours demander à la communauté.",
+    "userGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions ne sont pas là, vous pouvez toujours demander à la communauté.",
     "userGuidesCta": "Voir les guides",
     "devGuidesTitle": "Guides développeur",
-    "devGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions n'y sont pas, vous pouvez toujours demander à la communauté.",
+    "devGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions ne sont pas là, vous pouvez toujours demander à la communauté.",
     "devGuidesCta": "Voir les guides"
   },
   "faq": {
-    "pageTitle": "FAQ | Monero - cryptomonnaie sécurisée, privée et intracable.",
-    "heroTitle": "Questions Fréquentes",
+    "pageTitle": "FAQ | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+    "heroTitle": "FAQ",
     "heroSubtitle": "Trouvez des réponses à certaines des questions les plus courantes sur Monero.",
     "basics": {
       "title": "Bases",
       "items": [
         {
-          "title": "Quelle est la signification de [mot technique] ?",
-          "content": "La terminologie utilisée dans Monero peut être assez complexe, c'est pourquoi nous avons la Moneropedia, une liste complète de termes que vous voyez souvent et leur explication.\n\nSi vous ne savez pas ce qu'un mot signifie ou si vous souhaitez avoir plus d'informations à ce sujet, visitez simplement la Moneropedia.\n\nVoici quelques exemples de termes fréquemment recherchés :\n\n- Nœud\n- Fongibilité\n- Clé de visualisation\n- Élagage\n"
+          "title": "Qu'est-ce que Monero ?",
+          "content": "Monero est de l'argent numérique inébranlable. Vous pouvez payer et être payé sans transformer votre vie financière en un enregistrement public, tandis que le réseau applique encore les règles pour tout le monde."
         },
         {
-          "title": "Comment puis-je contribuer ?",
-          "content": "Monero est un projet communautaire open source. Tout est construit par des bénévoles ou des contributeurs financés par la communauté.\n\n**Contactez un groupe de travail :** Presque tout dans Monero est géré par des groupes de travail travaillant sur des aspects spécifiques du développement.\n\n**Faites ce que vous savez faire de mieux :**\n\n- Vous êtes designer ? Créez des images liées à Monero.\n- Vous êtes écrivain ? Écrivez sur Monero.\n\nLa seule limite est votre imagination.\n"
+          "title": "Monero est-il un mélangeur ?",
+          "content": "Non. Les mélangeurs prennent vos pièces, les retiennent, puis essaient de cacher la trace.\n\nMonero ne prend jamais la garde de votre argent. La confidentialité est intégrée dans le protocole lui-même pour chaque transaction, toujours."
         },
         {
-          "title": "Comment puis-je obtenir du Monero ?",
-          "content": "Vous pouvez acheter du Monero sur une plateforme d'échange ou auprès d'un particulier.\n\n- **Plateformes d'échange :** Le moyen le plus courant d'acheter du Monero ; il existe des plateformes conformes dans la plupart des juridictions.\n- **Portefeuilles :** Certains portefeuilles incluent une fonctionnalité pour acheter facilement du Monero avec de la monnaie fiduciaire ou d'autres cryptomonnaies.\n- **Minage :** Alternativement, vous pouvez essayer de miner du Monero pour obtenir des pièces de la récompense de bloc.\n"
+          "title": "Monero utilise-t-il le chiffrement ?",
+          "content": "Oui. Monero utilise un chiffrement de clé publique fort et des preuves de connaissance zéro pour que les données de transaction ne soient jamais publiées en forme plate.\n\nSur chaîne vous ne voyez que des engagements chiffrés et des preuves que les règles sont suivies, au lieu d'un historique de paiement lisible."
         },
         {
-          "title": "En quoi Monero est-il différent de Bitcoin ?",
-          "content": "Monero n'est pas basé sur Bitcoin. Il est basé sur le protocole CryptoNote.\n\n**Bitcoin** est un système complètement transparent, où les gens peuvent voir exactement combien d'argent est envoyé d'un utilisateur à un autre.\n\n**Monero** cache cette information pour protéger la confidentialité de l'utilisateur dans toutes les transactions. Il dispose également de :\n\n- Taille de bloc dynamique et frais dynamiques\n- Preuve de travail résistante aux ASIC (RandomX)\n- Émission de queue\n- Plusieurs autres changements axés sur la confidentialité\n"
+          "title": "Est-il légal d'utiliser Monero ?",
+          "content": "Dans la plupart des endroits, utiliser des outils de confidentialité est légal. Monero est un actif neutre, comme les VPN, les serrures sur les portes ou les messages chiffrés. Les entreprises et les individus doivent suivre leurs lois locales, mais la confidentialité en elle-même n'est pas un crime."
         },
         {
-          "title": "Pourquoi Monero s'appelle-t-il 'Monero' ?",
-          "content": "Monero est un mot espéranto qui signifie 'pièce' ou 'monnaie'.\n\nInitialement, Monero s'appelait 'Bitmonero', qui se traduit par 'Bitcoin' en espéranto.\n\nAprès que la communauté a décidé de se séparer du mainteneur original, 'bit' a été abandonné en faveur de simplement 'Monero'.\n"
+          "title": "Monero est-il pour les criminels ?",
+          "content": "Monero est pour tout le monde. Il est utilisé par des personnes ordinaires et des entreprises qui ne veulent pas que leurs salaires, économies, dons ou achats soient exposés de manière permanente sur un ledger public.\n\nLes acteurs malveillants abusent de tout système d'argent qui existe, y compris les billets et les blockchains transparentes."
         },
         {
-          "title": "Est-il vrai que Monero a un hard fork tous les 6 mois ?",
-          "content": "Monero avait l'habitude d'avoir 2 mises à niveau du réseau (hard forks) par an, mais ce n'est plus le cas.\n\nLa communauté des développeurs et l'équipe principale conviennent que le protocole est suffisamment stable et mature et que les hard forks semestriels ne sont plus nécessaires. Le nouvel algorithme RandomX assure une résistance aux ASIC à long terme, donc des changements réguliers ne sont plus nécessaires.\n\nLes mises à niveau du réseau seront toujours utilisées pour ajouter des améliorations importantes du protocole et des changements de consensus, mais à une fréquence plus faible et moins stricte (tous les 9-12 mois).\n\n**Note :** Le dernier hard fork a eu lieu le 13 août 2022.\n"
+          "title": "Monero peut-il être interdit ou fermé ?",
+          "content": "Non. Monero est un réseau décentralisé de nœuds et d'utilisateurs autour du monde. Personne ne peut éteindre le protocole Monero ou empêcher les gens de l'utiliser."
         },
         {
-          "title": "Y a-t-il des vidéos que je peux regarder pour en apprendre davantage sur Monero ?",
-          "content": "La communauté a créé une grande quantité de contenu informatif comme des articles et des vidéos.\n\nSur le site web de Monero, il y a plusieurs vidéos qui expliquent les fondamentaux :\n\n- Introduction à Monero\n- Les Essentiels\n- Adresses Furtives\n- Signatures de Cercle\n- Transactions Confidentielles de Cercle\n- Émission de Queue\n- Nœud\n- RandomX\n- Preuves d'Appartenance à la Chaîne Complète\n"
+          "title": "Comment Monero évolue-t-il ?",
+          "content": "Monero utilise des tailles de bloc dynamiques et des frais adaptatifs pour gérer les changements de demande. Lorsque plus de gens utilisent Monero, les blocs grandissent pour accommoder plus de transactions, et les frais s'ajustent pour garder les choses fonctionnant en douceur."
         },
         {
-          "title": "Monero a-t-il une limite de taille de bloc ?",
-          "content": "Non, Monero n'a pas de limite de taille de bloc fixe. Au lieu de cela, la taille du bloc peut augmenter ou diminuer au fil du temps en fonction de la demande. Elle est plafonnée à un certain taux de croissance pour empêcher une croissance démesurée."
-        },
-        {
-          "title": "Monero est-il un mélangeur ou un service de mixage ?",
-          "content": "Non. Monero utilise un processus complètement non interactif, sans garde et automatique pour créer des transactions privées. En revanche, pour les services de mixage, les utilisateurs choisissent de participer."
+          "title": "Qui dirige Monero ?",
+          "content": "Monero est un projet décentralisé, développé par sa communauté mondiale de cryptographes et de développeurs. Il n'y a pas de compagnie centrale ou d'autorité en charge de Monero.\n\nLe Projet Monero est soutenu par des dons de la communauté, et beaucoup de contributeurs travaillent dessus volontairement.\n\nSi vous voulez vous impliquer, visitez la page Groupes de Travail pour plus d'informations."
         }
       ]
     },
@@ -84,36 +86,24 @@
       "title": "Nœuds",
       "items": [
         {
-          "title": "Puis-je importer manuellement la blockchain ?",
-          "content": "Oui, vous pouvez, mais vous ne devriez probablement pas.\n\nL'importation d'une blockchain externe consomme beaucoup de ressources et vous oblige à faire confiance à l'entité qui vous fournit la blockchain.\n\nIl est généralement plus rapide de la télécharger normalement : en exécutant un nœud et en le laissant se synchroniser avec les autres nœuds du réseau.\n\n**Note :** Si vous êtes un utilisateur Linux, vous pouvez utiliser l'outil `monero-blockchain-import`, qui est inclus dans l'archive lorsque vous téléchargez les portefeuilles GUI ou CLI.\n"
+          "title": "Ai-je besoin d'exécuter mon propre nœud ?",
+          "content": "Exécuter votre propre nœud vous donne plus de contrôle et d'indépendance des tiers, améliore la confidentialité de l'expéditeur, et aide à soutenir le réseau."
         },
         {
-          "title": "Comment puis-je connecter mon nœud via Tor ?",
-          "content": "Le support de Tor est encore à ses débuts, mais il est déjà possible d'envoyer nativement des transactions via le réseau et d'exécuter un daemon Monero sur le réseau Tor. De meilleures intégrations Tor et I2P sont en cours."
+          "title": "Exécuter un nœud Monero peut-il me causer des problèmes ?",
+          "content": "Exécuter un nœud personnel est la façon la plus sûre d'interagir avec le réseau Monero. Votre nœud vérifie toutes les règles de manière indépendante et ne se base sur personne d'autre.\n\nGardez à l'esprit que votre FAI peut voir que vous exécutez un nœud Monero."
         },
         {
-          "title": "Comment décider si je dois exécuter un nœud complet ou un nœud élagué ?",
-          "content": "**Nœud Complet :**\n\n- Nécessite une quantité considérable de stockage\n- Peut prendre beaucoup de temps pour télécharger et vérifier l'ensemble de la blockchain, en particulier sur du matériel ancien\n- Recommandé si beaucoup de stockage est disponible\n\n**Nœud Élagué :**\n\n- Recommandé si vous avez un stockage limité\n- Ne stocke que 1/8 des données de blockchain non nécessaires tout en conservant l'historique complet des transactions\n- Contribue encore énormément au réseau et améliore votre confidentialité\n"
+          "title": "Quelles sont les exigences matérielles pour exécuter un nœud Monero ?",
+          "content": "Un nœud complet Monero nécessite au moins 2 Go de RAM, 500 Go d'espace disque libre, et une connexion internet haut débit avec de bonnes vitesses de téléchargement et de téléversement. Un SSD est recommandé pour de meilleures performances."
         },
         {
-          "title": "Quelle est la taille de la blockchain Monero ?",
-          "content": "La blockchain Monero est toujours en croissance, il n'y a donc pas de taille fixe.\n\nEn 2024 :\n\n- **Blockchain complète :** ~225GB\n- **Blockchain élaguée :** ~86GB\n\nConsultez l'entrée Moneropedia sur l'élagage pour connaître la différence entre une blockchain complète et une blockchain élaguée.\n"
+          "title": "Puis-je exécuter un nœud Monero sans télécharger la chaîne complète ?",
+          "content": "Oui. Vous pouvez exécuter un nœud élagué, qui stocke seulement une portion des données de la blockchain, réduisant les exigences d'espace disque tout en validant encore les transactions et les blocs."
         },
         {
-          "title": "Pourquoi la blockchain nécessite-t-elle autant d'espace ?",
-          "content": "Lorsque vous téléchargez la blockchain, vous téléchargez l'intégralité de l'historique des transactions qui se sont produites sur le réseau Monero depuis sa création.\n\nLes transactions et les données associées sont lourdes et l'ensemble de l'historique doit être conservé par chaque nœud pour s'assurer qu'il est le même pour tout le monde.\n\n**Élaguer une blockchain :**\n\n- Vous permet d'exécuter un nœud qui ne conserve que 1/8 des données de blockchain non strictement nécessaires\n- Résulte en une blockchain 2/3 plus petite qu'une complète\n"
-        },
-        {
-          "title": "Puis-je éviter de télécharger l'ensemble de la blockchain ?",
-          "content": "Oui. Vous n'avez pas besoin de télécharger la blockchain pour effectuer des transactions sur le réseau.\n\nVous pouvez vous connecter à un **nœud distant**, qui stocke la blockchain pour vous. Tous les portefeuilles les plus courants (y compris GUI et CLI) vous permettent d'utiliser des nœuds distants pour effectuer des transactions sur le réseau.\n\nIl existe plusieurs façons de profiter de cette fonctionnalité. Par exemple, GUI et CLI offrent une fonctionnalité de `nœud d'amorçage`, qui permet aux gens de télécharger leur propre blockchain tout en utilisant un nœud distant pour utiliser immédiatement le réseau.\n"
-        },
-        {
-          "title": "Est-il dangereux d'exécuter un nœud personnel ?",
-          "content": "Exécuter un nœud personnel est le moyen le plus sûr d'interagir avec le réseau Monero, car vous avez le contrôle total et vous n'avez pas besoin de compter sur des tiers. D'un point de vue général, exécuter un nœud n'est pas dangereux, mais gardez à l'esprit que votre FAI peut voir que vous exécutez un nœud Monero."
-        },
-        {
-          "title": "Est-il dangereux d'utiliser un nœud distant ? Quelles données un opérateur de nœud peut-il obtenir de moi ?",
-          "content": "Il est toujours conseillé, en particulier pour les utilisateurs soucieux de la confidentialité, d'utiliser un nœud personnel lors des transactions sur le réseau pour atteindre le niveau de confidentialité le plus élevé.<br><br>Certaines personnes préfèrent par commodité utiliser des nœuds distants. La commodité de ne pas avoir à gérer une copie personnelle de la blockchain a un coût : <strong>confidentialité réduite</strong>.<br><br><strong>Ce qu'un opérateur de nœud distant peut voir :</strong><ul><li>De quelle adresse IP provient une transaction (même s'il ne peut pas voir le destinataire ni le montant)</li><li>Dans certains cas extrêmes, peut effectuer des attaques capables de réduire votre confidentialité</li></ul><br><strong>Atténuation :</strong> Certains dangers peuvent être atténués en utilisant des nœuds distants sur les réseaux Tor ou I2P ou en utilisant un VPN."
+          "title": "Comment utiliser un nœud tiers affecte-t-il ma confidentialité ?",
+          "content": "Les nœuds distants peuvent voir que vous faites une transaction Monero depuis votre adresse IP - mais ils ne peuvent pas observer les détails de la transaction, car elle est chiffrée sur votre appareil.\n\nPour améliorer la confidentialité, considérez utiliser Tor ou un VPN lors de la connexion à des nœuds distants."
         }
       ]
     },
@@ -121,16 +111,32 @@
       "title": "Confidentialité",
       "items": [
         {
-          "title": "En quoi la confidentialité de Monero est-elle différente des autres pièces ?",
-          "content": "Monero utilise trois technologies de confidentialité différentes :\n\n- **Signatures de cercle :** Cachent l'expéditeur\n- **Transactions confidentielles de cercle (RingCT) :** Cachent le montant\n- **Adresses furtives :** Cachent le destinataire\n\nToutes les transactions sur le réseau sont privées par mandat ; il n'y a aucun moyen d'envoyer accidentellement une transaction transparente.\n\nCette fonctionnalité est exclusive à Monero. Vous n'avez pas besoin de faire confiance à quelqu'un d'autre pour votre confidentialité.\n"
+          "title": "Comment Monero maintient-il les transactions privées ?",
+          "content": "Monero cache trois choses à la fois :\n\n1. **Montants :** Chiffrés pour que les étrangers ne puissent pas voir combien est envoyé.\n2. **Destinataires :** Chiffrés en utilisant des adresses furtives à usage unique que seul le destinataire peut reconnaître.\n3. **Expéditeurs :** Protégés par des preuves de connaissance zéro qui montrent qu'une dépense est valide, sans révéler quelle pièce est dépensée."
         },
         {
-          "title": "Monero est-il magique et protège-t-il ma confidentialité quoi que je fasse ?",
-          "content": "**Monero n'est pas magique.**\n\nVous devez quand même faire attention :\n\n- Si vous donnez votre nom et votre adresse à une autre partie, ils ne les oublieront pas par magie\n- Si vous donnez vos clés secrètes, d'autres sauront ce que vous avez fait\n- Si vous êtes compromis, d'autres pourront enregistrer vos frappes\n- Si vous utilisez un mot de passe faible, d'autres pourront forcer votre fichier de clés\n- Si vous sauvegardez votre graine dans le cloud, vous serez bientôt plus pauvre\n"
+          "title": "L'analyse de chaîne peut-elle briser la confidentialité de Monero aujourd'hui ?",
+          "content": "Les analyses de blockchain peuvent voir qu'une transaction s'est produite, mais il est impossible de lier les transactions à des utilisateurs ou adresses spécifiques."
         },
         {
-          "title": "Monero est-il 100% anonyme ?",
-          "content": "Il n'existe pas de 100% anonyme.\n\n**Limitations :**\n\n- Votre ensemble d'anonymat est l'ensemble des personnes qui utilisent Monero. Certaines personnes n'utilisent pas Monero.\n- Monero peut également avoir des bugs\n- Des moyens peuvent exister pour déduire certaines informations à travers les couches de confidentialité de Monero, maintenant ou plus tard\n- Les attaques ne font que s'améliorer\n\nSi vous portez une ceinture de sécurité, vous pouvez toujours mourir dans un accident de voiture. Utilisez le bon sens, la prudence et la défense en profondeur.\n"
+          "title": "Monero est-il parfaitement anonyme ?",
+          "content": "Aucun système n'est parfait. Monero cache ce qui se passe sur chaîne. Votre sécurité opérationnelle, habitudes réseau, enregistrements KYC, appareils, et votre propre comportement comptent encore."
+        },
+        {
+          "title": "Puis-je utiliser Monero et encore suivre les règles fiscales et de rapport ?",
+          "content": "Oui. Vous pouvez exporter l'historique de vos transactions depuis votre portefeuille, ou partager des données sélectionnées quand nécessaire. La confidentialité signifie que vous contrôlez qui voit vos enregistrements. Monero ne vous empêche pas de les divulguer si vous choisissez de le faire."
+        },
+        {
+          "title": "Qu'est-ce qu'une clé de vue et comment aide-t-elle avec la conformité ?",
+          "content": "Une clé de vue permet à quelqu'un de voir les transactions entrantes et sortantes pour un compte donné, sans qu'ils puissent dépenser vos fonds.\n\n Vous pouvez la partager avec un comptable ou auditeur pour réconcilier vos livres tout en gardant le contrôle sur votre argent."
+        },
+        {
+          "title": "Comment prouver que j'ai payé quelqu'un sans exposer mon portefeuille complet ?",
+          "content": "Votre portefeuille peut générer une preuve qu'un paiement spécifique a été fait à une adresse spécifique, ou que vous contrôlez une sortie spécifique, sans révéler votre historique de transactions complet."
+        },
+        {
+          "title": "Que se passe-t-il si je ne veux plus qu'un service voie mon activité après avoir partagé ma clé de vue ?",
+          "content": "Vous pouvez vous déplacer vers un compte frais avec de nouvelles clés de vue. Les vieilles clés ne verront que l'historique que vous avez déjà partagé. L'activité future redevient visible seulement pour vous à moins que vous ne décidiez autrement."
         }
       ]
     },
@@ -138,16 +144,24 @@
       "title": "Sécurité",
       "items": [
         {
-          "title": "Qu'est-ce que la résistance aux ASIC ? Pourquoi est-ce important ?",
-          "content": "**Les ASIC** sont des ordinateurs spéciaux créés pour faire un seul travail, contrairement aux ordinateurs normaux. Cela rend les ASIC très efficaces pour le minage mais très coûteux.\n\nCela conduit à ce que quelques entités possèdent une grande partie du hashrate, ce qui constitue une menace sérieuse pour la sécurité du réseau.\n\n**Solution de Monero :**\n\nMonero résout cela en étant résistant aux ASIC en utilisant l'algorithme RandomX qui réduit fortement l'efficacité des ASIC.\n\nLes mineurs peuvent utiliser du matériel grand public courant, ce qui leur permet de concourir équitablement. Le réseau Monero est actuellement protégé par des milliers de mineurs utilisant des ordinateurs 'ordinaires'.\n"
+          "title": "Qu'est-ce que la résistance ASIC et pourquoi est-elle importante ?",
+          "content": "La résistance ASIC signifie que le matériel de minage spécialisé (ASICs) n'a pas un grand avantage sur le matériel de consommation (CPUs/GPUs). Cela aide à garder le minage plus décentralisé et accessible à plus de personnes.\n\nMonero atteint la résistance ASIC à travers l'algorithme de preuve de travail @RandomX, optimisé pour les CPUs à usage général."
         },
         {
-          "title": "Y a-t-il des vulnérabilités connues dans Monero ?",
-          "content": "La communauté Monero a créé une série de vidéos appelée **'Breaking Monero'**, où les vulnérabilités potentielles de Monero sont explorées et discutées.\n\nIl y a 14 vidéos, chacune explorant un sujet différent.\n\nConsultez la playlist sur :\n\n- YouTube\n- Spotify (en tant que podcast)\n"
+          "title": "Si tout est chiffré, comment savons-nous que les pièces ne sont pas créées de nulle part ?",
+          "content": "Les montants des pièces fraîchement minées sont publics. Chaque transaction inclut des preuves que ses entrées et sorties cachées s'équilibrent, selon les règles. Si quelqu'un essayait de créer des pièces extra, les équations ne fonctionneraient pas et les nœuds rejetteraient le bloc."
         },
         {
-          "title": "Pourquoi mon antivirus/pare-feu signale-t-il le logiciel Monero comme malware ?",
-          "content": "Après avoir téléchargé le logiciel Monero (GUI et CLI), votre antivirus ou pare-feu peut signaler les exécutables comme malware.\n\n**Pourquoi cela se produit-il ?**\n\nCela se produit probablement en raison du mineur intégré, qui est utilisé pour le minage et pour la vérification des blocs. Certains antivirus peuvent considérer à tort le mineur comme un logiciel dangereux.\n\n**Que faire :**\n\n1. Assurez-vous que le logiciel que vous avez téléchargé est légitime\n2. Ajoutez une exception pour celui-ci dans votre antivirus, afin qu'il ne soit pas supprimé ou bloqué\n"
+          "title": "Monero est-il résistant quantique ?",
+          "content": "Partiellement. La confidentialité des transactions dans Monero est résistante quantique, mais la cryptographie clé publique/privée qui contrôle la propriété ne l'est pas.\n\nC'est vrai pour toute blockchain qui utilise la cryptographie de courbe elliptique. Les ordinateurs quantiques futurs pourraient potentiellement casser ces clés, donc des mises à jour seront nécessaires à mesure que les normes résistantes quantiques se développent."
+        },
+        {
+          "title": "La cryptographie de Monero est-elle sécurisée ?",
+          "content": "Monero a toujours favorisé des schémas cryptographiques établis, rigoureusement étudiés. Le protocole utilise actuellement :\n 1. @Pedersen-Commitments + @Bulletproofs pour les montants de transactions confidentiels\n 2. @Curve-Trees pour prouver qu'une sortie dépensée appartient à un expéditeur sans la révéler\n 3. @Stealth-addresses pour chiffrer et dissocier les informations du destinataire sur chaîne"
+        },
+        {
+          "title": "Pourquoi mon antivirus/firewall pense-t-il que Monero est un malware ?",
+          "content": "Après avoir téléchargé le logiciel Monero, votre antivirus ou firewall peuvent marquer les exécutables comme malware.\n\n**Pourquoi cela arrive-t-il ?**\n\nCela arrive probablement à cause du mineur intégré, qui est utilisé pour le minage et la vérification de blocs. Certains antivirus peuvent erronément considérer le mineur comme un logiciel dangereux.\n\n**Que faire :**\n\n1. Assurez-vous que le logiciel que vous avez téléchargé est légitime\n2. Ajoutez une exception pour lui dans votre antivirus, pour qu'il ne soit pas supprimé ou bloqué"
         }
       ]
     },
@@ -155,28 +169,24 @@
       "title": "Portefeuilles",
       "items": [
         {
-          "title": "Quelle est la différence entre un portefeuille léger et un portefeuille normal ?",
-          "content": "**Portefeuille léger :**\n\nVous donnez votre clé de visualisation à un nœud, qui scanne la blockchain et recherche les transactions entrantes sur votre compte en votre nom.\n\n**Ce que le nœud sait :**\n\n- Quand vous recevez de l'argent\n\n**Ce que le nœud ne sait PAS :**\n\n- Combien vous recevez\n- De qui vous l'avez reçu\n- À qui vous envoyez de l'argent\n\nSelon votre logiciel de portefeuille, vous pourrez peut-être utiliser un nœud que vous contrôlez pour éviter les fuites de confidentialité.\n\n**Pour plus de confidentialité :** Utilisez un portefeuille normal, qui peut être utilisé avec votre propre nœud.\n"
+          "title": "Quels types de portefeuilles Monero y a-t-il ?",
+          "content": "Portefeuilles de synchronisation locale : Ceux-ci scannent la blockchain sur votre appareil, vous donnant la meilleure confidentialité, mais nécessitent plus de stockage et de bande passante.\n\nPortefeuilles de synchronisation distante : Ceux-ci utilisent un serveur distant pour scanner la blockchain pour vous, réduisant les besoins en ressources, mais au coût de quelque confidentialité."
         },
         {
-          "title": "Quel portefeuille dois-je utiliser ?",
-          "content": "Il existe plusieurs portefeuilles disponibles pour un grand nombre de plateformes. Sur le site web de Monero, vous trouverez les portefeuilles publiés par l'équipe principale (GUI et CLI) et une liste de portefeuilles tiers largement fiables et open source pour ordinateur de bureau et mobile."
+          "title": "Quel portefeuille devrais-je utiliser ?",
+          "content": "Sur la page Téléchargements vous trouverez les portefeuilles publiés par Monero Core, ainsi que des portefeuilles open-source de développeurs communautaires. Choisissez celui qui correspond à vos besoins et à votre confort technique."
         },
         {
-          "title": "Je ne peux pas voir mes fonds. Viens-je de perdre tout mon Monero ?",
-          "content": "**Probablement pas.**\n\nIl est très difficile de simplement 'perdre' vos pièces, car elles ne sont techniquement nulle part. Vos pièces 'vivent' sur la blockchain et sont liées à votre compte via un système de clés publiques et privées sécurisé par cryptographie.\n\nC'est pourquoi si vous ne voyez pas vos fonds, c'est probablement dû à un problème technique.\n\nConsultez la section **Ressources et Aide** pour une liste de ressources utiles qui vous aideront à identifier et résoudre votre problème.\n"
+          "title": "Les portefeuilles de synchronisation distante sont-ils sûrs ?",
+          "content": "Les portefeuilles de synchronisation distante utilisent votre clé de vue privée pour scanner la blockchain en votre nom. Cela signifie que le service de portefeuille peut voir votre historique de transactions, mais ne peut pas dépenser vos fonds. C'est commodité au coût de la confidentialité."
         },
         {
-          "title": "Je n'ai pas touché à mon Monero depuis longtemps, ai-je perdu mes pièces suite à un hard fork ?",
-          "content": "**Ne vous inquiétez pas, vos pièces sont en sécurité.**\n\nPour pouvoir les dépenser, vous devez seulement :\n\n1. Télécharger et exécuter le dernier logiciel Monero\n2. Utiliser la graine mnémonique que vous avez précédemment sauvegardée pour restaurer votre portefeuille à tout moment\n\n**Important :** Les hard forks dans Monero sont programmés et non controversés. Ce qui signifie qu'aucune nouvelle pièce n'est créée.\n"
+          "title": "Quelle est la chose la plus importante à sauvegarder ?",
+          "content": "Votre phrase de graine. C'est la racine de vos adresses et fonds. Les appareils peuvent être remplacés. Si vous gardez votre phrase de graine sécurisée et hors ligne, vous gardez votre argent."
         },
         {
-          "title": "Pourquoi mon portefeuille met-il autant de temps à se synchroniser ?",
-          "content": "**Nœud complet local :**\n\nVous devez copier l'ensemble de la blockchain sur votre ordinateur. Cela peut prendre beaucoup de temps, en particulier sur un ancien disque dur ou une connexion Internet lente.\n\n**Nœud distant :**\n\nVotre ordinateur doit toujours demander une copie de toutes les sorties, ce qui peut prendre plusieurs heures.\n\n**Soyez patient.** Si vous souhaitez sacrifier un peu de confidentialité pour des temps de synchronisation plus rapides, envisagez d'utiliser plutôt un nœud distant ou un portefeuille léger.\n"
-        },
-        {
-          "title": "Pourquoi mon portefeuille doit-il être scanné à chaque fois que je l'ouvre ?",
-          "content": "Parce que de nouvelles transactions ont été enregistrées sur la blockchain depuis la dernière fois que vous avez ouvert votre portefeuille, qui doit toutes les scanner pour s'assurer qu'aucune de ces transactions n'est la vôtre.\n\n**Alternative :** Ce processus n'est pas nécessaire dans un portefeuille de type mymonero (openmonero), où un serveur central (qui pourrait être géré par vous) fait ce travail pour vous.\n"
+          "title": "Que se passe-t-il si mon téléphone ou ordinateur est perdu ou volé ?",
+          "content": "Si votre graine est sauvegardée et votre appareil est verrouillé, vous pouvez restaurer votre portefeuille sur un nouvel appareil et déplacer vos fonds. Si un attaquant obtient à la fois votre appareil déverrouillé et votre graine, ils peuvent dépenser vos pièces. Traitez votre graine comme les clés d'un coffre-fort."
         }
       ]
     },
@@ -184,36 +194,36 @@
       "title": "Économie",
       "items": [
         {
-          "title": "Comment Monero a-t-il de la valeur ?",
-          "content": "Monero a de la valeur parce que les gens sont prêts à l'acheter. Si personne n'est prêt à acheter du Monero, alors il n'aura aucune valeur. Le prix de Monero augmente si la demande dépasse l'offre, et il diminue si l'offre dépasse la demande."
+          "title": "Quel est l'approvisionnement total de Monero ?",
+          "content": "Monero a une phase d'émission principale puis une émission de queue petite continue de 0.6 XMR par bloc pour récompenser les mineurs et sécuriser le réseau. Le résultat est un approvisionnement prévisible, augmentant doucement vers un taux de croissance stable."
         },
         {
-          "title": "Qu'est-ce que la fongibilité et pourquoi est-elle importante ?",
-          "content": "**La fongibilité** est une propriété simple de l'argent telle qu'il n'y a pas de différences entre deux montants de même valeur.\n\n**Exemple :**\n\nSi deux personnes échangeaient un billet de 10 et deux billets de 5, personne ne perdrait.\n\n**Le Problème :**\n\nCependant, supposons que tout le monde sache que le billet de 10 a été utilisé précédemment dans une attaque de ransomware. L'autre personne va-t-elle quand même faire l'échange ? Probablement pas.\n\nC'est un problème, car le destinataire de l'argent doit constamment vérifier l'argent qu'il reçoit pour ne pas se retrouver avec des pièces souillées.\n\n**Monero est fongible**, ce qui signifie que les gens n'ont pas besoin de faire cet effort.\n"
+          "title": "Qu'est-ce qu'une émission de queue et pourquoi est-elle nécessaire ?",
+          "content": "L'émission de queue est une récompense de bloc constante qui ne tombe jamais à zéro. Elle évite un avenir où les mineurs dépendent seulement des frais et sont tentés de favoriser les payeurs grands visibles ou de censurer les utilisateurs petits. Une récompense petite permanente aide à garder la sécurité honnête et décentralisée."
         },
         {
-          "title": "Si Monero est si privé, comment savons-nous qu'ils ne sont pas créés à partir de rien ?",
-          "content": "Dans Monero, chaque sortie de transaction est associée de manière unique à une **image de clé** qui ne peut être générée que par le détenteur de cette sortie.\n\nLes images de clés qui sont utilisées plus d'une fois sont rejetées par les mineurs comme des doubles dépenses.\n\nNous pouvons également savoir que les montants des transactions sont valides même si les valeurs sont cryptées en utilisant des **engagements de Pedersen**.\n\nCela signifie que les observateurs peuvent faire des calculs sur les engagements pour déterminer qu'aucun Monero n'a été créé à partir de rien, sans pouvoir voir les montants réels.\n"
+          "title": "L'émission de queue = inflation interminable ?",
+          "content": "L'émission de queue est fixe en termes absolus, donc avec le temps elle devient une portion de plus en plus petite de l'approvisionnement existant.\n\n À partir de 2025, l'inflation annuelle de Monero est 0.85%, tendant vers zéro. \n\nL'objectif n'est pas zéro nouvelles pièces, mais un taux d'inflation bas stable qui peut soutenir la sécurité du réseau à long terme."
         },
         {
-          "title": "Quelle est l'offre maximale de Monero ?",
-          "content": "Monero a un **taux d'émission fixe**, pas une offre maximale définie.\n\n**Détails de l'émission de queue :**\n\n- A commencé au bloc 2641623, le 9 juin 2022 à 00:29 UTC\n- Restera en permanence à 0,3 XMR par minute (0,6 XMR par bloc)\n- Environ 1% d'inflation pour la première année\n- Se rapprochera de 0% d'inflation dans les années futures\n\nCette émission de queue permet des incitations permanentes pour sécuriser Monero, même dans un avenir lointain, tout en maintenant l'inflation à un pourcentage très bas.\n"
+          "title": "Y a-t-il eu un premine ou récompense spéciale pour les fondateurs ?",
+          "content": "Non. Monero a été lancé de manière équitable, sans premine, sans taxe de fondateur, et sans allocation pour les investisseurs précoces. Chaque unité en circulation a été ou sera minée sous les mêmes règles."
         },
         {
-          "title": "Pourquoi Monero n'a-t-il pas d'offre maximale ?",
-          "content": "Les mineurs traitent les transactions sur le réseau Monero en minant des blocs.\n\n**Récompense de bloc :**\n\n- Le mineur d'un bloc reçoit la récompense de bloc constante de 0,6 XMR\n- Plus les frais de transaction\n\n**Pourquoi avoir une récompense de bloc ?**\n\nMonero a la récompense de bloc plutôt que de s'appuyer uniquement sur les frais de transaction pour :\n\n- Donner aux mineurs une incitation à continuer de sécuriser le réseau avec leur hashrate\n- Maintenir les frais de transaction bas\n\nL'émission de queue causée par cette récompense de bloc constante crée un taux d'inflation de moins de 1% qui tend vers 0% au fil du temps.\n"
+          "title": "Comment les nouvelles pièces Monero sont-elles distribuées ?",
+          "content": "Les nouvelles pièces sont gagnées par les mineurs qui investissent énergie et matériel pour sécuriser la chaîne. Le design de preuve de travail vise à limiter les avantages du matériel spécialisé et à garder le minage accessible à plus de personnes."
         }
       ]
     },
     "additionalResources": {
       "userGuides": {
-        "title": "Guides Utilisateur",
-        "description": "Trouvez des guides approfondis sur l'utilisation de Monero, de la configuration de votre portefeuille aux techniques avancées de confidentialité.",
+        "title": "Guides utilisateur",
+        "description": "Trouvez des guides détaillés sur comment utiliser Monero, de la configuration de votre portefeuille aux techniques de confidentialité avancées.",
         "ctaLabel": "Voir les guides"
       },
       "devGuides": {
-        "title": "Guides Développeur",
-        "description": "Explorez la documentation technique et les guides pour les développeurs intéressés à contribuer à Monero ou à développer sur sa technologie.",
+        "title": "Guides développeur",
+        "description": "Explorez la documentation technique et les guides pour les développeurs intéressés à contribuer à Monero ou à construire sur sa technologie.",
         "ctaLabel": "Voir les guides"
       },
       "stackExchange": {
@@ -223,14 +233,21 @@
       },
       "reddit": {
         "title": "r/monerosupport",
-        "description": "Engagez-vous avec la communauté Monero sur Reddit pour des discussions, des nouvelles et des mises à jour.",
+        "description": "Interagissez avec la communauté Monero sur Reddit pour des discussions, nouvelles et mises à jour.",
         "ctaLabel": "Visiter"
       },
       "monerohow": {
         "title": "Monero.how",
-        "description": "Anciennes ressources connues avec d'anciens guides et tutoriels",
+        "description": "Ressources anciennes et connues avec des guides et howtos anciens",
         "ctaLabel": "Visiter"
       }
     }
+  },
+  "moneropedia": {
+    "pageTitle": "Moneropedia | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+    "heroTitle": "Moneropedia",
+    "heroSubtitle": "Glossaire complet des termes Monero et blockchain.",
+    "searchPlaceholder": "Rechercher dans Moneropedia...",
+    "readMore": "Lire l'article complet"
   }
 }

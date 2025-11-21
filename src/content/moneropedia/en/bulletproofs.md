@@ -1,7 +1,7 @@
 ---
-summary: "a new kind of range proofs replacing RingCT in transactions to obfuscate the amounts sent"
+summary: "a new kind of range proofs replacing RingCT in transactions to encrypt the amounts sent"
 title: Bulletproofs
-terms: ["bulletproofs", "bulletproof"]
+terms: ["bulletproofs", "bulletproof", "bulletproofs+"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
