@@ -5,6 +5,7 @@ import Accordion from "@/components/ui/Accordion.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getLocale, createTInstance, localizeHref } from "@/i18n/utils";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import safeMarkdown from "@/utils/safeMarkdown";
 
 type MoneropediaItem = CollectionEntry<"moneropedia"> & {
   href: string;
@@ -70,7 +71,9 @@ for (const letter of sortedLetters) {
 
           const accordionItems = groupEntries.map((entry) => ({
             title: entry.title,
-            content: `${entry.data.summary}\n\n[${t("moneropedia.readMore")} ](${entry.href})`,
+            content: safeMarkdown.parseInline(
+              `${entry.data.summary}\n\n[${t("moneropedia.readMore")} ](${entry.href})`,
+            ),
           }));
 
           return (
