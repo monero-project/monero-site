@@ -32,6 +32,8 @@ const t = await createTInstance(locale, "downloads");
           versionName={coreDownloads.gui.name}
           releaseNotesUrl={`https://github.com/monero-project/monero-gui/releases/tag/${coreDownloads.gui.version}`}
           sourceCodeUrl="https://github.com/monero-project/monero-gui"
+          torrentUrl={coreDownloads.gui.torrent}
+          magnetUrl={coreDownloads.gui.magnet}
           features={Object.values(
             t("core.gui.features", { returnObjects: true }) as Record<
               string,
@@ -60,6 +62,8 @@ const t = await createTInstance(locale, "downloads");
           versionName={coreDownloads.cli.name}
           releaseNotesUrl={`https://github.com/monero-project/monero/releases/tag/${coreDownloads.cli.version}`}
           sourceCodeUrl="https://github.com/monero-project/monero"
+          torrentUrl={coreDownloads.cli.torrent}
+          magnetUrl={coreDownloads.cli.magnet}
           features={Object.values(
             t("core.cli.features", { returnObjects: true }) as Record<
               string,
