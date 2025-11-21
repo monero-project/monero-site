@@ -42,6 +42,9 @@
   --line-height-body: 1.6;
   --line-height-heading: 1.1;
   --line-height-title: 1.2;
+
+  /* Maximum Content Width */
+  --content-max-width: 1920px;
 }
 
 /* ========================================

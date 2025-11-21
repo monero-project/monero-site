@@ -71,7 +71,7 @@ for (const letter of sortedLetters) {
 
           const accordionItems = groupEntries.map((entry) => ({
             title: entry.title,
-            content: safeMarkdown.parseInline(
+            content: safeMarkdown.parse(
               `${entry.data.summary}\n\n[${t("moneropedia.readMore")} ](${entry.href})`,
             ),
           }));

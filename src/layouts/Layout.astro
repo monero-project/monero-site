@@ -77,6 +77,13 @@ const title = Astro.props.title;
     flex: 1;
   }
 
+  @media (min-width: 1920px) {
+    main {
+      width: var(--content-max-width);
+      margin: 0 auto;
+    }
+  }
+
   @media (max-width: 600px) {
     main {
       padding: var(--mobile-padding);
