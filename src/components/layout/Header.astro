@@ -67,7 +67,6 @@ const navItems = [
         icon: whatIsMonero,
         iconDark: whatIsMoneroDark,
       },
-      { key: "faq", href: "/get-started/faq", icon: faq, iconDark: faqDark },
       {
         key: "buyMonero",
         href: "/get-started/exchanges",
@@ -98,6 +97,7 @@ const navItems = [
         icon: contribute,
         iconDark: contributeDark,
       },
+      { key: "faq", href: "/get-started/faq", icon: faq, iconDark: faqDark },
     ]),
   },
   {
@@ -331,23 +331,29 @@ const navItems = [
     line-height: 1;
   }
 
-  /* ===== Large screens (> 1500px) ===== */
-  @media (min-width: 1501px) {
-    /* When any dropdown is open, give header a card background */
-    .header:has(.nav-item--dropdown:hover) {
+  /* ===== Large screens (> 1200px) ===== */
+  @media (min-width: 1201px) {
+    .header:has(.nav-item--dropdown:hover),
+    .header:has(.nav-item--dropdown:focus-within) {
       background: var(--card-color);
+    }
+
+    /* Prevents other dropdowns from being opened by hover, when one is open via focus (Tab/click) */
+    .header:has(.nav-item--dropdown:focus-within)
+      :global(.nav-item--dropdown:not(:focus-within):hover) {
+      pointer-events: none;
     }
   }
 
-  /* ===== Mobile / Tablet (<= 1500px) ===== */
-  @media (max-width: 1500px) {
+  /* ===== Mobile / Tablet (<= 1200px) ===== */
+  @media (max-width: 1200px) {
     :root {
       --drawer-gap: clamp(5rem, 20vw, 9rem);
     }
 
     .header {
       position: sticky;
-      background-color: inherit;
+      background: inherit;
       inset-block-start: 0;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
@@ -438,11 +444,15 @@ const navItems = [
       opacity: 1;
       pointer-events: auto;
     }
+
+    .header:has(.lang-container[open]) {
+      background: var(--card-color);
+    }
   }
 
   /* Dynamic viewport height when supported */
   @supports (height: 100dvh) {
-    @media (max-width: 1500px) {
+    @media (max-width: 1200px) {
       .nav {
         block-size: 100dvh;
       }

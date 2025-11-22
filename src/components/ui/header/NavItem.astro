@@ -72,7 +72,12 @@ const dir = getDirection(getLocale(Astro.url));
           />
         </div>
 
-        <div class="dropdown" role="menu" aria-label={`${label} menu`}>
+        <div
+          class="dropdown"
+          role="menu"
+          aria-label={`${label} menu`}
+          tabindex="-1"
+        >
           <div class="dropdown-inner">
             <div class="dropdown-content">
               {dropdown.map((item) => (
@@ -113,6 +118,7 @@ const dir = getDirection(getLocale(Astro.url));
   .nav-item {
     /* desktop: static, mobile overrides to relative */
     position: static;
+    cursor: pointer;
   }
 
   .row {
@@ -165,13 +171,13 @@ const dir = getDirection(getLocale(Astro.url));
     position: absolute;
     inset-inline: 0;
     inset-block-start: 100%;
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition:
       opacity 0.15s ease,
       visibility 0.15s ease;
-    box-shadow: 0 4px 12px -12px rgba(0, 0, 0, 0.15);
     z-index: 20;
   }
 
@@ -187,8 +193,8 @@ const dir = getDirection(getLocale(Astro.url));
 
   .dropdown-inner {
     background: var(--card-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 0.5rem 0.5rem;
     padding-block: 0 1rem;
   }
 
@@ -252,22 +258,37 @@ const dir = getDirection(getLocale(Astro.url));
 
   /* === Desktop hover/focus behaviour === */
   @media (hover: hover) and (pointer: fine) {
-    /* Show panel on hover OR when submenu is focused */
-    .nav-item--dropdown:hover > .dropdown,
-    .nav-item--dropdown:has(.dropdown :focus-visible) > .dropdown {
+    /* show dropdown on hover/focus */
+    .nav-item--dropdown:is(
+        :hover,
+        :focus-within,
+        :has(.dropdown :focus-visible)
+      )
+      > .dropdown {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
 
-    .nav-item--dropdown:hover > .row > .link,
-    .nav-item--dropdown:has(.dropdown :focus-visible) > .row > .link {
+    /* highlight link when open */
+    .nav-item--dropdown:is(
+        :hover,
+        :focus-within,
+        :has(.dropdown :focus-visible)
+      )
+      > .row
+      > .link {
       color: var(--heading-color);
     }
 
     /* rotate caret when open */
-    .nav-item--dropdown:hover > .row > .caret,
-    .nav-item--dropdown:has(.dropdown :focus-visible) > .row > .caret {
+    .nav-item--dropdown:is(
+        :hover,
+        :focus-within,
+        :has(.dropdown :focus-visible)
+      )
+      > .row
+      > .caret {
       transform: rotate(180deg);
     }
 
@@ -280,7 +301,7 @@ const dir = getDirection(getLocale(Astro.url));
   }
 
   /* === Mobile / tablet (drawer accordion) === */
-  @media (max-width: 1500px) {
+  @media (max-width: 1200px) {
     .item {
       position: relative;
     }
@@ -323,7 +344,7 @@ const dir = getDirection(getLocale(Astro.url));
       visibility: visible;
       box-shadow: unset;
       pointer-events: auto;
-      /* accordion behaviour */
+      /* accordion behaviour - collapsed by default */
       max-height: 0;
       overflow: hidden;
     }

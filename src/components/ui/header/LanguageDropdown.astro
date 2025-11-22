@@ -24,15 +24,15 @@ const hrefFor = (locale: string) =>
   locale === defaultLocale ? base : `/${locale}${base}`;
 ---
 
-<div class="lang-container">
-  <button
+<details class="lang-container">
+  <summary
     class="lang"
-    type="button"
     aria-label="Change language"
     aria-haspopup="true"
+    role="button"
   >
     <MaskIcon src={Globe} size="1.25rem" />
-  </button>
+  </summary>
 
   <div class="lang-dropdown" aria-label="Languages">
     <ul class="lang-list">
@@ -51,7 +51,7 @@ const hrefFor = (locale: string) =>
       }
     </ul>
   </div>
-</div>
+</details>
 
 <style>
   /* ===== Base / Desktop ===== */
@@ -60,7 +60,14 @@ const hrefFor = (locale: string) =>
     display: inline-block;
   }
 
-  /* Globe trigger */
+  .lang-container > summary {
+    list-style: none;
+  }
+  .lang-container > summary::marker,
+  .lang-container > summary::-webkit-details-marker {
+    display: none;
+  }
+
   .lang {
     margin-inline-start: auto;
     display: inline-flex;
@@ -130,18 +137,18 @@ const hrefFor = (locale: string) =>
     background: var(--card-hover-color);
   }
 
-  /* Open state: when button or any link inside has focus */
-  .lang-container:focus-within .lang-dropdown {
+  /* Open state: toggled by click (details[open]) */
+  .lang-container[open] .lang-dropdown {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
-  .lang-container:focus-within .lang {
-    color: var(--on-dark);
+  .lang-container[open] .lang {
+    color: var();
   }
 
   /* ===== Mobile: dock to sticky header, full-bleed, scrollable ===== */
-  @media (max-width: 1500px) {
+  @media (max-width: 1200px) {
     /* ensure dropdown anchors to .header (sticky) instead of button */
     .lang-container {
       position: static;
@@ -149,17 +156,13 @@ const hrefFor = (locale: string) =>
 
     .lang-dropdown {
       position: absolute;
-      top: 100%; /* directly below header bottom */
-      /* full-bleed across viewport regardless of header padding */
-      left: 0;
-      right: 0;
-      margin: 0;
-      width: auto;
+      inset-inline: 0;
+      inset-block-start: 100%;
 
-      box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.35);
-      border-radius: 0;
-      margin-top: 0;
-      padding: 0.5rem 0;
+      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 0.5rem 0.5rem;
+      margin-top: unset;
+      padding-top: 0;
 
       max-height: 75dvh;
       overflow-y: auto;
@@ -167,8 +170,6 @@ const hrefFor = (locale: string) =>
     }
 
     .lang-list {
-      padding: 0.25rem max(0.75rem, env(safe-area-inset-left)) 0.5rem
-        max(0.75rem, env(safe-area-inset-right));
       gap: 0.25rem;
     }
 

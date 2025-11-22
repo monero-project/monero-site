@@ -35,8 +35,10 @@
         "size": "125.59 MB"
       }
     ],
-    "torrent": "https://downloads.getmonero.org/gui/monero-gui-v0.18.4.4.torrent",
-    "magnet": "magnet:?xt=urn:btih:1234567890abcdef&dn=monero-gui-v0.18.4.4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce",
+    "torrent": {
+      "link": "https://downloads.getmonero.org/gui/monero-gui-v0.18.4.4.torrent",
+      "magnet": "magnet:?xt=urn:btih:23382953943b4fa023d6b7c72375a26dc8ce02b6&dn=monero-gui-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
+    },
     "name": "Fluorine Fermi"
   },
   "cli": {
@@ -119,8 +121,10 @@
         "size": "71.24 MB"
       }
     ],
-    "torrent": "https://downloads.getmonero.org/cli/monero-cli-v0.18.4.4.torrent",
-    "magnet": "magnet:?xt=urn:btih:fedcba0987654321&dn=monero-cli-v0.18.4.4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce",
+    "torrent": {
+      "link": "https://downloads.getmonero.org/cli/monero-cli-v0.18.4.4.torrent",
+      "magnet": "magnet:?xt=urn:btih:9c7b39bfb11abcffc869480efb8eafec7bdd1b87&dn=monero-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
+    },
     "name": "Fluorine Fermi"
   }
 }
