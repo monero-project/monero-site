@@ -40,7 +40,8 @@
     "verifyDownload": "Verify",
     "verifyDescription": "You are strongly advised to verify the hash of the file you downloaded.\n\nThis will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds.\n\n**Always verify your downloads!**",
     "viewHashes": "View hashes",
-    "downloadButton": "Download"
+    "downloadButton": "Download",
+    "torrent": "Torrent"
   },
 
   "community": {

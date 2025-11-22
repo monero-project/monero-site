@@ -25,6 +25,7 @@ interface Labels {
   releaseNotes?: string;
   sourceCode?: string;
   download?: string;
+  torrent?: string;
   verifyDownloads?: string;
   verifyDescription?: string;
   viewHashes?: string;
@@ -66,6 +67,7 @@ const {
     releaseNotes: "Release notes",
     sourceCode: "Source code",
     download: "Download",
+    torrent: "Torrent",
     verifyDownloads: "Verify Downloads",
     verifyDescription:
       "After downloading, verify the integrity using the provided hashes:",
@@ -132,7 +134,7 @@ const PLATFORM_ICONS: Record<string, string> = {
               as="a"
               class="torrent-button"
             >
-              Torrent
+              {labels.torrent}
             </Button>
             <Button
               variant="secondary"
@@ -270,14 +272,14 @@ const PLATFORM_ICONS: Record<string, string> = {
   }
 
   .torrent-split-button .torrent-button {
-    border-top-left-radius: 22.5rem;
-    border-bottom-left-radius: 22.5rem;
+    border-start-start-radius: 22.5rem;
+    border-end-start-radius: 22.5rem;
   }
 
   .torrent-split-button .magnet-button {
-    border-top-right-radius: 22.5rem;
-    border-bottom-right-radius: 22.5rem;
-    border-left: 1px solid var(--border-color);
+    border-start-end-radius: 22.5rem;
+    border-end-end-radius: 22.5rem;
+    border-inline-start: 1px solid var(--border-color);
   }
 
   .metadata-links {

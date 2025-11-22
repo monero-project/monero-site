@@ -37,7 +37,7 @@
     ],
     "torrent": {
       "link": "https://downloads.getmonero.org/gui/monero-gui-v0.18.4.4.torrent",
-      "magnet": "magnet:?xt=urn:btih:23382953943b4fa023d6b7c72375a26dc8ce02b6&dn=monero-gui-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
+      "magnet": "magnet:?xt=urn:btih:23382953943b4fa023d6b7c72375a26dc8ce02b6&dn=monero-gui-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org"
     },
     "name": "Fluorine Fermi"
   },
@@ -123,7 +123,7 @@
     ],
     "torrent": {
       "link": "https://downloads.getmonero.org/cli/monero-cli-v0.18.4.4.torrent",
-      "magnet": "magnet:?xt=urn:btih:9c7b39bfb11abcffc869480efb8eafec7bdd1b87&dn=monero-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
+      "magnet": "magnet:?xt=urn:btih:9c7b39bfb11abcffc869480efb8eafec7bdd1b87&dn=monero-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org"
     },
     "name": "Fluorine Fermi"
   }

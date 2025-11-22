@@ -38,7 +38,8 @@
     "releaseNotes": "Notes de version",
     "sourceCode": "Code source",
     "verifyDownload": "Vérifier le téléchargement",
-    "downloadButton": "Télécharger"
+    "downloadButton": "Télécharger",
+    "torrent": "Torrent"
   },
 
   "community": {
