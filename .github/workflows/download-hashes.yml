@@ -2,8 +2,9 @@ name: "Download Hashes"
 
 on:
   push:
-    branches-ignore:
-      - main
+    paths:
+      - "public/downloads/hashes.txt"
+  pull_request:
     paths:
       - "public/downloads/hashes.txt"
   workflow_dispatch:
@@ -234,6 +235,7 @@ jobs:
     needs: validate-download-hashes
     name: "Update static data with new download info"
     runs-on: ubuntu-latest
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     permissions:
       contents: write
     steps:
@@ -254,6 +256,8 @@ jobs:
 
       - name: Update magnet links
         run: |
+          set -euo pipefail
+
           MAGNET_LINK_GUI="${{ needs.validate-download-hashes.outputs.magnet_gui }}"
           MAGNET_LINK_CLI="${{ needs.validate-download-hashes.outputs.magnet_cli }}"
 
@@ -287,6 +291,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
+          set -euo pipefail
+
           if git diff --quiet src/data/downloads/core.json; then
             echo "No changes to commit"
           else
