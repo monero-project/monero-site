@@ -26,7 +26,7 @@ const closeId = id + "-close";
 const dir = getDirection(getLocale(Astro.url));
 ---
 
-<li class={`item${isDropdown ? " has-dd" : ""}`}>
+<li class={`nav-item${isDropdown ? " nav-item--dropdown" : ""}`}>
   {
     isDropdown ? (
       <>
@@ -73,23 +73,31 @@ const dir = getDirection(getLocale(Astro.url));
         </div>
 
         <div class="dropdown" role="menu" aria-label={`${label} menu`}>
-          {dropdown.map((item) => (
-            <a href={item.href} class="dropdown-item" role="menuitem">
-              <ColorIcon
-                src={item.icon}
-                darkSrc={item.iconDark}
-                size="2rem"
-                class="icon"
-              />
-              <div class="content">
-                <div class="title">{item.label}</div>
-                {item.desc && <div class="desc">{item.desc}</div>}
-              </div>
-              <div class="arrow">
-                <MaskIcon src={arrowRight} size="0.75rem" rtl={dir == "rtl"} />
-              </div>
-            </a>
-          ))}
+          <div class="dropdown-inner">
+            <div class="dropdown-content">
+              {dropdown.map((item) => (
+                <a href={item.href} class="dropdown-item" role="menuitem">
+                  <ColorIcon
+                    src={item.icon}
+                    darkSrc={item.iconDark}
+                    size="2rem"
+                    class="icon"
+                  />
+                  <div class="content">
+                    <div class="title">{item.label}</div>
+                    {item.desc && <div class="desc">{item.desc}</div>}
+                  </div>
+                  <div class="arrow">
+                    <MaskIcon
+                      src={arrowRight}
+                      size="0.75rem"
+                      rtl={dir == "rtl"}
+                    />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </>
     ) : (
@@ -102,9 +110,11 @@ const dir = getDirection(getLocale(Astro.url));
 
 <style>
   /* === Base === */
-  .item {
-    position: relative;
+  .nav-item {
+    /* desktop: static, mobile overrides to relative */
+    position: static;
   }
+
   .row {
     position: relative;
     display: flex;
@@ -112,6 +122,7 @@ const dir = getDirection(getLocale(Astro.url));
     gap: 0.35rem;
     padding: 0.4rem 0;
   }
+
   .link {
     color: var(--paragraph-main);
     text-decoration: none;
@@ -120,10 +131,12 @@ const dir = getDirection(getLocale(Astro.url));
     user-select: none;
     white-space: nowrap;
   }
+
   .link:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 2px;
   }
+
   .link:hover {
     color: var(--heading-color);
   }
@@ -141,30 +154,52 @@ const dir = getDirection(getLocale(Astro.url));
   .mobile-close {
     display: none;
   }
+
   .dd-toggle,
   .dd-close {
     display: none;
   }
 
+  /* === Desktop mega  dropdown === */
   .dropdown {
     position: absolute;
+    inset-inline: 0;
     inset-block-start: 100%;
-    inset-inline-start: 0;
-    margin-top: 0.5rem;
-    min-width: 35rem;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    background: var(--card-color);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transition:
       opacity 0.15s ease,
       visibility 0.15s ease;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem 1.5rem;
+    box-shadow: 0 4px 12px -12px rgba(0, 0, 0, 0.15);
     z-index: 20;
+  }
+
+  .dropdown::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    inset-block-start: 0;
+    height: 1.5rem;
+    transform: translateY(-100%);
+    background: transparent;
+  }
+
+  .dropdown-inner {
+    background: var(--card-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 0.75rem 0.75rem;
+    padding-block: 1.25rem 1.75rem;
+  }
+
+  .dropdown-content {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 4vw, 4rem);
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem 1.5rem;
   }
 
   /* Items */
@@ -179,17 +214,21 @@ const dir = getDirection(getLocale(Astro.url));
     padding: 0.75rem;
     border-radius: 0.5rem;
   }
-  .dropdown-item:where(:hover, :focus) {
+
+  .dropdown-item:where(:hover, :focus-visible) {
     background: var(--card-hover-color);
   }
+
   .icon {
     width: 2rem;
     height: 2rem;
     flex: 0 0 2rem;
   }
+
   .title {
     font-weight: 600;
   }
+
   .desc {
     font-size: 0.9rem;
     color: var(--paragraph-subtitle);
@@ -199,52 +238,57 @@ const dir = getDirection(getLocale(Astro.url));
 
   .arrow {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     margin-inline-start: auto;
     opacity: 0;
     transition: opacity 0.2s ease;
     color: var(--paragraph-subtitle);
   }
 
-  .dropdown-item:hover .arrow {
+  .dropdown-item:hover .arrow,
+  .dropdown-item:focus-visible .arrow {
     opacity: 1;
   }
 
-  /* === Desktop hover/focus === */
+  /* === Desktop hover/focus behaviour === */
   @media (hover: hover) and (pointer: fine) {
-    .has-dd::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 100%;
-      height: 0.625rem;
-    }
     /* Show panel on hover OR when submenu is focused */
-    .has-dd:is(:hover, :has(.dropdown :focus)) > .dropdown {
+    .nav-item--dropdown:hover > .dropdown,
+    .nav-item--dropdown:has(.dropdown :focus-visible) > .dropdown {
       opacity: 1;
       visibility: visible;
+      pointer-events: auto;
     }
-    .has-dd:is(:hover, :has(.dropdown :focus)) > .row > .link {
+
+    .nav-item--dropdown:hover > .row > .link,
+    .nav-item--dropdown:has(.dropdown :focus-visible) > .row > .link {
       color: var(--heading-color);
     }
-    /* rotate caret on hover open */
-    .has-dd:is(:hover, :has(.dropdown :focus)) > .row > .caret {
+
+    /* rotate caret when open */
+    .nav-item--dropdown:hover > .row > .caret,
+    .nav-item--dropdown:has(.dropdown :focus-visible) > .row > .caret {
       transform: rotate(180deg);
     }
+
+    /* radio overlay disabled on desktop */
     .mobile-open,
     .mobile-close {
       pointer-events: none;
+      display: none;
     }
   }
 
-  /* === Mobile (whole-row toggle) === */
+  /* === Mobile / tablet (drawer accordion) === */
   @media (max-width: 1500px) {
+    .item {
+      position: relative;
+    }
+
     .row {
       padding: 0.5rem 0;
     }
 
-    /* Show open label by default, close label when expanded */
     .mobile-open {
       display: block;
       position: absolute;
@@ -253,12 +297,15 @@ const dir = getDirection(getLocale(Astro.url));
       cursor: pointer;
       z-index: 1;
     }
+
     .mobile-close {
       display: none;
     }
+
     .dd-toggle:checked ~ .row .mobile-open {
       display: none;
     }
+
     .dd-toggle:checked ~ .row .mobile-close {
       display: block;
       position: absolute;
@@ -271,21 +318,37 @@ const dir = getDirection(getLocale(Astro.url));
     .dropdown {
       position: static;
       margin: 0.25rem 0 0;
-      min-width: unset;
-      padding: 0;
+      width: unset;
+      opacity: 1;
+      visibility: visible;
+      box-shadow: unset;
+      pointer-events: auto;
+      /* accordion behaviour */
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .dropdown::before {
+      content: none;
+    }
+
+    .dropdown-inner {
       background: none;
       box-shadow: none;
       border-radius: 0;
-      opacity: 1;
-      visibility: visible;
-      display: block;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.15s ease;
+      padding: 0;
     }
+
+    .dropdown-content {
+      max-width: none;
+      padding-inline: 0;
+      display: block;
+    }
+
     .dd-toggle:checked ~ .dropdown {
       max-height: unset;
     }
+
     .dd-toggle:checked ~ .row > .caret {
       transform: rotate(180deg);
     }
