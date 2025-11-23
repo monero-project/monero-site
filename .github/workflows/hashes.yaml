@@ -224,7 +224,7 @@ jobs:
           diff -r yours/monero-source-$version_cli from_website/monero-source-$version_cli
           echo -e "\n--> Comparing GUI directories"
           diff -r yours/monero-gui-source-$version_gui from_website/monero-gui-source-$version_gui
-      - name: Verify torrent + magnet links
+      - name: Verify torrent + magnet links + webseed
         run: |
           sudo apt-get install -y --no-install-recommends transmission-cli
 
@@ -233,7 +233,7 @@ jobs:
 
           git clone --recurse-submodules https://github.com/plowsof/monero-torrent.git
           cd monero-torrent
-          git reset --hard e883850bf24811507e49cf4f4f16126ed2031295
+          git reset --hard 761738fd9f0d60fe655276989648a98ba6ab8188
           cd ..
 
           # move files for local build of torrent (requires files to be in a folder named cdn)
@@ -292,3 +292,24 @@ jobs:
             echo "DEBUG: CDN_MAGNET_LINK_GUI: $CDN_MAGNET_LINK_GUI"
             exit 1
           fi
+          
+          # confirm versioned hashes file and webseed url redirects are working
+          CDN_URL="https://downloads.getmonero.org"
+          if ! wget --spider -q "$CDN_URL/hashes-$version_cli.txt"; then
+            echo "::warning title=Torrent-Webseed-URLs::FAILED: $CDN_URL/hashes-$version_cli.txt"
+          fi
+          if ! wget --spider -q "$CDN_URL/hashes-$version_gui.txt"; then
+            echo "::warning title=Torrent-Webseed-URLs::FAILED: $CDN_URL/hashes-$version_gui.txt"
+          fi
+          for file in $(awk '/monero-/ {print $2}' "downloads/hashes.txt"); do
+            dir=cli
+            part="monero-$version_cli"
+            if [[ $file =~ gui ]]; then
+                dir=gui
+                part="monero-gui-$version_gui"
+            fi
+            url=$CDN_URL/${part}/${dir}/${file}
+            if ! wget --spider -q "$url"; then
+              echo "::warning title=Torrent-Webseed-URLs::FAILED: $url"
+            fi
+          done
