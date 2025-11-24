@@ -1,6 +1,6 @@
 {
   "gui": {
-    "version": "v0.18.4.4",
+    "version": "v0.18.4.3",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/gui/win64install",
@@ -42,7 +42,7 @@
     "name": "Fluorine Fermi"
   },
   "cli": {
-    "version": "v0.18.4.4",
+    "version": "v0.18.4.3",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/cli/win64",
