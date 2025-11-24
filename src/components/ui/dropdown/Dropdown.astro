@@ -43,7 +43,7 @@ const { label } = Astro.props;
     display: flex;
     align-items: center;
     margin-inline-start: 0.5rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
   }
   .dropdown[open] .caret {
     transform: rotate(180deg);
@@ -55,9 +55,8 @@ const { label } = Astro.props;
     inset-block-start: 100%;
     inset-inline-start: 0;
     background: var(--card-color);
-    border: 1px solid var(--border-color);
     border-radius: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -66,5 +65,18 @@ const { label } = Astro.props;
     max-height: 25rem;
     overflow-y: auto;
     overflow-x: hidden;
+    padding: 0.5rem;
+    user-select: none;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: transform 0.2s ease;
+  }
+
+  .dropdown[open] .dropdown-content {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 </style>

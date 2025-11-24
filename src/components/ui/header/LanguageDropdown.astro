@@ -100,13 +100,12 @@ const hrefFor = (locale: string) =>
     z-index: 999;
     min-width: 140px;
     padding: 0.5rem;
+    user-select: none;
 
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
-    transition:
-      opacity 0.15s ease,
-      visibility 0.15s ease;
+    transform: translateY(-10px);
+    transition: transform 0.2s ease;
   }
 
   /* Items */
@@ -140,8 +139,8 @@ const hrefFor = (locale: string) =>
   /* Open state: toggled by click (details[open]) */
   .lang-container[open] .lang-dropdown {
     opacity: 1;
-    visibility: visible;
     pointer-events: auto;
+    transform: translateY(0);
   }
   .lang-container[open] .lang {
     color: var();

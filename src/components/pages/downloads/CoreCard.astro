@@ -11,6 +11,8 @@ import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
 import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
 import freebsdIcon from "@/assets/icons/mask/brand/freebsd.avif?url";
 import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
+import ColorIcon from "@/components/ui/ColorIcon.astro";
+import magnetIcon from "@/assets/icons/color/magnet.avif?url";
 
 export interface DownloadLink {
   href: string;
@@ -142,7 +144,7 @@ const PLATFORM_ICONS: Record<string, string> = {
               as="a"
               class="magnet-button"
             >
-              🧲
+              <ColorIcon src={magnetIcon} size="1.25em" />
             </Button>
           </div>
         )

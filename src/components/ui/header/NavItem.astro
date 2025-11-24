@@ -177,11 +177,9 @@ const dir = getDirection(getLocale(Astro.url));
     inset-block-start: 100%;
 
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
-    transition:
-      opacity 0.15s ease,
-      visibility 0.15s ease;
+    transform: translateY(-10px);
+    transition: transform 0.2s ease;
     z-index: 20;
   }
 
@@ -270,8 +268,8 @@ const dir = getDirection(getLocale(Astro.url));
       )
       > .dropdown {
       opacity: 1;
-      visibility: visible;
       pointer-events: auto;
+      transform: translateY(0);
     }
 
     /* highlight link when open */
@@ -384,7 +382,6 @@ const dir = getDirection(getLocale(Astro.url));
   @media (prefers-reduced-motion: reduce) {
     .dropdown,
     .caret {
-      transition: none;
     }
   }
 </style>
