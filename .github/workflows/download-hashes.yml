@@ -319,7 +319,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "lts/*"
+          node-version: "22"
 
       - uses: pnpm/action-setup@v4
 

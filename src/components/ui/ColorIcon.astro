@@ -18,35 +18,41 @@ function norm(p: string | { src: string } | unknown): string {
 
 const lightUrl = `'${norm(src).replace(/'/g, "\\'")}'`;
 const darkUrl = darkSrc ? `'${norm(darkSrc).replace(/'/g, "\\'")}'` : lightUrl;
-
-const style =
-  `--icon-url-light:url(${lightUrl});` +
-  `--icon-url-dark:url(${darkUrl});` +
-  `--icon-size:${size};` +
-  `--icon-scale-x: ${rtl ? "-1" : "1"}`;
 ---
 
-<div class={`icon ${className}`} style={style} aria-hidden="true"></div>
+<div class={`icon ${className} ${rtl ? "icon--rtl" : ""}`} aria-hidden="true">
+</div>
 
-<style>
+<style
+  define:vars={{
+    iconUrlLight: `url(${lightUrl})`,
+    iconUrlDark: `url(${darkUrl})`,
+    iconSize: size,
+  }}
+>
   .icon {
     display: inline-block;
-    inline-size: var(--icon-size);
-    block-size: var(--icon-size);
+    inline-size: var(--iconSize);
+    block-size: var(--iconSize);
 
     aspect-ratio: 1 / 1;
     vertical-align: middle;
 
-    --icon-url: var(--icon-url-light);
-    background-image: var(--icon-url);
+    --iconUrl: var(--iconUrlLight);
+    background-image: var(--iconUrl);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
 
+  .icon--rtl {
+    transform: scaleX(var(-1, 1));
+    transform-origin: center;
+  }
+
   @media (prefers-color-scheme: dark) {
     .icon {
-      --icon-url: var(--icon-url-dark);
+      --iconUrl: var(--iconUrlDark);
     }
   }
 </style>

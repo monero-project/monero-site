@@ -8,25 +8,21 @@ export interface Props {
 const { src, size = "1em", rtl } = Astro.props;
 ---
 
-<div
-  class={`icon`}
-  style={`--icon-src: url(${src});` +
-    `--icon-size: ${size};` +
-    `--icon-scale-x: ${rtl ? "-1" : "1"}`}
->
-</div>
+<div class={`icon ${rtl ? "icon--rtl" : ""}`}></div>
 
-<style>
+<style define:vars={{ iconSize: size, iconSrc: `url(${src})` }}>
   .icon {
     display: inline-block;
-    inline-size: var(--icon-size);
-    block-size: var(--icon-size);
+    inline-size: var(--iconSize);
+    block-size: var(--iconSize);
 
     background: currentColor;
-    mask: var(--icon-src) no-repeat center / contain;
-    -webkit-mask: var(--icon-src) no-repeat center / contain;
+    mask: var(--iconSrc) no-repeat center / contain;
+    -webkit-mask: var(--iconSrc) no-repeat center / contain;
+  }
 
-    transform: scaleX(var(--icon-scale-x, 1));
+  .icon--rtl {
+    transform: scaleX(var(-1, 1));
     transform-origin: center;
   }
 </style>
