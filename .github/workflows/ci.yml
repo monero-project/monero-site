@@ -5,6 +5,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  repository_dispatch:
+    types: [bot-pr]
 
 jobs:
   quality-checks:
@@ -12,6 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.ref || github.ref }}
 
       - name: Check set:html safety
         run: |
@@ -49,6 +53,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.ref || github.ref }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
