@@ -1,7 +1,7 @@
 ---
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
-import { localizeHref, getDirection } from "@/i18n/utils";
+import { localizeHref, getDirection, localizeNumber } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
 
 export interface Props {
@@ -25,7 +25,9 @@ const dir = getDirection(locale);
 ---
 
 <div class="gs" aria-labelledby="gs-title">
-  <div class="num" aria-hidden="true">{String(step).padStart(2, "0")}</div>
+  <div class="num" aria-hidden="true">
+    {localizeNumber(Number(step), locale, 2)}
+  </div>
 
   <div class="text">
     <h2 id="gs-title" class="title">{title}</h2>
@@ -60,7 +62,6 @@ const dir = getDirection(locale);
     line-height: 1;
     color: var(--num-color);
     width: 2ch;
-    text-align: center;
   }
 
   .text {

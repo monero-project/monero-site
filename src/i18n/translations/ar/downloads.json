@@ -9,12 +9,12 @@
   },
 
   "platforms": {
-    "windows": "ويندوز",
-    "macos": "ماك أو إس",
-    "linux": "لينكس",
-    "android": "أندرويد",
-    "freebsd": "فري بي إس دي",
-    "ios": "آي أو إس"
+    "windows": "Windows",
+    "macos": "macOS",
+    "linux": "Linux",
+    "android": "Android",
+    "freebsd": "FreeBSD",
+    "ios": "iOS"
   },
 
   "core": {

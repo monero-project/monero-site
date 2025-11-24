@@ -25,6 +25,21 @@ export const getDirection = (locale: string): "ltr" | "rtl" => {
   return rtlLocales.includes(locale) ? "rtl" : "ltr";
 };
 
+export const localizeNumber = (
+  number: number,
+  locale: string,
+  minimumIntegerDigits: number = 1,
+): string => {
+  if (!Object.keys(locales).includes(locale)) {
+    locale = defaultLocale;
+  }
+  const localeString = locales[locale as keyof typeof locales];
+  return number.toLocaleString(localeString, {
+    minimumIntegerDigits: minimumIntegerDigits,
+    useGrouping: false,
+  });
+};
+
 export const createTInstance = (
   locale: string,
   namespace?: string | string[],

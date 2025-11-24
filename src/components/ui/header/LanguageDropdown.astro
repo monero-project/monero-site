@@ -102,7 +102,7 @@ const hrefFor = (locale: string) =>
     padding: 0.5rem;
     user-select: none;
 
-    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(-10px);
     transition: transform 0.2s ease;
@@ -138,7 +138,7 @@ const hrefFor = (locale: string) =>
 
   /* Open state: toggled by click (details[open]) */
   .lang-container[open] .lang-dropdown {
-    opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
   }

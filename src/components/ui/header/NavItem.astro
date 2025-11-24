@@ -176,7 +176,7 @@ const dir = getDirection(getLocale(Astro.url));
     inset-inline: 0;
     inset-block-start: 100%;
 
-    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(-10px);
     transition: transform 0.2s ease;
@@ -267,7 +267,7 @@ const dir = getDirection(getLocale(Astro.url));
         :has(.dropdown :focus-visible)
       )
       > .dropdown {
-      opacity: 1;
+      visibility: visible;
       pointer-events: auto;
       transform: translateY(0);
     }

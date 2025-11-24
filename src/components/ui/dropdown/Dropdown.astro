@@ -68,14 +68,14 @@ const { label } = Astro.props;
     padding: 0.5rem;
     user-select: none;
 
-    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(-10px);
     transition: transform 0.2s ease;
   }
 
   .dropdown[open] .dropdown-content {
-    opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
   }
