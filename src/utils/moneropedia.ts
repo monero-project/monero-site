@@ -1,4 +1,5 @@
 import { getCollection } from "astro:content";
+
 import { defaultLocale } from "@/i18n/config";
 
 export interface MoneropediaEntry {

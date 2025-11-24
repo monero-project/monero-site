@@ -1,16 +1,18 @@
 ---
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+
 import Layout from "@/layouts/Layout.astro";
+
+import GetStartedCard from "@/components/pages/index/GetStartedCard.astro";
 import Hero from "@/components/pages/index/Hero.astro";
 import IndexCard from "@/components/pages/index/IndexCard.astro";
-import GetStartedCard from "@/components/pages/index/GetStartedCard.astro";
 import ResourceCard from "@/components/pages/index/ResourceCard.astro";
-import placeholder from "@/assets/icons/mask/placeholder.avif?url";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
-import userGuidesIcon from "@/assets/icons/mask/user-guides.avif?url";
-import faqIcon from "@/assets/icons/mask/faq.avif?url";
 import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif?url";
+import faqIcon from "@/assets/icons/mask/faq.avif?url";
+import placeholder from "@/assets/icons/mask/placeholder.avif?url";
+import userGuidesIcon from "@/assets/icons/mask/user-guides.avif?url";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);

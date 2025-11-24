@@ -1,46 +1,47 @@
 ---
-import NavItem from "@/components/ui/header/NavItem.astro";
-import LanguageDropdown from "@/components/ui/header/LanguageDropdown.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { getLocale } from "astro-i18n-aut";
 import { localizeHref } from "@/i18n/utils";
+import { getLocale } from "astro-i18n-aut";
 
-import hamburger from "@/assets/icons/mask/hamburger.avif?url";
+import LanguageDropdown from "@/components/ui/header/LanguageDropdown.astro";
+import NavItem from "@/components/ui/header/NavItem.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
 import close from "@/assets/icons/mask/close.avif?url";
+import hamburger from "@/assets/icons/mask/hamburger.avif?url";
 
-import whatIsMonero from "@/assets/icons/color/light/what-is-monero.avif?url";
 import acceptMonero from "@/assets/icons/color/light/accept-monero.avif?url";
 import contribute from "@/assets/icons/color/light/contribute.avif?url";
-import mining from "@/assets/icons/color/light/mining.avif?url";
+import developerGuides from "@/assets/icons/color/light/developer-guides.avif?url";
 import faq from "@/assets/icons/color/light/faq.avif?url";
-import workgroups from "@/assets/icons/color/light/workgroups.avif?url";
-import sponsorships from "@/assets/icons/color/light/sponsorships.avif?url";
 import hangouts from "@/assets/icons/color/light/hangouts.avif?url";
 import merchantsExchanges from "@/assets/icons/color/light/merchants-exchanges.avif?url";
+import mining from "@/assets/icons/color/light/mining.avif?url";
 import moneropedia from "@/assets/icons/color/light/moneropedia.avif?url";
-import roadmap from "@/assets/icons/color/light/roadmap.avif?url";
-import researchLab from "@/assets/icons/color/light/research-lab.avif?url";
-import userGuides from "@/assets/icons/color/light/user-guides.avif?url";
-import developerGuides from "@/assets/icons/color/light/developer-guides.avif?url";
-import tools from "@/assets/icons/color/light/tools.avif?url";
 import pressKit from "@/assets/icons/color/light/press-kit.avif?url";
+import researchLab from "@/assets/icons/color/light/research-lab.avif?url";
+import roadmap from "@/assets/icons/color/light/roadmap.avif?url";
+import sponsorships from "@/assets/icons/color/light/sponsorships.avif?url";
+import tools from "@/assets/icons/color/light/tools.avif?url";
+import userGuides from "@/assets/icons/color/light/user-guides.avif?url";
+import whatIsMonero from "@/assets/icons/color/light/what-is-monero.avif?url";
+import workgroups from "@/assets/icons/color/light/workgroups.avif?url";
 
-import whatIsMoneroDark from "@/assets/icons/color/dark/what-is-monero.avif?url";
 import acceptMoneroDark from "@/assets/icons/color/dark/accept-monero.avif?url";
 import contributeDark from "@/assets/icons/color/dark/contribute.avif?url";
-import miningDark from "@/assets/icons/color/dark/mining.avif?url";
+import developerGuidesDark from "@/assets/icons/color/dark/developer-guides.avif?url";
 import faqDark from "@/assets/icons/color/dark/faq.avif?url";
-import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif?url";
-import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif?url";
 import hangoutsDark from "@/assets/icons/color/dark/hangouts.avif?url";
 import merchantsExchangesDark from "@/assets/icons/color/dark/merchants-exchanges.avif?url";
+import miningDark from "@/assets/icons/color/dark/mining.avif?url";
 import moneropediaDark from "@/assets/icons/color/dark/moneropedia.avif?url";
-import roadmapDark from "@/assets/icons/color/dark/roadmap.avif?url";
-import researchLabDark from "@/assets/icons/color/dark/research-lab.avif?url";
-import userGuidesDark from "@/assets/icons/color/dark/user-guides.avif?url";
-import developerGuidesDark from "@/assets/icons/color/dark/developer-guides.avif?url";
-import toolsDark from "@/assets/icons/color/dark/tools.avif?url";
 import pressKitDark from "@/assets/icons/color/dark/press-kit.avif?url";
+import researchLabDark from "@/assets/icons/color/dark/research-lab.avif?url";
+import roadmapDark from "@/assets/icons/color/dark/roadmap.avif?url";
+import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif?url";
+import toolsDark from "@/assets/icons/color/dark/tools.avif?url";
+import userGuidesDark from "@/assets/icons/color/dark/user-guides.avif?url";
+import whatIsMoneroDark from "@/assets/icons/color/dark/what-is-monero.avif?url";
+import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif?url";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
@@ -194,7 +195,7 @@ const navItems = [
         alt=""
         aria-hidden="true"
       />
-      <span class="word">MONERO</span>
+      <span>MONERO</span>
     </a>
 
     <input
@@ -270,14 +271,8 @@ const navItems = [
   }
 
   .mark {
-    display: grid;
-    place-items: center;
     inline-size: 1.625rem;
     block-size: 1.625rem;
-  }
-
-  .nav {
-    justify-self: center;
   }
 
   .nav-list {

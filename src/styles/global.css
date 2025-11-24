@@ -23,6 +23,7 @@
 
   /* Typography - Font Sizes */
   --font-size-base: 1rem; /* body-base */
+  --font-size-xs: 0.75rem; /* extra small text */
   --font-size-sm: 0.9rem; /* small text */
   --font-size-lg: 1.125rem; /* body-lg */
   --font-size-xl: clamp(1.2rem, 2vw, 1.5rem); /* subhead1 */
@@ -71,8 +72,9 @@
 }
 
 /* ========================================
-   Global HTML Element Styles
+   Global HTML Element Styles (do not define classes here!)
    ======================================== */
+
 a {
   color: var(--monero-orange);
   text-decoration: none;

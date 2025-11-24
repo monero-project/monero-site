@@ -1,8 +1,10 @@
 ---
-import { getLocale } from "astro-i18n-aut";
-import { locales, defaultLocale } from "@/i18n/config";
+import { defaultLocale, locales } from "@/i18n/config";
 import { getLocaleName } from "@/i18n/utils";
+import { getLocale } from "astro-i18n-aut";
+
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+
 import Globe from "@/assets/icons/mask/globe.avif?url";
 
 const currentLocale = getLocale(Astro.url);

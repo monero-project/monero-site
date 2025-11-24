@@ -1,9 +1,11 @@
 ---
-import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif?url";
-import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import ColorIcon from "@/components/ui/ColorIcon.astro";
 import { getDirection, getLocale } from "@/i18n/utils";
+
+import ColorIcon from "@/components/ui/ColorIcon.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
+import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif?url";
 
 export interface DropdownItem {
   label: string;
@@ -127,7 +129,6 @@ const dir = getDirection(getLocale(Astro.url));
     position: relative;
     display: flex;
     align-items: center;
-    gap: 0.35rem;
     padding: 0.4rem 0;
   }
 
@@ -135,7 +136,6 @@ const dir = getDirection(getLocale(Astro.url));
     color: var(--paragraph-main);
     text-decoration: none;
     font-weight: 500;
-    flex: 1;
     display: flex;
     align-items: center;
     user-select: none;
@@ -258,8 +258,15 @@ const dir = getDirection(getLocale(Astro.url));
     opacity: 1;
   }
 
+  /* highlight link when hovered/focused */
+  .nav-item--dropdown:is(:hover, :focus-within, :has(.dropdown :focus-visible))
+    > .row
+    > .link {
+    color: var(--heading-color);
+  }
+
   /* === Desktop hover/focus behaviour === */
-  @media (hover: hover) and (pointer: fine) {
+  @media (hover: hover) and (pointer: fine) and (min-width: 1201px) {
     /* show dropdown on hover/focus */
     .nav-item--dropdown:is(
         :hover,
@@ -270,17 +277,6 @@ const dir = getDirection(getLocale(Astro.url));
       visibility: visible;
       pointer-events: auto;
       transform: translateY(0);
-    }
-
-    /* highlight link when open */
-    .nav-item--dropdown:is(
-        :hover,
-        :focus-within,
-        :has(.dropdown :focus-visible)
-      )
-      > .row
-      > .link {
-      color: var(--heading-color);
     }
 
     /* rotate caret when open */
@@ -305,10 +301,6 @@ const dir = getDirection(getLocale(Astro.url));
 
   /* === Mobile / tablet (drawer accordion) === */
   @media (max-width: 1200px) {
-    .item {
-      position: relative;
-    }
-
     .row {
       padding: 0.5rem 0;
     }
@@ -326,19 +318,6 @@ const dir = getDirection(getLocale(Astro.url));
       display: none;
     }
 
-    .dd-toggle:checked ~ .row .mobile-open {
-      display: none;
-    }
-
-    .dd-toggle:checked ~ .row .mobile-close {
-      display: block;
-      position: absolute;
-      inset: 0;
-      pointer-events: auto;
-      cursor: pointer;
-      z-index: 1;
-    }
-
     .dropdown {
       position: static;
       width: unset;
@@ -349,7 +328,6 @@ const dir = getDirection(getLocale(Astro.url));
       /* accordion behaviour - collapsed by default */
       max-height: 0;
       overflow: hidden;
-      transform: unset;
     }
 
     .dropdown::before {
@@ -360,7 +338,7 @@ const dir = getDirection(getLocale(Astro.url));
       background: none;
       box-shadow: none;
       border-radius: 0;
-      padding-block: 0.5rem 0.5rem;
+      padding-block: 1rem 0rem;
     }
 
     .dropdown-content {
@@ -373,8 +351,21 @@ const dir = getDirection(getLocale(Astro.url));
       max-height: unset;
     }
 
-    .dd-toggle:checked ~ .row > .caret {
+    .dd-toggle:checked ~ .row > .link > .caret {
       transform: rotate(180deg);
+    }
+
+    .dd-toggle:checked ~ .row .mobile-open {
+      display: none;
+    }
+
+    .dd-toggle:checked ~ .row .mobile-close {
+      display: block;
+      position: absolute;
+      inset: 0;
+      pointer-events: auto;
+      cursor: pointer;
+      z-index: 1;
     }
   }
 

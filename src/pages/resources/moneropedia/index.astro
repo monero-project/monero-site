@@ -1,11 +1,13 @@
 ---
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import safeMarkdown from "@/utils/safeMarkdown";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
-import Accordion from "@/components/ui/Accordion.astro";
+
 import Layout from "@/layouts/Layout.astro";
-import { getLocale, createTInstance, localizeHref } from "@/i18n/utils";
+
+import Accordion from "@/components/ui/Accordion.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import safeMarkdown from "@/utils/safeMarkdown";
 
 type MoneropediaItem = CollectionEntry<"moneropedia"> & {
   href: string;

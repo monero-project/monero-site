@@ -1,8 +1,10 @@
 ---
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import externalLink from "@/assets/icons/mask/external-link.avif?url";
+import { getDirection, localizeHref } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
-import { localizeHref, getDirection } from "@/i18n/utils";
+
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import externalLink from "@/assets/icons/mask/external-link.avif?url";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
@@ -268,10 +270,6 @@ const bottomLinks: Link[] = [
     justify-content: center;
   }
 
-  .inline-item a {
-    color: var(--footer-muted);
-  }
-
   .inline-item a:hover,
   .inline-item a:focus {
     color: var(--heading-color);
@@ -290,9 +288,6 @@ const bottomLinks: Link[] = [
   @media (max-width: 560px) {
     .grid {
       grid-template-columns: 1fr;
-    }
-    .wrap {
-      padding: 40px 16px 22px;
     }
   }
 </style>

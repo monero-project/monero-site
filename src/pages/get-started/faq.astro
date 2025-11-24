@@ -1,10 +1,6 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import TitleCard from "@/components/ui/TitleCard.astro";
-import Accordion from "@/components/ui/Accordion.astro";
-import type { AccordionItem } from "@/components/ui/Accordion.astro";
-import IndexCard from "@/components/pages/index/IndexCard.astro";
-import ResourceCard from "@/components/pages/index/ResourceCard.astro";
+import "@/styles/moneropedia-link.css";
+
 import { createTInstance, getLocale } from "@/i18n/utils";
 import {
   getMoneropediaEntries,
@@ -12,11 +8,17 @@ import {
 } from "@/utils/moneropedia";
 import { marked } from "marked";
 
-import userGuidesIcon from "@/assets/icons/mask/user-guides.avif?url";
+import Layout from "@/layouts/Layout.astro";
+
+import IndexCard from "@/components/pages/index/IndexCard.astro";
+import ResourceCard from "@/components/pages/index/ResourceCard.astro";
+import type { AccordionItem } from "@/components/ui/Accordion.astro";
+import Accordion from "@/components/ui/Accordion.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+
 import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif?url";
 import faqIcon from "@/assets/icons/mask/faq.avif?url";
-
-import "@/styles/moneropedia-link.css";
+import userGuidesIcon from "@/assets/icons/mask/user-guides.avif?url";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);

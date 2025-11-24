@@ -1,13 +1,13 @@
 ---
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import externalLink from "@/assets/icons/mask/external-link.avif?url";
-
-import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
-import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
-import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
-import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
-
 import { getDirection, getLocale } from "@/i18n/utils";
+
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
+import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
+import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
+import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
+import externalLink from "@/assets/icons/mask/external-link.avif?url";
 
 interface Tags {
   desktop?: string[]; // windows | macos | linux (aliases: win, mac, osx)
@@ -232,7 +232,7 @@ const showPlatforms = desktop.length > 0 || mobile.length > 0;
     padding: 0.25rem 0.5rem;
     border-radius: 999px;
     background: color-mix(in oklab, var(--card-color), black 10%);
-    font-size: var(--font-size-xs, 0.85rem);
+    font-size: 0.85rem;
     color: var(--paragraph-main);
     line-height: 1;
   }

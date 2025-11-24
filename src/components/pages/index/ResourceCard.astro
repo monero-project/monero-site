@@ -1,6 +1,10 @@
 ---
-import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
+import { getDirection, getLocale } from "@/i18n/utils";
+
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
+
 export interface Props {
   icon?: string;
   title: string;
@@ -8,7 +12,6 @@ export interface Props {
   ctaLabel?: string;
   ctaHref?: string;
 }
-import { getDirection, getLocale } from "@/i18n/utils";
 
 const {
   icon = null,

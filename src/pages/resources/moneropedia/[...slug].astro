@@ -1,16 +1,19 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { getCollection, getEntry } from "astro:content";
-import Layout from "@/layouts/Layout.astro";
-import MoneropediaContent from "@/components/pages/moneropedia/MoneropediaContent.astro";
 import { defaultLocale } from "@/i18n/config";
 import {
-  localizeHref,
-  getLocale,
   createTInstance,
   getDirection,
+  getLocale,
+  localizeHref,
 } from "@/i18n/utils";
+import type { CollectionEntry } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
+
+import Layout from "@/layouts/Layout.astro";
+
+import MoneropediaContent from "@/components/pages/moneropedia/MoneropediaContent.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+
 import backCaret from "@/assets/icons/mask/back-caret.avif?url";
 
 export async function getStaticPaths() {

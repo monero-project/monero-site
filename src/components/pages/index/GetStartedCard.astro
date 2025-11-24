@@ -1,8 +1,10 @@
 ---
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
-import { localizeHref, getDirection, localizeNumber } from "@/i18n/utils";
+import { getDirection, localizeHref, localizeNumber } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
+
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
 
 export interface Props {
   step: string | number;

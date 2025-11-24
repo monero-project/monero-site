@@ -1,7 +1,8 @@
-import { defaultLocale, locales, rtlLocales } from "@/i18n/config";
 import { getLocale } from "astro-i18n-aut";
 import { createInstance } from "i18next";
 import Backend from "i18next-fs-backend";
+
+import { defaultLocale, locales, rtlLocales } from "@/i18n/config";
 
 export const localizeHref = (locale: string, href: string): string => {
   if (href.startsWith("http")) return href;
@@ -11,33 +12,29 @@ export const localizeHref = (locale: string, href: string): string => {
   return `${localized}/`;
 };
 
-export const getLocaleName = (locale: string): { name: string } | null => {
-  const fullLocale = (locales as Record<string, string>)[locale];
-  if (!fullLocale) return null;
-  const displayNames = new Intl.DisplayNames([locale], { type: "language" });
-  const name = displayNames.of(locale);
-  if (!name) return null;
-  const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
-  return { name: capitalizedName };
-};
-
-export const getDirection = (locale: string): "ltr" | "rtl" => {
-  return rtlLocales.includes(locale) ? "rtl" : "ltr";
-};
-
 export const localizeNumber = (
   number: number,
   locale: string,
   minimumIntegerDigits: number = 1,
 ): string => {
-  if (!Object.keys(locales).includes(locale)) {
-    locale = defaultLocale;
-  }
-  const localeString = locales[locale as keyof typeof locales];
+  // We map the short locale (ex. "ar") to the full locale string ("ar-SA") from config.ts
+  const localeString =
+    (locales as Record<string, string>)[locale] || locales[defaultLocale];
   return number.toLocaleString(localeString, {
-    minimumIntegerDigits: minimumIntegerDigits,
+    minimumIntegerDigits,
     useGrouping: false,
   });
+};
+
+export const getLocaleName = (locale: string): { name: string } | null => {
+  const displayNames = new Intl.DisplayNames([locale], { type: "language" });
+  const name = displayNames.of(locale);
+  if (!name) return null;
+  return { name: name.charAt(0).toUpperCase() + name.slice(1) };
+};
+
+export const getDirection = (locale: string): "ltr" | "rtl" => {
+  return rtlLocales.includes(locale) ? "rtl" : "ltr";
 };
 
 export const createTInstance = (

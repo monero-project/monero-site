@@ -5,5 +5,4 @@ export const locales = {
   fr: "fr-FR",
   ar: "ar-SA",
 };
-
 export const rtlLocales = ["ar", "he", "fa", "ur"]; // Arabic, Hebrew, Persian, Urdu

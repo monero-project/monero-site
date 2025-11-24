@@ -1,10 +1,13 @@
 ---
 import { getLocale, localizeHref } from "@/i18n/utils";
+
+import Button from "@/components/ui/Button.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import moneroOutline from "@/assets/icons/mask/monerooutline.avif?url";
+
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
-import moneroOutline from "@/assets/icons/mask/monerooutline.avif?url";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import Button from "@/components/ui/Button.astro";
 ---
 
 <div class="hero" aria-labelledby="hero-title">

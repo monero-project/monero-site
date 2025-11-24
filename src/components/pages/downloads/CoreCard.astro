@@ -1,18 +1,19 @@
 ---
+import safeMarkdown from "@/utils/safeMarkdown.ts";
+
+import Button from "@/components/ui/Button.astro";
+import ColorIcon from "@/components/ui/ColorIcon.astro";
 import Dropdown from "@/components/ui/dropdown/Dropdown.astro";
 import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
 import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
-import Button from "@/components/ui/Button.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import safeMarkdown from "@/utils/safeMarkdown.ts";
 
-import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
-import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
+import magnetIcon from "@/assets/icons/color/magnet.avif?url";
+import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
 import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
 import freebsdIcon from "@/assets/icons/mask/brand/freebsd.avif?url";
-import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
-import ColorIcon from "@/components/ui/ColorIcon.astro";
-import magnetIcon from "@/assets/icons/color/magnet.avif?url";
+import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
+import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
 
 export interface DownloadLink {
   href: string;
@@ -98,8 +99,7 @@ const PLATFORM_ICONS: Record<string, string> = {
                     </span>
                   )}
                   <span>
-                    {t(`platforms.${item.platform}`)} (
-                    {t(`core.formats.${item.format}`)})
+                    {`${t(`platforms.${item.platform}`)} (${t(`core.formats.${item.format}`)})`}
                   </span>
                 </span>
                 {item.size && <span slot="meta">{item.size}</span>}
