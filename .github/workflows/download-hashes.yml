@@ -1,3 +1,6 @@
+# Upgrade and redesign of the original hashes.yml workflow by 00-matt, plowsof, binaryFate
+# Remade by: redsh4de for the Monero site redesign project
+# Purpose: Validate Monero download hashes, torrents, and webseeds + create PRs to update download info
 name: "Download Hashes"
 
 on:
@@ -236,7 +239,7 @@ jobs:
           # Clone and pin the monero-torrent repo
           git clone --recurse-submodules https://github.com/plowsof/monero-torrent.git
           cd monero-torrent
-          git reset --hard e883850bf24811507e49cf4f4f16126ed2031295
+          git reset --hard 761738fd9f0d60fe655276989648a98ba6ab8188
           cd ..
 
           # Move the already-downloaded monero-* files into cdn
@@ -305,6 +308,27 @@ jobs:
           echo "Torrent files and magnet links match local build and CDN."
           echo "magnet_gui=$MAGNET_LINK_GUI" >> $GITHUB_OUTPUT
           echo "magnet_cli=$MAGNET_LINK_CLI" >> $GITHUB_OUTPUT
+
+          # Check webseed URLs
+          CDN_URL="https://downloads.getmonero.org"
+          if ! wget --spider -q "$CDN_URL/hashes-$version_cli.txt"; then
+            echo "::warning title=Webseed-URLs::Webseed URL unreachable: $CDN_URL/hashes-$version_cli.txt"
+          fi
+          if ! wget --spider -q "$CDN_URL/hashes-$version_gui.txt"; then
+            echo "::warning title=Webseed-URLs::Webseed URL unreachable: $CDN_URL/hashes-$version_gui.txt"
+          fi
+          for file in $(awk '/monero-/ {print $2}' "$HASH_FILE"); do
+            dir="cli"
+            part="monero-$version_cli"
+            if [[ $file =~ gui ]]; then
+              dir="gui"
+              part="monero-gui-$version_gui"
+            fi
+            url="$CDN_URL/${part}/${dir}/${file}"
+            if ! wget --spider -q "$url"; then
+              echo "::warning title=Webseed-URLs::Webseed URL unreachable: $url"
+            fi
+          done
 
   update-repo:
     needs: validate-download-hashes
