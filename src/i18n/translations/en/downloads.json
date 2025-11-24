@@ -8,6 +8,15 @@
     "community": "Community"
   },
 
+  "platforms": {
+    "windows": "Windows",
+    "macos": "macOS",
+    "linux": "Linux",
+    "android": "Android",
+    "freebsd": "FreeBSD",
+    "ios": "iOS"
+  },
+
   "core": {
     "gui": {
       "title": "Monero GUI Wallet",
@@ -41,7 +50,20 @@
     "verifyDescription": "You are strongly advised to [verify the SHA-256 hash](https://docs.getmonero.org/interacting/verify-monero-binaries) of the file you downloaded.\n\nThis will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds.",
     "viewHashes": "View hashes",
     "downloadButton": "Download",
-    "torrent": "Torrent"
+    "torrent": "Torrent",
+
+    "formats": {
+      "installer": "Installer",
+      "zip": ".zip",
+      "tarball": "Tarball",
+      "64bit": "64-bit",
+      "32bit": "32-bit",
+      "intel": "Intel",
+      "appleSilicon": "Apple Silicon",
+      "armv8": "ARMv8",
+      "armv7": "ARMv7",
+      "riscv64": "RISC-V 64-bit"
+    }
   },
 
   "community": {

@@ -56,11 +56,11 @@ const ICONS: Record<string, string> = {
 };
 
 const LABEL: Record<string, string> = {
-  windows: "Windows",
-  macos: "macOS",
-  linux: "Linux",
-  android: "Android",
-  ios: "iOS",
+  windows: t("platforms.windows") || "Windows",
+  macos: t("platforms.macos") || "macOS",
+  linux: t("platforms.linux") || "Linux",
+  android: t("platforms.android") || "Android",
+  ios: t("platforms.ios") || "iOS",
 };
 
 const VALID = {

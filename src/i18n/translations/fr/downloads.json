@@ -8,6 +8,15 @@
     "community": "Communauté"
   },
 
+  "platforms": {
+    "windows": "Windows",
+    "macos": "macOS",
+    "linux": "Linux",
+    "android": "Android",
+    "freebsd": "FreeBSD",
+    "ios": "iOS"
+  },
+
   "core": {
     "gui": {
       "title": "Portefeuille GUI Monero",
@@ -40,7 +49,20 @@
     "verifyDownload": "Vérifier le téléchargement",
     "verifyDescription": "Il est fortement recommandé de [vérifier le hash SHA-256](https://docs.getmonero.org/interacting/verify-monero-binaries) du fichier que vous avez téléchargé.\n\nCela confirmera que les fichiers que vous avez téléchargés correspondent parfaitement aux fichiers téléchargés par le groupe de travail de développement Monero. Veuillez ne pas sous-estimer cette étape, une archive corrompue pourrait entraîner une perte de fonds.",
     "downloadButton": "Télécharger",
-    "torrent": "Torrent"
+    "torrent": "Torrent",
+
+    "formats": {
+      "installer": "Programme d'installation",
+      "zip": ".zip",
+      "tarball": "Archive tar",
+      "64bit": "64 bits",
+      "32bit": "32 bits",
+      "intel": "Intel",
+      "appleSilicon": "Apple Silicon",
+      "armv8": "ARMv8",
+      "armv7": "ARMv7",
+      "riscv64": "RISC-V 64 bits"
+    }
   },
 
   "community": {

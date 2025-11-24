@@ -41,16 +41,7 @@ const t = await createTInstance(locale, "downloads");
             >,
           )}
           downloads={coreDownloads.gui.downloads as DownloadLink[]}
-          labels={{
-            version: t("core.version"),
-            releaseNotes: t("core.releaseNotes"),
-            sourceCode: t("core.sourceCode"),
-            download: t("core.downloadButton"),
-            torrent: t("core.torrent"),
-            verifyDownloads: t("core.verifyDownload"),
-            verifyDescription: t("core.verifyDescription"),
-            viewHashes: t("core.viewHashes"),
-          }}
+          t={t}
         />
 
         <!-- Monero CLI Card -->
@@ -72,16 +63,7 @@ const t = await createTInstance(locale, "downloads");
             >,
           )}
           downloads={coreDownloads.cli.downloads as DownloadLink[]}
-          labels={{
-            version: t("core.version"),
-            releaseNotes: t("core.releaseNotes"),
-            sourceCode: t("core.sourceCode"),
-            download: t("core.downloadButton"),
-            torrent: t("core.torrent"),
-            verifyDownloads: t("core.verifyDownload"),
-            verifyDescription: t("core.verifyDescription"),
-            viewHashes: t("core.viewHashes"),
-          }}
+          t={t}
         />
       </div>
     </Fragment>

@@ -8,6 +8,15 @@
     "community": "Comunidad"
   },
 
+  "platforms": {
+    "windows": "Windows",
+    "macos": "macOS",
+    "linux": "Linux",
+    "android": "Android",
+    "freebsd": "FreeBSD",
+    "ios": "iOS"
+  },
+
   "core": {
     "gui": {
       "title": "Billetera GUI de Monero",
@@ -40,7 +49,20 @@
     "verifyDownload": "Verificar descarga",
     "verifyDescription": "Se recomienda encarecidamente [verificar el hash SHA-256](https://docs.getmonero.org/interacting/verify-monero-binaries) del archivo que descargaste.\n\nEsto confirmará que los archivos que descargaste coinciden perfectamente con los archivos subidos por el grupo de trabajo de desarrollo de Monero. Por favor, no subestimes este paso, un archivo corrupto podría resultar en la pérdida de fondos.",
     "downloadButton": "Descargar",
-    "torrent": "Torrent"
+    "torrent": "Torrent",
+
+    "formats": {
+      "installer": "Instalador",
+      "zip": ".zip",
+      "tarball": "Archivo tar",
+      "64bit": "64 bits",
+      "32bit": "32 bits",
+      "intel": "Intel",
+      "appleSilicon": "Apple Silicon",
+      "armv8": "ARMv8",
+      "armv7": "ARMv7",
+      "riscv64": "RISC-V 64 bits"
+    }
   },
 
   "community": {

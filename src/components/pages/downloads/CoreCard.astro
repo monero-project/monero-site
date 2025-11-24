@@ -16,21 +16,10 @@ import magnetIcon from "@/assets/icons/color/magnet.avif?url";
 
 export interface DownloadLink {
   href: string;
-  label: string;
+  platform: "windows" | "macos" | "linux" | "android" | "freebsd";
+  format: string;
   size?: string;
   target?: string;
-  platform?: "windows" | "macos" | "linux" | "android" | "freebsd";
-}
-
-interface Labels {
-  version?: string;
-  releaseNotes?: string;
-  sourceCode?: string;
-  download?: string;
-  torrent?: string;
-  verifyDownloads?: string;
-  verifyDescription?: string;
-  viewHashes?: string;
 }
 
 interface Props {
@@ -47,7 +36,7 @@ interface Props {
   torrentUrl?: string;
   magnetUrl?: string;
   verifyLink?: string;
-  labels?: Labels;
+  t: (key: string) => string;
 }
 
 const {
@@ -63,17 +52,7 @@ const {
   releaseNotesUrl,
   torrentUrl,
   magnetUrl,
-  labels = {
-    version: "Version",
-    releaseNotes: "Release notes",
-    sourceCode: "Source code",
-    download: "Download",
-    torrent: "Torrent",
-    verifyDownloads: "Verify Downloads",
-    verifyDescription:
-      "After downloading, verify the integrity using the provided hashes:",
-    viewHashes: "View Hashes & Signatures",
-  },
+  t,
 } = Astro.props;
 
 const PLATFORM_ICONS: Record<string, string> = {
@@ -102,7 +81,7 @@ const PLATFORM_ICONS: Record<string, string> = {
       }
     </ul>
     <div class="download-actions">
-      <Dropdown label={labels.download!}>
+      <Dropdown label={t("core.downloadButton")}>
         {
           downloads.map((item) =>
             item === "separator" ? (
@@ -118,7 +97,10 @@ const PLATFORM_ICONS: Record<string, string> = {
                       />
                     </span>
                   )}
-                  <span>{item.label}</span>
+                  <span>
+                    {t(`platforms.${item.platform}`)} (
+                    {t(`core.formats.${item.format}`)})
+                  </span>
                 </span>
                 {item.size && <span slot="meta">{item.size}</span>}
               </DropdownItem>
@@ -135,7 +117,7 @@ const PLATFORM_ICONS: Record<string, string> = {
               as="a"
               class="torrent-button"
             >
-              {labels.torrent}
+              {t("core.torrent")}
             </Button>
             <Button
               variant="secondary"
@@ -167,7 +149,7 @@ const PLATFORM_ICONS: Record<string, string> = {
               rel="noopener noreferrer"
               class="metadata-link"
             >
-              {labels.releaseNotes}
+              {t("core.releaseNotes")}
             </a>
           </>
         )
@@ -182,20 +164,20 @@ const PLATFORM_ICONS: Record<string, string> = {
               rel="noopener noreferrer"
               class="metadata-link"
             >
-              {labels.sourceCode}
+              {t("core.sourceCode")}
             </a>
           </>
         )
       }
     </div>
     <div class="verification">
-      <h4>{labels.verifyDownloads}</h4>
-      <p set:html={safeMarkdown.parse(labels.verifyDescription ?? "")} />
+      <h4>{t("core.verifyDownload")}</h4>
+      <p set:html={safeMarkdown.parse(t("core.verifyDescription"))} />
       <a
         href="/downloads/hashes.txt"
         class="verify-link"
         target="_blank"
-        rel="noopener noreferrer">{labels.viewHashes}</a
+        rel="noopener noreferrer">{t("core.viewHashes")}</a
       >
     </div>
   </div>

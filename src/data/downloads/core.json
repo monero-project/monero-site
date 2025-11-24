@@ -4,34 +4,34 @@
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/gui/win64install",
-        "label": "Windows (Installer)",
         "platform": "windows",
+        "format": "installer",
         "size": "95.19 MB"
       },
       {
         "href": "https://downloads.getmonero.org/gui/win64",
-        "label": "Windows (.zip)",
         "platform": "windows",
+        "format": "zip",
         "size": "132.46 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/gui/mac64",
-        "label": "macOS (Intel)",
         "platform": "macos",
+        "format": "intel",
         "size": "65.36 MB"
       },
       {
         "href": "https://downloads.getmonero.org/gui/macarm8",
-        "label": "macOS (Apple Silicon)",
         "platform": "macos",
+        "format": "appleSilicon",
         "size": "47.04 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/gui/linux64",
-        "label": "Linux (Tarball)",
         "platform": "linux",
+        "format": "tarball",
         "size": "125.59 MB"
       }
     ],
@@ -46,78 +46,78 @@
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/cli/win64",
-        "label": "Windows (64-bit)",
         "platform": "windows",
+        "format": "64bit",
         "size": "84.24 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/win32",
-        "label": "Windows (32-bit)",
         "platform": "windows",
+        "format": "32bit",
         "size": "80.73 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/mac64",
-        "label": "macOS (Intel)",
         "platform": "macos",
+        "format": "intel",
         "size": "75.86 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/macarm8",
-        "label": "macOS (Apple Silicon)",
         "platform": "macos",
+        "format": "appleSilicon",
         "size": "66.13 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/linux64",
-        "label": "Linux (64-bit)",
         "platform": "linux",
+        "format": "64bit",
         "size": "79.72 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linux32",
-        "label": "Linux (32-bit)",
         "platform": "linux",
+        "format": "32bit",
         "size": "80.90 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linuxarm8",
-        "label": "Linux (ARMv8)",
         "platform": "linux",
+        "format": "armv8",
         "size": "70.07 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linuxarm7",
-        "label": "Linux (ARMv7)",
         "platform": "linux",
+        "format": "armv7",
         "size": "68.79 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linuxriscv64",
-        "label": "Linux (RISC-V 64-bit)",
         "platform": "linux",
+        "format": "riscv64",
         "size": "74.21 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/androidarm8",
-        "label": "Android (ARMv8)",
         "platform": "android",
+        "format": "armv8",
         "size": "85.54 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/androidarm7",
-        "label": "Android (ARMv7)",
         "platform": "android",
+        "format": "armv7",
         "size": "87.69 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/freebsd64",
-        "label": "FreeBSD (64-bit)",
         "platform": "freebsd",
+        "format": "64bit",
         "size": "71.24 MB"
       }
     ],

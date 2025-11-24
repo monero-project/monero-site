@@ -8,6 +8,15 @@
     "community": "المجتمع"
   },
 
+  "platforms": {
+    "windows": "ويندوز",
+    "macos": "ماك أو إس",
+    "linux": "لينكس",
+    "android": "أندرويد",
+    "freebsd": "فري بي إس دي",
+    "ios": "آي أو إس"
+  },
+
   "core": {
     "gui": {
       "title": "محفظة مونيرو الرسومية",
@@ -41,7 +50,20 @@
     "verifyDescription": "يُنصح بشدة [بالتحقق من تجزئة SHA-256](https://docs.getmonero.org/interacting/verify-monero-binaries) للملف الذي قمت بتنزيله.\n\nسيؤكد ذلك أن الملفات التي قمت بتنزيلها تطابق تماماً الملفات المرفوعة من قبل مجموعة عمل تطوير مونيرو. يرجى عدم التقليل من هذه الخطوة، قد يؤدي الأرشيف التالف إلى فقدان الأموال.\n\n**تحقق دائماً من تحميلاتك!**",
     "viewHashes": "عرض التجزئات",
     "downloadButton": "تحميل",
-    "torrent": "تورنت"
+    "torrent": "تورنت",
+
+    "formats": {
+      "installer": "مثبت",
+      "zip": ".zip",
+      "tarball": "أرشيف tar",
+      "64bit": "64 بت",
+      "32bit": "32 بت",
+      "intel": "إنتل",
+      "appleSilicon": "أبل سيليكون",
+      "armv8": "ARMv8",
+      "armv7": "ARMv7",
+      "riscv64": "RISC-V 64 بت"
+    }
   },
 
   "community": {
