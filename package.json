@@ -2,6 +2,9 @@
   "name": "monero-site-next",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=22.x"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
