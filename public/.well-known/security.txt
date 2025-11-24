@@ -1,0 +1,17 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:hardware@getmonero.org
+Expires: 2026-04-20T03:20:00.000Z
+Encryption: https://github.com/plowsof/pgp/blob/main/plowsofsmol.asc
+Preferred-Languages: en,eo
+Canonical: https://beta.monerodevs.org/.well-known/security.txt
+Policy: https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md
+Hiring: https://ccs.getmonero.org/
+-----BEGIN PGP SIGNATURE-----
+
+iI0EARMIADUWIQTci88MUIPyAweCgD5OipEtQO0FLAUCaSRNthcccGxvd3NvZkBw
+cm90b25tYWlsLmNvbQAKCRBOipEtQO0FLCrTAP9ro83eaebp8hms1vTQvaAaeZRn
+hGJdz1Z5tk5BQvtV0AD/cm9XMofcMN3feFDDF/RsjEbj/wq6PK4rW74lakQa4gU=
+=cB+Q
+-----END PGP SIGNATURE-----

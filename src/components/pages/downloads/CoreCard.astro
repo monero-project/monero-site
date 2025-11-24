@@ -63,7 +63,6 @@ const {
   releaseNotesUrl,
   torrentUrl,
   magnetUrl,
-  verifyLink,
   labels = {
     version: "Version",
     releaseNotes: "Release notes",
@@ -191,8 +190,13 @@ const PLATFORM_ICONS: Record<string, string> = {
     </div>
     <div class="verification">
       <h4>{labels.verifyDownloads}</h4>
-      <p set:html={safeMarkdown.parseInline(labels.verifyDescription ?? "")} />
-      <a href={verifyLink ?? "#"} class="verify-link">{labels.viewHashes}</a>
+      <p set:html={safeMarkdown.parse(labels.verifyDescription ?? "")} />
+      <a
+        href="/downloads/hashes.txt"
+        class="verify-link"
+        target="_blank"
+        rel="noopener noreferrer">{labels.viewHashes}</a
+      >
     </div>
   </div>
 </div>

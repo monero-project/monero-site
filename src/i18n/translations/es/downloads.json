@@ -38,6 +38,7 @@
     "releaseNotes": "Notas de la versión",
     "sourceCode": "Código fuente",
     "verifyDownload": "Verificar descarga",
+    "verifyDescription": "Se recomienda encarecidamente [verificar el hash SHA-256](https://docs.getmonero.org/interacting/verify-monero-binaries) del archivo que descargaste.\n\nEsto confirmará que los archivos que descargaste coinciden perfectamente con los archivos subidos por el grupo de trabajo de desarrollo de Monero. Por favor, no subestimes este paso, un archivo corrupto podría resultar en la pérdida de fondos.",
     "downloadButton": "Descargar",
     "torrent": "Torrent"
   },
