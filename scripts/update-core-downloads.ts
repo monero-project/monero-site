@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 
 interface DownloadItem {
   href: string;
-  label: string;
+  format: string;
   platform: string;
   size: string;
 }
@@ -93,7 +93,7 @@ async function main() {
     for (const item of section.downloads) {
       if (item === "separator" || !item.href) continue;
 
-      console.log(`  ${item.label}...`);
+      console.log(`  ${item.platform} (${item.format})...`);
       item.size = await getFileSize(item.href);
       console.log(`    → ${item.size}`);
 
