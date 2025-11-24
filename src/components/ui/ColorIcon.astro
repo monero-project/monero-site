@@ -4,9 +4,10 @@ export interface Props {
   darkSrc?: string | { src: string };
   size?: string;
   class?: string;
+  rtl?: boolean;
 }
 
-const { src, darkSrc, size = "1em", class: className = "" } = Astro.props;
+const { src, darkSrc, size = "1em", class: className = "", rtl } = Astro.props;
 
 function norm(p: string | { src: string } | unknown): string {
   if (typeof p === "string") return p;
@@ -21,17 +22,19 @@ const darkUrl = darkSrc ? `'${norm(darkSrc).replace(/'/g, "\\'")}'` : lightUrl;
 const style =
   `--icon-url-light:url(${lightUrl});` +
   `--icon-url-dark:url(${darkUrl});` +
-  `--icon-size:${size};`;
+  `--icon-size:${size};` +
+  `--icon-scale-x: ${rtl ? "-1" : "1"}`;
 ---
 
 <div class={`icon ${className}`} style={style} aria-hidden="true"></div>
 
 <style>
   .icon {
+    display: inline-block;
     inline-size: var(--icon-size);
     block-size: var(--icon-size);
+
     aspect-ratio: 1 / 1;
-    display: inline-block;
     vertical-align: middle;
 
     --icon-url: var(--icon-url-light);

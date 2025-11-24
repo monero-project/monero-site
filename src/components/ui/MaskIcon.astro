@@ -10,13 +10,18 @@ const { src, size = "1em", rtl } = Astro.props;
 
 <div
   class={`icon`}
-  style={`--icon-src: url(${src}); width: ${size}; height: ${size}; --icon-scale-x: ${rtl ? "-1" : "1"}`}
+  style={`--icon-src: url(${src});` +
+    `--icon-size: ${size};` +
+    `--icon-scale-x: ${rtl ? "-1" : "1"}`}
 >
 </div>
 
 <style>
   .icon {
     display: inline-block;
+    inline-size: var(--icon-size);
+    block-size: var(--icon-size);
+
     background: currentColor;
     mask: var(--icon-src) no-repeat center / contain;
     -webkit-mask: var(--icon-src) no-repeat center / contain;
