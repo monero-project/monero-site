@@ -341,7 +341,6 @@ const dir = getDirection(getLocale(Astro.url));
 
     .dropdown {
       position: static;
-      margin: 0.25rem 0 0;
       width: unset;
       opacity: 1;
       visibility: visible;
@@ -350,6 +349,7 @@ const dir = getDirection(getLocale(Astro.url));
       /* accordion behaviour - collapsed by default */
       max-height: 0;
       overflow: hidden;
+      transform: unset;
     }
 
     .dropdown::before {
@@ -360,7 +360,7 @@ const dir = getDirection(getLocale(Astro.url));
       background: none;
       box-shadow: none;
       border-radius: 0;
-      padding: 0;
+      padding-block: 0.5rem 0.5rem;
     }
 
     .dropdown-content {
