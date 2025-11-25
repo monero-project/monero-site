@@ -399,7 +399,7 @@ jobs:
               jq -r ".$section.downloads[] | objects | select(.href) | .href" src/data/downloads/core.json | while read -r url; do
                 if [ -n "$url" ]; then
                   echo "Fetching size for $url"
-                  size=$(curl -sI "$url" | grep -i content-length | awk '{print $2}' | tr -d '\r\n')
+                  size=$(curl -sIL "$url" | grep -i content-length | awk '{print $2}' | tr -d '\r\n')
                   if [ -n "$size" ] && [ "$size" -gt 0 ]; then
                     mb=$(awk -v s="$size" 'BEGIN { printf "%.2f", s/1048576 }')
                     jq --arg u "$url" --arg s "$mb MB" "(.${section}.downloads[] | objects | select(.href == \$u) | .size) = \$s" src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
