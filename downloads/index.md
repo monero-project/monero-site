@@ -306,15 +306,15 @@ meta_descr: downloads.intro
                                 <li><a class="ext-noicon" href="https://anonero.io" aria-label="ANONERO icon" target="_blank"><img class="mob" src="/img/ANONERO.png" width="100" height="100" loading="lazy" alt="ANONERO Logo">ANONERO</a></li>
                                 <li><a class="ext-noicon" href="https://cakewallet.com" aria-label="Cake Wallet icon" target="_blank"><img class="mob" src="/img/cakewallet-icon.png" width="100" height="100" loading="lazy" alt="Cake Wallet Logo">Cake Wallet / Monero.com</a></li>
                                 <li><a class="ext-noicon" href="https://featherwallet.org/" aria-label="Feather icon" target="_blank"><img class="mob" src="/img/feather.png" width="100" height="100" loading="lazy" alt="Feather Logo">Feather</a></li>
-                                <li><a class="ext-noicon" href="https://monerujo.app" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
+                                <li><a class="ext-noicon" href="https://monerujo.app" aria-label="Monerujo icon" target="_blank"><img class="mob" src="/img/Monerujo-wallet.png" width="100" height="100" loading="lazy" alt="Monerujo Logo">Monerujo</a></li>
                                 <li><a class="ext-noicon" href="https://codeberg.org/acx/monfluo/releases/latest" aria-label="Monfluo icon" target="_blank"><img class="mob" src="/img/monfluo.png" width="100" height="100" loading="lazy" alt="Monfluo Logo">Monfluo</a></li>
-                                <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
+                                <li><a class="ext-noicon" href="https://stackwallet.com" aria-label="Stack Wallet icon" target="_blank"><img class="mob" src="/img/stack-wallet.png" width="100" height="100" loading="lazy" alt="Stack Wallet Logo">Stack Wallet</a></li>
                                 <li><a class="ext-noicon" href="https://unstoppable.money" aria-label="Unstoppable Wallet icon" target="_blank"><img class="mob" src="/img/unstoppable-wallet.png" width="100" height="100" loading="lazy" alt="Unstoppable Wallet Logo">Unstoppable Wallet</a></li>
                             </ul>
                             <h3>{% t downloads.remotesync %}</h3>
                             <p>{% t downloads.remotesyncinfo %}</p>
                             <ul>
-                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="GitHub icon" target="_blank"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
+                                <li><a class="ext-noicon" href="https://edge.app/" aria-label="Edge Wallet icon" target="_blank"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
                             </ul>
                         </div>
             </div>
