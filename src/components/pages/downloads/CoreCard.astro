@@ -135,7 +135,7 @@ const PLATFORM_ICONS: Record<string, string> = {
       {
         version && (
           <span class="version-text">
-            {version} - {versionName}
+            {version} {versionName ? `(${versionName})` : ""}
           </span>
         )
       }
