@@ -160,6 +160,10 @@
           "content": "Monero has always favored established, rigorously studied cryptographic schemes. The protocol currently uses:\n 1. @Pedersen-Commitments + @Bulletproofs for confidential transaction amounts\n 2. @Curve-Trees to prove that a spent output belongs to a sender without revealing it\n 3. @Stealth-addresses for encrypting and unlinking recipient information on-chain"
         },
         {
+          "title": "Did Monero ever have a exploited inflation bug?",
+          "content": "No. In 2017 a researcher found a flaw in old code that could have allowed extra coins to be created under very specific circumstances.\n\nThe bug was fixed, and the blockchain was scanned for the exact pattern an exploit would leave. Nothing was found and the supply matches the emission schedule, proving that this bug was not used in practice."
+        },
+        {
           "title": "Why does my antivirus/firewall think Monero is malware?",
           "content": "After you have downloaded the Monero software, your antivirus or firewall may flag the executables as malware.\n\n**Why does this happen?**\n\nThis likely happens because of the integrated miner, which is used for mining and for block verification. Some antiviruses may erroneously consider the miner as dangerous software.\n\n**What to do:**\n\n1. Make sure the software you downloaded is legitimate\n2. Add an exception for it in your antivirus, so that it won't get removed or blocked"
         }

@@ -178,7 +178,7 @@ jobs:
             [ -z "$url" ] && continue
             echo "Downloading $filename from $url"
             curl --retry 3 --retry-delay 2 -sSfL --proto '=https' --tlsv1.2 "$url" -o "$filename"
-            sleep 1
+            sleep 0.5
           done < "$downloads"
 
           sha256sum -c "$manifest"
@@ -202,9 +202,9 @@ jobs:
 
           echo -e "--> Generating tarballs..."
           # CLI
-          git clone --recursive -b "$version_cli" --depth 1 --shallow-submodule https://github.com/monero-project/monero.git monero.git && cd monero.git && ../git-archive-all.sh --prefix monero-source-${version_cli}/ --format tar --tree-ish $version_cli ../monero-source-${version_cli}.tar && cd .. && bzip2 monero-source-${version_cli}.tar
+          git clone --recursive -b "$version_cli" --depth 1 --shallow-submodules https://github.com/monero-project/monero.git monero.git && cd monero.git && ../git-archive-all.sh --prefix monero-source-${version_cli}/ --format tar --tree-ish $version_cli ../monero-source-${version_cli}.tar && cd .. && bzip2 monero-source-${version_cli}.tar
           # GUI
-          git clone --recursive -b "$version_gui" --depth 1 --shallow-submodule https://github.com/monero-project/monero-gui.git monero-gui.git && cd monero-gui.git && ../git-archive-all.sh --prefix monero-gui-source-${version_gui}/ --format tar --tree-ish $version_gui ../monero-gui-source-${version_gui}.tar && cd .. && bzip2 monero-gui-source-${version_gui}.tar
+          git clone --recursive -b "$version_gui" --depth 1 --shallow-submodules https://github.com/monero-project/monero-gui.git monero-gui.git && cd monero-gui.git && ../git-archive-all.sh --prefix monero-gui-source-${version_gui}/ --format tar --tree-ish $version_gui ../monero-gui-source-${version_gui}.tar && cd .. && bzip2 monero-gui-source-${version_gui}.tar
           mkdir yours
           cp monero-gui-source-${version_gui}.tar.bz2 yours/.
           cp monero-source-${version_cli}.tar.bz2 yours/.
@@ -370,6 +370,8 @@ jobs:
           fi
 
       - name: Update Core download metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
@@ -381,8 +383,31 @@ jobs:
 
           if [ "$current_gui_version" != "$version_gui" ] || [ "$current_cli_version" != "$version_cli" ]; then
             echo "Versions differ, updating core downloads"
-            pnpm install
-            pnpm dlx tsx scripts/update-core-downloads.ts
+
+            # Get release names from GitHub
+            first_release_cli=$(echo "${version_cli}" | sed 's/\.[0-9]\+\.[0-9]\+$/.0.0/')
+            first_release_gui=$(echo "${version_gui}" | sed 's/\.[0-9]\+\.[0-9]\+$/.0.0/')
+            cli_name="$(gh release view "${first_release_cli}" --repo monero-project/monero --json name --jq '.name | sub("[^A-Za-z ]+.*$"; "") | sub(" +$"; "")' || echo '')"
+            gui_name="$(gh release view "${first_release_gui}" --repo monero-project/monero-gui --json name --jq '.name | sub("[^A-Za-z ]+.*$"; "") | sub(" +$"; "")' || echo '')"
+
+            # Update version numbers and names
+            jq --arg v "$version_cli" --arg n "$cli_name" '.cli.version = $v | .cli.name = $n' src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
+            jq --arg v "$version_gui" --arg n "$gui_name" '.gui.version = $v | .gui.name = $n' src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
+
+            # Update file sizes
+            for section in cli gui; do
+              jq -r ".$section.downloads[] | select(.href) | .href" src/data/downloads/core.json | while read -r url; do
+                if [ -n "$url" ]; then
+                  echo "Fetching size for $url"
+                  size=$(curl -sI "$url" | grep -i content-length | awk '{print $2}' | tr -d '\r\n')
+                  if [ -n "$size" ] && [ "$size" -gt 0 ]; then
+                    mb=$(awk -v s="$size" 'BEGIN { printf "%.2f", s/1048576 }')
+                    jq --arg u "$url" --arg s "$mb MB" "(.${section}.downloads[] | select(.href == \$u) | .size) = \$s" src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
+                  fi
+                  sleep 0.5
+                fi
+              done
+            done
           else
             echo "Versions match, skipping"
           fi
@@ -390,7 +415,8 @@ jobs:
       - name: Format metadata file
         run: |
           set -euo pipefail
-          pnpm prettier --write src/data/downloads/core.json
+          pnpm install
+          pnpm exec prettier --write src/data/downloads/core.json
 
       - name: Create pull request
         env:
