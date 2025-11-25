@@ -1,6 +1,6 @@
 {
   "gui": {
-    "version": "v0.17.4.4",
+    "version": "v0.18.4.4",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/gui/win64install",
@@ -39,10 +39,10 @@
       "link": "https://downloads.getmonero.org/gui/torrent",
       "magnet": "magnet:?xt=urn:btih:23382953943b4fa023d6b7c72375a26dc8ce02b6&dn=monero-gui-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
     },
-    "name": "Oxygen Orion"
+    "name": "Fluorine Fermi"
   },
   "cli": {
-    "version": "v0.17.4.4",
+    "version": "v0.18.4.4",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/cli/win64",
@@ -125,6 +125,6 @@
       "link": "https://downloads.getmonero.org/cli/torrent",
       "magnet": "magnet:?xt=urn:btih:9c7b39bfb11abcffc869480efb8eafec7bdd1b87&dn=monero-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
     },
-    "name": "Oxygen Orion"
+    "name": "Fluorine Fermi"
   }
 }
