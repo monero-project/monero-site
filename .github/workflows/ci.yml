@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   repository_dispatch:
-    types: [bot-pr]
+    types: [actions-trigger]
 
 jobs:
   quality-checks:

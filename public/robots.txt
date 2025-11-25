@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getmonero.org/sitemap-index.xml
