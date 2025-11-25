@@ -5,17 +5,13 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  repository_dispatch:
-    types: [actions-trigger]
 
 jobs:
   quality-checks:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.ref || github.ref }}
 
       - name: Check set:html safety
         run: |
@@ -47,14 +43,12 @@ jobs:
         run: pnpm exec astro check
 
   build-and-validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs:
       - quality-checks
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.ref || github.ref }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4

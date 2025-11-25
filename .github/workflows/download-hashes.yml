@@ -387,6 +387,11 @@ jobs:
             echo "Versions match, skipping"
           fi
 
+      - name: Format metadata file
+        run: |
+          set -euo pipefail
+          pnpm prettier --write src/data/downloads/core.json
+
       - name: Create pull request
         env:
           GH_TOKEN: ${{ github.token }}
@@ -438,20 +443,3 @@ jobs:
               gh pr close "$pr" --comment "Closed by Actions: superseded by a newer PR."
             done
           fi
-
-      - name: Trigger CI on the PR branch
-        if: env.BRANCH_NAME != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-
-          SHA="$(git rev-parse HEAD)"
-
-          echo "Triggering CI workflow on branch $BRANCH_NAME with SHA $SHA"
-          gh api \
-            repos/${{ github.repository }}/dispatches \
-            --method POST \
-            --field event_type=actions-trigger \
-            --field client_payload[ref]="$BRANCH_NAME" \
-            --field client_payload[sha]="$SHA"
