@@ -25,11 +25,13 @@ jobs:
   validate-download-hashes:
     name: "Validate signed hashes and downloads"
     runs-on: ubuntu-22.04
+    env:
+      HASH_FILE: ${{ github.workspace }}/public/downloads/hashes.txt
     outputs:
       magnet_gui: ${{ steps.verify-torrents.outputs.magnet_gui }}
       magnet_cli: ${{ steps.verify-torrents.outputs.magnet_cli }}
-      version_gui: ${{ steps.validate-sources.outputs.version_gui }}
-      version_cli: ${{ steps.validate-sources.outputs.version_cli }}
+      version_gui: ${{ steps.verify-filenames.outputs.version_gui }}
+      version_cli: ${{ steps.verify-filenames.outputs.version_cli }}
 
     steps:
       - uses: actions/checkout@v4
@@ -61,14 +63,18 @@ jobs:
             "https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc" |
             gpg --import
 
-          gpg --batch --verify public/downloads/hashes.txt
+          gpg --batch --verify "$HASH_FILE"
 
       - name: Verify filenames
+        id: verify-filenames
         run: |
           set -euo pipefail
 
-          version_gui=$(awk '/monero-gui-source-v/ {print $2}' public/downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
-          version_cli=$(awk '/monero-source-v/ {print $2}' public/downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
+          version_gui=$(awk '/^[^#]*monero-gui-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
+          version_cli=$(awk '/^[^#]*monero-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
+
+          echo "version_gui=$version_gui" >> $GITHUB_OUTPUT
+          echo "version_cli=$version_cli" >> $GITHUB_OUTPUT
 
           # Function to check filename
           check_filename() {
@@ -124,7 +130,7 @@ jobs:
           }
 
           # Process each monero- line
-          awk '/^[^#]*monero-/ {print $2}' public/downloads/hashes.txt | while IFS= read -r filename; do
+          awk '/^[^#]*monero-/ {print $2}' "$HASH_FILE" | while IFS= read -r filename; do
             if [[ "$filename" == *gui* ]]; then
               check_filename "$filename" "$version_gui" "gui"
             else
@@ -136,7 +142,6 @@ jobs:
         run: |
           set -euo pipefail
 
-          HASH_FILE="$PWD/public/downloads/hashes.txt"
           manifest="$PWD/.hash-manifest"
           downloads="$PWD/.download-list"
 
@@ -144,7 +149,7 @@ jobs:
           : > "$downloads"
 
           # Expecting "filename" lines matching /monero-/
-          awk '/monero-/ {print $1, $2}' "$HASH_FILE" |
+          awk '/^[^#]*monero-/ {print $1, $2}' "$HASH_FILE" |
           while IFS=' ' read -r hash filename; do
             [ -z "$filename" ] && continue
 
@@ -165,7 +170,7 @@ jobs:
           done
 
           if [ ! -s "$downloads" ]; then
-            echo "No downloads listed in hashes.txt (download list is empty)" >&2
+            echo "No files listed in hashes.txt (download list is empty)" >&2
             exit 1
           fi
 
@@ -183,13 +188,10 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Derive version numbers for CLI and GUI from hashes.txt
-          version_gui=$(awk '/monero-gui-source-v/ {print $2}' public/downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
-          version_cli=$(awk '/monero-source-v/ {print $2}' public/downloads/hashes.txt | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
+          version_gui="${{ steps.verify-filenames.outputs.version_gui }}"
+          version_cli="${{ steps.verify-filenames.outputs.version_cli }}"
 
           echo -e "\n--> GUI version: $version_gui \n--> CLI version: $version_cli"
-          echo "version_gui=$version_gui" >> $GITHUB_OUTPUT
-          echo "version_cli=$version_cli" >> $GITHUB_OUTPUT
           mkdir validate_sources
           cd validate_sources
 
@@ -231,11 +233,9 @@ jobs:
         run: |
           set -euo pipefail
 
-          HASH_FILE="$PWD/public/downloads/hashes.txt"
+          version_gui="${{ steps.verify-filenames.outputs.version_gui }}"
+          version_cli="${{ steps.verify-filenames.outputs.version_cli }}"
 
-          # Derive version numbers for CLI and GUI from hashes.txt
-          version_gui=$(awk '/monero-gui-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
-          version_cli=$(awk '/monero-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
           # Clone and pin the monero-torrent repo
           git clone --recurse-submodules https://github.com/plowsof/monero-torrent.git
           cd monero-torrent
@@ -244,7 +244,7 @@ jobs:
 
           # Move the already-downloaded monero-* files into cdn
           mkdir monero-torrent/cdn
-          awk '/monero-/ {print $2}' "$HASH_FILE" | while IFS= read -r f; do
+          awk '/^[^#]*monero-/ {print $2}' "$HASH_FILE" | while IFS= read -r f; do
             [ -z "$f" ] && continue
             if [ ! -f "$f" ]; then
               echo "Expected file $f is missing in workspace" >&2
@@ -279,8 +279,8 @@ jobs:
           MAGNET_LINK_GUI="$(transmission-show -m "$local_gui_torrent")"
 
           # Download torrents from CDN (replace with the monero URLs)
-          CDN_CLI_URL="https://github.com/plowsof/monero-torrent/releases/download/v0.18.4.4/monero-v0.18.4.4.torrent"
-          CDN_GUI_URL="https://github.com/plowsof/monero-torrent/releases/download/v0.18.4.4/monero-gui-v0.18.4.4.torrent"
+          CDN_CLI_URL="https://github.com/plowsof/monero-torrent/releases/download/${version_cli}/monero-${version_cli}.torrent"
+          CDN_GUI_URL="https://github.com/plowsof/monero-torrent/releases/download/${version_gui}/monero-gui-${version_gui}.torrent"
 
           wget -q "$CDN_CLI_URL" -O "monero-${version_cli}.torrent"
           wget -q "$CDN_GUI_URL" -O "monero-gui-${version_gui}.torrent"
@@ -317,7 +317,7 @@ jobs:
           if ! wget --spider -q "$CDN_URL/hashes-$version_gui.txt"; then
             echo "::warning title=Webseed-URLs::Webseed URL unreachable: $CDN_URL/hashes-$version_gui.txt"
           fi
-          for file in $(awk '/monero-/ {print $2}' "$HASH_FILE"); do
+          for file in $(awk '/^[^#]*monero-/ {print $2}' "$HASH_FILE"); do
             dir="cli"
             part="monero-$version_cli"
             if [[ $file =~ gui ]]; then
@@ -432,9 +432,6 @@ jobs:
             --head "$BRANCH_NAME" \
             --title "Update Core download information (CLI ${version_cli}, GUI ${version_gui})" \
             --body "This PR was automatically generated by the Download Hashes workflow to update **src/data/downloads/core.json** based on the latest public/downloads/hashes.txt."
-
-          # Save branch name for next step
-          echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
 
           # Close outdated PRs
           if [ -n "$prs" ]; then
