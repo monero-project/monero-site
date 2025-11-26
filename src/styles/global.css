@@ -19,6 +19,7 @@
   --border-color: #e4e1e9;
 
   /* Spacing */
+  --page-top-margin: 2rem;
   --desktop-padding: 1em 5em;
   --mobile-padding: 1em 2em;
 
@@ -78,11 +79,11 @@
    ======================================== */
 
 a {
-  color: var(--monero-orange);
-  text-decoration: none;
+  color: var(--text-primary);
+  text-decoration: underline dotted;
 }
 a:hover {
-  text-decoration: underline;
+  color: var(--text-secondary);
 }
 
 /* ========================================

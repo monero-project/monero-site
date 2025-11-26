@@ -8,17 +8,13 @@ const { title, subtitle = "" } = Astro.props;
 ---
 
 <div>
-  <header class="header-card">
+  <header>
     <h1 class="title">{title}</h1>
     {subtitle && <p class="subtitle">{subtitle}</p>}
   </header>
 </div>
 
 <style>
-  .header-card {
-    margin-top: clamp(1.5rem, 5vw, 2rem);
-    padding-top: clamp(1.5rem, 5vw, 2rem);
-  }
   .title {
     margin: 0;
     color: var(--monero-orange);

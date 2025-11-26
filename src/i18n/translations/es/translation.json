@@ -265,6 +265,7 @@
       "pageTitle": "Publicaciones etiquetadas con {{tag}} | Monero - criptomoneda segura, privada, no rastreable.",
       "heroTitle": "Publicaciones etiquetadas con \"{{tag}}\"",
       "heroSubtitle": "Navega por todas las publicaciones del blog etiquetadas con \"{{tag}}\"."
-    }
+    },
+    "and": "y"
   }
 }

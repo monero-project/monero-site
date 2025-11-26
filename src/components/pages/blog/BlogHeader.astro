@@ -1,0 +1,154 @@
+---
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import { locales } from "@/i18n/config";
+import { localizeHref } from "@/i18n/utils";
+
+import calendarIcon from "@/assets/icons/mask/calendar.avif?url";
+import userIcon from "@/assets/icons/mask/user.avif?url";
+
+interface Props {
+  title: string;
+  slug: string;
+  author: string;
+  tags?: string[];
+  locale: string;
+  t: (key: string) => string;
+}
+
+const { title, slug, author, tags = [], locale, t } = Astro.props;
+
+const dateMatch = slug.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
+
+let date: Date | null = null;
+let formattedDate: string | null = null;
+
+if (dateMatch) {
+  const d = new Date(dateMatch);
+  if (!isNaN(d.getTime())) {
+    date = d;
+    formattedDate = d.toLocaleDateString(
+      locales[locale as keyof typeof locales],
+      {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      },
+    );
+  }
+}
+---
+
+<div id="post-header">
+  <h1>{title}</h1>
+
+  <div id="meta">
+    {
+      date && (
+        <div class="meta-item">
+          <div class="icon">
+            <MaskIcon src={calendarIcon} />
+          </div>
+          <time datetime={dateMatch}>{formattedDate}</time>
+        </div>
+      )
+    }
+
+    {
+      author && (
+        <div class="meta-item">
+          <div class="icon">
+            <MaskIcon src={userIcon} />
+          </div>
+          {author.replace(" and ", ` ${t("blog.and")} `)}
+        </div>
+      )
+    }
+  </div>
+
+  {
+    tags.length > 0 && (
+      <div class="tag-container">
+        {tags.map((tag: string) => (
+          <a class="tag" href={localizeHref(locale, `/blog/tags/${tag}/`)}>
+            {tag}
+          </a>
+        ))}
+      </div>
+    )
+  }
+</div>
+
+<style lang="scss">
+  h1 {
+    font-size: var(--font-size-4xl);
+    margin: 0;
+  }
+
+  #post-header {
+    margin-bottom: var(--page-top-margin);
+  }
+
+  #meta {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .meta-item > .icon {
+    display: grid;
+    place-items: center;
+    color: var(--monero-orange);
+  }
+
+  .tag-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    text-align: center;
+    padding: 0.25rem 0.75rem;
+    background: var(--footer-color);
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .tag:hover {
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: var(--font-size-3xl);
+    }
+
+    #meta {
+      flex-direction: column;
+      font-size: var(--font-size-md);
+      font-weight: var(--font-weight-medium);
+      gap: 1rem;
+    }
+
+    .meta-item > .icon {
+      font-size: var(--font-size-lg);
+    }
+
+    .tag-container {
+      font-size: var(--font-size-sm);
+    }
+  }
+</style>

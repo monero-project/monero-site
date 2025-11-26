@@ -1,8 +1,9 @@
 ---
-import { defaultLocale } from "@/i18n/config";
-import { getDirection } from "@/i18n/utils";
-import Layout from "@/layouts/Layout.astro";
+import BlogContent from "@/components/pages/blog/BlogContent.astro";
+import BlogHeader from "@/components/pages/blog/BlogHeader.astro";
+import { createTInstance, getLocale } from "@/i18n/utils";
 import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -14,10 +15,56 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
 
 <Layout title={post.data.title}>
-  <div dir={getDirection(defaultLocale)}>
-    <Content />
+  <div class="post-layout">
+    <main>
+      <BlogHeader
+        title={post.data.title}
+        slug={post.slug}
+        author={post.data.author}
+        tags={post.data.tags}
+        locale={locale}
+        t={t}
+      />
+      <BlogContent>
+        <Content />
+      </BlogContent>
+    </main>
+
+    <aside class="sidebar">
+      <h2>Recent Posts</h2>
+      <slot name="sidebar" />
+    </aside>
   </div>
 </Layout>
+
+<style lang="scss">
+  .post-layout {
+    display: grid;
+    grid-template-columns: auto 25%;
+    gap: 2rem;
+  }
+
+  .sidebar {
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+  }
+
+  .sidebar h2 {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  @media (max-width: 1200px) {
+    .post-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

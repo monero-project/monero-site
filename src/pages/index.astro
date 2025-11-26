@@ -177,7 +177,9 @@ const t = await createTInstance(locale);
 
   .main-content {
     position: relative;
-    margin-top: var(--hero-min-height) !important;
+    margin-top: calc(
+      var(--hero-min-height) - var(--page-top-margin)
+    ) !important;
   }
 
   :global(#start-using-monero) {

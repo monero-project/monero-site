@@ -44,9 +44,9 @@ const title = Astro.props.title;
   </head>
   <body>
     <Header t={t} />
-    <main>
+    <div id="content">
       <slot />
-    </main>
+    </div>
     <Footer t={t} />
   </body>
 </html>
@@ -63,21 +63,24 @@ const title = Astro.props.title;
     flex-direction: column;
   }
 
-  main {
+  #content {
     padding: var(--mobile-padding);
+    margin-top: var(--page-top-margin);
+    padding-top: var(--page-top-margin);
     flex: 1;
   }
 
   @media (min-width: 600px) {
-    main {
+    #content {
       padding: var(--desktop-padding);
+      padding-top: var(--page-top-margin);
     }
   }
 
   @media (min-width: 1920px) {
-    main {
+    #content {
       width: var(--content-max-width);
-      margin: 0 auto;
+      margin-inline: auto;
     }
   }
 </style>
