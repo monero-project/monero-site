@@ -657,7 +657,7 @@ developer-guides:
   walletrpc: Wallet RPC
   walletrpc_descr: monero-wallet-rpc calls. Including input, outputs and examples. In English.
   external: External resources
-  external_head: Useful docs and resources maintained by community members.
+  external_head: Useful docs and resources hosted on external websites.
   monerodocs: Comprehensive resource which aims to organize the technical knowledge about Monero. Some sections might be outdated.
   moneroexamples: Rich list of examples and docs related to Monero development.
   moneroecosystem: Community of Monero developers. Contains libraries and resources and guides of some Monero Workgroups, like the Localization Workgroup and the Outreach Workgroup.
