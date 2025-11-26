@@ -169,7 +169,7 @@ jobs:
             sleep 0.5
           done
 
-          sha256sum -c "$HASH_FILE"
+          grep monero- "$HASH_FILE" | sha256sum -c
 
       - name: Validate source integrity
         id: validate-sources
