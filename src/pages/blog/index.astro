@@ -1,0 +1,22 @@
+---
+import TitleCard from "@/components/ui/TitleCard.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+const sortedPosts = allPosts.sort((a, b) => b.id.localeCompare(a.id));
+---
+
+<Layout>
+  <TitleCard
+    title="Blog"
+    subtitle="Read the latest news and updates about Monero."
+  />
+  {
+    sortedPosts.map((post) => (
+      <li>
+        <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+      </li>
+    ))
+  }
+</Layout>

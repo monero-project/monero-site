@@ -1,0 +1,43 @@
+---
+import TitleCard from "@/components/ui/TitleCard.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("blog");
+
+  const tagSet = [
+    ...new Set(allPosts.flatMap((post) => post.data.tags)),
+  ].filter((tag) => tag !== undefined);
+
+  return tagSet.map((tag) => {
+    const filteredPosts = allPosts.filter((post) =>
+      post.data.tags?.includes(tag),
+    );
+    return {
+      params: { tag: tag.toLowerCase().replace(/\s+/g, "-") },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+const sanitizedTag = tag.replace(/-/g, " ");
+---
+
+<Layout>
+  <TitleCard
+    title={`Posts tagged with "${sanitizedTag}"`}
+    subtitle={`Browse all blog posts tagged with "${sanitizedTag}".`}
+  />
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

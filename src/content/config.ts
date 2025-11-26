@@ -9,6 +9,17 @@ const moneropedia = defineCollection({
   }),
 });
 
+const blog = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    tags: z.array(z.string()).optional(),
+    author: z.string(),
+  }),
+});
+
 export const collections = {
+  blog,
   moneropedia,
 };

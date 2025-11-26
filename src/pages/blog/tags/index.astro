@@ -1,0 +1,25 @@
+---
+import TitleCard from "@/components/ui/TitleCard.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+const tags = [...new Set(allPosts.flatMap((post) => post.data.tags))].filter(
+  (tag) => tag !== undefined,
+);
+---
+
+<Layout>
+  <TitleCard title="Tag Index" subtitle="Browse blog posts by tags." />
+  <ul>
+    {
+      tags.map((tag) => (
+        <li>
+          <a href={`/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`}>
+            {tag}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
