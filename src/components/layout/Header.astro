@@ -308,6 +308,7 @@ const navItems = [
   }
 
   .nav {
+    opacity: 0;
     position: fixed;
     inset-block: 0;
     inset-inline-end: 0;
@@ -327,7 +328,9 @@ const navItems = [
     overflow: hidden;
 
     margin-inline-end: -100vw;
-    transition: margin-inline-end 0.25s ease;
+    transition:
+      margin-inline-end 0.25s ease,
+      opacity 0.25s ease;
   }
 
   .drawer-header {
@@ -380,6 +383,7 @@ const navItems = [
   }
 
   .nav-toggle:checked ~ .nav {
+    opacity: 1;
     margin-inline-end: 0;
   }
 
@@ -420,6 +424,7 @@ const navItems = [
     }
 
     .nav {
+      opacity: unset;
       position: static;
       inset: auto;
       inline-size: auto;
