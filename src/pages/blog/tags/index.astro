@@ -1,5 +1,6 @@
 ---
 import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -7,15 +8,25 @@ const allPosts = await getCollection("blog");
 const tags = [...new Set(allPosts.flatMap((post) => post.data.tags))].filter(
   (tag) => tag !== undefined,
 );
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
 
 <Layout>
-  <TitleCard title="Tag Index" subtitle="Browse blog posts by tags." />
+  <TitleCard
+    title={t("blog.tagIndex.heroTitle")}
+    subtitle={t("blog.tagIndex.heroSubtitle")}
+  />
   <ul>
     {
       tags.map((tag) => (
         <li>
-          <a href={`/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`}>
+          <a
+            href={localizeHref(
+              locale,
+              `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
+            )}
+          >
             {tag}
           </a>
         </li>

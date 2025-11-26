@@ -1,11 +1,13 @@
 ---
+import { defaultLocale } from "@/i18n/config";
+import { getDirection } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
-    params: { slug: post.id },
+    params: { slug: post.slug },
     props: { post },
   }));
 }
@@ -15,5 +17,7 @@ const { Content } = await render(post);
 ---
 
 <Layout title={post.data.title}>
-  <Content />
+  <div dir={getDirection(defaultLocale)}>
+    <Content />
+  </div>
 </Layout>

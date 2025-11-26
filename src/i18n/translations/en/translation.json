@@ -253,5 +253,22 @@
     "heroSubtitle": "Comprehensive glossary of Monero and blockchain terms.",
     "searchPlaceholder": "Search the Moneropedia...",
     "readMore": "Read full article"
+  },
+  "blog": {
+    "index": {
+      "pageTitle": "Blog | Monero - secure, private, untraceable cryptocurrency.",
+      "heroTitle": "Blog",
+      "heroSubtitle": "Read the latest news and updates about Monero."
+    },
+    "tagIndex": {
+      "pageTitle": "Tag Index | Monero - secure, private, untraceable cryptocurrency.",
+      "heroTitle": "Tag Index",
+      "heroSubtitle": "Browse blog posts by tags."
+    },
+    "tags": {
+      "pageTitle": "Posts tagged with {{tag}} | Monero - secure, private, untraceable cryptocurrency.",
+      "heroTitle": "Posts tagged with \"{{tag}}\"",
+      "heroSubtitle": "Browse all blog posts tagged with \"{{tag}}\"."
+    }
   }
 }

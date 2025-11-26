@@ -249,5 +249,22 @@
     "heroSubtitle": "Glossaire complet des termes Monero et blockchain.",
     "searchPlaceholder": "Rechercher dans Moneropedia...",
     "readMore": "Lire l'article complet"
+  },
+  "blog": {
+    "index": {
+      "pageTitle": "Blog | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+      "heroTitle": "Blog",
+      "heroSubtitle": "Lisez les dernières nouvelles et mises à jour sur Monero."
+    },
+    "tagIndex": {
+      "pageTitle": "Index des Étiquettes | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+      "heroTitle": "Index des Étiquettes",
+      "heroSubtitle": "Parcourez les articles de blog par étiquettes."
+    },
+    "tags": {
+      "pageTitle": "Articles étiquetés avec {{tag}} | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+      "heroTitle": "Articles étiquetés avec \"{{tag}}\"",
+      "heroSubtitle": "Parcourez tous les articles de blog étiquetés avec \"{{tag}}\"."
+    }
   }
 }

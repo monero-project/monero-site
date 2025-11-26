@@ -1,5 +1,6 @@
 ---
 import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -24,18 +25,23 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 const sanitizedTag = tag.replace(/-/g, " ");
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
 
 <Layout>
   <TitleCard
-    title={`Posts tagged with "${sanitizedTag}"`}
-    subtitle={`Browse all blog posts tagged with "${sanitizedTag}".`}
+    title={t("blog.tags.heroTitle", { tag: sanitizedTag })}
+    subtitle={t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
   />
   <ul>
     {
       posts.map((post) => (
         <li>
-          <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+          <a href={localizeHref(locale, `/blog/${post.slug}/`)}>
+            {post.data.title}
+          </a>
         </li>
       ))
     }
