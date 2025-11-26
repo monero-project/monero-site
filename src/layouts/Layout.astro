@@ -52,15 +52,6 @@ const title = Astro.props.title;
 </html>
 
 <style>
-  :root {
-    --bg-color: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg-color: #171717;
-    }
-  }
-
   html,
   body {
     margin: 0;
@@ -73,20 +64,20 @@ const title = Astro.props.title;
   }
 
   main {
-    padding: var(--default-padding);
+    padding: var(--mobile-padding);
     flex: 1;
+  }
+
+  @media (min-width: 600px) {
+    main {
+      padding: var(--desktop-padding);
+    }
   }
 
   @media (min-width: 1920px) {
     main {
       width: var(--content-max-width);
       margin: 0 auto;
-    }
-  }
-
-  @media (max-width: 600px) {
-    main {
-      padding: var(--mobile-padding);
     }
   }
 </style>

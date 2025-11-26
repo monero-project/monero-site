@@ -210,16 +210,16 @@ const bottomLinks: Link[] = [
   }
 
   .items {
-    padding: var(--default-padding);
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: var(--mobile-padding);
+    padding-top: 4em;
+    padding-bottom: 4em;
     max-width: var(--content-max-width);
     margin: 0 auto;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
@@ -275,19 +275,21 @@ const bottomLinks: Link[] = [
     color: var(--heading-color);
   }
 
-  /* Responsive */
-  @media (max-width: 980px) {
-    .items {
-      padding: var(--mobile-padding);
-      padding-top: 4em;
-    }
+  @media (min-width: 560px) {
     .grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  @media (max-width: 560px) {
+
+  @media (min-width: 980px) {
+    .items {
+      padding: var(--desktop-padding);
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
     .grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 </style>

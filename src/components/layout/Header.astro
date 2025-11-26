@@ -244,15 +244,21 @@ const navItems = [
 </header>
 
 <style>
-  /* ===== Base layout ===== */
+  :root {
+    --drawer-gap: clamp(5rem, 20vw, 9rem);
+  }
+
   .header {
-    position: relative;
+    position: sticky;
+    inset-block-start: 0;
+    background: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     z-index: 10;
   }
 
   .header-inner {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
     gap: 0.75rem;
     padding-block: 1rem;
@@ -275,16 +281,6 @@ const navItems = [
     block-size: 1.625rem;
   }
 
-  .nav-list {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-  }
-
   .utils {
     display: inline-flex;
     align-items: center;
@@ -300,7 +296,9 @@ const navItems = [
 
   .hamburger {
     color: var(--paragraph-main);
-    display: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 1.25rem;
   }
@@ -309,12 +307,37 @@ const navItems = [
     display: none;
   }
 
-  .scrim {
-    display: none;
+  .nav {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+    inset-inline-start: auto;
+
+    inline-size: min(26.25rem, calc(100vw - var(--drawer-gap)));
+    box-sizing: border-box;
+
+    background: var(--bg-color);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+
+    z-index: 1001;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    margin-inline-end: -100vw;
+    transition: margin-inline-end 0.25s ease;
   }
 
   .drawer-header {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-block: 0.5rem;
+    padding-inline: 0;
+    background: inherit;
+    flex-shrink: 0;
   }
 
   .close {
@@ -326,132 +349,43 @@ const navItems = [
     line-height: 1;
   }
 
-  /* ===== Large screens (> 1200px) ===== */
-  @media (min-width: 1201px) {
-    .header:has(.nav-item--dropdown:hover),
-    .header:has(.nav-item--dropdown:focus-within) {
-      background: var(--card-color);
-    }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
 
-    /* Prevents other dropdowns from being opened by hover, when one is open via focus (Tab/click) */
-    .header:has(.nav-item--dropdown:focus-within)
-      :global(.nav-item--dropdown:not(:focus-within)) {
-      pointer-events: none;
-    }
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
-  /* ===== Mobile / Tablet (<= 1200px) ===== */
-  @media (max-width: 1200px) {
-    :root {
-      --drawer-gap: clamp(5rem, 20vw, 9rem);
-    }
-
-    .header {
-      position: sticky;
-      background: inherit;
-      inset-block-start: 0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    }
-
-    .header-inner {
-      grid-template-columns: auto 1fr;
-    }
-
-    .hamburger {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .drawer-header {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-block: 0.5rem;
-      padding-inline: 0;
-      background: inherit;
-      flex-shrink: 0;
-    }
-
-    .nav {
-      position: fixed;
-      inset-block: 0;
-      inset-inline-end: 0;
-      inset-inline-start: auto;
-
-      inline-size: min(26.25rem, calc(100vw - var(--drawer-gap)));
-      box-sizing: border-box;
-
-      background: var(--bg-color);
-      backdrop-filter: saturate(140%) blur(10px);
-      -webkit-backdrop-filter: saturate(140%) blur(10px);
-      padding-block: 1rem;
-      padding-inline: 1rem;
-
-      z-index: 1001;
-
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-
-      margin-inline-end: -100vw;
-      transition: margin-inline-end 0.25s ease;
-    }
-
-    body:has(#nav-toggle:checked) {
-      overflow: hidden;
-      overscroll-behavior: none;
-    }
-
-    .nav-list {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0.25rem;
-      margin: 1rem 0 0;
-      padding: 0;
-      justify-content: flex-start;
-
-      flex: 1 1 auto;
-      overflow-y: auto;
-      overscroll-behavior: contain;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-
-    .scrim {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.45);
-      display: block;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.2s ease;
-      z-index: 1000;
-      touch-action: none;
-    }
-
-    .nav-toggle:checked ~ .nav {
-      margin-inline-end: 0;
-    }
-
-    .nav-toggle:checked ~ .scrim {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .header:has(.lang-container[open]) {
-      background: var(--card-color);
-    }
+  .scrim {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+    touch-action: none;
   }
 
-  /* Dynamic viewport height when supported */
-  @supports (height: 100dvh) {
-    @media (max-width: 1200px) {
-      .nav {
-        block-size: 100dvh;
-      }
-    }
+  .nav-toggle:checked ~ .nav {
+    margin-inline-end: 0;
+  }
+
+  .nav-toggle:checked ~ .scrim {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   /* Reduced motion */
@@ -459,6 +393,79 @@ const navItems = [
     .nav,
     .scrim {
       transition: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    body:has(#nav-toggle:checked) {
+      overflow: hidden;
+      overscroll-behavior: none;
+    }
+
+    /* When language dropdown is open, change header background */
+    .header:has(.lang-container[open]) {
+      background: var(--card-color);
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .header {
+      position: relative;
+      background: unset;
+      box-shadow: unset;
+    }
+
+    .header-inner {
+      grid-template-columns: 1fr auto 1fr;
+    }
+
+    .nav {
+      position: static;
+      inset: auto;
+      inline-size: auto;
+      padding: 0;
+      margin-inline-end: 0;
+      background: unset;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      display: block;
+      overflow: visible;
+      transition: none;
+    }
+
+    .nav-list {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+      flex: unset;
+      overflow: visible;
+    }
+
+    .drawer-header {
+      display: none;
+    }
+
+    .scrim {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    /* Large-screen dropdown behaviour */
+    .header:has(.nav-item--dropdown:hover),
+    .header:has(.nav-item--dropdown:focus-within) {
+      background: var(--card-color);
+    }
+
+    /* Prevent other dropdowns from opening via hover when one is focused */
+    .header:has(.nav-item--dropdown:focus-within)
+      :global(.nav-item--dropdown:not(:focus-within)) {
+      pointer-events: none;
     }
   }
 </style>

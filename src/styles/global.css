@@ -3,6 +3,7 @@
   --monero-orange: #e2611f;
 
   /* Surface Colors */
+  --bg-color: #ffffff;
   --card-color: #f9f7fc;
   --card-hover-color: #1e1b230d;
   --footer-color: #f0ecf4;
@@ -18,7 +19,7 @@
   --border-color: #e4e1e9;
 
   /* Spacing */
-  --default-padding: 1em 5em;
+  --desktop-padding: 1em 5em;
   --mobile-padding: 1em 2em;
 
   /* Typography - Font Sizes */
@@ -55,6 +56,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Surface Colors */
+    --bg-color: #171717;
     --card-color: #211f26;
     --card-hover-color: #e1e1ec0d;
     --footer-color: #211f26;
