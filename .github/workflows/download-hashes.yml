@@ -70,118 +70,106 @@ jobs:
         run: |
           set -euo pipefail
 
-          version_gui=$(awk '/^[^#]*monero-gui-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
-          version_cli=$(awk '/^[^#]*monero-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
+          lines="$(grep -v ^# "$HASH_FILE")"
+          SAVEIFS=$IFS
+          IFS=$'\n'
+          lines=($lines)
+          IFS=$SAVEIFS
+
+          version_gui=$(awk '/monero-gui-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $4}')
+          version_cli=$(awk '/monero-source-v/ {print $2}' "$HASH_FILE" | awk -F".tar.bz2" '{print $1}' | awk -F"-" '{print $3}')
 
           echo "version_gui=$version_gui" >> $GITHUB_OUTPUT
           echo "version_cli=$version_cli" >> $GITHUB_OUTPUT
 
-          # Function to check filename
-          check_filename() {
-            local filename="$1"
-            local version="$2"
-            local type="$3"  # cli or gui
+          filenames_cli=()
+          filenames_gui=()
 
-            # Escape dots for regex
-            version_re="${version//./\\.}"
+          get_filename(){
+              line=$1
+              the_line=($line)
+              length="${#the_line[@]}"
+              ((length-=1))
+              filename="${the_line[$length]}"
+              echo "${filename}"
+          }
+          # expects cli files between lines 2-14 and gui 15-19 (comments do not count, 1st line = 0)
+          # to add a new file to the cli, $num must be -gt 1 and -lt 16.
+          # gui $num is now -gt 15 and -lt 21 (new line has been added above)
+          # a new gui file will only increase the -lt number by 1
+          # changes to extensions / new files must be reflected in the cli_files / gui_files lists below
+          num=0
+          for line in "${lines[@]}"; do
+              if [ $num -gt 1 ] && [ $num -lt 15 ] ; then
+                  #CLI
+                  filename=$(get_filename "${line}")
+                  filenames_cli+=("${filename}")
+              elif [ $num -gt 14 ] && [ $num -lt 21 ] ; then
+                 #GUI
+                  filename=$(get_filename "${line}")
+                  filenames_gui+=("${filename}")
+              fi
+              ((num+=1))
+          done
+          # edit/add/remove filenames below
+          cli_files=(\
+          "monero-android-armv7-${version_cli}.tar.bz2" \
+          "monero-android-armv8-${version_cli}.tar.bz2" \
+          "monero-freebsd-x64-${version_cli}.tar.bz2" \
+          "monero-linux-armv7-${version_cli}.tar.bz2" \
+          "monero-linux-armv8-${version_cli}.tar.bz2" \
+          "monero-linux-riscv64-${version_cli}.tar.bz2" \
+          "monero-linux-x64-${version_cli}.tar.bz2" \
+          "monero-linux-x86-${version_cli}.tar.bz2" \
+          "monero-mac-armv8-${version_cli}.tar.bz2" \
+          "monero-mac-x64-${version_cli}.tar.bz2" \
+          "monero-win-x64-${version_cli}.zip" \
+          "monero-win-x86-${version_cli}.zip" \
+          "monero-source-${version_cli}.tar.bz2")
 
-            # Extract platform and ext
-            local platform ext expected
-            if [[ "$filename" =~ ^monero(-gui)?-(.+)-${version_re}\.(.+)$ ]]; then
-              platform="${BASH_REMATCH[2]}"
-              ext="${BASH_REMATCH[3]}"
-            else
-              echo "$type filename BAD: $filename (unexpected format)"
-              exit 1
-            fi
+          gui_files=(\
+          "monero-gui-install-win-x64-${version_gui}.exe" \
+          "monero-gui-linux-x64-${version_gui}.tar.bz2" \
+          "monero-gui-mac-x64-${version_gui}.dmg" \
+          "monero-gui-mac-armv8-${version_gui}.dmg" \
+          "monero-gui-win-x64-${version_gui}.zip" \
+          "monero-gui-source-${version_gui}.tar.bz2")
 
-            if [[ "$type" == "cli" ]]; then
-              case "$platform" in
-                android-armv7|android-armv8|freebsd-x64|linux-armv7|linux-armv8|linux-riscv64|linux-x64|linux-x86|mac-armv8|mac-x64|source)
-                  expected="tar.bz2" ;;
-                win-x64|win-x86)
-                  expected="zip" ;;
-                *)
-                  echo "CLI filename BAD: $filename (unknown platform)"
-                  exit 1 ;;
-              esac
-            elif [[ "$type" == "gui" ]]; then
-              case "$platform" in
-                install-win-x64)
-                  expected="exe" ;;
-                linux-x64|source)
-                  expected="tar.bz2" ;;
-                mac-x64|mac-armv8)
-                  expected="dmg" ;;
-                win-x64)
-                  expected="zip" ;;
-                *)
-                  echo "GUI filename BAD: $filename (unknown platform)"
-                  exit 1 ;;
-              esac
-            fi
-
-            if [[ "$ext" != "$expected" ]]; then
-              echo "$type filename BAD: $filename (expected $expected)"
-              exit 1
-            fi
-
-            echo "Filename OK: $filename"
+          check_filenames(){
+              local -n file_list=$1
+              local -n hardcoded=$2
+              for f in "${file_list[@]}"; do
+                if [[ "${hardcoded[*]}" =~ "${f}" ]]; then
+                    echo "Filename OK: ${f}"
+                else
+                    echo "Filename BAD: ${f}"
+                    exit 1
+                fi
+              done
           }
 
-          # Process each monero- line
-          awk '/^[^#]*monero-/ {print $2}' "$HASH_FILE" | while IFS= read -r filename; do
-            if [[ "$filename" == *gui* ]]; then
-              check_filename "$filename" "$version_gui" "gui"
-            else
-              check_filename "$filename" "$version_cli" "cli"
-            fi
-          done
+          check_filenames filenames_cli cli_files
+          check_filenames filenames_gui gui_files
 
       - name: Download releases and verify hashes
         run: |
           set -euo pipefail
 
-          manifest="$PWD/.hash-manifest"
-          downloads="$PWD/.download-list"
-
-          : > "$manifest"
-          : > "$downloads"
-
-          # Expecting "filename" lines matching /monero-/
-          awk '/^[^#]*monero-/ {print $1, $2}' "$HASH_FILE" |
-          while IFS=' ' read -r hash filename; do
-            [ -z "$filename" ] && continue
+          for file in $(awk '/monero-/ {print $2}' "$HASH_FILE"); do
+            [ -f "$file" ] && continue            
 
             dir="cli"
-            case "$filename" in
-              *gui*) dir="gui" ;;
-            esac
-
-            url="https://dlsrc.getmonero.org/${dir}/${filename}"
-
-            if [ -z "$hash" ]; then
-              echo "Missing hash for $filename" >&2
-              exit 1
+            if [[ $file =~ gui ]]; then
+              dir="gui"
             fi
 
-            printf '%s  %s\n' "$hash" "$filename" >> "$manifest"
-            printf '%s|%s\n' "$url" "$filename" >> "$downloads"
+            url="https://dlsrc.getmonero.org/${dir}/${file}"
+            echo "Downloading $file from $url..."
+            curl --retry 3 --retry-delay 2 -sSfL --proto '=https' --tlsv1.2 "$url" -o "$file"
+            sleep 0.5
           done
 
-          if [ ! -s "$downloads" ]; then
-            echo "No files listed in hashes.txt (download list is empty)" >&2
-            exit 1
-          fi
-
-          while IFS='|' read -r url filename; do
-            [ -z "$url" ] && continue
-            echo "Downloading $filename from $url"
-            curl --retry 3 --retry-delay 2 -sSfL --proto '=https' --tlsv1.2 "$url" -o "$filename"
-            sleep 0.5
-          done < "$downloads"
-
-          sha256sum -c "$manifest"
+          sha256sum -c "$HASH_FILE"
 
       - name: Validate source integrity
         id: validate-sources
@@ -244,12 +232,8 @@ jobs:
 
           # Move the already-downloaded monero-* files into cdn
           mkdir monero-torrent/cdn
-          awk '/^[^#]*monero-/ {print $2}' "$HASH_FILE" | while IFS= read -r f; do
+          awk '/monero-/ {print $2}' "$HASH_FILE" | while read -r f; do
             [ -z "$f" ] && continue
-            if [ ! -f "$f" ]; then
-              echo "Expected file $f is missing in workspace" >&2
-              exit 1
-            fi
             mv "$f" monero-torrent/cdn/
           done
 
@@ -293,7 +277,6 @@ jobs:
             echo "CLI torrent magnet mismatch between local build and CDN version" >&2
             echo "Local: $MAGNET_LINK_CLI" >&2
             echo "CDN : $CDN_MAGNET_LINK_CLI" >&2
-            ls -R
             exit 1
           fi
 
@@ -301,7 +284,6 @@ jobs:
             echo "GUI torrent magnet mismatch between local build and CDN version" >&2
             echo "Local: $MAGNET_LINK_GUI" >&2
             echo "CDN : $CDN_MAGNET_LINK_GUI" >&2
-            ls -R
             exit 1
           fi
 
@@ -317,7 +299,7 @@ jobs:
           if ! wget --spider -q "$CDN_URL/hashes-$version_gui.txt"; then
             echo "::warning title=Webseed-URLs::Webseed URL unreachable: $CDN_URL/hashes-$version_gui.txt"
           fi
-          for file in $(awk '/^[^#]*monero-/ {print $2}' "$HASH_FILE"); do
+          for file in $(awk '/monero-/ {print $2}' "$HASH_FILE"); do
             dir="cli"
             part="monero-$version_cli"
             if [[ $file =~ gui ]]; then
