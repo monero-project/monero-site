@@ -180,7 +180,6 @@ merchants:
   simpleswapdescr: Plateforme d’échanges décentralisée.
   visitbisq: Visitez Bisq
   visitlocalmonero: Visitez LocalMonero
-  visithodlhodl: Visitez HodlHodl
   centrexchanges: Exchanges centralisés (CEXs) & Swappers
   centrexchangesp: Si vous préférez utiliser des exchanges centralisés, voilà une
     liste des CEXes et swappers renommés. De nombreux autres exchanges supportent
@@ -197,7 +196,6 @@ merchants:
     cesse de croître.
   cardfoss: 'Open source :'
   noncustodial: 'Non custodial:'
-  hodlhodldescr: Plateforme de trading P2P avec escrow non custodial.
   swapsdescr: Une nouvelle manière excitante d'échanger du Monero sont les Atomic
     Swaps, que <a href="https://www.getmonero.org/2021/08/20/atomic-swaps.html">nous
     avons annoncé</a> on Août 2021. Les Atomic Swaps sont une manière complétement

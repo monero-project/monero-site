@@ -194,13 +194,11 @@ merchants:
   cardbtcfiat: (BTC &#8596; państwowe waluty możliwe)
   cardonion: 'Adres onion:'
   noncustodial: 'Bez nadzoru:'
-  hodlhodldescr: Platforma transakcyjna P2P z powiernictwem bez nadzoru.
   locmondescr: Internetowa giełda P2P oferująca transakcje między osobami.
   depsell: Zależy od sprzedającego
   locnojs: (ale jest dostępna wersja bez JS)
   simpleswapdescr: Natychmiastowa giełda bez nadzoru.
   visitbisq: Odwiedź Bisq
-  visithodlhodl: Odwiedź HodlHodl
   centrexchanges: Scentralizowane giełdy (CEXs) i natychmiastowi wymieniacze
   cexp: Scentralizowane giełdy, które oferują wymianę Monero na waluty krajowe i kryptowaluty.
   swappersp: Wymieniacze natychmiastowi pozwalają użytkownikom wymieniać XMR na inne
