@@ -79,11 +79,11 @@
    ======================================== */
 
 a {
-  color: var(--text-primary);
-  text-decoration: underline dotted;
+  color: var(--monero-orange);
+  text-decoration: none;
 }
 a:hover {
-  color: var(--text-secondary);
+  text-decoration: underline;
 }
 
 /* ========================================

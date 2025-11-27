@@ -14,10 +14,22 @@ const t = await createTInstance(locale);
 
 const tabs = [
   { label: t("blog.tabs.allPosts"), link: localizeHref(locale, "/blog/") },
-  { label: t("blog.tabs.urgent"), link: localizeHref(locale, "/blog/tags/urgent/") },
-  { label: t("blog.tabs.releases"), link: localizeHref(locale, "/blog/tags/releases/") },
-  { label: t("blog.tabs.community"), link: localizeHref(locale, "/blog/tags/community/") },
-  { label: t("blog.tabs.meetingLogs"), link: localizeHref(locale, "/blog/tags/dev-diaries/") },
+  {
+    label: t("blog.tabs.urgent"),
+    link: localizeHref(locale, "/blog/tags/urgent/"),
+  },
+  {
+    label: t("blog.tabs.releases"),
+    link: localizeHref(locale, "/blog/tags/releases/"),
+  },
+  {
+    label: t("blog.tabs.community"),
+    link: localizeHref(locale, "/blog/tags/community/"),
+  },
+  {
+    label: t("blog.tabs.meetingLogs"),
+    link: localizeHref(locale, "/blog/tags/dev-diaries/"),
+  },
 ];
 ---
 

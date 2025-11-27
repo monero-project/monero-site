@@ -203,6 +203,10 @@ const active = I(initial);
     height: 4px;
   }
 
+  .tab-header::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
   .tab-header::-webkit-scrollbar-thumb {
     border-radius: 999px;
   }
@@ -222,6 +226,7 @@ const active = I(initial);
     border-radius: 999px;
     white-space: nowrap;
     scroll-snap-align: center;
+    color: var(--text-primary);
   }
 
   .tab-label:hover {
