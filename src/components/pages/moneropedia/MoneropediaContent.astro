@@ -21,8 +21,20 @@ processedHtml = processMoneropediaLinks(processedHtml, entries, locale);
 
 <div class="moneropedia-content" set:html={DOMPurify.sanitize(processedHtml)} />
 
-<style>
+<style lang="scss">
   .moneropedia-content {
     position: relative;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--text-secondary);
+
+      a {
+        color: var(--text-secondary);
+
+        &:hover {
+          color: var(--text-primary);
+        }
+      }
+    }
   }
 </style>
