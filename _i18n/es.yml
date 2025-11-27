@@ -140,7 +140,7 @@ hangouts:
       monedas.
     monero-offtopic: Para hablar con otros usuarios acerca de cosas no relacionadas
       a Monero.
-    monero-pools: Este es el lugar para preguntas y discusiones de minería.
+    monero-mining: Este es el lugar para preguntas y discusiones de minería.
     monero-research-lab: Investiga sobre privacidad financiera con criptomonedas.
     monero-translations: Localizando Monero en otros idiomas.
     monero-hardware: Construyendo monederos físicos (hardware wallets) para mantener
@@ -1038,8 +1038,8 @@ mining:
     \ GUI (sólo para CPU). Si quieres minar en una pool o minar con una GPU, necesitarás\
     \ un software dedicado. Mineros que soportan Monero:\n"
   supportp: Si tienes preguntas o simplemente quieres charlar con otros mineros, ven
-    a chatear en Monero Pools. En <a href="https://matrix.to/#/%23monero-pools:monero.social">Matrix</a>
-    y <a href="irc://irc.libera.chat/#monero-pools">Libera</a>.
+    a chatear en Monero Mining. En <a href="https://matrix.to/#/%23monero-mining:monero.social">Matrix</a>
+    y <a href="irc://irc.libera.chat/#monero-mining">Libera</a>.
   conminfee: Sólo puedes utilizar software de terceros para minar en un pool, lo que
     puede quitarte un pequeño porcentaje de tus valores de hash.
   p2poolfeatures: Características principales

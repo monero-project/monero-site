@@ -349,7 +349,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:142
 #, markdown-text
-msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-pools on Libera](https://web.libera.chat/?channel=#monero-pools) or Matrix (#monero-pools:monero.social)."
+msgid "An active Monero mining community on Reddit is [/r/MoneroSupport](https://www.reddit.com/r/MoneroSupport/). You can also join [#monero-mining on Libera](https://web.libera.chat/?channel=#monero-mining) or Matrix (#monero-mining:monero.social)."
 msgstr ""
 
 #. type: Title ##
