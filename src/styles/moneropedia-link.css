@@ -17,7 +17,7 @@
   content: attr(data-tooltip);
   position: absolute;
   bottom: 100%;
-  left: 0; /* anchor to the link's left edge */
+  inset-inline-start: 0; /* anchor to the link's left edge */
   transform: translateX(0); /* no centering by default */
   margin-bottom: 0.5rem;
   padding: 0.5rem 0.75rem;

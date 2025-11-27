@@ -269,6 +269,13 @@
     "post": {
       "recentPosts": "Publicaciones Recientes",
       "and": "y"
+    },
+    "tabs": {
+      "allPosts": "Todas las Publicaciones",
+      "urgent": "Urgente",
+      "releases": "Lanzamientos",
+      "community": "Comunidad",
+      "meetingLogs": "Registros de Reuniones"
     }
   }
 }

@@ -2,21 +2,22 @@
 import BlogCard from "@/components/pages/blog/BlogCard.astro";
 import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale } from "@/i18n/utils";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("blog");
 const sortedPosts = allPosts.sort((a, b) => b.id.localeCompare(a.id));
+
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
 const tabs = [
-  { label: "All Posts", link: "/blog/" },
-  { label: "Urgent", link: "/blog/tags/urgent/" },
-  { label: "Releases", link: "/blog/tags/releases/" },
-  { label: "Community", link: "/blog/tags/community/" },
-  { label: "Meeting Logs", link: "/blog/tags/dev-diaries/" },
+  { label: t("blog.tabs.allPosts"), link: localizeHref(locale, "/blog/") },
+  { label: t("blog.tabs.urgent"), link: localizeHref(locale, "/blog/tags/urgent/") },
+  { label: t("blog.tabs.releases"), link: localizeHref(locale, "/blog/tags/releases/") },
+  { label: t("blog.tabs.community"), link: localizeHref(locale, "/blog/tags/community/") },
+  { label: t("blog.tabs.meetingLogs"), link: localizeHref(locale, "/blog/tags/dev-diaries/") },
 ];
 ---
 

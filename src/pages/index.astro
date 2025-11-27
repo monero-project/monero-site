@@ -170,7 +170,7 @@ const t = await createTInstance(locale);
   .video-container video {
     position: absolute;
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
     width: 100%;
     height: 100%;
   }
@@ -189,8 +189,8 @@ const t = await createTInstance(locale);
   :global(.hero) {
     position: absolute !important;
     top: 3rem !important;
-    left: 5rem !important;
-    right: 5rem !important;
+    inset-inline-start: 5rem !important;
+    inset-inline-end: 5rem !important;
     z-index: 5 !important;
     min-height: var(--hero-min-height) !important;
   }
@@ -203,8 +203,8 @@ const t = await createTInstance(locale);
 
   @media (max-width: 600px) {
     :global(.hero) {
-      left: 2rem !important;
-      right: 2rem !important;
+      inset-inline-start: 2rem !important;
+      inset-inline-end: 2rem !important;
     }
   }
 </style>

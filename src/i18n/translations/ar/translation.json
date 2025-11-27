@@ -269,6 +269,13 @@
     "post": {
       "recentPosts": "المنشورات الأخيرة",
       "and": "و"
+    },
+    "tabs": {
+      "allPosts": "جميع المنشورات",
+      "urgent": "عاجل",
+      "releases": "الإصدارات",
+      "community": "المجتمع",
+      "meetingLogs": "سجلات الاجتماعات"
     }
   }
 }
