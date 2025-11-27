@@ -229,7 +229,7 @@ const active = I(initial);
   }
 
   .tab-label.active {
-    background: var(--card-color);
+    background: var(--footer-color);
   }
 
   .panel {
@@ -248,7 +248,7 @@ const active = I(initial);
 
   @for $i from 0 through 9 {
     input[id$="-#{$i}"]:checked ~ .tab-header label[for$="-#{$i}"] {
-      background: var(--card-color);
+      background: var(--footer-color);
     }
   }
 
