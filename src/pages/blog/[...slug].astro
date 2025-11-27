@@ -57,7 +57,6 @@ const t = await createTInstance(locale);
     padding: 1.5rem;
     border-radius: 0.5rem;
     height: fit-content;
-    margin-top: 1.5rem;
   }
 
   .sidebar h2 {
@@ -68,11 +67,23 @@ const t = await createTInstance(locale);
 
   @media (min-width: 1200px) {
     .blog-container {
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: 1fr 75ch 1fr;
+    }
+
+    main {
+      grid-column: 2;
     }
 
     .sidebar {
-      margin-top: 0;
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .sidebar {
+      grid-column: 3;
+      grid-row: 1;
     }
   }
 </style>
