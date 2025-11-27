@@ -142,7 +142,7 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
     margin-top: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .tag {
@@ -191,9 +191,7 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
     }
 
     .summary {
-      order: 2;
-      margin-bottom: unset;
-      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
     .meta {
@@ -202,6 +200,7 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
 
     .tag-container {
       font-size: var(--font-size-xs);
+      gap: 0.5rem;
     }
   }
 </style>
