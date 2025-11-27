@@ -18,4 +18,4 @@ vulputate arcu pretium vitae. Integer et nisl vitae urna vehicula gravida.
 
 ##### Other Resources
 
-<sub>1. _Fluffypony gives a great explanation of why mandatory network upgrades are good for Monero._ ([Monero Missives for the Week of 2016-06-20](/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
+<sub>1. _Fluffypony gives a great explanation of why mandatory network upgrades are good for Monero._ ([Monero Missives for the Week of 2016-06-20](/blog/2016/06/20/monero-missive-for-the-week-of-2016-06-20.html))</sub>
