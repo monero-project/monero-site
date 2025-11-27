@@ -63,11 +63,11 @@
     --footer-color: #211f26;
 
     /* Text Colors */
-    --heading-color: #ffffff;
-    --text-primary: #ffffff;
     --text-secondary: #9a9ba3;
     --paragraph-main: #c6c6d0;
     --paragraph-subtitle: #a9aab4;
+    --heading-color: #f0f0f0;
+    --text-primary: var(--paragraph-main);
 
     /* Border Colors */
     --border-color: #36343b;
@@ -84,6 +84,10 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
 }
 
 /* ========================================
