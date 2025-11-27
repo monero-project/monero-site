@@ -72,124 +72,122 @@ const t = await createTInstance(locale, "downloads");
     </Fragment>
 
     <Fragment slot="panel-1" id="community-tab">
-      <div class="community-section">
-        <!-- Local Sync Wallets -->
-        <h2 class="section-title">
-          {t("community.sections.localSync.title")}
-        </h2>
-        <p class="section-subtitle">
-          {t("community.sections.localSync.subtitle")}
-        </p>
+      <!-- Local Sync Wallets -->
+      <h2 class="section-title">
+        {t("community.sections.localSync.title")}
+      </h2>
+      <p class="section-subtitle">
+        {t("community.sections.localSync.subtitle")}
+      </p>
 
-        <!-- Monero-only -->
-        <h3 class="subheading">{t("community.categories.moneroOnly")}</h3>
-        <div class="cards-grid compact">
-          {
-            communityWallets.localSync.moneroOnly.map((wallet) => (
-              <CommunityCard
-                logo={wallet.logo}
-                name={wallet.name}
-                description={t(`community.descriptions.${wallet.id}`)}
-                tags={wallet.tags}
-                link={wallet.link}
-                linkText={t("community.learnMore")}
-                translateTag={(key: string) => t(`community.tags.${key}`)}
-                t={t}
-              />
-            ))
-          }
-        </div>
+      <!-- Monero-only -->
+      <h3 class="subheading">{t("community.categories.moneroOnly")}</h3>
+      <div class="cards-grid compact">
+        {
+          communityWallets.localSync.moneroOnly.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+              t={t}
+            />
+          ))
+        }
+      </div>
 
-        <!-- Multi-coin -->
-        <h3 class="subheading">{t("community.categories.multiCoin")}</h3>
-        <div class="cards-grid compact">
-          {
-            communityWallets.localSync.multiCoin.map((wallet) => (
-              <CommunityCard
-                logo={wallet.logo}
-                name={wallet.name}
-                description={t(`community.descriptions.${wallet.id}`)}
-                tags={wallet.tags}
-                link={wallet.link}
-                linkText={t("community.learnMore")}
-                translateTag={(key: string) => t(`community.tags.${key}`)}
-                t={t}
-              />
-            ))
-          }
-        </div>
+      <!-- Multi-coin -->
+      <h3 class="subheading">{t("community.categories.multiCoin")}</h3>
+      <div class="cards-grid compact">
+        {
+          communityWallets.localSync.multiCoin.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+              t={t}
+            />
+          ))
+        }
+      </div>
 
-        <!-- Remote Sync Wallets -->
-        <h2 class="section-title">
-          {t("community.sections.remoteSync.title")}
-        </h2>
-        <p class="section-subtitle">
-          {t("community.sections.remoteSync.subtitle")}
-        </p>
-        <div class="cards-grid">
-          {
-            communityWallets.remoteSync.map((wallet) => (
-              <CommunityCard
-                logo={wallet.logo}
-                name={wallet.name}
-                description={t(`community.descriptions.${wallet.id}`)}
-                tags={wallet.tags}
-                link={wallet.link}
-                linkText={t("community.learnMore")}
-                translateTag={(key: string) => t(`community.tags.${key}`)}
-                t={t}
-              />
-            ))
-          }
-        </div>
+      <!-- Remote Sync Wallets -->
+      <h2 class="section-title">
+        {t("community.sections.remoteSync.title")}
+      </h2>
+      <p class="section-subtitle">
+        {t("community.sections.remoteSync.subtitle")}
+      </p>
+      <div class="cards-grid">
+        {
+          communityWallets.remoteSync.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+              t={t}
+            />
+          ))
+        }
+      </div>
 
-        <!-- Offline Wallets -->
-        <h2 class="section-title">
-          {t("community.sections.offline.title")}
-        </h2>
-        <p class="section-subtitle">
-          {t("community.sections.offline.subtitle")}
-        </p>
-        <div class="cards-grid">
-          {
-            communityWallets.offline.map((wallet) => (
-              <CommunityCard
-                logo={wallet.logo}
-                name={wallet.name}
-                description={t(`community.descriptions.${wallet.id}`)}
-                tags={wallet.tags}
-                link={wallet.link}
-                linkText={t("community.learnMore")}
-                translateTag={(key: string) => t(`community.tags.${key}`)}
-                t={t}
-              />
-            ))
-          }
-        </div>
+      <!-- Offline Wallets -->
+      <h2 class="section-title">
+        {t("community.sections.offline.title")}
+      </h2>
+      <p class="section-subtitle">
+        {t("community.sections.offline.subtitle")}
+      </p>
+      <div class="cards-grid">
+        {
+          communityWallets.offline.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+              t={t}
+            />
+          ))
+        }
+      </div>
 
-        <!-- Node Software -->
-        <h2 class="section-title">
-          {t("community.sections.nodes.title")}
-        </h2>
-        <p class="section-subtitle">
-          {t("community.sections.nodes.subtitle")}
-        </p>
-        <div class="cards-grid">
-          {
-            communityWallets.nodes.map((wallet) => (
-              <CommunityCard
-                logo={wallet.logo}
-                name={wallet.name}
-                description={t(`community.descriptions.${wallet.id}`)}
-                tags={wallet.tags}
-                link={wallet.link}
-                linkText={t("community.learnMore")}
-                translateTag={(key: string) => t(`community.tags.${key}`)}
-                t={t}
-              />
-            ))
-          }
-        </div>
+      <!-- Node Software -->
+      <h2 class="section-title">
+        {t("community.sections.nodes.title")}
+      </h2>
+      <p class="section-subtitle">
+        {t("community.sections.nodes.subtitle")}
+      </p>
+      <div class="cards-grid">
+        {
+          communityWallets.nodes.map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("community.learnMore")}
+              translateTag={(key: string) => t(`community.tags.${key}`)}
+              t={t}
+            />
+          ))
+        }
       </div>
     </Fragment>
   </Tabs>
@@ -201,7 +199,6 @@ const t = await createTInstance(locale, "downloads");
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.25rem;
-    margin: 2rem 0;
   }
 
   @media (min-width: 1024px) {
@@ -213,10 +210,6 @@ const t = await createTInstance(locale, "downloads");
 
 <style>
   /* Community */
-  .community-section {
-    margin: 2rem 0;
-  }
-
   .section-title {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);

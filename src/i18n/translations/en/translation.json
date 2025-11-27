@@ -270,6 +270,9 @@
       "heroTitle": "Posts tagged with \"{{tag}}\"",
       "heroSubtitle": "Browse all blog posts tagged with \"{{tag}}\"."
     },
-    "and": "and"
+    "post": {
+      "recentPosts": "Recent Posts",
+      "and": "and"
+    }
   }
 }

@@ -1,6 +1,8 @@
 ---
+import BlogCard from "@/components/pages/blog/BlogCard.astro";
+import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import { createTInstance, getLocale } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -8,6 +10,14 @@ const allPosts = await getCollection("blog");
 const sortedPosts = allPosts.sort((a, b) => b.id.localeCompare(a.id));
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+
+const tabs = [
+  { label: "All Posts", link: "/blog/" },
+  { label: "Urgent", link: "/blog/tags/urgent/" },
+  { label: "Releases", link: "/blog/tags/releases/" },
+  { label: "Community", link: "/blog/tags/community/" },
+  { label: "Meeting Logs", link: "/blog/tags/dev-diaries/" },
+];
 ---
 
 <Layout>
@@ -15,13 +25,39 @@ const t = await createTInstance(locale);
     title={t("blog.index.heroTitle")}
     subtitle={t("blog.index.heroSubtitle")}
   />
-  {
-    sortedPosts.map((post) => (
-      <li>
-        <a href={localizeHref(locale, `/blog/${post.slug}/`)}>
-          {post.data.title}
-        </a>
-      </li>
-    ))
-  }
+  <Tabs
+    labels={tabs.map((t) => t.label)}
+    links={tabs.map((t) => t.link)}
+    activeIndex={0}
+  />
+  <div class="blog-grid">
+    {
+      sortedPosts.map((post) => (
+        <BlogCard
+          slug={post.slug}
+          title={post.data.title}
+          author={post.data.author}
+          tags={post.data.tags || []}
+          image={post.data.image}
+          summary={post.data.summary}
+          locale={locale}
+          t={t}
+        />
+      ))
+    }
+  </div>
 </Layout>
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  @media (min-width: 1200px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

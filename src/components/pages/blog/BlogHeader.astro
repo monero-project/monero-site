@@ -1,10 +1,11 @@
 ---
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { locales } from "@/i18n/config";
 import { localizeHref } from "@/i18n/utils";
 
 import calendarIcon from "@/assets/icons/mask/calendar.avif?url";
 import userIcon from "@/assets/icons/mask/user.avif?url";
+import { localizeDateString } from "@/i18n/utils";
+import { getDateStringFromSlug } from "@/utils/blog.ts";
 
 interface Props {
   title: string;
@@ -17,25 +18,12 @@ interface Props {
 
 const { title, slug, author, tags = [], locale, t } = Astro.props;
 
-const dateMatch = slug.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
-
-let date: Date | null = null;
-let formattedDate: string | null = null;
-
-if (dateMatch) {
-  const d = new Date(dateMatch);
-  if (!isNaN(d.getTime())) {
-    date = d;
-    formattedDate = d.toLocaleDateString(
-      locales[locale as keyof typeof locales],
-      {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      },
-    );
-  }
-}
+const dateString = getDateStringFromSlug(slug);
+const date = localizeDateString(dateString, locale, {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
 ---
 
 <div id="post-header">
@@ -48,7 +36,7 @@ if (dateMatch) {
           <div class="icon">
             <MaskIcon src={calendarIcon} />
           </div>
-          <time datetime={dateMatch}>{formattedDate}</time>
+          <time datetime={dateString}>{date}</time>
         </div>
       )
     }
@@ -59,7 +47,7 @@ if (dateMatch) {
           <div class="icon">
             <MaskIcon src={userIcon} />
           </div>
-          {author.replace(" and ", ` ${t("blog.and")} `)}
+          {author.replace(" and ", ` ${t("blog.post.and")} `)}
         </div>
       )
     }

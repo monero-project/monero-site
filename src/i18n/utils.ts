@@ -26,6 +26,17 @@ export const localizeNumber = (
   });
 };
 
+export const localizeDateString = (
+  date: string | null,
+  locale: string,
+  options?: Intl.DateTimeFormatOptions,
+): string | null => {
+  if (!date) return null;
+  const localeString =
+    (locales as Record<string, string>)[locale] || locales[defaultLocale];
+  return new Date(date).toLocaleDateString(localeString, options);
+};
+
 export const getLocaleName = (locale: string): { name: string } | null => {
   const displayNames = new Intl.DisplayNames([locale], { type: "language" });
   const name = displayNames.of(locale);

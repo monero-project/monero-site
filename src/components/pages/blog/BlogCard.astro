@@ -1,0 +1,207 @@
+---
+import calendarIcon from "@/assets/icons/mask/calendar.avif?url";
+import userIcon from "@/assets/icons/mask/user.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import { localizeDateString, localizeHref } from "@/i18n/utils";
+import { getDateStringFromSlug } from "@/utils/blog.ts";
+
+interface Props {
+  slug: string;
+  author: string;
+  tags: string[];
+  title: string;
+  summary: string;
+  image?: string;
+  locale: string;
+  t: (key: string) => string;
+}
+
+const { author, tags, title, summary, image, slug, locale, t } = Astro.props;
+const dateString = getDateStringFromSlug(slug);
+const date = localizeDateString(dateString, locale, {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+const localizedLink = localizeHref(locale, `/blog/${slug}/`);
+---
+
+<div class="card-container">
+  <a class={`thumbnail ${!image ? "no-image" : ""}`} href={localizedLink}>
+    {
+      image ? (
+        <img src={image} alt={title} loading="lazy" />
+      ) : (
+        <span>Release</span>
+      )
+    }
+  </a>
+  <div class="info">
+    <div class="meta">
+      {
+        date && (
+          <div class="meta-item">
+            <div class="icon">
+              <MaskIcon src={calendarIcon} />
+            </div>
+            <time datetime={dateString}>{date}</time>
+          </div>
+        )
+      }
+
+      {
+        author && (
+          <div class="meta-item">
+            <div class="icon">
+              <MaskIcon src={userIcon} />
+            </div>
+            {author.replace(" and ", ` ${t("blog.post.and")} `)}
+          </div>
+        )
+      }
+    </div>
+    <h2 class="title">
+      <a href={localizedLink}>{title}</a>
+    </h2>
+    <a class="summary" href={localizedLink}>{summary}</a>
+    {
+      tags.length > 0 && (
+        <div class="tag-container">
+          {tags.map((tag: string) => (
+            <a class="tag" href={localizeHref(locale, `/blog/tags/${tag}/`)}>
+              {tag}
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .card-container {
+    display: grid;
+    grid-template-rows: clamp(250px, 40vh, 400px) 1fr;
+    gap: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+
+  .thumbnail {
+    background-color: white;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  .thumbnail.no-image {
+    background-color: var(--monero-orange);
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+  }
+
+  .thumbnail span {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: var(--font-size-4xl);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meta {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(1rem, 2vw, 2rem);
+    flex-wrap: wrap;
+    color: var(--text-secondary);
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .meta-item > .icon {
+    display: grid;
+    place-items: center;
+    color: var(--monero-orange);
+  }
+
+  .tag-container {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    text-align: center;
+    padding: 0.25rem 0.75rem;
+    background: var(--footer-color);
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .title a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .title a:hover {
+    text-decoration: underline;
+  }
+
+  .summary {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+
+  @media (max-width: 1200px) {
+    .card-container {
+      grid-template-rows: auto;
+    }
+
+    .thumbnail {
+      display: none;
+    }
+
+    .info {
+      overflow-y: visible;
+    }
+
+    .title {
+      font-size: var(--font-size-xl);
+      order: -1;
+      margin-bottom: 0.75rem;
+      margin-top: 0;
+    }
+
+    .summary {
+      order: 2;
+      margin-bottom: unset;
+      margin-top: 1rem;
+    }
+
+    .meta {
+      margin-bottom: 1rem;
+    }
+
+    .tag-container {
+      font-size: var(--font-size-xs);
+    }
+  }
+</style>

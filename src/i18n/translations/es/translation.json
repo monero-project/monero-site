@@ -266,6 +266,9 @@
       "heroTitle": "Publicaciones etiquetadas con \"{{tag}}\"",
       "heroSubtitle": "Navega por todas las publicaciones del blog etiquetadas con \"{{tag}}\"."
     },
-    "and": "y"
+    "post": {
+      "recentPosts": "Publicaciones Recientes",
+      "and": "y"
+    }
   }
 }

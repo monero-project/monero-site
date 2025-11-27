@@ -20,7 +20,7 @@ const t = await createTInstance(locale);
 ---
 
 <Layout title={post.data.title}>
-  <div class="post-layout">
+  <div class="blog-container">
     <main>
       <BlogHeader
         title={post.data.title}
@@ -36,17 +36,20 @@ const t = await createTInstance(locale);
     </main>
 
     <aside class="sidebar">
-      <h2>Recent Posts</h2>
-      <slot name="sidebar" />
+      <h2>{t("blog.post.recentPosts")}</h2>
     </aside>
   </div>
 </Layout>
 
-<style lang="scss">
-  .post-layout {
+<style>
+  .blog-container {
     display: grid;
-    grid-template-columns: auto 25%;
+    grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .blog-container > * {
+    min-width: 0;
   }
 
   .sidebar {
@@ -54,6 +57,7 @@ const t = await createTInstance(locale);
     padding: 1.5rem;
     border-radius: 0.5rem;
     height: fit-content;
+    margin-top: 1.5rem;
   }
 
   .sidebar h2 {
@@ -62,9 +66,13 @@ const t = await createTInstance(locale);
     margin-top: 0;
   }
 
-  @media (max-width: 1200px) {
-    .post-layout {
-      grid-template-columns: 1fr;
+  @media (min-width: 1200px) {
+    .blog-container {
+      grid-template-columns: 3fr 1fr;
+    }
+
+    .sidebar {
+      margin-top: 0;
     }
   }
 </style>

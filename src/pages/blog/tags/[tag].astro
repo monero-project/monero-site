@@ -1,6 +1,8 @@
 ---
+import BlogCard from "@/components/pages/blog/BlogCard.astro";
+import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import { createTInstance, getLocale } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -25,9 +27,26 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 const sanitizedTag = tag.replace(/-/g, " ");
+const pathname = Astro.url.pathname;
+
+const tabs = [
+  { label: "All Posts", link: "/blog/" },
+  { label: "Urgent", link: "/blog/tags/urgent/" },
+  { label: "Releases", link: "/blog/tags/releases/" },
+  { label: "Community", link: "/blog/tags/community/" },
+  { label: "Meeting Logs", link: "/blog/tags/dev-diaries/" },
+];
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+
+let activeTab = tabs.findIndex((tab, index) => {
+  if (index === 0) {
+    return pathname === tab.link;
+  }
+  return pathname.startsWith(tab.link);
+});
+if (activeTab === -1) activeTab = 0;
 ---
 
 <Layout>
@@ -35,15 +54,40 @@ const t = await createTInstance(locale);
     title={t("blog.tags.heroTitle", { tag: sanitizedTag })}
     subtitle={t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
   />
-  <ul>
+  <Tabs
+    labels={tabs.map((t) => t.label)}
+    links={tabs.map((t) => t.link)}
+    activeIndex={activeTab}
+  />
+  <div class="blog-grid">
     {
       posts.map((post) => (
-        <li>
-          <a href={localizeHref(locale, `/blog/${post.slug}/`)}>
-            {post.data.title}
-          </a>
-        </li>
+        <BlogCard
+          slug={post.slug}
+          title={post.data.title}
+          author={post.data.author}
+          tags={post.data.tags || []}
+          image={post.data.image}
+          summary={post.data.summary}
+          locale={locale}
+          t={t}
+        />
       ))
     }
-  </ul>
+  </div>
 </Layout>
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
