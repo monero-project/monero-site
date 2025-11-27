@@ -74,6 +74,7 @@ const accordionId = crypto.randomUUID();
   }
 
   .accordion-title {
+    color: var(--heading-color);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-lg);
   }
@@ -99,12 +100,12 @@ const accordionId = crypto.randomUUID();
     padding: 0 0 1.5rem 0;
     color: var(--paragraph-main);
     font-family: "Inter Variable", sans-serif;
-  }
-
-  .accordion-content p {
-    margin: 0;
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-normal);
+  }
+
+  :global(.accordion-content > p) {
+    margin: 0;
   }
 
   /* Card variant: no borders, spaced items, card background and rounded corners */

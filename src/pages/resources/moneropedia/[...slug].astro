@@ -77,14 +77,12 @@ const title = entry.data.title ?? entry.data.terms[0];
 <style>
   .moneropedia-page {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr); /* 1 : 2-ish ratio */
+    grid-template-columns: auto minmax(0, 1fr);
     grid-template-rows: auto 1fr;
     grid-template-areas:
       "sidebar header"
       ".       content";
     gap: 1rem 5rem;
-    padding-top: clamp(1.5rem, 5vw, 2rem);
-    margin-top: clamp(1.5rem, 5vw, 2rem);
   }
 
   .moneropedia-sidebar {
@@ -99,7 +97,7 @@ const title = entry.data.title ?? entry.data.terms[0];
     align-items: center;
     gap: 0.5rem;
     font-size: var(--font-size-2xl);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     color: var(--monero-orange);
     text-decoration: none;
   }

@@ -135,7 +135,7 @@ const dir = getDirection(getLocale(Astro.url));
   .link {
     color: var(--paragraph-main);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     display: flex;
     align-items: center;
     user-select: none;
@@ -234,13 +234,13 @@ const dir = getDirection(getLocale(Astro.url));
   }
 
   .title {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
   }
 
   .desc {
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
-    line-height: 1.35;
+    line-height: var(--line-height-caption);
     margin-top: 0.15rem;
   }
 

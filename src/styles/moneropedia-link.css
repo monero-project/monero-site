@@ -32,8 +32,8 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
 
-  font-size: 0.875rem;
-  line-height: 1.4;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-caption);
   color: var(--text-primary);
   opacity: 0;
   pointer-events: none;
