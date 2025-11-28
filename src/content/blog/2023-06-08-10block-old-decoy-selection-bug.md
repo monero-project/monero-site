@@ -6,14 +6,12 @@ tags: [urgent, crypto, community]
 author: jeffro256
 ---
 
-{% t global.lang_tag %}
-
 ## Quick Facts
 
 - Severity: HIGH
 - Affected versions: GUI/CLI wallet versions v0.13.0.2 to v0.18.2.1
 - Impact: Loss of sender anonymity for transactions spending funds exactly 10 blocks old
-- What to do: [Update to v0.18.2.2 and above]({{ site.baseurl }}/downloads)
+- What to do: [Update to v0.18.2.2 and above](/downloads)
 
 ## Introduction
 
@@ -27,7 +25,7 @@ Upgrading your wallet to v0.18.2.2 will not only improve your sender anonymity, 
 
 ## Technical Explanation
 
-Large portions of the text below are copied directly from [j-berman's](https://github.com/j-berman) ["Post-Mortem of Decoy Selection Bugs"]({{ site.baseurl_root }}/2021/09/20/post-mortem-of-decoy-selection-bugs.html) in 2021
+Large portions of the text below are copied directly from [j-berman's](https://github.com/j-berman) ["Post-Mortem of Decoy Selection Bugs"](/blog/2021/09/20/post-mortem-of-decoy-selection-bugs) in 2021
 
 ### More In-Depth Background
 
@@ -61,10 +59,10 @@ Also, thankfully, the data tells a more complex story than our worst-case heuris
 
 ## Conclusion
 
-Not to beat a dead horse, echoing j-berman in his [original decoy selection bug post-motem]({{ site.baseurl_root }}/2021/09/20/post-mortem-of-decoy-selection-bugs.html): "anyone with a background in statistics and probability theory is encouraged to join in discussions geared toward improving the algorithm." In hindsight, this bug could have been discovered if the statistical distributions had been analyzed carefully.
+Not to beat a dead horse, echoing j-berman in his [original decoy selection bug post-motem](/blog/2021/09/20/post-mortem-of-decoy-selection-bugs.html): "anyone with a background in statistics and probability theory is encouraged to join in discussions geared toward improving the algorithm." In hindsight, this bug could have been discovered if the statistical distributions had been analyzed carefully.
 
 Instead, the bug was [stumbled upon by accident](https://github.com/monero-project/monero/pull/8794#issuecomment-1478585470) while [attempting to fix an infinite while loop](https://github.com/monero-project/monero/pull/8794#issue-1633821949) during decoy selection. This brings me to a second point which I think is important but may be controversial: the wallet2 decoy selection code needs to be completely rewritten. The `wallet2::get_outs` function is [over 600 lines long](https://github.com/monero-project/monero/blob/94e67bf96bbc010241f29ada6abc89f49a81759c/src/wallet/wallet2.cpp#L8165), with few comments and inadequate testing.
 
 Seeing as how the important decoy selection is to the privacy model of Monero, the code which actually implements this functionality in most wallets is of substandard quality. There are a lot of great ongoing discussions relating to decoy selection like [non-coinbase-only selection for non-coinbase](https://github.com/monero-project/research-lab/issues/109), [coinbase consolidation transactions](https://github.com/monero-project/research-lab/issues/108), [ring binning](https://github.com/monero-project/research-lab/issues/84), [etc](https://github.com/monero-project/research-lab/issues/86).
 
-And while Monero has always been forward focused, it has also been more grounded and battle-tested as compared to other more experimental privacy-preserving coins. This only happens through the hard work and dedication of community members peering over the code and hardening it. Feel free to join the IRC/Matrix channels listed on the Monero [Hangouts]({{ site.baseurl }}/community/hangouts/) or [Workgroups]({{ site.baseurl }}/community/workgroups/) page to participate and communicate more with existing community members.
+And while Monero has always been forward focused, it has also been more grounded and battle-tested as compared to other more experimental privacy-preserving coins. This only happens through the hard work and dedication of community members peering over the code and hardening it. Feel free to join the IRC/Matrix channels listed on the Monero [Hangouts](/community/hangouts/) or [Workgroups](/community/workgroups/) page to participate and communicate more with existing community members.

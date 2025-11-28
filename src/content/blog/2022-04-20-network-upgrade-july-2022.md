@@ -7,7 +7,7 @@ image: /blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png
 ---
 
 <div align="center">
-    <img src="{{ page.image }}" width="350px">
+    <img src="/blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png" width="350px">
 </div>
 
 **_Note: This blog post has been updated to reflect the new hard-fork date of the 13th of August, 2022, as the release was delayed due to required multi-sig security fixes and hardware wallet-related delays._**
@@ -48,4 +48,4 @@ To learn more about how Monero uses hard-forks to upgrade the network, you can r
 **Q:** Will there be any changes to the PoW algorithm?  
 **A:** _No. The PoW algorithm will not be affected. Mining will work as before and miners won't need to update their software._
 
-If you have further questions about the hard-fork, please reach out in [r/MoneroSupport](https://www.reddit.com/r/monerosupport) or via [#monero on IRC or Matrix]({{ site.baseurl_root }}/community/hangouts/).
+If you have further questions about the hard-fork, please reach out in [r/MoneroSupport](https://www.reddit.com/r/monerosupport) or via [#monero on IRC or Matrix](/community/hangouts/).

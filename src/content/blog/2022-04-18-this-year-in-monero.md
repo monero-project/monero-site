@@ -7,7 +7,7 @@ image: /blog/assets/2022-04-01-this-year-in-monero/8years.png
 ---
 
 <div align="center">
-    <img src="{{ page.image }}" width="350px">
+    <img src="/blog/assets/2022-04-01-this-year-in-monero/8years.png" width="350px">
 </div>
 
 As a way to celebrate and show the growth that has happened for Monero across the past year on this, the 8th anniversary of the Monero project, I wanted to take a snapshot of statistics and social media posts to highlight this growth.
