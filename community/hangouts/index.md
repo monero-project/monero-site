@@ -11,19 +11,13 @@ meta_descr: hangouts.intro
     <section class="hangouts-social container">   
         <ul class="row center-xs">
             <li>
-                <a class="ext-noicon" href="https://twitter.com/monero" target="_blank" rel="noreferrer noopener" aria-label="Twitter logo"><div class="social-icon twitter"></div></a>
+                <a class="ext-noicon" href="https://x.com/monero" target="_blank" rel="noreferrer noopener" aria-label="Twitter logo"><div class="social-icon twitter"></div></a>
             </li>
             <li>
                 <a class="ext-noicon" href="https://reddit.com/r/Monero" target="_blank" rel="noreferrer noopener" aria-label="Reddit logo"><div class="social-icon reddit"></div></a>
             </li>
             <li>
                 <a class="ext-noicon" href="https://www.facebook.com/monerocurrency/" target="_blank" rel="noreferrer noopener" aria-label="Facebook logo"><div class="social-icon facebook"></div></a>
-            </li>
-            <li>
-                <a class="ext-noicon" href="https://github.com/monero-project" target="_blank" rel="noreferrer noopener" aria-label="GitHub logo"><div class="social-icon github"></div></a>
-            </li>
-            <li>
-                <a class="ext-noicon" href="https://repo.getmonero.org/users/monero-project/projects" target="_blank" rel="noreferrer noopener" aria-label="Gitlab logo"><div class="social-icon gitlab"></div></a>
             </li>
             <li>
                 <a class="ext-noicon" href="https://telegram.me/monero" target="_blank" rel="noreferrer noopener" aria-label="Telegram logo"><div class="social-icon telegram"></div></a>
@@ -39,9 +33,8 @@ meta_descr: hangouts.intro
     <section class="container">
           <div class="row">
                 <!-- left two-thirds block-->
-               <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <div class="col-xs-12">
-                        <div class="info-block">
+               <div class="left one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-xs-12 info-block">
                             <div class="row center-xs">
                                 <div class="col">
                                     <h2>{% t hangouts.resources %}</h2>
@@ -49,16 +42,12 @@ meta_descr: hangouts.intro
                             </div>
                             <div class="row around-xs">
                                 <div class="center-xs">
-                                    <p>{% t hangouts.resources_para %} {% t hangouts.resources_para1 %}</p>
+                                    <p>{% t hangouts.resources_para %}</p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="https://matrix.to/#/%23monerospace:monero.social" class="btn-link btn-fixed">Matrix</a></p>
-                                </div>
-                                <div class="col">
-                                    <p><a href="https://taiga.getmonero.org/" class="btn-link btn-fixed">Taiga</a></p>
+                                    <p><a href="/community/workgroups/" class="btn-link btn-fixed">Workgroups</a></p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <!-- end left two-thirds block-->
@@ -75,10 +64,11 @@ meta_descr: hangouts.intro
            <div class="info-block">
              <div class="raw">
                <div class="col">
-                 <h2>{% t hangouts.irc %}</h2>
+                 <h2>{% t hangouts.irc-matrix %}</h2>
               </div>
               <div class="row start-xs">
                 <p>{% t hangouts.irc_para %} {% t hangouts.bridges %}</p>
+                <p> {% t hangouts.matrixspace %}</p>
              </div>
              <div class="row irc">
              {% for channel in site.translations[site.lang].hangouts.irc_channels %}
@@ -96,6 +86,9 @@ meta_descr: hangouts.intro
                 <p>{% t hangouts.irc_channels.{{ channel[0] }} %}</p>
               </div>
              {% endfor %}
+             </div>
+             <div class="row end-xs">
+              <p>{% t hangouts.tutorial %}</p>
              </div>
              </div>
            </div>
