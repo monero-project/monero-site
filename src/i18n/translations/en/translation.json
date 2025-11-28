@@ -267,6 +267,7 @@
     },
     "tags": {
       "pageTitle": "Posts tagged with {{tag}} | Monero - secure, private, untraceable cryptocurrency.",
+      "heroTitle": "Posts tagged with \"{{tag}}\"",
       "heroSubtitle": "Browse all blog posts tagged with \"{{tag}}\"."
     },
     "post": {

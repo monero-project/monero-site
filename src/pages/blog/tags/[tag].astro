@@ -33,42 +33,45 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
 const tabs = [
-  { label: t("blog.tabs.allPosts"), link: localizeHref(locale, "/blog/") },
+  { label: t("blog.tabs.allPosts"), link: "/blog" },
   {
     label: t("blog.tabs.urgent"),
-    link: localizeHref(locale, "/blog/tags/urgent/"),
+    link: "/blog/tags/urgent",
   },
   {
     label: t("blog.tabs.releases"),
-    link: localizeHref(locale, "/blog/tags/releases/"),
+    link: "/blog/tags/releases",
   },
   {
     label: t("blog.tabs.community"),
-    link: localizeHref(locale, "/blog/tags/community/"),
+    link: "/blog/tags/community",
   },
   {
     label: t("blog.tabs.meetingLogs"),
-    link: localizeHref(locale, "/blog/tags/dev-diaries/"),
+    link: "/blog/tags/dev-diaries",
   },
 ];
 
 let activeTab = tabs.findIndex((tab, index) => {
+  const localizedLink = localizeHref(locale, tab.link);
   if (index === 0) {
-    return pathname === tab.link;
+    return pathname === localizedLink;
   }
-  return pathname.startsWith(tab.link);
+  return pathname.startsWith(localizedLink);
 });
-if (activeTab === -1) activeTab = 0;
+
+const isMainTab = tabs.some(tab => pathname == localizeHref(locale, tab.link));
+const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
 ---
 
 <Layout>
   <TitleCard
-    title={t("blog.index.heroTitle", { tag: sanitizedTag })}
+    title={t(titleKey, { tag: sanitizedTag })}
     subtitle={t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
   />
   <Tabs
     labels={tabs.map((t) => t.label)}
-    links={tabs.map((t) => t.link)}
+    links={tabs.map((t) => localizeHref(locale, t.link))}
     activeIndex={activeTab}
   />
   <div class="blog-grid">
