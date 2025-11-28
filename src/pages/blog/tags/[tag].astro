@@ -60,7 +60,9 @@ let activeTab = tabs.findIndex((tab, index) => {
   return pathname.startsWith(localizedLink);
 });
 
-const isMainTab = tabs.some(tab => pathname == localizeHref(locale, tab.link));
+const isMainTab = tabs.some(
+  (tab) => pathname == localizeHref(locale, tab.link),
+);
 const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
 ---
 
