@@ -5,7 +5,7 @@ tags: [crypto, announcements]
 author: Justin Berman (j-berman) and jeffro256
 ---
 
-We held [a contest](/blog/2025/04/05/fcmp++-contest.html) to optimize two libraries used in Monero's proposed upgrade to [FCMP++](/blog/2024/04/27/fcmps.html): [helioselene](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/helioselene) and [ec-divisors](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/divisors). We have officially declared the winners of the contest!
+We held [a contest](/blog/2025/04/05/fcmp++-contest) to optimize two libraries used in Monero's proposed upgrade to [FCMP++](/blog/2024/04/27/fcmps): [helioselene](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/helioselene) and [ec-divisors](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/divisors). We have officially declared the winners of the contest!
 
 ## EC Divisors (250 XMR prize)
 

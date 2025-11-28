@@ -2,15 +2,21 @@
 import BlogContent from "@/components/pages/blog/BlogContent.astro";
 import BlogHeader from "@/components/pages/blog/BlogHeader.astro";
 import { createTInstance, getLocale } from "@/i18n/utils";
+import type { GetStaticPaths } from "astro";
+import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
   }));
+};
+
+interface Props {
+  post: CollectionEntry<"blog">;
 }
 
 const { post } = Astro.props;

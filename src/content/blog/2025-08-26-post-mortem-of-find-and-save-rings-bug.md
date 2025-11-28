@@ -10,7 +10,7 @@ author: Jeffro256
 - Severity: HIGH if using untrusted remote daemon, MEDIUM otherwise
 - Affected versions: GUI/CLI wallet versions v0.12.0.0 to v0.18.4.1
 - Impact: Sends TXIDs of outgoing transactions to daemon after first time loading wallet from file, reducing sender anonymity
-- Fix: Update Monero [CLI](https://getmonero.org/2025/08/26/monero-0.18.4.2-released.html) / [GUI](https://getmonero.org/2025/08/26/monero-GUI-0.18.4.2-released.html) to v0.18.4.2
+- Fix: Update Monero [CLI](https://getmonero.org/2025/08/26/monero-0.18.4.2-released) / [GUI](https://getmonero.org/2025/08/26/monero-GUI-0.18.4.2-released) to v0.18.4.2
 - Workaround: TBD
 
 ## Introduction

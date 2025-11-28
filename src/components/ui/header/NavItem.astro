@@ -76,12 +76,7 @@ const dir = getDirection(getLocale(Astro.url));
           />
         </div>
 
-        <div
-          class="dropdown"
-          role="menu"
-          aria-label={`${label} menu`}
-          tabindex="-1"
-        >
+        <div class="dropdown" role="menu" aria-label={`${label} menu`}>
           <div class="dropdown-inner">
             <div class="dropdown-content">
               {dropdown.map((item) => (
@@ -122,7 +117,6 @@ const dir = getDirection(getLocale(Astro.url));
   .nav-item {
     /* desktop: static, mobile overrides to relative */
     position: static;
-    cursor: pointer;
   }
 
   .row {
@@ -130,6 +124,7 @@ const dir = getDirection(getLocale(Astro.url));
     display: flex;
     align-items: center;
     padding: 0.4rem 0;
+    cursor: pointer;
   }
 
   .link {

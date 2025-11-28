@@ -1,0 +1,51 @@
+---
+title: "Monero will undergo a network upgrade on 13th August, 2022"
+summary: Announcement of the upcoming network upgrade (13th August, 2022)
+tags: [community, protocol upgrade, core, crypto]
+author: sethforprivacy
+image: /blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png
+---
+
+<div align="center">
+    <img src="{{ page.image }}" width="350px">
+</div>
+
+**_Note: This blog post has been updated to reflect the new hard-fork date of the 13th of August, 2022, as the release was delayed due to required multi-sig security fixes and hardware wallet-related delays._**
+
+The next network upgrade will take place on **~13th August, 2022** (block 2,688,888). Network upgrades are technically hard-forks and require all participants in the Monero network to update their software. The new software (**v0.18 "Fluorine Fermi"**) will be released one month before the network upgrade, on the **~13th of July**.
+
+This network upgrade will introduce important new features like:
+
+- A ring-size increase from 11 to 16 -- **the largest ever absolute increase in the base anonymity set** (read: plausible deniability, or base privacy) -- of every transaction on the network
+- [Upgraded Bulletproofs algorithm, "Bulletproofs+"](https://www.getmonero.org/2020/12/24/Bulletproofs+-in-Monero.html), which will **reduce the typical transaction size by ~5-7%** and **improve typical verification performance by ~5-7%**, making every transaction lighter and faster
+- [View tags, a brilliant way to **reduce wallet sync times by 30-40%**](https://localmonero.co/knowledge/view-tags-reduce-monero-sync-time)
+- Fee changes, **improving the security and resilience of the network** to rapid changes in the fee market or attacks by malicious entities
+- Major multi-sig fixes and improvements, including critical security patches
+
+The complete list of changes and improvements will be released along with the new binaries.
+
+The logs of the meeting where the dates of the network upgrade were decided [are available on Github](https://github.com/monero-project/meta/issues/684).
+
+To learn more about how Monero uses hard-forks to upgrade the network, you can read this article from LocalMonero: ["How Monero Uses Hard-Forks to Upgrade the Network"](https://localmonero.co/knowledge/network-upgrades)
+
+### Common questions
+
+**Q:** Hard-fork? Does this mean there will be a split and a new coin will be created?  
+**A:** _No. Hard-forks in Monero are made to improve the base protocol, and are non-contentious. There will be no split and no new coin will be created._
+
+**Q:** What do I have to do to be prepared for this upgrade?  
+**A:** _A new release will be announced before the network upgrade (around the 13th of July). You will only have to be using the updated software by the time the network upgrade occurs (13th August). To the end user, it will be like a simple software update._
+
+**Q:** How do I update my wallet/node?  
+**A:** _Detailed instructions will be posted along with the software update, but basically users will need to simply replace their previous software (monerod, monero-wallet-cli, monero-wallet-gui) with the new version. That's it._
+
+**Q:** If I have my coins on a paper wallet, do I have to do something?  
+**A:** _No. You will simply have to use an updated version of the Monero software when you will decide to move your coins._
+
+**Q:** If I have my coins on a hardware wallet, do I have to do something?  
+**A:** _Yes, you will need to update the Monero app or device firmware from the manufacturer once the appropriate update is available. Always be sure you go straight to the official website of the manufacturer to get these updates!_
+
+**Q:** Will there be any changes to the PoW algorithm?  
+**A:** _No. The PoW algorithm will not be affected. Mining will work as before and miners won't need to update their software._
+
+If you have further questions about the hard-fork, please reach out in [r/MoneroSupport](https://www.reddit.com/r/monerosupport) or via [#monero on IRC or Matrix]({{ site.baseurl_root }}/community/hangouts/).

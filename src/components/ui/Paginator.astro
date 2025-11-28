@@ -1,0 +1,197 @@
+---
+import { localizeNumber } from "@/i18n/utils";
+import type { Page } from "astro";
+
+interface Props {
+  page: Page<unknown>;
+  locale?: string;
+}
+
+const { page, locale } = Astro.props;
+
+let firstUrl: string;
+if (page.currentPage === 1) {
+  firstUrl = page.url.current;
+} else {
+  firstUrl = page.url.first!;
+}
+
+// Remove trailing slash for consistency
+const base = firstUrl.replace(/\/$/, "");
+
+const getHrefForPage = (n: number) => {
+  if (n === 1) return firstUrl;
+  return `${base}/${n}/`;
+};
+
+type Item = { type: "page"; number: number } | { type: "ellipsis" };
+
+const items: Item[] = [];
+
+const current = page.currentPage;
+const last = page.lastPage;
+
+if (last <= 3) {
+  // If a small number of pages left
+  for (let n = 1; n <= last; n++) {
+    items.push({ type: "page", number: n });
+  }
+} else {
+  const pages = new Set<number>();
+
+  // Always show first and last
+  pages.add(1);
+  pages.add(last);
+
+  // Show neighbors around current
+  for (let n = current - 1; n <= current + 1; n++) {
+    if (n > 1 && n < last) {
+      pages.add(n);
+    }
+  }
+
+  const sorted = Array.from(pages).sort((a, b) => a - b);
+
+  for (let i = 0; i < sorted.length; i++) {
+    const n = sorted[i];
+
+    if (i > 0) {
+      const prev = sorted[i - 1];
+      const gap = n - prev;
+
+      if (gap === 2) {
+        // If only one page in between, show it instead of ellipsis
+        items.push({ type: "page", number: prev + 1 });
+      } else if (gap > 2) {
+        items.push({ type: "ellipsis" });
+      }
+    }
+
+    items.push({ type: "page", number: n });
+  }
+}
+---
+
+{
+  last > 1 && (
+    <nav class="pagination" aria-label="Pagination">
+      {page.url.prev && (
+        <a
+          href={page.url.prev}
+          class="pagination-arrow"
+          aria-label="Previous page"
+          rel="prev"
+        >
+          &lt;
+        </a>
+      )}
+
+      <ul class="pagination-list">
+        {items.map((item) => {
+          if (item.type === "page") {
+            const n = item.number;
+            const href = getHrefForPage(n);
+            const isActive = n === page.currentPage;
+
+            const isFirst = n === 1;
+            const isLast = n === last;
+
+            let labelBase = `Page ${n}`;
+            if (isFirst) labelBase = `First page, page ${n}`;
+            if (isLast) labelBase = `Last page, page ${n}`;
+
+            const ariaLabel = isActive
+              ? `${labelBase}, current page`
+              : labelBase;
+
+            return (
+              <li>
+                <a
+                  href={href}
+                  class="pagination-pageNum"
+                  aria-label={ariaLabel}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {locale ? localizeNumber(n, locale) : n}
+                </a>
+              </li>
+            );
+          }
+
+          return (
+            <li class="pagination-separator" aria-hidden="true">
+              <span class="pagination-ellipsis">…</span>
+            </li>
+          );
+        })}
+      </ul>
+
+      {page.url.next && (
+        <a
+          href={page.url.next}
+          class="pagination-arrow"
+          aria-label="Next page"
+          rel="next"
+        >
+          &gt;
+        </a>
+      )}
+    </nav>
+  )
+}
+
+<style>
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    font-size: var(--font-size-lg);
+  }
+
+  .pagination-list {
+    display: flex;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pagination-pageNum,
+  .pagination-ellipsis {
+    color: var(--heading-color);
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 999px;
+    text-decoration: none;
+  }
+
+  .pagination-pageNum {
+    background: transparent;
+    padding: 0.25rem;
+  }
+
+  .pagination-pageNum:hover {
+    background: var(--card-hover-color);
+  }
+
+  .pagination-pageNum[aria-current="page"] {
+    font-weight: var(--font-weight-semibold);
+    background: var(--footer-color);
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .pagination-arrow {
+    color: var(--heading-color);
+    line-height: 1;
+  }
+
+  .pagination-arrow:hover {
+    color: var(--heading-color);
+  }
+</style>

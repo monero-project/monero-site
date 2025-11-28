@@ -1,13 +1,29 @@
 ---
-import BlogCard from "@/components/pages/blog/BlogCard.astro";
-import Tabs from "@/components/ui/Tabs.astro";
-import TitleCard from "@/components/ui/TitleCard.astro";
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
-const allPosts = await getCollection("blog");
-const sortedPosts = allPosts.sort((a, b) => b.id.localeCompare(a.id));
+import Layout from "@/layouts/Layout.astro";
+
+import BlogCard from "@/components/pages/blog/BlogCard.astro";
+import Paginator from "@/components/ui/Paginator.astro";
+import Tabs from "@/components/ui/Tabs.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+
+import type { GetStaticPaths, Page } from "astro";
+import type { CollectionEntry } from "astro:content";
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const allPosts = await getCollection("blog");
+  const sortedPosts = allPosts.sort((a, b) => b.id.localeCompare(a.id));
+  return paginate(sortedPosts, { pageSize: 6 });
+};
+
+interface Props {
+  page: Page<CollectionEntry<"blog">>;
+}
+
+const { page } = Astro.props;
+const posts = page.data;
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
@@ -45,7 +61,7 @@ const tabs = [
   />
   <div class="blog-grid">
     {
-      sortedPosts.map((post) => (
+      posts.map((post) => (
         <BlogCard
           slug={post.slug}
           title={post.data.title}
@@ -59,6 +75,7 @@ const tabs = [
       ))
     }
   </div>
+  <Paginator page={page} locale={locale} />
 </Layout>
 
 <style>

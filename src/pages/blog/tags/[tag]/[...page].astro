@@ -1,32 +1,39 @@
 ---
 import BlogCard from "@/components/pages/blog/BlogCard.astro";
+import Paginator from "@/components/ui/Paginator.astro";
 import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
+import type { GetStaticPaths, Page } from "astro";
+import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const allPosts = await getCollection("blog");
 
-  const tagSet = [
-    ...new Set(allPosts.flatMap((post) => post.data.tags)),
-  ].filter((tag) => tag !== undefined);
+  const tagSet = [...new Set(allPosts.flatMap((post) => post.data.tags ?? []))];
 
-  return tagSet.map((tag) => {
+  return tagSet.flatMap((tag) => {
     const filteredPosts = allPosts.filter((post) =>
       post.data.tags?.includes(tag),
     );
-    return {
+
+    return paginate(filteredPosts, {
+      pageSize: 6,
       params: { tag: tag.toLowerCase().replace(/\s+/g, "-") },
-      props: { posts: filteredPosts },
-    };
+    });
   });
+};
+
+interface Props {
+  page: Page<CollectionEntry<"blog">>;
 }
 
 const { tag } = Astro.params;
-const { posts } = Astro.props;
-const sanitizedTag = tag.replace(/-/g, " ");
+const { page } = Astro.props;
+const posts = page.data;
+const sanitizedTag = String(tag).replace(/-/g, " ");
 const pathname = Astro.url.pathname;
 
 const locale = getLocale(Astro.url);
@@ -92,6 +99,7 @@ const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
       ))
     }
   </div>
+  <Paginator page={page} locale={locale} />
 </Layout>
 
 <style>
