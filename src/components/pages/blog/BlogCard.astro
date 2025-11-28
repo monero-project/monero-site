@@ -121,7 +121,7 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
   .meta {
     display: flex;
     flex-direction: row;
-    gap: clamp(1rem, 2vw, 2rem);
+    gap: clamp(1rem, 1vw, 2rem);
     flex-wrap: wrap;
     color: var(--text-secondary);
   }
@@ -173,20 +173,24 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
 
   @media (max-width: 1200px) {
     .card-container {
-      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: none;
     }
 
-    .thumbnail {
-      display: none;
+    .thumbnail img {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
     }
 
-    .info {
-      overflow-y: visible;
+    .thumbnail span {
+      bottom: unset;
+      top: 2rem;
     }
 
     .title {
       font-size: var(--font-size-xl);
-      order: -1;
+      order: 0;
       margin-bottom: 0.75rem;
       margin-top: 0;
     }
@@ -197,6 +201,26 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
 
     .meta {
       margin-bottom: 1rem;
+    }
+
+    .tag-container {
+      font-size: var(--font-size-sm);
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .thumbnail {
+      display: none;
+    }
+
+    .card-container {
+      grid-template-columns: none;
+      grid-template-rows: auto;
+    }
+
+    .title {
+      order: -1;
     }
 
     .tag-container {
