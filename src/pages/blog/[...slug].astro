@@ -4,9 +4,15 @@ import "@/styles/moneropedia-link.css";
 import BlogContent from "@/components/pages/blog/BlogContent.astro";
 import BlogHeader from "@/components/pages/blog/BlogHeader.astro";
 import { createTInstance, getLocale } from "@/i18n/utils";
+import {
+  getMoneropediaEntries,
+  processMoneropediaLinks,
+} from "@/utils/moneropedia";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
+import DOMPurify from "isomorphic-dompurify";
+import { marked } from "marked";
 import Layout from "../../layouts/Layout.astro";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -22,9 +28,13 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+
+// Process moneropedia links in the blog post content
+const entries = await getMoneropediaEntries(locale);
+const html = await marked(post.body);
+const processedHtml = processMoneropediaLinks(html, entries, locale);
 ---
 
 <Layout title={post.data.title}>
@@ -39,7 +49,7 @@ const t = await createTInstance(locale);
         t={t}
       />
       <BlogContent>
-        <Content />
+        <div set:html={DOMPurify.sanitize(processedHtml)} />
       </BlogContent>
     </main>
 
