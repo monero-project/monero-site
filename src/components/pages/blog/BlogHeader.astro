@@ -109,6 +109,7 @@ const date = localizeDateString(dateString, locale, {
     display: flex;
     gap: 0.5rem;
     font-size: var(--font-size-sm);
+    flex-wrap: wrap;
   }
 
   .tag {
@@ -120,6 +121,7 @@ const date = localizeDateString(dateString, locale, {
     font-weight: var(--font-weight-semibold);
     text-decoration: none;
     color: inherit;
+    white-space: nowrap;
   }
 
   .tag:hover {

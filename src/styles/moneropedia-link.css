@@ -1,48 +1,79 @@
-/* Moneropedia Links */
 .moneropedia-link {
   position: relative;
+  display: inline-block;
   color: var(--monero-orange);
-  text-decoration: none;
-  border-bottom: 1px dotted currentColor;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
   cursor: help;
 }
 
 .moneropedia-link:hover,
-.moneropedia-link:focus {
+.moneropedia-link:focus-visible {
   text-decoration: none;
 }
 
-/* Tooltip box - mobile / edge-safe default (no overflow to the left) */
-.moneropedia-link::before {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 100%;
-  inset-inline-start: 0; /* anchor to the link's left edge */
-  transform: translateX(0); /* no centering by default */
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  background: var(--card-color);
-  border: 1px solid var(--border-color);
-  border-radius: 0.25rem;
-  white-space: normal;
-  width: max-content;
-
-  /* Prevent viewport overflow */
-  max-width: min(20rem, calc(100vw - 2rem));
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-caption);
-  color: var(--text-primary);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease-in-out;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+/* by default show no tooltip (mobile has problems with overflow, relies on =title attr) */
+.moneropedia-link[data-tooltip]::before,
+.moneropedia-link[data-tooltip]::after {
+  content: none;
 }
 
-.moneropedia-link:hover::before,
-.moneropedia-link:focus::before {
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .moneropedia-link[data-tooltip]::before,
+  .moneropedia-link[data-tooltip]::after {
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(0);
+    transition:
+      opacity 0.18s ease-out,
+      transform 0.18s ease-out;
+    z-index: 10;
+  }
+
+  /* Tooltip bubble */
+  .moneropedia-link[data-tooltip]::before {
+    content: attr(data-tooltip);
+    bottom: calc(100% + 0.5rem);
+    padding: 0.5rem 0.75rem;
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+
+    min-inline-size: 25ch;
+    max-inline-size: min(35ch, calc(100vw - 2.5rem));
+
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-caption);
+    color: var(--text-primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Tooltip arrow */
+  .moneropedia-link[data-tooltip]::after {
+    content: "";
+    bottom: calc(100% + 0.25rem);
+    border-width: 0.35rem 0.35rem 0;
+    border-style: solid;
+    border-color: var(--card-color) transparent transparent transparent;
+  }
+
+  .moneropedia-link[data-tooltip]:is(:hover, :focus-visible)::before,
+  .moneropedia-link[data-tooltip]:is(:hover, :focus-visible)::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @media (hover: hover) and (pointer: fine) {
+    .moneropedia-link[data-tooltip]::before,
+    .moneropedia-link[data-tooltip]::after {
+      transition: none;
+    }
+  }
 }

@@ -10,7 +10,7 @@
       font-weight: var(--font-weight-bold);
     }
 
-    a {
+    a:not(.moneropedia-link) {
       color: var(--text-primary);
       text-decoration-line: underline;
       text-decoration-style: dotted;
@@ -81,7 +81,8 @@
     @media (prefers-color-scheme: dark) {
       color: var(--paragraph-main);
 
-      a {
+      a:not(.moneropedia-link) {
+        /* Moneropedia links have their own styles: src/styles/moneropedia-link.css */
         color: var(--paragraph-main);
 
         &:hover {
