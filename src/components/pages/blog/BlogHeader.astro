@@ -57,7 +57,13 @@ const date = localizeDateString(dateString, locale, {
     tags.length > 0 && (
       <div class="tag-container">
         {tags.map((tag: string) => (
-          <a class="tag" href={localizeHref(locale, `/blog/tags/${tag}/`)}>
+          <a
+            class="tag"
+            href={localizeHref(
+              locale,
+              `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
+            )}
+          >
             {tag}
           </a>
         ))}
