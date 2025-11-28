@@ -12,6 +12,7 @@
 
     a:not(.moneropedia-link) {
       color: var(--text-primary);
+      font-weight: var(--font-weight-medium);
       text-decoration-line: underline;
       text-decoration-style: dotted;
 
@@ -54,7 +55,7 @@
       padding: 1em;
       border-radius: 0.5em;
       overflow-x: auto;
-      background: #f0f0f0;
+      background: var(--footer-color);
     }
 
     pre code {
@@ -65,7 +66,7 @@
 
     code:not(pre code) {
       font-family: monospace;
-      background-color: #f0f0f0;
+      background-color: var(--footer-color);
       padding: 0.1em 0.3em;
       border-radius: 0.2em;
     }
@@ -88,14 +89,6 @@
         &:hover {
           color: var(--heading-color);
         }
-      }
-
-      pre {
-        background: #111;
-      }
-
-      code:not(pre code) {
-        background-color: #333;
       }
     }
   }

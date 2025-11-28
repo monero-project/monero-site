@@ -5,6 +5,7 @@
   text-decoration-line: underline;
   text-decoration-style: dotted;
   cursor: help;
+  font-weight: var(--font-weight-medium);
 }
 
 .moneropedia-link:hover,

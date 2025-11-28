@@ -32,49 +32,51 @@ const dir = getDirection(getLocale(Astro.url));
   {
     isDropdown ? (
       <>
-        <input
-          id={id}
-          class="dd-toggle"
-          type="radio"
-          name="nav-dd"
-          aria-hidden="true"
-        />
-        <input
-          id={closeId}
-          class="dd-close"
-          type="radio"
-          name="nav-dd"
-          aria-hidden="true"
-        />
-
-        <div class="row">
-          {href ? (
-            <a href={href} class="link">
-              {label}
-              <span class="caret" aria-hidden="true">
-                <MaskIcon src={dropdownCaret} />
-              </span>
-            </a>
-          ) : (
-            <span class="link" role="link" tabindex="0">
-              {label}
-              <span class="caret" aria-hidden="true">
-                <MaskIcon src={dropdownCaret} />
-              </span>
-            </span>
-          )}
-
-          <label
-            for={id}
-            class="mobile-open"
-            aria-label={`Open ${label} menu`}
+        <fieldset>
+          <input
+            id={id}
+            class="dd-toggle"
+            type="radio"
+            name="nav-dd"
+            aria-hidden="true"
           />
-          <label
-            for={closeId}
-            class="mobile-close"
-            aria-label={`Close ${label} menu`}
+          <input
+            id={closeId}
+            class="dd-close"
+            type="radio"
+            name="nav-dd"
+            aria-hidden="true"
           />
-        </div>
+
+          <div class="row">
+            {href ? (
+              <a href={href} class="link">
+                {label}
+                <span class="caret" aria-hidden="true">
+                  <MaskIcon src={dropdownCaret} />
+                </span>
+              </a>
+            ) : (
+              <span class="link" role="link" tabindex="0">
+                {label}
+                <span class="caret" aria-hidden="true">
+                  <MaskIcon src={dropdownCaret} />
+                </span>
+              </span>
+            )}
+
+            <label
+              for={id}
+              class="mobile-open"
+              aria-label={`Open ${label} menu`}
+            />
+            <label
+              for={closeId}
+              class="mobile-close"
+              aria-label={`Close ${label} menu`}
+            />
+          </div>
+        </fieldset>
 
         <div class="dropdown" role="menu" aria-label={`${label} menu`}>
           <div class="dropdown-inner">
@@ -117,6 +119,12 @@ const dir = getDirection(getLocale(Astro.url));
   .nav-item {
     /* desktop: static, mobile overrides to relative */
     position: static;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 
   .row {
