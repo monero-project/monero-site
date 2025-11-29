@@ -27,7 +27,12 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
 ---
 
 <div class="card-container">
-  <a class={`thumbnail ${!image ? "no-image" : ""}`} href={localizedLink}>
+  <a
+    class={`thumbnail ${!image ? "no-image" : ""}`}
+    href={localizedLink}
+    tabindex="-1"
+    aria-hidden="true"
+  >
     {
       image ? (
         <img src={image} alt={title} loading="lazy" />

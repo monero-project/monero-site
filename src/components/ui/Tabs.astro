@@ -281,6 +281,14 @@ const active = I(initial);
   }
 
   @for $i from 0 through 9 {
+    fieldset:has(input[id$="-#{$i}"]:focus-visible)
+      ~ .tab-header
+      label[for$="-#{$i}"] {
+      outline: 1px solid white;
+    }
+  }
+
+  @for $i from 0 through 9 {
     fieldset:has(input[id$="-#{$i}"]:checked)
       ~ .tab-content
       .panel[id$="-panel-#{$i}"] {
