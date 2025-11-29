@@ -25,7 +25,7 @@
         "id": "monerocom",
         "name": "Monero.com",
         "logo": "/media/monerocom.jpg",
-        "link": "https://monero.com",
+        "link": "https://monero.com/wallets",
         "tags": {
           "mobile": ["android", "ios"],
           "desktop": ["windows", "linux"],

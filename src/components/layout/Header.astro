@@ -23,8 +23,8 @@ import roadmap from "@/assets/icons/color/light/roadmap.avif?url";
 import sponsorships from "@/assets/icons/color/light/sponsorships.avif?url";
 import tools from "@/assets/icons/color/light/tools.avif?url";
 import userGuides from "@/assets/icons/color/light/user-guides.avif?url";
-import whatIsMonero from "@/assets/icons/color/light/what-is-monero.avif?url";
 import workgroups from "@/assets/icons/color/light/workgroups.avif?url";
+import monero from "@/assets/icons/color/monero.avif?url";
 
 import acceptMoneroDark from "@/assets/icons/color/dark/accept-monero.avif?url";
 import contributeDark from "@/assets/icons/color/dark/contribute.avif?url";
@@ -40,7 +40,6 @@ import roadmapDark from "@/assets/icons/color/dark/roadmap.avif?url";
 import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif?url";
 import toolsDark from "@/assets/icons/color/dark/tools.avif?url";
 import userGuidesDark from "@/assets/icons/color/dark/user-guides.avif?url";
-import whatIsMoneroDark from "@/assets/icons/color/dark/what-is-monero.avif?url";
 import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif?url";
 
 const { t } = Astro.props;
@@ -48,7 +47,7 @@ const locale = getLocale(Astro.url);
 
 const dropdown = (
   section: string,
-  items: Array<{ key: string; href: string; icon: string; iconDark: string }>,
+  items: Array<{ key: string; href: string; icon: string; iconDark?: string }>,
 ) =>
   items.map(({ key, href, icon, iconDark }) => ({
     label: t(`header.dropdowns.${section}.${key}.label`, { ns: "common" }),
@@ -65,8 +64,7 @@ const navItems = [
       {
         key: "whatIsMonero",
         href: "/get-started/what-is-monero",
-        icon: whatIsMonero,
-        iconDark: whatIsMoneroDark,
+        icon: monero,
       },
       {
         key: "buyMonero",

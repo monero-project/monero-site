@@ -7,7 +7,7 @@ import {
   localizeHref,
 } from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 
@@ -18,11 +18,11 @@ import backCaret from "@/assets/icons/mask/back-caret.avif?url";
 
 export async function getStaticPaths() {
   const entries = await getCollection("moneropedia", (entry) =>
-    entry.slug?.startsWith(defaultLocale + "/"),
+    entry.id.startsWith(defaultLocale + "/"),
   );
 
   return entries.map((entry) => ({
-    params: { slug: entry.slug?.replace(`${defaultLocale}/`, "") },
+    params: { slug: entry.id.replace(`${defaultLocale}/`, "") },
   }));
 }
 
@@ -41,7 +41,7 @@ if (!entry) {
   });
 }
 
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 const title = entry.data.title ?? entry.data.terms[0];
 ---
 

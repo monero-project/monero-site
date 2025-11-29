@@ -1,7 +1,11 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const moneropedia = defineCollection({
-  type: "content",
+  loader: glob({
+    pattern: "**/[^_]*.md",
+    base: "./src/content/moneropedia",
+  }),
   schema: z.object({
     title: z.string(),
     terms: z.array(z.string()),
@@ -10,7 +14,10 @@ const moneropedia = defineCollection({
 });
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({
+    pattern: "**/[^_]*.md",
+    base: "./src/content/blog",
+  }),
   schema: z.object({
     title: z.string(),
     summary: z.string(),

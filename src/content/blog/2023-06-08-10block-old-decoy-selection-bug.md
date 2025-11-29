@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Post-Mortem of 10-Block-Old Decoy Selection Bug
 summary: Emprical analysis of the high severity vulnerability within the reference wallet. Updating to the latest version is strongly advised.
 tags: [urgent, crypto, community]

@@ -13,13 +13,13 @@ export async function getMoneropediaEntries(
 ): Promise<MoneropediaEntry[]> {
   // Fetch entries for current locale, with default locale as fallback
   const currentLocaleEntries = await getCollection("moneropedia", (entry) =>
-    entry.slug?.startsWith(`${locale}/`),
+    entry.id.startsWith(`${locale}/`),
   );
 
   const fallbackEntries =
     locale !== defaultLocale
       ? await getCollection("moneropedia", (entry) =>
-          entry.slug?.startsWith(`${defaultLocale}/`),
+          entry.id.startsWith(`${defaultLocale}/`),
         )
       : [];
 
@@ -31,7 +31,7 @@ export async function getMoneropediaEntries(
 
   // Add fallback entries first (will be overwritten if current locale has same file)
   for (const entry of fallbackEntries) {
-    const file = entry.slug.split("/").pop()!;
+    const file = entry.id.split("/").pop()!;
     entryMap.set(file, {
       terms: entry.data.terms,
       summary: entry.data.summary,
@@ -41,7 +41,7 @@ export async function getMoneropediaEntries(
 
   // Add/overwrite with current locale entries (takes priority)
   for (const entry of currentLocaleEntries) {
-    const file = entry.slug.split("/").pop()!;
+    const file = entry.id.split("/").pop()!;
     entryMap.set(file, {
       terms: entry.data.terms,
       summary: entry.data.summary,

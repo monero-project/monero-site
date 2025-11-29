@@ -20,10 +20,10 @@ const t = await createTInstance(locale);
 
 const entries = (
   await getCollection("moneropedia", (entry) =>
-    entry.slug?.startsWith(`${locale}/`),
+    entry.id.startsWith(`${locale}/`),
   )
 ).map<MoneropediaItem>((entry) => {
-  const slug = entry.slug.split("/").pop()!;
+  const slug = entry.id.split("/").pop()!;
   const title = entry.data.title ?? entry.data.terms[0];
 
   // Capitalize the summary

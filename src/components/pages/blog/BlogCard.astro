@@ -37,7 +37,9 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
       image ? (
         <img src={image} alt={title} loading="lazy" />
       ) : (
-        <span>Release</span>
+        <span>
+          {tags[0].charAt(0).toUpperCase() + tags[0].slice(1, tags[0].length)}
+        </span>
       )
     }
   </a>

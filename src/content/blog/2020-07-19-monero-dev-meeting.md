@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Logs for the Dev Meeting Held on 2020-07-19
 summary: Discussion on CLSAG status, network upgrade timing, and consensus changes.
 tags: [dev diaries, core, crypto]

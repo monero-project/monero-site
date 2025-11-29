@@ -11,9 +11,9 @@ export async function GET(context) {
     site: context.site,
     items: blog.map((post) => ({
       title: post.data.title,
-      pubDate: getDateStringFromSlug(post.slug),
+      pubDate: getDateStringFromSlug(post.id),
       description: post.data.summary,
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${post.id}/`,
       content: safeMarkdown.parse(post.body),
     })),
   });
