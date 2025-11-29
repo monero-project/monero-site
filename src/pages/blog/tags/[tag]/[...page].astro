@@ -74,7 +74,11 @@ const isMainTab = tabs.some(
 const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
 ---
 
-<Layout>
+<Layout
+  title={isMainTab
+    ? t("blog.index.pageTitle")
+    : t("blog.tags.pageTitle", { tag: sanitizedTag })}
+>
   <TitleCard
     title={t(titleKey, { tag: sanitizedTag })}
     subtitle={t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
