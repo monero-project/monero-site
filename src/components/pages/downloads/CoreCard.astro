@@ -169,7 +169,7 @@ const PLATFORM_ICONS: Record<string, string> = {
       }
     </div>
     <div class="verification">
-      <h4>{t("core.verifyDownload")}</h4>
+      <h3>{t("core.verifyDownload")}</h3>
       <p set:html={safeMarkdown.parse(t("core.verifyDescription"))} />
       <a
         href="/downloads/hashes.txt"
@@ -283,7 +283,7 @@ const PLATFORM_ICONS: Record<string, string> = {
   }
 
   .separator {
-    color: var(--paragraph-subtitle);
+    color: var(--paragraph-main);
     opacity: 0.5;
   }
 
