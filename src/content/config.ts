@@ -1,5 +1,6 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
+import { idToDateSlug } from "@/utils/blog";
 
 const moneropedia = defineCollection({
   loader: glob({
@@ -17,6 +18,9 @@ const blog = defineCollection({
   loader: glob({
     pattern: "**/[^_]*.md",
     base: "./src/content/blog",
+    generateId: ({ entry }) => {
+      return idToDateSlug(entry.replace(/\.md$/, ""));
+    },
   }),
   schema: z.object({
     title: z.string(),

@@ -3,10 +3,10 @@ import calendarIcon from "@/assets/icons/mask/calendar.avif?url";
 import userIcon from "@/assets/icons/mask/user.avif?url";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import { localizeDateString, localizeHref } from "@/i18n/utils";
-import { getDateStringFromSlug } from "@/utils/blog.ts";
+import { getDateStringFromId } from "@/utils/blog.ts";
 
 interface Props {
-  slug: string;
+  id: string;
   author: string;
   tags: string[];
   title: string;
@@ -16,14 +16,14 @@ interface Props {
   t: (key: string) => string;
 }
 
-const { author, tags, title, summary, image, slug, locale, t } = Astro.props;
-const dateString = getDateStringFromSlug(slug);
+const { author, tags, title, summary, image, id, locale, t } = Astro.props;
+const dateString = getDateStringFromId(id);
 const date = localizeDateString(dateString, locale, {
   day: "numeric",
   month: "long",
   year: "numeric",
 });
-const localizedLink = localizeHref(locale, `/blog/${slug}/`);
+const localizedLink = localizeHref(locale, `/blog/${id}/`);
 ---
 
 <div class="card-container">

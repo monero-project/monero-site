@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { getDateStringFromSlug } from "@/utils/blog";
+import { getDateStringFromId } from "@/utils/blog";
 import { getCollection } from "astro:content";
 import safeMarkdown from "@/utils/safeMarkdown";
 
@@ -11,7 +11,7 @@ export async function GET(context) {
     site: context.site,
     items: blog.map((post) => ({
       title: post.data.title,
-      pubDate: getDateStringFromSlug(post.id),
+      pubDate: getDateStringFromId(post.id),
       description: post.data.summary,
       link: `/blog/${post.id}/`,
       content: safeMarkdown.parse(post.body),

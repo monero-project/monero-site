@@ -9,7 +9,7 @@ import {
   localizeDateString,
   localizeHref,
 } from "@/i18n/utils";
-import { getDateStringFromSlug } from "@/utils/blog";
+import { getDateStringFromId } from "@/utils/blog";
 import {
   getMoneropediaEntries,
   processMoneropediaLinks,
@@ -24,7 +24,7 @@ import Layout from "../../layouts/Layout.astro";
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
-    params: { slug: post.id },
+    params: { post: post.id },
     props: { post },
   }));
 };
@@ -55,7 +55,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     <main>
       <BlogHeader
         title={post.data.title}
-        slug={post.id}
+        id={post.id}
         author={post.data.author}
         tags={post.data.tags}
         locale={locale}
@@ -71,7 +71,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
       <ul class="recent-posts">
         {
           recentPosts.map((recentPost) => {
-            const dateStr = getDateStringFromSlug(recentPost.id);
+            const dateStr = getDateStringFromId(recentPost.id);
             const formattedDate = localizeDateString(dateStr, locale, {
               year: "numeric",
               month: "long",

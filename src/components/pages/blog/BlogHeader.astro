@@ -5,20 +5,20 @@ import { localizeHref } from "@/i18n/utils";
 import calendarIcon from "@/assets/icons/mask/calendar.avif?url";
 import userIcon from "@/assets/icons/mask/user.avif?url";
 import { localizeDateString } from "@/i18n/utils";
-import { getDateStringFromSlug } from "@/utils/blog.ts";
+import { getDateStringFromId } from "@/utils/blog.ts";
 
 interface Props {
   title: string;
-  slug: string;
+  id: string;
   author: string;
   tags?: string[];
   locale: string;
   t: (key: string) => string;
 }
 
-const { title, slug, author, tags = [], locale, t } = Astro.props;
+const { title, id, author, tags = [], locale, t } = Astro.props;
 
-const dateString = getDateStringFromSlug(slug);
+const dateString = getDateStringFromId(id);
 const date = localizeDateString(dateString, locale, {
   day: "numeric",
   month: "long",

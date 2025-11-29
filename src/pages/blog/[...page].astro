@@ -64,7 +64,7 @@ const tabs = [
     {
       posts.map((post) => (
         <BlogCard
-          slug={post.id}
+          id={post.id}
           title={post.data.title}
           author={post.data.author}
           tags={post.data.tags || []}
