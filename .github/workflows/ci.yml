@@ -22,6 +22,9 @@ jobs:
       - name: build site
         run: bundle exec jekyll build --limit-posts 10
   docker-build:
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-22.04
     name: Dockerised Jekyll Build
     steps:
@@ -48,7 +51,7 @@ jobs:
         run: |
           tag_name="ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby:latest"
           case "${{ steps.changes.outputs.rebuild }}" in
-            true)
+            "true")
               docker build -t "$tag_name" .
               ;;
             *)
@@ -56,12 +59,12 @@ jobs:
               ;;
           esac
       - name: Build Jekyll site with Docker
-        run: docker run -v $(pwd):/srv/jekyll ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby bundle exec jekyll build --limit-posts 10
+        run: docker run -v $(pwd):/srv/jekyll ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby:latest bundle exec jekyll build --limit-posts 10
       - name: Push new image to ghcr
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: docker push -a ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby
       - name: Confirm Gemfile update
-        if: steps.changes.outputs.diff_gemfile
+        if: steps.changes.outputs.diff_gemfile == 'true'
         run: |
           cp Gemfile.lock Gemfile.lock.update
           docker run -v $(pwd):/srv/jekyll ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby bundle update
