@@ -211,9 +211,12 @@ const navItems = [
           <MaskIcon src={close} size="1.25rem" />
         </label>
       </div>
-      <ul class="nav-list">
-        {navItems.map((item) => <NavItem {...item} />)}
-      </ul>
+      <fieldset>
+        <legend class="sr-only">Primary navigation sections</legend>
+        <ul class="nav-list">
+          {navItems.map((item) => <NavItem {...item} />)}
+        </ul>
+      </fieldset>
     </nav>
 
     <label
@@ -249,6 +252,25 @@ const navItems = [
     background: var(--bg-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     z-index: 10;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-inline-size: 0;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .header-inner {

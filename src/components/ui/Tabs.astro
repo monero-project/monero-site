@@ -43,16 +43,19 @@ const active = I(initial);
       </div>
     ) : (
       <>
-        {labels.map((_, i) => (
-          <input
-            type="radio"
-            name={uid}
-            id={`${uid}-${i}`}
-            checked={active === i}
-            aria-controls={`${uid}-panel-${i}`}
-            role="tab"
-          />
-        ))}
+        <fieldset>
+          <legend class="sr-only">Tab selection</legend>
+          {labels.map((_, i) => (
+            <input
+              type="radio"
+              name={uid}
+              id={`${uid}-${i}`}
+              checked={active === i}
+              aria-controls={`${uid}-panel-${i}`}
+              role="tab"
+            />
+          ))}
+        </fieldset>
 
         <div class="tab-header">
           {labels.map((label, i) => (
@@ -172,6 +175,24 @@ const active = I(initial);
 <style lang="scss">
   .tabs {
     width: 100%;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 
   .tabs input[type="radio"] {

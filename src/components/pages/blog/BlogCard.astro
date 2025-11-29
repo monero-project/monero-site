@@ -63,7 +63,7 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
     <h2 class="title">
       <a href={localizedLink}>{title}</a>
     </h2>
-    <a class="summary" href={localizedLink}>{summary}</a>
+    <p class="summary">{summary}</p>
     {
       tags.length > 0 && (
         <div class="tag-container">
@@ -173,6 +173,7 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
   }
 
   .summary {
+    margin: 0;
     margin-bottom: 1rem;
     color: var(--text-secondary);
     text-decoration: none;
@@ -200,10 +201,6 @@ const localizedLink = localizeHref(locale, `/blog/${slug}/`);
       order: 0;
       margin-bottom: 0.75rem;
       margin-top: 0;
-    }
-
-    .summary {
-      margin-bottom: 1rem;
     }
 
     .meta {
