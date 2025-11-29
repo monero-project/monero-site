@@ -273,13 +273,17 @@ const active = I(initial);
   }
 
   @for $i from 0 through 9 {
-    input[id$="-#{$i}"]:checked ~ .tab-header label[for$="-#{$i}"] {
+    fieldset:has(input[id$="-#{$i}"]:checked)
+      ~ .tab-header
+      label[for$="-#{$i}"] {
       background: var(--footer-color);
     }
   }
 
   @for $i from 0 through 9 {
-    input[id$="-#{$i}"]:checked ~ .tab-content .panel[id$="-panel-#{$i}"] {
+    fieldset:has(input[id$="-#{$i}"]:checked)
+      ~ .tab-content
+      .panel[id$="-panel-#{$i}"] {
       display: block;
     }
   }
