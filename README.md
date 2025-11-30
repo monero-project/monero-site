@@ -39,9 +39,9 @@ This is a work-in-progress (WIP) implementation of the planned Monero page redes
 
 - [ ] Weblate integration
 - [x] Add icons in place of placeholders
-- [ ] Add RSS feed generation
-- [ ] Create components for page content
-- [ ] Add localized blog content support
+- [x] Add RSS feed generation
+- [x] Create components for page content
+- [x] Add localized blog content support
 
 ## Commands
 
