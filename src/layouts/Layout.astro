@@ -47,7 +47,7 @@ const { title, description, openGraph } = Astro.props;
         basic: {
           title: title ?? "",
           type: openGraph?.basic.type ?? "website",
-          image: openGraph?.basic.image ?? "",
+          image: openGraph?.basic.image ?? "/open-graph/default.png",
         },
         optional: {
           locale: locale,
