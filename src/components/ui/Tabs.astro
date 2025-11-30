@@ -43,7 +43,7 @@ const active = I(initial);
       </div>
     ) : (
       <>
-        <fieldset role="tablist" aria-orientation="horizontal">
+        <fieldset>
           <legend class="sr-only">Tab selection</legend>
           {labels.map((_, i) => (
             <input
@@ -52,7 +52,6 @@ const active = I(initial);
               id={`${uid}-${i}`}
               checked={active === i}
               aria-controls={`${uid}-panel-${i}`}
-              role="tab"
             />
           ))}
         </fieldset>
