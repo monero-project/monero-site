@@ -51,6 +51,7 @@
     "viewHashes": "عرض التجزئات",
     "downloadButton": "تحميل",
     "torrent": "تورنت",
+    "magnetLink": "رابط مغناطيسي",
 
     "formats": {
       "installer": "مثبت",

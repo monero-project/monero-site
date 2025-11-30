@@ -51,6 +51,7 @@
     "viewHashes": "View hashes",
     "downloadButton": "Download",
     "torrent": "Torrent",
+    "magnetLink": "Magnet link",
 
     "formats": {
       "installer": "Installer",

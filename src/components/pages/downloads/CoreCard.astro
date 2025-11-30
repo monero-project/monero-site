@@ -8,7 +8,8 @@ import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
 import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
-import magnetIcon from "@/assets/icons/color/magnet.avif?url";
+import magnetIcon from "@/assets/icons/color/light/magnet.avif?url";
+import magnetIconDark from "@/assets/icons/color/dark/magnet.avif?url";
 import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
 import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
 import freebsdIcon from "@/assets/icons/mask/brand/freebsd.avif?url";
@@ -122,8 +123,9 @@ const PLATFORM_ICONS: Record<string, string> = {
               href={magnetUrl}
               as="a"
               class="magnet-button"
+              aria-label={t("core.magnetLink")}
             >
-              <ColorIcon src={magnetIcon} size="1.25em" />
+              <ColorIcon src={magnetIcon} darkSrc={magnetIconDark} size="1.25em" />
             </Button>
           </div>
         )
