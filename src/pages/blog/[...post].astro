@@ -73,7 +73,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
       rel="alternate"
       type="application/rss+xml"
       title="Monero Blog RSS"
-      href={new URL("rss.xml", Astro.site)}
+      href={new URL("feed.xml", Astro.site)}
     />
   </Fragment>
   <div class="blog-container">

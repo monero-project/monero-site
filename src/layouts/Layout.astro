@@ -18,15 +18,15 @@ interface Props {
   title: string;
   description: string;
   openGraph?: {
-    basic: {
-      type?: string;
-      image?: string;
+    basic?: {
+      type: string;
+      image: string;
     };
-    image: {
-      alt?: string;
+    image?: {
+      alt: string;
     };
-    article: {
-      publishedTime?: string;
+    article?: {
+      publishedTime: string;
       authors: string[];
       tags: string[];
     };
@@ -46,8 +46,8 @@ const { title, description, openGraph } = Astro.props;
       openGraph={{
         basic: {
           title: title ?? "",
-          type: openGraph?.basic.type ?? "website",
-          image: openGraph?.basic.image ?? "/open-graph/default.png",
+          type: openGraph?.basic?.type ?? "website",
+          image: openGraph?.basic?.image ?? "/open-graph/default.png",
         },
         optional: {
           locale: locale,
@@ -57,23 +57,21 @@ const { title, description, openGraph } = Astro.props;
           siteName: "Monero",
         },
         image: {
-          alt: openGraph?.image.alt ?? undefined,
+          alt: openGraph?.image?.alt ?? undefined,
         },
         article: {
-          publishedTime: openGraph?.article.publishedTime ?? undefined,
-          authors: openGraph?.article.authors ?? undefined,
-          tags: openGraph?.article.tags ?? undefined,
+          publishedTime: openGraph?.article?.publishedTime ?? undefined,
+          authors: openGraph?.article?.authors ?? undefined,
+          tags: openGraph?.article?.tags ?? undefined,
         },
       }}
-      languageAlternates={Object.keys(locales)
-        .filter((item) => item !== locale)
-        .map((lang) => ({
-          hrefLang: lang,
-          href: new URL(
-            localizeHref(lang, Astro.url.pathname),
-            Astro.site,
-          ).toString(),
-        }))}
+      languageAlternates={Object.keys(locales).map((lang) => ({
+        hrefLang: lang,
+        href: new URL(
+          localizeHref(lang, Astro.url.pathname),
+          Astro.site,
+        ).toString(),
+      }))}
       twitter={{
         card: "summary_large_image",
         site: "@monero",

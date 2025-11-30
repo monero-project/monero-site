@@ -43,7 +43,7 @@ const active = I(initial);
       </div>
     ) : (
       <>
-        <fieldset>
+        <fieldset role="tablist" aria-orientation="horizontal">
           <legend class="sr-only">Tab selection</legend>
           {labels.map((_, i) => (
             <input

@@ -83,6 +83,14 @@ const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
     ? t("blog.index.heroSubtitle")
     : t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
 >
+  <Fragment slot="head">
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Monero Blog RSS"
+      href={new URL("feed.xml", Astro.site)}
+    />
+  </Fragment>
   <TitleCard
     title={t(titleKey, { tag: sanitizedTag })}
     subtitle={t("blog.tags.heroSubtitle", { tag: sanitizedTag })}

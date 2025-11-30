@@ -16,6 +16,14 @@ const t = await createTInstance(locale);
   title={t("blog.tagIndex.heroTitle")}
   description={t("blog.tagIndex.heroSubtitle")}
 >
+  <Fragment slot="head">
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Monero Blog RSS"
+      href={new URL("feed.xml", Astro.site)}
+    />
+  </Fragment>
   <TitleCard
     title={t("blog.tagIndex.heroTitle")}
     subtitle={t("blog.tagIndex.heroSubtitle")}
