@@ -51,10 +51,11 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
 ---
 
 <Layout
-  title={post.data.title}
+  title={t("blog.post.pageTitle", { title: post.data.title })}
   description={post.data.summary}
   openGraph={{
     basic: {
+      title: post.data.title,
       type: "article",
       image: `/open-graph/blog/${post.id}.png`,
     },

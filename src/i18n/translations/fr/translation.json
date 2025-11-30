@@ -267,6 +267,7 @@
       "heroSubtitle": "Parcourez tous les articles de blog étiquetés avec \"{{tag}}\"."
     },
     "post": {
+      "pageTitle": "Blog | {{title}}",
       "recentPosts": "Articles Récents",
       "and": "et"
     },

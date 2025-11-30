@@ -19,6 +19,7 @@ interface Props {
   description: string;
   openGraph?: {
     basic?: {
+      title?: string;
       type: string;
       image: string;
     };
@@ -45,7 +46,7 @@ const { title, description, openGraph } = Astro.props;
       charset="UTF-8"
       openGraph={{
         basic: {
-          title: title ?? "",
+          title: openGraph?.basic?.title ?? title,
           type: openGraph?.basic?.type ?? "website",
           image: openGraph?.basic?.image ?? "/open-graph/default.png",
         },
