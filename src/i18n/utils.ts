@@ -6,10 +6,18 @@ import { defaultLocale, locales, rtlLocales } from "@/i18n/config";
 
 export const localizeHref = (locale: string, href: string): string => {
   if (href.startsWith("http")) return href;
-  const cleanHref = href.replace(/\/+$/, "");
-  const localized =
-    locale === defaultLocale ? cleanHref : `/${locale}${cleanHref}`;
-  return `${localized}/`;
+
+  const localeRegex = new RegExp(
+    `^/(${Object.keys(locales).join("|")})(?=/|$)`,
+  );
+
+  const path = (href.startsWith("/") ? href : `/${href}`).replace(
+    localeRegex,
+    "",
+  );
+  const prefix = locale === defaultLocale ? "" : `/${locale}`;
+
+  return `${prefix}${path}/`.replace(/\/+/g, "/");
 };
 
 export const localizeNumber = (
@@ -27,11 +35,11 @@ export const localizeNumber = (
 };
 
 export const localizeDateString = (
-  date: string | null,
+  date: string | undefined,
   locale: string,
   options?: Intl.DateTimeFormatOptions,
-): string | null => {
-  if (!date) return null;
+): string | undefined => {
+  if (!date) return undefined;
   const localeString =
     (locales as Record<string, string>)[locale] || locales[defaultLocale];
   return new Date(date).toLocaleDateString(localeString, options);

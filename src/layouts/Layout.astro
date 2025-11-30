@@ -1,46 +1,116 @@
 ---
 import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header.astro";
-import { createTInstance, getDirection } from "@/i18n/utils";
+import { locales } from "@/i18n/config";
+import { createTInstance, getDirection, localizeHref } from "@/i18n/utils";
 import "@/styles/global.css";
 import "@fontsource-variable/dm-sans";
 import dmSansFont from "@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url";
 import "@fontsource-variable/inter";
 import { getLocale } from "astro-i18n-aut";
+import { SEO } from "astro-seo";
 
-const lang = getLocale(Astro.url);
-const t = await createTInstance(lang);
-const dir = getDirection(lang);
-const title = Astro.props.title;
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+const dir = getDirection(locale);
+
+interface Props {
+  title: string;
+  description: string;
+  openGraph?: {
+    basic: {
+      type?: string;
+      image?: string;
+    };
+    image: {
+      alt?: string;
+    };
+    article: {
+      publishedTime?: string;
+      authors: string[];
+      tags: string[];
+    };
+  };
+}
+
+const { title, description, openGraph } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={lang} dir={dir}>
+<html lang={locale} dir={dir}>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/meta/favicon-32x32.png"
+    <SEO
+      title={title}
+      description={description}
+      charset="UTF-8"
+      openGraph={{
+        basic: {
+          title: title ?? "",
+          type: openGraph?.basic.type ?? "website",
+          image: openGraph?.basic.image ?? "",
+        },
+        optional: {
+          locale: locale,
+          localeAlternate: Object.keys(locales).filter(
+            (item) => item !== locale,
+          ),
+          siteName: "Monero",
+        },
+        image: {
+          alt: openGraph?.image.alt ?? undefined,
+        },
+        article: {
+          publishedTime: openGraph?.article.publishedTime ?? undefined,
+          authors: openGraph?.article.authors ?? undefined,
+          tags: openGraph?.article.tags ?? undefined,
+        },
+      }}
+      languageAlternates={Object.keys(locales)
+        .filter((item) => item !== locale)
+        .map((lang) => ({
+          hrefLang: lang,
+          href: new URL(
+            localizeHref(lang, Astro.url.pathname),
+            Astro.site,
+          ).toString(),
+        }))}
+      twitter={{
+        card: "summary_large_image",
+        site: "@monero",
+        title: title,
+        description: description,
+      }}
+      extend={{
+        link: [
+          {
+            rel: "preload",
+            as: "font",
+            type: "font/woff2",
+            href: dmSansFont,
+            crossorigin: "anonymous",
+          },
+          { rel: "icon", href: "/meta/favicon-16x16.png", sizes: "16x16" },
+          { rel: "icon", href: "/meta/favicon-32x32.png", sizes: "32x32" },
+          {
+            rel: "sitemap",
+            type: "application/xml",
+            href: "/sitemap-index.xml",
+          },
+        ],
+
+        meta: [
+          {
+            name: "viewport",
+            content: "width=device-width, initial-scale=1",
+          },
+          {
+            name: "generator",
+            content: Astro.generator,
+          },
+        ],
+      }}
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/meta/favicon-16x16.png"
-    />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href={dmSansFont}
-      crossorigin="anonymous"
-    />
-    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <slot name="head" />
   </head>
   <body>
     <Header t={t} />

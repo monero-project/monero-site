@@ -79,6 +79,9 @@ const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
   title={isMainTab
     ? t("blog.index.pageTitle")
     : t("blog.tags.pageTitle", { tag: sanitizedTag })}
+  description={isMainTab
+    ? t("blog.index.heroSubtitle")
+    : t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
 >
   <TitleCard
     title={t(titleKey, { tag: sanitizedTag })}

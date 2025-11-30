@@ -18,7 +18,7 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 ---
 
-<Layout title={t("index.pageTitle")}>
+<Layout title={t("index.pageTitle")} description={t("index.hero.lead")}>
   <Hero t={t} />
   <div class="main-content">
     <IndexCard

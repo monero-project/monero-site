@@ -12,7 +12,10 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 ---
 
-<Layout>
+<Layout
+  title={t("blog.tagIndex.heroTitle")}
+  description={t("blog.tagIndex.heroSubtitle")}
+>
   <TitleCard
     title={t("blog.tagIndex.heroTitle")}
     subtitle={t("blog.tagIndex.heroSubtitle")}

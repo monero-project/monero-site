@@ -50,7 +50,32 @@ const N = 4;
 const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
 ---
 
-<Layout title={post.data.title}>
+<Layout
+  title={post.data.title}
+  description={post.data.summary}
+  openGraph={{
+    basic: {
+      type: "article",
+      image: `/open-graph/blog/${post.id}.png`,
+    },
+    image: {
+      alt: `OpenGraph image for Monero blog post titled "${post.data.title}"`,
+    },
+    article: {
+      publishedTime: new Date(getDateStringFromId(post.id) ?? "").toISOString(),
+      authors: post.data.author.split(/\s+and\s+|,/).map((a) => a.trim()),
+      tags: post.data.tags ?? [],
+    },
+  }}
+>
+  <Fragment slot="head">
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Monero Blog RSS"
+      href={new URL("rss.xml", Astro.site)}
+    />
+  </Fragment>
   <div class="blog-container">
     <main>
       <BlogHeader
@@ -72,7 +97,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
         {
           recentPosts.map((recentPost) => {
             const dateStr = getDateStringFromId(recentPost.id);
-            const formattedDate = localizeDateString(dateStr, locale, {
+            const formattedDate = localizeDateString(dateStr ?? "", locale, {
               year: "numeric",
               month: "long",
               day: "numeric",

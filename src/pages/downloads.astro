@@ -16,7 +16,7 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale, "downloads");
 ---
 
-<Layout title={t("pageTitle")}>
+<Layout title={t("pageTitle")} description={t("heroSubtitle")}>
   <TitleCard title={t("heroTitle")} subtitle={t("heroSubtitle")} />
   <Tabs
     labels={[t("tabs.core"), t("tabs.community")]}
