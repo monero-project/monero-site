@@ -22,9 +22,6 @@ jobs:
       - name: build site
         run: bundle exec jekyll build --limit-posts 10
   docker-build:
-    permissions:
-      contents: read
-      packages: write
     runs-on: ubuntu-22.04
     name: Dockerised Jekyll Build
     steps:
@@ -34,40 +31,18 @@ jobs:
         uses: dorny/paths-filter@v3
         with:
           filters: |
-            rebuild:
-              - 'Dockerfile'
-              - 'Gemfile'
-              - 'Gemfile.lock'
-              - '.github/workflows/ci.yml'
             diff_gemfile:
               - 'Gemfile.lock'
-      - name: ghcr login
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: monero-site ruby build env (pull or build)
+      - name: Build ruby env
         run: |
-          tag_name="ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby:latest"
-          case "${{ steps.changes.outputs.rebuild }}" in
-            "true")
-              docker build -t "$tag_name" .
-              ;;
-            *)
-              docker pull "$tag_name" || docker build -t "$tag_name" .
-              ;;
-          esac
+          docker build -t monero-site-ruby:latest .
       - name: Build Jekyll site with Docker
-        run: docker run -v $(pwd):/srv/jekyll ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby:latest bundle exec jekyll build --limit-posts 10
-      - name: Push new image to ghcr
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run: docker push -a ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby
+        run: docker run -v $(pwd):/srv/jekyll monero-site-ruby:latest bundle exec jekyll build --limit-posts 10
       - name: Confirm Gemfile update
         if: steps.changes.outputs.diff_gemfile == 'true'
         run: |
           cp Gemfile.lock Gemfile.lock.update
-          docker run -v $(pwd):/srv/jekyll ghcr.io/${GITHUB_REPOSITORY_OWNER}/monero-site-ruby bundle update
+          docker run -v $(pwd):/srv/jekyll monero-site-ruby:latest bundle update
           if ! diff Gemfile.lock Gemfile.lock.update; then
             echo "Gemfile.lock updates do not match"
             exit 1
