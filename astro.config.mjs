@@ -4,12 +4,16 @@ import { filterSitemapByDefaultLocale, i18n } from "astro-i18n-aut/integration";
 import { defineConfig } from "astro/config";
 
 import { defaultLocale, locales } from "./src/i18n/config";
+import { moneropediaLinks } from "./src/plugins/remark-moneropedia";
 
 // https://astro.build/config
 export default defineConfig({
   output: "static",
   site: "https://getmonero.org/",
   trailingSlash: "always",
+  markdown: {
+    remarkPlugins: [moneropediaLinks],
+  },
   build: {
     format: "directory",
     inlineStylesheets: "never",

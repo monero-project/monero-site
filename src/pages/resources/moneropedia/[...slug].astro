@@ -11,7 +11,6 @@ import { getCollection, getEntry, render } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 
-import MoneropediaContent from "@/components/pages/moneropedia/MoneropediaContent.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import backCaret from "@/assets/icons/mask/back-caret.avif?url";
@@ -67,9 +66,7 @@ const title = entry.data.title ?? entry.data.terms[0];
 
     {/* Row 2, Col 2 (Row 2 Col 1 intentionally empty) */}
     <article class="moneropedia-article">
-      <MoneropediaContent locale={locale}>
-        <Content />
-      </MoneropediaContent>
+      <Content />
     </article>
   </div>
 </Layout>

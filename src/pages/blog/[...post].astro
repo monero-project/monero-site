@@ -1,6 +1,4 @@
 ---
-import "@/styles/moneropedia-link.css";
-
 import BlogContent from "@/components/pages/blog/BlogContent.astro";
 import BlogHeader from "@/components/pages/blog/BlogHeader.astro";
 import {
@@ -10,15 +8,9 @@ import {
   localizeHref,
 } from "@/i18n/utils";
 import { getDateStringFromId } from "@/utils/blog";
-import {
-  getMoneropediaEntries,
-  processMoneropediaLinks,
-} from "@/utils/moneropedia";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
-import DOMPurify from "isomorphic-dompurify";
-import { marked } from "marked";
+import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -37,10 +29,7 @@ const { post } = Astro.props;
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
-// Process moneropedia links in the blog post content
-const entries = await getMoneropediaEntries(locale);
-const html = await marked(post.body ?? "");
-const processedHtml = processMoneropediaLinks(html, entries, locale);
+const { Content } = await render(post);
 // Get recent posts for the sidebar
 const allPosts = (await getCollection("blog")).sort((a, b) =>
   b.id.localeCompare(a.id),
@@ -64,19 +53,20 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     },
     article: {
       publishedTime: new Date(getDateStringFromId(post.id) ?? "").toISOString(),
-      authors: post.data.author.split(/\s+and\s+|,/).map((a) => a.trim()),
+      authors: post.data.author
+        .split(/\s+and\s+|,/)
+        .map((a: string) => a.trim()),
       tags: post.data.tags ?? [],
     },
   }}
 >
-  <Fragment slot="head">
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Monero Blog RSS"
-      href={new URL("feed.xml", Astro.site)}
-    />
-  </Fragment>
+  <link
+    slot="head"
+    rel="alternate"
+    type="application/rss+xml"
+    title="Monero Blog RSS"
+    href={new URL("feed.xml", Astro.site)}
+  />
   <div class="blog-container">
     <main>
       <BlogHeader
@@ -88,7 +78,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
         t={t}
       />
       <BlogContent>
-        <div set:html={DOMPurify.sanitize(processedHtml)} />
+        <Content />
       </BlogContent>
     </main>
 

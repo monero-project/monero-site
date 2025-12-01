@@ -339,7 +339,7 @@ const navItems = [
 
     z-index: 1001;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     overflow: hidden;
 
@@ -399,6 +399,7 @@ const navItems = [
   }
 
   .nav-toggle:checked ~ .nav {
+    display: flex;
     opacity: 1;
     margin-inline-end: 0;
   }
