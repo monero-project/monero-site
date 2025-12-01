@@ -14,7 +14,7 @@ If you need support about something related to the website, please join `#monero
 * GitHub/GitLab: Pretty much everything in Monero is hosted on [GitHub](https://github.com/monero-project) or [getmonero GitLab](https://repo.getmonero.org/users/monero-project/projects) and uses Git as the primary version control system. If you're not familiar with how to use Git, you can check out [this tutorial](https://guides.github.com/activities/hello-world/) for a good overview. It will take you through pretty much everything you'll need to know to edit the website. If you haven't already, register on GitHub and fork the [Monero Website repository](https://github.com/monero-project/monero-site).
 
 1. Navigate to your local `monero-site` git repository.
-2. build the Docker container with `docker build --no-cache -t getmonero-container .`
+2. Build the Docker container with `docker build --no-cache -t getmonero-container .`
 3. Then serve with: `docker run -p 4000:4000 -v $(pwd):/srv/jekyll getmonero-container`. If you want, you can speedup this process by loading only the last blog post instead of all of them. Add `bundle exec jekyll serve --limit_posts 1 --host 0.0.0.0` to the command above.
 4. Open a browser and go to [http://127.0.0.1:4000](http://127.0.0.1:4000).
 5. If all went well, you should see the Monero website and you're ready to make changes.
