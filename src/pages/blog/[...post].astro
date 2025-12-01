@@ -7,11 +7,11 @@ import {
   localizeDateString,
   localizeHref,
 } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
 import { getDateStringFromId } from "@/utils/blog";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection("blog");

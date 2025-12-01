@@ -1,6 +1,5 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 
 import fg from "fast-glob";
 import matter from "gray-matter";
@@ -10,8 +9,11 @@ import escapeStringRegexp from "escape-string-regexp";
 
 export const MONEROPEDIA_SUFFIXES = ["based", "like", "form"] as const;
 export const MONEROPEDIA_LOOKAHEAD = `(${MONEROPEDIA_SUFFIXES.join("|")})`;
-const MONEROPEDIA_ROOT = fileURLToPath(
-  new URL("../content/moneropedia", import.meta.url),
+const MONEROPEDIA_ROOT = path.resolve(
+  process.cwd(),
+  "src",
+  "content",
+  "moneropedia",
 );
 
 export interface MoneropediaEntry {
