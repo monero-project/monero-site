@@ -198,13 +198,21 @@ for (const letter of sortedLetters) {
       position: sticky;
       top: var(--sticky-offset);
       align-self: flex-start;
-      max-height: calc(100vh - var(--sticky-offset) - calc(var(--sticky-offset) / 2));
+      max-height: calc(
+        100vh - var(--sticky-offset) - calc(var(--sticky-offset) / 2)
+      );
       margin-bottom: 1.5rem;
       overflow: hidden auto;
       overscroll-behavior: contain;
       -webkit-overflow-scrolling: touch;
       scrollbar-gutter: stable;
-      mask-image: linear-gradient(180deg, transparent 0, #000 1rem, #000 calc(100% - 1rem), transparent 100%);
+      mask-image: linear-gradient(
+        180deg,
+        transparent 0,
+        #000 1rem,
+        #000 calc(100% - 1rem),
+        transparent 100%
+      );
       mask-mode: alpha;
       scrollbar-width: thin;
       scrollbar-color: var(--monero-orange) transparent;
