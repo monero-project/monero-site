@@ -11,7 +11,9 @@ const { src, size = "1em", rtl, color = "currentColor" } = Astro.props;
 
 <div class={`icon ${rtl ? "icon--rtl" : ""}`}></div>
 
-<style define:vars={{ iconSize: size, iconSrc: `url(${src})`, iconColor: color }}>
+<style
+  define:vars={{ iconSize: size, iconSrc: `url(${src})`, iconColor: color }}
+>
   .icon {
     display: inline-block;
     inline-size: var(--iconSize);
