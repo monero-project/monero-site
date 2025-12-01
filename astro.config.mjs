@@ -22,7 +22,7 @@ export default defineConfig({
     i18n({
       locales,
       defaultLocale,
-      exclude: ["pages/**/*.js"],
+      exclude: ["pages/**/*.{js,ts}"],
     }),
     sitemap({
       i18n: {

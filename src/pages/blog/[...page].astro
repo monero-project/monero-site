@@ -9,6 +9,8 @@ import Paginator from "@/components/ui/Paginator.astro";
 import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
+import rssIcon from "@/assets/icons/mask/rss.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 
@@ -30,22 +32,22 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
 const tabs = [
-  { label: t("blog.tabs.allPosts"), link: localizeHref(locale, "/blog") },
+  { label: t("blog.tabs.allPosts"), link: "/blog" },
   {
     label: t("blog.tabs.urgent"),
-    link: localizeHref(locale, "/blog/tags/urgent"),
+    link: "/blog/tags/urgent",
   },
   {
     label: t("blog.tabs.releases"),
-    link: localizeHref(locale, "/blog/tags/releases"),
+    link: "/blog/tags/releases",
   },
   {
     label: t("blog.tabs.community"),
-    link: localizeHref(locale, "/blog/tags/community"),
+    link: "/blog/tags/community",
   },
   {
     label: t("blog.tabs.meetingLogs"),
-    link: localizeHref(locale, "/blog/tags/dev-diaries"),
+    link: "/blog/tags/dev-diaries",
   },
 ];
 ---
@@ -66,11 +68,20 @@ const tabs = [
     title={t("blog.index.heroTitle")}
     subtitle={t("blog.index.heroSubtitle")}
   />
-  <Tabs
-    labels={tabs.map((t) => t.label)}
-    links={tabs.map((t) => t.link)}
-    activeIndex={0}
-  />
+  <div class="tabs-bar">
+    <Tabs
+      labels={tabs.map((t) => t.label)}
+      links={tabs.map((t) => localizeHref(locale, t.link))}
+      activeIndex={0}
+    />
+    <a
+      class="rss-icon"
+      href={new URL("feed.xml", Astro.site)}
+      aria-label="RSS Feed"
+    >
+      <MaskIcon src={rssIcon} size="2.5rem" />
+    </a>
+  </div>
   <div class="blog-grid">
     {
       posts.map((post) => (
@@ -97,9 +108,33 @@ const tabs = [
     gap: 1rem;
   }
 
+  .tabs-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .tabs-bar :global(.tab-header) {
+    margin-bottom: unset;
+  }
+
+  .rss-icon {
+    display: none;
+  }
+
   @media (min-width: 1200px) {
     .blog-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rss-icon {
+      display: inline-flex;
+      align-items: center;
+      color: var(--monero-orange);
+    }
+    .rss-icon:hover {
+      opacity: 0.8;
     }
   }
 </style>

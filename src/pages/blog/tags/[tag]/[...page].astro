@@ -9,6 +9,9 @@ import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
+import rssIcon from "@/assets/icons/mask/rss.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const allPosts = (await getCollection("blog")).sort((a, b) =>
     b.id.localeCompare(a.id),
@@ -95,11 +98,20 @@ const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
     title={t(titleKey, { tag: sanitizedTag })}
     subtitle={t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
   />
-  <Tabs
-    labels={tabs.map((t) => t.label)}
-    links={tabs.map((t) => localizeHref(locale, t.link))}
-    activeIndex={activeTab}
-  />
+  <div class="tabs-bar">
+    <Tabs
+      labels={tabs.map((t) => t.label)}
+      links={tabs.map((t) => localizeHref(locale, t.link))}
+      activeIndex={activeTab}
+    />
+    <a
+      class="rss-icon"
+      href={new URL("feed.xml", Astro.site)}
+      aria-label="RSS Feed"
+    >
+      <MaskIcon src={rssIcon} size="2rem" />
+    </a>
+  </div>
   <div class="blog-grid">
     {
       posts.map((post) => (
@@ -127,9 +139,32 @@ const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
     margin-top: 2rem;
   }
 
+  .tabs-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .tabs-bar :global(.tab-header) {
+    margin-bottom: unset;
+  }
+
+  .rss-icon {
+    display: none;
+  }
+
   @media (min-width: 1200px) {
     .blog-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .rss-icon {
+      display: inline-flex;
+      align-items: center;
+      color: var(--monero-orange);
+    }
+    .rss-icon:hover {
+      opacity: 0.8;
     }
   }
 </style>

@@ -3,20 +3,21 @@ export interface Props {
   src: string;
   size?: string;
   rtl?: boolean;
+  color?: string;
 }
 
-const { src, size = "1em", rtl } = Astro.props;
+const { src, size = "1em", rtl, color = "currentColor" } = Astro.props;
 ---
 
 <div class={`icon ${rtl ? "icon--rtl" : ""}`}></div>
 
-<style define:vars={{ iconSize: size, iconSrc: `url(${src})` }}>
+<style define:vars={{ iconSize: size, iconSrc: `url(${src})`, iconColor: color }}>
   .icon {
     display: inline-block;
     inline-size: var(--iconSize);
     block-size: var(--iconSize);
 
-    background: currentColor;
+    background: var(--iconColor);
     mask: var(--iconSrc) no-repeat center / contain;
     -webkit-mask: var(--iconSrc) no-repeat center / contain;
   }

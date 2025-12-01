@@ -5,6 +5,7 @@ import { getLocale } from "astro-i18n-aut";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import externalLink from "@/assets/icons/mask/external-link.avif?url";
+import rssIcon from "@/assets/icons/mask/rss.avif?url";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
@@ -13,6 +14,11 @@ const dir = getDirection(locale);
 interface Link {
   label: string;
   href: string;
+  icon?: {
+    src: string;
+    color?: string;
+    size?: string;
+  }
 }
 
 interface Column {
@@ -141,6 +147,11 @@ const bottomLinks: Link[] = [
   {
     label: t("footer.bottomLinks.rssFeed", { ns: "common" }),
     href: "/feed.xml",
+    icon: {
+      src: rssIcon,
+      size: "1rem",
+      color: "var(--monero-orange)",
+    }
   },
 ];
 ---
@@ -161,14 +172,13 @@ const bottomLinks: Link[] = [
                     rel={isExternal(l.href) ? "noopener noreferrer" : undefined}
                   >
                     {l.label}
-                    {isExternal(l.href) ? (
+                    {(l.icon || isExternal(l.href)) && (
                       <MaskIcon
-                        src={externalLink}
-                        size="12px"
-                        rtl={dir == "rtl"}
+                        src={l.icon?.src ?? externalLink}
+                        size={l.icon?.size ?? "12px"}
+                        rtl={!l.icon && dir == "rtl"}
+                        color={l.icon?.color}
                       />
-                    ) : (
-                      ""
                     )}
                   </a>
                 </li>
@@ -190,10 +200,13 @@ const bottomLinks: Link[] = [
                 rel={isExternal(l.href) ? "noopener noreferrer" : undefined}
               >
                 {l.label}
-                {isExternal(l.href) ? (
-                  <MaskIcon src={externalLink} size="12px" rtl={dir == "rtl"} />
-                ) : (
-                  ""
+                {(l.icon || isExternal(l.href)) && (
+                  <MaskIcon
+                    src={l.icon?.src ?? externalLink}
+                    size={l.icon?.size ?? "12px"}
+                    rtl={!l.icon && dir == "rtl"}
+                    color={l.icon?.color}
+                  />
                 )}
               </a>
             </li>
