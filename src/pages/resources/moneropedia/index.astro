@@ -106,7 +106,7 @@ for (const letter of sortedLetters) {
 
 <style>
   html {
-    scroll-padding-top: 100%;
+    scroll-padding-top: 4em;
   }
 
   .moneropedia-index {
@@ -176,5 +176,46 @@ for (const letter of sortedLetters) {
   .letter-group:first-child .letter-separator {
     margin-top: 0;
     border-color: transparent;
+  }
+
+  @media (max-width: 1000px) {
+    .moneropedia-index {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .letter-nav {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 0.75rem;
+      padding: 0.5rem 1rem 0.5rem 0;
+      border-bottom: unset;
+      border-right: 1px solid var(--border-color);
+      width: auto;
+      position: sticky;
+      top: 6rem;
+      align-self: flex-start;
+    }
+
+    .letter-nav-link {
+      padding: 0.35rem 0.25rem;
+      font-size: var(--font-size-sm);
+      text-align: center;
+    }
+
+    .letter-groups {
+      overflow: visible;
+      max-height: none;
+      padding-right: 0;
+    }
+
+    .letter-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .letter-heading {
+      margin-bottom: 1rem;
+    }
   }
 </style>
