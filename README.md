@@ -59,13 +59,10 @@ All commands are run from the root of the project:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## Tips
+## Donate
 
-If you'd like to support my development effort, consider sending a tip to the Monero address below:
-
-```
-8A2z3j3zTU39vJSp1zCAnP2HuzyX31Zg8AtvcZp6GF2QXT1LMuoMyXqNXViMEqgVdcWHWGumB2buq2ZkNLiy4KFJMeLxPx5
-```
+If you'd like to support my development effort, consider donating to the CCS:
+https://ccs.getmonero.org/proposals/redsh4de-getmonero-redesign.html
 
 ## More
 
