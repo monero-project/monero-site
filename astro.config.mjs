@@ -16,7 +16,6 @@ export default defineConfig({
   },
   build: {
     format: "directory",
-    inlineStylesheets: "never",
   },
   integrations: [
     i18n({

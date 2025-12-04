@@ -68,7 +68,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     href={new URL("feed.xml", Astro.site)}
   />
   <div class="blog-container">
-    <main>
+    <article class="blog-post">
       <BlogHeader
         title={post.data.title}
         id={post.id}
@@ -80,7 +80,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
       <BlogContent>
         <Content />
       </BlogContent>
-    </main>
+    </article>
 
     <aside class="sidebar">
       <h2>{t("blog.post.recentPosts")}</h2>
@@ -172,7 +172,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
       grid-template-columns: 1fr 75ch 1fr;
     }
 
-    main {
+    .blog-post {
       grid-column: 2;
     }
 
