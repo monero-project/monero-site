@@ -19,7 +19,7 @@ const t = await createTInstance(locale);
 ---
 
 <Layout title="Monero" description={t("index.hero.lead")}>
-  <Hero t={t} />
+  <Hero t={t} class="index-hero" />
   <div class="main-content">
     <IndexCard
       title={t("index.aboutTitle")}
@@ -187,13 +187,13 @@ const t = await createTInstance(locale);
     scroll-margin-top: 4rem;
   }
 
-  :global(.hero) {
-    position: absolute !important;
-    top: 3rem !important;
-    inset-inline-start: 5rem !important;
-    inset-inline-end: 5rem !important;
-    z-index: 5 !important;
-    min-height: var(--hero-min-height) !important;
+  :global(.hero.index-hero) {
+    position: absolute;
+    top: 3rem;
+    inset-inline-start: 5rem;
+    inset-inline-end: 5rem;
+    z-index: 5;
+    min-height: var(--hero-min-height);
   }
 
   @media (max-width: 1200px) {
@@ -203,9 +203,9 @@ const t = await createTInstance(locale);
   }
 
   @media (max-width: 600px) {
-    :global(.hero) {
-      inset-inline-start: 2rem !important;
-      inset-inline-end: 2rem !important;
+    :global(.hero.index-hero) {
+      inset-inline-start: 2rem;
+      inset-inline-end: 2rem;
     }
   }
 </style>

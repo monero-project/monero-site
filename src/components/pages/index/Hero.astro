@@ -6,11 +6,11 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import moneroOutline from "@/assets/icons/mask/monerooutline.avif?url";
 
-const { t } = Astro.props;
+const { t, class: className } = Astro.props;
 const locale = getLocale(Astro.url);
 ---
 
-<div class="hero" aria-labelledby="hero-title">
+<div class:list={["hero", className]} aria-labelledby="hero-title">
   <div class="background-logo" aria-hidden="true">
     <div class="logo-box">
       <div class="mask-icon">
