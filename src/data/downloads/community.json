@@ -24,7 +24,7 @@
       {
         "id": "monerocom",
         "name": "Monero.com",
-        "logo": "/media/monerocom.jpg",
+        "logo": "/media/monerocom.avif",
         "link": "https://monero.com/wallets",
         "tags": {
           "mobile": ["android", "ios"],
@@ -114,7 +114,7 @@
     {
       "id": "keystone",
       "name": "Keystone",
-      "logo": "/media/keystone.jpg",
+      "logo": "/media/keystone.avif",
       "link": "https://guide.keyst.one/docs/feather",
       "tags": {
         "general": ["3 Pro"]
@@ -123,7 +123,7 @@
     {
       "id": "ledger",
       "name": "Ledger",
-      "logo": "/media/ledger.jpg",
+      "logo": "/media/ledger.avif",
       "link": "https://support.ledger.com/article/360006352934-zd",
       "tags": {
         "general": ["Nano S", "Nano X", "Flex", "Stax"]
