@@ -1,0 +1,291 @@
+---
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+
+import Layout from "@/layouts/Layout.astro";
+
+import CommunityCard from "@/components/pages/downloads/CommunityCard.astro";
+import Tabs from "@/components/ui/Tabs.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import communityWallets from "@/data/downloads/community.json";
+
+import hashtagIcon from "@/assets/icons/mask/hashtag.avif?url";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale, "downloads");
+const tabs = [
+  { label: t("tabs.core"), link: localizeHref(locale, "/downloads") },
+  {
+    label: t("tabs.community"),
+    link: localizeHref(locale, "/downloads/community"),
+  },
+];
+
+const sections = [
+  {
+    id: "local-sync",
+    title: t("community.sections.localSync.title"),
+    subtitle: t("community.sections.localSync.subtitle"),
+  },
+  {
+    id: "remote-sync",
+    title: t("community.sections.remoteSync.title"),
+    subtitle: t("community.sections.remoteSync.subtitle"),
+  },
+  {
+    id: "cold-wallets",
+    title: t("community.sections.offline.title"),
+    subtitle: t("community.sections.offline.subtitle"),
+  },
+  {
+    id: "nodes",
+    title: t("community.sections.nodes.title"),
+    subtitle: t("community.sections.nodes.subtitle"),
+  },
+];
+---
+
+<Layout title={t("pageTitle")} description={t("heroSubtitle")}>
+  <TitleCard title={t("heroTitle")} subtitle={t("heroSubtitle")} />
+  <Tabs
+    labels={tabs.map((tab) => tab.label)}
+    links={tabs.map((tab) => tab.link)}
+    activeIndex={1}
+  />
+
+  <nav class="toc" aria-label={`${t("tabs.community")}` + " sections"}>
+    {
+      sections.map((section) => (
+        <a class="toc-link" href={`#${section.id}`}>
+          <div class="content">
+            <span class="toc-link-title">{section.title}</span>
+            <span class="toc-link-subtitle">{section.subtitle}</span>
+          </div>
+          <div class="arrow">
+            <MaskIcon src={hashtagIcon} size="0.75em" aria-hidden="true" />
+          </div>
+        </a>
+      ))
+    }
+  </nav>
+
+  <!-- Local Sync Wallets -->
+  <h2 class="section-title" id="local-sync">
+    {t("community.sections.localSync.title")}
+  </h2>
+  <p class="section-subtitle">
+    {t("community.sections.localSync.subtitle")}
+  </p>
+
+  <!-- Monero-only -->
+  <h3 class="subheading">{t("community.categories.moneroOnly")}</h3>
+  <div class="cards-grid compact">
+    {
+      communityWallets.localSync.moneroOnly.map((wallet) => (
+        <CommunityCard
+          logo={wallet.logo}
+          name={wallet.name}
+          description={t(`community.descriptions.${wallet.id}`)}
+          tags={wallet.tags}
+          link={wallet.link}
+          linkText={t("community.learnMore")}
+          translateTag={(key: string) => t(`community.tags.${key}`)}
+          t={t}
+        />
+      ))
+    }
+  </div>
+
+  <!-- Multi-coin -->
+  <h3 class="subheading">{t("community.categories.multiCoin")}</h3>
+  <div class="cards-grid compact">
+    {
+      communityWallets.localSync.multiCoin.map((wallet) => (
+        <CommunityCard
+          logo={wallet.logo}
+          name={wallet.name}
+          description={t(`community.descriptions.${wallet.id}`)}
+          tags={wallet.tags}
+          link={wallet.link}
+          linkText={t("community.learnMore")}
+          translateTag={(key: string) => t(`community.tags.${key}`)}
+          t={t}
+        />
+      ))
+    }
+  </div>
+
+  <!-- Remote Sync Wallets -->
+  <h2 class="section-title" id="remote-sync">
+    {t("community.sections.remoteSync.title")}
+  </h2>
+  <p class="section-subtitle">
+    {t("community.sections.remoteSync.subtitle")}
+  </p>
+  <div class="cards-grid">
+    {
+      communityWallets.remoteSync.map((wallet) => (
+        <CommunityCard
+          logo={wallet.logo}
+          name={wallet.name}
+          description={t(`community.descriptions.${wallet.id}`)}
+          tags={wallet.tags}
+          link={wallet.link}
+          linkText={t("community.learnMore")}
+          translateTag={(key: string) => t(`community.tags.${key}`)}
+          t={t}
+        />
+      ))
+    }
+  </div>
+
+  <!-- Cold Wallets -->
+  <h2 class="section-title" id="cold-wallets">
+    {t("community.sections.offline.title")}
+  </h2>
+  <p class="section-subtitle">
+    {t("community.sections.offline.subtitle")}
+  </p>
+  <div class="cards-grid">
+    {
+      communityWallets.offline.map((wallet) => (
+        <CommunityCard
+          logo={wallet.logo}
+          name={wallet.name}
+          description={t(`community.descriptions.${wallet.id}`)}
+          tags={wallet.tags}
+          link={wallet.link}
+          linkText={t("community.learnMore")}
+          translateTag={(key: string) => t(`community.tags.${key}`)}
+          t={t}
+        />
+      ))
+    }
+  </div>
+
+  <!-- Node Software -->
+  <h2 class="section-title" id="nodes">
+    {t("community.sections.nodes.title")}
+  </h2>
+  <p class="section-subtitle">{t("community.sections.nodes.subtitle")}</p>
+  <div class="cards-grid">
+    {
+      communityWallets.nodes.map((wallet) => (
+        <CommunityCard
+          logo={wallet.logo}
+          name={wallet.name}
+          description={t(`community.descriptions.${wallet.id}`)}
+          tags={wallet.tags}
+          link={wallet.link}
+          linkText={t("community.learnMore")}
+          translateTag={(key: string) => t(`community.tags.${key}`)}
+          t={t}
+        />
+      ))
+    }
+  </div>
+</Layout>
+
+<style>
+  .toc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .toc-link {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--heading-color);
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: var(--border-color);
+    background: var(--card-color);
+  }
+
+  .toc-link .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toc-link:hover,
+  .toc-link:focus-visible {
+    background: color-mix(in srgb, var(--card-color), white 5%);
+  }
+
+  .toc-link-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .toc-link-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-caption);
+    margin-top: 0.15rem;
+  }
+
+  .toc-link .arrow {
+    display: flex;
+    align-items: flex-start;
+    margin-inline-start: auto;
+    color: var(--paragraph-subtitle);
+  }
+
+  .section-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 2rem 0 1rem 0;
+    scroll-margin-top: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .subheading {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    margin: 1.25rem 0 0.25rem 0;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.25rem;
+    padding: 1rem 0;
+  }
+
+  .cards-grid.compact {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 0.5rem 0 1rem 0;
+  }
+
+  @media (max-width: 900px) {
+    .cards-grid,
+    .cards-grid.compact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .section-title {
+      scroll-margin-top: 6rem;
+    }
+  }
+</style>

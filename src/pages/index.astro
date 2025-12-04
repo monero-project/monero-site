@@ -1,5 +1,6 @@
 ---
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import { Image } from "astro:assets";
 
 import Layout from "@/layouts/Layout.astro";
 
@@ -7,12 +8,12 @@ import GetStartedCard from "@/components/pages/index/GetStartedCard.astro";
 import Hero from "@/components/pages/index/Hero.astro";
 import IndexCard from "@/components/pages/index/IndexCard.astro";
 import ResourceCard from "@/components/pages/index/ResourceCard.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif?url";
 import faqIcon from "@/assets/icons/mask/faq.avif?url";
-import placeholder from "@/assets/icons/mask/placeholder.avif?url";
 import userGuidesIcon from "@/assets/icons/mask/user-guides.avif?url";
+
+import landingImage from "@/assets/images/landing.avif";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
@@ -66,13 +67,13 @@ const t = await createTInstance(locale);
       description={t("index.startDescription")}
       id="start-using-monero"
     >
-      <MaskIcon src={placeholder} size="100%" />
+      <Image src={landingImage} alt="" style="width: 100%; height: auto;" />
       <div>
         <GetStartedCard
           step="01"
           title={t("index.step1Title")}
           description={t("index.step1Desc")}
-          ctaHref="/downloads"
+          ctaHref="/downloads/community"
           ctaLabel={t("index.step1Cta")}
         />
         <hr />

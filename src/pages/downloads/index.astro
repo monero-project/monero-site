@@ -1,0 +1,90 @@
+---
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+
+import Layout from "@/layouts/Layout.astro";
+
+import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
+import CoreCard from "@/components/pages/downloads/CoreCard.astro";
+import Tabs from "@/components/ui/Tabs.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+
+import coreDownloads from "@/data/downloads/core.json";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale, "downloads");
+const tabs = [
+  { label: t("tabs.core"), link: localizeHref(locale, "/downloads") },
+  {
+    label: t("tabs.community"),
+    link: localizeHref(locale, "/downloads/community"),
+  },
+];
+---
+
+<Layout title={t("pageTitle")} description={t("heroSubtitle")}>
+  <TitleCard title={t("heroTitle")} subtitle={t("heroSubtitle")} />
+  <Tabs
+    labels={tabs.map((tab) => tab.label)}
+    links={tabs.map((tab) => tab.link)}
+    activeIndex={0}
+  />
+
+  <div class="downloads-grid">
+    <!-- Monero GUI Card -->
+    <CoreCard
+      image="/media/gui.avif"
+      title={t("core.gui.title")}
+      subtitle={t("core.gui.subtitle")}
+      version={coreDownloads.gui.version}
+      versionName={coreDownloads.gui.name}
+      releaseNotesUrl={`https://github.com/monero-project/monero-gui/releases/tag/${coreDownloads.gui.version}`}
+      sourceCodeUrl="https://github.com/monero-project/monero-gui"
+      torrentUrl={coreDownloads.gui.torrent.link}
+      magnetUrl={coreDownloads.gui.torrent.magnet}
+      features={Object.values(
+        t("core.gui.features", { returnObjects: true }) as Record<
+          string,
+          string
+        >,
+      )}
+      downloads={coreDownloads.gui.downloads as DownloadLink[]}
+      t={t}
+    />
+
+    <!-- Monero CLI Card -->
+    <CoreCard
+      image="/media/cli.avif"
+      title={t("core.cli.title")}
+      subtitle={t("core.cli.subtitle")}
+      version={coreDownloads.cli.version}
+      versionName={coreDownloads.cli.name}
+      releaseNotesUrl={`https://github.com/monero-project/monero/releases/tag/${coreDownloads.cli.version}`}
+      sourceCodeUrl="https://github.com/monero-project/monero"
+      torrentUrl={coreDownloads.cli.torrent.link}
+      magnetUrl={coreDownloads.cli.torrent.magnet}
+      features={Object.values(
+        t("core.cli.features", { returnObjects: true }) as Record<
+          string,
+          string
+        >,
+      )}
+      downloads={coreDownloads.cli.downloads as DownloadLink[]}
+      t={t}
+    />
+  </div>
+</Layout>
+
+<style>
+  /* Core downloads */
+  .downloads-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    .downloads-grid {
+      gap: 3rem;
+    }
+  }
+</style>
