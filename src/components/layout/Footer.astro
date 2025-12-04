@@ -200,7 +200,7 @@ const bottomLinks: Link[] = [
                   <MaskIcon
                     src={l.icon?.src ?? externalLink}
                     size={l.icon?.size ?? "12px"}
-                    rtl={!l.icon && dir == "rtl"}
+                    rtl={dir == "rtl"}
                     color={l.icon?.color}
                   />
                 )}
