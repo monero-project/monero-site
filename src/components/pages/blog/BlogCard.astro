@@ -45,6 +45,7 @@ const imageDimensions = await getPublicImageDimensions(image);
           decoding="async"
           width={imageDimensions.width}
           height={imageDimensions.height}
+          format="avif"
         />
       ) : (
         <span>
