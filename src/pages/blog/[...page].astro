@@ -1,5 +1,10 @@
 ---
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 import { getCollection } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
@@ -30,6 +35,7 @@ const posts = page.data;
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const dir = getDirection(locale);
 
 const tabs = [
   { label: t("blog.tabs.allPosts"), link: "/blog" },
@@ -80,7 +86,7 @@ const tabs = [
       aria-label="RSS Feed"
       title="RSS Feed"
     >
-      <MaskIcon src={rssIcon} size="2.5rem" />
+      <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
     </a>
   </div>
   <div class="blog-grid">
