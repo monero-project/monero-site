@@ -1,6 +1,7 @@
 ---
 import { localizeHref } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
+import { Image } from "astro:assets";
 
 import LanguageDropdown from "@/components/layout/header/LanguageDropdown.astro";
 import NavItem from "@/components/layout/header/NavItem.astro";
@@ -41,6 +42,8 @@ import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif?url";
 import toolsDark from "@/assets/icons/color/dark/tools.avif?url";
 import userGuidesDark from "@/assets/icons/color/dark/user-guides.avif?url";
 import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif?url";
+
+import favicon from "@/../public/meta/favicon-32x32.png";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
@@ -187,12 +190,7 @@ const navItems = [
 <header class="header">
   <div class="header-inner">
     <a class="brand" href={localizeHref(locale, "/")}>
-      <img
-        class="mark"
-        src="/meta/favicon-32x32.png"
-        alt=""
-        aria-hidden="true"
-      />
+      <Image class="mark" src={favicon} alt="" aria-hidden="true" />
       <span>MONERO</span>
     </a>
 

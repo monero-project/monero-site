@@ -1,5 +1,7 @@
 ---
 import { getDirection, getLocale } from "@/i18n/utils";
+import { getPublicImageDimensions } from "@/utils/image";
+import { Image } from "astro:assets";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
@@ -99,12 +101,19 @@ const getTagLabel = (tag: string): string => {
 
 const showTags = general.length > 0;
 const showPlatforms = desktop.length > 0 || mobile.length > 0;
+const logoDimensions = await getPublicImageDimensions(logo);
 ---
 
 <div class="community-card">
   <header class="card-header" aria-label="Project">
     <div class="card-logo" aria-hidden="true">
-      <img src={logo} alt={`${name} logo`} decoding="async" />
+      <Image
+        src={logo}
+        alt={`${name} logo`}
+        decoding="async"
+        width={logoDimensions.width}
+        height={logoDimensions.height}
+      />
     </div>
     <h3 class="card-title">{name}</h3>
   </header>

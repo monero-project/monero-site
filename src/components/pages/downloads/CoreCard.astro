@@ -1,5 +1,7 @@
 ---
+import { getPublicImageDimensions } from "@/utils/image";
 import safeMarkdown from "@/utils/safeMarkdown.ts";
+import { Image } from "astro:assets";
 
 import Button from "@/components/ui/Button.astro";
 import ColorIcon from "@/components/ui/ColorIcon.astro";
@@ -62,11 +64,18 @@ const PLATFORM_ICONS: Record<string, string> = {
   android: androidIcon,
   freebsd: freebsdIcon,
 };
+
+const imageDimensions = await getPublicImageDimensions(image);
 ---
 
 <div class="download-card">
   <div class="card-image">
-    <img src={image} alt="" />
+    <Image
+      src={image}
+      alt=""
+      width={imageDimensions.width}
+      height={imageDimensions.height}
+    />
   </div>
   <div class="card-content">
     <h2 class="card-title">{title}</h2>

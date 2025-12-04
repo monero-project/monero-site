@@ -4,6 +4,8 @@ import userIcon from "@/assets/icons/mask/user.avif?url";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import { localizeDateString, localizeHref } from "@/i18n/utils";
 import { getDateStringFromId } from "@/utils/blog.ts";
+import { getPublicImageDimensions } from "@/utils/image";
+import { Image } from "astro:assets";
 
 interface Props {
   id: string;
@@ -24,6 +26,7 @@ const date = localizeDateString(dateString, locale, {
   year: "numeric",
 });
 const localizedLink = localizeHref(locale, `/blog/${id}/`);
+const imageDimensions = await getPublicImageDimensions(image);
 ---
 
 <div class="card-container">
@@ -35,7 +38,14 @@ const localizedLink = localizeHref(locale, `/blog/${id}/`);
   >
     {
       image ? (
-        <img src={image} alt={title} loading="lazy" />
+        <Image
+          src={image}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          width={imageDimensions.width}
+          height={imageDimensions.height}
+        />
       ) : (
         <span>
           {tags[0]

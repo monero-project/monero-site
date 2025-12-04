@@ -36,6 +36,7 @@
     "isomorphic-dompurify": "^2.33.0",
     "marked": "^15.0.12",
     "mdast-util-find-and-replace": "^3.0.2",
+    "sharp": "^0.34.5",
     "unist-util-visit": "^5.0.0"
   },
   "packageManager": "pnpm@10.24.0",
