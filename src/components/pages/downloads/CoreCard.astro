@@ -75,6 +75,8 @@ const imageDimensions = await getPublicImageDimensions(image);
       alt=""
       width={imageDimensions.width}
       height={imageDimensions.height}
+      loading="eager"
+      fetchpriority="high"
     />
   </div>
   <div class="card-content">
