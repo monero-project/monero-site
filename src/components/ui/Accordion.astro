@@ -54,6 +54,11 @@ const accordionId = crypto.randomUUID();
     border-bottom: 1px solid var(--border-color);
   }
 
+  .accordion-item:has(.accordion-header:focus-visible) {
+    outline: 2px solid currentColor;
+    border-radius: 0.5rem;
+  }
+
   .accordion-item:last-child {
     border-bottom: none;
   }
@@ -67,6 +72,10 @@ const accordionId = crypto.randomUUID();
     list-style: none;
     user-select: none;
     gap: 0.75rem;
+  }
+
+  .accordion-header:focus-visible {
+    outline: none;
   }
 
   .accordion-header::-webkit-details-marker {
@@ -123,6 +132,10 @@ const accordionId = crypto.randomUUID();
 
   .accordion-item--card .accordion-header {
     padding: 1.25rem 0;
+  }
+
+  .accordion-item--card:has(.accordion-header:focus-visible) {
+    border-radius: 0.75rem;
   }
 
   .accordion-item--card .accordion-content {

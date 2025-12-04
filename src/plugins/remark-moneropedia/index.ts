@@ -31,7 +31,6 @@ function createLinkNode(
   return {
     type: "link",
     url: href,
-    title: summary,
     data: {
       hProperties: {
         class: "moneropedia-link",

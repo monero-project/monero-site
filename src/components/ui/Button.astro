@@ -1,8 +1,10 @@
 ---
+import type { HTMLAttributes } from "astro/types";
+
 type As = "button" | "a" | "span";
 type Variant = "primary" | "secondary" | "outline" | "danger";
 
-interface Props {
+interface Props extends HTMLAttributes {
   variant?: Variant;
   class?: string;
   href?: string;
