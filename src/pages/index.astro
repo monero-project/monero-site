@@ -1,6 +1,5 @@
 ---
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-import { Image } from "astro:assets";
 
 import Layout from "@/layouts/Layout.astro";
 
@@ -13,7 +12,8 @@ import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif?url";
 import faqIcon from "@/assets/icons/mask/faq.avif?url";
 import userGuidesIcon from "@/assets/icons/mask/user-guides.avif?url";
 
-import landingImage from "@/assets/images/landing.avif";
+import placeholderIcon from "@/assets/icons/mask/placeholder.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
@@ -67,7 +67,10 @@ const t = await createTInstance(locale);
       description={t("index.startDescription")}
       id="start-using-monero"
     >
-      <Image src={landingImage} alt="" style="width: 100%; height: auto;" />
+      {
+        /*<Image src={landingImage} alt="" style="width: 100%; height: auto;" />*/
+      }
+      <MaskIcon src={placeholderIcon} size="100%" />
       <div>
         <GetStartedCard
           step="01"
