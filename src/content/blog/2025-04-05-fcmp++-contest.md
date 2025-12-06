@@ -5,7 +5,7 @@ tags: [crypto, announcements]
 author: Justin Berman (j-berman)
 ---
 
-Officially announcing a contest to optimize two libraries used in Monero's proposed upgrade to [FCMP++](/blog/2024/04/27/fcmps): [helioselene](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/helioselene) and [ec-divisors](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/divisors). Read all contest rules and details [here](https://github.com/j-berman/fcmp-plus-plus-optimization-competition).
+Officially announcing a contest to optimize two libraries used in Monero's proposed upgrade to [FCMP++]({{site.baseurl}}/2024/04/27/fcmps.html): [helioselene](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/helioselene) and [ec-divisors](https://github.com/kayabaNerve/fcmp-plus-plus/tree/78754718faa21f0a5751fbd30c9495d7f7f5c2b1/crypto/divisors). Read all contest rules and details [here](https://github.com/j-berman/fcmp-plus-plus-optimization-competition).
 
 The winner for `helioselene` will receive 100 XMR, and the winner for `ec-divisors` will receive 250 XMR. This Monero will be paid out from the [Monero General Fund](https://www.reddit.com/r/Monero/comments/1iixgk9/monero_general_fund_transparency_report_february/).
 

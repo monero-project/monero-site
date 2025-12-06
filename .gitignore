@@ -24,6 +24,3 @@ pnpm-debug.log*
 .idea/
 
 astro_tmp_pages_*
-
-tools/
-*.svg

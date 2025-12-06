@@ -11,7 +11,7 @@ New research reveals the timing of Monero spending patterns in probabilistic for
 
 ## Introduction
 
-Four technologies protect the privacy of Monero users. Dandelion++ protects users' IP addresses from being linked to their transactions. [Confidential transactions](/resources/moneropedia/ringCT) hide the amount of value that is transferred between users. Monero's [stealth address](/resources/moneropedia/stealthaddress) technique produces one-time-use addresses on the blockchain that cannot be linked to specific wallets without voluntary disclosure of view keys. [Ring signatures](/resources/moneropedia/ringsignatures) obfuscate which stock of coins was spent in a transaction by combining the real spend with 15 decoy spends. This blog post discusses improvements and threats to Monero's ring signature privacy model.
+Four technologies protect the privacy of Monero users. Dandelion++ protects users' IP addresses from being linked to their transactions. [Confidential transactions](/resources/moneropedia/ringCT.html) hide the amount of value that is transferred between users. Monero's [stealth address](/resources/moneropedia/stealthaddress.html) technique produces one-time-use addresses on the blockchain that cannot be linked to specific wallets without voluntary disclosure of view keys. [Ring signatures](/resources/moneropedia/ringsignatures.html) obfuscate which stock of coins was spent in a transaction by combining the real spend with 15 decoy spends. This blog post discusses improvements and threats to Monero's ring signature privacy model.
 
 As the name implies, a "decoy" serves its purpose well if it looks like the real thing. Decoys that do not match the spending patterns of real users will fail to draw the attention of an anti-privacy adversary. One of the most important spending patterns to match is the timing. The age of a stock of coins that a user spends, like units of physical paper currency circulating between consumers and merchants, forms a random probability distribution.
 
@@ -43,7 +43,7 @@ Probabilistic guessing can create elevated privacy risk to users with extreme th
 
 The OSPEAD-derived decoy selection distribution could be deployed to mitigate the risk of the MAP Decoder attack. However, a Monero network upgrade (hard fork) would be required for safest deployment. A network upgrade, though necessary for major improvement to Monero, is disruptive to the Monero ecosystem. The costs may outweigh the benefits.
 
-Currently, the next expected hard fork is set to deploy [Full-Chain Membership Proofs](/2024/04/27/fcmps), which eliminate the weaknesses of the ring signature privacy model.
+Currently, the next expected hard fork is set to deploy [Full-Chain Membership Proofs](/2024/04/27/fcmps.html), which eliminate the weaknesses of the ring signature privacy model.
 
 ## References
 

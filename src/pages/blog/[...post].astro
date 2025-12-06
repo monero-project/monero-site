@@ -41,7 +41,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
 
 <Layout
   title={t("blog.post.pageTitle", { title: post.data.title })}
-  description={post.data.summary}
+  description={post.data.summary || post.data.title}
   openGraph={{
     basic: {
       title: post.data.title,

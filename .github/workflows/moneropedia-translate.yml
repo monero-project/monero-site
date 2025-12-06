@@ -13,6 +13,40 @@ permissions:
   contents: read
 
 jobs:
+  prevent-localized-md-edits:
+    name: Prevent edits to localized Moneropedia markdown files
+    runs-on: ubuntu-22.04
+    if: github.event_name == 'pull_request' && github.actor != 'github-actions[bot]' && github.actor != 'weblate'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+
+      - name: Check for edits to localized markdown files
+        run: |
+          set -euo pipefail
+
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+          HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+
+          CHANGED_FILES=$(
+            git diff --name-only "$BASE_SHA" "$HEAD_SHA" -- "src/content/moneropedia/" \
+              | grep '\.md$' \
+              | grep -v '^src/content/moneropedia/en/' \
+              || true
+          )
+
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "The following localized Moneropedia markdown files were modified:"
+            echo "$CHANGED_FILES"
+            echo "Please do not edit localized markdown files directly. Instead, edit the English source files in 'src/content/moneropedia/en/' and update translations via Weblate."
+            exit 1
+          else
+            echo "No localized markdown file edits detected."
+          fi
+
   check-moneropedia-updates:
     name: Check if Moneropedia config and translations are up to date
     runs-on: ubuntu-22.04
@@ -55,8 +89,8 @@ jobs:
         if: env.REGENERATE_CONFIG == 'true'
         run: pnpm run i18n:moneropedia:config
 
-      - name: Update translations
-        run: pnpm run i18n:moneropedia:compile
+      - name: Update translation files
+        run: pnpm run i18n:moneropedia:update-po
 
       - name: Check if files are up to date
         run: |
@@ -74,7 +108,7 @@ jobs:
           )
 
           if [ -n "$CHANGED_FILES" ]; then
-            echo "Translation files are out of date. Run 'pnpm run i18n:moneropedia:compile' locally."
+            echo "Translation files are out of date. Run 'pnpm run i18n:moneropedia:update-po' locally."
             echo "Changed files:"
             echo "$CHANGED_FILES"
             exit 1
@@ -85,7 +119,7 @@ jobs:
   compile-translations:
     name: Compile translations from Weblate
     runs-on: ubuntu-22.04
-    if: github.actor == 'weblate'
+    if: github.event_name == 'push' && github.actor == 'weblate'
 
     permissions:
       contents: write
