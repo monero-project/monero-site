@@ -11,18 +11,25 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import coreDownloads from "@/data/downloads/core.json";
 
 const locale = getLocale(Astro.url);
-const t = await createTInstance(locale, "downloads");
+const t = await createTInstance(locale);
+
 const tabs = [
-  { label: t("tabs.core"), link: localizeHref(locale, "/downloads") },
+  { label: t("downloads.tabs.core"), link: localizeHref(locale, "/downloads") },
   {
-    label: t("tabs.community"),
+    label: t("downloads.tabs.community"),
     link: localizeHref(locale, "/downloads/community"),
   },
 ];
 ---
 
-<Layout title={t("pageTitle")} description={t("heroSubtitle")}>
-  <TitleCard title={t("heroTitle")} subtitle={t("heroSubtitle")} />
+<Layout
+  title={t("downloads.pageTitle")}
+  description={t("downloads.heroSubtitle")}
+>
+  <TitleCard
+    title={t("downloads.heroTitle")}
+    subtitle={t("downloads.heroSubtitle")}
+  />
   <Tabs
     labels={tabs.map((tab) => tab.label)}
     links={tabs.map((tab) => tab.link)}
@@ -33,8 +40,8 @@ const tabs = [
     <!-- Monero GUI Card -->
     <CoreCard
       image="/media/gui.avif"
-      title={t("core.gui.title")}
-      subtitle={t("core.gui.subtitle")}
+      title={t("downloads.core.gui.title")}
+      subtitle={t("downloads.core.gui.subtitle")}
       version={coreDownloads.gui.version}
       versionName={coreDownloads.gui.name}
       releaseNotesUrl={`https://github.com/monero-project/monero-gui/releases/tag/${coreDownloads.gui.version}`}
@@ -42,7 +49,7 @@ const tabs = [
       torrentUrl={coreDownloads.gui.torrent.link}
       magnetUrl={coreDownloads.gui.torrent.magnet}
       features={Object.values(
-        t("core.gui.features", { returnObjects: true }) as Record<
+        t("downloads.core.gui.features", { returnObjects: true }) as Record<
           string,
           string
         >,
@@ -54,8 +61,8 @@ const tabs = [
     <!-- Monero CLI Card -->
     <CoreCard
       image="/media/cli.avif"
-      title={t("core.cli.title")}
-      subtitle={t("core.cli.subtitle")}
+      title={t("downloads.core.cli.title")}
+      subtitle={t("downloads.core.cli.subtitle")}
       version={coreDownloads.cli.version}
       versionName={coreDownloads.cli.name}
       releaseNotesUrl={`https://github.com/monero-project/monero/releases/tag/${coreDownloads.cli.version}`}
@@ -63,7 +70,7 @@ const tabs = [
       torrentUrl={coreDownloads.cli.torrent.link}
       magnetUrl={coreDownloads.cli.torrent.magnet}
       features={Object.values(
-        t("core.cli.features", { returnObjects: true }) as Record<
+        t("downloads.core.cli.features", { returnObjects: true }) as Record<
           string,
           string
         >,

@@ -15,9 +15,9 @@ import hashtagIcon from "@/assets/icons/mask/hashtag.avif?url";
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale, "downloads");
 const tabs = [
-  { label: t("tabs.core"), link: localizeHref(locale, "/downloads") },
+  { label: t("downloads.tabs.core"), link: localizeHref(locale, "/downloads") },
   {
-    label: t("tabs.community"),
+    label: t("downloads.tabs.community"),
     link: localizeHref(locale, "/downloads/community"),
   },
 ];
@@ -25,36 +25,45 @@ const tabs = [
 const sections = [
   {
     id: "local-sync",
-    title: t("community.sections.localSync.title"),
-    subtitle: t("community.sections.localSync.subtitle"),
+    title: t("downloads.community.sections.localSync.title"),
+    subtitle: t("downloads.community.sections.localSync.subtitle"),
   },
   {
     id: "remote-sync",
-    title: t("community.sections.remoteSync.title"),
-    subtitle: t("community.sections.remoteSync.subtitle"),
+    title: t("downloads.community.sections.remoteSync.title"),
+    subtitle: t("downloads.community.sections.remoteSync.subtitle"),
   },
   {
     id: "cold-wallets",
-    title: t("community.sections.offline.title"),
-    subtitle: t("community.sections.offline.subtitle"),
+    title: t("downloads.community.sections.offline.title"),
+    subtitle: t("downloads.community.sections.offline.subtitle"),
   },
   {
     id: "nodes",
-    title: t("community.sections.nodes.title"),
-    subtitle: t("community.sections.nodes.subtitle"),
+    title: t("downloads.community.sections.nodes.title"),
+    subtitle: t("downloads.community.sections.nodes.subtitle"),
   },
 ];
 ---
 
-<Layout title={t("pageTitle")} description={t("heroSubtitle")}>
-  <TitleCard title={t("heroTitle")} subtitle={t("heroSubtitle")} />
+<Layout
+  title={t("downloads.pageTitle")}
+  description={t("downloads.heroSubtitle")}
+>
+  <TitleCard
+    title={t("downloads.heroTitle")}
+    subtitle={t("downloads.heroSubtitle")}
+  />
   <Tabs
     labels={tabs.map((tab) => tab.label)}
     links={tabs.map((tab) => tab.link)}
     activeIndex={1}
   />
 
-  <nav class="toc" aria-label={`${t("tabs.community")}` + " sections"}>
+  <nav
+    class="toc"
+    aria-label={`${t("downloads.tabs.community")}` + " sections"}
+  >
     {
       sections.map((section) => (
         <a class="toc-link" href={`#${section.id}`}>
@@ -72,25 +81,25 @@ const sections = [
 
   <!-- Local Sync Wallets -->
   <h2 class="section-title" id="local-sync">
-    {t("community.sections.localSync.title")}
+    {t("downloads.community.sections.localSync.title")}
   </h2>
   <p class="section-subtitle">
-    {t("community.sections.localSync.subtitle")}
+    {t("downloads.community.sections.localSync.subtitle")}
   </p>
 
   <!-- Monero-only -->
-  <h3 class="subheading">{t("community.categories.moneroOnly")}</h3>
+  <h3 class="subheading">{t("downloads.community.categories.moneroOnly")}</h3>
   <div class="cards-grid compact">
     {
       communityWallets.localSync.moneroOnly.map((wallet) => (
         <CommunityCard
           logo={wallet.logo}
           name={wallet.name}
-          description={t(`community.descriptions.${wallet.id}`)}
+          description={t(`downloads.community.descriptions.${wallet.id}`)}
           tags={wallet.tags}
           link={wallet.link}
-          linkText={t("community.learnMore")}
-          translateTag={(key: string) => t(`community.tags.${key}`)}
+          linkText={t("downloads.community.learnMore")}
+          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
         />
       ))
@@ -98,18 +107,18 @@ const sections = [
   </div>
 
   <!-- Multi-coin -->
-  <h3 class="subheading">{t("community.categories.multiCoin")}</h3>
+  <h3 class="subheading">{t("downloads.community.categories.multiCoin")}</h3>
   <div class="cards-grid compact">
     {
       communityWallets.localSync.multiCoin.map((wallet) => (
         <CommunityCard
           logo={wallet.logo}
           name={wallet.name}
-          description={t(`community.descriptions.${wallet.id}`)}
+          description={t(`downloads.community.descriptions.${wallet.id}`)}
           tags={wallet.tags}
           link={wallet.link}
-          linkText={t("community.learnMore")}
-          translateTag={(key: string) => t(`community.tags.${key}`)}
+          linkText={t("downloads.community.learnMore")}
+          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
         />
       ))
@@ -118,10 +127,10 @@ const sections = [
 
   <!-- Remote Sync Wallets -->
   <h2 class="section-title" id="remote-sync">
-    {t("community.sections.remoteSync.title")}
+    {t("downloads.community.sections.remoteSync.title")}
   </h2>
   <p class="section-subtitle">
-    {t("community.sections.remoteSync.subtitle")}
+    {t("downloads.community.sections.remoteSync.subtitle")}
   </p>
   <div class="cards-grid">
     {
@@ -129,11 +138,11 @@ const sections = [
         <CommunityCard
           logo={wallet.logo}
           name={wallet.name}
-          description={t(`community.descriptions.${wallet.id}`)}
+          description={t(`downloads.community.descriptions.${wallet.id}`)}
           tags={wallet.tags}
           link={wallet.link}
-          linkText={t("community.learnMore")}
-          translateTag={(key: string) => t(`community.tags.${key}`)}
+          linkText={t("downloads.community.learnMore")}
+          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
         />
       ))
@@ -142,10 +151,10 @@ const sections = [
 
   <!-- Cold Wallets -->
   <h2 class="section-title" id="cold-wallets">
-    {t("community.sections.offline.title")}
+    {t("downloads.community.sections.offline.title")}
   </h2>
   <p class="section-subtitle">
-    {t("community.sections.offline.subtitle")}
+    {t("downloads.community.sections.offline.subtitle")}
   </p>
   <div class="cards-grid">
     {
@@ -153,11 +162,11 @@ const sections = [
         <CommunityCard
           logo={wallet.logo}
           name={wallet.name}
-          description={t(`community.descriptions.${wallet.id}`)}
+          description={t(`downloads.community.descriptions.${wallet.id}`)}
           tags={wallet.tags}
           link={wallet.link}
-          linkText={t("community.learnMore")}
-          translateTag={(key: string) => t(`community.tags.${key}`)}
+          linkText={t("downloads.community.learnMore")}
+          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
         />
       ))
@@ -166,20 +175,22 @@ const sections = [
 
   <!-- Node Software -->
   <h2 class="section-title" id="nodes">
-    {t("community.sections.nodes.title")}
+    {t("downloads.community.sections.nodes.title")}
   </h2>
-  <p class="section-subtitle">{t("community.sections.nodes.subtitle")}</p>
+  <p class="section-subtitle">
+    {t("downloads.community.sections.nodes.subtitle")}
+  </p>
   <div class="cards-grid">
     {
       communityWallets.nodes.map((wallet) => (
         <CommunityCard
           logo={wallet.logo}
           name={wallet.name}
-          description={t(`community.descriptions.${wallet.id}`)}
+          description={t(`downloads.community.descriptions.${wallet.id}`)}
           tags={wallet.tags}
           link={wallet.link}
-          linkText={t("community.learnMore")}
-          translateTag={(key: string) => t(`community.tags.${key}`)}
+          linkText={t("downloads.community.learnMore")}
+          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
         />
       ))
