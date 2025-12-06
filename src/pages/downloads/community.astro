@@ -13,7 +13,7 @@ import communityWallets from "@/data/downloads/community.json";
 import hashtagIcon from "@/assets/icons/mask/hashtag.avif?url";
 
 const locale = getLocale(Astro.url);
-const t = await createTInstance(locale, "downloads");
+const t = await createTInstance(locale);
 const tabs = [
   { label: t("downloads.tabs.core"), link: localizeHref(locale, "/downloads") },
   {
