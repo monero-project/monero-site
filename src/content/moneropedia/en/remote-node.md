@@ -1,7 +1,9 @@
 ---
 summary: "Nodes which are not running in the same machine as the wallet. Open remote nodes allow to use the Monero network immediately"
 title: Remote Node
-terms: ["remote-node", "remote-nodes"]
+terms:
+  - remote-node
+  - remote-nodes
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

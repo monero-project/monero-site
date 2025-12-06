@@ -1,7 +1,8 @@
 ---
 summary: "a special type of transaction included in each block, which contains a small amount of Monero sent to the miner as a reward for their mining work"
 title: Coinbase
-terms: ["coinbase-transaction"]
+terms:
+  - coinbase-transaction
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

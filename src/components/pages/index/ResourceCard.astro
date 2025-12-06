@@ -4,6 +4,7 @@ import { getDirection, getLocale } from "@/i18n/utils";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
+import externalLink from "@/assets/icons/mask/external-link.avif?url";
 
 export interface Props {
   icon?: string;
@@ -38,7 +39,10 @@ const dir = getDirection(getLocale(Astro.url));
 
   <a class="cta" href={ctaHref}>
     {ctaLabel}
-    <MaskIcon src={arrowRight} rtl={dir == "rtl"} />
+    <MaskIcon
+      src={ctaHref.startsWith("http") ? externalLink : arrowRight}
+      rtl={dir == "rtl"}
+    />
   </a>
 </article>
 

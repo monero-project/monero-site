@@ -1,7 +1,9 @@
 ---
 summary: "an optional flag that is added to identify transactions to merchants, consisting of 64 hexadecimal characters"
 title: Payment ID
-terms: ["payment-ID", "payment-IDs"]
+terms:
+  - payment-ID
+  - payment-IDs
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

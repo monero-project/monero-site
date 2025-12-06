@@ -1,7 +1,11 @@
 ---
 summary: "A device on the Internet running the Monero software, with a full copy of the Monero blockchain. It can be local or remote"
 title: Node
-terms: ["node", "nodes", "full-node", "full-nodes"]
+terms:
+  - node
+  - nodes
+  - full-node
+  - full-nodes
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

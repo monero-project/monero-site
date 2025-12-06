@@ -1,7 +1,8 @@
 ---
 summary: "Feature that allows node operators to download and sync only 1/3 of the blockchain"
 title: Pruning
-terms: ["pruning"]
+terms:
+  - pruning
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

@@ -1,7 +1,9 @@
 ---
 summary: "Atomic Units refer to the smallest fraction of 1 XMR."
 title: Atomic Units
-terms: ["atomic-units", "atomic-unit"]
+terms:
+  - atomic-units
+  - atomic-unit
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

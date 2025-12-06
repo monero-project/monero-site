@@ -1,7 +1,8 @@
 ---
 summary: "The Internet in which anonymous overlay networks are built upon"
 title: Clearnet
-terms: ["Clearnet"]
+terms:
+  - Clearnet
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

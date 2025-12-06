@@ -1,7 +1,8 @@
 ---
 summary: "C++ router implementation of the I2P network"
 title: Kovri
-terms: ["Kovri"]
+terms:
+  - Kovri
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

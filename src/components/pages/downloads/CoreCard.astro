@@ -93,7 +93,7 @@ const imageDimensions = await getPublicImageDimensions(image);
       }
     </ul>
     <div class="download-actions">
-      <Dropdown label={t("core.downloadButton")}>
+      <Dropdown label={t("downloads.core.downloadButton")}>
         {
           downloads.map((item) =>
             item === "separator" ? (
@@ -110,7 +110,7 @@ const imageDimensions = await getPublicImageDimensions(image);
                     </span>
                   )}
                   <span>
-                    {`${t(`platforms.${item.platform}`)} (${t(`core.formats.${item.format}`)})`}
+                    {`${t(`downloads.platforms.${item.platform}`)} (${t(`downloads.core.formats.${item.format}`)})`}
                   </span>
                 </span>
                 {item.size && <span slot="meta">{item.size}</span>}
@@ -128,7 +128,7 @@ const imageDimensions = await getPublicImageDimensions(image);
               as="a"
               class="torrent-button"
             >
-              {t("core.torrent")}
+              {t("downloads.core.torrent")}
             </Button>
             <Button
               variant="secondary"
@@ -166,7 +166,7 @@ const imageDimensions = await getPublicImageDimensions(image);
               rel="noopener noreferrer"
               class="metadata-link"
             >
-              {t("core.releaseNotes")}
+              {t("downloads.core.releaseNotes")}
             </a>
           </>
         )
@@ -181,20 +181,20 @@ const imageDimensions = await getPublicImageDimensions(image);
               rel="noopener noreferrer"
               class="metadata-link"
             >
-              {t("core.sourceCode")}
+              {t("downloads.core.sourceCode")}
             </a>
           </>
         )
       }
     </div>
     <div class="verification">
-      <h3>{t("core.verifyDownload")}</h3>
-      <p set:html={safeMarkdown.parse(t("core.verifyDescription"))} />
+      <h3>{t("downloads.core.verifyDownload")}</h3>
+      <p set:html={safeMarkdown.parse(t("downloads.core.verifyDescription"))} />
       <a
         href="/downloads/hashes.txt"
         class="verify-link"
         target="_blank"
-        rel="noopener noreferrer">{t("core.viewHashes")}</a
+        rel="noopener noreferrer">{t("downloads.core.viewHashes")}</a
       >
     </div>
   </div>

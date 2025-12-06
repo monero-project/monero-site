@@ -1,7 +1,9 @@
 ---
 summary: "a container of transactions, a sequence of which forms a blockchain"
 title: Block
-terms: ["block", "blocks"]
+terms:
+  - block
+  - blocks
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

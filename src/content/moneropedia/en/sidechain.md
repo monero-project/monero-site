@@ -2,7 +2,10 @@
 entry: sidechain
 summary: "A blockchain that is merge mined with a primary blockchain"
 title: Sidechain
-terms: ["sidechain", "side-chain", "auxillary-chain"]
+terms:
+  - sidechain
+  - side-chain
+  - auxillary-chain
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

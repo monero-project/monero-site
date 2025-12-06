@@ -1,7 +1,8 @@
 ---
 summary: "Background process which runs and controls a Monero node"
 title: Daemon
-terms: ["daemon"]
+terms:
+  - daemon
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

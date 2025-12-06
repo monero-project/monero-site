@@ -1,7 +1,8 @@
 ---
 summary: "total number of possible signers in a ring signature"
 title: Ring Size
-terms: ["ring-size"]
+terms:
+  - ring-size
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

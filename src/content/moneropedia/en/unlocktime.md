@@ -1,7 +1,8 @@
 ---
 summary: "a special transaction where the recipient(s) can only spend the funds after a future date, as set by the sender"
 title: Unlock Time
-terms: ["unlock-time"]
+terms:
+  - unlock-time
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

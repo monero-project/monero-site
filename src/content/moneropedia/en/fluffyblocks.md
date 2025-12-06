@@ -1,7 +1,9 @@
 ---
 summary: "a way of saving bandwidth when sending new blocks around the network"
 title: Fluffyblocks
-terms: ["fluffy blocks", "fluffyblocks"]
+terms:
+  - fluffy blocks
+  - fluffyblocks
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

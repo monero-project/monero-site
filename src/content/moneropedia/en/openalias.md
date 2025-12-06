@@ -1,7 +1,8 @@
 ---
 summary: "a standard that allows you to use an email or domain syntax to pay someone instead of an address, eg. donate@getmonero.org or donate.getmonero.org"
 title: OpenAlias
-terms: ["OpenAlias"]
+terms:
+  - OpenAlias
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

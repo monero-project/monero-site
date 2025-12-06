@@ -1,7 +1,9 @@
 ---
 summary: "a group of cryptographic signatures with at least one real participant, but no way to tell which in the group is the real one as they all appear valid"
 title: Ring Signatures
-terms: ["ring-signature", "ring-signatures"]
+terms:
+  - ring-signature
+  - ring-signatures
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

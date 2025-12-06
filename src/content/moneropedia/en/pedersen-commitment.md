@@ -2,13 +2,11 @@
 summary: "Pedersen commitments are cryptographic algorithms that allow a prover to commit to a certain value without revealing it or being able to change it"
 title: Pedersen Commitment
 terms:
-  [
-    "commitments",
-    "commitment",
-    "pedersen",
-    "pedersen-commitment",
-    "pedersen-commitments",
-  ]
+  - commitments
+  - commitment
+  - pedersen
+  - pedersen-commitment
+  - pedersen-commitments
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

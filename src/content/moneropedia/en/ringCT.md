@@ -1,7 +1,9 @@
 ---
 summary: "a way to hide the amount sent in a Monero transaction"
 title: RingCT
-terms: ["ringCT", "ring-CT"]
+terms:
+  - ringCT
+  - ring-CT
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

@@ -1,7 +1,9 @@
 ---
 summary: "a distributed ledger of all transactions both past and present, without revealing who the funds came from or went to"
 title: Blockchain
-terms: ["blockchain", "blockchains"]
+terms:
+  - blockchain
+  - blockchains
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

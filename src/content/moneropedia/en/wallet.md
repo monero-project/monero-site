@@ -1,7 +1,9 @@
 ---
 summary: "A wallet stores the information necessary to send and receive Monero"
 title: Wallet
-terms: ["wallet", "wallets"]
+terms:
+  - wallet
+  - wallets
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

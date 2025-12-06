@@ -254,6 +254,123 @@
     "searchPlaceholder": "Search the Moneropedia...",
     "readMore": "Read full article"
   },
+  "downloads": {
+    "pageTitle": "Downloads | Monero - secure, private, untraceable cryptocurrency.",
+    "heroTitle": "Downloads",
+    "heroSubtitle": "Get Monero wallets and software.",
+    "tabs": {
+      "core": "Core",
+      "community": "Community"
+    },
+    "platforms": {
+      "windows": "Windows",
+      "macos": "macOS",
+      "linux": "Linux",
+      "android": "Android",
+      "freebsd": "FreeBSD",
+      "ios": "iOS"
+    },
+    "core": {
+      "gui": {
+        "title": "Monero GUI Wallet",
+        "subtitle": "Graphical wallet developed by the Monero community",
+        "features": {
+          "simpleMode": "**Simple mode** for beginners to easily send and receive XMR",
+          "advancedMode": "**Advanced mode** with full control over wallet and node",
+          "merchantPage": "**Merchant page** for easily accepting XMR payments",
+          "hardwareWallet": "Compatible with **Trezor** and **Ledger** hardware wallets",
+          "fiatConversion": "**In-app fiat conversion**",
+          "pruning": "**Blockchain pruning** to save disk space",
+          "languages": "Available in **30+ languages**"
+        }
+      },
+      "cli": {
+        "title": "Monero CLI Tools",
+        "subtitle": "Command-line interface for advanced users",
+        "features": {
+          "nodeChoice": "Choose between local or remote node for blockchain access",
+          "torI2p": "Send transactions over Tor or I2P for extra privacy",
+          "bootstrap": "Use bootstrap node for immediate access while syncing locally",
+          "hardwareWallet": "Compatible with Trezor and Ledger hardware wallets",
+          "rpc": "Includes RPC wallet, ZMQ interface and daemon",
+          "pruning": "Blockchain pruning saves disk space"
+        }
+      },
+      "version": "Version",
+      "releaseNotes": "Release notes",
+      "sourceCode": "Source code",
+      "verifyDownload": "Verify",
+      "verifyDescription": "You are strongly advised to [verify the SHA-256 hash](https://docs.getmonero.org/interacting/verify-monero-binaries) of the file you downloaded.\n\nThis will confirm that the files you downloaded perfectly match the files uploaded by the Monero development workgroup. Please don't underestimate this step, a corrupted archive could result in lost funds.",
+      "viewHashes": "View hashes",
+      "downloadButton": "Download",
+      "torrent": "Torrent",
+      "magnetLink": "Magnet link",
+      "formats": {
+        "installer": "Installer",
+        "zip": ".zip",
+        "tarball": "Tarball",
+        "64bit": "64-bit",
+        "32bit": "32-bit",
+        "intel": "Intel",
+        "appleSilicon": "Apple Silicon",
+        "armv8": "ARMv8",
+        "armv7": "ARMv7",
+        "riscv64": "RISC-V 64-bit"
+      }
+    },
+    "community": {
+      "sections": {
+        "localSync": {
+          "title": "Local Sync Wallets",
+          "subtitle": "Wallets that scan the blockchain locally on your device for maximum privacy."
+        },
+        "remoteSync": {
+          "title": "Remote Sync Wallets",
+          "subtitle": "Wallets that use remote servers to scan the blockchain for convenience. Requires sharing your private view key with the service."
+        },
+        "offline": {
+          "title": "Offline Wallets",
+          "subtitle": "Hardware wallets and offline transaction signing apps."
+        },
+        "nodes": {
+          "title": "Node Software",
+          "subtitle": "Alternative Monero node implementations."
+        }
+      },
+      "categories": {
+        "moneroOnly": "Monero-only",
+        "multiCoin": "Multi-coin"
+      },
+      "learnMore": "Learn more",
+      "desktopLabel": "Desktop",
+      "mobileLabel": "Mobile",
+      "descriptions": {
+        "anonero": "Privacy-focused wallet with all communications over Tor.",
+        "feather": "A lightweight, fast, and feature-rich Monero desktop wallet.",
+        "monerocom": "A Monero-only wallet developed by Cake Labs.",
+        "monerujo": "A Monero wallet for Android with advanced features.",
+        "monfluo": "A pure Monero wallet for Android.",
+        "cakewallet": "A multi-coin wallet with Monero and hardware wallet support.",
+        "eigenwallet": "Monero and Bitcoin wallet with built-in atomic swap capabilities.",
+        "stackwallet": "A multi-coin wallet with Monero support for desktop and mobile.",
+        "unstoppable": "A multi-coin wallet supporting Monero.",
+        "edge": "A multi-coin wallet with server-side syncing.",
+        "keystone": "Hardware wallet with Monero support via third-party apps.",
+        "ledger": "Hardware wallet with Monero support via third-party apps.",
+        "trezor": "Hardware wallet with Monero support via third-party apps.",
+        "cupcake": "Offline signer app for use with Cake Wallet/Monero.com.",
+        "sidekick": "Offline signer app for use with Monerujo. Connects via Bluetooth.",
+        "cuprate": "A fast and efficient Monero node implementation written in Rust."
+      },
+      "tags": {
+        "qrSigning": "QR Signing",
+        "builtInExchange": "Built-in exchange",
+        "remoteScanning": "Remote scanning",
+        "diy": "DIY",
+        "alphaSoftware": "Alpha software"
+      }
+    }
+  },
   "blog": {
     "index": {
       "pageTitle": "Blog | Monero - secure, private, untraceable cryptocurrency.",

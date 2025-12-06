@@ -58,11 +58,11 @@ const ICONS: Record<string, string> = {
 };
 
 const LABEL: Record<string, string> = {
-  windows: t("platforms.windows") || "Windows",
-  macos: t("platforms.macos") || "macOS",
-  linux: t("platforms.linux") || "Linux",
-  android: t("platforms.android") || "Android",
-  ios: t("platforms.ios") || "iOS",
+  windows: t("downloads.platforms.windows") || "Windows",
+  macos: t("downloads.platforms.macos") || "macOS",
+  linux: t("downloads.platforms.linux") || "Linux",
+  android: t("downloads.platforms.android") || "Android",
+  ios: t("downloads.platforms.ios") || "iOS",
 };
 
 const VALID = {
@@ -142,7 +142,9 @@ const logoDimensions = await getPublicImageDimensions(logo);
       <div class="card-platforms" aria-label="Supported platforms">
         {desktop.length > 0 && (
           <div class="platform-row">
-            <span class="platforms-label">{t("community.desktopLabel")}:</span>
+            <span class="platforms-label">
+              {t("downloads.community.desktopLabel")}:
+            </span>
             <ul class="list">
               {desktop.map((key) => (
                 <li class="pill" title={LABEL[key]}>
@@ -154,7 +156,9 @@ const logoDimensions = await getPublicImageDimensions(logo);
         )}
         {mobile.length > 0 && (
           <div class="platform-row">
-            <span class="platforms-label">{t("community.mobileLabel")}:</span>
+            <span class="platforms-label">
+              {t("downloads.community.mobileLabel")}:
+            </span>
             <ul class="list">
               {mobile.map((key) => (
                 <li class="pill" title={LABEL[key]}>

@@ -1,7 +1,8 @@
 ---
 summary: "Monero sent as part of a transaction, that returns to your account instead of going to another recipient"
 title: Change
-terms: ["change"]
+terms:
+  - change
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

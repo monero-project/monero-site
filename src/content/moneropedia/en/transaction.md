@@ -1,7 +1,9 @@
 ---
 summary: "a cryptographically signed container that details the transfer of Monero to a recipient (or recipients)"
 title: Transaction
-terms: ["transaction", "transactions"]
+terms:
+  - transaction
+  - transactions
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

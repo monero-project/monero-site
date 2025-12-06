@@ -1,7 +1,9 @@
 ---
 summary: "either an alias, such as donate.getmonero.org, or a set of 95 characters starting with a 4"
 title: Address
-terms: ["address", "addresses"]
+terms:
+  - address
+  - addresses
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

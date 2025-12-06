@@ -1,7 +1,8 @@
 ---
 summary: "A host defined by you and resolved only by you"
 title: Locally Unique Host
-terms: ["Locally-unique-host"]
+terms:
+  - Locally-unique-host
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

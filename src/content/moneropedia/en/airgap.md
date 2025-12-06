@@ -1,7 +1,8 @@
 ---
 summary: "An airgap is a security measure to physically separate a computer or device from all other networks, such as the Internet."
 title: Airgap
-terms: ["airgap"]
+terms:
+  - airgap
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

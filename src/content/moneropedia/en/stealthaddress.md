@@ -1,7 +1,9 @@
 ---
 summary: "automatic one-time addresses for every transaction"
 title: Stealth Address
-terms: ["stealth-address", "stealth-addresses"]
+terms:
+  - stealth-address
+  - stealth-addresses
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

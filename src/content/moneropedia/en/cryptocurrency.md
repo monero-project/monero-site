@@ -1,7 +1,11 @@
 ---
 summary: "a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, usually operating independently of a central bank"
 title: Cryptocurrency
-terms: ["cryptocurrency", "cryptocurrencies", "altcoin", "altcoins"]
+terms:
+  - cryptocurrency
+  - cryptocurrencies
+  - altcoin
+  - altcoins
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

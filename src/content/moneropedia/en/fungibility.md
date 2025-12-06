@@ -1,7 +1,9 @@
 ---
 summary: "property of a currency whereby two units can be substituted in place of one another"
 title: Fungibility
-terms: ["fungibility", "fungible"]
+terms:
+  - fungibility
+  - fungible
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

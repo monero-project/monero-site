@@ -1,7 +1,8 @@
 ---
 summary: "a process of having a throttled miner mine when it otherwise does not cause drawbacks"
 title: Smart Mining
-terms: ["smart-mining"]
+terms:
+  - smart-mining
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

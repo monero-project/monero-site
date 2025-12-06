@@ -1,7 +1,9 @@
 ---
 summary: "one of the two pairs of private and public cryptographic keys that each account has, with the *private* spend key used to spend any funds in the account"
 title: Spend Key
-terms: ["spend-key", "spend-keys"]
+terms:
+  - spend-key
+  - spend-keys
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

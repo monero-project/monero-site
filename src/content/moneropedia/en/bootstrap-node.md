@@ -1,7 +1,9 @@
 ---
 summary: "A node to which a daemon connects to give immediate usability to wallets while syncing"
 title: Bootstrap Node
-terms: ["bootstrap-node", "bootstrap-nodes"]
+terms:
+  - bootstrap-node
+  - bootstrap-nodes
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

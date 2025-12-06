@@ -1,7 +1,8 @@
 ---
 summary: "A transparent zero-knowledge proof construction used in Monero transactions"
 title: Curve Trees
-terms: ["curve-trees"]
+terms:
+  - curve-trees
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

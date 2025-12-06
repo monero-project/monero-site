@@ -2,7 +2,9 @@
 entry: P2Pool
 summary: "Peer to peer mining pool for Monero"
 title: P2Pool
-terms: ["P2Pool", "monero-p2pool"]
+terms:
+  - P2Pool
+  - monero-p2pool
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

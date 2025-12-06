@@ -1,7 +1,9 @@
 ---
 summary: "a cryptographic method for proving ownership of a piece of information, as well as proving that the information has not been modified after being signed"
 title: Signature
-terms: ["signature", "signatures"]
+terms:
+  - signature
+  - signatures
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

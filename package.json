@@ -14,7 +14,10 @@
     "lint:css": "stylelint \"src/**/*.{css,astro}\"",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "i18n:moneropedia:config": "tsx src/i18n/moneropedia/gen-config.ts",
+    "i18n:moneropedia:extract": "po4a --no-translations src/i18n/moneropedia/po4a.conf",
+    "i18n:moneropedia:compile": "po4a src/i18n/moneropedia/po4a.conf"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

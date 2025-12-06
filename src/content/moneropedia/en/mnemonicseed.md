@@ -1,7 +1,9 @@
 ---
 summary: "a 13 or 25 word phrase used to backup a Monero account, available in a number of languages"
 title: Mnemonic Seed
-terms: ["mnemonic-seed", "mnemonic"]
+terms:
+  - mnemonic-seed
+  - mnemonic
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

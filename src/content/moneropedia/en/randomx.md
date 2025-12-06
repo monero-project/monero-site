@@ -1,7 +1,9 @@
 ---
 summary: "ASIC-resistant POW algoritm currently used by Monero"
 title: RandomX
-terms: ["randomx", "random-x"]
+terms:
+  - randomx
+  - random-x
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

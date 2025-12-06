@@ -1,7 +1,11 @@
 ---
 summary: "similar in function to a bank account, contains all of your sent and received transactions"
 title: Account
-terms: ["account", "accounts", "wallet", "wallets"]
+terms:
+  - account
+  - accounts
+  - wallet
+  - wallets
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
