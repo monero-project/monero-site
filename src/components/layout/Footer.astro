@@ -1,11 +1,10 @@
 ---
 import { getDirection, localizeHref } from "@/i18n/utils";
+import { isExternal } from "@/utils/links";
 import { getLocale } from "astro-i18n-aut";
 
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-
-import externalLink from "@/assets/icons/mask/external-link.avif?url";
 import rssIcon from "@/assets/icons/mask/rss.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
@@ -25,11 +24,6 @@ interface Column {
   title: string;
   links: Link[];
 }
-
-const isExternal = (href: string) =>
-  !href.startsWith("#") &&
-  !href.startsWith("/") &&
-  !href.includes("getmonero.org");
 
 const columns: Column[] = [
   {
@@ -164,13 +158,19 @@ const bottomLinks: Link[] = [
                 <li>
                   <a
                     href={l.href}
-                    target={isExternal(l.href) ? "_blank" : undefined}
-                    rel={isExternal(l.href) ? "noopener noreferrer" : undefined}
+                    target={
+                      isExternal(l.href, "getmonero.org") ? "_blank" : undefined
+                    }
+                    rel={
+                      isExternal(l.href, "getmonero.org")
+                        ? "noopener noreferrer external"
+                        : undefined
+                    }
                   >
                     {l.label}
-                    {(l.icon || isExternal(l.href)) && (
+                    {l.icon && (
                       <MaskIcon
-                        src={l.icon?.src ?? externalLink}
+                        src={l.icon?.src}
                         size={l.icon?.size ?? "12px"}
                         rtl={dir == "rtl"}
                         color={l.icon?.color}
@@ -192,13 +192,19 @@ const bottomLinks: Link[] = [
             <li class="inline-item">
               <a
                 href={l.href}
-                target={isExternal(l.href) ? "_blank" : undefined}
-                rel={isExternal(l.href) ? "noopener noreferrer" : undefined}
+                target={
+                  isExternal(l.href, "getmonero.org") ? "_blank" : undefined
+                }
+                rel={
+                  isExternal(l.href, "getmonero.org")
+                    ? "noopener noreferrer external"
+                    : undefined
+                }
               >
                 {l.label}
-                {(l.icon || isExternal(l.href)) && (
+                {l.icon && (
                   <MaskIcon
-                    src={l.icon?.src ?? externalLink}
+                    src={l.icon?.src}
                     size={l.icon?.size ?? "12px"}
                     rtl={dir == "rtl"}
                     color={l.icon?.color}

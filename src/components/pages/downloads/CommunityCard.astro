@@ -1,5 +1,4 @@
 ---
-import { getDirection, getLocale } from "@/i18n/utils";
 import { getPublicImageDimensions } from "@/utils/image";
 import { Image } from "astro:assets";
 
@@ -9,7 +8,6 @@ import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
 import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
 import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
 import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
-import externalLink from "@/assets/icons/mask/external-link.avif?url";
 
 interface Tags {
   desktop?: string[]; // windows | macos | linux (aliases: win, mac, osx)
@@ -27,9 +25,6 @@ interface Props {
   translateTag?: (key: string) => string;
   t: (key: string) => string;
 }
-
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
 
 const {
   logo,
@@ -172,14 +167,13 @@ const logoDimensions = await getPublicImageDimensions(logo);
     )
   }
 
-  <a href={link} class="visit-link" target="_blank" rel="noopener noreferrer">
+  <a
+    href={link}
+    class="visit-link"
+    target="_blank"
+    rel="noopener noreferrer external"
+  >
     <span>{linkText ?? "Visit website"}</span>
-    <MaskIcon
-      src={externalLink}
-      size="1em"
-      aria-hidden="true"
-      rtl={dir == "rtl"}
-    />
   </a>
 </div>
 

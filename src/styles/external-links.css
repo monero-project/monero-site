@@ -1,0 +1,26 @@
+a[rel~="external"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+a[rel~="external"]::after {
+  content: "";
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+
+  -webkit-mask: url("../assets/icons/mask/external-link.avif") no-repeat
+    center / contain;
+  mask: url("../assets/icons/mask/external-link.avif") no-repeat center /
+    contain;
+  background-color: currentColor;
+}
+
+[dir="rtl"] a[rel~="external"]::after {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] [dir="ltr"] a[rel~="external"]::after {
+  transform: unset;
+}
