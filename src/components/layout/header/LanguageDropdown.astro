@@ -1,6 +1,6 @@
 ---
-import { defaultLocale, locales } from "@/i18n/config";
-import { getLocaleName } from "@/i18n/utils";
+import { locales } from "@/i18n/config";
+import { getLocaleName, localizeHref } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -13,17 +13,6 @@ const localeList = Object.keys(locales).map((code) => {
   const { name = code } = getLocaleName(code) ?? {};
   return { code, name };
 });
-
-const codes = Object.keys(locales).join("|");
-
-const core = Astro.url.pathname
-  .replace(new RegExp(`^/(?:${codes})(?=/|$)`), "")
-  .replace(/^\/|\/$/g, "");
-
-const base = core ? `/${core}/` : "/";
-
-const hrefFor = (locale: string) =>
-  locale === defaultLocale ? base : `/${locale}${base}`;
 ---
 
 <details class="lang-container">
@@ -42,7 +31,7 @@ const hrefFor = (locale: string) =>
         localeList.map((locale) => (
           <li>
             <a
-              href={hrefFor(locale.code)}
+              href={localizeHref(locale.code, Astro.url.pathname)}
               class={locale.code === currentLocale ? "active" : ""}
               aria-current={locale.code === currentLocale ? "true" : undefined}
             >

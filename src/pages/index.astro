@@ -76,7 +76,7 @@ const t = await createTInstance(locale);
           step="01"
           title={t("index.step1Title")}
           description={t("index.step1Desc")}
-          ctaHref="/downloads/community"
+          ctaHref={localizeHref(locale, "/downloads/community")}
           ctaLabel={t("index.step1Cta")}
         />
         <hr />
@@ -84,7 +84,7 @@ const t = await createTInstance(locale);
           step="02"
           title={t("index.step2Title")}
           description={t("index.step2Desc")}
-          ctaHref="/get-started/exchanges"
+          ctaHref={localizeHref(locale, "/get-started/exchanges")}
           ctaLabel={t("index.step2Cta")}
         />
         <hr />
@@ -92,7 +92,7 @@ const t = await createTInstance(locale);
           step="03"
           title={t("index.step3Title")}
           description={t("index.step3Desc")}
-          ctaHref="/get-started/merchants"
+          ctaHref={localizeHref(locale, "/get-started/merchants")}
           ctaLabel={t("index.step3Cta")}
         />
       </div>

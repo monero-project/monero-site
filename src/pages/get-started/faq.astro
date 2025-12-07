@@ -1,7 +1,7 @@
 ---
 import "@/styles/moneropedia-link.css";
 
-import { createTInstance, getLocale } from "@/i18n/utils";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import {
   getMoneropediaEntries,
   processHTMLString as processMoneropediaLinks,
@@ -105,14 +105,14 @@ const economicsItems = (
         title={t("faq.additionalResources.userGuides.title")}
         description={t("faq.additionalResources.userGuides.description")}
         ctaLabel={t("faq.additionalResources.userGuides.ctaLabel")}
-        ctaHref="/resources/user-guides/"
+        ctaHref={localizeHref(locale, "/resources/user-guides/")}
       />
       <ResourceCard
         icon={developerGuidesIcon}
         title={t("faq.additionalResources.devGuides.title")}
         description={t("faq.additionalResources.devGuides.description")}
         ctaLabel={t("faq.additionalResources.devGuides.ctaLabel")}
-        ctaHref="/resources/developer-guides/"
+        ctaHref={localizeHref(locale, "/resources/developer-guides/")}
       />
       <ResourceCard
         icon={faqIcon}
