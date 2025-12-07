@@ -226,8 +226,8 @@ const bottomLinks: Link[] = [
 
   .items {
     padding: var(--mobile-padding);
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     max-width: var(--content-max-width);
     margin: 0 auto;
   }
@@ -239,7 +239,7 @@ const bottomLinks: Link[] = [
   }
 
   .title {
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
@@ -298,12 +298,16 @@ const bottomLinks: Link[] = [
   @media (min-width: 980px) {
     .items {
       padding: var(--desktop-padding);
-      padding-top: 5em;
-      padding-bottom: 5em;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
 
     .grid {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .title {
+      margin: 0 0 2rem;
     }
   }
 </style>

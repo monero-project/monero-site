@@ -10,6 +10,9 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
 
+import hashtagIcon from "@/assets/icons/mask/hashtag.avif?url";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
@@ -18,6 +21,19 @@ const tabs = [
   {
     label: t("downloads.tabs.community"),
     link: localizeHref(locale, "/downloads/community"),
+  },
+];
+
+const sections = [
+  {
+    id: "gui",
+    title: t("downloads.core.gui.title"),
+    subtitle: t("downloads.core.gui.subtitle"),
+  },
+  {
+    id: "cli",
+    title: t("downloads.core.cli.title"),
+    subtitle: t("downloads.core.cli.subtitle"),
   },
 ];
 ---
@@ -35,10 +51,26 @@ const tabs = [
     links={tabs.map((tab) => tab.link)}
     activeIndex={0}
   />
+  <nav class="toc" aria-label={`${t("downloads.tabs.core")}` + " sections"}>
+    {
+      sections.map((section) => (
+        <a class="toc-link" href={`#${section.id}`}>
+          <div class="content">
+            <span class="toc-link-title">{section.title}</span>
+            <span class="toc-link-subtitle">{section.subtitle}</span>
+          </div>
+          <div class="arrow">
+            <MaskIcon src={hashtagIcon} size="0.75em" aria-hidden="true" />
+          </div>
+        </a>
+      ))
+    }
+  </nav>
 
   <div class="downloads-grid">
     <!-- Monero GUI Card -->
     <CoreCard
+      id="gui"
       image="/media/gui.avif"
       title={t("downloads.core.gui.title")}
       subtitle={t("downloads.core.gui.subtitle")}
@@ -60,6 +92,7 @@ const tabs = [
 
     <!-- Monero CLI Card -->
     <CoreCard
+      id="cli"
       image="/media/cli.avif"
       title={t("downloads.core.cli.title")}
       subtitle={t("downloads.core.cli.subtitle")}
@@ -82,16 +115,72 @@ const tabs = [
 </Layout>
 
 <style>
-  /* Core downloads */
-  .downloads-grid {
+  .toc {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
   }
 
-  @media (min-width: 1024px) {
-    .downloads-grid {
-      gap: 3rem;
+  .toc-link {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--heading-color);
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: var(--border-color);
+    background: var(--card-color);
+  }
+
+  .toc-link .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toc-link:hover,
+  .toc-link:focus-visible {
+    background: color-mix(in srgb, var(--card-color), white 5%);
+  }
+
+  .toc-link-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .toc-link-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-caption);
+    margin-top: 0.15rem;
+  }
+
+  .toc-link .arrow {
+    display: flex;
+    align-items: flex-start;
+    margin-inline-start: auto;
+    color: var(--paragraph-subtitle);
+  }
+  /* Core downloads */
+  .downloads-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  :global(#gui, #cli) {
+    scroll-margin-top: 4rem;
+  }
+
+  @media (min-width: 1200px) {
+    :global(#gui, #cli) {
+      scroll-margin-top: unset;
     }
   }
 </style>

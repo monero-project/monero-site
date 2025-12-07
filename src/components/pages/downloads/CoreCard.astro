@@ -27,6 +27,7 @@ export interface DownloadLink {
 }
 
 interface Props {
+  id?: string;
   image: string;
   title: string;
   subtitle: string;
@@ -43,6 +44,7 @@ interface Props {
 }
 
 const {
+  id,
   image,
   title,
   subtitle,
@@ -68,7 +70,7 @@ const PLATFORM_ICONS: Record<string, string> = {
 const imageDimensions = await getPublicImageDimensions(image);
 ---
 
-<div class="download-card">
+<div class="download-card" id={id}>
   <div class="card-image">
     <Image
       src={image}
