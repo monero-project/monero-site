@@ -59,7 +59,7 @@ export const { getStaticPaths, GET } = OGImageRoute({
     padding: 96,
 
     logo: {
-      path: "./public/meta/monerologo.png",
+      path: "./public/meta/monerologo.avif",
       size: [80, 80],
     },
 

@@ -77,8 +77,6 @@ const imageDimensions = await getPublicImageDimensions(image);
       alt=""
       width={imageDimensions.width}
       height={imageDimensions.height}
-      loading="eager"
-      fetchpriority="high"
       format="avif"
     />
   </div>
@@ -213,16 +211,8 @@ const imageDimensions = await getPublicImageDimensions(image);
   }
 
   .card-image {
-    position: relative;
     border-radius: 0.75rem;
     overflow: hidden;
-  }
-
-  .card-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
   }
 
   .card-content {

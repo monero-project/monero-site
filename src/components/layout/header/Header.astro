@@ -43,7 +43,7 @@ import toolsDark from "@/assets/icons/color/dark/tools.avif?url";
 import userGuidesDark from "@/assets/icons/color/dark/user-guides.avif?url";
 import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif?url";
 
-import moneroLogo from "@/../public/meta/monerologo.png";
+import moneroLogo from "@/../public/meta/monerologo.avif";
 
 const { t } = Astro.props;
 const locale = getLocale(Astro.url);
@@ -198,6 +198,7 @@ const navItems = [
         width={64}
         height={64}
         format="avif"
+        priority
       />
       <span>MONERO</span>
     </a>

@@ -105,7 +105,6 @@ const logoDimensions = await getPublicImageDimensions(logo);
       <Image
         src={logo}
         alt={`${name} logo`}
-        decoding="async"
         width={logoDimensions.width}
         height={logoDimensions.height}
         format="avif"
