@@ -1,23 +1,30 @@
 ---
+import type { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+
 export interface Props {
-  src: string | { src: string };
-  darkSrc?: string | { src: string };
-  size?: string;
+  src: ImageMetadata;
+  darkSrc?: ImageMetadata;
+  size?: number | string;
   class?: string;
   rtl?: boolean;
 }
 
 const { src, darkSrc, size = "1em", class: className = "", rtl } = Astro.props;
 
-function norm(p: string | { src: string }): string {
-  if (typeof p === "string") return p;
-  if (p && typeof p === "object" && "src" in p && typeof p.src === "string")
-    return p.src;
-  return String(p);
-}
+const iconSize = typeof size === "number" ? `${size}px` : size;
 
-const lightUrl = `'${norm(src).replace(/'/g, "\\'")}'`;
-const darkUrl = darkSrc ? `'${norm(darkSrc).replace(/'/g, "\\'")}'` : lightUrl;
+const lightUrl =
+  typeof src === "string"
+    ? `url(${src})`
+    : await getImage({ src, format: "avif" }).then((img) => `url(${img.src})`);
+const darkUrl = darkSrc
+  ? typeof darkSrc === "string"
+    ? `url(${darkSrc})`
+    : await getImage({ src: darkSrc, format: "avif" }).then(
+        (img) => `url(${img.src})`,
+      )
+  : lightUrl;
 ---
 
 <div class={`icon ${className} ${rtl ? "icon--rtl" : ""}`} aria-hidden="true">
@@ -25,9 +32,9 @@ const darkUrl = darkSrc ? `'${norm(darkSrc).replace(/'/g, "\\'")}'` : lightUrl;
 
 <style
   define:vars={{
-    iconUrlLight: `url(${lightUrl})`,
-    iconUrlDark: `url(${darkUrl})`,
-    iconSize: size,
+    lightUrl,
+    darkUrl,
+    iconSize,
   }}
 >
   .icon {
@@ -38,7 +45,7 @@ const darkUrl = darkSrc ? `'${norm(darkSrc).replace(/'/g, "\\'")}'` : lightUrl;
     aspect-ratio: 1 / 1;
     vertical-align: middle;
 
-    --iconUrl: var(--iconUrlLight);
+    --iconUrl: var(--lightUrl);
     background-image: var(--iconUrl);
     background-repeat: no-repeat;
     background-position: center;
@@ -52,7 +59,7 @@ const darkUrl = darkSrc ? `'${norm(darkSrc).replace(/'/g, "\\'")}'` : lightUrl;
 
   @media (prefers-color-scheme: dark) {
     .icon {
-      --iconUrl: var(--iconUrlDark);
+      --iconUrl: var(--darkUrl);
     }
   }
 </style>

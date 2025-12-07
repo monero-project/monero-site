@@ -1,19 +1,26 @@
 ---
+import type { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+
 export interface Props {
-  src: string;
-  size?: string;
+  src: string | ImageMetadata;
+  size?: number | string;
   rtl?: boolean;
   color?: string;
 }
 
 const { src, size = "1em", rtl, color = "currentColor" } = Astro.props;
+
+const iconSize = typeof size === "number" ? `${size}px` : size;
+const iconSrc =
+  typeof src === "string"
+    ? `url(${src})`
+    : await getImage({ src, format: "avif" }).then((img) => `url(${img.src})`);
 ---
 
 <div class={`icon ${rtl ? "icon--rtl" : ""}`}></div>
 
-<style
-  define:vars={{ iconSize: size, iconSrc: `url(${src})`, iconColor: color }}
->
+<style define:vars={{ iconSize, iconSrc, iconColor: color }}>
   .icon {
     display: inline-block;
     inline-size: var(--iconSize);

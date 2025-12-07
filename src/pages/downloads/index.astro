@@ -10,8 +10,11 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
 
-import hashtagIcon from "@/assets/icons/mask/hashtag.avif?url";
+import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import cliImage from "@/assets/images/cli.avif";
+import guiImage from "@/assets/images/gui.avif";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
@@ -71,7 +74,7 @@ const sections = [
     <!-- Monero GUI Card -->
     <CoreCard
       id="gui"
-      image="/media/gui.avif"
+      image={guiImage}
       title={t("downloads.core.gui.title")}
       subtitle={t("downloads.core.gui.subtitle")}
       version={coreDownloads.gui.version}
@@ -93,7 +96,7 @@ const sections = [
     <!-- Monero CLI Card -->
     <CoreCard
       id="cli"
-      image="/media/cli.avif"
+      image={cliImage}
       title={t("downloads.core.cli.title")}
       subtitle={t("downloads.core.cli.subtitle")}
       version={coreDownloads.cli.version}

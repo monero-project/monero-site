@@ -1,18 +1,19 @@
 ---
 import { getDirection, getLocale } from "@/i18n/utils";
+import type { ImageMetadata } from "astro";
 
 import ColorIcon from "@/components/ui/ColorIcon.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
-import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
-import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif?url";
+import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif";
 
 export interface DropdownItem {
   label: string;
   href: string;
   desc?: string;
-  icon: string;
-  iconDark?: string;
+  icon: string | ImageMetadata;
+  iconDark?: string | ImageMetadata;
 }
 
 export interface Props {

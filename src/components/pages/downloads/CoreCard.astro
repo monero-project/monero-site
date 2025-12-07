@@ -1,6 +1,6 @@
 ---
-import { getPublicImageDimensions } from "@/utils/image";
 import safeMarkdown from "@/utils/safeMarkdown.ts";
+import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
 import Button from "@/components/ui/Button.astro";
@@ -10,13 +10,13 @@ import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
 import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
-import magnetIconDark from "@/assets/icons/color/dark/magnet.avif?url";
-import magnetIcon from "@/assets/icons/color/light/magnet.avif?url";
-import androidIcon from "@/assets/icons/mask/brand/android.avif?url";
-import appleIcon from "@/assets/icons/mask/brand/apple.avif?url";
-import freebsdIcon from "@/assets/icons/mask/brand/freebsd.avif?url";
-import linuxIcon from "@/assets/icons/mask/brand/linux.avif?url";
-import windowsIcon from "@/assets/icons/mask/brand/windows.avif?url";
+import magnetIconDark from "@/assets/icons/color/dark/magnet.avif";
+import magnetIcon from "@/assets/icons/color/light/magnet.avif";
+import androidIcon from "@/assets/icons/mask/brand/android.avif";
+import appleIcon from "@/assets/icons/mask/brand/apple.avif";
+import freebsdIcon from "@/assets/icons/mask/brand/freebsd.avif";
+import linuxIcon from "@/assets/icons/mask/brand/linux.avif";
+import windowsIcon from "@/assets/icons/mask/brand/windows.avif";
 
 export interface DownloadLink {
   href: string;
@@ -28,7 +28,7 @@ export interface DownloadLink {
 
 interface Props {
   id?: string;
-  image: string;
+  image: ImageMetadata;
   title: string;
   subtitle: string;
   features: string[];
@@ -59,7 +59,7 @@ const {
   t,
 } = Astro.props;
 
-const PLATFORM_ICONS: Record<string, string> = {
+const PLATFORM_ICONS: Record<string, ImageMetadata> = {
   windows: windowsIcon,
   macos: appleIcon,
   linux: linuxIcon,
@@ -67,18 +67,12 @@ const PLATFORM_ICONS: Record<string, string> = {
   freebsd: freebsdIcon,
 };
 
-const imageDimensions = await getPublicImageDimensions(image);
+//const imageDimensions = await getPublicImageDimensions(image);
 ---
 
 <div class="download-card" id={id}>
   <div class="card-image">
-    <Image
-      src={image}
-      alt=""
-      width={imageDimensions.width}
-      height={imageDimensions.height}
-      format="avif"
-    />
+    <Image src={image} alt="" format="avif" />
   </div>
   <div class="card-content">
     <h2 class="card-title">{title}</h2>

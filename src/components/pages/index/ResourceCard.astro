@@ -1,13 +1,14 @@
 ---
 import { getDirection, getLocale } from "@/i18n/utils";
+import type { ImageMetadata } from "astro";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
-import arrowRight from "@/assets/icons/mask/arrow-right.avif?url";
-import externalLink from "@/assets/icons/mask/external-link.avif?url";
+import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+import externalLink from "@/assets/icons/mask/external-link.avif";
 
 export interface Props {
-  icon?: string;
+  icon?: ImageMetadata;
   title: string;
   description?: string;
   ctaLabel?: string;
