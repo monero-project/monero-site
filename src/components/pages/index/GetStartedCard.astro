@@ -34,7 +34,7 @@ const dir = getDirection(locale);
   <div class="text">
     <h2 id="gs-title" class="title">{title}</h2>
     {description && <p class="desc">{description}</p>}
-    <a class="cta" href={localizeHref(locale, ctaHref)}>
+    <a class="cta" href={localizeHref(locale, ctaHref)} target="_blank">
       {ctaLabel}
       <MaskIcon src={arrowRight} rtl={dir == "rtl"} />
     </a>
