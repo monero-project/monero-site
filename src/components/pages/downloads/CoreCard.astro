@@ -159,9 +159,8 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
               target="_blank"
               rel="noopener noreferrer external"
               class="metadata-link"
-            >
-              {t("downloads.core.releaseNotes")}
-            </a>
+              set:text={t("downloads.core.releaseNotes")}
+            />
           </>
         )
       }
@@ -174,9 +173,8 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
               target="_blank"
               rel="noopener noreferrer external"
               class="metadata-link"
-            >
-              {t("downloads.core.sourceCode")}
-            </a>
+              set:text={t("downloads.core.sourceCode")}
+            />
           </>
         )
       }
@@ -188,8 +186,9 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
         href="/downloads/hashes.txt"
         class="verify-link"
         target="_blank"
-        rel="noopener noreferrer">{t("downloads.core.viewHashes")}</a
-      >
+        rel="noopener noreferrer"
+        set:text={t("downloads.core.viewHashes")}
+      />
     </div>
   </div>
 </div>

@@ -172,9 +172,8 @@ const logoDimensions = await getPublicImageDimensions(logo);
     class="visit-link"
     target="_blank"
     rel="noopener noreferrer external"
-  >
-    <span>{linkText ?? "Visit website"}</span>
-  </a>
+    set:text={linkText ?? "Visit website"}
+  />
 </div>
 
 <style>
@@ -271,7 +270,6 @@ const logoDimensions = await getPublicImageDimensions(logo);
   .visit-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
     margin-top: 0.25rem;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);

@@ -328,8 +328,8 @@
           "title": "Remote Sync Wallets",
           "subtitle": "Wallets that use remote servers to scan the blockchain for convenience. Requires sharing your private view key with the service."
         },
-        "offline": {
-          "title": "Offline Wallets",
+        "cold": {
+          "title": "Cold Wallets",
           "subtitle": "Hardware wallets and offline transaction signing apps."
         },
         "nodes": {

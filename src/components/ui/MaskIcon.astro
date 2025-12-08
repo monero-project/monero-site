@@ -7,9 +7,10 @@ export interface Props {
   size?: number | string;
   rtl?: boolean;
   color?: string;
+  spacing?: string;
 }
 
-const { src, size = "1em", rtl, color = "currentColor" } = Astro.props;
+const { src, size = "1em", rtl, color = "currentColor", spacing } = Astro.props;
 
 const iconSize = typeof size === "number" ? `${size}px` : size;
 const iconSrc = await getImage({ src, format: "avif" }).then(
@@ -19,15 +20,16 @@ const iconSrc = await getImage({ src, format: "avif" }).then(
 
 <div class={`icon ${rtl ? "icon--rtl" : ""}`}></div>
 
-<style define:vars={{ iconSize, iconSrc, iconColor: color }}>
+<style define:vars={{ iconSize, iconSrc, iconColor: color, spacing }}>
   .icon {
     display: inline-block;
     inline-size: var(--iconSize);
     block-size: var(--iconSize);
+    margin-inline-start: var(--spacing);
 
     background: var(--iconColor);
-    mask: var(--iconSrc) no-repeat center / contain;
     -webkit-mask: var(--iconSrc) no-repeat center / contain;
+    mask: var(--iconSrc) no-repeat center / contain;
   }
 
   .icon--rtl {

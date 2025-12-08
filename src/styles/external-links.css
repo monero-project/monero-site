@@ -1,14 +1,12 @@
-a[rel~="external"] {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25em;
-}
-
 a[rel~="external"]::after {
   content: "";
   display: inline-block;
-  inline-size: 1em;
-  block-size: 1em;
+  inline-size: 1rem;
+  block-size: 1rem;
+  margin-inline-start: 0.25em;
+  line-height: 1;
+
+  vertical-align: -0.2em;
 
   -webkit-mask: url("../assets/icons/mask/external-link.avif") no-repeat
     center / contain;

@@ -110,7 +110,7 @@
       }
     }
   ],
-  "offline": [
+  "cold": [
     {
       "id": "keystone",
       "name": "Keystone",

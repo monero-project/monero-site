@@ -35,8 +35,8 @@ const sections = [
   },
   {
     id: "cold-wallets",
-    title: t("downloads.community.sections.offline.title"),
-    subtitle: t("downloads.community.sections.offline.subtitle"),
+    title: t("downloads.community.sections.cold.title"),
+    subtitle: t("downloads.community.sections.cold.subtitle"),
   },
   {
     id: "nodes",
@@ -151,14 +151,14 @@ const sections = [
 
   <!-- Cold Wallets -->
   <h2 class="section-title" id="cold-wallets">
-    {t("downloads.community.sections.offline.title")}
+    {t("downloads.community.sections.cold.title")}
   </h2>
   <p class="section-subtitle">
-    {t("downloads.community.sections.offline.subtitle")}
+    {t("downloads.community.sections.cold.subtitle")}
   </p>
   <div class="cards-grid">
     {
-      communityWallets.offline.map((wallet) => (
+      communityWallets.cold.map((wallet) => (
         <CommunityCard
           logo={wallet.logo}
           name={wallet.name}

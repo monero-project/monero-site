@@ -323,7 +323,7 @@
           "title": "Portefeuilles à Synchronisation Distante",
           "subtitle": "Portefeuilles qui utilisent des serveurs distants pour scanner la blockchain par commodité. Nécessite de partager votre clé de vue privée avec le service."
         },
-        "offline": {
+        "cold": {
           "title": "Portefeuilles Hors Ligne",
           "subtitle": "Portefeuilles matériels et applications de signature de transactions hors ligne."
         },
