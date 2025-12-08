@@ -10,6 +10,7 @@ import {
 import Layout from "@/layouts/Layout.astro";
 import { getDateStringFromId } from "@/utils/blog";
 import type { GetStaticPaths } from "astro";
+import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
 
@@ -77,6 +78,19 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
         locale={locale}
         t={t}
       />
+      {
+        post.data.image && (
+          <div style="text-align: center;">
+            <Image
+              src={post.data.image}
+              alt=""
+              width={350}
+              layout="constrained"
+              position="center"
+            />
+          </div>
+        )
+      }
       <BlogContent>
         <Content />
       </BlogContent>

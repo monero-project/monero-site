@@ -13,11 +13,11 @@ For some time we have known that we needed an exclusive center where Monero's mo
 
 It is for this reason that the Monero Core Team have seen to the construction of a special center that caters to these individuals - the artists, politicians, leaders of industry and sports figures who use Monero... and no one else. We are pleased to call this new campus the Monero Celebrity Center of Los Angeles.
 
-![Interior](/blog/assets/april-fools/2016/inside.jpg)
+![Interior](./assets/april-fools/2016/inside.jpg)
 
 Built on the banks of the Arroyo Calabasas river, the Monero Celebrity Center will be open 24 hours a day, and will house 420 full time staff to assist celebrities with their Monero purchases.
 
-![Exterior](/blog/assets/april-fools/2016/building.jpg)
+![Exterior](./assets/april-fools/2016/building.jpg)
 
 Now one might argue that these individuals already have benefits that many will never have. But, ask any one of them - ask yourself - can the world be lonely even for those who appear to have everything. Subject to the unusual pressures that come with prominence and responsibility, being looked upon under a microscope for good or bad - these are burdens others can't imagine. Not to mention the counter-attack such individuals are subjected to by those less-ambitious who would rather fight to maintain a "status quo" than allow another to attempt a change or improvement. We asked ourselves "How can Monero help these people and _how can they help Monero_?"
 

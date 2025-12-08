@@ -14,16 +14,13 @@ const { src, darkSrc, size = "1em", class: className = "", rtl } = Astro.props;
 
 const iconSize = typeof size === "number" ? `${size}px` : size;
 
-const lightUrl =
-  typeof src === "string"
-    ? `url(${src})`
-    : await getImage({ src, format: "avif" }).then((img) => `url(${img.src})`);
+const lightUrl = await getImage({ src, format: "avif" }).then(
+  (img) => `url(${img.src})`,
+);
 const darkUrl = darkSrc
-  ? typeof darkSrc === "string"
-    ? `url(${darkSrc})`
-    : await getImage({ src: darkSrc, format: "avif" }).then(
-        (img) => `url(${img.src})`,
-      )
+  ? await getImage({ src: darkSrc, format: "avif" }).then(
+      (img) => `url(${img.src})`,
+    )
   : lightUrl;
 ---
 

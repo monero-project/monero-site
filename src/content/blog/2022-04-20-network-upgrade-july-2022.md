@@ -3,12 +3,8 @@ title: "Monero will undergo a network upgrade on 13th August, 2022"
 summary: Announcement of the upcoming network upgrade (13th August, 2022)
 tags: [community, protocol upgrade, core, crypto]
 author: sethforprivacy
-image: /blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png
+image: ./assets/2022-04-20-network-upgrade-july-2022/upgrades.png
 ---
-
-<div align="center">
-    <img src="/blog/assets/2022-04-20-network-upgrade-july-2022/upgrades.png" width="350px">
-</div>
 
 **_Note: This blog post has been updated to reflect the new hard-fork date of the 13th of August, 2022, as the release was delayed due to required multi-sig security fixes and hardware wallet-related delays._**
 

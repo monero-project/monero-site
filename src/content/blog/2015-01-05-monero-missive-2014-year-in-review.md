@@ -32,7 +32,7 @@ Expenditure for the year comprised of 3 totals as some costs could not be settle
 
 So, what did our ~212 BTC get spent on over the year? Or, in other words, what did we accomplish? Here's a bit of a taste before we dig into the nitty-gritty:
 
-![Infographic](/blog/assets/2014-year-in-review/overview.jpg)
+![Infographic](./assets/2014-year-in-review/overview.jpg)
 
 _Core Development_
 

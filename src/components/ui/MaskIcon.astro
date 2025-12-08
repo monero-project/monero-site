@@ -3,7 +3,7 @@ import type { ImageMetadata } from "astro";
 import { getImage } from "astro:assets";
 
 export interface Props {
-  src: string | ImageMetadata;
+  src: ImageMetadata;
   size?: number | string;
   rtl?: boolean;
   color?: string;
@@ -12,10 +12,9 @@ export interface Props {
 const { src, size = "1em", rtl, color = "currentColor" } = Astro.props;
 
 const iconSize = typeof size === "number" ? `${size}px` : size;
-const iconSrc =
-  typeof src === "string"
-    ? `url(${src})`
-    : await getImage({ src, format: "avif" }).then((img) => `url(${img.src})`);
+const iconSrc = await getImage({ src, format: "avif" }).then(
+  (img) => `url(${img.src})`,
+);
 ---
 
 <div class={`icon ${rtl ? "icon--rtl" : ""}`}></div>

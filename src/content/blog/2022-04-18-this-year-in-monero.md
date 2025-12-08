@@ -3,12 +3,8 @@ title: "This Year in Monero - 2022"
 summary: A snapshot of statistics and social media posts to highlight Monero's growth in its 8th year.
 tags: [community]
 author: reemuru
-image: /blog/assets/2022-04-01-this-year-in-monero/8years.png
+image: ./assets/2022-04-01-this-year-in-monero/8years.png
 ---
-
-<div align="center">
-    <img src="/blog/assets/2022-04-01-this-year-in-monero/8years.png" width="350px">
-</div>
 
 As a way to celebrate and show the growth that has happened for Monero across the past year on this, the 8th anniversary of the Monero project, I wanted to take a snapshot of statistics and social media posts to highlight this growth.
 
@@ -31,14 +27,14 @@ Each section will highlight the previous year (04/2020 through 04/2021) as well 
 - Monero transactions grew from ~10,000tx per day to ~23,000tx per day
 - There were **_5,868,096_** total transactions, for an average of **_16,076_** transactions per day for the year
 
-<img src="/blog/assets/2021-04-18-this-year-in-monero/monero-7y-transactions.png" position="center" style="border-radius: 8px;">
+![monero-7y-transactions](./assets/2021-04-18-this-year-in-monero/monero-7y-transactions.png)
 
 **_04/2021 through 04/2022:_**
 
 - Monero transactions grew from ~23,000tx per day to ~40,000tx per day
 - There were **_9,087,482_** total transactions, for an average of **_23,542_** transactions per day for the year
 
-<img src="/blog/assets/2022-04-01-this-year-in-monero/monero-8y-transactions.png" position="center" style="border-radius: 8px;">
+![monero-8y-transactions](./assets/2022-04-01-this-year-in-monero/monero-8y-transactions.png)
 
 ### Year over Year Growth
 
@@ -52,7 +48,7 @@ Monero's on-chain usage grew **_154%_** YoY! Every one of these transactions was
 - There were **_262,588_** total blocks, for an average size of **_53.30KB_** per block for the year.
 - There were **_5,868,096_** total transactions, for an average of **_2.38KB_** per transaction.
 
-<img src="/blog/assets/2021-04-18-this-year-in-monero/monero-7y-blockchain.png" position="center" style="border-radius: 8px;">
+![monero-7y-blockchain](./assets/2021-04-18-this-year-in-monero/monero-7y-blockchain.png)
 
 **_04/2021 through 04/2022:_**
 
@@ -60,7 +56,7 @@ Monero's on-chain usage grew **_154%_** YoY! Every one of these transactions was
 - There were **_262,567_** total blocks, for an average size of **_73.27KB_** per block for the year.
 - There were **_9,087,482_** total transactions, for an average of **_2.11KB_** per transaction.
 
-<img src="/blog/assets/2022-04-01-this-year-in-monero/monero-8y-blockchain.png" position="center" style="border-radius: 8px;">
+![monero-8y-blockchain](./assets/2022-04-01-this-year-in-monero/monero-8y-blockchain.png)
 
 ### Year over Year Growth
 
@@ -74,7 +70,7 @@ Monero's blockchain size grew **_144%_** faster YoY.
 - There were **_262,588_** total blocks, for an average block subsidy of **_1.38XMR_** per block for the year.
 - Monero's emission per day dropped from **_~1,200XMR_** to **_~750XMR_** over the course of the year.
 
-<img src="/blog/assets/2021-04-18-this-year-in-monero/monero-7y-emissions.png" position="center" style="border-radius: 8px;">
+![monero-7y-emissions](./assets/2021-04-18-this-year-in-monero/monero-7y-emissions.png)
 
 **_04/2021 through 04/2022:_**
 
@@ -82,7 +78,7 @@ Monero's blockchain size grew **_144%_** faster YoY.
 - There were **_262,567_** total blocks, for an average block subsidy of **_0.90XMR_** per block for the year.
 - Monero's emission per day dropped from **_~803XMR_** to **_~458XMR_** over the course of the year.
 
-<img src="/blog/assets/2022-04-01-this-year-in-monero/monero-8y-emissions.png" position="center" style="border-radius: 8px;">
+![monero-8y-emissions](./assets/2022-04-01-this-year-in-monero/monero-8y-emissions.png)
 
 ### Year over Year Change
 
@@ -97,7 +93,7 @@ Monero's annual inflation decreased **_34.3%_** YoY while daily emission dropped
 - There were **_262,588_** total blocks, for an average total fees to miners of **_0.00717767XMR_** per block for the year.
 - There were **_5,868,096_** total transactions, for an average of **_0.000321189XMR_** per transaction.
 
-<img src="/blog/assets/2021-04-18-this-year-in-monero/monero-7y-fees.png" position="center" style="border-radius: 8px;">
+![monero-7y-fees](./assets/2021-04-18-this-year-in-monero/monero-7y-fees.png)
 
 **_04/2021 through 04/2022:_**
 
@@ -106,7 +102,7 @@ Monero's annual inflation decreased **_34.3%_** YoY while daily emission dropped
 - There were **_262,567_** total blocks, for an average total fees to miners of **_0.00575384XMR_** per block for the year.
 - There were **_9,087,482_** total transactions, for an average of **_0.000166247XMR_** per transaction.
 
-<img src="/blog/assets/2022-04-01-this-year-in-monero/monero-8y-fees.png" position="center" style="border-radius: 8px;">
+![monero-8y-fees](./assets/2022-04-01-this-year-in-monero/monero-8y-fees.png)
 
 ### Year over Year Growth
 
@@ -118,13 +114,13 @@ Monero's fees spent decreased **_19.84%_** YoY while the average transaction fee
 
 - Monero's network hashrate increased from **_1.21GH/s_** to **_2.29GH/s_** over the year.
 
-<img src="/blog/assets/2021-04-18-this-year-in-monero/monero-hashrate-2021.png" position="center" style="border-radius: 8px;">
+![monero-hashrate-2021](./assets/2021-04-18-this-year-in-monero/monero-hashrate-2021.png)
 
 **_04/2021 through 04/2022:_**
 
 - Monero's network hashrate increased from **_2.29GH/s_** to **_3.51GH/s_** over the year.
 
-<img src="/blog/assets/2022-04-01-this-year-in-monero/monero-hashrate-2022.png" position="center" style="border-radius: 8px;">
+![monero-hashrate-2022](./assets/2022-04-01-this-year-in-monero/monero-hashrate-2022.png)
 
 ### Year over Year Growth
 
@@ -136,13 +132,13 @@ Monero's network hashrate increased **_53.27%_** YoY
 
 - Monero's main subreddit, [r/Monero](https://www.reddit.com/r/Monero) gained **_~43,000_** subscribers, going from **_~168,000_** to **_~211,000_** subscribers over the year.
 
-<img src="/blog/assets/2021-04-18-this-year-in-monero/subreddit_2021.png" position="center" style="border-radius: 8px;">
+![subreddit_2021](./assets/2021-04-18-this-year-in-monero/subreddit_2021.png)
 
 **_04/2021 through 04/2022:_**
 
 - Monero's main subreddit, [r/Monero](https://www.reddit.com/r/Monero) gained **_~46,000_** subscribers, going from **_~211,000_** to **_257,000_** subscribers over the year.
 
-<img src="/blog/assets/2022-04-01-this-year-in-monero/subreddit_2022.png" position="center" style="border-radius: 8px;">
+![subreddit_2022](./assets/2022-04-01-this-year-in-monero/subreddit_2022.png)
 
 ### Year over Year Growth
 

@@ -3,10 +3,8 @@ title: Bulletproofs+ in Monero
 summary: Bulletproofs+ code is completed and ready for a security audit
 tags: [community]
 author: Sarang Noether, Ph.D.
-image: /blog/assets/bulletproofs+/bulletproofs+.png
+image: ./assets/bulletproofs+/bulletproofs+.png
 ---
-
-<img src="/blog/assets/bulletproofs+/bulletproofs+.png" alt="Bulletproofs+ logo"/>
 
 ## Summary
 

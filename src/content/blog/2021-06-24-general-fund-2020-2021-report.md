@@ -19,14 +19,12 @@ I exported all key images, which can be used together with a view-only wallet to
 Summary 2020
 
 - Received: 2847.716692 XMR
-- Spent: 896.4505203 XMR  
-
+- Spent: 896.4505203 XMR
 
 Summary 2021 (until 16/06)
 
 - Received: 3161.148144 XMR
-- Spent: 211.7867395 XMR  
-
+- Spent: 211.7867395 XMR
 
 You can find the full list of all transactions since 2016, as well as annotated outgoing transactions for 2020/2021 here: [downloads.getmonero.org/GF_wallet_report_June_2021.ods](https://downloads.getmonero.org/GF_wallet_report_June_2021.ods)
 

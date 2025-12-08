@@ -44,7 +44,7 @@ The bug was patched in PR [#8794](https://github.com/monero-project/monero/pull/
 
 ### Empirical Analysis
 
-<img src="/blog/assets/2023-05-25-10block-old-decoy-selection-bug/percent-of-rct-inputs-exactly-x-blocks-old.png" position="center" style="border-radius: 8px;" alt="Percent of RCT inputs exactly N blocks old">
+![Percent of RCT inputs exactly N blocks old](./assets/2023-05-25-10block-old-decoy-selection-bug/percent-of-rct-inputs-exactly-x-blocks-old.png)
 
 The graph you see above shows how much 10-block-old ring members vs 11-block-old ring members appeared in transactions over time. The blue line represents the percent of transaction ring members on-chain that are exactly 10 blocks old over time, with yellow representing the same for 11-block-old ring members. The dashed green line shows the ratio between these two values over time.
 

@@ -11,7 +11,7 @@ After some new limitations of subaddresses were found, this post should help cla
 
 In summary, the below chart should help explain the relative privacy protections of different address behaviors. From a user experience perspective, subaddresses are far more user-friendly than using addresses from completely different seeds, while still providing a level of privacy protection that is sufficient for most use-cases.
 
-<img src="/blog/assets/subaddress-janus/subaddress-janus.JPG" style="width: 800px;"/>
+![subaddress-janus](./assets/subaddress-janus/subaddress-janus.JPG)
 
 Reusing the main 4... addresses or integrated addresses will most likely allow counterparties and many passive observers to connect related addresses together to a single entity. This can occur if the addresses are posted publicly.
 

@@ -22,13 +22,14 @@ const blog = defineCollection({
       return idToDateSlug(entry.replace(/\.md$/, ""));
     },
   }),
-  schema: z.object({
-    title: z.string(),
-    summary: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    author: z.string(),
-    image: z.string().optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      summary: z.string().optional(),
+      tags: z.array(z.string()).optional(),
+      author: z.string(),
+      image: image().optional(),
+    }),
 });
 
 export const collections = {

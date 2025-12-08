@@ -3,10 +3,8 @@ title: CLSAG audit results
 summary: Results of an external security audit of the CLSAG signature construction
 tags: [community]
 author: Sarang Noether, Ph.D.
-image: /blog/assets/clsag/clsag.svg
+image: ./assets/clsag/clsag.svg
 ---
-
-<img src="/blog/assets/clsag/clsag.svg" alt="CLSAG logo"/>
 
 Contributing researchers to the [Monero Research Lab](/resources/research-lab/) and the Monero Audit Workgroup are pleased to announce the results of a recent audit of the [CLSAG](https://eprint.iacr.org/2019/654) ring signature construction. As described in this post, CLSAG enables smaller and faster transactions with rigorous security. Users can expect to see these benefits seamlessly integrated into Monero software at the next network upgrade, which will occur in October of this year.
 

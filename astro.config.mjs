@@ -32,6 +32,10 @@ export default defineConfig({
   build: {
     format: "directory",
   },
+  image: {
+    responsiveStyles: true,
+    layout: "constrained",
+  },
   integrations: [
     i18n({
       locales,
