@@ -89,11 +89,15 @@ const locale = getLocale(Astro.url);
   .actions {
     display: flex;
     flex-direction: row;
-    gap: 0.75rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
     max-width: 100%;
+  }
+
+  :global(.actions .button) {
+    padding: 1em 2em;
   }
 
   @media (max-width: 640px) {
@@ -102,6 +106,7 @@ const locale = getLocale(Astro.url);
     }
     .actions {
       flex-direction: column;
+      gap: 0.75rem;
     }
   }
 
