@@ -219,7 +219,7 @@ const navItems = [
           aria-controls="primary-nav"
           aria-label="Close menu"
         >
-          <MaskIcon src={close} size="1.25rem" />
+          <MaskIcon src={close} size="1.5rem" />
         </label>
       </div>
       <fieldset>
@@ -246,7 +246,7 @@ const navItems = [
         aria-controls="primary-nav"
         aria-label="Open menu"
       >
-        <MaskIcon src={hamburger} size="1.25rem" />
+        <MaskIcon src={hamburger} size="1.5rem" />
       </label>
     </div>
   </div>
@@ -439,6 +439,15 @@ const navItems = [
     /* When language dropdown is open, change header background */
     .header:has(.lang-container[open]) {
       background: var(--card-color);
+    }
+
+    :global(.lang .icon) {
+      inline-size: 1.5rem;
+      block-size: 1.5rem;
+    }
+
+    .utils {
+      gap: 1rem;
     }
   }
 
