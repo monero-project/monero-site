@@ -6,7 +6,7 @@ import ColorIcon from "@/components/ui/ColorIcon.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
-import dropdownCaret from "@/assets/icons/mask/dropdown-caret.avif";
+import chevronDown from "@/assets/icons/mask/chevron-down.avif";
 
 export interface DropdownItem {
   label: string;
@@ -55,14 +55,14 @@ const dir = getDirection(getLocale(Astro.url));
             <a href={href} class="link">
               {label}
               <span class="caret" aria-hidden="true">
-                <MaskIcon src={dropdownCaret} />
+                <MaskIcon src={chevronDown} />
               </span>
             </a>
           ) : (
             <span class="link" role="link" tabindex="0">
               {label}
               <span class="caret" aria-hidden="true">
-                <MaskIcon src={dropdownCaret} />
+                <MaskIcon src={chevronDown} />
               </span>
             </span>
           )}
@@ -95,11 +95,7 @@ const dir = getDirection(getLocale(Astro.url));
                     {item.desc && <div class="desc">{item.desc}</div>}
                   </div>
                   <div class="arrow">
-                    <MaskIcon
-                      src={arrowRight}
-                      size="0.75rem"
-                      rtl={dir == "rtl"}
-                    />
+                    <MaskIcon src={arrowRight} size="1rem" rtl={dir == "rtl"} />
                   </div>
                 </a>
               ))}

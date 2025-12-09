@@ -1,7 +1,7 @@
 ---
 import "node:crypto";
 
-import dropdownIcon from "@/assets/icons/mask/dropdown-caret.avif";
+import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
 import DOMPurify from "isomorphic-dompurify";
 import MaskIcon from "./MaskIcon.astro";
 
@@ -31,7 +31,7 @@ const accordionId = crypto.randomUUID();
           <summary class="accordion-header">
             <span class="accordion-title">{item.title}</span>
             <div class="accordion-icon">
-              <MaskIcon src={dropdownIcon} />
+              <MaskIcon src={chevronDownIcon} />
             </div>
           </summary>
           <div
