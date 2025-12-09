@@ -1,12 +1,9 @@
 a[rel~="external"]::after {
   content: "";
   display: inline-block;
-  inline-size: 1rem;
-  block-size: 1rem;
+  inline-size: 0.9rem;
+  block-size: 0.9rem;
   margin-inline-start: 0.25em;
-  line-height: 1;
-
-  vertical-align: -0.2em;
 
   -webkit-mask: url("../assets/icons/mask/external-link.avif") no-repeat
     center / contain;
