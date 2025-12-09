@@ -80,9 +80,9 @@ const localizedLink = localizeHref(locale, `/blog/${id}/`);
       }
     </div>
     <h2 class="title">
-      <a href={localizedLink}>{title}</a>
+      <a href={localizedLink} dir="ltr">{title}</a>
     </h2>
-    <p class="summary">{summary}</p>
+    <p class="summary"><span dir="ltr">{summary}</span></p>
     {
       tags.length > 0 && (
         <div class="tag-container">
