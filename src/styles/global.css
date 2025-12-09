@@ -100,6 +100,20 @@ h6 {
 }
 
 /* ========================================
+   Locale-specific styles
+   ======================================== */
+
+[lang="ar"] ol,
+[lang="fa"] ol,
+[lang="ur"] ol {
+  list-style-type: arabic-indic;
+}
+
+[lang="he"] ol {
+  list-style-type: hebrew;
+}
+
+/* ========================================
    Third-Party Overrides
    ======================================== */
 

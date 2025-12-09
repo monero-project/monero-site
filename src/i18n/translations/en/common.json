@@ -42,15 +42,15 @@
       "community": {
         "workgroups": {
           "label": "Workgroups",
-          "desc": "Everything you need to know about Monero in a nutshell."
+          "desc": "Collaborate with Monero's dedicated workgroups on development, research, and community efforts."
         },
         "sponsorships": {
           "label": "Sponsorships",
-          "desc": "Discover the ways you can help the Monero project to bring privacy to everyone."
+          "desc": "List of businesses that support The Monero Project."
         },
         "hangouts": {
           "label": "Hangouts",
-          "desc": "Learn how to accept XMR as a merchant or individual with wallet software."
+          "desc": "Join Monero community hangouts and events to connect with fellow enthusiasts and developers."
         }
       },
       "resources": {
@@ -64,7 +64,7 @@
         },
         "researchLab": {
           "label": "Research Lab",
-          "desc": "Discover the ways you can help the Monero project to bring privacy to everyone."
+          "desc": "Explore the Monero Research Lab's publications and research."
         },
         "userGuides": {
           "label": "User Guides",
@@ -72,7 +72,7 @@
         },
         "developerGuides": {
           "label": "Developer Guides",
-          "desc": "Find answers to recurring questions and concerns about Monero."
+          "desc": "Guides, documentation, and resources for Monero developers."
         },
         "moneroTools": {
           "label": "Monero Tools",

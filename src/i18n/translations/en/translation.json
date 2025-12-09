@@ -32,13 +32,13 @@
     "resourcesTitle": "Monero Resources",
     "resourcesDescription": "Explore the knowledge base to learn everything about Monero, from basic blockchain terms to advanced privacy mechanisms and technology.",
     "faqTitle": "FAQ",
-    "faqDesc": "We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community.",
+    "faqDesc": "We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the [community](/community/hangouts/).",
     "faqCta": "Find your answer",
     "userGuidesTitle": "User guides",
-    "userGuidesDesc": "We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community.",
+    "userGuidesDesc": "A collection of useful info and guides about common configurations and tips.",
     "userGuidesCta": "See the guides",
     "devGuidesTitle": "Developer Guides",
-    "devGuidesDesc": "We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the community.",
+    "devGuidesDesc": "Everything developers need to build on Monero or simply communicate with the network.",
     "devGuidesCta": "See the guides"
   },
   "faq": {

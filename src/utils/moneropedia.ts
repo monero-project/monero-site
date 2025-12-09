@@ -132,7 +132,7 @@ export function processHTMLString(
     const displayText = match.slice(1).replace(/-/g, " ");
     const escapedSummary = entry.summary.replace(/"/g, "&quot;");
 
-    return `<a class="moneropedia-link" data-tooltip="${escapedSummary}" href="${linkPath}">${displayText}</a>`;
+    return `<a class="moneropedia-link" data-tooltip="${escapedSummary}" href="${linkPath}">${displayText}<sup>&#x1F6C8;</sup></a>`;
   });
 
   return processedHtml;

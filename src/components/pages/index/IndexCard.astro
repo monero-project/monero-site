@@ -2,14 +2,10 @@
 export interface Props {
   title: string;
   description?: string;
-  id?: string;
+  id: string;
 }
 
-const {
-  title,
-  description = "",
-  id = "card-" + Math.random().toString(36).slice(2),
-} = Astro.props;
+const { title, description = "", id } = Astro.props;
 ---
 
 <div class="card" aria-labelledby={id}>

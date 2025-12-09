@@ -1,4 +1,4 @@
-import type { Link, Root, Text } from "mdast";
+import type { Link, Root, Text, Html } from "mdast";
 import type { Plugin } from "unified";
 import type { VFile } from "vfile";
 import type { MoneropediaEntry } from "../../utils/moneropedia";
@@ -27,7 +27,8 @@ function createLinkNode(
   summary: string,
   href: string,
 ): Link {
-  const child: Text = { type: "text", value: displayText };
+  const textChild: Text = { type: "text", value: displayText };
+  const iconChild: Html = { type: "html", value: "<sup>&#x1F6C8;</sup>" };
   return {
     type: "link",
     url: href,
@@ -37,7 +38,7 @@ function createLinkNode(
         "data-tooltip": summary,
       },
     },
-    children: [child],
+    children: [textChild, iconChild],
   };
 }
 

@@ -1,5 +1,6 @@
 ---
 import { getDirection, getLocale } from "@/i18n/utils";
+import safeMarkdown from "@/utils/safeMarkdown";
 import type { ImageMetadata } from "astro";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -36,7 +37,11 @@ const dir = getDirection(getLocale(Astro.url));
 
   <h2 class="title">{title}</h2>
 
-  {description && <p class="desc">{description}</p>}
+  {
+    description && (
+      <p class="desc" set:html={safeMarkdown.parseInline(description)} />
+    )
+  }
 
   <a class="cta" href={ctaHref}>
     {ctaLabel}

@@ -113,8 +113,12 @@ const accordionId = crypto.randomUUID();
     font-weight: var(--font-weight-normal);
   }
 
-  :global(.accordion-content > p) {
-    margin: 0;
+  :global(.accordion-content > p:first-child) {
+    margin-top: 0;
+  }
+
+  :global(.accordion-content > p:last-child) {
+    margin-bottom: 0;
   }
 
   /* Card variant: no borders, spaced items, card background and rounded corners */

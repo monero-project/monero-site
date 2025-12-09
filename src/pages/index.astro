@@ -23,6 +23,7 @@ const t = await createTInstance(locale);
   <Hero t={t} class="index-hero" />
   <div class="main-content">
     <IndexCard
+      id="about-monero"
       title={t("index.aboutTitle")}
       description={t("index.aboutDescription")}
     >
@@ -101,6 +102,7 @@ const t = await createTInstance(locale);
     <IndexCard
       title={t("index.resourcesTitle")}
       description={t("index.resourcesDescription")}
+      id="monero-resources"
     >
       <div id="resource-container">
         <ResourceCard
