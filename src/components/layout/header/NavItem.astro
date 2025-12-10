@@ -122,8 +122,9 @@ const dir = getDirection(getLocale(Astro.url));
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0.4rem 0;
     cursor: pointer;
+    margin-block: -1rem 0.5rem;
+    padding-block: 1.5rem 0;
   }
 
   .link {
@@ -291,7 +292,12 @@ const dir = getDirection(getLocale(Astro.url));
   /* === Mobile / tablet (drawer accordion) === */
   @media (max-width: 1200px) {
     .row {
-      padding: 0.5rem 0;
+      margin-block: unset;
+      padding-block: 1rem;
+    }
+
+    .nav-item:not(:last-child) {
+      border-bottom: 1px solid var(--border-color);
     }
 
     .mobile-open {
