@@ -116,7 +116,7 @@ const { title, description, openGraph } = Astro.props;
   </head>
   <body>
     <Header t={t} />
-    <main id="content">
+    <main>
       <slot />
     </main>
     <Footer t={t} />
@@ -135,24 +135,21 @@ const { title, description, openGraph } = Astro.props;
     flex-direction: column;
   }
 
-  #content {
+  main {
     padding: var(--mobile-padding);
     margin-block: var(--page-top-margin);
     padding-top: var(--page-top-margin);
-    flex: 1;
+    width: 100%;
+    max-width: var(--content-max-width);
+    flex: 1 0 auto;
+    margin-inline: auto;
+    box-sizing: border-box;
   }
 
   @media (min-width: 600px) {
-    #content {
+    main {
       padding: var(--desktop-padding);
       padding-top: var(--page-top-margin);
-    }
-  }
-
-  @media (min-width: 1920px) {
-    #content {
-      width: var(--content-max-width);
-      margin-inline: auto;
     }
   }
 </style>
