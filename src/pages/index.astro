@@ -15,6 +15,9 @@ import userGuidesIcon from "@/assets/icons/mask/user-guides.avif";
 import placeholderIcon from "@/assets/icons/mask/placeholder.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
+import landingImage from "@/assets/images/landing.avif";
+import { Image } from "astro:assets";
+
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 ---
@@ -68,10 +71,8 @@ const t = await createTInstance(locale);
       description={t("index.startDescription")}
       id="start-using-monero"
     >
-      {
-        /*<Image src={landingImage} alt="" style="width: 100%; height: auto;" />*/
-      }
-      <MaskIcon src={placeholderIcon} size="100%" />
+      <Image src={landingImage} alt="" class="landing-image" />
+      {/*<MaskIcon src={placeholderIcon} size="100%" />*/}
       <div>
         <GetStartedCard
           step="01"
@@ -180,6 +181,11 @@ const t = await createTInstance(locale);
     inset-inline-start: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .landing-image {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
   }
 
   .main-content {
