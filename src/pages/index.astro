@@ -12,9 +12,6 @@ import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif";
 import faqIcon from "@/assets/icons/mask/faq.avif";
 import userGuidesIcon from "@/assets/icons/mask/user-guides.avif";
 
-import placeholderIcon from "@/assets/icons/mask/placeholder.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-
 import landingImage from "@/assets/images/landing.avif";
 import { Image } from "astro:assets";
 
@@ -184,7 +181,11 @@ const t = await createTInstance(locale);
   }
 
   .landing-image {
-    -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+    -webkit-mask-image: radial-gradient(
+      ellipse at center,
+      black 60%,
+      transparent 100%
+    );
     mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
   }
 
