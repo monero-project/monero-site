@@ -371,6 +371,72 @@
       }
     }
   },
+  "exchanges": {
+    "pageTitle": "Exchanges | Monero - secure, private, untraceable cryptocurrency.",
+    "heroTitle": "Exchanges",
+    "heroSubtitle": "Cryptocurrency exchanges that let you buy or trade Monero.",
+    "sidebarTitle": "New to Monero?",
+    "filtersDescription": "Start by choosing the situation that matches you. We'll highlight the options on this page that are likely the best fit.",
+    "sections": {
+      "decentralized": {
+        "title": "Decentralized Exchanges",
+        "description": "These options let you trade Monero directly from your own wallet, without a traditional exchange account. They're great if you want more privacy and control."
+      },
+      "aggregators": {
+        "title": "Swap Aggregators",
+        "description": "Easiest way to trade crypto for Monero without creating an account. These services compare prices from multiple swap providers and route you to the best option.",
+        "disclaimer": "The aggregator itself doesn't hold your funds, but the service you end up using might still ask you to verify your identity.",
+        "resourceBtnTitle": "KYCNot.me - community-curated listings",
+        "resourceIntro": "For an up-to-date list with details and reviews, you can visit the community resource below:",
+        "tip": "**Tip:** Some Monero wallets have a **built-in exchange** for convenience. Check out the <a href=\"{{communityDownloadsUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\">community downloads</a> for options."
+      },
+      "centralized": {
+        "title": "Centralized Exchanges",
+        "description": "These are the classic exchanges where you create an account, complete ID checks, and can deposit from your crypto wallet, bank or card."
+      }
+    },
+    "descriptions": {
+      "basicswapdex": "Trade crypto directly with other people, no sign-ups, no middleman (atomic swaps).",
+      "bisq": "Peer-to-peer exchange where you trade directly with other people. Supports BTC → XMR swaps.",
+      "eigenwallet": "A highly liquid platform for swapping BTC into XMR using atomic swaps.",
+      "retoswap": "Decentralized peer-to-peer exchange built on Monero. Supports fiat, crypto ↔ XMR trades.",
+      "cyphergoat": "Service that finds routes for secure crypto-to-crypto swaps across different providers.",
+      "orangefren": "Beginner-friendly site that lets you compare and make crypto swaps, usually without creating an account.",
+      "trocador": "Aggregator that focuses on privacy-friendly swap routes.",
+      "bitfinex": "Trading platform with a wide range of cryptocurrencies and derivatives.",
+      "kraken": "Well-known exchange with strong fiat support and advanced trading features.",
+      "kucoin": "Popular exchange known for its large selection of altcoins, including Monero."
+    },
+    "highlightOptions": {
+      "easiest": {
+        "title": "I want the simplest way to get Monero",
+        "subtitle": "Beginner-friendly options"
+      },
+      "fiat": {
+        "title": "I want to pay with cash or bank transfer",
+        "subtitle": "Exchanges that support fiat currency (USD, EUR, etc.)"
+      },
+      "privacy": {
+        "title": "I care most about privacy",
+        "subtitle": "Decentralized options that don't require identity verification"
+      }
+    },
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "This list is for informational purposes only. The Monero Project does not endorse, recommend, or guarantee any service listed here. Always double-check URLs, start with a small test amount if you're unsure, and use every service at your own risk.",
+    "clearSelection": "Clear selection",
+    "table": {
+      "name": "Name",
+      "kyc": "KYC",
+      "fiat": "Fiat",
+      "crypto": "Crypto",
+      "visit": "Visit"
+    },
+    "kyc": {
+      "required": "Required",
+      "optional": "Optional",
+      "none": "None"
+    }
+  },
   "blog": {
     "index": {
       "pageTitle": "Blog | Monero - secure, private, untraceable cryptocurrency.",

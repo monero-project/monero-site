@@ -25,6 +25,7 @@ interface Props {
   linkText?: string;
   translateTag?: (key: string) => string;
   t: (key: string) => string;
+  id?: string;
 }
 
 const {
@@ -36,6 +37,7 @@ const {
   linkText,
   translateTag,
   t,
+  id,
 } = Astro.props;
 
 const norm = (s: string) => (s || "").toLowerCase().trim();
@@ -98,9 +100,13 @@ const getTagLabel = (tag: string): string => {
 const showTags = general.length > 0;
 const showPlatforms = desktop.length > 0 || mobile.length > 0;
 const logoDimensions = await getPublicImageDimensions(logo);
+const hasBuiltinExchange = general.includes("i18n:builtInExchange");
 ---
 
-<div class="community-card">
+<div
+  class={`community-card ${hasBuiltinExchange ? "has-built-in-exchange" : ""}`}
+  {...id ? { id } : {}}
+>
   <header class="card-header" aria-label="Project">
     <div class="card-logo" aria-hidden="true">
       <Image
@@ -122,7 +128,9 @@ const logoDimensions = await getPublicImageDimensions(logo);
         <div class="card-tags" aria-label="Tags">
           <ul class="list">
             {general.map((tag) => (
-              <li class="pill">
+              <li
+                class={`pill ${tag === "i18n:builtInExchange" ? "builtin-exchange-pill" : ""}`}
+              >
                 <span class="tag-text">{getTagLabel(tag)}</span>
               </li>
             ))}
@@ -238,7 +246,7 @@ const logoDimensions = await getPublicImageDimensions(logo);
     gap: 0.35rem;
     padding: 0.25rem 0.5rem;
     border-radius: 999px;
-    background: color-mix(in oklab, var(--card-color), black 10%);
+    background: var(--card-hover-color);
     font-size: 0.85rem;
     color: var(--paragraph-main);
     line-height: 1;
@@ -278,5 +286,10 @@ const logoDimensions = await getPublicImageDimensions(logo);
   }
   .visit-link:hover {
     text-decoration: underline;
+  }
+
+  body:has(#built-in-exchange:target) .builtin-exchange-pill {
+    background: var(--monero-orange);
+    color: white;
   }
 </style>

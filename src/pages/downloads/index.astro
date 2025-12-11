@@ -16,6 +16,9 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import cliImage from "@/assets/images/cli.avif";
 import guiImage from "@/assets/images/gui.avif";
 
+import appWindowIcon from "@/assets/icons/mask/app-window.avif";
+import terminalIcon from "@/assets/icons/mask/terminal.avif";
+
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
@@ -30,11 +33,13 @@ const tabs = [
 const sections = [
   {
     id: "gui",
+    icon: appWindowIcon,
     title: t("downloads.core.gui.title"),
     subtitle: t("downloads.core.gui.subtitle"),
   },
   {
     id: "cli",
+    icon: terminalIcon,
     title: t("downloads.core.cli.title"),
     subtitle: t("downloads.core.cli.subtitle"),
   },
@@ -58,6 +63,9 @@ const sections = [
     {
       sections.map((section) => (
         <a class="toc-link" href={`#${section.id}`}>
+          <span class="toc-icon">
+            <MaskIcon src={section.icon} size="1.5em" aria-hidden="true" />
+          </span>
           <div class="content">
             <span class="toc-link-title">{section.title}</span>
             <span class="toc-link-subtitle">{section.subtitle}</span>
@@ -127,6 +135,10 @@ const sections = [
     border-bottom: 1px solid var(--border-color);
   }
 
+  .toc-icon {
+    color: var(--monero-orange);
+  }
+
   .toc-link {
     position: relative;
     display: flex;
@@ -148,7 +160,7 @@ const sections = [
 
   .toc-link:hover,
   .toc-link:focus-visible {
-    background: color-mix(in srgb, var(--card-color), white 5%);
+    background: var(--card-hover-color);
   }
 
   .toc-link-title {

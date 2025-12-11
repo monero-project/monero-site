@@ -1,15 +1,603 @@
 ---
+import TitleCard from "@/components/ui/TitleCard.astro";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
-import TitleCard from "@/components/ui/TitleCard.astro";
+import bankIcon from "@/assets/icons/mask/bank.avif";
+import closeIcon from "@/assets/icons/mask/close.avif";
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
+import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
+import rabbitIcon from "@/assets/icons/mask/rabbit.avif";
+import searchIcon from "@/assets/icons/mask/search.avif";
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+import ExchangeTable from "@/components/pages/get-started/exchanges/ExchangeTable.astro";
+import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
+
+import exchanges from "@/data/exchanges.json";
+
+import safeMarkdown from "@/utils/safeMarkdown";
+
+const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
+const t = await createTInstance(locale);
+
+const highlightOptions = [
+  {
+    key: "easiest",
+    highlight: "aggregator",
+    icon: rabbitIcon,
+    title: t("exchanges.highlightOptions.easiest.title"),
+    subtitle: t("exchanges.highlightOptions.easiest.subtitle"),
+  },
+  {
+    key: "fiat",
+    highlight: "fiat",
+    icon: bankIcon,
+    title: t("exchanges.highlightOptions.fiat.title"),
+    subtitle: t("exchanges.highlightOptions.fiat.subtitle"),
+  },
+  {
+    key: "privacy",
+    highlight: "privacy",
+    icon: hatGlassesIcon,
+    title: t("exchanges.highlightOptions.privacy.title"),
+    subtitle: t("exchanges.highlightOptions.privacy.subtitle"),
+  },
+];
 ---
 
 <Layout
-  title="Exchanges"
-  description="Cryptocurrency exchanges that let you buy or trade Monero."
+  title={t("exchanges.pageTitle")}
+  description={t("exchanges.heroSubtitle")}
 >
   <TitleCard
-    title="Exchanges"
-    subtitle="Cryptocurrency exchanges that let you buy or trade Monero."
+    title={t("exchanges.heroTitle")}
+    subtitle={t("exchanges.heroSubtitle")}
   />
+
+  <!-- hidden filter radio buttons -->
+  <input
+    id="filter-none"
+    class="filter-toggle"
+    type="radio"
+    name="exchange-filter"
+    checked
+  />
+  <input
+    id="filter-bitcoin"
+    class="filter-toggle"
+    type="radio"
+    name="exchange-filter"
+  />
+  <input
+    id="filter-fiat"
+    class="filter-toggle"
+    type="radio"
+    name="exchange-filter"
+  />
+  <input
+    id="filter-privacy"
+    class="filter-toggle"
+    type="radio"
+    name="exchange-filter"
+  />
+  <input
+    id="filter-easiest"
+    class="filter-toggle"
+    type="radio"
+    name="exchange-filter"
+  />
+
+  <!-- mobile bottom-sheet toggle -->
+  <input
+    id="mobile-filter-toggle"
+    class="mobile-filter-toggle"
+    type="checkbox"
+  />
+
+  <div class="exchanges-wrapper">
+    <div class="exchanges-page-layout">
+      <!-- DESKTOP SIDEBAR -->
+      <aside class="sidebar">
+        <div class="filters-section">
+          <h2 class="filters-title">{t("exchanges.sidebarTitle")}</h2>
+          <p class="filters-description">
+            {t("exchanges.filtersDescription")}
+          </p>
+          <div class="highlight-options">
+            {
+              highlightOptions.map((opt) => {
+                const filterId = `filter-${opt.key}`;
+                return (
+                  <label
+                    for={filterId}
+                    class="highlight-option"
+                    data-highlight={opt.highlight}
+                  >
+                    <span class="highlight-option-icon">
+                      <MaskIcon
+                        src={opt.icon}
+                        size="1.5em"
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <div class="content">
+                      <span class="highlight-option-title">{opt.title}</span>
+                      <span class="highlight-option-subtitle">
+                        {opt.subtitle}
+                      </span>
+                    </div>
+                    <div class="highlight-option-arrow">
+                      <MaskIcon
+                        src={hashtagIcon}
+                        size="0.75em"
+                        aria-hidden="true"
+                      />
+                    </div>
+                  </label>
+                );
+              })
+            }
+            <div class="clear-highlights">
+              <label
+                for="filter-none"
+                class="clear-highlights-link clear-highlights-label"
+              >
+                {t("exchanges.clearSelection")}
+              </label>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <ExchangeTable
+          title={t("exchanges.sections.decentralized.title")}
+          description={t("exchanges.sections.decentralized.description")}
+          exchanges={exchanges.decentralizedExchanges}
+          hasKyc={false}
+          t={t}
+        />
+
+        <ExchangeTable
+          title={t("exchanges.sections.aggregators.title")}
+          description={t("exchanges.sections.aggregators.description")}
+          exchanges={exchanges.swapAggregators}
+          hasKyc={false}
+          disclaimerText={t("exchanges.sections.aggregators.disclaimer")}
+          t={t}
+        >
+          <p style="color: var(--paragraph-subtitle);">
+            {t("exchanges.sections.aggregators.resourceIntro")}
+          </p>
+          <a
+            href="https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resource-btn"
+            data-highlight="aggregator crypto"
+          >
+            <img
+              src="/media/kycnotme.jpg"
+              alt="KYCNot.me logo"
+              class="resource-btn-logo"
+            />
+            <span class="resource-btn-title"
+              >{t("exchanges.sections.aggregators.resourceBtnTitle")}</span
+            >
+            <MaskIcon src={externalLinkIcon} size="1em" rtl={dir == "rtl"} />
+          </a>
+          <p
+            style="color: var(--paragraph-subtitle);"
+            set:html={safeMarkdown.parseInline(
+              t("exchanges.sections.aggregators.tip", {
+                communityDownloadsUrl: localizeHref(
+                  locale,
+                  "/downloads/community/#built-in-exchange",
+                ).replace(/\/$/, ""),
+              }),
+            )}
+          />
+        </ExchangeTable>
+
+        <ExchangeTable
+          title={t("exchanges.sections.centralized.title")}
+          description={t("exchanges.sections.centralized.description")}
+          exchanges={exchanges.centralizedExchanges}
+          hasKyc={true}
+          t={t}
+        />
+      </div>
+    </div>
+
+    <DisclaimerBar icon={shieldIcon} title={t("exchanges.disclaimerTitle")}>
+      {t("exchanges.disclaimer")}
+    </DisclaimerBar>
+
+    <!-- MOBILE: sticky container with bottom bar -->
+    <div class="mobile-filter-container">
+      <label for="mobile-filter-toggle" class="mobile-filter-bar">
+        <div class="mobile-filter-bar-inner">
+          <MaskIcon src={searchIcon} size="1.25em" aria-hidden="true" />
+          <span>{t("exchanges.sidebarTitle")}</span>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <!-- MOBILE BOTTOM SHEET OVERLAY -->
+  <div class="mobile-filter-sheet">
+    <div class="mobile-filter-sheet-header">
+      <h2 class="intro-title">{t("exchanges.sidebarTitle")}</h2>
+      <label
+        for="mobile-filter-toggle"
+        class="mobile-filter-close"
+        aria-label="Close filters"
+      >
+        <MaskIcon src={closeIcon} size="1em" aria-hidden="true" />
+      </label>
+    </div>
+    <p class="intro-description">
+      {t("exchanges.filtersDescription")}
+    </p>
+    <div class="highlight-options">
+      {
+        highlightOptions.map((opt) => {
+          const filterId = `filter-${opt.key}`;
+          return (
+            <label
+              for={filterId}
+              class="highlight-option"
+              data-highlight={opt.highlight}
+            >
+              <span class="highlight-option-icon">
+                <MaskIcon src={opt.icon} size="1.5em" aria-hidden="true" />
+              </span>
+              <div class="content">
+                <span class="highlight-option-title">{opt.title}</span>
+                <span class="highlight-option-subtitle">{opt.subtitle}</span>
+              </div>
+              <div class="highlight-option-arrow">
+                <MaskIcon src={hashtagIcon} size="0.75em" aria-hidden="true" />
+              </div>
+            </label>
+          );
+        })
+      }
+      <div class="clear-highlights">
+        <label
+          for="filter-none"
+          class="clear-highlights-link clear-highlights-label"
+        >
+          {t("exchanges.clearSelection")}
+        </label>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .exchanges-wrapper {
+    position: relative;
+    margin-top: 6rem;
+  }
+
+  .exchanges-page-layout {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  .sidebar {
+    flex: 0 0 25rem;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .filters-section {
+    padding: 2rem;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+  }
+
+  .filters-title {
+    margin-top: 0;
+    color: var(--heading-color);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1rem;
+  }
+
+  .filters-description {
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-md);
+    margin-bottom: 2rem;
+  }
+
+  .highlight-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .highlight-option {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: var(--card-hover-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .highlight-option:hover {
+    background: var(--card-color);
+  }
+
+  .highlight-option-icon {
+    color: var(--monero-orange);
+  }
+
+  .highlight-option-arrow {
+    display: flex;
+    align-items: flex-start;
+    margin-inline-start: auto;
+    color: var(--paragraph-subtitle);
+  }
+
+  .highlight-option .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .highlight-option-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    display: block;
+  }
+
+  .highlight-option-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-caption);
+    margin-top: 0.15rem;
+  }
+
+  .clear-highlights {
+    text-align: right;
+  }
+
+  .clear-highlights-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+  }
+
+  .clear-highlights-link:hover {
+    text-decoration: underline;
+  }
+
+  .resource-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 1rem;
+  }
+
+  .resource-btn:hover {
+    background: var(--card-hover-color);
+  }
+
+  .resource-btn-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.5rem;
+  }
+
+  .resourse-btn-title {
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  /* hidden control inputs, fixed so focus doesn't scroll */
+  .filter-toggle,
+  .mobile-filter-toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* FILTER HIGHLIGHTING */
+  #filter-bitcoin:checked
+    ~ .exchanges-wrapper
+    :global(tr[data-highlight~="crypto"]),
+  #filter-fiat:checked ~ .exchanges-wrapper :global(tr[data-highlight~="fiat"]),
+  #filter-privacy:checked
+    ~ .exchanges-wrapper
+    :global(tr[data-highlight~="privacy"]),
+  #filter-easiest:checked
+    ~ .exchanges-wrapper
+    :global(tr[data-highlight~="aggregator"]) {
+    background: rgba(255, 152, 0, 0.1);
+  }
+
+  #filter-bitcoin:checked
+    ~ .exchanges-wrapper
+    .highlight-option[data-highlight~="crypto"],
+  #filter-bitcoin:checked
+    ~ .mobile-filter-sheet
+    .highlight-option[data-highlight~="crypto"],
+  #filter-fiat:checked
+    ~ .exchanges-wrapper
+    .highlight-option[data-highlight~="fiat"],
+  #filter-fiat:checked
+    ~ .mobile-filter-sheet
+    .highlight-option[data-highlight~="fiat"],
+  #filter-privacy:checked
+    ~ .exchanges-wrapper
+    .highlight-option[data-highlight~="privacy"],
+  #filter-privacy:checked
+    ~ .mobile-filter-sheet
+    .highlight-option[data-highlight~="privacy"],
+  #filter-easiest:checked
+    ~ .exchanges-wrapper
+    .highlight-option[data-highlight~="aggregator"],
+  #filter-easiest:checked
+    ~ .mobile-filter-sheet
+    .highlight-option[data-highlight~="aggregator"] {
+    background: var(--card-color);
+    border-color: var(--monero-orange);
+  }
+
+  #filter-bitcoin:checked
+    ~ .exchanges-wrapper
+    .resource-btn[data-highlight~="crypto"],
+  #filter-easiest:checked
+    ~ .exchanges-wrapper
+    .resource-btn[data-highlight~="aggregator"] {
+    outline: 2px solid var(--monero-orange);
+  }
+
+  /* MOBILE BOTTOM BAR & SHEET */
+  .mobile-filter-container,
+  .mobile-filter-sheet {
+    display: none;
+  }
+
+  .mobile-filter-close {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    .exchanges-page-layout {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      display: none;
+    }
+
+    /* sticky container to keep bar above footer */
+    .mobile-filter-container {
+      display: block;
+      position: sticky;
+      bottom: 0;
+      z-index: 2;
+      margin-top: 1.5rem;
+      margin-inline: -2rem;
+      background-color: var(--bg-color);
+    }
+
+    .mobile-filter-bar {
+      display: block;
+      padding: 1rem 1rem;
+      background-color: var(--bg-color);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .mobile-filter-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
+      background: var(--card-color);
+      border: 1px solid var(--border-color);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-semibold);
+      color: var(--heading-color);
+    }
+
+    .mobile-filter-bar-inner:hover {
+      background: var(--card-hover-color);
+    }
+
+    /* sheet overlay */
+    .mobile-filter-sheet {
+      display: block;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1.25rem 1.5rem 1.75rem;
+      background: var(--bg-color);
+      border-radius: 1.25rem 1.25rem 0 0;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.35);
+      max-height: 75vh;
+      overflow-y: auto;
+      z-index: 3;
+      transform: translateY(100%);
+      transition: transform 0.25s ease-out;
+      margin: 0;
+    }
+
+    .mobile-filter-sheet-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .mobile-filter-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      margin-left: 0.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background: var(--card-color);
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .mobile-filter-sheet .intro-title {
+      font-size: var(--font-size-xl);
+      margin-bottom: 0.25rem;
+    }
+
+    .mobile-filter-sheet .intro-description {
+      font-size: var(--font-size-base);
+      margin-bottom: 1.25rem;
+    }
+
+    .mobile-filter-sheet .highlight-option {
+      padding: 0.65rem;
+    }
+
+    /* open sheet */
+    #mobile-filter-toggle:checked ~ .mobile-filter-sheet {
+      transform: translateY(0);
+    }
+  }
+</style>

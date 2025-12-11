@@ -1,0 +1,114 @@
+{
+  "decentralizedExchanges": [
+    {
+      "type": "decentralized",
+      "id": "basicswapdex",
+      "name": "BasicSwapDEX",
+      "img": "/media/basicswapdex.jpg",
+      "alt": "BasicSwapDEX logo",
+      "fiat": false,
+      "crypto": true,
+      "url": "https://basicswapdex.com"
+    },
+    {
+      "type": "decentralized",
+      "id": "bisq",
+      "name": "Bisq",
+      "img": "/media/bisq.png",
+      "alt": "Bisq logo",
+      "fiat": false,
+      "crypto": true,
+      "url": "https://bisq.network"
+    },
+    {
+      "type": "decentralized",
+      "id": "eigenwallet",
+      "name": "Eigenwallet",
+      "img": "/media/eigenwallet.avif",
+      "alt": "Eigenwallet logo",
+      "fiat": false,
+      "crypto": true,
+      "url": "https://eigenwallet.com"
+    },
+    {
+      "type": "decentralized",
+      "id": "retoswap",
+      "name": "RetoSwap",
+      "img": "/media/retoswap.jpg",
+      "alt": "RetoSwap logo",
+      "fiat": true,
+      "crypto": true,
+      "url": "https://retoswap.com"
+    }
+  ],
+  "swapAggregators": [
+    {
+      "type": "aggregator",
+      "id": "cyphergoat",
+      "name": "CypherGoat",
+      "img": "/media/cyphergoat.png",
+      "alt": "CypherGoat logo",
+      "fiat": false,
+      "crypto": true,
+      "url": "https://cyphergoat.com"
+    },
+    {
+      "type": "aggregator",
+      "id": "orangefren",
+      "name": "OrangeFren",
+      "img": "/media/orangefren.jpg",
+      "alt": "OrangeFren logo",
+      "fiat": true,
+      "crypto": true,
+      "url": "https://orangefren.com"
+    },
+    {
+      "type": "aggregator",
+      "id": "trocador",
+      "name": "Trocador",
+      "img": "/media/trocador-logo.webp",
+      "alt": "Trocador logo",
+      "fiat": false,
+      "crypto": true,
+      "url": "https://trocador.app"
+    }
+  ],
+  "centralizedExchanges": [
+    {
+      "type": "centralized",
+      "id": "bitfinex",
+      "name": "Bitfinex",
+      "img": "/media/bitfinex.png",
+      "alt": "Bitfinex logo",
+      "kycClass": "kyc-required",
+      "kycReq": "required",
+      "fiat": true,
+      "crypto": true,
+      "url": "https://bitfinex.com"
+    },
+    {
+      "type": "centralized",
+      "id": "kraken",
+      "name": "Kraken",
+      "img": "/media/kraken.png",
+      "alt": "Kraken logo",
+      "kycClass": "kyc-required",
+      "kycReq": "required",
+      "fiat": true,
+      "crypto": true,
+      "url": "https://kraken.com"
+    },
+    {
+      "type": "centralized",
+      "id": "kucoin",
+      "name": "KuCoin",
+      "img": "/media/kucoin.png",
+      "alt": "KuCoin logo",
+      "kycClass": "kyc-required",
+      "kycReq": "required",
+      "fiat": true,
+      "crypto": true,
+      "url": "https://kucoin.com"
+    }
+  ]
+}

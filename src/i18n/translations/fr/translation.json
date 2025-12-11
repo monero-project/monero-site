@@ -366,6 +366,73 @@
       }
     }
   },
+  "exchanges": {
+    "pageTitle": "Échanges | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+    "heroTitle": "Échanges",
+    "heroSubtitle": "Échanges de cryptomonnaies qui vous permettent d'acheter ou d'échanger Monero.",
+    "sidebarTitle": "Nouveau sur Monero ?",
+    "filtersDescription": "Commencez par choisir la situation qui vous correspond. Nous mettrons en évidence les options sur cette page qui sont susceptibles de mieux vous convenir.",
+    "mobileSheetTitle": "Choose your situation",
+    "sections": {
+      "decentralized": {
+        "title": "Échanges Décentralisés",
+        "description": "Ces options vous permettent d'échanger Monero directement depuis votre propre portefeuille, sans compte d'échange traditionnel. Elles sont excellentes si vous voulez plus de confidentialité et de contrôle."
+      },
+      "aggregators": {
+        "title": "Agrégateurs d'Échange",
+        "description": "Le moyen le plus simple d'échanger de la crypto contre Monero sans créer de compte. Ces services comparent les prix de plusieurs fournisseurs d'échange et vous dirigent vers la meilleure option.",
+        "disclaimer": "L'agrégateur lui-même ne détient pas vos fonds, mais le service que vous finirez par utiliser pourrait encore vous demander de vérifier votre identité.",
+        "resourceBtnTitle": "KYCNot.me - listes curatées par la communauté",
+        "resourceIntro": "Pour une liste à jour avec des détails et des avis, vous pouvez visiter la ressource communautaire ci-dessous :",
+        "tip": "**Astuce :** Certains portefeuilles Monero ont un **échange intégré** pour plus de commodité. Consultez les <a href=\"{{communityDownloadsUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\">téléchargements communautaires</a> pour les options."
+      },
+      "centralized": {
+        "title": "Échanges Centralisés",
+        "description": "Ce sont les échanges classiques où vous créez un compte, complétez les vérifications d'identité, et pouvez déposer depuis votre portefeuille crypto, votre banque ou votre carte."
+      }
+    },
+    "descriptions": {
+      "basicswapdex": "Échangez de la crypto directement avec d'autres personnes, sans inscription, sans intermédiaire (échanges atomiques).",
+      "bisq": "Échange pair-à-pair où vous échangez directement avec d'autres personnes. Prend en charge les échanges BTC → XMR.",
+      "eigenwallet": "Une plateforme très liquide pour échanger BTC contre XMR en utilisant des échanges atomiques.",
+      "retoswap": "Échange pair-à-pair décentralisé construit sur Monero. Prend en charge les échanges fiat, crypto ↔ XMR.",
+      "cyphergoat": "Service qui trouve des routes pour des échanges crypto-à-crypto sécurisés entre différents fournisseurs.",
+      "orangefren": "Site convivial pour les débutants qui vous permet de comparer et d'effectuer des échanges crypto, généralement sans créer de compte.",
+      "trocador": "Agrégateur qui se concentre sur les routes d'échange respectueuses de la confidentialité.",
+      "bitfinex": "Plateforme de trading avec une large gamme de cryptomonnaies et de dérivés.",
+      "kraken": "Échange bien connu avec un fort soutien fiat et des fonctionnalités de trading avancées.",
+      "kucoin": "Échange populaire connu pour sa grande sélection d'altcoins, y compris Monero."
+    },
+    "highlightOptions": {
+      "easiest": {
+        "title": "Je veux le moyen le plus simple d'obtenir Monero",
+        "subtitle": "Options conviviales pour les débutants"
+      },
+      "fiat": {
+        "title": "Je veux payer avec de l'argent liquide ou un virement bancaire",
+        "subtitle": "Échanges qui prennent en charge la monnaie fiduciaire (USD, EUR, etc.)"
+      },
+      "privacy": {
+        "title": "Je me soucie le plus de la confidentialité",
+        "subtitle": "Options décentralisées qui ne nécessitent pas de vérification d'identité"
+      }
+    },
+    "disclaimerTitle": "Avis de non-responsabilité",
+    "disclaimer": "Cette liste est fournie à titre informatif uniquement. Le projet Monero n'endosse, ne recommande ni ne garantit aucun service répertorié ici. Vérifiez toujours les URL, commencez par un petit montant de test si vous n'êtes pas sûr, et utilisez chaque service à vos propres risques.",
+    "clearSelection": "Effacer la sélection",
+    "table": {
+      "name": "Nom",
+      "kyc": "KYC",
+      "fiat": "Fiat",
+      "crypto": "Crypto",
+      "visit": "Visiter"
+    },
+    "kyc": {
+      "required": "Requis",
+      "optional": "Optionnel",
+      "none": "Aucun"
+    }
+  },
   "blog": {
     "index": {
       "pageTitle": "Blog | Monero - cryptomonnaie sécurisée, privée, non traçable.",

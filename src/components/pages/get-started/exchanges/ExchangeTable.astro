@@ -1,0 +1,344 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  exchanges: Array<{
+    type: string;
+    id: string;
+    name: string;
+    img: string;
+    alt: string;
+    fiat: boolean;
+    crypto: boolean;
+    url: string;
+    kycClass?: string;
+    kycReq?: string;
+  }>;
+  hasKyc: boolean;
+  disclaimerText?: string;
+  t: (key: string) => string;
+}
+
+const { title, description, exchanges, hasKyc, disclaimerText, t } =
+  Astro.props;
+
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+---
+
+<section class="table-section">
+  <h2 class="title">{title}</h2>
+  <p class="subtitle">{description}</p>
+  {
+    disclaimerText && (
+      <div class="disclaimer-note">
+        <MaskIcon src={shieldIcon} size="1em" />
+        <span>{disclaimerText}</span>
+      </div>
+    )
+  }
+  {
+    exchanges.length > 0 && (
+      <table class="exchange-table">
+        <thead>
+          <tr>
+            <th>{t("exchanges.table.name")}</th>
+            {hasKyc && <th>{t("exchanges.table.kyc")}</th>}
+            <th>{t("exchanges.table.fiat")}</th>
+            <th>{t("exchanges.table.crypto")}</th>
+            <th>{t("exchanges.table.visit")}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {exchanges.map((ex) => {
+            const highlightTags =
+              [
+                ex.fiat && "fiat",
+                ex.crypto && "crypto",
+                ex.type === "decentralized" && "privacy",
+                ex.type === "aggregator" && "aggregator",
+              ]
+                .filter(Boolean)
+                .join(" ") || undefined;
+            return (
+              <tr class="exchange-row" data-highlight={highlightTags}>
+                <td class="with-icon">
+                  <img src={ex.img} alt={ex.alt} class="exchange-icon" />
+                  <span class="exchange-name">{ex.name}</span>
+                  <span class="exchange-description">
+                    {t(`exchanges.descriptions.${ex.id}`)}
+                  </span>
+                </td>
+                {hasKyc && (
+                  <td class={ex.kycClass} data-label={t("exchanges.table.kyc")}>
+                    {ex.kycReq ? t(`exchanges.kyc.${ex.kycReq}`) : ""}
+                  </td>
+                )}
+                <td
+                  class={ex.fiat ? "checkmark" : "cross"}
+                  data-label={t("exchanges.table.fiat")}
+                >
+                  {ex.fiat ? "✓" : "✗"}
+                </td>
+                <td
+                  class={ex.crypto ? "checkmark" : "cross"}
+                  data-label={t("exchanges.table.crypto")}
+                >
+                  {ex.crypto ? "✓" : "✗"}
+                </td>
+                <td class="visit-cell" data-label={t("exchanges.table.visit")}>
+                  <a
+                    href={ex.url}
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                  >
+                    {t("exchanges.table.visit")}
+                  </a>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    )
+  }
+  <slot />
+</section>
+
+<style>
+  .table-section {
+    margin-bottom: 2rem;
+  }
+
+  .table-section .title {
+    color: var(--heading-color);
+    font-size: var(--font-size-xl);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .subtitle {
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-sm);
+    margin-bottom: 1rem;
+  }
+
+  .disclaimer-note {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: rgba(255, 152, 0, 0.05);
+    border: 1px solid rgba(255, 152, 0, 0.2);
+    border-radius: 0.25rem;
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+  }
+
+  .disclaimer-note span {
+    flex: 1;
+  }
+
+  .exchange-row {
+    transition: background 0.15s ease;
+  }
+
+  .with-icon {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon name"
+      "icon desc";
+    column-gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .exchange-icon {
+    grid-area: icon;
+    width: 3em;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+
+  .exchange-name {
+    grid-area: name;
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .exchange-description {
+    grid-area: desc;
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-caption);
+    margin-top: 0.25rem;
+  }
+
+  .exchange-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+    text-align: start;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  th {
+    background: var(--card-hover-color);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  td {
+    color: var(--text-primary);
+  }
+
+  .kyc-required {
+    color: #f44336;
+  }
+
+  .kyc-optional {
+    color: #ff9800;
+  }
+
+  .kyc-none,
+  .checkmark {
+    color: #4caf50;
+  }
+
+  .cross {
+    color: var(--text-secondary);
+  }
+
+  .visit-cell a {
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+  }
+
+  @media (min-width: 641px) {
+    .exchange-table {
+      table-layout: auto;
+    }
+
+    .exchange-table :is(th, td):first-child {
+      width: auto;
+    }
+
+    .exchange-table :is(th, td):not(:first-child) {
+      width: 1%;
+      white-space: nowrap;
+      text-align: center;
+      padding-inline: 1.5rem;
+    }
+
+    .visit-cell {
+      text-align: end;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .exchange-table {
+      border-radius: 0;
+      background: transparent;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    .exchange-table thead {
+      display: none;
+    }
+
+    .exchange-table tbody {
+      display: block;
+    }
+
+    .exchange-row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.75rem 0.9rem;
+      margin-bottom: 0.75rem;
+      border-radius: 0.75rem;
+      border: none;
+      background: var(--card-color);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .exchange-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .exchange-row td {
+      border-bottom: none;
+      padding: 0;
+    }
+
+    .exchange-row .with-icon {
+      order: 0;
+      flex: 1 1 100%;
+      grid-template-areas:
+        "icon name"
+        "desc desc";
+      margin-bottom: 0.5rem;
+      column-gap: 0.75rem;
+      align-items: center;
+    }
+
+    .exchange-row .exchange-icon {
+      width: 2.5rem;
+    }
+
+    .exchange-row
+      :is(.kyc-required, .kyc-optional, .kyc-none, .checkmark, .cross) {
+      order: 1;
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.5rem;
+      margin: 0 0.4rem 0.4rem 0;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      background: var(--card-hover-color);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    /* Pill labels */
+    .exchange-row
+      :is(.kyc-required, .kyc-optional, .kyc-none, .checkmark, .cross)::before {
+      content: attr(data-label);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: var(--font-weight-medium);
+      font-size: 0.8em;
+      margin-right: 0.35rem;
+      color: var(--paragraph-subtitle);
+    }
+
+    .exchange-row .visit-cell {
+      order: 2;
+      flex: 1 1 100%;
+      margin-top: 0.25rem;
+    }
+
+    .exchange-row .visit-cell::before {
+      content: "";
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .exchange-row .visit-cell a {
+      display: inline-flex;
+      align-items: center;
+      font-size: var(--font-size-sm);
+    }
+  }
+</style>

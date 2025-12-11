@@ -12,6 +12,26 @@ import communityWallets from "@/data/downloads/community.json";
 
 import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
 
+import cloudSyncIcon from "@/assets/icons/mask/cloud-sync.avif";
+import serverIcon from "@/assets/icons/mask/server.avif";
+import snowflakeIcon from "@/assets/icons/mask/snowflake.avif";
+import walletIcon from "@/assets/icons/mask/wallet.avif";
+
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
+
+interface Wallet {
+  id: string;
+  name: string;
+  logo: string;
+  link: string;
+  tags: {
+    general?: string[];
+    mobile?: string[];
+    desktop?: string[];
+  };
+}
+
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 const tabs = [
@@ -25,25 +45,41 @@ const tabs = [
 const sections = [
   {
     id: "local-sync",
+    icon: walletIcon,
     title: t("downloads.community.sections.localSync.title"),
     subtitle: t("downloads.community.sections.localSync.subtitle"),
   },
   {
     id: "remote-sync",
+    icon: cloudSyncIcon,
     title: t("downloads.community.sections.remoteSync.title"),
     subtitle: t("downloads.community.sections.remoteSync.subtitle"),
   },
   {
     id: "cold-wallets",
+    icon: snowflakeIcon,
     title: t("downloads.community.sections.cold.title"),
     subtitle: t("downloads.community.sections.cold.subtitle"),
   },
   {
     id: "nodes",
+    icon: serverIcon,
     title: t("downloads.community.sections.nodes.title"),
     subtitle: t("downloads.community.sections.nodes.subtitle"),
   },
 ];
+let builtinIdAssigned = false;
+
+const setBuiltinId = (wallet: Wallet) => {
+  if (
+    !builtinIdAssigned &&
+    wallet.tags.general?.includes("i18n:builtInExchange")
+  ) {
+    builtinIdAssigned = true;
+    return "built-in-exchange";
+  }
+  return undefined;
+};
 ---
 
 <Layout
@@ -67,6 +103,9 @@ const sections = [
     {
       sections.map((section) => (
         <a class="toc-link" href={`#${section.id}`}>
+          <span class="toc-icon">
+            <MaskIcon src={section.icon} size="1.5em" aria-hidden="true" />
+          </span>
           <div class="content">
             <span class="toc-link-title">{section.title}</span>
             <span class="toc-link-subtitle">{section.subtitle}</span>
@@ -101,6 +140,7 @@ const sections = [
           linkText={t("downloads.community.learnMore")}
           translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
+          id={setBuiltinId(wallet)}
         />
       ))
     }
@@ -120,6 +160,7 @@ const sections = [
           linkText={t("downloads.community.learnMore")}
           translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
+          id={setBuiltinId(wallet)}
         />
       ))
     }
@@ -144,6 +185,7 @@ const sections = [
           linkText={t("downloads.community.learnMore")}
           translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
+          id={setBuiltinId(wallet)}
         />
       ))
     }
@@ -168,6 +210,7 @@ const sections = [
           linkText={t("downloads.community.learnMore")}
           translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
+          id={setBuiltinId(wallet)}
         />
       ))
     }
@@ -192,10 +235,18 @@ const sections = [
           linkText={t("downloads.community.learnMore")}
           translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
           t={t}
+          id={setBuiltinId(wallet)}
         />
       ))
     }
   </div>
+
+  <DisclaimerBar icon={shieldIcon} title="Disclaimer">
+    This list is for informational purposes only. The Monero Project does not
+    endorse, recommend, or guarantee any service listed here. Always
+    double-check URLs, start with a small test amount if you're unsure, and use
+    every service at your own risk.
+  </DisclaimerBar>
 </Layout>
 
 <style>
@@ -206,6 +257,10 @@ const sections = [
     gap: 1rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  .toc-icon {
+    color: var(--monero-orange);
   }
 
   .toc-link {
@@ -229,7 +284,7 @@ const sections = [
 
   .toc-link:hover,
   .toc-link:focus-visible {
-    background: color-mix(in srgb, var(--card-color), white 5%);
+    background: var(--card-hover-color);
   }
 
   .toc-link-title {
@@ -257,6 +312,10 @@ const sections = [
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
     margin: 2rem 0 1rem 0;
+  }
+
+  .section-title,
+  :global(#built-in-exchange) {
     scroll-margin-top: 2rem;
   }
 
@@ -295,7 +354,8 @@ const sections = [
   }
 
   @media (max-width: 1200px) {
-    .section-title {
+    .section-title,
+    :global(#built-in-exchange) {
       scroll-margin-top: 6rem;
     }
   }

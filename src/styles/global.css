@@ -2,18 +2,22 @@
   /* Accent Colors */
   --monero-orange: #e2611f;
 
-  /* Surface Colors */
-  --bg-color: #ffffff;
-  --card-color: #f9f7fc;
-  --card-hover-color: #1e1b230d;
-  --footer-color: #f0ecf4;
-
   /* Text Colors */
   --heading-color: #191b23;
   --text-primary: #2e3038;
   --text-secondary: #5c5e67;
   --paragraph-main: #44464e;
   --paragraph-subtitle: #75767f;
+
+  /* Surface Colors */
+  --bg-color: #ffffff;
+  --card-color: #f9f7fc;
+  --card-hover-color: color-mix(
+    in srgb,
+    var(--card-color),
+    var(--heading-color) 5%
+  );
+  --footer-color: #f0ecf4;
 
   /* Border Colors */
   --border-color: #e4e1e9;
@@ -57,20 +61,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Surface Colors */
-    --bg-color: #171717;
-    --card-color: #211f26;
-    --card-hover-color: #e1e1ec0d;
-    --footer-color: #211f26;
-
-    --secondary-button-color: #36343b;
-
     /* Text Colors */
     --text-secondary: #9a9ba3;
     --paragraph-main: #c6c6d0;
     --paragraph-subtitle: #a9aab4;
     --heading-color: #f0f0f0;
     --text-primary: var(--paragraph-main);
+
+    /* Surface Colors */
+    --bg-color: #171717;
+    --card-color: #211f26;
+    --card-hover-color: #e1e1ec0d;
+    --footer-color: #211f26;
+    --card-hover-color: color-mix(
+      in srgb,
+      var(--card-color),
+      var(--heading-color) 5%
+    );
+
+    /* Button Colors */
+    --secondary-button-color: #36343b;
 
     /* Border Colors */
     --border-color: #36343b;
