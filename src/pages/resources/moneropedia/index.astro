@@ -59,7 +59,7 @@ for (const letter of sortedLetters) {
     title={t("moneropedia.heroTitle") ?? "Moneropedia"}
     subtitle={t("moneropedia.heroSubtitle")}
   />
-  <section class="moneropedia-index container">
+  <section class="moneropedia-index">
     <nav class="letter-nav" aria-label="Moneropedia navigation bar">
       {
         sortedLetters.map((letter) => (
@@ -111,6 +111,7 @@ for (const letter of sortedLetters) {
   }
 
   .moneropedia-index {
+    margin-top: 3rem;
     padding-block: 2rem 3rem;
   }
 

@@ -1,15 +1,68 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
+import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getDirection, getLocale } from "@/i18n/utils";
+
+import merchants from "@/data/merchants.json";
+
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+const dir = getDirection(locale);
 ---
 
 <Layout
-  title="Merchants"
-  description="Stores and merchants that accept Monero as payment"
+  title={t("merchants.pageTitle")}
+  description={t("merchants.heroSubtitle")}
 >
   <TitleCard
-    title="Merchants"
-    subtitle="Stores and merchants that accept Monero as payment.."
+    title={t("merchants.heroTitle")}
+    subtitle={t("merchants.heroSubtitle")}
   />
+
+  <div id="content">
+    <p>
+      {t("merchants.intro")}
+    </p>
+
+    <div class="button-container">
+      {
+        merchants
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((merchant) => (
+            <ExternalResourceButton
+              href={merchant.link}
+              onionHref={merchant.onionLink}
+              title={merchant.name}
+              subtitle={t(`merchants.subtitles.${merchant.id}`)}
+              logo={merchant.logo}
+              rtl={dir == "rtl"}
+            />
+          ))
+      }
+    </div>
+  </div>
+
+  <DisclaimerBar icon={shieldIcon} title={t("merchants.disclaimerTitle")}>
+    {t("merchants.disclaimer")}
+  </DisclaimerBar>
 </Layout>
+
+<style>
+  #content {
+    margin-top: 3rem;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    color: var(--paragraph-subtitle);
+  }
+</style>

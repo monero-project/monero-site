@@ -1,0 +1,174 @@
+---
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+import torIcon from "@/assets/icons/mask/tor.avif";
+import { getPublicImageDimensions } from "@/utils/image";
+import type { HTMLAttributes } from "astro/types";
+import { Image } from "astro:assets";
+import MaskIcon from "./MaskIcon.astro";
+
+export interface Props extends HTMLAttributes<"a"> {
+  href: string;
+  title: string;
+  subtitle: string;
+  logo: string;
+  rtl?: boolean;
+  onionHref?: string;
+}
+
+const { href, title, subtitle, logo, rtl, onionHref, ...rest } = Astro.props;
+const logoDimensions = await getPublicImageDimensions(logo);
+---
+
+<div class={`external-resource-button ${onionHref ? "has-onion" : ""}`}>
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer external"
+    class="primary-link"
+    {...rest}
+  >
+    <div class="image">
+      <Image
+        src={logo}
+        alt={`${title} Logo`}
+        width={logoDimensions.width}
+        height={logoDimensions.height}
+        format="avif"
+        priority
+      />
+    </div>
+
+    <div class="text">
+      <span class="title">{title}</span>
+      <span class="subtitle">{subtitle}</span>
+    </div>
+  </a>
+
+  <div class={`actions ${onionHref ? "has-onion" : ""}`} aria-label="Links">
+    {
+      onionHref && (
+        <a
+          href={onionHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="icon-button onion-link"
+          title="Onion service"
+          aria-label="Open onion service"
+        >
+          <MaskIcon src={torIcon} size="1.5em" color="#7D4698" />
+        </a>
+      )
+    }
+
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer external"
+      class="icon-button external-link"
+      title="Open website"
+      aria-label="Open website"
+    >
+      <MaskIcon
+        src={externalLinkIcon}
+        size="1em"
+        color="var(--monero-orange)"
+        rtl={rtl}
+      />
+    </a>
+  </div>
+</div>
+
+<style>
+  .external-resource-button {
+    display: flex;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .text {
+    flex: 1;
+    margin-inline-start: 1rem;
+  }
+  .text .title {
+    display: block;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--heading-color);
+  }
+  .text .subtitle {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-normal);
+  }
+
+  .image {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .image img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Override default rel=external icon that's set by globals.css - using MaskIcon here */
+  a::after {
+    display: none;
+  }
+
+  .primary-link {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .actions {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+
+  /* Only add the actions icon divider when there's an onion link */
+  .external-resource-button.has-onion .actions {
+    border-inline-start: 1px solid var(--border-color);
+  }
+
+  .icon-button {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  /* Normal hover behavior */
+  .primary-link:hover,
+  .icon-button:hover {
+    background: var(--card-hover-color);
+  }
+
+  /* Only show the inner divider when onion exists */
+  .actions.has-onion .external-link {
+    border-inline-start: 1px solid var(--border-color);
+  }
+
+  .external-resource-button:not(.has-onion):hover .primary-link,
+  .external-resource-button:not(.has-onion):hover .icon-button {
+    background: var(--card-hover-color);
+  }
+</style>

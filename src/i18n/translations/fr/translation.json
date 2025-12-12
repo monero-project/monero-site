@@ -434,6 +434,20 @@
       "none": "Aucun"
     }
   },
+  "merchants": {
+    "pageTitle": "Commerçants | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+    "heroTitle": "Commerçants",
+    "heroSubtitle": "Magasins et commerçants qui acceptent Monero comme paiement.",
+    "intro": "Si vous cherchez des endroits pour dépenser votre Monero, les répertoires ci-dessous fournissent une liste complète d'options. N'oubliez pas de faire vos propres recherches avant de leur confier votre argent.",
+    "subtitles": {
+      "cryptwerk": "Répertoire des commerçants acceptant Monero",
+      "monerica": "Répertoire complet pour les commerçants Monero",
+      "xmrbazaar": "Marché peer-to-peer Monero",
+      "kycnotme": "Trouvez des services qui ne nécessitent pas de KYC pour une meilleure confidentialité et un meilleur contrôle de vos données."
+    },
+    "disclaimerTitle": "Avis de non-responsabilité",
+    "disclaimer": "Cette liste est fournie à titre informatif uniquement. Le projet Monero n'endosse, ne recommande ni ne garantit aucun commerçant répertorié ici. Vérifiez toujours les URL, commencez par un petit montant de test si vous n'êtes pas sûr, et utilisez chaque commerçant à vos propres risques."
+  },
   "blog": {
     "index": {
       "pageTitle": "Blog | Monero - cryptomonnaie sécurisée, privée, non traçable.",
