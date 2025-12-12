@@ -1,5 +1,5 @@
 {
-  "localSync": {
+  "wallets": {
     "moneroOnly": [
       {
         "id": "anonero",
@@ -96,20 +96,20 @@
           "general": ["MIT"]
         }
       }
+    ],
+    "lws": [
+      {
+        "id": "edge",
+        "name": "Edge Wallet",
+        "logo": "/media/edge.avif",
+        "link": "https://edge.app/monero-wallet/",
+        "tags": {
+          "mobile": ["android", "ios"],
+          "general": ["BSD-3", "i18n:remoteScanning", "i18n:builtInExchange"]
+        }
+      }
     ]
   },
-  "remoteSync": [
-    {
-      "id": "edge",
-      "name": "Edge Wallet",
-      "logo": "/media/edge.avif",
-      "link": "https://edge.app/monero-wallet/",
-      "tags": {
-        "mobile": ["android", "ios"],
-        "general": ["BSD-3", "i18n:remoteScanning", "i18n:builtInExchange"]
-      }
-    }
-  ],
   "cold": [
     {
       "id": "keystone",

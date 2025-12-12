@@ -251,11 +251,11 @@
     "readMore": "Leer artículo completo"
   },
   "downloads": {
-    "pageTitle": "Descargas | Monero - criptomoneda segura, privada e imposible de rastrear.",
+    "pageTitle": "Descargas | Monero - criptomoneda segura, privada, no rastreable.",
     "heroTitle": "Descargas",
     "heroSubtitle": "Obtén billeteras y software de Monero.",
     "tabs": {
-      "core": "Principal",
+      "core": "Núcleo",
       "community": "Comunidad"
     },
     "platforms": {
@@ -315,54 +315,54 @@
     },
     "community": {
       "sections": {
-        "localSync": {
-          "title": "Billeteras de Sincronización Local",
-          "subtitle": "Billeteras que escanean el blockchain localmente en tu dispositivo para máxima privacidad."
-        },
-        "remoteSync": {
-          "title": "Billeteras de Sincronización Remota",
-          "subtitle": "Billeteras que usan servidores remotos para escanear el blockchain por conveniencia. Requiere compartir tu clave de vista privada con el servicio."
+        "wallets": {
+          "title": "Billeteras",
+          "subtitle": "Elige entre una variedad de billeteras desarrolladas por la comunidad para diferentes casos de uso y necesidades de privacidad."
         },
         "cold": {
-          "title": "Billeteras Offline",
+          "title": "Billeteras Frías",
           "subtitle": "Billeteras de hardware y aplicaciones de firma de transacciones offline."
         },
         "nodes": {
-          "title": "Software de Nodos",
+          "title": "Software de Nodo",
           "subtitle": "Implementaciones alternativas de nodos Monero."
         }
       },
       "categories": {
         "moneroOnly": "Solo Monero",
-        "multiCoin": "Multi-moneda"
+        "multiCoin": "Multi-moneda",
+        "lws": {
+          "title": "Billeteras LWS",
+          "disclaimer": "Las billeteras LWS mantienen tu billetera sincronizada en un servidor remoto para tu conveniencia. A menos que tengas la opción de especificar tus propios servidores, esto puede introducir riesgos de privacidad."
+        }
       },
-      "learnMore": "Más información",
+      "learnMore": "Aprender más",
       "desktopLabel": "Escritorio",
       "mobileLabel": "Móvil",
       "descriptions": {
-        "anonero": "Billetera enfocada en privacidad con todas las comunicaciones a través de Tor.",
-        "feather": "Una billetera de escritorio Monero ligera, rápida y rica en funciones.",
-        "monerocom": "Una billetera solo de Monero desarrollada por Cake Labs.",
-        "monerujo": "Una billetera Monero para Android con características avanzadas.",
+        "anonero": "Billetera enfocada en la privacidad con todas las comunicaciones a través de Tor.",
+        "feather": "Una billetera ligera, rápida y rica en funciones para Monero.",
+        "monerocom": "Una billetera solo para Monero desarrollada por Cake Labs.",
+        "monerujo": "Una billetera Monero para Android con funciones avanzadas.",
         "monfluo": "Una billetera pura de Monero para Android.",
-        "cakewallet": "Una billetera multi-moneda con soporte Monero y billetera de hardware.",
-        "eigenwallet": "Billetera de Monero y Bitcoin con capacidades de intercambio atómico integradas.",
-        "stackwallet": "Una billetera multi-moneda con soporte Monero para escritorio y móvil.",
+        "cakewallet": "Una billetera multi-moneda con soporte para Monero y billeteras de hardware.",
+        "eigenwallet": "Billetera Monero y Bitcoin con capacidades de intercambio atómico integradas.",
+        "stackwallet": "Una billetera multi-moneda con soporte para Monero en escritorio y móvil.",
         "unstoppable": "Una billetera multi-moneda que soporta Monero.",
         "edge": "Una billetera multi-moneda con sincronización del lado del servidor.",
-        "keystone": "Billetera de hardware con soporte Monero a través de aplicaciones de terceros.",
-        "ledger": "Billetera de hardware con soporte Monero a través de aplicaciones de terceros.",
-        "trezor": "Billetera de hardware con soporte Monero a través de aplicaciones de terceros.",
+        "keystone": "Billetera de hardware con soporte para Monero a través de aplicaciones de terceros.",
+        "ledger": "Billetera de hardware con soporte para Monero a través de aplicaciones de terceros.",
+        "trezor": "Billetera de hardware con soporte para Monero a través de aplicaciones de terceros.",
         "cupcake": "Aplicación de firma offline para usar con Cake Wallet/Monero.com.",
-        "sidekick": "Aplicación de firma offline para usar con Monerujo. Conecta vía Bluetooth.",
-        "cuprate": "Una implementación de nodo Monero rápida y eficiente escrita en Rust."
+        "sidekick": "Aplicación de firma offline para usar con Monerujo. Se conecta vía Bluetooth.",
+        "cuprate": "Una implementación rápida y eficiente de nodo Monero escrita en Rust."
       },
       "tags": {
-        "qrSigning": "Firma por QR",
+        "qrSigning": "Firma QR",
         "builtInExchange": "Intercambio integrado",
         "remoteScanning": "Escaneo remoto",
-        "diy": "Hazlo tú mismo",
-        "alphaSoftware": "Software en alfa"
+        "diy": "DIY",
+        "alphaSoftware": "Software alfa"
       }
     }
   },

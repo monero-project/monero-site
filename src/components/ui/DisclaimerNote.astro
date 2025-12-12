@@ -1,0 +1,34 @@
+---
+export interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+---
+
+<div class="disclaimer-note">
+  <MaskIcon src={shieldIcon} size="1em" />
+  <span>{text}</span>
+</div>
+
+<style>
+  .disclaimer-note {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    background: rgba(255, 152, 0, 0.05);
+    border: 1px solid rgba(255, 152, 0, 0.2);
+    border-radius: 0.25rem;
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+  }
+
+  .disclaimer-note span {
+    flex: 1;
+  }
+</style>

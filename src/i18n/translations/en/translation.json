@@ -320,13 +320,9 @@
     },
     "community": {
       "sections": {
-        "localSync": {
-          "title": "Local Sync Wallets",
-          "subtitle": "Wallets that scan the blockchain locally on your device for maximum privacy."
-        },
-        "remoteSync": {
-          "title": "Remote Sync Wallets",
-          "subtitle": "Wallets that use remote servers to scan the blockchain for convenience. Requires sharing your private view key with the service."
+        "wallets": {
+          "title": "Wallets",
+          "subtitle": "Community-developed wallet software for different use cases and privacy needs."
         },
         "cold": {
           "title": "Cold Wallets",
@@ -339,7 +335,11 @@
       },
       "categories": {
         "moneroOnly": "Monero-only",
-        "multiCoin": "Multi-coin"
+        "multiCoin": "Multi-coin",
+        "lws": {
+          "title": "LWS Wallets",
+          "disclaimer": "LWS wallets keep your wallet synchronized on a remote server for your convenience. Unless you have the option to specify your own servers, this may introduce privacy risks."
+        }
       },
       "learnMore": "Learn more",
       "desktopLabel": "Desktop",

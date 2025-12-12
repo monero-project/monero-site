@@ -22,21 +22,13 @@ export interface Props {
 const { title, description, exchanges, hasKyc, disclaimerText, t } =
   Astro.props;
 
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
+import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
 ---
 
 <section class="table-section">
   <h2 class="title">{title}</h2>
   <p class="subtitle">{description}</p>
-  {
-    disclaimerText && (
-      <div class="disclaimer-note">
-        <MaskIcon src={shieldIcon} size="1em" />
-        <span>{disclaimerText}</span>
-      </div>
-    )
-  }
+  {disclaimerText && <DisclaimerNote text={disclaimerText} />}
   {
     exchanges.length > 0 && (
       <table class="exchange-table">
@@ -46,7 +38,7 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
             {hasKyc && <th>{t("exchanges.table.kyc")}</th>}
             <th>{t("exchanges.table.fiat")}</th>
             <th>{t("exchanges.table.crypto")}</th>
-            <th></th>
+            <th />
           </tr>
         </thead>
         <tbody>
@@ -121,24 +113,6 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
     color: var(--paragraph-subtitle);
     font-size: var(--font-size-sm);
     margin-bottom: 1rem;
-  }
-
-  .disclaimer-note {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 0.75rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background: rgba(255, 152, 0, 0.05);
-    border: 1px solid rgba(255, 152, 0, 0.2);
-    border-radius: 0.25rem;
-    font-size: var(--font-size-sm);
-    color: var(--text-primary);
-  }
-
-  .disclaimer-note span {
-    flex: 1;
   }
 
   .exchange-row {
