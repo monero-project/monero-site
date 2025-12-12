@@ -17,7 +17,10 @@ export const localizeHref = (locale: string, href: string): string => {
   );
   const prefix = locale === defaultLocale ? "" : `/${locale}`;
 
-  return `${prefix}${path}/`.replace(/\/+/g, "/");
+  return `${prefix}${path}${path.includes("#") ? "" : "/"}`.replace(
+    /\/+/g,
+    "/",
+  );
 };
 
 export const localizeNumber = (
