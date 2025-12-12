@@ -5,6 +5,7 @@ import type { ImageMetadata } from "astro";
 import { getLocale } from "astro-i18n-aut";
 
 import rssIcon from "@/assets/icons/mask/rss.avif";
+import torIcon from "@/assets/icons/mask/tor.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 const { t } = Astro.props;
@@ -18,6 +19,7 @@ interface Link {
     src: ImageMetadata;
     color?: string;
     size?: string;
+    ignoreRtl?: boolean;
   };
 }
 
@@ -122,6 +124,12 @@ const bottomLinks: Link[] = [
   {
     label: t("footer.bottomLinks.torOnionService", { ns: "common" }),
     href: "#",
+    icon: {
+      src: torIcon,
+      size: "1rem",
+      color: "#7d4698",
+      ignoreRtl: true,
+    },
   },
   {
     label: t("footer.bottomLinks.vulnerabilityResponse", { ns: "common" }),
@@ -173,7 +181,7 @@ const bottomLinks: Link[] = [
                       <MaskIcon
                         src={l.icon?.src}
                         size={l.icon?.size ?? "12px"}
-                        rtl={dir == "rtl"}
+                        rtl={l.icon?.ignoreRtl ? false : dir == "rtl"}
                         color={l.icon?.color}
                         spacing="0.25em"
                       />
@@ -208,7 +216,7 @@ const bottomLinks: Link[] = [
                   <MaskIcon
                     src={l.icon?.src}
                     size={l.icon?.size ?? "12px"}
-                    rtl={dir == "rtl"}
+                    rtl={l.icon?.ignoreRtl ? false : dir == "rtl"}
                     color={l.icon?.color}
                     spacing="0.25em"
                   />
