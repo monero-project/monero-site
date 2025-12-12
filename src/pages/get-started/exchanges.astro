@@ -218,8 +218,26 @@ const highlightOptions = [
     <div class="mobile-filter-container">
       <label for="mobile-filter-toggle" class="mobile-filter-bar">
         <div class="mobile-filter-bar-inner">
-          <MaskIcon src={searchIcon} size="1.25em" aria-hidden="true" />
-          <span>{t("exchanges.sidebarTitle")}</span>
+          <MaskIcon
+            src={searchIcon}
+            size="1.25em"
+            aria-hidden="true"
+            rtl={dir == "rtl"}
+          />
+          <div style="display: flex; flex-direction: column;">
+            <span>{t("exchanges.sidebarTitle")}</span>
+            <div class="mobile-filter-subtitle">
+              <span class="filter-text" data-filter="easiest"
+                >{t("exchanges.highlightOptions.selectedText.easiest")}</span
+              >
+              <span class="filter-text" data-filter="fiat"
+                >{t("exchanges.highlightOptions.selectedText.fiat")}</span
+              >
+              <span class="filter-text" data-filter="privacy"
+                >{t("exchanges.highlightOptions.selectedText.privacy")}</span
+              >
+            </div>
+          </div>
         </div>
       </label>
     </div>
@@ -482,6 +500,7 @@ const highlightOptions = [
       padding: 1rem 1rem;
       background-color: var(--bg-color);
       border-top: 1px solid var(--border-color);
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
     }
 
     .mobile-filter-bar-inner {
@@ -502,6 +521,12 @@ const highlightOptions = [
       background: var(--card-hover-color);
     }
 
+    .mobile-filter-subtitle {
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-normal);
+      color: var(--paragraph-subtitle);
+    }
+
     /* sheet overlay */
     .mobile-filter-sheet {
       display: block;
@@ -512,7 +537,7 @@ const highlightOptions = [
       padding: 1.25rem 1.5rem 1.75rem;
       background: var(--bg-color);
       border-radius: 1.25rem 1.25rem 0 0;
-      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.35);
+
       max-height: 75vh;
       overflow-y: auto;
       z-index: 3;
@@ -558,7 +583,27 @@ const highlightOptions = [
 
     /* open sheet */
     #mobile-filter-toggle:checked ~ .mobile-filter-sheet {
+      box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.35);
       transform: translateY(0);
+    }
+
+    .filter-text {
+      display: none;
+    }
+
+    #filter-easiest:checked
+      ~ .exchanges-wrapper
+      .mobile-filter-subtitle
+      .filter-text[data-filter="easiest"],
+    #filter-fiat:checked
+      ~ .exchanges-wrapper
+      .mobile-filter-subtitle
+      .filter-text[data-filter="fiat"],
+    #filter-privacy:checked
+      ~ .exchanges-wrapper
+      .mobile-filter-subtitle
+      .filter-text[data-filter="privacy"] {
+      display: inline;
     }
   }
 </style>

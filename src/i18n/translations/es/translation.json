@@ -415,6 +415,11 @@
       "privacy": {
         "title": "Me importa más la privacidad",
         "subtitle": "Opciones descentralizadas que no requieren verificación de identidad"
+      },
+      "selectedText": {
+        "easiest": "Resaltar: Fácil de usar",
+        "fiat": "Resaltar: Efectivo/Transferencia bancaria",
+        "privacy": "Resaltar: Privado"
       }
     },
     "disclaimerTitle": "Descargo de responsabilidad",

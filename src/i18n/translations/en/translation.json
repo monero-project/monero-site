@@ -174,15 +174,15 @@
       "items": [
         {
           "title": "What kinds of Monero wallets are there?",
-          "content": "Local sync wallets: These scan the blockchain on your device, giving you the best privacy, but require more storage and bandwidth.\n\nRemote sync wallets: These use a remote server to scan the blockchain for you, reducing resource needs, but at the cost of some privacy."
+          "content": "**Regular wallets:** These scan the blockchain on your device, giving you the best privacy, but require more storage and bandwidth.\n\n**LWS wallets:** These use a remote server to scan the blockchain for you, reducing resource needs, but at the cost of some privacy."
+        },
+        {
+          "title": "Are LWS wallets safe?",
+          "content": "LWS wallets use your private view key to scan the blockchain on your behalf. This means the wallet service can see your transaction history, but not able to spend your funds. It is convenience at the cost of privacy."
         },
         {
           "title": "What wallet should i use?",
           "content": "On the Downloads page you will find the wallets released by Monero Core, as well as open-source wallets from community developers. Choose the one that fits your needs and technical comfort level."
-        },
-        {
-          "title": "Are remote sync wallets safe?",
-          "content": "Remote sync wallets use your private view key to scan the blockchain on your behalf. This means the wallet service can see your transaction history, but not able to spend your funds. It is convenience at the cost of privacy."
         },
         {
           "title": "What is the most important thing to back up?",
@@ -199,7 +199,7 @@
       "items": [
         {
           "title": "What is the total supply of Monero?",
-          "content": "Monero has a main emission phase and then a small ongoing tail emission of 0.6 XMR per block to reward miners and secure the network. The result is a predictable, gently increasing supply that trends toward a stable growth rate."
+          "content": "Monero has a main emission phase and then a small ongoing tail emission of 0.6 XMR per block to reward miners and secure the network. The result is a predictable, gently increasing supply that trends toward a stable growth rate.\n\nAs of 2025, there are approximately 18.44M XMR in circulation."
         },
         {
           "title": "What is a tail emission and why is it needed?",
@@ -419,6 +419,11 @@
       "privacy": {
         "title": "I care most about privacy",
         "subtitle": "Decentralized options that don't require identity verification"
+      },
+      "selectedText": {
+        "easiest": "Highlight: User-friendly",
+        "fiat": "Highlight: Cash/Bank Account",
+        "privacy": "Highlight: Private"
       }
     },
     "disclaimerTitle": "Disclaimer",

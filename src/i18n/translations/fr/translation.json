@@ -416,6 +416,11 @@
       "privacy": {
         "title": "Je me soucie le plus de la confidentialité",
         "subtitle": "Options décentralisées qui ne nécessitent pas de vérification d'identité"
+      },
+      "selectedText": {
+        "easiest": "Mise en évidence : Convivial",
+        "fiat": "Mise en évidence : Espèces/virement bancaire",
+        "privacy": "Mise en évidence : Privé"
       }
     },
     "disclaimerTitle": "Avis de non-responsabilité",
