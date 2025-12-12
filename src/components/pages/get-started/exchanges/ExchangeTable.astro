@@ -13,6 +13,7 @@ export interface Props {
     url: string;
     kycClass?: string;
     kycReq?: string;
+    userFriendly?: boolean;
   }>;
   hasKyc: boolean;
   disclaimerText?: string;
@@ -48,7 +49,8 @@ import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
                 ex.fiat && "fiat",
                 ex.crypto && "crypto",
                 ex.type === "decentralized" && "privacy",
-                ex.type === "aggregator" && "aggregator",
+                ex.type === "aggregator" && "user-friendly",
+                ex.userFriendly && "user-friendly",
               ]
                 .filter(Boolean)
                 .join(" ") || undefined;

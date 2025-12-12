@@ -32,7 +32,7 @@ const t = await createTInstance(locale);
 const highlightOptions = [
   {
     key: "easiest",
-    highlight: "aggregator",
+    highlight: "user-friendly",
     icon: rabbitIcon,
     title: t("exchanges.highlightOptions.easiest.title"),
     subtitle: t("exchanges.highlightOptions.easiest.subtitle"),
@@ -184,7 +184,7 @@ const highlightOptions = [
             title={t("exchanges.sections.aggregators.resourceBtnTitle")}
             subtitle="Community-curated exchange aggregator list"
             logo="/media/kycnotme.jpg"
-            data-highlight="aggregator crypto"
+            data-highlight="user-friendly crypto"
             rtl={dir == "rtl"}
           />
           <p
@@ -409,7 +409,7 @@ const highlightOptions = [
     :global(tr[data-highlight~="privacy"]),
   #filter-easiest:checked
     ~ .exchanges-wrapper
-    :global(tr[data-highlight~="aggregator"]) {
+    :global(tr[data-highlight~="user-friendly"]) {
     background: rgba(255, 152, 0, 0.1);
   }
 
@@ -433,15 +433,17 @@ const highlightOptions = [
     .highlight-option[data-highlight~="privacy"],
   #filter-easiest:checked
     ~ .exchanges-wrapper
-    .highlight-option[data-highlight~="aggregator"],
+    .highlight-option[data-highlight~="user-friendly"],
   #filter-easiest:checked
     ~ .mobile-filter-sheet
-    .highlight-option[data-highlight~="aggregator"] {
+    .highlight-option[data-highlight~="user-friendly"] {
     background: var(--card-color);
     border-color: var(--monero-orange);
   }
 
-  #filter-easiest:checked ~ .exchanges-wrapper a[data-highlight~="aggregator"] {
+  #filter-easiest:checked
+    ~ .exchanges-wrapper
+    [data-highlight~="user-friendly"] {
     outline: 2px solid var(--monero-orange);
   }
 

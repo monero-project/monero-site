@@ -395,7 +395,7 @@
     "descriptions": {
       "basicswapdex": "Échangez de la crypto directement avec d'autres personnes, sans inscription, sans intermédiaire (échanges atomiques).",
       "bisq": "Échange pair-à-pair où vous échangez directement avec d'autres personnes. Prend en charge les échanges BTC → XMR.",
-      "eigenwallet": "Une plateforme très liquide pour échanger BTC contre XMR en utilisant des échanges atomiques.",
+      "eigenwallet": "Plateforme très liquide pour échanges atomiques BTC vers XMR. Intègre un service tiers pour achat fiat (KYC).",
       "retoswap": "Échange pair-à-pair décentralisé construit sur Monero. Prend en charge les échanges fiat, crypto ↔ XMR.",
       "cyphergoat": "Service qui trouve des routes pour des échanges crypto-à-crypto sécurisés entre différents fournisseurs.",
       "orangefren": "Site convivial pour les débutants qui vous permet de comparer et d'effectuer des échanges crypto, généralement sans créer de compte.",

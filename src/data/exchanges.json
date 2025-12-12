@@ -26,8 +26,9 @@
       "name": "Eigenwallet",
       "img": "/media/eigenwallet.avif",
       "alt": "Eigenwallet logo",
-      "fiat": false,
+      "fiat": true,
       "crypto": true,
+      "userFriendly": true,
       "url": "https://eigenwallet.com"
     },
     {

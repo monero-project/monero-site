@@ -6,7 +6,7 @@ import type { HTMLAttributes } from "astro/types";
 import { Image } from "astro:assets";
 import MaskIcon from "./MaskIcon.astro";
 
-export interface Props extends HTMLAttributes<"a"> {
+export interface Props extends HTMLAttributes<"div"> {
   href: string;
   title: string;
   subtitle: string;
@@ -19,13 +19,15 @@ const { href, title, subtitle, logo, rtl, onionHref, ...rest } = Astro.props;
 const logoDimensions = await getPublicImageDimensions(logo);
 ---
 
-<div class={`external-resource-button ${onionHref ? "has-onion" : ""}`}>
+<div
+  class={`external-resource-button ${onionHref ? "has-onion" : ""}`}
+  {...rest}
+>
   <a
     href={href}
     target="_blank"
     rel="noopener noreferrer external"
     class="primary-link"
-    {...rest}
   >
     <div class="image">
       <Image
