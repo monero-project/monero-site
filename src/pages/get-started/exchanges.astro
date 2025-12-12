@@ -71,30 +71,19 @@ const highlightOptions = [
     name="exchange-filter"
     checked
   />
-  <input
-    id="filter-bitcoin"
-    class="filter-toggle"
-    type="radio"
-    name="exchange-filter"
-  />
-  <input
-    id="filter-fiat"
-    class="filter-toggle"
-    type="radio"
-    name="exchange-filter"
-  />
-  <input
-    id="filter-privacy"
-    class="filter-toggle"
-    type="radio"
-    name="exchange-filter"
-  />
-  <input
-    id="filter-easiest"
-    class="filter-toggle"
-    type="radio"
-    name="exchange-filter"
-  />
+  {
+    highlightOptions.map((opt) => {
+      const filterId = `filter-${opt.key}`;
+      return (
+        <input
+          id={filterId}
+          class="filter-toggle"
+          type="radio"
+          name="exchange-filter"
+        />
+      );
+    })
+  }
 
   <!-- mobile bottom-sheet toggle -->
   <input
@@ -418,9 +407,6 @@ const highlightOptions = [
   }
 
   /* FILTER HIGHLIGHTING */
-  #filter-bitcoin:checked
-    ~ .exchanges-wrapper
-    :global(tr[data-highlight~="crypto"]),
   #filter-fiat:checked ~ .exchanges-wrapper :global(tr[data-highlight~="fiat"]),
   #filter-privacy:checked
     ~ .exchanges-wrapper
@@ -431,12 +417,6 @@ const highlightOptions = [
     background: rgba(255, 152, 0, 0.1);
   }
 
-  #filter-bitcoin:checked
-    ~ .exchanges-wrapper
-    .highlight-option[data-highlight~="crypto"],
-  #filter-bitcoin:checked
-    ~ .mobile-filter-sheet
-    .highlight-option[data-highlight~="crypto"],
   #filter-fiat:checked
     ~ .exchanges-wrapper
     .highlight-option[data-highlight~="fiat"],
