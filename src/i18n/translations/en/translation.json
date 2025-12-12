@@ -386,7 +386,7 @@
         "title": "Swap Aggregators",
         "description": "Easiest way to trade crypto for Monero without creating an account. These services compare prices from multiple swap providers and route you to the best option.",
         "disclaimer": "The aggregator itself doesn't hold your funds, but the service you end up using might still ask you to verify your identity.",
-        "resourceBtnTitle": "KYCNot.me - community-curated listings",
+        "resourceBtnTitle": "KYCNot.me - Aggregators",
         "resourceIntro": "For an up-to-date list with details and reviews, you can visit the community resource below:",
         "tip": "**Tip:** Some Monero wallets have a **built-in exchange** for convenience. Check out the <a href=\"{{communityDownloadsUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\">community downloads</a> for options."
       },
