@@ -396,10 +396,10 @@
       }
     },
     "descriptions": {
-      "basicswapdex": "Trade crypto directly with other people, no sign-ups, no middleman (atomic swaps).",
+      "basicswapdex": "Trade crypto trustlessly with no middleman (atomic swaps).",
       "bisq": "Peer-to-peer exchange where you trade directly with other people. Supports BTC → XMR swaps.",
-      "eigenwallet": "Highly liquid platform for BTC to XMR atomic swaps. Supports buying XMR with fiat currency (requires KYC).",
-      "retoswap": "Decentralized peer-to-peer exchange built on Monero. Supports fiat, crypto ↔ XMR trades.",
+      "eigenwallet": "Highly liquid platform for BTC to XMR atomic swaps. Buying XMR with fiat available in EU only (KYC required).",
+      "retoswap": "Decentralized peer-to-peer exchange built on Monero. Supports fiat, crypto → XMR trades.",
       "cyphergoat": "Service that finds routes for secure crypto-to-crypto swaps across different providers.",
       "orangefren": "Beginner-friendly site that lets you compare and make crypto swaps, usually without creating an account.",
       "trocador": "Aggregator that focuses on privacy-friendly swap routes.",

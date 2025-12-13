@@ -1,0 +1,83 @@
+---
+import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
+import MaskIcon from "./MaskIcon.astro";
+
+export interface Props {
+  href?: string;
+  icon: any;
+  title: string;
+  subtitle: string;
+  tag?: "a" | "span";
+  className?: string;
+  [key: string]: any;
+}
+
+const {
+  tag = "a",
+  href,
+  icon,
+  title,
+  subtitle,
+  className,
+  ...rest
+} = Astro.props;
+
+const Tag = tag;
+const linkProps = Tag === "a" ? { href } : {};
+---
+
+<Tag class={`toc-item ${className || ""}`.trim()} {...linkProps} {...rest}>
+  <span class="toc-item-icon">
+    <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
+  </span>
+
+  <div class="content">
+    <span class="toc-item-title">{title}</span>
+    <span class="toc-item-subtitle">{subtitle}</span>
+  </div>
+
+  <div class="decoration">
+    <MaskIcon src={hashtagIcon} size="0.75em" aria-hidden="true" />
+  </div>
+</Tag>
+
+<style>
+  .toc-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--heading-color);
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  .toc-item-icon {
+    color: var(--monero-orange);
+  }
+
+  .toc-item-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    display: block;
+  }
+
+  .toc-item-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-caption);
+    margin-top: 0.15rem;
+  }
+
+  .decoration {
+    display: flex;
+    align-items: flex-start;
+    margin-inline-start: auto;
+    color: var(--paragraph-subtitle);
+  }
+</style>

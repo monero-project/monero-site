@@ -10,8 +10,7 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
 
-import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
+import TOCItem from "@/components/ui/TOCItem.astro";
 
 import cliImage from "@/assets/images/cli.avif";
 import guiImage from "@/assets/images/gui.avif";
@@ -62,18 +61,12 @@ const sections = [
   <nav class="toc" aria-label={`${t("downloads.tabs.core")}` + " sections"}>
     {
       sections.map((section) => (
-        <a class="toc-link" href={`#${section.id}`}>
-          <span class="toc-icon">
-            <MaskIcon src={section.icon} size="1.5em" aria-hidden="true" />
-          </span>
-          <div class="content">
-            <span class="toc-link-title">{section.title}</span>
-            <span class="toc-link-subtitle">{section.subtitle}</span>
-          </div>
-          <div class="arrow">
-            <MaskIcon src={hashtagIcon} size="0.75em" aria-hidden="true" />
-          </div>
-        </a>
+        <TOCItem
+          href={`#${section.id}`}
+          icon={section.icon}
+          title={section.title}
+          subtitle={section.subtitle}
+        />
       ))
     }
   </nav>
@@ -135,53 +128,15 @@ const sections = [
     border-bottom: 1px solid var(--border-color);
   }
 
-  .toc-icon {
-    color: var(--monero-orange);
-  }
-
-  .toc-link {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1rem;
-    color: var(--heading-color);
-    text-decoration: none;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    border: var(--border-color);
+  .toc :global(.toc-item) {
     background: var(--card-color);
   }
 
-  .toc-link .content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .toc-link:hover,
-  .toc-link:focus-visible {
+  .toc :global(.toc-item:hover),
+  .toc :global(.toc-item:focus-visible) {
     background: var(--card-hover-color);
   }
 
-  .toc-link-title {
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
-  }
-
-  .toc-link-subtitle {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-caption);
-    margin-top: 0.15rem;
-  }
-
-  .toc-link .arrow {
-    display: flex;
-    align-items: flex-start;
-    margin-inline-start: auto;
-    color: var(--paragraph-subtitle);
-  }
   /* Core downloads */
   .downloads-grid {
     margin-top: 2rem;

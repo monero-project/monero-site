@@ -129,7 +129,6 @@ const logoDimensions = await getPublicImageDimensions(logo);
   .primary-link {
     background: transparent;
     border: 0;
-    border-radius: 0;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -171,5 +170,19 @@ const logoDimensions = await getPublicImageDimensions(logo);
   .external-resource-button:not(.has-onion):hover .primary-link,
   .external-resource-button:not(.has-onion):hover .icon-button {
     background: var(--card-hover-color);
+  }
+
+  @media screen and (max-width: 600px) {
+    .actions {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .actions a {
+      flex: 1;
+    }
+    .actions.has-onion .external-link {
+      border-inline-start: unset;
+      border-block-start: 1px solid var(--border-color);
+    }
   }
 </style>

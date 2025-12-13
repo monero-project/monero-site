@@ -28,7 +28,6 @@
         "link": "https://monero.com/wallets",
         "tags": {
           "mobile": ["android", "ios"],
-          "desktop": ["windows", "linux"],
           "general": ["MIT", "i18n:qrSigning", "i18n:builtInExchange"]
         }
       },

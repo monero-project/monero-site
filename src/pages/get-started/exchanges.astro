@@ -20,6 +20,7 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import ExchangeTable from "@/components/pages/get-started/exchanges/ExchangeTable.astro";
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import TOCItem from "@/components/ui/TOCItem.astro";
 
 import exchanges from "@/data/exchanges.json";
 
@@ -111,26 +112,13 @@ const highlightOptions = [
                     class="highlight-option"
                     data-highlight={opt.highlight}
                   >
-                    <span class="highlight-option-icon">
-                      <MaskIcon
-                        src={opt.icon}
-                        size="1.5em"
-                        aria-hidden="true"
-                      />
-                    </span>
-                    <div class="content">
-                      <span class="highlight-option-title">{opt.title}</span>
-                      <span class="highlight-option-subtitle">
-                        {opt.subtitle}
-                      </span>
-                    </div>
-                    <div class="highlight-option-arrow">
-                      <MaskIcon
-                        src={hashtagIcon}
-                        size="0.75em"
-                        aria-hidden="true"
-                      />
-                    </div>
+                    <TOCItem
+                      icon={opt.icon}
+                      title={opt.title}
+                      subtitle={opt.subtitle}
+                      arrowIcon={hashtagIcon}
+                      tag="span"
+                    />
                   </label>
                 );
               })
@@ -257,16 +245,12 @@ const highlightOptions = [
               class="highlight-option"
               data-highlight={opt.highlight}
             >
-              <span class="highlight-option-icon">
-                <MaskIcon src={opt.icon} size="1.5em" aria-hidden="true" />
-              </span>
-              <div class="content">
-                <span class="highlight-option-title">{opt.title}</span>
-                <span class="highlight-option-subtitle">{opt.subtitle}</span>
-              </div>
-              <div class="highlight-option-arrow">
-                <MaskIcon src={hashtagIcon} size="0.75em" aria-hidden="true" />
-              </div>
+              <TOCItem
+                icon={opt.icon}
+                title={opt.title}
+                subtitle={opt.subtitle}
+                tag="span"
+              />
             </label>
           );
         })
@@ -334,49 +318,13 @@ const highlightOptions = [
 
   .highlight-option {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 0.75rem;
-    background: var(--card-hover-color);
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
-    text-decoration: none;
-    cursor: pointer;
+    background: var(--card-hover-color);
   }
 
   .highlight-option:hover {
     background: var(--card-color);
-  }
-
-  .highlight-option-icon {
-    color: var(--monero-orange);
-  }
-
-  .highlight-option-arrow {
-    display: flex;
-    align-items: flex-start;
-    margin-inline-start: auto;
-    color: var(--paragraph-subtitle);
-  }
-
-  .highlight-option .content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .highlight-option-title {
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
-    display: block;
-  }
-
-  .highlight-option-subtitle {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-caption);
-    margin-top: 0.15rem;
   }
 
   .clear-highlights {
@@ -441,7 +389,7 @@ const highlightOptions = [
 
   #filter-easiest:checked
     ~ .exchanges-wrapper
-    [data-highlight~="user-friendly"] {
+    [data-highlight~="user-friendly"]:not(.highlight-option) {
     outline: 2px solid var(--monero-orange);
   }
 
@@ -555,10 +503,6 @@ const highlightOptions = [
     .mobile-filter-sheet .intro-description {
       font-size: var(--font-size-base);
       margin-bottom: 1.25rem;
-    }
-
-    .mobile-filter-sheet .highlight-option {
-      padding: 0.65rem;
     }
 
     /* open sheet */
