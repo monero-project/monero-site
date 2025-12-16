@@ -90,6 +90,8 @@
       "resources": {
         "title": "Resources",
         "links": {
+          "aboutMonero": "About Monero",
+          "moneropedia": "Moneropedia",
           "knowledgeBase": "Knowledge Base",
           "downloads": "Downloads",
           "exchanges": "Exchanges",
@@ -140,5 +142,9 @@
       "rssFeed": "RSS Feed"
     },
     "copyright": "© 2025 Monero. All rights reserved."
+  },
+  "strings": {
+    "yes": "Yes",
+    "no": "No"
   }
 }

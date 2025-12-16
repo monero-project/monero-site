@@ -1,6 +1,7 @@
 ---
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import { localizeHref } from "@/i18n/utils";
+import type { TFunction } from "i18next";
 
 import calendarIcon from "@/assets/icons/mask/calendar.avif";
 import userIcon from "@/assets/icons/mask/user.avif";
@@ -13,7 +14,7 @@ interface Props {
   author: string;
   tags?: string[];
   locale: string;
-  t: (key: string) => string;
+  t: TFunction;
 }
 
 const { title, id, author, tags = [], locale, t } = Astro.props;

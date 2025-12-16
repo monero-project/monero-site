@@ -6,6 +6,7 @@ import { localizeDateString, localizeHref } from "@/i18n/utils";
 import { getDateStringFromId } from "@/utils/blog.ts";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
+import type { TFunction } from "i18next";
 
 interface Props {
   id: string;
@@ -15,7 +16,7 @@ interface Props {
   summary: string;
   image?: ImageMetadata;
   locale: string;
-  t: (key: string) => string;
+  t: TFunction;
 }
 
 const { author, tags, title, summary, image, id, locale, t } = Astro.props;

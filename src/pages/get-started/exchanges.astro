@@ -10,7 +10,6 @@ import Layout from "@/layouts/Layout.astro";
 
 import bankIcon from "@/assets/icons/mask/bank.avif";
 import closeIcon from "@/assets/icons/mask/close.avif";
-import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
 import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
 import rabbitIcon from "@/assets/icons/mask/rabbit.avif";
 import searchIcon from "@/assets/icons/mask/search.avif";
@@ -116,7 +115,6 @@ const highlightOptions = [
                       icon={opt.icon}
                       title={opt.title}
                       subtitle={opt.subtitle}
-                      arrowIcon={hashtagIcon}
                       tag="span"
                     />
                   </label>
@@ -224,13 +222,6 @@ const highlightOptions = [
   <div class="mobile-filter-sheet">
     <div class="mobile-filter-sheet-header">
       <h2 class="intro-title">{t("exchanges.sidebarTitle")}</h2>
-      <label
-        for="mobile-filter-toggle"
-        class="mobile-filter-close"
-        aria-label="Close filters"
-      >
-        <MaskIcon src={closeIcon} size="1em" aria-hidden="true" />
-      </label>
     </div>
     <p class="intro-description">
       {t("exchanges.filtersDescription")}
@@ -263,6 +254,14 @@ const highlightOptions = [
           {t("exchanges.clearSelection")}
         </label>
       </div>
+      <label
+        for="mobile-filter-toggle"
+        class="mobile-filter-close"
+        aria-label="Close filters"
+      >
+        <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
+        Close
+      </label>
     </div>
   </div>
 </Layout>
@@ -431,7 +430,8 @@ const highlightOptions = [
       box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
     }
 
-    .mobile-filter-bar-inner {
+    .mobile-filter-bar-inner,
+    .mobile-filter-close {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -462,7 +462,8 @@ const highlightOptions = [
       left: 0;
       right: 0;
       bottom: 0;
-      padding: 1.25rem 1.5rem 1.75rem;
+      padding-block: 1rem;
+      padding-inline: 1.25rem;
       background: var(--bg-color);
       border-radius: 1.25rem 1.25rem 0 0;
 
@@ -479,20 +480,6 @@ const highlightOptions = [
       align-items: center;
       justify-content: space-between;
       margin-bottom: 0.75rem;
-    }
-
-    .mobile-filter-close {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 2rem;
-      height: 2rem;
-      margin-left: 0.5rem;
-      border-radius: 999px;
-      border: 1px solid var(--border-color);
-      background: var(--card-color);
-      font-size: 1.1rem;
-      cursor: pointer;
     }
 
     .mobile-filter-sheet .intro-title {

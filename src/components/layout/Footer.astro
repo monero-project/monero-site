@@ -33,10 +33,16 @@ const columns: Column[] = [
     title: t("footer.columns.resources.title", { ns: "common" }),
     links: [
       {
-        label: t("footer.columns.resources.links.knowledgeBase", {
+        label: t("footer.columns.resources.links.aboutMonero", {
           ns: "common",
         }),
-        href: localizeHref(locale, "/resources/knowledge-base"),
+        href: localizeHref(locale, "/get-started/what-is-monero/"),
+      },
+      {
+        label: t("footer.columns.resources.links.moneropedia", {
+          ns: "common",
+        }),
+        href: localizeHref(locale, "/resources/moneropedia/"),
       },
       {
         label: t("footer.columns.resources.links.developerGuides", {
@@ -47,6 +53,10 @@ const columns: Column[] = [
       {
         label: t("footer.columns.resources.links.userGuides", { ns: "common" }),
         href: localizeHref(locale, "/resources/user-guides"),
+      },
+      {
+        label: t("footer.columns.resources.links.downloads", { ns: "common" }),
+        href: localizeHref(locale, "/downloads/"),
       },
     ],
   },

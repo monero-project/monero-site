@@ -23,60 +23,62 @@ const logoDimensions = await getPublicImageDimensions(logo);
   class={`external-resource-button ${onionHref ? "has-onion" : ""}`}
   {...rest}
 >
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer external"
-    class="primary-link"
-  >
-    <div class="image">
-      <Image
-        src={logo}
-        alt={`${title} Logo`}
-        width={logoDimensions.width}
-        height={logoDimensions.height}
-        format="avif"
-        priority
-      />
-    </div>
-
-    <div class="text">
-      <span class="title">{title}</span>
-      <span class="subtitle">{subtitle}</span>
-    </div>
-  </a>
-
-  <div class={`actions ${onionHref ? "has-onion" : ""}`} aria-label="Links">
-    {
-      onionHref && (
-        <a
-          href={onionHref}
-          target="_blank"
-          rel="noopener noreferrer external"
-          class="icon-button onion-link"
-          title="Onion service"
-          aria-label="Open onion service"
-        >
-          <MaskIcon src={torIcon} size="1.5em" color="#7D4698" />
-        </a>
-      )
-    }
-
+  <div class="surface">
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer external"
-      class="icon-button external-link"
-      title="Open website"
-      aria-label="Open website"
+      class="primary-link"
     >
-      <MaskIcon
-        src={externalLinkIcon}
-        size="1em"
-        color="var(--monero-orange)"
-        rtl={rtl}
-      />
+      <div class="image">
+        <Image
+          src={logo}
+          alt={`${title} Logo`}
+          width={logoDimensions.width}
+          height={logoDimensions.height}
+          format="avif"
+          priority
+        />
+      </div>
+
+      <div class="text">
+        <span class="title">{title}</span>
+        <span class="subtitle">{subtitle}</span>
+      </div>
     </a>
+
+    <div class={`actions ${onionHref ? "has-onion" : ""}`} aria-label="Links">
+      {
+        onionHref && (
+          <a
+            href={onionHref}
+            target="_blank"
+            rel="noopener noreferrer external"
+            class="icon-button onion-link"
+            title="Onion service"
+            aria-label="Open onion service"
+          >
+            <MaskIcon src={torIcon} size="1.5em" color="#7D4698" />
+          </a>
+        )
+      }
+
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer external"
+        class="icon-button external-link"
+        title="Open website"
+        aria-label="Open website"
+      >
+        <MaskIcon
+          src={externalLinkIcon}
+          size="1em"
+          color="var(--monero-orange)"
+          rtl={rtl}
+        />
+      </a>
+    </div>
   </div>
 </div>
 
@@ -86,9 +88,21 @@ const logoDimensions = await getPublicImageDimensions(logo);
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
 
-    background: var(--card-color);
-    border: 1px solid var(--border-color);
     border-radius: 0.5rem;
+    padding: 1px;
+    background: var(--border-color);
+
+    overflow: visible;
+    position: relative;
+  }
+
+  /* inner surface: clips hover backgrounds to rounded corners */
+  .surface {
+    display: flex;
+    flex: 1;
+    border-radius: inherit;
+    background: var(--card-color);
+    overflow: clip;
   }
 
   .text {
@@ -121,8 +135,11 @@ const logoDimensions = await getPublicImageDimensions(logo);
     object-fit: contain;
   }
 
-  /* Override default rel=external icon that's set by globals.css - using MaskIcon here */
+  a {
+    outline-offset: -3px; /* improve focus outline visibility */
+  }
   a::after {
+    /* Override default rel=external icon that's set by globals.css - using MaskIcon here */
     display: none;
   }
 
@@ -156,7 +173,6 @@ const logoDimensions = await getPublicImageDimensions(logo);
     box-sizing: border-box;
   }
 
-  /* Normal hover behavior */
   .primary-link:hover,
   .icon-button:hover {
     background: var(--card-hover-color);

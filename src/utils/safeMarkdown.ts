@@ -23,7 +23,7 @@ export const parse = (markdown: string): string => {
 
 export const parseInline = (markdown: string): string => {
   return DOMPurify.sanitize(
-    marked.parseInline(markdown) as string,
+    marked.parseInline(markdown, { breaks: true }) as string,
     purifyConfig,
   );
 };

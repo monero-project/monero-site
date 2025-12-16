@@ -1,12 +1,584 @@
 ---
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
 
 import TitleCard from "@/components/ui/TitleCard.astro";
+
+import communityLogo from "@/assets/images/community-logo.png";
+import cryptoLock from "@/assets/images/crypto-lock.png";
+import surveillanceImage from "@/assets/images/surveillanceImage.png";
+
+import briefcaseIcon from "@/assets/icons/mask/briefcase.avif";
+import coinsIcon from "@/assets/icons/mask/coins.avif";
+import eyeOffIcon from "@/assets/icons/mask/eyeOff.avif";
+import fistIcon from "@/assets/icons/mask/fist.avif";
+import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
+import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
+import shieldPlusIcon from "@/assets/icons/mask/shieldPlus.avif";
+
+import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+
+import Button from "@/components/ui/Button.astro";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
+import safeMarkdown from "@/utils/safeMarkdown";
+
+const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
+const t = await createTInstance(locale);
 ---
 
 <Layout
-  title="What is Monero?"
-  description="An introduction to Monero, the privacy-focused cryptocurrency."
+  title={t("what-is-monero.pageTitle")}
+  description={t("what-is-monero.heroSubtitle")}
 >
-  <TitleCard title="What is Monero?" />
+  <div id="content">
+    <TitleCard title={t("what-is-monero.heroTitle")} />
+    <div class="card-item">
+      <div class="text">
+        <span class="eyebrow"
+          >{t("what-is-monero.sections.problem.eyebrow")}</span
+        >
+        <h2
+          set:html={safeMarkdown.parseInline(
+            t("what-is-monero.sections.problem.title"),
+          )}
+        />
+        <p
+          set:html={safeMarkdown.parseInline(
+            t("what-is-monero.sections.problem.content"),
+          )}
+        />
+      </div>
+      <div class="media">
+        <Image src={surveillanceImage} alt="SurveillanceImage" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="card-item reverse">
+      <div class="text">
+        <span class="eyebrow"
+          >{t("what-is-monero.sections.solution.eyebrow")}</span
+        >
+        <h2
+          set:html={safeMarkdown.parseInline(
+            t("what-is-monero.sections.solution.title"),
+          )}
+        />
+        <p
+          set:html={safeMarkdown.parseInline(
+            t("what-is-monero.sections.solution.content"),
+          )}
+        />
+      </div>
+      <div class="media">
+        <Image src={cryptoLock} alt="Crypto Lock" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="card-item">
+      <div class="text">
+        <span class="eyebrow"
+          >{t("what-is-monero.sections.useCases.eyebrow")}</span
+        >
+        <h2>{t("what-is-monero.sections.useCases.title")}</h2>
+        <p
+          set:html={safeMarkdown.parseInline(
+            t("what-is-monero.sections.useCases.intro"),
+          )}
+        />
+      </div>
+      <div class="use-cases-list">
+        <div class="use-case-item">
+          <div class="icon">
+            <MaskIcon src={shieldCheckIcon} size="2rem" />
+          </div>
+          <div>
+            <h3>
+              {
+                t(
+                  "what-is-monero.sections.useCases.items.financialPrivacy.title",
+                )
+              }
+            </h3>
+            <p>
+              {
+                t(
+                  "what-is-monero.sections.useCases.items.financialPrivacy.description",
+                )
+              }
+            </p>
+          </div>
+        </div>
+        <div class="use-case-item">
+          <div class="icon">
+            <MaskIcon src={coinsIcon} size="2rem" />
+          </div>
+          <div>
+            <h3>
+              {t("what-is-monero.sections.useCases.items.fungibility.title")}
+            </h3>
+            <p>
+              {
+                t(
+                  "what-is-monero.sections.useCases.items.fungibility.description",
+                )
+              }
+            </p>
+          </div>
+        </div>
+        <div class="use-case-item">
+          <div class="icon">
+            <MaskIcon src={fistIcon} size="2rem" />
+          </div>
+          <div>
+            <h3>
+              {
+                t(
+                  "what-is-monero.sections.useCases.items.censorshipResistance.title",
+                )
+              }
+            </h3>
+            <p>
+              {
+                t(
+                  "what-is-monero.sections.useCases.items.censorshipResistance.description",
+                )
+              }
+            </p>
+          </div>
+        </div>
+        <div class="use-case-item">
+          <div class="icon">
+            <MaskIcon src={briefcaseIcon} size="2rem" />
+          </div>
+          <div>
+            <h3>
+              {
+                t(
+                  "what-is-monero.sections.useCases.items.businessPayments.title",
+                )
+              }
+            </h3>
+            <p>
+              {
+                t(
+                  "what-is-monero.sections.useCases.items.businessPayments.description",
+                )
+              }
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="card-item centered">
+      <div class="text">
+        <span class="eyebrow"
+          >{t("what-is-monero.sections.technology.eyebrow")}</span
+        >
+        <h2>{t("what-is-monero.sections.technology.title")}</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="icon">
+            <MaskIcon src={hatGlassesIcon} size="100%" />
+          </div>
+          <h3>
+            {
+              t(
+                "what-is-monero.sections.technology.features.stealthAddresses.title",
+              )
+            }
+          </h3>
+          <p>
+            {
+              t(
+                "what-is-monero.sections.technology.features.stealthAddresses.description",
+              )
+            }
+          </p>
+          <p
+            class="based-on"
+            set:html={safeMarkdown.parseInline(
+              t(
+                "what-is-monero.sections.technology.features.stealthAddresses.basedOn",
+                {
+                  mpECDH: localizeHref(
+                    locale,
+                    "/resources/moneropedia/elliptic-curve-diffie-hellman/",
+                  ),
+                },
+              ),
+            )}
+          />
+        </div>
+        <div class="feature-item">
+          <div class="icon">
+            <MaskIcon src={shieldPlusIcon} size="100%" />
+          </div>
+          <h3>{t("what-is-monero.sections.technology.features.fcmp.title")}</h3>
+          <p>
+            {t("what-is-monero.sections.technology.features.fcmp.description")}
+          </p>
+          <p
+            class="based-on"
+            set:html={safeMarkdown.parseInline(
+              t("what-is-monero.sections.technology.features.fcmp.basedOn", {
+                mpCurveTrees: localizeHref(
+                  locale,
+                  "/resources/moneropedia/curve-trees/",
+                ),
+              }),
+            )}
+          />
+        </div>
+        <div class="feature-item">
+          <div class="icon">
+            <MaskIcon src={eyeOffIcon} size="100%" />
+          </div>
+          <h3>
+            {
+              t(
+                "what-is-monero.sections.technology.features.confidentialTransactions.title",
+              )
+            }
+          </h3>
+          <p>
+            {
+              t(
+                "what-is-monero.sections.technology.features.confidentialTransactions.description",
+              )
+            }
+          </p>
+          <p
+            class="based-on"
+            set:html={safeMarkdown.parseInline(
+              t(
+                "what-is-monero.sections.technology.features.confidentialTransactions.basedOn",
+                {
+                  mpPedersenCommitments: localizeHref(
+                    locale,
+                    "/resources/moneropedia/pedersen-commitment/",
+                  ),
+                  mpBulletproofs: localizeHref(
+                    locale,
+                    "/resources/moneropedia/bulletproofs/",
+                  ),
+                },
+              ),
+            )}
+          />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="card-item centered">
+      <div class="text">
+        <span class="eyebrow">{t("what-is-monero.sections.video.eyebrow")}</span
+        >
+        <h2>{t("what-is-monero.sections.video.title")}</h2>
+        <p>{t("what-is-monero.sections.video.description")}</p>
+      </div>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/8quGD9W7B2I"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="card-item">
+      <div class="text">
+        <h2>{t("what-is-monero.sections.community.title")}</h2>
+        <p
+          set:html={safeMarkdown.parseInline(
+            t("what-is-monero.sections.community.content", {
+              mrlLink: localizeHref(locale, "/resources/research-lab/"),
+            }),
+          )}
+        />
+        <div class="community-cta-links">
+          <a
+            href={localizeHref(locale, "/community/hangouts/")}
+            aria-label={t("what-is-monero.sections.community.joinCommunity")}
+            >{t("what-is-monero.sections.community.joinCommunity")}
+            <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} /></a
+          >
+          <a
+            href={localizeHref(locale, "/community/workgroups/")}
+            aria-label={t(
+              "what-is-monero.sections.community.contributeToMonero",
+            )}
+            >{t("what-is-monero.sections.community.contributeToMonero")}
+            <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} /></a
+          >
+        </div>
+      </div>
+      <div class="media">
+        <Image src={communityLogo} alt="Monero Community Logo" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="cta-card">
+      <h2 class="title">{t("what-is-monero.sections.cta.title")}</h2>
+      <p class="subtitle">{t("what-is-monero.sections.cta.subtitle")}</p>
+      <div class="cta-buttons">
+        <Button
+          variant="primary"
+          href={localizeHref(locale, "/downloads/community/#wallets")}
+        >
+          {t("what-is-monero.sections.cta.downloadWallet")}
+        </Button>
+        <Button
+          variant="secondary"
+          href={localizeHref(locale, "/get-started/exchanges/")}
+        >
+          {t("what-is-monero.sections.cta.getMonero")}
+        </Button>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  #content {
+    max-width: 120ch;
+    margin-inline: auto;
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--monero-orange);
+    font-size: var(--font-size-sm);
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1em 0;
+  }
+
+  #content :where(p) {
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  #content :where(.feature-item, .cta-card) {
+    border-radius: 0.5rem;
+  }
+
+  .video-container {
+    position: relative;
+    width: min(100%, 854px);
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-block: 2rem;
+  }
+
+  .card-item h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--heading-color);
+    margin-top: 0.5rem;
+  }
+
+  .card-item p {
+    font-size: var(--font-size-lg);
+    max-width: 75ch;
+    margin-inline: auto;
+  }
+
+  .card-item .media {
+    position: relative;
+    min-width: 0;
+    align-self: stretch;
+  }
+
+  .card-item .media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  .card-item.reverse .text {
+    order: 2;
+  }
+
+  .card-item.centered {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1em;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .feature-item {
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-item h3,
+  .use-case-item h3 {
+    font-size: var(--font-size-lg);
+    color: var(--heading-color);
+  }
+
+  .feature-item p,
+  .use-case-item p {
+    font-size: var(--font-size-md);
+    margin: 0;
+  }
+
+  .feature-item .based-on {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    margin-top: auto;
+    padding-top: 2rem;
+  }
+
+  .feature-item .based-on a {
+    color: var(--monero-orange);
+  }
+
+  .feature-item h3:has(span.num) {
+    margin-top: 0;
+  }
+
+  .feature-item .icon,
+  .use-case-item .icon {
+    color: var(--monero-orange);
+  }
+
+  .feature-item .icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+  }
+
+  .use-cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .use-case-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .use-case-item h3 {
+    margin: 0;
+  }
+
+  .community-cta-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .community-cta-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
+    font-weight: var(--font-weight-bold);
+    color: var(--monero-orange);
+  }
+
+  .cta-card {
+    background: var(--card-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta-card .title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 0;
+  }
+
+  .cta-card .subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .cta-buttons {
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cta-buttons :global(.button) {
+    padding: 1em 2em;
+  }
+
+  @media (max-width: 1000px) {
+    .media {
+      display: none;
+    }
+    .card-item {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .community-cta-links {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+</style>

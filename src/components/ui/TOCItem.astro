@@ -1,15 +1,15 @@
 ---
 import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
+import type { ImageMetadata } from "astro";
 import MaskIcon from "./MaskIcon.astro";
 
 export interface Props {
   href?: string;
-  icon: any;
+  icon: ImageMetadata;
   title: string;
   subtitle: string;
   tag?: "a" | "span";
   className?: string;
-  [key: string]: any;
 }
 
 const {
@@ -53,6 +53,7 @@ const linkProps = Tag === "a" ? { href } : {};
     padding: 0.75rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    user-select: none;
     flex: 1;
   }
 

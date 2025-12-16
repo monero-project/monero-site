@@ -2,6 +2,7 @@
 import safeMarkdown from "@/utils/safeMarkdown.ts";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
+import type { TFunction } from "i18next";
 
 import Button from "@/components/ui/Button.astro";
 import ColorIcon from "@/components/ui/ColorIcon.astro";
@@ -40,7 +41,7 @@ interface Props {
   torrentUrl?: string;
   magnetUrl?: string;
   verifyLink?: string;
-  t: (key: string) => string;
+  t: TFunction;
 }
 
 const {
@@ -181,7 +182,14 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     </div>
     <div class="verification">
       <h3>{t("downloads.core.verifyDownload")}</h3>
-      <p set:html={safeMarkdown.parse(t("downloads.core.verifyDescription"))} />
+      <p
+        set:html={safeMarkdown.parse(
+          t("downloads.core.verifyDescription", {
+            verifyInstructionLink:
+              "https://docs.getmonero.org/interacting/verify-monero-binaries",
+          }),
+        )}
+      />
       <a
         href="/downloads/hashes.txt"
         class="verify-link"
@@ -310,11 +318,11 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     border-top: 1px solid var(--border-color);
   }
 
-  .verification h4 {
+  .verification h3 {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
-    margin: 0 0 0.5rem 0;
+    margin-block: 0.5rem 0;
   }
 
   .verification p {
