@@ -498,7 +498,7 @@
       "solution": {
         "eyebrow": "The solution",
         "title": "Monero is <span style=\"color: var(--monero-orange);\">private by default</span>",
-        "content": "Monero is the leading privacy-focused cryptocurrency where **on-chain activity is private by default.** The public can't see your balance or track you just by looking at the blockchain.\n\nThere's no \"privacy mode\" you have to turn on - every transaction uses privacy features automatically, while still letting you disclose details selectively when needed.\n\nBy not allowing transparent transactions, Monero prevents intermediaries from coercing users onto a surveilled ledger - because there is no sanctioned transparent path to enforce in the first place."
+        "content": "Monero is the leading privacy-focused cryptocurrency where **on-chain activity is private by default.** The public can't see your balance or track you just by looking at the blockchain.\n\nThere's no \"privacy mode\" you have to turn on - every transaction uses privacy features automatically, while still letting you disclose details selectively when needed.\n\nBy not allowing transparent transactions, Monero prevents intermediaries from coercing users onto a surveilled ledger - because there is no transparent path to enforce in the first place."
       },
       "useCases": {
         "eyebrow": "Use Cases",
@@ -546,8 +546,8 @@
       },
       "video": {
         "eyebrow": "Learn More",
-        "title": "Monero Means Money: Cryptocurrency 101 (2020)",
-        "description": "In this documentary feature film, Dr. Daniel Kim gives a deep-dive of the technical, economic, and social aspects of fiat, Bitcoin, and Monero from 2008 to today."
+        "title": "Monero: Sound Money, Safe Mode (2020)",
+        "description": "In this presentation, Dr. Daniel Kim gives a deep-dive introduction of cryptocurrency and Monero."
       },
       "community": {
         "title": "Built by a global community",
