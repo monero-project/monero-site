@@ -36,10 +36,10 @@ const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
 const t = await createTInstance(locale);
 
-const videoVttFiles = readdirSync(
+const i18nVttFiles = readdirSync(
   join(process.cwd(), "public", "media", "vtt", "msmsm"),
 )
-  .filter((f) => f.endsWith(".vtt"))
+  .filter((f) => f.endsWith(".vtt") && f !== "en.vtt")
   .map((f) => f.replace(".vtt", ""));
 
 const getLanguageLabel = (lang: string): string => {
@@ -318,8 +318,14 @@ const getLanguageLabel = (lang: string): string => {
           aria-label="Dr. Daniel Kim's presentation on Monero"
         >
           <source src="/media/msmsm.mp4" type="video/mp4" />
+          <track
+            kind="captions"
+            src="/media/vtt/msmsm/en.vtt"
+            srclang="en"
+            label="English"
+          />
           {
-            videoVttFiles.map((lang) => (
+            i18nVttFiles.map((lang) => (
               <track
                 kind="captions"
                 src={`/media/vtt/msmsm/${lang}.vtt`}
