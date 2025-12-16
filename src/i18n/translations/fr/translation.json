@@ -481,5 +481,83 @@
       "community": "Communauté",
       "meetingLogs": "Journaux de Réunions"
     }
+  },
+  "what-is-monero": {
+    "pageTitle": "Qu'est-ce que Monero ? | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+    "heroTitle": "Qu'est-ce que Monero ?",
+    "heroSubtitle": "Une introduction à Monero, la cryptomonnaie axée sur la confidentialité.",
+    "sections": {
+      "problem": {
+        "eyebrow": "Le problème",
+        "title": "La plupart des cryptomonnaies <span style=\"color: #E04B54\">ne sont pas privées</span>",
+        "content": "Bitcoin, Ethereum et la plupart des autres cryptomonnaies ont des blockchains transparentes. En utilisant des explorateurs de blocs, n'importe qui peut voir votre solde, suivre vos dépenses et tracer où va votre argent.\n\nImaginez si tout le monde pouvait voir votre relevé bancaire - c'est ainsi que fonctionnent la plupart des cryptomonnaies.\n\nCe manque de confidentialité introduit des risques significatifs, du vol ciblé à la surveillance financière par les gouvernements et les entreprises."
+      },
+      "solution": {
+        "eyebrow": "La solution",
+        "title": "Monero est <span style=\"color: var(--monero-orange);\">privé par défaut</span>",
+        "content": "Monero est la cryptomonnaie leader axée sur la confidentialité où **l'activité en chaîne est privée par défaut.** Le public ne peut pas voir votre solde ou vous traquer simplement en regardant la blockchain.\n\nIl n'y a pas de \"mode confidentialité\" à activer - chaque transaction utilise automatiquement des fonctionnalités de confidentialité, tout en vous permettant de divulguer des détails de manière sélective si nécessaire.\n\nEn n'autorisant pas les transactions transparentes, Monero empêche les intermédiaires de contraindre les utilisateurs à un registre surveillé - parce qu'il n'y a pas de chemin transparent à appliquer en premier lieu."
+      },
+      "useCases": {
+        "eyebrow": "Cas d'utilisation",
+        "title": "Pourquoi les gens utilisent Monero",
+        "intro": "Certains étiquettent Monero comme la monnaie des acteurs malveillants en raison de sa confidentialité - mais c'est comme dire que les rideaux sont suspects parce qu'ils empêchent les étrangers de regarder dans votre maison.\n\nLa confidentialité est un droit humain fondamental. Monero protège ce droit.",
+        "items": {
+          "financialPrivacy": {
+            "title": "Confidentialité Financière",
+            "description": "Gardez votre salaire, vos économies et vos habitudes de dépenses privés des employeurs, des entreprises et des courtiers de données."
+          },
+          "fungibility": {
+            "title": "Vraie Fongibilité",
+            "description": "1 XMR vaut n'importe quel autre - pas de concept de \"pièces contaminées\"."
+          },
+          "censorshipResistance": {
+            "title": "Résistance à la Censure",
+            "description": "Aucune autorité centrale ne peut déclarer vos transactions inacceptables."
+          },
+          "businessPayments": {
+            "title": "Paiements d'Entreprise",
+            "description": "Acceptez les paiements sans exposer vos revenus, fournisseurs ou relations financières aux concurrents."
+          }
+        }
+      },
+      "technology": {
+        "eyebrow": "Technologie",
+        "title": "Comment Monero vous protège",
+        "features": {
+          "stealthAddresses": {
+            "title": "Adresses Stealth",
+            "description": "Chaque transaction génère une adresse unique et à usage unique pour le destinataire, garantissant que l'adresse du destinataire n'apparaît jamais sur la blockchain.",
+            "basedOn": "Basé sur : [Elliptic Curve Diffie-Hellman]({{mpECDH}})"
+          },
+          "fcmp": {
+            "title": "FCMP++",
+            "description": "Full Chain Membership Proofs (FCMP++) sont des preuves de connaissance zéro qui prouvent qu'un paiement a utilisé une vraie pièce sur la blockchain, sans révéler laquelle - protégeant la confidentialité de l'expéditeur.",
+            "basedOn": "Basé sur : [Curve Trees]({{mpCurveTrees}})"
+          },
+          "confidentialTransactions": {
+            "title": "Transactions Confidentielles",
+            "description": "Les montants des transactions sont chiffrés, donc seuls l'expéditeur et le destinataire connaissent la valeur transférée.",
+            "basedOn": "Basé sur : [Pedersen Commitments]({{mpPedersenCommitments}}) et [Bulletproofs+]({{mpBulletproofs}})"
+          }
+        }
+      },
+      "video": {
+        "eyebrow": "En Savoir Plus",
+        "title": "Monero : Argent Sain, Mode Sécurisé",
+        "description": "Dans cette présentation de 2020, le Dr Daniel Kim décrit comment Monero fonctionne et pourquoi l'argent sain préservant la confidentialité est important."
+      },
+      "community": {
+        "title": "Construit par une communauté mondiale",
+        "content": "Monero n'a pas d'autorité centralisée derrière lui - c'est un projet open-source maintenu par des centaines de développeurs dans le monde entier. Le [Monero Research Lab]({{mrlLink}}) dirige des recherches cryptographiques de pointe, assurant que le protocole reste en avance sur les menaces.\n\nDepuis son lancement en 2014, le projet a reçu des contributions de **500+ développeurs** situés partout dans le monde.",
+        "joinCommunity": "Rejoignez la communauté",
+        "contributeToMonero": "Contribuez à Monero"
+      },
+      "cta": {
+        "title": "Prêt à commencer ?",
+        "subtitle": "Rejoignez les millions d'utilisateurs prenant le contrôle de leur confidentialité financière.",
+        "downloadWallet": "Téléchargez un portefeuille",
+        "getMonero": "Obtenez Monero"
+      }
+    }
   }
 }
