@@ -265,26 +265,6 @@ const navItems = [
     z-index: 10;
   }
 
-  fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-    min-inline-size: 0;
-    display: contents;
-  }
-
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
   .header-inner {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -313,7 +293,7 @@ const navItems = [
   .utils {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     justify-self: end;
   }
 
@@ -323,55 +303,7 @@ const navItems = [
     align-items: center;
   }
 
-  .hamburger {
-    color: var(--paragraph-main);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.25rem;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  .nav {
-    opacity: 0;
-    position: fixed;
-    inset-block: 0;
-    inset-inline-end: 0;
-    inset-inline-start: auto;
-
-    inline-size: min(26.25rem, calc(100vw - var(--drawer-gap)));
-    box-sizing: border-box;
-
-    background: var(--bg-color);
-    padding-block: 1rem;
-    padding-inline: 1rem;
-
-    z-index: 1001;
-
-    display: none;
-    flex-direction: column;
-    overflow: hidden;
-
-    margin-inline-end: -100vw;
-    transition:
-      margin-inline-end 0.25s ease,
-      opacity 0.25s ease;
-  }
-
-  .drawer-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-block: 0.5rem;
-    padding-inline: 0;
-    background: inherit;
-    flex-shrink: 0;
-  }
-
+  .hamburger,
   .close {
     color: var(--paragraph-main);
     display: inline-flex;
@@ -381,6 +313,70 @@ const navItems = [
     line-height: 1;
   }
 
+  .hamburger {
+    font-size: 1.25rem;
+  }
+
+  :global(.lang .icon) {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-inline-size: 0;
+    display: contents;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .nav {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+
+    inline-size: min(26.25rem, calc(100vw - var(--drawer-gap)));
+    box-sizing: border-box;
+
+    background: var(--bg-color);
+    padding: 1rem;
+
+    z-index: 1001;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-block: 0.5rem;
+    background: inherit;
+    flex-shrink: 0;
+  }
+
   .nav-list {
     display: flex;
     flex-direction: column;
@@ -388,7 +384,6 @@ const navItems = [
     margin: 1rem 0 0;
     padding: 0;
     list-style: none;
-    justify-content: flex-start;
 
     flex: 1 1 auto;
     overflow-y: auto;
@@ -402,18 +397,18 @@ const navItems = [
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
-    display: block;
+    z-index: 1000;
+    touch-action: none;
+
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease;
-    z-index: 1000;
-    touch-action: none;
   }
 
   .nav-toggle:checked ~ .nav {
-    display: flex;
+    transform: translateX(0);
     opacity: 1;
-    margin-inline-end: 0;
+    pointer-events: auto;
   }
 
   .nav-toggle:checked ~ .scrim {
@@ -421,40 +416,24 @@ const navItems = [
     pointer-events: auto;
   }
 
-  /* Reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    .nav,
-    .scrim {
-      transition: none;
-    }
+  body:has(#nav-toggle:checked) {
+    overflow: hidden;
+    overscroll-behavior: none;
   }
 
-  @media (max-width: 1200px) {
-    body:has(#nav-toggle:checked) {
-      overflow: hidden;
-      overscroll-behavior: none;
-    }
-
-    /* When language dropdown is open, change header background */
-    .header:has(.lang-container[open]) {
-      background: var(--card-color);
-    }
-
-    :global(.lang .icon) {
-      inline-size: 1.5rem;
-      block-size: 1.5rem;
-    }
-
-    .utils {
-      gap: 1rem;
-    }
+  .header:has(.lang-container[open]) {
+    background: var(--card-color);
   }
 
-  @media (min-width: 1201px) {
+  @media (min-width: 1200px) and (hover: hover) {
     .header {
       position: relative;
       background: unset;
       box-shadow: unset;
+    }
+
+    .header:has(.lang-container[open]) {
+      background: unset;
     }
 
     .header-inner {
@@ -462,18 +441,19 @@ const navItems = [
     }
 
     .nav {
-      opacity: unset;
       position: static;
       inset: auto;
       inline-size: auto;
       padding: 0;
-      margin-inline-end: 0;
       background: unset;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-      display: block;
       overflow: visible;
+
+      transform: none;
+      opacity: 1;
+      pointer-events: auto;
       transition: none;
+
+      display: block;
     }
 
     .nav-list {
@@ -482,33 +462,41 @@ const navItems = [
       justify-content: center;
       gap: 2rem;
       margin: 0;
-      padding: 0;
       flex: unset;
       overflow: visible;
     }
 
-    .drawer-header {
-      display: none;
+    .nav-toggle:checked ~ .nav {
+      transform: unset;
+      opacity: unset;
     }
 
-    .scrim {
-      display: none;
+    body:has(#nav-toggle:checked) {
+      overflow: unset;
+      overscroll-behavior: unset;
     }
 
+    .drawer-header,
+    .scrim,
     .hamburger {
       display: none;
     }
 
-    /* Large-screen dropdown behaviour */
     .header:has(.nav-item--dropdown:hover),
     .header:has(.nav-item--dropdown:focus-within) {
       background: var(--card-color);
     }
 
-    /* Prevent other dropdowns from opening via hover when one is focused */
     .header:has(.nav-item--dropdown:focus-within)
       :global(.nav-item--dropdown:not(:focus-within)) {
       pointer-events: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav,
+    .scrim {
+      transition: none;
     }
   }
 </style>

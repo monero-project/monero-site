@@ -271,22 +271,17 @@ const highlightOptions = [
     position: relative;
     margin-top: 3rem;
   }
-
   .exchanges-page-layout {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
-
   .main-content {
     flex: 1;
   }
 
   .sidebar {
-    flex: 0 0 25rem;
-    position: sticky;
-    top: 2rem;
-    height: fit-content;
-    margin-bottom: 2rem;
+    display: none;
   }
 
   .filters-section {
@@ -294,19 +289,16 @@ const highlightOptions = [
     background: var(--card-color);
     border-radius: 0.5rem;
   }
-
   .filters-title {
-    margin-top: 0;
+    margin: 0 0 1rem;
     color: var(--heading-color);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
-    margin-bottom: 1rem;
   }
-
   .filters-description {
     color: var(--paragraph-subtitle);
     font-size: var(--font-size-md);
-    margin-bottom: 2rem;
+    margin: 0 0 2rem;
   }
 
   .highlight-options {
@@ -314,14 +306,12 @@ const highlightOptions = [
     flex-direction: column;
     gap: 1rem;
   }
-
   .highlight-option {
     display: flex;
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     background: var(--card-hover-color);
   }
-
   .highlight-option:hover {
     background: var(--card-color);
   }
@@ -329,19 +319,16 @@ const highlightOptions = [
   .clear-highlights {
     text-align: right;
   }
-
   .clear-highlights-link {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: var(--font-size-sm);
     cursor: pointer;
   }
-
   .clear-highlights-link:hover {
     text-decoration: underline;
   }
 
-  /* hidden control inputs, fixed so focus doesn't scroll */
   .filter-toggle,
   .mobile-filter-toggle {
     position: fixed;
@@ -353,7 +340,6 @@ const highlightOptions = [
     pointer-events: none;
   }
 
-  /* FILTER HIGHLIGHTING */
   #filter-fiat:checked ~ .exchanges-wrapper :global(tr[data-highlight~="fiat"]),
   #filter-privacy:checked
     ~ .exchanges-wrapper
@@ -365,22 +351,13 @@ const highlightOptions = [
   }
 
   #filter-fiat:checked
-    ~ .exchanges-wrapper
-    .highlight-option[data-highlight~="fiat"],
-  #filter-fiat:checked
-    ~ .mobile-filter-sheet
+    ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
     .highlight-option[data-highlight~="fiat"],
   #filter-privacy:checked
-    ~ .exchanges-wrapper
-    .highlight-option[data-highlight~="privacy"],
-  #filter-privacy:checked
-    ~ .mobile-filter-sheet
+    ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
     .highlight-option[data-highlight~="privacy"],
   #filter-easiest:checked
-    ~ .exchanges-wrapper
-    .highlight-option[data-highlight~="user-friendly"],
-  #filter-easiest:checked
-    ~ .mobile-filter-sheet
+    ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
     .highlight-option[data-highlight~="user-friendly"] {
     background: var(--card-color);
     border-color: var(--monero-orange);
@@ -392,129 +369,122 @@ const highlightOptions = [
     outline: 2px solid var(--monero-orange);
   }
 
-  /* MOBILE BOTTOM BAR & SHEET */
-  .mobile-filter-container,
-  .mobile-filter-sheet {
-    display: none;
+  .mobile-filter-container {
+    display: block;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    margin-top: 1.5rem;
+    margin-inline: -2rem;
+    background-color: var(--bg-color);
   }
 
+  .mobile-filter-bar {
+    display: block;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-filter-bar-inner,
   .mobile-filter-close {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
   }
 
-  @media (max-width: 1200px) {
+  .mobile-filter-bar-inner:hover {
+    background: var(--card-hover-color);
+  }
+
+  .mobile-filter-subtitle {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-normal);
+    color: var(--paragraph-subtitle);
+  }
+
+  .mobile-filter-sheet {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-block: 1rem;
+    padding-inline: 1.25rem;
+    background: var(--bg-color);
+    border-radius: 1.25rem 1.25rem 0 0;
+    max-height: 75vh;
+    overflow-y: auto;
+    z-index: 3;
+    transform: translateY(100%);
+    transition: transform 0.25s ease-out;
+    margin: 0;
+  }
+
+  .mobile-filter-sheet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+
+  .mobile-filter-sheet .intro-title {
+    font-size: var(--font-size-xl);
+    margin: 1rem 0 0.25rem;
+  }
+  .mobile-filter-sheet .intro-description {
+    font-size: var(--font-size-base);
+    margin: 0 0 1.25rem;
+  }
+
+  #mobile-filter-toggle:checked ~ .mobile-filter-sheet {
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.35);
+    transform: translateY(0);
+  }
+
+  .filter-text {
+    display: none;
+  }
+  #filter-easiest:checked
+    ~ .exchanges-wrapper
+    .mobile-filter-subtitle
+    .filter-text[data-filter="easiest"],
+  #filter-fiat:checked
+    ~ .exchanges-wrapper
+    .mobile-filter-subtitle
+    .filter-text[data-filter="fiat"],
+  #filter-privacy:checked
+    ~ .exchanges-wrapper
+    .mobile-filter-subtitle
+    .filter-text[data-filter="privacy"] {
+    display: inline;
+  }
+
+  @media (min-width: 1200px) {
     .exchanges-page-layout {
-      flex-direction: column;
+      flex-direction: row;
     }
-
     .sidebar {
-      display: none;
-    }
-
-    /* sticky container to keep bar above footer */
-    .mobile-filter-container {
       display: block;
+      flex: 0 0 25rem;
       position: sticky;
-      bottom: 0;
-      z-index: 2;
-      margin-top: 1.5rem;
-      margin-inline: -2rem;
-      background-color: var(--bg-color);
+      top: 2rem;
+      height: fit-content;
+      margin-bottom: 2rem;
     }
 
-    .mobile-filter-bar {
-      display: block;
-      padding: 1rem 1rem;
-      background-color: var(--bg-color);
-      border-top: 1px solid var(--border-color);
-      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
-    }
-
-    .mobile-filter-bar-inner,
-    .mobile-filter-close {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.65rem 1rem;
-      border-radius: 999px;
-      background: var(--card-color);
-      border: 1px solid var(--border-color);
-      font-size: var(--font-size-base);
-      font-weight: var(--font-weight-semibold);
-      color: var(--heading-color);
-    }
-
-    .mobile-filter-bar-inner:hover {
-      background: var(--card-hover-color);
-    }
-
-    .mobile-filter-subtitle {
-      font-size: var(--font-size-xs);
-      font-weight: var(--font-weight-normal);
-      color: var(--paragraph-subtitle);
-    }
-
-    /* sheet overlay */
+    .mobile-filter-container,
     .mobile-filter-sheet {
-      display: block;
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding-block: 1rem;
-      padding-inline: 1.25rem;
-      background: var(--bg-color);
-      border-radius: 1.25rem 1.25rem 0 0;
-
-      max-height: 75vh;
-      overflow-y: auto;
-      z-index: 3;
-      transform: translateY(100%);
-      transition: transform 0.25s ease-out;
-      margin: 0;
-    }
-
-    .mobile-filter-sheet-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.75rem;
-    }
-
-    .mobile-filter-sheet .intro-title {
-      font-size: var(--font-size-xl);
-      margin-bottom: 0.25rem;
-    }
-
-    .mobile-filter-sheet .intro-description {
-      font-size: var(--font-size-base);
-      margin-bottom: 1.25rem;
-    }
-
-    /* open sheet */
-    #mobile-filter-toggle:checked ~ .mobile-filter-sheet {
-      box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.35);
-      transform: translateY(0);
-    }
-
-    .filter-text {
       display: none;
-    }
-
-    #filter-easiest:checked
-      ~ .exchanges-wrapper
-      .mobile-filter-subtitle
-      .filter-text[data-filter="easiest"],
-    #filter-fiat:checked
-      ~ .exchanges-wrapper
-      .mobile-filter-subtitle
-      .filter-text[data-filter="fiat"],
-    #filter-privacy:checked
-      ~ .exchanges-wrapper
-      .mobile-filter-subtitle
-      .filter-text[data-filter="privacy"] {
-      display: inline;
     }
   }
 </style>

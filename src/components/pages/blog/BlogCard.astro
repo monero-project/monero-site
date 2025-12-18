@@ -27,7 +27,6 @@ const date = localizeDateString(dateString, locale, {
   year: "numeric",
 });
 const localizedLink = localizeHref(locale, `/blog/${id}/`);
-//const imageDimensions = await getPublicImageDimensions(image);
 ---
 
 <div class="card-container">
@@ -233,7 +232,7 @@ const localizedLink = localizeHref(locale, `/blog/${id}/`);
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .thumbnail {
       display: none;
     }

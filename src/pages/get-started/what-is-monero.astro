@@ -323,6 +323,7 @@ const getLanguageLabel = (lang: string): string => {
             src="/media/vtt/msmsm/en.vtt"
             srclang="en"
             label="English"
+            default
           />
           {
             i18nVttFiles.map((lang) => (
@@ -404,13 +405,13 @@ const getLanguageLabel = (lang: string): string => {
 
   .eyebrow {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     color: var(--monero-orange);
     font-size: var(--font-size-sm);
   }
 
   hr {
-    border: none;
+    border: 0;
     border-top: 1px solid var(--border-color);
     margin: 1em 0;
   }
@@ -419,7 +420,6 @@ const getLanguageLabel = (lang: string): string => {
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-body);
   }
-
   #content :where(.feature-item, .cta-card) {
     border-radius: 0.5rem;
   }
@@ -427,34 +427,30 @@ const getLanguageLabel = (lang: string): string => {
   .video-container {
     position: relative;
     width: min(100%, 854px);
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     border-radius: 0.5rem;
     overflow: hidden;
     margin: 0 auto;
   }
-
   .video-container video {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
   }
 
   .card-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     align-items: center;
     margin-block: 2rem;
   }
-
   .card-item h2 {
     font-size: var(--font-size-3xl);
     color: var(--heading-color);
     margin-top: 0.5rem;
   }
-
   .card-item p {
     font-size: var(--font-size-lg);
     max-width: 75ch;
@@ -462,38 +458,40 @@ const getLanguageLabel = (lang: string): string => {
   }
 
   .card-item .media {
-    position: relative;
-    min-width: 0;
-    align-self: stretch;
-  }
-
-  .card-item .media img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-  }
-
-  .card-item.reverse .text {
-    order: 2;
+    display: none;
   }
 
   .card-item.centered {
-    grid-template-columns: 1fr;
     text-align: center;
     gap: 1em;
   }
 
+  .use-cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .use-case-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .use-case-item h3 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    color: var(--heading-color);
+  }
+  .use-case-item p {
+    font-size: var(--font-size-md);
+    margin: 0;
+  }
+
   .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     justify-content: center;
   }
-
   .feature-item {
     border: 1px solid var(--border-color);
     padding: 1.5rem;
@@ -501,15 +499,11 @@ const getLanguageLabel = (lang: string): string => {
     display: flex;
     flex-direction: column;
   }
-
-  .feature-item h3,
-  .use-case-item h3 {
+  .feature-item h3 {
     font-size: var(--font-size-lg);
     color: var(--heading-color);
   }
-
-  .feature-item p,
-  .use-case-item p {
+  .feature-item p {
     font-size: var(--font-size-md);
     margin: 0;
   }
@@ -520,7 +514,6 @@ const getLanguageLabel = (lang: string): string => {
     margin-top: auto;
     padding-top: 2rem;
   }
-
   .feature-item .based-on a {
     color: var(--monero-orange);
   }
@@ -529,11 +522,9 @@ const getLanguageLabel = (lang: string): string => {
     margin-top: 0;
   }
 
-  .feature-item .icon,
-  .use-case-item .icon {
+  :is(.feature-item, .use-case-item) .icon {
     color: var(--monero-orange);
   }
-
   .feature-item .icon {
     width: 2rem;
     height: 2rem;
@@ -542,29 +533,12 @@ const getLanguageLabel = (lang: string): string => {
     border-radius: 999px;
   }
 
-  .use-cases-list {
+  .community-cta-links {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  }
-
-  .use-case-item {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .use-case-item h3 {
-    margin: 0;
-  }
-
-  .community-cta-links {
-    display: flex;
-    gap: 1rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
   }
-
   .community-cta-links a {
     display: inline-flex;
     align-items: center;
@@ -581,18 +555,15 @@ const getLanguageLabel = (lang: string): string => {
     align-items: center;
     text-align: center;
   }
-
   .cta-card .title {
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
     margin: 0;
   }
-
   .cta-card .subtitle {
     font-size: var(--font-size-lg);
   }
-
   .cta-buttons {
     display: flex;
     margin-top: 0.5rem;
@@ -600,22 +571,47 @@ const getLanguageLabel = (lang: string): string => {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .cta-buttons :global(.button) {
     padding: 1em 2em;
   }
 
-  @media (max-width: 1000px) {
-    .media {
-      display: none;
-    }
+  @media (min-width: 900px) {
     .card-item {
-      grid-template-columns: 1fr;
-      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
     }
+    .card-item.centered {
+      grid-template-columns: 1fr;
+    }
+
+    .card-item .media {
+      display: block;
+      position: relative;
+      min-width: 0;
+      align-self: stretch;
+    }
+    .card-item .media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+
+    .card-item.reverse .text {
+      order: 2;
+    }
+
+    .feature-grid {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
     .community-cta-links {
-      flex-direction: column;
-      gap: 2rem;
+      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
   }
 </style>

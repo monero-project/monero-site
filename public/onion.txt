@@ -1,0 +1,30 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+# This file contains the onion addresses used by getmonero.org and
+# downloads.getmonero.org
+#
+# You can check the signature against binaryFate key available in
+# Monero source code at utils/gpg_keys/binaryfate.asc.
+#
+# Main site (getmonero.org):
+http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion
+# 
+# Download subdomain (downloads.getmonero.org):
+http://dlmonerotqz47bjuthtko2k7ik2ths4w2rmboddyxw4tz4adebsmijid.onion
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmAjBeIACgkQ8K9NRioL
+35JaTg/9GWJ7ogJD64TgtAKDV5vPH+mPVMQt47J0znMBhR3z++cNIaESh0mkpAje
+2YTRdTUjFUaZq8emosV+xdzo6KamfeA0hapVeI1zQ6eBNzjYIjN/jOD2/hcFi/6n
+3ywG7nmFlnnnSs8ef/MNXq0HiE8OsyQZfD1UBsIazIJTXr8aKvvsJG8IPmHggTr9
+mY7LIQdtA7wZqdaSpnN4Ah9HrRF3/b2b6Hwnz1ACbi8X4mdAQ07Y87GhowUWMwoV
+Ki0k+T500kA09AuS7RD0YDJxi3N4i7hU2d8vJCUlgGQMrdHZMZiy3DLVvZAdyOzR
+QnE4Y0Q3cBUcRRPIrAXNBbYWtUUNh1ujza4WanZ0FQrC9yDoldnTvQMUllOesakb
+7HyfY/ujPlbUfwP/SEQVizqnk/5IHSdSB1vDtxXf1kYJx2Dp05Fz/D32vGSXXLQi
+TSaVfHS0KYHzWOq362SJqhssZQ0MStbTxdKnzAYx1lBrrHE27Y64ek+uv4tNpDNe
+s/XqMS1+2wPc4ZSsyXAlcxbs/V6hJtGDOxr2UNiqOrjteSxJmxrkBHq9L/qrlUJo
+k/5nerhUtDUkHIMYaOpBJUbq+9RfiTlU8IU6mnVwPzSGxRgygcLxT1TmdAlhoZ/x
+a6a/heb6qLUNkBYZTLo9Hd9U2l6TyQ+WjD1UTafE7RkqU55zJ7g=
+=cZhI
+-----END PGP SIGNATURE-----

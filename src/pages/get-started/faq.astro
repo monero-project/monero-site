@@ -143,43 +143,42 @@ const economicsItems = (
 <style>
   .accordion-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
     margin: 3rem 0;
-  }
-
-  #resource-container {
-    grid-column: span 2;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    overflow: hidden;
+    grid-template-columns: 1fr;
   }
 
   .accordion-card {
     background: var(--card-color);
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
   }
 
   .card-title {
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem;
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--paragraph-main);
     text-transform: uppercase;
   }
 
-  @media (max-width: 900px) {
-    .accordion-card {
-      padding: 1.5rem;
-    }
+  #resource-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    overflow: hidden;
+  }
+
+  @media (min-width: 900px) {
     .accordion-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .accordion-card {
+      padding: 3rem;
     }
     #resource-container {
-      display: flex;
-      flex-direction: column;
+      grid-column: span 2;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
   }
 </style>

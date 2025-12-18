@@ -104,18 +104,18 @@ const dir = getDirection(getLocale(Astro.url));
         </div>
       </>
     ) : (
-      <a href={href} class="link row">
-        {label}
-      </a>
+      <div class="row">
+        <a href={href} class="link">
+          {label}
+        </a>
+      </div>
     )
   }
 </li>
 
 <style>
-  /* === Base === */
   .nav-item {
-    /* desktop: static, mobile overrides to relative */
-    position: static;
+    position: relative;
   }
 
   .row {
@@ -123,8 +123,7 @@ const dir = getDirection(getLocale(Astro.url));
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-block: -1rem 0.5rem;
-    padding-block: 1.5rem 0;
+    padding-block: 1rem;
   }
 
   .link {
@@ -150,57 +149,87 @@ const dir = getDirection(getLocale(Astro.url));
     transition: transform 0.2s ease;
   }
 
-  .mobile-open,
-  .mobile-close {
-    display: none;
-  }
-
   .dd-toggle,
   .dd-close {
     display: none;
   }
 
-  /* === Desktop mega  dropdown === */
-  .dropdown {
-    position: absolute;
-    inset-inline: 0;
-    inset-block-start: 100%;
+  /* mobile list dividers */
+  .nav-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+  }
 
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: transform 0.2s ease;
-    z-index: 20;
+  /* === Mobile / tablet dropdown (accordion) === */
+  .mobile-open {
+    display: block;
+    position: absolute;
+    inset: 0;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .mobile-close {
+    display: none;
+  }
+
+  .dropdown {
+    position: static;
+    width: unset;
+
+    visibility: visible;
+    pointer-events: auto;
+
+    max-height: 0;
+    overflow: hidden;
   }
 
   .dropdown::before {
-    content: "";
-    position: absolute;
-    inset-inline: 0;
-    inset-block-start: 0;
-    height: 1.5rem;
-    transform: translateY(-100%);
-    background: transparent;
+    content: none;
   }
 
   .dropdown-inner {
-    background: var(--card-color);
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 0.5rem 0.5rem;
-    padding-block: 0 1rem;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
   }
 
   .dropdown-content {
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: clamp(1rem, 4vw, 4rem);
-
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem 1.5rem;
+    max-width: none;
+    margin-inline: 0;
+    padding-inline: 0;
+    /* Add vertical padding so the last dropdown item isn't flush against
+       the nav-item border on mobile */
+    padding-bottom: 0.5rem;
+    display: block;
   }
 
-  /* Items */
+  /* Mobile open state */
+  .dd-toggle:checked ~ .dropdown {
+    max-height: unset;
+  }
+
+  .dd-toggle:checked ~ .row > .link {
+    color: var(--heading-color);
+  }
+
+  .dd-toggle:checked ~ .row > .link > .caret {
+    transform: rotate(180deg);
+  }
+
+  .dd-toggle:checked ~ .row .mobile-open {
+    display: none;
+  }
+
+  .dd-toggle:checked ~ .row .mobile-close {
+    display: block;
+    position: absolute;
+    inset: 0;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 1;
+  }
+
   .dropdown-item {
     position: relative;
     display: flex;
@@ -248,16 +277,89 @@ const dir = getDirection(getLocale(Astro.url));
     opacity: 1;
   }
 
-  /* highlight link when hovered/focused */
-  .nav-item--dropdown:is(:hover, :focus-within, :has(.dropdown :focus-visible))
+  .nav-item--dropdown:is(:focus-within, :has(.dropdown :focus-visible))
     > .row
     > .link {
     color: var(--heading-color);
   }
 
-  /* === Desktop hover/focus behaviour === */
-  @media (hover: hover) and (pointer: fine) and (min-width: 1201px) {
-    /* show dropdown on hover/focus */
+  @media (min-width: 1200px) and (hover: hover) {
+    .nav-item {
+      position: static;
+    }
+
+    /* reset mobile accordion states */
+    .dd-toggle:checked ~ .row > .link {
+      color: unset;
+    }
+    .dd-toggle:checked ~ .row > .link > .caret {
+      transform: unset;
+    }
+
+    .row {
+      margin-block: -1rem 0.5rem;
+      padding-block: 1.5rem 0;
+    }
+
+    /* remove mobile dividers */
+    .nav-item:not(:last-child) {
+      border-bottom: none;
+    }
+
+    /* disable radio overlay labels on desktop */
+    .mobile-open,
+    .mobile-close {
+      display: none;
+      pointer-events: none;
+    }
+
+    .dropdown {
+      position: absolute;
+      inset-inline: 0;
+      inset-block-start: 100%;
+
+      /* unset mobile accordion constraints */
+      max-height: unset;
+      overflow: visible;
+
+      /* desktop hidden-by-default */
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-10px);
+      transition: transform 0.2s ease;
+      z-index: 20;
+    }
+
+    .dropdown::before {
+      content: "";
+      position: absolute;
+      inset-inline: 0;
+      inset-block-start: 0;
+      height: 1.5rem;
+      transform: translateY(-100%);
+      background: transparent;
+    }
+
+    .dropdown-inner {
+      background: var(--card-color);
+      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 0.5rem 0.5rem;
+      padding-block: 0 1rem;
+    }
+
+    .dropdown-content {
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: clamp(1rem, 4vw, 4rem);
+      padding-bottom: unset;
+
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem 1.5rem;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
     .nav-item--dropdown:is(
         :hover,
         :focus-within,
@@ -269,105 +371,35 @@ const dir = getDirection(getLocale(Astro.url));
       transform: translateY(0);
     }
 
-    /* rotate caret when open */
     .nav-item--dropdown:is(
         :hover,
         :focus-within,
         :has(.dropdown :focus-visible)
       )
       > .row
-      > .link
-      > .caret {
-      transform: rotate(180deg);
+      > .link {
+      color: var(--heading-color);
     }
 
-    /* radio overlay disabled on desktop */
-    .mobile-open,
-    .mobile-close {
-      pointer-events: none;
-      display: none;
-    }
-  }
-
-  /* === Mobile / tablet (drawer accordion) === */
-  @media (max-width: 1200px) {
-    .row {
-      margin-block: unset;
-      padding-block: 1rem;
-    }
-
-    .nav-item:not(:last-child) {
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .mobile-open {
-      display: block;
-      position: absolute;
-      inset: 0;
-      pointer-events: auto;
-      cursor: pointer;
-      z-index: 1;
-    }
-
-    .mobile-close {
-      display: none;
-    }
-
-    .dropdown {
-      position: static;
-      width: unset;
-      opacity: 1;
-      visibility: visible;
-      box-shadow: unset;
-      pointer-events: auto;
-      /* accordion behaviour - collapsed by default */
-      max-height: 0;
-      overflow: hidden;
-    }
-
-    .dropdown::before {
-      content: none;
-    }
-
-    .dropdown-inner {
-      background: none;
-      box-shadow: none;
-      border-radius: 0;
-      padding-block: 1rem 0rem;
-    }
-
-    .dropdown-content {
-      max-width: none;
-      padding-inline: 0;
-      display: block;
-    }
-
-    .dd-toggle:checked ~ .dropdown {
-      max-height: unset;
-    }
-
-    .dd-toggle:checked ~ .row > .link > .caret {
-      transform: rotate(180deg);
-    }
-
-    .dd-toggle:checked ~ .row .mobile-open {
-      display: none;
-    }
-
-    .dd-toggle:checked ~ .row .mobile-close {
-      display: block;
-      position: absolute;
-      inset: 0;
-      pointer-events: auto;
-      cursor: pointer;
-      z-index: 1;
+    @media (min-width: 1200px) {
+      .nav-item--dropdown:is(
+          :hover,
+          :focus-within,
+          :has(.dropdown :focus-visible)
+        )
+        > .row
+        > .link
+        > .caret {
+        transform: rotate(180deg);
+      }
     }
   }
 
-  /* === Reduce motion === */
+  /* Reduce motion */
   @media (prefers-reduced-motion: reduce) {
     .dropdown,
-    .caret {
+    .caret,
+    .arrow {
       transition: none;
     }
   }

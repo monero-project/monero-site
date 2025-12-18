@@ -309,21 +309,23 @@ const bottomLinks: Link[] = [
     color: var(--heading-color);
   }
 
-  @media (min-width: 560px) {
+  @media (min-width: 600px) {
     .grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1200px) {
     .items {
       padding: var(--desktop-padding);
       padding-top: 5rem;
       padding-bottom: 5rem;
-    }
-
-    .grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .title {
