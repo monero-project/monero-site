@@ -20,6 +20,8 @@ Guides for building and customizing pages, including creation, styling, componen
 
 ## Localization
 
+Guides for managing localization for pages and content.
+
 - [How to add localization to a page](how-to-add-localization-to-a-page.md)
 - [How to configure a new language](how-to-configure-a-new-language.md)
 
@@ -36,5 +38,6 @@ Guides for creating new content on the site, such as blog posts, Moneropedia ent
 Guides for enhancing existing content.
 
 - [How to link to Moneropedia terms](how-to-link-to-moneropedia-terms.md)
+- [How to add a new download item](how-to-add-a-new-download-item.md)
 
 If you need a guide that's not listed here, please create a [issue](https://github.com/monero-project/monero-site/issues) or contact the Website workgroup.
