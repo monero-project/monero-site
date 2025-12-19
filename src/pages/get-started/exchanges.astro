@@ -63,21 +63,36 @@ const highlightOptions = [
     subtitle={t("exchanges.heroSubtitle")}
   />
 
-  <!-- target-based filter anchors -->
-  <div id="filter-none" class="filter-target" aria-hidden="true"></div>
+  <!-- hidden filter radio buttons -->
+  <input
+    id="filter-none"
+    class="filter-toggle"
+    type="radio"
+    name="exchange-filter"
+    aria-label="Clear filters"
+    checked
+  />
+
   {
     highlightOptions.map((opt) => {
       const filterId = `filter-${opt.key}`;
-      return <div id={filterId} class="filter-target" aria-hidden="true" />;
+      return (
+        <input
+          id={filterId}
+          class="filter-toggle"
+          type="radio"
+          name="exchange-filter"
+          aria-label={opt.title}
+        />
+      );
     })
   }
 
   <!-- mobile bottom-sheet toggle -->
   <input
     id="mobile-filter-toggle"
-    class="sr-only"
+    class="mobile-filter-toggle"
     type="checkbox"
-    aria-label="Toggle filters"
   />
 
   <div class="exchanges-wrapper">
@@ -94,8 +109,8 @@ const highlightOptions = [
               highlightOptions.map((opt) => {
                 const filterId = `filter-${opt.key}`;
                 return (
-                  <a
-                    href={`#${filterId}`}
+                  <label
+                    for={filterId}
                     class="highlight-option"
                     data-highlight={opt.highlight}
                   >
@@ -105,14 +120,17 @@ const highlightOptions = [
                       subtitle={opt.subtitle}
                       tag="span"
                     />
-                  </a>
+                  </label>
                 );
               })
             }
             <div class="clear-highlights">
-              <a href="#" class="clear-highlights-link clear-highlights-label">
+              <label
+                for="filter-none"
+                class="clear-highlights-link clear-highlights-label"
+              >
                 {t("exchanges.clearSelection")}
-              </a>
+              </label>
             </div>
           </div>
         </div>
@@ -216,8 +234,8 @@ const highlightOptions = [
         highlightOptions.map((opt) => {
           const filterId = `filter-${opt.key}`;
           return (
-            <a
-              href={`#${filterId}`}
+            <label
+              for={filterId}
               class="highlight-option"
               data-highlight={opt.highlight}
             >
@@ -227,14 +245,17 @@ const highlightOptions = [
                 subtitle={opt.subtitle}
                 tag="span"
               />
-            </a>
+            </label>
           );
         })
       }
       <div class="clear-highlights">
-        <a href="#" class="clear-highlights-link clear-highlights-label">
+        <label
+          for="filter-none"
+          class="clear-highlights-link clear-highlights-label"
+        >
           {t("exchanges.clearSelection")}
-        </a>
+        </label>
       </div>
       <label
         for="mobile-filter-toggle"
@@ -293,7 +314,6 @@ const highlightOptions = [
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     background: var(--card-hover-color);
-    text-decoration: none;
   }
   .highlight-option:hover {
     background: var(--card-color);
@@ -312,46 +332,41 @@ const highlightOptions = [
     text-decoration: underline;
   }
 
-  .filter-target {
-    display: none;
+  .filter-toggle,
+  .mobile-filter-toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
   }
 
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  #filter-fiat:target ~ .exchanges-wrapper :global(tr[data-highlight~="fiat"]),
-  #filter-privacy:target
+  #filter-fiat:checked ~ .exchanges-wrapper :global(tr[data-highlight~="fiat"]),
+  #filter-privacy:checked
     ~ .exchanges-wrapper
     :global(tr[data-highlight~="privacy"]),
-  #filter-easiest:target
+  #filter-easiest:checked
     ~ .exchanges-wrapper
     :global(tr[data-highlight~="user-friendly"]) {
     background: rgba(255, 152, 0, 0.1);
   }
 
-  #filter-fiat:target
+  #filter-fiat:checked
     ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
     .highlight-option[data-highlight~="fiat"],
-  #filter-privacy:target
+  #filter-privacy:checked
     ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
     .highlight-option[data-highlight~="privacy"],
-  #filter-easiest:target
+  #filter-easiest:checked
     ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
     .highlight-option[data-highlight~="user-friendly"] {
     background: var(--card-color);
     border-color: var(--monero-orange);
   }
 
-  #filter-easiest:target
+  #filter-easiest:checked
     ~ .exchanges-wrapper
     [data-highlight~="user-friendly"]:not(.highlight-option) {
     outline: 2px solid var(--monero-orange);
@@ -442,15 +457,15 @@ const highlightOptions = [
   .filter-text {
     display: none;
   }
-  #filter-easiest:target
+  #filter-easiest:checked
     ~ .exchanges-wrapper
     .mobile-filter-subtitle
     .filter-text[data-filter="easiest"],
-  #filter-fiat:target
+  #filter-fiat:checked
     ~ .exchanges-wrapper
     .mobile-filter-subtitle
     .filter-text[data-filter="fiat"],
-  #filter-privacy:target
+  #filter-privacy:checked
     ~ .exchanges-wrapper
     .mobile-filter-subtitle
     .filter-text[data-filter="privacy"] {

@@ -1,10 +1,13 @@
 # Understanding the Project Structure
 
+The Monero website is built with the [Astro](https://astro.build/) framework. The project structure is designed to keep content, components, styles, and utilities organized for easy development and maintenance.
+
 ## Top-level files you’ll use
 
 - `astro.config.mjs`, `package.json` - build & dev settings and scripts (run `pnpm dev`, `pnpm build`).
 - `docs/` - contributor guides (this folder).
 - `public/` - static files served as-is (robots, favicons, social images).
+- `src/` - main source code (see below for details).
 
 ## Key src/ folders (quick tree)
 
@@ -33,6 +36,10 @@ src/
 - Create a component -> `src/components/ui/` (reusable) or `src/components/pages/` (page-specific) - see [How to Create a New Component](how-to-create-a-new-component.md).
 - Add/replace an icon -> `src/assets/icons/` (AVIF, organized into `mask/` and `color/`) and use `MaskIcon` / `ColorIcon` - see [How to Use and Create Icons](how-to-use-and-create-icons.md).
 - Add images -> put content images next to content (`src/content/.../assets/`) or in `src/assets/images/` for shared images; use `<Image />` component (see [How to Handle Assets and Images](how-to-handle-assets-and-images.md)).
+
+## Important conventions & restrictions
+- SVG files are not allowed due to compatibility concerns; use AVIF/PNG/WEBP formats instead.
+- There is zero-tolerance towards client-side JS. JavaScript is only used during build time.
 
 ## Notes on i18n & Moneropedia
 

@@ -11,9 +11,9 @@ src/content/moneropedia/en/<slug>.md
 - Filename: lowercase, hyphen-separated (e.g., `daemon.md`).
 - The English file is the source of truth - add your content here.
 
-## 2. Front matter (required)
+## 2. Front matter (YAML)
 
-Use this minimal front matter:
+Before writing the content, add this front matter at the top of the file:
 
 ```yaml
 ---
@@ -34,13 +34,13 @@ terms:
 ## 3. Write the body (Markdown)
 
 - Keep the style clear and factual. Use short paragraphs and headings.
-- Link to other entries using `@term` (e.g., `@block`) - the remark plugin converts these to tooltip links automatically.
-- Add images in a local `assets/<file-name>/` folder (e.g., `./assets/daemon/diagram.avif`) and reference them in Markdown: `![Alt text](./assets/daemon/diagram.avif)`.
+- Link to other entries using `@term` (e.g., `@block`) - they get converted to tooltip links automatically.
+- Add images (if any) in a local `assets/<file-name>/` folder (e.g., `./assets/daemon/diagram.avif`) and reference them in Markdown: `![Alt text](./assets/daemon/diagram.avif)`.
 
-## 4. I18n & translation workflow
+## 4. i18n & translation workflow
 
 - Do **not** edit localized Markdown files (e.g., `src/content/moneropedia/es/*`) directly - translations are managed via Weblate and compiled by the project's CI (`.github/workflows/moneropedia-translate.yml`).
-- If you add or remove English entries, run locally (maintainers):
+- If you add or remove English entries, run locally:
   - `pnpm run i18n:moneropedia:config` (regenerate po4a config)
   - `pnpm run i18n:moneropedia:update-po` (extract strings)
 
@@ -58,12 +58,9 @@ If you're only adding content in English, submit your PR and the translation tea
 - [ ] Front matter includes `title`, `summary`, and `terms`.
 - [ ] Images (if any) placed in `./assets/<file-name>/` and referenced relatively.
 - [ ] Run `pnpm dev` and verify entry renders and links work.
-- [ ] If you changed files/new files were added, consider running `pnpm run i18n:moneropedia:config` and `pnpm run i18n:moneropedia:update-po` (maintainers may run these during review).
+- [ ] If you changed files/new files were added, run `pnpm run i18n:moneropedia:config` and `pnpm run i18n:moneropedia:update-po` to update translation files.
 
 ## Examples & references
-
 - See existing entries in `src/content/moneropedia/en/` for style and structure.
-- Plugin: `src/plugins/remark-moneropedia/` handles `@term` linking.
-- Translation pipeline: `src/i18n/moneropedia/` and `.github/workflows/moneropedia-translate.yml`.
 
 If you need help with content or translation, ask on the Monero localization channels or open an issue on the repo.

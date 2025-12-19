@@ -124,12 +124,11 @@ export function processHTMLString(
   if (!matcher) return processedHtml;
 
   processedHtml = processedHtml.replace(matcher.regex, (match, term) => {
-    if (!term) return match;
-    const entry = matcher.lookup.get(term.toLowerCase());
-    if (!entry) return match;
+    const displayText = match.slice(1).replace(/-/g, " ");
+    const entry = term && matcher.lookup.get(term.toLowerCase());
+    if (!entry) return displayText;
 
     const linkPath = buildMoneropediaHref(locale, entry.fileName);
-    const displayText = match.slice(1).replace(/-/g, " ");
     const escapedSummary = entry.summary.replace(/"/g, "&quot;");
 
     return `<a class="moneropedia-link" data-tooltip="${escapedSummary}" href="${linkPath}">${displayText}<sup>&#x1F6C8;</sup></a>`;
