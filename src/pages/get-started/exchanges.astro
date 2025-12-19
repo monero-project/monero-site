@@ -98,42 +98,44 @@ const highlightOptions = [
 
   <div class="exchanges-wrapper">
     <div class="exchanges-page-layout">
-      <!-- DESKTOP SIDEBAR -->
-      <aside class="sidebar">
-        <div class="filters-section">
-          <h2 class="filters-title">{t("exchanges.sidebarTitle")}</h2>
-          <p class="filters-description">
-            {t("exchanges.filtersDescription")}
-          </p>
-          <div class="highlight-options">
-            {
-              highlightOptions.map((opt) => {
-                const filterId = `filter-${opt.key}`;
-                return (
-                  <label
-                    for={filterId}
-                    class="highlight-option"
-                    data-highlight={opt.highlight}
-                  >
-                    <TOCItem
-                      icon={opt.icon}
-                      title={opt.title}
-                      subtitle={opt.subtitle}
-                      tag="span"
-                    />
-                  </label>
-                );
-              })
-            }
-            <div class="clear-highlights">
-              <label
-                for="filter-none"
-                class="clear-highlights-link clear-highlights-label"
-              >
-                {t("exchanges.clearSelection")}
-              </label>
-            </div>
+      <aside class="filters-panel" aria-label={t("exchanges.sidebarTitle")}>
+        <h2 class="filters-title">{t("exchanges.sidebarTitle")}</h2>
+        <p class="filters-description">{t("exchanges.filtersDescription")}</p>
+
+        <div class="highlight-options">
+          {
+            highlightOptions.map((opt) => {
+              const filterId = `filter-${opt.key}`;
+              return (
+                <label
+                  for={filterId}
+                  class="highlight-option"
+                  data-highlight={opt.highlight}
+                >
+                  <TOCItem
+                    icon={opt.icon}
+                    title={opt.title}
+                    subtitle={opt.subtitle}
+                    tag="span"
+                  />
+                </label>
+              );
+            })
+          }
+
+          <div class="clear-highlights">
+            <label
+              for="filter-none"
+              class="clear-highlights-link clear-highlights-label"
+            >
+              {t("exchanges.clearSelection")}
+            </label>
           </div>
+
+          <label for="mobile-filter-toggle" class="mobile-filter-close">
+            <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
+            Close
+          </label>
         </div>
       </aside>
 
@@ -193,7 +195,6 @@ const highlightOptions = [
       {t("exchanges.disclaimer")}
     </DisclaimerBar>
 
-    <!-- MOBILE: sticky container with bottom bar -->
     <div class="mobile-filter-container">
       <label for="mobile-filter-toggle" class="mobile-filter-bar">
         <div class="mobile-filter-bar-inner">
@@ -221,53 +222,6 @@ const highlightOptions = [
       </label>
     </div>
   </div>
-
-  <!-- MOBILE BOTTOM SHEET OVERLAY -->
-  <div class="mobile-filter-sheet">
-    <div class="mobile-filter-sheet-header">
-      <h2 class="intro-title">{t("exchanges.sidebarTitle")}</h2>
-    </div>
-    <p class="intro-description">
-      {t("exchanges.filtersDescription")}
-    </p>
-    <div class="highlight-options">
-      {
-        highlightOptions.map((opt) => {
-          const filterId = `filter-${opt.key}`;
-          return (
-            <label
-              for={filterId}
-              class="highlight-option"
-              data-highlight={opt.highlight}
-            >
-              <TOCItem
-                icon={opt.icon}
-                title={opt.title}
-                subtitle={opt.subtitle}
-                tag="span"
-              />
-            </label>
-          );
-        })
-      }
-      <div class="clear-highlights">
-        <label
-          for="filter-none"
-          class="clear-highlights-link clear-highlights-label"
-        >
-          {t("exchanges.clearSelection")}
-        </label>
-      </div>
-      <label
-        for="mobile-filter-toggle"
-        class="mobile-filter-close"
-        aria-label="Close filters"
-      >
-        <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
-        Close
-      </label>
-    </div>
-  </div>
 </Layout>
 
 <style>
@@ -284,17 +238,8 @@ const highlightOptions = [
     flex: 1;
   }
 
-  .sidebar {
-    display: none;
-  }
-
-  .filters-section {
-    padding: 2rem;
-    background: var(--card-color);
-    border-radius: 0.5rem;
-  }
   .filters-title {
-    margin: 0 0 1rem;
+    margin: 0;
     color: var(--heading-color);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
@@ -302,7 +247,7 @@ const highlightOptions = [
   .filters-description {
     color: var(--paragraph-subtitle);
     font-size: var(--font-size-md);
-    margin: 0 0 2rem;
+    margin: 0.75rem 0 2rem;
   }
 
   .highlight-options {
@@ -355,13 +300,16 @@ const highlightOptions = [
   }
 
   #filter-fiat:checked
-    ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
+    ~ .exchanges-wrapper
+    .filters-panel
     .highlight-option[data-highlight~="fiat"],
   #filter-privacy:checked
-    ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
+    ~ .exchanges-wrapper
+    .filters-panel
     .highlight-option[data-highlight~="privacy"],
   #filter-easiest:checked
-    ~ :is(.exchanges-wrapper, .mobile-filter-sheet)
+    ~ .exchanges-wrapper
+    .filters-panel
     .highlight-option[data-highlight~="user-friendly"] {
     background: var(--card-color);
     border-color: var(--monero-orange);
@@ -416,43 +364,28 @@ const highlightOptions = [
     color: var(--paragraph-subtitle);
   }
 
-  .mobile-filter-sheet {
+  .filters-panel {
     display: block;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    padding-block: 1rem;
-    padding-inline: 1.25rem;
-    background: var(--bg-color);
+
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+    background: var(--card-color);
     border-radius: 1.25rem 1.25rem 0 0;
+
     max-height: 75vh;
     overflow-y: auto;
     z-index: 3;
+
     transform: translateY(100%);
-    transition: transform 0.25s ease-out;
+    transition:
+      transform 0.25s ease-out,
+      visibility 0.25s ease-out;
+    visibility: hidden;
     margin: 0;
-  }
-
-  .mobile-filter-sheet-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.75rem;
-  }
-
-  .mobile-filter-sheet .intro-title {
-    font-size: var(--font-size-xl);
-    margin: 1rem 0 0.25rem;
-  }
-  .mobile-filter-sheet .intro-description {
-    font-size: var(--font-size-base);
-    margin: 0 0 1.25rem;
-  }
-
-  #mobile-filter-toggle:checked ~ .mobile-filter-sheet {
-    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.35);
-    transform: translateY(0);
   }
 
   .filter-text {
@@ -473,21 +406,40 @@ const highlightOptions = [
     display: inline;
   }
 
+  @media not (min-width: 1200px) {
+    #mobile-filter-toggle:checked ~ .exchanges-wrapper .filters-panel {
+      box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.35);
+      transform: translateY(0);
+      visibility: visible;
+    }
+  }
+
   @media (min-width: 1200px) {
     .exchanges-page-layout {
       flex-direction: row;
     }
-    .sidebar {
-      display: block;
-      flex: 0 0 25rem;
+
+    .filters-panel {
       position: sticky;
       top: 2rem;
-      height: fit-content;
       margin-bottom: 2rem;
+      flex: 0 0 20rem;
+      height: fit-content;
+
+      transform: unset;
+      transition: unset;
+      max-height: unset;
+      overflow-y: unset;
+      visibility: unset;
+
+      padding: 2rem;
+      border-radius: 0.5rem;
+
+      z-index: 1;
     }
 
     .mobile-filter-container,
-    .mobile-filter-sheet {
+    .mobile-filter-close {
       display: none;
     }
   }
