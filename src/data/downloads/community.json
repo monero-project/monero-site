@@ -123,7 +123,7 @@
       "id": "ledger",
       "name": "Ledger",
       "logo": "/media/ledger.avif",
-      "link": "https://support.ledger.com/article/360006352934-zd",
+      "link": "https://www.ledger.com/coin/wallet/monero",
       "tags": {
         "general": ["Nano S", "Nano X", "Flex", "Stax"]
       }
