@@ -64,7 +64,7 @@ const highlightOptions = [
   />
 
   <!-- hidden filter radio buttons -->
-  <fieldset>
+  <fieldset id="exchange-filters">
     <legend class="sr-only">Exchange Filters</legend>
     {
       highlightOptions.map((opt) => {
@@ -89,6 +89,7 @@ const highlightOptions = [
       checked
     />
   </fieldset>
+
   <input
     id="mobile-filter-toggle"
     class="filter-toggle"
@@ -308,25 +309,27 @@ const highlightOptions = [
     pointer-events: none;
   }
 
-  #filter-fiat:checked ~ .exchanges-wrapper :global(tr[data-highlight~="fiat"]),
-  #filter-privacy:checked
+  #exchange-filters:has(#filter-fiat:checked)
+    ~ .exchanges-wrapper
+    :global(tr[data-highlight~="fiat"]),
+  #exchange-filters:has(#filter-privacy:checked)
     ~ .exchanges-wrapper
     :global(tr[data-highlight~="privacy"]),
-  #filter-easiest:checked
+  #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
     :global(tr[data-highlight~="user-friendly"]) {
     background: rgba(255, 152, 0, 0.1);
   }
 
-  #filter-fiat:checked
+  #exchange-filters:has(#filter-fiat:checked)
     ~ .exchanges-wrapper
     .filters-panel
     .highlight-option[data-highlight~="fiat"],
-  #filter-privacy:checked
+  #exchange-filters:has(#filter-privacy:checked)
     ~ .exchanges-wrapper
     .filters-panel
     .highlight-option[data-highlight~="privacy"],
-  #filter-easiest:checked
+  #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
     .filters-panel
     .highlight-option[data-highlight~="user-friendly"] {
@@ -334,7 +337,7 @@ const highlightOptions = [
     border-color: var(--monero-orange);
   }
 
-  #filter-easiest:checked
+  #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
     [data-highlight~="user-friendly"]:not(.highlight-option) {
     outline: 2px solid var(--monero-orange);
@@ -410,15 +413,15 @@ const highlightOptions = [
   .filter-text {
     display: none;
   }
-  #filter-easiest:checked
+  #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
     .mobile-filter-subtitle
     .filter-text[data-filter="easiest"],
-  #filter-fiat:checked
+  #exchange-filters:has(#filter-fiat:checked)
     ~ .exchanges-wrapper
     .mobile-filter-subtitle
     .filter-text[data-filter="fiat"],
-  #filter-privacy:checked
+  #exchange-filters:has(#filter-privacy:checked)
     ~ .exchanges-wrapper
     .mobile-filter-subtitle
     .filter-text[data-filter="privacy"] {
@@ -458,7 +461,8 @@ const highlightOptions = [
     }
 
     .mobile-filter-container,
-    .mobile-filter-close {
+    .mobile-filter-close,
+    #mobile-filter-toggle {
       display: none;
     }
   }
