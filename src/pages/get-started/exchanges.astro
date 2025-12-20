@@ -64,34 +64,34 @@ const highlightOptions = [
   />
 
   <!-- hidden filter radio buttons -->
-  <input
-    id="filter-none"
-    class="filter-toggle"
-    type="radio"
-    name="exchange-filter"
-    aria-label="Clear filters"
-    checked
-  />
-
-  {
-    highlightOptions.map((opt) => {
-      const filterId = `filter-${opt.key}`;
-      return (
-        <input
-          id={filterId}
-          class="filter-toggle"
-          type="radio"
-          name="exchange-filter"
-          aria-label={opt.title}
-        />
-      );
-    })
-  }
-
-  <!-- mobile bottom-sheet toggle -->
+  <fieldset>
+    <legend class="sr-only">Exchange Filters</legend>
+    {
+      highlightOptions.map((opt) => {
+        const filterId = `filter-${opt.key}`;
+        return (
+          <input
+            id={filterId}
+            class="filter-toggle"
+            type="radio"
+            name="exchange-filter"
+            aria-label={opt.title}
+          />
+        );
+      })
+    }
+    <input
+      id="filter-none"
+      class="filter-toggle"
+      type="radio"
+      name="exchange-filter"
+      aria-label="Clear filters"
+      checked
+    />
+  </fieldset>
   <input
     id="mobile-filter-toggle"
-    class="mobile-filter-toggle"
+    class="filter-toggle"
     type="checkbox"
     aria-label="Toggle exchange filters"
   />
@@ -225,6 +225,26 @@ const highlightOptions = [
 </Layout>
 
 <style>
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-inline-size: 0;
+    display: contents;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   .exchanges-wrapper {
     position: relative;
     margin-top: 3rem;
@@ -278,8 +298,7 @@ const highlightOptions = [
     text-decoration: underline;
   }
 
-  .filter-toggle,
-  .mobile-filter-toggle {
+  .filter-toggle {
     position: fixed;
     top: 0;
     left: 0;
