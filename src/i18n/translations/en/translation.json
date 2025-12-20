@@ -338,7 +338,7 @@
         "multiCoin": "Multi-coin",
         "lws": {
           "title": "LWS Wallets",
-          "disclaimer": "LWS wallets keep your wallet synchronized on a remote server for your convenience. Unless you have the option to specify your own servers, this may introduce privacy risks."
+          "disclaimer": "LWS wallets keep your transaction history synchronized on a remote server for your convenience. Unless you have the option to specify your own servers, this may introduce privacy risks."
         }
       },
       "learnMore": "Learn more",
