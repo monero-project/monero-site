@@ -7,6 +7,7 @@ import TOCContainer from "@/components/ui/TOCContainer.astro";
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
+import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
 import codeXmlIcon from "@/assets/icons/mask/codeXml.avif";
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import globeIcon from "@/assets/icons/mask/globe.avif";
@@ -281,13 +282,18 @@ const sections = [
                   <code>{contributingData.xmr.address}</code>
 
                   <details>
-                    <summary
-                      >{
-                        t(
-                          "contribute.sections.donate.generalFund.viewOnlyWalletDetails",
-                        )
-                      }</summary
-                    >
+                    <summary>
+                      <span class="icon" aria-hidden="true">
+                        <MaskIcon src={chevronDownIcon} />
+                      </span>
+                      <span>
+                        {
+                          t(
+                            "contribute.sections.donate.generalFund.viewOnlyWalletDetails",
+                          )
+                        }
+                      </span>
+                    </summary>
                     <div>
                       <p>
                         <strong
@@ -408,9 +414,28 @@ const sections = [
   }
 
   .donateGrid details summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    list-style: none;
     cursor: pointer;
     user-select: none;
     font-weight: var(--font-weight-bold);
+  }
+
+  .donateGrid details summary::marker,
+  .donateGrid details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .donateGrid details .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .donateGrid details[open] .icon {
+    transform: rotate(180deg);
   }
 
   .donateGrid details > div {
