@@ -6,12 +6,14 @@ import MaskIcon from "./MaskIcon.astro";
 export interface Props {
   title: string;
   content?: string;
+  variant?: "default" | "card";
+  name?: string;
 }
 
-const { title, content } = Astro.props;
+const { title, content, variant = "default", name } = Astro.props;
 ---
 
-<>
+<details class={`accordion-item accordion-item--${variant}`} name={name}>
   <summary class="accordion-header">
     <span class="accordion-title">{title}</span>
     <div class="accordion-icon">
@@ -27,9 +29,17 @@ const { title, content } = Astro.props;
       </div>
     )
   }
-</>
+</details>
 
 <style>
+  .accordion-item {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+
   .accordion-header {
     display: flex;
     align-items: center;
@@ -78,6 +88,31 @@ const { title, content } = Astro.props;
     font-family: "Inter Variable", sans-serif;
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-normal);
+  }
+
+  /* Card variant: no borders, spaced items, card background and rounded corners */
+  .accordion-item--card {
+    border: none;
+    margin-bottom: 0.75rem;
+    border-radius: 0.75rem;
+    background: var(--card-color);
+    padding: 0 1.25rem;
+  }
+
+  .accordion-item--card:last-child {
+    margin-bottom: 0;
+  }
+
+  .accordion-item--card .accordion-header {
+    padding: 1.25rem 0;
+  }
+
+  .accordion-item--card:has(.accordion-header:focus-visible) {
+    border-radius: 0.75rem;
+  }
+
+  .accordion-item--card .accordion-content {
+    padding: 0 0 1.25rem 0;
   }
 
   :global(.accordion-content > p:first-child) {

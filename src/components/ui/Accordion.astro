@@ -16,26 +16,22 @@ export interface Props {
 
 const { items, multiExpand = false, variant = "default" } = Astro.props;
 const accordionId = crypto.randomUUID();
+const accordionName = multiExpand ? undefined : `accordion-${accordionId}`;
 ---
 
 <div class={`accordion accordion--${variant}`}>
   {
     items ? (
       items.map((item) => (
-        <details
-          class={`accordion-item accordion-item--${variant}`}
-          name={multiExpand ? undefined : `accordion-${accordionId}`}
-        >
-          <AccordionItem title={item.title} content={item.content} />
-        </details>
+        <AccordionItem
+          title={item.title}
+          content={item.content}
+          variant={variant}
+          name={accordionName}
+        />
       ))
     ) : (
-      <details
-        class={`accordion-item accordion-item--${variant}`}
-        name={multiExpand ? undefined : `accordion-${accordionId}`}
-      >
-        <slot />
-      </details>
+      <slot />
     )
   }
 </div>
@@ -44,37 +40,5 @@ const accordionId = crypto.randomUUID();
   .accordion {
     display: flex;
     flex-direction: column;
-  }
-  .accordion-item {
-    border-bottom: 1px solid var(--border-color);
-  }
-
-  .accordion-item:last-child {
-    border-bottom: none;
-  }
-
-  /* Card variant: no borders, spaced items, card background and rounded corners */
-  .accordion-item--card {
-    border: none;
-    margin-bottom: 0.75rem;
-    border-radius: 0.75rem;
-    background: var(--card-color);
-    padding: 0 1.25rem;
-  }
-
-  .accordion-item--card:last-child {
-    margin-bottom: 0;
-  }
-
-  .accordion-item--card .accordion-header {
-    padding: 1.25rem 0;
-  }
-
-  .accordion-item--card:has(.accordion-header:focus-visible) {
-    border-radius: 0.75rem;
-  }
-
-  .accordion-item--card .accordion-content {
-    padding: 0 0 1.25rem 0;
   }
 </style>
