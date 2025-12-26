@@ -7,6 +7,7 @@ import "@/styles/external-links.css";
 import "@/styles/global.css";
 import "@/styles/moneropedia-link.css";
 
+import { initMoneropediaCache } from "@/utils/moneropedia";
 import "@fontsource-variable/dm-sans";
 import dmSansFont from "@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url";
 import "@fontsource-variable/inter";
@@ -16,6 +17,9 @@ import { SEO } from "astro-seo";
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 const dir = getDirection(locale);
+
+// Warm moneropedia cache for this locale
+await initMoneropediaCache(locale);
 
 interface Props {
   title: string;

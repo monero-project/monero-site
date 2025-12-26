@@ -1,0 +1,26 @@
+---
+interface Props {
+  class?: string;
+  id?: string;
+  variant?: "spaced" | "flush";
+}
+
+const { class: className, id, variant = "spaced" } = Astro.props;
+const classes = [
+  "page-container",
+  variant === "spaced" ? "page-container--spaced" : "",
+  className ?? "",
+]
+  .filter(Boolean)
+  .join(" ");
+---
+
+<div id={id} class={classes}>
+  <slot />
+</div>
+
+<style>
+  .page-container--spaced {
+    margin-top: 2rem;
+  }
+</style>

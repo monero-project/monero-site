@@ -32,7 +32,7 @@
   --font-size-xs: 0.75rem; /* extra small text */
   --font-size-sm: 0.9rem; /* small text */
   --font-size-lg: 1.125rem; /* body-lg */
-  --font-size-xl: clamp(1.2rem, 2vw, 1.5rem); /* subhead1 */
+  --font-size-xl: 1.5rem;
   --font-size-2xl: clamp(1.5rem, 3vw, 2rem); /* 24px - 32px - h4 */
   --font-size-3xl: clamp(1.8rem, 4vw, 2.25rem); /* 28.8px - 36px - h3 */
   --font-size-4xl: clamp(2.5rem, 5vw, 3.5rem); /* 40px - 56px - h2 */
@@ -52,7 +52,7 @@
   --line-height-title: 1.2;
 
   /* Maximum Content Width */
-  --content-max-width: 1920px;
+  --content-max-width: 1600px;
 }
 
 /* ========================================
@@ -107,6 +107,16 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+p {
+  line-height: var(--line-height-body);
 }
 
 /* ========================================

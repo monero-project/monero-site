@@ -1,4 +1,5 @@
 ---
+import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import {
   createTInstance,
@@ -23,11 +24,12 @@ import TOCItem from "@/components/ui/TOCItem.astro";
 
 import exchanges from "@/data/exchanges.json";
 
-import safeMarkdown from "@/utils/safeMarkdown";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
 const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
 const t = await createTInstance(locale);
+const safeMarkdown = createSafeMarkdown(locale);
 
 const highlightOptions = [
   {
@@ -63,165 +65,167 @@ const highlightOptions = [
     subtitle={t("exchanges.heroSubtitle")}
   />
 
-  <!-- hidden filter radio buttons -->
-  <fieldset id="exchange-filters">
-    <legend class="sr-only">Exchange Filters</legend>
-    {
-      highlightOptions.map((opt) => {
-        const filterId = `filter-${opt.key}`;
-        return (
-          <input
-            id={filterId}
-            class="filter-toggle"
-            type="radio"
-            name="exchange-filter"
-          />
-        );
-      })
-    }
+  <PageContainer>
+    <!-- hidden filter radio buttons -->
+    <fieldset id="exchange-filters">
+      <legend class="sr-only">Exchange Filters</legend>
+      {
+        highlightOptions.map((opt) => {
+          const filterId = `filter-${opt.key}`;
+          return (
+            <input
+              id={filterId}
+              class="filter-toggle"
+              type="radio"
+              name="exchange-filter"
+            />
+          );
+        })
+      }
+      <input
+        id="filter-none"
+        class="filter-toggle"
+        type="radio"
+        name="exchange-filter"
+        aria-label="Clear filters"
+        checked
+      />
+    </fieldset>
+
     <input
-      id="filter-none"
+      id="mobile-filter-toggle"
       class="filter-toggle"
-      type="radio"
-      name="exchange-filter"
-      aria-label="Clear filters"
-      checked
+      type="checkbox"
+      aria-label="Toggle exchange filters"
     />
-  </fieldset>
 
-  <input
-    id="mobile-filter-toggle"
-    class="filter-toggle"
-    type="checkbox"
-    aria-label="Toggle exchange filters"
-  />
+    <div class="exchanges-wrapper">
+      <div class="exchanges-page-layout">
+        <aside class="filters-panel" aria-label={t("exchanges.sidebarTitle")}>
+          <h2 class="filters-title">{t("exchanges.sidebarTitle")}</h2>
+          <p class="filters-description">{t("exchanges.filtersDescription")}</p>
 
-  <div class="exchanges-wrapper">
-    <div class="exchanges-page-layout">
-      <aside class="filters-panel" aria-label={t("exchanges.sidebarTitle")}>
-        <h2 class="filters-title">{t("exchanges.sidebarTitle")}</h2>
-        <p class="filters-description">{t("exchanges.filtersDescription")}</p>
+          <div class="highlight-options">
+            {
+              highlightOptions.map((opt) => {
+                const filterId = `filter-${opt.key}`;
+                return (
+                  <label
+                    for={filterId}
+                    class="highlight-option"
+                    data-highlight={opt.highlight}
+                  >
+                    <TOCItem
+                      icon={opt.icon}
+                      title={opt.title}
+                      subtitle={opt.subtitle}
+                      tag="span"
+                    />
+                  </label>
+                );
+              })
+            }
 
-        <div class="highlight-options">
-          {
-            highlightOptions.map((opt) => {
-              const filterId = `filter-${opt.key}`;
-              return (
-                <label
-                  for={filterId}
-                  class="highlight-option"
-                  data-highlight={opt.highlight}
-                >
-                  <TOCItem
-                    icon={opt.icon}
-                    title={opt.title}
-                    subtitle={opt.subtitle}
-                    tag="span"
-                  />
-                </label>
-              );
-            })
-          }
+            <div class="clear-highlights">
+              <label
+                for="filter-none"
+                class="clear-highlights-link clear-highlights-label"
+              >
+                {t("exchanges.clearSelection")}
+              </label>
+            </div>
 
-          <div class="clear-highlights">
-            <label
-              for="filter-none"
-              class="clear-highlights-link clear-highlights-label"
-            >
-              {t("exchanges.clearSelection")}
+            <label for="mobile-filter-toggle" class="mobile-filter-close">
+              <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
+              Close
             </label>
           </div>
+        </aside>
 
-          <label for="mobile-filter-toggle" class="mobile-filter-close">
-            <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
-            Close
-          </label>
+        <div class="main-content">
+          <ExchangeTable
+            title={t("exchanges.sections.decentralized.title")}
+            description={t("exchanges.sections.decentralized.description")}
+            exchanges={exchanges.decentralizedExchanges}
+            hasKyc={false}
+            t={t}
+          />
+
+          <ExchangeTable
+            title={t("exchanges.sections.aggregators.title")}
+            description={t("exchanges.sections.aggregators.description")}
+            exchanges={[]}
+            hasKyc={false}
+            disclaimerText={t("exchanges.sections.aggregators.disclaimer")}
+            t={t}
+          >
+            <p style="color: var(--paragraph-subtitle);">
+              {t("exchanges.sections.aggregators.resourceIntro")}
+            </p>
+            <ExternalResourceButton
+              href="https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
+              onionHref="http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
+              title={t("exchanges.sections.aggregators.resourceBtnTitle")}
+              subtitle="Community-curated exchange aggregator list"
+              logo="/media/kycnotme.jpg"
+              data-highlight="user-friendly crypto"
+              rtl={dir == "rtl"}
+            />
+            <p
+              style="color: var(--paragraph-subtitle);"
+              set:html={safeMarkdown.parseInline(
+                t("exchanges.sections.aggregators.tip", {
+                  communityDownloadsUrl: localizeHref(
+                    locale,
+                    "/downloads/community/#built-in-exchange",
+                  ),
+                }),
+              )}
+            />
+          </ExchangeTable>
+
+          <ExchangeTable
+            title={t("exchanges.sections.centralized.title")}
+            description={t("exchanges.sections.centralized.description")}
+            exchanges={exchanges.centralizedExchanges}
+            hasKyc={true}
+            t={t}
+          />
         </div>
-      </aside>
-
-      <div class="main-content">
-        <ExchangeTable
-          title={t("exchanges.sections.decentralized.title")}
-          description={t("exchanges.sections.decentralized.description")}
-          exchanges={exchanges.decentralizedExchanges}
-          hasKyc={false}
-          t={t}
-        />
-
-        <ExchangeTable
-          title={t("exchanges.sections.aggregators.title")}
-          description={t("exchanges.sections.aggregators.description")}
-          exchanges={[]}
-          hasKyc={false}
-          disclaimerText={t("exchanges.sections.aggregators.disclaimer")}
-          t={t}
-        >
-          <p style="color: var(--paragraph-subtitle);">
-            {t("exchanges.sections.aggregators.resourceIntro")}
-          </p>
-          <ExternalResourceButton
-            href="https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
-            onionHref="http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
-            title={t("exchanges.sections.aggregators.resourceBtnTitle")}
-            subtitle="Community-curated exchange aggregator list"
-            logo="/media/kycnotme.jpg"
-            data-highlight="user-friendly crypto"
-            rtl={dir == "rtl"}
-          />
-          <p
-            style="color: var(--paragraph-subtitle);"
-            set:html={safeMarkdown.parseInline(
-              t("exchanges.sections.aggregators.tip", {
-                communityDownloadsUrl: localizeHref(
-                  locale,
-                  "/downloads/community/#built-in-exchange",
-                ),
-              }),
-            )}
-          />
-        </ExchangeTable>
-
-        <ExchangeTable
-          title={t("exchanges.sections.centralized.title")}
-          description={t("exchanges.sections.centralized.description")}
-          exchanges={exchanges.centralizedExchanges}
-          hasKyc={true}
-          t={t}
-        />
       </div>
-    </div>
 
-    <DisclaimerBar icon={shieldIcon} title={t("exchanges.disclaimerTitle")}>
-      {t("exchanges.disclaimer")}
-    </DisclaimerBar>
+      <DisclaimerBar icon={shieldIcon} title={t("exchanges.disclaimerTitle")}>
+        {t("exchanges.disclaimer")}
+      </DisclaimerBar>
 
-    <div class="mobile-filter-container">
-      <label for="mobile-filter-toggle" class="mobile-filter-bar">
-        <div class="mobile-filter-bar-inner">
-          <MaskIcon
-            src={searchIcon}
-            size="1.25em"
-            aria-hidden="true"
-            rtl={dir == "rtl"}
-          />
-          <div style="display: flex; flex-direction: column;">
-            <span>{t("exchanges.sidebarTitle")}</span>
-            <div class="mobile-filter-subtitle">
-              <span class="filter-text" data-filter="easiest"
-                >{t("exchanges.highlightOptions.selectedText.easiest")}</span
-              >
-              <span class="filter-text" data-filter="fiat"
-                >{t("exchanges.highlightOptions.selectedText.fiat")}</span
-              >
-              <span class="filter-text" data-filter="privacy"
-                >{t("exchanges.highlightOptions.selectedText.privacy")}</span
-              >
+      <div class="mobile-filter-container">
+        <label for="mobile-filter-toggle" class="mobile-filter-bar">
+          <div class="mobile-filter-bar-inner">
+            <MaskIcon
+              src={searchIcon}
+              size="1.25em"
+              aria-hidden="true"
+              rtl={dir == "rtl"}
+            />
+            <div style="display: flex; flex-direction: column;">
+              <span>{t("exchanges.sidebarTitle")}</span>
+              <div class="mobile-filter-subtitle">
+                <span class="filter-text" data-filter="easiest"
+                  >{t("exchanges.highlightOptions.selectedText.easiest")}</span
+                >
+                <span class="filter-text" data-filter="fiat"
+                  >{t("exchanges.highlightOptions.selectedText.fiat")}</span
+                >
+                <span class="filter-text" data-filter="privacy"
+                  >{t("exchanges.highlightOptions.selectedText.privacy")}</span
+                >
+              </div>
             </div>
           </div>
-        </div>
-      </label>
+        </label>
+      </div>
     </div>
-  </div>
+  </PageContainer>
 </Layout>
 
 <style>
@@ -247,7 +251,6 @@ const highlightOptions = [
 
   .exchanges-wrapper {
     position: relative;
-    margin-top: 3rem;
   }
   .exchanges-page-layout {
     display: flex;

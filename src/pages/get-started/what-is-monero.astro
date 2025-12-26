@@ -3,6 +3,7 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
+import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import communityLogo from "@/assets/images/community-logo.png";
@@ -27,7 +28,7 @@ import {
   getLocaleName,
   localizeHref,
 } from "@/i18n/utils";
-import safeMarkdown from "@/utils/safeMarkdown";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
 import { readdirSync } from "fs";
 import { join } from "path";
@@ -35,6 +36,7 @@ import { join } from "path";
 const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
 const t = await createTInstance(locale);
+const safeMarkdown = createSafeMarkdown(locale);
 
 const i18nVttFiles = readdirSync(
   join(process.cwd(), "public", "media", "vtt", "msmsm"),
@@ -52,8 +54,8 @@ const getLanguageLabel = (lang: string): string => {
   title={t("what-is-monero.pageTitle")}
   description={t("what-is-monero.heroSubtitle")}
 >
-  <div id="content">
-    <TitleCard title={t("what-is-monero.heroTitle")} />
+  <TitleCard title={t("what-is-monero.heroTitle")} />
+  <PageContainer>
     <div class="card-item">
       <div class="text">
         <span class="eyebrow"
@@ -394,26 +396,15 @@ const getLanguageLabel = (lang: string): string => {
         </Button>
       </div>
     </div>
-  </div>
+  </PageContainer>
 </Layout>
 
 <style>
-  #content {
-    max-width: 120ch;
-    margin-inline: auto;
-  }
-
   .eyebrow {
     text-transform: uppercase;
     font-weight: var(--font-weight-semibold);
     color: var(--monero-orange);
     font-size: var(--font-size-sm);
-  }
-
-  hr {
-    border: 0;
-    border-top: 1px solid var(--border-color);
-    margin: 1em 0;
   }
 
   #content :where(p) {

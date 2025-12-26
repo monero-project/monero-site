@@ -20,6 +20,7 @@ export interface MoneropediaEntry {
   terms: string[];
   summary: string;
   fileName: string;
+  locale: string;
 }
 
 export interface MoneropediaMatcher {
@@ -27,13 +28,20 @@ export interface MoneropediaMatcher {
   lookup: Map<string, MoneropediaEntry>;
 }
 
-export function buildMoneropediaHref(locale: string, fileName: string): string {
-  const basePath = `/resources/moneropedia/${fileName}/`;
-  if (locale === defaultLocale) {
+type EntriesCacheValue = {
+  entries?: MoneropediaEntry[];
+  promise?: Promise<MoneropediaEntry[]>;
+};
+
+const entriesCache = new Map<string, EntriesCacheValue>();
+
+export function buildMoneropediaHref(entry: MoneropediaEntry): string {
+  const basePath = `/resources/moneropedia/${entry.fileName}/`;
+  if (entry.locale === defaultLocale) {
     return basePath;
   }
 
-  return `/${locale}${basePath}`;
+  return `/${entry.locale}${basePath}`;
 }
 
 async function loadLocaleEntries(
@@ -55,6 +63,7 @@ async function loadLocaleEntries(
 
       return {
         fileName,
+        locale,
         summary: typeof data?.summary === "string" ? data.summary : "",
         terms: Array.isArray(data?.terms)
           ? data.terms.map((term) => String(term))
@@ -68,7 +77,7 @@ async function loadLocaleEntries(
 
 // Returns a list of entries for the requested locale, applying the
 // default locale content as a fallback
-export async function getMoneropediaEntries(
+async function loadMoneropediaEntries(
   locale: string,
 ): Promise<MoneropediaEntry[]> {
   const fallback = await loadLocaleEntries(defaultLocale);
@@ -83,6 +92,52 @@ export async function getMoneropediaEntries(
   }
 
   return Array.from(merged.values());
+}
+
+type MoneropediaCacheMode = "use" | "only" | "bypass";
+
+export function getMoneropediaEntries(
+  locale: string,
+  options?: { cache?: Exclude<MoneropediaCacheMode, "only"> },
+): Promise<MoneropediaEntry[]>;
+export function getMoneropediaEntries(
+  locale: string,
+  options: { cache: "only" },
+): MoneropediaEntry[] | undefined;
+export function getMoneropediaEntries(
+  locale: string,
+  options: { cache?: MoneropediaCacheMode } = {},
+): Promise<MoneropediaEntry[]> | MoneropediaEntry[] | undefined {
+  const cacheMode = options.cache ?? "use";
+  const cached = entriesCache.get(locale);
+
+  if (cacheMode === "only") {
+    return cached?.entries;
+  }
+
+  if (cacheMode !== "bypass") {
+    if (cached?.entries) return Promise.resolve(cached.entries);
+    if (cached?.promise) return cached.promise;
+  }
+
+  const promise = loadMoneropediaEntries(locale).then((entries) => {
+    entriesCache.set(locale, { entries });
+    return entries;
+  });
+  entriesCache.set(locale, { promise });
+
+  return promise;
+}
+
+export async function initMoneropediaCache(locale: string): Promise<void> {
+  if (!locale) return;
+  const cached = entriesCache.get(locale);
+  if (cached?.entries) return;
+  if (cached?.promise) {
+    await cached.promise;
+    return;
+  }
+  await getMoneropediaEntries(locale);
 }
 
 // Builds a regex + lookup map for scanning text. The regex matches any
@@ -116,7 +171,6 @@ export function buildMoneropediaMatcher(
 export function processHTMLString(
   html: string,
   entries: MoneropediaEntry[],
-  locale: string,
 ): string {
   let processedHtml = html;
 
@@ -128,7 +182,7 @@ export function processHTMLString(
     const entry = term && matcher.lookup.get(term.toLowerCase());
     if (!entry) return displayText;
 
-    const linkPath = buildMoneropediaHref(locale, entry.fileName);
+    const linkPath = buildMoneropediaHref(entry);
     const escapedSummary = entry.summary.replace(/"/g, "&quot;");
 
     return `<a class="moneropedia-link" data-tooltip="${escapedSummary}" href="${linkPath}">${displayText}<sup>&#x1F6C8;</sup></a>`;

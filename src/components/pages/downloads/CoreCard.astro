@@ -1,5 +1,5 @@
 ---
-import safeMarkdown from "@/utils/safeMarkdown.ts";
+import { createSafeMarkdown } from "@/utils/safeMarkdown.ts";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import type { TFunction } from "i18next";
@@ -68,7 +68,7 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
   freebsd: freebsdIcon,
 };
 
-//const imageDimensions = await getPublicImageDimensions(image);
+const safeMarkdown = createSafeMarkdown();
 ---
 
 <div class="download-card" id={id}>

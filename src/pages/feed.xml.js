@@ -1,7 +1,9 @@
 import rss from "@astrojs/rss";
 import { getDateStringFromId } from "@/utils/blog";
 import { getCollection } from "astro:content";
-import safeMarkdown from "@/utils/safeMarkdown";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
+
+const safeMarkdown = createSafeMarkdown();
 
 export async function GET(context) {
   const blog = await getCollection("blog");

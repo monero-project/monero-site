@@ -14,7 +14,7 @@
     "main": "Confidentialité",
     "privacyText": "Monero respecte la confidentialité en fournissant un anonymat complet et des transactions non traçables pour les utilisateurs.",
     "decentralized": "Décentralisé",
-    "decentralizedText": "Avec plus de 3300 nœuds, Monero est l'une des cryptomonnaies les plus décentralisées qui existent.",
+    "decentralizedText": "Avec plus de 5000 nœuds, Monero est l'une des cryptomonnaies les plus décentralisées qui existent.",
     "communityDriven": "Piloté par la communauté",
     "communityText": "Monero est développé et évolué par sa communauté, plus de 500 développeurs ont contribué au projet.",
     "startTitle": "Commencer à utiliser Monero",
@@ -241,6 +241,106 @@
         "description": "Ressources anciennes et connues avec des guides et howtos anciens",
         "ctaLabel": "Visiter"
       }
+    }
+  },
+  "mining": {
+    "pageTitle": "Minage",
+    "description": "Minez Monero avec RandomX. Commencez rapidement et de manière décentralisée avec Gupax + P2Pool, ou utilisez XMRig pour les configurations de pool traditionnelles.",
+    "hero": {
+      "title": "Minage",
+      "subtitle": "Monero est une cryptomonnaie qui repose sur le minage proof-of-work pour atteindre le consensus distribué."
+    },
+    "gupax": {
+      "title": "Gupax",
+      "subtitle": "Le mineur Monero convivial",
+      "lead": "Le moyen le plus rapide de commencer à miner Monero. Gupax regroupe P2Pool et XMRig dans une application simple avec configuration facile et statistiques claires.",
+      "bullets": [
+        "Multiplateforme : Fonctionne sur Windows, Linux et macOS",
+        "Minage en un clic : Démarrez avec un seul bouton",
+        "Efficace en ressources : Impact minimal sur votre système"
+      ],
+      "cta": "Obtenir Gupax"
+    },
+    "xmrig": {
+      "title": "XMRig",
+      "subtitle": "Avancé : réglage, GPUs, pools personnalisés",
+      "lead": "Préférez le contrôle total ? Utilisez XMRig directement pour le minage en pool/solo et le réglage des performances.",
+      "bullets": [
+        "Le mineur RandomX le plus populaire",
+        "Fonctionne avec les pools, solo, et de nombreuses configurations avancées"
+      ],
+      "cta": "XMRig sur GitHub"
+    },
+    "solo": {
+      "title": "Minage en solo",
+      "subtitle": "Le plus indépendant, le plus de variance",
+      "lead": "Le minage en solo maximise l'indépendance, mais attendez des écarts longs entre les paiements à moins que votre hashrate soit élevé.",
+      "bullets": [
+        "Pas de frais de pool, pas de confiance d'opérateur",
+        "Paiements \"lotterie\" - variance plus élevée"
+      ],
+      "cta": "Miner en solo (guide GUI)"
+    },
+    "resources": {
+      "title": "Ressources",
+      "guides": {
+        "title": "Guides",
+        "mineToPool": {
+          "title": "Miner vers un pool",
+          "subtitle": "Guide étape par étape pour miner avec XMRig"
+        },
+        "gupaxSetup": {
+          "title": "Guide de configuration Gupax",
+          "subtitle": "Guide de configuration facile pour le mineur Gupax"
+        }
+      },
+      "pools": {
+        "title": "Pools",
+        "comparePools": {
+          "title": "Comparer les pools",
+          "subtitle": "Frais, hashrate, distribution"
+        }
+      },
+      "benchmarks": {
+        "title": "Benchmarks",
+        "hashrateEstimates": {
+          "title": "Estimations de hashrate",
+          "subtitle": "Par modèle de CPU"
+        }
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "title": "Qu'est-ce que RandomX ?",
+          "content": "@RandomX est l'algorithme proof-of-work ASIC-résistant de Monero qui favorise le matériel grand public (CPUs), rendant le minage accessible à tous."
+        },
+        {
+          "title": "Minage en solo vs pool - quel est le compromis ?",
+          "content": "Le minage en solo maximise l'indépendance mais les paiements peuvent prendre beaucoup de temps. Les pools paient plus fréquemment mais ajoutent un risque de confiance et de centralisation.\n\n### Solo\n- Pas d'opérateur de pool, pas de frais de pool\n- Attentes longues entre les récompenses\n- Meilleur pour la décentralisation\n\n[Solo mining guide](https://www.getmonero.org/resources/user-guides/solo_mine_GUI.html)\n\n### Pool\n- Paiements plus fréquents\n- Frais de pool + confiance de l'opérateur\n- Risque de centralisation si un pool devient trop grand\n- Nécessite un logiciel de minage tiers\n\n[Browse pools](https://miningpoolstats.stream/monero)"
+        },
+        {
+          "title": "Pourquoi P2Pool est \"le meilleur des deux\" ?",
+          "content": "P2Pool vous donne une fréquence de paiement de type pool tout en gardant le minage peer-to-peer et non-custodial.\n\n- Pas de serveur de pool centralisé\n- 0% de frais de pool (vous payez toujours vos propres coûts de nœud)\n- Permissionless : n'importe qui peut rejoindre\n- Trustless : les fonds ne sont jamais en garde\n- Schéma de paiement PPLNS\n- Minimum de 0.0004 XMR de paiement\n\n[P2Pool announcement](/blog/2021/10/05/p2pool-released/)"
+        },
+        {
+          "title": "Que puis-je attendre de mon matériel ?",
+          "content": "Le minage Monero est beaucoup plus efficace sur les CPUs que sur les GPUs. Vous pouvez estimer votre hashrate en comparant les CPUs sur la liste de benchmark de XMRig.\n\n[XMRig benchmarks](https://xmrig.com/benchmark)"
+        },
+        {
+          "title": "Quel logiciel de minage devrais-je utiliser ?",
+          "content": "Pour le minage en solo : Portefeuille GUI ou CLI Monero (CPU uniquement). Pour les pools ou GPUs : XMRig, CSminer, ou Gupax (qui regroupe P2Pool et XMRig).\n\n- [Monero GUI](https://www.getmonero.org/downloads/#gui) (minage en solo)\n- [Monero CLI](https://www.getmonero.org/downloads/#cli) (minage en solo)\n- [Gupax](https://gupax.io/) (wrapper P2Pool + XMRig)\n- [XMRig](https://github.com/xmrig/xmrig) (mineur CPU/GPU)\n- [CSminer](https://github.com/cryptonote-social/csminer) (mineur CPU/GPU)"
+        },
+        {
+          "title": "Où puis-je obtenir de l'aide ?",
+          "content": "Demandez aux autres mineurs dans le chat Monero Pools :\n\n- [Matrix](https://matrix.to/#%23monero-pools:monero.social)\n- [Libera IRC](irc://irc.libera.chat/#monero-pools)"
+        }
+      ]
+    },
+    "disclaimer": {
+      "title": "Avis de non-responsabilité",
+      "content": "Le projet Monero n'endosse aucun pool, logiciel ou matériel particulier, et le contenu ci-dessus est fourni à des fins d'information uniquement."
     }
   },
   "moneropedia": {
@@ -557,6 +657,77 @@
         "subtitle": "Rejoignez les millions d'utilisateurs prenant le contrôle de leur confidentialité financière.",
         "downloadWallet": "Téléchargez un portefeuille",
         "getMonero": "Obtenez Monero"
+      }
+    }
+  },
+  "contribute": {
+    "pageTitle": "Contribuer | Monero - cryptomonnaie sécurisée, privée, non traçable.",
+    "heroTitle": "Contribuer",
+    "heroSubtitle": "Monero est un projet open-source et communautaire. Les différentes façons de soutenir le projet sont décrites ci-dessous.",
+    "sections": {
+      "supportTheNetwork": {
+        "title": "Soutenir le Réseau",
+        "subtitle": "Contributions pratiques à fort impact qui renforcent la décentralisation et la sécurité.",
+        "runANode": {
+          "title": "Exécuter un nœud",
+          "description": "Une façon facile et efficace d'aider le réseau Monero est d'exécuter un nœud. Les nœuds gardent le réseau sûr et décentralisé. Un nœud entièrement synchronisé suffit, mais vous pouvez aussi exécuter un nœud distant ouvert pour permettre à d'autres de se connecter.",
+          "guides": "Guides",
+          "moneroDocs": "Docs Monero",
+          "sethForPrivacy": "SethForPrivacy"
+        },
+        "mine": {
+          "title": "Miner",
+          "description": "Le minage assure la sécurité du réseau. Monero utilise @RandomX, un algorithme résistant aux ASIC développé par les contributeurs de Monero, qui vise à rester minable par du matériel grand public (CPUs).",
+          "learnAboutMining": "En savoir plus sur le minage"
+        }
+      },
+      "develop": {
+        "title": "Développer",
+        "subtitle": "Monero est open source et sans permission. Les contributeurs sont les bienvenus dans tout l'écosystème - du noyau à la documentation.",
+        "coreProjects": "Projets Noyau",
+        "daemon": {
+          "title": "Daemon",
+          "description": "L'implémentation principale de Monero, incluant les règles de consensus, le réseau P2P et la fonctionnalité de portefeuille."
+        },
+        "guiWallet": {
+          "title": "Portefeuille GUI",
+          "description": "L'interface graphique utilisateur pour Monero, fournissant une application de bureau facile à utiliser pour gérer les fonds Monero."
+        },
+        "moneroWebsite": {
+          "title": "Site Web Monero",
+          "description": "Ce site web, construit avec le framework Astro."
+        },
+        "moneroDocs": {
+          "title": "Docs Monero",
+          "description": "Documentation pour Monero, incluant les guides utilisateur, ressources développeur et spécifications de protocole."
+        },
+        "additionalResources": "Ressources Supplémentaires",
+        "bounties": {
+          "title": "Récompenses",
+          "description": "Vous préférez travailler sur des tâches clairement définies avec une récompense ? De nombreuses récompenses sont disponibles pour divers projets liés à Monero, allant des récompenses de bugs aux implémentations de fonctionnalités.",
+          "links": "Liens",
+          "browseMoneroBounties": "Parcourir les Récompenses Monero",
+          "securityDisclosures": "Divulgations de sécurité (HackerOne)"
+        }
+      },
+      "donate": {
+        "title": "Faire un Don",
+        "subtitle": "Financez un travail spécifique via CCS ou soutenez le fonds général pour une résilience à long terme.",
+        "communityCrowdfundingSystem": {
+          "title": "Système de Financement Participatif Communautaire",
+          "description": "Monero utilise un système de financement participatif communautaire où les projets sont proposés pour développement et financés par la communauté. Les fonds sont détenus en escrow et rémunérés aux développeurs une fois les jalons de programmation atteints. N'importe qui peut générer de nouvelles propositions ou financer celles existantes.",
+          "viewCcsProposals": "Voir les Propositions CCS"
+        },
+        "generalFund": {
+          "title": "Fonds Général",
+          "description": "Les dons au fonds général sont utilisés pour les urgences ou les besoins. Les coûts d'infrastructure sont actuellement couverts par les sponsors.",
+          "moneroXmr": "Monero (XMR)",
+          "bitcoinBtc": "Bitcoin (BTC)",
+          "viewOnlyWalletDetails": "Détails du portefeuille en lecture seule",
+          "primaryAddress": "Adresse primaire",
+          "viewKey": "Clé de vue",
+          "fineprint": "OpenAlias: {{openAlias}}\nEnvoyez un e-mail à {{email}} pour des moyens alternatifs de donner ou pour devenir sponsor."
+        }
       }
     }
   }

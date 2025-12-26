@@ -2,150 +2,144 @@
 import "@/styles/moneropedia-link.css";
 
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-import {
-  getMoneropediaEntries,
-  processHTMLString as processMoneropediaLinks,
-} from "@/utils/moneropedia";
-import { marked } from "marked";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
 import Layout from "@/layouts/Layout.astro";
 
 import IndexCard from "@/components/pages/index/IndexCard.astro";
 import ResourceCard from "@/components/pages/index/ResourceCard.astro";
-import type { AccordionItem } from "@/components/ui/Accordion.astro";
+import type { AccordionItemType } from "@/components/ui/Accordion.astro";
 import Accordion from "@/components/ui/Accordion.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif";
 import faqIcon from "@/assets/icons/mask/faq.avif";
 import userGuidesIcon from "@/assets/icons/mask/user-guides.avif";
+import PageContainer from "@/components/ui/PageContainer.astro";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
-const moneropediaEntries = await getMoneropediaEntries(locale);
-
-function processItemContent(content: string): string {
-  const html = marked.parse(content) as string;
-  return processMoneropediaLinks(html, moneropediaEntries, locale);
-}
+const safeMarkdown = createSafeMarkdown(locale);
 
 const basicsItems = (
-  t("faq.basics.items", { returnObjects: true }) as AccordionItem[]
+  t("faq.basics.items", { returnObjects: true }) as AccordionItemType[]
 ).map((item) => ({
   ...item,
-  content: processItemContent(item.content),
+  content: safeMarkdown.parse(item.content),
 }));
 const nodesItems = (
-  t("faq.nodes.items", { returnObjects: true }) as AccordionItem[]
+  t("faq.nodes.items", { returnObjects: true }) as AccordionItemType[]
 ).map((item) => ({
   ...item,
-  content: processItemContent(item.content),
+  content: safeMarkdown.parse(item.content),
 }));
 const privacyItems = (
-  t("faq.privacy.items", { returnObjects: true }) as AccordionItem[]
+  t("faq.privacy.items", { returnObjects: true }) as AccordionItemType[]
 ).map((item) => ({
   ...item,
-  content: processItemContent(item.content),
+  content: safeMarkdown.parse(item.content),
 }));
 const securityItems = (
-  t("faq.security.items", { returnObjects: true }) as AccordionItem[]
+  t("faq.security.items", { returnObjects: true }) as AccordionItemType[]
 ).map((item) => ({
   ...item,
-  content: processItemContent(item.content),
+  content: safeMarkdown.parse(item.content),
 }));
 const walletsItems = (
-  t("faq.wallets.items", { returnObjects: true }) as AccordionItem[]
+  t("faq.wallets.items", { returnObjects: true }) as AccordionItemType[]
 ).map((item) => ({
   ...item,
-  content: processItemContent(item.content),
+  content: safeMarkdown.parse(item.content),
 }));
 const economicsItems = (
-  t("faq.economics.items", { returnObjects: true }) as AccordionItem[]
+  t("faq.economics.items", { returnObjects: true }) as AccordionItemType[]
 ).map((item) => ({
   ...item,
-  content: processItemContent(item.content),
+  content: safeMarkdown.parse(item.content),
 }));
 ---
 
 <Layout title={t("faq.pageTitle")} description={t("faq.heroSubtitle")}>
   <TitleCard title={t("faq.heroTitle")} subtitle={t("faq.heroSubtitle")} />
-  <div class="accordion-grid">
-    <div class="accordion-card">
-      <h2 class="card-title">{t("faq.basics.title")}</h2>
-      <Accordion items={basicsItems} />
+  <PageContainer>
+    <div class="accordion-grid">
+      <div class="accordion-card">
+        <h2 class="card-title">{t("faq.basics.title")}</h2>
+        <Accordion items={basicsItems} />
+      </div>
+      <div class="accordion-card">
+        <h2 class="card-title">{t("faq.nodes.title")}</h2>
+        <Accordion items={nodesItems} />
+      </div>
+      <div class="accordion-card">
+        <h2 class="card-title">{t("faq.privacy.title")}</h2>
+        <Accordion items={privacyItems} />
+      </div>
+      <div class="accordion-card">
+        <h2 class="card-title">{t("faq.security.title")}</h2>
+        <Accordion items={securityItems} />
+      </div>
+      <div class="accordion-card">
+        <h2 class="card-title">{t("faq.wallets.title")}</h2>
+        <Accordion items={walletsItems} />
+      </div>
+      <div class="accordion-card">
+        <h2 class="card-title">{t("faq.economics.title")}</h2>
+        <Accordion items={economicsItems} />
+      </div>
     </div>
-    <div class="accordion-card">
-      <h2 class="card-title">{t("faq.nodes.title")}</h2>
-      <Accordion items={nodesItems} />
-    </div>
-    <div class="accordion-card">
-      <h2 class="card-title">{t("faq.privacy.title")}</h2>
-      <Accordion items={privacyItems} />
-    </div>
-    <div class="accordion-card">
-      <h2 class="card-title">{t("faq.security.title")}</h2>
-      <Accordion items={securityItems} />
-    </div>
-    <div class="accordion-card">
-      <h2 class="card-title">{t("faq.wallets.title")}</h2>
-      <Accordion items={walletsItems} />
-    </div>
-    <div class="accordion-card">
-      <h2 class="card-title">{t("faq.economics.title")}</h2>
-      <Accordion items={economicsItems} />
-    </div>
-  </div>
-  <IndexCard
-    title={t("index.resourcesTitle")}
-    description={t("index.resourcesDescription")}
-    id="monero-resources"
-  >
-    <div id="resource-container">
-      <ResourceCard
-        icon={userGuidesIcon}
-        title={t("faq.additionalResources.userGuides.title")}
-        description={t("faq.additionalResources.userGuides.description")}
-        ctaLabel={t("faq.additionalResources.userGuides.ctaLabel")}
-        ctaHref={localizeHref(locale, "/resources/user-guides/")}
-      />
-      <ResourceCard
-        icon={developerGuidesIcon}
-        title={t("faq.additionalResources.devGuides.title")}
-        description={t("faq.additionalResources.devGuides.description")}
-        ctaLabel={t("faq.additionalResources.devGuides.ctaLabel")}
-        ctaHref={localizeHref(locale, "/resources/developer-guides/")}
-      />
-      <ResourceCard
-        icon={faqIcon}
-        title={t("faq.additionalResources.stackExchange.title")}
-        description={t("faq.additionalResources.stackExchange.description")}
-        ctaLabel={t("faq.additionalResources.stackExchange.ctaLabel")}
-        ctaHref="https://monero.stackexchange.com"
-      />
-      <ResourceCard
-        icon={developerGuidesIcon}
-        title={t("faq.additionalResources.reddit.title")}
-        description={t("faq.additionalResources.reddit.description")}
-        ctaLabel={t("faq.additionalResources.reddit.ctaLabel")}
-        ctaHref="https://www.reddit.com/r/MoneroSupport"
-      />
-      <ResourceCard
-        icon={developerGuidesIcon}
-        title={t("faq.additionalResources.monerohow.title")}
-        description={t("faq.additionalResources.monerohow.description")}
-        ctaLabel={t("faq.additionalResources.monerohow.ctaLabel")}
-        ctaHref="https://monero.how"
-      />
-    </div>
-  </IndexCard>
+    <IndexCard
+      title={t("index.resourcesTitle")}
+      description={t("index.resourcesDescription")}
+      id="monero-resources"
+    >
+      <div id="resource-container">
+        <ResourceCard
+          icon={userGuidesIcon}
+          title={t("faq.additionalResources.userGuides.title")}
+          description={t("faq.additionalResources.userGuides.description")}
+          ctaLabel={t("faq.additionalResources.userGuides.ctaLabel")}
+          ctaHref={localizeHref(locale, "/resources/user-guides/")}
+        />
+        <ResourceCard
+          icon={developerGuidesIcon}
+          title={t("faq.additionalResources.devGuides.title")}
+          description={t("faq.additionalResources.devGuides.description")}
+          ctaLabel={t("faq.additionalResources.devGuides.ctaLabel")}
+          ctaHref={localizeHref(locale, "/resources/developer-guides/")}
+        />
+        <ResourceCard
+          icon={faqIcon}
+          title={t("faq.additionalResources.stackExchange.title")}
+          description={t("faq.additionalResources.stackExchange.description")}
+          ctaLabel={t("faq.additionalResources.stackExchange.ctaLabel")}
+          ctaHref="https://monero.stackexchange.com"
+        />
+        <ResourceCard
+          icon={developerGuidesIcon}
+          title={t("faq.additionalResources.reddit.title")}
+          description={t("faq.additionalResources.reddit.description")}
+          ctaLabel={t("faq.additionalResources.reddit.ctaLabel")}
+          ctaHref="https://www.reddit.com/r/MoneroSupport"
+        />
+        <ResourceCard
+          icon={developerGuidesIcon}
+          title={t("faq.additionalResources.monerohow.title")}
+          description={t("faq.additionalResources.monerohow.description")}
+          ctaLabel={t("faq.additionalResources.monerohow.ctaLabel")}
+          ctaHref="https://monero.how"
+        />
+      </div>
+    </IndexCard>
+  </PageContainer>
 </Layout>
 
 <style>
   .accordion-grid {
     display: grid;
     gap: 1.25rem;
-    margin: 3rem 0;
     grid-template-columns: 1fr;
+    margin-bottom: 2rem;
   }
 
   .accordion-card {

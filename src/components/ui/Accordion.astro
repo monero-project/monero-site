@@ -1,17 +1,15 @@
 ---
 import "node:crypto";
 
-import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
-import DOMPurify from "isomorphic-dompurify";
-import MaskIcon from "./MaskIcon.astro";
+import AccordionItem from "./AccordionItem.astro";
 
-export interface AccordionItem {
+export interface AccordionItemType {
   title: string;
   content: string;
 }
 
 export interface Props {
-  items: AccordionItem[];
+  items?: AccordionItemType[];
   multiExpand?: boolean;
   variant?: "default" | "card";
 }
@@ -22,25 +20,23 @@ const accordionId = crypto.randomUUID();
 
 <div class={`accordion accordion--${variant}`}>
   {
-    items.map((item) => {
-      return (
+    items ? (
+      items.map((item) => (
         <details
           class={`accordion-item accordion-item--${variant}`}
           name={multiExpand ? undefined : `accordion-${accordionId}`}
         >
-          <summary class="accordion-header">
-            <span class="accordion-title">{item.title}</span>
-            <div class="accordion-icon">
-              <MaskIcon src={chevronDownIcon} />
-            </div>
-          </summary>
-          <div
-            class="accordion-content"
-            set:html={DOMPurify.sanitize(item.content)}
-          />
+          <AccordionItem title={item.title} content={item.content} />
         </details>
-      );
-    })
+      ))
+    ) : (
+      <details
+        class={`accordion-item accordion-item--${variant}`}
+        name={multiExpand ? undefined : `accordion-${accordionId}`}
+      >
+        <slot />
+      </details>
+    )
   }
 </div>
 
@@ -49,76 +45,12 @@ const accordionId = crypto.randomUUID();
     display: flex;
     flex-direction: column;
   }
-
   .accordion-item {
     border-bottom: 1px solid var(--border-color);
   }
 
-  .accordion-item:has(.accordion-header:focus-visible) {
-    outline: 2px solid currentColor;
-    border-radius: 0.5rem;
-  }
-
   .accordion-item:last-child {
     border-bottom: none;
-  }
-
-  .accordion-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 0;
-    cursor: pointer;
-    list-style: none;
-    user-select: none;
-    gap: 0.75rem;
-  }
-
-  .accordion-header:focus-visible {
-    outline: none;
-  }
-
-  .accordion-header::-webkit-details-marker {
-    display: none;
-  }
-
-  .accordion-title {
-    color: var(--heading-color);
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-lg);
-  }
-
-  .accordion-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background: var(--border-color);
-    color: var(--paragraph-main);
-    flex-shrink: 0;
-    margin-inline-start: auto;
-  }
-
-  .accordion-item[open] .accordion-icon {
-    transform: rotate(180deg);
-  }
-
-  .accordion-content {
-    padding: 0 0 1.5rem 0;
-    color: var(--paragraph-main);
-    font-family: "Inter Variable", sans-serif;
-    line-height: var(--line-height-body);
-    font-weight: var(--font-weight-normal);
-  }
-
-  :global(.accordion-content > p:first-child) {
-    margin-top: 0;
-  }
-
-  :global(.accordion-content > p:last-child) {
-    margin-bottom: 0;
   }
 
   /* Card variant: no borders, spaced items, card background and rounded corners */
@@ -144,19 +76,5 @@ const accordionId = crypto.randomUUID();
 
   .accordion-item--card .accordion-content {
     padding: 0 0 1.25rem 0;
-  }
-
-  @media (hover: hover) {
-    .accordion-header:hover .accordion-icon {
-      background: var(--card-hover-color);
-    }
-  }
-  @media screen and (max-width: 900px) {
-    .accordion-header {
-      padding: 1rem 0;
-    }
-    .accordion-title {
-      font-size: var(--font-size-base);
-    }
   }
 </style>

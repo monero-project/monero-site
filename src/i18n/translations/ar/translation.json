@@ -14,7 +14,7 @@
     "main": "الخصوصية",
     "privacyText": "يحترم Monero الخصوصية من خلال توفير الخصوصية الكاملة والمعاملات غير القابلة للتتبع للمستخدمين.",
     "decentralized": "لامركزي",
-    "decentralizedText": "مع أكثر من 3300 عقدة، Monero هي واحدة من أكثر العملات المشفرة لامركزية الموجودة.",
+    "decentralizedText": "مع أكثر من 5000 عقدة، Monero هي واحدة من أكثر العملات المشفرة لامركزية الموجودة.",
     "communityDriven": "مدفوع بالمجتمع",
     "communityText": "يتم تطوير Monero وتطوره من قبل مجتمعه، حيث ساهم أكثر من 500 مطور في المشروع.",
     "startTitle": "ابدأ استخدام Monero",
@@ -241,6 +241,106 @@
         "description": "موارد قديمة ومعروفة مع دليل قديم وكيفيات",
         "ctaLabel": "زور"
       }
+    }
+  },
+  "mining": {
+    "pageTitle": "التعدين",
+    "description": "قم بتعدين Monero باستخدام RandomX. ابدأ بسرعة وبشكل لامركزي مع Gupax + P2Pool، أو استخدم XMRig لتكوينات المجموعات التقليدية.",
+    "hero": {
+      "title": "التعدين",
+      "subtitle": "Monero هي عملة مشفرة تعتمد على تعدين إثبات العمل لتحقيق الإجماع الموزع."
+    },
+    "gupax": {
+      "title": "Gupax",
+      "subtitle": "عامل تعدين Monero سهل الاستخدام",
+      "lead": "أسرع طريقة لبدء تعدين Monero. يجمع Gupax بين P2Pool وXMRig في تطبيق بسيط مع إعداد سهل وإحصائيات واضحة.",
+      "bullets": [
+        "متعدد المنصات: يعمل على Windows وLinux وmacOS",
+        "التعدين بنقرة واحدة: ابدأ بضغطة زر واحدة",
+        "فعال في الموارد: تأثير ضئيل على نظامك"
+      ],
+      "cta": "احصل على Gupax"
+    },
+    "xmrig": {
+      "title": "XMRig",
+      "subtitle": "متقدم: ضبط، GPUs، مجموعات مخصصة",
+      "lead": "تفضل السيطرة الكاملة؟ استخدم XMRig مباشرة للتعدين في المجموعة/المنفرد وضبط الأداء.",
+      "bullets": [
+        "أكثر عامل تعدين RandomX شعبية",
+        "يعمل مع المجموعات، المنفرد، وتكوينات متقدمة كثيرة"
+      ],
+      "cta": "XMRig على GitHub"
+    },
+    "solo": {
+      "title": "التعدين المنفرد",
+      "subtitle": "الأكثر استقلالاً، الأكثر تبايناً",
+      "lead": "التعدين المنفرد يعظم الاستقلال، لكن توقع فجوات طويلة بين المدفوعات إلا إذا كان معدل التجزئة الخاص بك عالياً.",
+      "bullets": [
+        "لا رسوم مجموعة، لا ثقة مشغل",
+        "مدفوعات \"يانصيب\" - تباين أعلى"
+      ],
+      "cta": "التعدين المنفرد (دليل GUI)"
+    },
+    "resources": {
+      "title": "الموارد",
+      "guides": {
+        "title": "الدليل",
+        "mineToPool": {
+          "title": "التعدين إلى مجموعة",
+          "subtitle": "دليل خطوة بخطوة للتعدين مع XMRig"
+        },
+        "gupaxSetup": {
+          "title": "دليل إعداد Gupax",
+          "subtitle": "دليل إعداد سهل لعامل تعدين Gupax"
+        }
+      },
+      "pools": {
+        "title": "المجموعات",
+        "comparePools": {
+          "title": "مقارنة المجموعات",
+          "subtitle": "الرسوم، معدل التجزئة، التوزيع"
+        }
+      },
+      "benchmarks": {
+        "title": "المعايير",
+        "hashrateEstimates": {
+          "title": "تقديرات معدل التجزئة",
+          "subtitle": "حسب نموذج CPU"
+        }
+      }
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "items": [
+        {
+          "title": "ما هو RandomX؟",
+          "content": "@RandomX هو خوارزمية إثبات العمل المقاومة للـASIC في Monero التي تفضل الأجهزة الاستهلاكية (CPUs)، مما يجعل التعدين متاحاً للجميع."
+        },
+        {
+          "title": "التعدين المنفرد مقابل المجموعة - ما هو التوازن؟",
+          "content": "التعدين المنفرد يعظم الاستقلال لكن المدفوعات قد تأخذ وقتاً طويلاً. المجموعات تدفع بشكل أكثر تكراراً لكنها تضيف خطر الثقة والمركزية.\n\n### منفرد\n- لا مشغل مجموعة، لا رسوم مجموعة\n- انتظار طويل بين المكافآت\n- أفضل لللامركزية\n\n[دليل التعدين المنفرد](https://www.getmonero.org/resources/user-guides/solo_mine_GUI.html)\n\n### مجموعة\n- مدفوعات أكثر تكراراً\n- رسوم مجموعة + ثقة المشغل\n- خطر المركزية إذا نمت مجموعة واحدة كثيراً\n- يتطلب برمجيات تعدين طرف ثالث\n\n[تصفح المجموعات](https://miningpoolstats.stream/monero)"
+        },
+        {
+          "title": "لماذا P2Pool \"أفضل الاثنين\"؟",
+          "content": "P2Pool يعطيك تكرار دفع نوع المجموعة بينما يحافظ على التعدين من نظير إلى نظير وغير الحراسي.\n\n- لا خادم مجموعة مركزي\n- 0% رسوم مجموعة (لا تزال تدفع تكاليف العقدة الخاصة بك)\n- بدون إذن: يمكن لأي شخص الانضمام\n- بدون ثقة: الأموال لم تكن في الحراسة أبداً\n- مخطط دفع PPLNS\n- حد أدنى للدفع 0.0004 XMR\n\n[إعلان P2Pool](/blog/2021/10/05/p2pool-released/)"
+        },
+        {
+          "title": "ماذا يمكنني توقعه من جهازي؟",
+          "content": "تعدين Monero أكثر كفاءة بكثير على CPUs من GPUs. يمكنك تقدير معدل التجزئة الخاص بك بمقارنة CPUs في قائمة معيار XMRig.\n\n[معايير XMRig](https://xmrig.com/benchmark)"
+        },
+        {
+          "title": "ما هو برنامج التعدين الذي يجب أن أستخدمه؟",
+          "content": "للتعدين المنفرد: محفظة Monero GUI أو CLI (CPU فقط). للمجموعات أو GPUs: XMRig، CSminer، أو Gupax (الذي يجمع P2Pool وXMRig).\n\n- [Monero GUI](https://www.getmonero.org/downloads/#gui) (تعدين منفرد)\n- [Monero CLI](https://www.getmonero.org/downloads/#cli) (تعدين منفرد)\n- [Gupax](https://gupax.io/) (wrapper P2Pool + XMRig)\n- [XMRig](https://github.com/xmrig/xmrig) (عامل تعدين CPU/GPU)\n- [CSminer](https://github.com/cryptonote-social/csminer) (عامل تعدين CPU/GPU)"
+        },
+        {
+          "title": "أين يمكنني الحصول على المساعدة؟",
+          "content": "اسأل المنقبين الآخرين في دردشة مجموعات Monero:\n\n- [Matrix](https://matrix.to/#%23monero-pools:monero.social)\n- [Libera IRC](irc://irc.libera.chat/#monero-pools)"
+        }
+      ]
+    },
+    "disclaimer": {
+      "title": "إخلاء مسؤولية",
+      "content": "مشروع Monero لا يؤيد أي مجموعة أو برمجيات أو أجهزة معينة، والمحتوى أعلاه مقدم لأغراض إعلامية فقط."
     }
   },
   "moneropedia": {
@@ -557,6 +657,77 @@
         "subtitle": "انضم إلى ملايين المستخدمين الذين يأخذون السيطرة على خصوصيتهم المالية.",
         "downloadWallet": "قم بتنزيل محفظة",
         "getMonero": "احصل على مونيرو"
+      }
+    }
+  },
+  "contribute": {
+    "pageTitle": "Contribute | Monero - secure, private, untraceable cryptocurrency.",
+    "heroTitle": "Contribute",
+    "heroSubtitle": "Monero is an open-source, community-driven project. Described below are several ways to support the project.",
+    "sections": {
+      "supportTheNetwork": {
+        "title": "Support the Network",
+        "subtitle": "Practical, high-impact contributions that strengthen decentralization and security.",
+        "runANode": {
+          "title": "Run a node",
+          "description": "An easy and effective way to help the Monero network is to run a node. Nodes keep the network safe and decentralized. A fully synchronized node is enough, but you can also run an open remote node to let others connect.",
+          "guides": "Guides",
+          "moneroDocs": "Monero Docs",
+          "sethForPrivacy": "SethForPrivacy"
+        },
+        "mine": {
+          "title": "Mine",
+          "description": "Mining ensures the safety of the network. Monero uses @RandomX, an ASIC-resistant algorithm developed by Monero contributors, which aims to remain mineable by consumer-grade hardware (CPUs).",
+          "learnAboutMining": "Learn about mining"
+        }
+      },
+      "develop": {
+        "title": "Develop",
+        "subtitle": "Monero is open source and permissionless. Contributors are welcome across the ecosystem - from core to docs.",
+        "coreProjects": "Core Projects",
+        "daemon": {
+          "title": "Daemon",
+          "description": "The core Monero implementation, including the consensus rules, P2P network, and wallet functionality."
+        },
+        "guiWallet": {
+          "title": "GUI Wallet",
+          "description": "The graphical user interface for Monero, providing an easy-to-use desktop application for managing Monero funds."
+        },
+        "moneroWebsite": {
+          "title": "Monero Website",
+          "description": "This website, built with the Astro framework."
+        },
+        "moneroDocs": {
+          "title": "Monero Docs",
+          "description": "Documentation for Monero, including user guides, developer resources, and protocol specifications."
+        },
+        "additionalResources": "Additional Resources",
+        "bounties": {
+          "title": "Bounties",
+          "description": "Prefer working on clearly-scoped tasks with a reward? Numerous bounties are available for various Monero-related projects, ranging from bug bounties to feature implementations.",
+          "links": "Links",
+          "browseMoneroBounties": "Browse Monero Bounties",
+          "securityDisclosures": "Security disclosures (HackerOne)"
+        }
+      },
+      "donate": {
+        "title": "Donate",
+        "subtitle": "Fund specific work via CCS or support the general fund for long-term resilience.",
+        "communityCrowdfundingSystem": {
+          "title": "Community Crowdfunding System",
+          "description": "Monero utilizes a community crowdfunding system where projects are proposed for development and community-funded. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.",
+          "viewCcsProposals": "View CCS Proposals"
+        },
+        "generalFund": {
+          "title": "General Fund",
+          "description": "Donations to the general fund are used for emergencies or need. Infrastructure costs are currently covered by sponsors.",
+          "moneroXmr": "Monero (XMR)",
+          "bitcoinBtc": "Bitcoin (BTC)",
+          "viewOnlyWalletDetails": "View-only wallet details",
+          "primaryAddress": "Primary address",
+          "viewKey": "View Key",
+          "fineprint": "OpenAlias: {{openAlias}}\nE-mail {{email}} for alternative means of donating or to become a sponsor."
+        }
       }
     }
   }

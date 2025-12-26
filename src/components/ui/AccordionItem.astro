@@ -1,0 +1,104 @@
+---
+import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
+import DOMPurify from "isomorphic-dompurify";
+import MaskIcon from "./MaskIcon.astro";
+
+export interface Props {
+  title: string;
+  content?: string;
+}
+
+const { title, content } = Astro.props;
+---
+
+<>
+  <summary class="accordion-header">
+    <span class="accordion-title">{title}</span>
+    <div class="accordion-icon">
+      <MaskIcon src={chevronDownIcon} />
+    </div>
+  </summary>
+  {
+    content ? (
+      <div class="accordion-content" set:html={DOMPurify.sanitize(content)} />
+    ) : (
+      <div class="accordion-content">
+        <slot />
+      </div>
+    )
+  }
+</>
+
+<style>
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    gap: 0.75rem;
+  }
+
+  .accordion-header:focus-visible {
+    outline: none;
+  }
+
+  .accordion-header::-webkit-details-marker {
+    display: none;
+  }
+
+  .accordion-title {
+    color: var(--heading-color);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+  }
+
+  .accordion-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--border-color);
+    color: var(--paragraph-main);
+    flex-shrink: 0;
+    margin-inline-start: auto;
+  }
+
+  .accordion-item[open] .accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    padding: 0 0 1.5rem 0;
+    color: var(--paragraph-main);
+    font-family: "Inter Variable", sans-serif;
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-normal);
+  }
+
+  :global(.accordion-content > p:first-child) {
+    margin-top: 0;
+  }
+
+  :global(.accordion-content > p:last-child) {
+    margin-bottom: 0;
+  }
+
+  @media (hover: hover) {
+    .accordion-header:hover .accordion-icon {
+      background: var(--card-hover-color);
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .accordion-header {
+      padding: 1rem 0;
+    }
+    .accordion-title {
+      font-size: var(--font-size-base);
+    }
+  }
+</style>

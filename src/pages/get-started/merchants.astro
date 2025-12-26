@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { createTInstance, getDirection, getLocale } from "@/i18n/utils";
 
@@ -24,7 +25,7 @@ const dir = getDirection(locale);
     subtitle={t("merchants.heroSubtitle")}
   />
 
-  <div id="content">
+  <PageContainer>
     <p>
       {t("merchants.intro")}
     </p>
@@ -45,7 +46,7 @@ const dir = getDirection(locale);
           ))
       }
     </div>
-  </div>
+  </PageContainer>
 
   <DisclaimerBar icon={shieldIcon} title={t("merchants.disclaimerTitle")}>
     {t("merchants.disclaimer")}
@@ -53,9 +54,6 @@ const dir = getDirection(locale);
 </Layout>
 
 <style>
-  #content {
-    margin-top: 3rem;
-  }
   .button-container {
     display: flex;
     flex-direction: column;

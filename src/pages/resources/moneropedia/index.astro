@@ -1,12 +1,13 @@
 ---
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-import safeMarkdown from "@/utils/safeMarkdown";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 
 import Accordion from "@/components/ui/Accordion.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 type MoneropediaItem = CollectionEntry<"moneropedia"> & {
@@ -17,6 +18,7 @@ type MoneropediaItem = CollectionEntry<"moneropedia"> & {
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const safeMarkdown = createSafeMarkdown(locale);
 
 const entries = (
   await getCollection("moneropedia", (entry) =>
@@ -59,7 +61,7 @@ for (const letter of sortedLetters) {
     title={t("moneropedia.heroTitle") ?? "Moneropedia"}
     subtitle={t("moneropedia.heroSubtitle")}
   />
-  <section class="moneropedia-index">
+  <PageContainer class="moneropedia-index">
     <nav class="letter-nav" aria-label="Moneropedia navigation bar">
       {
         sortedLetters.map((letter) => (
@@ -101,7 +103,7 @@ for (const letter of sortedLetters) {
         })
       }
     </div>
-  </section>
+  </PageContainer>
 </Layout>
 
 <style>
@@ -141,7 +143,7 @@ for (const letter of sortedLetters) {
   .letter-groups {
     overflow-y: auto;
     max-height: clamp(20rem, 70vh, 60rem);
-    padding-right: 0.5rem;
+    padding-inline-start: 0.5rem;
     scroll-behavior: smooth;
     scroll-padding-top: 0;
   }
@@ -193,7 +195,7 @@ for (const letter of sortedLetters) {
       padding: 0.5rem 1rem 0.5rem 2rem;
       margin-inline-start: -2rem;
       border-bottom: unset;
-      border-right: 1px solid var(--border-color);
+      border-inline-start: 1px solid var(--border-color);
       width: auto;
       position: sticky;
       top: var(--sticky-offset);
@@ -240,7 +242,7 @@ for (const letter of sortedLetters) {
     .letter-groups {
       overflow: visible;
       max-height: none;
-      padding-right: 0;
+      padding-inline-start: 0;
     }
 
     .letter-layout {

@@ -28,36 +28,27 @@ An @airgap is a way to keep your computer safe from the internet.
 
 ## Option 2: Linking in Non-Markdown Content (e.g., Translations or Code)
 
-For translation strings (JSON) or programmatic content (Astro/React), use the helper `processHTMLString` from `utils/moneropedia.ts` to replace `@term` occurrences with linked HTML. Typically you will:
+For translation strings (JSON) or programmatic content (Astro/React), use the safeMarkdown helpers from `utils/safeMarkdown.ts`. These functions already include Moneropedia processing, so you only need to pass the locale when creating the helper via `createSafeMarkdown`.
 
-- Convert your Markdown-like string to HTML (e.g., with `marked`),
-- Run `processHTMLString(html, entries, locale)` to inject Moneropedia links and tooltips, and
-- Render with `set:html` after sanitizing the result for safety.
-
-**Server-side note:** Call `getMoneropediaEntries(locale)` in server-side/frontmatter code (page `---` block) - do not fetch or run it in client-only/browser code.
+**Server-side note:** Call the safeMarkdown helper in server-side/frontmatter code (page `---` block) - do not run it in client-only/browser code.
 
 ### Example (Astro page frontmatter)
 
 ```astro
 ---
-import DOMPurify from "isomorphic-dompurify";
-import { processHTMLString, getMoneropediaEntries } from "@/utils/moneropedia";
-import { marked } from "marked";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
 import { getLocale, createTInstance } from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
-const mpEntries = await getMoneropediaEntries(locale);
-
-const html = marked.parse(t("safetyTip"));
-const processed = processHTMLString(html, mpEntries, locale);
+const safeMarkdown = createSafeMarkdown(locale);
 ---
 
-<div set:html={DOMPurify.sanitize(processed)} />
+<div set:html={safeMarkdown.parse(t("safetyTip"));} />
 ```
 
-- `processHTMLString` needs the Moneropedia `entries` so it can map `@term` -> page link + tooltip content.
-- Always sanitize with `DOMPurify` before using `set:html`.
+- `createSafeMarkdown` injects Moneropedia links for `@term` mentions and sanitizes the output.
+- Use `parseInline` if you need inline-only HTML for small snippets.
 
 If your translation string includes multiple `@term` usages, the same process handles them all.
 

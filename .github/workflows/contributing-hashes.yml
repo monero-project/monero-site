@@ -1,0 +1,48 @@
+name: Validate Contributing Hashes
+on:
+  push:
+    paths:
+      - "src/data/contributing/contributing.json"
+      - "public/media/contributing/*.png"
+  pull_request:
+    paths:
+      - "src/data/contributing/contributing.json"
+      - "public/media/contributing/*.png"
+  workflow_dispatch:
+jobs:
+  validate-contributing-hashes:
+    name: Validate Contributing Hashes
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y --no-install-recommends curl gpg jq zbar-tools
+      - name: Verify contributing.json signature
+        run: |
+          curl -sL https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc |
+            gpg --import
+          gpg --verify src/data/contributing/contributing.json.asc
+      - name: Verify General Fund donation QR's
+        run: |
+          json="src/data/contributing/contributing.json"
+          for coin in xmr btc; do
+              qr_checksum=$(jq -r ".${coin}.qr_checksum" "$json")
+              qr_filename=public/media/contributing/$(jq -r ".${coin}.qr_filename" "$json")
+              qr_content=$(jq -r ".${coin}.qr_content" "$json")
+              echo "DEBUG: $qr_checksum $qr_filename"
+              echo "DEBUG: $qr_content"
+              # Confirm hashes match
+              echo "$qr_checksum $qr_filename" | sha256sum -c
+              # Scan QR content
+              qr_scanned=$(zbarimg -q --raw "$qr_filename")
+              # Compare scanned content with expected content
+              if [ "$qr_scanned" = "$qr_content" ]; then
+                  echo "${coin^^} QR code content matches exactly"
+              else
+                  echo "${coin^^} QR code content does not match"
+                  echo "Scanned: $qr_scanned"
+                  echo "Expected: $qr_content"
+                  exit 1
+              fi
+          done

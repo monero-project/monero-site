@@ -1,6 +1,6 @@
 ---
 import { getDirection, getLocale } from "@/i18n/utils";
-import safeMarkdown from "@/utils/safeMarkdown";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
 import type { ImageMetadata } from "astro";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -24,6 +24,7 @@ const {
   ctaHref = "#",
 } = Astro.props;
 const dir = getDirection(getLocale(Astro.url));
+const safeMarkdown = createSafeMarkdown(getLocale(Astro.url));
 ---
 
 <article class="resource-card">

@@ -10,17 +10,27 @@ export interface Props extends HTMLAttributes<"div"> {
   href: string;
   title: string;
   subtitle: string;
-  logo: string;
+  logo?: string;
   rtl?: boolean;
   onionHref?: string;
+  variant?: "default" | "mini";
 }
 
-const { href, title, subtitle, logo, rtl, onionHref, ...rest } = Astro.props;
-const logoDimensions = await getPublicImageDimensions(logo);
+const {
+  href,
+  title,
+  subtitle,
+  logo,
+  rtl,
+  onionHref,
+  variant = "default",
+  ...rest
+} = Astro.props;
+const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
 ---
 
 <div
-  class={`external-resource-button ${onionHref ? "has-onion" : ""}`}
+  class={`external-resource-button ${onionHref ? "has-onion" : ""} ${logo ? "has-logo" : ""} ${variant}`}
   {...rest}
 >
   <div class="surface">
@@ -30,16 +40,20 @@ const logoDimensions = await getPublicImageDimensions(logo);
       rel="noopener noreferrer external"
       class="primary-link"
     >
-      <div class="image">
-        <Image
-          src={logo}
-          alt={`${title} Logo`}
-          width={logoDimensions.width}
-          height={logoDimensions.height}
-          format="avif"
-          priority
-        />
-      </div>
+      {
+        logo && logoDimensions && (
+          <div class="image">
+            <Image
+              src={logo}
+              alt={`${title} Logo`}
+              width={logoDimensions.width}
+              height={logoDimensions.height}
+              format="avif"
+              priority
+            />
+          </div>
+        )
+      }
 
       <div class="text">
         <span class="title">{title}</span>
@@ -96,6 +110,24 @@ const logoDimensions = await getPublicImageDimensions(logo);
     position: relative;
   }
 
+  .external-resource-button.mini {
+    font-size: 1rem;
+    font-weight: var(--font-weight-normal);
+  }
+
+  .external-resource-button.mini .image {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .external-resource-button.mini .primary-link {
+    padding: 0.75em;
+  }
+
+  .external-resource-button.mini .text .subtitle {
+    font-size: 0.85rem;
+  }
+
   /* inner surface: clips hover backgrounds to rounded corners */
   .surface {
     display: flex;
@@ -108,6 +140,10 @@ const logoDimensions = await getPublicImageDimensions(logo);
   .text {
     flex: 1;
     margin-inline-start: 1rem;
+  }
+
+  .external-resource-button:not(.has-logo) .text {
+    margin-inline-start: 0;
   }
   .text .title {
     display: block;
@@ -135,11 +171,10 @@ const logoDimensions = await getPublicImageDimensions(logo);
     object-fit: contain;
   }
 
-  a {
-    outline-offset: -3px; /* improve focus outline visibility */
+  .surface a {
+    outline-offset: -3px;
   }
-  a::after {
-    /* Override default rel=external icon that's set by globals.css - using MaskIcon here */
+  .surface a::after {
     display: none;
   }
 

@@ -7,7 +7,7 @@ import CommunityCard from "@/components/pages/downloads/CommunityCard.astro";
 import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
-import TOCItem from "@/components/ui/TOCItem.astro";
+import TOCContainer from "@/components/ui/TOCContainer.astro";
 import communityWallets from "@/data/downloads/community.json";
 
 import serverIcon from "@/assets/icons/mask/server.avif";
@@ -17,6 +17,8 @@ import walletIcon from "@/assets/icons/mask/wallet.avif";
 import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
 
 interface Wallet {
   id: string;
@@ -97,183 +99,157 @@ const setBuiltinId = (wallet: Wallet) => {
     activeIndex={1}
   />
 
-  <nav
-    class="toc"
-    aria-label={`${t("downloads.tabs.community")}` + " sections"}
-  >
-    {
-      sections.map((section) => (
-        <TOCItem
-          href={`#${section.id}`}
-          icon={section.icon}
-          title={section.title}
-          subtitle={section.subtitle}
-        />
-      ))
-    }
-  </nav>
+  <TOCContainer
+    sections={sections}
+    ariaLabel={`${t("downloads.tabs.community")}` + " sections"}
+  />
 
-  <!-- Wallets -->
-  <h2 class="section-title" id="wallets">
-    {t("downloads.community.sections.wallets.title")}
-  </h2>
-  <p class="section-subtitle">
-    {t("downloads.community.sections.wallets.subtitle")}
-  </p>
+  <PageContainer>
+    <PageSection
+      class="downloads-section"
+      anchorId="wallets"
+      title={t("downloads.community.sections.wallets.title")}
+      subtitle={t("downloads.community.sections.wallets.subtitle")}
+    >
+      <h3 class="subheading">
+        {t("downloads.community.categories.moneroOnly")}
+      </h3>
+      <div class="cards-grid compact">
+        {
+          sortWallets(communityWallets.wallets.moneroOnly).map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`downloads.community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("downloads.community.learnMore")}
+              translateTag={(key: string) =>
+                t(`downloads.community.tags.${key}`)
+              }
+              t={t}
+              id={setBuiltinId(wallet)}
+            />
+          ))
+        }
+      </div>
 
-  <!-- Monero-only -->
-  <h3 class="subheading">{t("downloads.community.categories.moneroOnly")}</h3>
-  <div class="cards-grid compact">
-    {
-      sortWallets(communityWallets.wallets.moneroOnly).map((wallet) => (
-        <CommunityCard
-          logo={wallet.logo}
-          name={wallet.name}
-          description={t(`downloads.community.descriptions.${wallet.id}`)}
-          tags={wallet.tags}
-          link={wallet.link}
-          linkText={t("downloads.community.learnMore")}
-          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
-          t={t}
-          id={setBuiltinId(wallet)}
-        />
-      ))
-    }
-  </div>
+      <h3 class="subheading">
+        {t("downloads.community.categories.multiCoin")}
+      </h3>
+      <div class="cards-grid compact">
+        {
+          sortWallets(communityWallets.wallets.multiCoin).map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`downloads.community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("downloads.community.learnMore")}
+              translateTag={(key: string) =>
+                t(`downloads.community.tags.${key}`)
+              }
+              t={t}
+              id={setBuiltinId(wallet)}
+            />
+          ))
+        }
+      </div>
 
-  <!-- Multi-coin -->
-  <h3 class="subheading">{t("downloads.community.categories.multiCoin")}</h3>
-  <div class="cards-grid compact">
-    {
-      sortWallets(communityWallets.wallets.multiCoin).map((wallet) => (
-        <CommunityCard
-          logo={wallet.logo}
-          name={wallet.name}
-          description={t(`downloads.community.descriptions.${wallet.id}`)}
-          tags={wallet.tags}
-          link={wallet.link}
-          linkText={t("downloads.community.learnMore")}
-          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
-          t={t}
-          id={setBuiltinId(wallet)}
-        />
-      ))
-    }
-  </div>
+      <h3 class="subheading">
+        {t("downloads.community.categories.lws.title")}
+      </h3>
+      <DisclaimerNote
+        text={t("downloads.community.categories.lws.disclaimer")}
+      />
+      <div class="cards-grid">
+        {
+          sortWallets(communityWallets.wallets.lws).map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`downloads.community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("downloads.community.learnMore")}
+              translateTag={(key: string) =>
+                t(`downloads.community.tags.${key}`)
+              }
+              t={t}
+              id={setBuiltinId(wallet)}
+            />
+          ))
+        }
+      </div>
+    </PageSection>
 
-  <!-- LWS Wallets -->
-  <h3 class="subheading">{t("downloads.community.categories.lws.title")}</h3>
-  <DisclaimerNote text={t("downloads.community.categories.lws.disclaimer")} />
-  <div class="cards-grid">
-    {
-      sortWallets(communityWallets.wallets.lws).map((wallet) => (
-        <CommunityCard
-          logo={wallet.logo}
-          name={wallet.name}
-          description={t(`downloads.community.descriptions.${wallet.id}`)}
-          tags={wallet.tags}
-          link={wallet.link}
-          linkText={t("downloads.community.learnMore")}
-          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
-          t={t}
-          id={setBuiltinId(wallet)}
-        />
-      ))
-    }
-  </div>
+    <PageSection
+      class="downloads-section"
+      anchorId="cold-wallets"
+      title={t("downloads.community.sections.cold.title")}
+      subtitle={t("downloads.community.sections.cold.subtitle")}
+    >
+      <div class="cards-grid">
+        {
+          sortWallets(communityWallets.cold).map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`downloads.community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("downloads.community.learnMore")}
+              translateTag={(key: string) =>
+                t(`downloads.community.tags.${key}`)
+              }
+              t={t}
+              id={setBuiltinId(wallet)}
+            />
+          ))
+        }
+      </div>
+    </PageSection>
 
-  <!-- Cold Wallets -->
-  <h2 class="section-title" id="cold-wallets">
-    {t("downloads.community.sections.cold.title")}
-  </h2>
-  <p class="section-subtitle">
-    {t("downloads.community.sections.cold.subtitle")}
-  </p>
-  <div class="cards-grid">
-    {
-      sortWallets(communityWallets.cold).map((wallet) => (
-        <CommunityCard
-          logo={wallet.logo}
-          name={wallet.name}
-          description={t(`downloads.community.descriptions.${wallet.id}`)}
-          tags={wallet.tags}
-          link={wallet.link}
-          linkText={t("downloads.community.learnMore")}
-          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
-          t={t}
-          id={setBuiltinId(wallet)}
-        />
-      ))
-    }
-  </div>
+    <PageSection
+      class="downloads-section"
+      anchorId="nodes"
+      title={t("downloads.community.sections.nodes.title")}
+      subtitle={t("downloads.community.sections.nodes.subtitle")}
+    >
+      <div class="cards-grid">
+        {
+          sortWallets(communityWallets.nodes).map((wallet) => (
+            <CommunityCard
+              logo={wallet.logo}
+              name={wallet.name}
+              description={t(`downloads.community.descriptions.${wallet.id}`)}
+              tags={wallet.tags}
+              link={wallet.link}
+              linkText={t("downloads.community.learnMore")}
+              translateTag={(key: string) =>
+                t(`downloads.community.tags.${key}`)
+              }
+              t={t}
+              id={setBuiltinId(wallet)}
+            />
+          ))
+        }
+      </div>
+    </PageSection>
 
-  <!-- Node Software -->
-  <h2 class="section-title" id="nodes">
-    {t("downloads.community.sections.nodes.title")}
-  </h2>
-  <p class="section-subtitle">
-    {t("downloads.community.sections.nodes.subtitle")}
-  </p>
-  <div class="cards-grid">
-    {
-      sortWallets(communityWallets.nodes).map((wallet) => (
-        <CommunityCard
-          logo={wallet.logo}
-          name={wallet.name}
-          description={t(`downloads.community.descriptions.${wallet.id}`)}
-          tags={wallet.tags}
-          link={wallet.link}
-          linkText={t("downloads.community.learnMore")}
-          translateTag={(key: string) => t(`downloads.community.tags.${key}`)}
-          t={t}
-          id={setBuiltinId(wallet)}
-        />
-      ))
-    }
-  </div>
-
-  <DisclaimerBar icon={shieldIcon} title="Disclaimer">
-    This list is for informational purposes only. The Monero Project does not
-    endorse, recommend, or guarantee any service listed here. Always
-    double-check URLs, start with a small test amount if you're unsure, and use
-    every service at your own risk.
-  </DisclaimerBar>
+    <DisclaimerBar icon={shieldIcon} title="Disclaimer">
+      This list is for informational purposes only. The Monero Project does not
+      endorse, recommend, or guarantee any service listed here. Always
+      double-check URLs, start with a small test amount if you're unsure, and
+      use every service at your own risk.
+    </DisclaimerBar>
+  </PageContainer>
 </Layout>
 
 <style>
-  .toc {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-    gap: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border-color);
-  }
-
-  .toc :global(.toc-item) {
-    background: var(--card-color);
-  }
-
-  .toc :global(.toc-item:hover),
-  .toc :global(.toc-item:focus-visible) {
-    background: var(--card-hover-color);
-  }
-
-  .section-title {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-    margin: 2rem 0 1rem 0;
-  }
-
-  .section-title,
   :global(#built-in-exchange) {
     scroll-margin-top: 2rem;
-  }
-
-  .section-subtitle {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
   }
 
   .subheading {
@@ -287,7 +263,6 @@ const setBuiltinId = (wallet: Wallet) => {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.25rem;
-    padding: 1rem 0;
   }
 
   .cards-grid.compact {

@@ -1,15 +1,343 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-
+import type { AccordionItemType } from "@/components/ui/Accordion.astro";
+import Accordion from "@/components/ui/Accordion.astro";
+import ContentCard from "@/components/ui/ContentCard.astro";
+import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
+import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import appWindowIcon from "@/assets/icons/mask/app-window.avif";
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+import pickaxeIcon from "@/assets/icons/mask/pickaxe.avif";
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import terminalIcon from "@/assets/icons/mask/terminal.avif";
+
+import gupaxWindow from "@/assets/images/gupax-window.webp";
+import xmrigWindow from "@/assets/images/xmrig.png";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+const safeMarkdown = createSafeMarkdown(locale);
+
+const faqItems = (
+  t("mining.faq.items", { returnObjects: true }) as AccordionItemType[]
+).map((item) => ({
+  ...item,
+  content: safeMarkdown.parse(item.content),
+}));
 ---
 
-<Layout
-  title="Mining"
-  description="Information and resources on how to begin mining Monero."
->
+<Layout title={t("mining.pageTitle")} description={t("mining.description")}>
   <TitleCard
-    title="Mining"
-    subtitle="Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining."
+    title={t("mining.hero.title")}
+    subtitle={t("mining.hero.subtitle")}
   />
+  <PageContainer>
+    <PageSection ariaLabel="Mining options">
+      <div class="grid">
+        <ContentCard
+          class="cardGupax"
+          title={t("mining.gupax.title")}
+          subtitle={t("mining.gupax.subtitle")}
+          icon={appWindowIcon}
+        >
+          <div class="frame">
+            <Image
+              src={gupaxWindow}
+              alt="Gupax window showing P2Pool and XMRig status"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <p class="lead">
+            {t("mining.gupax.lead")}
+          </p>
+
+          <ul class="bullets">
+            {
+              (
+                t("mining.gupax.bullets", { returnObjects: true }) as string[]
+              ).map((bullet: string) => <li>{bullet}</li>)
+            }
+          </ul>
+
+          <a
+            slot="bottom"
+            href="https://gupax.io/"
+            target="_blank"
+            rel="noopener"
+            class="cta"
+          >
+            {t("mining.gupax.cta")}
+            <MaskIcon src={externalLinkIcon} size="1em" />
+          </a>
+        </ContentCard>
+
+        <div class="rightCol" aria-label="Right column">
+          <ContentCard
+            title={t("mining.xmrig.title")}
+            subtitle={t("mining.xmrig.subtitle")}
+            icon={terminalIcon}
+          >
+            <div
+              aria-label="XMRig terminal window showing mining status"
+              style="margin: 0 auto;"
+            >
+              <Image
+                src={xmrigWindow}
+                alt="XMRig terminal window showing mining status"
+                loading="lazy"
+                decoding="async"
+                height={100}
+              />
+            </div>
+
+            <p class="lead">
+              {t("mining.xmrig.lead")}
+            </p>
+
+            <ul class="bullets">
+              {
+                (
+                  t("mining.xmrig.bullets", { returnObjects: true }) as string[]
+                ).map((bullet: string) => <li>{bullet}</li>)
+              }
+            </ul>
+
+            <a
+              slot="bottom"
+              href="https://github.com/xmrig/xmrig"
+              target="_blank"
+              rel="noopener"
+              class="cta"
+            >
+              {t("mining.xmrig.cta")}
+              <MaskIcon src={externalLinkIcon} size="1em" />
+            </a>
+          </ContentCard>
+
+          <ContentCard
+            class="cardSolo"
+            title={t("mining.solo.title")}
+            subtitle={t("mining.solo.subtitle")}
+            icon={pickaxeIcon}
+          >
+            <p class="lead">
+              {t("mining.solo.lead")}
+            </p>
+
+            <ul class="bullets">
+              {
+                (
+                  t("mining.solo.bullets", { returnObjects: true }) as string[]
+                ).map((bullet: string) => <li>{bullet}</li>)
+              }
+            </ul>
+
+            <a
+              slot="bottom"
+              href={localizeHref(
+                locale,
+                "/resources/user-guides/solo_mine_GUI",
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta"
+            >
+              {t("mining.solo.cta")}
+              <MaskIcon src={externalLinkIcon} size="1em" />
+            </a>
+          </ContentCard>
+        </div>
+      </div>
+    </PageSection>
+
+    <hr aria-hidden="true" />
+
+    <PageSection title={t("mining.resources.title")}>
+      <div class="resourceGrid">
+        <div class="resourceGroup">
+          <h3 class="resourceLabel">{t("mining.resources.guides.title")}</h3>
+          <ul class="resourceList">
+            <li>
+              <ExternalResourceButton
+                href={localizeHref(
+                  locale,
+                  "/resources/user-guides/mine-to-pool",
+                )}
+                title={t("mining.resources.guides.mineToPool.title")}
+                subtitle={t("mining.resources.guides.mineToPool.subtitle")}
+                variant="mini"
+              />
+            </li>
+            <li>
+              <ExternalResourceButton
+                href="https://gupax.io/#guide"
+                title={t("mining.resources.guides.gupaxSetup.title")}
+                subtitle={t("mining.resources.guides.gupaxSetup.subtitle")}
+                variant="mini"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="resourceGroup">
+          <h3 class="resourceLabel">{t("mining.resources.pools.title")}</h3>
+          <ul class="resourceList">
+            <li>
+              <ExternalResourceButton
+                href="https://miningpoolstats.stream/monero"
+                title={t("mining.resources.pools.comparePools.title")}
+                subtitle={t("mining.resources.pools.comparePools.subtitle")}
+                variant="mini"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="resourceGroup">
+          <h3 class="resourceLabel">
+            {t("mining.resources.benchmarks.title")}
+          </h3>
+          <ul class="resourceList">
+            <li>
+              <ExternalResourceButton
+                href="https://xmrig.com/benchmark"
+                title={t("mining.resources.benchmarks.hashrateEstimates.title")}
+                subtitle={t(
+                  "mining.resources.benchmarks.hashrateEstimates.subtitle",
+                )}
+                variant="mini"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </PageSection>
+
+    <hr aria-hidden="true" />
+
+    <PageSection class="faq" title={t("mining.faq.title")}>
+      <Accordion variant="card" items={faqItems} />
+
+      <DisclaimerBar icon={shieldIcon} title={t("mining.disclaimer.title")}>
+        {t("mining.disclaimer.content")}
+      </DisclaimerBar>
+    </PageSection>
+  </PageContainer>
+
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+
+    .cardGupax {
+      grid-column: span 7;
+    }
+
+    .rightCol {
+      grid-column: span 5;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .cardSolo {
+      flex: 1;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--paragraph-main);
+      max-width: 75ch;
+    }
+
+    .bullets {
+      margin: 0;
+      padding-inline-start: 1rem;
+      display: grid;
+      gap: 0.35rem;
+      color: var(--paragraph-subtitle);
+      line-height: var(--line-height-body);
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+      font-weight: var(--font-weight-bold);
+      color: var(--monero-orange);
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .cta:hover {
+      text-decoration: underline;
+    }
+
+    .frame {
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+
+    .frame :global(img) {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .resourceGrid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .resourceGroup {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .resourceLabel {
+      margin: 0;
+      font-size: var(--font-size-sm);
+      color: var(--heading-color);
+    }
+
+    .resourceList {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: minmax(0, 1fr);
+        align-items: start;
+      }
+      .cardGupax,
+      .rightCol {
+        grid-column: auto;
+      }
+      .cardSolo {
+        flex: 0 0 auto;
+      }
+      .resourceGrid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
 </Layout>

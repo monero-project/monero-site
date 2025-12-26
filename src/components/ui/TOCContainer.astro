@@ -1,0 +1,50 @@
+---
+import type { ImageMetadata } from "astro";
+import TOCItem from "./TOCItem.astro";
+
+export interface TOCSection {
+  id: string;
+  icon: ImageMetadata;
+  title: string;
+  subtitle: string;
+}
+
+export interface Props {
+  sections: TOCSection[];
+  ariaLabel: string;
+}
+
+const { sections, ariaLabel } = Astro.props;
+---
+
+<nav class="toc" aria-label={ariaLabel}>
+  {
+    sections.map((section) => (
+      <TOCItem
+        href={`#${section.id}`}
+        icon={section.icon}
+        title={section.title}
+        subtitle={section.subtitle}
+      />
+    ))
+  }
+</nav>
+
+<style>
+  .toc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .toc :global(.toc-item) {
+    background: var(--card-color);
+  }
+
+  .toc :global(.toc-item:hover),
+  .toc :global(.toc-item:focus-visible) {
+    background: var(--card-hover-color);
+  }
+</style>
