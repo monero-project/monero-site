@@ -120,12 +120,14 @@ const sections = [
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  :global(#gui, #cli) {
-    scroll-margin-top: 4rem;
+  #gui,
+  #cli {
+    scroll-margin-top: 6.5rem;
   }
 
   @media (min-width: 1200px) {
-    :global(#gui, #cli) {
+    #gui,
+    #cli {
       scroll-margin-top: unset;
     }
   }

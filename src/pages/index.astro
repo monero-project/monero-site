@@ -195,11 +195,7 @@ const t = await createTInstance(locale);
     ) !important;
   }
 
-  :global(#start-using-monero) {
-    scroll-margin-top: 4rem;
-  }
-
-  :global(.hero.index-hero) {
+  .index-hero {
     position: absolute;
     top: 3rem;
     inset-inline-start: 5rem;
@@ -209,13 +205,13 @@ const t = await createTInstance(locale);
   }
 
   @media (max-width: 1200px) {
-    :global(#start-using-monero) {
-      scroll-margin-top: 6rem;
+    #start-using-monero {
+      scroll-margin-top: 4rem;
     }
   }
 
   @media (max-width: 600px) {
-    :global(.hero.index-hero) {
+    .index-hero {
       inset-inline-start: 2rem;
       inset-inline-end: 2rem;
     }

@@ -6,11 +6,11 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import moneroOutline from "@/assets/icons/mask/monerooutline.avif";
 
-const { t, class: className } = Astro.props;
+const { t, class: className, ...rest } = Astro.props;
 const locale = getLocale(Astro.url);
 ---
 
-<div class:list={["hero", className]} aria-labelledby="hero-title">
+<div class:list={["hero", className]} aria-labelledby="hero-title" {...rest}>
   <div class="background-logo" aria-hidden="true">
     <div class="logo-box">
       <div class="mask-icon">
@@ -96,17 +96,17 @@ const locale = getLocale(Astro.url);
     max-width: 100%;
   }
 
-  .actions :global(.button) {
+  .hero-button {
     padding: 1em 2em;
   }
 
   @media (max-width: 600px) {
-    .hero-button {
-      width: 100%;
-    }
     .actions {
       flex-direction: column;
       gap: 0.75rem;
+    }
+    .hero-button {
+      width: 100%;
     }
   }
 

@@ -271,6 +271,7 @@ const sections = [
               <h4>{t("contribute.sections.donate.generalFund.moneroXmr")}</h4>
               <div class="donateRow">
                 <Image
+                  class="image"
                   src={`/media/contributing/${contributingData.xmr.qr_filename}`}
                   alt="QR code for Monero donation"
                   width={220}
@@ -316,6 +317,7 @@ const sections = [
               <h4>{t("contribute.sections.donate.generalFund.bitcoinBtc")}</h4>
               <div class="donateRow">
                 <Image
+                  class="image"
                   src={`/media/contributing/${contributingData.btc.qr_filename}`}
                   alt="QR code for Bitcoin donation"
                   width={220}
@@ -381,10 +383,9 @@ const sections = [
     margin: 0 0 0.75rem;
   }
 
-  .donateRow :global(img) {
+  .donateRow .image {
     border-radius: 0.5rem;
     border: 1px solid var(--border-color);
-    background: rgba(0, 0, 0, 0.03);
   }
 
   .donateGrid code {

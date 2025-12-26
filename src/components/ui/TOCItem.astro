@@ -9,7 +9,7 @@ export interface Props {
   title: string;
   subtitle: string;
   tag?: "a" | "span";
-  className?: string;
+  class?: string;
 }
 
 const {
@@ -18,7 +18,7 @@ const {
   icon,
   title,
   subtitle,
-  className,
+  class: className,
   ...rest
 } = Astro.props;
 

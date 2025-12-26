@@ -5,9 +5,8 @@ interface Props {
   variant?: "spaced" | "flush";
 }
 
-const { class: className, id, variant = "spaced" } = Astro.props;
+const { id, class: className, variant = "spaced", ...rest } = Astro.props;
 const classes = [
-  "page-container",
   variant === "spaced" ? "page-container--spaced" : "",
   className ?? "",
 ]
@@ -15,7 +14,7 @@ const classes = [
   .join(" ");
 ---
 
-<div id={id} class={classes}>
+<div id={id} class={classes} {...rest}>
   <slot />
 </div>
 

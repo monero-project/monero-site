@@ -50,6 +50,7 @@ const faqItems = (
         >
           <div class="frame">
             <Image
+              class="image"
               src={gupaxWindow}
               alt="Gupax window showing P2Pool and XMRig status"
               loading="lazy"
@@ -291,7 +292,7 @@ const faqItems = (
       overflow: hidden;
     }
 
-    .frame :global(img) {
+    .frame .image {
       display: block;
       width: 100%;
       height: auto;

@@ -385,12 +385,14 @@ const getLanguageLabel = (lang: string): string => {
         <Button
           variant="primary"
           href={localizeHref(locale, "/downloads/community/#wallets")}
+          class="cta-button"
         >
           {t("what-is-monero.sections.cta.downloadWallet")}
         </Button>
         <Button
           variant="secondary"
           href={localizeHref(locale, "/get-started/exchanges/")}
+          class="cta-button"
         >
           {t("what-is-monero.sections.cta.getMonero")}
         </Button>
@@ -562,7 +564,7 @@ const getLanguageLabel = (lang: string): string => {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .cta-buttons :global(.button) {
+  .cta-button {
     padding: 1em 2em;
   }
 

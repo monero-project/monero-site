@@ -25,6 +25,7 @@ const { sections, ariaLabel } = Astro.props;
         icon={section.icon}
         title={section.title}
         subtitle={section.subtitle}
+        class="toc-item-default"
       />
     ))
   }
@@ -39,12 +40,12 @@ const { sections, ariaLabel } = Astro.props;
     border-bottom: 1px solid var(--border-color);
   }
 
-  .toc :global(.toc-item) {
+  .toc-item-default {
     background: var(--card-color);
   }
 
-  .toc :global(.toc-item:hover),
-  .toc :global(.toc-item:focus-visible) {
+  .toc-item-default:hover,
+  .toc-item-default:focus-visible {
     background: var(--card-hover-color);
   }
 </style>

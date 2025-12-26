@@ -58,6 +58,7 @@ const {
   torrentUrl,
   magnetUrl,
   t,
+  ...rest
 } = Astro.props;
 
 const PLATFORM_ICONS: Record<string, ImageMetadata> = {
@@ -71,7 +72,7 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
 const safeMarkdown = createSafeMarkdown();
 ---
 
-<div class="download-card" id={id}>
+<div class="download-card" id={id} {...rest}>
   <div class="card-image">
     <Image src={image} alt="" format="avif" />
   </div>
@@ -277,7 +278,7 @@ const safeMarkdown = createSafeMarkdown();
   .torrent-split-button .magnet-button {
     border-start-end-radius: 22.5rem;
     border-end-end-radius: 22.5rem;
-    margin-inline-start: 0.2rem;
+    margin-inline-start: 0.1rem;
   }
 
   .metadata-links {

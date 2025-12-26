@@ -5,12 +5,12 @@ export interface Props {
   id: string;
 }
 
-const { title, description = "", id } = Astro.props;
+const { title, description = "", id, ...rest } = Astro.props;
 ---
 
-<div class="card" aria-labelledby={id}>
+<div class="card" id={id} aria-labelledby={id} {...rest}>
   <header class="head">
-    <h1 id={id} class="title">{title}</h1>
+    <h1 class="title">{title}</h1>
     {description && <p class="desc">{description}</p>}
   </header>
 
