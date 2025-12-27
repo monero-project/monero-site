@@ -34,12 +34,9 @@
     "faqTitle": "FAQ",
     "faqDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions ne sont pas là, vous pouvez toujours demander à la communauté.",
     "faqCta": "Trouvez votre réponse",
-    "userGuidesTitle": "Guides utilisateur",
-    "userGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions ne sont pas là, vous pouvez toujours demander à la communauté.",
-    "userGuidesCta": "Voir les guides",
-    "devGuidesTitle": "Guides développeur",
-    "devGuidesDesc": "Nous avons entendu beaucoup de questions au fil des ans et avons compilé une FAQ complète et variée. Ne vous inquiétez pas, si vos questions ne sont pas là, vous pouvez toujours demander à la communauté.",
-    "devGuidesCta": "Voir les guides"
+    "moneroDocsTitle": "Docs Monero",
+    "moneroDocsDesc": "Guides complets pour les utilisateurs et développeurs pour utiliser Monero efficacement et en toute sécurité.",
+    "moneroDocsCta": "Lire les Docs"
   },
   "faq": {
     "pageTitle": "FAQ | Monero - cryptomonnaie sécurisée, privée, non traçable.",
@@ -216,15 +213,10 @@
       ]
     },
     "additionalResources": {
-      "userGuides": {
-        "title": "Guides utilisateur",
-        "description": "Trouvez des guides détaillés sur comment utiliser Monero, de la configuration de votre portefeuille aux techniques de confidentialité avancées.",
-        "ctaLabel": "Voir les guides"
-      },
-      "devGuides": {
-        "title": "Guides développeur",
-        "description": "Explorez la documentation technique et les guides pour les développeurs intéressés à contribuer à Monero ou à construire sur sa technologie.",
-        "ctaLabel": "Voir les guides"
+      "moneroDocs": {
+        "title": "Documentation Monero",
+        "description": "Guides complets pour les utilisateurs et les développeurs pour utiliser Monero de manière efficace et sécurisée.",
+        "ctaLabel": "Lire la Documentation"
       },
       "stackExchange": {
         "title": "Stack Exchange",

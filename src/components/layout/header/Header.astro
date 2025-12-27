@@ -24,7 +24,6 @@ import researchLab from "@/assets/icons/color/light/research-lab.avif";
 import roadmap from "@/assets/icons/color/light/roadmap.avif";
 import sponsorships from "@/assets/icons/color/light/sponsorships.avif";
 import tools from "@/assets/icons/color/light/tools.avif";
-import userGuides from "@/assets/icons/color/light/user-guides.avif";
 import workgroups from "@/assets/icons/color/light/workgroups.avif";
 import monero from "@/assets/icons/color/monero.avif";
 
@@ -41,7 +40,6 @@ import researchLabDark from "@/assets/icons/color/dark/research-lab.avif";
 import roadmapDark from "@/assets/icons/color/dark/roadmap.avif";
 import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif";
 import toolsDark from "@/assets/icons/color/dark/tools.avif";
-import userGuidesDark from "@/assets/icons/color/dark/user-guides.avif";
 import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif";
 
 import moneroLogo from "@/../public/meta/monerologo.avif";
@@ -167,14 +165,8 @@ const navItems = [
         iconDark: toolsDark,
       },
       {
-        key: "userGuides",
-        href: "/resources/user-guides",
-        icon: userGuides,
-        iconDark: userGuidesDark,
-      },
-      {
-        key: "developerGuides",
-        href: "/resources/developer-guides",
+        key: "moneroDocs",
+        href: "https://docs.getmonero.org",
         icon: developerGuides,
         iconDark: developerGuidesDark,
       },
@@ -313,7 +305,7 @@ const navItems = [
   }
 
   .hamburger {
-    font-size: 1.25rem;
+    font-size: var(--font-size-xl);
   }
 
   .nav-toggle {

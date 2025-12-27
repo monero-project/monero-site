@@ -70,13 +70,9 @@
           "label": "Laboratorio de investigación",
           "desc": "Descubre las formas de ayudar al proyecto Monero a llevar la privacidad a todos."
         },
-        "userGuides": {
-          "label": "Guías de usuario",
-          "desc": "Guías completas para ayudarte a usar Monero de manera efectiva y segura."
-        },
-        "developerGuides": {
-          "label": "Guías para desarrolladores",
-          "desc": "Encuentra respuestas a preguntas y preocupaciones recurrentes sobre Monero."
+        "moneroDocs": {
+          "label": "Documentos de Monero",
+          "desc": "Guías completas para usuarios y desarrolladores para usar Monero de manera efectiva y segura."
         },
         "moneroTools": {
           "label": "Herramientas de Monero",
@@ -98,8 +94,7 @@
           "downloads": "Descargas",
           "exchanges": "Intercambios",
           "merchants": "Comerciantes",
-          "userGuides": "Guías de usuario",
-          "developerGuides": "Guías para desarrolladores"
+          "moneroDocs": "Documentos de Monero"
         }
       },
       "reachOut": {

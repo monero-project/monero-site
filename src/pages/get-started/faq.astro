@@ -1,7 +1,7 @@
 ---
 import "@/styles/moneropedia-link.css";
 
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import { createTInstance, getLocale } from "@/i18n/utils";
 import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
 import Layout from "@/layouts/Layout.astro";
@@ -14,7 +14,6 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 
 import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif";
 import faqIcon from "@/assets/icons/mask/faq.avif";
-import userGuidesIcon from "@/assets/icons/mask/user-guides.avif";
 import PageContainer from "@/components/ui/PageContainer.astro";
 
 const locale = getLocale(Astro.url);
@@ -95,18 +94,11 @@ const economicsItems = (
     >
       <div id="resource-container">
         <ResourceCard
-          icon={userGuidesIcon}
-          title={t("faq.additionalResources.userGuides.title")}
-          description={t("faq.additionalResources.userGuides.description")}
-          ctaLabel={t("faq.additionalResources.userGuides.ctaLabel")}
-          ctaHref={localizeHref(locale, "/resources/user-guides/")}
-        />
-        <ResourceCard
           icon={developerGuidesIcon}
-          title={t("faq.additionalResources.devGuides.title")}
-          description={t("faq.additionalResources.devGuides.description")}
-          ctaLabel={t("faq.additionalResources.devGuides.ctaLabel")}
-          ctaHref={localizeHref(locale, "/resources/developer-guides/")}
+          title={t("faq.additionalResources.moneroDocs.title")}
+          description={t("faq.additionalResources.moneroDocs.description")}
+          ctaLabel={t("faq.additionalResources.moneroDocs.ctaLabel")}
+          ctaHref="https://docs.getmonero.org"
         />
         <ResourceCard
           icon={faqIcon}

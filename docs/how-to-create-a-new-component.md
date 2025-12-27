@@ -17,7 +17,7 @@ Quick decision guide:
   - Keep these dependency-free (accept props, avoid page-specific logic).
   - Example: `src/components/ui/Button.astro`, `Accordion.astro`.
 
-- `src/components/pages/` -> **Page-specific or feature components**
+- `src/components/pages/<page-name>/` -> **Page-specific or feature components**
   - Use when the component is tightly coupled to one page or feature (e.g., blog listing card, downloads grid, search results component, exchanges table).
   - They can import page-level helpers and expect specific data shapes.
   - Example: `src/components/pages/blog/BlogCard.astro`.
@@ -29,7 +29,7 @@ Quick decision guide:
 
 Rules of thumb:
 - If it’s small and can be reused later -> put it in `ui/`.
-- If it depends on a single page’s data or route -> put it in `pages/`.
+- If it depends on a single page’s data or route -> put it in `pages/<page-name>/`.
 - If it composes site scaffolding or is used by `src/layouts/` -> put it in `layout/`.
 
 If you're still unsure, search for similar components in `src/components/` and follow the existing pattern. Add a short comment at the top of the file describing purpose and intended scope.
@@ -37,27 +37,33 @@ If you're still unsure, search for similar components in `src/components/` and f
 ## Minimal component template
 
 ```astro
+// MyComponent.astro
 ---
-interface Props { title?: string }
-const { title = "" } = Astro.props as Props;
+interface Props { title?: string; class?: string }
+const { title = "", class: className = "" } = Astro.props;
 ---
 
-<article class="card">
-  <h3>{title}</h3>
+<div class:list={["card", className]}>
+  {title && <h3>{title}</h3>}
   <slot />
-</article>
+</div>
 
 <style>
-    .card {
-        padding: 0.75rem;
-        border-radius: 8px;
-        background-color: var(--card-color);
-    }
+  .card {
+    padding: 0.75rem;
+    border-radius: 8px;
+    background-color: var(--card-color);
+  }
 </style>
 ```
 
-- Use `<slot />` for flexible content composition.
-- Prefer `src/components/ui/` for reusable UI pieces (buttons, accordions, icons).
+- Usage of `slot` lets you nest content inside the component. Example:
+```astro
+<MyComponent title="Hello">
+  <p>This is nested content inside MyComponent.</p>
+</MyComponent>
+```
+
 
 ## Props, Types, and Slots
 

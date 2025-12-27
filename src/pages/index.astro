@@ -10,7 +10,6 @@ import ResourceCard from "@/components/pages/index/ResourceCard.astro";
 
 import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif";
 import faqIcon from "@/assets/icons/mask/faq.avif";
-import userGuidesIcon from "@/assets/icons/mask/user-guides.avif";
 
 import landingImage from "@/assets/images/landing.avif";
 import { Image } from "astro:assets";
@@ -111,17 +110,10 @@ const t = await createTInstance(locale);
           icon={faqIcon}
         />
         <ResourceCard
-          title={t("index.userGuidesTitle")}
-          description={t("index.userGuidesDesc")}
-          ctaLabel={t("index.userGuidesCta")}
-          ctaHref={localizeHref(locale, "/resources/user-guides")}
-          icon={userGuidesIcon}
-        />
-        <ResourceCard
-          title={t("index.devGuidesTitle")}
-          description={t("index.devGuidesDesc")}
-          ctaLabel={t("index.devGuidesCta")}
-          ctaHref={localizeHref(locale, "/resources/developer-guides")}
+          title={t("index.moneroDocsTitle")}
+          description={t("index.moneroDocsDesc")}
+          ctaLabel={t("index.moneroDocsCta")}
+          ctaHref="https://docs.getmonero.org"
           icon={developerGuidesIcon}
         />
       </div>

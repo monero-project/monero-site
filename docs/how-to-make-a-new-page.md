@@ -3,7 +3,7 @@
 ## Quick checklist
 
 - Create `src/pages/<your-path>/index.astro` or `src/pages/<name>.astro`.
-- Use `Layout` and `TitleCard` for consistent header/footer/hero.
+- Use `Layout`, `TitleCard` and `PageContainer` for consistent header/footer/main content.
 - Use components from `src/components/ui/` where needed.
 - Run `pnpm dev` and preview at `http://localhost:4321/<your-path>`.
 
@@ -13,21 +13,20 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
 ---
 
 <Layout title="My page" description="Short description">
   <TitleCard title="My page" subtitle="What this page is about" />
 
-  <div id="content">
+  <PageContainer>
     <h2>Section</h2>
     <p>Content goes here.</p>
-  </div>
+  </PageContainer>
 </Layout>
 
 <style>
-    #content {
-        margin-top: 2rem;
-    }
+  /* Page-specific styles here */
 </style>
 ```
 
@@ -38,20 +37,18 @@ Notes:
 
 ## Localization & titles
 
-- Prefer translation keys for visible strings (page titles, hero copy). See [How to Add Localization to a Page](how-to-add-localization-to-a-page.md) for examples using the translation utilities.
+- After you have written your page, you must migrate the text content into a localization file so it's possible to translate the page. See [How to Add Localization to a Page](how-to-add-localization-to-a-page.md) for examples using the translation utilities.
 
 ## When to extract a component
 
-Extract when a block is:
-- repeated, complex, or likely to be reused.
-- better tested in isolation (e.g., data fetching, toggles).
+Extract when a block is repeated, complex, or likely to be reused.
 
 Use `src/components/pages/` for page-specific components and `src/components/ui/` for reusable UI components. See [How to Create a New Component](how-to-create-a-new-component.md).
 
 ## Accessibility & small best-practices
 
 - Use proper heading order (h1 -> h2 -> …).
-- Add `alt` text for images and aria attributes for interactive elements.
+- Add `alt` text for images and aria attributes for interactive elements. If a image is decorative, use `alt=""`.
 - Keep content concise and scannable (short sections, meaningful headings).
 
 ## Test & PR checklist

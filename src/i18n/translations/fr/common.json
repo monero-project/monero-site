@@ -70,13 +70,9 @@
           "label": "Laboratoire de recherche",
           "desc": "Découvrez les moyens d'aider le projet Monero à apporter la confidentialité à tous."
         },
-        "userGuides": {
-          "label": "Guides utilisateur",
-          "desc": "Guides complets pour vous aider à utiliser Monero efficacement et en toute sécurité."
-        },
-        "developerGuides": {
-          "label": "Guides développeur",
-          "desc": "Trouvez des réponses aux questions et préoccupations récurrentes sur Monero."
+        "moneroDocs": {
+          "label": "Docs Monero",
+          "desc": "Guides complets pour les utilisateurs et développeurs pour utiliser Monero efficacement et en toute sécurité."
         },
         "moneroTools": {
           "label": "Outils Monero",
@@ -98,8 +94,7 @@
           "downloads": "Téléchargements",
           "exchanges": "Échanges",
           "merchants": "Commerçants",
-          "userGuides": "Guides utilisateur",
-          "developerGuides": "Guides développeur"
+          "moneroDocs": "Docs Monero"
         }
       },
       "reachOut": {

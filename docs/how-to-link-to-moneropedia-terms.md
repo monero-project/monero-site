@@ -3,12 +3,12 @@
 This guide shows you how to add links to Moneropedia terms (like "airgap" or "wallet") in your content. Linking helps readers learn more without leaving the page.
 
 There are two ways to do this, depending on where your content is:
-- **In Markdown files** (like blog posts or guides): Automatic linking is done.
+- **In Astro Content Collection files** (like blog posts or Moneropedia): Automatic linking is done.
 - **In other places** (like translation files or code): Some utilities need to be used.
 
-## Option 1: Linking in Markdown Content (.md Files)
+## Option 1: Linking in Astro Content Collections (.md Files)
 
-If you're writing in a Markdown file (e.g., a blog post), the built-in `remark-moneropedia` plugin does the linking for you automatically.
+If you're writing in a Markdown file that's part of an Astro Content Collection (e.g., a blog post), the built-in `remark-moneropedia` plugin does the linking for you automatically.
 
 ### What It Does
 - It looks for terms starting with `@` (like `@airgap`).
@@ -26,9 +26,9 @@ In your Markdown file:
 An @airgap is a way to keep your computer safe from the internet.
 ```
 
-## Option 2: Linking in Non-Markdown Content (e.g., Translations or Code)
+## Option 2: Linking from Translation Files
 
-For translation strings (JSON) or programmatic content (Astro/React), use the safeMarkdown helpers from `utils/safeMarkdown.ts`. These functions already include Moneropedia processing, so you only need to pass the locale when creating the helper via `createSafeMarkdown`.
+For translation strings (JSON), use the safeMarkdown helpers from `utils/safeMarkdown.ts`. These functions already include Moneropedia processing, so you only need to pass the locale when creating the helper via `createSafeMarkdown`.
 
 **Server-side note:** Call the safeMarkdown helper in server-side/frontmatter code (page `---` block) - do not run it in client-only/browser code.
 

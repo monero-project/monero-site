@@ -66,13 +66,9 @@
           "label": "Research Lab",
           "desc": "Explore the Monero Research Lab's publications and research."
         },
-        "userGuides": {
-          "label": "User Guides",
-          "desc": "Comprehensive guides to help you use Monero effectively and securely."
-        },
-        "developerGuides": {
-          "label": "Developer Guides",
-          "desc": "Guides, documentation, and resources for Monero developers."
+        "moneroDocs": {
+          "label": "Monero Docs",
+          "desc": "Comprehensive guides for users and developers to use Monero effectively and securely."
         },
         "moneroTools": {
           "label": "Monero Tools",
@@ -96,8 +92,7 @@
           "downloads": "Downloads",
           "exchanges": "Exchanges",
           "merchants": "Merchants",
-          "userGuides": "User guides",
-          "developerGuides": "Developer guides"
+          "moneroDocs": "Monero Docs"
         }
       },
       "reachOut": {

@@ -45,14 +45,10 @@ const columns: Column[] = [
         href: localizeHref(locale, "/resources/moneropedia/"),
       },
       {
-        label: t("footer.columns.resources.links.developerGuides", {
+        label: t("footer.columns.resources.links.moneroDocs", {
           ns: "common",
         }),
-        href: localizeHref(locale, "/resources/developer-guides"),
-      },
-      {
-        label: t("footer.columns.resources.links.userGuides", { ns: "common" }),
-        href: localizeHref(locale, "/resources/user-guides"),
+        href: "https://docs.getmonero.org",
       },
       {
         label: t("footer.columns.resources.links.downloads", { ns: "common" }),
@@ -246,9 +242,8 @@ const bottomLinks: Link[] = [
   }
 
   .items {
-    padding: var(--mobile-padding);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-inline: var(--mobile-padding-inline);
+    padding-block: 3rem;
     max-width: var(--content-max-width);
     margin: 0 auto;
   }
@@ -323,9 +318,8 @@ const bottomLinks: Link[] = [
 
   @media (min-width: 1200px) {
     .items {
-      padding: var(--desktop-padding);
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding-block: 5rem;
+      padding-inline: var(--desktop-padding-inline);
     }
 
     .title {

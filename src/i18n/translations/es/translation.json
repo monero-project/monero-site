@@ -34,12 +34,9 @@
     "faqTitle": "Preguntas frecuentes",
     "faqDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntar a la comunidad.",
     "faqCta": "Encuentra tu respuesta",
-    "userGuidesTitle": "Guías de usuario",
-    "userGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntar a la comunidad.",
-    "userGuidesCta": "Ver las guías",
-    "devGuidesTitle": "Guías de desarrollador",
-    "devGuidesDesc": "Hemos escuchado muchas preguntas a lo largo de los años y hemos compilado una FAQ completa y variada. No te preocupes, si tus preguntas no están ahí, siempre puedes preguntar a la comunidad.",
-    "devGuidesCta": "Ver las guías"
+    "moneroDocsTitle": "Documentos de Monero",
+    "moneroDocsDesc": "Guías completas para usuarios y desarrolladores para usar Monero de manera efectiva y segura.",
+    "moneroDocsCta": "Leer Documentos"
   },
   "faq": {
     "pageTitle": "Preguntas frecuentes | Monero - criptomoneda segura, privada, no rastreable.",
@@ -216,15 +213,10 @@
       ]
     },
     "additionalResources": {
-      "userGuides": {
-        "title": "Guías de usuario",
-        "description": "Encuentra guías detalladas sobre cómo usar Monero, desde configurar tu billetera hasta técnicas de privacidad avanzadas.",
-        "ctaLabel": "Ver las guías"
-      },
-      "devGuides": {
-        "title": "Guías de desarrollador",
-        "description": "Explora documentación técnica y guías para desarrolladores interesados en contribuir a Monero o construir sobre su tecnología.",
-        "ctaLabel": "Ver las guías"
+      "moneroDocs": {
+        "title": "Documentos de Monero",
+        "description": "Guías completas para usuarios y desarrolladores para usar Monero de manera efectiva y segura.",
+        "ctaLabel": "Leer Documentos"
       },
       "stackExchange": {
         "title": "Stack Exchange",

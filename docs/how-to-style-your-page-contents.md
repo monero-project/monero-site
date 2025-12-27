@@ -10,7 +10,7 @@
 ## Useful variables (examples)
 
 - Colors: `--monero-orange`, `--card-color`, `--heading-color`, `--text-primary`.
-- Spacing: `--page-top-margin`, `--mobile-padding`, `--desktop-padding`.
+- Spacing: `--page-top-margin`, `--mobile-padding-inline`, `--desktop-padding-inline`.
 - Typography: `--font-size-base`, `--font-size-2xl`, `--font-weight-semibold`.
 
 See `src/styles/global.css` for the full list. These variables have built-in dark mode equivalents.
@@ -20,6 +20,7 @@ See `src/styles/global.css` for the full list. These variables have built-in dar
 ```astro
 ---
 import Layout from "@/layouts/Layout.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Button from "@/components/ui/Button.astro";
 ---
@@ -27,7 +28,7 @@ import Button from "@/components/ui/Button.astro";
 <Layout title="Styling example" description="Short example of page-level styles">
   <TitleCard title="Example section" subtitle="A short intro sentence" />
 
-  <div id="content">
+  <PageContainer>
     <div class="two-col">
       <article>
         <h2 class="example-title">Section heading</h2>
@@ -35,7 +36,7 @@ import Button from "@/components/ui/Button.astro";
         <Button variant="primary">Call to action</Button>
       </article>
     </div>
-  </div>
+  </PageContainer>
 </Layout>
 
 <style>
@@ -78,22 +79,18 @@ import Button from "@/components/ui/Button.astro";
   </style>
   ```
 
-- Use `:global` to style imported components or global elements within a scoped `<style>` block. Chain it with a local class to target specific instances and avoid global side effects:
+- Pass classes to components to allow style overrides:
   ```astro
   <div class="my-wrapper">
-    <Button variant="primary">Click me</Button>
+    <Button variant="primary" class="button">Click me</Button>
   </div>
 
   <style>
-    .my-wrapper :global(.button) {
+    .my-wrapper .button {
       border-radius: 0.5rem;
     }
   </style>
   ```
-
-  `:global` is needed because Astro scopes styles by default to prevent conflicts. Without `:global`, styles only apply to elements within the component. Use it sparingly to avoid unintended global side effects.
-
-  More info on `:global` usage: [Astro: Global Styles](https://docs.astro.build/en/guides/styling/#global-styles)
 
 ## Breakpoints & patterns
 - Prefer mobile-first patterns (use `@media (min-width: ...)`) unless a component already follows `max-width` patterns.
@@ -102,7 +99,7 @@ import Button from "@/components/ui/Button.astro";
   - >= 600px: small tablet
   - >= 900px: tablet
   - >= 1200px: small desktop
-  - >= 1536px: desktop
+  - >= 1600px: desktop
 
 
 ## Accessibility & dark mode

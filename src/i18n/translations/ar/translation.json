@@ -34,12 +34,9 @@
     "faqTitle": "الأسئلة الشائعة",
     "faqDesc": "لقد سمعنا الكثير من الأسئلة على مر السنين وقمنا بتجميع أسئلة شائعة شاملة ومتنوعة. لا تقلق، إذا لم تكن أسئلتك موجودة هناك، يمكنك دائمًا السؤال المجتمع.",
     "faqCta": "ابحث عن إجابتك",
-    "userGuidesTitle": "دليل المستخدم",
-    "userGuidesDesc": "لقد سمعنا الكثير من الأسئلة على مر السنين وقمنا بتجميع أسئلة شائعة شاملة ومتنوعة. لا تقلق، إذا لم تكن أسئلتك موجودة هناك، يمكنك دائمًا السؤال المجتمع.",
-    "userGuidesCta": "انظر الدليل",
-    "devGuidesTitle": "دليل المطور",
-    "devGuidesDesc": "لقد سمعنا الكثير من الأسئلة على مر السنين وقمنا بتجميع أسئلة شائعة شاملة ومتنوعة. لا تقلق، إذا لم تكن أسئلتك موجودة هناك، يمكنك دائمًا السؤال المجتمع.",
-    "devGuidesCta": "انظر الدليل"
+    "moneroDocsTitle": "وثائق مونيرو",
+    "moneroDocsDesc": "أدلة شاملة للمستخدمين والمطورين لاستخدام مونيرو بفعالية وأمان.",
+    "moneroDocsCta": "قراءة الوثائق"
   },
   "faq": {
     "pageTitle": "الأسئلة الشائعة | Monero - عملة مشفرة آمنة، خاصة، غير قابلة للتتبع.",
@@ -216,15 +213,10 @@
       ]
     },
     "additionalResources": {
-      "userGuides": {
-        "title": "دليل المستخدم",
-        "description": "ابحث عن دليل شامل حول كيفية استخدام Monero، من إعداد محفظتك إلى تقنيات الخصوصية المتقدمة.",
-        "ctaLabel": "انظر الدليل"
-      },
-      "devGuides": {
-        "title": "دليل المطور",
-        "description": "استكشف الوثائق التقنية ودليل للمطورين المهتمين بالمساهمة في Monero أو بناء على تكنولوجيته.",
-        "ctaLabel": "انظر الدليل"
+      "moneroDocs": {
+        "title": "وثائق مونيرو",
+        "description": "دليل شامل للمستخدمين والمطورين لاستخدام مونيرو بفعالية وأمان.",
+        "ctaLabel": "قراءة الوثائق"
       },
       "stackExchange": {
         "title": "Stack Exchange",
@@ -677,7 +669,7 @@
         },
         "mine": {
           "title": "Mine",
-          "description": "Mining ensures the safety of the network. Monero uses @RandomX, an ASIC-resistant algorithm developed by Monero contributors, which aims to remain mineable by consumer-grade hardware (CPUs).",
+          "description": "Mining ensures the safety of the network and rewards you with XMR. Monero uses @RandomX, an ASIC-resistant algorithm developed by Monero contributors, which aims to remain mineable by consumer-grade hardware (CPUs).",
           "learnAboutMining": "Learn about mining"
         }
       },
