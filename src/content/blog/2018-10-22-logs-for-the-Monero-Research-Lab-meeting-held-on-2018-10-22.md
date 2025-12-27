@@ -85,16 +85,16 @@ author: el00ruobuob / sarang
 **\<suraeNoether>** so, bad news: it's fast and efficient to find an optimally plausible solution. good news: the total number of solutions can be made \*really really massive\*  
 **\<suraeNoether>** even if someone can find the optimally plausible solution in a short period of time, \*all the other possible solutions\* are also plausible  
 **\<suraeNoether>** so, I asked myself "okay, how can we make it so that there are so many plausible transaction histories that it's unreasonable to decide on any one of them?"  
-**\<wow-discord> \<sgp>** yes  
+**\<wow-discord> \<sgp>** yes  
 **\<suraeNoether>** even if you have a great heuristic and you can find the optimally plausible one very quickly, you are vulnerable to \*not\* catching someone who uses your heuristics to greedily make their transactions as invisible as possible  
 **\<suraeNoether>** so, for example, there are at least a billion transaction histories that are \*plausible\* if you deposit 16 outputs with a ring size of 10  
 **\<suraeNoether>** there are 10^81 plausible trnasaction histories if you deposit 52 outputs at ring size 100  
 **\<sarang>** So the question becomes "what number is acceptable"?  
-**\<wow-discord> \<sgp>** how are 10, 81, 52, and 100 related?  
+**\<wow-discord> \<sgp>** how are 10, 81, 52, and 100 related?  
 **\<sarang>** (not from a theory perspective, from a practical one)  
 **\<suraeNoether>** so: time complexity to find \*any\* solution is linearly related to ring size, and the total number of possible transaction histories can be computed precisely using this formula: (((R-1)^(R-1))/(R^(R-2)))^k where k = # of outputs deposited  
 **\<suraeNoether>** sgp\_[m]: merely related according to that formula  
-**\<wow-discord> \<sgp>** thanks, gives me some context  
+**\<wow-discord> \<sgp>** thanks, gives me some context  
 **\<suraeNoether>** i picked 10 and 100 ring members respectively as examples that are one order of magnitude apart, and i picked a billion (10^9) and big (10^81) essentially just to look at the behavior, at a glance  
 **\<suraeNoether>** so, this actually demonstrates a few things  
 **\<suraeNoether>** firstly: someone who is making only a few deposits, say 3, with no churn whatsoever, at a ring size of 11 is like ... dealing with 76 or so possible transaction histories  
