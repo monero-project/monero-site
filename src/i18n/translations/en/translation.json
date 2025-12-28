@@ -703,6 +703,11 @@
           "links": "Links",
           "browseMoneroBounties": "Browse Monero Bounties",
           "securityDisclosures": "Security disclosures (HackerOne)"
+        },
+        "workgroups": {
+          "title": "Workgroups",
+          "description": "Monero workgroups collaborate on specific areas of Monero development and community efforts.",
+          "joinWorkgroups": "Join a workgroup"
         }
       },
       "donate": {

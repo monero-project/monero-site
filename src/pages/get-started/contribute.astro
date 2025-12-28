@@ -9,6 +9,7 @@ import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
 import codeXmlIcon from "@/assets/icons/mask/codeXml.avif";
+import crosshairIcon from "@/assets/icons/mask/crosshair.avif";
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import globeIcon from "@/assets/icons/mask/globe.avif";
 import handCoinsIcon from "@/assets/icons/mask/handCoins.avif";
@@ -18,6 +19,7 @@ import pickaxeIcon from "@/assets/icons/mask/pickaxe.avif";
 import piggyBankIcon from "@/assets/icons/mask/piggyBank.avif";
 import serverIcon from "@/assets/icons/mask/server.avif";
 import terminalIcon from "@/assets/icons/mask/terminal.avif";
+import usersIcon from "@/assets/icons/mask/users.avif";
 
 import CoreProjectCard from "@/components/pages/contribute/CoreProjectCard.astro";
 import ContentCard from "@/components/ui/ContentCard.astro";
@@ -185,39 +187,71 @@ const sections = [
       </div>
 
       <h3>{t("contribute.sections.develop.additionalResources")}</h3>
-      <ContentCard title={t("contribute.sections.develop.bounties.title")}>
-        <p>
-          {t("contribute.sections.develop.bounties.description")}
-        </p>
+      <div class="gridProjects">
+        <ContentCard
+          title={t("contribute.sections.develop.workgroups.title")}
+          icon={usersIcon}
+        >
+          <p>
+            {t("contribute.sections.develop.workgroups.description")}
+          </p>
 
-        <div slot="bottom">
-          <span class="title"
-            >{t("contribute.sections.develop.bounties.links")}</span
-          >
-          <ul>
-            <li>
-              <a
-                href="https://bounties.monero.social/"
-                target="_blank"
-                rel="noopener"
-              >
-                {t("contribute.sections.develop.bounties.browseMoneroBounties")}
-                <MaskIcon src={externalLinkIcon} size="1em" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://hackerone.com/monero"
-                target="_blank"
-                rel="noopener"
-              >
-                {t("contribute.sections.develop.bounties.securityDisclosures")}
-                <MaskIcon src={externalLinkIcon} size="1em" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </ContentCard>
+          <div slot="bottom">
+            <ul>
+              <li>
+                <a href="/community/workgroups/" rel="noopener">
+                  {t("contribute.sections.develop.workgroups.joinWorkgroups")}
+                  <MaskIcon src={arrowRight} size="1em" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ContentCard>
+        <ContentCard
+          title={t("contribute.sections.develop.bounties.title")}
+          icon={crosshairIcon}
+        >
+          <p>
+            {t("contribute.sections.develop.bounties.description")}
+          </p>
+
+          <div slot="bottom">
+            <span class="title"
+              >{t("contribute.sections.develop.bounties.links")}</span
+            >
+            <ul>
+              <li>
+                <a
+                  href="https://bounties.monero.social/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {
+                    t(
+                      "contribute.sections.develop.bounties.browseMoneroBounties",
+                    )
+                  }
+                  <MaskIcon src={externalLinkIcon} size="1em" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://hackerone.com/monero"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {
+                    t(
+                      "contribute.sections.develop.bounties.securityDisclosures",
+                    )
+                  }
+                  <MaskIcon src={externalLinkIcon} size="1em" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ContentCard>
+      </div>
     </PageSection>
 
     <hr aria-hidden="true" />

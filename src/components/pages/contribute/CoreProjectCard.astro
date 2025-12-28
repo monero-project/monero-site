@@ -93,7 +93,6 @@ const { title, description, tags, link, linkText, icon } = Astro.props;
 
   .card-description-text {
     margin: 0;
-    font-size: var(--font-size-sm);
     color: var(--paragraph-main);
   }
 
@@ -114,7 +113,6 @@ const { title, description, tags, link, linkText, icon } = Astro.props;
     border-radius: 999px;
     background: var(--card-hover-color);
     font-size: var(--font-size-sm);
-    color: var(--paragraph-main);
     line-height: 1;
   }
 
@@ -125,9 +123,8 @@ const { title, description, tags, link, linkText, icon } = Astro.props;
   .visit-link {
     display: inline-flex;
     align-items: center;
-    margin-top: 0.25rem;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    margin-top: 0.5rem;
+    font-weight: var(--font-weight-semibold);
     color: var(--monero-orange);
     text-decoration: none;
   }
