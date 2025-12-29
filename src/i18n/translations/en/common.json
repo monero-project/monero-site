@@ -141,5 +141,18 @@
   "strings": {
     "yes": "Yes",
     "no": "No"
+  },
+  "notFound": {
+    "pageTitle": "404",
+    "pageDescription": "The page you're looking for doesn't exist.",
+    "title": "Page Not Found",
+    "message": "Looks like this page doesn't exist - or maybe it just doesn't want to be found.",
+    "links": {
+      "home": "Home",
+      "whatIsMonero": "What is Monero?",
+      "downloads": "Downloads",
+      "faq": "FAQ",
+      "community": "Community"
+    }
   }
 }

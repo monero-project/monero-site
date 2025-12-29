@@ -112,7 +112,7 @@ if (last <= 3) {
                   aria-label={ariaLabel}
                   aria-current={isActive ? "page" : undefined}
                 >
-                  {locale ? localizeNumber(n, locale) : n}
+                  {locale ? localizeNumber(locale, n) : n}
                 </a>
               </li>
             );

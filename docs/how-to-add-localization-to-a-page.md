@@ -76,7 +76,7 @@ Example:
 import { localizeNumber, getLocale } from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
-const formatted = localizeNumber(1234, locale); // "1234" (this helper does not add thousands separators; it localizes digit glyphs)
+const formatted = localizeNumber(locale, 1234); // "1234" (this helper does not add thousands separators; it localizes digit glyphs)
 
 > Tip: If you need thousands separators/grouping (e.g., "1,234"), use `Intl.NumberFormat` directly with `useGrouping: true` or implement a small wrapper using `number.toLocaleString(localeString, { useGrouping: true })`.
 ```

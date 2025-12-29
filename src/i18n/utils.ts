@@ -24,8 +24,8 @@ export const localizeHref = (locale: string, href: string): string => {
 };
 
 export const localizeNumber = (
-  number: number,
   locale: string,
+  number: number,
   minimumIntegerDigits: number = 1,
 ): string => {
   // We map the short locale (ex. "ar") to the full locale string ("ar-SA") from config.ts

@@ -139,5 +139,18 @@
       "rssFeed": "Flux RSS"
     },
     "copyright": "© 2025 Monero. Tous droits réservés."
+  },
+  "notFound": {
+    "pageTitle": "404 - Page non trouvée | Monero",
+    "pageDescription": "La page que vous recherchez n'existe pas.",
+    "title": "Page non trouvée",
+    "message": "Il semble que cette page n'existe pas, ou peut-être qu'elle ne veut tout simplement pas être trouvée.",
+    "links": {
+      "home": "Accueil",
+      "whatIsMonero": "Qu'est-ce que Monero?",
+      "downloads": "Téléchargements",
+      "faq": "FAQ",
+      "community": "Communauté"
+    }
   }
 }
