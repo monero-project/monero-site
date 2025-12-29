@@ -61,7 +61,7 @@ for (const letter of sortedLetters) {
     title={t("moneropedia:hero.title") ?? "Moneropedia"}
     subtitle={t("moneropedia:hero.subtitle")}
   />
-  <PageContainer class="moneropedia-index">
+  <PageContainer>
     <nav class="letter-nav" aria-label="Moneropedia navigation bar">
       {
         sortedLetters.map((letter) => (
@@ -110,11 +110,6 @@ for (const letter of sortedLetters) {
   html {
     scroll-padding-top: 4em;
     scroll-behavior: smooth;
-  }
-
-  .moneropedia-index {
-    margin-top: 3rem;
-    padding-block: 2rem 3rem;
   }
 
   .letter-nav {

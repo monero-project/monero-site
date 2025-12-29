@@ -1,4 +1,5 @@
 ---
+import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
@@ -28,20 +29,22 @@ const t = await createTInstance(locale);
     title={t("blog:tagIndex.hero.title")}
     subtitle={t("blog:tagIndex.hero.subtitle")}
   />
-  <ul>
-    {
-      tags.map((tag) => (
-        <li>
-          <a
-            href={localizeHref(
-              locale,
-              `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
-            )}
-          >
-            {tag}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <PageContainer>
+    <ul>
+      {
+        tags.map((tag) => (
+          <li>
+            <a
+              href={localizeHref(
+                locale,
+                `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
+              )}
+            >
+              {tag}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </PageContainer>
 </Layout>

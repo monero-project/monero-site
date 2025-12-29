@@ -21,7 +21,7 @@ const {
 
 const Heading = `h${headingLevel}` as HTMLTag;
 const hasHeader = Boolean(title || subtitle);
-const classes = ["page-section", className ?? ""].filter(Boolean).join(" ");
+const classes = [className || ""].filter(Boolean).join(" ");
 const ariaLabelledBy = ariaLabel ? undefined : anchorId;
 ---
 
@@ -46,9 +46,6 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
 </section>
 
 <style>
-  .page-section {
-    margin-top: 2rem;
-  }
   .page-section__header {
     margin-bottom: 1.5rem;
   }

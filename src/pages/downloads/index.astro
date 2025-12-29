@@ -54,17 +54,16 @@ const sections = [
     title={t("downloads:hero.title")}
     subtitle={t("downloads:hero.subtitle")}
   />
-  <Tabs
-    labels={tabs.map((tab) => tab.label)}
-    links={tabs.map((tab) => tab.link)}
-    activeIndex={0}
-  />
-  <TOCContainer
-    sections={sections}
-    ariaLabel={`${t("downloads:tabs.core")}` + " sections"}
-  />
-
   <PageContainer>
+    <Tabs
+      labels={tabs.map((tab) => tab.label)}
+      links={tabs.map((tab) => tab.link)}
+      activeIndex={0}
+    />
+    <TOCContainer
+      sections={sections}
+      ariaLabel={`${t("downloads:tabs.core")}` + " sections"}
+    />
     <div class="downloads-grid">
       <!-- Monero GUI Card -->
       <CoreCard

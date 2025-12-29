@@ -93,18 +93,18 @@ const setBuiltinId = (wallet: Wallet) => {
     title={t("downloads:hero.title")}
     subtitle={t("downloads:hero.subtitle")}
   />
-  <Tabs
-    labels={tabs.map((tab) => tab.label)}
-    links={tabs.map((tab) => tab.link)}
-    activeIndex={1}
-  />
-
-  <TOCContainer
-    sections={sections}
-    ariaLabel={`${t("downloads:tabs.community")}` + " sections"}
-  />
-
   <PageContainer>
+    <Tabs
+      labels={tabs.map((tab) => tab.label)}
+      links={tabs.map((tab) => tab.link)}
+      activeIndex={1}
+    />
+
+    <TOCContainer
+      sections={sections}
+      ariaLabel={`${t("downloads:tabs.community")}` + " sections"}
+    />
+
     <PageSection
       class="downloads-section"
       anchorId="wallets"

@@ -5,7 +5,7 @@ interface Props {
   variant?: "spaced" | "flush";
 }
 
-const { id, class: className, variant = "spaced", ...rest } = Astro.props;
+const { id, class: className, variant = "flush", ...rest } = Astro.props;
 const classes = [
   variant === "spaced" ? "page-container--spaced" : "",
   className ?? "",

@@ -10,6 +10,7 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 
 import BlogCard from "@/components/pages/blog/BlogCard.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
 import Paginator from "@/components/ui/Paginator.astro";
 import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
@@ -74,38 +75,40 @@ const tabs = [
     title={t("blog:index.hero.title")}
     subtitle={t("blog:index.hero.subtitle")}
   />
-  <div class="tabs-bar">
-    <Tabs
-      labels={tabs.map((t) => t.label)}
-      links={tabs.map((t) => localizeHref(locale, t.link))}
-      activeIndex={0}
-    />
-    <a
-      class="rss-icon"
-      href={new URL("feed.xml", Astro.site)}
-      aria-label="RSS Feed"
-      title="RSS Feed"
-    >
-      <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
-    </a>
-  </div>
-  <div class="blog-grid">
-    {
-      posts.map((post) => (
-        <BlogCard
-          id={post.id}
-          title={post.data.title}
-          author={post.data.author}
-          tags={post.data.tags || []}
-          image={post.data.image}
-          summary={post.data.summary || ""}
-          locale={locale}
-          t={t}
-        />
-      ))
-    }
-  </div>
-  <Paginator page={page} locale={locale} />
+  <PageContainer>
+    <div class="tabs-bar">
+      <Tabs
+        labels={tabs.map((t) => t.label)}
+        links={tabs.map((t) => localizeHref(locale, t.link))}
+        activeIndex={0}
+      />
+      <a
+        class="rss-icon"
+        href={new URL("feed.xml", Astro.site)}
+        aria-label="RSS Feed"
+        title="RSS Feed"
+      >
+        <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
+      </a>
+    </div>
+    <div class="blog-grid">
+      {
+        posts.map((post) => (
+          <BlogCard
+            id={post.id}
+            title={post.data.title}
+            author={post.data.author}
+            tags={post.data.tags || []}
+            image={post.data.image}
+            summary={post.data.summary || ""}
+            locale={locale}
+            t={t}
+          />
+        ))
+      }
+    </div>
+    <Paginator page={page} locale={locale} />
+  </PageContainer>
 </Layout>
 
 <style>

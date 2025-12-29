@@ -54,6 +54,7 @@ const t = await createTInstance(locale);
     text-align: center;
     max-width: 75ch;
     width: 100%;
+    margin-bottom: 9rem; /* move the content up by the height of the header */
   }
 
   .error-code {
@@ -82,7 +83,7 @@ const t = await createTInstance(locale);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem 1.5rem;
+    gap: 1rem 1.5rem;
     margin-top: 1rem;
   }
 
@@ -92,10 +93,9 @@ const t = await createTInstance(locale);
 
   @media (min-width: 600px) {
     .error-container {
-      min-height: calc(100vh - (var(--page-top-margin) * 5)); /* makes the footer be offscreen */
-    }
-    .error-content {
-      margin-bottom: 9rem; /* move the content up by the height of the transparent header */
+      min-height: calc(
+        100vh - (var(--page-top-margin) * 5)
+      ); /* makes the footer be offscreen */
     }
   }
 </style>
