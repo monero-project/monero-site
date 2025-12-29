@@ -1,4 +1,7 @@
 {
+  "site": {
+    "titleSuffix": "Monero - secure, private, untraceable cryptocurrency."
+  },
   "header": {
     "nav": {
       "getStarted": "Get started",

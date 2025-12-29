@@ -50,12 +50,12 @@ const { title, description, exchanges, hasKyc, disclaimerText, t } =
 
           <thead class="exchange-thead">
             <tr>
-              <th scope="col">{t("exchanges.table.name")}</th>
-              {hasKyc && <th scope="col">{t("exchanges.table.kyc")}</th>}
-              <th scope="col">{t("exchanges.table.fiat")}</th>
-              <th scope="col">{t("exchanges.table.crypto")}</th>
+              <th scope="col">{t("exchanges:table.name")}</th>
+              {hasKyc && <th scope="col">{t("exchanges:table.kyc")}</th>}
+              <th scope="col">{t("exchanges:table.fiat")}</th>
+              <th scope="col">{t("exchanges:table.crypto")}</th>
               <th scope="col" class="th-visit">
-                {t("exchanges.table.visit")}
+                {t("exchanges:table.visit")}
               </th>
             </tr>
           </thead>
@@ -74,12 +74,12 @@ const { title, description, exchanges, hasKyc, disclaimerText, t } =
                   .join(" ") || undefined;
 
               const kycClass = ex.kycClass ?? "";
-              const kycText = ex.kycReq ? t(`exchanges.kyc.${ex.kycReq}`) : "";
+              const kycText = ex.kycReq ? t(`exchanges:kyc.${ex.kycReq}`) : "";
               const imgDimensions = await getPublicImageDimensions(ex.img);
 
               return (
                 <tr class="exchange-row" data-highlight={highlightTags}>
-                  <td class="with-icon" data-label={t("exchanges.table.name")}>
+                  <td class="with-icon" data-label={t("exchanges:table.name")}>
                     <Image
                       src={ex.img}
                       width={imgDimensions.width}
@@ -91,14 +91,14 @@ const { title, description, exchanges, hasKyc, disclaimerText, t } =
                     />
                     <span class="exchange-name">{ex.name}</span>
                     <span class="exchange-description">
-                      {t(`exchanges.descriptions.${ex.id}`)}
+                      {t(`exchanges:descriptions.${ex.id}`)}
                     </span>
                   </td>
 
                   {hasKyc && (
                     <td
                       class={`pill ${kycClass}`}
-                      data-label={t("exchanges.table.kyc")}
+                      data-label={t("exchanges:table.kyc")}
                     >
                       {kycText}
                     </td>
@@ -106,28 +106,28 @@ const { title, description, exchanges, hasKyc, disclaimerText, t } =
 
                   <td
                     class={`pill ${ex.fiat ? "checkmark" : "cross"}`}
-                    data-label={t("exchanges.table.fiat")}
+                    data-label={t("exchanges:table.fiat")}
                   >
                     <span aria-hidden="true">{ex.fiat ? "✓" : "✗"}</span>
                   </td>
 
                   <td
                     class={`pill ${ex.crypto ? "checkmark" : "cross"}`}
-                    data-label={t("exchanges.table.crypto")}
+                    data-label={t("exchanges:table.crypto")}
                   >
                     <span aria-hidden="true">{ex.crypto ? "✓" : "✗"}</span>
                   </td>
 
                   <td
                     class="visit-cell"
-                    data-label={t("exchanges.table.visit")}
+                    data-label={t("exchanges:table.visit")}
                   >
                     <a
                       href={ex.url}
                       target="_blank"
                       rel="noopener noreferrer external"
                     >
-                      {t("exchanges.table.visit")}
+                      {t("exchanges:table.visit")}
                     </a>
                   </td>
                 </tr>

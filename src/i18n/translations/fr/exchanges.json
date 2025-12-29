@@ -1,0 +1,73 @@
+{
+  "pageTitle": "Plateformes d'échange",
+  "hero": {
+    "title": "Plateformes d'échange",
+    "subtitle": "Plateformes d'échange de cryptomonnaies qui vous permettent d'acheter ou d'échanger Monero."
+  },
+  "sidebarTitle": "Nouveau sur Monero ?",
+  "filtersDescription": "Commencez par choisir la situation qui vous correspond. Nous mettrons en évidence les options sur cette page qui sont probablement les plus adaptées.",
+  "sections": {
+    "decentralized": {
+      "title": "Plateformes décentralisées",
+      "description": "Ces options vous permettent d'échanger Monero directement depuis votre propre portefeuille, sans compte d'échange traditionnel. Elles sont idéales si vous voulez plus de confidentialité et de contrôle."
+    },
+    "aggregators": {
+      "title": "Agrégateurs d'échange",
+      "description": "La façon la plus simple d'échanger des cryptos contre Monero sans créer de compte. Ces services comparent les prix de plusieurs fournisseurs d'échange et vous dirigent vers la meilleure option.",
+      "disclaimer": "L'agrégateur lui-même ne détient pas vos fonds, mais le service que vous finirez par utiliser pourrait quand même vous demander de vérifier votre identité.",
+      "resourceBtnTitle": "KYCNot.me - Agrégateurs",
+      "resourceIntro": "Pour une liste à jour avec des détails et des avis, vous pouvez visiter la ressource communautaire ci-dessous :",
+      "tip": "**Conseil :** Certains portefeuilles Monero ont un **échange intégré** pour plus de commodité. Consultez les <a href=\"{{communityDownloadsUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\">téléchargements communautaires</a> pour les options."
+    },
+    "centralized": {
+      "title": "Plateformes centralisées",
+      "description": "Ce sont les plateformes classiques où vous créez un compte, complétez les vérifications d'identité, et pouvez déposer depuis votre portefeuille crypto, banque ou carte."
+    }
+  },
+  "descriptions": {
+    "basicswapdex": "Échangez des cryptos sans intermédiaire (échanges atomiques).",
+    "bisq": "Plateforme pair-à-pair où vous échangez directement avec d'autres personnes. Supporte les swaps BTC → XMR.",
+    "eigenwallet": "Plateforme à haute liquidité pour les échanges atomiques BTC vers XMR. Achat de XMR en fiat disponible uniquement dans l'UE (KYC requis).",
+    "retoswap": "Plateforme décentralisée pair-à-pair construite sur Monero. Supporte les échanges fiat, crypto → XMR.",
+    "cyphergoat": "Service qui trouve des routes pour des échanges sécurisés de crypto à crypto entre différents fournisseurs.",
+    "orangefren": "Site convivial pour les débutants qui vous permet de comparer et d'effectuer des échanges de cryptos, généralement sans créer de compte.",
+    "trocador": "Agrégateur qui se concentre sur les routes d'échange respectueuses de la vie privée.",
+    "bitfinex": "Plateforme de trading avec une large gamme de cryptomonnaies et de produits dérivés.",
+    "kraken": "Plateforme connue avec un fort support des devises fiat et des fonctionnalités de trading avancées.",
+    "kucoin": "Plateforme populaire connue pour sa grande sélection d'altcoins, y compris Monero."
+  },
+  "highlightOptions": {
+    "easiest": {
+      "title": "Je veux la façon la plus simple d'obtenir Monero",
+      "subtitle": "Options conviviales pour les débutants"
+    },
+    "fiat": {
+      "title": "Je veux payer en espèces ou par virement bancaire",
+      "subtitle": "Plateformes qui supportent les devises fiat (USD, EUR, etc.)"
+    },
+    "privacy": {
+      "title": "La confidentialité m'importe le plus",
+      "subtitle": "Options décentralisées qui ne nécessitent pas de vérification d'identité"
+    },
+    "selectedText": {
+      "easiest": "Mise en avant : Facile d'utilisation",
+      "fiat": "Mise en avant : Espèces/Compte bancaire",
+      "privacy": "Mise en avant : Privé"
+    }
+  },
+  "disclaimerTitle": "Avertissement",
+  "disclaimer": "Cette liste est fournie à titre informatif uniquement. Le Projet Monero n'approuve, ne recommande ni ne garantit aucun service listé ici. Vérifiez toujours les URL, commencez par un petit montant test si vous n'êtes pas sûr, et utilisez chaque service à vos propres risques.",
+  "clearSelection": "Effacer la sélection",
+  "table": {
+    "name": "Nom",
+    "kyc": "KYC",
+    "fiat": "Fiat",
+    "crypto": "Crypto",
+    "visit": "Visiter"
+  },
+  "kyc": {
+    "required": "Requis",
+    "optional": "Optionnel",
+    "none": "Aucun"
+  }
+}

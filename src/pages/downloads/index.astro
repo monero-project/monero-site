@@ -23,9 +23,9 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 
 const tabs = [
-  { label: t("downloads.tabs.core"), link: localizeHref(locale, "/downloads") },
+  { label: t("downloads:tabs.core"), link: localizeHref(locale, "/downloads") },
   {
-    label: t("downloads.tabs.community"),
+    label: t("downloads:tabs.community"),
     link: localizeHref(locale, "/downloads/community"),
   },
 ];
@@ -34,25 +34,25 @@ const sections = [
   {
     id: "gui",
     icon: appWindowIcon,
-    title: t("downloads.core.gui.title"),
-    subtitle: t("downloads.core.gui.subtitle"),
+    title: t("downloads:core.gui.title"),
+    subtitle: t("downloads:core.gui.subtitle"),
   },
   {
     id: "cli",
     icon: terminalIcon,
-    title: t("downloads.core.cli.title"),
-    subtitle: t("downloads.core.cli.subtitle"),
+    title: t("downloads:core.cli.title"),
+    subtitle: t("downloads:core.cli.subtitle"),
   },
 ];
 ---
 
 <Layout
-  title={t("downloads.pageTitle")}
-  description={t("downloads.heroSubtitle")}
+  title={t("downloads:pageTitle")}
+  description={t("downloads:hero.subtitle")}
 >
   <TitleCard
-    title={t("downloads.heroTitle")}
-    subtitle={t("downloads.heroSubtitle")}
+    title={t("downloads:hero.title")}
+    subtitle={t("downloads:hero.subtitle")}
   />
   <Tabs
     labels={tabs.map((tab) => tab.label)}
@@ -61,7 +61,7 @@ const sections = [
   />
   <TOCContainer
     sections={sections}
-    ariaLabel={`${t("downloads.tabs.core")}` + " sections"}
+    ariaLabel={`${t("downloads:tabs.core")}` + " sections"}
   />
 
   <PageContainer>
@@ -70,8 +70,8 @@ const sections = [
       <CoreCard
         id="gui"
         image={guiImage}
-        title={t("downloads.core.gui.title")}
-        subtitle={t("downloads.core.gui.subtitle")}
+        title={t("downloads:core.gui.title")}
+        subtitle={t("downloads:core.gui.subtitle")}
         version={coreDownloads.gui.version}
         versionName={coreDownloads.gui.name}
         releaseNotesUrl={`https://github.com/monero-project/monero-gui/releases/tag/${coreDownloads.gui.version}`}
@@ -79,7 +79,7 @@ const sections = [
         torrentUrl={coreDownloads.gui.torrent.link}
         magnetUrl={coreDownloads.gui.torrent.magnet}
         features={Object.values(
-          t("downloads.core.gui.features", { returnObjects: true }) as Record<
+          t("downloads:core.gui.features", { returnObjects: true }) as Record<
             string,
             string
           >,
@@ -92,8 +92,8 @@ const sections = [
       <CoreCard
         id="cli"
         image={cliImage}
-        title={t("downloads.core.cli.title")}
-        subtitle={t("downloads.core.cli.subtitle")}
+        title={t("downloads:core.cli.title")}
+        subtitle={t("downloads:core.cli.subtitle")}
         version={coreDownloads.cli.version}
         versionName={coreDownloads.cli.name}
         releaseNotesUrl={`https://github.com/monero-project/monero/releases/tag/${coreDownloads.cli.version}`}
@@ -101,7 +101,7 @@ const sections = [
         torrentUrl={coreDownloads.cli.torrent.link}
         magnetUrl={coreDownloads.cli.torrent.magnet}
         features={Object.values(
-          t("downloads.core.cli.features", { returnObjects: true }) as Record<
+          t("downloads:core.cli.features", { returnObjects: true }) as Record<
             string,
             string
           >,

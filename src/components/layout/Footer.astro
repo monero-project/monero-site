@@ -30,95 +30,80 @@ interface Column {
 
 const columns: Column[] = [
   {
-    title: t("footer.columns.resources.title", { ns: "common" }),
+    title: t("common:footer.columns.resources.title"),
     links: [
       {
-        label: t("footer.columns.resources.links.aboutMonero", {
-          ns: "common",
-        }),
+        label: t("common:footer.columns.resources.links.aboutMonero"),
         href: localizeHref(locale, "/get-started/what-is-monero/"),
       },
       {
-        label: t("footer.columns.resources.links.moneropedia", {
-          ns: "common",
-        }),
+        label: t("common:footer.columns.resources.links.moneropedia"),
         href: localizeHref(locale, "/resources/moneropedia/"),
       },
       {
-        label: t("footer.columns.resources.links.moneroDocs", {
-          ns: "common",
-        }),
+        label: t("common:footer.columns.resources.links.moneroDocs"),
         href: "https://docs.getmonero.org",
       },
       {
-        label: t("footer.columns.resources.links.downloads", { ns: "common" }),
+        label: t("common:footer.columns.resources.links.downloads"),
         href: localizeHref(locale, "/downloads/"),
       },
     ],
   },
   {
-    title: t("footer.columns.reachOut.title", { ns: "common" }),
+    title: t("common:footer.columns.reachOut.title"),
     links: [
       {
-        label: t("footer.columns.reachOut.links.workgroups", { ns: "common" }),
+        label: t("common:footer.columns.reachOut.links.workgroups"),
         href: localizeHref(locale, "/community/workgroups"),
       },
       {
-        label: t("footer.columns.reachOut.links.hangouts", { ns: "common" }),
+        label: t("common:footer.columns.reachOut.links.hangouts"),
         href: localizeHref(locale, "/community/hangouts"),
       },
       {
-        label: t("footer.columns.reachOut.links.mailingList", { ns: "common" }),
+        label: t("common:footer.columns.reachOut.links.mailingList"),
         href: "/postorius/lists/monero-announce.lists.getmonero.org",
       },
     ],
   },
   {
-    title: t("footer.columns.community.title", { ns: "common" }),
+    title: t("common:footer.columns.community.title"),
     links: [
       {
-        label: t("footer.columns.community.links.stackExchange", {
-          ns: "common",
-        }),
+        label: t("common:footer.columns.community.links.stackExchange"),
         href: "https://monero.stackexchange.com/",
       },
       {
-        label: t("footer.columns.community.links.bitcoinTalk", {
-          ns: "common",
-        }),
+        label: t("common:footer.columns.community.links.bitcoinTalk"),
         href: "https://bitcointalk.org/index.php?topic=583449.0",
       },
       {
-        label: t("footer.columns.community.links.translate", { ns: "common" }),
+        label: t("common:footer.columns.community.links.translate"),
         href: "https://translate.getmonero.org",
       },
     ],
   },
   {
-    title: t("footer.columns.theMoneroProject.title", { ns: "common" }),
+    title: t("common:footer.columns.theMoneroProject.title"),
     links: [
       {
-        label: t("footer.columns.theMoneroProject.links.openAlias", {
-          ns: "common",
-        }),
+        label: t("common:footer.columns.theMoneroProject.links.openAlias"),
         href: "https://openalias.org",
       },
       {
-        label: t("footer.columns.theMoneroProject.links.moneroResearchLab", {
-          ns: "common",
-        }),
+        label: t(
+          "common:footer.columns.theMoneroProject.links.moneroResearchLab",
+        ),
         href: localizeHref(locale, "/resources/research-lab"),
       },
       {
-        label: t("footer.columns.theMoneroProject.links.pressKit", {
-          ns: "common",
-        }),
+        label: t("common:footer.columns.theMoneroProject.links.pressKit"),
         href: localizeHref(locale, "/resources/press-kit"),
       },
       {
         label: t(
-          "footer.columns.theMoneroProject.links.communityCrowdfundingSystem",
-          { ns: "common" },
+          "common:footer.columns.theMoneroProject.links.communityCrowdfundingSystem",
         ),
         href: "https://ccs.getmonero.org",
       },
@@ -128,7 +113,7 @@ const columns: Column[] = [
 
 const bottomLinks: Link[] = [
   {
-    label: t("footer.bottomLinks.torOnionService", { ns: "common" }),
+    label: t("common:footer.bottomLinks.torOnionService"),
     href: "#",
     icon: {
       src: torIcon,
@@ -138,19 +123,19 @@ const bottomLinks: Link[] = [
     },
   },
   {
-    label: t("footer.bottomLinks.vulnerabilityResponse", { ns: "common" }),
+    label: t("common:footer.bottomLinks.vulnerabilityResponse"),
     href: "https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md",
   },
   {
-    label: t("footer.bottomLinks.legal", { ns: "common" }),
+    label: t("common:footer.bottomLinks.legal"),
     href: localizeHref(locale, "/legal"),
   },
   {
-    label: t("footer.bottomLinks.sourceCode", { ns: "common" }),
+    label: t("common:footer.bottomLinks.sourceCode"),
     href: "https://github.com/monero-project",
   },
   {
-    label: t("footer.bottomLinks.rssFeed", { ns: "common" }),
+    label: t("common:footer.bottomLinks.rssFeed"),
     href: "/feed.xml",
     icon: {
       src: rssIcon,

@@ -26,20 +26,20 @@ const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
 ---
 
-<div class="gs" aria-labelledby="gs-title">
+<article class="gs">
   <div class="num" aria-hidden="true">
     {localizeNumber(locale, Number(step), 2)}
   </div>
 
   <div class="text">
-    <h2 id="gs-title" class="title">{title}</h2>
+    <h2 class="title">{title}</h2>
     {description && <p class="desc">{description}</p>}
     <a class="cta" href={localizeHref(locale, ctaHref)} target="_blank">
       {ctaLabel}
       <MaskIcon src={arrowRight} rtl={dir == "rtl"} size="1em" />
     </a>
   </div>
-</div>
+</article>
 
 <style>
   :root {
@@ -95,11 +95,6 @@ const dir = getDirection(locale);
 
   .cta:hover {
     text-decoration: underline;
-  }
-
-  .arrow {
-    width: 1rem;
-    height: 1rem;
   }
 
   @media (max-width: 600px) {

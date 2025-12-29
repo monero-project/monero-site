@@ -1,0 +1,78 @@
+{
+  "pageTitle": "Contribuer",
+  "hero": {
+    "title": "Contribuer",
+    "subtitle": "Monero est open-source et piloté par la communauté. Voici plusieurs façons de soutenir le projet."
+  },
+  "sections": {
+    "supportTheNetwork": {
+      "title": "Soutenez le Réseau",
+      "subtitle": "Contributions pratiques à fort impact qui renforcent la décentralisation et la sécurité.",
+      "runANode": {
+        "title": "Faire tourner un nœud",
+        "description": "Une façon simple et efficace d'aider le réseau Monero est de faire tourner un nœud. Les nœuds maintiennent le réseau sécurisé et décentralisé. Un nœud entièrement synchronisé suffit, mais vous pouvez aussi faire tourner un nœud distant ouvert pour permettre aux autres de se connecter.",
+        "guides": "Guides",
+        "moneroDocs": "Documentation Monero",
+        "sethForPrivacy": "SethForPrivacy"
+      },
+      "mine": {
+        "title": "Miner",
+        "description": "Le minage assure la sécurité du réseau et vous récompense en XMR. Monero utilise @RandomX, un algorithme résistant aux ASIC développé par les contributeurs Monero, qui vise à rester minable par du matériel grand public (processeurs).",
+        "learnAboutMining": "En savoir plus sur le minage"
+      }
+    },
+    "develop": {
+      "title": "Développer",
+      "subtitle": "Monero est open source et sans permission. Les contributeurs sont les bienvenus dans tout l'écosystème.",
+      "coreProjects": "Projets Principaux",
+      "daemon": {
+        "title": "Daemon",
+        "description": "L'implémentation principale de Monero, incluant les règles de consensus, le réseau P2P et les fonctionnalités de portefeuille."
+      },
+      "guiWallet": {
+        "title": "Portefeuille GUI",
+        "description": "L'interface graphique pour Monero, fournissant une application de bureau facile à utiliser pour gérer les fonds Monero."
+      },
+      "moneroWebsite": {
+        "title": "Site web Monero",
+        "description": "Ce site web, construit avec le framework Astro."
+      },
+      "moneroDocs": {
+        "title": "Documentation Monero",
+        "description": "Documentation pour Monero, incluant des guides utilisateur, des ressources développeur et des spécifications du protocole."
+      },
+      "additionalResources": "Ressources Supplémentaires",
+      "bounties": {
+        "title": "Primes",
+        "description": "Vous préférez travailler sur des tâches clairement définies avec une récompense ? De nombreuses primes sont disponibles pour divers projets liés à Monero, allant des primes pour bugs aux implémentations de fonctionnalités.",
+        "links": "Liens",
+        "browseMoneroBounties": "Parcourir les Primes Monero",
+        "securityDisclosures": "Divulgations de sécurité (HackerOne)"
+      },
+      "workgroups": {
+        "title": "Groupes de travail",
+        "description": "Les groupes de travail Monero collaborent sur des domaines spécifiques du développement Monero et des efforts communautaires.",
+        "joinWorkgroups": "Rejoindre un groupe de travail"
+      }
+    },
+    "donate": {
+      "title": "Donner",
+      "subtitle": "Financez un travail spécifique via CCS ou soutenez le fonds général pour une résilience à long terme.",
+      "communityCrowdfundingSystem": {
+        "title": "Système de Financement Participatif Communautaire",
+        "description": "Monero utilise un système de financement participatif communautaire où les projets sont proposés pour développement et financés par la communauté. Le financement est détenu en séquestre et versé aux développeurs une fois les jalons de programmation atteints. N'importe qui peut générer de nouvelles propositions ou financer celles existantes.",
+        "viewCcsProposals": "Voir les Propositions CCS"
+      },
+      "generalFund": {
+        "title": "Fonds Général",
+        "description": "Les dons au fonds général sont utilisés pour les urgences ou les besoins. Les coûts d'infrastructure sont actuellement couverts par les sponsors.",
+        "moneroXmr": "Monero (XMR)",
+        "bitcoinBtc": "Bitcoin (BTC)",
+        "viewOnlyWalletDetails": "Détails du portefeuille en lecture seule",
+        "primaryAddress": "Adresse principale",
+        "viewKey": "Clé de visualisation",
+        "fineprint": "OpenAlias : `{{openAlias}}`\nEnvoyez un e-mail à {{email}} pour des moyens alternatifs de don ou pour devenir sponsor."
+      }
+    }
+  }
+}

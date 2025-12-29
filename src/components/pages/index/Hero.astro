@@ -22,24 +22,24 @@ const locale = getLocale(Astro.url);
 
   <div class="wrap">
     <h1 id="hero-title" class="title">
-      <span class="accent">{t("index.hero.titleMonero")}</span><br />
-      <span class="plain">{t("index.hero.titleMeans")}</span>
-      <span class="accent">{t("index.hero.titleMoney")}</span>
+      <span class="accent">{t("index:hero.titleMonero")}</span><br />
+      <span class="plain">{t("index:hero.titleMeans")}</span>
+      <span class="accent">{t("index:hero.titleMoney")}</span>
     </h1>
 
     <p class="lead">
-      {t("index.hero.lead")}
+      {t("index:hero.lead")}
     </p>
 
     <div class="actions">
       <Button variant="primary" class="hero-button" href="#start-using-monero"
-        >{t("index.hero.getStarted")}</Button
+        >{t("index:hero.getStarted")}</Button
       >
       <Button
         variant="secondary"
         class="hero-button"
         href={localizeHref(locale, "/get-started/what-is-monero/")}
-        >{t("index.hero.aboutMonero")}</Button
+        >{t("index:hero.aboutMonero")}</Button
       >
     </div>
   </div>

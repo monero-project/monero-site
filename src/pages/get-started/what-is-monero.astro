@@ -51,24 +51,24 @@ const getLanguageLabel = (lang: string): string => {
 ---
 
 <Layout
-  title={t("what-is-monero.pageTitle")}
-  description={t("what-is-monero.heroSubtitle")}
+  title={t("what-is-monero:pageTitle")}
+  description={t("what-is-monero:hero.subtitle")}
 >
-  <TitleCard title={t("what-is-monero.heroTitle")} />
+  <TitleCard title={t("what-is-monero:hero.title")} />
   <PageContainer>
     <div class="card-item">
       <div class="text">
         <span class="eyebrow"
-          >{t("what-is-monero.sections.problem.eyebrow")}</span
+          >{t("what-is-monero:sections.problem.eyebrow")}</span
         >
         <h2
           set:html={safeMarkdown.parseInline(
-            t("what-is-monero.sections.problem.title"),
+            t("what-is-monero:sections.problem.title"),
           )}
         />
         <p
           set:html={safeMarkdown.parseInline(
-            t("what-is-monero.sections.problem.content"),
+            t("what-is-monero:sections.problem.content"),
           )}
         />
       </div>
@@ -82,16 +82,16 @@ const getLanguageLabel = (lang: string): string => {
     <div class="card-item reverse">
       <div class="text">
         <span class="eyebrow"
-          >{t("what-is-monero.sections.solution.eyebrow")}</span
+          >{t("what-is-monero:sections.solution.eyebrow")}</span
         >
         <h2
           set:html={safeMarkdown.parseInline(
-            t("what-is-monero.sections.solution.title"),
+            t("what-is-monero:sections.solution.title"),
           )}
         />
         <p
           set:html={safeMarkdown.parseInline(
-            t("what-is-monero.sections.solution.content"),
+            t("what-is-monero:sections.solution.content"),
           )}
         />
       </div>
@@ -105,12 +105,12 @@ const getLanguageLabel = (lang: string): string => {
     <div class="card-item">
       <div class="text">
         <span class="eyebrow"
-          >{t("what-is-monero.sections.useCases.eyebrow")}</span
+          >{t("what-is-monero:sections.useCases.eyebrow")}</span
         >
-        <h2>{t("what-is-monero.sections.useCases.title")}</h2>
+        <h2>{t("what-is-monero:sections.useCases.title")}</h2>
         <p
           set:html={safeMarkdown.parseInline(
-            t("what-is-monero.sections.useCases.intro"),
+            t("what-is-monero:sections.useCases.intro"),
           )}
         />
       </div>
@@ -123,14 +123,14 @@ const getLanguageLabel = (lang: string): string => {
             <h3>
               {
                 t(
-                  "what-is-monero.sections.useCases.items.financialPrivacy.title",
+                  "what-is-monero:sections.useCases.items.financialPrivacy.title",
                 )
               }
             </h3>
             <p>
               {
                 t(
-                  "what-is-monero.sections.useCases.items.financialPrivacy.description",
+                  "what-is-monero:sections.useCases.items.financialPrivacy.description",
                 )
               }
             </p>
@@ -142,12 +142,12 @@ const getLanguageLabel = (lang: string): string => {
           </div>
           <div>
             <h3>
-              {t("what-is-monero.sections.useCases.items.fungibility.title")}
+              {t("what-is-monero:sections.useCases.items.fungibility.title")}
             </h3>
             <p>
               {
                 t(
-                  "what-is-monero.sections.useCases.items.fungibility.description",
+                  "what-is-monero:sections.useCases.items.fungibility.description",
                 )
               }
             </p>
@@ -161,14 +161,14 @@ const getLanguageLabel = (lang: string): string => {
             <h3>
               {
                 t(
-                  "what-is-monero.sections.useCases.items.censorshipResistance.title",
+                  "what-is-monero:sections.useCases.items.censorshipResistance.title",
                 )
               }
             </h3>
             <p>
               {
                 t(
-                  "what-is-monero.sections.useCases.items.censorshipResistance.description",
+                  "what-is-monero:sections.useCases.items.censorshipResistance.description",
                 )
               }
             </p>
@@ -182,14 +182,14 @@ const getLanguageLabel = (lang: string): string => {
             <h3>
               {
                 t(
-                  "what-is-monero.sections.useCases.items.businessPayments.title",
+                  "what-is-monero:sections.useCases.items.businessPayments.title",
                 )
               }
             </h3>
             <p>
               {
                 t(
-                  "what-is-monero.sections.useCases.items.businessPayments.description",
+                  "what-is-monero:sections.useCases.items.businessPayments.description",
                 )
               }
             </p>
@@ -203,9 +203,9 @@ const getLanguageLabel = (lang: string): string => {
     <div class="card-item centered">
       <div class="text">
         <span class="eyebrow"
-          >{t("what-is-monero.sections.technology.eyebrow")}</span
+          >{t("what-is-monero:sections.technology.eyebrow")}</span
         >
-        <h2>{t("what-is-monero.sections.technology.title")}</h2>
+        <h2>{t("what-is-monero:sections.technology.title")}</h2>
       </div>
       <div class="feature-grid">
         <div class="feature-item">
@@ -215,14 +215,14 @@ const getLanguageLabel = (lang: string): string => {
           <h3>
             {
               t(
-                "what-is-monero.sections.technology.features.stealthAddresses.title",
+                "what-is-monero:sections.technology.features.stealthAddresses.title",
               )
             }
           </h3>
           <p>
             {
               t(
-                "what-is-monero.sections.technology.features.stealthAddresses.description",
+                "what-is-monero:sections.technology.features.stealthAddresses.description",
               )
             }
           </p>
@@ -230,7 +230,7 @@ const getLanguageLabel = (lang: string): string => {
             class="based-on"
             set:html={safeMarkdown.parseInline(
               t(
-                "what-is-monero.sections.technology.features.stealthAddresses.basedOn",
+                "what-is-monero:sections.technology.features.stealthAddresses.basedOn",
                 {
                   mpECDH: localizeHref(
                     locale,
@@ -245,14 +245,14 @@ const getLanguageLabel = (lang: string): string => {
           <div class="icon">
             <MaskIcon src={shieldPlusIcon} size="100%" />
           </div>
-          <h3>{t("what-is-monero.sections.technology.features.fcmp.title")}</h3>
+          <h3>{t("what-is-monero:sections.technology.features.fcmp.title")}</h3>
           <p>
-            {t("what-is-monero.sections.technology.features.fcmp.description")}
+            {t("what-is-monero:sections.technology.features.fcmp.description")}
           </p>
           <p
             class="based-on"
             set:html={safeMarkdown.parseInline(
-              t("what-is-monero.sections.technology.features.fcmp.basedOn", {
+              t("what-is-monero:sections.technology.features.fcmp.basedOn", {
                 mpCurveTrees: localizeHref(
                   locale,
                   "/resources/moneropedia/curve-trees/",
@@ -268,14 +268,14 @@ const getLanguageLabel = (lang: string): string => {
           <h3>
             {
               t(
-                "what-is-monero.sections.technology.features.confidentialTransactions.title",
+                "what-is-monero:sections.technology.features.confidentialTransactions.title",
               )
             }
           </h3>
           <p>
             {
               t(
-                "what-is-monero.sections.technology.features.confidentialTransactions.description",
+                "what-is-monero:sections.technology.features.confidentialTransactions.description",
               )
             }
           </p>
@@ -283,7 +283,7 @@ const getLanguageLabel = (lang: string): string => {
             class="based-on"
             set:html={safeMarkdown.parseInline(
               t(
-                "what-is-monero.sections.technology.features.confidentialTransactions.basedOn",
+                "what-is-monero:sections.technology.features.confidentialTransactions.basedOn",
                 {
                   mpPedersenCommitments: localizeHref(
                     locale,
@@ -305,10 +305,10 @@ const getLanguageLabel = (lang: string): string => {
 
     <div class="card-item centered">
       <div class="text">
-        <span class="eyebrow">{t("what-is-monero.sections.video.eyebrow")}</span
+        <span class="eyebrow">{t("what-is-monero:sections.video.eyebrow")}</span
         >
-        <h2>{t("what-is-monero.sections.video.title")}</h2>
-        <p>{t("what-is-monero.sections.video.description")}</p>
+        <h2>{t("what-is-monero:sections.video.title")}</h2>
+        <p>{t("what-is-monero:sections.video.description")}</p>
       </div>
       <div class="video-container">
         <video
@@ -346,10 +346,10 @@ const getLanguageLabel = (lang: string): string => {
 
     <div class="card-item">
       <div class="text">
-        <h2>{t("what-is-monero.sections.community.title")}</h2>
+        <h2>{t("what-is-monero:sections.community.title")}</h2>
         <p
           set:html={safeMarkdown.parseInline(
-            t("what-is-monero.sections.community.content", {
+            t("what-is-monero:sections.community.content", {
               mrlLink: localizeHref(locale, "/resources/research-lab/"),
             }),
           )}
@@ -357,16 +357,16 @@ const getLanguageLabel = (lang: string): string => {
         <div class="community-cta-links">
           <a
             href={localizeHref(locale, "/community/hangouts/")}
-            aria-label={t("what-is-monero.sections.community.joinCommunity")}
-            >{t("what-is-monero.sections.community.joinCommunity")}
+            aria-label={t("what-is-monero:sections.community.joinCommunity")}
+            >{t("what-is-monero:sections.community.joinCommunity")}
             <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} /></a
           >
           <a
             href={localizeHref(locale, "/community/workgroups/")}
             aria-label={t(
-              "what-is-monero.sections.community.contributeToMonero",
+              "what-is-monero:sections.community.contributeToMonero",
             )}
-            >{t("what-is-monero.sections.community.contributeToMonero")}
+            >{t("what-is-monero:sections.community.contributeToMonero")}
             <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} /></a
           >
         </div>
@@ -379,22 +379,22 @@ const getLanguageLabel = (lang: string): string => {
     <hr />
 
     <div class="cta-card">
-      <h2 class="title">{t("what-is-monero.sections.cta.title")}</h2>
-      <p class="subtitle">{t("what-is-monero.sections.cta.subtitle")}</p>
+      <h2 class="title">{t("what-is-monero:sections.cta.title")}</h2>
+      <p class="subtitle">{t("what-is-monero:sections.cta.subtitle")}</p>
       <div class="cta-buttons">
         <Button
           variant="primary"
           href={localizeHref(locale, "/downloads/community/#wallets")}
           class="cta-button"
         >
-          {t("what-is-monero.sections.cta.downloadWallet")}
+          {t("what-is-monero:sections.cta.downloadWallet")}
         </Button>
         <Button
           variant="secondary"
           href={localizeHref(locale, "/get-started/exchanges/")}
           class="cta-button"
         >
-          {t("what-is-monero.sections.cta.getMonero")}
+          {t("what-is-monero:sections.cta.getMonero")}
         </Button>
       </div>
     </div>

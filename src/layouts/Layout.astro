@@ -42,13 +42,16 @@ interface Props {
 }
 
 const { title, description, openGraph } = Astro.props;
+const fullTitle = title.includes("|")
+  ? title
+  : `${title} | ${t("common:site.titleSuffix")}`;
 ---
 
 <!doctype html>
 <html lang={locale} dir={dir}>
   <head>
     <SEO
-      title={title}
+      title={fullTitle}
       description={description}
       charset="UTF-8"
       openGraph={{
@@ -83,7 +86,7 @@ const { title, description, openGraph } = Astro.props;
       twitter={{
         card: "summary_large_image",
         site: "@monero",
-        title: title,
+        title: fullTitle,
         description: description,
       }}
       extend={{
@@ -142,21 +145,17 @@ const { title, description, openGraph } = Astro.props;
   main {
     display: flex;
     flex-direction: column;
-    padding-block: 1rem;
-    padding-inline: var(--mobile-padding-inline);
-    margin-block: var(--page-top-margin);
-    padding-top: var(--page-top-margin);
+    padding: var(--page-top-margin) var(--mobile-padding-inline) 2rem;
+    margin: var(--page-top-margin) auto 0;
     width: 100%;
     max-width: var(--content-max-width);
     flex: 1 0 auto;
-    margin-inline: auto;
     box-sizing: border-box;
   }
 
   @media (min-width: 1200px) {
     main {
       padding-inline: var(--desktop-padding-inline);
-      padding-top: var(--page-top-margin);
     }
   }
 </style>

@@ -1,0 +1,78 @@
+{
+  "pageTitle": "Contribute",
+  "hero": {
+    "title": "Contribute",
+    "subtitle": "Monero is open-source and community-driven. Described below are several ways to support the project."
+  },
+  "sections": {
+    "supportTheNetwork": {
+      "title": "Support the Network",
+      "subtitle": "Practical, high-impact contributions that strengthen decentralization and security.",
+      "runANode": {
+        "title": "Run a node",
+        "description": "An easy and effective way to help the Monero network is to run a node. Nodes keep the network safe and decentralized. A fully synchronized node is enough, but you can also run an open remote node to let others connect.",
+        "guides": "Guides",
+        "moneroDocs": "Monero Docs",
+        "sethForPrivacy": "SethForPrivacy"
+      },
+      "mine": {
+        "title": "Mine",
+        "description": "Mining ensures the safety of the network and rewards you with XMR. Monero uses @RandomX, an ASIC-resistant algorithm developed by Monero contributors, which aims to remain mineable by consumer-grade hardware (CPUs).",
+        "learnAboutMining": "Learn about mining"
+      }
+    },
+    "develop": {
+      "title": "Develop",
+      "subtitle": "Monero is open source and permissionless. Contributors are welcome across the ecosystem.",
+      "coreProjects": "Core Projects",
+      "daemon": {
+        "title": "Daemon",
+        "description": "The core Monero implementation, including the consensus rules, P2P network, and wallet functionality."
+      },
+      "guiWallet": {
+        "title": "GUI Wallet",
+        "description": "The graphical user interface for Monero, providing an easy-to-use desktop application for managing Monero funds."
+      },
+      "moneroWebsite": {
+        "title": "Monero Website",
+        "description": "This website, built with the Astro framework."
+      },
+      "moneroDocs": {
+        "title": "Monero Docs",
+        "description": "Documentation for Monero, including user guides, developer resources, and protocol specifications."
+      },
+      "additionalResources": "Additional Resources",
+      "bounties": {
+        "title": "Bounties",
+        "description": "Prefer working on clearly-scoped tasks with a reward? Numerous bounties are available for various Monero-related projects, ranging from bug bounties to feature implementations.",
+        "links": "Links",
+        "browseMoneroBounties": "Browse Monero Bounties",
+        "securityDisclosures": "Security disclosures (HackerOne)"
+      },
+      "workgroups": {
+        "title": "Workgroups",
+        "description": "Monero workgroups collaborate on specific areas of Monero development and community efforts.",
+        "joinWorkgroups": "Join a workgroup"
+      }
+    },
+    "donate": {
+      "title": "Donate",
+      "subtitle": "Fund specific work via CCS or support the general fund for long-term resilience.",
+      "communityCrowdfundingSystem": {
+        "title": "Community Crowdfunding System",
+        "description": "Monero utilizes a community crowdfunding system where projects are proposed for development and funded by the community. Funding is held in escrow and remunerated to developers once programming milestones are achieved. Anyone may generate new proposals or fund existing ones.",
+        "viewCcsProposals": "View CCS Proposals"
+      },
+      "generalFund": {
+        "title": "General Fund",
+        "description": "Donations to the general fund are used for emergencies or need. Infrastructure costs are currently covered by sponsors.",
+        "moneroXmr": "Monero (XMR)",
+        "bitcoinBtc": "Bitcoin (BTC)",
+        "viewOnlyWalletDetails": "View-only wallet details",
+        "primaryAddress": "Primary address",
+        "viewKey": "View Key",
+        "fineprint": "OpenAlias: `{{openAlias}}`\nE-mail {{email}} for alternative means of donating or to become a sponsor."
+      }
+    }
+  }
+}

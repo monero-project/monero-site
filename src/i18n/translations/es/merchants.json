@@ -1,0 +1,16 @@
+{
+  "pageTitle": "Comerciantes",
+  "hero": {
+    "title": "Comerciantes",
+    "subtitle": "Tiendas y comerciantes que aceptan Monero como pago."
+  },
+  "intro": "Si estás buscando lugares para gastar tu Monero, los directorios a continuación proporcionan una lista completa de opciones. Por favor, recuerda hacer tu propia investigación antes de confiarles tu dinero.",
+  "subtitles": {
+    "cryptwerk": "Directorio de comerciantes que aceptan Monero",
+    "monerica": "Un directorio para una economía circular de Monero",
+    "xmrbazaar": "Mercado de Monero de persona a persona",
+    "kycnotme": "Encuentra servicios que no requieren KYC para mejor privacidad y control de datos"
+  },
+  "disclaimerTitle": "Descargo de responsabilidad",
+  "disclaimer": "Esta lista es solo para fines informativos. El Proyecto Monero no respalda, recomienda ni garantiza ningún comerciante listado aquí. Siempre verifica las URL, comienza con una pequeña cantidad de prueba si no estás seguro, y usa cada comerciante bajo tu propio riesgo."
+}

@@ -18,7 +18,7 @@ const iconSrc = await getImage({ src, format: "avif" }).then(
 );
 ---
 
-<div class={`icon ${rtl ? "icon--rtl" : ""}`}></div>
+<div class:list={["icon", rtl && "icon--rtl"]}></div>
 
 <style define:vars={{ iconSize, iconSrc, iconColor: color, spacing }}>
   .icon {

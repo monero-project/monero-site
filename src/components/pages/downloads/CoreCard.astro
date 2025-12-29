@@ -89,7 +89,7 @@ const safeMarkdown = createSafeMarkdown();
       }
     </ul>
     <div class="download-actions">
-      <Dropdown label={t("downloads.core.downloadButton")}>
+      <Dropdown label={t("downloads:core.downloadButton")}>
         {
           downloads.map((item) =>
             item === "separator" ? (
@@ -106,7 +106,7 @@ const safeMarkdown = createSafeMarkdown();
                     </span>
                   )}
                   <span>
-                    {`${t(`downloads.platforms.${item.platform}`)} (${t(`downloads.core.formats.${item.format}`)})`}
+                    {`${t(`downloads:platforms.${item.platform}`)} (${t(`downloads:core.formats.${item.format}`)})`}
                   </span>
                 </span>
                 {item.size && <span slot="meta">{item.size}</span>}
@@ -124,15 +124,15 @@ const safeMarkdown = createSafeMarkdown();
               as="a"
               class="torrent-button"
             >
-              {t("downloads.core.torrent")}
+              {t("downloads:core.torrent")}
             </Button>
             <Button
               variant="secondary"
               href={magnetUrl}
               as="a"
               class="magnet-button"
-              aria-label={t("downloads.core.magnetLink")}
-              title={t("downloads.core.magnetLink")}
+              aria-label={t("downloads:core.magnetLink")}
+              title={t("downloads:core.magnetLink")}
             >
               <ColorIcon
                 src={magnetIcon}
@@ -161,7 +161,7 @@ const safeMarkdown = createSafeMarkdown();
               target="_blank"
               rel="noopener noreferrer external"
               class="metadata-link"
-              set:text={t("downloads.core.releaseNotes")}
+              set:text={t("downloads:core.releaseNotes")}
             />
           </>
         )
@@ -175,17 +175,17 @@ const safeMarkdown = createSafeMarkdown();
               target="_blank"
               rel="noopener noreferrer external"
               class="metadata-link"
-              set:text={t("downloads.core.sourceCode")}
+              set:text={t("downloads:core.sourceCode")}
             />
           </>
         )
       }
     </div>
     <div class="verification">
-      <h3>{t("downloads.core.verifyDownload")}</h3>
+      <h3>{t("downloads:core.verifyDownload")}</h3>
       <p
         set:html={safeMarkdown.parse(
-          t("downloads.core.verifyDescription", {
+          t("downloads:core.verifyDescription", {
             verifyInstructionLink:
               "https://docs.getmonero.org/interacting/verify-monero-binaries",
           }),
@@ -196,7 +196,7 @@ const safeMarkdown = createSafeMarkdown();
         class="verify-link"
         target="_blank"
         rel="noopener noreferrer"
-        set:text={t("downloads.core.viewHashes")}
+        set:text={t("downloads:core.viewHashes")}
       />
     </div>
   </div>

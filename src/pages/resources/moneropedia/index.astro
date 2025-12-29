@@ -54,12 +54,12 @@ for (const letter of sortedLetters) {
 ---
 
 <Layout
-  title={t("moneropedia.pageTitle") ?? "Moneropedia"}
-  description={t("moneropedia.heroSubtitle")}
+  title={t("moneropedia:pageTitle") ?? "Moneropedia"}
+  description={t("moneropedia:hero.subtitle")}
 >
   <TitleCard
-    title={t("moneropedia.heroTitle") ?? "Moneropedia"}
-    subtitle={t("moneropedia.heroSubtitle")}
+    title={t("moneropedia:hero.title") ?? "Moneropedia"}
+    subtitle={t("moneropedia:hero.subtitle")}
   />
   <PageContainer class="moneropedia-index">
     <nav class="letter-nav" aria-label="Moneropedia navigation bar">
@@ -79,7 +79,7 @@ for (const letter of sortedLetters) {
           const accordionItems = groupEntries.map((entry) => ({
             title: entry.title,
             content: safeMarkdown.parse(
-              `${entry.data.summary}\n\n[${t("moneropedia.readMore")} ](${entry.href})`,
+              `${entry.data.summary}\n\n[${t("moneropedia:readMore")} ](${entry.href})`,
             ),
           }));
 

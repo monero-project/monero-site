@@ -1,4 +1,7 @@
 {
+  "site": {
+    "titleSuffix": "Monero - cryptomonnaie sécurisée, privée et intraçable."
+  },
   "header": {
     "nav": {
       "getStarted": "Commencer",
@@ -11,12 +14,20 @@
     "dropdowns": {
       "getStarted": {
         "whatIsMonero": {
-          "label": "Qu'est-ce que Monero?",
-          "desc": "Tout ce que vous devez savoir sur Monero en un mot."
+          "label": "Qu'est-ce que Monero ?",
+          "desc": "Tout ce que vous devez savoir sur Monero en bref."
+        },
+        "buyMonero": {
+          "label": "Acheter Monero",
+          "desc": "Plateformes d'échange de cryptomonnaies qui vous permettent d'acheter ou d'échanger Monero."
         },
         "acceptMonero": {
           "label": "Accepter Monero",
-          "desc": "Apprenez à accepter XMR en tant que commerçant ou individu."
+          "desc": "Apprenez à accepter XMR en tant que commerçant ou particulier."
+        },
+        "spendMonero": {
+          "label": "Dépenser Monero",
+          "desc": "Trouvez des endroits et des services qui acceptent Monero comme paiement."
         },
         "contribute": {
           "label": "Contribuer",
@@ -29,32 +40,20 @@
         "faq": {
           "label": "FAQ",
           "desc": "Trouvez des réponses aux questions courantes sur Monero."
-        },
-        "buyMonero": {
-          "label": "Acheter Monero",
-          "desc": "Échanges de cryptomonnaies qui vous permettent d'acheter ou d'échanger Monero."
-        },
-        "spendMonero": {
-          "label": "Dépenser Monero",
-          "desc": "Trouvez des endroits et des services qui acceptent Monero comme paiement."
         }
       },
       "community": {
         "workgroups": {
           "label": "Groupes de travail",
-          "desc": "Tout ce que vous devez savoir sur Monero en un mot."
+          "desc": "Collaborez avec les groupes de travail dédiés de Monero sur le développement, la recherche et les efforts communautaires."
         },
         "sponsorships": {
-          "label": "Parrainages",
-          "desc": "Découvrez les moyens d'aider le projet Monero à apporter la confidentialité à tous."
+          "label": "Sponsors",
+          "desc": "Liste des entreprises qui soutiennent le Projet Monero."
         },
         "hangouts": {
           "label": "Rencontres",
-          "desc": "Apprenez à accepter XMR en tant que commerçant ou individu avec un logiciel de portefeuille."
-        },
-        "merchants": {
-          "label": "Commerçants et échanges",
-          "desc": "Tout ce que vous devez savoir sur Monero en un mot."
+          "desc": "Rejoignez les rencontres et événements de la communauté Monero pour vous connecter avec d'autres passionnés et développeurs."
         }
       },
       "resources": {
@@ -64,22 +63,22 @@
         },
         "roadmap": {
           "label": "Feuille de route",
-          "desc": "Restez à jour avec les derniers plans et progrès de développement de Monero."
+          "desc": "Restez informé des derniers plans de développement et des progrès de Monero."
         },
         "researchLab": {
           "label": "Laboratoire de recherche",
-          "desc": "Découvrez les moyens d'aider le projet Monero à apporter la confidentialité à tous."
+          "desc": "Explorez les publications et recherches du Laboratoire de Recherche Monero."
         },
         "moneroDocs": {
-          "label": "Docs Monero",
-          "desc": "Guides complets pour les utilisateurs et développeurs pour utiliser Monero efficacement et en toute sécurité."
+          "label": "Documentation Monero",
+          "desc": "Guides complets pour les utilisateurs et les développeurs pour utiliser Monero efficacement et en toute sécurité."
         },
         "moneroTools": {
           "label": "Outils Monero",
           "desc": "Une liste organisée d'outils et de logiciels pour les utilisateurs et développeurs Monero."
         },
         "pressKit": {
-          "label": "Kit presse",
+          "label": "Dossier de presse",
           "desc": "Contacts presse, logos, images et autres ressources médias."
         }
       }
@@ -90,15 +89,17 @@
       "resources": {
         "title": "Ressources",
         "links": {
+          "aboutMonero": "À propos de Monero",
+          "moneropedia": "Moneropedia",
           "knowledgeBase": "Base de connaissances",
           "downloads": "Téléchargements",
-          "exchanges": "Échanges",
+          "exchanges": "Plateformes d'échange",
           "merchants": "Commerçants",
-          "moneroDocs": "Docs Monero"
+          "moneroDocs": "Documentation Monero"
         }
       },
       "reachOut": {
-        "title": "Contactez-nous",
+        "title": "Nous contacter",
         "links": {
           "workgroups": "Groupes de travail",
           "hangouts": "Rencontres",
@@ -118,12 +119,12 @@
         "links": {
           "openAlias": "Open Alias",
           "moneroResearchLab": "Laboratoire de Recherche Monero (MRL)",
-          "pressKit": "Kit presse",
-          "communityCrowdfundingSystem": "Système de Financement Participatif Communautaire"
+          "pressKit": "Dossier de presse",
+          "communityCrowdfundingSystem": "Système de financement participatif communautaire"
         }
       },
       "legal": {
-        "title": "Légal",
+        "title": "Mentions légales",
         "links": {
           "privacyPolicy": "Politique de confidentialité",
           "termsOfUse": "Conditions d'utilisation"
@@ -131,14 +132,18 @@
       }
     },
     "bottomLinks": {
-      "torOnionService": "Service Onion Tor",
+      "torOnionService": "Service Tor Onion",
       "vulnerabilityResponse": "Réponse aux vulnérabilités",
-      "legal": "Légal",
+      "legal": "Mentions légales",
       "sourceCode": "Code source",
       "sitemap": "Plan du site",
       "rssFeed": "Flux RSS"
     },
     "copyright": "© 2025 Monero. Tous droits réservés."
+  },
+  "strings": {
+    "yes": "Oui",
+    "no": "Non"
   },
   "notFound": {
     "pageTitle": "404 - Page non trouvée | Monero",

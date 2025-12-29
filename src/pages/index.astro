@@ -18,31 +18,31 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 ---
 
-<Layout title={t("index.pageTitle")} description={t("index.hero.lead")}>
+<Layout title={t("index:pageTitle")} description={t("index:hero.lead")}>
   <Hero t={t} class="index-hero" />
   <div class="main-content">
     <IndexCard
       id="about-monero"
-      title={t("index.aboutTitle")}
-      description={t("index.aboutDescription")}
+      title={t("index:aboutTitle")}
+      description={t("index:aboutDescription")}
     >
       <div style="display: flex; flex-direction: column; gap: 2rem;">
         <div>
-          <h2 style="margin-top: 0;">{t("index.main")}</h2>
+          <h2 style="margin-top: 0;">{t("index:main")}</h2>
           <p>
-            {t("index.privacyText")}
+            {t("index:privacyText")}
           </p>
         </div>
         <div>
-          <h2>{t("index.decentralized")}</h2>
+          <h2>{t("index:decentralized")}</h2>
           <p>
-            {t("index.decentralizedText")}
+            {t("index:decentralizedText")}
           </p>
         </div>
         <div>
-          <h2>{t("index.communityDriven")}</h2>
+          <h2>{t("index:communityDriven")}</h2>
           <p>
-            {t("index.communityText")}
+            {t("index:communityText")}
           </p>
         </div>
       </div>
@@ -63,8 +63,8 @@ const t = await createTInstance(locale);
     </IndexCard>
     <hr />
     <IndexCard
-      title={t("index.startTitle")}
-      description={t("index.startDescription")}
+      title={t("index:startTitle")}
+      description={t("index:startDescription")}
       id="start-using-monero"
     >
       <Image src={landingImage} alt="" class="landing-image" format="avif" />
@@ -72,47 +72,47 @@ const t = await createTInstance(locale);
       <div>
         <GetStartedCard
           step="01"
-          title={t("index.step1Title")}
-          description={t("index.step1Desc")}
+          title={t("index:step1Title")}
+          description={t("index:step1Desc")}
           ctaHref={localizeHref(locale, "/downloads/community/#wallets")}
-          ctaLabel={t("index.step1Cta")}
+          ctaLabel={t("index:step1Cta")}
         />
         <hr />
         <GetStartedCard
           step="02"
-          title={t("index.step2Title")}
-          description={t("index.step2Desc")}
+          title={t("index:step2Title")}
+          description={t("index:step2Desc")}
           ctaHref={localizeHref(locale, "/get-started/exchanges")}
-          ctaLabel={t("index.step2Cta")}
+          ctaLabel={t("index:step2Cta")}
         />
         <hr />
         <GetStartedCard
           step="03"
-          title={t("index.step3Title")}
-          description={t("index.step3Desc")}
+          title={t("index:step3Title")}
+          description={t("index:step3Desc")}
           ctaHref={localizeHref(locale, "/get-started/merchants")}
-          ctaLabel={t("index.step3Cta")}
+          ctaLabel={t("index:step3Cta")}
         />
       </div>
     </IndexCard>
     <hr />
     <IndexCard
-      title={t("index.resourcesTitle")}
-      description={t("index.resourcesDescription")}
+      title={t("index:resourcesTitle")}
+      description={t("index:resourcesDescription")}
       id="monero-resources"
     >
       <div id="resource-container">
         <ResourceCard
-          title={t("index.faqTitle")}
-          description={t("index.faqDesc")}
-          ctaLabel={t("index.faqCta")}
+          title={t("index:faqTitle")}
+          description={t("index:faqDesc")}
+          ctaLabel={t("index:faqCta")}
           ctaHref={localizeHref(locale, "/get-started/faq")}
           icon={faqIcon}
         />
         <ResourceCard
-          title={t("index.moneroDocsTitle")}
-          description={t("index.moneroDocsDesc")}
-          ctaLabel={t("index.moneroDocsCta")}
+          title={t("index:moneroDocsTitle")}
+          description={t("index:moneroDocsDesc")}
+          ctaLabel={t("index:moneroDocsCta")}
           ctaHref="https://docs.getmonero.org"
           icon={developerGuidesIcon}
         />

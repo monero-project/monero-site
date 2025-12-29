@@ -1,0 +1,35 @@
+{
+  "index": {
+    "pageTitle": "Blog",
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Lee las últimas noticias y actualizaciones sobre Monero."
+    }
+  },
+  "tagIndex": {
+    "pageTitle": "Índice de etiquetas",
+    "hero": {
+      "title": "Índice de etiquetas",
+      "subtitle": "Navega por las publicaciones del blog por etiquetas."
+    }
+  },
+  "tags": {
+    "pageTitle": "Publicaciones etiquetadas con {{tag}}",
+    "hero": {
+      "title": "Publicaciones etiquetadas con \"{{tag}}\"",
+      "subtitle": "Navega por todas las publicaciones del blog etiquetadas con \"{{tag}}\"."
+    }
+  },
+  "post": {
+    "pageTitle": "Blog | {{title}}",
+    "recentPosts": "Publicaciones recientes",
+    "and": "y"
+  },
+  "tabs": {
+    "allPosts": "Todas las publicaciones",
+    "urgent": "Urgente",
+    "releases": "Lanzamientos",
+    "community": "Comunidad",
+    "meetingLogs": "Registros de reuniones"
+  }
+}

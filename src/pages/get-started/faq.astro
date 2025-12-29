@@ -20,105 +20,116 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 const safeMarkdown = createSafeMarkdown(locale);
 
-const basicsItems = (
-  t("faq.basics.items", { returnObjects: true }) as AccordionItemType[]
-).map((item) => ({
-  ...item,
-  content: safeMarkdown.parse(item.content),
-}));
-const nodesItems = (
-  t("faq.nodes.items", { returnObjects: true }) as AccordionItemType[]
-).map((item) => ({
-  ...item,
-  content: safeMarkdown.parse(item.content),
-}));
-const privacyItems = (
-  t("faq.privacy.items", { returnObjects: true }) as AccordionItemType[]
-).map((item) => ({
-  ...item,
-  content: safeMarkdown.parse(item.content),
-}));
-const securityItems = (
-  t("faq.security.items", { returnObjects: true }) as AccordionItemType[]
-).map((item) => ({
-  ...item,
-  content: safeMarkdown.parse(item.content),
-}));
-const walletsItems = (
-  t("faq.wallets.items", { returnObjects: true }) as AccordionItemType[]
-).map((item) => ({
-  ...item,
-  content: safeMarkdown.parse(item.content),
-}));
-const economicsItems = (
-  t("faq.economics.items", { returnObjects: true }) as AccordionItemType[]
-).map((item) => ({
-  ...item,
-  content: safeMarkdown.parse(item.content),
-}));
+const sectionToItems = (
+  section: Record<string, { title: string; content: string }>,
+): AccordionItemType[] => {
+  return Object.entries(section)
+    .filter(([key]) => key !== "title")
+    .map(([, item]) => ({
+      title: item.title,
+      content: safeMarkdown.parse(item.content),
+    }));
+};
+
+const basicsItems = sectionToItems(
+  t("faq:basics", { returnObjects: true }) as Record<
+    string,
+    { title: string; content: string }
+  >,
+);
+const nodesItems = sectionToItems(
+  t("faq:nodes", { returnObjects: true }) as Record<
+    string,
+    { title: string; content: string }
+  >,
+);
+const privacyItems = sectionToItems(
+  t("faq:privacy", { returnObjects: true }) as Record<
+    string,
+    { title: string; content: string }
+  >,
+);
+const securityItems = sectionToItems(
+  t("faq:security", { returnObjects: true }) as Record<
+    string,
+    { title: string; content: string }
+  >,
+);
+const walletsItems = sectionToItems(
+  t("faq:wallets", { returnObjects: true }) as Record<
+    string,
+    { title: string; content: string }
+  >,
+);
+const economicsItems = sectionToItems(
+  t("faq:economics", { returnObjects: true }) as Record<
+    string,
+    { title: string; content: string }
+  >,
+);
 ---
 
-<Layout title={t("faq.pageTitle")} description={t("faq.heroSubtitle")}>
-  <TitleCard title={t("faq.heroTitle")} subtitle={t("faq.heroSubtitle")} />
+<Layout title={t("faq:pageTitle")} description={t("faq:hero.subtitle")}>
+  <TitleCard title={t("faq:hero.title")} subtitle={t("faq:hero.subtitle")} />
   <PageContainer>
     <div class="accordion-grid">
       <div class="accordion-card">
-        <h2 class="card-title">{t("faq.basics.title")}</h2>
+        <h2 class="card-title">{t("faq:basics.title")}</h2>
         <Accordion items={basicsItems} />
       </div>
       <div class="accordion-card">
-        <h2 class="card-title">{t("faq.nodes.title")}</h2>
+        <h2 class="card-title">{t("faq:nodes.title")}</h2>
         <Accordion items={nodesItems} />
       </div>
       <div class="accordion-card">
-        <h2 class="card-title">{t("faq.privacy.title")}</h2>
+        <h2 class="card-title">{t("faq:privacy.title")}</h2>
         <Accordion items={privacyItems} />
       </div>
       <div class="accordion-card">
-        <h2 class="card-title">{t("faq.security.title")}</h2>
+        <h2 class="card-title">{t("faq:security.title")}</h2>
         <Accordion items={securityItems} />
       </div>
       <div class="accordion-card">
-        <h2 class="card-title">{t("faq.wallets.title")}</h2>
+        <h2 class="card-title">{t("faq:wallets.title")}</h2>
         <Accordion items={walletsItems} />
       </div>
       <div class="accordion-card">
-        <h2 class="card-title">{t("faq.economics.title")}</h2>
+        <h2 class="card-title">{t("faq:economics.title")}</h2>
         <Accordion items={economicsItems} />
       </div>
     </div>
     <IndexCard
-      title={t("index.resourcesTitle")}
-      description={t("index.resourcesDescription")}
+      title={t("index:resourcesTitle")}
+      description={t("index:resourcesDescription")}
       id="monero-resources"
     >
       <div id="resource-container">
         <ResourceCard
           icon={developerGuidesIcon}
-          title={t("faq.additionalResources.moneroDocs.title")}
-          description={t("faq.additionalResources.moneroDocs.description")}
-          ctaLabel={t("faq.additionalResources.moneroDocs.ctaLabel")}
+          title={t("faq:additionalResources.moneroDocs.title")}
+          description={t("faq:additionalResources.moneroDocs.description")}
+          ctaLabel={t("faq:additionalResources.moneroDocs.ctaLabel")}
           ctaHref="https://docs.getmonero.org"
         />
         <ResourceCard
           icon={faqIcon}
-          title={t("faq.additionalResources.stackExchange.title")}
-          description={t("faq.additionalResources.stackExchange.description")}
-          ctaLabel={t("faq.additionalResources.stackExchange.ctaLabel")}
+          title={t("faq:additionalResources.stackExchange.title")}
+          description={t("faq:additionalResources.stackExchange.description")}
+          ctaLabel={t("faq:additionalResources.stackExchange.ctaLabel")}
           ctaHref="https://monero.stackexchange.com"
         />
         <ResourceCard
           icon={developerGuidesIcon}
-          title={t("faq.additionalResources.reddit.title")}
-          description={t("faq.additionalResources.reddit.description")}
-          ctaLabel={t("faq.additionalResources.reddit.ctaLabel")}
+          title={t("faq:additionalResources.reddit.title")}
+          description={t("faq:additionalResources.reddit.description")}
+          ctaLabel={t("faq:additionalResources.reddit.ctaLabel")}
           ctaHref="https://www.reddit.com/r/MoneroSupport"
         />
         <ResourceCard
           icon={developerGuidesIcon}
-          title={t("faq.additionalResources.monerohow.title")}
-          description={t("faq.additionalResources.monerohow.description")}
-          ctaLabel={t("faq.additionalResources.monerohow.ctaLabel")}
+          title={t("faq:additionalResources.monerohow.title")}
+          description={t("faq:additionalResources.monerohow.description")}
+          ctaLabel={t("faq:additionalResources.monerohow.ctaLabel")}
           ctaHref="https://monero.how"
         />
       </div>

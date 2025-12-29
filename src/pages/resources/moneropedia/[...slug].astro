@@ -44,7 +44,7 @@ const { Content } = await render(entry);
 const title = entry.data.title ?? entry.data.terms[0];
 ---
 
-<Layout title={`${title} | ${t("moneropedia.pageTitle")}`} description="">
+<Layout title={`${title} | ${t("moneropedia:pageTitle")}`} description="">
   <div class="moneropedia-page container">
     {/* Row 1, Col 1 */}
     <aside class="moneropedia-sidebar">
@@ -55,7 +55,8 @@ const title = entry.data.title ?? entry.data.terms[0];
         <span class="moneropedia-back-icon">
           <MaskIcon src={chevronLeft} size="1.25rem" rtl={dir == "rtl"} />
         </span>
-        <span class="moneropedia-back-label">{t("moneropedia.heroTitle")}</span>
+        <span class="moneropedia-back-label">{t("moneropedia:hero.title")}</span
+        >
       </a>
     </aside>
 

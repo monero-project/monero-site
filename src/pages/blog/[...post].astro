@@ -41,7 +41,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
 ---
 
 <Layout
-  title={t("blog.post.pageTitle", { title: post.data.title })}
+  title={t("blog:post.pageTitle", { title: post.data.title })}
   description={post.data.summary || post.data.title}
   openGraph={{
     basic: {
@@ -98,7 +98,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     </article>
 
     <aside class="sidebar">
-      <h2>{t("blog.post.recentPosts")}</h2>
+      <h2>{t("blog:post.recentPosts")}</h2>
       <ul class="recent-posts">
         {
           recentPosts.map((recentPost) => {

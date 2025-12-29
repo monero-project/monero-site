@@ -1,8 +1,19 @@
+import fs from "node:fs";
+import path from "node:path";
 import { getLocale } from "astro-i18n-aut";
-import { createInstance } from "i18next";
+import { createInstance, type TFunction } from "i18next";
 import Backend from "i18next-fs-backend";
 
 import { defaultLocale, locales, rtlLocales } from "@/i18n/config";
+
+const translationsDir = path.join(
+  process.cwd(),
+  `src/i18n/translations/${defaultLocale}`,
+);
+const namespaces = fs
+  .readdirSync(translationsDir)
+  .filter((file) => file.endsWith(".json"))
+  .map((file) => file.replace(".json", ""));
 
 export const localizeHref = (locale: string, href: string): string => {
   if (href.startsWith("http")) return href;
@@ -11,13 +22,13 @@ export const localizeHref = (locale: string, href: string): string => {
     `^/(${Object.keys(locales).join("|")})(?=/|$)`,
   );
 
-  const path = (href.startsWith("/") ? href : `/${href}`).replace(
+  const urlPath = (href.startsWith("/") ? href : `/${href}`).replace(
     localeRegex,
     "",
   );
   const prefix = locale === defaultLocale ? "" : `/${locale}`;
 
-  return `${prefix}${path}${path.includes("#") ? "" : "/"}`.replace(
+  return `${prefix}${urlPath}${urlPath.includes("#") ? "" : "/"}`.replace(
     /\/+/g,
     "/",
   );
@@ -59,31 +70,18 @@ export const getDirection = (locale: string): "ltr" | "rtl" => {
   return rtlLocales.includes(locale) ? "rtl" : "ltr";
 };
 
-export const createTInstance = (
-  locale: string,
-  namespace?: string | string[],
-) => {
+export function createTInstance(locale: string): Promise<TFunction> {
   const newInstance = createInstance();
-
-  const namespaces = namespace
-    ? Array.isArray(namespace)
-      ? namespace
-      : [namespace]
-    : ["common", "translation"];
-
-  const defaultNamespace = Array.isArray(namespace)
-    ? namespace[0]
-    : namespace || "translation";
 
   return newInstance.use(Backend).init({
     lng: locale,
     fallbackLng: defaultLocale,
     supportedLngs: Object.keys(locales),
-    ns: namespaces,
-    defaultNS: defaultNamespace,
+    ns: [...namespaces],
+    defaultNS: false,
     backend: {
       loadPath: "./src/i18n/translations/{{lng}}/{{ns}}.json",
     },
-  });
-};
+  }) as Promise<TFunction>;
+}
 export { getLocale };

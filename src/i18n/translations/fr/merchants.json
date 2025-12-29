@@ -1,0 +1,16 @@
+{
+  "pageTitle": "Commerçants",
+  "hero": {
+    "title": "Commerçants",
+    "subtitle": "Magasins et commerçants qui acceptent Monero comme paiement."
+  },
+  "intro": "Si vous cherchez des endroits pour dépenser votre Monero, les annuaires ci-dessous fournissent une liste complète d'options. N'oubliez pas de faire vos propres recherches avant de leur confier votre argent.",
+  "subtitles": {
+    "cryptwerk": "Annuaire des commerçants acceptant Monero",
+    "monerica": "Un annuaire pour une économie circulaire Monero",
+    "xmrbazaar": "Marché Monero de pair à pair",
+    "kycnotme": "Trouvez des services qui ne nécessitent pas de KYC pour une meilleure confidentialité et contrôle des données"
+  },
+  "disclaimerTitle": "Avertissement",
+  "disclaimer": "Cette liste est fournie à titre informatif uniquement. Le Projet Monero n'approuve, ne recommande ni ne garantit aucun commerçant listé ici. Vérifiez toujours les URL, commencez par un petit montant test si vous n'êtes pas sûr, et utilisez chaque commerçant à vos propres risques."
+}

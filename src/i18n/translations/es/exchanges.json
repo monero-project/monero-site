@@ -1,0 +1,73 @@
+{
+  "pageTitle": "Exchanges",
+  "hero": {
+    "title": "Exchanges",
+    "subtitle": "Exchanges de criptomonedas que te permiten comprar o intercambiar Monero."
+  },
+  "sidebarTitle": "¿Nuevo en Monero?",
+  "filtersDescription": "Comienza eligiendo la situación que te corresponde. Resaltaremos las opciones en esta página que probablemente sean las más adecuadas.",
+  "sections": {
+    "decentralized": {
+      "title": "Exchanges Descentralizados",
+      "description": "Estas opciones te permiten intercambiar Monero directamente desde tu propia cartera, sin una cuenta de exchange tradicional. Son geniales si quieres más privacidad y control."
+    },
+    "aggregators": {
+      "title": "Agregadores de Intercambio",
+      "description": "La forma más fácil de intercambiar crypto por Monero sin crear una cuenta. Estos servicios comparan precios de múltiples proveedores de intercambio y te dirigen a la mejor opción.",
+      "disclaimer": "El agregador en sí no retiene tus fondos, pero el servicio que termines usando podría pedirte que verifiques tu identidad.",
+      "resourceBtnTitle": "KYCNot.me - Agregadores",
+      "resourceIntro": "Para una lista actualizada con detalles y reseñas, puedes visitar el recurso de la comunidad a continuación:",
+      "tip": "**Consejo:** Algunas carteras de Monero tienen un **exchange integrado** para mayor comodidad. Consulta las <a href=\"{{communityDownloadsUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\">descargas de la comunidad</a> para ver opciones."
+    },
+    "centralized": {
+      "title": "Exchanges Centralizados",
+      "description": "Estos son los exchanges clásicos donde creas una cuenta, completas verificaciones de identidad y puedes depositar desde tu cartera crypto, banco o tarjeta."
+    }
+  },
+  "descriptions": {
+    "basicswapdex": "Intercambia crypto sin intermediarios (intercambios atómicos).",
+    "bisq": "Exchange peer-to-peer donde intercambias directamente con otras personas. Soporta swaps BTC → XMR.",
+    "eigenwallet": "Plataforma de alta liquidez para intercambios atómicos de BTC a XMR. Comprar XMR con fiat disponible solo en la UE (requiere KYC).",
+    "retoswap": "Exchange descentralizado peer-to-peer construido sobre Monero. Soporta intercambios fiat, crypto → XMR.",
+    "cyphergoat": "Servicio que encuentra rutas para intercambios seguros de crypto a crypto entre diferentes proveedores.",
+    "orangefren": "Sitio amigable para principiantes que te permite comparar y hacer intercambios de crypto, generalmente sin crear cuenta.",
+    "trocador": "Agregador que se enfoca en rutas de intercambio amigables con la privacidad.",
+    "bitfinex": "Plataforma de trading con una amplia gama de criptomonedas y derivados.",
+    "kraken": "Exchange conocido con fuerte soporte de fiat y características de trading avanzadas.",
+    "kucoin": "Exchange popular conocido por su gran selección de altcoins, incluyendo Monero."
+  },
+  "highlightOptions": {
+    "easiest": {
+      "title": "Quiero la forma más simple de obtener Monero",
+      "subtitle": "Opciones amigables para principiantes"
+    },
+    "fiat": {
+      "title": "Quiero pagar con efectivo o transferencia bancaria",
+      "subtitle": "Exchanges que soportan moneda fiat (USD, EUR, etc.)"
+    },
+    "privacy": {
+      "title": "Me importa más la privacidad",
+      "subtitle": "Opciones descentralizadas que no requieren verificación de identidad"
+    },
+    "selectedText": {
+      "easiest": "Destacado: Fácil de usar",
+      "fiat": "Destacado: Efectivo/Cuenta bancaria",
+      "privacy": "Destacado: Privado"
+    }
+  },
+  "disclaimerTitle": "Descargo de responsabilidad",
+  "disclaimer": "Esta lista es solo para fines informativos. El Proyecto Monero no respalda, recomienda ni garantiza ningún servicio listado aquí. Siempre verifica las URL, comienza con una pequeña cantidad de prueba si no estás seguro, y usa cada servicio bajo tu propio riesgo.",
+  "clearSelection": "Limpiar selección",
+  "table": {
+    "name": "Nombre",
+    "kyc": "KYC",
+    "fiat": "Fiat",
+    "crypto": "Crypto",
+    "visit": "Visitar"
+  },
+  "kyc": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "none": "Ninguno"
+  }
+}

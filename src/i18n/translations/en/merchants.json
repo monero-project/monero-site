@@ -1,0 +1,16 @@
+{
+  "pageTitle": "Merchants",
+  "hero": {
+    "title": "Merchants",
+    "subtitle": "Stores and merchants that accept Monero as payment."
+  },
+  "intro": "If you are looking for places to spend your Monero, the directories below provide a comprehensive list of options. Please remember to do your own research before trusting them with your money.",
+  "subtitles": {
+    "cryptwerk": "Directory of merchants accepting Monero",
+    "monerica": "A directory for a Monero circular economy",
+    "xmrbazaar": "Peer-to-peer Monero marketplace",
+    "kycnotme": "Find services that don't require KYC for better privacy and data control"
+  },
+  "disclaimerTitle": "Disclaimer",
+  "disclaimer": "This list is for informational purposes only. The Monero Project does not endorse, recommend, or guarantee any merchant listed here. Always double-check URLs, start with a small test amount if you're unsure, and use every merchant at your own risk."
+}

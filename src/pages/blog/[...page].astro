@@ -38,29 +38,29 @@ const t = await createTInstance(locale);
 const dir = getDirection(locale);
 
 const tabs = [
-  { label: t("blog.tabs.allPosts"), link: "/blog" },
+  { label: t("blog:tabs.allPosts"), link: "/blog" },
   {
-    label: t("blog.tabs.urgent"),
+    label: t("blog:tabs.urgent"),
     link: "/blog/tags/urgent",
   },
   {
-    label: t("blog.tabs.releases"),
+    label: t("blog:tabs.releases"),
     link: "/blog/tags/releases",
   },
   {
-    label: t("blog.tabs.community"),
+    label: t("blog:tabs.community"),
     link: "/blog/tags/community",
   },
   {
-    label: t("blog.tabs.meetingLogs"),
+    label: t("blog:tabs.meetingLogs"),
     link: "/blog/tags/dev-diaries",
   },
 ];
 ---
 
 <Layout
-  title={t("blog.index.pageTitle")}
-  description={t("blog.index.heroSubtitle")}
+  title={t("blog:index.pageTitle")}
+  description={t("blog:index.hero.subtitle")}
 >
   <Fragment slot="head">
     <link
@@ -71,8 +71,8 @@ const tabs = [
     />
   </Fragment>
   <TitleCard
-    title={t("blog.index.heroTitle")}
-    subtitle={t("blog.index.heroSubtitle")}
+    title={t("blog:index.hero.title")}
+    subtitle={t("blog:index.hero.subtitle")}
   />
   <div class="tabs-bar">
     <Tabs

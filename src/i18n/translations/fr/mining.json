@@ -1,0 +1,98 @@
+{
+  "pageTitle": "Minage",
+  "description": "Minez Monero avec RandomX. Démarrez rapidement et de façon décentralisée avec Gupax + P2Pool, ou utilisez XMRig pour des configurations de pool traditionnelles.",
+  "hero": {
+    "title": "Minage",
+    "subtitle": "Monero est une cryptomonnaie qui repose sur le minage par preuve de travail pour atteindre un consensus distribué."
+  },
+  "gupax": {
+    "title": "Gupax",
+    "subtitle": "Le mineur Monero convivial",
+    "lead": "La façon la plus rapide de commencer à miner Monero. Gupax regroupe P2Pool et XMRig dans une application simple avec une configuration facile et des statistiques claires.",
+    "bullets": [
+      "Multiplateforme : Fonctionne sur Windows, Linux et macOS",
+      "Configuration simple : Commencez à miner en moins de 3 minutes",
+      "Décentralisé : Fonctionne sur P2Pool"
+    ],
+    "cta": "Obtenir Gupax"
+  },
+  "xmrig": {
+    "title": "XMRig",
+    "subtitle": "Avancé : réglages, GPUs, pools personnalisés",
+    "lead": "Vous préférez le contrôle total ? Utilisez XMRig directement pour le minage en pool/solo et le réglage des performances.",
+    "bullets": [
+      "Le mineur RandomX le plus populaire",
+      "Fonctionne avec les pools, en solo et de nombreuses configurations avancées"
+    ],
+    "cta": "XMRig sur GitHub"
+  },
+  "solo": {
+    "title": "Minage en solo",
+    "subtitle": "Le plus indépendant, la plus grande variance",
+    "lead": "Le minage en solo maximise l'indépendance, mais attendez-vous à de longs intervalles entre les paiements sauf si votre hashrate est élevé.",
+    "bullets": [
+      "Pas de frais de pool, pas de confiance en l'opérateur",
+      "Paiements \"loterie\" - variance plus élevée"
+    ],
+    "cta": "Miner en solo (guide GUI)"
+  },
+  "resources": {
+    "title": "Ressources",
+    "guides": {
+      "title": "Guides",
+      "mineToPool": {
+        "title": "Miner sur un pool avec XMRig",
+        "subtitle": "Guide étape par étape pour XMRig"
+      },
+      "gupaxSetup": {
+        "title": "Guide de configuration de Gupax",
+        "subtitle": "Guide de configuration facile pour le mineur Gupax"
+      }
+    },
+    "pools": {
+      "title": "Pools",
+      "comparePools": {
+        "title": "Comparer les pools",
+        "subtitle": "Frais, hashrate, distribution"
+      }
+    },
+    "benchmarks": {
+      "title": "Benchmarks",
+      "hashrateEstimates": {
+        "title": "Estimations de hashrate",
+        "subtitle": "Par modèle de CPU"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "whatIsRandomX": {
+      "title": "Qu'est-ce que RandomX ?",
+      "content": "@RandomX est l'algorithme de preuve de travail résistant aux ASIC de Monero qui favorise le matériel grand public (CPU), rendant le minage accessible à tous."
+    },
+    "soloVsPool": {
+      "title": "Minage en solo vs pool - quel est le compromis ?",
+      "content": "Le minage en solo maximise l'indépendance mais les paiements peuvent prendre longtemps. Les pools paient plus fréquemment mais ajoutent de la confiance et un risque de centralisation.\n\n### Solo\n- Pas d'opérateur de pool, pas de frais de pool\n- Longues attentes entre les récompenses\n- Meilleur pour la décentralisation\n\n[Guide de minage en solo](https://www.getmonero.org/resources/user-guides/solo_mine_GUI.html)\n\n### Pool\n- Paiements plus fréquents\n- Frais de pool + confiance en l'opérateur\n- Risque de centralisation si un pool devient trop grand\n- Nécessite un logiciel de minage tiers\n\n[Parcourir les pools](https://miningpoolstats.stream/monero)"
+    },
+    "whyP2Pool": {
+      "title": "Pourquoi P2Pool est-il \"le meilleur des deux mondes\" ?",
+      "content": "P2Pool vous donne une fréquence de paiement similaire à un pool tout en gardant le minage pair-à-pair et sans garde.\n\n- Pas de serveur de pool centralisé\n- 0% de frais de pool (vous payez toujours les coûts de votre propre nœud)\n- Sans permission : n'importe qui peut rejoindre\n- Sans confiance : les fonds ne sont jamais en garde\n- Schéma de paiement PPLNS\n- Moins de 0,0004 XMR de paiement minimum\n\n[Annonce de P2Pool](/blog/2021/10/05/p2pool-released/)"
+    },
+    "hardwareExpectations": {
+      "title": "À quoi dois-je m'attendre avec mon matériel ?",
+      "content": "Le minage de Monero est beaucoup plus efficace sur CPU que sur GPU. Vous pouvez estimer votre hashrate en comparant les CPU sur la liste des benchmarks XMRig.\n\n[Benchmarks XMRig](https://xmrig.com/benchmark)"
+    },
+    "whatMiningSoftware": {
+      "title": "Quel logiciel de minage dois-je utiliser ?",
+      "content": "Pour le minage en solo : Portefeuille Monero GUI ou CLI (CPU uniquement). Pour les pools ou GPU : XMRig, CSminer, ou Gupax (qui regroupe P2Pool et XMRig).\n\n- [Monero GUI](https://www.getmonero.org/downloads/#gui) (minage en solo)\n- [Monero CLI](https://www.getmonero.org/downloads/#cli) (minage en solo)\n- [Gupax](https://gupax.io/) (wrapper P2Pool + XMRig)\n- [XMRig](https://github.com/xmrig/xmrig) (mineur CPU/GPU)\n- [CSminer](https://github.com/cryptonote-social/csminer) (mineur CPU/GPU)"
+    },
+    "whereToGetHelp": {
+      "title": "Où puis-je obtenir de l'aide ?",
+      "content": "Connectez-vous avec d'autres mineurs sur le subreddit r/MoneroMining.\n\n[Reddit](https://www.reddit.com/r/MoneroMining/)"
+    }
+  },
+  "disclaimer": {
+    "title": "Avertissement",
+    "content": "Le Projet Monero n'approuve aucun pool, logiciel ou matériel particulier, et le contenu ci-dessus est fourni à titre informatif uniquement."
+  }
+}

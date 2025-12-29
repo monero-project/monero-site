@@ -26,26 +26,38 @@ const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
 const safeMarkdown = createSafeMarkdown(locale);
 
-const faqItems = (
-  t("mining.faq.items", { returnObjects: true }) as AccordionItemType[]
-).map((item) => ({
-  ...item,
-  content: safeMarkdown.parse(item.content),
-}));
+// Helper to convert keyed FAQ section to array for Accordion
+const faqToItems = (
+  faq: Record<string, { title: string; content: string }>,
+): AccordionItemType[] => {
+  return Object.entries(faq)
+    .filter(([key]) => key !== "title") // Exclude the section title
+    .map(([, item]) => ({
+      title: item.title,
+      content: safeMarkdown.parse(item.content),
+    }));
+};
+
+const faqItems = faqToItems(
+  t("mining:faq", { returnObjects: true }) as Record<
+    string,
+    { title: string; content: string }
+  >,
+);
 ---
 
-<Layout title={t("mining.pageTitle")} description={t("mining.description")}>
+<Layout title={t("mining:pageTitle")} description={t("mining:description")}>
   <TitleCard
-    title={t("mining.hero.title")}
-    subtitle={t("mining.hero.subtitle")}
+    title={t("mining:hero.title")}
+    subtitle={t("mining:hero.subtitle")}
   />
   <PageContainer>
     <PageSection ariaLabel="Mining options">
       <div class="grid">
         <ContentCard
           class="cardGupax"
-          title={t("mining.gupax.title")}
-          subtitle={t("mining.gupax.subtitle")}
+          title={t("mining:gupax.title")}
+          subtitle={t("mining:gupax.subtitle")}
           icon={appWindowIcon}
         >
           <div class="frame">
@@ -59,13 +71,13 @@ const faqItems = (
           </div>
 
           <p class="lead">
-            {t("mining.gupax.lead")}
+            {t("mining:gupax.lead")}
           </p>
 
           <ul class="bullets">
             {
               (
-                t("mining.gupax.bullets", { returnObjects: true }) as string[]
+                t("mining:gupax.bullets", { returnObjects: true }) as string[]
               ).map((bullet: string) => <li>{bullet}</li>)
             }
           </ul>
@@ -77,15 +89,15 @@ const faqItems = (
             rel="noopener"
             class="cta"
           >
-            {t("mining.gupax.cta")}
+            {t("mining:gupax.cta")}
             <MaskIcon src={externalLinkIcon} size="1em" />
           </a>
         </ContentCard>
 
         <div class="rightCol" aria-label="Right column">
           <ContentCard
-            title={t("mining.xmrig.title")}
-            subtitle={t("mining.xmrig.subtitle")}
+            title={t("mining:xmrig.title")}
+            subtitle={t("mining:xmrig.subtitle")}
             icon={terminalIcon}
           >
             <div
@@ -102,13 +114,13 @@ const faqItems = (
             </div>
 
             <p class="lead">
-              {t("mining.xmrig.lead")}
+              {t("mining:xmrig.lead")}
             </p>
 
             <ul class="bullets">
               {
                 (
-                  t("mining.xmrig.bullets", { returnObjects: true }) as string[]
+                  t("mining:xmrig.bullets", { returnObjects: true }) as string[]
                 ).map((bullet: string) => <li>{bullet}</li>)
               }
             </ul>
@@ -120,25 +132,25 @@ const faqItems = (
               rel="noopener"
               class="cta"
             >
-              {t("mining.xmrig.cta")}
+              {t("mining:xmrig.cta")}
               <MaskIcon src={externalLinkIcon} size="1em" />
             </a>
           </ContentCard>
 
           <ContentCard
             class="cardSolo"
-            title={t("mining.solo.title")}
-            subtitle={t("mining.solo.subtitle")}
+            title={t("mining:solo.title")}
+            subtitle={t("mining:solo.subtitle")}
             icon={pickaxeIcon}
           >
             <p class="lead">
-              {t("mining.solo.lead")}
+              {t("mining:solo.lead")}
             </p>
 
             <ul class="bullets">
               {
                 (
-                  t("mining.solo.bullets", { returnObjects: true }) as string[]
+                  t("mining:solo.bullets", { returnObjects: true }) as string[]
                 ).map((bullet: string) => <li>{bullet}</li>)
               }
             </ul>
@@ -153,7 +165,7 @@ const faqItems = (
               rel="noopener noreferrer"
               class="cta"
             >
-              {t("mining.solo.cta")}
+              {t("mining:solo.cta")}
               <MaskIcon src={externalLinkIcon} size="1em" />
             </a>
           </ContentCard>
@@ -163,10 +175,10 @@ const faqItems = (
 
     <hr aria-hidden="true" />
 
-    <PageSection title={t("mining.resources.title")}>
+    <PageSection title={t("mining:resources.title")}>
       <div class="resourceGrid">
         <div class="resourceGroup">
-          <h3 class="resourceLabel">{t("mining.resources.guides.title")}</h3>
+          <h3 class="resourceLabel">{t("mining:resources.guides.title")}</h3>
           <ul class="resourceList">
             <li>
               <ExternalResourceButton
@@ -174,16 +186,16 @@ const faqItems = (
                   locale,
                   "/resources/user-guides/mine-to-pool",
                 )}
-                title={t("mining.resources.guides.mineToPool.title")}
-                subtitle={t("mining.resources.guides.mineToPool.subtitle")}
+                title={t("mining:resources.guides.mineToPool.title")}
+                subtitle={t("mining:resources.guides.mineToPool.subtitle")}
                 variant="mini"
               />
             </li>
             <li>
               <ExternalResourceButton
                 href="https://gupax.io/#guide"
-                title={t("mining.resources.guides.gupaxSetup.title")}
-                subtitle={t("mining.resources.guides.gupaxSetup.subtitle")}
+                title={t("mining:resources.guides.gupaxSetup.title")}
+                subtitle={t("mining:resources.guides.gupaxSetup.subtitle")}
                 variant="mini"
               />
             </li>
@@ -191,13 +203,13 @@ const faqItems = (
         </div>
 
         <div class="resourceGroup">
-          <h3 class="resourceLabel">{t("mining.resources.pools.title")}</h3>
+          <h3 class="resourceLabel">{t("mining:resources.pools.title")}</h3>
           <ul class="resourceList">
             <li>
               <ExternalResourceButton
                 href="https://miningpoolstats.stream/monero"
-                title={t("mining.resources.pools.comparePools.title")}
-                subtitle={t("mining.resources.pools.comparePools.subtitle")}
+                title={t("mining:resources.pools.comparePools.title")}
+                subtitle={t("mining:resources.pools.comparePools.subtitle")}
                 variant="mini"
               />
             </li>
@@ -206,15 +218,15 @@ const faqItems = (
 
         <div class="resourceGroup">
           <h3 class="resourceLabel">
-            {t("mining.resources.benchmarks.title")}
+            {t("mining:resources.benchmarks.title")}
           </h3>
           <ul class="resourceList">
             <li>
               <ExternalResourceButton
                 href="https://xmrig.com/benchmark"
-                title={t("mining.resources.benchmarks.hashrateEstimates.title")}
+                title={t("mining:resources.benchmarks.hashrateEstimates.title")}
                 subtitle={t(
-                  "mining.resources.benchmarks.hashrateEstimates.subtitle",
+                  "mining:resources.benchmarks.hashrateEstimates.subtitle",
                 )}
                 variant="mini"
               />
@@ -226,11 +238,11 @@ const faqItems = (
 
     <hr aria-hidden="true" />
 
-    <PageSection class="faq" title={t("mining.faq.title")}>
+    <PageSection class="faq" title={t("mining:faq.title")}>
       <Accordion variant="card" items={faqItems} />
 
-      <DisclaimerBar icon={shieldIcon} title={t("mining.disclaimer.title")}>
-        {t("mining.disclaimer.content")}
+      <DisclaimerBar icon={shieldIcon} title={t("mining:disclaimer.title")}>
+        {t("mining:disclaimer.content")}
       </DisclaimerBar>
     </PageSection>
   </PageContainer>

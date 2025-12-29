@@ -17,17 +17,17 @@ const dir = getDirection(locale);
 ---
 
 <Layout
-  title={t("merchants.pageTitle")}
-  description={t("merchants.heroSubtitle")}
+  title={t("merchants:pageTitle")}
+  description={t("merchants:hero.subtitle")}
 >
   <TitleCard
-    title={t("merchants.heroTitle")}
-    subtitle={t("merchants.heroSubtitle")}
+    title={t("merchants:hero.title")}
+    subtitle={t("merchants:hero.subtitle")}
   />
 
   <PageContainer>
     <p>
-      {t("merchants.intro")}
+      {t("merchants:intro")}
     </p>
 
     <div class="button-container">
@@ -39,7 +39,7 @@ const dir = getDirection(locale);
               href={merchant.link}
               onionHref={merchant.onionLink}
               title={merchant.name}
-              subtitle={t(`merchants.subtitles.${merchant.id}`)}
+              subtitle={t(`merchants:subtitles.${merchant.id}`)}
               logo={merchant.logo}
               rtl={dir == "rtl"}
             />
@@ -48,8 +48,8 @@ const dir = getDirection(locale);
     </div>
   </PageContainer>
 
-  <DisclaimerBar icon={shieldIcon} title={t("merchants.disclaimerTitle")}>
-    {t("merchants.disclaimer")}
+  <DisclaimerBar icon={shieldIcon} title={t("merchants:disclaimerTitle")}>
+    {t("merchants:disclaimer")}
   </DisclaimerBar>
 </Layout>
 

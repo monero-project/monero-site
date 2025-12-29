@@ -36,33 +36,33 @@ const highlightOptions = [
     key: "easiest",
     highlight: "user-friendly",
     icon: rabbitIcon,
-    title: t("exchanges.highlightOptions.easiest.title"),
-    subtitle: t("exchanges.highlightOptions.easiest.subtitle"),
+    title: t("exchanges:highlightOptions.easiest.title"),
+    subtitle: t("exchanges:highlightOptions.easiest.subtitle"),
   },
   {
     key: "fiat",
     highlight: "fiat",
     icon: bankIcon,
-    title: t("exchanges.highlightOptions.fiat.title"),
-    subtitle: t("exchanges.highlightOptions.fiat.subtitle"),
+    title: t("exchanges:highlightOptions.fiat.title"),
+    subtitle: t("exchanges:highlightOptions.fiat.subtitle"),
   },
   {
     key: "privacy",
     highlight: "privacy",
     icon: hatGlassesIcon,
-    title: t("exchanges.highlightOptions.privacy.title"),
-    subtitle: t("exchanges.highlightOptions.privacy.subtitle"),
+    title: t("exchanges:highlightOptions.privacy.title"),
+    subtitle: t("exchanges:highlightOptions.privacy.subtitle"),
   },
 ];
 ---
 
 <Layout
-  title={t("exchanges.pageTitle")}
-  description={t("exchanges.heroSubtitle")}
+  title={t("exchanges:pageTitle")}
+  description={t("exchanges:hero.subtitle")}
 >
   <TitleCard
-    title={t("exchanges.heroTitle")}
-    subtitle={t("exchanges.heroSubtitle")}
+    title={t("exchanges:hero.title")}
+    subtitle={t("exchanges:hero.subtitle")}
   />
 
   <PageContainer>
@@ -101,9 +101,9 @@ const highlightOptions = [
 
     <div class="exchanges-wrapper">
       <div class="exchanges-page-layout">
-        <aside class="filters-panel" aria-label={t("exchanges.sidebarTitle")}>
-          <h2 class="filters-title">{t("exchanges.sidebarTitle")}</h2>
-          <p class="filters-description">{t("exchanges.filtersDescription")}</p>
+        <aside class="filters-panel" aria-label={t("exchanges:sidebarTitle")}>
+          <h2 class="filters-title">{t("exchanges:sidebarTitle")}</h2>
+          <p class="filters-description">{t("exchanges:filtersDescription")}</p>
 
           <div class="highlight-options">
             {
@@ -131,7 +131,7 @@ const highlightOptions = [
                 for="filter-none"
                 class="clear-highlights-link clear-highlights-label"
               >
-                {t("exchanges.clearSelection")}
+                {t("exchanges:clearSelection")}
               </label>
             </div>
 
@@ -144,28 +144,28 @@ const highlightOptions = [
 
         <div class="main-content">
           <ExchangeTable
-            title={t("exchanges.sections.decentralized.title")}
-            description={t("exchanges.sections.decentralized.description")}
+            title={t("exchanges:sections.decentralized.title")}
+            description={t("exchanges:sections.decentralized.description")}
             exchanges={exchanges.decentralizedExchanges}
             hasKyc={false}
             t={t}
           />
 
           <ExchangeTable
-            title={t("exchanges.sections.aggregators.title")}
-            description={t("exchanges.sections.aggregators.description")}
+            title={t("exchanges:sections.aggregators.title")}
+            description={t("exchanges:sections.aggregators.description")}
             exchanges={[]}
             hasKyc={false}
-            disclaimerText={t("exchanges.sections.aggregators.disclaimer")}
+            disclaimerText={t("exchanges:sections.aggregators.disclaimer")}
             t={t}
           >
             <p style="color: var(--paragraph-subtitle);">
-              {t("exchanges.sections.aggregators.resourceIntro")}
+              {t("exchanges:sections.aggregators.resourceIntro")}
             </p>
             <ExternalResourceButton
               href="https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
               onionHref="http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
-              title={t("exchanges.sections.aggregators.resourceBtnTitle")}
+              title={t("exchanges:sections.aggregators.resourceBtnTitle")}
               subtitle="Community-curated exchange aggregator list"
               logo="/media/kycnotme.jpg"
               data-highlight="user-friendly crypto"
@@ -174,7 +174,7 @@ const highlightOptions = [
             <p
               style="color: var(--paragraph-subtitle);"
               set:html={safeMarkdown.parseInline(
-                t("exchanges.sections.aggregators.tip", {
+                t("exchanges:sections.aggregators.tip", {
                   communityDownloadsUrl: localizeHref(
                     locale,
                     "/downloads/community/#built-in-exchange",
@@ -185,8 +185,8 @@ const highlightOptions = [
           </ExchangeTable>
 
           <ExchangeTable
-            title={t("exchanges.sections.centralized.title")}
-            description={t("exchanges.sections.centralized.description")}
+            title={t("exchanges:sections.centralized.title")}
+            description={t("exchanges:sections.centralized.description")}
             exchanges={exchanges.centralizedExchanges}
             hasKyc={true}
             t={t}
@@ -194,8 +194,8 @@ const highlightOptions = [
         </div>
       </div>
 
-      <DisclaimerBar icon={shieldIcon} title={t("exchanges.disclaimerTitle")}>
-        {t("exchanges.disclaimer")}
+      <DisclaimerBar icon={shieldIcon} title={t("exchanges:disclaimerTitle")}>
+        {t("exchanges:disclaimer")}
       </DisclaimerBar>
 
       <div class="mobile-filter-container">
@@ -208,16 +208,16 @@ const highlightOptions = [
               rtl={dir == "rtl"}
             />
             <div style="display: flex; flex-direction: column;">
-              <span>{t("exchanges.sidebarTitle")}</span>
+              <span>{t("exchanges:sidebarTitle")}</span>
               <div class="mobile-filter-subtitle">
                 <span class="filter-text" data-filter="easiest"
-                  >{t("exchanges.highlightOptions.selectedText.easiest")}</span
+                  >{t("exchanges:highlightOptions.selectedText.easiest")}</span
                 >
                 <span class="filter-text" data-filter="fiat"
-                  >{t("exchanges.highlightOptions.selectedText.fiat")}</span
+                  >{t("exchanges:highlightOptions.selectedText.fiat")}</span
                 >
                 <span class="filter-text" data-filter="privacy"
-                  >{t("exchanges.highlightOptions.selectedText.privacy")}</span
+                  >{t("exchanges:highlightOptions.selectedText.privacy")}</span
                 >
               </div>
             </div>

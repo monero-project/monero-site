@@ -1,0 +1,35 @@
+{
+  "index": {
+    "pageTitle": "Blog",
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Read the latest news and updates about Monero."
+    }
+  },
+  "tagIndex": {
+    "pageTitle": "Tag Index",
+    "hero": {
+      "title": "Tag Index",
+      "subtitle": "Browse blog posts by tags."
+    }
+  },
+  "tags": {
+    "pageTitle": "Posts tagged with {{tag}}",
+    "hero": {
+      "title": "Posts tagged with \"{{tag}}\"",
+      "subtitle": "Browse all blog posts tagged with \"{{tag}}\"."
+    }
+  },
+  "post": {
+    "pageTitle": "Blog | {{title}}",
+    "recentPosts": "Recent Posts",
+    "and": "and"
+  },
+  "tabs": {
+    "allPosts": "All Posts",
+    "urgent": "Urgent",
+    "releases": "Releases",
+    "community": "Community",
+    "meetingLogs": "Meeting Logs"
+  }
+}

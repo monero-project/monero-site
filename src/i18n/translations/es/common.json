@@ -1,12 +1,15 @@
 {
+  "site": {
+    "titleSuffix": "Monero - criptomoneda segura, privada e imposible de rastrear."
+  },
   "header": {
     "nav": {
-      "getStarted": "Comenzar",
+      "getStarted": "Empezar",
       "downloads": "Descargas",
       "blog": "Blog",
       "community": "Comunidad",
       "resources": "Recursos",
-      "crowdfunding": "Financiamiento colectivo"
+      "crowdfunding": "Financiación colectiva"
     },
     "dropdowns": {
       "getStarted": {
@@ -14,9 +17,17 @@
           "label": "¿Qué es Monero?",
           "desc": "Todo lo que necesitas saber sobre Monero en pocas palabras."
         },
+        "buyMonero": {
+          "label": "Comprar Monero",
+          "desc": "Exchanges de criptomonedas que te permiten comprar o intercambiar Monero."
+        },
         "acceptMonero": {
           "label": "Aceptar Monero",
-          "desc": "Aprende a aceptar XMR como comerciante o individuo."
+          "desc": "Aprende cómo aceptar XMR como comerciante o individuo."
+        },
+        "spendMonero": {
+          "label": "Gastar Monero",
+          "desc": "Encuentra lugares y servicios que aceptan Monero como pago."
         },
         "contribute": {
           "label": "Contribuir",
@@ -24,37 +35,25 @@
         },
         "mining": {
           "label": "Minería",
-          "desc": "Aprende a minar Monero en tu computadora."
+          "desc": "Aprende cómo minar Monero en tu ordenador."
         },
         "faq": {
           "label": "Preguntas frecuentes",
           "desc": "Encuentra respuestas a preguntas comunes sobre Monero."
-        },
-        "buyMonero": {
-          "label": "Comprar Monero",
-          "desc": "Intercambios de criptomonedas que te permiten comprar o intercambiar Monero."
-        },
-        "spendMonero": {
-          "label": "Gastar Monero",
-          "desc": "Encuentra lugares y servicios que aceptan Monero como pago."
         }
       },
       "community": {
         "workgroups": {
           "label": "Grupos de trabajo",
-          "desc": "Todo lo que necesitas saber sobre Monero en pocas palabras."
+          "desc": "Colabora con los grupos de trabajo dedicados de Monero en desarrollo, investigación y esfuerzos comunitarios."
         },
         "sponsorships": {
-          "label": "Patrocinios",
-          "desc": "Descubre las formas de ayudar al proyecto Monero a llevar la privacidad a todos."
+          "label": "Patrocinadores",
+          "desc": "Lista de empresas que apoyan el Proyecto Monero."
         },
         "hangouts": {
           "label": "Encuentros",
-          "desc": "Aprende a aceptar XMR como comerciante o individuo con software de billetera."
-        },
-        "merchants": {
-          "label": "Comerciantes y exchanges",
-          "desc": "Todo lo que necesitas saber sobre Monero en pocas palabras."
+          "desc": "Únete a los encuentros y eventos de la comunidad Monero para conectar con entusiastas y desarrolladores."
         }
       },
       "resources": {
@@ -64,14 +63,14 @@
         },
         "roadmap": {
           "label": "Hoja de ruta",
-          "desc": "Mantente al día con los últimos planes y progreso de desarrollo de Monero."
+          "desc": "Mantente al día con los últimos planes de desarrollo y progreso de Monero."
         },
         "researchLab": {
           "label": "Laboratorio de investigación",
-          "desc": "Descubre las formas de ayudar al proyecto Monero a llevar la privacidad a todos."
+          "desc": "Explora las publicaciones e investigaciones del Laboratorio de Investigación de Monero."
         },
         "moneroDocs": {
-          "label": "Documentos de Monero",
+          "label": "Documentación de Monero",
           "desc": "Guías completas para usuarios y desarrolladores para usar Monero de manera efectiva y segura."
         },
         "moneroTools": {
@@ -80,7 +79,7 @@
         },
         "pressKit": {
           "label": "Kit de prensa",
-          "desc": "Contactos de prensa, logos, imágenes y otros recursos de medios."
+          "desc": "Contactos de prensa, logotipos, imágenes y otros recursos multimedia."
         }
       }
     }
@@ -90,15 +89,17 @@
       "resources": {
         "title": "Recursos",
         "links": {
+          "aboutMonero": "Sobre Monero",
+          "moneropedia": "Moneropedia",
           "knowledgeBase": "Base de conocimientos",
           "downloads": "Descargas",
-          "exchanges": "Intercambios",
+          "exchanges": "Exchanges",
           "merchants": "Comerciantes",
-          "moneroDocs": "Documentos de Monero"
+          "moneroDocs": "Documentación de Monero"
         }
       },
       "reachOut": {
-        "title": "Contacta",
+        "title": "Contáctanos",
         "links": {
           "workgroups": "Grupos de trabajo",
           "hangouts": "Encuentros",
@@ -117,9 +118,9 @@
         "title": "El Proyecto Monero",
         "links": {
           "openAlias": "Open Alias",
-          "moneroResearchLab": "Laboratorio de Investigación Monero (MRL)",
+          "moneroResearchLab": "Laboratorio de Investigación de Monero (MRL)",
           "pressKit": "Kit de prensa",
-          "communityCrowdfundingSystem": "Sistema de Financiamiento Colectivo Comunitario"
+          "communityCrowdfundingSystem": "Sistema de financiación colectiva de la comunidad"
         }
       },
       "legal": {
@@ -131,7 +132,7 @@
       }
     },
     "bottomLinks": {
-      "torOnionService": "Servicio Onion de Tor",
+      "torOnionService": "Servicio Tor Onion",
       "vulnerabilityResponse": "Respuesta a vulnerabilidades",
       "legal": "Legal",
       "sourceCode": "Código fuente",
@@ -140,8 +141,12 @@
     },
     "copyright": "© 2025 Monero. Todos los derechos reservados."
   },
+  "strings": {
+    "yes": "Sí",
+    "no": "No"
+  },
   "notFound": {
-    "pageTitle": "404 - Página no encontrada | Monero",
+    "pageTitle": "404",
     "pageDescription": "La página que buscas no existe.",
     "title": "Página no encontrada",
     "message": "Parece que esta página no existe, o quizás simplemente no quiere ser encontrada.",

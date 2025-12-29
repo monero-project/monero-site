@@ -51,21 +51,21 @@ const t = await createTInstance(locale);
 const dir = getDirection(locale);
 
 const tabs = [
-  { label: t("blog.tabs.allPosts"), link: "/blog" },
+  { label: t("blog:tabs.allPosts"), link: "/blog" },
   {
-    label: t("blog.tabs.urgent"),
+    label: t("blog:tabs.urgent"),
     link: "/blog/tags/urgent",
   },
   {
-    label: t("blog.tabs.releases"),
+    label: t("blog:tabs.releases"),
     link: "/blog/tags/releases",
   },
   {
-    label: t("blog.tabs.community"),
+    label: t("blog:tabs.community"),
     link: "/blog/tags/community",
   },
   {
-    label: t("blog.tabs.meetingLogs"),
+    label: t("blog:tabs.meetingLogs"),
     link: "/blog/tags/dev-diaries",
   },
 ];
@@ -81,16 +81,16 @@ let activeTab = tabs.findIndex((tab, index) => {
 const isMainTab = tabs.some(
   (tab) => pathname == localizeHref(locale, tab.link),
 );
-const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
+const titleKey = isMainTab ? "blog:index.heroTitle" : "blog:tags.heroTitle";
 ---
 
 <Layout
   title={isMainTab
-    ? t("blog.index.pageTitle")
-    : t("blog.tags.pageTitle", { tag: sanitizedTag })}
+    ? t("blog:index.pageTitle")
+    : t("blog:tags.pageTitle", { tag: sanitizedTag })}
   description={isMainTab
-    ? t("blog.index.heroSubtitle")
-    : t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
+    ? t("blog:index.heroSubtitle")
+    : t("blog:tags.heroSubtitle", { tag: sanitizedTag })}
 >
   <Fragment slot="head">
     <link
@@ -102,7 +102,7 @@ const titleKey = isMainTab ? "blog.index.heroTitle" : "blog.tags.heroTitle";
   </Fragment>
   <TitleCard
     title={t(titleKey, { tag: sanitizedTag })}
-    subtitle={t("blog.tags.heroSubtitle", { tag: sanitizedTag })}
+    subtitle={t("blog:tags.heroSubtitle", { tag: sanitizedTag })}
   />
   <div class="tabs-bar">
     <Tabs

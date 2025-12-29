@@ -57,11 +57,11 @@ const ICONS: Record<string, ImageMetadata> = {
 };
 
 const LABEL: Record<string, string> = {
-  windows: t("downloads.platforms.windows") || "Windows",
-  macos: t("downloads.platforms.macos") || "macOS",
-  linux: t("downloads.platforms.linux") || "Linux",
-  android: t("downloads.platforms.android") || "Android",
-  ios: t("downloads.platforms.ios") || "iOS",
+  windows: t("downloads:platforms.windows") || "Windows",
+  macos: t("downloads:platforms.macos") || "macOS",
+  linux: t("downloads:platforms.linux") || "Linux",
+  android: t("downloads:platforms.android") || "Android",
+  ios: t("downloads:platforms.ios") || "iOS",
 };
 
 const VALID = {
@@ -147,7 +147,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
         {desktop.length > 0 && (
           <div class="platform-row">
             <span class="platforms-label">
-              {t("downloads.community.desktopLabel")}:
+              {t("downloads:community.desktopLabel")}:
             </span>
             <ul class="list">
               {desktop.map((key) => (
@@ -161,7 +161,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
         {mobile.length > 0 && (
           <div class="platform-row">
             <span class="platforms-label">
-              {t("downloads.community.mobileLabel")}:
+              {t("downloads:community.mobileLabel")}:
             </span>
             <ul class="list">
               {mobile.map((key) => (
