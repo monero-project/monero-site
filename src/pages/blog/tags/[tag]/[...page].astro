@@ -82,7 +82,7 @@ let activeTab = tabs.findIndex((tab, index) => {
 const isMainTab = tabs.some(
   (tab) => pathname == localizeHref(locale, tab.link),
 );
-const titleKey = isMainTab ? "blog:index.heroTitle" : "blog:tags.heroTitle";
+const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
 ---
 
 <Layout
@@ -90,8 +90,8 @@ const titleKey = isMainTab ? "blog:index.heroTitle" : "blog:tags.heroTitle";
     ? t("blog:index.pageTitle")
     : t("blog:tags.pageTitle", { tag: sanitizedTag })}
   description={isMainTab
-    ? t("blog:index.heroSubtitle")
-    : t("blog:tags.heroSubtitle", { tag: sanitizedTag })}
+    ? t("blog:index.hero.subtitle")
+    : t("blog:tags.hero.subtitle", { tag: sanitizedTag })}
 >
   <Fragment slot="head">
     <link
@@ -103,7 +103,7 @@ const titleKey = isMainTab ? "blog:index.heroTitle" : "blog:tags.heroTitle";
   </Fragment>
   <TitleCard
     title={t(titleKey, { tag: sanitizedTag })}
-    subtitle={t("blog:tags.heroSubtitle", { tag: sanitizedTag })}
+    subtitle={t("blog:tags.hero.subtitle", { tag: sanitizedTag })}
   />
   <PageContainer>
     <div class="tabs-bar">
