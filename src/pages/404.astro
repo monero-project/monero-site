@@ -92,7 +92,10 @@ const t = await createTInstance(locale);
 
   @media (min-width: 600px) {
     .error-container {
-      min-height: unset;
+      min-height: calc(100vh - (var(--page-top-margin) * 5)); /* makes the footer be offscreen */
+    }
+    .error-content {
+      margin-bottom: 9rem; /* move the content up by the height of the transparent header */
     }
   }
 </style>
