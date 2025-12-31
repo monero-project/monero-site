@@ -237,6 +237,7 @@ meta_descr: meta_descr.roadmap
                         <h2>{% t roadmap.future %}</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
+                                    <li class="ongoing"><a href="https://www.reddit.com/r/Monero/comments/1pyzdpc/randomx_v2_update/">RandomX v2</a></li>
                                     <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD">{% t roadmap.ospead %}</a></li>
                                     <li class="ongoing">{% t roadmap.bp++ %}</li>
                                     <li class="ongoing"><a href="https://cuprate.org/">{% t roadmap.cuprate %}</a></li>
