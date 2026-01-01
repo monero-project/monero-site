@@ -6,21 +6,21 @@ import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 
-import bookTextIcon from "@/assets/icons/mask/bookText.avif";
-import scalesIcon from "@/assets/icons/mask/scales.avif";
+import copyrightIcon from "@/assets/icons/mask/copyright.avif";
+import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
 import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 
 const sections = [
   {
     id: "terms-of-use",
     title: "Terms of Use",
-    icon: scalesIcon,
+    icon: receiptTextIcon,
     subtitle: "Rules for using this website",
   },
   {
     id: "copyright",
     title: "Copyright",
-    icon: bookTextIcon,
+    icon: copyrightIcon,
     subtitle: "Content licensing information",
   },
   {
