@@ -168,6 +168,8 @@ merchants:
   cardonion: 'Dirección Onion:'
   visitbisq: Visita Bisq
   visitlocalmonero: Visita LocalMonero
+  visithaveno: Visita Haveno
+  visitretoswap: Visita Retoswap
   centrexchanges: Plataformas de intercambio centralizadas (CEXs) e Intercambiadores
   swappersp: Los intercambiadores permiten a los usuarios intercambiar XMR por otras
     criptomonedas.
