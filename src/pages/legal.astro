@@ -34,7 +34,12 @@ const sections = [
 const legalContent = await getCollection("legal");
 const renderedSections = await Promise.all(
   sections.map(async (section) => {
-    const entry = legalContent.find((e) => e.id === section.id)!;
+    const entry = legalContent.find((e) => e.id === section.id);
+    if (!entry) {
+      throw new Error(
+        `Legal section ${section.id} not found. Ensure the section ID matches the file name in the src/content/legal directory.`,
+      );
+    }
     const { Content } = await render(entry);
     return { ...section, Content };
   }),
