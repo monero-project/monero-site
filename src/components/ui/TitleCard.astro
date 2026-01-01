@@ -2,17 +2,32 @@
 export interface Props {
   title: string;
   subtitle?: string;
+  centered?: boolean;
 }
 
-const { title, subtitle = "" } = Astro.props;
+const { title, subtitle = "", centered = false } = Astro.props;
 ---
 
-<header>
+<header class:list={[{ centered }]}>
   <h1 class="title">{title}</h1>
   {subtitle && <p class="subtitle">{subtitle}</p>}
 </header>
 
 <style>
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header.centered {
+    align-items: center;
+    text-align: center;
+  }
+
+  header.centered .subtitle {
+    margin-inline: auto;
+  }
+
   .title {
     margin: 0;
     color: var(--monero-orange);
@@ -20,6 +35,7 @@ const { title, subtitle = "" } = Astro.props;
     line-height: var(--line-height-heading);
     font-size: var(--font-size-5xl);
   }
+
   .subtitle {
     max-width: 70ch;
     line-height: var(--line-height-body);

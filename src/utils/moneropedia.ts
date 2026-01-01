@@ -36,7 +36,7 @@ type EntriesCacheValue = {
 const entriesCache = new Map<string, EntriesCacheValue>();
 
 export function buildMoneropediaHref(entry: MoneropediaEntry): string {
-  const basePath = `/resources/moneropedia/${entry.fileName}/`;
+  const basePath = `/resources/moneropedia/${entry.fileName.toLowerCase()}/`;
   if (entry.locale === defaultLocale) {
     return basePath;
   }

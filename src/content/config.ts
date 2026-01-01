@@ -2,6 +2,16 @@ import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 import { idToDateSlug } from "@/utils/blog";
 
+const legal = defineCollection({
+  loader: glob({
+    pattern: "**/[^_]*.md",
+    base: "./src/content/legal",
+  }),
+  schema: z.object({
+    title: z.string(),
+  }),
+});
+
 const moneropedia = defineCollection({
   loader: glob({
     pattern: "**/[^_]*.md",
@@ -34,5 +44,6 @@ const blog = defineCollection({
 
 export const collections = {
   blog,
+  legal,
   moneropedia,
 };

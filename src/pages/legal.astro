@@ -1,9 +1,99 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import TOCContainer from "@/components/ui/TOCContainer.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
+
+import bookTextIcon from "@/assets/icons/mask/bookText.avif";
+import scalesIcon from "@/assets/icons/mask/scales.avif";
+import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
+
+const sections = [
+  {
+    id: "terms-of-use",
+    title: "Terms of Use",
+    icon: scalesIcon,
+    subtitle: "Rules for using this website",
+  },
+  {
+    id: "copyright",
+    title: "Copyright",
+    icon: bookTextIcon,
+    subtitle: "Content licensing information",
+  },
+  {
+    id: "privacy-policy",
+    title: "Privacy Policy",
+    icon: shieldCheckIcon,
+    subtitle: "How we handle your data",
+  },
+];
+
+const legalContent = await getCollection("legal");
+const renderedSections = await Promise.all(
+  sections.map(async (section) => {
+    const entry = legalContent.find((e) => e.id === section.id)!;
+    const { Content } = await render(entry);
+    return { ...section, Content };
+  }),
+);
 ---
 
-<Layout title="Legal" description="Last revised: June 22nd, 2017">
-  <TitleCard title="Legal" subtitle="Last revised: June 22nd, 2017" />
+<Layout
+  title="Legal"
+  description="Terms of Use, Copyright, and Privacy Policy for The Monero Project website."
+>
+  <TitleCard title="Legal" subtitle="Last revised: June 22nd, 2017" centered />
+
+  <PageContainer>
+    <TOCContainer sections={sections} ariaLabel="Legal sections" />
+
+    <div class="legal-content">
+      {
+        renderedSections.map((section, index) => (
+          <>
+            {index > 0 && <hr aria-hidden="true" />}
+            <PageSection title={section.title} anchorId={section.id} centered>
+              <div class="prose">
+                <section.Content />
+              </div>
+            </PageSection>
+          </>
+        ))
+      }
+    </div>
+  </PageContainer>
 </Layout>
+
+<style>
+  .legal-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 75ch;
+    margin-inline: auto;
+  }
+
+  .prose {
+    line-height: var(--line-height-body);
+  }
+
+  .prose :global(h3) {
+    font-size: var(--font-size-lg);
+    color: var(--heading-color);
+    margin: 2rem 0 0.75rem;
+  }
+
+  .prose :global(h3:first-child) {
+    margin-top: 0;
+  }
+
+  .prose :global(p) {
+    margin: 0 0 1rem;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 0.5rem;
+  }
+</style>

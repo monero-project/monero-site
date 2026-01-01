@@ -7,6 +7,7 @@ interface Props {
   headingLevel?: number;
   anchorId?: string;
   ariaLabel?: string;
+  centered?: boolean;
   class?: string;
 }
 
@@ -16,12 +17,13 @@ const {
   headingLevel = 2,
   anchorId,
   ariaLabel,
+  centered = false,
   class: className,
 } = Astro.props;
 
 const Heading = `h${headingLevel}` as HTMLTag;
 const hasHeader = Boolean(title || subtitle);
-const classes = [className || ""].filter(Boolean).join(" ");
+const classes = [className, centered && "centered"].filter(Boolean).join(" ");
 const ariaLabelledBy = ariaLabel ? undefined : anchorId;
 ---
 
@@ -46,12 +48,20 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
 </section>
 
 <style>
+  section.centered .page-section__header {
+    text-align: center;
+  }
+
+  section.centered .page-section__subtitle {
+    margin-inline: auto;
+  }
+
   .page-section__header {
     margin-bottom: 1.5rem;
   }
 
   .page-section__title {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     color: var(--heading-color);
     margin: 0;
     scroll-margin-top: 6.5rem;

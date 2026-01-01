@@ -44,10 +44,10 @@
       "additionalResources": "Additional Resources",
       "bounties": {
         "title": "Bounties",
-        "description": "Prefer working on clearly-scoped tasks with a reward? Numerous bounties are available for various Monero-related projects, ranging from bug bounties to feature implementations.",
+        "description": "Prefer working on clearly-scoped tasks with a reward? Numerous bounties are available for various Monero-related projects.",
         "links": "Links",
-        "browseMoneroBounties": "Browse Monero Bounties",
-        "securityDisclosures": "Security disclosures (HackerOne)"
+        "browseMoneroBounties": "Monero Bounties",
+        "securityDisclosures": "Vulnerability disclosures (HackerOne)"
       },
       "workgroups": {
         "title": "Workgroups",
