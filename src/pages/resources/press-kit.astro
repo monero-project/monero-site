@@ -1,9 +1,472 @@
 ---
+import Button from "@/components/ui/Button.astro";
+import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
+import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import TitleCard from "@/components/ui/TitleCard.astro";
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import bookTextIcon from "@/assets/icons/mask/bookText.avif";
+import componentIcon from "@/assets/icons/mask/component.avif";
+import usersIcon from "@/assets/icons/mask/users.avif";
+
+import { getLocale, localizeHref } from "@/i18n/utils";
+const locale = getLocale(Astro.url);
+
+const sections = [
+  {
+    id: "brand-assets",
+    icon: componentIcon,
+    title: "Brand Assets",
+    subtitle: "Logos and symbols",
+  },
+  {
+    id: "press-materials",
+    icon: bookTextIcon,
+    title: "Press Materials",
+    subtitle: "Documentation and resources",
+  },
+  {
+    id: "contacts",
+    icon: usersIcon,
+    title: "Contacts",
+    subtitle: "Reach the Monero community",
+  },
+];
+
+interface AssetVariant {
+  label: string;
+  sizes: { label: string; url: string }[];
+}
+
+interface Asset {
+  name: string;
+  description: string;
+  preview: string;
+  variants: AssetVariant[];
+  vectorUrl?: string;
+}
+
+const brandAssets: Asset[] = [
+  {
+    name: "Monero Symbol",
+    description: "The Monero 'M' symbol for use in icons and compact spaces.",
+    preview: "/media/press-kit/symbols/monero-symbol-480.png",
+    variants: [
+      {
+        label: "Transparent",
+        sizes: [
+          {
+            label: "Small",
+            url: "/media/press-kit/symbols/monero-symbol-480.png",
+          },
+          {
+            label: "Medium",
+            url: "/media/press-kit/symbols/monero-symbol-800.png",
+          },
+          {
+            label: "Large",
+            url: "/media/press-kit/symbols/monero-symbol-1280.png",
+          },
+        ],
+      },
+      {
+        label: "White Background",
+        sizes: [
+          {
+            label: "Small",
+            url: "/media/press-kit/symbols/monero-symbol-on-white-480.png",
+          },
+          {
+            label: "Medium",
+            url: "/media/press-kit/symbols/monero-symbol-on-white-800.png",
+          },
+          {
+            label: "Large",
+            url: "/media/press-kit/symbols/monero-symbol-on-white-1280.png",
+          },
+        ],
+      },
+    ],
+    vectorUrl: "/media/press-kit/symbols/monero-symbol.ai",
+  },
+  {
+    name: "Monero Logo",
+    description: "Full Monero logo with wordmark for general use.",
+    preview: "/media/press-kit/logos/monero-logo-480.png",
+    variants: [
+      {
+        label: "Transparent",
+        sizes: [
+          {
+            label: "Small",
+            url: "/media/press-kit/logos/monero-logo-480.png",
+          },
+          {
+            label: "Medium",
+            url: "/media/press-kit/logos/monero-logo-800.png",
+          },
+          {
+            label: "Large",
+            url: "/media/press-kit/logos/monero-logo-1280.png",
+          },
+        ],
+      },
+      {
+        label: "White Background",
+        sizes: [
+          {
+            label: "Small",
+            url: "/media/press-kit/logos/monero-logo-on-white-480.png",
+          },
+          {
+            label: "Medium",
+            url: "/media/press-kit/logos/monero-logo-on-white-800.png",
+          },
+          {
+            label: "Large",
+            url: "/media/press-kit/logos/monero-logo-on-white-1280.png",
+          },
+        ],
+      },
+    ],
+    vectorUrl: "/media/press-kit/logos/monero-logo.ai",
+  },
+];
+
+interface PressDoc {
+  title: string;
+  description: string;
+  url: string;
+}
+
+const pressDocuments: PressDoc[] = [
+  {
+    title: "Quick-Facts Sheet",
+    description:
+      "Everything about Monero: history, key differentiating factors, technical fundamentals, and features in development.",
+    url: "https://www.getmonero.org/press-kit/Monero_QuickFacts_June_2024.pdf",
+  },
+  {
+    title: "Monero Timeline",
+    description: "A timeline of key developments in the Monero history.",
+    url: "https://resilience365.com/monero-timeline/",
+  },
+];
+
+interface MarketingResource {
+  title: string;
+  description: string;
+  url: string;
+}
+
+const marketingResources: MarketingResource[] = [
+  {
+    title: "Don't Buy Monero Sticker",
+    description:
+      "Spread Monero everywhere with this sticker. Available in multiple languages and formats.",
+    url: "https://github.com/monero-ecosystem/dont-buy-monero-sticker",
+  },
+  {
+    title: "Promotional Graphics",
+    description:
+      "Badges and stickers for websites created by TheMonera for merchants and enthusiasts.",
+    url: "https://themonera.art/",
+  },
+  {
+    title: "Monero Graphics Collection",
+    description:
+      "Posters, illustrations, wallpapers, and stickers that can be used by everyone.",
+    url: "https:/monero.graphics/",
+  },
+];
 ---
 
-<Layout title="Press Kit" description="Press contacts, symbols and logos.">
-  <TitleCard title="Press Kit" subtitle="Press contacts, symbols and logos." />
+<Layout
+  title="Press Kit"
+  description="Press contacts, brand assets, and media resources for Monero."
+>
+  <TitleCard
+    title="Press Kit"
+    subtitle="Press contacts, brand assets, and media resources for journalists and content creators."
+  />
+
+  <PageContainer>
+    <TOCContainer sections={sections} ariaLabel="Press kit sections" />
+
+    <div class="press-content">
+      <PageSection title="Brand Assets" anchorId="brand-assets">
+        <p class="section-intro">
+          Download official Monero logos and symbols. White background options
+          have a white background under the Monero symbol only.
+        </p>
+
+        <div class="assets-grid">
+          {
+            brandAssets.map((asset) => (
+              <div class="asset-card">
+                <div class="asset-preview">
+                  <img src={asset.preview} alt={asset.name} />
+                </div>
+
+                <div class="asset-header">
+                  <h3>{asset.name}</h3>
+                  <p>{asset.description}</p>
+                </div>
+
+                <div class="asset-variants">
+                  {asset.variants.map((variant) => (
+                    <div class="variant-group">
+                      <span class="variant-label">{variant.label}</span>
+                      <div class="size-links">
+                        {variant.sizes.map((size) => (
+                          <a
+                            href={size.url}
+                            class="size-link"
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {size.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {asset.vectorUrl && (
+                  <div class="vector-download">
+                    <Button as="a" href={asset.vectorUrl} variant="secondary">
+                      Download Vector (.ai)
+                    </Button>
+                  </div>
+                )}
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="download-all">
+          <Button
+            href="https://www.getmonero.org/press-kit/monero-press-kit.zip"
+            variant="primary"
+          >
+            Download All Assets (.zip)
+          </Button>
+        </div>
+      </PageSection>
+
+      <hr aria-hidden="true" />
+
+      <PageSection title="Press Materials" anchorId="press-materials">
+        <PageSectionColumn columns={2}>
+          <PageSectionColumn title="Press Documentation">
+            <div class="resource-list">
+              {
+                pressDocuments.map((doc) => (
+                  <ExternalResourceButton
+                    href={doc.url}
+                    title={doc.title}
+                    subtitle={doc.description}
+                  />
+                ))
+              }
+            </div>
+          </PageSectionColumn>
+
+          <PageSectionColumn title="Marketing Materials">
+            <div class="resource-list">
+              {
+                marketingResources.map((resource) => (
+                  <ExternalResourceButton
+                    href={resource.url}
+                    title={resource.title}
+                    subtitle={resource.description}
+                  />
+                ))
+              }
+            </div>
+          </PageSectionColumn>
+        </PageSectionColumn>
+      </PageSection>
+
+      <hr aria-hidden="true" />
+
+      <PageSection title="Contacts" anchorId="contacts">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Press Inquiries</h3>
+            <p>For media and press related questions:</p>
+            <a href="mailto:press@getmonero.org" class="contact-link">
+              press@getmonero.org
+            </a>
+          </div>
+          <div class="contact-card">
+            <h3>Workgroups</h3>
+            <p>Contact specific Monero workgroups:</p>
+            <a
+              href={localizeHref(locale, "/community/workgroups")}
+              class="contact-link"
+            >
+              View Workgroups
+              <MaskIcon src={arrowRightIcon} />
+            </a>
+          </div>
+          <div class="contact-card">
+            <h3>Community</h3>
+            <p>Reach the many subcommunities:</p>
+            <a
+              href={localizeHref(locale, "/community/hangouts")}
+              class="contact-link"
+            >
+              Community Hangouts
+              <MaskIcon src={arrowRightIcon} />
+            </a>
+          </div>
+        </div>
+      </PageSection>
+    </div>
+  </PageContainer>
 </Layout>
+
+<style>
+  .press-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    gap: 1rem;
+  }
+
+  .contact-card {
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .contact-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .contact-card p {
+    margin: 0 0 0.75rem;
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-sm);
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .section-intro {
+    color: var(--paragraph-subtitle);
+    margin: 0 0 1.5rem;
+    max-width: 70ch;
+  }
+
+  .download-all {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .assets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .asset-card {
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .asset-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    background: repeating-conic-gradient(#e4e1e9 0% 25%, #f9f7fc 0% 50%) 50% /
+      16px 16px;
+    border-radius: 0.5rem;
+  }
+
+  .asset-preview img {
+    max-width: 100%;
+    max-height: 6rem;
+    object-fit: contain;
+  }
+
+  .asset-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .asset-header h3 {
+    margin: 0 0 0.25rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .asset-header p {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-sm);
+  }
+
+  .asset-variants {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .variant-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .variant-label {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-main);
+    font-weight: var(--font-weight-medium);
+    min-width: 10rem;
+  }
+
+  .size-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .size-link {
+    font-size: var(--font-size-sm);
+  }
+
+  .vector-download {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+</style>
