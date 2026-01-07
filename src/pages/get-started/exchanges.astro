@@ -1,5 +1,7 @@
 ---
+import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import {
   createTInstance,
@@ -143,22 +145,28 @@ const highlightOptions = [
         </aside>
 
         <div class="main-content">
-          <ExchangeTable
+          <PageSection
             title={t("exchanges:sections.decentralized.title")}
-            description={t("exchanges:sections.decentralized.description")}
-            exchanges={exchanges.decentralizedExchanges}
-            hasKyc={false}
-            t={t}
-          />
-
-          <ExchangeTable
-            title={t("exchanges:sections.aggregators.title")}
-            description={t("exchanges:sections.aggregators.description")}
-            exchanges={[]}
-            hasKyc={false}
-            disclaimerText={t("exchanges:sections.aggregators.disclaimer")}
-            t={t}
+            subtitle={t("exchanges:sections.decentralized.description")}
+            anchorId="decentralized"
           >
+            <ExchangeTable
+              exchanges={exchanges.decentralizedExchanges}
+              hasKyc={false}
+              t={t}
+            />
+          </PageSection>
+
+          <hr aria-hidden="true" />
+
+          <PageSection
+            title={t("exchanges:sections.aggregators.title")}
+            subtitle={t("exchanges:sections.aggregators.description")}
+            anchorId="aggregators"
+          >
+            <DisclaimerNote
+              text={t("exchanges:sections.aggregators.disclaimer")}
+            />
             <p style="color: var(--paragraph-subtitle);">
               {t("exchanges:sections.aggregators.resourceIntro")}
             </p>
@@ -182,15 +190,21 @@ const highlightOptions = [
                 }),
               )}
             />
-          </ExchangeTable>
+          </PageSection>
 
-          <ExchangeTable
+          <hr aria-hidden="true" />
+
+          <PageSection
             title={t("exchanges:sections.centralized.title")}
-            description={t("exchanges:sections.centralized.description")}
-            exchanges={exchanges.centralizedExchanges}
-            hasKyc={true}
-            t={t}
-          />
+            subtitle={t("exchanges:sections.centralized.description")}
+            anchorId="centralized"
+          >
+            <ExchangeTable
+              exchanges={exchanges.centralizedExchanges}
+              hasKyc={true}
+              t={t}
+            />
+          </PageSection>
         </div>
       </div>
 
