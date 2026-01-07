@@ -1,0 +1,180 @@
+---
+import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  currency: string;
+  address: string;
+  qrCode: string;
+  viewAddress?: string;
+  viewKey?: string;
+  viewOnlyLabel?: string;
+  primaryAddressLabel?: string;
+  viewKeyLabel?: string;
+}
+
+const {
+  currency,
+  address,
+  qrCode,
+  viewAddress,
+  viewKey,
+  viewOnlyLabel = "View-only wallet details",
+  primaryAddressLabel = "Primary address",
+  viewKeyLabel = "View Key",
+} = Astro.props;
+---
+
+<div class="donation-address">
+  <div class="address-header">
+    <h4 class="currency-name">{currency}</h4>
+  </div>
+
+  <div class="address-content">
+    <Image
+      class="qr-code"
+      src={qrCode}
+      alt={`QR code for ${currency} donation`}
+      width={200}
+      height={200}
+    />
+    <div class="address-details">
+      <code class="address">{address}</code>
+
+      {
+        viewAddress && viewKey && (
+          <details class="view-only-details">
+            <summary>
+              <span class="icon">
+                <MaskIcon src={chevronDownIcon} size="0.875em" />
+              </span>
+              <span>{viewOnlyLabel}</span>
+            </summary>
+            <div class="view-only-content">
+              <p>
+                <strong>{primaryAddressLabel}</strong>
+              </p>
+              <code>{viewAddress}</code>
+              <p>
+                <strong>{viewKeyLabel}</strong>
+              </p>
+              <code>{viewKey}</code>
+            </div>
+          </details>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .donation-address {
+    background: var(--card-hover-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1rem;
+  }
+
+  .currency-name {
+    margin: 0 0 0.75rem;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+
+  .address-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .qr-code {
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+  }
+
+  .address-details {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .address {
+    flex: 1;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    font-family: monospace;
+    font-size: var(--font-size-sm);
+    word-break: break-all;
+    line-height: 1.4;
+  }
+
+  .view-only-details {
+    margin-top: 0.75rem;
+    border: 1px dashed var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  .view-only-details summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-weight: var(--font-weight-semibold);
+    color: var(--paragraph-subtitle);
+  }
+
+  .view-only-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .view-only-details .icon {
+    display: inline-flex;
+    transition: transform 0.2s ease;
+  }
+
+  .view-only-details[open] .icon {
+    transform: rotate(180deg);
+  }
+
+  .view-only-content {
+    margin-top: 0.75rem;
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .view-only-content p {
+    margin: 0;
+  }
+
+  .view-only-content code {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    font-family: monospace;
+    font-size: var(--font-size-sm);
+    word-break: break-all;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 600px) {
+    .address-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .address-details {
+      width: 100%;
+    }
+  }
+</style>
