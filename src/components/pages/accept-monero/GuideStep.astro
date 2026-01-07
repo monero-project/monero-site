@@ -1,0 +1,191 @@
+---
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+export interface Props {
+  step: number;
+  title: string;
+  icon?: ImageMetadata;
+  image?: ImageMetadata;
+  imageAlt?: string;
+  reverse?: boolean;
+}
+
+const {
+  step,
+  title,
+  icon,
+  image,
+  imageAlt = "",
+  reverse = false,
+} = Astro.props;
+---
+
+<section class:list={["guide-step", { reverse }]}>
+  <div class="step-content">
+    <span class="step-label">Step {step}</span>
+    <h2 class="step-title">{title}</h2>
+    <div class="step-body">
+      <slot />
+    </div>
+  </div>
+  <div class="step-image">
+    {
+      image ? (
+        <Image src={image} alt={imageAlt} />
+      ) : (
+        <div class="step-image-placeholder">
+          {icon && (
+            <div class="placeholder-icon">
+              <MaskIcon src={icon} size="4rem" />
+            </div>
+          )}
+          <div class="placeholder-number">
+            {step.toString().padStart(2, "0")}
+          </div>
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .guide-step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .guide-step.reverse .step-content {
+    order: 2;
+  }
+
+  .guide-step.reverse .step-image {
+    order: 1;
+  }
+
+  .step-label {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--monero-orange);
+    margin-bottom: 0.5rem;
+  }
+
+  .step-title {
+    margin-block: 0 1.25rem;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    line-height: 1.2;
+  }
+
+  .step-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .step-body :global(p) {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    max-width: 55ch;
+  }
+
+  .step-body :global(ol),
+  .step-body :global(ul) {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--paragraph-subtitle);
+    line-height: 1.8;
+  }
+
+  .step-body :global(li) {
+    margin-bottom: 0.375rem;
+    padding-left: 0.375rem;
+  }
+
+  .step-body :global(li::marker) {
+    color: var(--monero-orange);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .step-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--border-color);
+  }
+
+  .step-image :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .step-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(
+      135deg,
+      var(--card-color) 0%,
+      var(--bg-color) 100%
+    );
+  }
+
+  .placeholder-icon {
+    color: var(--monero-orange);
+    opacity: 0.8;
+  }
+
+  .placeholder-number {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    font-size: 5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--border-color);
+    line-height: 1;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 900px) {
+    .guide-step {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .guide-step.reverse .step-content,
+    .guide-step.reverse .step-image {
+      order: unset;
+    }
+
+    .step-image {
+      aspect-ratio: 16 / 9;
+    }
+
+    .step-title {
+      font-size: var(--font-size-xl);
+    }
+
+    .placeholder-number {
+      font-size: 3rem;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+</style>

@@ -8,12 +8,17 @@ export interface Props {
   content?: string;
   variant?: "default" | "card";
   name?: string;
+  open?: boolean;
 }
 
-const { title, content, variant = "default", name } = Astro.props;
+const { title, content, variant = "default", name, open = false } = Astro.props;
 ---
 
-<details class={`accordion-item accordion-item--${variant}`} name={name}>
+<details
+  class={`accordion-item accordion-item--${variant}`}
+  name={name}
+  open={open}
+>
   <summary class="accordion-header">
     <span class="accordion-title">{title}</span>
     <div class="accordion-icon">

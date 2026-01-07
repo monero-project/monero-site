@@ -1,13 +1,195 @@
 ---
+import AccordionItem from "@/components/ui/AccordionItem.astro";
+import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
+
+import GuideStep from "@/components/pages/accept-monero/GuideStep.astro";
+import TipBox from "@/components/pages/accept-monero/TipBox.astro";
+
+import appWindowIcon from "@/assets/icons/mask/app-window.avif";
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import handCoinsIcon from "@/assets/icons/mask/handCoins.avif";
+import usersIcon from "@/assets/icons/mask/users.avif";
 ---
 
 <Layout
   title="Accept Monero"
-  description="Ways to accept Monero as payment for goods and services."
+  description="Learn how to accept Monero payments for your business."
 >
-  <TitleCard title="Accept Monero" />
-  <PageContainer />
+  <TitleCard
+    title="Accept Monero"
+    subtitle="Start accepting private, low-fee payments for your business."
+  />
+
+  <PageContainer>
+    <div class="guide-content">
+      <GuideStep step={1} title="Choose Your Setup" icon={appWindowIcon}>
+        <p>How you accept Monero depends on your needs:</p>
+
+        <div class="method-accordion">
+          <AccordionItem title="Wallet" variant="card" name="method" open>
+            <p>
+              Best for occasional payments or getting started. Generate a QR
+              code with the amount, customer scans and pays. No fees, no setup.
+            </p>
+            <a href="/downloads/#wallets" class="inline-link">
+              View Wallets
+              <MaskIcon src={arrowRightIcon} size="1em" />
+            </a>
+          </AccordionItem>
+
+          <AccordionItem title="Point-of-Sale App" variant="card" name="method">
+            <p>
+              Dedicated apps for regular in-person use. Get fiat price
+              conversion, invoice tracking, and configurable confirmation
+              settings.
+            </p>
+            <div class="service-buttons">
+              <ExternalResourceButton
+                href="https://bitrequest.io/"
+                title="BitRequest"
+                subtitle="Multi-coin point-of-sale app"
+              />
+              <ExternalResourceButton
+                href="https://docs.btcpayserver.org/Apps/#point-of-sale-app"
+                title="BTCPay Server POS"
+                subtitle="Point-of-sale app for BTCPay Server"
+              />
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Payment Processor" variant="card" name="method">
+            <p>
+              Third-party services that handle payments for you. Quick setup,
+              plugins for most platforms, small fees (~0.5-1%). Some offer
+              auto-conversion to fiat.
+            </p>
+            <div class="service-buttons">
+              <ExternalResourceButton
+                href="https://nowpayments.io/"
+                title="NOWPayments"
+                subtitle="0.5% fee, auto-convert to fiat, 300+ coins"
+              />
+              <ExternalResourceButton
+                href="https://mixpay.me/"
+                title="MixPay"
+                subtitle="Accept any crypto, settle in XMR or fiat"
+              />
+              <ExternalResourceButton
+                href="https://www.coinpayments.net/"
+                title="CoinPayments"
+                subtitle="0.5% fee, recurring payments, marketplace tools"
+              />
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Self-Hosted" variant="card" name="method">
+            <p>
+              Run your own payment server for complete control. Zero fees, full
+              privacy, invoice management, and works for both online and
+              in-person. Requires a server and technical setup.
+            </p>
+            <div class="service-buttons">
+              <ExternalResourceButton
+                href="https://btcpayserver.org/"
+                title="BTCPay Server"
+                subtitle="Open-source, multi-coin, includes POS app"
+              />
+              <ExternalResourceButton
+                href="https://bitcart.ai/"
+                title="Bitcart"
+                subtitle="Open-source, multi-coin payment processor"
+              />
+              <ExternalResourceButton
+                href="https://github.com/moneropay/moneropay"
+                title="MoneroPay"
+                subtitle="Lightweight, Monero-only, easy to deploy"
+              />
+            </div>
+          </AccordionItem>
+        </div>
+      </GuideStep>
+
+      <hr />
+
+      <GuideStep
+        step={2}
+        title="How Payments Work"
+        icon={handCoinsIcon}
+        reverse
+      >
+        <p>
+          A customer scans your QR code or copies your address and sends Monero
+          from their wallet. You'll see the payment appear in your wallet or
+          dashboard within seconds.
+        </p>
+        <p>
+          <strong>Confirmations:</strong> Transactions are typically confirmed in
+          ~2 minutes. For small purchases, most merchants hand over goods immediately.
+          For larger amounts, waiting 1-2 confirmations adds security.
+        </p>
+        <TipBox>
+          If you're using a wallet, your seed phrase is the only way to recover
+          funds. Write it down and store it securely offline - never share it
+          with anyone.
+        </TipBox>
+      </GuideStep>
+
+      <hr />
+
+      <GuideStep step={3} title="Get Listed" icon={usersIcon}>
+        <p>
+          Let the Monero community know you accept payments. Getting listed in
+          merchant directories helps customers find your business.
+        </p>
+        <a href="/get-started/merchants" class="inline-link">
+          View Merchant Directories
+          <MaskIcon src={arrowRightIcon} size="1em" />
+        </a>
+      </GuideStep>
+    </div>
+  </PageContainer>
 </Layout>
+
+<style>
+  .guide-content :global(.guide-step:first-child) {
+    align-items: start;
+  }
+
+  .method-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .method-accordion :global(.accordion-content > p) {
+    margin-block: 0 0.75rem;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+  }
+
+  .service-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .service-buttons :global(.external-resource-button) {
+    border: 1px solid var(--border-color);
+  }
+
+  .inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375em;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .inline-link:hover {
+    text-decoration: underline;
+  }
+</style>
