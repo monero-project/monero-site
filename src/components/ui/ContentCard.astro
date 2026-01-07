@@ -1,25 +1,44 @@
 ---
 import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 import MaskIcon from "./MaskIcon.astro";
 
 export interface Props {
   title: string;
   icon?: ImageMetadata;
   subtitle?: string;
+  image?: ImageMetadata;
+  imageAlt?: string;
   class?: string;
 }
 
-const { title, icon, subtitle, class: className, ...rest } = Astro.props;
+const {
+  title,
+  icon,
+  subtitle,
+  image,
+  imageAlt = "",
+  class: className,
+  ...rest
+} = Astro.props;
 const hasBottom = Astro.slots.has("bottom");
 ---
 
 <article class:list={["contentCard", className]} {...rest}>
+  {
+    image && (
+      <div class="contentCardImage">
+        <Image src={image} alt={imageAlt} />
+      </div>
+    )
+  }
+
   <header class="contentCardHeader">
     <div class="titleRow">
       {
         icon && (
           <div class="cardIcon">
-            <MaskIcon src={icon} size="1.5em" />
+            <MaskIcon src={icon} size="1.25em" />
           </div>
         )
       }
@@ -32,25 +51,40 @@ const hasBottom = Astro.slots.has("bottom");
 
   <div class="contentCardBody">
     <slot />
-    {
-      hasBottom && (
-        <footer class="contentCardBottom">
-          <slot name="bottom" />
-        </footer>
-      )
-    }
   </div>
+
+  {
+    hasBottom && (
+      <footer class="contentCardBottom">
+        <slot name="bottom" />
+      </footer>
+    )
+  }
 </article>
 
 <style>
   .contentCard {
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     padding: 1.25rem;
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
+  }
+
+  .contentCardImage {
+    margin: -1.25rem -1.25rem 1.25rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+  }
+
+  .contentCardImage :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .titleRow {
@@ -61,8 +95,8 @@ const hasBottom = Astro.slots.has("bottom");
   }
 
   .cardIcon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.75rem;
+    height: 1.75rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -78,69 +112,60 @@ const hasBottom = Astro.slots.has("bottom");
 
   .contentCardTitle {
     margin: 0;
-    color: var(--paragraph-main);
-    font-weight: var(--font-weight-semibold);
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    line-height: 1;
+    color: var(--heading-color);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
     font-size: var(--font-size-lg);
-    overflow: hidden;
   }
 
   .contentCardSubtitle {
     margin: 0.25rem 0 0;
     color: var(--paragraph-subtitle);
-    line-height: 1.2;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: var(--font-size-sm);
+    line-height: 1.3;
   }
 
   .contentCardBody {
     flex: 1;
     margin-top: 1rem;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.75rem;
     min-height: 0;
   }
 
   .contentCardBody :global(p) {
     margin: 0;
-    max-width: 75ch;
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    max-width: 65ch;
+  }
+
+  .contentCardBody :global(ul) {
+    margin: 0;
+    padding-inline-start: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .contentCardBody :global(li::marker) {
+    color: var(--monero-orange);
   }
 
   .contentCardBottom {
     margin-top: auto;
-  }
-
-  .contentCardBottom :global(span.title) {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-  }
-
-  .contentCardBottom :global(ul) {
-    margin: 0;
-    padding-inline-start: 0;
-    list-style: none;
-    display: grid;
-    gap: 0.4rem;
+    padding-top: 1rem;
   }
 
   .contentCardBottom :global(a) {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
     color: var(--monero-orange);
     text-decoration: none;
-    width: fit-content;
-  }
-
-  .contentCardBottom :global(a:hover) {
-    text-decoration: underline;
   }
 </style>

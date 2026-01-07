@@ -7,10 +7,10 @@ import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
+import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
-import { Image } from "astro:assets";
 
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
@@ -18,8 +18,9 @@ import pickaxeIcon from "@/assets/icons/mask/pickaxe.avif";
 import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import terminalIcon from "@/assets/icons/mask/terminal.avif";
 
+import guiWindow from "@/assets/images/gui.avif";
 import gupaxWindow from "@/assets/images/gupax-window.webp";
-import xmrigWindow from "@/assets/images/xmrig.png";
+import xmrigWindow from "@/assets/images/xmrig-window.png";
 import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
 const locale = getLocale(Astro.url);
@@ -53,28 +54,16 @@ const faqItems = faqToItems(
   />
   <PageContainer>
     <PageSection ariaLabel="Mining options">
-      <div class="grid">
+      <div class="card-grid">
         <ContentCard
-          class="cardGupax"
           title={t("mining:gupax.title")}
           subtitle={t("mining:gupax.subtitle")}
           icon={appWindowIcon}
+          image={gupaxWindow}
+          imageAlt="Gupax window showing P2Pool and XMRig status"
         >
-          <div class="frame">
-            <Image
-              class="image"
-              src={gupaxWindow}
-              alt="Gupax window showing P2Pool and XMRig status"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-
-          <p class="lead">
-            {t("mining:gupax.lead")}
-          </p>
-
-          <ul class="bullets">
+          <p>{t("mining:gupax.lead")}</p>
+          <ul>
             {
               (
                 t("mining:gupax.bullets", { returnObjects: true }) as string[]
@@ -87,98 +76,73 @@ const faqItems = faqToItems(
             href="https://gupax.io/"
             target="_blank"
             rel="noopener"
-            class="cta"
           >
             {t("mining:gupax.cta")}
             <MaskIcon src={externalLinkIcon} size="1em" />
           </a>
         </ContentCard>
 
-        <div class="rightCol" aria-label="Right column">
-          <ContentCard
-            title={t("mining:xmrig.title")}
-            subtitle={t("mining:xmrig.subtitle")}
-            icon={terminalIcon}
+        <ContentCard
+          title={t("mining:xmrig.title")}
+          subtitle={t("mining:xmrig.subtitle")}
+          icon={terminalIcon}
+          image={xmrigWindow}
+          imageAlt="XMRig terminal window showing mining status"
+        >
+          <p>{t("mining:xmrig.lead")}</p>
+          <ul>
+            {
+              (
+                t("mining:xmrig.bullets", { returnObjects: true }) as string[]
+              ).map((bullet: string) => <li>{bullet}</li>)
+            }
+          </ul>
+
+          <a
+            slot="bottom"
+            href="https://github.com/xmrig/xmrig"
+            target="_blank"
+            rel="noopener"
           >
-            <div
-              aria-label="XMRig terminal window showing mining status"
-              style="margin: 0 auto;"
-            >
-              <Image
-                src={xmrigWindow}
-                alt="XMRig terminal window showing mining status"
-                loading="lazy"
-                decoding="async"
-                height={100}
-              />
-            </div>
+            {t("mining:xmrig.cta")}
+            <MaskIcon src={externalLinkIcon} size="1em" />
+          </a>
+        </ContentCard>
 
-            <p class="lead">
-              {t("mining:xmrig.lead")}
-            </p>
+        <ContentCard
+          title={t("mining:solo.title")}
+          subtitle={t("mining:solo.subtitle")}
+          icon={pickaxeIcon}
+          image={guiWindow}
+          imageAlt="Monero GUI wallet mining tab"
+        >
+          <p>{t("mining:solo.lead")}</p>
+          <ul>
+            {
+              (
+                t("mining:solo.bullets", { returnObjects: true }) as string[]
+              ).map((bullet: string) => <li>{bullet}</li>)
+            }
+          </ul>
 
-            <ul class="bullets">
-              {
-                (
-                  t("mining:xmrig.bullets", { returnObjects: true }) as string[]
-                ).map((bullet: string) => <li>{bullet}</li>)
-              }
-            </ul>
-
-            <a
-              slot="bottom"
-              href="https://github.com/xmrig/xmrig"
-              target="_blank"
-              rel="noopener"
-              class="cta"
-            >
-              {t("mining:xmrig.cta")}
-              <MaskIcon src={externalLinkIcon} size="1em" />
-            </a>
-          </ContentCard>
-
-          <ContentCard
-            class="cardSolo"
-            title={t("mining:solo.title")}
-            subtitle={t("mining:solo.subtitle")}
-            icon={pickaxeIcon}
+          <a
+            slot="bottom"
+            href={localizeHref(locale, "/resources/user-guides/solo_mine_GUI")}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <p class="lead">
-              {t("mining:solo.lead")}
-            </p>
-
-            <ul class="bullets">
-              {
-                (
-                  t("mining:solo.bullets", { returnObjects: true }) as string[]
-                ).map((bullet: string) => <li>{bullet}</li>)
-              }
-            </ul>
-
-            <a
-              slot="bottom"
-              href={localizeHref(
-                locale,
-                "/resources/user-guides/solo_mine_GUI",
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="cta"
-            >
-              {t("mining:solo.cta")}
-              <MaskIcon src={externalLinkIcon} size="1em" />
-            </a>
-          </ContentCard>
-        </div>
+            {t("mining:solo.cta")}
+            <MaskIcon src={externalLinkIcon} size="1em" />
+          </a>
+        </ContentCard>
       </div>
     </PageSection>
 
     <hr aria-hidden="true" />
 
     <PageSection title={t("mining:resources.title")}>
-      <div class="resourceGrid">
-        <div class="resourceGroup">
-          <h3 class="resourceLabel">{t("mining:resources.guides.title")}</h3>
+      <PageSectionColumn columns={3} minColumnWidth="16rem">
+        <PageSectionColumn title={t("mining:resources.guides.title")}>
           <ul class="resourceList">
             <li>
               <ExternalResourceButton
@@ -200,10 +164,9 @@ const faqItems = faqToItems(
               />
             </li>
           </ul>
-        </div>
+        </PageSectionColumn>
 
-        <div class="resourceGroup">
-          <h3 class="resourceLabel">{t("mining:resources.pools.title")}</h3>
+        <PageSectionColumn title={t("mining:resources.pools.title")}>
           <ul class="resourceList">
             <li>
               <ExternalResourceButton
@@ -214,12 +177,9 @@ const faqItems = faqToItems(
               />
             </li>
           </ul>
-        </div>
+        </PageSectionColumn>
 
-        <div class="resourceGroup">
-          <h3 class="resourceLabel">
-            {t("mining:resources.benchmarks.title")}
-          </h3>
+        <PageSectionColumn title={t("mining:resources.benchmarks.title")}>
           <ul class="resourceList">
             <li>
               <ExternalResourceButton
@@ -232,8 +192,8 @@ const faqItems = faqToItems(
               />
             </li>
           </ul>
-        </div>
-      </div>
+        </PageSectionColumn>
+      </PageSectionColumn>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -248,84 +208,10 @@ const faqItems = faqToItems(
   </PageContainer>
 
   <style>
-    .grid {
+    .card-grid {
       display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.25rem;
-      align-items: stretch;
-    }
-
-    .cardGupax {
-      grid-column: span 7;
-    }
-
-    .rightCol {
-      grid-column: span 5;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-
-    .cardSolo {
-      flex: 1;
-    }
-
-    .lead {
-      margin: 0;
-      color: var(--paragraph-main);
-      max-width: 75ch;
-    }
-
-    .bullets {
-      margin: 0;
-      padding-inline-start: 1rem;
-      display: grid;
-      gap: 0.35rem;
-      color: var(--paragraph-subtitle);
-      line-height: var(--line-height-body);
-    }
-
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35em;
-      font-weight: var(--font-weight-bold);
-      color: var(--monero-orange);
-      text-decoration: none;
-      width: fit-content;
-    }
-
-    .cta:hover {
-      text-decoration: underline;
-    }
-
-    .frame {
-      border-radius: 0.75rem;
-      overflow: hidden;
-    }
-
-    .frame .image {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .resourceGrid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      align-items: start;
-    }
-
-    .resourceGroup {
-      display: grid;
-      gap: 0.5rem;
-    }
-
-    .resourceLabel {
-      margin: 0;
-      font-size: var(--font-size-sm);
-      color: var(--heading-color);
     }
 
     .resourceList {
@@ -337,19 +223,8 @@ const faqItems = faqToItems(
     }
 
     @media (max-width: 900px) {
-      .grid {
-        grid-template-columns: minmax(0, 1fr);
-        align-items: start;
-      }
-      .cardGupax,
-      .rightCol {
-        grid-column: auto;
-      }
-      .cardSolo {
-        flex: 0 0 auto;
-      }
-      .resourceGrid {
-        grid-template-columns: minmax(0, 1fr);
+      .card-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
