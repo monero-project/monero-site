@@ -7,6 +7,7 @@ interface Props {
 
 const { id, class: className, variant = "flush", ...rest } = Astro.props;
 const classes = [
+  "page-container",
   variant === "spaced" ? "page-container--spaced" : "",
   className ?? "",
 ]
@@ -19,6 +20,9 @@ const classes = [
 </div>
 
 <style>
+  .page-container {
+    padding-bottom: 1rem;
+  }
   .page-container--spaced {
     margin-top: 2rem;
   }
