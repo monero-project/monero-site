@@ -1,4 +1,5 @@
 ---
+import Accordion from "@/components/ui/Accordion.astro";
 import AccordionItem from "@/components/ui/AccordionItem.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -29,7 +30,7 @@ import usersIcon from "@/assets/icons/mask/users.avif";
       <GuideStep step={1} title="Choose Your Setup" icon={appWindowIcon}>
         <p>How you accept Monero depends on your needs:</p>
 
-        <div class="method-accordion">
+        <Accordion>
           <AccordionItem title="Wallet" variant="card" name="method" open>
             <p>
               Best for occasional payments or getting started. Generate a QR
@@ -110,7 +111,7 @@ import usersIcon from "@/assets/icons/mask/users.avif";
               />
             </div>
           </AccordionItem>
-        </div>
+        </Accordion>
       </GuideStep>
 
       <hr />
@@ -159,22 +160,11 @@ import usersIcon from "@/assets/icons/mask/users.avif";
     align-items: start;
   }
 
-  .method-accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .method-accordion :global(.accordion-content > p) {
-    margin-block: 0 0.75rem;
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-  }
-
   .service-buttons {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 1rem;
   }
 
   .service-buttons :global(.external-resource-button) {
@@ -187,6 +177,7 @@ import usersIcon from "@/assets/icons/mask/users.avif";
     gap: 0.375em;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
+    margin-top: 0.5rem;
   }
 
   .inline-link:hover {
