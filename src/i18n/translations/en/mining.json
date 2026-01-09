@@ -18,7 +18,7 @@
   },
   "xmrig": {
     "title": "XMRig",
-    "subtitle": "Advanced: tuning, GPUs, custom pools",
+    "subtitle": "For advanced users",
     "lead": "Prefer full control? Use XMRig directly for pool/solo mining and performance tuning.",
     "bullets": [
       "The most popular RandomX miner",
