@@ -7,7 +7,7 @@ import matter from "gray-matter";
 import { defaultLocale } from "../i18n/config";
 import escapeStringRegexp from "escape-string-regexp";
 
-export const MONEROPEDIA_SUFFIXES = ["based", "like", "form"] as const;
+const MONEROPEDIA_SUFFIXES = ["based", "like", "form"] as const;
 export const MONEROPEDIA_LOOKAHEAD = `(${MONEROPEDIA_SUFFIXES.join("|")})`;
 const MONEROPEDIA_ROOT = path.resolve(
   process.cwd(),

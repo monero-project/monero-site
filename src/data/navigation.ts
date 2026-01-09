@@ -33,25 +33,25 @@ import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif";
 import toolsDark from "@/assets/icons/color/dark/tools.avif";
 import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif";
 
-export interface DropdownItem {
+interface DropdownItem {
   key: string;
   href: string;
   icon: ImageMetadata;
   iconDark?: ImageMetadata;
 }
 
-export interface NavDropdownConfig {
+interface NavDropdownConfig {
   translationKey: string;
   section: string;
   items: DropdownItem[];
 }
 
-export interface NavLinkConfig {
+interface NavLinkConfig {
   translationKey: string;
   href: string;
 }
 
-export type NavItemConfig = NavDropdownConfig | NavLinkConfig;
+type NavItemConfig = NavDropdownConfig | NavLinkConfig;
 
 export const navigationItems: NavItemConfig[] = [
   {

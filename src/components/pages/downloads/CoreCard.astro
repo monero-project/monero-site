@@ -40,7 +40,6 @@ interface Props {
   releaseNotesUrl?: string;
   torrentUrl?: string;
   magnetUrl?: string;
-  verifyLink?: string;
   t: TFunction;
 }
 
@@ -77,10 +76,10 @@ const safeMarkdown = createSafeMarkdown();
     <Image src={image} alt="" format="avif" />
   </div>
   <div class="card-content">
-    <h2 class="card-title">{title}</h2>
-    <p class="card-subtitle">
-      {subtitle}
-    </p>
+    <div class="card-header">
+      <h2 class="card-title">{title}</h2>
+      <p class="card-subtitle">{subtitle}</p>
+    </div>
     <ul class="card-features">
       {
         features.map((feature) => (
@@ -88,116 +87,100 @@ const safeMarkdown = createSafeMarkdown();
         ))
       }
     </ul>
-    <div class="download-actions">
-      <Dropdown label={t("downloads:core.downloadButton")}>
-        {
-          downloads.map((item) =>
-            item === "separator" ? (
-              <DropdownSeparator />
-            ) : (
-              <DropdownItem href={item.href} target={item.target}>
-                <span class="dropdown-label">
-                  {item.platform && (
-                    <span class="platform-icon">
-                      <MaskIcon
-                        src={PLATFORM_ICONS[item.platform]}
-                        size="1em"
-                      />
+    <div class="card-footer">
+      <div class="download-actions">
+        <Dropdown label={t("downloads:core.downloadButton")}>
+          {
+            downloads.map((item) =>
+              item === "separator" ? (
+                <DropdownSeparator />
+              ) : (
+                <DropdownItem href={item.href} target={item.target}>
+                  <span class="dropdown-label">
+                    {item.platform && (
+                      <span class="platform-icon">
+                        <MaskIcon
+                          src={PLATFORM_ICONS[item.platform]}
+                          size="1em"
+                        />
+                      </span>
+                    )}
+                    <span>
+                      {`${t(`downloads:platforms.${item.platform}`)} (${t(`downloads:core.formats.${item.format}`)})`}
                     </span>
-                  )}
-                  <span>
-                    {`${t(`downloads:platforms.${item.platform}`)} (${t(`downloads:core.formats.${item.format}`)})`}
                   </span>
-                </span>
-                {item.size && <span slot="meta">{item.size}</span>}
-              </DropdownItem>
-            ),
+                  {item.size && <span slot="meta">{item.size}</span>}
+                </DropdownItem>
+              ),
+            )
+          }
+        </Dropdown>
+        {
+          torrentUrl && magnetUrl && (
+            <div class="torrent-split-button">
+              <Button
+                variant="secondary"
+                href={torrentUrl}
+                as="a"
+                class="torrent-button"
+              >
+                {t("downloads:core.torrent")}
+              </Button>
+              <Button
+                variant="secondary"
+                href={magnetUrl}
+                as="a"
+                class="magnet-button"
+                aria-label={t("downloads:core.magnetLink")}
+                title={t("downloads:core.magnetLink")}
+              >
+                <ColorIcon
+                  src={magnetIcon}
+                  darkSrc={magnetIconDark}
+                  size="1.25em"
+                />
+              </Button>
+            </div>
           )
         }
-      </Dropdown>
-      {
-        torrentUrl && magnetUrl && (
-          <div class="torrent-split-button">
-            <Button
-              variant="secondary"
-              href={torrentUrl}
-              as="a"
-              class="torrent-button"
-            >
-              {t("downloads:core.torrent")}
-            </Button>
-            <Button
-              variant="secondary"
-              href={magnetUrl}
-              as="a"
-              class="magnet-button"
-              aria-label={t("downloads:core.magnetLink")}
-              title={t("downloads:core.magnetLink")}
-            >
-              <ColorIcon
-                src={magnetIcon}
-                darkSrc={magnetIconDark}
-                size="1.25em"
+      </div>
+      <div class="metadata-links">
+        {
+          version && (
+            <span class="version-text">
+              {version} {versionName ? `(${versionName})` : ""}
+            </span>
+          )
+        }
+        {
+          releaseNotesUrl && (
+            <>
+              {version && <span class="separator">·</span>}
+              <a
+                href={releaseNotesUrl}
+                target="_blank"
+                rel="noopener noreferrer external"
+                class="metadata-link"
+                set:text={t("downloads:core.releaseNotes")}
               />
-            </Button>
-          </div>
-        )
-      }
-    </div>
-    <div class="metadata-links">
-      {
-        version && (
-          <span class="version-text">
-            {version} {versionName ? `(${versionName})` : ""}
-          </span>
-        )
-      }
-      {
-        releaseNotesUrl && (
-          <>
-            {version && <span class="separator">·</span>}
-            <a
-              href={releaseNotesUrl}
-              target="_blank"
-              rel="noopener noreferrer external"
-              class="metadata-link"
-              set:text={t("downloads:core.releaseNotes")}
-            />
-          </>
-        )
-      }
-      {
-        sourceCodeUrl && (
-          <>
-            {(version || releaseNotesUrl) && <span class="separator">·</span>}
-            <a
-              href={sourceCodeUrl}
-              target="_blank"
-              rel="noopener noreferrer external"
-              class="metadata-link"
-              set:text={t("downloads:core.sourceCode")}
-            />
-          </>
-        )
-      }
-    </div>
-    <div class="verification">
-      <h3>{t("downloads:core.verifyDownload")}</h3>
-      <p
-        set:html={safeMarkdown.parse(
-          t("downloads:core.verifyDescription", {
-            verifyInstructionLink:
-              "https://docs.getmonero.org/interacting/verify-monero-binaries",
-          }),
-        )}
-      />
-      <a
-        href="/downloads/hashes.txt"
-        class="verify-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        set:text={t("downloads:core.viewHashes")}
-      />
+            </>
+          )
+        }
+        {
+          sourceCodeUrl && (
+            <>
+              {(version || releaseNotesUrl) && <span class="separator">·</span>}
+              <a
+                href={sourceCodeUrl}
+                target="_blank"
+                rel="noopener noreferrer external"
+                class="metadata-link"
+                set:text={t("downloads:core.sourceCode")}
+              />
+            </>
+          )
+        }
+      </div>
     </div>
   </div>
 </div>
@@ -207,20 +190,36 @@ const safeMarkdown = createSafeMarkdown();
     display: flex;
     flex-direction: column;
     background: var(--card-color);
-    border-radius: 1rem;
-    padding: 1.25rem;
-    gap: 1.25rem;
+    border-radius: 0.5rem;
   }
 
   .card-image {
-    border-radius: 0.75rem;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background: var(--card-hover-color);
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
   }
 
   .card-content {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    flex: 1;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
   .card-title {
@@ -231,7 +230,6 @@ const safeMarkdown = createSafeMarkdown();
   }
 
   .card-subtitle {
-    font-size: var(--font-size-lg);
     color: var(--paragraph-subtitle);
     margin: 0;
   }
@@ -239,24 +237,31 @@ const safeMarkdown = createSafeMarkdown();
   .card-features {
     list-style-position: inside;
     padding: 0;
-    margin: 0.25rem 0 0 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.375rem;
   }
+
   .card-features li {
-    font-size: var(--font-size-base);
     color: var(--paragraph-main);
     line-height: var(--line-height-body);
   }
+
   .card-features li::marker {
     color: var(--monero-orange);
   }
 
-  .download-actions {
-    margin-top: 0.5rem;
+  .card-footer {
+    margin-top: auto;
     display: flex;
+    flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .download-actions {
+    display: flex;
+    gap: 0.5rem;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -282,10 +287,10 @@ const safeMarkdown = createSafeMarkdown();
   }
 
   .metadata-links {
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 0.5rem;
     font-size: var(--font-size-sm);
     flex-wrap: wrap;
   }
@@ -313,35 +318,6 @@ const safeMarkdown = createSafeMarkdown();
     text-decoration: underline;
   }
 
-  .verification {
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border-color);
-  }
-
-  .verification h3 {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-    margin-block: 0.5rem 0;
-  }
-
-  .verification p {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-main);
-    margin: 0 0 0.5rem 0;
-  }
-
-  .verify-link {
-    color: var(--monero-orange);
-    text-decoration: none;
-    font-weight: var(--font-weight-medium);
-  }
-
-  .verify-link:hover {
-    text-decoration: underline;
-  }
-
   .dropdown-label {
     display: inline-flex;
     align-items: center;
@@ -352,32 +328,5 @@ const safeMarkdown = createSafeMarkdown();
     display: inline-flex;
     align-items: center;
     opacity: 0.6;
-  }
-
-  @media (min-width: 900px) {
-    .download-card {
-      flex-direction: row;
-      align-items: stretch;
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .card-image {
-      width: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* preserves aspect ratio */
-    }
-
-    .card-content {
-      flex: 1 1 0%;
-      min-width: 0; /* prevent overflow from long text */
-    }
   }
 </style>

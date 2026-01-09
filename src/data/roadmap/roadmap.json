@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "fcmp",
+      "link": "https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs",
+      "status": "in-progress"
+    },
+    {
+      "id": "cuprate",
+      "link": "https://cuprate.org/",
+      "status": "in-progress"
+    },
+    { "id": "newSite", "status": "in-progress" },
+    { "id": "randomxV2", "status": "in-progress" },
+    { "id": "bulletproofsPP", "status": "upcoming" },
+    { "id": "seraphis", "status": "upcoming" },
+    {
+      "id": "ospead",
+      "link": "https://github.com/Rucknium/OSPEAD",
+      "status": "upcoming"
+    },
+    {
+      "id": "mrlResearch",
+      "link": "https://github.com/monero-project/research-lab/issues/94",
+      "status": "proposed"
+    }
+  ],
+  "history": [
+    {
+      "year": "2024",
+      "events": [
+        {
+          "month": "may",
+          "titleKey": "havenoDex",
+          "link": "https://haveno.exchange/"
+        },
+        { "month": "january", "titleKey": "xmrBchSwap" }
+      ]
+    },
+    {
+      "year": "2023",
+      "events": [
+        { "month": "december", "titleKey": "lwsSubaddress" },
+        { "month": "may", "titleKey": "ethSwaps" },
+        { "titleKey": "blockProp" }
+      ]
+    },
+    {
+      "year": "2022",
+      "events": [
+        {
+          "month": "august",
+          "titleKey": "v15Hardfork",
+          "link": "https://www.getmonero.org/2022/04/20/network-upgrade-july-2022.html"
+        },
+        {
+          "month": "july",
+          "titleKey": "fluorineFermi",
+          "link": "https://www.getmonero.org/2022/07/19/monero-0.18.0.0-released.html"
+        },
+        { "month": "april", "titleKey": "viewTags" }
+      ]
+    },
+    {
+      "year": "2021",
+      "events": [
+        {
+          "month": "october",
+          "titleKey": "p2pool",
+          "link": "https://www.getmonero.org/2021/10/05/p2pool-released.html"
+        },
+        {
+          "month": "august",
+          "titleKey": "btcSwaps",
+          "link": "https://www.getmonero.org/2021/08/20/atomic-swaps.html"
+        },
+        { "month": "february", "titleKey": "onionAddress" }
+      ]
+    },
+    {
+      "year": "2020",
+      "events": [
+        { "month": "october", "titleKey": "clsag" },
+        { "month": "october", "titleKey": "oxygenOrion" },
+        {
+          "month": "may",
+          "titleKey": "v0160",
+          "link": "https://www.getmonero.org/2020/05/23/monero-0.16-released.html"
+        },
+        { "month": "april", "titleKey": "dandelion" }
+      ]
+    },
+    {
+      "year": "2019",
+      "events": [
+        { "month": "november", "titleKey": "randomx" },
+        { "month": "november", "titleKey": "ipv6" },
+        { "month": "november", "titleKey": "paymentIdRemoved" },
+        { "month": "july", "titleKey": "pruning" },
+        { "month": "july", "titleKey": "hwSupport2019" },
+        { "month": "july", "titleKey": "torI2p" },
+        { "month": "march", "titleKey": "ccs" },
+        { "month": "march", "titleKey": "cryptonightR" }
+      ]
+    },
+    {
+      "year": "2018",
+      "events": [
+        { "month": "october", "titleKey": "bulletproofs" },
+        { "month": "october", "titleKey": "ringSize11" },
+        { "month": "october", "titleKey": "berylliumBullet" },
+        { "month": "august", "titleKey": "kovri" },
+        { "month": "june", "titleKey": "ledgerSupport" },
+        { "month": "april", "titleKey": "multisigSubaddress" },
+        { "month": "april", "titleKey": "guiRelease2018" }
+      ]
+    },
+    {
+      "year": "2017",
+      "events": [
+        { "month": "december", "titleKey": "multisig" },
+        { "month": "october", "titleKey": "subaddresses" },
+        { "month": "september", "titleKey": "fluffyBlocks" },
+        { "month": "september", "titleKey": "guiOutOfBeta" },
+        { "month": "september", "titleKey": "ringSize5" },
+        { "month": "january", "titleKey": "ringctEnabled" }
+      ]
+    },
+    {
+      "year": "2016",
+      "events": [
+        {
+          "month": "december",
+          "titleKey": "guiBeta",
+          "link": "https://www.getmonero.org/2016/12/22/monero-core-gui-beta-released.html"
+        },
+        {
+          "month": "september",
+          "titleKey": "wolframWarptangent",
+          "link": "https://www.getmonero.org/2016/09/19/monero-0.10.0-released.html"
+        },
+        { "month": "march", "titleKey": "ringSize3" },
+        {
+          "month": "january",
+          "titleKey": "hydrogenHelix",
+          "link": "https://www.getmonero.org/2016/01/01/monero-0.9.0-hydrogen-helix-released.html"
+        }
+      ]
+    },
+    {
+      "year": "2014",
+      "events": [
+        { "month": "september", "titleKey": "spamAttack" },
+        { "month": "september", "titleKey": "mrlPapers" },
+        {
+          "month": "april",
+          "titleKey": "bitcointalk",
+          "link": "https://bitcointalk.org/index.php?topic=563821.0"
+        },
+        { "month": "april", "titleKey": "renamed" }
+      ]
+    }
+  ]
+}

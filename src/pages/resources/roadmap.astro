@@ -1,12 +1,152 @@
 ---
+import HistoryTimeline from "@/components/pages/roadmap/HistoryTimeline.astro";
+import StatusSection from "@/components/pages/roadmap/StatusSection.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import TitleCard from "@/components/ui/TitleCard.astro";
+import roadmapData from "@/data/roadmap/roadmap.json";
+import { createTInstance, getLocale } from "@/i18n/utils";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+const { items, history } = roadmapData;
 ---
 
-<Layout
-  title="Roadmap"
-  description="Monero's development roadmap and future plans."
->
-  <TitleCard title="Roadmap" />
+<Layout title={t("roadmap:pageTitle")} description={t("roadmap:hero.subtitle")}>
+  <TitleCard
+    title={t("roadmap:hero.title")}
+    subtitle={t("roadmap:hero.subtitle")}
+  />
+
+  <PageContainer>
+    <div class="roadmap-content">
+      <section class="kanban" aria-label="Development status">
+        <div class="kanban-column">
+          <header class="section-label">
+            <span class="label-dot active"></span>
+            <h2>{t("roadmap:status.inProgress")}</h2>
+          </header>
+          <StatusSection items={items} status="in-progress" t={t} />
+        </div>
+
+        <div class="kanban-column">
+          <header class="section-label">
+            <span class="label-dot upcoming"></span>
+            <h2>{t("roadmap:status.upcoming")}</h2>
+          </header>
+          <StatusSection items={items} status="upcoming" t={t} />
+        </div>
+
+        <div class="kanban-column proposed">
+          <header class="section-label">
+            <span class="label-dot proposed"></span>
+            <h2>{t("roadmap:status.proposed")}</h2>
+          </header>
+          <StatusSection items={items} status="proposed" t={t} />
+        </div>
+      </section>
+
+      <hr aria-hidden="true" />
+
+      <PageSection title={t("roadmap:history.title")} anchorId="history">
+        <HistoryTimeline history={history} t={t} />
+      </PageSection>
+    </div>
+  </PageContainer>
 </Layout>
+
+<style>
+  .roadmap-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kanban {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .kanban-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-label h2 {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .label-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--paragraph-subtitle);
+  }
+
+  .label-dot.active {
+    background: var(--monero-orange);
+    box-shadow: 0 0 0 3px
+      color-mix(in srgb, var(--monero-orange) 25%, transparent);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .label-dot.upcoming {
+    background: var(--heading-color);
+  }
+
+  .label-dot.proposed {
+    background: transparent;
+    border: 1.5px solid var(--paragraph-subtitle);
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      box-shadow: 0 0 0 3px
+        color-mix(in srgb, var(--monero-orange) 25%, transparent);
+    }
+    50% {
+      box-shadow: 0 0 0 5px
+        color-mix(in srgb, var(--monero-orange) 15%, transparent);
+    }
+  }
+
+  .kanban-column:first-child :global(.status-item) {
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 3px solid var(--monero-orange);
+  }
+
+  .kanban-column.proposed :global(.status-item) {
+    background: transparent;
+    border: 1px solid var(--border-color);
+  }
+
+  .kanban-column.proposed :global(a.status-item:hover) {
+    background: var(--card-hover-color);
+    border-color: var(--card-color);
+  }
+
+  .kanban-column.proposed :global(.status-title) {
+    color: var(--paragraph-main);
+  }
+
+  @media (max-width: 900px) {
+    .kanban {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

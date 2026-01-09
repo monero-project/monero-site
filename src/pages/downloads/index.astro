@@ -1,5 +1,6 @@
 ---
 import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import { createSafeMarkdown } from "@/utils/safeMarkdown.ts";
 
 import Layout from "@/layouts/Layout.astro";
 
@@ -10,38 +11,20 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
 
-import TOCContainer from "@/components/ui/TOCContainer.astro";
-
 import cliImage from "@/assets/images/cli.avif";
 import guiImage from "@/assets/images/gui.avif";
 
-import appWindowIcon from "@/assets/icons/mask/app-window.avif";
-import terminalIcon from "@/assets/icons/mask/terminal.avif";
 import PageContainer from "@/components/ui/PageContainer.astro";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const safeMarkdown = createSafeMarkdown();
 
 const tabs = [
   { label: t("downloads:tabs.core"), link: localizeHref(locale, "/downloads") },
   {
     label: t("downloads:tabs.community"),
     link: localizeHref(locale, "/downloads/community"),
-  },
-];
-
-const sections = [
-  {
-    id: "gui",
-    icon: appWindowIcon,
-    title: t("downloads:core.gui.title"),
-    subtitle: t("downloads:core.gui.subtitle"),
-  },
-  {
-    id: "cli",
-    icon: terminalIcon,
-    title: t("downloads:core.cli.title"),
-    subtitle: t("downloads:core.cli.subtitle"),
   },
 ];
 ---
@@ -59,10 +42,6 @@ const sections = [
       labels={tabs.map((tab) => tab.label)}
       links={tabs.map((tab) => tab.link)}
       activeIndex={0}
-    />
-    <TOCContainer
-      sections={sections}
-      ariaLabel={`${t("downloads:tabs.core")}` + " sections"}
     />
     <div class="downloads-grid">
       <!-- Monero GUI Card -->
@@ -109,19 +88,44 @@ const sections = [
         t={t}
       />
     </div>
+
+    <div class="verification-section">
+      <h2>{t("downloads:core.verifyDownload")}</h2>
+      <p
+        set:html={safeMarkdown.parse(
+          t("downloads:core.verifyDescription", {
+            verifyInstructionLink:
+              "https://docs.getmonero.org/interacting/verify-monero-binaries",
+          }),
+        )}
+      />
+      <a
+        href="/downloads/hashes.txt"
+        class="verify-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        set:text={t("downloads:core.viewHashes")}
+      />
+    </div>
   </PageContainer>
 </Layout>
 
 <style>
-  /* Core downloads */
   .downloads-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
+
   #gui,
   #cli {
     scroll-margin-top: 6.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .downloads-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -129,5 +133,34 @@ const sections = [
     #cli {
       scroll-margin-top: unset;
     }
+  }
+
+  .verification-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    border-end-start-radius: 0;
+    border-start-start-radius: 0;
+    border-left: 3px solid var(--monero-orange);
+  }
+
+  .verification-section h2 {
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    margin: 0 0 0.75rem 0;
+  }
+
+  .verification-section p {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-main);
+    margin: 0 0 1rem 0;
+    line-height: var(--line-height-body);
+  }
+
+  .verify-link {
+    display: inline-block;
+    color: var(--monero-orange);
+    font-weight: var(--font-weight-semibold);
   }
 </style>

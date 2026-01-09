@@ -1,0 +1,95 @@
+---
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import type { TFunction } from "i18next";
+
+interface Props {
+  items: Array<{
+    id: string;
+    link?: string;
+    status: string;
+  }>;
+  status: "in-progress" | "upcoming" | "proposed";
+  t: TFunction;
+}
+
+const { items, status, t } = Astro.props;
+const filteredItems = items.filter((item) => item.status === status);
+---
+
+<ul class="status-list">
+  {
+    filteredItems.map((item) => (
+      <li>
+        {item.link ? (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="status-item"
+          >
+            <span class="status-title">
+              {t(`roadmap:items.${item.id}.title`)}
+              <MaskIcon src={externalLinkIcon} size="0.875em" />
+            </span>
+            <p class="status-desc">
+              {t(`roadmap:items.${item.id}.description`)}
+            </p>
+          </a>
+        ) : (
+          <div class="status-item">
+            <span class="status-title">
+              {t(`roadmap:items.${item.id}.title`)}
+            </span>
+            <p class="status-desc">
+              {t(`roadmap:items.${item.id}.description`)}
+            </p>
+          </div>
+        )}
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .status-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .status-item {
+    display: block;
+    padding: 0.875rem 1rem;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    transition: background 0.15s ease;
+    text-decoration: none;
+  }
+
+  a.status-item::after {
+    display: none;
+  }
+  a.status-item:hover {
+    background: var(--card-hover-color);
+  }
+
+  .status-title {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    line-height: var(--line-height-caption);
+  }
+
+  .status-desc {
+    margin: 0.25rem 0 0;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-caption);
+  }
+</style>

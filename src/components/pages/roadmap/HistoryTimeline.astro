@@ -1,0 +1,117 @@
+---
+import type { TFunction } from "i18next";
+
+interface HistoryEvent {
+  month?: string;
+  titleKey: string;
+  link?: string;
+}
+
+interface HistoryYear {
+  year: string;
+  events: HistoryEvent[];
+}
+
+interface Props {
+  history: HistoryYear[];
+  t: TFunction;
+}
+
+const { history, t } = Astro.props;
+---
+
+<div class="year-rows">
+  {
+    history.map((yearData) => (
+      <div class="year-row">
+        <span class="year-label">{yearData.year}</span>
+        <div class="event-chips">
+          {yearData.events.map((event) =>
+            event.link ? (
+              <a
+                href={event.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="event-chip has-link"
+              >
+                {t(`roadmap:history.events.${event.titleKey}`)}
+              </a>
+            ) : (
+              <span class="event-chip">
+                {t(`roadmap:history.events.${event.titleKey}`)}
+              </span>
+            ),
+          )}
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .year-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .year-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .year-row:last-child {
+    border-bottom: none;
+  }
+
+  .year-label {
+    flex-shrink: 0;
+    width: 4.5rem;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .event-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .event-chip {
+    padding: 0.375rem 0.75rem;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-main);
+    text-decoration: none;
+  }
+
+  .event-chip.has-link {
+    color: var(--heading-color);
+  }
+
+  .event-chip.has-link:hover {
+    background: var(--monero-orange);
+    color: white;
+  }
+
+  .event-chip.has-link::after {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .year-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .year-label {
+      width: auto;
+    }
+  }
+</style>
