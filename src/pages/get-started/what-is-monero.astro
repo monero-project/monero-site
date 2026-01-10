@@ -3,6 +3,7 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
+import CTACard from "@/components/ui/CTACard.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
@@ -376,28 +377,27 @@ const getLanguageLabel = (lang: string): string => {
       </div>
     </div>
 
-    <hr />
-
-    <div class="cta-card">
-      <h2 class="title">{t("what-is-monero:sections.cta.title")}</h2>
-      <p class="subtitle">{t("what-is-monero:sections.cta.subtitle")}</p>
-      <div class="cta-buttons">
+    <CTACard
+      variant="centered"
+      title={t("what-is-monero:sections.cta.title")}
+      class="final-cta"
+    >
+      {t("what-is-monero:sections.cta.subtitle")}
+      <Fragment slot="buttons">
         <Button
           variant="primary"
           href={localizeHref(locale, "/downloads/community/#wallets")}
-          class="cta-button"
         >
           {t("what-is-monero:sections.cta.downloadWallet")}
         </Button>
         <Button
           variant="secondary"
           href={localizeHref(locale, "/get-started/exchanges/")}
-          class="cta-button"
         >
           {t("what-is-monero:sections.cta.getMonero")}
         </Button>
-      </div>
-    </div>
+      </Fragment>
+    </CTACard>
   </PageContainer>
 </Layout>
 
@@ -413,7 +413,7 @@ const getLanguageLabel = (lang: string): string => {
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-body);
   }
-  :where(.feature-item, .cta-card) {
+  :where(.feature-item) {
     border-radius: 0.5rem;
   }
 
@@ -541,32 +541,8 @@ const getLanguageLabel = (lang: string): string => {
     color: var(--monero-orange);
   }
 
-  .cta-card {
-    background: var(--card-color);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .cta-card .title {
+  .final-cta .cta-title {
     font-size: var(--font-size-3xl);
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-    margin: 0;
-  }
-  .cta-card .subtitle {
-    font-size: var(--font-size-lg);
-  }
-  .cta-buttons {
-    display: flex;
-    margin-top: 0.5rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .cta-button {
-    padding: 1em 2em;
   }
 
   @media (min-width: 900px) {

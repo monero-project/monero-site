@@ -5,16 +5,18 @@ import type { ImageMetadata } from "astro";
 
 interface Props {
   title: string;
-  href: string;
-  linkText: string;
+  href?: string;
+  linkText?: string;
   icon?: ImageMetadata;
   variant?: "centered";
+  class?: string;
 }
 
-const { title, href, linkText, icon, variant } = Astro.props;
+const { title, href, linkText, icon, variant, class: className, ...rest } = Astro.props;
+const hasButtonsSlot = Astro.slots.has("buttons");
 ---
 
-<div class:list={["cta-card", { "has-icon": icon }, variant]}>
+<div class:list={["cta-card", { "has-icon": icon }, variant, className]} {...rest}>
   {
     icon && (
       <span class="cta-icon">
@@ -27,9 +29,13 @@ const { title, href, linkText, icon, variant } = Astro.props;
     <slot />
   </div>
   <div class="cta-link">
-    <Button href={href}>
-      {linkText}
-    </Button>
+    {
+      hasButtonsSlot ? (
+        <slot name="buttons" />
+      ) : (
+        <Button href={href}>{linkText}</Button>
+      )
+    }
   </div>
 </div>
 
@@ -98,6 +104,14 @@ const { title, href, linkText, icon, variant } = Astro.props;
     border-start-start-radius: unset;
     border-start-end-radius: unset;
     border-block-start: 3px solid var(--monero-orange);
+    display: grid;
+    grid-template-areas:
+      "title"
+      "description"
+      "link";
+    grid-template-columns: unset;
+    justify-items: center;
+    row-gap: 0.5rem;
   }
   .cta-card.centered.has-icon {
     grid-template-areas:
@@ -105,15 +119,16 @@ const { title, href, linkText, icon, variant } = Astro.props;
       "title"
       "description"
       "link";
-    grid-template-columns: 1fr;
-    justify-items: center;
-    row-gap: 0.5rem;
   }
   .cta-card.centered .cta-description {
     max-width: 50ch;
+    text-align: center;
+    margin-inline: auto;
   }
   .cta-card.centered .cta-link {
     display: flex;
     justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 </style>
