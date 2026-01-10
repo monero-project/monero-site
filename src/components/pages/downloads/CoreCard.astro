@@ -77,7 +77,11 @@ const safeMarkdown = createSafeMarkdown();
   </div>
   <div class="card-content">
     <div class="card-header">
-      <h2 class="card-title">{title}</h2>
+      {versionName && <span class="version-name">"{versionName}"</span>}
+      <div class="title-row">
+        <h2 class="card-title">{title}</h2>
+        {version && <span class="version-badge">{version}</span>}
+      </div>
       <p class="card-subtitle">{subtitle}</p>
     </div>
     <ul class="card-features">
@@ -146,30 +150,20 @@ const safeMarkdown = createSafeMarkdown();
       </div>
       <div class="metadata-links">
         {
-          version && (
-            <span class="version-text">
-              {version} {versionName ? `(${versionName})` : ""}
-            </span>
-          )
-        }
-        {
           releaseNotesUrl && (
-            <>
-              {version && <span class="separator">·</span>}
-              <a
-                href={releaseNotesUrl}
-                target="_blank"
-                rel="noopener noreferrer external"
-                class="metadata-link"
-                set:text={t("downloads:core.releaseNotes")}
-              />
-            </>
+            <a
+              href={releaseNotesUrl}
+              target="_blank"
+              rel="noopener noreferrer external"
+              class="metadata-link"
+              set:text={t("downloads:core.releaseNotes")}
+            />
           )
         }
         {
           sourceCodeUrl && (
             <>
-              {(version || releaseNotesUrl) && <span class="separator">·</span>}
+              {releaseNotesUrl && <span class="separator">·</span>}
               <a
                 href={sourceCodeUrl}
                 target="_blank"
@@ -222,11 +216,32 @@ const safeMarkdown = createSafeMarkdown();
     gap: 0.25rem;
   }
 
+  .title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
   .card-title {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
     margin: 0;
+  }
+
+  .version-badge {
+    font-weight: var(--font-weight-semibold);
+    background: var(--secondary-button-color, var(--footer-color));
+    padding: 0.25em 0.75em;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .version-name {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
   }
 
   .card-subtitle {
@@ -293,11 +308,6 @@ const safeMarkdown = createSafeMarkdown();
     gap: 0.5rem;
     font-size: var(--font-size-sm);
     flex-wrap: wrap;
-  }
-
-  .version-text {
-    color: var(--paragraph-subtitle);
-    font-weight: var(--font-weight-medium);
   }
 
   .separator {

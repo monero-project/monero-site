@@ -12,11 +12,22 @@ interface Props {
   class?: string;
 }
 
-const { title, href, linkText, icon, variant, class: className, ...rest } = Astro.props;
+const {
+  title,
+  href,
+  linkText,
+  icon,
+  variant,
+  class: className,
+  ...rest
+} = Astro.props;
 const hasButtonsSlot = Astro.slots.has("buttons");
 ---
 
-<div class:list={["cta-card", { "has-icon": icon }, variant, className]} {...rest}>
+<div
+  class:list={["cta-card", { "has-icon": icon }, variant, className]}
+  {...rest}
+>
   {
     icon && (
       <span class="cta-icon">
