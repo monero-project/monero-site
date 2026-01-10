@@ -1,0 +1,137 @@
+---
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+import matrixIcon from "@/assets/icons/mask/matrix.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+export interface Props {
+  name: string;
+  description: string;
+  href: string;
+  matrixHref?: string;
+}
+
+const { name, description, href, matrixHref } = Astro.props;
+
+// Split channel name into prefix (muted) and suffix (highlighted)
+const parseChannelName = (channelName: string) => {
+  const firstDashIndex = channelName.indexOf("-");
+  if (firstDashIndex === -1) {
+    return { prefix: "", suffix: channelName };
+  }
+  return {
+    prefix: channelName.substring(0, firstDashIndex + 1),
+    suffix: channelName.substring(firstDashIndex + 1),
+  };
+};
+
+const { prefix, suffix } = parseChannelName(name);
+---
+
+<div class="irc-channel-button">
+  <a href={href} target="_blank" rel="noopener noreferrer" class="primary-link">
+    <span class="channel-content">
+      <span class="channel-name"
+        >{prefix && <span class="channel-prefix">{prefix}</span>}<span
+          class="channel-suffix">{suffix}</span
+        ></span
+      >
+      <span class="channel-desc">{description}</span>
+    </span>
+    <MaskIcon src={externalLinkIcon} size="1em" />
+  </a>
+
+  {
+    matrixHref && (
+      <a
+        href={matrixHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="matrix-link"
+        title="Matrix"
+        aria-label="Open on Matrix"
+      >
+        <MaskIcon src={matrixIcon} size="2em" />
+      </a>
+    )
+  }
+</div>
+
+<style>
+  .irc-channel-button {
+    display: flex;
+    align-items: stretch;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: background 0.15s ease;
+  }
+
+  .irc-channel-button:hover,
+  .irc-channel-button:focus-within {
+    background: var(--card-hover-color);
+  }
+
+  .primary-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+  }
+
+  .channel-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+
+  .channel-name {
+    font-weight: var(--font-weight-semibold);
+    white-space: nowrap;
+  }
+
+  .channel-prefix {
+    color: var(--paragraph-subtitle);
+  }
+
+  .channel-suffix {
+    color: var(--monero-orange);
+  }
+
+  .channel-desc {
+    flex: 1;
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-sm);
+  }
+
+  .matrix-link {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0.5rem;
+    border-inline-start: 1px solid var(--border-color);
+    color: var(--paragraph-subtitle);
+    transition:
+      background 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .matrix-link:hover {
+    background: color-mix(in srgb, var(--monero-orange) 10%, transparent);
+    color: var(--monero-orange);
+  }
+
+  @media (max-width: 900px) {
+    .channel-content {
+      flex-wrap: wrap;
+    }
+
+    .channel-name {
+      flex-basis: 100%;
+    }
+  }
+</style>

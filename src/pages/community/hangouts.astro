@@ -1,15 +1,128 @@
 ---
+import IRCChannelButton from "@/components/pages/hangouts/IRCChannelButton.astro";
+import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
-import TitleCard from "@/components/ui/TitleCard.astro";
+import usersIcon from "@/assets/icons/mask/users.avif";
+
+import { channels, chatLinks, socialLinks } from "@/data/hangouts";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
 
-<Layout
-  title="Hangouts"
-  description="Social media spaces for the Monero community"
->
+<Layout title={t("hangouts:pageTitle")} description={t("hangouts:description")}>
   <TitleCard
-    title="Hangouts"
-    subtitle="We come from all over, but we definitely have some places we like to hang out together. You'll find most of them below. Join us!"
+    title={t("hangouts:hero.title")}
+    subtitle={t("hangouts:hero.subtitle")}
   />
+  <PageContainer>
+    <InternalResourceButton
+      icon={usersIcon}
+      title={t("hangouts:workgroupsNote.title")}
+      href={localizeHref(locale, "/community/workgroups")}
+    >
+      {t("hangouts:workgroupsNote.content")}
+    </InternalResourceButton>
+
+    <div class="hangouts-grid">
+      <PageSection title={t("hangouts:chat.title")} headingLevel={2}>
+        <ul class="resource-list">
+          {
+            chatLinks.map((link) => (
+              <li>
+                <ExternalResourceButton
+                  href={link.href}
+                  title={t(link.titleKey)}
+                  subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
+                  logo={link.logo}
+                />
+              </li>
+            ))
+          }
+        </ul>
+      </PageSection>
+
+      <PageSection title={t("hangouts:social.title")} headingLevel={2}>
+        <ul class="resource-list">
+          {
+            socialLinks.map((link) => (
+              <li>
+                <ExternalResourceButton
+                  href={link.href}
+                  title={t(link.titleKey)}
+                  subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
+                  logo={link.logo}
+                />
+              </li>
+            ))
+          }
+        </ul>
+      </PageSection>
+    </div>
+
+    <hr aria-hidden="true" />
+
+    <PageSection title={t("hangouts:channels.title")}>
+      <ul class="channel-list">
+        {
+          channels.map((ch) => (
+            <li>
+              <IRCChannelButton
+                name={t(ch.nameKey)}
+                description={t(ch.descriptionKey)}
+                href={ch.href}
+                matrixHref={ch.matrixHref}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </PageSection>
+  </PageContainer>
 </Layout>
+
+<style>
+  .hangouts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .resource-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .channel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 1200px) {
+    .channel-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hangouts-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>

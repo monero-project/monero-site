@@ -1,0 +1,117 @@
+---
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  icon?: ImageMetadata;
+  title: string;
+  href?: string;
+}
+
+const { icon, title, href } = Astro.props;
+---
+
+{
+  href ? (
+    <a class="info-bar card is-link" href={href} aria-label={title}>
+      {icon && (
+        <span class="info-icon" aria-hidden="true">
+          <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
+        </span>
+      )}
+
+      <div class="info-content">
+        <p class="info-title">{title}</p>
+        <div class="info-description">
+          <slot />
+        </div>
+      </div>
+
+      <span class="info-arrow" aria-hidden="true">
+        <MaskIcon src={arrowRightIcon} size="1.25em" aria-hidden="true" />
+      </span>
+    </a>
+  ) : (
+    <div class="info-bar card">
+      {icon && (
+        <span class="info-icon" aria-hidden="true">
+          <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
+        </span>
+      )}
+
+      <div class="info-content">
+        <p class="info-title">{title}</p>
+        <div class="info-description">
+          <slot />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+<style>
+  .info-bar {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .info-icon {
+    color: var(--monero-orange);
+    flex-shrink: 0;
+    display: flex;
+    align-self: center;
+  }
+
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    min-width: 0;
+  }
+
+  .info-title {
+    margin: 0;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+  }
+
+  .info-description {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+  }
+
+  .info-arrow {
+    color: var(--monero-orange);
+    flex-shrink: 0;
+    display: flex;
+    margin-left: auto;
+    opacity: 0.8;
+    transition: opacity 0.15s ease;
+  }
+
+  .info-bar.is-link:hover,
+  .info-bar.is-link:focus-visible {
+    background: var(--card-hover-color);
+  }
+
+  .info-bar.is-link:hover .info-arrow,
+  .info-bar.is-link:focus-visible .info-arrow {
+    opacity: 1;
+  }
+
+  .info-bar.is-link:focus-visible {
+    outline: 2px solid var(--monero-orange);
+    outline-offset: 2px;
+  }
+</style>

@@ -19,6 +19,7 @@ const {
   ariaLabel,
   centered = false,
   class: className,
+  ...rest
 } = Astro.props;
 
 const Heading = `h${headingLevel}` as HTMLTag;
@@ -31,6 +32,7 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
   class={classes}
   aria-label={ariaLabel}
   aria-labelledby={ariaLabelledBy}
+  {...rest}
 >
   {
     hasHeader && (

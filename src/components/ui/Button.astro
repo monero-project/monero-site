@@ -8,6 +8,8 @@ interface Props extends HTMLAttributes<As> {
   variant?: Variant;
   class?: string;
   href?: string;
+  target?: string;
+  rel?: string;
   as?: As;
   type?: "button" | "submit" | "reset";
 }
@@ -16,6 +18,8 @@ const {
   variant = "primary",
   class: className = "",
   href,
+  target,
+  rel,
   as = "button",
   type = "button",
   ...rest
@@ -26,6 +30,8 @@ const {
   href ? (
     <a
       href={href}
+      target={target}
+      rel={rel}
       data-variant={variant}
       class={`button ${className}`}
       {...rest}

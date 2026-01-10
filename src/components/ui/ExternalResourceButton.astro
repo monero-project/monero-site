@@ -9,7 +9,7 @@ import MaskIcon from "./MaskIcon.astro";
 export interface Props extends HTMLAttributes<"div"> {
   href: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   logo?: string;
   rtl?: boolean;
   onionHref?: string;

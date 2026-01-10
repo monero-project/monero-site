@@ -1,15 +1,296 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-
+import WorkgroupCard from "@/components/pages/workgroups/WorkgroupCard.astro";
+import Button from "@/components/ui/Button.astro";
+import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import communityLogo from "@/assets/images/community-logo.png";
+
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
+import messageCircleIcon from "@/assets/icons/mask/messageCircle.avif";
+
+import {
+  communityWorkgroups,
+  developmentWorkgroups,
+  researchWorkgroups,
+} from "@/data/workgroups";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
 
 <Layout
-  title="Workgroups"
-  description="Join a Monero workgroup and contribute to the project."
+  title={t("workgroups:pageTitle")}
+  description={t("workgroups:description")}
 >
   <TitleCard
-    title="Workgroups"
-    subtitle="Join a Monero workgroup and contribute to the project."
+    title={t("workgroups:hero.title")}
+    subtitle={t("workgroups:hero.subtitle")}
   />
+
+  <PageContainer>
+    <InternalResourceButton
+      icon={messageCircleIcon}
+      title={t("workgroups:hangoutsNote.title")}
+      href={localizeHref(locale, "/community/hangouts")}
+    >
+      {t("workgroups:hangoutsNote.content")}
+    </InternalResourceButton>
+    <article class="hero-card">
+      <div class="hero-card-image">
+        <Image
+          src={communityLogo}
+          alt="Monero Community"
+          width={200}
+          height={200}
+        />
+      </div>
+      <div class="hero-card-content">
+        <div class="hero-card-header">
+          <h3 class="hero-card-name">
+            {t("workgroups:getStarted.communityWorkgroup.name")}
+          </h3>
+        </div>
+        <p class="hero-card-lead">
+          {t("workgroups:getStarted.communityWorkgroup.lead")}
+        </p>
+        <p class="hero-card-description">
+          {t("workgroups:getStarted.communityWorkgroup.description")}
+        </p>
+        <div class="hero-card-actions">
+          <Button
+            href="https://matrix.to/#/#monero-community:monero.social"
+            as="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hero-button"
+          >
+            {t("workgroups:getStarted.communityWorkgroup.cta")}
+            <MaskIcon src={externalLinkIcon} size="1em" />
+          </Button>
+          <Button
+            as="a"
+            href="https://web.libera.chat/#monero-community"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="secondary"
+            class="hero-button"
+          >
+            <MaskIcon src={hashtagIcon} size="0.9em" />
+            IRC
+          </Button>
+        </div>
+      </div>
+    </article>
+
+    <hr aria-hidden="true" />
+
+    <div class="workgroup-columns">
+      <!-- Development Column -->
+      <PageSection
+        title={t("workgroups:columns.development.title")}
+        subtitle={t("workgroups:columns.development.subtitle")}
+        headingLevel={3}
+      >
+        <div class="column-cards">
+          {
+            developmentWorkgroups.map((wg) => (
+              <WorkgroupCard
+                name={t(wg.nameKey)}
+                action={t(wg.actionKey)}
+                bestFor={t(wg.bestForKey)}
+                icon={wg.icon}
+                chatName={wg.chatName}
+                ircHref={wg.ircHref}
+                matrixHref={wg.matrixHref}
+              />
+            ))
+          }
+        </div>
+      </PageSection>
+
+      <!-- Research Column -->
+      <PageSection
+        title={t("workgroups:columns.research.title")}
+        subtitle={t("workgroups:columns.research.subtitle")}
+        headingLevel={3}
+      >
+        <div class="column-cards">
+          {
+            researchWorkgroups.map((wg) => (
+              <WorkgroupCard
+                name={t(wg.nameKey)}
+                action={t(wg.actionKey)}
+                bestFor={t(wg.bestForKey)}
+                icon={wg.icon}
+                chatName={wg.chatName}
+                ircHref={wg.ircHref}
+                matrixHref={wg.matrixHref}
+              />
+            ))
+          }
+        </div>
+      </PageSection>
+
+      <!-- Community Column -->
+      <PageSection
+        title={t("workgroups:columns.community.title")}
+        subtitle={t("workgroups:columns.community.subtitle")}
+        headingLevel={3}
+      >
+        <div class="column-cards">
+          {
+            communityWorkgroups.map((wg) => (
+              <WorkgroupCard
+                name={t(wg.nameKey)}
+                action={t(wg.actionKey)}
+                bestFor={t(wg.bestForKey)}
+                icon={wg.icon}
+                chatName={wg.chatName}
+                ircHref={wg.ircHref}
+                matrixHref={wg.matrixHref}
+              />
+            ))
+          }
+        </div>
+      </PageSection>
+    </div>
+  </PageContainer>
 </Layout>
+
+<style>
+  .hero-card {
+    margin-top: 2rem;
+    background: var(--card-color);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .hero-card-image {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+  .hero-card-image :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hero-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--monero-orange);
+  }
+
+  .hero-card-name {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+
+  .hero-card-lead {
+    margin: 0;
+    font-weight: var(--font-weight-semibold);
+    color: var(--monero-orange);
+  }
+
+  .hero-card-description {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    max-width: 75ch;
+  }
+
+  .hero-card-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-card-actions :global(.hero-button) {
+    padding: 0.625em 1.25em;
+    gap: 0.35em;
+  }
+
+  /* Three Columns */
+  .workgroup-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .column-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 1200px) {
+    .workgroup-columns {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .workgroup-columns > :last-child {
+      grid-column: span 2;
+    }
+
+    .workgroup-columns > :last-child .column-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hero-card {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .hero-card-image {
+      margin: 0 auto;
+    }
+
+    .hero-card-header {
+      justify-content: center;
+    }
+
+    .hero-card-actions {
+      justify-content: center;
+    }
+
+    .workgroup-columns {
+      grid-template-columns: 1fr;
+    }
+
+    .workgroup-columns > :last-child {
+      grid-column: auto;
+    }
+
+    .workgroup-columns > :last-child .column-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

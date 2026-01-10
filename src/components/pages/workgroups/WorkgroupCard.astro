@@ -1,0 +1,145 @@
+---
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import type { ImageMetadata } from "astro";
+
+import matrixIcon from "@/assets/icons/mask/matrix.avif";
+
+export interface Props {
+  name: string;
+  action: string;
+  bestFor: string;
+  icon: ImageMetadata;
+  chatName: string;
+  ircHref: string;
+  matrixHref?: string;
+}
+
+const { name, action, bestFor, icon, chatName, ircHref, matrixHref } =
+  Astro.props;
+---
+
+<article class="workgroup-card">
+  <div class="card-header">
+    <div class="card-icon">
+      <MaskIcon src={icon} size="1.25em" />
+    </div>
+    <h3 class="card-name">{name}</h3>
+  </div>
+
+  <p class="card-action">{action}</p>
+
+  <p class="card-best-for">
+    <span class="best-for-label">Best for:</span>
+    {bestFor}
+  </p>
+
+  <div class="card-links">
+    <a
+      href={ircHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="chat-button"
+      title={`Join ${chatName} on IRC`}
+    >
+      #{chatName}
+    </a>
+    {
+      matrixHref && (
+        <a
+          href={matrixHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="chat-button chat-button--matrix"
+          title="Join on Matrix"
+        >
+          <MaskIcon src={matrixIcon} size="1.25em" />
+        </a>
+      )
+    }
+  </div>
+</article>
+
+<style>
+  .workgroup-card {
+    background: var(--card-color);
+    border-radius: 0.625rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--monero-orange) 12%, transparent);
+    border-radius: 0.375rem;
+    color: var(--monero-orange);
+    flex-shrink: 0;
+  }
+
+  .card-name {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+
+  .card-action {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    line-height: var(--line-height-body);
+  }
+
+  .card-best-for {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+  }
+
+  .best-for-label {
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .card-links {
+    display: flex;
+    gap: 0.375rem;
+    margin-top: auto;
+    padding-top: 0.25rem;
+  }
+
+  .chat-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0.625rem;
+    background: var(--card-hover-color);
+    border-radius: 0.375rem;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    text-decoration: none;
+    transition:
+      background 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .chat-button:hover {
+    background: var(--monero-orange);
+    color: white;
+  }
+
+  .chat-button--matrix {
+    padding: 0.375rem;
+  }
+</style>
