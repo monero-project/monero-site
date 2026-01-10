@@ -8,9 +8,10 @@ export interface Props {
   description: string;
   href: string;
   matrixHref?: string;
+  rtl?: boolean;
 }
 
-const { name, description, href, matrixHref } = Astro.props;
+const { name, description, href, matrixHref, rtl } = Astro.props;
 
 // Split channel name into prefix (muted) and suffix (highlighted)
 const parseChannelName = (channelName: string) => {
@@ -37,7 +38,7 @@ const { prefix, suffix } = parseChannelName(name);
       >
       <span class="channel-desc">{description}</span>
     </span>
-    <MaskIcon src={externalLinkIcon} size="1em" />
+    <MaskIcon src={externalLinkIcon} size="1em" rtl={rtl} />
   </a>
 
   {

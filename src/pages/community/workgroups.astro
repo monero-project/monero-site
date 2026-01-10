@@ -6,7 +6,12 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
@@ -24,6 +29,7 @@ import {
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const dir = getDirection(locale);
 ---
 
 <Layout
@@ -40,6 +46,7 @@ const t = await createTInstance(locale);
       icon={messageCircleIcon}
       title={t("workgroups:hangoutsNote.title")}
       href={localizeHref(locale, "/community/hangouts")}
+      rtl={dir === "rtl"}
     >
       {t("workgroups:hangoutsNote.content")}
     </InternalResourceButton>

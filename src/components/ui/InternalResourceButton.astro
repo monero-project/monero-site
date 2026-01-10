@@ -7,9 +7,10 @@ interface Props {
   icon?: ImageMetadata;
   title: string;
   href?: string;
+  rtl?: boolean;
 }
 
-const { icon, title, href } = Astro.props;
+const { icon, title, href, rtl } = Astro.props;
 ---
 
 {
@@ -29,7 +30,12 @@ const { icon, title, href } = Astro.props;
       </div>
 
       <span class="info-arrow" aria-hidden="true">
-        <MaskIcon src={arrowRightIcon} size="1.25em" aria-hidden="true" />
+        <MaskIcon
+          src={arrowRightIcon}
+          size="1.25em"
+          aria-hidden="true"
+          rtl={rtl}
+        />
       </span>
     </a>
   ) : (
@@ -95,7 +101,7 @@ const { icon, title, href } = Astro.props;
     color: var(--monero-orange);
     flex-shrink: 0;
     display: flex;
-    margin-left: auto;
+    margin-inline-start: auto;
     opacity: 0.8;
     transition: opacity 0.15s ease;
   }

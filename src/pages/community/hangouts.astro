@@ -5,7 +5,12 @@ import InternalResourceButton from "@/components/ui/InternalResourceButton.astro
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import usersIcon from "@/assets/icons/mask/users.avif";
@@ -14,6 +19,7 @@ import { channels, chatLinks, socialLinks } from "@/data/hangouts";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const dir = getDirection(locale);
 ---
 
 <Layout title={t("hangouts:pageTitle")} description={t("hangouts:description")}>
@@ -26,6 +32,7 @@ const t = await createTInstance(locale);
       icon={usersIcon}
       title={t("hangouts:workgroupsNote.title")}
       href={localizeHref(locale, "/community/workgroups")}
+      rtl={dir === "rtl"}
     >
       {t("hangouts:workgroupsNote.content")}
     </InternalResourceButton>
@@ -41,6 +48,7 @@ const t = await createTInstance(locale);
                   title={t(link.titleKey)}
                   subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
                   logo={link.logo}
+                  rtl={dir === "rtl"}
                 />
               </li>
             ))
@@ -58,6 +66,7 @@ const t = await createTInstance(locale);
                   title={t(link.titleKey)}
                   subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
                   logo={link.logo}
+                  rtl={dir === "rtl"}
                 />
               </li>
             ))
@@ -78,6 +87,7 @@ const t = await createTInstance(locale);
                 description={t(ch.descriptionKey)}
                 href={ch.href}
                 matrixHref={ch.matrixHref}
+                rtl={dir === "rtl"}
               />
             </li>
           ))
