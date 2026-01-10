@@ -1,0 +1,27 @@
+{
+  "pageTitle": "Sponsorships",
+  "hero": {
+    "title": "Sponsorships",
+    "subtitle": "The businesses that actively support the Monero Project in its goal to bring financial privacy to the world."
+  },
+  "currentSponsors": {
+    "title": "Current Sponsors",
+    "subtitle": "These organizations provide ongoing support for Monero infrastructure and development."
+  },
+  "contributions": {
+    "tari-labs": "Sponsors the CDN used by this website",
+    "cake-wallet": "Sponsors the mailing list, GitLab, Matrix, Taiga, and Weblate",
+    "cypher-stack": "Sponsors devops personnel to work on and maintain Monero Project infrastructure",
+    "macstadium": "Sponsors a dedicated Mac Mini that is used for Mac-related development",
+    "symas": "Sponsors its CTO Howard Chu (hyc) for his work on the Monero codebase"
+  },
+  "becomeASponsor": {
+    "title": "Become a Sponsor!",
+    "description": "If you or your organization would like to sponsor the Monero Project, please send an email to dev@getmonero.org.",
+    "cta": "Contact Us"
+  },
+  "pastSponsors": {
+    "title": "Past Sponsors",
+    "subtitle": "We thank these organizations for their previous support."
+  }
+}

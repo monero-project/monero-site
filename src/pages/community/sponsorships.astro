@@ -1,12 +1,128 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
+import SponsorCard from "@/components/pages/sponsorships/SponsorCard.astro";
+import CTACard from "@/components/ui/CTACard.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale } from "@/i18n/utils";
+
+import { currentSponsors, pastSponsors } from "@/data/sponsors";
+
+import heartPlusIcon from "@/assets/icons/mask/heartPlus.avif";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
 
-<Layout title="Sponsorships" description="Businesses supporting Monero">
+<Layout
+  title={t("sponsorships:pageTitle")}
+  description={t("sponsorships:hero.subtitle")}
+>
   <TitleCard
-    title="Sponsorships"
-    subtitle="The businesses that actively support the Monero Project in it's goal to bring financial privacy to the world."
+    title={t("sponsorships:hero.title")}
+    subtitle={t("sponsorships:hero.subtitle")}
   />
+
+  <PageContainer>
+    <PageSection
+      title={t("sponsorships:currentSponsors.title")}
+      subtitle={t("sponsorships:currentSponsors.subtitle")}
+    >
+      <div class="sponsors-grid">
+        {
+          currentSponsors.map((sponsor) => (
+            <SponsorCard
+              name={sponsor.name}
+              description={t(`sponsorships:contributions.${sponsor.id}`)}
+              href={sponsor.link}
+              logo={sponsor.logo}
+              monochrome={sponsor.monochrome}
+            />
+          ))
+        }
+      </div>
+    </PageSection>
+
+    <CTACard
+      title={t("sponsorships:becomeASponsor.title")}
+      href="mailto:dev@getmonero.org"
+      linkText={t("sponsorships:becomeASponsor.cta")}
+      icon={heartPlusIcon}
+      variant="centered"
+    >
+      {t("sponsorships:becomeASponsor.description")}
+    </CTACard>
+
+    <hr aria-hidden="true" />
+
+    <PageSection
+      title={t("sponsorships:pastSponsors.title")}
+      subtitle={t("sponsorships:pastSponsors.subtitle")}
+    >
+      <div class="past-sponsors-grid">
+        {
+          pastSponsors.map((sponsor) => (
+            <a
+              href={sponsor.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="past-sponsor-chip"
+            >
+              {sponsor.name}
+            </a>
+          ))
+        }
+      </div>
+    </PageSection>
+  </PageContainer>
 </Layout>
+
+<style>
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .past-sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .past-sponsor-chip {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--card-color);
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition:
+      background 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .past-sponsor-chip:hover {
+    background: var(--card-hover-color);
+    color: var(--heading-color);
+  }
+
+  .past-sponsor-chip::after {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    .sponsors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sponsors-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

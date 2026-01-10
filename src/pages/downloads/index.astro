@@ -6,11 +6,13 @@ import Layout from "@/layouts/Layout.astro";
 
 import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
 import CoreCard from "@/components/pages/downloads/CoreCard.astro";
+import CTACard from "@/components/ui/CTACard.astro";
 import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
 
+import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 import cliImage from "@/assets/images/cli.avif";
 import guiImage from "@/assets/images/gui.avif";
 
@@ -89,9 +91,13 @@ const tabs = [
       />
     </div>
 
-    <div class="verification-section">
-      <h2>{t("downloads:core.verifyDownload")}</h2>
-      <p
+    <CTACard
+      title={t("downloads:core.verifyDownload")}
+      href="/downloads/hashes.txt"
+      linkText={t("downloads:core.viewHashes")}
+      icon={shieldCheckIcon}
+    >
+      <Fragment
         set:html={safeMarkdown.parse(
           t("downloads:core.verifyDescription", {
             verifyInstructionLink:
@@ -99,14 +105,7 @@ const tabs = [
           }),
         )}
       />
-      <a
-        href="/downloads/hashes.txt"
-        class="verify-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        set:text={t("downloads:core.viewHashes")}
-      />
-    </div>
+    </CTACard>
   </PageContainer>
 </Layout>
 
@@ -133,34 +132,5 @@ const tabs = [
     #cli {
       scroll-margin-top: unset;
     }
-  }
-
-  .verification-section {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: var(--card-color);
-    border-radius: 0.5rem;
-    border-end-start-radius: 0;
-    border-start-start-radius: 0;
-    border-left: 3px solid var(--monero-orange);
-  }
-
-  .verification-section h2 {
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-    margin: 0 0 0.75rem 0;
-  }
-
-  .verification-section p {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-main);
-    margin: 0 0 1rem 0;
-    line-height: var(--line-height-body);
-  }
-
-  .verify-link {
-    display: inline-block;
-    color: var(--monero-orange);
-    font-weight: var(--font-weight-semibold);
   }
 </style>

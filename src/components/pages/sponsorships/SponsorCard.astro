@@ -1,0 +1,85 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  href?: string;
+  logo?: string;
+  monochrome?: boolean;
+}
+
+const { name, description, href, logo, monochrome = false } = Astro.props;
+---
+
+<article class="sponsor-card">
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    class:list={["sponsor-logo", { monochrome }]}
+  >
+    {
+      logo ? (
+        <img src={logo} alt={`${name} logo`} loading="lazy" />
+      ) : (
+        <span class="sponsor-initial">{name.charAt(0)}</span>
+      )
+    }
+  </a>
+  <h3 class="sponsor-name">{name}</h3>
+  <p class="sponsor-description">{description}</p>
+</article>
+
+<style>
+  .sponsor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+  }
+
+  .sponsor-logo {
+    width: 100%;
+    max-width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+
+  .sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+    object-fit: contain;
+  }
+
+  .sponsor-initial {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--monero-orange);
+  }
+
+  .sponsor-name {
+    margin: 0 0 0.375rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .sponsor-description {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .sponsor-logo.monochrome img {
+      filter: invert(1);
+    }
+  }
+</style>
