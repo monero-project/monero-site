@@ -4634,12 +4634,12 @@ input.accordion[type=radio]:checked + label::after {
 
 [data-tooltip]:before {
   position: absolute;
-  bottom: 150%;
+  bottom: 100%;
   left: 50%;
   margin-bottom: 5px;
-  margin-left: -80px;
+  margin-left: -90px;
   padding: 7px;
-  width: 160px;
+  width: 170px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -4654,7 +4654,7 @@ input.accordion[type=radio]:checked + label::after {
 
 [data-tooltip]:after {
   position: absolute;
-  bottom: 150%;
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   width: 0;
