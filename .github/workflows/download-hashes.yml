@@ -227,7 +227,7 @@ jobs:
           # Clone and pin the monero-torrent repo
           git clone --recurse-submodules https://github.com/plowsof/monero-torrent.git
           cd monero-torrent
-          git reset --hard 761738fd9f0d60fe655276989648a98ba6ab8188
+          git reset --hard 4727b8fd44b9e9b0adfa8d2dc8ed5edef517814a
           cd ..
 
           # Move the already-downloaded monero-* files into cdn
