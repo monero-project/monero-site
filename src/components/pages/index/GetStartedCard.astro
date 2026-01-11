@@ -43,13 +43,7 @@ const dir = getDirection(locale);
 
 <style>
   :root {
-    --num-color: var(--monero-orange);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --num-color: var(--border-color);
-    }
+    --num-color: light-dark(var(--monero-orange), var(--border-color));
   }
   .gs {
     display: flex;

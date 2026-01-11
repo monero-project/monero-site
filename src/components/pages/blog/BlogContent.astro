@@ -6,6 +6,7 @@
   #blog-content {
     line-height: var(--line-height-body);
     word-wrap: break-word;
+    color: light-dark(inherit, var(--paragraph-main));
 
     :where(h2, h3, h4) {
       font-weight: var(--font-weight-bold);
@@ -16,13 +17,14 @@
     }
 
     a:not(.moneropedia-link) {
-      color: var(--text-primary);
+      /* Moneropedia links have their own styles: src/styles/moneropedia-link.css */
+      color: light-dark(var(--text-primary), var(--paragraph-main));
       font-weight: var(--font-weight-medium);
       text-decoration-line: underline;
       text-decoration-style: dotted;
 
       &:hover {
-        color: var(--text-secondary);
+        color: light-dark(var(--text-secondary), var(--heading-color));
       }
     }
 
@@ -76,19 +78,6 @@
       border-inline-end: 3px solid var(--border-color);
       font-style: italic;
       color: var(--text-secondary);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      color: var(--paragraph-main);
-
-      a:not(.moneropedia-link) {
-        /* Moneropedia links have their own styles: src/styles/moneropedia-link.css */
-        color: var(--paragraph-main);
-
-        &:hover {
-          color: var(--heading-color);
-        }
-      }
     }
   }
 </style>

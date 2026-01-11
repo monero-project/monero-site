@@ -55,12 +55,6 @@ const safeMarkdown = createSafeMarkdown(getLocale(Astro.url));
 </article>
 
 <style>
-  @media (prefers-color-scheme: light) {
-    .icon {
-      background: var(--card-color);
-    }
-  }
-
   .resource-card {
     border: 1px solid var(--border-color);
     border-radius: 1rem;
@@ -80,6 +74,7 @@ const safeMarkdown = createSafeMarkdown(getLocale(Astro.url));
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     color: var(--monero-orange);
+    background: light-dark(var(--card-color), transparent);
   }
 
   .title {
