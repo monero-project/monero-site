@@ -6,29 +6,37 @@ interface Props {
   title: string;
   description: string;
   href: string;
-  image: string;
+  image?: string;
+  linkText?: string;
   rtl?: boolean;
 }
 
-const { title, description, href, image, rtl = false } = Astro.props;
+const {
+  title,
+  description,
+  href,
+  image,
+  linkText = "Explore",
+  rtl = false,
+} = Astro.props;
 ---
 
-<a href={href} class="knowledge-card">
+<a href={href} class="category-card">
   <div class="card-image">
-    <img src={image} alt="" />
+    {image && <img src={image} alt="" />}
   </div>
   <div class="card-content">
     <h2 class="card-title">{title}</h2>
     <p class="card-description">{description}</p>
     <span class="card-link">
-      Explore
+      {linkText}
       <MaskIcon src={arrowRight} size="1em" rtl={rtl} />
     </span>
   </div>
 </a>
 
 <style>
-  .knowledge-card {
+  .category-card {
     display: flex;
     flex-direction: column;
     background: var(--card-color);
@@ -37,7 +45,7 @@ const { title, description, href, image, rtl = false } = Astro.props;
     overflow: hidden;
   }
 
-  .knowledge-card:hover {
+  .category-card:hover {
     background: var(--card-hover-color);
   }
 
@@ -89,7 +97,7 @@ const { title, description, href, image, rtl = false } = Astro.props;
     color: var(--monero-orange);
   }
 
-  .knowledge-card:hover .card-link {
+  .category-card:hover .card-link {
     text-decoration: underline;
   }
 </style>

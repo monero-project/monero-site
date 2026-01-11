@@ -1,5 +1,5 @@
 ---
-import KnowledgeCard from "@/components/pages/knowledge-base/KnowledgeCard.astro";
+import CategoryCard from "@/components/ui/CategoryCard.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { getDirection, getLocale, localizeHref } from "@/i18n/utils";
@@ -44,7 +44,7 @@ const cards = [
     <div class="card-grid">
       {
         cards.map((card) => (
-          <KnowledgeCard
+          <CategoryCard
             title={card.title}
             description={card.description}
             href={card.href}

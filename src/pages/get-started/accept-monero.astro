@@ -68,23 +68,10 @@ import usersIcon from "@/assets/icons/mask/users.avif";
               plugins for most platforms, small fees (~0.5-1%). Some offer
               auto-conversion to fiat.
             </p>
-            <div class="service-buttons">
-              <ExternalResourceButton
-                href="https://nowpayments.io/"
-                title="NOWPayments"
-                subtitle="0.5% fee, auto-convert to fiat, 300+ coins"
-              />
-              <ExternalResourceButton
-                href="https://mixpay.me/"
-                title="MixPay"
-                subtitle="Accept any crypto, settle in XMR or fiat"
-              />
-              <ExternalResourceButton
-                href="https://www.coinpayments.net/"
-                title="CoinPayments"
-                subtitle="0.5% fee, recurring payments, marketplace tools"
-              />
-            </div>
+            <a href="/resources/monero-tools/accept/" class="inline-link">
+              View Payment Gateways
+              <MaskIcon src={arrowRightIcon} size="1em" />
+            </a>
           </AccordionItem>
 
           <AccordionItem title="Self-Hosted" variant="card" name="method">
