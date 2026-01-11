@@ -1,129 +1,129 @@
 {
   "gui": {
-    "version": "v0.18.4.4",
+    "version": "v0.18.4.5",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/gui/win64install",
         "platform": "windows",
         "format": "installer",
-        "size": "95.19 MB"
+        "size": "95.27 MB"
       },
       {
         "href": "https://downloads.getmonero.org/gui/win64",
         "platform": "windows",
         "format": "zip",
-        "size": "132.46 MB"
+        "size": "132.57 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/gui/mac64",
         "platform": "macos",
         "format": "intel",
-        "size": "65.36 MB"
+        "size": "65.39 MB"
       },
       {
         "href": "https://downloads.getmonero.org/gui/macarm8",
         "platform": "macos",
         "format": "appleSilicon",
-        "size": "47.04 MB"
+        "size": "47.07 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/gui/linux64",
         "platform": "linux",
         "format": "tarball",
-        "size": "125.59 MB"
+        "size": "125.57 MB"
       }
     ],
     "torrent": {
       "link": "https://downloads.getmonero.org/gui/torrent",
-      "magnet": "magnet:?xt=urn:btih:23382953943b4fa023d6b7c72375a26dc8ce02b6&dn=monero-gui-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
+      "magnet": "magnet:?xt=urn:btih:c2e07fa30f2bb09090421556d54f20eb395a7c2b&dn=monero-gui-v0.18.4.5&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
     },
     "name": "Fluorine Fermi"
   },
   "cli": {
-    "version": "v0.18.4.4",
+    "version": "v0.18.4.5",
     "downloads": [
       {
         "href": "https://downloads.getmonero.org/cli/win64",
         "platform": "windows",
         "format": "64bit",
-        "size": "84.24 MB"
+        "size": "84.33 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/win32",
         "platform": "windows",
         "format": "32bit",
-        "size": "80.73 MB"
+        "size": "80.83 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/mac64",
         "platform": "macos",
         "format": "intel",
-        "size": "75.86 MB"
+        "size": "75.91 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/macarm8",
         "platform": "macos",
         "format": "appleSilicon",
-        "size": "66.13 MB"
+        "size": "66.19 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/linux64",
         "platform": "linux",
         "format": "64bit",
-        "size": "79.72 MB"
+        "size": "79.76 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linux32",
         "platform": "linux",
         "format": "32bit",
-        "size": "80.90 MB"
+        "size": "80.96 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linuxarm8",
         "platform": "linux",
         "format": "armv8",
-        "size": "70.07 MB"
+        "size": "70.10 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linuxarm7",
         "platform": "linux",
         "format": "armv7",
-        "size": "68.79 MB"
+        "size": "68.83 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/linuxriscv64",
         "platform": "linux",
         "format": "riscv64",
-        "size": "74.21 MB"
+        "size": "74.24 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/androidarm8",
         "platform": "android",
         "format": "armv8",
-        "size": "85.54 MB"
+        "size": "85.55 MB"
       },
       {
         "href": "https://downloads.getmonero.org/cli/androidarm7",
         "platform": "android",
         "format": "armv7",
-        "size": "87.69 MB"
+        "size": "87.70 MB"
       },
       "separator",
       {
         "href": "https://downloads.getmonero.org/cli/freebsd64",
         "platform": "freebsd",
         "format": "64bit",
-        "size": "71.24 MB"
+        "size": "71.26 MB"
       }
     ],
     "torrent": {
       "link": "https://downloads.getmonero.org/cli/torrent",
-      "magnet": "magnet:?xt=urn:btih:9c7b39bfb11abcffc869480efb8eafec7bdd1b87&dn=monero-v0.18.4.4&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
+      "magnet": "magnet:?xt=urn:btih:df5b85d9a9d79f49c5ff4c7a6e1fc2fa5f8b3f2d&dn=monero-v0.18.4.5&ws=https%3A%2F%2Fdownloads.getmonero.org%2F"
     },
     "name": "Fluorine Fermi"
   }
