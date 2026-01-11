@@ -1,0 +1,95 @@
+---
+import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  image: string;
+  rtl?: boolean;
+}
+
+const { title, description, href, image, rtl = false } = Astro.props;
+---
+
+<a href={href} class="knowledge-card">
+  <div class="card-image">
+    <img src={image} alt="" />
+  </div>
+  <div class="card-content">
+    <h2 class="card-title">{title}</h2>
+    <p class="card-description">{description}</p>
+    <span class="card-link">
+      Explore
+      <MaskIcon src={arrowRight} size="1em" rtl={rtl} />
+    </span>
+  </div>
+</a>
+
+<style>
+  .knowledge-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  .knowledge-card:hover {
+    background: var(--card-hover-color);
+  }
+
+  .card-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--card-hover-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .card-title {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    line-height: var(--line-height-title);
+  }
+
+  .card-description {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    margin-top: auto;
+    padding-top: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--monero-orange);
+  }
+
+  .knowledge-card:hover .card-link {
+    text-decoration: underline;
+  }
+</style>
