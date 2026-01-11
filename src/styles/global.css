@@ -1,26 +1,31 @@
 :root {
+  color-scheme: light dark;
+
   /* Accent Colors */
   --monero-orange: #e2611f;
 
   /* Text Colors */
-  --heading-color: #191b23;
-  --text-primary: #2e3038;
-  --text-secondary: #5c5e67;
-  --paragraph-main: #44464e;
-  --paragraph-subtitle: #75767f;
+  --heading-color: light-dark(#191b23, #f0f0f0);
+  --text-primary: light-dark(#2e3038, #c6c6d0);
+  --text-secondary: light-dark(#5c5e67, #9a9ba3);
+  --paragraph-main: light-dark(#44464e, #c6c6d0);
+  --paragraph-subtitle: light-dark(#75767f, #a9aab4);
 
   /* Surface Colors */
-  --bg-color: #ffffff;
-  --card-color: #f9f7fc;
+  --bg-color: light-dark(#ffffff, #171717);
+  --card-color: light-dark(#f9f7fc, #211f26);
   --card-hover-color: color-mix(
     in srgb,
     var(--card-color),
     var(--heading-color) 5%
   );
-  --footer-color: #f0ecf4;
+  --footer-color: light-dark(#f0ecf4, #211f26);
+
+  /* Button Colors */
+  --secondary-button-color: light-dark(#f9f7fc, #36343b);
 
   /* Border Colors */
-  --border-color: #e4e1e9;
+  --border-color: light-dark(#e4e1e9, #36343b);
 
   /* Spacing */
   --page-top-margin: 2rem;
@@ -53,38 +58,6 @@
 
   /* Maximum Content Width */
   --content-max-width: 1600px;
-}
-
-/* ========================================
-   Dark Mode
-   ======================================== */
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Text Colors */
-    --text-secondary: #9a9ba3;
-    --paragraph-main: #c6c6d0;
-    --paragraph-subtitle: #a9aab4;
-    --heading-color: #f0f0f0;
-    --text-primary: var(--paragraph-main);
-
-    /* Surface Colors */
-    --bg-color: #171717;
-    --card-color: #211f26;
-    --card-hover-color: #e1e1ec0d;
-    --footer-color: #211f26;
-    --card-hover-color: color-mix(
-      in srgb,
-      var(--card-color),
-      var(--heading-color) 5%
-    );
-
-    /* Button Colors */
-    --secondary-button-color: #36343b;
-
-    /* Border Colors */
-    --border-color: #36343b;
-  }
 }
 
 /* ========================================
