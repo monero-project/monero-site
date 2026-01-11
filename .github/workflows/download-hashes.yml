@@ -266,28 +266,36 @@ jobs:
           CDN_CLI_URL="https://github.com/plowsof/monero-torrent/releases/download/${version_cli}/monero-${version_cli}.torrent"
           CDN_GUI_URL="https://github.com/plowsof/monero-torrent/releases/download/${version_gui}/monero-gui-${version_gui}.torrent"
 
-          wget -q "$CDN_CLI_URL" -O "monero-${version_cli}.torrent"
-          wget -q "$CDN_GUI_URL" -O "monero-gui-${version_gui}.torrent"
-
-          CDN_MAGNET_LINK_CLI="$(transmission-show -m "monero-${version_cli}.torrent")"
-          CDN_MAGNET_LINK_GUI="$(transmission-show -m "monero-gui-${version_gui}.torrent")"
-
-          # Compare local vs CDN magnets
-          if [ "$MAGNET_LINK_CLI" != "$CDN_MAGNET_LINK_CLI" ]; then
-            echo "CLI torrent magnet mismatch between local build and CDN version" >&2
-            echo "Local: $MAGNET_LINK_CLI" >&2
-            echo "CDN : $CDN_MAGNET_LINK_CLI" >&2
-            exit 1
+          CDN_AVAILABLE=true
+          if ! wget --spider -q "$CDN_CLI_URL" || ! wget --spider -q "$CDN_GUI_URL"; then
+            echo "::warning title=CDN-Torrents::CDN torrent files not available yet, skipping comparison"
+            CDN_AVAILABLE=false
           fi
 
-          if [ "$MAGNET_LINK_GUI" != "$CDN_MAGNET_LINK_GUI" ]; then
-            echo "GUI torrent magnet mismatch between local build and CDN version" >&2
-            echo "Local: $MAGNET_LINK_GUI" >&2
-            echo "CDN : $CDN_MAGNET_LINK_GUI" >&2
-            exit 1
-          fi
+          if [ "$CDN_AVAILABLE" = true ]; then
+            wget -q "$CDN_CLI_URL" -O "monero-${version_cli}.torrent"
+            wget -q "$CDN_GUI_URL" -O "monero-gui-${version_gui}.torrent"
 
-          echo "Torrent files and magnet links match local build and CDN."
+            CDN_MAGNET_LINK_CLI="$(transmission-show -m "monero-${version_cli}.torrent")"
+            CDN_MAGNET_LINK_GUI="$(transmission-show -m "monero-gui-${version_gui}.torrent")"
+
+            # Compare local vs CDN magnets
+            if [ "$MAGNET_LINK_CLI" != "$CDN_MAGNET_LINK_CLI" ]; then
+              echo "CLI torrent magnet mismatch between local build and CDN version" >&2
+              echo "Local: $MAGNET_LINK_CLI" >&2
+              echo "CDN : $CDN_MAGNET_LINK_CLI" >&2
+              exit 1
+            fi
+
+            if [ "$MAGNET_LINK_GUI" != "$CDN_MAGNET_LINK_GUI" ]; then
+              echo "GUI torrent magnet mismatch between local build and CDN version" >&2
+              echo "Local: $MAGNET_LINK_GUI" >&2
+              echo "CDN : $CDN_MAGNET_LINK_GUI" >&2
+              exit 1
+            fi
+
+            echo "Torrent files and magnet links match local build and CDN."
+          fi
           echo "magnet_gui=$MAGNET_LINK_GUI" >> $GITHUB_OUTPUT
           echo "magnet_cli=$MAGNET_LINK_CLI" >> $GITHUB_OUTPUT
 
