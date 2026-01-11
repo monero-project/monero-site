@@ -3,11 +3,11 @@ on:
   push:
     paths:
       - "src/data/contributing/contributing.json"
-      - "public/media/contributing/*.png"
+      - "public/contributing/*.png"
   pull_request:
     paths:
       - "src/data/contributing/contributing.json"
-      - "public/media/contributing/*.png"
+      - "public/contributing/*.png"
   workflow_dispatch:
 jobs:
   validate-contributing-hashes:

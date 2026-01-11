@@ -24,17 +24,17 @@ export const chatLinks: ChatLink[] = [
     titleKey: "hangouts:chat.matrix.title",
     subtitleKey: "hangouts:chat.matrix.subtitle",
     href: "https://matrix.to/#/%23monerospace:monero.social",
-    logo: "/media/matrix.avif",
+    logo: "/media/social/matrix.avif",
   },
   {
     titleKey: "hangouts:chat.discord.title",
     href: "https://discord.gg/SyGUMWBqvF",
-    logo: "/media/discord.avif",
+    logo: "/media/social/discord.avif",
   },
   {
     titleKey: "hangouts:chat.telegram.title",
     href: "https://t.me/monero",
-    logo: "/media/telegram.avif",
+    logo: "/media/social/telegram.avif",
   },
 ];
 
@@ -43,13 +43,13 @@ export const socialLinks: SocialLink[] = [
     titleKey: "hangouts:social.reddit.title",
     subtitleKey: "hangouts:social.reddit.subtitle",
     href: "https://reddit.com/r/monero",
-    logo: "/media/reddit.avif",
+    logo: "/media/social/reddit.avif",
   },
   {
     titleKey: "hangouts:social.x.title",
     subtitleKey: "hangouts:social.x.subtitle",
     href: "https://twitter.com/monero",
-    logo: "/media/x.avif",
+    logo: "/media/social/x.avif",
   },
 ];
 

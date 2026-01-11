@@ -4,7 +4,7 @@
       {
         "id": "anonero",
         "name": "Anonero",
-        "logo": "/media/anonero.avif",
+        "logo": "/media/wallets/anonero.avif",
         "link": "https://anonero.io",
         "tags": {
           "mobile": ["android"],
@@ -14,7 +14,7 @@
       {
         "id": "feather",
         "name": "Feather Wallet",
-        "logo": "/media/feather.avif",
+        "logo": "/media/wallets/feather.avif",
         "link": "https://featherwallet.org",
         "tags": {
           "desktop": ["windows", "macos", "linux"],
@@ -24,7 +24,7 @@
       {
         "id": "monerocom",
         "name": "Monero.com",
-        "logo": "/media/monerocom.avif",
+        "logo": "/media/wallets/monerocom.avif",
         "link": "https://monero.com/wallets",
         "tags": {
           "mobile": ["android", "ios"],
@@ -34,7 +34,7 @@
       {
         "id": "monerujo",
         "name": "Monerujo",
-        "logo": "/media/monerujo.avif",
+        "logo": "/media/wallets/monerujo.avif",
         "link": "https://monerujo.io",
         "tags": {
           "mobile": ["android"],
@@ -44,7 +44,7 @@
       {
         "id": "monfluo",
         "name": "Monfluo",
-        "logo": "/media/monfluo.avif",
+        "logo": "/media/wallets/monfluo.avif",
         "link": "https://codeberg.org/acx/monfluo/releases",
         "tags": {
           "mobile": ["android"],
@@ -56,7 +56,7 @@
       {
         "id": "cakewallet",
         "name": "Cake Wallet",
-        "logo": "/media/cakewallet.avif",
+        "logo": "/media/wallets/cakewallet.avif",
         "link": "https://cakewallet.com",
         "tags": {
           "desktop": ["windows", "macos", "linux"],
@@ -67,7 +67,7 @@
       {
         "id": "eigenwallet",
         "name": "Eigenwallet",
-        "logo": "/media/eigenwallet.avif",
+        "logo": "/media/wallets/eigenwallet.avif",
         "link": "https://eigenwallet.org",
         "tags": {
           "desktop": ["windows", "macos", "linux"],
@@ -77,7 +77,7 @@
       {
         "id": "stackwallet",
         "name": "Stack Wallet",
-        "logo": "/media/stack-wallet.webp",
+        "logo": "/media/wallets/stack-wallet.webp",
         "link": "https://stackwallet.com",
         "tags": {
           "desktop": ["windows", "macos", "linux"],
@@ -88,7 +88,7 @@
       {
         "id": "unstoppable",
         "name": "Unstoppable Wallet",
-        "logo": "/media/unstoppable.avif",
+        "logo": "/media/wallets/unstoppable.avif",
         "link": "https://unstoppable.money",
         "tags": {
           "mobile": ["android", "ios"],
@@ -100,7 +100,7 @@
       {
         "id": "edge",
         "name": "Edge Wallet",
-        "logo": "/media/edge.avif",
+        "logo": "/media/wallets/edge.avif",
         "link": "https://edge.app/monero-wallet/",
         "tags": {
           "mobile": ["android", "ios"],
@@ -113,7 +113,7 @@
     {
       "id": "keystone",
       "name": "Keystone",
-      "logo": "/media/keystone.avif",
+      "logo": "/media/wallets/hardware/keystone.avif",
       "link": "https://guide.keyst.one/docs/feather",
       "tags": {
         "general": ["3 Pro"]
@@ -122,7 +122,7 @@
     {
       "id": "ledger",
       "name": "Ledger",
-      "logo": "/media/ledger.avif",
+      "logo": "/media/wallets/hardware/ledger.avif",
       "link": "https://www.ledger.com/coin/wallet/monero",
       "tags": {
         "general": ["Nano S", "Nano X", "Flex", "Stax"]
@@ -131,7 +131,7 @@
     {
       "id": "trezor",
       "name": "Trezor",
-      "logo": "/media/trezor.avif",
+      "logo": "/media/wallets/hardware/trezor.avif",
       "link": "https://trezor.io/coins/wallet/monero",
       "tags": {
         "general": ["Model T", "Safe 3", "Safe 5", "Safe 7"]
@@ -140,7 +140,7 @@
     {
       "id": "cupcake",
       "name": "Cupcake",
-      "logo": "/media/cupcake.avif",
+      "logo": "/media/wallets/cupcake.avif",
       "link": "https://docs.cakewallet.com/cupcake/",
       "tags": {
         "general": ["i18n:diy"],
@@ -150,7 +150,7 @@
     {
       "id": "sidekick",
       "name": "Sidekick",
-      "logo": "/media/sidekick.avif",
+      "logo": "/media/wallets/sidekick.avif",
       "link": "https://sidekick.monerujo.app/",
       "tags": {
         "general": ["i18n:diy"],
@@ -162,7 +162,7 @@
     {
       "id": "cuprate",
       "name": "Cuprate",
-      "logo": "/media/cuprate.avif",
+      "logo": "/media/nodes/cuprate.avif",
       "link": "https://github.com/Cuprate/cuprate",
       "tags": {
         "desktop": ["windows", "macos", "linux"],
