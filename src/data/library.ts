@@ -118,7 +118,7 @@ export const newsletters: Newsletter[] = [
     title: "This Week in Monero",
     description:
       "Weekly insights and updates from the Monero ecosystem on the latest developments and news.",
-    url: "https://blog.localmonero.co/",
+    url: "https://cyphergoat.com/this-week-in-monero",
   },
   {
     title: "The Monero Standard",
