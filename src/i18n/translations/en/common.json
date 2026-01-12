@@ -92,10 +92,10 @@
           "aboutMonero": "About Monero",
           "moneropedia": "Moneropedia",
           "knowledgeBase": "Knowledge Base",
-          "downloads": "Downloads",
           "exchanges": "Exchanges",
           "merchants": "Merchants",
-          "moneroDocs": "Monero Docs"
+          "moneroDocs": "Monero Docs",
+          "faq": "FAQ"
         }
       },
       "reachOut": {

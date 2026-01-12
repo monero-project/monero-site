@@ -8,8 +8,9 @@ import Hero from "@/components/pages/index/Hero.astro";
 import IndexCard from "@/components/pages/index/IndexCard.astro";
 import ResourceCard from "@/components/pages/index/ResourceCard.astro";
 
-import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif";
-import faqIcon from "@/assets/icons/mask/faq.avif";
+import codeIcon from "@/assets/icons/mask/codeXml.avif";
+import chatIcon from "@/assets/icons/mask/messageCircle.avif";
+import usersIcon from "@/assets/icons/mask/users.avif";
 
 import landingImage from "@/assets/images/landing.avif";
 import { Image } from "astro:assets";
@@ -97,24 +98,31 @@ const t = await createTInstance(locale);
     </IndexCard>
     <hr />
     <IndexCard
-      title={t("index:resourcesTitle")}
-      description={t("index:resourcesDescription")}
-      id="monero-resources"
+      title={t("index:getInvolvedTitle")}
+      description={t("index:getInvolvedDescription")}
+      id="get-involved"
     >
       <div id="resource-container">
         <ResourceCard
-          title={t("index:faqTitle")}
-          description={t("index:faqDesc")}
-          ctaLabel={t("index:faqCta")}
-          ctaHref={localizeHref(locale, "/get-started/faq")}
-          icon={faqIcon}
+          title={t("index:hangoutsTitle")}
+          description={t("index:hangoutsDesc")}
+          ctaLabel={t("index:hangoutsCta")}
+          ctaHref={localizeHref(locale, "/community/hangouts")}
+          icon={chatIcon}
         />
         <ResourceCard
-          title={t("index:moneroDocsTitle")}
-          description={t("index:moneroDocsDesc")}
-          ctaLabel={t("index:moneroDocsCta")}
-          ctaHref="https://docs.getmonero.org"
-          icon={developerGuidesIcon}
+          title={t("index:workgroupsTitle")}
+          description={t("index:workgroupsDesc")}
+          ctaLabel={t("index:workgroupsCta")}
+          ctaHref={localizeHref(locale, "/community/workgroups")}
+          icon={usersIcon}
+        />
+        <ResourceCard
+          title={t("index:contributeTitle")}
+          description={t("index:contributeDesc")}
+          ctaLabel={t("index:contributeCta")}
+          ctaHref={localizeHref(locale, "/get-started/contribute")}
+          icon={codeIcon}
         />
       </div>
     </IndexCard>

@@ -28,12 +28,15 @@
   "step3Title": "Spend Monero",
   "step3Desc": "Once Monero is in your wallet, you can exchange it for goods, services and other currencies, privately and with very low fees.",
   "step3Cta": "Use Monero",
-  "resourcesTitle": "Monero Resources",
-  "resourcesDescription": "Explore the knowledge base to learn everything about Monero, from basic blockchain terms to advanced privacy mechanisms and technology.",
-  "faqTitle": "FAQ",
-  "faqDesc": "We've heard a lot of questions over the years and have compiled a thorough and varied FAQ. Don't worry, if your questions are not in there, you can always ask the [community](/community/hangouts/).",
-  "faqCta": "Find your answer",
-  "moneroDocsTitle": "Monero Docs",
-  "moneroDocsDesc": "Comprehensive guides for users and developers to use Monero effectively and securely.",
-  "moneroDocsCta": "Read Docs"
+  "getInvolvedTitle": "Get Involved",
+  "getInvolvedDescription": "Monero is built by a passionate global community. Connect with other members, collaborate with workgroups, or contribute your skills to help shape the future of private money.",
+  "hangoutsTitle": "Hangouts",
+  "hangoutsDesc": "Connect with the Monero community on Matrix, IRC, Reddit, and other platforms. Ask questions, share ideas, and meet like-minded privacy advocates.",
+  "hangoutsCta": "Join the conversation",
+  "workgroupsTitle": "Workgroups",
+  "workgroupsDesc": "Find your place among dedicated contributors. Workgroups focus on development, research, localization, and community outreach.",
+  "workgroupsCta": "Find a workgroup",
+  "contributeTitle": "Contribute",
+  "contributeDesc": "Whether you're a developer, designer, writer, or just passionate about privacy, there's a way for you to help Monero grow.",
+  "contributeCta": "Start contributing"
 }
