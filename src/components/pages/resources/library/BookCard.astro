@@ -1,0 +1,178 @@
+---
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import bookTextIcon from "@/assets/icons/mask/bookText.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import type { Book } from "@/data/library";
+import { getDirection, getLocale } from "@/i18n/utils";
+import { Image } from "astro:assets";
+
+export type Props = Book;
+
+const { title, subtitle, description, cover, coverAlt, link, translations } =
+  Astro.props;
+const dir = getDirection(getLocale(Astro.url));
+---
+
+<article class="book-card">
+  <a href={link} class="book-cover" target="_blank" rel="noopener noreferrer">
+    {
+      cover ? (
+        typeof cover === "string" ? (
+          <img src={cover} alt={coverAlt || `${title} cover`} loading="lazy" />
+        ) : (
+          <Image src={cover} alt={coverAlt || `${title} cover`} />
+        )
+      ) : (
+        <div class="book-placeholder">
+          <MaskIcon src={bookTextIcon} size="2rem" />
+        </div>
+      )
+    }
+  </a>
+
+  <div class="book-info">
+    <h3 class="book-title">{title}</h3>
+    {subtitle && <span class="book-subtitle">{subtitle}</span>}
+    <p class="book-description">{description}</p>
+
+    <a href={link} class="book-link" target="_blank" rel="noopener noreferrer">
+      Read Online
+      <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
+    </a>
+
+    {
+      translations && translations.length > 0 && (
+        <div class="book-translations">
+          <span class="translations-label">Also available in:</span>
+          {translations.map((t, i) => (
+            <>
+              <a href={t.url} target="_blank" rel="noopener noreferrer">
+                {t.language}
+              </a>
+              {i < translations.length - 1 && <span class="sep">·</span>}
+            </>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</article>
+
+<style>
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+  }
+
+  .book-cover {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background: var(--background-color);
+    overflow: hidden;
+  }
+
+  .book-cover::after {
+    display: none;
+  }
+
+  .book-cover img,
+  .book-cover :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+
+  .book-cover:hover img,
+  .book-cover:hover :global(img) {
+    transform: scale(1.03);
+  }
+
+  .book-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--monero-orange);
+    opacity: 0.4;
+  }
+
+  .book-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+  }
+
+  .book-title {
+    margin: 0;
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    line-height: 1.2;
+  }
+
+  .book-subtitle {
+    font-size: var(--font-size-xs);
+    color: var(--paragraph-subtitle);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .book-description {
+    margin: 0.25rem 0 0;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    flex: 1;
+  }
+
+  .book-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    margin-top: 0.5rem;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--monero-orange);
+  }
+
+  .book-link::after {
+    display: none;
+  }
+
+  .book-translations {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: var(--font-size-xs);
+  }
+
+  .translations-label {
+    color: var(--paragraph-subtitle);
+  }
+
+  .book-translations a {
+    color: var(--paragraph-main);
+  }
+
+  .book-translations a:hover {
+    color: var(--monero-orange);
+  }
+
+  .book-translations .sep {
+    color: var(--paragraph-subtitle);
+    opacity: 0.5;
+  }
+</style>

@@ -1,15 +1,304 @@
 ---
+import PaperCard from "@/components/pages/resources/research-lab/PaperCard.astro";
+import Button from "@/components/ui/Button.astro";
+import HeroCard from "@/components/ui/HeroCard.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
+import SectionTabs from "@/components/ui/SectionTabs.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import TitleCard from "@/components/ui/TitleCard.astro";
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import bookTextIcon from "@/assets/icons/mask/bookText.avif";
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
+
+import mrlLogo from "@/assets/images/mrl-logo.avif";
+
+import { getDirection, getLocale } from "@/i18n/utils";
+
+const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
+// const t = await createTInstance(locale);
+
+import {
+  iacrPapers,
+  mrlBulletins,
+  otherPapers,
+  whitepapers,
+} from "@/data/research-lab";
+
+const paperTabs = [
+  { label: "MRL Bulletins", count: mrlBulletins.length },
+  { label: "IACR", count: iacrPapers.length },
+  { label: "Other", count: otherPapers.length },
+];
 ---
 
 <Layout
   title="Research Lab"
-  description="The Monero Research Lab's work on financial privacy and cryptocurrencies."
+  description="Explore research papers and publications from the Monero Research Lab on financial privacy and cryptocurrency."
 >
   <TitleCard
-    title="Research Lab"
-    subtitle="Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come. To contact the Monero Research Lab, please email lab@getmonero.org."
+    title="Monero Research Lab"
+    subtitle="Monero is committed to continued research into financial privacy as it involves cryptocurrencies. Below you'll find work from our researchers, with more papers to come."
   />
+
+  <PageContainer>
+    <HeroCard
+      image={mrlLogo}
+      imageAlt="Monero Research Lab"
+      title="Advancing privacy in cryptocurrency"
+      description="The Monero Research Lab (MRL) is an open, collaborative team of researchers working on cutting-edge cryptography and privacy technologies. Our work focuses on improving Monero's protocol, analyzing potential vulnerabilities, and advancing the state of financial privacy research."
+    >
+      <Button
+        href="https://moneroresearch.info/"
+        as="a"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        MoneroResearch.info
+        <MaskIcon src={externalLinkIcon} size="1em" rtl={dir === "rtl"} />
+      </Button>
+      <Button
+        href="https://matrix.to/#/#monero-research-lab:monero.social"
+        as="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="secondary"
+      >
+        Matrix
+        <MaskIcon src={externalLinkIcon} size="1em" rtl={dir === "rtl"} />
+      </Button>
+      <Button
+        as="a"
+        href="https://web.libera.chat/#monero-research-lab"
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="secondary"
+      >
+        <MaskIcon src={hashtagIcon} size="0.9em" rtl={dir === "rtl"} />
+        IRC
+      </Button>
+    </HeroCard>
+
+    <hr aria-hidden="true" />
+
+    <PageSection
+      title="Research Papers"
+      subtitle="Papers written by MRL members on cryptography, privacy, and protocol improvements."
+      anchorId="papers"
+    >
+      <div class="research-layout">
+        <div class="main-content">
+          <SectionTabs tabs={paperTabs}>
+            <div slot="panel-0" class="papers-grid">
+              {
+                mrlBulletins.map((paper) => (
+                  <PaperCard
+                    code={paper.code}
+                    title={paper.title}
+                    abstract={paper.abstract}
+                    url={paper.url}
+                    note={paper.note}
+                    rtl={dir === "rtl"}
+                  />
+                ))
+              }
+            </div>
+            <div slot="panel-1" class="papers-grid">
+              {
+                iacrPapers.map((paper) => (
+                  <PaperCard
+                    code={paper.code}
+                    title={paper.title}
+                    abstract={paper.abstract}
+                    url={paper.url}
+                    note={paper.note}
+                    rtl={dir === "rtl"}
+                  />
+                ))
+              }
+            </div>
+            <div slot="panel-2" class="papers-grid">
+              {
+                otherPapers.map((paper) => (
+                  <PaperCard
+                    code={paper.code}
+                    title={paper.title}
+                    abstract={paper.abstract}
+                    url={paper.url}
+                    note={paper.note}
+                    rtl={dir === "rtl"}
+                  />
+                ))
+              }
+            </div>
+          </SectionTabs>
+        </div>
+
+        <aside class="sidebar">
+          <h3 class="sidebar-title">Cryptonote Whitepapers</h3>
+          <p class="sidebar-subtitle">
+            Foundational documents describing the protocol Monero is built upon.
+          </p>
+          {
+            whitepapers.map((paper) => (
+              <a
+                href={paper.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="whitepaper-item"
+              >
+                <span class="whitepaper-icon">
+                  <MaskIcon
+                    src={bookTextIcon}
+                    size="1.25rem"
+                    rtl={dir === "rtl"}
+                  />
+                </span>
+                <span class="whitepaper-title">{paper.title}</span>
+                <span class="whitepaper-arrow">
+                  <MaskIcon
+                    src={arrowRightIcon}
+                    size="1em"
+                    rtl={dir === "rtl"}
+                  />
+                </span>
+              </a>
+            ))
+          }
+        </aside>
+      </div>
+    </PageSection>
+  </PageContainer>
 </Layout>
+
+<style>
+  .research-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .papers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .sidebar-title {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+
+  .sidebar-subtitle {
+    margin: 0 0 0.5rem;
+    font-size: var(--font-size-xs);
+    color: var(--paragraph-subtitle);
+  }
+
+  .whitepaper-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 0.75rem;
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+
+  .whitepaper-item::after {
+    display: none;
+  }
+
+  .whitepaper-item:hover {
+    background: var(--card-hover-color);
+  }
+
+  .whitepaper-item:hover .whitepaper-arrow {
+    opacity: 1;
+    color: var(--monero-orange);
+  }
+
+  .whitepaper-icon {
+    flex-shrink: 0;
+    color: var(--monero-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whitepaper-title {
+    flex: 1;
+    font-size: var(--font-size-xs);
+    color: var(--heading-color);
+  }
+
+  .whitepaper-arrow {
+    flex-shrink: 0;
+    color: var(--paragraph-subtitle);
+    opacity: 0.5;
+    transition:
+      opacity 0.15s ease,
+      color 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 600px) {
+    .sidebar {
+      padding: 1.5rem;
+    }
+
+    .sidebar-title {
+      font-size: var(--font-size-xl);
+    }
+
+    .sidebar-subtitle {
+      font-size: var(--font-size-sm);
+    }
+
+    .whitepaper-item {
+      padding: 0.75rem 1rem;
+      gap: 0.75rem;
+    }
+
+    .whitepaper-title {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .research-layout {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .main-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 2rem;
+      flex: 0 0 20rem;
+    }
+  }
+</style>

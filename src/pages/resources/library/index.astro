@@ -1,0 +1,240 @@
+---
+import BookCard from "@/components/pages/resources/library/BookCard.astro";
+import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import TOCContainer from "@/components/ui/TOCContainer.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import bookTextIcon from "@/assets/icons/mask/bookText.avif";
+import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
+import rssIcon from "@/assets/icons/mask/rss.avif";
+
+import { books, cheatsheets, newsletters } from "@/data/library";
+
+import { getDirection, getLocale } from "@/i18n/utils";
+
+const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
+// const t = await createTInstance(locale);
+
+const sections = [
+  {
+    id: "books",
+    icon: bookTextIcon,
+    title: "Books",
+    subtitle: "In-depth educational resources",
+  },
+  {
+    id: "cheatsheets",
+    icon: receiptTextIcon,
+    title: "Cheatsheets",
+    subtitle: "Visual guides and infographics",
+  },
+  {
+    id: "newsletters",
+    icon: rssIcon,
+    title: "Newsletters",
+    subtitle: "Stay updated with the community",
+  },
+];
+---
+
+<Layout
+  title="Library"
+  description="Explore educational resources, books, and publications curated by the Monero community."
+>
+  <TitleCard
+    title="Library"
+    subtitle="Explore publications, books, and educational resources curated by the Monero community. Whether you're just starting out or diving deep into cryptography, there's something here for you."
+  />
+
+  <PageContainer>
+    <TOCContainer sections={sections} ariaLabel="Library sections" />
+    <PageSection
+      title="Books"
+      subtitle="In-depth guides and technical resources to help you understand Monero from the ground up."
+      anchorId="books"
+    >
+      <div class="books-shelf">
+        {books.map((book) => <BookCard {...book} />)}
+      </div>
+    </PageSection>
+
+    <hr aria-hidden="true" />
+
+    <PageSection title="Cheatsheets" anchorId="cheatsheets">
+      <div class="cheatsheet-intro">
+        <h3 class="salmon-title">The Salmon Series</h3>
+        <p class="section-intro">
+          Infographics dealing with Monero's inner workings. The name comes from
+          the employed colors, having semantic meanings and resembling salmon
+          browning - from raw to well-done.
+        </p>
+      </div>
+
+      <div class="cheatsheets-grid">
+        {
+          cheatsheets.map((sheet) => (
+            <a
+              href={sheet.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cheatsheet-card"
+            >
+              <div class="cheatsheet-visual">
+                <MaskIcon src={receiptTextIcon} size="2.5rem" />
+              </div>
+              <div class="cheatsheet-content">
+                <h4 class="cheatsheet-title">{sheet.title}</h4>
+                <p class="cheatsheet-description">{sheet.description}</p>
+              </div>
+              <div class="cheatsheet-action">
+                <MaskIcon
+                  src={arrowRightIcon}
+                  size="1.25em"
+                  rtl={dir === "rtl"}
+                />
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </PageSection>
+
+    <hr aria-hidden="true" />
+
+    <PageSection
+      title="Newsletters"
+      subtitle="Stay updated with the latest Monero news, developments, and community highlights."
+      anchorId="newsletters"
+    >
+      <div class="newsletters-grid">
+        {
+          newsletters.map((newsletter) => (
+            <ExternalResourceButton
+              href={newsletter.url}
+              title={newsletter.title}
+              subtitle={newsletter.description}
+              rtl={dir === "rtl"}
+            />
+          ))
+        }
+      </div>
+    </PageSection>
+  </PageContainer>
+</Layout>
+
+<style>
+  .section-intro {
+    color: var(--paragraph-subtitle);
+    margin-block: 0 1.5rem;
+    max-width: 70ch;
+    line-height: var(--line-height-body);
+  }
+
+  .books-shelf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 1600px) {
+    .books-shelf {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .cheatsheet-intro {
+    margin-bottom: 1.5rem;
+  }
+
+  .salmon-title {
+    margin-block: 0.5rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .cheatsheets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    gap: 1rem;
+  }
+
+  .cheatsheet-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .cheatsheet-card:hover {
+    background: var(--card-hover-color);
+  }
+
+  .cheatsheet-visual {
+    background: var(--background-color);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--monero-orange);
+  }
+
+  .cheatsheet-content {
+    flex: 1;
+    padding: 1rem 1.25rem;
+  }
+
+  .cheatsheet-title {
+    margin: 0 0 0.35rem;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .cheatsheet-description {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .cheatsheet-action {
+    padding: 0.75rem 1.25rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--monero-orange);
+  }
+
+  .newsletters-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 1200px) {
+    .books-shelf {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .books-shelf {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .cheatsheets-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

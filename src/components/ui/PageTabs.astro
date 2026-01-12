@@ -11,16 +11,16 @@ interface Props {
 
 const { labels = [], links, id, initial = 0, activeIndex }: Props = Astro.props;
 if (!Array.isArray(labels) || labels.length === 0) {
-  throw new Error("<Tabs> needs a non-empty labels array.");
+  throw new Error("<PageTabs> needs a non-empty labels array.");
 }
 if (labels.length > 10) {
-  throw new Error("<Tabs> supports up to 10 tabs.");
+  throw new Error("<PageTabs> supports up to 10 tabs.");
 }
 if (links && links.length !== labels.length) {
-  throw new Error("<Tabs> links array must match labels array length.");
+  throw new Error("<PageTabs> links array must match labels array length.");
 }
 if (links && labels.some((_, i) => Astro.slots.has(`panel-${i}`))) {
-  throw new Error("<Tabs> cannot have both links and slot content.");
+  throw new Error("<PageTabs> cannot have both links and slot content.");
 }
 const uid = id ?? `tabs-${crypto.randomUUID()}`;
 const I = (n: number) =>
@@ -277,17 +277,11 @@ const active = I(initial);
       label[for$="-#{$i}"] {
       background: var(--footer-color);
     }
-  }
-
-  @for $i from 0 through 9 {
     fieldset:has(input[id$="-#{$i}"]:focus-visible)
       ~ .tab-header
       label[for$="-#{$i}"] {
       outline: 2px solid currentColor;
     }
-  }
-
-  @for $i from 0 through 9 {
     fieldset:has(input[id$="-#{$i}"]:checked)
       ~ .tab-content
       .panel[id$="-panel-#{$i}"] {

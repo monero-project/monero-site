@@ -1,8 +1,8 @@
 ---
 import BlogCard from "@/components/pages/blog/BlogCard.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
+import PageTabs from "@/components/ui/PageTabs.astro";
 import Paginator from "@/components/ui/Paginator.astro";
-import Tabs from "@/components/ui/Tabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import {
   createTInstance,
@@ -103,7 +103,7 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
   />
   <PageContainer>
     <div class="tabs-bar">
-      <Tabs
+      <PageTabs
         labels={tabs.map((t) => t.label)}
         links={tabs.map((t) => localizeHref(locale, t.link))}
         activeIndex={activeTab}

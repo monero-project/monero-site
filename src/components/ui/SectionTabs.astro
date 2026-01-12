@@ -1,0 +1,179 @@
+---
+import crypto from "node:crypto";
+
+interface Tab {
+  label: string;
+  count?: number;
+}
+
+interface Props {
+  tabs: Tab[];
+  class?: string;
+}
+
+const { tabs, class: className } = Astro.props;
+
+if (!tabs || tabs.length === 0) {
+  throw new Error("<SectionTabs> requires at least one tab");
+}
+
+const uid = `stabs-${crypto.randomUUID().slice(0, 8)}`;
+---
+
+<div class:list={["section-tabs", className]} id={uid}>
+  {
+    tabs.map((_, index) => (
+      <input
+        type="radio"
+        name={uid}
+        id={`${uid}-${index}`}
+        class="tab-input"
+        checked={index === 0}
+      />
+    ))
+  }
+
+  <div class="tab-labels">
+    {
+      tabs.map((tab, index) => (
+        <label for={`${uid}-${index}`} class="tab-label">
+          {tab.label}
+          {tab.count !== undefined && (
+            <span class="tab-count">{tab.count}</span>
+          )}
+        </label>
+      ))
+    }
+  </div>
+
+  <div class="tab-panels">
+    {
+      tabs[0] && (
+        <div class="tab-panel">
+          <slot name="panel-0" />
+        </div>
+      )
+    }
+    {
+      tabs[1] && (
+        <div class="tab-panel">
+          <slot name="panel-1" />
+        </div>
+      )
+    }
+    {
+      tabs[2] && (
+        <div class="tab-panel">
+          <slot name="panel-2" />
+        </div>
+      )
+    }
+    {
+      tabs[3] && (
+        <div class="tab-panel">
+          <slot name="panel-3" />
+        </div>
+      )
+    }
+    {
+      tabs[4] && (
+        <div class="tab-panel">
+          <slot name="panel-4" />
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<style lang="scss">
+  .section-tabs {
+    position: relative;
+  }
+
+  .tab-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .tab-labels {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .tab-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--paragraph-subtitle);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease;
+
+    &:hover {
+      color: var(--heading-color);
+    }
+  }
+
+  .tab-count {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    background: var(--border-color);
+    color: var(--paragraph-subtitle);
+    padding: 0.15em 0.5em;
+    border-radius: 1em;
+  }
+
+  .tab-panels {
+    position: relative;
+  }
+
+  .tab-panel {
+    display: none;
+  }
+
+  @for $i from 1 through 5 {
+    .tab-input:nth-of-type(#{$i}):checked
+      ~ .tab-labels
+      .tab-label:nth-child(#{$i}) {
+      color: var(--monero-orange);
+      border-bottom-color: var(--monero-orange);
+
+      .tab-count {
+        background: color-mix(in srgb, var(--monero-orange) 15%, transparent);
+        color: var(--monero-orange);
+      }
+    }
+
+    .tab-input:nth-of-type(#{$i}):checked
+      ~ .tab-panels
+      .tab-panel:nth-child(#{$i}) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .tab-labels {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .tab-label {
+      padding: 0.625rem 0.75rem;
+      white-space: nowrap;
+    }
+  }
+</style>

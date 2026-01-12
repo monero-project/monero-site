@@ -1,0 +1,130 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  image: ImageMetadata;
+  imageAlt: string;
+  title?: string;
+  lead?: string;
+  description?: string;
+  class?: string;
+}
+
+const {
+  image,
+  imageAlt,
+  title,
+  lead,
+  description,
+  class: className,
+} = Astro.props;
+---
+
+<article class:list={["hero-card", className]}>
+  <div class="hero-card-image">
+    <Image src={image} alt={imageAlt} width={200} height={200} />
+  </div>
+  <div class="hero-card-content">
+    {title && <h2 class="hero-card-title">{title}</h2>}
+    {lead && <p class="hero-card-lead">{lead}</p>}
+    {description && <p class="hero-card-description">{description}</p>}
+    <div class="hero-card-actions">
+      <slot />
+    </div>
+  </div>
+</article>
+
+<style>
+  .hero-card {
+    background: var(--card-color);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .hero-card-image {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+  .hero-card-image :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hero-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-card-title {
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+
+  .hero-card-lead {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--monero-orange);
+  }
+
+  .hero-card-description {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    max-width: 75ch;
+  }
+
+  .hero-card-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-card-actions :global(a),
+  .hero-card-actions :global(button) {
+    padding: 0.625em 1.25em;
+    gap: 0.35em;
+  }
+
+  @media (max-width: 900px) {
+    .hero-card {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 1.5rem;
+      gap: 1.5rem;
+    }
+
+    .hero-card-image {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+    }
+
+    .hero-card-actions {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero-card-image {
+      width: 120px;
+      height: 120px;
+    }
+
+    .hero-card-title {
+      font-size: var(--font-size-xl);
+    }
+  }
+</style>

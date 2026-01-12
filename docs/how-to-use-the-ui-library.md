@@ -55,25 +55,25 @@ import Accordion from "@/components/ui/Accordion.astro";
 <Accordion items={[{ title: "Q1", content: "A1" }, { title: "Q2", content: "A2" }]} />
 ```
 
-Tabs - two usage patterns
+PageTabs - two usage patterns
 
 1) Navigation links (for page navigation)
 ```astro
 ---
-import Tabs from "@/components/ui/Tabs.astro";
+import PageTabs from "@/components/ui/PageTabs.astro";
 ---
-<Tabs labels={["One","Two"]} links={["/one","/two"]} activeIndex={0} />
+<PageTabs labels={["One","Two"]} links={["/one","/two"]} activeIndex={0} />
 ```
 
 2) Same-page panels (slot-based)
 ```astro
 ---
-import Tabs from "@/components/ui/Tabs.astro";
+import PageTabs from "@/components/ui/PageTabs.astro";
 ---
-<Tabs labels={["One","Two"]}>
+<PageTabs labels={["One","Two"]}>
   <div slot="panel-0">First panel content</div>
   <div slot="panel-1">Second panel content</div>
-</Tabs>
+</PageTabs>
 ```
 
 Notes: provide up to 10 labels; use `links` when you want tabs to navigate to different pages.

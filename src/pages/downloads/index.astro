@@ -7,7 +7,7 @@ import Layout from "@/layouts/Layout.astro";
 import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
 import CoreCard from "@/components/pages/downloads/CoreCard.astro";
 import CTACard from "@/components/ui/CTACard.astro";
-import Tabs from "@/components/ui/Tabs.astro";
+import PageTabs from "@/components/ui/PageTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
@@ -40,7 +40,7 @@ const tabs = [
     subtitle={t("downloads:hero.subtitle")}
   />
   <PageContainer>
-    <Tabs
+    <PageTabs
       labels={tabs.map((tab) => tab.label)}
       links={tabs.map((tab) => tab.link)}
       activeIndex={0}

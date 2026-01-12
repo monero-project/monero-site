@@ -100,4 +100,40 @@ const {
   .category-card:hover .card-link {
     text-decoration: underline;
   }
+
+  @media (max-width: 600px) {
+    .category-card {
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .card-image {
+      aspect-ratio: 1;
+      width: 5rem;
+      flex-shrink: 0;
+      padding: 1rem;
+    }
+
+    .card-content {
+      padding: 0.875rem 1rem;
+      gap: 0.25rem;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-size: var(--font-size-base);
+    }
+
+    .card-description {
+      font-size: var(--font-size-xs);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-link {
+      display: none;
+    }
+  }
 </style>

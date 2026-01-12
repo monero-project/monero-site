@@ -43,4 +43,10 @@ const { title, subtitle = "", centered = false } = Astro.props;
     color: var(--paragraph-main);
     font-weight: var(--font-weight-normal);
   }
+
+  @media (max-width: 600px) {
+    .subtitle {
+      display: none;
+    }
+  }
 </style>

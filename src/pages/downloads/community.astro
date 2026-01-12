@@ -4,7 +4,7 @@ import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import CommunityCard from "@/components/pages/downloads/CommunityCard.astro";
-import Tabs from "@/components/ui/Tabs.astro";
+import PageTabs from "@/components/ui/PageTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import TOCContainer from "@/components/ui/TOCContainer.astro";
@@ -94,7 +94,7 @@ const setBuiltinId = (wallet: Wallet) => {
     subtitle={t("downloads:hero.subtitle")}
   />
   <PageContainer>
-    <Tabs
+    <PageTabs
       labels={tabs.map((tab) => tab.label)}
       links={tabs.map((tab) => tab.link)}
       activeIndex={1}

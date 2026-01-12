@@ -1,6 +1,7 @@
 ---
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+import { getDirection, getLocale } from "@/i18n/utils";
 import type { TFunction } from "i18next";
 
 interface Props {
@@ -15,6 +16,7 @@ interface Props {
 
 const { items, status, t } = Astro.props;
 const filteredItems = items.filter((item) => item.status === status);
+const dir = getDirection(getLocale(Astro.url));
 ---
 
 <ul class="status-list">
@@ -30,7 +32,11 @@ const filteredItems = items.filter((item) => item.status === status);
           >
             <span class="status-title">
               {t(`roadmap:items.${item.id}.title`)}
-              <MaskIcon src={externalLinkIcon} size="0.875em" />
+              <MaskIcon
+                src={externalLinkIcon}
+                size="0.875em"
+                rtl={dir === "rtl"}
+              />
             </span>
             <p class="status-desc">
               {t(`roadmap:items.${item.id}.description`)}

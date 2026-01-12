@@ -51,12 +51,12 @@
         {
           "month": "august",
           "titleKey": "v15Hardfork",
-          "link": "https://www.getmonero.org/2022/04/20/network-upgrade-july-2022.html"
+          "link": "/blog/2022/04/20/network-upgrade-july-2022/"
         },
         {
           "month": "july",
           "titleKey": "fluorineFermi",
-          "link": "https://www.getmonero.org/2022/07/19/monero-0.18.0.0-released.html"
+          "link": "/blog/2022/07/19/monero-0.18.0.0-released/"
         },
         { "month": "april", "titleKey": "viewTags" }
       ]
@@ -67,12 +67,12 @@
         {
           "month": "october",
           "titleKey": "p2pool",
-          "link": "https://www.getmonero.org/2021/10/05/p2pool-released.html"
+          "link": "/blog/2021/10/05/p2pool-released/"
         },
         {
           "month": "august",
           "titleKey": "btcSwaps",
-          "link": "https://www.getmonero.org/2021/08/20/atomic-swaps.html"
+          "link": "/blog/2021/08/20/atomic-swaps/"
         },
         { "month": "february", "titleKey": "onionAddress" }
       ]
@@ -85,7 +85,7 @@
         {
           "month": "may",
           "titleKey": "v0160",
-          "link": "https://www.getmonero.org/2020/05/23/monero-0.16-released.html"
+          "link": "/blog/2020/05/23/monero-0.16-released/"
         },
         { "month": "april", "titleKey": "dandelion" }
       ]
@@ -132,18 +132,18 @@
         {
           "month": "december",
           "titleKey": "guiBeta",
-          "link": "https://www.getmonero.org/2016/12/22/monero-core-gui-beta-released.html"
+          "link": "/blog/2016/12/22/monero-core-gui-beta-released/"
         },
         {
           "month": "september",
           "titleKey": "wolframWarptangent",
-          "link": "https://www.getmonero.org/2016/09/19/monero-0.10.0-released.html"
+          "link": "/blog/2016/09/19/monero-0.10.0-released/"
         },
         { "month": "march", "titleKey": "ringSize3" },
         {
           "month": "january",
           "titleKey": "hydrogenHelix",
-          "link": "https://www.getmonero.org/2016/01/01/monero-0.9.0-hydrogen-helix-released.html"
+          "link": "/blog/2016/01/01/monero-0.9.0-hydrogen-helix-released/"
         }
       ]
     },
