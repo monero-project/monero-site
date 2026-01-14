@@ -16,7 +16,7 @@ interface Props {
 
 const { items, status, t } = Astro.props;
 const filteredItems = items.filter((item) => item.status === status);
-const dir = getDirection(getLocale(Astro.url));
+const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 ---
 
 <ul class="status-list">
@@ -32,11 +32,7 @@ const dir = getDirection(getLocale(Astro.url));
           >
             <span class="status-title">
               {t(`roadmap:items.${item.id}.title`)}
-              <MaskIcon
-                src={externalLinkIcon}
-                size="0.875em"
-                rtl={dir === "rtl"}
-              />
+              <MaskIcon src={externalLinkIcon} size="0.875em" rtl={rtl} />
             </span>
             <p class="status-desc">
               {t(`roadmap:items.${item.id}.description`)}

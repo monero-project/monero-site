@@ -63,7 +63,7 @@ const tabs = [
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="Monero Blog RSS"
+      title={t("blog:rssTitle")}
       href={new URL("feed.xml", Astro.site)}
     />
   </Fragment>
@@ -74,14 +74,15 @@ const tabs = [
   <PageContainer>
     <div class="tabs-bar">
       <PageTabs
-        labels={tabs.map((t) => t.label)}
-        links={tabs.map((t) => localizeHref(locale, t.link))}
+        labels={tabs.map((tab) => tab.label)}
+        links={tabs.map((tab) => localizeHref(locale, tab.link))}
         activeIndex={0}
+        t={t}
       />
       <a
         class="rss-icon"
         href={new URL("feed.xml", Astro.site)}
-        aria-label="RSS Feed"
+        aria-label={t("blog:aria.rssFeed")}
         title="RSS Feed"
       >
         <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
@@ -103,7 +104,7 @@ const tabs = [
         ))
       }
     </div>
-    <Paginator page={page} locale={locale} />
+    <Paginator page={page} locale={locale} t={t} />
   </PageContainer>
 </Layout>
 

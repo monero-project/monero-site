@@ -5,12 +5,15 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { Book } from "@/data/library";
 import { getDirection, getLocale } from "@/i18n/utils";
 import { Image } from "astro:assets";
+import type { TFunction } from "i18next";
 
-export type Props = Book;
+export interface Props extends Book {
+  t: TFunction;
+}
 
-const { title, subtitle, description, cover, coverAlt, link, translations } =
+const { title, subtitle, description, cover, coverAlt, link, translations, t } =
   Astro.props;
-const dir = getDirection(getLocale(Astro.url));
+const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 ---
 
 <article class="book-card">
@@ -20,7 +23,7 @@ const dir = getDirection(getLocale(Astro.url));
         typeof cover === "string" ? (
           <img src={cover} alt={coverAlt || `${title} cover`} loading="lazy" />
         ) : (
-          <Image src={cover} alt={coverAlt || `${title} cover`} />
+          <Image src={cover} alt={coverAlt || `${title} cover`} format="avif" />
         )
       ) : (
         <div class="book-placeholder">
@@ -36,14 +39,16 @@ const dir = getDirection(getLocale(Astro.url));
     <p class="book-description">{description}</p>
 
     <a href={link} class="book-link" target="_blank" rel="noopener noreferrer">
-      Read Online
-      <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
+      {t("common:components.bookCard.readOnline")}
+      <MaskIcon src={arrowRightIcon} size="1em" rtl={rtl} />
     </a>
 
     {
       translations && translations.length > 0 && (
         <div class="book-translations">
-          <span class="translations-label">Also available in:</span>
+          <span class="translations-label">
+            {t("common:components.bookCard.alsoAvailableIn")}
+          </span>
           {translations.map((t, i) => (
             <>
               <a href={t.url} target="_blank" rel="noopener noreferrer">

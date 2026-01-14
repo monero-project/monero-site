@@ -2,11 +2,17 @@
 import { locales } from "@/i18n/config";
 import { getLocaleName, localizeHref } from "@/i18n/utils";
 import { getLocale } from "astro-i18n-aut";
+import type { TFunction } from "i18next";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import Globe from "@/assets/icons/mask/globe.avif";
 
+interface Props {
+  t?: TFunction;
+}
+
+const { t } = Astro.props;
 const currentLocale = getLocale(Astro.url);
 
 const localeList = Object.keys(locales).map((code) => {
@@ -18,14 +24,19 @@ const localeList = Object.keys(locales).map((code) => {
 <details class="lang-container">
   <summary
     class="lang"
-    aria-label="Change language"
+    aria-label={t?.("common:components.languageDropdown.changeLanguage") ||
+      "Change language"}
     aria-haspopup="true"
     role="button"
   >
     <MaskIcon src={Globe} size="1.5rem" />
   </summary>
 
-  <div class="lang-dropdown" aria-label="Languages">
+  <div
+    class="lang-dropdown"
+    aria-label={t?.("common:components.languageDropdown.languages") ||
+      "Languages"}
+  >
     <ul class="lang-list">
       {
         localeList.map((locale) => (

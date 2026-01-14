@@ -105,5 +105,8 @@
       "bitcointalk": "Launched on Bitcointalk",
       "renamed": "Renamed from Bitmonero to Monero"
     }
+  },
+  "aria": {
+    "kanban": "Development status"
   }
 }

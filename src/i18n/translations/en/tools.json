@@ -1,0 +1,53 @@
+{
+  "index": {
+    "pageTitle": "Monero Tools",
+    "title": "Monero Tools",
+    "subtitle": "Find the right tool for what you're trying to do.",
+    "description": "Find the right Monero tool for what you're trying to do - explore the blockchain, build applications, or accept payments.",
+    "itemsCount": "{{count}} items"
+  },
+  "explore": {
+    "pageTitle": "Explore Monero",
+    "title": "Explore",
+    "subtitle": "Block explorers, network monitors, and utilities for browsing the Monero blockchain.",
+    "sections": {
+      "blockExplorers": {
+        "title": "Block Explorers",
+        "subtitle": "View transactions, blocks, and on-chain data."
+      },
+      "network": {
+        "title": "Network & Nodes",
+        "subtitle": "Monitor the network, find nodes, and visualize activity."
+      },
+      "utilities": {
+        "title": "Utilities",
+        "subtitle": "Wallet generators, price comparisons, statistics, and archives."
+      }
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a tool,",
+      "linkText": "open a GitHub issue"
+    }
+  },
+  "develop": {
+    "pageTitle": "Develop with Monero",
+    "title": "Develop",
+    "subtitle": "Libraries and SDKs for integrating Monero into your applications.",
+    "disclaimer": {
+      "title": "Disclaimer",
+      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a library,",
+      "linkText": "open a GitHub issue"
+    }
+  },
+  "accept": {
+    "pageTitle": "Accept Monero Payments",
+    "title": "Accept Payments",
+    "subtitle": "Payment processors and plugins for accepting Monero on your website or store.",
+    "disclaimer": {
+      "title": "Disclaimer",
+      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a payment gateway,",
+      "linkText": "open a GitHub issue"
+    }
+  }
+}

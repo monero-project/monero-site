@@ -98,6 +98,7 @@ const setBuiltinId = (wallet: Wallet) => {
       labels={tabs.map((tab) => tab.label)}
       links={tabs.map((tab) => tab.link)}
       activeIndex={1}
+      t={t}
     />
 
     <TOCContainer
@@ -242,11 +243,11 @@ const setBuiltinId = (wallet: Wallet) => {
       </div>
     </PageSection>
 
-    <DisclaimerBar icon={shieldIcon} title="Disclaimer">
-      This list is for informational purposes only. The Monero Project does not
-      endorse, recommend, or guarantee any service listed here. Always
-      double-check URLs, start with a small test amount if you're unsure, and
-      use every service at your own risk.
+    <DisclaimerBar
+      icon={shieldIcon}
+      title={t("downloads:community.disclaimerTitle")}
+    >
+      {t("downloads:community.disclaimer")}
     </DisclaimerBar>
   </PageContainer>
 </Layout>

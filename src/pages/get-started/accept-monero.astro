@@ -14,87 +14,123 @@ import appWindowIcon from "@/assets/icons/mask/app-window.avif";
 import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import handCoinsIcon from "@/assets/icons/mask/handCoins.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
+
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
 ---
 
 <Layout
-  title="Accept Monero"
-  description="Learn how to accept Monero payments for your business."
+  title={t("accept-monero:pageTitle")}
+  description={t("accept-monero:description")}
 >
   <TitleCard
-    title="Accept Monero"
-    subtitle="Start accepting private, low-fee payments for your business."
+    title={t("accept-monero:title")}
+    subtitle={t("accept-monero:subtitle")}
   />
 
   <PageContainer>
     <div class="guide-content">
-      <GuideStep step={1} title="Choose Your Setup" icon={appWindowIcon}>
-        <p>How you accept Monero depends on your needs:</p>
+      <GuideStep
+        step={1}
+        title={t("accept-monero:steps.chooseSetup.title")}
+        icon={appWindowIcon}
+        t={t}
+      >
+        <p>{t("accept-monero:steps.chooseSetup.intro")}</p>
 
         <Accordion>
-          <AccordionItem title="Wallet" variant="card" name="method" open>
+          <AccordionItem
+            title={t("accept-monero:steps.chooseSetup.wallet.title")}
+            variant="card"
+            name="method"
+            open
+          >
             <p>
-              Best for occasional payments or getting started. Generate a QR
-              code with the amount, customer scans and pays. No fees, no setup.
+              {t("accept-monero:steps.chooseSetup.wallet.description")}
             </p>
-            <a href="/downloads/community/#wallets" class="inline-link">
-              View Wallets
+            <a
+              href={localizeHref(locale, "/downloads/community/#wallets")}
+              class="inline-link"
+            >
+              {t("accept-monero:steps.chooseSetup.wallet.viewWallets")}
               <MaskIcon src={arrowRightIcon} size="1em" />
             </a>
           </AccordionItem>
 
-          <AccordionItem title="Point-of-Sale App" variant="card" name="method">
+          <AccordionItem
+            title={t("accept-monero:steps.chooseSetup.pos.title")}
+            variant="card"
+            name="method"
+          >
             <p>
-              Dedicated apps for regular in-person use. Get fiat price
-              conversion, invoice tracking, and configurable confirmation
-              settings.
+              {t("accept-monero:steps.chooseSetup.pos.description")}
             </p>
             <div class="service-buttons">
               <ExternalResourceButton
                 href="https://bitrequest.io/"
                 title="BitRequest"
-                subtitle="Multi-coin point-of-sale app"
+                subtitle={t(
+                  "accept-monero:steps.chooseSetup.pos.services.bitrequest",
+                )}
               />
               <ExternalResourceButton
                 href="https://docs.btcpayserver.org/Apps/#point-of-sale-app"
                 title="BTCPay Server POS"
-                subtitle="Point-of-sale app for BTCPay Server"
+                subtitle={t(
+                  "accept-monero:steps.chooseSetup.pos.services.btcpayPos",
+                )}
               />
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Payment Processor" variant="card" name="method">
+          <AccordionItem
+            title={t("accept-monero:steps.chooseSetup.processor.title")}
+            variant="card"
+            name="method"
+          >
             <p>
-              Third-party services that handle payments for you. Quick setup,
-              plugins for most platforms, small fees (~0.5-1%). Some offer
-              auto-conversion to fiat.
+              {t("accept-monero:steps.chooseSetup.processor.description")}
             </p>
-            <a href="/resources/monero-tools/accept/" class="inline-link">
-              View Payment Gateways
+            <a
+              href={localizeHref(locale, "/resources/tools/accept/")}
+              class="inline-link"
+            >
+              {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
               <MaskIcon src={arrowRightIcon} size="1em" />
             </a>
           </AccordionItem>
 
-          <AccordionItem title="Self-Hosted" variant="card" name="method">
+          <AccordionItem
+            title={t("accept-monero:steps.chooseSetup.selfHosted.title")}
+            variant="card"
+            name="method"
+          >
             <p>
-              Run your own payment server for complete control. Zero fees, full
-              privacy, invoice management, and works for both online and
-              in-person. Requires a server and technical setup.
+              {t("accept-monero:steps.chooseSetup.selfHosted.description")}
             </p>
             <div class="service-buttons">
               <ExternalResourceButton
                 href="https://btcpayserver.org/"
                 title="BTCPay Server"
-                subtitle="Open-source, multi-coin, includes POS app"
+                subtitle={t(
+                  "accept-monero:steps.chooseSetup.selfHosted.services.btcpay",
+                )}
               />
               <ExternalResourceButton
                 href="https://bitcart.ai/"
                 title="Bitcart"
-                subtitle="Open-source, multi-coin payment processor"
+                subtitle={t(
+                  "accept-monero:steps.chooseSetup.selfHosted.services.bitcart",
+                )}
               />
               <ExternalResourceButton
                 href="https://github.com/moneropay/moneropay"
                 title="MoneroPay"
-                subtitle="Lightweight, Monero-only, easy to deploy"
+                subtitle={t(
+                  "accept-monero:steps.chooseSetup.selfHosted.services.moneropay",
+                )}
               />
             </div>
           </AccordionItem>
@@ -105,36 +141,41 @@ import usersIcon from "@/assets/icons/mask/users.avif";
 
       <GuideStep
         step={2}
-        title="Accept Your First Payment!"
+        title={t("accept-monero:steps.acceptPayment.title")}
         icon={handCoinsIcon}
         reverse
+        t={t}
       >
         <p>
-          A customer scans your QR code or copies your address and sends Monero
-          from their wallet. You'll see the payment appear in your wallet or
-          dashboard within seconds.
+          {t("accept-monero:steps.acceptPayment.description")}
         </p>
         <p>
-          <strong>Confirmations:</strong> Transactions are typically confirmed in
-          ~2 minutes. For small purchases, most merchants hand over goods immediately.
-          For larger amounts, waiting 1-2 confirmations adds security.
+          <strong
+            >{t("accept-monero:steps.acceptPayment.confirmationsLabel")}</strong
+          >
+          {t("accept-monero:steps.acceptPayment.confirmations")}
         </p>
         <TipBox>
-          If you're using a wallet, your seed phrase is the only way to recover
-          funds. Write it down and store it securely offline - never share it
-          with anyone.
+          {t("accept-monero:steps.acceptPayment.tip")}
         </TipBox>
       </GuideStep>
 
       <hr />
 
-      <GuideStep step={3} title="Get Listed" icon={usersIcon}>
+      <GuideStep
+        step={3}
+        title={t("accept-monero:steps.getListed.title")}
+        icon={usersIcon}
+        t={t}
+      >
         <p>
-          Let the Monero community know you accept payments. Getting listed in
-          merchant directories helps customers find your business.
+          {t("accept-monero:steps.getListed.description")}
         </p>
-        <a href="/get-started/merchants" class="inline-link">
-          View Merchant Directories
+        <a
+          href={localizeHref(locale, "/get-started/merchants")}
+          class="inline-link"
+        >
+          {t("accept-monero:steps.getListed.viewDirectories")}
           <MaskIcon src={arrowRightIcon} size="1em" />
         </a>
       </GuideStep>

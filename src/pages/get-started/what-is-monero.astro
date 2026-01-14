@@ -74,7 +74,7 @@ const getLanguageLabel = (lang: string): string => {
         />
       </div>
       <div class="media">
-        <Image src={surveillanceImage} alt="" />
+        <Image src={surveillanceImage} alt="" format="avif" />
       </div>
     </div>
 
@@ -97,7 +97,7 @@ const getLanguageLabel = (lang: string): string => {
         />
       </div>
       <div class="media">
-        <Image src={cryptoLock} alt="" />
+        <Image src={cryptoLock} alt="" format="avif" />
       </div>
     </div>
 
@@ -318,7 +318,7 @@ const getLanguageLabel = (lang: string): string => {
           controls
           preload="none"
           poster="/media/msmsm.webp"
-          aria-label="Dr. Daniel Kim's presentation on Monero"
+          aria-label={t("what-is-monero:aria.presentationVideo")}
         >
           <source src="/media/msmsm.mp4" type="video/mp4" />
           <track
@@ -373,7 +373,7 @@ const getLanguageLabel = (lang: string): string => {
         </div>
       </div>
       <div class="media">
-        <Image src={communityLogo} alt="" />
+        <Image src={communityLogo} alt="" format="avif" />
       </div>
     </div>
 

@@ -31,7 +31,7 @@ const localizedLink = localizeHref(locale, `/blog/${id}/`);
 
 <div class="card-container">
   <a
-    class={`thumbnail ${!image ? "no-image" : ""}`}
+    class:list={["thumbnail", { "no-image": !image }]}
     href={localizedLink}
     tabindex="-1"
     aria-hidden="true"

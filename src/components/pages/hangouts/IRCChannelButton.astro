@@ -2,16 +2,19 @@
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import matrixIcon from "@/assets/icons/mask/matrix.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+import { getDirection, getLocale } from "@/i18n/utils";
+import type { TFunction } from "i18next";
 
 export interface Props {
   name: string;
   description: string;
   href: string;
   matrixHref?: string;
-  rtl?: boolean;
+  t: TFunction;
 }
 
-const { name, description, href, matrixHref, rtl } = Astro.props;
+const { name, description, href, matrixHref, t } = Astro.props;
+const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 
 // Split channel name into prefix (muted) and suffix (highlighted)
 const parseChannelName = (channelName: string) => {
@@ -48,8 +51,8 @@ const { prefix, suffix } = parseChannelName(name);
         target="_blank"
         rel="noopener noreferrer"
         class="matrix-link"
-        title="Matrix"
-        aria-label="Open on Matrix"
+        title={t("common:components.ircChannelButton.matrix")}
+        aria-label={t("common:components.ircChannelButton.openOnMatrix")}
       >
         <MaskIcon src={matrixIcon} size="2em" />
       </a>

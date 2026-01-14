@@ -57,19 +57,19 @@ const navItems = navigationItems.map((item) => {
 
     <input id="nav-toggle" class="nav-toggle" type="checkbox" />
 
-    <nav id="primary-nav" class="nav" aria-label="Primary">
+    <nav id="primary-nav" class="nav" aria-label={t("common:aria.primaryNav")}>
       <div class="drawer-header">
         <label
           for="nav-toggle"
           class="close"
           aria-controls="primary-nav"
-          aria-label="Close menu"
+          aria-label={t("common:aria.closeMenu")}
         >
           <MaskIcon src={close} size="1.5rem" />
         </label>
       </div>
       <fieldset>
-        <legend class="sr-only">Primary navigation sections</legend>
+        <legend class="sr-only">{t("common:aria.primaryNavSections")}</legend>
         <ul class="nav-list">
           {navItems.map((item) => <NavItem {...item} />)}
         </ul>
@@ -80,17 +80,17 @@ const navItems = navigationItems.map((item) => {
       for="nav-toggle"
       class="scrim"
       aria-hidden="true"
-      aria-label="Close menu"></label>
+      aria-label={t("common:aria.closeMenu")}></label>
 
-    <div class="utils" aria-label="Utilities">
+    <div class="utils" aria-label={t("common:aria.utilities")}>
       <div class="lang">
-        <LanguageDropdown />
+        <LanguageDropdown t={t} />
       </div>
       <label
         for="nav-toggle"
         class="hamburger"
         aria-controls="primary-nav"
-        aria-label="Open menu"
+        aria-label={t("common:aria.openMenu")}
       >
         <MaskIcon src={hamburger} size="1.5rem" />
       </label>

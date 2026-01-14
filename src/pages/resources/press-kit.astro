@@ -19,50 +19,58 @@ import {
   marketingResources,
   pressDocuments,
 } from "@/data/press-kit";
-import { getDirection, getLocale, localizeHref } from "@/i18n/utils";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
+const t = await createTInstance(locale);
 
 const sections = [
   {
     id: "brand-assets",
     icon: componentIcon,
-    title: "Brand Assets",
-    subtitle: "Logos and symbols",
+    title: t("press-kit:sections.brandAssets.title"),
+    subtitle: t("press-kit:sections.brandAssets.tocSubtitle"),
   },
   {
     id: "press-materials",
     icon: bookTextIcon,
-    title: "Press Materials",
-    subtitle: "Documentation and resources",
+    title: t("press-kit:sections.pressMaterials.title"),
+    subtitle: t("press-kit:sections.pressMaterials.tocSubtitle"),
   },
   {
     id: "contacts",
     icon: usersIcon,
-    title: "Contacts",
-    subtitle: "Reach the Monero community",
+    title: t("press-kit:sections.contacts.title"),
+    subtitle: t("press-kit:sections.contacts.tocSubtitle"),
   },
 ];
 ---
 
 <Layout
-  title="Press Kit"
-  description="Press contacts, brand assets, and media resources for Monero."
+  title={t("press-kit:pageTitle")}
+  description={t("press-kit:description")}
 >
-  <TitleCard
-    title="Press Kit"
-    subtitle="Press contacts, brand assets, and media resources for journalists and content creators."
-  />
+  <TitleCard title={t("press-kit:title")} subtitle={t("press-kit:subtitle")} />
 
   <PageContainer>
-    <TOCContainer sections={sections} ariaLabel="Press kit sections" />
+    <TOCContainer
+      sections={sections}
+      ariaLabel={t("press-kit:aria.sectionsNav")}
+    />
 
     <div class="press-content">
-      <PageSection title="Brand Assets" anchorId="brand-assets">
+      <PageSection
+        title={t("press-kit:sections.brandAssets.title")}
+        anchorId="brand-assets"
+      >
         <p class="section-intro">
-          Download official Monero logos and symbols. White background options
-          have a white background under the Monero symbol only.
+          {t("press-kit:sections.brandAssets.intro")}
         </p>
 
         <div class="assets-grid">
@@ -102,7 +110,7 @@ const sections = [
                 {asset.vectorUrl && (
                   <div class="vector-download">
                     <Button as="a" href={asset.vectorUrl} variant="secondary">
-                      Download Vector (.ai)
+                      {t("press-kit:sections.brandAssets.downloadVector")}
                     </Button>
                   </div>
                 )}
@@ -116,16 +124,21 @@ const sections = [
             href="/media/press-kit/monero-press-kit.zip"
             variant="primary"
           >
-            Download All Assets (.zip)
+            {t("press-kit:sections.brandAssets.downloadAll")}
           </Button>
         </div>
       </PageSection>
 
       <hr aria-hidden="true" />
 
-      <PageSection title="Press Materials" anchorId="press-materials">
+      <PageSection
+        title={t("press-kit:sections.pressMaterials.title")}
+        anchorId="press-materials"
+      >
         <PageSectionColumn columns={2}>
-          <PageSectionColumn title="Press Documentation">
+          <PageSectionColumn
+            title={t("press-kit:sections.pressMaterials.pressDocumentation")}
+          >
             <div class="resource-list">
               {
                 pressDocuments.map((doc) => (
@@ -133,14 +146,15 @@ const sections = [
                     href={doc.url}
                     title={doc.title}
                     subtitle={doc.description}
-                    rtl={dir === "rtl"}
                   />
                 ))
               }
             </div>
           </PageSectionColumn>
 
-          <PageSectionColumn title="Marketing Materials">
+          <PageSectionColumn
+            title={t("press-kit:sections.pressMaterials.marketingMaterials")}
+          >
             <div class="resource-list">
               {
                 marketingResources.map((resource) => (
@@ -148,7 +162,6 @@ const sections = [
                     href={resource.url}
                     title={resource.title}
                     subtitle={resource.description}
-                    rtl={dir === "rtl"}
                   />
                 ))
               }
@@ -159,34 +172,37 @@ const sections = [
 
       <hr aria-hidden="true" />
 
-      <PageSection title="Contacts" anchorId="contacts">
+      <PageSection
+        title={t("press-kit:sections.contacts.title")}
+        anchorId="contacts"
+      >
         <div class="contact-grid">
           <div class="contact-card">
-            <h3>Press Inquiries</h3>
-            <p>For media and press related questions:</p>
+            <h3>{t("press-kit:sections.contacts.pressInquiries.title")}</h3>
+            <p>{t("press-kit:sections.contacts.pressInquiries.description")}</p>
             <a href="mailto:press@getmonero.org" class="contact-link">
               press@getmonero.org
             </a>
           </div>
           <div class="contact-card">
-            <h3>Workgroups</h3>
-            <p>Contact specific Monero workgroups:</p>
+            <h3>{t("press-kit:sections.contacts.workgroups.title")}</h3>
+            <p>{t("press-kit:sections.contacts.workgroups.description")}</p>
             <a
               href={localizeHref(locale, "/community/workgroups")}
               class="contact-link"
             >
-              View Workgroups
+              {t("press-kit:sections.contacts.workgroups.link")}
               <MaskIcon src={arrowRightIcon} rtl={dir === "rtl"} />
             </a>
           </div>
           <div class="contact-card">
-            <h3>Community</h3>
-            <p>Reach the many subcommunities:</p>
+            <h3>{t("press-kit:sections.contacts.community.title")}</h3>
+            <p>{t("press-kit:sections.contacts.community.description")}</p>
             <a
               href={localizeHref(locale, "/community/hangouts")}
               class="contact-link"
             >
-              Community Hangouts
+              {t("press-kit:sections.contacts.community.link")}
               <MaskIcon src={arrowRightIcon} rtl={dir === "rtl"} />
             </a>
           </div>

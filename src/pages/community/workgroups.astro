@@ -46,7 +46,6 @@ const dir = getDirection(locale);
       icon={messageCircleIcon}
       title={t("workgroups:hangoutsNote.title")}
       href={localizeHref(locale, "/community/hangouts")}
-      rtl={dir === "rtl"}
     >
       {t("workgroups:hangoutsNote.content")}
     </InternalResourceButton>
@@ -98,6 +97,7 @@ const dir = getDirection(locale);
                 chatName={wg.chatName}
                 ircHref={wg.ircHref}
                 matrixHref={wg.matrixHref}
+                t={t}
               />
             ))
           }
@@ -121,6 +121,7 @@ const dir = getDirection(locale);
                 chatName={wg.chatName}
                 ircHref={wg.ircHref}
                 matrixHref={wg.matrixHref}
+                t={t}
               />
             ))
           }
@@ -144,6 +145,7 @@ const dir = getDirection(locale);
                 chatName={wg.chatName}
                 ircHref={wg.ircHref}
                 matrixHref={wg.matrixHref}
+                t={t}
               />
             ))
           }

@@ -1,0 +1,72 @@
+---
+import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
+import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import { paymentGateways } from "@/data/monero-tools";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+
+import shieldAlertIcon from "@/assets/icons/mask/shieldAlert.avif";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+---
+
+<Layout
+  title={t("tools:accept.pageTitle")}
+  description={t("tools:accept.subtitle")}
+>
+  <TitleCard
+    title={t("tools:accept.title")}
+    subtitle={t("tools:accept.subtitle")}
+    backHref={localizeHref(locale, "/resources/tools/")}
+    backLabel={t("tools:index.title")}
+  />
+
+  <PageContainer>
+    <ul class="tool-list">
+      {
+        paymentGateways.map((tool) => (
+          <li>
+            <ExternalResourceButton
+              href={tool.href}
+              title={tool.title}
+              logo={tool.logo}
+              subtitle={tool.subtitle}
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </PageContainer>
+
+  <DisclaimerBar
+    icon={shieldAlertIcon}
+    title={t("tools:accept.disclaimer.title")}
+  >
+    {t("tools:accept.disclaimer.text")}
+    <a
+      href="https://github.com/monero-project/monero-site/issues/new"
+      target="_blank"
+      rel="noopener noreferrer">{t("tools:accept.disclaimer.linkText")}</a
+    >.
+  </DisclaimerBar>
+</Layout>
+
+<style>
+  .tool-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 900px) {
+    .tool-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

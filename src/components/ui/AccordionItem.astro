@@ -15,7 +15,7 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
 ---
 
 <details
-  class={`accordion-item accordion-item--${variant}`}
+  class:list={["accordion-item", `accordion-item--${variant}`]}
   name={name}
   open={open}
 >

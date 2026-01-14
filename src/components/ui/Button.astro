@@ -33,7 +33,7 @@ const {
       target={target}
       rel={rel}
       data-variant={variant}
-      class={`button ${className}`}
+      class:list={["button", className]}
       {...rest}
     >
       <slot />
@@ -42,7 +42,7 @@ const {
     <button
       type={type}
       data-variant={variant}
-      class={`button ${className}`}
+      class:list={["button", className]}
       {...rest}
     >
       <slot />
@@ -51,7 +51,7 @@ const {
     <span
       role="button"
       data-variant={variant}
-      class={`button ${className}`}
+      class:list={["button", className]}
       {...rest}
     >
       <slot />

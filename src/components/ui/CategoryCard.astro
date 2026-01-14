@@ -1,6 +1,7 @@
 ---
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+import { getDirection, getLocale } from "@/i18n/utils";
 
 interface Props {
   title: string;
@@ -8,17 +9,11 @@ interface Props {
   href: string;
   image?: string;
   linkText?: string;
-  rtl?: boolean;
 }
 
-const {
-  title,
-  description,
-  href,
-  image,
-  linkText = "Explore",
-  rtl = false,
-} = Astro.props;
+const { title, description, href, image, linkText = "Explore" } = Astro.props;
+
+const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 ---
 
 <a href={href} class="category-card">
@@ -101,7 +96,7 @@ const {
     text-decoration: underline;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     .category-card {
       flex-direction: row;
       align-items: stretch;

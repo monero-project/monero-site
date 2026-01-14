@@ -15,64 +15,81 @@ import rssIcon from "@/assets/icons/mask/rss.avif";
 
 import { books, cheatsheets, newsletters } from "@/data/library";
 
-import { getDirection, getLocale } from "@/i18n/utils";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
-// const t = await createTInstance(locale);
+const t = await createTInstance(locale);
 
 const sections = [
   {
     id: "books",
     icon: bookTextIcon,
-    title: "Books",
-    subtitle: "In-depth educational resources",
+    title: t("knowledge-base:library.sections.books.title"),
+    subtitle: t("knowledge-base:library.sections.books.tocSubtitle"),
   },
   {
     id: "cheatsheets",
     icon: receiptTextIcon,
-    title: "Cheatsheets",
-    subtitle: "Visual guides and infographics",
+    title: t("knowledge-base:library.sections.cheatsheets.title"),
+    subtitle: t("knowledge-base:library.sections.cheatsheets.tocSubtitle"),
   },
   {
     id: "newsletters",
     icon: rssIcon,
-    title: "Newsletters",
-    subtitle: "Stay updated with the community",
+    title: t("knowledge-base:library.sections.newsletters.title"),
+    subtitle: t("knowledge-base:library.sections.newsletters.tocSubtitle"),
   },
 ];
 ---
 
 <Layout
-  title="Library"
-  description="Explore educational resources, books, and publications curated by the Monero community."
+  title={t("knowledge-base:library.pageTitle")}
+  description={t("knowledge-base:library.subtitle")}
 >
   <TitleCard
-    title="Library"
-    subtitle="Explore publications, books, and educational resources curated by the Monero community. Whether you're just starting out or diving deep into cryptography, there's something here for you."
+    title={t("knowledge-base:library.title")}
+    subtitle={t("knowledge-base:library.subtitle")}
+    backHref={localizeHref(locale, "/resources/knowledge-base/")}
+    backLabel={t("knowledge-base:index.title")}
   />
 
   <PageContainer>
-    <TOCContainer sections={sections} ariaLabel="Library sections" />
+    <TOCContainer
+      sections={sections}
+      ariaLabel={t("knowledge-base:library.aria.sectionsNav")}
+    />
     <PageSection
-      title="Books"
-      subtitle="In-depth guides and technical resources to help you understand Monero from the ground up."
+      title={t("knowledge-base:library.sections.books.title")}
+      subtitle={t("knowledge-base:library.sections.books.subtitle")}
       anchorId="books"
     >
       <div class="books-shelf">
-        {books.map((book) => <BookCard {...book} />)}
+        {books.map((book) => <BookCard {...book} t={t} />)}
       </div>
     </PageSection>
 
     <hr aria-hidden="true" />
 
-    <PageSection title="Cheatsheets" anchorId="cheatsheets">
+    <PageSection
+      title={t("knowledge-base:library.sections.cheatsheets.title")}
+      anchorId="cheatsheets"
+    >
       <div class="cheatsheet-intro">
-        <h3 class="salmon-title">The Salmon Series</h3>
+        <h3 class="salmon-title">
+          {t("knowledge-base:library.sections.cheatsheets.salmonSeries.title")}
+        </h3>
         <p class="section-intro">
-          Infographics dealing with Monero's inner workings. The name comes from
-          the employed colors, having semantic meanings and resembling salmon
-          browning - from raw to well-done.
+          {
+            t(
+              "knowledge-base:library.sections.cheatsheets.salmonSeries.description",
+            )
+          }
         </p>
       </div>
 
@@ -108,8 +125,8 @@ const sections = [
     <hr aria-hidden="true" />
 
     <PageSection
-      title="Newsletters"
-      subtitle="Stay updated with the latest Monero news, developments, and community highlights."
+      title={t("knowledge-base:library.sections.newsletters.title")}
+      subtitle={t("knowledge-base:library.sections.newsletters.subtitle")}
       anchorId="newsletters"
     >
       <div class="newsletters-grid">
@@ -119,7 +136,7 @@ const sections = [
               href={newsletter.url}
               title={newsletter.title}
               subtitle={newsletter.description}
-              rtl={dir === "rtl"}
+              t={t}
             />
           ))
         }

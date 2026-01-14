@@ -1,0 +1,207 @@
+---
+import Button from "@/components/ui/Button.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+
+import moneroPickaxe from "@/assets/images/monero_pickaxe.webp";
+import serverImage from "@/assets/images/server.avif";
+
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import { createSafeMarkdown } from "@/utils/safeMarkdown";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+const safeMarkdown = createSafeMarkdown(locale);
+---
+
+<Layout
+  title={t("contribute:network.title")}
+  description={t("contribute:network.subtitle")}
+>
+  <TitleCard
+    title={t("contribute:network.title")}
+    subtitle={t("contribute:network.subtitle")}
+    backHref={localizeHref(locale, "/get-started/contribute/")}
+    backLabel={t("contribute:index.title")}
+  />
+
+  <PageContainer>
+    <section class="feature-section">
+      <div class="text">
+        <h2>{t("contribute:network.mine.title")}</h2>
+        <p
+          set:html={safeMarkdown.parseInline(
+            t("contribute:network.mine.description"),
+          )}
+        />
+        <ul>
+          <li>{t("contribute:network.mine.bullets.earnXmr")}</li>
+          <li>{t("contribute:network.mine.bullets.noSpecializedHardware")}</li>
+          <li>{t("contribute:network.mine.bullets.convertCpuPower")}</li>
+        </ul>
+        <div class="cta-links">
+          <Button href={localizeHref(locale, "/get-started/mining/")}>
+            {t("contribute:network.mine.learnAboutMining")}
+            <MaskIcon src={arrowRight} size="1em" />
+          </Button>
+        </div>
+      </div>
+      <div class="media">
+        <Image
+          src={moneroPickaxe}
+          alt={t("contribute:network.mine.imageAlt")}
+          format="avif"
+        />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="feature-section reverse">
+      <div class="text">
+        <h2>{t("contribute:network.runANode.title")}</h2>
+        <p>
+          {t("contribute:network.runANode.description")}
+        </p>
+        <ul>
+          <li>{t("contribute:network.runANode.bullets.validateBlocks")}</li>
+          <li>{t("contribute:network.runANode.bullets.reduceReliance")}</li>
+          <li>{t("contribute:network.runANode.bullets.enableOthers")}</li>
+        </ul>
+        <div class="cta-links">
+          <a
+            href="https://docs.getmonero.org/running-node/monerod-systemd"
+            target="_blank"
+            rel="noopener"
+          >
+            {t("contribute:network.runANode.moneroDocs")}
+            <MaskIcon src={externalLinkIcon} size="0.9em" />
+          </a>
+          <a
+            href="https://sethforprivacy.com/guides/run-a-monero-node/"
+            target="_blank"
+            rel="noopener"
+          >
+            {t("contribute:network.runANode.sethForPrivacy")}
+            <MaskIcon src={externalLinkIcon} size="0.9em" />
+          </a>
+        </div>
+      </div>
+      <div class="media">
+        <Image
+          src={serverImage}
+          alt={t("contribute:network.runANode.imageAlt")}
+          format="avif"
+        />
+      </div>
+    </section>
+  </PageContainer>
+</Layout>
+
+<style>
+  .feature-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  hr {
+    margin-block: 2rem;
+  }
+
+  .feature-section h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--heading-color);
+    margin: 0;
+  }
+
+  .cta-links :global(.button) {
+    color: white;
+  }
+
+  .feature-section p {
+    font-size: var(--font-size-lg);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    max-width: 60ch;
+    margin: 0.75rem 0 0;
+  }
+
+  .feature-section ul {
+    margin: 1rem 0 0;
+    padding: 0;
+    padding-inline-start: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: var(--font-size-lg);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    max-width: 60ch;
+  }
+
+  .feature-section li::marker {
+    color: var(--monero-orange);
+  }
+
+  .media {
+    display: none;
+  }
+
+  .cta-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .cta-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+  }
+
+  .cta-links a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 900px) {
+    .feature-section {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .media {
+      display: block;
+      position: relative;
+      min-width: 0;
+      align-self: stretch;
+      margin-block: 2rem;
+    }
+
+    .media :global(img) {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      border-radius: 1rem;
+    }
+
+    .feature-section.reverse .text {
+      order: 2;
+    }
+  }
+</style>

@@ -26,7 +26,7 @@ const Tag = tag;
 const linkProps = Tag === "a" ? { href } : {};
 ---
 
-<Tag class={`toc-item ${className || ""}`.trim()} {...linkProps} {...rest}>
+<Tag class:list={["toc-item", className]} {...linkProps} {...rest}>
   <span class="toc-item-icon">
     <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
   </span>

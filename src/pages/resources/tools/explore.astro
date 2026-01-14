@@ -1,41 +1,34 @@
 ---
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { blockExplorers, networkTools, utilities } from "@/data/monero-tools";
-import { getDirection, getLocale, localizeHref } from "@/i18n/utils";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
-import chevronLeftIcon from "@/assets/icons/mask/chevron-left.avif";
 import shieldAlertIcon from "@/assets/icons/mask/shieldAlert.avif";
 
 const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
+const t = await createTInstance(locale);
 ---
 
 <Layout
-  title="Explore Monero"
-  description="Block explorers, network monitors, and utilities for browsing the Monero blockchain."
+  title={t("tools:explore.pageTitle")}
+  description={t("tools:explore.subtitle")}
 >
   <TitleCard
-    title="Explore"
-    subtitle="Block explorers, network monitors, and utilities for browsing the Monero blockchain."
+    title={t("tools:explore.title")}
+    subtitle={t("tools:explore.subtitle")}
+    backHref={localizeHref(locale, "/resources/tools/")}
+    backLabel={t("tools:index.title")}
   />
 
   <PageContainer>
-    <a href={localizeHref(locale, "/resources/monero-tools")} class="back-link">
-      <span class="back-icon">
-        <MaskIcon src={chevronLeftIcon} size="1.25rem" rtl={dir === "rtl"} />
-      </span>
-      Back to Monero Tools
-    </a>
-
     <PageSection
-      title="Block Explorers"
-      subtitle="View transactions, blocks, and on-chain data."
+      title={t("tools:explore.sections.blockExplorers.title")}
+      subtitle={t("tools:explore.sections.blockExplorers.subtitle")}
       anchorId="explorers"
     >
       <ul class="tool-list">
@@ -47,7 +40,7 @@ const dir = getDirection(locale);
                 title={tool.title}
                 subtitle={tool.subtitle}
                 onionHref={tool.onionHref}
-                rtl={dir === "rtl"}
+                t={t}
               />
             </li>
           ))
@@ -58,8 +51,8 @@ const dir = getDirection(locale);
     <hr aria-hidden="true" />
 
     <PageSection
-      title="Network & Nodes"
-      subtitle="Monitor the network, find nodes, and visualize activity."
+      title={t("tools:explore.sections.network.title")}
+      subtitle={t("tools:explore.sections.network.subtitle")}
       anchorId="network"
     >
       <ul class="tool-list">
@@ -70,7 +63,7 @@ const dir = getDirection(locale);
                 href={tool.href}
                 title={tool.title}
                 subtitle={tool.subtitle}
-                rtl={dir === "rtl"}
+                t={t}
               />
             </li>
           ))
@@ -81,8 +74,8 @@ const dir = getDirection(locale);
     <hr aria-hidden="true" />
 
     <PageSection
-      title="Utilities"
-      subtitle="Wallet generators, price comparisons, statistics, and archives."
+      title={t("tools:explore.sections.utilities.title")}
+      subtitle={t("tools:explore.sections.utilities.subtitle")}
       anchorId="utilities"
     >
       <ul class="tool-list">
@@ -93,7 +86,7 @@ const dir = getDirection(locale);
                 href={tool.href}
                 title={tool.title}
                 subtitle={tool.subtitle}
-                rtl={dir === "rtl"}
+                t={t}
               />
             </li>
           ))
@@ -102,42 +95,20 @@ const dir = getDirection(locale);
     </PageSection>
   </PageContainer>
 
-  <DisclaimerBar icon={shieldAlertIcon} title="Disclaimer">
-    These links are provided for informational purposes only and do not
-    constitute an endorsement by the Monero community. To suggest a tool, <a
+  <DisclaimerBar
+    icon={shieldAlertIcon}
+    title={t("tools:explore.disclaimer.title")}
+  >
+    {t("tools:explore.disclaimer.text")}
+    <a
       href="https://github.com/monero-project/monero-site/issues/new"
       target="_blank"
-      rel="noopener noreferrer">open a GitHub issue</a
+      rel="noopener noreferrer">{t("tools:explore.disclaimer.linkText")}</a
     >.
   </DisclaimerBar>
 </Layout>
 
 <style>
-  .back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-medium);
-    color: var(--monero-orange);
-    text-decoration: none;
-    margin-bottom: 1.5rem;
-  }
-
-  .back-link:hover {
-    opacity: 0.8;
-  }
-
-  .back-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 999px;
-    background: var(--card-color);
-  }
-
   .tool-list {
     list-style: none;
     margin: 0;

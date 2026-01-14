@@ -114,6 +114,8 @@
       "remoteScanning": "Remote scanning",
       "diy": "DIY",
       "alphaSoftware": "Alpha software"
-    }
+    },
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "This list is for informational purposes only. The Monero Project does not endorse, recommend, or guarantee any service listed here. Always double-check URLs, start with a small test amount if you're unsure, and use every service at your own risk."
   }
 }

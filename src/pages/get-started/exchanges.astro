@@ -89,7 +89,7 @@ const highlightOptions = [
         class="filter-toggle"
         type="radio"
         name="exchange-filter"
-        aria-label="Clear filters"
+        aria-label={t("exchanges:aria.clearFilters")}
         checked
       />
     </fieldset>
@@ -98,7 +98,7 @@ const highlightOptions = [
       id="mobile-filter-toggle"
       class="filter-toggle"
       type="checkbox"
-      aria-label="Toggle exchange filters"
+      aria-label={t("exchanges:aria.toggleFilters")}
     />
 
     <div class="exchanges-wrapper">
@@ -174,10 +174,10 @@ const highlightOptions = [
               href="https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
               onionHref="http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
               title={t("exchanges:sections.aggregators.resourceBtnTitle")}
-              subtitle="Community-curated exchange aggregator list"
+              subtitle={t("exchanges:sections.aggregators.resourceBtnSubtitle")}
               logo="/media/directories/kycnotme.jpg"
               data-highlight="user-friendly crypto"
-              rtl={dir == "rtl"}
+              t={t}
             />
             <p
               style="color: var(--paragraph-subtitle);"

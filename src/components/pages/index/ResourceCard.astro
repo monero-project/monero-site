@@ -23,7 +23,7 @@ const {
   ctaLabel = "Learn more",
   ctaHref = "#",
 } = Astro.props;
-const dir = getDirection(getLocale(Astro.url));
+const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 const safeMarkdown = createSafeMarkdown(getLocale(Astro.url));
 ---
 
@@ -48,7 +48,7 @@ const safeMarkdown = createSafeMarkdown(getLocale(Astro.url));
     {ctaLabel}
     <MaskIcon
       src={ctaHref.startsWith("http") ? externalLink : arrowRight}
-      rtl={dir == "rtl"}
+      rtl={rtl}
       size="1em"
     />
   </a>

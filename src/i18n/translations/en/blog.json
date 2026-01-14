@@ -1,4 +1,5 @@
 {
+  "rssTitle": "Monero Blog RSS",
   "index": {
     "pageTitle": "Blog",
     "hero": {
@@ -31,5 +32,8 @@
     "releases": "Releases",
     "community": "Community",
     "meetingLogs": "Meeting Logs"
+  },
+  "aria": {
+    "rssFeed": "RSS Feed"
   }
 }

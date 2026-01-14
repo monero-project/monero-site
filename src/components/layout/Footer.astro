@@ -146,9 +146,9 @@ const bottomLinks: Link[] = [
 ];
 ---
 
-<footer class="footer" aria-label="Footer">
+<footer class="footer" aria-label={t("common:aria.footer")}>
   <div class="items">
-    <nav class="grid" aria-label="Footer navigation">
+    <nav class="grid" aria-label={t("common:aria.footerNav")}>
       {
         columns.map((col) => (
           <section class="col">
@@ -186,7 +186,7 @@ const bottomLinks: Link[] = [
       }
     </nav>
 
-    <nav class="bottom" aria-label="Secondary footer navigation">
+    <nav class="bottom" aria-label={t("common:aria.secondaryFooterNav")}>
       <ul class="inline-list">
         {
           bottomLinks.map((l) => (

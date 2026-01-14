@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Press Kit",
+  "title": "Press Kit",
+  "subtitle": "Press contacts, brand assets, and media resources for journalists and content creators.",
+  "description": "Press contacts, brand assets, and media resources for Monero.",
+  "sections": {
+    "brandAssets": {
+      "title": "Brand Assets",
+      "tocSubtitle": "Logos and symbols",
+      "intro": "Download official Monero logos and symbols. White background options have a white background under the Monero symbol only.",
+      "downloadVector": "Download Vector (.ai)",
+      "downloadAll": "Download All Assets (.zip)"
+    },
+    "pressMaterials": {
+      "title": "Press Materials",
+      "tocSubtitle": "Documentation and resources",
+      "pressDocumentation": "Press Documentation",
+      "marketingMaterials": "Marketing Materials"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "tocSubtitle": "Reach the Monero community",
+      "pressInquiries": {
+        "title": "Press Inquiries",
+        "description": "For media and press related questions:"
+      },
+      "workgroups": {
+        "title": "Workgroups",
+        "description": "Contact specific Monero workgroups:",
+        "link": "View Workgroups"
+      },
+      "community": {
+        "title": "Community",
+        "description": "Reach the many subcommunities:",
+        "link": "Community Hangouts"
+      }
+    }
+  },
+  "aria": {
+    "sectionsNav": "Press kit sections"
+  }
+}

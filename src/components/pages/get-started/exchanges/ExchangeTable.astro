@@ -45,7 +45,7 @@ if (!exchanges) {
         <th scope="col">{t("exchanges:table.fiat")}</th>
         <th scope="col">{t("exchanges:table.crypto")}</th>
         <th scope="col" class="th-visit">
-          {t("exchanges:table.visit")}
+          <span class="sr-only">{t("exchanges:table.visit")}</span>
         </th>
       </tr>
     </thead>
@@ -88,7 +88,7 @@ if (!exchanges) {
 
               {hasKyc && (
                 <td
-                  class={`pill ${kycClass}`}
+                  class:list={["pill", kycClass]}
                   data-label={t("exchanges:table.kyc")}
                 >
                   {kycText}
@@ -96,14 +96,17 @@ if (!exchanges) {
               )}
 
               <td
-                class={`pill ${ex.fiat ? "checkmark" : "cross"}`}
+                class:list={["pill", { checkmark: ex.fiat, cross: !ex.fiat }]}
                 data-label={t("exchanges:table.fiat")}
               >
                 <span aria-hidden="true">{ex.fiat ? "✓" : "✗"}</span>
               </td>
 
               <td
-                class={`pill ${ex.crypto ? "checkmark" : "cross"}`}
+                class:list={[
+                  "pill",
+                  { checkmark: ex.crypto, cross: !ex.crypto },
+                ]}
                 data-label={t("exchanges:table.crypto")}
               >
                 <span aria-hidden="true">{ex.crypto ? "✓" : "✗"}</span>
@@ -129,42 +132,32 @@ if (!exchanges) {
 <style>
   .table-wrap {
     background: var(--card-color);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     overflow: hidden;
   }
 
-  .exchange-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-  }
-
-  th,
-  td {
-    padding: 0.75rem;
-    text-align: start;
-    vertical-align: middle;
-  }
-
-  th {
-    background: var(--card-hover-color);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   td {
     color: var(--text-primary);
   }
 
-  .exchange-table tbody tr {
-    box-shadow: inset 0 -1px 0 var(--border-color);
-  }
-  .exchange-table tbody tr:last-child {
-    box-shadow: none;
-  }
-
   .exchange-row {
     transition: background 0.15s ease;
+  }
+
+  .exchange-row:hover {
+    background: var(--card-hover-color);
   }
 
   .with-icon {

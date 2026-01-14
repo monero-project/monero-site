@@ -1,6 +1,7 @@
 ---
 import { localizeNumber } from "@/i18n/utils";
 import type { Page } from "astro";
+import type { TFunction } from "i18next";
 import MaskIcon from "./MaskIcon.astro";
 
 import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
@@ -9,9 +10,10 @@ import chevronRight from "@/assets/icons/mask/chevron-right.avif";
 interface Props {
   page: Page<unknown>;
   locale?: string;
+  t: TFunction;
 }
 
-const { page, locale } = Astro.props;
+const { page, locale, t } = Astro.props;
 
 const current = page.currentPage;
 const last = page.lastPage;
@@ -61,11 +63,14 @@ const hasNext = current < last;
 
 {
   last > 1 && (
-    <nav class="pagination" aria-label="Pagination">
+    <nav
+      class="pagination"
+      aria-label={t("common:components.paginator.pagination")}
+    >
       <a
         href={hasPrev ? page.url.prev : undefined}
         class:list={["pagination-arrow", { disabled: !hasPrev }]}
-        aria-label="Previous page"
+        aria-label={t("common:components.paginator.previousPage")}
         aria-disabled={!hasPrev}
         rel={hasPrev ? "prev" : undefined}
       >
@@ -91,7 +96,7 @@ const hasNext = current < last;
               <a
                 href={href}
                 class="pagination-page"
-                aria-label={`Page ${n}`}
+                aria-label={t("common:components.paginator.page", { n })}
                 aria-current={isCurrent ? "page" : undefined}
               >
                 {locale ? localizeNumber(locale, n) : n}
@@ -104,7 +109,7 @@ const hasNext = current < last;
       <a
         href={hasNext ? page.url.next : undefined}
         class:list={["pagination-arrow", { disabled: !hasNext }]}
-        aria-label="Next page"
+        aria-label={t("common:components.paginator.nextPage")}
         aria-disabled={!hasNext}
         rel={hasNext ? "next" : undefined}
       >

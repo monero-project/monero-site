@@ -1,6 +1,7 @@
 ---
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { ImageMetadata } from "astro";
+import type { TFunction } from "i18next";
 
 import matrixIcon from "@/assets/icons/mask/matrix.avif";
 
@@ -12,9 +13,10 @@ export interface Props {
   chatName: string;
   ircHref: string;
   matrixHref?: string;
+  t: TFunction;
 }
 
-const { name, action, bestFor, icon, chatName, ircHref, matrixHref } =
+const { name, action, bestFor, icon, chatName, ircHref, matrixHref, t } =
   Astro.props;
 ---
 
@@ -29,7 +31,9 @@ const { name, action, bestFor, icon, chatName, ircHref, matrixHref } =
   <p class="card-action">{action}</p>
 
   <p class="card-best-for">
-    <span class="best-for-label">Best for:</span>
+    <span class="best-for-label"
+      >{t("common:components.workgroupCard.bestFor")}</span
+    >
     {bestFor}
   </p>
 
@@ -39,7 +43,7 @@ const { name, action, bestFor, icon, chatName, ircHref, matrixHref } =
       target="_blank"
       rel="noopener noreferrer"
       class="chat-button"
-      title={`Join ${chatName} on IRC`}
+      title={t("common:components.workgroupCard.joinIrc", { chatName })}
     >
       #{chatName}
     </a>
@@ -50,7 +54,7 @@ const { name, action, bestFor, icon, chatName, ircHref, matrixHref } =
           target="_blank"
           rel="noopener noreferrer"
           class="chat-button chat-button--matrix"
-          title="Join on Matrix"
+          title={t("common:components.workgroupCard.joinMatrix")}
         >
           <MaskIcon src={matrixIcon} size="1.25em" />
         </a>

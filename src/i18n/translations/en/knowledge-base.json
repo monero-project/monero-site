@@ -1,0 +1,71 @@
+{
+  "index": {
+    "pageTitle": "Knowledge Base",
+    "title": "Knowledge Base",
+    "subtitle": "Explore Monero's knowledge base: books, encyclopedic entries, and research papers."
+  },
+  "library": {
+    "pageTitle": "Library",
+    "title": "Library",
+    "cardSubtitle": "Books, publications, magazines, and educational materials curated by the community.",
+    "subtitle": "Explore publications, books, and educational resources curated by the Monero community. Whether you're just starting out or diving deep into cryptography, there's something here for you.",
+    "sections": {
+      "books": {
+        "title": "Books",
+        "tocSubtitle": "In-depth educational resources",
+        "subtitle": "In-depth guides and technical resources to help you understand Monero from the ground up."
+      },
+      "cheatsheets": {
+        "title": "Cheatsheets",
+        "tocSubtitle": "Visual guides and infographics",
+        "salmonSeries": {
+          "title": "The Salmon Series",
+          "description": "Infographics dealing with Monero's inner workings. The name comes from the employed colors, having semantic meanings and resembling salmon browning - from raw to well-done."
+        }
+      },
+      "newsletters": {
+        "title": "Newsletters",
+        "tocSubtitle": "Stay updated with the community",
+        "subtitle": "Stay updated with the latest Monero news, developments, and community highlights."
+      }
+    },
+    "aria": {
+      "sectionsNav": "Library sections"
+    }
+  },
+  "moneropedia": {
+    "pageTitle": "Moneropedia",
+    "title": "Moneropedia",
+    "cardSubtitle": "A comprehensive encyclopedia of Monero terminology, concepts, and technical explanations.",
+    "subtitle": "Comprehensive glossary of Monero and blockchain terms.",
+    "searchPlaceholder": "Search the Moneropedia...",
+    "readMore": "Read full article",
+    "aria": {
+      "navBar": "Moneropedia navigation bar"
+    }
+  },
+  "researchLab": {
+    "pageTitle": "Research Lab",
+    "title": "Research Lab",
+    "cardSubtitle": "Academic papers, cryptographic research, and protocol improvements from the Monero Research Lab.",
+    "subtitle": "Monero is committed to continued research into financial privacy as it involves cryptocurrencies. Below you'll find work from our researchers, with more papers to come.",
+    "hero": {
+      "imageAlt": "Monero Research Lab",
+      "title": "Advancing privacy in cryptocurrency",
+      "description": "The Monero Research Lab (MRL) is an open, collaborative team of researchers working on cutting-edge cryptography and privacy technologies. Our work focuses on improving Monero's protocol, analyzing potential vulnerabilities, and advancing the state of financial privacy research."
+    },
+    "papers": {
+      "title": "Research Papers",
+      "subtitle": "Papers written by MRL members on cryptography, privacy, and protocol improvements.",
+      "tabs": {
+        "mrlBulletins": "MRL Bulletins",
+        "iacr": "IACR",
+        "other": "Other"
+      }
+    },
+    "whitepapers": {
+      "title": "Cryptonote Whitepapers",
+      "subtitle": "Foundational documents describing the protocol Monero is built upon."
+    }
+  }
+}

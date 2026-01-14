@@ -1,0 +1,66 @@
+---
+import CategoryCard from "@/components/ui/CategoryCard.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+
+const cards = [
+  {
+    title: t("contribute:network.title"),
+    description: t("contribute:network.subtitle"),
+    href: localizeHref(locale, "/get-started/contribute/network"),
+  },
+  {
+    title: t("contribute:develop.title"),
+    description: t("contribute:develop.subtitle"),
+    href: localizeHref(locale, "/get-started/contribute/develop"),
+  },
+  {
+    title: t("contribute:donate.title"),
+    description: t("contribute:donate.subtitle"),
+    href: localizeHref(locale, "/get-started/contribute/donate"),
+  },
+];
+---
+
+<Layout
+  title={t("contribute:index.pageTitle")}
+  description={t("contribute:index.subtitle")}
+>
+  <TitleCard
+    title={t("contribute:index.title")}
+    subtitle={t("contribute:index.subtitle")}
+  />
+
+  <PageContainer>
+    <div class="card-grid">
+      {
+        cards.map((card) => (
+          <CategoryCard
+            title={card.title}
+            description={card.description}
+            href={card.href}
+          />
+        ))
+      }
+    </div>
+  </PageContainer>
+</Layout>
+
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 900px) {
+    .card-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

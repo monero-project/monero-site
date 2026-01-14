@@ -1,14 +1,38 @@
 ---
+import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
+import { getDirection, getLocale } from "@/i18n/utils";
+import MaskIcon from "./MaskIcon.astro";
+
 export interface Props {
   title: string;
   subtitle?: string;
   centered?: boolean;
+  backHref?: string;
+  backLabel?: string;
 }
 
-const { title, subtitle = "", centered = false } = Astro.props;
+const {
+  title,
+  subtitle = "",
+  centered = false,
+  backHref,
+  backLabel,
+} = Astro.props;
+
+const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 ---
 
 <header class:list={[{ centered }]}>
+  {
+    backHref && backLabel && (
+      <a href={backHref} class="back-link">
+        <span class="back-link-icon">
+          <MaskIcon src={chevronLeft} size="1.125rem" rtl={rtl} />
+        </span>
+        <span class="back-link-label">{backLabel}</span>
+      </a>
+    )
+  }
   <h1 class="title">{title}</h1>
   {subtitle && <p class="subtitle">{subtitle}</p>}
 </header>
@@ -26,6 +50,43 @@ const { title, subtitle = "", centered = false } = Astro.props;
 
   header.centered .subtitle {
     margin-inline: auto;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin-bottom: 1rem;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--paragraph-subtitle);
+    text-decoration: none;
+    transition: color 0.15s ease;
+    width: fit-content;
+  }
+
+  .back-link:hover {
+    color: var(--monero-orange);
+    text-decoration: none;
+  }
+
+  .back-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--card-color);
+    transition: background 0.15s ease;
+  }
+
+  .back-link:hover .back-link-icon {
+    background: var(--card-hover-color);
+  }
+
+  .back-link-label {
+    white-space: nowrap;
   }
 
   .title {

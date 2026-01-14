@@ -54,15 +54,20 @@ for (const letter of sortedLetters) {
 ---
 
 <Layout
-  title={t("moneropedia:pageTitle") ?? "Moneropedia"}
-  description={t("moneropedia:hero.subtitle")}
+  title={t("knowledge-base:moneropedia.pageTitle")}
+  description={t("knowledge-base:moneropedia.subtitle")}
 >
   <TitleCard
-    title={t("moneropedia:hero.title") ?? "Moneropedia"}
-    subtitle={t("moneropedia:hero.subtitle")}
+    title={t("knowledge-base:moneropedia.title")}
+    subtitle={t("knowledge-base:moneropedia.subtitle")}
+    backHref={localizeHref(locale, "/resources/knowledge-base/")}
+    backLabel={t("knowledge-base:index.title")}
   />
   <PageContainer class="moneropedia-index">
-    <nav class="letter-nav" aria-label="Moneropedia navigation bar">
+    <nav
+      class="letter-nav"
+      aria-label={t("knowledge-base:moneropedia.aria.navBar")}
+    >
       {
         sortedLetters.map((letter) => (
           <a class="letter-nav-link" href={`#${letter}`}>
@@ -79,7 +84,7 @@ for (const letter of sortedLetters) {
           const accordionItems = groupEntries.map((entry) => ({
             title: entry.title,
             content: safeMarkdown.parse(
-              `${entry.data.summary}\n\n[${t("moneropedia:readMore")} ](${entry.href})`,
+              `${entry.data.summary}\n\n[${t("knowledge-base:moneropedia.readMore")} ](${entry.href})`,
             ),
           }));
 

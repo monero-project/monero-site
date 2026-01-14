@@ -92,6 +92,34 @@ p {
   line-height: var(--line-height-body);
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 0.875rem 1rem;
+  text-align: start;
+  vertical-align: middle;
+}
+
+th {
+  background: var(--card-hover-color);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  color: var(--heading-color);
+}
+
+tbody tr {
+  box-shadow: inset 0 -1px 0 var(--border-color);
+}
+
+tbody tr:last-child {
+  box-shadow: none;
+}
+
 /* ========================================
    Locale-specific styles
    ======================================== */

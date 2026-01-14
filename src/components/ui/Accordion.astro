@@ -19,7 +19,7 @@ const accordionId = crypto.randomUUID();
 const accordionName = multiExpand ? undefined : `accordion-${accordionId}`;
 ---
 
-<div class={`accordion accordion--${variant}`}>
+<div class:list={["accordion", `accordion--${variant}`]}>
   {
     items ? (
       items.map((item) => (

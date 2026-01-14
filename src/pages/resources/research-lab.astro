@@ -16,11 +16,16 @@ import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
 
 import mrlLogo from "@/assets/images/mrl-logo.avif";
 
-import { getDirection, getLocale } from "@/i18n/utils";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
-// const t = await createTInstance(locale);
+const t = await createTInstance(locale);
 
 import {
   iacrPapers,
@@ -30,27 +35,38 @@ import {
 } from "@/data/research-lab";
 
 const paperTabs = [
-  { label: "MRL Bulletins", count: mrlBulletins.length },
-  { label: "IACR", count: iacrPapers.length },
-  { label: "Other", count: otherPapers.length },
+  {
+    label: t("knowledge-base:researchLab.papers.tabs.mrlBulletins"),
+    count: mrlBulletins.length,
+  },
+  {
+    label: t("knowledge-base:researchLab.papers.tabs.iacr"),
+    count: iacrPapers.length,
+  },
+  {
+    label: t("knowledge-base:researchLab.papers.tabs.other"),
+    count: otherPapers.length,
+  },
 ];
 ---
 
 <Layout
-  title="Research Lab"
-  description="Explore research papers and publications from the Monero Research Lab on financial privacy and cryptocurrency."
+  title={t("knowledge-base:researchLab.pageTitle")}
+  description={t("knowledge-base:researchLab.subtitle")}
 >
   <TitleCard
-    title="Research Lab"
-    subtitle="Monero is committed to continued research into financial privacy as it involves cryptocurrencies. Below you'll find work from our researchers, with more papers to come."
+    title={t("knowledge-base:researchLab.title")}
+    subtitle={t("knowledge-base:researchLab.subtitle")}
+    backHref={localizeHref(locale, "/resources/knowledge-base/")}
+    backLabel={t("knowledge-base:index.title")}
   />
 
   <PageContainer>
     <HeroCard
       image={mrlLogo}
-      imageAlt="Monero Research Lab"
-      title="Advancing privacy in cryptocurrency"
-      description="The Monero Research Lab (MRL) is an open, collaborative team of researchers working on cutting-edge cryptography and privacy technologies. Our work focuses on improving Monero's protocol, analyzing potential vulnerabilities, and advancing the state of financial privacy research."
+      imageAlt={t("knowledge-base:researchLab.hero.imageAlt")}
+      title={t("knowledge-base:researchLab.hero.title")}
+      description={t("knowledge-base:researchLab.hero.description")}
     >
       <Button
         href="https://moneroresearch.info/"
@@ -86,8 +102,8 @@ const paperTabs = [
     <hr aria-hidden="true" />
 
     <PageSection
-      title="Research Papers"
-      subtitle="Papers written by MRL members on cryptography, privacy, and protocol improvements."
+      title={t("knowledge-base:researchLab.papers.title")}
+      subtitle={t("knowledge-base:researchLab.papers.subtitle")}
       anchorId="papers"
     >
       <div class="research-layout">
@@ -102,7 +118,6 @@ const paperTabs = [
                     abstract={paper.abstract}
                     url={paper.url}
                     note={paper.note}
-                    rtl={dir === "rtl"}
                   />
                 ))
               }
@@ -116,7 +131,6 @@ const paperTabs = [
                     abstract={paper.abstract}
                     url={paper.url}
                     note={paper.note}
-                    rtl={dir === "rtl"}
                   />
                 ))
               }
@@ -130,7 +144,6 @@ const paperTabs = [
                     abstract={paper.abstract}
                     url={paper.url}
                     note={paper.note}
-                    rtl={dir === "rtl"}
                   />
                 ))
               }
@@ -139,9 +152,11 @@ const paperTabs = [
         </div>
 
         <aside class="sidebar">
-          <h3 class="sidebar-title">Cryptonote Whitepapers</h3>
+          <h3 class="sidebar-title">
+            {t("knowledge-base:researchLab.whitepapers.title")}
+          </h3>
           <p class="sidebar-subtitle">
-            Foundational documents describing the protocol Monero is built upon.
+            {t("knowledge-base:researchLab.whitepapers.subtitle")}
           </p>
           {
             whitepapers.map((paper) => (

@@ -1,0 +1,159 @@
+---
+import DonationAddress from "@/components/pages/contribute/DonationAddress.astro";
+import Button from "@/components/ui/Button.astro";
+import HeroCard from "@/components/ui/HeroCard.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import PageSection from "@/components/ui/PageSection.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
+
+import communityLogo from "@/assets/images/idea-bulb.avif";
+
+import contributingData from "@/data/contributing/contributing.json";
+
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
+
+const locale = getLocale(Astro.url);
+const dir = getDirection(locale);
+const t = await createTInstance(locale);
+---
+
+<Layout
+  title={t("contribute:donate.title")}
+  description={t("contribute:donate.subtitle")}
+>
+  <TitleCard
+    title={t("contribute:donate.title")}
+    subtitle={t("contribute:donate.subtitle")}
+    backHref={localizeHref(locale, "/get-started/contribute/")}
+    backLabel={t("contribute:index.title")}
+  />
+
+  <PageContainer>
+    <HeroCard
+      image={communityLogo}
+      imageAlt="Monero Community"
+      title={t("contribute:donate.ccs.title")}
+      lead={t("contribute:donate.ccs.lead")}
+      description={t("contribute:donate.ccs.description")}
+    >
+      <Button
+        href="https://ccs.getmonero.org/funding-required/"
+        target="_blank"
+        rel="noopener"
+      >
+        {t("contribute:donate.ccs.viewProposals")}
+        <MaskIcon src={externalLinkIcon} size="1em" rtl={dir === "rtl"} />
+      </Button>
+    </HeroCard>
+
+    <hr />
+
+    <PageSection
+      title={t("contribute:donate.generalFund.title")}
+      subtitle={t("contribute:donate.generalFund.subtitle")}
+    >
+      <div class="addresses-grid">
+        <DonationAddress
+          currency={t("contribute:donate.generalFund.moneroXmr")}
+          address={contributingData.xmr.address}
+          qrCode={`/contributing/${contributingData.xmr.qr_filename}`}
+          viewAddress={contributingData.xmr.view_address}
+          viewKey={contributingData.xmr.view_key}
+          viewOnlyLabel={t(
+            "contribute:donate.generalFund.viewOnlyWalletDetails",
+          )}
+          primaryAddressLabel={t(
+            "contribute:donate.generalFund.primaryAddress",
+          )}
+          viewKeyLabel={t("contribute:donate.generalFund.viewKey")}
+        />
+        <DonationAddress
+          currency={t("contribute:donate.generalFund.bitcoinBtc")}
+          address={contributingData.btc.address}
+          qrCode={`/contributing/${contributingData.btc.qr_filename}`}
+        />
+      </div>
+
+      <footer class="fund-footer">
+        <p class="fund-note">
+          {t("contribute:donate.generalFund.description")}
+        </p>
+        <div class="fund-meta">
+          <span class="meta-item">
+            <strong>{t("contribute:donate.generalFund.openAlias")}</strong>
+            <code>donate.getmonero.org</code>
+          </span>
+          <span class="meta-item">
+            <strong>{t("contribute:donate.generalFund.contact")}</strong>
+            <a href="mailto:dev@getmonero.org">dev@getmonero.org</a>
+          </span>
+        </div>
+      </footer>
+    </PageSection>
+  </PageContainer>
+</Layout>
+
+<style>
+  .addresses-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .fund-footer {
+    margin-top: 1.5rem;
+  }
+
+  .fund-note {
+    margin: 0 0 1rem;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .fund-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+  }
+
+  .meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .meta-item strong {
+    color: var(--paragraph-main);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .meta-item code {
+    background: var(--card-color);
+    padding: 0.2em 0.5em;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    color: var(--heading-color);
+  }
+
+  .meta-item a {
+    font-weight: var(--font-weight-medium);
+  }
+
+  @media (min-width: 900px) {
+    .addresses-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

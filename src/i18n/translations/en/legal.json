@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Legal",
+  "title": "Legal",
+  "subtitle": "Last revised: June 22nd, 2017",
+  "description": "Terms of Use, Copyright, and Privacy Policy for The Monero Project website.",
+  "sections": {
+    "termsOfUse": {
+      "title": "Terms of Use",
+      "tocSubtitle": "Rules for using this website"
+    },
+    "copyright": {
+      "title": "Copyright",
+      "tocSubtitle": "Content licensing information"
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "tocSubtitle": "How we handle your data"
+    }
+  },
+  "aria": {
+    "sectionsNav": "Legal sections"
+  }
+}

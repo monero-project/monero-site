@@ -26,10 +26,10 @@ const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
 const id = "dd-" + Math.random().toString(36).slice(2, 11);
 const closeId = id + "-close";
-const dir = getDirection(getLocale(Astro.url));
+const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 ---
 
-<li class={`nav-item${isDropdown ? " nav-item--dropdown" : ""}`}>
+<li class:list={["nav-item", { "nav-item--dropdown": isDropdown }]}>
   {
     isDropdown ? (
       <>
@@ -95,7 +95,7 @@ const dir = getDirection(getLocale(Astro.url));
                     {item.desc && <div class="desc">{item.desc}</div>}
                   </div>
                   <div class="arrow">
-                    <MaskIcon src={arrowRight} size="1rem" rtl={dir == "rtl"} />
+                    <MaskIcon src={arrowRight} size="1rem" rtl={rtl} />
                   </div>
                 </a>
               ))}

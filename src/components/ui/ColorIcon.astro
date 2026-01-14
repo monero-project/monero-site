@@ -24,7 +24,7 @@ const darkUrl = darkSrc
   : lightUrl;
 ---
 
-<div class={`icon ${className} ${rtl ? "icon--rtl" : ""}`} aria-hidden="true">
+<div class:list={["icon", className, { "icon--rtl": rtl }]} aria-hidden="true">
 </div>
 
 <style

@@ -94,5 +94,8 @@
   "disclaimer": {
     "title": "Disclaimer",
     "content": "The Monero Project does not endorse any particular pool, software, or hardware, and the content above is provided for informational purposes only."
+  },
+  "aria": {
+    "miningOptions": "Mining options"
   }
 }

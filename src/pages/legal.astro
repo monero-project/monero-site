@@ -10,24 +10,29 @@ import copyrightIcon from "@/assets/icons/mask/copyright.avif";
 import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
 import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 
+import { createTInstance, getLocale } from "@/i18n/utils";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+
 const sections = [
   {
     id: "terms-of-use",
-    title: "Terms of Use",
+    title: t("legal:sections.termsOfUse.title"),
     icon: receiptTextIcon,
-    subtitle: "Rules for using this website",
+    subtitle: t("legal:sections.termsOfUse.tocSubtitle"),
   },
   {
     id: "copyright",
-    title: "Copyright",
+    title: t("legal:sections.copyright.title"),
     icon: copyrightIcon,
-    subtitle: "Content licensing information",
+    subtitle: t("legal:sections.copyright.tocSubtitle"),
   },
   {
     id: "privacy-policy",
-    title: "Privacy Policy",
+    title: t("legal:sections.privacyPolicy.title"),
     icon: shieldCheckIcon,
-    subtitle: "How we handle your data",
+    subtitle: t("legal:sections.privacyPolicy.tocSubtitle"),
   },
 ];
 
@@ -46,14 +51,11 @@ const renderedSections = await Promise.all(
 );
 ---
 
-<Layout
-  title="Legal"
-  description="Terms of Use, Copyright, and Privacy Policy for The Monero Project website."
->
-  <TitleCard title="Legal" subtitle="Last revised: June 22nd, 2017" centered />
+<Layout title={t("legal:pageTitle")} description={t("legal:description")}>
+  <TitleCard title={t("legal:title")} subtitle={t("legal:subtitle")} centered />
 
   <PageContainer>
-    <TOCContainer sections={sections} ariaLabel="Legal sections" />
+    <TOCContainer sections={sections} ariaLabel={t("legal:aria.sectionsNav")} />
 
     <div class="legal-content">
       {

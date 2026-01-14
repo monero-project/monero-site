@@ -157,7 +157,7 @@ export const navigationItems: NavItemConfig[] = [
       },
       {
         key: "moneroTools",
-        href: "/resources/monero-tools",
+        href: "/resources/tools",
         icon: tools,
         iconDark: toolsDark,
       },
