@@ -1,0 +1,109 @@
+# Spanish translations for PACKAGE package
+# Copyright (C) 2024 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-03-11 00:16+0000\n"
+"PO-Revision-Date: 2024-06-23 08:33+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:2
+msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:4
+msgid "Monero contributors primarily communicate via IRC and Matrix channels. You can join IRC/Libera and Matrix rooms using Matrix. An open source network for secure, decentralized communication."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:6
+msgid "In order to access the Matrix protocol you will need to use a Matrix client. In this tutorial we will use Element as a client. Element is a free, open-source program that can be accessed via web, desktop, and mobile."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:7
+#, no-wrap
+msgid "Getting Element"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:10
+msgid "Go to [element.io](https://element.io/get-started#download) to download the latest version of the Element app on your computer. Alternatively you can use the Element [web app](https://app.element.io). There are Android apps available on [F-Droid](https://f-droid.org/packages/im.vector.app/) or [Google Play](https://play.google.com/store/apps/details?id=im.vector.app). As well as an app for [iPhone](https://apps.apple.com/app/vector/id1083446067). Once you have accessed the client of your choice create an account on our host server."
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:11
+#, no-wrap
+msgid "Setting the custom host server"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:14
+msgid "While matrix is a federated protocol and you could use any host server for your account (including the default matrix.org server). We recommend changing your server to the one hosted, maintained and [sponsored]({{ site.baseurl }}/community/sponsorships/) by the Monero Community to support decentralization. If you do choose this option remember to set your custom server when logging in on a new device."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:16
+msgid "When signing up choose to edit your host server and type in `monero.social` as shown."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:18
+msgid "Web/Desktop view"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:21
+msgid "![Web-Desktop-View-1](/img/resources/user-guides/en/join-monero-matrix/desktop-web-1.avif){:width=\"100%\"} ![Web-Desktop-View-2](/img/resources/user-guides/en/join-monero-matrix/desktop-web-2.avif){:width=\"100%\"}"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:24
+#, no-wrap
+msgid ""
+"<!--Both Android and IOS have same GUI-->\n"
+"Android/IOS view\n"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:27
+msgid "![Android-View-1](/img/resources/user-guides/en/join-monero-matrix/android-1.avif){:width=\"49%\"} ![Android-View-2](/img/resources/user-guides/en/join-monero-matrix/android-2.avif){:width=\"49%\"}"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:29
+#, no-wrap
+msgid "Creating your account"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:32
+msgid "You must provide an e-mail, username and password to setup an account. The email field is used solely for anti-spam measures and recovering your account if you lose your password."
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:34
+msgid "Once you have entered in your credentials continue through the setup steps, and log into your account. Now search for \"Monero\" rooms and join the communities you like!"
+msgstr ""
+
+#. type: Title ###
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:35
+#, no-wrap
+msgid "Joining the Monero rooms"
+msgstr ""
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/join-monero-matrix.md:37
+msgid "Now you are ready to join the Monero rooms, to find the list of rooms, check out the [workgroups](/community/workgroups/) and [hangouts](/community/hangouts/)."
+msgstr ""

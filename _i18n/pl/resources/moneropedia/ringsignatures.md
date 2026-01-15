@@ -22,16 +22,16 @@ być zaimprowizowana - nie wymaga żadnych wcześniejszych przygotowań.
 
 ### Aplikacja w Monero
 
-Podpis pierścieniowy korzysta z twoich kluczy do @konta oraz numeru kluczy
-publicznych pobranych z @łańcucha-bloków przy użyciu metody rozkładu
-trójkątnego. Na przestrzeni czasu klucze mogą zostać użyte wielokrotnie, aby
-tworzyć możliwe grupy podpisowe. W "pierścieniu" (grupie) możliwych osób
-podpisujących wszyscy członkowie są równi i ważni. Nie ma możliwości, aby
-zewnętrzny obserwator rozróżnił, który z członków jest przypisany do twojego
-konta. Podpisy pierścieniowe zapewniają niewykrywalność wyników
-transakcji. Ponadto nie ma problemów z zamienialnością Monero, ponieważ
-każdy wynik transakcji jest wiarygodnie zaprzeczalny (sieć nie rozróżnia,
-który z wyników został wydany lub nie wydany).
+A ring signature makes use of your @account keys and a number of public keys
+(also known as outputs) pulled from the @blockchain using a gamma
+distribution method. Over the course of time, past outputs could be used
+multiple times to form possible signer participants. In a "ring" of possible
+signers, all ring members are equal and valid. There is no way an outside
+observer can tell which of the possible signers in a signature group belongs
+to your @account. So, ring signatures ensure that transaction outputs are
+untraceable. Moreover, there are no @fungibility issues with Monero given
+that every transaction output has plausible deniability (e.g. the network
+can not tell which outputs are spent or unspent).
 
 Aby dowiedzieć się, w jaki sposób Monero gwarantuje prywatność poprzez
 domyślną niemożliwość przypisania transakcji do konta, przejdź do

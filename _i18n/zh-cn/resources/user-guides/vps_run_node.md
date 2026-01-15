@@ -2,18 +2,23 @@
 
 # monerod
 
-`monerod` is the @daemon software that ships with the Monero tree. It is a console program, and manages the blockchain. While a bitcoin wallet manages both an account and the blockchain, Monero separates these: `monerod` handles the blockchain, and `monero-wallet-cli` handles the account.
+`monerod` is the @daemon software that ships with the Monero tree. It is a
+console program, and manages the blockchain. While a bitcoin wallet manages
+both an account and the blockchain, Monero separates these: `monerod`
+handles the blockchain, and `monero-wallet-cli` handles the account.
 
-This guide assumes you have already set up your VPS account and are using SSH to tunnel into the server console.
+This guide assumes you have already set up your VPS account and are using
+SSH to tunnel into the server console.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
 ### Make sure that port 18080 is open
 
-`monerod` uses this port to communicate with other nodes on the Monero network.
+`monerod` uses this port to communicate with other nodes on the Monero
+network.
 
-Example if using `ufw`: `sudo ufw allow 18080`
-Example if using `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
+Example if using `ufw`: `sudo ufw allow 18080` Example if using `iptables`:
+`sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
 ### Download the current Monero Core binaries
 

@@ -1,19 +1,39 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-Med [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) kan du ha en Monero-lommebok som er uten nettverking og som kjører på et virtuelt, isolert system fra Monero daemonen som har all sin trafikk tvunget over [Tor](https://torproject.org).
+Med [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) kan du ha
+en Monero-lommebok som er uten nettverking og som kjører på et virtuelt,
+isolert system fra Monero daemonen som har all sin trafikk tvunget over
+[Tor](https://torproject.org).
 
-Qubes gir fleksibiliteten til å enkelt opprette VM-er for ulike formål. Du må først opprette en Whonix-arbeidsstasjon for lommeboken uten nettverking. Deretter en annen Whonix-arbeidsstasjon for daemonen som bruker din Whonix-port i og med at den er NetVM. For kommunikasjon mellom lommebøkene og daemon, kan du bruke Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
+Qubes gir fleksibiliteten til å enkelt opprette VM-er for ulike formål. Du
+må først opprette en Whonix-arbeidsstasjon for lommeboken uten
+nettverking. Deretter en annen Whonix-arbeidsstasjon for daemonen som bruker
+din Whonix-port i og med at den er NetVM. For kommunikasjon mellom
+lommebøkene og daemon, kan du bruke Qubes
+[qrexec](https://www.qubes-os.org/doc/qrexec3/).
 
-Dette er tryggere enn andre tilnærminger som ruter lommebokens rpc over en skjult Tor-service, eller en som bruker fysisk isolasjon men som fremdeles trenger nettverking for å koble seg til daemonen. På denne måten trenger du ikke en nettverksforbindelse til lommeboken. Du bevarer ressursene til Tor-nettverket, og det er også mindre latens.
-
+Dette er tryggere enn andre tilnærminger som ruter lommebokens rpc over en
+skjult Tor-service, eller en som bruker fysisk isolasjon men som fremdeles
+trenger nettverking for å koble seg til daemonen. På denne måten trenger du
+ikke en nettverksforbindelse til lommeboken. Du bevarer ressursene til
+Tor-nettverket, og det er også mindre latens.
 
 ## 1. [Opprett Whonix AppVM-er](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Opprett følgende to arbeidsstasjoner ved å bruke en Whonix-arbeidsstasjonmal:
++ Opprett følgende to arbeidsstasjoner ved å bruke en
+  Whonix-arbeidsstasjonmal:
 
-  - Den første arbeidsstasjonen vil brukes for lommeboken din, og vil refereres til som `monero-wallet-ws`. Du må sette din `NetVM` til `none`.
+  - Den første arbeidsstasjonen vil brukes for lommeboken din, og vil
+    refereres til som `monero-wallet-ws`. Du må sette din `NetVM` til
+    `none`.
 
-  - Den andre arbeidsstasjonen vil være for `monerod`-daemonen, og vil refereres til som `monerod-ws`. Din `NetVM` må være satt til Whonix-porten `sys-whonix`. Før du går videre må du sørge for at denne arbeidsstasjonen har nok privat lagringsplass. Du kan anslå hvor mye lagringsplass du trenger ved å sjekke størrelsen på den [rå blokkjeden]({{ site.baseurl }}/downloads/#blockchain). Husk at blokkjeden over tid vil bruke oppta lagringsplass.
+  - Den andre arbeidsstasjonen vil være for `monerod`-daemonen, og vil
+    refereres til som `monerod-ws`. Din `NetVM` må være satt til
+    Whonix-porten `sys-whonix`. Før du går videre må du sørge for at denne
+    arbeidsstasjonen har nok privat lagringsplass. Du kan anslå hvor mye
+    lagringsplass du trenger ved å sjekke størrelsen på den [rå
+    blokkjeden]({{ site.baseurl }}/downloads/#blockchain). Husk at
+    blokkjeden over tid vil bruke oppta lagringsplass.
 
 ## 2. I AppVM-en `monerod-ws`:
 
@@ -48,7 +68,8 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Få `monerod` daemon til å kjøre på oppstart ved å redigere filen `/rw/config/rc.local`.
++ Få `monerod` daemon til å kjøre på oppstart ved å redigere filen
+  `/rw/config/rc.local`.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local

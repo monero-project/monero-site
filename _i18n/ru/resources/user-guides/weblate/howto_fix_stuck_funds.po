@@ -6,117 +6,97 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-23 12:18+0100\n"
+"POT-Creation-Date: 2024-06-23 08:33+0000\n"
 "PO-Revision-Date: 2021-12-13 15:33+0000\n"
 "Last-Translator: v1docq47 <chiptune@protonmail.ch>\n"
-"Language-Team: Russian <https://translate.getmonero.org/projects/"
-"getmonero-user-guides/howto_fix_stuck_funds/ru/>\n"
+"Language-Team: Russian <https://translate.getmonero.org/projects/getmonero-user-guides/howto_fix_stuck_funds/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:2
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 msgstr "{% include disclaimer.html translated=\"yes\" translationOutdated=\"no\" %}"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:4
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:4
+msgid "Sometimes, your funds will become stuck - you will have some locked funds that never become unlocked. This is how you fix it."
+msgstr "Случается так, что ваши средства «застревают», то есть у вас появляются заблокированные средства, которые никогда не будут разблокированы. И вот способ решения этой проблемы."
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:6
+msgid "Load your wallet in monero-wallet-cli."
+msgstr "Загрузить ваш кошелёк в monero-wallet-cli."
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:8
+msgid "Type"
+msgstr "Напечатать"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
+#, no-wrap
+msgid "> seed\n"
+msgstr "> seed\n"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:12
+msgid "into the command prompt. Write down your 25 word seed, if you haven't already. This is the best way to make sure you don't lose access to your funds."
+msgstr "в окне ввода команды. Ввести свою мнемоническую фразу, состоящую из 25 слов, если этого ещё не было сделано. Это наилучший способ убедиться в том, что вы не утратите доступа к собственным средствам."
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:14
+msgid "Close monero-wallet-cli by typing"
+msgstr "Закрыть monero-wallet-cli, напечатав"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:16
+#, no-wrap
+msgid "> exit\n"
+msgstr "> exit\n"
+
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:18
+msgid "Backup all of your wallet related files. These include:"
+msgstr "Сохранить все файлы, связанные с вашим кошельком, включая:"
+
+#. type: Plain text
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
+#, no-wrap
 msgid ""
-"Sometimes, your funds will become stuck - you will have some locked funds "
-"that never become unlocked. This is how you fix it."
+"> yourwalletname.bin\n"
+"> yourwalletname.bin.keys\n"
+"> yourwalletname.bin.address.txt\n"
 msgstr ""
-"Случается так, что ваши средства «застревают», то есть у вас появляются "
-"заблокированные средства, которые никогда не будут разблокированы. И вот "
-"способ решения этой проблемы."
+"> yourwalletname.bin\n"
+"> yourwalletname.bin.keys\n"
+"> yourwalletname.bin.address.txt\n"
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:6
-msgid "- Load your wallet in monero-wallet-cli."
-msgstr "- Загрузить ваш кошелёк в monero-wallet-cli."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:8
-msgid "- Type"
-msgstr "- Напечатать"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:10
-msgid "> seed"
-msgstr "> seed"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:12
-msgid ""
-"into the command prompt. Write down your 25 word seed, if you haven't "
-"already. This is the best way to make sure you don't lose access to your "
-"funds."
-msgstr ""
-"в окне ввода команды. Ввести свою мнемоническую фразу, состоящую из 25 слов, "
-"если этого ещё не было сделано. Это наилучший способ убедиться в том, что вы "
-"не утратите доступа к собственным средствам."
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:14
-msgid "- Close monero-wallet-cli by typing"
-msgstr "- Закрыть monero-wallet-cli, напечатав"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:16
-msgid "> exit"
-msgstr "> exit"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:18
-msgid "- Backup all of your wallet related files. These include:"
-msgstr "- Сохранить все файлы, связанные с вашим кошельком, включая:"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:22
-msgid ""
-"> yourwalletname.bin > yourwalletname.bin.keys > "
-"yourwalletname.bin.address.txt"
-msgstr ""
-"> yourwalletname.bin > yourwalletname.bin.keys > "
-"yourwalletname.bin.address.txt"
-
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:24
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:24
 msgid "This can be done by copying the files to a new folder."
 msgstr "Это можно сделать, скопировав все файлы в новую папку."
 
 #. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:26
-msgid ""
-"Sometimes, when creating your wallet, you might have named it something "
-"without the .bin part. In that case, the wallet file will be called "
-"yourwalletname without the .bin at the end."
-msgstr ""
-"Иногда при создании кошелька вы можете назвать его как-нибудь так, что часть "
-".bin будет отсутствовать. В этом случае файл кошелька должен называться "
-"yourwalletname без .bin на конце."
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:26
+msgid "Sometimes, when creating your wallet, you might have named it something without the .bin part. In that case, the wallet file will be called yourwalletname without the .bin at the end."
+msgstr "Иногда при создании кошелька вы можете назвать его как-нибудь так, что часть .bin будет отсутствовать. В этом случае файл кошелька должен называться yourwalletname без .bin на конце."
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:28
-msgid "- Delete yourwallet.bin"
-msgstr "- Следует удалить yourwallet.bin"
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:28
+msgid "Delete yourwallet.bin"
+msgstr "Следует удалить yourwallet.bin"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:30
-msgid "- Load monero-wallet-cli, type in the name of the wallet you just deleted"
-msgstr ""
-"- Загрузить monero-wallet-cli, ввести имя кошелька, которое вы только что "
-"удалили"
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:30
+msgid "Load monero-wallet-cli, type in the name of the wallet you just deleted"
+msgstr "Загрузить monero-wallet-cli, ввести имя кошелька, которое вы только что удалили"
 
-#. type: Plain text
-#: _i18n/en/resources/user-guides/howto_fix_stuck_funds.md:32
-msgid ""
-"- Enter password. The wallet will now refresh and hopefully your locked "
-"funds will now become unlocked."
-msgstr ""
-"- Ввести пароль. Теперь кошелёк обновлен, а ваши заблокированные средства, я "
-"надеюсь, разблокированы."
+#. type: Bullet: '- '
+#: ../_i18n/en/resources/user-guides/howto_fix_stuck_funds.md:32
+msgid "Enter password. The wallet will now refresh and hopefully your locked funds will now become unlocked."
+msgstr "Ввести пароль. Теперь кошелёк обновлен, а ваши заблокированные средства, я надеюсь, разблокированы."

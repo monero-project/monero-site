@@ -9,8 +9,8 @@ terms: ["address", "addresses", "adresse", "adresses"]
 
 Lorsque vous envoyez des Moneroj à quelqu'un, vous n'avez besoin que de
 cette information, et c'est son adresse Monero. Une adresse Monero *brut*
-est un lot de 95 caractères commençant par un '4'. L'adresse de dons de
-Monero, par exemple, est
+est un lot de 95 caractères commençant par un '4' ou un '8'. L'adresse de
+dons de Monero, par exemple, est
 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
 Comme ces adresses sont longues et complexes, vous rencontrerez souvent une

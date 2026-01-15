@@ -3,11 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-24 01:06+0100\n"
+"POT-Creation-Date: 2024-06-23 08:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,31 +30,31 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:10
-#, markdown-text, no-wrap
+#, markdown-text
 msgid "[What is the wallet restore height?](#what-is-the-wallet-restore-height)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:10
-#, markdown-text, no-wrap
+#, markdown-text
 msgid "[Why Monero wallets have a restore height?](#why-monero-wallets-have-a-restore-height)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:10
-#, markdown-text, no-wrap
+#, markdown-text
 msgid "[What happens if I set a wrong restore height?](#what-happens-if-i-set-a-wrong-restore-height)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:10
-#, markdown-text, no-wrap
+#, markdown-text
 msgid "[How to change the wallet restore height on Monero GUI](#how-to-change-the-wallet-restore-height-on-monero-gui)"
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:10
-#, markdown-text, no-wrap
+#, markdown-text
 msgid "[My wallet is showing a wrong balance after changing the restore height](#my-wallet-balance-is-wrong-after-changing-the-restore-height)"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/change-restore-height.md:22
-#, markdown-text, no-wrap
+#, markdown-text
 msgid "![restore-height](/img/resources/user-guides/en/change_restore_height/restore-height.png)"
 msgstr ""
 

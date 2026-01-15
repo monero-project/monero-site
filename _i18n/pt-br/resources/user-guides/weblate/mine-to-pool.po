@@ -7,11 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-28 11:37+0200\n"
+"POT-Creation-Date: 2024-06-23 08:33+0000\n"
 "PO-Revision-Date: 2021-12-02 08:42+0000\n"
 "Last-Translator: netrik182 <netrik@tuta.io>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.getmonero.org/projects/"
-"getmonero-user-guides/mine-to-pool/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.getmonero.org/projects/getmonero-user-guides/mine-to-pool/pt_BR/>\n"
 "Language: pt-br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,8 +21,7 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:2
 msgid "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
-msgstr ""
-"{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
+msgstr "{% include disclaimer.html translated=\"no\" translationOutdated=\"no\" %}"
 
 #. type: Title ##
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:3
@@ -98,12 +96,12 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
 #, no-wrap
-msgid "Other distributions and operative systems"
+msgid "Other distributions and operating systems"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:46
-msgid "Binaries are available for multiple distributions and operative systems, but you can also build the miner by yourself. Take a loot at [XMrig's docs](https://xmrig.com/docs/miner)"
+msgid "Binaries are available for various distributions and operating systems, but you can also build the miner by yourself. Take a look at [XMrig's docs](https://xmrig.com/docs/miner)"
 msgstr ""
 
 #. type: Title ##

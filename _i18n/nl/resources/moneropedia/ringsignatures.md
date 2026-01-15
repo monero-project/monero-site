@@ -24,7 +24,7 @@ setup).
 ### Application to Monero
 
 A ring signature makes use of your @account keys and a number of public keys
-(also known as outputs) pulled from the @blockchain using a triangular
+(also known as outputs) pulled from the @blockchain using a gamma
 distribution method. Over the course of time, past outputs could be used
 multiple times to form possible signer participants. In a "ring" of possible
 signers, all ring members are equal and valid. There is no way an outside

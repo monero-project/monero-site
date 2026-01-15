@@ -16,7 +16,7 @@ betyr at *alle* tilkoblingene dine kan spores og overvåkes av:
 - nettsiden/tjenesten/personen du kommuniserer med
 
 - muligens en [Five Eyes](https://en.wikipedia.org/wiki/5_Eyes)-kapabel
-enhet
+  enhet
 
 Og selv om du bruker [HTTPS](https://en.wikipedia.org/wiki/HTTPS) eller
 liknende (som *krypterer* overføringen din), er ruten din verken skjult

@@ -1,8 +1,13 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-Восстановление кошелька при помощи приватных ключей — довольно простой процесс. Если вы обладаете необходимой информацией, это руководство позволит вам полностью восстановить ваш кошелёк. Примечание: при восстановлении при помощи ключей пароль НЕ НУЖЕН.
+Восстановление кошелька при помощи приватных ключей — довольно простой
+процесс. Если вы обладаете необходимой информацией, это руководство позволит
+вам полностью восстановить ваш кошелёк. Примечание: при восстановлении при
+помощи ключей пароль НЕ НУЖЕН.
 
-Необходимо три элемента данных вашего кошелька или же файл с вашими ключами, в котором будет содержаться эта информация и пароль, позволяющий расшифровать её. Вам понадобится знание следующих 3 компонентов кошелька:
+Необходимо три элемента данных вашего кошелька или же файл с вашими ключами,
+в котором будет содержаться эта информация и пароль, позволяющий
+расшифровать её. Вам понадобится знание следующих 3 компонентов кошелька:
 
 1. **Адрес**
 2. **Секретный ключ траты**
@@ -15,38 +20,51 @@
 
 `./monero-wallet-cli --generate-from-keys New_Wallet_Name.abc`
 
-После этого будет запрошен адрес, ключ траты, ключ просмотра и, наконец, новый пароль для заново сгенерированного кошелька.
+После этого будет запрошен адрес, ключ траты, ключ просмотра и, наконец,
+новый пароль для заново сгенерированного кошелька.
 
-При введении правильных параметров файлы вашего кошелька будут сгенерированы повторно, что позволит вам создать новый пароль.
+При введении правильных параметров файлы вашего кошелька будут сгенерированы
+повторно, что позволит вам создать новый пароль.
 
-Если у вас возникнут проблемы, команда `./monero-wallet-cli —help` позволит вам увидеть опции, доступные для запуска вашего кошелька. Как только вы войдёте в кошелёк, команда `help` выведет список команд, доступных для использования внутри кошелька.
+Если у вас возникнут проблемы, команда `./monero-wallet-cli —help` позволит
+вам увидеть опции, доступные для запуска вашего кошелька. Как только вы
+войдёте в кошелёк, команда `help` выведет список команд, доступных для
+использования внутри кошелька.
 
 #### GUI
 
-Запустите `monero-wallet-gui`. Если вы запускаете его впервые, переходите к следующему шагу, в противном случае нажмите `Cancel` (Отменить):
+Запустите `monero-wallet-gui`. Если вы запускаете его впервые, переходите к
+следующему шагу, в противном случае нажмите `Cancel` (Отменить):
 
-![cancel opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.png)
+![cancel
+opening](/img/resources/user-guides/en/restore_from_keys/cancel-opening.avif)
 
-Выберите нужный вам язык, например, `English(US)`:
+Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк
+на основе ключей или мнемонической фразы):
 
-![choose language](/img/resources/user-guides/en/restore_from_keys/choose-language.png)
+![choose
+restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.avif)
 
-Щёлкните `Restore wallet from keys or mnemonic seed` (Восстановить кошелёк на основе ключей или мнемонической фразы):
+Select `Restore from keys`, give your wallet a name & storage location, and
+complete the `Account address (public)`, `View key (private)` & `Spend key
+(private)`. Optionally, specify a `Restore height (optional)` to avoid
+scanning of oldest blocks. Then click the `Next` button:
 
-![choose restore](/img/resources/user-guides/en/restore_from_keys/choose-restore.png)
+![restore
+wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.avif)
 
-Выберите `Restore from keys` (Восстановить на основе ключей), укажите имя вашего кошелька и место, где он будет находиться, а также укажите `Account address (public)` (Адрес учётной записи (публичный)), `View key (private)` (Ключ просмотра (приватный)) и `Spend key (private)` (Ключ траты (приватный)). Дополнительно указать `Restore height (optional)` (Высоту восстановления (опционально)) во избежание сканирования старых блоков. Затем нажать стрелку вправо:
+On the next page, give your wallet a strong password and confirm it before
+clicking the `Next` button:
 
-![restore wallet](/img/resources/user-guides/en/restore_from_keys/restore-wallet.png)
+![wallet
+password](/img/resources/user-guides/en/restore_from_keys/wallet-password.avif)
 
-На следующей странице ввести сложный пароль для вашего кошелька и подтвердить его перед нажатием стрелки `Right` (Вправо):
+Specify your daemon settings and click the `Next` button:
 
-![wallet password](/img/resources/user-guides/en/restore_from_keys/wallet-password.png)
+![daemon
+settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.avif)
 
-Указать настройки демон-программы и нажать стрелку `Right` (Вправо):
+Click on `Create wallet` to complete the restoration process:
 
-![daemon settings](/img/resources/user-guides/en/restore_from_keys/daemon-settings.png)
-
-Щёлкнуть `USE MONERO` (использовать Monero) и наслаждаться восстановленным кошельком:
-
-![all set up](/img/resources/user-guides/en/restore_from_keys/all-set-up.png)
+![all set
+up](/img/resources/user-guides/en/restore_from_keys/all-set-up.avif)

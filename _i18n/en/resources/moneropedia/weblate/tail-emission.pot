@@ -3,11 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-10-12 12:56+0100\n"
+"POT-Creation-Date: 2024-07-23 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: ../_i18n/en/resources/moneropedia/tail-emission.md:1
 #, no-wrap
 msgid "the block reward at the end of the emission curve"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Hash Value: terms
 #: ../_i18n/en/resources/moneropedia/tail-emission.md:1
 #, no-wrap
 msgid "[\"Tail-Emission\"]"
@@ -43,23 +43,29 @@ msgstr ""
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/tail-emission.md:11
 #, markdown-text
-msgid "Monero block rewards will never drop to zero. Block rewards will gradually drop until tail emission commences at the end of May 2022. At this point, rewards will be fixed at 0.6 XMR per block."
+msgid "Monero block rewards will never drop to zero. Block rewards gradually dropped until tail emission commenced at the end of May 2022. At this point, rewards will stay fixed at 0.6 XMR or less* per block."
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:13
+#, markdown-text
+msgid "Due to block size penalties."
 msgstr ""
 
 #. type: Title ###
-#: ../_i18n/en/resources/moneropedia/tail-emission.md:12
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:14
 #, markdown-text, no-wrap
 msgid "Why"
 msgstr ""
 
 #. type: Plain text
-#: ../_i18n/en/resources/moneropedia/tail-emission.md:15
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:17
 #, markdown-text
 msgid "Miners need an incentive to mine. Because of the dynamic blocksize, competition between @miners will cause fees to decrease. If mining is not profitable due to a high cost and low reward, miners lose their incentive and will stop mining, reducing the security of the network."
 msgstr ""
 
 #. type: Plain text
-#: ../_i18n/en/resources/moneropedia/tail-emission.md:16
+#: ../_i18n/en/resources/moneropedia/tail-emission.md:18
 #, markdown-text
 msgid "Tail emission ensures that a dynamic block size and fee market can develop."
 msgstr ""

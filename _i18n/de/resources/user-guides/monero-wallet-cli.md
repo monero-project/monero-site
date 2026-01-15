@@ -38,7 +38,7 @@ Important commands:
 "donate <amount>" - Donate XMR to the development team.
 ```
 
-## Checking your balance
+## Guthaben überprüfen
 
 Da die Zuständigkeiten für Blockchain und Wallet bei verschiedenen
 Programmen liegen, benötigen einige Dienste des `monero-wallet-cli` eine
@@ -59,7 +59,7 @@ index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
 amount currently available to spend. Newly received transactions require 10
 confirmations on the blockchain before being unlocked.
 
-## Sending monero
+## Monero versenden
 
 You will need the standard address you want to send to (a long string
 starting with '4' or a '8'). The command structure is:
@@ -71,10 +71,10 @@ transfer ADDRESS AMOUNT
 Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
 many monero you want to send.
 
-## Receiving monero
+## Monero empfangen
 
-If you have your own Monero address, you just need to give your address to
-someone.
+Wenn du eine eigene Monero-Adresse hast, kannst du jemandem ganz einfach
+deine adresse geben.
 
 You can find out your primary address with:
 
@@ -100,12 +100,12 @@ includes your own account and that payment ID. If you want to select a
 particular payment ID, you can do that too. Use:
 
 ```
-integrated_address 82d79055f3b27f56
+integrated_address 12346780abcdef00
 ```
 
-Payments made to an integrated address generated from your account will go
-to your account, with that payment ID attached, so you can tell payments
-apart.
+An eine von deinem Konto aus generierte integrierte Adresse gesendete
+Zahlungen gehen mit der Zahlungs-ID markiert auf dein Konto. Auf diese Weise
+kannst du Zahlungen unterscheiden.
 
 ### Using subaddresses
 
@@ -131,7 +131,7 @@ To view all generated addresses, run:
 address all
 ```
 
-## Proving to a third party you paid someone
+## Getätigte Zahlungen gegenüber Dritten nachweisen
 
 Solltest du einen Händler bezahlt haben, dieser aber bestreiten, das Geld
 empfangen zu haben, kann es passieren, dass du deine Zahlung gegenüber
@@ -172,12 +172,13 @@ an eine Adresse gesendet hat), kannst du den Nachweis folgendermaßen
 check_tx_key TXID TXKEY ADDRESS
 ```
 
-Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID,
-per-transaction key, and destination address which were supplied to you,
-respectively. `monero-wallet-cli` will check that transaction and let you
-know how much monero this transaction paid to the given address.
+Ersetze `TXID`, `TXKEY` und `ADDRESS` mit der dir bereitgestellten
+Transaktions-ID, dem jeweiligen Transaktionsschlüssel und der
+Zieladresse. `monero-wallet-cli` überprüft nun diese Transaktion und teilt
+dir mit, wie viele Monero in dieser Transaktion an die vorgegebene Adresse
+gesendet wurden.
 
-## How to find a payment to you
+## Eine an dich gehende Zahlung finden
 
 Hast du eine Zahlung mit einer bestimmten Zahlungs-ID erhalten, kannst du
 diese folgendermaßen aufsuchen:

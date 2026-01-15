@@ -1,18 +1,39 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-Mit [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) ist es möglich, ein nicht vernetztes Wallet in einem System zu betreiben, welches quasi vom Hintergrunddienst isoliert ist und seinen Datenverkehr über [Tor](https://torproject.org/de/) laufen lässt.
+Mit [Qubes](https://qubes-os.org) + [Whonix](https://whonix.org) ist es
+möglich, ein nicht vernetztes Wallet in einem System zu betreiben, welches
+quasi vom Hintergrunddienst isoliert ist und seinen Datenverkehr über
+[Tor](https://torproject.org/de/) laufen lässt.
 
-Qubes ermöglicht es, flexibel und einfach separate VMs für unterschiedliche Zwecke zu erstellen. Zunächst erstellst du eine Whonix-Workstation für das nicht vernetzte Wallet. Als Nächstes eine weitere Whonix-Workstation für den Hintergrunddienst, der dein Whonix-Gateway als seine NetVM nutzt. Zur Kommunikation zwischen Wallet und Hintergrunddienst kannst du Qubes' [Qrexec](https://www.qubes-os.org/doc/qrexec3/) nutzen.
+Qubes ermöglicht es, flexibel und einfach separate VMs für unterschiedliche
+Zwecke zu erstellen. Zunächst erstellst du eine Whonix-Workstation für das
+nicht vernetzte Wallet. Als Nächstes eine weitere Whonix-Workstation für den
+Hintergrunddienst, der dein Whonix-Gateway als seine NetVM nutzt. Zur
+Kommunikation zwischen Wallet und Hintergrunddienst kannst du Qubes'
+[Qrexec](https://www.qubes-os.org/doc/qrexec3/) nutzen.
 
-Dies ist sicherer als andere Methoden, die etwa den RPC des Wallets durch einen durch Tor verborgenen Service leiten oder physisch isoliert sind, aber dennoch im Netzbetrieb sind, um zum Hintergrunddienst zu verbinden. Du benötigst auf diese Weise keine Netzwerkverbindung für dein Wallet, du schützt die Ressourcen des Tor-Netzwerks und es gibt weniger Verzögerung.
+Dies ist sicherer als andere Methoden, die etwa den RPC des Wallets durch
+einen durch Tor verborgenen Service leiten oder physisch isoliert sind, aber
+dennoch im Netzbetrieb sind, um zum Hintergrunddienst zu verbinden. Du
+benötigst auf diese Weise keine Netzwerkverbindung für dein Wallet, du
+schützt die Ressourcen des Tor-Netzwerks und es gibt weniger Verzögerung.
 
 ## 1. [Erstellen von Whonix-AppVMs](https://www.whonix.org/wiki/Qubes/Install):
 
-+ Erstelle unter Verwendung einer Whonix-Workstation-Vorlage zwei Workstations auf die folgende Weise:
++ Erstelle unter Verwendung einer Whonix-Workstation-Vorlage zwei
+  Workstations auf die folgende Weise:
 
-  - Die erste Workstation wird für dein Wallet genutzt und als `monero-wallet-ws` bezeichnet. `NetVM` wird hier auf `none` festgelegt.
+  - Die erste Workstation wird für dein Wallet genutzt und als
+    `monero-wallet-ws` bezeichnet. `NetVM` wird hier auf `none` festgelegt.
 
-  - Die zweite Workstation wird für den Hintergrunddienst `monerod` verwendet und als `monerod-ws` bezeichnet. `NetVM` ist in diesem Fall auf das Whonix-Gateway `sys-whonix` festgelegt. Stelle vor dem Fortfahren sicher, dass diese Workstation ausreichend privaten Speicher hat. Wie viel Speicher du benötigen wirst, kannst du schätzen, indem du die Größe der ["rohen" Blockchain]({{ site.baseurl }}/downloads/#blockchain) überprüfst. Behalte im Hinterkopf, dass die Blockchain mit der Zeit mehr Platz einnehmen wird.
+  - Die zweite Workstation wird für den Hintergrunddienst `monerod`
+    verwendet und als `monerod-ws` bezeichnet. `NetVM` ist in diesem Fall
+    auf das Whonix-Gateway `sys-whonix` festgelegt. Stelle vor dem
+    Fortfahren sicher, dass diese Workstation ausreichend privaten Speicher
+    hat. Wie viel Speicher du benötigen wirst, kannst du schätzen, indem du
+    die Größe der ["rohen" Blockchain]({{ site.baseurl
+    }}/downloads/#blockchain) überprüfst. Behalte im Hinterkopf, dass die
+    Blockchain mit der Zeit mehr Platz einnehmen wird.
 
 ## 2. In der AppVM `monerod-ws`:
 
@@ -47,7 +68,8 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-+ Stelle durch Abändern der Datei `/rw/config/rc.local` ein, dass der `monerod`-Hintergrunddienst bei Systemstart ausgeführt wird.
++ Stelle durch Abändern der Datei `/rw/config/rc.local` ein, dass der
+  `monerod`-Hintergrunddienst bei Systemstart ausgeführt wird.
 
 ```
 user@host:~$ sudo nano /rw/config/rc.local

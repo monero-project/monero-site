@@ -7,7 +7,11 @@ terms: ["Tail-Emission"]
 
 ### 基础知识
 
-门罗币的区块奖励永远不会降到零。区块奖励将逐渐下降，直到2022年5月底开始尾部释放。此时，奖励将固定在每个区块 0.6 XMR。
+Monero block rewards will never drop to zero. Block rewards gradually
+dropped until tail emission commenced at the end of May 2022. At this point,
+rewards will stay fixed at 0.6 XMR or less* per block.
+
+* Due to block size penalties.
 
 ### 为什么
 

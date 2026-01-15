@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-28 11:37+0200\n"
+"POT-Creation-Date: 2024-06-23 08:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,13 +103,13 @@ msgstr ""
 #. type: Title ###
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:43
 #, markdown-text, no-wrap
-msgid "Other distributions and operative systems"
+msgid "Other distributions and operating systems"
 msgstr ""
 
 #. type: Plain text
 #: ../_i18n/en/resources/user-guides/mine-to-pool.md:46
 #, markdown-text
-msgid "Binaries are available for multiple distributions and operative systems, but you can also build the miner by yourself. Take a loot at [XMrig's docs](https://xmrig.com/docs/miner)"
+msgid "Binaries are available for various distributions and operating systems, but you can also build the miner by yourself. Take a look at [XMrig's docs](https://xmrig.com/docs/miner)"
 msgstr ""
 
 #. type: Title ##

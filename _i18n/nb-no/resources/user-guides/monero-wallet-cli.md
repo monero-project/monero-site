@@ -38,7 +38,7 @@ Important commands:
 "donate <amount>" - Donate XMR to the development team.
 ```
 
-## Checking your balance
+## Å sjekke saldoen din
 
 Fordi håndteringen av blokkjeden og lommeboken er separate programmer, må
 mye av bruken av `monero-wallet-cli` skje med @daemon. Dette omfatter å se
@@ -58,7 +58,7 @@ index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
 amount currently available to spend. Newly received transactions require 10
 confirmations on the blockchain before being unlocked.
 
-## Sending monero
+## Å sende monero
 
 You will need the standard address you want to send to (a long string
 starting with '4' or a '8'). The command structure is:
@@ -70,7 +70,7 @@ transfer ADDRESS AMOUNT
 Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
 many monero you want to send.
 
-## Receiving monero
+## Å motta monero
 
 If you have your own Monero address, you just need to give your address to
 someone.
@@ -99,7 +99,7 @@ includes your own account and that payment ID. If you want to select a
 particular payment ID, you can do that too. Use:
 
 ```
-integrated_address 82d79055f3b27f56
+integrated_address 12346780abcdef00
 ```
 
 Payments made to an integrated address generated from your account will go
@@ -130,7 +130,7 @@ To view all generated addresses, run:
 address all
 ```
 
-## Proving to a third party you paid someone
+## Å bevise til en tredjepart at du har betalt noen
 
 Hvis du betaler en forhandler og forhandleren påstår å ikke ha mottatt
 midlene, må du kunne bevise for en tredjepart at du har sendt midlene –
@@ -168,12 +168,12 @@ monero til en adresse), kan du sjekke det slik:
 check_tx_key TXID TXKEY ADDRESS
 ```
 
-Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID,
-per-transaction key, and destination address which were supplied to you,
-respectively. `monero-wallet-cli` will check that transaction and let you
-know how much monero this transaction paid to the given address.
+Bytt ut `TXID`, `TXKEY` og `ADDRESS` med henholdsvis transaksjons-ID-en,
+per-transaction-nøkkel og mottakeradressen som ble gitt til
+deg. `monero-wallet-cli` vil sjekke den transaksjonen og gi deg beskjed om
+hvor mye monero denne transaksjonen utbetalte til den oppgitte adressen.
 
-## How to find a payment to you
+## Hvordan å finne en betaling som skal til deg
 
 Hvis du har mottatt en betaling ved bruk av en bestemt betalings-ID, kan du
 slå den opp:

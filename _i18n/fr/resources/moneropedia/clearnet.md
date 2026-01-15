@@ -13,12 +13,12 @@ connexion réseau *en clair*. Cela signifie que *toutes* vos connexions
 peuvent être suivies, tracées et observées par :
 
 - votre
-[FAI](https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_Internet)
+  [FAI](https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_Internet)
 
 - le site web, service, ou personne avec qui vous communiquez
 
 - potentiellement une entité compétente [Five
-Eyes](https://fr.wikipedia.org/wiki/Five_Eyes)
+  Eyes](https://fr.wikipedia.org/wiki/Five_Eyes)
 
 et même si vous utilisez
 [HTTPS](https://fr.wikipedia.org/wiki/HyperText_Transfer_Protocol_Secure) ou

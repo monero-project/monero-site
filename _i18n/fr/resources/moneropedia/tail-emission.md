@@ -7,10 +7,11 @@ terms: ["Tail-Emission", "émission-résiduelle"]
 
 ### Les Bases
 
-La récompense de bloc de Monero ne tombera jamais à zéro. La récompense de
-bloc va diminuer graduellement jusqu'à ce que l'émission résiduelle commence
-à la fin May 2022. A ce moment-là, la récompense sera fixée à 0,6 XMR par
-bloc.
+Monero block rewards will never drop to zero. Block rewards gradually
+dropped until tail emission commenced at the end of May 2022. At this point,
+rewards will stay fixed at 0.6 XMR or less* per block.
+
+* Due to block size penalties.
 
 ### Pourquoi ?
 

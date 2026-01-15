@@ -1,59 +1,71 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-### Purpose and Warning
+### Cel i Ostrzeżenie
 
-Most people don't need this. To use Monero, just start the software and it will synchronize itself with the peer-to-peer network. Normally, this is much faster than downloading and importing the blockchain as detailed in this guide. This is because you'll be downloading from many peers instead of just a single server, and the Monero @daemon will verify each block as it's received, instead of verifying separately after downloading.
+Większość ludzi tego nie potrzebuje. Aby korzystać z Monero, wystarczy
+uruchomić oprogramowanie, a ono samo zsynchronizuje się z siecią
+peer-to-peer. Zazwyczaj jest to znacznie szybsze niż pobieranie i
+importowanie blockchaina, jak wyszczególniono w tym przewodniku. Dzieje się
+tak dlatego, że będziesz pobierać z wielu serwerów peer-to-peer zamiast z
+jednego, a Monero @daemon zweryfikuje każdy blok w momencie jego otrzymania,
+zamiast weryfikować go osobno po pobraniu.
 
-This option is mostly useful for development, or possibly if some unusual problem is preventing you from syncing the normal way.
+Ta opcja jest przydatna głównie podczas programowania, lub jeśli jakiś
+nietypowy problem uniemożliwia synchronizację w normalny sposób.
 
-**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet, including the official site. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
+**Never** use the dangerous unverified import option, it is strictly for experts only. Especially, don't use it with any blockchain you download from the Internet. It is only safe to use if a) you are importing a file that you exported locally, yourself *and* b) you are absolutely sure it was already fully and properly verified before exporting.
 
-### Step 1
+### Krok 1
 
-Download the Current bootstrap from https://downloads.getmonero.org/blockchain.raw; you can skip this step if you are importing the blockchain from another source.
-
-### Step 2
-
-Find the path where the Monero software is installed. For example mine is:
+Znajdź ścieżkę, gdzie zainstalowane jest oprogramowanie Monero. Na przykład
+moja to:
 
 `D:\monero-gui-0.10.3.1`
 
-Your path may be different depending on where you decided to install the Monero software, and what version of the software you have.
+Twoja ścieżka może być inna w zależności od tego, gdzie zdecydowałeś się
+zainstalować oprogramowanie Monero i jaką wersję oprogramowania posiadasz.
 
-### Step 3
+### Krok 2
 
-Find the path of your downloaded blockchain for example mine was:
+Znajdź ścieżkę do swojego pobranego blockchaina, na przykład moją była:
 
 `C:\Users\KeeJef\Downloads\blockchain.raw`
 
-Yours might be different depending on where you chose to save the downloaded blockchain.
+Twoja może być inna w zależności od tego, gdzie zdecydowałeś się zapisać
+pobrany blockchain.
 
-### Step 4
+### Krok 3
 
-Open a Command Prompt window. You can do this by pressing the Windows key + R, and then typing in the popup box `CMD` and pressing Enter.
+Otwórz okno Wiersza Poleceń. Możesz to zrobić naciskając klawisz Windows +
+R, a następnie wpisując w oknie, które wyskoczy - `CMD` i nacisnąć Enter.
 
-### Step 5
+### Krok 4
 
-Now you need to navigate using the CMD window to the path of your Monero software. You can do this by typing:
+Teraz musisz wejść za pomocą okna CMD do miejsca gdzie znajduję się
+zainstalowane oprogramowanie Monero. Możesz to zrobić wpisując:
 
-`cd C:\YOUR\MONERO\PATH\HERE`
+`cd C:\TUTAJ\TWOJA\ŚCIEŻKA\MONERO`
 
-It should look something like:
+Powinno to wyglądać mniej więcej tak:
 
 `cd D:\monero-gui-0.10.3.1`
 
-If your Monero software is on another drive you can use `DriveLetter:` for example if your Monero software was on your D drive then before using the cd command you would do `D:`
+Jeśli Twoje oprogramowanie Monero jest na innym dysku możesz użyć
+`LiteraDysku:` na przykład jeśli Twoje oprogramowanie Monero było na dysku D
+to przed użyciem komendy `cd` napisałbyś `D:`.
 
-### Step 6
+### Krok 5
 
-Now type in your command prompt window:
+Teraz wpisz w oknie wiersza poleceń:
 
-`monero-blockchain-import --input-file C:\YOUR\BLOCKCHAIN\FILE\PATH\HERE`
+`monero-blockchain-import --input-file C:\TUTAJ\TWOJA\ŚCIEŻKA\DO\BLOCKCHAIN`
 
-For example I would type :
+Na przykład ja wpisałbym:
 
-`monero-blockchain-import --input-file C:\Users\KeeJef\Downloads\blockchain.raw`
+`monero-blockchain-import --input-file
+C:\Users\KeeJef\Downloads\blockchain.raw`
 
-### Step 7
+### Krok 6
 
-After the the blockchain has finished syncing up you can open your Monero wallet normally. Your downloaded blockchain.raw can be deleted.
+Po zakończeniu synchronizacji blockchain możesz normalnie otworzyć swój
+portfel Monero. Pobrany blockchain.raw może zostać usunięty.

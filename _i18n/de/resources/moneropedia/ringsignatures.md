@@ -24,19 +24,16 @@ Abstimmung bzw. Einrichtung) gebildet werden kann.
 
 ### Anwendung auf Monero
 
-Eine Ringsignatur nutzt die Schlüssel deines @Kontos und eine Anzahl von der
-@Blockchain gezogener öffentlicher Schlüssel (auch bekannt als Outputs)
-mithilfe einer Methode der Dreiecksverteilung. Im Laufe der Zeit könnten
-vergangene Outputs mehrmals genutzt worden sein, um Gruppen möglicher
-Unterzeichner zu bilden. Innerhalb des "Rings" potenzieller Unterzeichner
-sind alle Ringmitglieder gleichwertig und gleichberechtigt. Es besteht keine
-Möglichkeit für einen Außenstehenden, auszumachen, welcher der möglichen
-Unterzeichner in einer solchen Gruppe zu deinem @Konto
-gehören. Ringsignaturen stellen also sicher, dass Transaktionsoutputs nicht
-zurückverfolgbar sind. Außerdem bestehen bei Monero keine Schwierigkeiten
-mit @Fungibilität, da jeder Transaktionsoutput glaubwürdige Bestreitbarkeit
-hat (z.B. kann das Netzwerk nicht ausmachen, welche Outputs ausgegeben oder
-nicht ausgegeben sind).
+A ring signature makes use of your @account keys and a number of public keys
+(also known as outputs) pulled from the @blockchain using a gamma
+distribution method. Over the course of time, past outputs could be used
+multiple times to form possible signer participants. In a "ring" of possible
+signers, all ring members are equal and valid. There is no way an outside
+observer can tell which of the possible signers in a signature group belongs
+to your @account. So, ring signatures ensure that transaction outputs are
+untraceable. Moreover, there are no @fungibility issues with Monero given
+that every transaction output has plausible deniability (e.g. the network
+can not tell which outputs are spent or unspent).
 
 Wie Monero standardmäßig Privatsphäre bietet, kann im Eintrag über
 @Schattenadressen nachgelesen werden.

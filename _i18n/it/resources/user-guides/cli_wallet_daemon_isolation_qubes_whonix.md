@@ -20,7 +20,7 @@ latency.
 
 ## 1. [Create Whonix AppVMs](https://www.whonix.org/wiki/Qubes/Install):
 
-+ usare Whonix template, creare workstations come segue::
++ Using a Whonix workstation template, create two workstations as follows:
 
   - The first workstation will be used for your wallet, it will referred to
     as `monero-wallet-ws`. You will have `NetVM` set to `none`.
@@ -37,46 +37,67 @@ latency.
 
 + Create a `systemd` file.
 
-``` user@host:~$ sudo nano /home/user/monerod.service ```
+```
+user@host:~$ sudo nano /home/user/monerod.service
+```
 
 Paste the following contents:
 
-``` [Unit] Description=Monero Full Node After=network.target
+```
+[Unit]
+Description=Monero Full Node
+After=network.target
 
-[Service] User=user Group=user
+[Service]
+User=user
+Group=user
 
-Type=forking PIDFile=/home/user/.bitmonero/monerod.pid
+Type=forking
+PIDFile=/home/user/.bitmonero/monerod.pid
 
 ExecStart=/usr/bin/monerod --detach --data-dir=/home/user/.bitmonero \
     --no-igd --pidfile=/home/user/.bitmonero/monerod.pid \
     --log-file=/home/user/.bitmonero/bitmonero.log --p2p-bind-ip=127.0.0.1
 
-Restart=always PrivateTmp=true
+Restart=always
+PrivateTmp=true
 
-[Install] WantedBy=multi-user.target ```
+[Install]
+WantedBy=multi-user.target
+```
 
 + Make `monerod` daemon run on startup by editing the file
-`/rw/config/rc.local`.
+  `/rw/config/rc.local`.
 
-``` user@host:~$ sudo nano /rw/config/rc.local ```
+```
+user@host:~$ sudo nano /rw/config/rc.local
+```
 
 Add these lines to the bottom:
 
-``` cp /home/user/monerod.service /lib/systemd/system/ systemctl start
-monerod.service ```
+```
+cp /home/user/monerod.service /lib/systemd/system/
+systemctl start monerod.service
+```
 
 Make file executable.
 
-``` user@host:~$ sudo chmod +x /rw/config/rc.local ```
+```
+user@host:~$ sudo chmod +x /rw/config/rc.local
+```
 
 + Create rpc action file.
 
-``` user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc user@host:~$ sudo
-nano /rw/usrlocal/etc/qubes-rpc/user.monerod ```
+```
+user@host:~$ sudo mkdir /rw/usrlocal/etc/qubes-rpc
+user@host:~$ sudo nano /rw/usrlocal/etc/qubes-rpc/user.monerod
+```
 
 Add this line:
 
-``` socat STDIO TCP:localhost:18081 ```
+```
+socat STDIO TCP:localhost:18081
+```
 
 + Shutdown `monerod-ws`.
 
@@ -84,16 +105,21 @@ Add this line:
 
 + Edit the file `/rw/config/rc.local`.
 
-``` user@host:~$ sudo nano /rw/config/rc.local ```
+```
+user@host:~$ sudo nano /rw/config/rc.local
+```
 
 Add the following line to the bottom:
 
-``` socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:"qrexec-client-vm
-monerod-ws user.monerod" ```
+```
+socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:"qrexec-client-vm monerod-ws user.monerod"
+```
 
 Make file executable.
 
-``` user@host:~$ sudo chmod +x /rw/config/rc.local ```
+```
+user@host:~$ sudo chmod +x /rw/config/rc.local
+```
 
 + Shutdown `monero-wallet-ws`.
 
@@ -101,8 +127,12 @@ Make file executable.
 
 + Create the file `/etc/qubes-rpc/policy/user.monerod`:
 
-``` [user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod ```
+```
+[user@dom0 ~]$ sudo nano /etc/qubes-rpc/policy/user.monerod
+```
 
 Add the following line:
 
-``` monero-wallet-ws monerod-ws allow ```
+```
+monero-wallet-ws monerod-ws allow
+```

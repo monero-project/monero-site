@@ -38,7 +38,7 @@ Important commands:
 "donate <amount>" - Donate XMR to the development team.
 ```
 
-## Checking your balance
+## Vérifier votre solde
 
 Dans la mesure ou la gestion de la chaîne de blocs et le portefeuille sont
 des applications séparées, de nombreux usages de `monero-wallet-cli`
@@ -59,19 +59,19 @@ index `[0]`). `Balance` is your total balance. The `unlocked balance` is the
 amount currently available to spend. Newly received transactions require 10
 confirmations on the blockchain before being unlocked.
 
-## Sending monero
+## Envoyer des Moneroj
 
 You will need the standard address you want to send to (a long string
 starting with '4' or a '8'). The command structure is:
 
 ```
-transfer ADDRESS AMOUNT
+transfer ADRESSE MONTANT
 ```
 
 Replace `ADDRESS` with the address you want to send to and `AMOUNT` with how
 many monero you want to send.
 
-## Receiving monero
+## Recevoir des moneroj
 
 If you have your own Monero address, you just need to give your address to
 someone.
@@ -100,7 +100,7 @@ includes your own account and that payment ID. If you want to select a
 particular payment ID, you can do that too. Use:
 
 ```
-integrated_address 82d79055f3b27f56
+integrated_address 12346780abcdef00
 ```
 
 Payments made to an integrated address generated from your account will go
@@ -131,7 +131,7 @@ To view all generated addresses, run:
 address all
 ```
 
-## Proving to a third party you paid someone
+## Prouver à un tiers que vous avez payé quelqu'un
 
 Si vous payez un commerçants, et que celui-ci prétends qu'il n'a pas reçu
 les fonds, vous pourriez avoir besoin de prouver à un tiers que vous avez
@@ -169,7 +169,7 @@ effectivement envoyé des moneroj à une adresse), vous pouvez le vérifier
 comme suit :
 
 ```
-check_tx_key TXID TXKEY ADDRESS
+check_tx_key IDTX CLEFTX ADRESSE
 ```
 
 Replace `TXID`, `TXKEY` and `ADDRESS` with the transaction ID,
@@ -177,7 +177,7 @@ per-transaction key, and destination address which were supplied to you,
 respectively. `monero-wallet-cli` will check that transaction and let you
 know how much monero this transaction paid to the given address.
 
-## How to find a payment to you
+## Comment retrouver un paiement qui vous a été fait
 
 Si vous recevez un paiement utilisant un ID de paiement précis, vous pouvez
 le rechercher :

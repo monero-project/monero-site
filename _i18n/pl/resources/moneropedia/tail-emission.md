@@ -7,10 +7,11 @@ terms: ["tail-emission", "krzywej-z-długim-ogonem", "krzywą-z-długim-ogonem",
 
 ### Podstawy
 
-Wynagrodzenie za blok Monero nigdy nie spadną do zera, ale będą stopniowo
-spadać aż do końca maja 2022 roku, kiedy rozpocznie się emisja według
-krzywej z długim ogonem. W tym momencie wynagrodzenie zostanie ustalone jako
-0,6 XMR za blok.
+Monero block rewards will never drop to zero. Block rewards gradually
+dropped until tail emission commenced at the end of May 2022. At this point,
+rewards will stay fixed at 0.6 XMR or less* per block.
+
+* Due to block size penalties.
 
 ### Przyczyny
 

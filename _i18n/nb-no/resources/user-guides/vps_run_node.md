@@ -2,18 +2,23 @@
 
 # monerod
 
-`monerod` er @daemon-programvaren som kommer med Monero-treet. Den er et konsollprogram og håndterer blokkjeden. Mens en bitcoin-lommebok håndterer både en konto og blokkjeden, separerer Monero disse: `monerod` håndterer blokkjeden og `monero-wallet-cli` håndterer kontoen.
+`monerod` er @daemon-programvaren som kommer med Monero-treet. Den er et
+konsollprogram og håndterer blokkjeden. Mens en bitcoin-lommebok håndterer
+både en konto og blokkjeden, separerer Monero disse: `monerod` håndterer
+blokkjeden og `monero-wallet-cli` håndterer kontoen.
 
-Denne guiden antar at du allerede har satt opp VPS-konto og at du bruker SSH-en til å tunnelere til serverkonsollen.
+Denne guiden antar at du allerede har satt opp VPS-konto og at du bruker
+SSH-en til å tunnelere til serverkonsollen.
 
 ## Linux, 64-bit (Ubuntu 16.04 LTS)
 
 ### Sørg for at port 18080 er åpen
 
-`monerod` bruker denne porten til å kommunisere med andre noder i Monero-nettverket.
+`monerod` bruker denne porten til å kommunisere med andre noder i
+Monero-nettverket.
 
-Eksempel hvis du bruker `ufw`: `sudo ufw allow 18080`
-Eksempel hvis du bruker `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
+Eksempel hvis du bruker `ufw`: `sudo ufw allow 18080` Eksempel hvis du
+bruker `iptables`: `sudo iptables -A INPUT -p tcp --dport 18080 -j ACCEPT`
 
 ### Last ned de gjeldende Monero Core-binærfilene
 

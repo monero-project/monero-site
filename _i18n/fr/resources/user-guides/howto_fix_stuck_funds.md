@@ -1,32 +1,39 @@
 {% include disclaimer.html translated="yes" translationOutdated="no" %}
 
-Parfois, vos fonds pourraient être bloqués, ou vous auriez des fonds bloqués qui ne se débloqueraient jamais. Voici comment solutionner ce problème.
+Parfois, vos fonds pourraient être bloqués, ou vous auriez des fonds bloqués
+qui ne se débloqueraient jamais. Voici comment solutionner ce problème.
 
-- Chargez votre portefeuille dans monero-wallet-cli.
+- Load your wallet in monero-wallet-cli.
 
-- Tapez
+- Type
 
 > seed
 
-Dans l'invite de commande. Notez votre phrase mnémonique de 25 mots, si vous ne l'avez pas déjà fait. C'est la meilleure façon de vous assurer que vous ne perdez pas l'accès à vos fonds.
+Dans l'invite de commande. Notez votre phrase mnémonique de 25 mots, si vous
+ne l'avez pas déjà fait. C'est la meilleure façon de vous assurer que vous
+ne perdez pas l'accès à vos fonds.
 
-- Fermez monero-wallet-cli en tapant
+- Close monero-wallet-cli by typing
 
 > exit
 
-- Sauvegardez tous les fichiers relatifs à votre portefeuille, à savoir :
+- Backup all of your wallet related files. These include:
 
-> nomdevotreportefeuille.bin
-> nomdevotreportefeuille.bin.keys
-> nomdevotreportefeuille.bin.address.txt
+> yourwalletname.bin
+> yourwalletname.bin.keys
+> yourwalletname.bin.address.txt
 
-Vous pouvez réaliser ceci en copiant les fichiers dans un nouveau répertoire.
+Vous pouvez réaliser ceci en copiant les fichiers dans un nouveau
+répertoire.
 
-Parfois, lors de la création de votre portefeuille, vous pourriez lui avoir donner un nom sans la partie .bin. Dans ce cas, votre portefeuille s'appellera nomdevotreportefeuille sans le .bin à la fin.
+Parfois, lors de la création de votre portefeuille, vous pourriez lui avoir
+donner un nom sans la partie .bin. Dans ce cas, votre portefeuille
+s'appellera nomdevotreportefeuille sans le .bin à la fin.
 
-- Supprimez nomdevotreportefeuille.bin
+- Delete yourwallet.bin
 
-- Lancez monero-wallet-cli, et tapez le nom de votre portefeuille que vous venez de supprimer.
+- Load monero-wallet-cli, type in the name of the wallet you just deleted
 
-- Entrez votre mot de passe. Votre portefeuille sera alors mis à jour et avec un peu de chance vos fonds bloqués seront alors débloqués.
+- Enter password. The wallet will now refresh and hopefully your locked
+  funds will now become unlocked.
 

@@ -1,55 +1,90 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-A view-only wallet is a special type of wallet that can only see incoming transactions. Since it doesn't hold your mnemonic seed and private spend key, it can't sign transactions and it can't see outgoing transactions. This makes them particularly interesting for
+Кошелёк, предназначенный только для просмотра, представляет собой
+специальный тип кошелька, позволяющий только просматривать входящие
+транзакции. Поскольку в нём не хранится вашей мнемонической фразы и
+приватного ключа траты, с его помощью нельзя подписывать транзакции и
+просматривать исходящие транзакции. Это делает такой кошелёк интересным с
+точки зрения
 
-* Validate incoming transactions to cold wallets or hardware wallets
-* Monitor incoming donations to a fundraising campaign
-* Developers writing libraries to validate payments
+* валидации входящих на холодные или аппаратные кошельки транзакций
+* отслеживания поступающих пожертвований при проведении кампании по сбору
+  средств
+* разработчиков, которые занимаются написанием библиотек для валидации
+  платежей
 
-View-only wallets cannot sign transactions, therefore they can't spend a balance alone. However, they can be used as part of an offline transaction signing, by creating unsigned transactions to be signed offline in a cold device, and later by sending the signed transaction to the network.
+Кошельки, предназначенные для просмотра, не позволяют подписывать
+транзакции, а следовательно, вы не сможете тратить средства исключительно с
+их помощью. Тем не менее, их можно использовать при подписании транзакций
+оффлайн, создавая неподписанные транзакции, которые затем будут подписаны
+оффлайн в холодном кошельке. После этого уже подписанная транзакция будет
+передана в сеть.
 
-If your wallet has outgoing transactions, the balance displayed will not be correct. To get a correct balance in a view-only wallet, you have to import the accompanying key images of each output of the wallet.
+Если в вашем кошельке имеются исходящие транзакции, отображаемый баланс
+будет неправильным. Чтобы узнать правильный баланс посредством кошелька,
+предназначенного для просмотра, необходимо импортировать соответствующие
+образы ключей к каждому выходу, принадлежащему кошельку.
 
-You can also create a view-only wallet of a hardware wallet, however this kind of view-only wallet doesn't support offline transaction signing and importing of key images.
+Также можно создать кошелёк, предназначенный для просмотра, соответствующий
+аппаратному кошельку. Однако, такой тип кошелька не позволит подписывать
+транзакции оффлайн и импортировать образы ключей.
 
-In order to create a view-only wallet, you must either have access to a wallet or know the main address and the private view key from a wallet.
+Чтобы создать кошелёк, предназначенный исключительно для просмотра,
+необходимо либо иметь доступ к кошельку, либо знать основной адрес и
+приватный ключ просмотра для этого кошелька.
 
-### CLI: Creating a View-Only Wallet from a Private View Key
+### CLI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра
 
-Open an existing wallet and type `address` and `viewkey` commands to display the wallet's address and its private (secret) view key. Type `exit` to close the wallet.
+Откройте существующий кошелёк и введите команды `address` и `viewkey`, чтобы
+вывести на экран адрес кошелька и его приватный (секретный) ключ
+просмотра. Введите `exit`, чтобы закрыть кошелёк.
 
-Next, create your view-only wallet by typing `monero-wallet-cli --generate-from-view-key wallet-name`. The last argument will be your new wallet's file name. You will be prompted for `Standard address` and `View key` by the wallet. Paste in your original wallet's address and private (secret) view key. Next, enter and confirm a password for your new wallet.
+После этого введите `monero-wallet-cli --generate-from-view-key wallet-name`
+и создайте кошелёк, предназначенный только для просмотра. Последним
+аргументом будет название вашего нового кошелька. Кошелёк выдаст вам
+подсказки `Standard address` и `View key`. Введите адрес и приватный
+(секретный) ключ вашего оригинального кошелька. Затем введите и подтвердите
+пароль для вашего нового кошелька.
 
-### GUI: Creating a View-Only Wallet from an Existing Wallet File
+### GUI: создание кошелька, предназначенного только для просмотра, на основе файла существующего кошелька
 
-If you have access to the existing wallet, open your wallet and go to `Settings` > `Wallet` > `Create a view-only wallet`:
+Если у вас есть доступ к существующему кошельку, откройте его и в настройках выберите: `Settings` > `Wallet` > `Create a view-only wallet`:
 
 ![settings](/img/resources/user-guides/en/view-only/settings.png)
 
-The view-only wallet file will be created within the same directory and using your current password.
+Файл кошелька, предназначенного для просмотра, будет создан в той же самой
+директории и будет использовать тот же пароль.
 
-Optionally, double-click the `Success` window to copy the message, then click `OK` to close it:
+Как вариант, дважды кликните по окну `Success`, чтобы скопировать сообщение,
+а затем кликните `OK`, чтобы закрыть его:
 
 ![Success](/img/resources/user-guides/en/view-only/Success.png)
 
-### GUI: Creating a View-only Wallet from a Private View Key
+### GUI: создание кошелька, предназначенного только для просмотра, на основе приватного ключа просмотра
 
-If you don't have access to the existing wallet, you can create a view-only wallet by knowing the wallet's main address and its private view key.
+Если у вас нет доступа к существующему кошельку, вы можете создать кошелёк,
+предназначенный для просмотра, зная основной адрес и приватный ключ
+просмотра этого кошелька.
 
-In order to do that, go to the main Menu and click on `Restore wallet from keys or mnemonic seed`:
+Чтобы сделать это, войдите в основное меню и выберите `Restore wallet from
+keys or mnemonic seed`:
 
 ![restore-view-only](/img/resources/user-guides/en/view-only/restore-view-only.png)
 
-Enter a name for you view-only wallet file. Optionally, you can change the file location.
+Введите имя файла вашего кошелька, предназначенного для
+просмотра. Опционально вы можете изменить местонахождение файла.
 
-Select `Restore from keys`.
+Выберите `Restore from keys`.
 
-In `Account address (public)` field, enter your wallet's main address, which starts with 4.
+Введите основной адрес вашего кошелька, начинающийся с 4, в поле `Account
+address (public)`.
 
-In `View key (private)` field, enter the private view key of your wallet.
+Введите приватный ключ вашего кошелька в поле `View key (private)`.
 
-Leave the `Spend key (private)` field blank.
+Оставьте поле `Spend key (private)` пустым.
 
-Enter a `Wallet creation date` or a `Restore height` if you have one (optional).
+Введите `Wallet creation date` (дату создания кошелька) или `Restore height`
+(высоту восстановления), если у вас есть такая возможность.
 
-Click on `Next` to create your view-only wallet file.
+Выберите `Next`, чтобы создать файл кошелька, предназначенного только для
+просмотра.

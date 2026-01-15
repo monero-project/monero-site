@@ -8,31 +8,19 @@ This is a beginners guide for the Windows operating system and will make use of 
 
 ## Table of Contents
 
-### [1. Gpg4win Installer](#1-using-gpg4win-installer)
-  - [1.1. Getting Gpg4win Installer](#11-getting-gpg4win-installer)
-    + [1.1.1. Download Gpg4win](#111-download-gpg4win)
-    + [1.1.2. Launch Gpg4win](#112-launch-gpg4win)
-  - [1.2. Use Gpg4win Installer](#12-use-gpg4win-installer)
-### [2. Import Signing Key](#2-monero-signing-key)
-  - [2.1. Download Signing Key](#21-download-signing-key)
-  - [2.2. Initialize Kleopatra](#22-initialize-kleopatra)
-    + [2.2.1. Import Signing Key](#221-import-signing-key)
-    + [2.2.2. Create Key Pair](#222-create-key-pair)
-  - [2.3. Verify Signing Key](#23-verify-signing-key)
-### [3. Verify Hash File](#3-hash-file-verification)
-  - [3.1. Download Hash File](#31-download-hash-file)
-  - [3.2. Verify Hash File](#32-verify-hash-file)
-### [4. Verify Binary File](#4-binary-file-verification)
-  - [4.1. Download Binary](#41-download-binary)
-  - [4.2. Verify Binary](#42-verify-binary)
+1. [Gpg4win Installer](#using-gpg4win-installer)
 
-## 1. Using Gpg4win Installer
+2. [Import Signing Key](#monero-signing-key)
+
+3. [Verify Hash File](#hash-file-verification)
+
+4. [Verify Binary File](#binary-file-verification)
+
+## Using Gpg4win Installer
 
 This section will cover installing the cryptography software. Windows does not come with the tools required to verify your binary. To install these tools you can use the Gpg4win installer.
 
-### 1.1. Getting Gpg4win Installer
-
-#### 1.1.1. Download Gpg4win
+### Download Gpg4win
 
 In a web browser, go to [gpg4win.org](https://gpg4win.org) and download the installer by clicking the green button.
 
@@ -50,7 +38,7 @@ Choose a download location, click `Save`.
 
 ![gpg4win site download location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png)
 
-#### 1.1.2. Launch Gpg4win
+### Launch Gpg4win
 
 When the download is finished, open the containing folder.
 
@@ -60,7 +48,7 @@ Double click the downloaded gpg4win executable to launch.
 
 ![gpg4win launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-launch.png)
 
-### 1.2. Use Gpg4win Installer
+### Use Gpg4win Installer
 
 You will be presented with a security verification screen, click `Run`.
 
@@ -90,11 +78,11 @@ Click `Finish`.
 
 ![gpg4win installer finish](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png)
 
-## 2. Monero Signing Key
+## Monero Signing Key
 
 This section will cover downloading the Monero signing key, verifying that the key is correct, and then importing the key to your keyring. The hash file that will be used to verify your binary is cryptographically signed with the Monero signing key. In order to check the validity of this file you must have the public version of the signing key.
 
-### 2.1. Download Signing Key
+### Download Signing Key
 
 In a web browser, go to [binaryFate's GPG key](https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/binaryfate.asc), which he uses for signing the Monero binaries. Right click on the page, choose `Save Page As`.
 
@@ -104,7 +92,7 @@ Leave the default location, click `Save`.
 
 ![getkey save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_getkey-savefilename.png)
 
-### 2.2. Initialize Kleopatra
+### Initialize Kleopatra
 
 If this is your first time using Kleopatra you will have to create a key pair for yourself.
 
@@ -112,7 +100,7 @@ Launch Kleopatra.
 
 ![kleo launch](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-launch.png)
 
-#### 2.2.1. Import Signing Key
+### Import Signing Key
 
 Click `Import`.
 
@@ -126,7 +114,7 @@ Start the process of certifying the key by clicking `Yes`.
 
 ![kleo firstrun start process](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png)
 
-#### 2.2.2. Create Key Pair
+### Create Key Pair
 
 Start the process of key creation by clicking `Yes`.
 
@@ -148,7 +136,7 @@ Click `Finish`.
 
 ![kleo firstrun finish create key](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png)
 
-### 2.3. Verify Signing Key
+### Verify Signing Key
 
 Visually check that the fingerprint of the key belonging to binaryFate is `81AC591FE9C4B65C5806AFC3F0AF4D462A0BDF92`.
 
@@ -164,11 +152,11 @@ Enter your password, click `OK`.
 
 Click `Finish`.
 
-## 3. Hash File Verification
+## Hash File Verification
 
 This section will cover downloading the signed file of known good hashes and verifying its authenticity.
 
-### 3.1. Download Hash File
+### Download Hash File
 
 In a web browser, go to the [getmonero.org hash page]({{ site.baseurl_root }}/downloads/hashes.txt). Right click the page, select `Save Page As`.
 
@@ -178,7 +166,7 @@ Leave the default location, click `Save`.
 
 ![hashes save file](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png)
 
-### 3.2. Verify Hash File
+### Verify Hash File
 
 In Kleopatra, click the `Decrypt/Verify` button.
 
@@ -202,11 +190,11 @@ If you receive a **VALID** signature, click `Discard` and move on.
 
 If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the file `hashes` from the `Downloads` directory and go back to [section 3.1](#31-download-hash-file).
 
-## 4. Binary File Verification
+## Binary File Verification
 
 This section will cover downloading the Monero binary and verifying its authenticity.
 
-### 4.1. Download Binary
+### Download Binary
 
 In a web browser, go to the [getmonero.org downloads page]({{ site.baseurl_root }}/downloads/#windows). Select the correct binary for your system.
 
@@ -220,7 +208,7 @@ Leave the default location, click `Save`.
 
 ![binary getmonero save location](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png)
 
-### 4.2. Verify Binary
+### Verify Binary
 
 In a file manager, navigate to `Downloads` directory. Open the file `hashes` with a word processor.
 
