@@ -405,7 +405,7 @@ jobs:
       - name: Format metadata file
         run: |
           set -euo pipefail
-          pnpm install
+          pnpm install --frozen-lockfile
           pnpm exec prettier --write src/data/downloads/core.json
 
       - name: Create pull request

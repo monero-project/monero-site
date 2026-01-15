@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "check": "astro check",
     "lint": "eslint .",
     "lint:css": "stylelint \"src/**/*.{css,astro}\"",
     "lint:fix": "eslint . --fix",
@@ -17,10 +18,10 @@
     "format:check": "prettier --check .",
     "i18n:moneropedia:config": "tsx src/i18n/moneropedia/gen-config.ts",
     "i18n:moneropedia:update-po": "po4a --no-translations src/i18n/moneropedia/po4a.conf",
-    "i18n:moneropedia:compile": "po4a src/i18n/moneropedia/po4a.conf"
+    "i18n:moneropedia:compile": "po4a src/i18n/moneropedia/po4a.conf",
+    "prepare": "node .husky/install.mjs"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.6",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.1",
     "@fontsource-variable/dm-sans": "^5.2.8",
@@ -39,11 +40,13 @@
     "marked": "^15.0.12",
     "mdast-util-find-and-replace": "^3.0.2",
     "rehype-external-links": "^3.0.0",
+    "sass": "^1.97.2",
     "sharp": "^0.34.5",
     "unist-util-visit": "^5.0.0"
   },
   "packageManager": "pnpm@10.24.0",
   "devDependencies": {
+    "@astrojs/check": "^0.9.6",
     "@eslint/js": "^9.39.2",
     "@types/hast": "^3.0.4",
     "@types/mdast": "^4.0.4",
@@ -52,17 +55,16 @@
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "htmlhint": "^1.8.0",
-    "postcss-html": "^1.8.0",
+    "husky": "^9.1.7",
+    "postcss-html": "^1.8.1",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-astro-organize-imports": "^0.4.11",
-    "sass": "^1.97.2",
     "stylelint": "^16.26.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-no-unsupported-browser-features": "^8.0.5",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.52.0",
+    "typescript-eslint": "^8.53.0",
     "unified": "^11.0.5",
     "vfile": "^6.0.3"
   }

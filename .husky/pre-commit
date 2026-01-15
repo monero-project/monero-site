@@ -1,0 +1,3 @@
+pnpm lint
+pnpm lint:css
+pnpm format:check
