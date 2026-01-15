@@ -9,7 +9,7 @@ import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import { createTInstance, getLocale } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
@@ -127,7 +127,7 @@ const faqItems = faqToItems(
 
           <a
             slot="bottom"
-            href={localizeHref(locale, "/resources/user-guides/solo_mine_GUI")}
+            href="https://docs.getmonero.org/interacting/mining/guides/solo/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -146,10 +146,7 @@ const faqItems = faqToItems(
           <ul class="resourceList">
             <li>
               <ExternalResourceButton
-                href={localizeHref(
-                  locale,
-                  "/resources/user-guides/mine-to-pool",
-                )}
+                href="https://docs.getmonero.org/interacting/mining/guides/pool/xmrig-pool"
                 title={t("mining:resources.guides.mineToPool.title")}
                 subtitle={t("mining:resources.guides.mineToPool.subtitle")}
                 variant="mini"

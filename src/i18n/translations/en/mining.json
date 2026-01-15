@@ -34,7 +34,7 @@
       "No pool fees, no operator trust",
       "\"Lottery\" payouts - higher variance"
     ],
-    "cta": "Solo mine (GUI guide)"
+    "cta": "Guide"
   },
   "resources": {
     "title": "Resources",
@@ -72,7 +72,7 @@
     },
     "soloVsPool": {
       "title": "Solo vs pool mining - what's the tradeoff?",
-      "content": "Solo mining maximizes independence but payouts can take a long time. Pools pay more frequently but add trust and centralization risk.\n\n### Solo\n- No pool operator, no pool fee\n- Long waits between rewards\n- Best for decentralization\n\n[Solo mining guide](https://www.getmonero.org/resources/user-guides/solo_mine_GUI.html)\n\n### Pool\n- More frequent payouts\n- Pool fee + operator trust\n- Centralization risk if one pool grows too large\n- Requires third-party mining software\n\n[Browse pools](https://miningpoolstats.stream/monero)"
+      "content": "Solo mining maximizes independence but payouts can take a long time. Pools pay more frequently but add trust and centralization risk.\n\n### Solo\n- No pool operator, no pool fee\n- Long waits between rewards\n- Best for decentralization\n\n[Solo mining guide](https://docs.getmonero.org/interacting/mining/guides/solo)\n\n### Pool\n- More frequent payouts\n- Pool fee + operator trust\n- Centralization risk if one pool grows too large\n- Requires third-party mining software\n\n[Browse pools](https://miningpoolstats.stream/monero)"
     },
     "whyP2Pool": {
       "title": "Why is P2Pool \"best of both\"?",
