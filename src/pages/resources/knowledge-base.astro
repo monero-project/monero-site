@@ -1,0 +1,63 @@
+---
+import CategoryCard from "@/components/ui/CategoryCard.astro";
+import PageContainer from "@/components/ui/PageContainer.astro";
+import TitleCard from "@/components/ui/TitleCard.astro";
+import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+
+const cards = [
+  {
+    title: t("knowledge-base:library.title"),
+    description: t("knowledge-base:library.cardSubtitle"),
+    href: localizeHref(locale, "/resources/library/"),
+  },
+  {
+    title: t("knowledge-base:moneropedia.title"),
+    description: t("knowledge-base:moneropedia.cardSubtitle"),
+    href: localizeHref(locale, "/resources/moneropedia/"),
+  },
+  {
+    title: t("knowledge-base:researchLab.title"),
+    description: t("knowledge-base:researchLab.cardSubtitle"),
+    href: localizeHref(locale, "/resources/research-lab"),
+  },
+];
+---
+
+<Layout
+  title={t("knowledge-base:index.pageTitle")}
+  description={t("knowledge-base:index.subtitle")}
+>
+  <TitleCard title={t("knowledge-base:index.title")} />
+
+  <PageContainer>
+    <div class="card-grid">
+      {
+        cards.map((card) => (
+          <CategoryCard
+            title={card.title}
+            description={card.description}
+            href={card.href}
+          />
+        ))
+      }
+    </div>
+  </PageContainer>
+</Layout>
+
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
