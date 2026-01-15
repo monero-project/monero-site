@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Button from "@/components/ui/Button.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -25,10 +26,14 @@ import {
   getLocale,
   localizeHref,
 } from "@/i18n/utils";
+import { getPublicImageDimensions } from "@/utils/image";
 
 const locale = getLocale(Astro.url);
 const dir = getDirection(locale);
 const t = await createTInstance(locale);
+const previewDimensions = await Promise.all(
+  brandAssets.map((asset) => getPublicImageDimensions(asset.preview)),
+);
 
 const sections = [
   {
@@ -75,10 +80,15 @@ const sections = [
 
         <div class="assets-grid">
           {
-            brandAssets.map((asset) => (
+            brandAssets.map((asset, i) => (
               <div class="asset-card">
                 <div class="asset-preview">
-                  <img src={asset.preview} alt={asset.name} />
+                  <Image
+                    src={asset.preview}
+                    alt=""
+                    width={previewDimensions[i].width}
+                    height={previewDimensions[i].height}
+                  />
                 </div>
 
                 <div class="asset-header">
