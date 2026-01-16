@@ -111,15 +111,6 @@
   },
   "cold": [
     {
-      "id": "keystone",
-      "name": "Keystone",
-      "logo": "/media/wallets/hardware/keystone.avif",
-      "link": "https://guide.keyst.one/docs/feather",
-      "tags": {
-        "general": ["3 Pro"]
-      }
-    },
-    {
       "id": "ledger",
       "name": "Ledger",
       "logo": "/media/wallets/hardware/ledger.avif",

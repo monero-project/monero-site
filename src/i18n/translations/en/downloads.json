@@ -101,7 +101,6 @@
       "stackwallet": "A multi-coin wallet with Monero support for desktop and mobile.",
       "unstoppable": "A multi-coin wallet supporting Monero.",
       "edge": "A multi-coin wallet with server-side syncing.",
-      "keystone": "Hardware wallet with Monero support via third-party apps.",
       "ledger": "Hardware wallet with Monero support via third-party apps.",
       "trezor": "Hardware wallet with Monero support via third-party apps.",
       "cupcake": "Offline signer app for use with Cake Wallet/Monero.com.",

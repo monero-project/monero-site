@@ -167,6 +167,8 @@
     }
   },
   "additionalResources": {
+    "title": "Additional Resources",
+    "subtitle": "Explore more resources to help you learn about Monero.",
     "moneroDocs": {
       "title": "Monero Docs",
       "description": "Comprehensive guides for users and developers to use Monero effectively and securely.",

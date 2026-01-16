@@ -9,17 +9,17 @@
     },
     "workgroupCard": {
       "bestFor": "Best for:",
-      "joinIrc": "Join {chatName} on IRC",
+      "joinIrc": "Join {{chatName}} on IRC",
       "joinMatrix": "Join on Matrix"
     },
     "guideStep": {
-      "step": "Step {step}"
+      "step": "Step {{step}}"
     },
     "paginator": {
       "pagination": "Pagination",
       "previousPage": "Previous page",
       "nextPage": "Next page",
-      "page": "Page {n}"
+      "page": "Page {{n}}"
     },
     "externalResourceButton": {
       "onionService": "Onion service",

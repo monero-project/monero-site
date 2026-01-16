@@ -9,8 +9,16 @@ export interface Tool {
 export const blockExplorers: Tool[] = [
   {
     title: "P2Pool Observer",
-    subtitle: "Block explorer with miner proof verification",
+    subtitle:
+      "Unconventional explorer with miner proof verification (hides uncontested blocks)",
     href: "https://blocks.p2pool.observer/",
+  },
+  {
+    title: "P2Pool.io Explorer",
+    subtitle: "Traditional Monero block explorer",
+    href: "https://p2pool.io/explorer/",
+    onionHref:
+      "http://yucmgsbw7nknw7oi3bkuwudvc657g2xcqahhbjyewazusyytapqo4xid.onion/explorer/",
   },
   {
     title: "MoneroHash",
@@ -27,6 +35,18 @@ export const blockExplorers: Tool[] = [
     subtitle: "Block explorer by LocalMonero",
     href: "https://localmonero.co/blocks",
   },
+  {
+    title: "Monerowat.ch",
+    subtitle: "Monero block explorer",
+    href: "https://monerowat.ch",
+  },
+  {
+    title: "xmr.mx",
+    subtitle: "Monero block explorer",
+    href: "https://xmr.mx",
+    onionHref:
+      "http://ravfxexpx76quysu77pbvao4ng5qnyo46gguklfwlafhllrujwdgqtyd.onion/",
+  },
 ];
 
 export const networkTools: Tool[] = [
@@ -34,6 +54,11 @@ export const networkTools: Tool[] = [
     title: "Monero.fail",
     subtitle: "Comprehensive node list and network map",
     href: "https://monero.fail",
+  },
+  {
+    title: "ditatompel",
+    subtitle: "Monero remote node list",
+    href: "https://www.ditatompel.com/monero/remote-node",
   },
   {
     title: "monerohash.com",
@@ -65,13 +90,8 @@ export const utilities: Tool[] = [
   },
   {
     title: "monerotech.info",
-    subtitle: "Paper wallet generator",
+    subtitle: "Tool to inspect wallet keys and addresses",
     href: "https://monerotech.info",
-  },
-  {
-    title: "Cryptoradar",
-    subtitle: "Compare Monero prices across exchanges",
-    href: "https://cryptoradar.co/buy-monero",
   },
   {
     title: "Monero.how",
