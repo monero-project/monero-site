@@ -78,7 +78,7 @@ export const pastSponsors: Sponsor[] = [
   },
   {
     id: "mymonero",
-    name: "My Monero",
+    name: "MyMonero",
     link: "https://mymonero.com",
   },
 ];

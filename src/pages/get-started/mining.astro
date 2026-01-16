@@ -9,7 +9,7 @@ import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale } from "@/i18n/utils";
+import { createTInstance, getLocale, getDirection } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
@@ -25,6 +25,7 @@ import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const dir = getDirection(locale);
 const safeMarkdown = createSafeMarkdown(locale);
 
 // Helper to convert keyed FAQ section to array for Accordion
@@ -78,7 +79,7 @@ const faqItems = faqToItems(
             rel="noopener"
           >
             {t("mining:gupax.cta")}
-            <MaskIcon src={externalLinkIcon} size="1em" />
+            <MaskIcon src={externalLinkIcon} size="1em" rtl={dir == "rtl"} />
           </a>
         </ContentCard>
 
@@ -105,7 +106,7 @@ const faqItems = faqToItems(
             rel="noopener"
           >
             {t("mining:xmrig.cta")}
-            <MaskIcon src={externalLinkIcon} size="1em" />
+            <MaskIcon src={externalLinkIcon} size="1em" rtl={dir == "rtl"} />
           </a>
         </ContentCard>
 
@@ -132,7 +133,7 @@ const faqItems = faqToItems(
             rel="noopener noreferrer"
           >
             {t("mining:solo.cta")}
-            <MaskIcon src={externalLinkIcon} size="1em" />
+            <MaskIcon src={externalLinkIcon} size="1em" rtl={dir == "rtl"} />
           </a>
         </ContentCard>
       </div>

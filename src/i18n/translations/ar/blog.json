@@ -1,0 +1,39 @@
+{
+  "rssTitle": "RSS مدونة Monero",
+  "index": {
+    "pageTitle": "المدونة",
+    "hero": {
+      "title": "المدونة",
+      "subtitle": "اقرأ أحدث الأخبار والتحديثات حول Monero."
+    }
+  },
+  "tagIndex": {
+    "pageTitle": "فهرس العلامات",
+    "hero": {
+      "title": "فهرس العلامات",
+      "subtitle": "تصفح منشورات المدونة حسب العلامات."
+    }
+  },
+  "tags": {
+    "pageTitle": "المنشورات الموسومة بـ {{tag}}",
+    "hero": {
+      "title": "المنشورات الموسومة بـ \"{{tag}}\"",
+      "subtitle": "تصفح جميع منشورات المدونة الموسومة بـ \"{{tag}}\"."
+    }
+  },
+  "post": {
+    "pageTitle": "المدونة | {{title}}",
+    "recentPosts": "المنشورات الأخيرة",
+    "and": "و"
+  },
+  "tabs": {
+    "allPosts": "جميع المنشورات",
+    "urgent": "عاجل",
+    "releases": "الإصدارات",
+    "community": "المجتمع",
+    "meetingLogs": "سجلات الاجتماعات"
+  },
+  "aria": {
+    "rssFeed": "تغذية RSS"
+  }
+}

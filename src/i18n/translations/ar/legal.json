@@ -1,0 +1,23 @@
+{
+  "pageTitle": "القانوني",
+  "title": "القانوني",
+  "subtitle": "آخر مراجعة: 22 يونيو 2017",
+  "description": "شروط الاستخدام، حقوق النشر، وسياسة الخصوصية لموقع مشروع Monero.",
+  "sections": {
+    "termsOfUse": {
+      "title": "شروط الاستخدام",
+      "tocSubtitle": "قواعد استخدام هذا الموقع"
+    },
+    "copyright": {
+      "title": "حقوق النشر",
+      "tocSubtitle": "معلومات ترخيص المحتوى"
+    },
+    "privacyPolicy": {
+      "title": "سياسة الخصوصية",
+      "tocSubtitle": "كيف نتعامل مع بياناتك"
+    }
+  },
+  "aria": {
+    "sectionsNav": "تنقل الأقسام القانونية"
+  }
+}

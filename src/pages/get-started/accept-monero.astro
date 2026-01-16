@@ -15,10 +15,16 @@ import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import handCoinsIcon from "@/assets/icons/mask/handCoins.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
 
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import {
+  createTInstance,
+  getDirection,
+  getLocale,
+  localizeHref,
+} from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const dir = getDirection(locale);
 ---
 
 <Layout
@@ -55,7 +61,7 @@ const t = await createTInstance(locale);
               class="inline-link"
             >
               {t("accept-monero:steps.chooseSetup.wallet.viewWallets")}
-              <MaskIcon src={arrowRightIcon} size="1em" />
+              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir == "rtl"} />
             </a>
           </AccordionItem>
 
@@ -98,7 +104,7 @@ const t = await createTInstance(locale);
               class="inline-link"
             >
               {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
-              <MaskIcon src={arrowRightIcon} size="1em" />
+              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir == "rtl"} />
             </a>
           </AccordionItem>
 
@@ -176,7 +182,7 @@ const t = await createTInstance(locale);
           class="inline-link"
         >
           {t("accept-monero:steps.getListed.viewDirectories")}
-          <MaskIcon src={arrowRightIcon} size="1em" />
+          <MaskIcon src={arrowRightIcon} size="1em" rtl={dir == "rtl"} />
         </a>
       </GuideStep>
     </div>

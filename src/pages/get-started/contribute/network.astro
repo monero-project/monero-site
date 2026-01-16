@@ -12,11 +12,17 @@ import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import moneroPickaxe from "@/assets/images/monero_pickaxe.webp";
 import serverImage from "@/assets/images/server.avif";
 
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import {
+  createTInstance,
+  getLocale,
+  localizeHref,
+  getDirection,
+} from "@/i18n/utils";
 import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
 const locale = getLocale(Astro.url);
 const t = await createTInstance(locale);
+const dir = getDirection(locale);
 const safeMarkdown = createSafeMarkdown(locale);
 ---
 
@@ -48,7 +54,7 @@ const safeMarkdown = createSafeMarkdown(locale);
         <div class="cta-links">
           <Button href={localizeHref(locale, "/get-started/mining/")}>
             {t("contribute:network.mine.learnAboutMining")}
-            <MaskIcon src={arrowRight} size="1em" />
+            <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} />
           </Button>
         </div>
       </div>
@@ -81,7 +87,7 @@ const safeMarkdown = createSafeMarkdown(locale);
             rel="noopener"
           >
             {t("contribute:network.runANode.moneroDocs")}
-            <MaskIcon src={externalLinkIcon} size="0.9em" />
+            <MaskIcon src={externalLinkIcon} size="0.9em" rtl={dir == "rtl"} />
           </a>
           <a
             href="https://sethforprivacy.com/guides/run-a-monero-node/"
@@ -89,7 +95,7 @@ const safeMarkdown = createSafeMarkdown(locale);
             rel="noopener"
           >
             {t("contribute:network.runANode.sethForPrivacy")}
-            <MaskIcon src={externalLinkIcon} size="0.9em" />
+            <MaskIcon src={externalLinkIcon} size="0.9em" rtl={dir == "rtl"} />
           </a>
         </div>
       </div>

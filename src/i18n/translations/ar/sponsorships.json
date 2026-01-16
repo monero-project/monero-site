@@ -1,0 +1,27 @@
+{
+  "pageTitle": "الرعايات",
+  "hero": {
+    "title": "الرعايات",
+    "subtitle": "الشركات التي تدعم بنشاط مشروع Monero في هدفه لجلب الخصوصية المالية إلى العالم."
+  },
+  "currentSponsors": {
+    "title": "الرعاة الحاليون",
+    "subtitle": "توفر هذه المنظمات الدعم المستمر لبنية تحتية Monero والتطوير."
+  },
+  "contributions": {
+    "tari-labs": "ترعى CDN المستخدم لهذا الموقع",
+    "cake-wallet": "ترعى قائمة البريد، GitLab، Matrix، Taiga، و Weblate",
+    "cypher-stack": "ترعى موظفي devops للعمل على وصيانة بنية تحتية مشروع Monero",
+    "macstadium": "ترعى Mac Mini مخصصًا يُستخدم للتطوير المتعلق بـ Mac",
+    "symas": "ترعى CTO Howard Chu (hyc) لعمله على كود Monero"
+  },
+  "becomeASponsor": {
+    "title": "كن راعيًا!",
+    "description": "إذا كنت أنت أو منظمتك ترغب في رعاية مشروع Monero، يرجى إرسال بريد إلكتروني إلى dev@getmonero.org.",
+    "cta": "اتصل بنا"
+  },
+  "pastSponsors": {
+    "title": "الرعاة السابقون",
+    "subtitle": "نشكر هذه المنظمات على دعمها السابق."
+  }
+}

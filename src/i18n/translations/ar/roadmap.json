@@ -1,0 +1,112 @@
+{
+  "pageTitle": "خارطة الطريق",
+  "hero": {
+    "title": "خارطة الطريق",
+    "subtitle": "تتبع تقدم تطوير Monero والميزات القادمة."
+  },
+  "status": {
+    "inProgress": "قيد التقدم",
+    "upcoming": "قادم",
+    "proposed": "مقترح"
+  },
+  "items": {
+    "fcmp": {
+      "title": "إثباتات العضوية الكاملة في السلسلة",
+      "description": "ترقية الخصوصية تحل محل تواقيع الحلقة بنظام ZKP جديد."
+    },
+    "cuprate": {
+      "title": "Cuprate",
+      "description": "تنفيذ Rust لعقدة Monero."
+    },
+    "newSite": {
+      "title": "getmonero.org الجديد",
+      "description": "إعادة تصميم كاملة وتحديث للموقع الرسمي."
+    },
+    "randomxV2": {
+      "title": "RandomX V2",
+      "description": "التكرار التالي لخوارزمية إثبات العمل في Monero لتحسين مقاومة ASIC."
+    },
+    "bulletproofsPP": {
+      "title": "Bulletproofs++",
+      "description": "جيل جديد من إثباتات النطاق لمعاملات أصغر وأسرع."
+    },
+    "seraphis": {
+      "title": "Seraphis & Jamtis",
+      "description": "بروتوكول معاملة جديد مع خصوصية ووظائف محسنة."
+    },
+    "ospead": {
+      "title": "OSPEAD",
+      "description": "تقدير إحصائي معلمي ثابت أمثل لتوزيعات عشوائية لاختيار الدروع."
+    },
+    "mrlResearch": {
+      "title": "مهام بحث MRL",
+      "description": "مبادرات بحث متنوعة مقترحة من مختبر بحث Monero."
+    }
+  },
+  "history": {
+    "title": "التاريخ",
+    "months": {
+      "january": "يناير",
+      "february": "فبراير",
+      "march": "مارس",
+      "april": "أبريل",
+      "may": "مايو",
+      "june": "يونيو",
+      "july": "يوليو",
+      "august": "أغسطس",
+      "september": "سبتمبر",
+      "october": "أكتوبر",
+      "november": "نوفمبر",
+      "december": "ديسمبر"
+    },
+    "events": {
+      "havenoDex": "تم إصدار HavenoDEX",
+      "xmrBchSwap": "تم إكمال مبادلة XMR-BCH الذرية",
+      "lwsSubaddress": "دعم Light Wallet Server للعناوين الفرعية",
+      "ethSwaps": "مبادلات Monero ↔ Ethereum الذرية",
+      "blockProp": "تم تقليل تأخير انتشار الكتل، تم تحديد tx_extra، تحسينات سرعة المحفظة",
+      "v15Hardfork": "ترقية الشبكة v15 Hardfork",
+      "fluorineFermi": "تم إصدار CLI و GUI 0.18 'Fluorine Fermi'",
+      "viewTags": "علامات العرض: تحسين سرعة مزامنة المحفظة بنسبة +40%",
+      "p2pool": "تم إصدار P2Pool",
+      "btcSwaps": "مبادلات Monero ↔ Bitcoin الذرية",
+      "onionAddress": "عنوان Onion لـ getmonero.org",
+      "clsag": "تم تنفيذ تواقيع CLSAG",
+      "oxygenOrion": "تم إصدار CLI و GUI 0.17 'Oxygen Orion'",
+      "v0160": "تم إصدار CLI و GUI 0.16.0.0",
+      "dandelion": "تم تنفيذ بروتوكول Dandelion++",
+      "randomx": "خوارزمية إثبات العمل RandomX",
+      "ipv6": "دعم IPv6",
+      "paymentIdRemoved": "تم إزالة معرف الدفع المستقل",
+      "pruning": "تقليم السلسلة",
+      "hwSupport2019": "دعم Trezor Model T & Ledger Nano X",
+      "torI2p": "تكامل CLI wallet مع Tor & I2P",
+      "ccs": "تم إطلاق نظام التمويل الجماعي المجتمعي (CCS)",
+      "cryptonightR": "خوارزمية إثبات العمل CryptoNightR",
+      "bulletproofs": "تم تنفيذ Bulletproofs",
+      "ringSize11": "تم زيادة حجم الحلقة إلى 11",
+      "berylliumBullet": "تم إصدار 0.13 'Beryllium Bullet'",
+      "kovri": "إصدار Kovri alpha",
+      "ledgerSupport": "دعم محفظة الأجهزة Ledger",
+      "multisigSubaddress": "Multisig & عناوين فرعية في ترقية الشبكة",
+      "guiRelease2018": "تم إصدار GUI الرسمي",
+      "multisig": "التوقيعات المتعددة (multisig)",
+      "subaddresses": "العناوين الفرعية",
+      "fluffyBlocks": "كتل Fluffy",
+      "guiOutOfBeta": "GUI خارج البيتا",
+      "ringSize5": "تم زيادة حجم الحلقة إلى 5، RingCT مطلوب",
+      "ringctEnabled": "تم تمكين معاملات RingCT",
+      "guiBeta": "تم إصدار GUI Beta 1 الرسمي",
+      "wolframWarptangent": "تم إصدار 0.10.0 'Wolfram Warptangent'",
+      "ringSize3": "حجم حلقة أدنى 3 مطلوب",
+      "hydrogenHelix": "تم إصدار 0.9.0 'Hydrogen Helix'",
+      "spamAttack": "تم التعافي من هجوم السبام",
+      "mrlPapers": "تم نشر أوراق مختبر بحث Monero 1-3",
+      "bitcointalk": "تم الإطلاق على Bitcointalk",
+      "renamed": "تم إعادة التسمية من Bitmonero إلى Monero"
+    }
+  },
+  "aria": {
+    "kanban": "حالة التطوير"
+  }
+}
