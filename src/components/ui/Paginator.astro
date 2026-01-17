@@ -1,5 +1,6 @@
 ---
-import { localizeNumber } from "@/i18n/utils";
+import { localizeNumber, getDirection } from "@/i18n/utils";
+import { defaultLocale } from "@/i18n/config";
 import type { Page } from "astro";
 import type { TFunction } from "i18next";
 import MaskIcon from "./MaskIcon.astro";
@@ -14,6 +15,7 @@ interface Props {
 }
 
 const { page, locale, t } = Astro.props;
+const dir = getDirection(locale || defaultLocale);
 
 const current = page.currentPage;
 const last = page.lastPage;
@@ -74,7 +76,7 @@ const hasNext = current < last;
         aria-disabled={!hasPrev}
         rel={hasPrev ? "prev" : undefined}
       >
-        <MaskIcon src={chevronLeft} size="1.25em" />
+        <MaskIcon src={chevronLeft} size="1.25em" rtl={dir === "rtl"} />
       </a>
 
       <ul class="pagination-list">
@@ -113,7 +115,7 @@ const hasNext = current < last;
         aria-disabled={!hasNext}
         rel={hasNext ? "next" : undefined}
       >
-        <MaskIcon src={chevronRight} size="1.25em" />
+        <MaskIcon src={chevronRight} size="1.25em" rtl={dir === "rtl"} />
       </a>
     </nav>
   )

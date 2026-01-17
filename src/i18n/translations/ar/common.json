@@ -41,6 +41,12 @@
     "languageDropdown": {
       "changeLanguage": "غير اللغة",
       "languages": "اللغات"
+    },
+    "categoryCard": {
+      "explore": "استكشف"
+    },
+    "paperCard": {
+      "readPaper": "اقرأ الورقة"
     }
   },
   "aria": {
@@ -50,6 +56,7 @@
     "primaryNav": "التنقل الأساسي",
     "closeMenu": "أغلق القائمة",
     "openMenu": "افتح القائمة",
+    "close": "أغلق",
     "utilities": "الأدوات",
     "primaryNavSections": "أقسام التنقل الأساسي"
   },

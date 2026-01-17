@@ -1,7 +1,7 @@
 ---
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { getDirection, getLocale } from "@/i18n/utils";
+import { getDirection, getLocale, createTInstance } from "@/i18n/utils";
 
 interface Props {
   title: string;
@@ -11,9 +11,13 @@ interface Props {
   linkText?: string;
 }
 
-const { title, description, href, image, linkText = "Explore" } = Astro.props;
+const { title, description, href, image, linkText } = Astro.props;
 
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
+const locale = getLocale(Astro.url);
+const t = await createTInstance(locale);
+const dir = getDirection(locale);
+
+const defaultLinkText = t("common:components.categoryCard.explore");
 ---
 
 <a href={href} class="category-card">
@@ -24,8 +28,8 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
     <h2 class="card-title">{title}</h2>
     <p class="card-description">{description}</p>
     <span class="card-link">
-      {linkText}
-      <MaskIcon src={arrowRight} size="1em" rtl={rtl} />
+      {linkText || defaultLinkText}
+      <MaskIcon src={arrowRight} size="1em" rtl={dir === "rtl"} />
     </span>
   </div>
 </a>

@@ -41,6 +41,12 @@
     "languageDropdown": {
       "changeLanguage": "Change language",
       "languages": "Languages"
+    },
+    "categoryCard": {
+      "explore": "Explore"
+    },
+    "paperCard": {
+      "readPaper": "Read Paper"
     }
   },
   "aria": {
@@ -50,6 +56,7 @@
     "primaryNav": "Primary",
     "closeMenu": "Close menu",
     "openMenu": "Open menu",
+    "close": "Close",
     "utilities": "Utilities",
     "primaryNavSections": "Primary navigation sections"
   },

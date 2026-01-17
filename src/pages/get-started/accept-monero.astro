@@ -20,6 +20,7 @@ import {
   getDirection,
   getLocale,
   localizeHref,
+  localizeNumber,
 } from "@/i18n/utils";
 
 const locale = getLocale(Astro.url);
@@ -39,7 +40,7 @@ const dir = getDirection(locale);
   <PageContainer>
     <div class="guide-content">
       <GuideStep
-        step={1}
+        step={localizeNumber(locale, 1)}
         title={t("accept-monero:steps.chooseSetup.title")}
         icon={appWindowIcon}
         t={t}
@@ -146,7 +147,7 @@ const dir = getDirection(locale);
       <hr />
 
       <GuideStep
-        step={2}
+        step={localizeNumber(locale, 2)}
         title={t("accept-monero:steps.acceptPayment.title")}
         icon={handCoinsIcon}
         reverse
@@ -161,7 +162,7 @@ const dir = getDirection(locale);
           >
           {t("accept-monero:steps.acceptPayment.confirmations")}
         </p>
-        <TipBox>
+        <TipBox showIcon>
           {t("accept-monero:steps.acceptPayment.tip")}
         </TipBox>
       </GuideStep>
@@ -169,7 +170,7 @@ const dir = getDirection(locale);
       <hr />
 
       <GuideStep
-        step={3}
+        step={localizeNumber(locale, 3)}
         title={t("accept-monero:steps.getListed.title")}
         icon={usersIcon}
         t={t}
