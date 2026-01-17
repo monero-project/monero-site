@@ -12,7 +12,7 @@ export interface Book {
   coverAlt?: string;
   link: string;
   translations?: {
-    language: string;
+    locale: string;
     url: string;
   }[];
 }
@@ -41,15 +41,15 @@ export const books: Book[] = [
     link: "/library/Zero-to-Monero-2-0-0.pdf",
     translations: [
       {
-        language: "Russian",
+        locale: "ru",
         url: "/library/Zero-to-Monero-2-0-0-ru.pdf",
       },
       {
-        language: "Portuguese",
+        locale: "pt",
         url: "/library/Zero-to-Monero-2-0-0-pt.pdf",
       },
       {
-        language: "Italian",
+        locale: "it",
         url: "/library/Zero-to-Monero-2-0-0-it.pdf",
       },
     ],
