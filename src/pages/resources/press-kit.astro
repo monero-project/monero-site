@@ -92,14 +92,16 @@ const sections = [
                 </div>
 
                 <div class="asset-header">
-                  <h3>{asset.name}</h3>
-                  <p>{asset.description}</p>
+                  <h3>{t(`press-kit:assets.${asset.id}.name`)}</h3>
+                  <p>{t(`press-kit:assets.${asset.id}.description`)}</p>
                 </div>
 
                 <div class="asset-variants">
                   {asset.variants.map((variant) => (
                     <div class="variant-group">
-                      <span class="variant-label">{variant.label}</span>
+                      <span class="variant-label">
+                        {t(`press-kit:assets.variants.${variant.labelKey}`)}
+                      </span>
                       <div class="size-links">
                         {variant.sizes.map((size) => (
                           <a
@@ -109,7 +111,7 @@ const sections = [
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            {size.label}
+                            {t(`press-kit:assets.sizes.${size.labelKey}`)}
                           </a>
                         ))}
                       </div>
@@ -154,8 +156,8 @@ const sections = [
                 pressDocuments.map((doc) => (
                   <ExternalResourceButton
                     href={doc.url}
-                    title={doc.title}
-                    subtitle={doc.description}
+                    title={t(`press-kit:documents.${doc.id}.title`)}
+                    subtitle={t(`press-kit:documents.${doc.id}.description`)}
                   />
                 ))
               }
@@ -170,8 +172,10 @@ const sections = [
                 marketingResources.map((resource) => (
                   <ExternalResourceButton
                     href={resource.url}
-                    title={resource.title}
-                    subtitle={resource.description}
+                    title={t(`press-kit:marketing.${resource.id}.title`)}
+                    subtitle={t(
+                      `press-kit:marketing.${resource.id}.description`,
+                    )}
                   />
                 ))
               }
