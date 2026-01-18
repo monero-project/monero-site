@@ -360,7 +360,7 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
     }
   }
 
-  @media (hover: hover) and (pointer: fine) {
+  @media (min-width: 1200px) and (hover: hover) and (pointer: fine) {
     .nav-item--dropdown:is(
         :hover,
         :focus-within,
@@ -382,17 +382,15 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
       color: var(--heading-color);
     }
 
-    @media (min-width: 1200px) {
-      .nav-item--dropdown:is(
-          :hover,
-          :focus-within,
-          :has(.dropdown :focus-visible)
-        )
-        > .row
-        > .link
-        > .caret {
-        transform: rotate(180deg);
-      }
+    .nav-item--dropdown:is(
+        :hover,
+        :focus-within,
+        :has(.dropdown :focus-visible)
+      )
+      > .row
+      > .link
+      > .caret {
+      transform: rotate(180deg);
     }
   }
 
