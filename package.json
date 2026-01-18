@@ -19,14 +19,14 @@
     "i18n:moneropedia:config": "tsx src/i18n/moneropedia/gen-config.ts",
     "i18n:moneropedia:update-po": "po4a --no-translations src/i18n/moneropedia/po4a.conf",
     "i18n:moneropedia:compile": "po4a src/i18n/moneropedia/po4a.conf",
-    "prepare": "node .husky/install.mjs"
+    "prepare": "lefthook install"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.14",
-    "@astrojs/sitemap": "^3.6.1",
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.7.0",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource/dm-sans": "^5.2.8",
-    "astro": "^5.16.9",
+    "astro": "^5.16.11",
     "astro-i18n-aut": "^0.7.3",
     "astro-og-canvas": "^0.7.2",
     "astro-seo": "^0.8.4",
@@ -48,6 +48,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
     "@eslint/js": "^9.39.2",
+    "@evilmartians/lefthook": "^1.13.6",
     "@types/hast": "^3.0.4",
     "@types/mdast": "^4.0.4",
     "eslint": "^9.39.2",
@@ -55,7 +56,6 @@
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "htmlhint": "^1.8.0",
-    "husky": "^9.1.7",
     "postcss-html": "^1.8.1",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
