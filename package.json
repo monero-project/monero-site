@@ -28,7 +28,7 @@
     "@fontsource/dm-sans": "^5.2.8",
     "astro": "^5.16.11",
     "astro-i18n-aut": "^0.7.3",
-    "astro-og-canvas": "^0.7.2",
+    "astro-og-canvas": "^0.10.0",
     "astro-seo": "^0.8.4",
     "canvaskit-wasm": "^0.40.0",
     "escape-string-regexp": "^5.0.0",

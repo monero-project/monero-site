@@ -27,8 +27,8 @@ importers:
         specifier: ^0.7.3
         version: 0.7.3(astro@5.16.11(@types/node@24.10.1)(rollup@4.55.1)(sass@1.97.2)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       astro-og-canvas:
-        specifier: ^0.7.2
-        version: 0.7.2(astro@5.16.11(@types/node@24.10.1)(rollup@4.55.1)(sass@1.97.2)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
+        specifier: ^0.10.0
+        version: 0.10.0(astro@5.16.11(@types/node@24.10.1)(rollup@4.55.1)(sass@1.97.2)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       astro-seo:
         specifier: ^0.8.4
         version: 0.8.4(prettier-plugin-astro@0.14.1)(prettier@3.8.0)(typescript@5.9.3)
@@ -1347,11 +1347,10 @@ packages:
     peerDependencies:
       astro: ^5.0.0
 
-  astro-og-canvas@0.7.2:
-    resolution: {integrity: sha512-i7sWbdpl2MMF7wUZqSfzMnhW4c7GQz6s7T4BUJ7E06MqasZRHjJytn0n6D0JJkGDeTpZnU7E00A6Ffx0pRB4kg==}
-    engines: {node: '>=18.14.1'}
+  astro-og-canvas@0.10.0:
+    resolution: {integrity: sha512-JkSIYEo2sTJiuht7iVQ2CNT38+rrlvkRpJkqjA58WDFHdymgWktoT9zLkjEkn2u9K2zeZx2GTev16IBJzIoZNQ==}
     peerDependencies:
-      astro: ^3.0.0 || ^4.0.0 || ^5.0.0
+      astro: ^5.0.0 || ^6.0.0-alpha
 
   astro-seo@0.8.4:
     resolution: {integrity: sha512-Ou1vzQSXAxa0K8rtNtXNvSpYqOGEgMhh0immMxJeXmbVZac3UKCNWAoXWyOQDFYsZvBugCRSg0N1phBqPMVgCw==}
@@ -4854,7 +4853,7 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  astro-og-canvas@0.7.2(astro@5.16.11(@types/node@24.10.1)(rollup@4.55.1)(sass@1.97.2)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
+  astro-og-canvas@0.10.0(astro@5.16.11(@types/node@24.10.1)(rollup@4.55.1)(sass@1.97.2)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
     dependencies:
       astro: 5.16.11(@types/node@24.10.1)(rollup@4.55.1)(sass@1.97.2)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       canvaskit-wasm: 0.40.0

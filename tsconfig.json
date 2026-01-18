@@ -3,6 +3,8 @@
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"],
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "paths": {
       "@/*": ["./src/*"]
     }
