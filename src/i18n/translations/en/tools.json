@@ -46,7 +46,7 @@
     "subtitle": "Payment processors and plugins for accepting Monero on your website or store.",
     "disclaimer": {
       "title": "Disclaimer",
-      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a payment gateway,",
+      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a payment gateway, ",
       "linkText": "open a GitHub issue"
     }
   }
