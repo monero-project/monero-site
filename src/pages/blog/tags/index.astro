@@ -40,7 +40,7 @@ const t = await createTInstance(locale);
                 `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
               )}
             >
-              {tag}
+              {t(`blog:tagLabels.${tag}`, { defaultValue: tag })}
             </a>
           </li>
         ))

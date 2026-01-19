@@ -1,5 +1,48 @@
 {
   "rssTitle": "RSS مدونة Monero",
+  "tagLabels": {
+    "0mq": "0MQ",
+    "accounts": "الحسابات",
+    "announcements": "الإعلانات",
+    "blockchaindb": "قاعدة بيانات البلوكشين",
+    "branding": "العلامة التجارية",
+    "ccs": "CCS",
+    "community": "المجتمع",
+    "compliance": "الامتثال",
+    "conferences": "المؤتمرات",
+    "core": "الأساسي",
+    "crypto": "التشفير",
+    "cryptography": "علم التشفير",
+    "dev": "التطوير",
+    "dev diaries": "يوميات التطوير",
+    "development": "التطوير",
+    "docs": "المستندات",
+    "exchanges": "البورصات",
+    "external": "خارجي",
+    "forkguard": "حارس الانقسام",
+    "funding": "التمويل",
+    "gui": "الواجهة الرسومية",
+    "i2p": "I2P",
+    "i8n": "التدويل",
+    "jamtis": "Jamtis",
+    "kovri": "Kovri",
+    "magic": "MAGIC",
+    "malware": "البرمجيات الخبيثة",
+    "mining": "التعدين",
+    "monero": "Monero",
+    "monero missives": "رسائل Monero",
+    "mymonero": "MyMonero",
+    "network upgrade": "ترقية الشبكة",
+    "platforms": "المنصات",
+    "protocol": "البروتوكول",
+    "protocol upgrade": "ترقية البروتوكول",
+    "releases": "الإصدارات",
+    "research": "البحث",
+    "rpc": "RPC",
+    "seraphis": "Seraphis",
+    "urgent": "عاجل",
+    "usability": "سهولة الاستخدام"
+  },
   "index": {
     "pageTitle": "المدونة",
     "hero": {
@@ -27,11 +70,7 @@
     "and": "و"
   },
   "tabs": {
-    "allPosts": "جميع المنشورات",
-    "urgent": "عاجل",
-    "releases": "الإصدارات",
-    "community": "المجتمع",
-    "meetingLogs": "سجلات الاجتماعات"
+    "allPosts": "جميع المنشورات"
   },
   "aria": {
     "rssFeed": "تغذية RSS"

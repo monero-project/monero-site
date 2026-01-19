@@ -46,12 +46,7 @@ const localizedLink = localizeHref(locale, `/blog/${id}/`);
           format="avif"
         />
       ) : (
-        <span>
-          {tags[0]
-            .split(" ")
-            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(" ")}
-        </span>
+        <span>{t(`blog:tagLabels.${tags[0]}`, { defaultValue: tags[0] })}</span>
       )
     }
   </a>
@@ -94,7 +89,7 @@ const localizedLink = localizeHref(locale, `/blog/${id}/`);
                 `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
               )}
             >
-              {tag}
+              {t(`blog:tagLabels.${tag}`, { defaultValue: tag })}
             </a>
           ))}
         </div>

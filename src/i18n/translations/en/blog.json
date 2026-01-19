@@ -1,5 +1,48 @@
 {
   "rssTitle": "Monero Blog RSS",
+  "tagLabels": {
+    "0mq": "0MQ",
+    "accounts": "Accounts",
+    "announcements": "Announcements",
+    "blockchaindb": "Blockchain DB",
+    "branding": "Branding",
+    "ccs": "CCS",
+    "community": "Community",
+    "compliance": "Compliance",
+    "conferences": "Conferences",
+    "core": "Core",
+    "crypto": "Crypto",
+    "cryptography": "Cryptography",
+    "dev": "Dev",
+    "dev diaries": "Dev Diaries",
+    "development": "Development",
+    "docs": "Docs",
+    "exchanges": "Exchanges",
+    "external": "External",
+    "forkguard": "Forkguard",
+    "funding": "Funding",
+    "gui": "GUI",
+    "i2p": "I2P",
+    "i8n": "i18n",
+    "jamtis": "Jamtis",
+    "kovri": "Kovri",
+    "magic": "MAGIC",
+    "malware": "Malware",
+    "mining": "Mining",
+    "monero": "Monero",
+    "monero missives": "Monero Missives",
+    "mymonero": "MyMonero",
+    "network upgrade": "Network Upgrade",
+    "platforms": "Platforms",
+    "protocol": "Protocol",
+    "protocol upgrade": "Protocol Upgrade",
+    "releases": "Releases",
+    "research": "Research",
+    "rpc": "RPC",
+    "seraphis": "Seraphis",
+    "urgent": "Urgent",
+    "usability": "Usability"
+  },
   "index": {
     "pageTitle": "Blog",
     "hero": {
@@ -27,11 +70,7 @@
     "and": "and"
   },
   "tabs": {
-    "allPosts": "All Posts",
-    "urgent": "Urgent",
-    "releases": "Releases",
-    "community": "Community",
-    "meetingLogs": "Meeting Logs"
+    "allPosts": "All Posts"
   },
   "aria": {
     "rssFeed": "RSS Feed"

@@ -65,7 +65,7 @@ const date = localizeDateString(dateString, locale, {
               `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
             )}
           >
-            {tag}
+            {t(`blog:tagLabels.${tag}`, { defaultValue: tag })}
           </a>
         ))}
       </div>

@@ -1,5 +1,48 @@
 {
   "rssTitle": "Monero 博客 RSS",
+  "tagLabels": {
+    "0mq": "0MQ",
+    "accounts": "账户",
+    "announcements": "公告",
+    "blockchaindb": "区块链数据库",
+    "branding": "品牌",
+    "ccs": "CCS",
+    "community": "社区",
+    "compliance": "合规",
+    "conferences": "会议",
+    "core": "核心",
+    "crypto": "加密",
+    "cryptography": "密码学",
+    "dev": "开发",
+    "dev diaries": "开发日志",
+    "development": "开发",
+    "docs": "文档",
+    "exchanges": "交易所",
+    "external": "外部",
+    "forkguard": "分叉防护",
+    "funding": "资金",
+    "gui": "图形界面",
+    "i2p": "I2P",
+    "i8n": "国际化",
+    "jamtis": "Jamtis",
+    "kovri": "Kovri",
+    "magic": "MAGIC",
+    "malware": "恶意软件",
+    "mining": "挖矿",
+    "monero": "Monero",
+    "monero missives": "Monero 通讯",
+    "mymonero": "MyMonero",
+    "network upgrade": "网络升级",
+    "platforms": "平台",
+    "protocol": "协议",
+    "protocol upgrade": "协议升级",
+    "releases": "版本发布",
+    "research": "研究",
+    "rpc": "RPC",
+    "seraphis": "Seraphis",
+    "urgent": "紧急",
+    "usability": "可用性"
+  },
   "index": {
     "pageTitle": "博客",
     "hero": {
@@ -27,11 +70,7 @@
     "and": "和"
   },
   "tabs": {
-    "allPosts": "所有文章",
-    "urgent": "紧急",
-    "releases": "版本发布",
-    "community": "社区",
-    "meetingLogs": "会议记录"
+    "allPosts": "所有文章"
   },
   "aria": {
     "rssFeed": "RSS 订阅"
