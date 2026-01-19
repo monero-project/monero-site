@@ -196,33 +196,36 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
     max-width: none;
     margin-inline: 0;
     padding-inline: 0;
+    padding-bottom: 1rem;
     display: block;
   }
 
   /* Mobile open state */
-  .dd-toggle:checked ~ .dropdown {
-    max-height: unset;
-  }
+  .dd-toggle:checked {
+    ~ .dropdown {
+      max-height: unset;
+    }
 
-  .dd-toggle:checked ~ .row > .link {
-    color: var(--heading-color);
-  }
+    ~ .row > .link {
+      color: var(--heading-color);
 
-  .dd-toggle:checked ~ .row > .link > .caret {
-    transform: rotate(180deg);
-  }
+      > .caret {
+        transform: rotate(180deg);
+      }
+    }
 
-  .dd-toggle:checked ~ .row .mobile-open {
-    display: none;
-  }
+    ~ .row .mobile-open {
+      display: none;
+    }
 
-  .dd-toggle:checked ~ .row .mobile-close {
-    display: block;
-    position: absolute;
-    inset: 0;
-    pointer-events: auto;
-    cursor: pointer;
-    z-index: 1;
+    ~ .row .mobile-close {
+      display: block;
+      position: absolute;
+      inset: 0;
+      pointer-events: auto;
+      cursor: pointer;
+      z-index: 1;
+    }
   }
 
   .dropdown-item {
@@ -286,9 +289,10 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
     /* reset mobile accordion states */
     .dd-toggle:checked ~ .row > .link {
       color: unset;
-    }
-    .dd-toggle:checked ~ .row > .link > .caret {
-      transform: unset;
+
+      > .caret {
+        transform: unset;
+      }
     }
 
     .row {
@@ -347,6 +351,7 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
     }
 
     .dropdown-content {
+      padding-bottom: unset;
       max-width: 1200px;
       margin-inline: auto;
       padding-inline: clamp(1rem, 4vw, 4rem);
@@ -359,35 +364,23 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 
   @media (min-width: 1200px) and (hover: hover) and (pointer: fine) {
     .nav-item--dropdown:is(
-        :hover,
-        :focus-within,
-        :has(.dropdown :focus-visible)
-      )
+      :hover,
+      :focus-within,
+      :has(.dropdown :focus-visible)
+    ) {
       > .dropdown {
-      visibility: visible;
-      pointer-events: auto;
-      transform: translateY(0);
-    }
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
 
-    .nav-item--dropdown:is(
-        :hover,
-        :focus-within,
-        :has(.dropdown :focus-visible)
-      )
-      > .row
-      > .link {
-      color: var(--heading-color);
-    }
+      > .row > .link {
+        color: var(--heading-color);
 
-    .nav-item--dropdown:is(
-        :hover,
-        :focus-within,
-        :has(.dropdown :focus-visible)
-      )
-      > .row
-      > .link
-      > .caret {
-      transform: rotate(180deg);
+        > .caret {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
 
