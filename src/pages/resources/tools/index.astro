@@ -3,7 +3,12 @@ import CategoryCard from "@/components/ui/CategoryCard.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { acceptCount, developCount, exploreCount } from "@/data/monero-tools";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
+import {
+  createTInstance,
+  getLocale,
+  localizeHref,
+  localizeNumber,
+} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 const locale = getLocale(Astro.url);
@@ -14,19 +19,25 @@ const categories = [
     title: t("tools:explore.title"),
     description: t("tools:explore.subtitle"),
     href: localizeHref(locale, "/resources/tools/explore"),
-    linkText: t("tools:index.itemsCount", { count: exploreCount }),
+    linkText: t("tools:index.itemsCount", {
+      num: localizeNumber(locale, exploreCount),
+    }),
   },
   {
     title: t("tools:develop.title"),
     description: t("tools:develop.subtitle"),
     href: localizeHref(locale, "/resources/tools/develop"),
-    linkText: t("tools:index.itemsCount", { count: developCount }),
+    linkText: t("tools:index.itemsCount", {
+      num: localizeNumber(locale, developCount),
+    }),
   },
   {
     title: t("tools:accept.title"),
     description: t("tools:accept.subtitle"),
     href: localizeHref(locale, "/resources/tools/accept"),
-    linkText: t("tools:index.itemsCount", { count: acceptCount }),
+    linkText: t("tools:index.itemsCount", {
+      num: localizeNumber(locale, acceptCount),
+    }),
   },
 ];
 ---

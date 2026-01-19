@@ -65,7 +65,12 @@
     },
     "whitepapers": {
       "title": "أوراق Cryptonote البيضاء",
-      "subtitle": "الوثائق الأساسية التي تصف البروتوكول الذي بني عليه Monero."
+      "subtitle": "الوثائق الأساسية التي تصف البروتوكول الذي بني عليه Monero.",
+      "items": {
+        "cryptonote": "ورقة CryptoNote البيضاء",
+        "annotated": "الورقة البيضاء المشروحة",
+        "goodellReview": "مراجعة Brandon Goodell للورقة البيضاء"
+      }
     }
   }
 }

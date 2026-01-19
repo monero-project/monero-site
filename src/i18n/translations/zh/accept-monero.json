@@ -1,0 +1,51 @@
+{
+  "pageTitle": "接受 Monero",
+  "title": "接受 Monero",
+  "subtitle": "开始为您的业务接受私密、低费用的支付。",
+  "description": "了解如何为您的业务接受 Monero 支付。",
+  "steps": {
+    "chooseSetup": {
+      "title": "选择您的设置",
+      "intro": "您接受 Monero 的方式取决于您的需求：",
+      "wallet": {
+        "title": "钱包",
+        "description": "最适合偶尔支付或入门使用。生成带有金额的二维码，客户扫描并支付。无费用，无需设置。",
+        "viewWallets": "查看钱包"
+      },
+      "pos": {
+        "title": "销售点应用",
+        "description": "用于常规线下使用的专用应用。获得法币价格转换、发票跟踪和可配置的确认设置。",
+        "services": {
+          "bitrequest": "多币种销售点应用",
+          "btcpayPos": "BTCPay Server 的销售点应用"
+        }
+      },
+      "processor": {
+        "title": "支付处理器",
+        "description": "为您处理支付的第三方服务。快速设置，大多数平台都有插件，费用较低（约 0.5-1%）。部分提供自动转换为法币的功能。",
+        "viewGateways": "查看支付网关"
+      },
+      "selfHosted": {
+        "title": "自托管",
+        "description": "运行您自己的支付服务器以获得完全控制。零费用，完全隐私，发票管理，适用于线上和线下。需要服务器和技术设置。",
+        "services": {
+          "btcpay": "开源，多币种，包含 POS 应用",
+          "bitcart": "开源，多币种支付处理器",
+          "moneropay": "轻量级，仅支持 Monero，易于部署"
+        }
+      }
+    },
+    "acceptPayment": {
+      "title": "接受您的第一笔支付！",
+      "description": "客户扫描您的二维码或复制您的地址，然后从他们的钱包发送 Monero。您将在几秒钟内在您的钱包或仪表板中看到付款。",
+      "confirmations": "交易通常在约 2 分钟内确认。对于小额购买，大多数商家会立即交付商品。对于较大金额，等待 1-2 次确认可增加安全性。",
+      "confirmationsLabel": "确认次数：",
+      "tip": "如果您使用钱包，您的助记词是恢复资金的唯一方式。请将其写下来并安全地离线存储 - 永远不要与任何人分享。"
+    },
+    "getListed": {
+      "title": "获取收录",
+      "description": "让 Monero 社区知道您接受支付。在商家目录中收录有助于客户找到您的业务。",
+      "viewDirectories": "查看商家目录"
+    }
+  }
+}

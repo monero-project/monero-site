@@ -176,7 +176,11 @@ const paperTabs = [
                     rtl={dir === "rtl"}
                   />
                 </span>
-                <span class="whitepaper-title">{paper.title}</span>
+                <span class="whitepaper-title">
+                  {t(
+                    `knowledge-base:researchLab.whitepapers.items.${paper.id}`,
+                  )}
+                </span>
                 <span class="whitepaper-arrow">
                   <MaskIcon
                     src={arrowRightIcon}

@@ -1,9 +1,16 @@
+# Use example from https://lefthook.dev/
 pre-commit:
   parallel: true
   commands:
     lint:
-      run: pnpm lint
+      glob: "*.{js,ts,jsx,tsx,astro,mjs}"
+      run: npx eslint --fix {staged_files}
+      stage_fixed: true
     lint-css:
-      run: pnpm lint:css
-    format-check:
-      run: pnpm format:check
+      glob: "*.{css,astro}"
+      run: npx stylelint {staged_files}
+      stage_fixed: true
+    format:
+      glob: "*.{js,ts,jsx,tsx,astro,json,md,css}"
+      run: npx prettier --write {staged_files}
+      stage_fixed: true

@@ -1,0 +1,39 @@
+{
+  "rssTitle": "Monero 博客 RSS",
+  "index": {
+    "pageTitle": "博客",
+    "hero": {
+      "title": "博客",
+      "subtitle": "阅读关于 Monero 的最新新闻和更新。"
+    }
+  },
+  "tagIndex": {
+    "pageTitle": "标签索引",
+    "hero": {
+      "title": "标签索引",
+      "subtitle": "按标签浏览博客文章。"
+    }
+  },
+  "tags": {
+    "pageTitle": "标签为 {{tag}} 的文章",
+    "hero": {
+      "title": "标签为 \"{{tag}}\" 的文章",
+      "subtitle": "浏览所有标签为 \"{{tag}}\" 的博客文章。"
+    }
+  },
+  "post": {
+    "pageTitle": "博客 | {{title}}",
+    "recentPosts": "近期文章",
+    "and": "和"
+  },
+  "tabs": {
+    "allPosts": "所有文章",
+    "urgent": "紧急",
+    "releases": "版本发布",
+    "community": "社区",
+    "meetingLogs": "会议记录"
+  },
+  "aria": {
+    "rssFeed": "RSS 订阅"
+  }
+}

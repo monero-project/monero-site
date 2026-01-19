@@ -49,7 +49,7 @@
     "verifyDescription": "يُنصح بشدة <a href=\"{{verifyInstructionLink}}\" target=\"_blank\" rel=\"noopener noreferrer\">التحقق من تجزئة SHA-256</a> للملف الذي قمت بتنزيله.\n\nسيؤكد ذلك أن الملفات التي قمت بتنزيلها تطابق تمامًا الملفات التي تم تحميلها بواسطة مجموعة عمل تطوير Monero. يرجى عدم التقليل من هذه الخطوة، قد يؤدي الأرشيف التالف إلى فقدان الأموال.",
     "viewHashes": "عرض التجزئات",
     "downloadButton": "تحميل",
-    "torrent": "Torrent",
+    "torrent": "تورنت",
     "magnetLink": "رابط Magnet",
     "formats": {
       "installer": "المثبت",

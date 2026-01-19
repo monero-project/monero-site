@@ -1,0 +1,63 @@
+{
+  "pageTitle": "社交场所",
+  "description": "我们来自各地，但我们确实有一些喜欢一起聚会的地方。加入我们！",
+  "hero": {
+    "title": "社交场所",
+    "subtitle": "我们来自各地，但我们确实有一些喜欢一起聚会的地方。加入我们！"
+  },
+  "workgroupsNote": {
+    "title": "在找工作组？",
+    "content": "查看我们的工作组页面，为 Monero 开发做出贡献。"
+  },
+  "chat": {
+    "title": "聊天",
+    "matrix": {
+      "title": "Matrix",
+      "subtitle": "与 IRC 桥接"
+    },
+    "discord": {
+      "title": "Discord"
+    },
+    "telegram": {
+      "title": "Telegram"
+    }
+  },
+  "social": {
+    "title": "社交",
+    "reddit": {
+      "title": "Reddit",
+      "subtitle": "r/Monero"
+    },
+    "x": {
+      "title": "X",
+      "subtitle": "@monero"
+    }
+  },
+  "channels": {
+    "title": "IRC 频道",
+    "monero": {
+      "name": "#monero",
+      "description": "讨论所有 Monero 相关的事情"
+    },
+    "community": {
+      "name": "#monero-community",
+      "description": "聚集并讨论想法"
+    },
+    "markets": {
+      "name": "#monero-markets",
+      "description": "Monero 和其他币的价格"
+    },
+    "offtopic": {
+      "name": "#monero-offtopic",
+      "description": "与 Monero 无关的事情"
+    },
+    "mining": {
+      "name": "#monero-mining",
+      "description": "挖矿问题和讨论"
+    },
+    "support": {
+      "name": "#monero-support",
+      "description": "从有经验的用户那里获得帮助"
+    }
+  }
+}

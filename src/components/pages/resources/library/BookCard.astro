@@ -17,7 +17,9 @@ const locale = getLocale(Astro.url);
 const rtl = getDirection(locale) === "rtl";
 
 const getLanguageName = (targetLocale: string): string => {
-  const displayNames = new Intl.DisplayNames([locale], { type: "language" });
+  const displayNames = new Intl.DisplayNames([targetLocale], {
+    type: "language",
+  });
   const name = displayNames.of(targetLocale);
   return name ? name.charAt(0).toUpperCase() + name.slice(1) : targetLocale;
 };
@@ -219,7 +221,6 @@ const getLanguageName = (targetLocale: string): string => {
     .book-card {
       flex-direction: column;
       align-items: center;
-      text-align: center;
     }
 
     .book-cover {
@@ -230,12 +231,13 @@ const getLanguageName = (targetLocale: string): string => {
       align-items: center;
     }
 
-    .book-footer {
-      justify-content: center;
+    .book-description {
+      text-align: start;
     }
 
+    .book-footer,
     .book-translations {
-      justify-content: center;
+      justify-content: start;
     }
   }
 </style>

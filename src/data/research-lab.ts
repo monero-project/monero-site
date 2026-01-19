@@ -7,8 +7,7 @@ export interface ResearchPaper {
 }
 
 export interface Whitepaper {
-  title: string;
-  description: string;
+  id: string;
   url: string;
 }
 
@@ -132,21 +131,15 @@ export const otherPapers: ResearchPaper[] = [
 
 export const whitepapers: Whitepaper[] = [
   {
-    title: "Cryptonote Whitepaper",
-    description:
-      "The original CryptoNote paper written by the CryptoNote team. Reading it will give an understanding about how the CryptoNote algorithm works in general.",
+    id: "cryptonote",
+    url: "/resources/research-lab/pubs/cryptonote-whitepaper.pdf",
+  },
+  {
+    id: "annotated",
     url: "/resources/research-lab/pubs/whitepaper_annotated.pdf",
   },
   {
-    title: "Annotated Whitepaper",
-    description:
-      "The Monero Research Lab released an annotated version of the CryptoNote whitepaper. This is an informal review of the claims made line-by-line, explaining harder concepts in easy to understand terms.",
-    url: "/resources/research-lab/pubs/whitepaper_annotated.pdf",
-  },
-  {
-    title: "Brandon Goodell's Whitepaper Review",
-    description:
-      "A formal review of the original CryptoNote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented.",
+    id: "goodellReview",
     url: "/resources/research-lab/pubs/whitepaper_review.pdf",
   },
 ];

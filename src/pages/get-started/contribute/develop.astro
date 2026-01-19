@@ -337,9 +337,6 @@ const communityProjects = [
   }
 
   .cell-project {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
     white-space: nowrap;
   }
 
@@ -349,15 +346,17 @@ const communityProjects = [
     border-radius: 0.5rem;
     background: color-mix(in srgb, var(--monero-orange) 12%, transparent);
     color: var(--monero-orange);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    vertical-align: middle;
+    margin-inline-end: 0.75rem;
   }
 
   .project-name {
     font-weight: var(--font-weight-semibold);
     color: var(--heading-color);
+    vertical-align: middle;
   }
 
   .cell-desc {

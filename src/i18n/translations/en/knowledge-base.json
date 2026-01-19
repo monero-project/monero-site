@@ -65,7 +65,12 @@
     },
     "whitepapers": {
       "title": "Cryptonote Whitepapers",
-      "subtitle": "Foundational documents describing the protocol Monero is built upon."
+      "subtitle": "Foundational documents describing the protocol Monero is built upon.",
+      "items": {
+        "cryptonote": "Cryptonote Whitepaper",
+        "annotated": "Annotated Whitepaper",
+        "goodellReview": "Brandon Goodell's Whitepaper Review"
+      }
     }
   }
 }

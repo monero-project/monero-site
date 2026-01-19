@@ -1,0 +1,112 @@
+{
+  "pageTitle": "路线图",
+  "hero": {
+    "title": "路线图",
+    "subtitle": "追踪 Monero 的开发进展和即将推出的功能。"
+  },
+  "status": {
+    "inProgress": "进行中",
+    "upcoming": "即将推出",
+    "proposed": "已提议"
+  },
+  "items": {
+    "fcmp": {
+      "title": "全链成员证明",
+      "description": "用新的零知识证明系统替代环签名的隐私升级。"
+    },
+    "cuprate": {
+      "title": "Cuprate",
+      "description": "Monero 节点的 Rust 实现。"
+    },
+    "newSite": {
+      "title": "新版 getmonero.org",
+      "description": "官方网站的全面重新设计和现代化。"
+    },
+    "randomxV2": {
+      "title": "RandomX V2",
+      "description": "Monero 工作量证明算法的下一次迭代，以提高抗 ASIC 性能。"
+    },
+    "bulletproofsPP": {
+      "title": "Bulletproofs++",
+      "description": "下一代范围证明，实现更小、更快的交易。"
+    },
+    "seraphis": {
+      "title": "Seraphis & Jamtis",
+      "description": "具有改进隐私和功能的新交易协议。"
+    },
+    "ospead": {
+      "title": "OSPEAD",
+      "description": "用于诱饵选择的任意分布的最优静态参数估计。"
+    },
+    "mrlResearch": {
+      "title": "MRL 研究任务",
+      "description": "Monero 研究实验室提出的各种研究计划。"
+    }
+  },
+  "history": {
+    "title": "历史",
+    "months": {
+      "january": "一月",
+      "february": "二月",
+      "march": "三月",
+      "april": "四月",
+      "may": "五月",
+      "june": "六月",
+      "july": "七月",
+      "august": "八月",
+      "september": "九月",
+      "october": "十月",
+      "november": "十一月",
+      "december": "十二月"
+    },
+    "events": {
+      "havenoDex": "HavenoDEX 发布",
+      "xmrBchSwap": "XMR-BCH 原子交换完成",
+      "lwsSubaddress": "轻钱包服务器子地址支持",
+      "ethSwaps": "Monero ↔ Ethereum 原子交换",
+      "blockProp": "区块传播延迟减少，tx_extra 受限，钱包加速",
+      "v15Hardfork": "网络升级 v15 硬分叉",
+      "fluorineFermi": "CLI 和 GUI 0.18 'Fluorine Fermi' 发布",
+      "viewTags": "视图标签：+40% 钱包同步速度提升",
+      "p2pool": "P2Pool 发布",
+      "btcSwaps": "Monero ↔ Bitcoin 原子交换",
+      "onionAddress": "getmonero.org 洋葱地址",
+      "clsag": "CLSAG 签名实现",
+      "oxygenOrion": "CLI 和 GUI 0.17 'Oxygen Orion' 发布",
+      "v0160": "CLI 和 GUI 0.16.0.0 发布",
+      "dandelion": "Dandelion++ 协议实现",
+      "randomx": "RandomX 工作量证明算法",
+      "ipv6": "IPv6 支持",
+      "paymentIdRemoved": "独立支付 ID 移除",
+      "pruning": "区块链修剪",
+      "hwSupport2019": "Trezor Model T 和 Ledger Nano X 支持",
+      "torI2p": "Tor 和 I2P CLI 钱包集成",
+      "ccs": "社区众筹系统 (CCS) 启动",
+      "cryptonightR": "CryptoNightR 工作量证明",
+      "bulletproofs": "Bulletproofs 实现",
+      "ringSize11": "环大小增加到 11",
+      "berylliumBullet": "0.13 'Beryllium Bullet' 发布",
+      "kovri": "Kovri alpha 版本发布",
+      "ledgerSupport": "Ledger 硬件钱包支持",
+      "multisigSubaddress": "网络升级中的多重签名和子地址",
+      "guiRelease2018": "官方 GUI 发布",
+      "multisig": "多重签名 (multisig)",
+      "subaddresses": "子地址",
+      "fluffyBlocks": "轻量区块",
+      "guiOutOfBeta": "GUI 退出测试版",
+      "ringSize5": "环大小增加到 5，需要 RingCT",
+      "ringctEnabled": "RingCT 交易启用",
+      "guiBeta": "官方 GUI Beta 1 发布",
+      "wolframWarptangent": "0.10.0 'Wolfram Warptangent' 发布",
+      "ringSize3": "需要最小环大小 3",
+      "hydrogenHelix": "0.9.0 'Hydrogen Helix' 发布",
+      "spamAttack": "从垃圾攻击中恢复",
+      "mrlPapers": "Monero 研究实验室论文 1-3 发布",
+      "bitcointalk": "在 Bitcointalk 上发布",
+      "renamed": "从 Bitmonero 更名为 Monero"
+    }
+  },
+  "aria": {
+    "kanban": "开发状态"
+  }
+}

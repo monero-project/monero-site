@@ -1,0 +1,27 @@
+{
+  "pageTitle": "赞助商",
+  "hero": {
+    "title": "赞助商",
+    "subtitle": "积极支持 Monero 项目实现为世界带来金融隐私目标的企业。"
+  },
+  "currentSponsors": {
+    "title": "当前赞助商",
+    "subtitle": "这些组织为 Monero 基础设施和开发提供持续支持。"
+  },
+  "contributions": {
+    "tari-labs": "赞助本网站使用的 CDN",
+    "cake-wallet": "赞助邮件列表、GitLab、Matrix、Taiga 和 Weblate",
+    "cypher-stack": "赞助 DevOps 人员从事和维护 Monero 项目基础设施",
+    "macstadium": "赞助用于 Mac 相关开发的专用 Mac Mini",
+    "symas": "赞助其 CTO Howard Chu (hyc) 在 Monero 代码库上的工作"
+  },
+  "becomeASponsor": {
+    "title": "成为赞助商！",
+    "description": "如果您或您的组织想要赞助 Monero 项目，请发送电子邮件至 dev@getmonero.org。",
+    "cta": "联系我们"
+  },
+  "pastSponsors": {
+    "title": "往届赞助商",
+    "subtitle": "我们感谢这些组织之前的支持。"
+  }
+}

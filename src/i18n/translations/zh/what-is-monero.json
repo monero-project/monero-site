@@ -1,0 +1,83 @@
+{
+  "pageTitle": "什么是 Monero？",
+  "hero": {
+    "title": "什么是 Monero？",
+    "subtitle": "Monero 简介，专注于隐私的加密货币。"
+  },
+  "sections": {
+    "problem": {
+      "eyebrow": "问题",
+      "title": "大多数加密货币<span style=\"color: #E04B54\">不是私密的</span>",
+      "content": "比特币、以太坊和大多数其他加密货币都有透明的区块链。使用区块浏览器，任何人都可以看到您的余额，追踪您的支出，并追踪您的资金去向。\n\n想象一下，如果每个人都能看到您的银行对账单 - 这就是大多数加密货币的工作方式。\n\n这种缺乏隐私带来了重大风险，从定向盗窃到政府和企业的金融监控。"
+    },
+    "solution": {
+      "eyebrow": "解决方案",
+      "title": "Monero <span style=\"color: var(--monero-orange);\">默认私密</span>",
+      "content": "Monero 是领先的专注于隐私的加密货币，其中**链上活动默认是私密的。**公众无法通过查看区块链来看到您的余额或追踪您。\n\n没有需要打开的\"隐私模式\" - 每笔交易都自动使用隐私功能，同时仍然让您在需要时有选择地披露详情。\n\n通过不允许透明交易，Monero 防止中介强迫用户使用被监视的账本 - 因为根本没有透明路径可以强制执行。"
+    },
+    "useCases": {
+      "eyebrow": "用例",
+      "title": "人们为什么使用 Monero",
+      "intro": "有些人因为 Monero 的隐私性将其标记为不良行为者的货币 - 但这就像说窗帘是可疑的，因为它们阻止陌生人窥视您的家。\n\n隐私是基本人权。Monero 保护这项权利。",
+      "items": {
+        "financialPrivacy": {
+          "title": "金融隐私",
+          "description": "让您的工资、储蓄和消费习惯对雇主、企业和数据经纪人保密。"
+        },
+        "fungibility": {
+          "title": "真正的可替代性",
+          "description": "1 XMR 与任何其他 XMR 相同 - 没有\"被污染的币\"的概念。"
+        },
+        "censorshipResistance": {
+          "title": "抗审查性",
+          "description": "没有中央权威可以认为您的交易不可接受。"
+        },
+        "businessPayments": {
+          "title": "商业支付",
+          "description": "接受支付而不向竞争对手暴露您的收入、供应商或财务关系。"
+        }
+      }
+    },
+    "technology": {
+      "eyebrow": "技术",
+      "title": "Monero 如何保护您",
+      "features": {
+        "stealthAddresses": {
+          "title": "隐身地址",
+          "description": "每笔交易为接收者生成一个唯一的一次性地址，确保接收者地址永远不会出现在区块链上。",
+          "basedOn": "基于：[椭圆曲线 Diffie-Hellman]({{mpECDH}})"
+        },
+        "fcmp": {
+          "title": "FCMP++",
+          "description": "全链成员证明 (FCMP++) 是零知识证明，证明支付使用了区块链上的真实币，而不透露是哪一个 - 保护发送者的隐私。",
+          "basedOn": "基于：[曲线树]({{mpCurveTrees}})"
+        },
+        "confidentialTransactions": {
+          "title": "保密交易",
+          "description": "交易金额是加密的，因此只有发送者和接收者知道正在转移的价值。",
+          "basedOn": "基于：[Pedersen 承诺]({{mpPedersenCommitments}}) 和 [Bulletproofs+]({{mpBulletproofs}})"
+        }
+      }
+    },
+    "video": {
+      "eyebrow": "了解更多",
+      "title": "Monero：健全货币，安全模式",
+      "description": "在 2020 年的这次演讲中，Daniel Kim 博士概述了 Monero 的工作原理以及为什么隐私保护健全货币很重要。"
+    },
+    "community": {
+      "title": "由全球社区构建",
+      "content": "Monero 背后没有中心化权威 - 它是一个由全球数百名开发者维护的开源项目。[Monero 研究实验室]({{mrlLink}}) 引领前沿密码学研究，确保协议领先于威胁。\n\n自 2014 年启动以来，该项目已收到来自世界各地 **500 多名开发者**的贡献。",
+      "joinCommunity": "加入社区",
+      "contributeToMonero": "贡献给 Monero"
+    },
+    "cta": {
+      "title": "准备好开始了吗？",
+      "subtitle": "下载钱包，今天就掌控您的金融隐私。",
+      "downloadWallet": "下载钱包",
+      "getMonero": "获取 Monero"
+    }
+  },
+  "aria": {
+    "presentationVideo": "Daniel Kim 博士关于 Monero 的演讲"
+  }
+}

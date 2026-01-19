@@ -33,7 +33,7 @@ const t = await createTInstance(locale);
               href={tool.href}
               title={tool.title}
               logo={tool.logo}
-              subtitle={tool.subtitle}
+              subtitle={t(`tools:accept.tools.${tool.id}`)}
             />
           </li>
         ))

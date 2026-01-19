@@ -65,10 +65,15 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
       <span class="title">{title}</span>
       <span class="subtitle">{subtitle}</span>
     </div>
+  </a>
 
-    <span class="link-icon">
-      <MaskIcon src={externalLinkIcon} size="1em" rtl={rtl} />
-    </span>
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer external"
+    class="link-icon"
+  >
+    <MaskIcon src={externalLinkIcon} size="1em" rtl={rtl} />
   </a>
 
   {
@@ -158,36 +163,38 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
     margin-top: 0.125rem;
   }
 
-  .link-icon {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    opacity: 0.8;
-    transition: opacity 0.15s ease;
-  }
-
-  .primary-link:hover .link-icon {
-    opacity: 1;
-  }
-
-  /* Onion link button */
+  .link-icon,
   .onion-link {
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .link-icon {
+    width: 3.5rem;
+    color: color-mix(in srgb, var(--monero-orange) 60%, transparent);
+    transition: color 0.15s ease;
+  }
+
+  .link-icon:hover,
+  .primary-link:hover + .link-icon {
+    color: var(--monero-orange);
+  }
+
+  .onion-link {
     width: 3.5rem;
     border-inline-start: 1px solid var(--border-color);
     color: #7d4698;
     transition: background 0.15s ease;
-  }
 
-  .onion-link::after {
-    display: none;
-  }
-
-  .onion-link:hover {
-    background: color-mix(in srgb, #7d4698 8%, transparent);
+    &:hover {
+      background: color-mix(in srgb, #7d4698 8%, transparent);
+    }
   }
 
   /* Mini variant */
@@ -206,6 +213,7 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
     border-radius: 0.375rem;
   }
 
+  .external-resource-button.mini .link-icon,
   .external-resource-button.mini .onion-link {
     width: 2.75rem;
   }
@@ -213,18 +221,22 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
   @media screen and (max-width: 600px) {
     .external-resource-button.has-onion {
       flex-wrap: wrap;
-    }
 
-    .external-resource-button.has-onion .primary-link {
-      flex-basis: 100%;
-    }
+      .primary-link {
+        flex-basis: 100%;
+      }
 
-    .external-resource-button.has-onion .onion-link {
-      flex: 1;
-      width: auto;
-      padding: 0.75rem;
-      border-inline-start: none;
-      border-top: 1px solid var(--border-color);
+      .link-icon,
+      .onion-link {
+        flex: 1;
+        width: auto;
+        border-top: 1px solid var(--border-color);
+        padding: 0.75rem;
+      }
+
+      .onion-link {
+        border-inline-start: 1px solid var(--border-color);
+      }
     }
   }
 </style>

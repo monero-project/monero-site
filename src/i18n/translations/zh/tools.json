@@ -1,0 +1,95 @@
+{
+  "index": {
+    "pageTitle": "Monero 工具",
+    "title": "Monero 工具",
+    "subtitle": "找到适合您需求的工具。",
+    "description": "找到适合您需求的 Monero 工具 - 探索区块链、构建应用程序或接受付款。",
+    "itemsCount": "{{num}} 个项目"
+  },
+  "explore": {
+    "pageTitle": "探索 Monero",
+    "title": "探索",
+    "subtitle": "区块浏览器、网络监控器和浏览 Monero 区块链的实用工具。",
+    "sections": {
+      "blockExplorers": {
+        "title": "区块浏览器",
+        "subtitle": "查看交易、区块和链上数据。"
+      },
+      "network": {
+        "title": "网络和节点",
+        "subtitle": "监控网络、查找节点并可视化活动。"
+      },
+      "utilities": {
+        "title": "实用工具",
+        "subtitle": "钱包生成器、价格比较、统计数据和存档。"
+      }
+    },
+    "tools": {
+      "blockExplorers": {
+        "p2poolObserver": "非传统区块浏览器，支持矿工证明验证（隐藏无争议区块）",
+        "p2poolIo": "传统 Monero 区块浏览器",
+        "moneroHash": "流行的 Monero 区块浏览器",
+        "xmrchain": "流行的开源 Monero 区块浏览器",
+        "localMonero": "LocalMonero 区块浏览器",
+        "monerowat": "Monero 区块浏览器",
+        "xmrmx": "Monero 区块浏览器"
+      },
+      "network": {
+        "moneroFail": "全面的节点列表和网络地图",
+        "ditatompel": "Monero 远程节点列表",
+        "moneroHashNodes": "交互式 Monero 节点地图",
+        "txStreet": "实时交易和区块可视化工具",
+        "nowNodes": "面向开发者的区块链节点 API",
+        "getBlock": "区块链节点提供商"
+      },
+      "utilities": {
+        "llcoins": "离线钱包和地址生成器",
+        "monerotech": "钱包密钥和地址检查工具",
+        "moneroHow": "统计数据和教育资源",
+        "moneroLogs": "Monero IRC 频道存档"
+      }
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "text": "这些链接仅供参考，不代表 Monero 社区的认可。如需建议工具，",
+      "linkText": "请提交 GitHub issue"
+    }
+  },
+  "develop": {
+    "pageTitle": "使用 Monero 开发",
+    "title": "开发",
+    "subtitle": "用于将 Monero 集成到您应用程序中的库和 SDK。",
+    "tools": {
+      "moneroTs": "适用于 Node.js 和浏览器的 TypeScript/JavaScript 库",
+      "moneroPython": "支持 RPC 和原生绑定的 Python 库",
+      "moneroOxide": "Monero 区块链协议的 Rust 实现",
+      "moneroJava": "Monero 钱包和守护进程 RPC 的 Java 库",
+      "moneroCpp": "Monero 钱包和守护进程的 C++ 库",
+      "monerophp": "Monero 钱包 RPC 的 PHP 库",
+      "goMoneroRpc": "Monero 钱包和守护进程 RPC 的 Go 客户端"
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "text": "这些链接仅供参考，不代表 Monero 社区的认可。如需建议库，",
+      "linkText": "请提交 GitHub issue"
+    }
+  },
+  "accept": {
+    "pageTitle": "接受 Monero 付款",
+    "title": "接受付款",
+    "subtitle": "用于在您的网站或商店接受 Monero 的支付处理器和插件。",
+    "tools": {
+      "btcPayServer": "自托管开源支付处理器",
+      "nowPayments": "非托管加密货币支付网关",
+      "bitcart": "开源加密货币支付平台",
+      "coinPayments": "多币种加密货币支付网关",
+      "cryptoWoo": "WooCommerce Monero 插件",
+      "moneroWooCommerce": "WooCommerce 商店的 PHP 扩展"
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "text": "这些链接仅供参考，不代表 Monero 社区的认可。如需建议支付网关，",
+      "linkText": "请提交 GitHub issue"
+    }
+  }
+}

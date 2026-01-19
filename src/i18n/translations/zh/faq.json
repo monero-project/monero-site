@@ -1,0 +1,193 @@
+{
+  "pageTitle": "常见问题",
+  "hero": {
+    "title": "常见问题",
+    "subtitle": "查找关于 Monero 一些最常见问题的答案。"
+  },
+  "basics": {
+    "title": "基础知识",
+    "whatIsMonero": {
+      "title": "什么是 Monero？",
+      "content": "Monero 是不妥协的数字现金。您可以支付和收款，而不会将您的财务生活变成公开记录，同时网络仍为每个人执行规则。"
+    },
+    "isMoneroMixer": {
+      "title": "Monero 是混币器吗？",
+      "content": "不是。混币器接收您的币，持有它们，然后试图隐藏踪迹。\n\nMonero 从不托管您的资金。隐私内置于协议本身，适用于每笔交易，始终如此。"
+    },
+    "doesMoneroUseEncryption": {
+      "title": "Monero 使用加密吗？",
+      "content": "是的。Monero 使用强大的公钥加密和零知识证明，因此交易数据永远不会以明文形式发布。\n\n在链上，您只能看到加密的承诺和证明规则被遵守，而不是可读的支付历史。"
+    },
+    "isMoneroLegal": {
+      "title": "使用 Monero 合法吗？",
+      "content": "在大多数地方，使用隐私工具是合法的。Monero 是一种中性资产，就像 VPN、门锁或加密消息一样。企业和个人应遵守当地法律，但隐私本身不是犯罪。"
+    },
+    "isMoneroForCriminals": {
+      "title": "Monero 是给罪犯用的吗？",
+      "content": "Monero 是给每个人用的。它被普通人和企业使用，他们不希望自己的工资、储蓄、捐款或购买永久暴露在公共账本上。\n\n不良行为者滥用每一个存在的货币系统，包括纸币和透明区块链。"
+    },
+    "canMoneroBeBanned": {
+      "title": "Monero 可以被禁止或关闭吗？",
+      "content": "不能。Monero 是一个由世界各地节点和用户组成的去中心化网络。没有人可以关闭 Monero 协议或阻止人们使用它。"
+    },
+    "howDoesMoneroScale": {
+      "title": "Monero 如何扩展？",
+      "content": "Monero 使用动态区块大小和自适应费用来处理需求变化。当更多人使用 Monero 时，区块会增长以容纳更多交易，费用会调整以保持运行顺畅。"
+    },
+    "whoRunsMonero": {
+      "title": "谁运营 Monero？",
+      "content": "Monero 是一个去中心化项目，由全球密码学家和开发者社区开发。没有中央公司或权威机构负责 Monero。\n\nMonero 项目由社区捐赠支持，许多贡献者是自愿工作的。\n\n如果您想参与，请访问工作组页面获取更多信息。"
+    }
+  },
+  "nodes": {
+    "title": "节点",
+    "doINeedOwnNode": {
+      "title": "我需要运行自己的节点吗？",
+      "content": "运行自己的节点可以让您更好地控制并独立于第三方，提高您的发送者隐私，并帮助支持网络。"
+    },
+    "canNodeGetMeInTrouble": {
+      "title": "运行 Monero 节点会给我带来麻烦吗？",
+      "content": "运行个人节点是与 Monero 网络交互最安全的方式。您的节点独立验证所有规则，不依赖任何其他人。\n\n请记住，您的 ISP 可以看到您正在运行 Monero 节点。"
+    },
+    "hardwareRequirements": {
+      "title": "运行 Monero 节点的硬件要求是什么？",
+      "content": "Monero 全节点至少需要 2 GB RAM、500 GB 可用磁盘空间，以及具有良好上传和下载速度的宽带互联网连接。建议使用 SSD 以获得更好的性能。"
+    },
+    "canRunWithoutFullChain": {
+      "title": "我可以不下载完整链就运行 Monero 节点吗？",
+      "content": "可以。您可以运行修剪节点，它只存储部分区块链数据，减少磁盘空间需求，同时仍然验证交易和区块。"
+    },
+    "thirdPartyNodePrivacy": {
+      "title": "使用第三方节点如何影响我的隐私？",
+      "content": "远程节点可以看到您从您的 IP 地址进行某些 Monero 交易 - 但它们无法观察交易详情，因为它在您的设备上是加密的。\n\n为提高隐私，请考虑在连接到远程节点时使用 Tor 或 VPN。"
+    }
+  },
+  "privacy": {
+    "title": "隐私",
+    "howDoesMoneroKeepPrivate": {
+      "title": "Monero 如何保持交易私密？",
+      "content": "Monero 同时隐藏三件事：\n\n1. **金额：**加密，外人无法看到发送了多少。\n2. **接收者：**使用一次性隐身地址加密，只有接收者可以识别。\n3. **发送者：**受零知识证明保护，显示支出有效，而不透露花费了哪个币。"
+    },
+    "canChainAnalysisBreak": {
+      "title": "链分析今天能破解 Monero 的隐私吗？",
+      "content": "区块链分析可以看到发生了某些交易，但无法将交易链接到特定用户或地址。"
+    },
+    "isMoneroPerfectlyAnonymous": {
+      "title": "Monero 是完全匿名的吗？",
+      "content": "没有系统是完美的。Monero 隐藏链上发生的事情。您的操作安全、网络习惯、KYC 记录、设备和您自己的行为仍然很重要。"
+    },
+    "canFollowTaxRules": {
+      "title": "我可以使用 Monero 并仍然遵守税务和报告规则吗？",
+      "content": "可以。您可以从钱包导出交易历史，或在需要时共享选定的数据。隐私意味着您控制谁可以看到您的记录。如果您选择披露，Monero 不会阻止您。"
+    },
+    "whatIsViewKey": {
+      "title": "什么是查看密钥，它如何帮助合规？",
+      "content": "查看密钥让某人可以查看您给定账户的收入和支出交易，而他们无法花费您的资金。\n\n您可以与会计师或审计师分享它来核对账目，同时保持对资金的控制。"
+    },
+    "howToProvePayment": {
+      "title": "我如何证明我付款了而不暴露整个钱包？",
+      "content": "您的钱包可以生成证明，证明向特定地址进行了特定付款，或者您控制特定输出，而不透露您的完整交易历史。"
+    },
+    "revokeViewKeyAccess": {
+      "title": "如果我不再希望服务在分享查看密钥后看到我的活动怎么办？",
+      "content": "您可以转移到具有新查看密钥的新账户。旧密钥只能看到您已经分享的历史。未来的活动将重新只对您可见，除非您另有决定。"
+    }
+  },
+  "security": {
+    "title": "安全",
+    "whatIsAsicResistance": {
+      "title": "什么是抗 ASIC，为什么它很重要？",
+      "content": "抗 ASIC 意味着专用挖矿硬件（ASIC）相比消费硬件（CPU/GPU）没有很大优势。这有助于保持挖矿更加去中心化，让更多人可以参与。\n\nMonero 通过 @RandomX 工作量证明算法实现抗 ASIC，该算法针对通用 CPU 进行了优化。"
+    },
+    "howKnowCoinsNotCreated": {
+      "title": "如果一切都是加密的，我们怎么知道币不是凭空创造的？",
+      "content": "新挖出的币的数量是公开的。每笔交易都包含证明其隐藏的输入和输出根据规则平衡。如果有人试图创造额外的币，方程式将不起作用，节点将拒绝该区块。"
+    },
+    "isMoneroQuantumProof": {
+      "title": "Monero 是量子安全的吗？",
+      "content": "部分是。Monero 的交易隐私是抗量子的，但控制所有权的公钥/私钥加密不是。\n\n这对于使用椭圆曲线加密的任何区块链都是如此。未来的量子计算机可能会破解这些密钥，因此随着量子安全标准的发展，将需要升级。"
+    },
+    "isCryptographySecure": {
+      "title": "Monero 的加密安全吗？",
+      "content": "Monero 一直倾向于使用经过严格研究的成熟加密方案。该协议目前使用：\n 1. @Pedersen-Commitments + @Bulletproofs 用于保密交易金额\n 2. @Curve-Trees 证明花费的输出属于发送者而不透露它\n 3. @Stealth-addresses 用于加密和解除链上接收者信息的链接"
+    },
+    "inflationBugExploited": {
+      "title": "Monero 曾经有过被利用的通胀漏洞吗？",
+      "content": "没有。2017 年，一位研究人员在旧代码中发现了一个缺陷，在非常特定的情况下可能允许创建额外的币。\n\n该漏洞已修复，区块链被扫描以查找利用会留下的确切模式。没有发现任何东西，供应量与发行计划匹配，证明该漏洞在实践中没有被使用。"
+    },
+    "antivirusFlagsMonero": {
+      "title": "为什么我的杀毒软件/防火墙认为 Monero 是恶意软件？",
+      "content": "下载 Monero 软件后，您的杀毒软件或防火墙可能会将可执行文件标记为恶意软件。\n\n**为什么会这样？**\n\n这可能是因为集成的矿工，用于挖矿和区块验证。一些杀毒软件可能错误地将矿工视为危险软件。\n\n**该怎么办：**\n\n1. 确保您下载的软件是合法的\n2. 在杀毒软件中为其添加例外，这样它就不会被删除或阻止"
+    }
+  },
+  "wallets": {
+    "title": "钱包",
+    "whatKindsOfWallets": {
+      "title": "有哪些类型的 Monero 钱包？",
+      "content": "**常规钱包：**这些在您的设备上扫描区块链，为您提供最佳隐私，但需要更多存储和带宽。\n\n**LWS 钱包：**这些使用远程服务器代您扫描区块链，减少资源需求，但以牺牲一些隐私为代价。"
+    },
+    "areLwsWalletsSafe": {
+      "title": "LWS 钱包安全吗？",
+      "content": "LWS 钱包使用您的私有查看密钥代您扫描区块链。这意味着钱包服务可以看到您的交易历史，但无法花费您的资金。这是以隐私为代价换取便利。"
+    },
+    "whatWalletShouldIUse": {
+      "title": "我应该使用什么钱包？",
+      "content": "在下载页面，您可以找到 Monero Core 发布的钱包，以及社区开发者的开源钱包。选择适合您需求和技术舒适度的钱包。"
+    },
+    "whatToBackUp": {
+      "title": "最重要的备份是什么？",
+      "content": "您的助记词。它是您地址和资金的根源。设备可以更换。如果您妥善保管助记词并离线存储，您就保住了您的钱。"
+    },
+    "deviceLostOrStolen": {
+      "title": "如果我的手机或电脑丢失或被盗怎么办？",
+      "content": "如果您的助记词已备份且设备已锁定，您可以在新设备上恢复钱包并转移资金。如果攻击者同时获得您解锁的设备和助记词，他们可以花费您的币。像对待保险库钥匙一样对待您的助记词。"
+    }
+  },
+  "economics": {
+    "title": "经济学",
+    "totalSupply": {
+      "title": "Monero 的总供应量是多少？",
+      "content": "Monero 有一个主要发行阶段，然后是每个区块 0.6 XMR 的小额持续尾部发行，以奖励矿工并保护网络。结果是一个可预测的、温和增长的供应量，趋向于稳定的增长率。\n\n截至 2025 年，流通中约有 1844 万 XMR。"
+    },
+    "whatIsTailEmission": {
+      "title": "什么是尾部发行，为什么需要它？",
+      "content": "尾部发行是永不归零的恒定区块奖励。它避免了矿工只依赖费用的未来，这可能诱使他们偏向大型、可见的付款人或审查小用户。小额、永久的奖励有助于保持安全诚实和去中心化。"
+    },
+    "tailEmissionInflation": {
+      "title": "尾部发行 = 无尽的通货膨胀吗？",
+      "content": "尾部发行在绝对数量上是固定的，因此随着时间推移，它占现有供应量的百分比越来越小。\n\n截至 2025 年，Monero 的年通胀率为 0.85%，趋向于零。\n\n目标不是零新币，而是可以支持长期网络安全的稳定、低通胀率。"
+    },
+    "wasTherePremine": {
+      "title": "有预挖或特殊创始人奖励吗？",
+      "content": "没有。Monero 以公平的方式启动，没有预挖，没有创始人税，没有早期投资者份额。流通中的每一个单位都是或将是按照相同规则挖出的。"
+    },
+    "howAreCoinsDistributed": {
+      "title": "新的 Monero 币如何分配？",
+      "content": "新币由投入能源和硬件来保护链的矿工赚取。工作量证明设计旨在限制专用硬件的优势，让更多人可以参与挖矿。"
+    }
+  },
+  "additionalResources": {
+    "title": "其他资源",
+    "subtitle": "探索更多资源以帮助您了解 Monero。",
+    "moneroDocs": {
+      "title": "Monero 文档",
+      "description": "用户和开发者有效、安全使用 Monero 的综合指南。",
+      "ctaLabel": "阅读文档"
+    },
+    "stackExchange": {
+      "title": "Stack Exchange",
+      "description": "加入 Monero Stack Exchange 社区，提问并找到与 Monero 相关的答案。",
+      "ctaLabel": "访问"
+    },
+    "reddit": {
+      "title": "r/monerosupport",
+      "description": "在 Reddit 上与 Monero 社区互动，参与讨论、新闻和更新。",
+      "ctaLabel": "访问"
+    },
+    "monerohow": {
+      "title": "Monero.how",
+      "description": "包含旧指南和教程的老牌知名资源",
+      "ctaLabel": "访问"
+    }
+  }
+}

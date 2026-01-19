@@ -1,0 +1,23 @@
+{
+  "pageTitle": "法律",
+  "title": "法律",
+  "subtitle": "最后修订：2017 年 6 月 22 日",
+  "description": "Monero 项目网站的使用条款、版权和隐私政策。",
+  "sections": {
+    "termsOfUse": {
+      "title": "使用条款",
+      "tocSubtitle": "使用本网站的规则"
+    },
+    "copyright": {
+      "title": "版权",
+      "tocSubtitle": "内容许可信息"
+    },
+    "privacyPolicy": {
+      "title": "隐私政策",
+      "tocSubtitle": "我们如何处理您的数据"
+    }
+  },
+  "aria": {
+    "sectionsNav": "法律部分"
+  }
+}

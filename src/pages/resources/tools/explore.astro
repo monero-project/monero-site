@@ -38,7 +38,7 @@ const t = await createTInstance(locale);
               <ExternalResourceButton
                 href={tool.href}
                 title={tool.title}
-                subtitle={tool.subtitle}
+                subtitle={t(`tools:explore.tools.blockExplorers.${tool.id}`)}
                 onionHref={tool.onionHref}
                 t={t}
               />
@@ -62,7 +62,7 @@ const t = await createTInstance(locale);
               <ExternalResourceButton
                 href={tool.href}
                 title={tool.title}
-                subtitle={tool.subtitle}
+                subtitle={t(`tools:explore.tools.network.${tool.id}`)}
                 t={t}
               />
             </li>
@@ -85,7 +85,7 @@ const t = await createTInstance(locale);
               <ExternalResourceButton
                 href={tool.href}
                 title={tool.title}
-                subtitle={tool.subtitle}
+                subtitle={t(`tools:explore.tools.utilities.${tool.id}`)}
                 t={t}
               />
             </li>

@@ -32,7 +32,7 @@ const t = await createTInstance(locale);
             <ExternalResourceButton
               href={tool.href}
               title={tool.title}
-              subtitle={tool.subtitle}
+              subtitle={t(`tools:develop.tools.${tool.id}`)}
               logo={tool.logo}
             />
           </li>
