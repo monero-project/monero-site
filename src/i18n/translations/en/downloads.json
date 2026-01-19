@@ -16,6 +16,10 @@
     "freebsd": "FreeBSD",
     "ios": "iOS"
   },
+  "communityNote": {
+    "title": "Looking for more wallets?",
+    "content": "Visit the Community tab for mobile wallets and other community-created software."
+  },
   "core": {
     "gui": {
       "title": "Monero GUI Wallet",

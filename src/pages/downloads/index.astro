@@ -7,12 +7,14 @@ import Layout from "@/layouts/Layout.astro";
 import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
 import CoreCard from "@/components/pages/downloads/CoreCard.astro";
 import CTACard from "@/components/ui/CTACard.astro";
+import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
 import PageTabs from "@/components/ui/PageTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
 
 import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
+import walletIcon from "@/assets/icons/mask/wallet.avif";
 import cliImage from "@/assets/images/cli.avif";
 import guiImage from "@/assets/images/gui.avif";
 
@@ -46,6 +48,13 @@ const tabs = [
       activeIndex={0}
       t={t}
     />
+    <InternalResourceButton
+      icon={walletIcon}
+      title={t("downloads:communityNote.title")}
+      href={localizeHref(locale, "/downloads/community")}
+    >
+      {t("downloads:communityNote.content")}
+    </InternalResourceButton>
     <div class="downloads-grid">
       <!-- Monero GUI Card -->
       <CoreCard
@@ -115,6 +124,7 @@ const tabs = [
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   #gui,
