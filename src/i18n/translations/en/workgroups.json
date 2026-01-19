@@ -16,12 +16,6 @@
       "lead": "The starting point for all new contributors.",
       "description": "Not sure where to begin? Join the Community Workgroup to meet fellow contributors, discover where your skills fit, and get guidance on your first contribution. Everyone is welcome!",
       "cta": "Join the conversation"
-    },
-    "localization": {
-      "name": "Localization Workgroup",
-      "lead": "No coding required.",
-      "description": "Help make Monero accessible worldwide by translating software, documentation, and website content. One of our oldest and most welcoming workgroups.",
-      "cta": "Start translating"
     }
   },
   "columns": {

@@ -11,16 +11,10 @@ export interface Props {
   title: string;
   description?: string;
   ctaHref?: string;
-  ctaLabel?: string;
+  ctaLabel: string;
 }
 
-const {
-  step,
-  title,
-  description = "",
-  ctaHref = "#",
-  ctaLabel = "Get a wallet",
-} = Astro.props;
+const { step, title, description = "", ctaHref = "#", ctaLabel } = Astro.props;
 
 const locale = getLocale(Astro.url);
 const dir = getDirection(locale);

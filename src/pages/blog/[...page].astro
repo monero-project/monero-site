@@ -74,7 +74,7 @@ const tabs = [
         class="rss-icon"
         href={new URL("feed.xml", Astro.site)}
         aria-label={t("blog:aria.rssFeed")}
-        title="RSS Feed"
+        title={t("blog:aria.rssFeed")}
       >
         <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
       </a>

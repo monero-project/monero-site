@@ -7,6 +7,7 @@
   },
   "gupax": {
     "title": "Gupax",
+    "imageAlt": "Gupax window showing P2Pool and XMRig status",
     "subtitle": "The user-friendly Monero miner",
     "lead": "The fastest way to start mining Monero. Gupax bundles P2Pool and XMRig into a simple app with easy setup and clear stats.",
     "bullets": [
@@ -18,6 +19,7 @@
   },
   "xmrig": {
     "title": "XMRig",
+    "imageAlt": "XMRig terminal window showing mining status",
     "subtitle": "For advanced users",
     "lead": "Prefer full control? Use XMRig directly for pool/solo mining and performance tuning.",
     "bullets": [
@@ -28,6 +30,7 @@
   },
   "solo": {
     "title": "Solo Mining",
+    "imageAlt": "Monero GUI wallet mining",
     "subtitle": "Most independent, most variance",
     "lead": "Solo mining maximizes independence, but expect long gaps between payouts unless your hashrate is high.",
     "bullets": [
