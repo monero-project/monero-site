@@ -18,8 +18,7 @@
     "format:check": "prettier --check .",
     "i18n:moneropedia:config": "tsx src/i18n/moneropedia/gen-config.ts",
     "i18n:moneropedia:update-po": "po4a --no-translations src/i18n/moneropedia/po4a.conf",
-    "i18n:moneropedia:compile": "po4a src/i18n/moneropedia/po4a.conf",
-    "prepare": "[ \"$CI\" = true ] || lefthook install"
+    "i18n:moneropedia:compile": "po4a src/i18n/moneropedia/po4a.conf"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",
@@ -48,7 +47,6 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
     "@eslint/js": "^9.39.2",
-    "@evilmartians/lefthook": "^1.13.6",
     "@types/hast": "^3.0.4",
     "@types/mdast": "^4.0.4",
     "eslint": "^9.39.2",
@@ -56,6 +54,7 @@
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "htmlhint": "^1.8.0",
+    "lefthook": "^2.0.15",
     "postcss-html": "^1.8.1",
     "prettier": "3.8.0",
     "prettier-plugin-astro": "0.14.1",
@@ -67,5 +66,10 @@
     "typescript-eslint": "^8.53.0",
     "unified": "^11.0.5",
     "vfile": "^6.0.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "lefthook"
+    ]
   }
 }
