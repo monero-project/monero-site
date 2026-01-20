@@ -1,8 +1,5 @@
 ---
-import { localizeNumber, getDirection } from "@/i18n/utils";
-import { defaultLocale } from "@/i18n/config";
 import type { Page } from "astro";
-import type { TFunction } from "i18next";
 import MaskIcon from "./MaskIcon.astro";
 
 import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
@@ -10,12 +7,10 @@ import chevronRight from "@/assets/icons/mask/chevron-right.avif";
 
 interface Props {
   page: Page<unknown>;
-  locale?: string;
-  t: TFunction;
 }
 
-const { page, locale, t } = Astro.props;
-const dir = getDirection(locale || defaultLocale);
+const { page } = Astro.props;
+const { t, dir, localizeNumber } = Astro.locals;
 
 const current = page.currentPage;
 const last = page.lastPage;
@@ -101,7 +96,7 @@ const hasNext = current < last;
                 aria-label={t("common:components.paginator.page", { n })}
                 aria-current={isCurrent ? "page" : undefined}
               >
-                {locale ? localizeNumber(locale, n) : n}
+                {localizeNumber(n)}
               </a>
             </li>
           );

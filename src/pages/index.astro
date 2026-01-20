@@ -1,6 +1,4 @@
 ---
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-
 import Layout from "@/layouts/Layout.astro";
 
 import GetStartedCard from "@/components/pages/index/GetStartedCard.astro";
@@ -15,12 +13,11 @@ import usersIcon from "@/assets/icons/mask/users.avif";
 import landingImage from "@/assets/images/landing.avif";
 import { Image } from "astro:assets";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t, localizeHref } = Astro.locals;
 ---
 
 <Layout title={t("index:pageTitle")} description={t("index:hero.lead")}>
-  <Hero t={t} class="index-hero" />
+  <Hero class="index-hero" />
   <div class="main-content">
     <IndexCard
       id="about-monero"
@@ -74,7 +71,7 @@ const t = await createTInstance(locale);
           step="01"
           title={t("index:step1Title")}
           description={t("index:step1Desc")}
-          ctaHref={localizeHref(locale, "/downloads/community/#wallets")}
+          ctaHref={localizeHref("/downloads/community/#wallets")}
           ctaLabel={t("index:step1Cta")}
         />
         <hr />
@@ -82,7 +79,7 @@ const t = await createTInstance(locale);
           step="02"
           title={t("index:step2Title")}
           description={t("index:step2Desc")}
-          ctaHref={localizeHref(locale, "/get-started/exchanges")}
+          ctaHref={localizeHref("/get-started/exchanges")}
           ctaLabel={t("index:step2Cta")}
         />
         <hr />
@@ -90,7 +87,7 @@ const t = await createTInstance(locale);
           step="03"
           title={t("index:step3Title")}
           description={t("index:step3Desc")}
-          ctaHref={localizeHref(locale, "/get-started/merchants")}
+          ctaHref={localizeHref("/get-started/merchants")}
           ctaLabel={t("index:step3Cta")}
         />
       </div>
@@ -106,21 +103,21 @@ const t = await createTInstance(locale);
           title={t("index:hangoutsTitle")}
           description={t("index:hangoutsDesc")}
           ctaLabel={t("index:hangoutsCta")}
-          ctaHref={localizeHref(locale, "/community/hangouts")}
+          ctaHref={localizeHref("/community/hangouts")}
           icon={chatIcon}
         />
         <ResourceCard
           title={t("index:workgroupsTitle")}
           description={t("index:workgroupsDesc")}
           ctaLabel={t("index:workgroupsCta")}
-          ctaHref={localizeHref(locale, "/community/workgroups")}
+          ctaHref={localizeHref("/community/workgroups")}
           icon={usersIcon}
         />
         <ResourceCard
           title={t("index:contributeTitle")}
           description={t("index:contributeDesc")}
           ctaLabel={t("index:contributeCta")}
-          ctaHref={localizeHref(locale, "/get-started/contribute")}
+          ctaHref={localizeHref("/get-started/contribute")}
           icon={codeIcon}
         />
       </div>

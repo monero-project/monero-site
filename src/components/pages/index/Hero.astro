@@ -1,13 +1,11 @@
 ---
-import { getLocale, localizeHref } from "@/i18n/utils";
-
 import Button from "@/components/ui/Button.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import moneroOutline from "@/assets/icons/mask/monerooutline.avif";
 
-const { t, class: className, ...rest } = Astro.props;
-const locale = getLocale(Astro.url);
+const { class: className, ...rest } = Astro.props;
+const { t, localizeHref } = Astro.locals;
 ---
 
 <div class:list={["hero", className]} aria-labelledby="hero-title" {...rest}>
@@ -38,7 +36,7 @@ const locale = getLocale(Astro.url);
       <Button
         variant="secondary"
         class="hero-button"
-        href={localizeHref(locale, "/get-started/what-is-monero/")}
+        href={localizeHref("/get-started/what-is-monero/")}
         >{t("index:hero.aboutMonero")}</Button
       >
     </div>

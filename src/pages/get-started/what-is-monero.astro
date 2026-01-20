@@ -22,22 +22,12 @@ import shieldPlusIcon from "@/assets/icons/mask/shieldPlus.avif";
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 
 import Button from "@/components/ui/Button.astro";
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  getLocaleName,
-  localizeHref,
-} from "@/i18n/utils";
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
+import { getLocaleName } from "@/i18n/utils";
 
 import { readdirSync } from "fs";
 import { join } from "path";
 
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
-const safeMarkdown = createSafeMarkdown(locale);
+const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
 
 const i18nVttFiles = readdirSync(
   join(process.cwd(), "public", "media", "vtt", "msmsm"),
@@ -234,7 +224,6 @@ const getLanguageLabel = (lang: string): string => {
                 "what-is-monero:sections.technology.features.stealthAddresses.basedOn",
                 {
                   mpECDH: localizeHref(
-                    locale,
                     "/resources/moneropedia/elliptic-curve-diffie-hellman/",
                   ),
                 },
@@ -255,7 +244,6 @@ const getLanguageLabel = (lang: string): string => {
             set:html={safeMarkdown.parseInline(
               t("what-is-monero:sections.technology.features.fcmp.basedOn", {
                 mpCurveTrees: localizeHref(
-                  locale,
                   "/resources/moneropedia/curve-trees/",
                 ),
               }),
@@ -287,11 +275,9 @@ const getLanguageLabel = (lang: string): string => {
                 "what-is-monero:sections.technology.features.confidentialTransactions.basedOn",
                 {
                   mpPedersenCommitments: localizeHref(
-                    locale,
                     "/resources/moneropedia/pedersen-commitment/",
                   ),
                   mpBulletproofs: localizeHref(
-                    locale,
                     "/resources/moneropedia/bulletproofs/",
                   ),
                 },
@@ -351,19 +337,19 @@ const getLanguageLabel = (lang: string): string => {
         <p
           set:html={safeMarkdown.parseInline(
             t("what-is-monero:sections.community.content", {
-              mrlLink: localizeHref(locale, "/resources/research-lab/"),
+              mrlLink: localizeHref("/resources/research-lab/"),
             }),
           )}
         />
         <div class="community-cta-links">
           <a
-            href={localizeHref(locale, "/community/hangouts/")}
+            href={localizeHref("/community/hangouts/")}
             aria-label={t("what-is-monero:sections.community.joinCommunity")}
             >{t("what-is-monero:sections.community.joinCommunity")}
             <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} /></a
           >
           <a
-            href={localizeHref(locale, "/community/workgroups/")}
+            href={localizeHref("/community/workgroups/")}
             aria-label={t(
               "what-is-monero:sections.community.contributeToMonero",
             )}
@@ -386,13 +372,13 @@ const getLanguageLabel = (lang: string): string => {
       <Fragment slot="buttons">
         <Button
           variant="primary"
-          href={localizeHref(locale, "/downloads/community/#wallets")}
+          href={localizeHref("/downloads/community/#wallets")}
         >
           {t("what-is-monero:sections.cta.downloadWallet")}
         </Button>
         <Button
           variant="secondary"
-          href={localizeHref(locale, "/get-started/exchanges/")}
+          href={localizeHref("/get-started/exchanges/")}
         >
           {t("what-is-monero:sections.cta.getMonero")}
         </Button>

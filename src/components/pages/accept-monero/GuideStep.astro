@@ -2,7 +2,6 @@
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-import type { TFunction } from "i18next";
 
 export interface Props {
   step: number | string;
@@ -11,7 +10,6 @@ export interface Props {
   image?: ImageMetadata;
   imageAlt?: string;
   reverse?: boolean;
-  t: TFunction;
 }
 
 const {
@@ -21,8 +19,8 @@ const {
   image,
   imageAlt = "",
   reverse = false,
-  t,
 } = Astro.props;
+const { t } = Astro.locals;
 ---
 
 <section class:list={["guide-step", { reverse }]}>

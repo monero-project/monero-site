@@ -1,6 +1,4 @@
 ---
-import { getDirection, getLocale } from "@/i18n/utils";
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
 import type { ImageMetadata } from "astro";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -17,8 +15,8 @@ export interface Props {
 }
 
 const { icon = null, title, description = "", ctaLabel, ctaHref } = Astro.props;
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
-const safeMarkdown = createSafeMarkdown(getLocale(Astro.url));
+const { dir, safeMarkdown } = Astro.locals;
+const rtl = dir === "rtl";
 ---
 
 <article class="resource-card">

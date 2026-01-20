@@ -4,12 +4,6 @@ import PageContainer from "@/components/ui/PageContainer.astro";
 import PageTabs from "@/components/ui/PageTabs.astro";
 import Paginator from "@/components/ui/Paginator.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
@@ -47,9 +41,7 @@ const posts = page.data;
 const sanitizedTag = String(tag).replace(/-/g, " ");
 const pathname = Astro.url.pathname;
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const dir = getDirection(locale);
+const { t, dir, localizeHref } = Astro.locals;
 const translatedTag = t(`blog:tagLabels.${sanitizedTag}`, {
   defaultValue: sanitizedTag,
 });
@@ -62,16 +54,14 @@ const tabs = [
 ];
 
 let activeTab = tabs.findIndex((tab, index) => {
-  const localizedLink = localizeHref(locale, tab.link);
+  const localizedLink = localizeHref(tab.link);
   if (index === 0) {
     return pathname === localizedLink;
   }
   return pathname.startsWith(localizedLink);
 });
 
-const isMainTab = tabs.some(
-  (tab) => pathname == localizeHref(locale, tab.link),
-);
+const isMainTab = tabs.some((tab) => pathname == localizeHref(tab.link));
 const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
 ---
 
@@ -99,9 +89,8 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
     <div class="tabs-bar">
       <PageTabs
         labels={tabs.map((tab) => tab.label)}
-        links={tabs.map((tab) => localizeHref(locale, tab.link))}
+        links={tabs.map((tab) => localizeHref(tab.link))}
         activeIndex={activeTab}
-        t={t}
       />
       <a
         class="rss-icon"
@@ -122,13 +111,11 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
             tags={post.data.tags || []}
             image={post.data.image}
             summary={post.data.summary || ""}
-            locale={locale}
-            t={t}
           />
         ))
       }
     </div>
-    <Paginator page={page} locale={locale} t={t} />
+    <Paginator page={page} />
   </PageContainer>
 </Layout>
 

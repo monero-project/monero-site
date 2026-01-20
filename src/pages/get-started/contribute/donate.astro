@@ -14,16 +14,7 @@ import communityLogo from "@/assets/images/idea-bulb.avif";
 
 import contributingData from "@/data/contributing/contributing.json";
 
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
+const { dir, t, localizeHref } = Astro.locals;
 ---
 
 <Layout
@@ -33,7 +24,7 @@ const t = await createTInstance(locale);
   <TitleCard
     title={t("contribute:donate.title")}
     subtitle={t("contribute:donate.subtitle")}
-    backHref={localizeHref(locale, "/get-started/contribute/")}
+    backHref={localizeHref("/get-started/contribute/")}
     backLabel={t("contribute:index.title")}
   />
 

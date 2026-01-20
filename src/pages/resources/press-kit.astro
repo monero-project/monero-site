@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import Button from "@/components/ui/Button.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -9,6 +8,7 @@ import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
 
 import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
@@ -20,17 +20,9 @@ import {
   marketingResources,
   pressDocuments,
 } from "@/data/press-kit";
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
 import { getPublicImageDimensions } from "@/utils/image";
 
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
+const { dir, t, localizeHref } = Astro.locals;
 const previewDimensions = await Promise.all(
   brandAssets.map((asset) => getPublicImageDimensions(asset.preview)),
 );
@@ -202,7 +194,7 @@ const sections = [
             <h3>{t("press-kit:sections.contacts.workgroups.title")}</h3>
             <p>{t("press-kit:sections.contacts.workgroups.description")}</p>
             <a
-              href={localizeHref(locale, "/community/workgroups")}
+              href={localizeHref("/community/workgroups")}
               class="contact-link"
             >
               {t("press-kit:sections.contacts.workgroups.link")}
@@ -212,10 +204,7 @@ const sections = [
           <div class="contact-card">
             <h3>{t("press-kit:sections.contacts.community.title")}</h3>
             <p>{t("press-kit:sections.contacts.community.description")}</p>
-            <a
-              href={localizeHref(locale, "/community/hangouts")}
-              class="contact-link"
-            >
+            <a href={localizeHref("/community/hangouts")} class="contact-link">
               {t("press-kit:sections.contacts.community.link")}
               <MaskIcon src={arrowRightIcon} rtl={dir === "rtl"} />
             </a>

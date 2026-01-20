@@ -3,18 +3,14 @@ import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { Book } from "@/data/library";
-import { getDirection, getLocale } from "@/i18n/utils";
 import { Image } from "astro:assets";
-import type { TFunction } from "i18next";
 
-export interface Props extends Book {
-  t: TFunction;
-}
+export type Props = Book;
 
-const { title, subtitle, description, cover, coverAlt, link, translations, t } =
+const { title, subtitle, description, cover, coverAlt, link, translations } =
   Astro.props;
-const locale = getLocale(Astro.url);
-const rtl = getDirection(locale) === "rtl";
+const { t, dir } = Astro.locals;
+const rtl = dir === "rtl";
 
 const getLanguageName = (targetLocale: string): string => {
   const displayNames = new Intl.DisplayNames([targetLocale], {

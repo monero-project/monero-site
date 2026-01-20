@@ -10,21 +10,12 @@ import Layout from "@/layouts/Layout.astro";
 
 import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
-import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
 import mailsIcon from "@/assets/icons/mask/mails.avif";
+import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
 
 import { books, cheatsheets, newsletters } from "@/data/library";
 
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
+const { dir, t, localizeHref } = Astro.locals;
 
 const sections = [
   {
@@ -55,7 +46,7 @@ const sections = [
   <TitleCard
     title={t("knowledge-base:library.title")}
     subtitle={t("knowledge-base:library.subtitle")}
-    backHref={localizeHref(locale, "/resources/knowledge-base/")}
+    backHref={localizeHref("/resources/knowledge-base/")}
     backLabel={t("knowledge-base:index.title")}
   />
 
@@ -70,7 +61,7 @@ const sections = [
       anchorId="books"
     >
       <div class="books-shelf">
-        {books.map((book) => <BookCard {...book} t={t} />)}
+        {books.map((book) => <BookCard {...book} />)}
       </div>
     </PageSection>
 
@@ -136,7 +127,6 @@ const sections = [
               href={newsletter.url}
               title={newsletter.title}
               subtitle={newsletter.description}
-              t={t}
             />
           ))
         }

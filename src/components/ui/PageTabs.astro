@@ -1,5 +1,4 @@
 ---
-import type { TFunction } from "i18next";
 import crypto from "node:crypto";
 
 interface Props {
@@ -8,17 +7,10 @@ interface Props {
   id?: string; // Optional stable id if multiple components on a page
   initial?: number; // 0-based default tab
   activeIndex?: number; // 0-based active tab for navigation mode
-  t: TFunction;
 }
 
-const {
-  labels = [],
-  links,
-  id,
-  initial = 0,
-  activeIndex,
-  t,
-}: Props = Astro.props;
+const { labels = [], links, id, initial = 0, activeIndex }: Props = Astro.props;
+const { t } = Astro.locals;
 if (!Array.isArray(labels) || labels.length === 0) {
   throw new Error("<PageTabs> needs a non-empty labels array.");
 }

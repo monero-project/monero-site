@@ -6,14 +6,12 @@ import CTACard from "@/components/ui/CTACard.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale } from "@/i18n/utils";
 
 import { currentSponsors, pastSponsors } from "@/data/sponsors";
 
 import heartPlusIcon from "@/assets/icons/mask/heartPlus.avif";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t } = Astro.locals;
 ---
 
 <Layout

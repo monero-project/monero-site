@@ -1,7 +1,6 @@
 ---
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { getDirection, getLocale, createTInstance } from "@/i18n/utils";
 
 interface Props {
   title: string;
@@ -13,9 +12,7 @@ interface Props {
 
 const { title, description, href, image, linkText } = Astro.props;
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const dir = getDirection(locale);
+const { t, dir } = Astro.locals;
 
 const defaultLinkText = t("common:components.categoryCard.explore");
 ---

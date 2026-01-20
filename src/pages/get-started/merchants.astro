@@ -4,15 +4,13 @@ import Layout from "@/layouts/Layout.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale } from "@/i18n/utils";
 
 import merchants from "@/data/merchants";
 
 import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t } = Astro.locals;
 ---
 
 <Layout
@@ -40,7 +38,6 @@ const t = await createTInstance(locale);
               title={merchant.name}
               subtitle={t(`merchants:subtitles.${merchant.id}`)}
               logo={merchant.logo}
-              t={t}
             />
           ))
       }

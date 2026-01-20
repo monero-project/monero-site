@@ -10,10 +10,7 @@ import copyrightIcon from "@/assets/icons/mask/copyright.avif";
 import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
 import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 
-import { createTInstance, getLocale } from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t } = Astro.locals;
 
 const sections = [
   {

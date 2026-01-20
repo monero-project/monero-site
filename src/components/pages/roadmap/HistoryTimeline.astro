@@ -1,6 +1,4 @@
 ---
-import type { TFunction } from "i18next";
-
 interface HistoryEvent {
   month?: string;
   titleKey: string;
@@ -14,10 +12,10 @@ interface HistoryYear {
 
 interface Props {
   history: HistoryYear[];
-  t: TFunction;
 }
 
-const { history, t } = Astro.props;
+const { history } = Astro.props;
+const { t } = Astro.locals;
 ---
 
 <div class="year-rows">

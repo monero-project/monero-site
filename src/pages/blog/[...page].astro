@@ -1,10 +1,4 @@
 ---
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
 import { getCollection } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
@@ -34,9 +28,7 @@ interface Props {
 const { page } = Astro.props;
 const posts = page.data;
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const dir = getDirection(locale);
+const { t, dir, localizeHref } = Astro.locals;
 
 const tabs = [
   { label: t("blog:tabs.allPosts"), link: "/blog" },
@@ -66,9 +58,8 @@ const tabs = [
     <div class="tabs-bar">
       <PageTabs
         labels={tabs.map((tab) => tab.label)}
-        links={tabs.map((tab) => localizeHref(locale, tab.link))}
+        links={tabs.map((tab) => localizeHref(tab.link))}
         activeIndex={0}
-        t={t}
       />
       <a
         class="rss-icon"
@@ -89,13 +80,11 @@ const tabs = [
             tags={post.data.tags || []}
             image={post.data.image}
             summary={post.data.summary || ""}
-            locale={locale}
-            t={t}
           />
         ))
       }
     </div>
-    <Paginator page={page} locale={locale} t={t} />
+    <Paginator page={page} />
   </PageContainer>
 </Layout>
 

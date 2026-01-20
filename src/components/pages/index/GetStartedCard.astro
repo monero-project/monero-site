@@ -1,7 +1,4 @@
 ---
-import { getDirection, localizeHref, localizeNumber } from "@/i18n/utils";
-import { getLocale } from "astro-i18n-aut";
-
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
@@ -16,19 +13,18 @@ export interface Props {
 
 const { step, title, description = "", ctaHref = "#", ctaLabel } = Astro.props;
 
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
+const { dir, localizeNumber, localizeHref } = Astro.locals;
 ---
 
 <article class="gs">
   <div class="num" aria-hidden="true">
-    {localizeNumber(locale, Number(step), 2)}
+    {localizeNumber(Number(step), 2)}
   </div>
 
   <div class="text">
     <h2 class="title">{title}</h2>
     {description && <p class="desc">{description}</p>}
-    <a class="cta" href={localizeHref(locale, ctaHref)} target="_blank">
+    <a class="cta" href={localizeHref(ctaHref)} target="_blank">
       {ctaLabel}
       <MaskIcon src={arrowRight} rtl={dir == "rtl"} size="1em" />
     </a>

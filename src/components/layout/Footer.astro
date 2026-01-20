@@ -1,16 +1,12 @@
 ---
-import { getDirection, localizeHref } from "@/i18n/utils";
 import { isExternal } from "@/utils/links";
 import type { ImageMetadata } from "astro";
-import { getLocale } from "astro-i18n-aut";
 
 import rssIcon from "@/assets/icons/mask/rss.avif";
 import torIcon from "@/assets/icons/mask/tor.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
-const { t } = Astro.props;
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
+const { t, dir, localizeHref } = Astro.locals;
 
 interface Link {
   label: string;
@@ -34,11 +30,11 @@ const columns: Column[] = [
     links: [
       {
         label: t("common:footer.columns.resources.links.aboutMonero"),
-        href: localizeHref(locale, "/get-started/what-is-monero/"),
+        href: localizeHref("/get-started/what-is-monero/"),
       },
       {
         label: t("common:footer.columns.resources.links.moneropedia"),
-        href: localizeHref(locale, "/resources/moneropedia/"),
+        href: localizeHref("/resources/moneropedia/"),
       },
       {
         label: t("common:footer.columns.resources.links.moneroDocs"),
@@ -46,7 +42,7 @@ const columns: Column[] = [
       },
       {
         label: t("common:footer.columns.resources.links.faq"),
-        href: localizeHref(locale, "/get-started/faq"),
+        href: localizeHref("/get-started/faq"),
       },
     ],
   },
@@ -55,11 +51,11 @@ const columns: Column[] = [
     links: [
       {
         label: t("common:footer.columns.reachOut.links.workgroups"),
-        href: localizeHref(locale, "/community/workgroups"),
+        href: localizeHref("/community/workgroups"),
       },
       {
         label: t("common:footer.columns.reachOut.links.hangouts"),
-        href: localizeHref(locale, "/community/hangouts"),
+        href: localizeHref("/community/hangouts"),
       },
       {
         label: t("common:footer.columns.reachOut.links.mailingList"),
@@ -95,11 +91,11 @@ const columns: Column[] = [
         label: t(
           "common:footer.columns.theMoneroProject.links.moneroResearchLab",
         ),
-        href: localizeHref(locale, "/resources/research-lab"),
+        href: localizeHref("/resources/research-lab"),
       },
       {
         label: t("common:footer.columns.theMoneroProject.links.pressKit"),
-        href: localizeHref(locale, "/resources/press-kit"),
+        href: localizeHref("/resources/press-kit"),
       },
       {
         label: t(
@@ -128,7 +124,7 @@ const bottomLinks: Link[] = [
   },
   {
     label: t("common:footer.bottomLinks.legal"),
-    href: localizeHref(locale, "/legal"),
+    href: localizeHref("/legal"),
   },
   {
     label: t("common:footer.bottomLinks.sourceCode"),

@@ -1,14 +1,7 @@
 ---
-import {
-  createTInstance,
-  getLocale,
-  localizeHref,
-  localizeNumber,
-} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t, localizeHref, localizeNumber } = Astro.locals;
 ---
 
 <Layout
@@ -17,23 +10,22 @@ const t = await createTInstance(locale);
 >
   <div class="error-container">
     <div class="error-content">
-      <h1 class="error-code">{localizeNumber(locale, 404)}</h1>
+      <h1 class="error-code">{localizeNumber(404)}</h1>
       <h2 class="error-title">{t("common:notFound.title")}</h2>
       <p class="error-message">{t("common:notFound.message")}</p>
 
       <nav class="quick-links">
-        <a href={localizeHref(locale, "/")}>{t("common:notFound.links.home")}</a
-        >
-        <a href={localizeHref(locale, "/get-started/what-is-monero/")}
+        <a href={localizeHref("/")}>{t("common:notFound.links.home")}</a>
+        <a href={localizeHref("/get-started/what-is-monero/")}
           >{t("common:notFound.links.whatIsMonero")}</a
         >
-        <a href={localizeHref(locale, "/downloads/")}
+        <a href={localizeHref("/downloads/")}
           >{t("common:notFound.links.downloads")}</a
         >
-        <a href={localizeHref(locale, "/get-started/faq/")}
+        <a href={localizeHref("/get-started/faq/")}
           >{t("common:notFound.links.faq")}</a
         >
-        <a href={localizeHref(locale, "/community/hangouts/")}
+        <a href={localizeHref("/community/hangouts/")}
           >{t("common:notFound.links.community")}</a
         >
       </nav>

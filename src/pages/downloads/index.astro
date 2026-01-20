@@ -1,7 +1,4 @@
 ---
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-import { createSafeMarkdown } from "@/utils/safeMarkdown.ts";
-
 import Layout from "@/layouts/Layout.astro";
 
 import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
@@ -20,15 +17,13 @@ import guiImage from "@/assets/images/gui.avif";
 
 import PageContainer from "@/components/ui/PageContainer.astro";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const safeMarkdown = createSafeMarkdown();
+const { t, localizeHref, safeMarkdown } = Astro.locals;
 
 const tabs = [
-  { label: t("downloads:tabs.core"), link: localizeHref(locale, "/downloads") },
+  { label: t("downloads:tabs.core"), link: localizeHref("/downloads") },
   {
     label: t("downloads:tabs.community"),
-    link: localizeHref(locale, "/downloads/community"),
+    link: localizeHref("/downloads/community"),
   },
 ];
 ---
@@ -46,12 +41,11 @@ const tabs = [
       labels={tabs.map((tab) => tab.label)}
       links={tabs.map((tab) => tab.link)}
       activeIndex={0}
-      t={t}
     />
     <InternalResourceButton
       icon={walletIcon}
       title={t("downloads:communityNote.title")}
-      href={localizeHref(locale, "/downloads/community")}
+      href={localizeHref("/downloads/community")}
     >
       {t("downloads:communityNote.content")}
     </InternalResourceButton>
@@ -75,7 +69,6 @@ const tabs = [
           >,
         )}
         downloads={coreDownloads.gui.downloads as DownloadLink[]}
-        t={t}
       />
 
       <!-- Monero CLI Card -->
@@ -97,7 +90,6 @@ const tabs = [
           >,
         )}
         downloads={coreDownloads.cli.downloads as DownloadLink[]}
-        t={t}
       />
     </div>
 

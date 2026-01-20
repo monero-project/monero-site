@@ -1,5 +1,4 @@
 ---
-import { getDirection, getLocale } from "@/i18n/utils";
 import type { ImageMetadata } from "astro";
 
 import ColorIcon from "@/components/ui/ColorIcon.astro";
@@ -26,7 +25,7 @@ const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
 const id = "dd-" + Math.random().toString(36).slice(2, 11);
 const closeId = id + "-close";
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
+const rtl = Astro.locals.dir === "rtl";
 ---
 
 <li class:list={["nav-item", { "nav-item--dropdown": isDropdown }]}>

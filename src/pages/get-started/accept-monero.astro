@@ -15,17 +15,7 @@ import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import handCoinsIcon from "@/assets/icons/mask/handCoins.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
 
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-  localizeNumber,
-} from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const dir = getDirection(locale);
+const { t, dir, localizeHref, localizeNumber } = Astro.locals;
 ---
 
 <Layout
@@ -40,10 +30,9 @@ const dir = getDirection(locale);
   <PageContainer>
     <div class="guide-content">
       <GuideStep
-        step={localizeNumber(locale, 1)}
+        step={localizeNumber(1)}
         title={t("accept-monero:steps.chooseSetup.title")}
         icon={appWindowIcon}
-        t={t}
       >
         <p>{t("accept-monero:steps.chooseSetup.intro")}</p>
 
@@ -58,7 +47,7 @@ const dir = getDirection(locale);
               {t("accept-monero:steps.chooseSetup.wallet.description")}
             </p>
             <a
-              href={localizeHref(locale, "/downloads/community/#wallets")}
+              href={localizeHref("/downloads/community/#wallets")}
               class="inline-link"
             >
               {t("accept-monero:steps.chooseSetup.wallet.viewWallets")}
@@ -101,7 +90,7 @@ const dir = getDirection(locale);
               {t("accept-monero:steps.chooseSetup.processor.description")}
             </p>
             <a
-              href={localizeHref(locale, "/resources/tools/accept/")}
+              href={localizeHref("/resources/tools/accept/")}
               class="inline-link"
             >
               {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
@@ -147,11 +136,10 @@ const dir = getDirection(locale);
       <hr />
 
       <GuideStep
-        step={localizeNumber(locale, 2)}
+        step={localizeNumber(2)}
         title={t("accept-monero:steps.acceptPayment.title")}
         icon={handCoinsIcon}
         reverse
-        t={t}
       >
         <p>
           {t("accept-monero:steps.acceptPayment.description")}
@@ -170,18 +158,14 @@ const dir = getDirection(locale);
       <hr />
 
       <GuideStep
-        step={localizeNumber(locale, 3)}
+        step={localizeNumber(3)}
         title={t("accept-monero:steps.getListed.title")}
         icon={usersIcon}
-        t={t}
       >
         <p>
           {t("accept-monero:steps.getListed.description")}
         </p>
-        <a
-          href={localizeHref(locale, "/get-started/merchants")}
-          class="inline-link"
-        >
+        <a href={localizeHref("/get-started/merchants")} class="inline-link">
           {t("accept-monero:steps.getListed.viewDirectories")}
           <MaskIcon src={arrowRightIcon} size="1em" rtl={dir == "rtl"} />
         </a>

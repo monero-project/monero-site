@@ -4,13 +4,11 @@ import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { paymentGateways } from "@/data/monero-tools";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import shieldAlertIcon from "@/assets/icons/mask/shieldAlert.avif";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t, localizeHref } = Astro.locals;
 ---
 
 <Layout
@@ -20,7 +18,7 @@ const t = await createTInstance(locale);
   <TitleCard
     title={t("tools:accept.title")}
     subtitle={t("tools:accept.subtitle")}
-    backHref={localizeHref(locale, "/resources/tools/")}
+    backHref={localizeHref("/resources/tools/")}
     backLabel={t("tools:index.title")}
   />
 

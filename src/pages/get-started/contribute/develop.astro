@@ -17,16 +17,7 @@ import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 import terminalIcon from "@/assets/icons/mask/terminal.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
 
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
+const { dir, t, localizeHref } = Astro.locals;
 
 const coreProjects = [
   {
@@ -88,7 +79,7 @@ const communityProjects = [
   <TitleCard
     title={t("contribute:develop.title")}
     subtitle={t("contribute:develop.subtitle")}
-    backHref={localizeHref(locale, "/get-started/contribute/")}
+    backHref={localizeHref("/get-started/contribute/")}
     backLabel={t("contribute:index.title")}
   />
 
@@ -217,10 +208,7 @@ const communityProjects = [
           <p class="sidebar-subtitle">
             {t("contribute:develop.workgroups.description")}
           </p>
-          <a
-            href={localizeHref(locale, "/community/workgroups/")}
-            class="sidebar-item"
-          >
+          <a href={localizeHref("/community/workgroups/")} class="sidebar-item">
             <span class="sidebar-item-icon">
               <MaskIcon src={usersIcon} size="1.25rem" />
             </span>
@@ -254,7 +242,7 @@ const communityProjects = [
             </span>
           </a>
           <a
-            href={localizeHref(locale, "/resources/tools/develop/")}
+            href={localizeHref("/resources/tools/develop/")}
             class="sidebar-item"
           >
             <span class="sidebar-item-icon">

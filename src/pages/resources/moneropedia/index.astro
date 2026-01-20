@@ -1,6 +1,4 @@
 ---
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
@@ -16,9 +14,7 @@ type MoneropediaItem = CollectionEntry<"moneropedia"> & {
   letter: string;
 };
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const safeMarkdown = createSafeMarkdown(locale);
+const { locale, t, localizeHref, safeMarkdown } = Astro.locals;
 
 const entries = (
   await getCollection("moneropedia", (entry) =>
@@ -34,7 +30,7 @@ const entries = (
 
   return {
     ...entry,
-    href: localizeHref(locale, `/resources/moneropedia/${slug}/`),
+    href: localizeHref(`/resources/moneropedia/${slug}/`),
     title,
     letter: title.charAt(0).toUpperCase(),
   };
@@ -60,7 +56,7 @@ for (const letter of sortedLetters) {
   <TitleCard
     title={t("knowledge-base:moneropedia.title")}
     subtitle={t("knowledge-base:moneropedia.subtitle")}
-    backHref={localizeHref(locale, "/resources/knowledge-base/")}
+    backHref={localizeHref("/resources/knowledge-base/")}
     backLabel={t("knowledge-base:index.title")}
   />
   <PageContainer class="moneropedia-index">

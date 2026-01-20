@@ -9,7 +9,6 @@ import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, getDirection } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
@@ -21,12 +20,8 @@ import terminalIcon from "@/assets/icons/mask/terminal.avif";
 import guiWindow from "@/assets/images/gui.avif";
 import gupaxWindow from "@/assets/images/gupax-window.webp";
 import xmrigWindow from "@/assets/images/xmrig-window.avif";
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const dir = getDirection(locale);
-const safeMarkdown = createSafeMarkdown(locale);
+const { t, dir, safeMarkdown } = Astro.locals;
 
 // Helper to convert keyed FAQ section to array for Accordion
 const faqToItems = (

@@ -1,6 +1,4 @@
 ---
-import { localizeHref } from "@/i18n/utils";
-import { getLocale } from "astro-i18n-aut";
 import { Image } from "astro:assets";
 
 import LanguageDropdown from "@/components/layout/header/LanguageDropdown.astro";
@@ -13,8 +11,7 @@ import moneroLogo from "@/../public/meta/monerologo.avif";
 import close from "@/assets/icons/mask/close.avif";
 import hamburger from "@/assets/icons/mask/hamburger.avif";
 
-const { t } = Astro.props;
-const locale = getLocale(Astro.url);
+const { t, localizeHref } = Astro.locals;
 
 const navItems = navigationItems.map((item) => {
   const label = t(`common:header.nav.${item.translationKey}`);
@@ -25,7 +22,7 @@ const navItems = navigationItems.map((item) => {
       dropdown: item.items.map(({ key, href, icon, iconDark }) => ({
         label: t(`common:header.dropdowns.${item.section}.${key}.label`),
         desc: t(`common:header.dropdowns.${item.section}.${key}.desc`),
-        href: localizeHref(locale, href),
+        href: localizeHref(href),
         icon,
         iconDark,
       })),
@@ -34,14 +31,14 @@ const navItems = navigationItems.map((item) => {
 
   return {
     label,
-    href: localizeHref(locale, item.href),
+    href: localizeHref(item.href),
   };
 });
 ---
 
 <header class="header">
   <div class="header-inner">
-    <a class="brand" href={localizeHref(locale, "/")}>
+    <a class="brand" href={localizeHref("/")}>
       <Image
         class="mark"
         src={moneroLogo}
@@ -84,7 +81,7 @@ const navItems = navigationItems.map((item) => {
 
     <div class="utils" aria-label={t("common:aria.utilities")}>
       <div class="lang">
-        <LanguageDropdown t={t} />
+        <LanguageDropdown />
       </div>
       <label
         for="nav-toggle"

@@ -1,6 +1,5 @@
 ---
 import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
-import { getDirection, getLocale } from "@/i18n/utils";
 import MaskIcon from "./MaskIcon.astro";
 
 export interface Props {
@@ -19,7 +18,7 @@ const {
   backLabel,
 } = Astro.props;
 
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
+const rtl = Astro.locals.dir === "rtl";
 ---
 
 <header class:list={[{ centered }]}>

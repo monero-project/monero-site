@@ -9,7 +9,6 @@ import androidIcon from "@/assets/icons/mask/brand/android.avif";
 import appleIcon from "@/assets/icons/mask/brand/apple.avif";
 import linuxIcon from "@/assets/icons/mask/brand/linux.avif";
 import windowsIcon from "@/assets/icons/mask/brand/windows.avif";
-import type { TFunction } from "i18next";
 
 interface Tags {
   desktop?: string[]; // windows | macos | linux (aliases: win, mac, osx)
@@ -25,7 +24,6 @@ interface Props {
   link: string;
   linkText?: string;
   translateTag?: (key: string) => string;
-  t: TFunction;
   id?: string;
 }
 
@@ -37,9 +35,9 @@ const {
   link,
   linkText,
   translateTag,
-  t,
   id,
 } = Astro.props;
+const { t } = Astro.locals;
 
 const norm = (s: string) => (s || "").toLowerCase().trim();
 const ALIAS: Record<string, string> = {

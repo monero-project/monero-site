@@ -1,26 +1,22 @@
 ---
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { localizeHref } from "@/i18n/utils";
-import type { TFunction } from "i18next";
+import { getDateStringFromId } from "@/utils/blog.ts";
 
 import calendarIcon from "@/assets/icons/mask/calendar.avif";
 import userIcon from "@/assets/icons/mask/user.avif";
-import { localizeDateString } from "@/i18n/utils";
-import { getDateStringFromId } from "@/utils/blog.ts";
 
 interface Props {
   title: string;
   id: string;
   author: string;
   tags?: string[];
-  locale: string;
-  t: TFunction;
 }
 
-const { title, id, author, tags = [], locale, t } = Astro.props;
+const { title, id, author, tags = [] } = Astro.props;
+const { t, localizeHref, localizeDateString } = Astro.locals;
 
 const dateString = getDateStringFromId(id);
-const date = localizeDateString(dateString, locale, {
+const date = localizeDateString(dateString, {
   day: "numeric",
   month: "long",
   year: "numeric",
@@ -61,7 +57,6 @@ const date = localizeDateString(dateString, locale, {
           <a
             class="tag"
             href={localizeHref(
-              locale,
               `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
             )}
           >

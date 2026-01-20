@@ -12,18 +12,7 @@ import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import moneroPickaxe from "@/assets/images/monero_pickaxe.webp";
 import serverImage from "@/assets/images/server.avif";
 
-import {
-  createTInstance,
-  getLocale,
-  localizeHref,
-  getDirection,
-} from "@/i18n/utils";
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
-
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const dir = getDirection(locale);
-const safeMarkdown = createSafeMarkdown(locale);
+const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
 ---
 
 <Layout
@@ -33,7 +22,7 @@ const safeMarkdown = createSafeMarkdown(locale);
   <TitleCard
     title={t("contribute:network.title")}
     subtitle={t("contribute:network.subtitle")}
-    backHref={localizeHref(locale, "/get-started/contribute/")}
+    backHref={localizeHref("/get-started/contribute/")}
     backLabel={t("contribute:index.title")}
   />
 
@@ -52,7 +41,7 @@ const safeMarkdown = createSafeMarkdown(locale);
           <li>{t("contribute:network.mine.bullets.convertCpuPower")}</li>
         </ul>
         <div class="cta-links">
-          <Button href={localizeHref(locale, "/get-started/mining/")}>
+          <Button href={localizeHref("/get-started/mining/")}>
             {t("contribute:network.mine.learnAboutMining")}
             <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} />
           </Button>

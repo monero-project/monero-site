@@ -7,12 +7,6 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import communityLogo from "@/assets/images/community-logo.avif";
@@ -27,9 +21,7 @@ import {
   researchWorkgroups,
 } from "@/data/workgroups";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const dir = getDirection(locale);
+const { t, dir, localizeHref } = Astro.locals;
 ---
 
 <Layout
@@ -45,7 +37,7 @@ const dir = getDirection(locale);
     <InternalResourceButton
       icon={messageCircleIcon}
       title={t("workgroups:hangoutsNote.title")}
-      href={localizeHref(locale, "/community/hangouts")}
+      href={localizeHref("/community/hangouts")}
     >
       {t("workgroups:hangoutsNote.content")}
     </InternalResourceButton>
@@ -97,7 +89,6 @@ const dir = getDirection(locale);
                 chatName={wg.chatName}
                 ircHref={wg.ircHref}
                 matrixHref={wg.matrixHref}
-                t={t}
               />
             ))
           }
@@ -121,7 +112,6 @@ const dir = getDirection(locale);
                 chatName={wg.chatName}
                 ircHref={wg.ircHref}
                 matrixHref={wg.matrixHref}
-                t={t}
               />
             ))
           }
@@ -145,7 +135,6 @@ const dir = getDirection(locale);
                 chatName={wg.chatName}
                 ircHref={wg.ircHref}
                 matrixHref={wg.matrixHref}
-                t={t}
               />
             ))
           }

@@ -1,8 +1,6 @@
 ---
 import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { getDirection, getLocale } from "@/i18n/utils";
-import type { TFunction } from "i18next";
 
 interface Props {
   code?: string;
@@ -10,11 +8,11 @@ interface Props {
   abstract: string;
   url: string;
   note?: string;
-  t: TFunction;
 }
 
-const { code, title, abstract, url, note, t } = Astro.props;
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
+const { code, title, abstract, url, note } = Astro.props;
+const { t, dir } = Astro.locals;
+const rtl = dir === "rtl";
 ---
 
 <article class="paper-card">

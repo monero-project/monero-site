@@ -2,27 +2,25 @@
 import CategoryCard from "@/components/ui/CategoryCard.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t, localizeHref } = Astro.locals;
 
 const cards = [
   {
     title: t("contribute:network.title"),
     description: t("contribute:network.subtitle"),
-    href: localizeHref(locale, "/get-started/contribute/network"),
+    href: localizeHref("/get-started/contribute/network"),
   },
   {
     title: t("contribute:develop.title"),
     description: t("contribute:develop.subtitle"),
-    href: localizeHref(locale, "/get-started/contribute/develop"),
+    href: localizeHref("/get-started/contribute/develop"),
   },
   {
     title: t("contribute:donate.title"),
     description: t("contribute:donate.subtitle"),
-    href: localizeHref(locale, "/get-started/contribute/donate"),
+    href: localizeHref("/get-started/contribute/donate"),
   },
 ];
 ---

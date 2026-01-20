@@ -1,9 +1,6 @@
 ---
 import "@/styles/moneropedia-link.css";
 
-import { createTInstance, getLocale } from "@/i18n/utils";
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
-
 import Layout from "@/layouts/Layout.astro";
 
 import IndexCard from "@/components/pages/index/IndexCard.astro";
@@ -16,9 +13,7 @@ import developerGuidesIcon from "@/assets/icons/mask/developer-guides.avif";
 import faqIcon from "@/assets/icons/mask/faq.avif";
 import PageContainer from "@/components/ui/PageContainer.astro";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const safeMarkdown = createSafeMarkdown(locale);
+const { t, safeMarkdown } = Astro.locals;
 
 const sectionToItems = (
   section: Record<string, { title: string; content: string }>,

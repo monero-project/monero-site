@@ -1,11 +1,5 @@
 ---
 import { defaultLocale } from "@/i18n/config";
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";
 import { getCollection, getEntry, render } from "astro:content";
 
@@ -27,10 +21,9 @@ export async function getStaticPaths() {
 
 type Props = CollectionEntry<"moneropedia">;
 
+const { locale, t, dir, localizeHref } = Astro.locals;
+
 const { slug } = Astro.params;
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
 const entry = await getEntry("moneropedia", `${locale}/${slug}`);
 
 if (!entry) {
@@ -52,7 +45,7 @@ const title = entry.data.title ?? entry.data.terms[0];
     {/* Row 1, Col 1 */}
     <aside class="moneropedia-sidebar">
       <a
-        href={localizeHref(locale, "/resources/moneropedia/")}
+        href={localizeHref("/resources/moneropedia/")}
         class="moneropedia-back"
       >
         <span class="moneropedia-back-icon">

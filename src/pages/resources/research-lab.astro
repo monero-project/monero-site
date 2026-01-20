@@ -16,16 +16,7 @@ import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
 
 import mrlLogo from "@/assets/images/mrl-logo.avif";
 
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
+const { dir, t, localizeHref } = Astro.locals;
 
 import {
   iacrPapers,
@@ -57,7 +48,7 @@ const paperTabs = [
   <TitleCard
     title={t("knowledge-base:researchLab.title")}
     subtitle={t("knowledge-base:researchLab.subtitle")}
-    backHref={localizeHref(locale, "/resources/knowledge-base/")}
+    backHref={localizeHref("/resources/knowledge-base/")}
     backLabel={t("knowledge-base:index.title")}
   />
 
@@ -118,7 +109,6 @@ const paperTabs = [
                     abstract={paper.abstract}
                     url={paper.url}
                     note={paper.note}
-                    t={t}
                   />
                 ))
               }
@@ -132,7 +122,6 @@ const paperTabs = [
                     abstract={paper.abstract}
                     url={paper.url}
                     note={paper.note}
-                    t={t}
                   />
                 ))
               }
@@ -146,7 +135,6 @@ const paperTabs = [
                     abstract={paper.abstract}
                     url={paper.url}
                     note={paper.note}
-                    t={t}
                   />
                 ))
               }

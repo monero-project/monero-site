@@ -1,19 +1,12 @@
 ---
 import { locales } from "@/i18n/config";
 import { getLocaleName, localizeHref } from "@/i18n/utils";
-import { getLocale } from "astro-i18n-aut";
-import type { TFunction } from "i18next";
 
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import Globe from "@/assets/icons/mask/globe.avif";
 
-interface Props {
-  t: TFunction;
-}
-
-const { t } = Astro.props;
-const currentLocale = getLocale(Astro.url);
+const { t, locale: currentLocale } = Astro.locals;
 
 const localeList = Object.keys(locales).map((code) => {
   const { name = code } = getLocaleName(code) ?? {};

@@ -1,12 +1,6 @@
 ---
 import BlogContent from "@/components/pages/blog/BlogContent.astro";
 import BlogHeader from "@/components/pages/blog/BlogHeader.astro";
-import {
-  createTInstance,
-  getLocale,
-  localizeDateString,
-  localizeHref,
-} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getDateStringFromId } from "@/utils/blog";
 import type { GetStaticPaths } from "astro";
@@ -27,8 +21,7 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t, localizeHref, localizeDateString } = Astro.locals;
 
 const { Content } = await render(post);
 // Get recent posts for the sidebar
@@ -75,8 +68,6 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
         id={post.id}
         author={post.data.author}
         tags={post.data.tags}
-        locale={locale}
-        t={t}
       />
       {
         post.data.image && (
@@ -103,7 +94,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
         {
           recentPosts.map((recentPost) => {
             const dateStr = getDateStringFromId(recentPost.id);
-            const formattedDate = localizeDateString(dateStr ?? "", locale, {
+            const formattedDate = localizeDateString(dateStr, {
               year: "numeric",
               month: "long",
               day: "numeric",
@@ -112,7 +103,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
               <li>
                 <a
                   class="post-title"
-                  href={localizeHref(locale, `/blog/${recentPost.id}/`)}
+                  href={localizeHref(`/blog/${recentPost.id}/`)}
                 >
                   {recentPost.data.title}
                 </a>

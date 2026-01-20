@@ -1,6 +1,4 @@
 ---
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
-
 import Layout from "@/layouts/Layout.astro";
 
 import CommunityCard from "@/components/pages/downloads/CommunityCard.astro";
@@ -41,13 +39,12 @@ export const sortWallets = (wallets: Wallet[]) =>
     return count(b) - count(a) || a.name.localeCompare(b.name);
   });
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t, localizeHref } = Astro.locals;
 const tabs = [
-  { label: t("downloads:tabs.core"), link: localizeHref(locale, "/downloads") },
+  { label: t("downloads:tabs.core"), link: localizeHref("/downloads") },
   {
     label: t("downloads:tabs.community"),
-    link: localizeHref(locale, "/downloads/community"),
+    link: localizeHref("/downloads/community"),
   },
 ];
 
@@ -98,7 +95,6 @@ const setBuiltinId = (wallet: Wallet) => {
       labels={tabs.map((tab) => tab.label)}
       links={tabs.map((tab) => tab.link)}
       activeIndex={1}
-      t={t}
     />
 
     <TOCContainer
@@ -128,7 +124,6 @@ const setBuiltinId = (wallet: Wallet) => {
               translateTag={(key: string) =>
                 t(`downloads:community.tags.${key}`)
               }
-              t={t}
               id={setBuiltinId(wallet)}
             />
           ))
@@ -151,7 +146,6 @@ const setBuiltinId = (wallet: Wallet) => {
               translateTag={(key: string) =>
                 t(`downloads:community.tags.${key}`)
               }
-              t={t}
               id={setBuiltinId(wallet)}
             />
           ))
@@ -177,7 +171,6 @@ const setBuiltinId = (wallet: Wallet) => {
               translateTag={(key: string) =>
                 t(`downloads:community.tags.${key}`)
               }
-              t={t}
               id={setBuiltinId(wallet)}
             />
           ))
@@ -206,7 +199,6 @@ const setBuiltinId = (wallet: Wallet) => {
               translateTag={(key: string) =>
                 t(`downloads:community.tags.${key}`)
               }
-              t={t}
               id={setBuiltinId(wallet)}
             />
           ))
@@ -235,7 +227,6 @@ const setBuiltinId = (wallet: Wallet) => {
               translateTag={(key: string) =>
                 t(`downloads:community.tags.${key}`)
               }
-              t={t}
               id={setBuiltinId(wallet)}
             />
           ))

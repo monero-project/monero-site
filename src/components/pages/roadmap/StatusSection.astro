@@ -1,8 +1,6 @@
 ---
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { getDirection, getLocale } from "@/i18n/utils";
-import type { TFunction } from "i18next";
 
 interface Props {
   items: Array<{
@@ -11,12 +9,12 @@ interface Props {
     status: string;
   }>;
   status: "in-progress" | "upcoming" | "proposed";
-  t: TFunction;
 }
 
-const { items, status, t } = Astro.props;
+const { items, status } = Astro.props;
+const { t, dir } = Astro.locals;
 const filteredItems = items.filter((item) => item.status === status);
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
+const rtl = dir === "rtl";
 ---
 
 <ul class="status-list">

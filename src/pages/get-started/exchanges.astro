@@ -3,12 +3,6 @@ import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import {
-  createTInstance,
-  getDirection,
-  getLocale,
-  localizeHref,
-} from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
 import bankIcon from "@/assets/icons/mask/bank.avif";
@@ -26,12 +20,7 @@ import TOCItem from "@/components/ui/TOCItem.astro";
 
 import exchanges from "@/data/exchanges";
 
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
-
-const locale = getLocale(Astro.url);
-const dir = getDirection(locale);
-const t = await createTInstance(locale);
-const safeMarkdown = createSafeMarkdown(locale);
+const { dir, t, localizeHref, safeMarkdown } = Astro.locals;
 
 const highlightOptions = [
   {
@@ -153,7 +142,6 @@ const highlightOptions = [
             <ExchangeTable
               exchanges={exchanges.decentralizedExchanges}
               hasKyc={false}
-              t={t}
             />
           </PageSection>
 
@@ -177,14 +165,12 @@ const highlightOptions = [
               subtitle={t("exchanges:sections.aggregators.resourceBtnSubtitle")}
               logo="/media/directories/kycnotme.jpg"
               data-highlight="user-friendly crypto"
-              t={t}
             />
             <p
               style="color: var(--paragraph-subtitle);"
               set:html={safeMarkdown.parseInline(
                 t("exchanges:sections.aggregators.tip", {
                   communityDownloadsUrl: localizeHref(
-                    locale,
                     "/downloads/community/#built-in-exchange",
                   ),
                 }),
@@ -202,7 +188,6 @@ const highlightOptions = [
             <ExchangeTable
               exchanges={exchanges.centralizedExchanges}
               hasKyc={true}
-              t={t}
             />
           </PageSection>
         </div>

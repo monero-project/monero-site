@@ -2,11 +2,9 @@
 import calendarIcon from "@/assets/icons/mask/calendar.avif";
 import userIcon from "@/assets/icons/mask/user.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { localizeDateString, localizeHref } from "@/i18n/utils";
 import { getDateStringFromId } from "@/utils/blog.ts";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-import type { TFunction } from "i18next";
 
 interface Props {
   id: string;
@@ -15,18 +13,17 @@ interface Props {
   title: string;
   summary: string;
   image?: ImageMetadata;
-  locale: string;
-  t: TFunction;
 }
 
-const { author, tags, title, summary, image, id, locale, t } = Astro.props;
+const { author, tags, title, summary, image, id } = Astro.props;
+const { t, localizeHref, localizeDateString } = Astro.locals;
 const dateString = getDateStringFromId(id);
-const date = localizeDateString(dateString, locale, {
+const date = localizeDateString(dateString, {
   day: "numeric",
   month: "long",
   year: "numeric",
 });
-const localizedLink = localizeHref(locale, `/blog/${id}/`);
+const localizedLink = localizeHref(`/blog/${id}/`);
 ---
 
 <div class="card-container">
@@ -85,7 +82,6 @@ const localizedLink = localizeHref(locale, `/blog/${id}/`);
             <a
               class="tag"
               href={localizeHref(
-                locale,
                 `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
               )}
             >

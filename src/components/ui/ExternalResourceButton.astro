@@ -1,11 +1,9 @@
 ---
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import torIcon from "@/assets/icons/mask/tor.avif";
-import { getDirection, getLocale } from "@/i18n/utils";
 import { getPublicImageDimensions } from "@/utils/image";
 import type { HTMLAttributes } from "astro/types";
 import { Image } from "astro:assets";
-import type { TFunction } from "i18next";
 import MaskIcon from "./MaskIcon.astro";
 
 export interface Props extends HTMLAttributes<"div"> {
@@ -15,7 +13,6 @@ export interface Props extends HTMLAttributes<"div"> {
   logo?: string;
   onionHref?: string;
   variant?: "default" | "mini";
-  t?: TFunction;
 }
 
 const {
@@ -25,10 +22,10 @@ const {
   logo,
   onionHref,
   variant = "default",
-  t,
   ...rest
 } = Astro.props;
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
+const { t, dir } = Astro.locals;
+const rtl = dir === "rtl";
 const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
 ---
 
@@ -83,14 +80,10 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
         target="_blank"
         rel="noopener noreferrer external"
         class="onion-link"
-        title={
-          t?.("common:components.externalResourceButton.onionService") ||
-          "Onion service"
-        }
-        aria-label={
-          t?.("common:components.externalResourceButton.openOnionService") ||
-          "Open onion service"
-        }
+        title={t("common:components.externalResourceButton.onionService")}
+        aria-label={t(
+          "common:components.externalResourceButton.openOnionService",
+        )}
       >
         <MaskIcon src={torIcon} size="1.25em" />
       </a>

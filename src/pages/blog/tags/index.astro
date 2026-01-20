@@ -1,7 +1,6 @@
 ---
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { createTInstance, getLocale, localizeHref } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -9,8 +8,7 @@ const allPosts = await getCollection("blog");
 const tags = [...new Set(allPosts.flatMap((post) => post.data.tags))].filter(
   (tag) => tag !== undefined,
 );
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t, localizeHref } = Astro.locals;
 ---
 
 <Layout
@@ -36,7 +34,6 @@ const t = await createTInstance(locale);
           <li>
             <a
               href={localizeHref(
-                locale,
                 `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
               )}
             >

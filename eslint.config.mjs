@@ -8,7 +8,7 @@ import tseslint from "typescript-eslint";
 export default defineConfig([
   {
     name: "ignores",
-    ignores: ["dist/**", ".astro/**", ".husky/**", "node_modules/**"],
+    ignores: ["dist/**", ".astro/**", "node_modules/**"],
   },
 
   js.configs.recommended,

@@ -7,10 +7,8 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import roadmapData from "@/data/roadmap";
-import { createTInstance, getLocale } from "@/i18n/utils";
 
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+const { t } = Astro.locals;
 const { items, history } = roadmapData;
 ---
 
@@ -28,7 +26,7 @@ const { items, history } = roadmapData;
             <span class="label-dot active"></span>
             <h2>{t("roadmap:status.inProgress")}</h2>
           </header>
-          <StatusSection items={items} status="in-progress" t={t} />
+          <StatusSection items={items} status="in-progress" />
         </div>
 
         <div class="kanban-column">
@@ -36,7 +34,7 @@ const { items, history } = roadmapData;
             <span class="label-dot upcoming"></span>
             <h2>{t("roadmap:status.upcoming")}</h2>
           </header>
-          <StatusSection items={items} status="upcoming" t={t} />
+          <StatusSection items={items} status="upcoming" />
         </div>
 
         <div class="kanban-column proposed">
@@ -44,14 +42,14 @@ const { items, history } = roadmapData;
             <span class="label-dot proposed"></span>
             <h2>{t("roadmap:status.proposed")}</h2>
           </header>
-          <StatusSection items={items} status="proposed" t={t} />
+          <StatusSection items={items} status="proposed" />
         </div>
       </section>
 
       <hr aria-hidden="true" />
 
       <PageSection title={t("roadmap:history.title")} anchorId="history">
-        <HistoryTimeline history={history} t={t} />
+        <HistoryTimeline history={history} />
       </PageSection>
     </div>
   </PageContainer>

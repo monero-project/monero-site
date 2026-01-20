@@ -1,7 +1,6 @@
 ---
 import { getPublicImageDimensions } from "@/utils/image";
 import { Image } from "astro:assets";
-import type { TFunction } from "i18next";
 
 export interface Props {
   exchanges: Array<{
@@ -18,10 +17,10 @@ export interface Props {
     userFriendly?: boolean;
   }>;
   hasKyc: boolean;
-  t: TFunction;
 }
 
-const { exchanges, hasKyc, t } = Astro.props;
+const { exchanges, hasKyc } = Astro.props;
+const { t } = Astro.locals;
 
 if (!exchanges) {
   throw new Error("ExchangeTable component requires 'exchanges' prop.");

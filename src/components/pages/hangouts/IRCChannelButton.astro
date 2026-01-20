@@ -2,19 +2,17 @@
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import matrixIcon from "@/assets/icons/mask/matrix.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { getDirection, getLocale } from "@/i18n/utils";
-import type { TFunction } from "i18next";
 
 export interface Props {
   name: string;
   description: string;
   href: string;
   matrixHref?: string;
-  t: TFunction;
 }
 
-const { name, description, href, matrixHref, t } = Astro.props;
-const rtl = getDirection(getLocale(Astro.url)) === "rtl";
+const { name, description, href, matrixHref } = Astro.props;
+const { t, dir } = Astro.locals;
+const rtl = dir === "rtl";
 
 // Split channel name into prefix (muted) and suffix (highlighted)
 const parseChannelName = (channelName: string) => {
