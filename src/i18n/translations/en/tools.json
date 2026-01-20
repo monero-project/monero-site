@@ -38,9 +38,7 @@
                 "moneroFail": "Comprehensive node list and network map",
                 "ditatompel": "Monero remote node list",
                 "moneroHashNodes": "Interactive Monero node map",
-                "txStreet": "Live transaction and block visualizer",
-                "nowNodes": "Blockchain node APIs for developers",
-                "getBlock": "Blockchain nodes provider"
+                "txStreet": "Live transaction and block visualizer"
             },
             "utilities": {
                 "llcoins": "Offline wallet and address generator",

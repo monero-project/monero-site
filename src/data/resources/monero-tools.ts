@@ -84,16 +84,6 @@ export const networkTools: Tool[] = [
     title: "TxStreet",
     href: "https://txstreet.com/v/xmr",
   },
-  {
-    id: "nowNodes",
-    title: "NOWNodes",
-    href: "https://nownodes.io",
-  },
-  {
-    id: "getBlock",
-    title: "GetBlock",
-    href: "https://getblock.io",
-  },
 ];
 
 export const utilities: Tool[] = [

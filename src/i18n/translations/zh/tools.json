@@ -38,9 +38,7 @@
                 "moneroFail": "全面的节点列表和网络地图",
                 "ditatompel": "Monero 远程节点列表",
                 "moneroHashNodes": "交互式 Monero 节点地图",
-                "txStreet": "实时交易和区块可视化工具",
-                "nowNodes": "面向开发者的区块链节点 API",
-                "getBlock": "区块链节点提供商"
+                "txStreet": "实时交易和区块可视化工具"
             },
             "utilities": {
                 "llcoins": "离线钱包和地址生成器",
