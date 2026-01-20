@@ -31,7 +31,7 @@
                 "moneroHash": "Popular Monero block explorer",
                 "xmrchain": "Popular open-source Monero block explorer",
                 "localMonero": "Block explorer by LocalMonero",
-                "monerowat": "Monero block explorer",
+                "moneroWatch": "Monero block explorer",
                 "xmrmx": "Monero block explorer"
             },
             "network": {
