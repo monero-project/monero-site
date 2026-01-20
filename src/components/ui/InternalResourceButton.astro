@@ -24,7 +24,7 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
       )}
 
       <div class="info-content">
-        <p class="info-title">{title}</p>
+        <span class="info-title">{title}</span>
         <div class="info-description">
           <slot />
         </div>
@@ -60,7 +60,7 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 <style>
   .info-bar {
     position: relative;
-    padding: 1rem;
+    padding: 0.75rem;
     margin: 1rem 0;
     background: var(--card-color);
     border-radius: 0.5rem;
@@ -89,7 +89,7 @@ const rtl = getDirection(getLocale(Astro.url)) === "rtl";
     margin: 0;
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-semibold);
-    color: var(--text-primary);
+    color: var(--heading-color);
   }
 
   .info-description {
