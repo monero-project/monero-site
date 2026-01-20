@@ -16,6 +16,10 @@
     "freebsd": "FreeBSD",
     "ios": "iOS"
   },
+  "communityNote": {
+    "title": "寻找更多钱包？",
+    "content": "访问社区选项卡，查看移动钱包和其他社区创建的软件。"
+  },
   "core": {
     "gui": {
       "title": "Monero GUI 钱包",

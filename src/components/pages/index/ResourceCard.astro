@@ -12,17 +12,11 @@ export interface Props {
   icon?: ImageMetadata;
   title: string;
   description?: string;
-  ctaLabel?: string;
-  ctaHref?: string;
+  ctaLabel: string;
+  ctaHref: string;
 }
 
-const {
-  icon = null,
-  title,
-  description = "",
-  ctaLabel = "Learn more",
-  ctaHref = "#",
-} = Astro.props;
+const { icon = null, title, description = "", ctaLabel, ctaHref } = Astro.props;
 const rtl = getDirection(getLocale(Astro.url)) === "rtl";
 const safeMarkdown = createSafeMarkdown(getLocale(Astro.url));
 ---

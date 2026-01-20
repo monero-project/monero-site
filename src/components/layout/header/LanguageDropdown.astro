@@ -9,7 +9,7 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import Globe from "@/assets/icons/mask/globe.avif";
 
 interface Props {
-  t?: TFunction;
+  t: TFunction;
 }
 
 const { t } = Astro.props;
@@ -24,8 +24,7 @@ const localeList = Object.keys(locales).map((code) => {
 <details class="lang-container">
   <summary
     class="lang"
-    aria-label={t?.("common:components.languageDropdown.changeLanguage") ||
-      "Change language"}
+    aria-label={t("common:components.languageDropdown.changeLanguage")}
     aria-haspopup="true"
     role="button"
   >
@@ -34,8 +33,7 @@ const localeList = Object.keys(locales).map((code) => {
 
   <div
     class="lang-dropdown"
-    aria-label={t?.("common:components.languageDropdown.languages") ||
-      "Languages"}
+    aria-label={t("common:components.languageDropdown.languages")}
   >
     <ul class="lang-list">
       {

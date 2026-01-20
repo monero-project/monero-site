@@ -76,7 +76,7 @@ const t = await createTInstance(locale);
           channels.map((ch) => (
             <li>
               <IRCChannelButton
-                name={t(ch.nameKey)}
+                name={ch.name}
                 description={t(ch.descriptionKey)}
                 href={ch.href}
                 matrixHref={ch.matrixHref}

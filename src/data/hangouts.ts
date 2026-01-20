@@ -13,7 +13,7 @@ export interface SocialLink {
 }
 
 export interface IRCChannel {
-  nameKey: string;
+  name: string;
   descriptionKey: string;
   href: string;
   matrixHref: string;
@@ -55,37 +55,37 @@ export const socialLinks: SocialLink[] = [
 
 export const channels: IRCChannel[] = [
   {
-    nameKey: "hangouts:channels.monero.name",
+    name: "#monero",
     descriptionKey: "hangouts:channels.monero.description",
     href: "https://web.libera.chat/#monero",
     matrixHref: "https://matrix.to/#/#monero:monero.social",
   },
   {
-    nameKey: "hangouts:channels.community.name",
+    name: "#monero-community",
     descriptionKey: "hangouts:channels.community.description",
     href: "https://web.libera.chat/#monero-community",
     matrixHref: "https://matrix.to/#/#monero-community:monero.social",
   },
   {
-    nameKey: "hangouts:channels.markets.name",
+    name: "#monero-markets",
     descriptionKey: "hangouts:channels.markets.description",
     href: "https://web.libera.chat/#monero-markets",
     matrixHref: "https://matrix.to/#/#monero-markets:monero.social",
   },
   {
-    nameKey: "hangouts:channels.offtopic.name",
+    name: "#monero-offtopic",
     descriptionKey: "hangouts:channels.offtopic.description",
     href: "https://web.libera.chat/#monero-offtopic",
     matrixHref: "https://matrix.to/#/#monero-offtopic:monero.social",
   },
   {
-    nameKey: "hangouts:channels.mining.name",
+    name: "#monero-mining",
     descriptionKey: "hangouts:channels.mining.description",
     href: "https://web.libera.chat/#monero-mining",
     matrixHref: "https://matrix.to/#/#monero-mining:monero.social",
   },
   {
-    nameKey: "hangouts:channels.support.name",
+    name: "#monero-support",
     descriptionKey: "hangouts:channels.support.description",
     href: "https://web.libera.chat/#monero-support",
     matrixHref: "https://matrix.to/#/#monero-support:monero.social",

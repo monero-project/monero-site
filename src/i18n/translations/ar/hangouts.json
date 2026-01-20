@@ -36,27 +36,21 @@
   "channels": {
     "title": "قنوات IRC",
     "monero": {
-      "name": "#monero",
       "description": "مناقشة كل شيء متعلق بـ Monero"
     },
     "community": {
-      "name": "#monero-community",
       "description": "التجمع ومناقشة الأفكار"
     },
     "markets": {
-      "name": "#monero-markets",
       "description": "سعر Monero والعملات الأخرى"
     },
     "offtopic": {
-      "name": "#monero-offtopic",
       "description": "أشياء غير متعلقة بـ Monero"
     },
     "mining": {
-      "name": "#monero-mining",
       "description": "أسئلة التعدين ومناقشتها"
     },
     "support": {
-      "name": "#monero-support",
       "description": "احصل على مساعدة من المستخدمين ذوي الخبرة"
     }
   }

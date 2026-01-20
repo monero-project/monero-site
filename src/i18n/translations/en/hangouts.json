@@ -36,27 +36,21 @@
   "channels": {
     "title": "IRC Channels",
     "monero": {
-      "name": "#monero",
       "description": "Discuss all things Monero related"
     },
     "community": {
-      "name": "#monero-community",
       "description": "Congregate and discuss ideas"
     },
     "markets": {
-      "name": "#monero-markets",
       "description": "Price of Monero and other coins"
     },
     "offtopic": {
-      "name": "#monero-offtopic",
       "description": "Things not related to Monero"
     },
     "mining": {
-      "name": "#monero-mining",
       "description": "Mining questions and discussion"
     },
     "support": {
-      "name": "#monero-support",
       "description": "Get help from experienced users"
     }
   }

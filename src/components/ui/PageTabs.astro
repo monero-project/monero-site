@@ -8,7 +8,7 @@ interface Props {
   id?: string; // Optional stable id if multiple components on a page
   initial?: number; // 0-based default tab
   activeIndex?: number; // 0-based active tab for navigation mode
-  t?: TFunction;
+  t: TFunction;
 }
 
 const {
@@ -19,9 +19,6 @@ const {
   activeIndex,
   t,
 }: Props = Astro.props;
-const tabSelectionLabel = t
-  ? t("common:components.pageTabs.tabSelection")
-  : "Tab selection";
 if (!Array.isArray(labels) || labels.length === 0) {
   throw new Error("<PageTabs> needs a non-empty labels array.");
 }
@@ -56,7 +53,9 @@ const active = I(initial);
     ) : (
       <>
         <fieldset>
-          <legend class="sr-only">{tabSelectionLabel}</legend>
+          <legend class="sr-only">
+            {t("common:components.pageTabs.tabSelection")}
+          </legend>
           {labels.map((_, i) => (
             <input
               type="radio"

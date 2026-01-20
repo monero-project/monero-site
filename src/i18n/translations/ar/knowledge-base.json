@@ -34,14 +34,14 @@
     }
   },
   "moneropedia": {
-    "pageTitle": "Moneropedia",
-    "title": "Moneropedia",
+    "pageTitle": "مونيروبيديا",
+    "title": "مونيروبيديا",
     "cardSubtitle": "قاموس شامل لمصطلحات Monero والمفاهيم والشروحات الفنية.",
     "subtitle": "قاموس شامل لمصطلحات Monero و blockchain.",
-    "searchPlaceholder": "ابحث في Moneropedia...",
+    "searchPlaceholder": "ابحث في مونيروبيديا...",
     "readMore": "اقرأ المقالة الكاملة",
     "aria": {
-      "navBar": "شريط تنقل Moneropedia"
+      "navBar": "شريط تنقل مونيروبيديا"
     }
   },
   "researchLab": {

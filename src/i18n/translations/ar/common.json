@@ -117,7 +117,7 @@
       "resources": {
         "knowledgeBase": {
           "label": "قاعدة المعرفة",
-          "desc": "الكتب والمنشورات والمجلات، Moneropedia."
+          "desc": "الكتب والمنشورات والمجلات، مونيروبيديا."
         },
         "roadmap": {
           "label": "خارطة الطريق",
@@ -148,7 +148,7 @@
         "title": "الموارد",
         "links": {
           "aboutMonero": "حول Monero",
-          "moneropedia": "Moneropedia",
+          "moneropedia": "مونيروبيديا",
           "knowledgeBase": "قاعدة المعرفة",
           "exchanges": "البورصات",
           "merchants": "التجار",
