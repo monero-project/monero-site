@@ -52,10 +52,10 @@ const hasButtonsSlot = Astro.slots.has("buttons");
 
 <style>
   .cta-card {
-    margin-top: 2rem;
-    padding: 1.5rem;
+    margin-top: var(--space-2xl);
+    padding: var(--space-xl);
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     border-end-start-radius: 0;
     border-start-start-radius: 0;
     border-inline-start: 3px solid var(--monero-orange);
@@ -68,7 +68,7 @@ const hasButtonsSlot = Astro.slots.has("buttons");
       ".    description"
       ".    link";
     grid-template-columns: auto 1fr;
-    column-gap: 1rem;
+    column-gap: var(--space-md);
   }
 
   .cta-icon {
@@ -92,9 +92,9 @@ const hasButtonsSlot = Astro.slots.has("buttons");
     flex-direction: column;
     grid-area: description;
     color: var(--paragraph-main);
-    margin: 0.5rem 0 1rem 0;
+    margin: var(--space-xs) 0 var(--space-md) 0;
     line-height: var(--line-height-body);
-    gap: 0.75rem;
+    gap: var(--space-sm);
     max-width: 75ch;
   }
 
@@ -114,7 +114,7 @@ const hasButtonsSlot = Astro.slots.has("buttons");
     border-inline-start: unset;
     border-start-start-radius: unset;
     border-start-end-radius: unset;
-    border-end-start-radius: 0.5rem;
+    border-end-start-radius: var(--radius-md);
     border-block-start: 3px solid var(--monero-orange);
     display: grid;
     grid-template-areas:
@@ -123,7 +123,7 @@ const hasButtonsSlot = Astro.slots.has("buttons");
       "link";
     grid-template-columns: unset;
     justify-items: center;
-    row-gap: 0.5rem;
+    row-gap: var(--space-xs);
   }
   .cta-card.centered.has-icon {
     grid-template-areas:
@@ -140,7 +140,7 @@ const hasButtonsSlot = Astro.slots.has("buttons");
   .cta-card.centered .cta-link {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--space-md);
     flex-wrap: wrap;
   }
 </style>

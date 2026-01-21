@@ -24,7 +24,9 @@ const { t, localizeHref } = Astro.locals;
       title={t("index:aboutTitle")}
       description={t("index:aboutDescription")}
     >
-      <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <div
+        style="display: flex; flex-direction: column; gap: var(--space-2xl);"
+      >
         <div>
           <h2 style="margin-top: 0;">{t("index:main")}</h2>
           <p>
@@ -155,7 +157,7 @@ const { t, localizeHref } = Astro.locals;
   #resource-container {
     grid-column: span 2;
     display: grid;
-    gap: 2rem;
+    gap: var(--space-2xl);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
@@ -163,7 +165,7 @@ const { t, localizeHref } = Astro.locals;
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    border-radius: 1rem;
+    border-radius: var(--radius-xl);
     border: 1px solid var(--border-color);
     overflow: hidden;
   }
@@ -197,7 +199,6 @@ const { t, localizeHref } = Astro.locals;
     top: 3rem;
     inset-inline-start: 5rem;
     inset-inline-end: 5rem;
-    z-index: 5;
     min-height: var(--hero-min-height);
   }
 

@@ -23,7 +23,7 @@ const { title, description = "", id, ...rest } = Astro.props;
   .card {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-2xl);
     padding-block: 3rem;
   }
   .head {
@@ -55,13 +55,13 @@ const { title, description = "", id, ...rest } = Astro.props;
   /* stack on small screens */
   @media (max-width: 900px) {
     .card {
-      gap: 1.25rem;
-      padding-block: 2rem;
+      gap: var(--space-lg);
+      padding-block: var(--space-2xl);
     }
     .head,
     .body {
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: var(--space-md);
     }
     .body {
       display: flex;

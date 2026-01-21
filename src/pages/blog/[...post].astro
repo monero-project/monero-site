@@ -123,7 +123,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
   .blog-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--space-2xl);
   }
 
   .blog-container > * {
@@ -132,8 +132,8 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
 
   .sidebar {
     border: 1px solid var(--border-color);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
     height: fit-content;
   }
 
@@ -148,18 +148,18 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-md);
   }
 
   .recent-posts li {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-xs);
   }
 
   .recent-posts .post-date {
     display: block;
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
-    margin-top: 0.25rem;
+    margin-top: var(--space-2xs);
   }
 
   .recent-posts .post-title {

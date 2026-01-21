@@ -97,15 +97,15 @@ const { dir, t, localizeHref } = Astro.locals;
   .addresses-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--space-md);
   }
 
   .fund-footer {
-    margin-top: 1.5rem;
+    margin-top: var(--space-xl);
   }
 
   .fund-note {
-    margin: 0 0 1rem;
+    margin: 0 0 var(--space-md);
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-body);
@@ -114,7 +114,7 @@ const { dir, t, localizeHref } = Astro.locals;
   .fund-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem 2rem;
+    gap: var(--space-xs) var(--space-2xl);
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
   }
@@ -133,7 +133,7 @@ const { dir, t, localizeHref } = Astro.locals;
   .meta-item code {
     background: var(--card-color);
     padding: 0.2em 0.5em;
-    border-radius: 0.25rem;
+    border-radius: var(--radius-sm);
     font-size: 0.9em;
     color: var(--heading-color);
   }

@@ -32,7 +32,7 @@ const {
       auto-fit,
       minmax(min(var(--min-col-width, 20rem), 100%), 1fr)
     );
-    gap: 2rem;
+    gap: var(--space-2xl);
   }
 
   .page-section-column {
@@ -41,7 +41,7 @@ const {
   }
 
   .column-title {
-    margin: 0 0 1rem;
+    margin: 0 0 var(--space-md);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     text-transform: uppercase;

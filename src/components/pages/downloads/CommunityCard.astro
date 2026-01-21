@@ -202,23 +202,23 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   .community-card {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-sm);
     background: var(--card-color);
-    border-radius: 1rem;
-    padding: 1rem;
+    border-radius: var(--radius-xl);
+    padding: var(--space-md);
     transition: background 0.3s ease;
   }
   .card-header {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: var(--space-sm);
   }
   .card-logo {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
     overflow: hidden;
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
   }
   .card-logo img {
     width: 100%;
@@ -237,7 +237,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   .card-description {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     height: 100%;
   }
   .card-description-text {
@@ -249,7 +249,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   .list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: var(--space-2xs);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -257,9 +257,9 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   .pill {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 999px;
+    gap: var(--space-2xs);
+    padding: var(--space-2xs) var(--space-xs);
+    border-radius: var(--radius-full);
     background: var(--card-hover-color);
     font-size: var(--font-size-sm);
     color: var(--paragraph-main);
@@ -272,13 +272,13 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   .card-platforms {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    padding-top: 0.5rem;
+    gap: var(--space-2xs);
+    padding-top: var(--space-xs);
   }
   .platform-row {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     align-items: start;
   }
   .platforms-label {
@@ -292,7 +292,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   .visit-link {
     display: inline-flex;
     align-items: center;
-    margin-top: 0.25rem;
+    margin-top: var(--space-2xs);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
     color: var(--monero-orange);

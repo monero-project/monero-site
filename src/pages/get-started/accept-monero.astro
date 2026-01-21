@@ -182,8 +182,8 @@ const { t, dir, localizeHref, localizeNumber } = Astro.locals;
   .service-buttons {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
   }
 
   .service-buttons :global(.external-resource-button) {
@@ -196,7 +196,7 @@ const { t, dir, localizeHref, localizeNumber } = Astro.locals;
     gap: 0.375em;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
-    margin-top: 0.5rem;
+    margin-top: var(--space-xs);
   }
 
   .inline-link:hover {

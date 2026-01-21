@@ -77,11 +77,11 @@ const getLanguageName = (targetLocale: string): string => {
   .book-card {
     display: flex;
     flex-direction: row;
-    gap: 1.25rem;
+    gap: var(--space-lg);
     min-width: 0;
     background: var(--card-color);
-    border-radius: 0.75rem;
-    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
     border: 1px solid var(--border-color);
     overflow: hidden;
   }
@@ -92,7 +92,7 @@ const getLanguageName = (targetLocale: string): string => {
     flex-shrink: 0;
     aspect-ratio: 2 / 3;
     background: var(--background-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     overflow: hidden;
   }
 
@@ -163,11 +163,11 @@ const getLanguageName = (targetLocale: string): string => {
 
   .book-footer {
     margin-top: auto;
-    padding-top: 0.75rem;
+    padding-top: var(--space-sm);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.75rem 1.5rem;
+    gap: var(--space-sm) var(--space-xl);
   }
 
   .book-link {
@@ -187,7 +187,7 @@ const getLanguageName = (targetLocale: string): string => {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.35rem;
+    gap: var(--space-2xs);
     font-size: var(--font-size-sm);
   }
 

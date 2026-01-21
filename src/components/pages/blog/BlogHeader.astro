@@ -81,10 +81,10 @@ const date = localizeDateString(dateString, {
   #meta {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: var(--space-2xl);
     color: var(--text-secondary);
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-xl);
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-normal);
   }
@@ -92,7 +92,7 @@ const date = localizeDateString(dateString, {
   .meta-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
   }
 
   .meta-item > .icon {
@@ -103,16 +103,16 @@ const date = localizeDateString(dateString, {
 
   .tag-container {
     display: flex;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     font-size: var(--font-size-sm);
     flex-wrap: wrap;
   }
 
   .tag {
     text-align: center;
-    padding: 0.25rem 0.75rem;
+    padding: var(--space-2xs) var(--space-sm);
     background: var(--footer-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     text-transform: uppercase;
     font-weight: var(--font-weight-semibold);
     text-decoration: none;
@@ -129,7 +129,7 @@ const date = localizeDateString(dateString, {
       flex-direction: column;
       font-size: var(--font-size-md);
       font-weight: var(--font-weight-medium);
-      gap: 1rem;
+      gap: var(--space-md);
     }
 
     .meta-item > .icon {

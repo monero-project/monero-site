@@ -54,8 +54,8 @@ const rtl = Astro.locals.dir === "rtl";
   .back-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.625rem;
-    margin-bottom: 1rem;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     color: var(--paragraph-subtitle);
@@ -75,7 +75,7 @@ const rtl = Astro.locals.dir === "rtl";
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    border-radius: 999px;
+    border-radius: var(--radius-full);
     background: var(--card-color);
     transition: background 0.15s ease;
   }

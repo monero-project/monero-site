@@ -131,7 +131,7 @@ if (!exchanges) {
 <style>
   .table-wrap {
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     overflow: hidden;
   }
 
@@ -165,14 +165,14 @@ if (!exchanges) {
     grid-template-areas:
       "icon name"
       "icon desc";
-    column-gap: 0.5rem;
+    column-gap: var(--space-xs);
     align-items: flex-start;
   }
 
   .exchange-icon {
     grid-area: icon;
     width: 3em;
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     vertical-align: middle;
     flex-shrink: 0;
   }
@@ -224,7 +224,7 @@ if (!exchanges) {
     .exchange-table :is(th, td):not(:first-child) {
       white-space: nowrap;
       text-align: center;
-      padding-inline: 1.5rem;
+      padding-inline: var(--space-xl);
     }
 
     .visit-cell {
@@ -265,14 +265,14 @@ if (!exchanges) {
       display: flex;
       flex-wrap: wrap;
       padding: 0.75rem 0.9rem;
-      margin-bottom: 0.75rem;
-      border-radius: 0.75rem;
+      margin-bottom: var(--space-sm);
+      border-radius: var(--radius-lg);
       background: var(--card-color);
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow-xs);
     }
 
     .exchange-description {
-      margin-top: 0.5rem;
+      margin-top: var(--space-xs);
     }
 
     /* row separators are handled by cards now */
@@ -294,8 +294,8 @@ if (!exchanges) {
       grid-template-areas:
         "icon name"
         "desc desc";
-      margin-bottom: 0.5rem;
-      column-gap: 0.75rem;
+      margin-bottom: var(--space-xs);
+      column-gap: var(--space-sm);
       align-items: center;
     }
 
@@ -308,14 +308,14 @@ if (!exchanges) {
       flex: 0 0 auto;
       display: inline-flex;
       align-items: center;
-      padding: 0.25rem 0.5rem;
+      padding: 0.25rem var(--space-xs);
       margin: 0 0.4rem 0.4rem 0;
-      border-radius: 999px;
+      border-radius: var(--radius-full);
       font-size: var(--font-size-sm);
       background: var(--card-hover-color);
       line-height: 1;
       white-space: nowrap;
-      gap: 0.35rem;
+      gap: var(--space-2xs);
     }
 
     .pill::before {
@@ -336,7 +336,7 @@ if (!exchanges) {
     .visit-cell::before {
       content: "";
       display: block;
-      margin-bottom: 1rem;
+      margin-bottom: var(--space-md);
     }
 
     .visit-cell a {

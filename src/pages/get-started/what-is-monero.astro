@@ -400,14 +400,14 @@ const getLanguageLabel = (lang: string): string => {
     line-height: var(--line-height-body);
   }
   :where(.feature-item) {
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
   }
 
   .video-container {
     position: relative;
     width: min(100%, 854px);
     aspect-ratio: 16/9;
-    border-radius: 1rem;
+    border-radius: var(--radius-xl);
     border: 1px solid var(--border-color);
     overflow: hidden;
     margin: 0 auto;
@@ -422,14 +422,14 @@ const getLanguageLabel = (lang: string): string => {
   .card-item {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--space-md);
     align-items: center;
-    margin-block: 2rem;
+    margin-block: var(--space-2xl);
   }
   .card-item h2 {
     font-size: var(--font-size-3xl);
     color: var(--heading-color);
-    margin-top: 0.5rem;
+    margin-top: var(--space-xs);
   }
   .card-item p {
     font-size: var(--font-size-lg);
@@ -449,11 +449,11 @@ const getLanguageLabel = (lang: string): string => {
   .use-cases-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-2xl);
   }
   .use-case-item {
     display: flex;
-    gap: 1rem;
+    gap: var(--space-md);
     align-items: flex-start;
   }
   .use-case-item h3 {
@@ -469,12 +469,12 @@ const getLanguageLabel = (lang: string): string => {
   .feature-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--space-2xl);
     justify-content: center;
   }
   .feature-item {
     border: 1px solid var(--border-color);
-    padding: 1.5rem;
+    padding: var(--space-xl);
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -492,7 +492,7 @@ const getLanguageLabel = (lang: string): string => {
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
     margin-top: auto;
-    padding-top: 2rem;
+    padding-top: var(--space-2xl);
   }
   .feature-item .based-on a {
     color: var(--monero-orange);
@@ -508,16 +508,16 @@ const getLanguageLabel = (lang: string): string => {
   .feature-item .icon {
     width: 2rem;
     height: 2rem;
-    padding: 1rem;
+    padding: var(--space-md);
     border: 1px solid var(--border-color);
-    border-radius: 999px;
+    border-radius: var(--radius-full);
   }
 
   .community-cta-links {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: var(--space-2xl);
+    margin-top: var(--space-2xl);
   }
   .community-cta-links a {
     display: inline-flex;
@@ -528,7 +528,7 @@ const getLanguageLabel = (lang: string): string => {
   }
 
   .final-cta {
-    padding-block: 2rem;
+    padding-block: var(--space-2xl);
   }
   .final-cta :global(.cta-title) {
     font-size: var(--font-size-3xl);
@@ -569,7 +569,7 @@ const getLanguageLabel = (lang: string): string => {
 
     .community-cta-links {
       flex-direction: row;
-      gap: 1rem;
+      gap: var(--space-md);
       flex-wrap: wrap;
     }
   }

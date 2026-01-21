@@ -65,7 +65,7 @@ const localeList = Object.keys(locales).map((code) => {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.5rem 0;
+    padding: var(--space-xs) 0;
     border: 0;
     background: transparent;
     vertical-align: middle;
@@ -83,12 +83,12 @@ const localeList = Object.keys(locales).map((code) => {
     inset-block-start: 100%;
 
     background: var(--card-color);
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: var(--shadow-md);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
 
-    z-index: 999;
+    z-index: var(--z-overlay);
     padding-inline: clamp(1rem, 4vw, 4rem);
-    padding-block: 0 1rem;
+    padding-block: 0 var(--space-md);
     user-select: none;
 
     max-height: 75dvh;
@@ -108,7 +108,7 @@ const localeList = Object.keys(locales).map((code) => {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: var(--space-2xs);
   }
 
   .lang-list li {
@@ -117,10 +117,10 @@ const localeList = Object.keys(locales).map((code) => {
 
   .lang-list a {
     display: block;
-    padding: 0.75rem; /* larger tap targets */
+    padding: var(--space-sm);
     color: var(--heading-color);
     text-decoration: none;
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
   }
 
   .lang-list a:hover,
@@ -156,19 +156,19 @@ const localeList = Object.keys(locales).map((code) => {
       inset-inline-end: 0;
       inset-block-start: 100%;
 
-      margin-top: 0.5rem;
-      padding: 0.75rem;
+      margin-top: var(--space-xs);
+      padding: var(--space-sm);
       min-width: 140px;
 
-      border-radius: 0.75rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
 
       max-height: none;
       overflow: visible;
     }
 
     .lang-list a {
-      padding: 0.5rem 0.75rem;
+      padding: var(--space-xs) var(--space-sm);
     }
   }
 </style>

@@ -63,7 +63,7 @@ const { prefix, suffix } = parseChannelName(name);
     display: flex;
     align-items: stretch;
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     overflow: hidden;
     transition: background 0.15s ease;
   }
@@ -77,8 +77,8 @@ const { prefix, suffix } = parseChannelName(name);
     flex: 1;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 0.875rem 1rem;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
     text-decoration: none;
   }
 
@@ -86,7 +86,7 @@ const { prefix, suffix } = parseChannelName(name);
     flex: 1;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: var(--space-sm);
     min-width: 0;
   }
 
@@ -114,7 +114,7 @@ const { prefix, suffix } = parseChannelName(name);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: 0.5rem;
+    padding-inline: var(--space-xs);
     border-inline-start: 1px solid var(--border-color);
     color: var(--paragraph-subtitle);
     transition:

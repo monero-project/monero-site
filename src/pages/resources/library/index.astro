@@ -138,7 +138,7 @@ const sections = [
 <style>
   .section-intro {
     color: var(--paragraph-subtitle);
-    margin-block: 0 1.5rem;
+    margin-block: 0 var(--space-xl);
     max-width: 70ch;
     line-height: var(--line-height-body);
   }
@@ -146,7 +146,7 @@ const sections = [
   .books-shelf {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: var(--space-md);
   }
 
   @media (max-width: 900px) {
@@ -156,11 +156,11 @@ const sections = [
   }
 
   .cheatsheet-intro {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-xl);
   }
 
   .salmon-title {
-    margin-block: 0.5rem;
+    margin-block: var(--space-xs);
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--heading-color);
@@ -169,14 +169,14 @@ const sections = [
   .cheatsheets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
-    gap: 1rem;
+    gap: var(--space-md);
   }
 
   .cheatsheet-card {
     display: flex;
     flex-direction: column;
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     overflow: hidden;
     text-decoration: none;
   }
@@ -187,7 +187,7 @@ const sections = [
 
   .cheatsheet-visual {
     background: var(--background-color);
-    padding: 1.5rem;
+    padding: var(--space-xl);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,11 +196,11 @@ const sections = [
 
   .cheatsheet-content {
     flex: 1;
-    padding: 1rem 1.25rem;
+    padding: var(--space-md) var(--space-lg);
   }
 
   .cheatsheet-title {
-    margin: 0 0 0.35rem;
+    margin: 0 0 var(--space-2xs);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     color: var(--heading-color);
@@ -214,7 +214,7 @@ const sections = [
   }
 
   .cheatsheet-action {
-    padding: 0.75rem 1.25rem;
+    padding: var(--space-sm) var(--space-lg);
     border-top: 1px solid var(--border-color);
     display: flex;
     align-items: center;
@@ -225,7 +225,7 @@ const sections = [
   .newsletters-grid {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-sm);
   }
 
   @media (max-width: 600px) {

@@ -132,7 +132,7 @@ const rtl = Astro.locals.dir === "rtl";
     align-items: center;
     user-select: none;
     white-space: nowrap;
-    padding-block: 1rem;
+    padding-block: var(--space-md);
     width: 100%;
   }
 
@@ -144,8 +144,8 @@ const rtl = Astro.locals.dir === "rtl";
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-inline-start: 0.35rem;
-    border-radius: 0.2rem;
+    margin-inline-start: var(--space-2xs);
+    border-radius: var(--radius-sm);
     transition: transform 0.2s ease;
   }
 
@@ -166,7 +166,6 @@ const rtl = Astro.locals.dir === "rtl";
     inset: 0;
     pointer-events: auto;
     cursor: pointer;
-    z-index: 1;
   }
 
   .mobile-close {
@@ -195,7 +194,7 @@ const rtl = Astro.locals.dir === "rtl";
     max-width: none;
     margin-inline: 0;
     padding-inline: 0;
-    padding-bottom: 1rem;
+    padding-bottom: var(--space-md);
     display: block;
   }
 
@@ -223,7 +222,6 @@ const rtl = Astro.locals.dir === "rtl";
       inset: 0;
       pointer-events: auto;
       cursor: pointer;
-      z-index: 1;
     }
   }
 
@@ -232,11 +230,11 @@ const rtl = Astro.locals.dir === "rtl";
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 1rem;
+    gap: var(--space-md);
     color: var(--heading-color);
     text-decoration: none;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
   }
 
   .dropdown-item:where(:hover, :focus-visible) {
@@ -295,8 +293,8 @@ const rtl = Astro.locals.dir === "rtl";
     }
 
     .row {
-      margin-block: -1rem 0.5rem;
-      padding-block: 1.5rem 0;
+      margin-block: calc(-1 * var(--space-md)) var(--space-xs);
+      padding-block: var(--space-xl) 0;
     }
 
     .link {
@@ -329,7 +327,7 @@ const rtl = Astro.locals.dir === "rtl";
       pointer-events: none;
       transform: translateY(-10px);
       transition: transform 0.2s ease;
-      z-index: 20;
+      z-index: var(--z-header);
     }
 
     .dropdown::before {
@@ -344,9 +342,9 @@ const rtl = Astro.locals.dir === "rtl";
 
     .dropdown-inner {
       background: var(--card-color);
-      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-      border-radius: 0 0 0.5rem 0.5rem;
-      padding-block: 0 1rem;
+      box-shadow: var(--shadow-md);
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      padding-block: 0 var(--space-md);
     }
 
     .dropdown-content {
@@ -357,7 +355,7 @@ const rtl = Astro.locals.dir === "rtl";
 
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem 1.5rem;
+      gap: var(--space-md) var(--space-xl);
     }
   }
 

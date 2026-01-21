@@ -35,10 +35,10 @@ const { sections, ariaLabel } = Astro.props;
   .toc {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-    gap: 1rem;
-    padding-bottom: 2rem;
+    gap: var(--space-md);
+    padding-bottom: var(--space-2xl);
     border-bottom: 1px solid var(--border-color);
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-2xl);
   }
 
   .toc-item-default {

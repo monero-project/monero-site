@@ -37,7 +37,7 @@ const { label } = Astro.props;
     cursor: pointer;
     display: flex;
     align-items: center;
-    border-radius: 22.5em;
+    border-radius: var(--radius-full);
   }
   .dropdown-summary::-webkit-details-marker {
     display: none;
@@ -46,7 +46,7 @@ const { label } = Astro.props;
   .caret {
     display: flex;
     align-items: center;
-    margin-inline-start: 0.5rem;
+    margin-inline-start: var(--space-xs);
     transition: transform 0.2s ease;
   }
   .dropdown[open] .caret {
@@ -59,17 +59,17 @@ const { label } = Astro.props;
     inset-block-start: 100%;
     inset-inline-start: 0;
     background: var(--card-color);
-    border-radius: 0.75rem;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-    z-index: 10;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    z-index: var(--z-dropdown);
     display: flex;
     flex-direction: column;
-    margin-block-start: 0.25rem;
+    margin-block-start: var(--space-2xs);
     min-width: 18rem;
     max-height: 25rem;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0.5rem;
+    padding: var(--space-xs);
     user-select: none;
 
     visibility: hidden;

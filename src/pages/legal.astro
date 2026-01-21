@@ -86,7 +86,7 @@ const renderedSections = await Promise.all(
   .prose :global(h3) {
     font-size: var(--font-size-lg);
     color: var(--heading-color);
-    margin: 2rem 0 0.75rem;
+    margin: var(--space-2xl) 0 var(--space-sm);
   }
 
   .prose :global(h3:first-child) {
@@ -94,10 +94,10 @@ const renderedSections = await Promise.all(
   }
 
   .prose :global(p) {
-    margin: 0 0 1rem;
+    margin: 0 0 var(--space-md);
   }
 
   .prose :global(li) {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-xs);
   }
 </style>

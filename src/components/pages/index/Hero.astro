@@ -56,16 +56,15 @@ const { t, localizeHref } = Astro.locals;
   .wrap {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-md);
     text-align: center;
     margin-inline: auto;
     position: relative;
-    z-index: 1;
   }
 
   /* Title scales smoothly from phones to desktop */
   .title {
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 var(--space-sm) 0;
     font-weight: var(--font-weight-extra-bold);
     letter-spacing: -0.015em;
     line-height: var(--line-height-title);
@@ -76,7 +75,7 @@ const { t, localizeHref } = Astro.locals;
   }
 
   .lead {
-    margin: 0 auto 1.5rem;
+    margin: 0 auto var(--space-xl);
     max-width: 50ch;
     line-height: var(--line-height-body);
     font-size: var(--font-size-xl);
@@ -87,10 +86,10 @@ const { t, localizeHref } = Astro.locals;
   .actions {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: var(--space-xl);
     justify-content: center;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: var(--space-xs);
     max-width: 100%;
   }
 
@@ -101,7 +100,7 @@ const { t, localizeHref } = Astro.locals;
   @media (max-width: 600px) {
     .actions {
       flex-direction: column;
-      gap: 0.75rem;
+      gap: var(--space-sm);
     }
     .hero-button {
       width: 100%;

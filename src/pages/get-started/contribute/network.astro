@@ -103,12 +103,12 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
   .feature-section {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: var(--space-xl);
     align-items: center;
   }
 
   hr {
-    margin-block: 2rem;
+    margin-block: var(--space-2xl);
   }
 
   .feature-section h2 {
@@ -132,10 +132,10 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
   .feature-section ul {
     margin: 1rem 0 0;
     padding: 0;
-    padding-inline-start: 1.25rem;
+    padding-inline-start: var(--space-lg);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     font-size: var(--font-size-lg);
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-body);
@@ -154,8 +154,8 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1rem 1.5rem;
-    margin-top: 1.5rem;
+    gap: var(--space-md) var(--space-xl);
+    margin-top: var(--space-xl);
   }
 
   .cta-links a {
@@ -181,7 +181,7 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
       position: relative;
       min-width: 0;
       align-self: stretch;
-      margin-block: 2rem;
+      margin-block: var(--space-2xl);
     }
 
     .media :global(img) {
@@ -192,7 +192,7 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
       object-fit: contain;
       object-position: center;
       display: block;
-      border-radius: 1rem;
+      border-radius: var(--radius-xl);
     }
 
     .feature-section.reverse .text {

@@ -31,18 +31,18 @@ const rtl = dir === "rtl";
 <style>
   .paper-card {
     background: var(--card-color);
-    border-radius: 0.5rem;
-    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--space-xs);
   }
 
   .paper-header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
   }
 
   .paper-code {
@@ -52,7 +52,7 @@ const rtl = dir === "rtl";
     font-family: var(--font-mono, monospace);
     background: color-mix(in srgb, var(--monero-orange) 12%, transparent);
     padding: 0.2em 0.5em;
-    border-radius: 0.25rem;
+    border-radius: var(--radius-sm);
   }
 
   .paper-badge {
@@ -95,7 +95,7 @@ const rtl = dir === "rtl";
 
   @media (max-width: 600px) {
     .paper-card {
-      padding: 1rem;
+      padding: var(--space-md);
     }
 
     .paper-title {

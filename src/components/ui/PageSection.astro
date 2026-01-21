@@ -59,7 +59,7 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
   }
 
   .page-section__header {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-xl);
   }
 
   .page-section__title {
@@ -71,14 +71,14 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
   }
 
   .page-section__subtitle {
-    margin: 0.5rem 0 0;
+    margin: var(--space-xs) 0 0;
     color: var(--paragraph-subtitle);
     max-width: 80ch;
   }
 
   @media screen and (min-width: 1200px) {
     .page-section__title {
-      scroll-margin-top: 2rem;
+      scroll-margin-top: var(--space-2xl);
     }
   }
 </style>

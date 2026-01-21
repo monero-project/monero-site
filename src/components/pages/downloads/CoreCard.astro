@@ -179,14 +179,14 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     display: flex;
     flex-direction: column;
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
   }
 
   .card-image {
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    border-start-start-radius: 0.5rem;
-    border-start-end-radius: 0.5rem;
+    border-start-start-radius: var(--radius-md);
+    border-start-end-radius: var(--radius-md);
     background: var(--card-hover-color);
   }
 
@@ -201,21 +201,21 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 1.5rem;
-    gap: 1rem;
+    padding: var(--space-xl);
+    gap: var(--space-md);
   }
 
   .card-header {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: var(--space-2xs);
   }
 
   .title-row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     flex-wrap: wrap;
   }
 
@@ -230,7 +230,7 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     font-weight: var(--font-weight-semibold);
     background: var(--secondary-button-color, var(--footer-color));
     padding: 0.25em 0.75em;
-    border-radius: 999px;
+    border-radius: var(--radius-full);
     white-space: nowrap;
   }
 
@@ -250,7 +250,7 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.375rem;
+    gap: var(--space-2xs);
   }
 
   .card-features li {
@@ -266,12 +266,12 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-sm);
   }
 
   .download-actions {
     display: flex;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     align-items: center;
     flex-wrap: wrap;
   }
@@ -286,21 +286,21 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
   }
 
   .torrent-split-button .torrent-button {
-    border-start-start-radius: 22.5rem;
-    border-end-start-radius: 22.5rem;
+    border-start-start-radius: var(--radius-full);
+    border-end-start-radius: var(--radius-full);
   }
 
   .torrent-split-button .magnet-button {
-    border-start-end-radius: 22.5rem;
-    border-end-end-radius: 22.5rem;
+    border-start-end-radius: var(--radius-full);
+    border-end-end-radius: var(--radius-full);
     margin-inline-start: 0.1rem;
   }
 
   .metadata-links {
-    margin-top: 0.5rem;
+    margin-top: var(--space-xs);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     font-size: var(--font-size-sm);
     flex-wrap: wrap;
   }
@@ -326,7 +326,7 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
   .dropdown-label {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
   }
 
   .platform-icon {

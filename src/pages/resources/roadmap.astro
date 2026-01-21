@@ -64,7 +64,7 @@ const { items, history } = roadmapData;
   .kanban {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: var(--space-xl);
     align-items: start;
   }
 
@@ -77,7 +77,7 @@ const { items, history } = roadmapData;
     display: flex;
     align-items: center;
     gap: 0.625rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
   }
 
   .section-label h2 {
@@ -123,7 +123,7 @@ const { items, history } = roadmapData;
   }
 
   .kanban-column:first-child :global(.status-item) {
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
     border-inline-start: 3px solid var(--monero-orange);
   }
 
@@ -144,7 +144,7 @@ const { items, history } = roadmapData;
   @media (max-width: 900px) {
     .kanban {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: var(--space-2xl);
     }
   }
 </style>

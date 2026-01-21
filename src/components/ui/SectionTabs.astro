@@ -98,16 +98,16 @@ const uid = `stabs-${crypto.randomUUID().slice(0, 8)}`;
 
   .tab-labels {
     display: flex;
-    gap: 0.25rem;
-    margin-bottom: 1.25rem;
+    gap: var(--space-2xs);
+    margin-bottom: var(--space-lg);
     border-bottom: 1px solid var(--border-color);
   }
 
   .tab-label {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
     color: var(--paragraph-subtitle);
@@ -129,7 +129,7 @@ const uid = `stabs-${crypto.randomUUID().slice(0, 8)}`;
     background: var(--border-color);
     color: var(--paragraph-subtitle);
     padding: 0.15em 0.5em;
-    border-radius: 1em;
+    border-radius: var(--radius-xl);
   }
 
   .tab-panels {
@@ -172,7 +172,7 @@ const uid = `stabs-${crypto.randomUUID().slice(0, 8)}`;
     }
 
     .tab-label {
-      padding: 0.625rem 0.75rem;
+      padding: var(--space-xs) var(--space-sm);
       white-space: nowrap;
     }
   }

@@ -81,23 +81,23 @@ const { t } = Astro.locals;
   .sponsors-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: var(--space-md);
   }
 
   .past-sponsors-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: var(--space-sm);
   }
 
   .past-sponsor-chip {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: var(--space-xs) var(--space-md);
     background: var(--card-color);
     color: var(--paragraph-subtitle);
     font-size: var(--font-size-sm);
     text-decoration: none;
-    border-radius: 0.375rem;
+    border-radius: var(--radius-sm);
     transition:
       background 0.15s ease,
       color 0.15s ease;

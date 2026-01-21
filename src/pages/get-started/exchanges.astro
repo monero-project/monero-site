@@ -254,7 +254,7 @@ const highlightOptions = [
   .exchanges-page-layout {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-2xl);
   }
   .main-content {
     flex: 1;
@@ -269,18 +269,18 @@ const highlightOptions = [
   .filters-description {
     color: var(--paragraph-subtitle);
     font-size: var(--font-size-md);
-    margin: 0.75rem 0 2rem;
+    margin: 0.75rem 0 var(--space-2xl);
   }
 
   .highlight-options {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-md);
   }
   .highlight-option {
     display: flex;
     border: 1px solid var(--border-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     background: var(--card-hover-color);
   }
   .highlight-option:hover {
@@ -348,15 +348,14 @@ const highlightOptions = [
     display: block;
     position: sticky;
     bottom: 0;
-    z-index: 2;
-    margin-top: 1.5rem;
-    margin-inline: -2rem;
+    margin-top: var(--space-xl);
+    margin-inline: calc(-1 * var(--space-2xl));
     background-color: var(--bg-color);
   }
 
   .mobile-filter-bar {
     display: block;
-    padding: 1rem;
+    padding: var(--space-md);
     background-color: var(--bg-color);
     border-top: 1px solid var(--border-color);
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
@@ -367,9 +366,9 @@ const highlightOptions = [
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.65rem 1rem;
-    border-radius: 999px;
+    gap: var(--space-xs);
+    padding: 0.65rem var(--space-md);
+    border-radius: var(--radius-full);
     background: var(--card-color);
     border: 1px solid var(--border-color);
     font-size: var(--font-size-base);
@@ -394,14 +393,13 @@ const highlightOptions = [
     right: 0;
     bottom: 0;
 
-    padding: 1rem 2rem;
-    padding-top: 2rem;
+    padding: var(--space-md) var(--space-2xl);
+    padding-top: var(--space-2xl);
     background: var(--card-color);
     border-radius: 1.25rem 1.25rem 0 0;
 
     max-height: 75vh;
     overflow-y: auto;
-    z-index: 3;
 
     transform: translateY(100%);
     transition:
@@ -445,7 +443,7 @@ const highlightOptions = [
     .filters-panel {
       position: sticky;
       top: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: var(--space-2xl);
       flex: 0 0 20rem;
       height: fit-content;
 
@@ -455,10 +453,8 @@ const highlightOptions = [
       overflow-y: unset;
       visibility: unset;
 
-      padding: 2rem;
-      border-radius: 0.5rem;
-
-      z-index: 1;
+      padding: var(--space-2xl);
+      border-radius: var(--radius-md);
     }
 
     .mobile-filter-container,

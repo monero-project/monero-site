@@ -49,8 +49,8 @@ const rtl = dir === "rtl";
 <style>
   .resource-card {
     border: 1px solid var(--border-color);
-    border-radius: 1rem;
-    padding: 2rem;
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -63,21 +63,21 @@ const rtl = dir === "rtl";
     border-radius: 50%;
     display: grid;
     place-items: center;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
+    margin-bottom: var(--space-xl);
+    padding: var(--space-xl);
     color: var(--monero-orange);
     background: light-dark(var(--card-color), transparent);
   }
 
   .title {
-    margin: 0 0 0.8rem;
+    margin: 0 0 var(--space-sm);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
   }
 
   .desc {
-    margin: 0 0 1.5rem;
+    margin: 0 0 var(--space-xl);
     line-height: var(--line-height-body);
     max-width: 45ch;
     color: var(--paragraph-subtitle);

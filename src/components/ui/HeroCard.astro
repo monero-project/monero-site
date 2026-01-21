@@ -38,11 +38,11 @@ const {
 <style>
   .hero-card {
     background: var(--card-color);
-    border-radius: 0.75rem;
-    padding: 2rem;
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 2.5rem;
+    gap: var(--space-3xl);
     align-items: center;
   }
 
@@ -61,7 +61,7 @@ const {
   .hero-card-content {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--space-xs);
   }
 
   .hero-card-title {
@@ -87,8 +87,8 @@ const {
 
   .hero-card-actions {
     display: flex;
-    gap: 0.75rem;
-    margin-top: 0.75rem;
+    gap: var(--space-sm);
+    margin-top: var(--space-sm);
     flex-wrap: wrap;
   }
 
@@ -102,8 +102,8 @@ const {
     .hero-card {
       grid-template-columns: 1fr;
       text-align: center;
-      padding: 1.5rem;
-      gap: 1.5rem;
+      padding: var(--space-xl);
+      gap: var(--space-xl);
     }
 
     .hero-card-image {

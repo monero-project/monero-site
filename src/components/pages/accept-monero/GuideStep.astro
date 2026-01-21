@@ -57,7 +57,7 @@ const { t } = Astro.locals;
   .guide-step {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: var(--space-4xl);
     align-items: center;
   }
 
@@ -76,11 +76,11 @@ const { t } = Astro.locals;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--monero-orange);
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-xs);
   }
 
   .step-title {
-    margin-block: 0 1.25rem;
+    margin-block: 0 var(--space-lg);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
@@ -90,7 +90,7 @@ const { t } = Astro.locals;
   .step-body {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-md);
   }
 
   .step-body :global(p) {
@@ -103,14 +103,14 @@ const { t } = Astro.locals;
   .step-body :global(ol),
   .step-body :global(ul) {
     margin: 0;
-    padding-inline-start: 1.5rem;
+    padding-inline-start: var(--space-xl);
     color: var(--paragraph-subtitle);
     line-height: 1.8;
   }
 
   .step-body :global(li) {
-    margin-bottom: 0.375rem;
-    padding-inline-start: 0.375rem;
+    margin-bottom: var(--space-2xs);
+    padding-inline-start: var(--space-2xs);
   }
 
   .step-body :global(li::marker) {
@@ -123,7 +123,7 @@ const { t } = Astro.locals;
     align-items: center;
     justify-content: center;
     background: var(--card-color);
-    border-radius: 1rem;
+    border-radius: var(--radius-xl);
     overflow: hidden;
     aspect-ratio: 4 / 3;
     border: 1px solid var(--border-color);
@@ -169,7 +169,7 @@ const { t } = Astro.locals;
   @media (max-width: 900px) {
     .guide-step {
       grid-template-columns: 1fr;
-      gap: 1.5rem;
+      gap: var(--space-xl);
     }
 
     .guide-step.reverse .step-content,

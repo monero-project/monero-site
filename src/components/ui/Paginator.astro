@@ -121,14 +121,14 @@ const hasNext = current < last;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    margin-top: 2rem;
+    gap: var(--space-xs);
+    margin-top: var(--space-2xl);
   }
 
   .pagination-list {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: var(--space-2xs);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -142,7 +142,7 @@ const hasNext = current < last;
     justify-content: center;
     min-width: 2.5rem;
     height: 2.5rem;
-    border-radius: 999px;
+    border-radius: var(--radius-full);
     text-decoration: none;
     font-size: var(--font-size-md);
     color: var(--heading-color);

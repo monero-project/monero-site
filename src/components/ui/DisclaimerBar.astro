@@ -26,11 +26,11 @@ const { icon, title } = Astro.props;
   .disclaimer-bar {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 0.5rem 0.75rem;
-    padding: 1rem;
-    margin: 1rem 0;
+    gap: var(--space-xs) var(--space-sm);
+    padding: var(--space-md);
+    margin: var(--space-md) 0;
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
   }
 
   .disclaimer-icon {

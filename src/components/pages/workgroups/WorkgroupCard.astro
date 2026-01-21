@@ -80,17 +80,17 @@ const { t } = Astro.locals;
 <style>
   .workgroup-card {
     background: var(--card-color);
-    border-radius: 0.625rem;
-    padding: 1rem;
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--space-xs);
   }
 
   .card-header {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
   }
 
   .card-icon {
@@ -100,7 +100,7 @@ const { t } = Astro.locals;
     align-items: center;
     justify-content: center;
     background: color-mix(in srgb, var(--monero-orange) 12%, transparent);
-    border-radius: 0.375rem;
+    border-radius: var(--radius-sm);
     color: var(--monero-orange);
     flex-shrink: 0;
   }
@@ -132,7 +132,7 @@ const { t } = Astro.locals;
   .card-links {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     margin-top: auto;
     padding-top: 0.25rem;
     flex-wrap: wrap;
@@ -142,9 +142,9 @@ const { t } = Astro.locals;
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
-    padding: 0.5rem 0.75rem;
+    padding: var(--space-xs) var(--space-sm);
     background: var(--card-hover-color);
-    border-radius: 0.375rem;
+    border-radius: var(--radius-sm);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
     color: var(--heading-color);
@@ -166,7 +166,7 @@ const { t } = Astro.locals;
   .irc-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
   }

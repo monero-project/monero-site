@@ -20,12 +20,12 @@ const { text } = Astro.props;
   .disclaimer-note {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-block: 0.75rem;
-    padding: 0.5rem;
+    gap: var(--space-xs);
+    margin-block: var(--space-sm);
+    padding: var(--space-xs);
     background: rgba(255, 152, 0, 0.05);
     border: 1px solid rgba(255, 152, 0, 0.2);
-    border-radius: 0.25rem;
+    border-radius: var(--radius-sm);
     font-size: var(--font-size-sm);
     color: var(--text-primary);
   }

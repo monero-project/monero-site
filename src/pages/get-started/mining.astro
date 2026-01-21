@@ -204,7 +204,7 @@ const faqItems = faqToItems(
     .card-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
+      gap: var(--space-lg);
     }
 
     .resourceList {
@@ -212,7 +212,7 @@ const faqItems = faqToItems(
       padding: 0;
       list-style: none;
       display: grid;
-      gap: 0.75rem;
+      gap: var(--space-sm);
     }
 
     @media (max-width: 900px) {

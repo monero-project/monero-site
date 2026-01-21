@@ -212,10 +212,10 @@ const active = I(initial);
     width: max-content;
     max-width: 100%;
     border: 1px solid var(--border-color);
-    border-radius: 999px;
+    border-radius: var(--radius-full);
     overflow-x: auto;
     overflow-y: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-2xl);
 
     scrollbar-width: thin;
     -webkit-overflow-scrolling: touch;
@@ -231,7 +231,7 @@ const active = I(initial);
   }
 
   .tab-header::-webkit-scrollbar-thumb {
-    border-radius: 999px;
+    border-radius: var(--radius-full);
   }
 
   .tab-label {
@@ -239,14 +239,14 @@ const active = I(initial);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 1rem;
+    padding-block: var(--space-md);
     padding-inline: clamp(1rem, 0.6rem + 2vw, 2rem);
     cursor: pointer;
     font-weight: var(--font-weight-semibold);
     font-size: clamp(0.75rem, 0.75rem + 0.5vw, 1rem);
     user-select: none;
     text-decoration: none;
-    border-radius: 999px;
+    border-radius: var(--radius-full);
     white-space: nowrap;
     scroll-snap-align: center;
     color: var(--heading-color);

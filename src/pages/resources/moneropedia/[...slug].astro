@@ -90,7 +90,7 @@ const title = entry.data.title ?? entry.data.terms[0];
   .moneropedia-back {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-semibold);
     color: var(--monero-orange);
@@ -103,7 +103,7 @@ const title = entry.data.title ?? entry.data.terms[0];
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    border-radius: 999px;
+    border-radius: var(--radius-full);
     background: var(--card-color);
   }
 
@@ -137,7 +137,7 @@ const title = entry.data.title ?? entry.data.terms[0];
         "sidebar"
         "header"
         "content";
-      gap: 1.5rem;
+      gap: var(--space-xl);
     }
 
     .moneropedia-article {

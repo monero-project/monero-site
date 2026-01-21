@@ -27,10 +27,42 @@
   /* Border Colors */
   --border-color: light-dark(#e4e1e9, #36343b);
 
+  /* Border Radius */
+  --radius-sm: 0.25rem; /* 4px - tooltips, small elements */
+  --radius-md: 0.5rem; /* 8px - cards, buttons (primary) */
+  --radius-lg: 0.75rem; /* 12px - large cards, dropdowns, modals */
+  --radius-xl: 1rem; /* 16px - hero elements */
+  --radius-full: 999px; /* pills, circular */
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+  /* Z-Index */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-header: 20;
+  --z-overlay: 100;
+  --z-modal-background: 1000;
+  --z-modal-content: 1001;
+
   /* Spacing */
-  --page-top-margin: 2rem;
+  --space-2xs: 0.35rem; /* 4px - tight gaps, icon spacing */
+  --space-xs: 0.5rem; /* 8px - compact elements, small gaps */
+  --space-sm: 0.75rem; /* 12px - list items, form inputs */
+  --space-md: 1rem; /* 16px - (primary) standard spacing, card gaps */
+  --space-lg: 1.25rem; /* 20px - card padding, medium gaps */
+  --space-xl: 1.5rem; /* 24px - section gaps, large padding */
+  --space-2xl: 2rem; /* 32px - section margins, page spacing */
+  --space-3xl: 2.5rem; /* 40px - large section gaps */
+  --space-4xl: 3rem; /* 48px - hero sections, major divisions */
+
+  /* Layout Spacing */
+  --page-top-margin: var(--space-2xl);
   --desktop-padding-inline: 5rem;
-  --mobile-padding-inline: 2rem;
+  --mobile-padding-inline: var(--space-2xl);
 
   /* Typography - Font Sizes */
   --font-size-base: 1rem; /* body-base */
@@ -85,7 +117,7 @@ h6 {
 hr {
   border: none;
   border-top: 1px solid var(--border-color);
-  margin: 2rem 0;
+  margin: var(--space-2xl) 0;
 }
 
 p {
@@ -100,7 +132,7 @@ table {
 
 th,
 td {
-  padding: 0.875rem 1rem;
+  padding: var(--space-sm) var(--space-md);
   text-align: start;
   vertical-align: middle;
 }

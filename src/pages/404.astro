@@ -61,22 +61,22 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
-    margin-block: 1rem;
+    margin-block: var(--space-md);
   }
 
   .error-message {
     font-size: var(--font-size-lg);
     color: var(--paragraph-main);
     line-height: var(--line-height-body);
-    margin-block: 2rem;
+    margin-block: var(--space-2xl);
   }
 
   .quick-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem 1.5rem;
-    margin-top: 1rem;
+    gap: var(--space-md) var(--space-xl);
+    margin-top: var(--space-md);
   }
 
   .quick-links a {

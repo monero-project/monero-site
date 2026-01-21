@@ -38,7 +38,7 @@ const defaultLinkText = t("common:components.categoryCard.explore");
     display: flex;
     flex-direction: column;
     background: var(--card-color);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     text-decoration: none;
     overflow: hidden;
   }
@@ -54,7 +54,7 @@ const defaultLinkText = t("common:components.categoryCard.explore");
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: var(--space-2xl);
   }
 
   .card-image img {
@@ -67,8 +67,8 @@ const defaultLinkText = t("common:components.categoryCard.explore");
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 1.5rem;
-    gap: 0.5rem;
+    padding: var(--space-xl);
+    gap: var(--space-xs);
   }
 
   .card-title {
@@ -90,7 +90,7 @@ const defaultLinkText = t("common:components.categoryCard.explore");
     align-items: center;
     gap: 0.35em;
     margin-top: auto;
-    padding-top: 1rem;
+    padding-top: var(--space-md);
     font-weight: var(--font-weight-semibold);
     color: var(--monero-orange);
   }
@@ -109,12 +109,12 @@ const defaultLinkText = t("common:components.categoryCard.explore");
       aspect-ratio: 1;
       width: 5rem;
       flex-shrink: 0;
-      padding: 1rem;
+      padding: var(--space-md);
     }
 
     .card-content {
-      padding: 0.875rem 1rem;
-      gap: 0.25rem;
+      padding: var(--space-sm) var(--space-md);
+      gap: var(--space-2xs);
       justify-content: center;
     }
 

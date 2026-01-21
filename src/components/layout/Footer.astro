@@ -224,7 +224,7 @@ const bottomLinks: Link[] = [
 
   .items {
     padding-inline: var(--mobile-padding-inline);
-    padding-block: 3rem;
+    padding-block: var(--space-4xl);
     max-width: var(--content-max-width);
     margin: 0 auto;
   }
@@ -232,11 +232,11 @@ const bottomLinks: Link[] = [
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--space-2xl);
   }
 
   .title {
-    margin: 0 0 1rem;
+    margin: 0 0 var(--space-md);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
@@ -249,7 +249,7 @@ const bottomLinks: Link[] = [
   }
 
   .list li {
-    margin: 8px 0;
+    margin: var(--space-xs) 0;
   }
 
   a {
@@ -276,7 +276,7 @@ const bottomLinks: Link[] = [
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 18px 28px;
+    gap: 1.125rem 1.75rem;
     justify-content: center;
   }
 
@@ -304,7 +304,7 @@ const bottomLinks: Link[] = [
     }
 
     .title {
-      margin: 0 0 2rem;
+      margin: 0 0 var(--space-2xl);
     }
   }
 </style>

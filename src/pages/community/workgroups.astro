@@ -149,14 +149,14 @@ const { t, dir, localizeHref } = Astro.locals;
   .workgroup-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: var(--space-xl);
     align-items: start;
   }
 
   .column-cards {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-sm);
   }
 
   @media (max-width: 1200px) {
