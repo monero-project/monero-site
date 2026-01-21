@@ -1,16 +1,18 @@
 ---
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
 export interface Props {
   text: string;
 }
 
 const { text } = Astro.props;
-
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 ---
 
 <div class="disclaimer-note">
-  <MaskIcon src={shieldIcon} size="1em" />
+  <div class="disclaimer-icon">
+    <MaskIcon src={shieldIcon} size="1.25em" />
+  </div>
   <span>{text}</span>
 </div>
 
@@ -30,5 +32,11 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 
   .disclaimer-note span {
     flex: 1;
+  }
+
+  .disclaimer-icon {
+    align-self: flex-start;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
   }
 </style>

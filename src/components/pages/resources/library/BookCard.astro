@@ -7,8 +7,7 @@ import { Image } from "astro:assets";
 
 export type Props = Book;
 
-const { title, subtitle, description, cover, coverAlt, link, translations } =
-  Astro.props;
+const { title, subtitle, description, cover, link, translations } = Astro.props;
 const { t, dir } = Astro.locals;
 const rtl = dir === "rtl";
 
@@ -25,11 +24,7 @@ const getLanguageName = (targetLocale: string): string => {
   <a href={link} class="book-cover" target="_blank" rel="noopener noreferrer">
     {
       cover ? (
-        typeof cover === "string" ? (
-          <img src={cover} alt={coverAlt || `${title} cover`} loading="lazy" />
-        ) : (
-          <Image src={cover} alt={coverAlt || `${title} cover`} format="avif" />
-        )
+        <Image src={cover} alt="" format="avif" />
       ) : (
         <div class="book-placeholder">
           <MaskIcon src={bookTextIcon} size="2rem" />

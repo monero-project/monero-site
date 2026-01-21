@@ -8,7 +8,7 @@ export interface Book {
   title: string;
   subtitle?: string;
   description: string;
-  cover?: string | ImageMetadata;
+  cover?: ImageMetadata;
   coverAlt?: string;
   link: string;
   translations?: {

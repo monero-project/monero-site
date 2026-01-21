@@ -1,12 +1,14 @@
 ---
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
 interface Props {
   title: string;
   description: string;
   href: string;
-  image?: string;
+  image?: ImageMetadata;
   linkText?: string;
 }
 
@@ -19,7 +21,7 @@ const defaultLinkText = t("common:components.categoryCard.explore");
 
 <a href={href} class="category-card">
   <div class="card-image">
-    {image && <img src={image} alt="" />}
+    {image && <Image src={image} alt="" />}
   </div>
   <div class="card-content">
     <h2 class="card-title">{title}</h2>

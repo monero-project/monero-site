@@ -1,9 +1,12 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
 interface Props {
   name: string;
   description: string;
   href?: string;
-  logo?: string;
+  logo?: ImageMetadata;
   monochrome?: boolean;
 }
 
@@ -19,7 +22,7 @@ const { name, description, href, logo, monochrome = false } = Astro.props;
   >
     {
       logo ? (
-        <img src={logo} alt={`${name} logo`} loading="lazy" />
+        <Image src={logo} alt="" loading="lazy" />
       ) : (
         <span class="sponsor-initial">{name.charAt(0)}</span>
       )

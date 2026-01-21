@@ -1,8 +1,16 @@
+import type { ImageMetadata } from "astro";
+
+import tariLabsLogo from "@/assets/images/sponsors/tarilabs.png";
+import cakeLabsLogo from "@/assets/images/sponsors/cakelabs.jpg";
+import macStadiumLogo from "@/assets/images/sponsors/macstadium.png";
+import cypherStackLogo from "@/assets/images/sponsors/cypherstack.png";
+import symasLogo from "@/assets/images/sponsors/symas.png";
+
 export type Sponsor = {
   id: string;
   name: string;
   link?: string;
-  logo?: string;
+  logo?: ImageMetadata;
   monochrome?: boolean;
 };
 
@@ -11,34 +19,34 @@ export const currentSponsors: Sponsor[] = [
     id: "tari-labs",
     name: "Tari Labs",
     link: "https://tarilabs.com",
-    logo: "/media/brands/tarilabs.png",
+    logo: tariLabsLogo,
     monochrome: true,
   },
   {
     id: "cake-wallet",
     name: "Cake Wallet",
     link: "https://cakewallet.com",
-    logo: "/media/brands/cakelabs.jpg",
+    logo: cakeLabsLogo,
   },
   {
     id: "cypher-stack",
     name: "Cypher Stack",
     link: "https://cypherstack.com",
-    logo: "/media/brands/cypherstack.png",
+    logo: cypherStackLogo,
     monochrome: true,
   },
   {
     id: "macstadium",
     name: "MacStadium",
     link: "https://macstadium.com",
-    logo: "/media/brands/macstadium.png",
+    logo: macStadiumLogo,
     monochrome: true,
   },
   {
     id: "symas",
     name: "Symas",
     link: "https://symas.com",
-    logo: "/media/brands/symas.png",
+    logo: symasLogo,
   },
 ];
 
