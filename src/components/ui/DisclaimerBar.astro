@@ -10,46 +10,50 @@ interface Props {
 const { icon, title } = Astro.props;
 ---
 
-<div class="disclaimer-bar card">
-  <div class="disclaimer-content">
-    {
-      icon && (
-        <span class="disclaimer-icon">
-          <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
-        </span>
-      )
-    }
-    <p>
-      {title && <b>{title}:</b>}
-      <slot />
-    </p>
-  </div>
-</div>
+<aside class="disclaimer-bar">
+  {
+    icon && (
+      <span class="disclaimer-icon">
+        <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
+      </span>
+    )
+  }
+  {title && <span class="disclaimer-title">{title}</span>}
+  <p class="disclaimer-text"><slot /></p>
+</aside>
 
 <style>
   .disclaimer-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 0.75rem;
     padding: 1rem;
     margin: 1rem 0;
     background: var(--card-color);
     border-radius: 0.5rem;
   }
 
-  .disclaimer-content {
+  .disclaimer-icon {
+    grid-row: 1;
+    grid-column: 1;
     display: flex;
     align-items: center;
-    gap: 1rem;
-  }
-
-  .disclaimer-icon {
     color: var(--monero-orange);
-    flex-shrink: 0;
-    display: flex;
-    align-self: center;
   }
 
-  .disclaimer-content p {
+  .disclaimer-title {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .disclaimer-text {
+    grid-row: 2;
+    grid-column: 2;
     margin: 0;
-    font-size: var(--font-size-md);
     color: var(--text-primary);
+    line-height: var(--line-height-body);
   }
 </style>
