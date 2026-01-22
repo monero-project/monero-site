@@ -2,16 +2,16 @@
 
 Avec [Qubes](https://qubes-os.org) et [Whonix](https://whonix.org) vous pouvez disposer d'un portefeuille Monero hors connexion fonctionnant sur un système virtuel isolé du démon Monero dont tout le trafic est forcé à passer à travers [Tor](https://torproject.org).
 
-Qubes permet de créer facilement des machines virtuelles pour différents besoins. Tout d'abord, vous crérez une station de travail Whonix sans réseau pour le portefeuille. Ensuite, une seconde station de travail Whonix pour le démon qui utilisera votre passerelle Whonix comme réseau de machine virtuelle. La communication dentre le portefeuille et le démon pourra être réalisée en utilisant Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
+Qubes permet de créer facilement des machines virtuelles pour différents besoins. Tout d'abord, vous crérez une station de travail Whonix sans réseau pour le portefeuille. Ensuite, une seconde station de travail Whonix pour le démon qui utilisera votre passerelle Whonix comme réseau de machine virtuelle. La communication entre le portefeuille et le démon pourra être réalisée en utilisant Qubes [qrexec](https://www.qubes-os.org/doc/qrexec3/).
 
-Il s'agit d'une approche plus sûre que d'autres solutions routant les appels de procédure distantes du portefeuille à travers un service Tor caché, ou utilisant une isolation physique mais disposant toujours du réseau pour le raccordement au démon. De cette manière vou sn'avez besoin d'aucune connectivité réseau sur le portefeuille, vous préserver les ressources du réseau Tor et vous minimisez la latence.
+Il s'agit d'une approche plus sûre que d'autres solutions routant les appels de procédure distantes du portefeuille à travers un service Tor caché, ou utilisant une isolation physique mais disposant toujours du réseau pour le raccordement au démon. De cette manière vous n'avez besoin d'aucune connectivité réseau sur le portefeuille, vous préservez les ressources du réseau Tor et vous minimisez la latence.
 
 
 ## 1. [Créer une machine virtuelle applicative Whonix](https://www.whonix.org/wiki/Qubes/Install):
 
 + En utilisant un modèle Whonix de station de travail, créez deux stations de travail comme suit :
 
-  - La première station de travail sera utilisé pour le portefeuille, on s'y réfèrera en tant que `monero-wallet-ws`. Vous aurez `NetVM` définit à `none`.
+  - La première station de travail sera utilisée pour le portefeuille, on s'y réfèrera en tant que `monero-wallet-ws`. Vous aurez `NetVM` définit à `none`.
 
   - La seconde station de travail sera pour le démon `monerod`, on s'y réfèrera en tant que `monerod-ws`. Vous aurez `NetVM` définit sur la passerelle Whonix `sys-whonix`. Before moving on, make sure this workstation has enough private storage. You can estimate how much space you need by checking the size of the [raw blockchain]({{ site.baseurl }}/downloads/#blockchain). Keep in mind that the blockchain will take up more space with time.
 
