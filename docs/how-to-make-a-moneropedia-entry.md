@@ -37,15 +37,6 @@ terms:
 - Link to other entries using `@term` (e.g., `@block`) - they get converted to tooltip links automatically.
 - Add images (if any) in a local `assets/<file-name>/` folder (e.g., `./assets/daemon/diagram.avif`) and reference them in Markdown: `![Alt text](./assets/daemon/diagram.avif)`.
 
-## 4. i18n & translation workflow
-
-- Do **not** edit localized Markdown files (e.g., `src/content/moneropedia/es/*`) directly - translations are managed via Weblate and compiled by the project's CI (`.github/workflows/moneropedia-translate.yml`).
-- If you add or remove English entries, run locally:
-  - `pnpm run i18n:moneropedia:config` (regenerate po4a config)
-  - `pnpm run i18n:moneropedia:update-po` (extract strings)
-
-If you're only adding content in English, submit your PR and the translation team will handle Weblate integration.
-
 ## 5. Test & submit
 
 - Run `pnpm dev` and visit `/resources/moneropedia/` and the new entry `/resources/moneropedia/<slug>/`.

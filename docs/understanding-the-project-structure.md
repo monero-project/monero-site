@@ -20,7 +20,7 @@ src/
 │   └── layout/
 ├── content/                  # Content collections (blog/, moneropedia/)
 │   └── moneropedia/en/       # English source entries (canonical)
-├── i18n/                     # Translations and Moneropedia PO workflow (po4a, gen-config)
+├── i18n/                     # Translations
 ├── layouts/                  # Layout templates wrapping pages
 ├── styles/                   # Global CSS (variables, moneropedia-link.css)
 ├── assets/                   # icons/ (color, mask), images/
