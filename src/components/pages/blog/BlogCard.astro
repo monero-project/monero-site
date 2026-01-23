@@ -1,4 +1,5 @@
 ---
+import Card from "@/components/ui/Card.astro";
 import calendarIcon from "@/assets/icons/mask/calendar.avif";
 import userIcon from "@/assets/icons/mask/user.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -26,7 +27,7 @@ const date = localizeDateString(dateString, {
 const localizedLink = localizeHref(`/blog/${id}/`);
 ---
 
-<div class="card-container">
+<Card padding="2xl" border class="card-container">
   <a
     class:list={["thumbnail", { "no-image": !image }]}
     href={localizedLink}
@@ -92,16 +93,13 @@ const localizedLink = localizeHref(`/blog/${id}/`);
       )
     }
   </div>
-</div>
+</Card>
 
 <style>
   .card-container {
     display: grid;
     grid-template-rows: clamp(250px, 40vh, 300px) 1fr;
     gap: var(--space-2xl);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    padding: var(--space-2xl);
   }
 
   .thumbnail {

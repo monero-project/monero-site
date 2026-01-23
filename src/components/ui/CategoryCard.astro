@@ -1,6 +1,6 @@
 ---
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
+import Card from "@/components/ui/Card.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
@@ -14,37 +14,30 @@ interface Props {
 
 const { title, description, href, image, linkText } = Astro.props;
 
-const { t, dir } = Astro.locals;
+const { t } = Astro.locals;
 
 const defaultLinkText = t("common:components.categoryCard.explore");
 ---
 
-<a href={href} class="category-card">
+<Card as="a" padding="none" hover href={href} class="category-card">
   <div class="card-image">
     {image && <Image src={image} alt="" />}
   </div>
   <div class="card-content">
     <h2 class="card-title">{title}</h2>
     <p class="card-description">{description}</p>
-    <span class="card-link">
+    <IconLink as="span" class="card-link">
       {linkText || defaultLinkText}
-      <MaskIcon src={arrowRight} size="1em" rtl={dir === "rtl"} />
-    </span>
+    </IconLink>
   </div>
-</a>
+</Card>
 
 <style>
   .category-card {
     display: flex;
     flex-direction: column;
-    background: var(--card-color);
-    border-radius: var(--radius-md);
     text-decoration: none;
     overflow: hidden;
-  }
-
-  .category-card:hover {
-    background: var(--card-hover-color);
   }
 
   .card-image {
@@ -86,13 +79,8 @@ const defaultLinkText = t("common:components.categoryCard.explore");
   }
 
   .card-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
     margin-top: auto;
     padding-top: var(--space-md);
-    font-weight: var(--font-weight-semibold);
-    color: var(--monero-orange);
   }
 
   .category-card:hover .card-link {

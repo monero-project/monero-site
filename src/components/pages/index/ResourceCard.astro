@@ -1,10 +1,8 @@
 ---
-import type { ImageMetadata } from "astro";
-
+import Card from "@/components/ui/Card.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
-import externalLink from "@/assets/icons/mask/external-link.avif";
+import type { ImageMetadata } from "astro";
 
 export interface Props {
   icon?: ImageMetadata;
@@ -15,11 +13,17 @@ export interface Props {
 }
 
 const { icon = null, title, description = "", ctaLabel, ctaHref } = Astro.props;
-const { dir, safeMarkdown } = Astro.locals;
-const rtl = dir === "rtl";
+const { safeMarkdown } = Astro.locals;
 ---
 
-<article class="resource-card">
+<Card
+  as="article"
+  padding="2xl"
+  radius="xl"
+  border
+  transparent
+  class="resource-card"
+>
   {
     icon && (
       <div class="icon">
@@ -36,21 +40,13 @@ const rtl = dir === "rtl";
     )
   }
 
-  <a class="cta" href={ctaHref}>
+  <IconLink href={ctaHref} weight="bold" underline class="cta">
     {ctaLabel}
-    <MaskIcon
-      src={ctaHref.startsWith("http") ? externalLink : arrowRight}
-      rtl={rtl}
-      size="1em"
-    />
-  </a>
-</article>
+  </IconLink>
+</Card>
 
 <style>
   .resource-card {
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-xl);
-    padding: var(--space-2xl);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -84,16 +80,6 @@ const rtl = dir === "rtl";
   }
 
   .cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25em;
-    font-weight: var(--font-weight-bold);
-    color: var(--monero-orange);
-    text-decoration: none;
     margin-top: auto;
-  }
-
-  .cta:hover {
-    text-decoration: underline;
   }
 </style>

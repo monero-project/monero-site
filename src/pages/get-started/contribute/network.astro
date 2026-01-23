@@ -1,5 +1,6 @@
 ---
 import Button from "@/components/ui/Button.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
@@ -7,7 +8,6 @@ import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
 import arrowRight from "@/assets/icons/mask/arrow-right.avif";
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 
 import moneroPickaxe from "@/assets/images/monero_pickaxe.webp";
 import serverImage from "@/assets/images/server.avif";
@@ -70,22 +70,20 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
           <li>{t("contribute:network.runANode.bullets.enableOthers")}</li>
         </ul>
         <div class="cta-links">
-          <a
+          <IconLink
             href="https://docs.getmonero.org/running-node/monerod-systemd"
-            target="_blank"
-            rel="noopener"
+            weight="bold"
+            underline
           >
             {t("contribute:network.runANode.moneroDocs")}
-            <MaskIcon src={externalLinkIcon} size="0.9em" rtl={dir == "rtl"} />
-          </a>
-          <a
+          </IconLink>
+          <IconLink
             href="https://sethforprivacy.com/guides/run-a-monero-node/"
-            target="_blank"
-            rel="noopener"
+            weight="bold"
+            underline
           >
             {t("contribute:network.runANode.sethForPrivacy")}
-            <MaskIcon src={externalLinkIcon} size="0.9em" rtl={dir == "rtl"} />
-          </a>
+          </IconLink>
         </div>
       </div>
       <div class="media">
@@ -156,18 +154,6 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
     align-items: center;
     gap: var(--space-md) var(--space-xl);
     margin-top: var(--space-xl);
-  }
-
-  .cta-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    font-weight: var(--font-weight-bold);
-    text-decoration: none;
-  }
-
-  .cta-links a:hover {
-    text-decoration: underline;
   }
 
   @media (min-width: 900px) {

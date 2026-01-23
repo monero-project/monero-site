@@ -1,4 +1,5 @@
 ---
+import Card from "@/components/ui/Card.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { ImageMetadata } from "astro";
 
@@ -10,7 +11,7 @@ interface Props {
 const { icon, title } = Astro.props;
 ---
 
-<aside class="disclaimer-bar">
+<Card as="aside" padding="md" class="disclaimer-bar">
   {
     icon && (
       <span class="disclaimer-icon">
@@ -20,17 +21,14 @@ const { icon, title } = Astro.props;
   }
   {title && <span class="disclaimer-title">{title}</span>}
   <p class="disclaimer-text"><slot /></p>
-</aside>
+</Card>
 
 <style>
   .disclaimer-bar {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: var(--space-xs) var(--space-sm);
-    padding: var(--space-md);
     margin: var(--space-md) 0;
-    background: var(--card-color);
-    border-radius: var(--radius-md);
   }
 
   .disclaimer-icon {

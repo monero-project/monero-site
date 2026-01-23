@@ -4,7 +4,7 @@ import Accordion from "@/components/ui/Accordion.astro";
 import ContentCard from "@/components/ui/ContentCard.astro";
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
@@ -12,7 +12,6 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import pickaxeIcon from "@/assets/icons/mask/pickaxe.avif";
 import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import terminalIcon from "@/assets/icons/mask/terminal.avif";
@@ -21,7 +20,7 @@ import guiWindow from "@/assets/images/gui.avif";
 import gupaxWindow from "@/assets/images/gupax-window.webp";
 import xmrigWindow from "@/assets/images/xmrig-window.avif";
 
-const { t, dir, safeMarkdown } = Astro.locals;
+const { t, safeMarkdown } = Astro.locals;
 
 // Helper to convert keyed FAQ section to array for Accordion
 const faqToItems = (
@@ -67,15 +66,9 @@ const faqItems = faqToItems(
             }
           </ul>
 
-          <a
-            slot="bottom"
-            href="https://gupax.io/"
-            target="_blank"
-            rel="noopener"
-          >
+          <IconLink slot="bottom" href="https://gupax.io/">
             {t("mining:gupax.cta")}
-            <MaskIcon src={externalLinkIcon} size="1em" rtl={dir == "rtl"} />
-          </a>
+          </IconLink>
         </ContentCard>
 
         <ContentCard
@@ -94,15 +87,9 @@ const faqItems = faqToItems(
             }
           </ul>
 
-          <a
-            slot="bottom"
-            href="https://github.com/xmrig/xmrig"
-            target="_blank"
-            rel="noopener"
-          >
+          <IconLink slot="bottom" href="https://github.com/xmrig/xmrig">
             {t("mining:xmrig.cta")}
-            <MaskIcon src={externalLinkIcon} size="1em" rtl={dir == "rtl"} />
-          </a>
+          </IconLink>
         </ContentCard>
 
         <ContentCard
@@ -121,15 +108,12 @@ const faqItems = faqToItems(
             }
           </ul>
 
-          <a
+          <IconLink
             slot="bottom"
             href="https://docs.getmonero.org/interacting/mining/guides/solo/"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             {t("mining:solo.cta")}
-            <MaskIcon src={externalLinkIcon} size="1em" rtl={dir == "rtl"} />
-          </a>
+          </IconLink>
         </ContentCard>
       </div>
     </PageSection>

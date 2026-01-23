@@ -1,4 +1,5 @@
 ---
+import Card from "@/components/ui/Card.astro";
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import torIcon from "@/assets/icons/mask/tor.avif";
 import { getPublicImageDimensions } from "@/utils/image";
@@ -29,7 +30,9 @@ const rtl = dir === "rtl";
 const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
 ---
 
-<div
+<Card
+  padding="none"
+  hover
   class:list={[
     "external-resource-button",
     variant,
@@ -89,21 +92,13 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
       </a>
     )
   }
-</div>
+</Card>
 
 <style>
   .external-resource-button {
     display: flex;
     align-items: stretch;
-    background: var(--card-color);
-    border-radius: var(--radius-md);
     overflow: hidden;
-    transition: background 0.15s ease;
-  }
-
-  .external-resource-button:hover,
-  .external-resource-button:focus-visible {
-    background: var(--card-hover-color);
   }
 
   .primary-link {

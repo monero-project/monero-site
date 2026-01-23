@@ -1,5 +1,6 @@
 ---
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import Card from "@/components/ui/Card.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { Book } from "@/data/library";
@@ -8,8 +9,7 @@ import { Image } from "astro:assets";
 export type Props = Book;
 
 const { title, subtitle, description, cover, link, translations } = Astro.props;
-const { t, dir } = Astro.locals;
-const rtl = dir === "rtl";
+const { t } = Astro.locals;
 
 const getLanguageName = (targetLocale: string): string => {
   const displayNames = new Intl.DisplayNames([targetLocale], {
@@ -20,7 +20,7 @@ const getLanguageName = (targetLocale: string): string => {
 };
 ---
 
-<article class="book-card">
+<Card as="article" radius="lg" border class="book-card">
   <a href={link} class="book-cover" target="_blank" rel="noopener noreferrer">
     {
       cover ? (
@@ -42,15 +42,9 @@ const getLanguageName = (targetLocale: string): string => {
     <p class="book-description">{description}</p>
 
     <div class="book-footer">
-      <a
-        href={link}
-        class="book-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <IconLink href={link} size="sm">
         {t("common:components.bookCard.readOnline")}
-        <MaskIcon src={arrowRightIcon} size="1em" rtl={rtl} />
-      </a>
+      </IconLink>
 
       {
         translations && translations.length > 0 && (
@@ -71,7 +65,7 @@ const getLanguageName = (targetLocale: string): string => {
       }
     </div>
   </div>
-</article>
+</Card>
 
 <style>
   .book-card {
@@ -79,10 +73,6 @@ const getLanguageName = (targetLocale: string): string => {
     flex-direction: row;
     gap: var(--space-lg);
     min-width: 0;
-    background: var(--card-color);
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg);
-    border: 1px solid var(--border-color);
     overflow: hidden;
   }
 
@@ -168,19 +158,6 @@ const getLanguageName = (targetLocale: string): string => {
     flex-wrap: wrap;
     align-items: center;
     gap: var(--space-sm) var(--space-xl);
-  }
-
-  .book-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-    color: var(--monero-orange);
-  }
-
-  .book-link::after {
-    display: none;
   }
 
   .book-translations {

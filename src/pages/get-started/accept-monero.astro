@@ -2,7 +2,7 @@
 import Accordion from "@/components/ui/Accordion.astro";
 import AccordionItem from "@/components/ui/AccordionItem.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
@@ -11,11 +11,10 @@ import GuideStep from "@/components/pages/accept-monero/GuideStep.astro";
 import TipBox from "@/components/pages/accept-monero/TipBox.astro";
 
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import handCoinsIcon from "@/assets/icons/mask/handCoins.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
 
-const { t, dir, localizeHref, localizeNumber } = Astro.locals;
+const { t, localizeHref, localizeNumber } = Astro.locals;
 ---
 
 <Layout
@@ -46,13 +45,13 @@ const { t, dir, localizeHref, localizeNumber } = Astro.locals;
             <p>
               {t("accept-monero:steps.chooseSetup.wallet.description")}
             </p>
-            <a
+            <IconLink
               href={localizeHref("/downloads/community/#wallets")}
-              class="inline-link"
+              size="sm"
+              underline
             >
               {t("accept-monero:steps.chooseSetup.wallet.viewWallets")}
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir == "rtl"} />
-            </a>
+            </IconLink>
           </AccordionItem>
 
           <AccordionItem
@@ -89,13 +88,13 @@ const { t, dir, localizeHref, localizeNumber } = Astro.locals;
             <p>
               {t("accept-monero:steps.chooseSetup.processor.description")}
             </p>
-            <a
+            <IconLink
               href={localizeHref("/resources/tools/accept/")}
-              class="inline-link"
+              size="sm"
+              underline
             >
               {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir == "rtl"} />
-            </a>
+            </IconLink>
           </AccordionItem>
 
           <AccordionItem
@@ -165,10 +164,13 @@ const { t, dir, localizeHref, localizeNumber } = Astro.locals;
         <p>
           {t("accept-monero:steps.getListed.description")}
         </p>
-        <a href={localizeHref("/get-started/merchants")} class="inline-link">
+        <IconLink
+          href={localizeHref("/get-started/merchants")}
+          size="sm"
+          underline
+        >
           {t("accept-monero:steps.getListed.viewDirectories")}
-          <MaskIcon src={arrowRightIcon} size="1em" rtl={dir == "rtl"} />
-        </a>
+        </IconLink>
       </GuideStep>
     </div>
   </PageContainer>
@@ -188,18 +190,5 @@ const { t, dir, localizeHref, localizeNumber } = Astro.locals;
 
   .service-buttons :global(.external-resource-button) {
     border: 1px solid var(--border-color);
-  }
-
-  .inline-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375em;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-    margin-top: var(--space-xs);
-  }
-
-  .inline-link:hover {
-    text-decoration: underline;
   }
 </style>

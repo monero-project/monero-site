@@ -1,4 +1,5 @@
 ---
+import Card from "@/components/ui/Card.astro";
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
@@ -13,7 +14,7 @@ interface Props {
 const { name, description, href, logo, monochrome = false } = Astro.props;
 ---
 
-<article class="sponsor-card">
+<Card as="article" padding="xl" class="sponsor-card">
   <a
     href={href}
     target="_blank"
@@ -30,7 +31,7 @@ const { name, description, href, logo, monochrome = false } = Astro.props;
   </a>
   <h3 class="sponsor-name">{name}</h3>
   <p class="sponsor-description">{description}</p>
-</article>
+</Card>
 
 <style>
   .sponsor-card {
@@ -38,9 +39,6 @@ const { name, description, href, logo, monochrome = false } = Astro.props;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: var(--space-xl);
-    background: var(--card-color);
-    border-radius: var(--radius-md);
   }
 
   .sponsor-logo {

@@ -1,7 +1,5 @@
 ---
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+import IconLink from "@/components/ui/IconLink.astro";
 
 export interface Props {
   step: string | number;
@@ -13,7 +11,7 @@ export interface Props {
 
 const { step, title, description = "", ctaHref = "#", ctaLabel } = Astro.props;
 
-const { dir, localizeNumber, localizeHref } = Astro.locals;
+const { localizeNumber, localizeHref } = Astro.locals;
 ---
 
 <article class="gs">
@@ -24,10 +22,9 @@ const { dir, localizeNumber, localizeHref } = Astro.locals;
   <div class="text">
     <h2 class="title">{title}</h2>
     {description && <p class="desc">{description}</p>}
-    <a class="cta" href={localizeHref(ctaHref)} target="_blank">
+    <IconLink href={localizeHref(ctaHref)} weight="bold" underline>
       {ctaLabel}
-      <MaskIcon src={arrowRight} rtl={dir == "rtl"} size="1em" />
-    </a>
+    </IconLink>
   </div>
 </article>
 
@@ -66,19 +63,6 @@ const { dir, localizeNumber, localizeHref } = Astro.locals;
     color: var(--paragraph-subtitle);
     max-width: 60ch;
     line-height: var(--line-height-body);
-  }
-
-  .cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25em;
-    font-weight: var(--font-weight-bold);
-    color: var(--monero-orange);
-    text-decoration: none;
-  }
-
-  .cta:hover {
-    text-decoration: underline;
   }
 
   @media (max-width: 600px) {

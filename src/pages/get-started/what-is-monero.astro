@@ -19,15 +19,14 @@ import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
 import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 import shieldPlusIcon from "@/assets/icons/mask/shieldPlus.avif";
 
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
-
 import Button from "@/components/ui/Button.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import { getLocaleName } from "@/i18n/utils";
 
 import { readdirSync } from "fs";
 import { join } from "path";
 
-const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
+const { t, localizeHref, safeMarkdown } = Astro.locals;
 
 const i18nVttFiles = readdirSync(
   join(process.cwd(), "public", "media", "vtt", "msmsm"),
@@ -342,20 +341,12 @@ const getLanguageLabel = (lang: string): string => {
           )}
         />
         <div class="community-cta-links">
-          <a
-            href={localizeHref("/community/hangouts/")}
-            aria-label={t("what-is-monero:sections.community.joinCommunity")}
-            >{t("what-is-monero:sections.community.joinCommunity")}
-            <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} /></a
-          >
-          <a
-            href={localizeHref("/community/workgroups/")}
-            aria-label={t(
-              "what-is-monero:sections.community.contributeToMonero",
-            )}
-            >{t("what-is-monero:sections.community.contributeToMonero")}
-            <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} /></a
-          >
+          <IconLink href={localizeHref("/community/hangouts/")} weight="bold">
+            {t("what-is-monero:sections.community.joinCommunity")}
+          </IconLink>
+          <IconLink href={localizeHref("/community/workgroups/")} weight="bold">
+            {t("what-is-monero:sections.community.contributeToMonero")}
+          </IconLink>
         </div>
       </div>
       <div class="media">
@@ -519,14 +510,6 @@ const getLanguageLabel = (lang: string): string => {
     gap: var(--space-2xl);
     margin-top: var(--space-2xl);
   }
-  .community-cta-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25em;
-    font-weight: var(--font-weight-bold);
-    color: var(--monero-orange);
-  }
-
   .final-cta {
     padding-block: var(--space-2xl);
   }

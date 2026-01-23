@@ -1,9 +1,10 @@
 ---
+import Card from "@/components/ui/Card.astro";
+import IconLink from "@/components/ui/IconLink.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 import { getPublicImageDimensions } from "@/utils/image";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import androidIcon from "@/assets/icons/mask/brand/android.avif";
 import appleIcon from "@/assets/icons/mask/brand/apple.avif";
@@ -102,7 +103,9 @@ const logoDimensions = await getPublicImageDimensions(logo);
 const hasBuiltinExchange = general.includes("i18n:builtInExchange");
 ---
 
-<div
+<Card
+  padding="md"
+  radius="xl"
   class:list={[
     "community-card",
     { "has-built-in-exchange": hasBuiltinExchange },
@@ -189,24 +192,23 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     )
   }
 
-  <a
+  <IconLink
     href={link}
+    icon={null}
+    size="sm"
+    weight="medium"
+    underline
     class="visit-link"
-    target="_blank"
-    rel="noopener noreferrer external"
-    set:text={linkText ?? t("common:components.communityCard.visitWebsite")}
-  />
-</div>
+  >
+    {linkText ?? t("common:components.communityCard.visitWebsite")}
+  </IconLink>
+</Card>
 
 <style>
   .community-card {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
-    background: var(--card-color);
-    border-radius: var(--radius-xl);
-    padding: var(--space-md);
-    transition: background 0.3s ease;
   }
   .card-header {
     display: flex;
@@ -290,16 +292,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   }
 
   .visit-link {
-    display: inline-flex;
-    align-items: center;
     margin-top: var(--space-2xs);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
-    color: var(--monero-orange);
-    text-decoration: none;
-  }
-  .visit-link:hover {
-    text-decoration: underline;
   }
 
   body:has(#built-in-exchange:target) .builtin-exchange-pill {

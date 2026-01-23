@@ -1,16 +1,17 @@
 ---
+import Card from "@/components/ui/Card.astro";
+import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
 export interface Props {
   class?: string;
   showIcon?: boolean;
 }
 
 const { class: className, showIcon = false } = Astro.props;
-
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 ---
 
-<aside class:list={["tip-box", className]}>
+<Card as="aside" padding="md" class:list={["tip-box", className]}>
   {
     showIcon && (
       <span class="icon">
@@ -19,14 +20,12 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
     )
   }
   <slot />
-</aside>
+</Card>
 
 <style>
   .tip-box {
-    padding: var(--space-md) var(--space-lg);
+    padding-inline-end: var(--space-lg);
     padding-inline-start: var(--space-sm);
-    background: var(--card-color);
-    border-radius: var(--radius-md);
     border-start-start-radius: 0;
     border-end-start-radius: 0;
     border-inline-start: 3px solid var(--monero-orange);

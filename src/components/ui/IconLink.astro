@@ -1,0 +1,143 @@
+---
+import type { HTMLTag } from "astro/types";
+import type { ImageMetadata } from "astro";
+import MaskIcon from "./MaskIcon.astro";
+
+import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+import externalLink from "@/assets/icons/mask/external-link.avif";
+
+type Size = "sm" | "base" | "lg";
+type Weight = "normal" | "medium" | "semibold" | "bold";
+type Color = "orange" | "heading" | "inherit";
+
+interface Props {
+  href?: string;
+  icon?: ImageMetadata | null;
+  iconPosition?: "start" | "end";
+  iconSize?: string;
+  size?: Size;
+  weight?: Weight;
+  color?: Color;
+  underline?: boolean;
+  external?: boolean;
+  as?: HTMLTag;
+  class?: string;
+  [key: string]: unknown;
+}
+
+const {
+  href,
+  icon,
+  iconPosition = "end",
+  iconSize = "1em",
+  size,
+  weight = "semibold",
+  color = "orange",
+  underline = false,
+  external,
+  as,
+  class: className,
+  ...rest
+} = Astro.props;
+
+const { dir } = Astro.locals;
+const rtl = dir === "rtl";
+
+// Determine if link is external
+const isExternal =
+  external ?? (href?.startsWith("http") || href?.startsWith("//"));
+
+// Auto-select icon if not provided and href exists
+// Use `null` to explicitly disable the icon
+const resolvedIcon =
+  icon !== undefined
+    ? icon
+    : href
+      ? isExternal
+        ? externalLink
+        : arrowRight
+      : undefined;
+
+// Determine tag
+const Tag = (as ?? (href ? "a" : "span")) as HTMLTag;
+---
+
+<Tag
+  href={href}
+  class:list={["icon-link", className]}
+  data-size={size}
+  data-weight={weight !== "semibold" ? weight : undefined}
+  data-color={color !== "orange" ? color : undefined}
+  data-underline={underline || undefined}
+  data-icon-position={iconPosition !== "end" ? iconPosition : undefined}
+  target={isExternal ? "_blank" : undefined}
+  rel={isExternal ? "noopener noreferrer" : undefined}
+  {...rest}
+>
+  {
+    iconPosition === "start" && resolvedIcon && (
+      <MaskIcon src={resolvedIcon} size={iconSize} rtl={rtl} />
+    )
+  }
+  <slot />
+  {
+    iconPosition === "end" && resolvedIcon && (
+      <MaskIcon src={resolvedIcon} size={iconSize} rtl={rtl} />
+    )
+  }
+</Tag>
+
+<style>
+  .icon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    color: var(--monero-orange);
+  }
+
+  /* Disable global external link icon (we provide our own) */
+  .icon-link::after {
+    display: none;
+  }
+
+  /* Size variants */
+  .icon-link[data-size="sm"] {
+    font-size: var(--font-size-sm);
+  }
+  .icon-link[data-size="lg"] {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Weight variants */
+  .icon-link[data-weight="normal"] {
+    font-weight: var(--font-weight-normal);
+  }
+  .icon-link[data-weight="medium"] {
+    font-weight: var(--font-weight-medium);
+  }
+  .icon-link[data-weight="bold"] {
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Color variants */
+  .icon-link[data-color="heading"] {
+    color: var(--heading-color);
+  }
+  .icon-link[data-color="inherit"] {
+    color: inherit;
+  }
+
+  /* Hover effects */
+  .icon-link:hover,
+  .icon-link:focus-visible {
+    opacity: 0.8;
+  }
+
+  .icon-link[data-underline]:hover,
+  .icon-link[data-underline]:focus-visible {
+    opacity: 1;
+    text-decoration: underline;
+  }
+</style>

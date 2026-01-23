@@ -1,7 +1,7 @@
 ---
 import Button from "@/components/ui/Button.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
+import IconLink from "@/components/ui/IconLink.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
@@ -10,7 +10,6 @@ import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import componentIcon from "@/assets/icons/mask/component.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
@@ -22,7 +21,7 @@ import {
 } from "@/data/press-kit";
 import { getPublicImageDimensions } from "@/utils/image";
 
-const { dir, t, localizeHref } = Astro.locals;
+const { t, localizeHref } = Astro.locals;
 const previewDimensions = await Promise.all(
   brandAssets.map((asset) => getPublicImageDimensions(asset.preview)),
 );
@@ -193,21 +192,16 @@ const sections = [
           <div class="contact-card">
             <h3>{t("press-kit:sections.contacts.workgroups.title")}</h3>
             <p>{t("press-kit:sections.contacts.workgroups.description")}</p>
-            <a
-              href={localizeHref("/community/workgroups")}
-              class="contact-link"
-            >
+            <IconLink href={localizeHref("/community/workgroups")}>
               {t("press-kit:sections.contacts.workgroups.link")}
-              <MaskIcon src={arrowRightIcon} rtl={dir === "rtl"} />
-            </a>
+            </IconLink>
           </div>
           <div class="contact-card">
             <h3>{t("press-kit:sections.contacts.community.title")}</h3>
             <p>{t("press-kit:sections.contacts.community.description")}</p>
-            <a href={localizeHref("/community/hangouts")} class="contact-link">
+            <IconLink href={localizeHref("/community/hangouts")}>
               {t("press-kit:sections.contacts.community.link")}
-              <MaskIcon src={arrowRightIcon} rtl={dir === "rtl"} />
-            </a>
+            </IconLink>
           </div>
         </div>
       </PageSection>
@@ -243,13 +237,6 @@ const sections = [
     margin: 0 0 var(--space-sm);
     color: var(--paragraph-subtitle);
     font-size: var(--font-size-sm);
-  }
-
-  .contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    font-weight: var(--font-weight-bold);
   }
 
   .section-intro {
