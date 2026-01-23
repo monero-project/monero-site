@@ -192,14 +192,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     )
   }
 
-  <IconLink
-    href={link}
-    icon={null}
-    size="sm"
-    weight="medium"
-    underline
-    class="visit-link"
-  >
+  <IconLink href={link} size="sm" weight="semibold" class="visit-link">
     {linkText ?? t("common:components.communityCard.visitWebsite")}
   </IconLink>
 </Card>

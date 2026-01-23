@@ -47,16 +47,10 @@ const rtl = dir === "rtl";
 const isExternal =
   external ?? (href?.startsWith("http") || href?.startsWith("//"));
 
-// Auto-select icon if not provided and href exists
-// Use `null` to explicitly disable the icon
+// Auto-select icon if not provided. Use `null` to explicitly disable the icon.
+// Default to `arrowRight` when no href is provided.
 const resolvedIcon =
-  icon !== undefined
-    ? icon
-    : href
-      ? isExternal
-        ? externalLink
-        : arrowRight
-      : undefined;
+  icon !== undefined ? icon : isExternal ? externalLink : arrowRight;
 
 // Determine tag
 const Tag = (as ?? (href ? "a" : "span")) as HTMLTag;

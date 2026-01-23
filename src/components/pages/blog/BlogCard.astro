@@ -27,7 +27,7 @@ const date = localizeDateString(dateString, {
 const localizedLink = localizeHref(`/blog/${id}/`);
 ---
 
-<Card padding="2xl" border class="card-container">
+<Card padding="2xl" border transparent class="card-container">
   <a
     class:list={["thumbnail", { "no-image": !image }]}
     href={localizedLink}

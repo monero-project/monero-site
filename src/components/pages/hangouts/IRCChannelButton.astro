@@ -64,7 +64,6 @@ const { prefix, suffix } = parseChannelName(name);
     align-items: stretch;
     background: var(--card-color);
     border-radius: var(--radius-md);
-    overflow: hidden;
     transition: background 0.15s ease;
   }
 
@@ -116,6 +115,7 @@ const { prefix, suffix } = parseChannelName(name);
     justify-content: center;
     padding-inline: var(--space-xs);
     border-inline-start: 1px solid var(--border-color);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
     color: var(--paragraph-subtitle);
     transition:
       background 0.15s ease,

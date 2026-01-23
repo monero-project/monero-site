@@ -45,6 +45,7 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
     target="_blank"
     rel="noopener noreferrer external"
     class="primary-link"
+    tabindex="-1"
   >
     {
       logo && logoDimensions && (
@@ -98,7 +99,6 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
   .external-resource-button {
     display: flex;
     align-items: stretch;
-    overflow: hidden;
   }
 
   .primary-link {
