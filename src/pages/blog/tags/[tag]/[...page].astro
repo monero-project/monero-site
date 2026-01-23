@@ -1,5 +1,7 @@
 ---
 import BlogCard from "@/components/pages/blog/BlogCard.astro";
+import Row from "@/components/ui/Row.astro";
+import Grid from "@/components/ui/Grid.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageTabs from "@/components/ui/PageTabs.astro";
 import Paginator from "@/components/ui/Paginator.astro";
@@ -86,7 +88,7 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
     subtitle={t("blog:tags.hero.subtitle", { tag: translatedTag })}
   />
   <PageContainer>
-    <div class="tabs-bar">
+    <Row justify="between" align="center" class="tabs-bar">
       <PageTabs
         labels={tabs.map((tab) => tab.label)}
         links={tabs.map((tab) => localizeHref(tab.link))}
@@ -100,8 +102,8 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
       >
         <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
       </a>
-    </div>
-    <div class="blog-grid">
+    </Row>
+    <Grid columns={2} gap="md" class="blog-grid">
       {
         posts.map((post) => (
           <BlogCard
@@ -114,23 +116,17 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
           />
         ))
       }
-    </div>
+    </Grid>
     <Paginator page={page} />
   </PageContainer>
 </Layout>
 
 <style>
   .blog-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
     margin-top: var(--space-2xl);
   }
 
   .tabs-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: var(--space-2xl);
   }
 
@@ -143,9 +139,6 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
   }
 
   @media (min-width: 1200px) {
-    .blog-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
     .rss-icon {
       display: inline-flex;
       align-items: center;

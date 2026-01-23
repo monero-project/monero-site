@@ -1,0 +1,68 @@
+---
+import type { HTMLTag } from "astro/types";
+
+interface Props {
+  columns?: 1 | 2 | 3 | 4;
+  minWidth?: string;
+  gap?: "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
+  as?: "div" | "ul" | "ol";
+  class?: string;
+}
+
+const {
+  columns,
+  minWidth,
+  gap = "lg",
+  as = "div",
+  class: className,
+  ...rest
+}: Props = Astro.props;
+const Tag = as as HTMLTag;
+
+if (columns && minWidth) {
+  throw new Error(
+    "Cannot use both columns and minWidth on the same Grid component.",
+  );
+}
+
+const mode = columns ? "fixed" : minWidth ? "auto" : undefined;
+const gridGap = `var(--space-${gap})`;
+const gridCols = columns ?? 1;
+const gridMinWidth = minWidth ?? "20rem";
+---
+
+<Tag class:list={["grid", mode && `grid--${mode}`, className]} {...rest}>
+  <slot />
+</Tag>
+
+<style
+  define:vars={{
+    "grid-gap": gridGap,
+    "grid-cols": gridCols,
+    "grid-min-width": gridMinWidth,
+  }}
+>
+  .grid {
+    display: grid;
+    gap: var(--grid-gap);
+  }
+  .grid--fixed {
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  .grid--auto {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--grid-min-width), 100%), 1fr)
+    );
+  }
+  .grid:is(ul, ol) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 900px) {
+    .grid--fixed {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

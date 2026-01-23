@@ -5,6 +5,9 @@ import GetStartedCard from "@/components/pages/index/GetStartedCard.astro";
 import Hero from "@/components/pages/index/Hero.astro";
 import IndexCard from "@/components/pages/index/IndexCard.astro";
 import ResourceCard from "@/components/pages/index/ResourceCard.astro";
+import Grid from "@/components/ui/Grid.astro";
+import Column from "@/components/ui/Column.astro";
+import VideoContainer from "@/components/ui/VideoContainer.astro";
 
 import codeIcon from "@/assets/icons/mask/codeXml.avif";
 import chatIcon from "@/assets/icons/mask/messageCircle.avif";
@@ -24,9 +27,7 @@ const { t, localizeHref } = Astro.locals;
       title={t("index:aboutTitle")}
       description={t("index:aboutDescription")}
     >
-      <div
-        style="display: flex; flex-direction: column; gap: var(--space-2xl);"
-      >
+      <Column gap="2xl">
         <div>
           <h2 style="margin-top: 0;">{t("index:main")}</h2>
           <p>
@@ -45,8 +46,8 @@ const { t, localizeHref } = Astro.locals;
             {t("index:communityText")}
           </p>
         </div>
-      </div>
-      <div class="video-container">
+      </Column>
+      <VideoContainer>
         <video
           width="100%"
           height="100%"
@@ -59,7 +60,7 @@ const { t, localizeHref } = Astro.locals;
           <track kind="captions" src="" srclang="en" label="No captions" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </VideoContainer>
     </IndexCard>
     <hr />
     <IndexCard
@@ -100,7 +101,7 @@ const { t, localizeHref } = Astro.locals;
       description={t("index:getInvolvedDescription")}
       id="get-involved"
     >
-      <div id="resource-container">
+      <Grid minWidth="250px" gap="2xl" class="resource-grid">
         <ResourceCard
           title={t("index:hangoutsTitle")}
           description={t("index:hangoutsDesc")}
@@ -122,7 +123,7 @@ const { t, localizeHref } = Astro.locals;
           ctaHref={localizeHref("/get-started/contribute")}
           icon={codeIcon}
         />
-      </div>
+      </Grid>
     </IndexCard>
   </div>
 </Layout>
@@ -154,28 +155,8 @@ const { t, localizeHref } = Astro.locals;
     margin: 1em 0;
   }
 
-  #resource-container {
+  .resource-grid {
     grid-column: span 2;
-    display: grid;
-    gap: var(--space-2xl);
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .video-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-  }
-
-  .video-container video {
-    position: absolute;
-    top: 0;
-    inset-inline-start: 0;
-    width: 100%;
-    height: 100%;
   }
 
   .landing-image {

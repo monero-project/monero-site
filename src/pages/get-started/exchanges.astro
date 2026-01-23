@@ -2,6 +2,7 @@
 import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -96,7 +97,7 @@ const highlightOptions = [
           <h2 class="filters-title">{t("exchanges:sidebarTitle")}</h2>
           <p class="filters-description">{t("exchanges:filtersDescription")}</p>
 
-          <div class="highlight-options">
+          <Column gap="md">
             {
               highlightOptions.map((opt) => {
                 const filterId = `filter-${opt.key}`;
@@ -130,7 +131,7 @@ const highlightOptions = [
               <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
               {t("common:aria.close")}
             </label>
-          </div>
+          </Column>
         </aside>
 
         <div class="main-content">
@@ -206,7 +207,7 @@ const highlightOptions = [
               aria-hidden="true"
               rtl={dir == "rtl"}
             />
-            <div style="display: flex; flex-direction: column;">
+            <Column gap="2xs">
               <span>{t("exchanges:sidebarTitle")}</span>
               <div class="mobile-filter-subtitle">
                 <span class="filter-text" data-filter="easiest"
@@ -219,7 +220,7 @@ const highlightOptions = [
                   >{t("exchanges:highlightOptions.selectedText.privacy")}</span
                 >
               </div>
-            </div>
+            </Column>
           </div>
         </label>
       </div>
@@ -272,11 +273,6 @@ const highlightOptions = [
     margin: 0.75rem 0 var(--space-2xl);
   }
 
-  .highlight-options {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-  }
   .highlight-option {
     display: flex;
     border: 1px solid var(--border-color);
@@ -396,7 +392,7 @@ const highlightOptions = [
     padding: var(--space-md) var(--space-2xl);
     padding-top: var(--space-2xl);
     background: var(--card-color);
-    border-radius: 1.25rem 1.25rem 0 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 
     max-height: 75vh;
     overflow-y: auto;

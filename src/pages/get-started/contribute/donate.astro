@@ -1,6 +1,8 @@
 ---
 import DonationAddress from "@/components/pages/contribute/DonationAddress.astro";
 import Button from "@/components/ui/Button.astro";
+import Row from "@/components/ui/Row.astro";
+import Grid from "@/components/ui/Grid.astro";
 import HeroCard from "@/components/ui/HeroCard.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
@@ -52,7 +54,7 @@ const { dir, t, localizeHref } = Astro.locals;
       title={t("contribute:donate.generalFund.title")}
       subtitle={t("contribute:donate.generalFund.subtitle")}
     >
-      <div class="addresses-grid">
+      <Grid columns={2} gap="md">
         <DonationAddress
           currency={t("contribute:donate.generalFund.moneroXmr")}
           address={contributingData.xmr.address}
@@ -72,13 +74,13 @@ const { dir, t, localizeHref } = Astro.locals;
           address={contributingData.btc.address}
           qrCode={`/contributing/${contributingData.btc.qr_filename}`}
         />
-      </div>
+      </Grid>
 
       <footer class="fund-footer">
         <p class="fund-note">
           {t("contribute:donate.generalFund.description")}
         </p>
-        <div class="fund-meta">
+        <Row gap="2xl" class="fund-meta">
           <span class="meta-item">
             <strong>{t("contribute:donate.generalFund.openAlias")}</strong>
             <code>donate.getmonero.org</code>
@@ -87,19 +89,13 @@ const { dir, t, localizeHref } = Astro.locals;
             <strong>{t("contribute:donate.generalFund.contact")}</strong>
             <a href="mailto:dev@getmonero.org">dev@getmonero.org</a>
           </span>
-        </div>
+        </Row>
       </footer>
     </PageSection>
   </PageContainer>
 </Layout>
 
 <style>
-  .addresses-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-  }
-
   .fund-footer {
     margin-top: var(--space-xl);
   }
@@ -112,9 +108,6 @@ const { dir, t, localizeHref } = Astro.locals;
   }
 
   .fund-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-xs) var(--space-2xl);
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
   }
@@ -140,11 +133,5 @@ const { dir, t, localizeHref } = Astro.locals;
 
   .meta-item a {
     font-weight: var(--font-weight-medium);
-  }
-
-  @media (min-width: 900px) {
-    .addresses-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
   }
 </style>

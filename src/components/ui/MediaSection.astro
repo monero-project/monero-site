@@ -1,0 +1,76 @@
+---
+import type { HTMLTag } from "astro/types";
+
+interface Props {
+  reverse?: boolean;
+  hideAsideOnMobile?: boolean;
+  as?: "section" | "div" | "article";
+  class?: string;
+}
+
+const {
+  reverse = false,
+  hideAsideOnMobile = true,
+  as = "section",
+  class: className,
+  ...rest
+}: Props = Astro.props;
+
+const Tag = as as HTMLTag;
+---
+
+<Tag
+  class:list={["section", className]}
+  data-reverse={reverse || undefined}
+  data-hide-aside={hideAsideOnMobile || undefined}
+  {...rest}
+>
+  <div class="content">
+    <slot />
+  </div>
+  <div class="aside">
+    <slot name="aside" />
+  </div>
+</Tag>
+
+<style>
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+  }
+  .content,
+  .aside {
+    min-width: 0;
+  }
+  .section[data-hide-aside] .aside {
+    display: none;
+  }
+
+  @media (min-width: 900px) {
+    .section {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    .section[data-reverse] .content {
+      order: 2;
+    }
+    .section[data-hide-aside] .aside {
+      display: block;
+    }
+    .aside {
+      position: relative;
+      align-self: stretch;
+    }
+    .aside :global(img) {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+  }
+</style>

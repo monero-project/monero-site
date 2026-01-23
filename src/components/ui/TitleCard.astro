@@ -21,14 +21,14 @@ const {
 const rtl = Astro.locals.dir === "rtl";
 ---
 
-<header class:list={[{ centered }]}>
+<header class="header" data-centered={centered || undefined}>
   {
     backHref && backLabel && (
-      <a href={backHref} class="back-link">
-        <span class="back-link-icon">
+      <a href={backHref} class="back">
+        <span class="back-icon">
           <MaskIcon src={chevronLeft} size="1.125rem" rtl={rtl} />
         </span>
-        <span class="back-link-label">{backLabel}</span>
+        <span class="back-label">{backLabel}</span>
       </a>
     )
   }
@@ -37,21 +37,18 @@ const rtl = Astro.locals.dir === "rtl";
 </header>
 
 <style>
-  header {
+  .header {
     display: flex;
     flex-direction: column;
   }
-
-  header.centered {
+  .header[data-centered] {
     align-items: center;
     text-align: center;
   }
-
-  header.centered .subtitle {
+  .header[data-centered] .subtitle {
     margin-inline: auto;
   }
-
-  .back-link {
+  .back {
     display: inline-flex;
     align-items: center;
     gap: var(--space-xs);
@@ -63,13 +60,11 @@ const rtl = Astro.locals.dir === "rtl";
     transition: color 0.15s ease;
     width: fit-content;
   }
-
-  .back-link:hover {
+  .back:hover {
     color: var(--monero-orange);
     text-decoration: none;
   }
-
-  .back-link-icon {
+  .back-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -79,15 +74,12 @@ const rtl = Astro.locals.dir === "rtl";
     background: var(--card-color);
     transition: background 0.15s ease;
   }
-
-  .back-link:hover .back-link-icon {
+  .back:hover .back-icon {
     background: var(--card-hover-color);
   }
-
-  .back-link-label {
+  .back-label {
     white-space: nowrap;
   }
-
   .title {
     margin: 0;
     color: var(--monero-orange);
@@ -95,7 +87,6 @@ const rtl = Astro.locals.dir === "rtl";
     line-height: var(--line-height-heading);
     font-size: var(--font-size-5xl);
   }
-
   .subtitle {
     max-width: 70ch;
     line-height: var(--line-height-body);

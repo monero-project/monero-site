@@ -4,13 +4,15 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 
 import BlogCard from "@/components/pages/blog/BlogCard.astro";
+import Row from "@/components/ui/Row.astro";
+import Grid from "@/components/ui/Grid.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageTabs from "@/components/ui/PageTabs.astro";
 import Paginator from "@/components/ui/Paginator.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import rssIcon from "@/assets/icons/mask/rss.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 
@@ -55,7 +57,7 @@ const tabs = [
     subtitle={t("blog:index.hero.subtitle")}
   />
   <PageContainer>
-    <div class="tabs-bar">
+    <Row justify="between" align="center" wrap={false} class="tabs-bar">
       <PageTabs
         labels={tabs.map((tab) => tab.label)}
         links={tabs.map((tab) => localizeHref(tab.link))}
@@ -69,8 +71,8 @@ const tabs = [
       >
         <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
       </a>
-    </div>
-    <div class="blog-grid">
+    </Row>
+    <Grid columns={2} gap="md" class="blog-grid">
       {
         posts.map((post) => (
           <BlogCard
@@ -83,22 +85,13 @@ const tabs = [
           />
         ))
       }
-    </div>
+    </Grid>
     <Paginator page={page} />
   </PageContainer>
 </Layout>
 
 <style>
-  .blog-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-  }
-
   .tabs-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: var(--space-2xl);
   }
 
@@ -108,6 +101,11 @@ const tabs = [
 
   .rss-icon {
     display: none;
+  }
+
+  /* Override Grid's default 900px breakpoint to 1200px for blog */
+  .blog-grid {
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: 1200px) {

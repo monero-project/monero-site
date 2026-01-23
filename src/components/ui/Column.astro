@@ -1,0 +1,46 @@
+---
+import type { HTMLTag } from "astro/types";
+
+interface Props {
+  gap?: "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
+  align?: "start" | "center" | "end" | "stretch";
+  as?: "div" | "ul" | "ol" | "section" | "nav" | "article";
+  class?: string;
+}
+
+const {
+  gap = "md",
+  align,
+  as = "div",
+  class: className,
+  ...rest
+}: Props = Astro.props;
+const Tag = as as HTMLTag;
+
+const alignMap = {
+  start: "flex-start",
+  center: "center",
+  end: "flex-end",
+  stretch: "stretch",
+};
+const gapValue = `var(--space-${gap})`;
+const alignValue = align ? alignMap[align] : "stretch";
+---
+
+<Tag class:list={["column", className]} {...rest}>
+  <slot />
+</Tag>
+
+<style define:vars={{ gap: gapValue, align: alignValue }}>
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    align-items: var(--align);
+  }
+  .column:is(ul, ol) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>

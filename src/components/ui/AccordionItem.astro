@@ -15,21 +15,22 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
 ---
 
 <details
-  class:list={["accordion-item", `accordion-item--${variant}`]}
+  class="item"
+  data-variant={variant !== "default" ? variant : undefined}
   name={name}
   open={open}
 >
-  <summary class="accordion-header">
-    <span class="accordion-title">{title}</span>
-    <div class="accordion-icon">
+  <summary class="header">
+    <span class="title">{title}</span>
+    <div class="icon">
       <MaskIcon src={chevronDownIcon} />
     </div>
   </summary>
   {
     content ? (
-      <div class="accordion-content" set:html={DOMPurify.sanitize(content)} />
+      <div class="content" set:html={DOMPurify.sanitize(content)} />
     ) : (
-      <div class="accordion-content">
+      <div class="content">
         <slot />
       </div>
     )
@@ -37,15 +38,13 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
 </details>
 
 <style>
-  .accordion-item {
+  .item {
     border-bottom: 1px solid var(--border-color);
   }
-
-  .accordion-item:last-child {
+  .item:last-child {
     border-bottom: none;
   }
-
-  .accordion-header {
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,18 +54,15 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
     user-select: none;
     gap: var(--space-sm);
   }
-
-  .accordion-header::-webkit-details-marker {
+  .header::-webkit-details-marker {
     display: none;
   }
-
-  .accordion-title {
+  .title {
     color: var(--heading-color);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-lg);
   }
-
-  .accordion-icon {
+  .icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,61 +74,54 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
     flex-shrink: 0;
     margin-inline-start: auto;
   }
-
-  .accordion-item[open] .accordion-icon {
+  .item[open] .icon {
     transform: rotate(180deg);
   }
-
-  .accordion-content {
+  .content {
     padding: 0 0 var(--space-xl) 0;
     color: var(--paragraph-main);
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-normal);
   }
 
-  /* Card variant: no borders, spaced items, card background and rounded corners */
-  .accordion-item--card {
+  /* Card variant */
+  .item[data-variant="card"] {
     border: none;
     margin-bottom: var(--space-sm);
     border-radius: var(--radius-lg);
     background: var(--card-color);
     padding: 0 var(--space-lg);
   }
-
-  .accordion-item--card:last-child {
+  .item[data-variant="card"]:last-child {
     margin-bottom: 0;
   }
-
-  .accordion-item--card .accordion-header {
+  .item[data-variant="card"] .header {
     padding: var(--space-lg) 0;
   }
-
-  .accordion-item--card:has(.accordion-header:focus-visible) {
+  .item[data-variant="card"]:has(.header:focus-visible) {
     border-radius: var(--radius-lg);
   }
-
-  .accordion-item--card .accordion-content {
+  .item[data-variant="card"] .content {
     padding: 0 0 var(--space-lg) 0;
   }
 
-  :global(.accordion-content > p:first-child) {
+  :global(.content > p:first-child) {
     margin-top: 0;
   }
-
-  :global(.accordion-content > p:last-child) {
+  :global(.content > p:last-child) {
     margin-bottom: 0;
   }
 
   @media (hover: hover) {
-    .accordion-header:hover .accordion-icon {
+    .header:hover .icon {
       background: var(--card-hover-color);
     }
   }
   @media screen and (max-width: 900px) {
-    .accordion-header {
+    .header {
       padding: var(--space-md) 0;
     }
-    .accordion-title {
+    .title {
       font-size: var(--font-size-base);
     }
   }

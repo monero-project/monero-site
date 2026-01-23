@@ -1,7 +1,9 @@
 ---
 import Button from "@/components/ui/Button.astro";
+import Row from "@/components/ui/Row.astro";
 import IconLink from "@/components/ui/IconLink.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
+import MediaSection from "@/components/ui/MediaSection.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
@@ -27,99 +29,84 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
   />
 
   <PageContainer>
-    <section class="feature-section">
-      <div class="text">
-        <h2>{t("contribute:network.mine.title")}</h2>
-        <p
-          set:html={safeMarkdown.parseInline(
-            t("contribute:network.mine.description"),
-          )}
-        />
-        <ul>
-          <li>{t("contribute:network.mine.bullets.earnXmr")}</li>
-          <li>{t("contribute:network.mine.bullets.noSpecializedHardware")}</li>
-          <li>{t("contribute:network.mine.bullets.convertCpuPower")}</li>
-        </ul>
-        <div class="cta-links">
-          <Button href={localizeHref("/get-started/mining/")}>
-            {t("contribute:network.mine.learnAboutMining")}
-            <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} />
-          </Button>
-        </div>
-      </div>
-      <div class="media">
-        <Image
-          src={moneroPickaxe}
-          alt={t("contribute:network.mine.imageAlt")}
-          format="avif"
-        />
-      </div>
-    </section>
+    <MediaSection>
+      <h2>{t("contribute:network.mine.title")}</h2>
+      <p
+        set:html={safeMarkdown.parseInline(
+          t("contribute:network.mine.description"),
+        )}
+      />
+      <ul>
+        <li>{t("contribute:network.mine.bullets.earnXmr")}</li>
+        <li>{t("contribute:network.mine.bullets.noSpecializedHardware")}</li>
+        <li>{t("contribute:network.mine.bullets.convertCpuPower")}</li>
+      </ul>
+      <Row gap="xl" class="cta-links">
+        <Button href={localizeHref("/get-started/mining/")}>
+          {t("contribute:network.mine.learnAboutMining")}
+          <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} />
+        </Button>
+      </Row>
+
+      <Image
+        slot="aside"
+        src={moneroPickaxe}
+        alt={t("contribute:network.mine.imageAlt")}
+        format="avif"
+      />
+    </MediaSection>
 
     <hr />
 
-    <section class="feature-section reverse">
-      <div class="text">
-        <h2>{t("contribute:network.runANode.title")}</h2>
-        <p>
-          {t("contribute:network.runANode.description")}
-        </p>
-        <ul>
-          <li>{t("contribute:network.runANode.bullets.validateBlocks")}</li>
-          <li>{t("contribute:network.runANode.bullets.reduceReliance")}</li>
-          <li>{t("contribute:network.runANode.bullets.enableOthers")}</li>
-        </ul>
-        <div class="cta-links">
-          <IconLink
-            href="https://docs.getmonero.org/running-node/monerod-systemd"
-            weight="bold"
-            underline
-          >
-            {t("contribute:network.runANode.moneroDocs")}
-          </IconLink>
-          <IconLink
-            href="https://sethforprivacy.com/guides/run-a-monero-node/"
-            weight="bold"
-            underline
-          >
-            {t("contribute:network.runANode.sethForPrivacy")}
-          </IconLink>
-        </div>
-      </div>
-      <div class="media">
-        <Image
-          src={serverImage}
-          alt={t("contribute:network.runANode.imageAlt")}
-          format="avif"
-        />
-      </div>
-    </section>
+    <MediaSection reverse>
+      <h2>{t("contribute:network.runANode.title")}</h2>
+      <p>
+        {t("contribute:network.runANode.description")}
+      </p>
+      <ul>
+        <li>{t("contribute:network.runANode.bullets.validateBlocks")}</li>
+        <li>{t("contribute:network.runANode.bullets.reduceReliance")}</li>
+        <li>{t("contribute:network.runANode.bullets.enableOthers")}</li>
+      </ul>
+      <Row gap="xl" class="cta-links">
+        <IconLink
+          href="https://docs.getmonero.org/running-node/monerod-systemd"
+          weight="bold"
+          underline
+        >
+          {t("contribute:network.runANode.moneroDocs")}
+        </IconLink>
+        <IconLink
+          href="https://sethforprivacy.com/guides/run-a-monero-node/"
+          weight="bold"
+          underline
+        >
+          {t("contribute:network.runANode.sethForPrivacy")}
+        </IconLink>
+      </Row>
+
+      <Image
+        slot="aside"
+        src={serverImage}
+        alt={t("contribute:network.runANode.imageAlt")}
+        format="avif"
+      />
+    </MediaSection>
   </PageContainer>
 </Layout>
 
 <style>
-  .feature-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-    align-items: center;
-  }
-
   hr {
     margin-block: var(--space-2xl);
   }
 
-  .feature-section h2 {
+  h2 {
     font-size: var(--font-size-3xl);
     color: var(--heading-color);
     margin: 0;
   }
 
-  .cta-links :global(.button) {
-    color: white;
-  }
-
-  .feature-section p {
+  p {
     font-size: var(--font-size-lg);
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-body);
@@ -127,7 +114,7 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
     margin: 0.75rem 0 0;
   }
 
-  .feature-section ul {
+  ul {
     margin: 1rem 0 0;
     padding: 0;
     padding-inline-start: var(--space-lg);
@@ -140,49 +127,15 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
     max-width: 60ch;
   }
 
-  .feature-section li::marker {
+  li::marker {
     color: var(--monero-orange);
   }
 
-  .media {
-    display: none;
-  }
-
   .cta-links {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--space-md) var(--space-xl);
     margin-top: var(--space-xl);
   }
 
-  @media (min-width: 900px) {
-    .feature-section {
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-    }
-
-    .media {
-      display: block;
-      position: relative;
-      min-width: 0;
-      align-self: stretch;
-      margin-block: var(--space-2xl);
-    }
-
-    .media :global(img) {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
-      display: block;
-      border-radius: var(--radius-xl);
-    }
-
-    .feature-section.reverse .text {
-      order: 2;
-    }
+  .cta-links :global(.button) {
+    color: white;
   }
 </style>

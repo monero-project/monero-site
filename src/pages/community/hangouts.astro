@@ -1,9 +1,11 @@
 ---
 import IRCChannelButton from "@/components/pages/hangouts/IRCChannelButton.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import Grid from "@/components/ui/Grid.astro";
 import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -28,9 +30,9 @@ const { t, localizeHref } = Astro.locals;
       {t("hangouts:workgroupsNote.content")}
     </InternalResourceButton>
 
-    <div class="hangouts-grid">
+    <Grid columns={2} gap="2xl" class="hangouts-grid">
       <PageSection title={t("hangouts:chat.title")} headingLevel={2}>
-        <ul class="resource-list">
+        <Column as="ul" gap="sm">
           {
             chatLinks.map((link) => (
               <li>
@@ -43,11 +45,11 @@ const { t, localizeHref } = Astro.locals;
               </li>
             ))
           }
-        </ul>
+        </Column>
       </PageSection>
 
       <PageSection title={t("hangouts:social.title")} headingLevel={2}>
-        <ul class="resource-list">
+        <Column as="ul" gap="sm">
           {
             socialLinks.map((link) => (
               <li>
@@ -60,14 +62,14 @@ const { t, localizeHref } = Astro.locals;
               </li>
             ))
           }
-        </ul>
+        </Column>
       </PageSection>
-    </div>
+    </Grid>
 
     <hr aria-hidden="true" />
 
     <PageSection title={t("hangouts:channels.title")}>
-      <ul class="channel-list">
+      <Grid as="ul" columns={2} gap="sm">
         {
           channels.map((ch) => (
             <li>
@@ -80,47 +82,13 @@ const { t, localizeHref } = Astro.locals;
             </li>
           ))
         }
-      </ul>
+      </Grid>
     </PageSection>
   </PageContainer>
 </Layout>
 
 <style>
   .hangouts-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-2xl);
     margin-top: var(--space-2xl);
-  }
-
-  .resource-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
-
-  .channel-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-sm);
-  }
-
-  @media (max-width: 1200px) {
-    .channel-list {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 900px) {
-    .hangouts-grid {
-      grid-template-columns: 1fr;
-      gap: var(--space-xl);
-    }
   }
 </style>

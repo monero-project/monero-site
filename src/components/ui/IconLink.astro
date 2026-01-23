@@ -30,7 +30,7 @@ const {
   icon,
   iconPosition = "end",
   iconSize = "1em",
-  size,
+  size = "base",
   weight = "semibold",
   color = "orange",
   underline = false,
@@ -38,30 +38,30 @@ const {
   as,
   class: className,
   ...rest
-} = Astro.props;
+}: Props = Astro.props;
 
 const { dir } = Astro.locals;
 const rtl = dir === "rtl";
 
-// Determine if link is external
 const isExternal =
   external ?? (href?.startsWith("http") || href?.startsWith("//"));
-
-// Auto-select icon if not provided. Use `null` to explicitly disable the icon.
-// Default to `arrowRight` when no href is provided.
 const resolvedIcon =
   icon !== undefined ? icon : isExternal ? externalLink : arrowRight;
-
-// Determine tag
 const Tag = (as ?? (href ? "a" : "span")) as HTMLTag;
+
+const sizeValue = `var(--font-size-${size})`;
+const weightValue = `var(--font-weight-${weight})`;
+const colorMap = {
+  orange: "var(--monero-orange)",
+  heading: "var(--heading-color)",
+  inherit: "inherit",
+};
+const colorValue = colorMap[color];
 ---
 
 <Tag
   href={href}
-  class:list={["icon-link", className]}
-  data-size={size}
-  data-weight={weight !== "semibold" ? weight : undefined}
-  data-color={color !== "orange" ? color : undefined}
+  class:list={["link", className]}
   data-underline={underline || undefined}
   data-icon-position={iconPosition !== "end" ? iconPosition : undefined}
   target={isExternal ? "_blank" : undefined}
@@ -81,56 +81,26 @@ const Tag = (as ?? (href ? "a" : "span")) as HTMLTag;
   }
 </Tag>
 
-<style>
-  .icon-link {
+<style define:vars={{ size: sizeValue, weight: weightValue, color: colorValue }}
+>
+  .link {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
     text-decoration: none;
-    font-weight: var(--font-weight-semibold);
-    color: var(--monero-orange);
+    font-size: var(--size);
+    font-weight: var(--weight);
+    color: var(--color);
   }
-
-  /* Disable global external link icon (we provide our own) */
-  .icon-link::after {
+  .link::after {
     display: none;
   }
-
-  /* Size variants */
-  .icon-link[data-size="sm"] {
-    font-size: var(--font-size-sm);
-  }
-  .icon-link[data-size="lg"] {
-    font-size: var(--font-size-lg);
-  }
-
-  /* Weight variants */
-  .icon-link[data-weight="normal"] {
-    font-weight: var(--font-weight-normal);
-  }
-  .icon-link[data-weight="medium"] {
-    font-weight: var(--font-weight-medium);
-  }
-  .icon-link[data-weight="bold"] {
-    font-weight: var(--font-weight-bold);
-  }
-
-  /* Color variants */
-  .icon-link[data-color="heading"] {
-    color: var(--heading-color);
-  }
-  .icon-link[data-color="inherit"] {
-    color: inherit;
-  }
-
-  /* Hover effects */
-  .icon-link:hover,
-  .icon-link:focus-visible {
+  .link:hover,
+  .link:focus-visible {
     opacity: 0.8;
   }
-
-  .icon-link[data-underline]:hover,
-  .icon-link[data-underline]:focus-visible {
+  .link[data-underline]:hover,
+  .link[data-underline]:focus-visible {
     opacity: 1;
     text-decoration: underline;
   }

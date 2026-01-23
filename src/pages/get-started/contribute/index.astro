@@ -1,5 +1,6 @@
 ---
 import CategoryCard from "@/components/ui/CategoryCard.astro";
+import Grid from "@/components/ui/Grid.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
@@ -35,7 +36,7 @@ const cards = [
   />
 
   <PageContainer>
-    <div class="card-grid">
+    <Grid columns={3} gap="xl">
       {
         cards.map((card) => (
           <CategoryCard
@@ -45,20 +46,6 @@ const cards = [
           />
         ))
       }
-    </div>
+    </Grid>
   </PageContainer>
 </Layout>
-
-<style>
-  .card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-  }
-
-  @media (min-width: 900px) {
-    .card-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-</style>

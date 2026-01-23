@@ -1,6 +1,7 @@
 ---
 import BlogContent from "@/components/pages/blog/BlogContent.astro";
 import BlogHeader from "@/components/pages/blog/BlogHeader.astro";
+import Card from "@/components/ui/Card.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getDateStringFromId } from "@/utils/blog";
 import type { GetStaticPaths } from "astro";
@@ -88,7 +89,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
       </BlogContent>
     </article>
 
-    <aside class="sidebar">
+    <Card as="aside" border transparent class="sidebar">
       <h2>{t("blog:post.recentPosts")}</h2>
       <ul class="recent-posts">
         {
@@ -115,7 +116,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
           })
         }
       </ul>
-    </aside>
+    </Card>
   </div>
 </Layout>
 
@@ -131,9 +132,6 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
   }
 
   .sidebar {
-    border: 1px solid var(--border-color);
-    padding: var(--space-xl);
-    border-radius: var(--radius-md);
     height: fit-content;
   }
 

@@ -1,6 +1,7 @@
 ---
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import Grid from "@/components/ui/Grid.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
@@ -29,7 +30,7 @@ const { t, localizeHref } = Astro.locals;
       subtitle={t("tools:explore.sections.blockExplorers.subtitle")}
       anchorId="explorers"
     >
-      <ul class="tool-list">
+      <Grid as="ul" columns={2} gap="sm">
         {
           blockExplorers.map((tool) => (
             <li>
@@ -42,7 +43,7 @@ const { t, localizeHref } = Astro.locals;
             </li>
           ))
         }
-      </ul>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -52,7 +53,7 @@ const { t, localizeHref } = Astro.locals;
       subtitle={t("tools:explore.sections.network.subtitle")}
       anchorId="network"
     >
-      <ul class="tool-list">
+      <Grid as="ul" columns={2} gap="sm">
         {
           networkTools.map((tool) => (
             <li>
@@ -64,7 +65,7 @@ const { t, localizeHref } = Astro.locals;
             </li>
           ))
         }
-      </ul>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -74,7 +75,7 @@ const { t, localizeHref } = Astro.locals;
       subtitle={t("tools:explore.sections.utilities.subtitle")}
       anchorId="utilities"
     >
-      <ul class="tool-list">
+      <Grid as="ul" columns={2} gap="sm">
         {
           utilities.map((tool) => (
             <li>
@@ -86,7 +87,7 @@ const { t, localizeHref } = Astro.locals;
             </li>
           ))
         }
-      </ul>
+      </Grid>
     </PageSection>
   </PageContainer>
 
@@ -102,20 +103,3 @@ const { t, localizeHref } = Astro.locals;
     >.
   </DisclaimerBar>
 </Layout>
-
-<style>
-  .tool-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-sm);
-  }
-
-  @media (max-width: 900px) {
-    .tool-list {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

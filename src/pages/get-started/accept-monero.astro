@@ -4,6 +4,7 @@ import AccordionItem from "@/components/ui/AccordionItem.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import IconLink from "@/components/ui/IconLink.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -27,11 +28,12 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
   />
 
   <PageContainer>
-    <div class="guide-content">
+    <div>
       <GuideStep
         step={localizeNumber(1)}
         title={t("accept-monero:steps.chooseSetup.title")}
         icon={appWindowIcon}
+        align="start"
       >
         <p>{t("accept-monero:steps.chooseSetup.intro")}</p>
 
@@ -62,13 +64,14 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
             <p>
               {t("accept-monero:steps.chooseSetup.pos.description")}
             </p>
-            <div class="service-buttons">
+            <Column gap="xs" class="service-buttons">
               <ExternalResourceButton
                 href="https://bitrequest.io/"
                 title="BitRequest"
                 subtitle={t(
                   "accept-monero:steps.chooseSetup.pos.services.bitrequest",
                 )}
+                border
               />
               <ExternalResourceButton
                 href="https://docs.btcpayserver.org/Apps/#point-of-sale-app"
@@ -76,8 +79,9 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
                 subtitle={t(
                   "accept-monero:steps.chooseSetup.pos.services.btcpayPos",
                 )}
+                border
               />
-            </div>
+            </Column>
           </AccordionItem>
 
           <AccordionItem
@@ -105,13 +109,14 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
             <p>
               {t("accept-monero:steps.chooseSetup.selfHosted.description")}
             </p>
-            <div class="service-buttons">
+            <Column gap="xs" class="service-buttons">
               <ExternalResourceButton
                 href="https://btcpayserver.org/"
                 title="BTCPay Server"
                 subtitle={t(
                   "accept-monero:steps.chooseSetup.selfHosted.services.btcpay",
                 )}
+                border
               />
               <ExternalResourceButton
                 href="https://bitcart.ai/"
@@ -119,6 +124,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
                 subtitle={t(
                   "accept-monero:steps.chooseSetup.selfHosted.services.bitcart",
                 )}
+                border
               />
               <ExternalResourceButton
                 href="https://github.com/moneropay/moneropay"
@@ -126,8 +132,9 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
                 subtitle={t(
                   "accept-monero:steps.chooseSetup.selfHosted.services.moneropay",
                 )}
+                border
               />
-            </div>
+            </Column>
           </AccordionItem>
         </Accordion>
       </GuideStep>
@@ -177,18 +184,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
 </Layout>
 
 <style>
-  .guide-content :global(.guide-step:first-child) {
-    align-items: start;
-  }
-
   .service-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
     margin-top: var(--space-md);
-  }
-
-  .service-buttons :global(.external-resource-button) {
-    border: 1px solid var(--border-color);
   }
 </style>

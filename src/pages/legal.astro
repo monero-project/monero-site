@@ -1,6 +1,7 @@
 ---
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
@@ -54,7 +55,7 @@ const renderedSections = await Promise.all(
   <PageContainer>
     <TOCContainer sections={sections} ariaLabel={t("legal:aria.sectionsNav")} />
 
-    <div class="legal-content">
+    <Column class="legal-content">
       {
         renderedSections.map((section, index) => (
           <>
@@ -67,14 +68,12 @@ const renderedSections = await Promise.all(
           </>
         ))
       }
-    </div>
+    </Column>
   </PageContainer>
 </Layout>
 
 <style>
   .legal-content {
-    display: flex;
-    flex-direction: column;
     max-width: 75ch;
     margin-inline: auto;
   }

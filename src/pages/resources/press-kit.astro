@@ -1,10 +1,13 @@
 ---
 import Button from "@/components/ui/Button.astro";
+import Card from "@/components/ui/Card.astro";
+import Row from "@/components/ui/Row.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import Grid from "@/components/ui/Grid.astro";
 import IconLink from "@/components/ui/IconLink.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
-import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
@@ -60,7 +63,7 @@ const sections = [
       ariaLabel={t("press-kit:aria.sectionsNav")}
     />
 
-    <div class="press-content">
+    <Column gap="xl">
       <PageSection
         title={t("press-kit:sections.brandAssets.title")}
         anchorId="brand-assets"
@@ -69,10 +72,10 @@ const sections = [
           {t("press-kit:sections.brandAssets.intro")}
         </p>
 
-        <div class="assets-grid">
+        <Grid minWidth="22rem" gap="xl" class="assets-grid">
           {
             brandAssets.map((asset, i) => (
-              <div class="asset-card">
+              <Card>
                 <div class="asset-preview">
                   <Image
                     src={asset.preview}
@@ -87,13 +90,13 @@ const sections = [
                   <p>{t(`press-kit:assets.${asset.id}.description`)}</p>
                 </div>
 
-                <div class="asset-variants">
+                <Column gap="md" class="asset-variants">
                   {asset.variants.map((variant) => (
-                    <div class="variant-group">
+                    <Row gap="xs" class="variant-group">
                       <span class="variant-label">
                         {t(`press-kit:assets.variants.${variant.labelKey}`)}
                       </span>
-                      <div class="size-links">
+                      <Row gap="md">
                         {variant.sizes.map((size) => (
                           <a
                             href={size.url}
@@ -105,10 +108,10 @@ const sections = [
                             {t(`press-kit:assets.sizes.${size.labelKey}`)}
                           </a>
                         ))}
-                      </div>
-                    </div>
+                      </Row>
+                    </Row>
                   ))}
-                </div>
+                </Column>
 
                 {asset.vectorUrl && (
                   <div class="vector-download">
@@ -117,19 +120,19 @@ const sections = [
                     </Button>
                   </div>
                 )}
-              </div>
+              </Card>
             ))
           }
-        </div>
+        </Grid>
 
-        <div class="download-all">
+        <Row justify="end" class="download-all">
           <Button
             href="/media/press-kit/monero-press-kit.zip"
             variant="primary"
           >
             {t("press-kit:sections.brandAssets.downloadAll")}
           </Button>
-        </div>
+        </Row>
       </PageSection>
 
       <hr aria-hidden="true" />
@@ -138,11 +141,12 @@ const sections = [
         title={t("press-kit:sections.pressMaterials.title")}
         anchorId="press-materials"
       >
-        <PageSectionColumn columns={2}>
-          <PageSectionColumn
-            title={t("press-kit:sections.pressMaterials.pressDocumentation")}
-          >
-            <div class="resource-list">
+        <Grid columns={2} gap="2xl">
+          <Column gap="md">
+            <h3 class="column-title">
+              {t("press-kit:sections.pressMaterials.pressDocumentation")}
+            </h3>
+            <Column gap="sm">
               {
                 pressDocuments.map((doc) => (
                   <ExternalResourceButton
@@ -152,13 +156,14 @@ const sections = [
                   />
                 ))
               }
-            </div>
-          </PageSectionColumn>
+            </Column>
+          </Column>
 
-          <PageSectionColumn
-            title={t("press-kit:sections.pressMaterials.marketingMaterials")}
-          >
-            <div class="resource-list">
+          <Column gap="md">
+            <h3 class="column-title">
+              {t("press-kit:sections.pressMaterials.marketingMaterials")}
+            </h3>
+            <Column gap="sm">
               {
                 marketingResources.map((resource) => (
                   <ExternalResourceButton
@@ -170,9 +175,9 @@ const sections = [
                   />
                 ))
               }
-            </div>
-          </PageSectionColumn>
-        </PageSectionColumn>
+            </Column>
+          </Column>
+        </Grid>
       </PageSection>
 
       <hr aria-hidden="true" />
@@ -181,50 +186,42 @@ const sections = [
         title={t("press-kit:sections.contacts.title")}
         anchorId="contacts"
       >
-        <div class="contact-grid">
-          <div class="contact-card">
+        <Grid minWidth="18rem" gap="md">
+          <Card class="contact-card">
             <h3>{t("press-kit:sections.contacts.pressInquiries.title")}</h3>
             <p>{t("press-kit:sections.contacts.pressInquiries.description")}</p>
             <a href="mailto:press@getmonero.org" class="contact-link">
               press@getmonero.org
             </a>
-          </div>
-          <div class="contact-card">
+          </Card>
+          <Card class="contact-card">
             <h3>{t("press-kit:sections.contacts.workgroups.title")}</h3>
             <p>{t("press-kit:sections.contacts.workgroups.description")}</p>
             <IconLink href={localizeHref("/community/workgroups")}>
               {t("press-kit:sections.contacts.workgroups.link")}
             </IconLink>
-          </div>
-          <div class="contact-card">
+          </Card>
+          <Card class="contact-card">
             <h3>{t("press-kit:sections.contacts.community.title")}</h3>
             <p>{t("press-kit:sections.contacts.community.description")}</p>
             <IconLink href={localizeHref("/community/hangouts")}>
               {t("press-kit:sections.contacts.community.link")}
             </IconLink>
-          </div>
-        </div>
+          </Card>
+        </Grid>
       </PageSection>
-    </div>
+    </Column>
   </PageContainer>
 </Layout>
 
 <style>
-  .press-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
-    gap: var(--space-md);
-  }
-
-  .contact-card {
-    background: var(--card-color);
-    border-radius: var(--radius-md);
-    padding: var(--space-xl);
+  .column-title {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--paragraph-main);
   }
 
   .contact-card h3 {
@@ -247,21 +244,10 @@ const sections = [
 
   .download-all {
     margin-top: var(--space-2xl);
-    display: flex;
-    justify-content: flex-end;
   }
 
   .assets-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
-    gap: var(--space-xl);
     margin-bottom: var(--space-2xl);
-  }
-
-  .asset-card {
-    background: var(--card-color);
-    border-radius: var(--radius-md);
-    padding: var(--space-xl);
   }
 
   .asset-preview {
@@ -297,29 +283,11 @@ const sections = [
     font-size: var(--font-size-sm);
   }
 
-  .asset-variants {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-  }
-
-  .variant-group {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--space-xs);
-  }
-
   .variant-label {
     font-size: var(--font-size-sm);
     color: var(--paragraph-main);
     font-weight: var(--font-weight-medium);
     min-width: 10rem;
-  }
-
-  .size-links {
-    display: flex;
-    gap: var(--space-md);
   }
 
   .size-link {
@@ -330,11 +298,5 @@ const sections = [
     margin-top: var(--space-lg);
     padding-top: var(--space-md);
     border-top: 1px solid var(--border-color);
-  }
-
-  .resource-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
   }
 </style>

@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 
 import CommunityCard from "@/components/pages/downloads/CommunityCard.astro";
+import Grid from "@/components/ui/Grid.astro";
 import PageTabs from "@/components/ui/PageTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
@@ -111,7 +112,7 @@ const setBuiltinId = (wallet: Wallet) => {
       <h3 class="subheading">
         {t("downloads:community.categories.moneroOnly")}
       </h3>
-      <div class="cards-grid compact">
+      <Grid minWidth="20rem" gap="lg" class="compact-grid">
         {
           sortWallets(communityWallets.wallets.moneroOnly).map((wallet) => (
             <CommunityCard
@@ -128,12 +129,12 @@ const setBuiltinId = (wallet: Wallet) => {
             />
           ))
         }
-      </div>
+      </Grid>
 
       <h3 class="subheading">
         {t("downloads:community.categories.multiCoin")}
       </h3>
-      <div class="cards-grid compact">
+      <Grid minWidth="20rem" gap="lg" class="compact-grid">
         {
           sortWallets(communityWallets.wallets.multiCoin).map((wallet) => (
             <CommunityCard
@@ -150,7 +151,7 @@ const setBuiltinId = (wallet: Wallet) => {
             />
           ))
         }
-      </div>
+      </Grid>
 
       <h3 class="subheading">
         {t("downloads:community.categories.lws.title")}
@@ -158,7 +159,7 @@ const setBuiltinId = (wallet: Wallet) => {
       <DisclaimerNote
         text={t("downloads:community.categories.lws.disclaimer")}
       />
-      <div class="cards-grid">
+      <Grid minWidth="25rem" gap="lg">
         {
           sortWallets(communityWallets.wallets.lws).map((wallet) => (
             <CommunityCard
@@ -175,7 +176,7 @@ const setBuiltinId = (wallet: Wallet) => {
             />
           ))
         }
-      </div>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -186,7 +187,7 @@ const setBuiltinId = (wallet: Wallet) => {
       title={t("downloads:community.sections.cold.title")}
       subtitle={t("downloads:community.sections.cold.subtitle")}
     >
-      <div class="cards-grid">
+      <Grid minWidth="25rem" gap="lg">
         {
           sortWallets(communityWallets.cold).map((wallet) => (
             <CommunityCard
@@ -203,7 +204,7 @@ const setBuiltinId = (wallet: Wallet) => {
             />
           ))
         }
-      </div>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -214,7 +215,7 @@ const setBuiltinId = (wallet: Wallet) => {
       title={t("downloads:community.sections.nodes.title")}
       subtitle={t("downloads:community.sections.nodes.subtitle")}
     >
-      <div class="cards-grid">
+      <Grid minWidth="25rem" gap="lg">
         {
           sortWallets(communityWallets.nodes).map((wallet) => (
             <CommunityCard
@@ -231,7 +232,7 @@ const setBuiltinId = (wallet: Wallet) => {
             />
           ))
         }
-      </div>
+      </Grid>
     </PageSection>
 
     <DisclaimerBar
@@ -255,24 +256,8 @@ const setBuiltinId = (wallet: Wallet) => {
     margin: var(--space-lg) 0 var(--space-2xs) 0;
   }
 
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: var(--space-lg);
-  }
-
-  .cards-grid.compact {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  .compact-grid {
     padding: var(--space-xs) 0 var(--space-md) 0;
-  }
-
-  @media (max-width: 900px) {
-    .cards-grid,
-    .cards-grid.compact {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-sm);
-    }
   }
 
   @media (max-width: 1200px) {

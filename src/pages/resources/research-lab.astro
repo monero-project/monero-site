@@ -6,10 +6,13 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import SectionTabs from "@/components/ui/SectionTabs.astro";
+import SidebarCard from "@/components/ui/SidebarCard.astro";
+import SidebarLayout from "@/components/ui/SidebarLayout.astro";
+import SidebarLink from "@/components/ui/SidebarLink.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
@@ -97,209 +100,63 @@ const paperTabs = [
       subtitle={t("knowledge-base:researchLab.papers.subtitle")}
       anchorId="papers"
     >
-      <div class="research-layout">
-        <div class="main-content">
-          <SectionTabs tabs={paperTabs}>
-            <div slot="panel-0" class="papers-grid">
-              {
-                mrlBulletins.map((paper) => (
-                  <PaperCard
-                    code={paper.code}
-                    title={paper.title}
-                    abstract={paper.abstract}
-                    url={paper.url}
-                    note={paper.note}
-                  />
-                ))
-              }
-            </div>
-            <div slot="panel-1" class="papers-grid">
-              {
-                iacrPapers.map((paper) => (
-                  <PaperCard
-                    code={paper.code}
-                    title={paper.title}
-                    abstract={paper.abstract}
-                    url={paper.url}
-                    note={paper.note}
-                  />
-                ))
-              }
-            </div>
-            <div slot="panel-2" class="papers-grid">
-              {
-                otherPapers.map((paper) => (
-                  <PaperCard
-                    code={paper.code}
-                    title={paper.title}
-                    abstract={paper.abstract}
-                    url={paper.url}
-                    note={paper.note}
-                  />
-                ))
-              }
-            </div>
-          </SectionTabs>
-        </div>
+      <SidebarLayout>
+        <SectionTabs tabs={paperTabs}>
+          <Column slot="panel-0" gap="sm">
+            {
+              mrlBulletins.map((paper) => (
+                <PaperCard
+                  code={paper.code}
+                  title={paper.title}
+                  abstract={paper.abstract}
+                  url={paper.url}
+                  note={paper.note}
+                />
+              ))
+            }
+          </Column>
+          <Column slot="panel-1" gap="sm">
+            {
+              iacrPapers.map((paper) => (
+                <PaperCard
+                  code={paper.code}
+                  title={paper.title}
+                  abstract={paper.abstract}
+                  url={paper.url}
+                  note={paper.note}
+                />
+              ))
+            }
+          </Column>
+          <Column slot="panel-2" gap="sm">
+            {
+              otherPapers.map((paper) => (
+                <PaperCard
+                  code={paper.code}
+                  title={paper.title}
+                  abstract={paper.abstract}
+                  url={paper.url}
+                  note={paper.note}
+                />
+              ))
+            }
+          </Column>
+        </SectionTabs>
 
-        <aside class="sidebar">
-          <h3 class="sidebar-title">
-            {t("knowledge-base:researchLab.whitepapers.title")}
-          </h3>
-          <p class="sidebar-subtitle">
-            {t("knowledge-base:researchLab.whitepapers.subtitle")}
-          </p>
+        <SidebarCard
+          slot="sidebar"
+          title={t("knowledge-base:researchLab.whitepapers.title")}
+          subtitle={t("knowledge-base:researchLab.whitepapers.subtitle")}
+        >
           {
             whitepapers.map((paper) => (
-              <a
-                href={paper.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="whitepaper-item"
-              >
-                <span class="whitepaper-icon">
-                  <MaskIcon
-                    src={bookTextIcon}
-                    size="1.25rem"
-                    rtl={dir === "rtl"}
-                  />
-                </span>
-                <span class="whitepaper-title">
-                  {t(
-                    `knowledge-base:researchLab.whitepapers.items.${paper.id}`,
-                  )}
-                </span>
-                <span class="whitepaper-arrow">
-                  <MaskIcon
-                    src={arrowRightIcon}
-                    size="1em"
-                    rtl={dir === "rtl"}
-                  />
-                </span>
-              </a>
+              <SidebarLink href={paper.url} icon={bookTextIcon} external>
+                {t(`knowledge-base:researchLab.whitepapers.items.${paper.id}`)}
+              </SidebarLink>
             ))
           }
-        </aside>
-      </div>
+        </SidebarCard>
+      </SidebarLayout>
     </PageSection>
   </PageContainer>
 </Layout>
-
-<style>
-  .research-layout {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xl);
-  }
-
-  .papers-grid {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
-
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-    background: var(--card-color);
-    border-radius: var(--radius-md);
-    padding: var(--space-md);
-  }
-
-  .sidebar-title {
-    margin: 0;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-  }
-
-  .sidebar-subtitle {
-    margin: 0 0 var(--space-xs);
-    color: var(--paragraph-subtitle);
-  }
-
-  .whitepaper-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-    padding: var(--space-sm);
-    background: var(--background-color);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    transition: background 0.15s ease;
-  }
-
-  .whitepaper-item::after {
-    display: none;
-  }
-
-  .whitepaper-item:hover {
-    background: var(--card-hover-color);
-  }
-
-  .whitepaper-item:hover .whitepaper-arrow {
-    opacity: 1;
-    color: var(--monero-orange);
-  }
-
-  .whitepaper-icon {
-    flex-shrink: 0;
-    color: var(--monero-orange);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .whitepaper-title {
-    flex: 1;
-    font-size: var(--font-size-sm);
-    color: var(--heading-color);
-  }
-
-  .whitepaper-arrow {
-    flex-shrink: 0;
-    color: var(--paragraph-subtitle);
-    opacity: 0.5;
-    transition:
-      opacity 0.15s ease,
-      color 0.15s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (min-width: 600px) {
-    .sidebar {
-      padding: var(--space-xl);
-    }
-
-    .sidebar-title {
-      font-size: var(--font-size-xl);
-    }
-
-    .whitepaper-item {
-      padding: 0.75rem var(--space-md);
-      gap: var(--space-sm);
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .research-layout {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    .main-content {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .sidebar {
-      position: sticky;
-      top: 2rem;
-      flex: 0 0 20rem;
-    }
-  }
-</style>

@@ -1,0 +1,45 @@
+---
+import Column from "./Column.astro";
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  class?: string;
+}
+
+const { title, subtitle, class: className, ...rest } = Astro.props;
+---
+
+<Column gap="xs" class:list={["card", className]} {...rest}>
+  {title && <h3 class="title">{title}</h3>}
+  {subtitle && <p class="subtitle">{subtitle}</p>}
+  <slot />
+</Column>
+
+<style>
+  .card {
+    background: var(--card-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+  }
+  .title {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+  }
+  .subtitle {
+    margin: 0 0 var(--space-xs);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  @media (min-width: 600px) {
+    .card {
+      padding: var(--space-xl);
+    }
+    .title {
+      font-size: var(--font-size-xl);
+    }
+  }
+</style>

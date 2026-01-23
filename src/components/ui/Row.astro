@@ -1,0 +1,64 @@
+---
+import type { HTMLTag } from "astro/types";
+
+interface Props {
+  gap?: "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
+  justify?: "start" | "center" | "end" | "between" | "around";
+  align?: "start" | "center" | "end" | "baseline" | "stretch";
+  wrap?: boolean;
+  as?: "div" | "ul" | "ol" | "nav";
+  class?: string;
+}
+
+const {
+  gap = "md",
+  justify = "start",
+  align = "center",
+  wrap = true,
+  as = "div",
+  class: className,
+  ...rest
+}: Props = Astro.props;
+const Tag = as as HTMLTag;
+
+const justifyMap = {
+  start: "flex-start",
+  center: "center",
+  end: "flex-end",
+  between: "space-between",
+  around: "space-around",
+};
+const alignMap = {
+  start: "flex-start",
+  center: "center",
+  end: "flex-end",
+  baseline: "baseline",
+  stretch: "stretch",
+};
+const gapValue = `var(--space-${gap})`;
+const justifyValue = justifyMap[justify];
+const alignValue = alignMap[align];
+---
+
+<Tag class:list={["row", className]} data-nowrap={!wrap || undefined} {...rest}>
+  <slot />
+</Tag>
+
+<style define:vars={{ gap: gapValue, justify: justifyValue, align: alignValue }}
+>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    justify-content: var(--justify);
+    align-items: var(--align);
+  }
+  .row[data-nowrap] {
+    flex-wrap: nowrap;
+  }
+  .row:is(ul, ol) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>

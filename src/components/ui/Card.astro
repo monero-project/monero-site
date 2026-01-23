@@ -16,7 +16,7 @@ interface Props {
 }
 
 const {
-  padding = "lg",
+  padding = "xl",
   radius = "md",
   border = false,
   hover = false,
@@ -24,13 +24,14 @@ const {
   as: Tag = "div",
   class: className,
   ...rest
-} = Astro.props;
+}: Props = Astro.props;
+
+const cardPadding = padding === "none" ? "0" : `var(--space-${padding})`;
+const cardRadius = radius === "none" ? "0" : `var(--radius-${radius})`;
 ---
 
 <Tag
   class:list={["card", className]}
-  data-padding={padding !== "lg" ? padding : undefined}
-  data-radius={radius !== "md" ? radius : undefined}
   data-border={border || undefined}
   data-hover={hover || undefined}
   data-transparent={transparent || undefined}
@@ -39,62 +40,22 @@ const {
   <slot />
 </Tag>
 
-<style>
+<style define:vars={{ "card-padding": cardPadding, "card-radius": cardRadius }}>
   .card {
     background: var(--card-color);
-    padding: var(--space-lg);
-    border-radius: var(--radius-md);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    overflow: hidden;
   }
-
-  /* Padding variants */
-  .card[data-padding="none"] {
-    padding: 0;
-  }
-  .card[data-padding="xs"] {
-    padding: var(--space-xs);
-  }
-  .card[data-padding="sm"] {
-    padding: var(--space-sm);
-  }
-  .card[data-padding="md"] {
-    padding: var(--space-md);
-  }
-  .card[data-padding="xl"] {
-    padding: var(--space-xl);
-  }
-  .card[data-padding="2xl"] {
-    padding: var(--space-2xl);
-  }
-
-  /* Radius variants */
-  .card[data-radius="none"] {
-    border-radius: 0;
-  }
-  .card[data-radius="sm"] {
-    border-radius: var(--radius-sm);
-  }
-  .card[data-radius="lg"] {
-    border-radius: var(--radius-lg);
-  }
-  .card[data-radius="xl"] {
-    border-radius: var(--radius-xl);
-  }
-
-  /* Border modifier */
   .card[data-border] {
     border: 1px solid var(--border-color);
   }
-
-  /* Transparent modifier */
   .card[data-transparent] {
     background: transparent;
   }
-
-  /* Hover modifier */
   .card[data-hover] {
     transition: background 0.15s ease;
   }
-
   .card[data-hover]:hover,
   .card[data-hover]:focus-within {
     background: var(--card-hover-color);

@@ -14,7 +14,7 @@ const { code, title, abstract, url, note } = Astro.props;
 const { t } = Astro.locals;
 ---
 
-<Card as="article" class="paper-card">
+<Card as="article" padding="lg" class="paper-card">
   <div class="paper-header">
     {code && <span class="paper-code">{code}</span>}
     {note && <span class="paper-badge">{note}</span>}

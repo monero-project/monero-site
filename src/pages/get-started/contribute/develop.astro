@@ -1,13 +1,17 @@
 ---
+import Card from "@/components/ui/Card.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
+import SidebarCard from "@/components/ui/SidebarCard.astro";
+import SidebarLayout from "@/components/ui/SidebarLayout.astro";
+import SidebarLink from "@/components/ui/SidebarLink.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import appWindowIcon from "@/assets/icons/mask/app-window.avif";
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import codeXmlIcon from "@/assets/icons/mask/codeXml.avif";
 import coinsIcon from "@/assets/icons/mask/coins.avif";
@@ -17,7 +21,7 @@ import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 import terminalIcon from "@/assets/icons/mask/terminal.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
 
-const { dir, t, localizeHref } = Astro.locals;
+const { t, localizeHref } = Astro.locals;
 
 const coreProjects = [
   {
@@ -84,13 +88,13 @@ const communityProjects = [
   />
 
   <PageContainer>
-    <div class="develop-layout">
-      <div class="main-content">
+    <SidebarLayout>
+      <Column gap="2xl">
         <PageSection
           title={t("contribute:develop.coreProjects")}
           subtitle={t("contribute:develop.coreProjectsSubtitle")}
         >
-          <div class="table-wrap">
+          <Card padding="none">
             <table class="projects-table">
               <thead class="table-head">
                 <tr>
@@ -137,14 +141,14 @@ const communityProjects = [
                 }
               </tbody>
             </table>
-          </div>
+          </Card>
         </PageSection>
 
         <PageSection
           title={t("contribute:develop.communityProjects")}
           subtitle={t("contribute:develop.communityProjectsSubtitle")}
         >
-          <div class="ecosystem-grid">
+          <Column gap="sm">
             {
               communityProjects.map((project) => (
                 <ExternalResourceButton
@@ -155,154 +159,71 @@ const communityProjects = [
                 />
               ))
             }
-          </div>
+          </Column>
         </PageSection>
-      </div>
+      </Column>
 
-      <aside class="sidebar">
-        <div class="sidebar-section">
-          <h3 class="sidebar-title">
-            {t("contribute:develop.bounties.title")}
-          </h3>
-          <p class="sidebar-subtitle">
-            {t("contribute:develop.bounties.description")}
-          </p>
-          <a
+      <Fragment slot="sidebar">
+        <SidebarCard
+          title={t("contribute:develop.bounties.title")}
+          subtitle={t("contribute:develop.bounties.description")}
+        >
+          <SidebarLink
             href="https://bounties.monero.social/"
-            target="_blank"
-            rel="noopener"
-            class="sidebar-item"
+            icon={coinsIcon}
+            external
           >
-            <span class="sidebar-item-icon">
-              <MaskIcon src={coinsIcon} size="1.25rem" />
-            </span>
-            <span class="sidebar-item-title"
-              >{t("contribute:develop.bounties.browseMoneroBounties")}</span
-            >
-            <span class="sidebar-item-arrow">
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
-            </span>
-          </a>
-          <a
+            {t("contribute:develop.bounties.browseMoneroBounties")}
+          </SidebarLink>
+          <SidebarLink
             href="https://hackerone.com/monero"
-            target="_blank"
-            rel="noopener"
-            class="sidebar-item"
+            icon={shieldCheckIcon}
+            external
           >
-            <span class="sidebar-item-icon">
-              <MaskIcon src={shieldCheckIcon} size="1.25rem" />
-            </span>
-            <span class="sidebar-item-title"
-              >{t("contribute:develop.bounties.securityDisclosures")}</span
-            >
-            <span class="sidebar-item-arrow">
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
-            </span>
-          </a>
-        </div>
+            {t("contribute:develop.bounties.securityDisclosures")}
+          </SidebarLink>
+        </SidebarCard>
 
-        <div class="sidebar-section">
-          <h3 class="sidebar-title">
-            {t("contribute:develop.workgroups.title")}
-          </h3>
-          <p class="sidebar-subtitle">
-            {t("contribute:develop.workgroups.description")}
-          </p>
-          <a href={localizeHref("/community/workgroups/")} class="sidebar-item">
-            <span class="sidebar-item-icon">
-              <MaskIcon src={usersIcon} size="1.25rem" />
-            </span>
-            <span class="sidebar-item-title"
-              >{t("contribute:develop.workgroups.joinWorkgroups")}</span
-            >
-            <span class="sidebar-item-arrow">
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
-            </span>
-          </a>
-        </div>
+        <SidebarCard
+          title={t("contribute:develop.workgroups.title")}
+          subtitle={t("contribute:develop.workgroups.description")}
+        >
+          <SidebarLink
+            href={localizeHref("/community/workgroups/")}
+            icon={usersIcon}
+          >
+            {t("contribute:develop.workgroups.joinWorkgroups")}
+          </SidebarLink>
+        </SidebarCard>
 
-        <div class="sidebar-section">
-          <h3 class="sidebar-title">
-            {t("contribute:develop.resources.title")}
-          </h3>
-          <a
+        <SidebarCard title={t("contribute:develop.resources.title")}>
+          <SidebarLink
             href="https://docs.getmonero.org/"
-            target="_blank"
-            rel="noopener"
-            class="sidebar-item"
+            icon={bookTextIcon}
+            external
           >
-            <span class="sidebar-item-icon">
-              <MaskIcon src={bookTextIcon} size="1.25rem" />
-            </span>
-            <span class="sidebar-item-title"
-              >{t("contribute:develop.resources.moneroDocs")}</span
-            >
-            <span class="sidebar-item-arrow">
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
-            </span>
-          </a>
-          <a
+            {t("contribute:develop.resources.moneroDocs")}
+          </SidebarLink>
+          <SidebarLink
             href={localizeHref("/resources/tools/develop/")}
-            class="sidebar-item"
+            icon={codeXmlIcon}
           >
-            <span class="sidebar-item-icon">
-              <MaskIcon src={codeXmlIcon} size="1.25rem" />
-            </span>
-            <span class="sidebar-item-title"
-              >{t("contribute:develop.resources.librariesSdks")}</span
-            >
-            <span class="sidebar-item-arrow">
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
-            </span>
-          </a>
-          <a
+            {t("contribute:develop.resources.librariesSdks")}
+          </SidebarLink>
+          <SidebarLink
             href="https://github.com/monero-project"
-            target="_blank"
-            rel="noopener"
-            class="sidebar-item"
+            icon={externalLinkIcon}
+            external
           >
-            <span class="sidebar-item-icon">
-              <MaskIcon src={externalLinkIcon} size="1.25rem" />
-            </span>
-            <span class="sidebar-item-title"
-              >{t("contribute:develop.resources.githubOrganization")}</span
-            >
-            <span class="sidebar-item-arrow">
-              <MaskIcon src={arrowRightIcon} size="1em" rtl={dir === "rtl"} />
-            </span>
-          </a>
-        </div>
-      </aside>
-    </div>
+            {t("contribute:develop.resources.githubOrganization")}
+          </SidebarLink>
+        </SidebarCard>
+      </Fragment>
+    </SidebarLayout>
   </PageContainer>
 </Layout>
 
 <style>
-  .develop-layout {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xl);
-  }
-
-  .main-content {
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xl);
-  }
-
-  .table-wrap {
-    background: var(--card-color);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-  }
-
-  .ecosystem-grid {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
-
   .cell-stack {
     display: none;
     width: 8rem;
@@ -388,98 +309,10 @@ const communityProjects = [
     border: 0;
   }
 
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-  }
-
-  .sidebar-section {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-    background: var(--card-color);
-    border-radius: var(--radius-md);
-    padding: var(--space-md);
-  }
-
-  .sidebar-title {
-    margin: 0;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-bold);
-    color: var(--heading-color);
-  }
-
-  .sidebar-subtitle {
-    margin: 0 0 var(--space-xs);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-  }
-
-  .sidebar-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    padding: 0.75rem var(--space-md);
-    background: var(--background-color);
-    font-size: var(--font-size-sm);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    transition: background 0.15s ease;
-  }
-
-  .sidebar-item::after {
-    display: none;
-  }
-
-  .sidebar-item:hover {
-    background: var(--card-hover-color);
-  }
-
-  .sidebar-item:hover .sidebar-item-arrow {
-    opacity: 1;
-    color: var(--monero-orange);
-  }
-
-  .sidebar-item-icon {
-    flex-shrink: 0;
-    color: var(--monero-orange);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .sidebar-item-title {
-    flex: 1;
-    font-weight: var(--font-weight-medium);
-    color: var(--heading-color);
-  }
-
-  .sidebar-item-arrow {
-    flex-shrink: 0;
-    color: var(--paragraph-subtitle);
-    opacity: 0.5;
-    transition:
-      opacity 0.15s ease,
-      color 0.15s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   @media (min-width: 600px) {
     .cell-stack,
     .projects-table th:nth-child(3) {
       display: table-cell;
-    }
-
-    .sidebar-section {
-      padding: var(--space-xl);
-    }
-
-    .sidebar-title {
-      font-size: var(--font-size-xl);
     }
   }
 
@@ -491,23 +324,6 @@ const communityProjects = [
 
     .projects-table :is(th, td):not(:first-child) {
       padding-inline: var(--space-lg);
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .develop-layout {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    .main-content {
-      flex: 1;
-    }
-
-    .sidebar {
-      position: sticky;
-      top: 2rem;
-      flex: 0 0 20rem;
     }
   }
 </style>

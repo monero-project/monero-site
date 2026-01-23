@@ -14,6 +14,7 @@ export interface Props extends HTMLAttributes<"div"> {
   logo?: string;
   onionHref?: string;
   variant?: "default" | "mini";
+  border?: boolean;
 }
 
 const {
@@ -23,6 +24,7 @@ const {
   logo,
   onionHref,
   variant = "default",
+  border = false,
   ...rest
 } = Astro.props;
 const { t, dir } = Astro.locals;
@@ -38,6 +40,7 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
     variant,
     { "has-onion": onionHref, "has-logo": logo },
   ]}
+  data-border={border || undefined}
   {...rest}
 >
   <a
@@ -99,6 +102,11 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
   .external-resource-button {
     display: flex;
     align-items: stretch;
+  }
+
+  .external-resource-button[data-border] {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
   }
 
   .primary-link {

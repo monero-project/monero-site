@@ -3,9 +3,14 @@ import MaskIcon from "@/components/ui/MaskIcon.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
+import Row from "@/components/ui/Row.astro";
 import CTACard from "@/components/ui/CTACard.astro";
+import Grid from "@/components/ui/Grid.astro";
+import MediaSection from "@/components/ui/MediaSection.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import VideoContainer from "@/components/ui/VideoContainer.astro";
 
 import communityLogo from "@/assets/images/community-logo.avif";
 import cryptoLock from "@/assets/images/crypto-lock.avif";
@@ -46,54 +51,45 @@ const getLanguageLabel = (lang: string): string => {
 >
   <TitleCard title={t("what-is-monero:hero.title")} />
   <PageContainer>
-    <div class="card-item">
-      <div class="text">
-        <span class="eyebrow"
-          >{t("what-is-monero:sections.problem.eyebrow")}</span
-        >
-        <h2
-          set:html={safeMarkdown.parseInline(
-            t("what-is-monero:sections.problem.title"),
-          )}
-        />
-        <p
-          set:html={safeMarkdown.parseInline(
-            t("what-is-monero:sections.problem.content"),
-          )}
-        />
-      </div>
-      <div class="media">
-        <Image src={surveillanceImage} alt="" format="avif" />
-      </div>
-    </div>
+    <MediaSection as="div" class="content-section">
+      <span class="eyebrow">{t("what-is-monero:sections.problem.eyebrow")}</span
+      >
+      <h2
+        set:html={safeMarkdown.parseInline(
+          t("what-is-monero:sections.problem.title"),
+        )}
+      />
+      <p
+        set:html={safeMarkdown.parseInline(
+          t("what-is-monero:sections.problem.content"),
+        )}
+      />
+      <Image slot="aside" src={surveillanceImage} alt="" format="avif" />
+    </MediaSection>
 
     <hr />
 
-    <div class="card-item reverse">
-      <div class="text">
-        <span class="eyebrow"
-          >{t("what-is-monero:sections.solution.eyebrow")}</span
-        >
-        <h2
-          set:html={safeMarkdown.parseInline(
-            t("what-is-monero:sections.solution.title"),
-          )}
-        />
-        <p
-          set:html={safeMarkdown.parseInline(
-            t("what-is-monero:sections.solution.content"),
-          )}
-        />
-      </div>
-      <div class="media">
-        <Image src={cryptoLock} alt="" format="avif" />
-      </div>
-    </div>
+    <MediaSection as="div" reverse class="content-section">
+      <span class="eyebrow"
+        >{t("what-is-monero:sections.solution.eyebrow")}</span
+      >
+      <h2
+        set:html={safeMarkdown.parseInline(
+          t("what-is-monero:sections.solution.title"),
+        )}
+      />
+      <p
+        set:html={safeMarkdown.parseInline(
+          t("what-is-monero:sections.solution.content"),
+        )}
+      />
+      <Image slot="aside" src={cryptoLock} alt="" format="avif" />
+    </MediaSection>
 
     <hr />
 
-    <div class="card-item">
-      <div class="text">
+    <MediaSection as="div" hideAsideOnMobile={false} class="content-section">
+      <Fragment>
         <span class="eyebrow"
           >{t("what-is-monero:sections.useCases.eyebrow")}</span
         >
@@ -103,8 +99,8 @@ const getLanguageLabel = (lang: string): string => {
             t("what-is-monero:sections.useCases.intro"),
           )}
         />
-      </div>
-      <div class="use-cases-list">
+      </Fragment>
+      <Column slot="aside" gap="2xl">
         <div class="use-case-item">
           <div class="icon">
             <MaskIcon src={shieldCheckIcon} size="2rem" />
@@ -185,20 +181,18 @@ const getLanguageLabel = (lang: string): string => {
             </p>
           </div>
         </div>
-      </div>
-    </div>
+      </Column>
+    </MediaSection>
 
     <hr />
 
-    <div class="card-item centered">
-      <div class="text">
-        <span class="eyebrow"
-          >{t("what-is-monero:sections.technology.eyebrow")}</span
-        >
-        <h2>{t("what-is-monero:sections.technology.title")}</h2>
-      </div>
-      <div class="feature-grid">
-        <div class="feature-item">
+    <div class="content-section centered-section">
+      <span class="eyebrow"
+        >{t("what-is-monero:sections.technology.eyebrow")}</span
+      >
+      <h2>{t("what-is-monero:sections.technology.title")}</h2>
+      <Grid minWidth="20rem" gap="2xl" class="feature-grid">
+        <Column gap="md" class="feature-item">
           <div class="icon">
             <MaskIcon src={hatGlassesIcon} size="100%" />
           </div>
@@ -229,8 +223,8 @@ const getLanguageLabel = (lang: string): string => {
               ),
             )}
           />
-        </div>
-        <div class="feature-item">
+        </Column>
+        <Column gap="md" class="feature-item">
           <div class="icon">
             <MaskIcon src={shieldPlusIcon} size="100%" />
           </div>
@@ -248,8 +242,8 @@ const getLanguageLabel = (lang: string): string => {
               }),
             )}
           />
-        </div>
-        <div class="feature-item">
+        </Column>
+        <Column gap="md" class="feature-item">
           <div class="icon">
             <MaskIcon src={eyeOffIcon} size="100%" />
           </div>
@@ -283,20 +277,17 @@ const getLanguageLabel = (lang: string): string => {
               ),
             )}
           />
-        </div>
-      </div>
+        </Column>
+      </Grid>
     </div>
 
     <hr />
 
-    <div class="card-item centered">
-      <div class="text">
-        <span class="eyebrow">{t("what-is-monero:sections.video.eyebrow")}</span
-        >
-        <h2>{t("what-is-monero:sections.video.title")}</h2>
-        <p>{t("what-is-monero:sections.video.description")}</p>
-      </div>
-      <div class="video-container">
+    <div class="content-section centered-section">
+      <span class="eyebrow">{t("what-is-monero:sections.video.eyebrow")}</span>
+      <h2>{t("what-is-monero:sections.video.title")}</h2>
+      <p>{t("what-is-monero:sections.video.description")}</p>
+      <VideoContainer maxWidth="854px" centered class="video-section">
         <video
           width="100%"
           height="100%"
@@ -325,34 +316,30 @@ const getLanguageLabel = (lang: string): string => {
           }
           Your browser does not support the video tag.
         </video>
-      </div>
+      </VideoContainer>
     </div>
 
     <hr />
 
-    <div class="card-item">
-      <div class="text">
-        <h2>{t("what-is-monero:sections.community.title")}</h2>
-        <p
-          set:html={safeMarkdown.parseInline(
-            t("what-is-monero:sections.community.content", {
-              mrlLink: localizeHref("/resources/research-lab/"),
-            }),
-          )}
-        />
-        <div class="community-cta-links">
-          <IconLink href={localizeHref("/community/hangouts/")} weight="bold">
-            {t("what-is-monero:sections.community.joinCommunity")}
-          </IconLink>
-          <IconLink href={localizeHref("/community/workgroups/")} weight="bold">
-            {t("what-is-monero:sections.community.contributeToMonero")}
-          </IconLink>
-        </div>
-      </div>
-      <div class="media">
-        <Image src={communityLogo} alt="" format="avif" />
-      </div>
-    </div>
+    <MediaSection as="div" class="content-section">
+      <h2>{t("what-is-monero:sections.community.title")}</h2>
+      <p
+        set:html={safeMarkdown.parseInline(
+          t("what-is-monero:sections.community.content", {
+            mrlLink: localizeHref("/resources/research-lab/"),
+          }),
+        )}
+      />
+      <Row gap="md" class="community-cta-links">
+        <IconLink href={localizeHref("/community/hangouts/")} weight="bold">
+          {t("what-is-monero:sections.community.joinCommunity")}
+        </IconLink>
+        <IconLink href={localizeHref("/community/workgroups/")} weight="bold">
+          {t("what-is-monero:sections.community.contributeToMonero")}
+        </IconLink>
+      </Row>
+      <Image slot="aside" src={communityLogo} alt="" format="avif" />
+    </MediaSection>
 
     <CTACard
       variant="centered"
@@ -386,94 +373,74 @@ const getLanguageLabel = (lang: string): string => {
     font-size: var(--font-size-sm);
   }
 
-  :where(p) {
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-  }
-  :where(.feature-item) {
-    border-radius: var(--radius-md);
-  }
-
-  .video-container {
-    position: relative;
-    width: min(100%, 854px);
-    aspect-ratio: 16/9;
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  .video-container video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .card-item {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-    align-items: center;
+  .content-section {
     margin-block: var(--space-2xl);
   }
-  .card-item h2 {
+
+  .content-section h2 {
     font-size: var(--font-size-3xl);
     color: var(--heading-color);
     margin-top: var(--space-xs);
   }
-  .card-item p {
+
+  .content-section p {
     font-size: var(--font-size-lg);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
     max-width: 75ch;
+  }
+
+  .centered-section {
+    text-align: center;
+  }
+
+  .centered-section p {
     margin-inline: auto;
   }
 
-  .card-item .media {
-    display: none;
-  }
-
-  .card-item.centered {
-    text-align: center;
-    gap: 1em;
-  }
-
-  .use-cases-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xl);
-  }
   .use-case-item {
     display: flex;
     gap: var(--space-md);
     align-items: flex-start;
   }
+
+  .use-case-item .icon {
+    color: var(--monero-orange);
+  }
+
   .use-case-item h3 {
     margin: 0;
     font-size: var(--font-size-lg);
     color: var(--heading-color);
   }
+
   .use-case-item p {
     font-size: var(--font-size-md);
     margin: 0;
   }
 
-  .feature-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-2xl);
-    justify-content: center;
-  }
   .feature-item {
     border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
     padding: var(--space-xl);
     text-align: start;
-    display: flex;
-    flex-direction: column;
   }
+
+  .feature-item .icon {
+    width: 2rem;
+    height: 2rem;
+    padding: var(--space-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    color: var(--monero-orange);
+  }
+
   .feature-item h3 {
     font-size: var(--font-size-lg);
     color: var(--heading-color);
+    margin: 0;
   }
+
   .feature-item p {
     font-size: var(--font-size-md);
     margin: 0;
@@ -483,77 +450,22 @@ const getLanguageLabel = (lang: string): string => {
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
     margin-top: auto;
-    padding-top: var(--space-2xl);
-  }
-  .feature-item .based-on a {
-    color: var(--monero-orange);
+    padding-top: var(--space-xl);
   }
 
-  .feature-item h3:has(span.num) {
-    margin-top: 0;
-  }
-
-  :is(.feature-item, .use-case-item) .icon {
-    color: var(--monero-orange);
-  }
-  .feature-item .icon {
-    width: 2rem;
-    height: 2rem;
-    padding: var(--space-md);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-full);
+  .video-section {
+    margin-top: var(--space-xl);
   }
 
   .community-cta-links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xl);
     margin-top: var(--space-2xl);
   }
+
   .final-cta {
     padding-block: var(--space-2xl);
   }
+
   .final-cta :global(.cta-title) {
     font-size: var(--font-size-3xl);
-  }
-
-  @media (min-width: 900px) {
-    .card-item {
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-    }
-    .card-item.centered {
-      grid-template-columns: 1fr;
-    }
-
-    .card-item .media {
-      display: block;
-      position: relative;
-      min-width: 0;
-      align-self: stretch;
-    }
-    .card-item .media img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
-      display: block;
-    }
-
-    .card-item.reverse .text {
-      order: 2;
-    }
-
-    .feature-grid {
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    }
-
-    .community-cta-links {
-      flex-direction: row;
-      gap: var(--space-md);
-      flex-wrap: wrap;
-    }
   }
 </style>

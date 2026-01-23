@@ -10,6 +10,7 @@ export interface Props {
   image?: ImageMetadata;
   imageAlt?: string;
   reverse?: boolean;
+  align?: "start";
 }
 
 const {
@@ -19,11 +20,12 @@ const {
   image,
   imageAlt = "",
   reverse = false,
+  align,
 } = Astro.props;
 const { t } = Astro.locals;
 ---
 
-<section class:list={["guide-step", { reverse }]}>
+<section class:list={["guide-step", { reverse }]} data-align={align ?? null}>
   <div class="step-content">
     <span class="step-label"
       >{t("common:components.guideStep.step", { step })}</span
@@ -59,6 +61,10 @@ const { t } = Astro.locals;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-4xl);
     align-items: center;
+  }
+
+  .guide-step[data-align="start"] {
+    align-items: start;
   }
 
   .guide-step.reverse .step-content {

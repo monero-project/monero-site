@@ -4,10 +4,11 @@ import Accordion from "@/components/ui/Accordion.astro";
 import ContentCard from "@/components/ui/ContentCard.astro";
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import Grid from "@/components/ui/Grid.astro";
 import IconLink from "@/components/ui/IconLink.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
-import PageSectionColumn from "@/components/ui/PageSectionColumn.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -49,7 +50,7 @@ const faqItems = faqToItems(
   />
   <PageContainer>
     <PageSection ariaLabel={t("mining:aria.miningOptions")}>
-      <div class="card-grid">
+      <Grid columns={3} gap="lg">
         <ContentCard
           title={t("mining:gupax.title")}
           subtitle={t("mining:gupax.subtitle")}
@@ -115,15 +116,16 @@ const faqItems = faqToItems(
             {t("mining:solo.cta")}
           </IconLink>
         </ContentCard>
-      </div>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
 
     <PageSection title={t("mining:resources.title")}>
-      <PageSectionColumn columns={3} minColumnWidth="16rem">
-        <PageSectionColumn title={t("mining:resources.guides.title")}>
-          <ul class="resourceList">
+      <Grid minWidth="16rem" gap="2xl">
+        <Column gap="md">
+          <h3 class="column-title">{t("mining:resources.guides.title")}</h3>
+          <Column as="ul" gap="sm">
             <li>
               <ExternalResourceButton
                 href="https://docs.getmonero.org/interacting/mining/guides/pool/xmrig-pool"
@@ -140,11 +142,12 @@ const faqItems = faqToItems(
                 variant="mini"
               />
             </li>
-          </ul>
-        </PageSectionColumn>
+          </Column>
+        </Column>
 
-        <PageSectionColumn title={t("mining:resources.pools.title")}>
-          <ul class="resourceList">
+        <Column gap="md">
+          <h3 class="column-title">{t("mining:resources.pools.title")}</h3>
+          <Column as="ul" gap="sm">
             <li>
               <ExternalResourceButton
                 href="https://miningpoolstats.stream/monero"
@@ -153,11 +156,12 @@ const faqItems = faqToItems(
                 variant="mini"
               />
             </li>
-          </ul>
-        </PageSectionColumn>
+          </Column>
+        </Column>
 
-        <PageSectionColumn title={t("mining:resources.benchmarks.title")}>
-          <ul class="resourceList">
+        <Column gap="md">
+          <h3 class="column-title">{t("mining:resources.benchmarks.title")}</h3>
+          <Column as="ul" gap="sm">
             <li>
               <ExternalResourceButton
                 href="https://xmrig.com/benchmark"
@@ -168,9 +172,9 @@ const faqItems = faqToItems(
                 variant="mini"
               />
             </li>
-          </ul>
-        </PageSectionColumn>
-      </PageSectionColumn>
+          </Column>
+        </Column>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -183,26 +187,15 @@ const faqItems = faqToItems(
       </DisclaimerBar>
     </PageSection>
   </PageContainer>
-
-  <style>
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-lg);
-    }
-
-    .resourceList {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: var(--space-sm);
-    }
-
-    @media (max-width: 900px) {
-      .card-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </Layout>
+
+<style>
+  .column-title {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--paragraph-main);
+  }
+</style>

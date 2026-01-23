@@ -1,5 +1,6 @@
 ---
 import CategoryCard from "@/components/ui/CategoryCard.astro";
+import Grid from "@/components/ui/Grid.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { acceptCount, developCount, exploreCount } from "@/data/monero-tools";
@@ -45,7 +46,7 @@ const categories = [
   />
 
   <PageContainer>
-    <div class="card-grid">
+    <Grid columns={3} gap="xl">
       {
         categories.map((cat) => (
           <CategoryCard
@@ -56,20 +57,6 @@ const categories = [
           />
         ))
       }
-    </div>
+    </Grid>
   </PageContainer>
 </Layout>
-
-<style>
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-xl);
-  }
-
-  @media (max-width: 900px) {
-    .card-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

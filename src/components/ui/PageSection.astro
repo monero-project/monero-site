@@ -24,25 +24,25 @@ const {
 
 const Heading = `h${headingLevel}` as HTMLTag;
 const hasHeader = Boolean(title || subtitle);
-const classes = [className, centered && "centered"].filter(Boolean).join(" ");
 const ariaLabelledBy = ariaLabel ? undefined : anchorId;
 ---
 
 <section
-  class={classes}
+  class:list={["section", className]}
   aria-label={ariaLabel}
   aria-labelledby={ariaLabelledBy}
+  data-centered={centered || undefined}
   {...rest}
 >
   {
     hasHeader && (
-      <header class="page-section__header">
+      <header class="header">
         {title && (
-          <Heading id={anchorId} class="page-section__title">
+          <Heading id={anchorId} class="title">
             {title}
           </Heading>
         )}
-        {subtitle && <p class="page-section__subtitle">{subtitle}</p>}
+        {subtitle && <p class="subtitle">{subtitle}</p>}
       </header>
     )
   }
@@ -50,34 +50,30 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
 </section>
 
 <style>
-  section.centered .page-section__header {
+  .section[data-centered] .header {
     text-align: center;
   }
-
-  section.centered .page-section__subtitle {
+  .section[data-centered] .subtitle {
     margin-inline: auto;
   }
-
-  .page-section__header {
+  .header {
     margin-bottom: var(--space-xl);
   }
-
-  .page-section__title {
+  .title {
     font-size: var(--font-size-2xl);
     color: var(--heading-color);
     margin: 0;
     scroll-margin-top: 6.5rem;
     letter-spacing: -0.01em;
   }
-
-  .page-section__subtitle {
+  .subtitle {
     margin: var(--space-xs) 0 0;
     color: var(--paragraph-subtitle);
     max-width: 80ch;
   }
 
   @media screen and (min-width: 1200px) {
-    .page-section__title {
+    .title {
       scroll-margin-top: var(--space-2xl);
     }
   }

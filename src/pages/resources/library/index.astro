@@ -1,9 +1,12 @@
 ---
 import BookCard from "@/components/pages/resources/library/BookCard.astro";
+import Card from "@/components/ui/Card.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import Grid from "@/components/ui/Grid.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
+import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
@@ -60,9 +63,9 @@ const sections = [
       subtitle={t("knowledge-base:library.sections.books.subtitle")}
       anchorId="books"
     >
-      <div class="books-shelf">
+      <Grid columns={2} gap="md">
         {books.map((book) => <BookCard {...book} />)}
-      </div>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -84,13 +87,16 @@ const sections = [
         </p>
       </div>
 
-      <div class="cheatsheets-grid">
+      <Grid minWidth="16rem" gap="md">
         {
           cheatsheets.map((sheet) => (
-            <a
+            <Card
+              as="a"
               href={sheet.url}
               target="_blank"
               rel="noopener noreferrer"
+              padding="none"
+              hover
               class="cheatsheet-card"
             >
               <div class="cheatsheet-visual">
@@ -107,10 +113,10 @@ const sections = [
                   rtl={dir === "rtl"}
                 />
               </div>
-            </a>
+            </Card>
           ))
         }
-      </div>
+      </Grid>
     </PageSection>
 
     <hr aria-hidden="true" />
@@ -120,7 +126,7 @@ const sections = [
       subtitle={t("knowledge-base:library.sections.newsletters.subtitle")}
       anchorId="newsletters"
     >
-      <div class="newsletters-grid">
+      <Column gap="sm">
         {
           newsletters.map((newsletter) => (
             <ExternalResourceButton
@@ -130,7 +136,7 @@ const sections = [
             />
           ))
         }
-      </div>
+      </Column>
     </PageSection>
   </PageContainer>
 </Layout>
@@ -141,18 +147,6 @@ const sections = [
     margin-block: 0 var(--space-xl);
     max-width: 70ch;
     line-height: var(--line-height-body);
-  }
-
-  .books-shelf {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
-  }
-
-  @media (max-width: 900px) {
-    .books-shelf {
-      grid-template-columns: 1fr;
-    }
   }
 
   .cheatsheet-intro {
@@ -166,23 +160,10 @@ const sections = [
     color: var(--heading-color);
   }
 
-  .cheatsheets-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
-    gap: var(--space-md);
-  }
-
   .cheatsheet-card {
     display: flex;
     flex-direction: column;
-    background: var(--card-color);
-    border-radius: var(--radius-md);
-    overflow: hidden;
     text-decoration: none;
-  }
-
-  .cheatsheet-card:hover {
-    background: var(--card-hover-color);
   }
 
   .cheatsheet-visual {
@@ -220,17 +201,5 @@ const sections = [
     align-items: center;
     justify-content: flex-end;
     color: var(--monero-orange);
-  }
-
-  .newsletters-grid {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
-
-  @media (max-width: 600px) {
-    .cheatsheets-grid {
-      grid-template-columns: 1fr;
-    }
   }
 </style>

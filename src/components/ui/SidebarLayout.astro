@@ -1,0 +1,63 @@
+---
+interface Props {
+  sidebarWidth?: string;
+  sidebarPosition?: "start" | "end";
+  gap?: "lg" | "xl" | "2xl" | "3xl";
+  class?: string;
+}
+
+const {
+  sidebarWidth = "20rem",
+  sidebarPosition = "end",
+  gap = "2xl",
+  class: className,
+  ...rest
+} = Astro.props;
+
+const gapValue = `var(--space-${gap})`;
+---
+
+<div
+  class:list={["layout", className]}
+  data-position={sidebarPosition !== "end" ? sidebarPosition : undefined}
+  {...rest}
+>
+  <div class="main">
+    <slot />
+  </div>
+  <aside class="sidebar">
+    <slot name="sidebar" />
+  </aside>
+</div>
+
+<style define:vars={{ gap: gapValue, "sidebar-width": sidebarWidth }}>
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+  }
+  .main {
+    flex: 1;
+    min-width: 0;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  @media (min-width: 1200px) {
+    .layout {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .layout[data-position="start"] {
+      flex-direction: row-reverse;
+    }
+    .sidebar {
+      position: sticky;
+      top: 2rem;
+      flex: 0 0 var(--sidebar-width);
+    }
+  }
+</style>

@@ -1,0 +1,84 @@
+---
+import MaskIcon from "./MaskIcon.astro";
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  href: string;
+  icon: ImageMetadata;
+  external?: boolean;
+  class?: string;
+}
+
+const { href, icon, external = false, class: className, ...rest } = Astro.props;
+
+const { dir } = Astro.locals;
+const isRtl = dir === "rtl";
+---
+
+<a
+  href={href}
+  class:list={["link", className]}
+  target={external ? "_blank" : undefined}
+  rel={external ? "noopener noreferrer" : undefined}
+  {...rest}
+>
+  <span class="icon">
+    <MaskIcon src={icon} size="1.25rem" />
+  </span>
+  <span class="title">
+    <slot />
+  </span>
+  <span class="arrow">
+    <MaskIcon src={arrowRightIcon} size="1em" rtl={isRtl} />
+  </span>
+</a>
+
+<style>
+  .link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0.75rem var(--space-md);
+    background: inherit;
+    font-size: var(--font-size-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .link::after {
+    display: none;
+  }
+  .link:hover {
+    background: var(--card-hover-color);
+    text-decoration: none;
+  }
+  .link:hover .arrow {
+    opacity: 1;
+    color: var(--monero-orange);
+  }
+  .icon {
+    flex-shrink: 0;
+    color: var(--monero-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    flex: 1;
+    font-weight: var(--font-weight-medium);
+    color: var(--heading-color);
+  }
+  .arrow {
+    flex-shrink: 0;
+    color: var(--paragraph-subtitle);
+    opacity: 0.5;
+    transition:
+      opacity 0.15s ease,
+      color 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>

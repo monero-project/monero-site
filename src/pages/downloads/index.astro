@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro";
 import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
 import CoreCard from "@/components/pages/downloads/CoreCard.astro";
 import CTACard from "@/components/ui/CTACard.astro";
+import Grid from "@/components/ui/Grid.astro";
 import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
 import PageTabs from "@/components/ui/PageTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
@@ -49,7 +50,7 @@ const tabs = [
     >
       {t("downloads:communityNote.content")}
     </InternalResourceButton>
-    <div class="downloads-grid">
+    <Grid columns={2} gap="xl" class="downloads-grid">
       <!-- Monero GUI Card -->
       <CoreCard
         id="gui"
@@ -91,7 +92,7 @@ const tabs = [
         )}
         downloads={coreDownloads.cli.downloads as DownloadLink[]}
       />
-    </div>
+    </Grid>
 
     <CTACard
       title={t("downloads:core.verifyDownload")}
@@ -113,21 +114,12 @@ const tabs = [
 
 <style>
   .downloads-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
     margin-top: var(--space-xl);
   }
 
   #gui,
   #cli {
     scroll-margin-top: 6.5rem;
-  }
-
-  @media (max-width: 900px) {
-    .downloads-grid {
-      grid-template-columns: 1fr;
-    }
   }
 
   @media (min-width: 1200px) {
