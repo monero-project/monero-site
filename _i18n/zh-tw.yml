@@ -109,6 +109,8 @@ merchants:
   depsell: 取決於賣家
   visitbisq: 造訪 Bisq
   visitlocalmonero: 造訪 LocalMonero
+  visithaveno: 造訪 Haveno
+  visitretoswap: 造訪 Retoswap
   visithodlhodl: 造訪 HodlHodl
 sponsorships:
   intro: 下列商家支持門羅幣專案設立將達成世界金融隱私的目標，我們由衷地感激他們的貢獻。如果你也想要贊助門羅幣專案並被列在本頁清單，請電郵至 dev@getmonero.org。

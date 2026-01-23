@@ -131,6 +131,7 @@ merchants:
   descrp2p: ''
   swapsdescr: ''
   bisqdescr: ''
+  retoswapdescr: ''
   cardfoss: ""
   cardkyc: ""
   cardbtcfiat: ''
@@ -144,6 +145,8 @@ merchants:
   disclaimer: |
   visitbisq: ''
   visitlocalmonero: ''
+  visithaveno: ''
+  visitretoswap: ''
   visithodlhodl: ''
   centrexchanges: ''
   centrexchangesp: ''
