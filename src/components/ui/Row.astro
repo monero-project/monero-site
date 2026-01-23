@@ -40,12 +40,16 @@ const justifyValue = justifyMap[justify];
 const alignValue = alignMap[align];
 ---
 
-<Tag class:list={["row", className]} data-nowrap={!wrap || undefined} {...rest}>
+<Tag
+  class:list={["row", className]}
+  data-nowrap={!wrap || undefined}
+  style={`--gap: ${gapValue}`}
+  {...rest}
+>
   <slot />
 </Tag>
 
-<style define:vars={{ gap: gapValue, justify: justifyValue, align: alignValue }}
->
+<style define:vars={{ justify: justifyValue, align: alignValue }}>
   .row {
     display: flex;
     flex-wrap: wrap;

@@ -35,12 +35,13 @@ const cardRadius = radius === "none" ? "0" : `var(--radius-${radius})`;
   data-border={border || undefined}
   data-hover={hover || undefined}
   data-transparent={transparent || undefined}
+  style={`--card-padding: ${cardPadding}; --card-radius: ${cardRadius}`}
   {...rest}
 >
   <slot />
 </Tag>
 
-<style define:vars={{ "card-padding": cardPadding, "card-radius": cardRadius }}>
+<style>
   .card {
     background: var(--card-color);
     padding: var(--card-padding);

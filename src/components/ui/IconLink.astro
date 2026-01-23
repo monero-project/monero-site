@@ -66,6 +66,7 @@ const colorValue = colorMap[color];
   data-icon-position={iconPosition !== "end" ? iconPosition : undefined}
   target={isExternal ? "_blank" : undefined}
   rel={isExternal ? "noopener noreferrer" : undefined}
+  style={`--color: ${colorValue}; --weight: ${weightValue}; --size: ${sizeValue}`}
   {...rest}
 >
   {
@@ -81,8 +82,7 @@ const colorValue = colorMap[color];
   }
 </Tag>
 
-<style define:vars={{ size: sizeValue, weight: weightValue, color: colorValue }}
->
+<style>
   .link {
     display: inline-flex;
     align-items: center;

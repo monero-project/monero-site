@@ -20,6 +20,7 @@ const gapValue = `var(--space-${gap})`;
 <div
   class:list={["layout", className]}
   data-position={sidebarPosition !== "end" ? sidebarPosition : undefined}
+  style={`--gap: ${gapValue}; --sidebar-width: ${sidebarWidth}`}
   {...rest}
 >
   <div class="main">
@@ -30,12 +31,13 @@ const gapValue = `var(--space-${gap})`;
   </aside>
 </div>
 
-<style define:vars={{ gap: gapValue, "sidebar-width": sidebarWidth }}>
+<style>
   .layout {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
   }
+
   .main {
     flex: 1;
     min-width: 0;
