@@ -14,3 +14,7 @@ pre-commit:
       glob: "*.{js,ts,jsx,tsx,astro,json,md,css}"
       run: npx prettier --write {staged_files}
       stage_fixed: true
+    moneropedia-translations:
+      glob: "src/content/moneropedia/en/*.md"
+      run: pnpm run i18n:moneropedia:config && pnpm run i18n:moneropedia:update-po && git add src/i18n/moneropedia/
+      stage_fixed: true

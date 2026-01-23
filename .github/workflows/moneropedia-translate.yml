@@ -47,16 +47,13 @@ jobs:
             echo "No localized markdown file edits detected."
           fi
 
-  check-moneropedia-updates:
-    name: Check if Moneropedia config and translations are up to date
+  check-config:
+    name: Check Moneropedia config is up to date
     runs-on: ubuntu-22.04
     if: github.event_name == 'pull_request' && github.actor != 'github-actions[bot]' && github.actor != 'weblate'
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.head_ref }}
 
       - uses: actions/setup-node@v4
         with:
@@ -65,56 +62,17 @@ jobs:
       - uses: pnpm/action-setup@v4
 
       - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check po4a.conf is up to date
         run: |
-          sudo apt-get update
-          sudo apt-get install -y po4a
-          pnpm install --frozen-lockfile
-
-      - name: Check for added/deleted files in Moneropedia en
-        run: |
-          set -euo pipefail
-
-          CHANGES=$(git diff --name-status "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}" -- src/content/moneropedia/en/)
-          ADDED_DELETED=$(echo "$CHANGES" | grep -E '^[ARD]' || true)
-
-          if [ -n "$ADDED_DELETED" ]; then
-            echo "Files added or deleted in en/, regenerating config"
-            echo "REGENERATE_CONFIG=true" >> $GITHUB_ENV
-          else
-            echo "No additions/deletions, skipping config regeneration"
-            echo "REGENERATE_CONFIG=false" >> $GITHUB_ENV
-          fi
-
-      - name: Regenerate Moneropedia config
-        if: env.REGENERATE_CONFIG == 'true'
-        run: pnpm run i18n:moneropedia:config
-
-      - name: Update translation files
-        run: pnpm run i18n:moneropedia:update-po
-
-      - name: Check if files are up to date
-        run: |
-          set -euo pipefail
-
-          if [ "$REGENERATE_CONFIG" = "true" ]; then
-            echo "Moneropedia config needs regeneration. Run 'pnpm run i18n:moneropedia:config' locally."
-          fi
-
-          CHANGED_FILES=$(
-            git diff --name-only -- \
-              'src/i18n/moneropedia/po4a.conf' \
-              'src/i18n/moneropedia/**/*.po' \
-              'src/i18n/moneropedia/**/*.pot' || true
-          )
-
-          if [ -n "$CHANGED_FILES" ]; then
-            echo "Translation files are out of date. Run 'pnpm run i18n:moneropedia:update-po' locally."
-            echo "Changed files:"
-            echo "$CHANGED_FILES"
+          pnpm run i18n:moneropedia:config
+          if ! git diff --quiet -- src/i18n/moneropedia/po4a.conf; then
+            echo "po4a.conf is out of date. Run 'pnpm run i18n:moneropedia:config' locally."
+            git diff -- src/i18n/moneropedia/po4a.conf
             exit 1
-          else
-            echo "All translation files are up to date."
           fi
+          echo "po4a.conf is up to date."
 
   compile-translations:
     name: Compile translations from Weblate

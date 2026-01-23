@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-06 02:47+0000\n"
+"POT-Creation-Date: 2026-01-23 22:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,31 +16,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: YAML Front Matter: summary
+#. type: Yaml Front Matter Hash Value: summary
 #: src/content/moneropedia/en/fcmp++.md
 #, no-wrap
 msgid "Monero's transaction proving system"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Array Element: terms
 #: src/content/moneropedia/en/fcmp++.md
 #, no-wrap
 msgid "fcmp"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Array Element: terms
 #: src/content/moneropedia/en/fcmp++.md
 #, no-wrap
 msgid "fcmp-plus-plus"
 msgstr ""
 
-#. type: YAML Front Matter: terms
+#. type: Yaml Front Matter Array Element: terms
 #: src/content/moneropedia/en/fcmp++.md
 #, no-wrap
 msgid "full-chain-membership-proofs"
 msgstr ""
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: src/content/moneropedia/en/fcmp++.md
 #, no-wrap
 msgid "FCMP++"

@@ -1,0 +1,124 @@
+# Arabic translations for PACKAGE package
+# Copyright (C) 2026 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-23 22:34+0200\n"
+"PO-Revision-Date: 2026-01-23 22:34+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/content/moneropedia/en/account.md src/content/moneropedia/en/address.md
+#: src/content/moneropedia/en/airgap.md
+#: src/content/moneropedia/en/atomic-units.md
+#: src/content/moneropedia/en/block.md src/content/moneropedia/en/blockchain.md
+#: src/content/moneropedia/en/bootstrap-node.md
+#: src/content/moneropedia/en/bulletproofs.md
+#: src/content/moneropedia/en/change.md src/content/moneropedia/en/clearnet.md
+#: src/content/moneropedia/en/coinbase.md
+#: src/content/moneropedia/en/consensus.md
+#: src/content/moneropedia/en/cryptocurrency.md
+#: src/content/moneropedia/en/curve-trees.md
+#: src/content/moneropedia/en/daemon.md
+#: src/content/moneropedia/en/denominations.md
+#: src/content/moneropedia/en/fluffyblocks.md
+#: src/content/moneropedia/en/fungibility.md
+#: src/content/moneropedia/en/locally-unique-host.md
+#: src/content/moneropedia/en/merge-mining.md
+#: src/content/moneropedia/en/mining.md src/content/moneropedia/en/node.md
+#: src/content/moneropedia/en/openalias.md src/content/moneropedia/en/p2pool.md
+#: src/content/moneropedia/en/paperwallet.md
+#: src/content/moneropedia/en/paymentid.md
+#: src/content/moneropedia/en/pedersen-commitment.md
+#: src/content/moneropedia/en/pruning.md src/content/moneropedia/en/randomx.md
+#: src/content/moneropedia/en/remote-node.md
+#: src/content/moneropedia/en/ring-size.md src/content/moneropedia/en/ringCT.md
+#: src/content/moneropedia/en/ringsignatures.md
+#: src/content/moneropedia/en/scalability.md
+#: src/content/moneropedia/en/sidechain.md
+#: src/content/moneropedia/en/signature.md
+#: src/content/moneropedia/en/smartmining.md
+#: src/content/moneropedia/en/spendkey.md
+#: src/content/moneropedia/en/stealthaddress.md
+#: src/content/moneropedia/en/tail-emission.md
+#: src/content/moneropedia/en/transaction.md
+#: src/content/moneropedia/en/unlocktime.md
+#: src/content/moneropedia/en/viewkey.md src/content/moneropedia/en/wallet.md
+#, no-wrap
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod\n"
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
+"veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea\n"
+"commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\n"
+"velit esse cillum dolore eu fugiat nulla pariatur.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/content/moneropedia/en/account.md src/content/moneropedia/en/address.md
+#: src/content/moneropedia/en/airgap.md
+#: src/content/moneropedia/en/atomic-units.md
+#: src/content/moneropedia/en/block.md src/content/moneropedia/en/blockchain.md
+#: src/content/moneropedia/en/bootstrap-node.md
+#: src/content/moneropedia/en/bulletproofs.md
+#: src/content/moneropedia/en/change.md src/content/moneropedia/en/clearnet.md
+#: src/content/moneropedia/en/coinbase.md
+#: src/content/moneropedia/en/consensus.md
+#: src/content/moneropedia/en/cryptocurrency.md
+#: src/content/moneropedia/en/curve-trees.md
+#: src/content/moneropedia/en/daemon.md
+#: src/content/moneropedia/en/denominations.md
+#: src/content/moneropedia/en/fluffyblocks.md
+#: src/content/moneropedia/en/fungibility.md
+#: src/content/moneropedia/en/locally-unique-host.md
+#: src/content/moneropedia/en/merge-mining.md
+#: src/content/moneropedia/en/mining.md src/content/moneropedia/en/node.md
+#: src/content/moneropedia/en/openalias.md src/content/moneropedia/en/p2pool.md
+#: src/content/moneropedia/en/paperwallet.md
+#: src/content/moneropedia/en/paymentid.md
+#: src/content/moneropedia/en/pedersen-commitment.md
+#: src/content/moneropedia/en/pruning.md src/content/moneropedia/en/randomx.md
+#: src/content/moneropedia/en/remote-node.md
+#: src/content/moneropedia/en/ring-size.md src/content/moneropedia/en/ringCT.md
+#: src/content/moneropedia/en/ringsignatures.md
+#: src/content/moneropedia/en/scalability.md
+#: src/content/moneropedia/en/sidechain.md
+#: src/content/moneropedia/en/signature.md
+#: src/content/moneropedia/en/smartmining.md
+#: src/content/moneropedia/en/spendkey.md
+#: src/content/moneropedia/en/stealthaddress.md
+#: src/content/moneropedia/en/tail-emission.md
+#: src/content/moneropedia/en/transaction.md
+#: src/content/moneropedia/en/unlocktime.md
+#: src/content/moneropedia/en/viewkey.md src/content/moneropedia/en/wallet.md
+#, no-wrap
+msgid ""
+"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia\n"
+"deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus, non\n"
+"vulputate arcu pretium vitae. Integer et nisl vitae urna vehicula gravida.\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: summary
+#: src/content/moneropedia/en/airgap.md
+#, no-wrap
+msgid "An airgap is a security measure to physically separate a computer or device from all other networks, such as the Internet."
+msgstr ""
+
+#. type: Yaml Front Matter Array Element: terms
+#: src/content/moneropedia/en/airgap.md
+#, no-wrap
+msgid "airgap"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: src/content/moneropedia/en/airgap.md
+#, no-wrap
+msgid "Airgap"
+msgstr ""
