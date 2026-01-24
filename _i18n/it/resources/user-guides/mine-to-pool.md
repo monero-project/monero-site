@@ -42,10 +42,10 @@ Scroll down to 'Assets' until you see the correct version for your
 system. Download this file, extract the archive somewhere memorable, like
 your desktop.
 
-### Other distributions and operative systems
+### Other distributions and operating systems
 
-Binaries are available for multiple distributions and operative systems, but
-you can also build the miner by yourself. Take a loot at [XMrig's
+Binaries are available for various distributions and operating systems, but
+you can also build the miner by yourself. Take a look at [XMrig's
 docs](https://xmrig.com/docs/miner)
 
 ## Selecting a pool

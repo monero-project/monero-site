@@ -8,8 +8,8 @@ terms: ["address", "addresses", "adres", "adresu", "adresie"]
 ### Podstawy
 
 Gdy wysyłasz do kogoś Monero, potrzebujesz jedynie jednej informacji, a jest
-nią adres Monero tej osoby. Jest to ciąg 95 znaków zaczynający się od
-"4". Przykładowo adres darowizn Monero to
+nią adres Monero tej osoby. Jest to ciąg 95 znaków zaczynający się od "4"
+lub "8". Przykładowo adres darowizn Monero to
 888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H.
 
 Ponieważ adresy są długie i skomplikowane, często zamiast niego spotkasz

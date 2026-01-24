@@ -23,17 +23,16 @@ noe tidligere oppsett).
 
 ### Anvendelde for Monero
 
-En ringsignatur benytter @kontonøklene dine og en rekke offentlige nøkler
-(også kjent som utdata) som trekkes fra @blokkjeden ved å bruke en
-triangulær fordelingsmetode. Tidligere utdata kan over tid brukes flere
-ganger for å danne mulige signaturdeltakere. I en «ring» av mulige
-underskrivere, er alle ringmedlemmer like og gyldige. En utenforstående kan
-ikke fortelle hvilke av de mulige underskriverne i en signaturgruppe som
-tilhører din @konto. Ringsignaturer sikrer med andre ord at
-transaksjonsutdata er usporbare. Det er dessuten ingen
-@fungibilitetsproblemer med Monero fordi hver transaksjonsutdata har en
-plausibel benektelse (nettverket kan for eksempel ikke skille hvilke utdata
-som er brukt eller ubrukt).
+A ring signature makes use of your @account keys and a number of public keys
+(also known as outputs) pulled from the @blockchain using a gamma
+distribution method. Over the course of time, past outputs could be used
+multiple times to form possible signer participants. In a "ring" of possible
+signers, all ring members are equal and valid. There is no way an outside
+observer can tell which of the possible signers in a signature group belongs
+to your @account. So, ring signatures ensure that transaction outputs are
+untraceable. Moreover, there are no @fungibility issues with Monero given
+that every transaction output has plausible deniability (e.g. the network
+can not tell which outputs are spent or unspent).
 
 For å lese om hvordan Monero gir deg personvern som standard
 («unlinkability»), kan du lese i seksjonen om @stealth-adresser.
