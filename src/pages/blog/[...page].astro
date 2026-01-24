@@ -91,21 +91,19 @@ const tabs = [
 </Layout>
 
 <style>
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
   .tabs-bar {
     margin-bottom: var(--space-2xl);
   }
-
   .tabs-bar :global(.tab-header) {
     margin-bottom: unset;
   }
 
   .rss-icon {
     display: none;
-  }
-
-  /* Override Grid's default 900px breakpoint to 1200px for blog */
-  .blog-grid {
-    grid-template-columns: 1fr;
   }
 
   @media (min-width: 1200px) {

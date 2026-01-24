@@ -88,7 +88,7 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
     subtitle={t("blog:tags.hero.subtitle", { tag: translatedTag })}
   />
   <PageContainer>
-    <Row justify="between" align="center" class="tabs-bar">
+    <Row justify="between" align="center" wrap={false} class="tabs-bar">
       <PageTabs
         labels={tabs.map((tab) => tab.label)}
         links={tabs.map((tab) => localizeHref(tab.link))}
@@ -123,13 +123,12 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
 
 <style>
   .blog-grid {
-    margin-top: var(--space-2xl);
+    grid-template-columns: 1fr;
   }
 
   .tabs-bar {
     margin-bottom: var(--space-2xl);
   }
-
   .tabs-bar :global(.tab-header) {
     margin-bottom: unset;
   }
@@ -139,6 +138,9 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
   }
 
   @media (min-width: 1200px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
     .rss-icon {
       display: inline-flex;
       align-items: center;
