@@ -25,6 +25,7 @@ const {
   onionHref,
   variant = "default",
   border = false,
+  class: className,
   ...rest
 } = Astro.props;
 const { t, dir } = Astro.locals;
@@ -39,6 +40,7 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
     "external-resource-button",
     variant,
     { "has-onion": onionHref, "has-logo": logo },
+    className,
   ]}
   data-border={border || undefined}
   {...rest}
