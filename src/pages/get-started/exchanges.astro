@@ -207,7 +207,7 @@ const highlightOptions = [
               aria-hidden="true"
               rtl={dir == "rtl"}
             />
-            <Column gap="2xs">
+            <Column gap="3xs" align="center">
               <span>{t("exchanges:sidebarTitle")}</span>
               <div class="mobile-filter-subtitle">
                 <span class="filter-text" data-filter="easiest"
@@ -396,7 +396,7 @@ const highlightOptions = [
 
     max-height: 75vh;
     overflow-y: auto;
-    z-index: var(--z-overlay);
+    z-index: var(--z-dropdown);
 
     transform: translateY(100%);
     transition:
@@ -406,9 +406,20 @@ const highlightOptions = [
     margin: 0;
   }
 
+  .mobile-filter-subtitle {
+    display: none;
+  }
+
+  #exchange-filters:has(:checked:not(#filter-none))
+    ~ .exchanges-wrapper
+    .mobile-filter-subtitle {
+    display: block;
+  }
+
   .filter-text {
     display: none;
   }
+
   #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
     .mobile-filter-subtitle
@@ -449,6 +460,7 @@ const highlightOptions = [
       max-height: unset;
       overflow-y: unset;
       visibility: unset;
+      z-index: unset;
 
       padding: var(--space-2xl);
       border-radius: var(--radius-md);

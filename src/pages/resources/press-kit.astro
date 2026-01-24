@@ -90,9 +90,9 @@ const sections = [
                   <p>{t(`press-kit:assets.${asset.id}.description`)}</p>
                 </div>
 
-                <Column gap="md" class="asset-variants">
+                <Column gap="md">
                   {asset.variants.map((variant) => (
-                    <Row gap="xs" class="variant-group">
+                    <Row gap="xs">
                       <span class="variant-label">
                         {t(`press-kit:assets.variants.${variant.labelKey}`)}
                       </span>
@@ -190,9 +190,7 @@ const sections = [
           <Card class="contact-card">
             <h3>{t("press-kit:sections.contacts.pressInquiries.title")}</h3>
             <p>{t("press-kit:sections.contacts.pressInquiries.description")}</p>
-            <a href="mailto:press@getmonero.org" class="contact-link">
-              press@getmonero.org
-            </a>
+            <a href="mailto:press@getmonero.org"> press@getmonero.org </a>
           </Card>
           <Card class="contact-card">
             <h3>{t("press-kit:sections.contacts.workgroups.title")}</h3>

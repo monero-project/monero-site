@@ -88,10 +88,8 @@ for (const letter of sortedLetters) {
             <div class="letter-group" id={`${letter}`}>
               <hr class="letter-separator" />
               <div class="letter-layout">
-                <div class="letter-column">
-                  <h2 class="letter-heading">{letter}</h2>
-                </div>
-                <div class="items-column">
+                <h2 class="letter-heading">{letter}</h2>
+                <div>
                   <Accordion
                     items={accordionItems}
                     multiExpand={false}

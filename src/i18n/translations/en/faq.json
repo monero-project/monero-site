@@ -81,7 +81,7 @@
       "content": "Yes. You can export your transaction history from your wallet, or share selected data when needed. Privacy means you control who sees your records. Monero does not stop you from disclosing them if you choose to."
     },
     "whatIsViewKey": {
-      "title": "What is a view key and how does it help with compliance?",
+      "title": "What is a view key?",
       "content": "A view key lets someone see your incoming and outgoing transactions for a given account, without them being able to spend your funds.\n\n You can share it with an accountant or auditor to reconcile your books while keeping control over your money."
     },
     "howToProvePayment": {

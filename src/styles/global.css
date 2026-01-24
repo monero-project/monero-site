@@ -41,7 +41,6 @@
   --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.35);
 
   /* Z-Index */
-  --z-base: 1;
   --z-dropdown: 10;
   --z-header: 20;
   --z-overlay: 100;

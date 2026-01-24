@@ -24,7 +24,7 @@ const { t } = Astro.locals;
   />
 
   <PageContainer>
-    <p class="intro">{t("merchants:intro")}</p>
+    <p>{t("merchants:intro")}</p>
 
     <Column gap="md">
       {
@@ -47,9 +47,3 @@ const { t } = Astro.locals;
     {t("merchants:disclaimer")}
   </DisclaimerBar>
 </Layout>
-
-<style>
-  .intro {
-    color: var(--paragraph-subtitle);
-  }
-</style>
