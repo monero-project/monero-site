@@ -2,8 +2,8 @@
 import Card from "@/components/ui/Card.astro";
 import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import torIcon from "@/assets/icons/mask/tor.avif";
-import { getPublicImageDimensions } from "@/utils/image";
 import type { HTMLAttributes } from "astro/types";
+import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import MaskIcon from "./MaskIcon.astro";
 
@@ -11,7 +11,7 @@ export interface Props extends HTMLAttributes<"div"> {
   href: string;
   title: string;
   subtitle?: string;
-  logo?: string;
+  logo?: ImageMetadata;
   onionHref?: string;
   variant?: "default" | "mini";
   border?: boolean;
@@ -30,7 +30,6 @@ const {
 } = Astro.props;
 const { t, dir } = Astro.locals;
 const rtl = dir === "rtl";
-const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
 ---
 
 <Card
@@ -53,16 +52,9 @@ const logoDimensions = logo ? await getPublicImageDimensions(logo) : null;
     tabindex="-1"
   >
     {
-      logo && logoDimensions && (
+      logo && (
         <div class="logo">
-          <Image
-            src={logo}
-            alt={`${title} Logo`}
-            width={logoDimensions.width}
-            height={logoDimensions.height}
-            format="avif"
-            priority
-          />
+          <Image src={logo} alt={`${title} Logo`} format="avif" priority />
         </div>
       )
     }

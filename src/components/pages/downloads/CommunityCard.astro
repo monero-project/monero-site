@@ -2,7 +2,6 @@
 import Card from "@/components/ui/Card.astro";
 import IconLink from "@/components/ui/IconLink.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
-import { getPublicImageDimensions } from "@/utils/image";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
@@ -18,7 +17,7 @@ interface Tags {
 }
 
 interface Props {
-  logo: string;
+  logo: ImageMetadata;
   name: string;
   description: string;
   tags?: Tags;
@@ -99,7 +98,6 @@ const getTagLabel = (tag: string): string => {
 
 const showTags = general.length > 0;
 const showPlatforms = desktop.length > 0 || mobile.length > 0;
-const logoDimensions = await getPublicImageDimensions(logo);
 const hasBuiltinExchange = general.includes("i18n:builtInExchange");
 ---
 
@@ -117,13 +115,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     aria-label={t("common:components.communityCard.project")}
   >
     <div class="card-logo" aria-hidden="true">
-      <Image
-        src={logo}
-        alt={`${name} logo`}
-        width={logoDimensions.width}
-        height={logoDimensions.height}
-        format="avif"
-      />
+      <Image src={logo} alt="" format="avif" />
     </div>
     <h3 class="card-title">{name}</h3>
   </header>

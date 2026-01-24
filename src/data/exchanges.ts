@@ -1,3 +1,16 @@
+import type { ImageMetadata } from "astro";
+
+import basicswapdexImg from "@/assets/images/exchanges/basicswapdex.jpg";
+import bisqImg from "@/assets/images/exchanges/bisq.png";
+import retoswapImg from "@/assets/images/exchanges/retoswap.jpg";
+import cyphergoatImg from "@/assets/images/exchanges/cyphergoat.png";
+import orangefrenImg from "@/assets/images/exchanges/orangefren.jpg";
+import trocadorImg from "@/assets/images/exchanges/trocador-logo.webp";
+import bitfinexImg from "@/assets/images/exchanges/bitfinex.png";
+import krakenImg from "@/assets/images/exchanges/kraken.png";
+import kucoinImg from "@/assets/images/exchanges/kucoin.png";
+import eigenwalletImg from "@/assets/images/wallets/eigenwallet.avif";
+
 export type ExchangeType = "decentralized" | "aggregator" | "centralized";
 
 export type KycReq = "required" | "optional" | "not-required";
@@ -6,7 +19,7 @@ export type Exchange = {
   type: ExchangeType;
   id: string;
   name: string;
-  img: string;
+  img: ImageMetadata;
   alt: string;
   fiat: boolean;
   crypto: boolean;
@@ -28,7 +41,7 @@ const exchanges: ExchangesData = {
       type: "decentralized",
       id: "basicswapdex",
       name: "BasicSwapDEX",
-      img: "/media/exchanges/basicswapdex.jpg",
+      img: basicswapdexImg,
       alt: "BasicSwapDEX logo",
       fiat: false,
       crypto: true,
@@ -38,7 +51,7 @@ const exchanges: ExchangesData = {
       type: "decentralized",
       id: "bisq",
       name: "Bisq",
-      img: "/media/exchanges/bisq.png",
+      img: bisqImg,
       alt: "Bisq logo",
       fiat: false,
       crypto: true,
@@ -48,7 +61,7 @@ const exchanges: ExchangesData = {
       type: "decentralized",
       id: "eigenwallet",
       name: "Eigenwallet",
-      img: "/media/wallets/eigenwallet.avif",
+      img: eigenwalletImg,
       alt: "Eigenwallet logo",
       fiat: true,
       crypto: true,
@@ -59,7 +72,7 @@ const exchanges: ExchangesData = {
       type: "decentralized",
       id: "retoswap",
       name: "RetoSwap",
-      img: "/media/exchanges/retoswap.jpg",
+      img: retoswapImg,
       alt: "RetoSwap logo",
       fiat: true,
       crypto: true,
@@ -71,7 +84,7 @@ const exchanges: ExchangesData = {
       type: "aggregator",
       id: "cyphergoat",
       name: "CypherGoat",
-      img: "/media/exchanges/cyphergoat.png",
+      img: cyphergoatImg,
       alt: "CypherGoat logo",
       fiat: false,
       crypto: true,
@@ -81,7 +94,7 @@ const exchanges: ExchangesData = {
       type: "aggregator",
       id: "orangefren",
       name: "OrangeFren",
-      img: "/media/exchanges/orangefren.jpg",
+      img: orangefrenImg,
       alt: "OrangeFren logo",
       fiat: true,
       crypto: true,
@@ -91,7 +104,7 @@ const exchanges: ExchangesData = {
       type: "aggregator",
       id: "trocador",
       name: "Trocador",
-      img: "/media/exchanges/trocador-logo.webp",
+      img: trocadorImg,
       alt: "Trocador logo",
       fiat: false,
       crypto: true,
@@ -103,7 +116,7 @@ const exchanges: ExchangesData = {
       type: "centralized",
       id: "bitfinex",
       name: "Bitfinex",
-      img: "/media/exchanges/bitfinex.png",
+      img: bitfinexImg,
       alt: "Bitfinex logo",
       kycClass: "kyc-required",
       kycReq: "required",
@@ -115,7 +128,7 @@ const exchanges: ExchangesData = {
       type: "centralized",
       id: "kraken",
       name: "Kraken",
-      img: "/media/exchanges/kraken.png",
+      img: krakenImg,
       alt: "Kraken logo",
       kycClass: "kyc-required",
       kycReq: "required",
@@ -127,7 +140,7 @@ const exchanges: ExchangesData = {
       type: "centralized",
       id: "kucoin",
       name: "KuCoin",
-      img: "/media/exchanges/kucoin.png",
+      img: kucoinImg,
       alt: "KuCoin logo",
       kycClass: "kyc-required",
       kycReq: "required",

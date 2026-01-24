@@ -1,25 +1,13 @@
 ---
-import { getPublicImageDimensions } from "@/utils/image";
 import { Image } from "astro:assets";
+import type { Exchange } from "@/data/exchanges";
 
 export interface Props {
-  exchanges: Array<{
-    type: string;
-    id: string;
-    name: string;
-    img: string;
-    alt: string;
-    fiat: boolean;
-    crypto: boolean;
-    url: string;
-    kycClass?: string;
-    kycReq?: string;
-    userFriendly?: boolean;
-  }>;
+  exchanges: Exchange[];
   hasKyc: boolean;
 }
 
-const { exchanges, hasKyc } = Astro.props;
+const { exchanges, hasKyc } = Astro.props as Props;
 const { t } = Astro.locals;
 
 if (!exchanges) {
@@ -51,7 +39,7 @@ if (!exchanges) {
 
     <tbody>
       {
-        exchanges.map(async (ex) => {
+        exchanges.map((ex) => {
           const highlightTags =
             [
               ex.fiat && "fiat",
@@ -65,15 +53,12 @@ if (!exchanges) {
 
           const kycClass = ex.kycClass ?? "";
           const kycText = ex.kycReq ? t(`exchanges:kyc.${ex.kycReq}`) : "";
-          const imgDimensions = await getPublicImageDimensions(ex.img);
 
           return (
             <tr class="exchange-row" data-highlight={highlightTags}>
               <td class="with-icon" data-label={t("exchanges:table.name")}>
                 <Image
                   src={ex.img}
-                  width={imgDimensions.width}
-                  height={imgDimensions.height}
                   alt={ex.alt}
                   class="exchange-icon"
                   format="avif"

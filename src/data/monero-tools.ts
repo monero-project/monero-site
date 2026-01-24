@@ -1,9 +1,24 @@
+import moneroCppLogo from "@/assets/images/dev-tools/monero-cpp.png";
+import moneroJavaLogo from "@/assets/images/dev-tools/monero-java.png";
+import moneroOxideLogo from "@/assets/images/dev-tools/monero-oxide.png";
+import moneroPythonLogo from "@/assets/images/dev-tools/monero-python.png";
+import monerophpLogo from "@/assets/images/dev-tools/monerophp.png";
+import moneroTsLogo from "@/assets/images/dev-tools/monero-ts.png";
+import goMoneroRpcLogo from "@/assets/images/dev-tools/go-monero-rpc-client.png";
+
+import btcpayLogo from "@/assets/images/payment-gateways/btcpayserver.png";
+import nowPaymentsLogo from "@/assets/images/payment-gateways/nowpayments.png";
+import bitcartLogo from "@/assets/images/payment-gateways/bitcart.png";
+import coinpaymentsLogo from "@/assets/images/payment-gateways/coinpayments.png";
+import cryptowooLogo from "@/assets/images/payment-gateways/cryptowoo.jpg";
+import monerowpLogo from "@/assets/images/dev-tools/monerowp.png";
+
 export interface Tool {
   id: string;
   title: string;
   href: string;
   onionHref?: string;
-  logo?: string;
+  logo?: ImageMetadata;
 }
 
 export const blockExplorers: Tool[] = [
@@ -109,43 +124,43 @@ export const developerLibraries: Tool[] = [
     id: "moneroTs",
     title: "monero-ts",
     href: "https://github.com/monero-ecosystem/monero-ts",
-    logo: "/media/dev-tools/monero-ts.png",
+    logo: moneroTsLogo,
   },
   {
     id: "moneroPython",
     title: "monero-python",
     href: "https://github.com/monero-ecosystem/monero-python",
-    logo: "/media/dev-tools/monero-python.png",
+    logo: moneroPythonLogo,
   },
   {
     id: "moneroOxide",
     title: "monero-oxide",
     href: "https://github.com/monero-oxide/monero-oxide",
-    logo: "/media/dev-tools/monero-oxide.png",
+    logo: moneroOxideLogo,
   },
   {
     id: "moneroJava",
     title: "monero-java",
     href: "https://github.com/monero-ecosystem/monero-java",
-    logo: "/media/dev-tools/monero-java.png",
+    logo: moneroJavaLogo,
   },
   {
     id: "moneroCpp",
     title: "monero-cpp",
     href: "https://github.com/monero-ecosystem/monero-cpp",
-    logo: "/media/dev-tools/monero-cpp.png",
+    logo: moneroCppLogo,
   },
   {
     id: "monerophp",
     title: "monerophp",
     href: "https://github.com/monero-integrations/monerophp",
-    logo: "/media/dev-tools/monerophp.png",
+    logo: monerophpLogo,
   },
   {
     id: "goMoneroRpc",
     title: "Go Monero RPC Client",
     href: "https://github.com/omani/go-monero-rpc-client",
-    logo: "/media/dev-tools/go-monero-rpc-client.png",
+    logo: goMoneroRpcLogo,
   },
 ];
 
@@ -154,37 +169,37 @@ export const paymentGateways: Tool[] = [
     id: "btcPayServer",
     title: "BTCPayServer",
     href: "https://btcpayserver.org",
-    logo: "/media/payment-gateways/btcpayserver.png",
+    logo: btcpayLogo,
   },
   {
     id: "nowPayments",
     title: "NOWPayments",
     href: "https://nowpayments.io",
-    logo: "/media/payment-gateways/nowpayments.png",
+    logo: nowPaymentsLogo,
   },
   {
     id: "bitcart",
     title: "Bitcart",
     href: "https://bitcart.ai",
-    logo: "/media/payment-gateways/bitcart.png",
+    logo: bitcartLogo,
   },
   {
     id: "coinPayments",
     title: "CoinPayments",
     href: "https://www.coinpayments.net",
-    logo: "/media/payment-gateways/coinpayments.png",
+    logo: coinpaymentsLogo,
   },
   {
     id: "cryptoWoo",
     title: "CryptoWoo",
     href: "https://www.cryptowoo.com",
-    logo: "/media/payment-gateways/cryptowoo.jpg",
+    logo: cryptowooLogo,
   },
   {
     id: "moneroWooCommerce",
     title: "Monero WooCommerce",
     href: "https://github.com/monero-integrations/monerowp",
-    logo: "/media/dev-tools/monerowp.png",
+    logo: monerowpLogo,
   },
 ];
 

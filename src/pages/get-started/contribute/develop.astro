@@ -1,6 +1,6 @@
 ---
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import ProjectsTable from "@/components/pages/contribute/ProjectsTable.astro";
+import ProjectsTable from "@/components/pages/get-started/contribute/ProjectsTable.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import SidebarCard from "@/components/ui/SidebarCard.astro";
@@ -19,6 +19,9 @@ import globeIcon from "@/assets/icons/mask/globe.avif";
 import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
 import terminalIcon from "@/assets/icons/mask/terminal.avif";
 import usersIcon from "@/assets/icons/mask/users.avif";
+import cuprateLogo from "@/assets/images/nodes/cuprate.avif";
+import p2poolLogo from "@/assets/images/ecosystem/p2pool.png";
+import xmrigLogo from "@/assets/images/ecosystem/xmrig.png";
 
 const { t, localizeHref } = Astro.locals;
 
@@ -58,19 +61,20 @@ const communityProjects = [
     title: t("contribute:develop.cuprate.title"),
     subtitle: t("contribute:develop.cuprate.description"),
     href: "https://github.com/Cuprate/cuprate",
-    logo: "/media/nodes/cuprate.avif",
+    logo: cuprateLogo,
   },
+
   {
     title: t("contribute:develop.p2pool.title"),
     subtitle: t("contribute:develop.p2pool.description"),
     href: "https://github.com/SChernykh/p2pool",
-    logo: "/media/ecosystem/p2pool.png",
+    logo: p2poolLogo,
   },
   {
     title: t("contribute:develop.xmrig.title"),
     subtitle: t("contribute:develop.xmrig.description"),
     href: "https://github.com/xmrig/xmrig",
-    logo: "/media/ecosystem/xmrig.png",
+    logo: xmrigLogo,
   },
 ];
 ---

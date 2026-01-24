@@ -10,11 +10,12 @@ import bankIcon from "@/assets/icons/mask/bank.avif";
 import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
 import rabbitIcon from "@/assets/icons/mask/rabbit.avif";
 import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
+import kycNotMeLogo from "@/assets/images/directories/kycnotme.jpg";
 
 import ExchangeTable from "@/components/pages/get-started/exchanges/ExchangeTable.astro";
-import FilterOption from "@/components/pages/exchanges/FilterOption.astro";
-import FiltersPanel from "@/components/pages/exchanges/FiltersPanel.astro";
-import MobileFilterBar from "@/components/pages/exchanges/MobileFilterBar.astro";
+import FilterOption from "@/components/pages/get-started/exchanges/FilterOption.astro";
+import FiltersPanel from "@/components/pages/get-started/exchanges/FiltersPanel.astro";
+import MobileFilterBar from "@/components/pages/get-started/exchanges/MobileFilterBar.astro";
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 
@@ -147,7 +148,7 @@ const highlightOptions = [
             onionHref="http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
             title={t("exchanges:sections.aggregators.resourceBtnTitle")}
             subtitle={t("exchanges:sections.aggregators.resourceBtnSubtitle")}
-            logo="/media/directories/kycnotme.jpg"
+            logo={kycNotMeLogo}
             data-highlight="user-friendly crypto"
           />
           <p

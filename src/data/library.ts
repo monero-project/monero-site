@@ -27,7 +27,7 @@ export interface Newsletter {
   title: string;
   description: string;
   url: string;
-  logo?: string;
+  logo?: ImageMetadata;
 }
 
 export const books: Book[] = [

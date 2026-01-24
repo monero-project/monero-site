@@ -7,7 +7,7 @@ import PageTabs from "@/components/ui/PageTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import TOCContainer from "@/components/ui/TOCContainer.astro";
-import communityWallets from "@/data/downloads/community.json";
+import communityWallets from "@/data/downloads/community";
 
 import serverIcon from "@/assets/icons/mask/server.avif";
 import snowflakeIcon from "@/assets/icons/mask/snowflake.avif";
@@ -19,17 +19,7 @@ import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 
-interface Wallet {
-  id: string;
-  name: string;
-  logo: string;
-  link: string;
-  tags: {
-    general?: string[];
-    mobile?: string[];
-    desktop?: string[];
-  };
-}
+import type { Wallet } from "@/data/downloads/community";
 
 export const sortWallets = (wallets: Wallet[]) =>
   // Sort by number of supported platforms (mobile + desktop), then alphabetically
@@ -41,6 +31,7 @@ export const sortWallets = (wallets: Wallet[]) =>
   });
 
 const { t, localizeHref } = Astro.locals;
+
 const tabs = [
   { label: t("downloads:tabs.core"), link: localizeHref("/downloads") },
   {

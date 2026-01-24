@@ -1,15 +1,21 @@
+import matrixLogo from "@/assets/images/social/matrix.avif";
+import discordLogo from "@/assets/images/social/discord.avif";
+import telegramLogo from "@/assets/images/social/telegram.avif";
+import redditLogo from "@/assets/images/social/reddit.avif";
+import xLogo from "@/assets/images/social/x.avif";
+
 export interface ChatLink {
   titleKey: string;
   subtitleKey?: string;
   href: string;
-  logo: string;
+  logo: ImageMetadata;
 }
 
 export interface SocialLink {
   titleKey: string;
   subtitleKey?: string;
   href: string;
-  logo: string;
+  logo: ImageMetadata;
 }
 
 export interface IRCChannel {
@@ -24,17 +30,17 @@ export const chatLinks: ChatLink[] = [
     titleKey: "hangouts:chat.matrix.title",
     subtitleKey: "hangouts:chat.matrix.subtitle",
     href: "https://matrix.to/#/%23monerospace:monero.social",
-    logo: "/media/social/matrix.avif",
+    logo: matrixLogo,
   },
   {
     titleKey: "hangouts:chat.discord.title",
     href: "https://discord.gg/SyGUMWBqvF",
-    logo: "/media/social/discord.avif",
+    logo: discordLogo,
   },
   {
     titleKey: "hangouts:chat.telegram.title",
     href: "https://t.me/monero",
-    logo: "/media/social/telegram.avif",
+    logo: telegramLogo,
   },
 ];
 
@@ -43,13 +49,13 @@ export const socialLinks: SocialLink[] = [
     titleKey: "hangouts:social.reddit.title",
     subtitleKey: "hangouts:social.reddit.subtitle",
     href: "https://reddit.com/r/monero",
-    logo: "/media/social/reddit.avif",
+    logo: redditLogo,
   },
   {
     titleKey: "hangouts:social.x.title",
     subtitleKey: "hangouts:social.x.subtitle",
     href: "https://twitter.com/monero",
-    logo: "/media/social/x.avif",
+    logo: xLogo,
   },
 ];
 
