@@ -90,6 +90,7 @@ meta_descr: meta_descr.tools
                         <p><a href="https://www.cryptowoo.com/">CryptoWoo Monero Plugin (WooCommerce)</a></p>
                         <p><a href="https://github.com/monero-integrations/monerowp">Monero WooCommerce Extension (PHP)</a></p>
                         <p><a href="https://nowpayments.io/">NOWPayments</a></p>
+                        <p><a href="https://oxapay.com/">OxaPay</a></p>
                     </div>
                 </div>
             </div>
